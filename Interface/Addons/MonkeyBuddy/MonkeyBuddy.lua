@@ -381,13 +381,7 @@ function MonkeyBuddy_OnEvent(self, event, ...)
 	if (event == "VARIABLES_LOADED") then
 		-- Add MonkeyBuddy to myAddOns
 		if (myAddOnsList) then
-			myAddOnsList[MONKEYBUDDY_TITLE] = {
-				name = MONKEYBUDDY_TITLE,
-				description = MONKEYBUDDY_DESCRIPTION,
-				version = MONKEYBUDDY_VERSION,
-				frame = "MonkeyBuddyIconButton",
-				optionsframe = "MonkeyBuddyFrame"
-			}
+			myAddOnsList[MONKEYBUDDY_TITLE] = {name = MONKEYBUDDY_TITLE, description = MONKEYBUDDY_DESCRIPTION, version = MONKEYBUDDY_VERSION, frame = "MonkeyBuddyIconButton", optionsframe = "MonkeyBuddyFrame"}
 		end
 
 		--MonkeyBuddy.m_strPlayer = UnitName('player');
@@ -410,7 +404,7 @@ function MonkeyBuddy_OnEvent(self, event, ...)
 
 		-- print out a nice message letting the user know the addon loaded
 		if (DEFAULT_CHAT_FRAME) then
-		-- DEFAULT_CHAT_FRAME:AddMessage(MONKEYBUDDY_LOADED_MSG);
+			DEFAULT_CHAT_FRAME:AddMessage(MONKEYBUDDY_LOADED_MSG)
 		end
 		MonkeyBuddyOptions()
 	end
@@ -516,10 +510,7 @@ function MonkeyBuddyQuestFrame_Refresh()
 		slider:SetMinMaxValues(value.minValue, value.maxValue)
 		slider:SetValueStep(value.valueStep)
 		slider:SetValue(MonkeyQuestConfig[MonkeyQuest.m_global][value.strVar])
-		if
-			(MonkeyQuestConfig[MonkeyQuest.m_global][value.strVar] < 1 and
-				MonkeyQuestConfig[MonkeyQuest.m_global][value.strVar] > 0)
-		 then
+		if (MonkeyQuestConfig[MonkeyQuest.m_global][value.strVar] < 1 and MonkeyQuestConfig[MonkeyQuest.m_global][value.strVar] > 0) then
 			current = format("%.2f", MonkeyQuestConfig[MonkeyQuest.m_global][value.strVar])
 		else
 			current = MonkeyQuestConfig[MonkeyQuest.m_global][value.strVar]
@@ -532,6 +523,9 @@ function MonkeyBuddyQuestFrame_Refresh()
 				string:SetText(key .. " (Thin)")
 			elseif (MonkeyQuestConfig[MonkeyQuest.m_global][value.strVar] == 2) then
 				string:SetText(key .. " (Blizzard)")
+			end
+			if (GetLocale() == "zhTW" or GetLocale() == "zhCN" or GetLocale() == "koKR") then
+				slider:SetShown(false)
 			end
 		elseif (value.strVar == "m_iHighlightAlpha" or value.strVar == "m_iAlpha" or value.strVar == "m_iFrameAlpha") then
 			string:SetText(key .. " (" .. current * 100 .. "%)")
@@ -694,7 +688,7 @@ function MonkeyBuddyOptions()
 	MonkeyBuddyOptionsTextS:SetWidth(340)
 	MonkeyBuddyOptionsTextS:SetText(MONKEYBUDDY_GUI_MMINSTALLED)
 
-	local MonkeyBuddyStatus = CreateFrame("FRAME", "MBStatus", MonkeyBuddyOptions)
+	local MonkeyBuddyStatus = CreateFrame("FRAME", "MBStatus", MonkeyBuddyOptions, BackdropTemplateMixin and "BackdropTemplate")
 	MonkeyBuddyStatus:SetBackdrop(
 		{
 			bgFile = "Interface/Tooltips/UI-Tooltip-Background",
@@ -781,7 +775,7 @@ function MonkeyBuddyOptions()
 	MonkeyBuddyOptionsTextB:SetWidth(340)
 	MonkeyBuddyOptionsTextB:SetText("MonkeyBuddy:")
 
-	local MonkeyBuddyStatus = CreateFrame("FRAME", "MBIconOption", MonkeyBuddyOptions)
+	local MonkeyBuddyStatus = CreateFrame("FRAME", "MBIconOption", MonkeyBuddyOptions, BackdropTemplateMixin and "BackdropTemplate")
 	MonkeyBuddyStatus:SetBackdrop(
 		{
 			bgFile = "Interface/Tooltips/UI-Tooltip-Background",
@@ -799,8 +793,7 @@ function MonkeyBuddyOptions()
 	MonkeyBuddyStatus:ClearAllPoints()
 	MonkeyBuddyStatus:SetPoint("TOPLEFT", MonkeyBuddyOptionsTextB, "BOTTOMLEFT", -6, -4)
 
-	MonkeyBuddyOptionsCheckButton =
-		CreateFrame("CheckButton", "MBIconCheckButton", MonkeyBuddyOptions, "MonkeyBuddyOptionsCheckButtonTemplate")
+	MonkeyBuddyOptionsCheckButton = CreateFrame("CheckButton", "MBIconCheckButton", MonkeyBuddyOptions, "MonkeyBuddyOptionsCheckButtonTemplate")
 	MonkeyBuddyOptionsCheckButton:ClearAllPoints()
 	MonkeyBuddyOptionsCheckButton:SetPoint("TOPLEFT", MonkeyBuddyOptionsTextB, "BOTTOMLEFT", 2, -11)
 	if (MonkeyBuddyConfig[MonkeyBuddy.m_strPlayer].m_bDismissed == false) then
@@ -829,7 +822,7 @@ function MonkeyBuddyOptions()
 		MonkeyBuddyOptionsTextM:SetWidth(340)
 		MonkeyBuddyOptionsTextM:SetText(MONKEYBUDDY_GUI_MQEXTRA)
 
-		local MonkeyQuestDailies = CreateFrame("FRAME", "MQDailiesOption", MonkeyBuddyOptions)
+		local MonkeyQuestDailies = CreateFrame("FRAME", "MQDailiesOption", MonkeyBuddyOptions, BackdropTemplateMixin and "BackdropTemplate")
 		MonkeyQuestDailies:SetBackdrop(
 			{
 				bgFile = "Interface/Tooltips/UI-Tooltip-Background",
@@ -847,8 +840,7 @@ function MonkeyBuddyOptions()
 		MonkeyQuestDailies:ClearAllPoints()
 		MonkeyQuestDailies:SetPoint("TOPLEFT", MonkeyBuddyOptionsTextM, "BOTTOMLEFT", -6, -4)
 
-		MonkeyQuestDailiesCheckButton =
-			CreateFrame("CheckButton", "MQDailiesCheckButton", MonkeyBuddyOptions, "MonkeyQuestDailiesCheckButtonTemplate")
+		MonkeyQuestDailiesCheckButton = CreateFrame("CheckButton", "MQDailiesCheckButton", MonkeyBuddyOptions, "MonkeyQuestDailiesCheckButtonTemplate")
 		MonkeyQuestDailiesCheckButton:ClearAllPoints()
 		MonkeyQuestDailiesCheckButton:SetPoint("TOPLEFT", MonkeyBuddyOptionsTextM, "BOTTOMLEFT", 2, -11)
 		if (MonkeyBuddyConfig[MonkeyBuddy.m_strPlayer].m_bDailies == true) then
@@ -878,8 +870,7 @@ function MonkeyBuddyOptions()
 	MonkeyBuddyOptionsTextMB:SetWidth(340)
 	MonkeyBuddyOptionsTextMB:SetText(MONKEYBUDDY_GUI_MBOPENCFG)
 
-	local MonkeyBuddyOptionsMBButton =
-		CreateFrame("Button", "MBOptionsButton", MonkeyBuddyOptions, "UIPanelButtonTemplate")
+	local MonkeyBuddyOptionsMBButton = CreateFrame("Button", "MBOptionsButton", MonkeyBuddyOptions, "UIPanelButtonTemplate")
 	MonkeyBuddyOptionsMBButton:SetNormalFontObject(GameFontHighlightSmall)
 	MonkeyBuddyOptionsMBButton:SetHighlightFontObject(GameFontHighlightSmall)
 	MonkeyBuddyOptionsMBButton:SetWidth(100)

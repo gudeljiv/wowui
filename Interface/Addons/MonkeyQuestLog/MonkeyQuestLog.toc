@@ -1,5 +1,5 @@
-﻿## Interface: 80200
-## Title: MonkeyQuestLog v0.9.39
+﻿## Interface: 11305
+## Title: MonkeyQuestLog v0.10.3
 ## Notes: Replacement Quest Log.
 ## Notes-deDE: Ersetzt den Questlog.
 ## Author: Trentin, Jim-Bim

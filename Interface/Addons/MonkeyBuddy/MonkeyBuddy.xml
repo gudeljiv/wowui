@@ -1,7 +1,8 @@
-﻿<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\FrameXML\UI.xsd">
+﻿<Ui xmlns="http://www.blizzard.com/wow/ui/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\FrameXML\UI.xsd">
 	<Script file="localization.lua"/>
 	<Script file="MonkeyBuddy.lua"/>
-	
+
 	<CheckButton name="MonkeyBuddyCheckButtonTemplate" inherits="UICheckButtonTemplate" virtual="true">
 		<Size>
 			<AbsDimension x="20" y="20"/>
@@ -131,17 +132,6 @@
 		<Anchors>
 			<Anchor point="CENTER"/>
 		</Anchors>
-		<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
-			<BackgroundInsets>
-				<AbsInset left="11" right="12" top="12" bottom="11"/>
-			</BackgroundInsets>
-			<TileSize>
-				<AbsValue val="32"/>
-			</TileSize>
-			<EdgeSize>
-				<AbsValue val="32"/>
-			</EdgeSize>
-		</Backdrop>
 		<Layers>
 			<Layer level="ARTWORK">
 				<Texture name="MonkeyBuddyFrame_TitleTexture" file="Interface\DialogFrame\UI-DialogBox-Header">
@@ -185,28 +175,17 @@
 					</OnShow>
 				</Scripts>
 			</Button>
-            <Frame name="MonkeyBuddyQuestFrame" hidden="false">
-                <Size>
-                    <AbsDimension x="670" y="570"/>
-                </Size>
-                <Anchors>
-                    <Anchor point="TOP">
-                    	<Offset>
-                            <AbsDimension x="0" y="-15"/>
-                    	</Offset>
-                    </Anchor>
-                </Anchors>
-				<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
-					<EdgeSize>
-						<AbsValue val="16"/>
-					</EdgeSize>
-					<TileSize>
-						<AbsValue val="16"/>
-					</TileSize>
-					<BackgroundInsets>
-						<AbsInset left="5" right="5" top="5" bottom="5"/>
-					</BackgroundInsets>
-				</Backdrop>	
+			<Frame name="MonkeyBuddyQuestFrame" hidden="false">
+				<Size>
+					<AbsDimension x="670" y="570"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset>
+							<AbsDimension x="0" y="-15"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
 				<Frames>
 					<CheckButton name="MonkeyBuddyQuestCheck1" inherits="MonkeyBuddyCheckButtonTemplate">
 						<Anchors>
@@ -216,196 +195,196 @@
 								</Offset>
 							</Anchor>
 						</Anchors>
-                    </CheckButton>
-                    <CheckButton name="MonkeyBuddyQuestCheck2" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck1" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+					</CheckButton>
+					<CheckButton name="MonkeyBuddyQuestCheck2" inherits="MonkeyBuddyCheckButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck1" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<CheckButton name="MonkeyBuddyQuestCheck3" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck2" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck2" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<CheckButton name="MonkeyBuddyQuestCheck4" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck3" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck3" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<CheckButton name="MonkeyBuddyQuestCheck5" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck4" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck4" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<CheckButton name="MonkeyBuddyQuestCheck6" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck5" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck5" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<CheckButton name="MonkeyBuddyQuestCheck7" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck6" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck6" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<CheckButton name="MonkeyBuddyQuestCheck8" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck7" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck7" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<CheckButton name="MonkeyBuddyQuestCheck9" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck8" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck8" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<CheckButton name="MonkeyBuddyQuestCheck10" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck9" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck9" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<CheckButton name="MonkeyBuddyQuestCheck11" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck10" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck10" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<CheckButton name="MonkeyBuddyQuestCheck12" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck11" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck11" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<CheckButton name="MonkeyBuddyQuestCheck13" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck12" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck12" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<CheckButton name="MonkeyBuddyQuestCheck14" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck13" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck13" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<CheckButton name="MonkeyBuddyQuestCheck15" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck14" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck14" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<CheckButton name="MonkeyBuddyQuestCheck16" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck15" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck15" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<CheckButton name="MonkeyBuddyQuestCheck17" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck16" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
-                    <CheckButton name="MonkeyBuddyQuestCheck18" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck17" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
-                    <CheckButton name="MonkeyBuddyQuestCheck19" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck18" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
-                    <CheckButton name="MonkeyBuddyQuestCheck20" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck19" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
-                    <CheckButton name="MonkeyBuddyQuestCheck21" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck20" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
-                    <CheckButton name="MonkeyBuddyQuestCheck22" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck21" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
-                    <CheckButton name="MonkeyBuddyQuestCheck23" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck22" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
-                    <CheckButton name="MonkeyBuddyQuestCheck24" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck23" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
-                    <CheckButton name="MonkeyBuddyQuestCheck25" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck24" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
-                    <CheckButton name="MonkeyBuddyQuestCheck26" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck25" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
-                    <CheckButton name="MonkeyBuddyQuestCheck27" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck26" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
-                    <CheckButton name="MonkeyBuddyQuestCheck28" inherits="MonkeyBuddyCheckButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck27" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </CheckButton>
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck16" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
+					<CheckButton name="MonkeyBuddyQuestCheck18" inherits="MonkeyBuddyCheckButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck17" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
+					<CheckButton name="MonkeyBuddyQuestCheck19" inherits="MonkeyBuddyCheckButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck18" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
+					<CheckButton name="MonkeyBuddyQuestCheck20" inherits="MonkeyBuddyCheckButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck19" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
+					<CheckButton name="MonkeyBuddyQuestCheck21" inherits="MonkeyBuddyCheckButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck20" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
+					<CheckButton name="MonkeyBuddyQuestCheck22" inherits="MonkeyBuddyCheckButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck21" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
+					<CheckButton name="MonkeyBuddyQuestCheck23" inherits="MonkeyBuddyCheckButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck22" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
+					<CheckButton name="MonkeyBuddyQuestCheck24" inherits="MonkeyBuddyCheckButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck23" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
+					<CheckButton name="MonkeyBuddyQuestCheck25" inherits="MonkeyBuddyCheckButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck24" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
+					<CheckButton name="MonkeyBuddyQuestCheck26" inherits="MonkeyBuddyCheckButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck25" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
+					<CheckButton name="MonkeyBuddyQuestCheck27" inherits="MonkeyBuddyCheckButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck26" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
+					<CheckButton name="MonkeyBuddyQuestCheck28" inherits="MonkeyBuddyCheckButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestCheck27" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</CheckButton>
 					<Button name="MonkeyBuddyQuestColour1" inherits="MonkeyBuddyQuestColourButtonTemplate">
-                        <Anchors>
-                            <Anchor point="TOPLEFT">
+						<Anchors>
+							<Anchor point="TOPLEFT">
 								<Offset>
 									<AbsDimension x="400" y="-16"/>
 								</Offset>
 							</Anchor>
-                        </Anchors>
-                    </Button>
+						</Anchors>
+					</Button>
 					<Button name="MonkeyBuddyQuestColour2" inherits="MonkeyBuddyQuestColourButtonTemplate">
 						<Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour1" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </Button>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour1" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</Button>
 					<Button name="MonkeyBuddyQuestColour3" inherits="MonkeyBuddyQuestColourButtonTemplate">
 						<Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour2" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </Button>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour2" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</Button>
 					<Button name="MonkeyBuddyQuestColour4" inherits="MonkeyBuddyQuestColourButtonTemplate">
 						<Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour3" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </Button>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour3" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</Button>
 					<Button name="MonkeyBuddyQuestColour5" inherits="MonkeyBuddyQuestColourButtonTemplate">
 						<Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour4" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </Button>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour4" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</Button>
 					<Button name="MonkeyBuddyQuestColour6" inherits="MonkeyBuddyQuestColourButtonTemplate">
 						<Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour5" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </Button>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour5" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</Button>
 					<Button name="MonkeyBuddyQuestColour7" inherits="MonkeyBuddyQuestColourButtonTemplate">
 						<Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour6" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </Button>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour6" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</Button>
 					<Button name="MonkeyBuddyQuestColour8" inherits="MonkeyBuddyQuestColourButtonTemplate">
 						<Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour7" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </Button>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour7" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</Button>
 					<Button name="MonkeyBuddyQuestColour9" inherits="MonkeyBuddyQuestColourButtonTemplate">
 						<Anchors>
-                            <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour8" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </Button>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour8" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</Button>
 					<Button name="MonkeyBuddyQuestColour10" inherits="MonkeyBuddyQuestColourButtonTemplate">
 						<Anchors>
-                           <Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour9" relativePoint="BOTTOMLEFT" />
-                        </Anchors>
-                    </Button>
+							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour9" relativePoint="BOTTOMLEFT" />
+						</Anchors>
+					</Button>
 					<Slider name="MonkeyBuddyQuestSlider1" inherits="MonkeyBuddySliderTemplate">
 						<Anchors>
 							<Anchor point="TOPLEFT" relativeTo="MonkeyBuddyQuestColour10" relativePoint="BOTTOMLEFT">
@@ -501,6 +480,19 @@
 					</Button>
 				</Frames>
 				<Scripts>
+					<OnLoad>
+						if BackdropTemplateMixin then
+							Mixin(MonkeyBuddyQuestFrame, BackdropTemplateMixin)
+						end
+						self:SetBackdrop({
+							bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background", 
+							edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+							tile = true,
+							tileSize = 16,
+							edgeSize = 16,
+							insets = {left = 5, right = 5, top = 5, bottom = 5},
+						})
+					</OnLoad>
 					<OnShow>
 						MonkeyBuddyQuestFrame_OnShow();
 					</OnShow>
@@ -509,6 +501,17 @@
 		</Frames>
 		<Scripts>
 			<OnLoad>
+				if BackdropTemplateMixin then
+					Mixin(MonkeyBuddyFrame, BackdropTemplateMixin)
+				end
+				self:SetBackdrop({
+					bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background", 
+					edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
+					tile = true,
+					tileSize = 32,
+					edgeSize = 32,
+					insets = {left = 11, right = 12, top = 12, bottom = 11},
+				})
 				MonkeyBuddy_OnLoad(self);
 			</OnLoad>
 			<OnEvent>

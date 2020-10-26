@@ -64,13 +64,15 @@ function MkQL_RewardItem_OnClick(self, button)
 	MonkeyLib_DebugMsg("self.rewardType: " .. self.rewardType)
 	MonkeyLib_DebugMsg("GetQuestItemLink(self.type, self:GetID()): " .. GetQuestLogItemLink(self.type, self:GetID()))
 
+	local activeWindow = ChatEdit_GetActiveWindow()
+
 	if (IsControlKeyDown()) then
 		if (self.rewardType ~= "spell") then
 			DressUpItemLink(GetQuestLogItemLink(self.type, self:GetID()))
 		end
-	elseif (IsShiftKeyDown()) then
-		if (ChatFrameEditBox:IsVisible()) then
-			ChatFrameEditBox:Insert(GetQuestLogItemLink(self.type, self:GetID()))
+	elseif (IsShiftKeyDown() and activeWindow) then
+		if (activeWindow:IsVisible()) then
+			activeWindow:Insert(GetQuestLogItemLink(self.type, self:GetID()))
 		end
 	end
 
@@ -86,8 +88,7 @@ function MkQL_SetQuest(iQuestNum)
 	local tmpQuestLogSelection = GetQuestLogSelection()
 
 	-- Get the quest title info
-	local strQuestLogTitleText, suggestedGroup, strQuestTag, isHeader, isCollapsed, isComplete =
-		GetQuestLogTitle(iQuestNum)
+	local strQuestLogTitleText, suggestedGroup, strQuestTag, isHeader, isCollapsed, isComplete = GetQuestLogTitle(iQuestNum)
 
 	-- Select the quest log entry for other functions like GetNumQuestLeaderBoards()
 	SelectQuestLogEntry(iQuestNum)
@@ -121,8 +122,7 @@ function MkQL_SetQuest(iQuestNum)
 			local strLeaderBoardText, strType, iFinished = GetQuestLogLeaderBoard(i)
 
 			if (strLeaderBoardText) then
-				strOverview =
-					strOverview .. "  " .. MonkeyQuest_GetLeaderboardColorStr(strLeaderBoardText) .. strLeaderBoardText .. "\n"
+				strOverview = strOverview .. "  " .. MonkeyQuest_GetLeaderboardColorStr(strLeaderBoardText) .. strLeaderBoardText .. "\n"
 			end
 		end
 	end
@@ -342,33 +342,13 @@ function MkQL_UpdateSize()
 	MkQL_RewardsChoose_Btn:SetHeight(MkQL_RewardsChoose_Txt:GetHeight())
 	MkQL_RewardsReceive_Btn:SetHeight(MkQL_RewardsReceive_Txt:GetHeight())
 
-	local iHeight =
-		MkQL_Title_Txt:GetHeight() + MkQL_QuestTitle_Txt:GetHeight() + MkQL_Overview_Txt:GetHeight() +
-		MkQL_Desc_Txt:GetHeight() +
-		MkQL_DescBody_Txt:GetHeight() +
-		MkQL_RewardsChoose_Txt:GetHeight() +
-		MkQL_RewardsReceive_Txt:GetHeight() +
-		(MkQL_RewardItem1_Btn:GetHeight() * 2)
+	local iHeight = MkQL_Title_Txt:GetHeight() + MkQL_QuestTitle_Txt:GetHeight() + MkQL_Overview_Txt:GetHeight() + MkQL_Desc_Txt:GetHeight() + MkQL_DescBody_Txt:GetHeight() + MkQL_RewardsChoose_Txt:GetHeight() + MkQL_RewardsReceive_Txt:GetHeight() + (MkQL_RewardItem1_Btn:GetHeight() * 2)
 
 	iHeight = iHeight + 24 + MkQL_local_iExtraHeight
 
 	MkQL_ScrollChild:SetHeight(iHeight)
 
 	MkQL_ScrollFrame:UpdateScrollChildRect()
-
-	MkQL_Main_Frame:SetBackdrop(
-		{
-			bgFile = "Interface\\Buttons\\WHITE8x8",
-			edgeFile = "",
-			tile = false,
-			tileSize = 0,
-			edgeSize = 0,
-			insets = {left = 0, right = 0, top = 0, bottom = 0}
-		}
-	)
-	MkQL_Main_Frame:SetBackdropColor(0, 0, 0, 0.6)
-
-	MkQL_Main_Frame:CreateBeautyBorder(8)
 end
 
 -- this function is called when the frame should be dragged around
