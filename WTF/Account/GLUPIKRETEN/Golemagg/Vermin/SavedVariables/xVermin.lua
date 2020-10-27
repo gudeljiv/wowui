@@ -38,25 +38,9 @@ xKillCount = {
 			["name"] = "Bloodscalp Hunter",
 			["count"] = 4,
 		},
-		["Venture Co. Miner"] = {
-			["name"] = "Venture Co. Miner",
-			["count"] = 6,
-		},
 		["Venture Co. Mechanic"] = {
 			["name"] = "Venture Co. Mechanic",
 			["count"] = 3,
-		},
-		["Gan'zulah"] = {
-			["name"] = "Gan'zulah",
-			["count"] = 1,
-		},
-		["Bloodscalp Witch Doctor"] = {
-			["name"] = "Bloodscalp Witch Doctor",
-			["count"] = 15,
-		},
-		["Bloodscalp Shaman"] = {
-			["name"] = "Bloodscalp Shaman",
-			["count"] = 1,
 		},
 		["Bloodscalp Tiger"] = {
 			["name"] = "Bloodscalp Tiger",
@@ -66,9 +50,25 @@ xKillCount = {
 			["name"] = "Young Panther",
 			["count"] = 11,
 		},
-		["Bloodscalp Headhunter"] = {
-			["name"] = "Bloodscalp Headhunter",
-			["count"] = 16,
+		["Bloodscalp Witch Doctor"] = {
+			["name"] = "Bloodscalp Witch Doctor",
+			["count"] = 15,
+		},
+		["Bloodscalp Shaman"] = {
+			["name"] = "Bloodscalp Shaman",
+			["count"] = 1,
+		},
+		["Bloodscalp Scavenger"] = {
+			["name"] = "Bloodscalp Scavenger",
+			["count"] = 1,
+		},
+		["Venture Co. Miner"] = {
+			["name"] = "Venture Co. Miner",
+			["count"] = 6,
+		},
+		["Gan'zulah"] = {
+			["name"] = "Gan'zulah",
+			["count"] = 1,
 		},
 		["Venture Co. Workboss"] = {
 			["name"] = "Venture Co. Workboss",
@@ -78,9 +78,9 @@ xKillCount = {
 			["name"] = "Nezzliok the Dire",
 			["count"] = 1,
 		},
-		["Panther"] = {
-			["name"] = "Panther",
-			["count"] = 17,
+		["Bloodscalp Headhunter"] = {
+			["name"] = "Bloodscalp Headhunter",
+			["count"] = 16,
 		},
 		["Elder Stranglethorn Tiger"] = {
 			["name"] = "Elder Stranglethorn Tiger",
@@ -90,9 +90,9 @@ xKillCount = {
 			["name"] = "Bloodscalp Berserker",
 			["count"] = 16,
 		},
-		["Bloodscalp Scavenger"] = {
-			["name"] = "Bloodscalp Scavenger",
-			["count"] = 1,
+		["Panther"] = {
+			["name"] = "Panther",
+			["count"] = 17,
 		},
 		["Bloodscalp Beastmaster"] = {
 			["name"] = "Bloodscalp Beastmaster",
@@ -104,8 +104,8 @@ xKillCount = {
 		},
 	},
 	["experience"] = {
-		["totaltotal"] = 51108,
-		["pulltotal"] = 3300,
+		["totaltotal"] = 77613,
+		["pulltotal"] = 12075,
 	},
 	["position"] = {
 		["y"] = -237.999938964844,

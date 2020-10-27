@@ -40,11 +40,12 @@ local function FixBindings()
 
 	if xVermin.Class == "MAGE" then
 		SetBinding("ALT-MOUSEWHEELUP", "NONE", 1)
+		SetBinding("SHIFT-MOUSEWHEELUP", "NONE", 1)
 	else
 		SetBinding("ALT-MOUSEWHEELUP", "ACTIONBUTTON7", 1)
+		SetBinding("SHIFT-MOUSEWHEELUP", "ACTIONBUTTON8", 1)
 	end
 
-	SetBinding("SHIFT-MOUSEWHEELUP", "ACTIONBUTTON9", 1)
 	SetBinding("TAB", "ACTIONBUTTON10", 1)
 	SetBinding("E", "ACTIONBUTTON11", 1)
 	SetBinding("F", "ACTIONBUTTON12", 1)
