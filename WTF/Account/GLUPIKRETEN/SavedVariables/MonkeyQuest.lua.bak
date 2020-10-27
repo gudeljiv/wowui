@@ -496,6 +496,9 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
+			["Grim Message - false"] = {
+				["m_bChecked"] = true,
+			},
 			["Dustwallow Marsh - true"] = {
 				["m_bChecked"] = true,
 			},
@@ -514,19 +517,34 @@ MonkeyQuestConfig = {
 			["Stranglethorn Vale - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Bloody Bone Necklaces - false"] = {
+			["Chapter II - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Tiger Mastery - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Goblin Sponsorship - false"] = {
 				["m_bChecked"] = true,
 			},
+			["Speaking with Gan'zulah - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Chapter IV - false"] = {
+				["m_bChecked"] = true,
+			},
 			["Mok'thardin's Enchantment - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Split Bone Necklace - false"] = {
+			["Chapter I - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Hunt for Yenniku - false"] = {
+			["Speaking with Nezzliok - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Chapter III - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Bloodscalp Clan Heads - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Raptor Mastery - false"] = {
@@ -535,13 +553,16 @@ MonkeyQuestConfig = {
 			["Theramore Spies - false"] = {
 				["m_bChecked"] = true,
 			},
+			["The Hinterlands - true"] = {
+				["m_bChecked"] = true,
+			},
 			["Trollbane - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Vile Reef - false"] = {
+			["Panther Mastery - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Defense of Grom'gol - false"] = {
+			["The Green Hills of Stranglethorn - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Wharfmaster Dizzywig - false"] = {
@@ -978,9 +999,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1110.36364746094,
+		["m_iFrameBottom"] = 355.000183105469,
 		["m_bHideCompletedQuests"] = false,
-		["m_iFrameLeft"] = 2004.42431640625,
+		["m_iFrameLeft"] = 2052,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -994,10 +1015,10 @@ MonkeyQuestConfig = {
 		["m_strQuestTitleColour"] = "|cFFFFFFFF",
 		["m_bWorkComplete"] = true,
 		["m_bHideQuestsEnabled"] = false,
-		["m_iFrameWidth"] = 270,
+		["m_iFrameWidth"] = 300,
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1148.36364746094,
+		["m_iFrameTop"] = 1191.99987792969,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowTooltipObjectives"] = true,

@@ -55,7 +55,7 @@ f:SetScript(
 				"OnShow",
 				function(self)
 					LootFrame:ClearAllPoints()
-					LootFrame:SetPoint("BOTTOMLEFT", CustomContainer_Combat, "TOPLEFT", 450, 250)
+					LootFrame:SetPoint("BOTTOMLEFT", CustomContainer_Combat, "TOPLEFT", 450, 500)
 				end
 			)
 

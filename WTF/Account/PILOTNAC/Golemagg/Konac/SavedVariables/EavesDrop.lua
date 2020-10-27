@@ -65,8 +65,8 @@ EavesDropStatsDB = {
 							["amount"] = 212,
 						},
 						[2] = {
-							["time"] = "|cffffffff10/23/20 11:35:29|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4469-0-17-671-000012A11C:Bloodscalp Headhunter|hBloodscalp Headhunter|h |cffffffff292|r |cffffffffNature|r. (Critical) ",
-							["amount"] = 292,
+							["time"] = "|cffffffff10/27/20 05:40:30|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4469-0-17-669-0000184BA2:Skullsplitter Hunter|hSkullsplitter Hunter|h |cffffffff311|r |cffffffffNature|r. (Critical) ",
+							["amount"] = 311,
 						},
 					},
 					["Devouring Plague"] = {

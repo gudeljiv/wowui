@@ -32,15 +32,15 @@ Postal3ClassicDB = {
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
 		["Stranac - Golemagg"] = "Stranac - Golemagg",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Slanac - Golemagg"] = "Slanac - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
+		["Slanac - Golemagg"] = "Slanac - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 		["Kamenac - Golemagg"] = "Kamenac - Golemagg",
@@ -84,12 +84,6 @@ Postal3ClassicDB = {
 				},
 			},
 		},
-		["Slanac - Golemagg"] = {
-		},
-		["Augustin - Golemagg"] = {
-		},
-		["Grgur - Golemagg"] = {
-		},
 		["Vermin - Golemagg"] = {
 			["BlackBook"] = {
 				["recent"] = {
@@ -99,6 +93,10 @@ Postal3ClassicDB = {
 				},
 			},
 		},
+		["Augustin - Golemagg"] = {
+		},
+		["Grgur - Golemagg"] = {
+		},
 		["Mxyzptlk - Golemagg"] = {
 			["BlackBook"] = {
 				["recent"] = {
@@ -106,13 +104,15 @@ Postal3ClassicDB = {
 				},
 			},
 		},
+		["Jaroslav - Golemagg"] = {
+		},
 		["Klhjakhsgdjh - Golemagg"] = {
 		},
 		["Antun - Golemagg"] = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Jaroslav - Golemagg"] = {
+		["Slanac - Golemagg"] = {
 		},
 		["Greenwise - Golemagg"] = {
 		},

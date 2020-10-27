@@ -44,20 +44,6 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
-				},
-				["textureName"] = "None",
-			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -78,10 +64,21 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
 			},
+			["locked"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
+			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -248,6 +245,7 @@ ChocolateBarDB = {
 					["align"] = "right",
 				},
 				["BagnonLauncher"] = {
+					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
@@ -316,16 +314,16 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "N",
 				},
+				["TestNoText"] = {
+					["enabled"] = false,
+					["index"] = 4,
+					["barName"] = "ChocolateBar1",
+				},
 				["Leatrix_Maps"] = {
 					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-				},
-				["TestNoText"] = {
-					["enabled"] = false,
-					["index"] = 4,
-					["barName"] = "ChocolateBar1",
 				},
 				["TradeSkillMaster"] = {
 					["index"] = 3,
@@ -375,14 +373,17 @@ ChocolateBarDB = {
 				},
 			},
 			["fontName"] = "Friz Quadrata TT",
-			["forceColor"] = false,
-			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["gap"] = 0,
+			["moveFrames"] = false,
 			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["gap"] = 0,
-			["moveFrames"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+			["forceColor"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -432,20 +433,20 @@ CB_PlayedTime = {
 	["Whatevs-"] = {
 		["total"] = 213,
 	},
-	["Mxym-"] = {
-		["total"] = 4765,
+	["Mohikanac-"] = {
+		["total"] = 167544,
 	},
 	["Klhjakhsgdjh-"] = {
 		["total"] = 53,
 	},
-	["Junac-"] = {
-		["total"] = 2534,
+	["Dmitar-"] = {
+		["total"] = 55,
 	},
 	["Stranac-"] = {
 		["total"] = 73,
 	},
-	["Dmitar-"] = {
-		["total"] = 55,
+	["Junac-"] = {
+		["total"] = 2534,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8367,
@@ -453,31 +454,31 @@ CB_PlayedTime = {
 	["Ozrencic-"] = {
 		["total"] = 853,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
-	},
-	["Kamenac-"] = {
-		["total"] = 1558123,
-	},
-	["Kosturko-"] = {
-		["total"] = 1457,
+	["Mxzq-"] = {
+		["total"] = 248345,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,
 	},
-	["Mxzq-"] = {
-		["total"] = 248345,
+	["Kosturko-"] = {
+		["total"] = 1457,
+	},
+	["Kamenac-"] = {
+		["total"] = 1558123,
+	},
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 	["Grgur-"] = {
 		["total"] = 2,
 	},
-	["Mohikanac-"] = {
-		["total"] = 167544,
+	["Mxym-"] = {
+		["total"] = 4765,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
 	["Konac-"] = {
-		["total"] = 6195709,
+		["total"] = 6201913,
 	},
 }

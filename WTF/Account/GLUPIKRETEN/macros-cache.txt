@@ -17,6 +17,10 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /cast feed pet
 /use item:12184
 END
+VER 3 000000000000000B "TEST" "132089"
+/run LootFrame:ClearAllPoints()
+/run LootFrame:SetPoint("BOTTOMLEFT", CustomContainer_Combat, "TOPLEFT", 450, 500)
+END
 VER 3 000000000000000A "TSMMacro" "INV_Misc_Flower_01"
 /click TSMAuctioningBtn
 END

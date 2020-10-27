@@ -10,10 +10,9 @@ Bagnon_Sets = {
 	},
 	["herbColor"] = {
 	},
-	["displayBank"] = false,
+	["glowPoor"] = false,
 	["displayMail"] = false,
-	["inscribeColor"] = {
-	},
+	["displayBank"] = false,
 	["soulColor"] = {
 	},
 	["closeBank"] = false,
@@ -209,6 +208,7 @@ Bagnon_Sets = {
 	["profiles"] = {
 	},
 	["colorSlots"] = true,
-	["glowPoor"] = false,
+	["inscribeColor"] = {
+	},
 	["displayScrapping"] = false,
 }

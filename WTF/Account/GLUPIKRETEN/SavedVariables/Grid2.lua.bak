@@ -14,14 +14,14 @@ Grid2DB = {
 					["BackgroundTexture"] = "None",
 					["BorderB"] = 0.501960784313726,
 					["layouts"] = {
-						["party"] = "By Group & Class",
-						["raid"] = "By Group & Class",
-						["solo"] = "By Group & Class",
 						["arena"] = "By Group & Class",
+						["party"] = "By Group & Class",
+						["solo"] = "By Group & Class",
+						["raid"] = "By Group & Class",
 					},
 					["BackgroundR"] = 0.101960784313725,
 					["BorderR"] = 0.501960784313726,
-					["BorderTexture"] = "None",
+					["PosX"] = -253.333301786579,
 					["anchor"] = "CENTER",
 					["BackgroundG"] = 0.101960784313725,
 					["minimapIcon"] = {
@@ -52,7 +52,7 @@ Grid2DB = {
 							["anchor"] = "CENTER",
 							["clamp"] = true,
 							["groupAnchor"] = "TOPLEFT",
-							["PosY"] = 58.1331973278132,
+							["PosY"] = 58.1330698450267,
 							["FrameLock"] = false,
 							["BackgroundB"] = 0.101960784313725,
 							["BackgroundA"] = 0,
@@ -61,7 +61,7 @@ Grid2DB = {
 							["BorderTexture"] = "None",
 							["horizontal"] = false,
 							["BackgroundG"] = 0.101960784313725,
-							["PosX"] = -282.666741012806,
+							["PosX"] = -282.666766858105,
 						}, -- [1]
 						{
 							["BackgroundTexture"] = "None",
@@ -126,8 +126,8 @@ Grid2DB = {
 							["FrameDisplay"] = "Always",
 						}, -- [3]
 					},
+					["BorderTexture"] = "None",
 					["Spacing"] = 1,
-					["PosX"] = -253.333301786579,
 				},
 			},
 		},
@@ -431,21 +431,21 @@ Grid2DB = {
 				["health"] = {
 					["texture"] = "Glamour2",
 					["type"] = "bar",
-					["backTexture"] = "Glamour2",
-					["backColor"] = {
-						["a"] = 0.389516115188599,
-						["r"] = 0,
-						["g"] = 0,
-						["b"] = 0,
-					},
-					["orientation"] = "HORIZONTAL",
-					["level"] = 2,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "CENTER",
 						["point"] = "CENTER",
 						["x"] = 0,
 					},
+					["backColor"] = {
+						["a"] = 0.389516115188599,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+					["backTexture"] = "Glamour2",
+					["level"] = 2,
+					["orientation"] = "HORIZONTAL",
 					["color1"] = {
 						["a"] = 1,
 						["b"] = 0,
