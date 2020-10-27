@@ -305,8 +305,8 @@ MonkeyQuestConfig = {
 			["Zul'Farrak - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Barov Family Fortune - false"] = {
-				["m_bChecked"] = true,
+			["Maraudon - true"] = {
+				["m_bChecked"] = false,
 			},
 			["Scholomance - true"] = {
 				["m_bChecked"] = true,
@@ -320,8 +320,8 @@ MonkeyQuestConfig = {
 			["Gahz'rilla - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Maraudon - true"] = {
-				["m_bChecked"] = false,
+			["Barov Family Fortune - false"] = {
+				["m_bChecked"] = true,
 			},
 			["Scarlet Diversions - false"] = {
 				["m_bChecked"] = true,
@@ -1144,19 +1144,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Break a Few Eggs - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Vanquish the Betrayers - false"] = {
+			["Break a Few Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Encroachment - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
 				["m_bChecked"] = true,
 			},
 		},

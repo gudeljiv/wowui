@@ -10,17 +10,17 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			1, -- [4]
 		},
-		["hideIconBorder"] = false,
+		["ignoreParentAlpha"] = false,
 		["textPositionX"] = 0,
 		["showSpark"] = true,
+		["showIcon"] = true,
+		["hideIconBorder"] = false,
 		["statusColorFailed"] = {
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
-		["ignoreParentAlpha"] = false,
 		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
-		["showIcon"] = true,
 		["borderColor"] = {
 			1, -- [1]
 			0.796078431372549, -- [2]
@@ -227,12 +227,12 @@ ClassicCastbarsDB = {
 			1, -- [4]
 		},
 		["hideIconBorder"] = true,
-		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["statusColorFailed"] = {
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["borderColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -406,33 +406,33 @@ ClassicCastbarsDB = {
 		["12118Dominate Mind"] = true,
 		["11983Shadow Flame"] = true,
 		["14834Blood Siphon"] = true,
-		["11492Wild Regeneration"] = true,
-		["10184Flame Breath"] = true,
-		["11583Bellowing Roar"] = true,
+		["11729Toxic Spit"] = true,
 		["11983Wing Buffet"] = true,
+		["11583Bellowing Roar"] = true,
+		["10184Flame Breath"] = true,
 		["12459Shadow Bolt"] = true,
 		["14601Shadow Flame"] = true,
 		["13280Massive Geyser"] = true,
 		["14890Bellowing Roar"] = true,
-		["11981Wing Buffet"] = true,
-		["12468Flamestrike"] = true,
 		["10184Fireball"] = true,
+		["12468Flamestrike"] = true,
+		["11981Wing Buffet"] = true,
 		["12435Fireball Volley"] = true,
 		["6109Manastorm"] = true,
 		["11339Volley"] = true,
 		["12259Shadow Bolt"] = true,
-		["11492Enervate"] = true,
 		["12265Fireball"] = true,
+		["11492Enervate"] = true,
 		["15727Eye Beam"] = true,
-		["11359Soul Tap"] = true,
-		["14947Stun Bomb Attack"] = true,
 		["10438Frostbolt"] = true,
+		["14947Stun Bomb Attack"] = true,
+		["11359Soul Tap"] = true,
 		["11490Intense Pain"] = true,
 		["6109Frost Breath"] = true,
 		["14944Stun Bomb Attack"] = true,
 		["15369Poison Stinger"] = true,
 		["11981Shadow Flame"] = true,
-		["11729Toxic Spit"] = true,
+		["11492Wild Regeneration"] = true,
 		["15311Silence"] = true,
 		["11490Sacrifice"] = true,
 		["13996Bomb"] = true,

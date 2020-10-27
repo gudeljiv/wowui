@@ -4,8 +4,8 @@ Details_TinyThreatDB = {
 		["Mxzq - Golemagg"] = "Default",
 		["Mxym - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
 		["Mxys - Golemagg"] = "Default",
@@ -21,7 +21,7 @@ Details_TinyThreatDB = {
 		["Default"] = {
 			["enabled"] = true,
 			["animate"] = true,
-			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -33,8 +33,8 @@ Details_TinyThreatDB = {
 			["dividebyhundred"] = true,
 			["showamount"] = false,
 			["useplayercolor"] = false,
-			["author"] = "Details! Team",
 			["alwaysshowme"] = true,
+			["useclasscolors"] = false,
 		},
 	},
 }

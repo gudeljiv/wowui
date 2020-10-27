@@ -10,9 +10,10 @@ Bagnon_Sets = {
 	},
 	["herbColor"] = {
 	},
-	["glowPoor"] = false,
-	["displayMail"] = false,
 	["displayBank"] = false,
+	["displayMail"] = false,
+	["inscribeColor"] = {
+	},
 	["soulColor"] = {
 	},
 	["closeBank"] = false,
@@ -21,8 +22,7 @@ Bagnon_Sets = {
 	},
 	["quiverColor"] = {
 	},
-	["normalColor"] = {
-	},
+	["displayAuction"] = false,
 	["reagentColor"] = {
 	},
 	["gemColor"] = {
@@ -178,37 +178,37 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["y"] = 252.219924926758,
 			["bagBreak"] = false,
+			["y"] = 252.219924926758,
 			["x"] = 668.977661132813,
 			["search"] = false,
+			["spacing"] = 2,
+			["alpha"] = 1,
+			["broker"] = false,
+			["bagToggle"] = false,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["alpha"] = 1,
-			["broker"] = false,
-			["bagToggle"] = false,
-			["spacing"] = 2,
 		},
 	},
 	["glowAlpha"] = 0.7,
 	["emptySlots"] = true,
 	["keyColor"] = {
 	},
-	["displayAuction"] = false,
-	["profiles"] = {
+	["normalColor"] = {
 	},
+	["glowQuality"] = true,
 	["mineColor"] = {
 	},
 	["displayTrade"] = false,
 	["version"] = "9.0.3",
 	["displayCraft"] = false,
-	["glowQuality"] = true,
-	["colorSlots"] = true,
-	["inscribeColor"] = {
+	["profiles"] = {
 	},
+	["colorSlots"] = true,
+	["glowPoor"] = false,
 	["displayScrapping"] = false,
 }
