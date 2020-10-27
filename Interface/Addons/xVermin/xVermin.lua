@@ -181,23 +181,6 @@ f:SetScript(
 				end
 			)
 
-			-- local point = TargetFrame.SetPoint
-			-- hooksecurefunc(
-			-- 	TargetFrame,
-			-- 	"SetPoint",
-			-- 	function()
-			-- 		point(TargetFrame, "CENTER", UIParent, "CENTER", 250, -96)
-			-- 	end
-			-- )
-
-			-- local point = PlayerFrame.SetPoint
-			-- hooksecurefunc(
-			-- 	PlayerFrame,
-			-- 	"SetPoint",
-			-- 	function()
-			-- 		point(PlayerFrame, "CENTER", UIParent, "CENTER", -250, -96)
-			-- 	end
-			-- )
 			PlayerFrameManaBarText:SetScale(0.8)
 
 			PlayerFrame:ClearAllPoints()
