@@ -5,23 +5,24 @@ Details_TinyThreatDB = {
 		["Mxym - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
+		["Mxys - Golemagg"] = "Default",
+		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
-		["Mxys - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Augustin - Golemagg"] = "Default",
+		["Battitude - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["enabled"] = true,
 			["animate"] = true,
-			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -33,7 +34,7 @@ Details_TinyThreatDB = {
 			["dividebyhundred"] = true,
 			["showamount"] = false,
 			["useplayercolor"] = false,
-			["author"] = "Details! Team",
+			["useclasscolors"] = false,
 			["alwaysshowme"] = true,
 		},
 	},

@@ -17,7 +17,7 @@ Bagnon_Sets = {
 	["displayBank"] = false,
 	["quiverColor"] = {
 	},
-	["fridgeColor"] = {
+	["enchantColor"] = {
 	},
 	["reagentColor"] = {
 	},
@@ -57,7 +57,7 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["options"] = false,
+			["money"] = true,
 			["y"] = 99.9999771118164,
 			["x"] = -50,
 			["sort"] = true,
@@ -66,7 +66,7 @@ Bagnon_Sets = {
 			["broker"] = false,
 			["search"] = false,
 			["bagToggle"] = true,
-			["money"] = true,
+			["options"] = false,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -133,7 +133,7 @@ Bagnon_Sets = {
 			},
 		},
 		["bank"] = {
-			["borderColor"] = {
+			["hiddenBags"] = {
 			},
 			["rules"] = {
 				"all", -- [1]
@@ -158,14 +158,14 @@ Bagnon_Sets = {
 				"misc", -- [20]
 			},
 			["search"] = false,
-			["broker"] = false,
+			["borderColor"] = {
+			},
 			["color"] = {
 			},
 			["options"] = false,
 			["hiddenRules"] = {
 			},
-			["hiddenBags"] = {
-			},
+			["broker"] = false,
 		},
 	},
 	["glowAlpha"] = 0.5,
@@ -183,7 +183,7 @@ Bagnon_Sets = {
 	["displayCraft"] = false,
 	["displayAuction"] = false,
 	["colorSlots"] = true,
-	["enchantColor"] = {
+	["fridgeColor"] = {
 	},
 	["displayScrapping"] = false,
 }

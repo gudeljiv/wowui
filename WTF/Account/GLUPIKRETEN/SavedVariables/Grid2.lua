@@ -1,7 +1,7 @@
 
 Grid2DB = {
 	["namespaces"] = {
-		["LibDualSpec-1.0"] = {
+		["Grid2AoeHeals"] = {
 		},
 		["Grid2Layout"] = {
 			["global"] = {
@@ -19,7 +19,7 @@ Grid2DB = {
 						["solo"] = "By Group & Class",
 						["arena"] = "By Group & Class",
 					},
-					["BackgroundR"] = 0.101960784313725,
+					["BackgroundB"] = 0.101960784313725,
 					["BorderR"] = 0.501960784313726,
 					["BorderTexture"] = "None",
 					["anchor"] = "CENTER",
@@ -28,7 +28,7 @@ Grid2DB = {
 						["hide"] = true,
 					},
 					["PosY"] = 79.999838360142,
-					["BackgroundB"] = 0.101960784313725,
+					["BackgroundR"] = 0.101960784313725,
 					["BackgroundA"] = 0,
 					["BorderG"] = 0.501960784313726,
 					["extraThemes"] = {
@@ -131,11 +131,9 @@ Grid2DB = {
 				},
 			},
 		},
-		["Grid2AoeHeals"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["Grid2Options"] = {
-		},
-		["Grid2RaidDebuffs"] = {
 		},
 		["Grid2Frame"] = {
 			["profiles"] = {
@@ -172,18 +170,18 @@ Grid2DB = {
 							},
 							["frameTexture"] = "Glamour2",
 							["frameBorderTexture"] = "None",
+							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								[10] = 40,
 								[5] = 50,
 							},
-							["mouseoverHighlight"] = false,
-							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
 							},
+							["orientation"] = "VERTICAL",
 							["frameWidth"] = 125,
 							["frameBorderColor"] = {
 								["a"] = 0,
@@ -223,18 +221,18 @@ Grid2DB = {
 								["g"] = 1,
 								["r"] = 1,
 							},
+							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["orientation"] = "VERTICAL",
+							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								[5] = 45,
 								[10] = 50,
 							},
-							["mouseoverHighlight"] = false,
 							["frameWidth"] = 125,
 							["frameTexture"] = "Glamour2",
 						}, -- [2]
@@ -264,18 +262,18 @@ Grid2DB = {
 							},
 							["frameTexture"] = "Glamour2",
 							["frameBorderTexture"] = "None",
+							["frameHeights"] = {
+								[25] = 20,
+								[40] = 20,
+							},
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["frameHeights"] = {
-								[25] = 20,
-								[40] = 20,
-							},
-							["orientation"] = "VERTICAL",
 							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameWidth"] = 120,
 							["frameBorderColor"] = {
 								["a"] = 0,
@@ -297,14 +295,16 @@ Grid2DB = {
 				},
 			},
 		},
+		["Grid2RaidDebuffs"] = {
+		},
 	},
 	["profileKeys"] = {
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 	},
 	["profiles"] = {

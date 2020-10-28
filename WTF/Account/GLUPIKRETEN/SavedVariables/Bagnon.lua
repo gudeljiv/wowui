@@ -169,25 +169,26 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["spacing"] = 2,
-			["y"] = 211.781326293945,
-			["x"] = 664.438842773438,
-			["search"] = false,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["bagBreak"] = false,
+			["x"] = 664.438842773438,
+			["search"] = false,
+			["spacing"] = 2,
 			["alpha"] = 1,
 			["broker"] = false,
 			["bagToggle"] = false,
-			["bagBreak"] = false,
+			["y"] = 211.781326293945,
 		},
 	},
 	["quiverColor"] = {
 	},
-	["glowQuality"] = true,
+	["profiles"] = {
+	},
 	["reagentColor"] = {
 	},
 	["gemColor"] = {
@@ -198,16 +199,15 @@ Bagnon_Sets = {
 	["emptySlots"] = true,
 	["keyColor"] = {
 	},
-	["normalColor"] = {
-	},
-	["profiles"] = {
-	},
+	["displayAuction"] = false,
+	["glowQuality"] = true,
 	["mineColor"] = {
 	},
 	["displayTrade"] = false,
 	["version"] = "9.0.3",
 	["displayCraft"] = false,
-	["displayAuction"] = false,
+	["normalColor"] = {
+	},
 	["colorSlots"] = true,
 	["displayBank"] = false,
 	["displayScrapping"] = false,

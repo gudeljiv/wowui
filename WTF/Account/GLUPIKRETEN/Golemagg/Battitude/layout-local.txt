@@ -2,8 +2,8 @@ Version: 1
 Frame: PetActionButton1
 FrameLevel: 3
 Anchor: BOTTOM
-X: -170
-Y: 133
+X: -167
+Y: 134
 W: 30
 H: 30
 Frame: nTooltip_Anchor
@@ -13,6 +13,13 @@ X: -27
 Y: 27
 W: 50
 H: 50
+Frame: MSBTMainOptionsFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 108
+Y: 239
+W: 608
+H: 440
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: CENTER

@@ -305,8 +305,8 @@ MonkeyQuestConfig = {
 			["Zul'Farrak - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Barov Family Fortune - false"] = {
-				["m_bChecked"] = true,
+			["Maraudon - true"] = {
+				["m_bChecked"] = false,
 			},
 			["Scholomance - true"] = {
 				["m_bChecked"] = true,
@@ -320,8 +320,8 @@ MonkeyQuestConfig = {
 			["Gahz'rilla - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Maraudon - true"] = {
-				["m_bChecked"] = false,
+			["Barov Family Fortune - false"] = {
+				["m_bChecked"] = true,
 			},
 			["Scarlet Diversions - false"] = {
 				["m_bChecked"] = true,
@@ -496,6 +496,30 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
+			["Kodo Roundup - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Khan Dez'hepah - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Desolace - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Bone Collector - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Ghost-o-plasm Round Up - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Gelkis Alliance - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Catch of the Day - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Magram Alliance - false"] = {
+				["m_bChecked"] = true,
+			},
 		},
 	},
 	["Golemagg|Kosturko"] = {
@@ -780,19 +804,7 @@ MonkeyQuestConfig = {
 			["Deathknell - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Encrypted Scroll - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Rattling the Rattlecages - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Rude Awakening - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Mindless Ones - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Rogue - true"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -979,9 +991,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1110.36364746094,
+		["m_iFrameBottom"] = 1075.99987792969,
 		["m_bHideTitleButtons"] = false,
-		["m_iFrameLeft"] = 1974.42407226563,
+		["m_iFrameLeft"] = 2052,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -998,7 +1010,7 @@ MonkeyQuestConfig = {
 		["m_strMidObjectiveColour"] = "|cFFFFFF00",
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1148.36364746094,
+		["m_iFrameTop"] = 1191.99987792969,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowNumQuests"] = true,
@@ -1093,19 +1105,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Break a Few Eggs - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Vanquish the Betrayers - false"] = {
+			["Break a Few Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Encroachment - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
