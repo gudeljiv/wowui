@@ -17,6 +17,16 @@ Bagnon_Sets = {
 	},
 	["closeBank"] = false,
 	["glowQuest"] = true,
+	["enchantColor"] = {
+	},
+	["quiverColor"] = {
+	},
+	["normalColor"] = {
+	},
+	["reagentColor"] = {
+	},
+	["gemColor"] = {
+	},
 	["global"] = {
 		["inventory"] = {
 			["rules"] = {
@@ -63,10 +73,10 @@ Bagnon_Sets = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["sort"] = true,
+			["broker"] = false,
 			["options"] = false,
 			["bagToggle"] = false,
-			["broker"] = false,
+			["sort"] = true,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -168,9 +178,9 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["spacing"] = 2,
-			["y"] = 252.219924926758,
-			["x"] = 668.977661132813,
+			["y"] = 211.781326293945,
+			["bagBreak"] = false,
+			["x"] = 664.438842773438,
 			["search"] = false,
 			["borderColor"] = {
 				0, -- [1]
@@ -181,24 +191,14 @@ Bagnon_Sets = {
 			["alpha"] = 1,
 			["broker"] = false,
 			["bagToggle"] = false,
-			["bagBreak"] = false,
+			["spacing"] = 2,
 		},
-	},
-	["quiverColor"] = {
-	},
-	["glowQuality"] = true,
-	["reagentColor"] = {
-	},
-	["gemColor"] = {
-	},
-	["enchantColor"] = {
 	},
 	["glowAlpha"] = 0.7,
 	["emptySlots"] = true,
 	["keyColor"] = {
 	},
-	["normalColor"] = {
-	},
+	["displayAuction"] = false,
 	["profiles"] = {
 	},
 	["mineColor"] = {
@@ -206,7 +206,7 @@ Bagnon_Sets = {
 	["displayTrade"] = false,
 	["version"] = "9.0.3",
 	["displayCraft"] = false,
-	["displayAuction"] = false,
+	["glowQuality"] = true,
 	["colorSlots"] = true,
 	["inscribeColor"] = {
 	},

@@ -104,6 +104,13 @@ X: 243
 Y: -107
 W: 50
 H: 50
+Frame: BagnonBankFrame1
+FrameLevel: 1
+Anchor: BOTTOM
+X: -336
+Y: 212
+W: 482
+H: 372
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER
