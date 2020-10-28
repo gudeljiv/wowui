@@ -3,7 +3,7 @@ Frame: EavesDropFrame
 FrameLevel: 1
 Anchor: RIGHT
 X: -44
-Y: 272
+Y: 250
 W: 154
 H: 322
 Frame: PlayerFrame
