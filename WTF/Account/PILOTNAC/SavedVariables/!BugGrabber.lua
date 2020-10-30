@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 2146,
 	["lastSanitation"] = 3,
-	["session"] = 2145,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -820,8 +820,8 @@ BugGrabberDB = {
 		}, -- [103]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [104]
 		{
@@ -961,8 +961,8 @@ BugGrabberDB = {
 		}, -- [121]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [122]
 		{
@@ -1327,8 +1327,8 @@ BugGrabberDB = {
 		}, -- [167]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 1843,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 1843,
 			["counter"] = 6,
 		}, -- [168]
 		{
@@ -1405,8 +1405,8 @@ BugGrabberDB = {
 		}, -- [177]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\FarmLog\\FarmLog.toc",
-			["session"] = 1916,
 			["time"] = "2020/09/23 22:14:04",
+			["session"] = 1916,
 			["counter"] = 2,
 		}, -- [178]
 		{
@@ -1491,50 +1491,50 @@ BugGrabberDB = {
 		}, -- [188]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\events\\event-manager.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [189]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\lists\\lists.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [190]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\lists\\list-helper.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [191]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\bags.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [192]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
 			["session"] = 2022,
+			["time"] = "2020/07/24 16:00:06",
 			["counter"] = 65,
 		}, -- [193]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\utils.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [194]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\services\\confirmer.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [195]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\services\\dejunker.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [196]
 		{
@@ -1611,8 +1611,8 @@ BugGrabberDB = {
 		}, -- [205]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\events\\events.lua",
-			["time"] = "2020/10/07 16:36:53",
 			["session"] = 2023,
+			["time"] = "2020/10/07 16:36:53",
 			["counter"] = 3,
 		}, -- [206]
 		{

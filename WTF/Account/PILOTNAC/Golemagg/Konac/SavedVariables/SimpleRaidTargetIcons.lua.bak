@@ -24,10 +24,6 @@ SRTIExternalUF = {
 		"Grid2LayoutHeader2UnitButton4", -- [9]
 		"Grid2LayoutHeader2UnitButton5", -- [10]
 	},
-	["blizzard_compactraidframes"] = {
-		"CompactRaidFrame1", -- [1]
-		"CompactRaidFrame2", -- [2]
-	},
 	["aptechka"] = {
 		"NugRaid1UnitButton1", -- [1]
 		"NugRaid2UnitButton1", -- [2]
@@ -38,5 +34,9 @@ SRTIExternalUF = {
 		"NugRaid7UnitButton1", -- [7]
 		"NugRaid8UnitButton1", -- [8]
 		"NugRaid1UnitButton2", -- [9]
+	},
+	["blizzard_compactraidframes"] = {
+		"CompactRaidFrame1", -- [1]
+		"CompactRaidFrame2", -- [2]
 	},
 }
