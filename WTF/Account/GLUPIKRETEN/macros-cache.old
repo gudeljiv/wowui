@@ -4,12 +4,12 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:8078
+/castsequence [combat] reset=combat item:8007,item:6149
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:8076
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
@@ -19,7 +19,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 000000000000000B "TEST" "132089"
 /run MultiBarBottomLeftButton1:ClearAllPoints()
-/run MultiBarBottomLeftButton1:SetPoint("BOTTOMLEFT", MainMenuBar, "TOPLEFT", 0, -5)
+/run MultiBarBottomLeftButton1:SetPoint("BOTTOMLEFT", MainMenuBar, "TOPLEFT", 9, -4)
 END
 VER 3 000000000000000A "TSMMacro" "INV_Misc_Flower_01"
 /click TSMAuctioningBtn

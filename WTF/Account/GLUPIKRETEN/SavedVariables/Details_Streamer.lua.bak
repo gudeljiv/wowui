@@ -21,8 +21,8 @@ Details_StreamerDB = {
 				0.5, -- [4]
 			},
 			["main_frame_size"] = {
-				270, -- [1]
-				68, -- [2]
+				269.999908447266, -- [1]
+				68.0000610351563, -- [2]
 			},
 			["minimap"] = {
 				["minimapPos"] = 160,
@@ -33,15 +33,10 @@ Details_StreamerDB = {
 			["row_texture"] = "Glamour2",
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = true,
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["enabled"] = true,
 			["arrow_size"] = 10,
-			["y"] = -147.105895996094,
+			["use_spark"] = false,
 			["row_spacement"] = 17,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -49,25 +44,30 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+			["y"] = -175.106292724609,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
 				["scale"] = 1,
 				["font_shadow"] = true,
 				["y"] = -6.1035156250e-05,
-				["x"] = 0.00262451171875,
+				["x"] = 0.002685546875,
 				["attribute_type"] = 1,
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["font_size"] = 10,
-			["x"] = 0.00750732421875,
+			["x"] = -3.99267578125,
 			["font_face"] = "Friz Quadrata TT",
-			["use_spark"] = false,
-			["author"] = "Details! Team",
-			["point"] = "CENTER",
+			["font_size"] = 10,
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
+			["point"] = "RIGHT",
 			["row_height"] = 17,
 			["scale"] = 1,
 		},

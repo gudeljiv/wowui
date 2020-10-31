@@ -10,10 +10,9 @@ Bagnon_Sets = {
 	},
 	["herbColor"] = {
 	},
-	["displayBank"] = false,
+	["glowPoor"] = false,
 	["displayMail"] = false,
-	["inscribeColor"] = {
-	},
+	["displayBank"] = false,
 	["soulColor"] = {
 	},
 	["closeBank"] = false,
@@ -179,7 +178,7 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["y"] = 211.781326293945,
+			["y"] = 211.781341552734,
 			["bagBreak"] = false,
 			["x"] = 664.438842773438,
 			["search"] = false,
@@ -209,6 +208,7 @@ Bagnon_Sets = {
 	["displayCraft"] = false,
 	["glowQuality"] = true,
 	["colorSlots"] = true,
-	["glowPoor"] = false,
+	["inscribeColor"] = {
+	},
 	["displayScrapping"] = false,
 }
