@@ -17,6 +17,12 @@ Bagnon_Sets = {
 	["displayBank"] = false,
 	["quiverColor"] = {
 	},
+	["enchantColor"] = {
+	},
+	["reagentColor"] = {
+	},
+	["gemColor"] = {
+	},
 	["global"] = {
 		["inventory"] = {
 			["rules"] = {
@@ -127,8 +133,7 @@ Bagnon_Sets = {
 			},
 		},
 		["bank"] = {
-			["borderColor"] = {
-			},
+			["broker"] = false,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -152,21 +157,16 @@ Bagnon_Sets = {
 				"misc", -- [20]
 			},
 			["search"] = false,
-			["broker"] = false,
+			["hiddenBags"] = {
+			},
 			["color"] = {
 			},
 			["options"] = false,
 			["hiddenRules"] = {
 			},
-			["hiddenBags"] = {
+			["borderColor"] = {
 			},
 		},
-	},
-	["reagentColor"] = {
-	},
-	["gemColor"] = {
-	},
-	["enchantColor"] = {
 	},
 	["glowAlpha"] = 0.5,
 	["emptySlots"] = true,
