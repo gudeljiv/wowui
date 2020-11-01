@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 3544,
+	["session"] = 3546,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3900,5 +3900,13 @@ BugGrabberDB = {
 			["session"] = 3532,
 			["counter"] = 10,
 		}, -- [493]
+		{
+			["message"] = "Usage: CastSpellByName(name[, target])",
+			["time"] = "2020/11/01 19:36:21",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[C]: ?\n[C]: ?\n[C]: in function `CastSpellByName'\nInterface\\FrameXML\\ChatFrame.lua:983: in function <Interface\\FrameXML\\ChatFrame.lua:911>\nInterface\\FrameXML\\ChatFrame.lua:1226: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4675: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\nInterface\\FrameXML\\MultiActionBars.lua:14: in function `MultiActionButtonDown'\n[string \"MULTIACTIONBAR4BUTTON1\"]:2: in function <[string \"MULTIACTIONBAR4BUTTON1\"]:1>",
+			["session"] = 3546,
+			["counter"] = 2,
+		}, -- [494]
 	},
 }

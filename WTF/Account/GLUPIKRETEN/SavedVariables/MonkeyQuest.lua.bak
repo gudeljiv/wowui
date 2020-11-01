@@ -290,16 +290,16 @@ MonkeyQuestConfig = {
 			["Shadowshard Fragments - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Gahz'rilla - false"] = {
+			["Scarlet Diversions - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Tirisfal Glades - true"] = {
+			["Barov Family Fortune - false"] = {
 				["m_bChecked"] = true,
 			},
 			["A Plague Upon Thee - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Scarlet Diversions - false"] = {
+			["Gahz'rilla - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Zul'Farrak - true"] = {
@@ -308,7 +308,7 @@ MonkeyQuestConfig = {
 			["Maraudon - true"] = {
 				["m_bChecked"] = false,
 			},
-			["Barov Family Fortune - false"] = {
+			["Tirisfal Glades - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Western Plaguelands - true"] = {
@@ -939,7 +939,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 721.000122070313,
+		["m_iFrameBottom"] = 1153.99987792969,
 		["m_bHideCompletedQuests"] = false,
 		["m_iFrameLeft"] = 2052,
 		["m_bColourDoneOrFailed"] = true,
@@ -1117,19 +1117,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Vanquish the Betrayers - false"] = {
+			["Encroachment - false"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Encroachment - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Break a Few Eggs - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 		},

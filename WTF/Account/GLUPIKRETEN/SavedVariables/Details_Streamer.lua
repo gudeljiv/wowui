@@ -21,8 +21,8 @@ Details_StreamerDB = {
 				0.5, -- [4]
 			},
 			["main_frame_size"] = {
-				250, -- [1]
-				140, -- [2]
+				249.999740600586, -- [1]
+				89.9999694824219, -- [2]
 			},
 			["minimap"] = {
 				["minimapPos"] = 160,
@@ -33,15 +33,10 @@ Details_StreamerDB = {
 			["row_texture"] = "Glamour2",
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = true,
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["author"] = "Details! Team",
 			["enabled"] = true,
 			["arrow_size"] = 10,
-			["use_spark"] = false,
+			["y"] = -183.107086181641,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -49,9 +44,13 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["y"] = -20.1072998046875,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -63,11 +62,12 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["x"] = 466.999847412109,
-			["font_face"] = "Friz Quadrata TT",
 			["font_size"] = 10,
-			["author"] = "Details! Team",
-			["point"] = "TOPLEFT",
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["use_spark"] = false,
+			["main_frame_strata"] = "LOW",
+			["point"] = "RIGHT",
 			["row_height"] = 18,
 			["scale"] = 1,
 		},

@@ -4,19 +4,45 @@ Bagnon_Sets = {
 	},
 	["leatherColor"] = {
 	},
+	["fridgeColor"] = {
+	},
+	["displayBank"] = false,
 	["engineerColor"] = {
 	},
-	["fridgeColor"] = {
+	["soulColor"] = {
 	},
 	["herbColor"] = {
 	},
-	["glowPoor"] = false,
+	["glowQuality"] = true,
 	["displayMail"] = false,
-	["displayBank"] = false,
-	["soulColor"] = {
+	["inscribeColor"] = {
 	},
+	["glowUnusable"] = true,
 	["closeBank"] = false,
 	["glowQuest"] = true,
+	["displayCraft"] = false,
+	["quiverColor"] = {
+	},
+	["displayAuction"] = false,
+	["reagentColor"] = {
+	},
+	["gemColor"] = {
+	},
+	["enchantColor"] = {
+	},
+	["glowAlpha"] = 0.5,
+	["emptySlots"] = true,
+	["glowNew"] = false,
+	["normalColor"] = {
+	},
+	["profiles"] = {
+	},
+	["mineColor"] = {
+	},
+	["displayTrade"] = false,
+	["version"] = "9.0.3",
+	["keyColor"] = {
+	},
 	["global"] = {
 		["inventory"] = {
 			["rules"] = {
@@ -164,10 +190,13 @@ Bagnon_Sets = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
-				0.880060367286205, -- [4]
+				1, -- [4]
 			},
-			["hiddenRules"] = {
-			},
+			["sort"] = true,
+			["spacing"] = 2,
+			["bagToggle"] = false,
+			["columns"] = 18,
+			["alpha"] = 1,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -175,40 +204,17 @@ Bagnon_Sets = {
 				1, -- [4]
 			},
 			["bagBreak"] = false,
-			["x"] = 664.438842773438,
+			["x"] = 678.43896484375,
 			["search"] = false,
-			["spacing"] = 2,
-			["alpha"] = 1,
 			["broker"] = false,
-			["bagToggle"] = false,
-			["y"] = 211.781341552734,
+			["y"] = 353.781860351563,
+			["hiddenRules"] = {
+			},
+			["itemScale"] = 1,
+			["scale"] = 1,
 		},
 	},
-	["quiverColor"] = {
-	},
-	["profiles"] = {
-	},
-	["reagentColor"] = {
-	},
-	["gemColor"] = {
-	},
-	["enchantColor"] = {
-	},
-	["glowAlpha"] = 0.7,
-	["emptySlots"] = true,
-	["keyColor"] = {
-	},
-	["displayAuction"] = false,
-	["glowQuality"] = true,
-	["mineColor"] = {
-	},
-	["displayTrade"] = false,
-	["version"] = "9.0.3",
-	["displayCraft"] = false,
-	["normalColor"] = {
-	},
-	["colorSlots"] = true,
-	["inscribeColor"] = {
-	},
+	["colorSlots"] = false,
+	["glowPoor"] = false,
 	["displayScrapping"] = false,
 }
