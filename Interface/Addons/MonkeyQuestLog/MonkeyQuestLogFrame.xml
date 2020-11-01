@@ -1,5 +1,4 @@
-﻿<Ui xmlns="http://www.blizzard.com/wow/ui/"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+﻿<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
 	<Script file="localization.lua"/>
 	<Script file="MonkeyQuestLogFrame.lua"/>
@@ -85,7 +84,7 @@
 				</Offset>
 			</Anchor>
 		</Anchors>
-
+		
 		<Backdrop bgFile="Interface\AddOns\MonkeyLibrary\Textures\BackDrop.tga" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
 			<EdgeSize>
 				<AbsValue val="16"/>
@@ -97,7 +96,7 @@
 				<AbsInset left="5" right="5" top="5" bottom="5"/>
 			</BackgroundInsets>
 		</Backdrop>
-
+		
 		<Frames>
 			<Button name="MkQL_Title_Btn">
 				<Size>
@@ -166,7 +165,7 @@
 				<PushedTexture file="Interface\AddOns\MonkeyLibrary\Textures\CloseButton-Down.tga"/>
 				<HighlightTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Highlight" alphaMode="ADD"/>
 			</Button>
-
+			
 			<ScrollFrame name="MkQL_ScrollFrame" inherits="UIPanelScrollFrameTemplate">
 				<Size>
 					<AbsDimension x="256" y="512"/>
@@ -243,7 +242,7 @@
 									</OnMouseUp>
 								</Scripts>
 							</Button>
-
+		
 							<Button name="MkQL_Overview_Btn">
 								<Size>
 									<AbsDimension x="32" y="32"/>
@@ -286,9 +285,9 @@
 										--MonkeyQuest_OnMouseUp(self, button);
 									</OnMouseUp>
 								</Scripts>
-
+				
 							</Button>
-
+				
 							<Button name="MkQL_Desc_Btn">
 								<Size>
 									<AbsDimension x="128" y="24"/>
@@ -311,7 +310,7 @@
 											<Anchors>
 												<Anchor point="TOPLEFT">
 												</Anchor>
-
+				
 											</Anchors>
 										</FontString>
 									</Layer>
@@ -332,9 +331,9 @@
 										--MonkeyQuest_OnMouseUp(self, button);
 									</OnMouseUp>
 								</Scripts>
-
+				
 							</Button>
-
+				
 							<Button name="MkQL_DescBody_Btn">
 								<Size>
 									<AbsDimension x="128" y="256"/>
@@ -357,7 +356,7 @@
 											<Anchors>
 												<Anchor point="TOPLEFT">
 												</Anchor>
-
+				
 											</Anchors>
 										</FontString>
 									</Layer>
@@ -378,9 +377,9 @@
 										--MonkeyQuest_OnMouseUp(self, button);
 									</OnMouseUp>
 								</Scripts>
-
+				
 							</Button>
-
+							
 							<Button name="MkQL_Rewards_Btn">
 								<Size>
 									<AbsDimension x="128" y="24"/>
@@ -403,13 +402,13 @@
 											<Anchors>
 												<Anchor point="TOPLEFT">
 												</Anchor>
-
+				
 											</Anchors>
 										</FontString>
 									</Layer>
 								</Layers>
 							</Button>
-
+							
 							<Button name="MkQL_RewardsChoose_Btn">
 								<Size>
 									<AbsDimension x="128" y="256"/>
@@ -437,7 +436,7 @@
 									</Layer>
 								</Layers>
 							</Button>
-
+				
 							<Button name="MkQL_RewardsReceive_Btn">
 								<Size>
 									<AbsDimension x="128" y="256"/>
@@ -465,7 +464,7 @@
 									</Layer>
 								</Layers>
 							</Button>
-
+				
 							<Button name="MkQL_RewardItem1_Btn" inherits="MkQL_QuestItemTemplate">
 								<Anchors>
 									<Anchor point="TOPLEFT" relativeTo="MkQL_RewardsReceive_Btn" relativePoint="BOTTOMLEFT">
@@ -574,7 +573,7 @@
 					</Frame>
 				</ScrollChild>
 			</ScrollFrame>
-
+			
 			<Button name="MkQL_AbandonQuest_Btn" inherits="GameMenuButtonTemplate" text="MkQL_ABANDON_TXT">
 				<Anchors>
 					<Anchor point="BOTTOMLEFT">
@@ -594,7 +593,7 @@
 					</OnClick>
 				</Scripts>
 			</Button>
-
+			
 			<Button name="MkQL_ShareQuest_Btn" inherits="GameMenuButtonTemplate" text="MkQL_SHARE_TXT">
 				<Anchors>
 					<Anchor point="BOTTOMRIGHT">
@@ -614,7 +613,7 @@
 					</OnClick>
 				</Scripts>
 			</Button>
-
+			
 			<Button name="MkQL_Resizer_Btn">
 				<Size>
 					<AbsDimension x="16" y="16"/>

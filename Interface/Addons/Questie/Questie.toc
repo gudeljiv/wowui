@@ -1,12 +1,13 @@
 ## Interface: 11305
-## Title: |cFFFFFFFFQuestie|r|cFF00FF00 v6.1.0|r
+## Title: |cFFFFFFFFQuestie|r|cFF00FF00 v6.2.0|r
 ## Author: Aero/Logon/Muehe/TheCrux(BreakBB)/Dyaxler/Schaka/Zoey/Everyone else
 ## Notes: A standalone Classic QuestHelper
-## Version: 6.1.0
+## Version: 6.2.0
 ## RequiredDeps:
 ## OptionalDeps: Ace3, LibDataBroker-1.1, LibCompress
 ## SavedVariables: QuestieConfig
 ## SavedVariablesPerCharacter: QuestieConfigCharacter
+## X-Curse-Project-ID: 334372
 
 
 Modules\VersionCheck.lua
@@ -81,6 +82,7 @@ Modules\QuestieAnnounce.lua
 ##Tooltips
 Modules\Tooltips\Tooltip.lua
 Modules\Tooltips\TooltipHandler.lua
+Modules\Tooltips\ChatFilter.lua
 Modules\Tooltips\Link.lua
 
 #Auto

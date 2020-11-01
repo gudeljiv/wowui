@@ -1,12 +1,11 @@
-﻿<Ui xmlns="http://www.blizzard.com/wow/ui/"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\FrameXML\UI.xsd">
+﻿<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\FrameXML\UI.xsd">
 	<Script file="MonkeyQuestDefs.lua"/>
 	<Script file="localization.lua"/>
 	<Script file="MonkeyQuest.lua"/>
 	<Script file="MonkeyQuestInit.lua"/>
 	<Script file="MonkeyQuestSlash.lua"/>
 	<Script file="MonkeyQuestTooltip.lua"/>
-
+	
 	<Button name="MonkeyQuestButtonTemplate" virtual="true">
 		<Layers>
 			<Layer level="ARTWORK">
@@ -73,7 +72,7 @@
 		<Size>
 			<AbsDimension x="256" y="32"/>
 		</Size>
-
+		
 		<Anchors>
 			<Anchor point="BOTTOMLEFT">
 				<Offset>
@@ -81,7 +80,7 @@
 				</Offset>
 			</Anchor>
 		</Anchors>
-
+		
 		<Backdrop bgFile="Interface\AddOns\MonkeyLibrary\Textures\BackDrop.tga" edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
 			<EdgeSize>
 				<AbsValue val="16"/>
@@ -93,7 +92,7 @@
 				<AbsInset left="5" right="5" top="5" bottom="5"/>
 			</BackgroundInsets>
 		</Backdrop>
-
+		
 		<Frames>
 			<Button name="MonkeyQuestTitleButton">
 				<Anchors>
@@ -255,7 +254,7 @@
 					</Anchor>
 				</Anchors>
 			</Button>
-
+		
 			<Button name="MonkeyQuestButton21" inherits="MonkeyQuestButtonTemplate" id="21">
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="MonkeyQuestButton20" relativePoint="BOTTOMLEFT">
@@ -436,7 +435,7 @@
 					</Anchor>
 				</Anchors>
 			</Button>
-
+			
 			<CheckButton name="MonkeyQuestHideButton1" checked="true" inherits="MonkeyQuestHideButtonTemplate" id="1">
 				<Anchors>
 					<Anchor point="TOPRIGHT" relativeTo="MonkeyQuestButton1" relativePoint="TOPLEFT">
@@ -737,7 +736,7 @@
 					</Anchor>
 				</Anchors>
 			</CheckButton>
-
+			
 			<Button name="MonkeyQuestCloseButton">
 				<Size>
 					<AbsDimension x="16" y="16"/>
@@ -766,7 +765,7 @@
 				<PushedTexture file="Interface\AddOns\MonkeyLibrary\Textures\CloseButton-Down.tga"/>
 				<HighlightTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Highlight" alphaMode="ADD"/>
 			</Button>
-
+			
 			<Button name="MonkeyQuestMinimizeButton">
 				<Size>
 					<AbsDimension x="16" y="16"/>
@@ -795,7 +794,7 @@
 				<PushedTexture file="Interface\AddOns\MonkeyLibrary\Textures\MinimizeButton-Down.tga"/>
 				<HighlightTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Highlight" alphaMode="ADD"/>
 			</Button>
-
+			
 			<CheckButton name="MonkeyQuestShowHiddenCheckButton" inherits="UICheckButtonTemplate">
 				<Size>
 					<AbsDimension x="16" y="16"/>
@@ -821,7 +820,7 @@
 					</OnClick>
 				</Scripts>
 			</CheckButton>
-
+			
 		</Frames>
 		<Scripts>
 			<OnLoad>
