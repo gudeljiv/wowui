@@ -4,6 +4,8 @@ Bagnon_Sets = {
 	},
 	["leatherColor"] = {
 	},
+	["glowNew"] = false,
+	["glowUnusable"] = true,
 	["engineerColor"] = {
 	},
 	["fridgeColor"] = {
@@ -18,6 +20,16 @@ Bagnon_Sets = {
 	},
 	["closeBank"] = false,
 	["glowQuest"] = true,
+	["enchantColor"] = {
+	},
+	["quiverColor"] = {
+	},
+	["normalColor"] = {
+	},
+	["reagentColor"] = {
+	},
+	["gemColor"] = {
+	},
 	["global"] = {
 		["inventory"] = {
 			["rules"] = {
@@ -64,10 +76,10 @@ Bagnon_Sets = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["sort"] = true,
+			["broker"] = false,
 			["options"] = false,
 			["bagToggle"] = false,
-			["broker"] = false,
+			["sort"] = true,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -158,48 +170,42 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
-			["point"] = "BOTTOMLEFT",
+			["point"] = "TOPLEFT",
 			["hiddenBags"] = {
 			},
 			["color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
-				0.880060367286205, -- [4]
+				1, -- [4]
 			},
+			["sort"] = true,
+			["spacing"] = 2,
+			["bagToggle"] = false,
+			["columns"] = 18,
+			["alpha"] = 1,
+			["scale"] = 1,
+			["bagBreak"] = false,
+			["x"] = 395.439178466797,
+			["search"] = false,
+			["broker"] = false,
+			["itemScale"] = 1,
 			["hiddenRules"] = {
 			},
-			["spacing"] = 2,
-			["y"] = 211.781341552734,
-			["x"] = 664.438842773438,
-			["search"] = false,
+			["y"] = -235.21875,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["alpha"] = 1,
-			["broker"] = false,
-			["bagToggle"] = false,
-			["bagBreak"] = false,
 		},
 	},
-	["quiverColor"] = {
-	},
-	["glowQuality"] = true,
-	["reagentColor"] = {
-	},
-	["gemColor"] = {
-	},
-	["enchantColor"] = {
-	},
-	["glowAlpha"] = 0.7,
+	["glowAlpha"] = 0.5,
 	["emptySlots"] = true,
 	["keyColor"] = {
 	},
-	["normalColor"] = {
-	},
+	["displayAuction"] = false,
 	["profiles"] = {
 	},
 	["mineColor"] = {
@@ -207,8 +213,8 @@ Bagnon_Sets = {
 	["displayTrade"] = false,
 	["version"] = "9.0.3",
 	["displayCraft"] = false,
-	["displayAuction"] = false,
-	["colorSlots"] = true,
+	["glowQuality"] = true,
+	["colorSlots"] = false,
 	["displayBank"] = false,
 	["displayScrapping"] = false,
 }

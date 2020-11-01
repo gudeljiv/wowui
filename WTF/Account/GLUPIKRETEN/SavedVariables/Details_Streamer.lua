@@ -21,8 +21,8 @@ Details_StreamerDB = {
 				0.5, -- [4]
 			},
 			["main_frame_size"] = {
-				269.999908447266, -- [1]
-				68.0000610351563, -- [2]
+				250, -- [1]
+				140, -- [2]
 			},
 			["minimap"] = {
 				["minimapPos"] = 160,
@@ -33,28 +33,25 @@ Details_StreamerDB = {
 			["row_texture"] = "Glamour2",
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = true,
-			["author"] = "Details! Team",
-			["enabled"] = true,
-			["arrow_size"] = 10,
-			["font_size"] = 10,
-			["row_spacement"] = 17,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
 				1, -- [3]
 				0.480826139450073, -- [4]
 			},
-			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+			["enabled"] = true,
+			["arrow_size"] = 10,
 			["use_spark"] = false,
-			["y"] = -175.106338500977,
-			["x"] = -3.99267578125,
-			["font_face"] = "Friz Quadrata TT",
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["y"] = -20.1072998046875,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -66,9 +63,12 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["main_frame_strata"] = "LOW",
-			["point"] = "RIGHT",
-			["row_height"] = 17,
+			["x"] = 466.999847412109,
+			["font_face"] = "Friz Quadrata TT",
+			["font_size"] = 10,
+			["author"] = "Details! Team",
+			["point"] = "TOPLEFT",
+			["row_height"] = 18,
 			["scale"] = 1,
 		},
 	},
