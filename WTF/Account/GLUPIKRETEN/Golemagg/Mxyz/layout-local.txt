@@ -3,7 +3,7 @@ Frame: EavesDropFrame
 FrameLevel: 1
 Anchor: RIGHT
 X: -44
-Y: 272
+Y: 250
 W: 154
 H: 322
 Frame: PlayerFrame
@@ -111,13 +111,6 @@ X: 243
 Y: -107
 W: 50
 H: 50
-Frame: BagnonBankFrame1
-FrameLevel: 1
-Anchor: CENTER
-X: -244
-Y: -219
-W: 716
-H: 294
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER

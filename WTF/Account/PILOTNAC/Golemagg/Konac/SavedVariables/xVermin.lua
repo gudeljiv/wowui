@@ -1,16 +1,6 @@
 
 xKillCount = {
 	["show"] = false,
-	["position"] = {
-		["y"] = 233.000106811523,
-		["x"] = 0,
-		["to"] = "LEFT",
-		["from"] = "LEFT",
-	},
-	["experience"] = {
-		["totaltotal"] = 0,
-		["pulltotal"] = 0,
-	},
 	["killLog"] = {
 		["Slavering Ghoul"] = {
 			["name"] = "Slavering Ghoul",
@@ -20,5 +10,15 @@ xKillCount = {
 			["name"] = "Skeletal Flayer",
 			["count"] = 2,
 		},
+	},
+	["experience"] = {
+		["pulltotal"] = 0,
+		["totaltotal"] = 0,
+	},
+	["position"] = {
+		["y"] = 233.000106811523,
+		["x"] = 0,
+		["to"] = "LEFT",
+		["from"] = "LEFT",
 	},
 }

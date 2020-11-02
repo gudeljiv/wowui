@@ -17,6 +17,12 @@ Bagnon_Sets = {
 	["displayBank"] = false,
 	["quiverColor"] = {
 	},
+	["fridgeColor"] = {
+	},
+	["reagentColor"] = {
+	},
+	["gemColor"] = {
+	},
 	["global"] = {
 		["inventory"] = {
 			["rules"] = {
@@ -51,7 +57,7 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["money"] = true,
+			["options"] = false,
 			["y"] = 99.9999771118164,
 			["x"] = -50,
 			["sort"] = true,
@@ -60,7 +66,7 @@ Bagnon_Sets = {
 			["broker"] = false,
 			["search"] = false,
 			["bagToggle"] = true,
-			["options"] = false,
+			["money"] = true,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -127,8 +133,6 @@ Bagnon_Sets = {
 			},
 		},
 		["bank"] = {
-			["hiddenBags"] = {
-			},
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -150,23 +154,24 @@ Bagnon_Sets = {
 				"trade/recipe", -- [18]
 				"quest", -- [19]
 				"misc", -- [20]
+				"all/souls", -- [21]
+				"equip/ammo", -- [22]
 			},
-			["search"] = false,
-			["borderColor"] = {
+			["options"] = false,
+			["hiddenBags"] = {
 			},
 			["color"] = {
 			},
-			["options"] = false,
 			["hiddenRules"] = {
 			},
+			["y"] = -317.181884765625,
+			["x"] = 95,
+			["search"] = false,
+			["borderColor"] = {
+			},
+			["point"] = "TOPLEFT",
 			["broker"] = false,
 		},
-	},
-	["reagentColor"] = {
-	},
-	["gemColor"] = {
-	},
-	["enchantColor"] = {
 	},
 	["glowAlpha"] = 0.5,
 	["emptySlots"] = true,
@@ -183,7 +188,7 @@ Bagnon_Sets = {
 	["displayCraft"] = false,
 	["displayAuction"] = false,
 	["colorSlots"] = true,
-	["fridgeColor"] = {
+	["enchantColor"] = {
 	},
 	["displayScrapping"] = false,
 }
