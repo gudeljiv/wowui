@@ -1,8 +1,17 @@
 # Deadly Boss Mods Core
 
-## [1.13.61-29-g197022b](https://github.com/DeadlyBossMods/DBM-Classic/tree/197022ba01fc9c7b5b01784342b406dfe87cb093) (2020-10-31)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-Classic/compare/1.13.61...197022ba01fc9c7b5b01784342b406dfe87cb093) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Classic/releases)
+## [1.13.61-36-g5448ca0](https://github.com/DeadlyBossMods/DBM-Classic/tree/5448ca01446107500502e62d28f8c4fc406f652f) (2020-11-02)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-Classic/compare/1.13.61...5448ca01446107500502e62d28f8c4fc406f652f) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Classic/releases)
 
+- Tweak adds from Gothik based on feedback, not totally verified yet.  
+- Update localization.es.lua (#624)  
+- Fix bad icon and option default  
+- Update localization.br.lua (#623)  
+    * Update localization.br.lua  
+    * Update localization.br.lua  
+- Update localization.de.lua (#621)  
+- Update DBM-Naxx.toc (#620)  
+- Update localization.cn.lua (#619)  
 - missed one  
 - Cleanup Gothik a little  
 - naxx: refine some timers from logs (#612)  

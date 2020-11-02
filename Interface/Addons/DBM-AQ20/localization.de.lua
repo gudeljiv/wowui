@@ -25,8 +25,8 @@ L:SetOptionLocalization{
 }
 L:SetMiscLocalization{
 	Wave12		= "Hier kommen sie. Bleibt am Leben, Welpen.",
-	Wave12Alt	= "Erinnerst du dich, Rajaxx? Ich habe dir doch versprochen, dich zuletzt zu töten.",
-	Wave3		= "Die Zeit der Vergeltung ist gekommen! Lasst uns die Herzen unserer Feinde mit Dunkelheit erfüllen!",
+	Wave12Alt	= "Erinnerst du dich daran, Rajaxx, wann ich dir das letzte Mal sagte, ich würde dich töten?",
+	Wave3		= "Die Zeit der Vergeltung ist gekommen! Lasst uns die Herzen unserer Feinde mit Dunkelheit füllen!",
 	Wave4		= "Wir werden nicht länger hinter verbarrikadierten Toren und Mauern aus Stein ausharren! Die Rache wird unser sein! Selbst die Drachen werden im Angesicht unseres Zornes erzittern!",
 	Wave5		= "Wir kennen keine Furcht! Und wir werden unseren Feinden den Tod bringen!",
 	Wave6		= "Hirschhaupt wird winseln und um sein Leben betteln, genau wie sein räudiger Sohn! Eintausend Jahre der Ungerechtigkeit werden heute enden!",
