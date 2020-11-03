@@ -1,8 +1,15 @@
 # Deadly Boss Mods Core
 
-## [1.13.61-36-g5448ca0](https://github.com/DeadlyBossMods/DBM-Classic/tree/5448ca01446107500502e62d28f8c4fc406f652f) (2020-11-02)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-Classic/compare/1.13.61...5448ca01446107500502e62d28f8c4fc406f652f) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Classic/releases)
+## [1.13.61-40-g8326194](https://github.com/DeadlyBossMods/DBM-Classic/tree/83261940d0c0c482ed8a1dca77ebd514f9cd539e) (2020-11-02)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-Classic/compare/1.13.61...83261940d0c0c482ed8a1dca77ebd514f9cd539e) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Classic/releases)
 
+- Update localization.ru.lua (#622)  
+    * Update localization.ru.lua  
+    * Update localization.ru.lua  
+    * Update localization.ru.lua  
+- Update localization.ru.lua (#627)  
+- Update DBM-AQ20.toc (#626)  
+- Create localization.mx.lua (#625)  
 - Tweak adds from Gothik based on feedback, not totally verified yet.  
 - Update localization.es.lua (#624)  
 - Fix bad icon and option default  

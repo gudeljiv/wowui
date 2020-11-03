@@ -100,21 +100,38 @@ L:SetGeneralLocalization{
 	name = "К'Тун"
 }
 L:SetWarningLocalization{
-	WarnEyeTentacle 	= "Появляются глазные отростки!",
-	WarnClawTentacle2	= "Появляется когтещупальце!",
-	WarnGiantEyeTentacle	= "Появляется гигантский глазной отросток!",
-	WarnGiantClawTentacle	= "Появляется гигантское когтещупальце!",
-	WarnWeakened 		= "К'Тун ослаблен! Бейте его!"
+	WarnEyeTentacle 	= "Глазной отросток",
+	WarnClawTentacle2	= "Когтещупальце",
+	WarnGiantEyeTentacle	= "Огромное глазастое щупальце",
+	WarnGiantClawTentacle	= "Гигантский когтещуп",
+	WarnWeakened 		= "К'Тун ослаблен!"
 }
 L:SetTimerLocalization{
 	TimerEyeTentacle	= "Глазных отроски",
 	TimerGiantEyeTentacle	= "Гигантский глазной отросток",
 	TimerClawTentacle	= "Когтещупальце",
 	TimerGiantClawTentacle	= "Гигантское когтещупальце",
-	TimerWeakened		= "К'Тун ослаблен"
+	TimerWeakened		= "Ослаблен закончен"
 }
 L:SetOptionLocalization{
-	RangeFrame	= "Показывать окно дистанции"
+	WarnEyeTentacle			= "Show warning for Eye Tentacle",
+	WarnClawTentacle2		= "Show warning for Claw Tentacle",
+	WarnGiantEyeTentacle	= "Show warning for Giant Eye Tentacle",
+	WarnGiantClawTentacle	= "Show warning for Giant Claw Tentacle",
+	SpecWarnWeakened		= "Show special warning when boss weaken",
+	TimerEyeTentacle		= "Show timer for next Eye Tentacle",
+	TimerClawTentacle		= "Show timer for next Claw Tentacle",
+	TimerGiantEyeTentacle	= "Show timer for next Giant Eye Tentacle",
+	TimerGiantClawTentacle	= "Show timer for next Giant Claw Tentacle",
+	TimerWeakened			= "Show timer for boss weaken duration",
+	RangeFrame				= "Show range frame (10)"
+}
+L:SetMiscLocalization{
+	Stomach		= "Живота",
+	Eye			= "Око К'Туна",
+	FleshTent	= "Мясистое щупальце",--Localized so it shows on frame in users language, not senders
+	Weakened 	= "ослаблен!",
+	NotValid	= "AQ40 partially cleared. %s optional bosses remain."
 }
 ----------------
 -- Ouro --
@@ -126,9 +143,7 @@ L:SetGeneralLocalization{
 }
 L:SetWarningLocalization{
 	WarnSubmerge		= "Закапывание",
-	WarnEmerge			= "Появление",
-	WarnSubmergeSoon	= "Скоро закапывание",
-	WarnEmergeSoon		= "Скоро появление"
+	WarnEmerge			= "Появление"
 }
 L:SetTimerLocalization{
 	TimerSubmerge		= "Закапывание",
@@ -136,9 +151,15 @@ L:SetTimerLocalization{
 }
 L:SetOptionLocalization{
 	WarnSubmerge		= "Показывать предупреждение о закапывании",
-	WarnSubmergeSoon	= "Предупреждать заранее о закапывании",
 	TimerSubmerge		= "Показывать таймер до закапывания",
 	WarnEmerge			= "Показывать предупреждение о появлении",
-	WarnEmergeSoon		= "Предупреждать заранее о появлении",
 	TimerEmerge			= "Показывать таймер до появления"
+}
+----------------
+-- AQ40 Trash --
+----------------
+L = DBM:GetModLocalization("AQ40Trash")
+
+L:SetGeneralLocalization{
+	name = "АК40: Треш"
 }

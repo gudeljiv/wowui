@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("DeviateFaerie", "DBM-Party-Classic", 19)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20200720233054")
+mod:SetRevision("20200721014855")
 mod:SetCreatureID(5912)
 
 mod:RegisterCombat("combat")

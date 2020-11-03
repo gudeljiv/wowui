@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Weaver", "DBM-Party-Classic", 17)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20200720233054")
+mod:SetRevision("20200721014855")
 mod:SetCreatureID(5720)
 mod:SetEncounterID(487)
 
