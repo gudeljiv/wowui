@@ -6,42 +6,28 @@ Bagnon_Sets = {
 	},
 	["fridgeColor"] = {
 	},
-	["displayCraft"] = false,
-	["engineerColor"] = {
-	},
 	["inscribeColor"] = {
 	},
+	["engineerColor"] = {
+	},
+	["displayCraft"] = false,
 	["herbColor"] = {
 	},
-	["glowUnusable"] = true,
-	["displayMail"] = false,
-	["displayBank"] = false,
 	["soulColor"] = {
 	},
+	["displayMail"] = false,
+	["glowPoor"] = false,
+	["glowUnusable"] = true,
 	["closeBank"] = false,
 	["glowQuest"] = true,
-	["displayAuction"] = false,
+	["normalColor"] = {
+	},
 	["quiverColor"] = {
 	},
 	["glowQuality"] = true,
 	["reagentColor"] = {
 	},
 	["gemColor"] = {
-	},
-	["enchantColor"] = {
-	},
-	["glowAlpha"] = 0.5,
-	["emptySlots"] = true,
-	["glowNew"] = false,
-	["normalColor"] = {
-	},
-	["profiles"] = {
-	},
-	["mineColor"] = {
-	},
-	["displayTrade"] = false,
-	["version"] = "9.0.3",
-	["keyColor"] = {
 	},
 	["global"] = {
 		["inventory"] = {
@@ -214,7 +200,21 @@ Bagnon_Sets = {
 			["scale"] = 1,
 		},
 	},
+	["glowAlpha"] = 0.5,
+	["emptySlots"] = true,
+	["keyColor"] = {
+	},
+	["displayAuction"] = false,
+	["profiles"] = {
+	},
+	["mineColor"] = {
+	},
+	["displayTrade"] = false,
+	["version"] = "9.0.3",
+	["glowNew"] = false,
+	["enchantColor"] = {
+	},
 	["colorSlots"] = false,
-	["glowPoor"] = false,
+	["displayBank"] = false,
 	["displayScrapping"] = false,
 }

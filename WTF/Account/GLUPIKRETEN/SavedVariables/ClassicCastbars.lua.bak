@@ -13,14 +13,14 @@ ClassicCastbarsDB = {
 		["iconPositionY"] = 0,
 		["textPositionX"] = 0,
 		["showSpark"] = true,
+		["showIcon"] = true,
+		["ignoreParentAlpha"] = false,
 		["statusColorFailed"] = {
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
-		["hideIconBorder"] = false,
 		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
-		["showIcon"] = true,
 		["borderColor"] = {
 			1, -- [1]
 			0.796078431372549, -- [2]
@@ -64,7 +64,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["ignoreParentAlpha"] = false,
+		["hideIconBorder"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -228,7 +228,11 @@ ClassicCastbarsDB = {
 		},
 		["hideIconBorder"] = true,
 		["iconPositionY"] = 0,
-		["castStatusBar"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
+		["statusColorFailed"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
 		["borderColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -272,11 +276,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["statusColorFailed"] = {
-			1, -- [1]
-			0, -- [2]
-			0, -- [3]
-		},
+		["castStatusBar"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -403,13 +403,13 @@ ClassicCastbarsDB = {
 		["15589Eye Beam"] = true,
 		["13161Stun Bomb Attack"] = true,
 		["15247Mana Burn"] = true,
-		["11729Toxic Spit"] = true,
+		["11492Wild Regeneration"] = true,
 		["11983Shadow Flame"] = true,
 		["14834Blood Siphon"] = true,
-		["11492Wild Regeneration"] = true,
+		["11729Toxic Spit"] = true,
 		["11981Shadow Flame"] = true,
 		["11583Bellowing Roar"] = true,
-		["10184Flame Breath"] = true,
+		["11983Wing Buffet"] = true,
 		["12459Shadow Bolt"] = true,
 		["14601Shadow Flame"] = true,
 		["13280Massive Geyser"] = true,
@@ -418,20 +418,20 @@ ClassicCastbarsDB = {
 		["12468Flamestrike"] = true,
 		["6109Manastorm"] = true,
 		["12435Fireball Volley"] = true,
-		["11981Wing Buffet"] = true,
+		["10184Fireball"] = true,
 		["6109Frost Breath"] = true,
 		["11490Intense Pain"] = true,
-		["10438Frostbolt"] = true,
-		["11492Enervate"] = true,
-		["15727Eye Beam"] = true,
 		["11359Soul Tap"] = true,
-		["14947Stun Bomb Attack"] = true,
 		["12265Fireball"] = true,
+		["15727Eye Beam"] = true,
+		["10438Frostbolt"] = true,
+		["14947Stun Bomb Attack"] = true,
+		["11492Enervate"] = true,
 		["12259Shadow Bolt"] = true,
 		["11339Volley"] = true,
 		["14944Stun Bomb Attack"] = true,
-		["10184Fireball"] = true,
-		["11983Wing Buffet"] = true,
+		["11981Wing Buffet"] = true,
+		["10184Flame Breath"] = true,
 		["12118Dominate Mind"] = true,
 		["15311Silence"] = true,
 		["15311Dust Cloud"] = true,
