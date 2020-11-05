@@ -1,32 +1,32 @@
 
 xKillCount = {
 	["show"] = true,
+	["killLog"] = {
+		["Blighted Zombie"] = {
+			["name"] = "Blighted Zombie",
+			["count"] = 18,
+		},
+		["Skeletal Terror"] = {
+			["name"] = "Skeletal Terror",
+			["count"] = 3,
+		},
+		["Rotting Worm"] = {
+			["name"] = "Rotting Worm",
+			["count"] = 38,
+		},
+		["Rotting Cadaver"] = {
+			["name"] = "Rotting Cadaver",
+			["count"] = 19,
+		},
+	},
+	["experience"] = {
+		["totaltotal"] = 25542,
+		["pulltotal"] = 0,
+	},
 	["position"] = {
 		["y"] = -259.000091552734,
 		["x"] = 452.999969482422,
 		["to"] = "TOPLEFT",
 		["from"] = "TOPLEFT",
-	},
-	["experience"] = {
-		["pulltotal"] = 9830,
-		["totaltotal"] = 40004,
-	},
-	["killLog"] = {
-		["Sandfury Shadowhunter"] = {
-			["name"] = "Sandfury Shadowhunter",
-			["count"] = 1,
-		},
-		["Zul'Farrak Dead Hero"] = {
-			["name"] = "Zul'Farrak Dead Hero",
-			["count"] = 4,
-		},
-		["Zul'Farrak Zombie"] = {
-			["name"] = "Zul'Farrak Zombie",
-			["count"] = 38,
-		},
-		["Scarab"] = {
-			["name"] = "Scarab",
-			["count"] = 33,
-		},
 	},
 }
