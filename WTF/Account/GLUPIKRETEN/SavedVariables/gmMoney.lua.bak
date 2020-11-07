@@ -1,5 +1,11 @@
 
 GMMONEY = {
+	["Hydraxian Waterlords"] = {
+		["Battlearm"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "HUNTER",
+		},
+	},
 	["Stonespine"] = {
 		["Vermins"] = {
 			["GOLD"] = 0,
@@ -16,7 +22,7 @@ GMMONEY = {
 			["CLASS"] = "HUNTER",
 		},
 		["Augustin"] = {
-			["GOLD"] = 117328,
+			["GOLD"] = 227711,
 			["CLASS"] = "MAGE",
 		},
 		["Mxyz"] = {
@@ -38,6 +44,6 @@ GMMONEY = {
 	},
 }
 GMMONEYSET = {
-	["FULLDISP"] = true,
 	["TEXTMODE"] = true,
+	["FULLDISP"] = true,
 }

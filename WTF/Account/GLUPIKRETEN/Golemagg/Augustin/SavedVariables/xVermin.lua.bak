@@ -1,32 +1,36 @@
 
 xKillCount = {
 	["show"] = true,
-	["position"] = {
-		["y"] = -259.000091552734,
-		["x"] = 452.999969482422,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
-	},
-	["experience"] = {
-		["pulltotal"] = 0,
-		["totaltotal"] = 25542,
-	},
 	["killLog"] = {
-		["Blighted Zombie"] = {
-			["name"] = "Blighted Zombie",
-			["count"] = 18,
+		["Rotting Worm"] = {
+			["name"] = "Rotting Worm",
+			["count"] = 90,
 		},
 		["Skeletal Terror"] = {
 			["name"] = "Skeletal Terror",
-			["count"] = 3,
+			["count"] = 15,
 		},
 		["Rotting Cadaver"] = {
 			["name"] = "Rotting Cadaver",
-			["count"] = 19,
+			["count"] = 45,
 		},
-		["Rotting Worm"] = {
-			["name"] = "Rotting Worm",
-			["count"] = 38,
+		["Black Rat"] = {
+			["name"] = "Black Rat",
+			["count"] = 1,
 		},
+		["Blighted Zombie"] = {
+			["name"] = "Blighted Zombie",
+			["count"] = 47,
+		},
+	},
+	["experience"] = {
+		["totaltotal"] = 65934,
+		["pulltotal"] = 5400,
+	},
+	["position"] = {
+		["y"] = 318.499847412109,
+		["x"] = 94.0000915527344,
+		["to"] = "LEFT",
+		["from"] = "LEFT",
 	},
 }

@@ -1,16 +1,20 @@
 
 xKillCount = {
 	["show"] = true,
-	["position"] = {
-		["y"] = -237.999938964844,
-		["x"] = 10.0000038146973,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
+	["killLog"] = {
+		["Fetid Corpse"] = {
+			["name"] = "Fetid Corpse",
+			["count"] = 2,
+		},
 	},
 	["experience"] = {
+		["totaltotal"] = 4544,
 		["pulltotal"] = 0,
-		["totaltotal"] = 0,
 	},
-	["killLog"] = {
+	["position"] = {
+		["y"] = 242.999923706055,
+		["x"] = 14.0000190734863,
+		["to"] = "LEFT",
+		["from"] = "LEFT",
 	},
 }

@@ -4,6 +4,7 @@ Details_StreamerDB = {
 		["Vermin - Golemagg"] = "Mxyz - Golemagg",
 		["Augustin - Golemagg"] = "Mxyz - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
 		["Mxyz - Golemagg"] = {
@@ -33,7 +34,7 @@ Details_StreamerDB = {
 			["row_texture"] = "Glamour2",
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = true,
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["enabled"] = true,
 			["arrow_size"] = 10,
 			["use_spark"] = false,
@@ -44,7 +45,12 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["author"] = "Details! Team",
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["y"] = -183.107162475586,
 			["per_second"] = {
@@ -61,12 +67,7 @@ Details_StreamerDB = {
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["font_size"] = 10,
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["point"] = "RIGHT",
 			["row_height"] = 18,
 			["scale"] = 1,

@@ -1,25 +1,5 @@
 
 Postal3ClassicDB = {
-	["global"] = {
-		["BlackBook"] = {
-			["alts"] = {
-				"Antun|Golemagg|Horde|2|SHAMAN", -- [1]
-				"Augustin|Golemagg|Horde|53|MAGE", -- [2]
-				"Battitude|Golemagg|Horde|3|ROGUE", -- [3]
-				"Battlearm|Golemagg|Horde|1|SHAMAN", -- [4]
-				"Dmitar|Golemagg|Horde|3|PRIEST", -- [5]
-				"Grgur|Golemagg|Horde|2|WARLOCK", -- [6]
-				"Jaroslav|Golemagg|Horde|10|DRUID", -- [7]
-				"Koloman|Golemagg|Horde|1|MAGE", -- [8]
-				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [9]
-				"Mxyz|Golemagg|Horde|5|PRIEST", -- [10]
-				"Mxzq|Golemagg|Horde|34|HUNTER", -- [11]
-				"Testxv|Golemagg|Horde|1|HUNTER", -- [12]
-				"Vermins|Stonespine|Horde|2|WARRIOR", -- [13]
-				"Vermin|Golemagg|Horde|36|WARRIOR", -- [14]
-			},
-		},
-	},
 	["profileKeys"] = {
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
@@ -28,8 +8,9 @@ Postal3ClassicDB = {
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
-		["Mxys - Golemagg"] = "Mxys - Golemagg",
+		["Vermins - Stonespine"] = "Vermins - Stonespine",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
@@ -38,10 +19,31 @@ Postal3ClassicDB = {
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Vermins - Stonespine"] = "Vermins - Stonespine",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Mxys - Golemagg"] = "Mxys - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+	},
+	["global"] = {
+		["BlackBook"] = {
+			["alts"] = {
+				"Antun|Golemagg|Horde|2|SHAMAN", -- [1]
+				"Augustin|Golemagg|Horde|54|MAGE", -- [2]
+				"Battitude|Golemagg|Horde|3|ROGUE", -- [3]
+				"Battlearm|Golemagg|Horde|1|SHAMAN", -- [4]
+				"Battlearm|Hydraxian Waterlords|Horde|1|HUNTER", -- [5]
+				"Dmitar|Golemagg|Horde|3|PRIEST", -- [6]
+				"Grgur|Golemagg|Horde|2|WARLOCK", -- [7]
+				"Jaroslav|Golemagg|Horde|10|DRUID", -- [8]
+				"Koloman|Golemagg|Horde|1|MAGE", -- [9]
+				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [10]
+				"Mxyz|Golemagg|Horde|5|PRIEST", -- [11]
+				"Mxzq|Golemagg|Horde|34|HUNTER", -- [12]
+				"Testxv|Golemagg|Horde|1|HUNTER", -- [13]
+				"Vermins|Stonespine|Horde|2|WARRIOR", -- [14]
+				"Vermin|Golemagg|Horde|36|WARRIOR", -- [15]
+			},
+		},
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -69,9 +71,18 @@ Postal3ClassicDB = {
 		},
 		["Mxym - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Vermins - Stonespine"] = {
 		},
-		["Mxys - Golemagg"] = {
+		["Mxzq - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Mxyz|Golemagg|Horde", -- [1]
+					"Byceps|Golemagg|Horde", -- [2]
+					"Vermin|Golemagg|Horde", -- [3]
+				},
+			},
+		},
+		["Battlearm - Hydraxian Waterlords"] = {
 		},
 		["Testxv - Golemagg"] = {
 		},
@@ -94,6 +105,8 @@ Postal3ClassicDB = {
 		},
 		["Judawise - Golemagg"] = {
 		},
+		["Jaroslav - Golemagg"] = {
+		},
 		["Vermin - Golemagg"] = {
 			["BlackBook"] = {
 				["recent"] = {
@@ -103,18 +116,9 @@ Postal3ClassicDB = {
 				},
 			},
 		},
-		["Jaroslav - Golemagg"] = {
+		["Mxys - Golemagg"] = {
 		},
-		["Mxzq - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Mxyz|Golemagg|Horde", -- [1]
-					"Byceps|Golemagg|Horde", -- [2]
-					"Vermin|Golemagg|Horde", -- [3]
-				},
-			},
-		},
-		["Vermins - Stonespine"] = {
+		["Greenwise - Golemagg"] = {
 		},
 	},
 }

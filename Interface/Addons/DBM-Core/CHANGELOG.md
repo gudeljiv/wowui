@@ -1,8 +1,18 @@
 # Deadly Boss Mods Core
 
-## [1.13.61-40-g8326194](https://github.com/DeadlyBossMods/DBM-Classic/tree/83261940d0c0c482ed8a1dca77ebd514f9cd539e) (2020-11-02)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-Classic/compare/1.13.61...83261940d0c0c482ed8a1dca77ebd514f9cd539e) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Classic/releases)
+## [1.13.61-48-gabe5049](https://github.com/DeadlyBossMods/DBM-Classic/tree/abe50494931eb9a7f957b6c1a07587350a23fb03) (2020-11-06)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-Classic/compare/1.13.61...abe50494931eb9a7f957b6c1a07587350a23fb03) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Classic/releases)
 
+- tweak landslide trample timer  
+- Removed infoframe and frozen timer from Viscidous. Phase detection is unreliable and so are counters. This, combined with fact that classic support is being scaled back significantly, measures are being taken to either fix lose ends, or remove them.  
+- make dark glare warning/timer show/end 2 seconds earlier Closes #554  
+- Several sapphiron and KT fixes. Both probably need more work but this best could be done without transcriptor and extensive debug  
+- Cho rush going friendly should now be registered as a victory  
+- Update koKR (Classic) (#629)  
+- Update localization.de.lua (#630)  
+- Update localization.ru.lua AQ40 (#628)  
+    * Update localization.ru.lua  
+    * Update localization.ru.lua  
 - Update localization.ru.lua (#622)  
     * Update localization.ru.lua  
     * Update localization.ru.lua  

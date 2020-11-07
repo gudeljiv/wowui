@@ -2,27 +2,28 @@
 Details_TinyThreatDB = {
 	["characters"] = {
 		["Mxzq - Golemagg"] = "Default",
-		["Mxym - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
+		["Mxys - Golemagg"] = "Default",
+		["Vermins - Stonespine"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
-		["Mxys - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
-		["Vermins - Stonespine"] = "Default",
+		["Mxym - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["enabled"] = true,
 			["animate"] = true,
-			["author"] = "Details! Team",
+			["useclasscolors"] = false,
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -35,7 +36,7 @@ Details_TinyThreatDB = {
 			["showamount"] = false,
 			["useplayercolor"] = false,
 			["alwaysshowme"] = true,
-			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 		},
 	},
 }

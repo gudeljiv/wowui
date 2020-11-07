@@ -1,6 +1,16 @@
 
 xKillCount = {
 	["show"] = true,
+	["position"] = {
+		["y"] = 318.499847412109,
+		["x"] = 94.0000915527344,
+		["to"] = "LEFT",
+		["from"] = "LEFT",
+	},
+	["experience"] = {
+		["pulltotal"] = 5400,
+		["totaltotal"] = 65934,
+	},
 	["killLog"] = {
 		["Rotting Worm"] = {
 			["name"] = "Rotting Worm",
@@ -22,15 +32,5 @@ xKillCount = {
 			["name"] = "Blighted Zombie",
 			["count"] = 47,
 		},
-	},
-	["experience"] = {
-		["totaltotal"] = 65934,
-		["pulltotal"] = 5400,
-	},
-	["position"] = {
-		["y"] = 318.499847412109,
-		["x"] = 94.0000915527344,
-		["to"] = "LEFT",
-		["from"] = "LEFT",
 	},
 }
