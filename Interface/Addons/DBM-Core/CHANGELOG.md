@@ -1,8 +1,9 @@
 # Deadly Boss Mods Core
 
-## [1.13.61-48-gabe5049](https://github.com/DeadlyBossMods/DBM-Classic/tree/abe50494931eb9a7f957b6c1a07587350a23fb03) (2020-11-06)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-Classic/compare/1.13.61...abe50494931eb9a7f957b6c1a07587350a23fb03) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Classic/releases)
+## [1.13.61-49-gbedeb53](https://github.com/DeadlyBossMods/DBM-Classic/tree/bedeb5378b5c991befd26edbe15627a03807bf5d) (2020-11-08)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-Classic/compare/1.13.61...bedeb5378b5c991befd26edbe15627a03807bf5d) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Classic/releases)
 
+- Update localization.fr.lua (#631)  
 - tweak landslide trample timer  
 - Removed infoframe and frozen timer from Viscidous. Phase detection is unreliable and so are counters. This, combined with fact that classic support is being scaled back significantly, measures are being taken to either fix lose ends, or remove them.  
 - make dark glare warning/timer show/end 2 seconds earlier Closes #554  
