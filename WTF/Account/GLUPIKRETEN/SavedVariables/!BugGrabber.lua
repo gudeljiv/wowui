@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 3572,
 	["lastSanitation"] = 3,
-	["session"] = 3563,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -165,8 +165,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [21]
 		{
@@ -546,8 +546,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [69]
 		{
@@ -805,8 +805,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [102]
 		{
@@ -946,8 +946,8 @@ BugGrabberDB = {
 		}, -- [119]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [120]
 		{
@@ -1420,8 +1420,8 @@ BugGrabberDB = {
 		}, -- [179]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["session"] = 1943,
 			["time"] = "2020/08/19 21:35:15",
+			["session"] = 1943,
 			["counter"] = 6,
 		}, -- [180]
 		{
@@ -2360,8 +2360,8 @@ BugGrabberDB = {
 		}, -- [297]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\ClickToMove\\ClickToMove.toc",
-			["session"] = 2740,
 			["time"] = "2020/09/30 12:15:00",
+			["session"] = 2740,
 			["counter"] = 10,
 		}, -- [298]
 		{
@@ -3169,14 +3169,14 @@ BugGrabberDB = {
 		}, -- [399]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Examiner\\Examiner.toc",
-			["time"] = "2020/10/14 21:40:43",
 			["session"] = 3191,
+			["time"] = "2020/10/14 21:40:43",
 			["counter"] = 2,
 		}, -- [400]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\NovaInstanceTracker\\NovaInstanceTracker.toc",
-			["time"] = "2020/10/14 21:40:43",
 			["session"] = 3191,
+			["time"] = "2020/10/14 21:40:43",
 			["counter"] = 2,
 		}, -- [401]
 		{
@@ -3665,8 +3665,8 @@ BugGrabberDB = {
 		}, -- [462]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 3397,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 3397,
 			["counter"] = 12,
 		}, -- [463]
 		{
@@ -3756,8 +3756,8 @@ BugGrabberDB = {
 		}, -- [474]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\KillTrack\\KillTrack.toc",
-			["session"] = 3440,
 			["time"] = "2020/10/22 09:09:38",
+			["session"] = 3440,
 			["counter"] = 2,
 		}, -- [475]
 		{
@@ -3888,8 +3888,8 @@ BugGrabberDB = {
 		}, -- [491]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
 			["session"] = 3497,
+			["time"] = "2020/07/24 16:00:06",
 			["counter"] = 196,
 		}, -- [492]
 		{
@@ -3908,5 +3908,21 @@ BugGrabberDB = {
 			["session"] = 3546,
 			["counter"] = 2,
 		}, -- [494]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PickupAction()'.",
+			["time"] = "2020/11/08 19:16:29",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `PickupAction'\n[string \"*:OnDragStart\"]:2: in function <[string \"*:OnDragStart\"]:1>",
+			["session"] = 3571,
+			["counter"] = 1,
+		}, -- [495]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:399: attempt to compare number with nil",
+			["time"] = "2020/11/13 18:34:12",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n 16 = <table> {\n }\n 17 = <table> {\n }\n 18 = <table> {\n }\n 19 = <table> {\n }\n 20 = <table> {\n }\n 21 = <table> {\n }\n 22 = <table> {\n }\n 23 = <table> {\n }\n 24 = <table> {\n }\n 25 = <table> {\n }\n 26 = <table> {\n }\n 27 = <table> {\n }\n 28 = <table> {\n }\n 29 = <table> {\n }\n 30 = <table> {\n }\n 31 = <table> {\n }\n 32 = <table> {\n }\n 33 = <table> {\n }\n 34 = <table> {\n }\n 35 = <table> {\n }\n 36 = <table> {\n }\n 37 = <table> {\n }\n 38 = <table> {\n }\n 39 = <table> {\n }\n 40 = <table> {\n }\n 41 = <table> {\n }\n 42 = <table> {\n }\n 43 = <table> {\n }\n 44 = <table> {\n }\n 45 = <table> {\n }\n 46 = <table> {\n }\n 47 = <table> {\n }\n 48 = <table> {\n }\n 49 = <table> {\n }\n 50 = <table> {\n }\n 51 = <table> {\n }\n 52 = <table> {\n }\n 53 = <table> {\n }\n 54 = <table> {\n }\n 55 = <table> {\n }\n 56 = <table> {\n }\n 57 = <table> {\n }\n 58 = <table> {\n }\n 59 = <table> {\n }\n 60 = <table> {\n }\n 61 = <table> {\n }\n 62 = <table> {\n }\n 63 = <table> {\n }\n 64 = <table> {\n }\n 65 = <table> {\n }\n 66 = <table> {\n }\n 67 = <table> {\n }\n 68 = <table> {\n }\n 69 = <table> {\n }\n 70 = <table> {\n }\n 71 = <table> {\n }\n 72 = <table> {\n }\n 73 = <table> {\n }\n 74 = <table> {\n }\n 75 = <table> {\n }\n 76 = <table> {\n }\n}\n(for control) = 3\n_ = 3\nsrc = <table> {\n item = \"20413::::1:0\"\n position = 12\n targetCount = 1\n targetItem = \"14946::::1:0\"\n count = 1\n container = 4\n}\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = \"20413::::1:0\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to compare number with nil\"\nmodel = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n 16 = <table> {\n }\n 17 = <table> {\n }\n 18 = <table> {\n }\n 19 = <table> {\n }\n 20 = <table> {\n }\n 21 = <table> {\n }\n 22 = <table> {\n }\n 23 = <table> {\n }\n 24 = <table> {\n }\n 25 = <table> {\n }\n 26 = <table> {\n }\n 27 = <table> {\n }\n 28 = <table> {\n }\n 29 = <table> {\n }\n 30 = <table> {\n }\n 31 = <table> {\n }\n 32 = <table> {\n }\n 33 = <table> {\n }\n 34 = <table> {\n }\n 35 = <table> {\n }\n 36 = <table> {\n }\n 37 = <table> {\n }\n 38 = <table> {\n }\n 39 = <table> {\n }\n 40 = <table> {\n }\n 41 = <table> {\n }\n 42 = <table> {\n }\n 43 = <table> {\n }\n 44 = <table> {\n }\n 45 = <table> {\n }\n 46 = <table> {\n }\n 47 = <table> {\n }\n 48 = <table> {\n }\n 49 = <table> {\n }\n 50 = <table> {\n }\n 51 = <table> {\n }\n 52 = <table> {\n }\n 53 = <table> {\n }\n 54 = <table> {\n }\n 55 = <table> {\n }\n 56 = <table> {\n }\n 57 = <table> {\n }\n 58 = <table> {\n }\n 59 = <table> {\n }\n 60 = <table> {\n }\n 61 = <table> {\n }\n 62 = <table> {\n }\n 63 = <table> {\n }\n 64 = <table> {\n }\n 65 = <table> {\n }\n 66 = <table> {\n }\n 67 = <table> {\n }\n 68 = <table> {\n }\n 69 = <table> {\n }\n 70 = <table> {\n }\n 71 = <table> {\n }\n 72 = <table> {\n }\n 73 = <table> {\n }\n 74 = <table> {\n }\n 75 = <table> {\n }\n 76 = <table> {\n }\n}\nitemStacks = <table> {\n 6948::::1:1 = 1\n 14946::::1:0 = 1\n 11134::::1:0 = 10\n 4338::::1:0 = 20\n 729::::1:0 = 10\n 4300::::1:0 = 1\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:399: in function `Stack'\nInterface\\AddOns\\xVermin\\SortBags.lua:254: in function <Interface\\AddOns\\xVermin\\SortBags.lua:241>",
+			["session"] = 3572,
+			["counter"] = 7,
+		}, -- [496]
 	},
 }

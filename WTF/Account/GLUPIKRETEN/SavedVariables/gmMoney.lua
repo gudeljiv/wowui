@@ -1,20 +1,32 @@
 
 GMMONEY = {
+	["Hydraxian Waterlords"] = {
+		["Battlearm"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "HUNTER",
+		},
+	},
+	["Stonespine"] = {
+		["Vermins"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+	},
 	["Golemagg"] = {
 		["Battlearm"] = {
 			["GOLD"] = 135801,
 			["CLASS"] = "SHAMAN",
 		},
 		["Mxzq"] = {
-			["GOLD"] = 76343,
+			["GOLD"] = 77247,
 			["CLASS"] = "HUNTER",
 		},
 		["Augustin"] = {
-			["GOLD"] = 227711,
+			["GOLD"] = 234522,
 			["CLASS"] = "MAGE",
 		},
 		["Mxyz"] = {
-			["GOLD"] = 770258,
+			["GOLD"] = 807939,
 			["CLASS"] = "PRIEST",
 		},
 		["Battitude"] = {
@@ -26,24 +38,12 @@ GMMONEY = {
 			["CLASS"] = "WARLOCK",
 		},
 		["Vermin"] = {
-			["GOLD"] = 41451,
+			["GOLD"] = 77907,
 			["CLASS"] = "WARRIOR",
-		},
-	},
-	["Stonespine"] = {
-		["Vermins"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
-		},
-	},
-	["Hydraxian Waterlords"] = {
-		["Battlearm"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "HUNTER",
 		},
 	},
 }
 GMMONEYSET = {
-	["FULLDISP"] = true,
 	["TEXTMODE"] = true,
+	["FULLDISP"] = true,
 }

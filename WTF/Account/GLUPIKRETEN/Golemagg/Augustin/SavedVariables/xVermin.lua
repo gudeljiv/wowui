@@ -8,17 +8,33 @@ xKillCount = {
 		["from"] = "LEFT",
 	},
 	["experience"] = {
-		["pulltotal"] = 5400,
-		["totaltotal"] = 65934,
+		["pulltotal"] = 2262,
+		["totaltotal"] = 80602,
 	},
 	["killLog"] = {
 		["Rotting Worm"] = {
 			["name"] = "Rotting Worm",
 			["count"] = 90,
 		},
+		["Anvilrage Reservist"] = {
+			["name"] = "Anvilrage Reservist",
+			["count"] = 45,
+		},
+		["Blighted Zombie"] = {
+			["name"] = "Blighted Zombie",
+			["count"] = 47,
+		},
+		["Anvilrage Captain"] = {
+			["name"] = "Anvilrage Captain",
+			["count"] = 1,
+		},
 		["Skeletal Terror"] = {
 			["name"] = "Skeletal Terror",
 			["count"] = 15,
+		},
+		["Twilight's Hammer Ambassador"] = {
+			["name"] = "Twilight's Hammer Ambassador",
+			["count"] = 10,
 		},
 		["Rotting Cadaver"] = {
 			["name"] = "Rotting Cadaver",
@@ -28,9 +44,9 @@ xKillCount = {
 			["name"] = "Black Rat",
 			["count"] = 1,
 		},
-		["Blighted Zombie"] = {
-			["name"] = "Blighted Zombie",
-			["count"] = 47,
+		["Shadowforge Senator"] = {
+			["name"] = "Shadowforge Senator",
+			["count"] = 9,
 		},
 	},
 }

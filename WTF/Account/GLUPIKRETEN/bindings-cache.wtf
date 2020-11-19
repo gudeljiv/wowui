@@ -113,7 +113,7 @@ bind SHIFT-7 NONE
 bind SHIFT-8 NONE
 bind SHIFT-9 NONE
 bind CTRL-F12 NONE
-bind CTRL-SHIFT-B NONE
+bind CTRL-SHIFT-B BAGNON_TOGGLE
 bind CTRL-+ TOGGLESOUND
 bind CTRL-L NONE
 bind SHIFT-' CLICK TopAbyssUIClassic_InspectTarget:LeftButton
