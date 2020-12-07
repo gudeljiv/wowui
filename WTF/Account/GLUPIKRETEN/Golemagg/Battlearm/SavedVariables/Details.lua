@@ -20,16 +20,15 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 71.006803,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006803,
-							["on_hold"] = false,
+							["classe"] = "SHAMAN",
 							["dps_started"] = false,
 							["total"] = 0.006803,
-							["serial"] = "Player-4465-01FA5DD5",
+							["delay"] = 0,
 							["end_time"] = 1603714858,
 							["nome"] = "Battlearm",
 							["spells"] = {
@@ -38,14 +37,15 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["tipo"] = 1,
+							["last_event"] = 0,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 71.006803,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1603714858,
-							["delay"] = 0,
-							["classe"] = "SHAMAN",
+							["serial"] = "Player-4465-01FA5DD5",
+							["on_hold"] = false,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -57,16 +57,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["tipo"] = 1,
+							["last_event"] = 1603714853,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 71.001153,
+							["classe"] = "UNKNOW",
 							["dps_started"] = false,
-							["fight_component"] = true,
 							["total"] = 71.001153,
-							["serial"] = "Creature-0-4469-1-33-3100-000016BEF3",
-							["on_hold"] = false,
+							["delay"] = 0,
+							["damage_taken"] = 0.001153,
 							["nome"] = "Elder Mottled Boar",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -88,30 +88,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["end_time"] = 1603714858,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1603714853,
-							["damage_taken"] = 0.001153,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1603714846,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4469-1-33-3100-000016BEF3",
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -134,16 +134,16 @@ _detalhes_database = {
 						{
 							["flag_original"] = 68136,
 							["nome"] = "Elder Mottled Boar",
-							["tipo"] = 4,
+							["last_event"] = 0,
 							["spell_cast"] = {
 								["Boar Charge"] = 1,
 							},
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4469-1-33-3100-000016BEF3",
 							["pets"] = {
 							},
+							["classe"] = "UNKNOW",
+							["tipo"] = 4,
+							["serial"] = "Creature-0-4469-1-33-3100-000016BEF3",
+							["fight_component"] = true,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -170,27 +170,27 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					70.8016560000011, -- [1]
+					70.7841090000009, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
-						[0] = -0.0172159999999604,
+						[0] = -0.0212799999999618,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -209,18 +209,18 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["instance_type"] = "none",
@@ -230,7 +230,10 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Battlearm"] = 0.006803,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -238,20 +241,17 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Battlearm"] = 0.006803,
-						}, -- [1]
+					["damage_section"] = {
 					},
 				},
 				["hasSaved"] = true,
-				["spells_cast_timeline"] = {
+				["frags"] = {
 				},
 				["data_fim"] = "13:20:58",
 				["combat_id"] = 1,
 				["CombatSkillCache"] = {
 				},
-				["frags"] = {
+				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 705003.276,
 				["TimeData"] = {
@@ -268,7 +268,7 @@ _detalhes_database = {
 	},
 	["on_death_menu"] = true,
 	["nick_tag_cache"] = {
-		["nextreset"] = 1605010413,
+		["nextreset"] = 1608393202,
 		["last_version"] = 11,
 	},
 	["last_instance_id"] = 0,
@@ -309,8 +309,8 @@ _detalhes_database = {
 			["dividebyhundred"] = true,
 			["showamount"] = false,
 			["useplayercolor"] = false,
-			["author"] = "Details! Team",
 			["alwaysshowme"] = true,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -337,12 +337,12 @@ _detalhes_database = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Glamour2",
-			["scale"] = 1,
-			["point"] = "RIGHT",
-			["y"] = -183.107162475586,
+			["arrow_anchor_y"] = 0,
+			["main_frame_locked"] = true,
+			["main_frame_strata"] = "LOW",
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["author"] = "Details! Team",
+			["y"] = -183.107162475586,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -350,9 +350,8 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["row_height"] = 18,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -360,25 +359,25 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -6.1035156250e-05,
 				["x"] = 0.00311279296875,
+				["attribute_type"] = 1,
 				["update_speed"] = 0.05,
 				["size"] = 32,
-				["attribute_type"] = 1,
 			},
+			["font_size"] = 10,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
+			["use_spark"] = false,
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
 				1, -- [3]
 				0.480826139450073, -- [4]
 			},
-			["arrow_anchor_y"] = 0,
-			["use_spark"] = false,
-			["main_frame_locked"] = true,
-			["font_size"] = 10,
+			["point"] = "RIGHT",
+			["row_height"] = 18,
+			["scale"] = 1,
 		},
 	},
-	["last_day"] = "08",
 	["cached_talents"] = {
 	},
 	["announce_prepots"] = {
@@ -386,13 +385,12 @@ _detalhes_database = {
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
+	["last_day"] = "06",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
 	},
-	["character_data"] = {
-		["logons"] = 8,
-	},
+	["last_realversion"] = 142,
 	["combat_id"] = 1,
 	["savedStyles"] = {
 		{
@@ -438,8 +436,8 @@ _detalhes_database = {
 			},
 			["switch_healer"] = false,
 			["bars_sort_direction"] = 1,
+			["menu_icons_size"] = 1,
 			["backdrop_texture"] = "None",
-			["switch_healer_in_combat"] = false,
 			["switch_tank_in_combat"] = false,
 			["menu2_icons_size"] = 1.20000004768372,
 			["tooltip"] = {
@@ -456,7 +454,7 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["menu_icons_size"] = 1,
+			["switch_healer_in_combat"] = false,
 			["switch_all_roles_in_combat"] = {
 				2, -- [1]
 				1, -- [2]
@@ -506,8 +504,18 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["switch_all_roles_after_wipe"] = false,
-			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
+			["menu2_anchor_down"] = {
+				32, -- [1]
+				0, -- [2]
+			},
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
 			["strata"] = "LOW",
 			["window_scale"] = 1,
 			["resetbutton_config"] = {
@@ -555,21 +563,18 @@ _detalhes_database = {
 				true, -- [3]
 				true, -- [4]
 			},
-			["switch_damager"] = false,
-			["auto_hide_menu"] = {
-				["left"] = true,
-				["right"] = true,
-			},
+			["desaturated_menu"] = false,
+			["show_sidebars"] = false,
 			["bars_grow_direction"] = 1,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
 				},
 			},
-			["hide_icon"] = true,
-			["toolbar_side"] = 2,
 			["grab_on_top"] = false,
+			["toolbar_side"] = 2,
 			["switch_damager_in_combat"] = false,
+			["hide_icon"] = true,
 			["micro_displays_side"] = 2,
 			["menu2_anchor"] = {
 				32, -- [1]
@@ -602,18 +607,11 @@ _detalhes_database = {
 				0, -- [2]
 			},
 			["hide_in_combat"] = false,
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
+			["auto_hide_menu"] = {
+				["left"] = true,
+				["right"] = true,
 			},
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
+			["switch_damager"] = false,
 			["show_statusbar"] = false,
 			["wallpaper"] = {
 				["overlay"] = {
@@ -673,8 +671,6 @@ _detalhes_database = {
 					1, -- [3]
 					1, -- [4]
 				},
-				["alpha"] = 0,
-				["textR_class_colors"] = false,
 				["backdrop"] = {
 					["enabled"] = false,
 					["texture"] = "Details BarBorder 2",
@@ -686,11 +682,13 @@ _detalhes_database = {
 					},
 					["size"] = 12,
 				},
-				["texture_background"] = "Blizzard",
+				["textL_class_colors"] = false,
 				["textL_custom_text"] = "{data3}{data2}",
+				["textR_class_colors"] = false,
+				["alpha"] = 0,
 				["no_icon"] = false,
 				["font_size"] = 11,
-				["textL_class_colors"] = false,
+				["texture_background"] = "Blizzard",
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
 				["height"] = 20,
@@ -701,6 +699,251 @@ _detalhes_database = {
 			["bg_b"] = 0,
 		}, -- [1]
 	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["combat_counter"] = 17,
+	["announce_deaths"] = {
+		["enabled"] = false,
+		["last_hits"] = 1,
+		["only_first"] = 5,
+		["where"] = 1,
+	},
+	["tabela_overall"] = {
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 1297,
+					["totalabsorbed"] = 0.006489,
+					["damage_from"] = {
+					},
+					["targets"] = {
+					},
+					["pets"] = {
+					},
+					["on_hold"] = false,
+					["classe"] = "SHAMAN",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.006489,
+					["friendlyfire"] = {
+					},
+					["dps_started"] = false,
+					["end_time"] = 1603726153,
+					["serial"] = "Player-4465-01FA5DD5",
+					["total"] = 0.006489,
+					["nome"] = "Battlearm",
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 2,
+					},
+					["grupo"] = true,
+					["last_event"] = 0,
+					["friendlyfire_total"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 0.006489,
+					["start_time"] = 1603726150,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [1]
+				{
+					["flag_original"] = 68136,
+					["totalabsorbed"] = 0.006214,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Battlearm"] = 0,
+					},
+					["pets"] = {
+					},
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.006214,
+					["dps_started"] = false,
+					["fight_component"] = true,
+					["end_time"] = 1603726153,
+					["serial"] = "Creature-0-4469-1-33-3100-000016BEF3",
+					["last_dps"] = 0,
+					["nome"] = "Elder Mottled Boar",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Battlearm"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["damage_taken"] = 0.006214,
+					["total"] = 0.006214,
+					["friendlyfire"] = {
+					},
+					["custom"] = 0,
+					["tipo"] = 1,
+					["on_hold"] = false,
+					["start_time"] = 1603726150,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
+				}, -- [2]
+			},
+		}, -- [1]
+		{
+			["tipo"] = 3,
+			["_ActorTable"] = {
+			},
+		}, -- [2]
+		{
+			["tipo"] = 7,
+			["_ActorTable"] = {
+			},
+		}, -- [3]
+		{
+			["tipo"] = 9,
+			["_ActorTable"] = {
+				{
+					["fight_component"] = true,
+					["nome"] = "Elder Mottled Boar",
+					["last_event"] = 0,
+					["spell_cast"] = {
+						["Boar Charge"] = 0,
+					},
+					["flag_original"] = 68136,
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4469-1-33-3100-000016BEF3",
+					["pets"] = {
+					},
+				}, -- [1]
+			},
+		}, -- [4]
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+			},
+		}, -- [5]
+		["raid_roster"] = {
+		},
+		["tempo_start"] = 1603714846,
+		["last_events_tables"] = {
+		},
+		["alternate_power"] = {
+		},
+		["combat_counter"] = 5,
+		["totals"] = {
+			0, -- [1]
+			0, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[6] = 0,
+				[3] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
+			}, -- [4]
+			["voidzone_damage"] = 0,
+			["frags_total"] = 0,
+		},
+		["player_last_events"] = {
+		},
+		["frags_need_refresh"] = false,
+		["aura_timeline"] = {
+		},
+		["__call"] = {
+		},
+		["data_inicio"] = 0,
+		["frags"] = {
+		},
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["damage"] = {
+			},
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage_section"] = {
+			},
+		},
+		["overall_refreshed"] = true,
+		["hasSaved"] = true,
+		["spells_cast_timeline"] = {
+		},
+		["data_fim"] = 0,
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+		["CombatSkillCache"] = {
+		},
+		["cleu_timeline"] = {
+		},
+		["start_time"] = 0,
+		["TimeData"] = {
+		},
+		["totals_grupo"] = {
+			0, -- [1]
+			0, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[6] = 0,
+				[3] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
+			}, -- [4]
+		},
+	},
+	["force_font_outline"] = "",
 	["local_instances_config"] = {
 		{
 			["segment"] = 0,
@@ -723,10 +966,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 631.40380859375,
+					["y"] = 631.399169921875,
 					["x"] = -1160.94891357422,
 					["w"] = 234.897445678711,
-					["h"] = 136.640991210938,
+					["h"] = 136.641067504883,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -757,7 +1000,7 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 631.403930664063,
+					["y"] = 631.399291992188,
 					["x"] = -929.012969970703,
 					["w"] = 228.974395751953,
 					["h"] = 136.640884399414,
@@ -804,256 +1047,13 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["force_font_outline"] = "",
-	["announce_deaths"] = {
-		["enabled"] = false,
-		["last_hits"] = 1,
-		["only_first"] = 5,
-		["where"] = 1,
+	["character_data"] = {
+		["logons"] = 13,
 	},
-	["tabela_overall"] = {
-		{
-			["tipo"] = 2,
-			["_ActorTable"] = {
-				{
-					["flag_original"] = 1297,
-					["totalabsorbed"] = 0.006489,
-					["damage_from"] = {
-					},
-					["targets"] = {
-					},
-					["pets"] = {
-					},
-					["damage_taken"] = 0.006489,
-					["classe"] = "SHAMAN",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.006489,
-					["last_dps"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1603726153,
-					["delay"] = 0,
-					["total"] = 0.006489,
-					["nome"] = "Battlearm",
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 2,
-					},
-					["grupo"] = true,
-					["tipo"] = 1,
-					["friendlyfire_total"] = 0,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1603726150,
-					["serial"] = "Player-4465-01FA5DD5",
-					["friendlyfire"] = {
-					},
-				}, -- [1]
-				{
-					["flag_original"] = 68136,
-					["totalabsorbed"] = 0.006214,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Battlearm"] = 0,
-					},
-					["pets"] = {
-					},
-					["tipo"] = 1,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.006214,
-					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["end_time"] = 1603726153,
-					["delay"] = 0,
-					["damage_taken"] = 0.006214,
-					["nome"] = "Elder Mottled Boar",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Battlearm"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["on_hold"] = false,
-					["total"] = 0.006214,
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["last_dps"] = 0,
-					["start_time"] = 1603726150,
-					["serial"] = "Creature-0-4469-1-33-3100-000016BEF3",
-					["dps_started"] = false,
-				}, -- [2]
-			},
-		}, -- [1]
-		{
-			["tipo"] = 3,
-			["_ActorTable"] = {
-			},
-		}, -- [2]
-		{
-			["tipo"] = 7,
-			["_ActorTable"] = {
-			},
-		}, -- [3]
-		{
-			["tipo"] = 9,
-			["_ActorTable"] = {
-				{
-					["fight_component"] = true,
-					["nome"] = "Elder Mottled Boar",
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						["Boar Charge"] = 0,
-					},
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Creature-0-4469-1-33-3100-000016BEF3",
-					["flag_original"] = 68136,
-				}, -- [1]
-			},
-		}, -- [4]
-		{
-			["tipo"] = 2,
-			["_ActorTable"] = {
-			},
-		}, -- [5]
-		["raid_roster"] = {
-		},
-		["tempo_start"] = 1603714846,
-		["last_events_tables"] = {
-		},
-		["alternate_power"] = {
-		},
-		["combat_counter"] = 5,
-		["totals"] = {
-			0, -- [1]
-			0, -- [2]
-			{
-				0, -- [1]
-				[0] = 0,
-				["alternatepower"] = 0,
-				[3] = 0,
-				[6] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
-				["interrupt"] = 0,
-				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
-			}, -- [4]
-			["frags_total"] = 0,
-			["voidzone_damage"] = 0,
-		},
-		["player_last_events"] = {
-		},
-		["frags_need_refresh"] = false,
-		["aura_timeline"] = {
-		},
-		["__call"] = {
-		},
-		["data_inicio"] = 0,
-		["spells_cast_timeline"] = {
-		},
-		["totals_grupo"] = {
-			0, -- [1]
-			0, -- [2]
-			{
-				0, -- [1]
-				[0] = 0,
-				["alternatepower"] = 0,
-				[3] = 0,
-				[6] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
-				["interrupt"] = 0,
-				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
-			}, -- [4]
-		},
-		["overall_refreshed"] = true,
-		["hasSaved"] = true,
-		["frags"] = {
-		},
-		["data_fim"] = 0,
-		["cleu_timeline"] = {
-		},
-		["CombatSkillCache"] = {
-		},
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-		["start_time"] = 0,
-		["TimeData"] = {
-		},
-		["PhaseData"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-			}, -- [1]
-			["damage_section"] = {
-			},
-			["heal_section"] = {
-			},
-			["heal"] = {
-			},
-			["damage"] = {
-			},
-		},
-	},
-	["combat_counter"] = 12,
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["last_realversion"] = 142,
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},

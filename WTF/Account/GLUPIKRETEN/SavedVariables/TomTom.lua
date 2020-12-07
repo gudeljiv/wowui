@@ -7,22 +7,22 @@ TomTomDB = {
 		["Battlearm - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
-		["Mxym - Golemagg"] = "Default",
+		["Greenwise - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
-		["Mxzq - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Mxys - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Testxv - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
-		["Mxys - Golemagg"] = "Default",
-		["Greenwise - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
+		["Mxym - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -70,22 +70,22 @@ TomTomWaypointsM = {
 		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
-		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Vermins - Stonespine"] = "Vermins - Stonespine",
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
+		["Mxys - Golemagg"] = "Mxys - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
 		["Koloman - Golemagg"] = "Koloman - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Mxys - Golemagg"] = "Mxys - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Mxym - Golemagg"] = "Mxym - Golemagg",
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -100,13 +100,13 @@ TomTomWaypointsM = {
 		},
 		["Dmitar - Golemagg"] = {
 		},
-		["Mxym - Golemagg"] = {
+		["Greenwise - Golemagg"] = {
 		},
 		["Vermins - Stonespine"] = {
 		},
-		["Mxzq - Golemagg"] = {
+		["Mxys - Golemagg"] = {
 		},
-		["Battlearm - Hydraxian Waterlords"] = {
+		["Mxyzptlk - Golemagg"] = {
 		},
 		["Testxv - Golemagg"] = {
 		},
@@ -116,7 +116,7 @@ TomTomWaypointsM = {
 		},
 		["Koloman - Golemagg"] = {
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Vermin - Golemagg"] = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 		},
@@ -126,11 +126,11 @@ TomTomWaypointsM = {
 		},
 		["Jaroslav - Golemagg"] = {
 		},
-		["Vermin - Golemagg"] = {
+		["Battlearm - Hydraxian Waterlords"] = {
 		},
-		["Mxys - Golemagg"] = {
+		["Mxzq - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Mxym - Golemagg"] = {
 		},
 	},
 }

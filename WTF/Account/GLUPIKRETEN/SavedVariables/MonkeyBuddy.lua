@@ -1,63 +1,63 @@
 
 MonkeyBuddyConfig = {
 	["Konza"] = {
-		["m_bDailies"] = false,
 		["m_bDismissed"] = true,
+		["m_bDailies"] = false,
 	},
 	["Lonatz"] = {
-		["m_bDailies"] = false,
 		["m_bDismissed"] = true,
+		["m_bDailies"] = false,
 	},
 	["Global"] = {
-		["m_bDailies"] = false,
 		["m_bDismissed"] = true,
+		["m_bDailies"] = false,
 	},
 	["Tukac"] = {
-		["m_bDailies"] = false,
 		["m_bDismissed"] = true,
-	},
-	["Spija"] = {
 		["m_bDailies"] = false,
-		["m_bDismissed"] = true,
-	},
-	["Handrmandr"] = {
-		["m_bDailies"] = false,
-		["m_bDismissed"] = true,
-	},
-	["Vermins"] = {
-		["m_bDailies"] = false,
-		["m_bDismissed"] = false,
-	},
-	["Pitchwise"] = {
-		["m_bDailies"] = false,
-		["m_bDismissed"] = true,
-	},
-	["Mulatz"] = {
-		["m_bDailies"] = false,
-		["m_bDismissed"] = true,
-	},
-	["Nacova"] = {
-		["m_bDailies"] = false,
-		["m_bDismissed"] = true,
-	},
-	["Korupcija"] = {
-		["m_bDailies"] = false,
-		["m_bDismissed"] = true,
-	},
-	["Pepecocorita"] = {
-		["m_bDailies"] = false,
-		["m_bDismissed"] = true,
-	},
-	["Verminz"] = {
-		["m_bDailies"] = false,
-		["m_bDismissed"] = true,
 	},
 	["Malinac"] = {
-		["m_bDailies"] = false,
 		["m_bDismissed"] = true,
+		["m_bDailies"] = false,
+	},
+	["Handrmandr"] = {
+		["m_bDismissed"] = true,
+		["m_bDailies"] = false,
+	},
+	["Vermins"] = {
+		["m_bDismissed"] = false,
+		["m_bDailies"] = false,
+	},
+	["Nacova"] = {
+		["m_bDismissed"] = true,
+		["m_bDailies"] = false,
+	},
+	["Mulatz"] = {
+		["m_bDismissed"] = true,
+		["m_bDailies"] = false,
+	},
+	["Verminz"] = {
+		["m_bDismissed"] = true,
+		["m_bDailies"] = false,
+	},
+	["Korupcija"] = {
+		["m_bDismissed"] = true,
+		["m_bDailies"] = false,
+	},
+	["Pepecocorita"] = {
+		["m_bDismissed"] = true,
+		["m_bDailies"] = false,
+	},
+	["Pitchwise"] = {
+		["m_bDismissed"] = true,
+		["m_bDailies"] = false,
+	},
+	["Spija"] = {
+		["m_bDismissed"] = true,
+		["m_bDailies"] = false,
 	},
 	["Blooq"] = {
-		["m_bDailies"] = false,
 		["m_bDismissed"] = true,
+		["m_bDailies"] = false,
 	},
 }

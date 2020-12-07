@@ -1,6 +1,7 @@
-## v4.10.15 Changes
+## v4.10.19 Changes
 
-* [Retail] TOC bump for 9.0.2
-* Fixed tabards showing as disenchantable.
+* [Retail] Updated prospecting ratios
+* [Retail] Fixed issue with TSM not showing proper stats on SL items
+* [Retail] Fixed SL enchanting not working properly
 
 [Known Issues](http://support.tradeskillmaster.com/display/KB/TSM4+Currently+Known+Issues)

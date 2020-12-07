@@ -7,11 +7,11 @@ TomTomDB = {
 		["Battlearm - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
-		["Greenwise - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
-		["Mxys - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Mxym - Golemagg"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
 		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
@@ -20,9 +20,9 @@ TomTomDB = {
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
-		["Mxzq - Golemagg"] = "Default",
-		["Mxym - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Mxys - Golemagg"] = "Default",
+		["Greenwise - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -70,11 +70,11 @@ TomTomWaypointsM = {
 		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Vermins - Stonespine"] = "Vermins - Stonespine",
-		["Mxys - Golemagg"] = "Mxys - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
 		["Koloman - Golemagg"] = "Koloman - Golemagg",
@@ -83,9 +83,9 @@ TomTomWaypointsM = {
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Mxys - Golemagg"] = "Mxys - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -100,15 +100,15 @@ TomTomWaypointsM = {
 		},
 		["Dmitar - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
-		},
 		["Vermins - Stonespine"] = {
 		},
-		["Mxys - Golemagg"] = {
+		["Mxym - Golemagg"] = {
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Mxzq - Golemagg"] = {
 		},
 		["Testxv - Golemagg"] = {
+		},
+		["Battlearm - Hydraxian Waterlords"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
@@ -126,11 +126,11 @@ TomTomWaypointsM = {
 		},
 		["Jaroslav - Golemagg"] = {
 		},
-		["Battlearm - Hydraxian Waterlords"] = {
+		["Mxyzptlk - Golemagg"] = {
 		},
-		["Mxzq - Golemagg"] = {
+		["Mxys - Golemagg"] = {
 		},
-		["Mxym - Golemagg"] = {
+		["Greenwise - Golemagg"] = {
 		},
 	},
 }
