@@ -1,4 +1,5 @@
 local _, Addon = ...
+local Chat = Addon.Chat
 local Core = Addon.Core
 local DCL = Addon.Libs.DCL
 local Dejunker = Addon.Dejunker
@@ -77,7 +78,7 @@ do
   -- @param {string} by - a key in `sorts`
   function ListHelper:SortBy(by)
     self._sortBy = by
-    for _, list in pairs(Lists) do
+    for list in Lists.allLists() do
       tsort(list.items, sorts[by].func)
     end
   end
@@ -104,7 +105,7 @@ function ListHelper:IsParsing(list)
   end
 
   -- parsing in general?
-  for _, li in pairs(Lists) do
+  for li in Lists.allLists() do
     if next(li.toAdd) then return true end
   end
 
@@ -115,13 +116,13 @@ do -- OnUpdate(), called in Core:OnUpdate()
   local interval = 0
 
   function ListHelper:OnUpdate(elapsed)
-    if Dejunker:IsDejunking() or Destroyer:IsDestroying() then return end
+    if Dejunker:IsDejunking() then return end
 
     -- Additions
     interval = interval + elapsed
     if (interval >= Core.MinDelay) then
       interval = 0
-      for _, list in pairs(Lists) do
+      for list in Lists.allLists() do
         self:ParseList(list)
       end
     end
@@ -163,7 +164,7 @@ do -- ParseList()
       if not GetItemInfoInstant(itemID) then
         list._sv[itemID] = nil -- remove from sv
         list.toAdd[itemID] = nil -- remove from queue
-        Core:Print(
+        Chat:Print(
           L.FAILED_TO_PARSE_ITEM_ID:format(
             DCL:ColorString(itemID, DCL.CSS.Grey)
           )
@@ -186,7 +187,7 @@ do -- ParseList()
             parseAttempts[itemID] = nil
             list._sv[itemID] = nil -- remove from sv
             list.toAdd[itemID] = nil -- remove from parsing
-            Core:Print(
+            Chat:Print(
               L.FAILED_TO_PARSE_ITEM_ID:format(
                 DCL:ColorString(itemID, DCL.CSS.Grey)
               )

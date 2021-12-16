@@ -601,7 +601,7 @@ function QuestieQuestFixes:Load()
             [questKeys.startedBy] = {nil,{21015,21016,},nil,},
         },
         [1301] = {
-            [questKeys.exclusiveTo] = {1302}, -- breadcrumb of James Hyal #917
+            [questKeys.exclusiveTo] = {1302,1282}, -- #917 #2448
         },
         [1302] = {
             [questKeys.preQuestSingle] = {}, -- #889
@@ -1196,6 +1196,9 @@ function QuestieQuestFixes:Load()
         [4134] = {
             [questKeys.preQuestSingle] = {}, -- #1859
         },
+        [4143] = {
+            [questKeys.zoneOrSort] = 1477,
+        },
         [4144] = {
             [questKeys.specialFlags] = 1, -- #1590
         },
@@ -1253,9 +1256,6 @@ function QuestieQuestFixes:Load()
         },
         [4496] = {
             [questKeys.preQuestSingle] = {4493,4494},
-        },
-        [4505] = {
-            [questKeys.exclusiveTo] = {6605},
         },
         [4506] = {
             [questKeys.triggerEnd] = {"Return the corrupted cat to Winna Hazzard", {[zoneIDs.FELWOOD]={{34.26,52.32},},},},
@@ -1705,8 +1705,11 @@ function QuestieQuestFixes:Load()
         [6603] = {
             [questKeys.exclusiveTo] = {5082},
         },
+        [6604] = {
+            [questKeys.exclusiveTo] = {4861},
+        },
         [6605] = {
-            [questKeys.exclusiveTo] = {4505}, -- #1859
+            [questKeys.exclusiveTo] = {4505}, -- #1859 -- #1856
         },
         [6608] = {
             [questKeys.exclusiveTo] = {6607}, -- #1186
@@ -1934,9 +1937,6 @@ function QuestieQuestFixes:Load()
         },
         [7541] = {
             [questKeys.questLevel] = 40, -- #1320
-        },
-        [7562] = {
-            [questKeys.startedBy] = {{5520,5815,6382,},nil,nil,}, -- #1343
         },
         [7622] = {
             [questKeys.triggerEnd] = {"The Balance of Light and Shadow", {[zoneIDs.EASTERN_PLAGUELANDS]={{21.19,17.79},},},}, -- #2332
@@ -2766,6 +2766,9 @@ function QuestieQuestFixes:Load()
         [9154] = {
             [questKeys.questLevel] = 60,
         },
+        [9165] = {
+            [questKeys.specialFlags] = 1,
+        },
         [9223] = {
             [questKeys.specialFlags] = 1,
         },
@@ -2775,11 +2778,25 @@ function QuestieQuestFixes:Load()
         [9232] = {
             [questKeys.preQuestSingle] = {9033,},
         },
-        [9261] = { -- bad race data
+        [9260] = {
+            [questKeys.triggerEnd] = {"Investigate a circle", {[zoneIDs.ELWYNN_FOREST] = {{34.72,50.95},{34.18,48.47},{32.24,53.77},{35.05,55.22}}}},
+        },
+        [9261] = {
+            [questKeys.triggerEnd] = {"Investigate a circle", {[zoneIDs.DUN_MOROGH] = {{48.53,39.54},{49.70,39.17}}}},
             [questKeys.requiredRaces] = 77,
         },
-        [9262] = { -- bad race data
+        [9262] = {
+            [questKeys.triggerEnd] = {"Investigate a circle", {[zoneIDs.TELDRASSIL] = {{36.96,55.49},{38.30,56.49}}}},
             [questKeys.requiredRaces] = 77,
+        },
+        [9263] = {
+            [questKeys.triggerEnd] = {"Investigate a circle", {[zoneIDs.DUROTAR] = {{44.9,16.7},{44.6,18.1}}}},
+        },
+        [9264] = {
+            [questKeys.triggerEnd] = {"Investigate a circle", {[zoneIDs.MULGORE] = {{38.9,37.1}}}},
+        },
+        [9265] = {
+            [questKeys.triggerEnd] = {"Investigate a circle", {[zoneIDs.TIRISFAL_GLADES] = {{60.4,61.7}}}},
         },
         [9319] = {
             [questKeys.requiredRaces] = 255,
@@ -2839,7 +2856,8 @@ function QuestieQuestFixes:LoadFactionFixes()
             [questKeys.startedBy] = {{3328,4583},nil,{17126}}
         },
         [7562] = {
-            [questKeys.startedBy] = {{5753,5815,},nil,nil}
+            [questKeys.startedBy] = {{5753,5815,},nil,nil},
+            [questKeys.requiredRaces] = 255,
         },
         [8151] = {
             [questKeys.startedBy] = {{3039,3352,},nil,nil},
@@ -2905,7 +2923,8 @@ function QuestieQuestFixes:LoadFactionFixes()
             [questKeys.startedBy] = {{918,4163,5165},nil,{17126}}
         },
         [7562] = {
-            [questKeys.startedBy] = {{5520,6382,},nil,nil}
+            [questKeys.startedBy] = {{5520,6382,},nil,nil},
+            [questKeys.requiredRaces] = 255,
         },
         [8151] = {
             [questKeys.startedBy] = {{4205,5116,5516,},nil,nil},

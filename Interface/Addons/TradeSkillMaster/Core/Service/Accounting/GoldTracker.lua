@@ -37,7 +37,7 @@ local ERRONEOUS_ZERO_THRESHOLD = 5 * 1000 * COPPER_PER_GOLD
 -- ============================================================================
 
 function GoldTracker.OnInitialize()
-	if not TSM.IsWowClassic() then
+	if not TSM.IsWowVanillaClassic() then
 		Event.Register("GUILDBANKFRAME_OPENED", private.GuildLogGold)
 		Event.Register("GUILDBANK_UPDATE_MONEY", private.GuildLogGold)
 	end
@@ -187,6 +187,7 @@ function private.LoadCharacterGoldLog(characterKey, data, validCharacterGuilds, 
 		end
 	end
 
+	entries.lastUpdate = lastUpdate
 	private.characterGoldLog[characterKey] = entries
 	local lastEntryTime = #entries > 0 and entries[#entries].minute * SECONDS_PER_MIN or math.huge
 	if not validCharacterGuilds[characterKey] and max(lastEntryTime, lastUpdate) < time() - 30 * SECONDS_PER_DAY then

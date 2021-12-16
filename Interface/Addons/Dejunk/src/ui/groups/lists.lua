@@ -1,29 +1,11 @@
 local _, Addon = ...
 local AceGUI = Addon.Libs.AceGUI
 local Consts = Addon.Consts
-local Destroyables = Addon.Lists.Destroyables
-local Exclusions = Addon.Lists.Exclusions
-local Inclusions = Addon.Lists.Inclusions
 local L = Addon.Libs.L
 local ListHelper = Addon.ListHelper
 local tconcat = table.concat
-local Undestroyables = Addon.Lists.Undestroyables
 local Utils = Addon.Utils
 local Widgets = Addon.UI.Widgets
-
--- ============================================================================
--- Helper Functions
--- ============================================================================
-
--- Returns a localized help string indicating the purpose of the list.
--- @param {table} list
--- @return {string}
-local function getListHelpText(list)
-  if list == Inclusions then return L.INCLUSIONS_HELP_TEXT end
-  if list == Exclusions then return L.EXCLUSIONS_HELP_TEXT end
-  if list == Destroyables then return L.DESTROYABLES_HELP_TEXT end
-  if list == Undestroyables then return L.UNDESTROYABLES_HELP_TEXT end
-end
 
 -- ============================================================================
 -- Mixins
@@ -37,7 +19,30 @@ function Mixins:Create(parent)
   local tabGroup = AceGUI:Create("TabGroup")
   tabGroup:SetLayout("Fill")
   tabGroup:SetTabs({
-    { text = self.list.locale, value = "List" },
+    { text = L.PROFILE_TEXT, value = "Profile" },
+    { text = L.GLOBAL_TEXT, value = "Global" },
+  })
+
+  tabGroup:SetCallback("OnGroupSelected", function(_, _, group)
+    tabGroup:ReleaseChildren()
+    self:AddTab(tabGroup, (
+      group == "Global" and
+      self.listGroup.global or
+      self.listGroup.profile
+    ))
+  end)
+
+  tabGroup:SelectTab("Profile")
+  parent:AddChild(tabGroup)
+end
+
+-- Creates the base UI for the list group, which consists of a TabGroup widget.
+-- @param {table} parent - the parent widget
+function Mixins:AddTab(parent, list)
+  local tabGroup = AceGUI:Create("TabGroup")
+  tabGroup:SetLayout("Fill")
+  tabGroup:SetTabs({
+    { text = list.locale, value = "List" },
     { text = L.IMPORT_TEXT, value = "Import" },
     { text = L.EXPORT_TEXT, value = "Export" }
   })
@@ -49,11 +54,9 @@ function Mixins:Create(parent)
     scrollFrame:SetLayout("Flow")
     scrollFrame:PauseLayout()
 
-    --[[
-      If `self` is UI.Groups.Inclusions, and `group` is "Import", the below
-      code is equivalent to calling: UI.Groups.Inclusions:Import(scrollFrame)
-    ]]
-    self[group](self, scrollFrame)
+    -- If `self` is UI.Groups.SellInclusions, and `group` is "Import", the below
+    -- code is equivalent to: UI.Groups.SellInclusions:Import(scrollFrame, list)
+    self[group](self, scrollFrame, list)
 
     scrollFrame:ResumeLayout()
     scrollFrame:DoLayout()
@@ -67,13 +70,13 @@ end
 
 -- Creates the UI for the list name tab, which displays a ListFrame widget.
 -- @param {table} parent - the parent widget
-function Mixins:List(parent)
-  Widgets:Heading(parent, self.list.locale)
+function Mixins:List(parent, list)
+  Widgets:Heading(parent, list.locale)
 
   -- Help label
   Widgets:Label({
     parent = parent,
-    text = getListHelpText(self.list),
+    text = list.helpText,
     fullWidth = true
   })
 
@@ -91,7 +94,7 @@ function Mixins:List(parent)
   Widgets:ListFrame({
     parent = parent,
     -- title = listText,
-    list = self.list
+    list = list
   })
 
   -- Remove all button
@@ -100,9 +103,9 @@ function Mixins:List(parent)
     text = L.REMOVE_ALL_TEXT,
     onClick = function()
       Utils:YesNoPopup({
-        text = L.REMOVE_ALL_POPUP:format(self.list.localeColored),
+        text = L.REMOVE_ALL_POPUP:format(list.locale),
         onAccept = function()
-          self.list:RemoveAll()
+          list:RemoveAll()
         end
       })
     end
@@ -122,7 +125,7 @@ end
 
 -- Creates the UI for the Import tab, which provides an EditBox for input.
 -- @param {table} parent - the parent widget
-function Mixins:Import(parent)
+function Mixins:Import(parent, list)
   Widgets:Heading(parent, L.IMPORT_TEXT)
   Widgets:Label({
     parent = parent,
@@ -133,7 +136,7 @@ function Mixins:Import(parent)
   local editBox = Widgets:MultiLineEditBox({
     parent = parent,
     fullWidth = true,
-    numLines = 25
+    numLines = 23
   })
 
   Widgets:Button({
@@ -143,7 +146,7 @@ function Mixins:Import(parent)
       for itemID in editBox:GetText():gmatch('([^;]+)') do
         itemID = tonumber(itemID)
         if itemID and (itemID > 0) and (itemID <= Consts.MAX_NUMBER) then
-          self.list:Add(itemID)
+          list:Add(itemID)
         end
       end
 
@@ -154,7 +157,7 @@ end
 
 -- Creates the UI for the Export tab, which provides an EditBox for output.
 -- @param {table} parent - the parent widget
-function Mixins:Export(parent)
+function Mixins:Export(parent, list)
   Widgets:Heading(parent, L.EXPORT_TEXT)
   Widgets:Label({
     parent = parent,
@@ -165,14 +168,14 @@ function Mixins:Export(parent)
   local editBox = Widgets:MultiLineEditBox({
     parent = parent,
     fullWidth = true,
-    numLines = 25
+    numLines = 23
   })
 
   Widgets:Button({
     parent = parent,
     text = L.EXPORT_TEXT,
     onClick = function()
-      local itemIDs = self.list:GetItemIDs()
+      local itemIDs = list:GetItemIDs()
       editBox:SetText(tconcat(itemIDs, ";"))
       editBox:HighlightText(0)
       editBox:SetFocus()
@@ -182,14 +185,14 @@ end
 
 -------------------------------------------------------------------------------
 
--- Add list groups
-for name, list in pairs(Addon.Lists) do
-  local group = Addon.UI.Groups[name] or error("Unsupported group: " .. name)
+-- Add list groups.
+for listGroup in Addon.Lists.listGroups() do
+  local group = listGroup.uiGroup
 
   group.parent = "SimpleGroup"
   group.layout = "Fill"
-  group.list = list
+  group.listGroup = listGroup
 
-  -- Add mixins
+  -- Add mixins.
   for k, v in pairs(Mixins) do group[k] = v end
 end

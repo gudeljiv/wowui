@@ -1,3 +1,71 @@
+__ New in 3.69 - By Rottenbeer __
+* Fix backgrop and bindings error for wow classic 1.14, thanks minigwen
+
+__ New in 3.68 - By Rottenbeer __
+* Fix lua error on login regarding bindings
+* Add tree of life event
+
+__ New in 3.67 - By Rottenbeer __
+* Add another bank slot for tbc
+
+__ New in 3.66 - By Rottenbeer __
+* Fix set display in libbroker, thanks mrbuds
+
+__ New in 3.65 - By Rottenbeer __
+* Show current set in libbroker, thanks mrbuds
+
+__ New in 3.64 - By Rottenbeer __
+* Fixed missing backdrop for tbc release, thanks to tobbi007 for the hint
+* Changed library for the minimap icon, so it should integrate better with
+other addons, thanks to mrbuds
+* Updated toc
+
+__ New in 3.63 - By Rottenbeer __
+* Version bump for github releases
+
+__ New in 3.62 - By Rottenbeer __
+* Fix luacheck errors
+
+__ New in 3.61 - By Rottenbeer __
+* Test for github actions
+
+__ New in 3.60 - By Rottenbeer __
+* Package for bcc and classic
+
+__ New in 3.54 - By Rottenbeer __
+* Workaround for a startup race in AdiBags
+
+__ New in 3.53 - By Rottenbeer __
+* ItemRack should no longer initiate while in combat
+* Updated TOC version
+Thanks to wardz for the PR
+
+__ New in 3.52 - By Rottenbeer __
+* Provide LibStub which is needed for Masque support
+
+__ New in 3.51 - By Rottenbeer __
+* Masque support
+Thanks to pshurgal for implementing it!
+
+__ New in 3.50 - By Rottenbeer __
+* Prevent toggle set change when player change subzone but not in raid instance.
+Thanks to Cyanokaze for implementing it!
+
+__ New in 3.49 - By Rottenbeer __
+* Version bump to sync with the shown ingame version
+
+__ New in 3.48 - By Rottenbeer __
+* Add PVE instance disable flag for events to prevent mounted events to
+trigger in AQ
+Thanks to root and lindleywhite for the pull request
+
+__ New in 3.47 - By Rottenbeer __
+* Fix lua error when saving hotkey bindings in combat
+
+__ New in 3.46 - By Rottenbeer __
+* Add option to use different auto-queues depending on the active set
+Thanks to brzGatsu for the pull request!
+
 __ New in 3.45 - By Rottenbeer __
 * Updated TOC version to 11305
 

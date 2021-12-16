@@ -19,15 +19,17 @@ L["BORDERSHIELD_TOOLTIP"] = [=[Shows a shield around the castbar when a cast can
 ]=]
 L["CAST_BORDER"] = "Select Border Texture"
 L["CAST_BORDER_TOOLTIP"] = "Select texture used for castbar border."
+L["CAST_FILL_HEADER"] = "Cast Fill Colors"
 L["CAST_FONT"] = "Select Castbar Font"
 L["CAST_FONT_TOOLTIP"] = "Select font type used for spell name and timer text."
 L["CAST_STATUSBAR"] = "Select Castbar Texture"
 L["CAST_STATUSBAR_TOOLTIP"] = "Select texture type used for the castbar/statusbar."
 L["CASTBAR"] = "Castbar"
 L["CASTBAR_COLORS"] = "Castbar Colors"
+L["CASTBAR_FONTS"] = "Castbar Text"
 L["CASTBAR_ICON"] = "Castbar Icon"
-L["CASTBAR_SIZING"] = "Castbar Sizing"
-L["CASTBAR_TEXTURE_FONT"] = "Castbar Textures"
+L["CASTBAR_SIZING"] = "Castbar Size"
+L["CASTBAR_TEXTURE_FONT"] = "Castbar Media"
 L["DEFAULT"] = "Default"
 L["FONT_SIZE"] = "Font Size"
 L["FONT_SIZE_TOOLTIP"] = "Sets font size used for spell name and timer text."
@@ -44,9 +46,6 @@ L["ICON_SIZE"] = "Icon Size"
 L["ICON_SIZE_TOOLTIP"] = "Sets the size for the castbar spell icon."
 L["IGNORE_PARENT_ALPHA"] = "Ignore Parent Frame Alpha"
 L["IGNORE_PARENT_ALPHA_TOOLTIP"] = "Ignore transparency/alpha value inherited from castbars parent's frame."
-L["LSM_TEXTURE_NOTE"] = [=[
-
-Note: If you use a custom third-party texture/font and delete it later on from your PC, you'll need to manually reset the texture or font here for the addon to continue working.]=]
 L["NAMEPLATE"] = "Nameplate"
 L["PARTY"] = "Party"
 L["PER_CHARACTER"] = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|tCharacter Specific Settings"
@@ -64,17 +63,13 @@ L["STATUS_BG_COLOR"] = "Select Background Color"
 L["STATUS_CHANNEL_COLOR"] = "Select Channel Fill Color"
 L["STATUS_COLOR"] = "Select Cast Fill Color"
 L["STATUS_FAILED_COLOR"] = "Select Cast Failed Fill Color"
+L["STATUS_SUCCESS_COLOR"] = "Select Cast Success Fill Color"
 L["STATUS_UNINTERRUPTIBLE_COLOR"] = "Select Uninterruptible Fill Color"
 L["TARGET"] = "Target"
 L["TEST"] = "Toggle Testing"
 L["TEST_MODE_DRAG"] = "Test Mode - Drag To Move"
-L["TEST_PLATE_TOOLTIP"] = [=[Show the nameplate castbar for testing. You can drag the castbar to move it.
-You'll need to target someone and have the nameplate be visible to see the test castbar.
-]=]
-L["TEST_TARGET_TOOLTIP"] = [=[Show the target frame castbar for testing. You can drag the castbar to move it.
-You'll need to target someone first to see the test castbar.
-]=]
 L["TEXT_COLOR"] = "Select Text Color"
+L["TEXT_OUTLINE"] = "Text Outline"
 L["TEXT_POINT"] = "Text Alignment"
 L["TEXT_POS_X"] = "Text Position X"
 L["TEXT_POS_Y"] = "Text Position Y"

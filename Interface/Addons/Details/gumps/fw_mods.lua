@@ -50,7 +50,7 @@ function gump:NewDetailsButton (parent, container, instancia, func, param1, para
 	if (ischeck) then
 		new_button = CreateFrame ("CheckButton", FrameName, parent, inherits)
 	else
-		new_button = CreateFrame ("Button", FrameName, parent)
+		new_button = CreateFrame ("Button", FrameName, parent, BackdropTemplateMixin and "BackdropTemplate")
 	end
 
 	new_button:SetWidth (w)
@@ -260,7 +260,7 @@ local EditBoxBackdrop = {
 
 function gump:NewTextBox (parent, container, member, func, param1, param2, w, h, options)
 
-	local editbox = CreateFrame ("EditBox", "DetailsEditBox1", parent)
+	local editbox = CreateFrame ("EditBox", "DetailsEditBox1", parent, BackdropTemplateMixin and "BackdropTemplate")
 	container [member] = editbox
 	options = options or {}
 	
@@ -491,7 +491,7 @@ end
 
 function gump:NewScrollBar2 (master, slave, x, y)
 
-	local slider_gump = CreateFrame ("Slider", master:GetName() and master:GetName() .. "SliderGump" or "DetailsSliderGump" .. math.random (1, 10000000), master)
+	local slider_gump = CreateFrame ("Slider", master:GetName() and master:GetName() .. "SliderGump" or "DetailsSliderGump" .. math.random (1, 10000000), master, BackdropTemplateMixin and "BackdropTemplate")
 	slider_gump.scrollMax = 560 --default - tamanho da janela de fundo
 
 	-- ///// SLIDER /////
@@ -513,7 +513,7 @@ function gump:NewScrollBar2 (master, slave, x, y)
 	slider_gump:SetValue(0)
 	slider_gump.ultimo = 0
 
-	local botao_cima = CreateFrame ("Button", slider_gump:GetName() .. "UpButton", master)
+	local botao_cima = CreateFrame ("Button", slider_gump:GetName() .. "UpButton", master, BackdropTemplateMixin and "BackdropTemplate")
 	
 	botao_cima:SetWidth (29)
 	botao_cima:SetHeight (32)
@@ -527,7 +527,7 @@ function gump:NewScrollBar2 (master, slave, x, y)
 	botao_cima.x = 0
 	botao_cima.y = -12
 	
-	local botao_baixo = CreateFrame ("Button", slider_gump:GetName() .. "DownButton", master)
+	local botao_baixo = CreateFrame ("Button", slider_gump:GetName() .. "DownButton", master, BackdropTemplateMixin and "BackdropTemplate")
 	botao_baixo:SetPoint ("TOP", slider_gump, "BOTTOM", 0, 12)
 	botao_baixo.x = 0
 	botao_baixo.y = 12

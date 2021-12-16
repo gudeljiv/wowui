@@ -124,11 +124,20 @@
 				_G[name.."Right"]:SetTexture("Interface\\Buttons\\UI-Panel-Button-Up");
 			</OnEnable>
 			<OnEnter>
+                self.isMouseover = true
 				if(self.tooltipText ~= nil) then
-					GameTooltip_AddNewbieTip(self, self.tooltipText, 1.0, 1.0, 1.0, self.newbieText);
+					C_Timer.After(0.25, function()
+                        if self.isMouseover then
+                            GameTooltip:SetOwner(UIParent, "ANCHOR_NONE");
+                            GameTooltip:ClearAllPoints();
+                            GameTooltip:SetText(self.tooltipText, nil, nil, nil, nil, true);
+                            GameTooltip:SetPoint("BOTTOMLEFT", self, "TOPRIGHT", -12, -12);
+                        end
+                    end);
 				end
 			</OnEnter>
 			<OnLeave>
+                self.isMouseover = false
 				if(self.tooltipText ~= nil) then
 					GameTooltip:Hide();
 				end
@@ -138,7 +147,18 @@
 		<NormalFont style="GameFontNormal"/>
 		<HighlightFont style="GameFontHighlight"/>
 		<DisabledFont style="GameFontDisable"/>
-		<HighlightTexture inherits="UIPanelButtonHighlightTexture"/>
+		<HighlightTexture>
+            <Texture name="UIPanelButtonHighlightTexture" file="Interface\Buttons\UI-Panel-Button-Highlight" alphaMode="ADD" virtual="true">
+                <Size>
+                    <AbsDimension x="12" y="22"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parentLeft" relativePoint="TOPRIGHT"/>
+                    <Anchor point="BOTTOMRIGHT" relativeTo="$parentRight" relativePoint="BOTTOMLEFT"/>
+                </Anchors>
+                <TexCoords left="0.09375" right="0.53125" top="0" bottom="0.6875"/>
+            </Texture>
+        </HighlightTexture>
 	</Button>
 
 
@@ -159,11 +179,20 @@
         </Layers>
         <Scripts>
             <OnEnter>
+                self.isMouseover = true
                 if(self.tooltipText ~= nil) then
-                    GameTooltip_AddNewbieTip(self, self.tooltipText, 1.0, 1.0, 1.0, self.newbieText);
+                    C_Timer.After(0.25, function()
+                        if self.isMouseover then
+                            GameTooltip:SetOwner(UIParent, "ANCHOR_NONE");
+                            GameTooltip:ClearAllPoints();
+                            GameTooltip:SetText(self.tooltipText, nil, nil, nil, nil, true);
+                            GameTooltip:SetPoint("BOTTOMLEFT", self, "TOPRIGHT", -12, -12);
+                        end
+                    end);
                 end
             </OnEnter>
             <OnLeave>
+                self.isMouseover = false
                 if(self.tooltipText ~= nil) then
                     GameTooltip:Hide();
                 end
@@ -177,15 +206,21 @@
         </Size>
         <Scripts>
             <OnEnter>
+                self.isMouseover = true
                 if(self.tooltipText ~= nil) then
-                    --GameTooltip_SetBasicTooltip(GameTooltip, self.tooltipText, 0, 0, true);
-                    GameTooltip:SetOwner(UIParent, "ANCHOR_NONE");
-                    GameTooltip:ClearAllPoints();
-                    GameTooltip:SetText(self.tooltipText, nil, nil, nil, nil, true);
-                    GameTooltip:SetPoint("BOTTOMLEFT", self, "TOPRIGHT", -12, -12);
+                    C_Timer.After(0.25, function()
+                        if self.isMouseover then
+                            --GameTooltip_SetBasicTooltip(GameTooltip, self.tooltipText, 0, 0, true);
+                            GameTooltip:SetOwner(UIParent, "ANCHOR_NONE");
+                            GameTooltip:ClearAllPoints();
+                            GameTooltip:SetText(self.tooltipText, nil, nil, nil, nil, true);
+                            GameTooltip:SetPoint("BOTTOMLEFT", self, "TOPRIGHT", -12, -12);
+                        end
+                    end);
                 end
             </OnEnter>
             <OnLeave>
+                self.isMouseover = false
                 if(self.tooltipText ~= nil) then
                     GameTooltip:Hide();
                 end
@@ -307,13 +342,219 @@
             </Frames>
     </Frame>
 
-    <Script file="libs\LibStub-1.0\LibStub.lua"/>
-    <Include file="libs\CallbackHandler-1.0\CallbackHandler-1.0.xml"/>
-    <Script file="libs\LibRangeCheck-2.0\LibRangeCheck-2.0.lua"/>
-    <Script file="libs\LibButtonGlow-1.0\LibButtonGlow-1.0.lua"/>
-    <Include file="libs\AceLocale-3.0\AceLocale-3.0.xml"/>
-    <Include file="libs\LibClassicDurations\LibClassicDurations.xml"/>
-    <Include file="locales.xml"/>
+    <Button name="NeatPlatesTriStateButtonTemplate" virtual="true">
+        <Size>
+            <AbsDimension x="100" y="18"/>
+        </Size>
+        <Frames>
+            <Button name="$parentToggle" hidden="true">
+                <Size>
+                    <AbsDimension x="14" y="14"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPRIGHT" relativeTo="$parent" relativePoint="TOPRIGHT">
+                        <Offset>
+                            <AbsDimension x="-6" y="-1"/>
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+
+                    </OnLoad>
+                    <OnClick>
+
+                    </OnClick>
+                </Scripts>
+                <NormalTexture name="$parentNormalTexture" file="Interface\Buttons\UI-MinusButton-UP"/>
+                <PushedTexture name="$parentPushedTexture" file="Interface\Buttons\UI-MinusButton-DOWN"/>
+                <HighlightTexture name="$parentHighlightTexture" file="Interface\Buttons\UI-PlusButton-Hilight" alphaMode="ADD"/>
+            </Button>
+        </Frames>
+        <Scripts>
+            <OnLoad>
+                self.UpdateState = function(self, state)
+                    local states = self:GetParent().states;
+
+                    local nextState, newState;
+                    for label, color in pairs(states) do
+                        if nextState or self.state == nil then
+                            newState = label;
+                            break;
+                        elseif self.state == label then
+                            nextState = true;
+                        end
+                    end
+                    self.state = state or newState;
+
+                    self:SetText((states[self.state] or "")..self.Label)
+                end
+            </OnLoad>
+            <OnClick>
+                self:UpdateState()
+            </OnClick>
+            <OnEnter>
+                self.isMouseover = true
+                if(self.tooltipText ~= nil) then
+                    C_Timer.After(0.25, function()
+                        if self.isMouseover then
+                            GameTooltip:SetOwner(UIParent, "ANCHOR_NONE");
+                            GameTooltip:ClearAllPoints();
+                            GameTooltip:SetText(self.tooltipText, nil, nil, nil, nil, true);
+                            GameTooltip:SetPoint("BOTTOMLEFT", self, "TOPRIGHT", -12, -12);
+                        end
+                    end);
+                end
+            </OnEnter>
+            <OnLeave>
+                self.isMouseover = false
+                if(self.tooltipText ~= nil) then
+                    GameTooltip:Hide();
+                end
+            </OnLeave>
+        </Scripts>
+        <ButtonText name="$parentText" justifyH="MIDDLE" wordwrap="false"/>
+        <NormalFont style="GameFontHighlight"/>
+        <HighlightFont style="GameFontHighlightOutline"/>
+    </Button>
+
+    <Button name="NeatPlatesOptionsListButtonTemplate" virtual="true">
+        <Size>
+            <AbsDimension x="175" y="18"/>
+        </Size>
+        <Frames>
+            <Button name="$parentToggle" hidden="true">
+                <Size>
+                    <AbsDimension x="14" y="14"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPRIGHT" relativeTo="$parent" relativePoint="TOPRIGHT">
+                        <Offset>
+                            <AbsDimension x="-6" y="-1"/>
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+
+                    </OnLoad>
+                    <OnClick>
+
+                    </OnClick>
+                </Scripts>
+                <NormalTexture name="$parentNormalTexture" file="Interface\Buttons\UI-MinusButton-UP"/>
+                <PushedTexture name="$parentPushedTexture" file="Interface\Buttons\UI-MinusButton-DOWN"/>
+                <HighlightTexture name="$parentHighlightTexture" file="Interface\Buttons\UI-PlusButton-Hilight" alphaMode="ADD"/>
+            </Button>
+        </Frames>
+        <Scripts>
+            <OnLoad>
+
+            </OnLoad>
+            <OnClick>
+
+            </OnClick>
+            <OnEnter>
+                self.isMouseover = true
+                if(self.tooltipText ~= nil) then
+                    C_Timer.After(0.25, function()
+                        if self.isMouseover then
+                            GameTooltip:SetOwner(UIParent, "ANCHOR_NONE");
+                            GameTooltip:ClearAllPoints();
+                            GameTooltip:SetText(self.tooltipText, nil, nil, nil, nil, true);
+                            GameTooltip:SetPoint("BOTTOMLEFT", self, "TOPRIGHT", -12, -12);
+                        end
+                    end);
+                end
+            </OnEnter>
+            <OnLeave>
+                self.isMouseover = false
+                if(self.tooltipText ~= nil) then
+                    GameTooltip:Hide();
+                end
+            </OnLeave>
+        </Scripts>
+        <ButtonText name="$parentText" justifyH="LEFT" wordwrap="false"/>
+        <NormalFont style="GameFontNormal"/>
+        <HighlightFont style="GameFontHighlight"/>
+        <HighlightTexture file="Interface\QuestFrame\UI-QuestLogTitleHighlight" alphaMode="ADD">
+            <Anchors>
+                <Anchor point="TOPLEFT">
+                    <Offset>
+                        <AbsDimension x="0" y="1"/>
+                    </Offset>
+                </Anchor>
+                <Anchor point="BOTTOMRIGHT">
+                    <Offset>
+                        <AbsDimension x="0" y="1"/>
+                    </Offset>
+                </Anchor>
+            </Anchors>
+        </HighlightTexture>
+    </Button>
+
+    <Frame name="NeatPlatesPromptTemplate" virtual="true">
+        <Size>
+            <AbsDimension x="320" y="72"/>
+        </Size>
+        <Layers>
+            <Layer level="ARTWORK">
+                <FontString name="$parentText" parentKey="text" inherits="GameFontHighlight">
+                    <Size>
+                        <AbsDimension x="290" y="0"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="TOP">
+                            <Offset>
+                                <AbsDimension x="0" y="-16"/>
+                            </Offset>
+                        </Anchor>
+                    </Anchors>
+                </FontString>
+                <FontString parentKey="SubText" inherits="GameFontNormalSmall">
+                    <Size x="290" y="0"/>
+                    <Anchors>
+                        <Anchor point="TOP" relativeKey="$parent.text" relativePoint="BOTTOM" x="0" y="-6"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+        <Frames>
+            <Button name="$parentButton1" inherits="StaticPopupButtonTemplate" parentKey="button1" id="1">
+                <Size>
+                    <AbsDimension x="80" y="20"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="BOTTOM" x="-40" y="6"/>
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+                        self:SetText(YES)
+                    </OnLoad>
+                    <OnClick>
+                        if self.Callback and type(self.Callback) == "function" then self.Callback() end
+                    </OnClick>
+                </Scripts>
+            </Button>
+            <Button name="$parentButton2" inherits="StaticPopupButtonTemplate" parentKey="button2" id="2">
+                <Size>
+                    <AbsDimension x="80" y="20"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="BOTTOM" x="40" y="6"/>
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+                        self:SetText(NO)
+                    </OnLoad>
+                    <OnClick>
+                        if self.Callback and type(self.Callback) == "function" then self.Callback() end
+                    </OnClick>
+                </Scripts>
+            </Button>
+        </Frames>
+    </Frame>
+
 	<Script file="NeatPlatesStatusbar.lua"/>
     <Script file="NeatPlatesUtility.lua"/>
 	<Script file="NeatPlatesCore.lua"/>

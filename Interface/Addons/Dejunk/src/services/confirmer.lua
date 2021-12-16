@@ -1,11 +1,9 @@
 local _, Addon = ...
 local Bags = Addon.Bags
 local C_Timer = _G.C_Timer
+local Chat = Addon.Chat
 local Confirmer = Addon.Confirmer
-local Core = Addon.Core
-local DB = Addon.DB
 local Dejunker = Addon.Dejunker
-local Destroyer = Addon.Destroyer
 local E = Addon.Events
 local EventManager = Addon.EventManager
 local GetCoinTextureString = _G.GetCoinTextureString
@@ -15,8 +13,6 @@ local pairs = pairs
 local TIMEOUT_DELAY = 5 -- seconds
 
 Confirmer.destroyedItems = {}
-Confirmer.destroyCount = 0
-Confirmer.printDestroyCount = false
 
 Confirmer.soldItems = {}
 Confirmer.soldTotal = 0
@@ -35,10 +31,7 @@ function Confirmer:IsConfirming(moduleName)
   end
 
   if moduleName == "Destroyer" then
-    return (
-      next(self.destroyedItems) ~= nil or
-      Destroyer:IsDestroying()
-    )
+    return next(self.destroyedItems) ~= nil
   end
 
   return (
@@ -55,22 +48,10 @@ function Confirmer:OnUpdate()
     self.printSoldTotal = false
 
     if self.soldTotal > 0 then
-      Core:Print(
-        L.SOLD_YOUR_JUNK:format(GetCoinTextureString(self.soldTotal))
+      Chat:Sell(
+        L.PROFIT_MESSAGE:format(GetCoinTextureString(self.soldTotal))
       )
-    end
-  end
-
-  -- Final destroy message
-  if self.printDestroyCount and not Destroyer:IsDestroying() then
-    self.printDestroyCount = false
-
-    if not DB.Profile.VerboseMode and self.destroyCount > 0 then
-      Core:Print(
-        self.destroyCount == 1 and
-        L.DESTROYED_ITEM or
-        L.DESTROYED_ITEMS:format(self.destroyCount)
-      )
+      self.soldTotal = 0
     end
   end
 end
@@ -84,7 +65,7 @@ function Confirmer:_AddSold(item)
   C_Timer.After(TIMEOUT_DELAY, function()
     if self.soldItems[item] then
       self:_RemoveSold(item)
-      Core:Print(L.MAY_NOT_HAVE_SOLD_ITEM:format(item.ItemLink))
+      Chat:Sell(L.MAY_NOT_HAVE_SOLD_ITEM:format(item.ItemLink))
     end
   end)
 end
@@ -102,7 +83,7 @@ function Confirmer:_RemoveUnlockedSold(bag, slot)
   for item in pairs(self.soldItems) do
     if item.Bag == bag and item.Slot == slot then
       self:_RemoveSold(item)
-      Core:Print(L.COULD_NOT_SELL_ITEM:format(item.ItemLink))
+      Chat:Sell(L.COULD_NOT_SELL_ITEM:format(item.ItemLink))
       return
     end
   end
@@ -111,14 +92,15 @@ end
 
 function Confirmer:_ConfirmSoldItems(bag)
   for item in pairs(self.soldItems) do
-    if item.Bag == bag and Bags:IsEmpty(item.Bag, item.Slot) then
+    if item.Bag == bag and not Bags:StillInBags(item) then
       self.soldTotal = self.soldTotal + (item.Price * item.Quantity)
 
-      Core:PrintVerbose(
+      Chat:SellVerbose(
         item.Quantity == 1 and
         L.SOLD_ITEM_VERBOSE:format(item.ItemLink) or
         L.SOLD_ITEMS_VERBOSE:format(item.ItemLink, item.Quantity)
       )
+      Chat:SellReason(item.Reason)
 
       self:_RemoveSold(item)
     end
@@ -129,13 +111,12 @@ end
 function Confirmer:_AddDestroyed(item)
   if self.destroyedItems[item] then return end
   self.destroyedItems[item] = true
-  self.printDestroyCount = false
 
   -- Fail if the item hasn't been confirmed after a short delay
   _G.C_Timer.After(TIMEOUT_DELAY, function()
     if self.destroyedItems[item] then
       self:_RemoveDestroyed(item)
-      Core:Print(L.MAY_NOT_HAVE_DESTROYED_ITEM:format(item.ItemLink))
+      Chat:Destroy(L.MAY_NOT_HAVE_DESTROYED_ITEM:format(item.ItemLink))
     end
   end)
 end
@@ -143,9 +124,6 @@ end
 
 function Confirmer:_RemoveDestroyed(item)
   self.destroyedItems[item] = nil
-  if not next(self.destroyedItems) then
-    self.printDestroyCount = true
-  end
 end
 
 
@@ -153,7 +131,7 @@ function Confirmer:_RemoveUnlockedDestroyed(bag, slot)
   for item in pairs(self.destroyedItems) do
     if item.Bag == bag and item.Slot == slot then
       self:_RemoveDestroyed(item)
-      Core:Print(L.COULD_NOT_DESTROY_ITEM:format(item.ItemLink))
+      Chat:Destroy(L.COULD_NOT_DESTROY_ITEM:format(item.ItemLink))
       return
     end
   end
@@ -162,14 +140,13 @@ end
 
 function Confirmer:_ConfirmDestroyedItems(bag)
   for item in pairs(self.destroyedItems) do
-    if item.Bag == bag and Bags:IsEmpty(item.Bag, item.Slot) then
-      self.destroyCount = self.destroyCount + 1
-
-      Core:PrintVerbose(
+    if item.Bag == bag and not Bags:StillInBags(item) then
+      Chat:Destroy(
         item.Quantity == 1 and
         L.DESTROYED_ITEM_VERBOSE:format(item.ItemLink) or
         L.DESTROYED_ITEMS_VERBOSE:format(item.ItemLink, item.Quantity)
       )
+      Chat:DestroyReason(item.Reason)
 
       self:_RemoveDestroyed(item)
     end
@@ -197,16 +174,6 @@ end)
 -- ============================================================================
 -- Destroyer Events
 -- ============================================================================
-
-EventManager:On(E.DestroyerStart, function()
-  for k in pairs(Confirmer.destroyedItems) do
-    Confirmer.destroyedItems[k] = nil
-  end
-
-  Confirmer.destroyCount = 0
-  Confirmer.printDestroyCount = true
-end)
-
 
 EventManager:On(E.DestroyerAttemptToDestroy, function(item)
   Confirmer:_AddDestroyed(item)

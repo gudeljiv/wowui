@@ -16,6 +16,7 @@ local Money = TSM.Include("Util.Money")
 local Log = TSM.Include("Util.Log")
 local Math = TSM.Include("Util.Math")
 local ItemString = TSM.Include("Util.ItemString")
+local Delay = TSM.Include("Util.Delay")
 local ItemInfo = TSM.Include("Service.ItemInfo")
 local CustomPrice = TSM.Include("Service.CustomPrice")
 local AuctionTracking = TSM.Include("Service.AuctionTracking")
@@ -62,33 +63,24 @@ local ARMOR_TYPES = {
 	[GetItemSubClassInfo(LE_ITEM_CLASS_ARMOR, LE_ITEM_ARMOR_CLOTH)] = true,
 }
 local INVENTORY_TYPES = {
-	GetItemInventorySlotInfo(TSM.IsShadowlands() and Enum.InventoryType.IndexHeadType or LE_INVENTORY_TYPE_HEAD_TYPE),
-	GetItemInventorySlotInfo(TSM.IsShadowlands() and Enum.InventoryType.IndexShoulderType or LE_INVENTORY_TYPE_SHOULDER_TYPE),
-	GetItemInventorySlotInfo(TSM.IsShadowlands() and Enum.InventoryType.IndexChestType or LE_INVENTORY_TYPE_CHEST_TYPE),
-	GetItemInventorySlotInfo(TSM.IsShadowlands() and Enum.InventoryType.IndexWaistType or LE_INVENTORY_TYPE_WAIST_TYPE),
-	GetItemInventorySlotInfo(TSM.IsShadowlands() and Enum.InventoryType.IndexLegsType or LE_INVENTORY_TYPE_LEGS_TYPE),
-	GetItemInventorySlotInfo(TSM.IsShadowlands() and Enum.InventoryType.IndexFeetType or LE_INVENTORY_TYPE_FEET_TYPE),
-	GetItemInventorySlotInfo(TSM.IsShadowlands() and Enum.InventoryType.IndexWristType or LE_INVENTORY_TYPE_WRIST_TYPE),
-	GetItemInventorySlotInfo(TSM.IsShadowlands() and Enum.InventoryType.IndexHandType or LE_INVENTORY_TYPE_HAND_TYPE),
+	GetItemInventorySlotInfo(TSM.IsWowClassic() and LE_INVENTORY_TYPE_HEAD_TYPE or Enum.InventoryType.IndexHeadType),
+	GetItemInventorySlotInfo(TSM.IsWowClassic() and LE_INVENTORY_TYPE_SHOULDER_TYPE or Enum.InventoryType.IndexShoulderType),
+	GetItemInventorySlotInfo(TSM.IsWowClassic() and LE_INVENTORY_TYPE_CHEST_TYPE or Enum.InventoryType.IndexChestType),
+	GetItemInventorySlotInfo(TSM.IsWowClassic() and LE_INVENTORY_TYPE_WAIST_TYPE or Enum.InventoryType.IndexWaistType),
+	GetItemInventorySlotInfo(TSM.IsWowClassic() and LE_INVENTORY_TYPE_LEGS_TYPE or Enum.InventoryType.IndexLegsType),
+	GetItemInventorySlotInfo(TSM.IsWowClassic() and LE_INVENTORY_TYPE_FEET_TYPE or Enum.InventoryType.IndexFeetType),
+	GetItemInventorySlotInfo(TSM.IsWowClassic() and LE_INVENTORY_TYPE_WRIST_TYPE or Enum.InventoryType.IndexWristType),
+	GetItemInventorySlotInfo(TSM.IsWowClassic() and LE_INVENTORY_TYPE_HAND_TYPE or Enum.InventoryType.IndexHandType),
 }
 local GENERIC_TYPES = {
-	GetItemInventorySlotInfo(TSM.IsShadowlands() and Enum.InventoryType.IndexNeckType or LE_INVENTORY_TYPE_NECK_TYPE),
-	GetItemInventorySlotInfo(TSM.IsShadowlands() and Enum.InventoryType.IndexCloakType or LE_INVENTORY_TYPE_CLOAK_TYPE),
-	GetItemInventorySlotInfo(TSM.IsShadowlands() and Enum.InventoryType.IndexFingerType or LE_INVENTORY_TYPE_FINGER_TYPE),
-	GetItemInventorySlotInfo(TSM.IsShadowlands() and Enum.InventoryType.IndexTrinketType or LE_INVENTORY_TYPE_TRINKET_TYPE),
-	GetItemInventorySlotInfo(TSM.IsShadowlands() and Enum.InventoryType.IndexHoldableType or LE_INVENTORY_TYPE_HOLDABLE_TYPE),
-	GetItemInventorySlotInfo(TSM.IsShadowlands() and Enum.InventoryType.IndexBodyType or LE_INVENTORY_TYPE_BODY_TYPE),
+	GetItemInventorySlotInfo(TSM.IsWowClassic() and LE_INVENTORY_TYPE_NECK_TYPE or Enum.InventoryType.IndexNeckType),
+	GetItemInventorySlotInfo(TSM.IsWowClassic() and LE_INVENTORY_TYPE_CLOAK_TYPE or Enum.InventoryType.IndexCloakType),
+	GetItemInventorySlotInfo(TSM.IsWowClassic() and LE_INVENTORY_TYPE_FINGER_TYPE or Enum.InventoryType.IndexFingerType),
+	GetItemInventorySlotInfo(TSM.IsWowClassic() and LE_INVENTORY_TYPE_TRINKET_TYPE or Enum.InventoryType.IndexTrinketType),
+	GetItemInventorySlotInfo(TSM.IsWowClassic() and LE_INVENTORY_TYPE_HOLDABLE_TYPE or Enum.InventoryType.IndexHoldableType),
+	GetItemInventorySlotInfo(TSM.IsWowClassic() and LE_INVENTORY_TYPE_BODY_TYPE or Enum.InventoryType.IndexBodyType),
 }
-local MAX_LEVEL = nil
-do
-	if TSM.IsShadowlands() then
-		MAX_LEVEL = 60
-	else
-		for _, v in pairs(MAX_PLAYER_LEVEL_TABLE) do
-			MAX_LEVEL = max(MAX_LEVEL or 0, v)
-		end
-	end
-end
+local MAX_LEVEL = TSM.IsWowBCClassic() and 70 or 60
 
 
 
@@ -678,9 +670,9 @@ function private.PostDialogShow(baseFrame, row)
 		:SetMouseEnabled(true)
 		:AddChild(UIElements.New("ViewContainer", "view")
 			:SetNavCallback(private.GetViewContentFrame)
+			:SetContext(row)
 			:AddPath("posting", true)
 			:AddPath("selection")
-			:SetContext(row)
 		)
 		:SetScript("OnHide", private.PostDialogOnHide)
 	)
@@ -690,7 +682,7 @@ function private.PostDialogOnHide(frame)
 	private.itemString = nil
 end
 
-function private.GetViewContentFrame(viewContainer, path)
+function private.GetViewContentFrame(_, path)
 	if path == "posting" then
 		return private.GetPostingFrame()
 	elseif path == "selection" then
@@ -842,6 +834,7 @@ function private.GetPostingFrame()
 				:SetBackgroundColor("PRIMARY_BG_ALT")
 				:SetFont("TABLE_TABLE1")
 				:SetValidateFunc(private.BidBuyoutValidateFunc)
+				:SetContext("bid")
 				:SetJustifyH("RIGHT")
 				:SetTabPaths("__parent.__parent.quantity.input", "__parent.__parent.buyout.input")
 				:SetScript("OnValidationChanged", private.BidBuyoutOnValidationChanged)
@@ -864,6 +857,7 @@ function private.GetPostingFrame()
 				:SetBackgroundColor("PRIMARY_BG_ALT")
 				:SetFont("TABLE_TABLE1")
 				:SetValidateFunc(private.BidBuyoutValidateFunc)
+				:SetContext("buyout")
 				:SetJustifyH("RIGHT")
 				:SetTabPaths("__parent.__parent.bid.input", "__parent.__parent.quantity.input")
 				:SetScript("OnValidationChanged", private.BidBuyoutOnValidationChanged)
@@ -1413,6 +1407,10 @@ function private.ScanBackButtonOnClick(button)
 end
 
 function private.AuctionsOnSelectionChanged()
+	Delay.AfterFrame(1, private.AuctionsOnSelectionChangedDelayed)
+end
+
+function private.AuctionsOnSelectionChangedDelayed()
 	private.fsm:ProcessEvent("EV_AUCTION_SELECTION_CHANGED")
 end
 
@@ -1459,16 +1457,16 @@ function private.PerItemOnClick(button)
 	local stackSizeEdit = tonumber(quantityInput:GetValue())
 	local isCommodity = ItemInfo.IsCommodity(private.itemString)
 	if postContext.quantity == stackSizeEdit then
-		local newBid = private.ParseBidBuyout(bidInput:GetValue())
+		local newBid = TSM.UI.AuctionUI.ParseBid(bidInput:GetValue())
 		newBid = newBid + undercut == postContext.displayedBid and floor(postContext.displayedBid / postContext.quantity) - undercut or floor(newBid / postContext.quantity)
-		local newBuyout = private.ParseBidBuyout(buyoutInput:GetValue())
+		local newBuyout = TSM.UI.AuctionUI.ParseBuyout(buyoutInput:GetValue(), isCommodity)
 		newBuyout = newBuyout + undercut == postContext.buyout and postContext.itemBuyout - undercut or floor(newBuyout / postContext.quantity)
 		buyoutInput:SetValue(Money.ToString(newBuyout, nil, "OPT_83_NO_COPPER"))
 		bidInput:SetValue(Money.ToString(newBid, nil, "OPT_83_NO_COPPER", isCommodity and "OPT_DISABLE" or nil))
 	else
-		local newBid = private.ParseBidBuyout(bidInput:GetValue())
+		local newBid = TSM.UI.AuctionUI.ParseBid(bidInput:GetValue())
 		newBid = newBid + undercut == postContext.displayedBid and floor(postContext.displayedBid / stackSizeEdit) - undercut or floor(newBid / stackSizeEdit)
-		local newBuyout = private.ParseBidBuyout(buyoutInput:GetValue())
+		local newBuyout = TSM.UI.AuctionUI.ParseBuyout(buyoutInput:GetValue(), isCommodity)
 		newBuyout = newBuyout + undercut == postContext.buyout and postContext.itemBuyout - undercut or floor(newBuyout / stackSizeEdit)
 		buyoutInput:SetValue(Money.ToString(newBuyout, nil, "OPT_83_NO_COPPER"))
 		bidInput:SetValue(Money.ToString(newBid, nil, "OPT_83_NO_COPPER", isCommodity and "OPT_DISABLE" or nil))
@@ -1503,14 +1501,14 @@ function private.PerStackOnClick(button)
 	local newBuyout, newBid = nil, nil
 	local isCommodity = ItemInfo.IsCommodity(private.itemString)
 	if postContext.quantity == stackSizeEdit then
-		newBid = private.ParseBidBuyout(bidInput:GetValue())
+		newBid = TSM.UI.AuctionUI.ParseBid(bidInput:GetValue())
 		newBid = ((newBid + undercut) * postContext.quantity) == postContext.displayedBid and (postContext.displayedBid - undercut) or (newBid * postContext.quantity)
-		newBuyout = private.ParseBidBuyout(buyoutInput:GetValue())
+		newBuyout = TSM.UI.AuctionUI.ParseBuyout(buyoutInput:GetValue(), isCommodity)
 		newBuyout = ((newBuyout + undercut) * postContext.quantity) == postContext.buyout and (postContext.buyout - undercut) or (newBuyout * postContext.quantity)
 	else
-		newBid = private.ParseBidBuyout(bidInput:GetValue())
+		newBid = TSM.UI.AuctionUI.ParseBid(bidInput:GetValue())
 		newBid = ((newBid + undercut) * postContext.quantity) == postContext.displayedBid and floor(postContext.displayedBid / postContext.quantity) * stackSizeEdit - undercut or newBid * stackSizeEdit
-		newBuyout = private.ParseBidBuyout(buyoutInput:GetValue())
+		newBuyout = TSM.UI.AuctionUI.ParseBuyout(buyoutInput:GetValue(), isCommodity)
 		newBuyout = ((newBuyout + undercut) * postContext.quantity) == postContext.buyout and postContext.itemBuyout * stackSizeEdit - undercut or newBuyout * stackSizeEdit
 	end
 	buyoutInput:SetValue(Money.ToString(newBuyout, nil, "OPT_83_NO_COPPER"))
@@ -1518,21 +1516,15 @@ function private.PerStackOnClick(button)
 	frame:Draw()
 end
 
-function private.ParseBidBuyout(value)
-	value = Money.FromString(value) or tonumber(value)
-	if not value then
-		return nil
-	end
-	if not TSM.IsWowClassic() and value % COPPER_PER_SILVER ~= 0 then
-		return nil
-	end
-	return (value or 0) > 0 and value <= MAXIMUM_BID_PRICE and value or nil
-end
-
 function private.BidBuyoutValidateFunc(input, value)
-	value = private.ParseBidBuyout(value)
+	local errMsg = nil
+	if input:GetContext() == "bid" then
+		value, errMsg = TSM.UI.AuctionUI.ParseBid(value)
+	else
+		value, errMsg = TSM.UI.AuctionUI.ParseBuyout(value, ItemInfo.IsCommodity(private.itemString))
+	end
 	if not value then
-		return false, L["Invalid price."]
+		return false, L["Invalid price."].." "..errMsg
 	end
 	return true
 end
@@ -1546,13 +1538,13 @@ function private.BidBuyoutInputOnValueChanged(input)
 	local itemString = frame:GetElement("confirmBtn"):GetContext()
 	local bidInput = frame:GetElement("bid.input")
 	local buyoutInput = frame:GetElement("buyout.input")
-	local bid = private.ParseBidBuyout(bidInput:GetValue())
-	local buyout = private.ParseBidBuyout(buyoutInput:GetValue())
+	local bid = TSM.UI.AuctionUI.ParseBid(bidInput:GetValue())
+	local buyout = TSM.UI.AuctionUI.ParseBuyout(buyoutInput:GetValue(), ItemInfo.IsCommodity(private.itemString))
 	if input == buyoutInput and not TSM.IsWowClassic() and ItemInfo.IsCommodity(itemString) then
 		-- update the bid to match
 		bidInput:SetValue(Money.ToString(buyout, nil, "OPT_83_NO_COPPER", "OPT_DISABLE"))
 			:Draw()
-	elseif input == bidInput and private.ParseBidBuyout(input:GetValue()) > private.ParseBidBuyout(buyoutInput:GetValue()) then
+	elseif input == bidInput and buyout > 0 and bid > buyout then
 		-- update the buyout to match
 		buyoutInput:SetValue(Money.ToString(bid, nil, "OPT_83_NO_COPPER"))
 			:Draw()
@@ -1564,10 +1556,12 @@ function private.BidBuyoutInputOnEnterPressed(input)
 	local frame = input:GetElement("__parent.__parent")
 	local bidInput = frame:GetElement("bid.input")
 	local buyoutInput = frame:GetElement("buyout.input")
-	local value = private.ParseBidBuyout(input:GetValue())
+	local bid = TSM.UI.AuctionUI.ParseBid(bidInput:GetValue())
+	local buyout = TSM.UI.AuctionUI.ParseBuyout(buyoutInput:GetValue(), ItemInfo.IsCommodity(private.itemString))
+	local value = input:GetContext() == "bid" and bid or buyout
 	input:SetValue(Money.ToString(value, nil, "OPT_83_NO_COPPER"))
 	input:Draw()
-	if input == buyoutInput and private.ParseBidBuyout(buyoutInput:GetValue()) < private.ParseBidBuyout(bidInput:GetValue()) then
+	if input == buyoutInput and buyout > 0 and buyout < bid then
 		-- update the bid to match
 		bidInput:SetValue(Money.ToString(value, nil, "OPT_83_NO_COPPER"))
 			:Draw()
@@ -1623,7 +1617,7 @@ end
 
 function private.GetBagQuantity(itemString, useSpecificItem)
 	return BagTracking.CreateQueryBagsItemAuctionable(useSpecificItem and itemString or ItemString.GetBase(itemString))
-		:SumAndRelease("quantity") or 0
+		:SumAndRelease("quantity")
 end
 
 function private.GetMaxPostStack(itemString)
@@ -1687,11 +1681,11 @@ function private.UpdateDepositCostAndPostButton(frame)
 
 	local bidInput = frame:GetElement("bid.input")
 	local buyoutInput = frame:GetElement("buyout.input")
-	local bid = private.ParseBidBuyout(bidInput:GetValue())
-	local buyout = private.ParseBidBuyout(buyoutInput:GetValue())
+	local bid = TSM.UI.AuctionUI.ParseBid(bidInput:GetValue())
+	local buyout = TSM.UI.AuctionUI.ParseBuyout(buyoutInput:GetValue(), ItemInfo.IsCommodity(private.itemString))
 	local stackSize = tonumber(frame:GetElement("quantity.input"):GetValue())
 	local numAuctions = TSM.IsWowClassic() and tonumber(frame:GetElement("numStacks.input"):GetValue()) or 1
-	if bid > buyout or not bidInput:IsValid() or not buyoutInput:IsValid() or (stackSize * numAuctions) > private.GetBagQuantity(itemString) then
+	if (buyout > 0 and bid > buyout) or not bidInput:IsValid() or not buyoutInput:IsValid() or (stackSize * numAuctions) > private.GetBagQuantity(itemString) then
 		frame:GetElement("deposit.text")
 			:SetText(Money.ToString(0, nil, "OPT_83_NO_COPPER"))
 			:Draw()
@@ -1750,8 +1744,8 @@ end
 function private.PostButtonOnClick(button)
 	local frame = button:GetParentElement()
 	local stackSize = tonumber(frame:GetElement("quantity.input"):GetValue())
-	local bid = private.ParseBidBuyout(frame:GetElement("bid.input"):GetValue())
-	local buyout = private.ParseBidBuyout(frame:GetElement("buyout.input"):GetValue())
+	local bid = TSM.UI.AuctionUI.ParseBid(frame:GetElement("bid.input"):GetValue())
+	local buyout = TSM.UI.AuctionUI.ParseBuyout(frame:GetElement("buyout.input"):GetValue(), ItemInfo.IsCommodity(private.itemString))
 	local itemString = button:GetContext()
 	local postBag, postSlot = BagTracking.CreateQueryBagsAuctionable()
 		:OrderBy("slotId", true)
@@ -1768,7 +1762,7 @@ function private.PostButtonOnClick(button)
 			local commodityStatus = C_AuctionHouse.GetItemCommodityStatus(private.itemLocation)
 			local future = nil
 			if commodityStatus == Enum.ItemCommodityStatus.Item then
-				future = AuctionHouseWrapper.PostItem(private.itemLocation, postTime, stackSize, bid < buyout and bid or nil, buyout)
+				future = AuctionHouseWrapper.PostItem(private.itemLocation, postTime, stackSize, (buyout == 0 or bid < buyout) and bid or nil, buyout > 0 and buyout or nil)
 			elseif commodityStatus == Enum.ItemCommodityStatus.Commodity then
 				future = AuctionHouseWrapper.PostCommodity(private.itemLocation, postTime, stackSize, buyout)
 			else
@@ -2342,28 +2336,29 @@ function private.FSMCreate()
 				if selection and not selection:IsSubRow() then
 					selection = nil
 				end
-				local itemString, isPlayer = nil, false
+				local itemString, isPlayer, isAltPlayer = nil, false, false
 				if selection then
 					assert(selection:IsSubRow())
 					itemString = selection:GetItemString()
 					local ownerStr = selection and selection:GetOwnerInfo() or nil
-					isPlayer = PlayerInfo.IsPlayer(ownerStr, true, true, true)
+					isPlayer = PlayerInfo.IsPlayer(ownerStr)
+					isAltPlayer = PlayerInfo.IsPlayer(ownerStr, true, true, true)
 				end
 				local auctionSelected = selection and context.findHash == selection:GetHashes()
 				local numCanBuy = not auctionSelected and 0 or (context.numFound - context.numBought - context.numBid)
 				local numConfirming = context.numBought + context.numBid - context.numConfirmed
 				local canPost = selection and private.GetBagQuantity(itemString) > 0 and numConfirming == 0
 				local progressText = nil
-				if numConfirming == 0 and (numCanBuy == 0 and (not isPlayer or context.scanFrame:GetElement("auctions"):GetSelection() ~= context.findAuction)) then
+				if numConfirming == 0 and (numCanBuy == 0 and (not isAltPlayer or context.scanFrame:GetElement("auctions"):GetSelection() ~= context.findAuction)) then
 					-- we're done buying and confirming this batch
 					return "ST_RESULTS", true
-				elseif isPlayer and canPost then
-					progressText = TSM.IsWowClassic() and L["Post"] or L["Cancel or Post"]
+				elseif isAltPlayer and canPost then
+					progressText = TSM.IsWowClassic() and L["Post"] or (isPlayer and L["Cancel or Post"] or L["Post"])
 				elseif isPlayer then
 					progressText = TSM.IsWowClassic() and L["Select an Auction to Buy"] or L["Cancel Auction"]
 				elseif numConfirming == 0 then
 					-- we can still buy more
-					progressText = format(isPlayer and not TSM.IsWowClassic() and L["Cancel %d / %d"] or L["Buy %d / %d"], context.numBought + context.numBid + 1, context.numFound)
+					progressText = format(isAltPlayer and not TSM.IsWowClassic() and L["Cancel %d / %d"] or L["Buy %d / %d"], context.numBought + context.numBid + 1, context.numFound)
 				elseif numCanBuy == 0 then
 					-- we're just confirming
 					progressText = format(L["Confirming %d / %d"], context.numConfirmed + 1, context.numFound)
@@ -2379,7 +2374,7 @@ function private.FSMCreate()
 				context.progressText = progressText
 				context.progressPaused = false
 				context.postDisabled = not canPost
-				if numCanBuy == 0 or isPlayer or (not TSM.IsWowClassic() and numConfirming > 0) then
+				if numCanBuy == 0 or isAltPlayer or (not TSM.IsWowClassic() and numConfirming > 0) then
 					context.bidDisabled = true
 					context.buyoutDisabled = true
 					context.cancelShown = isPlayer and not TSM.IsWowClassic()
@@ -2470,7 +2465,15 @@ function private.FSMCreate()
 				context.findHash = context.findAuction:GetHashes()
 			end)
 			:AddEvent("EV_BAG_UPDATE_DELAYED", function(context)
-				local postContext = context.searchContext:GetPostContext()
+				local postContext = nil
+				local selection = context.scanFrame:GetElement("auctions"):GetSelection()
+				if selection then
+					wipe(context.postContextTemp)
+					private.PopulatePostContextFromRow(context.postContextTemp, selection)
+					postContext = context.postContextTemp
+				else
+					postContext = context.searchContext:GetPostContext()
+				end
 				local prevDisabled = context.postDisabled
 				context.postDisabled = not postContext or private.GetBagQuantity(postContext.itemString) == 0
 				context.scanFrame:GetElement("bottom.postBtn")
@@ -2517,7 +2520,7 @@ function private.FSMCreate()
 				local buyout = context.findAuction:GetBuyouts()
 				local result = context.auctionScan:PlaceBidOrBuyout(index, buyout, context.findAuction, quantity)
 				if result then
-					MailTracking.RecordAuctionBuyout(ItemString.GetBaseFast(context.findAuction:GetItemString()), quantity)
+					MailTracking.RecordAuctionBuyout(ItemString.ToLevel(context.findAuction:GetItemString()), quantity)
 					context.numBought = context.numBought + (TSM.IsWowClassic() and 1 or quantity)
 					context.lastBuyQuantity = quantity
 				else
@@ -2548,7 +2551,7 @@ function private.FSMCreate()
 				assert(not future)
 				result = result and context.auctionScan:PlaceBidOrBuyout(index, context.findAuction:GetRequiredBid(), context.findAuction, quantity)
 				if result then
-					MailTracking.RecordAuctionBuyout(ItemString.GetBaseFast(context.findAuction:GetItemString()), quantity)
+					MailTracking.RecordAuctionBuyout(ItemString.ToLevel(context.findAuction:GetItemString()), quantity)
 					context.numBid = context.numBid + (TSM.IsWowClassic() and 1 or quantity)
 					context.lastBuyQuantity = quantity
 				else

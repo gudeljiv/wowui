@@ -1,7 +1,7 @@
-## Interface: 80205
+## Interface: 90001
 ## Title: RangeDisplay Options
 ## Author: mitch0
-## Version: v4.9.3
+## Version: v4.9.5
 ## Notes: Configuration options for RangeDisplay
 ## OptionalDeps: AceGUI-3.0-SharedMediaWidgets
 ## Dependencies: RangeDisplay

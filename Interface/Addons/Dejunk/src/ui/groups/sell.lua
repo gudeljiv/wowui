@@ -28,8 +28,17 @@ function Sell:AddGeneral(parent)
     parent = parent,
     label = L.AUTO_SELL_TEXT,
     tooltip = L.AUTO_SELL_TOOLTIP,
-    get = function() return DB.Profile.AutoSell end,
-    set = function(value) DB.Profile.AutoSell = value end
+    get = function() return DB.Profile.sell.auto end,
+    set = function(value) DB.Profile.sell.auto = value end
+  })
+
+  -- Auto Open
+  Widgets:CheckBox({
+    parent = parent,
+    label = L.AUTO_OPEN_TEXT,
+    tooltip = L.AUTO_OPEN_SELL_TOOLTIP,
+    get = function() return DB.Profile.sell.autoOpen end,
+    set = function(value) DB.Profile.sell.autoOpen = value end
   })
 
   -- Safe Mode
@@ -37,28 +46,28 @@ function Sell:AddGeneral(parent)
     parent = parent,
     label = L.SAFE_MODE_TEXT,
     tooltip = L.SAFE_MODE_TOOLTIP:format(Consts.SAFE_MODE_MAX),
-    get = function() return DB.Profile.SafeMode end,
-    set = function(value) DB.Profile.SafeMode = value end
+    get = function() return DB.Profile.sell.safeMode end,
+    set = function(value) DB.Profile.sell.safeMode = value end
   })
 
   -- Below Price
   Widgets:CheckBoxSlider({
     parent = parent,
     checkBox = {
-      label = L.SELL_BELOW_PRICE_TEXT,
+      label = L.BELOW_PRICE_TEXT,
       tooltip = Utils:DoesNotApplyToPoor(L.SELL_BELOW_PRICE_TOOLTIP),
-      get = function() return DB.Profile.SellBelowPrice.Enabled end,
-      set = function(value) DB.Profile.SellBelowPrice.Enabled = value end
+      get = function() return DB.Profile.sell.belowPrice.enabled end,
+      set = function(value) DB.Profile.sell.belowPrice.enabled = value end
     },
     slider = {
-      label = GetCoinTextureString(DB.Profile.SellBelowPrice.Value),
-      value = DB.Profile.SellBelowPrice.Value,
+      label = GetCoinTextureString(DB.Profile.sell.belowPrice.value),
+      value = DB.Profile.sell.belowPrice.value,
       min = Consts.SELL_BELOW_PRICE_MIN,
       max = Consts.SELL_BELOW_PRICE_MAX,
       step = Consts.SELL_BELOW_PRICE_STEP,
-      onValueChanged = function(self, event, value)
-        DB.Profile.SellBelowPrice.Value = value
-        self:SetLabel(GetCoinTextureString(DB.Profile.SellBelowPrice.Value))
+      onValueChanged = function(this, event, value)
+        DB.Profile.sell.belowPrice.value = value
+        this:SetLabel(GetCoinTextureString(DB.Profile.sell.belowPrice.value))
       end
     }
   })
@@ -76,8 +85,8 @@ function Sell:AddByQuality(parent)
     parent = parent,
     label = DCL:ColorString(L.POOR_TEXT, DCL.Wow.Poor),
     tooltip = L.SELL_ALL_TOOLTIP,
-    get = function() return DB.Profile.SellPoor end,
-    set = function(value) DB.Profile.SellPoor = value end
+    get = function() return DB.Profile.sell.byQuality.poor end,
+    set = function(value) DB.Profile.sell.byQuality.poor = value end
   })
 
   -- Common
@@ -85,8 +94,8 @@ function Sell:AddByQuality(parent)
     parent = parent,
     label = DCL:ColorString(L.COMMON_TEXT, DCL.Wow.Common),
     tooltip = L.SELL_ALL_TOOLTIP,
-    get = function() return DB.Profile.SellCommon end,
-    set = function(value) DB.Profile.SellCommon = value end
+    get = function() return DB.Profile.sell.byQuality.common end,
+    set = function(value) DB.Profile.sell.byQuality.common = value end
   })
 
   -- Uncommon
@@ -94,8 +103,8 @@ function Sell:AddByQuality(parent)
     parent = parent,
     label = DCL:ColorString(L.UNCOMMON_TEXT, DCL.Wow.Uncommon),
     tooltip = L.SELL_ALL_TOOLTIP,
-    get = function() return DB.Profile.SellUncommon end,
-    set = function(value) DB.Profile.SellUncommon = value end
+    get = function() return DB.Profile.sell.byQuality.uncommon end,
+    set = function(value) DB.Profile.sell.byQuality.uncommon = value end
   })
 
   -- Rare
@@ -103,8 +112,8 @@ function Sell:AddByQuality(parent)
     parent = parent,
     label = DCL:ColorString(L.RARE_TEXT, DCL.Wow.Rare),
     tooltip = L.SELL_ALL_TOOLTIP,
-    get = function() return DB.Profile.SellRare end,
-    set = function(value) DB.Profile.SellRare = value end
+    get = function() return DB.Profile.sell.byQuality.rare end,
+    set = function(value) DB.Profile.sell.byQuality.rare = value end
   })
 
   -- Epic
@@ -112,8 +121,8 @@ function Sell:AddByQuality(parent)
     parent = parent,
     label = DCL:ColorString(L.EPIC_TEXT, DCL.Wow.Epic),
     tooltip = L.SELL_ALL_TOOLTIP,
-    get = function() return DB.Profile.SellEpic end,
-    set = function(value) DB.Profile.SellEpic = value end
+    get = function() return DB.Profile.sell.byQuality.epic end,
+    set = function(value) DB.Profile.sell.byQuality.epic = value end
   })
 end
 
@@ -132,32 +141,44 @@ function Sell:AddByType(parent)
       Addon.IS_RETAIL and
       L.SELL_UNSUITABLE_TOOLTIP or
       L.SELL_UNSUITABLE_TOOLTIP_CLASSIC,
-    get = function() return DB.Profile.SellUnsuitable end,
-    set = function(value) DB.Profile.SellUnsuitable = value end
+    get = function() return DB.Profile.sell.byType.unsuitable end,
+    set = function(value) DB.Profile.sell.byType.unsuitable = value end
   })
 
-  -- Below Average ILVL
-  if Addon.IS_RETAIL then
-    Widgets:CheckBoxSlider({
-      parent = parent,
-      checkBox = {
-        label = L.SELL_BELOW_AVERAGE_ILVL_TEXT,
-        tooltip = L.SELL_BELOW_AVERAGE_ILVL_TOOLTIP,
-        get = function() return DB.Profile.SellBelowAverageILVL.Enabled end,
-        set = function(value) DB.Profile.SellBelowAverageILVL.Enabled = value end
-      },
-      slider = {
-        label = L.ITEM_LEVELS_TEXT,
-        value = DB.Profile.SellBelowAverageILVL.Value,
-        min = Consts.SELL_BELOW_AVERAGE_ILVL_MIN,
-        max = Consts.SELL_BELOW_AVERAGE_ILVL_MAX,
-        step = Consts.SELL_BELOW_AVERAGE_ILVL_STEP,
-        onValueChanged = function(self, event, value)
-          DB.Profile.SellBelowAverageILVL.Value = value
-        end
-      }
-    })
-  end
+  -- Item Level Range.
+  Widgets:CheckBoxSliderRange({
+    parent = parent,
+    checkBox = {
+      label = L.ITEM_LEVEL_RANGE_TEXT,
+      tooltip = L.ITEM_LEVEL_RANGE_TOOLTIP,
+      get = function() return DB.Profile.sell.byType.itemLevelRange.enabled end,
+      set = function(value)
+        DB.Profile.sell.byType.itemLevelRange.enabled = value
+      end
+    },
+    minSlider = {
+      label = L.MINIMUM_TEXT,
+      tooltip = L.ITEM_LEVEL_RANGE_MIN_TOOLTIP,
+      value = DB.Profile.sell.byType.itemLevelRange.min,
+      min = Consts.ITEM_LEVEL_RANGE_MIN,
+      max = DB.Profile.sell.byType.itemLevelRange.max,
+      step = Consts.ITEM_LEVEL_RANGE_STEP,
+      onValueChanged = function(this, event, value)
+        DB.Profile.sell.byType.itemLevelRange.min = value
+      end
+    },
+    maxSlider = {
+      label = L.MAXIMUM_TEXT,
+      tooltip = L.ITEM_LEVEL_RANGE_MAX_TOOLTIP,
+      value = DB.Profile.sell.byType.itemLevelRange.max,
+      min = DB.Profile.sell.byType.itemLevelRange.min,
+      max = Consts.ITEM_LEVEL_RANGE_MAX,
+      step = Consts.ITEM_LEVEL_RANGE_STEP,
+      onValueChanged = function(this, event, value)
+        DB.Profile.sell.byType.itemLevelRange.max = value
+      end
+    },
+  })
 end
 
 function Sell:AddIgnore(parent)
@@ -180,8 +201,8 @@ function Sell:AddIgnore(parent)
         parent = byCategory,
         label = L.IGNORE_BATTLEPETS_TEXT,
         tooltip = L.IGNORE_BATTLEPETS_TOOLTIP,
-        get = function() return DB.Profile.IgnoreBattlePets end,
-        set = function(value) DB.Profile.IgnoreBattlePets = value end
+        get = function() return DB.Profile.sell.ignore.battlePets end,
+        set = function(value) DB.Profile.sell.ignore.battlePets = value end
       })
     end
 
@@ -190,27 +211,29 @@ function Sell:AddIgnore(parent)
       parent = byCategory,
       label = L.IGNORE_CONSUMABLES_TEXT,
       tooltip = Utils:DoesNotApplyToPoor(L.IGNORE_CONSUMABLES_TOOLTIP),
-      get = function() return DB.Profile.IgnoreConsumables end,
-      set = function(value) DB.Profile.IgnoreConsumables = value end
+      get = function() return DB.Profile.sell.ignore.consumables end,
+      set = function(value) DB.Profile.sell.ignore.consumables = value end
     })
 
-    if Addon.IS_RETAIL then
+    if not Addon.IS_CLASSIC then
       -- Gems
       Widgets:CheckBox({
         parent = byCategory,
         label = L.IGNORE_GEMS_TEXT,
         tooltip = Utils:DoesNotApplyToPoor(L.IGNORE_GEMS_TOOLTIP),
-        get = function() return DB.Profile.IgnoreGems end,
-        set = function(value) DB.Profile.IgnoreGems = value end
+        get = function() return DB.Profile.sell.ignore.gems end,
+        set = function(value) DB.Profile.sell.ignore.gems = value end
       })
+    end
 
+    if Addon.IS_RETAIL then
       -- Glyphs
       Widgets:CheckBox({
         parent = byCategory,
         label = L.IGNORE_GLYPHS_TEXT,
         tooltip = Utils:DoesNotApplyToPoor(L.IGNORE_GLYPHS_TOOLTIP),
-        get = function() return DB.Profile.IgnoreGlyphs end,
-        set = function(value) DB.Profile.IgnoreGlyphs = value end
+        get = function() return DB.Profile.sell.ignore.glyphs end,
+        set = function(value) DB.Profile.sell.ignore.glyphs = value end
       })
     end
 
@@ -219,8 +242,8 @@ function Sell:AddIgnore(parent)
       parent = byCategory,
       label = L.IGNORE_ITEM_ENHANCEMENTS_TEXT,
       tooltip = Utils:DoesNotApplyToPoor(L.IGNORE_ITEM_ENHANCEMENTS_TOOLTIP),
-      get = function() return DB.Profile.IgnoreItemEnhancements end,
-      set = function(value) DB.Profile.IgnoreItemEnhancements = value end
+      get = function() return DB.Profile.sell.ignore.itemEnhancements end,
+      set = function(value) DB.Profile.sell.ignore.itemEnhancements = value end
     })
 
     -- Miscellaneous
@@ -228,8 +251,8 @@ function Sell:AddIgnore(parent)
       parent = byCategory,
       label = L.IGNORE_MISCELLANEOUS_TEXT,
       tooltip = Utils:DoesNotApplyToPoor(L.IGNORE_MISCELLANEOUS_TOOLTIP),
-      get = function() return DB.Profile.IgnoreMiscellaneous end,
-      set = function(value) DB.Profile.IgnoreMiscellaneous = value end
+      get = function() return DB.Profile.sell.ignore.miscellaneous end,
+      set = function(value) DB.Profile.sell.ignore.miscellaneous = value end
     })
 
     -- Reagents
@@ -237,8 +260,8 @@ function Sell:AddIgnore(parent)
       parent = byCategory,
       label = L.IGNORE_REAGENTS_TEXT,
       tooltip = Utils:DoesNotApplyToPoor(L.IGNORE_REAGENTS_TOOLTIP),
-      get = function() return DB.Profile.IgnoreReagents end,
-      set = function(value) DB.Profile.IgnoreReagents = value end
+      get = function() return DB.Profile.sell.ignore.reagents end,
+      set = function(value) DB.Profile.sell.ignore.reagents = value end
     })
 
     -- Recipes
@@ -246,8 +269,8 @@ function Sell:AddIgnore(parent)
       parent = byCategory,
       label = L.IGNORE_RECIPES_TEXT,
       tooltip = Utils:DoesNotApplyToPoor(L.IGNORE_RECIPES_TOOLTIP),
-      get = function() return DB.Profile.IgnoreRecipes end,
-      set = function(value) DB.Profile.IgnoreRecipes = value end
+      get = function() return DB.Profile.sell.ignore.recipes end,
+      set = function(value) DB.Profile.sell.ignore.recipes = value end
     })
 
     -- Trade Goods
@@ -255,8 +278,8 @@ function Sell:AddIgnore(parent)
       parent = byCategory,
       label = L.IGNORE_TRADE_GOODS_TEXT,
       tooltip = Utils:DoesNotApplyToPoor(L.IGNORE_TRADE_GOODS_TOOLTIP),
-      get = function() return DB.Profile.IgnoreTradeGoods end,
-      set = function(value) DB.Profile.IgnoreTradeGoods = value end
+      get = function() return DB.Profile.sell.ignore.tradeGoods end,
+      set = function(value) DB.Profile.sell.ignore.tradeGoods = value end
     })
   end
 
@@ -272,8 +295,8 @@ function Sell:AddIgnore(parent)
       parent = byType,
       label = L.IGNORE_BOE_TEXT,
       tooltip = Utils:DoesNotApplyToPoor(L.IGNORE_BOE_TOOLTIP),
-      get = function() return DB.Profile.IgnoreBindsWhenEquipped end,
-      set = function(value) DB.Profile.IgnoreBindsWhenEquipped = value end
+      get = function() return DB.Profile.sell.ignore.bindsWhenEquipped end,
+      set = function(value) DB.Profile.sell.ignore.bindsWhenEquipped = value end
     })
 
     -- Cosmetic
@@ -281,8 +304,8 @@ function Sell:AddIgnore(parent)
       parent = byType,
       label = L.IGNORE_COSMETIC_TEXT,
       tooltip = L.IGNORE_COSMETIC_TOOLTIP,
-      get = function() return DB.Profile.IgnoreCosmetic end,
-      set = function(value) DB.Profile.IgnoreCosmetic = value end
+      get = function() return DB.Profile.sell.ignore.cosmetic end,
+      set = function(value) DB.Profile.sell.ignore.cosmetic = value end
     })
 
     -- Equipment Sets
@@ -291,8 +314,8 @@ function Sell:AddIgnore(parent)
         parent = byType,
         label = L.IGNORE_EQUIPMENT_SETS_TEXT,
         tooltip = L.IGNORE_EQUIPMENT_SETS_TOOLTIP,
-        get = function() return DB.Profile.IgnoreEquipmentSets end,
-        set = function(value) DB.Profile.IgnoreEquipmentSets = value end
+        get = function() return DB.Profile.sell.ignore.equipmentSets end,
+        set = function(value) DB.Profile.sell.ignore.equipmentSets = value end
       })
     end
 
@@ -301,8 +324,8 @@ function Sell:AddIgnore(parent)
       parent = byType,
       label = L.IGNORE_QUEST_ITEMS_TEXT,
       tooltip = L.IGNORE_QUEST_ITEMS_TOOLTIP,
-      get = function() return DB.Profile.IgnoreQuestItems end,
-      set = function(value) DB.Profile.IgnoreQuestItems = value end
+      get = function() return DB.Profile.sell.ignore.questItems end,
+      set = function(value) DB.Profile.sell.ignore.questItems = value end
     })
 
     -- Readable
@@ -310,8 +333,8 @@ function Sell:AddIgnore(parent)
       parent = byType,
       label = L.IGNORE_READABLE_TEXT,
       tooltip = L.IGNORE_READABLE_TOOLTIP,
-      get = function() return DB.Profile.IgnoreReadable end,
-      set = function(value) DB.Profile.IgnoreReadable = value end
+      get = function() return DB.Profile.sell.ignore.readable end,
+      set = function(value) DB.Profile.sell.ignore.readable = value end
     })
 
     -- Soulbound
@@ -319,8 +342,8 @@ function Sell:AddIgnore(parent)
       parent = byType,
       label = L.IGNORE_SOULBOUND_TEXT,
       tooltip = Utils:DoesNotApplyToPoor(L.IGNORE_SOULBOUND_TOOLTIP),
-      get = function() return DB.Profile.IgnoreSoulbound end,
-      set = function(value) DB.Profile.IgnoreSoulbound = value end
+      get = function() return DB.Profile.sell.ignore.soulbound end,
+      set = function(value) DB.Profile.sell.ignore.soulbound = value end
     })
 
     -- Tradeable
@@ -329,8 +352,8 @@ function Sell:AddIgnore(parent)
         parent = byType,
         label = L.IGNORE_TRADEABLE_TEXT,
         tooltip = L.IGNORE_TRADEABLE_TOOLTIP,
-        get = function() return DB.Profile.IgnoreTradeable end,
-        set = function(value) DB.Profile.IgnoreTradeable = value end
+        get = function() return DB.Profile.sell.ignore.tradeable end,
+        set = function(value) DB.Profile.sell.ignore.tradeable = value end
       })
     end
   end

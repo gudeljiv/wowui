@@ -1,22 +1,39 @@
 local AddonName, Addon = ...
 local AceGUI = Addon.Libs.AceGUI
 local Colors = Addon.Colors
-local Confirmer = Addon.Confirmer
+local Commands = Addon.Commands
 local Core = Addon.Core
+local DB = Addon.DB
 local DCL = Addon.Libs.DCL
-local Dejunker = Addon.Dejunker
-local Destroyables = Addon.Lists.Destroyables
-local Destroyer = Addon.Destroyer
 local E = Addon.Events
 local EventManager = Addon.EventManager
-local Exclusions = Addon.Lists.Exclusions
-local Inclusions = Addon.Lists.Inclusions
+local ItemFrames = Addon.ItemFrames
 local L = Addon.Libs.L
-local ListHelper = Addon.ListHelper
 local pairs = pairs
 local UI = Addon.UI
-local Undestroyables = Addon.Lists.Undestroyables
 local Widgets = Addon.UI.Widgets
+
+-- ============================================================================
+-- Local Functions
+-- ============================================================================
+
+local function getStatusText()
+  local isBusy, reason = Core:IsBusy()
+  if isBusy then return reason end
+
+  if DB.GetProfileKey then
+    return ("%s: |cFFFFFFFF%s|r"):format(
+      L.ACTIVE_PROFILE_TEXT,
+      DB:GetProfileKey()
+    )
+  end
+
+  return ""
+end
+
+-- ============================================================================
+-- Functions
+-- ============================================================================
 
 function UI:IsShown()
   return self.frame and self.frame:IsShown()
@@ -32,6 +49,7 @@ end
 
 function UI:Show()
   if not self.frame then self:Create() end
+  ItemFrames:HideAll()
   self.frame:Show()
 end
 
@@ -43,14 +61,8 @@ end
 function UI:OnUpdate(elapsed)
   if not self.frame or not self.frame:IsShown() then return end
 
-  -- Update status text
-  self.frame:SetStatusText(
-    (Dejunker:IsDejunking() and L.STATUS_SELLING_ITEMS_TEXT) or
-    (Destroyer:IsDestroying() and L.STATUS_DESTROYING_ITEMS_TEXT) or
-    (Confirmer:IsConfirming() and L.STATUS_CONFIRMING_ITEMS_TEXT) or
-    (ListHelper:IsParsing() and L.STATUS_UPDATING_LISTS_TEXT) or
-    ""
-  )
+  -- Update status text.
+  self.frame:SetStatusText(getStatusText())
 
   -- Update disabled state
   local disabled = Core:IsBusy()
@@ -71,7 +83,10 @@ function UI:Create()
   frame:SetHeight(660)
   frame.frame:SetMinResize(600, 500)
   frame:SetLayout("Flow")
-  frame:SetCallback("OnClose", function() EventManager:Fire(E.MainUIClosed) end)
+  frame:SetCallback("OnClose", function()
+    EventManager:Fire(E.MainUIClosed)
+    ItemFrames:ReshowHidden()
+  end)
   self.frame = frame
   self.widgetsToDisable = {}
   self.disabled = false
@@ -85,19 +100,11 @@ function UI:Create()
     )
   )
 
-  -- Start Destroying button
-  local startDestroying = Widgets:Button({
-    parent = frame,
-    text = L.START_DESTROYING_BUTTON_TEXT,
-    width = 175,
-    onClick = function() Destroyer:Start() end
-  })
-  self.widgetsToDisable[startDestroying] = true
-
   -- Key Bindings button
   local keyBindings = Widgets:Button({
     parent = frame,
     text = _G.KEY_BINDINGS,
+    width = 175,
     onClick = function()
       UI:Hide()
 
@@ -117,6 +124,20 @@ function UI:Create()
   })
   self.widgetsToDisable[keyBindings] = true
 
+  -- Toggle sell frame button.
+  self.widgetsToDisable[Widgets:Button({
+    parent = frame,
+    text = L.TOGGLE_SELL_FRAME,
+    onClick = function() Commands.sell() end
+  })] = true
+
+  -- Toggle destroy frame button.
+  self.widgetsToDisable[Widgets:Button({
+    parent = frame,
+    text = L.TOGGLE_DESTROY_FRAME,
+    onClick = function() Commands.destroy() end
+  })] = true
+
   -- Container for the TreeGroup
   local treeGroupContainer = Widgets:SimpleGroup({
     parent = frame,
@@ -134,18 +155,32 @@ function UI:Create()
     { text = L.GENERAL_TEXT, value = "General" },
     { text = "", value = "SPACE_1", disabled = true },
     { text = L.SELL_TEXT, value = "Sell" },
-    { text = Inclusions.localeColored, value = "Inclusions" },
-    { text = Exclusions.localeColored, value = "Exclusions" },
+    {
+      text = DCL:ColorString(L.INCLUSIONS_TEXT, Colors.Red),
+      value = "SellInclusions"
+    },
+    {
+      text = DCL:ColorString(L.EXCLUSIONS_TEXT, Colors.Green),
+      value = "SellExclusions"
+    },
     { text = "", value = "SPACE_2", disabled = true },
     { text = L.DESTROY_TEXT, value = "Destroy" },
-    { text = Destroyables.localeColored, value = "Destroyables" },
-    { text = Undestroyables.localeColored, value = "Undestroyables" },
+    {
+      text = DCL:ColorString(L.INCLUSIONS_TEXT, Colors.Red),
+      value = "DestroyInclusions"
+    },
+    {
+      text = DCL:ColorString(L.EXCLUSIONS_TEXT, Colors.Green),
+      value = "DestroyExclusions"
+    },
     { text = "", value = "SPACE_3", disabled = true },
+    { text = L.COMMANDS_TEXT, value = "Commands" },
+    { text = "", value = "SPACE_4", disabled = true },
     { text = L.PROFILES_TEXT, value = "Profiles" }
   })
 
-  treeGroup:SetCallback("OnGroupSelected", function(self, event, key)
-    self:ReleaseChildren()
+  treeGroup:SetCallback("OnGroupSelected", function(this, event, key)
+    this:ReleaseChildren()
 
     local group = UI.Groups[key] or error(key .. " group not supported")
     local parent = AceGUI:Create(group.parent or "ScrollFrame")
@@ -157,7 +192,7 @@ function UI:Create()
     parent:ResumeLayout()
     parent:DoLayout()
 
-    self:AddChild(parent)
+    this:AddChild(parent)
   end)
 
   treeGroup:SelectByValue("General")

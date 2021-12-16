@@ -465,7 +465,13 @@ end
 function private.RenameProfileInputOnEnterPressed(input)
 	local profileName = input:GetValue()
 	local prevProfileName = input:GetContext()
-	if not TSM.db:IsValidProfileName(profileName) then
+	if profileName == prevProfileName then
+		-- just hide the dialog
+		local baseElement = input:GetBaseElement()
+		baseElement:HideDialog()
+		baseElement:GetElement("content.settings.contentFrame.content"):ReloadContent()
+		return
+	elseif not TSM.db:IsValidProfileName(profileName) then
 		Log.PrintUser(L["This is not a valid profile name. Profile names must be at least one character long and may not contain '@' characters."])
 		return
 	elseif TSM.db:ProfileExists(profileName) then
@@ -609,9 +615,9 @@ function private.AccountSyncTextOnEnter(text)
 		else
 			mirrorStatus = Theme.GetFeedbackColor("GREEN"):ColorText(L["Up to date"])
 		end
-		tinsert(tooltipLines, L["Inventory / Gold Graph"]..TSM.CONST.TOOLTIP_SEP..mirrorStatus)
-		tinsert(tooltipLines, L["Profession Info"]..TSM.CONST.TOOLTIP_SEP..TSM.Crafting.Sync.GetStatus(account))
-		tinsert(tooltipLines, L["Purchase / Sale Info"]..TSM.CONST.TOOLTIP_SEP..TSM.Accounting.Sync.GetStatus(account))
+		tinsert(tooltipLines, L["Inventory / Gold Graph"]..Tooltip.GetSepChar()..mirrorStatus)
+		tinsert(tooltipLines, L["Profession Info"]..Tooltip.GetSepChar()..TSM.Crafting.Sync.GetStatus(account))
+		tinsert(tooltipLines, L["Purchase / Sale Info"]..Tooltip.GetSepChar()..TSM.Accounting.Sync.GetStatus(account))
 	else
 		tinsert(tooltipLines, L["Establishing connection..."])
 	end

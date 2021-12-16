@@ -101,6 +101,10 @@ function TSM.IsDevVersion()
 	return IS_DEV_VERSION
 end
 
+function TSM.IsTestEnvironment()
+	return VERSION_RAW == "v4.99.99"
+end
+
 function TSM.GetVersion()
 	return IS_DEV_VERSION and "Dev" or VERSION_RAW
 end
@@ -110,11 +114,15 @@ function TSM.ModuleInfoIterator()
 end
 
 function TSM.IsWowClassic()
+	return WOW_PROJECT_ID == WOW_PROJECT_CLASSIC or WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC
+end
+
+function TSM.IsWowVanillaClassic()
 	return WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
 end
 
-function TSM.IsShadowlands()
-	return select(4, GetBuildInfo()) >= 90000
+function TSM.IsWowBCClassic()
+	return WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC
 end
 
 function TSM.DebugLogout()

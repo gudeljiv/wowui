@@ -22,7 +22,7 @@ local defaults = {
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-local kc = CreateFrame("Frame", "KillCountFrame", UIParent)
+local kc = CreateFrame("Frame", "KillCountFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 kc:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 5, -350)
 kc:SetFrameStrata("LOW")
 kc:SetBackdrop(
@@ -85,7 +85,7 @@ kctimer:SetHeight(kctimer.text:GetStringHeight())
 -- Kill list wrapper
 ----------------------------
 
-local killlist_wrapper = CreateFrame("Frame", "WrapperKillListFrame", kc)
+local killlist_wrapper = CreateFrame("Frame", "WrapperKillListFrame", kc, BackdropTemplateMixin and "BackdropTemplate")
 killlist_wrapper:SetPoint("TOPLEFT", kc, "TOPLEFT", 0, -55)
 killlist_wrapper:SetFrameStrata("LOW")
 killlist_wrapper:SetBackdropColor(0, 0, 0, 0)
@@ -130,7 +130,7 @@ kclistpercentages:Hide()
 ----------------------------
 -- Wrapper frame for reset and timer buttons
 ----------------------------
-local resettimer_wrapper = CreateFrame("Frame", "WrapperResetTimer", kc)
+local resettimer_wrapper = CreateFrame("Frame", "WrapperResetTimer", kc, BackdropTemplateMixin and "BackdropTemplate")
 resettimer_wrapper:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 0, 10)
 resettimer_wrapper:SetFrameStrata("LOW")
 resettimer_wrapper:SetBackdropColor(0, 0, 0, 0)
@@ -177,7 +177,7 @@ separation_line:SetEndPoint("TOPRIGHT", -10, 5)
 -- Experience per hour
 ----------------------------
 
-local xpperhourframe_wrapper = CreateFrame("Frame", "XPPerHourWrapper", kc)
+local xpperhourframe_wrapper = CreateFrame("Frame", "XPPerHourWrapper", kc, BackdropTemplateMixin and "BackdropTemplate")
 xpperhourframe_wrapper:SetPoint("BOTTOMLEFT", separation_line, "TOPLEFT", 0, 5)
 xpperhourframe_wrapper:SetFrameStrata("LOW")
 xpperhourframe_wrapper:SetBackdropColor(0, 0, 0, 0)

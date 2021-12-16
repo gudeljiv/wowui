@@ -12,10 +12,8 @@ local function CallForStyleUpdate()
 	local theme = NeatPlates:GetTheme()
 	--print("CallForStyleUpdate, Theme,", theme)
 
-	if theme.ApplyProfileSettings
-		then theme:ApplyProfileSettings("From CallForStyleUpdate")
-	end
-
+	if theme.ApplyProfileSettings then theme:ApplyProfileSettings("From CallForStyleUpdate") end
+	NeatPlates:ForceUpdate()
 end
 
 local function GetPanelValues(panel, targetTable)
@@ -28,7 +26,7 @@ local function GetPanelValues(panel, targetTable)
 		targetTable["Theme"] = NeatPlates:GetThemeName() -- Store active theme
 
 		for index in pairs(targetTable) do
-			if panel[index] then
+			if panel[index] and panel[index].GetValue then
 				local value = panel[index]:GetValue()
 				if tonumber(value) ~= nil then
 					if panel[index].isActual then
@@ -118,12 +116,14 @@ local function ConvertColorListTable(source, target)
 	--local temp = ListToTable(strsplit("\n", source))
 	local temp = {strsplit("\n", source)}
 	target = wipe(target)
-
+	-- table.foreach(temp, print)
 	for index = 1, #temp do
 		if temp[index] then
-			local hex, str = select(3, string.find(temp[index], "(#%x+)[%s%p]*(.*)"))
+			local prefix, hex, str = select(3, string.find(temp[index], "(.-)[%s]*(#%x+)[%s]*(.*)"))
 			--local str = temp[index]
-			if hex and str then target[str] = hex end
+			if hex and str then
+				target[str] = {["prefix"] = prefix, ["hex"] = hex}
+			end
 		end
 	end
 end

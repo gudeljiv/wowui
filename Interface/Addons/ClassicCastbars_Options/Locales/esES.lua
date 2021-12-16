@@ -16,12 +16,14 @@ L["BORDERSHIELD"] = "Mostrar Escudo de Borde Ininterrumpible"
 L["BORDERSHIELD_TOOLTIP"] = "Muestra un escudo alrededor de la barra de lanzamiento cuando un lanzamiento no puede ser interrumpido. La desactivación de esta opción seguirá mostrando un color de fondo gris en los lanzamientos ininterrumpibles.|cffffff00Puede hacer clic en el botón \"Alternar barra de lanzamiento de prueba\" mientras mantiene presionadas las teclas modificadoras como SHIFT o CTRL para probar la barra de cast con el escudo de borde que se muestra.|r"
 L["CAST_BORDER"] = "Seleccionar Textura del Borde"
 L["CAST_BORDER_TOOLTIP"] = "Selecciona la textura utilizada para el borde de la barra de lanzamiento."
+L["CAST_FILL_HEADER"] = "Colores de relleno de hechizos"
 L["CAST_FONT"] = "Seleccionar Fuente de la Barra de Lanzamiento"
 L["CAST_FONT_TOOLTIP"] = "Selecciona el tipo de fuente utilizada para el nombre del hechizo y el texto del temporizador."
 L["CAST_STATUSBAR"] = "Seleccionar Textura de la Barra de Lanzamiento"
 L["CAST_STATUSBAR_TOOLTIP"] = "Selecciona el tipo de textura utilizado para la barra de lanzamiento / barra de estado."
 L["CASTBAR"] = "Barra de Lanzamiento"
 L["CASTBAR_COLORS"] = "Color"
+L["CASTBAR_FONTS"] = "Texto de la barra de lanzamiento"
 L["CASTBAR_ICON"] = "Icono"
 L["CASTBAR_SIZING"] = "Tamaño"
 L["CASTBAR_TEXTURE_FONT"] = "Textura"
@@ -41,8 +43,6 @@ L["ICON_SIZE"] = "Tamaño del Icono"
 L["ICON_SIZE_TOOLTIP"] = "Establece el tamaño del icono de hechizo de la barra de lanzamiento."
 L["IGNORE_PARENT_ALPHA"] = "Ignorar alfa del marco primario"
 L["IGNORE_PARENT_ALPHA_TOOLTIP"] = "Ignora la transparencia/valor alfa heredado del marco primario de barras de lanzamiento."
-L["LSM_TEXTURE_NOTE"] = [=[
-Nota: Si usa una textura / fuente de terceros personalizada y la elimina más adelante de su ordenador, deberá restablecer manualmente la textura o fuente aquí para que el complemento continúe funcionando.]=]
 L["NAMEPLATE"] = "Placa identificativa"
 L["PARTY"] = "Grupo"
 L["PER_CHARACTER"] = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|tConfiguraciones Específicas de Personaje"
@@ -64,13 +64,8 @@ L["STATUS_UNINTERRUPTIBLE_COLOR"] = "Seleccionar Color de Relleno Ininterrumpibl
 L["TARGET"] = "Objetivo"
 L["TEST"] = "Alternar Probando"
 L["TEST_MODE_DRAG"] = "Modo de Prueba - Arrastre para Mover"
-L["TEST_PLATE_TOOLTIP"] = [=[Muestra la barra de lanzamiento de la placa identificativa para la prueba. Puedes arrastrar la barra de lanzamiento para moverla.
-Tendrá que apuntar a alguien y hacer que la placa identificativa esté visible para ver la barra de lanzamiento de prueba.
-]=]
-L["TEST_TARGET_TOOLTIP"] = [=[Muestra la barra de lanzamiento del marco del objetivo para la prueba. Puedes arrastrar la barra de lanzamiento para moverla.
-Tendrá que apuntar a alguien primero para ver la barra de lanzamiento de prueba.
-]=]
 L["TEXT_COLOR"] = "Seleccionar Color de Texto"
+L["TEXT_OUTLINE"] = "Contorno de texto"
 L["TEXT_POINT"] = "Alineación del texto"
 L["TEXT_POS_X"] = "Posición de Texto X"
 L["TEXT_POS_Y"] = "Posición de Texto Y"

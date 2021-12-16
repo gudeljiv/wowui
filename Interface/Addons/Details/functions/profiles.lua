@@ -191,7 +191,7 @@ end
 	--> return the profile table requested
 
 function _detalhes:CreatePanicWarning()
-	_detalhes.instance_load_failed = CreateFrame ("frame", "DetailsPanicWarningFrame", UIParent)
+	_detalhes.instance_load_failed = CreateFrame ("frame", "DetailsPanicWarningFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 	_detalhes.instance_load_failed:SetHeight (80)
 	--tinsert (UISpecialFrames, "DetailsPanicWarningFrame")
 	_detalhes.instance_load_failed.text = _detalhes.instance_load_failed:CreateFontString (nil, "overlay", "GameFontNormal")
@@ -1166,6 +1166,7 @@ local default_player_data = {
 	--> current combat number
 		cached_specs = {},
 		cached_talents = {},
+		cached_roles = {},
 	
 		last_day = date ("%d"),
 	

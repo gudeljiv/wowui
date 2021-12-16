@@ -9,6 +9,8 @@ local QuestieStreamLib = QuestieLoader:ImportModule("QuestieStreamLib");
 local QuestieQuest = QuestieLoader:ImportModule("QuestieQuest");
 ---@type QuestieDB
 local QuestieDB = QuestieLoader:ImportModule("QuestieDB");
+---@type l10n
+local l10n = QuestieLoader:ImportModule("l10n");
 
 
 function QuestieSerializer:Hash(value)
@@ -335,8 +337,8 @@ function QuestieSerializer:Deserialize(data, encoding)
     QuestieSerializer:SetupStream(encoding)
     self.stream:Load(data)
     --local meta = _ReadTable(self, 1)
-    local data = _ReadTable(self, 1)
-    return data[1]
+    local retData = _ReadTable(self, 1)
+    return retData[1]
 end
 
 local _libAS = LibStub("AceSerializer-3.0")
@@ -345,13 +347,17 @@ local _CPTable = _libCP:GetAddonEncodeTable()
 function QuestieSerializer:Test()
     --Questie.db.char.HashTable = QuestieSerializer.SerializerHashDB
     --self.stream = QuestieStreamLib:GetStream("1short")
-    local testtable = {}
     local rawQuestList = {}
         -- Maybe this should be its own function in QuestieQuest...
     local numEntries, numQuests = GetNumQuestLogEntries();
     for index = 1, numEntries do
         local _, _, _, isHeader, _, _, _, questId, _, _, _, _, _, _, _, _, _ = GetQuestLogTitle(index)
-        if(not isHeader) then
+        if (not isHeader) and (not QuestieDB.QuestPointers[questId]) then
+            if not Questie._sessionWarnings[questId] then
+                Questie:Error(l10n("The quest %s is missing from Questie's database, Please report this on GitHub or Discord!", tostring(questId)))
+                Questie._sessionWarnings[questId] = true
+            end
+        elseif (not isHeader) then
             -- The id is not needed due to it being used as a key, but send it anyway to keep the same structure.
             local quest = {};
             quest.id = questId;
@@ -360,10 +366,11 @@ function QuestieSerializer:Test()
             rawQuestList[quest.id] = quest;
         end
     end
-    testtable = rawQuestList
-    testtable.npcs = {}
+
+    local testTable = rawQuestList
+    testTable.npcs = {}
     for i=1, 10 do
-        testtable.npcs[i] = QuestieDB:GetNPC(3100 + i)
+        testTable.npcs[i] = QuestieDB:GetNPC(3100 + i)
     end
     --testtable.quest = QuestieDB:GetQuest(1642)
     --testtable.npc1 = QuestieDB:GetNPC(5513)
@@ -373,7 +380,7 @@ function QuestieSerializer:Test()
     --testtable.npc5 = QuestieDB:GetNPC(1411)
 
     local now = GetTime()
-    local serQ = QuestieSerializer:Serialize(testtable)
+    local serQ = QuestieSerializer:Serialize(testTable)
     local serQR = QuestieSerializer.stream:SaveRaw()
 
     Questie.db.char.WriteTest = serQ
@@ -397,7 +404,7 @@ function QuestieSerializer:Test()
     print(" ")
     now = GetTime()
 
-    local serA = _libAS:Serialize(testtable)
+    local serA = _libAS:Serialize(testTable)
 
     print("AceSerializer:")
     QuestieSerializer:SetupStream()

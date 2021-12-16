@@ -750,7 +750,7 @@ end
 	
 	--> choose avatar window
 do
-	local avatar_pick_frame = CreateFrame ("frame", "AvatarPickFrame", UIParent)
+	local avatar_pick_frame = CreateFrame ("frame", "AvatarPickFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 	avatar_pick_frame:SetFrameStrata ("DIALOG")
 	avatar_pick_frame:SetBackdrop ({bgFile = [[Interface\FrameGeneral\UI-Background-Marble]], edgeFile = [[Interface\DialogFrame\UI-DialogBox-Border]], tile = true, tileSize = 256, edgeSize = 32,	insets = {left = 11, right = 12, top = 12, bottom = 11}})
 	avatar_pick_frame:SetBackdropColor (.3, .3, .3, .9)
@@ -829,7 +829,7 @@ do
 	
 	local buttons = {}
 	for i = 0, 2 do 
-		local newbutton = CreateFrame ("button", "AvatarPickFrameAvatarScrollButton"..i+1, avatar_pick_frame)
+		local newbutton = CreateFrame ("button", "AvatarPickFrameAvatarScrollButton"..i+1, avatar_pick_frame, BackdropTemplateMixin and "BackdropTemplate")
 		newbutton:SetScript ("OnClick", OnClickFunction)
 		newbutton:SetWidth (128)
 		newbutton:SetHeight (64)
@@ -841,7 +841,7 @@ do
 	
 	local buttonsbg = {}
 	for i = 0, 2 do 
-		local newbutton = CreateFrame ("button", "AvatarPickFrameBackgroundScrollButton"..i+1, avatar_pick_frame)
+		local newbutton = CreateFrame ("button", "AvatarPickFrameBackgroundScrollButton"..i+1, avatar_pick_frame, BackdropTemplateMixin and "BackdropTemplate")
 		newbutton:SetScript ("OnClick", OnClickFunction)
 		newbutton:SetWidth (275)
 		newbutton:SetHeight (60)
@@ -851,9 +851,9 @@ do
 		buttonsbg [#buttonsbg+1] = newbutton
 	end
 	
-	local avatar_list = CreateFrame ("ScrollFrame", "AvatarPickFrameAvatarScroll", avatar_pick_frame, "ListScrollFrameTemplate")
+	local avatar_list = CreateFrame ("ScrollFrame", "AvatarPickFrameAvatarScroll", avatar_pick_frame, "ListScrollFrameTemplate, BackdropTemplate")
 	avatar_list:SetPoint ("topleft", avatar_pick_frame, "topleft", 10, -10)
-	local background_list = CreateFrame ("ScrollFrame", "AvatarPickFrameBackgroundScroll", avatar_pick_frame, "ListScrollFrameTemplate")
+	local background_list = CreateFrame ("ScrollFrame", "AvatarPickFrameBackgroundScroll", avatar_pick_frame, "ListScrollFrameTemplate, BackdropTemplate")
 	background_list:SetPoint ("topleft", avatar_pick_frame, "topleft", 147, -85)
 
 	avatar_list:SetWidth (128)

@@ -2,6 +2,130 @@
 
 This mod is distributed under Version 2 of the GPL.  A copy of the GPL is included in this zip file with links to non-english translations.
 
+## v2.3.4-bcc (Sep, 30, 2021)
+
+- restore classic version of midsummer festival
+- (bcc) add ahune to tbc midsummer festival version
+- (bcc) add seperate hallow's end for tbc
+- (bcc) add headless horseman to tbc hallow's end version
+- (bcc) add coren direbrew in brd
+- (bcc) add brewfest event
+- (bcc) add talisman of the alliance/horde
+- (bcc) add missing Season 2, 3 & 4 sets
+- (bcc) add brutal glladiator mount
+- (bcc) added reins of the dark war/riding talbuk
+
+## v2.3.3-bcc (Sep, 18, 2021)
+
+- fixed bug on colorpicker which caused it to pick the wrong color for background (#169)
+- add missing questitems and boss for magequest to Uldaman
+- (bcc) add missing faction mounts (#175)
+- (bcc) update .toc version
+- (bcc) add new low level cooking recipes (#125)
+- (bcc) moved engineer port-trinkets to correct category
+- (bcc) added epic purple gems
+- (bcc) added missing s2 pvp shields
+- (bcc) fixed Marshal's Silk Belt
+- (bcc) added pvp cloaks
+- (bcc) added new midsummer festival items
+- (bcc) removed Enchanting formulas that never made it into the game
+- (bcc) add/update vendor prices
+
+## v2.3.2-bcc (Aug, 22, 2021)
+
+- increase max scale to 2.0
+- fix bug with Cloaks item filter
+- (bcc) add classic enchantments with bcc mats also into bcc crafting module
+- (bcc) fix mage shoulders for T5 token
+- (bcc) add Arathi and Warsong item prices
+- (bcc) moved Flamewrought-Key from honored to revered (#152)
+- (bcc) add missing Badge of Justice Helmets (#147)
+- (bcc) add classic engineering-recipes with bcc mats also into bcc crafting module
+- (bcc) removed some Engineering-Recipes that never made it into the game
+- (bcc) add Boss Ahune (Midsummer Event) to SlavePens (#162)
+- (bcc) update most wrong profession ranks
+
+## v2.3.1-bcc (Jun, 06, 2021)
+
+- fix bug with some stats in class filter
+- own class is now on top for class filter options
+- (bcc) add missing honor prices for horde
+- (bcc) add missing legendarys
+- (bcc) add missing world epics
+- (bcc) add missing mounts into collections
+
+## v2.3.0-bcc (Jun, 05, 2021)
+
+- add missing support for Atlas Map modules
+- add "Add line break before source." option for source tooltips
+- (bcc) update classic dungeons level ranges
+- (bcc) add much more vendor prices
+- (bcc) move reputation keys from honored to revered
+
+## v2.2.1 (May 29, 2021)
+
+- (bc) fix lua error on loading with gem socket filter
+
+## v2.2.0-bcc (May 23, 2021)
+
+- (new) item sets now also show set bonuses in tooltip
+- (bc) add Badge of Justice vendor for P1
+- (bc) add pvp insignias
+- (bc) add pvp non set items
+- (bc) add pvp mounts
+- (bc) add missing honor 70 sets
+
+## v2.1.0 (May 01, 2021)
+
+- add customizable stats settings for class filter, there are some problems as blizzard not always returns all item stats
+
+## v2.0.1 (Apr. 27, 2021)
+
+- (classic) fix missing recipes for crafting spells
+- (classic) fix chat link for crafting / enchanting
+- (bc) fix wrong NYI marker for Arena weapons
+
+## v2.0.0 (Apr. 26, 2021)
+
+- reimplement a basic class filter for loot pages
+- add source tooltip support for tokens
+- add average item level and class icons for item sets
+- add missing profession ranks
+- items with price now also show item description
+- profession extra info now also shows crafting spell
+- (classic) move Lady Falther'ess from Razorfen Downs into extra list and mark as Scourge Invasions npc
+- (classic) add class icons for tokens from: Nax, AQ40, AQ20, ZG
+- (classic) update .toc version
+- (bc) add bc support
+- (bc) add dungeons and raids
+- (bc) add Tier token items
+- (bc) add factions
+- (bc) add tooltip source support
+- (bc) add item sets data
+- (bc) add profession and recipe data
+- (bc) add world bosses
+- (bc) no longer show PvP rank requirements for classic PvP items
+- (bc) switching classic<->bc in crafting now switches between same profession
+- (bc) update Crafting module for bc
+- (bc) update PvP module for bc (most things are not implemented yet from blizzard)
+
+## v1.5.8 + v1.5.9 (Mar. 16, 2021)
+
+- update .toc version
+- replace Rivendare with Mograine
+- fix minLvl for Scholomance
+- move Defias Gunpowder into extra list
+
+## v1.5.7 (Dec. 05, 2020)
+
+- Update content phase
+
+## v1.5.6 (Sep. 05, 2020)
+
+- remove Voodoo Dolls from ZG trash as they are included in the Piles
+- Colorize Stratholme UD / Linving
+- Add Scarabs and Enchants into AQ20 extra list
+
 ## v1.5.5 (Aug. 21, 2020)
 
 - Add Gyromatic Icemaker in Gnomeregan

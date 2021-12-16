@@ -1,4 +1,4 @@
-﻿local LibStub = LibStub
+local LibStub = LibStub
 local ChocolateBar = LibStub("AceAddon-3.0"):GetAddon("ChocolateBar")
 local debug = ChocolateBar and ChocolateBar.Debug or function() end
 local AceCfgDlg = LibStub("AceConfigDialog-3.0")
@@ -571,7 +571,7 @@ local aceoptions = {
 							},
 						},
 					},
-					--@debug@
+					--[==[@debug@
 					debug = {
 						type = 'toggle',
 						--width = "half",
@@ -585,7 +585,7 @@ local aceoptions = {
 								ChocolateBar.db.char.debug = value
 						end,
 					},
-					--@end-debug@
+					--@end-debug@]==]
 				},
 			},
 		bars={
@@ -717,7 +717,7 @@ aceoptions.args.lookAndFeel.args.fontAndTextures.args.textures.args.background1 
 		}
 	}
 }
-				
+
 aceoptions.args.lookAndFeel.args.fontAndTextures.args.font.args.font = {
 	type = 'select',
 	dialogControl = 'LSM30_Font',
@@ -913,7 +913,7 @@ local function SetLockedBar(info, value)
 	if not value then
 		--unlock
 		if not moveBarDummy then
-			moveBarDummy = _G.CreateFrame("Frame",bar)
+			moveBarDummy = _G.CreateFrame("Frame",bar, _G.UIParent, BackdropTemplateMixin and "BackdropTemplate")
 			moveBarDummy:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background",
 												nil,
 												tile = true, tileSize = 16, edgeSize = 16,
@@ -1068,12 +1068,12 @@ local function GetObjectText(info)
 	local cleanName = info[#info]
 	local name = chocolateOptions[cleanName].desc
 	local dataobj = broker:GetDataObjectByName(name)
-	
+
 	local text = dataobj.text
 	if text and text == "" then
 		text = string.format("(%s)", dataobj.label)
 	end
-	
+
 	return text
 end
 
@@ -1728,7 +1728,7 @@ end
 
 local function GetModuleEnabled(info)
 	local name = info[#info-2]
-	return ChocolateBar.db.moduleOptions[name].enabled 
+	return ChocolateBar.db.moduleOptions[name].enabled
 end
 
 local function SetModuleEnabled(info, value)

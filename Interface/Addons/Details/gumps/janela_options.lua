@@ -460,7 +460,7 @@ function _detalhes:OpenOptionsWindow (instance, no_reopen, section)
 		
 		--
 		
-		local f = CreateFrame ("frame", "DetailsDisable3D", UIParent)
+		local f = CreateFrame ("frame", "DetailsDisable3D", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		tinsert (UISpecialFrames, "DetailsDisable3D")
 		f:SetFrameStrata ("BACKGROUND")
 		f:SetFrameLevel (0)
@@ -747,7 +747,7 @@ local menus2 = {
 		
 		--> menu anchor textures
 		
-		local menu_frame = CreateFrame("frame", "DetailsOptionsWindowMenuAnchor", window.widget)
+		local menu_frame = CreateFrame("frame", "DetailsOptionsWindowMenuAnchor", window.widget, BackdropTemplateMixin and "BackdropTemplate")
 		menu_frame:SetPoint ("TopLeft", window.widget, "TopLeft", 0, -90)
 		menu_frame:SetSize (1, 1)
 		
@@ -921,7 +921,7 @@ local menus2 = {
 		
 		
 		function window:create_box_no_scroll (n)
-			local container = CreateFrame ("Frame", "DetailsOptionsWindow" .. n, window.widget)
+			local container = CreateFrame ("Frame", "DetailsOptionsWindow" .. n, window.widget, BackdropTemplateMixin and "BackdropTemplate")
 
 			container:SetScript ("OnMouseDown", function()
 				if (not window.widget.isMoving) then
@@ -965,8 +965,8 @@ local menus2 = {
 		
 		
 		function window:create_box (n)
-			local container_window = CreateFrame ("ScrollFrame", "Details_Options_ContainerScroll" .. n, window.widget)
-			local container_slave = CreateFrame ("Frame", "DetailsOptionsWindow" .. n, container_window)
+			local container_window = CreateFrame ("ScrollFrame", "Details_Options_ContainerScroll" .. n, window.widget, BackdropTemplateMixin and "BackdropTemplate")
+			local container_slave = CreateFrame ("Frame", "DetailsOptionsWindow" .. n, container_window, BackdropTemplateMixin and "BackdropTemplate")
 
 			container_slave:SetScript ("OnMouseDown", function()
 				if (not window.widget.isMoving) then
@@ -1119,7 +1119,7 @@ local menus2 = {
 		end
 		
 		function window:create_line_background (frameX, label, parent)
-			local f = CreateFrame ("frame", nil, frameX)
+			local f = CreateFrame ("frame", nil, frameX, BackdropTemplateMixin and "BackdropTemplate")
 			f:SetPoint ("left", label.widget or label, "left", -2, 0)
 			f:SetSize (260, 16)
 			f:SetScript ("OnEnter", background_on_enter)
@@ -1209,7 +1209,7 @@ local menus2 = {
 		end
 		
 		function window:create_line_background2 (frameX, label, parent, icon, is_button1, is_button2)
-			local f = CreateFrame ("frame", nil, frameX)
+			local f = CreateFrame ("frame", nil, frameX, BackdropTemplateMixin and "BackdropTemplate")
 			f:SetPoint ("left", label.widget or label, "left", -2, 0)
 			f:SetSize (260, 16)
 			f.is_button1 = is_button1
@@ -1359,7 +1359,7 @@ local menus2 = {
 			local window_widget = window.widget
 		
 			--> title bar
-			local titlebar = CreateFrame ("frame", window:GetName() .. "OptionsTitleBar", window_widget)
+			local titlebar = CreateFrame ("frame", window:GetName() .. "OptionsTitleBar", window_widget, BackdropTemplateMixin and "BackdropTemplate")
 			titlebar:SetPoint ("topleft", window_widget, "topleft", 2, -3)
 			titlebar:SetPoint ("topright", window_widget, "topright", -2, -3)
 			titlebar:SetHeight (20)
@@ -2640,7 +2640,7 @@ function window:CreateFrame17()
 		frame17.AutoHideOptions = {}
 
 		for id, i in ipairs(optionsOrder) do
-			local line = _G.CreateFrame("frame", nil, frame17)
+			local line = _G.CreateFrame("frame", nil, frame17, BackdropTemplateMixin and "BackdropTemplate")
 			line:SetSize(300, 22)
 			line:SetPoint("topleft", frame17, "topleft", window.right_start_at, yyy + ((id) * -23) + 4)
 			_G.DetailsFramework:ApplyStandardBackdrop(line)
@@ -4955,14 +4955,14 @@ function window:CreateFrame13()
 		local current_profile_label2 = g:NewLabel (frame13, _, "$parentCurrentProfileLabel2", "currentProfileLabel2",  "", "GameFontNormal")
 		current_profile_label2:SetPoint ("left", current_profile_label, "right", 3, 0)
 		
-		local info_holder_frame = CreateFrame ("frame", nil, frame13.widget or frame13)
+		local info_holder_frame = CreateFrame ("frame", nil, frame13.widget or frame13, BackdropTemplateMixin and "BackdropTemplate")
 		info_holder_frame:SetPoint ("topleft", current_profile_label.widget, "topleft")
 		info_holder_frame:SetPoint ("bottomright", current_profile_label2.widget, "bottomright")
 		
 		window:CreateLineBackground2 (frame13, info_holder_frame, current_profile_label.widget, Loc ["STRING_OPTIONS_PROFILES_CURRENT_DESC"])
 	
 	--> exclamation warning about an exception on this character for use profile on all characters
-		local exclamation_frame = CreateFrame ("frame", nil, frame13)
+		local exclamation_frame = CreateFrame ("frame", nil, frame13, BackdropTemplateMixin and "BackdropTemplate")
 		exclamation_frame:SetSize (16, 16)
 		local exclamation_frame_texture = exclamation_frame:CreateTexture (nil, "overlay")
 		exclamation_frame_texture:SetTexture ([[Interface\DialogFrame\UI-Dialog-Icon-AlertNew]])
@@ -8116,7 +8116,7 @@ function window:CreateFrame6()
 				end
 			end
 			--hard instances reset
-			_detalhes:InstanciaCallFunction (_detalhes.gump.Fade, "in", nil, "barras")
+			_detalhes:InstanciaCallFunction (_detalhes.Details.FadeHandler.Fader, "in", nil, "barras")
 			_detalhes:InstanciaCallFunction (_detalhes.AtualizaSegmentos) -- atualiza o instancia.showing para as novas tabelas criadas
 			_detalhes:InstanciaCallFunction (_detalhes.AtualizaSoloMode_AfertReset) -- verifica se precisa zerar as tabela da janela solo mode
 			_detalhes:InstanciaCallFunction (_detalhes.ResetaGump) --_detalhes:ResetaGump ("de todas as instancias")
@@ -9715,7 +9715,7 @@ function window:CreateFrame9()
 		local load_image = function()
 			if (not DetailsLoadWallpaperImage) then
 				
-				local f = CreateFrame ("frame", "DetailsLoadWallpaperImage", UIParent)
+				local f = CreateFrame ("frame", "DetailsLoadWallpaperImage", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 				f:SetPoint ("center", UIParent, "center")
 				f:SetFrameStrata ("FULLSCREEN")
 				f:SetSize (512, 150)
@@ -10642,7 +10642,7 @@ function window:CreateFrame11()
 		
 		g:NewButton (frame11, _, "$parentCooldownIgnoreButton", "CooldownIgnoreButton", window.buttons_width, 18, function()
 			if (not DetailsAnnounceSelectCooldownIgnored) then
-				DetailsAnnounceSelectCooldownIgnored = CreateFrame ("frame", "DetailsAnnounceSelectCooldownIgnored", UIParent)
+				DetailsAnnounceSelectCooldownIgnored = CreateFrame ("frame", "DetailsAnnounceSelectCooldownIgnored", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 				local f = DetailsAnnounceSelectCooldownIgnored
 				f:SetSize (250, 400)
 				f:SetPoint ("center", UIParent, "center", 0, 0)
@@ -11038,7 +11038,7 @@ function window:CreateFrame12()
 	local allplugins_toolbar = _detalhes.ToolBar.NameTable
 	for absName, pluginObject in pairs (allplugins_toolbar) do 
 	
-		local bframe = CreateFrame ("frame", "OptionsPluginToolbarBG", frame4)
+		local bframe = CreateFrame ("frame", "OptionsPluginToolbarBG", frame4, BackdropTemplateMixin and "BackdropTemplate")
 		bframe:SetSize (640, 20)
 		bframe:SetPoint ("topleft", frame4, "topleft", 10, y)
 		bframe:SetBackdrop ({bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", tile = true, tileSize = 16, insets = {left = 1, right = 1, top = 0, bottom = 1}})
@@ -11123,7 +11123,7 @@ function window:CreateFrame12()
 	local allplugins_raid = _detalhes.RaidTables.NameTable
 	for absName, pluginObject in pairs (allplugins_raid) do 
 
-		local bframe = CreateFrame ("frame", "OptionsPluginRaidBG", frame4)
+		local bframe = CreateFrame ("frame", "OptionsPluginRaidBG", frame4, BackdropTemplateMixin and "BackdropTemplate")
 		bframe:SetSize (640, 20)
 		bframe:SetPoint ("topleft", frame4, "topleft", 10, y)
 		bframe:SetBackdrop ({bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", tile = true, tileSize = 16, insets = {left = 1, right = 1, top = 0, bottom = 1}})
@@ -11213,7 +11213,7 @@ function window:CreateFrame12()
 	local allplugins_solo = _detalhes.SoloTables.NameTable
 	for absName, pluginObject in pairs (allplugins_solo) do 
 	
-		local bframe = CreateFrame ("frame", "OptionsPluginSoloBG", frame4)
+		local bframe = CreateFrame ("frame", "OptionsPluginSoloBG", frame4, BackdropTemplateMixin and "BackdropTemplate")
 		bframe:SetSize (640, 20)
 		bframe:SetPoint ("topleft", frame4, "topleft", 10, y)
 		bframe:SetBackdrop ({bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", tile = true, tileSize = 16, insets = {left = 1, right = 1, top = 0, bottom = 1}})
@@ -11276,7 +11276,7 @@ end
 		window.IsLoading = true
 
 		if (not _detalhes.LoadingOptionsPanelFrame) then
-			_detalhes.LoadingOptionsPanelFrame = CreateFrame ("frame", "LoadingOptionsPanelFrame", UIParent)
+			_detalhes.LoadingOptionsPanelFrame = CreateFrame ("frame", "LoadingOptionsPanelFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 			_detalhes.LoadingOptionsPanelFrame:SetSize (390, 75)
 			_detalhes.LoadingOptionsPanelFrame:SetPoint ("center")
 			_detalhes.LoadingOptionsPanelFrame:SetFrameStrata ("TOOLTIP")
@@ -11539,7 +11539,7 @@ end --> if not window
 		if (skin_object.skin_options and not skin_object.options_created) then
 			skin_object.options_created = true
 
-			local f = CreateFrame ("frame", "DetailsSkinOptions" .. skin_name_formated, frame3)
+			local f = CreateFrame ("frame", "DetailsSkinOptions" .. skin_name_formated, frame3, BackdropTemplateMixin and "BackdropTemplate")
 			frame3.ExtraOptions [skin_name_formated] = f
 			f:SetPoint ("topleft", frame3, "topleft", window.right_start_at, window.top_start_at + (25 * -1))
 			f:SetPoint ("topleft", frame3.SkinExtraOptionsAnchor.widget, "bottomleft", 0, -10)

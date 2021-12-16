@@ -44,8 +44,8 @@ else
 end
 
 GameTooltipStatusBar:SetHeight(7)
-GameTooltipStatusBar:SetBackdrop({bgFile = [[Interface\Buttons\WHITE8x8]]})
-GameTooltipStatusBar:SetBackdropColor(0, 1, 0, 0.3)
+-- GameTooltipStatusBar:SetBackdrop({bgFile = [[Interface\Buttons\WHITE8x8]]})
+-- GameTooltipStatusBar:SetBackdropColor(0, 1, 0, 0.3)
 
 local function ApplyTooltipStyle(self)
     if not self then
@@ -74,10 +74,10 @@ local function ApplyTooltipStyle(self)
     end
 
     if beautyBorderLoaded then
-        self:SetBackdrop({
-            bgFile = nil,
-            edgeFile = nil,
-        })
+        -- self:SetBackdrop({
+        --     bgFile = nil,
+        --     edgeFile = nil,
+        -- })
 
         if not self:HasBeautyBorder() then
             self:CreateBeautyBorder(12)
@@ -117,7 +117,7 @@ for _, tooltip in pairs({
     ApplyTooltipStyle(tooltip)
 end
 
-hooksecurefunc("GameTooltip_SetBackdropStyle", ApplyTooltipStyle)
+-- hooksecurefunc("GameTooltip_SetBackdropStyle", ApplyTooltipStyle)
 
     -- Itemquaility border, we use our beautycase functions
 
@@ -231,7 +231,7 @@ local function SetHealthBarColor(unit)
     end
 
     GameTooltipStatusBar:SetStatusBarColor(r, g, b)
-    GameTooltipStatusBar:SetBackdropColor(r, g, b, 0.3)
+    -- GameTooltipStatusBar:SetBackdropColor(r, g, b, 0.3)
 end
 
 local function GetUnitRaidIcon(unit)
@@ -399,10 +399,10 @@ GameTooltip:HookScript("OnTooltipSetUnit", function(self, ...)
             -- Dead or ghost recoloring
 
         if UnitIsDead(unit) or UnitIsGhost(unit) then
-            GameTooltipStatusBar:SetBackdropColor(0.5, 0.5, 0.5, 0.3)
+            -- GameTooltipStatusBar:SetBackdropColor(0.5, 0.5, 0.5, 0.3)
         else
             if not cfg.healthbar.customColor.apply and not cfg.healthbar.reactionColoring then
-                GameTooltipStatusBar:SetBackdropColor(27/255, 243/255, 27/255, 0.3)
+                -- GameTooltipStatusBar:SetBackdropColor(27/255, 243/255, 27/255, 0.3)
             else
                 SetHealthBarColor(unit)
             end
@@ -414,7 +414,7 @@ GameTooltip:HookScript("OnTooltipCleared", function(self)
     GameTooltipStatusBar:ClearAllPoints()
     GameTooltipStatusBar:SetPoint("BOTTOMLEFT", self, "TOPLEFT", 0.5, 3)
     GameTooltipStatusBar:SetPoint("BOTTOMRIGHT", self, "TOPRIGHT", -1, 3)
-    GameTooltipStatusBar:SetBackdropColor(0, 1, 0, 0.3)
+    -- GameTooltipStatusBar:SetBackdropColor(0, 1, 0, 0.3)
 
     if (cfg.reactionBorderColor and self.beautyBorder) then
         self:SetBeautyBorderTexture("default")
@@ -440,7 +440,7 @@ local function CreateAnchor()
     anchorFrame:SetMovable(true)
     anchorFrame:SetClampedToScreen(true)
     anchorFrame:SetUserPlaced(true)
-    anchorFrame:SetBackdrop({bgFile=[[Interface\MINIMAP\TooltipBackdrop-Background]],})
+    -- anchorFrame:SetBackdrop({bgFile=[[Interface\MINIMAP\TooltipBackdrop-Background]],})
     anchorFrame:EnableMouse(true)
     anchorFrame:RegisterForDrag("LeftButton")
     anchorFrame:Hide()

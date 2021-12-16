@@ -137,7 +137,7 @@
 	end
 	
 	function _detalhes:InitializeCustomDisplayWindow()
-		local DetailsCustomPanel = CreateFrame ("frame", "DetailsCustomPanel", UIParent)
+		local DetailsCustomPanel = CreateFrame ("frame", "DetailsCustomPanel", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		DetailsCustomPanel.Frame = DetailsCustomPanel
 		DetailsCustomPanel.__name = "Custom Displays"
 		DetailsCustomPanel.real_name = "DETAILS_CUSTOMDISPLAY"
@@ -162,7 +162,7 @@
 			DetailsCustomPanel.Initialized = true
 	
 			--> main frame
-			local custom_window = DetailsCustomPanel or _CreateFrame ("frame", "DetailsCustomPanel", UIParent)
+			local custom_window = DetailsCustomPanel or _CreateFrame ("frame", "DetailsCustomPanel", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 			local f = custom_window
 			
 			custom_window:SetPoint ("center", UIParent, "center")
@@ -195,7 +195,7 @@
 
 			
 			--> menu title bar
-				local titlebar = CreateFrame ("frame", nil, f)
+				local titlebar = CreateFrame ("frame", nil, f, BackdropTemplateMixin and "BackdropTemplate")
 				titlebar:SetPoint ("topleft", f, "topleft", 2, -3)
 				titlebar:SetPoint ("topright", f, "topright", -2, -3)
 				titlebar:SetHeight (20)
@@ -209,7 +209,7 @@
 				titleLabel:SetPoint ("top", titlebar , "top", 0, -4)
 				
 			--> close button
-				f.Close = CreateFrame ("button", "$parentCloseButton", f)
+				f.Close = CreateFrame ("button", "$parentCloseButton", f, BackdropTemplateMixin and "BackdropTemplate")
 				f.Close:SetPoint ("right", titlebar, "right", -2, 0)
 				f.Close:SetSize (16, 16)
 				f.Close:SetNormalTexture (_detalhes.gump.folder .. "icons")
@@ -735,7 +735,7 @@
 			--> left menu
 			custom_window.menu = {}
 			local menu_start = -50
-			local menu_up_frame = _CreateFrame ("frame", nil, custom_window)
+			local menu_up_frame = _CreateFrame ("frame", nil, custom_window, BackdropTemplateMixin and "BackdropTemplate")
 			menu_up_frame:SetFrameLevel (custom_window:GetFrameLevel()+2)
 			
 			local onenter = function (self)
@@ -941,7 +941,7 @@
 			}
 			
 			--> create box
-			local attribute_box = _CreateFrame ("frame", nil, custom_window)
+			local attribute_box = _CreateFrame ("frame", nil, custom_window, BackdropTemplateMixin and "BackdropTemplate")
 			attribute_box:SetPoint ("topleft", custom_window, "topleft", 200, -60)
 			attribute_box:SetSize (180, 260)
 			attribute_box:Hide()
@@ -984,7 +984,7 @@
 			
 				if (attributes [i]) then
 			
-					local button = _CreateFrame ("button", "DetailsCustomPanelAttributeMenu" .. i, attribute_box)
+					local button = _CreateFrame ("button", "DetailsCustomPanelAttributeMenu" .. i, attribute_box, BackdropTemplateMixin and "BackdropTemplate")
 					button:SetPoint ("topleft", attribute_box, "topleft", 2, ((i-1)*23*-1) + (-26))
 					button:SetPoint ("topright", attribute_box, "topright", 2, ((i-1)*23*-1) + (-26))
 					button:SetHeight (20)
@@ -1018,7 +1018,7 @@
 			end
 			
 			--> create box 0, holds the name, author, desc and icon
-			local box0 = _CreateFrame ("frame", "DetailsCustomPanelBox0", custom_window)
+			local box0 = _CreateFrame ("frame", "DetailsCustomPanelBox0", custom_window, BackdropTemplateMixin and "BackdropTemplate")
 			custom_window.box0 = box0
 			box0:SetSize (450, 360)
 
@@ -1088,7 +1088,7 @@
 				accept_button:SetFrameLevel (500)
 			
 			--> create box type 1
-				local box1 = _CreateFrame ("frame", "DetailsCustomPanelBox1", custom_window)
+				local box1 = _CreateFrame ("frame", "DetailsCustomPanelBox1", custom_window, BackdropTemplateMixin and "BackdropTemplate")
 				custom_window.box1 = box1
 				box1:SetSize (450, 180)
 				box1:SetPoint ("topleft", icon_label.widget, "bottomleft", -10, -20)
@@ -1125,7 +1125,7 @@
 					source_field:Disable()
 					custom_window.source_field = source_field
 					
-					local adds_boss = CreateFrame ("frame", nil, box1)
+					local adds_boss = CreateFrame ("frame", nil, box1, BackdropTemplateMixin and "BackdropTemplate")
 					adds_boss:SetPoint ("left", source_dropdown.widget, "right", 2, 0)
 					adds_boss:SetSize (20, 20)
 					
@@ -1140,7 +1140,7 @@
 					actorsFrame:SetPoint ("topleft", custom_window, "topright", 5, -60)
 					actorsFrame:Hide()
 					
-					local modelFrame = _CreateFrame ("playermodel", "DetailsCustomActorsFrame2Model", custom_window)
+					local modelFrame = _CreateFrame ("playermodel", "DetailsCustomActorsFrame2Model", custom_window, BackdropTemplateMixin and "BackdropTemplate")
 					modelFrame:SetSize (138, 261)
 					modelFrame:SetPoint ("topright", actorsFrame.widget, "topleft", -15, -8)
 					modelFrame:Hide()
@@ -1348,7 +1348,7 @@
 					custom_window.target_field = target_field
 					--
 					
-					local adds_boss = CreateFrame ("frame", nil, box1)
+					local adds_boss = CreateFrame ("frame", nil, box1, BackdropTemplateMixin and "BackdropTemplate")
 					adds_boss:SetPoint ("left", target_dropdown.widget, "right", 2, 0)
 					adds_boss:SetSize (20, 20)
 					local adds_boss_image = adds_boss:CreateTexture (nil, "overlay")
@@ -1362,7 +1362,7 @@
 					actorsFrame:SetPoint ("topleft", custom_window, "topright", 5, -60)
 					actorsFrame:Hide()
 					
-					local modelFrame = _CreateFrame ("playermodel", "DetailsCustomActorsFrameModel", custom_window)
+					local modelFrame = _CreateFrame ("playermodel", "DetailsCustomActorsFrameModel", custom_window, BackdropTemplateMixin and "BackdropTemplate")
 					modelFrame:SetSize (138, 261)
 					modelFrame:SetPoint ("topright", actorsFrame.widget, "topleft", -15, -8)
 					modelFrame:Hide()
@@ -1530,7 +1530,7 @@
 					spellid_entry.tooltip = Loc ["STRING_CUSTOM_SPELLID_DESC"]
 					custom_window.spellid_entry = spellid_entry
 			
-					local spell_id_boss = CreateFrame ("frame", nil, box1)
+					local spell_id_boss = CreateFrame ("frame", nil, box1, BackdropTemplateMixin and "BackdropTemplate")
 					spell_id_boss:SetPoint ("left", spellid_entry.widget, "right", 2, 0)
 					spell_id_boss:SetSize (20, 20)
 					local spell_id_boss_image = spell_id_boss:CreateTexture (nil, "overlay")
@@ -1686,7 +1686,7 @@
 			--select spell
 			
 			--> create box type 2
-				local box2 = _CreateFrame ("frame", "DetailsCustomPanelBox2", custom_window)
+				local box2 = _CreateFrame ("frame", "DetailsCustomPanelBox2", custom_window, BackdropTemplateMixin and "BackdropTemplate")
 				custom_window.box2 = box2
 				box2:SetSize (450, 180)
 				box2:SetPoint ("topleft", icon_label.widget, "bottomleft", -10, -20)
@@ -1824,7 +1824,7 @@
 					return true
 				end
 				
-				local supportFrame = CreateFrame ("frame", "$parentSupportFrame", custom_window)
+				local supportFrame = CreateFrame ("frame", "$parentSupportFrame", custom_window, BackdropTemplateMixin and "BackdropTemplate")
 				supportFrame:SetFrameLevel (500)
 				
 				local expand = gump:NewButton (supportFrame, nil, "$parentExpand", "expandbutton", CONST_EDITBOX_BUTTON_WIDTH, CONST_EDITBOX_BUTTON_HEIGHT, expand_func, 4, nil, nil, "Expand")

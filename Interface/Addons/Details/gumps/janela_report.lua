@@ -130,7 +130,7 @@ local _UIParent = UIParent --> wow api locals
 		_detalhes.janela_report.ativa = true
 		_detalhes.janela_report.enviar:SetScript ("OnClick", function() func (_G ["Details_Report_CB_1"]:GetChecked(), _G ["Details_Report_CB_2"]:GetChecked(), _detalhes.report_lines) end)
 		
-		gump:Fade (_detalhes.janela_report, 0)
+		Details.FadeHandler.Fader (_detalhes.janela_report, 0)
 		
 		return true
 	end
@@ -138,7 +138,7 @@ local _UIParent = UIParent --> wow api locals
 	function _detalhes:SendReportTextWindow (lines)
 	
 		if (not _detalhes.copypasteframe) then
-			_detalhes.copypasteframe = CreateFrame ("frame", "DetailsCopyPasteFrame2", UIParent)
+			_detalhes.copypasteframe = CreateFrame ("frame", "DetailsCopyPasteFrame2", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 			_detalhes.copypasteframe:SetFrameStrata ("TOOLTIP")
 			_detalhes.copypasteframe:SetPoint ("CENTER", UIParent, "CENTER", 0, 50)
 			tinsert (UISpecialFrames, "DetailsCopyPasteFrame2")
@@ -148,7 +148,7 @@ local _UIParent = UIParent --> wow api locals
 			DetailsFramework:ApplyStandardBackdrop (_detalhes.copypasteframe)
 			DetailsFramework:CreateTitleBar (_detalhes.copypasteframe, "Export Text")
 			
-			local editBox = CreateFrame ("editbox", nil, _detalhes.copypasteframe)
+			local editBox = CreateFrame ("editbox", nil, _detalhes.copypasteframe, BackdropTemplateMixin and "BackdropTemplate")
 			editBox:SetPoint ("topleft", _detalhes.copypasteframe, "topleft", 2, -26)
 			editBox:SetPoint ("bottomright", _detalhes.copypasteframe, "bottomright", -2, 2)
 			editBox:SetAutoFocus (false)
@@ -233,7 +233,7 @@ local _UIParent = UIParent --> wow api locals
 		end
 		
 		_detalhes.janela_report.ativa = true
-		gump:Fade (_detalhes.janela_report, 0)
+		Details.FadeHandler.Fader (_detalhes.janela_report, 0)
 	end
 	
 --> build report frame gump -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -417,7 +417,7 @@ local function cria_drop_down (este_gump)
 		este_gump.linhas_amt:SetPoint ("bottomleft", este_gump, "bottomleft", 58, 12)
 		_detalhes:SetFontSize (este_gump.linhas_amt, 10)
 		
-		local slider = _CreateFrame ("Slider", "Details_Report_Slider", este_gump)
+		local slider = _CreateFrame ("Slider", "Details_Report_Slider", este_gump, BackdropTemplateMixin and "BackdropTemplate")
 		este_gump.slider = slider
 		slider:SetPoint ("bottomleft", este_gump, "bottomleft", 58, -7)
 		
@@ -486,7 +486,7 @@ local function cria_drop_down (este_gump)
 		_detalhes:SetFontSize (este_gump.wisp_who, 10)
 
 		--editbox
-		local editbox = _CreateFrame ("EditBox", nil, este_gump)
+		local editbox = _CreateFrame ("EditBox", nil, este_gump, BackdropTemplateMixin and "BackdropTemplate")
 		este_gump.editbox = editbox
 		
 		editbox:SetAutoFocus (false)
@@ -583,14 +583,14 @@ local function cria_drop_down (este_gump)
 --> both check buttons
 		
 	function cria_check_buttons (este_gump)
-		local checkbox = _CreateFrame ("CheckButton", "Details_Report_CB_1", este_gump, "ChatConfigCheckButtonTemplate")
+		local checkbox = _CreateFrame ("CheckButton", "Details_Report_CB_1", este_gump, "ChatConfigCheckButtonTemplate, BackdropTemplate")
 		checkbox:SetPoint ("topleft", este_gump.wisp_who, "bottomleft", -25, -4)
 		_G [checkbox:GetName().."Text"]:SetText (Loc ["STRING_REPORTFRAME_CURRENT"])
 		_detalhes:SetFontSize (_G [checkbox:GetName().."Text"], 10)
 		checkbox.tooltip = Loc ["STRING_REPORTFRAME_CURRENTINFO"]
 		checkbox:SetHitRectInsets (0, -35, 0, 0)
 		
-		local checkbox2 = _CreateFrame ("CheckButton", "Details_Report_CB_2", este_gump, "ChatConfigCheckButtonTemplate")
+		local checkbox2 = _CreateFrame ("CheckButton", "Details_Report_CB_2", este_gump, "ChatConfigCheckButtonTemplate, BackdropTemplate")
 		checkbox2:SetPoint ("topleft", este_gump.wisp_who, "bottomleft", 35, -4)
 		_G [checkbox2:GetName().."Text"]:SetText (Loc ["STRING_REPORTFRAME_REVERT"])
 		_detalhes:SetFontSize (_G [checkbox2:GetName().."Text"], 10)
@@ -717,7 +717,7 @@ local function cria_drop_down (este_gump)
 		if (not window.elvui_widgets) then
 			window.elvui_widgets = {}
 			
-			local titlebar = CreateFrame ("frame", window:GetName() .. "ElvUITitleBar", window)
+			local titlebar = CreateFrame ("frame", window:GetName() .. "ElvUITitleBar", window, BackdropTemplateMixin and "BackdropTemplate")
 			titlebar:SetPoint ("topleft", window, "topleft", 2, -3)
 			titlebar:SetPoint ("topright", window, "topright", -2, -3)
 			titlebar:SetHeight (20)
@@ -915,7 +915,7 @@ local function cria_drop_down (este_gump)
 	function gump:CriaJanelaReport()
 
 		--> window
-			local window = _CreateFrame ("Frame", "DetailsReportWindow", _UIParent)
+			local window = _CreateFrame ("Frame", "DetailsReportWindow", _UIParent, BackdropTemplateMixin and "BackdropTemplate")
 			tinsert (UISpecialFrames, "DetailsReportWindow")
 			window:SetPoint ("CENTER", UIParent, "CENTER")
 			window:SetFrameStrata ("DIALOG")
@@ -993,7 +993,7 @@ local function cria_drop_down (este_gump)
 			window.last_reported_label:SetText (Loc ["STRING_REPORTHISTORY"] .. ":") --this string could be removed from localization
 			
 			for i = 1, window.max_last_buttons do
-				local b = CreateFrame ("button", "DetailsReportWindowRRB" .. i, window)
+				local b = CreateFrame ("button", "DetailsReportWindowRRB" .. i, window, BackdropTemplateMixin and "BackdropTemplate")
 				local icon = b:CreateTexture (nil, "overlay")
 				icon:SetPoint ("left", b, "left")
 				icon:SetSize (16, 16)
@@ -1065,9 +1065,9 @@ local function cria_drop_down (este_gump)
 			end)
 	
 		--> close button
-		window.fechar = CreateFrame ("Button", nil, window, "UIPanelCloseButton")
+		window.fechar = CreateFrame ("Button", nil, window, "UIPanelCloseButton, BackdropTemplate")
 		window.fechar:SetScript ("OnClick", function()
-			gump:Fade (window, 1)
+			Details.FadeHandler.Fader (window, 1)
 			_detalhes.janela_report.ativa = false
 		end)	
 
@@ -1081,13 +1081,13 @@ local function cria_drop_down (este_gump)
 		cria_wisper_field (window)
 		cria_check_buttons (window)
 
-		window.enviar = _CreateFrame ("Button", nil, window, "OptionsButtonTemplate")
+		window.enviar = _CreateFrame ("Button", nil, window, "OptionsButtonTemplate, BackdropTemplate")
 		window.enviar:SetPoint ("topleft", window.editbox, "topleft", 61, -19)
 		window.enviar:SetWidth (60)
 		window.enviar:SetHeight (15)
 		window.enviar:SetText (Loc ["STRING_REPORTFRAME_SEND"])
 
-		gump:Fade (window, 1)
+		Details.FadeHandler.Fader (window, 1)
 		gump:CreateFlashAnimation (window)
 		
 		--apply the current skin

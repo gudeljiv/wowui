@@ -6,42 +6,28 @@ Bagnon_Sets = {
 	},
 	["fridgeColor"] = {
 	},
-	["displayCraft"] = false,
-	["engineerColor"] = {
-	},
 	["inscribeColor"] = {
 	},
+	["engineerColor"] = {
+	},
+	["displayCraft"] = false,
 	["herbColor"] = {
 	},
-	["glowUnusable"] = true,
-	["displayMail"] = false,
-	["displayBank"] = false,
 	["soulColor"] = {
 	},
+	["displayMail"] = false,
+	["glowPoor"] = false,
+	["glowUnusable"] = true,
 	["closeBank"] = false,
 	["glowQuest"] = true,
-	["displayAuction"] = false,
+	["normalColor"] = {
+	},
 	["quiverColor"] = {
 	},
 	["glowQuality"] = true,
 	["reagentColor"] = {
 	},
 	["gemColor"] = {
-	},
-	["enchantColor"] = {
-	},
-	["glowAlpha"] = 0.5,
-	["emptySlots"] = true,
-	["glowNew"] = false,
-	["normalColor"] = {
-	},
-	["profiles"] = {
-	},
-	["mineColor"] = {
-	},
-	["displayTrade"] = false,
-	["version"] = "9.0.4",
-	["keyColor"] = {
 	},
 	["global"] = {
 		["inventory"] = {
@@ -80,8 +66,8 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["y"] = 185.648727416992,
-			["x"] = -761.10498046875,
+			["y"] = 544.3875732421875,
+			["x"] = -216.73388671875,
 			["search"] = false,
 			["borderColor"] = {
 				1, -- [1]
@@ -183,7 +169,7 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
-			["point"] = "BOTTOMLEFT",
+			["point"] = "TOPRIGHT",
 			["hiddenBags"] = {
 			},
 			["color"] = {
@@ -204,17 +190,31 @@ Bagnon_Sets = {
 				1, -- [4]
 			},
 			["bagBreak"] = false,
-			["x"] = 678.43896484375,
+			["x"] = -665.8687744140625,
 			["search"] = false,
 			["broker"] = false,
-			["y"] = 353.781860351563,
+			["y"] = -315.9873046875,
 			["hiddenRules"] = {
 			},
 			["itemScale"] = 1,
 			["scale"] = 1,
 		},
 	},
+	["glowAlpha"] = 0.5,
+	["emptySlots"] = true,
+	["keyColor"] = {
+	},
+	["displayAuction"] = false,
+	["profiles"] = {
+	},
+	["mineColor"] = {
+	},
+	["displayTrade"] = false,
+	["version"] = "9.0.4",
+	["glowNew"] = false,
+	["enchantColor"] = {
+	},
 	["colorSlots"] = false,
-	["glowPoor"] = false,
+	["displayBank"] = false,
 	["displayScrapping"] = false,
 }

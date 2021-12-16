@@ -6,8 +6,11 @@ f:SetScript(
 	function(self, event, isInitialLogin, isReloadingUi)
 		if isInitialLogin or isReloadingUi then
 			if (IsAddOnLoaded("MonkeyQuest")) then
+				if not MonkeyQuestFrame.SetBackdrop then
+					Mixin(MonkeyQuestFrame, BackdropTemplateMixin)
+				end
 				MonkeyQuestFrame:ClearAllPoints()
-				MonkeyQuestFrame:SetPoint("TOPRIGHT", "CustomContainer_2", "TOPLEFT", -10, 0)
+				MonkeyQuestFrame:SetPoint("TOPRIGHT", "CustomContainer_2", "BOTTOMRIGHT", 0, -10)
 				MonkeyQuestFrame:CreateBeautyBorder(8)
 				MonkeyQuestFrame:SetBackdrop(
 					{
@@ -25,6 +28,9 @@ f:SetScript(
 				MonkeyQuestFrame.SetPoint = function()
 				end
 
+				if not MkQL_Main_Frame.SetBackdrop then
+					Mixin(MkQL_Main_Frame, BackdropTemplateMixin)
+				end
 				MkQL_Main_Frame:SetBackdrop(
 					{
 						bgFile = "Interface\\Buttons\\WHITE8x8",

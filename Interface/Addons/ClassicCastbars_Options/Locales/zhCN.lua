@@ -19,12 +19,14 @@ L["BORDERSHIELD_TOOLTIP"] = [=[施法无法被打断时，在施法条周围显�
 |cffffff00按住组合按键，像是 SHIFT 或 CTRL 键不放，再点一下 "开关测试模式" 按钮可以测试显示盾牌的施法条。|r]=]
 L["CAST_BORDER"] = "边框纹理"
 L["CAST_BORDER_TOOLTIP"] = "为施法条选择边框纹理."
+L["CAST_FILL_HEADER"] = "施法條填色"
 L["CAST_FONT"] = "施法条字体"
 L["CAST_FONT_TOOLTIP"] = "为法术名称和计时器文字选择字体类型."
 L["CAST_STATUSBAR"] = "施法条纹理"
 L["CAST_STATUSBAR_TOOLTIP"] = "为施法条/状态条选择纹理类型."
 L["CASTBAR"] = "施法条"
 L["CASTBAR_COLORS"] = "施法条颜色"
+L["CASTBAR_FONTS"] = "施法條文字"
 L["CASTBAR_ICON"] = "施法条图标"
 L["CASTBAR_SIZING"] = "施法条大小"
 L["CASTBAR_TEXTURE_FONT"] = "施法条纹理"
@@ -44,9 +46,6 @@ L["ICON_SIZE"] = "图标大小"
 L["ICON_SIZE_TOOLTIP"] = "为施法条图标设置大小."
 L["IGNORE_PARENT_ALPHA"] = "忽略上一层框架的透明度"
 L["IGNORE_PARENT_ALPHA_TOOLTIP"] = "忽略从施法条上一层框架所继承的透明度/alpha 数值"
-L["LSM_TEXTURE_NOTE"] = [=[
-
-备注: 如果您使用了第三方纹理/字体, 并且随后删除了它们, 那么为了确保插件能够正常工作, 您必须手动在此重置它们.]=]
 L["NAMEPLATE"] = "姓名板"
 L["PARTY"] = "小队"
 L["PER_CHARACTER"] = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t角色专用设定"
@@ -68,13 +67,8 @@ L["STATUS_UNINTERRUPTIBLE_COLOR"] = "选择无法打断颜色"
 L["TARGET"] = "目标"
 L["TEST"] = "切换测试模式"
 L["TEST_MODE_DRAG"] = "测试模式 - 拖动来调整施法条位置"
-L["TEST_PLATE_TOOLTIP"] = [=[在角色头顶显示测试施法条, 以便于您可以拖动来调整位置.
-注意: 您首先需要选择一个目标来让施法条显示出来, 才能看到测试施法条.
-]=]
-L["TEST_TARGET_TOOLTIP"] = [=[在目标框体上显示施法条, 以便于您可以拖动来调整位置.
-注意: 您需要首先选择一个目标, 才能看到测试施法条.
-]=]
 L["TEXT_COLOR"] = "文字颜色"
+L["TEXT_OUTLINE"] = "文字外框"
 L["TEXT_POINT"] = "文字对齐点"
 L["TEXT_POS_X"] = "文字X轴坐标"
 L["TEXT_POS_Y"] = "文字Y轴坐标"

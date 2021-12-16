@@ -1731,7 +1731,7 @@
 	-- text_size 72
 	
 	function _detalhes:InitializeAuraCreationWindow()
-		local DetailsAuraPanel = CreateFrame ("frame", "DetailsAuraPanel", UIParent)
+		local DetailsAuraPanel = CreateFrame ("frame", "DetailsAuraPanel", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		DetailsAuraPanel.Frame = DetailsAuraPanel
 		DetailsAuraPanel.__name = L["STRING_CREATEAURA"]
 		DetailsAuraPanel.real_name = "DETAILS_CREATEAURA"
@@ -1775,7 +1775,7 @@
 				end
 			end
 
-			local f = DetailsAuraPanel or CreateFrame ("frame", "DetailsAuraPanel", UIParent)
+			local f = DetailsAuraPanel or CreateFrame ("frame", "DetailsAuraPanel", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 			f:SetSize (800, 600)
 			f:SetPoint ("center", UIParent, "center", 0, 150)
 			f:SetFrameStrata ("DIALOG")
@@ -1810,7 +1810,7 @@
 			end)
 			
 			--titlebar
-			f.TitleBar = CreateFrame ("frame", "$parentTitleBar", f)
+			f.TitleBar = CreateFrame ("frame", "$parentTitleBar", f, BackdropTemplateMixin and "BackdropTemplate")
 			f.TitleBar:SetPoint ("topleft", f, "topleft", 2, -3)
 			f.TitleBar:SetPoint ("topright", f, "topright", -2, -3)
 			f.TitleBar:SetHeight (20)
@@ -1819,7 +1819,7 @@
 			f.TitleBar:SetBackdropBorderColor (0, 0, 0, 1)
 			
 			--close button
-			f.Close = CreateFrame ("button", "$parentCloseButton", f)
+			f.Close = CreateFrame ("button", "$parentCloseButton", f, BackdropTemplateMixin and "BackdropTemplate")
 			f.Close:SetPoint ("right", f.TitleBar, "right", -2, 0)
 			f.Close:SetSize (16, 16)
 			f.Close:SetNormalTexture (_detalhes.gump.folder .. "icons")
@@ -2702,7 +2702,7 @@
 		local current_table_dbm = {}
 		local current_table_bigwigs = {}
 	
-		local event_frame = CreateFrame ("frame", nil, UIParent)
+		local event_frame = CreateFrame ("frame", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		event_frame:SetScript ("OnEvent", function (self, event, ...)
 			if (event == "ENCOUNTER_START") then
 				local encounterID, encounterName, difficultyID, raidSize = select (1, ...)
@@ -3011,7 +3011,7 @@
 			end
 			
 			if (not _detalhes:GetTutorialCVar ("FORGE_TUTORIAL")) then
-				local tutorialFrame = CreateFrame ("frame", "$parentTutorialFrame", f)
+				local tutorialFrame = CreateFrame ("frame", "$parentTutorialFrame", f, BackdropTemplateMixin and "BackdropTemplate")
 				tutorialFrame:SetPoint ("center", f, "center")
 				tutorialFrame:SetFrameStrata ("DIALOG")
 				tutorialFrame:SetSize (400, 300)
@@ -3100,7 +3100,7 @@
 				desc = L["STRING_FORGE_BUTTON_PLAYERS_DESC"],
 				filters_widgets = function()
 					if (not DetailsForgeAllPlayersFilterPanel) then
-						local w = CreateFrame ("frame", "DetailsForgeAllPlayersFilterPanel", f)
+						local w = CreateFrame ("frame", "DetailsForgeAllPlayersFilterPanel", f, BackdropTemplateMixin and "BackdropTemplate")
 						w:SetSize (600, 20)
 						w:SetPoint ("topleft", f, "topleft", 164, -40)
 						--
@@ -3164,7 +3164,7 @@
 				desc = L["STRING_FORGE_BUTTON_PETS_DESC"],
 				filters_widgets = function()
 					if (not DetailsForgeAllPetsFilterPanel) then
-						local w = CreateFrame ("frame", "DetailsForgeAllPetsFilterPanel", f)
+						local w = CreateFrame ("frame", "DetailsForgeAllPetsFilterPanel", f, BackdropTemplateMixin and "BackdropTemplate")
 						w:SetSize (600, 20)
 						w:SetPoint ("topleft", f, "topleft", 164, -40)
 						--
@@ -3251,7 +3251,7 @@
 				desc = L["STRING_FORGE_BUTTON_ENEMIES_DESC"],
 				filters_widgets = function()
 					if (not DetailsForgeAllEnemiesFilterPanel) then
-						local w = CreateFrame ("frame", "DetailsForgeAllEnemiesFilterPanel", f)
+						local w = CreateFrame ("frame", "DetailsForgeAllEnemiesFilterPanel", f, BackdropTemplateMixin and "BackdropTemplate")
 						w:SetSize (600, 20)
 						w:SetPoint ("topleft", f, "topleft", 164, -40)
 						--
@@ -3337,7 +3337,7 @@
 				desc = L["STRING_FORGE_BUTTON_ALLSPELLS_DESC"],
 				filters_widgets = function()
 					if (not DetailsForgeAllSpellsFilterPanel) then
-						local w = CreateFrame ("frame", "DetailsForgeAllSpellsFilterPanel", f)
+						local w = CreateFrame ("frame", "DetailsForgeAllSpellsFilterPanel", f, BackdropTemplateMixin and "BackdropTemplate")
 						w:SetSize (600, 20)
 						w:SetPoint ("topleft", f, "topleft", 164, -40)
 						--
@@ -3465,7 +3465,7 @@
 				filters_widgets = function()
 					if (not DetailsForgeEncounterBossSpellsFilterPanel) then
 					
-						local w = CreateFrame ("frame", "DetailsForgeEncounterBossSpellsFilterPanel", f)
+						local w = CreateFrame ("frame", "DetailsForgeEncounterBossSpellsFilterPanel", f, BackdropTemplateMixin and "BackdropTemplate")
 						w:SetSize (600, 20)
 						w:SetPoint ("topleft", f, "topleft", 164, -40)
 						--
@@ -3612,7 +3612,7 @@
 				filters_widgets = function()
 					if (not DetailsForgeEncounterNpcIDsFilterPanel) then
 					
-						local w = CreateFrame ("frame", "DetailsForgeEncounterNpcIDsFilterPanel", f)
+						local w = CreateFrame ("frame", "DetailsForgeEncounterNpcIDsFilterPanel", f, BackdropTemplateMixin and "BackdropTemplate")
 						w:SetSize (600, 20)
 						w:SetPoint ("topleft", f, "topleft", 164, -40)
 						--npc name filter
@@ -3712,7 +3712,7 @@
 				desc = L["STRING_FORGE_BUTTON_DBMTIMERS_DESC"],
 				filters_widgets = function()
 					if (not DetailsForgeDBMBarsFilterPanel) then
-						local w = CreateFrame ("frame", "DetailsForgeDBMBarsFilterPanel", f)
+						local w = CreateFrame ("frame", "DetailsForgeDBMBarsFilterPanel", f, BackdropTemplateMixin and "BackdropTemplate")
 						w:SetSize (600, 20)
 						w:SetPoint ("topleft", f, "topleft", 164, -40)
 						--
@@ -3843,7 +3843,7 @@
 				desc = L["STRING_FORGE_BUTTON_BWTIMERS_DESC"],
 				filters_widgets = function()
 					if (not DetailsForgeBigWigsBarsFilterPanel) then
-						local w = CreateFrame ("frame", "DetailsForgeBigWigsBarsFilterPanel", f)
+						local w = CreateFrame ("frame", "DetailsForgeBigWigsBarsFilterPanel", f, BackdropTemplateMixin and "BackdropTemplate")
 						w:SetSize (600, 20)
 						w:SetPoint ("topleft", f, "topleft", 164, -40)
 						--
@@ -4100,7 +4100,7 @@ local on_deathrecap_line_leave = function (self)
 end
 
 local create_deathrecap_line = function (parent, n)
-	local line = CreateFrame ("frame", "DetailsDeathRecapLine" .. n, parent)
+	local line = CreateFrame ("frame", "DetailsDeathRecapLine" .. n, parent, BackdropTemplateMixin and "BackdropTemplate")
 	line:SetPoint ("topleft", parent, "topleft", 10, (-24 * n) - 17)
 	line:SetPoint ("topright", parent, "topright", -10, (-24 * n) - 17)
 	--line:SetBackdrop ({bgFile = [[Interface\AddOns\Details\images\background]], tile = true, tileSize = 16,
@@ -4335,7 +4335,7 @@ function _detalhes.OpenDetailsDeathRecap (segment, RecapID, fromChat)
 		DeathRecapFrame.Recap5:Hide()
 		
 		if (not Details.DeathRecap) then
-			Details.DeathRecap = CreateFrame ("frame", "DetailsDeathRecap", DeathRecapFrame)
+			Details.DeathRecap = CreateFrame ("frame", "DetailsDeathRecap", DeathRecapFrame, BackdropTemplateMixin and "BackdropTemplate")
 			Details.DeathRecap:SetAllPoints()
 			
 			DeathRecapFrame.Title:SetText (DeathRecapFrame.Title:GetText() .. " (by Details!)")
@@ -4349,7 +4349,7 @@ function _detalhes.OpenDetailsDeathRecap (segment, RecapID, fromChat)
 			--segments
 			Details.DeathRecap.Segments = {}
 			for i = 5, 1, -1 do
-				local segmentButton = CreateFrame ("button", "DetailsDeathRecapSegmentButton" .. i, Details.DeathRecap)
+				local segmentButton = CreateFrame ("button", "DetailsDeathRecapSegmentButton" .. i, Details.DeathRecap, BackdropTemplateMixin and "BackdropTemplate")
 				
 				segmentButton:SetSize (16, 20)
 				segmentButton:SetPoint ("topright", DeathRecapFrame, "topright", (-abs (i-6) * 22) - 10, -5)
@@ -4694,7 +4694,7 @@ end)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> plater integration
 
-local plater_integration_frame = CreateFrame ("frame", "DetailsPlaterFrame", UIParent)
+local plater_integration_frame = CreateFrame ("frame", "DetailsPlaterFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 plater_integration_frame.DamageTaken = {}
 
 --> aprox. 6 updates per second
@@ -4705,7 +4705,7 @@ local CONST_BUFFER_SIZE = 30
 PLATER_DPS_SAMPLE_SIZE = CONST_BUFFER_SIZE * CONST_REALTIME_UPDATE_TIME
 
 --> separate CLEU events from the Tick event for performance
-plater_integration_frame.OnTickFrame = CreateFrame ("frame", "DetailsPlaterFrameOnTicker", UIParent)
+plater_integration_frame.OnTickFrame = CreateFrame ("frame", "DetailsPlaterFrameOnTicker", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 
 --> on tick function
 plater_integration_frame.OnTickFrameFunc = function (self, deltaTime)
@@ -4870,7 +4870,7 @@ end
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> extra buttons at the death options (release, death recap)
 
-local detailsOnDeathMenu = CreateFrame ("frame", "DetailsOnDeathMenu", UIParent)
+local detailsOnDeathMenu = CreateFrame ("frame", "DetailsOnDeathMenu", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 detailsOnDeathMenu:SetHeight (30)
 detailsOnDeathMenu.Debug = false
 

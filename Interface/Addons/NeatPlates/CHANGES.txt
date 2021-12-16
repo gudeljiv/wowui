@@ -1,12 +1,12 @@
-lightweight tag 5b2687db73b246df910e391deac71b3532b7b1c2 1.13.2.12-Classic
-Author:	Luxocracy <luxor355@gmail.com>
-Date:	Wed Aug 28 07:50:55 2019 +0200
+lightweight tag e3136f6cef9f4f448edce6f6a6dd0918d4d5fd25 1.13.6.1
+Author:	Luxocracy <Luxocracy@users.noreply.github.com>
+Date:	Wed Apr 14 22:20:30 2021 +0200
 
-commit 5b2687db73b246df910e391deac71b3532b7b1c2
-Author: Luxocracy <luxor355@gmail.com>
-Date:   Wed Aug 28 07:50:55 2019 +0200
+commit e3136f6cef9f4f448edce6f6a6dd0918d4d5fd25
+Author: Luxocracy <Luxocracy@users.noreply.github.com>
+Date:   Wed Apr 14 22:20:30 2021 +0200
 
-    Added LibClassicDurations
+    Fix unit names not showing
     
-    - Moved over to using LibClassicDurations instead of the old method. This should allow for more auras to be tracked and solve some issues with locales
+    - Fix unit names not showing
 

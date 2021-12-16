@@ -6,7 +6,7 @@ function ItemRack.PeriodicQueueCheck()
 		return
 	end
 	if ItemRackUser.EnableQueues=="ON" then
-		for i,v in pairs(ItemRackUser.QueuesEnabled) do
+		for i,v in pairs(ItemRack.GetQueuesEnabled()) do
 			if v and v == true then
 				ItemRack.ProcessAutoQueue(i)
 			end
@@ -56,9 +56,9 @@ function ItemRack.ProcessAutoQueue(slot)
 		ItemRack.UpdateCombatQueue()
 	end
 
-	local list,rank = ItemRackUser.Queues[slot]
+	local list = ItemRack.GetQueues()[slot]
 
-	local candidate,bag,s
+	local candidate,bag
 	for i=1,#(list) do
 		candidate = string.match(list[i],"(%d+)") --FIXME: not sure what list[i] is; it might simply be cleaning up some sort of slot number to make sure it is numeric, OR it might actually be an itemID... if it is the latter then this (conversion to baseID) should be handled by either ItemRack.GetIRString(list[i],true) if list[i] is an ItemRack-style ID or ItemRack.GetIRString(list[i],true,true) if list[i] is a regular ItemLink/ItemString, MOST things point to it being an ItemRack-style ID, but I do not want to mess anything up if this is in fact just a regular number, so I'll leave the line as it is
 		if list[i]==0 then
@@ -69,7 +69,7 @@ function ItemRack.ProcessAutoQueue(slot)
 			if not ready or enable==0 or (ItemRackItems[candidate] and ItemRackItems[candidate].priority) then
 				if ItemRack.ItemNearReady(candidate) then
 					if GetItemCount(candidate)>0 and not IsEquippedItem(candidate) then
-						_,bag,s = ItemRack.FindItem(list[i])
+						_,bag = ItemRack.FindItem(list[i])
 						if bag then
 							if ItemRack.CombatQueue[slot]~=list[i] then
 								ItemRack.EquipItemByID(list[i],slot)
@@ -92,14 +92,14 @@ end
 
 function ItemRack.SetQueue(slot,newQueue)
 	if not newQueue then
-		ItemRackUser.QueuesEnabled[slot] = nil
+		ItemRack.GetQueuesEnabled()[slot] = nil
 	elseif type(newQueue)=="table" then
-		ItemRackUser.Queues[slot] = ItemRackUser.Queues[slot] or {}
-		for i in pairs(ItemRackUser.Queues[slot]) do
-			ItemRackUser.Queues[slot][i] = nil
+		ItemRack.GetQueues()[slot] = ItemRack.GetQueues()[slot] or {}
+		for i in pairs(ItemRack.GetQueues()[slot]) do
+			ItemRack.GetQueues()[slot][i] = nil
 		end
 		for i=1,#(newQueue) do
-			table.insert(ItemRackUser.Queues[slot],newQueue[i])
+			table.insert(ItemRack.GetQueues()[slot],newQueue[i])
 		end
 		if ItemRackOptFrame:IsVisible() then
 			if ItemRackOptSubFrame7:IsVisible() and ItemRackOpt.SelectedSlot==slot then
@@ -108,7 +108,7 @@ function ItemRack.SetQueue(slot,newQueue)
 				ItemRackOpt.UpdateInv()
 			end
 		end
-		ItemRackUser.QueuesEnabled[slot] = true
+		ItemRack.GetQueuesEnabled()[slot] = true
 	end
 	ItemRack.UpdateCombatQueue()
 end

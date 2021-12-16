@@ -7,24 +7,23 @@ local QuestieOptions = QuestieLoader:CreateModule("QuestieOptions");
 local QuestieQuest = QuestieLoader:ImportModule("QuestieQuest");
 ---@type QuestieJourney
 local QuestieJourney = QuestieLoader:ImportModule("QuestieJourney");
----@type QuestieOptionsMinimapIcon
-local QuestieOptionsMinimapIcon = QuestieLoader:ImportModule("QuestieOptionsMinimapIcon");
-
+---@type l10n
+local l10n = QuestieLoader:ImportModule("l10n")
 
 QuestieOptions.tabs = {...}
 QuestieConfigFrame = nil
 
 local AceGUI = LibStub("AceGUI-3.0")
-local AceConfigDialog = LibStub("AceConfigDialogQuestie-3.0")
+local AceConfigDialog = LibStub("AceConfigDialog-3.0")
 
 -- Forward declaration
 local _CreateOptionsTable
 
 function QuestieOptions:Initialize()
-    Questie:Debug(DEBUG_DEVELOP, "[QuestieOptions]: Initializing...")
+    Questie:Debug(Questie.DEBUG_DEVELOP, "[QuestieOptions]: Initializing...")
 
     local optionsTable = _CreateOptionsTable()
-    LibStub("AceConfigQuestie-3.0"):RegisterOptionsTable("Questie", optionsTable)
+    LibStub("AceConfig-3.0"):RegisterOptionsTable("Questie", optionsTable)
     AceConfigDialog:AddToBlizOptions("Questie", "Questie");
 
     local configFrame = AceGUI:Create("Frame")
@@ -36,7 +35,7 @@ function QuestieOptions:Initialize()
     local journeyButton = AceGUI:Create("Button")
     journeyButton:SetWidth(140)
     journeyButton:SetPoint("TOPRIGHT", configFrame.frame, "TOPRIGHT", -50, -13)
-    journeyButton:SetText(QuestieLocale:GetUIString('JOUNREY_TAB'))
+    journeyButton:SetText(l10n('My Journey'))
     journeyButton:SetCallback("OnClick", function()
         QuestieOptions:OpenConfigWindow()
         QuestieJourney:ToggleJourneyWindow()
@@ -47,8 +46,7 @@ function QuestieOptions:Initialize()
     QuestieConfigFrame = configFrame
     table.insert(UISpecialFrames, "QuestieConfigFrame")
 
-    QuestieOptionsMinimapIcon:Initialize()
-    Questie:Debug(DEBUG_DEVELOP, "[QuestieOptions]: Initialization done")
+    Questie:Debug(Questie.DEBUG_DEVELOP, "[QuestieOptions]: Initialization done")
 end
 
 -- Generic function to hide the config frame.
@@ -77,7 +75,7 @@ end
 -- set option value
 function QuestieOptions:SetGlobalOptionValue(info, value)
     if debug and Questie.db.global[info[#info]] ~= value then
-        Questie:Debug(DEBUG_SPAM, "DEBUG: global option "..info[#info].." changed from '"..tostring(Questie.db.global[info[#info]]).."' to '"..tostring(value).."'")
+        Questie:Debug(Questie.DEBUG_SPAM, "DEBUG: global option "..info[#info].." changed from '"..tostring(Questie.db.global[info[#info]]).."' to '"..tostring(value).."'")
     end
     Questie.db.global[info[#info]] = value
 end
@@ -87,7 +85,7 @@ function QuestieOptions:AvailableQuestRedraw()
 end
 
 function QuestieOptions:ClusterRedraw()
-    Questie:Debug(DEBUG_INFO, "Clustering changed, redrawing!")
+    Questie:Debug(Questie.DEBUG_INFO, "Clustering changed, redrawing!")
     --Redraw clusters here
     QuestieQuest:SmoothReset();
 end

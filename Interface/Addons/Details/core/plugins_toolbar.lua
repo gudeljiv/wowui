@@ -132,7 +132,7 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> internal functions
 do
-	local PluginDescPanel = CreateFrame ("frame", "DetailsPluginDescPanel", UIParent)
+	local PluginDescPanel = CreateFrame ("frame", "DetailsPluginDescPanel", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 	PluginDescPanel:SetFrameStrata ("tooltip")
 	PluginDescPanel:Hide()
 	PluginDescPanel:SetWidth (205)

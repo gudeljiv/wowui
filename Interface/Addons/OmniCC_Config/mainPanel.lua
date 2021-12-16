@@ -218,6 +218,9 @@ end
 
 local function panelArea_Create(parent)
 	local f = CreateFrame('Frame', parent:GetName() .. '_PanelArea', parent, 'OmniCC_TabPanelTemplate')
+	if not f.SetBackdrop then
+		Mixin(f, BackdropTemplateMixin)
+	end
 	f:SetPoint('TOPLEFT', 4, -56)
 	f:SetPoint('BOTTOMRIGHT', -4, 4)
 	f.Add = panelArea_Add
