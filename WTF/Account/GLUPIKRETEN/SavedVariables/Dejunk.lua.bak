@@ -30,10 +30,10 @@ __DEJUNK_SAVED_VARIABLES__ = {
 		},
 	},
 	["Profiles"] = {
-		["Nitwit-Dreadnaught"] = {
-			["version"] = 3,
-		},
-		["Moolatz-Dreadnaught"] = {
+		["Poklopac-Dreadnaught"] = {
+			["sell"] = {
+				["auto"] = true,
+			},
 			["version"] = 3,
 		},
 		["Default"] = {
@@ -125,6 +125,12 @@ __DEJUNK_SAVED_VARIABLES__ = {
 					["1708"] = true,
 				},
 			},
+			["version"] = 3,
+		},
+		["Nitwit-Dreadnaught"] = {
+			["version"] = 3,
+		},
+		["Moolatz-Dreadnaught"] = {
 			["version"] = 3,
 		},
 		["Greshnik-Dreadnaught"] = {

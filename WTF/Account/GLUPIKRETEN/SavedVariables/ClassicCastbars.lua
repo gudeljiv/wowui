@@ -248,14 +248,14 @@ ClassicCastbarsDB = {
 		["textPoint"] = "CENTER",
 		["textPositionX"] = 0,
 		["showSpark"] = true,
-		["showIcon"] = true,
-		["hideIconBorder"] = true,
 		["statusColorFailed"] = {
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
+		["hideIconBorder"] = true,
 		["castStatusBar"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
+		["showIcon"] = true,
 		["borderColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -480,8 +480,8 @@ ClassicCastbarsDB = {
 		["12265Fireball"] = true,
 		["15727Eye Beam"] = true,
 		["10438Frostbolt"] = true,
-		["12118Dominate Mind"] = true,
 		["14020Ignite Flesh"] = true,
+		["12118Dominate Mind"] = true,
 		["11490Intense Pain"] = true,
 		["15276Shadow Bolt"] = true,
 		["14944Stun Bomb Attack"] = true,

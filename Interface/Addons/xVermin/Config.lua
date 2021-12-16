@@ -1,9 +1,9 @@
 local _, xVermin = ...
 
 local resolution = ({GetScreenResolutions()})[GetCurrentResolution()]
-local resolution_width = string.match(resolution, "%d+x(%d+)")
+-- local resolution_width = string.match(resolution, "%d+x(%d+)")
 
-local scale = tonumber(resolution_width) > 2000 and 0.55 or 768 / resolution_width
+-- local scale = tonumber(resolution_width) > 2000 and 0.55 or 768 / resolution_width
 
 xVermin.Config = {
 	UIscale = 0.58,

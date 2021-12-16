@@ -5,8 +5,8 @@ local function BuyAmmo()
 	local numItems = GetMerchantNumItems()
 	local playerLevel = UnitLevel("player")
 
-	if playerLevel == 1 then
-		ammoLevel = 0
+	if playerLevel >= 1 then
+		ammoLevel = 1
 	end
 	if playerLevel > 9 then
 		ammoLevel = 10
@@ -18,18 +18,22 @@ local function BuyAmmo()
 		ammoLevel = 40
 	end
 
+
+	
 	if xVermin.Class ~= ("HUNTER" or "WARRIOR") then
 		return
 	end
 	BowEquipped = IsEquippedItemType("Bows") or IsEquippedItemType("Crossbows")
 	GunEquipped = IsEquippedItemType("Guns")
-
+	
 	if BowEquipped then
 		TypeOfAmmo = "Arrow"
 	end
 	if GunEquipped then
 		TypeOfAmmo = "Bullet"
 	end
+	
+
 
 	for item = 1, numItems do
 		local name, texture, price, quantity, numAvailable, isUsable, extendedCost = GetMerchantItemInfo(item)

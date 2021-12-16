@@ -8,9 +8,10 @@ Postal3ClassicDB = {
 		["Greshnik - Dreadnaught"] = "Greshnik - Dreadnaught",
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Vermins - Stonespine"] = "Vermins - Stonespine",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
@@ -23,8 +24,8 @@ Postal3ClassicDB = {
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
 		["Mxys - Golemagg"] = "Mxys - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
 	},
 	["global"] = {
@@ -45,9 +46,10 @@ Postal3ClassicDB = {
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [13]
 				"Mxzq|Golemagg|Horde|35|HUNTER", -- [14]
 				"Nitwit|Dreadnaught|Horde|1|ROGUE", -- [15]
-				"Testxv|Golemagg|Horde|1|HUNTER", -- [16]
-				"Vermins|Stonespine|Horde|2|WARRIOR", -- [17]
-				"Vermin|Golemagg|Horde|36|WARRIOR", -- [18]
+				"Poklopac|Dreadnaught|Horde|4|HUNTER", -- [16]
+				"Testxv|Golemagg|Horde|1|HUNTER", -- [17]
+				"Vermins|Stonespine|Horde|2|WARRIOR", -- [18]
+				"Vermin|Golemagg|Horde|36|WARRIOR", -- [19]
 			},
 		},
 	},
@@ -77,14 +79,7 @@ Postal3ClassicDB = {
 		},
 		["Dmitar - Golemagg"] = {
 		},
-		["Mxzq - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Mxyz|Golemagg|Horde", -- [1]
-					"Byceps|Golemagg|Horde", -- [2]
-					"Vermin|Golemagg|Horde", -- [3]
-				},
-			},
+		["Greenwise - Golemagg"] = {
 		},
 		["Vermins - Stonespine"] = {
 		},
@@ -94,6 +89,8 @@ Postal3ClassicDB = {
 					"Mxyz|Golemagg|Horde", -- [1]
 				},
 			},
+		},
+		["Poklopac - Dreadnaught"] = {
 		},
 		["Mxym - Golemagg"] = {
 		},
@@ -126,9 +123,16 @@ Postal3ClassicDB = {
 		},
 		["Mxys - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
-		},
 		["Nitwit - Dreadnaught"] = {
+		},
+		["Mxzq - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Mxyz|Golemagg|Horde", -- [1]
+					"Byceps|Golemagg|Horde", -- [2]
+					"Vermin|Golemagg|Horde", -- [3]
+				},
+			},
 		},
 		["Moolatz - Dreadnaught"] = {
 		},

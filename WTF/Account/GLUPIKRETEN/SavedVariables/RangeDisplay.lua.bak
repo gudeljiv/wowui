@@ -7,6 +7,7 @@ RangeDisplayDB3 = {
 		["Greshnik - Dreadnaught"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
+		["Poklopac - Dreadnaught"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Testxv - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",

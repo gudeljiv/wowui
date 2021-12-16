@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
+	["_5000000"] = 10000,
+	["LOG_DE_DATA_X"] = true,
+	["_1000000"] = 2500,
 	["_10000"] = 200,
 	["_500"] = 5,
-	["_1000000"] = 2500,
-	["_200000"] = 1000,
 	["STARTING_DISCOUNT"] = 5,
-	["LOG_DE_DATA_X"] = true,
-	["_5000000"] = 10000,
+	["_200000"] = 1000,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 }
@@ -184,12 +184,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["mr"] = 243,
 		},
-		["Bolt of Silk Cloth"] = {
-			["H3212"] = 2100,
-			["cc"] = 7,
-			["id"] = "4305:0:0:0:0",
-			["sc"] = 0,
-			["mr"] = 2100,
+		["Barbaric Loincloth"] = {
+			["H3212"] = 400,
+			["cc"] = 4,
+			["id"] = "3309:0:0:0:0",
+			["sc"] = 1,
+			["mr"] = 400,
 		},
 		["Barbaric Cloth Vest"] = {
 			["H3212"] = 900,
@@ -340,19 +340,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 4000,
 		},
-		["Barbaric Loincloth"] = {
-			["H3212"] = 400,
-			["cc"] = 4,
-			["id"] = "3309:0:0:0:0",
-			["sc"] = 1,
-			["mr"] = 400,
-		},
 		["Wool Cloth"] = {
 			["H3212"] = 177,
 			["cc"] = 7,
 			["id"] = "2592:0:0:0:0",
 			["sc"] = 0,
 			["mr"] = 177,
+		},
+		["Bolt of Silk Cloth"] = {
+			["H3212"] = 2100,
+			["cc"] = 7,
+			["id"] = "4305:0:0:0:0",
+			["sc"] = 0,
+			["mr"] = 2100,
 		},
 		["Bloodspattered Loincloth of the Tiger"] = {
 			["H3212"] = 2200,
@@ -566,10 +566,14 @@ AUCTIONATOR_TOONS = {
 		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4705-01DF116D",
 	},
-	["Gheylord"] = {
-		["firstSeen"] = 1567278903,
-		["guid"] = "Player-4755-018C0F1B",
+	["Moolatz"] = {
+		["firstSeen"] = 1639680559,
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-5239-013D6A19",
+	},
+	["Konza"] = {
+		["firstSeen"] = 1490043156,
+		["firstVersion"] = "3.1.5",
 	},
 	["Testxv"] = {
 		["firstSeen"] = 1602405174,
@@ -580,10 +584,6 @@ AUCTIONATOR_TOONS = {
 		["firstSeen"] = 1639593236,
 		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-5239-013D44CB",
-	},
-	["Konza"] = {
-		["firstSeen"] = 1490043156,
-		["firstVersion"] = "3.1.5",
 	},
 	["Dmitar"] = {
 		["firstSeen"] = 1596618244,
@@ -605,25 +605,30 @@ AUCTIONATOR_TOONS = {
 		["guid"] = "Player-4705-01DEED9F",
 		["firstVersion"] = "8.1.0",
 	},
+	["Ozrencic"] = {
+		["firstSeen"] = 1568647380,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-010E410D",
+	},
 	["Battitude"] = {
 		["firstSeen"] = 1603565879,
 		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-01FA5DEE",
 	},
-	["Ozrencic"] = {
-		["firstSeen"] = 1568647380,
+	["Gheylord"] = {
+		["firstSeen"] = 1567278903,
+		["guid"] = "Player-4755-018C0F1B",
 		["firstVersion"] = "8.1.0",
-		["guid"] = "Player-4465-010E410D",
 	},
 	["Paydo"] = {
 		["firstSeen"] = 1568042552,
 		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4755-01B83D7E",
 	},
-	["Moolatz"] = {
-		["firstSeen"] = 1639680559,
+	["Poklopac"] = {
+		["firstSeen"] = 1639684874,
 		["firstVersion"] = "8.1.0",
-		["guid"] = "Player-5239-013D6A19",
+		["guid"] = "Player-5239-013D6C3C",
 	},
 }
 AUCTIONATOR_STACKING_PREFS = {

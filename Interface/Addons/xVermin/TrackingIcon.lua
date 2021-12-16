@@ -89,10 +89,18 @@ local function InitializeTracking()
 		end
 
 		if
-			(spellName == "Find Minerals" or spellName == "Find Herbs" or spellName == "Track Beasts" or spellName == "Track Humanoids" or spellName == "Track Undead" or spellName == "Track Hidden" or spellName == "Track Demons" or
+			(
+				spellName == "Find Minerals" or 
+				spellName == "Find Herbs" or 
+				spellName == "Track Beasts" or 
+				spellName == "Track Humanoids" or 
+				spellName == "Track Undead" or 
+				spellName == "Track Hidden" or 
+				spellName == "Track Demons" or
 				spellName == "Track Elementals" or
 				spellName == "Track Dragonkin" or
-				spellName == "Track Giants")
+				spellName == "Track Giants"
+			)
 		 then
 			TrackingIconFrame:RegisterUnitEvent("UNIT_AURA", "player")
 			TrackingIconFrame:SetScript("OnEvent", TrackingIcon)

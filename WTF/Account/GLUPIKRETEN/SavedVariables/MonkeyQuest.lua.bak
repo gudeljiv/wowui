@@ -595,6 +595,28 @@ MonkeyQuestConfig = {
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
 	},
+	["Dreadnaught|Poklopac"] = {
+		["m_aQuestList"] = {
+			["Valley of Trials - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Vile Familiars - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Galgar's Cactus Apple Surprise - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Sarkoth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Sting of the Scorpid - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Burning Blade Medallion - false"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
 	["Genesis|Blooq"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
@@ -1067,10 +1089,13 @@ MonkeyQuestConfig = {
 	},
 	["Dreadnaught|Moolatz"] = {
 		["m_aQuestList"] = {
+			["The Hunt Begins - false"] = {
+				["m_bChecked"] = true,
+			},
 			["Red Cloud Mesa - true"] = {
 				["m_bChecked"] = true,
 			},
-			["The Hunt Begins - false"] = {
+			["A Humble Task - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1099,9 +1124,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 946.0001831054688,
+		["m_iFrameBottom"] = 929.9801635742188,
 		["m_bHideCompletedQuests"] = false,
-		["m_iFrameLeft"] = 2010.023071289063,
+		["m_iFrameLeft"] = 1774.620849609375,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -1118,7 +1143,7 @@ MonkeyQuestConfig = {
 		["m_iFrameWidth"] = 300,
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1036.138061523438,
+		["m_iFrameTop"] = 1036.137817382813,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowTooltipObjectives"] = false,

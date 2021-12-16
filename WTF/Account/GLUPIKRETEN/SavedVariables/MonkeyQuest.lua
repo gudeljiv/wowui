@@ -595,6 +595,22 @@ MonkeyQuestConfig = {
 		["m_iFrameLeft"] = 1425.90026473384,
 		["m_bGrowUp"] = false,
 	},
+	["Dreadnaught|Poklopac"] = {
+		["m_aQuestList"] = {
+			["Sarkoth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Valley of Trials - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Burning Blade Medallion - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Lazy Peons - false"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
 	["Genesis|Blooq"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
@@ -1001,9 +1017,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 875.793212890625,
+		["m_iFrameBottom"] = 847.3594970703125,
 		["m_bHideTitleButtons"] = false,
-		["m_iFrameLeft"] = 2010.023071289063,
+		["m_iFrameLeft"] = 1774.620849609375,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -1020,7 +1036,7 @@ MonkeyQuestConfig = {
 		["m_strMidObjectiveColour"] = "|cFFFFFF00",
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1036.138061523438,
+		["m_iFrameTop"] = 1036.137817382813,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowNumQuests"] = true,

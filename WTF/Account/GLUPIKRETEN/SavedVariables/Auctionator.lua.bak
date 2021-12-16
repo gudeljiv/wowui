@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
+	["_10000"] = 200,
+	["_500"] = 5,
+	["_1000000"] = 2500,
 	["_200000"] = 1000,
 	["STARTING_DISCOUNT"] = 5,
-	["_1000000"] = 2500,
-	["_5000000"] = 10000,
 	["LOG_DE_DATA_X"] = true,
-	["_500"] = 5,
-	["_10000"] = 200,
+	["_5000000"] = 10000,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 }
@@ -170,6 +170,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1000,
 			["sc"] = 3,
 		},
+		["Barbaric Loincloth"] = {
+			["H3212"] = 400,
+			["cc"] = 4,
+			["id"] = "3309:0:0:0:0",
+			["mr"] = 400,
+			["sc"] = 1,
+		},
 		["Bolt of Silk Cloth"] = {
 			["H3212"] = 2100,
 			["cc"] = 7,
@@ -183,13 +190,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "2592:0:0:0:0",
 			["mr"] = 177,
 			["sc"] = 0,
-		},
-		["Barbaric Loincloth"] = {
-			["H3212"] = 400,
-			["cc"] = 4,
-			["id"] = "3309:0:0:0:0",
-			["mr"] = 400,
-			["sc"] = 1,
 		},
 		["Ivycloth Gloves of the Owl"] = {
 			["H3212"] = 4000,
@@ -561,6 +561,11 @@ AUCTIONATOR_TOONS = {
 		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-01FA5DD5",
 	},
+	["Poklopac"] = {
+		["firstSeen"] = 1639684874,
+		["guid"] = "Player-5239-013D6C3C",
+		["firstVersion"] = "8.1.0",
+	},
 	["Moolatz"] = {
 		["firstSeen"] = 1639680559,
 		["guid"] = "Player-5239-013D6A19",
@@ -581,14 +586,14 @@ AUCTIONATOR_TOONS = {
 		["guid"] = "Player-5239-013D44CB",
 		["firstVersion"] = "8.1.0",
 	},
-	["Ozrencic"] = {
-		["firstSeen"] = 1568647380,
-		["guid"] = "Player-4465-010E410D",
-		["firstVersion"] = "8.1.0",
-	},
 	["Battitude"] = {
 		["firstSeen"] = 1603565879,
 		["guid"] = "Player-4465-01FA5DEE",
+		["firstVersion"] = "8.1.0",
+	},
+	["Ozrencic"] = {
+		["firstSeen"] = 1568647380,
+		["guid"] = "Player-4465-010E410D",
 		["firstVersion"] = "8.1.0",
 	},
 	["Elohssa"] = {

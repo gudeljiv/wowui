@@ -30,10 +30,10 @@ __DEJUNK_SAVED_VARIABLES__ = {
 		["Vermin-Golemagg"] = "Default",
 	},
 	["Profiles"] = {
-		["Greshnik-Dreadnaught"] = {
-			["version"] = 3,
-		},
-		["Moolatz-Dreadnaught"] = {
+		["Poklopac-Dreadnaught"] = {
+			["sell"] = {
+				["auto"] = true,
+			},
 			["version"] = 3,
 		},
 		["Default"] = {
@@ -128,6 +128,12 @@ __DEJUNK_SAVED_VARIABLES__ = {
 			["version"] = 3,
 		},
 		["Nitwit-Dreadnaught"] = {
+			["version"] = 3,
+		},
+		["Moolatz-Dreadnaught"] = {
+			["version"] = 3,
+		},
+		["Greshnik-Dreadnaught"] = {
 			["version"] = 3,
 		},
 	},
