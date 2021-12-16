@@ -2717,7 +2717,7 @@ end
 function Details:ShowTalentsPanel()
 	--build the frame to show icons
 	if (not DetailsTalentFrame) then
-		local talentsFrame = CreateFrame ("frame", "DetailsTalentFrame", InspectFrame)
+		local talentsFrame = CreateFrame ("frame", "DetailsTalentFrame", InspectFrame, "BackdropTemplate")
 		talentsFrame:SetPoint ("topleft", InspectFrame, "topright", -20, -14)
 		talentsFrame:SetPoint ("bottomleft", InspectFrame, "bottomright", -20, 74)
 		

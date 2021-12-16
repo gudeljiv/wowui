@@ -253,7 +253,7 @@ function SlashCmdList.DETAILS (msg, editbox)
 	
 	elseif (msg == "tr") then
 		
-		local f = CreateFrame ("frame", nil, UIParent)
+		local f = CreateFrame ("frame", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		f:SetSize (300, 300)
 		f:SetPoint ("center")
 		
@@ -385,7 +385,7 @@ function SlashCmdList.DETAILS (msg, editbox)
 		
 		_detalhes.tabela_historico:adicionar (combat)
 	
-		_detalhes:InstanciaCallFunction (_detalhes.gump.Fade, "in", nil, "barras")
+		_detalhes:InstanciaCallFunction (_detalhes.Details.FadeHandler.Fader, "in", nil, "barras")
 		_detalhes:InstanciaCallFunction (_detalhes.AtualizaSegmentos) -- atualiza o instancia.showing para as novas tabelas criadas
 		_detalhes:InstanciaCallFunction (_detalhes.AtualizaSoloMode_AfertReset) -- verifica se precisa zerar as tabela da janela solo mode
 		_detalhes:InstanciaCallFunction (_detalhes.ResetaGump) --_detalhes:ResetaGump ("de todas as instancias")
@@ -513,7 +513,7 @@ function SlashCmdList.DETAILS (msg, editbox)
 	
 	elseif (msg == "slider") then
 		
-		local f = CreateFrame ("frame", "TESTEDESCROLL", UIParent)
+		local f = CreateFrame ("frame", "TESTEDESCROLL", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		f:SetPoint ("center", UIParent, "center", 200, -2)
 		f:SetWidth (300)
 		f:SetHeight (150)
@@ -523,7 +523,7 @@ function SlashCmdList.DETAILS (msg, editbox)
 		
 		local rows = {}
 		for i = 1, 7 do 
-			local row = CreateFrame ("frame", nil, UIParent)
+			local row = CreateFrame ("frame", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate")
 			row:SetPoint ("topleft", f, "topleft", 10, -(i-1)*21)
 			row:SetWidth (200)
 			row:SetHeight (20)
@@ -570,7 +570,7 @@ function SlashCmdList.DETAILS (msg, editbox)
 		local petGUID = UnitGUID ("target")
 
 		if (not _G.DetailsScanTooltip) then
-			local scanTool = CreateFrame ("GameTooltip", "DetailsScanTooltip", nil, "GameTooltipTemplate")
+			local scanTool = CreateFrame ("GameTooltip", "DetailsScanTooltip", nil, "GameTooltipTemplate", BackdropTemplateMixin and "BackdropTemplate")
 			scanTool:SetOwner (WorldFrame, "ANCHOR_NONE")
 		end
 		
@@ -752,7 +752,7 @@ function SlashCmdList.DETAILS (msg, editbox)
 			tile = true, edgeSize = 1, tileSize = 5,
 			}
 		
-			_detalhes.id_frame = CreateFrame ("Frame", "DetailsID", UIParent)
+			_detalhes.id_frame = CreateFrame ("Frame", "DetailsID", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 			_detalhes.id_frame:SetHeight(14)
 			_detalhes.id_frame:SetWidth(120)
 			_detalhes.id_frame:SetPoint ("center", UIParent, "center")
@@ -760,7 +760,7 @@ function SlashCmdList.DETAILS (msg, editbox)
 			
 			tinsert (UISpecialFrames, "DetailsID")
 			
-			_detalhes.id_frame.texto = CreateFrame ("editbox", nil, _detalhes.id_frame)
+			_detalhes.id_frame.texto = CreateFrame ("editbox", nil, _detalhes.id_frame, BackdropTemplateMixin and "BackdropTemplate")
 			_detalhes.id_frame.texto:SetPoint ("topleft", _detalhes.id_frame, "topleft")
 			_detalhes.id_frame.texto:SetAutoFocus(false)
 			_detalhes.id_frame.texto:SetFontObject (GameFontHighlightSmall)			
@@ -1282,7 +1282,7 @@ Damage Update Status: @INSTANCEDAMAGESTATUS
 	
 		local myframe = TestFrame
 		if (not myframe) then
-			myframe = TestFrame or CreateFrame ("frame", "TestFrame", UIParent)
+			myframe = TestFrame or CreateFrame ("frame", "TestFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 			myframe:SetPoint ("center", UIParent, "center")
 			myframe:SetSize (300, 300)
 			myframe.texture = myframe:CreateTexture (nil, "overlay")
@@ -1313,7 +1313,7 @@ Damage Update Status: @INSTANCEDAMAGESTATUS
 		
 		for i = 1, 10 do
 	
-			local a = CreateFrame ("statusbar", nil, UIParent)
+			local a = CreateFrame ("statusbar", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate")
 			a:SetPoint ("topleft", UIParent, "topleft", i*32, y)
 			a:SetSize (32, 32)
 			a:SetMinMaxValues (0, 1)
@@ -1488,7 +1488,7 @@ Damage Update Status: @INSTANCEDAMAGESTATUS
 		--> clear memory
 		collectgarbage()		
 
-		_detalhes:InstanciaCallFunction (_detalhes.gump.Fade, "in", nil, "barras")
+		_detalhes:InstanciaCallFunction (_detalhes.Details.FadeHandler.Fader, "in", nil, "barras")
 		_detalhes:InstanciaCallFunction (_detalhes.AtualizaSegmentos)
 		_detalhes:InstanciaCallFunction (_detalhes.AtualizaSoloMode_AfertReset)
 		_detalhes:InstanciaCallFunction (_detalhes.ResetaGump)
@@ -1547,7 +1547,7 @@ Damage Update Status: @INSTANCEDAMAGESTATUS
 
 		local f = DetailsRecordFrameAnimation 
 		if (not f) then
-			f = CreateFrame ("frame", "DetailsRecordFrameAnimation", UIParent)
+			f = CreateFrame ("frame", "DetailsRecordFrameAnimation", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 			
 			--estrela no inicio dando um giro
 			--Interface\Cooldown\star4
@@ -1703,7 +1703,9 @@ Damage Update Status: @INSTANCEDAMAGESTATUS
 
 		local v = _detalhes.game_version .. "." .. (_detalhes.build_counter >= _detalhes.alpha_build_counter and _detalhes.build_counter or _detalhes.alpha_build_counter)
 		print (Loc ["STRING_DETAILS1"] .. "|cFFFFFF00DETAILS! VERSION|r: |cFFFFAA00C" .. (_detalhes.build_counter >= _detalhes.alpha_build_counter and _detalhes.build_counter or _detalhes.alpha_build_counter))
-		print (Loc ["STRING_DETAILS1"] .. "|cFFFFFF00GAME VERSION|r: |cFFFFAA00" .. _detalhes.game_version)
+
+		local version, build, date, tocversion = GetBuildInfo()
+		print (Loc ["STRING_DETAILS1"] .. "|cFFFFFF00GAME VERSION|r: |cFFFFAA00" .. version)
 
 	end
 end
@@ -1819,7 +1821,7 @@ function Details:UpdateUserPanel (usersTable)
 		end
 		
 		local scroll_createline = function (self, index)
-			local line = CreateFrame ("button", "$parentLine" .. index, self)
+			local line = CreateFrame ("button", "$parentLine" .. index, self, BackdropTemplateMixin and "BackdropTemplate")
 			line:SetPoint ("topleft", self, "topleft", 3, -((index-1)*(scroll_line_height+1)) - 1)
 			line:SetSize (scroll_width - 2, scroll_line_height)
 			

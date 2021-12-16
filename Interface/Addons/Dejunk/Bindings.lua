@@ -1,17 +1,10 @@
 local AddonName, Addon = ...
+local Chat = Addon.Chat
 local Colors = Addon.Colors
-local Core = Addon.Core
+local Commands = Addon.Commands
 local DCL = Addon.Libs.DCL
-local Dejunker = Addon.Dejunker
-local Destroyables = Addon.Lists.Destroyables
-local Destroyer = Addon.Destroyer
-local Exclusions = Addon.Lists.Exclusions
-local Inclusions = Addon.Lists.Inclusions
 local L = Addon.Libs.L
 local Lists = Addon.Lists
-local MerchantFrame = _G.MerchantFrame
-local UI = Addon.UI
-local Undestroyables = Addon.Lists.Undestroyables
 local Utils = Addon.Utils
 
 -- Variables
@@ -21,71 +14,99 @@ local currentItemID = nil
 -- Binding Strings
 -- ============================================================================
 
--- Category
+-- Category.
 _G.BINDING_CATEGORY_DEJUNK = DCL:ColorString(AddonName, Colors.Primary)
 
--- General
-_G.BINDING_NAME_DEJUNK_TOGGLE_OPTIONS = L.BINDINGS_TOGGLE_OPTIONS_TEXT
+-- Headers.
+for i=1, 3 do _G["BINDING_HEADER_DEJUNK_HEADER_BLANK"..i] = "" end
+_G.BINDING_HEADER_DEJUNK_HEADER_GENERAL = L.GENERAL_TEXT
+_G.BINDING_HEADER_DEJUNK_HEADER_SELL = L.SELL_TEXT
+_G.BINDING_HEADER_DEJUNK_HEADER_DESTROY = L.DESTROY_TEXT
+_G.BINDING_HEADER_DEJUNK_HEADER_LISTS = L.LISTS_TEXT
+
+-- General.
+_G.BINDING_NAME_DEJUNK_TOGGLE_OPTIONS_FRAME = L.TOGGLE_OPTIONS_FRAME
+_G.BINDING_NAME_DEJUNK_TOGGLE_SELL_FRAME = L.TOGGLE_SELL_FRAME
+_G.BINDING_NAME_DEJUNK_TOGGLE_DESTROY_FRAME = L.TOGGLE_DESTROY_FRAME
+_G.BINDING_NAME_DEJUNK_OPEN_LOOTABLES = L.OPEN_LOOTABLES
+
+-- Sell.
 _G.BINDING_NAME_DEJUNK_START_SELLING = L.START_SELLING_BUTTON_TEXT
-_G.BINDING_NAME_DEJUNK_START_DESTROYING = L.START_DESTROYING_BUTTON_TEXT
+_G.BINDING_NAME_DEJUNK_SELL_NEXT_ITEM = L.SELL_NEXT_ITEM
+_G.BINDING_NAME_DEJUNK_ADD_INCLUSIONS =
+  L.BINDINGS_ADD_TO_LIST_TEXT:format(Lists.sell.inclusions.profile.locale)
+_G.BINDING_NAME_DEJUNK_REM_INCLUSIONS =
+  L.BINDINGS_REMOVE_FROM_LIST_TEXT:format(Lists.sell.inclusions.profile.locale)
+_G.BINDING_NAME_DEJUNK_ADD_EXCLUSIONS =
+  L.BINDINGS_ADD_TO_LIST_TEXT:format(Lists.sell.exclusions.profile.locale)
+_G.BINDING_NAME_DEJUNK_REM_EXCLUSIONS =
+  L.BINDINGS_REMOVE_FROM_LIST_TEXT:format(Lists.sell.exclusions.profile.locale)
+_G.BINDING_NAME_DEJUNK_ADD_INCLUSIONS_GLOBAL =
+  L.BINDINGS_ADD_TO_LIST_TEXT:format(Lists.sell.inclusions.global.locale)
+_G.BINDING_NAME_DEJUNK_REM_INCLUSIONS_GLOBAL =
+  L.BINDINGS_REMOVE_FROM_LIST_TEXT:format(Lists.sell.inclusions.global.locale)
+_G.BINDING_NAME_DEJUNK_ADD_EXCLUSIONS_GLOBAL =
+  L.BINDINGS_ADD_TO_LIST_TEXT:format(Lists.sell.exclusions.global.locale)
+_G.BINDING_NAME_DEJUNK_REM_EXCLUSIONS_GLOBAL =
+  L.BINDINGS_REMOVE_FROM_LIST_TEXT:format(Lists.sell.exclusions.global.locale)
 
--- Inclusions
-_G.BINDING_NAME_DEJUNK_ADD_INCLUSIONS = L.BINDINGS_ADD_TO_LIST_TEXT:format(Inclusions.localeColored)
-_G.BINDING_NAME_DEJUNK_REM_INCLUSIONS = L.BINDINGS_REMOVE_FROM_LIST_TEXT:format(Inclusions.localeColored)
-
--- Exclusions
-_G.BINDING_NAME_DEJUNK_ADD_EXCLUSIONS = L.BINDINGS_ADD_TO_LIST_TEXT:format(Exclusions.localeColored)
-_G.BINDING_NAME_DEJUNK_REM_EXCLUSIONS = L.BINDINGS_REMOVE_FROM_LIST_TEXT:format(Exclusions.localeColored)
-
--- Destroyables
-_G.BINDING_NAME_DEJUNK_ADD_DESTROYABLES = L.BINDINGS_ADD_TO_LIST_TEXT:format(Destroyables.localeColored)
-_G.BINDING_NAME_DEJUNK_REM_DESTROYABLES = L.BINDINGS_REMOVE_FROM_LIST_TEXT:format(Destroyables.localeColored)
-
--- Undestroyables
-_G.BINDING_NAME_DEJUNK_ADD_UNDESTROYABLES = L.BINDINGS_ADD_TO_LIST_TEXT:format(Undestroyables.localeColored)
-_G.BINDING_NAME_DEJUNK_REM_UNDESTROYABLES = L.BINDINGS_REMOVE_FROM_LIST_TEXT:format(Undestroyables.localeColored)
+-- Destroy.
+_G.BINDING_NAME_DEJUNK_START_DESTROYING = L.START_DESTROYING
+_G.BINDING_NAME_DEJUNK_DESTROY_NEXT_ITEM = L.DESTROY_NEXT_ITEM
+_G.BINDING_NAME_DEJUNK_ADD_DESTROYABLES =
+  L.BINDINGS_ADD_TO_LIST_TEXT:format(Lists.destroy.inclusions.profile.locale)
+_G.BINDING_NAME_DEJUNK_REM_DESTROYABLES =
+  L.BINDINGS_REMOVE_FROM_LIST_TEXT:format(Lists.destroy.inclusions.profile.locale)
+_G.BINDING_NAME_DEJUNK_ADD_UNDESTROYABLES =
+  L.BINDINGS_ADD_TO_LIST_TEXT:format(Lists.destroy.exclusions.profile.locale)
+_G.BINDING_NAME_DEJUNK_REM_UNDESTROYABLES =
+  L.BINDINGS_REMOVE_FROM_LIST_TEXT:format(Lists.destroy.exclusions.profile.locale)
+_G.BINDING_NAME_DEJUNK_ADD_DESTROYABLES_GLOBAL =
+  L.BINDINGS_ADD_TO_LIST_TEXT:format(Lists.destroy.inclusions.global.locale)
+_G.BINDING_NAME_DEJUNK_REM_DESTROYABLES_GLOBAL =
+  L.BINDINGS_REMOVE_FROM_LIST_TEXT:format(Lists.destroy.inclusions.global.locale)
+_G.BINDING_NAME_DEJUNK_ADD_UNDESTROYABLES_GLOBAL =
+  L.BINDINGS_ADD_TO_LIST_TEXT:format(Lists.destroy.exclusions.global.locale)
+_G.BINDING_NAME_DEJUNK_REM_UNDESTROYABLES_GLOBAL =
+  L.BINDINGS_REMOVE_FROM_LIST_TEXT:format(Lists.destroy.exclusions.global.locale)
 
 -- ============================================================================
 -- Binding Functions
 -- ============================================================================
 
-function DejunkBindings_ToggleOptions()
-  UI:Toggle()
-end
+-- General.
+DejunkBindings_ToggleOptionsFrame = Commands.toggle
+DejunkBindings_ToggleSellFrame = Commands.sell
+DejunkBindings_ToggleDestroyFrame = Commands.destroy
+DejunkBindings_OpenLootables = Commands.open
 
-function DejunkBindings_StartSelling()
-  if MerchantFrame:IsShown() then
-    Dejunker:Start()
-  else
-    Core:Print(L.CANNOT_SELL_WITHOUT_MERCHANT)
-  end
-end
+-- Sell.
+DejunkBindings_StartSelling = Commands.sell.subcommands.start
+DejunkBindings_SellNextItem = Commands.sell.subcommands.next
 
-function DejunkBindings_StartDestroying()
-  Destroyer:Start()
-end
+-- Destroy.
+DejunkBindings_StartDestroying = Commands.destroy.subcommands.start
+DejunkBindings_DestroyNextItem = Commands.destroy.subcommands.next
 
-function DejunkBindings_AddToList(listName)
+function DejunkBindings_AddToList(groupName, listName, listType)
   if not currentItemID then return end
-  Lists[listName]:Add(currentItemID)
+  Lists[groupName][listName][listType]:Add(currentItemID)
 end
 
-function DejunkBindings_RemoveFromList(listName)
+function DejunkBindings_RemoveFromList(groupName, listName, listType)
   if not currentItemID then return end
-  Lists[listName]:Remove(currentItemID, true)
+  Lists[groupName][listName][listType]:Remove(currentItemID, true)
 end
 
 -- ============================================================================
 -- Item Tooltip Hook
 -- ============================================================================
 
-local function OnTooltipSetItem(self, ...)
+_G.GameTooltip:HookScript("OnTooltipSetItem", function(self, ...)
   currentItemID = Utils:GetItemIDFromLink(select(2, self:GetItem()))
-end
+end)
 
-local function OnTooltipCleared(self, ...)
+_G.GameTooltip:HookScript("OnTooltipCleared", function(self, ...)
   currentItemID = nil
-end
+end)
 
-_G.GameTooltip:HookScript("OnTooltipSetItem", OnTooltipSetItem)
-_G.GameTooltip:HookScript("OnTooltipCleared", OnTooltipCleared)

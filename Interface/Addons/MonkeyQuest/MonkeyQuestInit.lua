@@ -437,9 +437,9 @@ function MonkeyQuestInit_Border(bCrashBorder)
 
 	-- set the border
 	if (MonkeyQuestConfig[MonkeyQuest.m_global].m_bNoBorder == true) then
-		MonkeyQuestFrame:SetBackdropBorderColor(0.0, 0.0, 0.0, 0.0);
+		-- MonkeyQuestFrame:SetBackdropBorderColor(0.0, 0.0, 0.0, 0.0);
 	else
-		MonkeyQuestFrame:SetBackdropBorderColor(MonkeyQuest.m_colourBorder.r, MonkeyQuest.m_colourBorder.g, MonkeyQuest.m_colourBorder.b, 1.0);
+		-- MonkeyQuestFrame:SetBackdropBorderColor(MonkeyQuest.m_colourBorder.r, MonkeyQuest.m_colourBorder.g, MonkeyQuest.m_colourBorder.b, 1.0);
 	end
 
 	-- check for MonkeyBuddy
@@ -487,9 +487,9 @@ function MonkeyQuestInit_ApplySettings()
 
 	-- set the border
 	if (MonkeyQuestConfig[MonkeyQuest.m_global].m_bNoBorder == true) then
-		MonkeyQuestFrame:SetBackdropBorderColor(0.0, 0.0, 0.0, 0.0);
+		-- MonkeyQuestFrame:SetBackdropBorderColor(0.0, 0.0, 0.0, 0.0);
 	else
-		MonkeyQuestFrame:SetBackdropBorderColor(MonkeyQuest.m_colourBorder.r, MonkeyQuest.m_colourBorder.g, MonkeyQuest.m_colourBorder.b, 1.0);
+		-- MonkeyQuestFrame:SetBackdropBorderColor(MonkeyQuest.m_colourBorder.r, MonkeyQuest.m_colourBorder.g, MonkeyQuest.m_colourBorder.b, 1.0);
 	end
 
 	-- set the width

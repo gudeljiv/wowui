@@ -8,8 +8,12 @@
 	--]]
 
 local L = LibStub("AceLocale-3.0"):GetLocale("NeatPlates")
-local LCD = LibStub("LibClassicDurations")
-LCD:Register("NeatPlates") -- tell library it's being used and should start working
+local LibClassicDurations = LibStub("LibClassicDurations", true)
+local LCDUnitAura = function() end
+if LibClassicDurations then
+    LibClassicDurations:Register("NeatPlates")
+    LCDUnitAura = LibClassicDurations.UnitAuraWithBuffs
+end
 
 
 NeatPlatesWidgets.DebuffWidgetBuild = 2
@@ -39,7 +43,12 @@ local EmphasizedUnique = false
 local MaxEmphasizedAuras = 1
 local AuraWidth = 16.5
 local AuraScale = 1
+local EmphasizedAuraScale = 1
 local AuraAlignment = "BOTTOMLEFT"
+-- local ScaleOptions = {x = 1, y = 1, offset = {x = 0, y = 0}}
+local EmphasizedScaleOptions = {x = 1, y = 1, offset = {x = 0, y = 0}}
+local PreciseAuraThreshold = 0
+local BuffSeparationMode = 1
 
 local function DummyFunction() end
 
@@ -71,6 +80,7 @@ local ButtonGlowEnabled = {
 
 local HideCooldownSpiral = false
 local HideAuraDuration = false
+local HideAuraStacks = false
 
 -- Get a clean version of the function...  Avoid OmniCC interference
 local CooldownNative = CreateFrame("Cooldown", nil, WorldFrame)
@@ -129,6 +139,11 @@ local function EventUnitAura(unitid)
 
 end
 
+-- Clear the AuraCache for the unitid
+local function ClearAuraCache(unitid)
+	if unitid then AuraCache[unitid] = nil end
+end
+
 ---- Combat logging for aura applications in Classic
 --local function EventCombatLog(...)
 --	local _,event,_,sourceGUID,sourceName,sourceFlags,_,destGUID,destName,_,_,spellID,spellName = CombatLogGetCurrentEventInfo()
@@ -138,28 +153,31 @@ end
 --	if event == "SPELL_CAST_SUCCESS" then ComboPoints = GetComboPoints("player", "target") end
 
 --	if event == "SPELL_AURA_APPLIED" or event == "SPELL_AURA_REFRESH" then
---		if ComboPoints > GetComboPoints("player", "target") then points = ComboPoints end
+--		--if ComboPoints > GetComboPoints("player", "target") then points = ComboPoints end
 --		spellID = select(7, GetSpellInfo(spellName))
---		local desc = GetSpellDescription(spellID)
+--		--local desc = GetSpellDescription(spellID)
 --		local duration, expiration
 
---		if desc then
---			-- Attempt to match using locale duration pattern, if that fails fallback to english local pattern
---			-- Combo Point pattern variation, seconds pattern variation, minutes pattern variation
---			duration = tonumber(strmatch(desc, "%s%s"..points.."%s.-"..L["CLASSIC_DURATION_SEC_PATTERN"]) or strmatch(desc, L["CLASSIC_DURATION_SEC_PATTERN"]) or strmatch(desc, "%s%s"..points..".-".."([0-9]+%.?[0-9]?)%ssec") or strmatch(desc, "([0-9]+%.?[0-9]?)%ssec") or (strmatch(desc, L["CLASSIC_DURATION_MIN_PATTERN"]) or strmatch(desc, "([0-9]+%.?[0-9]?)%smin") or 0)*60 or 0)
+--		-- Lib workaround until NPC abilities get properly implemented
+--		local spell = LibClassicDurations.spells[spellID]
+--		if not spell then
+--			spell = LibClassicDurations.npc_spells[spellID]
+--			if spell then spell = {duration = spell} end
 --		end
---		if duration and duration > 0 then
+--		if spell then
+--			duration = spell.duration
+--		end
+
+--		if duration and type(duration) ~= "function" and duration > 0 then
 --			expiration = GetTime()+duration
 
 --			AuraExpiration[destGUID] = AuraExpiration[destGUID] or {}
 --			AuraExpiration[destGUID][sourceGUID] = AuraExpiration[destGUID][sourceGUID] or {}
 --			AuraExpiration[destGUID][sourceGUID][spellID] = {expiration = expiration, duration = duration}
 --		end
-		
+
 --	end
 --end
-
-
 
 -----------------------------------------------------
 -- Function Reference Lists
@@ -168,6 +186,7 @@ end
 local AuraEvents = {
 	--["UNIT_TARGET"] = EventUnitTarget,
 	["UNIT_AURA"] = EventUnitAura,
+	["NAME_PLATE_UNIT_REMOVED"] = ClearAuraCache,
 	--["COMBAT_LOG_EVENT_UNFILTERED"]  = EventCombatLog,
 }
 
@@ -188,14 +207,18 @@ end
 -------------------------------------------------------------
 
 local function UpdateWidgetTime(frame, expiration)
-	if expiration == 0 or HideAuraDuration then
+	if expiration <= 0 or HideAuraDuration then
 		frame.TimeLeft:SetText("")
 	else
 		local timeleft = expiration-GetTime()
 		if timeleft > 60 then
 			frame.TimeLeft:SetText(floor(timeleft/60).."m")
 		else
-			frame.TimeLeft:SetText(floor(timeleft))
+			if timeleft < PreciseAuraThreshold then
+				frame.TimeLeft:SetText((("%%.%df"):format(1)):format(timeleft))
+			else
+				frame.TimeLeft:SetText(floor(timeleft))
+			end
 			--frame.TimeLeft:SetText(floor(timeleft*10)/10)
 		end
 	end
@@ -203,34 +226,11 @@ end
 
 local function UpdateAuraHighlighting(frame, aura)
 		local r, g, b, a = aura.r, aura.g, aura.b, aura.a
-		local glowType = aura.type
-		local expiration = aura.expiration-GetTime()
-		local pandemicThreshold = aura.duration and aura.expiration and aura.effect == "HARMFUL" and aura.duration > 0 and expiration <= aura.baseduration*0.3
-		local removeGlow = true
-	-- Pandemic and other Hightlighting
-		if (aura.effect == "HELPFUL" and ButtonGlowEnabled[aura.type]) or (PandemicEnabled and pandemicThreshold and ButtonGlowEnabled["Pandemic"]) then
-			removeGlow = false
-			frame.BorderHighlight:Hide()
-			frame.Border:Hide()
-			ButtonGlow.ShowOverlayGlow(frame)
-			frame.__LBGoverlay:SetFrameLevel(frame:GetFrameLevel() or 65)
-		elseif PandemicEnabled and pandemicThreshold then
-			frame.BorderHighlight:SetVertexColor(PandemicColor.r,PandemicColor.g,PandemicColor.b,PandemicColor.a)
-			frame.BorderHighlight:Show()
-			frame.Border:Hide()
-		elseif r then
+		if r then
 			frame.BorderHighlight:SetVertexColor(r, g or 1, b or 1, a or 1)
 			frame.BorderHighlight:Show()
 			frame.Border:Hide()
 		else frame.BorderHighlight:Hide(); frame.Border:Show() end
-
-		-- Remove ButtonGlow if appropriate
-		if frame.__LBGoverlay and removeGlow then ButtonGlow.HideOverlayGlow(frame) end
-
-		if frame.PandemicTimer then frame.PandemicTimer:Cancel() end
-		if PandemicEnabled and not pandemicThreshold and aura.duration > 0 then
-			frame.PandemicTimer = C_Timer.NewTimer(math.max(expiration-aura.baseduration*0.3, 0), function() UpdateAuraHighlighting(frame, aura) end)	-- Not sure how heavy doing it this way is, however, since this method still uses 'C_Timer.After' it should be fine.
-		end
 end
 
 local function UpdateIcon(frame, aura)
@@ -239,7 +239,7 @@ local function UpdateIcon(frame, aura)
 		frame.Icon:SetTexture(aura.texture)
 
 		-- Stacks
-		if aura.stacks and aura.stacks > 1 then frame.Stacks:SetText(aura.stacks)
+		if not HideAuraStacks and aura.stacks and aura.stacks > 1 then frame.Stacks:SetText(aura.stacks)
 		else frame.Stacks:SetText("") end
 
 		-- Hightlighting
@@ -253,7 +253,7 @@ local function UpdateIcon(frame, aura)
 
 			frame.Cooldown:SetDrawSwipe(not HideCooldownSpiral)
 			frame.Cooldown:SetDrawEdge(not HideCooldownSpiral)
-			
+
 		else
 			--SetCooldown(frame.Cooldown, 0, 0)	-- Clear Cooldown (Clean Version)
 			frame.Cooldown:SetCooldown(0, 0)
@@ -308,8 +308,7 @@ local function UpdateIconGrid(frame, unitid)
 			local aura = {}
 
 			do
-				--local name, icon, stacks, auraType, duration, expiration, caster, canStealOrPurge, nameplateShowPersonal, spellid = UnitAura(unitid, auraIndex, auraFilter)		-- UnitaAura
-				local name, icon, stacks, auraType, duration, expiration, caster, canStealOrPurge, nameplateShowPersonal, spellid = LCD:UnitAura(unitid, auraIndex, auraFilter)		-- UnitaAura
+				local name, icon, stacks, auraType, duration, expiration, caster, canStealOrPurge, nameplateShowPersonal, spellid = LCDUnitAura(unitid, auraIndex, auraFilter)		-- UnitaAura
 				local casterGUID
 
 				aura.name = name
@@ -324,21 +323,13 @@ local function UpdateIconGrid(frame, unitid)
 				aura.expiration = expiration
 				aura.duration = duration
 
-
-				--local durationNew, expirationTimeNew = LibClassicDurations:GetAuraDurationByUnit(unit, spellId, unitCaster, name)
-		  --  if duration == 0 and durationNew then
-		  --      duration = durationNew
-		  --      expirationTime = expirationTimeNew
-		  --  end
-
-				--if caster then casterGUID = UnitGUID(caster) end
-				--if AuraExpiration[unitGUID] and AuraExpiration[unitGUID][casterGUID] and AuraExpiration[unitGUID][casterGUID][spellid] then
-				--	aura.duration = AuraExpiration[unitGUID][casterGUID][spellid].duration
-				--	aura.expiration = AuraExpiration[unitGUID][casterGUID][spellid].expiration
-				--else
-				--	aura.duration = 0
-				--	aura.expiration = 0
-				--end		
+				--if aura.duration == 0 and aura.expiration == 0 then
+				--	if caster then casterGUID = UnitGUID(caster) end
+				--	if AuraExpiration[unitGUID] and AuraExpiration[unitGUID][casterGUID] and AuraExpiration[unitGUID][casterGUID][spellid] then
+				--		aura.duration = AuraExpiration[unitGUID][casterGUID][spellid].duration
+				--		aura.expiration = AuraExpiration[unitGUID][casterGUID][spellid].expiration
+				--	end
+				--end
 
 				-- Pandemic Base duration
 				if spellid and caster == "player" then
@@ -356,9 +347,13 @@ local function UpdateIconGrid(frame, unitid)
 			if aura.name then
 				local show, priority, r, g, b, a = AuraFilterFunction(aura)
 				local emphasized, ePriority = EmphasizedAuraFilterFunction(aura)
+				local existing = AuraCache[unitid][aura.name]
 				--print(aura.name, show, priority)
 				--show = true
-				AuraCache[unitid][aura.name], AuraCache[unitid][tostring(aura.spellid)] = true, true -- Used by Custom Color Conditions
+
+				-- Used by Custom Color Conditions (Always overwrite if the aura isn't the players)
+				if not existing or existing.caster ~= "player" then AuraCache[unitid][aura.name], AuraCache[unitid][tostring(aura.spellid)] = aura, aura end
+
 				-- Store Order/Priority
 				if show then
 					aura.priority = priority or 10
@@ -371,7 +366,7 @@ local function UpdateIconGrid(frame, unitid)
 				if emphasized then
 					aura.priority = ePriority or 10
 					--emphasizedAuras[aura.name], emphasizedAuras[tostring(aura.spellid)] = aura, aura
-					emphasizedAuras[tostring(aura.spellid)] = aura
+					emphasizedAuras[#emphasizedAuras+1] = aura
 				end
 			else
 				if auraFilter == "HARMFUL" then
@@ -407,7 +402,7 @@ local function UpdateIconGrid(frame, unitid)
 			}
 		end
 		--]]
-		
+
 
 		-- Display Auras
 		------------------------------------------------------------------------------------------------------
@@ -423,7 +418,7 @@ local function UpdateIconGrid(frame, unitid)
 
 		EmphasizedAura, EmphasizedAuraCount = frame.emphasized:SetAura(emphasizedAuras)	-- Display Emphasized Aura, returns displayed aura
 
-		if storedAuraCount > 0 or next(EmphasizedAura) then frame:Show() end -- Show the parent frame
+		if not (HideInHeadlineMode and frame.style == "NameOnly") and (storedAuraCount > 0 or next(EmphasizedAura))  then frame:Show() end -- Show the parent frame
 		if storedAuraCount > 0 then
 			sort(storedAuras, AuraSortFunction)
 
@@ -433,7 +428,7 @@ local function UpdateIconGrid(frame, unitid)
 
 				if aura.spellid and aura.expiration and not(EmphasizedUnique and EmphasizedAura[tostring(aura.spellid)]) then
 					-- Sort buffs and debuffs
-					if aura.effect == "HELPFUL" then 
+					if aura.effect == "HELPFUL" then
 						table.insert(BuffAuras, aura)
 						BuffSlotCount = BuffSlotCount + 1
 					elseif DebuffSlotCount < DebuffLimit then
@@ -452,15 +447,16 @@ local function UpdateIconGrid(frame, unitid)
 			end
 
 			-- Calculate Buff Offset
-			local rowOffset
-			DisplayedRows = (math.floor((DebuffSlotCount + BuffSlotCount - 1)/DebuffColumns)+1)
-			
-			 --print(DebuffColumns * DisplayedRows - (DebuffSlotCount + BuffSlotCount))
-			if DebuffColumns * DisplayedRows - (DebuffSlotCount + BuffSlotCount) >= SpacerSlots then
-				rowOffset = math.max(DebuffColumns * DisplayedRows, DebuffColumns) -- Same Row with space between
-			elseif BuffSlotCount > 0 then
-				rowOffset = DebuffColumns * (DisplayedRows + 1)	-- Seperate Row
-				DisplayedRows = DisplayedRows+1
+			local rowOffset = DebuffSlotCount+1	-- Offset as a debuff would be
+			DisplayedRows = (math.floor((DebuffSlotCount + BuffSlotCount - 1)/DebuffColumns) + math.min(DebuffSlotCount, 1))
+
+			if BuffSeparationMode < 3 then
+				if BuffSeparationMode == 2 and DebuffColumns * DisplayedRows - (DebuffSlotCount + BuffSlotCount) >= SpacerSlots then
+					rowOffset = math.max(DebuffColumns * DisplayedRows, DebuffColumns) -- Same Row with space between
+				elseif BuffSlotCount > 0 then
+					rowOffset = DebuffColumns * (DisplayedRows + 1)	-- Seperate Row
+					DisplayedRows = DisplayedRows+1
+				end
 			end
 
 			-- Loop through buffs and call function to display them
@@ -485,13 +481,21 @@ local function UpdateIconGrid(frame, unitid)
 			AuraIconFrames[1]:SetPoint(AuraAlignment, offsetX, 0)
 		end
 
+		DisplayedRows = math.max(0, DisplayedRows)
+		EmphasizedAuraCount = math.max(1, EmphasizedAuraCount) -- Make sure we aren't setting 0 as this can detach the frame...
+
+		-- Set Height/Width of Aura Frames
 		frame:SetHeight(DisplayedRows*16 + (DisplayedRows-1)*8) -- Set Height of the parent for easier alignment of the Emphasized aura.
 		frame.emphasized:SetWidth(EmphasizedAuraCount * AuraWidth)
 end
 
 function UpdateWidget(frame)
 		local unitid = frame.unitid
-
+		if(HideInHeadlineMode and frame.style == "NameOnly") then
+			frame:Hide()
+		else
+			frame:Show()
+		end
 		UpdateIconGrid(frame, unitid)
 end
 
@@ -499,6 +503,7 @@ end
 local function UpdateWidgetContext(frame, unit)
 	local unitid = unit.unitid
 	frame.unitid = unitid
+	frame.style = unit.style
 
 	WidgetList[unitid] = frame
 
@@ -512,7 +517,8 @@ local function ClearWidgetContext(frame)
 end
 
 local function ExpireFunction(icon)
-	UpdateWidget(icon.Parent)
+	-- UpdateWidget(icon.Parent)
+	UpdateIcon(icon) -- Won't re-arrange auras to fill empty slots, but at least it won't show and hopefully will prevent script timeouts from the expire function (This function is really just a backup that rarely gets run anyways)
 end
 
 -------------------------------------------------------------
@@ -661,6 +667,7 @@ local function UpdateIconConfig(frame)
 	if iconTable then
 		-- Create Icons
 		for index = 1, AuraLimit do
+			--if not iconTable[index] then print("Creating aura icon"); auraIconsCreated = (auraIconsCreated or 0) + 1; print(auraIconsCreated);end
 			local icon = iconTable[index] or CreateAuraIcon(frame)
 			iconTable[index] = icon
 			icon:SetScale(AuraScale)
@@ -695,6 +702,9 @@ local function UpdateEmphasizedIconConfig(frame)
 
 	--local columns = 1
 	local auraLimit = MaxEmphasizedAuras
+	frame:SetScale(EmphasizedAuraScale)
+	frame:ClearAllPoints()
+	frame:SetPoint("BOTTOM", frame:GetParent(), "TOP", EmphasizedScaleOptions.offset.x, 2 + EmphasizedScaleOptions.offset.y)
 
 	if iconTable then
 		-- Create Icons
@@ -720,9 +730,26 @@ local function UpdateWidgetConfig(frame)
 	UpdateEmphasizedIconConfig(frame.emphasized)
 end
 
+local function UpdateWidgetOffset(frame, x, y)
+	local config = frame.lastConfig
+	frame:ClearAllPoints()
+	frame:SetPoint(config.anchor or "TOP", config.relFrame, config.anchorRel or config.anchor or "TOP", config.x or 0, (config.y or 0) + (y or 0))
+end
+
+local function SetCustomPoint(frame, anchor, relFrame, anchorRel, x, y)
+	frame.lastConfig = {
+		anchor = anchor,
+		relFrame = relFrame,
+		anchorRel = anchorRel,
+		x = x,
+		y = y
+	}
+
+	UpdateWidgetOffset(frame)
+end
+
 -- Create the Main Widget Body and Icon Array
 local function CreateAuraWidget(parent, style)
-
 	-- Create Base frame
 	local frame = CreateFrame("Frame", nil, parent)
 	frame:SetWidth(128); frame:SetHeight(32); frame:Show()
@@ -730,7 +757,11 @@ local function CreateAuraWidget(parent, style)
 
 	-- Create Emphasized Frame
 	frame.emphasized = CreateFrame("Frame", nil, frame)
-	frame.emphasized:SetWidth(32); frame.emphasized:SetHeight(32); frame.emphasized:SetPoint("BOTTOM", frame, "TOP", 0, 2); frame.emphasized:SetScale(2); frame.emphasized:Show()
+	frame.emphasized:SetWidth(32)
+	frame.emphasized:SetHeight(32)
+	frame.emphasized:SetPoint("BOTTOM", frame, "TOP", 0, 2)
+	frame.emphasized:SetScale(EmphasizedAuraScale)
+	frame.emphasized:Show()
 
 	-- Create Icon Grid
 	frame.AuraIconFrames = {}
@@ -747,35 +778,31 @@ local function CreateAuraWidget(parent, style)
 	frame.Update = UpdateWidgetContext
 	frame.UpdateConfig = UpdateWidgetConfig
 	frame.UpdateTarget = UpdateWidgetTarget
+	frame.SetCustomPoint = SetCustomPoint
+	frame.UpdateOffset = UpdateWidgetOffset
 
 	-- Emphasized Functions
 	frame.emphasized.SetAura = function(frame, auras)
-		local shown = {}
+		local shown = 0
 		local ids = {}
+		local auraLimit = MaxEmphasizedAuras
 		sort(auras, AuraSortFunction)
 
-		for k, v in pairs(auras) do
-			if #shown < 3 then
-				table.insert(shown, auras[k])
-				ids[k] = true
-				UpdateIcon(frame.AuraIconFrames[#shown], auras[k])
-			end
+
+		for index = 1, #auras do
+			if index > auraLimit then break end
+			shown = shown+1
+			ids[tostring(auras[index].spellid)] = true
+			UpdateIcon(frame.AuraIconFrames[index], auras[index])
 		end
 
 		-- Cleanup empty aura slots
-		for i=#shown+1, MaxEmphasizedAuras do
+		for i=shown+1, #frame.AuraIconFrames do
 			UpdateIcon(frame.AuraIconFrames[i])
 		end
 
 
-		return ids, #shown
-
-	--	for k, v in pairs(auras) do
-	--		if not name or v.priority < auras[name].priority then name = k end
-	--	end
-
-	--	UpdateIcon(frame.AuraIconFrames[1], auras[name])
-	--	return auras[name]
+		return ids, shown
 	end
 
 	return frame
@@ -827,25 +854,32 @@ local function SetAuraOptions(LocalVars)
 
 	HideCooldownSpiral = LocalVars.HideCooldownSpiral
 	HideAuraDuration = LocalVars.HideAuraDuration
+	HideAuraStacks = LocalVars.HideAuraStacks
 	AuraScale = LocalVars.AuraScale
+	EmphasizedAuraScale = LocalVars.EmphasizedAuraScale
 	AuraAlignment = Alignments[LocalVars.WidgetAuraAlignment]
+	-- ScaleOptions = LocalVars.WidgetAuraScaleOptions
+	EmphasizedScaleOptions = LocalVars.WidgetEmphasizedAuraScaleOptions
+	HideInHeadlineMode = LocalVars.HideAuraInHeadline
+	PreciseAuraThreshold = LocalVars.PreciseAuraThreshold
+	BuffSeparationMode = LocalVars.BuffSeparationMode
 end
 
-local function SetPandemic(enabled, color)
-	PandemicEnabled = enabled
-	PandemicColor = color
-end
+--local function SetPandemic(enabled, color)
+--	PandemicEnabled = enabled
+--	PandemicColor = color
+--end
 
-local function SetBorderTypes(pandemic, magic, enrage)
-	if pandemic == 2 then pandemic = true else pandemic = false end
-	if magic == 2 then magic = true else magic = false end
-	if enrage == 2 then enrage = true else enrage = false end
-	ButtonGlowEnabled = {
-		["Pandemic"] = pandemic,
-		["Magic"] = magic,
-		[""] = enrage,
-	}
-end
+--local function SetBorderTypes(pandemic, magic, enrage)
+--	if pandemic == 2 then pandemic = true else pandemic = false end
+--	if magic == 2 then magic = true else magic = false end
+--	if enrage == 2 then enrage = true else enrage = false end
+--	ButtonGlowEnabled = {
+--		["Pandemic"] = pandemic,
+--		["Magic"] = magic,
+--		[""] = enrage,
+--	}
+--end
 
 local function SetSpacerSlots(amount)
 	SpacerSlots = math.min(amount, DebuffColumns-1)
@@ -854,7 +888,6 @@ end
 local function SetEmphasizedSlots(amount)
 	MaxEmphasizedAuras = math.min(amount, DebuffColumns-1)
 end
-
 
 -----------------------------------------------------
 -- External
@@ -870,8 +903,8 @@ NeatPlatesWidgets.SetAuraFilter = SetAuraFilter
 NeatPlatesWidgets.SetEmphasizedAuraFilter = SetEmphasizedAuraFilter
 NeatPlatesWidgets.SetAuraOptions = SetAuraOptions
 
-NeatPlatesWidgets.SetPandemic = SetPandemic
-NeatPlatesWidgets.SetBorderTypes = SetBorderTypes
+--NeatPlatesWidgets.SetPandemic = SetPandemic
+--NeatPlatesWidgets.SetBorderTypes = SetBorderTypes
 NeatPlatesWidgets.SetSpacerSlots = SetSpacerSlots
 NeatPlatesWidgets.SetEmphasizedSlots = SetEmphasizedSlots
 

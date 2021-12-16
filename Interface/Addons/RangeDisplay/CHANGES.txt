@@ -1,8 +1,9 @@
 ------------------------------------------------------------------------
-r387 | mitch0 | 2018-08-01 19:46:54 +0000 (Wed, 01 Aug 2018) | 1 line
+r399 | mitch0 | 2020-10-18 18:30:57 +0000 (Sun, 18 Oct 2020) | 1 line
 Changed paths:
-   M /trunk/RangeDisplay.lua
+   M /trunk/RangeDisplay.toc
+   M /trunk/RangeDisplay_Options/RangeDisplay_Options.toc
 
-change default strata to MEDIUM
+toc bump
 ------------------------------------------------------------------------
 

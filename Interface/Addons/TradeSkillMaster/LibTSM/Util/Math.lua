@@ -11,7 +11,7 @@ local _, TSM = ...
 local Math = TSM.Init("Util.Math")
 local TempTable = TSM.Include("Util.TempTable")
 local NAN = math.huge * 0
-local IS_NAN_GT_INF = NAN > math.huge
+local IS_NAN_GT_INF = (NAN or 0) > math.huge
 local NAN_STR = tostring(NAN)
 local private = {
 	keysTemp = {},
@@ -26,6 +26,7 @@ local private = {
 --- Returns NAN.
 -- @treturn number NAN
 function Math.GetNan()
+	assert(NAN)
 	return NAN
 end
 
@@ -33,6 +34,7 @@ end
 -- @tparam number value The number to check
 -- @treturn boolean Whether or not the value is NAN
 function Math.IsNan(value)
+	assert(NAN)
 	if IS_NAN_GT_INF then
 		-- optimization if NAN > math.huge (which it is in Wow's version of lua)
 		return value > math.huge and tostring(value) == NAN_STR

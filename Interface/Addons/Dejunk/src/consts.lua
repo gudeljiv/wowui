@@ -38,8 +38,8 @@ local LE_ITEM_WEAPON_THROWN = _G.LE_ITEM_WEAPON_THROWN
 local LE_ITEM_WEAPON_UNARMED = _G.LE_ITEM_WEAPON_UNARMED
 local LE_ITEM_WEAPON_WAND = _G.LE_ITEM_WEAPON_WAND
 local LE_ITEM_WEAPON_WARGLAIVE = _G.LE_ITEM_WEAPON_WARGLAIVE
-local NUM_LE_ITEM_ARMORS = _G.NUM_LE_ITEM_ARMORS
-local NUM_LE_ITEM_WEAPONS = _G.NUM_LE_ITEM_WEAPONS
+local NUM_LE_ITEM_ARMORS = _G.NUM_LE_ITEM_ARMORS or _G.Enum.ItemArmorSubclassMeta.NumValues
+local NUM_LE_ITEM_WEAPONS = _G.NUM_LE_ITEM_WEAPONS or _G.Enum.ItemWeaponSubclassMeta.NumValues
 
 -- ============================================================================
 -- General Constants
@@ -48,7 +48,7 @@ local NUM_LE_ITEM_WEAPONS = _G.NUM_LE_ITEM_WEAPONS
 Consts.MAX_NUMBER = 2147483647 -- 32-bit signed
 Consts.SAFE_MODE_MAX = 12
 
--- SellBelowPrice
+-- sell.belowPrice
 if Addon.IS_RETAIL then
   Consts.SELL_BELOW_PRICE_MIN = 100 -- 1 silver
   Consts.SELL_BELOW_PRICE_MAX = 100 * 100 * 10 -- 10 gold
@@ -59,32 +59,15 @@ else
   Consts.SELL_BELOW_PRICE_STEP = 1 -- 1 copper
 end
 
--- SellBelowAverageILVL
-Consts.SELL_BELOW_AVERAGE_ILVL_MIN = 10
-Consts.SELL_BELOW_AVERAGE_ILVL_MAX = 100
-Consts.SELL_BELOW_AVERAGE_ILVL_STEP = 1
+-- destroy.autoOpen
+Consts.DESTROY_AUTO_SLIDER_MIN = 0
+Consts.DESTROY_AUTO_SLIDER_MAX = 16
+Consts.DESTROY_AUTO_SLIDER_STEP = 1
 
--- DestroyBelowPrice
-if Addon.IS_RETAIL then
-  Consts.DESTROY_BELOW_PRICE_MIN = 100 -- 1 silver
-  Consts.DESTROY_BELOW_PRICE_MAX = 100 * 100 * 10 -- 10 gold
-  Consts.DESTROY_BELOW_PRICE_STEP = 100 -- 1 silver
-else
-  Consts.DESTROY_BELOW_PRICE_MIN = 2 -- 2 copper
-  Consts.DESTROY_BELOW_PRICE_MAX = 100 * 100 * 1 -- 1 gold
-  Consts.DESTROY_BELOW_PRICE_STEP = 1 -- 1 copper
-end
-
--- DestroyExcessSoulShards
-Consts.DESTROY_EXCESS_SOUL_SHARDS_MIN = 3
-Consts.DESTROY_EXCESS_SOUL_SHARDS_MAX = 28
-Consts.DESTROY_EXCESS_SOUL_SHARDS_STEP = 1
-Consts.SOUL_SHARD_ITEM_ID = 6265
-
--- DestroySaveSpace
-Consts.DESTROY_SAVE_SPACE_MIN = 1
-Consts.DESTROY_SAVE_SPACE_MAX = 16
-Consts.DESTROY_SAVE_SPACE_STEP = 1
+-- sell.byType.itemLevelRange
+Consts.ITEM_LEVEL_RANGE_MIN = 1
+Consts.ITEM_LEVEL_RANGE_MAX = 999
+Consts.ITEM_LEVEL_RANGE_STEP = 1
 
 -- ============================================================================
 -- Consts Functions
@@ -113,8 +96,11 @@ function Consts:Initialize()
   if Addon.IS_RETAIL then
     self.BATTLEPET_CLASS = GetItemClassInfo(_G.LE_ITEM_CLASS_BATTLEPET)
     self.COMPANION_SUBCLASS = GetItemSubClassInfo(_G.LE_ITEM_CLASS_MISCELLANEOUS, 2)
-    self.GEM_CLASS = GetItemClassInfo(_G.LE_ITEM_CLASS_GEM)
     self.GLYPH_CLASS = GetItemClassInfo(_G.LE_ITEM_CLASS_GLYPH)
+  end
+
+  if not Addon.IS_CLASSIC then
+    self.GEM_CLASS = GetItemClassInfo(_G.LE_ITEM_CLASS_GEM)
   end
 
   -- Armor class and subclasses
@@ -167,7 +153,7 @@ function Consts:BuildSuitables(class)
     -- Armor
     self.SUITABLE_ARMOR[LE_ITEM_ARMOR_LEATHER] = true
 
-    if Addon.IS_CLASSIC then
+    if Addon.IS_CLASSIC or Addon.IS_BC then
       self.SUITABLE_ARMOR[LE_ITEM_ARMOR_CLOTH] = true
       self.SUITABLE_ARMOR[LE_ITEM_ARMOR_IDOL] = true
     end
@@ -188,7 +174,7 @@ function Consts:BuildSuitables(class)
     -- Armor
     self.SUITABLE_ARMOR[LE_ITEM_ARMOR_MAIL] = true
 
-    if Addon.IS_CLASSIC then
+    if Addon.IS_CLASSIC or Addon.IS_BC then
       self.SUITABLE_ARMOR[LE_ITEM_ARMOR_CLOTH] = true
       self.SUITABLE_ARMOR[LE_ITEM_ARMOR_LEATHER] = true
     end
@@ -203,7 +189,7 @@ function Consts:BuildSuitables(class)
     self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_STAFF] = true
     self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_UNARMED] = true
 
-    if Addon.IS_CLASSIC then
+    if Addon.IS_CLASSIC or Addon.IS_BC then
       self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_DAGGER] = true
       self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD1H] = true
       self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD2H] = true
@@ -232,7 +218,7 @@ function Consts:BuildSuitables(class)
     self.SUITABLE_ARMOR[LE_ITEM_ARMOR_PLATE] = true
     self.SUITABLE_ARMOR[LE_ITEM_ARMOR_SHIELD] = true
 
-    if Addon.IS_CLASSIC then
+    if Addon.IS_CLASSIC or Addon.IS_BC then
       self.SUITABLE_ARMOR[LE_ITEM_ARMOR_CLOTH] = true
       self.SUITABLE_ARMOR[LE_ITEM_ARMOR_LEATHER] = true
       self.SUITABLE_ARMOR[LE_ITEM_ARMOR_MAIL] = true
@@ -259,7 +245,7 @@ function Consts:BuildSuitables(class)
     -- Armor
     self.SUITABLE_ARMOR[LE_ITEM_ARMOR_LEATHER] = true
 
-    if Addon.IS_CLASSIC then
+    if Addon.IS_CLASSIC or Addon.IS_BC then
       self.SUITABLE_ARMOR[LE_ITEM_ARMOR_CLOTH] = true
     end
 
@@ -271,7 +257,7 @@ function Consts:BuildSuitables(class)
 
     if Addon.IS_RETAIL then
       self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_AXE1H] = true
-    else -- IS_CLASSIC
+    else -- IS_CLASSIC or IS_BC
       self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_BOWS] = true
       self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_CROSSBOW] = true
       self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_GUNS] = true
@@ -282,7 +268,7 @@ function Consts:BuildSuitables(class)
     self.SUITABLE_ARMOR[LE_ITEM_ARMOR_MAIL] = true
     self.SUITABLE_ARMOR[LE_ITEM_ARMOR_SHIELD] = true
 
-    if Addon.IS_CLASSIC then
+    if Addon.IS_CLASSIC or Addon.IS_BC then
       self.SUITABLE_ARMOR[LE_ITEM_ARMOR_CLOTH] = true
       self.SUITABLE_ARMOR[LE_ITEM_ARMOR_LEATHER] = true
       self.SUITABLE_ARMOR[LE_ITEM_ARMOR_TOTEM] = true
@@ -309,7 +295,7 @@ function Consts:BuildSuitables(class)
     self.SUITABLE_ARMOR[LE_ITEM_ARMOR_PLATE] = true
     self.SUITABLE_ARMOR[LE_ITEM_ARMOR_SHIELD] = true
 
-    if Addon.IS_CLASSIC then
+    if Addon.IS_CLASSIC or Addon.IS_BC then
       self.SUITABLE_ARMOR[LE_ITEM_ARMOR_CLOTH] = true
       self.SUITABLE_ARMOR[LE_ITEM_ARMOR_LEATHER] = true
       self.SUITABLE_ARMOR[LE_ITEM_ARMOR_MAIL] = true
@@ -326,7 +312,7 @@ function Consts:BuildSuitables(class)
     self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD2H] = true
     self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_UNARMED] = true
 
-    if Addon.IS_CLASSIC then
+    if Addon.IS_CLASSIC or Addon.IS_BC then
       self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_BOWS] = true
       self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_CROSSBOW] = true
       self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_DAGGER] = true

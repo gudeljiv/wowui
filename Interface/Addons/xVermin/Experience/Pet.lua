@@ -33,7 +33,7 @@ PetXP.XPbar.Background:SetAllPoints(PetXP.XPbar)
 PetXP.XPbar.Background:SetTexture("Interface\\AddOns\\xVermin\\Media\\statusbarTexture")
 PetXP.XPbar.Background:SetVertexColor(0.25, 0.25, 0.25, 1)
 
-PetXP.XPbar.BackgroundShadow = CreateFrame("Frame", nil, PetXP.XPbar)
+PetXP.XPbar.BackgroundShadow = CreateFrame("Frame", nil, PetXP.XPbar, BackdropTemplateMixin and "BackdropTemplate")
 PetXP.XPbar.BackgroundShadow:SetFrameStrata("BACKGROUND")
 PetXP.XPbar.BackgroundShadow:SetPoint("TOPLEFT", -4, 4)
 PetXP.XPbar.BackgroundShadow:SetPoint("BOTTOMRIGHT", 4, -4)

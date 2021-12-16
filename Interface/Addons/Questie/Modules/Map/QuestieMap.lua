@@ -16,6 +16,8 @@ local QuestiePlayer = QuestieLoader:ImportModule("QuestiePlayer");
 local QuestieDB = QuestieLoader:ImportModule("QuestieDB");
 ---@type ZoneDB
 local ZoneDB = QuestieLoader:ImportModule("ZoneDB")
+---@type l10n
+local l10n = QuestieLoader:ImportModule("l10n")
 
 QuestieMap.ICON_MAP_TYPE = "MAP";
 QuestieMap.ICON_MINIMAP_TYPE = "MINIMAP";
@@ -44,20 +46,22 @@ local normalizedValue = 1 / fadeOverDistance; --Opacity / Distance to fade over
 
 local HBD = LibStub("HereBeDragonsQuestie-2.0")
 local HBDPins = LibStub("HereBeDragonsQuestie-Pins-2.0")
-local HBDMigrate = LibStub("HereBeDragonsQuestie-Migrate")
 
 --We should really try and squeeze out all the performance we can, especially in this.
 local tostring = tostring;
 local tinsert = table.insert;
 local pairs = pairs;
 local ipairs = ipairs;
-local tpack = table.pack;
 local tremove = table.remove;
 local tunpack = unpack;
 
 
 QuestieMap.drawTimer = nil;
 QuestieMap.fadeLogicTimerShown = nil;
+local fadeLogicCoroutine
+
+local isDrawQueueDisabled = false
+
 
 --Get the frames for a quest, this returns all of the frames
 function QuestieMap:GetFramesForQuest(questId)
@@ -89,12 +93,12 @@ function QuestieMap:UnloadQuestFrames(questId, iconType)
                 end
             end
         end
-        Questie:Debug(DEBUG_DEVELOP, "[QuestieMap]: ".. QuestieLocale:GetUIString('DEBUG_UNLOAD_QFRAMES', questId))
+        Questie:Debug(Questie.DEBUG_DEVELOP, "[QuestieMap]: Unloading quest frames: %s", questId)
     end
 end
 
 --Get the frames for manual note, this returns all of the frames/spawns
----@param id integer @The ID of the NPC (>0) or object (<0)
+---@param id number @The ID of the NPC (>0) or object (<0)
 function QuestieMap:GetManualFrames(id, typ)
     typ = typ or "any"
     local frames = {}
@@ -107,11 +111,11 @@ function QuestieMap:GetManualFrames(id, typ)
     return frames
 end
 
----@param id integer @The ID of the NPC (>0) or object (<0)
+---@param id number @The ID of the NPC (>0) or object (<0)
 function QuestieMap:UnloadManualFrames(id, typ)
     typ = typ or "any"
     if QuestieMap.manualFrames[typ] and (QuestieMap.manualFrames[typ][id]) then
-        for index, frame in ipairs(QuestieMap:GetManualFrames(id, typ)) do
+        for _, frame in ipairs(QuestieMap:GetManualFrames(id, typ)) do
             frame:Unload();
         end
         QuestieMap.manualFrames[typ][id] = nil;
@@ -126,16 +130,16 @@ function QuestieMap:ResetManualFrames(typ)
 end
 
 -- Rescale all the icons
-function QuestieMap:RescaleIcons(modifier)
+function QuestieMap:RescaleIcons()
     for _, framelist in pairs(QuestieMap.questIdFrames) do
         for _, frameName in pairs(framelist) do
-            QuestieMap.utils:RecaleIcon(frameName, modifier)
+            QuestieMap.utils:RescaleIcon(frameName)
         end
     end
     for _, frameTypeList in pairs(QuestieMap.manualFrames) do
         for _, framelist in pairs(frameTypeList) do
             for _, frameName in ipairs(framelist) do
-                QuestieMap.utils:RecaleIcon(frameName, modifier)
+                QuestieMap.utils:RescaleIcon(frameName)
             end
         end
     end
@@ -149,14 +153,22 @@ QuestieMap._mapDrawQueue = mapDrawQueue
 QuestieMap._minimapDrawQueue = minimapDrawQueue
 
 function QuestieMap:InitializeQueue() -- now called on every loading screen
-    Questie:Debug(DEBUG_DEVELOP, "[QuestieMap] Starting draw queue timer!")
+    Questie:Debug(Questie.DEBUG_DEVELOP, "[QuestieMap] Starting draw queue timer!")
     local isInInstance, instanceType = IsInInstance()
-    if not isInInstance or instanceType == "pvp" then -- dont run map updates while in raid
-        QuestieMap._disableQueue = nil
+
+    if (not isInInstance) or instanceType ~= "raid" then -- only run map updates when not in a raid
+        isDrawQueueDisabled = false
         if not QuestieMap.drawTimer then 
             QuestieMap.drawTimer = C_Timer.NewTicker(0.2, QuestieMap.ProcessQueue)
-            QuestieMap.processCounter = 0 -- used to reduce calls on edge notes
-            QuestieMap.fadeLogicTimerShown = C_Timer.NewTicker(0.3, QuestieMap.ProcessShownMinimapIcons)
+            -- ! Remember to update the distance variable in ProcessShownMinimapIcons if you change the timer
+            QuestieMap.fadeLogicTimerShown = C_Timer.NewTicker(0.1, function ()
+                if fadeLogicCoroutine and coroutine.status(fadeLogicCoroutine) == "suspended" then
+                    coroutine.resume(fadeLogicCoroutine)
+                end
+            end)
+        end
+        if not fadeLogicCoroutine then
+            fadeLogicCoroutine = coroutine.create(QuestieMap.ProcessShownMinimapIcons)
         end
     else
         if QuestieMap.drawTimer then -- cancel existing timer while in dungeon/raid
@@ -165,70 +177,93 @@ function QuestieMap:InitializeQueue() -- now called on every loading screen
             QuestieMap.fadeLogicTimerShown:Cancel()
             QuestieMap.fadeLogicTimerShown = nil
         end
-        QuestieMap._disableQueue = true
+        isDrawQueueDisabled = true
     end
 end
 
-
---Override OnMapChanged from MapCanvasDataProviderMixin (https://www.townlong-yak.com/framexml/27101/Blizzard_MapCanvas/MapCanvas_DataProviderBase.lua#74)
---This could in theory be skipped by instead using our own MapCanvasDataProviderMixin
---The reason i don't is becauase i want the scaling to happen AFTER HBD has processed all the icons.
-HBDPins.worldmapProvider.ORG_OnMapChanged = HBDPins.worldmapProvider.OnMapChanged;
 function QuestieMap:GetScaleValue()
     local mapId = HBDPins.worldmapProvider:GetMap():GetMapID();
     local scaling = 1;
     if(mapId == 947) then --Azeroth
-        if(Questie.db.char.enableMinimalisticIcons) then
-            scaling = 0.4
-        else
-            scaling = 0.85
-        end
+        scaling = 0.85
     elseif(mapId == 1414 or mapId == 1415) then -- EK and Kalimdor
-        if(Questie.db.char.enableMinimalisticIcons) then
-            scaling = 0.5
-        else
-            scaling = 0.9
-        end
+        scaling = 0.9
     end
-end
-
-function HBDPins.worldmapProvider:OnMapChanged()
-    --Call original one : https://www.townlong-yak.com/framexml/27101/Blizzard_MapCanvas/MapCanvas_DataProviderBase.lua#74
-    HBDPins.worldmapProvider:ORG_OnMapChanged();
-
-    local scaling = QuestieMap:GetScaleValue()
-    for pin in HBDPins.worldmapProvider:GetMap():EnumeratePinsByTemplate("HereBeDragonsPinsTemplateQuestie") do
-        local frame = pin.icon;
-        QuestieMap.utils:RecaleIcon(frame, scaling)
-    end
+    return scaling
 end
 
 function QuestieMap:ProcessShownMinimapIcons()
-    local doEdgeUpdate = false
-    QuestieMap.processCounter = QuestieMap.processCounter + 1
-    if QuestieMap.processCounter > 13 then -- only update icons on the edge every 4 seconds
-        QuestieMap.processCounter = 0
-        doEdgeUpdate = true
-    end
+    --Upvalue the most used functions in here
+    local getTime, cYield, getWorldPos = GetTime, coroutine.yield, HBD.GetPlayerWorldPosition
 
-    local playerX, playerY, playerInstanceID = HBD:GetPlayerWorldPosition()
-    QuestieMap.playerX = playerX
-    QuestieMap.playerY = playerY
-    ---@param minimapFrame IconFrame
-    for minimapFrame, data in pairs(HBDPins.activeMinimapPins) do
-        if minimapFrame.miniMapIcon and ((data.distanceFromMinimapCenter < 1.1) or doEdgeUpdate) then
-            if minimapFrame.FadeLogic then
-                minimapFrame:FadeLogic()
+    --Max icons per tick
+    local maxCount = 50
+
+    --Local variables defined here instead of in loop
+    --saves time because it doesn't need to remake the variables
+    local doEdgeUpdate = true
+    local playerX, playerY
+    local count
+    local lastUpdate = getTime()
+
+    local xd, yd
+    local totalDistance = 0
+
+    --This coroutine never dies, we want it to keep looping forever
+    --yield stops it from being "infinite" and crashing the game
+    while true do
+        count = 0
+
+        playerX, playerY = getWorldPos()
+
+        --Calculate squared distance
+        -- No need for absolute values as these are used only as squared
+        xd = (playerX or 0) - (QuestieMap.playerX or 0)
+        yd = (playerY or 0) - (QuestieMap.playerY or 0)
+        --Instead of math.sqrt we just used the square distance for speed
+        totalDistance = totalDistance + (xd * xd + yd * yd)
+
+
+        --These variables are used inside the fadelogic
+        QuestieMap.playerX = playerX
+        QuestieMap.playerY = playerY
+
+        -- Only update icons on the edge every 1 seconds
+        -- totalDistance is used because sometimes we move so fast that we need to update it more often.
+        -- ! Remember to update the distance variable if you change the timer
+        if totalDistance > 3 or getTime() - lastUpdate >= 1 then
+            doEdgeUpdate = true
+            lastUpdate = getTime()
+            --print("Dist:", totalDistance)
+            totalDistance = 0
+        end
+
+        ---@param minimapFrame IconFrame
+        for minimapFrame, data in pairs(HBDPins.activeMinimapPins) do
+            if minimapFrame.miniMapIcon and ((data.distanceFromMinimapCenter < 1.1) or doEdgeUpdate) then
+                if minimapFrame.FadeLogic then
+                    minimapFrame:FadeLogic()
+                end
+                if minimapFrame.GlowUpdate then
+                    minimapFrame:GlowUpdate()
+                end
             end
-            if minimapFrame.GlowUpdate then
-                minimapFrame:GlowUpdate()
+
+            --Never run more than maxCount in a single run
+            if count > maxCount then
+                cYield()
+                count = 0
+            else
+                count = count + 1
             end
         end
+        cYield()
+        doEdgeUpdate = false
     end
 end
 
 function QuestieMap:QueueDraw(drawType, ...)
-    if not QuestieMap._disableQueue then -- dont queue when in raid
+    if (not isDrawQueueDisabled) then -- dont queue when in raid
         if(drawType == QuestieMap.ICON_MAP_TYPE) then
             tinsert(mapDrawQueue, {...});
         elseif(drawType == QuestieMap.ICON_MINIMAP_TYPE) then
@@ -240,10 +275,11 @@ end
 
 function QuestieMap:ProcessQueue()
     if next(mapDrawQueue) ~= nil or next(minimapDrawQueue) ~= nil then
-        for i = 1, math.min(24, math.max(#mapDrawQueue, #minimapDrawQueue)) do
+        for _ = 1, math.min(24, math.max(#mapDrawQueue, #minimapDrawQueue)) do
             local mapDrawCall = tremove(mapDrawQueue, 1);
             if(mapDrawCall) then
                 local frame = mapDrawCall[2];
+                --print(tostring(mapDrawCall[2].data.Name).." "..tostring(mapDrawCall[2]).." "..tostring(mapDrawCall[3]).." "..tostring(mapDrawCall[4]).." "..tostring(mapDrawCall[5]).." "..tostring(mapDrawCall[6]))
                 HBDPins:AddWorldMapIconMap(tunpack(mapDrawCall));
                 QuestieMap.utils:SetDrawOrder(frame);
             end
@@ -269,10 +305,10 @@ end
 -- Show NPC on map
 -- This function does the same for manualFrames as similar functions in
 -- QuestieQuest do for questIdFrames
----@param npcID integer @The ID of the NPC
+---@param npcID number @The ID of the NPC
 function QuestieMap:ShowNPC(npcID, icon, scale, title, body, disableShiftToRemove, typ, excludeDungeon)
     if type(npcID) ~= "number" then
-        Questie:Debug(DEBUG_DEVELOP, "[QuestieMap:ShowNPC]", "Got <" .. type(npcID) .. "> instead of <number>")
+        Questie:Debug(Questie.DEBUG_DEVELOP, "[QuestieMap:ShowNPC]", "Got <" .. type(npcID) .. "> instead of <number>")
         return
     end
     -- get the NPC data
@@ -292,7 +328,7 @@ function QuestieMap:ShowNPC(npcID, icon, scale, title, body, disableShiftToRemov
     data.Name = npc.name
     data.IsObjectiveNote = false
     data.ManualTooltipData = {}
-    data.ManualTooltipData.Title = title or (npc.name.." (NPC)")
+    data.ManualTooltipData.Title = title or (npc.name.." (".. l10n("NPC") .. ")")
     local level = tostring(npc.minLevel)
     local health = tostring(npc.minLevelHealth)
     if npc.minLevel ~= npc.maxLevel then
@@ -328,7 +364,7 @@ end
 -- Show object on map
 -- This function does the same for manualFrames as similar functions in
 -- QuestieQuest do for questIdFrames
----@param objectID integer
+---@param objectID number
 function QuestieMap:ShowObject(objectID, icon, scale, title, body, disableShiftToRemove, typ)
     if type(objectID) ~= "number" then return end
     -- get the gameobject data
@@ -382,8 +418,6 @@ function QuestieMap:DrawLineIcon(lineFrame, areaID, x, y)
         error("Questie"..": AddWorldMapIconMap: 'AreaID', 'x' and 'y' must be numbers "..areaID.." "..x.." "..y)
     end
 
-    --print("Drawing line in " .. ZoneDB.zoneIDToInternalName[areaID])
-
     local uiMapId = ZoneDB:GetUiMapIdByAreaId(areaID)
 
     HBDPins:AddWorldMapIconMap(Questie, lineFrame, uiMapId, x, y, HBD_PINS_WORLDMAP_SHOW_CURRENT)
@@ -393,7 +427,7 @@ end
 -- Draw manually added NPC/object notes
 -- TODO: item and custom notes
 --@param data table<...> @A table created by the calling function, must contain `id`, `Name`, `GetIconScale()`, and `Type`
---@param AreaID integer @The zone ID from the raw data
+--@param AreaID number @The zone ID from the raw data
 --@param x float @The X coordinate in 0-100 format
 --@param y float @The Y coordinate in 0-100 format
 function QuestieMap:DrawManualIcon(data, areaID, x, y, typ)
@@ -412,7 +446,7 @@ function QuestieMap:DrawManualIcon(data, areaID, x, y, typ)
 
     local uiMapId = ZoneDB:GetUiMapIdByAreaId(areaID)
     if (not uiMapId) then
-        Questie:Error("No UiMapID for areaId :".. areaID .. " " .. tostring(data.Name))
+        Questie:Debug(Questie.DEBUG_CRITICAL, "No UiMapID for areaId :".. areaID .. " " .. tostring(data.Name))
         return nil, nil
     end
     -- set the icon
@@ -477,7 +511,7 @@ function QuestieMap:DrawManualIcon(data, areaID, x, y, typ)
         end
     end
 
-    QuestieMap.utils:RecaleIcon(icon, QuestieMap:GetScaleValue())
+    QuestieMap.utils:RescaleIcon(icon)
 
     -- return the frames in case they need to be stored seperately from QuestieMap.manualFrames
     return icon, iconMinimap;
@@ -500,7 +534,7 @@ function QuestieMap:DrawWorldIcon(data, areaID, x, y, showFlag)
 
     local uiMapId = ZoneDB:GetUiMapIdByAreaId(areaID)
     if (not uiMapId) then
-        local parentMapId = nil
+        local parentMapId
         local mapInfo = C_Map.GetMapInfo(areaID)
         if mapInfo then
             parentMapId = mapInfo.parentMapID
@@ -519,6 +553,13 @@ function QuestieMap:DrawWorldIcon(data, areaID, x, y, showFlag)
 
     if (not showFlag) then
         showFlag = HBD_PINS_WORLDMAP_SHOW_WORLD
+    end
+
+    --print("UIMAPID: " .. tostring(uiMapId))
+    if uiMapId == nil then
+        --ZoneDB:GetUiMapIdByAreaId
+        error("No UiMapID or fitting uiMapId for areaId : ".. areaID .. " - ".. tostring(data.Name))
+        return nil, nil
     end
 
     local floatOnEdge = true
@@ -622,7 +663,7 @@ function QuestieMap:DrawWorldIcon(data, areaID, x, y, showFlag)
 
 
     --Hide unexplored logic
-    if(not QuestieMap.utils:IsExplored(iconMap.UiMapID, x, y) and Questie.db.char.hideUnexploredMapIcons) then
+    if (not QuestieMap.utils:IsExplored(iconMap.UiMapID, x, y) and Questie.db.char.hideUnexploredMapIcons) then
         iconMap:FakeHide()
         iconMinimap:FakeHide()
     end
@@ -640,7 +681,7 @@ end
 
 local closestStarter = {}
 function QuestieMap:FindClosestStarter()
-    local playerX, playerY, instance = HBD:GetPlayerWorldPosition();
+    local playerX, playerY, _ = HBD:GetPlayerWorldPosition();
     local playerZone = HBD:GetPlayerWorldPosition();
     for questId in pairs(QuestiePlayer.currentQuestlog) do
         if(not closestStarter[questId]) then
@@ -766,7 +807,7 @@ function QuestieMap:GetNearestSpawn(objective)
     local playerX, playerY, playerI = HBD:GetPlayerWorldPosition()
     local bestDistance = 999999999
     local bestSpawn, bestSpawnZone, bestSpawnId, bestSpawnType, bestSpawnName
-    if objective.spawnList then
+    if next(objective.spawnList) then
         for id, spawnData in pairs(objective.spawnList) do
             for zone, spawns in pairs(spawnData.Spawns) do
                 for _,spawn in pairs(spawns) do
@@ -798,8 +839,8 @@ function QuestieMap:GetNearestQuestSpawn(quest)
         return nil
     end
     if quest:IsComplete() == 1 then
-        local finisherSpawns = nil
-        local finisherName = nil
+        local finisherSpawns
+        local finisherName
         if quest.Finisher ~= nil then
             if quest.Finisher.Type == "monster" then
                 --finisher = QuestieDB:GetNPC(quest.Finisher.Id)
@@ -812,7 +853,7 @@ function QuestieMap:GetNearestQuestSpawn(quest)
         if finisherSpawns then -- redundant code
             local bestDistance = 999999999
             local playerX, playerY, playerI = HBD:GetPlayerWorldPosition()
-            local bestSpawn, bestSpawnZone, bestSpawnId, bestSpawnType, bestSpawnName
+            local bestSpawn, bestSpawnZone, bestSpawnType, bestSpawnName
             for zone, spawns in pairs(finisherSpawns) do
                 for _, spawn in pairs(spawns) do
                     local uiMapId = ZoneDB:GetUiMapIdByAreaId(zone)
@@ -832,7 +873,7 @@ function QuestieMap:GetNearestQuestSpawn(quest)
                     end
                 end
             end
-            return bestSpawn, bestSpawnZone, bestSpawnName, bestSpawnId, bestSpawnType, bestDistance
+            return bestSpawn, bestSpawnZone, bestSpawnName, bestSpawnType, bestDistance
         end
         return nil
     end
@@ -851,7 +892,7 @@ function QuestieMap:GetNearestQuestSpawn(quest)
             end
         end
     end -- end of nil error prevention
-    if quest.SpecialObjectives then
+    if next(quest.SpecialObjectives) then
         for _, objective in pairs(quest.SpecialObjectives) do
             local spawn, zone, Name, id, Type, dist = QuestieMap:GetNearestSpawn(objective)
             if spawn and dist < bestDistance and ((not objective.Needed) or objective.Needed ~= objective.Collected) then
@@ -877,10 +918,7 @@ QuestieMap.zoneWaypointHoverColorOverrides = {
 --    [38] = {0,0.6,1,1} -- loch modan
 }
 
-function QuestieMap:DrawWaypoints(icon, waypoints, zone, x, y, color)
-    --local cnt = 0 for _, a in pairs(waypoints) do for _ in pairs(a) do cnt = cnt + 1 end end
-    --print("Drawing ways in " .. ZoneDB.zoneIDToInternalName[zone] .. " for " .. icon.data.Name .. " " .. tostring(cnt) .. " pts")
-
+function QuestieMap:DrawWaypoints(icon, waypoints, zone, color)
     if waypoints and waypoints[1] and waypoints[1][1] and waypoints[1][1][1] then -- check that waypoint data actually exists
         local lineFrames = QuestieFramePool:CreateWaypoints(icon, waypoints, nil, color or QuestieMap.zoneWaypointColorOverrides[zone], zone)
         for _, lineFrame in ipairs(lineFrames) do

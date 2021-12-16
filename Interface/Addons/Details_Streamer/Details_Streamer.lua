@@ -20,7 +20,7 @@ StreamOverlay.CurrentVersion = "v1.2"
 local CastingInfo
 local ChannelInfo
 
-local fCast = CreateFrame("frame")
+local fCast = CreateFrame("frame", nil, nil, BackdropTemplateMixin and "BackdropTemplate")
 
 local getCastBar = function (unitId)
 	local plateFrame = C_NamePlate.GetNamePlateForUnit (unitId)
@@ -36,9 +36,9 @@ local getCastBar = function (unitId)
 	return castBar
 end
 
-local eventFrame = CreateFrame ("frame")
+local eventFrame = CreateFrame ("frame", nil, nil, BackdropTemplateMixin and "BackdropTemplate")
 
-local a = CreateFrame ("frame")
+local a = CreateFrame ("frame", nil, nil, BackdropTemplateMixin and "BackdropTemplate")
 a:RegisterEvent ("UNIT_SPELLCAST_SENT")
 a:RegisterEvent ("UNIT_SPELLCAST_STOP")
 a:RegisterEvent ("UNIT_SPELLCAST_SUCCEEDED")
@@ -145,7 +145,7 @@ StreamOverlay.battle_content = {}
 -- StreamOverlay.OnDeath hook deaths from details! and show here (if player only).
 
 --frame listening to UNIT_CAST events
-local listener = CreateFrame ("frame")
+local listener = CreateFrame ("frame", nil, nil, BackdropTemplateMixin and "BackdropTemplate")
 --max left and right text sizes, is updated later in a function
 local text1_size, text2_size = 200, 200
 --icon size, is updated later in a function
@@ -234,7 +234,7 @@ local function CreatePluginFrames()
 	end
 	
 	--> title bar, only shown when the frame isn't locked
-	local titlebar = CreateFrame ("frame", "DetailsStreamerTitlebar", SOF)
+	local titlebar = CreateFrame ("frame", "DetailsStreamerTitlebar", SOF, BackdropTemplateMixin and "BackdropTemplate")
 	titlebar:SetHeight (20)
 	titlebar:SetPoint ("bottomleft", SOF, "topleft")
 	titlebar:SetPoint ("bottomright", SOF, "topright")
@@ -334,8 +334,9 @@ local function CreatePluginFrames()
 	end
 	
 	--> two resizers
-	local left_resize = CreateFrame ("button", "DetailsStreamerLeftResizer", SOF)
-	local right_resize = CreateFrame ("button", "DetailsStreamerRightResizer", SOF)
+	local left_resize = CreateFrame ("button", "DetailsStreamerLeftResizer", SOF, BackdropTemplateMixin and "BackdropTemplate")
+	local right_resize = CreateFrame ("button", "DetailsStreamerRightResizer", SO, BackdropTemplateMixin and "BackdropTemplate")
+	right_resize:Hide()
 	left_resize:SetPoint ("bottomleft", SOF, "bottomleft")
 	right_resize:SetPoint ("bottomright", SOF, "bottomright")
 	left_resize:SetSize (16, 16)
@@ -405,7 +406,7 @@ local function CreatePluginFrames()
 	
 	
 	--> scroll frame
-	local autoscroll = CreateFrame ("scrollframe", "Details_StreamOverlayScrollFrame", SOF, "FauxScrollFrameTemplate")
+	local autoscroll = CreateFrame ("scrollframe", "Details_StreamOverlayScrollFrame", SOF, "FauxScrollFrameTemplate, BackdropTemplate")
 	autoscroll:SetScript ("OnVerticalScroll", function (self, offset) FauxScrollFrame_OnVerticalScroll (self, offset, 20, StreamOverlay.UpdateLines) end)
 	
 	--> looks like this isn't working
@@ -540,8 +541,8 @@ local function CreatePluginFrames()
 	
 		local index = #StreamOverlay.battle_lines+1
 	
-		local f = CreateFrame ("frame", "StreamOverlayBar" .. index, SOF)
-		local statusbar = CreateFrame ("StatusBar", "StreamOverlayBar" .. index .. "StatusBar", f)
+		local f = CreateFrame ("frame", "StreamOverlayBar" .. index, SOF, BackdropTemplateMixin and "BackdropTemplate")
+		local statusbar = CreateFrame ("StatusBar", "StreamOverlayBar" .. index .. "StatusBar", f, BackdropTemplateMixin and "BackdropTemplate")
 		local statusbar_texture = statusbar:CreateTexture (nil, "border")
 		statusbar_texture:SetTexture (1, 1, 1, 0.15)
 		statusbar:SetStatusBarColor (0, 0, 0, 0)
@@ -1125,7 +1126,7 @@ local AMP_Tick = C_Timer.NewTicker (1, function()
 	--print ("APM:", APM)
 	ACTIONS = 0
 end)
-local APM_FRAME = CreateFrame ("frame", "DetailsAPMFrame", UIParent)
+local APM_FRAME = CreateFrame ("frame", "DetailsAPMFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 APM_FRAME:RegisterEvent ("PLAYER_STARTED_MOVING")
 APM_FRAME:RegisterEvent ("PLAYER_STOPPED_MOVING")
 APM_FRAME:SetScript ("OnEvent", function()
@@ -1372,7 +1373,7 @@ end
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --on screen hps dps
 
-local screen_frame = CreateFrame ("frame", "StreamerOverlayDpsHpsFrame", UIParent)
+local screen_frame = CreateFrame ("frame", "StreamerOverlayDpsHpsFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 screen_frame:SetSize (70, 20)
 screen_frame:SetBackdrop ({bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tile = true, tileSize = 16, insets = {left = 0, right = 0, top = 0, bottom = 0}})
 screen_frame:SetBackdropColor (.1, .1, .1, .9)
@@ -2082,7 +2083,7 @@ function StreamOverlay:OnEvent (_, event, ...)
 						
 						StreamOverlay.ShowWelcomeFrame:Cancel()
 						
-						local welcome_window = CreateFrame ("frame", "StreamOverlayWelcomeWindow", UIParent)
+						local welcome_window = CreateFrame ("frame", "StreamOverlayWelcomeWindow", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 						welcome_window:SetPoint ("center", UIParent, "center")
 						welcome_window:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true})
 						welcome_window:SetBackdropColor (0, 0, 0, 0.5)

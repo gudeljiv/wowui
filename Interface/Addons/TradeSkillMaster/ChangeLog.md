@@ -1,5 +1,5 @@
-## v4.10.28 Changes
+## v4.11.17 Changes
 
-* [Retail] Fixed issue with some identical crafted items being treated as separate items by TSM
+* [Classic] Fixed TSM macro not updating properly
 
-[Known Issues](http://support.tradeskillmaster.com/display/KB/TSM4+Currently+Known+Issues)
+[Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

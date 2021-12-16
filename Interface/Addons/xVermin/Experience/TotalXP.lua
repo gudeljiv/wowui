@@ -9,7 +9,7 @@ cc:SetWidth(110)
 cc:SetHeight(20)
 cc:SetPoint("BOTTOM", UIParent, "BOTTOM", -60, 300)
 
-tx = CreateFrame("Frame", "TotalXP", cc)
+tx = CreateFrame("Frame", "TotalXP", cc, BackdropTemplateMixin and "BackdropTemplate")
 tx:SetWidth(110)
 tx:SetHeight(20)
 tx:SetPoint("LEFT", cc, "LEFT", 0, 0)

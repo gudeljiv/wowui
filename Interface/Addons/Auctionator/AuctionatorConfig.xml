@@ -97,7 +97,7 @@
     </Layers>
   </Frame>
   <!-- The Mask for the interface options frame -->
-  <Frame enableMouse="true" name="Atr_Mask_StdOptionsTempl" parent="InterfaceOptionsFrame" virtual="true">
+  <Frame enableMouse="true" name="Atr_Mask_StdOptionsTempl" parent="InterfaceOptionsFrame" mixin="BackdropTemplateMixin" virtual="true">
     <Anchors>
       <Anchor point="TOPLEFT">
         <Offset>

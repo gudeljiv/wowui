@@ -23,33 +23,38 @@ NeatPlatesHubDefaults = {
 	StyleFriendlyBarsOnElite = false,
 	StyleFriendlyBarsInstanceMode = false,
 	StyleFriendlyBarsOnPlayers = true,
+	StyleFriendlyBarsNoMinions = false,
+	StyleFriendlyBarsNoTotem = false,
 	StyleFriendlyBarsOnNPC = false,
 	StyleFriendlyBarsClickThrough = false,
 
 	StyleEnemyBarsOnActive = true,
 	StyleEnemyBarsOnElite = true,
 	StyleEnemyBarsInstanceMode = false,
+	StyleEnemyBarsNoMinions = false,
+	StyleEnemyBarsNoTotem = false,
 	StyleEnemyBarsOnPlayers = true,
 	StyleEnemyBarsOnNPC = true,
 	StyleEnemyBarsClickThrough = false,
 
-	StyleForceBarsOnTargets = false,
-
 	StyleHeadlineNeutral = false,
 	StyleHeadlineMiniMobs = false,
 
-	ColorEnemyBarMode =  1,
-	ColorEnemyNameMode = 1,
-	ColorEnemyStatusTextMode = 1,
+	--ColorEnemyBarMode =  1,
+	--ColorEnemyNameMode = 1,
+	--ColorEnemyStatusTextMode = 1,
 
-	ColorFriendlyBarMode =  1,
-	ColorFriendlyNameMode = 1,
-	ColorFriendlyStatusTextMode = 1,
+	--ColorFriendlyBarMode =  1,
+	--ColorFriendlyNameMode = 1,
+	--ColorFriendlyStatusTextMode = 1,
 
 	TextShowOnlyOnActive = false,
 
 
 
+	StyleForceBarsOnTargets = false,
+	StyleShowFriendlyPowerBar = false,
+	StyleShowEnemyPowerBar = false,
 
 	-- Headline
 	---------------------------------------
@@ -59,7 +64,7 @@ NeatPlatesHubDefaults = {
 	HeadlineEnemyColor = 4,
 	HeadlineFriendlyColor = 4,
 	HeadlineEnemySubtext = 3,
-
+	HeadlineFriendlySubtext = 1,
 
 	-- Opacity
 	---------------------------------------
@@ -101,11 +106,17 @@ NeatPlatesHubDefaults = {
 	OpacityFilterNeutralUnits = false,		-- OpacityHideNeutral = false,
 	OpacityFilterNonElite = false,			-- OpacityHideNonElites = false,
 	OpacityFilterEnemyNPC = false,
-	OpacityFilterPlayers = false,
+	OpacityFilterEnemyPet = false,
+	OpacityFilterFriendlyPlayers = false,
+	OpacityFilterEnemyPlayers = false,
+	OpacityFilterPartyMembers = false,
+	OpacityFilterNonPartyMembers = false,
 	OpacityFilterFriendlyNPC = false,
+	OpacityFilterFriendlyPet = false,
 	OpacityFilterInactive = false,
 	OpacityFilterMini = false,
 	OpacityFilterUntitledFriendlyNPC = false,
+	OpacityFilterLowLevelUnits = false,
 
 	OpacityFilterList = "Fanged Pit Viper\nLiberated Karabor Prisoner",
 	OpacityFilterLookup = {},
@@ -126,10 +137,14 @@ NeatPlatesHubDefaults = {
 	-- Text
 	---------------------------------------
 	TextShowLevel = false,
+	TextStatusForceShadow = false,
 	TextUseBlizzardFont = false,
 	TextHealthTextMode = 1,
 	TextShowOnlyOnTargets = false,
 	TextShowServerIndicator = true,
+	TextShowUnitTitle = false,
+	TextUnitNameArenaID = false,
+	TextHealthPercentPrecision = 0,
 	CustomTargetColor = false,
 	CustomFocusColor = false,
 	CustomMouseoverColor = false,
@@ -146,6 +161,8 @@ NeatPlatesHubDefaults = {
 	---------------------------------------
 	ThreatMode = 1,
 	ThreatGlowEnable = true,
+	SafeColorSolo = false,
+	ThreatSoloEnable = false,
 	ColorShowPartyAggro = false,
 	ColorPartyAggroBar = false,
 	ColorPartyAggroGlow = true,
@@ -171,6 +188,7 @@ NeatPlatesHubDefaults = {
 	ColorHostileNPC = {r = 1, g = 0, b = 0,},
 	ColorHostilePlayer = {r = 1, g = 0, b = 0,},
 	ColorGuildMember = {r = 60/255, g = 168/255, b = 255/255,},
+	ColorPartyMember = {r = 60/255, g = 168/255, b = 255/255,},
 
 	TextColorFriendlyNPC = {r = 96/255, g = 224/255, b = 37/255,},
 	TextColorFriendlyPlayer = {r = 60/255, g = 168/255, b = 255/255,},
@@ -178,6 +196,7 @@ NeatPlatesHubDefaults = {
 	TextColorHostileNPC = {r = 255/255, g = 51/255, b = 32/255,},
 	TextColorHostilePlayer = {r = 255/255, g = 51/255, b = 32/255,},
 	TextColorGuildMember = {r = 60/255, g = 168/255, b = 255/255,},
+	TextColorPartyMember = {r = 60/255, g = 168/255, b = 255/255,},
 	TextColorNormal = {r = .65, g = .65, b = .65, a = .4},
 	TextColorElite = {r = .9, g = .7, b = .3, a = .5},
 	TextColorBoss = {r = 1, g = .85, b = .1, a = .8},
@@ -206,9 +225,12 @@ NeatPlatesHubDefaults = {
 	ColorSchoolShadow = {r = 0.5, g = 0.5, b = 1},
 	ColorSchoolArcane = {r = 1, g = 0.5, b = 1},
 	ColorCastBySchool = true,
+	SpellCastEnableEnemy = true,
 	SpellCastEnableFriendly = false,
 	IntCastEnable = true,
 	IntCastWhoEnable = true,
+	SpellIconEnable = true,
+	SpellTargetEnable = false,
 
 	-- Status Text
 	---------------------------------------
@@ -236,6 +258,7 @@ NeatPlatesHubDefaults = {
 	WidgetEliteIndicator = true,
 	ClassEnemyIcon = false,
 	ClassPartyIcon = false,
+	ClassIconScaleOptions = {x = 1, y = 1, offset = {x = 0, y = 0}},
 	WidgetTotemIcon = false,
 	WidgetComboPoints = true,
 	WidgetComboPointsStyle = 1,
@@ -264,23 +287,20 @@ NeatPlatesHubDefaults = {
 	WidgetDebuff = true,
 	WidgetDebuffStyle = 1,
 	--WidgetAuraMode = 1,
-	WidgetMyDebuff = true,
-	WidgetMyBuff = false,
-	WidgetPandemic = false,
-	ColorPandemic = {r = 0.9, g = 0.15, b = 0.15, a = 1}, -- Red
-	BorderPandemic = 1,
-	WidgetBuffPurgeable = false,
-	ColorBuffPurgeable = {r = 0, g = 0.4, b = 1, a = 1}, -- Medium Blue
-	BorderBuffPurgeable = 1,
-	WidgetBuffEnrage = false,
-	ColorBuffEnrage = {r = 1, g = 0, b = 0.2, a = 1}, -- Medium Red
-	BorderBuffEnrage = 1,
+	--WidgetAllAuras = false,
+	--WidgetMyDebuff = true,
+	--WidgetMyBuff = false,
 	SpacerSlots = 1,
 	AuraScale = 1,
+	EmphasizedAuraScale = 2,
+	WidgetAuraScaleOptions = {x = 1, y = 1, offset = {x = 0, y = 0}},
+	WidgetEmphasizedAuraScaleOptions = {x = 1, y = 1, offset = {x = 0, y = 0}},
 	EmphasizedSlots = 1,
-	WidgetDebuffTrackList = "My Rake\nMy Rip\nMy Moonfire\nAll 339\nMy Regrowth\nMy Rejuvenation\nNot Facepalm Bolt",
-	WidgetDebuffLookup = {},
-	WidgetDebuffPriority = {},
+	PreciseAuraThreshold = 10,
+	WidgetAdditionalAuras = {},
+	-- WidgetDebuffTrackList = "My Rake\nMy Rip\nMy Moonfire\nAll 339\nMy Regrowth\nMy Rejuvenation\nNot Facepalm Bolt",
+	-- WidgetDebuffLookup = {},
+	-- WidgetDebuffPriority = {},
 	WidgetAuraTrackDispelFriendly = false,
 	WidgetAuraTrackCurse = true,
 	WidgetAuraTrackDisease = true,
@@ -288,12 +308,15 @@ NeatPlatesHubDefaults = {
 	WidgetAuraTrackPoison = true,
 	WidgetAuraSort = 1,
 	WidgetAuraAlignment = 1,
-	EmphasizedAuraList = "",
-	EmphasizedAuraLookup = {},
-	EmphasizedAuraPriority = {},
+	BuffSeparationMode = 1,
+	-- EmphasizedAuraList = "",
+	-- EmphasizedAuraLookup = {},
+	-- EmphasizedAuraPriority = {},
 	EmphasizedUnique = true,
 	HideCooldownSpiral = false,
 	HideAuraDuration = false,
+	HideAuraStacks = false,
+	HideAuraInHeadline = false,
 
 	-- Frame
 	---------------------------------------
@@ -302,5 +325,11 @@ NeatPlatesHubDefaults = {
 	FocusAsTarget = false,
 	AltShortening = (LOCALE_zhCN or LOCALE_zhTW) or false,
 	FrameBarWidth = 1,
+	CastBarWidth = 1,
 	--AdvancedHealthTextList = [[return unit.health]],
+	Customization = {
+		Default = {},
+		NameOnly = {},
+		WidgetConfig = {}
+	},
 }

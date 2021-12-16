@@ -38,6 +38,20 @@ do
 			LE_ITEM_CLASS_QUESTITEM,
 			LE_ITEM_CLASS_MISCELLANEOUS,
 		}
+	elseif TSM.IsWowBCClassic() then
+		ITEM_CLASS_IDS = {
+			LE_ITEM_CLASS_WEAPON,
+			LE_ITEM_CLASS_ARMOR,
+			LE_ITEM_CLASS_CONTAINER,
+			LE_ITEM_CLASS_CONSUMABLE,
+			LE_ITEM_CLASS_TRADEGOODS,
+			LE_ITEM_CLASS_PROJECTILE,
+			LE_ITEM_CLASS_QUIVER,
+			LE_ITEM_CLASS_RECIPE,
+			LE_ITEM_CLASS_GEM,
+			LE_ITEM_CLASS_MISCELLANEOUS,
+			LE_ITEM_CLASS_QUESTITEM,
+		}
 	else
 		ITEM_CLASS_IDS = {
 			LE_ITEM_CLASS_WEAPON,
@@ -86,19 +100,10 @@ do
 	end
 	sort(STATIC_DATA.classes, function(a, b) return STATIC_DATA.classIdLookup[strlower(a)] < STATIC_DATA.classIdLookup[strlower(b)] end)
 
-	if not TSM.IsWowClassic() then
-		for _, id in pairs(Enum.InventoryType) do
-			local invType = GetItemInventorySlotInfo(id)
-			if invType then
-				STATIC_DATA.inventorySlotIdLookup[strlower(invType)] = id
-			end
-		end
-	else
-		for i = 0, NUM_LE_INVENTORY_TYPES do
-			local invType = GetItemInventorySlotInfo(i)
-			if invType then
-				STATIC_DATA.inventorySlotIdLookup[strlower(invType)] = i
-			end
+	for _, id in pairs(Enum.InventoryType) do
+		local invType = GetItemInventorySlotInfo(id)
+		if invType then
+			STATIC_DATA.inventorySlotIdLookup[strlower(invType)] = id
 		end
 	end
 end

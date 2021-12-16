@@ -19,7 +19,7 @@ do
 		tile = true, tileSize = 16,
 		insets = {left = 0, right = 0, top = 0, bottom = 0}}
 
-	local frame = _CreateFrame ("frame", "DetailsSwitchPanel", _UIParent)
+	local frame = _CreateFrame ("frame", "DetailsSwitchPanel", _UIParent, BackdropTemplateMixin and "BackdropTemplate")
 	frame:SetPoint ("center", _UIParent, "center", 500, -300)
 	frame:SetWidth (250)
 	frame:SetHeight (100)
@@ -55,7 +55,7 @@ do
 	frame.topbg:SetDesaturated (true)
 	frame.topbg:SetVertexColor (0, 0, 0, 1)
 	
-	frame.topbg_frame = CreateFrame ("frame", nil, frame)
+	frame.topbg_frame = CreateFrame ("frame", nil, frame, BackdropTemplateMixin and "BackdropTemplate")
 	frame.topbg_frame:SetPoint ("bottomleft", frame, "topleft")
 	frame.topbg_frame:SetPoint ("bottomright", frame, "topright")
 	frame.topbg_frame:SetHeight (20)
@@ -140,7 +140,7 @@ do
 	
 ---------------------------------------------------------------------------------------------------------------------------
 	--> ~all
-	local all_switch = CreateFrame ("frame", "DetailsAllAttributesFrame", UIParent)
+	local all_switch = CreateFrame ("frame", "DetailsAllAttributesFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 	all_switch:SetFrameStrata ("tooltip")
 	all_switch:Hide()
 	all_switch:SetSize (400, 150)
@@ -196,40 +196,7 @@ do
 	DetailsSwitchPanel.all_switch = all_switch
 	
 	function _detalhes:ShowAllSwitch()
-	
-	--[=[ --tutorial removed, I don't think is necessary anymore, July 2019
-		--_detalhes:SetTutorialCVar ("SWITCH_PANEL_FIRST_OPENED", false)
-		if (not _detalhes:GetTutorialCVar ("SWITCH_PANEL_FIRST_OPENED")) then
-			_detalhes:SetTutorialCVar ("SWITCH_PANEL_FIRST_OPENED", true)
-			local fake_window = _detalhes:CreateFakeWindow()
-			fake_window:SetPoint ("bottomleft", all_switch, "topleft", 0, 10)
-			
-			local all_switch_titlebar_help = CreateFrame ("frame", "DetailsSwitchAllPopUp1", fake_window, "DetailsHelpBoxTemplate")
-			all_switch_titlebar_help.ArrowUP:Show()
-			all_switch_titlebar_help.ArrowGlowUP:Show()
-			all_switch_titlebar_help.Text:SetText ("Right click on Title Bar to open all displays menu.")
-			all_switch_titlebar_help:SetPoint ("bottom", fake_window.TitleBar, "top", 0, 30)
-			all_switch_titlebar_help:Show()
-			
-			local all_switch_titlebar2_help = CreateFrame ("frame", "DetailsSwitchAllPopUp1", fake_window, "DetailsHelpBoxTemplate")
-			all_switch_titlebar2_help.ArrowLEFT:Show()
-			all_switch_titlebar2_help.ArrowGlowLEFT:Show()
-			all_switch_titlebar2_help.Text:SetText ("Right clicking anywhere else opens your Bookmarks.")
-			all_switch_titlebar2_help:SetPoint ("right", fake_window, "left", -30, 0)
-			all_switch_titlebar2_help:Show()
-			
-			local close = CreateFrame ("button", nil, fake_window)
-			close:SetPoint ("bottomright", fake_window, "bottomright", -10, 10)
-			close:SetScript ("OnClick", function() fake_window:Hide(); all_switch_titlebar2_help:Hide(); all_switch_titlebar_help:Hide() end)
-			close:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = "Interface\\AddOns\\Details\\images\\background", tile = true, tileSize = 16 })
-			close:SetBackdropColor (0.7, 0.7, 0.7, 0.4)
-			close:SetSize (100, 20)
-			local t = close:CreateFontString (nil, "overlay", "GameFontNormal")
-			t:SetPoint ("center", 0, 0)
-			t:SetText ("CLOSE")
-		end
-	--]=]
-	
+		
 		if (all_switch:IsShown()) then
 			return all_switch:Hide()
 		end
@@ -312,13 +279,13 @@ do
 	end
 	
 	local create_all_switch_button = function (attribute, sub_attribute, x, y)
-		local button = CreateFrame ("button", "DetailsAllAttributesFrame" .. attribute .. sub_attribute, all_switch)
+		local button = CreateFrame ("button", "DetailsAllAttributesFrame" .. attribute .. sub_attribute, all_switch, BackdropTemplateMixin and "BackdropTemplate")
 		button:SetSize (130, 16)
 		button.texture = button:CreateTexture (nil, "overlay")
 		button.texture:SetPoint ("left", 0, 0)
 		button.texture:SetSize (icon_size, icon_size)
 		
-		local texture_highlight_frame = CreateFrame ("button", "DetailsAllAttributesFrame" .. attribute .. sub_attribute .. "IconFrame", button)
+		local texture_highlight_frame = CreateFrame ("button", "DetailsAllAttributesFrame" .. attribute .. sub_attribute .. "IconFrame", button, BackdropTemplateMixin and "BackdropTemplate")
 		texture_highlight_frame:SetSize (icon_size, icon_size)
 		texture_highlight_frame:SetPoint ("left", 0, 0)
 		texture_highlight_frame.texture = button.texture
@@ -680,7 +647,7 @@ function _detalhes.switch:ShowMe (instancia)
 		
 		if (not _detalhes.tutorial.ctrl_click_close_tutorial) then
 			if (not DetailsCtrlCloseWindowPanelTutorial) then
-				local tutorial_frame = CreateFrame ("frame", "DetailsCtrlCloseWindowPanelTutorial", _detalhes.switch.frame)
+				local tutorial_frame = CreateFrame ("frame", "DetailsCtrlCloseWindowPanelTutorial", _detalhes.switch.frame, BackdropTemplateMixin and "BackdropTemplate")
 				tutorial_frame:SetFrameStrata ("FULLSCREEN_DIALOG")
 				tutorial_frame:SetAllPoints()
 				tutorial_frame:EnableMouse (true)
@@ -983,52 +950,6 @@ function _detalhes.switch:ShowMe (instancia)
 	
 	_detalhes.switch.frame:SetScale (instancia.window_scale)
 	_detalhes.switch.frame:Show()
-	--_detalhes.switch.frame.ShowAnimation:Play()
-	
-	--[=[ --removed bookmark tutorials July 2019
-	if (not _detalhes.tutorial.bookmark_tutorial) then
-	
-		if (not SwitchPanelTutorial) then
-			local tutorial_frame = CreateFrame ("frame", "SwitchPanelTutorial", _detalhes.switch.frame)
-			tutorial_frame:SetFrameStrata ("FULLSCREEN_DIALOG")
-			tutorial_frame:SetAllPoints()
-			tutorial_frame:EnableMouse (true)
-			tutorial_frame:SetBackdrop ({bgFile = "Interface\\AddOns\\Details\\images\\background", tile = true, tileSize = 16 })
-			tutorial_frame:SetBackdropColor (0.05, 0.05, 0.05, 0.95)
-
-			tutorial_frame.info_label = tutorial_frame:CreateFontString (nil, "overlay", "GameFontNormal")
-			tutorial_frame.info_label:SetPoint ("topleft", tutorial_frame, "topleft", 10, -10)
-			tutorial_frame.info_label:SetText (Loc ["STRING_MINITUTORIAL_BOOKMARK2"])
-			tutorial_frame.info_label:SetJustifyH ("left")
-			
-			tutorial_frame.mouse = tutorial_frame:CreateTexture (nil, "overlay")
-			tutorial_frame.mouse:SetTexture ([[Interface\TUTORIALFRAME\UI-TUTORIAL-FRAME]])
-			tutorial_frame.mouse:SetTexCoord (0.0019531, 0.1484375, 0.6269531, 0.8222656)
-			tutorial_frame.mouse:SetSize (20, 22)
-			tutorial_frame.mouse:SetPoint ("topleft", tutorial_frame.info_label, "bottomleft", -3, -10)
-
-			tutorial_frame.close_label = tutorial_frame:CreateFontString (nil, "overlay", "GameFontHighlightSmall")
-			tutorial_frame.close_label:SetPoint ("left", tutorial_frame.mouse, "right", 4, 0)
-			tutorial_frame.close_label:SetText (Loc ["STRING_MINITUTORIAL_BOOKMARK3"])
-			tutorial_frame.close_label:SetJustifyH ("left")
-			
-			local checkbox = CreateFrame ("CheckButton", "SwitchPanelTutorialCheckBox", tutorial_frame, "ChatConfigCheckButtonTemplate")
-			checkbox:SetPoint ("topleft", tutorial_frame.mouse, "bottomleft", -1, -5)
-			_G [checkbox:GetName().."Text"]:SetText (Loc ["STRING_MINITUTORIAL_BOOKMARK4"])
-			
-			tutorial_frame:SetScript ("OnMouseDown", function()
-				if (checkbox:GetChecked()) then
-					_detalhes.tutorial.bookmark_tutorial = true
-				end
-				tutorial_frame:Hide()
-			end)
-		end
-		
-		SwitchPanelTutorial:Show()
-		SwitchPanelTutorial.info_label:SetWidth (_detalhes.switch.frame:GetWidth()-30)
-		SwitchPanelTutorial.close_label:SetWidth (_detalhes.switch.frame:GetWidth()-30)
-	end
-	--]=]
 	
 	_detalhes.switch:Resize (precisa_mostrar)
 	--instancia:StatusBarAlert (right_click_text, right_click_texture) --icon, color, time
@@ -1371,7 +1292,7 @@ function _detalhes.switch:Update()
 	FauxScrollFrame_Update (DetailsSwitchPanelScroll, ceil (40 / _detalhes.switch.vertical_amt) , _detalhes.switch.horizontal_amt, 20)
 end
 
-local scroll = CreateFrame ("scrollframe", "DetailsSwitchPanelScroll", DetailsSwitchPanel, "FauxScrollFrameTemplate")
+local scroll = CreateFrame ("scrollframe", "DetailsSwitchPanelScroll", DetailsSwitchPanel, "FauxScrollFrameTemplate, BackdropTemplate")
 scroll:SetAllPoints()
 scroll:SetScript ("OnVerticalScroll", function (self, offset) FauxScrollFrame_OnVerticalScroll (self, offset, 20, _detalhes.switch.Update) end) --altura
 scroll.ScrollBar:Hide()
@@ -1618,7 +1539,7 @@ function _detalhes.switch:NewSwitchButton (frame, index, x, y, rightButton)
 		}
 
 	--botao dentro da caixa
-	local button = CreateFrame ("button", "DetailsSwitchPanelButton_1_"..index, frame) --botao com o icone
+	local button = CreateFrame ("button", "DetailsSwitchPanelButton_1_"..index, frame, BackdropTemplateMixin and "BackdropTemplate") --botao com o icone
 	button:SetSize (15, 24) 
 	button:SetPoint ("topleft", frame, "topleft", x, -y)
 	button:SetScript ("OnMouseDown", left_box_on_click)
@@ -1652,7 +1573,7 @@ function _detalhes.switch:NewSwitchButton (frame, index, x, y, rightButton)
 	button.line2:SetPoint ("bottomleft", button, "bottomright", fundo_x, fundo_y)
 	
 	--botao do fundo marrom
-	local button2 = CreateFrame ("button", "DetailsSwitchPanelButton_2_"..index, button) --botao com o texto
+	local button2 = CreateFrame ("button", "DetailsSwitchPanelButton_2_"..index, button, BackdropTemplateMixin and "BackdropTemplate") --botao com o texto
 	button2:SetSize (1, 1)
 	button2:SetPoint ("topleft", button, "topright", 1, 0)
 	button2:SetPoint ("bottomright", button, "bottomright", 90, 0)

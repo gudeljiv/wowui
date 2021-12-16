@@ -302,12 +302,12 @@ WeakAurasSaved = {
 			},
 			["align"] = "CENTER",
 			["rotation"] = 345,
-			["arcLength"] = 30,
+			["radius"] = 300,
 			["version"] = 1,
 			["subRegions"] = {
 			},
 			["uid"] = "QYuwGRyspxh",
-			["useLimit"] = false,
+			["selfPoint"] = "CENTER",
 			["load"] = {
 				["use_class"] = "true",
 				["spec"] = {
@@ -324,25 +324,25 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["radius"] = 300,
+			["useLimit"] = false,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["selfPoint"] = "CENTER",
+			["rowSpace"] = 1,
 			["animate"] = false,
 			["customGrow"] = "function(newPositions, activeRegions)\n    local offset = 9/64 -- target_indicator_glow texture center offset\n    local distance = 18/64\n    local angle, x, y, h, w, s, c, sb, cb, da\n    local curveAngle, segmentCount, direction, base, direction\n\n    for i, r in ipairs(activeRegions) do\n        if r.region.GetRotation then\n            direction = r.data.config.direction\n            base = (r.data.config.rotationOffset + direction * 180)\n            angle = r.region:GetRotation() - direction * 180\n            h = r.data.height\n            w = r.data.width\n            curveAngle = r.data.config.curveAngle\n            segmentCount = r.data.config.segmentCount\n            s = sin(angle)\n            c = cos(angle)\n            sb = sin(base + (direction - 1) * 180)\n            cb = cos(base + (direction - 1) * 180)\n            da = curveAngle / (segmentCount - 1)\n            radius = 0.5 * w * distance / sin(da / 2)\n            x = c * radius + s * w * offset * (direction - 1.5) * 2 + radius * cb\n            y = s * radius * h / w - c * h * offset * (direction - 1.5) * 2 + radius * h / w * sb\n        else\n            x = 0\n            y = 0\n        end\n\n        if newPositions[i] then\n            newPositions[i][1] = x\n            newPositions[i][2] = y\n        else\n            newPositions[i] = {x, y}\n        end\n    end\nend\n",
 			["scale"] = 1,
-			["anchorPoint"] = "CENTER",
+			["groupIcon"] = 135988,
 			["border"] = false,
 			["borderEdge"] = "1 Pixel",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
-			["limit"] = 5,
-			["groupIcon"] = 135988,
 			["sort"] = "none",
+			["limit"] = 5,
+			["arcLength"] = 30,
 			["ignoreOptionsEventErrors"] = true,
 			["stagger"] = 0,
 			["borderOffset"] = 4,
@@ -360,8 +360,8 @@ WeakAurasSaved = {
 			},
 			["conditions"] = {
 			},
+			["anchorPoint"] = "CENTER",
 			["fullCircle"] = true,
-			["rowSpace"] = 1,
 		},
 		["Overpower on Nameplate"] = {
 			["color"] = {
@@ -383,21 +383,21 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "custom",
+						["custom_type"] = "stateupdate",
 						["subeventSuffix"] = "_CAST_START",
-						["unevent"] = "auto",
 						["names"] = {
 						},
 						["duration"] = "1",
 						["genericShowOn"] = "showOnActive",
 						["unit"] = "player",
 						["subeventPrefix"] = "SPELL",
+						["events"] = " NAME_PLATE_UNIT_ADDED NAME_PLATE_UNIT_REMOVED COMBAT_LOG_EVENT_UNFILTERED ",
 						["spellIds"] = {
 						},
 						["custom"] = "function(allstates, event,unit, ...)    \n    if event == \"NAME_PLATE_UNIT_ADDED\" then\n        if unit then\n            local guid = UnitGUID(unit)                   \n            --print(name)\n            allstates[guid] = {\n                changed = true,\n                show = false,\n                PassUnit = unit,\n                glow = false,\n            }            \n        end\n    end\n    \n    if event == \"NAME_PLATE_UNIT_REMOVED\" then\n        if unit then\n            local guid = UnitGUID(unit)\n            if allstates[guid] then\n                allstates[guid].changed = true\n                allstates[guid].PassUnit = \"none\"\n            end\n        end\n    end\n    \n    if event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n        local subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags = ...\n        local spellID,spellName,spellSchool\n        local missType = \"\"\n        local stanceIndex = GetShapeshiftForm()\n        \n        if subEvent == \"SWING_MISSED\" and sourceName == UnitName(\"player\")  then\n            --if subEvent == \"SWING_MISSED\" and sourceName == UnitName(\"player\") and stanceIndex == 1 then\n            missType = select(11,...)\n            --print(missType .. \"SWING missed\")\n            --print(missType .. \"  SWING \")\n        elseif subEvent == \"SPELL_MISSED\" and sourceName == UnitName(\"player\") then\n            --elseif subEvent == \"SPELL_MISSED\" and sourceName == UnitName(\"player\") and stanceIndex == 1 then\n            \n            spellID,spellName,spellSchool,missType = select(11, ...)\n            --print(missType .. \"SPELL missed\")\n            --print(missType .. \"  SPELL \")            \n        end\n        \n        if missType == \"DODGE\" then\n            for i = 1,40 do\n                local u = \"nameplate\"..i                \n                if UnitExists(u) and UnitGUID(u) == destGUID then            \n                    allstates[destGUID] = {\n                        changed = true,\n                        show = true,          \n                        PassUnit = u,\n                        glow = true,\n                        autoHide = true,\n                        progressType = \"timed\",\n                        duration = aura_env.config.duration,\n                    } \n                    break\n                    \n                end\n            end\n        end\n    end\n    \n    return true\n    \nend",
-						["events"] = " NAME_PLATE_UNIT_ADDED NAME_PLATE_UNIT_REMOVED COMBAT_LOG_EVENT_UNFILTERED ",
 						["check"] = "event",
 						["event"] = "Chat Message",
-						["custom_type"] = "stateupdate",
+						["unevent"] = "auto",
 						["custom_hide"] = "timed",
 					},
 					["untrigger"] = {
@@ -1123,10 +1123,10 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["event"] = "Health",
 						["use_unit"] = true,
-						["spellIds"] = {
-						},
 						["events"] = "UNIT_SPELLCAST_SUCCEEDED:player UNIT_POWER_FREQUENT:player",
 						["custom"] = "function(a, e, t)\n    local currentMana = UnitPower(\"player\" , 0)\n    \n    if currentMana >= UnitPowerMax(\"player\", 0) then\n        return false\n    end\n    \n    if e == \"UNIT_POWER_FREQUENT\" and currentMana > aura_env.lastMana and GetTime() >= aura_env.lastCast + 5 then\n        local duration = 2\n        a[\"\"] = {\n            show = true,\n            changed = true,\n            duration = duration,\n            expirationTime = GetTime() + duration,\n            progressType = \"timed\",\n            autoHide = true\n        }\n        aura_env.lastMana = currentMana\n        \n    elseif e == \"UNIT_SPELLCAST_SUCCEEDED\" and currentMana < aura_env.lastMana then\n        local duration = 6 -- why?\n        --local duration = 5\n        a[\"\"] = {\n            show = true,\n            changed = true,\n            duration = duration,\n            expirationTime = GetTime() + duration,\n            progressType = \"timed\",\n            autoHide = true\n        }\n        aura_env.lastMana = currentMana\n        aura_env.lastCast = GetTime()\n    end\n    return true\nend",
+						["spellIds"] = {
+						},
 						["use_sourceUnit"] = true,
 						["check"] = "event",
 						["custom_type"] = "stateupdate",
@@ -1267,12 +1267,13 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["uid"] = "dvZawXAyrxC",
 			["sparkColor"] = {
 				0.93725490196078, -- [1]
 				1, -- [2]
 				0.94509803921569, -- [3]
 				1, -- [4]
+			},
+			["config"] = {
 			},
 			["version"] = 1,
 			["width"] = 115,
@@ -1295,8 +1296,7 @@ WeakAurasSaved = {
 			["frameStrata"] = 5,
 			["anchorFrameType"] = "SELECTFRAME",
 			["texture"] = "Glamour2",
-			["config"] = {
-			},
+			["uid"] = "dvZawXAyrxC",
 			["inverse"] = false,
 			["useAdjustededMax"] = false,
 			["orientation"] = "HORIZONTAL",
@@ -1416,10 +1416,10 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["limit"] = 5,
+			["animate"] = true,
 			["authorOptions"] = {
 			},
-			["animate"] = true,
-			["internalVersion"] = 38,
 			["scale"] = 1,
 			["animation"] = {
 				["start"] = {
@@ -1445,8 +1445,8 @@ WeakAurasSaved = {
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
-			["limit"] = 5,
-			["rowSpace"] = 1,
+			["sort"] = "none",
+			["fullCircle"] = true,
 			["arcLength"] = 360,
 			["ignoreOptionsEventErrors"] = true,
 			["borderInset"] = 0,
@@ -1461,10 +1461,10 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["uid"] = "N5YikxjcJsU",
-			["sort"] = "none",
+			["rowSpace"] = 1,
 			["conditions"] = {
 			},
-			["fullCircle"] = true,
+			["internalVersion"] = 38,
 			["stagger"] = 0,
 		},
 		["nanShield:Segment"] = {
@@ -1552,12 +1552,12 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["unit"] = "player",
 						["custom_type"] = "stateupdate",
-						["events"] = "PLAYER_ENTERING_WORLD WA_NAN_SHIELD",
-						["custom"] = "function(...)\n    return aura_env:on_tsu(...)\nend",
-						["subeventPrefix"] = "SPELL",
-						["check"] = "update",
 						["spellIds"] = {
 						},
+						["events"] = "PLAYER_ENTERING_WORLD WA_NAN_SHIELD",
+						["subeventPrefix"] = "SPELL",
+						["check"] = "update",
+						["custom"] = "function(...)\n    return aura_env:on_tsu(...)\nend",
 						["names"] = {
 						},
 						["debuffType"] = "HELPFUL",
@@ -2091,12 +2091,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_combat"] = true,
-				["class"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
+				["use_combat"] = true,
+				["class"] = {
 					["multi"] = {
 					},
 				},
@@ -2112,9 +2112,35 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["limit"] = 5,
+			["animate"] = true,
 			["authorOptions"] = {
 			},
-			["animate"] = true,
+			["scale"] = 1,
+			["internalVersion"] = 38,
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["sort"] = "none",
+			["fullCircle"] = true,
+			["arcLength"] = 360,
+			["ignoreOptionsEventErrors"] = true,
+			["borderInset"] = 0,
+			["borderOffset"] = 16,
+			["gridType"] = "RD",
+			["width"] = 199.999969482422,
+			["id"] = "Details! Aura Group",
+			["frameStrata"] = 1,
+			["gridWidth"] = 5,
+			["anchorFrameType"] = "SCREEN",
+			["useLimit"] = false,
+			["config"] = {
+			},
+			["uid"] = "XLzBWxn1LoM",
+			["rowSpace"] = 1,
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -2135,32 +2161,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["scale"] = 1,
-			["internalVersion"] = 38,
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["limit"] = 5,
-			["rowSpace"] = 1,
-			["arcLength"] = 360,
-			["ignoreOptionsEventErrors"] = true,
-			["borderInset"] = 0,
-			["borderOffset"] = 16,
-			["gridType"] = "RD",
-			["width"] = 199.999969482422,
-			["id"] = "Details! Aura Group",
-			["frameStrata"] = 1,
-			["gridWidth"] = 5,
-			["anchorFrameType"] = "SCREEN",
-			["useLimit"] = false,
-			["config"] = {
-			},
-			["uid"] = "XLzBWxn1LoM",
-			["sort"] = "none",
-			["conditions"] = {
-			},
-			["fullCircle"] = true,
 			["stagger"] = 0,
 		},
 		["GEMS"] = {
@@ -2250,13 +2250,13 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SELECTFRAME",
 			["xOffset"] = 40,
+			["config"] = {
+			},
 			["uid"] = "Ow32WYEI1Ji",
-			["borderInset"] = 1,
 			["groupIcon"] = 134105,
 			["conditions"] = {
 			},
-			["config"] = {
-			},
+			["borderInset"] = 1,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -2604,14 +2604,14 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["subeventPrefix"] = "SPELL",
 						["custom_hide"] = "timed",
+						["spellIds"] = {
+						},
 						["custom"] = "function(event, ...)\n    if aura_env[event] then\n        aura_env[event](...) \n    end\nend",
-						["events"] = "CHAT_MSG_SYSTEM,INSTANCE_BOOT_START, INSTANCE_BOOT_STOP, GROUP_ROSTER_UPDATE, PLAYER_ENTERING_WORLD, ZONE_CHANGED_NEW_AREA, RAID_INSTANCE_WELCOME, PLAYER_LEAVING_WORLD, PLAYER_CAMPING, CHAT_MSG_ADDON, SEND_INSTANCE_RESET_REQUEST",
 						["unit"] = "player",
 						["names"] = {
 						},
 						["subeventSuffix"] = "_CAST_START",
-						["spellIds"] = {
-						},
+						["events"] = "CHAT_MSG_SYSTEM,INSTANCE_BOOT_START, INSTANCE_BOOT_STOP, GROUP_ROSTER_UPDATE, PLAYER_ENTERING_WORLD, ZONE_CHANGED_NEW_AREA, RAID_INSTANCE_WELCOME, PLAYER_LEAVING_WORLD, PLAYER_CAMPING, CHAT_MSG_ADDON, SEND_INSTANCE_RESET_REQUEST",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -3271,10 +3271,10 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["names"] = {
 						},
+						["events"] = "WA_NAN_SHIELD",
 						["spellIds"] = {
 						},
 						["custom"] = "function(...)\n  return aura_env:on_tsu(...)\nend",
-						["events"] = "WA_NAN_SHIELD",
 						["check"] = "event",
 						["custom_type"] = "stateupdate",
 						["customOverlay1"] = "",
@@ -3300,7 +3300,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["auto"] = true,
+			["spark"] = false,
 			["version"] = 1,
 			["subRegions"] = {
 				{
@@ -3426,10 +3426,10 @@ WeakAurasSaved = {
 			["ignoreOptionsEventErrors"] = true,
 			["id"] = "nanShield:Bar",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["semver"] = "1.0.0",
+			["auto"] = true,
 			["tocversion"] = 11305,
 			["sparkHidden"] = "NEVER",
-			["spark"] = false,
+			["semver"] = "1.0.0",
 			["alpha"] = 1,
 			["width"] = 200,
 			["zoom"] = 0,
@@ -4006,14 +4006,17 @@ WeakAurasSaved = {
 	},
 	["instanceHistoryDb"] = {
 		["sess"] = {
-			["histOldest"] = "n/a",
+			["delayUpdate"] = 1639681221,
 			["enterLoc"] = {
 				["instance"] = -1,
 			},
-			["delayUpdate"] = 1609171482.89253,
+			["histOldest"] = "n/a",
 			["histLiveCount"] = 0,
 		},
 		["History"] = {
+		},
+		["lastLoc"] = {
+			["instance"] = -1,
 		},
 		["HistoryDay"] = {
 		},

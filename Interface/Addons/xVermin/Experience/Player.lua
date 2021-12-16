@@ -45,7 +45,7 @@ PlayerXP.XPbar.Background:SetAllPoints(PlayerXP.XPbar)
 PlayerXP.XPbar.Background:SetTexture("Interface\\AddOns\\xVermin\\Media\\statusbarTexture")
 PlayerXP.XPbar.Background:SetVertexColor(0.25, 0.25, 0.25, 1)
 
-PlayerXP.XPbar.BackgroundShadow = CreateFrame("Frame", nil, PlayerXP.XPbar)
+PlayerXP.XPbar.BackgroundShadow = CreateFrame("Frame", nil, PlayerXP.XPbar, BackdropTemplateMixin and "BackdropTemplate")
 PlayerXP.XPbar.BackgroundShadow:SetFrameStrata("BACKGROUND")
 PlayerXP.XPbar.BackgroundShadow:SetPoint("TOPLEFT", -4, 4)
 PlayerXP.XPbar.BackgroundShadow:SetPoint("BOTTOMRIGHT", 4, -4)

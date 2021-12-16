@@ -4,10 +4,12 @@
 		_ = nil --remove the underline from the global namespace
 		_detalhes = LibStub("AceAddon-3.0"):NewAddon("_detalhes", "AceTimer-3.0", "AceComm-3.0", "AceSerializer-3.0", "NickTag-1.0")
 		
-		_detalhes.build_counter = 215
-		_detalhes.alpha_build_counter = 215 --if this is higher than the regular counter, use it instead
-		_detalhes.game_version = "v1.13.5"
-		_detalhes.userversion = "v1.13.5." .. _detalhes.build_counter
+		local version, build, date, tocversion = GetBuildInfo()
+
+		_detalhes.build_counter = 222
+		_detalhes.alpha_build_counter = 222 --if this is higher than the regular counter, use it instead
+		_detalhes.game_version = version
+		_detalhes.userversion = version .. _detalhes.build_counter
 		_detalhes.realversion = 142 --core version, this is used to check API version for scripts and plugins (see alias below)
 		_detalhes.APIVersion = _detalhes.realversion --core version
 		_detalhes.version = _detalhes.userversion .. " (core " .. _detalhes.realversion .. ")" --simple stirng to show to players
@@ -15,7 +17,8 @@
 		--core version when a new version of wow is released
 		_detalhes.BFACORE = 131 --core version on BFA launch
 		_detalhes.CLASSICCORE = 140 --core version on BFA launch
-		_detalhes.SYNCCORE = 141 --core version to sync data due to blizzard cleu range
+		_detalhes.SEASON_MASTERY_CORE = 142 --core version on BFA launch
+		_detalhes.SYNCCORE = 141 --core version to sync data due to blizzard cleu range - sync isn't enabled anymore (they increased the combtalog range)
 		
 		Details = _detalhes
 		
@@ -617,7 +620,7 @@ do
 	local _UIParent = UIParent --api locals
 	
 	--> Info Window
-		_detalhes.janela_info = _CreateFrame ("Frame", "DetailsPlayerDetailsWindow", _UIParent)
+		_detalhes.janela_info = _CreateFrame ("Frame", "DetailsPlayerDetailsWindow", _UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		_detalhes.PlayerDetailsWindow = _detalhes.janela_info
 		
 	--> Event Frame

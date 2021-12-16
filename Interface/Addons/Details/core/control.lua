@@ -1316,7 +1316,7 @@
 				instancia._postponing_current = nil
 				instancia.showing = _detalhes.tabela_vigente
 				instancia:ResetaGump()
-				_detalhes.gump:Fade (instancia, "in", nil, "barras")
+				Details.FadeHandler.Fader (instancia, "in", nil, "barras")
 			end
 		end
 		
@@ -1519,7 +1519,7 @@
 				if (instancia.v_barras) then
 					--print ("mostrando", instancia.rows_showing, instancia.rows_created)
 					for barra_numero = instancia.rows_showing+1, instancia.rows_created do
-						_detalhes.gump:Fade (instancia.barras[barra_numero], "in")
+						Details.FadeHandler.Fader (instancia.barras[barra_numero], "in")
 					end
 					instancia.v_barras = false
 					
@@ -1639,7 +1639,7 @@
 		local panel = _G.DetailsEraseDataConfirmation
 		if (not panel) then
 			
-			panel = CreateFrame ("frame", "DetailsEraseDataConfirmation", UIParent)
+			panel = CreateFrame ("frame", "DetailsEraseDataConfirmation", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 			panel:SetSize (400, 85)
 			panel:SetBackdrop ({bgFile = [[Interface\AddOns\Details\images\background]], tile = true, tileSize = 16,
 			edgeFile = [[Interface\AddOns\Details\images\border_2]], edgeSize = 12})

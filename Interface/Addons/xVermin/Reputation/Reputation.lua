@@ -62,7 +62,7 @@ local function CreateBar(input)
 	f.Bar.Background:SetTexture("Interface\\AddOns\\xVermin\\Media\\statusbarTexture")
 	f.Bar.Background:SetVertexColor(0.25, 0.25, 0.25, 1)
 
-	f.Bar.BackgroundShadow = CreateFrame("Frame", nil, f.Bar)
+	f.Bar.BackgroundShadow = CreateFrame("Frame", nil, f.Bar, BackdropTemplateMixin and "BackdropTemplate")
 	f.Bar.BackgroundShadow:SetFrameStrata("BACKGROUND")
 	f.Bar.BackgroundShadow:SetPoint("TOPLEFT", -4, 4)
 	f.Bar.BackgroundShadow:SetPoint("BOTTOMRIGHT", 4, -4)

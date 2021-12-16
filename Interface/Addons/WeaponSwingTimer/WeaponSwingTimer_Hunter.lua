@@ -505,6 +505,12 @@ addon_data.hunter.UpdateVisualsOnSettingsChange = function()
     local settings = character_hunter_settings
     local frame = addon_data.hunter.frame
 	if settings.enabled then
+		if not frame.SetBackdrop then
+			Mixin(frame, BackdropTemplateMixin)
+		end
+		if not frame.backplane.SetBackdrop then
+			Mixin(frame.backplane, BackdropTemplateMixin)
+		end
         frame:Show()
         frame:ClearAllPoints()
         frame:SetPoint(settings.point, UIParent, settings.rel_point, settings.x_offset, settings.y_offset)

@@ -53,7 +53,7 @@ function _detalhes:OpenWelcomeWindow()
 		logotipo:SetWidth (186)
 		logotipo:SetHeight (50)
 		
-		local cancel = CreateFrame ("Button", nil, window)
+		local cancel = CreateFrame ("Button", nil, window, BackdropTemplateMixin and "BackdropTemplate")
 		cancel:SetWidth (22)
 		cancel:SetHeight (22)
 		cancel:SetPoint ("bottomleft", window, "bottomleft", 12, 14)
@@ -70,7 +70,7 @@ function _detalhes:OpenWelcomeWindow()
 		cancelText:SetPoint ("left", cancel, "right", 2, 0)
 		cancelText:SetText (Loc ["STRING_WELCOME_69"])
 		
-		local forward = CreateFrame ("button", nil, window)
+		local forward = CreateFrame ("button", nil, window, BackdropTemplateMixin and "BackdropTemplate")
 		forward:SetWidth (26)
 		forward:SetHeight (26)
 		forward:SetPoint ("bottomright", window, "bottomright", -14, 13)
@@ -80,7 +80,7 @@ function _detalhes:OpenWelcomeWindow()
 		forward:SetNormalTexture ([[Interface\Buttons\UI-SpellbookIcon-NextPage-Up]])
 		forward:SetDisabledTexture ([[Interface\Buttons\UI-SpellbookIcon-NextPage-Disabled]])
 		
-		local backward = CreateFrame ("button", nil, window)
+		local backward = CreateFrame ("button", nil, window, BackdropTemplateMixin and "BackdropTemplate")
 		backward:SetWidth (26)
 		backward:SetHeight (26)
 		backward:SetPoint ("bottomright", window, "bottomright", -38, 13)
@@ -182,42 +182,9 @@ function _detalhes:OpenWelcomeWindow()
 		end)
 	end
 	
-	--deprecated
-	--_detalhes:ScheduleTimer ("CalcCpuPower", 10)
-
-	--detect ElvUI
-	--[=[ --deprecated
-	local ElvUI = _G.ElvUI
-	if (ElvUI) then
-		--active elvui skin
-		local instance = _detalhes.tabela_instancias [1]
-		if (instance and instance.ativa) then
-			if (instance.skin ~= "ElvUI Frame Style") then
-				instance:ChangeSkin ("ElvUI Frame Style")
-			end
-		end
-
-		--save standard
-		local savedObject = {}
-		for key, value in pairs (instance) do
-			if (_detalhes.instance_defaults [key] ~= nil) then	
-				if (type (value) == "table") then
-					savedObject [key] = table_deepcopy (value)
-				else
-					savedObject [key] = value
-				end
-			end
-		end
-		_detalhes.standard_skin = savedObject
-		
-		_detalhes:ApplyPDWSkin ("ElvUI")
-		--_detalhes:SetTooltipBackdrop ("Details BarBorder 3", 14, {0, 0, 0, 1})
-	end
-	--]=]
-	
 -- frame alert
 	
-	local frame_alert = CreateFrame ("frame", nil, window)
+	local frame_alert = CreateFrame ("frame", nil, window, BackdropTemplateMixin and "BackdropTemplate")
 	frame_alert:SetPoint ("topright", window)
 	function _detalhes:StopPlayStretchAlert()
 		frame_alert.alert.animIn:Stop()
@@ -660,7 +627,7 @@ local window_openned_at = time()
 
 		local created_test_bars = 0
 		
-		local skins_frame_alert = CreateFrame ("frame", nil, window)
+		local skins_frame_alert = CreateFrame ("frame", nil, window, BackdropTemplateMixin and "BackdropTemplate")
 		skins_frame_alert:Hide()
 		skins_frame_alert:SetScript ("OnShow", function()
 			if (created_test_bars < 2) then
@@ -905,7 +872,7 @@ local window_openned_at = time()
 		local pleasewait = window:CreateFontString (nil, "overlay", "GameFontHighlightSmall")
 		pleasewait:SetPoint ("bottomright", forward, "topright")
 		
-		local free_frame3 = CreateFrame ("frame", nil, window)
+		local free_frame3 = CreateFrame ("frame", nil, window, BackdropTemplateMixin and "BackdropTemplate")
 		function _detalhes:FreeTutorialFrame3()
 			if (window_openned_at+10 > time()) then
 				pleasewait:Show()
@@ -1079,7 +1046,7 @@ local window_openned_at = time()
 		mech_icon2:SetTexCoord (0, 1, 40/128, 1)
 		mech_icon2:SetDrawLayer ("overlay", 2)
 
-		local update_frame_alert = CreateFrame ("frame", nil, window)
+		local update_frame_alert = CreateFrame ("frame", nil, window, BackdropTemplateMixin and "BackdropTemplate")
 		update_frame_alert:SetScript ("OnShow", function()
 		
 			_detalhes.tabela_historico:resetar()
@@ -1149,7 +1116,7 @@ local window_openned_at = time()
 		stretch_image:SetHeight (61)
 		stretch_image:SetTexCoord (0.716796875, 1, 0.876953125, 1)
 		
-		local stretch_frame_alert = CreateFrame ("frame", nil, window)
+		local stretch_frame_alert = CreateFrame ("frame", nil, window, BackdropTemplateMixin and "BackdropTemplate")
 		stretch_frame_alert:SetScript ("OnHide", function()
 			_detalhes:StopPlayStretchAlert()
 		end)
@@ -1207,7 +1174,7 @@ local window_openned_at = time()
 		instance_button_image:SetHeight (141)
 		instance_button_image:SetTexCoord (0.328125, 0.71484375, 0.724609375, 1)
 		
-		local instance_frame_alert = CreateFrame ("frame", nil, window)
+		local instance_frame_alert = CreateFrame ("frame", nil, window, BackdropTemplateMixin and "BackdropTemplate")
 		instance_frame_alert:SetScript ("OnHide", function()
 			_detalhes:StopPlayStretchAlert()
 		end)
@@ -1266,7 +1233,7 @@ local window_openned_at = time()
 		
 		local instance1 = _detalhes:GetInstance (1)
 		
-		local bookmark_frame = CreateFrame ("frame", "WelcomeBookmarkFrame", window)
+		local bookmark_frame = CreateFrame ("frame", "WelcomeBookmarkFrame", window, BackdropTemplateMixin and "BackdropTemplate")
 		bookmark_frame:SetPoint ("topleft", instance1.baseframe, "topleft")
 		bookmark_frame:SetPoint ("bottomright", instance1.baseframe, "bottomright")
 		bookmark_frame:SetBackdrop ({bgFile = [[Interface\AddOns\Details\images\background]], tile = true, tileSize = 64})
@@ -1334,7 +1301,7 @@ local window_openned_at = time()
 		snap_image1:SetHeight (102) 
 		snap_image1:SetTexCoord (0, 0.60546875, 191/512, 293/512)
 
-		local group_frame_alert = CreateFrame ("frame", nil, window)
+		local group_frame_alert = CreateFrame ("frame", nil, window, BackdropTemplateMixin and "BackdropTemplate")
 		group_frame_alert:SetScript ("OnShow", function()
 			_detalhes.tabela_historico:resetar()
 			created_test_bars = 0
@@ -1378,7 +1345,7 @@ local window_openned_at = time()
 		micro_image1:SetHeight (100)
 		micro_image1:SetTexCoord (326/512, 1, 85/512, 185/512)
 		
-		local tooltip_frame = CreateFrame ("frame", nil, window)
+		local tooltip_frame = CreateFrame ("frame", nil, window, BackdropTemplateMixin and "BackdropTemplate")
 		tooltip_frame:SetScript ("OnShow", function (self)
 		
 			_detalhes.tabela_historico:resetar()
@@ -1533,7 +1500,7 @@ local window_openned_at = time()
 		texto:SetJustifyV ("top")
 		texto:SetTextColor (1, 1, 1, 1)
 		
-		local final_frame = CreateFrame ("frame", nil, window)
+		local final_frame = CreateFrame ("frame", nil, window, BackdropTemplateMixin and "BackdropTemplate")
 		final_frame:SetSize (1, 1)
 		final_frame:SetPoint ("center")
 		final_frame:Hide()

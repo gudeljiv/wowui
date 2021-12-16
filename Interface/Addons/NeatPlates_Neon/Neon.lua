@@ -56,9 +56,20 @@ StyleDefault.healthbar = {
 	y = VerticalAdjustment,
 }
 
+StyleDefault.powerbar = {
+	texture =					 ArtworkPath.."Neon_Bar",
+	backdrop =					 ArtworkPath.."Neon_Bar_Backdrop",
+	width = 98,
+	_width = 98,
+	height = 6,
+	x = 0,
+	y = VerticalAdjustment - 5,
+}
+
 StyleDefault.castborder = {
 	--texture =					ArtworkPath.."Cast_Normal",
 	texture =					ArtworkPath.."Neon_CastOverlay",
+	noicon =					ArtworkPath.."Neon_CastOverlay-noicon",
 	width = 128,
 	height = 32,
 	x = CastBarHorizontalAdjustment,
@@ -69,6 +80,7 @@ StyleDefault.castborder = {
 StyleDefault.castnostop = {
 	--texture =					ArtworkPath.."Cast_Shield",
 	texture =					ArtworkPath.."Neon_CastOverlayNoInt",
+	noicon =					ArtworkPath.."Neon_CastOverlayNoInt-noicon",
 	width = 128,
 	height = 32,
 	x = CastBarHorizontalAdjustment,
@@ -105,6 +117,21 @@ StyleDefault.spelltext = {
 	x = CastBarHorizontalAdjustment - 10,
 	--NameTextVerticalAdjustment +
 	y = CastBarVerticalAdjustment - 16,
+	align = "CENTER",
+	anchor = "CENTER",
+	vertical = "CENTER",
+	shadow = true,
+	show = true,
+}
+
+StyleDefault.spelltarget = {
+	typeface = font,
+	size = fontsize,
+	width = 150,
+	height = 11,
+	x = CastBarHorizontalAdjustment - 10,
+	--NameTextVerticalAdjustment +
+	y = CastBarVerticalAdjustment - 26,
 	align = "CENTER",
 	anchor = "CENTER",
 	vertical = "CENTER",
@@ -260,6 +287,21 @@ StyleDefault.name = {
 	shadow = true,
 	flags = "NONE",
 }
+
+StyleDefault.subtext = {
+	typeface = font,
+	size = 11,
+	width = 200,
+	height = 11,
+	x = 0,
+	y = NameTextVerticalAdjustment - 10,
+	yOffset = 0,
+	align = "CENTER",
+	anchor = "CENTER",
+	vertical = "CENTER",
+	shadow = true,
+	flags = "NONE",
+}
 --[[
 StyleDefault.level = {
 	typeface = font,
@@ -377,15 +419,19 @@ StyleTextOnly.healthborder.height = 64
 StyleTextOnly.healthborder.texture = EmptyTexture
 StyleTextOnly.healthbar.texture = EmptyTexture
 StyleTextOnly.healthbar.backdrop = EmptyTexture
+StyleTextOnly.powerbar.texture = EmptyTexture
+StyleTextOnly.powerbar.backdrop = EmptyTexture
 StyleTextOnly.eliteicon.texture = EmptyTexture
 StyleTextOnly.extrabar.width = 70
 StyleTextOnly.extrabar.y = VerticalAdjustment - 20
 StyleTextOnly.extratext.y = VerticalAdjustment - 21
 StyleTextOnly.extrabar.x = 0
 StyleTextOnly.extratext.x = 0
-StyleTextOnly.customtext.size = fontsize - 2
-StyleTextOnly.customtext.flags = "NONE"
-StyleTextOnly.customtext.y = VerticalAdjustment-8
+StyleTextOnly.subtext.show = true
+StyleTextOnly.subtext.size = fontsize - 2
+StyleTextOnly.subtext.y = VerticalAdjustment-8
+StyleTextOnly.subtext.width = 500
+StyleTextOnly.customtext.show = false
 StyleTextOnly.name.size = fontsize
 StyleTextOnly.name.y = VerticalAdjustment + 1
 StyleTextOnly.level.show = false
@@ -439,8 +485,8 @@ Theme["NameOnly-NoDescription"] = TextNoDescription
 
 -- Widget
 local WidgetConfig = {}
-WidgetConfig.ClassIcon = { anchor = "TOPRIGHT" , x = 15 ,y = VerticalAdjustment -1 }
-WidgetConfig.TotemIcon = { anchor = "TOP" , x = 0 ,y = VerticalAdjustment + 2 }
+WidgetConfig.ClassIcon = { anchor = "TOPRIGHT", w = 24, h = 24 , x = 15 ,y = VerticalAdjustment -1 }
+WidgetConfig.TotemIcon = { anchor = "TOP", w = 19, h = 18 , x = 0 ,y = VerticalAdjustment + 2 }
 WidgetConfig.ThreatLineWidget = { anchor =  "CENTER", x = 0 ,y = VerticalAdjustment + 4 }
 WidgetConfig.ThreatWheelWidget = { anchor =  "CENTER", x = 36 ,y = VerticalAdjustment + 12 } -- "CENTER", plate, 30, 18
 WidgetConfig.ComboWidget = { anchor = "CENTER" , x = 0 ,y = VerticalAdjustment + 9.5 }

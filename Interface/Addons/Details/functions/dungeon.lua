@@ -289,7 +289,7 @@ function mythicDungeonCharts.ShowReadyPanel()
 	
 	--create the panel
 	if (not mythicDungeonCharts.ReadyFrame) then
-		mythicDungeonCharts.ReadyFrame = CreateFrame ("frame", "DetailsMythicDungeoReadyFrame", UIParent)
+		mythicDungeonCharts.ReadyFrame = CreateFrame ("frame", "DetailsMythicDungeoReadyFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		local f = mythicDungeonCharts.ReadyFrame
 		
 		f:SetSize (255, 80)
@@ -338,7 +338,7 @@ function mythicDungeonCharts.ShowChart()
 
 	if (not mythicDungeonCharts.Frame) then
 		
-		mythicDungeonCharts.Frame = CreateFrame ("frame", "DetailsMythicDungeonChartFrame", UIParent)
+		mythicDungeonCharts.Frame = CreateFrame ("frame", "DetailsMythicDungeonChartFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		local f = mythicDungeonCharts.Frame
 		
 		f:SetSize (1200, 620)
@@ -351,7 +351,7 @@ function mythicDungeonCharts.ShowChart()
 		f:SetBackdropBorderColor (0, 0, 0, 1)
 		
 		--minimized frame
-		mythicDungeonCharts.FrameMinimized = CreateFrame ("frame", "DetailsMythicDungeonChartFrameminimized", UIParent)
+		mythicDungeonCharts.FrameMinimized = CreateFrame ("frame", "DetailsMythicDungeonChartFrameminimized", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		local fMinimized = mythicDungeonCharts.FrameMinimized
 		
 		fMinimized:SetSize (160, 24)
@@ -367,7 +367,7 @@ function mythicDungeonCharts.ShowChart()
 		f.IsMinimized = false
 		
 		--titlebar
-			local titlebar = CreateFrame ("frame", nil, f)
+			local titlebar = CreateFrame ("frame", nil, f, BackdropTemplateMixin and "BackdropTemplate")
 			titlebar:SetPoint ("topleft", f, "topleft", 2, -3)
 			titlebar:SetPoint ("topright", f, "topright", -2, -3)
 			titlebar:SetHeight (20)
@@ -382,7 +382,7 @@ function mythicDungeonCharts.ShowChart()
 			f.TitleText = titleLabel
 			
 		--titlebar when minimized
-			local titlebarMinimized = CreateFrame ("frame", nil, fMinimized)
+			local titlebarMinimized = CreateFrame ("frame", nil, fMinimized, BackdropTemplateMixin and "BackdropTemplate")
 			titlebarMinimized:SetPoint ("topleft", fMinimized, "topleft", 2, -3)
 			titlebarMinimized:SetPoint ("topright", fMinimized, "topright", -2, -3)
 			titlebarMinimized:SetHeight (20)
@@ -434,7 +434,7 @@ function mythicDungeonCharts.ShowChart()
 		
 		f.ChartFrame.CloseButton:Hide()
 		
-		f.BossWidgetsFrame = CreateFrame ("frame", "$parentBossFrames", f)
+		f.BossWidgetsFrame = CreateFrame ("frame", "$parentBossFrames", f, BackdropTemplateMixin and "BackdropTemplate")
 		f.BossWidgetsFrame:SetFrameLevel (f:GetFrameLevel()+10)
 		f.BossWidgetsFrame.Widgets = {}
 		
@@ -556,7 +556,7 @@ function mythicDungeonCharts.ShowChart()
 				
 				local bossWidget = f.BossWidgetsFrame.Widgets [i]
 				if (not bossWidget) then
-					local newBossWidget = CreateFrame ("frame", "$parentBossWidget" .. i, f.BossWidgetsFrame)
+					local newBossWidget = CreateFrame ("frame", "$parentBossWidget" .. i, f.BossWidgetsFrame, BackdropTemplateMixin and "BackdropTemplate")
 					newBossWidget:SetSize (64, 32)
 					newBossWidget:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true})
 					newBossWidget:SetBackdropColor (0, 0, 0, 0.1)
@@ -852,7 +852,7 @@ function mythicDungeonCharts:CustomDrawLine (C, sx, sy, ex, ey, w, color, layer,
 	
 		local pixelFrame = tremove (mythicDungeonCharts.Frame.ChartFrame.FrameFree)
 		if (not pixelFrame) then
-			local newFrame = CreateFrame ("frame", nil, mythicDungeonCharts.Frame.ChartFrame)
+			local newFrame = CreateFrame ("frame", nil, mythicDungeonCharts.Frame.ChartFrame, BackdropTemplateMixin and "BackdropTemplate")
 			newFrame:SetSize (1, 1)
 
 			--newFrame:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 2, tile = true})
@@ -934,152 +934,3 @@ if (debugmode) then
 	C_Timer.After (1, mythicDungeonCharts.ShowChart)
 end
 
--- endd
-
-
-
-
-
-
-
-
-
-
---> 
-
---[=[
-C_Timer.After (2, function()
-
-
-local Details = _G._detalhes
-
---create the left side frame, need a minimize button only
---title bar and a minimize button
-
-	local f = CreateFrame ("frame", "DetailsBetaRaidTest", UIParent)
-	--f:Hide()
-	
-	f:RegisterEvent ("ZONE_CHANGED_NEW_AREA")
-	f:RegisterEvent ("ENCOUNTER_START")
-	f:RegisterEvent ("ENCOUNTER_END")
-	
-	
-	f:SetScript ("OnEvent", function (self, event, ...)
-		
-		if (event == "ZONE_CHANGED_NEW_AREA") then
-			local zoneName, zoneType, _, _, _, _, _, zoneMapID = GetInstanceInfo()
-			if (zoneName and zoneType == "raid") then
-				f.InRaidInstance = true
-			else
-				f.InRaidInstance = false
-				f:Hide()
-			end
-			
-		elseif (event == "ENCOUNTER_END" and _G.WeakAuras) then
-			if (f.InRaidInstance) then
-				f:Show()
-			end
-			
-		elseif (event == "ENCOUNTER_START") then
-			f:Hide()
-		end
-		
-	end)
-
-	f:SetSize (150, 150)
-	f:SetPoint ("left", UIParent, "left", 0, -150)
-	f:SetFrameStrata ("LOW")
-	f:EnableMouse (true)
-	f:SetMovable (true)
-	f:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true})
-	f:SetBackdropColor (0, 0, 0, 0.9)
-	f:SetBackdropBorderColor (0, 0, 0, 1)
-	
-	--minimized frame
-	f.FrameMinimized = CreateFrame ("frame", "DetailsBetaRaidTestMinimized", UIParent)
-	local fMinimized = f.FrameMinimized
-
-	fMinimized:SetSize (20, 20)
-	fMinimized:SetPoint ("left", UIParent, "left", 0, 0)
-	fMinimized:SetFrameStrata ("LOW")
-	fMinimized:EnableMouse (true)
-	fMinimized:SetMovable (true)
-	fMinimized:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true})
-	fMinimized:SetBackdropColor (0, 0, 0, 0.9)
-	fMinimized:SetBackdropBorderColor (0, 0, 0, 1)
-	fMinimized:Hide()
-	
-	f.IsMinimized = false
-	
-	--titlebar
-		local titlebar = CreateFrame ("frame", nil, f)
-		titlebar:SetPoint ("topleft", f, "topleft", 2, -3)
-		titlebar:SetPoint ("topright", f, "topright", -2, -3)
-		titlebar:SetHeight (20)
-		titlebar:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\AddOns\Details\images\background]], tileSize = 64, tile = true})
-		titlebar:SetBackdropColor (.5, .5, .5, 1)
-		titlebar:SetBackdropBorderColor (0, 0, 0, 1)
-		
-		--> title
-		local titleLabel = _detalhes.gump:NewLabel (titlebar, titlebar, nil, "titulo", "Raid Test Helper", "GameFontHighlightLeft", 12, {227/255, 186/255, 4/255})
-		titleLabel:SetPoint ("center", titlebar , "center")
-		titleLabel:SetPoint ("top", titlebar , "top", 0, -5)
-		f.TitleText = titleLabel
-		
-	
-	local fw = Details.gump
-	
-	--weakauras
-	local open_aura_dbm_timer= function()
-		--> open details! aura panel for 
-		
-	end
-	
-	local open_debuff_aura= function()
-		--> open plugin on the debuffs page
-		
-	end
-	
-	local DBMTimerButton = fw:CreateButton (f, open_aura_dbm_timer, 140, 20, "Create Big Boss Timer", _, _, _, _, _, -1, fw:GetTemplate ("button", "OPTIONS_BUTTON_TEMPLATE"), fw:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	local DebuffAuraButton = fw:CreateButton (f, open_debuff_aura, 140, 20, "Create Boss Debuff Aura", _, _, _, _, _, -1, fw:GetTemplate ("button", "OPTIONS_BUTTON_TEMPLATE"), fw:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-	
-	--all spells
-	
-	local open_boss_spells = function()
-		
-	end
-	local BossSpellsButton = fw:CreateButton (f, open_boss_spells, 140, 20)
-	
-	--set the positions
-	local YStart = -28
-	DBMTimerButton:SetPoint (5, YStart)
-	DebuffAuraButton:SetPoint (5, YStart * 2)
-	
-	
-
-
-Details! Beta Helper
-
-All Spells:
-	- show a list of spells
-	
-Timers: 
-	- show when the spell cast some spells
-
-	
-* on hover over the create dbm timer button showing a .gif showing how the timer works
-	* clicking on it open the Spell List in the dbm or bigwigs panel
-	
-* on click on create aura for debuff, open the encoutnern details panel on the aura creation
-	
-	
-
-
-
-
-
-
-
-end)
-
---]=]

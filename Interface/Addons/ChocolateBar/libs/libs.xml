@@ -1,6 +1,6 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
-  <!--@non-debug@
+  <!--@non-debug@-->
 	<Script file="LibStub\LibStub.lua" />
   <Include file="CallbackHandler-1.0\CallbackHandler-1.0.xml" />
   <Include file="AceAddon-3.0\AceAddon-3.0.xml" />
@@ -15,5 +15,5 @@
   <Include file="AceGUI-3.0-SharedMediaWidgets\widget.xml" />
   <Include file="AceDBOptions-3.0\AceDBOptions-3.0.xml" />
   <Script file="LibQTip-1.0\LibQTip-1.0.lua" />
-  @end-non-debug@-->
+  <!--@end-non-debug@-->
 </Ui>

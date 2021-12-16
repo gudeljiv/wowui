@@ -6,7 +6,7 @@ local resolution_width = string.match(resolution, "%d+x(%d+)")
 local scale = tonumber(resolution_width) > 2000 and 0.55 or 768 / resolution_width
 
 xVermin.Config = {
-	UIscale = scale,
+	UIscale = 0.58,
 	font = {
 		arial = "Fonts\\ARIALN.ttf",
 		atari = "Interface\\AddOns\\xVermin\\Media\\Atari.ttf",

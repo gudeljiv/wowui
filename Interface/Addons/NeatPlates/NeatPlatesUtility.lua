@@ -16,10 +16,21 @@ copytable = function(original)
 	return duplicate
 end
 
+NeatPlatesUtility.Colors = {
+	white = "|cFFFFFFFF",
+	yellow = "|cffffff00",
+	blue = 	"|cFF3782D1",
+	red =	"|cFFFF1100",
+	orange = "|cFFFF6906",
+	green = "|cFF60E025",
+}
 
 NeatPlatesUtility.IsFriend = function(...) end
 --NeatPlatesUtility.IsHealer =
-NeatPlatesUtility.IsGuildmate = function(...) end
+--NeatPlatesUtility.IsGuildmate = function(...) end
+--NeatPlatesUtility.IsPartyMember = function(...) end
+NeatPlatesUtility.IsGuildmate = UnitIsInMyGuild
+NeatPlatesUtility.IsPartyMember = function(unitid) if not  unitid then return false end; return UnitInParty(unitid) or UnitInRaid(unitid) end
 
 local function RaidMemberCount()
 	if UnitInRaid("player") then
@@ -105,7 +116,7 @@ end
 -- Hex conversion functions
 local function HexToRGB(hex)
     hex = hex:gsub("#","")
-		
+
 		-- Incase of shorthand hex
     if string.len(hex) == 3 then
     	str = "";
@@ -130,7 +141,7 @@ local function RGBToHex(r,g,b)
 		while(value > 0)do
 			local index = math.fmod(value, 16) + 1
 			value = math.floor(value / 16)
-			hex = string.sub('0123456789ABCDEF', index, index) .. hex			
+			hex = string.sub('0123456789ABCDEF', index, index) .. hex
 		end
 
 		if(string.len(hex) == 0)then
@@ -153,7 +164,7 @@ local function round(number, decimals)
 end
 
 -- Fade frame function
-function fade(intervals, duration, delay, onUpdate, onDone, timer, stop)
+local function fade(intervals, duration, delay, onUpdate, onDone, timer, stop)
 	if not timer then timer = 0 end
 
 	local interval = duration/intervals
@@ -165,6 +176,12 @@ function fade(intervals, duration, delay, onUpdate, onDone, timer, stop)
 	else onDone() end
 end
 
+-- Split guid
+local function ParseGUID(guid)
+	if guid then return strsplit("-", guid) end
+	return
+end
+
 
 NeatPlatesUtility.abbrevNumber = valueToString
 NeatPlatesUtility.copyTable = copytable
@@ -174,6 +191,7 @@ NeatPlatesUtility.HexToRGB = HexToRGB
 NeatPlatesUtility.RGBToHex = RGBToHex
 NeatPlatesUtility.round = round
 NeatPlatesUtility.fade = fade
+NeatPlatesUtility.ParseGUID = ParseGUID
 
 ------------------------------------------
 -- GameTooltipScanner
@@ -188,6 +206,7 @@ TooltipScanner:SetOwner( WorldFrame, "ANCHOR_NONE" );
 local UnitSubtitles = {}
 local function GetUnitSubtitle(unit)
 	local unitid = unit.unitid
+	local colorblindMode = GetCVar("colorblindMode") == "1" -- Color blind mode seems to shift this down one row.
 
 	-- Bypass caching while in an instance
 	--if inInstance or (not UnitExists(unitid)) then return end
@@ -213,7 +232,12 @@ local function GetUnitSubtitle(unit)
 
 
 		-- Tooltip Format Priority:  Faction, Description, Level
-		local toolTipText = TooltipTextLeft2:GetText() or "UNKNOWN"
+		local toolTipText
+		if colorblindMode then
+			toolTipText = TooltipTextLeft3:GetText() or "UNKNOWN"
+		else
+			toolTipText = TooltipTextLeft2:GetText() or "UNKNOWN"
+		end
 
 		if string.match(toolTipText, UNIT_LEVEL_TEMPLATE) then
 			subTitle = ""
@@ -290,8 +314,23 @@ local function GetUnitQuestInfo(unit)
     return questList
 end
 
+local arenaUnitIDs = {"arena1", "arena2", "arena3", "arena4", "arena5"}
+
+local function GetArenaIndex(unitname)
+	-- Kinda hackish.  would be faster to cache the arena names using event handler.  later!
+	-- if IsActiveBattlefieldArena() then
+	-- 	local unitid, name
+	-- 	for i = 1, #arenaUnitIDs do
+	-- 		unitid = arenaUnitIDs[i]
+	-- 		name = UnitName(unitid)
+	-- 		if name and (name == unitname) then return i end
+	-- 	end
+	-- end
+end
+
 
 NeatPlatesUtility.GetUnitQuestInfo = GetUnitQuestInfo
+NeatPlatesUtility.GetArenaIndex = GetArenaIndex
 
 ------------------------
 -- Threat Function
@@ -425,7 +464,7 @@ do
 
 	local function GetRelativeThreat(enemyUnitid)		-- 'enemyUnitid' is a target/enemy
 		if not UnitExists(enemyUnitid) then return end
-		
+
 		local playerIsTanking, playerSituation, playerThreat = UnitDetailedThreatSituation("player", enemyUnitid)
 		if not playerThreat then return end
 
@@ -585,11 +624,10 @@ end
 --	return slider
 --end
 
-local function CreateSliderFrame(self, reference, parent, label, val, minval, maxval, step, mode, width)
+local function CreateSliderFrame(self, reference, parent, label, val, minval, maxval, step, mode, width, infinite)
 	local value, multiplier, minimum, maximum, current
 	local slider = CreateFrame("Slider", reference, parent, 'OptionsSliderTemplate')
 	local EditBox = CreateFrame("EditBox", reference, slider)
-
 	slider.isActual = (mode and mode == "ACTUAL")
 
 	slider:SetWidth(width or 100)
@@ -599,6 +637,7 @@ local function CreateSliderFrame(self, reference, parent, label, val, minval, ma
 	slider:SetValueStep(step or .1)
 	slider:SetValue(val or .5)
 	slider:SetOrientation("HORIZONTAL")
+	slider:SetObeyStepOnDrag(true)
 	slider:Enable()
 	-- Labels
 	slider.Label = slider:CreateFontString(nil, 'ARTWORK', 'GameFontNormal')
@@ -607,7 +646,10 @@ local function CreateSliderFrame(self, reference, parent, label, val, minval, ma
 	slider.High = _G[reference.."High"]
 	slider.Label:SetText(label or "")
 
-	slider:SetScript("OnMouseUp", function(self) if self.Callback then self:Callback() end end)
+	slider:SetScript("OnMouseUp", function(self)
+		slider:updateValues()
+		if self.Callback then self:Callback() end
+	end)
 
 	-- Value
 	--slider.Value = slider:CreateFontString(nil, 'ARTWORK', 'GameFontWhite')
@@ -624,6 +666,7 @@ local function CreateSliderFrame(self, reference, parent, label, val, minval, ma
 
 	EditBox:SetScript("OnEnterPressed", function(self, val)
 		if slider.isActual then val = self:GetNumber() else val = self:GetNumber()/100 end
+		slider:updateValues(val)
 		slider:SetValue(val)
 		self:ClearFocus()
 
@@ -638,7 +681,7 @@ local function CreateSliderFrame(self, reference, parent, label, val, minval, ma
 
 	if slider.isActual then
 		local multiplier = 1
-		if step < 1 and step >= .1 then multiplier = 10 elseif step < .1 then multiplier = 100 end
+		if step < 1 and step >= 0.1 then multiplier = 10 elseif step < 0.1 then multiplier = 100 end
 		slider.ceil = function(v) return ceil(v*multiplier-.5)/multiplier end
 		minimum = minval or 0
 		maximum = maxval or 1
@@ -655,10 +698,22 @@ local function CreateSliderFrame(self, reference, parent, label, val, minval, ma
 	slider.Value:SetText(current)
 	slider.Value:SetCursorPosition(0)
 	slider:SetScript("OnValueChanged", function()
+		local value = slider.ceil(slider:GetValue())
 		local ext = "%"
 		if slider.isActual then ext = "" end
-		slider.Value:SetText(tostring(slider.ceil(slider:GetValue())..ext))
+		slider.Value:SetText(tostring(value..ext))
 	end)
+
+	slider.updateValues = function(self, val)
+		local value = val or self.ceil(self:GetValue(self))
+		if infinite then
+			NeatPlatesHubRapidPanel.SetSliderMechanics(self, value, minimum+value, maximum+value, step)
+		elseif slider.isActual then
+			NeatPlatesHubRapidPanel.SetSliderMechanics(self, value, minimum, maximum, step) -- Only breaks stuff?
+		end
+		if parent.OnValueChanged then parent.OnValueChanged(slider) end
+		if slider.OnValueChanged then slider.OnValueChanged(slider) end
+	end
 
 	--slider.tooltipText = "Slider"
 	return slider
@@ -675,7 +730,7 @@ DropDownMenuFrame:SetSize(100, 100)
 DropDownMenuFrame:SetFrameStrata("TOOLTIP");
 DropDownMenuFrame:Hide()
 
-local Border = CreateFrame("Frame", nil, DropDownMenuFrame)
+local Border = CreateFrame("Frame", nil, DropDownMenuFrame, BackdropTemplateMixin and "BackdropTemplate")
 Border:SetBackdrop(
 		{	bgFile = "Interface/DialogFrame/UI-DialogBox-Background-Dark",
             edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
@@ -856,10 +911,10 @@ local function CreateDropdownFrame(helpertable, reference, parent, menu, default
 	------------------------------------------------
 
 	local function OnClickItem(self)
-
 		drawer:SetValue(menu[self.buttonIndex].value or self.buttonIndex)
 		--print(self.Value, menu[self.buttonIndex].value, drawer:GetValue())
 
+		if parent.OnValueChanged then parent.OnValueChanged(drawer) end
 		if drawer.OnValueChanged then drawer.OnValueChanged(drawer) end
 		PlaySound(856);
 		HideDropdownMenu()
@@ -916,7 +971,7 @@ do
 	end
 
 	function CreateColorBox(self, reference, parent, label, onOkay, r, g, b, a)
-		local colorbox = CreateFrame("Button", reference, parent)
+		local colorbox = CreateFrame("Button", reference, parent, BackdropTemplateMixin and "BackdropTemplate")
 		colorbox:SetWidth(24)
 		colorbox:SetHeight(24)
 		colorbox:SetBackdrop({bgFile = "Interface\\ChatFrame\\ChatFrameColorSwatch",
@@ -937,9 +992,21 @@ do
 	end
 end
 
-local function CreateEditBox(self, name, width, height, parent, ...)
+local function QuickSetPoints(frame, columnFrame, neighborFrame, xOffset, yOffset)
+		local TopOffset = frame.Margins.Top + (yOffset or 0)
+		local LeftOffset = frame.Margins.Left + (xOffset or 0)
+		frame:ClearAllPoints()
+		if neighborFrame then
+			if neighborFrame.Margins then TopOffset = neighborFrame.Margins.Bottom + TopOffset + (yOffset or 0) end
+			frame:SetPoint("TOP", neighborFrame, "BOTTOM", -(neighborFrame:GetWidth()/2), -TopOffset)
+		else frame:SetPoint("TOP", columnFrame, "TOP", 0, -TopOffset) end
+		frame:SetPoint("LEFT", columnFrame, "LEFT", LeftOffset, 0)
+end
+
+
+local function CreateEditBox(name, width, height, parent, anchorFrame, ...)
 	local frame = CreateFrame("ScrollFrame", name, parent, "UIPanelScrollFrameTemplate")
-	frame.BorderFrame = CreateFrame("Frame", nil, frame )
+	frame.BorderFrame = CreateFrame("Frame", nil, frame, BackdropTemplateMixin and "BackdropTemplate")
 	local EditBox = CreateFrame("EditBox", nil, frame)
 	-- Margins	-- Bottom/Left are supposed to be negative
 	frame.Margins = {Left = 4, Right = 24, Top = 8, Bottom = 8, }
@@ -958,6 +1025,7 @@ local function CreateEditBox(self, name, width, height, parent, ...)
 										});
 	frame.BorderFrame:SetBackdropColor(0.05, 0.05, 0.05, 0)
 	frame.BorderFrame:SetBackdropBorderColor(0.5, 0.5, 0.5, 1)
+	frame.BorderFrame:SetFrameLevel(frame:GetFrameLevel())
 	-- Text
 
 	EditBox:SetPoint("TOPLEFT")
@@ -966,21 +1034,31 @@ local function CreateEditBox(self, name, width, height, parent, ...)
 	EditBox:SetWidth(width)
 	EditBox:SetMultiLine(true)
 
-	EditBox:SetFrameLevel(frame:GetFrameLevel()-1)
+	EditBox:SetFrameLevel(frame:GetFrameLevel()+1)
 	EditBox:SetFont(NeatPlatesLocalizedInputFont or "Fonts\\FRIZQT__.TTF", 11, "NONE")
 
 	EditBox:SetText("")
 	EditBox:SetAutoFocus(false)
 	EditBox:SetTextInsets(9, 6, 2, 2)
+
 	frame:SetScrollChild(EditBox)
 	frame.EditBox = EditBox
+
+	-- Fix editbox not focusing as expected
+	frame.BorderFrame:SetScript("OnMouseDown", function()
+		if not frame.EditBox:HasFocus() then frame.EditBox:SetFocus() end
+	end)
 
 	function frame:GetValue() return EditBox:GetText() end
 	function frame:SetValue(value) EditBox:SetText(value) end
 	frame._SetWidth = frame.SetWidth
 	function frame:SetWidth(value) frame:_SetWidth(value); EditBox:SetWidth(value) end
 	-- Set Positions
-	frame:SetPoint(...)
+	if type(anchorFrame) == "table" then
+		QuickSetPoints(frame, parent, anchorFrame, ...)
+	else
+		frame:SetPoint(anchorFrame, ...)
+	end
 
 	return frame, frame
 end
@@ -993,12 +1071,14 @@ local function CreateEditBoxButton(frame, onOkay)
 	frame.okayButton:SetText(OKAY)
 	frame.okayButton:Hide()
 
+	frame.okayButton:SetFrameLevel(frame.EditBox:GetFrameLevel()+1)
+
 	frame.okayButton:SetScript("OnClick", function()
 		onOkay()
-		frame.EditBox:ClearFocus()
 		frame.okayButton:Hide()
 	end)
 	frame.EditBox:SetScript("OnEditFocusLost", function()
+		frame.EditBox:HighlightText(0,0)
 		if frame.EditBox.oldValue == frame:GetValue() then
 			frame.okayButton:Hide()
 		end
@@ -1011,7 +1091,7 @@ end
 
 local function CreateTipBox(self, name, text, parent, ...)
 	local frame = CreateFrame("Frame", name, parent, "NeatPlatesPanelTipTemplate")
-	
+
 	frame.Text = frame:CreateFontString(nil, 'ARTWORK', 'GameFontNormal')
 	frame.Text:SetTextColor(255/255, 105/255, 6/255)
 	frame.Text:SetAllPoints()
@@ -1025,7 +1105,514 @@ local function CreateTipBox(self, name, text, parent, ...)
 	return frame, frame
 end
 
-PanelHelpers = {}
+local function CreateMultiStateOptions(self, name, labelArray, stateArray, width, parent, ...)
+	local frame = CreateFrame("Frame", "NeatPlatesPanelMultiState"..name, parent)
+
+
+	frame.states = stateArray;
+	--local labelArray = {"Combat", "Dungeon", "Raid", "Battleground", "World"}
+	local lastItem
+	for i,label in pairs(labelArray) do
+		local button = CreateFrame("Button", "Button_"..label, frame, "NeatPlatesTriStateButtonTemplate")
+		button.tooltipText = tooltip
+		button.Label = L[label]
+		button:SetText(L[label])
+		button:SetWidth(width)
+
+		-- attach below previous item
+		if lastItem then
+			button:SetPoint("TOPLEFT", lastItem, "BOTTOMLEFT", 0, 0)
+		else
+			button:SetPoint("TOPLEFT", 0, 0)
+		end
+		lastItem = button
+
+		frame["Button_"..label] = button
+	end
+
+	-- Border
+	frame.BorderFrame = CreateFrame("Frame", nil, frame, BackdropTemplateMixin and "BackdropTemplate")
+	frame.BorderFrame:SetPoint("TOPLEFT", 0, 5)
+	frame.BorderFrame:SetPoint("BOTTOMRIGHT", 3, -5)
+	frame.BorderFrame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+										edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+										tile = true, tileSize = 16, edgeSize = 16,
+										insets = { left = 4, right = 4, top = 4, bottom = 4 }
+										});
+	frame.BorderFrame:SetBackdropColor(0.05, 0.05, 0.05, 0)
+	frame.BorderFrame:SetBackdropBorderColor(0.5, 0.5, 0.5, 1)
+
+	frame:SetWidth(width)
+	frame:SetHeight(18*#labelArray+3)
+
+	-- Set & Get Values
+	frame.GetValue = function(self)
+		local values = {}
+		for i,label in pairs(labelArray) do
+			values[label] = self["Button_"..label].state
+		end
+
+		return values
+	end
+
+	frame.SetValue = function(self, values)
+		for label,value in pairs(values) do
+			self["Button_"..label]:UpdateState(value)
+		end
+	end
+
+	return frame, frame
+end
+
+OnMouseWheelScrollFrame = function (frame, value, name)
+	local scrollbar = _G[frame:GetName() .. "ScrollBar"];
+	local currentPosition = scrollbar:GetValue()
+	local increment = 50
+
+	-- Spin Up
+	if ( value > 0 ) then scrollbar:SetValue(currentPosition - increment);
+	-- Spin Down
+	else scrollbar:SetValue(currentPosition + increment); end
+end
+
+local function CreateScrollList(parent, name, lists, buttonFunc, width, height)
+	-- Create scroll frame
+	local frame = _G[name.."_Scrollframe"] or CreateFrame("ScrollFrame", name.."_Scrollframe", parent, 'UIPanelScrollFrameTemplate')
+	local child = _G[name.."_ScrollList"] or CreateFrame("Frame", name.."_ScrollList")
+	if not width then width = 160 end
+	if not height then height = 260 end
+	frame.listFrame = child
+	frame:SetWidth(width)
+	frame:SetHeight(height)
+	child:SetWidth(width)
+	child:SetHeight(10)
+
+	-- Append functions to listFrame
+	child.ClearSelection = function(self, buttons)
+		for _, button in pairs(buttons) do
+			button.highlight:SetVertexColor(.196, .388, .8);
+			button:UnlockHighlight();
+		end
+
+		self.selection = nil;
+	end
+
+	child.SelectButton = function(self, button)
+		button.highlight:SetVertexColor(1, 1, 0);
+		button:LockHighlight()
+
+		self.selection = button;
+	end
+
+	-- Populate with list
+	local lastItem
+	for k,list in pairs(lists) do
+		-- Create Label
+		if list.label then
+			local label = _G[name..k.."_label"] or child:CreateFontString(name..k.."_label", "OVERLAY")
+			label:SetFont(NeatPlatesLocalizedFont or "Interface\\Addons\\NeatPlates\\Media\\DefaultFont.ttf", 18)
+			label:SetTextColor(255/255, 105/255, 6/255)
+			label:SetText(list.label)
+
+			-- attach below previous item
+			if lastItem then
+				label:SetPoint("TOPLEFT", lastItem, "BOTTOMLEFT", 0, -8)
+			else
+				label:SetPoint("TOPLEFT", 0, 0)
+			end
+			lastItem = label
+		end
+
+		-- Hide unused list items
+		for i = #{ child:GetChildren() } or 1, #list.list+1, -1 do
+			if _G[name..k..i.."_Button"] then _G[name..k..i.."_Button"]:Hide() end
+		end
+
+		-- Create Buttons
+		for i,item in pairs(list.list) do
+			if item.text and item.value then
+				-- create button
+				local button = _G[name..k..i.."_Button"] or CreateFrame("Button", name..k..i.."_Button", child, 'NeatPlatesOptionsListButtonTemplate')
+				button.value = item.value
+				button.index = item.index or i
+				button.color = item.color or ""
+				button.text = item.text or ""
+				button.tooltipText = item.tooltip
+				button.category = list.value
+				button.options = item.options or {}
+				button.highlight = button:GetHighlightTexture()
+
+				button:SetText(button.color..button.text)
+				button:SetScript("OnClick", function(self)
+					child:ClearSelection({child:GetChildren()})
+					child:SelectButton(self)
+
+					buttonFunc(self, "selected")
+				end)
+
+				-- attach below previous item
+				if lastItem then
+					button:SetPoint("TOPLEFT", lastItem, "BOTTOMLEFT", 0, 0)
+				else
+					button:SetPoint("TOPLEFT", 0, 0)
+				end
+
+				button.actions = {}
+				if item.buttons then
+					for _, action in pairs(item.buttons) do
+						local actionFrame = _G[name..item.value.."_Action_"..action] or CreateFrame("Button", name..button.index.."_Action_"..action, button, 'NeatPlatesOptionsListButtonTemplate')
+						actionFrame:SetWidth(15)
+						actionFrame:SetHeight(15)
+						table.insert(button.actions, actionFrame)
+
+						if action == "remove" then
+							actionFrame:SetNormalTexture("Interface\\Buttons\\UI-Panel-MinimizeButton-Up")
+							actionFrame:SetPushedTexture("Interface\\Buttons\\UI-Panel-MinimizeButton-Down")
+							actionFrame:SetHighlightTexture("Interface\\Buttons\\UI-Panel-MinimizeButton-Up")
+
+							actionFrame:SetScript("OnClick", function()
+								buttonFunc(button, "remove")
+							end)
+						end
+
+						if #button.actions > 1 then
+							actionFrame:SetPoint("TOPLEFT", button.actions[#button.actions-1], "TOPRIGHT", 0, 0)
+						else
+							actionFrame:SetPoint("TOPLEFT", button, "TOPRIGHT", 0, 0)
+						end
+						actionFrame.text = actionFrame:GetFontString()
+						actionFrame.text:SetJustifyH("CENTER")
+						actionFrame.text:SetJustifyV("CENTER")
+					end
+				end
+
+
+				button:SetWidth(width - (#button.actions * 15))
+				button:Show()
+				lastItem = button
+			end
+		end
+	end
+
+
+	frame:SetScrollChild(child)
+	frame:SetScript("OnMouseWheel", OnMouseWheelScrollFrame)
+
+	return frame
+end
+
+function ConvertAuraTableToScrollListTable(auraTable)
+	local auras = {}
+	if not auraTable then return auras end
+
+	for i,aura in ipairs(auraTable) do
+		local color = ""
+		if not aura.name then
+			color = ""
+		elseif aura.filter == "my" then
+			color = NeatPlatesUtility.Colors["blue"]
+		elseif aura.filter == "not" then
+			color = NeatPlatesUtility.Colors["red"]
+		elseif aura.filter == "all" then
+			color = NeatPlatesUtility.Colors["orange"]
+		end
+
+
+
+		local filterMap = {
+			["my"] = L["Mine only"],
+			["all"] = L ["Anyones"],
+			["not"] = L["Exclude"],
+		}
+
+		local typeMap = {
+			["normal"] = L["Normal"],
+			["emphasized"] = L["Emphasized"],
+		}
+
+		local tooltip = ""
+		if aura.filter and aura.type then
+			tooltip = NeatPlatesUtility.Colors["white"]..L["Filter"]..": "..NeatPlatesUtility.Colors["yellow"]..filterMap[aura.filter].."\n"..NeatPlatesUtility.Colors["white"]..L["Type"]..": "..NeatPlatesUtility.Colors["yellow"]..typeMap[aura.type]
+		end
+
+		local auraName = aura.name or L["Empty aura"]
+		if aura.name and aura.type == "emphasized" then
+			auraName = "++"..auraName
+		end
+		auras[i] = {
+			text = auraName,
+			value = auraName,
+			tooltip = tooltip,
+			color = color,
+			buttons = {
+				"remove",
+			}
+		}
+	end
+	return auras
+end
+
+local function CreateAuraManagement(self, objectName, parent, width, height)
+	local defaults = {}
+	if not width then width = 260 end
+	if not height then height = 160 end
+
+	local frame = CreateFrame("Frame", "NeatPlates"..objectName, parent);
+	frame:SetWidth(width)
+	frame:SetHeight(height)
+
+	-- Frame border
+	frame.BorderFrame = CreateFrame("Frame", nil, frame, NeatPlatesBackdrop)
+	if not frame.BorderFrame.SetBackdrop then
+		Mixin(frame.BorderFrame, BackdropTemplateMixin)
+	end
+	
+	frame.BorderFrame:SetPoint("TOPLEFT", 0, 5)
+	frame.BorderFrame:SetPoint("BOTTOMRIGHT", 4, -15)
+	frame.BorderFrame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+										edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+										tile = true, tileSize = 16, edgeSize = 16,
+										insets = { left = 4, right = 4, top = 4, bottom = -4 }
+										});
+	frame.BorderFrame:SetBackdropColor(0.05, 0.05, 0.05, 0)
+	frame.BorderFrame:SetBackdropBorderColor(0.5, 0.5, 0.5, 1)
+
+	frame.ListItems = {
+		{ list = {} }
+	}
+
+	-- Update Panel Values
+	local function updatePanelValues(self)
+		if not self then
+			frame.Options:Hide()
+			return
+		else
+			frame.Options:Show()
+		end
+
+		local current = defaults[self.index] or {}
+
+		-- Set Customization Values & Show/Hide Elements
+		for k,f in pairs(frame) do
+			if type(f) == "table" then
+				if f.objectName then
+					f.fetching = true -- Prevents 'OnValueChanged' from triggering while setting values.
+					if f.SetValue then
+						f:SetValue(current[f.objectName])
+					elseif f.SetText then
+						f:SetText(current[f.objectName] or "")
+					end
+					f.fetching = false
+				end
+			end
+		end
+	end
+
+	local function eventHandler(self, eventType)
+		if eventType == "selected" then
+			updatePanelValues(self)
+		elseif eventType == "moveup" or eventType == "movedown" then
+			local newIndex = self.index
+			if eventType == "moveup" then
+				newIndex = newIndex - 1
+			else
+				newIndex = newIndex + 1
+			end
+
+			if newIndex < 1 or newIndex > #defaults then return end
+
+			local itemToMove = copytable(defaults[self.index])
+			local index = 1
+			for i, listItem in pairs(defaults) do
+				if i ~= self.index then
+					if self.index < i then
+						defaults[index] = listItem
+						index = index + 1
+					end
+					if i == newIndex then
+						defaults[index] = itemToMove
+						index = index + 1
+					end
+					if self.index > i then
+						defaults[index] = listItem
+						index = index + 1
+					end
+				end
+			end
+
+			frame.ListItems[1].list = ConvertAuraTableToScrollListTable(defaults)
+
+			-- Update ScrollList
+			frame.List = CreateScrollList(frame, "NeatPlates"..objectName.."List", frame.ListItems, eventHandler, width/3, height-20)
+
+			-- Update selected button
+			local buttons = {frame.List.listFrame:GetChildren()}
+			frame.List.listFrame:ClearSelection(buttons)
+			frame.List.listFrame:SelectButton(buttons[newIndex])
+		elseif eventType == "remove" then
+			-- Remove element and update both the list order and values
+			local index = 1
+			for i, listItem in pairs(defaults) do
+				if i ~= self.index then
+					defaults[index] = listItem
+					index = index + 1
+				end
+				if i == #defaults then defaults[i] = nil end
+			end
+
+			frame.ListItems[1].list = ConvertAuraTableToScrollListTable(defaults)
+
+			-- Update ScrollList
+			frame.List = CreateScrollList(frame, "NeatPlates"..objectName.."List", frame.ListItems, eventHandler, width/3, height-20)
+
+			-- Update selected button (Clear selection if we are deleting the active list item)
+			local selectedIndex = frame.List.listFrame.selection and frame.List.listFrame.selection.index
+			if selectedIndex and self.index <= selectedIndex then
+				local buttons = {frame.List.listFrame:GetChildren()}
+				frame.List.listFrame:ClearSelection(buttons)
+				if self.index == selectedIndex then
+					updatePanelValues()
+				else
+					frame.List.listFrame:SelectButton(buttons[selectedIndex-1])
+				end
+			end
+		end
+	end
+
+	-- Create List Items
+	frame.List = CreateScrollList(frame, "NeatPlates"..objectName.."List", frame.ListItems, eventHandler, width/3, height-20)
+	frame.List:SetPoint("TOPLEFT", 8, -4)
+
+	-- -- List Frame border
+	-- frame.List.BorderFrame = CreateFrame("Frame", nil, frame.List, NeatPlatesBackdrop)
+	-- frame.List.BorderFrame:SetPoint("TOPLEFT", 0, 5)
+	-- frame.List.BorderFrame:SetPoint("BOTTOMRIGHT", 4, -15)
+	-- frame.List.BorderFrame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+	-- 									edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+	-- 									tile = true, tileSize = 16, edgeSize = 16,
+	-- 									insets = { left = 4, right = 4, top = 4, bottom = -4 }
+	-- 									});
+	-- frame.List.BorderFrame:SetBackdropColor(0.05, 0.05, 0.05, 0)
+	-- frame.List.BorderFrame:SetBackdropBorderColor(0.5, 0.5, 0.5, 1)
+
+	-- Append "New Aura" button to bottom
+	local NewAuraButton = CreateFrame("Button", "NeatPlates"..objectName.."NewAuraButton", frame, "NeatPlatesPanelButtonTemplate")
+	NewAuraButton:SetPoint("BOTTOMLEFT", frame.List, "BOTTOMLEFT", 0, -20)
+	NewAuraButton:SetWidth(width/3)
+	NewAuraButton:SetText(L["New Aura"])
+	NewAuraButton:SetScript("OnClick", function()
+		table.insert(defaults, {
+			filter = "my",
+			type = "normal",
+		})
+
+		frame.ListItems[1].list = ConvertAuraTableToScrollListTable(defaults)
+		-- Update ScrollList
+		frame.List = CreateScrollList(frame, "NeatPlates"..objectName.."List", frame.ListItems, eventHandler, width/3, height-20)
+	end)
+
+	local auraFilters = {
+		{ text = L["Mine only"], value = "my"  },
+		{ text = L["Anyones"], value = "all"  },
+		{ text = L["Exclude"], value = "not"  },
+	}
+
+	local auraTypes = {
+		{ text = L["Normal"], value = "normal" },
+		{ text = L["Emphasized"], value = "emphasized" },
+	}
+
+	-- Options wrapper for easier hiding
+	frame.Options = CreateFrame("Frame", "NeatPlates"..objectName.."Wrapper", frame)
+	frame.Options:Hide()
+
+	-- Aura name
+	frame.AuraNameLabel = frame.Options:CreateFontString(nil, 'ARTWORK', 'GameFontNormal')
+	frame.AuraNameLabel:SetText(L["Aura Name/ID"])
+	frame.AuraNameLabel:SetPoint("TOPLEFT", frame.List, "TOPRIGHT", 40, -10)
+
+	frame.AuraName = CreateFrame("EditBox", "NeatPlates"..objectName.."AuraName", frame.Options, "InputBoxTemplate")
+	frame.AuraName:SetWidth(124)
+	frame.AuraName:SetHeight(25)
+	frame.AuraName:SetPoint("TOPLEFT", frame.AuraNameLabel, "BOTTOMLEFT", 4, -2)
+	frame.AuraName:SetAutoFocus(false)
+	frame.AuraName:SetFont(NeatPlatesLocalizedInputFont or "Fonts\\FRIZQT__.TTF", 11, "NONE")
+	frame.AuraName:SetFrameStrata("DIALOG")
+	frame.AuraName.objectName = "name"
+	frame.AuraName:SetScript("OnTextChanged", function() frame.OnValueChanged(frame.AuraName) end)
+
+	-- Priority buttons
+	frame.PriorityLabel = frame.Options:CreateFontString(nil, 'ARTWORK', 'GameFontNormal')
+	frame.PriorityLabel:SetText(L["Priority"])
+	frame.PriorityLabel:SetPoint("TOPLEFT", frame.AuraNameLabel, "TOPRIGHT", 50, 0)
+
+	frame.MoveUp = CreateFrame("Button", "NeatPlates"..objectName.."MoveUp", frame.Options, "NeatPlatesPanelButtonTemplate")
+	frame.MoveUp:SetPoint("TOPLEFT", frame.PriorityLabel, "BOTTOMLEFT", 0, -6)
+	frame.MoveUp:SetWidth(20)
+	frame.MoveUp:SetHeight(20)
+	frame.MoveUp:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollUp-Up")
+	frame.MoveUp:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollUp-Down")
+	frame.MoveUp:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight")
+	frame.MoveUp:SetScript("OnClick", function() eventHandler(frame.List.listFrame.selection, "moveup") end)
+
+	frame.MoveDown = CreateFrame("Button", "NeatPlates"..objectName.."MoveDown", frame.Options, "NeatPlatesPanelButtonTemplate")
+	frame.MoveDown:SetPoint("TOPLEFT", frame.MoveUp, "TOPRIGHT", 2, 0)
+	frame.MoveDown:SetWidth(20)
+	frame.MoveDown:SetHeight(20)
+	frame.MoveDown:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Up")
+	frame.MoveDown:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Down")
+	frame.MoveDown:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight")
+	frame.MoveDown:SetScript("OnClick", function() eventHandler(frame.List.listFrame.selection, "movedown") end)
+
+	-- Aura filter
+	frame.AuraFilter = CreateDropdownFrame(frame, "NeatPlates"..objectName.."AuraFilter", frame.Options, auraFilters, "my", L["Aura Filter"], true)
+	frame.AuraFilter:SetPoint("TOPLEFT", frame.AuraName, "BOTTOMLEFT", -20, -30)
+	frame.AuraFilter.OnValueChanged = function() frame.OnValueChanged(frame.AuraFilter) end
+	frame.AuraFilter.objectName = "filter"
+
+	-- Aura type
+	frame.AuraType = CreateDropdownFrame(frame, "NeatPlates"..objectName.."AuraType", frame.Options, auraTypes, "normal", L["Aura Type"], true)
+	frame.AuraType:SetPoint("TOPLEFT", frame.AuraFilter, "TOPRIGHT", 20, 0)
+	frame.AuraType.OnValueChanged = function() frame.OnValueChanged(frame.AuraType) end
+	frame.AuraType.objectName = "type"
+
+	frame.OnValueChanged = function(self)
+		if self.fetching then return end
+		if not frame.List.listFrame.selection then return end
+		local auraObject = defaults[frame.List.listFrame.selection.index]
+
+		local value = nil
+		if self.GetValue then
+			value = self:GetValue()
+		elseif self.GetText then
+			value = self:GetText()
+			if value == "" then value = nil end
+		end
+
+		auraObject[self.objectName] = value
+
+		frame.ListItems[1].list = ConvertAuraTableToScrollListTable(defaults)
+		-- Update ScrollList
+		frame.List = CreateScrollList(frame, "NeatPlates"..objectName.."List", frame.ListItems, eventHandler, width/3, height-20)
+
+		-- -- Style Update
+		-- NeatPlatesHubHelpers.CallForStyleUpdate()
+	end
+
+	frame.SetValue = function(self, auraList)
+		defaults = auraList
+		frame.ListItems = {
+			{ list = ConvertAuraTableToScrollListTable(auraList) }
+		}
+
+		-- Update ScrollList
+		frame.List = CreateScrollList(frame, "NeatPlates"..objectName.."List", frame.ListItems, eventHandler, width/3, height-20)
+	end
+
+	return frame
+end
+
+local PanelHelpers = {}
 
 PanelHelpers.CreatePanelFrame = CreatePanelFrame
 PanelHelpers.CreateDescriptionFrame = CreateDescriptionFrame
@@ -1039,8 +1626,45 @@ PanelHelpers.CreateEditBoxButton = CreateEditBoxButton
 PanelHelpers.CreateTipBox = CreateTipBox
 PanelHelpers.ShowDropdownMenu = ShowDropdownMenu
 PanelHelpers.HideDropdownMenu = HideDropdownMenu
+PanelHelpers.CreateMultiStateOptions = CreateMultiStateOptions
+PanelHelpers.CreateScrollList = CreateScrollList
+PanelHelpers.CreateAuraManagement = CreateAuraManagement
 
 NeatPlatesUtility.PanelHelpers = PanelHelpers
+
+
+
+local function ConvertOldAuraListToAuraTable(target, normalSource, emphasizedSource)
+	local prefixIdMap = {
+		[1] = "all",
+		[2] = "my",
+		-- [3] = "other",
+		-- [4] = "cc",
+		[5] = "not",
+	}
+	for i,v in pairs(target) do
+		target[i] = nil
+	end
+
+	-- Normal auras
+	for name,prefixId in pairs(normalSource) do
+		table.insert(target, {
+			["type"] = "normal",
+			["name"] = name,
+			["filter"] = prefixIdMap[prefixId],
+		})
+	end
+
+	-- Emphasized auras
+	for name,prefixId in pairs(emphasizedSource) do
+		table.insert(target, {
+			["type"] = "emphasized",
+				["name"] = name,
+			["filter"] = prefixIdMap[prefixId],
+		})
+	end
+end
+NeatPlatesUtility.ConvertOldAuraListToAuraTable = ConvertOldAuraListToAuraTable
 
 
 
@@ -1085,6 +1709,18 @@ PanelHelpers.EnableFreePositioning = EnableFreePositioning
 
 
 
+-- Custom target frame
+local function CreateTargetFrame()
+	local frame = CreateFrame("Frame", "NeatPlatesTarget", WorldFrame)
+	NeatPlatesTarget:Show()
+	NeatPlatesTarget:SetPoint("CENTER", UIParent, "CENTER", 0, 300)
+	NeatPlatesTarget:SetWidth(200)
+	NeatPlatesTarget:SetHeight(200)
+	NeatPlatesTarget:SetClampedToScreen(true)
+	return frame
+end
+
+NeatPlatesUtility.CreateTargetFrame = CreateTargetFrame
 
 ----------------------
 -- Call In() - Registers a callback, which hides the specified frame in X seconds

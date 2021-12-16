@@ -27,6 +27,9 @@ f:SetScript(
 			-------------------------------------------
 			-- Reposition toast frame.
 			-------------------------------------------
+			if not BNToastFrame.SetBackdrop then
+				Mixin(BNToastFrame, BackdropTemplateMixin)
+			end
 			BNToastFrame:ClearAllPoints()
 			BNToastFrame:SetPoint("BOTTOMLEFT", ChatFrame4, "TOPLEFT", 0, 35)
 			BNToastFrame.CloseButton:Hide()
@@ -81,12 +84,12 @@ f:SetScript(
 			-------------------------------------------
 			-- druability frame
 			-------------------------------------------
-			DurabilityFrame:ClearAllPoints()
-			DurabilityFrame:SetPoint("TOPRIGHT", "EavesDropFrame", "BOTTOMRIGHT", -40, 0)
-			DurabilityFrame.ClearAllPoints = function()
-			end
-			DurabilityFrame.SetPoint = function()
-			end
+			-- DurabilityFrame:ClearAllPoints()
+			-- DurabilityFrame:SetPoint("TOPRIGHT", "EavesDropFrame", "BOTTOMRIGHT", -40, 0)
+			-- DurabilityFrame.ClearAllPoints = function()
+			-- end
+			-- DurabilityFrame.SetPoint = function()
+			-- end
 
 			-------------------------------------------
 			-- adjust position of PetActionButtons
@@ -196,6 +199,8 @@ f:SetScript(
 			end
 			TargetFrame.SetPoint = function()
 			end
+
+			MiniMapWorldMapButton:Hide()
 		end
 	end
 )

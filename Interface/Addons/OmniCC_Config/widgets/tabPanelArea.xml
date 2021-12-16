@@ -3,7 +3,7 @@
 		Tab Panel template, basically a direct copy of the OptionsFrameList template
 		Why XML?  Because when I tried making this manually it looked a bit funny :P
 	-->
-	<Frame name="OmniCC_TabPanelTemplate" virtual="true">
+	<Frame name="OmniCC_TabPanelTemplate" mixin="BackdropTemplateMixin" virtual="true">
 		<Layers>
 			<Layer level="BACKGROUND">
 				<!-- Yay. It's a backdrop. -->

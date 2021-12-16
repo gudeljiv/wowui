@@ -248,7 +248,7 @@ function srti.ShowCursorCompanion(mark,mode)
 	end
 end
 
-srti.barFrame = CreateFrame("frame", "SRTIBarFrame", UIParent)
+srti.barFrame = CreateFrame("frame", "SRTIBarFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 srti.barFrame:SetWidth(182)
 srti.barFrame:SetHeight(30)
 srti.barFrame:SetBackdrop({
@@ -984,7 +984,7 @@ end
 
 
 function srti.Options()
-	srti.menu = CreateFrame("Frame","SRTIMenu",UIParent)
+	srti.menu = CreateFrame("Frame","SRTIMenu",UIParent, BackdropTemplateMixin and "BackdropTemplate")
 	srti.menu.name = addonName
 	InterfaceOptions_AddCategory(srti.menu)
 	srti.menu:SetBackdrop({
@@ -1000,7 +1000,7 @@ function srti.Options()
 	srti.menu.title:SetText(SRTI_HEADER)
 	srti.menu.title:SetPoint("TOPLEFT",srti.menu,"TOPLEFT",8,-8)
 
-	srti.menu.options = CreateFrame("Frame","SRTIMenuOptions",srti.menu)
+	srti.menu.options = CreateFrame("Frame","SRTIMenuOptions",srti.menu, BackdropTemplateMixin and "BackdropTemplate")
 	srti.menu.options:SetWidth(292)
 	srti.menu.options:SetHeight(488)
 	srti.menu.options:SetPoint("TOPLEFT",srti.menu,"TOPLEFT",5,-30)
@@ -1018,7 +1018,7 @@ function srti.Options()
 	srti.menu.optionheader:SetPoint("TOPLEFT",srti.menu.options,"TOPLEFT",8,-8)
 
 
-	srti.menu.options.singleframe = CreateFrame("Frame",nil,srti.menu.options)
+	srti.menu.options.singleframe = CreateFrame("Frame",nil,srti.menu.options, BackdropTemplateMixin and "BackdropTemplate")
 	srti.menu.options.singleframe:SetPoint("TOPLEFT",srti.menu.options,"TOPLEFT", 8, -40)
 	srti.menu.options.singleframe:SetPoint("BOTTOMRIGHT",srti.menu.options,"TOPRIGHT", -8, -94)
 	srti.menu.options.singleframe:SetBackdrop({
@@ -1063,7 +1063,7 @@ function srti.Options()
 	SRTIcb4Text:SetText(L["Select Icon on Hover"])
 
 
-	srti.menu.options.doubleframe = CreateFrame("Frame",nil,srti.menu.options)
+	srti.menu.options.doubleframe = CreateFrame("Frame",nil,srti.menu.options, BackdropTemplateMixin and "BackdropTemplate")
 	srti.menu.options.doubleframe:SetPoint("TOPLEFT",srti.menu.options,"TOPLEFT", 8, -113)
 	srti.menu.options.doubleframe:SetPoint("BOTTOMRIGHT",srti.menu.options,"TOPRIGHT", -8, -194)
 	srti.menu.options.doubleframe:SetBackdrop({
@@ -1100,7 +1100,7 @@ function srti.Options()
 	SRTIslider1High:SetText(L["Quick"])
 
 
-	srti.menu.options.bindingframe = CreateFrame("Frame",nil,srti.menu.options)
+	srti.menu.options.bindingframe = CreateFrame("Frame",nil,srti.menu.options, BackdropTemplateMixin and "BackdropTemplate")
 	srti.menu.options.bindingframe:SetPoint("TOPLEFT",srti.menu.options,"TOPLEFT", 8, -213)
 	srti.menu.options.bindingframe:SetPoint("BOTTOMRIGHT",srti.menu.options,"TOPRIGHT", -8, -296)
 	srti.menu.options.bindingframe:SetBackdrop({
@@ -1165,7 +1165,7 @@ function srti.Options()
 	SRTIcb7Text:SetText(L["Select Icon on Hover"])
 
 
-	srti.menu.options.hoverframe = CreateFrame("Frame",nil,srti.menu.options)
+	srti.menu.options.hoverframe = CreateFrame("Frame",nil,srti.menu.options, BackdropTemplateMixin and "BackdropTemplate")
 	srti.menu.options.hoverframe:SetPoint("TOPLEFT",srti.menu.options,"TOPLEFT", 8, -298)
 	srti.menu.options.hoverframe:SetPoint("BOTTOMRIGHT",srti.menu.options,"TOPRIGHT", -8, -372)
 	srti.menu.options.hoverframe:SetBackdrop({
@@ -1195,7 +1195,7 @@ function srti.Options()
 	SRTIsliderScaleLow:SetText(("%d%%"):format(0.5*100))
 	SRTIsliderScaleHigh:SetText(("%d%%"):format(2.5*100))
 
-	srti.menu.test = CreateFrame("Frame",nil,srti.menu)
+	srti.menu.test = CreateFrame("Frame",nil,srti.menu, BackdropTemplateMixin and "BackdropTemplate")
 	srti.menu.test:SetBackdrop({
 		bgFile = "Interface/Tooltips/UI-Tooltip-Background",
 		edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
@@ -1286,7 +1286,7 @@ function srti.Options()
 		srti.menu.Modifer3RDCB = function(self)
 			SRTISaved[self.option] = self:GetChecked() == 1
 		end
-		srti.menu.thirdparty = CreateFrame("Frame",nil,srti.menu)
+		srti.menu.thirdparty = CreateFrame("Frame",nil,srti.menu, BackdropTemplateMixin and "BackdropTemplate")
 		srti.menu.thirdparty:EnableMouse(1)
 		srti.menu.thirdparty:SetMovable(1)
 		srti.menu.thirdparty:SetBackdrop({
@@ -1467,7 +1467,7 @@ function srti.SetKeyBinding(button,binding,index,mode)
 	srti.keybindings.bg:SetAlpha(0.75)
 	srti.keybindings.bg:SetAllPoints()
 
-	srti.keybindings.frame = CreateFrame("Frame",nil,srti.keybindings)
+	srti.keybindings.frame = CreateFrame("Frame",nil,srti.keybindings, BackdropTemplateMixin and "BackdropTemplate")
 	srti.keybindings.frame:SetPoint("CENTER",srti.keybindings,"CENTER", 0, 50)
 	srti.keybindings.frame:SetWidth(400)
 	srti.keybindings.frame:SetHeight(100)
@@ -1489,7 +1489,7 @@ function srti.SetKeyBinding(button,binding,index,mode)
 	srti.keybindings.warntext = srti.keybindings.frame:CreateFontString(nil,"ARTWORK","GameFontNormal")
 	srti.keybindings.warntext:SetPoint("BOTTOM",srti.keybindings.frame,"BOTTOM",0,4)
 
-	srti.keybindings.acceptframe = CreateFrame("Frame",nil,srti.keybindings.frame)
+	srti.keybindings.acceptframe = CreateFrame("Frame",nil,srti.keybindings.frame, BackdropTemplateMixin and "BackdropTemplate")
 	srti.keybindings.acceptframe:SetPoint("TOP",srti.keybindings.frame,"BOTTOM", 0, 0)
 	srti.keybindings.acceptframe:SetWidth(400)
 	srti.keybindings.acceptframe:SetHeight(28)

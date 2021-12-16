@@ -61,8 +61,8 @@ function AuctionDB.OnEnable()
 		for _, info in ipairs(appData) do
 			local realm, data = unpack(info)
 			local downloadTime = "?"
-			-- try switching around "Classic-[US|EU]" to match the addon's "[US|EU]-Classic" format for classic region data
-			if realm == private.region or gsub(realm, "Classic-%-([A-Z]+)", "%1-Classic") == private.region then
+			-- try switching around "Classic-[US|EU]" to match the addon's "[US|EU]-[Classic|BCC]" format for classic/BCC region data
+			if realm == private.region or gsub(realm, "Classic-%-([A-Z]+)", "%1-Classic") == private.region or gsub(realm, "BCC-%-([A-Z]+)", "%1-BCC") == private.region then
 				private.regionData, private.regionUpdateTime = private.LoadRegionAppData(data)
 				downloadTime = SecondsToTime(time() - private.regionUpdateTime).." ago"
 			elseif TSMAPI.AppHelper:IsCurrentRealm(realm) then
@@ -92,9 +92,13 @@ function AuctionDB.OnEnable()
 						itemString = "i:"..value
 					else
 						itemString = gsub(value, ":0:", "::")
+						-- TODO: remove once the data is fixed
+						itemString = gsub(value, ":i([%+%-])", ":%1")
 					end
 					itemString = ItemString.Get(itemString)
-					private.realmAppData.itemOffset[itemString] = nextItmeOffset
+					if itemString then
+						private.realmAppData.itemOffset[itemString] = nextItmeOffset
+					end
 					nextItmeOffset = nextItmeOffset + 1
 				else
 					private.realmAppData.data[nextDataOffset] = value
@@ -117,7 +121,6 @@ function AuctionDB.OnEnable()
 	CustomPrice.OnSourceChange("DBMarket")
 	CustomPrice.OnSourceChange("DBMinBuyout")
 	CustomPrice.OnSourceChange("DBHistorical")
-	CustomPrice.OnSourceChange("DBRegionMinBuyoutAvg")
 	CustomPrice.OnSourceChange("DBRegionMarketAvg")
 	CustomPrice.OnSourceChange("DBRegionHistorical")
 	CustomPrice.OnSourceChange("DBRegionSaleAvg")
@@ -411,7 +414,7 @@ end
 function private.ProcessRealmAppData(rawData)
 	if #rawData < 3500000 then
 		-- we can safely just use loadstring() for strings below 3.5M
-		return assert(loadstring(rawData)())
+		return assert(assert(loadstring(rawData))())
 	end
 	-- load the data in chunks
 	local leader, itemData, trailer = strmatch(rawData, "^(.+)data={({.+})}(.+)$")
@@ -446,6 +449,8 @@ function private.LoadRegionAppData(appData)
 			itemString = "i:"..itemString
 		else
 			itemString = gsub(strsub(itemString, 2, -2), ":0:", "::")
+			-- TODO: remove once the data is fixed
+			itemString = gsub(itemString, ":i([%+%-])", ":%1")
 		end
 		result.itemLookup[itemString] = otherData
 	end
@@ -470,8 +475,15 @@ function private.GetItemDataHelper(tbl, key, itemString)
 	itemString = ItemString.Filter(itemString)
 	local value = nil
 	if not tbl[itemString] and not strmatch(itemString, "^[ip]:[0-9]+$") then
-		-- for items with random enchants or for pets, get data for the base item
-		itemString = private.GetBaseItemHelper(itemString)
+		-- first try to get the data for the level itemString (if there is an explicit one)
+		local levelItemString = ItemString.ToLevel(itemString)
+		levelItemString = ItemString.IsLevel(levelItemString) and levelItemString or nil
+		if levelItemString and tbl[levelItemString] then
+			itemString = levelItemString
+		else
+			-- try the base item
+			itemString = private.GetBaseItemHelper(itemString)
+		end
 	end
 	if not itemString or not tbl[itemString] then
 		return nil
@@ -481,7 +493,7 @@ function private.GetItemDataHelper(tbl, key, itemString)
 end
 
 function private.GetRegionItemDataHelper(tbl, key, itemString)
-	if not itemString or not tbl then
+	if not itemString or not tbl or not tbl.fieldLookup[key] then
 		return nil
 	end
 	itemString = ItemString.Filter(itemString)
@@ -489,11 +501,17 @@ function private.GetRegionItemDataHelper(tbl, key, itemString)
 	assert(fieldIndex and fieldIndex > 0)
 	local data = tbl.itemLookup[itemString]
 	if not data and not strmatch(itemString, "^[ip]:[0-9]+$") then
-		-- for items with random enchants or for pets, get data for the base item
-		itemString = private.GetBaseItemHelper(itemString)
-		itemString = ItemString.GetBase(itemString)
-		if not itemString then
-			return nil
+		-- first try to get the data for the level itemString (if there is an explicit one)
+		local levelItemString = ItemString.ToLevel(itemString)
+		levelItemString = ItemString.IsLevel(levelItemString) and levelItemString or nil
+		if levelItemString and tbl.itemLookup[levelItemString] then
+			itemString = levelItemString
+		else
+			-- try the base item
+			itemString = private.GetBaseItemHelper(itemString)
+			if not itemString then
+				return nil
+			end
 		end
 		data = tbl.itemLookup[itemString]
 	end
@@ -520,10 +538,17 @@ function private.GetRealmAppItemDataHelper(appData, key, itemString)
 	end
 	itemString = ItemString.Filter(itemString)
 	if not appData.itemOffset[itemString] and not strmatch(itemString, "^[ip]:[0-9]+$") then
-		-- for items with random enchants or for pets, get data for the base item
-		itemString = private.GetBaseItemHelper(itemString)
-		if not itemString then
-			return nil
+		-- first try to get the data for the level itemString (if there is an explicit one)
+		local levelItemString = ItemString.ToLevel(itemString)
+		levelItemString = ItemString.IsLevel(levelItemString) and levelItemString or nil
+		if levelItemString and appData.itemOffset[levelItemString] then
+			itemString = levelItemString
+		else
+			-- try the base item
+			itemString = private.GetBaseItemHelper(itemString)
+			if not itemString then
+				return nil
+			end
 		end
 	end
 	if not appData.itemOffset[itemString] then

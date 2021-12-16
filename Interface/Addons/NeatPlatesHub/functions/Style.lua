@@ -111,7 +111,6 @@ AddHubFunction(StyleModeFunctions, NeatPlatesHubMenus.StyleModes, StyleBarsOnLow
 
 local function StyleIndexDelegate(unit)
 	local func
-
 	--if unit.reaction == "FRIENDLY" then func = StyleModeFunctions[LocalVars.StyleFriendlyMode or 0] or StyleBarAlways
 	--else func = StyleModeFunctions[LocalVars.StyleEnemyMode or 0] or StyleBarAlways end
 
@@ -157,12 +156,14 @@ local function StyleNameDelegate(unit)
 		elseif unit.type == "PLAYER" and LocalVars.StyleFriendlyBarsOnPlayers then return "Default"
 		elseif unit.type ~= "PLAYER" and LocalVars.StyleFriendlyBarsOnNPC then
 			if LocalVars.StyleFriendlyBarsInstanceMode and IsInInstance() then return "NameOnly"
+			elseif unit.isPet and LocalVars.StyleFriendlyBarsNoMinions then return "NameOnly"
+			elseif unit.isTotem and LocalVars.StyleFriendlyBarsNoTotem then return "NameOnly"
 			else return "Default" end
 		end
 	elseif unit.reaction == "NEUTRAL" then
 		-- if IsUnitActive(unit) and LocalVars.StyleEnemyBarsOnActive then return "Default" end
-		if unit.threatValue > 1 then return "Default"
-		elseif LocalVars.StyleHeadlineNeutral then return "NameOnly"
+		--if unit.threatValue > 1 then return "Default"
+		if LocalVars.StyleHeadlineNeutral then return "NameOnly"
 		elseif IsUnitActive(unit) and LocalVars.StyleEnemyBarsOnActive then return "Default"
 		elseif LocalVars.StyleEnemyBarsOnNPC then return "Default"
 		end
@@ -172,6 +173,8 @@ local function StyleNameDelegate(unit)
 		elseif unit.type == "PLAYER" and LocalVars.StyleEnemyBarsOnPlayers then return "Default"
 		elseif unit.type ~= "PLAYER" and LocalVars.StyleEnemyBarsOnNPC then
 			if LocalVars.StyleEnemyBarsInstanceMode and IsInInstance() then return "NameOnly"
+			elseif unit.isPet and LocalVars.StyleEnemyBarsNoMinions then return "NameOnly"
+			elseif unit.isTotem and LocalVars.StyleEnemyBarsNoTotem then return "NameOnly"
 			else return "Default" end
 		end
 	end

@@ -283,7 +283,7 @@
 		PluginOptions = PluginOptions or 0x0
 		local NewPlugin = {__options = PluginOptions, __enabled = true, RegisterEvent = register_event_func, UnregisterEvent = unregister_event_func}
 		
-		local Frame = CreateFrame ("Frame", FrameName, UIParent)
+		local Frame = CreateFrame ("Frame", FrameName, UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		Frame:RegisterEvent ("PLAYER_LOGIN")
 		Frame:RegisterEvent ("PLAYER_LOGOUT")
 		
@@ -371,7 +371,7 @@
 	
 		elseif (template == 1) then
 		
-			local options_frame = CreateFrame ("frame", name, UIParent)
+			local options_frame = CreateFrame ("frame", name, UIParent, BackdropTemplateMixin and "BackdropTemplate")
 			tinsert (UISpecialFrames, name)
 			options_frame:SetSize (500, 200)
 
@@ -422,7 +422,7 @@
 	
 	function _detalhes:CreatePluginWindowContainer()
 	
-		local f = CreateFrame ("frame", "DetailsPluginContainerWindow", UIParent)
+		local f = CreateFrame ("frame", "DetailsPluginContainerWindow", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		f:EnableMouse (true)
 		f:SetMovable (true)
 		f:SetPoint ("center", UIParent, "center")
@@ -454,11 +454,11 @@
 			LibWindow.SavePosition (f)
 			
 		--> menu background
-			local menuBackground = CreateFrame ("frame", "$parentMenuFrame", f)
+			local menuBackground = CreateFrame ("frame", "$parentMenuFrame", f, BackdropTemplateMixin and "BackdropTemplate")
 			_detalhes:FormatBackground (menuBackground)
 			
 		--> statusbar
-			local statusBar = CreateFrame ("frame", nil, menuBackground)
+			local statusBar = CreateFrame ("frame", nil, menuBackground, BackdropTemplateMixin and "BackdropTemplate")
 			statusBar:SetPoint ("topleft", menuBackground, "bottomleft", 0, 1)
 			statusBar:SetPoint ("topright", f, "bottomright", 0, 1)
 			statusBar:SetHeight (20)
@@ -488,7 +488,7 @@
 			
 			--
 		--> plugins menu title bar
-			local titlebar_plugins = CreateFrame ("frame", nil, menuBackground)
+			local titlebar_plugins = CreateFrame ("frame", nil, menuBackground, BackdropTemplateMixin and "BackdropTemplate")
 			DFPixelUtil.SetPoint (titlebar_plugins, "topleft", menuBackground, "topleft", 2, -3)
 			DFPixelUtil.SetPoint (titlebar_plugins, "topright", menuBackground, "topright", -2, -3)
 			titlebar_plugins:SetHeight (f.TitleHeight)
@@ -501,7 +501,7 @@
 			DFPixelUtil.SetPoint (titleLabel, "top", titlebar_plugins , "top", 0, -5)
 			
 		--> plugins menu title bar
-			local titlebar_tools = CreateFrame ("frame", nil, menuBackground)
+			local titlebar_tools = CreateFrame ("frame", nil, menuBackground, BackdropTemplateMixin and "BackdropTemplate")
 			titlebar_tools:SetHeight (f.TitleHeight)
 			titlebar_tools:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\AddOns\Details\images\background]], tileSize = 64, tile = true})
 			titlebar_tools:SetBackdropColor (.5, .5, .5, 1)

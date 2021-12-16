@@ -16,6 +16,9 @@ local backdrop = {
 
 function OmniCCOptions.Group:New(name, parent)
 	local f = CreateFrame('Frame', parent:GetName() .. name, parent)
+	if not f.SetBackdrop then
+		Mixin(f, BackdropTemplateMixin)
+	end
 	f:SetBackdrop(backdrop)
 	f:SetBackdropBorderColor(0.4, 0.4, 0.4)
 	f:SetBackdropColor(0, 0, 0, 0.3)

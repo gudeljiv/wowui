@@ -100,10 +100,16 @@ local function SetTexCoord(self, left,right,top,bottom)		-- 0. 1. 0. 1
 end
 
 local function SetBackdropTexCoord(self, left,right,top,bottom)		-- 0. 1. 0. 1
+	if not self.Backdrop.SetBackdrop then
+		Mixin(self.Backdrop, BackdropTemplateMixin)
+	end
 	self.Backdrop:SetTexCoord(left or 0, right or 1,top or 0, bottom or 1)
 end
 
 local function SetBackdropTexture(self, texture)		-- 0. 1. 0. 1
+	if not self.Backdrop.SetBackdrop then
+		Mixin(self.Backdrop, BackdropTemplateMixin)
+	end
 	self.Backdrop:SetTexture(texture)
 end
 

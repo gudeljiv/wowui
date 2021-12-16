@@ -1,5 +1,5 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
-  <Frame name="Atr_Confirm_Frame" toplevel="true" parent="UIParent" enableMouse="true" frameStrata="DIALOG" hidden="true">
+  <Frame name="Atr_Confirm_Frame" toplevel="true" parent="UIParent" enableMouse="true" frameStrata="DIALOG" mixin="BackdropTemplateMixin" hidden="true">
     <Size><AbsDimension x="300" y="150" /></Size>
     <Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="290" y="-190"/></Offset></Anchor></Anchors>
 

@@ -399,7 +399,7 @@ end
 function MonkeyQuest_SetAlpha(iAlpha)
 
 	MonkeyQuestConfig[MonkeyQuest.m_global].m_iAlpha = iAlpha;
-	MonkeyQuestFrame:SetBackdropColor(TOOLTIP_DEFAULT_BACKGROUND_COLOR.r, TOOLTIP_DEFAULT_BACKGROUND_COLOR.g, TOOLTIP_DEFAULT_BACKGROUND_COLOR.b, iAlpha);
+	-- MonkeyQuestFrame:SetBackdropColor(TOOLTIP_DEFAULT_BACKGROUND_COLOR.r, TOOLTIP_DEFAULT_BACKGROUND_COLOR.g, TOOLTIP_DEFAULT_BACKGROUND_COLOR.b, iAlpha);
 
 	--MonkeyQuestFrame:SetAlpha(0.5);
 

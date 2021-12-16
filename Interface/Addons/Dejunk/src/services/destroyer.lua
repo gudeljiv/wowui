@@ -1,8 +1,9 @@
 local _, Addon = ...
-local assert = assert
 local Bags = Addon.Bags
 local CalculateTotalNumberOfFreeBagSlots = _G.CalculateTotalNumberOfFreeBagSlots
+local Chat = Addon.Chat
 local ClearCursor = _G.ClearCursor
+local Consts = Addon.Consts
 local Core = Addon.Core
 local DB = Addon.DB
 local DeleteCursorItem = _G.DeleteCursorItem
@@ -11,6 +12,7 @@ local E = Addon.Events
 local EventManager = Addon.EventManager
 local Filters = Addon.Filters
 local GetCursorInfo = _G.GetCursorInfo
+local ItemFrames = Addon.ItemFrames
 local L = Addon.Libs.L
 local Lists = Addon.Lists
 local max = math.max
@@ -19,24 +21,22 @@ local tremove = table.remove
 local tsort = table.sort
 local UI = Addon.UI
 
-local States = {
-  None = 0,
-  Destroying = 1
-}
-
 Destroyer.items = {}
-Destroyer.state = States.None
 Destroyer.timer = 0
 
 -- ============================================================================
 -- Events
 -- ============================================================================
 
-local queueAutoDestroy do
+do
   local function start()
-    if DB.Profile and DB.Profile.AutoDestroy and not UI:IsShown() then
-      Destroyer:Start(true)
-      return true
+    if DB.Profile and not UI:IsShown() then
+      if DB.Profile.destroy.autoOpen.enabled then
+        if not ItemFrames.Destroy:IsShown() then
+          Destroyer:AutoShow()
+        end
+        return true
+      end
     end
 
     return false
@@ -56,133 +56,164 @@ local queueAutoDestroy do
     end
   end)
 
-  queueAutoDestroy = function()
+  local function queueAutoDestroy()
     frame.timer = 0
     frame.dirty = true
   end
-end
 
-EventManager:On(E.Wow.BagUpdateDelayed, queueAutoDestroy)
-EventManager:On(E.MainUIClosed, queueAutoDestroy)
-
-do -- List events
-  local function func(list)
-    if list == Lists.Destroyables or list == Lists.Undestroyables then
-      queueAutoDestroy()
-    end
+  local function flagForRefresh()
+    Destroyer.needsRefresh = true
   end
 
-  EventManager:On(E.ListItemAdded, func)
-  EventManager:On(E.ListItemRemoved, func)
-  EventManager:On(E.ListRemovedAll, func)
+  for _, e in ipairs({
+    E.BagsUpdated,
+    E.ListItemAdded,
+    E.ListItemRemoved,
+    E.ListRemovedAll,
+    E.MainUIClosed,
+    E.ProfileChanged,
+    E.Wow.ItemUnlocked,
+  }) do
+    EventManager:On(e, flagForRefresh)
+    EventManager:On(e, queueAutoDestroy)
+  end
+end
+
+-- ============================================================================
+-- Local Functions
+-- ============================================================================
+
+local function handleItem(index)
+  local item = tremove(Destroyer.items, index)
+  if not item then return end
+
+  -- Don't run if the cursor has an item, spell, etc.
+  if GetCursorInfo() then return end
+
+  -- Verify that the item can be destroyed.
+  if not Bags:StillInBags(item) or Bags:IsLocked(item) then return end
+
+  -- Destroy item.
+  PickupContainerItem(item.Bag, item.Slot)
+  DeleteCursorItem()
+  -- Clear cursor in case any issues occurred.
+  ClearCursor()
+
+  -- Fire event.
+  EventManager:Fire(E.DestroyerAttemptToDestroy, item)
+end
+
+
+local function handleAllItems()
+  -- Stop if unsafe.
+  local canDestroy, msg = Core:CanDestroy()
+  if not canDestroy then
+    return Chat:Print(msg)
+  end
+
+  -- Refresh items.
+  Destroyer:RefreshItems()
+
+  -- Stop if no items.
+  if #Destroyer.items == 0 then
+    return Chat:Print(
+      Destroyer.items.allCached and
+      L.NO_DESTROYABLE_ITEMS or
+      L.NO_CACHED_DESTROYABLE_ITEMS
+    )
+  end
+
+  -- Handle until no more items.
+  while #Destroyer.items > 0 do
+    handleItem()
+  end
 end
 
 -- ============================================================================
 -- Functions
 -- ============================================================================
 
--- Starts the destroying process.
--- @param {boolean} auto
-function Destroyer:Start(auto)
-  local canDestroy, msg = Core:CanDestroy()
-  if not canDestroy then
-    if not auto then Core:Print(msg) end
-    return
-  end
+function Destroyer:GetItems()
+  return self.items
+end
 
-  -- Get items
+
+function Destroyer:GetLists()
+  return Lists.destroy
+end
+
+
+function Destroyer:RefreshItems()
+  -- Stop if not necessary.
+  if not (self.needsRefresh or UI:IsShown()) then return end
+  self.needsRefresh = false
+
   Filters:GetItems(self, self.items)
 
-  -- Stop if no items
+  -- Sort by price.
+  tsort(self.items, function(a, b)
+    return (a.Price * a.Quantity) < (b.Price * b.Quantity)
+  end)
+end
+
+
+function Destroyer:HandleNextItem(item)
+  -- Stop if unsafe.
+  local canDestroy, msg = Core:CanDestroy()
+  if not canDestroy then
+    return Chat:Print(msg)
+  end
+
+  -- Refresh items.
+  self:RefreshItems()
+
+  -- Stop if no items.
   if #self.items == 0 then
-    if not auto then
-      Core:Print(
-        self.items.allCached and
-        L.NO_DESTROYABLE_ITEMS or
-        L.NO_CACHED_DESTROYABLE_ITEMS
-      )
-    end
-
-    return
+    return Chat:Print(
+      self.items.allCached and
+      L.NO_DESTROYABLE_ITEMS or
+      L.NO_CACHED_DESTROYABLE_ITEMS
+    )
   end
 
-  -- Save Space
-  if auto and DB.Profile.DestroySaveSpace.Enabled then
-    -- Calculate number of items to destroy
+  -- Get item index.
+  local index = 1
+  if item then
+    -- Get index of specified item.
+    index = nil
+    for i, v in pairs(self.items) do
+      if v == item then index = i end
+    end
+    -- Stop if the item was not found.
+    if index == nil then return end
+  end
+
+  -- Handle item.
+  handleItem(index)
+end
+
+
+function Destroyer:AutoShow()
+  -- Refresh items.
+  self:RefreshItems()
+
+  -- Stop if no items.
+  if #self.items == 0 then return end
+
+  -- Auto open slider check.
+  if DB.Profile.destroy.autoOpen.value > Consts.DESTROY_AUTO_SLIDER_MIN then
+    -- Calculate number of items to destroy.
     local freeSpace = CalculateTotalNumberOfFreeBagSlots()
-    local maxToDestroy = DB.Profile.DestroySaveSpace.Value - freeSpace
-    -- Stop if destroying is not necessary
+    local maxToDestroy = DB.Profile.destroy.autoOpen.value - freeSpace
+    -- Stop if destroying is not necessary.
     if maxToDestroy <= 0 then return end
-
-    -- Sort by price
-    tsort(self.items, function(a, b)
-      return (a.Price * a.Quantity) < (b.Price * b.Quantity)
-    end)
-
-    -- Remove extraneous entries (most expensive first)
-    local numToRemove = max(#self.items - maxToDestroy, 0)
-    for _=1, numToRemove do tremove(self.items) end
   end
 
-  -- If some items fail to be retrieved, we'll only have items that are cached
-  if not self.items.allCached then
-    Core:Print(L.ONLY_DESTROYING_CACHED)
-  end
-
-  -- Start
-  self.state = States.Destroying
-  self.timer = 0
-  EventManager:Fire(E.DestroyerStart)
+  ItemFrames.Destroy:Show()
 end
 
 
--- Stops the destroying process.
-function Destroyer:Stop()
-  assert(self.state ~= States.None)
-  self.state = States.None
-  EventManager:Fire(E.DestroyerStop)
-end
-
-
--- Returns true if the Destroyer is active.
--- @return {boolean}
-function Destroyer:IsDestroying()
-  return self.state ~= States.None
-end
-
-
--- Game update function called via `Addon.Core:OnUpdate()`.
--- @param {number} elapsed - time since last frame
-function Destroyer:OnUpdate(elapsed)
-  if self.state ~= States.Destroying then return end
-
-  self.timer = self.timer + elapsed
-
-  if self.timer >= Core.MinDelay then
-    self.timer = 0
-
-    -- Don't run if the cursor has an item, spell, etc.
-    if GetCursorInfo() then return end
-
-    -- Get next item
-    local item = tremove(self.items)
-
-    -- Stop if there are no more items
-    if not item then
-      return self:Stop()
-    end
-
-    -- Otherwise, verify that the item in the bag slot has not been changed
-    if not Bags:StillInBags(item) or Bags:IsLocked(item) then
-      return
-    end
-
-    -- Destroy item
-    PickupContainerItem(item.Bag, item.Slot)
-    DeleteCursorItem()
-    ClearCursor() -- Clear cursor in case any issues occurred
-
-    -- Fire event
-    EventManager:Fire(E.DestroyerAttemptToDestroy, item)
-  end
+-- Starts the destroying process.
+function Destroyer:Start()
+  handleAllItems()
 end

@@ -1,3 +1,7 @@
+if _G.WOW_PROJECT_ID ~= _G.WOW_PROJECT_CLASSIC then
+    return (_G.message or print)("[ERROR] You're using the Vanilla version of ClassicCastbars on a non-vanilla client. Please download the correct version.") -- luacheck: ignore
+end
+
 local _, namespace = ...
 local PoolManager = namespace.PoolManager
 
@@ -8,10 +12,6 @@ local activeFrames = {} -- visible castbar frames
 local npcCastTimeCacheStart = {}
 local npcCastTimeCache = {}
 local npcCastUninterruptibleCache = {}
-
-if not _G.WOW_PROJECT_ID or (_G.WOW_PROJECT_ID ~= _G.WOW_PROJECT_CLASSIC) then
-    return print("|cFFFF0000[ERROR] ClassicCastbars only supports Classic WoW.|r")
-end
 
 local addon = CreateFrame("Frame", "ClassicCastbars")
 addon:RegisterEvent("PLAYER_LOGIN")
@@ -210,6 +210,16 @@ function addon:StoreCast(unitGUID, spellName, spellID, iconTexturePath, castTime
         local _, _, _, _, _, npcID = strsplit("-", unitGUID)
         if npcID then
             cast.isUninterruptible = npcCastUninterruptibleCache[npcID .. spellName]
+            -- HACK: force show 2s cast time for Kel'Thuzad's Frostbolt
+            if npcID == "15990" and (cast.spellID == 28478 or cast.spellID == 10181) then
+                cast.maxValue = 2
+                cast.endTime = currTime + 2
+            end
+            -- HACK: force show 7s cast time for Sapphiron's Frost Breath
+            if npcID == "15989" and (cast.spellID == 3131 or cast.spellID == 28524) then
+                cast.maxValue = 7
+                cast.endTime = currTime + 7
+            end
         end
     end
 
@@ -380,7 +390,9 @@ function addon:PLAYER_LOGIN()
 
     -- Delete some old invalid settings
     if ClassicCastbarsDB.version and tonumber(ClassicCastbarsDB.version) <= 19 then
-        ClassicCastbarsDB.party.position = nil
+        if ClassicCastbarsDB.party then
+            ClassicCastbarsDB.party.position = nil
+        end
         ClassicCastbarsDB.player = nil
         ClassicCastbarsDB.npcCastUninterruptibleCache = {}
     end
@@ -401,15 +413,12 @@ function addon:PLAYER_LOGIN()
     -- Reset certain stuff on game locale switched
     if self.db.locale ~= GetLocale() then
         self.db.locale = GetLocale()
-        self.db.target.castFont = _G.STANDARD_TEXT_FONT -- Font here only works for certain locales
+        self.db.target.castFont = _G.STANDARD_TEXT_FONT
         self.db.nameplate.castFont = _G.STANDARD_TEXT_FONT
+        self.db.focus.castFont = _G.STANDARD_TEXT_FONT
+        self.db.arena.castFont = _G.STANDARD_TEXT_FONT
+        self.db.party.castFont = _G.STANDARD_TEXT_FONT
         self.db.npcCastUninterruptibleCache = CopyTable(namespace.defaultConfig.npcCastUninterruptibleCache)
-    end
-
-    -- config is not needed anymore if options are not loaded
-    if not IsAddOnLoaded("ClassicCastbars_Options") then
-        self.defaultConfig = nil
-        namespace.defaultConfig = nil
     end
 
     if self.db.player.enabled then

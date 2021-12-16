@@ -9,7 +9,7 @@ local _ReachedNewStanding, _WinterSaberChanged
 --- reached a new reputation level
 ---@param isInit boolean @
 function QuestieReputation:Update(isInit)
-    Questie:Debug(DEBUG_DEVELOP, "QuestieReputation: Update")
+    Questie:Debug(Questie.DEBUG_DEVELOP, "QuestieReputation: Update")
     ExpandFactionHeader(0) -- Expand all header
 
     local factionChanged = false
@@ -23,7 +23,7 @@ function QuestieReputation:Update(isInit)
             if (not isInit) and (
                     _ReachedNewStanding(previousValues, standingId)
                     or _WinterSaberChanged(factionID, previousValues, barValue)) then
-                Questie:Debug(DEBUG_DEVELOP, "QuestieReputation: Update -", "faction \"" .. name .. "\" (" .. factionID .. ") changed")
+                Questie:Debug(Questie.DEBUG_DEVELOP, "QuestieReputation: Update -", "faction \"" .. name .. "\" (" .. factionID .. ") changed")
                 factionChanged = true
             end
         end
@@ -50,7 +50,7 @@ function QuestieReputation:GetPlayerReputations()
     return playerReputations
 end
 
---- Checkout https://github.com/AeroScripts/QuestieDev/wiki/Corrections#reputation-levels for more information
+--- Checkout https://github.com/Questie/Questie/wiki/Corrections#reputation-levels for more information
 function QuestieReputation:HasReputation(requiredMinRep, requiredMaxRep)
     local hasMinRep = true -- the player has reached the min required reputation value
     local hasMaxRep = true -- the player has not reached the max allowed reputation value

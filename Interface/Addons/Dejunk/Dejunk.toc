@@ -1,12 +1,11 @@
-## Interface: 11303
+## Interface: 11307
 ## Title: Dejunk
 ## Author: Dethanyel
-## Version: 8.3.4
+## Version: 9.1.2
 ## Notes: Customizable junk selling and destroying.
-## X-DethsDBLib: DEJUNK_ADDON_SV
-## SavedVariables: DEJUNK_ADDON_SV
-## OptionalDeps: DethsColorLib, DethsDBLib, DethsTooltipLib
-## X-Curse-Project-ID: 257636
+## X-DethsDBLib: __DEJUNK_SAVED_VARIABLES__
+## SavedVariables: __DEJUNK_SAVED_VARIABLES__, DEJUNK_ADDON_SV
+## X-Curse-Project-ID: 413260
 ## X-WoWI-ID: 25313
 
 
@@ -46,14 +45,23 @@ src\events\events.lua
 src\events\event-manager.lua
 
 # Lists
+src\lists\list_mixins.lua
 src\lists\lists.lua
 src\lists\list-helper.lua
 
 # General
 src\bags.lua
+src\chat.lua
+src\commands.lua
 src\consts.lua
-src\db.lua
 src\utils.lua
+
+# DB
+src\db\db.lua
+src\db\database-utils.lua
+src\db\global-versioner.lua
+src\db\profile-versioner.lua
+src\db\transition-db.lua
 
 # Services
 src\services\confirmer.lua
@@ -64,51 +72,50 @@ src\services\repairer.lua
 # Filters (order matters)
 src\filters\filters.lua
 
-src\filters\dejunker\lists.lua
 src\filters\destroyer\lists.lua
-src\filters\shared\below-price.lua
 
-src\filters\destroyer\excess-soul-shards.lua
-src\filters\destroyer\pets-already-collected.lua
-src\filters\destroyer\toys-already-collected.lua
+src\filters\dejunker\lists.lua
+src\filters\dejunker\below-price.lua
 
-src\filters\shared\ignore-battle-pets.lua
-src\filters\shared\ignore-consumables.lua
-src\filters\shared\ignore-cosmetic.lua
-src\filters\shared\ignore-gems.lua
-src\filters\shared\ignore-glyphs.lua
-src\filters\shared\ignore-item-enhancements.lua
-src\filters\shared\ignore-miscellaneous.lua
-src\filters\shared\ignore-quest-items.lua
-src\filters\shared\ignore-readable.lua
-src\filters\shared\ignore-reagents.lua
-src\filters\shared\ignore-recipes.lua
-src\filters\shared\ignore-trade-goods.lua
+src\filters\dejunker\ignore-battle-pets.lua
+src\filters\dejunker\ignore-consumables.lua
+src\filters\dejunker\ignore-cosmetic.lua
+src\filters\dejunker\ignore-gems.lua
+src\filters\dejunker\ignore-glyphs.lua
+src\filters\dejunker\ignore-item-enhancements.lua
+src\filters\dejunker\ignore-miscellaneous.lua
+src\filters\dejunker\ignore-quest-items.lua
+src\filters\dejunker\ignore-readable.lua
+src\filters\dejunker\ignore-reagents.lua
+src\filters\dejunker\ignore-recipes.lua
+src\filters\dejunker\ignore-trade-goods.lua
 
-src\filters\shared\ignore-binds-when-equipped.lua
-src\filters\shared\ignore-equipment-sets.lua
-src\filters\shared\ignore-tradeable.lua
+src\filters\dejunker\ignore-binds-when-equipped.lua
+src\filters\dejunker\ignore-equipment-sets.lua
+src\filters\dejunker\ignore-tradeable.lua
 
 src\filters\dejunker\unsuitable-equipment.lua
-src\filters\dejunker\below-average-item-level.lua
 
-src\filters\shared\ignore-soulbound.lua
-
-src\filters\shared\by-quality.lua
+src\filters\dejunker\item-level-range.lua
+src\filters\dejunker\ignore-soulbound.lua
+src\filters\dejunker\by-quality.lua
 
 # UI
 src\ui\item-tooltip.lua
 src\ui\merchant-button.lua
 src\ui\minimap-icon.lua
 src\ui\main.lua
+src\ui\item-frames.lua
 
 src\ui\groups\general.lua
 src\ui\groups\sell.lua
 src\ui\groups\destroy.lua
 src\ui\groups\lists.lua
+src\ui\groups\commands.lua
 src\ui\groups\profiles.lua
 
 src\ui\widgets\widgets.lua
+src\ui\widgets\item-frame.lua
 src\ui\widgets\ListFrame.lua
 
 # Bindings
