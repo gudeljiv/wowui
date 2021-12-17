@@ -114,10 +114,16 @@ local function EditBox_OnEnterPressed(frame)
 end
 
 local function EditBox_OnEnter(frame)
+	if not frame.SetBackdrop then
+		Mixin(frame, BackdropTemplateMixin)
+	end
 	frame:SetBackdropBorderColor(0.5, 0.5, 0.5, 1)
 end
 
 local function EditBox_OnLeave(frame)
+	if not frame.SetBackdrop then
+		Mixin(frame, BackdropTemplateMixin)
+	end
 	frame:SetBackdropBorderColor(0.3, 0.3, 0.3, 0.8)
 end
 
@@ -225,7 +231,7 @@ local function Constructor()
 	label:SetJustifyH("CENTER")
 	label:SetHeight(15)
 
-	local slider = CreateFrame("Slider", nil, frame)
+	local slider = CreateFrame("Slider", nil, frame, BackdropTemplateMixin and "BackdropTemplate")
 	slider:SetOrientation("HORIZONTAL")
 	slider:SetHeight(15)
 	slider:SetHitRectInsets(0, 0, -10, 0)
@@ -247,7 +253,7 @@ local function Constructor()
 	local hightext = slider:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
 	hightext:SetPoint("TOPRIGHT", slider, "BOTTOMRIGHT", -2, 3)
 
-	local editbox = CreateFrame("EditBox", nil, frame)
+	local editbox = CreateFrame("EditBox", nil, frame, BackdropTemplateMixin and "BackdropTemplate")
 	editbox:SetAutoFocus(false)
 	editbox:SetFontObject(GameFontHighlightSmall)
 	editbox:SetPoint("TOP", slider, "BOTTOM")

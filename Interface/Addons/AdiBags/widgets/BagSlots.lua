@@ -428,6 +428,9 @@ end
 
 local function Panel_UpdateSkin(self)
 	local backdrop, r, g, b, a = addon:GetContainerSkin(self:GetParent().name)
+	if not self.SetBackdrop then
+		Mixin(self, BackdropTemplateMixin)
+	end
 	self:SetBackdrop(backdrop)
 	self:SetBackdropColor(r, g, b, a)
 	local m = max(r, g, b)

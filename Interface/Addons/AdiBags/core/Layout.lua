@@ -31,6 +31,9 @@ local wipe = _G.wipe
 
 function addon:CreateBagAnchor()
 	local anchor = self:CreateAnchorWidget(UIParent, "anchor", L["AdiBags Anchor"])
+	if not anchor.SetBackdrop then
+		Mixin(anchor, BackdropTemplateMixin)
+	end
 	anchor:SetSize(80, 80)
 	anchor:SetFrameStrata("TOOLTIP")
 	anchor:SetBackdrop({bgFile = [[Interface\Tooltips\UI-Tooltip-Background]]})

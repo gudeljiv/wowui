@@ -30,6 +30,11 @@ do
 		local self = this.obj
 		local text = this.text:GetText()
 		local border = self.list[text] ~= text and self.list[text] or Media:Fetch('border',text)
+
+		if not this.dropdown.SetBackdrop then
+			Mixin(this.dropdown, BackdropTemplateMixin)
+		end
+
 		this.dropdown:SetBackdrop({edgeFile = border,
 			bgFile=[[Interface\DialogFrame\UI-DialogBox-Background-Dark]],
 			tile = true, tileSize = 16, edgeSize = 16,
@@ -104,6 +109,10 @@ do
 	local function SetText(self, text) -- Set the text displayed in the box.
 		self.frame.text:SetText(text or "")
 		local border = self.list[text] ~= text and self.list[text] or Media:Fetch('border',text)
+
+		if not self.frame.displayButton.SetBackdrop then
+			Mixin(self.frame.displayButton, BackdropTemplateMixin)
+		end
 
 		self.frame.displayButton:SetBackdrop({edgeFile = border,
 			bgFile=[[Interface\DialogFrame\UI-DialogBox-Background-Dark]],

@@ -108,6 +108,10 @@ do
 		self.frame.text:SetText(text or "")
 		local background = self.list[text] ~= text and self.list[text] or Media:Fetch('background',text)
 
+		if not self.frame.displayButton.SetBackdrop then
+			Mixin(self.frame.displayButton, BackdropTemplateMixin)
+		end
+
 		self.frame.displayButton:SetBackdrop({bgFile = background,
 			edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
 			edgeSize = 16,

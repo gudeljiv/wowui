@@ -259,6 +259,9 @@ do
 	local function Constructor()
 		local count = AceGUI:GetNextWidgetNum(widgetType)
 		local frame = CreateFrame("Frame", "AceGUI30Pullout"..count, UIParent)
+		if not frame.SetBackdrop then
+			Mixin(frame, BackdropTemplateMixin)
+		end
 		local self = {}
 		self.count = count
 		self.type = widgetType
@@ -310,6 +313,9 @@ do
 		itemFrame.obj = self
 
 		local slider = CreateFrame("Slider", "AceGUI30PulloutScrollbar"..count, scrollFrame)
+		if not slider.SetBackdrop then
+			Mixin(slider, BackdropTemplateMixin)
+		end
 		slider:SetOrientation("VERTICAL")
 		slider:SetHitRectInsets(0, 0, -10, 0)
 		slider:SetBackdrop(sliderBackdrop)
