@@ -2,14 +2,18 @@
 xKillCount = {
 	["show"] = true,
 	["killLog"] = {
+		["Mottled Boar"] = {
+			["name"] = "Mottled Boar",
+			["count"] = 10,
+		},
 	},
 	["experience"] = {
-		["totaltotal"] = 0,
-		["pulltotal"] = 0,
+		["totaltotal"] = 864,
+		["pulltotal"] = 338,
 	},
 	["position"] = {
-		["y"] = -4.59773588180542,
-		["x"] = 6.436790466308594,
+		["y"] = -283.793212890625,
+		["x"] = 35.4827766418457,
 		["to"] = "TOPLEFT",
 		["from"] = "TOPLEFT",
 	},

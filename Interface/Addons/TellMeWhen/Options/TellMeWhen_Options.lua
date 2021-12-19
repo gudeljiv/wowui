@@ -2396,7 +2396,7 @@ TMW:NewClass("Config_Slider", "Slider", "Config_Frame")
 		self.max = max
 
 		if self.mode == self.MODE_STATIC then
-			self:SetMinMaxValues_base(min, max)
+			self:SetMinMaxValues_base(math.max(min, -10e10), math.min(max, 10e10))
 		elseif not self.EditBoxShowing then
 			self:UpdateRange()
 		end
@@ -2705,7 +2705,7 @@ TMW:NewClass("Config_Slider", "Slider", "Config_Frame")
 
 			self:SetMinMaxValues_base(newmin, newmax)
 		else
-			self:SetMinMaxValues_base(self.min, self.max)
+			self:SetMinMaxValues_base(math.max(self.min, -10e10), math.min(self.max, 10e10))
 		end
 	end,
 
@@ -3795,7 +3795,7 @@ function TMW:DeserializeDatum(string, silent)
 end
 
 function TMW:DeserializeData(str, silent)
-	if not str then 
+	if not str then
 		return
 	end
 
@@ -3807,9 +3807,12 @@ function TMW:DeserializeData(str, silent)
 		results = results or {}
 
 		local result = TMW:DeserializeDatum(string, silent)
-
-		tinsert(results, result)
+		if result then
+			tinsert(results, result)
+		end
 	end
+
+	if results and #results == 0 then return end
 
 	return results
 end

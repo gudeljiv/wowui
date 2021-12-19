@@ -1,4 +1,4 @@
-local path = "Interface\\Addons\\NeatPlates_Simple\\Media" 
+local path = "Interface\\Addons\\NeatPlates_Simple\\Media"
 local font = path.."\\neuropol x cd rg.ttf";
 
 -- Non-Latin Font Bypass
@@ -116,7 +116,7 @@ StyleDefault.castborder = {
 	anchor = "BOTTOM",
 	orientation = "HORIZONTAL",
 	show = true,
-}  
+}
 
 StyleDefault.castnostop = {
 	texture 				= path.."\\empty.tga",
@@ -180,6 +180,20 @@ StyleDefault.castbar = {
 	show = true,
 }
 
+StyleDefault.spelltext = {
+	typeface = font,
+	size = 7,
+	width = 108,
+	x = 0,
+	y = -4,
+	align = "CENTER",
+	anchor = "BOTTOM",
+	vertical = "BOTTOM",
+	shadow = true,
+	flags = "NONE",
+	show = true,
+}
+
 StyleDefault.spelltarget = {
 	typeface =					font,
 	size = 7,
@@ -193,10 +207,24 @@ StyleDefault.spelltarget = {
 	show = true,
 }
 
+StyleDefault.durationtext = {
+	typeface = font,
+	size = 7,
+	width = 108,
+	x = 0,
+	y = -4,
+	align = "RIGHT",
+	anchor = "BOTTOM",
+	vertical = "BOTTOM",
+	shadow = true,
+	flags = "NONE",
+	show = true,
+}
+
 StyleDefault.spellicon = {
 	width = 10,
 	height = 10,
-	x = 52,
+	x = 60,
  	y = -9,
 	anchor = "TOP",
 	show = true,
@@ -321,6 +349,7 @@ WidgetConfig.QuestWidget = { anchor = "LEFT" , x = -18,y = 0 }
 WidgetConfig.QuestWidgetNameOnly = { anchor = "LEFT" , x = -18,y = 6 }
 WidgetConfig.ThreatPercentageWidget = { anchor = "RIGHT" , x = 14,y = -9 }
 WidgetConfig.RangeWidget = { anchor = "CENTER", x=0, y=-7, w = 106, h = 4 }
+WidgetConfig.ArenaWidget = { anchor = "LEFT" , x = -25, y = 6 }
 
 
 WidgetConfig._meta = true		-- tells the parser to ignore this table; ie. don't convert to "style" template

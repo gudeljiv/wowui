@@ -1021,10 +1021,6 @@ TMW:RegisterCallback("TMW_CNDT_GROUP_DRAWGROUP", function(event, CndtGroup, cond
 				-- Don't try and format text while changing parameters because we might get some errors trying
 				-- to format unexpected values
 				CndtGroup.Slider:SetTextFormatter(nil)
-
-				CndtGroup.Slider:SetValueStep(step)
-				CndtGroup.Slider:SetMinMaxValues(min, max)
-
 				if range then
 					CndtGroup.Slider:SetMode(CndtGroup.Slider.MODE_ADJUSTING)
 					CndtGroup.Slider:SetRange(range)
@@ -1032,6 +1028,8 @@ TMW:RegisterCallback("TMW_CNDT_GROUP_DRAWGROUP", function(event, CndtGroup, cond
 					CndtGroup.Slider:SetMode(CndtGroup.Slider.MODE_STATIC)
 				end
 
+				CndtGroup.Slider:SetValueStep(step)
+				CndtGroup.Slider:SetMinMaxValues(min, max)
 
 				CndtGroup.Slider:SetWidth(522)
 				CndtGroup:AddRow(CndtGroup.Slider, -7)
@@ -1058,7 +1056,7 @@ TMW:RegisterCallback("TMW_CNDT_GROUP_DRAWGROUP", function(event, CndtGroup, cond
 		CndtGroup.BitFlagsSelectedText:Show()
 
 		CndtGroup.BitFlagsCheck:SetChecked(conditionSettings.Checked)
-		CndtGroup.BitFlags:SetText(conditionData.bitFlagTitle)
+		CndtGroup.BitFlags:SetText(conditionData.bitFlagTitle or L["CONDITIONPANEL_BITFLAGS_CHOOSEMENU_VALUES"])
 
 		CndtGroup.BitFlags:ClearAllPoints()
 		if CndtGroup.Unit:IsShown() then

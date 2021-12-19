@@ -1,41 +1,42 @@
 
 AtlasLootClassicDB = {
-	["global"] = {
-		["__addonrevision"] = 2040000,
-	},
 	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Default",
-		["Whatevs - Stonespine"] = "Default",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Pitchwise - Golemagg"] = "Pitchwise - Golemagg",
-		["Elohssa - Stonespine"] = "Elohssa - Stonespine",
-		["Battlearm - Golemagg"] = "Default",
-		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
-		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
-		["Dmitar - Golemagg"] = "Default",
-		["Verminz - Golemagg"] = "Verminz - Golemagg",
-		["Mxys - Golemagg"] = "Default",
-		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
-		["Jaroslav - Golemagg"] = "Default",
-		["Mxym - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Verminz - Golemagg"] = "Verminz - Golemagg",
+		["Battitude - Golemagg"] = "Default",
+		["Korupcija - Stonespine"] = "Korupcija - Stonespine",
 		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
-		["Vermins - Stonespine"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Mxym - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Default",
-		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Korupcija - Stonespine"] = "Korupcija - Stonespine",
-		["Battitude - Golemagg"] = "Default",
 		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
 		["Moolatz - Dreadnaught"] = "Default",
+		["Pitchwise - Golemagg"] = "Pitchwise - Golemagg",
+		["Elohssa - Stonespine"] = "Elohssa - Stonespine",
+		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
+		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
+		["Mxys - Golemagg"] = "Default",
+		["Vermins - Stonespine"] = "Default",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Dmitar - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
+		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Judawise - Golemagg"] = "Judawise - Golemagg",
+		["Battlearm - Golemagg"] = "Default",
+		["Whatevs - Stonespine"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
+		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+	},
+	["global"] = {
+		["__addonrevision"] = 2040000,
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -45,6 +46,11 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -54,17 +60,8 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
-			},
 		},
 		["Verminz - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -73,6 +70,10 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Battitude - Golemagg"] = {
@@ -146,6 +147,9 @@ AtlasLootClassicDB = {
 		["Elohssa - Stonespine"] = {
 		},
 		["Nitwit - Dreadnaught"] = {
+			["minimap"] = {
+				["minimapPos"] = 257.3785370538875,
+			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -155,11 +159,12 @@ AtlasLootClassicDB = {
 					64.74999237060547, -- [5]
 				},
 			},
-			["minimap"] = {
-				["minimapPos"] = 257.3785370538875,
-			},
 		},
 		["Paydo - Dreadmist"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -176,10 +181,6 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 		},
 		["Mxys - Golemagg"] = {
 			["minimap"] = {
@@ -189,7 +190,13 @@ AtlasLootClassicDB = {
 		},
 		["Vermins - Stonespine"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Mxzq - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Moolatz - Dreadnaught"] = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -206,9 +213,13 @@ AtlasLootClassicDB = {
 		},
 		["Testxv - Golemagg"] = {
 		},
-		["Battlearm - Hydraxian Waterlords"] = {
+		["Battlearm - Golemagg"] = {
 		},
-		["Kosturko - Golemagg"] = {
+		["Korupcija - Stonespine"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -218,16 +229,8 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 		},
 		["Vermin - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -244,10 +247,18 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 		},
 		["Jaroslav - Golemagg"] = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -256,10 +267,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Default"] = {
@@ -279,10 +286,6 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["Addons"] = {
 				["Favourites"] = {
 					["lists"] = {
@@ -294,6 +297,10 @@ AtlasLootClassicDB = {
 					},
 				},
 			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 		},
 		["Judawise - Golemagg"] = {
 			["minimap"] = {
@@ -301,24 +308,7 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Korupcija - Stonespine"] = {
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"Ragefire", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-		},
-		["Battlearm - Golemagg"] = {
-		},
-		["Moolatz - Dreadnaught"] = {
+		["Kosturko - Golemagg"] = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
@@ -333,7 +323,24 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
-		["Mxzq - Golemagg"] = {
+		["Battlearm - Hydraxian Waterlords"] = {
+		},
+		["Greenwise - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+		},
+		["Pitchwise - Dreadnaught"] = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,

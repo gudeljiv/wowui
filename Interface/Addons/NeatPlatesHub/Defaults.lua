@@ -48,6 +48,12 @@ NeatPlatesHubDefaults = {
 	--ColorFriendlyNameMode = 1,
 	--ColorFriendlyStatusTextMode = 1,
 
+	DefaultEnemyNameplatesOnPlayers = false,
+	DefaultFriendlyNameplatesOnPlayers = false,
+	DefaultEnemyNameplatesOnNPCs = false,
+	DefaultFriendlyNameplatesOnNPCs = false,
+	DefaultNeutralNameplatesOnNPCs = false,
+
 	TextShowOnlyOnActive = false,
 
 
@@ -82,6 +88,7 @@ NeatPlatesHubDefaults = {
 	--OpacityFullMouseover = false,			-- Deprecated 6.13
 
 	OpacitySpotlightSpell = false,			-- Added 6.14
+	OpacitySpotlightSpellInt = false,
 	OpacitySpotlightMouseover = false,		-- Added 6.14
 	OpacitySpotlightRaidMarked = false,		-- Added 6.14
 
@@ -161,8 +168,7 @@ NeatPlatesHubDefaults = {
 	---------------------------------------
 	ThreatMode = 1,
 	ThreatGlowEnable = true,
-	SafeColorSolo = false,
-	ThreatSoloEnable = false,
+	ThreatSoloEnable = true,
 	ColorShowPartyAggro = false,
 	ColorPartyAggroBar = false,
 	ColorPartyAggroGlow = true,
@@ -224,9 +230,10 @@ NeatPlatesHubDefaults = {
 	ColorSchoolFrost = {r = 0.5, g = 1, b = 1},
 	ColorSchoolShadow = {r = 0.5, g = 0.5, b = 1},
 	ColorSchoolArcane = {r = 1, g = 0.5, b = 1},
-	ColorCastBySchool = true,
+	ColorCastBySchool = false,
 	SpellCastEnableEnemy = true,
 	SpellCastEnableFriendly = false,
+	CastSpellNameEnable = true,
 	IntCastEnable = true,
 	IntCastWhoEnable = true,
 	SpellIconEnable = true,
@@ -260,7 +267,7 @@ NeatPlatesHubDefaults = {
 	ClassPartyIcon = false,
 	ClassIconScaleOptions = {x = 1, y = 1, offset = {x = 0, y = 0}},
 	WidgetTotemIcon = false,
-	WidgetComboPoints = true,
+	WidgetComboPoints = 1,
 	WidgetComboPointsStyle = 1,
 	WidgetComboPointsScaleOptions = {x = 1, y = 1, offset = {x = 0, y = 0}},
 	WidgetThreatIndicator = true,
@@ -281,6 +288,7 @@ NeatPlatesHubDefaults = {
 	WidgetAbsorbMode = 1,
 	WidgetQuestIcon = false,
 	WidgetThreatPercentage = false,
+	WidgetArenaIcon = false,
 
 	-- Aura Widget
 	---------------------------------------
@@ -290,11 +298,20 @@ NeatPlatesHubDefaults = {
 	--WidgetAllAuras = false,
 	--WidgetMyDebuff = true,
 	--WidgetMyBuff = false,
+	WidgetPandemic = false,
+	ColorPandemic = {r = 0.9, g = 0.15, b = 0.15, a = 1}, -- Red
+	BorderPandemic = 1,
+	WidgetBuffPurgeable = false,
+	ColorBuffPurgeable = {r = 0, g = 0.4, b = 1, a = 1}, -- Medium Blue
+	BorderBuffPurgeable = 1,
+	WidgetBuffEnrage = false,
+	ColorBuffEnrage = {r = 1, g = 0, b = 0.2, a = 1}, -- Medium Red
+	BorderBuffEnrage = 1,
 	SpacerSlots = 1,
 	AuraScale = 1,
 	EmphasizedAuraScale = 2,
 	WidgetAuraScaleOptions = {x = 1, y = 1, offset = {x = 0, y = 0}},
-	WidgetEmphasizedAuraScaleOptions = {x = 1, y = 1, offset = {x = 0, y = 0}},
+	WidgetEmphasizedAuraScaleOptions = {x = 1, y = 1, offset = {x = 0, y = 0}, anchor = "TOP"},
 	EmphasizedSlots = 1,
 	PreciseAuraThreshold = 10,
 	WidgetAdditionalAuras = {},
@@ -317,6 +334,7 @@ NeatPlatesHubDefaults = {
 	HideAuraDuration = false,
 	HideAuraStacks = false,
 	HideAuraInHeadline = false,
+	BlizzardStyleIcons = false,
 
 	-- Frame
 	---------------------------------------

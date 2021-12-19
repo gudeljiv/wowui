@@ -506,6 +506,22 @@ do
 					return durationA*order < durationB*order
 				end
 			end)
+			
+			IconPosition_Sortable:RegisterIconSorter("start", {
+				DefaultOrder = 1,
+				[1] = L["UIPANEL_GROUPSORT_start_1"],
+				[-1] = L["UIPANEL_GROUPSORT_start_-1"],
+			}, function(iconA, iconB, attributesA, attributesB, order)
+				local startA = attributesA.start
+				local startB = attributesB.start
+
+				startA = iconA:OnGCD(attributesA.duration) and 0 or startA
+				startB = iconB:OnGCD(attributesB.duration) and 0 or startB
+
+				if startA ~= startB then
+					return startA*order < startB*order
+				end
+			end)
 
 			IconPosition_Sortable:RegisterIconSortPreset(L["UIPANEL_GROUP_QUICKSORT_DURATION"], {
 				{ Method = "shown", Order = -1 },
@@ -1090,7 +1106,7 @@ end
 
 -- DOGTAGUNIT: "dogTagUnit"
 do
-	local DogTag = LibStub("LibDogTag-3.0")
+	local DogTag_Unit = LibStub("LibDogTag-Unit-3.0")
 
 		
 	local Processor = TMW.Classes.IconDataProcessor:New("DOGTAGUNIT", "dogTagUnit")
@@ -1101,7 +1117,7 @@ do
 
 	local Hook = TMW.Classes.IconDataProcessorHook:New("UNIT_DOGTAGUNIT", "UNIT")
 
-	Hook:DeclareUpValue("DogTag", DogTag)
+	Hook:DeclareUpValue("DogTag_Unit", DogTag_Unit)
 	Hook:DeclareUpValue("TMW_UNITS", TMW.UNITS)
 
 	Hook:RegisterCompileFunctionSegmentHook("post", function(Processor, t)
@@ -1119,9 +1135,9 @@ do
 
 			if not typeData or typeData.unitType == "unitid" then
 				dogTagUnit = unit
-				if not DogTag.IsLegitimateUnit[dogTagUnit] then
+				if not DogTag_Unit.IsLegitimateUnit[dogTagUnit] then
 					dogTagUnit = dogTagUnit and TMW_UNITS:TestUnit(dogTagUnit)
-					if not DogTag.IsLegitimateUnit[dogTagUnit] then
+					if not DogTag_Unit.IsLegitimateUnit[dogTagUnit] then
 						dogTagUnit = "player"
 					end
 				end

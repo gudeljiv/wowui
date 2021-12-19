@@ -86,7 +86,7 @@ function Item:Construct()
 end
 
 function Item:GetBlizzard(id)
-	if not Addon.sets.displayBlizzard and Addon.Frames:AreBasicsEnabled() then
+    if not Addon.sets.displayBlizzard and Addon.Frames:AreBasicsEnabled() then
 			local id = self:NumFrames() + 1
 			local bag = ceil(id / 36)
 			local slot = (id-1) % 36 + 1
@@ -95,7 +95,7 @@ function Item:GetBlizzard(id)
 					b:ClearAllPoints()
 					return self:Bind(b)
 			end
-	end
+    end
 end
 
 function Item:Bind(frame)
@@ -238,50 +238,32 @@ function Item:UpdateBorder()
 		self.IconOverlay:SetAtlas(overlay)
 	end
 
-	self:CreateBeautyBorder(6)
-	self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureNormal")
-	self:SetBeautyBorderColor(1, 1, 1, 1)
-
 	if id then
-
 		if Addon.sets.glowQuest and quest then
 			r,g,b = 1, .82, .2
-
-			self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
-			self:SetBeautyBorderColor(1, 0.964, 0, 1)
 		elseif Addon.sets.glowUnusable and Unfit:IsItemUnusable(id) then
 			r,g,b = RED_FONT_COLOR.r, RED_FONT_COLOR.g, RED_FONT_COLOR.b
-
-			self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
-			self:SetBeautyBorderColor(r, g, b, 1)
-		elseif Addon.sets.glowSets and Search:InSet(link) then 
-			r,g,b = .1, 1, 1
-
-			self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
-			self:SetBeautyBorderColor(r, g, b, 1)
+		elseif Addon.sets.glowSets and Search:InSet(link) then
+	  	r,g,b = .2, 1, .8
 		elseif Addon.sets.glowQuality and quality and quality > 1 then
 			r,g,b = GetItemQualityColor(quality)
-
-			self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
-			self:SetBeautyBorderColor(r, g, b, 1)
 		end
 	end
 
-	-- self.IconBorder:SetTexture(id and C_ArtifactUI and C_ArtifactUI.GetRelicInfoByItemID(id) and 'Interface/Artifacts/RelicIconFrame' or 'Interface/Common/WhiteIconFrame')
+	self.IconBorder:SetTexture(id and C_ArtifactUI and C_ArtifactUI.GetRelicInfoByItemID(id) and 'Interface/Artifacts/RelicIconFrame' or 'Interface/Common/WhiteIconFrame')
 	self.IconBorder:SetVertexColor(r,g,b)
 	self.IconBorder:SetShown(r)
 
 	self.IconGlow:SetVertexColor(r,g,b, Addon.sets.glowAlpha)
 	self.IconGlow:SetShown(r)
 
-	-- self.NewItemTexture:SetAtlas(quality and NEW_ITEM_ATLAS_BY_QUALITY[quality] or 'bags-glow-white')
-	-- self.NewItemTexture:SetShown(new and not paid)
+	self.NewItemTexture:SetAtlas(quality and NEW_ITEM_ATLAS_BY_QUALITY[quality] or 'bags-glow-white')
+	self.NewItemTexture:SetShown(new and not paid)
 
 	self.JunkIcon:SetShown(Addon.sets.glowPoor and quality == 0 and not self.info.worthless)
 	self.BattlepayItemTexture:SetShown(new and paid)
 	self.QuestBorder:SetShown(questID)
 	self.IconOverlay:SetShown(overlay)
-
 end
 
 function Item:UpdateSlotColor()
@@ -448,7 +430,7 @@ function Item:IsQuestItem()
 			local isQuest, questID, isActive = GetContainerItemQuestInfo(self:GetBag(), self:GetID())
 			return isQuest, (questID and not isActive)
 		else
-			return self.info.class == LE_ITEM_CLASS_QUESTITEM or Search:ForQuest(self.info.link)
+			return self.info.class == Enum.ItemClass.Questitem or Search:ForQuest(self.info.link)
 		end
 	end
 end

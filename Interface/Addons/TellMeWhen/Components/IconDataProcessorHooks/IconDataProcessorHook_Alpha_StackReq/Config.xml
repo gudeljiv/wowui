@@ -35,29 +35,6 @@
 					</OnLoad>
 				</Scripts>
 			</Frame>
-			
-			<!-- <Slider parentKey="StackAlpha" name="$parentStackAlpha" inherits="TellMeWhen_SliderTemplate_Alpha" valuestep="1">
-				<Anchors>
-					<Anchor point="LEFT" relativeKey="$parent.StackMax" relativePoint="RIGHT" x="10" />
-					<Anchor point="RIGHT" x="-10" />
-					<Anchor point="TOP" y="-13" />
-				</Anchors>
-				<Scripts>
-					<OnLoad>						
-						TMW:CInit(self)
-
-						self:SetTexts(TMW.L["REQFAILED_ALPHA"], TMW.L["STACKALPHA_DESC"])
-						self:SetSetting("StackAlpha")
-
-						self:CScriptAdd("ReloadRequested", function()
-							local settings = self:GetSettingTable()
-							self:SetEnabled(settings.StackMinEnabled or settings.StackMaxEnabled)
-						end)
-
-						self:SetTextFormatter(self.OrangeAt100Formatter)
-					</OnLoad>
-				</Scripts>
-			</Slider> -->
 		</Frames>
 		<Scripts>
 			<OnLoad>

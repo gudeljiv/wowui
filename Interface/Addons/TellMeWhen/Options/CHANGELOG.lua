@@ -3,6 +3,59 @@ if not TMW then return end
 TMW.CHANGELOG_LASTVER="7.4.0"
 
 TMW.CHANGELOG = [==[
+## v9.1.2
+* New icon type: Lua Value (community contribution by Taurlog of Wyrmrest Accord)
+* Minor performance improvements
+* Support for Classic SoM patch (1.14).
+  
+### Bug Fixes
+* Fixed #1918 - Combo point resource display icons now update properly.
+
+## v9.1.1
+### Bug Fixes
+* Fixed #1909 - IconConfig.lua:127: attempt to index field "CurrentTabGroup" (a nil value)
+* Fixed #1913 (LibDogTag-Stats-3.0/1) - Error with code "[SpellCrit]"
+* Fixed #1914 - Meta icons that switch between shown/hidden OmniCC timer text without changing the duration of their timer now properly hide/show the timer text.
+
+
+## v9.1.0
+* Version bump for WoW 9.1
+* Minor performance improvements
+
+## v9.0.7
+### Bug Fixes
+* Fixed #1886 - invalid key to "next" (new version of LibDogTag-Unit-3.0 should resolve this).
+* Fixed #1889 - error thrown when attempting to import corrupted strings
+
+## v9.0.6
+* New Condition: Covenant Membership
+* New group sort option: Timer start
+* New slash command: `/tmw counter counter-name operation value`. E.g. `/tmw counter casts = 0`
+
+### Bug Fixes
+* Fixed an issue with some types of items in the item suggestion list.
+* Fix #1878 - Couldn't find inherited node: BackdropTemplate
+
+## v9.0.5
+
+### Bug Fixes
+* Fixed an error with the `[Name]` DogTag breaking when LibDogTag-Unit gets upgraded after TMW loads.
+* Fixed incorrect labels on Text Display editboxes after changing an icon's text layout.
+* Fixed #1868 - Lua errors and broken sliders in WoW 9.0.5.
+
+## v9.0.4
+* #1811 - The group/target point of a group will now be preserved when moving a shrunk group via click-and-drag.
+
+## v9.0.3
+### Bug Fixes
+* #1824 - Fix incorrect detection of Defensive mode in the Pet Attack Mode condition.
+* #1819 - Cloning notifications will now always clone all condition settings for condition-based triggers.
+* #1822 - All-Unit Buffs/Debuffs icons configured to only show when All Absent should now function as such.
+
+## v9.0.2
+### Bug Fixes
+* #1814 - Fix issues with range checking for some abilities
+
 ## v8.7.6
 * Totem timer functions are once again based on Blizzard's GetTotemInfo API that was restored in patch 1.13.4.
 

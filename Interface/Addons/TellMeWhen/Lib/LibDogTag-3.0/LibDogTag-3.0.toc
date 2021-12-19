@@ -1,13 +1,16 @@
-## Interface: 80300
+## Interface: 90105
+## Interface-Retail: 90105
+## Interface-Classic: 11401
+## Interface-BCC: 20502
 ## LoadOnDemand: 1
 ## Title: Lib: DogTag-3.0
 ## Notes: A library to provide a markup syntax
-## Author: ckknight
-## eMail: ckknight@gmail.com
+## Author: ckknight, Parnic, cybeloras
+## eMail: ckknight@gmail.com, parnic@parnic.com
 ## Version: 1.0
 ## X-Category: Library
-## X-Credit: Shefki
-## X-Compatible-With: 70300, 11302
+## X-Credit: Shefki, Parnic, cybeloras
+## X-Curse-Project-ID: 14280
 ## OptionalDeps:
 
 LibStub\LibStub.lua

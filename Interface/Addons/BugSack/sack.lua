@@ -182,6 +182,7 @@ local function createBugSack()
 	window:SetMovable(true)
 	window:EnableMouse(true)
 	window:RegisterForDrag("LeftButton")
+	window:SetClampedToScreen(true)
 	window:SetScript("OnDragStart", window.StartMoving)
 	window:SetScript("OnDragStop", window.StopMovingOrSizing)
 	window:SetScript("OnShow", function()
@@ -275,20 +276,28 @@ local function createBugSack()
 	sessionLabel:SetHighlightFontObject("GameFontHighlightLeft")
 	sessionLabel:SetPoint("TOPLEFT", titlebg, 6, -1)
 	sessionLabel:SetPoint("BOTTOMRIGHT", titlebg, "BOTTOMRIGHT", -26, 1)
+	sessionLabel:RegisterForClicks("LeftButtonUp", "LeftButtonDown", "RightButtonUp", "RightButtonDown")
 	sessionLabel:SetScript("OnHide", function()
 		window:StopMovingOrSizing()
 	end)
-	--[[sessionLabel:SetScript("OnMouseUp", function()
+	sessionLabel:SetScript("OnMouseUp", function()
 		window:StopMovingOrSizing()
 	end)
 	sessionLabel:SetScript("OnMouseDown", function()
 		window:StartMoving()
-	end)]]
+	end)
 	sessionLabel:SetScript("OnDoubleClick", function()
 		sessionLabel:Hide()
 		searchLabel:Show()
 		searchBox:Show()
 		searchThrough = currentSackContents
+	end)
+	sessionLabel:SetScript("OnClick", function(self, button)
+		if button ~= "RightButton" then
+			return
+		end
+		window:Hide()
+		InterfaceOptionsFrame_OpenToCategory(addonName)
 	end)
 	local quickTips = "|cff44ff44Double-click|r to filter bug reports. After you are done with the search results, return to the full sack by selecting a tab at the bottom. |cff44ff44Left-click|r and drag to move the window. |cff44ff44Right-click|r to close the sack and open the interface options for BugSack."
 	sessionLabel:SetScript("OnEnter", function(self)
@@ -314,15 +323,6 @@ local function createBugSack()
 	searchBox:SetTextInsets(4, 4, 0, 0)
 	searchBox:SetMaxLetters(50)
 	searchBox:SetFontObject("ChatFontNormal")
-	searchBox:SetBackdrop({
-		edgeFile = nil,
-		bgFile = "Interface\\ChatFrame\\ChatFrameBackground",
-		insets = { left = 0, right = 0, top = 0, bottom = 0 },
-		tile = true,
-		tileSize = 16,
-		edgeSize = 0,
-	})
-	searchBox:SetBackdropColor(0, 0, 0, 0.5)
 	searchBox:SetScript("OnShow", function(self)
 		self:SetFocus()
 	end)
@@ -336,6 +336,10 @@ local function createBugSack()
 	searchBox:SetPoint("TOPLEFT", searchLabel, "TOPRIGHT", 6, 1)
 	searchBox:SetPoint("BOTTOMRIGHT", titlebg, "BOTTOMRIGHT", -26, 1)
 	searchBox:Hide()
+
+	local searchBackdrop = searchBox:CreateTexture(nil, "BACKGROUND")
+	searchBackdrop:SetAllPoints()
+	searchBackdrop:SetColorTexture(0, 0, 0, 0.5)
 
 	nextButton = CreateFrame("Button", "BugSackNextButton", window, "UIPanelButtonTemplate")
 	nextButton:SetPoint("BOTTOMRIGHT", window, -11, 16)

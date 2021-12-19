@@ -38,6 +38,24 @@ the previous widget to anchor to.  Default and consistent anchor points also mak
 
 --]]
 
+local AnchorOptions = {
+	{ text = L["CENTER"], value = "CENTER"  },
+	{ text = L["TOP"], value = "TOP"  },
+	{ text = L["LEFT"], value = "LEFT"  },
+	{ text = L["RIGHT"], value = "RIGHT"  },
+	{ text = L["BOTTOM"], value = "BOTTOM"  },
+	{ text = L["TOPLEFT"], value = "TOPLEFT"  },
+	{ text = L["TOPRIGHT"], value = "TOPRIGHT"  },
+	{ text = L["BOTTOMLEFT"], value = "BOTTOMLEFT"  },
+	{ text = L["BOTTOMRIGHT"], value = "BOTTOMRIGHT"  },
+}
+
+local AlignOptions = {
+	{ text = L["LEFT"], value = "LEFT" },
+	{ text = L["CENTER"], value = "CENTER" },
+	{ text = L["RIGHT"], value = "RIGHT" },
+}
+
 
 local function QuickSetPoints(frame, columnFrame, neighborFrame, xOffset, yOffset)
 		local TopOffset = frame.Margins.Top + (yOffset or 0)
@@ -183,7 +201,9 @@ local function CreateQuickSlider(name, label, mode, width, ... ) --, neighborFra
 		-- Set Positions
 		QuickSetPoints(frame, ...)
 		-- Set Feedback Function
-		frame.OnValueChanged = function() columnFrame.Callback() end
+		frame.OnValueChanged = function()
+			columnFrame.Callback()
+		end
 		--frame.OnValueChanged = columnFrame.OnFeedback
 		return frame, frame
 	end
@@ -416,10 +436,7 @@ local function CreateQuickSlider(name, label, mode, width, ... ) --, neighborFra
 
 		if not CustomizationPanel then
 			-- Build the actual panel
-			CustomizationPanel = CreateFrame("Frame", "NeatPlatesCustomizationPanel", UIParent, "UIPanelDialogTemplate");
-			if not CustomizationPanel.SetBackdrop then
-				Mixin(CustomizationPanel, BackdropTemplateMixin)
-			end
+			CustomizationPanel = CreateFrame("Frame", "NeatPlatesCustomizationPanel", UIParent, "NeatPlatesUIPanelDialogTemplate");
 			CustomizationPanel:Hide()
 			CustomizationPanel:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background", insets = { left = 2, right = 2, top = 2, bottom = 2 },})
 			CustomizationPanel:SetBackdropColor(0.06, 0.06, 0.06, .7)
@@ -446,24 +463,6 @@ local function CreateQuickSlider(name, label, mode, width, ... ) --, neighborFra
 			local StyleOptions = {
 				{ text = L["Default/Healthbar"], value = "Default"  },
 				{ text = L["Headline/Text-Only"], value = "NameOnly"  },
-			}
-
-		  	local AnchorOptions = {
-				{ text = L["CENTER"], value = "CENTER"  },
-				{ text = L["TOP"], value = "TOP"  },
-				{ text = L["LEFT"], value = "LEFT"  },
-				{ text = L["RIGHT"], value = "RIGHT"  },
-				{ text = L["BOTTOM"], value = "BOTTOM"  },
-				{ text = L["TOPLEFT"], value = "TOPLEFT"  },
-				{ text = L["TOPRIGHT"], value = "TOPRIGHT"  },
-				{ text = L["BOTTOMLEFT"], value = "BOTTOMLEFT"  },
-				{ text = L["BOTTOMRIGHT"], value = "BOTTOMRIGHT"  },
-			}
-
-		  	local AlignOptions = {
-				{ text = L["LEFT"], value = "LEFT" },
-				{ text = L["CENTER"], value = "CENTER" },
-				{ text = L["RIGHT"], value = "RIGHT" },
 			}
 
 			-- Create Options
@@ -667,17 +666,16 @@ local function CreateQuickSlider(name, label, mode, width, ... ) --, neighborFra
 				offset = {
 					x = ScalePanel.OffsetX:GetValue(),
 					y = ScalePanel.OffsetY:GetValue(),
-				}
+				},
+				anchor = ScalePanel.AnchorOptions:GetValue()
 			}
 			parent.Callback()
 		end
 
 		if not ScalePanel then
 			-- Build the actual panel
-			ScalePanel = CreateFrame("Frame", "NeatPlatesScalePanel", UIParent, "UIPanelDialogTemplate");
-			if not ScalePanel.SetBackdrop then
-				Mixin(ScalePanel, BackdropTemplateMixin)
-			end
+			ScalePanel = CreateFrame("Frame", "NeatPlatesScalePanel", UIParent, "NeatPlatesUIPanelDialogTemplate");
+
 			--local panel = CreateFrame( "Frame", "OffsetAndScale_InterfaceOptionsPanel", UIParent);
 
 			--panel.MainFrame = CreateFrame("Frame")
@@ -697,7 +695,7 @@ local function CreateQuickSlider(name, label, mode, width, ... ) --, neighborFra
 			ScalePanel:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background", insets = { left = 2, right = 2, top = 2, bottom = 2 },})
 			ScalePanel:SetBackdropColor(0.06, 0.06, 0.06, .7)
 			ScalePanel:SetWidth(390)
-			ScalePanel:SetHeight(180)
+			ScalePanel:SetHeight(230)
 			ScalePanel:SetPoint("CENTER", UIParent, "CENTER", 0, 0 )
 			ScalePanel:SetFrameStrata("DIALOG")
 
@@ -711,13 +709,17 @@ local function CreateQuickSlider(name, label, mode, width, ... ) --, neighborFra
 				self:StopMovingOrSizing()
 			end)
 
+			-- Create Anchor dropdown
+			ScalePanel.AnchorOptions = PanelHelpers:CreateDropdownFrame("NeatPlatesScalePanel_AnchorOptions", ScalePanel, AnchorOptions, "CENTER", L["Frame Anchor"], true)
+			ScalePanel.AnchorOptions:SetPoint("TOPLEFT", ScalePanel, "TOPLEFT", 0, -54)
+
 		  -- Create SLiders
 			ScalePanel.ScaleX = PanelHelpers:CreateSliderFrame("NeatPlatesScalePanel_ScaleX", ScalePanel, L["Scale X"], 1, .1, 3, .01, nil, 160)
-			ScalePanel.ScaleX:SetPoint("TOPLEFT", ScalePanel, "TOPLEFT", 20, -54)
+			ScalePanel.ScaleX:SetPoint("TOPLEFT", ScalePanel.AnchorOptions, "BOTTOMLEFT", 20, -25)
 			ScalePanel.ScaleY = PanelHelpers:CreateSliderFrame("NeatPlatesScalePanel_ScaleY", ScalePanel, L["Scale Y"], 1, .1, 3, .01, nil, 160)
 			ScalePanel.ScaleY:SetPoint("TOPLEFT", ScalePanel.ScaleX, "TOPLEFT", 0, -45)
 			ScalePanel.OffsetX = PanelHelpers:CreateSliderFrame("NeatPlatesScalePanel_OffsetX", ScalePanel, L["Offset X"], 0, -50, 50, 1, "ACTUAL", 160, true)
-			ScalePanel.OffsetX:SetPoint("TOPRIGHT", ScalePanel, "TOPRIGHT", -20, -54)
+			ScalePanel.OffsetX:SetPoint("TOPRIGHT", ScalePanel, "TOPRIGHT", -20, -110)
 			ScalePanel.OffsetY = PanelHelpers:CreateSliderFrame("NeatPlatesScalePanel_OffsetY", ScalePanel, L["Offset Y"], 0, -50, 50, 1, "ACTUAL", 160, true)
 			ScalePanel.OffsetY:SetPoint("TOPLEFT", ScalePanel.OffsetX, "TOPLEFT", 0, -45)
 
@@ -738,6 +740,7 @@ local function CreateQuickSlider(name, label, mode, width, ... ) --, neighborFra
 		ScalePanel.Title:SetText(label)
 
 		-- Create/Update functions
+		ScalePanel.AnchorOptions.OnValueChanged = onChange
 		ScalePanel.ScaleX.Callback = onChange
 		ScalePanel.ScaleY.Callback = onChange
 		ScalePanel.OffsetX.Callback = onChange
@@ -757,6 +760,7 @@ local function CreateQuickSlider(name, label, mode, width, ... ) --, neighborFra
 		local scale = frame.values
 		--table.foreach(values, print)
 
+		ScalePanel.AnchorOptions:Show()
 		ScalePanel.ScaleX:Show()
 		ScalePanel.ScaleY:Show()
 		ScalePanel.OffsetX:Show()
@@ -765,6 +769,7 @@ local function CreateQuickSlider(name, label, mode, width, ... ) --, neighborFra
 		ScalePanel.OffsetX:SetMinMaxValues((scale.offset.x or 0) - 50, (scale.offset.x) + 50)
 		ScalePanel.OffsetY:SetMinMaxValues((scale.offset.y or 0) - 50, (scale.offset.y) + 50)
 
+		ScalePanel.AnchorOptions:SetValue(scale.anchor or "TOP") -- This should generally use the value from 'defaults.lua'
 		ScalePanel.ScaleX:SetValue(scale.x or 1)
 		ScalePanel.ScaleY:SetValue(scale.y or 1)
 		ScalePanel.OffsetX:SetValue(scale.offset.x or 0)
@@ -777,6 +782,16 @@ local function CreateQuickSlider(name, label, mode, width, ... ) --, neighborFra
 
 
 		if options and (options.noScale or options.noPos) then ScalePanel:SetWidth(200) else ScalePanel:SetWidth(390) end
+		if options and options.noAnchor then
+			ScalePanel:SetHeight(180)
+			ScalePanel.AnchorOptions:SetPoint("TOPLEFT", ScalePanel, "TOPLEFT", 0, 0)
+			ScalePanel.OffsetX:SetPoint("TOPRIGHT", ScalePanel, "TOPRIGHT", -20, -54)
+			ScalePanel.AnchorOptions:Hide()
+		else
+			ScalePanel:SetHeight(230)
+			ScalePanel.AnchorOptions:SetPoint("TOPLEFT", ScalePanel, "TOPLEFT", 0, -54)
+			ScalePanel.OffsetX:SetPoint("TOPRIGHT", ScalePanel, "TOPRIGHT", -20, -110)
+		end
 		if options and options.noScale then
 			ScalePanel.ScaleX:Hide()
 			ScalePanel.ScaleY:Hide()
@@ -826,10 +841,7 @@ local function CreateQuickSlider(name, label, mode, width, ... ) --, neighborFra
 	local function CreateQuickEditboxPopup(label, onOkay, highlight)
 		if not EditboxPopup then
 			-- Build the actual panel
-			panel = CreateFrame("Frame", "NeatPlatesEditboxPopup", UIParent, "UIPanelDialogTemplate");
-			if not panel.SetBackdrop then
-				Mixin(panel, BackdropTemplateMixin)
-			end
+			panel = CreateFrame("Frame", "NeatPlatesEditboxPopup", UIParent, "NeatPlatesUIPanelDialogTemplate");
 			panel:Hide()
 		  panel:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background", insets = { left = 2, right = 2, top = 2, bottom = 2 },})
 		  panel:SetBackdropColor(0.06, 0.06, 0.06, .7)
@@ -1027,7 +1039,7 @@ local function CreateInterfacePanel( objectName, panelTitle, parentFrameName)
 
 	-- Panel
 	------------------------------
-	local panel = CreateFrame( "Frame", objectName.."_InterfaceOptionsPanel", UIParent, BackdropTemplateMixin and "BackdropTemplate");
+	local panel = CreateFrame( "Frame", objectName.."_InterfaceOptionsPanel", UIParent, NeatPlatesBackdrop);
 	panel.objectName = objectName
 	panel:SetBackdrop({	bgFile = "Interface/Tooltips/UI-Tooltip-Background", --bgFile = "Interface/FrameGeneral/UI-Background-Marble",
 						edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
@@ -1052,7 +1064,7 @@ local function CreateInterfacePanel( objectName, panelTitle, parentFrameName)
 
         -- Warnings
         ------------------------------
-	panel.WarningFrame = CreateFrame("Frame", objectName.."WarningFrame", panel, BackdropTemplateMixin and "BackdropTemplate")
+	panel.WarningFrame = CreateFrame("Frame", objectName.."WarningFrame", panel, NeatPlatesBackdrop)
 	panel.WarningFrame:SetPoint("LEFT", 16, 0 )
 	panel.WarningFrame:SetPoint("TOP", panel.MainLabel, "BOTTOM", 0, -8 )
         panel.WarningFrame:SetPoint("RIGHT", -16 , 16 )
@@ -1093,7 +1105,7 @@ local function CreateInterfacePanel( objectName, panelTitle, parentFrameName)
 
 	-- Scroll Frame Border
 	------------------------------
-	panel.ScrollFrameBorder = CreateFrame("Frame", objectName.."ScrollFrameBorder", panel.ScrollFrame, BackdropTemplateMixin and "BackdropTemplate")
+	panel.ScrollFrameBorder = CreateFrame("Frame", objectName.."ScrollFrameBorder", panel.ScrollFrame, NeatPlatesBackdrop)
 	panel.ScrollFrameBorder:SetPoint("TOPLEFT", -4, 5)
 	panel.ScrollFrameBorder:SetPoint("BOTTOMRIGHT", 3, -5)
 	panel.ScrollFrameBorder:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background",

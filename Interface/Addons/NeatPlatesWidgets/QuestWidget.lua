@@ -4,27 +4,20 @@
 local GetUnitQuestInfo = NeatPlatesUtility.GetUnitQuestInfo
 local art = "Interface\\Addons\\NeatPlatesWidgets\\QuestWidget\\QuestIndicator"
 
-local function UpdateQuestWidget(self, unit)	
+local function UpdateQuestWidget(self, unit)
 	if unit and unit.type == "NPC" then
 		local isDungeon = IsInInstance()
 		local questList = GetUnitQuestInfo(unit)
 		local showIcon = false
 
-		for i=1, #questList do
-			local questName, questObjective = unpack(questList[i])
-			local questProgress, questTotal
-
-			if questObjective then
-				questProgress, questTotal = string.match(questObjective, "([0-9]+)\/([0-9]+)")
-				questProgress = tonumber(questProgress)
-				questTotal = tonumber(questTotal)
+		for questName, questObjectives in pairs(questList) do
+			for questObjective, questCompleted in pairs(questObjectives) do
+				if (not isDungeon and not questCompleted) then
+					showIcon = true
+				end
 			end
+		end
 
-			if (not isDungeon and ((questName and not (questProgress and questTotal)) or (questProgress and questTotal and questProgress < questTotal))) then
-				showIcon = true
-			end
-		end	
-		
 		if showIcon then
 			self.Icon:SetTexture(art)
 			self:Show()
@@ -33,6 +26,7 @@ local function UpdateQuestWidget(self, unit)
 		end
 	end
 end
+-- table.foreach(NeatPlatesUtility.GetUnitQuestInfo({["unitid"] = "target"}), function(name, objectives) print("Name:", name); table.foreach(objectives, print) end)
 
 local function UpdateQuestWidgetContext(self, unit, extended)
 	local config = NeatPlates:GetTheme().WidgetConfig
@@ -40,6 +34,7 @@ local function UpdateQuestWidgetContext(self, unit, extended)
 	if unit.style == "Default" or not config.QuestWidgetNameOnly then config = config.QuestWidget else config = config.QuestWidgetNameOnly end
 	self:ClearAllPoints()
 	self:SetPoint(config.anchor or "TOP", extended, config.anchorRel or config.anchor or "TOP", config.x or 0, config.y or 0)
+	UpdateQuestWidget(self, unit)
 end
 
 local function CreateQuestWidget(parent)
@@ -54,6 +49,23 @@ local function CreateQuestWidget(parent)
 	return frame
 end
 
+local function DebugQuests()
+	local plate = C_NamePlate.GetNamePlateForUnit("target")
+	local questList = GetUnitQuestInfo(plate.extended.unit)
+
+	if next(questList) == nil then
+		print("No active quests on target")
+	else
+		for questName, questObjectives in pairs(questList) do
+			print('--'..questName..'--')
+			for questObjective, questCompleted in pairs(questObjectives) do
+				local prefix = "In progress - "
+				if questCompleted then prefix = "Completed - " end
+				print(prefix..questObjective)
+			end
+		end
+	end
+end
+
 NeatPlatesWidgets.CreateQuestWidget = CreateQuestWidget
-
-
+NeatPlatesWidgets.DebugQuests = DebugQuests

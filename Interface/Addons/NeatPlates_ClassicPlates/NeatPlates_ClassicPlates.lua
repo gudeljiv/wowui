@@ -384,9 +384,7 @@ WidgetConfig.QuestWidget = { anchor = "LEFT" , x = 4,y = 4 }
 WidgetConfig.QuestWidgetNameOnly = { anchor = "LEFT" , x = 2,y = 16 }
 WidgetConfig.ThreatPercentageWidget = { anchor = "RIGHT" , x = 8,y = -6 }
 WidgetConfig.RangeWidget = { anchor = "CENTER", x=10, y=-3, w = 104, h = 9}
---if (UnitClassBase("player") == "Druid") or (UnitClassBase("player") == "Rogue") then
-	--WidgetConfig.DebuffWidgetPlus = { anchor = "CENTER" , x = 15 ,y = VerticalAdjustment + 24 }
---end
+WidgetConfig.ArenaWidget = { anchor = "LEFT" , x = -5, y = 4 }
 
 WidgetConfig._meta = true		-- tells the parser to ignore this table; ie. don't convert to "style" template
 Theme.WidgetConfig = WidgetConfig

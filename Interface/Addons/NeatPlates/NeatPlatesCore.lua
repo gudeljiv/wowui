@@ -7,12 +7,14 @@ local addonName, NeatPlatesInternal = ...
 local L = LibStub("AceLocale-3.0"):GetLocale("NeatPlates")
 local NeatPlatesCore = CreateFrame("Frame", nil, WorldFrame)
 local NeatPlatesTarget
-local FrequentHealthUpdate = true
 local GetPetOwner = NeatPlatesUtility.GetPetOwner
 local ParseGUID = NeatPlatesUtility.ParseGUID
-local Debug = {}
 NeatPlates = {}
 NeatPlatesSpellDB = {}
+
+if NEATPLATES_IS_CLASSIC then
+	UnitEffectiveLevel = UnitLevel
+end
 
 -- Local References
 local _
@@ -28,32 +30,33 @@ local SetNamePlateEnemySize = C_NamePlate.SetNamePlateEnemySize
 local RaidClassColors = CUSTOM_CLASS_COLORS or RAID_CLASS_COLORS
 
 -- Internal Data
-local Plates, PlatesVisible, PlatesFading, GUID = {}, {}, {}, {}	            -- Plate Lists
+local Plates, PlatesVisible, PlatesFading, GUID = {}, {}, {}, {}	         	-- Plate Lists
 local PlatesByUnit = {}
 local PlatesByGUID = {}
-local nameplate, extended, bars, regions, visual, carrier			    						-- Temp/Local References
-local unit, unitcache, style, stylename, unitchanged, threatborder				    -- Temp/Local References
-local numChildren = -1                                                        -- Cache the current number of plates
-local activetheme = {}                                                        -- Table Placeholder
-local InCombat, HasTarget, HasMouseover = false, false, false					    		-- Player State Data
+local nameplate, extended, bars, regions, visual, carrier			    					-- Temp/Local References
+local unit, unitcache, style, stylename, unitchanged, threatborder				  -- Temp/Local References
+local numChildren = -1                                                     	-- Cache the current number of plates
+local activetheme = {}                                                    	-- Table Placeholder
+local InCombat, HasTarget, HasMouseover = false, false, false					   		-- Player State Data
 local EnableFadeIn = true
 local ShowCastBars = true
+local ShowCastSpellName = true
 local ShowIntCast = true
 local ShowIntWhoCast = true
-local ColorCastBars = true
-local ShowServerIndicator = false
-local ShowUnitTitle = true
 local ShowEnemyPowerBar = false
 local ShowFriendlyPowerBar = false
 local ShowSpellTarget = false
 local ThreatSoloEnable = true
 local ReplaceUnitNameArenaID = false
+local ForceDefaultNameplates = {}
 local EMPTY_TEXTURE = "Interface\\Addons\\NeatPlates\\Media\\Empty"
-local ResetPlates, UpdateAll = false, false
+local ResetPlates, UpdateAll, UpdateAllHealth = false, false, false
 local OverrideFonts = false
 local OverrideOutline = 1
-local SpellCastCache = {}
-local CTICache = {}
+local HealthTicker = nil
+local SpellSchoolByGUID = {}
+local SpellCastCache = {} -- Classic era
+local CTICache = {} -- Classic era
 -- local NameplateOccludedAlphaMult = tonumber(GetCVar("nameplateOccludedAlphaMult"))
 
 -- Raid Icon Reference
@@ -68,111 +71,115 @@ local RaidIconCoordinate = {
 		["SKULL"] = { x = .75, y = 0.25},
 }
 
--- Special case spells
-local spellBlacklist = {
-	[GetSpellInfo(75)] = true, 				-- Auto Shot
-	[GetSpellInfo(5019)] = true, 			-- Shoot
-	[GetSpellInfo(2480)] = true, 			-- Shoot Bow
-	[GetSpellInfo(7918)] = true, 			-- Shoot Gun
-	[GetSpellInfo(7919)] = true, 			-- Shoot Crossbow
-	[GetSpellInfo(2764)] = true, 			-- Throw
-}
+local spellBlacklist, spellCCList, spellCTI
 
-local spellCCList = {
-	[GetSpellInfo(118)] = true,				-- Polymorph
-	[GetSpellInfo(408)] = true,				-- Kidney Shot
-	[GetSpellInfo(605)] = true,				-- Mind Control
-	[GetSpellInfo(853)] = true,				-- Hammer of Justice
-	[GetSpellInfo(1090)] = true,			-- Sleep
-	[GetSpellInfo(1513)] = true,			-- Scare Beast
-	[GetSpellInfo(1776)] = true,			-- Gouge
-	[GetSpellInfo(1833)] = true,			-- Cheap Shot
-	[GetSpellInfo(2094)] = true,			-- Blind
-	[GetSpellInfo(2637)] = true,			-- Hibernate
-	[GetSpellInfo(3355)] = true,			-- Freezing Trap
-	[GetSpellInfo(5211)] = true,			-- Bash
-	[GetSpellInfo(5246)] = true,			-- Intimidating Shout
-	[GetSpellInfo(5484)] = true,			-- Howl of Terror
-	[GetSpellInfo(5530)] = true,			-- Mace Stun
-	[GetSpellInfo(5782)] = true,			-- Fear
-	[GetSpellInfo(6358)] = true,			-- Seduction
-	[GetSpellInfo(6770)] = true,			-- Sap
-	[GetSpellInfo(6789)] = true,			-- Death Coil
-	[GetSpellInfo(7922)] = true,			-- Charge Stun
-	[GetSpellInfo(8122)] = true,			-- Psychic Scream
-	[GetSpellInfo(9005)] = true,			-- Pounce
-	[GetSpellInfo(12355)] = true,			-- Impact
-	[GetSpellInfo(12798)] = true,			-- Revenge Stun
-	[GetSpellInfo(12809)] = true,			-- Concussion Blow
-	[GetSpellInfo(15269)] = true,			-- Blackout
-	[GetSpellInfo(15487)] = true,			-- Silence
-	[GetSpellInfo(16922)] = true,			-- Improved Starfire
-	[GetSpellInfo(18093)] = true,			-- Pyroclasm
-	[GetSpellInfo(18425)] = true,			-- Kick - Silenced
-	[GetSpellInfo(18469)] = true,			-- Counterspell - Silenced
-	[GetSpellInfo(18498)] = true,			-- Shield Bash - Silenced
-	[GetSpellInfo(19386)] = true,			-- Wyvern Sting
-	[GetSpellInfo(19410)] = true,			-- Improved Concussive Shot
-	[GetSpellInfo(19503)] = true,			-- Scatter Shot
-	[GetSpellInfo(20066)] = true,			-- Repentance
-	[GetSpellInfo(20170)] = true,			-- Seal of Justice Stun
-	[GetSpellInfo(20253)] = true,			-- Intercept Stun
-	[GetSpellInfo(20549)] = true,			-- War Stomp
-	[GetSpellInfo(22703)] = true,			-- Inferno Effect (Summon Infernal)
-	[GetSpellInfo(24259)] = true,			-- Spell Lock
-	[GetSpellInfo(24394)] = true,			-- Intimidation
-	[GetSpellInfo(28271)] = true,			-- Polymorph: Turtle
-	[GetSpellInfo(28272)] = true,			-- Polymorph: Pig
+if NEATPLATES_IS_CLASSIC_ERA then
+	-- Special case spells
+	spellBlacklist = {
+		[GetSpellInfo(75)] = true, 				-- Auto Shot
+		[GetSpellInfo(5019)] = true, 			-- Shoot
+		[GetSpellInfo(2480)] = true, 			-- Shoot Bow
+		[GetSpellInfo(7918)] = true, 			-- Shoot Gun
+		[GetSpellInfo(7919)] = true, 			-- Shoot Crossbow
+		[GetSpellInfo(2764)] = true, 			-- Throw
+	}
 
-	-- Items, Talents etc.
-	[GetSpellInfo(56)] = true,				-- Stun (Weapon Proc)
-	[GetSpellInfo(835)] = true,				-- Tidal Charm
-	[GetSpellInfo(4064)] = true,			-- Rough Copper Bomb
-	[GetSpellInfo(4065)] = true,			-- Large Copper Bomb
-	[GetSpellInfo(4066)] = true,			-- Small Bronze Bomb
-	[GetSpellInfo(4067)] = true,			-- Big Bronze Bomb
-	[GetSpellInfo(4068)] = true,			-- Iron Grenade
-	[GetSpellInfo(4069)] = true,			-- Big Iron Bomb
-	[GetSpellInfo(5134)] = true,			-- Flash Bomb Fear
-	[GetSpellInfo(12421)] = true,			-- Mithril Frag Bomb
-	[GetSpellInfo(12543)] = true,			-- Hi-Explosive Bomb
-	[GetSpellInfo(12562)] = true,			-- The Big One
-	[GetSpellInfo(13181)] = true,			-- Gnomish Mind Control Cap
-	[GetSpellInfo(13237)] = true,			-- Goblin Mortar
-	[GetSpellInfo(13327)] = true,			-- Reckless Charge
-	[GetSpellInfo(13808)] = true,			-- M73 Frag Grenade
-	[GetSpellInfo(15283)] = true,			-- Stunning Blow (Weapon Proc)
-	[GetSpellInfo(19769)] = true,			-- Thorium Grenade
-	[GetSpellInfo(19784)] = true,			-- Dark Iron Bomb
-	[GetSpellInfo(19821)] = true,			-- Arcane Bomb Silence
-	[GetSpellInfo(26108)] = true,			-- Glimpse of Madness
-}
+	spellCCList = {
+		[GetSpellInfo(118)] = true,				-- Polymorph
+		[GetSpellInfo(408)] = true,				-- Kidney Shot
+		[GetSpellInfo(605)] = true,				-- Mind Control
+		[GetSpellInfo(853)] = true,				-- Hammer of Justice
+		[GetSpellInfo(1090)] = true,			-- Sleep
+		[GetSpellInfo(1513)] = true,			-- Scare Beast
+		[GetSpellInfo(1776)] = true,			-- Gouge
+		[GetSpellInfo(1833)] = true,			-- Cheap Shot
+		[GetSpellInfo(2094)] = true,			-- Blind
+		[GetSpellInfo(2637)] = true,			-- Hibernate
+		[GetSpellInfo(3355)] = true,			-- Freezing Trap
+		[GetSpellInfo(5211)] = true,			-- Bash
+		[GetSpellInfo(5246)] = true,			-- Intimidating Shout
+		[GetSpellInfo(5484)] = true,			-- Howl of Terror
+		[GetSpellInfo(5530)] = true,			-- Mace Stun
+		[GetSpellInfo(5782)] = true,			-- Fear
+		[GetSpellInfo(6358)] = true,			-- Seduction
+		[GetSpellInfo(6770)] = true,			-- Sap
+		[GetSpellInfo(6789)] = true,			-- Death Coil
+		[GetSpellInfo(7922)] = true,			-- Charge Stun
+		[GetSpellInfo(8122)] = true,			-- Psychic Scream
+		[GetSpellInfo(9005)] = true,			-- Pounce
+		[GetSpellInfo(12355)] = true,			-- Impact
+		[GetSpellInfo(12798)] = true,			-- Revenge Stun
+		[GetSpellInfo(12809)] = true,			-- Concussion Blow
+		[GetSpellInfo(15269)] = true,			-- Blackout
+		[GetSpellInfo(15487)] = true,			-- Silence
+		[GetSpellInfo(16922)] = true,			-- Improved Starfire
+		[GetSpellInfo(18093)] = true,			-- Pyroclasm
+		[GetSpellInfo(18425)] = true,			-- Kick - Silenced
+		[GetSpellInfo(18469)] = true,			-- Counterspell - Silenced
+		[GetSpellInfo(18498)] = true,			-- Shield Bash - Silenced
+		[GetSpellInfo(19386)] = true,			-- Wyvern Sting
+		[GetSpellInfo(19410)] = true,			-- Improved Concussive Shot
+		[GetSpellInfo(19503)] = true,			-- Scatter Shot
+		[GetSpellInfo(20066)] = true,			-- Repentance
+		[GetSpellInfo(20170)] = true,			-- Seal of Justice Stun
+		[GetSpellInfo(20253)] = true,			-- Intercept Stun
+		[GetSpellInfo(20549)] = true,			-- War Stomp
+		[GetSpellInfo(22703)] = true,			-- Inferno Effect (Summon Infernal)
+		[GetSpellInfo(24259)] = true,			-- Spell Lock
+		[GetSpellInfo(24394)] = true,			-- Intimidation
+		[GetSpellInfo(28271)] = true,			-- Polymorph: Turtle
+		[GetSpellInfo(28272)] = true,			-- Polymorph: Pig
 
-local spellCTI = {
-	[GetSpellInfo(1714)] = 1.6,				-- Curse of Tongues
-	[GetSpellInfo(1098)] = 1.3,				-- Enslave Demon
-	[GetSpellInfo(5760)] = 1.6,				-- Mind-Numbing Poison
-	[GetSpellInfo(17331)] = 1.1,			-- Fang of the Crystal Spider
+		-- Items, Talents etc.
+		[GetSpellInfo(56)] = true,				-- Stun (Weapon Proc)
+		[GetSpellInfo(835)] = true,				-- Tidal Charm
+		[GetSpellInfo(4064)] = true,			-- Rough Copper Bomb
+		[GetSpellInfo(4065)] = true,			-- Large Copper Bomb
+		[GetSpellInfo(4066)] = true,			-- Small Bronze Bomb
+		[GetSpellInfo(4067)] = true,			-- Big Bronze Bomb
+		[GetSpellInfo(4068)] = true,			-- Iron Grenade
+		[GetSpellInfo(4069)] = true,			-- Big Iron Bomb
+		[GetSpellInfo(5134)] = true,			-- Flash Bomb Fear
+		[GetSpellInfo(12421)] = true,			-- Mithril Frag Bomb
+		[GetSpellInfo(12543)] = true,			-- Hi-Explosive Bomb
+		[GetSpellInfo(12562)] = true,			-- The Big One
+		[GetSpellInfo(13181)] = true,			-- Gnomish Mind Control Cap
+		[GetSpellInfo(13237)] = true,			-- Goblin Mortar
+		[GetSpellInfo(13327)] = true,			-- Reckless Charge
+		[GetSpellInfo(13808)] = true,			-- M73 Frag Grenade
+		[GetSpellInfo(15283)] = true,			-- Stunning Blow (Weapon Proc)
+		[GetSpellInfo(19769)] = true,			-- Thorium Grenade
+		[GetSpellInfo(19784)] = true,			-- Dark Iron Bomb
+		[GetSpellInfo(19821)] = true,			-- Arcane Bomb Silence
+		[GetSpellInfo(26108)] = true,			-- Glimpse of Madness
+	}
 
-	-- NPC Abilities
-	[GetSpellInfo(3603)] = 1.35,			-- Distracting Pain
-	[GetSpellInfo(7102)] = 1.25,			-- Contagion of Rot
-	[GetSpellInfo(7127)] = 1.2,				-- Wavering Will
-	[GetSpellInfo(8140)] = 1.5,				-- Befuddlement
-	[GetSpellInfo(8272)] = 1.2,				-- Mind Tremor
-	[GetSpellInfo(10651)] = 1.2,			-- Curse of the Eye
-	[GetSpellInfo(12255)] = 1.15,			-- Curse of Tuten'kash
-	[GetSpellInfo(19365)] = 1.5,			-- Ancient Dread
-	[GetSpellInfo(22247)] = 1.8,			-- Suppression Aura
-	[GetSpellInfo(22642)] = 1.5,			-- Brood Power: Bronze
-	[GetSpellInfo(22909)] = 1.5,			-- Eye of Immol'thar
-	[GetSpellInfo(23153)] = 1.5,			-- Brood Power: Blue
-	[GetSpellInfo(28732)] = 1.25,			-- Widow's Embrace
+	spellCTI = {
+		[GetSpellInfo(1714)] = 1.6,				-- Curse of Tongues
+		[GetSpellInfo(1098)] = 1.3,				-- Enslave Demon
+		[GetSpellInfo(5760)] = 1.6,				-- Mind-Numbing Poison
+		[GetSpellInfo(17331)] = 1.1,			-- Fang of the Crystal Spider
 
-	-- Uncategorized (Not sure if they are used)
-	[GetSpellInfo(14538)] = 1.35,			-- Aural Shock
-	--[GetSpellInfo(24415)] = 1.5,   	-- Slow
-}
+		-- NPC Abilities
+		[GetSpellInfo(3603)] = 1.35,			-- Distracting Pain
+		[GetSpellInfo(7102)] = 1.25,			-- Contagion of Rot
+		[GetSpellInfo(7127)] = 1.2,				-- Wavering Will
+		[GetSpellInfo(8140)] = 1.5,				-- Befuddlement
+		[GetSpellInfo(8272)] = 1.2,				-- Mind Tremor
+		[GetSpellInfo(10651)] = 1.2,			-- Curse of the Eye
+		[GetSpellInfo(12255)] = 1.15,			-- Curse of Tuten'kash
+		[GetSpellInfo(19365)] = 1.5,			-- Ancient Dread
+		[GetSpellInfo(22247)] = 1.8,			-- Suppression Aura
+		[GetSpellInfo(22642)] = 1.5,			-- Brood Power: Bronze
+		[GetSpellInfo(22909)] = 1.5,			-- Eye of Immol'thar
+		[GetSpellInfo(23153)] = 1.5,			-- Brood Power: Blue
+		[GetSpellInfo(28732)] = 1.25,			-- Widow's Embrace
+
+		-- Uncategorized (Not sure if they are used)
+		[GetSpellInfo(14538)] = 1.35,			-- Aural Shock
+		--[GetSpellInfo(24415)] = 1.5,   	-- Slow
+	}
+end
 
 ---------------------------------------------------------------------------------------------------------------------
 -- Core Function Declaration
@@ -184,6 +191,7 @@ local function IsPlateShown(plate) return plate and plate:IsShown() end
 -- Queueing
 local function SetUpdateMe(plate) plate.UpdateMe = true end
 local function SetUpdateAll() UpdateAll = true end
+local function SetUpdateAllHealth() UpdateAllHealth = true end
 local function SetUpdateHealth(source) source.parentPlate.UpdateHealth = true end
 
 -- Overriding
@@ -241,32 +249,59 @@ end
 
 -- UpdateNameplateSize
 local function UpdateNameplateSize(plate, show, cWidth, cHeight)
-	local scaleStandard = activetheme.SetScale()
-	local clickableWidth, clickableHeight = NeatPlatesPanel.GetClickableArea()
-	local hitbox = {
-		width = activetheme.Default.hitbox.width * (cWidth or clickableWidth),
-		height = activetheme.Default.hitbox.height * (cHeight or clickableHeight),
-		x = (activetheme.Default.hitbox.x*-1) * scaleStandard,
-		y = (activetheme.Default.hitbox.y*-1) * scaleStandard,
-	}
+	-- Needs return and timer or size will be set incorrectly on startup, no idea why...
+	if not plate then return end
 
-	if not InCombatLockdown() then
-		if IsInInstance() then
-			local zeroBasedScale = tonumber(GetCVar("NamePlateVerticalScale")) - 1.0;
-			local horizontalScale = tonumber(GetCVar("NamePlateHorizontalScale"));
-			SetNamePlateFriendlySize(128 * horizontalScale, 45 * Lerp(1.0, 1.25, zeroBasedScale))  -- Reset to blizzard nameplate default to avoid issues if we are not allowed to modify the nameplate
-		else SetNamePlateFriendlySize(hitbox.width * scaleStandard, hitbox.height * scaleStandard) end -- Clickable area of the nameplate
-		SetNamePlateEnemySize(hitbox.width * scaleStandard, hitbox.height * scaleStandard) -- Clickable area of the nameplate
+	C_Timer.NewTimer(0.1, function()
+		local scaleStandard = activetheme.SetScale()
+		local clickableWidth, clickableHeight = NeatPlatesPanel.GetClickableArea()
+		local hitbox = {
+			width = activetheme.Default.hitbox.width * (cWidth or clickableWidth),
+			height = activetheme.Default.hitbox.height * (cHeight or clickableHeight),
+			x = (activetheme.Default.hitbox.x*-1) * scaleStandard,
+			y = (activetheme.Default.hitbox.y*-1) * scaleStandard,
+		}
+
+		if not InCombatLockdown() then
+			if IsInInstance() or DisplayingBlizzardPlate(plate) then
+				-- Reset to blizzard nameplate default to avoid issues while diplaying default blizzard nameplate
+				-- NOTE: This means the 'Force Default Nameplates' option will still have this issue in some cases, but it's a much better than currently
+				local zeroBasedScale = tonumber(GetCVar("NamePlateVerticalScale")) - 1.0;
+				local horizontalScale = tonumber(GetCVar("NamePlateHorizontalScale"));
+				if NEATPLATES_IS_CLASSIC then
+					SetNamePlateFriendlySize(128 * horizontalScale, 45 * Lerp(1.0, 1.25, zeroBasedScale))
+				else
+					SetNamePlateFriendlySize(145 * horizontalScale, 45 * Lerp(1.0, 1.25, zeroBasedScale))
+				end
+			else SetNamePlateFriendlySize(hitbox.width * scaleStandard, hitbox.height * scaleStandard) end -- Clickable area of the nameplate
+			SetNamePlateEnemySize(hitbox.width * scaleStandard, hitbox.height * scaleStandard) -- Clickable area of the nameplate
+		end
+
+		if plate then
+			plate.carrier:SetPoint("CENTER", plate, "CENTER", hitbox.x, hitbox.y)	-- Offset
+			plate.extended.visual.hitbox:SetPoint("CENTER", plate)
+			plate.extended.visual.hitbox:SetWidth(hitbox.width)
+			plate.extended.visual.hitbox:SetHeight(hitbox.height)
+
+			if show then plate.extended.visual.hitbox:Show() else plate.extended.visual.hitbox:Hide() end
+		end
+
+	end)
+end
+
+-- Check if the nameplate should be displayed as a blizzard plate or not
+function DisplayingBlizzardPlate(plate)
+	if plate.UnitFrame then
+		local unit = plate.extended.unit
+		local useDefault = ForceDefaultNameplates[unit.reaction]
+		if useDefault ~= nil then	useDefault = useDefault[unit.type] end
+
+		if plate.showBlizzardPlate or useDefault then
+			return true
+		end
 	end
 
-	if plate then
-		plate.carrier:SetPoint("CENTER", plate, "CENTER", hitbox.x, hitbox.y)	-- Offset
-		plate.extended.visual.hitbox:SetPoint("CENTER", plate)
-		plate.extended.visual.hitbox:SetWidth(hitbox.width)
-		plate.extended.visual.hitbox:SetHeight(hitbox.height)
-
-		if show then plate.extended.visual.hitbox:Show() else plate.extended.visual.hitbox:Hide() end
-	end
+	return false
 end
 
 -- UpdateReferences
@@ -301,11 +336,11 @@ do
 	end
 
 	function ShouldShowBlizzardPlate(plate)
-		if plate.UnitFrame then
-			if plate.showBlizzardPlate then
-				plate.UnitFrame:Show()
-				plate.extended:Hide()
-			else plate.UnitFrame:Hide() end
+		if DisplayingBlizzardPlate(plate) then
+			plate.UnitFrame:Show()
+			plate.extended:Hide()
+		else
+			plate.UnitFrame:Hide()
 		end
 	end
 
@@ -314,7 +349,7 @@ do
 		-- Poll Loop
 		local plate, curChildren
 
-        -- Detect when cursor leaves the mouseover unit
+    -- Detect when cursor leaves the mouseover unit
 		if HasMouseover and not UnitExists("mouseover") then
 			HasMouseover = false
 			SetUpdateAll()
@@ -322,7 +357,7 @@ do
 
 		for plate, unitid in pairs(PlatesVisible) do
 			local UpdateMe = UpdateAll or plate.UpdateMe
-			local UpdateHealth = plate.UpdateHealth
+			local UpdateHealth = plate.UpdateHealth or UpdateAllHealth
 			local carrier = plate.carrier
 			local extended = plate.extended
 
@@ -342,13 +377,15 @@ do
 				plate.UpdateMe = false
 				plate.UpdateHealth = false
 
-				if plate.UpdateCastbar then -- Check if spell is being cast
-					if unit and unit.unitid then
-						local unitGUID = UnitGUID(unit.unitid)
-						if unitGUID and SpellCastCache[unitGUID] and not SpellCastCache[unitGUID].finished then OnStartCasting(plate, unitGUID, false)
-						else OnStopCasting(plate) end
+				if NEATPLATES_IS_CLASSIC_ERA then
+					if plate.UpdateCastbar then -- Check if spell is being cast
+						if unit and unit.unitid then
+							local unitGUID = UnitGUID(unit.unitid)
+							if unitGUID and SpellCastCache[unitGUID] and not SpellCastCache[unitGUID].finished then OnStartCasting(plate, unitGUID, false)
+							else OnStopCasting(plate) end
+						end
+						plate.UpdateCastbar = false
 					end
-					plate.UpdateCastbar = false
 				end
 			elseif unitid and not plate:IsVisible() then
 				OnHideNameplate(plate, unitid)  -- If the 'NAME_PLATE_UNIT_REMOVED' event didn't trigger
@@ -364,7 +401,10 @@ do
 
 		-- Reset Mass-Update Flag
 		UpdateAll = false
+		UpdateAllHealth = false
 	end
+
+
 end
 
 ---------------------------------------------------------------------------------------------------------------------
@@ -394,6 +434,7 @@ do
 		-- Status Bars
 		local healthbar = CreateNeatPlatesStatusbar(extended)
 		local powerbar = CreateNeatPlatesStatusbar(extended)
+		local extrabar = CreateNeatPlatesStatusbar(extended)	-- Currently used for Bodyguard XP in Nazjatar
 		local castbar = CreateNeatPlatesStatusbar(extended)
 		local textFrame = CreateFrame("Frame", nil, healthbar)
 		local widgetParent = CreateFrame("Frame", nil, textFrame)
@@ -403,10 +444,12 @@ do
 		extended.widgetParent = widgetParent
 		visual.healthbar = healthbar
 		visual.powerbar = powerbar
+		visual.extrabar = extrabar
 		visual.castbar = castbar
 		-- Is this still even needed?
 		bars.healthbar = healthbar		-- For Threat Plates Compatibility
 		bars.powerbar = powerbar		-- For Threat Plates Compatibility
+		bars.extrabar = extrabar			-- For Threat Plates Compatibility
 		bars.castbar = castbar			-- For Threat Plates Compatibility
 		-- Parented to Health Bar - Lower Frame
 		visual.healthborder = healthbar:CreateTexture(nil, "ARTWORK")
@@ -425,6 +468,9 @@ do
 		visual.name  = textFrame:CreateFontString(nil, "OVERLAY")
 		visual.subtext = textFrame:CreateFontString(nil, "OVERLAY")
 		visual.level = textFrame:CreateFontString(nil, "OVERLAY")
+		-- Extra Bar Frame
+		visual.extraborder = extrabar:CreateTexture(nil, "ARTWORK")
+		visual.extratext = extrabar:CreateFontString(nil, "OVERLAY")
 		-- Cast Bar Frame - Highest Frame
 		visual.castborder = castbar:CreateTexture(nil, "ARTWORK")
 		visual.castnostop = castbar:CreateTexture(nil, "ARTWORK")
@@ -443,6 +489,7 @@ do
 		extended:SetFrameStrata("BACKGROUND")
 		healthbar:SetFrameStrata("BACKGROUND")
 		powerbar:SetFrameStrata("BACKGROUND")
+		extrabar:SetFrameStrata("BACKGROUND")
 		castbar:SetFrameStrata("BACKGROUND")
 		textFrame:SetFrameStrata("BACKGROUND")
 		widgetParent:SetFrameStrata("BACKGROUND")
@@ -455,6 +502,9 @@ do
 		extended.defaultLevel = topFrameLevel
 		extended:SetFrameLevel(topFrameLevel)
 
+		extrabar:Hide()
+		extrabar:SetStatusBarColor(1,.6,0)
+
 		castbar:Hide()
 		castbar:SetStatusBarColor(1,.8,0)
 		carrier:SetSize(16, 16)
@@ -463,6 +513,7 @@ do
 		visual.name:SetFontObject("NeatPlatesFontNormal")
 		visual.subtext:SetFontObject("NeatPlatesFontSmall")
 		visual.level:SetFontObject("NeatPlatesFontSmall")
+		visual.extratext:SetFontObject("NeatPlatesFontSmall")
 		visual.spelltext:SetFontObject("NeatPlatesFontNormal")
 		visual.spelltarget:SetFontObject("NeatPlatesFontNormal")
 		visual.durationtext:SetFontObject("NeatPlatesFontNormal")
@@ -522,23 +573,27 @@ do
 	end
 
 	-- ProcessUnitChanges
-	local function ProcessUnitChanges()
+	local function ProcessUnitChanges(unitchanged)
 			-- Unit Cache: Determine if data has changed
-			unitchanged = false
+			unitchanged = unitchanged or false
 
 			for key, value in pairs(unit) do
+				if unitchanged then break end
 				if unitcache[key] ~= value then
 					unitchanged = true
 				end
 			end
 
 			-- Update Style/Indicators
-			if unitchanged or UpdateAll or (not style)then --
+			if unitchanged or UpdateAll or (not style) then
 				CheckNameplateStyle()
 				UpdateIndicator_Standard()
 				UpdateIndicator_HealthBar()
 				UpdateIndicator_PowerBar()
 				UpdateIndicator_Highlight()
+				if not NEATPLATES_IS_CLASSIC then
+					UpdateIndicator_ExtraBar()
+				end
 			end
 
 			-- Update Widgets
@@ -606,6 +661,7 @@ do
 
 		-- Graphics
 		unit.isCasting = false
+		visual.extrabar:Hide()
 		visual.castbar:Hide()
 		visual.highlight:Hide()
 		visual.hitbox:Hide()
@@ -618,7 +674,7 @@ do
 
 		-- Skip the initial data gather and let the second cycle do the work.
 		plate.UpdateMe = true
-		plate.UpdateCastbar = true
+		plate.UpdateCastbar = true -- Classic era
 
 	end
 
@@ -637,6 +693,7 @@ do
 		PlatesByUnit[unitid] = nil
 		if unitGUID and unitid ~= "target" then PlatesByGUID[unitGUID] = nil end
 
+		visual.extrabar:Hide()
 		visual.castbar:Hide()
 		visual.castbar:SetScript("OnUpdate", nil)
 		unit.isCasting = false
@@ -669,7 +726,7 @@ do
 		if not unitid then return end
 
 		UpdateUnitCondition(plate, unitid)
-		ProcessUnitChanges()
+		ProcessUnitChanges(true)
 		--UpdateIndicator_HealthBar()		-- Just to be on the safe side
 	end
 
@@ -755,13 +812,15 @@ do
 		unit.showName = not NeatPlatesOptions.BlizzardNameVisibility or UnitShouldDisplayName(unit.unitid)
 
 		local classification = UnitClassification(unitid)
-		unit.isBoss = UnitLevel(unitid) == -1
+
+		unit.isBoss = UnitEffectiveLevel(unitid) == -1
 		unit.isDangerous = unit.isBoss
 
 		unit.isElite = EliteReference[classification]
 		unit.isRare = RareReference[classification]
 		unit.isMini = classification == "minus"
 		--unit.isPet = UnitIsOtherPlayersPet(unitid)
+		--unit.isPet = ("Pet" == strsplit("-", UnitGUID(unitid)))
 		unit.isPet = ParseGUID(UnitGUID(unitid)) == "Pet"
 
 		if UnitIsPlayer(unitid) then
@@ -798,10 +857,10 @@ do
 
 	-- UpdateUnitCondition: High volatility data
 	function UpdateUnitCondition(plate, unitid)
-		local health, healthmax
 		UpdateReferences(plate)
 
-		unit.level = UnitLevel(unitid)
+		unit.unitid = unit.unitid or unitid -- Just make sure it exists
+		unit.level = UnitEffectiveLevel(unitid)
 
 		local c = GetCreatureDifficultyColor(unit.level)
 		unit.levelcolorRed, unit.levelcolorGreen, unit.levelcolorBlue = c.r, c.g, c.b
@@ -811,14 +870,8 @@ do
 		unit.red, unit.green, unit.blue = UnitSelectionColor(unitid)
 		unit.reaction = GetReactionByColor(unit.red, unit.green, unit.blue) or "HOSTILE"
 
-		if RealMobHealth and RealMobHealth.GetUnitHealth then
-			 health, healthmax = RealMobHealth.GetUnitHealth(unitid)
-		end
-
-		-- Ensure we have some unit health data if RealMobHealth doesn't return it
-		unit.health = health or UnitHealth(unitid) or 0
-		unit.healthmax = healthmax or UnitHealthMax(unitid) or 1
-
+		unit.health = UnitHealth(unitid) or 0
+		unit.healthmax = UnitHealthMax(unitid) or 1
 
 		local powerType = UnitPowerType(unitid) or 0
 		unit.power = UnitPower(unitid, powerType) or 0
@@ -830,7 +883,6 @@ do
 			unit.threatSituation = ThreatReference[unit.threatValue]
 		end
 		unit.isInCombat = UnitAffectingCombat(unitid)
-		unit.isTargetingPlayer = UnitIsUnit(unitid.."target", "player")
 		unit.alphaMult = nameplate:GetAlpha()
 
 		local raidIconIndex = GetRaidTargetIndex(unitid)
@@ -865,6 +917,7 @@ do
 			UpdateIndicator_CustomAlpha()
 			UpdateIndicator_CustomScaleText()
 	end
+
 
 end		-- End of Nameplate/Unit Events
 
@@ -977,6 +1030,73 @@ do
 		if current then visual[current]:SetVertexColor(style[current].color.r, style[current].color.g, style[current].color.b, style[current].color.a) end
 	end
 
+	-- UpdateIndicator_ExtraBar
+	function UpdateIndicator_ExtraBar()
+		if not unit or not unit.unitid then return end
+		local widgetSetID = UnitWidgetSet(unit.unitid);
+
+		if widgetSetID then
+			local widgetSet = C_UIWidgetManager.GetAllWidgetsBySetID(widgetSetID)
+			if not widgetSet or not widgetSet[1] then return end
+
+			local widget
+			for i = 1, #widgetSet do
+				local widgetID = widgetSet[i].widgetID
+				local widgetType = widgetSet[i].widgetType
+
+				if NeatPlatesOptions.BlizzardWidgets then
+					nameplate.showBlizzardPlate = true
+				else
+					if widgetType == 2 then
+						widget = C_UIWidgetManager.GetStatusBarWidgetVisualizationInfo(widgetID)
+					elseif widgetType == 1 then
+						widget = C_UIWidgetManager.GetCaptureBarWidgetVisualizationInfo(widgetID)
+					elseif widgetType == 8 then
+						-- Do nothing
+					else
+						if not _G['NeatPlatesWidgetError'] then
+							_G['NeatPlatesWidgetError'] = true
+							error("NeatPlates: Unsupported widget type ("..widgetType..") please report this and what you were doing to the addon author.")
+						end
+						return -- Unsupported widget type
+					end
+
+					if widget then break end
+				end
+			end
+
+			if not widget then return end
+
+
+
+			local widgetBarMin = widget.barMin or widget.barMinValue
+			local widgetBarMax = widget.barMax or widget.barMaxValue
+
+			local rank = widget.overrideBarText
+			local barCur = widget.barValue - widgetBarMin
+			local barMax = widgetBarMax - widgetBarMin
+			local text = rank
+
+			-- Set neutral zone
+			if widget.neutralZoneSize then
+				local neutralZoneMin = widget.neutralZoneCenter - (widget.neutralZoneSize / 2)
+				local neutralZoneMax = widget.neutralZoneCenter + (widget.neutralZoneSize / 2)
+				visual.extrabar:SetNeutralZone(neutralZoneMin, neutralZoneMax, widget.neutralZoneCenter, barMax)
+				visual.extrabar.Neutral:Show()
+			else
+				visual.extrabar.Neutral:Hide()
+			end
+
+			if unit.isMouseover then text = barCur.."/"..barMax end
+
+			visual.extrabar:SetMinMaxValues(0, barMax)
+			visual.extrabar:SetValue(barCur)
+			visual.extratext:SetText(text)
+
+			visual.extrabar:Show()
+		end
+	end
+
 
 	-- UpdateIndicator_RaidIcon
 	function UpdateIndicator_RaidIcon()
@@ -1022,7 +1142,7 @@ do
 	-- UpdateIndicator_Standard: Updates Non-Delegate Indicators
 	function UpdateIndicator_Standard()
 		if IsPlateShown(nameplate) then
-			if unitcache.name ~= unit.name then UpdateIndicator_Name() end
+			if unitcache.name ~= unit.name or unitcache.showName ~= unit.showName then UpdateIndicator_Name() end
 			if unitcache.level ~= unit.level or unitcache.isBoss ~= unit.isBoss then UpdateIndicator_Level() end
 			UpdateIndicator_RaidIcon()
 			if unitcache.isElite ~= unit.isElite or unitcache.isRare ~= unit.isRare then UpdateIndicator_EliteIcon() end
@@ -1082,9 +1202,9 @@ do
 					visual.customtext:SetTextColor(r or 1, g or 1, b or 1, a or 1)
 				else visual.customtext:SetText("") end
 			end
-			UpdateIndicator_UnitColor()		-- Keep within this block as we need to check if 'unit.health' exists
-		end
 
+			UpdateIndicator_UnitColor()
+		end
 	end
 
 
@@ -1110,80 +1230,81 @@ do
 	end
 
 	-- OnShowCastbar
-	function OnStartCasting(plate, guid, channeled)
+	function OnStartCasting(plate, unitid, channeled)
+		local guid = unitid -- Clasic era, we pass a guid instead of unitid
+
 		UpdateReferences(plate)
 		--if not extended:IsShown() then return end
 		if not extended:IsShown() then return end
 
+		local name, text, texture, startTime, endTime, isTradeSkill, castID, notInterruptible, increase
 		local castBar = extended.visual.castbar
-		local unitType,_,_,_,_,creatureID = ParseGUID(guid)
-		local spell = SpellCastCache[guid]
-		local startTime, endTime, increase
-		local spellEntry
 
-		if not spell or not unitType then return end -- Return if neccessary info is missing
+		if NEATPLATES_IS_CLASSIC_ERA then
+			local unitType,_,_,_,_,creatureID = ParseGUID(guid)
+			local spell = SpellCastCache[guid]
+			local spellEntry
 
-		if creatureID then spellEntry = NeatPlatesSpellDB[unitType][spell.name][creatureID]
-		else spellEntry = NeatPlatesSpellDB[unitType][spell.name] end
+			if not spell or not unitType then return end -- Return if neccessary info is missing
 
-		if spellEntry.castTime then
-			startTime = spell.startTime
-			endTime = spell.startTime + (spellEntry.castTime * spell.increase)
+			text = spell.name
+			texture = NeatPlatesSpellDB.default[spell.name].texture or 136243
 
-			castBar:SetScript("OnUpdate", OnUpdateCastBarForward)
+			if creatureID then spellEntry = NeatPlatesSpellDB[unitType][spell.name][creatureID]
+			else spellEntry = NeatPlatesSpellDB[unitType][spell.name] end
+
+			if spellEntry.castTime then
+				startTime = spell.startTime
+				endTime = spell.startTime + (spellEntry.castTime * spell.increase)
+
+				castBar:SetScript("OnUpdate", OnUpdateCastBarForward)
+			end
+		else
+			if channeled then
+				name, text, texture, startTime, endTime, isTradeSkill, notInterruptible = UnitChannelInfo(unitid)
+				castBar:SetScript("OnUpdate", OnUpdateCastBarReverse)
+			else
+				name, text, texture, startTime, endTime, isTradeSkill, castID, notInterruptible = UnitCastingInfo(unitid)
+				castBar:SetScript("OnUpdate", OnUpdateCastBarForward)
+			end
+
+			if isTradeSkill then return end
 		end
+
+		-- Set 'notInterruptible' to false, Because we cannot tell if it's interruptible or not in classic
+		if NEATPLATES_IS_CLASSIC then notInterruptible = false end
 
 		unit.isCasting = true
 		unit.interrupted = false
 		unit.interruptLogged = false
-		unit.spellInterruptible = true -- Always true for Classic as we cannot tell.
+		unit.spellIsShielded = notInterruptible
+		unit.spellInterruptible = not unit.spellIsShielded
 
 		-- Clear registered events incase they weren't
 		castBar:SetScript("OnEvent", nil)
 		--castBar:UnregisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
 
-		-- -- Set spell target (Target doesn't usually update until a little bit after the combat event, so we need to recheck)
-		-- if ShowSpellTarget and unit.unitid then
-		-- 	local maxTries = 10
-		-- 	local targetof = unit.unitid.."target"
-		-- 	local function setSpellTarget()
-		-- 		local targetname =  UnitName(targetof) or ""
-		-- 		if UnitIsUnit(targetof, "player") then
-		-- 			targetname = "|cFFFF1100"..">> "..L["You"].." <<" or ""	-- Red '>> You <<' instead of character name
-		-- 		elseif UnitIsPlayer(targetof) then
-		-- 			local targetclass = select(2, UnitClass(targetof))
-		-- 			targetname = ConvertRGBtoColorString(RaidClassColors[targetclass])..targetname or ""
-		-- 		end
-		-- 		visual.spelltarget:SetText(targetname)
-
-		-- 		-- Retry if target is empty
-		-- 		if targetname == "" and maxTries > 0 then
-		-- 			maxTries = maxTries - 1
-		-- 			C_Timer.After(0.1, setSpellTarget)
-		-- 		end
-		-- 	end
-		-- 	C_Timer.After(0.002, setSpellTarget) -- Next Frame
-		-- end
-
 		OnUpdateCastTarget(plate, unitid)
 
 		-- Set spell text & duration
-		visual.spelltext:SetText(spell.name)
+		if ShowCastSpellName then
+			visual.spelltext:SetText(text)
+		else
+			visual.spelltext:SetText("")
+		end
 		visual.durationtext:SetText("")
-		visual.spellicon:SetTexture(NeatPlatesSpellDB.default[spell.name].texture or 136243) -- 136243 (Default to Engineering Cog)
+		visual.spellicon:SetTexture(texture)
 		castBar:SetMinMaxValues(startTime or 0, endTime or 0)
 
 		local r, g, b, a = 1, 1, 0, 1
 
 		if activetheme.SetCastbarColor then
-			r, g, b, a = activetheme.SetCastbarColor(unit, spell.school)
+			r, g, b, a = activetheme.SetCastbarColor(unit, SpellSchoolByGUID[unit.guid])
 			if not (r and g and b and a) then return end
 		end
 
 		castBar:SetStatusBarColor( r, g, b)
-
 		castBar:SetAlpha(a or 1)
-
 
 		if style.castnostop and style.castnostop.enabled and unit.spellIsShielded then
 			visual.castnostop:Show(); visual.castborder:Hide()
@@ -1199,7 +1320,6 @@ do
 		castBar:Show()
 
 	end
-
 
 	-- OnInterruptedCasting
 	function OnInterruptedCast(plate, sourceGUID, sourceName, destGUID)
@@ -1299,12 +1419,13 @@ do
 		if not ShowCastBars then return end
 		local currentTime = GetTime() * 1000
 
+		if NEATPLATES_IS_CLASSIC_ERA then return end -- Skip if Classic era
 
-		--if UnitCastingInfo(unitid) then
-		--	OnStartCasting(plate, unitid, false)	-- Check to see if there's a spell being cast
-		--elseif UnitChannelInfo(unitid) then
-		--	OnStartCasting(plate, unitid, true)	-- See if one is being channeled...
-		--end
+		if UnitCastingInfo(unitid) then
+			OnStartCasting(plate, unitid, false)	-- Check to see if there's a spell being cast
+		elseif UnitChannelInfo(unitid) then
+			OnStartCasting(plate, unitid, true)	-- See if one is being channeled...
+		end
 	end
 
 	function OnUpdateCastTarget(plate, unitid)
@@ -1384,8 +1505,8 @@ do
 	local builtThisSession = false
 	function CoreEvents:PLAYER_ENTERING_WORLD()
 		NeatPlatesCore:SetScript("OnUpdate", OnUpdate);
-		--if not NeatPlatesSpellDB.default then NeatPlates.BuildDefaultSpellDB() end
-		if not builtThisSession then
+
+		if NEATPLATES_IS_CLASSIC_ERA and not builtThisSession then
 			NeatPlates.BuildDefaultSpellDB() -- Temporarily force a rebuild on login as this is a work in progress
 			NeatPlates.CleanSpellDB() -- Remove empty table entries from the Spell DB
 			builtThisSession = true
@@ -1410,6 +1531,7 @@ do
 		local unitid = ...
 		local plate = GetNamePlateForUnit(unitid);
 
+		-- Ignore if plate is Personal Display
 		if plate then
 			if UnitIsUnit("player", unitid) then
 				plate.showBlizzardPlate = true
@@ -1420,7 +1542,7 @@ do
 				--local children = plate:GetChildren() -- Do children even need to be hidden anymore when UnitFrame is unhooked
 				--if children then children:Hide() end
 				--if plate._frame then plate._frame:Show() end -- Show Questplates frame
-				if NeatPlatesTarget and unitid and UnitGUID(unitid) == NeatPlatesTarget.unitGUID then toggleNeatPlatesTarget(false) end
+				if NEATPLATES_IS_CLASSIC and NeatPlatesTarget and unitid and UnitGUID(unitid) == NeatPlatesTarget.unitGUID then toggleNeatPlatesTarget(false) end
 
 				-- Unhook UnitFrame events
 				if plate.UnitFrame then
@@ -1430,14 +1552,14 @@ do
 
 		 		OnShowNameplate(plate, unitid)
 			end
-		end
+	 	end
 	end
 
 	function CoreEvents:NAME_PLATE_UNIT_REMOVED(...)
 		local unitid = ...
 		local plate = GetNamePlateForUnit(unitid);
 
-		-- if NeatPlatesTarget and plate.extended.unit.guid == NeatPlatesTarget.unitGUID then toggleNeatPlatesTarget(true, plate:GetPoint()) end
+		if NEATPLATES_IS_CLASSIC and NeatPlatesTarget and plate.extended.unit.guid == NeatPlatesTarget.unitGUID then toggleNeatPlatesTarget(true) end
 
 		OnHideNameplate(plate, unitid)
 	end
@@ -1451,9 +1573,15 @@ do
 			NeatPlatesTarget = NeatPlatesUtility:CreateTargetFrame()
 			OnNewNameplate(NeatPlatesTarget)
 		end
-		-- Show Target frame, if other frame doesn't exist and nisn't dead
-		if HasTarget and NeatPlatesTarget then NeatPlatesTarget.unitGUID = guid end
+		-- Show Target frame, if other frame doesn't exist and isn't dead
+		if NEATPLATES_IS_CLASSIC and HasTarget and NeatPlatesTarget then NeatPlatesTarget.unitGUID = guid end
 		toggleNeatPlatesTarget(HasTarget and unitAlive and not PlatesByGUID[guid])
+		SetUpdateAll()
+	end
+
+	function CoreEvents:PLAYER_TARGET_CHANGED()
+		HasTarget = UnitExists("target") == true;
+		UpdateCustomTarget()
 		SetUpdateAll()
 	end
 
@@ -1466,20 +1594,7 @@ do
 		end
 	end
 
-	function CoreEvents:PLAYER_TARGET_CHANGED()
-		UpdateCustomTarget()
-	end
-
 	function CoreEvents:UNIT_HEALTH(...)
-		if FrequentHealthUpdate then return end
-		local unitid = ...
-		local plate = PlatesByUnit[unitid]
-
-		if plate then OnHealthUpdate(plate) end
-	end
-
-	function CoreEvents:UNIT_HEALTH_FREQUENT(...)
-		if not FrequentHealthUpdate then return end
 		local unitid = ...
 		local plate = PlatesByUnit[unitid]
 
@@ -1558,12 +1673,47 @@ do
 		end
 	end
 
+	function updateCastbarSchoolColor(plate, school)
+		local castBar = plate.extended.visual.castbar
+		local unit = plate.extended.unit
+
+		if activetheme.SetCastbarColor then
+			r, g, b, a = activetheme.SetCastbarColor(unit, school)
+			if not (r and g and b and a) then return end
+		end
+
+		castBar:SetStatusBarColor(r, g, b)
+		castBar:SetAlpha(a or 1)
+	end
+
 	function CoreEvents:COMBAT_LOG_EVENT_UNFILTERED(...)
 		local _,event,_,sourceGUID,sourceName,sourceFlags,_,destGUID,destName,_,_,spellID,spellName,spellSchool = CombatLogGetCurrentEventInfo()
-		--spellID = select(7, GetSpellInfo(spellName)) or ""
+		spellID = spellID or ""
 		local plate = nil
 		local ownerGUID
 		local unitType,_,_,_,_,creatureID = ParseGUID(sourceGUID)
+
+		-- Tracking spell school
+		if event == "SPELL_CAST_START" or event == "SPELL_CAST_SUCCESS" then
+			plate = PlatesByGUID[sourceGUID]
+			SpellSchoolByGUID[sourceGUID] = spellSchool
+			if plate and plate.extended and plate.extended.unit then
+				updateCastbarSchoolColor(plate, spellSchool) -- Make sure color updates
+			end
+		elseif event == "SPELL_CAST_FAILED" or event == "SPELL_CAST_SUCCESS" or event == "SPELL_INTERRUPT" then
+			SpellSchoolByGUID[sourceGUID] = nil -- Cleanup
+		end
+
+		-- Tracking spell school
+		if event == "SPELL_CAST_START" or event == "SPELL_CAST_SUCCESS" then
+			plate = PlatesByGUID[sourceGUID]
+			SpellSchoolByGUID[sourceGUID] = spellSchool
+			if plate and plate.extended and plate.extended.unit then
+				updateCastbarSchoolColor(plate, spellSchool) -- Make sure color updates
+			end
+		elseif event == "SPELL_CAST_FAILED" or event == "SPELL_CAST_SUCCESS" or event == "SPELL_INTERRUPT" then
+			SpellSchoolByGUID[sourceGUID] = nil -- Cleanup
+		end
 
 		-- Spell Interrupts
 		if ShowIntCast then
@@ -1573,9 +1723,11 @@ do
 				-- "SPELL_CAST_FAILED" is for when the unit themselves interrupt the cast.
 				plate = PlatesByGUID[destGUID] or IsEmulatedFrame(destGUID)
 
-				if plate and plate.extended.unit.isCasting then
-					if event == "SPELL_AURA_APPLIED" and spellCCList[spellName] and plate.extended.unit.unitid then UnitSpellcastInterrupted("UNIT_SPELLCAST_INTERRUPTED", plate.extended.unit.unitid) end
-					if (event == "SPELL_AURA_APPLIED" or event == "SPELL_CAST_FAILED") and not spellCCList[spellName] and (not plate.extended.unit.interrupted or plate.extended.unit.interruptLogged) then return end
+				if plate and (not NEATPLATES_IS_CLASSIC_ERA or plate.extended.unit.isCasting) then
+					if NEATPLATES_IS_CLASSIC_ERA and event == "SPELL_AURA_APPLIED" and spellCCList[spellName] and plate.extended.unit.unitid then UnitSpellcastInterrupted("UNIT_SPELLCAST_INTERRUPTED", plate.extended.unit.unitid) end
+					if (event == "SPELL_AURA_APPLIED" or event == "SPELL_CAST_FAILED") and (not plate.extended.unit.interrupted or plate.extended.unit.interruptLogged) and (not NEATPLATES_IS_CLASSIC_ERA or not spellCCList[spellName]) then return end
+
+					-- local unitType = strsplit("-", sourceGUID)
 
 					-- If a pet interrupted, we need to change the source from the pet to the owner
 					if unitType == "Pet" then
@@ -1587,81 +1739,97 @@ do
 				end
 
 				-- Set spell cast cache to finished
-				if SpellCastCache[destGUID] and (event ~= "SPELL_AURA_APPLIED" or spellCCList[spellName]) then
+				if NEATPLATES_IS_CLASSIC_ERA and SpellCastCache[destGUID] and (event ~= "SPELL_AURA_APPLIED" or spellCCList[spellName]) then
 					SpellCastCache[destGUID].finished = true
 				end
 			end
 		end
 
-		-- Cast time increases
-		CTICache[sourceGUID] = CTICache[sourceGUID] or {}
-		if event == "SPELL_AURA_APPLIED" and spellCTI[spellName] then
-			if CTICache[sourceGUID].timeout then CTICache[sourceGUID].timeout:Cancel() end
-			CTICache[sourceGUID].increase = spellCTI[spellName]
-			CTICache[sourceGUID].timeout = C_Timer.NewTimer(60, function()
-				CTICache[sourceGUID] = {}
-			end)
-		elseif event == "SPELL_AURA_REMOVED" and spellCTI[spellName] then
-			if CTICache[sourceGUID] and CTICache[sourceGUID].timeout then CTICache[sourceGUID].timeout:Cancel() end
-			CTICache[sourceGUID] = {}
+		-- Fixate
+		local fixate = {
+			[268074] = true,	-- Spawn of G'huun(Uldir)
+			[282209] = true,	-- Ravenous Stalker(Dazar'alor)
+		}
+		if (event == "SPELL_AURA_APPLIED" or event == "SPELL_AURA_REMOVED") and fixate[spellID] then
+			plate = PlatesByGUID[sourceGUID]
+			if plate and event == "SPELL_AURA_APPLIED" and UnitIsUnit("player", destName) then
+				plate.extended.unit.fixate = true 	-- Fixating player
+			elseif plate then
+				plate.extended.unit.fixate = false 	-- NOT Fixating player
+			end
 		end
 
-		-- Spellcasts (Classic)
-		if ShowCastBars and unitType and (spellName and type(spellName) == "string") and not spellBlacklist[spellName] then
-			local currentTime = GetTime() * 1000
-			local spellEntry
-			plate = PlatesByGUID[sourceGUID] or IsEmulatedFrame(sourceGUID)
-			NeatPlatesSpellDB[unitType] = NeatPlatesSpellDB[unitType] or {}
-			NeatPlatesSpellDB[unitType][spellName] = NeatPlatesSpellDB[unitType][spellName] or {}
-			if creatureID then
-				NeatPlatesSpellDB[unitType][spellName][creatureID] = NeatPlatesSpellDB[unitType][spellName][creatureID] or {}
-				spellEntry = NeatPlatesSpellDB[unitType][spellName][creatureID]
-			else
-				spellEntry = NeatPlatesSpellDB[unitType][spellName]
-			end
-
-			if event == "SPELL_CAST_START" then
-				-- Add Spell to Spell Cast Cache
-				SpellCastCache[sourceGUID] = SpellCastCache[sourceGUID] or {}
-				SpellCastCache[sourceGUID].name = spellName
-				SpellCastCache[sourceGUID].school = spellSchool
-				SpellCastCache[sourceGUID].startTime = currentTime
-				SpellCastCache[sourceGUID].finished = false
-				SpellCastCache[sourceGUID].increase = CTICache[sourceGUID].increase or 1
-
-				-- Timeout spell incase we don't catch the SUCCESS or FAILED event.(Times out after recorded casttime + 1 seconds, or 12 seconds if the spell is unknown)
-				-- The FAILED event doesn't seem to trigger properly in the current beta test.
-				if not spellEntry.castTime then spellEntry.castTime = NeatPlatesSpellDB.default[spellName].castTime end
-				local timeout = 12
-				local castTime = (spellEntry.castTime or 0) * SpellCastCache[sourceGUID].increase
-				if castTime > 0 then timeout = (castTime+1000)/1000 end -- If we have a recorded cast time, use that as timeout base
-				if SpellCastCache[sourceGUID].spellTimeout then SpellCastCache[sourceGUID].spellTimeout:Cancel() end	-- Cancel the old spell timeout if it exists
-
-				SpellCastCache[sourceGUID].spellTimeout = C_Timer.NewTimer(timeout, function()
-					local plate = PlatesByGUID[sourceGUID] or IsEmulatedFrame(sourceGUID)
-					if SpellCastCache[sourceGUID].startTime == currentTime then SpellCastCache[sourceGUID].finished = true end -- Make sure we are on the same cast
-					if plate then OnStopCasting(plate) end
+		if NEATPLATES_IS_CLASSIC_ERA then
+			-- Cast time increases
+			CTICache[sourceGUID] = CTICache[sourceGUID] or {}
+			if event == "SPELL_AURA_APPLIED" and spellCTI[spellName] then
+				if CTICache[sourceGUID].timeout then CTICache[sourceGUID].timeout:Cancel() end
+				CTICache[sourceGUID].increase = spellCTI[spellName]
+				CTICache[sourceGUID].timeout = C_Timer.NewTimer(60, function()
+					CTICache[sourceGUID] = {}
 				end)
-
-				if plate then OnStartCasting(plate, sourceGUID, false) end
-			elseif (event == "SPELL_CAST_SUCCESS" or event == "SPELL_CAST_FAILED") then
-				-- Update SpellDB with castTime
-				if event == "SPELL_CAST_SUCCESS" and SpellCastCache[sourceGUID] and SpellCastCache[sourceGUID].startTime then
-					castTime = (currentTime-SpellCastCache[sourceGUID].startTime)/SpellCastCache[sourceGUID].increase -- Cast Time
-					if castTime > 0 then spellEntry.castTime = castTime end
-				end
-
-				-- Clear Cast Cache
-				if SpellCastCache[sourceGUID] and SpellCastCache[sourceGUID].spellTimeout then SpellCastCache[sourceGUID].spellTimeout:Cancel() end	-- Cancel the spell Timeout
-				SpellCastCache[sourceGUID] = nil
-				if plate then
-					OnStopCasting(plate)
-				end
+			elseif event == "SPELL_AURA_REMOVED" and spellCTI[spellName] then
+				if CTICache[sourceGUID] and CTICache[sourceGUID].timeout then CTICache[sourceGUID].timeout:Cancel() end
+				CTICache[sourceGUID] = {}
 			end
 
-			-- Remove empty entries as they only take up space
-			--if not next(NeatPlatesSpellDB[unitType][spellName]) then NeatPlatesSpellDB[unitType][spellName] = nil
-			--elseif creatureID and not next(NeatPlatesSpellDB[unitType][spellName][creatureID]) then NeatPlatesSpellDB[unitType][spellName][creatureID] = nil end
+			-- Spellcasts (Classic)
+			if ShowCastBars and unitType and (spellName and type(spellName) == "string") and not spellBlacklist[spellName] then
+				local currentTime = GetTime() * 1000
+				local spellEntry
+				plate = PlatesByGUID[sourceGUID] or IsEmulatedFrame(sourceGUID)
+				NeatPlatesSpellDB[unitType] = NeatPlatesSpellDB[unitType] or {}
+				NeatPlatesSpellDB[unitType][spellName] = NeatPlatesSpellDB[unitType][spellName] or {}
+				if creatureID then
+					NeatPlatesSpellDB[unitType][spellName][creatureID] = NeatPlatesSpellDB[unitType][spellName][creatureID] or {}
+					spellEntry = NeatPlatesSpellDB[unitType][spellName][creatureID]
+				else
+					spellEntry = NeatPlatesSpellDB[unitType][spellName]
+				end
+
+				if event == "SPELL_CAST_START" then
+					-- Add Spell to Spell Cast Cache
+					SpellCastCache[sourceGUID] = SpellCastCache[sourceGUID] or {}
+					SpellCastCache[sourceGUID].name = spellName
+					SpellCastCache[sourceGUID].school = spellSchool
+					SpellCastCache[sourceGUID].startTime = currentTime
+					SpellCastCache[sourceGUID].finished = false
+					SpellCastCache[sourceGUID].increase = CTICache[sourceGUID].increase or 1
+
+					-- Timeout spell incase we don't catch the SUCCESS or FAILED event.(Times out after recorded casttime + 1 seconds, or 12 seconds if the spell is unknown)
+					-- The FAILED event doesn't seem to trigger properly in the current beta test.
+					if not spellEntry.castTime then spellEntry.castTime = NeatPlatesSpellDB.default[spellName].castTime end
+					local timeout = 12
+					local castTime = (spellEntry.castTime or 0) * SpellCastCache[sourceGUID].increase
+					if castTime > 0 then timeout = (castTime+1000)/1000 end -- If we have a recorded cast time, use that as timeout base
+					if SpellCastCache[sourceGUID].spellTimeout then SpellCastCache[sourceGUID].spellTimeout:Cancel() end	-- Cancel the old spell timeout if it exists
+
+					SpellCastCache[sourceGUID].spellTimeout = C_Timer.NewTimer(timeout, function()
+						local plate = PlatesByGUID[sourceGUID] or IsEmulatedFrame(sourceGUID)
+						if SpellCastCache[sourceGUID].startTime == currentTime then SpellCastCache[sourceGUID].finished = true end -- Make sure we are on the same cast
+						if plate then OnStopCasting(plate) end
+					end)
+
+					if plate then OnStartCasting(plate, sourceGUID, false) end
+				elseif (event == "SPELL_CAST_SUCCESS" or event == "SPELL_CAST_FAILED") then
+					-- Update SpellDB with castTime
+					if event == "SPELL_CAST_SUCCESS" and SpellCastCache[sourceGUID] and SpellCastCache[sourceGUID].startTime then
+						castTime = (currentTime-SpellCastCache[sourceGUID].startTime)/SpellCastCache[sourceGUID].increase -- Cast Time
+						if castTime > 0 then spellEntry.castTime = castTime end
+					end
+
+					-- Clear Cast Cache
+					if SpellCastCache[sourceGUID] and SpellCastCache[sourceGUID].spellTimeout then SpellCastCache[sourceGUID].spellTimeout:Cancel() end	-- Cancel the spell Timeout
+					SpellCastCache[sourceGUID] = nil
+					if plate then
+						OnStopCasting(plate)
+					end
+				end
+
+				-- Remove empty entries as they only take up space
+				--if not next(NeatPlatesSpellDB[unitType][spellName]) then NeatPlatesSpellDB[unitType][spellName] = nil
+				--elseif creatureID and not next(NeatPlatesSpellDB[unitType][spellName][creatureID]) then NeatPlatesSpellDB[unitType][spellName][creatureID] = nil end
+			end
 		end
 	end
 
@@ -1671,19 +1839,32 @@ do
 		-- end
 	end
 
+	function CoreEvents:UPDATE_UI_WIDGET(widget)
+		if widget then
+			SetUpdateAll()
+		end
+	end
+
 	CoreEvents.UNIT_SPELLCAST_INTERRUPTED = UnitSpellcastInterrupted
 	--CoreEvents.UNIT_SPELLCAST_FAILED = UnitSpellcastInterrupted
 
 	CoreEvents.UNIT_SPELLCAST_DELAYED = UnitSpellcastMidway
 	CoreEvents.UNIT_SPELLCAST_CHANNEL_UPDATE = UnitSpellcastMidway
 
+	if not NEATPLATES_IS_CLASSIC then
+		CoreEvents.UNIT_SPELLCAST_INTERRUPTIBLE = UnitSpellcastMidway
+		CoreEvents.UNIT_SPELLCAST_NOT_INTERRUPTIBLE = UnitSpellcastMidway
+	end
+
 	CoreEvents.UNIT_LEVEL = UnitConditionChanged
-	--CoreEvents.UNIT_THREAT_SITUATION_UPDATE = UnitConditionChanged
+	CoreEvents.UNIT_THREAT_SITUATION_UPDATE = UnitConditionChanged
 	CoreEvents.UNIT_FACTION = UnitConditionChanged
 
 	CoreEvents.RAID_TARGET_UPDATE = WorldConditionChanged
+	CoreEvents.PLAYER_FOCUS_CHANGED = WorldConditionChanged
 	CoreEvents.PLAYER_CONTROL_LOST = WorldConditionChanged
 	CoreEvents.PLAYER_CONTROL_GAINED = WorldConditionChanged
+
 
 	-- Registration of Blizzard Events
 	NeatPlatesCore:SetFrameStrata("TOOLTIP") 	-- When parented to WorldFrame, causes OnUpdate handler to run close to last
@@ -1757,9 +1938,6 @@ do
 			SetAnchorGroupObject(object, objectstyle, anchorTo)
 			SetObjectBartexture(object, objectstyle.texture or EMPTY_TEXTURE, objectstyle.orientation or "HORIZONTAL")
 			if objectstyle.backdrop then
-				if not object.SetBackdrop then
-					Mixin(object, BackdropTemplateMixin)
-				end
 				object:SetBackdropTexture(objectstyle.backdrop)
 			end
 			object:SetTexCoord(objectstyle.left, objectstyle.right, objectstyle.top, objectstyle.bottom)
@@ -1768,15 +1946,15 @@ do
 
 
 	-- Style Groups
-	local fontgroup = {"name", "subtext", "level", "spelltext", "spelltarget", "durationtext", "customtext"}
+	local fontgroup = {"name", "subtext", "level", "extratext", "spelltext", "spelltarget", "durationtext", "customtext"}
 
 	local anchorgroup = {"healthborder", "threatborder", "castborder", "castnostop",
-						"name", "subtext", "spelltext", "spelltarget", "durationtext", "customtext", "level",
+						"name", "subtext", "extraborder", "extratext", "spelltext", "spelltarget", "durationtext", "customtext", "level",
 						"spellicon", "raidicon", "skullicon", "eliteicon", "target", "focus", "mouseover"}
 
-	local bargroup = {"castbar", "healthbar", "powerbar"}
+	local bargroup = {"castbar", "healthbar", "powerbar", "extrabar"}
 
-	local texturegroup = { "castborder", "castnostop", "healthborder", "threatborder", "eliteicon",
+	local texturegroup = { "extraborder", "castborder", "castnostop", "healthborder", "threatborder", "eliteicon",
 						"skullicon", "highlight", "target", "focus", "mouseover", "spellicon", }
 
 	local highlightgroup = { "target", "focus", "mouseover" }
@@ -1892,6 +2070,10 @@ local function OnResetWidgets(plate)
 	plate.UpdateMe = true
 end
 
+--------------------------------------------------------------------------------------------------------------
+-- Classic era specific functions
+--------------------------------------------------------------------------------------------------------------
+
 -- Cleanup Spell DB
 local function CleanSpellDB()
 	local checkTable
@@ -1937,11 +2119,10 @@ NeatPlates.CleanSpellDB = CleanSpellDB
 --------------------------------------------------------------------------------------------------------------
 function NeatPlates:DisableCastBars() ShowCastBars = false end
 function NeatPlates:EnableCastBars() ShowCastBars = true end
-function NeatPlates.ColorCastBars(enable) ColorCastBars = enable end
 function NeatPlates:ToggleEmulatedTargetPlate(show) if not show then toggleNeatPlatesTarget(false) end; ShowEmulatedTargetPlate = show end
 
-function NeatPlates:SetHealthUpdateMethod(useFrequent) FrequentHealthUpdate = useFrequent end
 function NeatPlates:SetCoreVariables(LocalVars)
+	ShowCastSpellName = LocalVars.CastSpellNameEnable
 	ShowIntCast = LocalVars.IntCastEnable
 	ShowIntWhoCast = LocalVars.IntCastWhoEnable
 	ShowFriendlyPowerBar = LocalVars.StyleShowFriendlyPowerBar
@@ -1949,6 +2130,21 @@ function NeatPlates:SetCoreVariables(LocalVars)
 	ShowSpellTarget = LocalVars.SpellTargetEnable
 	ThreatSoloEnable = LocalVars.ThreatSoloEnable
 	ReplaceUnitNameArenaID = LocalVars.TextUnitNameArenaID
+
+	ForceDefaultNameplates = {
+		["HOSTILE"] = {
+			["PLAYER"] = LocalVars.DefaultEnemyNameplatesOnPlayers,
+			["NPC"] = LocalVars.DefaultEnemyNameplatesOnNPCs
+		},
+		["FRIENDLY"] = {
+			["PLAYER"] = LocalVars.DefaultFriendlyNameplatesOnPlayers,
+			["NPC"] = LocalVars.DefaultFriendlyNameplatesOnNPCs
+		},
+		["NEUTRAL"] = {
+			["PLAYER"] = false, -- Shouldn't be possible to be a neutral player?
+			["NPC"] = LocalVars.DefaultNeutralNameplatesOnNPCs
+		},
+	}
 end
 
 function NeatPlates:ShowNameplateSize(show, width, height) ForEachPlate(function(plate) UpdateNameplateSize(plate, show, width, height) end) end
@@ -1965,63 +2161,15 @@ function NeatPlates.OverrideOutline(enable) OverrideOutline = enable; end
 
 function NeatPlates.UpdateNameplateSize() UpdateNameplateSize() end
 
--- Also updates at intervals as a precaution, refer to 'PolledThreat'
---function NeatPlates.THREAT_UPDATE(...)
---	local guid = select(3, ...)
---	local plate = PlatesByGUID[guid] or IsEmulatedFrame(guid)
---	if not plate then return end
-
---	local unit = plate.extended.unit
---	local unitid = PlatesVisible[plate]
---	if not unitid then return end
-
---	if(Debug['threat'] and plate) then checkLastThreatUpdate(guid) end
-
---	local threatValue = UnitThreatSituation("player", unitid) or 0
---	if(unit.threatValue ~= threatValue) then OnHealthUpdate(plate) end
---end
-
 -- Old and needing deleting - Just here to avoid errors
 function NeatPlates:EnableFadeIn() EnableFadeIn = true; end
 function NeatPlates:DisableFadeIn() EnableFadeIn = nil; end
 NeatPlates.RequestWidgetUpdate = NeatPlates.RequestUpdate
 NeatPlates.RequestDelegateUpdate = NeatPlates.RequestUpdate
 
-
-
--- Debug stuff
-local lastUpdate = {}
-local DebugFrame = CreateFrame("Frame", nil, WorldFrame)
-function checkLastThreatUpdate(guid)
-	if not guid then return end
-
-	local yellow, blue, red, orange, green = "|cffffff00", "|cFF3782D1", "|cFFFF1100", "|cFFFF6906", "|cFF60E025"
-	local currentTime = GetTime()
-	if not lastUpdate[guid] then lastUpdate[guid] = currentTime end
-
-	local duration = GetTime() - lastUpdate[guid]
-	local color = red
-	if duration == 0 then return end
-	if duration < 3 then
-		color = green
-	elseif duration < 8 then
-		color = orange
+function NeatPlates.ToggleHealthTicker(enabled)
+	if HealthTicker then HealthTicker:Cancel() end
+	if enabled then
+		HealthTicker = C_Timer.NewTicker(0.25, function() SetUpdateAllHealth() end)
 	end
-
-	print(blue.."NeatPlates: "..yellow.."Last threat update:", color..(("%%.%df"):format(1)):format(duration).."s")
-	lastUpdate[guid] = currentTime
 end
-
-SLASH_NeatPlatesThreatDebug1 = '/npdebug'
-SlashCmdList['NeatPlatesThreatDebug'] = function(arg)
-	arg = string.lower(arg)
-	Debug[arg] = not Debug[arg]
-
-	if arg == "threat" then
-		DebugFrame:SetScript("OnEvent", function(self, event) if event == "PLAYER_REGEN_DISABLED" then lastUpdate = {} end end)
-		DebugFrame:RegisterEvent("PLAYER_REGEN_DISABLED")
-	end
-end;
-
-
-

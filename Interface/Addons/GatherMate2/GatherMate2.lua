@@ -11,7 +11,7 @@ _G["GatherMate2"] = GatherMate
 GatherMate.HBD = LibStub("HereBeDragons-2.0")
 local HBDMigrate = LibStub("HereBeDragons-Migrate")
 
-local WoWClassic = (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC)
+local WoWBC = (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC)
 
 -- locals
 local db, gmdbs, filter
@@ -97,10 +97,8 @@ function GatherMate:OnInitialize()
 	GatherMate2MineDB = GatherMate2MineDB or {}
 	GatherMate2FishDB = GatherMate2FishDB or {}
 	GatherMate2TreasureDB = GatherMate2TreasureDB or {}
-	if not WoWClassic then
+	if WoWBC then
 		GatherMate2GasDB = GatherMate2GasDB or {}
-		GatherMate2ArchaeologyDB = GatherMate2ArchaeologyDB or {}
-		GatherMate2LoggingDB = GatherMate2LoggingDB or {}
 	end
 	self.gmdbs = {}
 	self.db_types = {}
@@ -109,10 +107,8 @@ function GatherMate:OnInitialize()
 	self:RegisterDBType("Mining", GatherMate2MineDB)
 	self:RegisterDBType("Fishing", GatherMate2FishDB)
 	self:RegisterDBType("Treasure", GatherMate2TreasureDB)
-	if not WoWClassic then
+	if WoWBC then
 		self:RegisterDBType("Extract Gas", GatherMate2GasDB)
-		self:RegisterDBType("Archaeology", GatherMate2ArchaeologyDB)
-		self:RegisterDBType("Logging", GatherMate2LoggingDB)
 	end
 	db = self.db.profile
 	filter = db.filter
@@ -215,9 +211,7 @@ function GatherMate:ClearDB(dbx)
 	elseif dbx == "Fishing" then GatherMate2FishDB = {}; gmdbs[dbx] = GatherMate2FishDB
 	elseif dbx == "Mining" then GatherMate2MineDB = {}; gmdbs[dbx] = GatherMate2MineDB
 	elseif dbx == "Treasure" then GatherMate2TreasureDB = {}; gmdbs[dbx] = GatherMate2TreasureDB
-	elseif not WoWClassic and dbx == "Extract Gas" then GatherMate2GasDB = {}; gmdbs[dbx] = GatherMate2GasDB
-	elseif not WoWClassic and dbx == "Archaeology" then GatherMate2ArchaeologyDB = {}; gmdbs[dbx] = GatherMate2ArchaeologyDB
-	elseif not WoWClassic and dbx == "Logging" then GatherMate2LoggingDB = {}; gmdbs[dbx] = GatherMate2LoggingDB
+	elseif WoWBC and dbx == "Extract Gas" then GatherMate2GasDB = {}; gmdbs[dbx] = GatherMate2GasDB
 	else -- for custom DBs we dont know the global name, so we clear it old-fashion style
 		local db = gmdbs[dbx]
 		if not db then error("Trying to clear unknown database: "..dbx) end
@@ -241,6 +235,39 @@ function GatherMate:AddNode(zone, x, y, nodeType, name)
 	db[zone] = db[zone] or {}
 	db[zone][id] = self.nodeIDs[nodeType][name]
 	self:SendMessage("GatherMate2NodeAdded", zone, nodeType, id, name)
+end
+
+--[[
+	Add an item to the DB, performing duplicate checks and cleanup
+]]
+function GatherMate:AddNodeChecked(zone, x, y, nodeType, name)
+	local db = gmdbs[nodeType]
+	if not db then return end
+
+	-- get the node id for what we're adding
+	local nid = GatherMate:GetIDForNode(nodeType, name)
+	if not nid then return end
+
+	-- cleanup range
+	local range = GatherMate.db.profile.cleanupRange[nodeType]
+
+	-- check for existing nodes
+	local skip = false
+	local rares = self.rareNodes
+	for coord, nodeID in GatherMate:FindNearbyNode(zone, x, y, nodeType, range, true) do
+		if (nodeID == nid or rares[nodeID] and rares[nodeID][nid]) then
+			GatherMate:RemoveNodeByID(zone, nodeType, coord)
+		-- we're trying to add a rare node, but there is already a normal node present, skip the adding
+		elseif rares[nid] and rares[nid][nodeID] then
+			skip = true
+		end
+	end
+
+	if not skip then
+		GatherMate:AddNode(zone, x, y, nodeType, name)
+	end
+
+	return not skip
 end
 
 --[[
@@ -418,8 +445,7 @@ function GatherMate:IsCleanupRunning()
 end
 
 function GatherMate:SweepDatabase()
-	local Collector = GatherMate:GetModule("Collector")
-	local rares = Collector.rareNodes
+	local rares = self.rareNodes
 	for v,zone in pairs(GatherMate.HBD:GetAllMapIDs()) do
 		--self:Print(L["Processing "]..zone)
 		coroutine.yield()

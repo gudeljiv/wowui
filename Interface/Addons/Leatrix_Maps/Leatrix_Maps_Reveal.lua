@@ -1,4 +1,4 @@
-
+﻿
 	----------------------------------------------------------------------
 	-- Leatrix Maps Reveal Data
 	-- wow.tools/dbc/api/export/?name=worldmapoverlay&build=1.13.3.33302

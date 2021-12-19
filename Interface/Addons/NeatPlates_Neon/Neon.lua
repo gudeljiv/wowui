@@ -491,13 +491,13 @@ WidgetConfig.ThreatLineWidget = { anchor =  "CENTER", x = 0 ,y = VerticalAdjustm
 WidgetConfig.ThreatWheelWidget = { anchor =  "CENTER", x = 36 ,y = VerticalAdjustment + 12 } -- "CENTER", plate, 30, 18
 WidgetConfig.ComboWidget = { anchor = "CENTER" , x = 0 ,y = VerticalAdjustment + 9.5 }
 WidgetConfig.RangeWidget = { anchor = "CENTER" , x = 0 ,y = VerticalAdjustment + 0 }
-WidgetConfig.DebuffWidget = { anchor = "BOTTOM", anchorRel = "TOP", x = 0 ,y = VerticalAdjustment - 13 }
+WidgetConfig.DebuffWidget = { anchor = "BOTTOM", anchorRel = "TOP", x = 0, y = VerticalAdjustment - 13, y2 = VerticalAdjustment - 5 }
 WidgetConfig.AbsorbWidget =	{ anchor="LEFT", x = 1 , y = VerticalAdjustment +1, w = 99, h = 6.5 }
-WidgetConfig.DebuffWidgetPlus = { anchor = "BOTTOM", anchorRel = "TOP", x = 0 ,y = VerticalAdjustment - 5 }
 WidgetConfig.QuestWidget = { anchor = "LEFT" , x = -12,y = VerticalAdjustment + 4}
 WidgetConfig.QuestWidgetNameOnly = { anchor = "LEFT" , x = -2,y = VerticalAdjustment - 2}
 WidgetConfig.ThreatPercentageWidget = { anchor = "RIGHT" , x = 13,y = VerticalAdjustment + 9 }
 WidgetConfig.RangeWidget = { anchor = "CENTER", x=0, y=VerticalAdjustment - 5, w = 99, h = 6.5 }
+WidgetConfig.ArenaWidget = { anchor = "LEFT" , x = -23, y = 13 }
 
 WidgetConfig._meta = true		-- tells the parser to ignore this table; ie. don't convert to "style" template
 Theme.WidgetConfig = WidgetConfig

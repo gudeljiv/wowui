@@ -30,7 +30,10 @@ NeatPlatesUtility.IsFriend = function(...) end
 --NeatPlatesUtility.IsGuildmate = function(...) end
 --NeatPlatesUtility.IsPartyMember = function(...) end
 NeatPlatesUtility.IsGuildmate = UnitIsInMyGuild
-NeatPlatesUtility.IsPartyMember = function(unitid) if not  unitid then return false end; return UnitInParty(unitid) or UnitInRaid(unitid) end
+NeatPlatesUtility.IsPartyMember = function(unitid)
+	if not unitid then return false end
+	return UnitInParty(unitid) or UnitInRaid(unitid)
+end
 
 local function RaidMemberCount()
 	if UnitInRaid("player") then
@@ -176,12 +179,12 @@ local function fade(intervals, duration, delay, onUpdate, onDone, timer, stop)
 	else onDone() end
 end
 
+
 -- Split guid
 local function ParseGUID(guid)
 	if guid then return strsplit("-", guid) end
 	return
 end
-
 
 NeatPlatesUtility.abbrevNumber = valueToString
 NeatPlatesUtility.copyTable = copytable
@@ -199,6 +202,14 @@ NeatPlatesUtility.ParseGUID = ParseGUID
 local ScannerName = "NeatPlatesScanningTooltip"
 local TooltipScanner = CreateFrame( "GameTooltip", ScannerName , nil, "GameTooltipTemplate" ); -- Tooltip name cannot be nil
 TooltipScanner:SetOwner( WorldFrame, "ANCHOR_NONE" );
+
+local function getTooltipLineText(i, ...)
+	local region = select(i, ...)
+	if region and region:GetObjectType() == "FontString" then
+			return region:GetText() -- string or nil
+	end
+	return nil
+end
 
 ------------------------------------------
 -- Unit Subtitles/NPC Roles
@@ -261,12 +272,34 @@ local function GetPetOwner(petName)
 	if not ownerText then return nil, nil end
 	local owner, _ = string.split("'",ownerText)
 	local ownerGUID = UnitGUID(string.split("-",owner))
+	local ownerIsPlayer = ownerGUID == UnitGUID("player")
 
-	return ownerGUID, owner -- This is the pet's owner
+	return ownerGUID, owner, ownerIsPlayer -- This is the pet's owner
+end
+
+local function GetTotemOwner(unitid)
+	TooltipScanner:ClearLines()
+	TooltipScanner:SetUnit(unitid)
+
+	local ownerText
+	if NEATPLATES_IS_CLASSIC then
+		ownerText = getTooltipLineText(5, TooltipScanner:GetRegions())
+	else
+		ownerText = _G[ScannerName.."TextLeft3"]:GetText()
+	end
+
+	if not ownerText then return nil, nil end
+	local owner, _ = string.split("'",ownerText)
+	local ownerGUID = UnitGUID(string.split("-",owner))
+	if not ownerGUID then return nil, nil end
+	local ownerIsPlayer = ownerGUID == UnitGUID("player")
+
+	return ownerGUID, owner, ownerIsPlayer -- This is the pet's owner
 end
 
 NeatPlatesUtility.GetUnitSubtitle = GetUnitSubtitle
 NeatPlatesUtility.GetPetOwner = GetPetOwner
+NeatPlatesUtility.GetTotemOwner = GetTotemOwner
 
 ------------------------------------------
 -- Quest Info
@@ -281,51 +314,79 @@ end
 
 local function GetUnitQuestInfo(unit)
     local unitid = unit.unitid
-    local questName
-    local questProgress
+    local questName, questUnit, questProgress
     local questList = {}
+    local questTexture = {[628564] = true, [3083385] = false}	-- 628564(Completed), 3083385(Incomplete/In progress)
+	local objectiveCount = 0
 
     if not unitid then return end
 
-    -- Tooltip:SetOwner(WorldFrame, "ANCHOR_NONE")
     TooltipScanner:ClearLines()
     TooltipScanner:SetUnit(unitid)
 
-    for line = 3, TooltipScanner:NumLines() do
-        local tooltipText, r, g, b = GetTooltipLineText( line )
+  	-- Get lines with quest information on them
+	local questCompleted = {}
+	local textureIds = ""
+    for line = 1, TooltipScanner:NumLines() do
+    	 -- Get amount of quest objectives through counting textures
+		local texture = _G[ScannerName .. "Texture" .. line]
 
-        -- If the Quest Name exists, the following tooltip lines list quest progress
-        if questName then
-            -- Strip out the name of the player that is on the quest.
-            local playerName, questNote = string.match(tooltipText, "(%g*) ?%- (.*)")
+		if texture then
+			if textureIds ~= nil and texture:GetTexture() ~= nil then
+				textureIds = textureIds..", "..texture:GetTexture()
+			elseif texture:GetTexture() ~= nil then
+				textureIds = texture:GetTexture()
+			end
+			if texture and questTexture[texture:GetTexture()] ~= nil then
+				objectiveCount = objectiveCount + 1
+				questCompleted[objectiveCount] = questTexture[texture:GetTexture()]
+			end
+		end
 
-            if (playerName == "") or (playerName == UnitName("player")) then
-                questProgress = questNote
-                table.insert(questList, {questName, questProgress})
-                --break
-            end
+    	if line > 1 then
+	    	local tooltipText, r, g, b = GetTooltipLineText( line )
+	      local questColor = (b == 0 and r > 0.99 and g > 0.82) -- Note: Quest Name Heading is colored Yellow. (As well as the player on that quest as of 8.2.5)
 
-        elseif b == 0 and r > 0.99 and g > 0.82 then
-            -- Note: Quest Name Heading is colored Yellow
-            questName = tooltipText
-        end
-    end
+	      if questColor then
+	      	questName = tooltipText
+	      	questList[questName] = questList[questName] or {}
+	      elseif questName and objectiveCount > 0 then
+					questList[questName][tooltipText] = questCompleted[#questCompleted+1 - objectiveCount]	-- Quest objective completed?
+					questList[questName]["texture"] = textureIds
 
-    return questList
+					-- Old method for checking quest completion as backup
+					--if questList[questName][tooltipText] == nil then
+					--	local questProgress, questTotal = string.match(tooltipText, "([0-9]+)\/([0-9]+)")
+					--	questProgress = tonumber(questProgress)
+					--	questTotal = tonumber(questTotal)
+					-- 	questList[questName][tooltipText] = not (not (questProgress and questTotal) or (questProgress and questTotal and questProgress < questTotal))
+					-- end
+	      	objectiveCount = objectiveCount - 1 -- Decrease objective Count
+	      end
+      end
+	  end
+
+	  if questList[UnitName("player")] then
+	  	return {player = questList[UnitName("player")]} -- Wrap it so the quest widget can parse it properly
+	  elseif not IsInGroup() then
+    	return questList
+	  end
+
+	  return {}
 end
 
 local arenaUnitIDs = {"arena1", "arena2", "arena3", "arena4", "arena5"}
 
 local function GetArenaIndex(unitname)
 	-- Kinda hackish.  would be faster to cache the arena names using event handler.  later!
-	-- if IsActiveBattlefieldArena() then
-	-- 	local unitid, name
-	-- 	for i = 1, #arenaUnitIDs do
-	-- 		unitid = arenaUnitIDs[i]
-	-- 		name = UnitName(unitid)
-	-- 		if name and (name == unitname) then return i end
-	-- 	end
-	-- end
+	if IsActiveBattlefieldArena() then
+		local unitid, name
+		for i = 1, #arenaUnitIDs do
+			unitid = arenaUnitIDs[i]
+			name = UnitName(unitid)
+			if name and (name == unitname) then return i end
+		end
+	end
 end
 
 
@@ -487,8 +548,8 @@ end
 -- Panel Helpers (Used to create interface panels)
 ------------------------------------------------------------------
 
-local function CreatePanelFrame(self, reference, listname, title)
-	local panelframe = CreateFrame( "Frame", reference, UIParent);
+local function CreatePanelFrame(self, reference, listname, title, backdrop)
+	local panelframe = CreateFrame( "Frame", reference, UIParent, backdrop);
 	panelframe.name = listname
 	panelframe.Label = panelframe:CreateFontString(nil, 'ARTWORK', 'GameFontNormalLarge')
 	panelframe.Label:SetPoint("TOPLEFT", panelframe, "TOPLEFT", 16, -16)
@@ -730,7 +791,7 @@ DropDownMenuFrame:SetSize(100, 100)
 DropDownMenuFrame:SetFrameStrata("TOOLTIP");
 DropDownMenuFrame:Hide()
 
-local Border = CreateFrame("Frame", nil, DropDownMenuFrame, BackdropTemplateMixin and "BackdropTemplate")
+local Border = CreateFrame("Frame", nil, DropDownMenuFrame, NeatPlatesBackdrop)
 Border:SetBackdrop(
 		{	bgFile = "Interface/DialogFrame/UI-DialogBox-Background-Dark",
             edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
@@ -822,11 +883,20 @@ local function ShowDropdownMenu(sourceFrame, menu, clickScript)
 			numOfItems = numOfItems + 1
 			button:SetScript("OnClick", clickScript)
 			button:SetScript("OnEnter", function(self)
+				self.isMouseover = true
 				if(self.tooltipText ~= nil) then
-					GameTooltip_AddNewbieTip(self, self.tooltipText, 1.0, 1.0, 1.0, self.newbieText);
+					C_Timer.After(0.25, function()
+						if self.isMouseover then
+							GameTooltip:SetOwner(UIParent, "ANCHOR_NONE");
+							GameTooltip:ClearAllPoints();
+							GameTooltip:SetText(self.tooltipText, 1.0, 1.0, 1.0, self.newbieText, true);
+							GameTooltip:SetPoint("BOTTOMLEFT", self, "TOPRIGHT", -12, -12);
+						end
+					end);
 				end
 			end);
 			button:SetScript("OnLeave", function(self)
+				self.isMouseover = false
 				if(self.tooltipText ~= nil) then
 					GameTooltip:Hide();
 				end
@@ -971,7 +1041,7 @@ do
 	end
 
 	function CreateColorBox(self, reference, parent, label, onOkay, r, g, b, a)
-		local colorbox = CreateFrame("Button", reference, parent, BackdropTemplateMixin and "BackdropTemplate")
+		local colorbox = CreateFrame("Button", reference, parent, NeatPlatesBackdrop)
 		colorbox:SetWidth(24)
 		colorbox:SetHeight(24)
 		colorbox:SetBackdrop({bgFile = "Interface\\ChatFrame\\ChatFrameColorSwatch",
@@ -1006,7 +1076,7 @@ end
 
 local function CreateEditBox(name, width, height, parent, anchorFrame, ...)
 	local frame = CreateFrame("ScrollFrame", name, parent, "UIPanelScrollFrameTemplate")
-	frame.BorderFrame = CreateFrame("Frame", nil, frame, BackdropTemplateMixin and "BackdropTemplate")
+	frame.BorderFrame = CreateFrame("Frame", nil, frame, NeatPlatesBackdrop)
 	local EditBox = CreateFrame("EditBox", nil, frame)
 	-- Margins	-- Bottom/Left are supposed to be negative
 	frame.Margins = {Left = 4, Right = 24, Top = 8, Bottom = 8, }
@@ -1108,9 +1178,8 @@ end
 local function CreateMultiStateOptions(self, name, labelArray, stateArray, width, parent, ...)
 	local frame = CreateFrame("Frame", "NeatPlatesPanelMultiState"..name, parent)
 
-
 	frame.states = stateArray;
-	--local labelArray = {"Combat", "Dungeon", "Raid", "Battleground", "World"}
+	--local labelArray = {"Combat", "Dungeon", "Raid", "Battleground", "Arena", "Scenario", "World"}
 	local lastItem
 	for i,label in pairs(labelArray) do
 		local button = CreateFrame("Button", "Button_"..label, frame, "NeatPlatesTriStateButtonTemplate")
@@ -1131,7 +1200,7 @@ local function CreateMultiStateOptions(self, name, labelArray, stateArray, width
 	end
 
 	-- Border
-	frame.BorderFrame = CreateFrame("Frame", nil, frame, BackdropTemplateMixin and "BackdropTemplate")
+	frame.BorderFrame = CreateFrame("Frame", nil, frame, NeatPlatesBackdrop)
 	frame.BorderFrame:SetPoint("TOPLEFT", 0, 5)
 	frame.BorderFrame:SetPoint("BOTTOMRIGHT", 3, -5)
 	frame.BorderFrame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background",
@@ -1260,7 +1329,7 @@ local function CreateScrollList(parent, name, lists, buttonFunc, width, height)
 				button.actions = {}
 				if item.buttons then
 					for _, action in pairs(item.buttons) do
-						local actionFrame = _G[name..item.value.."_Action_"..action] or CreateFrame("Button", name..button.index.."_Action_"..action, button, 'NeatPlatesOptionsListButtonTemplate')
+						local actionFrame = _G[name..button.index.."_Action_"..action] or CreateFrame("Button", name..button.index.."_Action_"..action, button, 'NeatPlatesOptionsListButtonTemplate')
 						actionFrame:SetWidth(15)
 						actionFrame:SetHeight(15)
 						table.insert(button.actions, actionFrame)
@@ -1363,10 +1432,6 @@ local function CreateAuraManagement(self, objectName, parent, width, height)
 
 	-- Frame border
 	frame.BorderFrame = CreateFrame("Frame", nil, frame, NeatPlatesBackdrop)
-	if not frame.BorderFrame.SetBackdrop then
-		Mixin(frame.BorderFrame, BackdropTemplateMixin)
-	end
-	
 	frame.BorderFrame:SetPoint("TOPLEFT", 0, 5)
 	frame.BorderFrame:SetPoint("BOTTOMRIGHT", 4, -15)
 	frame.BorderFrame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background",
@@ -1706,8 +1771,6 @@ local function EnableFreePositioning(frame)
 end
 
 PanelHelpers.EnableFreePositioning = EnableFreePositioning
-
-
 
 -- Custom target frame
 local function CreateTargetFrame()

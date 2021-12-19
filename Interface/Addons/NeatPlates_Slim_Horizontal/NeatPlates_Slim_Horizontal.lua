@@ -381,14 +381,12 @@ WidgetConfig.ThreatWheelWidget = { anchor =  "CENTER", x = 36 ,y = VerticalAdjus
 WidgetConfig.ComboWidget = { anchor = "CENTER" , x = 0 ,y = VerticalAdjustment + 4 }
 WidgetConfig.RangeWidget = { anchor = "CENTER" , x = 0 ,y = VerticalAdjustment + 0 }
 WidgetConfig.DebuffWidget = { anchor = "BOTTOM", anchorRel = "TOP", x = 0 ,y = VerticalAdjustment - 12 }
---if (UnitClassBase("player") == "Druid") or (UnitClassBase("player") == "Rogue") then
-	--WidgetConfig.DebuffWidgetPlus = { anchor = "BOTTOM", anchorRel = "TOP", x = 0 ,y = VerticalAdjustment - 12 }
---end
 WidgetConfig.AbsorbWidget =			{ anchor="LEFT", x = 1 , y = VerticalAdjustment + 1, h = 5, w = 99 }
 WidgetConfig.QuestWidget = { anchor = "LEFT" , x = -12,y = VerticalAdjustment + 1 }
 WidgetConfig.QuestWidgetNameOnly = { anchor = "LEFT" , x = -2,y = VerticalAdjustment - 2 }
 WidgetConfig.ThreatPercentageWidget = { anchor = "RIGHT" , x = 13,y = VerticalAdjustment + 6 }
 WidgetConfig.RangeWidget = { anchor = "CENTER", x=0, y=VerticalAdjustment - 4, h = 5, w = 99 }
+WidgetConfig.ArenaWidget = { anchor = "LEFT" , x = -24, y = 16 }
 
 WidgetConfig._meta = true		-- tells the parser to ignore this table; ie. don't convert to "style" template
 Theme.WidgetConfig = WidgetConfig

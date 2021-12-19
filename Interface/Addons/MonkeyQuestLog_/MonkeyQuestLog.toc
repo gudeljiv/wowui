@@ -1,0 +1,8 @@
+﻿## Interface: 11305
+## Title: MonkeyQuestLog v0.10.3
+## Notes: Replacement Quest Log.
+## Notes-deDE: Ersetzt den Questlog.
+## Author: Trentin, Jim-Bim
+## SavedVariables: mkql_Saved
+## Dependencies: MonkeyLibrary, MonkeyQuest
+MonkeyQuestLogFrame.xml

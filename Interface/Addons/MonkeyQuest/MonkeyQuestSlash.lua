@@ -501,11 +501,11 @@ function MonkeyQuestSlash_CmdHideBorder(bNoBorder)
 	MonkeyQuestConfig[MonkeyQuest.m_global].m_bNoBorder = bNoBorder;
 	
 	if (bNoBorder == true) then
-		-- MonkeyQuestFrame:SetBackdropBorderColor(0.0, 0.0, 0.0, 0.0);
+		MonkeyQuestFrame:SetBackdropBorderColor(0.0, 0.0, 0.0, 0.0);
 	elseif (MonkeyQuestConfig[MonkeyQuest.m_global].m_bCrashBorder == true) then
-		-- MonkeyQuestFrame:SetBackdropBorderColor(MONKEYQUEST_DEFAULT_CRASHCOLOUR.r, MONKEYQUEST_DEFAULT_CRASHCOLOUR.g, MONKEYQUEST_DEFAULT_CRASHCOLOUR.b, 1.0);
+		MonkeyQuestFrame:SetBackdropBorderColor(MONKEYQUEST_DEFAULT_CRASHCOLOUR.r, MONKEYQUEST_DEFAULT_CRASHCOLOUR.g, MONKEYQUEST_DEFAULT_CRASHCOLOUR.b, 1.0);
 	else
-		-- MonkeyQuestFrame:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r, TOOLTIP_DEFAULT_COLOR.g, TOOLTIP_DEFAULT_COLOR.b, 1.0);
+		MonkeyQuestFrame:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r, TOOLTIP_DEFAULT_COLOR.g, TOOLTIP_DEFAULT_COLOR.b, 1.0);
 	end
 	
 	-- check for MonkeyBuddy
@@ -965,11 +965,11 @@ function MonkeyQuestSlash_ToggleNoBorder()
 	MonkeyQuestConfig[MonkeyQuest.m_global].m_bNoBorder = not MonkeyQuestConfig[MonkeyQuest.m_global].m_bNoBorder;
 
 	if (MonkeyQuestConfig[MonkeyQuest.m_global].m_bNoBorder == true) then
-		-- MonkeyQuestFrame:SetBackdropBorderColor(0.0, 0.0, 0.0, 0.0);
+		MonkeyQuestFrame:SetBackdropBorderColor(0.0, 0.0, 0.0, 0.0);
 	elseif (MonkeyQuestConfig[MonkeyQuest.m_global].m_bCrashBorder == false) then
-		-- MonkeyQuestFrame:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r, TOOLTIP_DEFAULT_COLOR.g, TOOLTIP_DEFAULT_COLOR.b, 1.0);
+		MonkeyQuestFrame:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r, TOOLTIP_DEFAULT_COLOR.g, TOOLTIP_DEFAULT_COLOR.b, 1.0);
 	else
-		-- MonkeyQuestFrame:SetBackdropBorderColor(MONKEYQUEST_DEFAULT_CRASHCOLOUR.r, MONKEYQUEST_DEFAULT_CRASHCOLOUR.g, MONKEYQUEST_DEFAULT_CRASHCOLOUR.b, 1.0);
+		MonkeyQuestFrame:SetBackdropBorderColor(MONKEYQUEST_DEFAULT_CRASHCOLOUR.r, MONKEYQUEST_DEFAULT_CRASHCOLOUR.g, MONKEYQUEST_DEFAULT_CRASHCOLOUR.b, 1.0);
 	end
 
 	--MonkeyQuest_Refresh();

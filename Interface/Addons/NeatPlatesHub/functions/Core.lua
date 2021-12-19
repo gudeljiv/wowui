@@ -48,25 +48,7 @@ local function IsOffTanked(unit)
 
 	local unitid = unit.unitid
 	if unitid then
-		local targetOf = unitid.."target"	
-		local targetGUID = UnitGUID(targetOf)
-		local targetIsGuardian = false
-		local guardians = {
-			["61146"] = true, 	-- Black Ox Statue(61146)
-			["103822"] = true,	-- Treant(103822)
-			["61056"] = true, 	-- Primal Earth Elemental(61056)
-			["95072"] = true, 	-- Greater Earth Elemental(95072)
-		}
-
-		if targetGUID then
-			targetGUID = select(6, strsplit("-", UnitGUID(targetOf)))
-			targetIsGuardian = guardians[targetGUID]
-		end
-		
-		local targetIsTank = UnitIsUnit(targetOf, "pet") or targetIsGuardian or IsEnemyTanked(unit)
-
-		--if LocalVars.EnableOffTankHighlight and IsEnemyTanked(unit) then
-		if LocalVars.EnableOffTankHighlight and targetIsTank then
+		if LocalVars.EnableOffTankHighlight and IsEnemyTanked(unit) then
 			return true
 		end
 	end
@@ -84,12 +66,9 @@ local function ThreatExceptions(unit, isTank, noSafeColor)
 		["148716"] = true,
 	}
 
-	-- Classic temporary fix, if enemy unit is in combat & the player is either in a party or has a pet.
-	local playerIsTarget = unit.fixate or UnitIsUnit(unit.unitid.."target", "player")
-	local showClassicThreat = (unit.reaction ~= "FRIENDLY" and unit.type == "NPC" and playerIsTarget and (UnitInParty("player") or UnitExists("pet")))
-
 	-- Special case dealing with mobs from Reaping affix and units that fixate
-	if showClassicThreat or souls[unitGUID] or unit.fixate then
+	if souls[unitGUID] or unit.fixate then
+		local playerIsTarget = unit.fixate or UnitIsUnit(unit.unitid.."target", "player")
 		if (playerIsTarget and isTank) or (not playerIsTarget and not isTank) then
 				return noSafeColor or LocalVars.ColorThreatSafe
 		else
@@ -97,7 +76,6 @@ local function ThreatExceptions(unit, isTank, noSafeColor)
 		end
 	end
 end
-
 
 -- General
 local function DummyFunction() return end
@@ -186,7 +164,7 @@ local function CallbackUpdate()
 end
 
 local function EnableWatchers()
-	if LocalVars.WidgetDebuffStyle == 2 then NeatPlatesWidgets.UseSquareDebuffIcon(LocalVars.AuraScale) else NeatPlatesWidgets.UseWideDebuffIcon(LocalVars.AuraScale)end
+	NeatPlatesWidgets.SetAuraIconStyle(LocalVars.WidgetDebuffStyle, LocalVars.AuraScale)
 	--NeatPlatesUtility:EnableGroupWatcher()
 	NeatPlatesUtility:EnableHealerTrack()
 	--NeatPlatesWidgets:EnableTankWatch()
@@ -279,7 +257,6 @@ end
 
 local function ApplyScaleOptionCustomization(widget, defaults, style, styleDefault)
 	widget.DebuffWidget = ApplyScaleOptions(widget.DebuffWidget, defaults.DebuffWidget, LocalVars.WidgetAuraScaleOptions)
-	widget.DebuffWidgetPlus = ApplyScaleOptions(widget.DebuffWidgetPlus, defaults.DebuffWidgetPlus, LocalVars.WidgetAuraScaleOptions)
 end
 
 local function ApplyCustomBarSize(style, defaults)
@@ -309,8 +286,8 @@ local function ApplyCustomBarSize(style, defaults)
 		-- Things we don't want to apply width to
 		style.eliteicon.x = defaults.eliteicon.x * (LocalVars.FrameBarWidth or 1)
 		if style.eliteicon.width > 64 then style.eliteicon.width = defaults.eliteicon.width * (LocalVars.FrameBarWidth or 1) end
-		
-	
+
+
 		-- Defined elsewhere so they need to be handled differently
 		style.target.width = style.target.width * (LocalVars.FrameBarWidth or 1)
 		style.focus.width = style.focus.width * (LocalVars.FrameBarWidth or 1)
@@ -474,7 +451,7 @@ local function ValidateCombatRestrictedSettings()
 		for k, v in pairs(settings) do
 			if LastErrorMessage+5 < time and LocalVars[k] ~= v then
 				LastErrorMessage = time
-				print("|cffff6906NeatPlates:|cffffdd00 Some settings could not be applied properly due to certain combat restrictions.")
+				ChatFrame1:AddMessage("|cffff6906"..L['NeatPlates']..":|cffffdd00 "..L['Some settings could not be applied properly due to certain combat restrictions.'])
 			end
 		end
 	end
@@ -532,12 +509,14 @@ local function ApplyRequiredCVars(NeatPlatesOptions)
 	if InCombatLockdown() then return end
 	if NeatPlatesOptions.EnforceRequiredCVars then
 		if not NeatPlatesOptions.BlizzardScaling then SetCVar("nameplateMinScale", 1) end  -- General requirement, prevents issues with 'hitbox' of nameplates and scaling
+		if LocalVars.WidgetQuestIcon then SetCVar("showQuestTrackingTooltips", 1) end	-- Required for QuestIndicator
+		if LocalVars.ThreatGlowEnable then SetCVar("threatWarning", 3) end		-- Required for threat/aggro detection
 	end
 end
 
 
 -- From Neon.lua...
---local LocalVars = NeatPlatesHubDamageVariables
+local LocalVars = NeatPlatesHubDamageVariables
 
 local function OnInitialize(plate, theme)
 	if theme and theme.WidgetConfig then

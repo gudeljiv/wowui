@@ -6,6 +6,7 @@
 local ADDON, Addon = ...
 local Addon = LibStub('WildAddon-1.0'):NewAddon(ADDON, Addon, 'LibItemCache-2.0')
 Addon.IsRetail = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
+Addon.IsClassic = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
 Addon.Version = GetAddOnMetadata(ADDON, 'Version')
 
 local L = LibStub('AceLocale-3.0'):GetLocale(ADDON)
@@ -107,7 +108,7 @@ function Addon:OnEnable()
 
 		resetPlayer = true,
 		displayBank = true, closeBank = true, displayAuction = true, displayGuild = true, displayMail = true, displayTrade = true, displayCraft = true, displayScrapping = true,
-		flashFind = true, tipCount = true, fading = true,
+		flashFind = true, tipCount = true, fading = true, serverSort = true,
 
 		glowAlpha = 0.5,
 		glowQuality = true, glowNew = true, glowQuest = true, glowSets = true, glowUnusable = true,
@@ -121,11 +122,11 @@ function Addon:OnEnable()
 		leatherColor = {1, .6, .45},
 		enchantColor = {0.64, 0.83, 1},
 		inscribeColor = {.64, 1, .82},
-		engineerColor = {.68, .63, .25},
+		engineerColor = {0.36, 0.68, 0.52},
 		tackleColor = {0.42, 0.59, 1},
 		fridgeColor = {1, .5, .5},
 		gemColor = {1, .65, .98},
-		mineColor = {1, .81, .38},
+		mineColor = {0.65, 0.53, 0.25},
 		herbColor = {.5, 1, .5},
 	})
 

@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-Unit-3.0"
-local MINOR_VERSION = 90000 + (tonumber(("20200115020242"):match("%d+")) or 33333333333333)
+local MINOR_VERSION = tonumber(("20211111185719"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_Unit_MINOR_VERSION then
 	_G.DogTag_Unit_MINOR_VERSION = MINOR_VERSION
@@ -37,7 +37,7 @@ DogTag:AddTag("Unit", "Combos", {
 		'target', 'string;undef', '@undef'
 	},
 	ret = "number",
-	events = wow_700 and "UNIT_POWER_FREQUENT#$unit" or "UNIT_COMBO_POINTS",
+	events = (wow_700 or WOW_PROJECT_ID) and "UNIT_POWER_FREQUENT#$unit" or "UNIT_COMBO_POINTS",
 	doc = L["Return the number of combo points you have"],
 	example = '[Combos] => "5"; [Combos("pet"))] => "5"; [Combos("vehicle", "target"))] => "5"',
 	category = L["Miscellaneous"]

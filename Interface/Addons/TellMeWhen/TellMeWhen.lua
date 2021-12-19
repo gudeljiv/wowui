@@ -15,12 +15,11 @@
 -- ADDON GLOBALS AND LOCALS
 -- ---------------------------------
 
-local wow_classic = WOW_PROJECT_ID and WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
-if not wow_classic then
+if WOW_PROJECT_ID ~= WOW_PROJECT_CLASSIC then
 	StaticPopupDialogs["TMW_PROJECT_MISMATCH"] = {
 		-- This is not localizable, because AceLocale might not have loaded
 		-- (this is why we don't bother to load AceLocale until after these checks).
-		text = "You've installed TellMeWhen for Classic WoW, but this is retail WoW. Please double-check which version of TMW you downloaded.", 
+		text = ("You've installed TellMeWhen for Classic WoW, but this is %s. Please double-check which version of TMW you downloaded."):format(_G["EXPANSION_NAME" + GetExpansionLevel()]), 
 		button1 = EXIT_GAME,
 		button2 = CANCEL,
 		OnAccept = ForceQuit,
@@ -33,10 +32,10 @@ if not wow_classic then
 	return
 end
 
-TELLMEWHEN_VERSION = "8.7.6"
+TELLMEWHEN_VERSION = "9.1.2"
 
 TELLMEWHEN_VERSION_MINOR = ""
-local projectVersion = "8.7.5-classic-2-g2ad1e5bf" -- comes out like "6.2.2-21-g4e91cee"
+local projectVersion = "9.1.2-classic" -- comes out like "6.2.2-21-g4e91cee"
 if projectVersion:find("project%-version") then
 	TELLMEWHEN_VERSION_MINOR = "dev"
 elseif strmatch(projectVersion, "%-%d+%-") then
@@ -44,11 +43,11 @@ elseif strmatch(projectVersion, "%-%d+%-") then
 end
 
 TELLMEWHEN_VERSION_FULL = TELLMEWHEN_VERSION .. " Classic " .. TELLMEWHEN_VERSION_MINOR
-TELLMEWHEN_VERSIONNUMBER = 87601 -- NEVER DECREASE THIS NUMBER (duh?).  IT IS ALSO ONLY INTERNAL (for versioning of)
+TELLMEWHEN_VERSIONNUMBER = 91200 -- NEVER DECREASE THIS NUMBER (duh?).  IT IS ALSO ONLY INTERNAL (for versioning of)
 
 TELLMEWHEN_FORCECHANGELOG = 86005 -- if the user hasn't seen the changelog until at least this version, show it to them.
 
-if TELLMEWHEN_VERSIONNUMBER > 88000 or TELLMEWHEN_VERSIONNUMBER < 87000 then
+if TELLMEWHEN_VERSIONNUMBER > 92000 or TELLMEWHEN_VERSIONNUMBER < 91000 then
 	-- safety check because i accidentally made the version number 414069 once
 	return error("TELLMEWHEN: THE VERSION NUMBER IS SCREWED UP OR MAYBE THE SAFETY LIMITS ARE WRONG")
 end
@@ -2769,9 +2768,19 @@ do -- TMW:UpdateViaCoroutine()
 		NumCoroutinesQueued = NumCoroutinesQueued + 1
 	end
 
+	local function TryPreloadOptions()
+		if TMW.db.global.AllowCombatConfig and not TMW.ALLOW_LOCKDOWN_CONFIG then
+			TMW.ALLOW_LOCKDOWN_CONFIG = true
+			TMW:LoadOptions()
+			return true
+		end
+		return false
+	end
+
 	TMW:RegisterEvent("PLAYER_REGEN_DISABLED", function()
+		TryPreloadOptions()
 		if TMW.Initialized then
-			if not TMW.ALLOW_LOCKDOWN_CONFIG and not TMW.Locked then
+			if not TMW.ALLOW_LOCKDOWN_CONFIG and not TMW.db.profile.Locked then
 				TMW:LockToggle()
 			end
 		end
@@ -2780,9 +2789,7 @@ do -- TMW:UpdateViaCoroutine()
 	-- Auto-loads options if AllowCombatConfig is enabled.
 	TMW:RegisterSelfDestructingCallback("TMW_GLOBAL_UPDATE", function()
 		if TMW.db.global.AllowCombatConfig and not TMW.ALLOW_LOCKDOWN_CONFIG then
-			TMW.ALLOW_LOCKDOWN_CONFIG = true
-			TMW:LoadOptions()
-			return true -- Signal callback destruction
+			return TryPreloadOptions()
 		end
 	end)
 end
@@ -3000,6 +3007,14 @@ function TMW:SlashCommand(str)
 		else
 			TMW:Print("Bad syntax. Usage: /tmw [enable||disable||toggle] [profile||global] groupID iconID")
 		end
+	elseif cmd == "counter" then
+		local name, operation, value = arg2, arg3, tonumber(arg4)
+		if value == nil or arg2 == nil or arg3 == nil then
+			TMW:Print("Usage: /tmw counter counter-name [+||-||/||*||=] number. E.g. '/tmw counter casts + 1'")
+			return
+		end
+		TMW:ChangeCounter(name, operation, value)
+
 	elseif cmd == "cpu" then
 		if arg2 == "reset" then
 			TMW:CpuProfileReset()

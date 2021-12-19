@@ -64,7 +64,6 @@ local function ColorFunctionBlack()
 	return HubData.Colors.Black
 end
 
-
 --[[
 unit.threatValue
 	0 - Unit has less than 100% raw threat (default UI shows no indicator)
@@ -105,6 +104,7 @@ end
 2 - Unit is mobUnit's primary target, and another unit has 100% or higher raw threat (default UI shows orange indicator)
 3 - Unit is mobUnit's primary target, and no other unit has 100% or higher raw threat (default UI shows red indicator)
 --]]
+
 
 local function ColorFunctionDamage(unit, glow)
 	--if IsOffTanked(unit) and not glow then return LocalVars.ColorAttackingOtherTank end
@@ -323,22 +323,24 @@ end
 local function CastBarDelegate(unit, school)
 	local color, alpha
 	local schoolColor = {
-		[1] = LocalVars.ColorSchoolPhysical, -- Physical
-		[2] = LocalVars.ColorSchoolHoly, -- Holy
-		[4] = LocalVars.ColorSchoolFire, -- Fire
-		[8] = LocalVars.ColorSchoolNature, -- Nature
-		[16] = LocalVars.ColorSchoolFrost, -- Frost
-		[32] = LocalVars.ColorSchoolShadow, -- Shadow
-		[64] = LocalVars.ColorSchoolArcane, -- Arcane
+		[1] = LocalVars.ColorSchoolPhysical, 	-- Physical
+		[2] = LocalVars.ColorSchoolHoly, 			-- Holy
+		[4] = LocalVars.ColorSchoolFire, 			-- Fire
+		[8] = LocalVars.ColorSchoolNature,		-- Nature
+		[16] = LocalVars.ColorSchoolFrost, 		-- Frost
+		[32] = LocalVars.ColorSchoolShadow,		-- Shadow
+		[64] = LocalVars.ColorSchoolArcane, 	-- Arcane
 	}
 
 
-	if LocalVars.ColorCastBySchool and school then
-		color = schoolColor[school]
-	elseif unit.interrupted then
+	if unit.interrupted then
 		color = LocalVars.ColorIntpellCast
 	elseif unit.spellInterruptible then
-		color = LocalVars.ColorNormalSpellCast
+		if LocalVars.ColorCastBySchool and school and schoolColor[school] then
+			color = schoolColor[school]
+		else
+			color = LocalVars.ColorNormalSpellCast
+		end
 	else color = LocalVars.ColorUnIntpellCast end
 
 	if (unit.reaction == "FRIENDLY" and not LocalVars.SpellCastEnableFriendly) or
@@ -653,6 +655,9 @@ end
 
 local function OnVariableChange(vars)
 	LocalVars = vars
+	if (EnemyBarFunctions[LocalVars.EnemyBarColorMode] == ColorFunctionByThreat) or LocalVars.ThreatGlowEnable then
+		SetCVar("threatWarning", 3)
+	end
 end
 HubData.RegisterCallback(OnVariableChange)
 

@@ -43,9 +43,12 @@ L["Other Options"] = true
 L["Emulate Target Nameplate"] = true
 L["Disable Cast Bars"] = true
 L["Force Multi-Lingual Font (Requires /reload)"] = true
+L["Force Health Updates"] = true
+L["Forces health to update every .25sec, try this if you are having health update issues"] = true
 L["Use Frequent Health Updates"] = true
 L["Use Blizzard Scaling"] = true
 L["Use Blizzard Name Visibility"] = true
+L["Use Blizzard Bar Widgets"] = true
 L["Outline Override"] = true
 	L["Thin Outline"] = true
 	L["Thick Outline"] = true
@@ -57,9 +60,11 @@ L["Enforce required CVars"] = true
 L["Always keep Target Nameplate on Screen"] = true
 L["Stacking Nameplates"] = true
 L["Show Friendly NPCs Nameplates"] = true
-L["Max Distance"] = true
+L["Nameplate Max Distance"] = true
 L["Occluded Alpha Multiplier"] = true
 L["The opacity multiplier for units occluded by line of sight"] = true -- Tooltip
+L["Non-target Alpha"] = true
+L["The opacity of nameplates when not selected, there is also options for this per profile"] = true -- Tooltip
 L["Minimum Alpha"] = true
 L["The minimum opacity of nameplates for 'Nameplate Minimum Alpha Distance'"] = true -- Tooltip
 L["Maximum Alpha"] = true
@@ -126,6 +131,14 @@ L["Headline View (Text-Only)"] = true
 L["Force Headline on Neutral Units"] = true
 L["Force Headline while Out-of-Combat"] = true
 L["Force Headline on Mini-Mobs"] = true
+
+
+L["Force Default Nameplates"] = true
+L["Enemy Players"] = true
+L["Friendly Players"] = true
+L["Enemy NPCs"] = true
+L["Friendly NPCs"] = true
+L["Neutral NPCs"] = true
 
 ------------------------------
 -- Health Bar View
@@ -251,10 +264,11 @@ L["Hide Aura Widget in Headline Mode"] = true
 L["Icon Style"] = true
 	-- Icon Style Dropdown
 	L["Wide"] = true
-	L["Compact (May require UI reload to take effect)"] = true
+	L["Compact"] = true
+	L["Blizzlike"] = true
 
 L["Sorting Mode"] = true
-	-- Aura Sorting Dropdown
+		-- Aura Sorting Dropdown
 	L["By Duration"] = true
 
 L["Aura Alignment"] = true
@@ -468,6 +482,7 @@ L["Castbar Duration Style"] = true
 	L["Time Elapsed"] = true
 	L["Time Elapsed/Cast Time"] = true
 L["Show Spell Icon"] = true
+L["Show Name of Spell"] = true
 L["Show Target of Spell"] = true
 L["Show Enemy Cast Bars"] = true
 L["Show Friendly Cast Bars"] = true
@@ -516,7 +531,9 @@ L["Class Icon"] = true
 L["Class Icon Scale Options"] = true
 L["Show Totem Art"] = true
 L["Show Quest Icon on Units"] = true
-L["Show Personal Resource on Target"] = true
+L["Show Personal Resource"] = true
+	L["Enemy Units"] = true
+	L["Friendly Units"] = true
 L["Personal Resource Style"] = true
 	L["Blizzlike"] = true
 	L["NeatPlates"] = true
@@ -576,16 +593,16 @@ L["spelltext"] = "Castbar Spell Text"
 L["spelltarget"] = "Castbar Spell Target"
 L["healthbar"] = "Healthbar"
 L["powerbar"] = "Powerbar"
---L["targetindicator_arrowleft"] = 
---L["targetindicator_arrowright"] = 
+--L["targetindicator_arrowleft"] =
+--L["targetindicator_arrowright"] =
 L["threatborder"] = "Threat Glow"
 L["healthborder"] = "Healthbar Border"
 L["skullicon"] = "Skull Icon"
 L["durationtext"] = "Duration/Cast time Text"
 L["castborder"] = "Castbar Border"
---L["targetindicator_arrowsides"] = 
+--L["targetindicator_arrowsides"] =
 L["highlight"] = "Highlight"
---L["targetindicator_arrowtop"] = 
+--L["targetindicator_arrowtop"] =
 --L["rangeindicator"] = "Range Indicator"
 L["raidicon"] = "Raid Icon"
 L["ComboWidget"] = "Personal Resource Widget"
@@ -593,7 +610,6 @@ L["AbsorbWidget"] = "Absorb Widget"
 L["QuestWidgetNameOnly"] = "Quest Widget(Headline View)"
 L["ThreatPercentageWidget"] = "Threat Percent Widget"
 L["DebuffWidget"] = "Aura Widget"
---L["DebuffWidgetPlus"] = "Aura Widget(Combo Points)"
 L["ThreatLineWidget"] = "Threat Line Widget"
 L["TotemIcon"] = "Totem Icon"
 --L["ThreatWheelWidget"] = "Threat Wheel Widget"
@@ -652,7 +668,6 @@ L["AbsorbWidget_tooltip"] = "The absorb overlay for healthbars" -- Unify all thi
 L["QuestWidgetNameOnly_tooltip"] = "Quest icon for 'Headline-view'"
 L["ThreatPercentageWidget_tooltip"] = "The threat percentage text"
 L["DebuffWidget_tooltip"] = "Aura widget"
---L["DebuffWidgetPlus_tooltip"] = "Same as 'Aura Widget', but used when combo points are enabled(Not all themes use this)"
 L["ThreatLineWidget_tooltip"] = "The 'Tug-o-Threat' widget"
 L["TotemIcon_tooltip"] = "The totem icon"
 --L["ThreatWheelWidget_tooltip"] = "Placeholder Tooltip"
@@ -743,6 +758,7 @@ L["Offset Y"] = true
 -- Main Panel
 L["Might resolve some issues with health not updating properly"] = true
 L["Allows some CVars to work(Might require a /reload)"] = true
+L["Use default blizzard bar widgets where applicable rather than the simpler widget bar built into NeatPlates (Might require a /reload)"] = true
 L["CVars could not applied due to combat"] = true
 L["This feature is highly experimental, use on your own risk"] = true
 
@@ -776,6 +792,8 @@ L["When aura durations should start to display tenths of a second"] = true
 -- Warnings about unfinished stuff
 L["powerbar_unfinished_warning"] = "The powerbar still has some overlap issues with some themes,\nyou might need to adjust this yourself in the 'Theme Customization'"
 
+-- General warnings
+L["Some settings could not be applied properly due to certain combat restrictions."] = true
 
 -- Classic Specific
 L["Couldn't update the targets role."] = true

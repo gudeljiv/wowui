@@ -8,6 +8,7 @@ local Search = LibStub('LibItemSearch-1.2')
 local Sort = Addon:NewModule('Sorting', 'MutexDelay-1.0')
 
 Sort.Proprieties = {
+  'set',
   'class', 'subclass', 'equip',
   'quality',
   'icon',
@@ -18,13 +19,12 @@ Sort.Proprieties = {
 
 --[[ Process ]]--
 
-function Sort:Start(owner, bags, event)
+function Sort:Start(owner, bags)
   if not self:CanRun() then
     return
   end
 
-  self.owner, self.bags, self.event = owner, bags, event
-  self:RegisterEvent('PLAYER_REGEN_DISABLED', 'Stop')
+  self.owner, self.bags = owner, bags
   self:SendSignal('SORTING_STATUS', owner, bags)
   self:Run()
 end
@@ -39,7 +39,6 @@ function Sort:Run()
 end
 
 function Sort:Iterate()
-  local todo = false
   local spaces = self:GetSpaces()
   local families = self:GetFamilies(spaces)
 
@@ -55,7 +54,8 @@ function Sort:Iterate()
         local other = from.item
 
         if item.id == other.id and stackable(other) then
-          todo = not self:Move(from, target) or todo
+          self:Move(from, target)
+          self:Delay(0.05, 'Run')
         end
       end
     end
@@ -65,12 +65,15 @@ function Sort:Iterate()
     return math.abs(item.space.index - goal.index)
   end
 
-  for _, family in pairs(families) do
+  for _, family in ipairs(families) do
     local order, spaces = self:GetOrder(spaces, family)
     local n = min(#order, #spaces)
 
     for index = 1, n do
-      local item, goal = order[index], spaces[index]
+      local goal = spaces[index]
+      local item = order[index]
+      item.sorted = true
+
       if item.space ~= goal then
         local distance = moveDistance(item, goal)
 
@@ -85,23 +88,19 @@ function Sort:Iterate()
           end
         end
 
-        todo = not self:Move(item.space, goal) or todo
-      else
-        item.placed = true
+        self:Move(item.space, goal)
+        self:Delay(0.05, 'Run')
       end
     end
   end
 
-  if todo then
-    self:RegisterEvent(self.event, function() self:Delay(0.01, 'Run') end)
-  else
+  if not self:Delaying('Run') then
     self:Stop()
   end
 end
 
 function Sort:Stop()
   self:SendSignal('SORTING_STATUS')
-  self:UnregisterAllEvents()
 end
 
 
@@ -116,7 +115,8 @@ function Sort:GetSpaces()
       local item = Addon:GetItemInfo(self.owner, bag, slot)
       tinsert(spaces, {index = #spaces, bag = bag, slot = slot, family = container.family, item = item})
 
-      item.class = item.link and Search:ForQuest(item.link) and LE_ITEM_CLASS_QUESTITEM or item.class
+      item.class = item.link and Search:ForQuest(item.link) and Enum.ItemClass.Questitem or item.class
+      item.set = item.link and Search:InSet(item.link) and 0 or 1
       item.space = spaces[#spaces]
     end
   end
@@ -125,18 +125,18 @@ function Sort:GetSpaces()
 end
 
 function Sort:GetFamilies(spaces)
-  local families = {}
-  for _, space in pairs(spaces) do
-    families[space.family] = true
+  local set = {}
+  for _, space in ipairs(spaces) do
+    set[space.family] = true
   end
 
-  local sorted = {}
-  for family in pairs(families) do
-    tinsert(sorted, family)
+  local list = {}
+  for family in pairs(set) do
+    tinsert(list, family)
   end
 
-  sort(sorted, function(a, b) return a > b end)
-  return sorted
+  sort(list, function(a, b) return a > b end)
+  return list
 end
 
 function Sort:GetOrder(spaces, family)
@@ -144,7 +144,7 @@ function Sort:GetOrder(spaces, family)
 
   for _, space in ipairs(spaces) do
     local item = space.item
-    if item.id and not item.placed and self:FitsIn(item.id, family) then
+    if item.id and not item.sorted and self:FitsIn(item.id, family) then
       tinsert(order, space.item)
     end
 
@@ -165,10 +165,11 @@ function Sort:CanRun()
 end
 
 function Sort:FitsIn(id, family)
-  return
-    family == 0 or
-    (Addon.IsRetail and bit.band(GetItemFamily(id), family) > 0 or GetItemFamily(id) == family) and
-    select(9, GetItemInfo(id)) ~= 'INVTYPE_BAG'
+  if family == 9 then
+    return GetItemFamily(id) == 256
+  end
+
+  return family == 0 or (bit.band(GetItemFamily(id), family) > 0 and select(9, GetItemInfo(id)) ~= 'INVTYPE_BAG')
 end
 
 function Sort.Rule(a, b)
@@ -185,7 +186,7 @@ function Sort.Rule(a, b)
 end
 
 function Sort:Move(from, to)
-  if from.locked or to.locked then
+  if from.locked or to.locked or (to.item.id and not self:FitsIn(to.item.id, from.family)) then
     return
   end
 
