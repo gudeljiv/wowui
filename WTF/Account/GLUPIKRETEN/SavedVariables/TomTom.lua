@@ -7,24 +7,24 @@ TomTomDB = {
 		["Battlearm - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
-		["Nitwit - Dreadnaught"] = "Default",
-		["Greenwise - Golemagg"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
+		["Mxym - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
-		["Pitchwise - Dreadnaught"] = "Default",
-		["Mxys - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Mxym - Golemagg"] = "Default",
-		["Mxzq - Golemagg"] = "Default",
+		["Mxys - Golemagg"] = "Default",
+		["Pitchwise - Dreadnaught"] = "Default",
+		["Greenwise - Golemagg"] = "Default",
+		["Nitwit - Dreadnaught"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -72,24 +72,24 @@ TomTomWaypointsM = {
 		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
-		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Vermins - Stonespine"] = "Vermins - Stonespine",
-		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
-		["Mxys - Golemagg"] = "Mxys - Golemagg",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
 		["Koloman - Golemagg"] = "Koloman - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
-		["Mxym - Golemagg"] = "Mxym - Golemagg",
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Mxys - Golemagg"] = "Mxys - Golemagg",
+		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -104,19 +104,19 @@ TomTomWaypointsM = {
 		},
 		["Dmitar - Golemagg"] = {
 		},
-		["Nitwit - Dreadnaught"] = {
+		["Mxzq - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Mxym - Golemagg"] = {
+		},
+		["Vermin - Golemagg"] = {
 		},
 		["Vermins - Stonespine"] = {
 		},
-		["Pitchwise - Dreadnaught"] = {
-		},
-		["Mxys - Golemagg"] = {
-		},
-		["Jaroslav - Golemagg"] = {
-		},
 		["Battlearm - Hydraxian Waterlords"] = {
+		},
+		["Mxyzptlk - Golemagg"] = {
+		},
+		["Testxv - Golemagg"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
@@ -124,7 +124,7 @@ TomTomWaypointsM = {
 		},
 		["Koloman - Golemagg"] = {
 		},
-		["Vermin - Golemagg"] = {
+		["Jaroslav - Golemagg"] = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 		},
@@ -132,13 +132,13 @@ TomTomWaypointsM = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Testxv - Golemagg"] = {
+		["Mxys - Golemagg"] = {
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Pitchwise - Dreadnaught"] = {
 		},
-		["Mxym - Golemagg"] = {
+		["Greenwise - Golemagg"] = {
 		},
-		["Mxzq - Golemagg"] = {
+		["Nitwit - Dreadnaught"] = {
 		},
 	},
 }

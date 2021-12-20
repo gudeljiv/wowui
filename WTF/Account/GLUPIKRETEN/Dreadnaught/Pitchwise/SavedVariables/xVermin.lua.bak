@@ -1,14 +1,20 @@
 
 xKillCount = {
 	["show"] = true,
+	["position"] = {
+		["y"] = -283.793212890625,
+		["x"] = 35.4827766418457,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
+	},
+	["experience"] = {
+		["pulltotal"] = 14,
+		["totaltotal"] = 5553,
+	},
 	["killLog"] = {
-		["Vile Familiar"] = {
-			["name"] = "Vile Familiar",
-			["count"] = 12,
-		},
 		["Mottled Boar"] = {
 			["name"] = "Mottled Boar",
-			["count"] = 11,
+			["count"] = 17,
 		},
 		["Scorpid Worker"] = {
 			["name"] = "Scorpid Worker",
@@ -18,15 +24,17 @@ xKillCount = {
 			["name"] = "Sarkoth",
 			["count"] = 1,
 		},
-	},
-	["experience"] = {
-		["totaltotal"] = 4723,
-		["pulltotal"] = 39,
-	},
-	["position"] = {
-		["y"] = -283.793212890625,
-		["x"] = 35.4827766418457,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
+		["Felstalker"] = {
+			["name"] = "Felstalker",
+			["count"] = 7,
+		},
+		["Yarrog Baneshadow"] = {
+			["name"] = "Yarrog Baneshadow",
+			["count"] = 1,
+		},
+		["Vile Familiar"] = {
+			["name"] = "Vile Familiar",
+			["count"] = 17,
+		},
 	},
 }

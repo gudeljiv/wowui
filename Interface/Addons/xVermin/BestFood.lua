@@ -77,7 +77,7 @@ function NeedsFoodBadly:UpdateMacros()
 	for bag = 0, 4 do
 		for slot = 1, GetContainerNumSlots(bag) do
 			local id = GetContainerItemID(bag, slot)
-			print(GetContainerNumSlots(bag),bag,slot,id)
+			
 			if not best.food[id] and self:IsUsableFood(self.Food[id]) then
 				best.food[id] = self.Food[id]
 			end
@@ -124,7 +124,7 @@ function NeedsFoodBadly:UpdateMacros()
 		defaultFoodMacro:gsub(
 		"<%a+>",
 		{
-			["<food>"] = "item:" .. tostring(best.food[1] and best.food[1].id or 0),
+			["<food>"] = "item:" .. tostring(best.food[1] and best.food[1].id or 00),
 			["<buffFood>"] = "item:" .. tostring(best.buffFood[1] and best.buffFood[1].id or 0),
 			["<bandage>"] = "item:" .. tostring(best.bandage[1] and best.bandage[1].id or 0),
 			["<hPotions>"] = self:BuildSequence(best.healthstone, best.hPotion)
@@ -140,6 +140,7 @@ function NeedsFoodBadly:UpdateMacros()
 			--["<mPotions>"] = 'item:'..tostring(best.mPotion[1] and best.mPotion[1].id or 0)
 		}
 	)
+	print(foodMacro)
 	CreateOrUpdateMacro("Food", foodMacro)
 	CreateOrUpdateMacro("Drink", drinkMacro)
 
@@ -167,16 +168,16 @@ function NeedsFoodBadly:Sorted(t, f)
 end
 
 function NeedsFoodBadly:IsUsableFood(food)
-	if(food) then
-		return not (
-				not (
+	
+		return not not
+				 (
 					food 
 					and food.lvl <= UnitLevel("player") 
 					and food.hp 
 					and not (food.hp5 or food.mp5 or food.str or food.agi or food.stam or food.int or food.spi)
 				)
-		)
-	end
+		
+	
 end
 
 function NeedsFoodBadly:IsUsablePetFood(food)

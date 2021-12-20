@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 3602,
 	["lastSanitation"] = 3,
+	["session"] = 3611,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -165,8 +165,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [21]
 		{
@@ -546,8 +546,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [69]
 		{
@@ -805,8 +805,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [102]
 		{
@@ -946,8 +946,8 @@ BugGrabberDB = {
 		}, -- [119]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["time"] = "2020/08/02 20:13:03",
 			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
 		}, -- [120]
 		{
@@ -1420,8 +1420,8 @@ BugGrabberDB = {
 		}, -- [179]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["time"] = "2020/08/19 21:35:15",
 			["session"] = 1943,
+			["time"] = "2020/08/19 21:35:15",
 			["counter"] = 6,
 		}, -- [180]
 		{
@@ -2360,8 +2360,8 @@ BugGrabberDB = {
 		}, -- [297]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\ClickToMove\\ClickToMove.toc",
-			["time"] = "2020/09/30 12:15:00",
 			["session"] = 2740,
+			["time"] = "2020/09/30 12:15:00",
 			["counter"] = 10,
 		}, -- [298]
 		{
@@ -3169,14 +3169,14 @@ BugGrabberDB = {
 		}, -- [399]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Examiner\\Examiner.toc",
-			["session"] = 3191,
 			["time"] = "2020/10/14 21:40:43",
+			["session"] = 3191,
 			["counter"] = 2,
 		}, -- [400]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\NovaInstanceTracker\\NovaInstanceTracker.toc",
-			["session"] = 3191,
 			["time"] = "2020/10/14 21:40:43",
+			["session"] = 3191,
 			["counter"] = 2,
 		}, -- [401]
 		{
@@ -3665,8 +3665,8 @@ BugGrabberDB = {
 		}, -- [462]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["time"] = "2020/08/13 21:31:07",
 			["session"] = 3397,
+			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 12,
 		}, -- [463]
 		{
@@ -3756,8 +3756,8 @@ BugGrabberDB = {
 		}, -- [474]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\KillTrack\\KillTrack.toc",
-			["time"] = "2020/10/22 09:09:38",
 			["session"] = 3440,
+			["time"] = "2020/10/22 09:09:38",
 			["counter"] = 2,
 		}, -- [475]
 		{
@@ -3981,25 +3981,19 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [503]
 		{
-			["message"] = "(null)",
-			["session"] = 3601,
-			["time"] = "2020/07/24 16:00:06",
-			["counter"] = 216,
-		}, -- [504]
-		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\AnchorWidget.lua:66: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2021/12/15 19:33:38",
 			["stack"] = "[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\core\\OO.lua\"]:59: in function <Interface\\AddOns\\AdiBags\\core\\OO.lua:51>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\core\\Layout.lua\"]:33: in function `CreateBagAnchor'\n[string \"@Interface\\AddOns\\AdiBags\\core\\Core.lua\"]:112: in function <Interface\\AddOns\\AdiBags\\core\\Core.lua:81>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:70: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:498: in function `InitializeAddon'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:613: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:605>",
 			["session"] = 3602,
 			["counter"] = 4,
-		}, -- [505]
+		}, -- [504]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\core\\Layout.lua:36: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2021/12/15 19:33:38",
 			["stack"] = "[string \"@Interface\\AddOns\\AdiBags\\core\\Layout.lua\"]:36: in function `CreateBagAnchor'\n[string \"@Interface\\AddOns\\AdiBags\\core\\Core.lua\"]:112: in function <Interface\\AddOns\\AdiBags\\core\\Core.lua:81>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:70: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:498: in function `InitializeAddon'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:613: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:605>",
 			["session"] = 3602,
 			["counter"] = 4,
-		}, -- [506]
+		}, -- [505]
 		{
 			["message"] = "Interface\\AddOns\\AtlasLootClassic\\GUI\\GUI.lua:936: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2021/12/15 19:33:38",
@@ -4007,7 +4001,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\AtlasLootClassic\\GUI\\GUI.lua\"]:936: in function `Create'\n[string \"@Interface\\AddOns\\AtlasLootClassic\\GUI\\GUI.lua\"]:819: in function `func'\n[string \"@Interface\\AddOns\\AtlasLootClassic\\AtlasLoot-v1.5.6.1050006.lua\"]:38: in function <Interface\\AddOns\\AtlasLootClassic\\AtlasLoot.lua:30>",
 			["session"] = 3602,
 			["counter"] = 7,
-		}, -- [507]
+		}, -- [506]
 		{
 			["message"] = "[string \"Atr_Error_Frame:OnLoad\"]:1: attempt to call method 'SetBackdropColor' (a nil value)",
 			["time"] = "2021/12/15 19:33:38",
@@ -4015,7 +4009,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 3602,
 			["counter"] = 8,
-		}, -- [508]
+		}, -- [507]
 		{
 			["message"] = "[string \"Atr_Confirm_Frame:OnLoad\"]:1: attempt to call method 'SetBackdropColor' (a nil value)",
 			["time"] = "2021/12/15 19:33:38",
@@ -4023,7 +4017,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 3602,
 			["counter"] = 8,
-		}, -- [509]
+		}, -- [508]
 		{
 			["message"] = "[string \"Atr_Mask:OnLoad\"]:1: attempt to call method 'SetBackdropColor' (a nil value)",
 			["time"] = "2021/12/15 19:33:38",
@@ -4031,7 +4025,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 3602,
 			["counter"] = 8,
-		}, -- [510]
+		}, -- [509]
 		{
 			["message"] = "...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0-78.lua:568: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2021/12/15 19:33:39",
@@ -4039,14 +4033,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\ChocolateBar\\libs\\AceConfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0-78.lua\"]:568: in main chunk",
 			["session"] = 3602,
 			["counter"] = 8,
-		}, -- [511]
+		}, -- [510]
 		{
 			["message"] = "Interface\\AddOns\\ChocolateBar\\Core.lua:142: attempt to call method 'AddToBlizOptions' (a nil value)",
 			["time"] = "2021/12/15 19:33:39",
 			["stack"] = "[string \"@Interface\\AddOns\\ChocolateBar\\Core.lua\"]:142: in function <Interface\\AddOns\\ChocolateBar\\Core.lua:129>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:70: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:498: in function `InitializeAddon'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:613: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:605>",
 			["session"] = 3602,
 			["counter"] = 8,
-		}, -- [512]
+		}, -- [511]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Core-1.13.61-49-gbedeb53.lua:4686: attempt to call method '?' (a nil value)",
 			["time"] = "2021/12/15 19:33:39",
@@ -4054,7 +4048,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\DBM-Core\\DBM-Core-1.13.61-49-gbedeb53.lua\"]:4686: in main chunk",
 			["session"] = 3602,
 			["counter"] = 8,
-		}, -- [513]
+		}, -- [512]
 		{
 			["message"] = "Interface\\AddOns\\DBM-Core\\DBM-Flash.lua:18: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2021/12/15 19:33:39",
@@ -4062,7 +4056,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\DBM-Core\\DBM-Flash.lua\"]:18: in main chunk",
 			["session"] = 3602,
 			["counter"] = 8,
-		}, -- [514]
+		}, -- [513]
 		{
 			["message"] = "Interface\\AddOns\\MonkeyQuest\\MonkeyQuest-2.10.3.lua:402: attempt to call method 'SetBackdropColor' (a nil value)",
 			["time"] = "2021/12/15 19:33:57",
@@ -4070,7 +4064,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\MonkeyQuest\\MonkeyQuest-2.10.3.lua\"]:402: in function `pSlashCommand'\n[string \"@Interface\\AddOns\\MonkeyBuddy\\MonkeyBuddy-2.11.0.lua\"]:637: in function `MonkeyBuddySlider_OnValueChanged'\n[string \"*:OnValueChanged\"]:2: in function <[string \"*:OnValueChanged\"]:1>\n[string \"=[C]\"]: in function `SetValue'\n[string \"@Interface\\AddOns\\MonkeyBuddy\\MonkeyBuddy-2.11.0.lua\"]:512: in function `MonkeyBuddyQuestFrame_Refresh'\n[string \"@Interface\\AddOns\\MonkeyQuest\\MonkeyQuestInit.lua\"]:411: in function `MonkeyQuestInit_Font'\n[string \"@Interface\\AddOns\\MonkeyQuest\\MonkeyQuestInit.lua\"]:464: in function `MonkeyQuestInit_ApplySettings'\n[string \"@Interface\\AddOns\\MonkeyQuest\\MonkeyQuestInit.lua\"]:207: in function `MonkeyQuestInit_LoadConfig'\n[string \"@Interface\\AddOns\\MonkeyQuest\\MonkeyQuest-2.10.3.lua\"]:129: in function `MonkeyQuest_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 3602,
 			["counter"] = 3,
-		}, -- [515]
+		}, -- [514]
 		{
 			["message"] = "Interface\\AddOns\\MonkeyQuest\\MonkeyQuestInit.lua:440: attempt to call method 'SetBackdropBorderColor' (a nil value)",
 			["time"] = "2021/12/15 19:33:57",
@@ -4078,28 +4072,28 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\MonkeyQuest\\MonkeyQuestInit.lua\"]:440: in function `MonkeyQuestInit_Border'\n[string \"@Interface\\AddOns\\MonkeyQuest\\MonkeyQuestInit.lua\"]:465: in function `MonkeyQuestInit_ApplySettings'\n[string \"@Interface\\AddOns\\MonkeyQuest\\MonkeyQuestInit.lua\"]:207: in function `MonkeyQuestInit_LoadConfig'\n[string \"@Interface\\AddOns\\MonkeyQuest\\MonkeyQuest-2.10.3.lua\"]:129: in function `MonkeyQuest_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 3602,
 			["counter"] = 3,
-		}, -- [516]
+		}, -- [515]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\core\\Layout.lua:134: attempt to index field 'anchor' (a nil value)",
 			["time"] = "2021/12/15 19:33:57",
 			["stack"] = "[string \"@Interface\\AddOns\\AdiBags\\core\\Layout.lua\"]:134: in function `UpdatePositionMode'\n[string \"@Interface\\AddOns\\AdiBags\\core\\Core.lua\"]:194: in function <Interface\\AddOns\\AdiBags\\core\\Core.lua:148>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\Details\\Libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:70: in function <...ce\\AddOns\\Details\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\Details\\Libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:527: in function `EnableAddon'\n[string \"@Interface\\AddOns\\Details\\Libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:630: in function <...ce\\AddOns\\Details\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:615>",
 			["session"] = 3602,
 			["counter"] = 3,
-		}, -- [517]
+		}, -- [516]
 		{
 			["message"] = "Interface\\AddOns\\ChocolateBar\\Core.lua:383: attempt to index field 'ChocolateBar1' (a nil value)",
 			["time"] = "2021/12/15 19:33:57",
 			["stack"] = "[string \"@Interface\\AddOns\\ChocolateBar\\Core.lua\"]:383: in function `EnableDataObject'\n[string \"@Interface\\AddOns\\ChocolateBar\\Core.lua\"]:330: in function `LibDataBroker_DataObjectCreated'\n[string \"@Interface\\AddOns\\ChocolateBar\\Core.lua\"]:188: in function <Interface\\AddOns\\ChocolateBar\\Core.lua:186>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\Details\\Libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:70: in function <...ce\\AddOns\\Details\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\Details\\Libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:527: in function `EnableAddon'\n[string \"@Interface\\AddOns\\Details\\Libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:630: in function <...ce\\AddOns\\Details\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:615>",
 			["session"] = 3602,
 			["counter"] = 3,
-		}, -- [518]
+		}, -- [517]
 		{
 			["message"] = "Interface\\AddOns\\RangeDisplay\\RangeDisplay-v4.9.3.lua:295: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2021/12/15 19:33:57",
 			["stack"] = "[string \"@Interface\\AddOns\\RangeDisplay\\RangeDisplay-v4.9.3.lua\"]:295: in function `applyBGSettings'\n[string \"@Interface\\AddOns\\RangeDisplay\\RangeDisplay-v4.9.3.lua\"]:376: in function `applySettings'\n[string \"@Interface\\AddOns\\RangeDisplay\\RangeDisplay-v4.9.3.lua\"]:787: in function `applySettings'\n[string \"@Interface\\AddOns\\RangeDisplay\\RangeDisplay-v4.9.3.lua\"]:769: in function <Interface\\AddOns\\RangeDisplay\\RangeDisplay.lua:768>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\Details\\Libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:70: in function <...ce\\AddOns\\Details\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\Details\\Libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:527: in function `EnableAddon'\n[string \"@Interface\\AddOns\\Details\\Libs\\AceAddon-3.0\\AceAddon-3.0-12.lua\"]:630: in function <...ce\\AddOns\\Details\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:615>",
 			["session"] = 3602,
 			["counter"] = 3,
-		}, -- [519]
+		}, -- [518]
 		{
 			["message"] = "Interface\\AddOns\\Dejunk\\src\\consts.lua:123: attempt to perform arithmetic on upvalue 'NUM_LE_ITEM_ARMORS' (a nil value)",
 			["time"] = "2021/12/15 19:33:57",
@@ -4107,7 +4101,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\Dejunk\\src\\consts.lua\"]:123: in function `Initialize'\n[string \"@Interface\\AddOns\\Dejunk\\src\\consts.lua\"]:95: in function `func'\n[string \"@Interface\\AddOns\\Dejunk\\src\\events\\event-manager.lua\"]:46: in function `Fire'\n[string \"@Interface\\AddOns\\Dejunk\\src\\events\\event-manager.lua\"]:61: in function <Interface\\AddOns\\Dejunk\\src\\events\\event-manager.lua:60>",
 			["session"] = 3602,
 			["counter"] = 3,
-		}, -- [520]
+		}, -- [519]
 		{
 			["message"] = "Interface\\AddOns\\Details\\core\\plugins.lua:429: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2021/12/15 19:33:57",
@@ -4115,7 +4109,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\Details\\core\\plugins.lua\"]:429: in function `CreatePluginWindowContainer'\n[string \"@Interface\\AddOns\\Details\\startup.lua\"]:80: in function `Start'\n[string \"@Interface\\AddOns\\Details\\core\\parser.lua\"]:4846: in function <Interface\\AddOns\\Details\\core\\parser.lua:4845>",
 			["session"] = 3602,
 			["counter"] = 3,
-		}, -- [521]
+		}, -- [520]
 		{
 			["message"] = "Interface\\AddOns\\Grid2\\modules\\IndicatorText.lua:220: attempt to index local 'Text' (a nil value)",
 			["time"] = "2021/12/15 19:33:57",
@@ -4123,35 +4117,35 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\Grid2\\modules\\IndicatorText.lua\"]:220: in function `OnUpdate'\n[string \"@Interface\\AddOns\\Grid2\\GridIndicatorEffects.lua\"]:76: in function `Update'\n[string \"@Interface\\AddOns\\Grid2\\GridFrame.lua\"]:170: in function `UpdateIndicators'\n[string \"@Interface\\AddOns\\Grid2\\GridFrame.lua\"]:79: in function <Interface\\AddOns\\Grid2\\GridFrame.lua:71>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface\\FrameXML\\SecureGroupHeaders.lua\"]:203: in function <Interface\\FrameXML\\SecureGroupHeaders.lua:123>\n[string \"@Interface\\FrameXML\\SecureGroupHeaders.lua\"]:488: in function <Interface\\FrameXML\\SecureGroupHeaders.lua:387>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\AddOns\\Grid2\\GridLayout.lua\"]:573: in function `ForceFramesCreation'\n[string \"@Interface\\AddOns\\Grid2\\GridLayout.lua\"]:520: in function `FixHeaderAttributes'\n[string \"@Interface\\AddOns\\Grid2\\GridLayout.lua\"]:445: in function `AddHeader'\n[string \"@Interface\\AddOns\\Grid2\\GridLayout.lua\"]:452: in function `GenerateHeaders'\n...\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `SendMessage'\n[string \"@Interface\\AddOns\\Grid2\\GridRoster.lua\"]:239: in function `GroupChanged'\n[string \"@Interface\\AddOns\\Grid2\\GridRoster.lua\"]:187: in function `?'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\Bagnon\\common\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...\\common\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 3602,
 			["counter"] = 3,
-		}, -- [522]
+		}, -- [521]
 		{
 			["message"] = "Interface\\AddOns\\Grid2\\modules\\IndicatorText.lua:110: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2021/12/15 19:33:57",
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface\\FrameXML\\RestrictedFrames.lua\"]:670: in function <Interface\\FrameXML\\RestrictedFrames.lua:669>\n[string \"@Interface\\FrameXML\\RestrictedFrames.lua\"]:808: in function `CallMethod'\n[string \"			RegisterUnitWatch(self)\n			self:SetAttribute(\"*type1\", \"target\")\n			self:SetAttribute(\"*type2\", \"menu\")\n			self:SetAttribute(\"useparent-toggleForVehicle\", true)\n			self:SetAttribute(\"useparent-allowVehicleTarget\", true)\n			self:SetAttribute(\"useparent-unitsuffix\", true)\n			local header = self:GetParent()\n			local clickcast = header:GetFrameRef(\"clickcast_header\")\n			if clickcast then\n				clickcast:SetAttribute(\"clickcast_button\", self)\n				clickcast:RunAttribute(\"clickcast_register\")\n			end\n			header:CallMethod(\"initialConfigFunction\", self:GetName())\n		\"]:13: in function <[string \"			RegisterUnitWatch(self)...\"]:1>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface\\FrameXML\\RestrictedExecution.lua\"]:484: in function <Interface\\FrameXML\\RestrictedExecution.lua:447>\n[string \"@Interface\\FrameXML\\SecureGroupHeaders.lua\"]:116: in function <Interface\\FrameXML\\SecureGroupHeaders.lua:110>\n[string \"@Interface\\FrameXML\\SecureGroupHeaders.lua\"]:166: in function <Interface\\FrameXML\\SecureGroupHeaders.lua:123>\n[string \"@Interface\\FrameXML\\SecureGroupHeaders.lua\"]:488: in function <Interface\\FrameXML\\SecureGroupHeaders.lua:387>\n[string \"=[C]\"]: in function `Show'\n...\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `SendMessage'\n[string \"@Interface\\AddOns\\Grid2\\GridRoster.lua\"]:239: in function `GroupChanged'\n[string \"@Interface\\AddOns\\Grid2\\GridRoster.lua\"]:187: in function `?'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\Bagnon\\common\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...\\common\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 3602,
 			["counter"] = 12,
-		}, -- [523]
+		}, -- [522]
 		{
 			["message"] = "Interface\\AddOns\\Grid2\\modules\\IndicatorBar.lua:250: attempt to index field '?' (a nil value)",
 			["time"] = "2021/12/15 19:34:00",
 			["stack"] = "[string \"@Interface\\AddOns\\Grid2\\modules\\IndicatorBar.lua\"]:250: in function `SetBarColor'\n[string \"@Interface\\AddOns\\Grid2\\modules\\IndicatorBar.lua\"]:243: in function `OnUpdate'\n[string \"@Interface\\AddOns\\Grid2\\GridIndicator.lua\"]:45: in function `Update'\n[string \"@Interface\\AddOns\\Grid2\\GridStatus.lua\"]:83: in function `UpdateIndicators'\n[string \"@Interface\\AddOns\\Grid2\\modules\\StatusColor.lua\"]:32: in function `?'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\Bagnon\\common\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...\\common\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 3602,
 			["counter"] = 21,
-		}, -- [524]
+		}, -- [523]
 		{
 			["message"] = "Interface\\AddOns\\Grid2\\modules\\IndicatorText.lua:284: attempt to index field '?' (a nil value)",
 			["time"] = "2021/12/15 19:34:37",
 			["stack"] = "[string \"@Interface\\AddOns\\Grid2\\modules\\IndicatorText.lua\"]:284: in function `OnUpdate'\n[string \"@Interface\\AddOns\\Grid2\\GridIndicator.lua\"]:45: in function `Update'\n[string \"@Interface\\AddOns\\Grid2\\GridStatus.lua\"]:83: in function `UpdateIndicators'\n[string \"@Interface\\AddOns\\Grid2\\modules\\StatusColor.lua\"]:32: in function `?'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\Bagnon\\common\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...\\common\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 3602,
 			["counter"] = 12,
-		}, -- [525]
+		}, -- [524]
 		{
 			["message"] = "Interface\\AddOns\\Grid2\\GridIndicatorEffects.lua:50: attempt to index local 'frame' (a nil value)",
 			["time"] = "2021/12/15 19:34:00",
 			["stack"] = "[string \"@Interface\\AddOns\\Grid2\\GridIndicatorEffects.lua\"]:50: in function <Interface\\AddOns\\Grid2\\GridIndicatorEffects.lua:49>\n[string \"@Interface\\AddOns\\Grid2\\GridIndicatorEffects.lua\"]:75: in function `Update'\n[string \"@Interface\\AddOns\\Grid2\\GridStatus.lua\"]:83: in function `UpdateIndicators'\n[string \"@Interface\\AddOns\\Grid2\\modules\\StatusColor.lua\"]:32: in function `?'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\Bagnon\\common\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...\\common\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 3602,
 			["counter"] = 14,
-		}, -- [526]
+		}, -- [525]
 		{
 			["message"] = "[string \"GameTooltip:OnEnter\"]:2: Usage: GameTooltip:SetText(\"text\" [, color, wrap])",
 			["time"] = "2021/12/15 19:47:12",
@@ -4159,7 +4153,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetText'\n[string \"*:OnEnter\"]:2: in function <[string \"*:OnEnter\"]:1>",
 			["session"] = 3602,
 			["counter"] = 1,
-		}, -- [527]
+		}, -- [526]
 		{
 			["message"] = "Interface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:2013: attempt to call global 'AttemptToSaveBindings' (a nil value)",
 			["time"] = "2021/12/15 19:34:00",
@@ -4167,7 +4161,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua\"]:2013: in function `SetSetBindings'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua\"]:544: in function `InitCore'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua\"]:281: in function `func'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua\"]:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
 			["session"] = 3602,
 			["counter"] = 39,
-		}, -- [528]
+		}, -- [527]
 		{
 			["message"] = "C stack overflow",
 			["time"] = "2021/12/15 19:47:54",
@@ -4175,7 +4169,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n...\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:14: in function `MultiActionButtonDown'\n[string \"MULTIACTIONBAR2BUTTON2\"]:2: in function <[string \"MULTIACTIONBAR2BUTTON2\"]:1>",
 			["session"] = 3602,
 			["counter"] = 5,
-		}, -- [529]
+		}, -- [528]
 		{
 			["message"] = "...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Target.lua:313: attempt to index local 'frame' (a nil value)",
 			["time"] = "2021/12/15 19:34:00",
@@ -4183,6 +4177,52 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Target.lua\"]:313: in function `UpdateVisualsOnUpdate'\n[string \"@Interface\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Target.lua\"]:125: in function `OnUpdate'\n[string \"@Interface\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua\"]:267: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:265>",
 			["session"] = 3602,
 			["counter"] = 4189,
+		}, -- [529]
+		{
+			["message"] = "Interface\\AddOns\\TomTom\\TomTom_POIIntegration.lua:143: Attempt to register unknown event \"QUEST_POI_UPDATE\"",
+			["time"] = "2021/12/20 17:38:02",
+			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"QUEST_POI_UPDATE\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RegisterEvent'\n[string \"@Interface\\AddOns\\TomTom\\TomTom_POIIntegration.lua\"]:143: in main chunk",
+			["session"] = 3603,
+			["counter"] = 1,
 		}, -- [530]
+		{
+			["message"] = "Interface\\AddOns\\TomTom\\TomTom-v80205-1.0.7.lua:243: attempt to call method 'EnableDisablePOIIntegration' (a nil value)",
+			["time"] = "2021/12/20 17:38:02",
+			["locals"] = "self = <table> {\n defaults = <table> {\n }\n CLASSIC = false\n ShowHideCrazyArrow = <function> defined @Interface\\AddOns\\TomTom\\TomTom_CrazyArrow.lua:255\n Defer = <function> defined @Interface\\AddOns\\TomTom\\AddonCore.lua:164\n GetDirectionToWaypoint = <function> defined @Interface\\AddOns\\TomTom\\TomTom_Waypoints.lua:267\n SetCrazyArrow = <function> defined @Interface\\AddOns\\TomTom\\TomTom_CrazyArrow.lua:100\n DebugCoordBlock = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:363\n DebugListLocalWaypoints = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:1075\n tooltip = TomTomTooltip {\n }\n ClearWaypoint = <function> defined @Interface\\AddOns\\TomTom\\TomTom_Waypoints.lua:235\n UpdateCoordFeedThrottle = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:314\n DebugListAllWaypoints = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:1093\n RegisterMessage = <function> defined @Interface\\AddOns\\TomTom\\AddonCore.lua:105\n UnregisterMessage = <function> defined @Interface\\AddOns\\TomTom\\AddonCore.lua:110\n GetCurrentCoords = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:224\n db = <table> {\n }\n GetCZWFromMapID = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:1149\n RemoveWaypoint = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:796\n SetCrazyArrowDirection = <function> defined @Interface\\AddOns\\TomTom\\TomTom_CrazyArrow.lua:553\n RegisterEvent = <function> defined @Interface\\AddOns\\TomTom\\AddonCore.lua:77\n waypoints = <table> {\n }\n UIDIsSaved = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:667\n DebugCrazyArrow = <function> defined @Interface\\AddOns\\TomTom\\TomTom_CrazyArrow.lua:594\n SetCrazyArrowColor = <function> defined @Interface\\AddOns\\TomTom\\TomTom_CrazyArrow.lua:563\n ClearAllWaypoints = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:246\n RegisterLocale = <function> defined @Interface\\AddOns\\TomTom\\AddonCore.lua:206\n AddWaypointToCurrentZone = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:816\n DefaultCallbacks = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:836\n CHAT_MSG_ADDON = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:689\n optpanels = <table> {\n }\n AddWaypoint = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:892\n profile = <table> {\n }\n waypointprofile = <table> {\n }\n ShowHideCoordBlock = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:376\n Initialize = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:28\n ReparentMinimap = <function> defined @Interface\\AddOns\\TomTom\\TomTom_Waypoints.lua:62\n waydb = <table> {\n }\n CrazyArrowIsHijacked = <function> defined @Interface\\AddOns\\TomTom\\TomTom_CrazyArrow.lua:589\n IsValidWaypoint = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:951\n GetCurrentPlayerPosition = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:231\n SetClosestWaypoint = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:1222\n ReleaseCrazyArrow = <function> defined @Interface\\AddOns\\TomTom\\TomTom_CrazyArrow.lua:583\n WaypointExists = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:962\n ResetWaypointOptions = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:255\n ReloadWaypoints = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:271\n GetKey = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:206\n HijackCrazyArrow = <function> defined @Interface\\AddOns\\TomTom\\TomTom_CrazyArrow.lua:576\n SetCrazyArrowTitle = <function> defined @Interface\\AddOns\\TomTom\\TomTom_CrazyArrow.lua:569\n GetKeyArgs = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:211\n CZWFromMapID = <table> {\n }\n SendWaypoint = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:681\n IsCrazyArrowEmpty = <function> defined @Interface\\AddOns\\TomTom\\TomTom_CrazyArrow.lua:119\n L = <table> {\n }\n InitializeDropdown = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:662\n ReloadOptions = <function> defined @Interface\\AddOns\\TomTom\\TomTom.lua:236\n SetWaypoint = <function> defined @Interface\\AddOns\\TomTom\\TomTom_Waypoints.lua:71\n Printf = <function> defined @Interface\\AddOns\\TomTom\\AddonCore.lua:60\n waydefaults = <table> {\n }\n",
+			["stack"] = "[string \"@Interface\\AddOns\\TomTom\\TomTom-v80205-1.0.7.lua\"]:243: in function `ReloadOptions'\n[string \"@Interface\\AddOns\\TomTom\\TomTom-v80205-1.0.7.lua\"]:167: in function `Initialize'\n[string \"@Interface\\AddOns\\TomTom\\AddonCore.lua\"]:135: in function `handler'\n[string \"@Interface\\AddOns\\TomTom\\AddonCore.lua\"]:93: in function <Interface\\AddOns\\TomTom\\AddonCore.lua:89>",
+			["session"] = 3603,
+			["counter"] = 1,
+		}, -- [531]
+		{
+			["message"] = "(null)",
+			["time"] = "2020/07/24 16:00:06",
+			["session"] = 3603,
+			["counter"] = 219,
+		}, -- [532]
+		{
+			["message"] = "Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua:1051: attempt to index global 'frame' (a nil value)",
+			["time"] = "2021/12/20 17:38:56",
+			["locals"] = "id = 6\nmenuInclude = nil\nmasqueGroup = 3\nshowButtonMenu = nil\nitemLink = nil\nitemID = \"6948::::::::5:::::::::\"\nitemName = \"Hearthstone\"\nequipSlot = \"\"\nitemTexture = 134414\ncol = 0\nrow = 0\nxpos = 8\nypos = -8\nmax_cols = 1\nbutton = nil\nicon = nil\n(for index) = 1\n(for limit) = 4\n(for step) = 1\ni = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"1\"\n(*temporary) = \"Hearthstone\"\n(*temporary) = 134414\n(*temporary) = \"\"\n(*temporary) = 1\n(*temporary) = 0\n(*temporary) = \"Miscellaneous\"\n(*temporary) = \"attempt to index global 'frame' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1051: in function `BuildMenu'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1733: in function `DockMenuToCharacterSheet'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1712: in function `PaperDollItemSlotButton_OnEnter'\n[string \"*:OnEnter\"]:1: in function <[string \"*:OnEnter\"]:1>",
+			["session"] = 3604,
+			["counter"] = 3,
+		}, -- [533]
+		{
+			["message"] = "Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua:1051: attempt to index local 'fr' (a nil value)",
+			["time"] = "2021/12/20 17:40:42",
+			["locals"] = "id = 6\nmenuInclude = nil\nmasqueGroup = 3\nshowButtonMenu = nil\nitemLink = nil\nitemID = \"6948::::::::5:::::::::\"\nitemName = \"Hearthstone\"\nequipSlot = \"\"\nitemTexture = 134414\ncol = 0\nrow = 0\nxpos = 8\nypos = -8\nmax_cols = 1\nbutton = nil\nicon = nil\n(for index) = 1\n(for limit) = 4\n(for step) = 1\ni = 1\nfr = nil\n(*temporary) = \"ItemRackMenu1\"\n(*temporary) = nil\n(*temporary) = \"Hearthstone\"\n(*temporary) = 134414\n(*temporary) = \"\"\n(*temporary) = 1\n(*temporary) = 0\n(*temporary) = \"Miscellaneous\"\n(*temporary) = \"attempt to index local 'fr' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1051: in function `BuildMenu'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1733: in function `DockMenuToCharacterSheet'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1712: in function `PaperDollItemSlotButton_OnEnter'\n[string \"*:OnEnter\"]:1: in function <[string \"*:OnEnter\"]:1>",
+			["session"] = 3605,
+			["counter"] = 4,
+		}, -- [534]
+		{
+			["message"] = "[string \"MkQL_Main_Frame:OnLoad\"]:6: attempt to call method 'SetBackdrop' (a nil value)",
+			["time"] = "2021/12/20 17:38:00",
+			["locals"] = "self = MkQL_Main_Frame {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = MkQL_Main_Frame {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n bgFile = \"Interface\\AddOns\\MonkeyLibrary\\Textures\\BackDrop.tga\"\n tileSize = 16\n edgeFile = \"Interface\\Tooltips\\UI-Tooltip-Border\"\n tile = true\n edgeSize = 16\n insets = <table> {\n }\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnLoad\"]:6: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 3606,
+			["counter"] = 4,
+		}, -- [535]
 	},
 }

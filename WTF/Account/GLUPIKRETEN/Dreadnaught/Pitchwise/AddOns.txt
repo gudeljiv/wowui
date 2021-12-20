@@ -36,8 +36,8 @@ Bagnon: disabled
 Bagnon_Config: disabled
 Bagnon_GuildBank: disabled
 Bagnon_VoidStorage: disabled
-!BugGrabber: disabled
-BugSack: disabled
+!BugGrabber: enabled
+BugSack: enabled
 WeaponSwingTimer: enabled
 ItemRack: enabled
 ItemRackOptions: enabled
@@ -105,7 +105,7 @@ RingMenu: enabled
 Select: enabled
 SharedMedia: enabled
 SimpleRaidTargetIcons: enabled
-TomTom: enabled
+TomTom: disabled
 TrainAll: enabled
 WeakAuras: enabled
 WeakAurasModelPaths: enabled

@@ -1046,6 +1046,7 @@ function ItemRack.BuildMenu(id,menuInclude,masqueGroup)
 		end
 
 		for i=1,#(ItemRack.Menu) do
+
 			button = ItemRack.CreateMenuButton(i,ItemRack.Menu[i]) or ItemRackButtonMenu
 			button:SetPoint("TOPLEFT",ItemRackMenuFrame,ItemRack.menuDock,xpos,ypos)
 			button:SetFrameLevel(ItemRackMenuFrame:GetFrameLevel()+1)
