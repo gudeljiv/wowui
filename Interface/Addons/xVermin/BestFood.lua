@@ -46,7 +46,6 @@ NeedsFoodBadly.dirty = false
 NeedsFoodBadly:SetScript(
 	"OnEvent",
 	function(self, event, ...)
-		print(event)
 		if event == "BAG_UPDATE_DELAYED" or event == "PLAYER_LEVEL_CHANGED" or event == "UNIT_PET" or event == "PLAYER_ENTERING_WORLD" then
 			if InCombatLockdown() then
 				NeedsFoodBadly.dirty = true
@@ -140,7 +139,7 @@ function NeedsFoodBadly:UpdateMacros()
 			--["<mPotions>"] = 'item:'..tostring(best.mPotion[1] and best.mPotion[1].id or 0)
 		}
 	)
-	print(foodMacro)
+	
 	CreateOrUpdateMacro("Food", foodMacro)
 	CreateOrUpdateMacro("Drink", drinkMacro)
 
@@ -168,30 +167,25 @@ function NeedsFoodBadly:Sorted(t, f)
 end
 
 function NeedsFoodBadly:IsUsableFood(food)
-	
-		return not not
-				 (
-					food 
-					and food.lvl <= UnitLevel("player") 
-					and food.hp 
-					and not (food.hp5 or food.mp5 or food.str or food.agi or food.stam or food.int or food.spi)
-				)
-		
-	
+	return not not
+				(
+				food 
+				and food.lvl <= UnitLevel("player") 
+				and food.hp 
+				and not (food.hp5 or food.mp5 or food.str or food.agi or food.stam or food.int or food.spi)
+			)
 end
 
 function NeedsFoodBadly:IsUsablePetFood(food)
-	if (food) then
-		local diet = {}
-		local petFoodList = {GetPetFoodTypes()}
-		if #petFoodList > 0 then
-			local index, foodType
-			for index, foodType in pairs(petFoodList) do
-				table.insert(diet, foodType)
-			end
+	local diet = {}
+	local petFoodList = {GetPetFoodTypes()}
+	if #petFoodList > 0 then
+		local index, foodType
+		for index, foodType in pairs(petFoodList) do
+			table.insert(diet, foodType)
 		end
-		return not (not (food and self:FindPairInPetFoodArray(food, diet)))
 	end
+	return not (not (food and self:FindPairInPetFoodArray(food, diet)))
 end
 
 function NeedsFoodBadly:FindPairInPetFoodArray(food, diet)
@@ -204,92 +198,78 @@ function NeedsFoodBadly:FindPairInPetFoodArray(food, diet)
 end
 
 function NeedsFoodBadly:IsUsableBuffFood(food)
-	if(food) then
-		return not (
-				not (
-					food 
-					and food.lvl <= UnitLevel("player") 
-					and (
-						food.hp and 
-						food.stam and 
-						food.spi
-					)
+	return not (
+			not (
+				food 
+				and food.lvl <= UnitLevel("player") 
+				and (
+					food.hp and 
+					food.stam and 
+					food.spi
 				)
-		)
-	end
+			)
+	)
 end
 
 function NeedsFoodBadly:IsUsableDrink(food)
-	if(food) then
-		return not (
-				not (
-					food 
-					and food.lvl <= UnitLevel("player") 
-					and food.mp 
-					and not food.mp5
-				)
-		)
-	end
+	return not (
+			not (
+				food 
+				and food.lvl <= UnitLevel("player") 
+				and food.mp 
+				and not food.mp5
+			)
+	)
 end
 
 function NeedsFoodBadly:IsUsableBuffDrink(food)
-	if(food) then
-		return not (
-				not (
-					food 
-					and food.lvl <= UnitLevel("player") 
-					and food.mp5
-				)
-		)
-	end
+	return not (
+			not (
+				food 
+				and food.lvl <= UnitLevel("player") 
+				and food.mp5
+			)
+	)
 end
 
 function NeedsFoodBadly:IsUsableHPotion(potion)
-	if(potion) then
-		return not (
-				not (
-					potion 
-					and potion.lvl <= UnitLevel("player") 
-					and potion.hp 
-					and not potion.bg
-				)
-		)
-	end
+	return not (
+			not (
+				potion 
+				and potion.lvl <= UnitLevel("player") 
+				and potion.hp 
+				and not potion.bg
+			)
+	)
 end
 
 function NeedsFoodBadly:IsUsableMPotion(potion)
-	if(potion) then
-		return not (
-				not (
-					potion 
-					and potion.lvl <= UnitLevel("player") 
-					and potion.mp 
-					and not potion.bg
-				)
-		)
-	end
+	return not (
+			not (
+				potion 
+				and potion.lvl <= UnitLevel("player") 
+				and potion.mp 
+				and not potion.bg
+			)
+	)
 end
 
 function NeedsFoodBadly:IsUsableHealthstone(healthstone)
-	if(healthstone) then
-		return not (
-				not (
-					healthstone 
-					and healthstone.lvl <= UnitLevel("player")
-				)
-		)
-	end
+	return not (
+			not (
+				healthstone 
+				and healthstone.lvl <= UnitLevel("player")
+			)
+	)
 end
 
 function NeedsFoodBadly:IsUsableManaGem(manaGem)
-	if(manaGem) then
-		return not (
-				not (
-					manaGem 
-					and manaGem.lvl <= UnitLevel("player")
-				)
-		)
-	end
+	return not (
+			not (
+				manaGem 
+				and manaGem.lvl <= UnitLevel("player")
+			)
+	)
 end
 
 local function FirstAidSkillPoints()
@@ -303,15 +283,13 @@ local function FirstAidSkillPoints()
 end
 
 function NeedsFoodBadly:IsUsableBandage(bandage)
-	if(bandage) then
-		return not (
-				not (
-					bandage 
-					and bandage.skill <= FirstAidSkillPoints() 
-					and not bandage.bg
-				)
-		)
-	end
+	return not (
+			not (
+				bandage 
+				and bandage.skill <= FirstAidSkillPoints() 
+				and not bandage.bg
+			)
+	)
 end
 
 function NeedsFoodBadly.BetterFood(a, b)

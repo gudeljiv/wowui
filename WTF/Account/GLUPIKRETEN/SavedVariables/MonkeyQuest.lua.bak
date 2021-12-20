@@ -616,6 +616,12 @@ MonkeyQuestConfig = {
 	},
 	["Dreadnaught|Poklopac"] = {
 		["m_aQuestList"] = {
+			["Lazy Peons - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Thazz'ril's Pick - false"] = {
+				["m_bChecked"] = true,
+			},
 			["Sarkoth - false"] = {
 				["m_bChecked"] = true,
 			},
@@ -625,7 +631,7 @@ MonkeyQuestConfig = {
 			["Burning Blade Medallion - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Lazy Peons - false"] = {
+			["Report to Sen'jin Village - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1030,7 +1036,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 930.9656982421875,
+		["m_iFrameBottom"] = 957.0346069335938,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 2010.023071289063,
 		["m_bColourDoneOrFailed"] = true,

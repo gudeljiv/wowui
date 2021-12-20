@@ -616,16 +616,46 @@ MonkeyQuestConfig = {
 	},
 	["Dreadnaught|Poklopac"] = {
 		["m_aQuestList"] = {
-			["Sarkoth - false"] = {
+			["Break a Few Eggs - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Encroachment - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Minshina's Skull - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Thwarting Kolkar Aggression - false"] = {
+				["m_bChecked"] = true,
+			},
+			["A Solvent Spirit - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Dark Storms - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Valley of Trials - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Burning Blade Medallion - false"] = {
+			["Report to Orgnil - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Lazy Peons - false"] = {
+			["Practical Prey - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Zalazane - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Durotar - true"] = {
+				["m_bChecked"] = true,
+			},
+			["A Peon's Burden - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Report to Sen'jin Village - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1131,7 +1161,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 886.8277587890625,
+		["m_iFrameBottom"] = 549.8621215820312,
 		["m_bHideCompletedQuests"] = false,
 		["m_iFrameLeft"] = 2010.023071289063,
 		["m_bColourDoneOrFailed"] = true,
