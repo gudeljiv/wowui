@@ -56,8 +56,8 @@ DBM-Onyxia: disabled
 DBM-AQ40: disabled
 DBM-AQ20: disabled
 DBM-ZG: disabled
-TellMeWhen: disabled
-TellMeWhen_Options: disabled
+TellMeWhen: enabled
+TellMeWhen_Options: enabled
 !Colorz: enabled
 !Beautycase: enabled
 Align: enabled
@@ -105,7 +105,7 @@ RingMenu: enabled
 Select: enabled
 SharedMedia: enabled
 SimpleRaidTargetIcons: enabled
-TomTom: disabled
+TomTom: enabled
 TrainAll: enabled
 WeakAuras: enabled
 WeakAurasModelPaths: enabled
