@@ -8,10 +8,14 @@ xKillCount = {
 		["from"] = "LEFT",
 	},
 	["experience"] = {
-		["pulltotal"] = 150,
-		["totaltotal"] = 8607,
+		["pulltotal"] = 75,
+		["totaltotal"] = 9124,
 	},
 	["killLog"] = {
+		["Kolkar Drudge"] = {
+			["name"] = "Kolkar Drudge",
+			["count"] = 4,
+		},
 		["Mottled Boar"] = {
 			["name"] = "Mottled Boar",
 			["count"] = 15,

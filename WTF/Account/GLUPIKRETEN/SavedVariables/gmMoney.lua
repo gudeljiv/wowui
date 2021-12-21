@@ -8,7 +8,7 @@ GMMONEY = {
 	},
 	["Dreadnaught"] = {
 		["Poklopac"] = {
-			["GOLD"] = 90,
+			["GOLD"] = 111,
 			["CLASS"] = "HUNTER",
 		},
 		["Moolatz"] = {
