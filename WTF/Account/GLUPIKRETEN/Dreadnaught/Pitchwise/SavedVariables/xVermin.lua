@@ -1,10 +1,20 @@
 
 xKillCount = {
 	["show"] = true,
+	["position"] = {
+		["y"] = -283.793212890625,
+		["x"] = 35.4827766418457,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
+	},
+	["experience"] = {
+		["pulltotal"] = 1037,
+		["totaltotal"] = 8672,
+	},
 	["killLog"] = {
 		["Mottled Boar"] = {
 			["name"] = "Mottled Boar",
-			["count"] = 18,
+			["count"] = 19,
 		},
 		["Scorpid Worker"] = {
 			["name"] = "Scorpid Worker",
@@ -16,25 +26,15 @@ xKillCount = {
 		},
 		["Felstalker"] = {
 			["name"] = "Felstalker",
-			["count"] = 7,
+			["count"] = 11,
 		},
 		["Yarrog Baneshadow"] = {
 			["name"] = "Yarrog Baneshadow",
-			["count"] = 1,
+			["count"] = 2,
 		},
 		["Vile Familiar"] = {
 			["name"] = "Vile Familiar",
-			["count"] = 17,
+			["count"] = 21,
 		},
-	},
-	["experience"] = {
-		["totaltotal"] = 5567,
-		["pulltotal"] = 14,
-	},
-	["position"] = {
-		["y"] = -283.793212890625,
-		["x"] = 35.4827766418457,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
 	},
 }

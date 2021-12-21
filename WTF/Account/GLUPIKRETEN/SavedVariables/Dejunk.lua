@@ -9,6 +9,7 @@ __DEJUNK_SAVED_VARIABLES__ = {
 		["Jaroslav-Golemagg"] = "Default",
 		["Mxyzptlk-Golemagg"] = "Default",
 		["Augustin-Golemagg"] = "Farm",
+		["Pitchwise-Dreadnaught"] = "Default",
 		["Dmitar-Golemagg"] = "Default",
 		["Vermin-Golemagg"] = "Default",
 		["Mxzq-Golemagg"] = "Default",
@@ -31,14 +32,17 @@ __DEJUNK_SAVED_VARIABLES__ = {
 		},
 	},
 	["Profiles"] = {
-		["Poklopac-Dreadnaught"] = {
-			["version"] = 3,
-		},
 		["Default"] = {
 			["sell"] = {
 				["auto"] = true,
 				["safeMode"] = false,
 			},
+			["version"] = 3,
+		},
+		["Poklopac-Dreadnaught"] = {
+			["version"] = 3,
+		},
+		["Pitchwise-Dreadnaught"] = {
 			["version"] = 3,
 		},
 		["Farm"] = {

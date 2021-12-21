@@ -1,20 +1,10 @@
 
 xKillCount = {
 	["show"] = true,
-	["position"] = {
-		["y"] = -283.793212890625,
-		["x"] = 35.4827766418457,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
-	},
-	["experience"] = {
-		["pulltotal"] = 14,
-		["totaltotal"] = 5553,
-	},
 	["killLog"] = {
 		["Mottled Boar"] = {
 			["name"] = "Mottled Boar",
-			["count"] = 17,
+			["count"] = 18,
 		},
 		["Scorpid Worker"] = {
 			["name"] = "Scorpid Worker",
@@ -36,5 +26,15 @@ xKillCount = {
 			["name"] = "Vile Familiar",
 			["count"] = 17,
 		},
+	},
+	["experience"] = {
+		["totaltotal"] = 5567,
+		["pulltotal"] = 14,
+	},
+	["position"] = {
+		["y"] = -283.793212890625,
+		["x"] = 35.4827766418457,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
 	},
 }

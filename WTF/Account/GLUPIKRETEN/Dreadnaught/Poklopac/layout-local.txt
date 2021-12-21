@@ -2,8 +2,8 @@ Version: 1
 Frame: KillCountFrame
 FrameLevel: 1
 Anchor: LEFT
-X: 13
-Y: 43
+X: 3
+Y: 87
 W: 270
 H: 240
 Frame: PlayerFrame
