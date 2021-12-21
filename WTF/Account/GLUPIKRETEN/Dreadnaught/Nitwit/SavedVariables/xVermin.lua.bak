@@ -8,8 +8,8 @@ xKillCount = {
 		["from"] = "TOPLEFT",
 	},
 	["experience"] = {
-		["pulltotal"] = 26,
-		["totaltotal"] = 3140,
+		["pulltotal"] = 1650,
+		["totaltotal"] = 5739,
 	},
 	["killLog"] = {
 		["Mindless Zombie"] = {
@@ -24,13 +24,25 @@ xKillCount = {
 			["name"] = "Rattlecage Skeleton",
 			["count"] = 12,
 		},
+		["Duskbat"] = {
+			["name"] = "Duskbat",
+			["count"] = 7,
+		},
 		["Young Scavenger"] = {
 			["name"] = "Young Scavenger",
 			["count"] = 8,
 		},
-		["Duskbat"] = {
-			["name"] = "Duskbat",
-			["count"] = 7,
+		["Young Night Web Spider"] = {
+			["name"] = "Young Night Web Spider",
+			["count"] = 11,
+		},
+		["Night Web Spider"] = {
+			["name"] = "Night Web Spider",
+			["count"] = 8,
+		},
+		["Samuel Fipps"] = {
+			["name"] = "Samuel Fipps",
+			["count"] = 1,
 		},
 	},
 }
