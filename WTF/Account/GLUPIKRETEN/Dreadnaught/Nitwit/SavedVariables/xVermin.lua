@@ -1,16 +1,6 @@
 
 xKillCount = {
 	["show"] = true,
-	["position"] = {
-		["y"] = -4.59773588180542,
-		["x"] = 6.436790466308594,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
-	},
-	["experience"] = {
-		["pulltotal"] = 349,
-		["totaltotal"] = 972,
-	},
 	["killLog"] = {
 		["Mindless Zombie"] = {
 			["name"] = "Mindless Zombie",
@@ -20,5 +10,23 @@ xKillCount = {
 			["name"] = "Wretched Zombie",
 			["count"] = 7,
 		},
+		["Rattlecage Skeleton"] = {
+			["name"] = "Rattlecage Skeleton",
+			["count"] = 1,
+		},
+		["Young Scavenger"] = {
+			["name"] = "Young Scavenger",
+			["count"] = 1,
+		},
+	},
+	["experience"] = {
+		["totaltotal"] = 1143,
+		["pulltotal"] = 55,
+	},
+	["position"] = {
+		["y"] = -4.59773588180542,
+		["x"] = 6.436790466308594,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
 	},
 }
