@@ -168,12 +168,12 @@ end
 
 function NeedsFoodBadly:IsUsableFood(food)
 	return not not
-				(
-				food 
-				and food.lvl <= UnitLevel("player") 
-				and food.hp 
-				and not (food.hp5 or food.mp5 or food.str or food.agi or food.stam or food.int or food.spi)
-			)
+	(
+		food 
+		and food.lvl <= UnitLevel("player") 
+		and food.hp 
+		and not (food.hp5 or food.mp5 or food.str or food.agi or food.stam or food.int or food.spi)
+	)
 end
 
 function NeedsFoodBadly:IsUsablePetFood(food)
@@ -198,77 +198,70 @@ function NeedsFoodBadly:FindPairInPetFoodArray(food, diet)
 end
 
 function NeedsFoodBadly:IsUsableBuffFood(food)
-	return not (
-			not (
-				food 
-				and food.lvl <= UnitLevel("player") 
-				and (
-					food.hp and 
-					food.stam and 
-					food.spi
-				)
-			)
+	return not not
+	(
+		food 
+		and food.lvl <= UnitLevel("player") 
+		and (
+			food.hp and 
+			food.stam and 
+			food.spi
+		)
 	)
 end
 
 function NeedsFoodBadly:IsUsableDrink(food)
-	return not (
-			not (
-				food 
-				and food.lvl <= UnitLevel("player") 
-				and food.mp 
-				and not food.mp5
-			)
+	return not not 
+	(
+		food 
+		and food.lvl <= UnitLevel("player") 
+		and food.mp 
+		and not food.mp5
 	)
 end
 
 function NeedsFoodBadly:IsUsableBuffDrink(food)
-	return not (
-			not (
-				food 
-				and food.lvl <= UnitLevel("player") 
-				and food.mp5
-			)
+	return not not
+	(
+		food 
+		and food.lvl <= UnitLevel("player") 
+		and food.mp5
 	)
 end
 
 function NeedsFoodBadly:IsUsableHPotion(potion)
-	return not (
-			not (
-				potion 
-				and potion.lvl <= UnitLevel("player") 
-				and potion.hp 
-				and not potion.bg
-			)
+	return not not
+	(
+		potion 
+		and potion.lvl <= UnitLevel("player") 
+		and potion.hp 
+		and not potion.bg
 	)
 end
 
 function NeedsFoodBadly:IsUsableMPotion(potion)
-	return not (
-			not (
-				potion 
-				and potion.lvl <= UnitLevel("player") 
-				and potion.mp 
-				and not potion.bg
-			)
+	return not not 
+	(
+		potion 
+		and potion.lvl <= UnitLevel("player") 
+		and potion.mp 
+		and not potion.bg
 	)
 end
 
 function NeedsFoodBadly:IsUsableHealthstone(healthstone)
-	return not (
-			not (
-				healthstone 
-				and healthstone.lvl <= UnitLevel("player")
-			)
+	return not not
+	(
+		healthstone 
+		and healthstone.lvl <= UnitLevel("player")
 	)
 end
 
 function NeedsFoodBadly:IsUsableManaGem(manaGem)
-	return not (
-			not (
-				manaGem 
-				and manaGem.lvl <= UnitLevel("player")
-			)
+	return not not
+	(
+		manaGem 
+		and manaGem.lvl <= UnitLevel("player")
 	)
 end
 
@@ -283,12 +276,11 @@ local function FirstAidSkillPoints()
 end
 
 function NeedsFoodBadly:IsUsableBandage(bandage)
-	return not (
-			not (
-				bandage 
-				and bandage.skill <= FirstAidSkillPoints() 
-				and not bandage.bg
-			)
+	return not not
+	(
+		bandage 
+		and bandage.skill <= FirstAidSkillPoints() 
+		and not bandage.bg
 	)
 end
 
