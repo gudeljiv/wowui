@@ -12,13 +12,13 @@ StanceBarFrame:SetScale(cfg.stanceBar.scale)
 StanceBarFrame:SetAlpha(cfg.stanceBar.alpha)
 
 if cfg.stanceBar.hide then
-	StanceBarFrame:Hide()
-	hooksecurefunc("StanceBar_Update", function()
-		-- if StanceBarFrame:IsShown() and not nMainbar:IsTaintable() then
-		if StanceBarFrame:IsShown() then
-			StanceBarFrame:Hide()
-			-- RegisterStateDriver(StanceBarFrame, "visibility", "hide")
-		end
-	end)
+	-- hooksecurefunc("StanceBar_Update", function()
+	-- 	-- if StanceBarFrame:IsShown() and not nMainbar:IsTaintable() then
+	-- 	if StanceBarFrame:IsShown() then
+	-- 		StanceBarFrame:Hide()
+	-- 		-- RegisterStateDriver(StanceBarFrame, "visibility", "hide")
+	-- 	end
+	-- end)
+	RegisterStateDriver(StanceBarFrame, "visibility", "hide")
 end
 

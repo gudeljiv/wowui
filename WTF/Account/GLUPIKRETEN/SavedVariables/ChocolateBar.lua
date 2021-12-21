@@ -32,8 +32,8 @@ ChocolateBarDB = {
 		["Dmitar - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Dotwise - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
@@ -69,6 +69,10 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["moveFrames"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -79,8 +83,6 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["moveFrames"] = false,
-			["locked"] = false,
 			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
@@ -420,20 +422,18 @@ ChocolateBarDB = {
 					["customLabel"] = "N",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
 			["desaturated"] = false,
+			["gap"] = 0,
 			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
-			["gap"] = 0,
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
+			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -499,7 +499,7 @@ CB_PlayedTime = {
 		["total"] = 853,
 	},
 	["Nitwit-Dreadnaught"] = {
-		["total"] = 6440,
+		["total"] = 7872,
 	},
 	["Pitchwise-Dreadnaught"] = {
 		["total"] = 5497,

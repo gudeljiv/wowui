@@ -305,10 +305,10 @@ MonkeyQuestConfig = {
 			["Scholomance - true"] = {
 				["m_bChecked"] = false,
 			},
-			["Tiara of the Deep - false"] = {
+			["Gahz'rilla - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Gahz'rilla - false"] = {
+			["Tiara of the Deep - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Sprinkle's Secret Ingredient - false"] = {
@@ -1010,85 +1010,6 @@ MonkeyQuestConfig = {
 		["m_aQuestList"] = {
 		},
 	},
-	["Dreadnaught|Pitchwise"] = {
-		["m_aQuestList"] = {
-			["Valley of Trials - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Burning Blade Medallion - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Lazy Peons - false"] = {
-				["m_bChecked"] = true,
-			},
-		},
-	},
-	["Dreadnaught|Moolatz"] = {
-		["m_aQuestList"] = {
-			["The Hunt Begins - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Red Cloud Mesa - true"] = {
-				["m_bChecked"] = true,
-			},
-			["A Humble Task - false"] = {
-				["m_bChecked"] = true,
-			},
-		},
-	},
-	["Global"] = {
-		["m_bItemsEnabled"] = true,
-		["m_iFont"] = 2,
-		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
-		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
-		["m_iFrameAlpha"] = 1,
-		["m_bColourTitle"] = true,
-		["m_strAnchor"] = "ANCHOR_TOPLEFT",
-		["m_bAllowRightClick"] = true,
-		["m_strZoneHighlightColour"] = "|cff494961",
-		["m_strFinishObjectiveColour"] = "|cFF33DDFF",
-		["m_bShowHidden"] = true,
-		["m_bItemsOnLeft"] = false,
-		["m_bShowNoobTips"] = true,
-		["m_bHideCompletedObjectives"] = false,
-		["m_bShowZoneHighlight"] = true,
-		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
-		["m_bAlwaysHeaders"] = false,
-		["m_bDisplay"] = true,
-		["m_bMinimized"] = false,
-		["m_strInitialObjectiveColour"] = "|cFFD82619",
-		["m_iHighlightAlpha"] = 0,
-		["m_bShowQuestLevel"] = false,
-		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 897.8621826171875,
-		["m_bHideTitleButtons"] = false,
-		["m_iFrameLeft"] = 2010.023193359375,
-		["m_bColourDoneOrFailed"] = true,
-		["m_bLocked"] = true,
-		["m_bNoBorder"] = true,
-		["m_bNoHeaders"] = false,
-		["m_iQuestPadding"] = 4,
-		["m_strOverviewColour"] = "|cff7f7f7f",
-		["m_bShowTooltipObjectives"] = false,
-		["m_bColourSubObjectivesByProgress"] = true,
-		["m_iFrameWidth"] = 300,
-		["m_iFontHeight"] = 11,
-		["m_strQuestTitleColour"] = "|cFFFFFFFF",
-		["m_bWorkComplete"] = true,
-		["m_bHideQuestsEnabled"] = false,
-		["m_strMidObjectiveColour"] = "|cFFFFFF00",
-		["m_bCrashBorder"] = false,
-		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1036.138061523438,
-		["m_bObjectives"] = true,
-		["m_bHideHeader"] = false,
-		["m_bShowNumQuests"] = true,
-		["m_iAlpha"] = 0.5,
-		["m_bShowQuestTextTooltip"] = false,
-		["m_bHideTitle"] = false,
-		["m_bHideCompletedQuests"] = false,
-		["m_bGrowUp"] = false,
-	},
 	["Genesis|Malinac"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
@@ -1140,6 +1061,85 @@ MonkeyQuestConfig = {
 		["m_iFrameLeft"] = 1425.90026473384,
 		["m_bGrowUp"] = false,
 	},
+	["Dreadnaught|Moolatz"] = {
+		["m_aQuestList"] = {
+			["The Hunt Begins - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Red Cloud Mesa - true"] = {
+				["m_bChecked"] = true,
+			},
+			["A Humble Task - false"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
+	["Global"] = {
+		["m_bItemsEnabled"] = true,
+		["m_iFont"] = 2,
+		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
+		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
+		["m_iFrameAlpha"] = 1,
+		["m_bColourTitle"] = true,
+		["m_strAnchor"] = "ANCHOR_TOPLEFT",
+		["m_bAllowRightClick"] = true,
+		["m_strZoneHighlightColour"] = "|cff494961",
+		["m_strFinishObjectiveColour"] = "|cFF33DDFF",
+		["m_bShowHidden"] = true,
+		["m_bItemsOnLeft"] = false,
+		["m_bShowNoobTips"] = true,
+		["m_bHideCompletedObjectives"] = false,
+		["m_bShowZoneHighlight"] = true,
+		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
+		["m_bAlwaysHeaders"] = false,
+		["m_bDisplay"] = true,
+		["m_bMinimized"] = false,
+		["m_strInitialObjectiveColour"] = "|cFFD82619",
+		["m_iHighlightAlpha"] = 0,
+		["m_bShowQuestLevel"] = false,
+		["m_bShowDailyNumQuests"] = false,
+		["m_iFrameBottom"] = 946.0001831054688,
+		["m_bHideTitleButtons"] = false,
+		["m_iFrameLeft"] = 2010.023193359375,
+		["m_bColourDoneOrFailed"] = true,
+		["m_bLocked"] = true,
+		["m_bNoBorder"] = true,
+		["m_bNoHeaders"] = false,
+		["m_iQuestPadding"] = 4,
+		["m_strOverviewColour"] = "|cff7f7f7f",
+		["m_bShowTooltipObjectives"] = false,
+		["m_bColourSubObjectivesByProgress"] = true,
+		["m_iFrameWidth"] = 300,
+		["m_iFontHeight"] = 11,
+		["m_strQuestTitleColour"] = "|cFFFFFFFF",
+		["m_bWorkComplete"] = true,
+		["m_bHideQuestsEnabled"] = false,
+		["m_strMidObjectiveColour"] = "|cFFFFFF00",
+		["m_bCrashBorder"] = false,
+		["m_strHeaderOpenColour"] = "|cffbfbfff",
+		["m_iFrameTop"] = 1036.138061523438,
+		["m_bObjectives"] = true,
+		["m_bHideHeader"] = false,
+		["m_bShowNumQuests"] = true,
+		["m_iAlpha"] = 0.5,
+		["m_bShowQuestTextTooltip"] = false,
+		["m_bHideTitle"] = false,
+		["m_bHideCompletedQuests"] = false,
+		["m_bGrowUp"] = false,
+	},
+	["Dreadnaught|Pitchwise"] = {
+		["m_aQuestList"] = {
+			["Valley of Trials - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Burning Blade Medallion - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Lazy Peons - false"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
 	["Golemagg|Mxzq"] = {
 		["m_aQuestList"] = {
 		},
@@ -1161,19 +1161,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Break a Few Eggs - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Vanquish the Betrayers - false"] = {
+			["Break a Few Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Encroachment - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1353,13 +1353,19 @@ MonkeyQuestConfig = {
 	},
 	["Dreadnaught|Nitwit"] = {
 		["m_aQuestList"] = {
-			["The Damned - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Deathknell - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Rattling the Rattlecages - false"] = {
+			["Night Web's Hollow - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Scarlet Crusade - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Marla's Last Wish - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Scavenging Deathknell - false"] = {
 				["m_bChecked"] = true,
 			},
 		},

@@ -19,24 +19,19 @@ __DEJUNK_SAVED_VARIABLES__ = {
 	},
 	["ProfileKeys"] = {
 		["Grgur-Golemagg"] = "Default",
+		["Nitwit-Dreadnaught"] = "Default",
 		["Mxyz-Golemagg"] = "Default",
 		["Antun-Golemagg"] = "Default",
 		["Jaroslav-Golemagg"] = "Default",
 		["Mxyzptlk-Golemagg"] = "Default",
-		["Augustin-Golemagg"] = "Default",
+		["Augustin-Golemagg"] = "Farm",
 		["Dmitar-Golemagg"] = "Default",
 		["Koloman-Golemagg"] = "Default",
 		["Mxzq-Golemagg"] = "Default",
 		["Vermin-Golemagg"] = "Default",
 	},
 	["Profiles"] = {
-		["Poklopac-Dreadnaught"] = {
-			["sell"] = {
-				["auto"] = true,
-			},
-			["version"] = 3,
-		},
-		["Default"] = {
+		["Farm"] = {
 			["destroy"] = {
 				["inclusions"] = {
 					["1645"] = true,
@@ -78,6 +73,7 @@ __DEJUNK_SAVED_VARIABLES__ = {
 				},
 			},
 			["sell"] = {
+				["auto"] = true,
 				["inclusions"] = {
 					["6362"] = true,
 					["4539"] = true,
@@ -124,23 +120,15 @@ __DEJUNK_SAVED_VARIABLES__ = {
 					["4424"] = true,
 					["3685"] = true,
 				},
+				["safeMode"] = false,
 			},
 			["version"] = 3,
 		},
-		["Nitwit-Dreadnaught"] = {
-			["version"] = 3,
-		},
-		["Moolatz-Dreadnaught"] = {
-			["version"] = 3,
-		},
-		["Pitchwise-Dreadnaught"] = {
+		["Default"] = {
 			["sell"] = {
 				["auto"] = true,
+				["safeMode"] = false,
 			},
-			["version"] = 3,
-		},
-		["Greshnik-Dreadnaught"] = {
-			["version"] = 3,
 		},
 	},
 }

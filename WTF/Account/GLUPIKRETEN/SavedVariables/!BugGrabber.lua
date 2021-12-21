@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 3614,
+	["session"] = 3620,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -4217,12 +4217,28 @@ BugGrabberDB = {
 			["counter"] = 4,
 		}, -- [534]
 		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'nMainbar' tried to call the protected function 'StanceBarFrame:Hide()'.",
+			["time"] = "2021/12/21 15:03:46",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface\\AddOns\\nMainbar\\modules\\stancebar.lua\"]:19: in function <Interface\\AddOns\\nMainbar\\modules\\stancebar.lua:16>\n[string \"=[C]\"]: in function `StanceBar_Update'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:56: in function <Interface_Vanilla\\FrameXML\\ActionBarController.lua:34>",
+			["session"] = 3617,
+			["counter"] = 3,
+		}, -- [535]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'StanceBarFrame:Hide()'.",
+			["time"] = "2021/12/21 15:22:00",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:218: in function <Interface\\AddOns\\xVermin\\xVermin.lua:216>\n[string \"=[C]\"]: in function `StanceBar_Update'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:56: in function <Interface_Vanilla\\FrameXML\\ActionBarController.lua:34>",
+			["session"] = 3618,
+			["counter"] = 2,
+		}, -- [536]
+		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
 			["time"] = "2020/09/09 20:53:10",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetShown'\nInterface\\FrameXML\\MultiActionBars.lua:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\nInterface\\FrameXML\\MultiActionBars.lua:52: in function `MultiActionBar_Update'\nInterface\\FrameXML\\InterfaceOptionsPanels.lua:1175: in function `setFunc'\nInterface\\FrameXML\\InterfaceOptionsPanels.lua:87: in function <Interface\\FrameXML\\InterfaceOptionsPanels.lua:83>\n[C]: in function `pcall'\nInterface\\FrameXML\\InterfaceOptionsFrame.lua:217: in function <Interface\\FrameXML\\InterfaceOptionsFrame.lua:216>\n[C]: in function `securecall'\nInterface\\FrameXML\\InterfaceOptionsFrame.lua:252: in function <Interface\\FrameXML\\InterfaceOptionsFrame.lua:248>\n[C]: in function `Click'\nInterface\\FrameXML\\UIParent.lua:3353: in function `ToggleGameMenu'\n[string \"TOGGLEGAMEMENU\"]:1: in function <[string \"TOGGLEGAMEMENU\"]:1>",
-			["session"] = 3614,
-			["counter"] = 11,
-		}, -- [535]
+			["session"] = 3620,
+			["counter"] = 13,
+		}, -- [537]
 	},
 }
