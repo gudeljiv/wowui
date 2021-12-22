@@ -24,7 +24,7 @@ GMMONEY = {
 			["CLASS"] = "ROGUE",
 		},
 		["Pitchwise"] = {
-			["GOLD"] = 410,
+			["GOLD"] = 533,
 			["CLASS"] = "WARRIOR",
 		},
 	},
