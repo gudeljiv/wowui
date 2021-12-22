@@ -4,13 +4,13 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000000000D "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:159
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:117
-/castsequence [combat] reset=combat item:118
+/use [nocombat]item:4540
+/castsequence [combat] reset=combat 
 END
 VER 3 000000000000000B "TEST" "132089"
 /run MultiBarBottomLeftButton1:ClearAllPoints()

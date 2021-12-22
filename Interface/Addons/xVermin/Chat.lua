@@ -141,26 +141,27 @@ local function SetChat()
 	ChatFrame6Tab:Show()
 
 	local frame = ChatFrame7
-	FCF_SetWindowName(frame, "Loot")
+	FCF_SetWindowName(frame, "Loot & XP")
 	FCF_SetChatWindowFontSize(nil, frame, 11)
 	ChatFrame_RemoveAllMessageGroups(frame)
 	ChatFrame7:ClearAllPoints()
 	ChatFrame7:SetClampRectInsets(0, -1, 0, 0)
-	ChatFrame7:SetPoint("RIGHT", ChatFrame3, -((chatWidth / 2) + 4), 260)
-	ChatFrame7:SetHeight(150)
+	-- ChatFrame7:SetPoint("RIGHT", ChatFrame3, -((chatWidth / 2) + 4), 260)
+	ChatFrame7:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 3, -225)
+	ChatFrame7:SetHeight(250)
 	ChatFrame7:Show()
 	ChatFrame7Tab:Show()
 
-	local frame = ChatFrame8
-	FCF_SetWindowName(frame, "XP")
-	FCF_SetChatWindowFontSize(nil, frame, 11)
-	ChatFrame_RemoveAllMessageGroups(frame)
-	ChatFrame8:ClearAllPoints()
-	ChatFrame8:SetClampRectInsets(0, -1, 0, 0)
-	ChatFrame8:SetPoint("RIGHT", ChatFrame3, 0, 260)
-	ChatFrame8:SetHeight(150)
-	ChatFrame8:Show()
-	ChatFrame8Tab:Show()
+	-- local frame = ChatFrame8
+	-- FCF_SetWindowName(frame, "XP")
+	-- FCF_SetChatWindowFontSize(nil, frame, 11)
+	-- ChatFrame_RemoveAllMessageGroups(frame)
+	-- ChatFrame8:ClearAllPoints()
+	-- ChatFrame8:SetClampRectInsets(0, -1, 0, 0)
+	-- ChatFrame8:SetPoint("RIGHT", ChatFrame3, 0, 260)
+	-- ChatFrame8:SetHeight(150)
+	-- ChatFrame8:Show()
+	-- ChatFrame8Tab:Show()
 
 	for i, v in pairs(
 		{
@@ -178,8 +179,10 @@ local function SetChat()
 		end
 
 		if (v:GetName() == "ChatFrame7" or v:GetName() == "ChatFrame8") then
-			v:SetWidth((chatWidth / 2) - 4)
-			_G[v:GetName() .. "Background"]:SetAlpha(0.3)
+			-- v:SetWidth((chatWidth / 2) - 4)
+			-- _G[v:GetName() .. "Background"]:SetAlpha(0.3)
+			v:SetWidth((chatWidth / 1.5) - 4)
+			_G[v:GetName() .. "Background"]:SetAlpha(0.1)
 		else
 			v:SetWidth(chatWidth)
 			_G[v:GetName() .. "Background"]:SetAlpha(0.6)
@@ -250,9 +253,9 @@ local function SetChatChannels()
 	ChatFrame_AddMessageGroup(ChatFrame7, "SKILL")
 	ChatFrame_AddMessageGroup(ChatFrame7, "LOOT")
 	ChatFrame_AddMessageGroup(ChatFrame7, "MONEY")
-	ChatFrame_AddMessageGroup(ChatFrame8, "COMBAT_XP_GAIN")
-	ChatFrame_AddMessageGroup(ChatFrame8, "COMBAT_HONOR_GAIN")
-	ChatFrame_AddMessageGroup(ChatFrame8, "COMBAT_FACTION_CHANGE")
+	ChatFrame_AddMessageGroup(ChatFrame7, "COMBAT_XP_GAIN")
+	ChatFrame_AddMessageGroup(ChatFrame7, "COMBAT_HONOR_GAIN")
+	ChatFrame_AddMessageGroup(ChatFrame7, "COMBAT_FACTION_CHANGE")
 end
 
 local chat = CreateFrame("Frame")

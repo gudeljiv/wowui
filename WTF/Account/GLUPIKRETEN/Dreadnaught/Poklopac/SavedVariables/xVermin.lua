@@ -1,28 +1,36 @@
 
 xKillCount = {
-	["show"] = true,
+	["show"] = false,
 	["position"] = {
-		["y"] = 86.9656753540039,
-		["x"] = 3.172412633895874,
-		["to"] = "LEFT",
-		["from"] = "LEFT",
+		["y"] = -222.8851318359375,
+		["x"] = 386.6781921386719,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
 	},
 	["experience"] = {
-		["pulltotal"] = 75,
-		["totaltotal"] = 9124,
+		["pulltotal"] = 939,
+		["totaltotal"] = 13154,
 	},
 	["killLog"] = {
-		["Kolkar Drudge"] = {
-			["name"] = "Kolkar Drudge",
-			["count"] = 4,
+		["Clattering Scorpid"] = {
+			["name"] = "Clattering Scorpid",
+			["count"] = 3,
+		},
+		["Kolkar Outrunner"] = {
+			["name"] = "Kolkar Outrunner",
+			["count"] = 5,
+		},
+		["Pygmy Surf Crawler"] = {
+			["name"] = "Pygmy Surf Crawler",
+			["count"] = 1,
 		},
 		["Mottled Boar"] = {
 			["name"] = "Mottled Boar",
 			["count"] = 15,
 		},
-		["Scorpid Worker"] = {
-			["name"] = "Scorpid Worker",
-			["count"] = 13,
+		["Kolkar Drudge"] = {
+			["name"] = "Kolkar Drudge",
+			["count"] = 6,
 		},
 		["Sarkoth"] = {
 			["name"] = "Sarkoth",
@@ -36,9 +44,9 @@ xKillCount = {
 			["name"] = "Yarrog Baneshadow",
 			["count"] = 1,
 		},
-		["Clattering Scorpid"] = {
-			["name"] = "Clattering Scorpid",
-			["count"] = 3,
+		["Scorpid Worker"] = {
+			["name"] = "Scorpid Worker",
+			["count"] = 13,
 		},
 		["Vile Familiar"] = {
 			["name"] = "Vile Familiar",
