@@ -105,3 +105,56 @@ xVermin.Config = {
 		}
 	}
 }
+
+
+local function GatherData()
+	
+	xVermin.Config.Data = {}
+	xVermin.Config.Data.player = {
+		health ={ 
+			current = UnitHealth("player"),
+			max = UnitHealthMax("player"),
+			percentage = tonumber(string.format("%.0f", UnitHealth("player") / UnitHealthMax("player") * 100)),
+		},
+		mana ={ 
+			current = UnitPower("player"),
+			max = UnitPowerMax("player"),
+			percentage = tonumber(string.format("%.0f", UnitPower("player") / UnitPowerMax("player") * 100)),
+		},
+		xp ={ 
+			current = UnitXP("player"),
+			max = UnitXPMax("player"),
+			percentage = tonumber(string.format("%.0f", UnitXP("player") / UnitXPMax("player") * 100)),
+		}
+	}
+
+	xVermin.Config.Data.target = {
+		exists = false,
+		health ={},
+		mana ={},
+		xp ={}
+	}
+
+	if UnitExists("target") then
+		xVermin.Config.Data.target = {
+			exists = true,
+			health ={ 
+				current = UnitHealth("target"),
+				max = UnitHealthMax("target"),
+				percentage = tonumber(string.format("%.0f", UnitHealth("target") / UnitHealthMax("target") * 100)),
+			},
+			mana ={ 
+				current = UnitPower("target"),
+				max = UnitPowerMax("target"),
+				percentage = tonumber(string.format("%.0f", UnitPower("target") / UnitPowerMax("target") * 100)),
+			},
+			xp ={ 
+				current = UnitXP("target"),
+				max = UnitXPMax("target"),
+				percentage = tonumber(string.format("%.0f", UnitXP("target") / UnitXPMax("target") * 100)),
+			}
+		}
+	end
+end
+
+-- PlayerFrame:HookScript("OnUpdate", GatherData)

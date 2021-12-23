@@ -4,19 +4,48 @@ import time
 import keyboard
 import random
 
-# X: 1283 Y:  861 RGB: (199,  78,  82) rend
-# X: 1283 Y:  856 RGB: ( 28,  13,  58) battle shout
-# X: 1286 Y:  858 RGB: (219, 119,  48) heroic strike
+aoe = False
+rotate = True
 
-while keyboard.is_pressed("F12") == False:
-    if pyautogui.pixel(1283, 861)[0] == 199 and pyautogui.pixel(1283, 861)[1] == 78 and pyautogui.pixel(1283, 861)[2] == 82:
-        print("rend")
-        pyautogui.press("5")
+x = 1280
+y = 860
 
-    if pyautogui.pixel(1283, 856)[0] == 28 and pyautogui.pixel(1283, 856)[1] == 13 and pyautogui.pixel(1283, 856)[2] == 58:
-        print("battle shout")
-        pyautogui.press("F4")
+while 1 == 2:
+     time.sleep(1)
+     print(pyautogui.pixel(1280, 860))
 
-    if pyautogui.pixel(1286, 858)[0] == 219 and pyautogui.pixel(1286, 858)[1] == 119 and pyautogui.pixel(1286, 858)[2] == 48:
-        print("heroic strike")
-        pyautogui.press("2")
+while True:
+    if keyboard.is_pressed("F1"):
+        if not aoe:
+            time.sleep(0.1)
+            print("AOE")
+            # pyautogui.press("enter")
+            # pyautogui.write('/run print("PB starting")')
+            # pyautogui.press("enter")
+        else:
+            time.sleep(0.1)
+            print("SINGLE TARGET")
+            # pyautogui.press("enter")
+            # pyautogui.write('/run print("PB stoping")')
+            # pyautogui.press("enter")
+        aoe = not aoe
+    
+    if rotate:
+        if pyautogui.pixel(x, y)[0] == 79 and pyautogui.pixel(x, y)[1] == 2 and pyautogui.pixel(x, y)[2] == 0:
+            print("rend")
+            pyautogui.press("5", presses=3)
+        if pyautogui.pixel(x, y)[0] == 193 and pyautogui.pixel(x, y)[1] == 115 and pyautogui.pixel(x, y)[2] == 110:
+            print("battle shout")
+            pyautogui.press("F4", presses=3)
+        if pyautogui.pixel(x, y)[0] == 153 and pyautogui.pixel(x, y)[1] == 150 and pyautogui.pixel(x, y)[2] == 153:
+            if not aoe:
+                print("heroic strike")
+                pyautogui.press("2", presses=3)
+            else:
+                print("cleave")
+                pyautogui.press("3", presses=3)
+        if pyautogui.pixel(x, y)[0] == 89 and pyautogui.pixel(x, y)[1] == 97 and pyautogui.pixel(x, y)[2] == 107:
+            print("overpower")
+            pyautogui.press("4", presses=3)
+
+    

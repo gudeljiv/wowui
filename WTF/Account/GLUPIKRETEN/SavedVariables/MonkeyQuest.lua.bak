@@ -1009,16 +1009,22 @@ MonkeyQuestConfig = {
 			["Orgrimmar - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Dark Storms - false"] = {
+			["Conscript of the Horde - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Conscript of the Horde - false"] = {
+			["Burning Shadows - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Ragefire Chasm - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Lost But Not Forgotten - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
+			["Dark Storms - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1060,9 +1066,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 756.48291015625,
+		["m_iFrameBottom"] = 723.37939453125,
 		["m_bHideTitleButtons"] = false,
-		["m_iFrameLeft"] = 2010.023193359375,
+		["m_iFrameLeft"] = 2010.023071289063,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,

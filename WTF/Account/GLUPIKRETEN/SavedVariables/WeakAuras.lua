@@ -307,7 +307,7 @@ WeakAurasSaved = {
 			["subRegions"] = {
 			},
 			["borderInset"] = 1,
-			["useLimit"] = false,
+			["arcLength"] = 30,
 			["load"] = {
 				["use_class"] = "true",
 				["spec"] = {
@@ -331,11 +331,11 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["groupIcon"] = 135988,
+			["selfPoint"] = "CENTER",
 			["animate"] = false,
 			["customGrow"] = "function(newPositions, activeRegions)\n    local offset = 9/64 -- target_indicator_glow texture center offset\n    local distance = 18/64\n    local angle, x, y, h, w, s, c, sb, cb, da\n    local curveAngle, segmentCount, direction, base, direction\n\n    for i, r in ipairs(activeRegions) do\n        if r.region.GetRotation then\n            direction = r.data.config.direction\n            base = (r.data.config.rotationOffset + direction * 180)\n            angle = r.region:GetRotation() - direction * 180\n            h = r.data.height\n            w = r.data.width\n            curveAngle = r.data.config.curveAngle\n            segmentCount = r.data.config.segmentCount\n            s = sin(angle)\n            c = cos(angle)\n            sb = sin(base + (direction - 1) * 180)\n            cb = cos(base + (direction - 1) * 180)\n            da = curveAngle / (segmentCount - 1)\n            radius = 0.5 * w * distance / sin(da / 2)\n            x = c * radius + s * w * offset * (direction - 1.5) * 2 + radius * cb\n            y = s * radius * h / w - c * h * offset * (direction - 1.5) * 2 + radius * h / w * sb\n        else\n            x = 0\n            y = 0\n        end\n\n        if newPositions[i] then\n            newPositions[i][1] = x\n            newPositions[i][2] = y\n        else\n            newPositions[i] = {x, y}\n        end\n    end\nend\n",
 			["scale"] = 1,
-			["arcLength"] = 30,
+			["radius"] = 300,
 			["border"] = false,
 			["borderEdge"] = "1 Pixel",
 			["regionType"] = "dynamicgroup",
@@ -354,14 +354,14 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["gridWidth"] = 5,
 			["anchorFrameType"] = "SCREEN",
-			["radius"] = 300,
+			["anchorPoint"] = "CENTER",
 			["uid"] = "QYuwGRyspxh",
 			["sort"] = "none",
-			["selfPoint"] = "CENTER",
+			["rowSpace"] = 1,
 			["conditions"] = {
 			},
-			["rowSpace"] = 1,
-			["anchorPoint"] = "CENTER",
+			["useLimit"] = false,
+			["groupIcon"] = 135988,
 		},
 		["Overpower on Nameplate"] = {
 			["color"] = {
@@ -1417,33 +1417,11 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["rowSpace"] = 1,
+			["authorOptions"] = {
+			},
 			["animate"] = true,
 			["fullCircle"] = true,
 			["scale"] = 1,
-			["stagger"] = 0,
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["limit"] = 5,
-			["internalVersion"] = 38,
-			["sort"] = "none",
-			["ignoreOptionsEventErrors"] = true,
-			["uid"] = "N5YikxjcJsU",
-			["borderOffset"] = 16,
-			["useLimit"] = false,
-			["anchorFrameType"] = "SCREEN",
-			["id"] = "Details! Boss Mods Group",
-			["gridWidth"] = 5,
-			["frameStrata"] = 1,
-			["width"] = 359.096801757813,
-			["gridType"] = "RD",
-			["borderInset"] = 0,
-			["constantFactor"] = "RADIUS",
-			["arcLength"] = 360,
-			["conditions"] = {
-			},
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -1464,8 +1442,30 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["authorOptions"] = {
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["limit"] = 5,
+			["internalVersion"] = 38,
+			["sort"] = "none",
+			["ignoreOptionsEventErrors"] = true,
+			["uid"] = "N5YikxjcJsU",
+			["borderOffset"] = 16,
+			["useLimit"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["id"] = "Details! Boss Mods Group",
+			["gridWidth"] = 5,
+			["frameStrata"] = 1,
+			["width"] = 359.096801757813,
+			["gridType"] = "RD",
+			["borderInset"] = 0,
+			["constantFactor"] = "RADIUS",
+			["rowSpace"] = 1,
+			["conditions"] = {
 			},
+			["arcLength"] = 360,
+			["stagger"] = 0,
 		},
 		["nanShield:Segment"] = {
 			["authorOptions"] = {
@@ -1984,10 +1984,15 @@ WeakAurasSaved = {
 			},
 			["fontSize"] = 18,
 			["shadowXOffset"] = 1,
-			["wordWrap"] = "WordWrap",
+			["parent"] = "Shield",
 			["regionType"] = "text",
-			["anchorPoint"] = "CENTER",
-			["preferToUpdate"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["wordWrap"] = "WordWrap",
 			["conditions"] = {
 			},
 			["displayText_format_p_time_precision"] = 0,
@@ -2022,13 +2027,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["fixedWidth"] = 200,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["parent"] = "Shield",
+			["preferToUpdate"] = false,
+			["anchorPoint"] = "CENTER",
 		},
 		["GEMS"] = {
 			["controlledChildren"] = {
@@ -2228,11 +2228,12 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["rowSpace"] = 1,
+			["authorOptions"] = {
+			},
 			["animate"] = true,
 			["fullCircle"] = true,
 			["scale"] = 1,
-			["stagger"] = 0,
+			["internalVersion"] = 38,
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
@@ -2271,12 +2272,11 @@ WeakAurasSaved = {
 			["gridType"] = "RD",
 			["borderInset"] = 0,
 			["constantFactor"] = "RADIUS",
-			["arcLength"] = 360,
+			["rowSpace"] = 1,
 			["conditions"] = {
 			},
-			["internalVersion"] = 38,
-			["authorOptions"] = {
-			},
+			["arcLength"] = 360,
+			["stagger"] = 0,
 		},
 		["Agate"] = {
 			["color"] = {
@@ -3771,10 +3771,10 @@ WeakAurasSaved = {
 			},
 			["fontSize"] = 18,
 			["shadowXOffset"] = 0,
-			["wordWrap"] = "WordWrap",
+			["parent"] = "Shield",
 			["regionType"] = "text",
-			["url"] = "https://wago.io/TPKPLjUo4/1",
-			["preferToUpdate"] = false,
+			["selfPoint"] = "BOTTOM",
+			["wordWrap"] = "WordWrap",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -3985,8 +3985,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["fixedWidth"] = 200,
-			["selfPoint"] = "BOTTOM",
-			["parent"] = "Shield",
+			["preferToUpdate"] = false,
+			["url"] = "https://wago.io/TPKPLjUo4/1",
 		},
 	},
 	["lastArchiveClear"] = 1602609267,
@@ -4006,18 +4006,18 @@ WeakAurasSaved = {
 	},
 	["instanceHistoryDb"] = {
 		["sess"] = {
-			["delayUpdate"] = 1640268930,
+			["histOldest"] = "n/a",
 			["enterLoc"] = {
 				["instance"] = -1,
 			},
-			["histOldest"] = "n/a",
+			["delayUpdate"] = 1640287631,
 			["histLiveCount"] = 0,
 		},
 		["History"] = {
 		},
 		["HistoryDay"] = {
 		},
-		["histGeneration"] = 64,
+		["histGeneration"] = 68,
 		["config"] = {
 			["displayMin"] = 0,
 			["debug"] = false,

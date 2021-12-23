@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 3670,
+	["session"] = 3694,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -4233,37 +4233,13 @@ BugGrabberDB = {
 			["counter"] = 14,
 		}, -- [536]
 		{
-			["message"] = "Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua:1944: Usage: SaveBindings(1||2)",
-			["time"] = "2021/12/21 18:01:20",
-			["locals"] = "(*temporary) = 0\n",
-			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1944: in function `SetSetBindings'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:233: in function `?'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:198: in function `OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
-			["session"] = 3626,
-			["counter"] = 2,
-		}, -- [537]
-		{
-			["message"] = "...e\\AddOns\\xVermin\\Frames/DefaultFramesCustomScale.lua:45: attempt to index field '?' (a nil value)",
-			["time"] = "2021/12/22 20:42:09",
-			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"ADDON_LOADED\"\nframelist = <table> {\n 1 = \"TalentFrame\"\n}\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = \"TalentFrame\"\n}\n(for control) = 1\n_ = 1\nname = \"TalentFrame\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"TalentFrame\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nLoDMap = <table> {\n Blizzard_InspectUI = <table> {\n }\n Blizzard_TradeSkillUI = <table> {\n }\n Blizzard_MacroUI = <table> {\n }\n Blizzard_TalentUI = <table> {\n }\n Blizzard_CraftUI = <table> {\n }\n}\n",
-			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Frames/DefaultFramesCustomScale.lua\"]:45: in function <...e\\AddOns\\xVermin\\Frames/DefaultFramesCustomScale.lua:40>\n[string \"=[C]\"]: in function `LoadAddOn'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:365: in function `UIParentLoadAddOn'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:424: in function `PlayerTalentFrame_LoadUI'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:501: in function `ToggleTalentFrame'\n[string \"TOGGLETALENTS\"]:1: in function <[string \"TOGGLETALENTS\"]:1>",
-			["session"] = 3648,
-			["counter"] = 1,
-		}, -- [538]
-		{
-			["message"] = "Interface\\AddOns\\xVermin\\Frames/TalentFrame.lua:22: Usage: hooksecurefunc([table,] \"function\", hookfunc)",
-			["time"] = "2021/12/22 20:42:09",
-			["locals"] = "(*temporary) = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface_Vanilla\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 776\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 399\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n GuildScrollFrameEntry660 = GuildScrollFrameEntry660 {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n GuildScrollFrameEntry20 = GuildScrollFrameEntry20 {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem2AltCurrencyFrameItem1Text = MerchantItem2AltCurrencyFrameItem1Text {\n }\n DetailsWindowOptionsBarTextEditorEntryNumberLines = DetailsWindowOptionsBarTextEditorEntryNumberLines {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n CHAT_HEADER_SUFFIX = \": \"\n Atr_StackList9 = Atr_StackList9 {\n }\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface_Vanilla\\FrameXML\\UnitFrame.lua:595\n DUNGEON_FLOOR_UPPERBLACKROCKSPIRE3 = \"Hall of Blackhand\"\n CraftExpandTabLeft = CraftExpandTabLeft {\n }\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2379\n BOOST2_WARRIOR_COLOSSUSSMASH = \"Use |cFFFFFFFFColossus Smash|r.\n\n|cFFFFFFFFColossus Smash|r increases your damage.\"\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 986\n MacroButton80 = MacroButton80 {\n }\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n SLASH_LibQTip1 = \"/qtip\"\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n questieLineFrame38 = questieLineFrame38 {\n }\n ROGUE_COMBAT_CORE_ABILITY_4 = \"Melee ability with an increased range that consumes Combo Points.\"\n JoinSkirmish = <function> defined =[C]:-1\n Advanced_GraphicsAPIDropDownButtonHighlightTexture = Advanced_GraphicsAPIDropDownButtonHighlightTexture {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n DMG_LCD = \"DMG\"\n RaidGraphics_EnvironmentalDetailSlider = RaidGraphics_EnvironmentalDetailSlider {\n }\n HubPanelProfileDefaultFriendlyNameColorMode = HubPanelProfileDefaultFriendlyNameColorMode {\n }\n BattlefieldMapFrameLeft = BattlefieldMapFrameLeft {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1123\n SLASH_STOPATTACK1 = \"/stopattack\"\n SortQuestWatches = <function> defined =[C]:-1\n ContainerFrame4Item16Cooldown = ContainerFrame4Item16Cooldown {\n }\n MINIMAP_TRACKING_TRAINER_CLASS = \"Class Trainer\"\n SLASH_DISMOUNT2 = \"/dismount\"\n DUNGEON_FLOOR_DRAGONBLIGHTCHROMIESCENARIO2 = \"Andorhal\"\n PlayerFrame_UpdateReadyCheck = <function> defined @Interface\\FrameXML\\PlayerFrame.lua:345\n EMOTE69_CMD1 = \"/nosepick\"\n WowTokenRedemptionFrameBg = WowTokenRedemptionFrameBg {\n }\n SHIELD_BLOCK_TEMPLATE = \"%d Block\"\n LAG_TOLERANCE = \"Lag Tolerance\"\n GuildControlPopupFram",
-			["stack"] = "[string \"=[C]\"]: in function `hooksecurefunc'\n[string \"@Interface\\AddOns\\xVermin\\Frames/TalentFrame.lua\"]:22: in function <Interface\\AddOns\\xVermin\\Frames/TalentFrame.lua:20>\n[string \"=[C]\"]: in function `LoadAddOn'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:365: in function `UIParentLoadAddOn'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:424: in function `PlayerTalentFrame_LoadUI'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:501: in function `ToggleTalentFrame'\n[string \"TOGGLETALENTS\"]:1: in function <[string \"TOGGLETALENTS\"]:1>",
-			["session"] = 3648,
-			["counter"] = 1,
-		}, -- [539]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:288: attempt to index local 'a' (a nil value)",
 			["time"] = "2021/12/22 19:51:28",
 			["locals"] = "a = nil\nb = <table> {\n conj = false\n name = \"Tough Jerky\"\n lvl = 6\n id = 117\n hp = 61.200000\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'a' (a nil value)\"\n",
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:288: in function <Interface\\AddOns\\xVermin\\BestFood.lua:287>\n[string \"=[C]\"]: in function `sort'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:165: in function `Sorted'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:112: in function `UpdateMacros'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:56: in function <Interface\\AddOns\\xVermin\\BestFood.lua:48>",
 			["session"] = 3648,
 			["counter"] = 190,
-		}, -- [540]
+		}, -- [537]
 		{
 			["message"] = "...lla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:751: attempt to index local 'color' (a nil value)",
 			["time"] = "2021/12/22 21:25:30",
@@ -4271,7 +4247,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface_Vanilla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:751: in function `AuctionFrameBrowse_Update'\n[string \"@Interface_Vanilla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:277: in function <...lla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:275>",
 			["session"] = 3648,
 			["counter"] = 2,
-		}, -- [541]
+		}, -- [538]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:399: attempt to compare number with nil",
 			["time"] = "2020/11/13 18:34:12",
@@ -4279,7 +4255,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:399: in function `Stack'\nInterface\\AddOns\\xVermin\\SortBags.lua:254: in function <Interface\\AddOns\\xVermin\\SortBags.lua:241>",
 			["session"] = 3648,
 			["counter"] = 12,
-		}, -- [542]
+		}, -- [539]
 		{
 			["message"] = "[string \"print(UnitDebuff(\"target\"))\"]:1: Usage: UnitDebuff(\"unit\", [index][, \"filter\"])",
 			["time"] = "2021/12/23 14:44:59",
@@ -4287,7 +4263,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `UnitDebuff'\n[string \"print(UnitDebuff(\"target\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 3650,
 			["counter"] = 1,
-		}, -- [543]
+		}, -- [540]
 		{
 			["message"] = "[string \"print(UnitDebuff(\"target\",\"Rend\"))\"]:1: Usage: UnitDebuff(\"unit\", [index][, \"filter\"])",
 			["time"] = "2021/12/23 14:45:34",
@@ -4295,7 +4271,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `UnitDebuff'\n[string \"print(UnitDebuff(\"target\",\"Rend\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 3650,
 			["counter"] = 2,
-		}, -- [544]
+		}, -- [541]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:16: Usage: UnitDebuff(\"unit\", [index][, \"filter\"])",
 			["time"] = "2021/12/23 14:44:30",
@@ -4303,7 +4279,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `UnitDebuff'\n[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:16: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:12>\n[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:26: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:12>\n[string \"=[C]\"]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
 			["session"] = 3650,
 			["counter"] = 14,
-		}, -- [545]
+		}, -- [542]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:24: Usage: UnitDebuff(\"unit\", [index][, \"filter\"])",
 			["time"] = "2021/12/23 14:47:40",
@@ -4311,7 +4287,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `UnitDebuff'\n[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:24: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:12>\n[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:34: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:12>",
 			["session"] = 3651,
 			["counter"] = 3,
-		}, -- [546]
+		}, -- [543]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:20: attempt to index global 'xVermin' (a nil value)",
 			["time"] = "2021/12/23 14:58:49",
@@ -4319,7 +4295,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:20: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:11>\n[string \"=[C]\"]: ?",
 			["session"] = 3657,
 			["counter"] = 82,
-		}, -- [547]
+		}, -- [544]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:20: attempt to index upvalue 'xVermin' (a nil value)",
 			["time"] = "2021/12/23 14:59:36",
@@ -4327,7 +4303,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:20: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:11>\n[string \"=[C]\"]: ?",
 			["session"] = 3658,
 			["counter"] = 129,
-		}, -- [548]
+		}, -- [545]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:31: attempt to call field 'hide' (a nil value)",
 			["time"] = "2021/12/23 14:58:45",
@@ -4335,7 +4311,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:31: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:11>\n[string \"=[C]\"]: ?",
 			["session"] = 3659,
 			["counter"] = 57,
-		}, -- [549]
+		}, -- [546]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:29: attempt to call field 'show' (a nil value)",
 			["time"] = "2021/12/23 15:00:48",
@@ -4343,7 +4319,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:29: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:11>\n[string \"=[C]\"]: ?",
 			["session"] = 3659,
 			["counter"] = 61,
-		}, -- [550]
+		}, -- [547]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:31: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
 			["time"] = "2021/12/23 15:01:27",
@@ -4351,7 +4327,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `Hide'\n[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:31: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:11>\n[string \"=[C]\"]: ?",
 			["session"] = 3660,
 			["counter"] = 19,
-		}, -- [551]
+		}, -- [548]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:29: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
 			["time"] = "2021/12/23 15:01:29",
@@ -4359,6 +4335,102 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:29: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:11>\n[string \"=[C]\"]: ?",
 			["session"] = 3660,
 			["counter"] = 121,
+		}, -- [549]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Config.lua:117: attempt to index global 'data' (a nil value)",
+			["time"] = "2021/12/23 16:47:39",
+			["locals"] = "(*temporary) = <table> {\n petdebuff = <table> {\n }\n buff = <table> {\n }\n petbuff = <table> {\n }\n border = <table> {\n }\n Chat = <table> {\n }\n font = <table> {\n }\n ReplacedDebuffTypeColor = <table> {\n }\n UIscale = 0.580000\n debuff = <table> {\n }\n background = <table> {\n }\n}\n(*temporary) = <table> {\n}\n(*temporary) = <table> {\n}\n(*temporary) = <table> {\n max = 570\n current = 570\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = \"%.f\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'data' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:90\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Color = <table> {\n }\n Class = \"WARRIOR\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:82\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:107\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:134\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:119\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Config.lua\"]:117: in function <Interface\\AddOns\\xVermin\\Config.lua:110>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
+			["session"] = 3673,
+			["counter"] = 518,
+		}, -- [550]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Config.lua:117: attempt to index field 'Data' (a nil value)",
+			["time"] = "2021/12/23 16:48:37",
+			["locals"] = "(*temporary) = <table> {\n petdebuff = <table> {\n }\n buff = <table> {\n }\n petbuff = <table> {\n }\n border = <table> {\n }\n Chat = <table> {\n }\n font = <table> {\n }\n ReplacedDebuffTypeColor = <table> {\n }\n UIscale = 0.580000\n debuff = <table> {\n }\n background = <table> {\n }\n}\n(*temporary) = <table> {\n}\n(*temporary) = <table> {\n}\n(*temporary) = <table> {\n max = 570\n current = 570\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = \"%.0f\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'Data' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:90\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Color = <table> {\n }\n Class = \"WARRIOR\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:82\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:107\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:134\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:119\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Config.lua\"]:117: in function <Interface\\AddOns\\xVermin\\Config.lua:110>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
+			["session"] = 3674,
+			["counter"] = 1975,
+		}, -- [551]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Config.lua:119: attempt to call global 'UnitMana' (a nil value)",
+			["time"] = "2021/12/23 16:52:00",
+			["locals"] = "(*temporary) = nil\n(*temporary) = <table> {\n health = <table> {\n }\n}\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = \"player\"\n(*temporary) = \"attempt to call global 'UnitMana' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:90\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Color = <table> {\n }\n Class = \"WARRIOR\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:82\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:107\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:134\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:119\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Config.lua\"]:119: in function <Interface\\AddOns\\xVermin\\Config.lua:110>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
+			["session"] = 3675,
+			["counter"] = 575,
 		}, -- [552]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Config.lua:128: attempt to index field 'Data' (a nil value)",
+			["time"] = "2021/12/23 16:53:04",
+			["locals"] = "(*temporary) = nil\n(*temporary) = <table> {\n mana = <table> {\n }\n health = <table> {\n }\n xp = <table> {\n }\n}\n(*temporary) = <table> {\n max = 8800\n current = 2371\n percentage = \"27\"\n}\n(*temporary) = \"27\"\n(*temporary) = \"%.0f\"\n(*temporary) = 26.943182\n(*temporary) = \"27\"\n(*temporary) = \"player\"\n(*temporary) = \"attempt to index field 'Data' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:90\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Color = <table> {\n }\n Class = \"WARRIOR\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:82\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:107\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:134\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:119\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Config.lua\"]:128: in function <Interface\\AddOns\\xVermin\\Config.lua:110>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
+			["session"] = 3676,
+			["counter"] = 220,
+		}, -- [553]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:36: attempt to compare number with string",
+			["time"] = "2021/12/23 16:54:30",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:36: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:35>\n[string \"=[C]\"]: ?",
+			["session"] = 3682,
+			["counter"] = 39,
+		}, -- [554]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:37: attempt to compare number with string",
+			["time"] = "2021/12/23 16:55:34",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:37: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:35>\n[string \"=[C]\"]: ?",
+			["session"] = 3683,
+			["counter"] = 86,
+		}, -- [555]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:39: attempt to compare number with string",
+			["time"] = "2021/12/23 17:02:33",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:39: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:35>\n[string \"=[C]\"]: ?",
+			["session"] = 3684,
+			["counter"] = 19,
+		}, -- [556]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:36: attempt to compare nil with number",
+			["time"] = "2021/12/23 17:07:07",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"Rend\"\n(*temporary) = 40\n(*temporary) = 40\n(*temporary) = 1\n(*temporary) = 40\n(*temporary) = \"attempt to compare nil with number\"\nCheckDebuff = <function> defined @Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:22\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:90\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Color = <table> {\n }\n Class = \"WARRIOR\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:82\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:107\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:134\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:119\n}\nf = RotationFrame {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n Center = <unnamed> {\n }\n beautyBorder = <table> {\n }\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n RightEdge = <unnamed> {\n }\n BottomEdge = <unnamed> {\n }\n TopRightCorner = <unnamed> {\n }\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n BottomRightCorner = <unnamed> {\n }\n BottomLeftCorner = <unnamed> {\n }\n TopEdge = <unnamed> {\n }\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n TopLeftCorner = <unnamed> {\n }\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n backdropInfo = <table> {\n }\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n LeftEdge = <unnamed> {\n }\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:36: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:35>\n[string \"=[C]\"]: ?",
+			["session"] = 3689,
+			["counter"] = 1027,
+		}, -- [557]
+		{
+			["message"] = "[string \"print(\"PB starting\")d\"]:1: '=' expected near '<eof>'",
+			["time"] = "2021/12/23 17:32:45",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 3692,
+			["counter"] = 1,
+		}, -- [558]
+		{
+			["message"] = "Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua:1944: Usage: SaveBindings(1||2)",
+			["time"] = "2021/12/21 18:01:20",
+			["locals"] = "(*temporary) = 0\n",
+			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1944: in function `SetSetBindings'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:233: in function `?'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:198: in function `OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 3693,
+			["counter"] = 3,
+		}, -- [559]
+		{
+			["message"] = "...e\\AddOns\\xVermin\\Frames/DefaultFramesCustomScale.lua:45: attempt to index field '?' (a nil value)",
+			["time"] = "2021/12/22 20:42:09",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"ADDON_LOADED\"\nframelist = <table> {\n 1 = \"TalentFrame\"\n}\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = \"TalentFrame\"\n}\n(for control) = 1\n_ = 1\nname = \"TalentFrame\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"TalentFrame\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nLoDMap = <table> {\n Blizzard_InspectUI = <table> {\n }\n Blizzard_TradeSkillUI = <table> {\n }\n Blizzard_MacroUI = <table> {\n }\n Blizzard_TalentUI = <table> {\n }\n Blizzard_CraftUI = <table> {\n }\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Frames/DefaultFramesCustomScale.lua\"]:45: in function <...e\\AddOns\\xVermin\\Frames/DefaultFramesCustomScale.lua:40>\n[string \"=[C]\"]: in function `LoadAddOn'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:365: in function `UIParentLoadAddOn'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:424: in function `PlayerTalentFrame_LoadUI'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:501: in function `ToggleTalentFrame'\n[string \"TOGGLETALENTS\"]:1: in function <[string \"TOGGLETALENTS\"]:1>",
+			["session"] = 3694,
+			["counter"] = 4,
+		}, -- [560]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/TalentFrame.lua:22: Usage: hooksecurefunc([table,] \"function\", hookfunc)",
+			["time"] = "2021/12/22 20:42:09",
+			["locals"] = "(*temporary) = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface_Vanilla\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 776\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 399\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n GuildScrollFrameEntry660 = GuildScrollFrameEntry660 {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n GuildScrollFrameEntry20 = GuildScrollFrameEntry20 {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem2AltCurrencyFrameItem1Text = MerchantItem2AltCurrencyFrameItem1Text {\n }\n DetailsWindowOptionsBarTextEditorEntryNumberLines = DetailsWindowOptionsBarTextEditorEntryNumberLines {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n CHAT_HEADER_SUFFIX = \": \"\n Atr_StackList9 = Atr_StackList9 {\n }\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface_Vanilla\\FrameXML\\UnitFrame.lua:595\n DUNGEON_FLOOR_UPPERBLACKROCKSPIRE3 = \"Hall of Blackhand\"\n CraftExpandTabLeft = CraftExpandTabLeft {\n }\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2379\n BOOST2_WARRIOR_COLOSSUSSMASH = \"Use |cFFFFFFFFColossus Smash|r.\n\n|cFFFFFFFFColossus Smash|r increases your damage.\"\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 986\n MacroButton80 = MacroButton80 {\n }\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n SLASH_LibQTip1 = \"/qtip\"\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n questieLineFrame38 = questieLineFrame38 {\n }\n ROGUE_COMBAT_CORE_ABILITY_4 = \"Melee ability with an increased range that consumes Combo Points.\"\n JoinSkirmish = <function> defined =[C]:-1\n Advanced_GraphicsAPIDropDownButtonHighlightTexture = Advanced_GraphicsAPIDropDownButtonHighlightTexture {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n DMG_LCD = \"DMG\"\n RaidGraphics_EnvironmentalDetailSlider = RaidGraphics_EnvironmentalDetailSlider {\n }\n HubPanelProfileDefaultFriendlyNameColorMode = HubPanelProfileDefaultFriendlyNameColorMode {\n }\n BattlefieldMapFrameLeft = BattlefieldMapFrameLeft {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1123\n SLASH_STOPATTACK1 = \"/stopattack\"\n SortQuestWatches = <function> defined =[C]:-1\n ContainerFrame4Item16Cooldown = ContainerFrame4Item16Cooldown {\n }\n MINIMAP_TRACKING_TRAINER_CLASS = \"Class Trainer\"\n SLASH_DISMOUNT2 = \"/dismount\"\n DUNGEON_FLOOR_DRAGONBLIGHTCHROMIESCENARIO2 = \"Andorhal\"\n PlayerFrame_UpdateReadyCheck = <function> defined @Interface\\FrameXML\\PlayerFrame.lua:345\n EMOTE69_CMD1 = \"/nosepick\"\n WowTokenRedemptionFrameBg = WowTokenRedemptionFrameBg {\n }\n SHIELD_BLOCK_TEMPLATE = \"%d Block\"\n LAG_TOLERANCE = \"Lag Tolerance\"\n GuildControlPopupFram",
+			["stack"] = "[string \"=[C]\"]: in function `hooksecurefunc'\n[string \"@Interface\\AddOns\\xVermin\\Frames/TalentFrame.lua\"]:22: in function <Interface\\AddOns\\xVermin\\Frames/TalentFrame.lua:20>\n[string \"=[C]\"]: in function `LoadAddOn'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:365: in function `UIParentLoadAddOn'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:424: in function `PlayerTalentFrame_LoadUI'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:501: in function `ToggleTalentFrame'\n[string \"TOGGLETALENTS\"]:1: in function <[string \"TOGGLETALENTS\"]:1>",
+			["session"] = 3694,
+			["counter"] = 4,
+		}, -- [561]
 	},
 }

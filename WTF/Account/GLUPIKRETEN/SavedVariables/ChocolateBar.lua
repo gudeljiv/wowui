@@ -422,14 +422,14 @@ ChocolateBarDB = {
 					["customLabel"] = "G2",
 				},
 			},
-			["gap"] = 0,
 			["fontName"] = "Friz Quadrata TT",
+			["desaturated"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
 			["forceColor"] = false,
-			["desaturated"] = false,
+			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["fixedStrata"] = true,
@@ -502,7 +502,7 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Pitchwise-Dreadnaught"] = {
-		["total"] = 19696,
+		["total"] = 25780,
 	},
 	["Judawise-"] = {
 		["total"] = 437,

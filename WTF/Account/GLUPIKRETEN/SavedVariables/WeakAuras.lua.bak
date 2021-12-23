@@ -302,12 +302,12 @@ WeakAurasSaved = {
 			},
 			["align"] = "CENTER",
 			["rotation"] = 345,
-			["anchorPoint"] = "CENTER",
+			["groupIcon"] = 135988,
 			["version"] = 1,
 			["subRegions"] = {
 			},
 			["uid"] = "QYuwGRyspxh",
-			["rowSpace"] = 1,
+			["useLimit"] = false,
 			["load"] = {
 				["use_class"] = "true",
 				["spec"] = {
@@ -324,25 +324,25 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["arcLength"] = 30,
+			["radius"] = 300,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["useLimit"] = false,
+			["arcLength"] = 30,
 			["animate"] = false,
 			["customGrow"] = "function(newPositions, activeRegions)\n    local offset = 9/64 -- target_indicator_glow texture center offset\n    local distance = 18/64\n    local angle, x, y, h, w, s, c, sb, cb, da\n    local curveAngle, segmentCount, direction, base, direction\n\n    for i, r in ipairs(activeRegions) do\n        if r.region.GetRotation then\n            direction = r.data.config.direction\n            base = (r.data.config.rotationOffset + direction * 180)\n            angle = r.region:GetRotation() - direction * 180\n            h = r.data.height\n            w = r.data.width\n            curveAngle = r.data.config.curveAngle\n            segmentCount = r.data.config.segmentCount\n            s = sin(angle)\n            c = cos(angle)\n            sb = sin(base + (direction - 1) * 180)\n            cb = cos(base + (direction - 1) * 180)\n            da = curveAngle / (segmentCount - 1)\n            radius = 0.5 * w * distance / sin(da / 2)\n            x = c * radius + s * w * offset * (direction - 1.5) * 2 + radius * cb\n            y = s * radius * h / w - c * h * offset * (direction - 1.5) * 2 + radius * h / w * sb\n        else\n            x = 0\n            y = 0\n        end\n\n        if newPositions[i] then\n            newPositions[i][1] = x\n            newPositions[i][2] = y\n        else\n            newPositions[i] = {x, y}\n        end\n    end\nend\n",
 			["scale"] = 1,
-			["selfPoint"] = "CENTER",
+			["rowSpace"] = 1,
 			["border"] = false,
 			["borderEdge"] = "1 Pixel",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
 			["sort"] = "none",
-			["radius"] = 300,
+			["anchorPoint"] = "CENTER",
 			["constantFactor"] = "RADIUS",
 			["stagger"] = 0,
 			["borderOffset"] = 4,
@@ -360,7 +360,7 @@ WeakAurasSaved = {
 			},
 			["conditions"] = {
 			},
-			["groupIcon"] = 135988,
+			["selfPoint"] = "CENTER",
 			["fullCircle"] = true,
 		},
 		["Overpower on Nameplate"] = {
@@ -1418,9 +1418,34 @@ WeakAurasSaved = {
 			},
 			["limit"] = 5,
 			["animate"] = true,
+			["stagger"] = 0,
+			["scale"] = 1,
+			["arcLength"] = 360,
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["sort"] = "none",
+			["fullCircle"] = true,
+			["rowSpace"] = 1,
+			["constantFactor"] = "RADIUS",
+			["borderInset"] = 0,
+			["borderOffset"] = 16,
+			["gridType"] = "RD",
+			["width"] = 359.096801757813,
+			["id"] = "Details! Boss Mods Group",
+			["frameStrata"] = 1,
+			["gridWidth"] = 5,
+			["anchorFrameType"] = "SCREEN",
+			["useLimit"] = false,
+			["uid"] = "N5YikxjcJsU",
+			["config"] = {
+			},
 			["authorOptions"] = {
 			},
-			["scale"] = 1,
+			["conditions"] = {
+			},
+			["internalVersion"] = 38,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -1441,31 +1466,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["sort"] = "none",
-			["fullCircle"] = true,
-			["arcLength"] = 360,
-			["constantFactor"] = "RADIUS",
-			["borderInset"] = 0,
-			["borderOffset"] = 16,
-			["gridType"] = "RD",
-			["width"] = 359.096801757813,
-			["id"] = "Details! Boss Mods Group",
-			["frameStrata"] = 1,
-			["gridWidth"] = 5,
-			["anchorFrameType"] = "SCREEN",
-			["useLimit"] = false,
-			["uid"] = "N5YikxjcJsU",
-			["config"] = {
-			},
-			["rowSpace"] = 1,
-			["conditions"] = {
-			},
-			["internalVersion"] = 38,
-			["stagger"] = 0,
 		},
 		["nanShield:Segment"] = {
 			["authorOptions"] = {
@@ -1984,15 +1984,10 @@ WeakAurasSaved = {
 			},
 			["fontSize"] = 18,
 			["shadowXOffset"] = 1,
-			["parent"] = "Shield",
+			["anchorPoint"] = "CENTER",
 			["regionType"] = "text",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["wordWrap"] = "WordWrap",
+			["preferToUpdate"] = false,
+			["parent"] = "Shield",
 			["fixedWidth"] = 200,
 			["displayText_format_p_time_precision"] = 0,
 			["ignoreOptionsEventErrors"] = true,
@@ -2027,8 +2022,13 @@ WeakAurasSaved = {
 			},
 			["conditions"] = {
 			},
-			["preferToUpdate"] = false,
-			["anchorPoint"] = "CENTER",
+			["wordWrap"] = "WordWrap",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 		},
 		["Details! Aura Group"] = {
 			["grow"] = "RIGHT",
@@ -2114,17 +2114,16 @@ WeakAurasSaved = {
 			},
 			["limit"] = 5,
 			["animate"] = true,
-			["authorOptions"] = {
-			},
+			["stagger"] = 0,
 			["scale"] = 1,
-			["internalVersion"] = 38,
+			["arcLength"] = 360,
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
 			["fullCircle"] = true,
-			["arcLength"] = 360,
+			["rowSpace"] = 1,
 			["constantFactor"] = "RADIUS",
 			["borderInset"] = 0,
 			["borderOffset"] = 16,
@@ -2138,7 +2137,8 @@ WeakAurasSaved = {
 			["uid"] = "XLzBWxn1LoM",
 			["config"] = {
 			},
-			["rowSpace"] = 1,
+			["authorOptions"] = {
+			},
 			["conditions"] = {
 			},
 			["animation"] = {
@@ -2161,7 +2161,7 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["stagger"] = 0,
+			["internalVersion"] = 38,
 		},
 		["GEMS"] = {
 			["controlledChildren"] = {
@@ -3771,10 +3771,10 @@ WeakAurasSaved = {
 			},
 			["fontSize"] = 18,
 			["shadowXOffset"] = 0,
-			["parent"] = "Shield",
+			["url"] = "https://wago.io/TPKPLjUo4/1",
 			["regionType"] = "text",
-			["selfPoint"] = "BOTTOM",
-			["wordWrap"] = "WordWrap",
+			["preferToUpdate"] = false,
+			["parent"] = "Shield",
 			["fixedWidth"] = 200,
 			["displayText_format_p_time_precision"] = 0,
 			["ignoreOptionsEventErrors"] = true,
@@ -3985,8 +3985,8 @@ WeakAurasSaved = {
 					},
 				}, -- [9]
 			},
-			["preferToUpdate"] = false,
-			["url"] = "https://wago.io/TPKPLjUo4/1",
+			["wordWrap"] = "WordWrap",
+			["selfPoint"] = "BOTTOM",
 		},
 	},
 	["lastArchiveClear"] = 1602609267,
@@ -4006,18 +4006,19 @@ WeakAurasSaved = {
 	},
 	["instanceHistoryDb"] = {
 		["sess"] = {
-			["delayUpdate"] = 1640268849,
 			["enterLoc"] = {
 				["instance"] = -1,
 			},
+			["delayUpdate"] = 1640282883,
 			["histOldest"] = "n/a",
+			["delayedReset"] = false,
 			["histLiveCount"] = 0,
 		},
 		["History"] = {
 		},
 		["HistoryDay"] = {
 		},
-		["histGeneration"] = 64,
+		["histGeneration"] = 68,
 		["config"] = {
 			["displayMin"] = 0,
 			["debug"] = false,

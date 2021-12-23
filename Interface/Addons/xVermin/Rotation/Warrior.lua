@@ -33,11 +33,15 @@ local function CheckDebuff(d)
 end
 
 local function Show()
-	if CheckDebuff("Rend") then
-		f:Hide()
-	else
+	if not InCombatLockdown() then return end
+	
+	t_hp_percentage = tonumber(string.format("%.0f", UnitHealth("target") / UnitHealthMax("target") * 100))
+
+	if not CheckDebuff("Rend") and t_hp_percentage > 20 and not UnitIsDead("target") then
 		f:SetBackdropColor(1, 0, 0, 1)
 		f:Show()
+	else
+		f:Hide()
 	end
 end
 

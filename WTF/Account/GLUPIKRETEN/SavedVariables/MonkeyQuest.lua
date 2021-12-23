@@ -1182,9 +1182,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 723.3794555664062,
+		["m_iFrameBottom"] = 485.7241821289063,
 		["m_bHideCompletedQuests"] = false,
-		["m_iFrameLeft"] = 2010.023193359375,
+		["m_iFrameLeft"] = 2010.023071289063,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -1216,25 +1216,67 @@ MonkeyQuestConfig = {
 			["Veteran Uzzek - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Hidden Enemies - false"] = {
+			["Ride to Orgrimmar - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Warrior - true"] = {
+			["Plainstrider Menace - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Orgrimmar - true"] = {
+			["Crossroads Conscription - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Dark Storms - false"] = {
+			["The Forgotten Pools - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Conscript of the Horde - false"] = {
+			["Fungal Spores - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Meats to Orgrimmar - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Lost But Not Forgotten - false"] = {
 				["m_bChecked"] = true,
 			},
+			["Harpy Raiders - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Raptor Thieves - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Warrior - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Conscript of the Horde - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Wharfmaster Dizzywig - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Disrupt the Attacks - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Barrens - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Supplies for the Crossroads - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Hidden Enemies - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Need for a Cure - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Dark Storms - false"] = {
+				["m_bChecked"] = true,
+			},
 			["Durotar - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Ragefire Chasm - true"] = {
+				["m_bChecked"] = false,
+			},
+			["Path of Defense - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
