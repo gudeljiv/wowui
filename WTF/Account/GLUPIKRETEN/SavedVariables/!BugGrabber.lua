@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 3648,
 	["lastSanitation"] = 3,
+	["session"] = 3671,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -165,8 +165,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [21]
 		{
@@ -546,8 +546,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [69]
 		{
@@ -805,8 +805,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [102]
 		{
@@ -946,8 +946,8 @@ BugGrabberDB = {
 		}, -- [119]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["time"] = "2020/08/02 20:13:03",
 			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
 		}, -- [120]
 		{
@@ -1420,8 +1420,8 @@ BugGrabberDB = {
 		}, -- [179]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["time"] = "2020/08/19 21:35:15",
 			["session"] = 1943,
+			["time"] = "2020/08/19 21:35:15",
 			["counter"] = 6,
 		}, -- [180]
 		{
@@ -2360,8 +2360,8 @@ BugGrabberDB = {
 		}, -- [297]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\ClickToMove\\ClickToMove.toc",
-			["time"] = "2020/09/30 12:15:00",
 			["session"] = 2740,
+			["time"] = "2020/09/30 12:15:00",
 			["counter"] = 10,
 		}, -- [298]
 		{
@@ -3169,14 +3169,14 @@ BugGrabberDB = {
 		}, -- [399]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Examiner\\Examiner.toc",
-			["session"] = 3191,
 			["time"] = "2020/10/14 21:40:43",
+			["session"] = 3191,
 			["counter"] = 2,
 		}, -- [400]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\NovaInstanceTracker\\NovaInstanceTracker.toc",
-			["session"] = 3191,
 			["time"] = "2020/10/14 21:40:43",
+			["session"] = 3191,
 			["counter"] = 2,
 		}, -- [401]
 		{
@@ -3665,8 +3665,8 @@ BugGrabberDB = {
 		}, -- [462]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["time"] = "2020/08/13 21:31:07",
 			["session"] = 3397,
+			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 12,
 		}, -- [463]
 		{
@@ -3756,8 +3756,8 @@ BugGrabberDB = {
 		}, -- [474]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\KillTrack\\KillTrack.toc",
-			["time"] = "2020/10/22 09:09:38",
 			["session"] = 3440,
+			["time"] = "2020/10/22 09:09:38",
 			["counter"] = 2,
 		}, -- [475]
 		{
@@ -4180,8 +4180,8 @@ BugGrabberDB = {
 		}, -- [529]
 		{
 			["message"] = "(null)",
-			["session"] = 3603,
 			["time"] = "2020/07/24 16:00:06",
+			["session"] = 3603,
 			["counter"] = 219,
 		}, -- [530]
 		{
@@ -4280,5 +4280,85 @@ BugGrabberDB = {
 			["session"] = 3648,
 			["counter"] = 12,
 		}, -- [542]
+		{
+			["message"] = "[string \"print(UnitDebuff(\"target\"))\"]:1: Usage: UnitDebuff(\"unit\", [index][, \"filter\"])",
+			["time"] = "2021/12/23 14:44:59",
+			["locals"] = "(*temporary) = \"target\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `UnitDebuff'\n[string \"print(UnitDebuff(\"target\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 3650,
+			["counter"] = 1,
+		}, -- [543]
+		{
+			["message"] = "[string \"print(UnitDebuff(\"target\",\"Rend\"))\"]:1: Usage: UnitDebuff(\"unit\", [index][, \"filter\"])",
+			["time"] = "2021/12/23 14:45:34",
+			["locals"] = "(*temporary) = \"target\"\n(*temporary) = \"Rend\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `UnitDebuff'\n[string \"print(UnitDebuff(\"target\",\"Rend\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 3650,
+			["counter"] = 2,
+		}, -- [544]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:16: Usage: UnitDebuff(\"unit\", [index][, \"filter\"])",
+			["time"] = "2021/12/23 14:44:30",
+			["locals"] = "(*temporary) = \"target\"\n(*temporary) = \"Rend\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `UnitDebuff'\n[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:16: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:12>\n[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:26: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:12>\n[string \"=[C]\"]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
+			["session"] = 3650,
+			["counter"] = 14,
+		}, -- [545]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:24: Usage: UnitDebuff(\"unit\", [index][, \"filter\"])",
+			["time"] = "2021/12/23 14:47:40",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"=[C]\"]: in function `UnitDebuff'\n[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:24: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:12>\n[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:34: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:12>",
+			["session"] = 3651,
+			["counter"] = 3,
+		}, -- [546]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:20: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2021/12/23 14:58:49",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:20: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:11>\n[string \"=[C]\"]: ?",
+			["session"] = 3657,
+			["counter"] = 82,
+		}, -- [547]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:20: attempt to index upvalue 'xVermin' (a nil value)",
+			["time"] = "2021/12/23 14:59:36",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:20: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:11>\n[string \"=[C]\"]: ?",
+			["session"] = 3658,
+			["counter"] = 129,
+		}, -- [548]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:31: attempt to call field 'hide' (a nil value)",
+			["time"] = "2021/12/23 14:58:45",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:31: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:11>\n[string \"=[C]\"]: ?",
+			["session"] = 3659,
+			["counter"] = 57,
+		}, -- [549]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:29: attempt to call field 'show' (a nil value)",
+			["time"] = "2021/12/23 15:00:48",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:29: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:11>\n[string \"=[C]\"]: ?",
+			["session"] = 3659,
+			["counter"] = 61,
+		}, -- [550]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:31: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
+			["time"] = "2021/12/23 15:01:27",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"=[C]\"]: in function `Hide'\n[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:31: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:11>\n[string \"=[C]\"]: ?",
+			["session"] = 3660,
+			["counter"] = 19,
+		}, -- [551]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:29: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
+			["time"] = "2021/12/23 15:01:29",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:29: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:11>\n[string \"=[C]\"]: ?",
+			["session"] = 3660,
+			["counter"] = 121,
+		}, -- [552]
 	},
 }
