@@ -6,34 +6,42 @@ f:SetHeight(60)
 f:SetPoint("LEFT", UIParent, "LEFT", 0, 0)
 f:SetFrameStrata("BACKGROUND")
 f:CreateBeautyBorder(6)
+f:SetBackdrop(
+	{
+		bgFile = xVermin.Config.background.white,
+		edgeFile = "",
+		tile = false,
+		tileSize = 0,
+		edgeSize = 0,
+		insets = {left = 0, right = 0, top = 0, bottom = 0}
+	}
+)
+f:Hide();
 
-local function THealthShow()
-	local targetHP = format("%.0f", (UnitHealth("target") / UnitHealthMax("target")) * 100)
 
+local function CheckDebuff(d)
 	for i=1,40 do 
 		local debuff = UnitDebuff("target",i)
 		if debuff then 
-			if debuff == "Rend" then
-				f:hide()
+			if debuff == d then
+				return false
 			else
-				f:SetBackdrop(
-					{
-						bgFile = xVermin.Config.background.white,
-						edgeFile = "",
-						tile = false,
-						tileSize = 0,
-						edgeSize = 0,
-						insets = {left = 0, right = 0, top = 0, bottom = 0}
-					}
-				)
-				f:SetBackdropColor(1, 0, 0, 1)
-				f:Show();
+				return true
 			end
 		end
 	end
 end
 
--- TargetFrame:HookScript("OnUpdate", THealthShow)
+local function Show()
+	if CheckDebuff("Rend") then
+		f:Hide()
+	else
+		f:SetBackdropColor(1, 0, 0, 1)
+		f:Show()
+	end
+end
+
+-- TargetFrame:HookScript("OnUpdate", Show)
 -- TargetFrame:HookScript(
 -- 	"OnHide",
 -- 	function(self)
@@ -44,6 +52,7 @@ end
 
 
 
+-- local targetHP = format("%.0f", (UnitHealth("target") / UnitHealthMax("target")) * 100)
 
 
 -- PlayerFrame:HookScript("OnUpdate", THealthShow)
