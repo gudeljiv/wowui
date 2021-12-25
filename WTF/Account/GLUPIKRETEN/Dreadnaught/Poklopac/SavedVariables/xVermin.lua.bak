@@ -1,6 +1,6 @@
 
 xKillCount = {
-	["show"] = true,
+	["show"] = false,
 	["killLog"] = {
 		["Clattering Scorpid"] = {
 			["name"] = "Clattering Scorpid",
@@ -9,6 +9,10 @@ xKillCount = {
 		["Kolkar Outrunner"] = {
 			["name"] = "Kolkar Outrunner",
 			["count"] = 5,
+		},
+		["Pygmy Surf Crawler"] = {
+			["name"] = "Pygmy Surf Crawler",
+			["count"] = 1,
 		},
 		["Mottled Boar"] = {
 			["name"] = "Mottled Boar",
@@ -40,13 +44,13 @@ xKillCount = {
 		},
 	},
 	["experience"] = {
-		["totaltotal"] = 10716,
-		["pulltotal"] = 1138,
+		["totaltotal"] = 32794,
+		["pulltotal"] = 1244,
 	},
 	["position"] = {
-		["y"] = -232.9999847412109,
-		["x"] = -201.9998931884766,
-		["to"] = "TOP",
-		["from"] = "TOP",
+		["y"] = -222.8851318359375,
+		["x"] = 386.6781921386719,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
 	},
 }

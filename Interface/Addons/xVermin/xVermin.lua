@@ -201,6 +201,7 @@ f:SetScript(
 			end
 
 			MiniMapWorldMapButton:Hide()
+
 		end
 	end
 )
