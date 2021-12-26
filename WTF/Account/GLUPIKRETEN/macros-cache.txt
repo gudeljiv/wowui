@@ -5,19 +5,19 @@ END
 VER 3 000000000000000D "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:159
-/castsequence [combat] reset=combat item:2456
+/castsequence [combat] reset=combat item:2455,item:2456
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:117
+/use [nocombat]item:0
 /castsequence [combat] reset=combat item:858,item:2456,item:118
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:5469
 /cast feed pet
-/use item:0
+/use item:5469
 END
 VER 3 000000000000000B "TEST" "132089"
-/run MultiBarBottomLeftButton1:ClearAllPoints()
-/run MultiBarBottomLeftButton1:SetPoint("BOTTOMLEFT", MainMenuBar, "TOPLEFT", 9, -4)
+/tar the rake
+/run print(UnitAttackSpeed("target"))
 END

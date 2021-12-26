@@ -90,7 +90,7 @@ function addon:SetCastbarIconAndText(castbar, cast, db)
     castbar.Icon:SetTexture(cast.icon)
     castbar.Text:SetText(spellName)
 
-    -- Move timer position depending on spellname length
+	-- Move timer position depending on spellname length
     if db.showTimer then
         local yOff = 0
         if db.showBorderShield and cast.isUninterruptible then

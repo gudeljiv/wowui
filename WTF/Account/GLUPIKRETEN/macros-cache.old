@@ -9,13 +9,13 @@ VER 3 000000000000000D "Drink" "Inv_misc_questionmark"
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4540
-/castsequence [combat] reset=combat item:2456,item:118
+/use [nocombat]item:117
+/castsequence [combat] reset=combat item:858,item:2456,item:118
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:4540
+#showtooltip item:117
 /cast feed pet
-/use item:4540
+/use item:117
 END
 VER 3 000000000000000B "TEST" "132089"
 /run MultiBarBottomLeftButton1:ClearAllPoints()
