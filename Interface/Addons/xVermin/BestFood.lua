@@ -185,7 +185,7 @@ function NeedsFoodBadly:IsUsablePetFood(food)
 			table.insert(diet, foodType)
 		end
 	end
-	return not (not (food and self:FindPairInPetFoodArray(food, diet)))
+	return not not (food and self:FindPairInPetFoodArray(food, diet))
 end
 
 function NeedsFoodBadly:FindPairInPetFoodArray(food, diet)
