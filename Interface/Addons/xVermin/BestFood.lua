@@ -285,6 +285,9 @@ function NeedsFoodBadly:IsUsableBandage(bandage)
 end
 
 function NeedsFoodBadly.BetterFood(a, b)
+	if not a then return false end
+	if not b then return false end
+	
 	if a.conj and not b.conj then
 		return true
 	elseif b.conj and not a.conj then

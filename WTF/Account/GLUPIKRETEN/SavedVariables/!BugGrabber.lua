@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 3718,
 	["lastSanitation"] = 3,
+	["session"] = 3721,
 	["errors"] = {
 		{
 			["message"] = "...\\AddOns\\Details\\Libs\\DetailsFramework\\lib\\slider.lua:456: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DetailsFrameworkSliderButtons1:SetPoint.",
@@ -52,21 +52,13 @@ BugGrabberDB = {
 			["counter"] = 2,
 		}, -- [6]
 		{
-			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:290: attempt to index local 'b' (a nil value)",
-			["time"] = "2021/12/25 16:46:03",
-			["locals"] = "a = <table> {\n conj = false\n name = \"Tough Jerky\"\n lvl = 6\n id = 117\n hp = 61.200000\n}\nb = nil\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'b' (a nil value)\"\n",
-			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:290: in function <Interface\\AddOns\\xVermin\\BestFood.lua:287>\n[string \"=[C]\"]: in function `sort'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:165: in function `Sorted'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:112: in function `UpdateMacros'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:56: in function <Interface\\AddOns\\xVermin\\BestFood.lua:48>",
-			["session"] = 3704,
-			["counter"] = 67,
-		}, -- [7]
-		{
 			["message"] = "Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:172: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2021/12/26 21:07:47",
 			["locals"] = "self = ClassicCastbars {\n NAME_PLATE_UNIT_REMOVED = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:477\n StoreCast = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:183\n CreateOrUpdateSecureFocusButton = <function> defined @Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:519\n PLAYER_ENTERING_WORLD = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:351\n SkinPlayerCastbar = <function> defined @Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:415\n ToggleUnitEvents = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:319\n DeleteCast = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:241\n NAME_PLATE_UNIT_ADDED = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:466\n DisplayCastbar = <function> defined @Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:289\n SetBorderShieldStyle = <function> defined @Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:103\n AnchorManager = <table> {\n }\n SetFocusDisplay = <function> defined @Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:567\n StartCast = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:139\n SetCastbarFonts = <function> defined @Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:239\n CheckCastModifiers = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:71\n SetCastbarIconAndText = <function> defined @Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:80\n activeFrames = <table> {\n }\n CastPushback = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:258\n StopCast = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:153\n GROUP_ROSTER_UPDATE = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:488\n GetCastbarFrame = <function> defined @Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:31\n HideCastbar = <function> defined @Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:325\n SetTargetCastbarPosition = <function> defined @Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:44\n db = <table> {\n }\n UNIT_AURA = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:444\n ClearFocus = <function> defined @Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:550\n PLAYER_GUID = \"Player-5239-013D6C3C\"\n SetCastbarStatusColorsOnDisplay = <function> defined @Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:276\n CreateFadeAnimationGroup = <function> defined @Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:262\n ZONE_CHANGED_NEW_AREA = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:366\n 0 = <userdata>\n GROUP_JOINED = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:488\n SetLSMBorders = <function> defined @Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:214\n SetCastbarStyle = <function> defined @Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:151\n defaultConfig = <table> {\n }\n activeTimers = <table> {\n }\n StartAllCasts = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:164\n COMBAT_LOG_EVENT_UNFILTERED = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:522\n npcCastUninterruptibleCache = <table> {\n }\n StopAllCasts = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:174\n GetUnitType = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:60\n PLAYER_TARGET_CHANGED = <function> defined @Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:459\n}\ncastbar = <unnamed> {\n 0 = <userdata>\n animationGroup = <unnamed> {\n }\n Border = <unnamed> {\n }\n Flash = <unnamed> {\n }\n showCastbar = true\n _data = <table> {\n }\n Background = <unnamed> {\n }\n Icon = <unnamed> {\n }\n startChannelColor = <table> {\n }\n finishedCastColor = <table> {\n }\n nonInterruptibleColor = <table> {\n }\n Text = <unnamed> {\n }\n fade = <unnamed> {\n }\n currWidth = 400\n Timer = <unnamed> {\n }\n BorderShield = <unnamed> {\n }\n Spark = <unnamed> {\n }\n startCastColor = <table> {\n }\n flashColorSameAsStart = true\n finishedColorSameAsStart = true\n failedCastColor = <",
 			["stack"] = "[string \"@Interface\\AddOns\\ClassicCastbars\\core/Frames.lua\"]:172: in function `SetCastbarStyle'\n[string \"@Interface\\AddOns\\ClassicCastbars\\core/Frames.lua\"]:303: in function `DisplayCastbar'\n[string \"@Interface\\AddOns\\ClassicCastbars\\ClassicCastbars-v1.4.3.lua\"]:150: in function `StartCast'\n[string \"@Interface\\AddOns\\ClassicCastbars\\ClassicCastbars-v1.4.3.lua\"]:169: in function `StartAllCasts'\n[string \"@Interface\\AddOns\\ClassicCastbars\\ClassicCastbars-v1.4.3.lua\"]:237: in function <Interface\\AddOns\\ClassicCastbars\\ClassicCastbars.lua:183>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?",
 			["session"] = 3709,
 			["counter"] = 1,
-		}, -- [8]
+		}, -- [7]
 		{
 			["message"] = "[string \"TargetFrame.1ac84ecb4a0.Icon:CreateBeautyBorder(6)\"]:1: malformed number near '.1ac84ecb4a0'",
 			["time"] = "2021/12/26 21:24:36",
@@ -74,29 +66,53 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 3713,
 			["counter"] = 1,
-		}, -- [9]
+		}, -- [8]
 		{
 			["message"] = "Interface\\AddOns\\ClassicCastbars\\core/Frames.lua:93: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2021/12/26 21:05:15",
 			["stack"] = "[string \"@Interface\\AddOns\\ClassicCastbars\\core/Frames.lua\"]:93: in function `SetCastbarIconAndText'\n[string \"@Interface\\AddOns\\ClassicCastbars\\core/Frames.lua\"]:304: in function `DisplayCastbar'\n[string \"@Interface\\AddOns\\ClassicCastbars_Options\\TestMode.lua\"]:173: in function `SetCastbarMovable'\n[string \"@Interface\\AddOns\\ClassicCastbars_Options\\TestMode.lua\"]:96: in function `ToggleCastbarMovable'\n[string \"@Interface\\AddOns\\ClassicCastbars_Options\\ClassicCastbars_Options-v1.4.3.lua\"]:548: in function <...\\ClassicCastbars_Options\\ClassicCastbars_Options.lua:548>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:51: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:49>\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:847: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:668>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:72: in function <...face\\AddOns\\BlizzMove\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:70>\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:306: in function `Fire'\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIWidget-Button.lua\"]:22: in function <...Move\\Libs\\AceGUI-3.0\\widgets\\AceGUIWidget-Button.lua:19>",
 			["session"] = 3714,
 			["counter"] = 8,
-		}, -- [10]
+		}, -- [9]
 		{
 			["message"] = "...e\\AddOns\\xVermin\\Frames/DefaultFramesCustomScale.lua:45: attempt to index field '?' (a nil value)",
 			["time"] = "2021/12/25 17:43:06",
 			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"ADDON_LOADED\"\nframelist = <table> {\n 1 = \"TalentFrame\"\n}\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = \"TalentFrame\"\n}\n(for control) = 1\n_ = 1\nname = \"TalentFrame\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"TalentFrame\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nLoDMap = <table> {\n Blizzard_InspectUI = <table> {\n }\n Blizzard_TradeSkillUI = <table> {\n }\n Blizzard_MacroUI = <table> {\n }\n Blizzard_TalentUI = <table> {\n }\n Blizzard_CraftUI = <table> {\n }\n}\n",
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Frames/DefaultFramesCustomScale.lua\"]:45: in function <...e\\AddOns\\xVermin\\Frames/DefaultFramesCustomScale.lua:40>\n[string \"=[C]\"]: in function `LoadAddOn'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:365: in function `UIParentLoadAddOn'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:424: in function `PlayerTalentFrame_LoadUI'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:501: in function `ToggleTalentFrame'\n[string \"TOGGLETALENTS\"]:1: in function <[string \"TOGGLETALENTS\"]:1>",
-			["session"] = 3718,
-			["counter"] = 6,
-		}, -- [11]
+			["session"] = 3720,
+			["counter"] = 8,
+		}, -- [10]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/TalentFrame.lua:22: Usage: hooksecurefunc([table,] \"function\", hookfunc)",
 			["time"] = "2021/12/25 17:43:06",
 			["locals"] = "(*temporary) = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface_Vanilla\\FrameXML\\ActionButton.lua:70\n ActionButton7FlyoutBorder = ActionButton7FlyoutBorder {\n }\n GuildScrollFrameEntry11LeftText = GuildScrollFrameEntry11LeftText {\n }\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 776\n WeakAurasDisplayButton15ToggleHighlightTexture = WeakAurasDisplayButton15ToggleHighlightTexture {\n }\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 399\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n Atr_StackPriceCopperMiddle = Atr_StackPriceCopperMiddle {\n }\n InspectFrameTab1HighlightTexture = InspectFrameTab1HighlightTexture {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n OPTION_TOOLTIP_SHOW_MULTIBAR4 = \"Toggles an additional optional actionbar on the right side of the screen.\"\n GuildScrollFrameEntry20 = GuildScrollFrameEntry20 {\n }\n LE_GAME_ERR_INVALID_FOLLOW_PVP_COMBAT = 353\n MerchantItem3AltCurrencyFrameItem1Text = MerchantItem3AltCurrencyFrameItem1Text {\n }\n DetailsWindowOptionsBarTextEditorEntryNumberLines = DetailsWindowOptionsBarTextEditorEntryNumberLines {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n DetailsOptionsWindow16UserTimeCapturesAddPanelFuncEntry = DetailsOptionsWindow16UserTimeCapturesAddPanelFuncEntry {\n }\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n RaidGroupButton9RoleTexture = RaidGroupButton9RoleTexture {\n }\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface_Vanilla\\FrameXML\\UnitFrame.lua:595\n MANA = \"Mana\"\n CraftExpandTabLeft = CraftExpandTabLeft {\n }\n AuctionsButton2ItemIconTexture = AuctionsButton2ItemIconTexture {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2379\n MoneyFrame_OnEvent = <function> defined @Interface\\FrameXML\\MoneyFrame.lua:214\n HubPanelProfileDefaultWidgetEliteIndicatorText = HubPanelProfileDefaultWidgetEliteIndicatorText {\n }\n AutoCompleteEditBox_OnKeyDown = <function> defined @Interface\\FrameXML\\AutoComplete.lua:368\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n GetMonitorAspectRatio = <function> defined =[C]:-1\n Button_WorldTogglePushedTexture = Button_WorldTogglePushedTexture {\n }\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n PetStableMoneyFrameGoldButtonText = PetStableMoneyFrameGoldButtonText {\n }\n TargetFrameDebuff2Icon = TargetFrameDebuff2Icon {\n }\n questieLineFrame38 = questieLineFrame38 {\n }\n VOICEMACRO_4_Sc_1_FEMALE = \"Help me attack!\"\n JoinSkirmish = <function> defined =[C]:-1\n StanceButton4FlyoutArrow = StanceButton4FlyoutArrow {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n HubPanelProfileDefaultHideAuraDuration = HubPanelProfileDefaultHideAuraDuration {\n }\n DMG_LCD = \"DMG\"\n ACTION_SPELL_MISSED_POSSESSIVE = \"1\"\n HubPanelProfileDefaultFriendlyNameColorMode = HubPanelProfileDefaultFriendlyNameColorMode {\n }\n BattlefieldMapFrameLeft = BattlefieldMapFrameLeft {\n }\n Advanced_AdapterDropDownWarning = Advanced_AdapterDropDownWarning {\n }\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1123\n TELLMEWHEN_VERSION_FULL = \"9.1.2 Classic \"\n DetailsOptionsWindow1ClassColorsButton_TextureDisabled = DetailsOptionsWindow1ClassColorsButton_TextureDisabled {\n }\n SortQuestWatches = <function> defined =[C]:-1\n ContainerFrame4Item16Cooldown = ContainerFrame4Item16Cooldown {\n }\n MINIMAP_TRACKING_TRAINER_CLASS = \"Class Trainer\"\n DetailsOptionsWindow3C",
 			["stack"] = "[string \"=[C]\"]: in function `hooksecurefunc'\n[string \"@Interface\\AddOns\\xVermin\\Frames/TalentFrame.lua\"]:22: in function <Interface\\AddOns\\xVermin\\Frames/TalentFrame.lua:20>\n[string \"=[C]\"]: in function `LoadAddOn'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:365: in function `UIParentLoadAddOn'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:424: in function `PlayerTalentFrame_LoadUI'\n[string \"@Interface_Vanilla\\FrameXML\\UIParent.lua\"]:501: in function `ToggleTalentFrame'\n[string \"TOGGLETALENTS\"]:1: in function <[string \"TOGGLETALENTS\"]:1>",
-			["session"] = 3718,
-			["counter"] = 6,
+			["session"] = 3720,
+			["counter"] = 8,
+		}, -- [11]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:288: attempt to index local 'a' (a nil value)",
+			["time"] = "2021/12/27 20:24:23",
+			["locals"] = "a = nil\nb = <table> {\n conj = false\n name = \"Freshly Baked Bread\"\n lvl = 5\n id = 4541\n hp = 243.600000\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'a' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:288: in function <Interface\\AddOns\\xVermin\\BestFood.lua:287>\n[string \"=[C]\"]: in function `sort'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:165: in function `Sorted'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:112: in function `UpdateMacros'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:53: in function <Interface\\AddOns\\xVermin\\BestFood.lua:48>",
+			["session"] = 3720,
+			["counter"] = 9,
 		}, -- [12]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:290: attempt to index local 'b' (a nil value)",
+			["time"] = "2021/12/25 16:46:03",
+			["locals"] = "a = <table> {\n conj = false\n name = \"Tough Jerky\"\n lvl = 6\n id = 117\n hp = 61.200000\n}\nb = nil\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'b' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:290: in function <Interface\\AddOns\\xVermin\\BestFood.lua:287>\n[string \"=[C]\"]: in function `sort'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:165: in function `Sorted'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:112: in function `UpdateMacros'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:56: in function <Interface\\AddOns\\xVermin\\BestFood.lua:48>",
+			["session"] = 3720,
+			["counter"] = 128,
+		}, -- [13]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:308: attempt to index local 'b' (a nil value)",
+			["time"] = "2021/12/27 20:54:16",
+			["locals"] = "a = <table> {\n id = 4537\n type = \"Fruit\"\n}\nb = nil\n(*temporary) = 1\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = 1\n(*temporary) = \"attempt to index local 'b' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:308: in function <Interface\\AddOns\\xVermin\\BestFood.lua:307>\n[string \"=[C]\"]: in function `sort'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:165: in function `Sorted'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:113: in function `UpdateMacros'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:53: in function <Interface\\AddOns\\xVermin\\BestFood.lua:48>",
+			["session"] = 3721,
+			["counter"] = 2,
+		}, -- [14]
 	},
 }

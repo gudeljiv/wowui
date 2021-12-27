@@ -4,18 +4,18 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000000000D "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:159
+/use [nocombat]item:1179
 /castsequence [combat] reset=combat item:2455,item:2456
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat item:858,item:2456,item:118
+/use [nocombat]item:4537
+/castsequence [combat] reset=combat item:858,item:2456
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:5469
+#showtooltip item:4537
 /cast feed pet
-/use item:5469
+/use item:4537
 END
 VER 3 000000000000000B "TEST" "132089"
 /tar the rake
