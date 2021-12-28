@@ -5,17 +5,17 @@ END
 VER 3 000000000000000D "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:1179
-/castsequence [combat] reset=combat item:2455,item:2456
+/castsequence [combat] reset=combat item:2455
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4537
-/castsequence [combat] reset=combat item:858,item:2456
+/use [nocombat]item:4541
+/castsequence [combat] reset=combat item:858
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:4537
+#showtooltip item:4541
 /cast feed pet
-/use item:4537
+/use item:4541
 END
 VER 3 000000000000000B "TEST" "132089"
 /tar the rake

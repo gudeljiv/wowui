@@ -34,7 +34,7 @@ ChocolateBarDB = {
 		["Vermins - Stonespine"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
@@ -42,24 +42,13 @@ ChocolateBarDB = {
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Dotwise - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
-				},
-				["textureName"] = "None",
-			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -80,9 +69,20 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
+			["locked"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
@@ -438,14 +438,14 @@ ChocolateBarDB = {
 					["customLabel"] = "G2",
 				},
 			},
-			["gap"] = 0,
+			["fontName"] = "Friz Quadrata TT",
 			["forceColor"] = false,
 			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["fontName"] = "Friz Quadrata TT",
+			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["desaturated"] = false,
+			["gap"] = 0,
 			["moveFrames"] = false,
 			["textColor"] = {
 				["a"] = 1,
@@ -506,7 +506,7 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Poklopac-Dreadnaught"] = {
-		["total"] = 56108,
+		["total"] = 58200,
 	},
 	["Ozrencic-"] = {
 		["total"] = 853,

@@ -6,12 +6,6 @@ VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 /stopcasting
 /petpassive
 END
-VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@pet,dead]Revive Pet
-/cast [nopet] Call Pet
-/cast Mend Pet
-END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /petattack
@@ -48,4 +42,10 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Serpent Sting
 /cast !Auto Shot
+END
+VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@pet,dead]Revive Pet
+/cast [nopet] Call Pet
+/cast Mend Pet
 END

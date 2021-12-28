@@ -305,6 +305,9 @@ function NeedsFoodBadly.BetterFood(a, b)
 end
 
 function NeedsFoodBadly.BetterPetFood(a, b)
+	if not a then return false end
+	if not b then return false end
+
 	return GetItemCount(a.id) <= GetItemCount(b.id)
 end
 

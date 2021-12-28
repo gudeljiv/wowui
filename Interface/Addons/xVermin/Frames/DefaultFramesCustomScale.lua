@@ -17,18 +17,20 @@ for i, v in pairs(
 		GossipFrame
 	}
 ) do
-	v:SetScale(1.2)
+	if v then 
+		v:SetScale(1.2)
 
-	v:ClearAllPoints()
-	v:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
-	-- v.SetPoint = function()
-	-- end
+		v:ClearAllPoints()
+		v:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
+		-- v.SetPoint = function()
+		-- end
+	end
 end
 
 local LoDMap = {
 	Blizzard_CraftUI = {"CraftFrame"},
 	Blizzard_MacroUI = {"MacroFrame"},
-	Blizzard_TalentUI = {"TalentFrame"},
+	Blizzard_TalentUI = {"PlayerTalentFrame"},
 	Blizzard_TradeSkillUI = {"TradeSkillFrame"},
 	Blizzard_InspectUI = {"InspectFrame"}
 }
