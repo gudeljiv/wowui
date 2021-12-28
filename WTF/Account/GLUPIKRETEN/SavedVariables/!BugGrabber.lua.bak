@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 3735,
+	["session"] = 3745,
 	["errors"] = {
 		{
 			["message"] = "...\\AddOns\\Details\\Libs\\DetailsFramework\\lib\\slider.lua:456: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DetailsFrameworkSliderButtons1:SetPoint.",
@@ -146,5 +146,45 @@ BugGrabberDB = {
 			["session"] = 3731,
 			["counter"] = 1,
 		}, -- [18]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:207: attempt to call method 'SetBackdrop' (a nil value)",
+			["time"] = "2021/12/28 18:59:46",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"PLAYER_ENTERING_WORLD\"\nisInitialLogin = false\nisReloadingUi = true\n(*temporary) = nil\n(*temporary) = Puggle_ContainerFrame {\n 0 = <userdata>\n numTabs = 5\n beautyShadow = <table> {\n }\n elapsed = 0\n selectedTab = 1\n beautyBorder = <table> {\n }\n}\n(*temporary) = <table> {\n bgFile = \"Interface\\Buttons\\WHITE8x8\"\n tileSize = 0\n edgeFile = \"\"\n tile = false\n edgeSize = 0\n insets = <table> {\n }\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:90\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Color = <table> {\n }\n Class = \"HUNTER\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:82\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:107\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:134\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:119\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:207: in function <Interface\\AddOns\\xVermin\\xVermin.lua:7>",
+			["session"] = 3741,
+			["counter"] = 1,
+		}, -- [19]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:219: unexpected symbol near ')'",
+			["time"] = "2021/12/28 19:00:40",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 3742,
+			["counter"] = 4,
+		}, -- [20]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:222: unexpected symbol near ')'",
+			["time"] = "2021/12/28 19:01:33",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 3743,
+			["counter"] = 4,
+		}, -- [21]
+		{
+			["message"] = "[string \"PuggleLib_DropDownList1MenuBackdrop:OnLoad\"]:1: attempt to call method 'SetBackdropBorderColor' (a nil value)",
+			["time"] = "2021/12/28 18:57:39",
+			["locals"] = "self = PuggleLib_DropDownList1MenuBackdrop {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = PuggleLib_DropDownList1MenuBackdrop {\n 0 = <userdata>\n}\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = \"attempt to call method 'SetBackdropBorderColor' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 3744,
+			["counter"] = 5,
+		}, -- [22]
+		{
+			["message"] = "[string \"PuggleLib_DropDownList2MenuBackdrop:OnLoad\"]:1: attempt to call method 'SetBackdropBorderColor' (a nil value)",
+			["time"] = "2021/12/28 18:57:39",
+			["locals"] = "self = PuggleLib_DropDownList2MenuBackdrop {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = PuggleLib_DropDownList2MenuBackdrop {\n 0 = <userdata>\n}\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = \"attempt to call method 'SetBackdropBorderColor' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 3744,
+			["counter"] = 5,
+		}, -- [23]
 	},
 }

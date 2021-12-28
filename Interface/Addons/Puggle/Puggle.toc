@@ -1,0 +1,13 @@
+## Interface: 11302
+## Title: Puggle
+## Author: Cixi@Remulos
+## Notes: The easier way to find your group.
+## SavedVariables: Puggle_minimapPos, Puggle_showMinimapButton, Puggle_showMessageOnNewRequest, Puggle_playSoundOnNewRequest, Puggle_showLevelColorCoding, Puggle_showOnlyRelevant, Puggle_idleTimeout, Puggle_sortLatestFirst, Puggle_dungeonTags, Puggle_dungeonNames, Puggle_searchTags, Puggle_blacklistTags, Puggle_allowSendWho, Puggle_disableInInstance, Puggle_pastGroups, Puggle_pastPlayers, Puggle_encoded
+## SavedVariablesPerCharacter: Puggle_dungeonShow, Puggle_trackGroups
+## Version: 2.7
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+Libs\NoTaintUIDropDownMenu\UIDropDownMenu.xml
+Puggle.lua
+Puggle.xml

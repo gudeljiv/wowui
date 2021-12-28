@@ -2,15 +2,19 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
+	["_5000000"] = 10000,
+	["LOG_DE_DATA_X"] = true,
+	["_1000000"] = 2500,
 	["_10000"] = 200,
 	["_500"] = 5,
-	["_1000000"] = 2500,
-	["_200000"] = 1000,
 	["STARTING_DISCOUNT"] = 5,
-	["LOG_DE_DATA_X"] = true,
-	["_5000000"] = 10000,
+	["_200000"] = 1000,
 }
 AUCTIONATOR_PRICING_HISTORY = {
+	["Ring of Defense"] = {
+		["is"] = "12985:0:0:0:0",
+		["7052892"] = "39800:1",
+	},
 	["Priest's Mace of Stamina"] = {
 		["is"] = "2075:0:0:15:0",
 		["7049596"] = "151490:1",
@@ -18,6 +22,10 @@ AUCTIONATOR_PRICING_HISTORY = {
 	["Silver Bar"] = {
 		["is"] = "2842:0:0:0:0",
 		["7049596"] = "590:1",
+	},
+	["Coarse Blasting Powder"] = {
+		["is"] = "4364:0:0:0:0",
+		["7052892"] = "480:1",
 	},
 	["Pattern: White Leather Jerkin"] = {
 		["is"] = "2407:0:0:0:0",
@@ -237,12 +245,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["mr"] = 243,
 		},
-		["Bolt of Silk Cloth"] = {
-			["H3212"] = 2100,
-			["cc"] = 7,
-			["id"] = "4305:0:0:0:0",
-			["sc"] = 0,
-			["mr"] = 2100,
+		["Barbaric Loincloth"] = {
+			["H3212"] = 400,
+			["cc"] = 4,
+			["id"] = "3309:0:0:0:0",
+			["sc"] = 1,
+			["mr"] = 400,
 		},
 		["Barbaric Cloth Vest"] = {
 			["H3212"] = 900,
@@ -287,19 +295,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["mr"] = 699,
 		},
-		["Linen Cloth"] = {
-			["H3212"] = 20,
-			["cc"] = 7,
-			["id"] = "2589:0:0:0:0",
-			["sc"] = 0,
-			["mr"] = 20,
-		},
 		["Aboriginal Loincloth of the Owl"] = {
 			["H3212"] = 900,
 			["cc"] = 4,
 			["id"] = "14119:0:0:760:0",
 			["sc"] = 1,
 			["mr"] = 900,
+		},
+		["Linen Cloth"] = {
+			["H3212"] = 20,
+			["cc"] = 7,
+			["id"] = "2589:0:0:0:0",
+			["sc"] = 0,
+			["mr"] = 20,
 		},
 		["Bloodspattered Loincloth of the Bear"] = {
 			["H3212"] = 1800,
@@ -323,12 +331,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 4595,
 		},
-		["Mageweave Cloth"] = {
-			["H3212"] = 1500,
+		["Bolt of Runecloth"] = {
+			["H3212"] = 30000,
 			["cc"] = 7,
-			["id"] = "4338:0:0:0:0",
+			["id"] = "14048:0:0:0:0",
 			["sc"] = 0,
-			["mr"] = 1500,
+			["mr"] = 30000,
 		},
 		["Bloodspattered Loincloth of Power"] = {
 			["H3212"] = 899,
@@ -365,12 +373,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 200,
 		},
-		["Bolt of Runecloth"] = {
-			["H3212"] = 30000,
+		["Mageweave Cloth"] = {
+			["H3212"] = 1500,
 			["cc"] = 7,
-			["id"] = "14048:0:0:0:0",
+			["id"] = "4338:0:0:0:0",
 			["sc"] = 0,
-			["mr"] = 30000,
+			["mr"] = 1500,
 		},
 		["Bolt of Linen Cloth"] = {
 			["H3212"] = 55,
@@ -393,19 +401,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 4000,
 		},
-		["Barbaric Loincloth"] = {
-			["H3212"] = 400,
-			["cc"] = 4,
-			["id"] = "3309:0:0:0:0",
-			["sc"] = 1,
-			["mr"] = 400,
-		},
 		["Wool Cloth"] = {
 			["H3212"] = 177,
 			["cc"] = 7,
 			["id"] = "2592:0:0:0:0",
 			["sc"] = 0,
 			["mr"] = 177,
+		},
+		["Bolt of Silk Cloth"] = {
+			["H3212"] = 2100,
+			["cc"] = 7,
+			["id"] = "4305:0:0:0:0",
+			["sc"] = 0,
+			["mr"] = 2100,
 		},
 		["Bloodspattered Loincloth of the Tiger"] = {
 			["H3212"] = 2200,
@@ -490,6 +498,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 	},
 	["Dreadnaught_Horde"] = {
+		["Ring of Defense"] = {
+			["mr"] = 39997,
+			["cc"] = 4,
+			["id"] = "12985:0:0:0:0",
+			["sc"] = 0,
+			["H4061"] = 39997,
+		},
 		["Priest's Mace of Stamina"] = {
 			["mr"] = 1493,
 			["sc"] = 4,
@@ -503,6 +518,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4059"] = 593,
 			["id"] = "2842:0:0:0:0",
 			["cc"] = 7,
+		},
+		["Coarse Blasting Powder"] = {
+			["mr"] = 481,
+			["cc"] = 7,
+			["id"] = "4364:0:0:0:0",
+			["sc"] = 1,
+			["H4061"] = 481,
 		},
 		["Swiftthistle"] = {
 			["mr"] = 3699,
@@ -874,9 +896,9 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 1,
 		["numstacks"] = 0,
 	},
-	["elemental water"] = {
+	["volatile life"] = {
+		["stacksize"] = 10,
 		["numstacks"] = 0,
-		["stacksize"] = 5,
 	},
 	["mighty rage potion"] = {
 		["numstacks"] = 0,
@@ -942,9 +964,9 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 1,
 		["numstacks"] = 0,
 	},
-	["volatile life"] = {
-		["stacksize"] = 10,
+	["elemental water"] = {
 		["numstacks"] = 0,
+		["stacksize"] = 5,
 	},
 	["exotic leather"] = {
 		["numstacks"] = 0,

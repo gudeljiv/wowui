@@ -199,10 +199,9 @@ f:SetScript(
 			end
 			TargetFrame.SetPoint = function()
 			end
-
-			MiniMapWorldMapButton:Hide()
-
 		end
+
+		MiniMapWorldMapButton:Hide()
 	end
 )
 

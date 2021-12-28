@@ -32,7 +32,7 @@ GMMONEY = {
 	},
 	["Dreadnaught"] = {
 		["Poklopac"] = {
-			["GOLD"] = 103029,
+			["GOLD"] = 69060,
 			["CLASS"] = "HUNTER",
 		},
 		["Moolatz"] = {

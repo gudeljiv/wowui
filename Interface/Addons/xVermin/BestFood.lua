@@ -312,10 +312,16 @@ function NeedsFoodBadly.BetterPetFood(a, b)
 end
 
 function NeedsFoodBadly.BetterBuffFood(a, b)
+	if not a then return false end
+	if not b then return false end
+
 	return a.stam > b.stam or (a.stam == b.stam and GetItemCount(a.id) <= GetItemCount(b.id))
 end
 
 function NeedsFoodBadly.BetterDrink(a, b)
+	if not a then return false end
+	if not b then return false end
+
 	if (a and a.conj) and (b and not b.conj) then
 		return true
 	elseif (b and b.conj) and (a and not a.conj) then
@@ -328,30 +334,49 @@ function NeedsFoodBadly.BetterDrink(a, b)
 	if b_mp < 1 then
 		b_mp = UnitHealthMax("player") * b_mp
 	end
+
 	return a_mp > b_mp or (a_mp == b_mp and GetItemCount(a.id) <= GetItemCount(b.id))
 end
 
 function NeedsFoodBadly.BetterBuffDrink(a, b)
+	if not a then return false end
+	if not b then return false end
+
 	return a.mp5 > b.mp5 or (a.mp5 == b.mp5 and GetItemCount(a.id) <= GetItemCount(b.id))
 end
 
 function NeedsFoodBadly.BetterHPotion(a, b)
+	if not a then return false end
+	if not b then return false end
+
 	return a.high >= b.high
 end
 
 function NeedsFoodBadly.BetterMPotion(a, b)
+	if not a then return false end
+	if not b then return false end
+
 	return a.high >= b.high
 end
 
 function NeedsFoodBadly.BetterHealthstone(a, b)
+	if not a then return false end
+	if not b then return false end
+
 	return a.hp >= b.hp
 end
 
 function NeedsFoodBadly.BetterManaGem(a, b)
+	if not a then return false end
+	if not b then return false end
+
 	return a.high >= b.high
 end
 
 function NeedsFoodBadly.BetterBandage(a, b)
+	if not a then return false end
+	if not b then return false end
+
 	if a.bg and not b.bg then
 		return true
 	elseif b.bg and not a.bg then

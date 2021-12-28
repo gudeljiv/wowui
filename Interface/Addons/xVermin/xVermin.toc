@@ -32,6 +32,7 @@ Reputation/Reputation.lua
 
 Addons/AdiBags.lua
 Addons/Examiner.lua
+Addons/Puggle.lua
 Addons/MonkeyQuest.lua
 Addons/Omen.lua
 Addons/Questie.lua

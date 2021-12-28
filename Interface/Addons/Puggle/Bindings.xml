@@ -1,0 +1,26 @@
+<Bindings>
+	<Binding name = "Toggle UI" header = "" category = "Puggle">
+		Puggle_MinimapButton_OnClick()
+	</Binding>
+	<Binding name = "Toggle Group List" header = "" category = "Puggle">
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION)
+		Puggle_ContainerFrame:Show()
+		Puggle_SetStarSource("groupMember")
+		PanelTemplates_SetTab(Puggle_ContainerFrame, 2);
+		Puggle_ShowTab(2)
+	</Binding>
+	<Binding name = "Toggle Player List" header = "" category = "Puggle">
+		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION)
+		Puggle_ContainerFrame:Show()
+		Puggle_SetStarSource("player")
+		PanelTemplates_SetTab(Puggle_ContainerFrame, 3);
+		Puggle_ShowTab(3)
+	</Binding>
+	<Binding name = "Toggle notification sound " header = "" category = "Puggle">
+		Puggle_ToggleSound()
+	</Binding>
+	<Binding name = "Toggle all dungeon requests" header = "" category = "Puggle">
+		Puggle_ToggleAllDungeons(true)
+	</Binding>
+
+</Bindings>

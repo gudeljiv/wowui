@@ -1,0 +1,1116 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+C:\Projects\WoW\Bin\Interface\FrameXML\UI.xsd">
+	<Script file="Puggle.lua"/>
+	<!-- Main Frame	-->
+	<Frame
+       	name="Puggle_ContainerFrame"
+       	toplevel="true"
+       	frameStrata="DIALOG"
+       	movable="true"
+	   	resizable="true"
+       	enableMouse="true"
+       	hidden="true"
+		clampedToScreen="true"
+       	parent="UIParent">
+       	<Size>
+        	<AbsDimension x="700" y="500"/>
+      	</Size>
+		<ResizeBounds>
+			<minResize x="700" y="500"/>
+      		<maxResize x="700" />
+  		</ResizeBounds>
+       <Anchors>
+           <Anchor point="CENTER">
+               <Offset><AbsDimension x="0" y="50"/></Offset>
+           </Anchor>
+       </Anchors>
+       <Backdrop
+           bgFile="Interface\DialogFrame\UI-DialogBox-Background"
+           edgeFile="Interface\DialogFrame\UI-DialogBox-Border"
+           tile="true">
+           <BackgroundInsets>
+               <AbsInset left="11" right="12" top="12" bottom="11"/>
+           </BackgroundInsets>
+           <TileSize>
+               <AbsValue val="32"/>
+           </TileSize>
+           <EdgeSize>
+               <AbsValue val="32"/>
+           </EdgeSize>
+       </Backdrop>
+       <Layers>
+           <Layer level="ARTWORK">
+               <Texture name="myFrameHeader" file="Interface\DialogFrame\UI-DialogBox-Header">
+                   <Size>
+                       <AbsDimension x="356" y="74"/>
+                   </Size>
+                   <Anchors>
+                       <Anchor point="TOP">
+                           <Offset>
+                               <AbsDimension x="0" y="16"/>
+                           </Offset>
+                       </Anchor>
+                   </Anchors>
+               </Texture>
+               <FontString inherits="GameFontNormal" text="Puggle" name="maintitle">
+                   <Anchors>
+                       <Anchor point="TOP" relativeTo="myFrameHeader">
+                           <Offset>
+                               <AbsDimension x="0" y="-17"/>
+                           </Offset>
+                       </Anchor>
+                   </Anchors>
+               </FontString>
+			   <FontString name="Puggle_Resizing" inherits="GameFontNormal" text="Resizing..." hidden="true">
+					<Anchors>
+						<Anchor point="CENTER" relativeTo="$parent"></Anchor>
+					</Anchors>
+				</FontString>
+           </Layer>
+       </Layers>
+       <Frames>
+			<Button name="$parent_closeButton" inherits="UIPanelCloseButton">
+				<Anchors>
+					<Anchor point="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="-4" y="-6" />
+						</Offset>
+					</Anchor>
+				</Anchors>
+               <Scripts>
+                   <OnClick>
+						Puggle_MinimapButton_OnClick()
+					</OnClick>
+               </Scripts>
+			</Button>
+
+		   
+           <Frame name="myTabPage1" hidden="false">
+               <Anchors>
+                   <Anchor point="TOPLEFT"/>
+                   <Anchor point="BOTTOMRIGHT"/>
+               </Anchors>
+               <Layers>
+                   <Layer level="ARTWORK">
+						<FontString name="$parent_synopsis" inherits="GameFontNormal" text="Players have expressed interest in the following dungeons:">
+							<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="20" y="-40"/></Offset></Anchor></Anchors>
+							<Color a="1" r="1" g="1" b="1" />
+						</FontString>				   
+                       <FontString name="$parent_nobody" inherits="GameFontNormal" text="There are currently no player registered to any dungeon">
+                           <Anchors>
+                               <Anchor point="CENTER" relativeTo="$parent"></Anchor>
+                           </Anchors>
+                       </FontString>
+                   </Layer>
+				</Layers>
+				<Frames>
+					<ScrollFrame name="Puggle_ScrollFrame" inherits="UIPanelScrollFrameTemplate">
+						<ScrollChild >
+							<Frame name="Puggle_ScrollChildFrame">
+								<Size><AbsDimension x="676" y="1"/></Size>
+							</Frame>
+						</ScrollChild>
+						<Size><AbsDimension x="676" y="420"/></Size>
+						<Anchors>
+							<Anchor point="TOPRIGHT" relativeTo="$parent" relativePoint="TOPRIGHT">
+								<Offset><AbsDimension x="-33" y="-65"/></Offset>
+							</Anchor>
+						</Anchors>
+
+						<Scripts>
+							<OnVerticalScroll>
+							</OnVerticalScroll>
+						</Scripts>				
+					</ScrollFrame>
+				</Frames> 
+			</Frame>
+
+			
+           <Frame name="myTabPage2" hidden="true">
+               <Anchors>
+                   <Anchor point="TOPLEFT"/>
+                   <Anchor point="BOTTOMRIGHT"/>
+               </Anchors>
+               <Layers>
+                   <Layer level="ARTWORK">
+						<FontString inherits="GameFontNormal" text="Select one of the groups you took part in:">
+							<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="20" y="-40"/></Offset></Anchor></Anchors>
+							<Color a="1" r="1" g="1" b="1" />
+						</FontString>				   
+						<FontString name="$parent_duration" inherits="GameFontNormal" text="Duration">
+							<Anchors><Anchor point="TOPRIGHT" relativeTo="$parent"><Offset><AbsDimension x="-40" y="-120"/></Offset></Anchor></Anchors>
+							<Color a="1" r="1" g="1" b="1" />
+						</FontString>
+						<FontString name="$parent_text1" inherits="GameFontNormal" text="Party members:">
+							<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="20" y="-120"/></Offset></Anchor></Anchors>
+							<Color a="1" r="1" g="1" b="1" />
+						</FontString>
+						<FontString name="$parent_commentText" inherits="GameFontNormal" text="No comment yet" justifyV="TOP" justifyH="LEFT" letters="400">
+							<Size><AbsDimension x="656" y="100" /></Size>
+							<Anchors><Anchor point="BOTTOMLEFT" relativeTo="$parent"><Offset><AbsDimension x="25" y="0"/></Offset></Anchor></Anchors>
+							<Color a="1" r="0.7" g="0.7" b="0.7" />
+						</FontString>
+                       <FontString name="$parent_nobody" inherits="GameFontNormal" text="You have not joined any group yet">
+                           <Anchors>
+                               <Anchor point="CENTER" relativeTo="$parent"></Anchor>
+                           </Anchors>
+                       </FontString>
+                   </Layer>
+				</Layers>
+				<Frames>
+					<ScrollFrame name="Puggle_ScrollFrameGroups" inherits="UIPanelScrollFrameTemplate">
+						<ScrollChild >
+							<Frame name="Puggle_ScrollChildFrameGroups">
+								<Size><AbsDimension x="676" y="1"/></Size>
+							</Frame>
+						</ScrollChild>
+						<Size><AbsDimension x="676" y="230"/></Size>
+						<Anchors>
+							<Anchor point="TOPRIGHT" relativeTo="$parent" relativePoint="TOPRIGHT">
+								<Offset><AbsDimension x="-33" y="-150"/></Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnVerticalScroll>
+							</OnVerticalScroll>
+						</Scripts>				
+					</ScrollFrame>
+					<Button name="$parent_groupComment" inherits="OptionsButtonTemplate" text="General comment about the run">
+						<Size><AbsDimension x="250" y="25" /></Size>
+						<Anchors><Anchor point="BOTTOMLEFT"><Offset><AbsDimension x="20" y="105"/></Offset></Anchor></Anchors>
+						<Scripts>
+							<OnClick> 
+								Puggle_addGroupComment(self)
+							</OnClick>
+						</Scripts>
+					</Button>
+<!-- 					<Frame name="Puggle_DropDownGroups" inherits="UIDropDownMenuTemplate"> 
+					<Frame name="Puggle_DropDownGroups">
+						<Size><AbsDimension x="616" y="45"/></Size>
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="20" y="-59"/></Offset></Anchor></Anchors>
+						<Scripts>
+							<OnLoad>
+								Puggle_loadGroups()
+							</OnLoad>
+						</Scripts>
+					</Frame>
+-->					
+					<Button name="$parent_delete" inherits="OptionsButtonTemplate" text="Delete this group">
+						<Size><AbsDimension x="200" y="25" /></Size>
+						<Anchors><Anchor point="TOPRIGHT" relativeTo="$parent"><Offset x="-30" y="-60" /></Anchor></Anchors>
+						<Scripts>
+							<OnClick> 
+								Puggle_deleteGroup()
+							</OnClick>
+						</Scripts>
+					</Button>
+				</Frames> 
+			</Frame>
+		
+
+
+
+           <Frame name="myTabPage3" hidden="true">
+               <Anchors>
+                   <Anchor point="TOPLEFT"/>
+                   <Anchor point="BOTTOMRIGHT"/>
+               </Anchors>
+               <Layers>
+                   <Layer level="ARTWORK">
+						<FontString inherits="GameFontNormal" text="Here's a summary of all the players you've rated:">
+							<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="20" y="-40"/></Offset></Anchor></Anchors>
+							<Color a="1" r="1" g="1" b="1" />
+						</FontString>				   
+						<FontString name="$parent_nobody" inherits="GameFontNormal" text="You haven't grouped with anybody yet">
+                           <Anchors>
+                               <Anchor point="CENTER" relativeTo="$parent"></Anchor>
+                           </Anchors>
+                       </FontString>
+                   </Layer>
+				</Layers>
+				<Frames>
+					<Button name="$parent_export" inherits="OptionsButtonTemplate" text="Export data to website">
+						<Size><AbsDimension x="200" y="25" /></Size>
+						<Anchors><Anchor point="TOPRIGHT"><Offset><AbsDimension x="-40" y="-30"/></Offset></Anchor></Anchors>
+						<Scripts>
+							<OnClick> 
+								Puggle_exportGroupData(self)
+							</OnClick>
+						</Scripts>
+					</Button>
+
+					<Button name="$parent_soŕtlevel">
+						<Size><AbsDimension x="32" y="32"/></Size>
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent" ><Offset><AbsDimension x="26" y="-60"/></Offset></Anchor></Anchors>
+						<NormalTexture file="Interface\AddOns\Puggle\Images\sort"/>
+						<Scripts>
+							<OnClick>
+								Puggle_sortPlayersBy("level");
+							</OnClick>
+						</Scripts>						
+					</Button>
+					<Button name="$parent_soŕtRace">
+						<Size><AbsDimension x="32" y="32"/></Size>
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent" ><Offset><AbsDimension x="54" y="-60"/></Offset></Anchor></Anchors>
+						<NormalTexture file="Interface\AddOns\Puggle\Images\sort"/>
+						<Scripts>
+							<OnClick>
+								Puggle_sortPlayersBy("race");
+							</OnClick>
+						</Scripts>						
+					</Button>
+					<Button name="$parent_soŕtClass">
+						<Size><AbsDimension x="32" y="32"/></Size>
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent" ><Offset><AbsDimension x="82" y="-60"/></Offset></Anchor></Anchors>
+						<NormalTexture file="Interface\AddOns\Puggle\Images\sort"/>
+						<Scripts>
+							<OnClick>
+								Puggle_sortPlayersBy("class");
+							</OnClick>
+						</Scripts>						
+					</Button>
+					<Button name="$parent_soŕtName">
+						<Size><AbsDimension x="32" y="32"/></Size>
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent" ><Offset><AbsDimension x="112" y="-60"/></Offset></Anchor></Anchors>
+						<NormalTexture file="Interface\AddOns\Puggle\Images\sort"/>
+						<Scripts>
+							<OnClick>
+								Puggle_sortPlayersBy("name");
+							</OnClick>
+						</Scripts>						
+					</Button>
+					<Button name="$parent_soŕtGuild">
+						<Size><AbsDimension x="32" y="32"/></Size>
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent" ><Offset><AbsDimension x="219" y="-60"/></Offset></Anchor></Anchors>
+						<NormalTexture file="Interface\AddOns\Puggle\Images\sort"/>
+						<Scripts>
+							<OnClick>
+								Puggle_sortPlayersBy("guild");
+							</OnClick>
+						</Scripts>						
+					</Button>
+					<Button name="$parent_soŕtRating">
+						<Size><AbsDimension x="32" y="32"/></Size>
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent" ><Offset><AbsDimension x="468" y="-60"/></Offset></Anchor></Anchors>
+						<NormalTexture file="Interface\AddOns\Puggle\Images\sort"/>
+						<Scripts>
+							<OnClick>
+								Puggle_sortPlayersBy("star");
+							</OnClick>
+						</Scripts>						
+					</Button>					
+					<Button name="$parent_soŕtLast">
+						<Size><AbsDimension x="32" y="32"/></Size>
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent" ><Offset><AbsDimension x="597" y="-60"/></Offset></Anchor></Anchors>
+						<NormalTexture file="Interface\AddOns\Puggle\Images\sort"/>
+						<Scripts>
+							<OnClick>
+								Puggle_sortPlayersBy("last");
+							</OnClick>
+						</Scripts>						
+					</Button>					
+					<ScrollFrame name="Puggle_ScrollFramePlayers" inherits="UIPanelScrollFrameTemplate">
+						<ScrollChild >
+							<Frame name="Puggle_ScrollChildFramePlayers">
+								<Size><AbsDimension x="676" y="1"/></Size>
+							</Frame>
+						</ScrollChild>
+						<Size><AbsDimension x="676" y="400"/></Size>
+						<Anchors>
+							<Anchor point="TOPRIGHT" relativeTo="$parent" relativePoint="TOPRIGHT">
+								<Offset><AbsDimension x="-33" y="-85"/></Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnVerticalScroll>
+							</OnVerticalScroll>
+						</Scripts>				
+					</ScrollFrame>
+				</Frames> 
+			</Frame>
+		
+
+
+
+           <Frame name="myTabPage4" hidden="true">
+               <Anchors>
+                   <Anchor point="TOPLEFT"/>
+                   <Anchor point="BOTTOMRIGHT"/>
+               </Anchors>
+               <Layers>
+                   <Layer level="ARTWORK">
+						<FontString inherits="GameFontNormal" text="Settings:">
+							<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="20" y="-40"/></Offset></Anchor></Anchors>
+							<Color a="1" r="1" g="1" b="1" />
+						</FontString>				   
+						<FontString name="$parent_credits" inherits="GameFontNormal" text="_______________________________________________">
+                           <Anchors><Anchor point="BOTTOM" relativeTo="$parent"><Offset><AbsDimension x="0" y="270"/></Offset></Anchor></Anchors>
+						   	<Color a="1" r="1" g="1" b="1" />
+						</FontString>
+						
+						<FontString name="$parent_note" inherits="GameFontNormal" text="">
+                           <Anchors><Anchor point="BOTTOM" relativeTo="$parent"><Offset><AbsDimension x="0" y="130"/></Offset></Anchor></Anchors>
+						   	<Color a="1" r="1" g="1" b="1" />
+						</FontString>
+						
+						<FontString name="$parent_count" inherits="GameFontNormal" text="">
+                           <Anchors><Anchor point="CENTER" relativeTo="$parent"><Offset><AbsDimension x="0" y="-135"/></Offset></Anchor></Anchors>
+						   	<Color a="1" r="1" g="1" b="1" />
+						</FontString>
+
+						<FontString name="$parent_credits" inherits="GameFontNormal" text="Puggle by Cixi@Remulos">
+                           <Anchors><Anchor point="BOTTOM" relativeTo="$parent"><Offset><AbsDimension x="0" y="85"/></Offset></Anchor></Anchors>
+                       </FontString>
+						<FontString name="$parent_version" inherits="GameFontNormal" text="Version 1.0">
+                           <Anchors><Anchor point="BOTTOM" relativeTo="$parent"><Offset><AbsDimension x="0" y="70"/></Offset></Anchor></Anchors>
+							<Color a="1" r="1" g="1" b="1" />
+                       </FontString>
+						<FontString inherits="GameFontNormal" text="Time before removing idle requests (s):">
+							<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="390" y="-192"/></Offset></Anchor></Anchors>
+							<Color a="1" r="1" g="1" b="1" />
+						</FontString>				   
+					   
+                   </Layer>
+				</Layers>
+				
+				<Frames>
+					<CheckButton name="$parent_showMinimapButton" 		parentkey="MyCheckButton" text="Show Minimap button" 			inherits="UICheckButtonTemplate">
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="385" y="-62" /></Anchor></Anchors>
+						<Scripts>
+							<OnClick>
+								Puggle_showMinimapButton = self:GetChecked();
+								if Puggle_showMinimapButton then Puggle_MinimapButton:Show() else Puggle_MinimapButton:Hide() end
+							</OnClick>
+						</Scripts>
+					</CheckButton>
+
+					<CheckButton name="$parent_sortLatestFirst"	parentkey="MyCheckButton" text="Put latest requests at the top" 			inherits="UICheckButtonTemplate" >
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="385" y="-92" /></Anchor></Anchors>
+						<Scripts>
+							<OnClick>
+								Puggle_sortLatestFirst = self:GetChecked();
+								Puggle_UpdateList()
+							</OnClick>
+						</Scripts>						
+					</CheckButton>
+
+					<CheckButton name="$parent_allowSendWho"	parentkey="MyCheckButton" text="Allow Puggle to send the /who request" 			inherits="UICheckButtonTemplate" >
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="385" y="-122" /></Anchor></Anchors>
+						<Scripts>
+							<OnClick>
+								Puggle_allowSendWho = self:GetChecked();
+							</OnClick>
+						</Scripts>						
+					</CheckButton>
+
+					<CheckButton name="$parent_disableInInstance"	parentkey="MyCheckButton" text="Automacitally disable Puggle in instances" 			inherits="UICheckButtonTemplate" >
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="385" y="-152" /></Anchor></Anchors>
+						<Scripts>
+							<OnClick>
+								Puggle_disableInInstance = self:GetChecked();
+							</OnClick>
+						</Scripts>						
+					</CheckButton>
+			
+			
+					<CheckButton name="$parent_showMessageOnNewRequest"	parentkey="MyCheckButton" text="Show a chat notification on new LFG request" 			inherits="UICheckButtonTemplate" >
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="35" y="-62" /></Anchor></Anchors>
+						<Scripts>
+							<OnClick>
+								Puggle_showMessageOnNewRequest = self:GetChecked();
+							</OnClick>
+						</Scripts>						
+					</CheckButton>
+					
+					<CheckButton name="$parent_playSoundOnNewRequest"	parentkey="MyCheckButton" text="Play a notification sound on new LFG request" 			inherits="UICheckButtonTemplate" >
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="35" y="-92" /></Anchor></Anchors>
+						<Scripts>
+							<OnClick>
+								--Puggle_playSoundOnNewRequest = self:GetChecked();
+								Puggle_ToggleSound()
+							</OnClick>
+						</Scripts>						
+					</CheckButton>
+					
+					<CheckButton name="$parent_showLevelColorCoding"	parentkey="MyCheckButton" text="Highlight level appropriate dungeons" 			inherits="UICheckButtonTemplate" >
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="35" y="-122" /></Anchor></Anchors>
+						<Scripts>
+							<OnClick>
+								Puggle_showLevelColorCoding = self:GetChecked();
+								Puggle_UpdateList()
+							</OnClick>
+						</Scripts>						
+					</CheckButton>
+
+					<CheckButton name="$parent_showOnlyRelevant"	parentkey="MyCheckButton" text="Only show level appropriate dungeons (or Misc players)" 			inherits="UICheckButtonTemplate" >
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="35" y="-152" /></Anchor></Anchors>
+						<Scripts>
+							<OnClick>
+								Puggle_showOnlyRelevant = self:GetChecked();
+								Puggle_UpdateList()
+							</OnClick>
+						</Scripts>						
+					</CheckButton>
+
+					<CheckButton name="$parent_trackGroups"	parentkey="MyCheckButton" text="Track groups you take part in" 			inherits="UICheckButtonTemplate" >
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="35" y="-182" /></Anchor></Anchors>
+						<Scripts>
+							<OnClick>
+								Puggle_trackGroups = self:GetChecked();
+							</OnClick>
+						</Scripts>						
+					</CheckButton>
+
+					
+					<EditBox name="$parent_idleTimeout" letters="4" autoFocus="false" multiLine="false" numeric="true">
+						<Size x="40" y="48" />
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="635" y="-175" /></Anchor></Anchors>
+						<Layers>
+							<Layer level="BACKGROUND">
+								<Texture file="Interface\ChatFrame\UI-ChatInputBorder-Left">
+									<Size x="20" y="45" />
+									<Anchors><Anchor point="TOPLEFT"><Offset x="-10" y="0" /></Anchor>
+									</Anchors>
+									<TexCoords left="0" right="0.1" top="0" bottom="1.0"/>
+								</Texture>
+								<Texture file="Interface\ChatFrame\UI-ChatInputBorder-Left">
+									<Size x="10" y="45" />
+									<Anchors><Anchor point="TOPLEFT"><Offset x="10" y="0" /></Anchor>
+									</Anchors>
+									<TexCoords left="0.1" right="0.9" top="0" bottom="1.0"/>
+								</Texture>
+								<Texture file="Interface\ChatFrame\UI-ChatInputBorder-Right">
+									<Size x="20" y="45" />
+									<Anchors><Anchor point="TOPRIGHT"><Offset x="0" y="0" /></Anchor></Anchors>
+									<TexCoords left="0.9" right="1" top="0" bottom="1.0"/>
+								</Texture>
+								
+							</Layer>
+						</Layers>
+
+						<Scripts>
+							<OnEditFocusLost>
+								if (myTabPage4_idleTimeout:GetText() == nil) then 
+									Puggle_idleTimeout = puglocal_idleTimeout
+								else 
+									if (myTabPage4_idleTimeout:GetText() == "") then 
+										Puggle_idleTimeout = 300
+										print("Puggle: Missing value for idle timeout. Using default of 300")
+									else
+										if tonumber(myTabPage4_idleTimeout:GetText()) ~= nil then
+											Puggle_idleTimeout = myTabPage4_idleTimeout:GetText()
+											print("Puggle: Idle timeout set to "..Puggle_idleTimeout)
+										else 
+											Puggle_idleTimeout = 300
+											print("Puggle: Incorrect idle timeout. Using default of 300")
+										end
+									end
+								end
+							</OnEditFocusLost>
+						</Scripts>
+						<FontString inherits="ChatFontNormal" >
+							<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="6" y="-5" /></Anchor></Anchors>
+						</FontString>
+					</EditBox>
+					
+					<Button name="logoIcon">
+						<Size><AbsDimension x="30" y="30"/></Size>
+						<Anchors><Anchor point="BOTTOM" relativeTo="$parent" ><Offset><AbsDimension x="0" y="30"/></Offset></Anchor></Anchors>
+						<NormalTexture file="Interface\Icons\spell_holy_prayerofspirit"/>
+						<Scripts>
+						</Scripts>
+					</Button>
+
+				</Frames> 
+			</Frame>
+			
+			
+			
+			
+           <Frame name="myTabPage5" hidden="true">
+               <Anchors>
+                   <Anchor point="TOPLEFT"/>
+                   <Anchor point="BOTTOMRIGHT"/>
+               </Anchors>
+               <Layers>
+                   <Layer level="ARTWORK">
+						<FontString inherits="GameFontNormal" text="Feel free to refine the titles and search patterns.">
+							<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="20" y="-40"/></Offset></Anchor></Anchors>
+							<Color a="1" r="1" g="1" b="1" />
+						</FontString>				   
+						<FontString inherits="GameFontNormal" text="Keep in mind that patterns tags must be single words only and that tags can only be used for one dungeon.">
+							<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="20" y="-60"/></Offset></Anchor></Anchors>
+							<Color a="1" r="0.7" g="0.7" b="0.7" />
+						</FontString>				   
+						<FontString inherits="GameFontNormal" text="For example, between AQ40 and ST, only one instance can use the tag 'temple'.">
+							<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="20" y="-76"/></Offset></Anchor></Anchors>
+							<Color a="1" r="0.7" g="0.7" b="0.7" />
+						</FontString>				   
+						<FontString inherits="GameFontNormal" text="Separate the tags with a space or a comma, blank the field to reset it to its defaults.">
+							<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="20" y="-92"/></Offset></Anchor></Anchors>
+							<Color a="1" r="0.7" g="0.7" b="0.7" />
+						</FontString>				   
+
+						<FontString inherits="GameFontNormal" text="Tags to indentify a group request:">
+							<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="20" y="-120"/></Offset></Anchor></Anchors>
+						</FontString>				   
+						
+						<FontString inherits="GameFontNormal" text="Titles of the dungeons and their respective tags:">
+							<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="20" y="-230"/></Offset></Anchor></Anchors>
+						</FontString>				   
+
+					   
+                   </Layer>
+				</Layers>
+				
+				<Frames>
+					<Button name="$parent_toggleAll" inherits="OptionsButtonTemplate" text="Toggle all dungeons">
+						<Size><AbsDimension x="150" y="25" /></Size>
+						<Anchors><Anchor point="TOPRIGHT" relativeTo="$parent"><Offset x="-35" y="-224" /></Anchor></Anchors>
+						<Scripts>
+							<OnClick> 
+								Puggle_ToggleAllDungeons(false)
+							</OnClick>
+						</Scripts>
+					</Button>
+
+					<ScrollFrame name="Puggle_ScrollFrameEditTags" inherits="UIPanelScrollFrameTemplate">
+						<ScrollChild >
+							<Frame name="Puggle_ScrollChildFrameEditTags">
+								<Size><AbsDimension x="676" y="1"/></Size>
+							</Frame>
+						</ScrollChild>
+						<Size><AbsDimension x="676" y="265"/></Size>
+						<Anchors>
+							<Anchor point="TOPRIGHT" relativeTo="$parent" relativePoint="TOPRIGHT">
+								<Offset><AbsDimension x="-33" y="-260"/></Offset>
+							</Anchor>
+						</Anchors>
+
+						<Scripts>
+							<OnVerticalScroll>
+							</OnVerticalScroll>
+						</Scripts>				
+					</ScrollFrame>
+				</Frames> 
+			</Frame>			
+
+			
+			
+			
+			
+           <Button name="$parentTab1" inherits="CharacterFrameTabButtonTemplate" id="1" text=" All Requests ">
+               <Anchors>
+                   <Anchor point="CENTER" relativePoint="BOTTOMLEFT">
+                       <Offset>
+                           <AbsDimension x="60" y="-10"/>
+                       </Offset>
+                   </Anchor>
+               </Anchors>
+               <Scripts>
+                   <OnClick>
+                       PanelTemplates_SetTab(Puggle_ContainerFrame, 1);
+                       Puggle_ShowTab(1)
+                   </OnClick>
+               </Scripts>
+           </Button>
+
+           <Button name="$parentTab2" inherits="CharacterFrameTabButtonTemplate" id="2" text=" My Groups ">
+               <Anchors>
+                   <Anchor point="LEFT" relativeTo="$parentTab1" relativePoint="RIGHT">
+                       <Offset>
+                           <AbsDimension x="-16" y="0"/>
+                       </Offset>
+                   </Anchor>
+               </Anchors>
+               <Scripts>
+                   <OnClick>
+					   Puggle_SetStarSource("groupMember")
+                       PanelTemplates_SetTab(Puggle_ContainerFrame, 2);
+                       Puggle_ShowTab(2)
+                   </OnClick>
+               </Scripts>
+           </Button>
+
+           <Button name="$parentTab3" inherits="CharacterFrameTabButtonTemplate" id="3" text=" Players ">
+               <Anchors>
+                   <Anchor point="LEFT" relativeTo="$parentTab2" relativePoint="RIGHT">
+                       <Offset>
+                           <AbsDimension x="-16" y="0"/>
+                       </Offset>
+                   </Anchor>
+               </Anchors>
+               <Scripts>
+                   <OnClick>
+				   	   Puggle_SetStarSource("player")
+                       PanelTemplates_SetTab(Puggle_ContainerFrame, 3);
+                       Puggle_ShowTab(3)
+                   </OnClick>
+               </Scripts>
+           </Button>
+
+           <Button name="$parentTab4" inherits="CharacterFrameTabButtonTemplate" id="4" text=" Settings ">
+               <Anchors>
+                   <Anchor point="LEFT" relativeTo="$parentTab3" relativePoint="RIGHT">
+                       <Offset>
+                           <AbsDimension x="-16" y="0"/>
+                       </Offset>
+                   </Anchor>
+               </Anchors>
+               <Scripts>
+                   <OnClick>
+                       PanelTemplates_SetTab(Puggle_ContainerFrame, 4);
+                       Puggle_ShowTab(4)
+                   </OnClick>
+               </Scripts>
+           </Button>
+
+           <Button name="$parentTab5" inherits="CharacterFrameTabButtonTemplate" id="5" text=" Search Patterns ">
+               <Anchors>
+                   <Anchor point="LEFT" relativeTo="$parentTab4" relativePoint="RIGHT">
+                       <Offset>
+                           <AbsDimension x="-16" y="0"/>
+                       </Offset>
+                   </Anchor>
+               </Anchors>
+               <Scripts>
+                   <OnClick>
+                       	PanelTemplates_SetTab(Puggle_ContainerFrame, 5);
+						Puggle_ShowTab(5)
+                   </OnClick>
+               </Scripts>
+           </Button>
+
+		</Frames>
+		<Scripts>
+			<OnLoad>
+			    self.elapsed = 0;
+			    PanelTemplates_SetNumTabs(Puggle_ContainerFrame, 5);
+				PanelTemplates_SetTab(Puggle_ContainerFrame, 1);
+				tinsert(UISpecialFrames, "Puggle_ContainerFrame");
+				Puggle_OnLoad()
+				self:RegisterForDrag("LeftButton","RightButton");
+			</OnLoad>
+			<OnShow>
+			   PlaySound(SOUNDKIT.IG_MAINMENU_OPTION)
+               PanelTemplates_SetTab(Puggle_ContainerFrame, 1);
+			   Puggle_ShowTab(1)
+			   Puggle_AdjustScrollSizes() -- in case default size were changed	
+			</OnShow>
+			<OnHide>
+			   PlaySound(SOUNDKIT.GS_TITLE_OPTION_EXIT)
+			</OnHide>
+			<OnEvent>
+				Puggle_OnEvent(event, ...);
+			</OnEvent>
+			<OnDragStart>
+			   	if button == "LeftButton" then
+					self:StartMoving()
+				elseif button == "RightButton" then
+					Puggle_ShowResizeMessage(true)
+					self:StartSizing()
+				end
+			</OnDragStart>
+			<OnDragStop>
+				self:StopMovingOrSizing();
+				Puggle_AdjustScrollSizes();
+				Puggle_ShowResizeMessage(false)
+			</OnDragStop>
+			
+       </Scripts>
+	</Frame>
+	
+		
+	
+	
+	<Frame name="Puggle_CheckboxTemplate" virtual="true" hidden="false">
+		<Size><AbsDimension x="100" y="100"/></Size>
+		<Anchors><Anchor point="TOPLEFT"/></Anchors>
+		<Layers></Layers>
+		<Frames>
+			<CheckButton name="$parent_box" 		parentkey="MyCheckButton" text="blah" 			inherits="UICheckButtonTemplate"><Anchors><Anchor point="TOPLEFT" relativeTo="$parent"></Anchor></Anchors>
+			</CheckButton>
+		</Frames> 
+	</Frame>
+	
+		
+	<Frame name="Puggle_TitleTemplate" virtual="true" hidden="true">
+		<Size><AbsDimension x="100" y="100"/></Size>
+		<Anchors><Anchor point="TOPLEFT"/></Anchors>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parent_title" inherits="GameFontNormal" text="This should be hidden">
+					<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"></Anchor></Anchors>
+				</FontString>
+				</Layer>
+			</Layers>
+		<Frames></Frames> 
+	</Frame>
+	
+	<Frame name="Puggle_CharTemplate" virtual="true" hidden="true">
+		<Size><AbsDimension x="660" y="15"/></Size>
+		<Anchors><Anchor point="TOPLEFT"/></Anchors>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parent_level" inherits="GameFontNormal" text="99">
+					<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"></Anchor></Anchors>
+					<Color a="1" r="1" g="1" b="1" />
+				</FontString>
+				<FontString name="$parent_name" inherits="GameFontNormal" text="name">
+					<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="40" y=""/></Offset></Anchor></Anchors>
+					<Color a="1" r="1" g="1" b="1" />
+				</FontString>
+				
+				<FontString name="$parent_msg" inherits="GameFontNormal" text="LFG message">
+					<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="140" y=""/></Offset></Anchor></Anchors>
+					<Color a="1" r="1" g="1" b="1" />
+				</FontString>
+				
+				<FontString name="$parent_time" inherits="GameFontNormal" text="1m42">
+					<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="480" y=""/></Offset></Anchor></Anchors>
+					<Color a="1" r="1" g="1" b="1" />
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+		
+			<Button name="$parent_classIcon">
+				<Size><AbsDimension x="16" y="16"/></Size>
+				<Anchors><Anchor point="TOPLEFT" relativeTo="$parent" ><Offset><AbsDimension x="20" y="2"/></Offset></Anchor></Anchors>
+				<NormalTexture file="Interface\Icons\inv_misc_questionmark"/>
+			</Button>
+
+			<Button name="$parent_whisper" inherits="OptionsButtonTemplate" text="/w">
+				<Size><AbsDimension x="40" y="25" /></Size>
+				<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="570" y="7"/></Offset></Anchor></Anchors>
+				<Scripts>
+					<OnClick> 
+						Puggle_SendWhisper(self)
+					</OnClick>
+				</Scripts>
+			</Button>
+
+			<Button name="$parent_requestWho" inherits="OptionsButtonTemplate" text="who">
+				<Size><AbsDimension x="40" y="25" /></Size>
+				<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="-5" y="7"/></Offset></Anchor></Anchors>
+				<Scripts>
+					<OnClick> 
+						self:Disable()
+						Puggle_requestWhoClicked(self)
+					</OnClick>
+				</Scripts>
+			</Button>
+
+		</Frames> 
+		<Scripts>
+			<OnEnter>
+				Puggle_ShowTooltip(self)
+			</OnEnter>
+			<OnLeave>
+				GameTooltip:Hide()
+			</OnLeave>					
+		</Scripts>
+	</Frame>
+	
+
+	<Frame name="Puggle_GroupMemberTemplate" virtual="true" hidden="true">
+		<Size><AbsDimension x="660" y="40"/></Size>
+		<Anchors><Anchor point="TOPLEFT"/></Anchors>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parent_level" inherits="GameFontNormalLarge" text="99">
+					<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="0" y="0"/></Offset></Anchor></Anchors>
+					<Color a="1" r="1" g="1" b="1" />
+				</FontString>
+				<FontString name="$parent_name" inherits="GameFontNormalLarge" text="name">
+					<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="90" y="0"/></Offset></Anchor></Anchors>
+					<Color a="1" r="1" g="1" b="1" />
+				</FontString>
+				<FontString name="$parent_guild" inherits="GameFontNormal" text="">
+					<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="200" y="-2"/></Offset></Anchor></Anchors>
+					<Color a="1" r="1" g="1" b="1" />
+				</FontString>
+				<FontString name="$parent_last" inherits="GameFontNormal" text="">
+					<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset><AbsDimension x="550" y="-2"/></Offset></Anchor></Anchors>
+					<Color a="1" r="1" g="1" b="1" />
+				</FontString>
+				
+			</Layer>
+		</Layers>
+		<Frames>
+
+			<Button name="$parent_raceIcon">
+				<Size><AbsDimension x="24" y="24"/></Size>
+				<Anchors><Anchor point="TOPLEFT" relativeTo="$parent" ><Offset><AbsDimension x="28" y="5"/></Offset></Anchor></Anchors>
+				<NormalTexture file="Interface\Icons\inv_misc_questionmark"/>
+			</Button>
+
+			<Button name="$parent_classIcon">
+				<Size><AbsDimension x="24" y="24"/></Size>
+				<Anchors><Anchor point="TOPLEFT" relativeTo="$parent" ><Offset><AbsDimension x="56" y="5"/></Offset></Anchor></Anchors>
+				<NormalTexture file="Interface\Icons\inv_misc_questionmark"/>
+			</Button>
+
+			<Button name="$parent_comment" inherits="OptionsButtonTemplate" text="Comment">
+				<Size><AbsDimension x="100" y="25" /></Size>
+				<Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="530" y="4"/></Offset></Anchor></Anchors>
+				<Scripts>
+					<OnClick> 
+						Puggle_addComment(self)
+					</OnClick>
+				</Scripts>
+			</Button>
+			
+			<Button name="$parent_star1">
+				<Size><AbsDimension x="24" y="24"/></Size>
+				<Anchors><Anchor point="TOPLEFT" relativeTo="$parent" ><Offset><AbsDimension x="391" y="2"/></Offset></Anchor></Anchors>
+				<NormalTexture file="Interface\Icons\inv_misc_questionmark"/>
+				<Scripts>
+					<OnEnter>
+						Puggle_rateHover(self, 1)
+					</OnEnter>
+					<OnClick> 
+						Puggle_ratePlayer(self, 1)
+					</OnClick>
+					<OnLeave>
+						Puggle_rateHover(self, -1)
+					</OnLeave>					
+				</Scripts>
+			</Button>
+			<Button name="$parent_star2">
+				<Size><AbsDimension x="24" y="24"/></Size>
+				<Anchors><Anchor point="TOPLEFT" relativeTo="$parent" ><Offset><AbsDimension x="417" y="2"/></Offset></Anchor></Anchors>
+				<NormalTexture file="Interface\Icons\inv_misc_questionmark"/>
+				<Scripts>
+					<OnEnter>
+						Puggle_rateHover(self, 2)
+					</OnEnter>
+					<OnClick> 
+						Puggle_ratePlayer(self, 2)
+					</OnClick>
+					<OnLeave>
+						Puggle_rateHover(self, -1)
+					</OnLeave>					
+				</Scripts>
+			</Button>
+			<Button name="$parent_star3">
+				<Size><AbsDimension x="24" y="24"/></Size>
+				<Anchors><Anchor point="TOPLEFT" relativeTo="$parent" ><Offset><AbsDimension x="443" y="2"/></Offset></Anchor></Anchors>
+				<NormalTexture file="Interface\Icons\inv_misc_questionmark"/>
+				<Scripts>
+					<OnEnter>
+						Puggle_rateHover(self, 3)
+					</OnEnter>
+					<OnClick> 
+						Puggle_ratePlayer(self, 3)
+					</OnClick>
+					<OnLeave>
+						Puggle_rateHover(self, -1)
+					</OnLeave>					
+				</Scripts>
+			</Button>
+			<Button name="$parent_star4">
+				<Size><AbsDimension x="24" y="24"/></Size>
+				<Anchors><Anchor point="TOPLEFT" relativeTo="$parent" ><Offset><AbsDimension x="469" y="2"/></Offset></Anchor></Anchors>
+				<NormalTexture file="Interface\Icons\inv_misc_questionmark"/>
+				<Scripts>
+					<OnEnter>
+						Puggle_rateHover(self, 4)
+					</OnEnter>
+					<OnClick> 
+						Puggle_ratePlayer(self, 4)
+					</OnClick>
+					<OnLeave>
+						Puggle_rateHover(self, -1)
+					</OnLeave>					
+				</Scripts>
+			</Button>
+			<Button name="$parent_star5">
+				<Size><AbsDimension x="24" y="24"/></Size>
+				<Anchors><Anchor point="TOPLEFT" relativeTo="$parent" ><Offset><AbsDimension x="495" y="2"/></Offset></Anchor></Anchors>
+				<NormalTexture file="Interface\Icons\inv_misc_questionmark"/>
+				<Scripts>
+					<OnEnter>
+						Puggle_rateHover(self, 5)
+					</OnEnter>
+					<OnClick> 
+						Puggle_ratePlayer(self, 5)
+					</OnClick>
+					<OnLeave>
+						Puggle_rateHover(self, -1)
+					</OnLeave>					
+				</Scripts>
+			</Button>
+
+		</Frames> 
+	</Frame>
+
+
+
+
+	<Frame name="Puggle_EditTagsTemplate" virtual="true" hidden="true">
+	
+		<Size><AbsDimension x="100" y="100"/></Size>
+		<Anchors><Anchor point="TOPLEFT"/></Anchors>
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parent_instCode" inherits="GameFontNormal" text="Code">
+					<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="0" y="-5" /></Anchor></Anchors>
+					<Color a="1" r="1" g="1" b="1" />
+				</FontString>
+				<FontString name="$parent_instName2" inherits="GameFontNormal" text="Code" hidden="true">
+					<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="60" y="-5" /></Anchor></Anchors>
+					<Color a="1" r="1" g="1" b="1" />
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+				<CheckButton name="$parent_pick"	parentkey="MyCheckButton" text="Show" 			inherits="UICheckButtonTemplate" >
+					<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="40" y="5" /></Anchor></Anchors>
+					<Scripts>
+						<OnClick>
+							Puggle_TogglePickInstance(self)
+						</OnClick>
+					</Scripts>						
+				</CheckButton>			
+
+				<EditBox name="$parent_instName"  autoFocus="false" multiLine="false" >
+					<Size x="155" y="48" />
+					<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="120" y="15" /></Anchor></Anchors>
+					<Layers>
+						<Layer level="BACKGROUND">
+							<Texture file="Interface\ChatFrame\UI-ChatInputBorder-Left">
+								<Size x="20" y="45" />
+								<Anchors><Anchor point="TOPLEFT"><Offset x="-10" y="0" /></Anchor>
+								</Anchors>
+								<TexCoords left="0" right="0.1" top="0" bottom="1.0"/>
+							</Texture>
+							<Texture file="Interface\ChatFrame\UI-ChatInputBorder-Left">
+								<Size x="125" y="45" />
+								<Anchors><Anchor point="TOPLEFT"><Offset x="10" y="0" /></Anchor>
+								</Anchors>
+								<TexCoords left="0.1" right="0.9" top="0" bottom="1.0"/>
+							</Texture>
+							<Texture file="Interface\ChatFrame\UI-ChatInputBorder-Right">
+								<Size x="20" y="45" />
+								<Anchors><Anchor point="TOPRIGHT"><Offset x="0" y="0" /></Anchor></Anchors>
+								<TexCoords left="0.9" right="1" top="0" bottom="1.0"/>
+							</Texture>
+							
+						</Layer>
+					</Layers>
+
+					<Scripts>
+						<OnEditFocusLost>
+							Puggle_ValidateInstName(self)
+						</OnEditFocusLost>
+					</Scripts>
+					<FontString inherits="ChatFontNormal" >
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="6" y="-5" /></Anchor></Anchors>
+					</FontString>
+				</EditBox>
+
+				<EditBox name="$parent_instTags"  autoFocus="false" multiLine="false" >
+					<Size x="340" y="48" />
+					<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="295" y="15" /></Anchor></Anchors>
+					<Layers>
+						<Layer level="BACKGROUND">
+							<Texture file="Interface\ChatFrame\UI-ChatInputBorder-Left">
+								<Size x="20" y="45" />
+								<Anchors><Anchor point="TOPLEFT"><Offset x="-10" y="0" /></Anchor>
+								</Anchors>
+								<TexCoords left="0" right="0.1" top="0" bottom="1.0"/>
+							</Texture>
+							<Texture file="Interface\ChatFrame\UI-ChatInputBorder-Left">
+								<Size x="320" y="45" />
+								<Anchors><Anchor point="TOPLEFT"><Offset x="10" y="0" /></Anchor>
+								</Anchors>
+								<TexCoords left="0.1" right="0.9" top="0" bottom="1.0"/>
+							</Texture>
+							<Texture file="Interface\ChatFrame\UI-ChatInputBorder-Right">
+								<Size x="20" y="45" />
+								<Anchors><Anchor point="TOPRIGHT"><Offset x="0" y="0" /></Anchor></Anchors>
+								<TexCoords left="0.9" right="1" top="0" bottom="1.0"/>
+							</Texture>
+							
+						</Layer>
+					</Layers>
+
+					<Scripts>
+						<OnEditFocusLost>
+							Puggle_ValidateInstTags(self)
+						</OnEditFocusLost>
+					</Scripts>
+					<FontString inherits="ChatFontNormal" >
+						<Anchors><Anchor point="TOPLEFT" relativeTo="$parent"><Offset x="6" y="-5" /></Anchor></Anchors>
+					</FontString>
+				</EditBox>
+
+			</Frames> 
+	</Frame>
+	
+	
+	
+	
+   	<Button name="Puggle_MinimapButton" parent="Minimap" enableMouse="true" movable="true" hidden="false">
+		<Size>
+			<AbsDimension x="33" y="33"/>
+		</Size>
+		<Anchors>
+			<Anchor point="TOPLEFT"/>
+		</Anchors>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture name="Puggle_MinimapButton_Icon" file="Interface\Icons\spell_holy_prayerofspirit">
+					<Size>
+						<AbsDimension x="21" y="21"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="7" y="-6"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="OVERLAY">
+				<Texture file="Interface\Minimap\MiniMap-TrackingBorder">
+					<Size>
+						<AbsDimension x="56" y="56"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT"/>
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Frame name="Puggle_MinimapButton_DraggingFrame" hidden="true">
+				<Scripts>
+					<OnUpdate>
+						Puggle_MinimapButton_DraggingFrame_OnUpdate()
+					</OnUpdate>
+				</Scripts>
+			</Frame>
+		</Frames>
+		<HighlightTexture alphaMode="ADD" file="Interface\Minimap\UI-Minimap-ZoomButton-Highlight"/>
+		<Scripts>
+			<OnLoad>
+				self:RegisterForClicks("LeftButtonUp","RightButtonUp")
+				self:RegisterForDrag("LeftButton","RightButton")
+			</OnLoad>
+			<OnDragStart>
+				self:LockHighlight()
+				Puggle_MinimapButton_DraggingFrame:Show()
+			</OnDragStart>
+			<OnDragStop>
+				self:UnlockHighlight()
+				Puggle_MinimapButton_DraggingFrame:Hide()
+			</OnDragStop>
+			<OnClick>
+				Puggle_MinimapButton_OnClick()
+			</OnClick>
+		</Scripts>
+	</Button>
+</Ui>	
