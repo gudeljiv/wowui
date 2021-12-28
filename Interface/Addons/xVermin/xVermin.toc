@@ -21,6 +21,7 @@ Frames/MailBoxFrame.lua
 Frames/RaidFrameReSizer.lua
 Frames/SpellBookFrame.lua
 Frames/TalentFrame.lua
+Frames/MerchantFrame.lua
 
 Experience/Player.lua
 Experience/Pet.lua

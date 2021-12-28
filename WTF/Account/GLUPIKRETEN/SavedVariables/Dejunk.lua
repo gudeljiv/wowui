@@ -21,8 +21,8 @@ __DEJUNK_SAVED_VARIABLES__ = {
 			["frame"] = {
 				["point"] = {
 					"TOPRIGHT", -- [1]
-					-408, -- [2]
-					-49, -- [3]
+					-372, -- [2]
+					-79, -- [3]
 				},
 			},
 		},
@@ -44,9 +44,30 @@ __DEJUNK_SAVED_VARIABLES__ = {
 	["Profiles"] = {
 		["Default"] = {
 			["destroy"] = {
+				["autoOpen"] = {
+					["enabled"] = true,
+					["value"] = 1,
+				},
 				["inclusions"] = {
+					["4867"] = true,
+					["5125"] = true,
+					["4872"] = true,
 					["4775"] = true,
+					["4877"] = true,
+					["5120"] = true,
+					["5128"] = true,
+					["5115"] = true,
+					["5268"] = true,
+					["5466"] = true,
 					["5114"] = true,
+					["4875"] = true,
+					["5118"] = true,
+					["5269"] = true,
+					["6444"] = true,
+					["4555"] = true,
+					["6826"] = true,
+					["3301"] = true,
+					["4776"] = true,
 				},
 			},
 			["sell"] = {

@@ -14,12 +14,14 @@ for i, v in pairs(
 		TaxiFrame,
 		QuestFrame,
 		PetStableFrame,
-		GossipFrame
+		GossipFrame,
+		MerchantFrame,
+		CraftFrame,
+		ClassTrainerFrame
 	}
 ) do
 	if v then 
 		v:SetScale(1.2)
-
 		v:ClearAllPoints()
 		v:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
 		-- v.SetPoint = function()

@@ -617,45 +617,39 @@ MonkeyQuestConfig = {
 	["Dreadnaught|Poklopac"] = {
 		["m_aQuestList"] = {
 			["Wailing Caverns - true"] = {
-				["m_bChecked"] = true,
+				["m_bChecked"] = false,
 			},
-			["Stolen Silver - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hezrul Bloodmark - false"] = {
+			["Altered Beings - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Egg Hunt - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Stolen Booty - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Raptor Horns - false"] = {
+			["Deepmoss Spider Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Barrens - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Weapons of Choice - false"] = {
+			["Washte Pawne - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Consumed by Hatred - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Altered Beings - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Guns of Northwatch - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Trouble at the Docks - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Deepmoss Spider Eggs - false"] = {
+			["Smart Drinks - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Tribes at War - false"] = {
+			["Betrayal from Within - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Weapons of Choice - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Hezrul Bloodmark - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1197,7 +1191,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 451.9505004882813,
+		["m_iFrameBottom"] = 745.50732421875,
 		["m_bHideCompletedQuests"] = false,
 		["m_iFrameLeft"] = 1774.620849609375,
 		["m_bColourDoneOrFailed"] = true,
