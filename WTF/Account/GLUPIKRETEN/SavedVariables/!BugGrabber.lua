@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 3736,
 	["lastSanitation"] = 3,
-	["session"] = 3735,
 	["errors"] = {
 		{
 			["message"] = "...\\AddOns\\Details\\Libs\\DetailsFramework\\lib\\slider.lua:456: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DetailsFrameworkSliderButtons1:SetPoint.",
