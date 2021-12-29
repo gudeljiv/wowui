@@ -3,6 +3,7 @@ import pyautogui
 import time
 import keyboard
 import random
+from time import gmtime, strftime
 
 aoe = False
 rotate = True
@@ -31,21 +32,25 @@ while True:
         aoe = not aoe
     
     if rotate:
+        current_time = strftime("%d.%m.%Y. %H:%M:%S", gmtime())
         if pyautogui.pixel(x, y)[0] == 79 and pyautogui.pixel(x, y)[1] == 2 and pyautogui.pixel(x, y)[2] == 0:
-            print("rend")
+            print("rend", current_time)
             pyautogui.press("5", presses=3)
         if pyautogui.pixel(x, y)[0] == 193 and pyautogui.pixel(x, y)[1] == 115 and pyautogui.pixel(x, y)[2] == 110:
-            print("battle shout")
+            print("battle shout", current_time)
             pyautogui.press("F4", presses=3)
         if pyautogui.pixel(x, y)[0] == 153 and pyautogui.pixel(x, y)[1] == 150 and pyautogui.pixel(x, y)[2] == 153:
             if not aoe:
-                print("heroic strike")
+                print("heroic strike", current_time)
                 pyautogui.press("2", presses=3)
             else:
                 print("cleave")
                 pyautogui.press("3", presses=3)
         if pyautogui.pixel(x, y)[0] == 89 and pyautogui.pixel(x, y)[1] == 97 and pyautogui.pixel(x, y)[2] == 107:
-            print("overpower")
+            print("overpower", current_time)
             pyautogui.press("4", presses=3)
+        if pyautogui.pixel(x, y)[0] == 189 and pyautogui.pixel(x, y)[1] == 126 and pyautogui.pixel(x, y)[2] == 116:
+            print("sunder armor", current_time)
+            pyautogui.press("G", presses=3)
 
     

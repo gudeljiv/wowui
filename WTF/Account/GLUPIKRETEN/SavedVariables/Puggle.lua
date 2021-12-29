@@ -136,65 +136,6 @@ Puggle_dungeonTags = {
 		"alterac", -- [2]
 		"valley", -- [3]
 	},
-	["STL"] = {
-		"stratlive", -- [1]
-		"live", -- [2]
-		"strat", -- [3]
-	},
-	["SMG"] = {
-		"smgy", -- [1]
-		"smg", -- [2]
-		"gy", -- [3]
-		"graveyard", -- [4]
-	},
-	["WSG"] = {
-		"wsg", -- [1]
-		"warsong", -- [2]
-	},
-	["SMC"] = {
-		"smcath", -- [1]
-		"smc", -- [2]
-		"cath", -- [3]
-		"cathedral", -- [4]
-	},
-	["ZG"] = {
-		"zg", -- [1]
-		"gurub", -- [2]
-		"zul'gurub", -- [3]
-		"zulgurub", -- [4]
-	},
-	["DME"] = {
-		"dme", -- [1]
-		"east", -- [2]
-		"puzilin", -- [3]
-		"dm:e", -- [4]
-	},
-	["SML"] = {
-		"smlib", -- [1]
-		"sml", -- [2]
-		"lib", -- [3]
-		"library", -- [4]
-	},
-	["ONY"] = {
-		"onyxia", -- [1]
-		"ony", -- [2]
-	},
-	["UBRS"] = {
-		"upper", -- [1]
-		"ubrs", -- [2]
-		"urbs", -- [3]
-	},
-	["UD1"] = {
-	},
-	["BRD"] = {
-		"brd", -- [1]
-		"lava run", -- [2]
-		"emperor", -- [3]
-	},
-	["RFD"] = {
-		"rfd", -- [1]
-		"downs", -- [2]
-	},
 	["ZF"] = {
 		"zf", -- [1]
 		"zul", -- [2]
@@ -202,6 +143,65 @@ Puggle_dungeonTags = {
 		"zul'farrak", -- [4]
 		"zulfarrak", -- [5]
 		"zulfarak", -- [6]
+	},
+	["RFD"] = {
+		"rfd", -- [1]
+		"downs", -- [2]
+	},
+	["WSG"] = {
+		"wsg", -- [1]
+		"warsong", -- [2]
+	},
+	["BRD"] = {
+		"brd", -- [1]
+		"lava run", -- [2]
+		"emperor", -- [3]
+	},
+	["UD1"] = {
+	},
+	["DME"] = {
+		"dme", -- [1]
+		"east", -- [2]
+		"puzilin", -- [3]
+		"dm:e", -- [4]
+	},
+	["UBRS"] = {
+		"upper", -- [1]
+		"ubrs", -- [2]
+		"urbs", -- [3]
+	},
+	["ONY"] = {
+		"onyxia", -- [1]
+		"ony", -- [2]
+	},
+	["SML"] = {
+		"smlib", -- [1]
+		"sml", -- [2]
+		"lib", -- [3]
+		"library", -- [4]
+	},
+	["ZG"] = {
+		"zg", -- [1]
+		"gurub", -- [2]
+		"zul'gurub", -- [3]
+		"zulgurub", -- [4]
+	},
+	["SMC"] = {
+		"smcath", -- [1]
+		"smc", -- [2]
+		"cath", -- [3]
+		"cathedral", -- [4]
+	},
+	["SMG"] = {
+		"smgy", -- [1]
+		"smg", -- [2]
+		"gy", -- [3]
+		"graveyard", -- [4]
+	},
+	["STL"] = {
+		"stratlive", -- [1]
+		"live", -- [2]
+		"strat", -- [3]
 	},
 }
 Puggle_dungeonNames = {
@@ -232,19 +232,19 @@ Puggle_dungeonNames = {
 	["SMA"] = "Scarlet Monastery: Armory",
 	["MISC"] = "Miscellaneous",
 	["AV"] = "Alterac Valley",
-	["STL"] = "Stratholme: Live",
-	["SMG"] = "Scarlet Monastery: Graveyard",
-	["WSG"] = "Warsong Gulch",
-	["SMC"] = "Scarlet Monastery: Cathedral",
-	["ZG"] = "Zul'Gurub",
-	["DME"] = "Dire Maul: East",
-	["SML"] = "Scarlet Monastery: Library",
-	["ONY"] = "Onyxia's Lair",
-	["UBRS"] = "Upper Blackrock Spire",
-	["UD1"] = "User Defined 1",
-	["BRD"] = "Blackrock Depths",
-	["RFD"] = "Razorfen Downs",
 	["ZF"] = "Zul'Farrak",
+	["RFD"] = "Razorfen Downs",
+	["WSG"] = "Warsong Gulch",
+	["BRD"] = "Blackrock Depths",
+	["UD1"] = "User Defined 1",
+	["DME"] = "Dire Maul: East",
+	["UBRS"] = "Upper Blackrock Spire",
+	["ONY"] = "Onyxia's Lair",
+	["SML"] = "Scarlet Monastery: Library",
+	["ZG"] = "Zul'Gurub",
+	["SMC"] = "Scarlet Monastery: Cathedral",
+	["SMG"] = "Scarlet Monastery: Graveyard",
+	["STL"] = "Stratholme: Live",
 }
 Puggle_searchTags = {
 	"lfg", -- [1]
@@ -263,16 +263,61 @@ Puggle_blacklistTags = {
 Puggle_allowSendWho = true
 Puggle_disableInInstance = true
 Puggle_pastGroups = {
+	[1640771642] = {
+		["party"] = {
+			{
+				["dur"] = 44,
+				["guild"] = "",
+				["time"] = 1640771642,
+				["id"] = 2,
+				["star"] = "MA==",
+				["cmt"] = "",
+				["level"] = "MTQ=",
+			}, -- [1]
+			{
+				["dur"] = 44,
+				["guild"] = "",
+				["time"] = 1640771642,
+				["id"] = 3,
+				["cmt"] = "",
+				["star"] = "MA==",
+				["level"] = "MTU=",
+			}, -- [2]
+		},
+		["dur"] = 44,
+		["loc"] = "VGhlIEJhcnJlbnM=",
+		["cmt"] = "",
+		["exported"] = false,
+		["realm"] = "RHJlYWRuYXVnaHQ=",
+	},
 }
 Puggle_pastPlayers = {
 	{
 		["race"] = "T3Jj",
 		["name"] = "UG9rbG9wYWM=",
 		["faction"] = "SG9yZGU=",
-		["gender"] = "Mg==",
 		["class"] = "SFVOVEVS",
+		["gender"] = "Mg==",
 		["player"] = true,
 		["realm"] = "RHJlYWRuYXVnaHQ=",
 	}, -- [1]
+	{
+		["race"] = "T3Jj",
+		["name"] = "UGl0Y2h3aXNl",
+		["faction"] = "SG9yZGU=",
+		["class"] = "V0FSUklPUg==",
+		["gender"] = "Mg==",
+		["player"] = true,
+		["realm"] = "RHJlYWRuYXVnaHQ=",
+	}, -- [2]
+	{
+		["race"] = "U2NvdXJnZQ==",
+		["name"] = "R2xva3Rh",
+		["faction"] = "SG9yZGU=",
+		["gender"] = "Mg==",
+		["class"] = "UFJJRVNU",
+		["player"] = false,
+		["realm"] = "RHJlYWRuYXVnaHQ=",
+	}, -- [3]
 }
 Puggle_encoded = true

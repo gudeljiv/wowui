@@ -32,8 +32,8 @@ ChocolateBarDB = {
 		["Dmitar - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Dotwise - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
@@ -49,11 +49,6 @@ ChocolateBarDB = {
 	["addonVersion"] = "v3.7.7",
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["moveFrames"] = false,
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -74,7 +69,24 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
-			["fixedStrata"] = true,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
+			},
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -293,15 +305,11 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar2",
 					["customLabel"] = "B",
 				},
-				["LFGBulletinBoard"] = {
-					["index"] = 3,
+				["TownsfolkTracker"] = {
+					["enabled"] = false,
 					["align"] = "right",
-					["isNew"] = false,
-					["showLabel"] = true,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar1",
 					["showText"] = false,
-					["customLabel"] = "LFG",
+					["barName"] = "ChocolateBar1",
 				},
 				["TellMeWhen"] = {
 					["enabled"] = false,
@@ -318,11 +326,15 @@ ChocolateBarDB = {
 					["index"] = 6,
 					["barName"] = "ChocolateBar1",
 				},
-				["TownsfolkTracker"] = {
-					["enabled"] = false,
+				["LFGBulletinBoard"] = {
+					["index"] = 3,
 					["align"] = "right",
-					["showText"] = false,
+					["isNew"] = false,
+					["showLabel"] = true,
+					["showIcon"] = false,
 					["barName"] = "ChocolateBar1",
+					["showText"] = false,
+					["customLabel"] = "LFG",
 				},
 				["MinimapIcon"] = {
 					["enabled"] = false,
@@ -436,27 +448,15 @@ ChocolateBarDB = {
 					["customLabel"] = "N",
 				},
 			},
-			["desaturated"] = false,
-			["gap"] = 0,
-			["forceColor"] = false,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
 			["fontName"] = "Friz Quadrata TT",
+			["fixedStrata"] = true,
+			["gap"] = 0,
+			["moveFrames"] = false,
+			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
-			},
+			["forceColor"] = false,
+			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -516,7 +516,7 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Poklopac-Dreadnaught"] = {
-		["total"] = 77820,
+		["total"] = 78208,
 	},
 	["Ozrencic-"] = {
 		["total"] = 853,
@@ -525,7 +525,7 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Pitchwise-Dreadnaught"] = {
-		["total"] = 25780,
+		["total"] = 36689,
 	},
 	["Judawise-"] = {
 		["total"] = 437,

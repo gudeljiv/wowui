@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
+	["_200000"] = 1000,
+	["STARTING_DISCOUNT"] = 5,
+	["_1000000"] = 2500,
 	["_5000000"] = 10000,
 	["LOG_DE_DATA_X"] = true,
-	["_1000000"] = 2500,
-	["_10000"] = 200,
 	["_500"] = 5,
-	["STARTING_DISCOUNT"] = 5,
-	["_200000"] = 1000,
+	["_10000"] = 200,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 	["Ring of Defense"] = {
@@ -23,29 +23,29 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "2842:0:0:0:0",
 		["7049596"] = "590:1",
 	},
-	["Coarse Blasting Powder"] = {
-		["is"] = "4364:0:0:0:0",
-		["7052892"] = "480:1",
-	},
 	["Pattern: White Leather Jerkin"] = {
 		["is"] = "2407:0:0:0:0",
 		["7050113"] = "1565:1",
-	},
-	["War Torn Shield of the Bear"] = {
-		["is"] = "15486:0:0:1179:0",
-		["7049596"] = "20000:1",
-	},
-	["Carving Knife of Healing"] = {
-		["is"] = "2140:0:0:2027:0",
-		["7049596"] = "20000:1",
 	},
 	["Lupine Handwraps of Arcane Wrath"] = {
 		["is"] = "15016:0:0:1801:0",
 		["7050113"] = "9900:1",
 	},
+	["Shadowgem"] = {
+		["is"] = "1210:0:0:0:0",
+		["7050252"] = "245:1",
+	},
+	["Carving Knife of Healing"] = {
+		["is"] = "2140:0:0:2027:0",
+		["7049596"] = "20000:1",
+	},
 	["Fire Wand"] = {
 		["is"] = "5069:0:0:0:0",
 		["7050252"] = "595:1",
+	},
+	["Coarse Blasting Powder"] = {
+		["is"] = "4364:0:0:0:0",
+		["7052892"] = "480:1",
 	},
 	["Light Feather"] = {
 		["is"] = "17056:0:0:0:0",
@@ -64,9 +64,9 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "2452:0:0:0:0",
 		["7050113"] = "3600:2",
 	},
-	["Shadowgem"] = {
-		["is"] = "1210:0:0:0:0",
-		["7050252"] = "245:1",
+	["War Torn Shield of the Bear"] = {
+		["is"] = "15486:0:0:1179:0",
+		["7049596"] = "20000:1",
 	},
 	["Prospector's Sash"] = {
 		["is"] = "14559:0:0:0:0",
@@ -245,12 +245,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["mr"] = 243,
 		},
-		["Barbaric Loincloth"] = {
-			["H3212"] = 400,
-			["cc"] = 4,
-			["id"] = "3309:0:0:0:0",
-			["sc"] = 1,
-			["mr"] = 400,
+		["Wool Cloth"] = {
+			["H3212"] = 177,
+			["cc"] = 7,
+			["id"] = "2592:0:0:0:0",
+			["sc"] = 0,
+			["mr"] = 177,
 		},
 		["Barbaric Cloth Vest"] = {
 			["H3212"] = 900,
@@ -295,19 +295,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["mr"] = 699,
 		},
-		["Aboriginal Loincloth of the Owl"] = {
-			["H3212"] = 900,
-			["cc"] = 4,
-			["id"] = "14119:0:0:760:0",
-			["sc"] = 1,
-			["mr"] = 900,
-		},
 		["Linen Cloth"] = {
 			["H3212"] = 20,
 			["cc"] = 7,
 			["id"] = "2589:0:0:0:0",
 			["sc"] = 0,
 			["mr"] = 20,
+		},
+		["Aboriginal Loincloth of the Owl"] = {
+			["H3212"] = 900,
+			["cc"] = 4,
+			["id"] = "14119:0:0:760:0",
+			["sc"] = 1,
+			["mr"] = 900,
 		},
 		["Bloodspattered Loincloth of the Bear"] = {
 			["H3212"] = 1800,
@@ -331,12 +331,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 4595,
 		},
-		["Bolt of Runecloth"] = {
-			["H3212"] = 30000,
+		["Mageweave Cloth"] = {
+			["H3212"] = 1500,
 			["cc"] = 7,
-			["id"] = "14048:0:0:0:0",
+			["id"] = "4338:0:0:0:0",
 			["sc"] = 0,
-			["mr"] = 30000,
+			["mr"] = 1500,
 		},
 		["Bloodspattered Loincloth of Power"] = {
 			["H3212"] = 899,
@@ -373,12 +373,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 200,
 		},
-		["Mageweave Cloth"] = {
-			["H3212"] = 1500,
+		["Bolt of Runecloth"] = {
+			["H3212"] = 30000,
 			["cc"] = 7,
-			["id"] = "4338:0:0:0:0",
+			["id"] = "14048:0:0:0:0",
 			["sc"] = 0,
-			["mr"] = 1500,
+			["mr"] = 30000,
 		},
 		["Bolt of Linen Cloth"] = {
 			["H3212"] = 55,
@@ -401,19 +401,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 4000,
 		},
-		["Wool Cloth"] = {
-			["H3212"] = 177,
-			["cc"] = 7,
-			["id"] = "2592:0:0:0:0",
-			["sc"] = 0,
-			["mr"] = 177,
-		},
 		["Bolt of Silk Cloth"] = {
 			["H3212"] = 2100,
 			["cc"] = 7,
 			["id"] = "4305:0:0:0:0",
 			["sc"] = 0,
 			["mr"] = 2100,
+		},
+		["Barbaric Loincloth"] = {
+			["H3212"] = 400,
+			["cc"] = 4,
+			["id"] = "3309:0:0:0:0",
+			["sc"] = 1,
+			["mr"] = 400,
 		},
 		["Bloodspattered Loincloth of the Tiger"] = {
 			["H3212"] = 2200,
@@ -519,26 +519,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "2842:0:0:0:0",
 			["cc"] = 7,
 		},
-		["Coarse Blasting Powder"] = {
-			["mr"] = 481,
-			["cc"] = 7,
-			["id"] = "4364:0:0:0:0",
-			["sc"] = 1,
-			["H4061"] = 481,
-		},
 		["Swiftthistle"] = {
 			["mr"] = 3699,
 			["cc"] = 7,
 			["id"] = "2452:0:0:0:0",
 			["sc"] = 0,
 			["H4059"] = 3699,
-		},
-		["Minor Healing Potion"] = {
-			["mr"] = 39,
-			["cc"] = 0,
-			["id"] = "118:0:0:0:0",
-			["sc"] = 0,
-			["H4059"] = 39,
 		},
 		["Shadowgem"] = {
 			["mr"] = 246,
@@ -547,12 +533,26 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["H4059"] = 246,
 		},
+		["Minor Healing Potion"] = {
+			["mr"] = 39,
+			["cc"] = 0,
+			["id"] = "118:0:0:0:0",
+			["sc"] = 0,
+			["H4059"] = 39,
+		},
 		["Fire Wand"] = {
 			["mr"] = 598,
 			["cc"] = 2,
 			["id"] = "5069:0:0:0:0",
 			["sc"] = 19,
 			["H4059"] = 598,
+		},
+		["Coarse Blasting Powder"] = {
+			["mr"] = 481,
+			["cc"] = 7,
+			["id"] = "4364:0:0:0:0",
+			["sc"] = 1,
+			["H4061"] = 481,
 		},
 		["Light Feather"] = {
 			["mr"] = 130,
@@ -896,9 +896,9 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 1,
 		["numstacks"] = 0,
 	},
-	["volatile life"] = {
-		["stacksize"] = 10,
+	["elemental water"] = {
 		["numstacks"] = 0,
+		["stacksize"] = 5,
 	},
 	["mighty rage potion"] = {
 		["numstacks"] = 0,
@@ -964,9 +964,9 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 1,
 		["numstacks"] = 0,
 	},
-	["elemental water"] = {
+	["volatile life"] = {
+		["stacksize"] = 10,
 		["numstacks"] = 0,
-		["stacksize"] = 5,
 	},
 	["exotic leather"] = {
 		["numstacks"] = 0,
