@@ -15,7 +15,7 @@ while 1 == 2:
      print(pyautogui.pixel(1280, 860))
 
 while True:
-    if keyboard.is_pressed("F1"):
+    if keyboard.is_pressed("K"):
         if not aoe:
             time.sleep(0.1)
             print("AOE")
