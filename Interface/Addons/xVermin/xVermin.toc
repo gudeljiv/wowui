@@ -61,6 +61,7 @@ SortBags.lua
 TrackingIcon.lua
 UIScale.lua
 Unit.lua
+RotBot.lua
 
 Rotation/_Core.lua
 Rotation/Warrior.lua
