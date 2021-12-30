@@ -19,7 +19,7 @@ Postal3ClassicDB = {
 				"Mxzq|Golemagg|Horde|35|HUNTER", -- [14]
 				"Nitwit|Dreadnaught|Horde|5|ROGUE", -- [15]
 				"Pitchwise|Dreadnaught|Horde|15|WARRIOR", -- [16]
-				"Poklopac|Dreadnaught|Horde|21|HUNTER", -- [17]
+				"Poklopac|Dreadnaught|Horde|22|HUNTER", -- [17]
 				"Testxv|Golemagg|Horde|1|HUNTER", -- [18]
 				"Vermins|Stonespine|Horde|2|WARRIOR", -- [19]
 				"Vermin|Golemagg|Horde|36|WARRIOR", -- [20]
@@ -39,7 +39,7 @@ Postal3ClassicDB = {
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Mxys - Golemagg"] = "Mxys - Golemagg",
 		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
-		["Vermins - Stonespine"] = "Vermins - Stonespine",
+		["Mxym - Golemagg"] = "Mxym - Golemagg",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
@@ -51,8 +51,8 @@ Postal3ClassicDB = {
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
-		["Mxym - Golemagg"] = "Mxym - Golemagg",
 		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+		["Vermins - Stonespine"] = "Vermins - Stonespine",
 		["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
 	},
 	["profiles"] = {
@@ -98,7 +98,7 @@ Postal3ClassicDB = {
 		},
 		["Poklopac - Dreadnaught"] = {
 		},
-		["Vermins - Stonespine"] = {
+		["Mxym - Golemagg"] = {
 		},
 		["Testxv - Golemagg"] = {
 		},
@@ -134,9 +134,9 @@ Postal3ClassicDB = {
 				},
 			},
 		},
-		["Mxym - Golemagg"] = {
-		},
 		["Pitchwise - Dreadnaught"] = {
+		},
+		["Vermins - Stonespine"] = {
 		},
 		["Moolatz - Dreadnaught"] = {
 		},

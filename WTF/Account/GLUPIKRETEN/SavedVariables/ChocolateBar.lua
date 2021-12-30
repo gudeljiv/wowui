@@ -49,6 +49,20 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["locked"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -69,21 +83,10 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
 				},
-				["textureName"] = "None",
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["locked"] = false,
-			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -445,18 +448,15 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
-			["gap"] = 0,
+			["fontName"] = "Friz Quadrata TT",
+			["forceColor"] = false,
+			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["desaturated"] = false,
-			["moveFrames"] = false,
-			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
-			["forceColor"] = false,
+			["gap"] = 0,
+			["moveFrames"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -516,7 +516,7 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Poklopac-Dreadnaught"] = {
-		["total"] = 78208,
+		["total"] = 87941,
 	},
 	["Ozrencic-"] = {
 		["total"] = 853,

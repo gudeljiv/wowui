@@ -32,13 +32,13 @@ bcf.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassC
 ----------------------------------------------------------
 -- Mana tick counter
 ----------------------------------------------------------
-local mcf = CreateFrame("Frame", "ManaCountFrame")
-mcf:SetPoint("LEFT", PlayerFrame, "RIGHT", 5, 2)
-mcf.text = mcf:CreateFontString(nil, "ARTWORK")
-mcf.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-mcf.text:SetShadowOffset(1, -1)
-mcf.text:SetPoint("TOP", mcf, "TOP", 0, 0)
-mcf.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+-- local mcf = CreateFrame("Frame", "ManaCountFrame")
+-- mcf:SetPoint("LEFT", PlayerFrame, "RIGHT", 5, 2)
+-- mcf.text = mcf:CreateFontString(nil, "ARTWORK")
+-- mcf.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+-- mcf.text:SetShadowOffset(1, -1)
+-- mcf.text:SetPoint("TOP", mcf, "TOP", 0, 0)
+-- mcf.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 local function Set(autointeract)
 	-- SetCVar("AutoInteract", autointeract and "1" or "0")
@@ -137,9 +137,9 @@ bcf:SetScript(
 				manatick = 0
 			end
 
-			mcf.text:SetText(manatick)
-			mcf:SetWidth(mcf.text:GetStringWidth())
-			mcf:SetHeight(mcf.text:GetStringHeight())
+			-- mcf.text:SetText(manatick)
+			-- mcf:SetWidth(mcf.text:GetStringWidth())
+			-- mcf:SetHeight(mcf.text:GetStringHeight())
 
 			---------------------------------------------------------
 			-- blizzard counter

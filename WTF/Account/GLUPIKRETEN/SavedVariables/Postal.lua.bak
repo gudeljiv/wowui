@@ -9,11 +9,11 @@ Postal3ClassicDB = {
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Mxym - Golemagg"] = "Mxym - Golemagg",
 		["Vermins - Stonespine"] = "Vermins - Stonespine",
-		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
-		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
 		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
@@ -48,7 +48,7 @@ Postal3ClassicDB = {
 				"Mxzq|Golemagg|Horde|35|HUNTER", -- [14]
 				"Nitwit|Dreadnaught|Horde|5|ROGUE", -- [15]
 				"Pitchwise|Dreadnaught|Horde|15|WARRIOR", -- [16]
-				"Poklopac|Dreadnaught|Horde|21|HUNTER", -- [17]
+				"Poklopac|Dreadnaught|Horde|22|HUNTER", -- [17]
 				"Testxv|Golemagg|Horde|1|HUNTER", -- [18]
 				"Vermins|Stonespine|Horde|2|WARRIOR", -- [19]
 				"Vermin|Golemagg|Horde|36|WARRIOR", -- [20]
@@ -83,9 +83,9 @@ Postal3ClassicDB = {
 		},
 		["Greenwise - Golemagg"] = {
 		},
-		["Vermins - Stonespine"] = {
+		["Mxym - Golemagg"] = {
 		},
-		["Pitchwise - Dreadnaught"] = {
+		["Vermins - Stonespine"] = {
 		},
 		["Vermin - Golemagg"] = {
 			["BlackBook"] = {
@@ -98,7 +98,7 @@ Postal3ClassicDB = {
 		},
 		["Poklopac - Dreadnaught"] = {
 		},
-		["Mxym - Golemagg"] = {
+		["Pitchwise - Dreadnaught"] = {
 		},
 		["Battlearm - Hydraxian Waterlords"] = {
 		},

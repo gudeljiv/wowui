@@ -619,19 +619,28 @@ MonkeyQuestConfig = {
 			["Wailing Caverns - true"] = {
 				["m_bChecked"] = false,
 			},
+			["Revenge of Gann - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Stonetalon Mountains - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Deepmoss Spider Eggs - false"] = {
+				["m_bChecked"] = true,
+			},
 			["The Barrens - true"] = {
+				["m_bChecked"] = true,
+			},
+			["The Tear of the Moons - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Trouble at the Docks - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Gann's Reclamation - false"] = {
+			["Arachnophobia - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Smart Drinks - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Deepmoss Spider Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1173,9 +1182,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 664.2069702148438,
+		["m_iFrameBottom"] = 790.4334106445312,
 		["m_bHideCompletedQuests"] = false,
-		["m_iFrameLeft"] = 2010.023071289063,
+		["m_iFrameLeft"] = 1774.620849609375,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -1192,7 +1201,7 @@ MonkeyQuestConfig = {
 		["m_iFrameWidth"] = 300,
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1036.138061523438,
+		["m_iFrameTop"] = 1036.137817382813,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowTooltipObjectives"] = false,

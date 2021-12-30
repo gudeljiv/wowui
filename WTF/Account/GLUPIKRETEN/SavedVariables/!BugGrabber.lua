@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 3759,
+	["session"] = 3763,
 	["errors"] = {
 		{
 			["message"] = "...\\AddOns\\Details\\Libs\\DetailsFramework\\lib\\slider.lua:456: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DetailsFrameworkSliderButtons1:SetPoint.",
@@ -171,21 +171,13 @@ BugGrabberDB = {
 			["counter"] = 5,
 		}, -- [21]
 		{
-			["message"] = "...lla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:751: attempt to index local 'color' (a nil value)",
-			["time"] = "2021/12/26 12:15:07",
-			["locals"] = "numBatchAuctions = 36449\ntotalAuctions = 36449\nbutton = BrowseButton1 {\n 0 = <userdata>\n PriceTooltipFrame = <unnamed> {\n }\n}\nbuttonName = \"BrowseButton1\"\nbuttonHighlight = BrowseButton1Highlight {\n 0 = <userdata>\n}\niconTexture = nil\nitemName = BrowseButton1Name {\n 0 = <userdata>\n}\ncolor = nil\nitemCount = nil\nmoneyFrame = nil\nyourBidText = nil\nbuyoutFrame = nil\nbuyoutMoney = nil\noffset = 0\nindex = 1\nisLastSlotEmpty = nil\nname = \"\"\ntexture = 135327\ncount = 1\nquality = -1\ncanUse = false\nlevel = -666652416\nlevelColHeader = nil\nminBid = 1861999\nminIncrement = 0\nbuyoutPrice = 1959998\nduration = 1\nbidAmount = 0\nhighBidder = false\nbidderFullName = nil\nowner = nil\nownerFullName = nil\nsaleStatus = 0\nitemId = 935\nhasAllInfo = true\ndisplayedPrice = nil\nrequiredBid = nil\n(for index) = 1\n(for limit) = 8\n(for step) = 1\ni = 1\nshouldHide = false\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = BrowseButton1Name {\n 0 = <userdata>\n}\n(*temporary) = \"\"\n(*temporary) = <userdata>\n(*temporary) = false\n(*temporary) = -666652416\n(*temporary) = nil\n(*temporary) = 1861999\n(*temporary) = 0\n(*temporary) = 1959998\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 935\n(*temporary) = true\n(*temporary) = \"attempt to index local 'color' (a nil value)\"\n",
-			["stack"] = "[string \"@Interface_Vanilla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:751: in function `AuctionFrameBrowse_Update'\n[string \"@Interface_Vanilla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:277: in function <...lla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:275>",
-			["session"] = 3747,
-			["counter"] = 7,
-		}, -- [22]
-		{
 			["message"] = "Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua:1963: Usage: SaveBindings(1||2)",
 			["time"] = "2021/12/29 10:50:52",
 			["locals"] = "(*temporary) = 0\n",
 			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1963: in function `SetSetBindings'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:233: in function `?'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:198: in function `OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 3748,
 			["counter"] = 1,
-		}, -- [23]
+		}, -- [22]
 		{
 			["message"] = "...Puggle\\Libs\\NoTaintUIDropDownMenu\\UIDropDownMenu.lua:1101: attempt to index local 'frame' (a nil value)",
 			["time"] = "2021/12/29 10:54:02",
@@ -193,7 +185,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\Puggle\\Libs\\NoTaintUIDropDownMenu\\UIDropDownMenu.lua\"]:1101: in function `Lib_UIDropDownMenu_SetText'\n[string \"@Interface\\AddOns\\Puggle\\Puggle-2.7.lua\"]:496: in function `Puggle_UpdateCurrentGroup'\n[string \"@Interface\\AddOns\\Puggle\\Puggle-2.7.lua\"]:417: in function `Puggle_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 3749,
 			["counter"] = 1,
-		}, -- [24]
+		}, -- [23]
 		{
 			["message"] = "Usage: CastSpellByName(name[, target])",
 			["time"] = "2021/12/26 11:46:05",
@@ -201,42 +193,42 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `CastSpellByName'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:995: in function <Interface\\FrameXML\\ChatFrame.lua:923>\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:1238: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4813: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2918: in function <Interface\\FrameXML\\ChatFrame.lua:2911>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:14: in function `MultiActionButtonDown'\n[string \"MULTIACTIONBAR4BUTTON11\"]:2: in function <[string \"MULTIACTIONBAR4BUTTON11\"]:1>",
 			["session"] = 3749,
 			["counter"] = 2,
-		}, -- [25]
+		}, -- [24]
 		{
 			["message"] = "[string \"--[==[ Error in 'HC Autoshot CD':'initializ...\"]:28: attempt to index a nil value",
 			["time"] = "2021/12/29 11:25:14",
 			["stack"] = "[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\AuraEnvironment.lua\"]:289: in function `ActivateAuraEnvironment'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:759: in function `CreateFakeStates'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:3777: in function `UpdateFakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:3753: in function `FakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:2775: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:2666>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:2795: in function `Add'\n[string \"@Interface\\AddOns\\WeakAuras\\Transmission.lua\"]:332: in function <Interface\\AddOns\\WeakAuras\\Transmission.lua:323>\n[string \"@Interface\\AddOns\\WeakAuras\\Transmission.lua\"]:475: in function <Interface\\AddOns\\WeakAuras\\Transmission.lua:392>",
 			["session"] = 3755,
 			["counter"] = 1,
-		}, -- [26]
+		}, -- [25]
 		{
 			["message"] = "[string \"--[==[ Error in 'HC Autoshot CD' ]==] retur...\"]:14: attempt to index a nil value",
 			["time"] = "2021/12/29 11:25:14",
 			["stack"] = "[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:601: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:537>\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:761: in function `CreateFakeStates'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:3777: in function `UpdateFakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:3753: in function `FakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:2775: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:2666>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:2795: in function `Add'\n[string \"@Interface\\AddOns\\WeakAuras\\Transmission.lua\"]:332: in function <Interface\\AddOns\\WeakAuras\\Transmission.lua:323>\n[string \"@Interface\\AddOns\\WeakAuras\\Transmission.lua\"]:475: in function <Interface\\AddOns\\WeakAuras\\Transmission.lua:392>",
 			["session"] = 3755,
 			["counter"] = 1,
-		}, -- [27]
+		}, -- [26]
 		{
 			["message"] = "[string \"--[==[ Error in 'HC Autoshot CD' ]==] retur...\"]:4: attempt to index a nil value",
 			["time"] = "2021/12/29 11:25:14",
 			["stack"] = "[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:601: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:537>\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:761: in function `CreateFakeStates'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:3777: in function `UpdateFakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:3753: in function `FakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:2775: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:2666>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:2795: in function `Add'\n[string \"@Interface\\AddOns\\WeakAuras\\Transmission.lua\"]:332: in function <Interface\\AddOns\\WeakAuras\\Transmission.lua:323>\n[string \"@Interface\\AddOns\\WeakAuras\\Transmission.lua\"]:475: in function <Interface\\AddOns\\WeakAuras\\Transmission.lua:392>",
 			["session"] = 3755,
 			["counter"] = 1,
-		}, -- [28]
+		}, -- [27]
 		{
 			["message"] = "[string \"--[==[ Error in 'HC Autoshot Cast':'initial...\"]:11: attempt to index a nil value",
 			["time"] = "2021/12/29 11:25:14",
 			["stack"] = "[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\AuraEnvironment.lua\"]:289: in function `ActivateAuraEnvironment'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:759: in function `CreateFakeStates'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:3777: in function `UpdateFakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:3753: in function `FakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:2775: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:2666>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:2795: in function `Add'\n[string \"@Interface\\AddOns\\WeakAuras\\Transmission.lua\"]:332: in function <Interface\\AddOns\\WeakAuras\\Transmission.lua:323>\n[string \"@Interface\\AddOns\\WeakAuras\\Transmission.lua\"]:475: in function <Interface\\AddOns\\WeakAuras\\Transmission.lua:392>",
 			["session"] = 3755,
 			["counter"] = 1,
-		}, -- [29]
+		}, -- [28]
 		{
 			["message"] = "[string \"--[==[ Error in 'HC Autoshot Cast' ]==] ret...\"]:4: attempt to index a nil value",
 			["time"] = "2021/12/29 11:25:14",
 			["stack"] = "[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:601: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:537>\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:761: in function `CreateFakeStates'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:3777: in function `UpdateFakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:3753: in function `FakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:2775: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:2666>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:2795: in function `Add'\n[string \"@Interface\\AddOns\\WeakAuras\\Transmission.lua\"]:332: in function <Interface\\AddOns\\WeakAuras\\Transmission.lua:323>\n[string \"@Interface\\AddOns\\WeakAuras\\Transmission.lua\"]:475: in function <Interface\\AddOns\\WeakAuras\\Transmission.lua:392>",
 			["session"] = 3755,
 			["counter"] = 1,
-		}, -- [30]
+		}, -- [29]
 		{
 			["message"] = "Interface\\SharedXML\\Backdrop.lua:200: TexCoord out of range",
 			["time"] = "2021/12/29 11:25:14",
@@ -244,6 +236,22 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetTexCoord'\n[string \"@Interface\\SharedXML\\Backdrop.lua\"]:200: in function <Interface\\SharedXML\\Backdrop.lua:199>\n[string \"@Interface\\SharedXML\\Backdrop.lua\"]:232: in function `SetupTextureCoordinates'\n[string \"@Interface\\SharedXML\\Backdrop.lua\"]:176: in function <Interface\\SharedXML\\Backdrop.lua:174>\n[string \"=[C]\"]: in function `resume'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.0.5.lua\"]:3658: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3641>",
 			["session"] = 3755,
 			["counter"] = 2,
+		}, -- [30]
+		{
+			["message"] = "...lla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:751: attempt to index local 'color' (a nil value)",
+			["time"] = "2021/12/26 12:15:07",
+			["locals"] = "numBatchAuctions = 36449\ntotalAuctions = 36449\nbutton = BrowseButton1 {\n 0 = <userdata>\n PriceTooltipFrame = <unnamed> {\n }\n}\nbuttonName = \"BrowseButton1\"\nbuttonHighlight = BrowseButton1Highlight {\n 0 = <userdata>\n}\niconTexture = nil\nitemName = BrowseButton1Name {\n 0 = <userdata>\n}\ncolor = nil\nitemCount = nil\nmoneyFrame = nil\nyourBidText = nil\nbuyoutFrame = nil\nbuyoutMoney = nil\noffset = 0\nindex = 1\nisLastSlotEmpty = nil\nname = \"\"\ntexture = 135327\ncount = 1\nquality = -1\ncanUse = false\nlevel = -666652416\nlevelColHeader = nil\nminBid = 1861999\nminIncrement = 0\nbuyoutPrice = 1959998\nduration = 1\nbidAmount = 0\nhighBidder = false\nbidderFullName = nil\nowner = nil\nownerFullName = nil\nsaleStatus = 0\nitemId = 935\nhasAllInfo = true\ndisplayedPrice = nil\nrequiredBid = nil\n(for index) = 1\n(for limit) = 8\n(for step) = 1\ni = 1\nshouldHide = false\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = BrowseButton1Name {\n 0 = <userdata>\n}\n(*temporary) = \"\"\n(*temporary) = <userdata>\n(*temporary) = false\n(*temporary) = -666652416\n(*temporary) = nil\n(*temporary) = 1861999\n(*temporary) = 0\n(*temporary) = 1959998\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 935\n(*temporary) = true\n(*temporary) = \"attempt to index local 'color' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface_Vanilla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:751: in function `AuctionFrameBrowse_Update'\n[string \"@Interface_Vanilla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:277: in function <...lla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:275>",
+			["session"] = 3760,
+			["counter"] = 9,
 		}, -- [31]
+		{
+			["message"] = "...lMaster\\Core\\UI\\Elements\\SelectionScrollingTable.lua:124: assertion failed!",
+			["time"] = "2021/12/30 14:26:20",
+			["locals"] = "(*temporary) = false\n",
+			["stack"] = "[string \"=[C]\"]: in function `assert'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\SelectionScrollingTable.lua\"]:124: in function <...lMaster\\Core\\UI\\Elements\\SelectionScrollingTable.lua:122>\n[string \"@Interface\\AddOns\\TradeSkillMaster\\External\\LibTSMClass\\LibTSMClass-1.lua\"]:208: in function `SetSelection'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\UI\\Util\\TableRow.lua\"]:1197: in function `?'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua\"]:86: in function `ScriptHandlerCommon'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua\"]:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>\n[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\UI\\Util\\TableRow.lua\"]:1381: in function `?'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua\"]:86: in function `ScriptHandlerCommon'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua\"]:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>",
+			["session"] = 3762,
+			["counter"] = 1,
+		}, -- [32]
 	},
 }

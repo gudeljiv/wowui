@@ -38,7 +38,7 @@ Frame: QuestFrame
 FrameLevel: 1
 Anchor: TOPLEFT
 X: 0
-Y: -106
+Y: -104
 W: 384
 H: 512
 Frame: QuestLogFrame
@@ -83,13 +83,6 @@ X: -27
 Y: 27
 W: 50
 H: 50
-Frame: Puggle_ContainerFrame
-FrameLevel: 1
-Anchor: TOP
-X: 6
-Y: -91
-W: 700
-H: 500
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER
