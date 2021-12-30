@@ -13,10 +13,10 @@ VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:723
+#showtooltip item:0
 /cast feed pet
-/use item:723
+/use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
-/tar belly
+/tar Ashenvale Bear
 END
