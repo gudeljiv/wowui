@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 3774,
 	["lastSanitation"] = 3,
-	["session"] = 3765,
 	["errors"] = {
 		{
 			["message"] = "...\\AddOns\\Details\\Libs\\DetailsFramework\\lib\\slider.lua:456: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DetailsFrameworkSliderButtons1:SetPoint.",
@@ -253,5 +253,37 @@ BugGrabberDB = {
 			["session"] = 3762,
 			["counter"] = 1,
 		}, -- [32]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:226: attempt to concatenate global 'Rollid' (a nil value)",
+			["time"] = "2021/12/31 09:09:33",
+			["locals"] = "_ = <unnamed> {\n 0 = <userdata>\n}\n_ = \"START_LOOT_ROLL\"\nid = 14\n_ = 133766\n_ = \"Ritual Cape of the Eagle\"\n_ = 1\nquality = 2\nbop = false\n_ = true\n_ = true\ncanDE = false\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Chat.lua:31\n(*temporary) = ChatFrame1 {\n GatherSelectedText = <function> defined =[C]:-1\n RefreshIfNecessary = <function> defined =[C]:-1\n OnPostShow = <function> defined =[C]:-1\n CalculateLineAlphaValueFromTimestamp = <function> defined =[C]:-1\n ScrollUp = <function> defined =[C]:-1\n tellTimer = 3944228.317000\n fadeDurationSecs = 3\n GetFading = <function> defined =[C]:-1\n IsTextCopyable = <function> defined =[C]:-1\n shouldFadeAfterInactivity = true\n SetIndentedWordWrap = <function> defined =[C]:-1\n init = 0\n GetJustifyV = <function> defined =[C]:-1\n ScrollToBottom = <function> defined =[C]:-1\n GetMaxLines = <function> defined =[C]:-1\n GetIndentedWordWrap = <function> defined =[C]:-1\n buttonSide = \"left\"\n GetFont = <function> defined =[C]:-1\n checkedGMOTD = true\n SetMaxLines = <function> defined =[C]:-1\n CalculateSelectingCharacterIndicesForVisibleLine = <function> defined =[C]:-1\n OnPostUpdate = <function> defined =[C]:-1\n RefreshDisplay = <function> defined =[C]:-1\n SetFontObject = <function> defined =[C]:-1\n textIsCopyable = false\n SetOnScrollChangedCallback = <function> defined =[C]:-1\n CalculateNumVisibleLines = <function> defined =[C]:-1\n overrideFadeTimestamp = 3944236.423000\n MarkDisplayDirty = <function> defined =[C]:-1\n GetMessageInfo = <function> defined =[C]:-1\n GetOnScrollChangedCallback = <function> defined =[C]:-1\n AtTop = <function> defined =[C]:-1\n GetFontObject = <function> defined =[C]:-1\n fontStringPool = <table> {\n }\n CanEffectivelyFade = <function> defined =[C]:-1\n OnPreSizeChanged = <function> defined =[C]:-1\n GetScrollOffset = <function> defined =[C]:-1\n GetSpacing = <function> defined =[C]:-1\n OnPreLoad = <function> defined =[C]:-1\n SetSpacing = <function> defined =[C]:-1\n name = \"General\"\n CalculateLineSpacing = <function> defined =[C]:-1\n AddMessage = <function> defined @Interface\\AddOns\\xVermin\\Chat.lua:31\n InitializeFontableFrame = <function> defined =[C]:-1\n GetShadowColor = <function> defined =[C]:-1\n isUninteractable = false\n SetOnTextCopiedCallback = <function> defined =[C]:-1\n mouseOutTime = 8.106000\n RemoveMessagesByPredicate = <function> defined =[C]:-1\n TransformMessages = <function> defined =[C]:-1\n SetShadowColor = <function> defined =[C]:-1\n buttonFrame = ChatFrame1ButtonFrame {\n }\n HasFontObject = <function> defined =[C]:-1\n isDocked = 1\n GetOnTextCopiedCallback = <function> defined =[C]:-1\n SetFading = <function> defined =[C]:-1\n OnPostHide = <function> defined =[C]:-1\n alternativeDefaultLanguage = \"Orcish\"\n isInitialized = 1\n GetNumVisibleLines = <function> defined =[C]:-1\n GetInsertMode = <function> defined =[C]:-1\n SetTimeVisible = <function> defined =[C]:-1\n hasOwnFontObject = true\n Clear = <function> defined =[C]:-1\n oldAlpha = 0\n channelList = <table> {\n }\n GetTimeVisible = <function> defined =[C]:-1\n MarkLayoutDirty = <function> defined =[C]:-1\n SetTextCopyable = <function> defined =[C]:-1\n BackFillMessage = <function> defined =[C]:-1\n UnpackageEntry = <function> defined =[C]:-1\n FontStringContainer = <unnamed> {\n }\n SetShadowOffset = <function> defined =[C]:-1\n messageTypeList = <table> {\n }\n flashTimer = 0\n timeVisibleSecs = 120\n PackageEntry = <function> defined =[C]:-1\n chatframe = ChatFrame1 {\n }\n MakeFontObjectCustom = <function> defined =[C]:-1\n SetPoint = <function> defined @Interface\\AddOns\\xVermin\\Chat.lua:178\n fontObject = table: 0x7f8268b90e00 {\n }\n SetInsertMode = <function> defined =[C]:-1\n mouseInTime = 0\n UpdateSelectingText = <function> defined =[C]:-1\n zoneChannelList = <table> {\n }\n SetScrollOffset = <function> defined =[C]:-1\n onDisplayRefreshedCallback = <function> defined =[C]:-1\n insertMode = 2\n ResetSelectingText = <function> defined =[C]:-1\n GetTextColor = <function> defined =[C]:-1\n CallOnDisplayRefreshed = <function> defined =[C]:-1\n 0 = <userdata>\n IsSelectingText = <function> defined =[C]:-1\n OnFontObjectUpdated = <func",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:226: in function <Interface\\AddOns\\xVermin\\xVermin.lua:220>",
+			["session"] = 3768,
+			["counter"] = 3,
+		}, -- [33]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:225: attempt to concatenate global 'Rollid' (a nil value)",
+			["time"] = "2021/12/31 09:14:18",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:225: in function <Interface\\AddOns\\xVermin\\xVermin.lua:220>",
+			["session"] = 3769,
+			["counter"] = 1,
+		}, -- [34]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:229: cannot use '...' outside a vararg function near '...'",
+			["time"] = "2021/12/31 09:29:16",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 3772,
+			["counter"] = 8,
+		}, -- [35]
+		{
+			["message"] = "[string \"ConfirmLootRoll()\"]:1: Usage: ConfirmLootRoll(id, rollType)",
+			["time"] = "2021/12/31 09:40:53",
+			["locals"] = "",
+			["stack"] = "[string \"=[C]\"]: in function `ConfirmLootRoll'\n[string \"ConfirmLootRoll()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 3773,
+			["counter"] = 1,
+		}, -- [36]
 	},
 }

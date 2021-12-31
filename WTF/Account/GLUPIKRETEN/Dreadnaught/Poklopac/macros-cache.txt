@@ -1,18 +1,23 @@
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/petattack
-/cast Arcane Shot
+VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
+#showtooltip Wing Clip
+/cast Wing Clip
+/cast Wing Clip(Rank 2)
+/cast Wing Clip(Rank 1)
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
+/cleartarget [dead]
+/targetenemy [noharm]
 /startattack
+/petattack
 /cast Raptor Strike
+/cast Counterattack
 /cast Mongoose Bite
 END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/startattack
+/cleartarget [dead]
+/targetenemy [noharm]
 /petattack
 /cast Serpent Sting
 END
@@ -32,7 +37,8 @@ VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/startattack
+/cleartarget [dead]
+/targetenemy [noharm]
 /petattack
 /cast Multi-Shot
 END
@@ -45,4 +51,16 @@ VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /petattack
 /cast Hunter's Mark
+END
+VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Scatter Shot
+/petpassive
+/cast Scatter Shot
+END
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cleartarget [dead]
+/targetenemy [noharm]
+/petattack
+/cast Arcane Shot
 END
