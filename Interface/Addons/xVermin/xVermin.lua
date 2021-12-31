@@ -215,7 +215,6 @@ hooksecurefunc("TargetFrame_CheckClassification", TargetFrameTextAdjustment)
 
 
 local fr = CreateFrame("Frame", nil, UIParent)
- 
 fr:RegisterEvent("START_LOOT_ROLL")
 fr:RegisterEvent("CONFIRM_LOOT_ROLL")
 fr:SetScript("OnEvent", function(_, _, id)

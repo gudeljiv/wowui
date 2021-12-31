@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 3776,
 	["lastSanitation"] = 3,
-	["session"] = 3773,
 	["errors"] = {
 		{
 			["message"] = "...\\AddOns\\Details\\Libs\\DetailsFramework\\lib\\slider.lua:456: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DetailsFrameworkSliderButtons1:SetPoint.",
@@ -285,5 +285,37 @@ BugGrabberDB = {
 			["session"] = 3773,
 			["counter"] = 1,
 		}, -- [36]
+		{
+			["message"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1117: attempt to call global 'TEXT' (a nil value)",
+			["time"] = "2021/12/31 11:59:51",
+			["locals"] = "info = <table> {\n}\n(*temporary) = nil\n(*temporary) = \"All Slots\"\n(*temporary) = \"attempt to call global 'TEXT' (a nil value)\"\natsw_currentinvslotfilter = <table> {\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua\"]:1117: in function `ATSWFilterFrame_LoadInvSlots'\n[string \"@Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua\"]:1112: in function `initFunction'\n[string \"@Interface\\FrameXML\\UIDropDownMenu.lua\"]:79: in function `UIDropDownMenu_Initialize'\n[string \"@Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua\"]:1099: in function `ATSWInvSlotDropDown_OnLoad'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 3775,
+			["counter"] = 1,
+		}, -- [37]
+		{
+			["message"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1072: attempt to call global 'TEXT' (a nil value)",
+			["time"] = "2021/12/31 11:59:51",
+			["locals"] = "info = <table> {\n}\n(*temporary) = nil\n(*temporary) = \"All Subclasses\"\n(*temporary) = \"attempt to call global 'TEXT' (a nil value)\"\natsw_currentsubclassfilter = <table> {\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua\"]:1072: in function `ATSWFilterFrame_LoadSubClasses'\n[string \"@Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua\"]:1067: in function `initFunction'\n[string \"@Interface\\FrameXML\\UIDropDownMenu.lua\"]:79: in function `UIDropDownMenu_Initialize'\n[string \"@Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua\"]:1054: in function `ATSWSubClassDropDown_OnLoad'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 3775,
+			["counter"] = 1,
+		}, -- [38]
+		{
+			["message"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.10.4.lua:1111: attempt to call global 'TEXT' (a nil value)",
+			["time"] = "2021/12/31 12:06:39",
+			["locals"] = "info = <table> {\n}\n(*temporary) = nil\n(*temporary) = \"All Slots\"\n(*temporary) = \"attempt to call global 'TEXT' (a nil value)\"\natsw_currentinvslotfilter = <table> {\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.10.4.lua\"]:1111: in function `ATSWFilterFrame_LoadInvSlots'\n[string \"@Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.10.4.lua\"]:1106: in function `initFunction'\n[string \"@Interface\\FrameXML\\UIDropDownMenu.lua\"]:79: in function `UIDropDownMenu_Initialize'\n[string \"@Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.10.4.lua\"]:1093: in function `ATSWInvSlotDropDown_OnLoad'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 3776,
+			["counter"] = 1,
+		}, -- [39]
+		{
+			["message"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.10.4.lua:1066: attempt to call global 'TEXT' (a nil value)",
+			["time"] = "2021/12/31 12:06:39",
+			["locals"] = "info = <table> {\n}\n(*temporary) = nil\n(*temporary) = \"All Subclasses\"\n(*temporary) = \"attempt to call global 'TEXT' (a nil value)\"\natsw_currentsubclassfilter = <table> {\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.10.4.lua\"]:1066: in function `ATSWFilterFrame_LoadSubClasses'\n[string \"@Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.10.4.lua\"]:1061: in function `initFunction'\n[string \"@Interface\\FrameXML\\UIDropDownMenu.lua\"]:79: in function `UIDropDownMenu_Initialize'\n[string \"@Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.10.4.lua\"]:1048: in function `ATSWSubClassDropDown_OnLoad'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 3776,
+			["counter"] = 1,
+		}, -- [40]
 	},
 }
