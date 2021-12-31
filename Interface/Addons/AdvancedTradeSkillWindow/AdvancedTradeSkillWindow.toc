@@ -1,0 +1,8 @@
+## Interface: 40000
+## Title: AdvancedTradeSkillWindow
+## Notes: An improved window for your tradeskills (v0.8.0)
+## RequiredDeps:
+## SavedVariables: atsw_orderby,atsw_bankitemlist,atsw_merchantlist,atsw_itemlist,atsw_customsorting,atsw_customheaders,atsw_disabled,atsw_savedqueue,atsw_savednecessaryitems
+## SavedVariablesPerCharacter: atsw_prescanned,atsw_multicount,atsw_considerbank,atsw_consideralts,atsw_considermerchants,atsw_autobuy,atsw_recipetooltip,atsw_displayshoppinglist,atsw_displayreagentlist,atsw_newrecipelinks
+atsw.xml
+atsw_customsorting.xml
