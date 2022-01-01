@@ -181,8 +181,8 @@ local function SetChat()
 		if (v:GetName() == "ChatFrame7" or v:GetName() == "ChatFrame8") then
 			-- v:SetWidth((chatWidth / 2) - 4)
 			-- _G[v:GetName() .. "Background"]:SetAlpha(0.3)
-			v:SetWidth((chatWidth / 1.5) - 4)
-			_G[v:GetName() .. "Background"]:SetAlpha(0.1)
+			v:SetWidth((chatWidth / 1.3) - 4)
+			_G[v:GetName() .. "Background"]:SetAlpha(0)
 		else
 			v:SetWidth(chatWidth)
 			_G[v:GetName() .. "Background"]:SetAlpha(0.6)

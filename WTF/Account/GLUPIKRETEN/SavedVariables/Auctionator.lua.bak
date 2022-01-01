@@ -307,19 +307,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["mr"] = 699,
 		},
-		["Linen Cloth"] = {
-			["H3212"] = 20,
-			["cc"] = 7,
-			["id"] = "2589:0:0:0:0",
-			["sc"] = 0,
-			["mr"] = 20,
-		},
 		["Aboriginal Loincloth of the Owl"] = {
 			["H3212"] = 900,
 			["cc"] = 4,
 			["id"] = "14119:0:0:760:0",
 			["sc"] = 1,
 			["mr"] = 900,
+		},
+		["Linen Cloth"] = {
+			["H3212"] = 20,
+			["cc"] = 7,
+			["id"] = "2589:0:0:0:0",
+			["sc"] = 0,
+			["mr"] = 20,
 		},
 		["Bloodspattered Loincloth of the Bear"] = {
 			["H3212"] = 1800,
@@ -343,12 +343,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 4595,
 		},
-		["Mageweave Cloth"] = {
-			["H3212"] = 1500,
+		["Bolt of Runecloth"] = {
+			["H3212"] = 30000,
 			["cc"] = 7,
-			["id"] = "4338:0:0:0:0",
+			["id"] = "14048:0:0:0:0",
 			["sc"] = 0,
-			["mr"] = 1500,
+			["mr"] = 30000,
 		},
 		["Bloodspattered Loincloth of Power"] = {
 			["H3212"] = 899,
@@ -385,12 +385,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 200,
 		},
-		["Bolt of Runecloth"] = {
-			["H3212"] = 30000,
+		["Mageweave Cloth"] = {
+			["H3212"] = 1500,
 			["cc"] = 7,
-			["id"] = "14048:0:0:0:0",
+			["id"] = "4338:0:0:0:0",
 			["sc"] = 0,
-			["mr"] = 30000,
+			["mr"] = 1500,
 		},
 		["Bolt of Linen Cloth"] = {
 			["H3212"] = 55,
@@ -562,10 +562,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Mageroyal"] = {
 			["mr"] = 29,
 			["H4061"] = 29,
-			["H4059"] = 39,
 			["id"] = "785:0:0:0:0",
-			["sc"] = 0,
 			["cc"] = 7,
+			["sc"] = 0,
 		},
 		["Ring of Defense"] = {
 			["mr"] = 39997,
@@ -587,7 +586,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "1210:0:0:0:0",
 			["H4063"] = 252,
 			["sc"] = 0,
-			["H4059"] = 246,
 		},
 		["Minor Healing Potion"] = {
 			["mr"] = 39,
@@ -944,9 +942,9 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 1,
 		["numstacks"] = 0,
 	},
-	["elemental water"] = {
+	["volatile life"] = {
+		["stacksize"] = 10,
 		["numstacks"] = 0,
-		["stacksize"] = 5,
 	},
 	["mighty rage potion"] = {
 		["numstacks"] = 0,
@@ -1012,9 +1010,9 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 1,
 		["numstacks"] = 0,
 	},
-	["volatile life"] = {
-		["stacksize"] = 10,
+	["elemental water"] = {
 		["numstacks"] = 0,
+		["stacksize"] = 5,
 	},
 	["exotic leather"] = {
 		["numstacks"] = 0,

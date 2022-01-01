@@ -211,17 +211,3 @@ local function TargetFrameTextAdjustment()
 	TargetFrameManaBarText:SetScale(0.8)
 end
 hooksecurefunc("TargetFrame_CheckClassification", TargetFrameTextAdjustment)
-
-
-
-local fr = CreateFrame("Frame", nil, UIParent)
-fr:RegisterEvent("START_LOOT_ROLL")
-fr:RegisterEvent("CONFIRM_LOOT_ROLL")
-fr:SetScript("OnEvent", function(_, _, id)
-	if not id then return end
-	local _, _, _, quality, bop, _, _, canDE = GetLootRollItemInfo(id)
-	if quality == 2 and not bop then 
-		ConfirmLootRoll(id, canDE and 3 or 2) 
-		print("You rolled on the item with id: " .. id )
-	end
-end)

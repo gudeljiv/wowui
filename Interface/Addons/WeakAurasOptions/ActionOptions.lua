@@ -118,7 +118,10 @@ function OptionsPrivate.GetActionOptions(data)
         name = "",
         order = 3,
         image = function() return "", 0, 0 end,
-        hidden = function() return not(data.actions.start.message_type == "WHISPER" or data.actions.start.message_type == "COMBAT" or data.actions.start.message_type == "PRINT") end
+        hidden = function()
+          return not(data.actions.start.message_type == "WHISPER" or data.actions.start.message_type == "COMBAT"
+                     or data.actions.start.message_type == "PRINT" or data.actions.start.message_type == "ERROR")
+        end
       },
       start_message_color = {
         type = "color",
@@ -126,7 +129,11 @@ function OptionsPrivate.GetActionOptions(data)
         name = L["Color"],
         order = 3,
         hasAlpha = false,
-        hidden = function() return not(data.actions.start.message_type == "COMBAT" or data.actions.start.message_type == "PRINT") end,
+        hidden = function()
+          return not(data.actions.start.message_type == "COMBAT"
+                     or data.actions.start.message_type == "PRINT"
+                     or data.actions.start.message_type == "ERROR")
+        end,
         get = function() return data.actions.start.r or 1, data.actions.start.g or 1, data.actions.start.b or 1 end,
         set = function(info, r, g, b)
           data.actions.start.r = r;
@@ -142,6 +149,16 @@ function OptionsPrivate.GetActionOptions(data)
         order = 3.1,
         disabled = function() return not data.actions.start.do_message end,
         hidden = function() return data.actions.start.message_type ~= "WHISPER" end
+      },
+      start_message_tts_voice = {
+        type = "select",
+        width = WeakAuras.doubleWidth,
+        name = L["Voice"],
+        order = 3.2,
+        disabled = function() return not data.actions.start.do_message end,
+        hidden = function() return (WeakAuras.IsClassic()) or data.actions.start.message_type ~= "TTS" end,
+        values = OptionsPrivate.Private.tts_voices,
+        desc = L["Available Voices are system specific"]
       },
       start_message = {
         type = "input",
@@ -174,6 +191,8 @@ function OptionsPrivate.GetActionOptions(data)
         order = 8.2,
         hidden = function() return not data.actions.start.do_loop end,
         disabled = function() return not data.actions.start.do_sound end,
+        min = 0,
+        softMax = 100,
       },
       start_sound_repeat_space = {
         type = "description",
@@ -313,6 +332,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       start_glow_color = {
         type = "color",
+        hasAlpha = true,
         width = WeakAuras.normalWidth,
         name = L["Glow Color"],
         order = 10.8,
@@ -509,7 +529,11 @@ function OptionsPrivate.GetActionOptions(data)
         name = L["Color"],
         order = 23,
         hasAlpha = false,
-        hidden = function() return not(data.actions.finish.message_type == "COMBAT" or data.actions.finish.message_type == "PRINT") end,
+        hidden = function() return
+          not(data.actions.finish.message_type == "COMBAT"
+              or data.actions.finish.message_type == "PRINT"
+              or data.actions.finish.message_type == "ERROR")
+            end,
         get = function() return data.actions.finish.r or 1, data.actions.finish.g or 1, data.actions.finish.b or 1 end,
         set = function(info, r, g, b)
           data.actions.finish.r = r;
@@ -525,6 +549,16 @@ function OptionsPrivate.GetActionOptions(data)
         order = 23.1,
         disabled = function() return not data.actions.finish.do_message end,
         hidden = function() return data.actions.finish.message_type ~= "WHISPER" end
+      },
+      finish_message_tts_voice = {
+        type = "select",
+        width = WeakAuras.doubleWidth,
+        name = L["Voice"],
+        order = 23.2,
+        disabled = function() return not data.actions.finish.do_message end,
+        hidden = function() return (not WeakAuras.IsRetail()) or data.actions.finish.message_type ~= "TTS" end,
+        values = OptionsPrivate.Private.tts_voices,
+        desc = L["Available Voices are system specific"]
       },
       finish_message = {
         type = "input",
@@ -680,6 +714,7 @@ function OptionsPrivate.GetActionOptions(data)
       },
       finish_glow_color = {
         type = "color",
+        hasAlpha = true,
         width = WeakAuras.normalWidth,
         name = L["Glow Color"],
         order = 30.8,
@@ -894,12 +929,16 @@ function OptionsPrivate.GetActionOptions(data)
   end
 
   if data.controlledChildren then
-    for _, childId in pairs(data.controlledChildren) do
-      local childData = WeakAuras.GetData(childId)
+    local list = {}
+    for child in OptionsPrivate.Private.TraverseLeafs(data) do
+      tinsert(list, child)
+    end
+
+    for index, child in ipairs(list) do
       local startGet = function(key)
-        return childData.actions.start["message_format_" .. key]
+        return child.actions.start["message_format_" .. key]
       end
-      OptionsPrivate.AddTextFormatOption(childData.actions and childData.actions.start.message, true, startGet, startAddOption, startHidden, startSetHidden)
+      OptionsPrivate.AddTextFormatOption(child.actions and child.actions.start.message, true, startGet, startAddOption, startHidden, startSetHidden, index, #list)
     end
   else
     OptionsPrivate.AddTextFormatOption(data.actions and data.actions.start.message, true, startGet, startAddOption, startHidden, startSetHidden)
@@ -953,12 +992,15 @@ function OptionsPrivate.GetActionOptions(data)
   end
 
   if data.controlledChildren then
-    for _, childId in pairs(data.controlledChildren) do
-      local childData = WeakAuras.GetData(childId)
+    local list = {}
+    for child in OptionsPrivate.Private.TraverseLeafs(data) do
+      tinsert(list, child)
+    end
+    for index, child in ipairs(list) do
       local finishGet = function(key)
-        return childData.actions.finish["message_format_" .. key]
+        return child.actions.finish["message_format_" .. key]
       end
-      OptionsPrivate.AddTextFormatOption(childData.actions and childData.actions.finish.message, true, finishGet, finishAddOption, finishHidden, finishSetHidden)
+      OptionsPrivate.AddTextFormatOption(child.actions and child.actions.finish.message, true, finishGet, finishAddOption, finishHidden, finishSetHidden, index, #list)
     end
   else
     OptionsPrivate.AddTextFormatOption(data.actions and data.actions.finish.message, true, finishGet, finishAddOption, finishHidden, finishSetHidden)

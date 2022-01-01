@@ -21,7 +21,7 @@ for i, v in pairs(
 	}
 ) do
 	if v then 
-		v:SetScale(1.2)
+		v:SetScale(1.3)
 		v:ClearAllPoints()
 		v:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
 		-- v.SetPoint = function()
@@ -46,7 +46,7 @@ EventFrame:SetScript(
 			local framelist = LoDMap[(...)]
 			if framelist then
 				for _, name in ipairs(framelist) do
-					_G[name]:SetScale(1.2)
+					_G[name]:SetScale(1.3)
 					_G[name]:ClearAllPoints()
 					_G[name]:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
 					-- _G[name].SetPoint = function()

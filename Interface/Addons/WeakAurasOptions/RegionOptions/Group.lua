@@ -54,34 +54,8 @@ local function getWidth(data, region)
   end
 end
 
--- Create region options table
-local function createOptions(id, data)
-  -- Region options
-  local options = {
-    __title = L["Group Settings"],
-    __order = 1,
-    groupIcon = {
-      type = "input",
-      width = WeakAuras.normalWidth,
-      name = L["Group Icon"],
-      desc = L["Set Thumbnail Icon"],
-      order = 0.50,
-      get = function()
-        return data.groupIcon and tostring(data.groupIcon) or ""
-      end,
-      set = function(info, v)
-        data.groupIcon = v
-        WeakAuras.Add(data)
-        WeakAuras.UpdateThumbnail(data)
-      end
-    },
-    chooseIcon = {
-      type = "execute",
-      width = WeakAuras.normalWidth,
-      name = L["Choose"],
-      order = 0.51,
-      func = function() OptionsPrivate.OpenIconPicker(data, "groupIcon", true) end
-    },
+local function createDistributeAlignOptions(id, data)
+  return {
     align_h = {
       type = "select",
       width = WeakAuras.normalWidth,
@@ -545,7 +519,45 @@ local function createOptions(id, data)
         WeakAuras.Add(data);
         OptionsPrivate.ResetMoverSizer();
       end
+    }
+  }
+end
+
+-- Create region options table
+local function createOptions(id, data)
+  -- Region options
+  local options = {
+    __title = L["Group Settings"],
+    __order = 1,
+    groupIcon = {
+      type = "input",
+      width = WeakAuras.doubleWidth - 0.15,
+      name = L["Group Icon"],
+      desc = L["Set Thumbnail Icon"],
+      order = 0.50,
+      get = function()
+        return data.groupIcon and tostring(data.groupIcon) or ""
+      end,
+      set = function(info, v)
+        data.groupIcon = v
+        WeakAuras.Add(data)
+        WeakAuras.UpdateThumbnail(data)
+      end
     },
+    chooseIcon = {
+      type = "execute",
+      width = 0.15,
+      name = L["Choose"],
+      order = 0.51,
+      func = function()
+         OptionsPrivate.OpenIconPicker(data, { [data.id] = {"groupIcon"} }, true)
+       end,
+       imageWidth = 24,
+       imageHeight = 24,
+       control = "WeakAurasIcon",
+       image = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\browse",
+    },
+    -- Alignment/Distribute options are added below
     scale = {
       type = "range",
       width = WeakAuras.normalWidth,
@@ -553,6 +565,7 @@ local function createOptions(id, data)
       order = 45,
       min = 0.05,
       softMax = 2,
+      max = 10,
       bigStep = 0.05,
       get = function()
         return data.scale or 1
@@ -574,13 +587,38 @@ local function createOptions(id, data)
     },
   };
 
-  for k, v in pairs(OptionsPrivate.commonOptions.BorderOptions(id, data, nil, nil, 70)) do
-    options[k] = v
+  local hasSubGroups = false
+  local hasDynamicSubGroup = false
+  for index, childId in pairs(data.controlledChildren) do
+    local childData = WeakAuras.GetData(childId);
+    if childData.controlledChildren then
+      hasSubGroups = true
+    end
+    if childData.regionType == "dynamicgroup" then
+      hasDynamicSubGroup = true
+    end
+
+    if hasSubGroups and hasDynamicSubGroup then
+      break
+    end
+  end
+
+
+  if not hasSubGroups then
+    for k, v in pairs(createDistributeAlignOptions(id, data)) do
+      options[k] = v
+    end
+  end
+
+  if not hasDynamicSubGroup then
+    for k, v in pairs(OptionsPrivate.commonOptions.BorderOptions(id, data, nil, nil, 70)) do
+      options[k] = v
+    end
   end
 
   return {
     group = options,
-    position = OptionsPrivate.commonOptions.PositionOptions(id, data, nil, true, true),
+    position = OptionsPrivate.commonOptions.PositionOptions(id, data, nil, true, true, true),
   };
 end
 

@@ -43,6 +43,25 @@ f:SetScript(
 				)
 				MkQL_Main_Frame:SetBackdropColor(0, 0, 0, 0.6)
 				MkQL_Main_Frame:CreateBeautyBorder(8)
+
+				for i = 1, 50 do
+					local frame = _G["MkQL_RewardItem" .. i .. "_Btn"]
+					
+					if (frame ~= nil) then
+						local texture = _G["MkQL_RewardItem" .. i .. "_BtnIconTexture"]
+
+						if not frame.SetBackdrop then
+							Mixin(frame, BackdropTemplateMixin)
+						end
+
+						-- print(frame:GetName(),frame.type)
+						-- print(GetQuestLogItemLink('"'..frame.type..'"', i))
+
+						-- frame:CreateBeautyBorder(8)
+						texture:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+
+					end
+				end
 			end
 		end
 	end

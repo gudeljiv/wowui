@@ -279,8 +279,7 @@ local function SendChat(self, options)
   if (not options or WeakAuras.IsOptionsOpen()) then
     return
   end
-
-  Private.HandleChatAction(options.message_type, options.message, options.message_dest, options.message_channel, options.r, options.g, options.b, self, options.message_custom, nil, options.message_formaters);
+  Private.HandleChatAction(options.message_type, options.message, options.message_dest, options.message_channel, options.r, options.g, options.b, self, options.message_custom, nil, options.message_formaters, options.message_voice);
 end
 
 local function RunCode(self, func)
@@ -449,7 +448,7 @@ local function TimerTickForRegion(region)
 end
 
 local function UpdateTimerTick(self)
-  if self.triggerProvidesTimer and self.regionHasTimer then
+  if self.triggerProvidesTimer and self.regionHasTimer and self.toShow then
     if not self:GetScript("OnUpdate") then
       self:SetScript("OnUpdate", function()
         TimerTickForRegion(self)
@@ -463,6 +462,7 @@ local function UpdateTimerTick(self)
 end
 
 function WeakAuras.regionPrototype.create(region)
+  local defaultsForRegion = WeakAuras.regionTypes[region.regionType] and WeakAuras.regionTypes[region.regionType].default;
   region.SoundPlay = SoundPlay;
   region.SoundStop = SoundStop;
   region.SoundRepeatStop = SoundRepeatStop;
@@ -488,8 +488,10 @@ function WeakAuras.regionPrototype.create(region)
     region:RealClearAllPoints();
     region:ResetPosition();
   end
-  region.SetRegionAlpha = SetRegionAlpha;
-  region.GetRegionAlpha = GetRegionAlpha;
+  if (defaultsForRegion and defaultsForRegion.alpha) then
+    region.SetRegionAlpha = SetRegionAlpha;
+    region.GetRegionAlpha = GetRegionAlpha;
+  end
   region.SetAnimAlpha = SetAnimAlpha;
 
   region.SetTriggerProvidesTimer = SetTriggerProvidesTimer
@@ -507,9 +509,7 @@ function WeakAuras.regionPrototype.modify(parent, region, data)
   region.subRegionEvents:ClearSubscribers()
 
   local defaultsForRegion = WeakAuras.regionTypes[data.regionType] and WeakAuras.regionTypes[data.regionType].default;
-  if (defaultsForRegion and defaultsForRegion.alpha) then
-    region:SetRegionAlpha(data.alpha);
-  end
+
   if region.SetRegionAlpha then
     region:SetRegionAlpha(data.alpha)
   end
@@ -763,6 +763,8 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
       Private.RunConditions(region, uid, true)
       region.subRegionEvents:Notify("PreHide")
       region:Hide();
+      region.states = nil
+      region.state = nil
       if (cloneId) then
         Private.ReleaseClone(region.id, cloneId, data.regionType);
         parent:RemoveChild(id, cloneId)
@@ -778,6 +780,8 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
       Private.RunConditions(region, uid, true)
       region.subRegionEvents:Notify("PreHide")
       region:Hide();
+      region.states = nil
+      region.state = nil
       if (cloneId) then
         Private.ReleaseClone(region.id, cloneId, data.regionType);
       end
@@ -802,6 +806,7 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
       end
 
       UnRegisterForFrameTick(region)
+      region:UpdateTimerTick()
     end
     function region:Expand()
       if (region.toShow) then
@@ -814,7 +819,6 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
 
       region.subRegionEvents:Notify("PreShow")
 
-      region.justCreated = nil;
       Private.ApplyFrameLevel(region)
       region:Show();
       Private.PerformActions(data, "start", region);
@@ -848,6 +852,7 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
       end
 
       UnRegisterForFrameTick(region)
+      region:UpdateTimerTick()
     end
     function region:Expand()
       if data.anchorFrameType == "SELECTFRAME"
@@ -863,7 +868,6 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
       end
       region.toShow = true;
 
-      region.justCreated = nil;
       if(region.PreShow) then
         region:PreShow();
       end
@@ -891,6 +895,16 @@ function WeakAuras.regionPrototype.AddExpandFunction(data, region, cloneId, pare
   end
   if not region.Expand then
     function region:Expand() end
+  end
+  if not region.Pause then
+    function region:Pause()
+      self.paused = true
+    end
+  end
+  if not region.Resume then
+    function region:Resume()
+      self.paused = nil
+    end
   end
 end
 

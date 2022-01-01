@@ -118,3 +118,4 @@ nBuff: enabled
 nMainbar: enabled
 nMinimap: enabled
 xVermin: enabled
+AutoRoll: disabled

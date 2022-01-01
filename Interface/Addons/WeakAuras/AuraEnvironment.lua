@@ -3,7 +3,6 @@ local AddonName, Private = ...
 
 local WeakAuras = WeakAuras
 local L = WeakAuras.L
-local prettyPrint = WeakAuras.prettyPrint
 
 local LCD
 if WeakAuras.IsClassic() then
@@ -90,7 +89,7 @@ WeakAuras.WA_ClassColorName = WA_ClassColorName
 -- UTF-8 Sub is pretty commonly needed
 local WA_Utf8Sub = function(input, size)
   local output = ""
-  if not input then
+  if type(input) ~= "string" then
     return output
   end
   local i = 1
@@ -169,10 +168,14 @@ local blockedFunctions = {
   GuildDisband = true,
   GuildUninvite = true,
   securecall = true,
+  DeleteCursorItem = true,
 }
 
 local blockedTables = {
   SlashCmdList = true,
+  SendMailMailButton = true,
+  SendMailMoneyGold = true,
+  MailFrameTab2 = true,
 }
 
 local aura_environments = {}
@@ -325,13 +328,11 @@ local FakeWeakAurasMixin = {
     -- to discuss these. But Auras have no purpose for calling these
     Add = true,
     AddMany = true,
-    AddManyFromAddons = true,
     Delete = true,
     HideOptions = true,
     Rename = true,
     NewAura = true,
     OptionsFrame = true,
-    RegisterAddon = true,
     RegisterDisplay = true,
     RegisterRegionOptions = true,
     RegisterSubRegionOptions = true,
@@ -342,26 +343,20 @@ local FakeWeakAurasMixin = {
     ShowOptions = true,
     -- Note these shouldn't exist in the WeakAuras namespace, but moving them takes a bit of effort,
     -- so for now just block them and clean them up later
-    CollisionResolved = true,
     ClearAndUpdateOptions = true,
     CloseCodeReview = true,
     CloseImportExport = true,
     CreateTemplateView = true,
-    DisplayToString = true,
     FillOptions = true,
     FindUnusedId = true,
     GetMoverSizerId = true,
     GetDisplayButton = true,
     Import = true,
     NewDisplayButton = true,
-    NewAura = true,
-    OpenTriggerTemplate = true,
     OpenCodeReview = true,
     PickDisplay = true,
     SetMoverSizer = true,
     SetImporting = true,
-    SortDisplayButtons = true,
-    ShowOptions = true,
     ToggleOptions = true,
     UpdateDisplayButton = true,
     UpdateGroupOrders = true,
@@ -384,9 +379,7 @@ local FakeWeakAurasMixin = {
     frames = true,
     loadFrame = true,
     unitLoadFrame = true,
-    importDisplayButtons = true,
     loaded = true
-
   },
   override = {
     me = GetUnitName("player", true),
@@ -424,9 +417,11 @@ local exec_env = setmetatable({},
     elseif k == "aura_env" then
       return current_aura_env
     elseif blockedFunctions[k] then
-      return blocked
+      blocked(k)
+      return function() end
     elseif blockedTables[k] then
-      return blocked()
+      blocked(k)
+      return {}
     elseif overridden[k] then
       return overridden[k]
     else
@@ -452,7 +447,7 @@ function WeakAuras.LoadFunction(string, id, inTrigger)
   if function_cache[string] then
     return function_cache[string]
   else
-    local loadedFunction, errorString = loadstring("--[==[ Error in '" .. (id or "Unknown") .. (inTrigger and ("':'".. inTrigger) or "") .."' ]==] " .. string)
+    local loadedFunction, errorString = loadstring(string, "Error in: " .. (id or "Unknown") .. (inTrigger and ("':'".. inTrigger) or ""))
     if errorString then
       print(errorString)
     else

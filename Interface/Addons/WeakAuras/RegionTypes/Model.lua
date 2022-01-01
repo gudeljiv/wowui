@@ -80,6 +80,7 @@ local regionFunctions = {
 local function create(parent)
   -- Main region
   local region = CreateFrame("FRAME", nil, UIParent);
+  region.regionType = "model"
   region:SetMovable(true);
   region:SetResizable(true);
   region:SetMinResize(1, 1);
@@ -106,9 +107,7 @@ end
 local poolOldApi = CreateObjectPool(CreateModel)
 local poolNewApi = CreateObjectPool(CreateModel)
 
-local function AcquireModel(region, data)
-  local pool = data.api and poolNewApi or poolOldApi
-  local model = pool:Acquire()
+local function ConfigureModel(region, model, data)
   model.api = data.api
 
   model:ClearAllPoints()
@@ -134,7 +133,7 @@ local function AcquireModel(region, data)
     model:RegisterEvent("UNIT_MODEL_CHANGED");
 
     local unit
-    if WeakAuras.IsClassic() then
+    if not WeakAuras.IsRetail() then
       unit = data.model_path
     else
       unit = data.model_fileId
@@ -163,17 +162,17 @@ local function AcquireModel(region, data)
   end
 
   -- Enable model animation
-  if(data.advance) then
-    local elapsed = 0;
-    model:SetScript("OnUpdate", function(self, elaps)
-      Private.StartProfileSystem("model");
-      elapsed = elapsed + (elaps * 1000);
-      model:SetSequenceTime(data.sequence, elapsed);
-      Private.StopProfileSystem("model");
-    end)
+  if(data.advance and model:HasAnimation(data.sequence)) then
+    model:SetAnimation(data.sequence)
   else
-    model:SetScript("OnUpdate", nil)
+    model:SetAnimation(0)
   end
+end
+
+local function AcquireModel(region, data)
+  local pool = data.api and poolNewApi or poolOldApi
+  local model = pool:Acquire()
+  ConfigureModel(region, model, data)
   return model
 end
 
@@ -287,6 +286,8 @@ local function modify(parent, region, data)
   function region:PreShow()
     if not region.model then
       region.model = AcquireModel(self, data)
+    else
+      ConfigureModel(region, region.model, data)
     end
   end
 

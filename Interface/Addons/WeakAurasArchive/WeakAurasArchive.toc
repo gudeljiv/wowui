@@ -1,6 +1,7 @@
-## Interface: 11305
+## Interface: 11400
 ## Title: WeakAuras Archive
 ## Author: The WeakAuras Team
+## Version: 3.7.3
 ## LoadOnDemand: 1
 ## SavedVariables: WeakAurasArchive
 ## Dependencies: WeakAuras

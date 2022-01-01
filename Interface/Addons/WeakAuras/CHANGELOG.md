@@ -1,50 +1,56 @@
-# [3.0.5](https://github.com/WeakAuras/WeakAuras2/tree/3.0.5) (2020-10-25)
+# [3.7.3](https://github.com/WeakAuras/WeakAuras2/tree/3.7.3) (2021-11-02)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/3.0.4...3.0.5)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/3.7.2...3.7.3)
 
 ## Highlights
 
- - A few small new features and bug fixes 
+ TOC Update for Retail and a few new features/additions
+
+Remove ExternalAddons API as it was broken and unused
+
+More preparation for Nested Groups 
 
 ## Commits
 
-Anssi Mäkinen (1):
+Casey Raethke (1):
 
-- Fix leaked global in Character Stats trigger
+- Add UNIT_RESISTANCES to Character Stats trigger
 
-InfusOnWoW (15):
+InfusOnWoW (22):
 
-- Create less PlayerModels
-- Fix ModelPicker for BarModels and multi selection
-- Fix TexturePicker for Ticks + multi select
-- Conditions: Fix recheck time scheduling with Else if
-- Fixes remaining time check for Weapon Enchant trigger
-- Remove the capping of alpha while Options are open
-- Cooldown Progress: Rename Stacks to Charges
-- Weapon Enchant trigger: Default to Question Mark icon
-- Fix conditions listing too many variables
-- Fix error in Spell Known trigger
-- Add One handed Axes to weapon types
-- Fix bar model's alpha bein overwritten by PreShowModel
-- Fix Spell Activation Overlay trigger
-- Rename a few anchor options
-- Bufftrigger 2: Fix total stack count
+- Remove accidental debug print
+- Ensure that on drag start we select the dragged aura
+- Document that DuplicateAura does not copy children
+- Remove unused parameter from internal function
+- Simplify filterAnimPresets
+- Simplify code around deletion of dynamic groups
+- Remove reference to dead regionType "timer"
+- PickDisplay: Adjust for nested groups
+- Recursively add parents, grandparents, etc
+- Prepare group for nested
+- Skip sub groups in shift multi selection
+- Add Spirit to Character Stats
+- Use .data.id instead of GetTitle()
+- ExternalAddons: Remove it
+- BCC: Fix combo points not updating on target change
+- AuraBar: Fix SetInverse not inversing overlays
+- Fix reseting of x/y offset on auras being moved into a dynamic group
+- Swing Timer: Note that the trigger is not correct in BCC
+- Fix conditions not being unapplied correctly in collapse
+- Add support for Charged Combo Points with Kyrian Legendary
+- Text Replacements: Add Custom Variables with descriptions
+- Try to preserve names on importing
 
-Stanzilla (6):
+Lynn (1):
 
-- Don't try to load covenant stuff on classic
-- Add new feature indicator to item type equipped load condition
-- Add new feature indicator for charged combo points
-- Add new feature indicator to covenant load option
-- Add Covenant Load Option (#2615)
-- Update bug_report.md
+- TTS: Save value.message_voice as number instead of string
 
-mrbuds (6):
+Stanzilla (1):
 
-- remove debug print
-- set default animation to "loop" instead of "progress
-- parse StopMotion texture settings from filename implement #2356 format of filename has to be "name.x[1-9]+y[1-9]+f[1-9]+.(tga|blp)" where x is number of rows, y number of columns, and f number of frames
-- add spell activation overlays added with wow 8.1.5
-- fix nil error when using "Class Colors" addon CUSTOM_CLASS_COLORS table does not have the method WrapTextInColorCode
-- better fix for omnicc error
+- Update TOC for Retail Patch 9.1.5
+
+mrbuds (2):
+
+- enable TTS on classic_era and fix error for tbc
+- swing timer: fix spell that reset swing not starting swing timer by waiting a frame after the spell so "isAttacking" has correct state
 

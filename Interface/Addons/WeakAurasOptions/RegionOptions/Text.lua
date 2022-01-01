@@ -247,6 +247,14 @@ local function createOptions(id, data)
       }
     },
 
+    useTooltip = {
+      type = "toggle",
+      width = WeakAuras.normalWidth,
+      name = L["Tooltip on Mouseover"],
+      hidden = function() return not OptionsPrivate.Private.CanHaveTooltip(data) end,
+      order = 51
+    },
+
     endHeader = {
       type = "header",
       order = 100,
@@ -258,17 +266,12 @@ local function createOptions(id, data)
                           37, function() return not OptionsPrivate.Private.ContainsCustomPlaceHolder(data.displayText) end, {"customText"}, false);
 
   -- Add Text Format Options
-  local input = data.displayText
   local hidden = function()
     return OptionsPrivate.IsCollapsed("format_option", "text", "displayText", true)
   end
 
   local setHidden = function(hidden)
     OptionsPrivate.SetCollapsed("format_option", "text", "displayText", hidden)
-  end
-
-  local get = function(key)
-    return data["displayText_format_" .. key]
   end
 
   local order = 12
@@ -286,7 +289,20 @@ local function createOptions(id, data)
     options["displayText_format_" .. key] = option
   end
 
-  OptionsPrivate.AddTextFormatOption(input, true, get, addOption, hidden, setHidden)
+  local total, index = 0, 1
+  for child in OptionsPrivate.Private.TraverseLeafsOrAura(data) do
+    total = total + 1
+  end
+
+  for child in OptionsPrivate.Private.TraverseLeafsOrAura(data) do
+    local get = function(key)
+      return child["displayText_format_" .. key]
+    end
+    local input = child.displayText
+    OptionsPrivate.AddTextFormatOption(input, true, get, addOption, hidden, setHidden, index, total)
+    index = index + 1
+  end
+
   addOption("footer", {
     type = "description",
     name = "",

@@ -13,26 +13,6 @@ local function createOptions(parentData, data, index, subIndex)
   local options = {
     __title = L["Tick %s"]:format(subIndex),
     __order = 1,
-    __up = function()
-      if (OptionsPrivate.Private.ApplyToDataOrChildData(parentData, OptionsPrivate.MoveSubRegionUp, index, "subtick")) then
-        WeakAuras.ClearAndUpdateOptions(parentData.id)
-      end
-    end,
-    __down = function()
-      if (OptionsPrivate.Private.ApplyToDataOrChildData(parentData, OptionsPrivate.MoveSubRegionDown, index, "subtick")) then
-        WeakAuras.ClearAndUpdateOptions(parentData.id)
-      end
-    end,
-    __duplicate = function()
-      if (OptionsPrivate.Private.ApplyToDataOrChildData(parentData, OptionsPrivate.DuplicateSubRegion, index, "subtick")) then
-        WeakAuras.ClearAndUpdateOptions(parentData.id)
-      end
-    end,
-    __delete = function()
-      if (OptionsPrivate.Private.ApplyToDataOrChildData(parentData, WeakAuras.DeleteSubRegion, index, "subtick")) then
-        WeakAuras.ClearAndUpdateOptions(parentData.id)
-      end
-    end,
     tick_visible = {
       type = "toggle",
       width = WeakAuras.normalWidth,
@@ -156,22 +136,15 @@ local function createOptions(parentData, data, index, subIndex)
       type = "input",
       name = L["Texture"],
       order = 11,
-      width = WeakAuras.doubleWidth,
+      width = WeakAuras.doubleWidth - 0.15,
       disabled = function() return not data.use_texture end,
-      hidden = hiddentickextras,
-    },
-    tick_desaturate = {
-      type = "toggle",
-      width = WeakAuras.normalWidth,
-      name = L["Desaturate"],
-      order = 12,
       hidden = hiddentickextras,
     },
     texture_chooser = {
       type = "execute",
       name = L["Choose"],
-      width = WeakAuras.normalWidth,
-      order = 13,
+      width = 0.15,
+      order = 11.5,
       func = function()
         OptionsPrivate.OpenTexturePicker(parentData, {
           "subRegions", index
@@ -182,6 +155,17 @@ local function createOptions(parentData, data, index, subIndex)
         }, OptionsPrivate.Private.texture_types);
       end,
       disabled = function() return not data.use_texture end,
+      hidden = hiddentickextras,
+      imageWidth = 24,
+      imageHeight = 24,
+      control = "WeakAurasIcon",
+      image = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\browse",
+    },
+    tick_desaturate = {
+      type = "toggle",
+      width = WeakAuras.doubleWidth,
+      name = L["Desaturate"],
+      order = 12,
       hidden = hiddentickextras,
     },
     tick_rotation = {
@@ -231,6 +215,9 @@ local function createOptions(parentData, data, index, subIndex)
       }
     }
   }
+
+  OptionsPrivate.AddUpDownDeleteDuplicate(options, parentData, index, "subtick")
+
   return options
 end
 

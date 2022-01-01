@@ -229,6 +229,15 @@ showCodeButton:SetPoint("BOTTOMLEFT", 8, 8)
 showCodeButton:SetText(L["Show Code"])
 showCodeButton:SetWidth(90)
 
+local urlEditBox = CreateFrame("EDITBOX", "WeakAurasTooltipUrlEditBox", buttonAnchor)
+urlEditBox:SetWidth(250)
+urlEditBox:SetHeight(34)
+urlEditBox:SetFont(STANDARD_TEXT_FONT, 12)
+urlEditBox:SetPoint("TOPLEFT", 8, -57)
+urlEditBox:SetScript("OnMouseUp", function() urlEditBox:HighlightText() end)
+urlEditBox:SetScript("OnChar", function() urlEditBox:SetText(urlEditBox.text) urlEditBox:HighlightText() end)
+urlEditBox:SetAutoFocus(false)
+
 local checkButtons, radioButtons, keyToButton, pendingData = {}, {}, {}, {}
 
 for _, key in pairs(Private.internal_fields) do
@@ -320,7 +329,7 @@ local function Update(data, diff)
   return data
 end
 
-local function install(data, oldData, patch, mode, isParent)
+local function install(data, oldData, patch, mode, isParent, originalNames)
   -- munch the provided data and add, update, or delete as appropriate
   -- return the data which the SV knows about afterwards (if there is any)
   local installedUID, imported
@@ -383,10 +392,30 @@ local function install(data, oldData, patch, mode, isParent)
     oldData.preferToUpdate = true
     installedUID = oldData.uid
     imported = data
+    originalNames[installedUID] = originalNames[data.uid]
+    originalNames[data.uid] = nil
   end
   -- if at this point, then some change has been made in the db. Update History to reflect the change
   Private.SetHistory(installedUID, imported, "import")
   return Private.GetDataByUID(installedUID)
+end
+
+local function RenameToOriginalNames(originalNames)
+  local changed = false
+  for uid, originalName in pairs(originalNames) do
+    local aura = WeakAuras.GetData(originalName)
+    if not aura then
+      -- Rename
+      local data = Private.GetDataByUID(uid)
+      WeakAuras.Rename(data, originalName)
+      originalNames[uid] = nil
+      changed = true
+    elseif  aura.uid == uid then
+      -- Already the correct name
+      originalNames[uid] = nil
+    end
+  end
+  return changed
 end
 
 local function importPendingData()
@@ -404,7 +433,9 @@ local function importPendingData()
     thumbnailAnchor.currentThumbnail = nil
   end
   if imports and Private.LoadOptions() then
-    WeakAuras.ShowOptions()
+    if not WeakAuras.IsOptionsOpen() then
+      WeakAuras.OpenOptions()
+    end
   else
     return
   end
@@ -414,6 +445,16 @@ local function importPendingData()
   -- import parent/single aura
   local data, oldData, patch = imports[0], old[0], diffs[0]
   data.parent = nil
+
+  -- Setup for preserving names.
+  -- Importing can rename auras, and due to deletion or cross-renaming, importing also frees names.
+  -- So after importing we try to rename again
+  local originalNames = {}
+  for i = 0, #imports do
+    if imports[i].uid then
+      originalNames[imports[i].uid] = imports[i].id
+    end
+  end
   -- handle sortHybridTable
   local hybridTables
   if (data and data.sortHybridTable) or (mode ~= 1 and oldData and oldData.sortHybridTable) then
@@ -429,7 +470,7 @@ local function importPendingData()
   if oldData then
     oldData.authorMode = nil
   end
-  local installedData = {[0] = install(data, oldData, patch, mode, true)}
+  local installedData = {[0] = install(data, oldData, patch, mode, true, originalNames)}
   WeakAuras.NewDisplayButton(installedData[0])
   coroutine.yield()
 
@@ -472,7 +513,7 @@ local function importPendingData()
       if oldData then
         oldData.authorMode = nil
       end
-      local childData = install(data, oldData, patch, mode)
+      local childData = install(data, oldData, patch, mode, false, originalNames)
       if childData then
         tinsert(installedData, childData)
         if hybridTables then
@@ -582,8 +623,12 @@ local function importPendingData()
     WeakAuras.UpdateGroupOrders(parentData)
     WeakAuras.UpdateDisplayButton(parentData)
     WeakAuras.ClearAndUpdateOptions(parentData.id)
-    WeakAuras.SortDisplayButtons()
+    Private.callbacks:Fire("Import")
   end
+
+  -- Now try to rename auras to their originalNames
+  while(RenameToOriginalNames(originalNames)) do end
+
   WeakAuras.SetImporting(false)
   return WeakAuras.PickDisplay(installedData[0].id)
 end
@@ -740,14 +785,14 @@ function StringToTable(inString, fromChat)
   end
   return deserialized
 end
+Private.StringToTable = StringToTable
 
-function WeakAuras.DisplayToString(id, forChat)
+function Private.DisplayToString(id, forChat)
   local data = WeakAuras.GetData(id);
   if(data) then
     data.uid = data.uid or GenerateUniqueID()
     local transmitData = CompressDisplay(data);
-    local children = data.controlledChildren;
-       local transmit = {
+    local transmit = {
       m = "d",
       d = transmitData,
       v = 1421, -- Version of Transmisson, won't change anymore.
@@ -760,22 +805,24 @@ function WeakAuras.DisplayToString(id, forChat)
         transmit.a[v] = WeakAuras.spellCache.GetIcon(v);
       end
     end
-    if(children) then
+    if(data.controlledChildren) then
       transmit.c = {};
       local uids = {}
-      for index,childID in pairs(children) do
-        local childData = WeakAuras.GetData(childID);
-        if(childData) then
-          if childData.uid then
-            if uids[childData.uid] then
-              childData.uid = GenerateUniqueID()
-            else
-              uids[childData.uid] = true
-            end
+      local index = 1
+      for child in Private.TraverseAllChildren(data) do
+        if child.uid then
+          if uids[child.uid] then
+            child.uid = GenerateUniqueID()
           else
-            childData.uid = GenerateUniqueID()
+            uids[child.uid] = true
           end
-          transmit.c[index] = CompressDisplay(childData);
+        else
+          child.uid = GenerateUniqueID()
+        end
+        transmit.c[index] = CompressDisplay(child);
+        index = index + 1
+        if child.controlledChildren then
+          transmit.v = 2000
         end
       end
     end
@@ -839,6 +886,15 @@ function Private.RefreshTooltipButtons()
     showCodeButton:Hide()
   else
     showCodeButton:Show()
+  end
+  urlEditBox:Enable()
+  if pendingData.url then
+    urlEditBox:Show()
+    urlEditBox.text = pendingData.url
+    urlEditBox:SetText(pendingData.url)
+    urlEditBox:HighlightText(0, 0)
+  else
+    urlEditBox:Hide()
   end
   if InCombatLockdown() then
     importButton:SetText(L["In Combat"])
@@ -945,157 +1001,58 @@ function ShowTooltip(lines, linesFromTop, activeCategories)
   end
 end
 
+local function notEmptyString(str)
+  return str and str ~= "" and string.find(str, "%S")
+end
+
+local function addCode(codes, text, code, ...)
+  -- The 4th paramter is a "check" if the code is active
+  -- The following line let's distinguish between addCode(a, b, c, nil) and addCode(a, b, c)
+  if (select("#", ...) > 0) then
+    if not select(1, ...) then
+      return
+    end
+  end
+
+  if code and notEmptyString(code) then
+    local t = {};
+    t.text = text;
+    t.value = text
+    t.code = code
+    tinsert(codes, t);
+  end
+end
+
 -- TODO: Should savedvariables data ever be refactored, then shunting the custom scripts
 -- into their own special subtable will allow us to simplify the scam check significantly.
 local function checkTrigger(codes, id, trigger, untrigger)
-  if (not trigger) then return end;
-  local t = {};
-  if (trigger.custom) then
-    t.text = L["%s Trigger Function"]:format(id);
-    t.value = t.text;
-    t.code = trigger.custom;
-    tinsert(codes, t);
-  end
+  if not trigger or trigger.type ~= "custom" then return end;
 
-  if (untrigger and untrigger.custom) then
-    t = {}
-    t.text = L["%s Untrigger Function"]:format(id);
-    t.value = t.text;
-    t.code = untrigger.custom;
-    tinsert(codes, t);
-  end
+  addCode(codes, L["%s Trigger Function"]:format(id), trigger.custom)
 
-  if (trigger.customDuration) then
-    t = {}
-    t.text = L["%s Duration Function"]:format(id);
-    t.value = t.text;
-    t.code = trigger.customDuration
-    tinsert(codes, t);
-  end
-
-  if (trigger.customName) then
-    t = {}
-    t.text = L["%s Name Function"]:format(id);
-    t.value = t.text;
-    t.code = trigger.customName
-    tinsert(codes, t);
-  end
-
-  if (trigger.customIcon) then
-    t = {}
-    t.text = L["%s Icon Function"]:format(id);
-    t.value = t.text;
-    t.code = trigger.customIcon
-    tinsert(codes, t);
-  end
-
-  if (trigger.customTexture) then
-    t = {}
-    t.text = L["%s Texture Function"]:format(id);
-    t.value = t.text;
-    t.code = trigger.customTexture
-    tinsert(codes, t);
-  end
-
-  if (trigger.customStacks) then
-    t = {}
-    t.text = L["%s Stacks Function"]:format(id);
-    t.value = t.text;
-    t.code = trigger.customStacks
-    tinsert(codes, t);
-  end
-end
-
-local function checkCustom(codes, id, base)
-  if (not base) then return end
-  if (base.custom) then
-    local t = {};
-    t.text = id;
-    t.value = id;
-    t.code = base.custom
-    tinsert(codes, t);
-  end
-end
-
-local function checkActionCustomText(codes, id, base)
-  if (not base) then return end
-  if (base.do_message and base.message_custom) then
-    local t = {};
-    t.text = id;
-    t.value = id;
-    t.code = base.message_custom
-    tinsert(codes, t);
+  if trigger.custom_type == "stateupdate" then
+    addCode(codes, L["%s Custom Variables"]:format(id), trigger.customVariables, trigger.custom_type == "stateupdate")
+  else
+    addCode(codes, L["%s Untrigger Function"]:format(id), untrigger and untrigger.custom)
+    addCode(codes, L["%s Duration Function"]:format(id), trigger.customDuration)
+    addCode(codes, L["%s Name Function"]:format(id), trigger.customName)
+    addCode(codes, L["%s Icon Function"]:format(id), trigger.customIcon)
+    addCode(codes, L["%s Texture Function"]:format(id),trigger.customTexture)
+    addCode(codes, L["%s Stacks Function"]:format(id), trigger.customStacks)
+    for i = 1, 7 do
+      local property = "customOverlay" .. i;
+      addCode(codes, L["%s Overlay Function"]:format(id), trigger[property])
+    end
   end
 end
 
 local function checkAnimation(codes, id, a)
-  if (not a) then return end
-  if (a.alphaType == "custom" and a.use_alpha and a.alphaFunc) then
-    local t = {};
-    t.text = L["%s - Alpha Animation"]:format(id);
-    t.value = t.text;
-    t.code = a.alphaFunc;
-    tinsert(codes, t);
-  end
-
-  if (a.translateType == "custom" and a.use_translate and a.translateFunc) then
-    local t = {};
-    t.text = L["%s - Translate Animation"]:format(id);
-    t.value = t.text;
-    t.code = a.translateFunc;
-    tinsert(codes, t);
-  end
-
-  if (a.scaleType == "custom" and a.use_scale and a.scaleFunc) then
-    local t = {};
-    t.text = L["%s - Scale Animation"]:format(id);
-    t.value = t.text;
-    t.code = a.scaleFunc;
-    tinsert(codes, t);
-  end
-
-  if (a.rotateType == "custom" and a.use_rotate and a.rotateFunc) then
-    local t = {};
-    t.text = L["%s - Rotate Animation"]:format(id);
-    t.value = t.text;
-    t.code = a.rotateFunc;
-    tinsert(codes, t);
-  end
-
-  if (a.colorType == "custom" and a.use_color and a.colorFunc) then
-    local t = {};
-    t.text = L["%s - Color Animation"]:format(id);
-    t.value = t.text;
-    t.code = a.colorFunc
-    tinsert(codes, t);
-  end
-end
-
-local function checkTriggerLogic(codes, id, logic)
-  if (not logic) then return end
-  local t = {};
-  t.text = id;
-  t.value = id;
-  t.code = logic;
-  tinsert(codes, t);
-end
-
-local function checkText(codes, id, customText)
-  if (not customText) then return end
-  local t = {};
-  t.text = id;
-  t.value = id;
-  t.code = customText;
-  tinsert(codes, t);
-end
-
-local function checkCustomCondition(codes, id, customText)
-  if (not customText) then return end
-  local t = {};
-  t.text = id;
-  t.value = id;
-  t.code = customText;
-  tinsert(codes, t);
+  if not a or a.type ~= "custom" then return end
+  addCode(codes, L["%s - Alpha Animation"]:format(id), a.alphaFunc, a.alphaType == "custom" and a.use_alpha)
+  addCode(codes, L["%s - Translate Animation"]:format(id), a.translateFunc, a.translateType == "custom" and a.use_translate)
+  addCode(codes, L["%s - Scale Animation"]:format(id), a.scaleFunc, a.scaleType == "custom" and a.use_scale)
+  addCode(codes, L["%s - Rotate Animation"]:format(id), a.rotateFunc, a.rotateType == "custom" and a.use_rotate)
+  addCode(codes, L["%s - Color Animation"]:format(id), a.colorFunc, a.colorType == "custom" and a.use_color)
 end
 
 local function scamCheck(codes, data)
@@ -1103,12 +1060,22 @@ local function scamCheck(codes, data)
     checkTrigger(codes, L["%s - %i. Trigger"]:format(data.id, i), v.trigger, v.untrigger);
   end
 
+  addCode(codes,  L["%s - Trigger Logic"]:format(data.id), data.triggers.customTriggerLogic, data.triggers.disjunctive == "custom");
+  addCode(codes, L["%s - Custom Text"]:format(data.id), data.customText)
+  addCode(codes, L["%s - Custom Anchor"]:format(data.id), data.customAnchor, data.anchorFrameType == "CUSTOM")
+
   if (data.actions) then
-    checkCustom(codes, L["%s - Init Action"]:format(data.id), data.actions.init);
-    checkCustom(codes, L["%s - Start Action"]:format(data.id), data.actions.start);
-    checkCustom(codes, L["%s - Finish Action"]:format(data.id), data.actions.finish);
-    checkActionCustomText(codes, L["%s - Start Custom Text"]:format(data.id), data.actions.start);
-    checkActionCustomText(codes, L["%s - Finish Custom Text"]:format(data.id), data.actions.finish);
+    if data.actions.init then
+      addCode(codes, L["%s - Init Action"]:format(data.id), data.actions.init.custom, data.actions.init.do_custom)
+    end
+    if data.actions.start then
+      addCode(codes, L["%s - Start Action"]:format(data.id), data.actions.start.custom, data.actions.start.do_custom)
+      addCode(codes, L["%s - Start Custom Text"]:format(data.id), data.actions.start.message_custom, data.actions.start.do_message)
+    end
+    if data.actions.finish then
+      addCode(codes, L["%s - Finish Action"]:format(data.id), data.actions.finish.custom, data.actions.finish.do_custom)
+      addCode(codes, L["%s - Finish Custom Text"]:format(data.id), data.actions.finish.message_custom, data.actions.finish.do_message)
+    end
   end
 
   if (data.animation) then
@@ -1117,20 +1084,17 @@ local function scamCheck(codes, data)
     checkAnimation(codes, L["%s - Finish"]:format(data.id), data.animation.finish);
   end
 
-  if(data.triggers.customTriggerLogic) then
-    checkTriggerLogic(codes,  L["%s - Trigger Logic"]:format(data.id), data.triggers.customTriggerLogic);
-  end
-
-  if(data.customText) then
-    checkText(codes, L["%s - Custom Text"]:format(data.id), data.customText);
-  end
+  addCode(codes, L["%s - Custom Grow"]:format(data.id), data.customGrow, data.regionType == "dynamicgroup" and data.grow == "CUSTOM")
+  addCode(codes, L["%s - Custom Sort"]:format(data.id), data.customSort, data.regionType == "dynamicgroup" and data.sort == "custom")
+  addCode(codes, L["%s - Custom Anchor"]:format(data.id), data.customAnchorPerUnit,
+          data.regionType == "dynamicgroup" and data.grow ~= "CUSTOM" and data.useAnchorPerUnit and data.anchorPerUnit == "CUSTOM")
 
   if (data.conditions) then
     for _, condition in ipairs(data.conditions) do
-      if (condition) then
+      if (condition and condition.changes) then
         for _, property in ipairs(condition.changes) do
           if ((property.property == "chat" or property.property == "customcode") and type(property.value) == "table" and property.value.custom) then
-            checkCustomCondition(codes, L["%s - Condition Custom Chat"]:format(data.id), property.value.custom);
+            addCode(codes, L["%s - Condition Custom Chat"]:format(data.id), property.value.custom);
           end
         end
       end
@@ -1210,7 +1174,6 @@ local function diff(ours, theirs)
 end
 
 local function findMatch(data, children)
-
   local function isParentMatch(old, new)
     if old.parent then return end
     if old.uid and new.uid then
@@ -1252,10 +1215,22 @@ local function findMatch(data, children)
   return oldParent
 end
 
-local function MatchInfo(data, children, target)
-  -- match the parent/single aura (if no children)
-  local oldParent = target or findMatch(data, children)
-  if not oldParent then return nil end
+local function MatchInfo(data, children, oldParent)
+  if oldParent then
+    -- Either both have children, or both don't have
+    if type(children) ~= type(oldParent.controlledChildren) then
+      return nil
+    end
+  else
+    -- match the parent/single aura (if no children)
+    oldParent = findMatch(data, children)
+  end
+
+  if not oldParent then
+    return nil
+  end
+
+
   -- setup
   local info = {
     mode = 1,
@@ -1434,6 +1409,7 @@ local function ShowDisplayTooltip(data, children, matchInfo, icon, icons, import
   local highestVersion = data.internalVersion or 1;
   local hasDescription = data.desc and data.desc ~= "";
   local hasUrl = data.url and data.url ~= "";
+  pendingData.url = hasUrl and data.url
   local hasVersion = (data.semver and data.semver ~= "") or (data.version and data.version ~= "");
   local tocversion = data.tocversion;
 
@@ -1441,12 +1417,12 @@ local function ShowDisplayTooltip(data, children, matchInfo, icon, icons, import
     tinsert(tooltip, {1, " "});
   end
 
-  if hasDescription then
-    tinsert(tooltip, {1, "\""..data.desc.."\"", 1, 0.82, 0, 1});
+  if hasUrl then
+    tinsert(tooltip, {1, " "});
   end
 
-  if hasUrl then
-    tinsert(tooltip, {1, L["Source: "] .. data.url, 1, 0.82, 0, 1});
+  if hasDescription then
+    tinsert(tooltip, {1, "\""..data.desc.."\"", 1, 0.82, 0, 1});
   end
 
   if hasVersion then
@@ -1553,12 +1529,8 @@ local function ShowDisplayTooltip(data, children, matchInfo, icon, icons, import
               end
             elseif(trigger.type == "aura2") then
               tinsert(tooltip, {2, L["Trigger:"], L["Aura"], 1, 1, 1, 1, 1, 1});
-            elseif(trigger.type == "event" or trigger.type == "status") then
-              if(trigger.type == "event") then
-                tinsert(tooltip, {2, L["Trigger:"], (Private.event_types[trigger.event] or L["Undefined"]), 1, 1, 1, 1, 1, 1});
-              else
-                tinsert(tooltip, {2, L["Trigger:"], (Private.status_types[trigger.event] or L["Undefined"]), 1, 1, 1, 1, 1, 1});
-              end
+            elseif(Private.category_event_prototype[trigger.type]) then
+              tinsert(tooltip, {2, L["Trigger:"], (Private.event_prototypes[trigger.event].name or L["Undefined"]), 1, 1, 1, 1, 1, 1});
               if(trigger.event == "Combat Log" and trigger.subeventPrefix and trigger.subeventSuffix) then
                 tinsert(tooltip, {2, L["Message type:"], (Private.subevent_prefix_types[trigger.subeventPrefix] or L["Undefined"]).." "..(Private.subevent_suffix_types[trigger.subeventSuffix] or L["Undefined"]), 1, 1, 1, 1, 1, 1});
               end
@@ -1625,7 +1597,7 @@ local function ShowDisplayTooltip(data, children, matchInfo, icon, icons, import
   if regionOptions[regionType] then
     local ok, thumbnail = pcall(regionOptions[regionType].acquireThumbnail, thumbnailAnchor, data);
     if not ok then
-      error("Error creating thumbnail", 2)
+      error(string.format("Error creating thumbnail for %s %s", regionType, thumbnail), 2)
     end
     thumbnailAnchor.currentThumbnail = thumbnail
     thumbnailAnchor.currentThumbnailType = regionType
@@ -1648,7 +1620,7 @@ local function ShowDisplayTooltip(data, children, matchInfo, icon, icons, import
 end
 
 function WeakAuras.Import(inData, target)
-  local data, children, icon, icons
+  local data, children, icon, icons, version
   if type(inData) == 'string' then
     -- encoded data
     local received = StringToTable(inData, true)
@@ -1664,18 +1636,28 @@ function WeakAuras.Import(inData, target)
       children = received.c
       icon = received.i
       icons = received.a
+      version = received.v
     end
   elseif type(inData.d) == 'table' then
     data = inData.d
     children = inData.c
     icon = inData.i
     icons = inData.a
+    version = inData.v
   end
   if type(data) ~= "table" then
     return nil, "Invalid import data."
   end
+  if version > 1999 then
+    ShowTooltip{
+      {1, "WeakAuras", 0.5333, 0, 1},
+      {1, L["This import requires a newer WeakAuras version."], 1, 0, 0, 1}
+    }
+    return nil, "Invalid import data. This import requires a newer WeakAuras version."
+  end
+
   local status, msg = true, ""
-  if type(target) ~= nil then
+  if type(target) ~= 'nil' then
     local targetData
     local uid = type(target) == 'table' and target.uid or target
     if type(uid) == 'string' then
@@ -1702,6 +1684,9 @@ function WeakAuras.Import(inData, target)
   end
   tooltipLoading = nil;
   local matchInfo = MatchInfo(data, children, target)
+  if matchInfo == nil and target then
+    return false, "Import data did not match to target"
+  end
   ShowDisplayTooltip(data, children, matchInfo, icon, icons, "unknown")
   return status, msg
 end
@@ -1744,7 +1729,7 @@ function TransmitError(errorMsg, characterName)
 end
 
 function TransmitDisplay(id, characterName)
-  local encoded = WeakAuras.DisplayToString(id);
+  local encoded = Private.DisplayToString(id);
   if(encoded ~= "") then
     crossRealmSendCommMessage("WeakAuras", encoded, characterName, "BULK", function(displayName, done, total)
       crossRealmSendCommMessage("WeakAurasProg", done.." "..total.." "..displayName, characterName, "ALERT");
@@ -1811,11 +1796,9 @@ Comm:RegisterComm("WeakAuras", function(prefix, message, distribution, sender)
       local matchInfo = MatchInfo(data, children)
       ShowDisplayTooltip(data, children, matchInfo, icon, icons, sender, true)
     elseif(received.m == "dR") then
-      --if(WeakAuras.linked[received.d]) then
-      TransmitDisplay(received.d, sender);
-    --else
-    --    TransmitError("not authorized", sender);
-    --end
+      if(Private.linked and Private.linked[received.d]) then
+        TransmitDisplay(received.d, sender);
+      end
     elseif(received.m == "dE") then
       tooltipLoading = nil;
       if(received.eM == "dne") then

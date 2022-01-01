@@ -11,7 +11,7 @@ local default = {
   desaturate = false,
   width = 200,
   height = 200,
-  color = {1, 1, 1, 0.75},
+  color = {1, 1, 1, 1},
   blendMode = "BLEND",
   textureWrapMode = "CLAMPTOBLACKADDITIVE",
   rotation = 0,
@@ -70,6 +70,7 @@ WeakAuras.regionPrototype.AddProperties(properties, default);
 
 local function create(parent)
   local region = CreateFrame("FRAME", nil, UIParent);
+  region.regionType = "texture"
   region:SetMovable(true);
   region:SetResizable(true);
   region:SetMinResize(1, 1);

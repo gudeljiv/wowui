@@ -1,13 +1,9 @@
-# [v3.2.8](https://github.com/Kiatra/BlizzMove/tree/v3.2.8) (2021-12-13)
+# [v3.2.9](https://github.com/Kiatra/BlizzMove/tree/v3.2.9) (2021-12-31)
 
-[Full Changelog](https://github.com/Kiatra/BlizzMove/compare/v3.2.7...v3.2.8)
+[Full Changelog](https://github.com/Kiatra/BlizzMove/compare/v3.2.8...v3.2.9)
 
-Mark W (6):
+Mark W (2):
 
-- Fix changelog generation
-- Resolved a bug when trying to reset a frame which had never been moved
-- Added prettier changelogs
-- Handle protected frames after combat ended if needed
-- Reformat code
-- Add support for ClickBindingFrame added in 9.2
+- Fixed an issue with Adventure Journal tooltips
+- Added Archeology digsite frame and Achievement search result frame
 

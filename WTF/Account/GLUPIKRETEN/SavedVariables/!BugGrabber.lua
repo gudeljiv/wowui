@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 3777,
+	["session"] = 3807,
 	["errors"] = {
 		{
 			["message"] = "...\\AddOns\\Details\\Libs\\DetailsFramework\\lib\\slider.lua:456: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DetailsFrameworkSliderButtons1:SetPoint.",
@@ -325,5 +325,153 @@ BugGrabberDB = {
 			["session"] = 3777,
 			["counter"] = 10,
 		}, -- [41]
+		{
+			["message"] = "MkQL_RewardItem1_BtnCount: Couldn't find relative frame: $parentIconTexture",
+			["time"] = "2022/01/01 17:21:22",
+			["session"] = 3793,
+			["counter"] = 1,
+		}, -- [42]
+		{
+			["message"] = "MkQL_RewardItem2_BtnCount: Couldn't find relative frame: $parentIconTexture",
+			["time"] = "2022/01/01 17:21:22",
+			["session"] = 3793,
+			["counter"] = 1,
+		}, -- [43]
+		{
+			["message"] = "MkQL_RewardItem3_BtnCount: Couldn't find relative frame: $parentIconTexture",
+			["time"] = "2022/01/01 17:21:22",
+			["session"] = 3793,
+			["counter"] = 1,
+		}, -- [44]
+		{
+			["message"] = "MkQL_RewardItem4_BtnCount: Couldn't find relative frame: $parentIconTexture",
+			["time"] = "2022/01/01 17:21:22",
+			["session"] = 3793,
+			["counter"] = 1,
+		}, -- [45]
+		{
+			["message"] = "MkQL_RewardItem5_BtnCount: Couldn't find relative frame: $parentIconTexture",
+			["time"] = "2022/01/01 17:21:22",
+			["session"] = 3793,
+			["counter"] = 1,
+		}, -- [46]
+		{
+			["message"] = "MkQL_RewardItem6_BtnCount: Couldn't find relative frame: $parentIconTexture",
+			["time"] = "2022/01/01 17:21:22",
+			["session"] = 3793,
+			["counter"] = 1,
+		}, -- [47]
+		{
+			["message"] = "MkQL_RewardItem7_BtnCount: Couldn't find relative frame: $parentIconTexture",
+			["time"] = "2022/01/01 17:21:22",
+			["session"] = 3793,
+			["counter"] = 1,
+		}, -- [48]
+		{
+			["message"] = "MkQL_RewardItem8_BtnCount: Couldn't find relative frame: $parentIconTexture",
+			["time"] = "2022/01/01 17:21:22",
+			["session"] = 3793,
+			["counter"] = 1,
+		}, -- [49]
+		{
+			["message"] = "MkQL_RewardItem9_BtnCount: Couldn't find relative frame: $parentIconTexture",
+			["time"] = "2022/01/01 17:21:22",
+			["session"] = 3793,
+			["counter"] = 1,
+		}, -- [50]
+		{
+			["message"] = "MkQL_RewardItem10_BtnCount: Couldn't find relative frame: $parentIconTexture",
+			["time"] = "2022/01/01 17:21:22",
+			["session"] = 3793,
+			["counter"] = 1,
+		}, -- [51]
+		{
+			["message"] = "Interface\\FrameXML\\ItemButtonTemplate.lua:51: attempt to index local 'icon' (a nil value)",
+			["time"] = "2022/01/01 17:21:24",
+			["locals"] = "button = MkQL_RewardItem1_Btn {\n 0 = <userdata>\n type = \"choice\"\n count = 1\n hasItem = 1\n rewardType = \"item\"\n}\ntexture = 135324\nicon = nil\n(*temporary) = \"MkQL_RewardItem1_BtnIconTexture\"\n(*temporary) = nil\n(*temporary) = \"MkQL_RewardItem1_Btn\"\n(*temporary) = \"attempt to index local 'icon' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\FrameXML\\ItemButtonTemplate.lua\"]:51: in function `SetItemButtonTexture'\n[string \"@Interface\\AddOns\\MonkeyQuestLog\\MonkeyQuestLogFrame.lua\"]:263: in function `MkQL_SetQuest'\n[string \"@Interface\\AddOns\\MonkeyQuest\\MonkeyQuest-2.11.0.lua\"]:1486: in function `MonkeyQuestButton_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 3793,
+			["counter"] = 3,
+		}, -- [52]
+		{
+			["message"] = "[string \"MkQL_RewardItem1_Btn:SetTexCoord(0.08, 0.92...\"]:1: attempt to call method 'SetTexCoord' (a nil value)",
+			["time"] = "2022/01/01 17:25:59",
+			["locals"] = "(*temporary) = nil\n(*temporary) = MkQL_RewardItem1_Btn {\n 0 = <userdata>\n type = \"choice\"\n count = 1\n beautyShadow = <table> {\n }\n hasItem = 1\n beautyBorder = <table> {\n }\n rewardType = \"item\"\n}\n(*temporary) = 0.080000\n(*temporary) = 0.920000\n(*temporary) = 0.080000\n(*temporary) = 0.920000\n(*temporary) = \"attempt to call method 'SetTexCoord' (a nil value)\"\n",
+			["stack"] = "[string \"MkQL_RewardItem1_Btn:SetTexCoord(0.08, 0.92, 0.08, 0.92)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2918: in function <Interface\\FrameXML\\ChatFrame.lua:2911>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 3794,
+			["counter"] = 5,
+		}, -- [53]
+		{
+			["message"] = "[string \"print(MkQL_RewardItem1_Btn::GetItem()\"]:1: '<name>' expected near ':'",
+			["time"] = "2022/01/01 17:35:21",
+			["locals"] = "(*temporary) = \"print(MkQL_RewardItem1_Btn::GetItem()\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2918: in function <Interface\\FrameXML\\ChatFrame.lua:2911>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"@Interface_Vanilla\\FrameXML\\ActionButton.lua\"]:100: in function <Interface_Vanilla\\FrameXML\\ActionButton.lua:94>\n[string \"@Interface_Vanilla\\FrameXML\\ActionButton.lua\"]:136: in function `ActionButtonDown'\n[string \"ACTIONBUTTON4\"]:2: in function <[string \"ACTIONBUTTON4\"]:1>",
+			["session"] = 3795,
+			["counter"] = 1,
+		}, -- [54]
+		{
+			["message"] = "[string \"print(MkQL_RewardItem1_Btn:GetItem()\"]:1: ')' expected near '<eof>'",
+			["time"] = "2022/01/01 17:35:33",
+			["locals"] = "(*temporary) = \"print(MkQL_RewardItem1_Btn:GetItem()\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2918: in function <Interface\\FrameXML\\ChatFrame.lua:2911>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"@Interface_Vanilla\\FrameXML\\ActionButton.lua\"]:100: in function <Interface_Vanilla\\FrameXML\\ActionButton.lua:94>\n[string \"@Interface_Vanilla\\FrameXML\\ActionButton.lua\"]:136: in function `ActionButtonDown'\n[string \"ACTIONBUTTON4\"]:2: in function <[string \"ACTIONBUTTON4\"]:1>",
+			["session"] = 3795,
+			["counter"] = 1,
+		}, -- [55]
+		{
+			["message"] = "[string \"print(MkQL_RewardItem1_BtnIconTexture:GetItem()\"]:1: ')' expected near '<eof>'",
+			["time"] = "2022/01/01 17:37:09",
+			["locals"] = "(*temporary) = \"print(MkQL_RewardItem1_BtnIconTexture:GetItem()\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2918: in function <Interface\\FrameXML\\ChatFrame.lua:2911>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 3795,
+			["counter"] = 1,
+		}, -- [56]
+		{
+			["message"] = "[string \"print(MkQL_RewardItem1_BtnIconTexture:GetIt...\"]:1: attempt to call method 'GetItem' (a nil value)",
+			["time"] = "2022/01/01 17:42:35",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = MkQL_RewardItem1_BtnIconTexture {\n 0 = <userdata>\n}\n(*temporary) = \"attempt to call method 'GetItem' (a nil value)\"\n",
+			["stack"] = "[string \"print(MkQL_RewardItem1_BtnIconTexture:GetItem())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2918: in function <Interface\\FrameXML\\ChatFrame.lua:2911>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"@Interface_Vanilla\\FrameXML\\ActionButton.lua\"]:100: in function <Interface_Vanilla\\FrameXML\\ActionButton.lua:94>\n[string \"@Interface_Vanilla\\FrameXML\\ActionButton.lua\"]:136: in function `ActionButtonDown'\n[string \"ACTIONBUTTON4\"]:2: in function <[string \"ACTIONBUTTON4\"]:1>",
+			["session"] = 3795,
+			["counter"] = 1,
+		}, -- [57]
+		{
+			["message"] = "[string \"print(MkQL_RewardItem1_Btn:GetItem())\"]:1: attempt to call method 'GetItem' (a nil value)",
+			["time"] = "2022/01/01 17:42:48",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = MkQL_RewardItem1_Btn {\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n beautyShadow = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n count = 1\n rewardType = \"item\"\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n type = \"reward\"\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n beautyBorder = <table> {\n }\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n 0 = <userdata>\n hasItem = 1\n}\n(*temporary) = \"attempt to call method 'GetItem' (a nil value)\"\n",
+			["stack"] = "[string \"print(MkQL_RewardItem1_Btn:GetItem())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2918: in function <Interface\\FrameXML\\ChatFrame.lua:2911>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"@Interface_Vanilla\\FrameXML\\ActionButton.lua\"]:100: in function <Interface_Vanilla\\FrameXML\\ActionButton.lua:94>\n[string \"@Interface_Vanilla\\FrameXML\\ActionButton.lua\"]:136: in function `ActionButtonDown'\n[string \"ACTIONBUTTON4\"]:2: in function <[string \"ACTIONBUTTON4\"]:1>",
+			["session"] = 3795,
+			["counter"] = 1,
+		}, -- [58]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Addons/MonkeyQuest.lua:50: Usage: GetQuestLogItemLink(\"type\", index)",
+			["time"] = "2022/01/01 18:27:33",
+			["locals"] = "(*temporary) = nil\n(*temporary) = 1\n",
+			["stack"] = "[string \"=[C]\"]: in function `GetQuestLogItemLink'\n[string \"@Interface\\AddOns\\xVermin\\Addons/MonkeyQuest.lua\"]:50: in function <Interface\\AddOns\\xVermin\\Addons/MonkeyQuest.lua:6>",
+			["session"] = 3797,
+			["counter"] = 1,
+		}, -- [59]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Addons/MonkeyQuest.lua:57: Usage: GetQuestLogItemLink(\"type\", index)",
+			["time"] = "2022/01/01 18:28:08",
+			["locals"] = "(*temporary) = nil\n(*temporary) = 1\n",
+			["stack"] = "[string \"=[C]\"]: in function `GetQuestLogItemLink'\n[string \"@Interface\\AddOns\\xVermin\\Addons/MonkeyQuest.lua\"]:57: in function <Interface\\AddOns\\xVermin\\Addons/MonkeyQuest.lua:6>",
+			["session"] = 3798,
+			["counter"] = 1,
+		}, -- [60]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Addons/MonkeyQuest.lua:57: attempt to concatenate field 'type' (a nil value)",
+			["time"] = "2022/01/01 18:30:57",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"PLAYER_ENTERING_WORLD\"\nisInitialLogin = false\nisReloadingUi = true\n(for index) = 1\n(for limit) = 50\n(for step) = 1\ni = 1\nframe = MkQL_RewardItem1_Btn {\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n 0 = <userdata>\n hasItem = 1\n}\ntexture = MkQL_RewardItem1_BtnIconTexture {\n 0 = <userdata>\n}\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = \"\"\"\n(*temporary) = nil\n(*temporary) = \"\"\"\n(*temporary) = 1\n(*temporary) = \"attempt to concatenate field 'type' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Addons/MonkeyQuest.lua\"]:57: in function <Interface\\AddOns\\xVermin\\Addons/MonkeyQuest.lua:6>",
+			["session"] = 3799,
+			["counter"] = 1,
+		}, -- [61]
+		{
+			["message"] = "...erface\\AddOns\\MonkeyQuestLog\\MonkeyQuestLogFrame.lua:343: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2022/01/01 18:36:24",
+			["locals"] = "iQuestNum = 2\ntmpQuestLogSelection = 6\nstrQuestLogTitleText = \"Blueleaf Tubers\"\nsuggestedGroup = \"Dungeon\"\nstrQuestTag = nil\nisHeader = false\nisCollapsed = false\nisComplete = nil\nfrequency = 1\nquestID = 1221\nquestInfo = nil\nstrQuestDescription = \"Blueleaf tubers are a delicacy around the world!  But they're rare, very rare.  The only place to find them is here in the Barrens, deep in the earth, in Razorfen Kraul.\n\nAnd even then, they're impossible to find unless you know just where to look!  That's why I've trained these snufflenose gophers to find them for me.  They have great noses and can smell a tuber from fifty paces away.\n\nIt won't be easy, but if you get me some tubers I'll pay you handsomely.\"\nstrQuestObjectives = \"Grab a Crate with Holes.\nGrab a Snufflenose Command Stick.\nGrab and read the Snufflenose Owner's Manual.\n\nIn Razorfen Kraul, use the Crate with Holes to summon a Snufflenose Gopher, and use the Command Stick on the gopher to make it search for Tubers.\n\nBring 6 Blueleaf Tubers, the Snufflenose Command Stick and the Crate with Holes to Mebok Mizzyrix in Ratchet.\"\nstrOverview = \"Grab a |cff9999ffCrate|cffffffff with |cff9999ffHoles|cffffffff.\nGrab a |cff9999ffSnufflenose|cffffffff |cff9999ffCommand|cffffffff |cff9999ffStick|cffffffff.\nGrab and read the |cff9999ffSnufflenose|cffffffff |cff9999ffOwner's|cffffffff |cff9999ffManual|cffffffff.\n\nIn |cff9999ffRazorfen|cffffffff |cff9999ffKraul|cffffffff, use the |cff9999ffCrate|cffffffff with |cff9999ffHoles|cffffffff to summon a |cff9999ffSnufflenose|cffffffff |cff9999ffGopher|cffffffff, and use the |cff9999ffCommand|cffffffff |cff9999ffStick|cffffffff on the gopher to make it search for |cff9999ffTubers|cffffffff.\n\nBring |cffff 0 06|cffffffff |cff9999ffBlueleaf|cffffffff |cff9999ffTubers|cffffffff, the |cff9999ffSnufflenose|cffffffff |cff9999ffCommand|cffffffff |cff9999ffStick|cffffffff and the |cff9999ffCrate|cffffffff with |cff9999ffHoles|cffffffff to |cff9999ffMebok|cffffffff |cff9999ffMizzyrix|cffffffff in |cff9999ffRatchet|cffffffff.\n\n  |cffd82619Blueleaf Tuber: 0/6\n  |cffd82619Crate With Holes: 0/1\n  |cffd82619SnufflnumQuestRewards = 1\nnumQuestChoices = 0\nrewardMoney = 0\nname = \"A Small Container of Gems\"\ntexture = 134344\nnumItems = 1\nquality = 1\nisUsable = true\nnumTotalRewards = 1\nrewardXP = 0\nrewardItem = MkQL_RewardItem1_Btn {\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n beautyShadow = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n beautyBorder = <table> {\n }\n count = 1\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n rewardType = \"item\"\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n type = \"reward\"\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n 0 = <userdata>\n hasItem = 1\n}\n(for index) = 1\n(for limit) = 1\n(for step) = 1\ni = 1\n(*temporary) = <function> defined @Interface\\AddOns\\!Beautycase\\!Beautycase.lua:130\n(*temporary) = MkQL_RewardItem1_Btn {\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n beautyShadow = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinat",
+			["stack"] = "[string \"@Interface\\AddOns\\MonkeyQuestLog\\MonkeyQuestLogFrame.lua\"]:343: in function `MkQL_SetQuest'\n[string \"@Interface\\AddOns\\MonkeyQuest\\MonkeyQuest-2.11.0.lua\"]:1486: in function `MonkeyQuestButton_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 3803,
+			["counter"] = 1,
+		}, -- [62]
 	},
 }

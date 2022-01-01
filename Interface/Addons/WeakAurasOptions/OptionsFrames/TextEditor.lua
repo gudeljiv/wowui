@@ -4,6 +4,7 @@ local AddonName, OptionsPrivate = ...
 -- Lua APIs
 local pairs, type, ipairs = pairs, type, ipairs
 local loadstring = loadstring
+local gsub = gsub
 
 -- WoW APIs
 local CreateFrame = CreateFrame
@@ -53,6 +54,7 @@ local editor_themes = {
   }
 }
 
+if not WeakAurasSaved.editor_tab_spaces then WeakAurasSaved.editor_tab_spaces = 4 end
 local color_scheme = {[0] = "|r"}
 local function set_scheme()
   if not WeakAurasSaved.editor_theme then
@@ -168,7 +170,7 @@ local function ConstructTextEditor(frame)
   -- display we ned the original, so save it here.
   local originalGetText = editor.editBox.GetText
   set_scheme()
-  IndentationLib.enable(editor.editBox, color_scheme, 4)
+  IndentationLib.enable(editor.editBox, color_scheme, WeakAurasSaved.editor_tab_spaces)
 
   local cancel = CreateFrame("Button", nil, group.frame, "UIPanelButtonTemplate")
   cancel:SetScript(
@@ -229,33 +231,62 @@ local function ConstructTextEditor(frame)
   local dropdown = CreateFrame("Frame", "SettingsMenuFrame", settings_frame, "UIDropDownMenuTemplate")
 
   local function settings_dropdown_initialize(frame, level, menu)
-    for k, v in pairs(editor_themes) do
-      local item = {
-        text = k,
-        isNotRadio = false,
-        checked = function()
-          return WeakAurasSaved.editor_theme == k
-        end,
-        func = function()
-          WeakAurasSaved.editor_theme = k
-          set_scheme()
-          editor.editBox:SetText(editor.editBox:GetText())
-        end
-      }
-      UIDropDownMenu_AddButton(item)
+    if level == 1 then
+      for k, v in pairs(editor_themes) do
+        local item = {
+          text = k,
+          isNotRadio = false,
+          checked = function()
+            return WeakAurasSaved.editor_theme == k
+          end,
+          func = function()
+            WeakAurasSaved.editor_theme = k
+            set_scheme()
+            editor.editBox:SetText(editor.editBox:GetText())
+          end
+        }
+        UIDropDownMenu_AddButton(item, level)
+      end
+      UIDropDownMenu_AddButton(
+        {
+          text = L["Bracket Matching"],
+          isNotRadio = true,
+          checked = function()
+            return WeakAurasSaved.editor_bracket_matching
+          end,
+          func = function()
+            WeakAurasSaved.editor_bracket_matching = not WeakAurasSaved.editor_bracket_matching
+          end
+        },
+      level)
+      UIDropDownMenu_AddButton(
+        {
+          text = L["Indent Size"],
+          hasArrow = true,
+          notCheckable = true,
+          menuList = "spaces"
+        },
+      level)
+    elseif menu == "spaces" then
+      local spaces = {2,4}
+      for _, i in pairs(spaces) do
+        UIDropDownMenu_AddButton(
+          {
+            text = i,
+            isNotRadio = false,
+            checked = function()
+              return WeakAurasSaved.editor_tab_spaces == i
+            end,
+            func = function()
+              WeakAurasSaved.editor_tab_spaces = i
+              IndentationLib.enable(editor.editBox, color_scheme, WeakAurasSaved.editor_tab_spaces)
+              editor.editBox:SetText(editor.editBox:GetText().."\n")
+              IndentationLib.indentEditbox(editor.editBox)
+            end
+          },
+        level)
+      end
     end
-    UIDropDownMenu_AddButton(
-      {
-        text = L["Bracket Matching"],
-        isNotRadio = true,
-        checked = function()
-          return WeakAurasSaved.editor_bracket_matching
-        end,
-        func = function()
-          WeakAurasSaved.editor_bracket_matching = not WeakAurasSaved.editor_bracket_matching
-        end
-      }
-    )
   end
   UIDropDownMenu_Initialize(dropdown, settings_dropdown_initialize, "MENU")
 
@@ -319,8 +350,9 @@ local function ConstructTextEditor(frame)
     -- iterate saved snippets and make buttons
     for order, snippet in ipairs(savedSnippets) do
       local button = AceGUI:Create("WeakAurasSnippetButton")
+      local snippetInsert = gsub(snippet.snippet, "|", "||")
       button:SetTitle(snippet.name)
-      button:SetDescription(snippet.snippet)
+      button:SetDescription(snippetInsert)
       button:SetEditable(true)
       button:SetRelativeWidth(1)
       button:SetNew(snippet.new)
@@ -328,7 +360,7 @@ local function ConstructTextEditor(frame)
       button:SetCallback(
         "OnClick",
         function()
-          editor.editBox:Insert(snippet.snippet)
+          editor.editBox:Insert(snippetInsert)
           editor:SetFocus()
         end
       )
@@ -559,7 +591,7 @@ local function ConstructTextEditor(frame)
     end
   )
 
-  function group.Open(self, data, path, enclose, multipath, reloadOptions, setOnParent, url)
+  function group.Open(self, data, path, enclose, multipath, reloadOptions, setOnParent, url, validator)
     self.data = data
     self.path = path
     self.multipath = multipath
@@ -585,7 +617,7 @@ local function ConstructTextEditor(frame)
     if (not multipath) then
       for index, field in pairs(path) do
         if (type(field) == "number") then
-          field = "Trigger " .. field + 1
+          field = "Trigger " .. field
         end
         title = title .. " " .. field:sub(1, 1):upper() .. field:sub(2)
       end
@@ -602,14 +634,20 @@ local function ConstructTextEditor(frame)
       "OnTextChanged",
       function(...)
         local str = editor.editBox:GetText()
-        if not (str) or editor.combinedText == true then
+        if not str or str:trim() == "" or editor.combinedText == true then
           editorError:SetText("")
         else
-          local _, errorString
+          local func, errorString
           if (enclose) then
-            _, errorString = loadstring("return function() " .. str .. "\n end")
+            func, errorString = loadstring("return function() " .. str .. "\n end")
           else
-            _, errorString = loadstring("return " .. str)
+            func, errorString = loadstring("return " .. str)
+          end
+          if not errorString and validator then
+            local ok, validate = xpcall(func, function(err) errorString = err end)
+            if ok then
+              errorString = validator(validate)
+            end
           end
           if errorString then
             urlText:Hide()
@@ -626,27 +664,34 @@ local function ConstructTextEditor(frame)
         self.oldOnTextChanged(...)
       end
     )
-    if (data.controlledChildren and not setOnParent) then
+
+    if setOnParent then
+      editor:SetText(OptionsPrivate.Private.ValueFromPath(data, path) or "")
+    else
       local singleText
       local sameTexts = true
       local combinedText = ""
-      for index, childId in pairs(data.controlledChildren) do
-        local childData = WeakAuras.GetData(childId)
-        local text = OptionsPrivate.Private.ValueFromPath(childData, multipath and path[childId] or path)
+      for child in OptionsPrivate.Private.TraverseLeafsOrAura(data) do
+        local text
+        if multipath then
+          text = path[child.id] and OptionsPrivate.Private.ValueFromPath(child, path[child.id])
+        else
+          text = OptionsPrivate.Private.ValueFromPath(child, path)
+        end
         if text then
           if not (singleText) then
             singleText = text
           else
-            if not (singleText == text) then
+            if singleText ~= text then
               sameTexts = false
             end
           end
-          if not (combinedText == "") then
+          if combinedText ~= "" then
             combinedText = combinedText .. "\n\n"
           end
 
           combinedText =
-            combinedText .. L["-- Do not remove this comment, it is part of this trigger: "] .. childId .. "\n"
+            combinedText .. L["-- Do not remove this comment, it is part of this aura: "] .. child.id .. "\n"
           combinedText = combinedText .. (text or "")
         end
       end
@@ -657,8 +702,6 @@ local function ConstructTextEditor(frame)
         editor:SetText(combinedText)
         editor.combinedText = true
       end
-    else
-      editor:SetText(OptionsPrivate.Private.ValueFromPath(data, path) or "")
     end
     editor:SetFocus()
   end
@@ -670,13 +713,13 @@ local function ConstructTextEditor(frame)
     frame:UpdateFrameVisible()
   end
 
-  local function extractTexts(input, ids)
+  local function extractTexts(input)
     local texts = {}
 
     local currentPos, id, startIdLine, startId, endId, endIdLine
     while (true) do
       startIdLine, startId =
-        string.find(input, L["-- Do not remove this comment, it is part of this trigger: "], currentPos, true)
+        string.find(input, L["-- Do not remove this comment, it is part of this aura: "], currentPos, true)
       if (not startId) then
         break
       end
@@ -708,30 +751,20 @@ local function ConstructTextEditor(frame)
   end
 
   function group.Close(self)
-    if (self.data.controlledChildren and not self.setOnParent) then
-      local textById = editor.combinedText and extractTexts(editor:GetText(), self.data.controlledChildren)
-      for index, childId in pairs(self.data.controlledChildren) do
-        local text = editor.combinedText and (textById[childId] or "") or editor:GetText()
-        local childData = WeakAuras.GetData(childId)
-        OptionsPrivate.Private.ValueToPath(childData, self.multipath and self.path[childId] or self.path, text)
-        WeakAuras.Add(childData)
-      end
-    else
+    if self.setOnParent then
       OptionsPrivate.Private.ValueToPath(self.data, self.path, editor:GetText())
       WeakAuras.Add(self.data)
-    end
-    if (self.reloadOptions) then
-      if (self.data.controlledChildren) then
-        for index, childId in pairs(self.data.controlledChildren) do
-          WeakAuras.ClearAndUpdateOptions(childId)
-        end
-        WeakAuras.ClearAndUpdateOptions(self.data.id)
-      else
-        WeakAuras.ClearAndUpdateOptions(self.data.id)
-      end
     else
-      WeakAuras.ClearAndUpdateOptions(self.data.id)
+      local textById = editor.combinedText and extractTexts(editor:GetText())
+      for child in OptionsPrivate.Private.TraverseLeafsOrAura(self.data) do
+        local text = editor.combinedText and (textById[child.id] or "") or editor:GetText()
+        OptionsPrivate.Private.ValueToPath(child, self.multipath and self.path[child.id] or self.path, text)
+        WeakAuras.Add(child)
+        OptionsPrivate.ClearOptions(child.id)
+      end
     end
+
+    WeakAuras.ClearAndUpdateOptions(self.data.id)
 
     editor.editBox:SetScript("OnTextChanged", self.oldOnTextChanged)
     editor:ClearFocus()

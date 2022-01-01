@@ -299,13 +299,13 @@ MonkeyQuestConfig = {
 			["Sprinkle's Secret Ingredient - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Tiara of the Deep - false"] = {
+			["Gahz'rilla - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Scholomance - true"] = {
 				["m_bChecked"] = false,
 			},
-			["Gahz'rilla - false"] = {
+			["Tiara of the Deep - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Barov Family Fortune - false"] = {
@@ -620,7 +620,7 @@ MonkeyQuestConfig = {
 				["m_bChecked"] = true,
 			},
 			["The Barrens - true"] = {
-				["m_bChecked"] = true,
+				["m_bChecked"] = false,
 			},
 			["The Tear of the Moons - false"] = {
 				["m_bChecked"] = true,
@@ -1179,7 +1179,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 640.4235229492188,
+		["m_iFrameBottom"] = 764.7388305664062,
 		["m_bHideCompletedQuests"] = false,
 		["m_iFrameLeft"] = 1774.620849609375,
 		["m_bColourDoneOrFailed"] = true,
@@ -1207,6 +1207,113 @@ MonkeyQuestConfig = {
 		["m_bHideTitle"] = false,
 		["m_bHideTitleButtons"] = false,
 		["m_bGrowUp"] = false,
+	},
+	["Dreadnaught|Pitchwise"] = {
+		["m_aQuestList"] = {
+			["Harpy Raiders - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Raptor Thieves - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Stagnant Oasis - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Verog the Dervish - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Prowlers of the Barrens - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Barrens - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Consumed by Hatred - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Centaur Bracers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Lost in Battle - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Disruption Ends - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Wharfmaster Dizzywig - false"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
+	["Dreadmist|Vermins"] = {
+		["m_iFont"] = 0,
+		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
+		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
+		["m_iFrameAlpha"] = 1,
+		["m_bColourTitle"] = false,
+		["m_strAnchor"] = "ANCHOR_TOPLEFT",
+		["m_bAllowRightClick"] = true,
+		["m_strZoneHighlightColour"] = "|cff494961",
+		["m_strFinishObjectiveColour"] = "|cFF33DDFF",
+		["m_bShowHidden"] = false,
+		["m_bItemsOnLeft"] = true,
+		["m_bShowNoobTips"] = true,
+		["m_bHideCompletedObjectives"] = false,
+		["m_bShowZoneHighlight"] = true,
+		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
+		["m_aQuestList"] = {
+			["Encroachment - false"] = {
+				["m_bChecked"] = true,
+			},
+			["From The Wreckage.... - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Break a Few Eggs - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Durotar - true"] = {
+				["m_bChecked"] = true,
+			},
+		},
+		["m_bDisplay"] = true,
+		["m_bMinimized"] = false,
+		["m_strInitialObjectiveColour"] = "|cFFD82619",
+		["m_iHighlightAlpha"] = 1,
+		["m_bShowQuestLevel"] = true,
+		["m_bShowDailyNumQuests"] = false,
+		["m_iFrameBottom"] = 931.538513183594,
+		["m_bAlwaysHeaders"] = false,
+		["m_bLocked"] = false,
+		["m_bNoBorder"] = false,
+		["m_bNoHeaders"] = false,
+		["m_iAlpha"] = 0.5,
+		["m_strOverviewColour"] = "|cFF7F7F7F",
+		["m_bHideCompletedQuests"] = false,
+		["m_bCrashBorder"] = false,
+		["m_bShowTooltipObjectives"] = true,
+		["m_iFontHeight"] = 12,
+		["m_strQuestTitleColour"] = "|cFFFFFFFF",
+		["m_bWorkComplete"] = true,
+		["m_strMidObjectiveColour"] = "|cFFFFFF00",
+		["m_iFrameWidth"] = 255,
+		["m_bHideTitleButtons"] = false,
+		["m_strHeaderOpenColour"] = "|cFFBFBFFF",
+		["m_iFrameTop"] = 963.538513183594,
+		["m_bObjectives"] = true,
+		["m_bHideHeader"] = false,
+		["m_bShowNumQuests"] = false,
+		["m_iQuestPadding"] = 0,
+		["m_bColourSubObjectivesByProgress"] = true,
+		["m_bHideTitle"] = false,
+		["m_iFrameLeft"] = 1650.51281738281,
+		["m_bGrowUp"] = false,
+	},
+	["Golemagg|Mxzq"] = {
+		["m_aQuestList"] = {
+		},
 	},
 	["Genesis|Malinac"] = {
 		["m_iFont"] = 0,
@@ -1258,113 +1365,6 @@ MonkeyQuestConfig = {
 		["m_bHideTitle"] = false,
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
-	},
-	["Dreadmist|Vermins"] = {
-		["m_iFont"] = 0,
-		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
-		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
-		["m_iFrameAlpha"] = 1,
-		["m_bColourTitle"] = false,
-		["m_strAnchor"] = "ANCHOR_TOPLEFT",
-		["m_bAllowRightClick"] = true,
-		["m_strZoneHighlightColour"] = "|cff494961",
-		["m_strFinishObjectiveColour"] = "|cFF33DDFF",
-		["m_bShowHidden"] = false,
-		["m_bItemsOnLeft"] = true,
-		["m_bShowNoobTips"] = true,
-		["m_bHideCompletedObjectives"] = false,
-		["m_bShowZoneHighlight"] = true,
-		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
-		["m_aQuestList"] = {
-			["Vanquish the Betrayers - false"] = {
-				["m_bChecked"] = true,
-			},
-			["From The Wreckage.... - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Encroachment - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Break a Few Eggs - false"] = {
-				["m_bChecked"] = true,
-			},
-		},
-		["m_bDisplay"] = true,
-		["m_bMinimized"] = false,
-		["m_strInitialObjectiveColour"] = "|cFFD82619",
-		["m_iHighlightAlpha"] = 1,
-		["m_bShowQuestLevel"] = true,
-		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 931.538513183594,
-		["m_bAlwaysHeaders"] = false,
-		["m_bLocked"] = false,
-		["m_bNoBorder"] = false,
-		["m_bNoHeaders"] = false,
-		["m_iAlpha"] = 0.5,
-		["m_strOverviewColour"] = "|cFF7F7F7F",
-		["m_bHideCompletedQuests"] = false,
-		["m_bCrashBorder"] = false,
-		["m_bShowTooltipObjectives"] = true,
-		["m_iFontHeight"] = 12,
-		["m_strQuestTitleColour"] = "|cFFFFFFFF",
-		["m_bWorkComplete"] = true,
-		["m_strMidObjectiveColour"] = "|cFFFFFF00",
-		["m_iFrameWidth"] = 255,
-		["m_bHideTitleButtons"] = false,
-		["m_strHeaderOpenColour"] = "|cFFBFBFFF",
-		["m_iFrameTop"] = 963.538513183594,
-		["m_bObjectives"] = true,
-		["m_bHideHeader"] = false,
-		["m_bShowNumQuests"] = false,
-		["m_iQuestPadding"] = 0,
-		["m_bColourSubObjectivesByProgress"] = true,
-		["m_bHideTitle"] = false,
-		["m_iFrameLeft"] = 1650.51281738281,
-		["m_bGrowUp"] = false,
-	},
-	["Golemagg|Mxzq"] = {
-		["m_aQuestList"] = {
-		},
-	},
-	["Dreadnaught|Pitchwise"] = {
-		["m_aQuestList"] = {
-			["Harpy Raiders - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Raptor Thieves - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Stagnant Oasis - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Verog the Dervish - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Prowlers of the Barrens - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Barrens - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Consumed by Hatred - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Centaur Bracers - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Lost in Battle - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Disruption Ends - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Wharfmaster Dizzywig - false"] = {
-				["m_bChecked"] = true,
-			},
-		},
 	},
 	["Stonespine|Vermins"] = {
 		["m_aQuestList"] = {

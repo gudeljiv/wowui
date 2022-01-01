@@ -32,9 +32,10 @@ Reputation/Reputation.lua
 
 Addons/AdiBags.lua
 Addons/Examiner.lua
-Addons/Puggle.lua
+Addons/LFG.lua
 Addons/MonkeyQuest.lua
 Addons/Omen.lua
+Addons/Puggle.lua
 Addons/Questie.lua
 Addons/RangeDisplay.lua
 Addons/Recount.lua
@@ -44,6 +45,7 @@ AutoCarrot.lua
 AutoBuyAmmo.lua
 AutoDismount.lua
 AutoRepair.lua
+AutoRollGreed.lua
 BetterLootMessage.lua
 BestFood.lua
 BuffSource.lua
