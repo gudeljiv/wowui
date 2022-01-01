@@ -13,9 +13,9 @@ VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:6308
+#showtooltip item:0
 /cast feed pet
-/use item:6308
+/use item:0
 END
 VER 3 000000000000000B "TEST" "132089"
 /run print(MkQL_RewardItem1_Btn.type)

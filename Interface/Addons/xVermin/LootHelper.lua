@@ -160,7 +160,7 @@ bcf:SetScript(
 		else
 			self:UnregisterAllEvents()
 			bcf:Hide()
-			mcf:Hide()
+			-- mcf:Hide()
 		end
 	end
 )
