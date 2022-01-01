@@ -4,18 +4,18 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000000000D "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:1205
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:2287
+/use [nocombat]item:3771
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:3730
 /cast feed pet
-/use item:0
+/use item:3730
 END
 VER 3 000000000000000B "TEST" "132089"
 /run print(MkQL_RewardItem1_Btn.type)

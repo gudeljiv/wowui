@@ -34,7 +34,8 @@ local LoDMap = {
 	Blizzard_MacroUI = {"MacroFrame"},
 	Blizzard_TalentUI = {"PlayerTalentFrame"},
 	Blizzard_TradeSkillUI = {"TradeSkillFrame"},
-	Blizzard_InspectUI = {"InspectFrame"}
+	Blizzard_InspectUI = {"InspectFrame"},
+	Blizzard_TrainerUI = {"ClassTrainerFrame"}
 }
 
 local EventFrame = CreateFrame("Frame")
