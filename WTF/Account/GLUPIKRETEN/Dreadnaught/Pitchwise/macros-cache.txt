@@ -44,3 +44,9 @@ VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Mortal Strike
 END
+VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
+#showtooltip Sunder Armor
+/startattack
+/cast Bloodrage
+/cast Sunder Armor
+END

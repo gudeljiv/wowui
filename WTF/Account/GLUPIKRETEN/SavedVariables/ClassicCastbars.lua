@@ -89,8 +89,8 @@ ClassicCastbarsDB = {
 		["iconPositionX"] = -5,
 		["textPositionX"] = 0,
 		["showSpark"] = true,
-		["hideIconBorder"] = false,
 		["ignoreParentAlpha"] = false,
+		["hideIconBorder"] = false,
 		["showIcon"] = true,
 		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["borderColor"] = {
@@ -133,8 +133,8 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			1, -- [4]
 		},
-		["textOutline"] = "",
 		["width"] = 120,
+		["textOutline"] = "",
 		["iconPositionY"] = 0,
 		["statusColorChannel"] = {
 			0, -- [1]
@@ -166,8 +166,8 @@ ClassicCastbarsDB = {
 		["iconPositionX"] = -5,
 		["textPositionX"] = 0,
 		["showSpark"] = true,
-		["hideIconBorder"] = false,
 		["ignoreParentAlpha"] = false,
+		["hideIconBorder"] = false,
 		["showIcon"] = true,
 		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["borderColor"] = {
@@ -210,8 +210,8 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			1, -- [4]
 		},
-		["textOutline"] = "",
 		["width"] = 150,
+		["textOutline"] = "",
 		["iconPositionY"] = 0,
 		["statusColorChannel"] = {
 			0, -- [1]
@@ -248,14 +248,14 @@ ClassicCastbarsDB = {
 		["iconPositionY"] = 50,
 		["textPositionX"] = 0,
 		["showSpark"] = true,
-		["castStatusBar"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
-		["hideIconBorder"] = true,
-		["showIcon"] = true,
 		["statusColorFailed"] = {
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
+		["hideIconBorder"] = true,
+		["castStatusBar"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
+		["showIcon"] = true,
 		["borderColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -287,8 +287,8 @@ ClassicCastbarsDB = {
 		["castFont"] = "Fonts\\FRIZQT__.TTF",
 		["castBorder"] = "",
 		["showCastInfoOnly"] = false,
-		["textOutline"] = "",
 		["width"] = 400,
+		["textOutline"] = "",
 		["ignoreParentAlpha"] = false,
 		["statusColorChannel"] = {
 			0, -- [1]
@@ -319,8 +319,8 @@ ClassicCastbarsDB = {
 		["iconPositionX"] = -10,
 		["textPositionX"] = 0,
 		["showSpark"] = true,
-		["hideIconBorder"] = false,
 		["ignoreParentAlpha"] = false,
+		["hideIconBorder"] = false,
 		["showIcon"] = true,
 		["castStatusBar"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
 		["borderColor"] = {
@@ -363,8 +363,8 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			1, -- [4]
 		},
-		["textOutline"] = "",
 		["width"] = 190,
+		["textOutline"] = "",
 		["iconPositionY"] = 0,
 		["statusColorChannel"] = {
 			0, -- [1]
@@ -433,18 +433,18 @@ ClassicCastbarsDB = {
 		["11490Intense Pain"] = true,
 		["12118Dominate Mind"] = true,
 		["14943Stun Bomb Attack"] = true,
-		["14020Ignite Flesh"] = true,
+		["16446Stoneskin"] = true,
 		["10438Frostbolt"] = true,
 		["12459Demon Portal"] = true,
 		["8127Chain Lightning"] = true,
 		["12264Arcane Explosion"] = true,
 		["12119Dominate Mind"] = true,
-		["16446Stoneskin"] = true,
+		["14020Ignite Flesh"] = true,
 		["15114Frost Breath"] = true,
 		["12265Fireball"] = true,
 		["12201Boulder"] = true,
 		["14601Wing Buffet"] = true,
-		["15247Mana Burn"] = true,
+		["16022Mind Flay"] = true,
 		["16215Arcane Explosion"] = true,
 		["15311Fear"] = true,
 		["15246Mana Burn"] = true,
@@ -452,35 +452,35 @@ ClassicCastbarsDB = {
 		["14945Stun Bomb Attack"] = true,
 		["15247Mind Flay"] = true,
 		["11490Sacrifice"] = true,
-		["11729Toxic Spit"] = true,
+		["11492Wild Regeneration"] = true,
 		["11983Wing Buffet"] = true,
 		["6109Manastorm"] = true,
-		["15589Eye Beam"] = true,
+		["15979Pointy Spike"] = true,
 		["13161Stun Bomb Attack"] = true,
-		["16022Mind Flay"] = true,
+		["15247Mana Burn"] = true,
 		["13280Massive Geyser"] = true,
 		["11983Shadow Flame"] = true,
 		["14834Blood Siphon"] = true,
-		["11492Wild Regeneration"] = true,
-		["6109Frost Breath"] = true,
+		["11729Toxic Spit"] = true,
+		["16021Fear"] = true,
 		["11583Bellowing Roar"] = true,
 		["10184Flame Breath"] = true,
 		["12459Shadow Bolt"] = true,
 		["14601Shadow Flame"] = true,
-		["16021Fear"] = true,
+		["6109Frost Breath"] = true,
 		["14890Bellowing Roar"] = true,
 		["15956Impale"] = true,
-		["15979Spike Volley"] = true,
 		["12468Flamestrike"] = true,
+		["15979Spike Volley"] = true,
 		["12435Fireball Volley"] = true,
-		["11981Wing Buffet"] = true,
-		["16368Shadow Bolt Volley"] = true,
-		["15979Pointy Spike"] = true,
 		["10184Fireball"] = true,
+		["16368Shadow Bolt Volley"] = true,
+		["15589Eye Beam"] = true,
+		["11981Wing Buffet"] = true,
 		["11492Enervate"] = true,
 		["15727Eye Beam"] = true,
-		["16021Lightning Totem"] = true,
 		["11359Soul Tap"] = true,
+		["16021Lightning Totem"] = true,
 		["15311Dust Cloud"] = true,
 		["12259Shadow Bolt"] = true,
 		["10184Wing Buffet"] = true,
