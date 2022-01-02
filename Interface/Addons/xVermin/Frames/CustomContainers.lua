@@ -44,6 +44,53 @@ f:SetScript(
 	end
 )
 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+-- USER PROFESSIONS
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-- local ProfessionNames = {
+-- 	main = {
+-- 		[164] = "Blacksmithing",
+-- 		[165] = "Leatherworking",
+-- 		[171] = "Alchemy",
+-- 		[182] = "Herbalism",
+-- 		[186] = "Mining",
+-- 		[197] = "Tailoring",
+-- 		[202] = "Engineering",
+-- 		[333] = "Enchanting",
+-- 		[393] = "Skinning",
+-- 		[755] = "Jewelcrafting",
+-- 		[773] = "Inscription"
+-- 	},
+-- 	secondary = {
+-- 		[185] = "Cooking",
+-- 		[356] = "Fishing",
+-- 		[129] = "First Aid",
+-- 		[794] = "Archaeology"
+-- 	}
+-- }
+
+
+-- local profNames_main = ProfessionNames["main"]
+-- local profNames_rev_main = tInvert(profNames_main)
+-- local profNames_secondary = ProfessionNames["secondary"]
+-- local profNames_rev_secondary = tInvert(profNames_secondary)
+ 
+-- for i = 1, GetNumSkillLines() do
+-- 	local name, _, _, skillRank = GetSkillLineInfo(i)
+-- 	if profNames_rev_main[name] then
+-- 		print("main", name, skillRank)
+-- 	end
+-- end
+
+-- for i = 1, GetNumSkillLines() do
+-- 	local name, _, _, skillRank = GetSkillLineInfo(i)
+-- 	if profNames_rev_secondary[name] then
+-- 		print("secondary", name, skillRank)
+-- 	end
+-- end
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 -- CUSTOM CONTAINER 1 (minimap 1)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
