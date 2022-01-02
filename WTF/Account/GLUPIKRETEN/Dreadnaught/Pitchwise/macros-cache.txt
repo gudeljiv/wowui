@@ -1,6 +1,7 @@
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+VER 3 000000000100000C " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
+/cast Revenge
 /cast Heroic Strike
 END
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
@@ -49,4 +50,9 @@ VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Bloodrage
 /cast Sunder Armor
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Heroic Strike
 END

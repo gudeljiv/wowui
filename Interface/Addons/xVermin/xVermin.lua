@@ -133,11 +133,13 @@ f:SetScript(
 			Minimap.SetPoint = function()
 			end
 
-			MultiBarBottomLeftButton1:ClearAllPoints()
-			MultiBarBottomLeftButton1:SetPoint("BOTTOMLEFT", MainMenuBar, "TOPLEFT", 9, -4)
-			MultiBarBottomLeftButton1.ClearAllPoints = function()
-			end
-			MultiBarBottomLeftButton1.SetPoint = function()
+			if MultiBarBottomLeft then 
+				MultiBarBottomLeftButton1:ClearAllPoints()
+				MultiBarBottomLeftButton1:SetPoint("BOTTOMLEFT", MainMenuBar, "TOPLEFT", 9, -4)
+				MultiBarBottomLeftButton1.ClearAllPoints = function()
+				end
+				MultiBarBottomLeftButton1.SetPoint = function()
+				end
 			end
 
 			MultiBarRightButton1:ClearAllPoints()
