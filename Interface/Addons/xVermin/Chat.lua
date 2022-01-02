@@ -163,6 +163,8 @@ local function SetChat()
 	-- ChatFrame8:Show()
 	-- ChatFrame8Tab:Show()
 
+	local background
+
 	for i, v in pairs(
 		{
 			ChatFrame1,
@@ -178,18 +180,21 @@ local function SetChat()
 		v.SetPoint = function()
 		end
 
+		background = _G[v:GetName() .. "Background"]
+		
 		if (v:GetName() == "ChatFrame7" or v:GetName() == "ChatFrame8") then
 			-- v:SetWidth((chatWidth / 2) - 4)
 			-- _G[v:GetName() .. "Background"]:SetAlpha(0.3)
 			v:SetWidth((chatWidth / 1.3) - 4)
-			_G[v:GetName() .. "Background"]:SetAlpha(0)
+			background:SetAlpha(0)
+			v:SetScript("OnEnter", function() background:SetAlpha(1) end)
+			v:SetScript("OnLeave", function() background:SetAlpha(0) end)
 		else
 			v:SetWidth(chatWidth)
-			_G[v:GetName() .. "Background"]:SetAlpha(0.6)
+			background:SetAlpha(0.6)
+			background.SetAlpha = function() end
 		end
 
-		_G[v:GetName() .. "Background"].SetAlpha = function()
-		end
 
 		local BottomButton = _G[v:GetName() .. "ButtonFrameBottomButton"]
 		local UpButton = _G[v:GetName() .. "ButtonFrameUpButton"]
