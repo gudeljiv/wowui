@@ -13,10 +13,8 @@ y = 860
 
 skills = [
     {"name": "battle shout", "key": "f4", "r": 193, "g": 115, "b": 110},
-    {"name": "heroic strike", "aoe": False,
-        "key": "2", "r": 153, "g": 150, "b": 153},
-    {"name": "cleave", "aoe": True,
-        "key": "3", "r": 153, "g": 150, "b": 153},
+    {"name": "heroic strike", "key": "2", "r": 153, "g": 150, "b": 153, "aoe": False},
+    {"name": "cleave", "key": "3", "r": 153, "g": 150, "b": 153, "aoe": True},
     {"name": "overpower", "key": "2", "r": 153, "g": 150, "b": 153},
     {"name": "sunder armor", "key": "g", "r": 189, "g": 126, "b": 116},
     # {"name": "overpower", "key": "2", "r": 153, "g": 150, "b": 153},
@@ -49,10 +47,11 @@ while True:
         for skill in skills:
             if pyautogui.pixel(x, y)[0] == skill["r"] and pyautogui.pixel(x, y)[1] == skill["g"] and pyautogui.pixel(x, y)[2] == skill["b"]:
 
-                if aoe and "aoe" in skill and not skill["aoe"]:
-                    continue
-                if not aoe and "aoe" in skill and skill["aoe"]:
-                    continue
+                if aoe in skill:
+                    if aoe and not skill["aoe"]:
+                        continue
+                    if not aoe and skill["aoe"]:
+                        continue
 
                 print(skill["name"])
                 pyautogui.press(skill["key"], presses=3)
