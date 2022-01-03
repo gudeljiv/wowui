@@ -1,6 +1,6 @@
 local ComboColor = nHealth.energy.comboColor
 
-local f = CreateFrame("Frame", "nHealth", UIParent)
+local f = CreateFrame("Frame", "nHealth", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 f:SetScale(1.4)
 f:SetSize(18, 18)
 f:SetPoint(unpack(nHealth.position))
@@ -12,7 +12,7 @@ f:RegisterEvent("PLAYER_ENTERING_WORLD")
 --f:RegisterEvent('UNIT_HEALTH_UPDATE')
 f:RegisterEvent("PLAYER_TARGET_CHANGED")
 
-f.Health = CreateFrame("StatusBar", "nHealthStatusBar", UIParent)
+f.Health = CreateFrame("StatusBar", "nHealthStatusBar", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 f.Health:SetScale(nHealth.scale)
 f.Health:SetSize(nHealth.sizeWidth, 3)
 f.Health:SetPoint("CENTER", f, 0, -23)
@@ -37,7 +37,7 @@ f.Health.Background:SetAllPoints(f.Health)
 f.Health.Background:SetTexture("Interface\\AddOns\\nHealth\\media\\statusbarTexture")
 f.Health.Background:SetVertexColor(0.25, 0.25, 0.25, 1)
 
-f.Health.BackgroundShadow = CreateFrame("Frame", nil, f.Health)
+f.Health.BackgroundShadow = CreateFrame("Frame", nil, f.Health, BackdropTemplateMixin and "BackdropTemplate")
 f.Health.BackgroundShadow:SetFrameStrata("BACKGROUND")
 f.Health.BackgroundShadow:SetPoint("TOPLEFT", -4, 4)
 f.Health.BackgroundShadow:SetPoint("BOTTOMRIGHT", 4, -4)

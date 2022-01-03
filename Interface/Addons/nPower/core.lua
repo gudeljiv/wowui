@@ -1,7 +1,7 @@
 local ComboColor = nPower.energy.comboColor
 local playerClass = select(2, UnitClass("player"))
 
-local f = CreateFrame("Frame", "nPower", UIParent)
+local f = CreateFrame("Frame", "nPower", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 f:SetScale(1.4)
 f:SetSize(18, 18)
 f:SetPoint(unpack(nPower.position))
@@ -57,7 +57,7 @@ if (playerClass == "WARLOCK" and nPower.showSoulshards or playerClass == "PALADI
 	f.extraPoints:SetPoint("CENTER", 0, 0)
 end
 
-f.Power = CreateFrame("StatusBar", "nPowerStatusBar", UIParent)
+f.Power = CreateFrame("StatusBar", "nPowerStatusBar", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 f.Power:SetScale(nPower.scale)
 f.Power:SetSize(nPower.sizeWidth, 3)
 f.Power:SetPoint("CENTER", f, 0, -23)
@@ -82,7 +82,7 @@ f.Power.Background:SetAllPoints(f.Power)
 f.Power.Background:SetTexture("Interface\\AddOns\\nPower\\media\\statusbarTexture")
 f.Power.Background:SetVertexColor(0.25, 0.25, 0.25, 1)
 
-f.Power.BackgroundShadow = CreateFrame("Frame", nil, f.Power)
+f.Power.BackgroundShadow = CreateFrame("Frame", nil, f.Power, BackdropTemplateMixin and "BackdropTemplate")
 f.Power.BackgroundShadow:SetFrameStrata("BACKGROUND")
 f.Power.BackgroundShadow:SetPoint("TOPLEFT", -4, 4)
 f.Power.BackgroundShadow:SetPoint("BOTTOMRIGHT", 4, -4)

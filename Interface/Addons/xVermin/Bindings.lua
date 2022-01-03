@@ -99,7 +99,7 @@ local function FixBindings()
 
 	SetBinding("J", "CLICK RingMenuToggleRing1:LeftButton", 1)
 
-	if UnitName("player") == "Konac" then
+	if UnitName("player") == "XXKonac" then
 		SetBinding("CTRL-H", "NONE", 1)
 		SetBinding("CTRL-M", "NONE", 1)
 		SetBinding("ALT-X", "MULTIACTIONBAR2BUTTON10", 1)

@@ -170,7 +170,8 @@ function NeedsFoodBadly:IsUsableFood(food)
 	return not not
 	(
 		food 
-		and food.lvl <= UnitLevel("player") 
+		-- and food.lvl <= UnitLevel("player") 
+		and select(5,GetItemInfo(food.id)) <= UnitLevel("player") 
 		and food.hp 
 		and not (food.hp5 or food.mp5 or food.str or food.agi or food.stam or food.int or food.spi)
 	)
@@ -201,7 +202,7 @@ function NeedsFoodBadly:IsUsableBuffFood(food)
 	return not not
 	(
 		food 
-		and food.lvl <= UnitLevel("player") 
+		and select(5,GetItemInfo(food.id)) <= UnitLevel("player") 
 		and (
 			food.hp and 
 			food.stam and 
@@ -214,7 +215,7 @@ function NeedsFoodBadly:IsUsableDrink(food)
 	return not not 
 	(
 		food 
-		and food.lvl <= UnitLevel("player") 
+		and select(5,GetItemInfo(food.id)) <= UnitLevel("player") 
 		and food.mp 
 		and not food.mp5
 	)
@@ -224,7 +225,7 @@ function NeedsFoodBadly:IsUsableBuffDrink(food)
 	return not not
 	(
 		food 
-		and food.lvl <= UnitLevel("player") 
+		and select(5,GetItemInfo(food.id)) <= UnitLevel("player") 
 		and food.mp5
 	)
 end

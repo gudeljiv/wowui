@@ -711,6 +711,11 @@ AUCTIONATOR_TOONS = {
 		["firstVersion"] = "3.1.5",
 		["guid"] = "Player-4465-010B6E50",
 	},
+	["Konac"] = {
+		["firstSeen"] = 1641217953,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-5239-014057CB",
+	},
 	["Greenwise"] = {
 		["firstSeen"] = 1569270467,
 		["guid"] = "Player-4465-012659A9",

@@ -30,49 +30,27 @@ ChocolateBarDB = {
 		["Spija - Genesis"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
-		["Vermins - Stonespine"] = "Default",
 		["Dotwise - Golemagg"] = "Default",
+		["Vermins - Stonespine"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
-		["Korupcija - Genesis"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
+		["Korupcija - Stonespine"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
-		["Korupcija - Stonespine"] = "Default",
+		["Korupcija - Genesis"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
+		["Konac - Dreadnaught"] = "Default",
 	},
 	["addonVersion"] = "v3.7.7",
 	["profiles"] = {
 		["Default"] = {
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["width"] = 147.000030517578,
-					["autohide"] = false,
-					["barOffy"] = -207.589706420898,
-					["hideBarInCombat"] = false,
-					["barOffx"] = -31.9219512939453,
-				},
-				["ChocolateBar2"] = {
-					["barOffy"] = -256.666748046875,
-					["barPoint"] = "TOPRIGHT",
-					["barName"] = "ChocolateBar2",
-					["align"] = "custom",
-					["barOffx"] = -88.3325424194336,
-					["index"] = 1,
-					["width"] = 147,
-				},
-			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["locked"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -82,6 +60,10 @@ ChocolateBarDB = {
 					["r"] = 0,
 				},
 				["textureName"] = "None",
+			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
 			},
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
@@ -448,15 +430,34 @@ ChocolateBarDB = {
 					["customLabel"] = "N",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
-			["fixedStrata"] = true,
 			["gap"] = 0,
-			["moveFrames"] = false,
+			["fixedStrata"] = true,
 			["desaturated"] = false,
+			["moveFrames"] = false,
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
 			["forceColor"] = false,
-			["locked"] = false,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["width"] = 147.000030517578,
+					["autohide"] = false,
+					["barOffy"] = -207.589706420898,
+					["hideBarInCombat"] = false,
+					["barOffx"] = -31.9219512939453,
+				},
+				["ChocolateBar2"] = {
+					["barOffy"] = -256.666748046875,
+					["barPoint"] = "TOPRIGHT",
+					["barName"] = "ChocolateBar2",
+					["align"] = "custom",
+					["barOffx"] = -88.3325424194336,
+					["index"] = 1,
+					["width"] = 147,
+				},
+			},
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -516,7 +517,7 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Poklopac-Dreadnaught"] = {
-		["total"] = 140374,
+		["total"] = 140826,
 	},
 	["Ozrencic-"] = {
 		["total"] = 853,
@@ -525,7 +526,7 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Pitchwise-Dreadnaught"] = {
-		["total"] = 47618,
+		["total"] = 48421,
 	},
 	["Judawise-"] = {
 		["total"] = 437,
@@ -533,14 +534,17 @@ CB_PlayedTime = {
 	["Koloman-"] = {
 		["total"] = 129,
 	},
+	["Mxyzptlk-"] = {
+		["total"] = 8794,
+	},
 	["Dmitar-"] = {
 		["total"] = 1872,
 	},
 	["Nitwit-"] = {
 		["total"] = 680,
 	},
-	["Mxyzptlk-"] = {
-		["total"] = 8794,
+	["Greshnik-Dreadnaught"] = {
+		["total"] = 148,
 	},
 	["Verminz-"] = {
 		["total"] = 311368,
@@ -548,25 +552,25 @@ CB_PlayedTime = {
 	["Paydo-"] = {
 		["total"] = 18945,
 	},
-	["Greshnik-Dreadnaught"] = {
-		["total"] = 148,
-	},
-	["Elohssa-"] = {
-		["total"] = 3552,
+	["Pitchwise-"] = {
+		["total"] = 390,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,
 	},
+	["Elohssa-"] = {
+		["total"] = 3552,
+	},
 	["Grgur-"] = {
 		["total"] = 1248,
-	},
-	["Pitchwise-"] = {
-		["total"] = 390,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
 	},
 	["Korupcija-"] = {
 		["total"] = 21359,
+	},
+	["Konac-Dreadnaught"] = {
+		["total"] = 1544,
 	},
 }

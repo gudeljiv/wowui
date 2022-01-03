@@ -29,11 +29,12 @@ ChocolateBarDB = {
 		["Pepecocorita - Genesis"] = "Default",
 		["Mxys - Golemagg"] = "Default",
 		["Spija - Genesis"] = "Default",
+		["Konac - Dreadnaught"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Testxv - Golemagg"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
@@ -42,13 +43,24 @@ ChocolateBarDB = {
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Dotwise - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
+			["locked"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -71,17 +83,6 @@ ChocolateBarDB = {
 			},
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
-			},
-			["locked"] = false,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
-				},
-				["textureName"] = "None",
 			},
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
@@ -448,14 +449,14 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
-			["gap"] = 0,
+			["desaturated"] = false,
 			["forceColor"] = false,
 			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["fontName"] = "Friz Quadrata TT",
+			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["desaturated"] = false,
+			["fontName"] = "Friz Quadrata TT",
 			["moveFrames"] = false,
 			["textColor"] = {
 				["a"] = 1,
@@ -516,7 +517,7 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Poklopac-Dreadnaught"] = {
-		["total"] = 140374,
+		["total"] = 140826,
 	},
 	["Ozrencic-"] = {
 		["total"] = 853,
@@ -530,6 +531,9 @@ CB_PlayedTime = {
 	["Judawise-"] = {
 		["total"] = 437,
 	},
+	["Konac-Dreadnaught"] = {
+		["total"] = 1962,
+	},
 	["Korupcija-"] = {
 		["total"] = 21359,
 	},
@@ -542,8 +546,8 @@ CB_PlayedTime = {
 	["Kosturko-"] = {
 		["total"] = 1457,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Greshnik-Dreadnaught"] = {
+		["total"] = 148,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,
@@ -560,8 +564,8 @@ CB_PlayedTime = {
 	["Grgur-"] = {
 		["total"] = 1248,
 	},
-	["Greshnik-Dreadnaught"] = {
-		["total"] = 148,
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,

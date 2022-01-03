@@ -502,48 +502,6 @@ MonkeyQuestConfig = {
 		["m_aQuestList"] = {
 		},
 	},
-	["Stonespine|Korupcija"] = {
-		["m_aQuestList"] = {
-			["At War With The Scarlet Crusade - false"] = {
-				["m_bChecked"] = true,
-			},
-			["A New Plague - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Wanted: Maggot Eye - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Haunted Mills - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Chill of Death - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Mills Overrun - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Tirisfal Glades - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Deaths in the Family - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Graverobbers - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Doom Weed - false"] = {
-				["m_bChecked"] = true,
-			},
-		},
-	},
-	["Golemagg|Ozrencic"] = {
-		["m_aQuestList"] = {
-		},
-	},
-	["Stonespine|Whatevs"] = {
-		["m_aQuestList"] = {
-		},
-	},
 	["Genesis|Konza"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
@@ -594,6 +552,64 @@ MonkeyQuestConfig = {
 		["m_bHideTitle"] = false,
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
+	},
+	["Stonespine|Korupcija"] = {
+		["m_aQuestList"] = {
+			["At War With The Scarlet Crusade - false"] = {
+				["m_bChecked"] = true,
+			},
+			["A New Plague - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Wanted: Maggot Eye - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Haunted Mills - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Chill of Death - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Mills Overrun - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Tirisfal Glades - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Deaths in the Family - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Graverobbers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Doom Weed - false"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
+	["Golemagg|Ozrencic"] = {
+		["m_aQuestList"] = {
+		},
+	},
+	["Stonespine|Whatevs"] = {
+		["m_aQuestList"] = {
+		},
+	},
+	["Dreadnaught|Konac"] = {
+		["m_aQuestList"] = {
+			["Vile Familiars - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Valley of Trials - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Sting of the Scorpid - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Galgar's Cactus Apple Surprise - false"] = {
+				["m_bChecked"] = true,
+			},
+		},
 	},
 	["Dreadnaught|Greshnik"] = {
 		["m_aQuestList"] = {
@@ -1041,23 +1057,6 @@ MonkeyQuestConfig = {
 		["m_aQuestList"] = {
 		},
 	},
-	["Golemagg|Mxyzptlk"] = {
-		["m_aQuestList"] = {
-		},
-	},
-	["Golemagg|Battitude"] = {
-		["m_aQuestList"] = {
-			["The Damned - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Deathknell - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Rattling the Rattlecages - false"] = {
-				["m_bChecked"] = true,
-			},
-		},
-	},
 	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
 			["Miner's Fortune - false"] = {
@@ -1107,6 +1106,23 @@ MonkeyQuestConfig = {
 			},
 		},
 	},
+	["Golemagg|Battitude"] = {
+		["m_aQuestList"] = {
+			["The Damned - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Deathknell - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Rattling the Rattlecages - false"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
+	["Golemagg|Mxyzptlk"] = {
+		["m_aQuestList"] = {
+		},
+	},
 	["Golemagg|Mxys"] = {
 		["m_aQuestList"] = {
 		},
@@ -1137,58 +1153,9 @@ MonkeyQuestConfig = {
 			},
 		},
 	},
-	["Global"] = {
-		["m_bItemsEnabled"] = true,
-		["m_iFont"] = 2,
-		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
-		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
-		["m_iFrameAlpha"] = 1,
-		["m_bColourTitle"] = true,
-		["m_strAnchor"] = "ANCHOR_TOPLEFT",
-		["m_bAllowRightClick"] = true,
-		["m_strZoneHighlightColour"] = "|cff494961",
-		["m_strFinishObjectiveColour"] = "|cFF33DDFF",
-		["m_bShowHidden"] = true,
-		["m_bItemsOnLeft"] = false,
-		["m_bShowNoobTips"] = true,
-		["m_bHideCompletedObjectives"] = false,
-		["m_bShowZoneHighlight"] = true,
-		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
-		["m_bAlwaysHeaders"] = false,
-		["m_bDisplay"] = true,
-		["m_bMinimized"] = false,
-		["m_strInitialObjectiveColour"] = "|cFFD82619",
-		["m_iHighlightAlpha"] = 0,
-		["m_bShowQuestLevel"] = false,
-		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 967.6748657226562,
-		["m_bHideCompletedQuests"] = false,
-		["m_iFrameLeft"] = 1774.620849609375,
-		["m_bColourDoneOrFailed"] = true,
-		["m_bLocked"] = true,
-		["m_bNoBorder"] = true,
-		["m_bNoHeaders"] = false,
-		["m_iAlpha"] = 0.5,
-		["m_strOverviewColour"] = "|cff7f7f7f",
-		["m_bShowNumQuests"] = true,
-		["m_bColourSubObjectivesByProgress"] = true,
-		["m_strMidObjectiveColour"] = "|cFFFFFF00",
-		["m_iFontHeight"] = 11,
-		["m_strQuestTitleColour"] = "|cFFFFFFFF",
-		["m_bWorkComplete"] = true,
-		["m_bHideQuestsEnabled"] = false,
-		["m_iFrameWidth"] = 300,
-		["m_bCrashBorder"] = false,
-		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1036.137817382813,
-		["m_bObjectives"] = true,
-		["m_bHideHeader"] = false,
-		["m_bShowTooltipObjectives"] = false,
-		["m_iQuestPadding"] = 4,
-		["m_bShowQuestTextTooltip"] = false,
-		["m_bHideTitle"] = false,
-		["m_bHideTitleButtons"] = false,
-		["m_bGrowUp"] = false,
+	["Golemagg|Mxzq"] = {
+		["m_aQuestList"] = {
+		},
 	},
 	["Genesis|Malinac"] = {
 		["m_iFont"] = 0,
@@ -1307,10 +1274,6 @@ MonkeyQuestConfig = {
 		["m_iFrameLeft"] = 1650.51281738281,
 		["m_bGrowUp"] = false,
 	},
-	["Golemagg|Mxzq"] = {
-		["m_aQuestList"] = {
-		},
-	},
 	["Dreadnaught|Pitchwise"] = {
 		["m_aQuestList"] = {
 			["Wailing Caverns - true"] = {
@@ -1386,6 +1349,59 @@ MonkeyQuestConfig = {
 				["m_bChecked"] = true,
 			},
 		},
+	},
+	["Global"] = {
+		["m_bItemsEnabled"] = true,
+		["m_iFont"] = 2,
+		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
+		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
+		["m_iFrameAlpha"] = 1,
+		["m_bColourTitle"] = true,
+		["m_strAnchor"] = "ANCHOR_TOPLEFT",
+		["m_bAllowRightClick"] = true,
+		["m_strZoneHighlightColour"] = "|cff494961",
+		["m_strFinishObjectiveColour"] = "|cFF33DDFF",
+		["m_bShowHidden"] = true,
+		["m_bItemsOnLeft"] = false,
+		["m_bShowNoobTips"] = true,
+		["m_bHideCompletedObjectives"] = false,
+		["m_bShowZoneHighlight"] = true,
+		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
+		["m_bAlwaysHeaders"] = false,
+		["m_bDisplay"] = true,
+		["m_bMinimized"] = false,
+		["m_strInitialObjectiveColour"] = "|cFFD82619",
+		["m_iHighlightAlpha"] = 0,
+		["m_bShowQuestLevel"] = false,
+		["m_bShowDailyNumQuests"] = false,
+		["m_iFrameBottom"] = 849.7242431640625,
+		["m_bHideCompletedQuests"] = false,
+		["m_iFrameLeft"] = 2010.023193359375,
+		["m_bColourDoneOrFailed"] = true,
+		["m_bLocked"] = true,
+		["m_bNoBorder"] = true,
+		["m_bNoHeaders"] = false,
+		["m_iAlpha"] = 0.5,
+		["m_strOverviewColour"] = "|cff7f7f7f",
+		["m_bShowNumQuests"] = true,
+		["m_bColourSubObjectivesByProgress"] = true,
+		["m_strMidObjectiveColour"] = "|cFFFFFF00",
+		["m_iFontHeight"] = 11,
+		["m_strQuestTitleColour"] = "|cFFFFFFFF",
+		["m_bWorkComplete"] = true,
+		["m_bHideQuestsEnabled"] = false,
+		["m_iFrameWidth"] = 300,
+		["m_bCrashBorder"] = false,
+		["m_strHeaderOpenColour"] = "|cffbfbfff",
+		["m_iFrameTop"] = 1036.138061523438,
+		["m_bObjectives"] = true,
+		["m_bHideHeader"] = false,
+		["m_bShowTooltipObjectives"] = false,
+		["m_iQuestPadding"] = 4,
+		["m_bShowQuestTextTooltip"] = false,
+		["m_bHideTitle"] = false,
+		["m_bHideTitleButtons"] = false,
+		["m_bGrowUp"] = false,
 	},
 	["Stonespine|Vermins"] = {
 		["m_aQuestList"] = {

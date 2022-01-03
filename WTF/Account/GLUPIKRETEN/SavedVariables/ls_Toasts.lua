@@ -22,6 +22,7 @@ LS_TOASTS_GLOBAL_CONFIG = {
 		["Paydo - Dreadmist"] = "Default",
 		["Mxys - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
+		["Konac - Dreadnaught"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
 		["Testxv - Golemagg"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",

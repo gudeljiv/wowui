@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 3828,
+	["session"] = 3840,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -474,21 +474,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [62]
 		{
-			["message"] = "...lla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:751: attempt to index local 'color' (a nil value)",
-			["time"] = "2021/12/26 12:15:07",
-			["locals"] = "numBatchAuctions = 36449\ntotalAuctions = 36449\nbutton = BrowseButton1 {\n 0 = <userdata>\n PriceTooltipFrame = <unnamed> {\n }\n}\nbuttonName = \"BrowseButton1\"\nbuttonHighlight = BrowseButton1Highlight {\n 0 = <userdata>\n}\niconTexture = nil\nitemName = BrowseButton1Name {\n 0 = <userdata>\n}\ncolor = nil\nitemCount = nil\nmoneyFrame = nil\nyourBidText = nil\nbuyoutFrame = nil\nbuyoutMoney = nil\noffset = 0\nindex = 1\nisLastSlotEmpty = nil\nname = \"\"\ntexture = 135327\ncount = 1\nquality = -1\ncanUse = false\nlevel = -666652416\nlevelColHeader = nil\nminBid = 1861999\nminIncrement = 0\nbuyoutPrice = 1959998\nduration = 1\nbidAmount = 0\nhighBidder = false\nbidderFullName = nil\nowner = nil\nownerFullName = nil\nsaleStatus = 0\nitemId = 935\nhasAllInfo = true\ndisplayedPrice = nil\nrequiredBid = nil\n(for index) = 1\n(for limit) = 8\n(for step) = 1\ni = 1\nshouldHide = false\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = BrowseButton1Name {\n 0 = <userdata>\n}\n(*temporary) = \"\"\n(*temporary) = <userdata>\n(*temporary) = false\n(*temporary) = -666652416\n(*temporary) = nil\n(*temporary) = 1861999\n(*temporary) = 0\n(*temporary) = 1959998\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 935\n(*temporary) = true\n(*temporary) = \"attempt to index local 'color' (a nil value)\"\n",
-			["stack"] = "[string \"@Interface_Vanilla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:751: in function `AuctionFrameBrowse_Update'\n[string \"@Interface_Vanilla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:277: in function <...lla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:275>",
-			["session"] = 3811,
-			["counter"] = 12,
-		}, -- [63]
-		{
 			["message"] = "[string \"print(GetProfessions())\"]:1: attempt to call global 'GetProfessions' (a nil value)",
 			["time"] = "2022/01/02 09:25:06",
 			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'GetProfessions' (a nil value)\"\n",
 			["stack"] = "[string \"print(GetProfessions())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 3819,
 			["counter"] = 1,
-		}, -- [64]
+		}, -- [63]
 		{
 			["message"] = "Interface\\SharedXML\\TableUtil.lua:90: bad argument #1 to 'pairs' (table expected, got nil)",
 			["time"] = "2022/01/02 09:34:16",
@@ -496,19 +488,83 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `pairs'\n[string \"@Interface\\SharedXML\\TableUtil.lua\"]:90: in function `tInvert'\n[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:240: in main chunk",
 			["session"] = 3821,
 			["counter"] = 1,
-		}, -- [65]
-		{
-			["message"] = "(null)",
-			["session"] = 3821,
-			["time"] = "2022/01/02 09:34:18",
-			["counter"] = 3,
-		}, -- [66]
+		}, -- [64]
 		{
 			["message"] = "attempt to call a table value",
 			["time"] = "2022/01/02 09:43:41",
 			["stack"] = "[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.7.3.lua\"]:4841: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:4762>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.7.3.lua\"]:4868: in function `AnchorFrame'\n[string \"@Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua\"]:570: in function `modify'\n[string \"@Interface\\AddOns\\WeakAuras\\RegionTypes\\DynamicGroup.lua\"]:792: in function `modify'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.7.3.lua\"]:2738: in function `SetRegion'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.7.3.lua\"]:2559: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:2526>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.7.3.lua\"]:2660: in function `Add'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua\"]:1317: in function <Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua:1308>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:51: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:49>\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:847: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:668>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:72: in function <...face\\AddOns\\BlizzMove\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:70>\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:306: in function `Fire'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\AceGUI-Widgets\\AceGUIWidget-WeakAurasMultiLineEditBox.lua\"]:59: in function <...I-Widgets\\AceGUIWidget-WeakAurasMultiLineEditBox.lua:56>",
 			["session"] = 3822,
 			["counter"] = 3,
+		}, -- [65]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
+			["time"] = "2022/01/02 17:31:48",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface_Vanilla\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface_Vanilla\\FrameXML\\ActionBarController.lua:34>",
+			["session"] = 3829,
+			["counter"] = 1,
+		}, -- [66]
+		{
+			["message"] = "...lla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:751: attempt to index local 'color' (a nil value)",
+			["time"] = "2021/12/26 12:15:07",
+			["locals"] = "numBatchAuctions = 36449\ntotalAuctions = 36449\nbutton = BrowseButton1 {\n 0 = <userdata>\n PriceTooltipFrame = <unnamed> {\n }\n}\nbuttonName = \"BrowseButton1\"\nbuttonHighlight = BrowseButton1Highlight {\n 0 = <userdata>\n}\niconTexture = nil\nitemName = BrowseButton1Name {\n 0 = <userdata>\n}\ncolor = nil\nitemCount = nil\nmoneyFrame = nil\nyourBidText = nil\nbuyoutFrame = nil\nbuyoutMoney = nil\noffset = 0\nindex = 1\nisLastSlotEmpty = nil\nname = \"\"\ntexture = 135327\ncount = 1\nquality = -1\ncanUse = false\nlevel = -666652416\nlevelColHeader = nil\nminBid = 1861999\nminIncrement = 0\nbuyoutPrice = 1959998\nduration = 1\nbidAmount = 0\nhighBidder = false\nbidderFullName = nil\nowner = nil\nownerFullName = nil\nsaleStatus = 0\nitemId = 935\nhasAllInfo = true\ndisplayedPrice = nil\nrequiredBid = nil\n(for index) = 1\n(for limit) = 8\n(for step) = 1\ni = 1\nshouldHide = false\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = BrowseButton1Name {\n 0 = <userdata>\n}\n(*temporary) = \"\"\n(*temporary) = <userdata>\n(*temporary) = false\n(*temporary) = -666652416\n(*temporary) = nil\n(*temporary) = 1861999\n(*temporary) = 0\n(*temporary) = 1959998\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 935\n(*temporary) = true\n(*temporary) = \"attempt to index local 'color' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface_Vanilla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:751: in function `AuctionFrameBrowse_Update'\n[string \"@Interface_Vanilla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:277: in function <...lla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:275>",
+			["session"] = 3830,
+			["counter"] = 15,
 		}, -- [67]
+		{
+			["message"] = "Interface\\AddOns\\nHealth\\core.lua:44: attempt to call method 'SetBackdrop' (a nil value)",
+			["time"] = "2022/01/03 14:52:29",
+			["locals"] = "ComboColor = <table> {\n 2 = <table> {\n }\n 3 = <table> {\n }\n 1 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n}\nf = nHealth {\n 0 = <userdata>\n Health = nHealthStatusBar {\n }\n}\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n insets = <table> {\n }\n BgFile = \"Interface\\ChatFrame\\ChatFrameBackground\"\n edgeSize = 4\n edgeFile = \"Interface\\Addons\\nHealth\\media\\textureGlow\"\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\nHealth\\core.lua\"]:44: in main chunk",
+			["session"] = 3833,
+			["counter"] = 3,
+		}, -- [68]
+		{
+			["message"] = "Interface\\AddOns\\nPower\\core.lua:89: attempt to call method 'SetBackdrop' (a nil value)",
+			["time"] = "2022/01/03 14:52:29",
+			["locals"] = "ComboColor = <table> {\n 2 = <table> {\n }\n 3 = <table> {\n }\n 1 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n}\nplayerClass = \"PRIEST\"\nf = nPower {\n 0 = <userdata>\n ComboPoints = <table> {\n }\n Power = nPowerStatusBar {\n }\n}\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n insets = <table> {\n }\n BgFile = \"Interface\\ChatFrame\\ChatFrameBackground\"\n edgeSize = 4\n edgeFile = \"Interface\\Addons\\nPower\\media\\textureGlow\"\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\nPower\\core.lua\"]:89: in main chunk",
+			["session"] = 3833,
+			["counter"] = 3,
+		}, -- [69]
+		{
+			["message"] = "(null)",
+			["session"] = 3833,
+			["time"] = "2022/01/02 09:34:18",
+			["counter"] = 21,
+		}, -- [70]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:170: attempt to index local 'food' (a nil value)",
+			["time"] = "2022/01/03 15:07:14",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n PetFood = <table> {\n }\n IsUsableManaGem = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:261\n IsUsableBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:224\n IsUsableFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:169\n Bandage = <table> {\n }\n BetterFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:288\n ManaGem = <table> {\n }\n BetterMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:356\n Potion = <table> {\n }\n BetterBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:342\n dirty = false\n BetterBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:377\n IsUsableMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:243\n IsUsableDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:214\n IsUsableHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:253\n BetterHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:363\n FindPairInPetFoodArray = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:192\n Healthstone = <table> {\n }\n Food = <table> {\n }\n UpdateMacros = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:62\n BetterHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:349\n IsUsableHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:233\n IsUsablePetFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:180\n BetterPetFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:308\n IsUsableBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:279\n BetterManaGem = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:370\n Sorted = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:160\n IsUsableBuffFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:201\n BuildSequence = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:389\n BetterDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:322\n BetterBuffFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:315\n}\nfood = nil\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'food' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:170: in function `IsUsableFood'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:80: in function `UpdateMacros'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:53: in function <Interface\\AddOns\\xVermin\\BestFood.lua:48>",
+			["session"] = 3835,
+			["counter"] = 3,
+		}, -- [71]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:176: attempt to index local 'food' (a nil value)",
+			["time"] = "2022/01/03 15:09:10",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n PetFood = <table> {\n }\n IsUsableManaGem = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:267\n IsUsableBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:230\n IsUsableFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:175\n Bandage = <table> {\n }\n BetterFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:294\n ManaGem = <table> {\n }\n BetterMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:362\n Potion = <table> {\n }\n BetterBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:348\n dirty = false\n BetterBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:383\n IsUsableMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:249\n IsUsableDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:220\n IsUsableHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:259\n BetterHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:369\n FindPairInPetFoodArray = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:198\n Healthstone = <table> {\n }\n Food = <table> {\n }\n UpdateMacros = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:68\n BetterHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:355\n IsUsableHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:239\n IsUsablePetFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:186\n BetterPetFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:314\n IsUsableBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:285\n BetterManaGem = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:376\n Sorted = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:166\n IsUsableBuffFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:207\n BuildSequence = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:395\n BetterDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:328\n BetterBuffFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:321\n}\nfood = nil\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'food' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:176: in function `IsUsableFood'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:86: in function `UpdateMacros'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:57: in function <Interface\\AddOns\\xVermin\\BestFood.lua:48>",
+			["session"] = 3836,
+			["counter"] = 1,
+		}, -- [72]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:172: attempt to index local 'food' (a nil value)",
+			["time"] = "2022/01/03 15:10:20",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n PetFood = <table> {\n }\n IsUsableManaGem = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:263\n IsUsableBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:226\n IsUsableFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:171\n Bandage = <table> {\n }\n BetterFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:290\n ManaGem = <table> {\n }\n BetterMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:358\n Potion = <table> {\n }\n BetterBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:344\n dirty = false\n BetterBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:379\n IsUsableMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:245\n IsUsableDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:216\n IsUsableHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:255\n BetterHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:365\n FindPairInPetFoodArray = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:194\n Healthstone = <table> {\n }\n Food = <table> {\n }\n UpdateMacros = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:62\n BetterHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:351\n IsUsableHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:235\n IsUsablePetFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:182\n BetterPetFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:310\n IsUsableBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:281\n BetterManaGem = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:372\n Sorted = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:162\n IsUsableBuffFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:203\n BuildSequence = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:391\n BetterDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:324\n BetterBuffFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:317\n}\nfood = nil\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'food' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:172: in function `IsUsableFood'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:82: in function `UpdateMacros'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:53: in function <Interface\\AddOns\\xVermin\\BestFood.lua:48>",
+			["session"] = 3837,
+			["counter"] = 1,
+		}, -- [73]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PickupAction()'.",
+			["time"] = "2022/01/03 15:20:23",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `PickupAction'\n[string \"*:OnDragStart\"]:2: in function <[string \"*:OnDragStart\"]:1>",
+			["session"] = 3840,
+			["counter"] = 1,
+		}, -- [74]
 	},
 }

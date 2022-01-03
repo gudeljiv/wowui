@@ -13,16 +13,17 @@ Postal3ClassicDB = {
 				"Grgur|Golemagg|Horde|2|WARLOCK", -- [8]
 				"Jaroslav|Golemagg|Horde|10|DRUID", -- [9]
 				"Koloman|Golemagg|Horde|1|MAGE", -- [10]
-				"Moolatz|Dreadnaught|Horde|1|DRUID", -- [11]
-				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [12]
-				"Mxyz|Golemagg|Horde|5|PRIEST", -- [13]
-				"Mxzq|Golemagg|Horde|35|HUNTER", -- [14]
-				"Nitwit|Dreadnaught|Horde|5|ROGUE", -- [15]
-				"Pitchwise|Dreadnaught|Horde|16|WARRIOR", -- [16]
-				"Poklopac|Dreadnaught|Horde|27|HUNTER", -- [17]
-				"Testxv|Golemagg|Horde|1|HUNTER", -- [18]
-				"Vermins|Stonespine|Horde|2|WARRIOR", -- [19]
-				"Vermin|Golemagg|Horde|36|WARRIOR", -- [20]
+				"Konac|Dreadnaught|Horde|2|PRIEST", -- [11]
+				"Moolatz|Dreadnaught|Horde|1|DRUID", -- [12]
+				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [13]
+				"Mxyz|Golemagg|Horde|5|PRIEST", -- [14]
+				"Mxzq|Golemagg|Horde|35|HUNTER", -- [15]
+				"Nitwit|Dreadnaught|Horde|5|ROGUE", -- [16]
+				"Pitchwise|Dreadnaught|Horde|16|WARRIOR", -- [17]
+				"Poklopac|Dreadnaught|Horde|27|HUNTER", -- [18]
+				"Testxv|Golemagg|Horde|1|HUNTER", -- [19]
+				"Vermins|Stonespine|Horde|2|WARRIOR", -- [20]
+				"Vermin|Golemagg|Horde|36|WARRIOR", -- [21]
 			},
 		},
 	},
@@ -38,21 +39,22 @@ Postal3ClassicDB = {
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Mxys - Golemagg"] = "Mxys - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
-		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
 		["Koloman - Golemagg"] = "Koloman - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 		["Vermins - Stonespine"] = "Vermins - Stonespine",
+		["Mxym - Golemagg"] = "Mxym - Golemagg",
 		["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
 	},
 	["profiles"] = {
@@ -96,22 +98,6 @@ Postal3ClassicDB = {
 		},
 		["Mxys - Golemagg"] = {
 		},
-		["Poklopac - Dreadnaught"] = {
-		},
-		["Mxym - Golemagg"] = {
-		},
-		["Testxv - Golemagg"] = {
-		},
-		["Jaroslav - Golemagg"] = {
-		},
-		["Battlearm - Hydraxian Waterlords"] = {
-		},
-		["Augustin - Golemagg"] = {
-		},
-		["Grgur - Golemagg"] = {
-		},
-		["Koloman - Golemagg"] = {
-		},
 		["Mxyzptlk - Golemagg"] = {
 			["BlackBook"] = {
 				["recent"] = {
@@ -119,11 +105,11 @@ Postal3ClassicDB = {
 				},
 			},
 		},
-		["Klhjakhsgdjh - Golemagg"] = {
+		["Poklopac - Dreadnaught"] = {
 		},
-		["Antun - Golemagg"] = {
+		["Pitchwise - Dreadnaught"] = {
 		},
-		["Judawise - Golemagg"] = {
+		["Testxv - Golemagg"] = {
 		},
 		["Vermin - Golemagg"] = {
 			["BlackBook"] = {
@@ -134,9 +120,27 @@ Postal3ClassicDB = {
 				},
 			},
 		},
-		["Pitchwise - Dreadnaught"] = {
+		["Battlearm - Hydraxian Waterlords"] = {
+		},
+		["Augustin - Golemagg"] = {
+		},
+		["Grgur - Golemagg"] = {
+		},
+		["Koloman - Golemagg"] = {
+		},
+		["Jaroslav - Golemagg"] = {
+		},
+		["Klhjakhsgdjh - Golemagg"] = {
+		},
+		["Antun - Golemagg"] = {
+		},
+		["Judawise - Golemagg"] = {
+		},
+		["Konac - Dreadnaught"] = {
 		},
 		["Vermins - Stonespine"] = {
+		},
+		["Mxym - Golemagg"] = {
 		},
 		["Moolatz - Dreadnaught"] = {
 		},
