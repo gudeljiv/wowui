@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 3844,
 	["lastSanitation"] = 3,
-	["session"] = 3841,
 	["errors"] = {
 		{
 			["message"] = "...\\AddOns\\Details\\Libs\\DetailsFramework\\lib\\slider.lua:456: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DetailsFrameworkSliderButtons1:SetPoint.",
@@ -319,62 +319,62 @@ BugGrabberDB = {
 		}, -- [40]
 		{
 			["message"] = "MkQL_RewardItem1_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [41]
 		{
 			["message"] = "MkQL_RewardItem2_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [42]
 		{
 			["message"] = "MkQL_RewardItem3_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [43]
 		{
 			["message"] = "MkQL_RewardItem4_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [44]
 		{
 			["message"] = "MkQL_RewardItem5_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [45]
 		{
 			["message"] = "MkQL_RewardItem6_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [46]
 		{
 			["message"] = "MkQL_RewardItem7_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [47]
 		{
 			["message"] = "MkQL_RewardItem8_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [48]
 		{
 			["message"] = "MkQL_RewardItem9_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [49]
 		{
 			["message"] = "MkQL_RewardItem10_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [50]
 		{
@@ -530,8 +530,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/01/02 09:34:18",
 			["session"] = 3833,
+			["time"] = "2022/01/02 09:34:18",
 			["counter"] = 21,
 		}, -- [70]
 		{
@@ -566,5 +566,13 @@ BugGrabberDB = {
 			["session"] = 3840,
 			["counter"] = 1,
 		}, -- [74]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:174: attempt to compare nil with number",
+			["time"] = "2022/01/03 15:59:05",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n PetFood = <table> {\n }\n IsUsableManaGem = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:261\n IsUsableBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:224\n IsUsableFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:169\n Bandage = <table> {\n }\n BetterFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:288\n ManaGem = <table> {\n }\n BetterMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:356\n Potion = <table> {\n }\n BetterBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:342\n dirty = false\n BetterBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:377\n IsUsableMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:243\n IsUsableDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:214\n IsUsableHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:253\n BetterHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:363\n FindPairInPetFoodArray = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:192\n Healthstone = <table> {\n }\n Food = <table> {\n }\n UpdateMacros = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:62\n BetterHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:349\n IsUsableHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:233\n IsUsablePetFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:180\n BetterPetFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:308\n IsUsableBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:279\n BetterManaGem = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:370\n Sorted = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:160\n IsUsableBuffFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:201\n BuildSequence = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:389\n BetterDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:322\n BetterBuffFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:315\n}\nfood = <table> {\n conj = false\n name = \"Tough Hunk of Bread\"\n lvl = 6\n id = 4540\n hp = 61.200000\n}\n(*temporary) = nil\n(*temporary) = 2\n(*temporary) = \"player\"\n(*temporary) = 2\n(*temporary) = \"attempt to compare nil with number\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:174: in function `IsUsableFood'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:80: in function `UpdateMacros'\n[string \"@Interface\\AddOns\\xVermin\\BestFood.lua\"]:53: in function <Interface\\AddOns\\xVermin\\BestFood.lua:48>",
+			["session"] = 3842,
+			["counter"] = 1,
+		}, -- [75]
 	},
 }
