@@ -179,8 +179,8 @@ __DEJUNK_SAVED_VARIABLES__ = {
 					["3402"] = true,
 					["2608"] = true,
 					["3401"] = true,
-					["3676"] = true,
 					["5118"] = true,
+					["3676"] = true,
 					["3669"] = true,
 					["3670"] = true,
 					["1794"] = true,
@@ -195,6 +195,10 @@ __DEJUNK_SAVED_VARIABLES__ = {
 			["version"] = 3,
 		},
 		["Konac-Dreadnaught"] = {
+			["sell"] = {
+				["auto"] = true,
+				["safeMode"] = false,
+			},
 			["version"] = 3,
 		},
 	},

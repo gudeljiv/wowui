@@ -44,7 +44,7 @@ GMMONEY = {
 			["CLASS"] = "WARLOCK",
 		},
 		["Konac"] = {
-			["GOLD"] = 0,
+			["GOLD"] = 100544,
 			["CLASS"] = "PRIEST",
 		},
 		["Nitwit"] = {
@@ -52,7 +52,7 @@ GMMONEY = {
 			["CLASS"] = "ROGUE",
 		},
 		["Pitchwise"] = {
-			["GOLD"] = 58966,
+			["GOLD"] = 69766,
 			["CLASS"] = "WARRIOR",
 		},
 	},

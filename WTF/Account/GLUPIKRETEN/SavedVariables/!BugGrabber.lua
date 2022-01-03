@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 3844,
+	["session"] = 3846,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -574,5 +574,13 @@ BugGrabberDB = {
 			["session"] = 3842,
 			["counter"] = 1,
 		}, -- [75]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AutoEquipCursorItem()'.",
+			["time"] = "2022/01/03 20:35:31",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `AutoEquipCursorItem'\n[string \"*:OnMouseUp\"]:4: in function `oldCharacterModelFrame_OnMouseUp'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRackButtons.lua\"]:105: in function <Interface\\AddOns\\ItemRack\\ItemRackButtons.lua:101>",
+			["session"] = 3846,
+			["counter"] = 1,
+		}, -- [76]
 	},
 }
