@@ -1,30 +1,17 @@
 local _, xVermin = ...
 
---[[ TODO
-    * Add configuration options
-        * Give option to treat buff food as low priority regular food
-        * Allow other buff foods (eg agi/str), and let user prioritize them
-        * Allow custom macro templates
-        * Prefer PVP potions/bandages in battlegrounds (they're ignored for now)
-]]
---local defaultFoodMacro = [[#showtooltip
---/use [mod:shift]<bandage>;[nocombat,mod]<buffFood>;[nocombat]<food>;[combat]<hPotions>
---]]
 local defaultFoodMacro = [[#showtooltip
-/use [nocombat,nomod]<food>
-/use [nocombat,mod]<buffFood>
+/use [nocombat]<food>
 /castsequence [combat] reset=combat <hPotions>
 ]]
+
 local defaultPetFoodMacro = [[#showtooltip <petfood>
 /cast feed pet
 /use <petfood>
 ]]
---local defaultDrinkMacro = [[#showtooltip
---/use [nocombat,mod]<manaBuff>;[nocombat]<drink>;[combat]<mPotions>
---]]
+
 local defaultDrinkMacro = [[#showtooltip
-/use [nocombat,nomod]<drink>
-/use [nocombat,mod]<buffDrink>
+/use [nocombat]<drink>
 /castsequence [combat] reset=combat <mPotions>
 ]]
 
@@ -177,7 +164,7 @@ function NeedsFoodBadly:IsUsableFood(food)
 		and select(5,GetItemInfo(food.id)) 
 		and select(5,GetItemInfo(food.id)) <= UnitLevel("player") 
 		and food.hp 
-		and not (food.hp5 or food.mp5 or food.str or food.agi or food.stam or food.int or food.spi)
+		-- and not (food.hp5 or food.mp5 or food.str or food.agi or food.stam or food.int or food.spi)
 	)
 end
 
@@ -208,11 +195,7 @@ function NeedsFoodBadly:IsUsableBuffFood(food)
 		food 
 		and select(5,GetItemInfo(food.id)) 
 		and select(5,GetItemInfo(food.id)) <= UnitLevel("player") 
-		and (
-			food.hp and 
-			food.stam and 
-			food.spi
-		)
+		and (food.hp and food.stam and food.spi)
 	)
 end
 
@@ -223,7 +206,7 @@ function NeedsFoodBadly:IsUsableDrink(food)
 		and select(5,GetItemInfo(food.id)) 
 		and select(5,GetItemInfo(food.id)) <= UnitLevel("player") 
 		and food.mp 
-		and not food.mp5
+		-- and not food.mp5
 	)
 end
 

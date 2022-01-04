@@ -1,15 +1,11 @@
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast Smite
+/cast Mind Blast
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Lesser Heal
-END
-VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/castsequence reset=2 !Shoot, null
 END
 VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -22,4 +18,12 @@ END
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Power Word: Shield
+END
+VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nodead][help][] Renew
+END
+VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,dead][help][] Resurrection
 END

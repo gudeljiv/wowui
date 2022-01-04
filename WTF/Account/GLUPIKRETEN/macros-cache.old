@@ -1,13 +1,16 @@
+VER 3 000000000000000F " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/select item:159, item:11584
+/click [btn:2]S001M;S001A
+END
 VER 3 000000000000000D "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat,nomod]item:159
-/use [nocombat,mod]<buffDrink>
+/use [nocombat]item:159
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat,nomod]item:0
-/use [nocombat,mod]item:11584
+/use [nocombat]item:117
 /castsequence [combat] reset=combat item:118
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"

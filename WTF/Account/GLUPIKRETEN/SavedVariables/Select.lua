@@ -1,11 +1,11 @@
 
 SelectSettings = {
-	["UseFlatStyle"] = false,
+	["DontSelectWithAlt"] = false,
 	["DontAddToMacroTooltip"] = false,
 	["ShowSubtext"] = true,
-	["UseWhenSelecting"] = false,
+	["EquipslotOnlySoulbound"] = false,
 	["OnlySummonableMounts"] = false,
 	["UseOnRightClick"] = false,
-	["EquipslotOnlySoulbound"] = false,
-	["DontSelectWithAlt"] = false,
+	["UseWhenSelecting"] = false,
+	["UseFlatStyle"] = true,
 }
