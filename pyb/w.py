@@ -22,11 +22,12 @@ skills = [
     {"name": "sunder armor", "key": "g", "r": 189, "g": 126, "b": 116}
 ]
 
+
 def on_press(key):
     global debug
     global aoe
     global first_press
-    
+
     try:
         if key == keyboard.Key.f12:
             debug = not debug
@@ -57,4 +58,3 @@ with keyboard.Listener(on_press=on_press) as listener:
                         pyautogui.press(skill["key"], presses=3)
 
     listener.join()
-

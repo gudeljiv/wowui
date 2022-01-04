@@ -11,7 +11,8 @@ local _, xVermin = ...
 --/use [mod:shift]<bandage>;[nocombat,mod]<buffFood>;[nocombat]<food>;[combat]<hPotions>
 --]]
 local defaultFoodMacro = [[#showtooltip
-/use [nocombat]<food>
+/use [nocombat,nomod]<food>
+/use [nocombat,mod]<buffFood>
 /castsequence [combat] reset=combat <hPotions>
 ]]
 local defaultPetFoodMacro = [[#showtooltip <petfood>
@@ -22,7 +23,8 @@ local defaultPetFoodMacro = [[#showtooltip <petfood>
 --/use [nocombat,mod]<manaBuff>;[nocombat]<drink>;[combat]<mPotions>
 --]]
 local defaultDrinkMacro = [[#showtooltip
-/use [nocombat]<drink>
+/use [nocombat,nomod]<drink>
+/use [nocombat,mod]<buffDrink>
 /castsequence [combat] reset=combat <mPotions>
 ]]
 
@@ -134,6 +136,7 @@ function NeedsFoodBadly:UpdateMacros()
 		"<%a+>",
 		{
 			["<drink>"] = "item:" .. tostring(best.drink[1] and best.drink[1].id or 0),
+			["<buffDrink>"] = "item:" .. tostring(best.buffDrink[1] and best.buffDrink[1].id or 0),
 			["<manaBuff>"] = "item:" .. tostring(best.buffDrink[1] and best.buffDrink[1].id or 0),
 			["<mPotions>"] = self:BuildSequence(best.manaGem, best.mPotion)
 			--["<mPotions>"] = 'item:'..tostring(best.mPotion[1] and best.mPotion[1].id or 0)
@@ -171,7 +174,8 @@ function NeedsFoodBadly:IsUsableFood(food)
 	(
 		food 
 		-- and food.lvl <= UnitLevel("player") 
-		and select(5,GetItemInfo(food.id)) and select(5,GetItemInfo(food.id)) <= UnitLevel("player") 
+		and select(5,GetItemInfo(food.id)) 
+		and select(5,GetItemInfo(food.id)) <= UnitLevel("player") 
 		and food.hp 
 		and not (food.hp5 or food.mp5 or food.str or food.agi or food.stam or food.int or food.spi)
 	)
@@ -202,7 +206,8 @@ function NeedsFoodBadly:IsUsableBuffFood(food)
 	return not not
 	(
 		food 
-		and select(5,GetItemInfo(food.id)) and select(5,GetItemInfo(food.id)) <= UnitLevel("player") 
+		and select(5,GetItemInfo(food.id)) 
+		and select(5,GetItemInfo(food.id)) <= UnitLevel("player") 
 		and (
 			food.hp and 
 			food.stam and 
@@ -215,7 +220,8 @@ function NeedsFoodBadly:IsUsableDrink(food)
 	return not not 
 	(
 		food 
-		and select(5,GetItemInfo(food.id)) and select(5,GetItemInfo(food.id)) <= UnitLevel("player") 
+		and select(5,GetItemInfo(food.id)) 
+		and select(5,GetItemInfo(food.id)) <= UnitLevel("player") 
 		and food.mp 
 		and not food.mp5
 	)
@@ -225,7 +231,8 @@ function NeedsFoodBadly:IsUsableBuffDrink(food)
 	return not not
 	(
 		food 
-		and select(5,GetItemInfo(food.id)) and select(5,GetItemInfo(food.id)) <= UnitLevel("player") 
+		and select(5,GetItemInfo(food.id)) 
+		and select(5,GetItemInfo(food.id)) <= UnitLevel("player") 
 		and food.mp5
 	)
 end
