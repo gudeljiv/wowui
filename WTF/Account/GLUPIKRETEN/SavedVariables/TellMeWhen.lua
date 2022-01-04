@@ -10,19 +10,19 @@ TellMeWhenDB = {
 		["Greenwise - Golemagg"] = "Warrior",
 		["Mxzq - Golemagg"] = "Hunter",
 		["Korupcija - Stonespine"] = "Warrior",
-		["Vermins - Stonespine"] = "Warrior",
 		["Mxym - Golemagg"] = "Priest",
 		["Pitchwise - Dreadnaught"] = "Warrior",
-		["Mxyzptlk - Golemagg"] = "Warlock",
+		["Vermins - Stonespine"] = "Warrior",
+		["Jaroslav - Golemagg"] = "Druid",
 		["Poklopac - Dreadnaught"] = "Hunter",
 		["Konac - Dreadnaught"] = "Priest",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
-		["Vermin - Golemagg"] = "Warrior",
+		["Mxyzptlk - Golemagg"] = "Warlock",
 		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 		["Augustin - Golemagg"] = "Mage",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
 		["Koloman - Golemagg"] = "Koloman - Golemagg",
-		["Jaroslav - Golemagg"] = "Druid",
+		["Vermin - Golemagg"] = "Warrior",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Warrior",
@@ -177,16 +177,18 @@ TellMeWhenDB = {
 			},
 		},
 		["TEST HUNTER"] = {
+			["NumGroups"] = 19,
+			["Version"] = 87101,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TRVv5Bhqdi2",
-					["Name"] = "Hunter Profile",
 					["Point"] = {
 						["y"] = -7.30746799045408,
 						["x"] = 4.18984222412109,
 						["point"] = "TOPLEFT",
 						["relativePoint"] = "TOPLEFT",
 					},
+					["Columns"] = 15,
 					["Alpha"] = 0,
 					["Scale"] = 0.600000023841858,
 					["Rows"] = 7,
@@ -540,6 +542,9 @@ TellMeWhenDB = {
 							["Type"] = "cooldown",
 							["ClockGCD"] = true,
 							["FakeHidden"] = true,
+							["ShowTimerText"] = true,
+							["BarDisplay_BarGCD"] = true,
+							["Name"] = 75,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -569,9 +574,6 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["ShowTimerText"] = true,
-							["Name"] = 75,
-							["BarDisplay_BarGCD"] = true,
 							["Conditions"] = {
 								{
 									["Name"] = "melee_range",
@@ -1718,11 +1720,10 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1TVSIOW0oWeD",
 						},
 					},
-					["Columns"] = 15,
+					["Name"] = "Hunter Profile",
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TRk_aZypIqd",
-					["Name"] = "Top Bar",
 					["Point"] = {
 						["y"] = -2.45231879086471e-05,
 						["relativeTo"] = "TMW:group:1TRW5crzGrfW",
@@ -1730,6 +1731,7 @@ TellMeWhenDB = {
 						["relativePoint"] = "BOTTOM",
 						["x"] = 1.56344934325808e-05,
 					},
+					["Columns"] = 2,
 					["SettingsPerView"] = {
 						["icon"] = {
 							["SpacingX"] = 65,
@@ -1845,7 +1847,7 @@ TellMeWhenDB = {
 							},
 						}, -- [2]
 					},
-					["Columns"] = 2,
+					["Name"] = "Top Bar",
 				}, -- [2]
 				{
 					["GUID"] = "TMW:group:1TRW5crzGrfW",
@@ -3154,6 +3156,31 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["Type"] = "conditionicon",
+							["ConditionDur"] = 5,
+							["CustomTex"] = "Attack",
+							["FakeHidden"] = true,
+							["OnlyIfCounting"] = true,
+							["ShowTimerText"] = true,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "bar1",
+									["Texts"] = {
+										"", -- [1]
+										"", -- [2]
+									},
+								},
+							},
+							["GUID"] = "TMW:icon:1T1lwuRfZ3C7",
+							["Conditions"] = {
+								{
+									["Level"] = 1,
+									["Type"] = "COUNTER",
+									["Name"] = "menu_open_c",
+									["AndOr"] = "OR",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["ConditionDurEnabled"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Counter",
@@ -3187,31 +3214,6 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["CustomTex"] = "Attack",
-							["FakeHidden"] = true,
-							["OnlyIfCounting"] = true,
-							["ConditionDur"] = 5,
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "bar1",
-									["Texts"] = {
-										"", -- [1]
-										"", -- [2]
-									},
-								},
-							},
-							["GUID"] = "TMW:icon:1T1lwuRfZ3C7",
-							["Conditions"] = {
-								{
-									["AndOr"] = "OR",
-									["Level"] = 1,
-									["Name"] = "menu_open_c",
-									["Type"] = "COUNTER",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["ConditionDurEnabled"] = true,
-							["ShowTimerText"] = true,
 						}, -- [2]
 					},
 					["LayoutDirection"] = 4,
@@ -5178,10 +5180,10 @@ TellMeWhenDB = {
 					},
 				}, -- [19]
 			},
-			["NumGroups"] = 19,
-			["Version"] = 87101,
 		},
 		["Main profile"] = {
+			["Version"] = 86907,
+			["NumGroups"] = 7,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TQuFk14Ix42",
@@ -5227,6 +5229,8 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
+							["DurationMin"] = 15,
+							["DurationMinEnabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -5235,8 +5239,6 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["DurationMin"] = 15,
-							["DurationMinEnabled"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -5548,14 +5550,12 @@ TellMeWhenDB = {
 					},
 				}, -- [7]
 			},
-			["Version"] = 86907,
-			["NumGroups"] = 7,
 		},
-		["Mxym - Golemagg"] = {
-			["Version"] = 86907,
+		["Pitchwise - Dreadnaught"] = {
+			["Version"] = 91200,
 			["Groups"] = {
 				{
-					["GUID"] = "TMW:group:1V9lxa5qigKR",
+					["GUID"] = "TMW:group:1Xm47LbdEYcq",
 				}, -- [1]
 			},
 		},
@@ -9830,14 +9830,8 @@ TellMeWhenDB = {
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1Ov1GPZDfFXX",
-					["Point"] = {
-						["y"] = -53.132709187559,
-						["relativeTo"] = "TMW:group:1Qogrdv2HV3Z",
-						["point"] = "BOTTOM",
-						["relativePoint"] = "TOP",
-						["x"] = 0.0370833462401805,
-					},
 					["Name"] = "Main Rotation (Meta)",
+					["Columns"] = 1,
 					["EnabledSpecs"] = {
 						[72] = false,
 						[73] = false,
@@ -9952,7 +9946,13 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1R6WKU2symQa",
 						}, -- [1]
 					},
-					["Columns"] = 1,
+					["Point"] = {
+						["y"] = -53.132709187559,
+						["relativeTo"] = "TMW:group:1Qogrdv2HV3Z",
+						["point"] = "BOTTOM",
+						["relativePoint"] = "TOP",
+						["x"] = 0.0370833462401805,
+					},
 				}, -- [4]
 				{
 					["GUID"] = "TMW:group:1QvCPR5qcfPC",
@@ -10484,7 +10484,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["BarDisplay_Reverse"] = true,
+							["CustomTex"] = "12294",
 							["Conditions"] = {
 								{
 									["BitFlags"] = {
@@ -10494,8 +10494,8 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["CustomTex"] = "12294",
 							["BarDisplay_Invert"] = true,
+							["BarDisplay_Reverse"] = true,
 						}, -- [7]
 						{
 							["Enabled"] = true,
@@ -10994,10 +10994,10 @@ TellMeWhenDB = {
 							},
 							["Conditions"] = {
 								{
-									["AndOr"] = "OR",
 									["Level"] = 1,
-									["Name"] = "menu_open_c",
 									["Type"] = "COUNTER",
+									["Name"] = "menu_open_c",
+									["AndOr"] = "OR",
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -11468,6 +11468,8 @@ TellMeWhenDB = {
 		},
 		["Hunter"] = {
 			["Locked"] = true,
+			["Version"] = 91200,
+			["NumGroups"] = 3,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -11630,8 +11632,6 @@ TellMeWhenDB = {
 					["OnlyInCombat"] = true,
 				}, -- [3]
 			},
-			["Version"] = 91200,
-			["NumGroups"] = 3,
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 			["Locked"] = true,
@@ -11653,6 +11653,8 @@ TellMeWhenDB = {
 		},
 		["Warrior"] = {
 			["Locked"] = true,
+			["NumGroups"] = 5,
+			["Version"] = 91200,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TQuFk14Ix42",
@@ -11698,7 +11700,6 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
-							["DurationMin"] = 15,
 							["DurationMinEnabled"] = true,
 							["Conditions"] = {
 								{
@@ -11708,6 +11709,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
+							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -12013,14 +12015,12 @@ TellMeWhenDB = {
 					["Locked"] = true,
 				}, -- [5]
 			},
-			["NumGroups"] = 5,
-			["Version"] = 91200,
 		},
-		["Pitchwise - Dreadnaught"] = {
+		["Konac - Dreadnaught"] = {
 			["Version"] = 91200,
 			["Groups"] = {
 				{
-					["GUID"] = "TMW:group:1Xm47LbdEYcq",
+					["GUID"] = "TMW:group:1Xql=ZXCq2=U",
 				}, -- [1]
 			},
 		},
@@ -12034,7 +12034,6 @@ TellMeWhenDB = {
 		},
 		["Warlock"] = {
 			["Locked"] = true,
-			["NumGroups"] = 4,
 			["Version"] = 86907,
 			["Groups"] = {
 				{
@@ -12198,6 +12197,7 @@ TellMeWhenDB = {
 					["Name"] = "Warlock Spells",
 				}, -- [4]
 			},
+			["NumGroups"] = 4,
 		},
 		["Testxv - Golemagg"] = {
 			["Locked"] = true,
@@ -12244,7 +12244,6 @@ TellMeWhenDB = {
 		},
 		["Druid"] = {
 			["Locked"] = true,
-			["NumGroups"] = 3,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -12371,6 +12370,7 @@ TellMeWhenDB = {
 				}, -- [3]
 			},
 			["Version"] = 86907,
+			["NumGroups"] = 3,
 		},
 		["Antun - Golemagg"] = {
 			["Locked"] = true,
@@ -12757,11 +12757,11 @@ TellMeWhenDB = {
 			["Version"] = 91200,
 			["Locked"] = true,
 		},
-		["Konac - Dreadnaught"] = {
-			["Version"] = 91200,
+		["Mxym - Golemagg"] = {
+			["Version"] = 86907,
 			["Groups"] = {
 				{
-					["GUID"] = "TMW:group:1Xql=ZXCq2=U",
+					["GUID"] = "TMW:group:1V9lxa5qigKR",
 				}, -- [1]
 			},
 		},

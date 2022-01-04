@@ -73,7 +73,7 @@ ChocolateBarDB = {
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["moveFrames"] = false,
+			["forceColor"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -84,7 +84,7 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["fixedStrata"] = true,
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -446,17 +446,17 @@ ChocolateBarDB = {
 					["customLabel"] = "N",
 				},
 			},
-			["gap"] = 0,
-			["fontName"] = "Friz Quadrata TT",
-			["forceColor"] = false,
+			["desaturated"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
-			["desaturated"] = false,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
+			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fontName"] = "Friz Quadrata TT",
 			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
@@ -571,6 +571,6 @@ CB_PlayedTime = {
 		["total"] = 21359,
 	},
 	["Konac-Dreadnaught"] = {
-		["total"] = 14175,
+		["total"] = 17327,
 	},
 }

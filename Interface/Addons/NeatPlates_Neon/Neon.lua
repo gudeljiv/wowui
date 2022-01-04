@@ -10,9 +10,9 @@ local fontsize = 10
 --local fontsize = 12;
 local EmptyTexture = "Interface\\Addons\\NeatPlatesHub\\shared\\Empty"
 local VerticalAdjustment = 12
-local CastBarHorizontalAdjustment = 22
-local CastBarVerticalAdjustment = VerticalAdjustment - 18
-local NameTextVerticalAdjustment = VerticalAdjustment - 9
+local CastBarHorizontalAdjustment = 11
+local CastBarVerticalAdjustment = VerticalAdjustment - 9
+local NameTextVerticalAdjustment = VerticalAdjustment + 9
 
 -- Non-Latin Font Bypass
 local NonLatinLocales = { ["koKR"] = true, ["zhCN"] = true, ["zhTW"] = true, }

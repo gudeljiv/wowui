@@ -1098,7 +1098,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 749.5072021484375,
+		["m_iFrameBottom"] = 794.4335327148438,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 1774.620849609375,
 		["m_bColourDoneOrFailed"] = true,
@@ -1415,28 +1415,52 @@ MonkeyQuestConfig = {
 	},
 	["Dreadnaught|Konac"] = {
 		["m_aQuestList"] = {
-			["Slaying the Beast - false"] = {
+			["Disrupt the Attacks - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Hidden Enemies - false"] = {
 				["m_bChecked"] = true,
 			},
+			["Searching for the Lost Satchel - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Plainstrider Menace - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Testing an Enemy's Strength - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Crossroads Conscription - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Harpy Raiders - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Forgotten Pools - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Barrens - true"] = {
+				["m_bChecked"] = false,
+			},
+			["Slaying the Beast - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Ride to Orgrimmar - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Meats to Orgrimmar - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Raptor Thieves - false"] = {
+				["m_bChecked"] = true,
+			},
 			["Ragefire Chasm - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Orgrimmar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Conscript of the Horde - false"] = {
+			["Supplies for the Crossroads - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Dark Storms - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Securing the Lines - false"] = {
 				["m_bChecked"] = true,
 			},
 		},

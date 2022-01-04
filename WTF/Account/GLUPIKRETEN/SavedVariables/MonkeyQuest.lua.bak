@@ -597,37 +597,19 @@ MonkeyQuestConfig = {
 	},
 	["Dreadnaught|Konac"] = {
 		["m_aQuestList"] = {
-			["Priest - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Hex of Weakness - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Admiral's Orders - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Conscript of the Horde - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Orgrimmar - true"] = {
-				["m_bChecked"] = true,
-			},
 			["Hidden Enemies - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Winds in the Desert - false"] = {
+			["Slaying the Beast - false"] = {
 				["m_bChecked"] = true,
 			},
-			["From The Wreckage.... - false"] = {
+			["Crossroads Conscription - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Dark Storms - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Securing the Lines - false"] = {
+			["Ragefire Chasm - true"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1198,7 +1180,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 760.7387084960938,
+		["m_iFrameBottom"] = 798.433349609375,
 		["m_bHideCompletedQuests"] = false,
 		["m_iFrameLeft"] = 1774.620849609375,
 		["m_bColourDoneOrFailed"] = true,
