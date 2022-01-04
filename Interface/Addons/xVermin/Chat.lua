@@ -151,6 +151,7 @@ local function SetChat()
 	ChatFrame7:SetHeight(250)
 	ChatFrame7:Show()
 	ChatFrame7Tab:Show()
+	ChatFrame7:EnableMouse(false)
 
 	-- local frame = ChatFrame8
 	-- FCF_SetWindowName(frame, "XP")
