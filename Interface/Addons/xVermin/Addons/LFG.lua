@@ -21,7 +21,7 @@ f:SetScript(
 					}
 				)
 				GroupBulletinBoardFrame:SetBackdropColor(0, 0, 0, 0.6)
-				GroupBulletinBoardFrame:SetFrameStrata("HIGH")
+				GroupBulletinBoardFrame:SetFrameStrata("DIALOG")
 			end
 		end
 	end

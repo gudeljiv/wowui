@@ -4,9 +4,6 @@ WeakAurasOptionsSaved = {
 	["needsRebuild"] = false,
 	["version"] = "3.7.3",
 	["magnetAlign"] = true,
-	["savedSnippets"] = {
-	},
-	["spellCacheAchivements"] = true,
 	["spellCache"] = {
 		["Enchant Cloak - Greater Defense"] = {
 			["spells"] = {
@@ -26392,7 +26389,7 @@ WeakAurasOptionsSaved = {
 		["Shoot (TEST)"] = {
 			["spells"] = {
 				[3018] = 132222,
-				[19881] = 135139,
+				[19881] = 132317,
 			},
 		},
 		["Pattern: Spitfire Gauntlets"] = {
@@ -32275,7 +32272,7 @@ WeakAurasOptionsSaved = {
 		},
 		["Attack"] = {
 			["spells"] = {
-				[6603] = 133485,
+				[6603] = 132395,
 				[6350] = 135825,
 				[10435] = 135825,
 				[6352] = 135825,
@@ -54577,7 +54574,7 @@ WeakAurasOptionsSaved = {
 				[18561] = 132222,
 				[16779] = 132222,
 				[17353] = 132222,
-				[5019] = 135139,
+				[5019] = 132317,
 			},
 		},
 		["Great Rage Potion"] = {
@@ -62296,7 +62293,7 @@ WeakAurasOptionsSaved = {
 		},
 		["Auto Shot"] = {
 			["spells"] = {
-				[75] = 135139,
+				[75] = 132369,
 				[1583] = 132369,
 			},
 		},
@@ -62739,6 +62736,9 @@ WeakAurasOptionsSaved = {
 				[18822] = 136154,
 			},
 		},
+	},
+	["spellCacheAchivements"] = true,
+	["savedSnippets"] = {
 	},
 	["build"] = "41511",
 }

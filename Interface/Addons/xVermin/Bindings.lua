@@ -18,7 +18,8 @@ local function FixBindings()
 	SetBinding("CTRL-SHIFT-C", "TOGGLECOMPANIONJOURNAL", 1)
 	SetBinding("CTRL-SHIFT-P", "TOGGLEPETJOURNAL", 1)
 
-	SetBinding("L", "MONKEYQUEST_CLOSE", 1)
+	-- SetBinding("L", "MONKEYQUEST_CLOSE", 1)
+	SetBinding("L", "TOGGLEQUESTLOG", 1)
 	SetBinding("SHIFT-K", "BAGNON_KEYS_TOGGLE", 1)
 
 	if xVermin.Class == ("HUNTER" or "WARLOCK") then

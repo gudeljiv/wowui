@@ -5,10 +5,10 @@ import keyboard
 import random
 from time import gmtime, strftime
 from pynput import keyboard
+import win32gui
 
 aoe = False
 debug = False
-first_press = True
 
 x = 1280
 y = 860
@@ -26,7 +26,6 @@ skills = [
 def on_press(key):
     global debug
     global aoe
-    global first_press
 
     try:
         if key == keyboard.Key.f12:
@@ -41,10 +40,16 @@ def on_press(key):
 
 with keyboard.Listener(on_press=on_press) as listener:
     while True:
+
+        active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
+
         if debug:
             time.sleep(1)
-            print("coords:", pyautogui.pixel(x, y))
+            print("coords:", pyautogui.pixel(x, y), active_window)
         else:
+            if(active_window != "World of Warcraft"):
+                continue
+
             for skill in skills:
                 if pyautogui.pixel(x, y)[0] == skill["r"] and pyautogui.pixel(x, y)[1] == skill["g"] and pyautogui.pixel(x, y)[2] == skill["b"]:
                     if "aoe" in skill and skill["aoe"] == aoe:
@@ -57,4 +62,4 @@ with keyboard.Listener(on_press=on_press) as listener:
                         print(skill["name"], skill["key"])
                         pyautogui.press(skill["key"], presses=3)
 
-    listener.join()
+    # listener.join()

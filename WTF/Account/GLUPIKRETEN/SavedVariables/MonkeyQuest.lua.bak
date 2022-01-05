@@ -1098,9 +1098,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 794.4335327148438,
+		["m_iFrameBottom"] = 926.9656372070312,
 		["m_bHideTitleButtons"] = false,
-		["m_iFrameLeft"] = 1774.620849609375,
+		["m_iFrameLeft"] = 2010.023071289063,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -1117,7 +1117,7 @@ MonkeyQuestConfig = {
 		["m_strMidObjectiveColour"] = "|cFFFFFF00",
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1036.137817382813,
+		["m_iFrameTop"] = 1036.138061523438,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowNumQuests"] = true,
@@ -1132,44 +1132,44 @@ MonkeyQuestConfig = {
 			["Miner's Fortune - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Stolen Booty - false"] = {
+			["Leaders of the Fang - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Stolen Silver - false"] = {
+			["Warrior - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Altered Beings - false"] = {
+			["Hezrul Bloodmark - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Echeyakee - false"] = {
+			["Jorn Skyseer - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Samophlange - false"] = {
+			["Speak with Ruga - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Harpy Lieutenants - false"] = {
+			["Weapons of Choice - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Barrens - true"] = {
 				["m_bChecked"] = false,
 			},
-			["Raptor Horns - false"] = {
+			["Smart Drinks - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Consumed by Hatred - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Verog the Dervish - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Guns of Northwatch - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Trouble at the Docks - false"] = {
+			["Serpentbloom - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Wailing Caverns - true"] = {
 				["m_bChecked"] = false,
+			},
+			["Trouble at the Docks - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Egg Hunt - false"] = {
+				["m_bChecked"] = true,
 			},
 			["Tribes at War - false"] = {
 				["m_bChecked"] = true,
@@ -1421,29 +1421,29 @@ MonkeyQuestConfig = {
 			["Hidden Enemies - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Searching for the Lost Satchel - false"] = {
+			["Testing an Enemy's Strength - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Plainstrider Menace - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Testing an Enemy's Strength - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Crossroads Conscription - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Harpy Raiders - false"] = {
+			["Ragefire Chasm - true"] = {
 				["m_bChecked"] = true,
 			},
 			["The Forgotten Pools - false"] = {
 				["m_bChecked"] = true,
 			},
+			["Searching for the Lost Satchel - false"] = {
+				["m_bChecked"] = true,
+			},
 			["The Barrens - true"] = {
 				["m_bChecked"] = false,
-			},
-			["Slaying the Beast - false"] = {
-				["m_bChecked"] = true,
 			},
 			["Ride to Orgrimmar - false"] = {
 				["m_bChecked"] = true,
@@ -1454,13 +1454,13 @@ MonkeyQuestConfig = {
 			["Raptor Thieves - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Ragefire Chasm - true"] = {
+			["Slaying the Beast - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Supplies for the Crossroads - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
+			["Harpy Raiders - false"] = {
 				["m_bChecked"] = true,
 			},
 		},

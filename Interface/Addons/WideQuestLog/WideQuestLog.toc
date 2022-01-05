@@ -1,0 +1,5 @@
+## Interface: 11401
+## Title: Wide Quest Log
+## Author: clonevince
+## Notes: Doubles the Width of the Quest Log
+WideQuestLog.lua

@@ -15,9 +15,9 @@ Blizzard_CompactRaidFrames: disabled
 Blizzard_CUFProfiles: disabled
 TownsfolkTracker: disabled
 MonkeyBuddy: enabled
-MonkeyLibrary: enabled
-MonkeyQuest: enabled
-MonkeyQuestLog: enabled
+MonkeyLibrary: disabled
+MonkeyQuest: disabled
+MonkeyQuestLog: disabled
 Details: enabled
 Details_DataStorage: enabled
 Details_Streamer: enabled
@@ -105,7 +105,7 @@ RingMenu: enabled
 Select: enabled
 SharedMedia: enabled
 SimpleRaidTargetIcons: enabled
-TomTom: disabled
+TomTom: enabled
 TrainAll: enabled
 WeakAuras: enabled
 WeakAurasModelPaths: enabled
@@ -118,3 +118,4 @@ nBuff: enabled
 nMainbar: enabled
 nMinimap: enabled
 xVermin: enabled
+aBag: disabled

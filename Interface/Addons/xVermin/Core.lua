@@ -43,8 +43,8 @@ SlashCmdList["RELOAD"] = function(msg)
 end
 
 local function FixCVar()
-	SetCVar("autoQuestWatch", 0)
-	SetCVar("autoQuestProgress", 0)
+	SetCVar("autoQuestWatch", 1)
+	SetCVar("autoQuestProgress", 1)
 	SetCVar("instantQuestText", 1)
 	SetCVar("nameplateMaxDistance", 80)
 	SetCVar("ffxGlow", "1")

@@ -1,20 +1,3 @@
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Mind Blast
-END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover,exists,nodead][help][] Lesser Heal
-END
-VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast Power Word: Fortitude
-END
-VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast Shadow Word: Pain
-END
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Power Word: Shield
@@ -26,4 +9,29 @@ END
 VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists,dead][help][] Resurrection
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Mind Blast
+END
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nodead][help][] Lesser Heal
+END
+VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nodead][help][] Lesser Heal(Rank 1)
+END
+VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Power Word: Fortitude
+END
+VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Shadow Word: Pain
+END
+VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nodead][help][] Heal
 END

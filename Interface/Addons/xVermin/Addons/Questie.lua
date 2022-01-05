@@ -1,27 +1,33 @@
 local _, xVermin = ...
 
--- local f = CreateFrame("Frame")
--- f:SetScript(
--- 	"OnEvent",
--- 	function(self, event, isInitialLogin, isReloadingUi)
--- 		if isInitialLogin or isReloadingUi then
--- 			if (IsAddOnLoaded("Questie")) then
--- local OriginalSetPointOmen = getmetatable(OmenAnchor).__index.SetPoint
--- local function MoveOmen(self)
--- 	self:ClearAllPoints()
--- 	OriginalSetPointOmen(self, "CENTER", 0, -237)
--- end
--- hooksecurefunc(OmenAnchor, "SetPoint", MoveOmen)
--- MoveOmen(OmenAnchor)
--- QuestieTracker:ClearAllPoints()
--- QuestieTracker:SetPoint("TOPRIGHT", "CustomContainer_2", "TOPLEFT", -10, 0)
--- QuestieTracker:CreateBeautyBorder(8)
--- QuestieTracker.ClearAllPoints = function()
--- end
--- QuestieTracker.SetPoint = function()
--- end
--- 			end
--- 		end
--- 	end
--- )
--- f:RegisterEvent("PLAYER_ENTERING_WORLD")
+C_Timer.NewTicker(1, function(self)
+	if Questie_BaseFrame then
+			Questie_BaseFrame:HookScript("OnUpdate", function(self)
+
+				if not self.SetBackdrop then
+					Mixin(self, BackdropTemplateMixin)
+				end
+
+				self:ClearAllPoints()
+				self:SetPoint("TOPRIGHT", "CustomContainer_2", "BOTTOMRIGHT", 0, -10)
+				self:CreateBeautyBorder(8)
+				self:SetBackdrop(
+					{
+						bgFile = "Interface\\Buttons\\WHITE8x8",
+						edgeFile = "",
+						tile = false,
+						tileSize = 0,
+						edgeSize = 0,
+						insets = {left = 0, right = 0, top = 0, bottom = 0}
+					}
+				)
+				self:SetBackdropColor(0, 0, 0, 0.6)
+				self.ClearAllPoints = function() end
+				self.SetPoint = function() end
+
+				TomTomCrazyArrow:SetPoint("TOPRIGHT", self, "TOPLEFT", -20, -10)
+			end)
+
+		self:Cancel()
+	end
+end)

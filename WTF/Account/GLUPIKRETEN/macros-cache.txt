@@ -5,19 +5,24 @@ VER 3 000000000000000F " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000000000D "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1179
+/use [nocombat]item:1205
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4538
-/castsequence [combat] reset=combat item:858
+/use [nocombat]item:3771
+/castsequence [combat] reset=combat 
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 #showtooltip item:3771
 /cast feed pet
 /use item:3771
 END
+VER 3 0000000000000010 "T2" "132089"
+/run local T = C_Timer.NewTicker(1, function() print(1) T:Cancel() end)
+END
 VER 3 000000000000000B "TEST" "132089"
-/run print(MkQL_RewardItem1_Btn.type)
+/run Questie_BaseFrame:SetPoint("TOPRIGHT", "CustomContainer_2", "BOTTOMRIGHT", 0, -10)
+/run Questie_BaseFrame:CreateBeautyBorder(8)
+/run TomTomCrazyArrow:SetPoint("TOPRIGHT", "Questie_BaseFrame", "TOPLEFT", -20, -10)
 END

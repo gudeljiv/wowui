@@ -603,19 +603,19 @@ MonkeyQuestConfig = {
 			["Hidden Enemies - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
+			["Harpy Raiders - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Plainstrider Menace - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Harpy Raiders - false"] = {
+			["Ragefire Chasm - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Crossroads Conscription - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Ragefire Chasm - true"] = {
+			["Slaying the Beast - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Forgotten Pools - false"] = {
@@ -636,7 +636,7 @@ MonkeyQuestConfig = {
 			["The Barrens - true"] = {
 				["m_bChecked"] = false,
 			},
-			["Slaying the Beast - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Supplies for the Crossroads - false"] = {
@@ -1312,80 +1312,47 @@ MonkeyQuestConfig = {
 	},
 	["Dreadnaught|Pitchwise"] = {
 		["m_aQuestList"] = {
-			["Serena Bloodfeather - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Stolen Silver - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hezrul Bloodmark - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Egg Hunt - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Raptor Horns - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Speak with Ruga - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Serpentbloom - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Nara Wildmane - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Trouble at the Docks - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Jorn Skyseer - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Miner's Fortune - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Echeyakee - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Warrior - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Leaders of the Fang - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Guns of Northwatch - false"] = {
+			["Warrior - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Hezrul Bloodmark - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Jorn Skyseer - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Weapons of Choice - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Samophlange - false"] = {
+			["Egg Hunt - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Verog the Dervish - false"] = {
+			["Speak with Ruga - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Barrens - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Altered Beings - false"] = {
+			["Smart Drinks - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Consumed by Hatred - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Stolen Booty - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hamuul Runetotem - false"] = {
+			["Serpentbloom - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Wailing Caverns - true"] = {
 				["m_bChecked"] = false,
 			},
-			["The Angry Scytheclaws - false"] = {
+			["Trouble at the Docks - false"] = {
 				["m_bChecked"] = true,
+			},
+			["The Barrens - true"] = {
+				["m_bChecked"] = false,
 			},
 			["Tribes at War - false"] = {
 				["m_bChecked"] = true,
@@ -1416,7 +1383,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 623.103515625,
+		["m_iFrameBottom"] = 983.1036376953125,
 		["m_bHideCompletedQuests"] = false,
 		["m_iFrameLeft"] = 2010.023071289063,
 		["m_bColourDoneOrFailed"] = true,
