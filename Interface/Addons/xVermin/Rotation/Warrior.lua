@@ -1,11 +1,32 @@
 local _, xVermin = ...
 
+function AOE(type)
+	local type = type or "bool"
+	local inRange = 0
+
+	for i = 1, 40 do
+		if UnitExists("nameplate" .. i) and IsSpellInRange("Cleave", "nameplate" .. i) == 1 then
+			inRange = inRange + 1
+		end
+	end
+	if type == "bool" then
+		if inRange > 1 then
+			return true
+		else
+			return false
+		end
+	end
+	if type == "number" then
+		return inRange
+	end
+end
+
 local f = CreateFrame("Frame", "RotationFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
-f:SetWidth(60)
-f:SetHeight(60)
-f:SetPoint("LEFT", UIParent, "LEFT", 0, 0)
+f:SetWidth(5)
+f:SetHeight(5)
+f:ClearAllPoints()
+f:SetPoint("RIGHT", CustomContainer_Combat, "LEFT", -5, 0)
 f:SetFrameStrata("BACKGROUND")
-f:CreateBeautyBorder(6)
 f:SetBackdrop(
 	{
 		bgFile = xVermin.Config.background.white,
@@ -16,34 +37,48 @@ f:SetBackdrop(
 		insets = {left = 0, right = 0, top = 0, bottom = 0}
 	}
 )
-f:Hide();
 
 
-local function CheckDebuff(d)
-	for i=1,40 do 
-		local debuff = UnitDebuff("target",i)
-		if debuff then 
-			if debuff == d then
-				return false
+PlayerFrame:HookScript(
+	"OnUpdate",
+	function()
+		if InCombatLockdown() then 
+			if AOE() then
+				f:SetBackdropColor(1, 0, 0, 1)
 			else
-				return true
+				f:SetBackdropColor(0, 1, 0, 1)
 			end
+		else
+			f:SetBackdropColor(0, 0, 1, 1)
 		end
 	end
-end
+)
 
-local function Show()
-	if not InCombatLockdown() then return end
+-- local function CheckDebuff(d)
+-- 	for i=1,40 do 
+-- 		local debuff = UnitDebuff("target",i)
+-- 		if debuff then 
+-- 			if debuff == d then
+-- 				return false
+-- 			else
+-- 				return true
+-- 			end
+-- 		end
+-- 	end
+-- end
+
+-- local function Show()
+-- 	if not InCombatLockdown() then return end
 	
-	t_hp_percentage = tonumber(string.format("%.0f", UnitHealth("target") / UnitHealthMax("target") * 100))
+-- 	t_hp_percentage = tonumber(string.format("%.0f", UnitHealth("target") / UnitHealthMax("target") * 100))
 
-	if not CheckDebuff("Rend") and t_hp_percentage > 20 and not UnitIsDead("target") then
-		f:SetBackdropColor(1, 0, 0, 1)
-		f:Show()
-	else
-		f:Hide()
-	end
-end
+-- 	if not CheckDebuff("Rend") and t_hp_percentage > 20 and not UnitIsDead("target") then
+-- 		f:SetBackdropColor(1, 0, 0, 1)
+-- 		f:Show()
+-- 	else
+-- 		f:Hide()
+-- 	end
+-- end
 
 -- TargetFrame:HookScript("OnUpdate", Show)
 -- TargetFrame:HookScript(

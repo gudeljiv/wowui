@@ -6,13 +6,13 @@ SetBindingClick("SHIFT-F2", F2:GetName())
 F1:SetScript(
 	"OnClick",
 	function(self, event)
-		print("DPS")
+		print("Single target mode")
 	end
 )
 
 F2:SetScript(
 	"OnClick",
 	function(self, event)
-		print("TANK")
+		print("AOE mode")
 	end
 )

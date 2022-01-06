@@ -5,12 +5,12 @@ VER 3 000000000000000F " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000000000D "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1205
-/castsequence [combat] reset=combat 
+/use [nocombat]item:1179
+/castsequence [combat] reset=combat item:3385
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:3771
+/use [nocombat]item:1114
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
@@ -18,11 +18,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /cast feed pet
 /use item:3771
 END
-VER 3 0000000000000010 "T2" "132089"
-/run local T = C_Timer.NewTicker(1, function() print(1) T:Cancel() end)
-END
 VER 3 000000000000000B "TEST" "132089"
-/run Questie_BaseFrame:SetPoint("TOPRIGHT", "CustomContainer_2", "BOTTOMRIGHT", 0, -10)
-/run Questie_BaseFrame:CreateBeautyBorder(8)
-/run TomTomCrazyArrow:SetPoint("TOPRIGHT", "Questie_BaseFrame", "TOPLEFT", -20, -10)
+/run RotationFrame:ClearAllPoints()
+/run RotationFrame:SetPoint("RIGHT", CustomContainer_Combat, "LEFT", -5, 0)
 END

@@ -69,7 +69,7 @@ f:SetScript(
 				"OnShow",
 				function(self)
 					QuestTimerFrame:ClearAllPoints()
-					QuestTimerFrame:SetPoint("BOTTOMRIGHT", CustomContainer_1, "BOTTOMLEFT", 0, -9)
+					QuestTimerFrame:SetPoint("BOTTOMRIGHT", CustomContainer_2, "BOTTOMLEFT", 0, -9)
 				end
 			)
 
@@ -77,7 +77,7 @@ f:SetScript(
 				"OnUpdate",
 				function(self)
 					QuestTimerFrame:ClearAllPoints()
-					QuestTimerFrame:SetPoint("BOTTOMRIGHT", CustomContainer_1, "BOTTOMLEFT", 0, -9)
+					QuestTimerFrame:SetPoint("BOTTOMRIGHT", CustomContainer_2, "BOTTOMLEFT", 0, -9)
 				end
 			)
 
