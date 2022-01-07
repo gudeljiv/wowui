@@ -16,14 +16,14 @@ function RepositionLootFrames()
 				frame:ClearAllPoints()
 				frame:SetPoint("LEFT", CustomContainer_Combat, "RIGHT", 380, 250)
 				-- frame:CreateBeautyBorder(8)
-				frame:SetScale(0.8)
+				frame:SetScale(1)
 			end
 		elseif i > 1 then
 			if frame and CanAccessObject(frame) then
 				frame:ClearAllPoints()
 				frame:SetPoint("BOTTOM", "GroupLootFrame" .. (i - 1), "TOP", 0, 5)
 				-- frame:CreateBeautyBorder(8)
-				frame:SetScale(0.8)
+				frame:SetScale(1)
 			end
 		end
 	end
