@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
-	["_10000"] = 200,
-	["_500"] = 5,
-	["_1000000"] = 2500,
 	["_200000"] = 1000,
 	["STARTING_DISCOUNT"] = 5,
-	["LOG_DE_DATA_X"] = true,
+	["_1000000"] = 2500,
 	["_5000000"] = 10000,
+	["LOG_DE_DATA_X"] = true,
+	["_500"] = 5,
+	["_10000"] = 200,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 	["Pagan Belt of the Owl"] = {
@@ -68,9 +68,9 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "2842:0:0:0:0",
 		["7049596"] = "590:1",
 	},
-	["Blue Leather Bag"] = {
-		["is"] = "856:0:0:0:0",
-		["7064565"] = "2300:1",
+	["Bard's Boots of the Eagle"] = {
+		["is"] = "6557:0:0:843:0",
+		["7064565"] = "12200:1",
 	},
 	["Coral Band of the Bear"] = {
 		["is"] = "11994:0:0:1185:0",
@@ -84,17 +84,17 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "4571:0:0:19:0",
 		["7050113"] = "5400:1",
 	},
-	["Lupine Handwraps of Arcane Wrath"] = {
-		["is"] = "15016:0:0:1801:0",
-		["7050113"] = "9900:1",
+	["Robust Bracers of Nature's Wrath"] = {
+		["is"] = "15122:0:0:1993:0",
+		["7059695"] = "12100:1",
 	},
 	["Shadowgem"] = {
 		["is"] = "1210:0:0:0:0",
 		["7050252"] = "245:1",
 	},
-	["Fire Wand"] = {
-		["is"] = "5069:0:0:0:0",
-		["7050252"] = "595:1",
+	["Blue Leather Bag"] = {
+		["is"] = "856:0:0:0:0",
+		["7064565"] = "2300:1",
 	},
 	["War Torn Shield of the Bear"] = {
 		["is"] = "15486:0:0:1179:0",
@@ -108,9 +108,9 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "9778:0:0:18:0",
 		["7064565"] = "4400:1",
 	},
-	["Bard's Boots of the Eagle"] = {
-		["is"] = "6557:0:0:843:0",
-		["7064565"] = "12200:1",
+	["Fire Wand"] = {
+		["is"] = "5069:0:0:0:0",
+		["7050252"] = "595:1",
 	},
 	["Bronze Framework"] = {
 		["is"] = "4382:0:0:0:0",
@@ -124,9 +124,9 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "5467:0:0:0:0",
 		["7055360"] = "211:5",
 	},
-	["Robust Bracers of Nature's Wrath"] = {
-		["is"] = "15122:0:0:1993:0",
-		["7059695"] = "12100:1",
+	["Lupine Handwraps of Arcane Wrath"] = {
+		["is"] = "15016:0:0:1801:0",
+		["7050113"] = "9900:1",
 	},
 	["Ancestral Tunic"] = {
 		["is"] = "3292:0:0:0:0",
@@ -295,13 +295,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1000,
 			["sc"] = 3,
 		},
-		["Barbaric Loincloth"] = {
-			["H3212"] = 400,
-			["cc"] = 4,
-			["id"] = "3309:0:0:0:0",
-			["mr"] = 400,
-			["sc"] = 1,
-		},
 		["Bolt of Silk Cloth"] = {
 			["H3212"] = 2100,
 			["cc"] = 7,
@@ -315,6 +308,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "2592:0:0:0:0",
 			["mr"] = 177,
 			["sc"] = 0,
+		},
+		["Barbaric Loincloth"] = {
+			["H3212"] = 400,
+			["cc"] = 4,
+			["id"] = "3309:0:0:0:0",
+			["mr"] = 400,
+			["sc"] = 1,
 		},
 		["Ivycloth Gloves of the Owl"] = {
 			["H3212"] = 4000,
@@ -359,19 +359,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 699,
 			["sc"] = 0,
 		},
-		["Mageweave Cloth"] = {
-			["H3212"] = 1500,
+		["Bolt of Runecloth"] = {
+			["H3212"] = 30000,
 			["cc"] = 7,
-			["id"] = "4338:0:0:0:0",
-			["mr"] = 1500,
+			["id"] = "14048:0:0:0:0",
+			["mr"] = 30000,
 			["sc"] = 0,
 		},
-		["Aboriginal Loincloth of the Owl"] = {
-			["H3212"] = 900,
-			["cc"] = 4,
-			["id"] = "14119:0:0:760:0",
-			["mr"] = 900,
-			["sc"] = 1,
+		["Linen Cloth"] = {
+			["H3212"] = 20,
+			["cc"] = 7,
+			["id"] = "2589:0:0:0:0",
+			["mr"] = 20,
+			["sc"] = 0,
 		},
 		["Bloodspattered Loincloth of the Bear"] = {
 			["H3212"] = 1800,
@@ -395,11 +395,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 4595,
 			["sc"] = 1,
 		},
-		["Bolt of Runecloth"] = {
-			["H3212"] = 30000,
+		["Mageweave Cloth"] = {
+			["H3212"] = 1500,
 			["cc"] = 7,
-			["id"] = "14048:0:0:0:0",
-			["mr"] = 30000,
+			["id"] = "4338:0:0:0:0",
+			["mr"] = 1500,
 			["sc"] = 0,
 		},
 		["Barbaric Cloth Cloak"] = {
@@ -437,12 +437,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 899,
 			["sc"] = 3,
 		},
-		["Linen Cloth"] = {
-			["H3212"] = 20,
-			["cc"] = 7,
-			["id"] = "2589:0:0:0:0",
-			["mr"] = 20,
-			["sc"] = 0,
+		["Aboriginal Loincloth of the Owl"] = {
+			["H3212"] = 900,
+			["cc"] = 4,
+			["id"] = "14119:0:0:760:0",
+			["mr"] = 900,
+			["sc"] = 1,
 		},
 		["Bolt of Linen Cloth"] = {
 			["H3212"] = 55,
@@ -583,12 +583,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H4069"] = 4000,
 		},
-		["Fire Wand"] = {
-			["mr"] = 598,
-			["sc"] = 19,
-			["H4059"] = 598,
-			["id"] = "5069:0:0:0:0",
-			["cc"] = 2,
+		["Blue Leather Bag"] = {
+			["mr"] = 2446,
+			["cc"] = 1,
+			["id"] = "856:0:0:0:0",
+			["sc"] = 0,
+			["H4069"] = 2446,
 		},
 		["Deviate Scale"] = {
 			["mr"] = 37,
@@ -618,12 +618,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4063"] = 13,
 			["sc"] = 0,
 		},
-		["Blue Leather Bag"] = {
-			["mr"] = 2446,
-			["cc"] = 1,
-			["id"] = "856:0:0:0:0",
-			["sc"] = 0,
-			["H4069"] = 2446,
+		["Fire Wand"] = {
+			["mr"] = 598,
+			["sc"] = 19,
+			["H4059"] = 598,
+			["id"] = "5069:0:0:0:0",
+			["cc"] = 2,
 		},
 		["Bronze Framework"] = {
 			["mr"] = 873,
@@ -1037,13 +1037,13 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 20,
 		["numstacks"] = 0,
 	},
-	["elemental water"] = {
-		["stacksize"] = 5,
-		["numstacks"] = 0,
-	},
 	["volatile life"] = {
 		["numstacks"] = 0,
 		["stacksize"] = 10,
+	},
+	["elemental water"] = {
+		["stacksize"] = 5,
+		["numstacks"] = 0,
 	},
 	["mighty rage potion"] = {
 		["stacksize"] = 1,

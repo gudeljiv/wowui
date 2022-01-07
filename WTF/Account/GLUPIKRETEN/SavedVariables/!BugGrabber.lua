@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 3943,
+	["session"] = 3945,
 	["errors"] = {
 		{
 			["message"] = "...\\AddOns\\Details\\Libs\\DetailsFramework\\lib\\slider.lua:456: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DetailsFrameworkSliderButtons1:SetPoint.",
@@ -853,5 +853,18 @@ BugGrabberDB = {
 			["session"] = 3943,
 			["counter"] = 6,
 		}, -- [110]
+		{
+			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
+			["session"] = 3944,
+			["time"] = "2022/01/07 17:50:32",
+			["counter"] = 3,
+		}, -- [111]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Dejunk' tried to call the protected function 'DeleteCursorItem()'.",
+			["time"] = "2022/01/07 17:54:53",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\Dejunk\\src\\services\\destroyer.lua\"]:98: in function <Interface\\AddOns\\Dejunk\\src\\services\\destroyer.lua:86>\n[string \"@Interface\\AddOns\\Dejunk\\src\\services\\destroyer.lua\"]:128: in function <Interface\\AddOns\\Dejunk\\src\\services\\destroyer.lua:107>\n[string \"@Interface\\AddOns\\Dejunk\\src\\services\\destroyer.lua\"]:218: in function `Start'\n[string \"@Interface\\AddOns\\Dejunk\\src\\commands.lua\"]:129: in function <Interface\\AddOns\\Dejunk\\src\\commands.lua:129>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\Dejunk\\src\\commands.lua\"]:42: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\AddOns\\xVermin\\Addons/Dejunk.lua\"]:8: in function <Interface\\AddOns\\xVermin\\Addons/Dejunk.lua:6>",
+			["session"] = 3945,
+			["counter"] = 1,
+		}, -- [112]
 	},
 }

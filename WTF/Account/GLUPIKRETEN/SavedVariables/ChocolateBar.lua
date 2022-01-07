@@ -50,6 +50,17 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["locked"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -70,24 +81,10 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
-				},
-				["textureName"] = "None",
-			},
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["locked"] = false,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -332,15 +329,11 @@ ChocolateBarDB = {
 					["index"] = 6,
 					["barName"] = "ChocolateBar1",
 				},
-				["LFGBulletinBoard"] = {
-					["index"] = 3,
+				["TownsfolkTracker"] = {
+					["enabled"] = false,
 					["align"] = "right",
-					["isNew"] = false,
-					["showLabel"] = true,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
-					["showIcon"] = false,
-					["customLabel"] = "LFG",
 				},
 				["MinimapIcon"] = {
 					["enabled"] = false,
@@ -410,11 +403,15 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "DJ",
 				},
-				["TownsfolkTracker"] = {
-					["enabled"] = false,
+				["LFGBulletinBoard"] = {
+					["index"] = 3,
 					["align"] = "right",
+					["isNew"] = false,
+					["showLabel"] = true,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
+					["showIcon"] = false,
+					["customLabel"] = "LFG",
 				},
 				["picoFPS"] = {
 					["index"] = 1,
@@ -450,14 +447,17 @@ ChocolateBarDB = {
 				},
 			},
 			["fontName"] = "Friz Quadrata TT",
-			["forceColor"] = false,
-			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["gap"] = 0,
+			["moveFrames"] = false,
 			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["gap"] = 0,
-			["moveFrames"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+			["forceColor"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -526,7 +526,7 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Pitchwise-Dreadnaught"] = {
-		["total"] = 94856,
+		["total"] = 102142,
 	},
 	["Judawise-"] = {
 		["total"] = 437,
@@ -546,8 +546,8 @@ CB_PlayedTime = {
 	["Kosturko-"] = {
 		["total"] = 1457,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Greshnik-Dreadnaught"] = {
+		["total"] = 148,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,
@@ -564,8 +564,8 @@ CB_PlayedTime = {
 	["Grgur-"] = {
 		["total"] = 1248,
 	},
-	["Greshnik-Dreadnaught"] = {
-		["total"] = 148,
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,

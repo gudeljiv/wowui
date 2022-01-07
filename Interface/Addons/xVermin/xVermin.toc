@@ -31,7 +31,6 @@ Experience/MobsToKill.lua
 Reputation/Reputation.lua
 
 Addons/AdiBags.lua
-Addons/Dejunk.lua
 Addons/Examiner.lua
 Addons/LFG.lua
 Addons/MonkeyQuest.lua
