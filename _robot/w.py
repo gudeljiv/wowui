@@ -20,7 +20,8 @@ skills = [
     {"name": "heroic strike", "key": "2", "r": 153, "g": 150, "b": 153, "rgb": (153, 150, 153), "aoe": False},
     {"name": "cleave", "key": "3", "r": 153, "g": 150, "b": 153, "rgb": (153, 150, 153), "aoe": True},
     {"name": "sunder armor", "key": "g", "r": 189, "g": 126, "b": 116, "rgb": (189, 126, 116)},
-    {"name": "revenge", "key": "1", "r": 205, "g": 195, "b": 195, "rgb": (205, 195, 195)}
+    {"name": "revenge", "key": "1", "r": 205, "g": 195, "b": 195, "rgb": (205, 195, 195)},
+    {"name": "execute", "key": "f", "r": 76, "g": 17, "b": 21, "rgb": (76, 17, 21)}
 ]
 
 
