@@ -12,8 +12,8 @@ Frames/CharacterFrame.lua
 Frames/CustomContainers.lua
 Frames/DefaultFramesCustomScale.lua
 Frames/DefaultFramesDarker.lua
-Frames/EnhanceTrainerFrame.lua
-Frames/EnhanceProfessionsFrame.lua
+Frames/EnhancedTrainerFrame.lua
+Frames/EnhancedProfessionsFrame.lua
 Frames/GroopLootFrame.lua
 Frames/InspectFrame.lua
 Frames/KillCount.lua

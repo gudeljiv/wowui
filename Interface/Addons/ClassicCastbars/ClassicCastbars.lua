@@ -525,8 +525,8 @@ function addon:COMBAT_LOG_EVENT_UNFILTERED()
     if eventType == "SPELL_CAST_START" then
         local spellID = castedSpells[spellName]
         if not spellID then return end
-
-        local castTime, icon = GetSpellCastInfo(spellID)
+        
+		local castTime, icon = GetSpellCastInfo(spellID)
         if not castTime then return end
 
         -- is player or player pet or mind controlled
