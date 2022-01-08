@@ -62,6 +62,7 @@ PlayerTargetHealthPercentage.lua
 PlayerTargetSetMark.lua
 SkinBuffs.lua
 SortBags.lua
+TooltipSpellID.lua
 TrackingIcon.lua
 UIScale.lua
 Unit.lua
