@@ -1,6 +1,6 @@
-VER 3 000000000100000D " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,exists,nodead][] Dispel Magic
+/cast [@mouseover,exists,nodead][help][] Power Word: Shield
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -39,7 +39,7 @@ VER 3 000000000100000C " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Cure Disease
 END
-VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+VER 3 000000000100000D " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,exists,nodead][help][] Power Word: Shield
+/cast [@mouseover,exists,nodead][] Dispel Magic
 END
