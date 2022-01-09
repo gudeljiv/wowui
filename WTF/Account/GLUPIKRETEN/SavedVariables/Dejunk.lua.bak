@@ -141,6 +141,9 @@ __DEJUNK_SAVED_VARIABLES__ = {
 			},
 			["version"] = 3,
 		},
+		["Moolatz-Dreadnaught"] = {
+			["version"] = 3,
+		},
 		["Default"] = {
 			["destroy"] = {
 				["autoOpen"] = {

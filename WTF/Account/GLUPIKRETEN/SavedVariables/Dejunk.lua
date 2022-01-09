@@ -141,6 +141,13 @@ __DEJUNK_SAVED_VARIABLES__ = {
 			},
 			["version"] = 3,
 		},
+		["Moolatz-Dreadnaught"] = {
+			["sell"] = {
+				["auto"] = true,
+				["safeMode"] = false,
+			},
+			["version"] = 3,
+		},
 		["Konac-Dreadnaught"] = {
 			["sell"] = {
 				["auto"] = true,

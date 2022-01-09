@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
+	["_10000"] = 200,
+	["_500"] = 5,
+	["_1000000"] = 2500,
 	["_200000"] = 1000,
 	["STARTING_DISCOUNT"] = 5,
-	["_1000000"] = 2500,
-	["_5000000"] = 10000,
 	["LOG_DE_DATA_X"] = true,
-	["_500"] = 5,
-	["_10000"] = 200,
+	["_5000000"] = 10000,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 	["Pagan Bands of the Whale"] = {
@@ -322,6 +322,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1000,
 			["sc"] = 3,
 		},
+		["Barbaric Loincloth"] = {
+			["H3212"] = 400,
+			["cc"] = 4,
+			["id"] = "3309:0:0:0:0",
+			["mr"] = 400,
+			["sc"] = 1,
+		},
 		["Bolt of Silk Cloth"] = {
 			["H3212"] = 2100,
 			["cc"] = 7,
@@ -335,13 +342,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "2592:0:0:0:0",
 			["mr"] = 177,
 			["sc"] = 0,
-		},
-		["Barbaric Loincloth"] = {
-			["H3212"] = 400,
-			["cc"] = 4,
-			["id"] = "3309:0:0:0:0",
-			["mr"] = 400,
-			["sc"] = 1,
 		},
 		["Ivycloth Gloves of the Owl"] = {
 			["H3212"] = 4000,
