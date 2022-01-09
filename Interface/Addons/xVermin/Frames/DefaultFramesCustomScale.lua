@@ -23,8 +23,8 @@ for i, v in pairs(
 ) do
 	if v then 
 		v:SetScale(1.3)
-		v:ClearAllPoints()
-		v:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
+		-- v:ClearAllPoints()
+		-- v:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
 		-- v.SetPoint = function()
 		-- end
 	end
