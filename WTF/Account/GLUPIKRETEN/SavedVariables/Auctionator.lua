@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
-	["_10000"] = 200,
-	["_500"] = 5,
-	["_1000000"] = 2500,
 	["_200000"] = 1000,
 	["STARTING_DISCOUNT"] = 5,
-	["LOG_DE_DATA_X"] = true,
+	["_1000000"] = 2500,
 	["_5000000"] = 10000,
+	["LOG_DE_DATA_X"] = true,
+	["_500"] = 5,
+	["_10000"] = 200,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 	["Pagan Bands of the Whale"] = {
@@ -336,12 +336,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["mr"] = 243,
 		},
-		["Bolt of Silk Cloth"] = {
-			["H3212"] = 2100,
+		["Wool Cloth"] = {
+			["H3212"] = 177,
 			["cc"] = 7,
-			["id"] = "4305:0:0:0:0",
+			["id"] = "2592:0:0:0:0",
 			["sc"] = 0,
-			["mr"] = 2100,
+			["mr"] = 177,
 		},
 		["Barbaric Cloth Vest"] = {
 			["H3212"] = 900,
@@ -386,19 +386,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["mr"] = 699,
 		},
-		["Aboriginal Loincloth of the Owl"] = {
-			["H3212"] = 900,
-			["cc"] = 4,
-			["id"] = "14119:0:0:760:0",
-			["sc"] = 1,
-			["mr"] = 900,
-		},
 		["Linen Cloth"] = {
 			["H3212"] = 20,
 			["cc"] = 7,
 			["id"] = "2589:0:0:0:0",
 			["sc"] = 0,
 			["mr"] = 20,
+		},
+		["Aboriginal Loincloth of the Owl"] = {
+			["H3212"] = 900,
+			["cc"] = 4,
+			["id"] = "14119:0:0:760:0",
+			["sc"] = 1,
+			["mr"] = 900,
 		},
 		["Bloodspattered Loincloth of the Bear"] = {
 			["H3212"] = 1800,
@@ -422,12 +422,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 4595,
 		},
-		["Bolt of Runecloth"] = {
-			["H3212"] = 30000,
+		["Mageweave Cloth"] = {
+			["H3212"] = 1500,
 			["cc"] = 7,
-			["id"] = "14048:0:0:0:0",
+			["id"] = "4338:0:0:0:0",
 			["sc"] = 0,
-			["mr"] = 30000,
+			["mr"] = 1500,
 		},
 		["Bloodspattered Loincloth of Power"] = {
 			["H3212"] = 899,
@@ -464,12 +464,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 200,
 		},
-		["Mageweave Cloth"] = {
-			["H3212"] = 1500,
+		["Bolt of Runecloth"] = {
+			["H3212"] = 30000,
 			["cc"] = 7,
-			["id"] = "4338:0:0:0:0",
+			["id"] = "14048:0:0:0:0",
 			["sc"] = 0,
-			["mr"] = 1500,
+			["mr"] = 30000,
 		},
 		["Bolt of Linen Cloth"] = {
 			["H3212"] = 55,
@@ -492,19 +492,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 4000,
 		},
+		["Bolt of Silk Cloth"] = {
+			["H3212"] = 2100,
+			["cc"] = 7,
+			["id"] = "4305:0:0:0:0",
+			["sc"] = 0,
+			["mr"] = 2100,
+		},
 		["Barbaric Loincloth"] = {
 			["H3212"] = 400,
 			["cc"] = 4,
 			["id"] = "3309:0:0:0:0",
 			["sc"] = 1,
 			["mr"] = 400,
-		},
-		["Wool Cloth"] = {
-			["H3212"] = 177,
-			["cc"] = 7,
-			["id"] = "2592:0:0:0:0",
-			["sc"] = 0,
-			["mr"] = 177,
 		},
 		["Bloodspattered Loincloth of the Tiger"] = {
 			["H3212"] = 2200,
@@ -722,12 +722,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 19,
 			["H4059"] = 598,
 		},
-		["Worn Turtle Shell Shield"] = {
-			["mr"] = 699,
-			["cc"] = 4,
-			["id"] = "6447:0:0:0:0",
-			["H4072"] = 699,
-			["sc"] = 6,
+		["Barbed Club of Stamina"] = {
+			["mr"] = 4598,
+			["sc"] = 4,
+			["id"] = "15222:0:0:22:0",
+			["cc"] = 2,
+			["H4071"] = 4598,
 		},
 		["Minor Healing Potion"] = {
 			["mr"] = 39,
@@ -771,12 +771,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4063"] = 37,
 			["sc"] = 0,
 		},
-		["Barbed Club of Stamina"] = {
-			["mr"] = 4598,
-			["sc"] = 4,
-			["id"] = "15222:0:0:22:0",
-			["cc"] = 2,
-			["H4071"] = 4598,
+		["Worn Turtle Shell Shield"] = {
+			["mr"] = 699,
+			["cc"] = 4,
+			["id"] = "6447:0:0:0:0",
+			["H4072"] = 699,
+			["sc"] = 6,
 		},
 		["Kodo Meat"] = {
 			["mr"] = 212,
@@ -1110,9 +1110,9 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 1,
 		["numstacks"] = 0,
 	},
-	["volatile life"] = {
-		["stacksize"] = 10,
+	["elemental water"] = {
 		["numstacks"] = 0,
+		["stacksize"] = 5,
 	},
 	["mighty rage potion"] = {
 		["numstacks"] = 0,
@@ -1178,9 +1178,9 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 1,
 		["numstacks"] = 0,
 	},
-	["elemental water"] = {
+	["volatile life"] = {
+		["stacksize"] = 10,
 		["numstacks"] = 0,
-		["stacksize"] = 5,
 	},
 	["exotic leather"] = {
 		["numstacks"] = 0,
