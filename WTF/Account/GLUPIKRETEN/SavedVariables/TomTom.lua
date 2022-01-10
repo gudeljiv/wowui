@@ -9,22 +9,22 @@ TomTomDB = {
 		["Dmitar - Golemagg"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
-		["Vermins - Stonespine"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
-		["Poklopac - Dreadnaught"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Poklopac - Dreadnaught"] = "Default",
+		["Mxym - Golemagg"] = "Default",
 		["Testxv - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Mxym - Golemagg"] = "Default",
+		["Vermins - Stonespine"] = "Default",
 		["Mxys - Golemagg"] = "Default",
 		["Greenwise - Golemagg"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
@@ -77,22 +77,22 @@ TomTomWaypointsM = {
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Vermins - Stonespine"] = "Vermins - Stonespine",
 		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
+		["Mxym - Golemagg"] = "Mxym - Golemagg",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
 		["Koloman - Golemagg"] = "Koloman - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Vermins - Stonespine"] = "Vermins - Stonespine",
 		["Mxys - Golemagg"] = "Mxys - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
@@ -114,19 +114,19 @@ TomTomWaypointsM = {
 		},
 		["Mxzq - Golemagg"] = {
 		},
-		["Vermins - Stonespine"] = {
-		},
 		["Pitchwise - Dreadnaught"] = {
-		},
-		["Jaroslav - Golemagg"] = {
-		},
-		["Poklopac - Dreadnaught"] = {
 		},
 		["Konac - Dreadnaught"] = {
 		},
+		["Vermin - Golemagg"] = {
+		},
+		["Poklopac - Dreadnaught"] = {
+		},
+		["Mxym - Golemagg"] = {
+		},
 		["Testxv - Golemagg"] = {
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Jaroslav - Golemagg"] = {
 		},
 		["Battlearm - Hydraxian Waterlords"] = {
 		},
@@ -136,7 +136,7 @@ TomTomWaypointsM = {
 		},
 		["Koloman - Golemagg"] = {
 		},
-		["Vermin - Golemagg"] = {
+		["Mxyzptlk - Golemagg"] = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 		},
@@ -144,7 +144,7 @@ TomTomWaypointsM = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Mxym - Golemagg"] = {
+		["Vermins - Stonespine"] = {
 		},
 		["Mxys - Golemagg"] = {
 		},
