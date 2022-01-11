@@ -1,5 +1,5 @@
 
 CharacterStatsClassicCharacterDB = {
-	["selectedRightStatsCategory"] = 2,
+	["selectedRightStatsCategory"] = 4,
 	["selectedLeftStatsCategory"] = 1,
 }

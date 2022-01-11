@@ -49,7 +49,7 @@ PlayerFrame:HookScript(
 				f:SetBackdropColor(0, 1, 0, 1)
 			end
 		else
-			f:SetBackdropColor(0, 0, 1, 1)
+			f:SetBackdropColor(1, 1, 1, 1)
 		end
 	end
 )

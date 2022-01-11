@@ -17,13 +17,14 @@ for i, v in pairs(
 		GossipFrame,
 		MerchantFrame,
 		CraftFrame,
-		ClassTrainerFrame
+		ClassTrainerFrame,
+		AuctionFrame
 	}
 ) do
 	if v then 
 		v:SetScale(1.3)
-		v:ClearAllPoints()
-		v:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
+		-- v:ClearAllPoints()
+		-- v:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
 		-- v.SetPoint = function()
 		-- end
 	end
@@ -35,7 +36,8 @@ local LoDMap = {
 	Blizzard_TalentUI = {"PlayerTalentFrame"},
 	Blizzard_TradeSkillUI = {"TradeSkillFrame"},
 	Blizzard_InspectUI = {"InspectFrame"},
-	Blizzard_TrainerUI = {"ClassTrainerFrame"}
+	Blizzard_TrainerUI = {"ClassTrainerFrame"},
+	Blizzard_AuctionUI = {"AuctionFrame"}
 }
 
 local EventFrame = CreateFrame("Frame")
@@ -48,8 +50,8 @@ EventFrame:SetScript(
 			if framelist then
 				for _, name in ipairs(framelist) do
 					_G[name]:SetScale(1.3)
-					_G[name]:ClearAllPoints()
-					_G[name]:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
+					-- _G[name]:ClearAllPoints()
+					-- _G[name]:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
 					-- _G[name].SetPoint = function()
 					-- end
 				end

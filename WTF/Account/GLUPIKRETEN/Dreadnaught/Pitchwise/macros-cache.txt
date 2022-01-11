@@ -1,7 +1,7 @@
-VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast Cleave
+/cast Heroic Strike
 END
 VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Overpower
@@ -45,8 +45,8 @@ VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
 /cast Bloodrage
 /cast Sunder Armor
 END
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast Heroic Strike
+/cast Cleave
 END

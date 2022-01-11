@@ -20,6 +20,20 @@ SRTIExternalUF = {
 		"CompactRaidFrame5", -- [5]
 		"CompactRaidFrame6", -- [6]
 	},
+	["aptechka"] = {
+		"NugRaid1UnitButton1", -- [1]
+		"NugRaid2UnitButton1", -- [2]
+		"NugRaid3UnitButton1", -- [3]
+		"NugRaid4UnitButton1", -- [4]
+		"NugRaid5UnitButton1", -- [5]
+		"NugRaid6UnitButton1", -- [6]
+		"NugRaid7UnitButton1", -- [7]
+		"NugRaid8UnitButton1", -- [8]
+		"NugRaid1UnitButton2", -- [9]
+		"NugRaid1UnitButton3", -- [10]
+		"NugRaid1UnitButton4", -- [11]
+		"NugRaid1UnitButton5", -- [12]
+	},
 	["grid2"] = {
 		"Grid2LayoutHeader1UnitButton1", -- [1]
 		"Grid2LayoutHeader1UnitButton2", -- [2]
@@ -61,19 +75,5 @@ SRTIExternalUF = {
 		"Grid2LayoutHeader8UnitButton3", -- [38]
 		"Grid2LayoutHeader8UnitButton4", -- [39]
 		"Grid2LayoutHeader8UnitButton5", -- [40]
-	},
-	["aptechka"] = {
-		"NugRaid1UnitButton1", -- [1]
-		"NugRaid2UnitButton1", -- [2]
-		"NugRaid3UnitButton1", -- [3]
-		"NugRaid4UnitButton1", -- [4]
-		"NugRaid5UnitButton1", -- [5]
-		"NugRaid6UnitButton1", -- [6]
-		"NugRaid7UnitButton1", -- [7]
-		"NugRaid8UnitButton1", -- [8]
-		"NugRaid1UnitButton2", -- [9]
-		"NugRaid1UnitButton3", -- [10]
-		"NugRaid1UnitButton4", -- [11]
-		"NugRaid1UnitButton5", -- [12]
 	},
 }
