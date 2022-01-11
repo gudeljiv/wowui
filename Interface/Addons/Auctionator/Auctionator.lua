@@ -272,13 +272,7 @@ end
 
 local function IsCataEnchanter()
   Auctionator.Debug.Message( 'IsCataEnchanter' )
---[[
-  local prof1, prof2 = GetProfessions()
 
-  if (IsCataEnchanting (prof1) or IsCataEnchanting (prof2)) then
-    return true
-  end
-]]--
   return false
 end
 
@@ -634,20 +628,19 @@ local function Atr_OnClickTradeSkillBut()
 
   Atr_SelectPane (BUY_TAB);
 
-  local index = TradeSkillFrame.RecipeList:GetSelectedRecipeID()
+  local index = GetTradeSkillSelectionIndex()
 
-
-  local link = C_TradeSkillUI.GetRecipeItemLink(index)
+  local link = GetTradeSkillItemLink(index)
 
   local _, _, _, _, _, itemType = GetItemInfo (link);
 
-  local numReagents = C_TradeSkillUI.GetRecipeNumReagents(index)
+  local numReagents = GetTradeSkillNumReagents(index)
 
   local reagentId
 
   local shoppingListName = GetItemInfo (link)
   if (shoppingListName == nil) then
-    shoppingListName = C_TradeSkillUI.GetRecipeInfo(index).name
+    shoppingListName = GetTradeSkillLine()
   end
 
   local items = {}
@@ -657,7 +650,7 @@ local function Atr_OnClickTradeSkillBut()
   end
 
   for reagentId = 1, numReagents do
-    local reagentName = C_TradeSkillUI.GetRecipeReagentInfo(index, reagentId)
+    local reagentName = GetTradeSkillReagentInfo(index, reagentId)
     if (reagentName and not zc.StringSame(reagentName, "Crystal Vial")) then
       table.insert (items, reagentName)
     end
@@ -674,12 +667,12 @@ local function Atr_ModTradeSkillFrame()
   if (gTradeSkillFrameModded) then
     return
   end
---[[
+
   if (TradeSkillFrame) then
     gTradeSkillFrameModded = true
 
     local button = CreateFrame("BUTTON", "Auctionator_Search", TradeSkillFrame, "UIPanelButtonTemplate");
-    button:SetPoint("RIGHT", "TradeSkillFrame", "RIGHT", -65, -20);
+    button:SetPoint("TOPRIGHT", "TradeSkillDetailScrollFrame", "TOPRIGHT", 0, -22);
 
     button:SetHeight (20)
     button:SetText(ZT("AH"))
@@ -691,7 +684,7 @@ local function Atr_ModTradeSkillFrame()
   else
     zz ("TradeSkillFrame not loaded")
   end
-]]--
+
 
 
 end
@@ -824,7 +817,7 @@ function Atr_OnLoad()
     Atr_StackingPrefs_Init();
   end
 
-  if (AUCTIONATOR_SAVEDVARS == nil) then
+  if (AUCTIONATOR_SAVEDVARS == nil) or Atr_IsAnyMissingSavedVars() then
     Atr_ResetSavedVars()
   end
 
@@ -1241,6 +1234,15 @@ function Atr_GetSellItemInfo ()
 end
 
 -----------------------------------------
+
+function Atr_IsAnyMissingSavedVars ()
+  for key, value in pairs(auctionator_savedvars_defaults) do
+    if AUCTIONATOR_SAVEDVARS[key] == nil then
+      return true
+    end
+  end
+  return false
+end
 
 function Atr_ResetSavedVars ()
   Auctionator.Debug.Message( 'Atr_ResetSavedVars' )
@@ -1855,7 +1857,7 @@ function Atr_AddMainPanel ()
   local frame = CreateFrame("FRAME", "Atr_Main_Panel", AuctionFrame, "Atr_Sell_Template");
   frame:Hide();
 
-  UIDropDownMenu_SetWidth (Atr_Duration, 75);
+  UIDropDownMenu_SetWidth (Atr_Duration, 55);
 
 end
 
@@ -2643,7 +2645,7 @@ function Atr_ShowRecTooltip ()
 
   if (link) then
     if (num < 1) then num = 1; end;
---[[
+
     if (zc.IsBattlePetLink (link)) then
       local speciesID, level, breedQuality, maxHealth, power, speed, battlePetID, name = zc.ParseBattlePetLink(link)
 
@@ -2652,12 +2654,13 @@ function Atr_ShowRecTooltip ()
       BattlePetTooltip:ClearAllPoints();
       BattlePetTooltip:SetPoint("BOTTOMLEFT", Atr_RecommendItem_Tex, "BOTTOMRIGHT", 10, 0)
 
-    else ]]--
+    else
       GameTooltip:SetOwner(Atr_RecommendItem_Tex, "ANCHOR_RIGHT");
       GameTooltip:SetHyperlink (link, num);
       gCurrentPane.tooltipvisible = true;
-    --end
+    end
   end
+
 end
 
 -----------------------------------------
@@ -3469,7 +3472,7 @@ function Atr_ShowLineTooltip (self)
   Auctionator.Debug.Message( 'Atr_ShowLineTooltip', self )
 
   local itemLink = self.itemLink;
---[[
+
   if (zc.IsBattlePetLink (itemLink)) then
 
     local speciesID, level, breedQuality, maxHealth, power, speed, battlePetID, name = zc.ParseBattlePetLink(itemLink)
@@ -3480,7 +3483,7 @@ function Atr_ShowLineTooltip (self)
     BattlePetTooltip:SetPoint("BOTTOMRIGHT", self, "TOPRIGHT", 10, 0)
 
   else   -- normal case
---]]
+
     local fname = self:GetName()
     local ftname = fname.."_EntryText"
     local textPart = _G[ftname]
@@ -3489,7 +3492,7 @@ function Atr_ShowLineTooltip (self)
       GameTooltip:SetOwner(self, "ANCHOR_RIGHT", -280)
       GameTooltip:SetHyperlink (itemLink, 1)
     end
- -- end
+  end
 end
 
 
@@ -4469,12 +4472,18 @@ end
 
 function Atr_Duration_Initialize(self)
   Auctionator.Debug.Message( 'Atr_Duration_Initialize', self )
-	
-	-- DaMaGepy fix
-  --Atr_Dropdown_AddPick (self, AUCTION_DURATION_ONE, 1, Atr_Duration_OnClick);
-  Atr_Dropdown_AddPick (self, "2 Hours", 1, Atr_Duration_OnClick);
-  Atr_Dropdown_AddPick (self, "8 Hours", 2, Atr_Duration_OnClick);
-  Atr_Dropdown_AddPick (self, "24 Hours", 3, Atr_Duration_OnClick);
+  if WOW_PROJECT_ID == WOW_PROJECT_CLASSIC then -- DaMaGepy: 2=classic/era  5=TBC
+	AUCTION_DURATION_ONE = 2
+	AUCTION_DURATION_TWO = 8
+	AUCTION_DURATION_THREE = 24
+  else
+	AUCTION_DURATION_ONE = 12
+	AUCTION_DURATION_TWO = 24
+	AUCTION_DURATION_THREE = 48
+  end
+  Atr_Dropdown_AddPick (self, AUCTION_DURATION_ONE, 1, Atr_Duration_OnClick);
+  Atr_Dropdown_AddPick (self, AUCTION_DURATION_TWO, 2, Atr_Duration_OnClick);
+  Atr_Dropdown_AddPick (self, AUCTION_DURATION_THREE, 3, Atr_Duration_OnClick);
 
 end
 

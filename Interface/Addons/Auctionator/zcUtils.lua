@@ -407,9 +407,10 @@ end
 -----------------------------------------
 
 function zc.IsBattlePetLink (itemLink)
+  return false -- In BCC there aren't any battle pets
 
 --zc.msg (zc.printableLink (itemLink));
-  return zc.StringContains (itemLink, "Hbattlepet:");
+--return zc.StringContains (itemLink, "Hbattlepet:");
 end
 
 -----------------------------------------
