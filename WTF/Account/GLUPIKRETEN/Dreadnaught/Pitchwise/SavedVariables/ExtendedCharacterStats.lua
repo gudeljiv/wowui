@@ -10,6 +10,11 @@ ExtendedCharacterStats = {
 		},
 		["statsWindowClosedOnOpen"] = false,
 		["addColorsToStatTexts"] = true,
+<<<<<<< HEAD
+=======
+		["profileVersion"] = 11,
+		["showQualityColors"] = false,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 		["statFontSize"] = 10,
 		["showQualityColors"] = true,
 		["headerFontSize"] = 11,
@@ -49,6 +54,12 @@ ExtendedCharacterStats = {
 					["refName"] = "RangedHitSameLevel",
 					["textColor"] = "85bb5c",
 				},
+<<<<<<< HEAD
+=======
+				["isSubGroup"] = true,
+				["text"] = "Hit",
+				["display"] = true,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 				["rating"] = {
 					["isTbcOnly"] = true,
 					["statColor"] = "558b2f",
@@ -167,7 +178,10 @@ ExtendedCharacterStats = {
 					["refName"] = "MeleeAttackSpeedOffHand",
 					["textColor"] = "009688",
 				},
+<<<<<<< HEAD
 				["isSubGroup"] = true,
+=======
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 				["mainHand"] = {
 					["statColor"] = "00766c",
 					["display"] = true,
@@ -175,9 +189,16 @@ ExtendedCharacterStats = {
 					["refName"] = "MeleeAttackSpeedMainHand",
 					["textColor"] = "009688",
 				},
+<<<<<<< HEAD
 				["text"] = "Attack Speed",
 				["refName"] = "MeleeAttackSpeedHeader",
 				["display"] = true,
+=======
+				["display"] = true,
+				["text"] = "Attack Speed",
+				["refName"] = "MeleeAttackSpeedHeader",
+				["isSubGroup"] = true,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			},
 			["hit"] = {
 				["bossLevel"] = {
@@ -187,9 +208,12 @@ ExtendedCharacterStats = {
 					["refName"] = "MeleeHitBossLevel",
 					["textColor"] = "85bb5c",
 				},
+<<<<<<< HEAD
 				["isSubGroup"] = true,
 				["display"] = true,
 				["text"] = "Hit",
+=======
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 				["sameLevel"] = {
 					["statColor"] = "558b2f",
 					["display"] = true,
@@ -197,6 +221,12 @@ ExtendedCharacterStats = {
 					["refName"] = "MeleeHitSameLevel",
 					["textColor"] = "85bb5c",
 				},
+<<<<<<< HEAD
+=======
+				["isSubGroup"] = true,
+				["text"] = "Hit",
+				["display"] = true,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 				["rating"] = {
 					["isTbcOnly"] = true,
 					["statColor"] = "558b2f",
@@ -369,6 +399,7 @@ ExtendedCharacterStats = {
 			},
 		},
 		["spell"] = {
+<<<<<<< HEAD
 			["crit"] = {
 				["statColor"] = "d32f2f",
 				["display"] = true,
@@ -383,6 +414,8 @@ ExtendedCharacterStats = {
 			},
 			["display"] = true,
 			["text"] = "Spell",
+=======
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["refName"] = "SpellHeader",
 			["hit"] = {
 				["bossLevel"] = {
@@ -402,6 +435,12 @@ ExtendedCharacterStats = {
 					["refName"] = "SpellHitSameLevel",
 					["textColor"] = "85bb5c",
 				},
+<<<<<<< HEAD
+=======
+				["isSubGroup"] = true,
+				["text"] = "Hit",
+				["display"] = true,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 				["rating"] = {
 					["isTbcOnly"] = true,
 					["statColor"] = "558b2f",
@@ -419,6 +458,23 @@ ExtendedCharacterStats = {
 					["textColor"] = "85bb5c",
 				},
 			},
+<<<<<<< HEAD
+=======
+			["display"] = true,
+			["text"] = "Spell",
+			["crit"] = {
+				["statColor"] = "d32f2f",
+				["display"] = true,
+				["text"] = "Crit Chance",
+				["refName"] = "SpellCritChance",
+				["textColor"] = "ff6659",
+			},
+			["penetration"] = {
+				["display"] = true,
+				["text"] = "Penetration",
+				["refName"] = "SpellPenetration",
+			},
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 		},
 	},
 }

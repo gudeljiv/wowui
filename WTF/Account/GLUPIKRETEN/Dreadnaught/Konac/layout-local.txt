@@ -76,13 +76,6 @@ X: 16
 Y: -116
 W: 338
 H: 424
-Frame: GroupBulletinBoardFrame
-FrameLevel: 1
-Anchor: TOPRIGHT
-X: -346
-Y: -134
-W: 620
-H: 741
 Frame: nTooltip_Anchor
 FrameLevel: 1
 Anchor: BOTTOMRIGHT
@@ -97,6 +90,16 @@ X: 0
 Y: 0
 W: 250
 H: 42
+<<<<<<< HEAD
+=======
+Frame: GroupBulletinBoardFrame
+FrameLevel: 1
+Anchor: TOPRIGHT
+X: -346
+Y: -134
+W: 620
+H: 741
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER

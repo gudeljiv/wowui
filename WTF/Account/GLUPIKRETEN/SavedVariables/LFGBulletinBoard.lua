@@ -59,23 +59,33 @@ GroupBulletinBoardDB = {
 		["msgLevelRange"] = "",
 		["HeaderDungeon"] = "",
 		["heroicAbr"] = "",
-		["AboutUsage"] = "",
+		["TBCPanelFilter"] = "",
 		["CboxEscapeQuit"] = "",
 		["BtnEntryColor"] = "",
 		["msgAddNote"] = "",
 		["CboxOneLineNotification"] = "",
 		["EditCustom_Suffix"] = "",
+<<<<<<< HEAD
 		["CboxColorOnLevel"] = "",
+=======
+		["msgLastSeen"] = "",
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 		["msgCustomList"] = "",
 		["BtnWispher"] = "",
-		["TBCPanelFilter"] = "",
-		["PanelLocales"] = "",
+		["BtnFoldAll"] = "",
+		["CboxColorOnLevel"] = "",
 		["CboxNotfiyInnone"] = "",
 		["CboxEnableGroup"] = "",
 		["CboxRemoveRaidSymbols"] = "",
+<<<<<<< HEAD
 		["CboxOrderNewTop"] = "",
 		["CboxNotfiyInparty"] = "",
 		["CboxEnableGuild"] = "",
+=======
+		["TabGroup"] = "",
+		["CboxNotfiyInparty"] = "",
+		["CboxOrderNewTop"] = "",
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 		["SlashChatOrganizer"] = "",
 		["BtnIgnore"] = "",
 		["BtnTimeColor"] = "",
@@ -105,11 +115,19 @@ GroupBulletinBoardDB = {
 		["PanelTags"] = "",
 		["PanelAbout"] = "",
 		["BtnCancel"] = "",
+<<<<<<< HEAD
 		["TabGroup"] = "",
 		["CboxShowTotalTime"] = "",
 		["BtnFoldAll"] = "",
 		["CboxTagsRussian"] = "",
 		["msgLastSeen"] = "",
+=======
+		["CboxEnableGuild"] = "",
+		["CboxShowTotalTime"] = "",
+		["AboutUsage"] = "",
+		["CboxTagsRussian"] = "",
+		["PanelLocales"] = "",
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 		["CboxChatStyle"] = "",
 		["AboutInfo"] = "",
 		["CboxTagsFrench"] = "",
@@ -141,7 +159,7 @@ GroupBulletinBoardDB = {
 	["ColorOnLevel"] = true,
 	["ShowClassIcon"] = true,
 	["Width"] = 620,
-	["widthNames"] = 93,
+	["widthNames"] = 108.5536575317383,
 	["Custom"] = {
 		["ARENA"] = "",
 		["SML"] = "",
@@ -215,6 +233,7 @@ GroupBulletinBoardDB = {
 		["MT"] = "",
 		["ZF"] = "",
 	},
+<<<<<<< HEAD
 	["EnableGuild"] = false,
 	["NotfiyInpvp"] = false,
 	["TimeColor"] = {
@@ -261,18 +280,27 @@ GroupBulletinBoardDB = {
 	["OrderNewTop"] = true,
 	["TagsFrench"] = false,
 	["ColorByClass"] = true,
+=======
+	["TagsRussian"] = false,
+	["NotfiyInpvp"] = false,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 	["CustomLocalesDungeon"] = {
 		["SH"] = "",
 		["MGT"] = "",
 		["SETH"] = "",
+<<<<<<< HEAD
 		["SCH"] = "",
 		["UBRS"] = "",
+=======
+		["OHB"] = "",
+		["GL"] = "",
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 		["ONY"] = "",
 		["ARENA"] = "",
 		["SML"] = "",
 		["DM"] = "",
 		["AQ40"] = "",
-		["BM"] = "",
+		["SCH"] = "",
 		["RFC"] = "",
 		["MC"] = "",
 		["STK"] = "",
@@ -281,7 +309,11 @@ GroupBulletinBoardDB = {
 		["RFK"] = "",
 		["SFK"] = "",
 		["AQ20"] = "",
+<<<<<<< HEAD
 		["RFD"] = "",
+=======
+		["MT"] = "",
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 		["BFD"] = "",
 		["WSG"] = "",
 		["WC"] = "",
@@ -298,7 +330,11 @@ GroupBulletinBoardDB = {
 		["AB"] = "",
 		["AV"] = "",
 		["ULD"] = "",
+<<<<<<< HEAD
 		["GL"] = "",
+=======
+		["DMN"] = "",
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 		["SP"] = "",
 		["STR"] = "",
 		["BF"] = "",
@@ -313,8 +349,13 @@ GroupBulletinBoardDB = {
 		["ST"] = "",
 		["BT"] = "",
 		["SSC"] = "",
+<<<<<<< HEAD
 		["DMN"] = "",
 		["MT"] = "",
+=======
+		["RFD"] = "",
+		["UBRS"] = "",
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 		["UB"] = "",
 		["RAMPS"] = "",
 		["BOT"] = "",
@@ -322,10 +363,65 @@ GroupBulletinBoardDB = {
 		["ZA"] = "",
 		["HYJAL"] = "",
 		["SMG"] = "",
+<<<<<<< HEAD
 		["OHB"] = "",
 		["BRD"] = "",
 		["SMC"] = "",
 		["ZF"] = "",
+=======
+		["BM"] = "",
+		["BRD"] = "",
+		["SMC"] = "",
+		["ZF"] = "",
+	},
+	["RemoveRaidSymbols"] = true,
+	["TimeColor"] = {
+		["a"] = 1,
+		["b"] = 1,
+		["g"] = 1,
+		["r"] = 1,
+	},
+	["DisplayLFG"] = false,
+	["HeroicDungeonColor"] = {
+		["a"] = 1,
+		["b"] = 0,
+		["g"] = 0,
+		["r"] = 1,
+	},
+	["ShowOnlyNb"] = 4,
+	["NotfiyInnone"] = true,
+	["CombineSubDungeons"] = false,
+	["DontTrunicate"] = false,
+	["EnableShowOnly"] = false,
+	["AdditionalInfo"] = false,
+	["NotifySound"] = false,
+	["widthTimes"] = 55.97701644897461,
+	["EscapeQuit"] = true,
+	["TimeOut"] = 150,
+	["NotifyChat"] = false,
+	["ChatStyle"] = false,
+	["EnableGuild"] = false,
+	["ShowTotalTime"] = false,
+	["NotfiyInraid"] = false,
+	["TagsZhtw"] = false,
+	["OrderNewTop"] = true,
+	["TagsFrench"] = false,
+	["ColorByClass"] = true,
+	["EnableGroup"] = false,
+	["NotifyColor"] = {
+		["a"] = 1,
+		["b"] = 1,
+		["g"] = 1,
+		["r"] = 1,
+	},
+	["Y"] = 1190.58642578125,
+	["X"] = 1152.483032226563,
+	["EntryColor"] = {
+		["a"] = 1,
+		["b"] = 1,
+		["g"] = 1,
+		["r"] = 1,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 	},
 	["NotifyColor"] = {
 		["a"] = 1,
@@ -338,7 +434,16 @@ GroupBulletinBoardDB = {
 	["TagsRussian"] = false,
 	["AnnounceChannel"] = "LookingForGroup",
 	["Height"] = 740.9999389648438,
+<<<<<<< HEAD
 	["AdditionalInfo"] = false,
+=======
+	["HistoryColor"] = {
+		["a"] = 1,
+		["r"] = 0.6,
+		["g"] = 0.6,
+		["b"] = 0.6,
+	},
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 	["MinimapButton"] = {
 		["visible"] = false,
 		["lock"] = false,

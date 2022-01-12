@@ -4,6 +4,7 @@ OmniCC4Config = {
 		["base"] = {
 			["enabled"] = true,
 			["fontSize"] = 18,
+<<<<<<< HEAD
 			["minDuration"] = 2,
 			["effect"] = "pulse",
 			["yOff"] = 0,
@@ -11,6 +12,15 @@ OmniCC4Config = {
 			["anchor"] = "CENTER",
 			["spiralOpacity"] = 1.00999997742474,
 			["scaleText"] = true,
+=======
+			["scaleText"] = true,
+			["effect"] = "pulse",
+			["minDuration"] = 2,
+			["minEffectDuration"] = 30,
+			["anchor"] = "CENTER",
+			["spiralOpacity"] = 1.00999997742474,
+			["yOff"] = 0,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
@@ -105,14 +115,23 @@ OmniCC4Config = {
 			["mmSSDuration"] = 0,
 			["minSize"] = 0.5,
 			["spiralOpacity"] = 1,
+<<<<<<< HEAD
 			["minDuration"] = 3,
+=======
+			["scaleText"] = true,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["anchor"] = "CENTER",
 			["minEffectDuration"] = 30,
+<<<<<<< HEAD
 			["scaleText"] = true,
 			["yOff"] = 0,
+=======
+			["yOff"] = 0,
+			["minDuration"] = 3,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 		},
 	},
 	["version"] = "8.1.1",

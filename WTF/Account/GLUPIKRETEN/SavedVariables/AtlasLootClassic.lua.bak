@@ -208,10 +208,29 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Pitchwise - Dreadnaught"] = {
+<<<<<<< HEAD
+=======
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
-					"ShadowfangKeep", -- [2]
+					"WailingCaverns", -- [2]
+					8, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+		},
+		["Vermins - Stonespine"] = {
+		},
+		["Greenwise - Golemagg"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
 					nil, -- [3]
 					1, -- [4]
 					0, -- [5]
@@ -220,6 +239,157 @@ AtlasLootClassicDB = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
+			},
+		},
+		["Testxv - Golemagg"] = {
+		},
+		["Battlearm - Hydraxian Waterlords"] = {
+		},
+		["Kosturko - Golemagg"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Korupcija - Stonespine"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Vermin - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["GUI"] = {
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-172, -- [4]
+					63.9999885559082, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"TheTempleofAhnQiraj", -- [2]
+					13, -- [3]
+					3, -- [4]
+					0, -- [5]
+				},
+			},
+		},
+		["Jaroslav - Golemagg"] = {
+		},
+		["Klhjakhsgdjh - Golemagg"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Default"] = {
+			["GUI"] = {
+				["point"] = {
+					"LEFT", -- [1]
+					nil, -- [2]
+					"LEFT", -- [3]
+					238.9998168945313, -- [4]
+					119.7502059936523, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"BlackwingLair", -- [2]
+					8, -- [3]
+					3, -- [4]
+					0, -- [5]
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["Addons"] = {
+				["Favourites"] = {
+					["lists"] = {
+						["ProfileBase"] = {
+							["mainItems"] = {
+								[8] = true,
+							},
+						},
+					},
+				},
+			},
+		},
+		["Judawise - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Battlearm - Golemagg"] = {
+		},
+		["Moolatz - Dreadnaught"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+		},
+		["Mxzq - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Konac - Dreadnaught"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"ShadowfangKeep", -- [2]
+					12, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
 			},
 		},
 		["Vermins - Stonespine"] = {

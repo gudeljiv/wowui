@@ -2,15 +2,16 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
+	["_10000"] = 200,
+	["_500"] = 5,
+	["_1000000"] = 2500,
 	["_200000"] = 1000,
 	["STARTING_DISCOUNT"] = 5,
-	["_1000000"] = 2500,
-	["_5000000"] = 10000,
 	["LOG_DE_DATA_X"] = true,
-	["_500"] = 5,
-	["_10000"] = 200,
+	["_5000000"] = 10000,
 }
 AUCTIONATOR_PRICING_HISTORY = {
+<<<<<<< HEAD
 	["Pagan Bands of the Whale"] = {
 		["is"] = "14160:0:0:1012:0",
 		["7068963"] = "4100:1",
@@ -163,60 +164,62 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "6471:0:0:0:0",
 		["7068841"] = "7500:2",
 	},
+=======
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 }
 AUCTIONATOR_SHOPPING_LISTS = {
 	{
 		["items"] = {
-			"Silver Rod", -- [1]
-			"nexus", -- [2]
-			"Elemental", -- [3]
-			"Essence", -- [4]
-			"Essence of", -- [5]
-			"Pearl", -- [6]
-			"Righteous", -- [7]
-			"Arcane", -- [8]
-			"Thorium bar", -- [9]
-			"ore", -- [10]
-			"Steel bar", -- [11]
-			"Silk Cloth", -- [12]
-			"Tin Bar", -- [13]
-			"Tin ore", -- [14]
-			"Bronze bar", -- [15]
-			"Iron ore", -- [16]
-			"Iron Bar", -- [17]
-			"Copper Ore", -- [18]
-			"Copper bar", -- [19]
-			"{ Iron }", -- [20]
-			"Linen banda", -- [21]
-			"Linen cloth", -- [22]
-			"Mithril bar", -- [23]
-			"Mithril ore", -- [24]
-			"Thorium ore", -- [25]
-			"Throium ore", -- [26]
-			"Coal", -- [27]
-			"Steel ore", -- [28]
-			"Gold bar", -- [29]
-			"Gold ore", -- [30]
-			"Kill", -- [31]
-			"Bottomle", -- [32]
-			"Mooncloth", -- [33]
-			"Moocloth", -- [34]
-			"{ Engineering }", -- [35]
-			"Stone", -- [36]
-			"Travele", -- [37]
-			"Drag", -- [38]
-			"ooz", -- [39]
-			"Ingot", -- [40]
-			"Edgemaster", -- [41]
-			"\"Iron ore\"", -- [42]
-			"Swifthistle", -- [43]
-			"of fire", -- [44]
-			"Wool Cloth", -- [45]
-			"Tin", -- [46]
-			"Silver bar", -- [47]
-			"Silver ore", -- [48]
-			"Silverleaf", -- [49]
-			"Runecloth", -- [50]
+			"Black Lotus", -- [1]
+			"Plaguebloom", -- [2]
+			"Silverleaf", -- [3]
+			"PurpleLotus", -- [4]
+			"Purple Lotus", -- [5]
+			"\"Coarse Stone\"", -- [6]
+			"\"Steel Bar\"", -- [7]
+			"Mageweave CLoth", -- [8]
+			"Wool Cloth", -- [9]
+			"Linen Cloth", -- [10]
+			"Silver Rod", -- [11]
+			"nexus", -- [12]
+			"Elemental", -- [13]
+			"Essence", -- [14]
+			"Essence of", -- [15]
+			"Pearl", -- [16]
+			"Righteous", -- [17]
+			"Arcane", -- [18]
+			"Thorium bar", -- [19]
+			"ore", -- [20]
+			"Steel bar", -- [21]
+			"Silk Cloth", -- [22]
+			"Tin Bar", -- [23]
+			"Tin ore", -- [24]
+			"Bronze bar", -- [25]
+			"Iron ore", -- [26]
+			"Iron Bar", -- [27]
+			"Copper Ore", -- [28]
+			"Copper bar", -- [29]
+			"{ Iron }", -- [30]
+			"Linen banda", -- [31]
+			"Mithril bar", -- [32]
+			"Mithril ore", -- [33]
+			"Thorium ore", -- [34]
+			"Throium ore", -- [35]
+			"Coal", -- [36]
+			"Steel ore", -- [37]
+			"Gold bar", -- [38]
+			"Gold ore", -- [39]
+			"Kill", -- [40]
+			"Bottomle", -- [41]
+			"Mooncloth", -- [42]
+			"Moocloth", -- [43]
+			"{ Engineering }", -- [44]
+			"Stone", -- [45]
+			"Travele", -- [46]
+			"Drag", -- [47]
+			"ooz", -- [48]
+			"Ingot", -- [49]
+			"Edgemaster", -- [50]
 		},
 		["isRecents"] = 1,
 		["name"] = "Recent Searches",
@@ -224,8 +227,10 @@ AUCTIONATOR_SHOPPING_LISTS = {
 	{
 		["items"] = {
 			"Linen Cloth", -- [1]
-			"Runecloth", -- [2]
-			"Silk Cloth", -- [3]
+			"Mageweave CLoth", -- [2]
+			"Runecloth", -- [3]
+			"Silk Cloth", -- [4]
+			"Wool Cloth", -- [5]
 		},
 		["name"] = "Cloth",
 		["isSorted"] = true,
@@ -277,7 +282,7 @@ AUCTIONATOR_SHOPPING_LISTS = {
 			"Mountain Silversage", -- [20]
 			"Peacebloom", -- [21]
 			"Plaguebloom", -- [22]
-			"PurpleLotus", -- [23]
+			"Purple Lotus", -- [23]
 			"Silverleaf", -- [24]
 			"Stranglekelp", -- [25]
 			"Sungrass", -- [26]
@@ -300,6 +305,7 @@ AUCTIONATOR_SHOPPING_LISTS = {
 }
 AUCTIONATOR_SHOPPING_LISTS_MIGRATED_V2 = true
 AUCTIONATOR_PRICE_DATABASE = {
+<<<<<<< HEAD
 	["Dreadmist_Horde"] = {
 		["Bloodspattered Loincloth of the Whale"] = {
 			["H3212"] = 3000,
@@ -327,12 +333,29 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 7,
 			["id"] = "4305:0:0:0:0",
 			["mr"] = 2100,
+=======
+	["__dbversion"] = 4,
+	["Dreadnaught_Horde"] = {
+		["Silverleaf"] = {
+			["mr"] = 16,
+			["cc"] = 7,
+			["id"] = "765:0:0:0:0",
+			["H4075"] = 16,
+			["sc"] = 0,
+		},
+		["Coarse Stone"] = {
+			["mr"] = 338,
+			["cc"] = 7,
+			["id"] = "2836:0:0:0:0",
+			["H4075"] = 338,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["sc"] = 0,
 		},
 		["Wool Cloth"] = {
-			["H3212"] = 177,
+			["mr"] = 577,
 			["cc"] = 7,
 			["id"] = "2592:0:0:0:0",
+<<<<<<< HEAD
 			["mr"] = 177,
 			["sc"] = 0,
 		},
@@ -469,12 +492,23 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 7,
 			["id"] = "2589:0:0:0:0",
 			["mr"] = 20,
+=======
+			["H4075"] = 577,
+			["sc"] = 0,
+		},
+		["Plaguebloom"] = {
+			["mr"] = 900,
+			["cc"] = 7,
+			["id"] = "13466:0:0:0:0",
+			["H4075"] = 900,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["sc"] = 0,
 		},
 		["Bolt of Linen Cloth"] = {
-			["H3212"] = 55,
+			["mr"] = 909,
 			["cc"] = 7,
 			["id"] = "2996:0:0:0:0",
+<<<<<<< HEAD
 			["mr"] = 55,
 			["sc"] = 0,
 		},
@@ -806,6 +840,46 @@ AUCTIONATOR_PRICE_DATABASE = {
 	},
 	["__dbversion"] = 4,
 	["Hydraxian Waterlords_Horde"] = {
+=======
+			["H4075"] = 909,
+			["sc"] = 0,
+		},
+		["Steel Bar"] = {
+			["mr"] = 1433,
+			["cc"] = 7,
+			["id"] = "3859:0:0:0:0",
+			["H4075"] = 1433,
+			["sc"] = 0,
+		},
+		["Mageweave Cloth"] = {
+			["mr"] = 1144,
+			["cc"] = 7,
+			["id"] = "4338:0:0:0:0",
+			["H4075"] = 1144,
+			["sc"] = 0,
+		},
+		["Black Lotus"] = {
+			["mr"] = 431596,
+			["cc"] = 7,
+			["id"] = "13468:0:0:0:0",
+			["H4075"] = 431596,
+			["sc"] = 0,
+		},
+		["Purple Lotus"] = {
+			["mr"] = 361,
+			["cc"] = 7,
+			["id"] = "8831:0:0:0:0",
+			["H4075"] = 361,
+			["sc"] = 0,
+		},
+		["Linen Cloth"] = {
+			["mr"] = 64,
+			["cc"] = 7,
+			["id"] = "2589:0:0:0:0",
+			["H4075"] = 64,
+			["sc"] = 0,
+		},
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 	},
 }
 AUCTIONATOR_LAST_SCAN_TIME = 1597830209
@@ -1006,6 +1080,7 @@ AUCTIONATOR_TOONS = {
 	},
 }
 AUCTIONATOR_STACKING_PREFS = {
+<<<<<<< HEAD
 	["essence of fire"] = {
 		["stacksize"] = 1,
 		["numstacks"] = 0,
@@ -1185,6 +1260,11 @@ AUCTIONATOR_STACKING_PREFS = {
 	["reef octopus"] = {
 		["numstacks"] = 0,
 		["stacksize"] = 10,
+=======
+	["*_herbs"] = {
+		["numstacks"] = -1,
+		["stacksize"] = 20,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 	},
 }
 AUCTIONATOR_SCAN_MINLEVEL = 1

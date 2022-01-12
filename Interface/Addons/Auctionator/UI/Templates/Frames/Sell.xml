@@ -201,13 +201,19 @@
         </Scripts>
       </ScrollFrame>
 
-      <Frame name="Atr_Hlist" hidden="true">
+      <Frame name="Atr_Hlist" hidden="true" inherits="BackdropTemplate">
         <Size><AbsDimension x="170" y="335"/></Size>
         <Anchors><Anchor point="TOPLEFT"><Offset><AbsDimension x="-193" y="-75"/></Offset></Anchor></Anchors>
-        <Backdrop bgFile="Interface\CharacterFrame\UI-Party-Background" tile="true">
-          <BackgroundInsets><AbsInset left="0" right="-24" top="0" bottom="0"/></BackgroundInsets>
-          <TileSize><AbsValue val="256"/></TileSize>
-        </Backdrop>
+        <Scripts>
+          <OnLoad>
+            self:SetBackdrop({
+              bgFile="Interface\\CharacterFrame\\UI-Party-Background",
+              tile=true,
+              tileSize=256,
+              insets = {left=0, right=-24, top=0, bottom=0},
+            })
+          </OnLoad>
+        </Scripts>
         <Layers>
           <Layer level="ARTWORK">
             <Texture file="Interface\Tooltips\UI-Tooltip-Border">
@@ -629,18 +635,21 @@
         </Scripts>
         </Frame>
 
-      <Frame name="Atr_Hilite1" hidden="true">
+      <Frame name="Atr_Hilite1" hidden="true" inherits="BackdropTemplate">
         <Size><AbsDimension y="111" /></Size>
         <Anchors>
           <Anchor point="TOPLEFT"><Offset><AbsDimension x="5" y="-72"/></Offset></Anchor>
           <Anchor point="RIGHT"><Offset><AbsDimension x="-5"/></Offset></Anchor>
         </Anchors>
-
-        <Backdrop edgeFile="Interface\Tooltips\UI-Tooltip-Border">
-          <EdgeSize>
-            <AbsValue val="16"/>
-          </EdgeSize>
-        </Backdrop>
+        <Scripts>
+          <OnLoad>
+            self:SetBackdrop({
+              tileEdge = true,
+              edgeFile="Interface\\Tooltips\\UI-Tooltip-Border",
+              edgeSize=16,
+            })
+          </OnLoad>
+        </Scripts>
       </Frame>
 
       <Button>

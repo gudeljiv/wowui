@@ -45,6 +45,7 @@ Details_StreamerDB = {
 			["author"] = "Details! Team",
 			["enabled"] = false,
 			["arrow_size"] = 10,
+<<<<<<< HEAD
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -56,6 +57,9 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
+=======
+			["main_frame_strata"] = "LOW",
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -63,6 +67,7 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
+<<<<<<< HEAD
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
@@ -79,6 +84,34 @@ Details_StreamerDB = {
 			["point"] = "RIGHT",
 			["row_height"] = 18,
 			["scale"] = 1,
+=======
+			["author"] = "Details! Team",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["y"] = -183.107162475586,
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = -6.103515625e-05,
+				["x"] = 0.00311279296875,
+				["size"] = 32,
+				["update_speed"] = 0.05,
+				["attribute_type"] = 1,
+			},
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["use_spark"] = false,
+			["font_size"] = 10,
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
+			["main_frame_locked"] = true,
+			["arrow_anchor_y"] = 0,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 		},
 	},
 }

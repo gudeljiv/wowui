@@ -14,11 +14,24 @@ Grid2DB = {
 					["BackgroundTexture"] = "None",
 					["BorderB"] = 0.501960784313726,
 					["layouts"] = {
-						["party"] = "By Group & Class",
-						["raid"] = "By Group & Class",
-						["solo"] = "By Group & Class",
 						["arena"] = "By Group & Class",
+						["party"] = "By Group & Class",
+						["solo"] = "By Group & Class",
+						["raid"] = "By Group & Class",
 					},
+					["BackgroundR"] = 0.101960784313725,
+					["BorderR"] = 0.501960784313726,
+					["Spacing"] = 1,
+					["anchor"] = "CENTER",
+					["BackgroundG"] = 0.101960784313725,
+					["minimapIcon"] = {
+						["hide"] = true,
+					},
+					["PosY"] = 79.999838360142,
+					["BackgroundB"] = 0.101960784313725,
+					["BackgroundA"] = 0,
+					["BorderG"] = 0.501960784313726,
+					["BorderTexture"] = "None",
 					["extraThemes"] = {
 						{
 							["BackgroundTexture"] = "None",
@@ -128,6 +141,7 @@ Grid2DB = {
 							["FrameDisplay"] = "Always",
 						}, -- [3]
 					},
+<<<<<<< HEAD
 					["BorderR"] = 0.501960784313726,
 					["Spacing"] = 1,
 					["anchor"] = "CENTER",
@@ -141,6 +155,8 @@ Grid2DB = {
 					["BorderG"] = 0.501960784313726,
 					["BorderTexture"] = "None",
 					["BackgroundB"] = 0.101960784313725,
+=======
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 					["PosX"] = -253.333301786579,
 				},
 			},
@@ -1063,6 +1079,7 @@ Grid2DB = {
 				["health"] = {
 					["texture"] = "Glamour2",
 					["type"] = "bar",
+<<<<<<< HEAD
 					["backTexture"] = "Glamour2",
 					["backColor"] = {
 						["a"] = 0.389516115188599,
@@ -1072,12 +1089,26 @@ Grid2DB = {
 					},
 					["orientation"] = "HORIZONTAL",
 					["level"] = 2,
+=======
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "CENTER",
 						["point"] = "CENTER",
 						["x"] = 0,
 					},
+<<<<<<< HEAD
+=======
+					["backColor"] = {
+						["a"] = 0.389516115188599,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+					["backTexture"] = "Glamour2",
+					["level"] = 2,
+					["orientation"] = "HORIZONTAL",
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 					["color1"] = {
 						["a"] = 1,
 						["b"] = 0,
@@ -1807,6 +1838,20 @@ Grid2DB = {
 					["type"] = "buff",
 					["blinkThreshold"] = 3,
 					["spellName"] = 27827,
+<<<<<<< HEAD
+=======
+				},
+				["buff-Renew-mine"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["type"] = "buff",
+					["mine"] = true,
+					["spellName"] = 25315,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 				},
 				["buff-PowerWordShield"] = {
 					["type"] = "buff",
@@ -1827,6 +1872,7 @@ Grid2DB = {
 						["r"] = 0,
 					},
 					["spellName"] = 6788,
+<<<<<<< HEAD
 				},
 				["buff-Renew-mine"] = {
 					["color1"] = {
@@ -1838,6 +1884,8 @@ Grid2DB = {
 					["type"] = "buff",
 					["mine"] = true,
 					["spellName"] = 25315,
+=======
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 				},
 			},
 			["versions"] = {

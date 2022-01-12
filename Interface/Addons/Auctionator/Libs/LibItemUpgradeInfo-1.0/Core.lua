@@ -9,7 +9,7 @@ local pp=print
 LoadAddOn("Blizzard_DebugTools")
 LoadAddOn("LibDebug")
 if LibDebug then LibDebug() end
---@end-debug@]===]
+--@end-debug@]==]]===]
 --@non-debug@
 local print=function() end
 --@end-non-debug@

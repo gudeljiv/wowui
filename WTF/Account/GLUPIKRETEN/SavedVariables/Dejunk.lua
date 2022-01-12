@@ -40,6 +40,11 @@ __DEJUNK_SAVED_VARIABLES__ = {
 				},
 			},
 		},
+<<<<<<< HEAD
+=======
+		["showItemTooltip"] = false,
+		["showMerchantButton"] = false,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 	},
 	["Profiles"] = {
 		["Poklopac-Dreadnaught"] = {
@@ -154,6 +159,17 @@ __DEJUNK_SAVED_VARIABLES__ = {
 				["safeMode"] = false,
 			},
 			["version"] = 3,
+<<<<<<< HEAD
+=======
+			["general"] = {
+				["autoRepair"] = true,
+				["chat"] = {
+					["destroy"] = false,
+					["enabled"] = false,
+					["sell"] = false,
+				},
+			},
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 		},
 		["Default"] = {
 			["destroy"] = {

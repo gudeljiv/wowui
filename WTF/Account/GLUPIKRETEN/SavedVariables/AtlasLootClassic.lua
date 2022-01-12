@@ -208,6 +208,13 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Konac - Dreadnaught"] = {
+<<<<<<< HEAD
+=======
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -358,6 +365,7 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Battlearm - Hydraxian Waterlords"] = {
+<<<<<<< HEAD
 		},
 		["Greenwise - Golemagg"] = {
 			["minimap"] = {
@@ -375,6 +383,10 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Pitchwise - Dreadnaught"] = {
+=======
+		},
+		["Greenwise - Golemagg"] = {
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
@@ -382,11 +394,30 @@ AtlasLootClassicDB = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
+<<<<<<< HEAD
 					"ShadowfangKeep", -- [2]
+=======
+					"Ragefire", -- [2]
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 					nil, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+		},
+		["Pitchwise - Dreadnaught"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"WailingCaverns", -- [2]
+					8, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 	},

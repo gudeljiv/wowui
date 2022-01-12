@@ -1,17 +1,26 @@
 VER 3 000000000000000D "Drink" "Inv_misc_questionmark"
 #showtooltip
+<<<<<<< HEAD
 /use [nocombat]item:1205
 /castsequence [combat] reset=combat item:3385
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:2287
+=======
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
+END
+VER 3 000000000000000C "Food" "Inv_misc_questionmark"
+#showtooltip
+/use [nocombat]item:4538
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:3771
 /cast feed pet
-/use item:0
+/use item:3771
 END
 VER 3 000000000000000B "TEST" "132089"
 /run print("target", CastingInfo("target"))

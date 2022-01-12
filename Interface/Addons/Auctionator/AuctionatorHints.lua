@@ -541,32 +541,23 @@ hooksecurefunc (GameTooltip, "SetInventoryItem",
   end
 );
 
---[[
-hooksecurefunc (GameTooltip, "SetGuildBankItem",
-  function (tip, tab, slot)
-    local _, num = GetGuildBankItemInfo(tab, slot);
-    Atr_ShowTipWithPricing (tip, GetGuildBankItemLink(tab, slot), num);
+
+hooksecurefunc( GameTooltip, 'SetTradeSkillItem',
+  function( tip, skill, id )
+    local link, count;
+
+    if id then
+      link = GetTradeSkillReagentItemLink(skill, id);
+      _, _, count = GetTradeSkillReagentInfo(skill, id);
+    else
+      link = GetTradeSkillItemLink(skill);
+      count  = GetTradeSkillNumMade(skill);
+    end
+
+    Atr_ShowTipWithPricing (tip, link, count);
   end
 );
 
-hooksecurefunc( GameTooltip, 'SetRecipeResultItem',
-  function( tip, itemId )
-    local link = C_TradeSkillUI.GetRecipeItemLink( itemId )
-    local count  = C_TradeSkillUI.GetRecipeNumItemsProduced( itemId )
-
-    Atr_ShowTipWithPricing( tip, link, count )
-  end
-);
-
-hooksecurefunc( GameTooltip, 'SetRecipeReagentItem',
-  function( tip, itemId, index )
-    local link = C_TradeSkillUI.GetRecipeReagentItemLink( itemId, index )
-    local count = select( 3, C_TradeSkillUI.GetRecipeReagentInfo( itemId, index ) )
-
-    Atr_ShowTipWithPricing( tip, link, count )
-  end
-);
-]]--
 hooksecurefunc (GameTooltip, "SetTradePlayerItem",
   function (tip, id)
     local _, _, num = GetTradePlayerItemInfo(id);

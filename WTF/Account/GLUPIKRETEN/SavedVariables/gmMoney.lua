@@ -20,7 +20,11 @@ GMMONEY = {
 			["CLASS"] = "WARLOCK",
 		},
 		["Konac"] = {
+<<<<<<< HEAD
 			["GOLD"] = 185482,
+=======
+			["GOLD"] = 184426,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["CLASS"] = "PRIEST",
 		},
 		["Nitwit"] = {
@@ -28,7 +32,11 @@ GMMONEY = {
 			["CLASS"] = "ROGUE",
 		},
 		["Pitchwise"] = {
+<<<<<<< HEAD
 			["GOLD"] = 9597,
+=======
+			["GOLD"] = 10822,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["CLASS"] = "WARRIOR",
 		},
 	},

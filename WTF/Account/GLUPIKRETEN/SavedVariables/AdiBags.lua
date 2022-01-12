@@ -79,8 +79,13 @@ AdiBagsDB = {
 						[8839] = "Trade Goods#Herbs",
 						[11084] = "Trade Goods#Enchanting",
 						[5634] = "Consumable#Potions",
+<<<<<<< HEAD
 						[12436] = "Quest#Frostmaul E'ko",
 						[11166] = "Recipe#Recipe",
+=======
+						[13452] = "Consumable#Potions",
+						[12436] = "Quest#Frostmaul E'ko",
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 						[1710] = "Consumable#Potions",
 						[5997] = "Consumable#Potions",
 						[9179] = "Consumable#Potions",
@@ -119,7 +124,11 @@ AdiBagsDB = {
 						[2515] = "Ammunition#Ammo",
 						[11176] = "Trade Goods#Enchanting",
 						[2452] = "Trade Goods#Herbs",
+<<<<<<< HEAD
 						[13452] = "Consumable#Potions",
+=======
+						[11166] = "Recipe#Recipe",
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 						[2770] = "Trade Goods#Mining",
 						[3818] = "Trade Goods#Herbs",
 						[2453] = "Trade Goods#Herbs",

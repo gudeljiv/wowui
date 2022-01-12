@@ -248,14 +248,14 @@ ClassicCastbarsDB = {
 		["iconPositionY"] = 50,
 		["textPositionX"] = 0,
 		["showSpark"] = true,
-		["castStatusBar"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
-		["hideIconBorder"] = true,
 		["showIcon"] = true,
+		["hideIconBorder"] = true,
 		["statusColorFailed"] = {
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
+		["castStatusBar"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
 		["borderColor"] = {
 			1, -- [1]
 			1, -- [2]

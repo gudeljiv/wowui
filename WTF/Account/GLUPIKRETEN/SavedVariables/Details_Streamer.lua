@@ -42,7 +42,16 @@ Details_StreamerDB = {
 			["row_texture"] = "Glamour2",
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = true,
+<<<<<<< HEAD
 			["main_frame_strata"] = "LOW",
+=======
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["enabled"] = false,
 			["arrow_size"] = 10,
 			["font_size"] = 10,
@@ -70,12 +79,16 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
+<<<<<<< HEAD
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
 				1, -- [3]
 				0.480826139450073, -- [4]
 			},
+=======
+			["author"] = "Details! Team",
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["point"] = "RIGHT",
 			["row_height"] = 18,
 			["scale"] = 1,

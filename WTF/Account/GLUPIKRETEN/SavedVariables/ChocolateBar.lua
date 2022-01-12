@@ -50,6 +50,20 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["locked"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -70,6 +84,7 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
+<<<<<<< HEAD
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -82,6 +97,11 @@ ChocolateBarDB = {
 			},
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
+=======
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			},
 			["locked"] = false,
 			["fixedStrata"] = true,
@@ -447,18 +467,29 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
+<<<<<<< HEAD
 			["fontName"] = "Friz Quadrata TT",
+=======
+			["desaturated"] = false,
+			["forceColor"] = false,
+			["fixedStrata"] = true,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["gap"] = 0,
 			["moveFrames"] = false,
 			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
+<<<<<<< HEAD
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
 			["forceColor"] = false,
+=======
+			["fontName"] = "Friz Quadrata TT",
+			["moveFrames"] = false,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -512,7 +543,7 @@ CB_PlayedTime = {
 		["total"] = 2037,
 	},
 	["Moolatz-Dreadnaught"] = {
-		["total"] = 17223,
+		["total"] = 18391,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -527,13 +558,21 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Pitchwise-Dreadnaught"] = {
+<<<<<<< HEAD
 		["total"] = 113872,
+=======
+		["total"] = 115492,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 	},
 	["Judawise-"] = {
 		["total"] = 437,
 	},
 	["Konac-Dreadnaught"] = {
+<<<<<<< HEAD
 		["total"] = 75425,
+=======
+		["total"] = 75745,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 	},
 	["Korupcija-"] = {
 		["total"] = 21359,

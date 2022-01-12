@@ -50,6 +50,14 @@ ChocolateBarDB = {
 	["addonVersion"] = "v3.7.7",
 	["profiles"] = {
 		["Default"] = {
+<<<<<<< HEAD
+=======
+			["locked"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -68,6 +76,7 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 					["index"] = 1,
 					["width"] = 147,
+<<<<<<< HEAD
 				},
 			},
 			["background"] = {
@@ -83,6 +92,14 @@ ChocolateBarDB = {
 			["moveFrames"] = false,
 			["locked"] = false,
 			["fixedStrata"] = true,
+=======
+				},
+			},
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -433,6 +450,7 @@ ChocolateBarDB = {
 					["enabled"] = false,
 					["align"] = "right",
 					["isNew"] = false,
+<<<<<<< HEAD
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
@@ -440,6 +458,15 @@ ChocolateBarDB = {
 					["index"] = 3,
 					["showLabel"] = true,
 					["showText"] = false,
+=======
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+				},
+				["NWB"] = {
+					["index"] = 3,
+					["showLabel"] = true,
+					["showText"] = false,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 					["barName"] = "ChocolateBar2",
 					["showIcon"] = false,
 					["customLabel"] = "N",
@@ -447,6 +474,7 @@ ChocolateBarDB = {
 			},
 			["desaturated"] = false,
 			["gap"] = 0,
+<<<<<<< HEAD
 			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
@@ -458,6 +486,24 @@ ChocolateBarDB = {
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
+=======
+			["fixedStrata"] = true,
+			["desaturated"] = false,
+			["moveFrames"] = false,
+			["fontName"] = "Friz Quadrata TT",
+			["textOffset"] = 2,
+			["height"] = 20,
+			["forceColor"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			},
 			["textColor"] = {
 				["a"] = 1,
@@ -512,7 +558,7 @@ CB_PlayedTime = {
 		["total"] = 2037,
 	},
 	["Moolatz-Dreadnaught"] = {
-		["total"] = 17223,
+		["total"] = 18391,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -527,7 +573,11 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Pitchwise-Dreadnaught"] = {
+<<<<<<< HEAD
 		["total"] = 113872,
+=======
+		["total"] = 115492,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 	},
 	["Judawise-"] = {
 		["total"] = 437,
@@ -572,6 +622,10 @@ CB_PlayedTime = {
 		["total"] = 21359,
 	},
 	["Konac-Dreadnaught"] = {
+<<<<<<< HEAD
 		["total"] = 75425,
+=======
+		["total"] = 75548,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 	},
 }

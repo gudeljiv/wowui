@@ -92,11 +92,19 @@ ItemRackEvents = {
 			["The Exodar"] = 1,
 			["Stormwind City"] = 1,
 			["Darnassus"] = 1,
+<<<<<<< HEAD
 			["Thunder Bluff"] = 1,
 			["Shattrath City"] = 1,
 			["Silvermoon City"] = 1,
 			["Dalaran"] = 1,
 			["Ironforge"] = 1,
+=======
+			["Ironforge"] = 1,
+			["Shattrath City"] = 1,
+			["Thunder Bluff"] = 1,
+			["Dalaran"] = 1,
+			["Silvermoon City"] = 1,
+>>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["Orgrimmar"] = 1,
 		},
 	},
