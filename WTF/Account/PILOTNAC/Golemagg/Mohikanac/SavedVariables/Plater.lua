@@ -1,2 +1,0 @@
-
-PlaterDBChr = nil
