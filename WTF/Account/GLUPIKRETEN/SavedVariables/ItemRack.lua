@@ -2,36 +2,33 @@
 ItemRackSettings = {
 	["HideOOC"] = "OFF",
 	["Cooldown90"] = "OFF",
-	["ShowMinimap"] = "OFF",
+	["ShowMinimap"] = true,
 	["Notify"] = "ON",
-	["ShowSetInTooltip"] = "ON",
 	["HideTradables"] = "OFF",
 	["AllowHidden"] = "ON",
 	["minimap"] = {
 		["hide"] = false,
 	},
-	["TinyTooltips"] = "OFF",
 	["NotifyChatAlso"] = "OFF",
-	["MinimapTooltip"] = "ON",
 	["MenuOnShift"] = "OFF",
-	["TrinketMenuMode"] = "ON",
+	["TrinketMenuMode"] = "OFF",
 	["EventsVersion"] = 18,
 	["HidePetBattle"] = "ON",
-	["LargeNumbers"] = "OFF",
 	["DisableAltClick"] = "OFF",
-	["MenuOnRight"] = "OFF",
-	["IconPos"] = 170.481767190417,
-	["CooldownCount"] = "ON",
-	["NotifyThirty"] = "OFF",
-	["AnotherOther"] = "OFF",
-	["ShowTooltips"] = "ON",
-	["EquipToggle"] = "OFF",
-	["ShowHotKeys"] = "OFF",
 	["TooltipFollow"] = "OFF",
-	["EquipOnSetPick"] = "OFF",
 	["CharacterSheetMenus"] = "ON",
-	["SquareMinimap"] = "OFF",
+	["MenuOnRight"] = "OFF",
+	["MinimapTooltip"] = "ON",
+	["NotifyThirty"] = "OFF",
 	["AllowEmpty"] = "ON",
+	["ShowTooltips"] = "ON",
+	["ShowHotKeys"] = "OFF",
+	["EquipToggle"] = "OFF",
+	["AnotherOther"] = "OFF",
+	["EquipOnSetPick"] = "OFF",
+	["LargeNumbers"] = "OFF",
+	["CooldownCount"] = "OFF",
+	["TinyTooltips"] = "OFF",
 }
 ItemRackItems = {
 	["12846"] = {
@@ -51,10 +48,10 @@ ItemRackItems = {
 	},
 }
 ItemRackEvents = {
-	["Drinking"] = {
+	["Mounted"] = {
 		["Unequip"] = 1,
 		["Type"] = "Buff",
-		["Buff"] = "Drink",
+		["Anymount"] = 1,
 	},
 	["Buffs Gained"] = {
 		["Trigger"] = "UNIT_AURA",
@@ -74,15 +71,28 @@ ItemRackEvents = {
 			["Nagrand Arena"] = 1,
 		},
 	},
-	["Swimming"] = {
-		["Trigger"] = "MIRROR_TIMER_START",
-		["Type"] = "Script",
-		["Script"] = "local set = \"Name of set\"\nif IsSwimming() and not IsSetEquipped(set) then\n  EquipSet(set)\n  if not SwimmingEvent then\n    function SwimmingEvent()\n      if not IsSwimming() then\n        ItemRack.StopTimer(\"SwimmingEvent\")\n        UnequipSet(set)\n      end\n    end\n    ItemRack.CreateTimer(\"SwimmingEvent\",SwimmingEvent,.5,1)\n  end\n  ItemRack.StartTimer(\"SwimmingEvent\")\nend\n--[[Equips a set when swimming and breath gauge appears and unequips soon after you stop swimming.]]",
+	["Nefarian's Lair"] = {
+		["Unequip"] = 1,
+		["Type"] = "Zone",
+		["Zones"] = {
+			["Nefarian's Lair"] = 1,
+		},
 	},
 	["After Cast"] = {
 		["Trigger"] = "UNIT_SPELLCAST_SUCCEEDED",
 		["Type"] = "Script",
 		["Script"] = "local spell = \"Name of spell\"\nlocal set = \"Name of set\"\nif arg1==\"player\" and arg2==spell then\n  EquipSet(set)\nend\n\n--[[This event will equip \"Name of set\" when \"Name of spell\" has finished casting.  Change the names for your own use.]]",
+	},
+	["Priest Shadowform"] = {
+		["Unequip"] = 1,
+		["Class"] = "PRIEST",
+		["Type"] = "Stance",
+		["Stance"] = 1,
+	},
+	["Drinking"] = {
+		["Unequip"] = 1,
+		["Type"] = "Buff",
+		["Buff"] = "Drink",
 	},
 	["City"] = {
 		["Unequip"] = 1,
@@ -92,38 +102,17 @@ ItemRackEvents = {
 			["The Exodar"] = 1,
 			["Stormwind City"] = 1,
 			["Darnassus"] = 1,
-<<<<<<< HEAD
 			["Thunder Bluff"] = 1,
 			["Shattrath City"] = 1,
 			["Silvermoon City"] = 1,
 			["Dalaran"] = 1,
 			["Ironforge"] = 1,
-=======
-			["Ironforge"] = 1,
-			["Shattrath City"] = 1,
-			["Thunder Bluff"] = 1,
-			["Dalaran"] = 1,
-			["Silvermoon City"] = 1,
->>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["Orgrimmar"] = 1,
 		},
 	},
-	["Rogue Stealth"] = {
-		["Unequip"] = 1,
-		["Class"] = "ROGUE",
-		["Type"] = "Stance",
-		["Stance"] = 1,
-	},
-	["Mounted"] = {
-		["Unequip"] = 1,
-		["Type"] = "Buff",
-		["Anymount"] = 1,
-	},
-	["Nefarian's Lair"] = {
-		["Unequip"] = 1,
-		["Type"] = "Zone",
-		["Zones"] = {
-			["Nefarian's Lair"] = 1,
-		},
+	["Swimming"] = {
+		["Trigger"] = "MIRROR_TIMER_START",
+		["Type"] = "Script",
+		["Script"] = "local set = \"Name of set\"\nif IsSwimming() and not IsSetEquipped(set) then\n  EquipSet(set)\n  if not SwimmingEvent then\n    function SwimmingEvent()\n      if not IsSwimming() then\n        ItemRack.StopTimer(\"SwimmingEvent\")\n        UnequipSet(set)\n      end\n    end\n    ItemRack.CreateTimer(\"SwimmingEvent\",SwimmingEvent,.5,1)\n  end\n  ItemRack.StartTimer(\"SwimmingEvent\")\nend\n--[[Equips a set when swimming and breath gauge appears and unequips soon after you stop swimming.]]",
 	},
 }

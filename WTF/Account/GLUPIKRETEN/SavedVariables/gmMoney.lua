@@ -1,79 +1,9 @@
 
 GMMONEY = {
-	["Hydraxian Waterlords"] = {
-		["Battlearm"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "HUNTER",
-		},
-	},
 	["Dreadnaught"] = {
-		["Poklopac"] = {
-			["GOLD"] = 570682,
-			["CLASS"] = "HUNTER",
-		},
-		["Moolatz"] = {
-			["GOLD"] = 101547,
-			["CLASS"] = "DRUID",
-		},
-		["Greshnik"] = {
-			["GOLD"] = 11,
-			["CLASS"] = "WARLOCK",
-		},
 		["Konac"] = {
-<<<<<<< HEAD
-			["GOLD"] = 185482,
-=======
 			["GOLD"] = 184426,
->>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 			["CLASS"] = "PRIEST",
-		},
-		["Nitwit"] = {
-			["GOLD"] = 620,
-			["CLASS"] = "ROGUE",
-		},
-		["Pitchwise"] = {
-<<<<<<< HEAD
-			["GOLD"] = 9597,
-=======
-			["GOLD"] = 10822,
->>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
-			["CLASS"] = "WARRIOR",
-		},
-	},
-	["Stonespine"] = {
-		["Vermins"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
-		},
-	},
-	["Golemagg"] = {
-		["Battlearm"] = {
-			["GOLD"] = 47807,
-			["CLASS"] = "SHAMAN",
-		},
-		["Mxzq"] = {
-			["GOLD"] = 98681,
-			["CLASS"] = "HUNTER",
-		},
-		["Augustin"] = {
-			["GOLD"] = 34442,
-			["CLASS"] = "MAGE",
-		},
-		["Mxyz"] = {
-			["GOLD"] = 3042140,
-			["CLASS"] = "PRIEST",
-		},
-		["Battitude"] = {
-			["GOLD"] = 98,
-			["CLASS"] = "ROGUE",
-		},
-		["Mxyzptlk"] = {
-			["GOLD"] = 41,
-			["CLASS"] = "WARLOCK",
-		},
-		["Vermin"] = {
-			["GOLD"] = 77907,
-			["CLASS"] = "WARRIOR",
 		},
 	},
 }

@@ -4,16 +4,16 @@ ExtendedCharacterStats = {
 		["statColorSelection"] = "full",
 		["window"] = {
 			["height"] = 422,
-			["width"] = 180,
-			["xOffset"] = -30,
 			["yOffset"] = 30,
+			["xOffset"] = -30,
+			["width"] = 180,
 		},
 		["statsWindowClosedOnOpen"] = false,
 		["addColorsToStatTexts"] = true,
-		["statFontSize"] = 10,
-		["showQualityColors"] = true,
-		["headerFontSize"] = 11,
 		["profileVersion"] = 11,
+		["showQualityColors"] = true,
+		["statFontSize"] = 10,
+		["headerFontSize"] = 11,
 	},
 	["profile"] = {
 		["ranged"] = {
@@ -39,9 +39,6 @@ ExtendedCharacterStats = {
 					["refName"] = "RangedHitBossLevel",
 					["textColor"] = "85bb5c",
 				},
-				["isSubGroup"] = true,
-				["display"] = true,
-				["text"] = "Hit",
 				["sameLevel"] = {
 					["statColor"] = "558b2f",
 					["display"] = true,
@@ -49,20 +46,17 @@ ExtendedCharacterStats = {
 					["refName"] = "RangedHitSameLevel",
 					["textColor"] = "85bb5c",
 				},
-<<<<<<< HEAD
-=======
 				["isSubGroup"] = true,
-				["text"] = "Hit",
-				["display"] = true,
->>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 				["rating"] = {
-					["isTbcOnly"] = true,
+					["text"] = "Rating",
 					["statColor"] = "558b2f",
 					["display"] = true,
-					["text"] = "Rating",
+					["isTbcOnly"] = true,
 					["refName"] = "RangedHitRating",
 					["textColor"] = "85bb5c",
 				},
+				["display"] = true,
+				["text"] = "Hit",
 				["refName"] = "RangedHitHeader",
 				["bonus"] = {
 					["statColor"] = "558b2f",
@@ -106,10 +100,11 @@ ExtendedCharacterStats = {
 				["text"] = "Parry Chance",
 				["refName"] = "ParryChance",
 			},
-			["blockValue"] = {
+			["resilience"] = {
 				["display"] = true,
-				["text"] = "Block Value",
-				["refName"] = "BlockValue",
+				["isTbcOnly"] = true,
+				["refName"] = "ResilienceValue",
+				["text"] = "Resilience",
 			},
 			["critReduction"] = {
 				["display"] = true,
@@ -117,28 +112,27 @@ ExtendedCharacterStats = {
 				["refName"] = "CritReduction",
 				["text"] = "Crit Reduction",
 			},
-			["display"] = true,
-			["dodge"] = {
-				["display"] = true,
-				["text"] = "Dodge Chance",
-				["refName"] = "DodgeChance",
-			},
 			["armor"] = {
 				["display"] = true,
 				["text"] = "Armor",
 				["refName"] = "Armor",
 			},
+			["dodge"] = {
+				["display"] = true,
+				["text"] = "Dodge Chance",
+				["refName"] = "DodgeChance",
+			},
+			["display"] = true,
 			["defenseRating"] = {
 				["display"] = true,
 				["text"] = "Defense Rating",
 				["refName"] = "DefenseRating",
 			},
 			["refName"] = "DefenseHeader",
-			["resilience"] = {
+			["blockValue"] = {
 				["display"] = true,
-				["isTbcOnly"] = true,
-				["refName"] = "ResilienceValue",
-				["text"] = "Resilience",
+				["text"] = "Block Value",
+				["refName"] = "BlockValue",
 			},
 		},
 		["general"] = {
@@ -149,138 +143,6 @@ ExtendedCharacterStats = {
 				["display"] = true,
 				["text"] = "Movement Speed",
 				["refName"] = "MovementSpeed",
-			},
-		},
-		["melee"] = {
-			["attackPower"] = {
-				["statColor"] = "ffa000",
-				["display"] = true,
-				["text"] = "Attack Power",
-				["refName"] = "MeleeAttackPower",
-				["textColor"] = "ffd149",
-			},
-			["expertise"] = {
-				["display"] = true,
-				["isTbcOnly"] = true,
-				["refName"] = "Expertise",
-				["text"] = "Expertise",
-			},
-			["attackSpeed"] = {
-				["offHand"] = {
-					["statColor"] = "00766c",
-					["display"] = true,
-					["text"] = "Off Hand",
-					["refName"] = "MeleeAttackSpeedOffHand",
-					["textColor"] = "009688",
-				},
-<<<<<<< HEAD
-				["isSubGroup"] = true,
-=======
->>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
-				["mainHand"] = {
-					["statColor"] = "00766c",
-					["display"] = true,
-					["text"] = "Main Hand",
-					["refName"] = "MeleeAttackSpeedMainHand",
-					["textColor"] = "009688",
-				},
-<<<<<<< HEAD
-				["text"] = "Attack Speed",
-				["refName"] = "MeleeAttackSpeedHeader",
-				["display"] = true,
-=======
-				["display"] = true,
-				["text"] = "Attack Speed",
-				["refName"] = "MeleeAttackSpeedHeader",
-				["isSubGroup"] = true,
->>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
-			},
-			["hit"] = {
-				["bossLevel"] = {
-					["statColor"] = "558b2f",
-					["display"] = true,
-					["text"] = "Miss (Lvl + 3)",
-					["refName"] = "MeleeHitBossLevel",
-					["textColor"] = "85bb5c",
-				},
-<<<<<<< HEAD
-				["isSubGroup"] = true,
-				["display"] = true,
-				["text"] = "Hit",
-=======
->>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
-				["sameLevel"] = {
-					["statColor"] = "558b2f",
-					["display"] = true,
-					["text"] = "Miss",
-					["refName"] = "MeleeHitSameLevel",
-					["textColor"] = "85bb5c",
-				},
-<<<<<<< HEAD
-=======
-				["isSubGroup"] = true,
-				["text"] = "Hit",
-				["display"] = true,
->>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
-				["rating"] = {
-					["isTbcOnly"] = true,
-					["statColor"] = "558b2f",
-					["display"] = true,
-					["text"] = "Rating",
-					["refName"] = "MeleeHitRating",
-					["textColor"] = "85bb5c",
-				},
-				["refName"] = "MeleeHitHeader",
-				["bonus"] = {
-					["statColor"] = "558b2f",
-					["display"] = true,
-					["text"] = "Bonus",
-					["refName"] = "MeleeHitBonus",
-					["textColor"] = "85bb5c",
-				},
-			},
-			["display"] = true,
-			["text"] = "Melee",
-			["refName"] = "MeleeHeader",
-			["crit"] = {
-				["statColor"] = "d32f2f",
-				["display"] = true,
-				["text"] = "Crit Chance",
-				["refName"] = "MeleeCritChance",
-				["textColor"] = "ff6659",
-			},
-		},
-		["regen"] = {
-			["mp5Buffs"] = {
-				["statColor"] = "0d47a1",
-				["display"] = true,
-				["text"] = "MP5 (Buffs)",
-				["refName"] = "MP5Buffs",
-				["textColor"] = "5472d3",
-			},
-			["mp5Spirit"] = {
-				["statColor"] = "0d47a1",
-				["display"] = true,
-				["text"] = "MP5 (Spirit)",
-				["refName"] = "MP5Spirit",
-				["textColor"] = "5472d3",
-			},
-			["mp5Casting"] = {
-				["statColor"] = "0d47a1",
-				["display"] = true,
-				["text"] = "MP5 (Casting)",
-				["refName"] = "MP5Casting",
-				["textColor"] = "5472d3",
-			},
-			["display"] = true,
-			["text"] = "Mana",
-			["refName"] = "ManaHeader",
-			["mp5Items"] = {
-				["statColor"] = "0d47a1",
-				["display"] = true,
-				["text"] = "MP5 (Items)",
-				["refName"] = "MP5Items",
-				["textColor"] = "5472d3",
 			},
 		},
 		["spellBonus"] = {
@@ -394,24 +256,11 @@ ExtendedCharacterStats = {
 			},
 		},
 		["spell"] = {
-<<<<<<< HEAD
-			["crit"] = {
-				["statColor"] = "d32f2f",
-				["display"] = true,
-				["text"] = "Crit Chance",
-				["refName"] = "SpellCritChance",
-				["textColor"] = "ff6659",
-			},
 			["penetration"] = {
 				["display"] = true,
 				["text"] = "Penetration",
 				["refName"] = "SpellPenetration",
 			},
-			["display"] = true,
-			["text"] = "Spell",
-=======
->>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
-			["refName"] = "SpellHeader",
 			["hit"] = {
 				["bossLevel"] = {
 					["statColor"] = "558b2f",
@@ -420,9 +269,6 @@ ExtendedCharacterStats = {
 					["refName"] = "SpellHitBossLevel",
 					["textColor"] = "85bb5c",
 				},
-				["isSubGroup"] = true,
-				["display"] = true,
-				["text"] = "Hit",
 				["sameLevel"] = {
 					["statColor"] = "558b2f",
 					["display"] = true,
@@ -430,20 +276,17 @@ ExtendedCharacterStats = {
 					["refName"] = "SpellHitSameLevel",
 					["textColor"] = "85bb5c",
 				},
-<<<<<<< HEAD
-=======
 				["isSubGroup"] = true,
-				["text"] = "Hit",
-				["display"] = true,
->>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
 				["rating"] = {
-					["isTbcOnly"] = true,
+					["text"] = "Rating",
 					["statColor"] = "558b2f",
 					["display"] = true,
-					["text"] = "Rating",
+					["isTbcOnly"] = true,
 					["refName"] = "SpellHitRating",
 					["textColor"] = "85bb5c",
 				},
+				["display"] = true,
+				["text"] = "Hit",
 				["refName"] = "SpellHitHeader",
 				["bonus"] = {
 					["statColor"] = "558b2f",
@@ -453,10 +296,9 @@ ExtendedCharacterStats = {
 					["textColor"] = "85bb5c",
 				},
 			},
-<<<<<<< HEAD
-=======
 			["display"] = true,
 			["text"] = "Spell",
+			["refName"] = "SpellHeader",
 			["crit"] = {
 				["statColor"] = "d32f2f",
 				["display"] = true,
@@ -464,12 +306,119 @@ ExtendedCharacterStats = {
 				["refName"] = "SpellCritChance",
 				["textColor"] = "ff6659",
 			},
-			["penetration"] = {
+		},
+		["regen"] = {
+			["mp5Buffs"] = {
+				["statColor"] = "0d47a1",
 				["display"] = true,
-				["text"] = "Penetration",
-				["refName"] = "SpellPenetration",
+				["text"] = "MP5 (Buffs)",
+				["refName"] = "MP5Buffs",
+				["textColor"] = "5472d3",
 			},
->>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
+			["mp5Spirit"] = {
+				["statColor"] = "0d47a1",
+				["display"] = true,
+				["text"] = "MP5 (Spirit)",
+				["refName"] = "MP5Spirit",
+				["textColor"] = "5472d3",
+			},
+			["mp5Casting"] = {
+				["statColor"] = "0d47a1",
+				["display"] = true,
+				["text"] = "MP5 (Casting)",
+				["refName"] = "MP5Casting",
+				["textColor"] = "5472d3",
+			},
+			["display"] = true,
+			["text"] = "Mana",
+			["refName"] = "ManaHeader",
+			["mp5Items"] = {
+				["statColor"] = "0d47a1",
+				["display"] = true,
+				["text"] = "MP5 (Items)",
+				["refName"] = "MP5Items",
+				["textColor"] = "5472d3",
+			},
+		},
+		["melee"] = {
+			["attackPower"] = {
+				["statColor"] = "ffa000",
+				["display"] = true,
+				["text"] = "Attack Power",
+				["refName"] = "MeleeAttackPower",
+				["textColor"] = "ffd149",
+			},
+			["expertise"] = {
+				["display"] = true,
+				["isTbcOnly"] = true,
+				["refName"] = "Expertise",
+				["text"] = "Expertise",
+			},
+			["attackSpeed"] = {
+				["offHand"] = {
+					["statColor"] = "00766c",
+					["display"] = true,
+					["text"] = "Off Hand",
+					["refName"] = "MeleeAttackSpeedOffHand",
+					["textColor"] = "009688",
+				},
+				["mainHand"] = {
+					["statColor"] = "00766c",
+					["display"] = true,
+					["text"] = "Main Hand",
+					["refName"] = "MeleeAttackSpeedMainHand",
+					["textColor"] = "009688",
+				},
+				["display"] = true,
+				["text"] = "Attack Speed",
+				["refName"] = "MeleeAttackSpeedHeader",
+				["isSubGroup"] = true,
+			},
+			["hit"] = {
+				["bossLevel"] = {
+					["statColor"] = "558b2f",
+					["display"] = true,
+					["text"] = "Miss (Lvl + 3)",
+					["refName"] = "MeleeHitBossLevel",
+					["textColor"] = "85bb5c",
+				},
+				["sameLevel"] = {
+					["statColor"] = "558b2f",
+					["display"] = true,
+					["text"] = "Miss",
+					["refName"] = "MeleeHitSameLevel",
+					["textColor"] = "85bb5c",
+				},
+				["isSubGroup"] = true,
+				["rating"] = {
+					["text"] = "Rating",
+					["statColor"] = "558b2f",
+					["display"] = true,
+					["isTbcOnly"] = true,
+					["refName"] = "MeleeHitRating",
+					["textColor"] = "85bb5c",
+				},
+				["display"] = true,
+				["text"] = "Hit",
+				["refName"] = "MeleeHitHeader",
+				["bonus"] = {
+					["statColor"] = "558b2f",
+					["display"] = true,
+					["text"] = "Bonus",
+					["refName"] = "MeleeHitBonus",
+					["textColor"] = "85bb5c",
+				},
+			},
+			["display"] = true,
+			["text"] = "Melee",
+			["refName"] = "MeleeHeader",
+			["crit"] = {
+				["statColor"] = "d32f2f",
+				["display"] = true,
+				["text"] = "Crit Chance",
+				["refName"] = "MeleeCritChance",
+				["textColor"] = "ff6659",
+			},
 		},
 	},
 }

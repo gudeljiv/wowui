@@ -1,281 +1,35 @@
 
 AdiBagsDB = {
-	["char"] = {
-		["Vermin - Golemagg"] = {
-			["collapsedSections"] = {
-				["Bag #1#Bag #1"] = true,
-				["Bag #2#Bag #2"] = true,
-				["Bag #4#Bag #4"] = true,
-				["Bag #3#Bag #3"] = true,
-			},
-		},
-	},
 	["namespaces"] = {
 		["ItemLevel"] = {
-			["profiles"] = {
-				["Default"] = {
-					["colorScheme"] = "none",
-					["ignoreJunk"] = false,
-					["equippableOnly"] = false,
-				},
-			},
 		},
 		["FilterOverride"] = {
 			["profiles"] = {
 				["Default"] = {
 					["version"] = 3,
-					["overrides"] = {
-						[3030] = "Ammunition#Ammo",
-						[2840] = "Trade Goods#Mining",
-						[2841] = "Trade Goods#Mining",
-						[3858] = "Trade Goods#Mining",
-						[3382] = "Consumable#Potions",
-						[3827] = "Consumable#Potions",
-						[2589] = "Trade Goods#Cloth",
-						[3859] = "Trade Goods#Mining",
-						[14529] = "Trade Goods#Bandages",
-						[14530] = "Trade Goods#Bandages",
-						[3860] = "Trade Goods#Mining",
-						[118] = "Consumable#Potions",
-						[8838] = "Trade Goods#Herbs",
-						[3575] = "Trade Goods#Mining",
-						[10998] = "Trade Goods#Enchanting",
-						[3385] = "Consumable#Potions",
-						[3857] = "Trade Goods#Mining",
-						[3576] = "Trade Goods#Mining",
-						[2592] = "Trade Goods#Cloth",
-						[8007] = "Consumable#Gems",
-						[10978] = "Trade Goods#Enchanting",
-						[3577] = "Trade Goods#Mining",
-						[3355] = "Trade Goods#Herbs",
-						[765] = "Trade Goods#Herbs",
-						[10620] = "Trade Goods#Mining",
-						[16204] = "Trade Goods#Enchanting",
-						[3356] = "Trade Goods#Herbs",
-						[11138] = "Trade Goods#Enchanting",
-						[3928] = "Consumable#Potions",
-						[2842] = "Trade Goods#Mining",
-						[3357] = "Trade Goods#Herbs",
-						[4625] = "Trade Goods#Herbs",
-						[17056] = "Reagent#Reagent",
-						[2455] = "Consumable#Potions",
-						[3358] = "Trade Goods#Herbs",
-						[4306] = "Trade Goods#Cloth",
-						[20007] = "Consumable#Potions",
-						[5514] = "Consumable#Gems",
-						[4338] = "Trade Goods#Cloth",
-						[2581] = "Trade Goods#Bandages",
-						[6052] = "Consumable#Potions",
-						[7005] = "Miscellaneous#Misc",
-						[20008] = "Consumable#Potions",
-						[11083] = "Trade Goods#Enchanting",
-						[2454] = "Consumable#Potions",
-						[13442] = "Consumable#Potions",
-						[13443] = "Consumable#Potions",
-						[5513] = "Consumable#Gems",
-						[12431] = "Quest#Winterfall E'ko",
-						[13446] = "Consumable#Potions",
-						[785] = "Trade Goods#Herbs",
-						[8839] = "Trade Goods#Herbs",
-						[11084] = "Trade Goods#Enchanting",
-						[5634] = "Consumable#Potions",
-<<<<<<< HEAD
-						[12436] = "Quest#Frostmaul E'ko",
-						[11166] = "Recipe#Recipe",
-=======
-						[13452] = "Consumable#Potions",
-						[12436] = "Quest#Frostmaul E'ko",
->>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
-						[1710] = "Consumable#Potions",
-						[5997] = "Consumable#Potions",
-						[9179] = "Consumable#Potions",
-						[13456] = "Consumable#Potions",
-						[13457] = "Consumable#Potions",
-						[10286] = "Trade Goods#Herbs",
-						[929] = "Consumable#Potions",
-						[11174] = "Trade Goods#Enchanting",
-						[11175] = "Trade Goods#Enchanting",
-						[2318] = "Trade Goods#Leather",
-						[13463] = "Trade Goods#Herbs",
-						[11178] = "Trade Goods#Enchanting",
-						[13465] = "Trade Goods#Herbs",
-						[2319] = "Trade Goods#Leather",
-						[13467] = "Trade Goods#Herbs",
-						[3530] = "Trade Goods#Bandages",
-						[3404] = "Trade Goods#Trade Goods",
-						[2447] = "Trade Goods#Herbs",
-						[2835] = "Trade Goods#Mining",
-						[858] = "Consumable#Potions",
-						[6451] = "Trade Goods#Bandages",
-						[7912] = "Trade Goods#Mining",
-						[3369] = "Trade Goods#Herbs",
-						[2512] = "Ammunition#Ammo",
-						[10940] = "Trade Goods#Enchanting",
-						[10938] = "Trade Goods#Enchanting",
-						[10939] = "Trade Goods#Enchanting",
-						[4232] = "Trade Goods#Leather",
-						[2449] = "Trade Goods#Herbs",
-						[2450] = "Trade Goods#Herbs",
-						[8545] = "Trade Goods#Bandages",
-						[4234] = "Trade Goods#Leather",
-						[13466] = "Trade Goods#Herbs",
-						[13464] = "Trade Goods#Herbs",
-						[11177] = "Trade Goods#Enchanting",
-						[2515] = "Ammunition#Ammo",
-						[11176] = "Trade Goods#Enchanting",
-						[2452] = "Trade Goods#Herbs",
-<<<<<<< HEAD
-						[13452] = "Consumable#Potions",
-=======
-						[11166] = "Recipe#Recipe",
->>>>>>> 05d3ddb667ba7fb534e470b4dad456a0f40c5370
-						[2770] = "Trade Goods#Mining",
-						[3818] = "Trade Goods#Herbs",
-						[2453] = "Trade Goods#Herbs",
-						[11137] = "Trade Goods#Enchanting",
-						[2771] = "Trade Goods#Mining",
-						[8544] = "Trade Goods#Bandages",
-						[3470] = "Trade Goods#Mining",
-						[1251] = "Trade Goods#Bandages",
-						[2772] = "Trade Goods#Mining",
-						[3820] = "Trade Goods#Herbs",
-						[2836] = "Trade Goods#Mining",
-						[8846] = "Trade Goods#Herbs",
-						[6149] = "Consumable#Potions",
-						[3821] = "Trade Goods#Herbs",
-						[2456] = "Consumable#Potions",
-						[2776] = "Trade Goods#Mining",
-						[2901] = "Miscellaneous#Misc",
-						[14047] = "Trade Goods#Cloth",
-						[2838] = "Trade Goods#Mining",
-						[783] = "Trade Goods#Leather",
-						[2775] = "Trade Goods#Mining",
-						[2934] = "Trade Goods#Leather",
-						[2458] = "Consumable#Potions",
-						[2459] = "Consumable#Potions",
-						[14542] = "Quest#Quest",
-					},
 				},
 			},
 		},
 		["ItemCategory"] = {
-			["profiles"] = {
-				["Default"] = {
-					["splitBySubclass"] = {
-						["Recipe"] = false,
-						["Consumable"] = false,
-						["Misc"] = false,
-						["Trade Goods"] = false,
-						["Miscellaneous"] = false,
-					},
-				},
-			},
 		},
 		["NewItem"] = {
-			["profiles"] = {
-				["Default"] = {
-					["glowColor"] = {
-						0.0627450980392157, -- [1]
-						[3] = 0.243137254901961,
-					},
-				},
-			},
 		},
 		["Equipment"] = {
 		},
-		["MoneyFrame"] = {
+		["AdiBags_TooltipInfo"] = {
 		},
 		["DataSource"] = {
-			["profiles"] = {
-				["Default"] = {
-					["format"] = "free",
-				},
-			},
 		},
 		["Junk"] = {
-			["profiles"] = {
-				["Default"] = {
-					["exclude"] = {
-						[17056] = true,
-					},
-				},
-			},
 		},
-		["AdiBags_TooltipInfo"] = {
+		["MoneyFrame"] = {
 		},
 	},
 	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Default",
-		["Mxyz - Golemagg"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
-		["Greshnik - Dreadnaught"] = "Default",
-		["Battitude - Golemagg"] = "Default",
-		["Dmitar - Golemagg"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
-		["Vermins - Stonespine"] = "Default",
-		["Poklopac - Dreadnaught"] = "Default",
-		["Mxym - Golemagg"] = "Default",
-		["Mxys - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
-		["Augustin - Golemagg"] = "Default",
-		["Grgur - Golemagg"] = "Default",
-		["Koloman - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Klhjakhsgdjh - Golemagg"] = "Default",
-		["Antun - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
-		["Nitwit - Dreadnaught"] = "Default",
-		["Pitchwise - Dreadnaught"] = "Default",
-		["Moolatz - Dreadnaught"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["virtualStacks"] = {
-				["incomplete"] = true,
-			},
-			["scale"] = 1.1,
-			["maxHeight"] = 0.3,
-			["skin"] = {
-				["BankColor"] = {
-					nil, -- [1]
-					nil, -- [2]
-					0, -- [3]
-					0.8, -- [4]
-				},
-				["border"] = "None",
-				["insets"] = 2,
-			},
-			["positions"] = {
-				["anchor"] = {
-					["xOffset"] = -177.833374023438,
-					["yOffset"] = 386.666717529297,
-				},
-				["Bank"] = {
-					["xOffset"] = 971.9283447265625,
-					["yOffset"] = -310.437255859375,
-				},
-				["Backpack"] = {
-					["xOffset"] = -367.8008724771353,
-					["yOffset"] = 502.2227220670247,
-				},
-			},
-			["filters"] = {
-				["NewItem"] = false,
-			},
-			["sectionFont"] = {
-				["name"] = "Arial Narrow",
-				["size"] = 8,
-			},
-			["rightClickConfig"] = false,
-			["sortingOrder"] = "byQualityAndLevel",
-			["hideAnchor"] = true,
-			["positionMode"] = "manual",
-			["columnWidth"] = {
-				["Backpack"] = 6,
-				["Bank"] = 8,
-			},
 		},
 	},
 }
