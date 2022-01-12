@@ -1,0 +1,14 @@
+
+RXPCData = {
+	["currentGuideName"] = "12-17 The Barrens",
+	["currentStep"] = 9,
+	["SoM"] = true,
+	["currentGuideGroup"] = "RestedXP Horde 1-22",
+	["flightPaths"] = {
+		[25] = true,
+		[22] = true,
+		[77] = true,
+	},
+	["stepSkip"] = {
+	},
+}

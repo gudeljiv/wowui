@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 4010,
 	["lastSanitation"] = 3,
-	["session"] = 4007,
 	["errors"] = {
 		{
 			["message"] = "...\\AddOns\\Details\\Libs\\DetailsFramework\\lib\\slider.lua:456: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DetailsFrameworkSliderButtons1:SetPoint.",
@@ -311,62 +311,62 @@ BugGrabberDB = {
 		}, -- [39]
 		{
 			["message"] = "MkQL_RewardItem1_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [40]
 		{
 			["message"] = "MkQL_RewardItem2_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [41]
 		{
 			["message"] = "MkQL_RewardItem3_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [42]
 		{
 			["message"] = "MkQL_RewardItem4_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [43]
 		{
 			["message"] = "MkQL_RewardItem5_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [44]
 		{
 			["message"] = "MkQL_RewardItem6_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [45]
 		{
 			["message"] = "MkQL_RewardItem7_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [46]
 		{
 			["message"] = "MkQL_RewardItem8_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [47]
 		{
 			["message"] = "MkQL_RewardItem9_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [48]
 		{
 			["message"] = "MkQL_RewardItem10_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [49]
 		{
@@ -737,8 +737,8 @@ BugGrabberDB = {
 		}, -- [95]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/01/02 09:34:18",
 			["session"] = 3906,
+			["time"] = "2022/01/02 09:34:18",
 			["counter"] = 30,
 		}, -- [96]
 		{
@@ -854,20 +854,20 @@ BugGrabberDB = {
 		}, -- [110]
 		{
 			["message"] = "File Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua is empty.",
-			["time"] = "2022/01/08 09:25:26",
 			["session"] = 3957,
+			["time"] = "2022/01/08 09:25:26",
 			["counter"] = 3,
 		}, -- [111]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Frames/EnhanceTrainerFrame.lua",
-			["time"] = "2022/01/08 09:33:16",
 			["session"] = 3959,
+			["time"] = "2022/01/08 09:33:16",
 			["counter"] = 3,
 		}, -- [112]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Frames/EnhanceProfessionsFrame.lua",
-			["time"] = "2022/01/08 09:33:16",
 			["session"] = 3959,
+			["time"] = "2022/01/08 09:33:16",
 			["counter"] = 3,
 		}, -- [113]
 		{
@@ -910,21 +910,13 @@ BugGrabberDB = {
 			["counter"] = 3,
 		}, -- [118]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
-			["time"] = "2022/01/02 17:31:48",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface_Vanilla\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface_Vanilla\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 4000,
-			["counter"] = 10,
-		}, -- [119]
-		{
 			["message"] = "...lla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:751: attempt to index local 'color' (a nil value)",
 			["time"] = "2021/12/26 12:15:07",
 			["locals"] = "numBatchAuctions = 36449\ntotalAuctions = 36449\nbutton = BrowseButton1 {\n 0 = <userdata>\n PriceTooltipFrame = <unnamed> {\n }\n}\nbuttonName = \"BrowseButton1\"\nbuttonHighlight = BrowseButton1Highlight {\n 0 = <userdata>\n}\niconTexture = nil\nitemName = BrowseButton1Name {\n 0 = <userdata>\n}\ncolor = nil\nitemCount = nil\nmoneyFrame = nil\nyourBidText = nil\nbuyoutFrame = nil\nbuyoutMoney = nil\noffset = 0\nindex = 1\nisLastSlotEmpty = nil\nname = \"\"\ntexture = 135327\ncount = 1\nquality = -1\ncanUse = false\nlevel = -666652416\nlevelColHeader = nil\nminBid = 1861999\nminIncrement = 0\nbuyoutPrice = 1959998\nduration = 1\nbidAmount = 0\nhighBidder = false\nbidderFullName = nil\nowner = nil\nownerFullName = nil\nsaleStatus = 0\nitemId = 935\nhasAllInfo = true\ndisplayedPrice = nil\nrequiredBid = nil\n(for index) = 1\n(for limit) = 8\n(for step) = 1\ni = 1\nshouldHide = false\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = BrowseButton1Name {\n 0 = <userdata>\n}\n(*temporary) = \"\"\n(*temporary) = <userdata>\n(*temporary) = false\n(*temporary) = -666652416\n(*temporary) = nil\n(*temporary) = 1861999\n(*temporary) = 0\n(*temporary) = 1959998\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 935\n(*temporary) = true\n(*temporary) = \"attempt to index local 'color' (a nil value)\"\n",
 			["stack"] = "[string \"@Interface_Vanilla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:751: in function `AuctionFrameBrowse_Update'\n[string \"@Interface_Vanilla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:277: in function <...lla\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:275>",
 			["session"] = 4000,
 			["counter"] = 21,
-		}, -- [120]
+		}, -- [119]
 		{
 			["message"] = "Interface\\AddOns\\aux-addon\\color.lua:8: attempt to concatenate local 'text' (a boolean value)",
 			["time"] = "2022/01/11 21:50:10",
@@ -932,12 +924,60 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\aux-addon\\color.lua\"]:8: in function `blue'\n[string \"@Interface\\AddOns\\aux-addon\\core\\slash.lua\"]:71: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 4002,
 			["counter"] = 1,
-		}, -- [121]
+		}, -- [120]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 4005,
 			["time"] = "2022/01/07 17:50:32",
+			["session"] = 4005,
 			["counter"] = 6,
+		}, -- [121]
+		{
+			["message"] = "Interface\\AddOns\\RXPGuides\\RXPGuides.lua:1505: Guide not found",
+			["time"] = "2022/01/12 20:19:51",
+			["locals"] = "(*temporary) = \"Guide not found\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"@Interface\\AddOns\\RXPGuides\\RXPGuides.lua\"]:1505: in function <Interface\\AddOns\\RXPGuides\\RXPGuides.lua:1499>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\RXPGuides\\RXPGuides.lua\"]:2133: in function <Interface\\AddOns\\RXPGuides\\RXPGuides.lua:2130>",
+			["session"] = 4008,
+			["counter"] = 1,
 		}, -- [122]
+		{
+			["message"] = "[string \"RXPGuidFrameName:Hide()\"]:1: attempt to index global 'RXPGuidFrameName' (a nil value)",
+			["time"] = "2022/01/12 20:21:13",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'RXPGuidFrameName' (a nil value)\"\n",
+			["stack"] = "[string \"RXPGuidFrameName:Hide()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4008,
+			["counter"] = 1,
+		}, -- [123]
+		{
+			["message"] = "[string \"RXPGuidFrameName:Show()\"]:1: attempt to index global 'RXPGuidFrameName' (a nil value)",
+			["time"] = "2022/01/12 20:21:18",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'RXPGuidFrameName' (a nil value)\"\n",
+			["stack"] = "[string \"RXPGuidFrameName:Show()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4008,
+			["counter"] = 1,
+		}, -- [124]
+		{
+			["message"] = "[string \"RXPGuideFrameName:Show()\"]:1: attempt to index global 'RXPGuideFrameName' (a nil value)",
+			["time"] = "2022/01/12 20:21:25",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'RXPGuideFrameName' (a nil value)\"\n",
+			["stack"] = "[string \"RXPGuideFrameName:Show()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4008,
+			["counter"] = 1,
+		}, -- [125]
+		{
+			["message"] = "[string \"RXPFrameGuide:Hide()\"]:1: attempt to index global 'RXPFrameGuide' (a nil value)",
+			["time"] = "2022/01/12 20:22:07",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'RXPFrameGuide' (a nil value)\"\n",
+			["stack"] = "[string \"RXPFrameGuide:Hide()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4008,
+			["counter"] = 1,
+		}, -- [126]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
+			["time"] = "2022/01/02 17:31:48",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface_Vanilla\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface_Vanilla\\FrameXML\\ActionBarController.lua:34>",
+			["session"] = 4010,
+			["counter"] = 11,
+		}, -- [127]
 	},
 }

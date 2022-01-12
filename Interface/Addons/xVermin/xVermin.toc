@@ -41,6 +41,7 @@ Addons/Puggle.lua
 Addons/Questie.lua
 Addons/RangeDisplay.lua
 Addons/Recount.lua
+Addons/RXPGuide.lua
 Addons/TinyThreat.lua
 
 AutoCarrot.lua

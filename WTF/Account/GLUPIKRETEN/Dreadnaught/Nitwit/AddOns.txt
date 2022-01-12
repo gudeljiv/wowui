@@ -113,9 +113,11 @@ WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
 whoaThickFrames_Classic: enabled
 CharacterStatsClassic: enabled
-TradeSkillMaster: enabled
+TradeSkillMaster: disabled
 nBuff: enabled
 nMainbar: enabled
 nMinimap: enabled
 xVermin: enabled
 Leatrix_Plus: disabled
+aux-addon: disabled
+TradeSkillMaster_AppHelper: disabled

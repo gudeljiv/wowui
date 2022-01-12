@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 4005,
+	["session"] = 4009,
 	["errors"] = {
 		{
 			["message"] = "...\\AddOns\\Details\\Libs\\DetailsFramework\\lib\\slider.lua:456: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DetailsFrameworkSliderButtons1:SetPoint.",
@@ -939,5 +939,45 @@ BugGrabberDB = {
 			["time"] = "2022/01/07 17:50:32",
 			["counter"] = 6,
 		}, -- [122]
+		{
+			["message"] = "Interface\\AddOns\\RXPGuides\\RXPGuides.lua:1505: Guide not found",
+			["time"] = "2022/01/12 20:19:51",
+			["locals"] = "(*temporary) = \"Guide not found\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"@Interface\\AddOns\\RXPGuides\\RXPGuides.lua\"]:1505: in function <Interface\\AddOns\\RXPGuides\\RXPGuides.lua:1499>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\RXPGuides\\RXPGuides.lua\"]:2133: in function <Interface\\AddOns\\RXPGuides\\RXPGuides.lua:2130>",
+			["session"] = 4008,
+			["counter"] = 1,
+		}, -- [123]
+		{
+			["message"] = "[string \"RXPGuidFrameName:Hide()\"]:1: attempt to index global 'RXPGuidFrameName' (a nil value)",
+			["time"] = "2022/01/12 20:21:13",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'RXPGuidFrameName' (a nil value)\"\n",
+			["stack"] = "[string \"RXPGuidFrameName:Hide()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4008,
+			["counter"] = 1,
+		}, -- [124]
+		{
+			["message"] = "[string \"RXPGuidFrameName:Show()\"]:1: attempt to index global 'RXPGuidFrameName' (a nil value)",
+			["time"] = "2022/01/12 20:21:18",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'RXPGuidFrameName' (a nil value)\"\n",
+			["stack"] = "[string \"RXPGuidFrameName:Show()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4008,
+			["counter"] = 1,
+		}, -- [125]
+		{
+			["message"] = "[string \"RXPGuideFrameName:Show()\"]:1: attempt to index global 'RXPGuideFrameName' (a nil value)",
+			["time"] = "2022/01/12 20:21:25",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'RXPGuideFrameName' (a nil value)\"\n",
+			["stack"] = "[string \"RXPGuideFrameName:Show()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4008,
+			["counter"] = 1,
+		}, -- [126]
+		{
+			["message"] = "[string \"RXPFrameGuide:Hide()\"]:1: attempt to index global 'RXPFrameGuide' (a nil value)",
+			["time"] = "2022/01/12 20:22:07",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'RXPFrameGuide' (a nil value)\"\n",
+			["stack"] = "[string \"RXPFrameGuide:Hide()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4008,
+			["counter"] = 1,
+		}, -- [127]
 	},
 }
