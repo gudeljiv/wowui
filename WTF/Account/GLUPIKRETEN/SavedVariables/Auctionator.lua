@@ -1,0 +1,438 @@
+
+AUCTIONATOR_SAVEDVARS = {
+	["_50000"] = 500,
+	["_2000"] = 100,
+	["_10000"] = 200,
+	["_500"] = 5,
+	["_1000000"] = 2500,
+	["_200000"] = 1000,
+	["STARTING_DISCOUNT"] = 5,
+	["LOG_DE_DATA_X"] = true,
+	["_5000000"] = 10000,
+}
+AUCTIONATOR_PRICING_HISTORY = {
+}
+AUCTIONATOR_SHOPPING_LISTS = {
+	{
+		["items"] = {
+			"Black Lotus", -- [1]
+			"Plaguebloom", -- [2]
+			"Silverleaf", -- [3]
+			"PurpleLotus", -- [4]
+			"Purple Lotus", -- [5]
+			"\"Coarse Stone\"", -- [6]
+			"\"Steel Bar\"", -- [7]
+			"Mageweave CLoth", -- [8]
+			"Wool Cloth", -- [9]
+			"Linen Cloth", -- [10]
+			"Silver Rod", -- [11]
+			"nexus", -- [12]
+			"Elemental", -- [13]
+			"Essence", -- [14]
+			"Essence of", -- [15]
+			"Pearl", -- [16]
+			"Righteous", -- [17]
+			"Arcane", -- [18]
+			"Thorium bar", -- [19]
+			"ore", -- [20]
+			"Steel bar", -- [21]
+			"Silk Cloth", -- [22]
+			"Tin Bar", -- [23]
+			"Tin ore", -- [24]
+			"Bronze bar", -- [25]
+			"Iron ore", -- [26]
+			"Iron Bar", -- [27]
+			"Copper Ore", -- [28]
+			"Copper bar", -- [29]
+			"{ Iron }", -- [30]
+			"Linen banda", -- [31]
+			"Mithril bar", -- [32]
+			"Mithril ore", -- [33]
+			"Thorium ore", -- [34]
+			"Throium ore", -- [35]
+			"Coal", -- [36]
+			"Steel ore", -- [37]
+			"Gold bar", -- [38]
+			"Gold ore", -- [39]
+			"Kill", -- [40]
+			"Bottomle", -- [41]
+			"Mooncloth", -- [42]
+			"Moocloth", -- [43]
+			"{ Engineering }", -- [44]
+			"Stone", -- [45]
+			"Travele", -- [46]
+			"Drag", -- [47]
+			"ooz", -- [48]
+			"Ingot", -- [49]
+			"Edgemaster", -- [50]
+		},
+		["isRecents"] = 1,
+		["name"] = "Recent Searches",
+	}, -- [1]
+	{
+		["items"] = {
+			"Linen Cloth", -- [1]
+			"Mageweave CLoth", -- [2]
+			"Runecloth", -- [3]
+			"Silk Cloth", -- [4]
+			"Wool Cloth", -- [5]
+		},
+		["name"] = "Cloth",
+		["isSorted"] = true,
+	}, -- [2]
+	{
+		["items"] = {
+			"\"Bronze Bar\"", -- [1]
+			"\"Coarse Stone\"", -- [2]
+			"\"Copper Bar\"", -- [3]
+			"\"Copper Bolts\"", -- [4]
+			"\"Dense Stone\"", -- [5]
+			"\"Heavy Stone\"", -- [6]
+			"\"Linen Cloth\"", -- [7]
+			"\"Mageweave Cloth\"", -- [8]
+			"\"Medium Leather\"", -- [9]
+			"\"Mithril Bar\"", -- [10]
+			"\"Moss Agate\"", -- [11]
+			"\"Rough Stone\"", -- [12]
+			"\"Runecloth\"", -- [13]
+			"\"Silver Bar\"", -- [14]
+			"\"Steel Bar\"", -- [15]
+			"\"Thorium Bar\"", -- [16]
+			"\"Wool Cloth\"", -- [17]
+		},
+		["name"] = "Engineering",
+		["isSorted"] = true,
+	}, -- [3]
+	{
+		["items"] = {
+			"Arthas' Tears", -- [1]
+			"Black Lotus", -- [2]
+			"Blindweed", -- [3]
+			"Briarthorn", -- [4]
+			"Bruiseweed", -- [5]
+			"Dreamfoil", -- [6]
+			"Earthroot", -- [7]
+			"Fadeleaf", -- [8]
+			"Firebloom", -- [9]
+			"Ghost Mushroom", -- [10]
+			"Golden Sansam", -- [11]
+			"Goldthorn", -- [12]
+			"GraveMoss", -- [13]
+			"Gromsblood", -- [14]
+			"Icecap", -- [15]
+			"Khadgar's Whisker", -- [16]
+			"Kingsblood", -- [17]
+			"Liferoot", -- [18]
+			"Mageroyal", -- [19]
+			"Mountain Silversage", -- [20]
+			"Peacebloom", -- [21]
+			"Plaguebloom", -- [22]
+			"Purple Lotus", -- [23]
+			"Silverleaf", -- [24]
+			"Stranglekelp", -- [25]
+			"Sungrass", -- [26]
+			"Swifthistle", -- [27]
+			"Wild Steelbloom", -- [28]
+			"Wildvine", -- [29]
+			"Wintersbite", -- [30]
+		},
+		["name"] = "Herbs",
+		["isSorted"] = true,
+	}, -- [4]
+	{
+		["items"] = {
+			"\"Iron bar\"", -- [1]
+			"\"Iron ore\"", -- [2]
+		},
+		["name"] = "Iron",
+		["isSorted"] = true,
+	}, -- [5]
+}
+AUCTIONATOR_SHOPPING_LISTS_MIGRATED_V2 = true
+AUCTIONATOR_PRICE_DATABASE = {
+	["__dbversion"] = 4,
+	["Dreadnaught_Horde"] = {
+		["Silverleaf"] = {
+			["mr"] = 16,
+			["cc"] = 7,
+			["id"] = "765:0:0:0:0",
+			["H4075"] = 16,
+			["sc"] = 0,
+		},
+		["Coarse Stone"] = {
+			["mr"] = 338,
+			["cc"] = 7,
+			["id"] = "2836:0:0:0:0",
+			["H4075"] = 338,
+			["sc"] = 0,
+		},
+		["Wool Cloth"] = {
+			["mr"] = 577,
+			["cc"] = 7,
+			["id"] = "2592:0:0:0:0",
+			["H4075"] = 577,
+			["sc"] = 0,
+		},
+		["Plaguebloom"] = {
+			["mr"] = 900,
+			["cc"] = 7,
+			["id"] = "13466:0:0:0:0",
+			["H4075"] = 900,
+			["sc"] = 0,
+		},
+		["Bolt of Linen Cloth"] = {
+			["mr"] = 909,
+			["cc"] = 7,
+			["id"] = "2996:0:0:0:0",
+			["H4075"] = 909,
+			["sc"] = 0,
+		},
+		["Steel Bar"] = {
+			["mr"] = 1433,
+			["cc"] = 7,
+			["id"] = "3859:0:0:0:0",
+			["H4075"] = 1433,
+			["sc"] = 0,
+		},
+		["Mageweave Cloth"] = {
+			["mr"] = 1144,
+			["cc"] = 7,
+			["id"] = "4338:0:0:0:0",
+			["H4075"] = 1144,
+			["sc"] = 0,
+		},
+		["Black Lotus"] = {
+			["mr"] = 431596,
+			["cc"] = 7,
+			["id"] = "13468:0:0:0:0",
+			["H4075"] = 431596,
+			["sc"] = 0,
+		},
+		["Purple Lotus"] = {
+			["mr"] = 361,
+			["cc"] = 7,
+			["id"] = "8831:0:0:0:0",
+			["H4075"] = 361,
+			["sc"] = 0,
+		},
+		["Linen Cloth"] = {
+			["mr"] = 64,
+			["cc"] = 7,
+			["id"] = "2589:0:0:0:0",
+			["H4075"] = 64,
+			["sc"] = 0,
+		},
+	},
+}
+AUCTIONATOR_LAST_SCAN_TIME = 1597830209
+AUCTIONATOR_TOONS = {
+	["Pitchwise"] = {
+		["firstSeen"] = 1492678555,
+		["guid"] = "Player-5239-013D6A38",
+		["firstVersion"] = "3.1.5",
+	},
+	["Mxyz"] = {
+		["firstSeen"] = 1594141872,
+		["guid"] = "Player-4465-01C75D20",
+		["firstVersion"] = "8.1.0",
+	},
+	["Mxyzptlk"] = {
+		["firstSeen"] = 1595583912,
+		["guid"] = "Player-4465-01CE7466",
+		["firstVersion"] = "8.1.0",
+	},
+	["Vermins"] = {
+		["firstSeen"] = 1567092304,
+		["guid"] = "Player-4705-01916671",
+		["firstVersion"] = "3.1.5",
+	},
+	["Kosturko"] = {
+		["firstSeen"] = 1568649132,
+		["guid"] = "Player-4465-010B6DA9",
+		["firstVersion"] = "8.1.0",
+	},
+	["Mulatz"] = {
+		["firstSeen"] = 1489842994,
+		["firstVersion"] = "3.1.5",
+	},
+	["Verminz"] = {
+		["firstSeen"] = 1489842912,
+		["guid"] = "Player-4465-010B6E50",
+		["firstVersion"] = "3.1.5",
+	},
+	["Konac"] = {
+		["firstSeen"] = 1641217953,
+		["guid"] = "Player-5239-014057CB",
+		["firstVersion"] = "8.1.0",
+	},
+	["Greenwise"] = {
+		["firstSeen"] = 1569270467,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-012659A9",
+	},
+	["Mxzq"] = {
+		["firstSeen"] = 1594483673,
+		["guid"] = "Player-5233-002CA6DA",
+		["firstVersion"] = "8.1.0",
+	},
+	["Tukac"] = {
+		["firstSeen"] = 1489953433,
+		["firstVersion"] = "3.1.5",
+	},
+	["Handrmandr"] = {
+		["firstSeen"] = 1490599649,
+		["firstVersion"] = "3.1.5",
+	},
+	["Mxym"] = {
+		["firstSeen"] = 1596391133,
+		["guid"] = "Player-4465-01D4457C",
+		["firstVersion"] = "8.1.0",
+	},
+	["Koloman"] = {
+		["firstSeen"] = 1598107027,
+		["guid"] = "Player-4465-01DE145A",
+		["firstVersion"] = "8.1.0",
+	},
+	["Vermin"] = {
+		["firstSeen"] = 1567291895,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-00E5831F",
+	},
+	["Korupcija"] = {
+		["firstSeen"] = 1492506222,
+		["guid"] = "Player-4705-01D8B1DB",
+		["firstVersion"] = "3.1.5",
+	},
+	["Judawise"] = {
+		["firstSeen"] = 1569271224,
+		["guid"] = "Player-4465-01265A42",
+		["firstVersion"] = "8.1.0",
+	},
+	["Mxys"] = {
+		["firstSeen"] = 1596396414,
+		["guid"] = "Player-4465-01D4530D",
+		["firstVersion"] = "8.1.0",
+	},
+	["Spija"] = {
+		["firstSeen"] = 1491077146,
+		["firstVersion"] = "3.1.5",
+	},
+	["Antun"] = {
+		["firstSeen"] = 1596618026,
+		["guid"] = "Player-4465-01D55331",
+		["firstVersion"] = "8.1.0",
+	},
+	["Augustin"] = {
+		["firstSeen"] = 1596618159,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01D5BF39",
+	},
+	["Pepecocorita"] = {
+		["firstSeen"] = 1490213073,
+		["firstVersion"] = "3.1.5",
+		["guid"] = "0x000000000041E45E",
+	},
+	["Klhjakhsgdjh"] = {
+		["firstSeen"] = 1596397613,
+		["guid"] = "Player-4465-01D453D2",
+		["firstVersion"] = "8.1.0",
+	},
+	["Jaroslav"] = {
+		["firstSeen"] = 1596618378,
+		["guid"] = "Player-4465-01D553C4",
+		["firstVersion"] = "8.1.0",
+	},
+	["Blooq"] = {
+		["firstSeen"] = 1490547957,
+		["firstVersion"] = "3.1.5",
+	},
+	["Battlearm"] = {
+		["firstSeen"] = 1603714420,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01FA5DD5",
+	},
+	["Poklopac"] = {
+		["firstSeen"] = 1639684874,
+		["guid"] = "Player-5239-013D6C3C",
+		["firstVersion"] = "8.1.0",
+	},
+	["Moolatz"] = {
+		["firstSeen"] = 1639680559,
+		["guid"] = "Player-5239-013D6A19",
+		["firstVersion"] = "8.1.0",
+	},
+	["Gheylord"] = {
+		["firstSeen"] = 1567278903,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4755-018C0F1B",
+	},
+	["Testxv"] = {
+		["firstSeen"] = 1602405174,
+		["guid"] = "Player-4465-01F57300",
+		["firstVersion"] = "8.1.0",
+	},
+	["Nitwit"] = {
+		["firstSeen"] = 1639593236,
+		["guid"] = "Player-5239-013D44CB",
+		["firstVersion"] = "8.1.0",
+	},
+	["Battitude"] = {
+		["firstSeen"] = 1603565879,
+		["guid"] = "Player-4465-01FA5DEE",
+		["firstVersion"] = "8.1.0",
+	},
+	["Ozrencic"] = {
+		["firstSeen"] = 1568647380,
+		["guid"] = "Player-4465-010E410D",
+		["firstVersion"] = "8.1.0",
+	},
+	["Elohssa"] = {
+		["firstSeen"] = 1569350072,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4705-01DEED9F",
+	},
+	["Grgur"] = {
+		["firstSeen"] = 1596618313,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01DD667F",
+	},
+	["Dotwise"] = {
+		["firstSeen"] = 1569271012,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01265908",
+	},
+	["Dmitar"] = {
+		["firstSeen"] = 1596618244,
+		["guid"] = "Player-4465-01D5536D",
+		["firstVersion"] = "8.1.0",
+	},
+	["Konza"] = {
+		["firstSeen"] = 1490043156,
+		["firstVersion"] = "3.1.5",
+	},
+	["Paydo"] = {
+		["firstSeen"] = 1568042552,
+		["guid"] = "Player-4755-01B83D7E",
+		["firstVersion"] = "8.1.0",
+	},
+	["Whatevs"] = {
+		["firstSeen"] = 1569353712,
+		["guid"] = "Player-4705-01DF116D",
+		["firstVersion"] = "8.1.0",
+	},
+}
+AUCTIONATOR_STACKING_PREFS = {
+	["*_herbs"] = {
+		["numstacks"] = -1,
+		["stacksize"] = 20,
+	},
+}
+AUCTIONATOR_SCAN_MINLEVEL = 1
+AUCTIONATOR_DB_MAXITEM_AGE = 180
+AUCTIONATOR_DB_MAXHIST_AGE = -1
+AUCTIONATOR_DB_MAXHIST_DAYS = 5
+AUCTIONATOR_FS_CHUNK = nil
+AUCTIONATOR_DE_DATA = nil
+AUCTIONATOR_DE_DATA_BAK = nil
+ITEM_ID_VERSION = "3.2.6"
+AUCTIONATOR_SHOW_MAILBOX_TIPS = 1

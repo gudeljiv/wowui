@@ -1,0 +1,20 @@
+
+xKillCount = {
+	["show"] = true,
+	["killLog"] = {
+		["Fetid Corpse"] = {
+			["name"] = "Fetid Corpse",
+			["count"] = 2,
+		},
+	},
+	["experience"] = {
+		["totaltotal"] = 4544,
+		["pulltotal"] = 0,
+	},
+	["position"] = {
+		["y"] = 237.000045776367,
+		["x"] = 291.999938964844,
+		["to"] = "LEFT",
+		["from"] = "LEFT",
+	},
+}
