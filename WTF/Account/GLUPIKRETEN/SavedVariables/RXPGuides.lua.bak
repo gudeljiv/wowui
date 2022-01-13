@@ -5,11 +5,11 @@ RXPData = {
 	["worldMapPinBackgroundOpacity"] = 0.3499999940395355,
 	["numMapPins"] = 7,
 	["worldMapPinScale"] = 1,
-	["phase"] = 1,
+	["batchSize"] = 5,
 	["anchorOrientation"] = 1,
 	["arrowSize"] = 1.400000095367432,
 	["trainGenericSpells"] = true,
 	["distanceBetweenPins"] = 1,
-	["batchSize"] = 5,
+	["phase"] = 1,
 	["lockFrames"] = true,
 }

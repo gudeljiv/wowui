@@ -70,6 +70,10 @@ local function FixBindings()
 	SetBinding("ALT-0", "MULTIACTIONBAR2BUTTON4", 1)
 	SetBinding("ALT-E", "MULTIACTIONBAR2BUTTON5", 1)
 
+	-- SetBinding("F1", "STANCEBUTTON1", 1)
+	-- SetBinding("F2", "STANCEBUTTON2", 1)
+	-- SetBinding("F3", "STANCEBUTTON3", 1)
+	
 	SetBinding("F1", "MULTIACTIONBAR3BUTTON1", 1)
 	SetBinding("F2", "MULTIACTIONBAR3BUTTON2", 1)
 	SetBinding("F3", "MULTIACTIONBAR3BUTTON3", 1)

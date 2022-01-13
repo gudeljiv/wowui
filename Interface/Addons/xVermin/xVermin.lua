@@ -63,14 +63,6 @@ f:SetScript("OnEvent",
 			-- Reposition quest timer frame.
 			-------------------------------------------
 			QuestTimerFrame:HookScript(
-				"OnShow",
-				function(self)
-					QuestTimerFrame:ClearAllPoints()
-					QuestTimerFrame:SetPoint("BOTTOMRIGHT", CustomContainer_2, "BOTTOMLEFT", 0, -9)
-				end
-			)
-
-			QuestTimerFrame:HookScript(
 				"OnUpdate",
 				function(self)
 					QuestTimerFrame:ClearAllPoints()

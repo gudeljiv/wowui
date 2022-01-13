@@ -14,6 +14,5 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3771
 END
 VER 3 000000000000000B "TEST" "132089"
-/run MultiBarRight:ClearAllPoints()
-/run MultiBarRight:SetPoint("BOTTOMLEFT", "MultiBarBottomRightButton1", "TOPLEFT", 0, 7)
+/run BrowseButton4Item:CreateBeautyBorder(8)
 END
