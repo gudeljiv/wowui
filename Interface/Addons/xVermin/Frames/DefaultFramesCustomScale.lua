@@ -8,17 +8,13 @@ for i, v in pairs(
 		FriendsFrame,
 		QuestLogFrame,
 		MailFrame,
-		MacroFrame,
 		ItemTextFrame,
 		DressUpFrame,
 		TaxiFrame,
 		QuestFrame,
 		PetStableFrame,
 		GossipFrame,
-		MerchantFrame,
-		CraftFrame,
-		ClassTrainerFrame,
-		AuctionFrame
+		MerchantFrame
 	}
 ) do
 	if v then 
