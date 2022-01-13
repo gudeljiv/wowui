@@ -11,9 +11,9 @@ AUCTIONATOR_SAVEDVARS = {
 	["_10000"] = 200,
 }
 AUCTIONATOR_PRICING_HISTORY = {
-	["Kingsblood"] = {
-		["is"] = "3356:0:0:0:0",
-		["7074199"] = "540:6",
+	["Wool Cloth"] = {
+		["is"] = "2592:0:0:0:0",
+		["7074199"] = "330:10",
 	},
 	["Grave Moss"] = {
 		["is"] = "3369:0:0:0:0",
@@ -23,9 +23,9 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "4306:0:0:0:0",
 		["7074199"] = "178:1",
 	},
-	["Wool Cloth"] = {
-		["is"] = "2592:0:0:0:0",
-		["7074199"] = "330:10",
+	["Kingsblood"] = {
+		["is"] = "3356:0:0:0:0",
+		["7074199"] = "540:6",
 	},
 }
 AUCTIONATOR_SHOPPING_LISTS = {
@@ -196,11 +196,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4075"] = 338,
 			["sc"] = 0,
 		},
-		["Steel Bar"] = {
-			["mr"] = 1433,
+		["Linen Cloth"] = {
+			["mr"] = 64,
 			["cc"] = 7,
-			["id"] = "3859:0:0:0:0",
-			["H4075"] = 1433,
+			["id"] = "2589:0:0:0:0",
+			["H4075"] = 64,
 			["sc"] = 0,
 		},
 		["Kingsblood"] = {
@@ -210,11 +210,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4076"] = 544,
 			["sc"] = 0,
 		},
-		["Black Lotus"] = {
-			["mr"] = 431596,
+		["Mageroyal"] = {
+			["mr"] = 19,
 			["cc"] = 7,
-			["id"] = "13468:0:0:0:0",
-			["H4075"] = 431596,
+			["id"] = "785:0:0:0:0",
+			["H4076"] = 19,
 			["sc"] = 0,
 		},
 		["Wool Cloth"] = {
@@ -222,8 +222,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 7,
 			["id"] = "2592:0:0:0:0",
 			["H4075"] = 577,
-			["sc"] = 0,
 			["H4076"] = 331,
+			["sc"] = 0,
 		},
 		["Plaguebloom"] = {
 			["mr"] = 900,
@@ -246,13 +246,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4075"] = 909,
 			["sc"] = 0,
 		},
-		["Mageweave Cloth"] = {
-			["mr"] = 1144,
-			["cc"] = 7,
-			["id"] = "4338:0:0:0:0",
-			["H4075"] = 1144,
-			["sc"] = 0,
-		},
 		["Silk Cloth"] = {
 			["mr"] = 179,
 			["cc"] = 7,
@@ -260,11 +253,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4076"] = 179,
 			["sc"] = 0,
 		},
-		["Mageroyal"] = {
-			["mr"] = 19,
+		["Mageweave Cloth"] = {
+			["mr"] = 1144,
 			["cc"] = 7,
-			["id"] = "785:0:0:0:0",
-			["H4076"] = 19,
+			["id"] = "4338:0:0:0:0",
+			["H4075"] = 1144,
+			["sc"] = 0,
+		},
+		["Black Lotus"] = {
+			["mr"] = 431596,
+			["cc"] = 7,
+			["id"] = "13468:0:0:0:0",
+			["H4075"] = 431596,
 			["sc"] = 0,
 		},
 		["Purple Lotus"] = {
@@ -274,11 +274,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4075"] = 361,
 			["sc"] = 0,
 		},
-		["Linen Cloth"] = {
-			["mr"] = 64,
+		["Steel Bar"] = {
+			["mr"] = 1433,
 			["cc"] = 7,
-			["id"] = "2589:0:0:0:0",
-			["H4075"] = 64,
+			["id"] = "3859:0:0:0:0",
+			["H4075"] = 1433,
 			["sc"] = 0,
 		},
 	},
@@ -287,28 +287,28 @@ AUCTIONATOR_LAST_SCAN_TIME = 1597830209
 AUCTIONATOR_TOONS = {
 	["Pitchwise"] = {
 		["firstSeen"] = 1492678555,
-		["guid"] = "Player-5239-013D6A38",
 		["firstVersion"] = "3.1.5",
+		["guid"] = "Player-5239-013D6A38",
 	},
 	["Mxyz"] = {
 		["firstSeen"] = 1594141872,
-		["guid"] = "Player-4465-01C75D20",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01C75D20",
 	},
 	["Mxyzptlk"] = {
 		["firstSeen"] = 1595583912,
-		["guid"] = "Player-4465-01CE7466",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01CE7466",
 	},
 	["Vermins"] = {
 		["firstSeen"] = 1567092304,
-		["guid"] = "Player-4705-01916671",
 		["firstVersion"] = "3.1.5",
+		["guid"] = "Player-4705-01916671",
 	},
 	["Kosturko"] = {
 		["firstSeen"] = 1568649132,
-		["guid"] = "Player-4465-010B6DA9",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-010B6DA9",
 	},
 	["Mulatz"] = {
 		["firstSeen"] = 1489842994,
@@ -316,23 +316,23 @@ AUCTIONATOR_TOONS = {
 	},
 	["Verminz"] = {
 		["firstSeen"] = 1489842912,
-		["guid"] = "Player-4465-010B6E50",
 		["firstVersion"] = "3.1.5",
+		["guid"] = "Player-4465-010B6E50",
 	},
 	["Konac"] = {
 		["firstSeen"] = 1641217953,
-		["guid"] = "Player-5239-014057CB",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-5239-014057CB",
 	},
 	["Greenwise"] = {
 		["firstSeen"] = 1569270467,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-012659A9",
+		["firstVersion"] = "8.1.0",
 	},
 	["Mxzq"] = {
 		["firstSeen"] = 1594483673,
-		["guid"] = "Player-5233-002CA6DA",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-5233-002CA6DA",
 	},
 	["Tukac"] = {
 		["firstSeen"] = 1489953433,
@@ -344,33 +344,33 @@ AUCTIONATOR_TOONS = {
 	},
 	["Mxym"] = {
 		["firstSeen"] = 1596391133,
-		["guid"] = "Player-4465-01D4457C",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01D4457C",
 	},
 	["Koloman"] = {
 		["firstSeen"] = 1598107027,
-		["guid"] = "Player-4465-01DE145A",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01DE145A",
 	},
 	["Vermin"] = {
 		["firstSeen"] = 1567291895,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-00E5831F",
+		["firstVersion"] = "8.1.0",
 	},
 	["Korupcija"] = {
 		["firstSeen"] = 1492506222,
-		["guid"] = "Player-4705-01D8B1DB",
 		["firstVersion"] = "3.1.5",
+		["guid"] = "Player-4705-01D8B1DB",
 	},
 	["Judawise"] = {
 		["firstSeen"] = 1569271224,
-		["guid"] = "Player-4465-01265A42",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01265A42",
 	},
 	["Mxys"] = {
 		["firstSeen"] = 1596396414,
-		["guid"] = "Player-4465-01D4530D",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01D4530D",
 	},
 	["Spija"] = {
 		["firstSeen"] = 1491077146,
@@ -378,28 +378,28 @@ AUCTIONATOR_TOONS = {
 	},
 	["Antun"] = {
 		["firstSeen"] = 1596618026,
-		["guid"] = "Player-4465-01D55331",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01D55331",
 	},
 	["Augustin"] = {
 		["firstSeen"] = 1596618159,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-01D5BF39",
+		["firstVersion"] = "8.1.0",
 	},
 	["Pepecocorita"] = {
 		["firstSeen"] = 1490213073,
-		["firstVersion"] = "3.1.5",
 		["guid"] = "0x000000000041E45E",
+		["firstVersion"] = "3.1.5",
 	},
 	["Klhjakhsgdjh"] = {
 		["firstSeen"] = 1596397613,
-		["guid"] = "Player-4465-01D453D2",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01D453D2",
 	},
 	["Jaroslav"] = {
 		["firstSeen"] = 1596618378,
-		["guid"] = "Player-4465-01D553C4",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01D553C4",
 	},
 	["Blooq"] = {
 		["firstSeen"] = 1490547957,
@@ -407,83 +407,83 @@ AUCTIONATOR_TOONS = {
 	},
 	["Battlearm"] = {
 		["firstSeen"] = 1603714420,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-01FA5DD5",
-	},
-	["Poklopac"] = {
-		["firstSeen"] = 1639684874,
-		["guid"] = "Player-5239-013D6C3C",
 		["firstVersion"] = "8.1.0",
+	},
+	["Whatevs"] = {
+		["firstSeen"] = 1569353712,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4705-01DF116D",
 	},
 	["Moolatz"] = {
 		["firstSeen"] = 1639680559,
+		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-5239-013D6A19",
-		["firstVersion"] = "8.1.0",
-	},
-	["Gheylord"] = {
-		["firstSeen"] = 1567278903,
-		["firstVersion"] = "8.1.0",
-		["guid"] = "Player-4755-018C0F1B",
-	},
-	["Testxv"] = {
-		["firstSeen"] = 1602405174,
-		["guid"] = "Player-4465-01F57300",
-		["firstVersion"] = "8.1.0",
-	},
-	["Nitwit"] = {
-		["firstSeen"] = 1639593236,
-		["guid"] = "Player-5239-013D44CB",
-		["firstVersion"] = "8.1.0",
-	},
-	["Battitude"] = {
-		["firstSeen"] = 1603565879,
-		["guid"] = "Player-4465-01FA5DEE",
-		["firstVersion"] = "8.1.0",
-	},
-	["Ozrencic"] = {
-		["firstSeen"] = 1568647380,
-		["guid"] = "Player-4465-010E410D",
-		["firstVersion"] = "8.1.0",
-	},
-	["Elohssa"] = {
-		["firstSeen"] = 1569350072,
-		["firstVersion"] = "8.1.0",
-		["guid"] = "Player-4705-01DEED9F",
-	},
-	["Grgur"] = {
-		["firstSeen"] = 1596618313,
-		["firstVersion"] = "8.1.0",
-		["guid"] = "Player-4465-01DD667F",
-	},
-	["Dotwise"] = {
-		["firstSeen"] = 1569271012,
-		["firstVersion"] = "8.1.0",
-		["guid"] = "Player-4465-01265908",
-	},
-	["Dmitar"] = {
-		["firstSeen"] = 1596618244,
-		["guid"] = "Player-4465-01D5536D",
-		["firstVersion"] = "8.1.0",
 	},
 	["Konza"] = {
 		["firstSeen"] = 1490043156,
 		["firstVersion"] = "3.1.5",
 	},
-	["Paydo"] = {
-		["firstSeen"] = 1568042552,
-		["guid"] = "Player-4755-01B83D7E",
+	["Testxv"] = {
+		["firstSeen"] = 1602405174,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01F57300",
+	},
+	["Nitwit"] = {
+		["firstSeen"] = 1639593236,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-5239-013D44CB",
+	},
+	["Dmitar"] = {
+		["firstSeen"] = 1596618244,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01D5536D",
+	},
+	["Dotwise"] = {
+		["firstSeen"] = 1569271012,
+		["guid"] = "Player-4465-01265908",
 		["firstVersion"] = "8.1.0",
 	},
-	["Whatevs"] = {
-		["firstSeen"] = 1569353712,
-		["guid"] = "Player-4705-01DF116D",
+	["Grgur"] = {
+		["firstSeen"] = 1596618313,
+		["guid"] = "Player-4465-01DD667F",
 		["firstVersion"] = "8.1.0",
+	},
+	["Elohssa"] = {
+		["firstSeen"] = 1569350072,
+		["guid"] = "Player-4705-01DEED9F",
+		["firstVersion"] = "8.1.0",
+	},
+	["Ozrencic"] = {
+		["firstSeen"] = 1568647380,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-010E410D",
+	},
+	["Battitude"] = {
+		["firstSeen"] = 1603565879,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01FA5DEE",
+	},
+	["Gheylord"] = {
+		["firstSeen"] = 1567278903,
+		["guid"] = "Player-4755-018C0F1B",
+		["firstVersion"] = "8.1.0",
+	},
+	["Paydo"] = {
+		["firstSeen"] = 1568042552,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4755-01B83D7E",
+	},
+	["Poklopac"] = {
+		["firstSeen"] = 1639684874,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-5239-013D6C3C",
 	},
 }
 AUCTIONATOR_STACKING_PREFS = {
 	["*_herbs"] = {
-		["numstacks"] = -1,
 		["stacksize"] = 20,
+		["numstacks"] = -1,
 	},
 }
 AUCTIONATOR_SCAN_MINLEVEL = 1

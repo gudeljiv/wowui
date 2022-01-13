@@ -1,9 +1,8 @@
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cleartarget [dead]
-/targetenemy [noharm]
-/petattack
-/cast Arcane Shot
+VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
+#showtooltip Wing Clip
+/cast Wing Clip
+/cast Wing Clip(Rank 2)
+/cast Wing Clip(Rank 1)
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -58,9 +57,15 @@ VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
 /petpassive
 /cast Scatter Shot
 END
-VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
-#showtooltip Wing Clip
-/cast Wing Clip
-/cast Wing Clip(Rank 2)
-/cast Wing Clip(Rank 1)
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cleartarget [dead]
+/targetenemy [noharm]
+/petattack
+/cast Arcane Shot
+END
+VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/select Freezing Trap, Immolation Trap, Frost Trap
+/click [btn:2]S131M;S131A
 END

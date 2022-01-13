@@ -1,6 +1,16 @@
 
 xKillCount = {
 	["show"] = false,
+	["position"] = {
+		["y"] = -222.8851318359375,
+		["x"] = 386.6781921386719,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
+	},
+	["experience"] = {
+		["pulltotal"] = 468,
+		["totaltotal"] = 492494,
+	},
 	["killLog"] = {
 		["Clattering Scorpid"] = {
 			["name"] = "Clattering Scorpid",
@@ -42,15 +52,5 @@ xKillCount = {
 			["name"] = "Vile Familiar",
 			["count"] = 17,
 		},
-	},
-	["experience"] = {
-		["totaltotal"] = 490387,
-		["pulltotal"] = 0,
-	},
-	["position"] = {
-		["y"] = -222.8851318359375,
-		["x"] = 386.6781921386719,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
 	},
 }

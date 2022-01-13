@@ -121,3 +121,4 @@ xVermin: enabled
 AutoRoll: disabled
 aux-addon: disabled
 TradeSkillMaster_AppHelper: disabled
+RXPGuides: disabled
