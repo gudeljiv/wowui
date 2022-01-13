@@ -1,6 +1,6 @@
 
 RXPData = {
-	["arrowText"] = 9,
+	["arrowText"] = 12,
 	["windowSize"] = 1.200000047683716,
 	["worldMapPinBackgroundOpacity"] = 0.3499999940395355,
 	["numMapPins"] = 7,

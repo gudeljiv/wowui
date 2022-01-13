@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 4010,
+	["session"] = 4026,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -972,12 +972,36 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [126]
 		{
+			["message"] = "[string \"StanceButton1:SetPoint(\"BOTTOMLEFT\", \"Multi...\"]:1: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: StanceButton1:SetPoint.",
+			["time"] = "2022/01/13 10:22:12",
+			["locals"] = "(*temporary) = StanceButton1 {\n 0 = <userdata>\n HotKey = StanceButton1HotKey {\n }\n NewActionTexture = <unnamed> {\n }\n Border = StanceButton1Border {\n }\n Flash = StanceButton1Flash {\n }\n icon = StanceButton1Icon {\n }\n AutoCastable = <unnamed> {\n }\n SpellHighlightAnim = <unnamed> {\n }\n UpdateTooltip = <function> defined @Interface_Vanilla\\FrameXML\\StanceBar.lua:105\n SpellHighlightTexture = <unnamed> {\n }\n Shadow = <unnamed> {\n }\n NormalTexture = StanceButton1NormalTexture {\n }\n FlyoutBorderShadow = StanceButton1FlyoutBorderShadow {\n }\n FlyoutBorder = StanceButton1FlyoutBorder {\n }\n Count = StanceButton1Count {\n }\n AutoCastShine = StanceButton1Shine {\n }\n FlyoutArrow = StanceButton1FlyoutArrow {\n }\n cooldown = StanceButton1Cooldown {\n }\n Name = StanceButton1Name {\n }\n}\n(*temporary) = \"BOTTOMLEFT\"\n(*temporary) = \"MultiBarBottomRightButton1\"\n(*temporary) = \"TOPLEFT\"\n(*temporary) = 0\n(*temporary) = 17\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"StanceButton1:SetPoint(\"BOTTOMLEFT\", \"MultiBarBottomRightButton1\", \"TOPLEFT\", 0, 17)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2918: in function <Interface\\FrameXML\\ChatFrame.lua:2911>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 4014,
+			["counter"] = 1,
+		}, -- [127]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Addons/nMainBar.lua:82: attempt to call method 'HookScript' (a nil value)",
+			["time"] = "2022/01/13 10:30:36",
+			["locals"] = "self = <table> {\n _callback = <function> defined @Interface\\SharedXML\\C_TimerAugment.lua:14\n}\n(*temporary) = nil\n(*temporary) = MainMenuBarExpText {\n 0 = <userdata>\n}\n(*temporary) = \"OnUpdate\"\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Addons/nMainBar.lua:82\n(*temporary) = \"attempt to call method 'HookScript' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Addons/nMainBar.lua\"]:82: in function <Interface\\AddOns\\xVermin\\Addons/nMainBar.lua:80>\n[string \"@Interface\\SharedXML\\C_TimerAugment.lua\"]:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
+			["session"] = 4016,
+			["counter"] = 1,
+		}, -- [128]
+		{
+			["message"] = "[string \"StanceFrame:Hide()\"]:1: attempt to index global 'StanceFrame' (a nil value)",
+			["time"] = "2022/01/13 10:35:24",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'StanceFrame' (a nil value)\"\n",
+			["stack"] = "[string \"StanceFrame:Hide()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2160: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4833: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4496: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4532: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4018,
+			["counter"] = 1,
+		}, -- [129]
+		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
 			["time"] = "2022/01/02 17:31:48",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface_Vanilla\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface_Vanilla\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 4010,
-			["counter"] = 11,
-		}, -- [127]
+			["session"] = 4022,
+			["counter"] = 16,
+		}, -- [130]
 	},
 }

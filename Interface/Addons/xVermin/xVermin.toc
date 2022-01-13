@@ -36,6 +36,7 @@ Addons/AdiBags.lua
 Addons/Examiner.lua
 Addons/LFG.lua
 Addons/MonkeyQuest.lua
+Addons/nMainBar.lua
 Addons/Omen.lua
 Addons/Puggle.lua
 Addons/Questie.lua

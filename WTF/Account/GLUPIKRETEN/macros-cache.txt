@@ -14,6 +14,6 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3771
 END
 VER 3 000000000000000B "TEST" "132089"
-/run RXPFrame:ClearAllPoints()
-/run RXPFrame:SetPoint("BOTTOMLEFT", "ChatFrame4", "TOPLEFT", 0, 30)
+/run MultiBarRight:ClearAllPoints()
+/run MultiBarRight:SetPoint("BOTTOMLEFT", "MultiBarBottomRightButton1", "TOPLEFT", 0, 7)
 END

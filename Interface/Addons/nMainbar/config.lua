@@ -73,7 +73,7 @@ nMainbar.Config = {
 	},
 	stanceBar = {
 		mouseover = false,
-		hide = true,
+		hide = false,
 		scale = 1,
 		alpha = 1,
 		hiddenAlpha = 0

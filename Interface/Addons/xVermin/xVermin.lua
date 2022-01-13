@@ -2,8 +2,7 @@ local _, xVermin = ...
 
 local f = CreateFrame("Frame")
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
-f:SetScript(
-	"OnEvent",
+f:SetScript("OnEvent",
 	function(self, event, isInitialLogin, isReloadingUi)
 		if isInitialLogin or isReloadingUi then
 			SHOW_MULTI_ACTIONBAR_1 = 1
@@ -46,10 +45,8 @@ f:SetScript(
 			BNToastFrame:SetBackdropColor(0, 0, 0, 0.75)
 			BNToastFrame:SetWidth(250)
 			BNToastFrame:CreateBeautyBorder(8)
-			BNToastFrame.ClearAllPoints = function()
-			end
-			BNToastFrame.SetPoint = function()
-			end
+			BNToastFrame.ClearAllPoints = function() end
+			BNToastFrame.SetPoint = function() end
 
 			-------------------------------------------
 			-- Reposition loot frame.
@@ -92,78 +89,17 @@ f:SetScript(
 			-- end
 
 			-------------------------------------------
-			-- adjust position of PetActionButtons
-			-------------------------------------------
-			PetActionButton1:Show()
-			PetActionButton1:ClearAllPoints()
-			PetActionButton1:SetMovable(true)
-			PetActionButton1:SetUserPlaced(true)
-			PetActionButton1:SetPoint("BOTTOM", MultiBarBottomRightButton2, "TOP", 20, 7)
-			PetActionButton1.ClearAllPoints = function()
-			end
-			PetActionButton1.SetPoint = function()
-			end
-
-			-------------------------------------------
 			-- CastingBarFrame Text
 			-------------------------------------------
 			CastingBarFrame.Text:ClearAllPoints()
 			CastingBarFrame.Text:SetPoint("CENTER", CastingBarFrame, 0, 2)
 
 			-------------------------------------------
-			-- action bars
+			-- minimap
 			-------------------------------------------
-			MainMenuExpBar:Hide()
-			MainMenuExpBar:HookScript(
-				"OnShow",
-				function(self)
-					self:Hide()
-				end
-			)
-			ReputationWatchBar:Hide()
-			ReputationWatchBar:HookScript(
-				"OnShow",
-				function(self)
-					self:Hide()
-				end
-			)
-
 			Minimap:ClearAllPoints()
 			Minimap:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -40, -40)
-			Minimap.SetPoint = function()
-			end
-
-			if MultiBarBottomLeft then 
-				MultiBarBottomLeftButton1:ClearAllPoints()
-				MultiBarBottomLeftButton1:SetPoint("BOTTOMLEFT", MainMenuBar, "TOPLEFT", 9, -4)
-				MultiBarBottomLeftButton1.ClearAllPoints = function()
-				end
-				MultiBarBottomLeftButton1.SetPoint = function()
-				end
-			end
-
-			MultiBarRightButton1:ClearAllPoints()
-			MultiBarRightButton1:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -9, -25)
-			MultiBarRightButton1.ClearAllPoints = function()
-			end
-			MultiBarRightButton1.SetPoint = function()
-			end
-
-			MultiBarLeftButton1:ClearAllPoints()
-			MultiBarLeftButton1:SetPoint("TOP", MultiBarRightButton12, "BOTTOM", 0, -20)
-			MultiBarLeftButton1.ClearAllPoints = function()
-			end
-			MultiBarLeftButton1.SetPoint = function()
-			end
-
-			MultiBarRight:SetScale(0.8)
-			MultiBarLeft:SetScale(0.8)
-			MultiBarRight.SetScale = function()
-			end
-			MultiBarLeft.SetScale = function()
-			end
-
-			MainMenuBarExpText:SetPoint("RIGHT", MainMenuExpBar, "RIGHT", -10, 2)
+			Minimap.SetPoint = function() end
 
 			-------------------------------------------
 			--- pet, player and target frame positioning
@@ -173,13 +109,10 @@ f:SetScript(
 				function(self)
 					PetFrameHealthBarText:SetFont(xVermin.Config.font.atari, 10, "THINOUTLINE")
 					PetFrameHealthBarText:SetPoint("TOPRIGHT", PetFrameHealthBar, "TOPRIGHT", 0, 2)
-					PetFrameHealthBarText.SetPoint = function()
-					end
+					PetFrameHealthBarText.SetPoint = function() end
 					PetFrameManaBarText:SetFont(xVermin.Config.font.atari, 10, "THINOUTLINE")
 					PetFrameManaBarText:SetPoint("TOPRIGHT", PetFrameManaBar, "TOPRIGHT", 0, 0)
-					PetFrameManaBarText.SetPoint = function()
-					end
-
+					PetFrameManaBarText.SetPoint = function() end
 					PetFrameHealthBarText:Hide()
 					PetFrameManaBarText:Hide()
 					PetName:Hide()
@@ -190,17 +123,13 @@ f:SetScript(
 
 			PlayerFrame:ClearAllPoints()
 			PlayerFrame:SetPoint("CENTER", UIParent, "CENTER", -250, -96)
-			PlayerFrame.ClearAllPoints = function()
-			end
-			PlayerFrame.SetPoint = function()
-			end
+			PlayerFrame.ClearAllPoints = function() end
+			PlayerFrame.SetPoint = function() end
 
 			TargetFrame:ClearAllPoints()
 			TargetFrame:SetPoint("CENTER", UIParent, "CENTER", 250, -96)
-			TargetFrame.ClearAllPoints = function()
-			end
-			TargetFrame.SetPoint = function()
-			end
+			TargetFrame.ClearAllPoints = function() end
+			TargetFrame.SetPoint = function() end
 		end
 
 		MiniMapWorldMapButton:Hide()
