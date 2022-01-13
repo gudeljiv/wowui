@@ -1,0 +1,11 @@
+
+RXPCData = {
+	["stepSkip"] = {
+	},
+	["currentStep"] = 2,
+	["currentGuideName"] = "22-24 Hillsbrad",
+	["currentGuideGroup"] = "RestedXP Horde 22-30",
+	["flightPaths"] = {
+	},
+	["SoM"] = true,
+}

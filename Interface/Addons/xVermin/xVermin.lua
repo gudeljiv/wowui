@@ -142,3 +142,4 @@ local function TargetFrameTextAdjustment()
 	TargetFrameManaBarText:SetScale(0.8)
 end
 hooksecurefunc("TargetFrame_CheckClassification", TargetFrameTextAdjustment)
+
