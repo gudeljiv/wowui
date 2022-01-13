@@ -8,8 +8,8 @@ xKillCount = {
 		["from"] = "TOPLEFT",
 	},
 	["experience"] = {
-		["pulltotal"] = 468,
-		["totaltotal"] = 492494,
+		["pulltotal"] = 3500,
+		["totaltotal"] = 512674,
 	},
 	["killLog"] = {
 		["Clattering Scorpid"] = {

@@ -60,11 +60,10 @@ Details_StreamerDB = {
 				0.480826139450073, -- [4]
 			},
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["font_size"] = 10,
 			["use_spark"] = false,
-			["y"] = -183.107162475586,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
-			["font_size"] = 10,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -76,6 +75,7 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
+			["y"] = -183.107162475586,
 			["main_frame_strata"] = "LOW",
 			["main_frame_locked"] = true,
 			["arrow_anchor_y"] = 0,

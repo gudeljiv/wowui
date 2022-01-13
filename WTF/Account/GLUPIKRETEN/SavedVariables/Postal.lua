@@ -9,12 +9,12 @@ Postal3ClassicDB = {
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Vermins - Stonespine"] = "Vermins - Stonespine",
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
-		["Mxym - Golemagg"] = "Mxym - Golemagg",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
-		["Vermins - Stonespine"] = "Vermins - Stonespine",
+		["Mxym - Golemagg"] = "Mxym - Golemagg",
 		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
@@ -85,17 +85,17 @@ Postal3ClassicDB = {
 		},
 		["Greenwise - Golemagg"] = {
 		},
+		["Vermins - Stonespine"] = {
+		},
 		["Konac - Dreadnaught"] = {
 		},
 		["Pitchwise - Dreadnaught"] = {
-		},
-		["Mxym - Golemagg"] = {
 		},
 		["Jaroslav - Golemagg"] = {
 		},
 		["Poklopac - Dreadnaught"] = {
 		},
-		["Vermins - Stonespine"] = {
+		["Mxym - Golemagg"] = {
 		},
 		["Battlearm - Hydraxian Waterlords"] = {
 		},

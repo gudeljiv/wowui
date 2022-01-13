@@ -70,6 +70,10 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -80,8 +84,6 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["locked"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
@@ -305,15 +307,11 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar2",
 					["customLabel"] = "B",
 				},
-				["LFGBulletinBoard"] = {
-					["index"] = 3,
+				["TownsfolkTracker"] = {
+					["enabled"] = false,
 					["align"] = "right",
-					["isNew"] = false,
-					["showLabel"] = true,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar1",
 					["showText"] = false,
-					["customLabel"] = "LFG",
+					["barName"] = "ChocolateBar1",
 				},
 				["TellMeWhen"] = {
 					["enabled"] = false,
@@ -330,11 +328,15 @@ ChocolateBarDB = {
 					["index"] = 6,
 					["barName"] = "ChocolateBar1",
 				},
-				["TownsfolkTracker"] = {
-					["enabled"] = false,
+				["LFGBulletinBoard"] = {
+					["index"] = 3,
 					["align"] = "right",
-					["showText"] = false,
+					["isNew"] = false,
+					["showLabel"] = true,
+					["showIcon"] = false,
 					["barName"] = "ChocolateBar1",
+					["showText"] = false,
+					["customLabel"] = "LFG",
 				},
 				["MinimapIcon"] = {
 					["enabled"] = false,
@@ -448,17 +450,15 @@ ChocolateBarDB = {
 					["customLabel"] = "N",
 				},
 			},
-			["gap"] = 0,
-			["fixedStrata"] = true,
-			["desaturated"] = false,
-			["moveFrames"] = false,
 			["fontName"] = "Friz Quadrata TT",
+			["fixedStrata"] = true,
+			["gap"] = 0,
+			["moveFrames"] = false,
+			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["forceColor"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
+			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -518,7 +518,7 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Poklopac-Dreadnaught"] = {
-		["total"] = 161786,
+		["total"] = 164979,
 	},
 	["Ozrencic-"] = {
 		["total"] = 853,
@@ -544,11 +544,11 @@ CB_PlayedTime = {
 	["Nitwit-"] = {
 		["total"] = 680,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
-	},
 	["Greshnik-Dreadnaught"] = {
 		["total"] = 148,
+	},
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,
