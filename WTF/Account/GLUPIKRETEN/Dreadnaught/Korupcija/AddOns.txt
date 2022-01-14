@@ -1,5 +1,5 @@
 nPower: disabled
-nHealth: disabled
+nHealth: enabled
 Immersion: disabled
 AdiBags: enabled
 AdiBags_Config: enabled
@@ -120,4 +120,3 @@ nMinimap: enabled
 xVermin: enabled
 Leatrix_Plus: disabled
 aux-addon: disabled
-TradeSkillMaster_AppHelper: disabled

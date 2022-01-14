@@ -1,8 +1,8 @@
 
 nHealth = {
-    position = {"CENTER", UIParent, 0, -30},
-    sizeWidth = 200,
-	scale = 1.0,
+    position = {"TOP", UIParent, 0, 0},
+    sizeWidth = 400,
+	scale = 1.2,
     
     showCombatRegen = true, 
 

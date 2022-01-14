@@ -20,30 +20,50 @@ local _, xVermin = ...
 -- PlayerHealthFrame.text:SetPoint("CENTER", PlayerHealthFrame, "CENTER", 0, 0)
 -- PlayerHealthFrame:SetFrameStrata("LOW")
 
--- local function PHealthShow()
+local PetHealthFrame = CreateFrame("Frame", "PetHealthFrame", UIParent)
+PetHealthFrame:SetWidth(1)
+PetHealthFrame:SetHeight(1)
+PetHealthFrame:SetAlpha(0.9)
+PetHealthFrame:SetPoint("CENTER", UIParent, "CENTER", -120, -137)
+PetHealthFrame.text = PetHealthFrame:CreateFontString(nil, "ARTWORK")
+PetHealthFrame.text:SetFont(xVermin.Config.font.arial, 18, "THINOUTLINE")
+PetHealthFrame.text:SetPoint("CENTER", PetHealthFrame, "CENTER", 0, 0)
+PetHealthFrame:SetFrameStrata("LOW")
+
+-- local function PlayerHealthShow()
 -- 	local playerHP = format("%.0f", (UnitHealth("player") / UnitHealthMax("player")) * 100)
 -- 	PlayerHealthFrame.text:SetText(playerHP)
 -- 	PlayerHealthFrame.text:SetVertexColor(1, 1, 1)
 -- 	PlayerHealthFrame.text:Show()
 -- end
 
--- local function THealthHide()
+local function PetHealthShow()
+	local petHP = format("%.0f", (UnitHealth("pet") / UnitHealthMax("pet")) * 100)
+	PetHealthFrame.text:SetText(petHP)
+	PetHealthFrame.text:SetVertexColor(1, 1, 1)
+	PetHealthFrame.text:Show()
+end
+
+local function PetHealthHide()
+	PetHealthFrame.text:Hide()
+end
+
+-- local function TargetHealthHide()
 -- 	TargetHealthFrame.text:Hide()
 -- end
 
--- local function THealthShow()
+-- local function TargetHealthShow()
 -- 	local targetHP = format("%.0f", (UnitHealth("target") / UnitHealthMax("target")) * 100)
 -- 	TargetHealthFrame.text:SetText(targetHP)
 -- 	TargetHealthFrame.text:SetVertexColor(1, 1, 1)
 -- 	TargetHealthFrame.text:Show()
 -- end
 
--- TargetFrame:HookScript("OnUpdate", THealthShow)
--- PlayerFrame:HookScript("OnUpdate", PHealthShow)
+-- TargetFrame:HookScript("OnUpdate", TargetHealthShow)
+-- TargetFrame:HookScript("OnHide", TargetHealthHide)
 
--- TargetFrame:HookScript(
--- 	"OnHide",
--- 	function(self)
--- 		THealthHide()
--- 	end
--- )
+-- PlayerFrame:HookScript("OnUpdate", PlayerHealthShow)
+
+PetFrame:HookScript("OnUpdate", PetHealthShow)
+PetFrame:HookScript("OnHide", PetHealthHide)
+

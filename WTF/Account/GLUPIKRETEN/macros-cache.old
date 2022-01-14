@@ -14,6 +14,5 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3712
 END
 VER 3 000000000000000B "TEST" "132089"
-/run PetFrameHealthBarText:ClearAllPoints()
-/run PetFrameHealthBarText:SetPoint("TOPRIGHT", PetFrameHealthBar, "TOPRIGHT", 2, -22)
+/run PetHealthFrame:SetPoint("CENTER", UIParent, "CENTER", -110, -138)
 END
