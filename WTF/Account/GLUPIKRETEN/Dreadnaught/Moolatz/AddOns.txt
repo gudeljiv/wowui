@@ -120,3 +120,4 @@ nMinimap: enabled
 xVermin: enabled
 Leatrix_Plus: disabled
 aux-addon: disabled
+RXPGuides: disabled

@@ -70,10 +70,6 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["locked"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -84,6 +80,10 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["locked"] = false,
 			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
@@ -330,11 +330,15 @@ ChocolateBarDB = {
 					["index"] = 6,
 					["barName"] = "ChocolateBar1",
 				},
-				["TownsfolkTracker"] = {
-					["enabled"] = false,
+				["LFGBulletinBoard"] = {
+					["index"] = 3,
 					["align"] = "right",
+					["isNew"] = false,
+					["showLabel"] = true,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
+					["showIcon"] = false,
+					["customLabel"] = "LFG",
 				},
 				["MinimapIcon"] = {
 					["enabled"] = false,
@@ -404,15 +408,11 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "DJ",
 				},
-				["LFGBulletinBoard"] = {
-					["index"] = 3,
+				["TownsfolkTracker"] = {
+					["enabled"] = false,
 					["align"] = "right",
-					["isNew"] = false,
-					["showLabel"] = true,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
-					["showIcon"] = false,
-					["customLabel"] = "LFG",
 				},
 				["picoFPS"] = {
 					["index"] = 1,
@@ -512,13 +512,13 @@ CB_PlayedTime = {
 		["total"] = 2037,
 	},
 	["Moolatz-Dreadnaught"] = {
-		["total"] = 22317,
+		["total"] = 24003,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
 	["Poklopac-Dreadnaught"] = {
-		["total"] = 166206,
+		["total"] = 169176,
 	},
 	["Ozrencic-"] = {
 		["total"] = 853,
@@ -547,8 +547,8 @@ CB_PlayedTime = {
 	["Kosturko-"] = {
 		["total"] = 1457,
 	},
-	["Greshnik-Dreadnaught"] = {
-		["total"] = 148,
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,
@@ -565,8 +565,8 @@ CB_PlayedTime = {
 	["Grgur-"] = {
 		["total"] = 1248,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Greshnik-Dreadnaught"] = {
+		["total"] = 148,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,

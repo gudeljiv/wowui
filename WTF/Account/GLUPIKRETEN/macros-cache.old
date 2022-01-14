@@ -1,18 +1,19 @@
 VER 3 000000000000000D "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1205
+/use [nocombat]item:1179
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:3771
-/castsequence [combat] reset=combat 
+/use [nocombat]item:2287
+/castsequence [combat] reset=combat item:118
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:3712
+#showtooltip item:6308
 /cast feed pet
-/use item:3712
+/use item:6308
 END
 VER 3 000000000000000B "TEST" "132089"
-/run PetHealthFrame:SetPoint("CENTER", UIParent, "CENTER", -110, -138)
+/run TargetHealthFrame:ClearAllPoints()
+/run TargetHealthFrame:SetPoint("RIGHT", nHealthStatusBar, "RIGHT", -32, 18)
 END

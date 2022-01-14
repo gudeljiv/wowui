@@ -97,9 +97,9 @@ local function UpdateBarValue()
 		f.Health:SetValue(min)
 
 		if (nHealth.valueAbbrev) then
-			f.Health.Value:SetText(min > 0 and FormatValue(min) or "")
+			f.Health.Value:SetText(( min > 0 and FormatValue(min) or "") .. " / " .. max)
 		else
-			f.Health.Value:SetText(min > 0 and min or "")
+			f.Health.Value:SetText((min > 0 and min or "") .. " / " .. max)
 		end
 	else
 		f.Health.Value:SetText("")

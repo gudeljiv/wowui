@@ -13,6 +13,10 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Wrath
 END
+VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nodead][help][] Regrowth
+END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Rejuvenation
