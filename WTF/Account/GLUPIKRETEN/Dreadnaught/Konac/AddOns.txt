@@ -122,3 +122,4 @@ AutoRoll: disabled
 Leatrix_Plus: disabled
 TradeSkillMaster_AppHelper: disabled
 aux-addon: disabled
+RXPGuides: disabled
