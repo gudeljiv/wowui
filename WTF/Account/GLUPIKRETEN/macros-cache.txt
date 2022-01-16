@@ -1,7 +1,16 @@
 VER 3 000000000000000D "Drink" "Inv_misc_questionmark"
 #showtooltip
+<<<<<<< HEAD
 /use [nocombat]item:1205
 /castsequence [combat] reset=combat item:3385
+=======
+<<<<<<< HEAD
+/use [nocombat]item:1205
+=======
+/use [nocombat]item:1708
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+/castsequence [combat] reset=combat 
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip

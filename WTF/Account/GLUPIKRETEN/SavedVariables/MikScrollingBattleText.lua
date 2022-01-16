@@ -49,14 +49,35 @@ MSBTProfiles_SavedVars = {
 			["creationVersion"] = "5.7.123",
 			["powerThrottleDuration"] = 2,
 			["critFontName"] = "MSBT Yellowjacket",
+<<<<<<< HEAD
 			["groupNumbers"] = true,
+=======
+<<<<<<< HEAD
+=======
+			["hideFullHoTOverheals"] = false,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 			["scrollAreas"] = {
 				["Outgoing"] = {
 					["stickyTextAlignIndex"] = 3,
 					["offsetX"] = 360,
+<<<<<<< HEAD
 					["animationStyle"] = "Straight",
 					["iconAlign"] = "Left",
 					["offsetY"] = 50,
+=======
+<<<<<<< HEAD
+					["iconAlign"] = "Left",
+					["behavior"] = "MSBT_NORMAL",
+					["offsetY"] = 50,
+					["textAlignIndex"] = 3,
+=======
+					["behavior"] = "MSBT_NORMAL",
+					["iconAlign"] = "Left",
+					["offsetY"] = 50,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+					["animationStyle"] = "Straight",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 					["textAlignIndex"] = 3,
 					["behavior"] = "MSBT_NORMAL",
 				},
@@ -69,6 +90,9 @@ MSBTProfiles_SavedVars = {
 					["animationStyle"] = "Straight",
 					["textAlignIndex"] = 1,
 				},
+				["Notification"] = {
+					["disabled"] = true,
+				},
 				["Static"] = {
 					["disabled"] = true,
 				},
@@ -79,10 +103,32 @@ MSBTProfiles_SavedVars = {
 					["offsetY"] = 0,
 					["name"] = "CRIT",
 				},
+<<<<<<< HEAD
 				["Notification"] = {
 					["disabled"] = true,
+=======
+				["Incoming"] = {
+					["stickyTextAlignIndex"] = 1,
+					["offsetX"] = -400,
+<<<<<<< HEAD
+					["animationStyle"] = "Straight",
+					["iconAlign"] = "Right",
+					["offsetY"] = 50,
+					["textAlignIndex"] = 1,
+					["behavior"] = "MSBT_NORMAL",
 				},
 			},
+			["hideFullHoTOverheals"] = false,
+=======
+					["textAlignIndex"] = 1,
+					["behavior"] = "MSBT_NORMAL",
+					["offsetY"] = 50,
+					["animationStyle"] = "Straight",
+					["iconAlign"] = "Right",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
+				},
+			},
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 			["normalFontName"] = "MSBT Yellowjacket",
 			["hideFullHoTOverheals"] = false,
 			["normalFontSize"] = 15,

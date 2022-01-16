@@ -68,6 +68,51 @@ GMMONEY = {
 			["CLASS"] = "WARRIOR",
 		},
 	},
+<<<<<<< HEAD
+=======
+	["Dreadnaught"] = {
+		["Poklopac"] = {
+<<<<<<< HEAD
+			["GOLD"] = 448204,
+=======
+			["GOLD"] = 515160,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+			["CLASS"] = "HUNTER",
+		},
+		["Moolatz"] = {
+			["GOLD"] = 107750,
+			["CLASS"] = "DRUID",
+		},
+		["Greshnik"] = {
+			["GOLD"] = 11,
+			["CLASS"] = "WARLOCK",
+		},
+		["Konac"] = {
+			["GOLD"] = 259244,
+			["CLASS"] = "PRIEST",
+		},
+		["Nitwit"] = {
+			["GOLD"] = 620,
+			["CLASS"] = "ROGUE",
+		},
+		["Pitchwise"] = {
+			["GOLD"] = 10822,
+			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Stonespine"] = {
+		["Vermins"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Hydraxian Waterlords"] = {
+		["Battlearm"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "HUNTER",
+		},
+	},
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 }
 GMMONEYSET = {
 	["TEXTMODE"] = true,

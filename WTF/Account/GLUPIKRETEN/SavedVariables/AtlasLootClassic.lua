@@ -21,16 +21,29 @@ AtlasLootClassicDB = {
 		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
 		["Mxys - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
+<<<<<<< HEAD
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+=======
+		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+		["Mxzq - Golemagg"] = "Default",
+<<<<<<< HEAD
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
+=======
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["Whatevs - Stonespine"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["Dmitar - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
+<<<<<<< HEAD
 		["Battlearm - Golemagg"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
@@ -38,6 +51,16 @@ AtlasLootClassicDB = {
 	},
 	["global"] = {
 		["__addonrevision"] = 2040000,
+=======
+		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Default",
+<<<<<<< HEAD
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+=======
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -207,6 +230,180 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
+<<<<<<< HEAD
+=======
+		["Pitchwise - Dreadnaught"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"WailingCaverns", -- [2]
+					8, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Vermins - Stonespine"] = {
+		},
+		["Greenwise - Golemagg"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Battlearm - Hydraxian Waterlords"] = {
+		},
+<<<<<<< HEAD
+		["Testxv - Golemagg"] = {
+=======
+		["Battlearm - Hydraxian Waterlords"] = {
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		},
+		["Kosturko - Golemagg"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Korupcija - Stonespine"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Vermin - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["GUI"] = {
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-172, -- [4]
+					63.9999885559082, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"TheTempleofAhnQiraj", -- [2]
+					13, -- [3]
+					3, -- [4]
+					0, -- [5]
+				},
+			},
+		},
+		["Jaroslav - Golemagg"] = {
+		},
+		["Klhjakhsgdjh - Golemagg"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Default"] = {
+			["GUI"] = {
+				["point"] = {
+					"LEFT", -- [1]
+					nil, -- [2]
+					"LEFT", -- [3]
+					238.9998168945313, -- [4]
+					119.7502059936523, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"BlackwingLair", -- [2]
+					8, -- [3]
+					3, -- [4]
+					0, -- [5]
+				},
+			},
+			["Addons"] = {
+				["Favourites"] = {
+					["lists"] = {
+						["ProfileBase"] = {
+							["mainItems"] = {
+								[8] = true,
+							},
+						},
+					},
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Judawise - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Battlearm - Golemagg"] = {
+		},
+		["Moolatz - Dreadnaught"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+		},
+		["Mxzq - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["Konac - Dreadnaught"] = {
 			["minimap"] = {
 				["shown"] = false,

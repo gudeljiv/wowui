@@ -1,5 +1,13 @@
 
 BugGrabberDB = {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	["session"] = 4072,
+=======
+	["session"] = 4114,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	["lastSanitation"] = 3,
 	["session"] = 4117,
 	["errors"] = {

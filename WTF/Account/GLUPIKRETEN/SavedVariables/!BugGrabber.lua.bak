@@ -2,6 +2,14 @@
 BugGrabberDB = {
 	["session"] = 4116,
 	["lastSanitation"] = 3,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	["session"] = 4071,
+=======
+	["session"] = 4113,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	["errors"] = {
 		{
 			["message"] = "...\\AddOns\\Details\\Libs\\DetailsFramework\\lib\\slider.lua:456: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DetailsFrameworkSliderButtons1:SetPoint.",
@@ -1138,7 +1146,11 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua\"]:79: in function <...e\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua:77>",
 			["session"] = 4070,
 			["counter"] = 1,
+<<<<<<< HEAD
+		}, -- [150]
+=======
 		}, -- [147]
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		{
 			["message"] = "...e\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua:84: attempt to index global 'PlayerHealthFrame' (a nil value)",
 			["time"] = "2022/01/14 20:09:06",
@@ -1146,12 +1158,20 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua\"]:84: in function <...e\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua:77>",
 			["session"] = 4070,
 			["counter"] = 1,
+<<<<<<< HEAD
+		}, -- [151]
+=======
 		}, -- [148]
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
 			["time"] = "2022/01/02 17:31:48",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface_Vanilla\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface_Vanilla\\FrameXML\\ActionBarController.lua:34>",
+<<<<<<< HEAD
+			["session"] = 4071,
+			["counter"] = 20,
+=======
 			["session"] = 4077,
 			["counter"] = 22,
 		}, -- [149]
@@ -1178,6 +1198,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:151: in function <Interface\\AddOns\\xVermin\\xVermin.lua:147>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `TargetFrame_UpdateAuras'\n[string \"@Interface_Vanilla\\FrameXML\\TargetFrame.lua\"]:186: in function <Interface_Vanilla\\FrameXML\\TargetFrame.lua:142>",
 			["session"] = 4097,
 			["counter"] = 682,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		}, -- [152]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:151: attempt to perform arithmetic on local 'expirationTime' (a string value)",

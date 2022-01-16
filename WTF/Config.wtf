@@ -116,5 +116,13 @@ SET doodadLodScale "150"
 SET heardChoiceSFX "1"
 SET maxFPS "200"
 SET maxFPSBk "200"
+<<<<<<< HEAD
 SET lastCharacterIndex "2"
+=======
+<<<<<<< HEAD
+SET lastCharacterIndex "2"
+=======
+SET lastCharacterIndex "1"
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 SET cursorSizePreferred "0"
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745

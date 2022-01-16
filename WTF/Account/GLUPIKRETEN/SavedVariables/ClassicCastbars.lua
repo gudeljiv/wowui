@@ -89,8 +89,18 @@ ClassicCastbarsDB = {
 		["iconPositionX"] = -5,
 		["textPositionX"] = 0,
 		["showSpark"] = true,
+<<<<<<< HEAD
 		["hideIconBorder"] = false,
 		["ignoreParentAlpha"] = false,
+=======
+		["autoPosition"] = false,
+<<<<<<< HEAD
+		["ignoreParentAlpha"] = false,
+=======
+		["hideIconBorder"] = false,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["showIcon"] = true,
 		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["borderColor"] = {
@@ -106,6 +116,39 @@ ClassicCastbarsDB = {
 			0.7, -- [3]
 			1, -- [4]
 		},
+<<<<<<< HEAD
+=======
+		["enabled"] = false,
+		["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border",
+		["frameLevel"] = 10,
+		["textPositionY"] = 0,
+		["castFont"] = "Fonts\\FRIZQT__.TTF",
+		["iconPositionY"] = 0,
+<<<<<<< HEAD
+		["textOutline"] = "",
+		["width"] = 120,
+=======
+		["width"] = 120,
+		["textOutline"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["statusColor"] = {
+			1, -- [1]
+			0.7, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
+		["statusColorFailed"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
+		["statusColorChannel"] = {
+			0, -- [1]
+			1, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["position"] = {
 			"CENTER", -- [1]
 			141, -- [2]
@@ -150,7 +193,15 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			0.535, -- [4]
 		},
+<<<<<<< HEAD
 		["autoPosition"] = false,
+=======
+<<<<<<< HEAD
+		["hideIconBorder"] = false,
+=======
+		["ignoreParentAlpha"] = false,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -166,8 +217,18 @@ ClassicCastbarsDB = {
 		["iconPositionX"] = -5,
 		["textPositionX"] = 0,
 		["showSpark"] = true,
+<<<<<<< HEAD
 		["hideIconBorder"] = false,
 		["ignoreParentAlpha"] = false,
+=======
+		["autoPosition"] = false,
+<<<<<<< HEAD
+		["ignoreParentAlpha"] = false,
+=======
+		["hideIconBorder"] = false,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["showIcon"] = true,
 		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["borderColor"] = {
@@ -183,6 +244,39 @@ ClassicCastbarsDB = {
 			0.7, -- [3]
 			1, -- [4]
 		},
+<<<<<<< HEAD
+=======
+		["enabled"] = true,
+		["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border-Small",
+		["frameLevel"] = 10,
+		["textPositionY"] = 0,
+		["castFont"] = "Fonts\\FRIZQT__.TTF",
+		["iconPositionY"] = 0,
+<<<<<<< HEAD
+		["textOutline"] = "",
+		["width"] = 150,
+=======
+		["width"] = 150,
+		["textOutline"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["statusColor"] = {
+			1, -- [1]
+			0.7, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
+		["statusColorFailed"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
+		["statusColorChannel"] = {
+			0, -- [1]
+			1, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["position"] = {
 			"TOPLEFT", -- [1]
 			275, -- [2]
@@ -227,7 +321,15 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			0.535, -- [4]
 		},
+<<<<<<< HEAD
 		["autoPosition"] = false,
+=======
+<<<<<<< HEAD
+		["hideIconBorder"] = false,
+=======
+		["ignoreParentAlpha"] = false,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -285,11 +387,25 @@ ClassicCastbarsDB = {
 		["frameLevel"] = 10,
 		["textPositionY"] = 0,
 		["castFont"] = "Fonts\\FRIZQT__.TTF",
+<<<<<<< HEAD
 		["castBorder"] = "",
 		["showCastInfoOnly"] = false,
 		["textOutline"] = "",
 		["width"] = 400,
 		["ignoreParentAlpha"] = false,
+=======
+<<<<<<< HEAD
+		["textOutline"] = "",
+		["showCastInfoOnly"] = false,
+		["width"] = 400,
+=======
+		["width"] = 400,
+		["showCastInfoOnly"] = false,
+		["textOutline"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["castBorder"] = "",
+		["showTimer"] = true,
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["statusColorChannel"] = {
 			0, -- [1]
 			1, -- [2]
@@ -319,8 +435,18 @@ ClassicCastbarsDB = {
 		["iconPositionX"] = -10,
 		["textPositionX"] = 0,
 		["showSpark"] = true,
+<<<<<<< HEAD
 		["hideIconBorder"] = false,
 		["ignoreParentAlpha"] = false,
+=======
+		["autoPosition"] = true,
+<<<<<<< HEAD
+		["ignoreParentAlpha"] = false,
+=======
+		["hideIconBorder"] = false,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["castStatusBar"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["showIcon"] = true,
 		["castStatusBar"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
 		["borderColor"] = {
@@ -336,6 +462,39 @@ ClassicCastbarsDB = {
 			0.7, -- [3]
 			1, -- [4]
 		},
+<<<<<<< HEAD
+=======
+		["enabled"] = false,
+		["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border",
+		["frameLevel"] = 10,
+		["textPositionY"] = 1,
+		["castFont"] = "Fonts\\FRIZQT__.TTF",
+		["iconPositionY"] = 0,
+<<<<<<< HEAD
+		["textOutline"] = "",
+		["width"] = 190,
+=======
+		["width"] = 190,
+		["textOutline"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["statusColor"] = {
+			1, -- [1]
+			0.7, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
+		["statusColorFailed"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
+		["statusColorChannel"] = {
+			0, -- [1]
+			1, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["position"] = {
 			"CENTER", -- [1]
 			-18, -- [2]
@@ -380,7 +539,15 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			0.535, -- [4]
 		},
+<<<<<<< HEAD
 		["autoPosition"] = true,
+=======
+<<<<<<< HEAD
+		["hideIconBorder"] = false,
+=======
+		["ignoreParentAlpha"] = false,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -434,8 +601,18 @@ ClassicCastbarsDB = {
 		["11490Intense Pain"] = true,
 		["12118Dominate Mind"] = true,
 		["14943Stun Bomb Attack"] = true,
+<<<<<<< HEAD
 		["14020Ignite Flesh"] = true,
 		["10438Frostbolt"] = true,
+=======
+<<<<<<< HEAD
+		["16021Lightning Totem"] = true,
+		["11359Soul Tap"] = true,
+=======
+		["11359Soul Tap"] = true,
+		["16021Lightning Totem"] = true,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["12459Demon Portal"] = true,
 		["8127Chain Lightning"] = true,
 		["12264Arcane Explosion"] = true,
@@ -445,13 +622,22 @@ ClassicCastbarsDB = {
 		["12265Fireball"] = true,
 		["12201Boulder"] = true,
 		["14601Wing Buffet"] = true,
+<<<<<<< HEAD
 		["15247Mana Burn"] = true,
+=======
+<<<<<<< HEAD
+		["11981Wing Buffet"] = true,
+=======
+		["10184Fireball"] = true,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["16215Arcane Explosion"] = true,
 		["15311Fear"] = true,
 		["15246Mana Burn"] = true,
 		["16452Arcane Explosion"] = true,
 		["14945Stun Bomb Attack"] = true,
 		["15247Mind Flay"] = true,
+<<<<<<< HEAD
 		["11490Sacrifice"] = true,
 		["11729Toxic Spit"] = true,
 		["11983Wing Buffet"] = true,
@@ -464,6 +650,36 @@ ClassicCastbarsDB = {
 		["14834Blood Siphon"] = true,
 		["11492Wild Regeneration"] = true,
 		["6109Frost Breath"] = true,
+=======
+<<<<<<< HEAD
+		["16446Stoneskin"] = true,
+		["15589Eye Beam"] = true,
+		["16021Fear"] = true,
+		["10184Fireball"] = true,
+=======
+		["14020Ignite Flesh"] = true,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["15979Pointy Spike"] = true,
+		["6109Frost Breath"] = true,
+		["11981Wing Buffet"] = true,
+		["15589Eye Beam"] = true,
+		["13161Stun Bomb Attack"] = true,
+<<<<<<< HEAD
+		["16022Mind Flay"] = true,
+		["10184Flame Breath"] = true,
+		["11983Shadow Flame"] = true,
+		["14834Blood Siphon"] = true,
+		["11492Wild Regeneration"] = true,
+		["15979Spike Volley"] = true,
+=======
+		["15247Mana Burn"] = true,
+		["10184Flame Breath"] = true,
+		["11983Shadow Flame"] = true,
+		["14834Blood Siphon"] = true,
+		["11729Toxic Spit"] = true,
+		["12468Flamestrike"] = true,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["11583Bellowing Roar"] = true,
 		["10184Flame Breath"] = true,
 		["12459Shadow Bolt"] = true,
@@ -471,6 +687,19 @@ ClassicCastbarsDB = {
 		["16021Fear"] = true,
 		["14890Bellowing Roar"] = true,
 		["15956Impale"] = true,
+<<<<<<< HEAD
+		["12468Flamestrike"] = true,
+		["6109Frost Breath"] = true,
+		["12435Fireball Volley"] = true,
+		["6109Manastorm"] = true,
+		["16368Shadow Bolt Volley"] = true,
+		["11729Toxic Spit"] = true,
+		["15247Mana Burn"] = true,
+		["12265Fireball"] = true,
+		["15727Eye Beam"] = true,
+		["10438Frostbolt"] = true,
+		["14020Ignite Flesh"] = true,
+=======
 		["15979Spike Volley"] = true,
 		["12468Flamestrike"] = true,
 		["12435Fireball Volley"] = true,
@@ -480,11 +709,20 @@ ClassicCastbarsDB = {
 		["10184Fireball"] = true,
 		["11492Enervate"] = true,
 		["15727Eye Beam"] = true,
+<<<<<<< HEAD
 		["16021Lightning Totem"] = true,
 		["11359Soul Tap"] = true,
 		["15311Dust Cloud"] = true,
 		["12259Shadow Bolt"] = true,
 		["10184Wing Buffet"] = true,
+=======
+		["10438Frostbolt"] = true,
+		["16446Stoneskin"] = true,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["12118Dominate Mind"] = true,
+		["11490Intense Pain"] = true,
+		["15276Shadow Bolt"] = true,
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["14944Stun Bomb Attack"] = true,
 		["16021Chain Lightning"] = true,
 		["16146Raise Dead"] = true,

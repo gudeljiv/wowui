@@ -30,7 +30,30 @@ AdiBagsDB = {
 						[2841] = "Trade Goods#Mining",
 						[3858] = "Trade Goods#Mining",
 						[3382] = "Consumable#Potions",
+<<<<<<< HEAD
 						[14542] = "Quest#Quest",
+=======
+						[2589] = "Trade Goods#Cloth",
+<<<<<<< HEAD
+						[3859] = "Trade Goods#Mining",
+						[14529] = "Trade Goods#Bandages",
+						[14530] = "Trade Goods#Bandages",
+						[3860] = "Trade Goods#Mining",
+						[118] = "Consumable#Potions",
+						[8838] = "Trade Goods#Herbs",
+						[3575] = "Trade Goods#Mining",
+						[10998] = "Trade Goods#Enchanting",
+						[3385] = "Consumable#Potions",
+						[3857] = "Trade Goods#Mining",
+						[3576] = "Trade Goods#Mining",
+						[2592] = "Trade Goods#Cloth",
+						[8007] = "Consumable#Gems",
+						[10978] = "Trade Goods#Enchanting",
+						[3577] = "Trade Goods#Mining",
+						[3355] = "Trade Goods#Herbs",
+						[765] = "Trade Goods#Herbs",
+=======
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 						[3827] = "Consumable#Potions",
 						[3859] = "Trade Goods#Mining",
 						[2459] = "Consumable#Potions",
@@ -49,7 +72,12 @@ AdiBagsDB = {
 						[2901] = "Miscellaneous#Misc",
 						[3577] = "Trade Goods#Mining",
 						[3355] = "Trade Goods#Herbs",
+<<<<<<< HEAD
 						[2776] = "Trade Goods#Mining",
+=======
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+						[10620] = "Trade Goods#Mining",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 						[16204] = "Trade Goods#Enchanting",
 						[2842] = "Trade Goods#Mining",
 						[3356] = "Trade Goods#Herbs",
@@ -57,9 +85,54 @@ AdiBagsDB = {
 						[3928] = "Consumable#Potions",
 						[6149] = "Consumable#Potions",
 						[3357] = "Trade Goods#Herbs",
+<<<<<<< HEAD
 						[8846] = "Trade Goods#Herbs",
 						[2836] = "Trade Goods#Mining",
 						[3820] = "Trade Goods#Herbs",
+=======
+<<<<<<< HEAD
+						[4625] = "Trade Goods#Herbs",
+						[17056] = "Reagent#Reagent",
+						[2455] = "Consumable#Potions",
+						[3358] = "Trade Goods#Herbs",
+						[4306] = "Trade Goods#Cloth",
+						[20007] = "Consumable#Potions",
+						[5514] = "Consumable#Gems",
+						[4338] = "Trade Goods#Cloth",
+						[2581] = "Trade Goods#Bandages",
+						[6052] = "Consumable#Potions",
+						[7005] = "Miscellaneous#Misc",
+						[20008] = "Consumable#Potions",
+						[11083] = "Trade Goods#Enchanting",
+						[2454] = "Consumable#Potions",
+						[13442] = "Consumable#Potions",
+						[13443] = "Consumable#Potions",
+						[5513] = "Consumable#Gems",
+						[12431] = "Quest#Winterfall E'ko",
+						[13446] = "Consumable#Potions",
+						[785] = "Trade Goods#Herbs",
+						[8839] = "Trade Goods#Herbs",
+						[11084] = "Trade Goods#Enchanting",
+						[5634] = "Consumable#Potions",
+						[12436] = "Quest#Frostmaul E'ko",
+						[11166] = "Recipe#Recipe",
+						[1710] = "Consumable#Potions",
+						[5997] = "Consumable#Potions",
+						[9179] = "Consumable#Potions",
+						[13456] = "Consumable#Potions",
+						[13457] = "Consumable#Potions",
+						[10286] = "Trade Goods#Herbs",
+						[929] = "Consumable#Potions",
+						[11174] = "Trade Goods#Enchanting",
+						[11175] = "Trade Goods#Enchanting",
+						[2318] = "Trade Goods#Leather",
+						[13463] = "Trade Goods#Herbs",
+						[11178] = "Trade Goods#Enchanting",
+=======
+						[17056] = "Reagent#Reagent",
+						[2455] = "Consumable#Potions",
+						[4306] = "Trade Goods#Cloth",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 						[3358] = "Trade Goods#Herbs",
 						[5514] = "Consumable#Gems",
 						[20007] = "Consumable#Potions",
@@ -94,10 +167,19 @@ AdiBagsDB = {
 						[2318] = "Trade Goods#Leather",
 						[11177] = "Trade Goods#Enchanting",
 						[13464] = "Trade Goods#Herbs",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 						[13465] = "Trade Goods#Herbs",
 						[2319] = "Trade Goods#Leather",
 						[13467] = "Trade Goods#Herbs",
+<<<<<<< HEAD
 						[8545] = "Trade Goods#Bandages",
+=======
+<<<<<<< HEAD
+						[3530] = "Trade Goods#Bandages",
+=======
+						[929] = "Consumable#Potions",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 						[3404] = "Trade Goods#Trade Goods",
 						[2447] = "Trade Goods#Herbs",
 						[2449] = "Trade Goods#Herbs",
@@ -106,6 +188,27 @@ AdiBagsDB = {
 						[7912] = "Trade Goods#Mining",
 						[3369] = "Trade Goods#Herbs",
 						[2512] = "Ammunition#Ammo",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+						[10940] = "Trade Goods#Enchanting",
+						[10938] = "Trade Goods#Enchanting",
+						[10939] = "Trade Goods#Enchanting",
+						[4232] = "Trade Goods#Leather",
+						[2449] = "Trade Goods#Herbs",
+						[2450] = "Trade Goods#Herbs",
+						[8545] = "Trade Goods#Bandages",
+						[4234] = "Trade Goods#Leather",
+						[13466] = "Trade Goods#Herbs",
+						[13464] = "Trade Goods#Herbs",
+						[11177] = "Trade Goods#Enchanting",
+						[2515] = "Ammunition#Ammo",
+						[11176] = "Trade Goods#Enchanting",
+=======
+						[4232] = "Trade Goods#Leather",
+						[2449] = "Trade Goods#Herbs",
+						[10939] = "Trade Goods#Enchanting",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 						[10940] = "Trade Goods#Enchanting",
 						[10938] = "Trade Goods#Enchanting",
 						[10939] = "Trade Goods#Enchanting",
@@ -116,8 +219,16 @@ AdiBagsDB = {
 						[3530] = "Trade Goods#Bandages",
 						[11178] = "Trade Goods#Enchanting",
 						[4235] = "Trade Goods#Leather",
+<<<<<<< HEAD
 						[9179] = "Consumable#Potions",
 						[1710] = "Consumable#Potions",
+=======
+						[2318] = "Trade Goods#Leather",
+						[2515] = "Ammunition#Ammo",
+						[10286] = "Trade Goods#Herbs",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+						[2452] = "Trade Goods#Herbs",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 						[13452] = "Consumable#Potions",
 						[5634] = "Consumable#Potions",
 						[11084] = "Trade Goods#Enchanting",
@@ -140,7 +251,11 @@ AdiBagsDB = {
 						[765] = "Trade Goods#Herbs",
 						[10978] = "Trade Goods#Enchanting",
 						[2838] = "Trade Goods#Mining",
+<<<<<<< HEAD
+						[783] = "Trade Goods#Leather",
+=======
 						[8838] = "Trade Goods#Herbs",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 						[2775] = "Trade Goods#Mining",
 						[14529] = "Trade Goods#Bandages",
 						[14530] = "Trade Goods#Bandages",
@@ -203,12 +318,30 @@ AdiBagsDB = {
 		["Greshnik - Dreadnaught"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
+<<<<<<< HEAD
 		["Vermins - Stonespine"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Poklopac - Dreadnaught"] = "Default",
 		["Konac - Dreadnaught"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
+=======
+<<<<<<< HEAD
+		["Konac - Dreadnaught"] = "Default",
+		["Vermins - Stonespine"] = "Default",
+		["Poklopac - Dreadnaught"] = "Default",
+		["Mxym - Golemagg"] = "Default",
+		["Mxys - Golemagg"] = "Default",
+		["Testxv - Golemagg"] = "Default",
+=======
+		["Pitchwise - Dreadnaught"] = "Default",
+		["Mxym - Golemagg"] = "Default",
+		["Poklopac - Dreadnaught"] = "Default",
+		["Vermins - Stonespine"] = "Default",
+		["Mxys - Golemagg"] = "Default",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["Testxv - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
@@ -217,9 +350,21 @@ AdiBagsDB = {
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
+<<<<<<< HEAD
 		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Mxys - Golemagg"] = "Default",
 		["Mxym - Golemagg"] = "Default",
+=======
+<<<<<<< HEAD
+		["Jaroslav - Golemagg"] = "Default",
+		["Nitwit - Dreadnaught"] = "Default",
+		["Pitchwise - Dreadnaught"] = "Default",
+=======
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Nitwit - Dreadnaught"] = "Default",
+		["Konac - Dreadnaught"] = "Default",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["Moolatz - Dreadnaught"] = "Default",
 	},
 	["profiles"] = {
@@ -227,10 +372,14 @@ AdiBagsDB = {
 			["virtualStacks"] = {
 				["incomplete"] = true,
 			},
+<<<<<<< HEAD
+			["scale"] = 1.1,
+=======
 			["columnWidth"] = {
 				["Bank"] = 8,
 				["Backpack"] = 6,
 			},
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 			["maxHeight"] = 0.3,
 			["skin"] = {
 				["BankColor"] = {
@@ -265,9 +414,22 @@ AdiBagsDB = {
 			},
 			["hideAnchor"] = true,
 			["sortingOrder"] = "byQualityAndLevel",
+<<<<<<< HEAD
+			["hideAnchor"] = true,
+			["positionMode"] = "manual",
+			["columnWidth"] = {
+				["Backpack"] = 6,
+				["Bank"] = 8,
+			},
+=======
 			["scale"] = 1.1,
 			["positionMode"] = "manual",
+<<<<<<< HEAD
 			["rightClickConfig"] = false,
+=======
+			["hideAnchor"] = true,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		},
 	},
 }

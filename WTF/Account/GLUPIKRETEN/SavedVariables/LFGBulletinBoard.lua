@@ -44,8 +44,17 @@ GroupBulletinBoardDB = {
 		["AboutSlashCommand"] = "",
 		["CboxCompactStyle"] = "",
 		["CboxOnDebug"] = "",
+<<<<<<< HEAD
 		["CboxNotfiyInpvp"] = "",
 		["CboxNotifyChat"] = "",
+=======
+<<<<<<< HEAD
+		["CboxNotfiyInpvp"] = "",
+=======
+		["CboxCombineSubDungeons"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["msgLevelRange"] = "",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["CboxTagsGerman"] = "",
 		["SlashConfig"] = "",
 		["TabRequest"] = "",
@@ -80,20 +89,54 @@ GroupBulletinBoardDB = {
 		["BtnIgnore"] = "",
 		["BtnTimeColor"] = "",
 		["Cboxshowminimapbutton"] = "",
+<<<<<<< HEAD
 		["CboxNotfiyInparty"] = "",
 		["BtnWho"] = "",
 		["EditCustom_Bad"] = "",
 		["SlashDefault"] = "",
 		["lfg_channel"] = "",
 		["HeaderTags"] = "",
+=======
+<<<<<<< HEAD
+		["CboxNotfiyInparty"] = "",
+=======
+		["msgStartWho"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["BtnCancel"] = "",
+		["PanelAbout"] = "",
+		["PanelTags"] = "",
+		["HeaderTags"] = "",
+<<<<<<< HEAD
+		["lfg_channel"] = "",
+=======
+		["SlashDefault"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["BtnPostMsg"] = "",
 		["CboxTagsZhtw"] = "",
 		["PanelFilter"] = "",
 		["BtnUnFoldAll"] = "",
 		["HeaderCredits"] = "",
+<<<<<<< HEAD
 		["HeaderUsage"] = "",
 		["CboxNotfiyInraid"] = "",
 		["msgFontSize"] = "",
+=======
+<<<<<<< HEAD
+		["msgLastTime"] = "",
+		["CboxNotfiyInraid"] = "",
+		["msgFontSize"] = "",
+		["msgInit"] = "",
+=======
+		["msgInit"] = "",
+		["CboxNotfiyInraid"] = "",
+		["msgFontSize"] = "",
+		["msgLastTime"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["SlashReset"] = "",
+		["msgLocalRestart"] = "",
+		["CboxLockMinimapButton"] = "",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["msgTimeFormat"] = "",
 		["SlashReset"] = "",
 		["CboxLockMinimapButton"] = "",
@@ -102,9 +145,23 @@ GroupBulletinBoardDB = {
 		["msgInit"] = "",
 		["CboxCharDontFilterOwn"] = "",
 		["BtnNotifyColor"] = "",
+<<<<<<< HEAD
 		["PanelTags"] = "",
 		["PanelAbout"] = "",
 		["BtnCancel"] = "",
+=======
+<<<<<<< HEAD
+		["SlashDefault"] = "",
+		["EditCustom_Bad"] = "",
+		["BtnWho"] = "",
+		["msgStartWho"] = "",
+=======
+		["lfg_channel"] = "",
+		["EditCustom_Bad"] = "",
+		["BtnWho"] = "",
+		["CboxNotfiyInparty"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["CboxEnableGuild"] = "",
 		["CboxShowTotalTime"] = "",
 		["AboutUsage"] = "",
@@ -117,8 +174,17 @@ GroupBulletinBoardDB = {
 		["BtnWhisper"] = "",
 		["msgNewRequest"] = "",
 		["HeaderTagsCustom"] = "",
+<<<<<<< HEAD
 		["CboxEnableShowOnly"] = "",
 		["world_channel"] = "",
+=======
+		["CboxCompactStyle"] = "",
+<<<<<<< HEAD
+		["CboxCombineSubDungeons"] = "",
+=======
+		["CboxNotfiyInpvp"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["BtnColorGuild"] = "",
 		["BtnHistoryColor"] = "",
 		["AboutCredits"] = "",
@@ -215,6 +281,62 @@ GroupBulletinBoardDB = {
 		["MT"] = "",
 		["ZF"] = "",
 	},
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	["NotfiyInpvp"] = false,
+=======
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+	["TimeColor"] = {
+		["a"] = 1,
+		["r"] = 1,
+		["g"] = 1,
+		["b"] = 1,
+	},
+	["EnableShowOnly"] = false,
+	["HistoryColor"] = {
+		["a"] = 1,
+<<<<<<< HEAD
+		["r"] = 1,
+		["g"] = 1,
+		["b"] = 1,
+=======
+		["b"] = 0.6,
+		["g"] = 0.6,
+		["r"] = 0.6,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+	},
+	["RemoveRaidSymbols"] = true,
+	["AdditionalInfo"] = false,
+	["DisplayLFG"] = false,
+	["CombineSubDungeons"] = false,
+	["ShowOnlyNb"] = 4,
+	["NotfiyInnone"] = true,
+<<<<<<< HEAD
+	["CustomLocalesDungeon"] = {
+		["ZF"] = "",
+		["SMC"] = "",
+		["BRD"] = "",
+		["OHB"] = "",
+		["SMG"] = "",
+		["WC"] = "",
+		["MGT"] = "",
+=======
+	["EnableGroup"] = false,
+	["DontTrunicate"] = false,
+	["EntryColor"] = {
+		["a"] = 1,
+		["r"] = 1,
+		["g"] = 1,
+		["b"] = 1,
+	},
+	["HeroicDungeonColor"] = {
+		["a"] = 1,
+		["r"] = 1,
+		["g"] = 0,
+		["b"] = 0,
+	},
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	["NotifySound"] = false,
 	["TimeColor"] = {
 		["a"] = 1,
@@ -225,17 +347,22 @@ GroupBulletinBoardDB = {
 	["CustomLocalesDungeon"] = {
 		["SH"] = "",
 		["ARENA"] = "",
+<<<<<<< HEAD
 		["SETH"] = "",
 		["OHB"] = "",
 		["DMN"] = "",
 		["ONY"] = "",
 		["MGT"] = "",
+=======
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["SML"] = "",
 		["DM"] = "",
 		["AQ40"] = "",
 		["SCH"] = "",
 		["RFC"] = "",
 		["MC"] = "",
+<<<<<<< HEAD
 		["ZG"] = "",
 		["SL"] = "",
 		["SWP"] = "",
@@ -247,11 +374,45 @@ GroupBulletinBoardDB = {
 		["WSG"] = "",
 		["WC"] = "",
 		["EOTS"] = "",
+=======
+<<<<<<< HEAD
+		["ZA"] = "",
+=======
+		["DMW"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+		["DME"] = "",
+		["BOT"] = "",
+		["RFK"] = "",
+		["SFK"] = "",
+		["AQ20"] = "",
+<<<<<<< HEAD
+		["RAMPS"] = "",
+		["BFD"] = "",
+		["UB"] = "",
+		["ONY"] = "",
+		["DMN"] = "",
+=======
+		["KARA"] = "",
+		["BFD"] = "",
+		["SMG"] = "",
+		["ONY"] = "",
+		["UBRS"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["BWL"] = "",
 		["ZA"] = "",
 		["EYE"] = "",
+<<<<<<< HEAD
+		["KARA"] = "",
+		["UBRS"] = "",
+=======
 		["RAMPS"] = "",
+<<<<<<< HEAD
 		["CRYPTS"] = "",
+=======
+		["RFD"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["LBRS"] = "",
 		["STK"] = "",
 		["NAX"] = "",
@@ -259,13 +420,81 @@ GroupBulletinBoardDB = {
 		["AB"] = "",
 		["AV"] = "",
 		["ULD"] = "",
+<<<<<<< HEAD
 		["RFD"] = "",
+=======
+<<<<<<< HEAD
+		["RFD"] = "",
+=======
+		["GL"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["SP"] = "",
 		["STR"] = "",
 		["BF"] = "",
 		["TRADE"] = "",
+<<<<<<< HEAD
 		["GNO"] = "",
 		["MISC"] = "",
+=======
+<<<<<<< HEAD
+		["GNO"] = "",
+		["BT"] = "",
+		["ST"] = "",
+		["SV"] = "",
+		["MECH"] = "",
+		["MAG"] = "",
+		["SMA"] = "",
+		["ARC"] = "",
+		["MISC"] = "",
+		["AV"] = "",
+		["CRYPTS"] = "",
+		["EOTS"] = "",
+		["WSG"] = "",
+		["MT"] = "",
+		["SWP"] = "",
+		["SL"] = "",
+		["ZG"] = "",
+		["HYJAL"] = "",
+		["GL"] = "",
+		["BM"] = "",
+		["SETH"] = "",
+		["ARENA"] = "",
+		["SH"] = "",
+	},
+	["DontTrunicate"] = false,
+	["AdditionalInfo"] = false,
+	["HistoryColor"] = {
+		["a"] = 1,
+		["b"] = 0.6,
+		["g"] = 0.6,
+		["r"] = 0.6,
+	},
+	["RemoveRaidSymbols"] = true,
+	["X"] = 1152.483032226563,
+	["EnableGuild"] = false,
+	["Y"] = 1190.58642578125,
+	["NotifyChat"] = false,
+	["ChatStyle"] = false,
+	["EscapeQuit"] = true,
+	["ColorByClass"] = true,
+	["ShowTotalTime"] = false,
+	["TagsZhtw"] = false,
+	["OrderNewTop"] = true,
+	["TagsFrench"] = false,
+	["NotfiyInraid"] = false,
+	["HeroicDungeonColor"] = {
+		["a"] = 1,
+		["r"] = 1,
+		["g"] = 0,
+		["b"] = 0,
+	},
+=======
+		["EOTS"] = "",
+		["BT"] = "",
+		["MAG"] = "",
+		["CRYPTS"] = "",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["ARC"] = "",
 		["SV"] = "",
 		["MECH"] = "",
@@ -288,6 +517,7 @@ GroupBulletinBoardDB = {
 		["BRD"] = "",
 		["ZF"] = "",
 	},
+<<<<<<< HEAD
 	["RemoveRaidSymbols"] = true,
 	["EnableShowOnly"] = false,
 	["DisplayLFG"] = false,
@@ -322,6 +552,9 @@ GroupBulletinBoardDB = {
 	["TagsFrench"] = false,
 	["ColorByClass"] = true,
 	["TagsRussian"] = false,
+=======
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	["NotifyColor"] = {
 		["a"] = 1,
 		["b"] = 1,
@@ -336,9 +569,25 @@ GroupBulletinBoardDB = {
 		["g"] = 0,
 		["r"] = 1,
 	},
+<<<<<<< HEAD
 	["AnnounceChannel"] = "LookingForGroup",
 	["Height"] = 740.9999389648438,
 	["AdditionalInfo"] = false,
+=======
+	["TimeOut"] = 150,
+	["widthTimes"] = 50,
+<<<<<<< HEAD
+	["EnableGroup"] = false,
+	["AnnounceChannel"] = "LookingForGroup",
+	["Height"] = 740.9999389648438,
+	["EnableShowOnly"] = false,
+=======
+	["TagsRussian"] = false,
+	["AnnounceChannel"] = "LookingForGroup",
+	["Height"] = 740.9999389648438,
+	["NotfiyInpvp"] = false,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	["MinimapButton"] = {
 		["visible"] = false,
 		["lock"] = false,

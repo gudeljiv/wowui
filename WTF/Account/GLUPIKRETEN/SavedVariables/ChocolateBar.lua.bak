@@ -70,9 +70,21 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
+<<<<<<< HEAD
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
+<<<<<<< HEAD
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["background"] = {
 				["tile"] = true,
@@ -88,6 +100,15 @@ ChocolateBarDB = {
 				["MoreChocolate"] = {
 				},
 			},
+=======
+			["locked"] = false,
+=======
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+			["fixedStrata"] = true,
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -333,9 +354,15 @@ ChocolateBarDB = {
 					["align"] = "right",
 					["isNew"] = false,
 					["showLabel"] = true,
+<<<<<<< HEAD
 					["showIcon"] = false,
 					["barName"] = "ChocolateBar1",
 					["showText"] = false,
+=======
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["showIcon"] = false,
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 					["customLabel"] = "LFG",
 				},
 				["MinimapIcon"] = {
@@ -406,13 +433,32 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "DJ",
 				},
+<<<<<<< HEAD
 				["NIT"] = {
 					["index"] = 2,
+=======
+<<<<<<< HEAD
+				["TownsfolkTracker"] = {
+					["enabled"] = false,
+					["align"] = "right",
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+=======
+				["LFGBulletinBoard"] = {
+					["index"] = 3,
+					["align"] = "right",
+					["isNew"] = false,
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 					["showLabel"] = true,
 					["showIcon"] = false,
+<<<<<<< HEAD
 					["barName"] = "ChocolateBar2",
 					["showText"] = false,
 					["customLabel"] = "NIT",
+=======
+					["customLabel"] = "LFG",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 				},
 				["picoFPS"] = {
 					["index"] = 1,
@@ -450,11 +496,27 @@ ChocolateBarDB = {
 					["customLabel"] = "N",
 				},
 			},
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 			["fontName"] = "Friz Quadrata TT",
-			["fixedStrata"] = true,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["gap"] = 0,
 			["moveFrames"] = false,
 			["desaturated"] = false,
+=======
+			["desaturated"] = false,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
+			["fontName"] = "Friz Quadrata TT",
+			["fixedStrata"] = true,
+			["gap"] = 0,
+<<<<<<< HEAD
+			["moveFrames"] = false,
+			["desaturated"] = false,
+=======
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 			["textOffset"] = 2,
 			["height"] = 20,
 			["forceColor"] = false,
@@ -512,7 +574,11 @@ CB_PlayedTime = {
 		["total"] = 2037,
 	},
 	["Moolatz-Dreadnaught"] = {
+<<<<<<< HEAD
+		["total"] = 24003,
+=======
 		["total"] = 32127,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -532,8 +598,17 @@ CB_PlayedTime = {
 	["Judawise-"] = {
 		["total"] = 437,
 	},
+<<<<<<< HEAD
 	["Koloman-"] = {
 		["total"] = 129,
+=======
+	["Konac-Dreadnaught"] = {
+<<<<<<< HEAD
+		["total"] = 77622,
+=======
+		["total"] = 78280,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
@@ -544,8 +619,19 @@ CB_PlayedTime = {
 	["Nitwit-"] = {
 		["total"] = 680,
 	},
+<<<<<<< HEAD
 	["Greshnik-Dreadnaught"] = {
 		["total"] = 148,
+=======
+	["Kosturko-"] = {
+		["total"] = 1457,
+<<<<<<< HEAD
+	},
+	["Verminz-"] = {
+		["total"] = 311368,
+=======
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	},
 	["Verminz-"] = {
 		["total"] = 311368,
@@ -565,8 +651,18 @@ CB_PlayedTime = {
 	["Grgur-"] = {
 		["total"] = 1248,
 	},
+<<<<<<< HEAD
 	["Kosturko-"] = {
 		["total"] = 1457,
+=======
+<<<<<<< HEAD
+	["Greshnik-Dreadnaught"] = {
+		["total"] = 148,
+=======
+	["Verminz-"] = {
+		["total"] = 311368,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	},
 	["Korupcija-"] = {
 		["total"] = 21359,

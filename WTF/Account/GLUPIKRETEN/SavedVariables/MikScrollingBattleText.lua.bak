@@ -49,18 +49,60 @@ MSBTProfiles_SavedVars = {
 			["normalFontSize"] = 15,
 			["powerThrottleDuration"] = 2,
 			["critFontName"] = "MSBT Yellowjacket",
+<<<<<<< HEAD
+=======
+			["groupNumbers"] = true,
+<<<<<<< HEAD
+			["hideFullHoTOverheals"] = false,
+			["normalFontName"] = "MSBT Yellowjacket",
+=======
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 			["scrollAreas"] = {
 				["Outgoing"] = {
 					["stickyTextAlignIndex"] = 3,
 					["offsetX"] = 360,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+					["textAlignIndex"] = 3,
+					["behavior"] = "MSBT_NORMAL",
+					["offsetY"] = 50,
+					["animationStyle"] = "Straight",
+					["iconAlign"] = "Left",
+=======
+					["animationStyle"] = "Straight",
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 					["iconAlign"] = "Left",
 					["behavior"] = "MSBT_NORMAL",
 					["offsetY"] = 50,
 					["textAlignIndex"] = 3,
+<<<<<<< HEAD
 					["animationStyle"] = "Straight",
 				},
 				["Notification"] = {
 					["disabled"] = true,
+=======
+					["behavior"] = "MSBT_NORMAL",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+				},
+				["Incoming"] = {
+					["stickyTextAlignIndex"] = 1,
+					["offsetX"] = -400,
+<<<<<<< HEAD
+					["iconAlign"] = "Right",
+					["behavior"] = "MSBT_NORMAL",
+					["offsetY"] = 50,
+					["textAlignIndex"] = 1,
+					["animationStyle"] = "Straight",
+=======
+					["behavior"] = "MSBT_NORMAL",
+					["iconAlign"] = "Right",
+					["offsetY"] = 50,
+					["animationStyle"] = "Straight",
+					["textAlignIndex"] = 1,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 				},
 				["Static"] = {
 					["disabled"] = true,
@@ -82,10 +124,19 @@ MSBTProfiles_SavedVars = {
 					["behavior"] = "MSBT_NORMAL",
 				},
 			},
+<<<<<<< HEAD
 			["hideFullHoTOverheals"] = false,
 			["normalFontName"] = "MSBT Yellowjacket",
 			["groupNumbers"] = true,
 			["creationVersion"] = "5.7.123",
+=======
+<<<<<<< HEAD
+=======
+			["normalFontName"] = "MSBT Yellowjacket",
+			["hideFullHoTOverheals"] = false,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+			["normalFontSize"] = 15,
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		},
 	},
 }

@@ -1,6 +1,27 @@
 
 OmniCC4Config = {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+	["engine"] = "AniUpdater",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+	["groups"] = {
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [1]
+	},
+<<<<<<< HEAD
+	["engine"] = "AniUpdater",
+=======
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	["version"] = "8.1.1",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -116,6 +137,7 @@ OmniCC4Config = {
 			["minDuration"] = 3,
 		},
 	},
+<<<<<<< HEAD
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -127,4 +149,10 @@ OmniCC4Config = {
 		}, -- [1]
 	},
 	["engine"] = "AniUpdater",
+=======
+<<<<<<< HEAD
+	["version"] = "8.1.1",
+=======
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 }

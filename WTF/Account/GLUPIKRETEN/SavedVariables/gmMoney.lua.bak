@@ -1,5 +1,50 @@
 
 GMMONEY = {
+<<<<<<< HEAD
+=======
+	["Hydraxian Waterlords"] = {
+		["Battlearm"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "HUNTER",
+		},
+	},
+	["Dreadnaught"] = {
+		["Poklopac"] = {
+			["GOLD"] = 513381,
+			["CLASS"] = "HUNTER",
+		},
+		["Moolatz"] = {
+<<<<<<< HEAD
+			["GOLD"] = 105039,
+=======
+			["GOLD"] = 107750,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+			["CLASS"] = "DRUID",
+		},
+		["Greshnik"] = {
+			["GOLD"] = 11,
+			["CLASS"] = "WARLOCK",
+		},
+		["Konac"] = {
+			["GOLD"] = 259244,
+			["CLASS"] = "PRIEST",
+		},
+		["Nitwit"] = {
+			["GOLD"] = 620,
+			["CLASS"] = "ROGUE",
+		},
+		["Pitchwise"] = {
+			["GOLD"] = 10822,
+			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Stonespine"] = {
+		["Vermins"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+	},
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	["Golemagg"] = {
 		["Battlearm"] = {
 			["GOLD"] = 47807,

@@ -11,6 +11,11 @@ AUCTIONATOR_SAVEDVARS = {
 	["_10000"] = 200,
 }
 AUCTIONATOR_PRICING_HISTORY = {
+<<<<<<< HEAD
+	["Kingsblood"] = {
+		["is"] = "3356:0:0:0:0",
+		["7074199"] = "540:6",
+=======
 	["Grave Moss"] = {
 		["is"] = "3369:0:0:0:0",
 		["7074199"] = "13800:3",
@@ -29,7 +34,11 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "2592:0:0:0:0",
 		["7074199"] = "330:10",
 		["7079023"] = "431:5",
+<<<<<<< HEAD
 		["7080304"] = "585:11",
+=======
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	},
 	["Heavy Shortbow"] = {
 		["is"] = "3036:0:0:0:0",
@@ -61,6 +70,11 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "14400:0:0:0:0",
 		["7079023"] = "9400:1",
 	},
+<<<<<<< HEAD
+	["Wool Cloth"] = {
+		["is"] = "2592:0:0:0:0",
+		["7074199"] = "330:10",
+=======
 	["Kingsblood"] = {
 		["is"] = "3356:0:0:0:0",
 		["7074199"] = "540:6",
@@ -115,10 +129,17 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "15304:0:0:845:0",
 		["7079243"] = "12238:1",
 	},
+<<<<<<< HEAD
 	["Heavy Hide"] = {
 		["is"] = "4235:0:0:0:0",
 		["7080305"] = "1065:1",
 		["7079022"] = "1085:2",
+=======
+	["Sturdy Quarterstaff of the Owl"] = {
+		["is"] = "4566:0:0:756:0",
+		["7079243"] = "9800:1",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	},
 }
 AUCTIONATOR_SHOPPING_LISTS = {
@@ -6152,6 +6173,7 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4080"] = 693,
 			["mr"] = 693,
 		},
+<<<<<<< HEAD
 		["Grunt's Handwraps of Strength"] = {
 			["H4080"] = 4999,
 			["mr"] = 4999,
@@ -6159,6 +6181,29 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Formula: Enchant Bracer - Superior Spirit"] = {
 			["H4080"] = 7199,
 			["mr"] = 7199,
+=======
+<<<<<<< HEAD
+		["Steel Bar"] = {
+			["mr"] = 1433,
+			["cc"] = 7,
+			["id"] = "3859:0:0:0:0",
+			["H4075"] = 1433,
+=======
+		["Heavy Shortbow"] = {
+			["H4080"] = 8399,
+			["mr"] = 8399,
+			["sc"] = 2,
+			["id"] = "3036:0:0:0:0",
+			["cc"] = 2,
+		},
+		["Earthroot"] = {
+			["mr"] = 32,
+			["cc"] = 7,
+			["id"] = "2449:0:0:0:0",
+			["H4076"] = 32,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+			["sc"] = 0,
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		},
 		["Infantry Leggings of the Boar"] = {
 			["H4080"] = 5000,
@@ -6168,6 +6213,7 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4080"] = 83,
 			["mr"] = 83,
 		},
+<<<<<<< HEAD
 		["Heavy Woolen Pants"] = {
 			["H4080"] = 53922,
 			["mr"] = 53922,
@@ -6303,6 +6349,27 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Archer's Jerkin of the Monkey"] = {
 			["H4080"] = 55999,
 			["mr"] = 55999,
+=======
+		["Black Lotus"] = {
+			["mr"] = 431596,
+			["cc"] = 7,
+			["id"] = "13468:0:0:0:0",
+			["H4075"] = 431596,
+			["sc"] = 0,
+		},
+		["Mageweave Cloth"] = {
+			["mr"] = 1144,
+			["cc"] = 7,
+<<<<<<< HEAD
+			["id"] = "2592:0:0:0:0",
+			["H4075"] = 577,
+=======
+			["id"] = "4338:0:0:0:0",
+			["H4075"] = 1144,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+			["sc"] = 0,
+			["H4076"] = 331,
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		},
 		["Linen Cloth"] = {
 			["H4080"] = 39,
@@ -6340,6 +6407,7 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4080"] = 51500,
 			["mr"] = 51500,
 		},
+<<<<<<< HEAD
 		["Hefty Battlehammer of the Bear"] = {
 			["H4080"] = 11769,
 			["mr"] = 11769,
@@ -6351,6 +6419,37 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Pattern: Phoenix Pants"] = {
 			["H4080"] = 6399,
 			["mr"] = 6399,
+=======
+<<<<<<< HEAD
+		["Mageweave Cloth"] = {
+			["mr"] = 1144,
+=======
+		["Wild Steelbloom"] = {
+			["mr"] = 2889,
+			["cc"] = 7,
+			["id"] = "3355:0:0:0:0",
+			["sc"] = 0,
+			["H4079"] = 2889,
+		},
+		["Plaguebloom"] = {
+			["mr"] = 900,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+			["cc"] = 7,
+			["id"] = "13466:0:0:0:0",
+			["H4075"] = 900,
+			["sc"] = 0,
+		},
+<<<<<<< HEAD
+		["Silk Cloth"] = {
+			["mr"] = 179,
+=======
+		["Coarse Stone"] = {
+			["mr"] = 338,
+			["cc"] = 7,
+			["id"] = "2836:0:0:0:0",
+			["H4075"] = 338,
+			["sc"] = 0,
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		},
 		["Wildheart Gloves"] = {
 			["H4080"] = 22200,
@@ -6364,9 +6463,26 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4080"] = 42494,
 			["mr"] = 42494,
 		},
+<<<<<<< HEAD
 		["Elixir of Ogre's Strength"] = {
 			["H4080"] = 899,
 			["mr"] = 899,
+=======
+		["Black Lotus"] = {
+			["mr"] = 431596,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+			["cc"] = 7,
+			["id"] = "4306:0:0:0:0",
+			["H4076"] = 179,
+			["sc"] = 0,
+		},
+		["Mageroyal"] = {
+			["mr"] = 19,
+			["cc"] = 7,
+			["id"] = "785:0:0:0:0",
+			["H4076"] = 19,
+			["sc"] = 0,
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		},
 		["Purple Lotus"] = {
 			["H4080"] = 381,
@@ -6376,6 +6492,7 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4075"] = 361,
 			["sc"] = 0,
 		},
+<<<<<<< HEAD
 		["Pattern: Wicked Leather Gauntlets"] = {
 			["H4080"] = 149998,
 			["mr"] = 149998,
@@ -11738,12 +11855,26 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4080"] = 3799,
 			["mr"] = 3799,
 		},
+=======
+<<<<<<< HEAD
+		["Linen Cloth"] = {
+			["mr"] = 64,
+			["cc"] = 7,
+			["id"] = "2589:0:0:0:0",
+			["H4075"] = 64,
+=======
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 		["Bruiseweed"] = {
 			["H4080"] = 84,
 			["mr"] = 84,
 			["cc"] = 7,
 			["id"] = "2453:0:0:0:0",
 			["H4076"] = 78,
+<<<<<<< HEAD
+=======
+			["H4079"] = 299,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 			["sc"] = 0,
 			["H4079"] = 299,
 		},
@@ -13426,11 +13557,20 @@ AUCTIONATOR_STACKING_PREFS = {
 	},
 	["*_herbs"] = {
 		["stacksize"] = 20,
+<<<<<<< HEAD
 		["numstacks"] = -1,
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	},
 	["large venom sac"] = {
 		["numstacks"] = 0,
+<<<<<<< HEAD
 		["stacksize"] = 1,
+=======
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+>>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	},
 }
 AUCTIONATOR_SCAN_MINLEVEL = 1
