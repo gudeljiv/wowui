@@ -6,7 +6,7 @@ END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:2287
-/castsequence [combat] reset=combat item:118
+/castsequence [combat] reset=combat item:858,item:118
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 #showtooltip item:6308
