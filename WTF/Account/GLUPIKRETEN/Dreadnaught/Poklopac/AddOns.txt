@@ -122,3 +122,4 @@ AutoRoll: disabled
 aux-addon: disabled
 TradeSkillMaster_AppHelper: disabled
 RXPGuides: disabled
+XanDebuffTimers: disabled

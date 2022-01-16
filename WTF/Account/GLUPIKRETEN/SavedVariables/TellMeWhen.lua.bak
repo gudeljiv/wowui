@@ -1,13 +1,5 @@
 
 TellMeWhenDB = {
-	["locale"] = {
-		["enus"] = {
-			["AuraCache"] = {
-			},
-			["WpnEnchDurs"] = {
-			},
-		},
-	},
 	["profileKeys"] = {
 		["Dotwise - Golemagg"] = "Warrior",
 		["Mxyz - Golemagg"] = "Priest",
@@ -20,383 +12,118 @@ TellMeWhenDB = {
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 		["Mxys - Golemagg"] = "Priest",
-		["Konac - Dreadnaught"] = "Priest",
-		["Vermins - Stonespine"] = "Warrior",
-		["Mxyzptlk - Golemagg"] = "Warlock",
-		["Poklopac - Dreadnaught"] = "Hunter",
 		["Mxym - Golemagg"] = "Priest",
+		["Konac - Dreadnaught"] = "Priest",
 		["Vermin - Golemagg"] = "Warrior",
+		["Poklopac - Dreadnaught"] = "Hunter",
+		["Pitchwise - Dreadnaught"] = "Warrior",
+		["Jaroslav - Golemagg"] = "Druid",
 		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Augustin - Golemagg"] = "Mage",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
 		["Koloman - Golemagg"] = "Koloman - Golemagg",
-		["Jaroslav - Golemagg"] = "Druid",
+		["Mxyzptlk - Golemagg"] = "Warlock",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Warrior",
-		["Pitchwise - Dreadnaught"] = "Warrior",
+		["Vermins - Stonespine"] = "Warrior",
 		["Korupcija - Stonespine"] = "Warrior",
 		["Mxzq - Golemagg"] = "Hunter",
 		["Moolatz - Dreadnaught"] = "Druid",
 	},
 	["global"] = {
-		["BackdropColor"] = "7f333333",
-		["TimerBar_MiddleColor"] = "ffffff00",
 		["TextLayouts"] = {
-			[""] = {
-				["GUID"] = "",
-				["NoEdit"] = true,
-				["Name"] = "<No Layout>",
-				["n"] = 0,
-			},
 			["icon1"] = {
 				{
-					["Outline"] = "THICKOUTLINE",
-					["Shadow"] = 0,
-					["Justify"] = "CENTER",
-					["SkinAs"] = "HotKey",
-					["JustifyV"] = "MIDDLE",
-					["Width"] = 0,
-					["Anchors"] = {
-						{
-							["y"] = -2,
-							["x"] = -2,
-							["point"] = "TOPLEFT",
-							["relativePoint"] = "TOPLEFT",
-							["relativeTo"] = "",
-						}, -- [1]
-						{
-							["y"] = -2,
-							["x"] = -2,
-							["point"] = "TOPRIGHT",
-							["relativePoint"] = "TOPRIGHT",
-							["relativeTo"] = "",
-						}, -- [2]
-						["n"] = 2,
-					},
-					["Name"] = "Arial Narrow",
-					["StringName"] = "Binding/Label",
-					["Height"] = 1,
-					["Rotate"] = 0,
-					["DefaultText"] = "",
-					["Size"] = 12,
 				}, -- [1]
 				{
-					["Outline"] = "THICKOUTLINE",
-					["Shadow"] = 0,
-					["Justify"] = "CENTER",
-					["SkinAs"] = "Count",
-					["JustifyV"] = "MIDDLE",
-					["Width"] = 0,
-					["Anchors"] = {
-						{
-							["y"] = 2,
-							["x"] = -2,
-							["point"] = "BOTTOMRIGHT",
-							["relativePoint"] = "BOTTOMRIGHT",
-							["relativeTo"] = "",
-						}, -- [1]
-						["n"] = 1,
-					},
-					["Name"] = "Arial Narrow",
-					["StringName"] = "Stacks",
-					["Height"] = 0,
-					["Rotate"] = 0,
-					["DefaultText"] = "[Stacks:Hide(0)]",
-					["Size"] = 12,
 				}, -- [2]
-				["GUID"] = "icon1",
-				["NoEdit"] = true,
-				["Name"] = "Icon Layout 1",
-				["n"] = 2,
 			},
 			["bar2"] = {
 				{
-					["Outline"] = "THICKOUTLINE",
-					["Shadow"] = 0,
-					["Justify"] = "CENTER",
-					["Anchors"] = {
-						{
-							["y"] = -1,
-							["relativeTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-							["point"] = "TOP",
-							["relativePoint"] = "TOP",
-							["x"] = 0,
-						}, -- [1]
-						["n"] = 1,
-					},
-					["JustifyV"] = "MIDDLE",
-					["Width"] = 0,
-					["DefaultText"] = "[Duration(gcd=true):TMWFormatDuration]",
-					["Name"] = "Arial Narrow",
-					["StringName"] = "Duration",
-					["Height"] = 0,
-					["Rotate"] = 0,
-					["SkinAs"] = "",
-					["Size"] = 12,
 				}, -- [1]
 				{
-					["Outline"] = "THICKOUTLINE",
-					["Shadow"] = 0,
-					["Justify"] = "LEFT",
-					["Anchors"] = {
-						{
-							["y"] = -12,
-							["x"] = 3,
-							["point"] = "BOTTOMLEFT",
-							["relativePoint"] = "BOTTOMLEFT",
-							["relativeTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-						}, -- [1]
-						{
-							["y"] = 0,
-							["relativeTo"] = "$$1",
-							["point"] = "RIGHT",
-							["relativePoint"] = "LEFT",
-							["x"] = 0,
-						}, -- [2]
-						["n"] = 1,
-					},
-					["JustifyV"] = "MIDDLE",
-					["Width"] = 0,
-					["DefaultText"] = "[Spell] [Stacks:Hide(0):Paren]",
-					["Name"] = "Arial Narrow",
-					["StringName"] = "Spell",
-					["Height"] = 0,
-					["Rotate"] = 90,
-					["SkinAs"] = "",
-					["Size"] = 12,
 				}, -- [2]
-				["GUID"] = "bar2",
-				["NoEdit"] = true,
-				["Name"] = "Vertical Bar Layout 1",
-				["n"] = 2,
-			},
-			["bar1"] = {
-				{
-					["Outline"] = "THICKOUTLINE",
-					["Shadow"] = 0,
-					["Justify"] = "CENTER",
-					["Anchors"] = {
-						{
-							["y"] = 0,
-							["relativeTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-							["point"] = "RIGHT",
-							["relativePoint"] = "RIGHT",
-							["x"] = -2,
-						}, -- [1]
-						["n"] = 1,
-					},
-					["JustifyV"] = "MIDDLE",
-					["Width"] = 0,
-					["DefaultText"] = "[Duration(gcd=true):TMWFormatDuration]",
-					["Name"] = "Arial Narrow",
-					["StringName"] = "Duration",
-					["Height"] = 0,
-					["Rotate"] = 0,
-					["SkinAs"] = "",
-					["Size"] = 12,
-				}, -- [1]
-				{
-					["Outline"] = "THICKOUTLINE",
-					["Shadow"] = 0,
-					["Justify"] = "LEFT",
-					["Anchors"] = {
-						{
-							["y"] = 0,
-							["relativeTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-							["point"] = "LEFT",
-							["relativePoint"] = "LEFT",
-							["x"] = 2,
-						}, -- [1]
-						{
-							["y"] = 0,
-							["relativeTo"] = "$$1",
-							["point"] = "RIGHT",
-							["relativePoint"] = "LEFT",
-							["x"] = 0,
-						}, -- [2]
-						["n"] = 2,
-					},
-					["JustifyV"] = "MIDDLE",
-					["Width"] = 0,
-					["DefaultText"] = "[Spell] [Stacks:Hide(0):Paren]",
-					["Name"] = "Arial Narrow",
-					["StringName"] = "Spell",
-					["Height"] = 1,
-					["Rotate"] = 0,
-					["SkinAs"] = "",
-					["Size"] = 12,
-				}, -- [2]
-				["GUID"] = "bar1",
-				["NoEdit"] = true,
-				["Name"] = "Bar Layout 1",
-				["n"] = 2,
 			},
 			["TMW:textlayout:1TYZ96XyCAeK"] = {
 				{
-					["Outline"] = "THICKOUTLINE",
-					["Shadow"] = 0,
-					["Justify"] = "CENTER",
 					["SkinAs"] = "HotKey",
-					["JustifyV"] = "MIDDLE",
-					["Width"] = 0,
 					["Anchors"] = {
 						{
 							["y"] = -2,
 							["x"] = -2,
 							["point"] = "TOPLEFT",
 							["relativePoint"] = "TOPLEFT",
-							["relativeTo"] = "",
 						}, -- [1]
 						{
 							["y"] = -2,
 							["x"] = -2,
 							["point"] = "TOPRIGHT",
 							["relativePoint"] = "TOPRIGHT",
-							["relativeTo"] = "",
 						}, -- [2]
 						["n"] = 2,
 					},
-					["Name"] = "Arial Narrow",
 					["StringName"] = "Binding/Label",
 					["Height"] = 1,
-					["Rotate"] = 0,
-					["DefaultText"] = "",
-					["Size"] = 12,
 				}, -- [1]
 				{
-					["DefaultText"] = "[Stacks:Hide(0)]",
-					["Shadow"] = 0,
-					["Justify"] = "CENTER",
+					["Outline"] = "OUTLINE",
+					["SkinAs"] = "Count",
 					["Anchors"] = {
 						{
-							["y"] = 0,
-							["x"] = 0,
 							["point"] = "BOTTOMRIGHT",
 							["relativePoint"] = "BOTTOMRIGHT",
-							["relativeTo"] = "",
 						}, -- [1]
-						["n"] = 1,
 					},
-					["JustifyV"] = "MIDDLE",
-					["Width"] = 0,
-					["SkinAs"] = "Count",
-					["Name"] = "Arial Narrow",
 					["StringName"] = "Stacks",
-					["Height"] = 0,
-					["Rotate"] = 0,
-					["Outline"] = "OUTLINE",
-					["Size"] = 12,
+					["DefaultText"] = "[Stacks:Hide(0)]",
 				}, -- [2]
 				["GUID"] = "TMW:textlayout:1TYZ96XyCAeK",
-				["NoEdit"] = false,
 				["Name"] = "Icon Layout 2",
 				["n"] = 2,
 			},
-			["icon2"] = {
-				{
-					["Outline"] = "THICKOUTLINE",
-					["Shadow"] = 0,
-					["Justify"] = "CENTER",
-					["Anchors"] = {
-						["n"] = 1,
-					},
-					["JustifyV"] = "MIDDLE",
-					["Width"] = 0,
-					["DefaultText"] = "",
-					["SkinAs"] = "",
-					["Name"] = "Arial Narrow",
-					["StringName"] = "Number",
-					["Height"] = 0,
-					["Rotate"] = 0,
-					["ConstrainWidth"] = false,
-					["Size"] = 24,
-				}, -- [1]
-				["GUID"] = "icon2",
-				["NoEdit"] = true,
-				["Name"] = "Center Number",
-				["n"] = 1,
-			},
 			["TMW:textlayout:1TZve345g=GK"] = {
 				{
-					["Outline"] = "THICKOUTLINE",
-					["Shadow"] = 0,
-					["Justify"] = "CENTER",
 					["SkinAs"] = "HotKey",
-					["JustifyV"] = "MIDDLE",
-					["Width"] = 0,
 					["Anchors"] = {
 						{
 							["y"] = -2,
 							["x"] = -2,
 							["point"] = "TOPLEFT",
 							["relativePoint"] = "TOPLEFT",
-							["relativeTo"] = "",
 						}, -- [1]
 						{
 							["y"] = -2,
 							["x"] = -2,
 							["point"] = "TOPRIGHT",
 							["relativePoint"] = "TOPRIGHT",
-							["relativeTo"] = "",
 						}, -- [2]
 						["n"] = 2,
 					},
-					["Name"] = "Arial Narrow",
 					["StringName"] = "Binding/Label",
-					["Height"] = 0,
-					["Rotate"] = 0,
-					["DefaultText"] = "",
-					["Size"] = 12,
 				}, -- [1]
 				{
-					["Outline"] = "OUTLINE",
-					["Shadow"] = 0,
-					["Justify"] = "CENTER",
-					["SkinAs"] = "Count",
-					["JustifyV"] = "MIDDLE",
-					["Width"] = 0,
 					["DefaultText"] = "[Stacks:Hide(0)]",
-					["Name"] = "Arial Narrow",
-					["StringName"] = "Stacks",
-					["Height"] = 0,
-					["Rotate"] = 0,
 					["Anchors"] = {
 						{
 							["y"] = 2,
-							["x"] = 0,
 							["point"] = "BOTTOMRIGHT",
 							["relativePoint"] = "BOTTOMRIGHT",
-							["relativeTo"] = "",
 						}, -- [1]
-						["n"] = 1,
 					},
+					["Outline"] = "OUTLINE",
+					["StringName"] = "Stacks",
+					["SkinAs"] = "Count",
 					["Size"] = 9,
 				}, -- [2]
 				["GUID"] = "TMW:textlayout:1TZve345g=GK",
-				["NoEdit"] = false,
 				["Name"] = "STACKS",
 				["n"] = 2,
 			},
 		},
-		["EffThreshold"] = 15,
 		["ShowGUIDs"] = true,
-		["NumGroups"] = 0,
-		["CodeSnippets"] = {
-			["n"] = 0,
-		},
-		["Groups"] = {
-		},
-		["CreateImportBackup"] = true,
-		["Interval"] = 0.05,
-		["HasImported"] = false,
 		["AllowCombatConfig"] = true,
-		["ReceiveComm"] = true,
-		["VersionWarning"] = true,
-		["BackupDbInOptions"] = true,
-		["TimerBar_CompleteColor"] = "ff00ff00",
-		["TimerBar_StartColor"] = "ffff0000",
 		["HelpSettings"] = {
 			["CNDT_ANDOR_FIRSTSEE"] = true,
 			["CNDT_PARENTHESES_FIRSTSEE"] = true,
@@ -433,12 +160,11 @@ TellMeWhenDB = {
 				}, -- [1]
 			},
 		},
-		["Dmitar - Golemagg"] = {
-			["Locked"] = true,
+		["Mxys - Golemagg"] = {
 			["Version"] = 86907,
 			["Groups"] = {
 				{
-					["GUID"] = "TMW:group:1VAdO9NkNZev",
+					["GUID"] = "TMW:group:1V9nE5TJjTOt",
 				}, -- [1]
 			},
 		},
@@ -451,25 +177,22 @@ TellMeWhenDB = {
 				}, -- [1]
 			},
 		},
-		["Mxys - Golemagg"] = {
+		["Dmitar - Golemagg"] = {
+			["Locked"] = true,
 			["Version"] = 86907,
 			["Groups"] = {
 				{
-					["GUID"] = "TMW:group:1V9nE5TJjTOt",
+					["GUID"] = "TMW:group:1VAdO9NkNZev",
 				}, -- [1]
 			},
 		},
 		["TEST HUNTER"] = {
+			["Version"] = 87101,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TRVv5Bhqdi2",
+					["Columns"] = 15,
 					["Name"] = "Hunter Profile",
-					["Point"] = {
-						["y"] = -7.30746799045408,
-						["x"] = 4.18984222412109,
-						["point"] = "TOPLEFT",
-						["relativePoint"] = "TOPLEFT",
-					},
 					["Icons"] = {
 						nil, -- [1]
 						{
@@ -481,7 +204,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["ClockGCD"] = true,
 							["GUID"] = "TMW:icon:1TVSlzDpfz8W",
-							["ShowTimerText"] = true,
+							["Name"] = "1130; 14323; 14324; 14325",
 							["DurationMax"] = 3,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -495,7 +218,7 @@ TellMeWhenDB = {
 								}, -- [2]
 								["n"] = 2,
 							},
-							["Name"] = "1130; 14323; 14324; 14325",
+							["ShowTimerText"] = true,
 							["States"] = {
 								nil, -- [1]
 								{
@@ -820,6 +543,7 @@ TellMeWhenDB = {
 							["Type"] = "cooldown",
 							["FakeHidden"] = true,
 							["ClockGCD"] = true,
+							["BarDisplay_BarGCD"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -849,9 +573,8 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["ShowTimerText"] = true,
 							["Name"] = 75,
-							["BarDisplay_BarGCD"] = true,
+							["ShowTimerText"] = true,
 							["Conditions"] = {
 								{
 									["Name"] = "melee_range",
@@ -898,11 +621,11 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["FakeHidden"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "1978; 13549; 13550; 13551; 13552; 13553; 13554; 13555; 25295",
 							["DurationMax"] = 4.5,
 							["DurationMinEnabled"] = true,
 							["DurationMin"] = 3,
-							["Name"] = "1978; 13549; 13550; 13551; 13552; 13553; 13554; 13555; 25295",
+							["ShowTimerText"] = true,
 							["States"] = {
 								nil, -- [1]
 								{
@@ -1034,7 +757,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "3044",
 							["DurationMax"] = 1.5,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -1058,7 +781,7 @@ TellMeWhenDB = {
 								}, -- [4]
 								["n"] = 4,
 							},
-							["Name"] = "3044",
+							["ShowTimerText"] = true,
 							["States"] = {
 								nil, -- [1]
 								{
@@ -1164,7 +887,7 @@ TellMeWhenDB = {
 							["DurationMaxEnabled"] = true,
 							["DurationMinEnabled"] = true,
 							["Unit"] = "target",
-							["FakeHidden"] = true,
+							["ClockGCD"] = true,
 							["Conditions"] = {
 								{
 									["Name"] = "spell = IsSpellKnown(1130)\n\nreturn spell",
@@ -1181,11 +904,11 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["ShowTimerText"] = true,
-							["DurationMax"] = 4.5,
 							["Name"] = "1130; 14323; 14324; 14325",
+							["DurationMax"] = 4.5,
+							["ShowTimerText"] = true,
 							["DurationMin"] = 3,
-							["ClockGCD"] = true,
+							["FakeHidden"] = true,
 							["States"] = {
 								nil, -- [1]
 								{
@@ -1333,7 +1056,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["ClockGCD"] = true,
 							["OnlyMine"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "5116",
 							["DurationMax"] = 1.5,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -1365,7 +1088,7 @@ TellMeWhenDB = {
 								}, -- [6]
 								["n"] = 6,
 							},
-							["Name"] = "5116",
+							["ShowTimerText"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -1784,7 +1507,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "19434",
 							["DurationMax"] = 1.5,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -1804,7 +1527,7 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["Name"] = "19434",
+							["ShowTimerText"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -1905,10 +1628,10 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "ICON",
-									["Icon"] = "TMW:icon:1TVSIOWJ1T0I",
-									["AndOr"] = "OR",
 									["PrtsAfter"] = 1,
 									["Level"] = 1,
+									["Icon"] = "TMW:icon:1TVSIOWJ1T0I",
+									["AndOr"] = "OR",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -2001,18 +1724,17 @@ TellMeWhenDB = {
 					["Scale"] = 0.600000023841858,
 					["Rows"] = 7,
 					["Alpha"] = 0,
-					["Columns"] = 15,
+					["Point"] = {
+						["y"] = -7.30746799045408,
+						["x"] = 4.18984222412109,
+						["point"] = "TOPLEFT",
+						["relativePoint"] = "TOPLEFT",
+					},
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TRk_aZypIqd",
+					["Columns"] = 2,
 					["Name"] = "Top Bar",
-					["Point"] = {
-						["y"] = -2.45231879086471e-05,
-						["relativeTo"] = "TMW:group:1TRW5crzGrfW",
-						["point"] = "BOTTOM",
-						["relativePoint"] = "BOTTOM",
-						["x"] = 1.56344934325808e-05,
-					},
 					["SettingsPerView"] = {
 						["icon"] = {
 							["SpacingX"] = 65,
@@ -2128,7 +1850,13 @@ TellMeWhenDB = {
 							},
 						}, -- [2]
 					},
-					["Columns"] = 2,
+					["Point"] = {
+						["y"] = -2.45231879086471e-05,
+						["relativeTo"] = "TMW:group:1TRW5crzGrfW",
+						["point"] = "BOTTOM",
+						["relativePoint"] = "BOTTOM",
+						["x"] = 1.56344934325808e-05,
+					},
 				}, -- [2]
 				{
 					["GUID"] = "TMW:group:1TRW5crzGrfW",
@@ -2385,7 +2113,7 @@ TellMeWhenDB = {
 								["n"] = 2,
 							},
 							["TimerBar_StartColor"] = "ffb00000",
-							["CustomTex"] = "NONE",
+							["TimerBar_EnableColors"] = true,
 							["Conditions"] = {
 								{
 									["Unit"] = "pet",
@@ -2397,7 +2125,7 @@ TellMeWhenDB = {
 								}, -- [2]
 								["n"] = 2,
 							},
-							["TimerBar_EnableColors"] = true,
+							["CustomTex"] = "NONE",
 							["SettingsPerView"] = {
 								["bar"] = {
 									["Texts"] = {
@@ -2418,6 +2146,9 @@ TellMeWhenDB = {
 								{
 									["Thickness"] = 3,
 									["Type"] = "Animations",
+									["AnimColor"] = "ffffff00",
+									["Animation"] = "ICONBORDER",
+									["OnlyShown"] = true,
 									["OnConditionConditions"] = {
 										{
 											["Level"] = 1,
@@ -2433,16 +2164,13 @@ TellMeWhenDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
-									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-									["OnlyShown"] = true,
-									["AnimColor"] = "ffffff00",
 									["Event"] = "WCSP",
-									["Animation"] = "ICONBORDER",
+									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 								}, -- [1]
 								["n"] = 1,
 							},
 							["TimerBar_StartColor"] = "ffb00000",
-							["CustomTex"] = "883",
+							["TimerBar_EnableColors"] = true,
 							["Conditions"] = {
 								{
 									["PrtsBefore"] = 1,
@@ -2463,7 +2191,7 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["TimerBar_EnableColors"] = true,
+							["CustomTex"] = "883",
 							["SettingsPerView"] = {
 								["bar"] = {
 									["TextLayout"] = "bar1",
@@ -2931,7 +2659,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "conditionicon",
 							["TimerBar_CompleteColor"] = "ff886332",
-							["BarDisplay_Invert"] = true,
+							["CustomTex"] = "NONE",
 							["ConditionDur"] = 5,
 							["SettingsPerView"] = {
 								["bar"] = {
@@ -2942,7 +2670,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["CustomTex"] = "NONE",
+							["BarDisplay_Invert"] = true,
 							["Conditions"] = {
 								{
 									["Icon"] = "TMW:icon:1T1lwuRfZ3C7",
@@ -3005,17 +2733,17 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "Animations",
+									["AnimColor"] = "ff00fff1",
+									["Animation"] = "ICONFLASH",
+									["OnlyShown"] = true,
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
-									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-									["OnlyShown"] = true,
-									["AnimColor"] = "ff00fff1",
 									["Event"] = "WCSP",
-									["Animation"] = "ICONFLASH",
+									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -3056,17 +2784,17 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "Animations",
+									["AnimColor"] = "ff00fff1",
+									["Animation"] = "ICONFLASH",
+									["OnlyShown"] = true,
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
-									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-									["OnlyShown"] = true,
-									["AnimColor"] = "ff00fff1",
 									["Event"] = "WCSP",
-									["Animation"] = "ICONFLASH",
+									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -3107,17 +2835,17 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "Animations",
+									["AnimColor"] = "ff00fff1",
+									["Animation"] = "ICONFLASH",
+									["OnlyShown"] = true,
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
-									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-									["OnlyShown"] = true,
-									["AnimColor"] = "ff00fff1",
 									["Event"] = "WCSP",
-									["Animation"] = "ICONFLASH",
+									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -3198,13 +2926,13 @@ TellMeWhenDB = {
 								{
 									["Type"] = "Animations",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+									["AnimColor"] = "af00c0ff",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
-									["AnimColor"] = "af00c0ff",
 									["Event"] = "WCSP",
 									["Animation"] = "ICONFLASH",
 								}, -- [3]
@@ -3218,10 +2946,10 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["BarDisplay_Invert"] = true,
 							["CustomTex"] = "NONE",
-							["TimerBar_EnableColors"] = true,
+							["BarDisplay_Invert"] = true,
 							["TimerBar_CompleteColor"] = "005dff55",
+							["TimerBar_EnableColors"] = true,
 						}, -- [8]
 						{
 							["Type"] = "conditionicon",
@@ -3246,6 +2974,7 @@ TellMeWhenDB = {
 								{
 									["Type"] = "Animations",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+									["AnimColor"] = "9400d4ff",
 									["OnConditionConditions"] = {
 										{
 											["Name"] = "heal/dps_toggle",
@@ -3256,7 +2985,6 @@ TellMeWhenDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
-									["AnimColor"] = "9400d4ff",
 									["Event"] = "WCSP",
 									["Animation"] = "ICONFLASH",
 								}, -- [2]
@@ -3307,10 +3035,10 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["BarDisplay_Invert"] = true,
 							["CustomTex"] = "NONE",
-							["TimerBar_EnableColors"] = true,
+							["BarDisplay_Invert"] = true,
 							["TimerBar_CompleteColor"] = "005dff55",
+							["TimerBar_EnableColors"] = true,
 						}, -- [9]
 					},
 					["SortPriorities"] = {
@@ -3437,6 +3165,10 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["Type"] = "conditionicon",
+							["ShowTimerText"] = true,
+							["ConditionDurEnabled"] = true,
+							["FakeHidden"] = true,
+							["OnlyIfCounting"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Counter",
@@ -3470,10 +3202,6 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["ConditionDurEnabled"] = true,
-							["FakeHidden"] = true,
-							["OnlyIfCounting"] = true,
-							["ConditionDur"] = 5,
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "bar1",
@@ -3486,15 +3214,15 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1T1lwuRfZ3C7",
 							["Conditions"] = {
 								{
-									["AndOr"] = "OR",
-									["Level"] = 1,
-									["Name"] = "menu_open_c",
 									["Type"] = "COUNTER",
+									["AndOr"] = "OR",
+									["Name"] = "menu_open_c",
+									["Level"] = 1,
 								}, -- [1]
 								["n"] = 1,
 							},
 							["CustomTex"] = "Attack",
-							["ShowTimerText"] = true,
+							["ConditionDur"] = 5,
 						}, -- [2]
 					},
 					["LayoutDirection"] = 4,
@@ -3719,7 +3447,7 @@ TellMeWhenDB = {
 								{
 									["Type"] = "Animations",
 									["Animation"] = "ICONBORDER",
-									["Event"] = "WCSP",
+									["Alpha"] = 1,
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "BUFFDUR",
@@ -3731,7 +3459,7 @@ TellMeWhenDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Alpha"] = 1,
+									["Event"] = "WCSP",
 									["Image"] = "13159",
 								}, -- [8]
 								["n"] = 8,
@@ -3759,8 +3487,6 @@ TellMeWhenDB = {
 								},
 							},
 							["TimerBar_EnableColors"] = true,
-							["BackdropColor_Enable"] = true,
-							["TimerBar_CompleteColor"] = "0000ff00",
 							["Conditions"] = {
 								{
 									["Type"] = "COUNTER",
@@ -3769,6 +3495,8 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
+							["TimerBar_CompleteColor"] = "0000ff00",
+							["BackdropColor_Enable"] = true,
 						}, -- [1]
 					},
 					["Name"] = "Version",
@@ -5057,7 +4785,7 @@ TellMeWhenDB = {
 						["point"] = "LEFT",
 						["relativePoint"] = "LEFT",
 					},
-					["Scale"] = 0.59,
+					["Locked"] = true,
 					["Conditions"] = {
 						{
 							["PrtsBefore"] = 3,
@@ -5162,7 +4890,7 @@ TellMeWhenDB = {
 								{
 									["Type"] = "Animations",
 									["Animation"] = "ICONBORDER",
-									["Event"] = "WCSP",
+									["Alpha"] = 1,
 									["OnConditionConditions"] = {
 										{
 											["BitFlags"] = 1,
@@ -5170,7 +4898,7 @@ TellMeWhenDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Alpha"] = 1,
+									["Event"] = "WCSP",
 									["Image"] = "28084",
 								}, -- [4]
 								{
@@ -5205,7 +4933,7 @@ TellMeWhenDB = {
 							["CustomTex"] = "NONE",
 						}, -- [1]
 					},
-					["Locked"] = true,
+					["Scale"] = 0.59,
 				}, -- [15]
 				{
 					["View"] = "bar",
@@ -5234,7 +4962,14 @@ TellMeWhenDB = {
 							["ConditionDurEnabled"] = true,
 							["TimerBar_StartColor"] = "00ff0000",
 							["OnlyIfCounting"] = true,
-							["ConditionDur"] = 5,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Event"] = "OnHide",
+									["Animation"] = "ICONFADE",
+								}, -- [1]
+								["n"] = 1,
+							},
 							["SettingsPerView"] = {
 								["bar"] = {
 									["TextLayout"] = "icon2",
@@ -5253,14 +4988,7 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["TimerBar_EnableColors"] = true,
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Event"] = "OnHide",
-									["Animation"] = "ICONFADE",
-								}, -- [1]
-								["n"] = 1,
-							},
+							["ConditionDur"] = 5,
 						}, -- [1]
 						{
 							["Enabled"] = true,
@@ -5274,19 +5002,19 @@ TellMeWhenDB = {
 				}, -- [16]
 				{
 					["View"] = "bar",
+					["Columns"] = 1,
 					["Point"] = {
 						["y"] = -165,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
-					["Columns"] = 1,
 					["SettingsPerView"] = {
 						["bar"] = {
 							["SizeX"] = 292.663726806641,
 							["Icon"] = false,
 						},
 					},
-					["Scale"] = 1.25617873668671,
+					["Locked"] = true,
 					["GUID"] = "TMW:group:1ToXu0LcLIOZ",
 					["Icons"] = {
 						{
@@ -5299,7 +5027,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 						}, -- [1]
 					},
-					["Locked"] = true,
+					["Scale"] = 1.25617873668671,
 				}, -- [17]
 				{
 					["GUID"] = "TMW:group:1ToaOwcAiwGJ",
@@ -5364,7 +5092,7 @@ TellMeWhenDB = {
 								{
 									["Type"] = "Animations",
 									["Animation"] = "ICONBORDER",
-									["Event"] = "WCSP",
+									["Alpha"] = 1,
 									["OnConditionConditions"] = {
 										{
 											["BitFlags"] = 1,
@@ -5372,7 +5100,7 @@ TellMeWhenDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Alpha"] = 1,
+									["Event"] = "WCSP",
 									["Image"] = "28084",
 								}, -- [4]
 								{
@@ -5462,9 +5190,9 @@ TellMeWhenDB = {
 				}, -- [19]
 			},
 			["NumGroups"] = 19,
-			["Version"] = 87101,
 		},
 		["Main profile"] = {
+			["NumGroups"] = 7,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TQuFk14Ix42",
@@ -5510,6 +5238,7 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
+							["DurationMinEnabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -5519,7 +5248,6 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["DurationMin"] = 15,
-							["DurationMinEnabled"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -5553,14 +5281,14 @@ TellMeWhenDB = {
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TQvxnAfbGyU",
-					["Name"] = "Warrior Spells",
 					["Point"] = {
 						["y"] = -5,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
+					["Name"] = "Warrior Spells",
 					["Alpha"] = 0,
-					["Locked"] = true,
+					["Scale"] = 1,
 					["Columns"] = 20,
 					["Icons"] = {
 						{
@@ -5702,7 +5430,7 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1TWYMfcUzmi6",
 						},
 					},
-					["Scale"] = 1,
+					["Locked"] = true,
 				}, -- [2]
 				{
 					["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -5763,14 +5491,14 @@ TellMeWhenDB = {
 				}, -- [4]
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
+					["Columns"] = 20,
 					["Point"] = {
 						["y"] = -75,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
-					["Columns"] = 20,
 					["Alpha"] = 0,
-					["Locked"] = true,
+					["Scale"] = 1,
 					["Name"] = "Hunter Spells",
 					["Icons"] = {
 						{
@@ -5793,7 +5521,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 						}, -- [2]
 					},
-					["Scale"] = 1,
+					["Locked"] = true,
 				}, -- [5]
 				{
 					["GUID"] = "TMW:group:1TeVDtajUwqa",
@@ -5832,13 +5560,12 @@ TellMeWhenDB = {
 				}, -- [7]
 			},
 			["Version"] = 86907,
-			["NumGroups"] = 7,
 		},
-		["Mxym - Golemagg"] = {
-			["Version"] = 86907,
+		["Konac - Dreadnaught"] = {
+			["Version"] = 91200,
 			["Groups"] = {
 				{
-					["GUID"] = "TMW:group:1V9lxa5qigKR",
+					["GUID"] = "TMW:group:1Xql=ZXCq2=U",
 				}, -- [1]
 			},
 		},
@@ -5958,10 +5685,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [5]
 								{
-									["PrtsAfter"] = 1,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "22391",
 									["Level"] = 1,
+									["PrtsAfter"] = 1,
+									["Type"] = "TALENTLEARNED",
 								}, -- [6]
 								{
 									["Type"] = "SPELLCD",
@@ -6001,10 +5728,10 @@ TellMeWhenDB = {
 									["Operator"] = "~=",
 								}, -- [12]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "22391",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "TALENTLEARNED",
 								}, -- [13]
 								{
 									["PrtsBefore"] = 1,
@@ -6013,10 +5740,10 @@ TellMeWhenDB = {
 									["Level"] = 1,
 								}, -- [14]
 								{
-									["PrtsAfter"] = 1,
-									["Type"] = "LASTCAST",
 									["Name"] = "167105",
 									["Level"] = 1,
+									["PrtsAfter"] = 1,
+									["Type"] = "LASTCAST",
 								}, -- [15]
 								{
 									["Type"] = "BUFFDUR",
@@ -6125,14 +5852,7 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										"", -- [1]
-										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -6198,7 +5918,14 @@ TellMeWhenDB = {
 								}, -- [9]
 								["n"] = 9,
 							},
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										"", -- [1]
+										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+									},
+								},
+							},
 							["States"] = {
 								nil, -- [1]
 								{
@@ -6213,14 +5940,7 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										"", -- [1]
-										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -6257,7 +5977,14 @@ TellMeWhenDB = {
 								}, -- [5]
 								["n"] = 5,
 							},
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										"", -- [1]
+										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+									},
+								},
+							},
 							["States"] = {
 								nil, -- [1]
 								{
@@ -6297,20 +6024,14 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
-									["Checked"] = true,
-									["Type"] = "BUFFSTACKS",
 									["Name"] = "7384",
 									["Level"] = 2,
+									["Checked"] = true,
+									["Type"] = "BUFFSTACKS",
 								}, -- [1]
 								{
 									["Name"] = "12294",
@@ -6342,7 +6063,13 @@ TellMeWhenDB = {
 								}, -- [6]
 								["n"] = 6,
 							},
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
+									},
+								},
+							},
 							["States"] = {
 								nil, -- [1]
 								{
@@ -6383,10 +6110,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [4]
 								{
-									["PrtsAfter"] = 2,
-									["Type"] = "COUNTER",
 									["Name"] = "execute",
 									["Level"] = 1,
+									["PrtsAfter"] = 2,
+									["Type"] = "COUNTER",
 								}, -- [5]
 								{
 									["Name"] = "cooldown_toggle",
@@ -6654,10 +6381,10 @@ TellMeWhenDB = {
 									["Operator"] = ">",
 								}, -- [5]
 								{
-									["PrtsAfter"] = 1,
-									["Type"] = "COUNTER",
 									["Name"] = "testofmight",
 									["Level"] = 1,
+									["PrtsAfter"] = 1,
+									["Type"] = "COUNTER",
 								}, -- [6]
 								{
 									["PrtsBefore"] = 2,
@@ -6673,10 +6400,10 @@ TellMeWhenDB = {
 									["Operator"] = ">",
 								}, -- [8]
 								{
-									["PrtsAfter"] = 1,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "22391",
 									["Level"] = 1,
+									["PrtsAfter"] = 1,
+									["Type"] = "TALENTLEARNED",
 								}, -- [9]
 								{
 									["Type"] = "SPELLCD",
@@ -6753,10 +6480,10 @@ TellMeWhenDB = {
 									["Operator"] = ">",
 								}, -- [5]
 								{
-									["PrtsAfter"] = 1,
-									["Type"] = "COUNTER",
 									["Name"] = "testofmight",
 									["Level"] = 1,
+									["PrtsAfter"] = 1,
+									["Type"] = "COUNTER",
 								}, -- [6]
 								{
 									["PrtsBefore"] = 1,
@@ -6772,10 +6499,10 @@ TellMeWhenDB = {
 									["Operator"] = ">",
 								}, -- [8]
 								{
-									["PrtsAfter"] = 1,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "22391",
 									["Level"] = 1,
+									["PrtsAfter"] = 1,
+									["Type"] = "TALENTLEARNED",
 								}, -- [9]
 								{
 									["Type"] = "SPELLCD",
@@ -7002,14 +6729,7 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										"", -- [1]
-										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -7075,7 +6795,14 @@ TellMeWhenDB = {
 								}, -- [9]
 								["n"] = 9,
 							},
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										"", -- [1]
+										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+									},
+								},
+							},
 							["States"] = {
 								nil, -- [1]
 								{
@@ -7090,14 +6817,7 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										"", -- [1]
-										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -7130,7 +6850,14 @@ TellMeWhenDB = {
 								}, -- [4]
 								["n"] = 4,
 							},
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										"", -- [1]
+										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+									},
+								},
+							},
 							["States"] = {
 								nil, -- [1]
 								{
@@ -7166,20 +6893,14 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
-									["Checked"] = true,
-									["Type"] = "BUFFSTACKS",
 									["Name"] = "7384",
 									["Level"] = 2,
+									["Checked"] = true,
+									["Type"] = "BUFFSTACKS",
 								}, -- [1]
 								{
 									["Name"] = "12294",
@@ -7207,7 +6928,13 @@ TellMeWhenDB = {
 								}, -- [5]
 								["n"] = 5,
 							},
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
+									},
+								},
+							},
 							["States"] = {
 								nil, -- [1]
 								{
@@ -7580,14 +7307,7 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										"", -- [1]
-										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -7646,7 +7366,14 @@ TellMeWhenDB = {
 								}, -- [9]
 								["n"] = 9,
 							},
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										"", -- [1]
+										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+									},
+								},
+							},
 							["States"] = {
 								nil, -- [1]
 								{
@@ -7661,14 +7388,7 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										"", -- [1]
-										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -7719,7 +7439,14 @@ TellMeWhenDB = {
 								}, -- [7]
 								["n"] = 7,
 							},
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										"", -- [1]
+										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+									},
+								},
+							},
 							["States"] = {
 								nil, -- [1]
 								{
@@ -7768,13 +7495,7 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -7831,7 +7552,13 @@ TellMeWhenDB = {
 								}, -- [8]
 								["n"] = 8,
 							},
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
+									},
+								},
+							},
 							["States"] = {
 								nil, -- [1]
 								{
@@ -7847,13 +7574,7 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "7384",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										[2] = "[Stacks:Hide(0, 1)]",
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -7903,7 +7624,13 @@ TellMeWhenDB = {
 								}, -- [8]
 								["n"] = 8,
 							},
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										[2] = "[Stacks:Hide(0, 1)]",
+									},
+								},
+							},
 							["States"] = {
 								nil, -- [1]
 								{
@@ -8148,10 +7875,10 @@ TellMeWhenDB = {
 									["Operator"] = ">",
 								}, -- [8]
 								{
-									["PrtsAfter"] = 1,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "22391",
 									["Level"] = 1,
+									["PrtsAfter"] = 1,
+									["Type"] = "TALENTLEARNED",
 								}, -- [9]
 								{
 									["Type"] = "SPELLCD",
@@ -8243,10 +7970,10 @@ TellMeWhenDB = {
 									["Operator"] = ">",
 								}, -- [8]
 								{
-									["PrtsAfter"] = 1,
-									["Type"] = "TALENTLEARNED",
 									["Name"] = "22391",
 									["Level"] = 1,
+									["PrtsAfter"] = 1,
+									["Type"] = "TALENTLEARNED",
 								}, -- [9]
 								{
 									["Type"] = "SPELLCD",
@@ -8764,57 +8491,61 @@ TellMeWhenDB = {
 							["CustomTex"] = "5308",
 							["GUID"] = "TMW:icon:1RTC8jAyqkvm",
 						},
-						[84] = {
+						[133] = {
 							["Enabled"] = true,
 							["Type"] = "conditionicon",
+							["ClockGCD"] = true,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Period"] = 0.8,
+									["Animation"] = "ICONALPHAFLASH",
+									["Infinite"] = true,
+									["OnConditionConditions"] = {
+										{
+											["Icon"] = "TMW:icon:1QpP_HqMELD0",
+											["Type"] = "ICON",
+										}, -- [1]
+										["n"] = 1,
+									},
+									["Event"] = "WCSP",
+									["AnimColor"] = "ff000000",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["Name"] = "403",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
-										[2] = "3",
+										"", -- [1]
+										"", -- [2]
 									},
 								},
 							},
 							["FakeHidden"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "ICON",
-									["Icon"] = "TMW:icon:1RGdpp24C0VS",
+									["Type"] = "COUNTER",
+									["Name"] = "target_toggle",
 									["Level"] = 1,
 								}, -- [1]
 								{
-									["Type"] = "ICON",
-									["Icon"] = "TMW:icon:1RZ8uyGIHkyU",
+									["PrtsBefore"] = 1,
+									["Type"] = "EXISTS",
 									["Level"] = 1,
+									["Unit"] = "target",
 								}, -- [2]
 								{
-									["Type"] = "ICON",
-									["Icon"] = "TMW:icon:1Rg1PA0lcPyA",
-									["Level"] = 1,
+									["Type"] = "REACT",
+									["AndOr"] = "OR",
+									["Level"] = 2,
+									["PrtsAfter"] = 1,
+									["Unit"] = "target",
 								}, -- [3]
-								{
-									["Type"] = "ICON",
-									["Icon"] = "TMW:icon:1RGdpp2C6tbD",
-									["Level"] = 1,
-								}, -- [4]
-								{
-									["Type"] = "ICON",
-									["Icon"] = "TMW:icon:1RTBzFiJhwQj",
-									["Level"] = 1,
-								}, -- [5]
-								{
-									["Type"] = "ICON",
-									["Icon"] = "TMW:icon:1RGdpp2Rvc8H",
-									["Level"] = 1,
-								}, -- [6]
-								{
-									["Type"] = "ICON",
-									["Icon"] = "TMW:icon:1RGe00HwCayk",
-									["Level"] = 1,
-								}, -- [7]
-								["n"] = 7,
+								["n"] = 3,
 							},
-							["CustomTex"] = "12294",
-							["GUID"] = "TMW:icon:1RTC8jAvrtK1",
+							["CustomTex"] = "163446",
+							["GUID"] = "TMW:icon:1QpP_HqMELD0",
 						},
 						[122] = {
 							["GUID"] = "TMW:icon:1T3cIasRc1aj",
@@ -8968,16 +8699,36 @@ TellMeWhenDB = {
 							["CustomTex"] = "NONE",
 							["FakeHidden"] = true,
 						},
-						[136] = {
+						[101] = {
 							["Enabled"] = true,
-							["ShowTimer"] = true,
+							["Type"] = "conditionicon",
+							["Events"] = {
+								{
+									["Type"] = "Counter",
+									["CounterAmt"] = 0,
+									["CounterOperation"] = "=",
+									["OnConditionConditions"] = {
+										{
+											["Icon"] = "TMW:icon:1RYjPWe1zjh4",
+											["Type"] = "ICON",
+										}, -- [1]
+										["n"] = 1,
+									},
+									["Event"] = "WCSP",
+									["Counter"] = "arms_bs",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										[2] = "On",
+									},
+								},
+							},
 							["FakeHidden"] = true,
-							["OnlyMine"] = true,
-							["Name"] = "46924; 227847",
-							["Type"] = "buff",
-							["DurationMin"] = 1,
-							["DurationMinEnabled"] = true,
-							["GUID"] = "TMW:icon:1RL=eAD8Kmw0",
+							["CustomTex"] = "46924",
+							["GUID"] = "TMW:icon:1RYjPWe1zjh4",
 						},
 						[103] = {
 							["Enabled"] = true,
@@ -9147,61 +8898,57 @@ TellMeWhenDB = {
 							["CustomTex"] = "12294",
 							["GUID"] = "TMW:icon:1RTD2m1wLgWu",
 						},
-						[133] = {
+						[84] = {
 							["Enabled"] = true,
 							["Type"] = "conditionicon",
-							["ClockGCD"] = true,
-							["Name"] = "403",
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Period"] = 0.8,
-									["Animation"] = "ICONALPHAFLASH",
-									["Infinite"] = true,
-									["AnimColor"] = "ff000000",
-									["Event"] = "WCSP",
-									["OnConditionConditions"] = {
-										{
-											["Icon"] = "TMW:icon:1QpP_HqMELD0",
-											["Type"] = "ICON",
-										}, -- [1]
-										["n"] = 1,
-									},
-								}, -- [1]
-								["n"] = 1,
-							},
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
-										"", -- [1]
-										"", -- [2]
+										[2] = "3",
 									},
 								},
 							},
 							["FakeHidden"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "COUNTER",
-									["Name"] = "target_toggle",
+									["Type"] = "ICON",
+									["Icon"] = "TMW:icon:1RGdpp24C0VS",
 									["Level"] = 1,
 								}, -- [1]
 								{
-									["PrtsBefore"] = 1,
-									["Type"] = "EXISTS",
+									["Type"] = "ICON",
+									["Icon"] = "TMW:icon:1RZ8uyGIHkyU",
 									["Level"] = 1,
-									["Unit"] = "target",
 								}, -- [2]
 								{
-									["Type"] = "REACT",
-									["AndOr"] = "OR",
-									["Level"] = 2,
-									["PrtsAfter"] = 1,
-									["Unit"] = "target",
+									["Type"] = "ICON",
+									["Icon"] = "TMW:icon:1Rg1PA0lcPyA",
+									["Level"] = 1,
 								}, -- [3]
-								["n"] = 3,
+								{
+									["Type"] = "ICON",
+									["Icon"] = "TMW:icon:1RGdpp2C6tbD",
+									["Level"] = 1,
+								}, -- [4]
+								{
+									["Type"] = "ICON",
+									["Icon"] = "TMW:icon:1RTBzFiJhwQj",
+									["Level"] = 1,
+								}, -- [5]
+								{
+									["Type"] = "ICON",
+									["Icon"] = "TMW:icon:1RGdpp2Rvc8H",
+									["Level"] = 1,
+								}, -- [6]
+								{
+									["Type"] = "ICON",
+									["Icon"] = "TMW:icon:1RGe00HwCayk",
+									["Level"] = 1,
+								}, -- [7]
+								["n"] = 7,
 							},
-							["CustomTex"] = "163446",
-							["GUID"] = "TMW:icon:1QpP_HqMELD0",
+							["CustomTex"] = "12294",
+							["GUID"] = "TMW:icon:1RTC8jAvrtK1",
 						},
 						[86] = {
 							["Enabled"] = true,
@@ -9669,36 +9416,16 @@ TellMeWhenDB = {
 							["CustomTex"] = "12294",
 							["GUID"] = "TMW:icon:1RTD2ohayX3V",
 						},
-						[101] = {
+						[136] = {
 							["Enabled"] = true,
-							["Type"] = "conditionicon",
-							["Events"] = {
-								{
-									["Type"] = "Counter",
-									["CounterAmt"] = 0,
-									["CounterOperation"] = "=",
-									["OnConditionConditions"] = {
-										{
-											["Icon"] = "TMW:icon:1RYjPWe1zjh4",
-											["Type"] = "ICON",
-										}, -- [1]
-										["n"] = 1,
-									},
-									["Event"] = "WCSP",
-									["Counter"] = "arms_bs",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										[2] = "On",
-									},
-								},
-							},
+							["ShowTimer"] = true,
 							["FakeHidden"] = true,
-							["CustomTex"] = "46924",
-							["GUID"] = "TMW:icon:1RYjPWe1zjh4",
+							["OnlyMine"] = true,
+							["Name"] = "46924; 227847",
+							["Type"] = "buff",
+							["DurationMin"] = 1,
+							["DurationMinEnabled"] = true,
+							["GUID"] = "TMW:icon:1RL=eAD8Kmw0",
 						},
 					},
 					["Name"] = "Arms Profile",
@@ -9782,6 +9509,7 @@ TellMeWhenDB = {
 				}, -- [2]
 				{
 					["BackdropColor"] = "ff000000",
+					["Columns"] = 1,
 					["Point"] = {
 						["y"] = -57.32825844569,
 						["relativeTo"] = "TMW:group:1Ov1GPZDfFXX",
@@ -9789,7 +9517,6 @@ TellMeWhenDB = {
 						["relativePoint"] = "TOP",
 						["x"] = 0.00032635226234065,
 					},
-					["Columns"] = 1,
 					["View"] = "bar",
 					["Scale"] = 0.954276204109192,
 					["Rows"] = 4,
@@ -9970,8 +9697,8 @@ TellMeWhenDB = {
 							},
 							["BackdropColor"] = "ffff6500",
 							["BackdropColor_Enable"] = true,
-							["TimerBar_EnableColors"] = true,
 							["TimerBar_CompleteColor"] = "0000ff00",
+							["TimerBar_EnableColors"] = true,
 						}, -- [4]
 						{
 							["BackdropColor"] = "ff402200",
@@ -10113,6 +9840,7 @@ TellMeWhenDB = {
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1Ov1GPZDfFXX",
+					["Columns"] = 1,
 					["Point"] = {
 						["y"] = -53.132709187559,
 						["relativeTo"] = "TMW:group:1Qogrdv2HV3Z",
@@ -10120,7 +9848,6 @@ TellMeWhenDB = {
 						["relativePoint"] = "TOP",
 						["x"] = 0.0370833462401805,
 					},
-					["Name"] = "Main Rotation (Meta)",
 					["Icons"] = {
 						{
 							["Enabled"] = true,
@@ -10235,7 +9962,7 @@ TellMeWhenDB = {
 						[72] = false,
 						[73] = false,
 					},
-					["Columns"] = 1,
+					["Name"] = "Main Rotation (Meta)",
 				}, -- [4]
 				{
 					["GUID"] = "TMW:group:1QvCPR5qcfPC",
@@ -10281,8 +10008,8 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1QvCRK1mfvhk",
 							["ShowTimer"] = true,
 							["Enabled"] = true,
-							["Name"] = "6552",
 							["ShowTimerText"] = true,
+							["Name"] = "6552",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
@@ -10531,7 +10258,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "conditionicon",
 							["BarDisplay_Reverse"] = true,
-							["BarDisplay_Invert"] = true,
+							["TimerBar_EnableColors"] = true,
 							["ConditionDur"] = 5,
 							["SettingsPerView"] = {
 								["bar"] = {
@@ -10542,7 +10269,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["TimerBar_EnableColors"] = true,
+							["BarDisplay_Invert"] = true,
 							["Conditions"] = {
 								{
 									["Icon"] = "TMW:icon:1T1lwuRfZ3C7",
@@ -10605,17 +10332,17 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "Animations",
-									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 									["Animation"] = "ICONFLASH",
+									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 									["OnlyShown"] = true,
-									["AnimColor"] = "ff00fff1",
-									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
+									["Event"] = "WCSP",
+									["AnimColor"] = "ff00fff1",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -10656,17 +10383,17 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "Animations",
-									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 									["Animation"] = "ICONFLASH",
+									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 									["OnlyShown"] = true,
-									["AnimColor"] = "ff00fff1",
-									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
+									["Event"] = "WCSP",
+									["AnimColor"] = "ff00fff1",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -10707,17 +10434,17 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "Animations",
-									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 									["Animation"] = "ICONFLASH",
+									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 									["OnlyShown"] = true,
-									["AnimColor"] = "ff00fff1",
-									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
+									["Event"] = "WCSP",
+									["AnimColor"] = "ff00fff1",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -10767,7 +10494,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["BarDisplay_Reverse"] = true,
+							["BarDisplay_Invert"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "UNITSPEC",
@@ -10777,8 +10504,8 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
+							["BarDisplay_Reverse"] = true,
 							["CustomTex"] = "12294",
-							["BarDisplay_Invert"] = true,
 						}, -- [7]
 						{
 							["Enabled"] = true,
@@ -10809,14 +10536,14 @@ TellMeWhenDB = {
 									["Type"] = "Animations",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 									["Animation"] = "ICONFLASH",
-									["AnimColor"] = "ff00fff1",
-									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
+									["Event"] = "WCSP",
+									["AnimColor"] = "ff00fff1",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -10873,14 +10600,14 @@ TellMeWhenDB = {
 									["Type"] = "Animations",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 									["Animation"] = "ICONFLASH",
-									["AnimColor"] = "ff00fff1",
-									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
+									["Event"] = "WCSP",
+									["AnimColor"] = "ff00fff1",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -10936,14 +10663,14 @@ TellMeWhenDB = {
 									["Type"] = "Animations",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 									["Animation"] = "ICONFLASH",
-									["AnimColor"] = "ff00fff1",
-									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
+									["Event"] = "WCSP",
+									["AnimColor"] = "ff00fff1",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -10995,14 +10722,14 @@ TellMeWhenDB = {
 									["Type"] = "Animations",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 									["Animation"] = "ICONFLASH",
-									["AnimColor"] = "ff00fff1",
-									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
+									["Event"] = "WCSP",
+									["AnimColor"] = "ff00fff1",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -11228,11 +10955,11 @@ TellMeWhenDB = {
 						{
 							["GUID"] = "TMW:icon:1T1lwuRfZ3C7",
 							["Type"] = "conditionicon",
-							["ShowTimerText"] = true,
+							["ConditionDur"] = 5,
 							["CustomTex"] = "Attack",
 							["FakeHidden"] = true,
 							["OnlyIfCounting"] = true,
-							["ConditionDur"] = 5,
+							["ShowTimerText"] = true,
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "bar1",
@@ -11277,10 +11004,10 @@ TellMeWhenDB = {
 							},
 							["Conditions"] = {
 								{
-									["AndOr"] = "OR",
-									["Level"] = 1,
-									["Name"] = "menu_open_c",
 									["Type"] = "COUNTER",
+									["AndOr"] = "OR",
+									["Name"] = "menu_open_c",
+									["Level"] = 1,
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -11750,3416 +11477,651 @@ TellMeWhenDB = {
 			["WarnInvalids"] = false,
 		},
 		["Hunter"] = {
-			["ColorMSQ"] = false,
-			["OnlyMSQ"] = false,
 			["Version"] = 91200,
 			["NumGroups"] = 3,
-			["TextureName"] = "Blizzard",
-			["DrawEdge"] = false,
-			["HideBlizzCDBling"] = true,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TWYPj24VzCn",
-					["Strata"] = "MEDIUM",
 					["Point"] = {
 						["y"] = -20,
-						["relativeTo"] = "UIParent",
-						["point"] = "CENTER",
-						["relativePoint"] = "CENTER",
 						["x"] = -230,
 					},
 					["Scale"] = 1.5,
-					["Rows"] = 1,
-					["TimerBar_CompleteColor"] = "ff00ff00",
 					["TextureName"] = "Details Flat",
-					["Role"] = 7,
-					["OnlyInCombat"] = false,
-					["TimerBar_StartColor"] = "ffff0000",
-					["Locked"] = false,
-					["Level"] = 10,
-					["EnabledSpecs"] = {
-					},
-					["Controlled"] = false,
-					["Enabled"] = true,
-					["TimerBar_EnableColors"] = false,
 					["Columns"] = 1,
-					["ShrinkGroup"] = false,
-					["BackdropColor"] = "7f333333",
-					["BackdropColor_Enable"] = false,
 					["Icons"] = {
 						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
 							["Type"] = "meta",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
 							["Icons"] = {
 								"TMW:icon:1VjwkIslWpyf", -- [1]
 								"TMW:icon:1VjwkIsn7fZp", -- [2]
 							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["BackdropColor"] = "7f333333",
 							["Enabled"] = true,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["GCDAsUnusable"] = false,
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["HideIfNoUnits"] = false,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ICDType"] = "aura",
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["DurationMaxEnabled"] = false,
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["Stealable"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["ValueMax"] = 0,
-							["TimerBar_EnableColors"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["SourceUnit"] = "",
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["ValueMinEnabled"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["StackMinEnabled"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["ConditionDur"] = 0,
-							["StackMaxEnabled"] = false,
-							["DRDuration"] = 18,
-							["NoPocketwatch"] = false,
-							["OnlyIfNotCounting"] = false,
-							["DurationMax"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
 						}, -- [1]
-					},
-					["SortPriorities"] = {
-						{
-							["Method"] = "id",
-							["Order"] = 1,
-						}, -- [1]
-					},
-					["LayoutDirection"] = 1,
-					["EnabledProfiles"] = {
 					},
 					["Name"] = "Other",
-					["SettingsPerView"] = {
-						["barv"] = {
-							["SpacingY"] = 0,
-							["Flip"] = false,
-							["SpacingX"] = 0,
-							["BorderBar"] = 0,
-							["SizeX"] = 20,
-							["SizeY"] = 100,
-							["TextLayout"] = "bar2",
-							["BorderColor"] = "ff000000",
-							["Padding"] = 0,
-							["Icon"] = true,
-							["BorderIcon"] = 0,
-						},
-						["icon"] = {
-							["SpacingY"] = 0,
-							["TextLayout"] = "icon1",
-							["BorderIcon"] = 0,
-							["SpacingX"] = 0,
-							["BorderColor"] = "ff000000",
-						},
-						["bar"] = {
-							["SpacingY"] = 0,
-							["Flip"] = false,
-							["SpacingX"] = 0,
-							["BorderBar"] = 0,
-							["SizeX"] = 100,
-							["SizeY"] = 20,
-							["TextLayout"] = "bar1",
-							["BorderColor"] = "ff000000",
-							["Padding"] = 0,
-							["Icon"] = true,
-							["BorderIcon"] = 0,
-						},
-					},
-					["Alpha"] = 1,
-					["Conditions"] = {
-						["n"] = 0,
-					},
-					["View"] = "icon",
-					["TimerBar_MiddleColor"] = "ffffff00",
 				}, -- [1]
 				{
-					["View"] = "icon",
-					["Strata"] = "MEDIUM",
 					["Point"] = {
 						["y"] = -5,
-						["relativeTo"] = "UIParent",
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
-						["x"] = 0,
 					},
 					["Scale"] = 1,
-					["Rows"] = 1,
-					["TimerBar_CompleteColor"] = "ff00ff00",
-					["TextureName"] = "",
-					["Role"] = 7,
-					["OnlyInCombat"] = false,
-					["TimerBar_StartColor"] = "ffff0000",
 					["Locked"] = true,
-					["Level"] = 10,
-					["EnabledSpecs"] = {
-					},
-					["Controlled"] = false,
-					["Enabled"] = true,
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
 					["Columns"] = 20,
-					["ShrinkGroup"] = false,
-					["BackdropColor"] = "7f333333",
-					["BackdropColor_Enable"] = false,
 					["Alpha"] = 0,
-					["SortPriorities"] = {
-						{
-							["Method"] = "id",
-							["Order"] = 1,
-						}, -- [1]
-					},
-					["LayoutDirection"] = 1,
-					["EnabledProfiles"] = {
-					},
 					["Name"] = "Hunter Spells",
-					["SettingsPerView"] = {
-						["barv"] = {
-							["SpacingY"] = 0,
-							["Flip"] = false,
-							["SpacingX"] = 0,
-							["BorderBar"] = 0,
-							["SizeX"] = 20,
-							["SizeY"] = 100,
-							["TextLayout"] = "bar2",
-							["BorderColor"] = "ff000000",
-							["Padding"] = 0,
-							["Icon"] = true,
-							["BorderIcon"] = 0,
-						},
-						["icon"] = {
-							["SpacingY"] = 0,
-							["TextLayout"] = "icon1",
-							["BorderIcon"] = 0,
-							["SpacingX"] = 0,
-							["BorderColor"] = "ff000000",
-						},
-						["bar"] = {
-							["SpacingY"] = 0,
-							["Flip"] = false,
-							["SpacingX"] = 0,
-							["BorderBar"] = 0,
-							["SizeX"] = 100,
-							["SizeY"] = 20,
-							["TextLayout"] = "bar1",
-							["BorderColor"] = "ff000000",
-							["Padding"] = 0,
-							["Icon"] = true,
-							["BorderIcon"] = 0,
-						},
-					},
-					["TimerBar_EnableColors"] = false,
-					["Conditions"] = {
-						["n"] = 0,
-					},
 					["Icons"] = {
 						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
-							["ValueFragments"] = false,
 							["OnlyMine"] = true,
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
 							["Type"] = "buff",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["HideIfNoUnits"] = false,
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["OnlyIfNotCounting"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
 							["Name"] = "Serpent Sting",
-							["UnConditionDur"] = 0,
-							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
-							["BackdropColor"] = "7f333333",
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["DontRefresh"] = false,
-							["DRDuration"] = 18,
-							["ShowTimerText"] = false,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["GCDAsUnusable"] = false,
-							["DestUnit"] = "",
-							["BackdropColor_Enable"] = false,
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["CLEUEvents"] = {
-							},
-							["BarDisplay_FakeMax"] = 0,
-							["BarDisplay_Reverse"] = false,
-							["ICDType"] = "aura",
-							["ValueMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-									},
-								},
-							},
-							["UnConditionDurEnabled"] = false,
-							["TimerBar_EnableColors"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 0,
-									["Texture"] = "",
-								}, -- [1]
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-								[102] = {
-									["Color"] = "ffffffff",
-									["Alpha"] = 0,
-									["Texture"] = "",
-								},
-							},
-							["SourceUnit"] = "",
-							["InvertTimer"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["PBarOffs"] = 0,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["ValueMinEnabled"] = false,
-							["Stealable"] = false,
-							["StackMinEnabled"] = false,
-							["ConditionDur"] = 0,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["DurationMaxEnabled"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["DurationMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ManaCheck"] = false,
-							["NoPocketwatch"] = false,
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "MANA_ABS",
-									["Checked"] = false,
-									["Name2"] = "",
-									["PrtsAfter"] = 0,
 									["Operator"] = ">",
-									["Unit"] = "player",
-									["AndOr"] = "AND",
-									["Name"] = "",
-									["BitFlags"] = 0,
-									["PrtsBefore"] = 0,
 									["Level"] = 100,
-									["Icon"] = "",
-									["Checked2"] = false,
 								}, -- [1]
 								{
 									["Type"] = "LIBRANGECHECK",
-									["Checked"] = false,
-									["Name2"] = "",
-									["PrtsAfter"] = 0,
 									["Unit"] = "target",
 									["Operator"] = "<=",
-									["AndOr"] = "AND",
-									["Name"] = "",
-									["BitFlags"] = 0,
-									["PrtsBefore"] = 0,
 									["Level"] = 35,
-									["Icon"] = "",
-									["Checked2"] = false,
 								}, -- [2]
-								["n"] = 2,
+								{
+									["Type"] = "CREATURETYPE",
+									["Unit"] = "target",
+									["Name"] = "Elemental",
+									["Level"] = 1,
+								}, -- [3]
+								["n"] = 3,
 							},
-							["DurationMax"] = 0,
-							["OnlyInBags"] = false,
-							["Enabled"] = true,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [1]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HARMFUL",
-							["Unit"] = "target",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "buff",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyIfNotCounting"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["ShowTimerText"] = true,
-							["UnConditionDur"] = 0,
-							["BackdropColor"] = "7f333333",
-							["Name"] = "Hunter's Mark",
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["OnlyInBags"] = false,
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["HideIfNoUnits"] = false,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["GCDAsUnusable"] = false,
-							["DestUnit"] = "",
-							["BackdropColor_Enable"] = false,
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["DurationMaxEnabled"] = false,
-							["BarDisplay_FakeMax"] = 0,
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "TMW:icon:1TeVAjjavXC6",
-							["ValueMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-									},
-								},
-							},
-							["UnConditionDurEnabled"] = false,
-							["TimerBar_EnableColors"] = false,
-							["CustomTex"] = "",
+							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
 							["States"] = {
 								{
-									["Color"] = "ffffffff",
 									["Alpha"] = 0,
-									["Texture"] = "",
 								}, -- [1]
 								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 0.15,
-									["Texture"] = "",
+									["Alpha"] = 1,
 								}, -- [2]
+							},
+						}, -- [1]
+						{
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["Name"] = "Hunter's Mark",
+							["GUID"] = "TMW:icon:1TeVAjjavXC6",
+							["States"] = {
 								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
+									["Alpha"] = 0,
+								}, -- [1]
 								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
+									["Alpha"] = 0.15,
+								}, -- [2]
 							},
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["InvertTimer"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["ValueMinEnabled"] = false,
-							["Stealable"] = false,
-							["StackMinEnabled"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["ConditionDur"] = 0,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["ManaCheck"] = false,
-							["StackMaxEnabled"] = false,
-							["DRDuration"] = 18,
-							["NoPocketwatch"] = false,
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMax"] = 0,
-							["DurationMinEnabled"] = false,
 							["Enabled"] = true,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
 						}, -- [2]
 						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
 							["Type"] = "cooldown",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["HideIfNoUnits"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
 							["Name"] = "Arcane Shot",
-							["UnConditionDur"] = 0,
-							["BackdropColor"] = "7f333333",
 							["Enabled"] = true,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["OnlyIfNotCounting"] = false,
 							["Conditions"] = {
 								{
 									["Type"] = "MANA_ABS",
-									["Checked"] = false,
-									["Name2"] = "",
-									["PrtsAfter"] = 0,
 									["Operator"] = ">",
-									["Unit"] = "player",
-									["AndOr"] = "AND",
-									["Name"] = "",
-									["BitFlags"] = 0,
-									["PrtsBefore"] = 0,
 									["Level"] = 100,
-									["Icon"] = "",
-									["Checked2"] = false,
 								}, -- [1]
 								["n"] = 1,
 							},
-							["ShowTimerText"] = false,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["GCDAsUnusable"] = false,
-							["DestUnit"] = "",
-							["BackdropColor_Enable"] = false,
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["ConditionDur"] = 0,
-							["BarDisplay_FakeMax"] = 0,
-							["BarDisplay_Reverse"] = false,
 							["GUID"] = "TMW:icon:1V6lsULwY3_Y",
-							["ValueMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-									},
-								},
-							},
-							["UnConditionDurEnabled"] = false,
-							["TimerBar_EnableColors"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
 							["RangeCheck"] = true,
-							["InvertTimer"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["ValueMinEnabled"] = false,
-							["Stealable"] = false,
-							["StackMinEnabled"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["DurationMaxEnabled"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["ManaCheck"] = false,
-							["StackMaxEnabled"] = false,
-							["DRDuration"] = 18,
-							["NoPocketwatch"] = false,
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMax"] = 0,
-							["DontRefresh"] = false,
-							["DurationMinEnabled"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
 						}, -- [3]
 						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
 							["Type"] = "buff",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyIfNotCounting"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
 							["Name"] = "Aspect of the Hawk",
-							["UnConditionDur"] = 0,
 							["GUID"] = "TMW:icon:1V6noP8ARoel",
-							["BackdropColor"] = "7f333333",
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["GCDAsUnusable"] = false,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["ConditionDur"] = 0,
-							["BarDisplay_Reverse"] = false,
-							["BarDisplay_FakeMax"] = 0,
-							["StackMinEnabled"] = false,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-									},
-								},
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMax"] = 0,
-							["CustomTex"] = "",
 							["States"] = {
 								{
-									["Color"] = "ffffffff",
 									["Alpha"] = 0,
-									["Texture"] = "",
 								}, -- [1]
 								{
-									["Color"] = "ffffffff",
 									["Alpha"] = 1,
-									["Texture"] = "",
 								}, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
 							},
-							["TimerBar_EnableColors"] = false,
-							["SourceUnit"] = "",
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["OnlyMine"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["ValueMinEnabled"] = false,
-							["Stealable"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["DurationMaxEnabled"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["ManaCheck"] = false,
-							["StackMaxEnabled"] = false,
-							["OnlyInBags"] = false,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["DurationMinEnabled"] = false,
 							["Enabled"] = true,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
 						}, -- [4]
+						nil, -- [5]
+						nil, -- [6]
+						nil, -- [7]
+						nil, -- [8]
+						nil, -- [9]
+						nil, -- [10]
+						nil, -- [11]
+						nil, -- [12]
+						nil, -- [13]
+						nil, -- [14]
+						nil, -- [15]
+						nil, -- [16]
+						nil, -- [17]
+						nil, -- [18]
 						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ValueMax"] = 0,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["BackdropColor"] = "7f333333",
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMinEnabled"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["Enabled"] = false,
-							["DurationMaxEnabled"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["TimerBar_EnableColors"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["Stealable"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["StackMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ConditionDur"] = 0,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["OnlyIfNotCounting"] = false,
-							["GCDAsUnusable"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [5]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ValueMax"] = 0,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["BackdropColor"] = "7f333333",
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMinEnabled"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["Enabled"] = false,
-							["DurationMaxEnabled"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["TimerBar_EnableColors"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["Stealable"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["StackMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ConditionDur"] = 0,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["OnlyIfNotCounting"] = false,
-							["GCDAsUnusable"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [6]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ValueMax"] = 0,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["BackdropColor"] = "7f333333",
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMinEnabled"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["Enabled"] = false,
-							["DurationMaxEnabled"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["TimerBar_EnableColors"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["Stealable"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["StackMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ConditionDur"] = 0,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["OnlyIfNotCounting"] = false,
-							["GCDAsUnusable"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [7]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ValueMax"] = 0,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["BackdropColor"] = "7f333333",
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMinEnabled"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["Enabled"] = false,
-							["DurationMaxEnabled"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["TimerBar_EnableColors"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["Stealable"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["StackMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ConditionDur"] = 0,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["OnlyIfNotCounting"] = false,
-							["GCDAsUnusable"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [8]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ValueMax"] = 0,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["BackdropColor"] = "7f333333",
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMinEnabled"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["Enabled"] = false,
-							["DurationMaxEnabled"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["TimerBar_EnableColors"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["Stealable"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["StackMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ConditionDur"] = 0,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["OnlyIfNotCounting"] = false,
-							["GCDAsUnusable"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [9]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ValueMax"] = 0,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["BackdropColor"] = "7f333333",
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMinEnabled"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["Enabled"] = false,
-							["DurationMaxEnabled"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["TimerBar_EnableColors"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["Stealable"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["StackMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ConditionDur"] = 0,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["OnlyIfNotCounting"] = false,
-							["GCDAsUnusable"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [10]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ValueMax"] = 0,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["BackdropColor"] = "7f333333",
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMinEnabled"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["Enabled"] = false,
-							["DurationMaxEnabled"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["TimerBar_EnableColors"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["Stealable"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["StackMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ConditionDur"] = 0,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["OnlyIfNotCounting"] = false,
-							["GCDAsUnusable"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [11]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ValueMax"] = 0,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["BackdropColor"] = "7f333333",
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMinEnabled"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["Enabled"] = false,
-							["DurationMaxEnabled"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["TimerBar_EnableColors"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["Stealable"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["StackMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ConditionDur"] = 0,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["OnlyIfNotCounting"] = false,
-							["GCDAsUnusable"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [12]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ValueMax"] = 0,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["BackdropColor"] = "7f333333",
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMinEnabled"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["Enabled"] = false,
-							["DurationMaxEnabled"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["TimerBar_EnableColors"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["Stealable"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["StackMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ConditionDur"] = 0,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["OnlyIfNotCounting"] = false,
-							["GCDAsUnusable"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [13]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ValueMax"] = 0,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["BackdropColor"] = "7f333333",
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMinEnabled"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["Enabled"] = false,
-							["DurationMaxEnabled"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["TimerBar_EnableColors"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["Stealable"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["StackMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ConditionDur"] = 0,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["OnlyIfNotCounting"] = false,
-							["GCDAsUnusable"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [14]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ValueMax"] = 0,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["BackdropColor"] = "7f333333",
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMinEnabled"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["Enabled"] = false,
-							["DurationMaxEnabled"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["TimerBar_EnableColors"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["Stealable"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["StackMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ConditionDur"] = 0,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["OnlyIfNotCounting"] = false,
-							["GCDAsUnusable"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [15]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ValueMax"] = 0,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["BackdropColor"] = "7f333333",
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMinEnabled"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["Enabled"] = false,
-							["DurationMaxEnabled"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["TimerBar_EnableColors"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["Stealable"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["StackMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ConditionDur"] = 0,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["OnlyIfNotCounting"] = false,
-							["GCDAsUnusable"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [16]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ValueMax"] = 0,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["BackdropColor"] = "7f333333",
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMinEnabled"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["Enabled"] = false,
-							["DurationMaxEnabled"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["TimerBar_EnableColors"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["Stealable"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["StackMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ConditionDur"] = 0,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["OnlyIfNotCounting"] = false,
-							["GCDAsUnusable"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [17]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ValueMax"] = 0,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["BackdropColor"] = "7f333333",
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMinEnabled"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["Enabled"] = false,
-							["DurationMaxEnabled"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["TimerBar_EnableColors"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["Stealable"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["StackMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ConditionDur"] = 0,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["OnlyIfNotCounting"] = false,
-							["GCDAsUnusable"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [18]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "pet",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
 							["Type"] = "buff",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyIfNotCounting"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
 							["ShowTimerText"] = true,
-							["UnConditionDur"] = 0,
-							["BackdropColor"] = "7f333333",
 							["Name"] = "Crystal Gaze",
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["GCDAsUnusable"] = false,
-							["DestUnit"] = "",
-							["BackdropColor_Enable"] = false,
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["ConditionDur"] = 0,
-							["BarDisplay_FakeMax"] = 0,
-							["BarDisplay_Reverse"] = false,
 							["GUID"] = "TMW:icon:1VjwkIslWpyf",
-							["ValueMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-									},
-								},
-							},
-							["UnConditionDurEnabled"] = false,
-							["TimerBar_EnableColors"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 0,
-									["Texture"] = "",
-								}, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["InvertTimer"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["ValueMinEnabled"] = false,
-							["Stealable"] = false,
-							["StackMinEnabled"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["DurationMaxEnabled"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["ManaCheck"] = false,
-							["StackMaxEnabled"] = false,
-							["OnlyInBags"] = false,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["DurationMinEnabled"] = false,
 							["Enabled"] = true,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
 						}, -- [19]
 						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
 							["Unit"] = "pet",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
 							["Type"] = "buff",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyIfNotCounting"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
 							["ShowTimerText"] = true,
-							["UnConditionDur"] = 0,
-							["BackdropColor"] = "7f333333",
 							["Name"] = "Frenzy Effect",
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["GCDAsUnusable"] = false,
-							["DestUnit"] = "",
-							["BackdropColor_Enable"] = false,
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["ConditionDur"] = 0,
-							["BarDisplay_FakeMax"] = 0,
-							["BarDisplay_Reverse"] = false,
 							["GUID"] = "TMW:icon:1VjwkIsn7fZp",
-							["ValueMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-									},
-								},
-							},
-							["UnConditionDurEnabled"] = false,
-							["TimerBar_EnableColors"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 0,
-									["Texture"] = "",
-								}, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["InvertTimer"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["ValueMinEnabled"] = false,
-							["Stealable"] = false,
-							["StackMinEnabled"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["DurationMaxEnabled"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["ManaCheck"] = false,
-							["StackMaxEnabled"] = false,
-							["OnlyInBags"] = false,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["DurationMinEnabled"] = false,
 							["Enabled"] = true,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
 						}, -- [20]
 					},
-					["TimerBar_MiddleColor"] = "ffffff00",
 				}, -- [2]
 				{
-					["View"] = "icon",
-					["Strata"] = "MEDIUM",
 					["Point"] = {
 						["y"] = -88,
-						["relativeTo"] = "UIParent",
-						["point"] = "CENTER",
-						["relativePoint"] = "CENTER",
 						["x"] = 4.06901041666667e-05,
 					},
 					["Scale"] = 1.5,
-					["Rows"] = 1,
-					["TimerBar_CompleteColor"] = "ff00ff00",
-					["TextureName"] = "",
-					["Role"] = 7,
-					["Controlled"] = false,
-					["TimerBar_StartColor"] = "ffff0000",
 					["Locked"] = true,
-					["Level"] = 10,
-					["EnabledSpecs"] = {
-					},
 					["OnlyInCombat"] = true,
-					["Enabled"] = true,
-					["ShrinkGroup"] = false,
 					["Columns"] = 3,
-					["Alpha"] = 1,
-					["BackdropColor"] = "7f333333",
-					["BackdropColor_Enable"] = false,
 					["Icons"] = {
 						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
 							["Type"] = "meta",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
 							["Icons"] = {
 								"TMW:icon:1V6noP8ARoel", -- [1]
 								"TMW:icon:1TeVAjjavXC6", -- [2]
 							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["BackdropColor"] = "7f333333",
 							["Enabled"] = true,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["GCDAsUnusable"] = false,
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["HideIfNoUnits"] = false,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ICDType"] = "aura",
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["DurationMaxEnabled"] = false,
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["Stealable"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["ValueMax"] = 0,
-							["TimerBar_EnableColors"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["SourceUnit"] = "",
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["ValueMinEnabled"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["StackMinEnabled"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["ConditionDur"] = 0,
-							["StackMaxEnabled"] = false,
-							["DRDuration"] = 18,
-							["NoPocketwatch"] = false,
-							["OnlyIfNotCounting"] = false,
-							["DurationMax"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
 						}, -- [1]
 						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
 							["Type"] = "meta",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
 							["Icons"] = {
 								"TMW:icon:1TeVAjjXQ0WB", -- [1]
 								"TMW:icon:1V6lsULwY3_Y", -- [2]
 							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["BackdropColor"] = "7f333333",
 							["Enabled"] = true,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["GCDAsUnusable"] = false,
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["HideIfNoUnits"] = false,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ICDType"] = "aura",
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["DurationMaxEnabled"] = false,
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["Stealable"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["ValueMax"] = 0,
-							["TimerBar_EnableColors"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["SourceUnit"] = "",
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["ValueMinEnabled"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["StackMinEnabled"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["ConditionDur"] = 0,
-							["StackMaxEnabled"] = false,
-							["DRDuration"] = 18,
-							["NoPocketwatch"] = false,
-							["OnlyIfNotCounting"] = false,
-							["DurationMax"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
 						}, -- [2]
-						{
-							["ValueMin"] = 0,
-							["ShowTimer"] = false,
-							["BuffOrDebuff"] = "HELPFUL",
-							["Unit"] = "player",
-							["ValueFragments"] = false,
-							["CLEUEvents"] = {
-							},
-							["Sort"] = false,
-							["SourceConditions"] = {
-								["n"] = 0,
-							},
-							["DurationMin"] = 0,
-							["OnlyEquipped"] = false,
-							["Type"] = "",
-							["ValueMaxEnabled"] = false,
-							["IgnoreNomana"] = false,
-							["PowerType"] = -2,
-							["LuaCode"] = "",
-							["DontRefresh"] = false,
-							["ICDType"] = "aura",
-							["OnlyInBags"] = false,
-							["BarDisplay_ClassColor"] = false,
-							["BarDisplay_BarGCD"] = false,
-							["TimerBar_StartColor"] = "ffff0000",
-							["HideUnequipped"] = false,
-							["InvertCBar"] = false,
-							["StackMin"] = 0,
-							["CBarOffs"] = 0,
-							["CLEUDur"] = 5,
-							["SwingTimerSlot"] = "MainHandSlot",
-							["Icons"] = {
-								"", -- [1]
-							},
-							["ShowTTText"] = false,
-							["Name"] = "",
-							["UnConditionDur"] = 0,
-							["ManaCheck"] = false,
-							["DurationMinEnabled"] = false,
-							["ShowTimerTextnoOCC"] = false,
-							["InvertPBar"] = false,
-							["StackMax"] = 0,
-							["FakeHidden"] = false,
-							["StackSort"] = false,
-							["ClockGCD"] = false,
-							["TimerBar_CompleteColor"] = "ff00ff00",
-							["UnitConditions"] = {
-								["n"] = 0,
-							},
-							["Conditions"] = {
-								["n"] = 0,
-							},
-							["DRDuration"] = 18,
-							["CheckNext"] = false,
-							["BarDisplay_Invert"] = false,
-							["ShowTimerText"] = false,
-							["ValueMax"] = 0,
-							["DestUnit"] = "",
-							["OnlySeen"] = false,
-							["ShowPBar"] = false,
-							["BackdropColor_Enable"] = false,
-							["BackdropColor"] = "7f333333",
-							["BarDisplay_Reverse"] = false,
-							["GUID"] = "",
-							["BarDisplay_FakeMax"] = 0,
-							["CooldownCheck"] = false,
-							["Events"] = {
-								["n"] = 0,
-							},
-							["SettingsPerView"] = {
-							},
-							["UnConditionDurEnabled"] = false,
-							["ValueMinEnabled"] = false,
-							["CustomTex"] = "",
-							["States"] = {
-								{
-									["Color"] = "ffffffff",
-									["Alpha"] = 1,
-									["Texture"] = "",
-								}, -- [1]
-								nil, -- [2]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [3]
-								{
-									["Color"] = "ff7f7f7f",
-									["Alpha"] = 0.5,
-									["Texture"] = "",
-								}, -- [4]
-							},
-							["Enabled"] = false,
-							["DurationMaxEnabled"] = false,
-							["TimerBar_MiddleColor"] = "ffffff00",
-							["TotemSlots"] = 255,
-							["RangeCheck"] = false,
-							["TimerBar_EnableColors"] = false,
-							["ShowCBar"] = false,
-							["EnableStacks"] = false,
-							["OnlyIfConditions"] = false,
-							["CheckRefresh"] = true,
-							["SourceUnit"] = "",
-							["OnlyMine"] = false,
-							["InvertTimer"] = false,
-							["PBarOffs"] = 0,
-							["OnlyIfCounting"] = false,
-							["Overlay_BarGCD"] = false,
-							["WpnEnchantType"] = "MainHandSlot",
-							["DestConditions"] = {
-								["n"] = 0,
-							},
-							["DestFlags"] = 4294967295,
-							["Stealable"] = false,
-							["ShowWhenNone"] = false,
-							["CLEUNoRefresh"] = false,
-							["StackMinEnabled"] = false,
-							["StackMaxEnabled"] = false,
-							["ConditionDur"] = 0,
-							["NoPocketwatch"] = false,
-							["HideIfNoUnits"] = false,
-							["DurationMax"] = 0,
-							["OnlyIfNotCounting"] = false,
-							["GCDAsUnusable"] = false,
-							["ConditionDurEnabled"] = false,
-							["SourceFlags"] = 4294967295,
-						}, -- [3]
-					},
-					["SortPriorities"] = {
-						{
-							["Method"] = "id",
-							["Order"] = 1,
-						}, -- [1]
-					},
-					["LayoutDirection"] = 1,
-					["EnabledProfiles"] = {
 					},
 					["Name"] = "Hunter Rotation",
-					["SettingsPerView"] = {
-						["barv"] = {
-							["SpacingY"] = 0,
-							["Flip"] = false,
-							["SpacingX"] = 0,
-							["BorderBar"] = 0,
-							["SizeX"] = 20,
-							["SizeY"] = 100,
-							["TextLayout"] = "bar2",
-							["BorderColor"] = "ff000000",
-							["Padding"] = 0,
-							["Icon"] = true,
-							["BorderIcon"] = 0,
-						},
-						["icon"] = {
-							["SpacingY"] = 0,
-							["TextLayout"] = "icon1",
-							["BorderIcon"] = 0,
-							["SpacingX"] = 0,
-							["BorderColor"] = "ff000000",
-						},
-						["bar"] = {
-							["SpacingY"] = 0,
-							["Flip"] = false,
-							["SpacingX"] = 0,
-							["BorderBar"] = 0,
-							["SizeX"] = 100,
-							["SizeY"] = 20,
-							["TextLayout"] = "bar1",
-							["BorderColor"] = "ff000000",
-							["Padding"] = 0,
-							["Icon"] = true,
-							["BorderIcon"] = 0,
-						},
-					},
-					["TimerBar_EnableColors"] = false,
-					["Conditions"] = {
-						["n"] = 0,
-					},
 					["GUID"] = "TMW:group:1TeVDtajUwqa",
-					["TimerBar_MiddleColor"] = "ffffff00",
 				}, -- [3]
 			},
-			["CodeSnippets"] = {
-				["n"] = 0,
+			["Locked"] = true,
+		},
+		["Klhjakhsgdjh - Golemagg"] = {
+			["Locked"] = true,
+			["Version"] = 86907,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1V9nWrIIEiys",
+				}, -- [1]
+			},
+		},
+		["Mage"] = {
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1TQvxnAfbGyU",
+					["Scale"] = 1,
+					["Name"] = "Spells",
+					["Icons"] = {
+						{
+							["GUID"] = "TMW:icon:1TQv_LtTwAae",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["Name"] = "Dampen Magic",
+							["OnlyMine"] = true,
+							["Enabled"] = true,
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["Name"] = "Mana Shield",
+							["GUID"] = "TMW:icon:1TQv_Ltf40Wl",
+						}, -- [2]
+						{
+							["GUID"] = "TMW:icon:1TQv_Lti1RyX",
+							["Type"] = "cooldown",
+							["Name"] = "Frost Nova",
+							["Enabled"] = true,
+							["CooldownCheck"] = true,
+							["ShowTimerText"] = true,
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 1,
+								}, -- [2]
+							},
+						}, -- [3]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
+							["Name"] = "Blink",
+							["GUID"] = "TMW:icon:1TU=hLnlwyeY",
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 1,
+								}, -- [2]
+							},
+						}, -- [4]
+						{
+							["GUID"] = "TMW:icon:1TWZdpV26rm5",
+							["Type"] = "buff",
+							["Name"] = "Demoralizing Shout",
+							["Unit"] = "target",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Conditions"] = {
+								{
+									["Name"] = "Defensive Stance",
+									["Type"] = "STANCE",
+								}, -- [1]
+								{
+									["Type"] = "RAGE_ABS",
+									["Level"] = 10,
+									["Operator"] = ">=",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["Enabled"] = true,
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 1,
+								}, -- [2]
+							},
+						}, -- [5]
+						{
+							["Enabled"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["BuffOrDebuff"] = "HARMFUL",
+							["GUID"] = "TMW:icon:1TYYu4EDbfSz",
+							["Name"] = "Sunder Armor",
+							["Unit"] = "target",
+						}, -- [6]
+						{
+							["Enabled"] = true,
+							["Type"] = "reactive",
+							["Name"] = "Execute",
+							["Conditions"] = {
+								{
+									["Type"] = "RAGE_ABS",
+									["Level"] = 15,
+									["Operator"] = ">=",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1TZvNvflXM0_",
+						}, -- [7]
+						[20] = {
+							["BuffOrDebuff"] = "HARMFUL",
+							["GUID"] = "TMW:icon:1TWYMfcUzmi6",
+						},
+					},
+					["Locked"] = true,
+					["Columns"] = 20,
+					["Alpha"] = 0,
+					["Point"] = {
+						["y"] = -5,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+				}, -- [1]
+				{
+					["GUID"] = "TMW:group:1TWYSTcQ410f",
+					["Columns"] = 20,
+					["Scale"] = 1,
+					["Alpha"] = 0,
+					["TextureName"] = "Details Flat",
+					["Name"] = "General Buffs/Debbufs",
+					["Locked"] = true,
+					["Point"] = {
+						["y"] = -40,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["Name"] = "Renew",
+							["GUID"] = "TMW:icon:1TWYSTcSCl0z",
+						}, -- [1]
+						{
+							["GUID"] = "TMW:icon:1TZvNvgAkfmq",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
+								},
+							},
+							["Name"] = "Enrage",
+							["Enabled"] = true,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["GUID"] = "TMW:group:1TWYPj24VzCn",
+					["Point"] = {
+						["y"] = -29.2003912925716,
+						["x"] = -209.401206970214,
+					},
+					["Name"] = "BuffTrack",
+					["SettingsPerView"] = {
+						["icon"] = {
+							["SpacingX"] = 3,
+						},
+					},
+					["Scale"] = 1.25,
+					["Columns"] = 6,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1TQv_LtTwAae", -- [1]
+							},
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1TQv_Ltf40Wl", -- [1]
+							},
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1TQv_Lti1RyX", -- [1]
+							},
+						}, -- [3]
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1TU=hLnlwyeY", -- [1]
+							},
+						}, -- [4]
+						nil, -- [5]
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1TWYSTcSCl0z", -- [1]
+							},
+						}, -- [6]
+					},
+					["TextureName"] = "Details Flat",
+				}, -- [3]
 			},
 			["Locked"] = true,
-			["ForceNoBlizzCC"] = false,
-			["SoundChannel"] = "SFX",
-			["WarnInvalids"] = true,
+			["Version"] = 87601,
+			["NumGroups"] = 3,
+			["TextureName"] = "Glamour2",
+		},
+		["Poklopac - Dreadnaught"] = {
+			["Version"] = 91200,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1XmCkCd9kyOx",
+				}, -- [1]
+			},
+		},
+		["Mxym - Golemagg"] = {
+			["Version"] = 86907,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1V9lxa5qigKR",
+				}, -- [1]
+			},
+		},
+		["Jaroslav - Golemagg"] = {
+			["Version"] = 86907,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1VAdQEMGnK_K",
+				}, -- [1]
+			},
+		},
+		["Warlock"] = {
+			["Locked"] = true,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1TWYPj24VzCn",
+					["Point"] = {
+						["y"] = -20,
+						["x"] = -230,
+					},
+					["Name"] = "Other",
+					["Scale"] = 1.5,
+					["Columns"] = 1,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1TZvNvgAkfmq", -- [1]
+								"TMW:icon:1TWYSTcSCl0z", -- [2]
+							},
+						}, -- [1]
+					},
+					["TextureName"] = "Details Flat",
+				}, -- [1]
+				{
+					["GUID"] = "TMW:group:1TWYSTcQ410f",
+					["Columns"] = 20,
+					["Scale"] = 1,
+					["Alpha"] = 0,
+					["TextureName"] = "Details Flat",
+					["Name"] = "General Buffs/Debbufs",
+					["Locked"] = true,
+					["Icons"] = {
+						{
+							["GUID"] = "TMW:icon:1TWYSTcSCl0z",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["BuffOrDebuff"] = "HARMFUL",
+							["Enabled"] = true,
+							["Name"] = "Blood Fury",
+						}, -- [1]
+						{
+							["GUID"] = "TMW:icon:1TZvNvgAkfmq",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
+								},
+							},
+							["Enabled"] = true,
+							["Name"] = "Enrage",
+						}, -- [2]
+					},
+					["Point"] = {
+						["y"] = -40,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+				}, -- [2]
+				{
+					["GUID"] = "TMW:group:1V6krZ0tqss=",
+					["Point"] = {
+						["y"] = -88,
+					},
+					["Scale"] = 1.5,
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1V6ky7UjmQN=", -- [1]
+								"TMW:icon:1V6ky7UreCKN", -- [2]
+								"TMW:icon:1V6ky7Uy=NmE", -- [3]
+							},
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1V6ky7UreCKN", -- [1]
+							},
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1V6ky7Uy=NmE", -- [1]
+							},
+						}, -- [3]
+					},
+					["LayoutDirection"] = 2,
+					["Name"] = "Warlock Rotation",
+					["Locked"] = true,
+					["Columns"] = 1,
+					["OnlyInCombat"] = true,
+				}, -- [3]
+				{
+					["GUID"] = "TMW:group:1V6ky7Uf4nZ5",
+					["Name"] = "Warlock Spells",
+					["Point"] = {
+						["y"] = -5,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+					["Icons"] = {
+						{
+							["GUID"] = "TMW:icon:1V6ky7UjmQN=",
+							["Type"] = "buff",
+							["Name"] = "Immolate",
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 1,
+								}, -- [2]
+							},
+							["BuffOrDebuff"] = "HARMFUL",
+							["OnlyMine"] = true,
+							["Enabled"] = true,
+							["Unit"] = "target",
+						}, -- [1]
+						{
+							["GUID"] = "TMW:icon:1V6ky7UreCKN",
+							["Type"] = "buff",
+							["Name"] = "Corruption",
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 1,
+								}, -- [2]
+							},
+							["BuffOrDebuff"] = "HARMFUL",
+							["OnlyMine"] = true,
+							["Enabled"] = true,
+							["Unit"] = "target",
+						}, -- [2]
+						{
+							["GUID"] = "TMW:icon:1V6ky7Uy=NmE",
+							["Type"] = "buff",
+							["Name"] = "Curse of Agony",
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 1,
+								}, -- [2]
+							},
+							["BuffOrDebuff"] = "HARMFUL",
+							["OnlyMine"] = true,
+							["Enabled"] = true,
+							["Unit"] = "target",
+						}, -- [3]
+					},
+					["Locked"] = true,
+					["Columns"] = 20,
+					["Alpha"] = 0,
+					["Scale"] = 1,
+				}, -- [4]
+			},
+			["NumGroups"] = 4,
+			["Version"] = 86907,
+		},
+		["Battlearm - Hydraxian Waterlords"] = {
+			["Locked"] = true,
+			["Version"] = 87601,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1VflYar6WQqi",
+				}, -- [1]
+			},
+		},
+		["Augustin - Golemagg"] = {
+			["Version"] = 86907,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1VAdMpuRA5RP",
+				}, -- [1]
+			},
+		},
+		["Grgur - Golemagg"] = {
+			["Locked"] = true,
+			["Version"] = 86907,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1VAdPEGP30aT",
+				}, -- [1]
+			},
+		},
+		["Koloman - Golemagg"] = {
+			["Locked"] = true,
+			["Version"] = 86907,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1VGIsVsXYQu0",
+				}, -- [1]
+			},
+		},
+		["Mxyzptlk - Golemagg"] = {
+			["Version"] = 86907,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1V6kp8IkwwPU",
+				}, -- [1]
+			},
 		},
 		["Druid"] = {
 			["Locked"] = true,
+			["Version"] = 91200,
 			["NumGroups"] = 3,
 			["Groups"] = {
 				{
@@ -15181,12 +12143,8 @@ TellMeWhenDB = {
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
-					["Locked"] = true,
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
+					["Scale"] = 1,
+					["Name"] = "Druid Spells",
 					["Icons"] = {
 						{
 							["Enabled"] = true,
@@ -15250,10 +12208,14 @@ TellMeWhenDB = {
 							},
 						}, -- [4]
 					},
-					["Scale"] = 1,
+					["Locked"] = true,
 					["Columns"] = 20,
 					["Alpha"] = 0,
-					["Name"] = "Druid Spells",
+					["Point"] = {
+						["y"] = -5,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
 				}, -- [2]
 				{
 					["GUID"] = "TMW:group:1TeVDtajUwqa",
@@ -15276,20 +12238,197 @@ TellMeWhenDB = {
 					["OnlyInCombat"] = true,
 				}, -- [3]
 			},
-			["Version"] = 91200,
 		},
-		["Augustin - Golemagg"] = {
+		["Antun - Golemagg"] = {
+			["Locked"] = true,
 			["Version"] = 86907,
 			["Groups"] = {
 				{
-					["GUID"] = "TMW:group:1VAdMpuRA5RP",
+					["GUID"] = "TMW:group:1VAdKlotQiIe",
+				}, -- [1]
+			},
+		},
+		["Testxv - Golemagg"] = {
+			["Locked"] = true,
+			["Version"] = 86907,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1VWiCxYSqwKw",
+				}, -- [1]
+			},
+		},
+		["Priest"] = {
+			["Locked"] = true,
+			["Version"] = 91200,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1TWYPj24VzCn",
+					["Columns"] = 1,
+					["Point"] = {
+						["y"] = -20,
+						["x"] = -230,
+					},
+					["Scale"] = 1.5,
+					["Name"] = "Other",
+					["Icons"] = {
+						{
+							["Enabled"] = true,
+							["Type"] = "meta",
+							["Icons"] = {
+								"TMW:icon:1VjwkIsn7fZp", -- [1]
+							},
+						}, -- [1]
+					},
+					["TextureName"] = "Details Flat",
+				}, -- [1]
+				{
+					["GUID"] = "TMW:group:1TeVAjjUoOOh",
+					["Point"] = {
+						["y"] = -5,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+					["Name"] = "Hunter Spells",
+					["Alpha"] = 0,
+					["Scale"] = 1,
+					["Columns"] = 20,
+					["Icons"] = {
+						{
+							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
+							["Type"] = "buff",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
+							["OnlyMine"] = true,
+							["Name"] = "Serpent Sting",
+							["Conditions"] = {
+								{
+									["Type"] = "MANA_ABS",
+									["Level"] = 100,
+									["Operator"] = ">",
+								}, -- [1]
+								{
+									["Operator"] = "<=",
+									["Level"] = 35,
+									["Type"] = "LIBRANGECHECK",
+									["Unit"] = "target",
+								}, -- [2]
+								["n"] = 2,
+							},
+							["Enabled"] = true,
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 1,
+								}, -- [2]
+							},
+						}, -- [1]
+						{
+							["GUID"] = "TMW:icon:1TeVAjjavXC6",
+							["Type"] = "buff",
+							["Name"] = "Hunter's Mark",
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 0.15,
+								}, -- [2]
+							},
+							["BuffOrDebuff"] = "HARMFUL",
+							["Enabled"] = true,
+							["ShowTimerText"] = true,
+							["Unit"] = "target",
+						}, -- [2]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Arcane Shot",
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "MANA_ABS",
+									["Level"] = 100,
+									["Operator"] = ">",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1V6lsULwY3_Y",
+						}, -- [3]
+						{
+							["GUID"] = "TMW:icon:1V6noP8ARoel",
+							["Type"] = "buff",
+							["Name"] = "Aspect of the Hawk",
+							["Enabled"] = true,
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 1,
+								}, -- [2]
+							},
+						}, -- [4]
+						[19] = {
+							["GUID"] = "TMW:icon:1VjwkIslWpyf",
+							["Type"] = "buff",
+							["Name"] = "Crystal Gaze",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Enabled"] = true,
+							["ShowTimerText"] = true,
+							["Unit"] = "pet",
+						},
+						[20] = {
+							["GUID"] = "TMW:icon:1VjwkIsn7fZp",
+							["Type"] = "buff",
+							["Name"] = "Weakened Soul",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Enabled"] = true,
+							["ShowTimerText"] = true,
+						},
+					},
+					["Locked"] = true,
+				}, -- [2]
+				{
+					["GUID"] = "TMW:group:1TeVDtajUwqa",
+					["Name"] = "Hunter Rotation",
+					["Point"] = {
+						["y"] = -88,
+						["x"] = 4.06901041666667e-05,
+					},
+					["Locked"] = true,
+					["Scale"] = 1.5,
+					["Columns"] = 3,
+					["Icons"] = {
+						{
+							["Icons"] = {
+								"TMW:icon:1V6noP8ARoel", -- [1]
+							},
+							["Type"] = "meta",
+						}, -- [1]
+						{
+							["Icons"] = {
+								"TMW:icon:1V6lsULwY3_Y", -- [1]
+							},
+							["Type"] = "meta",
+						}, -- [2]
+					},
+					["OnlyInCombat"] = true,
+				}, -- [3]
+			},
+			["NumGroups"] = 3,
+		},
+		["Pitchwise - Dreadnaught"] = {
+			["Version"] = 91200,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1Xm47LbdEYcq",
 				}, -- [1]
 			},
 		},
 		["Warrior"] = {
 			["Locked"] = true,
-			["NumGroups"] = 5,
-			["Version"] = 91200,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TQuFk14Ix42",
@@ -15335,6 +12474,7 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
+							["DurationMin"] = 15,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -15344,7 +12484,6 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["DurationMinEnabled"] = true,
-							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -15378,10 +12517,14 @@ TellMeWhenDB = {
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TQvxnAfbGyU",
-					["Scale"] = 1,
-					["Name"] = "Warrior Spells",
-					["Alpha"] = 0,
 					["Locked"] = true,
+					["Point"] = {
+						["y"] = -5,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
+					["Alpha"] = 0,
+					["Scale"] = 1,
 					["Columns"] = 20,
 					["Icons"] = {
 						{
@@ -15461,10 +12604,10 @@ TellMeWhenDB = {
 									["Unit"] = "target",
 								}, -- [2]
 								{
-									["PrtsAfter"] = 1,
-									["Type"] = "STANCE",
 									["Name"] = "Defensive Stance",
 									["AndOr"] = "OR",
+									["PrtsAfter"] = 1,
+									["Type"] = "STANCE",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -15612,11 +12755,7 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1TWYMfcUzmi6",
 						},
 					},
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
+					["Name"] = "Warrior Spells",
 				}, -- [2]
 				{
 					["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -15703,642 +12842,8 @@ TellMeWhenDB = {
 					},
 				}, -- [5]
 			},
-		},
-		["Pitchwise - Dreadnaught"] = {
+			["NumGroups"] = 5,
 			["Version"] = 91200,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1Xm47LbdEYcq",
-				}, -- [1]
-			},
-		},
-		["Jaroslav - Golemagg"] = {
-			["Version"] = 86907,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1VAdQEMGnK_K",
-				}, -- [1]
-			},
-		},
-		["Klhjakhsgdjh - Golemagg"] = {
-			["Locked"] = true,
-			["Version"] = 86907,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1V9nWrIIEiys",
-				}, -- [1]
-			},
-		},
-		["Testxv - Golemagg"] = {
-			["Locked"] = true,
-			["Version"] = 86907,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1VWiCxYSqwKw",
-				}, -- [1]
-			},
-		},
-		["Mage"] = {
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1TQvxnAfbGyU",
-					["Locked"] = true,
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
-					["Icons"] = {
-						{
-							["GUID"] = "TMW:icon:1TQv_LtTwAae",
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["Name"] = "Dampen Magic",
-							["OnlyMine"] = true,
-							["Enabled"] = true,
-						}, -- [1]
-						{
-							["Enabled"] = true,
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["Name"] = "Mana Shield",
-							["GUID"] = "TMW:icon:1TQv_Ltf40Wl",
-						}, -- [2]
-						{
-							["GUID"] = "TMW:icon:1TQv_Lti1RyX",
-							["Type"] = "cooldown",
-							["Name"] = "Frost Nova",
-							["Enabled"] = true,
-							["CooldownCheck"] = true,
-							["ShowTimerText"] = true,
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								{
-									["Alpha"] = 1,
-								}, -- [2]
-							},
-						}, -- [3]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["ShowTimerText"] = true,
-							["Name"] = "Blink",
-							["GUID"] = "TMW:icon:1TU=hLnlwyeY",
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								{
-									["Alpha"] = 1,
-								}, -- [2]
-							},
-						}, -- [4]
-						{
-							["GUID"] = "TMW:icon:1TWZdpV26rm5",
-							["Type"] = "buff",
-							["Name"] = "Demoralizing Shout",
-							["Unit"] = "target",
-							["BuffOrDebuff"] = "HARMFUL",
-							["Conditions"] = {
-								{
-									["Name"] = "Defensive Stance",
-									["Type"] = "STANCE",
-								}, -- [1]
-								{
-									["Type"] = "RAGE_ABS",
-									["Level"] = 10,
-									["Operator"] = ">=",
-								}, -- [2]
-								["n"] = 2,
-							},
-							["Enabled"] = true,
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								{
-									["Alpha"] = 1,
-								}, -- [2]
-							},
-						}, -- [5]
-						{
-							["Enabled"] = true,
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["BuffOrDebuff"] = "HARMFUL",
-							["GUID"] = "TMW:icon:1TYYu4EDbfSz",
-							["Name"] = "Sunder Armor",
-							["Unit"] = "target",
-						}, -- [6]
-						{
-							["Enabled"] = true,
-							["Type"] = "reactive",
-							["Name"] = "Execute",
-							["Conditions"] = {
-								{
-									["Type"] = "RAGE_ABS",
-									["Level"] = 15,
-									["Operator"] = ">=",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["GUID"] = "TMW:icon:1TZvNvflXM0_",
-						}, -- [7]
-						[20] = {
-							["BuffOrDebuff"] = "HARMFUL",
-							["GUID"] = "TMW:icon:1TWYMfcUzmi6",
-						},
-					},
-					["Scale"] = 1,
-					["Columns"] = 20,
-					["Alpha"] = 0,
-					["Name"] = "Spells",
-				}, -- [1]
-				{
-					["GUID"] = "TMW:group:1TWYSTcQ410f",
-					["Columns"] = 20,
-					["Scale"] = 1,
-					["Alpha"] = 0,
-					["TextureName"] = "Details Flat",
-					["Name"] = "General Buffs/Debbufs",
-					["Locked"] = true,
-					["Point"] = {
-						["y"] = -40,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["Name"] = "Renew",
-							["GUID"] = "TMW:icon:1TWYSTcSCl0z",
-						}, -- [1]
-						{
-							["GUID"] = "TMW:icon:1TZvNvgAkfmq",
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
-								},
-							},
-							["Name"] = "Enrage",
-							["Enabled"] = true,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["GUID"] = "TMW:group:1TWYPj24VzCn",
-					["Point"] = {
-						["y"] = -29.2003912925716,
-						["x"] = -209.401206970214,
-					},
-					["Name"] = "BuffTrack",
-					["SettingsPerView"] = {
-						["icon"] = {
-							["SpacingX"] = 3,
-						},
-					},
-					["Scale"] = 1.25,
-					["Columns"] = 6,
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1TQv_LtTwAae", -- [1]
-							},
-						}, -- [1]
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1TQv_Ltf40Wl", -- [1]
-							},
-						}, -- [2]
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1TQv_Lti1RyX", -- [1]
-							},
-						}, -- [3]
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1TU=hLnlwyeY", -- [1]
-							},
-						}, -- [4]
-						nil, -- [5]
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1TWYSTcSCl0z", -- [1]
-							},
-						}, -- [6]
-					},
-					["TextureName"] = "Details Flat",
-				}, -- [3]
-			},
-			["Locked"] = true,
-			["Version"] = 87601,
-			["NumGroups"] = 3,
-			["TextureName"] = "Glamour2",
-		},
-		["Grgur - Golemagg"] = {
-			["Locked"] = true,
-			["Version"] = 86907,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1VAdPEGP30aT",
-				}, -- [1]
-			},
-		},
-		["Koloman - Golemagg"] = {
-			["Locked"] = true,
-			["Version"] = 86907,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1VGIsVsXYQu0",
-				}, -- [1]
-			},
-		},
-		["Mxyzptlk - Golemagg"] = {
-			["Version"] = 86907,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1V6kp8IkwwPU",
-				}, -- [1]
-			},
-		},
-		["Warlock"] = {
-			["Locked"] = true,
-			["NumGroups"] = 4,
-			["Version"] = 86907,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1TWYPj24VzCn",
-					["Point"] = {
-						["y"] = -20,
-						["x"] = -230,
-					},
-					["Name"] = "Other",
-					["Scale"] = 1.5,
-					["Columns"] = 1,
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1TZvNvgAkfmq", -- [1]
-								"TMW:icon:1TWYSTcSCl0z", -- [2]
-							},
-						}, -- [1]
-					},
-					["TextureName"] = "Details Flat",
-				}, -- [1]
-				{
-					["GUID"] = "TMW:group:1TWYSTcQ410f",
-					["Columns"] = 20,
-					["Scale"] = 1,
-					["Alpha"] = 0,
-					["TextureName"] = "Details Flat",
-					["Name"] = "General Buffs/Debbufs",
-					["Locked"] = true,
-					["Icons"] = {
-						{
-							["GUID"] = "TMW:icon:1TWYSTcSCl0z",
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["BuffOrDebuff"] = "HARMFUL",
-							["Enabled"] = true,
-							["Name"] = "Blood Fury",
-						}, -- [1]
-						{
-							["GUID"] = "TMW:icon:1TZvNvgAkfmq",
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
-								},
-							},
-							["Enabled"] = true,
-							["Name"] = "Enrage",
-						}, -- [2]
-					},
-					["Point"] = {
-						["y"] = -40,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
-				}, -- [2]
-				{
-					["GUID"] = "TMW:group:1V6krZ0tqss=",
-					["Point"] = {
-						["y"] = -88,
-					},
-					["Scale"] = 1.5,
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1V6ky7UjmQN=", -- [1]
-								"TMW:icon:1V6ky7UreCKN", -- [2]
-								"TMW:icon:1V6ky7Uy=NmE", -- [3]
-							},
-						}, -- [1]
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1V6ky7UreCKN", -- [1]
-							},
-						}, -- [2]
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1V6ky7Uy=NmE", -- [1]
-							},
-						}, -- [3]
-					},
-					["LayoutDirection"] = 2,
-					["Name"] = "Warlock Rotation",
-					["Locked"] = true,
-					["Columns"] = 1,
-					["OnlyInCombat"] = true,
-				}, -- [3]
-				{
-					["GUID"] = "TMW:group:1V6ky7Uf4nZ5",
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
-					["Name"] = "Warlock Spells",
-					["Icons"] = {
-						{
-							["GUID"] = "TMW:icon:1V6ky7UjmQN=",
-							["Type"] = "buff",
-							["Name"] = "Immolate",
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								{
-									["Alpha"] = 1,
-								}, -- [2]
-							},
-							["BuffOrDebuff"] = "HARMFUL",
-							["OnlyMine"] = true,
-							["Enabled"] = true,
-							["Unit"] = "target",
-						}, -- [1]
-						{
-							["GUID"] = "TMW:icon:1V6ky7UreCKN",
-							["Type"] = "buff",
-							["Name"] = "Corruption",
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								{
-									["Alpha"] = 1,
-								}, -- [2]
-							},
-							["BuffOrDebuff"] = "HARMFUL",
-							["OnlyMine"] = true,
-							["Enabled"] = true,
-							["Unit"] = "target",
-						}, -- [2]
-						{
-							["GUID"] = "TMW:icon:1V6ky7Uy=NmE",
-							["Type"] = "buff",
-							["Name"] = "Curse of Agony",
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								{
-									["Alpha"] = 1,
-								}, -- [2]
-							},
-							["BuffOrDebuff"] = "HARMFUL",
-							["OnlyMine"] = true,
-							["Enabled"] = true,
-							["Unit"] = "target",
-						}, -- [3]
-					},
-					["Scale"] = 1,
-					["Columns"] = 20,
-					["Alpha"] = 0,
-					["Locked"] = true,
-				}, -- [4]
-			},
-		},
-		["Antun - Golemagg"] = {
-			["Locked"] = true,
-			["Version"] = 86907,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1VAdKlotQiIe",
-				}, -- [1]
-			},
-		},
-		["Battlearm - Hydraxian Waterlords"] = {
-			["Locked"] = true,
-			["Version"] = 87601,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1VflYar6WQqi",
-				}, -- [1]
-			},
-		},
-		["Priest"] = {
-			["Locked"] = true,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1TWYPj24VzCn",
-					["Columns"] = 1,
-					["Point"] = {
-						["y"] = -20,
-						["x"] = -230,
-					},
-					["Scale"] = 1.5,
-					["Name"] = "Other",
-					["Icons"] = {
-						{
-							["Enabled"] = true,
-							["Type"] = "meta",
-							["Icons"] = {
-								"TMW:icon:1VjwkIsn7fZp", -- [1]
-							},
-						}, -- [1]
-					},
-					["TextureName"] = "Details Flat",
-				}, -- [1]
-				{
-					["GUID"] = "TMW:group:1TeVAjjUoOOh",
-					["Name"] = "Hunter Spells",
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
-					["Alpha"] = 0,
-					["Locked"] = true,
-					["Columns"] = 20,
-					["Icons"] = {
-						{
-							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
-							["Type"] = "buff",
-							["BuffOrDebuff"] = "HARMFUL",
-							["Unit"] = "target",
-							["OnlyMine"] = true,
-							["Name"] = "Serpent Sting",
-							["Conditions"] = {
-								{
-									["Type"] = "MANA_ABS",
-									["Level"] = 100,
-									["Operator"] = ">",
-								}, -- [1]
-								{
-									["Operator"] = "<=",
-									["Level"] = 35,
-									["Type"] = "LIBRANGECHECK",
-									["Unit"] = "target",
-								}, -- [2]
-								["n"] = 2,
-							},
-							["Enabled"] = true,
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								{
-									["Alpha"] = 1,
-								}, -- [2]
-							},
-						}, -- [1]
-						{
-							["GUID"] = "TMW:icon:1TeVAjjavXC6",
-							["Type"] = "buff",
-							["Name"] = "Hunter's Mark",
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								{
-									["Alpha"] = 0.15,
-								}, -- [2]
-							},
-							["BuffOrDebuff"] = "HARMFUL",
-							["Enabled"] = true,
-							["ShowTimerText"] = true,
-							["Unit"] = "target",
-						}, -- [2]
-						{
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Arcane Shot",
-							["RangeCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "MANA_ABS",
-									["Level"] = 100,
-									["Operator"] = ">",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["GUID"] = "TMW:icon:1V6lsULwY3_Y",
-						}, -- [3]
-						{
-							["GUID"] = "TMW:icon:1V6noP8ARoel",
-							["Type"] = "buff",
-							["Name"] = "Aspect of the Hawk",
-							["Enabled"] = true,
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								{
-									["Alpha"] = 1,
-								}, -- [2]
-							},
-						}, -- [4]
-						[19] = {
-							["GUID"] = "TMW:icon:1VjwkIslWpyf",
-							["Type"] = "buff",
-							["Name"] = "Crystal Gaze",
-							["BuffOrDebuff"] = "HARMFUL",
-							["Enabled"] = true,
-							["ShowTimerText"] = true,
-							["Unit"] = "pet",
-						},
-						[20] = {
-							["GUID"] = "TMW:icon:1VjwkIsn7fZp",
-							["Type"] = "buff",
-							["Name"] = "Weakened Soul",
-							["BuffOrDebuff"] = "HARMFUL",
-							["Enabled"] = true,
-							["ShowTimerText"] = true,
-						},
-					},
-					["Scale"] = 1,
-				}, -- [2]
-				{
-					["GUID"] = "TMW:group:1TeVDtajUwqa",
-					["Name"] = "Hunter Rotation",
-					["Point"] = {
-						["y"] = -88,
-						["x"] = 4.06901041666667e-05,
-					},
-					["Locked"] = true,
-					["Scale"] = 1.5,
-					["Columns"] = 3,
-					["Icons"] = {
-						{
-							["Icons"] = {
-								"TMW:icon:1V6noP8ARoel", -- [1]
-							},
-							["Type"] = "meta",
-						}, -- [1]
-						{
-							["Icons"] = {
-								"TMW:icon:1V6lsULwY3_Y", -- [1]
-							},
-							["Type"] = "meta",
-						}, -- [2]
-					},
-					["OnlyInCombat"] = true,
-				}, -- [3]
-			},
-			["NumGroups"] = 3,
-			["Version"] = 91200,
-		},
-		["Konac - Dreadnaught"] = {
-			["Version"] = 91200,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1Xql=ZXCq2=U",
-				}, -- [1]
-			},
-		},
-		["Poklopac - Dreadnaught"] = {
-			["Version"] = 91200,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1XmCkCd9kyOx",
-				}, -- [1]
-			},
 		},
 		["Moolatz - Dreadnaught"] = {
 			["Version"] = 91200,

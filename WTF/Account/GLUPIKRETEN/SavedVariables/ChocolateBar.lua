@@ -51,24 +51,31 @@ ChocolateBarDB = {
 	["profiles"] = {
 		["Default"] = {
 			["locked"] = false,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
-			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
+			["forceColor"] = false,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["width"] = 147.000030517578,
+					["autohide"] = false,
+					["barOffy"] = -207.589706420898,
+					["hideBarInCombat"] = false,
+					["barOffx"] = -31.9219512939453,
+				},
+				["ChocolateBar2"] = {
+					["barOffy"] = -256.666748046875,
+					["barPoint"] = "TOPRIGHT",
+					["barName"] = "ChocolateBar2",
+					["align"] = "custom",
+					["barOffx"] = -88.3325424194336,
+					["index"] = 1,
+					["width"] = 147,
 				},
 			},
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -288,11 +295,15 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar2",
 					["customLabel"] = "B",
 				},
-				["TownsfolkTracker"] = {
-					["enabled"] = false,
+				["LFGBulletinBoard"] = {
+					["index"] = 3,
 					["align"] = "right",
-					["showText"] = false,
+					["isNew"] = false,
+					["showLabel"] = true,
+					["showIcon"] = false,
 					["barName"] = "ChocolateBar1",
+					["showText"] = false,
+					["customLabel"] = "LFG",
 				},
 				["TellMeWhen"] = {
 					["enabled"] = false,
@@ -309,15 +320,11 @@ ChocolateBarDB = {
 					["index"] = 6,
 					["barName"] = "ChocolateBar1",
 				},
-				["LFGBulletinBoard"] = {
-					["index"] = 3,
+				["TownsfolkTracker"] = {
+					["enabled"] = false,
 					["align"] = "right",
-					["isNew"] = false,
-					["showLabel"] = true,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar1",
 					["showText"] = false,
-					["customLabel"] = "LFG",
+					["barName"] = "ChocolateBar1",
 				},
 				["MinimapIcon"] = {
 					["enabled"] = false,
@@ -431,33 +438,26 @@ ChocolateBarDB = {
 					["customLabel"] = "N",
 				},
 			},
-			["desaturated"] = false,
-			["fixedStrata"] = true,
 			["fontName"] = "Friz Quadrata TT",
-			["moveFrames"] = false,
-			["gap"] = 0,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
+			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["forceColor"] = false,
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["width"] = 147.000030517578,
-					["autohide"] = false,
-					["barOffy"] = -207.589706420898,
-					["hideBarInCombat"] = false,
-					["barOffx"] = -31.9219512939453,
+			["gap"] = 0,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
 				},
-				["ChocolateBar2"] = {
-					["barOffy"] = -256.666748046875,
-					["barPoint"] = "TOPRIGHT",
-					["barName"] = "ChocolateBar2",
-					["align"] = "custom",
-					["barOffx"] = -88.3325424194336,
-					["index"] = 1,
-					["width"] = 147,
-				},
+				["textureName"] = "None",
 			},
 			["textColor"] = {
 				["a"] = 1,
@@ -518,7 +518,7 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Poklopac-Dreadnaught"] = {
-		["total"] = 186614,
+		["total"] = 196123,
 	},
 	["Ozrencic-"] = {
 		["total"] = 853,
@@ -544,11 +544,11 @@ CB_PlayedTime = {
 	["Nitwit-"] = {
 		["total"] = 680,
 	},
-	["Greshnik-Dreadnaught"] = {
-		["total"] = 148,
-	},
 	["Verminz-"] = {
 		["total"] = 311368,
+	},
+	["Greshnik-Dreadnaught"] = {
+		["total"] = 148,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,

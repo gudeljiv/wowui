@@ -10,80 +10,34 @@ TomTomDB = {
 		["Nitwit - Dreadnaught"] = "Default",
 		["Greenwise - Golemagg"] = "Default",
 		["Mxys - Golemagg"] = "Default",
-		["Konac - Dreadnaught"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
-		["Poklopac - Dreadnaught"] = "Default",
 		["Mxym - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
+		["Poklopac - Dreadnaught"] = "Default",
+		["Vermins - Stonespine"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Testxv - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
+		["Konac - Dreadnaught"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
-		["Vermins - Stonespine"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["poi"] = {
-				["enable"] = true,
-				["setClosest"] = false,
-				["arrival"] = 0,
-				["modifier"] = "A",
-			},
-			["general"] = {
-				["confirmremoveall"] = true,
-				["announce"] = false,
-				["corpse_arrow"] = true,
-			},
 			["arrow"] = {
-				["pingChannel"] = "SFX",
-				["autoqueue"] = true,
-				["scale"] = 0.7,
-				["goodcolor"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-				},
-				["middlecolor"] = {
-					1, -- [1]
-					1, -- [2]
-					0, -- [3]
-				},
-				["arrival"] = 15,
-				["lock"] = true,
-				["enablePing"] = false,
-				["badcolor"] = {
-					1, -- [1]
-					0, -- [2]
-					0, -- [3]
-				},
 				["title_alpha"] = 0,
-				["exactcolor"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-				},
-				["noclick"] = false,
-				["highstrata"] = false,
-				["setclosest"] = true,
-				["closestusecontinent"] = false,
-				["stickycorpse"] = false,
+				["lock"] = true,
+				["scale"] = 0.7,
 				["alpha"] = 0.6,
-				["title_height"] = 0,
-				["title_scale"] = 1,
-				["title_width"] = 0,
-				["menu"] = true,
 				["showdistance"] = false,
-				["hideDuringPetBattles"] = true,
 				["showtta"] = false,
-				["enable"] = true,
 				["position"] = {
 					"TOPRIGHT", -- [1]
 					nil, -- [2]
@@ -92,49 +46,12 @@ TomTomDB = {
 					-440.3262939453125, -- [5]
 				},
 			},
-			["comm"] = {
-				["enable"] = true,
-				["prompt"] = false,
-			},
 			["minimap"] = {
-				["menu"] = true,
-				["otherzone"] = true,
-				["default_icon"] = "Interface\\AddOns\\TomTom\\Images\\GoldGreenDot",
 				["tooltip"] = false,
 				["default_iconsize"] = 10,
-				["enable"] = true,
-			},
-			["persistence"] = {
-				["savewaypoints"] = true,
-				["cleardistance"] = 10,
-			},
-			["mapcoords"] = {
-				["throttle"] = 0.1,
-				["playeroffset"] = 0,
-				["playeraccuracy"] = 2,
-				["cursorenable"] = true,
-				["playerenable"] = true,
-				["cursoraccuracy"] = 2,
-				["cursoroffset"] = 0,
 			},
 			["block"] = {
-				["bgcolor"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0.4, -- [4]
-				},
-				["accuracy"] = 2,
 				["enable"] = false,
-				["bordercolor"] = {
-					1, -- [1]
-					0.8, -- [2]
-					0, -- [3]
-					0.8, -- [4]
-				},
-				["width"] = 100,
-				["throttle"] = 0.2,
-				["fontsize"] = 12,
 				["position"] = {
 					"CENTER", -- [1]
 					nil, -- [2]
@@ -142,25 +59,9 @@ TomTomDB = {
 					113.333152770996, -- [4]
 					-115.000205993652, -- [5]
 				},
-				["height"] = 30,
-				["lock"] = false,
-			},
-			["feeds"] = {
-				["arrow_throttle"] = 0.1,
-				["coords_accuracy"] = 2,
-				["arrow"] = false,
-				["coords_throttle"] = 0.3,
-				["coords"] = false,
 			},
 			["worldmap"] = {
-				["otherzone"] = true,
-				["tooltip"] = true,
-				["menu"] = true,
-				["clickcreate"] = true,
-				["default_icon"] = "Interface\\AddOns\\TomTom\\Images\\GoldGreenDot",
-				["create_modifier"] = "A",
 				["default_iconsize"] = 12,
-				["enable"] = true,
 			},
 		},
 	},
@@ -177,22 +78,22 @@ TomTomWaypointsM = {
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Mxys - Golemagg"] = "Mxys - Golemagg",
-		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
-		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
+		["Vermins - Stonespine"] = "Vermins - Stonespine",
+		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
 		["Koloman - Golemagg"] = "Koloman - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
+		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
-		["Vermins - Stonespine"] = "Vermins - Stonespine",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
 	},
@@ -215,17 +116,17 @@ TomTomWaypointsM = {
 		},
 		["Mxys - Golemagg"] = {
 		},
-		["Konac - Dreadnaught"] = {
+		["Mxym - Golemagg"] = {
 		},
-		["Jaroslav - Golemagg"] = {
+		["Mxyzptlk - Golemagg"] = {
 		},
 		["Poklopac - Dreadnaught"] = {
 		},
-		["Mxym - Golemagg"] = {
+		["Vermins - Stonespine"] = {
 		},
 		["Battlearm - Hydraxian Waterlords"] = {
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Vermin - Golemagg"] = {
 		},
 		["Testxv - Golemagg"] = {
 		},
@@ -235,7 +136,7 @@ TomTomWaypointsM = {
 		},
 		["Koloman - Golemagg"] = {
 		},
-		["Vermin - Golemagg"] = {
+		["Jaroslav - Golemagg"] = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 		},
@@ -243,9 +144,9 @@ TomTomWaypointsM = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Pitchwise - Dreadnaught"] = {
+		["Konac - Dreadnaught"] = {
 		},
-		["Vermins - Stonespine"] = {
+		["Pitchwise - Dreadnaught"] = {
 		},
 		["Mxzq - Golemagg"] = {
 		},

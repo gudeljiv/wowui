@@ -26,12 +26,9 @@ RangeDisplayDB3 = {
 	["profiles"] = {
 		["Default"] = {
 			["mute"] = true,
+			["locked"] = true,
 			["units"] = {
 				["pet"] = {
-				},
-				["arena4"] = {
-				},
-				["arena5"] = {
 				},
 				["playertarget"] = {
 					["x"] = -3.44103670120239,
@@ -41,6 +38,8 @@ RangeDisplayDB3 = {
 				},
 				["focus"] = {
 				},
+				["arena2"] = {
+				},
 				["mouseover"] = {
 					["mouseAnchor"] = false,
 					["enabled"] = false,
@@ -48,10 +47,11 @@ RangeDisplayDB3 = {
 					["x"] = -3.48463487625122,
 					["font"] = "Arial Narrow",
 				},
-				["arena2"] = {
+				["arena5"] = {
+				},
+				["arena4"] = {
 				},
 			},
-			["locked"] = true,
 		},
 	},
 }

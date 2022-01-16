@@ -41,13 +41,11 @@ LS_TOASTS_GLOBAL_CONFIG = {
 		["Default"] = {
 			["font"] = {
 				["name"] = "Arial Narrow",
-				["size"] = 12,
 			},
 			["version"] = 1130202,
 			["skin"] = "vermin",
 			["anchors"] = {
 				{
-					["fadeout_delay"] = 2.8,
 					["point"] = {
 						["y"] = 494,
 						["x"] = 220,
@@ -55,18 +53,10 @@ LS_TOASTS_GLOBAL_CONFIG = {
 						["rP"] = "BOTTOMLEFT",
 					},
 					["growth_direction"] = "UP",
-					["scale"] = 1,
-					["growth_offset_y"] = 14,
-					["max_active_toasts"] = 12,
-					["growth_offset_x"] = 26,
 				}, -- [1]
 			},
-			["strata"] = "DIALOG",
 			["colors"] = {
-				["threshold"] = 1,
-				["border"] = true,
 				["name"] = true,
-				["icon_border"] = true,
 			},
 			["types"] = {
 				["loot_gold"] = {

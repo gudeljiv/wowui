@@ -44,8 +44,8 @@ xKillCount = {
 		},
 	},
 	["experience"] = {
-		["totaltotal"] = 656832,
-		["pulltotal"] = 5180,
+		["totaltotal"] = 669526,
+		["pulltotal"] = 0,
 	},
 	["position"] = {
 		["y"] = -222.8851318359375,
