@@ -1,17 +1,17 @@
 VER 3 000000000000000D "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1708
+/use [nocombat]item:2136
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:3771
+/use [nocombat]item:2287
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:6362
+#showtooltip item:12037
 /cast feed pet
-/use item:6362
+/use item:12037
 END
 VER 3 000000000000000B "TEST" "132089"
 /run WeakAurasCooldowntargetdebuffs:Hide()
