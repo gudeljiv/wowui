@@ -31,10 +31,10 @@ RangeDisplayDB3 = {
 				["pet"] = {
 				},
 				["playertarget"] = {
-					["font"] = "Arial Narrow",
+					["x"] = -3.44103670120239,
 					["checkVisible"] = false,
 					["y"] = 0.645166099071503,
-					["x"] = -3.44103670120239,
+					["font"] = "Arial Narrow",
 				},
 				["focus"] = {
 				},

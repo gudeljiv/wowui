@@ -63,11 +63,19 @@ Blizzard_CombatLog_Filters = {
 						["r"] = 1,
 					},
 				},
+<<<<<<< HEAD
 				["highlightedEvents"] = {
 					["PARTY_KILL"] = true,
 				},
 				["eventColoring"] = {
 				},
+=======
+				["eventColoring"] = {
+				},
+				["highlightedEvents"] = {
+					["PARTY_KILL"] = true,
+				},
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 				["defaults"] = {
 					["damage"] = {
 						["a"] = 1,
@@ -155,12 +163,20 @@ Blizzard_CombatLog_Filters = {
 				["schoolNameHighlighting"] = true,
 				["unitBraces"] = true,
 				["noMeleeSwingColoring"] = false,
+<<<<<<< HEAD
 				["hideBuffs"] = false,
+=======
+				["unitIcons"] = true,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 				["hideDebuffs"] = false,
 				["amountSchoolColoring"] = false,
 				["amountColoring"] = false,
 				["unitColoring"] = false,
+<<<<<<< HEAD
 				["unitIcons"] = true,
+=======
+				["hideBuffs"] = false,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 				["timestampFormat"] = "%H:%M:%S",
 				["braces"] = false,
 				["actionActorColoring"] = false,
@@ -307,11 +323,19 @@ Blizzard_CombatLog_Filters = {
 						["r"] = 1,
 					},
 				},
+<<<<<<< HEAD
 				["highlightedEvents"] = {
 					["PARTY_KILL"] = true,
 				},
 				["eventColoring"] = {
 				},
+=======
+				["eventColoring"] = {
+				},
+				["highlightedEvents"] = {
+					["PARTY_KILL"] = true,
+				},
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 				["defaults"] = {
 					["damage"] = {
 						["a"] = 1,
@@ -399,12 +423,20 @@ Blizzard_CombatLog_Filters = {
 				["schoolNameHighlighting"] = true,
 				["unitBraces"] = true,
 				["noMeleeSwingColoring"] = false,
+<<<<<<< HEAD
 				["hideBuffs"] = false,
+=======
+				["unitIcons"] = true,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 				["hideDebuffs"] = false,
 				["amountSchoolColoring"] = false,
 				["amountColoring"] = false,
 				["unitColoring"] = false,
+<<<<<<< HEAD
 				["unitIcons"] = true,
+=======
+				["hideBuffs"] = false,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 				["timestampFormat"] = "%H:%M:%S",
 				["braces"] = false,
 				["actionActorColoring"] = false,

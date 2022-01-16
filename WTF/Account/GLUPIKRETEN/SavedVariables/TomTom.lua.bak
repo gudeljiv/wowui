@@ -10,10 +10,17 @@ TomTomDB = {
 		["Nitwit - Dreadnaught"] = "Default",
 		["Greenwise - Golemagg"] = "Default",
 		["Mxys - Golemagg"] = "Default",
+<<<<<<< HEAD
 		["Konac - Dreadnaught"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Poklopac - Dreadnaught"] = "Default",
 		["Mxym - Golemagg"] = "Default",
+=======
+		["Mxym - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Poklopac - Dreadnaught"] = "Default",
+		["Vermins - Stonespine"] = "Default",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Testxv - Golemagg"] = "Default",
@@ -24,17 +31,22 @@ TomTomDB = {
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
+<<<<<<< HEAD
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Vermins - Stonespine"] = "Default",
+=======
+		["Konac - Dreadnaught"] = "Default",
+		["Pitchwise - Dreadnaught"] = "Default",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["Mxzq - Golemagg"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["arrow"] = {
-				["scale"] = 0.7,
-				["lock"] = true,
 				["title_alpha"] = 0,
+				["lock"] = true,
+				["scale"] = 0.7,
 				["alpha"] = 0.6,
 				["showdistance"] = false,
 				["showtta"] = false,
@@ -78,10 +90,17 @@ TomTomWaypointsM = {
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Mxys - Golemagg"] = "Mxys - Golemagg",
+<<<<<<< HEAD
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
+=======
+		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
+		["Vermins - Stonespine"] = "Vermins - Stonespine",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
@@ -92,8 +111,13 @@ TomTomWaypointsM = {
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
+<<<<<<< HEAD
 		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
 		["Vermins - Stonespine"] = "Vermins - Stonespine",
+=======
+		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
+		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
 	},
@@ -116,13 +140,21 @@ TomTomWaypointsM = {
 		},
 		["Mxys - Golemagg"] = {
 		},
+<<<<<<< HEAD
 		["Konac - Dreadnaught"] = {
+=======
+		["Mxym - Golemagg"] = {
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		},
 		["Mxyzptlk - Golemagg"] = {
 		},
 		["Poklopac - Dreadnaught"] = {
 		},
+<<<<<<< HEAD
 		["Mxym - Golemagg"] = {
+=======
+		["Vermins - Stonespine"] = {
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		},
 		["Battlearm - Hydraxian Waterlords"] = {
 		},
@@ -146,7 +178,11 @@ TomTomWaypointsM = {
 		},
 		["Pitchwise - Dreadnaught"] = {
 		},
+<<<<<<< HEAD
 		["Vermins - Stonespine"] = {
+=======
+		["Pitchwise - Dreadnaught"] = {
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		},
 		["Mxzq - Golemagg"] = {
 		},

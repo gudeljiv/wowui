@@ -15,7 +15,7 @@ nHealth = {
 	valueFont = 'Fonts\\ARIALN.ttf',
 	valueFontSize = 20,
 	valueFontOutline = true,
-	valueFontAdjustmentX = 0,
+	valueFontAdjustmentX = 14,
 
 	showSoulshards = true,
 	showHolypower = true,

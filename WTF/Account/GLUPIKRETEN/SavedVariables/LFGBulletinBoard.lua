@@ -44,7 +44,11 @@ GroupBulletinBoardDB = {
 		["AboutSlashCommand"] = "",
 		["CboxEnableShowOnly"] = "",
 		["CboxOnDebug"] = "",
+<<<<<<< HEAD
 		["CboxNotfiyInpvp"] = "",
+=======
+		["CboxCombineSubDungeons"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["msgLevelRange"] = "",
 		["CboxTagsGerman"] = "",
 		["SlashConfig"] = "",
@@ -80,21 +84,36 @@ GroupBulletinBoardDB = {
 		["BtnIgnore"] = "",
 		["BtnTimeColor"] = "",
 		["Cboxshowminimapbutton"] = "",
+<<<<<<< HEAD
 		["CboxNotfiyInparty"] = "",
+=======
+		["msgStartWho"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["BtnCancel"] = "",
 		["PanelAbout"] = "",
 		["PanelTags"] = "",
 		["HeaderTags"] = "",
+<<<<<<< HEAD
 		["lfg_channel"] = "",
+=======
+		["SlashDefault"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["BtnPostMsg"] = "",
 		["CboxTagsZhtw"] = "",
 		["CboxCharDontFilterOwn"] = "",
 		["BtnUnFoldAll"] = "",
 		["HeaderCredits"] = "",
+<<<<<<< HEAD
 		["msgLastTime"] = "",
 		["CboxNotfiyInraid"] = "",
 		["msgFontSize"] = "",
 		["msgInit"] = "",
+=======
+		["msgInit"] = "",
+		["CboxNotfiyInraid"] = "",
+		["msgFontSize"] = "",
+		["msgLastTime"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["SlashReset"] = "",
 		["msgLocalRestart"] = "",
 		["CboxLockMinimapButton"] = "",
@@ -102,10 +121,17 @@ GroupBulletinBoardDB = {
 		["HeaderUsage"] = "",
 		["PanelFilter"] = "",
 		["BtnNotifyColor"] = "",
+<<<<<<< HEAD
 		["SlashDefault"] = "",
 		["EditCustom_Bad"] = "",
 		["BtnWho"] = "",
 		["msgStartWho"] = "",
+=======
+		["lfg_channel"] = "",
+		["EditCustom_Bad"] = "",
+		["BtnWho"] = "",
+		["CboxNotfiyInparty"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["CboxEnableGuild"] = "",
 		["AboutUsage"] = "",
 		["msgCustomList"] = "",
@@ -118,7 +144,11 @@ GroupBulletinBoardDB = {
 		["raidAbr"] = "",
 		["HeaderTagsCustom"] = "",
 		["CboxCompactStyle"] = "",
+<<<<<<< HEAD
 		["CboxCombineSubDungeons"] = "",
+=======
+		["CboxNotfiyInpvp"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["BtnColorGuild"] = "",
 		["normalAbr"] = "",
 		["msgNbRequest"] = "",
@@ -215,25 +245,36 @@ GroupBulletinBoardDB = {
 		["MISC"] = "",
 		["ZF"] = "",
 	},
+<<<<<<< HEAD
 	["NotfiyInpvp"] = false,
+=======
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["TimeColor"] = {
 		["a"] = 1,
 		["r"] = 1,
 		["g"] = 1,
 		["b"] = 1,
 	},
-	["EntryColor"] = {
+	["EnableShowOnly"] = false,
+	["HistoryColor"] = {
 		["a"] = 1,
+<<<<<<< HEAD
 		["r"] = 1,
 		["g"] = 1,
 		["b"] = 1,
+=======
+		["b"] = 0.6,
+		["g"] = 0.6,
+		["r"] = 0.6,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	},
-	["NotifySound"] = false,
-	["TagsRussian"] = false,
+	["RemoveRaidSymbols"] = true,
+	["AdditionalInfo"] = false,
 	["DisplayLFG"] = false,
 	["CombineSubDungeons"] = false,
 	["ShowOnlyNb"] = 4,
 	["NotfiyInnone"] = true,
+<<<<<<< HEAD
 	["CustomLocalesDungeon"] = {
 		["ZF"] = "",
 		["SMC"] = "",
@@ -242,28 +283,82 @@ GroupBulletinBoardDB = {
 		["SMG"] = "",
 		["WC"] = "",
 		["MGT"] = "",
+=======
+	["EnableGroup"] = false,
+	["DontTrunicate"] = false,
+	["EntryColor"] = {
+		["a"] = 1,
+		["r"] = 1,
+		["g"] = 1,
+		["b"] = 1,
+	},
+	["HeroicDungeonColor"] = {
+		["a"] = 1,
+		["r"] = 1,
+		["g"] = 0,
+		["b"] = 0,
+	},
+	["NotifySound"] = false,
+	["X"] = 1152.483032226563,
+	["EnableGuild"] = false,
+	["Y"] = 1190.58642578125,
+	["NotifyChat"] = false,
+	["ChatStyle"] = false,
+	["EscapeQuit"] = true,
+	["ColorByClass"] = true,
+	["NotfiyInraid"] = false,
+	["TagsZhtw"] = false,
+	["OrderNewTop"] = true,
+	["TagsFrench"] = false,
+	["ShowTotalTime"] = false,
+	["CustomLocalesDungeon"] = {
+		["ZF"] = "",
+		["BRD"] = "",
+		["SMC"] = "",
+		["OHB"] = "",
+		["UB"] = "",
+		["WC"] = "",
+		["ARENA"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["SML"] = "",
 		["DM"] = "",
 		["AQ40"] = "",
 		["SCH"] = "",
 		["RFC"] = "",
 		["MC"] = "",
+<<<<<<< HEAD
 		["ZA"] = "",
+=======
+		["DMW"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["DME"] = "",
 		["BOT"] = "",
 		["RFK"] = "",
 		["SFK"] = "",
 		["AQ20"] = "",
+<<<<<<< HEAD
 		["RAMPS"] = "",
 		["BFD"] = "",
 		["UB"] = "",
 		["ONY"] = "",
 		["DMN"] = "",
+=======
+		["KARA"] = "",
+		["BFD"] = "",
+		["SMG"] = "",
+		["ONY"] = "",
+		["UBRS"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["BWL"] = "",
-		["DMW"] = "",
+		["ZA"] = "",
 		["EYE"] = "",
+<<<<<<< HEAD
 		["KARA"] = "",
 		["UBRS"] = "",
+=======
+		["RAMPS"] = "",
+		["RFD"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["LBRS"] = "",
 		["STK"] = "",
 		["NAX"] = "",
@@ -271,11 +366,16 @@ GroupBulletinBoardDB = {
 		["AB"] = "",
 		["SSC"] = "",
 		["ULD"] = "",
+<<<<<<< HEAD
 		["RFD"] = "",
+=======
+		["GL"] = "",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["SP"] = "",
 		["STR"] = "",
 		["BF"] = "",
 		["TRADE"] = "",
+<<<<<<< HEAD
 		["GNO"] = "",
 		["BT"] = "",
 		["ST"] = "",
@@ -327,6 +427,32 @@ GroupBulletinBoardDB = {
 		["g"] = 0,
 		["b"] = 0,
 	},
+=======
+		["EOTS"] = "",
+		["BT"] = "",
+		["MAG"] = "",
+		["CRYPTS"] = "",
+		["ARC"] = "",
+		["ST"] = "",
+		["SMA"] = "",
+		["MECH"] = "",
+		["MISC"] = "",
+		["AV"] = "",
+		["SV"] = "",
+		["GNO"] = "",
+		["WSG"] = "",
+		["DMN"] = "",
+		["SWP"] = "",
+		["SL"] = "",
+		["STK"] = "",
+		["HYJAL"] = "",
+		["MT"] = "",
+		["BM"] = "",
+		["SETH"] = "",
+		["MGT"] = "",
+		["SH"] = "",
+	},
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["NotifyColor"] = {
 		["a"] = 1,
 		["r"] = 1,
@@ -335,10 +461,17 @@ GroupBulletinBoardDB = {
 	},
 	["TimeOut"] = 150,
 	["widthTimes"] = 50,
+<<<<<<< HEAD
 	["EnableGroup"] = false,
 	["AnnounceChannel"] = "LookingForGroup",
 	["Height"] = 740.9999389648438,
 	["EnableShowOnly"] = false,
+=======
+	["TagsRussian"] = false,
+	["AnnounceChannel"] = "LookingForGroup",
+	["Height"] = 740.9999389648438,
+	["NotfiyInpvp"] = false,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["MinimapButton"] = {
 		["visible"] = false,
 		["lock"] = false,

@@ -1,5 +1,9 @@
 
 OmniCC4Config = {
+<<<<<<< HEAD
+=======
+	["engine"] = "AniUpdater",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -10,7 +14,11 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
+<<<<<<< HEAD
 	["engine"] = "AniUpdater",
+=======
+	["version"] = "8.1.1",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -126,5 +134,8 @@ OmniCC4Config = {
 			["fontSize"] = 18,
 		},
 	},
+<<<<<<< HEAD
 	["version"] = "8.1.1",
+=======
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 }

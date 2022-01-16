@@ -1,5 +1,5 @@
 nPower = {
-	position = {"CENTER", UIParent, 0, -45},
+	position = {"CENTER", UIParent, 0, -40},
 	sizeWidth = 200,
 	scale = 1.0,
 	showCombatRegen = true,

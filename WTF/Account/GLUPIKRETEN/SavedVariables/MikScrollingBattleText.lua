@@ -49,15 +49,29 @@ MSBTProfiles_SavedVars = {
 			["normalFontSize"] = 15,
 			["powerThrottleDuration"] = 2,
 			["critFontName"] = "MSBT Yellowjacket",
+<<<<<<< HEAD
+=======
+			["hideFullHoTOverheals"] = false,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 			["scrollAreas"] = {
 				["Outgoing"] = {
 					["stickyTextAlignIndex"] = 3,
 					["offsetX"] = 360,
+<<<<<<< HEAD
 					["iconAlign"] = "Left",
 					["behavior"] = "MSBT_NORMAL",
 					["offsetY"] = 50,
 					["textAlignIndex"] = 3,
+=======
+					["behavior"] = "MSBT_NORMAL",
+					["iconAlign"] = "Left",
+					["offsetY"] = 50,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 					["animationStyle"] = "Straight",
+					["textAlignIndex"] = 3,
+				},
+				["Notification"] = {
+					["disabled"] = true,
 				},
 				["Notification"] = {
 					["disabled"] = true,
@@ -75,6 +89,7 @@ MSBTProfiles_SavedVars = {
 				["Incoming"] = {
 					["stickyTextAlignIndex"] = 1,
 					["offsetX"] = -400,
+<<<<<<< HEAD
 					["animationStyle"] = "Straight",
 					["iconAlign"] = "Right",
 					["offsetY"] = 50,
@@ -83,6 +98,15 @@ MSBTProfiles_SavedVars = {
 				},
 			},
 			["hideFullHoTOverheals"] = false,
+=======
+					["textAlignIndex"] = 1,
+					["behavior"] = "MSBT_NORMAL",
+					["offsetY"] = 50,
+					["animationStyle"] = "Straight",
+					["iconAlign"] = "Right",
+				},
+			},
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 			["normalFontName"] = "MSBT Yellowjacket",
 			["groupNumbers"] = true,
 			["creationVersion"] = "5.7.123",

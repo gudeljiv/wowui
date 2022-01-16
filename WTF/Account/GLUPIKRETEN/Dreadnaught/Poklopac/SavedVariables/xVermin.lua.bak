@@ -1,6 +1,19 @@
 
 xKillCount = {
 	["show"] = false,
+<<<<<<< HEAD
+=======
+	["position"] = {
+		["y"] = -222.8851318359375,
+		["x"] = 386.6781921386719,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
+	},
+	["experience"] = {
+		["pulltotal"] = 175,
+		["totaltotal"] = 667604,
+	},
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["killLog"] = {
 		["Clattering Scorpid"] = {
 			["name"] = "Clattering Scorpid",

@@ -2,10 +2,17 @@
 cfg = {
 	["darkFrames"] = true,
 	["noClickFrame"] = false,
+<<<<<<< HEAD
 	["bigAuras"] = false,
 	["usePartyFrames"] = false,
 	["largeAuraSize"] = 25,
 	["blueShamans"] = true,
+=======
+	["usePartyFrames"] = false,
+	["bigAuras"] = false,
+	["largeAuraSize"] = 25,
+	["whoaTexture"] = true,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["classColor"] = true,
 	["useBossFrames"] = false,
 	["smallAuraSize"] = 20,
@@ -13,5 +20,9 @@ cfg = {
 	["reactionColor"] = true,
 	["BlizzardReactionColor"] = true,
 	["styleFont"] = false,
+<<<<<<< HEAD
 	["whoaTexture"] = true,
+=======
+	["blueShamans"] = true,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 }

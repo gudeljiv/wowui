@@ -51,6 +51,7 @@ ChocolateBarDB = {
 	["profiles"] = {
 		["Default"] = {
 			["locked"] = false,
+<<<<<<< HEAD
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -65,6 +66,32 @@ ChocolateBarDB = {
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
+=======
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["forceColor"] = false,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["width"] = 147.000030517578,
+					["autohide"] = false,
+					["barOffy"] = -207.589706420898,
+					["hideBarInCombat"] = false,
+					["barOffx"] = -31.9219512939453,
+				},
+				["ChocolateBar2"] = {
+					["barOffy"] = -256.666748046875,
+					["barPoint"] = "TOPRIGHT",
+					["barName"] = "ChocolateBar2",
+					["align"] = "custom",
+					["barOffx"] = -88.3325424194336,
+					["index"] = 1,
+					["width"] = 147,
+				},
+			},
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
@@ -285,11 +312,23 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar2",
 					["customLabel"] = "B",
 				},
+<<<<<<< HEAD
 				["TownsfolkTracker"] = {
 					["enabled"] = false,
 					["align"] = "right",
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
+=======
+				["LFGBulletinBoard"] = {
+					["index"] = 3,
+					["align"] = "right",
+					["isNew"] = false,
+					["showLabel"] = true,
+					["showIcon"] = false,
+					["barName"] = "ChocolateBar1",
+					["showText"] = false,
+					["customLabel"] = "LFG",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 				},
 				["TellMeWhen"] = {
 					["enabled"] = false,
@@ -306,15 +345,20 @@ ChocolateBarDB = {
 					["index"] = 6,
 					["barName"] = "ChocolateBar1",
 				},
-				["LFGBulletinBoard"] = {
-					["index"] = 3,
+				["TownsfolkTracker"] = {
+					["enabled"] = false,
 					["align"] = "right",
+<<<<<<< HEAD
 					["isNew"] = false,
 					["showLabel"] = true,
 					["showIcon"] = false,
 					["barName"] = "ChocolateBar1",
 					["showText"] = false,
 					["customLabel"] = "LFG",
+=======
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 				},
 				["MinimapIcon"] = {
 					["enabled"] = false,
@@ -428,11 +472,34 @@ ChocolateBarDB = {
 					["customLabel"] = "N",
 				},
 			},
+<<<<<<< HEAD
 			["gap"] = 0,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+=======
+			["fontName"] = "Friz Quadrata TT",
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
+			["desaturated"] = false,
+			["textOffset"] = 2,
+			["height"] = 20,
+			["gap"] = 0,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
+				},
+				["textureName"] = "None",
+			},
+<<<<<<< HEAD
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["fixedStrata"] = true,
 			["fontName"] = "Friz Quadrata TT",
@@ -459,6 +526,8 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
+=======
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -512,13 +581,17 @@ CB_PlayedTime = {
 		["total"] = 2037,
 	},
 	["Moolatz-Dreadnaught"] = {
-		["total"] = 24003,
+		["total"] = 32127,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
 	["Poklopac-Dreadnaught"] = {
+<<<<<<< HEAD
 		["total"] = 170928,
+=======
+		["total"] = 196123,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	},
 	["Ozrencic-"] = {
 		["total"] = 853,
@@ -544,11 +617,17 @@ CB_PlayedTime = {
 	["Nitwit-"] = {
 		["total"] = 680,
 	},
+<<<<<<< HEAD
 	["Greshnik-Dreadnaught"] = {
 		["total"] = 148,
 	},
+=======
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["Verminz-"] = {
 		["total"] = 311368,
+	},
+	["Greshnik-Dreadnaught"] = {
+		["total"] = 148,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,
@@ -572,6 +651,10 @@ CB_PlayedTime = {
 		["total"] = 21359,
 	},
 	["Konac-Dreadnaught"] = {
+<<<<<<< HEAD
 		["total"] = 77622,
+=======
+		["total"] = 78280,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	},
 }

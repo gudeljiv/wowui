@@ -32,11 +32,15 @@ GMMONEY = {
 	},
 	["Dreadnaught"] = {
 		["Poklopac"] = {
+<<<<<<< HEAD
 			["GOLD"] = 448204,
+=======
+			["GOLD"] = 515160,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 			["CLASS"] = "HUNTER",
 		},
 		["Moolatz"] = {
-			["GOLD"] = 105039,
+			["GOLD"] = 107750,
 			["CLASS"] = "DRUID",
 		},
 		["Greshnik"] = {
@@ -44,7 +48,7 @@ GMMONEY = {
 			["CLASS"] = "WARLOCK",
 		},
 		["Konac"] = {
-			["GOLD"] = 192317,
+			["GOLD"] = 259244,
 			["CLASS"] = "PRIEST",
 		},
 		["Nitwit"] = {

@@ -1,4 +1,4 @@
-nPower: disabled
+nPower: enabled
 nHealth: enabled
 Immersion: disabled
 AdiBags: enabled
@@ -122,3 +122,4 @@ AutoRoll: disabled
 Leatrix_Plus: disabled
 TradeSkillMaster_AppHelper: disabled
 aux-addon: disabled
+RXPGuides: disabled

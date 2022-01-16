@@ -5,6 +5,7 @@ LeaMapsDB = {
 	["ShowZoneLevels"] = "On",
 	["ShowSpiritHealers"] = "On",
 	["BattleMapOpacity"] = 1,
+<<<<<<< HEAD
 	["IncreaseZoom"] = "Off",
 	["MainPanelA"] = "LEFT",
 	["LockMapFrame"] = "Off",
@@ -19,6 +20,22 @@ LeaMapsDB = {
 	["ShowTravelPoints"] = "On",
 	["ShowDungeonIcons"] = "On",
 	["ShowCoords"] = "On",
+=======
+	["tintRed"] = 0.6,
+	["MapPosY"] = -37.76125335693359,
+	["LockMapFrame"] = "Off",
+	["BattleMapR"] = "BOTTOMRIGHT",
+	["MapPosA"] = "TOP",
+	["BattlePlayerArrowSize"] = 12,
+	["stationaryOpacity"] = 1,
+	["IncreaseZoom"] = "Off",
+	["BattleMaxZoom"] = 1,
+	["BattleMapX"] = -47,
+	["ShowMinimapIcon"] = "Off",
+	["ShowFishingLevels"] = "On",
+	["ShowDungeonIcons"] = "On",
+	["movingOpacity"] = 0.5,
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["UseDefaultMap"] = "Off",
 	["CenterMapOnPlayer"] = "Off",
 	["EnhanceBattleMap"] = "On",
@@ -28,14 +45,23 @@ LeaMapsDB = {
 	["StickyMapFrame"] = "Off",
 	["ZoneMapMenu"] = 1,
 	["MapPosR"] = "TOP",
+<<<<<<< HEAD
 	["UnlockMapFrame"] = "On",
+=======
+	["RevealMap"] = "On",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["MapPosX"] = -109.1749877929688,
 	["FadeMap"] = "On",
 	["UseClassIcons"] = "On",
 	["BattleMapA"] = "BOTTOMRIGHT",
 	["MainPanelX"] = 267.49951171875,
+<<<<<<< HEAD
 	["MainPanelR"] = "LEFT",
 	["RevealMap"] = "On",
+=======
+	["ShowPointsOfInterest"] = "On",
+	["UnlockMapFrame"] = "On",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["ShowZoneCrossings"] = "On",
 	["ShowScaleHandle"] = "On",
 	["PlayerArrowSize"] = 27,
@@ -51,16 +77,28 @@ LeaMapsDB = {
 	["IncreaseZoomMax"] = 2,
 	["MainPanelY"] = 176.8677368164063,
 	["NoMapBorder"] = "Off",
+<<<<<<< HEAD
 	["ShowPointsOfInterest"] = "On",
+=======
+	["MainPanelR"] = "LEFT",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["BattleMapY"] = 83,
 	["tintBlue"] = 1,
 	["EnlargePlayerArrow"] = "On",
 	["NoFadeCursor"] = "On",
+<<<<<<< HEAD
 	["movingOpacity"] = 0.5,
 	["FirstRunMessageSeen"] = true,
 	["RevTint"] = "On",
 	["ShowFishingLevels"] = "On",
 	["ShowMinimapIcon"] = "Off",
+=======
+	["ShowCoords"] = "On",
+	["FirstRunMessageSeen"] = true,
+	["RevTint"] = "On",
+	["ShowTravelPoints"] = "On",
+	["MainPanelA"] = "LEFT",
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["tintGreen"] = 0.6,
 	["UnlockBattlefield"] = "On",
 }

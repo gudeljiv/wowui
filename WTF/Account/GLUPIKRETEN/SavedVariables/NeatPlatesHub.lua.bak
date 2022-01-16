@@ -434,8 +434,12 @@ NeatPlatesHubSettings = {
 		["ColorPartyAggroBar"] = false,
 		["WidgetDebuffTrackList"] = "",
 		["BuffSeparationMode"] = 1,
+<<<<<<< HEAD
 		["OpacityFiltered"] = 0,
+=======
+>>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 		["OpacitySpotlight"] = 0.85,
+		["OpacityFiltered"] = 0,
 		["HeadlineFriendlySubtext"] = "RoleGuildLevel",
 		["OpacitySpotlightRaidMarked"] = false,
 		["StyleFriendlyBarsNoMinions"] = false,
