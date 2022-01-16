@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 4086,
 	["lastSanitation"] = 3,
-	["session"] = 4077,
 	["errors"] = {
 		{
 			["message"] = "...\\AddOns\\Details\\Libs\\DetailsFramework\\lib\\slider.lua:456: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DetailsFrameworkSliderButtons1:SetPoint.",
@@ -303,62 +303,62 @@ BugGrabberDB = {
 		}, -- [38]
 		{
 			["message"] = "MkQL_RewardItem1_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [39]
 		{
 			["message"] = "MkQL_RewardItem2_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [40]
 		{
 			["message"] = "MkQL_RewardItem3_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [41]
 		{
 			["message"] = "MkQL_RewardItem4_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [42]
 		{
 			["message"] = "MkQL_RewardItem5_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [43]
 		{
 			["message"] = "MkQL_RewardItem6_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [44]
 		{
 			["message"] = "MkQL_RewardItem7_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [45]
 		{
 			["message"] = "MkQL_RewardItem8_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [46]
 		{
 			["message"] = "MkQL_RewardItem9_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [47]
 		{
 			["message"] = "MkQL_RewardItem10_BtnCount: Couldn't find relative frame: $parentIconTexture",
-			["time"] = "2022/01/01 17:21:22",
 			["session"] = 3793,
+			["time"] = "2022/01/01 17:21:22",
 			["counter"] = 1,
 		}, -- [48]
 		{
@@ -832,20 +832,20 @@ BugGrabberDB = {
 		}, -- [107]
 		{
 			["message"] = "File Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua is empty.",
-			["time"] = "2022/01/08 09:25:26",
 			["session"] = 3957,
+			["time"] = "2022/01/08 09:25:26",
 			["counter"] = 3,
 		}, -- [108]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Frames/EnhanceTrainerFrame.lua",
-			["time"] = "2022/01/08 09:33:16",
 			["session"] = 3959,
+			["time"] = "2022/01/08 09:33:16",
 			["counter"] = 3,
 		}, -- [109]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Frames/EnhanceProfessionsFrame.lua",
-			["time"] = "2022/01/08 09:33:16",
 			["session"] = 3959,
+			["time"] = "2022/01/08 09:33:16",
 			["counter"] = 3,
 		}, -- [110]
 		{
@@ -897,8 +897,8 @@ BugGrabberDB = {
 		}, -- [116]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 4005,
 			["time"] = "2022/01/07 17:50:32",
+			["session"] = 4005,
 			["counter"] = 6,
 		}, -- [117]
 		{
@@ -1110,8 +1110,8 @@ BugGrabberDB = {
 		}, -- [143]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/01/02 09:34:18",
 			["session"] = 4036,
+			["time"] = "2022/01/02 09:34:18",
 			["counter"] = 48,
 		}, -- [144]
 		{

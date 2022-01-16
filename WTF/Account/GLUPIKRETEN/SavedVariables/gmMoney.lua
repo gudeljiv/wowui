@@ -1,43 +1,5 @@
 
 GMMONEY = {
-	["Hydraxian Waterlords"] = {
-		["Battlearm"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "HUNTER",
-		},
-	},
-	["Dreadnaught"] = {
-		["Poklopac"] = {
-			["GOLD"] = 448744,
-			["CLASS"] = "HUNTER",
-		},
-		["Moolatz"] = {
-			["GOLD"] = 107750,
-			["CLASS"] = "DRUID",
-		},
-		["Greshnik"] = {
-			["GOLD"] = 11,
-			["CLASS"] = "WARLOCK",
-		},
-		["Konac"] = {
-			["GOLD"] = 183441,
-			["CLASS"] = "PRIEST",
-		},
-		["Nitwit"] = {
-			["GOLD"] = 620,
-			["CLASS"] = "ROGUE",
-		},
-		["Pitchwise"] = {
-			["GOLD"] = 10822,
-			["CLASS"] = "WARRIOR",
-		},
-	},
-	["Stonespine"] = {
-		["Vermins"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
-		},
-	},
 	["Golemagg"] = {
 		["Battlearm"] = {
 			["GOLD"] = 47807,
@@ -68,8 +30,46 @@ GMMONEY = {
 			["CLASS"] = "WARRIOR",
 		},
 	},
+	["Dreadnaught"] = {
+		["Poklopac"] = {
+			["GOLD"] = 481464,
+			["CLASS"] = "HUNTER",
+		},
+		["Moolatz"] = {
+			["GOLD"] = 107750,
+			["CLASS"] = "DRUID",
+		},
+		["Greshnik"] = {
+			["GOLD"] = 11,
+			["CLASS"] = "WARLOCK",
+		},
+		["Konac"] = {
+			["GOLD"] = 232891,
+			["CLASS"] = "PRIEST",
+		},
+		["Nitwit"] = {
+			["GOLD"] = 620,
+			["CLASS"] = "ROGUE",
+		},
+		["Pitchwise"] = {
+			["GOLD"] = 10822,
+			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Stonespine"] = {
+		["Vermins"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Hydraxian Waterlords"] = {
+		["Battlearm"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "HUNTER",
+		},
+	},
 }
 GMMONEYSET = {
-	["TEXTMODE"] = true,
 	["FULLDISP"] = true,
+	["TEXTMODE"] = true,
 }

@@ -7,35 +7,95 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 193,
+					["combatId"] = 326,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.004028,
+							["totalabsorbed"] = 0.004012,
+							["friendlyfire"] = {
+							},
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Sparkleshell Borer"] = 1233,
+								["Boiling Elemental"] = 902,
 							},
+							["colocacao"] = 1,
 							["pets"] = {
 								"Lonac <Poklopac>", -- [1]
 							},
-							["classe"] = "HUNTER",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 892.0040280000001,
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1642184313,
+							["total_without_pet"] = 440.004012,
+							["on_hold"] = false,
 							["dps_started"] = false,
-							["total"] = 1233.004028,
-							["colocacao"] = 1,
-							["friendlyfire_total"] = 0,
+							["total"] = 902.004012,
+							["classe"] = "HUNTER",
+							["serial"] = "Player-5239-013D6C3C",
 							["nome"] = "Poklopac",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Boiling Elemental"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["IMMUNE"] = 1,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 45,
+										["targets"] = {
+											["Boiling Elemental"] = 381,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 381,
+										["n_min"] = 40,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 381,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 9,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
 									["Arcane Shot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -43,644 +103,18 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 59,
 										["targets"] = {
-											["Sparkleshell Borer"] = 118,
+											["Boiling Elemental"] = 59,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 118,
+										["n_dmg"] = 59,
 										["n_min"] = 59,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 118,
+										["counter"] = 1,
+										["total"] = 59,
 										["c_max"] = 0,
 										["id"] = "Arcane Shot",
 										["r_dmg"] = 0,
 										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Multi-Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 85,
-										["targets"] = {
-											["Sparkleshell Borer"] = 166,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 166,
-										["n_min"] = 81,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 166,
-										["c_max"] = 0,
-										["id"] = "Multi-Shot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 1,
-										["c_dmg"] = 158,
-										["g_amt"] = 0,
-										["n_max"] = 42,
-										["targets"] = {
-											["Sparkleshell Borer"] = 468,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 310,
-										["n_min"] = 25,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 468,
-										["c_max"] = 85,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 25,
-										["n_amt"] = 8,
-										["r_amt"] = 0,
-										["c_min"] = 73,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Sparkleshell Borer"] = 140,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 140,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 140,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["on_hold"] = false,
-							["serial"] = "Player-5239-013D6C3C",
-							["last_dps"] = 57.25847627012414,
-							["custom"] = 0,
-							["last_event"] = 1642184311,
-							["damage_taken"] = 0.004028,
-							["start_time"] = 1642184291,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002801,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["damage_from"] = {
-								["Sparkleshell Borer"] = true,
-							},
-							["targets"] = {
-								["Sparkleshell Borer"] = 341,
-							},
-							["end_time"] = 1642184313,
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 341.002801,
-							["dps_started"] = false,
-							["total"] = 341.002801,
-							["classe"] = "PET",
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 2,
-										["c_dmg"] = 98,
-										["g_amt"] = 5,
-										["n_max"] = 24,
-										["targets"] = {
-											["Sparkleshell Borer"] = 214,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 36,
-										["a_amt"] = 0,
-										["n_min"] = 5,
-										["g_dmg"] = 80,
-										["counter"] = 16,
-										["MISS"] = 1,
-										["total"] = 214,
-										["c_max"] = 51,
-										["DODGE"] = 4,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 12,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 47,
-									},
-									["Claw"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 38,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Sparkleshell Borer"] = 127,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 89,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 127,
-										["c_max"] = 38,
-										["DODGE"] = 1,
-										["id"] = "Claw",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 0,
-										["c_min"] = 38,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 285.002801,
-							["start_time"] = 1642184291,
-							["delay"] = 0,
-							["last_event"] = 1642184311,
-						}, -- [2]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.003552,
-							["damage_from"] = {
-								["Lonac <Poklopac>"] = true,
-								["Poklopac"] = true,
-							},
-							["targets"] = {
-								["Lonac <Poklopac>"] = 285,
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["end_time"] = 1642184313,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 285.003552,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 285.003552,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-5208-1-4308-4144-000061BDFE",
-							["nome"] = "Sparkleshell Borer",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 150,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 150,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 150,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Lightning Hide"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 135,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 135,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 15,
-										["total"] = 135,
-										["c_max"] = 0,
-										["id"] = "Lightning Hide",
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 15,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 1233.003552,
-							["start_time"] = 1642184291,
-							["delay"] = 0,
-							["last_event"] = 1642184311,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 193,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 193,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 193,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime"] = 19,
-							["debuff_uptime_targets"] = {
-							},
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									["Hunter's Mark"] = {
-										["activedamt"] = -1,
-										["id"] = "Hunter's Mark",
-										["targets"] = {
-										},
-										["actived_at"] = 1642184311,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Concussive Shot"] = {
-										["activedamt"] = 0,
-										["id"] = "Concussive Shot",
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Serpent Sting"] = {
-										["activedamt"] = 0,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["uptime"] = 15,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Poklopac",
-							["spell_cast"] = {
-								["Arcane Shot"] = 2,
-								["Auto Shot"] = 10,
-								["Concussive Shot"] = 1,
-								["Multi-Shot"] = 2,
-								["Serpent Sting"] = 1,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["buff_uptime"] = 44,
-							["tipo"] = 4,
-							["last_event"] = 1642184313,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									["Aspect of the Cheetah"] = {
-										["activedamt"] = 1,
-										["id"] = "Aspect of the Cheetah",
-										["targets"] = {
-										},
-										["uptime"] = 22,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Adventure Awaits"] = {
-										["activedamt"] = 1,
-										["id"] = "Adventure Awaits",
-										["targets"] = {
-										},
-										["uptime"] = 22,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5239-013D6C3C",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								["Growl"] = 1,
-								["Claw"] = 5,
-							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 193,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Poklopac"] = true,
-				},
-				["CombatStartedAt"] = 151493.464,
-				["tempo_start"] = 1642184291,
-				["cleu_timeline"] = {
-				},
-				["alternate_power"] = {
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Sparkleshell Borer",
-				["combat_counter"] = 9057,
-				["playing_solo"] = true,
-				["totals"] = {
-					1517.956682, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = -0.01152899999999031,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 151514.998,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:18:12",
-				["end_time"] = 151514.998,
-				["totals_grupo"] = {
-					892, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["combat_id"] = 193,
-				["TotalElapsedCombatTime"] = 21.5339999999851,
-				["frags_need_refresh"] = true,
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Poklopac"] = 1233.004028,
-						}, -- [1]
-					},
-				},
-				["frags"] = {
-					["Sparkleshell Borer"] = 1,
-				},
-				["data_fim"] = "19:18:33",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 151493.464,
-				["TimeData"] = {
-				},
-				["pvp"] = true,
-			}, -- [1]
-			{
-				{
-					["combatId"] = 192,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.0061,
-							["damage_from"] = {
-								["Sparkleshell Borer"] = true,
-							},
-							["targets"] = {
-								["Sparkleshell Borer"] = 1253,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 882.0061000000001,
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1642184274,
-							["dps_started"] = false,
-							["total"] = 1253.0061,
-							["colocacao"] = 1,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Poklopac",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 0,
-										["targets"] = {
-											["Sparkleshell Borer"] = 41,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 41,
-										["counter"] = 1,
-										["total"] = 41,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Multi-Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 83,
-										["targets"] = {
-											["Sparkleshell Borer"] = 83,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 83,
-										["n_min"] = 83,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 83,
-										["c_max"] = 0,
-										["id"] = "Multi-Shot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
@@ -691,848 +125,38 @@ _detalhes_database = {
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 59,
-										["targets"] = {
-											["Sparkleshell Borer"] = 101,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 101,
-										["n_min"] = 42,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 101,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 42,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 44,
-										["targets"] = {
-											["Sparkleshell Borer"] = 545,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 545,
-										["n_min"] = 24,
-										["g_dmg"] = 0,
-										["counter"] = 15,
-										["total"] = 545,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 24,
-										["n_amt"] = 14,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Sparkleshell Borer"] = 112,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 112,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 112,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 28,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 2,
-										["c_min"] = 0,
-									},
 								},
 							},
 							["grupo"] = true,
-							["serial"] = "Player-5239-013D6C3C",
-							["last_dps"] = 48.68311834639096,
+							["end_time"] = 1642295890,
+							["last_dps"] = 53.46476272899186,
 							["custom"] = 0,
-							["last_event"] = 1642184274,
-							["damage_taken"] = 9.0061,
-							["start_time"] = 1642184248,
-							["delay"] = 0,
 							["tipo"] = 1,
+							["damage_taken"] = 0.004012,
+							["start_time"] = 1642295873,
+							["delay"] = 0,
+							["last_event"] = 1642295890,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004515,
+							["totalabsorbed"] = 0.001133,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
 							["damage_from"] = {
-								["Sparkleshell Borer"] = true,
+								["Boiling Elemental"] = true,
 							},
 							["targets"] = {
-								["Sparkleshell Borer"] = 371,
+								["Boiling Elemental"] = 462,
 							},
 							["pets"] = {
 							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 462.001133,
+							["dps_started"] = false,
+							["total"] = 462.001133,
 							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 371.004515,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["end_time"] = 1642184274,
-							["dps_started"] = false,
-							["total"] = 371.004515,
-							["on_hold"] = false,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 1,
-										["c_dmg"] = 98,
-										["g_amt"] = 11,
-										["n_max"] = 22,
-										["targets"] = {
-											["Sparkleshell Borer"] = 301,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 28,
-										["DODGE"] = 1,
-										["n_min"] = 6,
-										["g_dmg"] = 175,
-										["counter"] = 23,
-										["a_amt"] = 0,
-										["total"] = 301,
-										["c_max"] = 52,
-										["MISS"] = 5,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 2,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 6,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 46,
-									},
-									["Claw"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Sparkleshell Borer"] = 70,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 70,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["MISS"] = 1,
-										["total"] = 70,
-										["c_max"] = 0,
-										["DODGE"] = 2,
-										["id"] = "Claw",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1642184291,
-							["damage_taken"] = 666.004515,
-							["start_time"] = 1642184248,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.004364,
-							["damage_from"] = {
-								["Lonac <Poklopac>"] = true,
-								["Poklopac"] = true,
-							},
-							["targets"] = {
-								["Lonac <Poklopac>"] = 666,
-								["Poklopac"] = 9,
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["end_time"] = 1642184274,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 675.004364,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 675.004364,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-5208-1-4308-4144-000061BDF9",
-							["nome"] = "Sparkleshell Borer",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 1,
-										["c_dmg"] = 124,
-										["g_amt"] = 0,
-										["n_max"] = 51,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 504,
-											["Lonac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 380,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 14,
-										["DODGE"] = 1,
-										["total"] = 504,
-										["c_max"] = 65,
-										["MISS"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 33,
-										["n_amt"] = 10,
-										["r_amt"] = 0,
-										["c_min"] = 59,
-									},
-									["Lightning Hide"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 162,
-											["Poklopac"] = 9,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 171,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 19,
-										["total"] = 171,
-										["c_max"] = 0,
-										["id"] = "Lightning Hide",
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 19,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 1253.004364,
-							["start_time"] = 1642184248,
-							["delay"] = 0,
-							["last_event"] = 1642184274,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 192,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 192,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 192,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime"] = 15,
-							["debuff_uptime_targets"] = {
-							},
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									["Hunter's Mark"] = {
-										["activedamt"] = -1,
-										["id"] = "Hunter's Mark",
-										["targets"] = {
-										},
-										["actived_at"] = 1642184274,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Serpent Sting"] = {
-										["activedamt"] = 0,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["uptime"] = 15,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Poklopac",
-							["spell_cast"] = {
-								["Auto Shot"] = 15,
-								["Arcane Shot"] = 2,
-								["Multi-Shot"] = 1,
-								["Serpent Sting"] = 1,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["buff_uptime"] = 52,
-							["tipo"] = 4,
-							["last_event"] = 1642184274,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									["Aspect of the Cheetah"] = {
-										["activedamt"] = 1,
-										["id"] = "Aspect of the Cheetah",
-										["targets"] = {
-										},
-										["uptime"] = 26,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Adventure Awaits"] = {
-										["activedamt"] = 1,
-										["id"] = "Adventure Awaits",
-										["targets"] = {
-										},
-										["uptime"] = 26,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-5239-013D6C3C",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								["Growl"] = 4,
-								["Claw"] = 6,
-							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 192,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Poklopac"] = true,
-				},
-				["CombatStartedAt"] = 151450.212,
-				["tempo_start"] = 1642184248,
-				["cleu_timeline"] = {
-				},
-				["alternate_power"] = {
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Sparkleshell Borer",
-				["combat_counter"] = 9056,
-				["playing_solo"] = true,
-				["totals"] = {
-					1928, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 151476.45,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:17:29",
-				["end_time"] = 151476.45,
-				["totals_grupo"] = {
-					882, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["combat_id"] = 192,
-				["TotalElapsedCombatTime"] = 26.23800000001211,
-				["frags_need_refresh"] = true,
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Poklopac"] = 1253.0061,
-						}, -- [1]
-					},
-				},
-				["frags"] = {
-					["Sparkleshell Borer"] = 1,
-				},
-				["data_fim"] = "19:17:55",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 151450.212,
-				["TimeData"] = {
-				},
-				["pvp"] = true,
-			}, -- [2]
-			{
-				{
-					["combatId"] = 191,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001743,
-							["damage_from"] = {
-								["Saltstone Gazer"] = true,
-							},
-							["targets"] = {
-								["Saltstone Gazer"] = 1282,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["on_hold"] = false,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 838.001743,
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1642184201,
-							["dps_started"] = false,
-							["total"] = 1282.001743,
-							["colocacao"] = 1,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Poklopac",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["Raptor Strike"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 95,
-										["targets"] = {
-											["Saltstone Gazer"] = 95,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 95,
-										["n_min"] = 95,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 95,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = "Raptor Strike",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 3,
-										["n_max"] = 0,
-										["targets"] = {
-											["Saltstone Gazer"] = 48,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 48,
-										["counter"] = 3,
-										["total"] = 48,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Saltstone Gazer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 42,
-										["targets"] = {
-											["Saltstone Gazer"] = 373,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 373,
-										["n_min"] = 17,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 373,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 17,
-										["n_amt"] = 10,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Saltstone Gazer"] = 322,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 322,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 322,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 14,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 12,
-										["r_amt"] = 1,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-5239-013D6C3C",
-							["last_dps"] = 26.36615887543349,
-							["custom"] = 0,
-							["last_event"] = 1642184201,
-							["damage_taken"] = 280.001743,
-							["start_time"] = 1642184153,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008184,
-							["damage_from"] = {
-								["Lonac <Poklopac>"] = true,
-								["Poklopac"] = true,
-							},
-							["targets"] = {
-								["Lonac <Poklopac>"] = 302,
-								["Poklopac"] = 280,
-							},
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5208-1-4308-4150-000061BDCF",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 582.008184,
-							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 582.008184,
-							["end_time"] = 1642184201,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Saltstone Gazer",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 2,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 66,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 302,
-											["Poklopac"] = 280,
-											["Lonac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 582,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 15,
-										["total"] = 582,
-										["c_max"] = 0,
-										["MISS"] = 2,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 65,
-										["n_amt"] = 13,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Crystal Gaze"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Crystal Gaze",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1642184200,
-							["damage_taken"] = 1282.008184,
-							["start_time"] = 1642184166,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004376,
-							["damage_from"] = {
-								["Saltstone Gazer"] = true,
-							},
-							["targets"] = {
-								["Saltstone Gazer"] = 444,
-							},
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 444.004376,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["end_time"] = 1642184201,
-							["dps_started"] = false,
-							["total"] = 444.004376,
-							["on_hold"] = false,
 							["ownerName"] = "Poklopac",
 							["nome"] = "Lonac <Poklopac>",
 							["spells"] = {
@@ -1545,16 +169,16 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Saltstone Gazer"] = 0,
+											["Boiling Elemental"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 3,
+										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 3,
+										["RESIST"] = 1,
 										["id"] = "Growl",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -1573,144 +197,206 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 20,
+										["n_max"] = 24,
 										["targets"] = {
-											["Saltstone Gazer"] = 114,
+											["Boiling Elemental"] = 89,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 114,
-										["MISS"] = 1,
-										["n_min"] = 18,
+										["n_dmg"] = 89,
+										["n_min"] = 20,
 										["g_dmg"] = 0,
-										["counter"] = 9,
-										["DODGE"] = 1,
-										["total"] = 114,
+										["counter"] = 5,
+										["total"] = 89,
 										["c_max"] = 0,
-										["a_amt"] = 0,
+										["MISS"] = 1,
 										["id"] = "Claw",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["PARRY"] = 1,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 4,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
 									["!Melee"] = {
-										["c_amt"] = 3,
-										["b_amt"] = 1,
-										["c_dmg"] = 130,
-										["g_amt"] = 18,
-										["n_max"] = 18,
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 195,
+										["g_amt"] = 0,
+										["n_max"] = 29,
 										["targets"] = {
-											["Saltstone Gazer"] = 330,
+											["Boiling Elemental"] = 373,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 38,
-										["MISS"] = 2,
-										["n_min"] = 3,
-										["g_dmg"] = 162,
-										["counter"] = 31,
-										["DODGE"] = 2,
-										["total"] = 330,
-										["c_max"] = 48,
-										["a_amt"] = 0,
+										["n_dmg"] = 178,
+										["n_min"] = 23,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["MISS"] = 3,
+										["total"] = 373,
+										["c_max"] = 50,
+										["DODGE"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["PARRY"] = 3,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 3,
-										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
 										["r_amt"] = 0,
-										["c_min"] = 40,
+										["c_min"] = 47,
 									},
 								},
 							},
-							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
+							["end_time"] = 1642295890,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1642184201,
-							["damage_taken"] = 302.004376,
-							["start_time"] = 1642184168,
-							["delay"] = 1642184172,
 							["tipo"] = 1,
+							["damage_taken"] = 362.001133,
+							["start_time"] = 1642295873,
+							["delay"] = 0,
+							["last_event"] = 1642295890,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.008903,
+							["monster"] = true,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 362,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 362.008903,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 362.008903,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5208-1-4308-10757-0000636BA0",
+							["nome"] = "Boiling Elemental",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 68,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 306,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 306,
+										["n_min"] = 32,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 306,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 176,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 4,
+										["c_min"] = 0,
+									},
+									["Steam Jet"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 56,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 56,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 56,
+										["n_min"] = 56,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 56,
+										["c_max"] = 0,
+										["id"] = "Steam Jet",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295890,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 902.008903,
+							["start_time"] = 1642295873,
+							["delay"] = 0,
+							["last_event"] = 1642295888,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 191,
+					["combatId"] = 326,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 191,
+					["combatId"] = 326,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 191,
+					["combatId"] = 326,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime"] = 99,
+							["debuff_uptime"] = 0,
 							["debuff_uptime_targets"] = {
 							},
 							["debuff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Hunter's Mark"] = {
-										["activedamt"] = 0,
+										["activedamt"] = -1,
 										["id"] = "Hunter's Mark",
 										["targets"] = {
 										},
-										["uptime"] = 47,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Concussive Shot"] = {
-										["activedamt"] = 0,
-										["id"] = "Concussive Shot",
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Dazed"] = {
-										["activedamt"] = 0,
-										["id"] = "Dazed",
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
-										["refreshamt"] = 4,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Serpent Sting"] = {
-										["activedamt"] = -1,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["uptime"] = 36,
-										["appliedamt"] = 2,
+										["actived_at"] = 1642295890,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -1722,19 +408,16 @@ _detalhes_database = {
 							["grupo"] = true,
 							["nome"] = "Poklopac",
 							["spell_cast"] = {
-								["Raptor Strike"] = 2,
+								["Auto Shot"] = 9,
+								["Serpent Sting"] = 1,
 								["Arcane Shot"] = 1,
-								["Auto Shot"] = 12,
-								["Concussive Shot"] = 1,
-								["Hunter's Mark"] = 1,
-								["Serpent Sting"] = 2,
 							},
 							["pets"] = {
 								"Lonac <Poklopac>", -- [1]
 							},
-							["buff_uptime"] = 96,
+							["buff_uptime"] = 34,
 							["tipo"] = 4,
-							["last_event"] = 1642184201,
+							["last_event"] = 1642295890,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
@@ -1743,7 +426,7 @@ _detalhes_database = {
 										["id"] = "Aspect of the Cheetah",
 										["targets"] = {
 										},
-										["uptime"] = 48,
+										["uptime"] = 17,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -1754,7 +437,7 @@ _detalhes_database = {
 										["id"] = "Adventure Awaits",
 										["targets"] = {
 										},
-										["uptime"] = 48,
+										["uptime"] = 17,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -1774,31 +457,31 @@ _detalhes_database = {
 							["classe"] = "PET",
 							["tipo"] = 4,
 							["spell_cast"] = {
-								["Growl"] = 5,
-								["Claw"] = 9,
+								["Growl"] = 3,
+								["Claw"] = 5,
 							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
 							["last_event"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Saltstone Gazer",
+							["nome"] = "Boiling Elemental",
 							["tipo"] = 4,
 							["pets"] = {
 							},
 							["fight_component"] = true,
 							["spell_cast"] = {
-								["Crystal Gaze"] = 1,
+								["Steam Jet"] = 1,
 							},
 							["last_event"] = 0,
 							["monster"] = true,
-							["serial"] = "Creature-0-5208-1-4308-4150-000061BDCF",
+							["serial"] = "Creature-0-5208-1-4308-10757-0000636BA0",
 							["classe"] = "UNKNOW",
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 191,
+					["combatId"] = 326,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -1806,19 +489,19 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Poklopac"] = true,
 				},
-				["tempo_start"] = 1642184153,
+				["tempo_start"] = 1642295873,
 				["cleu_timeline"] = {
 				},
 				["alternate_power"] = {
 				},
-				["TotalElapsedCombatTime"] = 151403.507,
-				["enemy"] = "Saltstone Gazer",
+				["TotalElapsedCombatTime"] = 389988.248,
+				["enemy"] = "Boiling Elemental",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					1864, -- [1]
+					1264, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1841,7 +524,7 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					838, -- [1]
+					440, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1883,91 +566,63 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Poklopac"] = 1282.001743,
+							["Poklopac"] = 902.004012,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 151403.507,
+				["end_time"] = 389988.248,
 				["instance_type"] = "none",
-				["combat_id"] = 191,
-				["combat_counter"] = 9055,
+				["combat_id"] = 326,
+				["combat_counter"] = 9198,
 				["player_last_events"] = {
 				},
-				["CombatEndedAt"] = 151403.507,
+				["CombatEndedAt"] = 389988.248,
 				["spells_cast_timeline"] = {
 				},
-				["data_fim"] = "19:16:42",
-				["data_inicio"] = "19:15:53",
+				["data_fim"] = "02:18:11",
+				["data_inicio"] = "02:17:54",
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
-					["Saltstone Gazer"] = 1,
+					["Boiling Elemental"] = 1,
 				},
-				["start_time"] = 151354.734,
+				["start_time"] = 389971.26,
 				["TimeData"] = {
 				},
-				["contra"] = "Saltstone Gazer",
-			}, -- [3]
+				["contra"] = "Boiling Elemental",
+			}, -- [1]
 			{
 				{
-					["combatId"] = 190,
+					["combatId"] = 325,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002082,
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.005285,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Saltstone Gazer"] = 1303,
+								["Grimtotem Geomancer"] = 696,
 							},
 							["pets"] = {
 								"Lonac <Poklopac>", -- [1]
 							},
+							["on_hold"] = false,
 							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 890.002082,
+							["total_without_pet"] = 336.005285,
 							["friendlyfire"] = {
 							},
-							["colocacao"] = 1,
+							["end_time"] = 1642295797,
 							["dps_started"] = false,
-							["end_time"] = 1642184130,
+							["total"] = 696.005285,
+							["colocacao"] = 1,
 							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
 							["nome"] = "Poklopac",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									["Multi-Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 78,
-										["targets"] = {
-											["Saltstone Gazer"] = 78,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 78,
-										["n_min"] = 78,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 78,
-										["c_max"] = 0,
-										["id"] = "Multi-Shot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
 									["Arcane Shot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -1975,7 +630,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 59,
 										["targets"] = {
-											["Saltstone Gazer"] = 59,
+											["Grimtotem Geomancer"] = 59,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 59,
@@ -2002,18 +657,18 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 40,
+										["n_max"] = 51,
 										["targets"] = {
-											["Saltstone Gazer"] = 466,
+											["Grimtotem Geomancer"] = 235,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 466,
-										["n_min"] = 33,
+										["n_dmg"] = 235,
+										["n_min"] = 45,
 										["g_dmg"] = 0,
-										["counter"] = 15,
-										["total"] = 466,
+										["counter"] = 6,
+										["total"] = 235,
 										["c_max"] = 0,
-										["MISS"] = 2,
+										["MISS"] = 1,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -2023,7 +678,7 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 13,
+										["n_amt"] = 5,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
@@ -2034,17 +689,17 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 28,
 										["targets"] = {
-											["Saltstone Gazer"] = 287,
+											["Grimtotem Geomancer"] = 42,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 287,
-										["n_min"] = 7,
+										["n_dmg"] = 42,
+										["n_min"] = 14,
 										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 287,
+										["counter"] = 2,
+										["total"] = 42,
 										["c_max"] = 0,
 										["id"] = "Serpent Sting",
-										["r_dmg"] = 63,
+										["r_dmg"] = 14,
 										["spellschool"] = 8,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
@@ -2052,66 +707,598 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 12,
-										["r_amt"] = 4,
+										["n_amt"] = 2,
+										["r_amt"] = 1,
 										["c_min"] = 0,
 									},
 								},
 							},
 							["grupo"] = true,
-							["total"] = 1303.002082,
 							["serial"] = "Player-5239-013D6C3C",
-							["last_dps"] = 36.3499994978616,
+							["last_dps"] = 79.7896692651781,
 							["custom"] = 0,
-							["last_event"] = 1642184129,
-							["damage_taken"] = 0.002082,
-							["start_time"] = 1642184093,
+							["last_event"] = 1642295798,
+							["damage_taken"] = 0.005285,
+							["start_time"] = 1642295788,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.006384,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Grimtotem Geomancer"] = 360,
+							},
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 360.006384,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["end_time"] = 1642295797,
+							["dps_started"] = false,
+							["total"] = 360.006384,
+							["on_hold"] = false,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 126,
+										["g_amt"] = 0,
+										["n_max"] = 32,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 307,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 181,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 307,
+										["c_max"] = 64,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 62,
+									},
+									["Claw"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 53,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 53,
+										["n_min"] = 23,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 53,
+										["c_max"] = 0,
+										["id"] = "Claw",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295797,
+							["damage_taken"] = 0.006384,
+							["start_time"] = 1642295788,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005946,
+							["totalabsorbed"] = 0.006818,
 							["damage_from"] = {
 								["Lonac <Poklopac>"] = true,
 								["Poklopac"] = true,
 							},
 							["targets"] = {
-								["Lonac <Poklopac>"] = 495,
 							},
+							["monster"] = true,
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 495.005946,
-							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1642184130,
-							["friendlyfire_total"] = 0,
+							["total_without_pet"] = 0.006818,
 							["on_hold"] = false,
-							["nome"] = "Saltstone Gazer",
+							["dps_started"] = false,
+							["total"] = 0.006818,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-5208-1-4308-10760-0000637163",
+							["nome"] = "Grimtotem Geomancer",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									["!Melee"] = {
+									["Fireball"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 58,
+										["n_max"] = 0,
 										["targets"] = {
-											["Lonac <Poklopac>"] = 495,
 											["Lonac"] = 0,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 495,
-										["n_min"] = 30,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 13,
-										["total"] = 495,
+										["counter"] = 2,
+										["total"] = 0,
 										["c_max"] = 0,
+										["id"] = "Fireball",
+										["r_dmg"] = 0,
+										["RESIST"] = 2,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295797,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 696.0068180000001,
+							["start_time"] = 1642295797,
+							["delay"] = 0,
+							["last_event"] = 1642295794,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 325,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 325,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 325,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime"] = 8,
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Hunter's Mark"] = {
+										["activedamt"] = -1,
+										["id"] = "Hunter's Mark",
+										["targets"] = {
+										},
+										["actived_at"] = 1642295797,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Serpent Sting"] = {
+										["activedamt"] = 0,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Auto Shot"] = 6,
+								["Arcane Shot"] = 1,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["buff_uptime"] = 18,
+							["tipo"] = 4,
+							["last_event"] = 1642295797,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Aspect of the Cheetah"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Cheetah",
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5239-013D6C3C",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "Grimtotem Geomancer",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Fireball"] = 2,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10760-0000637163",
+							["classe"] = "UNKNOW",
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 1,
+								["Claw"] = 2,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 325,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Poklopac"] = true,
+				},
+				["CombatStartedAt"] = 389970.547,
+				["tempo_start"] = 1642295788,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Grimtotem Geomancer",
+				["combat_counter"] = 9197,
+				["playing_solo"] = true,
+				["totals"] = {
+					696, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 389895.398,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "02:16:29",
+				["end_time"] = 389895.398,
+				["totals_grupo"] = {
+					336, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 325,
+				["TotalElapsedCombatTime"] = 389895.398,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Poklopac"] = 696.005285,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Grimtotem Geomancer"] = 1,
+				},
+				["data_fim"] = "02:16:38",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 389886.37,
+				["contra"] = "Grimtotem Geomancer",
+				["TimeData"] = {
+				},
+			}, -- [2]
+			{
+				{
+					["combatId"] = 324,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.003429,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Grimtotem Bandit"] = 791,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 364.003429,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1642295783,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Poklopac",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 59,
+										["targets"] = {
+											["Grimtotem Bandit"] = 59,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 59,
+										["n_min"] = 59,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 59,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 46,
+										["targets"] = {
+											["Grimtotem Bandit"] = 221,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 221,
+										["n_min"] = 40,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 221,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Grimtotem Bandit"] = 84,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 84,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 84,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 791.003429,
+							["serial"] = "Player-5239-013D6C3C",
+							["last_dps"] = 75.1618613642574,
+							["custom"] = 0,
+							["last_event"] = 1642295782,
+							["damage_taken"] = 0.003429,
+							["start_time"] = 1642295771,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.008713,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["damage_from"] = {
+								["Grimtotem Bandit"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Bandit"] = 427,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 427.008713,
+							["dps_started"] = false,
+							["total"] = 427.008713,
+							["classe"] = "PET",
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 52,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 0,
+											["Grimtotem Bandit"] = 295,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 243,
+										["n_min"] = 24,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 295,
+										["c_max"] = 52,
 										["a_amt"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
@@ -2122,11 +1309,1521 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 12,
+										["n_amt"] = 9,
+										["r_amt"] = 0,
+										["c_min"] = 52,
+									},
+									["Claw"] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 83,
+										["g_amt"] = 0,
+										["n_max"] = 27,
+										["targets"] = {
+											["Grimtotem Bandit"] = 132,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 49,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 132,
+										["c_max"] = 43,
+										["id"] = "Claw",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 40,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295783,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 42.008713,
+							["start_time"] = 1642295771,
+							["delay"] = 0,
+							["last_event"] = 1642295788,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00625,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 42,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 42.00625,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1642295783,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Grimtotem Bandit",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 42,
+											["Lonac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 42,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["a_amt"] = 0,
+										["total"] = 42,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
-									["Crystal Gaze"] = {
+								},
+							},
+							["total"] = 42.00625,
+							["serial"] = "Creature-0-5208-1-4308-10758-0000637129",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295779,
+							["damage_taken"] = 791.00625,
+							["start_time"] = 1642295773,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 324,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 324,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 324,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime"] = 10,
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Hunter's Mark"] = {
+										["activedamt"] = -1,
+										["id"] = "Hunter's Mark",
+										["targets"] = {
+										},
+										["actived_at"] = 1642295782,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Serpent Sting"] = {
+										["activedamt"] = 0,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Auto Shot"] = 7,
+								["Arcane Shot"] = 1,
+								["Serpent Sting"] = 1,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["buff_uptime"] = 24,
+							["tipo"] = 4,
+							["last_event"] = 1642295783,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Aspect of the Cheetah"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Cheetah",
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5239-013D6C3C",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 2,
+								["Claw"] = 4,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 324,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Poklopac"] = true,
+				},
+				["CombatStartedAt"] = 389885.657,
+				["tempo_start"] = 1642295771,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Grimtotem Bandit",
+				["combat_counter"] = 9196,
+				["playing_solo"] = true,
+				["totals"] = {
+					832.994424, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 389880.508,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "02:16:12",
+				["end_time"] = 389880.508,
+				["totals_grupo"] = {
+					364, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 324,
+				["TotalElapsedCombatTime"] = 389880.508,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Poklopac"] = 791.003429,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Grimtotem Bandit"] = 1,
+				},
+				["data_fim"] = "02:16:23",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 389869.386,
+				["contra"] = "Grimtotem Bandit",
+				["TimeData"] = {
+				},
+			}, -- [3]
+			{
+				{
+					["combatId"] = 323,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.001033,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 284,
+							},
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5208-1-4308-10758-00006363BE",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 284.001033,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 284.001033,
+							["end_time"] = 1642295762,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Grimtotem Bandit",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 45,
+										["g_amt"] = 0,
+										["n_max"] = 27,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 280,
+											["Lonac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 235,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 280,
+										["c_max"] = 45,
+										["DODGE"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 10,
+										["r_amt"] = 0,
+										["c_min"] = 45,
+									},
+									["Kick"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 4,
+											["Lonac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 4,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = "Kick",
+										["r_dmg"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295759,
+							["damage_taken"] = 779.001033,
+							["start_time"] = 1642295737,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.004539,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Grimtotem Geomancer"] = 676,
+								["Grimtotem Bandit"] = 779,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 734.004539,
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295762,
+							["dps_started"] = false,
+							["total"] = 1455.004539,
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Poklopac",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Raptor Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 107,
+										["targets"] = {
+											["Grimtotem Bandit"] = 107,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 107,
+										["n_min"] = 107,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 107,
+										["c_max"] = 0,
+										["id"] = "Raptor Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Grimtotem Bandit"] = 143,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 143,
+										["n_min"] = 68,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 143,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 59,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 59,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 59,
+										["n_min"] = 59,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 59,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 53,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 204,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 204,
+										["n_min"] = 50,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 204,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Multi-Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 97,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 97,
+											["Grimtotem Bandit"] = 82,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 179,
+										["n_min"] = 82,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 179,
+										["c_max"] = 0,
+										["id"] = "Multi-Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 42,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 42,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 42,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 14,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 1,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-5239-013D6C3C",
+							["last_dps"] = 60.66816240683315,
+							["custom"] = 0,
+							["last_event"] = 1642295760,
+							["damage_taken"] = 0.004539,
+							["start_time"] = 1642295737,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.005374,
+							["damage_from"] = {
+								["Grimtotem Geomancer"] = true,
+								["Grimtotem Bandit"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Geomancer"] = 274,
+								["Grimtotem Bandit"] = 447,
+							},
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 721.0053740000001,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["end_time"] = 1642295762,
+							["dps_started"] = false,
+							["total"] = 721.0053740000001,
+							["on_hold"] = false,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 2,
+										["b_amt"] = 1,
+										["c_dmg"] = 112,
+										["g_amt"] = 0,
+										["n_max"] = 33,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 217,
+											["Grimtotem Bandit"] = 371,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 476,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 20,
+										["total"] = 588,
+										["c_max"] = 61,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 17,
+										["n_amt"] = 18,
+										["r_amt"] = 0,
+										["c_min"] = 51,
+									},
+									["Claw"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 57,
+											["Grimtotem Bandit"] = 76,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 133,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 133,
+										["c_max"] = 0,
+										["id"] = "Claw",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 9,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295760,
+							["damage_taken"] = 408.005374,
+							["start_time"] = 1642295737,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.004083,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 124,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 124.004083,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1642295762,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Grimtotem Geomancer",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Fireball"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 107,
+										["targets"] = {
+											["Lonac"] = 0,
+											["Lonac <Poklopac>"] = 107,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 107,
+										["n_min"] = 107,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 107,
+										["c_max"] = 0,
+										["id"] = "Fireball",
+										["r_dmg"] = 107,
+										["RESIST"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 1,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 17,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 17,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 17,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 124.004083,
+							["serial"] = "Creature-0-5208-1-4308-10760-00006363D8",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295749,
+							["damage_taken"] = 676.004083,
+							["start_time"] = 1642295759,
+							["delay"] = 1642295749,
+							["tipo"] = 1,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 323,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 323,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 323,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime"] = 15,
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Hunter's Mark"] = {
+										["activedamt"] = 0,
+										["id"] = "Hunter's Mark",
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Serpent Sting"] = {
+										["activedamt"] = 0,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Raptor Strike"] = 1,
+								["Arcane Shot"] = 1,
+								["Auto Shot"] = 4,
+								["Hunter's Mark"] = 1,
+								["Multi-Shot"] = 1,
+								["Serpent Sting"] = 1,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["buff_uptime"] = 50,
+							["tipo"] = 4,
+							["last_event"] = 1642295762,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Aspect of the Cheetah"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Cheetah",
+										["targets"] = {
+										},
+										["uptime"] = 25,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 25,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5239-013D6C3C",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 3,
+								["Claw"] = 6,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["nome"] = "Grimtotem Geomancer",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Fireball"] = 2,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10760-00006363D8",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["nome"] = "Grimtotem Bandit",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Kick"] = 2,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10758-00006363BE",
+							["classe"] = "UNKNOW",
+						}, -- [4]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 323,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Poklopac"] = true,
+				},
+				["CombatStartedAt"] = 389868.704,
+				["tempo_start"] = 1642295737,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Grimtotem Geomancer",
+				["combat_counter"] = 9195,
+				["playing_solo"] = true,
+				["totals"] = {
+					1863, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 389859.744,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "02:15:37",
+				["end_time"] = 389859.744,
+				["totals_grupo"] = {
+					734, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 323,
+				["TotalElapsedCombatTime"] = 389859.744,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Poklopac"] = 1455.004539,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Grimtotem Geomancer"] = 1,
+					["Grimtotem Bandit"] = 1,
+				},
+				["data_fim"] = "02:16:02",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 389834.47,
+				["contra"] = "Grimtotem Bandit",
+				["TimeData"] = {
+				},
+			}, -- [4]
+			{
+				{
+					["combatId"] = 322,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.007006,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Healing Ward <Grimtotem Stomper>"] = 69,
+								["Grimtotem Stomper"] = 741,
+								["Grimtotem Geomancer"] = 617,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 734.007006,
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295688,
+							["dps_started"] = false,
+							["total"] = 1427.007006,
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Poklopac",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 81,
+										["targets"] = {
+											["Grimtotem Stomper"] = 159,
+											["Healing Ward <Grimtotem Stomper>"] = 69,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 228,
+										["n_min"] = 69,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 228,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Raptor Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 102,
+										["targets"] = {
+											["Grimtotem Stomper"] = 102,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 102,
+										["n_min"] = 102,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 102,
+										["c_max"] = 0,
+										["id"] = "Raptor Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 53,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 201,
+											["Grimtotem Stomper"] = 77,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 278,
+										["n_min"] = 38,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 278,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 28,
+											["Grimtotem Stomper"] = 98,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 126,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 126,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 14,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 1,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-5239-013D6C3C",
+							["last_dps"] = 50.54214797762148,
+							["custom"] = 0,
+							["last_event"] = 1642295687,
+							["damage_taken"] = 0.007006,
+							["start_time"] = 1642295659,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.007216,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["damage_from"] = {
+								["Grimtotem Geomancer"] = true,
+								["Grimtotem Stomper"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Geomancer"] = 388,
+								["Grimtotem Stomper"] = 305,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 693.007216,
+							["dps_started"] = false,
+							["total"] = 693.007216,
+							["classe"] = "PET",
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 236,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 274,
+											["Grimtotem Stomper"] = 215,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 253,
+										["n_min"] = 25,
+										["g_dmg"] = 0,
+										["counter"] = 17,
+										["MISS"] = 3,
+										["total"] = 489,
+										["c_max"] = 65,
+										["a_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 9,
+										["r_amt"] = 0,
+										["c_min"] = 53,
+									},
+									["Claw"] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 145,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 114,
+											["Grimtotem Stomper"] = 90,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 59,
+										["n_min"] = 29,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 204,
+										["c_max"] = 55,
+										["MISS"] = 1,
+										["id"] = "Claw",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 42,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295688,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 446.007216,
+							["start_time"] = 1642295668,
+							["delay"] = 1642295678,
+							["last_event"] = 1642295678,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003885,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 117,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 117.003885,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1642295688,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Grimtotem Geomancer",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 33,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 33,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 33,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Fireball"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 84,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 84,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 84,
+										["n_min"] = 84,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 84,
+										["c_max"] = 0,
+										["id"] = "Fireball",
+										["r_dmg"] = 84,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 1,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 117.003885,
+							["serial"] = "Creature-0-5208-1-4308-10760-000063711F",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295664,
+							["damage_taken"] = 617.003885,
+							["start_time"] = 1642295682,
+							["delay"] = 1642295664,
+							["tipo"] = 1,
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.00727,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 329,
+							},
+							["pets"] = {
+								"Healing Ward <Grimtotem Stomper>", -- [1]
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 329.00727,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1642295688,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Grimtotem Stomper",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Healing Ward"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
@@ -2141,7 +2838,7 @@ _detalhes_database = {
 										["counter"] = 0,
 										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = "Crystal Gaze",
+										["id"] = "Healing Ward",
 										["r_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
@@ -2153,151 +2850,159 @@ _detalhes_database = {
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
-								},
-							},
-							["total"] = 495.005946,
-							["serial"] = "Creature-0-5208-1-4308-4150-000061BC48",
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1642184127,
-							["damage_taken"] = 1303.005946,
-							["start_time"] = 1642184103,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.003287,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["damage_from"] = {
-								["Saltstone Gazer"] = true,
-							},
-							["targets"] = {
-								["Saltstone Gazer"] = 413,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 413.003287,
-							["dps_started"] = false,
-							["total"] = 413.003287,
-							["classe"] = "PET",
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
 									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 2,
-										["c_dmg"] = 101,
-										["g_amt"] = 14,
-										["n_max"] = 9,
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 45,
+										["g_amt"] = 0,
+										["n_max"] = 23,
 										["targets"] = {
-											["Saltstone Gazer"] = 279,
+											["Lonac <Poklopac>"] = 172,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 14,
-										["n_min"] = 5,
-										["g_dmg"] = 164,
-										["counter"] = 22,
-										["MISS"] = 1,
-										["total"] = 279,
-										["c_max"] = 52,
-										["a_amt"] = 0,
+										["n_dmg"] = 127,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 172,
+										["c_max"] = 45,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["PARRY"] = 3,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 14,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 49,
-									},
-									["Claw"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Saltstone Gazer"] = 134,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 134,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 8,
 										["a_amt"] = 0,
-										["total"] = 134,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = "Claw",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
 										["r_amt"] = 0,
+										["c_min"] = 45,
+									},
+									["Earth Shock"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 157,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 157,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 157,
+										["n_min"] = 157,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 157,
+										["c_max"] = 0,
+										["id"] = "Earth Shock",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
 								},
 							},
+							["total"] = 329.00727,
+							["serial"] = "Creature-0-5208-1-4308-10759-0000637049",
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1642184130,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295679,
+							["damage_taken"] = 741.0072700000001,
+							["start_time"] = 1642295661,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [4]
+						{
+							["flag_original"] = 74312,
+							["totalabsorbed"] = 0.006776,
+							["serial"] = "Creature-0-5208-1-4308-3560-0000637179",
+							["damage_from"] = {
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.006776,
+							["dps_started"] = false,
+							["total"] = 0.006776,
+							["classe"] = "PET",
+							["ownerName"] = "Grimtotem Stomper",
+							["nome"] = "Healing Ward <Grimtotem Stomper>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295688,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 495.003287,
-							["start_time"] = 1642184098,
+							["damage_taken"] = 69.006776,
+							["start_time"] = 1642295688,
 							["delay"] = 0,
-							["last_event"] = 1642184128,
-						}, -- [3]
+							["last_event"] = 0,
+						}, -- [5]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 190,
+					["combatId"] = 322,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 190,
+					["combatId"] = 322,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 190,
+					["combatId"] = 322,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime"] = 25,
-							["nome"] = "Poklopac",
+							["debuff_uptime"] = 18,
+							["debuff_uptime_targets"] = {
+							},
 							["debuff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									["Serpent Sting"] = {
+									["Hunter's Mark"] = {
 										["activedamt"] = -1,
+										["id"] = "Hunter's Mark",
+										["targets"] = {
+										},
+										["actived_at"] = 1642295666,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Serpent Sting"] = {
+										["activedamt"] = 0,
 										["id"] = "Serpent Sting",
 										["targets"] = {
 										},
-										["uptime"] = 25,
+										["uptime"] = 18,
 										["appliedamt"] = 2,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -2308,20 +3013,18 @@ _detalhes_database = {
 							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 74,
+							["nome"] = "Poklopac",
 							["spell_cast"] = {
-								["Auto Shot"] = 15,
-								["Arcane Shot"] = 1,
-								["Multi-Shot"] = 1,
+								["Auto Shot"] = 7,
+								["Raptor Strike"] = 1,
 								["Serpent Sting"] = 2,
 							},
 							["pets"] = {
 								"Lonac <Poklopac>", -- [1]
 							},
+							["buff_uptime"] = 58,
 							["tipo"] = 4,
-							["last_event"] = 1642184130,
+							["last_event"] = 1642295688,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
@@ -2330,7 +3033,7 @@ _detalhes_database = {
 										["id"] = "Aspect of the Cheetah",
 										["targets"] = {
 										},
-										["uptime"] = 37,
+										["uptime"] = 29,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -2341,7 +3044,736 @@ _detalhes_database = {
 										["id"] = "Adventure Awaits",
 										["targets"] = {
 										},
-										["uptime"] = 37,
+										["uptime"] = 29,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5239-013D6C3C",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 3,
+								["Claw"] = 6,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "Grimtotem Geomancer",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Fireball"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10760-000063711F",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["nome"] = "Grimtotem Stomper",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Healing Ward"] = 1,
+								["Earth Shock"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10759-0000637049",
+							["classe"] = "UNKNOW",
+						}, -- [4]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 322,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Poklopac"] = true,
+				},
+				["CombatStartedAt"] = 389834.048,
+				["tempo_start"] = 1642295659,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Healing Ward <Grimtotem Stomper>",
+				["combat_counter"] = 9194,
+				["playing_solo"] = true,
+				["totals"] = {
+					1873, -- [1]
+					-0.008264, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 389786.354,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "02:14:20",
+				["end_time"] = 389786.354,
+				["totals_grupo"] = {
+					734, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 322,
+				["TotalElapsedCombatTime"] = 29.41899999999441,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Poklopac"] = 1427.007006,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Healing Ward"] = 1,
+					["Grimtotem Stomper"] = 1,
+					["Grimtotem Geomancer"] = 1,
+				},
+				["data_fim"] = "02:14:49",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 389756.935,
+				["contra"] = "Grimtotem Geomancer",
+				["TimeData"] = {
+				},
+			}, -- [5]
+			{
+				{
+					["combatId"] = 321,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.002767,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Grimtotem Stomper"] = 758,
+								["Grimtotem Bandit"] = 1756,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1331.002767,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1642295633,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Poklopac",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 59,
+										["targets"] = {
+											["Grimtotem Bandit"] = 118,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 118,
+										["n_min"] = 59,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 118,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 172,
+										["g_amt"] = 0,
+										["n_max"] = 45,
+										["targets"] = {
+											["Grimtotem Stomper"] = 329,
+											["Grimtotem Bandit"] = 618,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 775,
+										["n_min"] = 36,
+										["g_dmg"] = 0,
+										["counter"] = 21,
+										["total"] = 947,
+										["c_max"] = 88,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 19,
+										["r_amt"] = 0,
+										["c_min"] = 84,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Grimtotem Stomper"] = 84,
+											["Grimtotem Bandit"] = 182,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 266,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 266,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 14,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 10,
+										["r_amt"] = 1,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 2514.002767,
+							["serial"] = "Player-5239-013D6C3C",
+							["last_dps"] = 58.83736114491283,
+							["custom"] = 0,
+							["last_event"] = 1642295629,
+							["damage_taken"] = 0.002767,
+							["start_time"] = 1642295586,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.004875,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["damage_from"] = {
+								["Grimtotem Stomper"] = true,
+								["Grimtotem Bandit"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Stomper"] = 345,
+								["Grimtotem Bandit"] = 838,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1183.004875,
+							["dps_started"] = false,
+							["total"] = 1183.004875,
+							["classe"] = "PET",
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 7,
+										["b_amt"] = 1,
+										["c_dmg"] = 363,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Grimtotem Stomper"] = 318,
+											["Grimtotem Bandit"] = 643,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 598,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 31,
+										["total"] = 961,
+										["c_max"] = 55,
+										["DODGE"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 13,
+										["n_amt"] = 23,
+										["r_amt"] = 0,
+										["c_min"] = 48,
+									},
+									["Claw"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 56,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Grimtotem Stomper"] = 27,
+											["Grimtotem Bandit"] = 195,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 166,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 222,
+										["c_max"] = 56,
+										["id"] = "Claw",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 56,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295633,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 540.004875,
+							["start_time"] = 1642295586,
+							["delay"] = 0,
+							["last_event"] = 1642295628,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.008729,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 172,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 172.008729,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1642295633,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Grimtotem Bandit",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 26,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 163,
+											["Lonac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 163,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["MISS"] = 2,
+										["total"] = 163,
+										["c_max"] = 0,
+										["DODGE"] = 2,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Kick"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 5,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 9,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 9,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 9,
+										["c_max"] = 0,
+										["id"] = "Kick",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 172.008729,
+							["serial"] = "Creature-0-5208-1-4308-10758-0000637111",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295625,
+							["damage_taken"] = 1756.008729,
+							["start_time"] = 1642295607,
+							["delay"] = 1642295594,
+							["tipo"] = 1,
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.002901,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 368,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 368.002901,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1642295633,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Grimtotem Stomper",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Healing Ward"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Healing Ward",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 42,
+										["g_amt"] = 0,
+										["n_max"] = 25,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 220,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 178,
+										["n_min"] = 19,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 220,
+										["c_max"] = 42,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["r_amt"] = 0,
+										["c_min"] = 42,
+									},
+									["Earth Shock"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 148,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 148,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 148,
+										["n_min"] = 148,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 148,
+										["c_max"] = 0,
+										["id"] = "Earth Shock",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 368.002901,
+							["serial"] = "Creature-0-5208-1-4308-10759-0000637111",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295607,
+							["damage_taken"] = 758.0029010000001,
+							["start_time"] = 1642295613,
+							["delay"] = 1642295607,
+							["tipo"] = 1,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 321,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 321,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 321,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime"] = 38,
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Hunter's Mark"] = {
+										["activedamt"] = -1,
+										["id"] = "Hunter's Mark",
+										["targets"] = {
+										},
+										["actived_at"] = 1642295596,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Concussive Shot"] = {
+										["activedamt"] = 0,
+										["id"] = "Concussive Shot",
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Serpent Sting"] = {
+										["activedamt"] = 0,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["uptime"] = 34,
+										["appliedamt"] = 3,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Auto Shot"] = 21,
+								["Concussive Shot"] = 1,
+								["Arcane Shot"] = 2,
+								["Serpent Sting"] = 3,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["buff_uptime"] = 94,
+							["tipo"] = 4,
+							["last_event"] = 1642295633,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Aspect of the Cheetah"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Cheetah",
+										["targets"] = {
+										},
+										["uptime"] = 47,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 47,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -2364,28 +3796,44 @@ _detalhes_database = {
 								["Growl"] = 3,
 								["Claw"] = 8,
 							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
 							["last_event"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Saltstone Gazer",
+							["nome"] = "Grimtotem Bandit",
 							["tipo"] = 4,
 							["pets"] = {
 							},
 							["fight_component"] = true,
 							["spell_cast"] = {
-								["Crystal Gaze"] = 1,
+								["Kick"] = 2,
 							},
 							["last_event"] = 0,
 							["monster"] = true,
-							["serial"] = "Creature-0-5208-1-4308-4150-000061BC48",
+							["serial"] = "Creature-0-5208-1-4308-10758-0000637111",
 							["classe"] = "UNKNOW",
 						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["nome"] = "Grimtotem Stomper",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Healing Ward"] = 1,
+								["Earth Shock"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10759-0000637111",
+							["classe"] = "UNKNOW",
+						}, -- [4]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 190,
+					["combatId"] = 321,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -2393,20 +3841,20 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Poklopac"] = true,
 				},
-				["CombatStartedAt"] = 151350.831,
-				["tempo_start"] = 1642184093,
+				["CombatStartedAt"] = 389684.373,
+				["tempo_start"] = 1642295586,
 				["cleu_timeline"] = {
 				},
 				["alternate_power"] = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Saltstone Gazer",
-				["combat_counter"] = 9054,
+				["enemy"] = "Grimtotem Stomper",
+				["combat_counter"] = 9193,
 				["playing_solo"] = true,
 				["totals"] = {
-					1798, -- [1]
-					0, -- [2]
+					3054, -- [1]
+					-0.009713, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -2432,15 +3880,15 @@ _detalhes_database = {
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["CombatEndedAt"] = 151332.249,
+				["CombatEndedAt"] = 389730.969,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "19:14:54",
-				["end_time"] = 151332.249,
+				["data_inicio"] = "02:13:07",
+				["end_time"] = 389730.969,
 				["totals_grupo"] = {
-					890, -- [1]
+					1331, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -2460,8 +3908,8 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 190,
-				["TotalElapsedCombatTime"] = 151332.249,
+				["combat_id"] = 321,
+				["TotalElapsedCombatTime"] = 46.59599999996135,
 				["frags_need_refresh"] = true,
 				["PhaseData"] = {
 					{
@@ -2478,2298 +3926,809 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Poklopac"] = 1303.002082,
+							["Poklopac"] = 2514.002767,
 						}, -- [1]
 					},
 				},
 				["frags"] = {
-					["Saltstone Gazer"] = 1,
+					["Grimtotem Bandit"] = 2,
+					["Grimtotem Stomper"] = 1,
+					["Healing Ward"] = 1,
 				},
-				["data_fim"] = "19:15:31",
+				["data_fim"] = "02:13:54",
 				["instance_type"] = "none",
 				["CombatSkillCache"] = {
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 151295.236,
-				["contra"] = "Saltstone Gazer",
+				["start_time"] = 389684.373,
+				["contra"] = "Grimtotem Bandit",
 				["TimeData"] = {
-				},
-			}, -- [4]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 189,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005767,
-							["damage_from"] = {
-								["Saltstone Gazer"] = true,
-							},
-							["targets"] = {
-								["Saltstone Gazer"] = 1358,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1028.005767,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 1358.005767,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
-							["nome"] = "Poklopac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 0,
-										["targets"] = {
-											["Saltstone Gazer"] = 7,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 7,
-										["counter"] = 1,
-										["total"] = 7,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Saltstone Gazer"] = 189,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 189,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 18,
-										["total"] = 189,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 189,
-										["r_amt"] = 18,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 18,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 4,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 46,
-										["targets"] = {
-											["Saltstone Gazer"] = 735,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 735,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
-										["counter"] = 23,
-										["total"] = 735,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 96,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 19,
-										["spellschool"] = 1,
-										["MISS"] = 4,
-									},
-									["Multi-Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 79,
-										["targets"] = {
-											["Saltstone Gazer"] = 79,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 79,
-										["n_min"] = 79,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 79,
-										["c_max"] = 0,
-										["id"] = "Multi-Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Wing Clip"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Saltstone Gazer"] = 3,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 3,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 3,
-										["c_max"] = 0,
-										["id"] = "Wing Clip",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 15,
-										["targets"] = {
-											["Saltstone Gazer"] = 15,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 15,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 15,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 15,
-										["r_amt"] = 1,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 19.81362096033212,
-							["colocacao"] = 1,
-							["last_event"] = 1642183955,
-							["damage_taken"] = 153.005767,
-							["start_time"] = 1642183887,
-							["serial"] = "Player-5239-013D6C3C",
-							["end_time"] = 1642183956,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008058,
-							["damage_from"] = {
-								["Lonac <Poklopac>"] = true,
-								["Poklopac"] = true,
-							},
-							["targets"] = {
-								["Lonac <Poklopac>"] = 801,
-								["Poklopac"] = 153,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["end_time"] = 1642183956,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 954.008058,
-							["delay"] = 1642183911,
-							["fight_component"] = true,
-							["total"] = 954.008058,
-							["dps_started"] = false,
-							["damage_taken"] = 1358.008058,
-							["nome"] = "Saltstone Gazer",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["c_dmg"] = 66,
-										["g_amt"] = 0,
-										["n_max"] = 81,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 801,
-											["Poklopac"] = 153,
-											["Lonac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 888,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 24,
-										["r_amt"] = 0,
-										["total"] = 954,
-										["c_max"] = 66,
-										["spellschool"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["b_dmg"] = 37,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 66,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 19,
-										["DODGE"] = 3,
-										["a_amt"] = 0,
-									},
-									["Crystal Gaze"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Crystal Gaze",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1642183954,
-							["on_hold"] = false,
-							["start_time"] = 1642183902,
-							["serial"] = "Creature-0-5208-1-4308-4150-000061BBEF",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002494,
-							["damage_from"] = {
-								["Saltstone Gazer"] = true,
-							},
-							["targets"] = {
-								["Saltstone Gazer"] = 330,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 801.0024940000001,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 330.002494,
-							["classe"] = "PET",
-							["dps_started"] = false,
-							["total"] = 330.002494,
-							["delay"] = 0,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Growl"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Saltstone Gazer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Growl",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["RESIST"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Claw"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Saltstone Gazer"] = 125,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 125,
-										["total"] = 125,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 14,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-										["c_max"] = 0,
-										["b_dmg"] = 3,
-										["id"] = "Claw",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 5,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 6,
-										["DODGE"] = 1,
-										["MISS"] = 2,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 33,
-										["n_max"] = 21,
-										["targets"] = {
-											["Saltstone Gazer"] = 205,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 26,
-										["total"] = 205,
-										["n_min"] = 5,
-										["g_dmg"] = 179,
-										["counter"] = 48,
-										["DODGE"] = 3,
-										["r_amt"] = 0,
-										["c_max"] = 0,
-										["b_dmg"] = 5,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 7,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["MISS"] = 3,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1642183955,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1642183890,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["end_time"] = 1642183956,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 189,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 189,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 189,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Hunter's Mark"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 1,
-										["id"] = "Hunter's Mark",
-										["uptime"] = 67,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Concussive Shot"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Concussive Shot",
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									["Wing Clip"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Wing Clip",
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Serpent Sting"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = -1,
-										["refreshamt"] = 0,
-										["id"] = "Serpent Sting",
-										["uptime"] = 61,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Aspect of the Cheetah"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Aspect of the Cheetah",
-										["uptime"] = 20,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Aspect of the Hawk"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Aspect of the Hawk",
-										["uptime"] = 49,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Adventure Awaits"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Adventure Awaits",
-										["uptime"] = 69,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 146,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Disengage"] = 1,
-								["Auto Shot"] = 23,
-								["Aspect of the Hawk"] = 1,
-								["Serpent Sting"] = 3,
-								["Multi-Shot"] = 1,
-								["Hunter's Mark"] = 2,
-								["Concussive Shot"] = 2,
-								["Wing Clip"] = 1,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Poklopac",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 138,
-							["serial"] = "Player-5239-013D6C3C",
-							["last_event"] = 1642183956,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Growl"] = 6,
-								["Claw"] = 14,
-							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["classe"] = "PET",
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["last_event"] = 0,
-							["nome"] = "Saltstone Gazer",
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Crystal Gaze"] = 1,
-							},
-							["tipo"] = 4,
-							["monster"] = true,
-							["serial"] = "Creature-0-5208-1-4308-4150-000061BBEF",
-							["fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 189,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Poklopac"] = true,
-				},
-				["CombatStartedAt"] = 151291.349,
-				["tempo_start"] = 1642183887,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					2311.992524, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:12:36",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Saltstone Gazer",
-				["TotalElapsedCombatTime"] = 151157.307,
-				["CombatEndedAt"] = 151157.307,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:11:27",
-				["end_time"] = 151157.307,
-				["combat_id"] = 189,
-				["totals_grupo"] = {
-					1028, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags"] = {
-					["Saltstone Gazer"] = 1,
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Poklopac"] = 1358.005767,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_counter"] = 9050,
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Saltstone Gazer",
-				["start_time"] = 151088.768,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [5]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 188,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001752,
-							["damage_from"] = {
-								["Lonac <Poklopac>"] = true,
-								["Poklopac"] = true,
-							},
-							["targets"] = {
-								["Lonac <Poklopac>"] = 569,
-							},
-							["pets"] = {
-							},
-							["total"] = 569.001752,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 569.001752,
-							["delay"] = 0,
-							["fight_component"] = true,
-							["end_time"] = 1642183871,
-							["monster"] = true,
-							["damage_taken"] = 1279.001752,
-							["nome"] = "Saltstone Gazer",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 1,
-										["c_dmg"] = 132,
-										["g_amt"] = 0,
-										["n_max"] = 59,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 569,
-											["Lonac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 437,
-										["total"] = 569,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 17,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-										["c_max"] = 72,
-										["b_dmg"] = 32,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 60,
-										["m_crit"] = 0,
-										["PARRY"] = 2,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 11,
-										["MISS"] = 1,
-										["DODGE"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1642183867,
-							["on_hold"] = false,
-							["start_time"] = 1642183840,
-							["serial"] = "Creature-0-5208-1-4308-4150-000061BBB6",
-							["classe"] = "UNKNOW",
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["totalabsorbed"] = 0.003923,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Saltstone Gazer"] = 1279,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["end_time"] = 1642183871,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 857.003923,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 1279.003923,
-							["on_hold"] = false,
-							["damage_taken"] = 0.003923,
-							["nome"] = "Poklopac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Saltstone Gazer"] = 224,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 224,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 224,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 43,
-										["targets"] = {
-											["Saltstone Gazer"] = 434,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 434,
-										["n_min"] = 37,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 434,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 11,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									},
-									["Multi-Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 81,
-										["targets"] = {
-											["Saltstone Gazer"] = 81,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 81,
-										["n_min"] = 81,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 81,
-										["c_max"] = 0,
-										["id"] = "Multi-Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 59,
-										["targets"] = {
-											["Saltstone Gazer"] = 118,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 118,
-										["n_min"] = 59,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 118,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["spellschool"] = 64,
-										["MISS"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 42.01583137870403,
-							["colocacao"] = 1,
-							["last_event"] = 1642183870,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1642183840,
-							["serial"] = "Player-5239-013D6C3C",
-							["friendlyfire_total"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.006839,
-							["damage_from"] = {
-								["Saltstone Gazer"] = true,
-							},
-							["targets"] = {
-								["Saltstone Gazer"] = 422,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 569.006839,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 422.006839,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 422.006839,
-							["delay"] = 0,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Growl"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Saltstone Gazer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Growl",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["RESIST"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Claw"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 81,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Saltstone Gazer"] = 172,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 91,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 172,
-										["c_max"] = 43,
-										["r_amt"] = 0,
-										["id"] = "Claw",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 38,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 3,
-										["b_amt"] = 1,
-										["c_dmg"] = 136,
-										["g_amt"] = 10,
-										["n_max"] = 5,
-										["targets"] = {
-											["Saltstone Gazer"] = 250,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 5,
-										["total"] = 250,
-										["n_min"] = 5,
-										["g_dmg"] = 109,
-										["counter"] = 26,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-										["c_max"] = 50,
-										["b_dmg"] = 5,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 43,
-										["m_crit"] = 0,
-										["PARRY"] = 9,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 1,
-										["MISS"] = 1,
-										["DODGE"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1642183870,
-							["on_hold"] = false,
-							["start_time"] = 1642183840,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["end_time"] = 1642183871,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 188,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 188,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 188,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Hunter's Mark"] = {
-										["activedamt"] = -1,
-										["id"] = "Hunter's Mark",
-										["targets"] = {
-										},
-										["actived_at"] = 1642183870,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-									["Serpent Sting"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Serpent Sting",
-										["uptime"] = 24,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Adventure Awaits"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Adventure Awaits",
-										["uptime"] = 31,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Aspect of the Cheetah"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Aspect of the Cheetah",
-										["uptime"] = 31,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 24,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 13,
-								["Serpent Sting"] = 2,
-								["Multi-Shot"] = 1,
-								["Arcane Shot"] = 3,
-							},
-							["nome"] = "Poklopac",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 62,
-							["serial"] = "Player-5239-013D6C3C",
-							["last_event"] = 1642183871,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Growl"] = 3,
-								["Claw"] = 6,
-							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["classe"] = "PET",
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 188,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Poklopac"] = true,
-				},
-				["CombatStartedAt"] = 151085.098,
-				["tempo_start"] = 1642183840,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1848, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:11:11",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Saltstone Gazer",
-				["TotalElapsedCombatTime"] = 30.77499999999418,
-				["CombatEndedAt"] = 151072.221,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:10:40",
-				["end_time"] = 151072.221,
-				["combat_id"] = 188,
-				["totals_grupo"] = {
-					857, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Poklopac"] = 1279.003923,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_counter"] = 9049,
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 151041.446,
-				["contra"] = "Saltstone Gazer",
-				["frags"] = {
-					["Saltstone Gazer"] = 1,
 				},
 			}, -- [6]
 			{
 				{
+					["combatId"] = 320,
 					["tipo"] = 2,
-					["combatId"] = 187,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1047,
-							["totalabsorbed"] = 0.00672,
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003673,
 							["damage_from"] = {
+								["Grimtotem Bandit"] = true,
 							},
 							["targets"] = {
-								["Sparkleshell Borer"] = 1185,
+								["Grimtotem Bandit"] = 767,
 							},
 							["pets"] = {
 								"Lonac <Poklopac>", -- [1]
 							},
-							["end_time"] = 1642183793,
-							["tipo"] = 1,
 							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 791.00672,
-							["delay"] = 0,
+							["total_without_pet"] = 402.003673,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
 							["dps_started"] = false,
-							["total"] = 1185.00672,
+							["end_time"] = 1642295582,
+							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
-							["damage_taken"] = 0.00672,
 							["nome"] = "Poklopac",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									["Arcane Shot"] = {
+									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 59,
+										["n_max"] = 75,
 										["targets"] = {
-											["Sparkleshell Borer"] = 118,
+											["Grimtotem Bandit"] = 141,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 118,
-										["n_min"] = 59,
+										["n_dmg"] = 141,
+										["n_min"] = 66,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 118,
+										["total"] = 141,
 										["c_max"] = 0,
-										["id"] = "Arcane Shot",
+										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 43,
-										["targets"] = {
-											["Sparkleshell Borer"] = 447,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 447,
-										["n_min"] = 38,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 447,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
 										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 11,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
 									},
-									["Multi-Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 86,
-										["targets"] = {
-											["Sparkleshell Borer"] = 86,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 86,
-										["n_min"] = 86,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 86,
-										["c_max"] = 0,
-										["id"] = "Multi-Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Sparkleshell Borer"] = 140,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 140,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 140,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 66.58089223504601,
-							["colocacao"] = 1,
-							["last_event"] = 1642183792,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1642183775,
-							["serial"] = "Player-5239-013D6C3C",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.00724,
-							["damage_from"] = {
-								["Lonac <Poklopac>"] = true,
-								["Poklopac"] = true,
-							},
-							["targets"] = {
-								["Lonac <Poklopac>"] = 471,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1642183792,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 471.00724,
-							["end_time"] = 1642183793,
-							["dps_started"] = false,
-							["total"] = 471.00724,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-							["nome"] = "Sparkleshell Borer",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 40,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 313,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 313,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 313,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 40,
-										["n_amt"] = 10,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Lightning Hide"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 158,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 158,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 18,
-										["total"] = 158,
-										["c_max"] = 0,
-										["id"] = "Lightning Hide",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 18,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 1185.00724,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1642183775,
-							["serial"] = "Creature-0-5208-1-4308-4144-000061B5D2",
-							["fight_component"] = true,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.005756,
-							["damage_from"] = {
-								["Sparkleshell Borer"] = true,
-							},
-							["targets"] = {
-								["Sparkleshell Borer"] = 394,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 471.005756,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 394.005756,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 394.005756,
-							["delay"] = 0,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Growl"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Sparkleshell Borer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Growl",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Claw"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["c_dmg"] = 48,
-										["g_amt"] = 0,
-										["n_max"] = 24,
-										["targets"] = {
-											["Sparkleshell Borer"] = 100,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 52,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["r_amt"] = 0,
-										["total"] = 100,
-										["c_max"] = 48,
-										["spellschool"] = 1,
-										["id"] = "Claw",
-										["r_dmg"] = 0,
-										["b_dmg"] = 8,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 48,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 3,
-										["MISS"] = 1,
-										["DODGE"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 7,
-										["n_max"] = 26,
-										["targets"] = {
-											["Sparkleshell Borer"] = 294,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 152,
-										["n_min"] = 6,
-										["g_dmg"] = 142,
-										["counter"] = 15,
-										["total"] = 294,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 6,
-										["n_amt"] = 7,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1642183792,
-							["on_hold"] = false,
-							["start_time"] = 1642183775,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["end_time"] = 1642183793,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 187,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 187,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 187,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Hunter's Mark"] = {
-										["activedamt"] = -1,
-										["id"] = "Hunter's Mark",
-										["targets"] = {
-										},
-										["actived_at"] = 1642183792,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-									["Serpent Sting"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Serpent Sting",
-										["uptime"] = 15,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Adventure Awaits"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Adventure Awaits",
-										["uptime"] = 18,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Aspect of the Cheetah"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Aspect of the Cheetah",
-										["uptime"] = 18,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 15,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 11,
-								["Serpent Sting"] = 1,
-								["Multi-Shot"] = 1,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Poklopac",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 36,
-							["serial"] = "Player-5239-013D6C3C",
-							["last_event"] = 1642183793,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Growl"] = 3,
-								["Claw"] = 5,
-							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["classe"] = "PET",
-						}, -- [2]
-						{
-							["flag_original"] = 68136,
-							["nome"] = "Sparkleshell Borer",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								["Pierce Armor"] = 1,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-5208-1-4308-4144-000061B5D2",
-							["fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 187,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Poklopac"] = true,
-				},
-				["CombatStartedAt"] = 150976.676,
-				["tempo_start"] = 1642183775,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1655.992745, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = -0.001576000000000022,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:09:53",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Sparkleshell Borer",
-				["TotalElapsedCombatTime"] = 17.79800000000978,
-				["CombatEndedAt"] = 150994.474,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:09:35",
-				["end_time"] = 150994.474,
-				["combat_id"] = 187,
-				["frags"] = {
-					["Sparkleshell Borer"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Poklopac"] = 1185.00672,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 9048,
-				["start_time"] = 150976.676,
-				["TimeData"] = {
-				},
-				["totals_grupo"] = {
-					791, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-			}, -- [7]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 186,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.001227,
-							["damage_from"] = {
-								["Lonac <Poklopac>"] = true,
-								["Poklopac"] = true,
-							},
-							["targets"] = {
-								["Lonac <Poklopac>"] = 940,
-								["Poklopac"] = 772,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1642183735,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1712.001227,
-							["end_time"] = 1642183735,
-							["dps_started"] = false,
-							["total"] = 1712.001227,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-							["nome"] = "Sparkleshell Snapper",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Lightning Hide"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 361,
-											["Poklopac"] = 64,
-											["Lonac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 425,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 46,
-										["total"] = 425,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Lightning Hide",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 45,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Melee"] = {
-										["c_amt"] = 3,
-										["b_amt"] = 1,
-										["c_dmg"] = 286,
-										["g_amt"] = 0,
-										["n_max"] = 79,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 579,
-											["Poklopac"] = 708,
-											["Lonac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1001,
-										["n_min"] = 33,
-										["g_dmg"] = 0,
-										["counter"] = 27,
-										["r_amt"] = 0,
-										["total"] = 1287,
-										["c_max"] = 108,
-										["spellschool"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["b_dmg"] = 38,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 3,
-										["c_min"] = 71,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 19,
-										["MISS"] = 2,
-										["a_amt"] = 0,
-									},
-									["Head Butt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Lonac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Head Butt",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 1346.001227,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1642183682,
-							["serial"] = "Creature-0-5208-1-4308-4143-000061BB91",
-							["fight_component"] = true,
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["totalabsorbed"] = 0.007167,
-							["damage_from"] = {
-								["Sparkleshell Snapper"] = true,
-							},
-							["targets"] = {
-								["Sparkleshell Snapper"] = 1346,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["end_time"] = 1642183735,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 919.007167,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 1346.007167,
-							["on_hold"] = false,
-							["damage_taken"] = 772.007167,
-							["nome"] = "Poklopac",
-							["spells"] = {
-								["_ActorTable"] = {
 									["Raptor Strike"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 81,
+										["n_max"] = 100,
 										["targets"] = {
-											["Sparkleshell Snapper"] = 81,
+											["Grimtotem Bandit"] = 100,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 81,
-										["n_min"] = 81,
+										["n_dmg"] = 100,
+										["n_min"] = 100,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["r_amt"] = 0,
-										["total"] = 81,
+										["counter"] = 1,
+										["total"] = 100,
 										["c_max"] = 0,
-										["spellschool"] = 1,
 										["id"] = "Raptor Strike",
 										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["MISS"] = 1,
-										["DODGE"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
-									["!Melee"] = {
+									["!Autoshot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
-										["g_amt"] = 6,
-										["n_max"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 39,
 										["targets"] = {
-											["Sparkleshell Snapper"] = 59,
+											["Grimtotem Bandit"] = 77,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 59,
-										["counter"] = 7,
-										["total"] = 59,
+										["n_dmg"] = 77,
+										["n_min"] = 38,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 77,
 										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "!Melee",
+										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
-										["c_min"] = 0,
 										["m_crit"] = 0,
-										["PARRY"] = 1,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 									["Serpent Sting"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 21,
+										["n_max"] = 28,
 										["targets"] = {
-											["Sparkleshell Snapper"] = 112,
+											["Grimtotem Bandit"] = 84,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 112,
-										["n_min"] = 7,
+										["n_dmg"] = 84,
+										["n_min"] = 28,
 										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 112,
+										["counter"] = 3,
+										["total"] = 84,
 										["c_max"] = 0,
 										["id"] = "Serpent Sting",
-										["r_dmg"] = 112,
-										["r_amt"] = 10,
-										["a_amt"] = 0,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 10,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 42,
-										["targets"] = {
-											["Sparkleshell Snapper"] = 571,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 571,
-										["n_min"] = 23,
-										["g_dmg"] = 0,
-										["counter"] = 16,
-										["total"] = 571,
-										["c_max"] = 0,
+										["n_amt"] = 3,
 										["r_amt"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 23,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 15,
-										["spellschool"] = 1,
-										["MISS"] = 1,
 									},
-									["Multi-Shot"] = {
+								},
+							},
+							["grupo"] = true,
+							["total"] = 767.0036729999999,
+							["serial"] = "Player-5239-013D6C3C",
+							["last_dps"] = 79.13781190688309,
+							["custom"] = 0,
+							["last_event"] = 1642295581,
+							["damage_taken"] = 133.003673,
+							["start_time"] = 1642295571,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006198,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 24,
+								["Poklopac"] = 133,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 157.006198,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1642295582,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Grimtotem Bandit",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 81,
+										["n_max"] = 38,
 										["targets"] = {
-											["Sparkleshell Snapper"] = 81,
+											["Lonac <Poklopac>"] = 24,
+											["Poklopac"] = 133,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 81,
-										["n_min"] = 81,
+										["n_dmg"] = 157,
+										["n_min"] = 24,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 81,
+										["counter"] = 5,
+										["total"] = 157,
 										["c_max"] = 0,
-										["id"] = "Multi-Shot",
+										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
-									["Arcane Shot"] = {
+								},
+							},
+							["total"] = 157.006198,
+							["serial"] = "Creature-0-5208-1-4308-10758-0001637066",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295580,
+							["damage_taken"] = 767.006198,
+							["start_time"] = 1642295572,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.003917,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["damage_from"] = {
+								["Grimtotem Bandit"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Bandit"] = 365,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 365.003917,
+							["dps_started"] = false,
+							["total"] = 365.003917,
+							["classe"] = "PET",
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 213,
+										["g_amt"] = 0,
+										["n_max"] = 27,
+										["targets"] = {
+											["Grimtotem Bandit"] = 314,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 101,
+										["n_min"] = 23,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 314,
+										["c_max"] = 58,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 48,
+									},
+									["Claw"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 26,
+										["targets"] = {
+											["Grimtotem Bandit"] = 51,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 51,
+										["n_min"] = 25,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 51,
+										["c_max"] = 0,
+										["id"] = "Claw",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295582,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 24.003917,
+							["start_time"] = 1642295572,
+							["delay"] = 0,
+							["last_event"] = 1642295581,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 320,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 320,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 320,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime"] = 8,
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["activedamt"] = -1,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["actived_at"] = 1642295581,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Dazed"] = {
+										["activedamt"] = 1,
+										["id"] = "Dazed",
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 3,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Auto Shot"] = 1,
+								["Raptor Strike"] = 1,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["buff_uptime"] = 22,
+							["tipo"] = 4,
+							["last_event"] = 1642295582,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Aspect of the Cheetah"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Cheetah",
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5239-013D6C3C",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Claw"] = 2,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 320,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Poklopac"] = true,
+				},
+				["tempo_start"] = 1642295571,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["TotalElapsedCombatTime"] = 389679.747,
+				["enemy"] = "Grimtotem Bandit",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					924, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					402, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["last_events_tables"] = {
+				},
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Poklopac"] = 767.0036729999999,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 389679.747,
+				["instance_type"] = "none",
+				["combat_id"] = 320,
+				["combat_counter"] = 9192,
+				["player_last_events"] = {
+				},
+				["CombatEndedAt"] = 389679.747,
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "02:13:02",
+				["data_inicio"] = "02:12:52",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Grimtotem Bandit"] = 1,
+				},
+				["start_time"] = 389668.917,
+				["TimeData"] = {
+				},
+				["contra"] = "Grimtotem Bandit",
+			}, -- [7]
+			{
+				{
+					["combatId"] = 319,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.00284,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Grimtotem Geomancer"] = 616,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 258.00284,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1642295568,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Poklopac",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 53,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 202,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 202,
+										["n_min"] = 47,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 202,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 56,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 56,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 56,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 616.00284,
+							["serial"] = "Player-5239-013D6C3C",
+							["last_dps"] = 79.24904670025346,
+							["custom"] = 0,
+							["last_event"] = 1642295568,
+							["damage_taken"] = 0.00284,
+							["start_time"] = 1642295560,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.006526,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["damage_from"] = {
+								["Grimtotem Geomancer"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Geomancer"] = 358,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 358.006526,
+							["dps_started"] = false,
+							["total"] = 358.006526,
+							["classe"] = "PET",
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 126,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 270,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 144,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 270,
+										["c_max"] = 65,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 61,
+									},
+									["Claw"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 88,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 88,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 88,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "Claw",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295568,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 131.006526,
+							["start_time"] = 1642295560,
+							["delay"] = 0,
+							["last_event"] = 1642295567,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006527,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 131,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 131.006527,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1642295568,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Grimtotem Geomancer",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 15,
 										["targets"] = {
-											["Sparkleshell Snapper"] = 15,
+											["Lonac <Poklopac>"] = 15,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 15,
@@ -4778,282 +4737,155 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 15,
 										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 15,
-										["r_amt"] = 1,
-										["a_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 25.49545719210786,
-							["colocacao"] = 1,
-							["last_event"] = 1642183735,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1642183683,
-							["serial"] = "Player-5239-013D6C3C",
-							["friendlyfire_total"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002118,
-							["damage_from"] = {
-								["Sparkleshell Snapper"] = true,
-							},
-							["targets"] = {
-								["Sparkleshell Snapper"] = 427,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 940.002118,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 427.002118,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 427.002118,
-							["delay"] = 0,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Growl"] = {
+									["Fireball"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 89,
 										["targets"] = {
-											["Sparkleshell Snapper"] = 0,
+											["Lonac <Poklopac>"] = 116,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 116,
+										["n_min"] = 27,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 0,
+										["total"] = 116,
 										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Growl",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
+										["id"] = "Fireball",
+										["r_dmg"] = 116,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["RESIST"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Claw"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 25,
-										["targets"] = {
-											["Sparkleshell Snapper"] = 241,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 241,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 241,
-										["c_max"] = 0,
-										["id"] = "Claw",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
+										["successful_casted"] = 2,
 										["b_dmg"] = 0,
-										["n_amt"] = 11,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["c_dmg"] = 49,
-										["g_amt"] = 25,
-										["n_max"] = 24,
-										["targets"] = {
-											["Sparkleshell Snapper"] = 186,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 27,
-										["total"] = 186,
-										["n_min"] = 3,
-										["g_dmg"] = 110,
-										["counter"] = 44,
-										["MISS"] = 6,
-										["r_amt"] = 0,
-										["c_max"] = 49,
-										["b_dmg"] = 3,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 49,
-										["m_crit"] = 0,
-										["PARRY"] = 9,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
 										["n_amt"] = 2,
-										["DODGE"] = 1,
-										["a_amt"] = 0,
+										["r_amt"] = 2,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
+							["total"] = 131.006527,
+							["serial"] = "Creature-0-5208-1-4308-10760-0000E370BA",
 							["friendlyfire"] = {
 							},
-							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1642183734,
-							["on_hold"] = false,
-							["start_time"] = 1642183683,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["end_time"] = 1642183735,
+							["last_event"] = 1642295566,
+							["damage_taken"] = 616.006527,
+							["start_time"] = 1642295560,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 319,
 					["tipo"] = 3,
-					["combatId"] = 186,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
+					["combatId"] = 319,
 					["tipo"] = 7,
-					["combatId"] = 186,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
+					["combatId"] = 319,
 					["tipo"] = 9,
-					["combatId"] = 186,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
+							["debuff_uptime"] = 6,
+							["debuff_uptime_targets"] = {
+							},
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Hunter's Mark"] = {
 										["activedamt"] = -1,
 										["id"] = "Hunter's Mark",
 										["targets"] = {
 										},
-										["actived_at"] = 1642183735,
+										["actived_at"] = 1642295568,
 										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
 										["appliedamt"] = 0,
-									},
-									["Concussive Shot"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
 										["refreshamt"] = 0,
-										["id"] = "Concussive Shot",
-										["uptime"] = 4,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									["Serpent Sting"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = -1,
-										["refreshamt"] = 0,
+										["activedamt"] = 0,
 										["id"] = "Serpent Sting",
-										["uptime"] = 40,
 										["targets"] = {
 										},
+										["uptime"] = 6,
 										["appliedamt"] = 1,
-									},
-									["Dazed"] = {
-										["counter"] = 0,
+										["refreshamt"] = 0,
 										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 6,
-										["id"] = "Dazed",
-										["uptime"] = 22,
-										["targets"] = {
-										},
-										["appliedamt"] = 4,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Auto Shot"] = 5,
+								["Serpent Sting"] = 1,
 							},
 							["pets"] = {
 								"Lonac <Poklopac>", -- [1]
 							},
-							["classe"] = "HUNTER",
+							["buff_uptime"] = 16,
+							["tipo"] = 4,
+							["last_event"] = 1642295568,
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									["Adventure Awaits"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Adventure Awaits",
-										["uptime"] = 53,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
 									["Aspect of the Cheetah"] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
 										["id"] = "Aspect of the Cheetah",
-										["uptime"] = 53,
 										["targets"] = {
 										},
+										["uptime"] = 8,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 66,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Raptor Strike"] = 3,
-								["Arcane Shot"] = 1,
-								["Auto Shot"] = 16,
-								["Concussive Shot"] = 1,
-								["Multi-Shot"] = 1,
-								["Serpent Sting"] = 1,
-							},
-							["nome"] = "Poklopac",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 106,
 							["serial"] = "Player-5239-013D6C3C",
-							["last_event"] = 1642183735,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -5061,133 +4893,116 @@ _detalhes_database = {
 							["nome"] = "Lonac <Poklopac>",
 							["pets"] = {
 							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Growl"] = 4,
-								["Claw"] = 11,
-							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
 							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 2,
+								["Claw"] = 4,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
 						}, -- [2]
 						{
-							["flag_original"] = 68136,
-							["nome"] = "Sparkleshell Snapper",
+							["flag_original"] = 68168,
+							["nome"] = "Grimtotem Geomancer",
 							["tipo"] = 4,
-							["spell_cast"] = {
-								["Head Butt"] = 2,
-							},
 							["pets"] = {
 							},
-							["last_event"] = 0,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-5208-1-4308-4143-000061BB91",
 							["fight_component"] = true,
+							["spell_cast"] = {
+								["Fireball"] = 2,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10760-0000E370BA",
+							["classe"] = "UNKNOW",
 						}, -- [3]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 319,
 					["tipo"] = 2,
-					["combatId"] = 186,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Poklopac"] = true,
 				},
-				["tempo_start"] = 1642183682,
-				["last_events_tables"] = {
+				["CombatStartedAt"] = 389667.617,
+				["tempo_start"] = 1642295560,
+				["cleu_timeline"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 9047,
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Grimtotem Geomancer",
+				["combat_counter"] = 9191,
 				["playing_solo"] = true,
 				["totals"] = {
-					3058, -- [1]
+					747, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:08:55",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Sparkleshell Snapper",
-				["TotalElapsedCombatTime"] = 150936.945,
-				["CombatEndedAt"] = 150936.945,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:08:02",
-				["end_time"] = 150936.945,
-				["combat_id"] = 186,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Sparkleshell Snapper"] = 1,
-				},
-				["totals_grupo"] = {
-					919, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
 				},
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["start_time"] = 150883.467,
-				["TimeData"] = {
+				["CombatEndedAt"] = 389666.044,
+				["aura_timeline"] = {
 				},
+				["__call"] = {
+				},
+				["data_inicio"] = "02:12:41",
+				["end_time"] = 389666.044,
+				["totals_grupo"] = {
+					258, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 319,
+				["TotalElapsedCombatTime"] = 8.09599999996135,
+				["frags_need_refresh"] = true,
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Poklopac"] = 1346.007167,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -5196,755 +5011,58 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Poklopac"] = 616.00284,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Grimtotem Geomancer"] = 1,
+				},
+				["data_fim"] = "02:12:49",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 389657.948,
+				["contra"] = "Grimtotem Geomancer",
+				["TimeData"] = {
 				},
 			}, -- [8]
 			{
 				{
+					["combatId"] = 318,
 					["tipo"] = 2,
-					["combatId"] = 185,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1047,
-							["totalabsorbed"] = 0.002528,
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.004486,
 							["damage_from"] = {
-								["Scorpid Reaver"] = true,
 							},
 							["targets"] = {
-								["Scorpid Reaver"] = 1172,
+								["Grimtotem Geomancer"] = 650,
 							},
 							["pets"] = {
 								"Lonac <Poklopac>", -- [1]
 							},
-							["total"] = 1172.002528,
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 657.002528,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1642183624,
+							["total_without_pet"] = 345.004486,
 							["friendlyfire"] = {
 							},
-							["on_hold"] = false,
-							["nome"] = "Poklopac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scorpid Reaver"] = 39,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 39,
-										["counter"] = 1,
-										["total"] = 39,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Scorpid Reaver"] = 140,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 140,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 140,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Scorpid Reaver"] = 304,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 304,
-										["n_min"] = 32,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 304,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Multi-Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 70,
-										["targets"] = {
-											["Scorpid Reaver"] = 70,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 70,
-										["n_min"] = 70,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 70,
-										["c_max"] = 0,
-										["id"] = "Multi-Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 59,
-										["targets"] = {
-											["Scorpid Reaver"] = 104,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 104,
-										["n_min"] = 45,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 104,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 45,
-										["r_amt"] = 1,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 64.28271873622381,
+							["end_time"] = 1642295495,
+							["dps_started"] = false,
+							["total"] = 650.004486,
 							["colocacao"] = 1,
-							["last_event"] = 1642183624,
-							["damage_taken"] = 58.002528,
-							["start_time"] = 1642183606,
-							["serial"] = "Player-5239-013D6C3C",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004285,
-							["damage_from"] = {
-								["Scorpid Reaver"] = true,
-							},
-							["targets"] = {
-								["Scorpid Reaver"] = 515,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 122.004285,
 							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 515.004285,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 515.004285,
-							["delay"] = 0,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Growl"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scorpid Reaver"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Growl",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Claw"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 47,
-										["g_amt"] = 0,
-										["n_max"] = 24,
-										["targets"] = {
-											["Scorpid Reaver"] = 173,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 126,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 173,
-										["c_max"] = 47,
-										["id"] = "Claw",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 47,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 1,
-										["c_dmg"] = 92,
-										["g_amt"] = 5,
-										["n_max"] = 25,
-										["targets"] = {
-											["Scorpid Reaver"] = 342,
-											["Sparkleshell Snapper"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 162,
-										["n_min"] = 4,
-										["g_dmg"] = 88,
-										["counter"] = 17,
-										["r_amt"] = 0,
-										["total"] = 342,
-										["c_max"] = 49,
-										["spellschool"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["b_dmg"] = 4,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 43,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 8,
-										["a_amt"] = 0,
-										["DODGE"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1642183624,
-							["last_event"] = 1642183682,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1642183606,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["classe"] = "PET",
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003227,
-							["damage_from"] = {
-								["Lonac <Poklopac>"] = true,
-								["Poklopac"] = true,
-							},
-							["targets"] = {
-								["Lonac <Poklopac>"] = 122,
-								["Poklopac"] = 58,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 180.003227,
-							["delay"] = 1642183612,
-							["fight_component"] = true,
-							["total"] = 180.003227,
-							["end_time"] = 1642183624,
-							["damage_taken"] = 1172.003227,
-							["nome"] = "Scorpid Reaver",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 63,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 122,
-											["Poklopac"] = 58,
-											["Lonac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 117,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 180,
-										["c_max"] = 63,
-										["r_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 63,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1642183623,
-							["on_hold"] = false,
-							["start_time"] = 1642183617,
-							["serial"] = "Creature-0-5208-1-4308-4140-000061BA73",
-							["dps_started"] = false,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 185,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 185,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 185,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Concussive Shot"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Concussive Shot",
-										["uptime"] = 4,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Serpent Sting"] = {
-										["activedamt"] = -1,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["actived_at"] = 1642183618,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-									["Dazed"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Dazed",
-										["uptime"] = 1,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Adventure Awaits"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Adventure Awaits",
-										["uptime"] = 18,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Aspect of the Cheetah"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Aspect of the Cheetah",
-										["uptime"] = 18,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 5,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 9,
-								["Concussive Shot"] = 1,
-								["Multi-Shot"] = 1,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Poklopac",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 36,
-							["serial"] = "Player-5239-013D6C3C",
-							["last_event"] = 1642183624,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Growl"] = 2,
-								["Claw"] = 7,
-							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["classe"] = "PET",
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 185,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Poklopac"] = true,
-				},
-				["CombatStartedAt"] = 150881.132,
-				["tempo_start"] = 1642183606,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1352, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:07:04",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scorpid Reaver",
-				["TotalElapsedCombatTime"] = 150825.87,
-				["CombatEndedAt"] = 150825.87,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:06:46",
-				["end_time"] = 150825.87,
-				["combat_id"] = 185,
-				["totals_grupo"] = {
-					657, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Poklopac"] = 1172.002528,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_counter"] = 9046,
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 150807.155,
-				["contra"] = "Scorpid Reaver",
-				["frags"] = {
-					["Scorpid Reaver"] = 1,
-				},
-			}, -- [9]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 184,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["totalabsorbed"] = 0.00802,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Sparkleshell Tortoise"] = 1124,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["end_time"] = 1642183586,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 677.00802,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 1124.00802,
-							["on_hold"] = false,
-							["damage_taken"] = 0.00802,
 							["nome"] = "Poklopac",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 140,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 140,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 140,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 44,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 392,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 392,
-										["n_min"] = 23,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 392,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 23,
-										["n_amt"] = 10,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Multi-Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 86,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 86,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 86,
-										["n_min"] = 86,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 86,
-										["c_max"] = 0,
-										["id"] = "Multi-Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
 									["Arcane Shot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -5952,7 +5070,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 59,
 										["targets"] = {
-											["Sparkleshell Tortoise"] = 59,
+											["Grimtotem Geomancer"] = 59,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 59,
@@ -5963,486 +5081,46 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Arcane Shot",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 69.39606223380883,
-							["colocacao"] = 1,
-							["last_event"] = 1642183586,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1642183570,
-							["serial"] = "Player-5239-013D6C3C",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.003035,
-							["damage_from"] = {
-								["Sparkleshell Tortoise"] = true,
-							},
-							["targets"] = {
-								["Sparkleshell Tortoise"] = 447,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 376.003035,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 447.003035,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 447.003035,
-							["delay"] = 0,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 189,
-										["g_amt"] = 5,
-										["n_max"] = 25,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 398,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 93,
-										["n_min"] = 22,
-										["g_dmg"] = 116,
-										["counter"] = 14,
-										["total"] = 398,
-										["c_max"] = 49,
 										["r_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 45,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["spellschool"] = 1,
-										["MISS"] = 1,
+										["c_min"] = 0,
 									},
-									["Claw"] = {
+									["!Autoshot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 26,
+										["n_max"] = 48,
 										["targets"] = {
-											["Sparkleshell Tortoise"] = 49,
+											["Grimtotem Geomancer"] = 230,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 49,
-										["n_min"] = 23,
+										["n_dmg"] = 230,
+										["n_min"] = 44,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 49,
+										["counter"] = 5,
+										["total"] = 230,
 										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Claw",
+										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
 										["spellschool"] = 1,
-										["DODGE"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1642183586,
-							["last_event"] = 1642183586,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1642183570,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["classe"] = "PET",
-						}, -- [2]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.005246,
-							["damage_from"] = {
-								["Lonac <Poklopac>"] = true,
-								["Poklopac"] = true,
-							},
-							["targets"] = {
-								["Lonac <Poklopac>"] = 376,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1642183586,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 376.005246,
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 376.005246,
-							["delay"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Sparkleshell Tortoise",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 68,
-										["g_amt"] = 0,
-										["n_max"] = 34,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 251,
-											["Lonac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 183,
-										["n_min"] = 26,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["r_amt"] = 0,
-										["total"] = 251,
-										["c_max"] = 68,
-										["spellschool"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 68,
-										["successful_casted"] = 0,
 										["a_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_amt"] = 0,
-										["DODGE"] = 1,
-									},
-									["Lightning Hide"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 125,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 125,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 15,
-										["total"] = 125,
-										["c_max"] = 0,
-										["id"] = "Lightning Hide",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
 										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
 										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 15,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
 									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1642183586,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 1124.005246,
-							["start_time"] = 1642183570,
-							["serial"] = "Creature-0-5208-1-4308-4142-000061BA6D",
-							["fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 184,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 184,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 184,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Hunter's Mark"] = {
-										["activedamt"] = -1,
-										["id"] = "Hunter's Mark",
-										["targets"] = {
-										},
-										["actived_at"] = 1642183586,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-									["Serpent Sting"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Serpent Sting",
-										["uptime"] = 15,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Adventure Awaits"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Adventure Awaits",
-										["uptime"] = 16,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Aspect of the Cheetah"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Aspect of the Cheetah",
-										["uptime"] = 16,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 15,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 10,
-								["Serpent Sting"] = 1,
-								["Multi-Shot"] = 1,
-								["Arcane Shot"] = 1,
-							},
-							["nome"] = "Poklopac",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 32,
-							["serial"] = "Player-5239-013D6C3C",
-							["last_event"] = 1642183586,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Growl"] = 2,
-								["Claw"] = 4,
-							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["classe"] = "PET",
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 184,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Poklopac"] = true,
-				},
-				["CombatStartedAt"] = 150803.986,
-				["tempo_start"] = 1642183570,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1500, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:06:26",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Sparkleshell Tortoise",
-				["TotalElapsedCombatTime"] = 16.22999999998137,
-				["CombatEndedAt"] = 150787.789,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:06:10",
-				["end_time"] = 150787.789,
-				["combat_id"] = 184,
-				["frags"] = {
-					["Sparkleshell Tortoise"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Poklopac"] = 1124.00802,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 9045,
-				["start_time"] = 150771.559,
-				["TimeData"] = {
-				},
-				["totals_grupo"] = {
-					677, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-			}, -- [10]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 183,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["totalabsorbed"] = 0.005126,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Sparkleshell Tortoise"] = 1107,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["end_time"] = 1642183556,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 663.005126,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 1107.005126,
-							["on_hold"] = false,
-							["damage_taken"] = 0.005126,
-							["nome"] = "Poklopac",
-							["spells"] = {
-								["_ActorTable"] = {
 									["Serpent Sting"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -6450,395 +5128,319 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 28,
 										["targets"] = {
-											["Sparkleshell Tortoise"] = 140,
+											["Grimtotem Geomancer"] = 56,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 140,
+										["n_dmg"] = 56,
 										["n_min"] = 28,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 140,
+										["counter"] = 2,
+										["total"] = 56,
 										["c_max"] = 0,
 										["id"] = "Serpent Sting",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["c_dmg"] = 77,
-										["g_amt"] = 0,
-										["n_max"] = 43,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 346,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 269,
-										["n_min"] = 23,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 346,
-										["c_max"] = 77,
+										["n_amt"] = 2,
 										["r_amt"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 23,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 77,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["spellschool"] = 1,
-										["MISS"] = 2,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 59,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 177,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 177,
-										["n_min"] = 59,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 177,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-5239-013D6C3C",
+							["last_dps"] = 68.0561706629171,
+							["custom"] = 0,
+							["last_event"] = 1642295494,
+							["damage_taken"] = 0.004486,
+							["start_time"] = 1642295487,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.007478,
+							["damage_from"] = {
+								["Grimtotem Geomancer"] = true,
+								["Environment (Fire)"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Geomancer"] = 305,
+							},
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 305.007478,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["end_time"] = 1642295495,
+							["dps_started"] = false,
+							["total"] = 305.007478,
+							["on_hold"] = false,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 60,
+										["g_amt"] = 0,
+										["n_max"] = 32,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 147,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 87,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 147,
+										["c_max"] = 60,
+										["MISS"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 53.82433636412834,
-							["colocacao"] = 1,
-							["last_event"] = 1642183556,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1642183534,
-							["serial"] = "Player-5239-013D6C3C",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.003639,
-							["damage_from"] = {
-								["Sparkleshell Tortoise"] = true,
-							},
-							["targets"] = {
-								["Sparkleshell Tortoise"] = 444,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 398.003639,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 444.003639,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 444.003639,
-							["delay"] = 0,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 4,
-										["b_amt"] = 1,
-										["c_dmg"] = 201,
-										["g_amt"] = 2,
-										["n_max"] = 27,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 356,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 108,
-										["total"] = 356,
-										["n_min"] = 10,
-										["g_dmg"] = 47,
-										["counter"] = 14,
-										["DODGE"] = 1,
 										["r_amt"] = 0,
-										["c_max"] = 52,
-										["b_dmg"] = 10,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 45,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 5,
-										["MISS"] = 1,
-										["a_amt"] = 0,
+										["c_min"] = 60,
 									},
 									["Claw"] = {
-										["c_amt"] = 0,
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 107,
 										["g_amt"] = 0,
-										["n_max"] = 24,
+										["n_max"] = 27,
 										["targets"] = {
-											["Sparkleshell Tortoise"] = 88,
+											["Grimtotem Geomancer"] = 158,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 88,
-										["n_min"] = 19,
+										["n_dmg"] = 51,
+										["n_min"] = 24,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 88,
-										["c_max"] = 0,
-										["r_amt"] = 0,
+										["counter"] = 4,
+										["total"] = 158,
+										["c_max"] = 61,
 										["id"] = "Claw",
 										["r_dmg"] = 0,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
-										["c_min"] = 0,
 										["m_crit"] = 0,
-										["PARRY"] = 2,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 46,
 									},
 								},
-								["tipo"] = 2,
 							},
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1642183555,
-							["on_hold"] = false,
-							["start_time"] = 1642183534,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["end_time"] = 1642183556,
+							["last_event"] = 1642295494,
+							["damage_taken"] = 218.007478,
+							["start_time"] = 1642295488,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [2]
 						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.004539,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00337,
 							["damage_from"] = {
 								["Lonac <Poklopac>"] = true,
 								["Poklopac"] = true,
 							},
 							["targets"] = {
-								["Lonac <Poklopac>"] = 398,
+								["Lonac <Poklopac>"] = 198,
 							},
 							["pets"] = {
 							},
-							["last_event"] = 1642183555,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-5208-1-4308-10760-00006370BA",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 398.004539,
-							["end_time"] = 1642183556,
+							["total_without_pet"] = 198.00337,
+							["monster"] = true,
+							["fight_component"] = true,
 							["dps_started"] = false,
-							["total"] = 398.004539,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-							["nome"] = "Sparkleshell Tortoise",
+							["total"] = 198.00337,
+							["end_time"] = 1642295495,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Grimtotem Geomancer",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 57,
-										["g_amt"] = 0,
-										["n_max"] = 34,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 275,
-											["Lonac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 218,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 275,
-										["c_max"] = 57,
-										["r_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 57,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["spellschool"] = 1,
-										["DODGE"] = 1,
-									},
-									["Lightning Hide"] = {
+									["Fireball"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 9,
+										["n_max"] = 97,
 										["targets"] = {
-											["Lonac <Poklopac>"] = 123,
+											["Lonac <Poklopac>"] = 182,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 123,
-										["n_min"] = 8,
+										["n_dmg"] = 182,
+										["n_min"] = 85,
 										["g_dmg"] = 0,
-										["counter"] = 15,
-										["total"] = 123,
+										["counter"] = 2,
+										["total"] = 182,
 										["c_max"] = 0,
-										["id"] = "Lightning Hide",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["id"] = "Fireball",
+										["r_dmg"] = 182,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 2,
 										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 16,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 15,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["damage_taken"] = 1107.004539,
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
+							["last_event"] = 1642295490,
+							["damage_taken"] = 650.00337,
+							["start_time"] = 1642295485,
+							["delay"] = 0,
 							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1642183534,
-							["serial"] = "Creature-0-5208-1-4308-4142-000061BA2F",
-							["fight_component"] = true,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 318,
 					["tipo"] = 3,
-					["combatId"] = 183,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
+					["combatId"] = 318,
 					["tipo"] = 7,
-					["combatId"] = 183,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
+					["combatId"] = 318,
 					["tipo"] = 9,
-					["combatId"] = 183,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
+							["debuff_uptime"] = 7,
+							["debuff_uptime_targets"] = {
+							},
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									["Hunter's Mark"] = {
-										["activedamt"] = -1,
-										["id"] = "Hunter's Mark",
-										["targets"] = {
-										},
-										["actived_at"] = 1642183555,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
 									["Serpent Sting"] = {
-										["activedamt"] = -1,
+										["activedamt"] = 0,
 										["id"] = "Serpent Sting",
 										["targets"] = {
 										},
-										["actived_at"] = 1642183547,
-										["uptime"] = 0,
-										["counter"] = 0,
+										["uptime"] = 7,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
-										["appliedamt"] = 0,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Auto Shot"] = 5,
+								["Arcane Shot"] = 1,
+								["Serpent Sting"] = 1,
 							},
 							["pets"] = {
 								"Lonac <Poklopac>", -- [1]
 							},
-							["classe"] = "HUNTER",
+							["buff_uptime"] = 20,
+							["tipo"] = 4,
+							["last_event"] = 1642295495,
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									["Adventure Awaits"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Adventure Awaits",
-										["uptime"] = 22,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
 									["Aspect of the Cheetah"] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
 										["id"] = "Aspect of the Cheetah",
-										["uptime"] = 22,
 										["targets"] = {
 										},
+										["uptime"] = 10,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 0,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 10,
-								["Arcane Shot"] = 3,
-							},
-							["nome"] = "Poklopac",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 44,
 							["serial"] = "Player-5239-013D6C3C",
-							["last_event"] = 1642183556,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -6846,119 +5448,108 @@ _detalhes_database = {
 							["nome"] = "Lonac <Poklopac>",
 							["pets"] = {
 							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Growl"] = 3,
-								["Claw"] = 6,
-							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
 							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 1,
+								["Claw"] = 4,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
 						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "Grimtotem Geomancer",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Fireball"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10760-00006370BA",
+							["classe"] = "UNKNOW",
+						}, -- [3]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 318,
 					["tipo"] = 2,
-					["combatId"] = 183,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Poklopac"] = true,
 				},
-				["tempo_start"] = 1642183534,
-				["last_events_tables"] = {
+				["tempo_start"] = 1642295485,
+				["cleu_timeline"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 9044,
-				["playing_solo"] = true,
-				["totals"] = {
-					1505, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:05:56",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Sparkleshell Tortoise",
-				["TotalElapsedCombatTime"] = 150757.798,
-				["CombatEndedAt"] = 150757.798,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:05:34",
-				["end_time"] = 150757.798,
-				["combat_id"] = 183,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Sparkleshell Tortoise"] = 1,
-				},
-				["totals_grupo"] = {
-					663, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
+				["TotalElapsedCombatTime"] = 389592.749,
+				["enemy"] = "Grimtotem Geomancer",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["start_time"] = 150735.847,
-				["TimeData"] = {
+				["playing_solo"] = true,
+				["totals"] = {
+					847.99309, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					345, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["last_events_tables"] = {
+				},
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Poklopac"] = 1107.005126,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -6967,96 +5558,65 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Poklopac"] = 650.004486,
+						}, -- [1]
+					},
 				},
-			}, -- [11]
+				["end_time"] = 389592.749,
+				["instance_type"] = "none",
+				["combat_id"] = 318,
+				["combat_counter"] = 9190,
+				["player_last_events"] = {
+				},
+				["CombatEndedAt"] = 389592.749,
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "02:11:35",
+				["data_inicio"] = "02:11:26",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Grimtotem Geomancer"] = 1,
+				},
+				["start_time"] = 389583.198,
+				["TimeData"] = {
+				},
+				["contra"] = "Grimtotem Geomancer",
+			}, -- [9]
 			{
 				{
+					["combatId"] = 317,
 					["tipo"] = 2,
-					["combatId"] = 182,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1047,
-							["totalabsorbed"] = 0.006458,
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.001674,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Sparkleshell Tortoise"] = 1053,
+								["Grimtotem Reaver"] = 996,
 							},
 							["pets"] = {
 								"Lonac <Poklopac>", -- [1]
 							},
-							["end_time"] = 1642183498,
-							["tipo"] = 1,
+							["on_hold"] = false,
 							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 663.0064580000001,
-							["delay"] = 0,
+							["total_without_pet"] = 435.001674,
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295435,
 							["dps_started"] = false,
-							["total"] = 1053.006458,
-							["on_hold"] = false,
-							["damage_taken"] = 0.006458,
+							["total"] = 996.001674,
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
 							["nome"] = "Poklopac",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 140,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 140,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 140,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 44,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 405,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 405,
-										["n_min"] = 38,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 405,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 10,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
 									["Arcane Shot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -7064,596 +5624,57 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 59,
 										["targets"] = {
-											["Sparkleshell Tortoise"] = 118,
+											["Grimtotem Reaver"] = 59,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 118,
+										["n_dmg"] = 59,
 										["n_min"] = 59,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 118,
+										["counter"] = 1,
+										["total"] = 59,
 										["c_max"] = 0,
 										["id"] = "Arcane Shot",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
 										["spellschool"] = 64,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 69.68015206447923,
-							["colocacao"] = 1,
-							["last_event"] = 1642183496,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1642183482,
-							["serial"] = "Player-5239-013D6C3C",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.003944,
-							["damage_from"] = {
-								["Sparkleshell Tortoise"] = true,
-							},
-							["targets"] = {
-								["Sparkleshell Tortoise"] = 390,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 265.003944,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 390.003944,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 390.003944,
-							["delay"] = 0,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 97,
-										["g_amt"] = 2,
-										["n_max"] = 27,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 342,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 204,
-										["n_min"] = 24,
-										["g_dmg"] = 41,
-										["counter"] = 13,
-										["total"] = 342,
-										["c_max"] = 49,
-										["r_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
 										["a_dmg"] = 0,
-										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 48,
-										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["spellschool"] = 1,
-										["MISS"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
-									["Claw"] = {
+									["!Autoshot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 25,
+										["n_max"] = 52,
 										["targets"] = {
-											["Sparkleshell Tortoise"] = 48,
+											["Grimtotem Reaver"] = 292,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 48,
-										["n_min"] = 23,
+										["n_dmg"] = 292,
+										["n_min"] = 46,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 48,
+										["counter"] = 6,
+										["total"] = 292,
 										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Claw",
+										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
 										["spellschool"] = 1,
-										["DODGE"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1642183496,
-							["on_hold"] = false,
-							["start_time"] = 1642183482,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["end_time"] = 1642183498,
-						}, -- [2]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.006525,
-							["damage_from"] = {
-								["Lonac <Poklopac>"] = true,
-								["Poklopac"] = true,
-							},
-							["targets"] = {
-								["Lonac <Poklopac>"] = 265,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1642183496,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 265.006525,
-							["end_time"] = 1642183498,
-							["dps_started"] = false,
-							["total"] = 265.006525,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-							["nome"] = "Sparkleshell Tortoise",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 33,
-										["targets"] = {
-											["Lonac"] = 0,
-											["Lonac <Poklopac>"] = 150,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 150,
-										["n_min"] = 26,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 150,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
 										["a_dmg"] = 0,
-										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["spellschool"] = 1,
-										["MISS"] = 3,
-									},
-									["Lightning Hide"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 115,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 115,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 14,
-										["total"] = 115,
-										["c_max"] = 0,
-										["id"] = "Lightning Hide",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 14,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 1053.006525,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1642183482,
-							["serial"] = "Creature-0-5208-1-4308-4142-000061BA15",
-							["fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 182,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 182,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 182,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Hunter's Mark"] = {
-										["activedamt"] = -1,
-										["id"] = "Hunter's Mark",
-										["targets"] = {
-										},
-										["actived_at"] = 1642183496,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-									["Serpent Sting"] = {
-										["activedamt"] = -1,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["actived_at"] = 1642183496,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Adventure Awaits"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Adventure Awaits",
-										["uptime"] = 16,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Aspect of the Cheetah"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Aspect of the Cheetah",
-										["uptime"] = 16,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 0,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 9,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Poklopac",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 32,
-							["serial"] = "Player-5239-013D6C3C",
-							["last_event"] = 1642183498,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Growl"] = 3,
-								["Claw"] = 3,
-							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["classe"] = "PET",
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 182,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Poklopac"] = true,
-				},
-				["CombatStartedAt"] = 150732.661,
-				["tempo_start"] = 1642183482,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1318, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:04:58",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Sparkleshell Tortoise",
-				["TotalElapsedCombatTime"] = 150699.451,
-				["CombatEndedAt"] = 150699.451,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:04:42",
-				["end_time"] = 150699.451,
-				["combat_id"] = 182,
-				["frags"] = {
-					["Sparkleshell Tortoise"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Poklopac"] = 1053.006458,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 9043,
-				["start_time"] = 150683.221,
-				["TimeData"] = {
-				},
-				["totals_grupo"] = {
-					663, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-			}, -- [12]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 181,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.004151,
-							["damage_from"] = {
-								["Lonac <Poklopac>"] = true,
-								["Poklopac"] = true,
-							},
-							["targets"] = {
-								["Lonac <Poklopac>"] = 362,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1642183470,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 362.004151,
-							["end_time"] = 1642183472,
-							["dps_started"] = false,
-							["total"] = 362.004151,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-							["nome"] = "Sparkleshell Tortoise",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 64,
-										["g_amt"] = 0,
-										["n_max"] = 34,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 243,
-											["Lonac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 179,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 243,
-										["c_max"] = 64,
-										["r_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 64,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-									},
-									["Lightning Hide"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 119,
-											["Lonac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 119,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 16,
-										["total"] = 119,
-										["c_max"] = 0,
 										["r_amt"] = 0,
-										["id"] = "Lightning Hide",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 14,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["RESIST"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
 									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 1127.004151,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1642183456,
-							["serial"] = "Creature-0-5208-1-4308-4142-000061B9A2",
-							["fight_component"] = true,
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["totalabsorbed"] = 0.004837,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Sparkleshell Tortoise"] = 1127,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["end_time"] = 1642183472,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 579.004837,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 1127.004837,
-							["on_hold"] = false,
-							["damage_taken"] = 0.004837,
-							["nome"] = "Poklopac",
-							["spells"] = {
-								["_ActorTable"] = {
 									["Serpent Sting"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -7661,2602 +5682,959 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 28,
 										["targets"] = {
-											["Sparkleshell Tortoise"] = 140,
+											["Grimtotem Reaver"] = 84,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 140,
+										["n_dmg"] = 84,
 										["n_min"] = 28,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 140,
+										["counter"] = 3,
+										["total"] = 84,
 										["c_max"] = 0,
 										["id"] = "Serpent Sting",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
 										["spellschool"] = 8,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 43,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 321,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 321,
-										["n_min"] = 38,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 321,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
 										["a_dmg"] = 0,
-										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 59,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 118,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 118,
-										["n_min"] = 59,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 118,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 77.12871865577881,
-							["colocacao"] = 1,
-							["last_event"] = 1642183471,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1642183457,
 							["serial"] = "Player-5239-013D6C3C",
-							["friendlyfire_total"] = 0,
-						}, -- [2]
+							["last_dps"] = 89.3996655596184,
+							["custom"] = 0,
+							["last_event"] = 1642295435,
+							["damage_taken"] = 0.001674,
+							["start_time"] = 1642295424,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.001041,
+							["totalabsorbed"] = 0.002606,
 							["damage_from"] = {
-								["Sparkleshell Tortoise"] = true,
+								["Grimtotem Reaver"] = true,
 							},
 							["targets"] = {
-								["Sparkleshell Tortoise"] = 548,
+								["Grimtotem Reaver"] = 561,
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 362.001041,
 							["classe"] = "PET",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 548.001041,
-							["friendlyfire_total"] = 0,
+							["total_without_pet"] = 561.002606,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["end_time"] = 1642295435,
 							["dps_started"] = false,
-							["total"] = 548.001041,
-							["delay"] = 0,
+							["total"] = 561.002606,
+							["on_hold"] = false,
 							["ownerName"] = "Poklopac",
 							["nome"] = "Lonac <Poklopac>",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 5,
 										["b_amt"] = 0,
-										["c_dmg"] = 256,
-										["g_amt"] = 2,
-										["n_max"] = 27,
+										["c_dmg"] = 306,
+										["g_amt"] = 0,
+										["n_max"] = 30,
 										["targets"] = {
-											["Sparkleshell Tortoise"] = 401,
+											["Grimtotem Reaver"] = 449,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 98,
-										["n_min"] = 22,
-										["g_dmg"] = 47,
-										["counter"] = 12,
-										["total"] = 401,
-										["c_max"] = 53,
-										["r_amt"] = 0,
+										["n_dmg"] = 143,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 449,
+										["c_max"] = 65,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 50,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
 										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 58,
+									},
+									["Claw"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Grimtotem Reaver"] = 112,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 112,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 112,
+										["c_max"] = 0,
+										["id"] = "Claw",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295435,
+							["damage_taken"] = 161.002606,
+							["start_time"] = 1642295424,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004628,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 161,
+							},
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5208-1-4308-10761-0000636ACF",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 161.004628,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 161.004628,
+							["end_time"] = 1642295435,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Grimtotem Reaver",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 115,
+											["Lonac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 115,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 115,
+										["c_max"] = 0,
 										["DODGE"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Cleave"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 46,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 46,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 46,
+										["n_min"] = 46,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 46,
+										["c_max"] = 0,
+										["id"] = "Cleave",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295434,
+							["damage_taken"] = 996.004628,
+							["start_time"] = 1642295424,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 317,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 317,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 317,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime"] = 10,
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Hunter's Mark"] = {
+										["activedamt"] = -1,
+										["id"] = "Hunter's Mark",
+										["targets"] = {
+										},
+										["actived_at"] = 1642295435,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Serpent Sting"] = {
+										["activedamt"] = 0,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Auto Shot"] = 6,
+								["Arcane Shot"] = 1,
+								["Serpent Sting"] = 1,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["buff_uptime"] = 22,
+							["tipo"] = 4,
+							["last_event"] = 1642295435,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Aspect of the Cheetah"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Cheetah",
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5239-013D6C3C",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 2,
+								["Claw"] = 4,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "Grimtotem Reaver",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Cleave"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10761-0000636ACF",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 317,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Poklopac"] = true,
+				},
+				["CombatStartedAt"] = 389579.418,
+				["tempo_start"] = 1642295424,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Grimtotem Reaver",
+				["combat_counter"] = 9189,
+				["playing_solo"] = true,
+				["totals"] = {
+					1157, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 389533.257,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "02:10:24",
+				["end_time"] = 389533.257,
+				["totals_grupo"] = {
+					435, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 317,
+				["TotalElapsedCombatTime"] = 11.64999999996508,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Poklopac"] = 996.001674,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Grimtotem Reaver"] = 1,
+				},
+				["data_fim"] = "02:10:36",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 389521.607,
+				["contra"] = "Grimtotem Reaver",
+				["TimeData"] = {
+				},
+			}, -- [10]
+			{
+				{
+					["combatId"] = 316,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.001408,
+							["damage_from"] = {
+								["Grimtotem Geomancer"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Geomancer"] = 1314,
+								["Arnak Grimtotem"] = 956,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1226.001408,
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295409,
+							["dps_started"] = false,
+							["total"] = 2270.001408,
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Poklopac",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 59,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 59,
+											["Arnak Grimtotem"] = 59,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 118,
+										["n_min"] = 59,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 118,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Multi-Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 98,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 282,
+											["Arnak Grimtotem"] = 161,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 443,
+										["n_min"] = 79,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 443,
+										["c_max"] = 0,
+										["id"] = "Multi-Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 51,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 383,
+											["Arnak Grimtotem"] = 191,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 574,
+										["n_min"] = 35,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 574,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 13,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 63,
+											["Arnak Grimtotem"] = 28,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 91,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 91,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 35,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 2,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-5239-013D6C3C",
+							["last_dps"] = 66.77456708340377,
+							["custom"] = 0,
+							["last_event"] = 1642295408,
+							["damage_taken"] = 348.001408,
+							["start_time"] = 1642295375,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.001269,
+							["damage_from"] = {
+								["Grimtotem Geomancer"] = true,
+								["Arnak Grimtotem"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Geomancer"] = 527,
+								["Arnak Grimtotem"] = 517,
+							},
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1044.001269,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["end_time"] = 1642295409,
+							["dps_started"] = false,
+							["total"] = 1044.001269,
+							["on_hold"] = false,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 7,
+										["b_amt"] = 1,
+										["c_dmg"] = 371,
+										["g_amt"] = 0,
+										["n_max"] = 33,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 409,
+											["Arnak Grimtotem"] = 421,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 459,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 27,
+										["a_amt"] = 0,
+										["total"] = 830,
+										["c_max"] = 62,
+										["MISS"] = 2,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 10,
+										["n_amt"] = 17,
+										["r_amt"] = 0,
+										["c_min"] = 46,
 									},
 									["Claw"] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 90,
+										["c_dmg"] = 116,
 										["g_amt"] = 0,
-										["n_max"] = 19,
+										["n_max"] = 30,
 										["targets"] = {
-											["Sparkleshell Tortoise"] = 147,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 57,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 147,
-										["c_max"] = 46,
-										["id"] = "Claw",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 44,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1642183470,
-							["on_hold"] = false,
-							["start_time"] = 1642183457,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["end_time"] = 1642183472,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 181,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 181,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 181,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Hunter's Mark"] = {
-										["activedamt"] = -1,
-										["id"] = "Hunter's Mark",
-										["targets"] = {
-										},
-										["actived_at"] = 1642183470,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-									["Serpent Sting"] = {
-										["activedamt"] = -1,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["actived_at"] = 1642183469,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Adventure Awaits"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Adventure Awaits",
-										["uptime"] = 16,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Aspect of the Cheetah"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Aspect of the Cheetah",
-										["uptime"] = 16,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 0,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 9,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Poklopac",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 32,
-							["serial"] = "Player-5239-013D6C3C",
-							["last_event"] = 1642183472,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Growl"] = 1,
-								["Claw"] = 5,
-							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["classe"] = "PET",
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 181,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Poklopac"] = true,
-				},
-				["CombatStartedAt"] = 150682.17,
-				["tempo_start"] = 1642183456,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1489, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:04:32",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Sparkleshell Tortoise",
-				["TotalElapsedCombatTime"] = 150673.496,
-				["CombatEndedAt"] = 150673.496,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:04:16",
-				["end_time"] = 150673.496,
-				["combat_id"] = 181,
-				["frags"] = {
-					["Sparkleshell Tortoise"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Poklopac"] = 1127.004837,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 9042,
-				["start_time"] = 150657.316,
-				["TimeData"] = {
-				},
-				["totals_grupo"] = {
-					579, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-			}, -- [13]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 180,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003408,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Sparkleshell Tortoise"] = 1055,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["end_time"] = 1642183440,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 674.003408,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 1055.003408,
-							["on_hold"] = false,
-							["damage_taken"] = 0.003408,
-							["nome"] = "Poklopac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 140,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 140,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 140,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 45,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 416,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 416,
-										["n_min"] = 38,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 416,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 10,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 59,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 118,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 118,
-										["n_min"] = 59,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 118,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 60.75808615525888,
-							["colocacao"] = 1,
-							["last_event"] = 1642183440,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1642183423,
-							["serial"] = "Player-5239-013D6C3C",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.00321,
-							["damage_from"] = {
-								["Lonac <Poklopac>"] = true,
-								["Poklopac"] = true,
-							},
-							["targets"] = {
-								["Lonac <Poklopac>"] = 404,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1642183440,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 404.00321,
-							["end_time"] = 1642183440,
-							["dps_started"] = false,
-							["total"] = 404.00321,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-							["nome"] = "Sparkleshell Tortoise",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Lightning Hide"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 98,
+											["Grimtotem Geomancer"] = 118,
+											["Arnak Grimtotem"] = 96,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 98,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 98,
-										["c_max"] = 0,
-										["id"] = "Lightning Hide",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 12,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["c_dmg"] = 65,
-										["g_amt"] = 0,
-										["n_max"] = 33,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 306,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 241,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 306,
-										["c_max"] = 65,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 65,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 29,
-										["n_amt"] = 8,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 1055.00321,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1642183425,
-							["serial"] = "Creature-0-5208-1-4308-4142-000061B9C1",
-							["fight_component"] = true,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.00332,
-							["damage_from"] = {
-								["Sparkleshell Tortoise"] = true,
-							},
-							["targets"] = {
-								["Sparkleshell Tortoise"] = 381,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 404.00332,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 381.00332,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 381.00332,
-							["delay"] = 0,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 198,
-										["g_amt"] = 2,
-										["n_max"] = 24,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 314,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 72,
-										["total"] = 314,
-										["n_min"] = 24,
-										["g_dmg"] = 44,
-										["counter"] = 14,
-										["DODGE"] = 1,
-										["r_amt"] = 0,
-										["c_max"] = 54,
-										["b_dmg"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 47,
-										["m_crit"] = 0,
-										["PARRY"] = 3,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 3,
-										["MISS"] = 1,
-										["a_amt"] = 0,
-									},
-									["Claw"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 23,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 67,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 67,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["r_amt"] = 0,
-										["total"] = 67,
-										["c_max"] = 0,
-										["spellschool"] = 1,
-										["id"] = "Claw",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 2,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["MISS"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1642183440,
-							["last_event"] = 1642183456,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1642183425,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["classe"] = "PET",
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 180,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 180,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 180,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Hunter's Mark"] = {
-										["activedamt"] = -1,
-										["id"] = "Hunter's Mark",
-										["targets"] = {
-										},
-										["actived_at"] = 1642183440,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-									["Serpent Sting"] = {
-										["activedamt"] = -1,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["actived_at"] = 1642183437,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Adventure Awaits"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Adventure Awaits",
-										["uptime"] = 17,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Aspect of the Cheetah"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Aspect of the Cheetah",
-										["uptime"] = 17,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 0,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 10,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Poklopac",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 34,
-							["serial"] = "Player-5239-013D6C3C",
-							["last_event"] = 1642183440,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Growl"] = 3,
-								["Claw"] = 5,
-							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["classe"] = "PET",
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 180,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Poklopac"] = true,
-				},
-				["CombatStartedAt"] = 150655.298,
-				["tempo_start"] = 1642183423,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1459, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:04:00",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Sparkleshell Tortoise",
-				["TotalElapsedCombatTime"] = 150641.92,
-				["CombatEndedAt"] = 150641.92,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:03:43",
-				["end_time"] = 150641.92,
-				["combat_id"] = 180,
-				["frags"] = {
-					["Sparkleshell Tortoise"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Poklopac"] = 1055.003408,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 9041,
-				["start_time"] = 150624.206,
-				["TimeData"] = {
-				},
-				["totals_grupo"] = {
-					674, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-			}, -- [14]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 179,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["totalabsorbed"] = 0.001777,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Sparkleshell Tortoise"] = 1126,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["end_time"] = 1642183405,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 705.001777,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 1126.001777,
-							["on_hold"] = false,
-							["damage_taken"] = 0.001777,
-							["nome"] = "Poklopac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 133,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 133,
 										["n_min"] = 21,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 133,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 21,
-										["r_amt"] = 1,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 43,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 454,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 454,
-										["n_min"] = 38,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 454,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 11,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 59,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 118,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 118,
-										["n_min"] = 59,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 118,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 55.60777208748108,
-							["colocacao"] = 1,
-							["last_event"] = 1642183404,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1642183384,
-							["serial"] = "Player-5239-013D6C3C",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.001556,
-							["damage_from"] = {
-								["Sparkleshell Tortoise"] = true,
-							},
-							["targets"] = {
-								["Sparkleshell Tortoise"] = 421,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 403.001556,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 421.001556,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 421.001556,
-							["delay"] = 0,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["c_dmg"] = 50,
-										["g_amt"] = 6,
-										["n_max"] = 25,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 314,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 125,
-										["n_min"] = 8,
-										["g_dmg"] = 139,
-										["counter"] = 18,
-										["r_amt"] = 0,
-										["total"] = 314,
-										["c_max"] = 50,
-										["spellschool"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["b_dmg"] = 8,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 2,
-										["c_min"] = 50,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_amt"] = 0,
-										["DODGE"] = 3,
-									},
-									["Claw"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 25,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 107,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 107,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
 										["counter"] = 6,
-										["total"] = 107,
-										["c_max"] = 0,
-										["r_amt"] = 0,
+										["total"] = 214,
+										["c_max"] = 64,
 										["id"] = "Claw",
 										["r_dmg"] = 0,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
-										["c_min"] = 0,
 										["m_crit"] = 0,
-										["PARRY"] = 1,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 52,
 									},
 								},
-								["tipo"] = 2,
 							},
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1642183404,
-							["on_hold"] = false,
-							["start_time"] = 1642183384,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["end_time"] = 1642183405,
+							["last_event"] = 1642295408,
+							["damage_taken"] = 1034.001269,
+							["start_time"] = 1642295375,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [2]
 						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.001448,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004256,
 							["damage_from"] = {
 								["Lonac <Poklopac>"] = true,
 								["Poklopac"] = true,
 							},
 							["targets"] = {
-								["Lonac <Poklopac>"] = 403,
+								["Lonac <Poklopac>"] = 357,
+								["Poklopac"] = 348,
 							},
 							["pets"] = {
 							},
-							["last_event"] = 1642183404,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-5208-1-4308-10760-0000636AF4",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 403.001448,
-							["end_time"] = 1642183405,
+							["total_without_pet"] = 705.0042559999999,
+							["monster"] = true,
+							["fight_component"] = true,
 							["dps_started"] = false,
-							["total"] = 403.001448,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-							["nome"] = "Sparkleshell Tortoise",
+							["total"] = 705.0042559999999,
+							["end_time"] = 1642295409,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Grimtotem Geomancer",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									["Lightning Hide"] = {
+									["Fireball"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 9,
+										["n_max"] = 124,
 										["targets"] = {
-											["Lonac <Poklopac>"] = 152,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 152,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 18,
-										["total"] = 152,
-										["c_max"] = 0,
-										["id"] = "Lightning Hide",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 18,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 35,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 251,
+											["Lonac <Poklopac>"] = 294,
+											["Poklopac"] = 122,
 											["Lonac"] = 0,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 251,
-										["total"] = 251,
-										["n_min"] = 29,
+										["n_dmg"] = 416,
+										["n_min"] = 67,
 										["g_dmg"] = 0,
-										["counter"] = 11,
-										["DODGE"] = 1,
-										["r_amt"] = 0,
+										["counter"] = 7,
+										["total"] = 416,
 										["c_max"] = 0,
+										["id"] = "Fireball",
+										["r_dmg"] = 170,
+										["RESIST"] = 3,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 7,
 										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 2,
+										["c_min"] = 0,
+									},
+									["Flamestrike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 144,
+										["targets"] = {
+											["Poklopac"] = 226,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 226,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 226,
+										["c_max"] = 0,
+										["id"] = "Flamestrike",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 32,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 63,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 31,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 63,
+										["c_max"] = 32,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
 										["spellschool"] = 1,
-										["n_amt"] = 8,
-										["MISS"] = 1,
-										["a_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 1126.001448,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1642183384,
-							["serial"] = "Creature-0-5208-1-4308-4142-000061BA0F",
-							["fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 179,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 179,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 179,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Hunter's Mark"] = {
-										["activedamt"] = -1,
-										["id"] = "Hunter's Mark",
-										["targets"] = {
-										},
-										["actived_at"] = 1642183404,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-									["Serpent Sting"] = {
-										["activedamt"] = -1,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["actived_at"] = 1642183397,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Adventure Awaits"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Adventure Awaits",
-										["uptime"] = 21,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Aspect of the Cheetah"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Aspect of the Cheetah",
-										["uptime"] = 21,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 0,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 12,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Poklopac",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 42,
-							["serial"] = "Player-5239-013D6C3C",
-							["last_event"] = 1642183405,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Growl"] = 3,
-								["Claw"] = 6,
-							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["classe"] = "PET",
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 179,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Poklopac"] = true,
-				},
-				["CombatStartedAt"] = 150622.838,
-				["tempo_start"] = 1642183384,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1529, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:03:25",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Sparkleshell Tortoise",
-				["TotalElapsedCombatTime"] = 150606.241,
-				["CombatEndedAt"] = 150606.241,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:03:04",
-				["end_time"] = 150606.241,
-				["combat_id"] = 179,
-				["frags"] = {
-					["Sparkleshell Tortoise"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Poklopac"] = 1126.001777,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 9040,
-				["start_time"] = 150585.992,
-				["TimeData"] = {
-				},
-				["totals_grupo"] = {
-					705, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-			}, -- [15]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 178,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["totalabsorbed"] = 0.003413,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Sparkleshell Snapper"] = 1322,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["total"] = 1322.003413,
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 938.003413,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1642183340,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
-							["nome"] = "Poklopac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Sparkleshell Snapper"] = 119,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 119,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 119,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 7,
-										["r_amt"] = 1,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
 										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 43,
-										["targets"] = {
-											["Sparkleshell Snapper"] = 647,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 647,
-										["n_min"] = 37,
-										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 647,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 16,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									},
-									["Multi-Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 83,
-										["targets"] = {
-											["Sparkleshell Snapper"] = 83,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 83,
-										["n_min"] = 83,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 83,
-										["c_max"] = 0,
-										["id"] = "Multi-Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 59,
-										["targets"] = {
-											["Sparkleshell Snapper"] = 89,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 89,
-										["n_min"] = 30,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 89,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 30,
-										["r_amt"] = 1,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
+										["r_amt"] = 0,
+										["c_min"] = 32,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["grupo"] = true,
+							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_dps"] = 38.47395049619713,
-							["colocacao"] = 1,
-							["last_event"] = 1642183339,
-							["damage_taken"] = 0.003413,
-							["start_time"] = 1642183305,
-							["serial"] = "Player-5239-013D6C3C",
-							["classe"] = "HUNTER",
-						}, -- [1]
+							["last_event"] = 1642295401,
+							["damage_taken"] = 1314.004256,
+							["start_time"] = 1642295375,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
 						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.001023,
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.00158,
 							["damage_from"] = {
-								["Sparkleshell Snapper"] = true,
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
 							},
 							["targets"] = {
-								["Sparkleshell Snapper"] = 384,
+								["Lonac <Poklopac>"] = 677,
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 900.001023,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-5208-1-4308-10896-0000636AF4",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 384.001023,
-							["friendlyfire"] = {
-							},
+							["total_without_pet"] = 677.00158,
+							["monster"] = true,
+							["fight_component"] = true,
 							["dps_started"] = false,
-							["total"] = 384.001023,
-							["delay"] = 0,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
+							["total"] = 677.00158,
+							["end_time"] = 1642295424,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Arnak Grimtotem",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									["Growl"] = {
+									["Uppercut"] = {
 										["c_amt"] = 0,
-										["b_amt"] = 0,
+										["b_amt"] = 1,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 60,
 										["targets"] = {
-											["Sparkleshell Snapper"] = 0,
+											["Lonac <Poklopac>"] = 171,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 171,
+										["n_min"] = 55,
 										["g_dmg"] = 0,
 										["counter"] = 3,
-										["total"] = 0,
+										["total"] = 171,
 										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Growl",
+										["id"] = "Uppercut",
 										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["RESIST"] = 3,
 										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 3,
+										["b_dmg"] = 56,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
-									["Claw"] = {
+									["Rend"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 25,
+										["n_max"] = 13,
 										["targets"] = {
-											["Sparkleshell Snapper"] = 65,
+											["Lonac"] = 0,
+											["Lonac <Poklopac>"] = 65,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 65,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 6,
 										["total"] = 65,
-										["n_min"] = 20,
-										["MISS"] = 1,
-										["counter"] = 7,
-										["spellschool"] = 1,
-										["r_amt"] = 0,
 										["c_max"] = 0,
-										["b_dmg"] = 0,
-										["id"] = "Claw",
+										["id"] = "Rend",
 										["r_dmg"] = 0,
 										["a_amt"] = 0,
-										["BLOCK"] = 1,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
 										["a_dmg"] = 0,
-										["n_amt"] = 3,
-										["DODGE"] = 2,
-										["g_dmg"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 141,
-										["g_amt"] = 17,
-										["n_max"] = 0,
-										["targets"] = {
-											["Sparkleshell Snapper"] = 319,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["total"] = 319,
-										["n_min"] = 0,
-										["g_dmg"] = 178,
-										["counter"] = 29,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-										["c_max"] = 52,
-										["b_dmg"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 44,
-										["m_crit"] = 0,
-										["PARRY"] = 6,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 0,
-										["DODGE"] = 2,
-										["MISS"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1642183340,
-							["last_event"] = 1642183339,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1642183305,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["classe"] = "PET",
-						}, -- [2]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.001725,
-							["damage_from"] = {
-								["Lonac <Poklopac>"] = true,
-								["Poklopac"] = true,
-							},
-							["targets"] = {
-								["Lonac <Poklopac>"] = 900,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1642183338,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 900.001725,
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 900.001725,
-							["delay"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Sparkleshell Snapper",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Lightning Hide"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 210,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 210,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 23,
-										["total"] = 210,
-										["c_max"] = 0,
-										["id"] = "Lightning Hide",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 23,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 67,
-										["g_amt"] = 0,
-										["n_max"] = 57,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 690,
-											["Lonac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 623,
-										["n_min"] = 30,
-										["g_dmg"] = 0,
-										["counter"] = 19,
-										["total"] = 690,
-										["c_max"] = 67,
-										["r_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 67,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 16,
-										["spellschool"] = 1,
-										["DODGE"] = 2,
-									},
-									["Head Butt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Lonac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Head Butt",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1642183340,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 1322.001725,
-							["start_time"] = 1642183305,
-							["serial"] = "Creature-0-5208-1-4308-4143-000061B92A",
-							["fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 178,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.006753,
-							["last_hps"] = 11.96238092389554,
-							["healing_from"] = {
-							},
-							["targets"] = {
-								["Lonac <Poklopac>"] = 340,
-							},
-							["delay"] = 0,
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["totalover_without_pet"] = 0.006753,
-							["targets_overheal"] = {
-							},
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.006753,
-							["total_without_pet"] = 340.006753,
-							["iniciar_hps"] = false,
-							["totaldenied"] = 0.006753,
-							["classe"] = "HUNTER",
-							["end_time"] = 1642183340,
-							["healing_taken"] = 0.006753,
-							["total"] = 340.006753,
-							["nome"] = "Poklopac",
-							["targets_absorbs"] = {
-							},
-							["grupo"] = true,
-							["last_event"] = 1642183333,
-							["heal_enemy"] = {
-							},
-							["spells"] = {
-								["_ActorTable"] = {
-									["Mend Pet"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 68,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 340,
-										},
-										["n_min"] = 68,
-										["counter"] = 5,
-										["overheal"] = 0,
-										["total"] = 340,
-										["c_max"] = 0,
-										["id"] = "Mend Pet",
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["totaldenied"] = 0,
-										["m_amt"] = 0,
-										["m_healed"] = 0,
-										["n_amt"] = 5,
-										["n_curado"] = 340,
-										["c_min"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["colocacao"] = 1,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1642183329,
-							["serial"] = "Player-5239-013D6C3C",
-							["custom"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["healing_from"] = {
-								["Poklopac"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.008073,
-							["total_without_pet"] = 0.008073,
-							["total"] = 0.008073,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["totalabsorb"] = 0.008073,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.008073,
-							["healing_taken"] = 340.008073,
-							["fight_component"] = true,
-							["end_time"] = 1642183340,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["totaldenied"] = 0.008073,
-							["targets_overheal"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 2,
-							["last_event"] = 0,
-							["start_time"] = 1642183340,
-							["delay"] = 0,
-							["classe"] = "PET",
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 178,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 178,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Hunter's Mark"] = {
-										["activedamt"] = -1,
-										["id"] = "Hunter's Mark",
-										["targets"] = {
-										},
-										["actived_at"] = 1642183339,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-									["Serpent Sting"] = {
-										["activedamt"] = -1,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["actived_at"] = 1642183318,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Adventure Awaits"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Adventure Awaits",
-										["uptime"] = 35,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Aspect of the Cheetah"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Aspect of the Cheetah",
-										["uptime"] = 35,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 0,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 16,
-								["Mend Pet"] = 1,
-								["Multi-Shot"] = 1,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Poklopac",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 70,
-							["serial"] = "Player-5239-013D6C3C",
-							["last_event"] = 1642183340,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["classe"] = "PET",
-							["spell_cast"] = {
-								["Growl"] = 6,
-								["Claw"] = 7,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["fight_component"] = true,
-						}, -- [2]
-						{
-							["flag_original"] = 68136,
-							["nome"] = "Sparkleshell Snapper",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								["Head Butt"] = 1,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-5208-1-4308-4143-000061B92A",
-							["fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 178,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Poklopac"] = true,
-				},
-				["CombatStartedAt"] = 150582.989,
-				["tempo_start"] = 1642183305,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					2222, -- [1]
-					340, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:02:20",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Sparkleshell Snapper",
-				["TotalElapsedCombatTime"] = 150541.822,
-				["CombatEndedAt"] = 150541.822,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:01:45",
-				["end_time"] = 150541.822,
-				["combat_id"] = 178,
-				["frags"] = {
-					["Sparkleshell Snapper"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Poklopac"] = 1322.003413,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Poklopac"] = 340.006753,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 9039,
-				["start_time"] = 150506.56,
-				["TimeData"] = {
-				},
-				["totals_grupo"] = {
-					938, -- [1]
-					340, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-			}, -- [16]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 177,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008272,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Sparkleshell Tortoise"] = 1062,
-							},
-							["pets"] = {
-								"Lonac <Poklopac>", -- [1]
-							},
-							["total"] = 1062.008272,
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 692.008272,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1642183282,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
-							["nome"] = "Poklopac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 140,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 140,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 140,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 44,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 347,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 347,
-										["n_min"] = 23,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 347,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 23,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 9,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									},
-									["Multi-Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 87,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 87,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 87,
-										["n_min"] = 87,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 87,
-										["c_max"] = 0,
-										["id"] = "Multi-Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 59,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 118,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 118,
-										["n_min"] = 59,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 118,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 67.66107747198345,
-							["colocacao"] = 1,
-							["last_event"] = 1642183282,
-							["damage_taken"] = 0.008272,
-							["start_time"] = 1642183267,
-							["serial"] = "Player-5239-013D6C3C",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.008285,
-							["damage_from"] = {
-								["Scorpid Reaver"] = true,
-								["Sparkleshell Tortoise"] = true,
-							},
-							["targets"] = {
-								["Sparkleshell Tortoise"] = 370,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 406.008285,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 370.008285,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 370.008285,
-							["delay"] = 0,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 126,
-										["g_amt"] = 1,
-										["n_max"] = 24,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 296,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 149,
-										["n_min"] = 19,
-										["g_dmg"] = 21,
-										["counter"] = 13,
-										["r_amt"] = 0,
-										["total"] = 296,
-										["c_max"] = 43,
-										["spellschool"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["c_min"] = 41,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 7,
-										["a_amt"] = 0,
-										["MISS"] = 1,
-									},
-									["Claw"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 27,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 74,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 74,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 74,
-										["c_max"] = 0,
-										["id"] = "Claw",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
+										["successful_casted"] = 2,
 										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1642183282,
-							["last_event"] = 1642183281,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1642183268,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["classe"] = "PET",
-						}, -- [2]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.006503,
-							["damage_from"] = {
-								["Lonac <Poklopac>"] = true,
-								["Poklopac"] = true,
-							},
-							["targets"] = {
-								["Lonac <Poklopac>"] = 312,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1642183281,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 312.006503,
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 312.006503,
-							["delay"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Sparkleshell Tortoise",
-							["spells"] = {
-								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 1,
@@ -10264,169 +6642,148 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 32,
 										["targets"] = {
-											["Lonac <Poklopac>"] = 195,
-											["Lonac"] = 0,
+											["Lonac <Poklopac>"] = 441,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 195,
-										["n_min"] = 25,
+										["n_dmg"] = 441,
+										["n_min"] = 24,
 										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 195,
+										["counter"] = 16,
+										["total"] = 441,
 										["c_max"] = 0,
-										["r_amt"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 25,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
 										["spellschool"] = 1,
-										["DODGE"] = 1,
-									},
-									["Lightning Hide"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 117,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 117,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 14,
-										["total"] = 117,
-										["c_max"] = 0,
-										["id"] = "Lightning Hide",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 14,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["b_dmg"] = 29,
+										["n_amt"] = 16,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1642183282,
 							["last_dps"] = 0,
 							["custom"] = 0,
+							["last_event"] = 1642295416,
+							["damage_taken"] = 956.00158,
+							["start_time"] = 1642295375,
+							["delay"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 1062.006503,
-							["start_time"] = 1642183267,
-							["serial"] = "Creature-0-5208-1-4308-4142-0000E1B9A2",
-							["fight_component"] = true,
-						}, -- [3]
+						}, -- [4]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 316,
 					["tipo"] = 3,
-					["combatId"] = 177,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
+					["combatId"] = 316,
 					["tipo"] = 7,
-					["combatId"] = 177,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
+					["combatId"] = 316,
 					["tipo"] = 9,
-					["combatId"] = 177,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
+							["debuff_uptime"] = 23,
+							["debuff_uptime_targets"] = {
+							},
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Hunter's Mark"] = {
 										["activedamt"] = -1,
 										["id"] = "Hunter's Mark",
 										["targets"] = {
 										},
-										["actived_at"] = 1642183282,
+										["actived_at"] = 1642295385,
 										["uptime"] = 0,
-										["counter"] = 0,
+										["appliedamt"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
-										["appliedamt"] = 0,
+										["counter"] = 0,
+									},
+									["Dazed"] = {
+										["activedamt"] = 0,
+										["id"] = "Dazed",
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									["Serpent Sting"] = {
-										["activedamt"] = -1,
+										["activedamt"] = 0,
 										["id"] = "Serpent Sting",
 										["targets"] = {
 										},
-										["actived_at"] = 1642183281,
-										["uptime"] = 0,
-										["counter"] = 0,
+										["uptime"] = 15,
+										["appliedamt"] = 3,
 										["refreshamt"] = 0,
 										["actived"] = false,
-										["appliedamt"] = 0,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Auto Shot"] = 15,
+								["Arcane Shot"] = 2,
+								["Multi-Shot"] = 2,
+								["Serpent Sting"] = 4,
 							},
 							["pets"] = {
 								"Lonac <Poklopac>", -- [1]
 							},
-							["classe"] = "HUNTER",
+							["buff_uptime"] = 68,
+							["tipo"] = 4,
+							["last_event"] = 1642295409,
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									["Adventure Awaits"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Adventure Awaits",
-										["uptime"] = 15,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
 									["Aspect of the Cheetah"] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
 										["id"] = "Aspect of the Cheetah",
-										["uptime"] = 15,
 										["targets"] = {
 										},
+										["uptime"] = 34,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 34,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 0,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 9,
-								["Multi-Shot"] = 1,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Poklopac",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 30,
 							["serial"] = "Player-5239-013D6C3C",
-							["last_event"] = 1642183282,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -10434,93 +6791,125 @@ _detalhes_database = {
 							["nome"] = "Lonac <Poklopac>",
 							["pets"] = {
 							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Growl"] = 3,
-								["Claw"] = 3,
-							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
 							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 4,
+								["Claw"] = 6,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
 						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["nome"] = "Grimtotem Geomancer",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Fireball"] = 7,
+								["Flamestrike"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10760-0000636AC5",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "Arnak Grimtotem",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Uppercut"] = 3,
+								["Rend"] = 2,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10896-0000636AF4",
+							["classe"] = "UNKNOW",
+						}, -- [4]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 316,
 					["tipo"] = 2,
-					["combatId"] = 177,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Poklopac"] = true,
 				},
-				["CombatStartedAt"] = 150503.891,
-				["tempo_start"] = 1642183267,
-				["last_events_tables"] = {
+				["tempo_start"] = 1642295375,
+				["cleu_timeline"] = {
 				},
 				["alternate_power"] = {
 				},
+				["TotalElapsedCombatTime"] = 389507.358,
+				["enemy"] = "Grimtotem Geomancer",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					1373.991917, -- [1]
+					3652, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1226, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["last_events_tables"] = {
 				},
 				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:01:22",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Sparkleshell Tortoise",
-				["TotalElapsedCombatTime"] = 150483.825,
-				["CombatEndedAt"] = 150483.825,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
-				},
-				["data_inicio"] = "19:01:07",
-				["end_time"] = 150483.825,
-				["combat_id"] = 177,
-				["frags"] = {
-					["Sparkleshell Tortoise"] = 1,
-				},
-				["spells_cast_timeline"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Poklopac"] = 1062.008272,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -10529,66 +6918,94 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Poklopac"] = 2270.001408,
+						}, -- [1]
+					},
 				},
+				["end_time"] = 389507.358,
+				["instance_type"] = "none",
+				["combat_id"] = 316,
+				["combat_counter"] = 9188,
+				["player_last_events"] = {
+				},
+				["CombatEndedAt"] = 389507.358,
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "02:10:10",
+				["data_inicio"] = "02:09:36",
 				["CombatSkillCache"] = {
 				},
-				["combat_counter"] = 9038,
-				["start_time"] = 150468.129,
+				["frags"] = {
+					["Grimtotem Geomancer"] = 2,
+					["Arnak Grimtotem"] = 1,
+				},
+				["start_time"] = 389473.363,
 				["TimeData"] = {
 				},
-				["totals_grupo"] = {
-					692, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-			}, -- [17]
+				["contra"] = "Grimtotem Geomancer",
+			}, -- [11]
 			{
 				{
+					["combatId"] = 315,
 					["tipo"] = 2,
-					["combatId"] = 176,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1047,
-							["totalabsorbed"] = 0.001499,
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.007646,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Sparkleshell Tortoise"] = 1115,
+								["Grimtotem Geomancer"] = 652,
 							},
 							["pets"] = {
 								"Lonac <Poklopac>", -- [1]
 							},
-							["total"] = 1115.001499,
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 719.001499,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1642183256,
+							["total_without_pet"] = 308.007646,
 							["friendlyfire"] = {
 							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1642295369,
+							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Poklopac",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 52,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 252,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 252,
+										["n_min"] = 48,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 252,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
 									["Serpent Sting"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -10596,57 +7013,2730 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 28,
 										["targets"] = {
-											["Sparkleshell Tortoise"] = 126,
+											["Grimtotem Geomancer"] = 56,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 126,
-										["n_min"] = 14,
+										["n_dmg"] = 56,
+										["n_min"] = 28,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 126,
+										["counter"] = 2,
+										["total"] = 56,
 										["c_max"] = 0,
 										["id"] = "Serpent Sting",
-										["r_dmg"] = 14,
-										["r_amt"] = 1,
-										["a_amt"] = 0,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 652.007646,
+							["serial"] = "Player-5239-013D6C3C",
+							["last_dps"] = 75.99156713272279,
+							["custom"] = 0,
+							["last_event"] = 1642295368,
+							["damage_taken"] = 0.007646,
+							["start_time"] = 1642295359,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.007916,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["damage_from"] = {
+								["Grimtotem Geomancer"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Geomancer"] = 344,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 344.007916,
+							["dps_started"] = false,
+							["total"] = 344.007916,
+							["classe"] = "PET",
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 60,
+										["g_amt"] = 0,
+										["n_max"] = 32,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 235,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 175,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 235,
+										["c_max"] = 60,
+										["MISS"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 60,
+									},
+									["Claw"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 52,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 109,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 57,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 109,
+										["c_max"] = 52,
+										["id"] = "Claw",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 52,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295369,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 65.007916,
+							["start_time"] = 1642295359,
+							["delay"] = 0,
+							["last_event"] = 1642295368,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.005509,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 65,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 65.005509,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1642295369,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Grimtotem Geomancer",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 65,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 65,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 65,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 65.005509,
+							["serial"] = "Creature-0-5208-1-4308-10760-0000636A8B",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295365,
+							["damage_taken"] = 652.0055090000001,
+							["start_time"] = 1642295359,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 315,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 315,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 315,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime"] = 7,
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Hunter's Mark"] = {
+										["activedamt"] = -1,
+										["id"] = "Hunter's Mark",
+										["targets"] = {
+										},
+										["actived_at"] = 1642295368,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Serpent Sting"] = {
+										["activedamt"] = 0,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Auto Shot"] = 5,
+								["Serpent Sting"] = 1,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["buff_uptime"] = 20,
+							["tipo"] = 4,
+							["last_event"] = 1642295369,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Aspect of the Cheetah"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Cheetah",
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5239-013D6C3C",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 2,
+								["Claw"] = 3,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 315,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Poklopac"] = true,
+				},
+				["CombatStartedAt"] = 389471.771,
+				["tempo_start"] = 1642295359,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Grimtotem Geomancer",
+				["combat_counter"] = 9187,
+				["playing_solo"] = true,
+				["totals"] = {
+					717, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 389466.881,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "02:09:20",
+				["end_time"] = 389466.881,
+				["totals_grupo"] = {
+					308, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 315,
+				["TotalElapsedCombatTime"] = 9.722999999998137,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Poklopac"] = 652.007646,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Grimtotem Geomancer"] = 1,
+				},
+				["data_fim"] = "02:09:30",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 389457.158,
+				["contra"] = "Grimtotem Geomancer",
+				["TimeData"] = {
+				},
+			}, -- [12]
+			{
+				{
+					["combatId"] = 314,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.00839,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Grimtotem Stomper"] = 696,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 339.00839,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1642295350,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Poklopac",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
 									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 46,
+										["targets"] = {
+											["Grimtotem Stomper"] = 269,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 269,
+										["n_min"] = 42,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 269,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Grimtotem Stomper"] = 70,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 70,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 70,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 14,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 1,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 696.00839,
+							["serial"] = "Player-5239-013D6C3C",
+							["last_dps"] = 57.01248279823908,
+							["custom"] = 0,
+							["last_event"] = 1642295349,
+							["damage_taken"] = 0.00839,
+							["start_time"] = 1642295337,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.001251,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["damage_from"] = {
+								["Grimtotem Stomper"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Stomper"] = 357,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 357.001251,
+							["dps_started"] = false,
+							["total"] = 357.001251,
+							["classe"] = "PET",
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 1,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 44,
+										["n_max"] = 28,
 										["targets"] = {
-											["Sparkleshell Tortoise"] = 389,
+											["Grimtotem Stomper"] = 253,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 389,
+										["n_dmg"] = 253,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 253,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 12,
+										["n_amt"] = 10,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Claw"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Grimtotem Stomper"] = 104,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 104,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 104,
+										["c_max"] = 0,
+										["id"] = "Claw",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295350,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 119.001251,
+							["start_time"] = 1642295337,
+							["delay"] = 0,
+							["last_event"] = 1642295349,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006491,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 119,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 119.006491,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1642295350,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Grimtotem Stomper",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 25,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 119,
+											["Lonac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 119,
 										["n_min"] = 23,
 										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 389,
+										["counter"] = 6,
+										["total"] = 119,
 										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
 										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 119.006491,
+							["serial"] = "Creature-0-5208-1-4308-10759-0000636B90",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295346,
+							["damage_taken"] = 696.006491,
+							["start_time"] = 1642295337,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 314,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 314,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 314,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime"] = 11,
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Hunter's Mark"] = {
+										["activedamt"] = -1,
+										["id"] = "Hunter's Mark",
+										["targets"] = {
+										},
+										["actived_at"] = 1642295349,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Serpent Sting"] = {
+										["activedamt"] = 0,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Auto Shot"] = 7,
+								["Serpent Sting"] = 1,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["buff_uptime"] = 26,
+							["tipo"] = 4,
+							["last_event"] = 1642295350,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Aspect of the Cheetah"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Cheetah",
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5239-013D6C3C",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 2,
+								["Claw"] = 4,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 314,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Poklopac"] = true,
+				},
+				["CombatStartedAt"] = 389435.054,
+				["tempo_start"] = 1642295337,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Grimtotem Stomper",
+				["combat_counter"] = 9186,
+				["playing_solo"] = true,
+				["totals"] = {
+					815, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 389448.279,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "02:08:58",
+				["end_time"] = 389448.279,
+				["totals_grupo"] = {
+					339, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 314,
+				["TotalElapsedCombatTime"] = 13.22499999997672,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Poklopac"] = 696.00839,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Grimtotem Stomper"] = 1,
+				},
+				["data_fim"] = "02:09:11",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 389435.054,
+				["contra"] = "Grimtotem Stomper",
+				["TimeData"] = {
+				},
+			}, -- [13]
+			{
+				{
+					["combatId"] = 313,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.006508,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Grimtotem Geomancer"] = 1266,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 594.0065079999999,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1642295314,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Poklopac",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 59,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 59,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 59,
+										["n_min"] = 59,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 59,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Multi-Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 93,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 185,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 185,
+										["n_min"] = 92,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 185,
+										["c_max"] = 0,
+										["id"] = "Multi-Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 92,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 49,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 322,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 322,
+										["n_min"] = 41,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 322,
+										["c_max"] = 0,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 23,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 10,
 										["spellschool"] = 1,
-										["MISS"] = 2,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 28,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 28,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 28,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 1266.006508,
+							["serial"] = "Player-5239-013D6C3C",
+							["last_dps"] = 76.8161220798363,
+							["custom"] = 0,
+							["last_event"] = 1642295314,
+							["damage_taken"] = 0.006508,
+							["start_time"] = 1642295298,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.006113,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["damage_from"] = {
+								["Grimtotem Geomancer"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Geomancer"] = 672,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 672.006113,
+							["dps_started"] = false,
+							["total"] = 672.006113,
+							["classe"] = "PET",
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 238,
+										["g_amt"] = 0,
+										["n_max"] = 33,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 563,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 325,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 563,
+										["c_max"] = 64,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 11,
+										["r_amt"] = 0,
+										["c_min"] = 56,
+									},
+									["Claw"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 109,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 109,
+										["n_min"] = 23,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 109,
+										["c_max"] = 0,
+										["id"] = "Claw",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295314,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 244.006113,
+							["start_time"] = 1642295298,
+							["delay"] = 0,
+							["last_event"] = 1642295314,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.004125,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 244,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 244.004125,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1642295314,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Grimtotem Geomancer",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 35,
+										["g_amt"] = 0,
+										["n_max"] = 20,
+										["targets"] = {
+											["Lonac"] = 0,
+											["Lonac <Poklopac>"] = 118,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 83,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 118,
+										["c_max"] = 35,
+										["a_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 35,
+									},
+									["Fireball"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 126,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 126,
+											["Lonac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 126,
+										["n_min"] = 126,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 126,
+										["c_max"] = 0,
+										["id"] = "Fireball",
+										["r_dmg"] = 0,
+										["RESIST"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 244.004125,
+							["serial"] = "Creature-0-5208-1-4308-10760-0000636B1D",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295312,
+							["damage_taken"] = 1266.004125,
+							["start_time"] = 1642295302,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 313,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 313,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 313,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime"] = 3,
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Hunter's Mark"] = {
+										["activedamt"] = -1,
+										["id"] = "Hunter's Mark",
+										["targets"] = {
+										},
+										["actived_at"] = 1642295305,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Serpent Sting"] = {
+										["activedamt"] = 0,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Arcane Shot"] = 1,
+								["Auto Shot"] = 7,
+								["Hunter's Mark"] = 1,
+								["Multi-Shot"] = 1,
+								["Serpent Sting"] = 1,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["buff_uptime"] = 32,
+							["tipo"] = 4,
+							["last_event"] = 1642295314,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Aspect of the Cheetah"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Cheetah",
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5239-013D6C3C",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 2,
+								["Claw"] = 4,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "Grimtotem Geomancer",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Fireball"] = 2,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10760-0000636B71",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 313,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Poklopac"] = true,
+				},
+				["CombatStartedAt"] = 389395.48,
+				["tempo_start"] = 1642295298,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Grimtotem Geomancer",
+				["combat_counter"] = 9185,
+				["playing_solo"] = true,
+				["totals"] = {
+					1510, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 389411.961,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "02:08:18",
+				["end_time"] = 389411.961,
+				["totals_grupo"] = {
+					594, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 313,
+				["TotalElapsedCombatTime"] = 16.48100000002887,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Poklopac"] = 1266.006508,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Grimtotem Geomancer"] = 2,
+				},
+				["data_fim"] = "02:08:35",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 389395.48,
+				["contra"] = "Grimtotem Geomancer",
+				["TimeData"] = {
+				},
+			}, -- [14]
+			{
+				{
+					["combatId"] = 312,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004425,
+							["damage_from"] = {
+								["Grimtotem Geomancer"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Geomancer"] = 610,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 360.004425,
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295293,
+							["dps_started"] = false,
+							["total"] = 610.004425,
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Poklopac",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 59,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 59,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 59,
+										["n_min"] = 59,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 59,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 51,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 245,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 245,
+										["n_min"] = 46,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 245,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 56,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 56,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 56,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-5239-013D6C3C",
+							["last_dps"] = 97.5538821361676,
+							["custom"] = 0,
+							["last_event"] = 1642295292,
+							["damage_taken"] = 124.004425,
+							["start_time"] = 1642295286,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007532,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 19,
+								["Poklopac"] = 124,
+							},
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-5208-1-4308-10760-0000636A33",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 143.007532,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 143.007532,
+							["end_time"] = 1642295293,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Grimtotem Geomancer",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Fireball"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 124,
+										["targets"] = {
+											["Poklopac"] = 124,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 124,
+										["n_min"] = 124,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 124,
+										["c_max"] = 0,
+										["id"] = "Fireball",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 19,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 19,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 19,
+										["n_min"] = 19,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 19,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295291,
+							["damage_taken"] = 610.007532,
+							["start_time"] = 1642295290,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.004016,
+							["damage_from"] = {
+								["Grimtotem Geomancer"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Geomancer"] = 250,
+							},
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 250.004016,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["end_time"] = 1642295293,
+							["dps_started"] = false,
+							["total"] = 250.004016,
+							["on_hold"] = false,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 54,
+										["g_amt"] = 0,
+										["n_max"] = 33,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 180,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 126,
+										["n_min"] = 29,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 180,
+										["c_max"] = 54,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 54,
+									},
+									["Claw"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 46,
+										["g_amt"] = 0,
+										["n_max"] = 24,
+										["targets"] = {
+											["Grimtotem Geomancer"] = 70,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 24,
+										["n_min"] = 24,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 70,
+										["c_max"] = 46,
+										["id"] = "Claw",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 46,
+									},
+								},
+							},
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295291,
+							["damage_taken"] = 19.004016,
+							["start_time"] = 1642295287,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 312,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 312,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 312,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime"] = 3,
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Hunter's Mark"] = {
+										["activedamt"] = -1,
+										["id"] = "Hunter's Mark",
+										["targets"] = {
+										},
+										["actived_at"] = 1642295292,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Serpent Sting"] = {
+										["activedamt"] = -1,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["actived_at"] = 1642295292,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Dazed"] = {
+										["activedamt"] = 1,
+										["id"] = "Dazed",
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Auto Shot"] = 4,
+								["Arcane Shot"] = 1,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["buff_uptime"] = 14,
+							["tipo"] = 4,
+							["last_event"] = 1642295293,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Aspect of the Cheetah"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Cheetah",
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5239-013D6C3C",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 1,
+								["Claw"] = 2,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "Grimtotem Geomancer",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Fireball"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10760-0000636A33",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 312,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Poklopac"] = true,
+				},
+				["tempo_start"] = 1642295286,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["TotalElapsedCombatTime"] = 389391.336,
+				["enemy"] = "Grimtotem Geomancer",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					753, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					360, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["last_events_tables"] = {
+				},
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Poklopac"] = 610.004425,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 389391.336,
+				["instance_type"] = "none",
+				["combat_id"] = 312,
+				["combat_counter"] = 9184,
+				["player_last_events"] = {
+				},
+				["CombatEndedAt"] = 389391.336,
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "02:08:14",
+				["data_inicio"] = "02:08:07",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Grimtotem Geomancer"] = 1,
+				},
+				["start_time"] = 389384.24,
+				["TimeData"] = {
+				},
+				["contra"] = "Grimtotem Geomancer",
+			}, -- [15]
+			{
+				{
+					["combatId"] = 311,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006654,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Grimtotem Bandit"] = 752,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 385.006654,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1642295280,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Poklopac",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 46,
+										["targets"] = {
+											["Grimtotem Bandit"] = 308,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 308,
+										["n_min"] = 42,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 308,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Grimtotem Bandit"] = 77,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 77,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 77,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 21,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 1,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 752.006654,
+							["serial"] = "Player-5239-013D6C3C",
+							["last_dps"] = 69.36051042240447,
+							["custom"] = 0,
+							["last_event"] = 1642295278,
+							["damage_taken"] = 0.006654,
+							["start_time"] = 1642295268,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.005004,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 95,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 95.005004,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1642295280,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Grimtotem Bandit",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 25,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 91,
+											["Lonac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 91,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 91,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Kick"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 4,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 4,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = "Kick",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 95.005004,
+							["serial"] = "Creature-0-5208-1-4308-10758-000063672A",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295277,
+							["damage_taken"] = 752.005004,
+							["start_time"] = 1642295269,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.00425,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["damage_from"] = {
+								["Grimtotem Bandit"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Bandit"] = 367,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 367.00425,
+							["dps_started"] = false,
+							["total"] = 367.00425,
+							["classe"] = "PET",
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 52,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Grimtotem Bandit"] = 261,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 209,
+										["n_min"] = 24,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 261,
+										["c_max"] = 52,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["r_amt"] = 0,
+										["c_min"] = 52,
+									},
+									["Claw"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 27,
+										["targets"] = {
+											["Grimtotem Bandit"] = 106,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 106,
+										["n_min"] = 25,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 106,
+										["c_max"] = 0,
+										["id"] = "Claw",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295280,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 95.00425,
+							["start_time"] = 1642295269,
+							["delay"] = 0,
+							["last_event"] = 1642295278,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 311,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 311,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 311,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime"] = 0,
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Hunter's Mark"] = {
+										["activedamt"] = -1,
+										["id"] = "Hunter's Mark",
+										["targets"] = {
+										},
+										["actived_at"] = 1642295278,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Serpent Sting"] = {
+										["activedamt"] = -1,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["actived_at"] = 1642295278,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Auto Shot"] = 7,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["buff_uptime"] = 24,
+							["tipo"] = 4,
+							["last_event"] = 1642295280,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Aspect of the Cheetah"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Cheetah",
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5239-013D6C3C",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 2,
+								["Claw"] = 4,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "Grimtotem Bandit",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Kick"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10758-000063672A",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 311,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Poklopac"] = true,
+				},
+				["CombatStartedAt"] = 389382.675,
+				["tempo_start"] = 1642295268,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Grimtotem Bandit",
+				["combat_counter"] = 9183,
+				["playing_solo"] = true,
+				["totals"] = {
+					847, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 389377.572,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "02:07:48",
+				["end_time"] = 389377.572,
+				["totals_grupo"] = {
+					385, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 311,
+				["TotalElapsedCombatTime"] = 389377.572,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Poklopac"] = 752.006654,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Grimtotem Bandit"] = 1,
+				},
+				["data_fim"] = "02:08:00",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 389365.479,
+				["contra"] = "Grimtotem Bandit",
+				["TimeData"] = {
+				},
+			}, -- [16]
+			{
+				{
+					["combatId"] = 310,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.003086,
+							["damage_from"] = {
+								["Grimtotem Stomper"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Stomper"] = 739,
+								["Grimtotem Bandit"] = 1579,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["on_hold"] = false,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1296.003086,
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295255,
+							["dps_started"] = false,
+							["total"] = 2318.003086,
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Poklopac",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Raptor Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 94,
+										["targets"] = {
+											["Grimtotem Stomper"] = 94,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 94,
+										["n_min"] = 94,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 94,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = "Raptor Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 84,
+										["targets"] = {
+											["Grimtotem Stomper"] = 220,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 220,
+										["n_min"] = 66,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 220,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 									["Multi-Shot"] = {
 										["c_amt"] = 0,
@@ -10655,27 +9745,86 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 86,
 										["targets"] = {
-											["Sparkleshell Tortoise"] = 86,
+											["Grimtotem Stomper"] = 86,
+											["Grimtotem Bandit"] = 82,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 86,
-										["n_min"] = 86,
+										["n_dmg"] = 168,
+										["n_min"] = 82,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 86,
+										["counter"] = 2,
+										["total"] = 168,
 										["c_max"] = 0,
 										["id"] = "Multi-Shot",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Grimtotem Bandit"] = 168,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 168,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 168,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
 										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 90,
+										["g_amt"] = 0,
+										["n_max"] = 46,
+										["targets"] = {
+											["Grimtotem Bandit"] = 528,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 438,
+										["n_min"] = 36,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 528,
+										["c_max"] = 90,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
 										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 11,
+										["r_amt"] = 0,
+										["c_min"] = 90,
 									},
 									["Arcane Shot"] = {
 										["c_amt"] = 0,
@@ -10684,7 +9833,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 59,
 										["targets"] = {
-											["Sparkleshell Tortoise"] = 118,
+											["Grimtotem Bandit"] = 118,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 118,
@@ -10695,327 +9844,471 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Arcane Shot",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 55.10806598137663,
-							["colocacao"] = 1,
-							["last_event"] = 1642183255,
-							["damage_taken"] = 0.001499,
-							["start_time"] = 1642183236,
 							["serial"] = "Player-5239-013D6C3C",
-							["classe"] = "HUNTER",
+							["last_dps"] = 66.0757414554782,
+							["custom"] = 0,
+							["last_event"] = 1642295246,
+							["damage_taken"] = 228.003086,
+							["start_time"] = 1642295211,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [1]
 						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.007746,
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.00167,
+							["damage_from"] = {
+								["Grimtotem Stomper"] = true,
+								["Grimtotem Bandit"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Stomper"] = 339,
+								["Grimtotem Bandit"] = 683,
+							},
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1022.00167,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["end_time"] = 1642295255,
+							["dps_started"] = false,
+							["total"] = 1022.00167,
+							["on_hold"] = false,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 6,
+										["b_amt"] = 1,
+										["c_dmg"] = 314,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Grimtotem Stomper"] = 264,
+											["Grimtotem Bandit"] = 570,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 520,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 29,
+										["MISS"] = 1,
+										["total"] = 834,
+										["c_max"] = 57,
+										["a_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 2,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 16,
+										["n_amt"] = 20,
+										["r_amt"] = 0,
+										["c_min"] = 49,
+									},
+									["Claw"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 41,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Grimtotem Stomper"] = 75,
+											["Grimtotem Bandit"] = 113,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 147,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 188,
+										["c_max"] = 41,
+										["MISS"] = 1,
+										["id"] = "Claw",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 41,
+									},
+								},
+							},
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295245,
+							["damage_taken"] = 486.00167,
+							["start_time"] = 1642295220,
+							["delay"] = 1642295245,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004613,
 							["damage_from"] = {
 								["Lonac <Poklopac>"] = true,
 								["Poklopac"] = true,
 							},
 							["targets"] = {
-								["Lonac <Poklopac>"] = 404,
+								["Lonac <Poklopac>"] = 301,
 							},
 							["pets"] = {
 							},
-							["last_event"] = 1642183255,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-5208-1-4308-10758-0000636A7C",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 404.007746,
-							["classe"] = "UNKNOW",
+							["total_without_pet"] = 301.004613,
+							["monster"] = true,
+							["fight_component"] = true,
 							["dps_started"] = false,
-							["total"] = 404.007746,
-							["delay"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Sparkleshell Tortoise",
+							["total"] = 301.004613,
+							["end_time"] = 1642295255,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Grimtotem Bandit",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									["Lightning Hide"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Lonac <Poklopac>"] = 135,
-											["Lonac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 135,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 135,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Lightning Hide",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 16,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
 									["!Melee"] = {
 										["c_amt"] = 0,
-										["b_amt"] = 0,
+										["b_amt"] = 1,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 34,
+										["n_max"] = 26,
 										["targets"] = {
-											["Lonac <Poklopac>"] = 269,
+											["Lonac <Poklopac>"] = 301,
 											["Lonac"] = 0,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 269,
-										["n_min"] = 27,
+										["n_dmg"] = 301,
+										["n_min"] = 19,
 										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 269,
+										["counter"] = 15,
+										["a_amt"] = 0,
+										["total"] = 301,
 										["c_max"] = 0,
-										["r_amt"] = 0,
+										["MISS"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
-										["c_min"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["spellschool"] = 1,
+										["b_dmg"] = 24,
+										["n_amt"] = 13,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Kick"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Lonac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Kick",
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
 										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1642183256,
 							["last_dps"] = 0,
 							["custom"] = 0,
+							["last_event"] = 1642295231,
+							["damage_taken"] = 1579.004613,
+							["start_time"] = 1642295234,
+							["delay"] = 1642295231,
 							["tipo"] = 1,
-							["damage_taken"] = 1115.007746,
-							["start_time"] = 1642183236,
-							["serial"] = "Creature-0-5208-1-4308-4142-000061B93A",
-							["fight_component"] = true,
-						}, -- [2]
+						}, -- [3]
 						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.001257,
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.007671,
 							["damage_from"] = {
-								["Scorpid Reaver"] = true,
-								["Sparkleshell Tortoise"] = true,
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
 							},
 							["targets"] = {
-								["Sparkleshell Tortoise"] = 396,
+								["Lonac <Poklopac>"] = 185,
+								["Poklopac"] = 228,
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 504.001257,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-5208-1-4308-10759-0000636A48",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 396.001257,
-							["friendlyfire"] = {
-							},
+							["total_without_pet"] = 413.007671,
+							["monster"] = true,
+							["fight_component"] = true,
 							["dps_started"] = false,
-							["total"] = 396.001257,
-							["delay"] = 0,
-							["ownerName"] = "Poklopac",
-							["nome"] = "Lonac <Poklopac>",
+							["total"] = 413.007671,
+							["end_time"] = 1642295255,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Grimtotem Stomper",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 1,
-										["c_dmg"] = 83,
-										["g_amt"] = 5,
-										["n_max"] = 24,
-										["targets"] = {
-											["Sparkleshell Tortoise"] = 320,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 140,
-										["total"] = 320,
-										["n_min"] = 7,
-										["g_dmg"] = 97,
-										["counter"] = 17,
-										["MISS"] = 1,
-										["r_amt"] = 0,
-										["c_max"] = 44,
-										["b_dmg"] = 7,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 39,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 7,
-										["a_amt"] = 0,
-										["DODGE"] = 1,
-									},
-									["Claw"] = {
+									["Healing Ward"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 27,
+										["n_max"] = 0,
 										["targets"] = {
-											["Sparkleshell Tortoise"] = 76,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 76,
-										["n_min"] = 22,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 76,
+										["counter"] = 0,
+										["total"] = 0,
 										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Claw",
+										["id"] = "Healing Ward",
 										["r_dmg"] = 0,
 										["a_dmg"] = 0,
-										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 3,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 185,
+											["Poklopac"] = 73,
+											["Lonac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 258,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["a_amt"] = 0,
+										["total"] = 258,
+										["c_max"] = 0,
+										["MISS"] = 2,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["MISS"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 20,
+										["n_amt"] = 10,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Earth Shock"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 155,
+										["targets"] = {
+											["Poklopac"] = 155,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 155,
+										["n_min"] = 155,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 155,
+										["c_max"] = 0,
+										["id"] = "Earth Shock",
+										["r_dmg"] = 0,
+										["RESIST"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["end_time"] = 1642183256,
-							["last_event"] = 1642183255,
+							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["last_dps"] = 0,
 							["custom"] = 0,
+							["last_event"] = 1642295246,
+							["damage_taken"] = 739.0076710000001,
+							["start_time"] = 1642295214,
+							["delay"] = 0,
 							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1642183236,
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
-							["classe"] = "PET",
-						}, -- [3]
+						}, -- [4]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 310,
 					["tipo"] = 3,
-					["combatId"] = 176,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
+					["combatId"] = 310,
 					["tipo"] = 7,
-					["combatId"] = 176,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
+					["combatId"] = 310,
 					["tipo"] = 9,
-					["combatId"] = 176,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
+							["debuff_uptime"] = 27,
+							["debuff_uptime_targets"] = {
+							},
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Hunter's Mark"] = {
 										["activedamt"] = -1,
 										["id"] = "Hunter's Mark",
 										["targets"] = {
 										},
-										["actived_at"] = 1642183255,
+										["actived_at"] = 1642295220,
 										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
 										["appliedamt"] = 0,
-									},
-									["Serpent Sting"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
 										["refreshamt"] = 0,
-										["id"] = "Serpent Sting",
-										["uptime"] = 15,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Dazed"] = {
+										["activedamt"] = 0,
+										["id"] = "Dazed",
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["uptime"] = 9,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Serpent Sting"] = {
+										["activedamt"] = 0,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["uptime"] = 18,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Raptor Strike"] = 2,
+								["Auto Shot"] = 12,
+								["Arcane Shot"] = 2,
+								["Multi-Shot"] = 1,
+								["Serpent Sting"] = 2,
 							},
 							["pets"] = {
 								"Lonac <Poklopac>", -- [1]
 							},
-							["classe"] = "HUNTER",
+							["buff_uptime"] = 88,
+							["tipo"] = 4,
+							["last_event"] = 1642295255,
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									["Adventure Awaits"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Adventure Awaits",
-										["uptime"] = 20,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
 									["Aspect of the Cheetah"] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
 										["id"] = "Aspect of the Cheetah",
-										["uptime"] = 20,
 										["targets"] = {
 										},
+										["uptime"] = 44,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 44,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 15,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 12,
-								["Multi-Shot"] = 1,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Poklopac",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 40,
 							["serial"] = "Player-5239-013D6C3C",
-							["last_event"] = 1642183256,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -11023,93 +10316,132 @@ _detalhes_database = {
 							["nome"] = "Lonac <Poklopac>",
 							["pets"] = {
 							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Growl"] = 3,
-								["Claw"] = 4,
-							},
-							["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
 							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 5,
+								["Claw"] = 8,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
 						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["nome"] = "Grimtotem Stomper",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Earth Shock"] = 2,
+								["Healing Ward"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10759-0000636A48",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "Grimtotem Bandit",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Kick"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10758-0000636A57",
+							["classe"] = "UNKNOW",
+						}, -- [4]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 310,
 					["tipo"] = 2,
-					["combatId"] = 176,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Poklopac"] = true,
 				},
-				["CombatStartedAt"] = 150466.694,
-				["tempo_start"] = 1642183236,
-				["last_events_tables"] = {
+				["CombatStartedAt"] = 389363.833,
+				["tempo_start"] = 1642295211,
+				["cleu_timeline"] = {
 				},
 				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Grimtotem Stomper",
+				["combat_counter"] = 9182,
+				["playing_solo"] = true,
+				["totals"] = {
+					3032, -- [1]
+					-0.012846, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
 				},
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1518.995343, -- [1]
+				["CombatEndedAt"] = 389352.893,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "02:06:52",
+				["end_time"] = 389352.893,
+				["totals_grupo"] = {
+					1296, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
+				["combat_id"] = 310,
+				["TotalElapsedCombatTime"] = 43.65999999997439,
 				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:00:56",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Sparkleshell Tortoise",
-				["TotalElapsedCombatTime"] = 150457.487,
-				["CombatEndedAt"] = 150457.487,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:00:36",
-				["end_time"] = 150457.487,
-				["combat_id"] = 176,
-				["frags"] = {
-					["Sparkleshell Tortoise"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Poklopac"] = 1115.001499,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -11118,33 +10450,626 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Poklopac"] = 2318.003086,
+						}, -- [1]
+					},
 				},
+				["frags"] = {
+					["Grimtotem Bandit"] = 2,
+					["Grimtotem Stomper"] = 1,
+					["Healing Ward"] = 1,
+				},
+				["data_fim"] = "02:07:36",
+				["instance_type"] = "none",
 				["CombatSkillCache"] = {
 				},
-				["combat_counter"] = 9037,
-				["start_time"] = 150437.254,
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 389309.233,
+				["contra"] = "Grimtotem Bandit",
 				["TimeData"] = {
 				},
-				["totals_grupo"] = {
-					719, -- [1]
+			}, -- [17]
+			{
+				{
+					["combatId"] = 309,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.003923,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Grimtotem Bandit"] = 1547,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 827.003923,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1642295185,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Poklopac",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 59,
+										["targets"] = {
+											["Grimtotem Bandit"] = 118,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 118,
+										["n_min"] = 59,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 118,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Multi-Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 87,
+										["targets"] = {
+											["Grimtotem Bandit"] = 173,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 173,
+										["n_min"] = 86,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 173,
+										["c_max"] = 0,
+										["id"] = "Multi-Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 47,
+										["targets"] = {
+											["Grimtotem Bandit"] = 424,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 424,
+										["n_min"] = 38,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 424,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 10,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Grimtotem Bandit"] = 112,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 112,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 112,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 1547.003923,
+							["serial"] = "Player-5239-013D6C3C",
+							["last_dps"] = 71.12661714942529,
+							["custom"] = 0,
+							["last_event"] = 1642295184,
+							["damage_taken"] = 0.003923,
+							["start_time"] = 1642295163,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.00404,
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["damage_from"] = {
+								["Grimtotem Bandit"] = true,
+							},
+							["targets"] = {
+								["Grimtotem Bandit"] = 720,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 720.00404,
+							["dps_started"] = false,
+							["total"] = 720.00404,
+							["classe"] = "PET",
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 2,
+										["b_amt"] = 1,
+										["c_dmg"] = 103,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Grimtotem Bandit"] = 540,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 437,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 19,
+										["total"] = 540,
+										["c_max"] = 54,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 13,
+										["n_amt"] = 17,
+										["r_amt"] = 0,
+										["c_min"] = 49,
+									},
+									["Claw"] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 105,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Grimtotem Bandit"] = 180,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 75,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 180,
+										["c_max"] = 54,
+										["a_amt"] = 0,
+										["id"] = "Claw",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 51,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1642295185,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 337.00404,
+							["start_time"] = 1642295163,
+							["delay"] = 0,
+							["last_event"] = 1642295184,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004098,
+							["damage_from"] = {
+								["Lonac <Poklopac>"] = true,
+								["Poklopac"] = true,
+							},
+							["targets"] = {
+								["Lonac <Poklopac>"] = 337,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 337.004098,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1642295185,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Grimtotem Bandit",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 1,
+										["c_dmg"] = 47,
+										["g_amt"] = 0,
+										["n_max"] = 26,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 334,
+											["Lonac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 287,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["a_amt"] = 0,
+										["total"] = 334,
+										["c_max"] = 47,
+										["DODGE"] = 2,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 20,
+										["n_amt"] = 12,
+										["r_amt"] = 0,
+										["c_min"] = 47,
+									},
+									["Kick"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Lonac <Poklopac>"] = 3,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 3,
+										["c_max"] = 0,
+										["id"] = "Kick",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 337.004098,
+							["serial"] = "Creature-0-5208-1-4308-10758-0000636744",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1642295183,
+							["damage_taken"] = 1547.004098,
+							["start_time"] = 1642295163,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 309,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 309,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 309,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime"] = 15,
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Hunter's Mark"] = {
+										["activedamt"] = -1,
+										["id"] = "Hunter's Mark",
+										["targets"] = {
+										},
+										["actived_at"] = 1642295175,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Serpent Sting"] = {
+										["activedamt"] = 0,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["uptime"] = 15,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Poklopac",
+							["spell_cast"] = {
+								["Arcane Shot"] = 2,
+								["Auto Shot"] = 11,
+								["Hunter's Mark"] = 1,
+								["Multi-Shot"] = 1,
+								["Serpent Sting"] = 2,
+							},
+							["pets"] = {
+								"Lonac <Poklopac>", -- [1]
+							},
+							["buff_uptime"] = 44,
+							["tipo"] = 4,
+							["last_event"] = 1642295185,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Aspect of the Cheetah"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Cheetah",
+										["targets"] = {
+										},
+										["uptime"] = 22,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Adventure Awaits"] = {
+										["activedamt"] = 1,
+										["id"] = "Adventure Awaits",
+										["targets"] = {
+										},
+										["uptime"] = 22,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-5239-013D6C3C",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Poklopac",
+							["nome"] = "Lonac <Poklopac>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 3,
+								["Claw"] = 6,
+							},
+							["serial"] = "Pet-0-5208-1-4308-5807-0600740539",
+							["last_event"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "Grimtotem Bandit",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Kick"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-5208-1-4308-10758-0000636744",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 309,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Poklopac"] = true,
+				},
+				["CombatStartedAt"] = 389260.521,
+				["tempo_start"] = 1642295163,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Grimtotem Bandit",
+				["combat_counter"] = 9181,
+				["playing_solo"] = true,
+				["totals"] = {
+					1884, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 389283.384,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "02:06:03",
+				["end_time"] = 389283.384,
+				["totals_grupo"] = {
+					827, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 309,
+				["TotalElapsedCombatTime"] = 22.86300000001211,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Poklopac"] = 1547.003923,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Grimtotem Bandit"] = 2,
+				},
+				["data_fim"] = "02:06:26",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 389260.521,
+				["contra"] = "Grimtotem Bandit",
+				["TimeData"] = {
 				},
 			}, -- [18]
 		},
@@ -11179,8 +11104,8 @@ _detalhes_database = {
 			["pos"] = {
 				["normal"] = {
 					["y"] = 573.7485961914062,
-					["x"] = -1059.562828063965,
-					["w"] = 234.8974456787109,
+					["x"] = -941.8616027832031,
+					["w"] = 234.8973236083984,
 					["h"] = 136.6408081054688,
 				},
 				["solo"] = {
@@ -11213,8 +11138,8 @@ _detalhes_database = {
 			["pos"] = {
 				["normal"] = {
 					["y"] = 573.7485961914062,
-					["x"] = -827.6269226074219,
-					["w"] = 228.974365234375,
+					["x"] = -709.92578125,
+					["w"] = 228.9743499755859,
 					["h"] = 136.6408081054688,
 				},
 				["solo"] = {
@@ -11246,9 +11171,9 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -522.0564270019531,
-					["x"] = 420.4744873046875,
-					["w"] = 179.999755859375,
+					["y"] = -522.0564422607422,
+					["x"] = 420.474365234375,
+					["w"] = 179.9997863769531,
 					["h"] = 178.3075408935547,
 				},
 				["solo"] = {
@@ -11261,94 +11186,26 @@ _detalhes_database = {
 		}, -- [3]
 	},
 	["nick_tag_cache"] = {
-		["Snaus"] = {
-			"King Snaus", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Garrosh Hellscream", -- [2]
+		["last_version"] = 11,
+		["Traz"] = {
+			"Traz", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Commander Kolurg", -- [2]
 			{
 				0, -- [1]
 				1, -- [2]
 				0, -- [3]
 				1, -- [4]
 			}, -- [3]
-			"Interface\\PetBattles\\Weather-ArcaneStorm", -- [4]
+			"Interface\\PetBattles\\Weather-Rain", -- [4]
 			{
-				0.129609375, -- [1]
-				1, -- [2]
+				0.078125, -- [1]
+				0.970703125, -- [2]
 				1, -- [3]
 				0, -- [4]
 			}, -- [5]
 			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			4, -- [7]
-		},
-		["Biky"] = {
-			"Biky", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Garrosh Hellscream", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-BurntEarth", -- [4]
-			{
-				0.087890625, -- [1]
-				0.916015625, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			4, -- [7]
-		},
-		["Undaboo"] = {
-			"Undaboo", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Chief Ukorz Sandscalp", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-ArcaneStorm", -- [4]
-			{
-				0.129609375, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				0.1529411764705883, -- [2]
-				0.08235294117647059, -- [3]
-			}, -- [6]
-			5, -- [7]
-		},
-		["Knejt"] = {
-			"Knejt", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-BurntEarth", -- [4]
-			{
-				0.087890625, -- [1]
-				0.916015625, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
+				0.6705882352941176, -- [1]
+				0.803921568627451, -- [2]
 				1, -- [3]
 			}, -- [6]
 			3, -- [7]
@@ -11376,8 +11233,8 @@ _detalhes_database = {
 			}, -- [6]
 			3, -- [7]
 		},
-		["Jaquès"] = {
-			"Jaquès", -- [1]
+		["Undaboo"] = {
+			"Undaboo", -- [1]
 			"Interface\\EncounterJournal\\UI-EJ-BOSS-Chief Ukorz Sandscalp", -- [2]
 			{
 				0, -- [1]
@@ -11394,128 +11251,12 @@ _detalhes_database = {
 			}, -- [5]
 			{
 				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+				0.1529411764705883, -- [2]
+				0.08235294117647059, -- [3]
 			}, -- [6]
-			3, -- [7]
+			5, -- [7]
 		},
-		["Inges"] = {
-			"Inges", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Maleki the Pallid", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-ArcaneStorm", -- [4]
-			{
-				0.129609375, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			3, -- [7]
-		},
-		["last_version"] = 11,
-		["Panagiotis"] = {
-			"Panagiotis", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-ArcaneStorm", -- [4]
-			{
-				0.129609375, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			3, -- [7]
-		},
-		["Dartak"] = {
-			"Dartak", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Commander Kolurg", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-ArcaneStorm", -- [4]
-			{
-				0.129609375, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			3, -- [7]
-		},
-		["nextreset"] = 1642193081,
-		["Kibba"] = {
-			"Kibba", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-ArcaneStorm", -- [4]
-			{
-				0.129609375, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			3, -- [7]
-		},
-		["Triangles"] = {
-			"Triangles", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Instructor Galford", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-BurntEarth", -- [4]
-			{
-				0.087890625, -- [1]
-				0.916015625, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			3, -- [7]
-		},
+		["nextreset"] = 1643585247,
 	},
 	["last_instance_id"] = 47,
 	["announce_interrupts"] = {
@@ -11527,7 +11268,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1641587512,
 	["active_profile"] = "BetterThreat",
-	["last_day"] = "14",
+	["last_day"] = "16",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -11629,7 +11370,12 @@ _detalhes_database = {
 			["row_texture"] = "Glamour2",
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = true,
-			["author"] = "Details! Team",
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["enabled"] = false,
 			["arrow_size"] = 10,
 			["font_size"] = 10,
@@ -11640,12 +11386,7 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["use_spark"] = false,
 			["y"] = -183.107162475586,
@@ -11662,18 +11403,13 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["point"] = "RIGHT",
 			["row_height"] = 18,
 			["scale"] = 1,
 		},
 	},
-	["combat_counter"] = 9057,
 	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["announce_damagerecord"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
@@ -11682,6 +11418,11 @@ _detalhes_database = {
 		["reverse"] = false,
 		["channel"] = "SELF",
 	},
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["combat_counter"] = 9198,
 	["cached_talents"] = {
 		["Player-5239-013D6C3C"] = {
 			{
@@ -12101,7 +11842,7 @@ _detalhes_database = {
 		},
 	},
 	["ignore_nicktag"] = true,
-	["combat_id"] = 193,
+	["combat_id"] = 326,
 	["savedStyles"] = {
 		{
 			["show_statusbar"] = false,
@@ -12146,8 +11887,8 @@ _detalhes_database = {
 			},
 			["switch_healer"] = false,
 			["bars_sort_direction"] = 1,
+			["backdrop_texture"] = "None",
 			["switch_healer_in_combat"] = false,
-			["menu_icons_size"] = 1,
 			["instance_button_anchor"] = {
 				-27, -- [1]
 				1, -- [2]
@@ -12167,7 +11908,7 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["backdrop_texture"] = "None",
+			["menu_icons_size"] = 1,
 			["switch_all_roles_in_combat"] = {
 				2, -- [1]
 				1, -- [2]
@@ -12211,10 +11952,8 @@ _detalhes_database = {
 					1, -- [3]
 					1, -- [4]
 				},
-				["textL_custom_text"] = "{data3}{data2}",
-				["texture_background"] = "Blizzard",
 				["alpha"] = 0,
-				["textL_class_colors"] = false,
+				["textR_class_colors"] = false,
 				["backdrop"] = {
 					["enabled"] = false,
 					["texture"] = "Details BarBorder 2",
@@ -12226,9 +11965,11 @@ _detalhes_database = {
 					},
 					["size"] = 12,
 				},
+				["texture_background"] = "Blizzard",
+				["textL_custom_text"] = "{data3}{data2}",
 				["no_icon"] = false,
 				["font_size"] = 11,
-				["textR_class_colors"] = false,
+				["textL_class_colors"] = false,
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
 				["height"] = 20,
@@ -12258,11 +11999,8 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["plugins_grow_direction"] = 1,
-			["switch_damager"] = false,
-			["auto_hide_menu"] = {
-				["left"] = true,
-				["right"] = true,
-			},
+			["desaturated_menu"] = false,
+			["show_sidebars"] = false,
 			["strata"] = "LOW",
 			["menu_anchor_down"] = {
 				-22, -- [1]
@@ -12313,17 +12051,10 @@ _detalhes_database = {
 				true, -- [3]
 				true, -- [4]
 			},
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
+			["switch_damager"] = false,
+			["auto_hide_menu"] = {
+				["left"] = true,
+				["right"] = true,
 			},
 			["row_show_animation"] = {
 				["anim"] = "Fade",
@@ -12331,10 +12062,10 @@ _detalhes_database = {
 				},
 			},
 			["bars_grow_direction"] = 1,
-			["switch_damager_in_combat"] = false,
-			["toolbar_side"] = 2,
 			["hide_icon"] = true,
+			["toolbar_side"] = 2,
 			["grab_on_top"] = false,
+			["switch_damager_in_combat"] = false,
 			["micro_displays_side"] = 2,
 			["menu2_anchor"] = {
 				32, -- [1]
@@ -12364,8 +12095,18 @@ _detalhes_database = {
 			["bg_g"] = 0,
 			["window_scale"] = 1,
 			["hide_in_combat"] = false,
-			["show_sidebars"] = false,
-			["desaturated_menu"] = false,
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["menu2_anchor_down"] = {
+				32, -- [1]
+				0, -- [2]
+			},
 			["hide_in_combat_type"] = 1,
 			["wallpaper"] = {
 				["enabled"] = false,
@@ -12528,10 +12269,10 @@ _detalhes_database = {
 						[128] = 1704,
 					},
 					["total_without_pet"] = 148596.3383460001,
-					["damage_taken"] = 46322.33834599999,
+					["last_dps"] = 0,
 					["dps_started"] = false,
 					["total"] = 148596.3383460001,
-					["on_hold"] = false,
+					["damage_taken"] = 46322.33834599999,
 					["last_event"] = 0,
 					["nome"] = "Billyy",
 					["spec"] = 71,
@@ -13236,7 +12977,7 @@ _detalhes_database = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1641585974,
 					["delay"] = 0,
 					["end_time"] = 1641587588,
@@ -13374,7 +13115,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-5251-47-30000-4528-000058A346",
 					["fight_component"] = true,
 					["end_time"] = 1641587588,
-					["last_dps"] = 0,
+					["damage_taken"] = 1690.029097,
 					["ownerName"] = "Razorfen Geomancer",
 					["nome"] = "Stone Rumbler <Razorfen Geomancer>",
 					["spells"] = {
@@ -13414,13 +13155,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
 					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 1690.029097,
+					["on_hold"] = false,
 					["start_time"] = 1641587553,
 					["delay"] = 0,
 					["total"] = 301.029097,
@@ -13449,19 +13190,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 8936.024227999998,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 						44, -- [1]
 					},
 					["total_without_pet"] = 1594.024228,
 					["serial"] = "Creature-0-5251-47-30000-4436-0003D8A338",
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 1594.024228,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Razorfen Quilguard",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13569,10 +13310,10 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 8936.024227999998,
+					["on_hold"] = false,
 					["start_time"] = 1641587547,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [4]
 				{
 					["flag_original"] = 1298,
@@ -13678,9 +13419,9 @@ _detalhes_database = {
 									["Quilguard Champion"] = 188,
 									["Razorfen Groundshaker"] = 18,
 									["Razorfen Beast Trainer"] = 54,
+									["Stone Rumbler"] = 0,
 									["Agam'ar"] = 18,
 									["Agathelos the Raging"] = 163,
-									["Stone Rumbler"] = 0,
 									["Razorfen Spearhide"] = 9,
 									["Blood of Agamaggan"] = 9,
 									["Razorfen Totemic"] = 45,
@@ -13737,9 +13478,9 @@ _detalhes_database = {
 									["Razorfen Groundshaker"] = 101,
 									["Razorfen Beast Trainer"] = 100,
 									["Raging Agam'ar"] = 342,
+									["Kraul Bat"] = 281,
 									["Stone Rumbler"] = 0,
 									["Agam'ar"] = 136,
-									["Kraul Bat"] = 281,
 									["Razorfen Beastmaster"] = 306,
 									["Agathelos the Raging"] = 38,
 									["Death's Head Seer"] = 34,
@@ -14182,15 +13923,15 @@ _detalhes_database = {
 						["Death's Head Adept"] = true,
 					},
 					["targets"] = {
-						["Tamed Battleboar"] = 819,
+						["Saltstone Basilisk"] = 0,
 						["Razormane Stalker"] = 0,
-						["Bael'dun Officer"] = 0,
+						["Tamed Battleboar"] = 819,
 						["Death's Head Seer"] = 154,
 						["Razorfen Geomancer"] = 1103,
 						["Razorfen Defender"] = 4416,
-						["Greater Kraul Bat"] = 741,
+						["Raging Agam'ar"] = 6622,
 						["Crag Stalker"] = 0,
-						["Novastep"] = 0,
+						["Greater Kraul Bat"] = 741,
 						["Scorpid Reaver"] = 0,
 						["Razorfen Handler"] = 1844,
 						["Razormane Seer"] = 0,
@@ -14241,9 +13982,9 @@ _detalhes_database = {
 						["Healing Ward V <Death's Head Sage>"] = 159,
 						["Death Speaker Jargba"] = 942,
 						["Razorfen Warrior"] = 1219,
-						["Raging Agam'ar"] = 6622,
+						["Novastep"] = 0,
 						["Rotting Agam'ar"] = 1246,
-						["Saltstone Basilisk"] = 0,
+						["Bael'dun Officer"] = 0,
 						["Razorfen Earthbreaker"] = 1805,
 						["Death's Head Adept"] = 4015,
 					},
@@ -14512,10 +14253,10 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["b_dmg"] = 31,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
-								["successful_casted"] = 0,
 								["BLOCK"] = 1,
+								["successful_casted"] = 0,
+								["m_amt"] = 0,
 								["n_amt"] = 51,
 								["a_amt"] = 0,
 								["r_amt"] = 12,
@@ -14527,10 +14268,10 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Salt Flats Scavenger"] = 0,
-									["Saltstone Basilisk"] = 0,
 									["Sparkleshell Snapper"] = 0,
+									["Saltstone Basilisk"] = 0,
 									["Saltstone Gazer"] = 0,
+									["Salt Flats Scavenger"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -14573,21 +14314,22 @@ _detalhes_database = {
 									["Death's Head Sage"] = 327,
 									["Death's Head Acolyte"] = 343,
 									["Overlord Ramtusk"] = 71,
+									["Scorpid Reaver"] = 0,
 									["Razorfen Totemic"] = 326,
 									["Razorfen Beast Trainer"] = 248,
-									["Scorpid Reaver"] = 0,
 									["Razormane Stalker"] = 0,
 									["Tamed Battleboar"] = 91,
-									["Kraul Bat"] = 201,
-									["Saltstone Crystalhide"] = 0,
 									["Razorfen Warrior"] = 268,
-									["Sparkleshell Snapper"] = 0,
+									["Kraul Bat"] = 201,
+									["Razorfen Beastmaster"] = 373,
 									["Novastep"] = 0,
+									["Sparkleshell Snapper"] = 0,
+									["Sparkleshell Borer"] = 0,
 									["Razorfen Groundshaker"] = 629,
 									["Razorfen Handler"] = 525,
 									["Agam'ar"] = 69,
 									["Raging Agam'ar"] = 205,
-									["Razorfen Beastmaster"] = 373,
+									["Saltstone Crystalhide"] = 0,
 									["Saltstone Basilisk"] = 0,
 									["Razorfen Earthbreaker"] = 356,
 									["Death's Head Adept"] = 938,
@@ -14765,8 +14507,8 @@ _detalhes_database = {
 									["Tamed Battleboar"] = 80,
 									["Razormane Stalker"] = 0,
 									["Bael'dun Officer"] = 0,
+									["Raging Agam'ar"] = 1266,
 									["Greater Kraul Bat"] = 281,
-									["Novastep"] = 0,
 									["Razorfen Quilguard"] = 281,
 									["Stone Rumbler"] = 35,
 									["Tamed Hyena"] = 59,
@@ -14785,22 +14527,22 @@ _detalhes_database = {
 									["Ellbaldazar"] = 0,
 									["Bael'dun Rifleman"] = 0,
 									["Ward Guardian"] = 443,
-									["Scorpid Terror"] = 0,
-									["Saltstone Crystalhide"] = 0,
 									["Razorfen Totemic"] = 399,
+									["Saltstone Crystalhide"] = 0,
+									["Razorfen Groundshaker"] = 252,
 									["Razorfen Beast Trainer"] = 568,
 									["Scalding Elemental"] = 0,
 									["Malgin Barleybrew"] = 0,
 									["Agathelos the Raging"] = 738,
 									["Kraul Bat"] = 2076,
 									["Razorfen Beastmaster"] = 37,
-									["Razorfen Groundshaker"] = 252,
+									["Scorpid Terror"] = 0,
 									["Sparkleshell Snapper"] = 0,
 									["Sparkleshell Borer"] = 0,
 									["Death's Head Acolyte"] = 82,
 									["Death Speaker Jargba"] = 354,
 									["Razormane Seer"] = 0,
-									["Raging Agam'ar"] = 1266,
+									["Novastep"] = 0,
 									["Rotting Agam'ar"] = 357,
 									["Saltstone Basilisk"] = 0,
 									["Razorfen Earthbreaker"] = 207,
@@ -14971,9 +14713,9 @@ _detalhes_database = {
 									["Razorfen Groundshaker"] = 299,
 									["Razorfen Beast Trainer"] = 364,
 									["Overlord Ramtusk"] = 78,
+									["Agathelos the Raging"] = 72,
 									["Kraul Bat"] = 170,
 									["Agam'ar"] = 390,
-									["Agathelos the Raging"] = 72,
 									["Razorfen Beastmaster"] = 221,
 									["Razorfen Defender"] = 249,
 									["Razorfen Totemic"] = 156,
@@ -15065,12 +14807,12 @@ _detalhes_database = {
 									["Razorfen Beast Trainer"] = 1212,
 									["Death's Head Acolyte"] = 389,
 									["Overlord Ramtusk"] = 205,
-									["Kraul Bat"] = 1606,
 									["Agathelos the Raging"] = 146,
+									["Agam'ar"] = 1109,
 									["Razorfen Beastmaster"] = 834,
 									["Tamed Battleboar <Razorfen Handler>"] = 163,
 									["Razorfen Totemic"] = 726,
-									["Agam'ar"] = 1109,
+									["Kraul Bat"] = 1606,
 									["Death's Head Priest"] = 579,
 									["Razorfen Handler"] = 71,
 									["Razorfen Quilguard"] = 510,
@@ -15390,13 +15132,13 @@ _detalhes_database = {
 									["Razorfen Totemic"] = 579,
 									["Razorfen Beast Trainer"] = 384,
 									["Death Speaker Jargba"] = 684,
-									["Stone Rumbler"] = 189,
-									["Razorfen Beastmaster"] = 577,
 									["Kraul Bat"] = 3286,
+									["Razorfen Beastmaster"] = 577,
+									["Agam'ar"] = 2223,
 									["Razorfen Spearhide"] = 202,
 									["Agathelos the Raging"] = 1724,
 									["Death's Head Seer"] = 201,
-									["Agam'ar"] = 2223,
+									["Stone Rumbler"] = 189,
 									["Razorfen Dustweaver"] = 380,
 									["Razorfen Handler"] = 191,
 									["Razorfen Quilguard"] = 671,
@@ -15792,11 +15534,11 @@ _detalhes_database = {
 						["Razorfen Geomancer"] = 599,
 						["Razorfen Defender"] = 2008,
 						["Crag Stalker"] = 0,
-						["Ellbaldazar"] = 0,
+						["Scorpid Reaver"] = 0,
 						["Razormane Stalker"] = 0,
 						["Tamed Battleboar"] = 362,
+						["Ellbaldazar"] = 0,
 						["Razormane Seer"] = 0,
-						["Scorpid Reaver"] = 0,
 						["Quilguard Champion"] = 5186,
 						["Novastep"] = 0,
 						["Raging Agam'ar"] = 3669,
@@ -15861,7 +15603,7 @@ _detalhes_database = {
 					["serial"] = "Pet-0-5210-1-21308-5807-0200740539",
 					["dps_started"] = false,
 					["end_time"] = 1641587588,
-					["damage_taken"] = 3944.313199,
+					["last_dps"] = 0,
 					["ownerName"] = "Poklopac",
 					["nome"] = "Lonac <Poklopac>",
 					["spells"] = {
@@ -15965,9 +15707,9 @@ _detalhes_database = {
 									["Vilenta"] = 0,
 									["Bael'dun Rifleman"] = 0,
 									["Ward Guardian"] = 74,
+									["Scorpid Terror"] = 0,
 									["Razorfen Totemic"] = 193,
 									["Razorfen Groundshaker"] = 196,
-									["Scorpid Terror"] = 0,
 									["Razorfen Beast Trainer"] = 294,
 									["Scalding Elemental"] = 0,
 									["Malgin Barleybrew"] = 0,
@@ -16018,11 +15760,11 @@ _detalhes_database = {
 									["Razorfen Geomancer"] = 427,
 									["Razorfen Defender"] = 1557,
 									["Crag Stalker"] = 0,
-									["Ellbaldazar"] = 0,
+									["Scorpid Reaver"] = 0,
 									["Razormane Stalker"] = 0,
 									["Tamed Battleboar"] = 232,
+									["Ellbaldazar"] = 0,
 									["Razormane Seer"] = 0,
-									["Scorpid Reaver"] = 0,
 									["Quilguard Champion"] = 4187,
 									["Novastep"] = 0,
 									["Raging Agam'ar"] = 2777,
@@ -16142,13 +15884,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 3944.313199,
 					["friendlyfire"] = {
 					},
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1641586329,
 					["delay"] = 0,
 					["boss_fight_component"] = true,
@@ -16173,18 +15915,18 @@ _detalhes_database = {
 					["pets"] = {
 						"Tamed Battleboar <Razorfen Handler>", -- [1]
 					},
-					["fight_component"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 4368.019254999999,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 685.0192549999999,
 					["serial"] = "Creature-0-5251-47-30000-4530-0000D8A338",
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 1120.019255,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Razorfen Handler",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16258,10 +16000,10 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 4368.019254999999,
+					["on_hold"] = false,
 					["start_time"] = 1641587595,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [10]
 				{
 					["flag_original"] = 4680,
@@ -16286,7 +16028,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-5251-47-30000-4535-000058A33E",
 					["fight_component"] = true,
 					["end_time"] = 1641587634,
-					["last_dps"] = 0,
+					["damage_taken"] = 1315.015828,
 					["ownerName"] = "Razorfen Handler",
 					["nome"] = "Tamed Battleboar <Razorfen Handler>",
 					["spells"] = {
@@ -16352,13 +16094,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
 					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 1315.015828,
+					["on_hold"] = false,
 					["start_time"] = 1641587607,
 					["delay"] = 0,
 					["total"] = 435.015828,
@@ -16386,7 +16128,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-5251-47-30000-4528-000058A339",
 					["dps_started"] = false,
 					["end_time"] = 1641587634,
-					["last_dps"] = 0,
+					["damage_taken"] = 602.011609,
 					["ownerName"] = "Unknown",
 					["nome"] = "Stone Rumbler <Unknown>",
 					["spells"] = {
@@ -16424,13 +16166,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
 					["total"] = 82.01160899999999,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 602.011609,
+					["on_hold"] = false,
 					["start_time"] = 1641587622,
 					["delay"] = 0,
 					["fight_component"] = true,
@@ -16451,17 +16193,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 4254.013050000001,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 327.01305,
 					["serial"] = "Creature-0-5251-47-30000-4435-000058A338",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1641587700,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 4254.013050000001,
 					["nome"] = "Razorfen Warrior",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16503,10 +16245,10 @@ _detalhes_database = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1641587678,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [13]
 				{
 					["flag_original"] = 2632,
@@ -16740,38 +16482,6 @@ _detalhes_database = {
 								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
-							["!Melee"] = {
-								["c_amt"] = 3,
-								["b_amt"] = 0,
-								["c_dmg"] = 357,
-								["g_amt"] = 0,
-								["n_max"] = 64,
-								["targets"] = {
-									["Totez"] = 137,
-									["Lonac <Poklopac>"] = 59,
-									["Billyy"] = 1385,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 1224,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 30,
-								["total"] = 1581,
-								["c_max"] = 137,
-								["MISS"] = 2,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["DODGE"] = 3,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["m_amt"] = 0,
-								["n_amt"] = 22,
-								["a_dmg"] = 0,
-								["r_amt"] = 0,
-							},
 							["Poisoned Shot"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -16826,6 +16536,38 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
 								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 3,
+								["b_amt"] = 0,
+								["c_dmg"] = 357,
+								["g_amt"] = 0,
+								["n_max"] = 64,
+								["targets"] = {
+									["Totez"] = 137,
+									["Lonac <Poklopac>"] = 59,
+									["Billyy"] = 1385,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 1224,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 30,
+								["total"] = 1581,
+								["c_max"] = 137,
+								["MISS"] = 2,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["DODGE"] = 3,
+								["b_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["m_amt"] = 0,
+								["n_amt"] = 22,
+								["a_dmg"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -16942,8 +16684,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-5251-47-30000-4523-0000D8A339",
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["fight_component"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -16952,9 +16693,9 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["monster"] = true,
 					["total"] = 2043.040383,
-					["on_hold"] = false,
+					["damage_taken"] = 15112.040383,
 					["last_event"] = 0,
-					["boss_fight_component"] = true,
+					["nome"] = "Razorfen Groundshaker",
 					["spells"] = {
 						["_ActorTable"] = {
 							["Ground Tremor"] = {
@@ -17054,12 +16795,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["boss_fight_component"] = true,
 					["end_time"] = 1641587748,
-					["nome"] = "Razorfen Groundshaker",
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 15112.040383,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1641587666,
 					["delay"] = 0,
 					["classe"] = "UNKNOW",
@@ -17080,18 +16822,18 @@ _detalhes_database = {
 					["pets"] = {
 						"Wind Howler <Razorfen Dustweaver>", -- [1]
 					},
-					["fight_component"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 2483.020931,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 246.020931,
 					["serial"] = "Creature-0-5251-47-30000-4522-000058A338",
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 305.020931,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Razorfen Dustweaver",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17160,10 +16902,10 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 2483.020931,
+					["on_hold"] = false,
 					["start_time"] = 1641587737,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [18]
 				{
 					["flag_original"] = 2632,
@@ -17183,18 +16925,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 10556.021313,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 839.021313,
 					["serial"] = "Creature-0-5251-47-30000-4516-0002D8A338",
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 839.021313,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Death's Head Adept",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17296,10 +17038,10 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 10556.021313,
+					["on_hold"] = false,
 					["start_time"] = 1641587740,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [19]
 				{
 					["flag_original"] = 4680,
@@ -17323,7 +17065,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-5251-47-30000-4526-000058A41F",
 					["dps_started"] = false,
 					["end_time"] = 1641587924,
-					["last_dps"] = 0,
+					["damage_taken"] = 607.005476,
 					["ownerName"] = "Razorfen Dustweaver",
 					["nome"] = "Wind Howler <Razorfen Dustweaver>",
 					["spells"] = {
@@ -17360,13 +17102,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
 					["total"] = 59.005476,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 607.005476,
+					["on_hold"] = false,
 					["start_time"] = 1641587915,
 					["delay"] = 0,
 					["fight_component"] = true,
@@ -17969,8 +17711,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-5251-47-30000-4515-000158A339",
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["monster"] = true,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
@@ -17979,9 +17720,9 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["fight_component"] = true,
 					["total"] = 2418.024808,
-					["on_hold"] = false,
+					["damage_taken"] = 14054.024808,
 					["last_event"] = 0,
-					["boss_fight_component"] = true,
+					["nome"] = "Death's Head Acolyte",
 					["spells"] = {
 						["_ActorTable"] = {
 							["Renew"] = {
@@ -18079,12 +17820,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["boss_fight_component"] = true,
 					["end_time"] = 1641588067,
-					["nome"] = "Death's Head Acolyte",
+					["last_dps"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 14054.024808,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1641587997,
 					["delay"] = 0,
 					["classe"] = "UNKNOW",
@@ -18108,18 +17850,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 5557.010808999999,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 842.010809,
 					["serial"] = "Creature-0-5251-47-30000-6035-000058A339",
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 842.010809,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Razorfen Stalker",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18163,10 +17905,10 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 5557.010808999999,
+					["on_hold"] = false,
 					["start_time"] = 1641588054,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [29]
 				{
 					["flag_original"] = 68168,
@@ -18430,7 +18172,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["dps_started"] = false,
-					["damage_taken"] = 51211.045592,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
@@ -18439,7 +18181,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["total"] = 10394.045592,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 51211.045592,
 					["nome"] = "Quilguard Champion",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18574,7 +18316,7 @@ _detalhes_database = {
 					["monster"] = true,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1641587975,
 					["delay"] = 0,
 					["end_time"] = 1641588235,
@@ -18739,7 +18481,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-5251-47-30000-2992-000058A617",
 					["fight_component"] = true,
 					["end_time"] = 1641588261,
-					["last_dps"] = 0,
+					["damage_taken"] = 104.015878,
 					["ownerName"] = "Razorfen Totemic",
 					["nome"] = "Healing Ward V <Razorfen Totemic>",
 					["spells"] = {
@@ -18747,13 +18489,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
 					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 104.015878,
+					["on_hold"] = false,
 					["start_time"] = 1641588258,
 					["delay"] = 0,
 					["total"] = 0.015878,
@@ -18779,7 +18521,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-5251-47-30000-2992-000058A61E",
 					["fight_component"] = true,
 					["end_time"] = 1641588261,
-					["last_dps"] = 0,
+					["damage_taken"] = 228.013719,
 					["ownerName"] = "Death's Head Sage",
 					["nome"] = "Healing Ward V <Death's Head Sage>",
 					["spells"] = {
@@ -18787,13 +18529,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
 					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 228.013719,
+					["on_hold"] = false,
 					["start_time"] = 1641588258,
 					["delay"] = 0,
 					["total"] = 0.013719,
@@ -18862,7 +18604,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-5251-47-30000-4534-000058A4B7",
 					["dps_started"] = false,
 					["end_time"] = 1641588285,
-					["last_dps"] = 0,
+					["damage_taken"] = 644.015138,
 					["ownerName"] = "Razorfen Beastmaster",
 					["nome"] = "Tamed Hyena <Razorfen Beastmaster>",
 					["spells"] = {
@@ -18901,13 +18643,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
 					["total"] = 169.015138,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 644.015138,
+					["on_hold"] = false,
 					["start_time"] = 1641588267,
 					["delay"] = 0,
 					["fight_component"] = true,
@@ -19329,18 +19071,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 5126.019005,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 1751.019005,
 					["serial"] = "Creature-0-5251-47-30000-4525-000158A338",
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 1751.019005,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Razorfen Earthbreaker",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19439,10 +19181,10 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 5126.019005,
+					["on_hold"] = false,
 					["start_time"] = 1641588347,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [41]
 				{
 					["flag_original"] = 8776,
@@ -19463,7 +19205,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-5251-47-30000-6066-000058A6FA",
 					["fight_component"] = true,
 					["end_time"] = 1641588500,
-					["last_dps"] = 0,
+					["damage_taken"] = 72.01339,
 					["ownerName"] = "Razorfen Totemic",
 					["nome"] = "Earthgrab Totem <Razorfen Totemic>",
 					["spells"] = {
@@ -19471,13 +19213,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
 					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 72.01339,
+					["on_hold"] = false,
 					["start_time"] = 1641588497,
 					["delay"] = 0,
 					["total"] = 0.01339,
@@ -19488,12 +19230,12 @@ _detalhes_database = {
 					["damage_from"] = {
 						["Lonac <Poklopac>"] = true,
 						["Poklopac"] = true,
-						["Haugenn"] = true,
 						["Billyy"] = true,
+						["Searing Totem II <Totez>"] = true,
 						["Yodamat"] = true,
 						["Totez"] = true,
 						["Fire Nova Totem II <Totez>"] = true,
-						["Searing Totem II <Totez>"] = true,
+						["Haugenn"] = true,
 					},
 					["targets"] = {
 						["Totez"] = 642,
@@ -19584,17 +19326,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 5360.014184,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 724.014184,
 					["serial"] = "Creature-0-5251-47-30000-4427-0000D8A338",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1641588931,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 5360.014184,
 					["nome"] = "Ward Guardian",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19664,10 +19406,10 @@ _detalhes_database = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1641588908,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [44]
 				{
 					["flag_original"] = 2632,
@@ -19686,17 +19428,17 @@ _detalhes_database = {
 					["pets"] = {
 						"Lava Spout Totem <Death's Head Seer>", -- [1]
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 2761.00778,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 611.0077799999999,
 					["serial"] = "Creature-0-5251-47-30000-4519-000058A338",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1641588931,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 2761.00778,
 					["nome"] = "Death's Head Seer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19792,10 +19534,10 @@ _detalhes_database = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1641588902,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [45]
 				{
 					["flag_original"] = 8776,
@@ -19819,7 +19561,7 @@ _detalhes_database = {
 					["serial"] = "Creature-0-5251-47-30000-6017-000058A8B2",
 					["dps_started"] = false,
 					["end_time"] = 1641588931,
-					["last_dps"] = 0,
+					["damage_taken"] = 41.008689,
 					["ownerName"] = "Death's Head Seer",
 					["nome"] = "Lava Spout Totem <Death's Head Seer>",
 					["spells"] = {
@@ -19858,13 +19600,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
 					["total"] = 375.008689,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 41.008689,
+					["on_hold"] = false,
 					["start_time"] = 1641588924,
 					["delay"] = 0,
 					["fight_component"] = true,
@@ -19998,18 +19740,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 8064.006350000001,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2435.00635,
 					["serial"] = "Creature-0-5251-47-30000-4539-0002D8A338",
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 2435.00635,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Greater Kraul Bat",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20083,10 +19825,10 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 8064.006350000001,
+					["on_hold"] = false,
 					["start_time"] = 1641589073,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [48]
 				{
 					["flag_original"] = 68168,
@@ -20268,17 +20010,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 8884.01013,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 743.0101299999999,
 					["serial"] = "Creature-0-5251-47-30000-4517-000058A338",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1641589466,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 8884.01013,
 					["nome"] = "Death's Head Priest",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20379,10 +20121,10 @@ _detalhes_database = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1641589413,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [50]
 				{
 					["flag_original"] = 2632,
@@ -20401,18 +20143,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 11334.013361,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 1152.013361,
 					["serial"] = "Creature-0-5251-47-30000-4437-0000D8A338",
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 1152.013361,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Razorfen Warden",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20484,10 +20226,10 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 11334.013361,
+					["on_hold"] = false,
 					["start_time"] = 1641589423,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [51]
 				{
 					["flag_original"] = 2632,
@@ -20652,18 +20394,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 4958.018617,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 950.018617,
 					["serial"] = "Creature-0-5251-47-30000-4541-0000D8A338",
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 950.018617,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Blood of Agamaggan",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20733,10 +20475,10 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 4958.018617,
+					["on_hold"] = false,
 					["start_time"] = 1641589550,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [53]
 				{
 					["flag_original"] = 8466,
@@ -20938,18 +20680,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 5475.019910999999,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 665.019911,
 					["serial"] = "Creature-0-5251-47-30000-4512-0000D8A339",
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 665.019911,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Rotting Agam'ar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21019,10 +20761,10 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 5475.019910999999,
+					["on_hold"] = false,
 					["start_time"] = 1641589751,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [56]
 				{
 					["flag_original"] = 2632,
@@ -21035,17 +20777,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003652,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1641723135,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.003652,
+					["last_dps"] = 0,
 					["nome"] = "Crag Stalker",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21087,11 +20830,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.003652,
 					["start_time"] = 1641723132,
 					["serial"] = "Creature-0-5210-1-21311-4126-000058A0F9",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [57]
 				{
 					["flag_original"] = 68168,
@@ -21103,17 +20845,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.0019,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1641723135,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.0019,
+					["last_dps"] = 0,
 					["nome"] = "Scalding Elemental",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21181,11 +20924,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.0019,
 					["start_time"] = 1641723132,
 					["serial"] = "Creature-0-5210-1-21311-10756-000058A9AD",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [58]
 				{
 					["flag_original"] = 66888,
@@ -21209,7 +20951,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1641723135,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Vilenta",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21412,13 +21155,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.007145,
+					["last_dps"] = 0,
 					["on_hold"] = false,
 					["total"] = 0.007145,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.007145,
 					["start_time"] = 1641723132,
 					["serial"] = "Player-5239-013EA508",
 					["dps_started"] = false,
@@ -21443,7 +21185,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1641723135,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Sbubby",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21505,13 +21248,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.005834,
+					["last_dps"] = 0,
 					["on_hold"] = false,
 					["total"] = 0.005834,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.005834,
 					["start_time"] = 1641723132,
 					["serial"] = "Player-5239-013FD2A8",
 					["dps_started"] = false,
@@ -21536,7 +21278,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1641723135,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Ellbaldazar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21709,13 +21452,12 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.004418,
+					["last_dps"] = 0,
 					["on_hold"] = false,
 					["total"] = 0.004418,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.004418,
 					["start_time"] = 1641723132,
 					["serial"] = "Player-5239-013FD2AB",
 					["dps_started"] = false,
@@ -21731,17 +21473,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003219,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1641723135,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.003219,
+					["last_dps"] = 0,
 					["nome"] = "Hecklefang Stalker",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21783,11 +21526,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.003219,
 					["start_time"] = 1641723132,
 					["serial"] = "Creature-0-5210-1-21308-4128-000058AC63",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [62]
 				{
 					["flag_original"] = 68168,
@@ -21801,17 +21543,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007206,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1641723135,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.007206,
+					["last_dps"] = 0,
 					["nome"] = "Bael'dun Rifleman",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21883,11 +21626,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.007206,
 					["start_time"] = 1641723132,
 					["serial"] = "Creature-0-5210-1-21308-3377-000058AE1F",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [63]
 				{
 					["flag_original"] = 2632,
@@ -21902,17 +21644,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003429,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1641723135,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.003429,
+					["last_dps"] = 0,
 					["nome"] = "Malgin Barleybrew",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22010,11 +21753,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.003429,
 					["start_time"] = 1641723132,
 					["serial"] = "Creature-0-5210-1-21308-5848-000058AD8D",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [64]
 				{
 					["flag_original"] = 2632,
@@ -22028,17 +21770,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00361,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1641723135,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.00361,
+					["last_dps"] = 0,
 					["nome"] = "Bael'dun Officer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22134,11 +21877,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.00361,
 					["start_time"] = 1641723132,
 					["serial"] = "Creature-0-5210-1-21308-3378-000058AE58",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [65]
 				{
 					["flag_original"] = 2632,
@@ -22151,17 +21893,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003566,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1641723135,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.003566,
+					["last_dps"] = 0,
 					["nome"] = "Bael'dun Soldier",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22202,11 +21945,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.003566,
 					["start_time"] = 1641723132,
 					["serial"] = "Creature-0-5210-1-21308-3376-000058AE63",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [66]
 				{
 					["flag_original"] = 68168,
@@ -22218,17 +21960,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003075,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1641723135,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.003075,
+					["last_dps"] = 0,
 					["nome"] = "Stormhide",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22323,11 +22066,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.003075,
 					["start_time"] = 1641723132,
 					["serial"] = "Creature-0-5210-1-21308-3238-0000D8AD88",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [67]
 				{
 					["flag_original"] = 68168,
@@ -22340,18 +22082,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.008305,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008305,
 					["serial"] = "Creature-0-5208-1-39-3457-0000DED233",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1642012540,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Razormane Stalker",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22421,10 +22163,10 @@ _detalhes_database = {
 					["total"] = 0.008305,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.008305,
+					["last_dps"] = 0,
 					["start_time"] = 1642012537,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [68]
 				{
 					["flag_original"] = 2632,
@@ -22439,18 +22181,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.004321,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004321,
 					["serial"] = "Creature-0-5208-1-39-3458-00005ED207",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1642012540,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Razormane Seer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22548,10 +22290,10 @@ _detalhes_database = {
 					["total"] = 0.004321,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.004321,
+					["last_dps"] = 0,
 					["start_time"] = 1642012537,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [69]
 				{
 					["flag_original"] = 8776,
@@ -22572,7 +22314,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1642012540,
 					["serial"] = "Creature-0-5208-1-39-3902-00005ED2D8",
-					["on_hold"] = false,
+					["damage_taken"] = 0.003421,
 					["nome"] = "Searing Totem II <Razormane Seer>",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22607,13 +22349,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["total"] = 0.003421,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.003421,
+					["last_dps"] = 0,
 					["start_time"] = 1642012537,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -22628,18 +22370,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.007561,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007561,
 					["serial"] = "Creature-0-5208-1-39-3434-00005ED266",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1642012540,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Nak",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22679,10 +22421,10 @@ _detalhes_database = {
 					["total"] = 0.007561,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.007561,
+					["last_dps"] = 0,
 					["start_time"] = 1642012537,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [71]
 				{
 					["flag_original"] = 68136,
@@ -22704,7 +22446,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1642105954,
 					["serial"] = "Creature-0-5208-1-42-4143-000060480D",
-					["damage_taken"] = 0.005916,
+					["last_dps"] = 0,
 					["nome"] = "Sparkleshell Snapper",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22799,13 +22541,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.005916,
 					["total"] = 0.005916,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1642105951,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -22820,18 +22562,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.005049,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005049,
 					["serial"] = "Creature-0-5208-1-42-9377-00006047BF",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1642105954,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.005049,
 					["nome"] = "Swirling Vortex",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22872,10 +22613,11 @@ _detalhes_database = {
 					["total"] = 0.005049,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1642105951,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [73]
 				{
 					["flag_original"] = 68136,
@@ -22884,6 +22626,7 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Lonac <Poklopac>"] = 0,
+						["Poklopac"] = 0,
 					},
 					["pets"] = {
 					},
@@ -22896,7 +22639,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1642105954,
 					["serial"] = "Creature-0-5208-1-42-4144-0000604B64",
-					["damage_taken"] = 0.001327,
+					["last_dps"] = 0,
 					["nome"] = "Sparkleshell Borer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22937,6 +22680,7 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Lonac <Poklopac>"] = 0,
+									["Poklopac"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -22960,13 +22704,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.001327,
 					["total"] = 0.001327,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1642105951,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -22982,18 +22726,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.00712,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00712,
 					["serial"] = "Creature-0-5208-1-42-4150-0000604ADC",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1642105954,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.00712,
 					["nome"] = "Saltstone Gazer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23062,10 +22805,11 @@ _detalhes_database = {
 					["total"] = 0.00712,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1642105951,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [75]
 				{
 					["flag_original"] = 68136,
@@ -23087,7 +22831,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1642107891,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["nome"] = "Sparkleshell Tortoise",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23154,13 +22898,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.00791,
+					["last_dps"] = 0,
 					["total"] = 0.00791,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 0.00791,
 					["start_time"] = 1642107888,
 					["serial"] = "Creature-0-5208-1-42-4142-0000608873",
 					["dps_started"] = false,
@@ -23176,17 +22920,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006277,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1642107891,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.006277,
+					["last_dps"] = 0,
 					["nome"] = "Scorpid Reaver",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23284,11 +23029,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.006277,
 					["start_time"] = 1642107888,
 					["serial"] = "Creature-0-5208-1-42-4140-0000609115",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [77]
 				{
 					["flag_original"] = 2632,
@@ -23301,17 +23045,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00711,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1642107891,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.00711,
+					["last_dps"] = 0,
 					["nome"] = "Salt Flats Scavenger",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23381,11 +23126,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.00711,
 					["start_time"] = 1642107888,
 					["serial"] = "Creature-0-5208-1-42-4154-000060914F",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [78]
 				{
 					["flag_original"] = 68168,
@@ -23399,17 +23143,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006301,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1642107891,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.006301,
+					["last_dps"] = 0,
 					["nome"] = "Saltstone Basilisk",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23479,11 +23224,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.006301,
 					["start_time"] = 1642107888,
 					["serial"] = "Creature-0-5208-1-42-4147-0000608992",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [79]
 				{
 					["flag_original"] = 2632,
@@ -23496,17 +23240,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008121,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1642107891,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.008121,
+					["last_dps"] = 0,
 					["nome"] = "Saltstone Crystalhide",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23576,11 +23321,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.008121,
 					["start_time"] = 1642107888,
 					["serial"] = "Creature-0-5208-1-42-4151-00006090EC",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [80]
 				{
 					["flag_original"] = 66888,
@@ -23602,7 +23346,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1642158088,
 					["serial"] = "Player-5239-0140302F",
-					["damage_taken"] = 0.00548,
+					["last_dps"] = 0,
 					["nome"] = "Novastep",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23858,13 +23602,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.00548,
 					["on_hold"] = false,
 					["total"] = 0.00548,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1642158085,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -23879,17 +23623,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001071,
 					["serial"] = "Creature-0-5208-1-4308-4139-0000619C08",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1642182070,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.001071,
+					["last_dps"] = 0,
 					["nome"] = "Scorpid Terror",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23985,11 +23730,10 @@ _detalhes_database = {
 					["total"] = 0.001071,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.001071,
 					["start_time"] = 1642182067,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [82]
 			},
 		}, -- [1]
@@ -24133,7 +23877,9 @@ _detalhes_database = {
 					["healing_taken"] = 2312.202768,
 					["fight_component"] = true,
 					["end_time"] = 1641587588,
-					["boss_fight_component"] = true,
+					["healing_from"] = {
+						["Totez"] = true,
+					},
 					["nome"] = "Totez",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -24205,16 +23951,14 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["healing_from"] = {
-						["Totez"] = true,
-					},
-					["last_event"] = 0,
-					["custom"] = 0,
 					["tipo"] = 2,
+					["classe"] = "SHAMAN",
+					["custom"] = 0,
+					["last_event"] = 0,
 					["start_time"] = 1641587249,
 					["totaldenied"] = 0.202768,
 					["delay"] = 0,
-					["classe"] = "SHAMAN",
+					["boss_fight_component"] = true,
 				}, -- [2]
 				{
 					["flag_original"] = 1297,
@@ -24243,7 +23987,8 @@ _detalhes_database = {
 					["healing_taken"] = 2883.041273,
 					["fight_component"] = true,
 					["end_time"] = 1641587810,
-					["boss_fight_component"] = true,
+					["targets_overheal"] = {
+					},
 					["nome"] = "Poklopac",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -24278,15 +24023,14 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["targets_overheal"] = {
-					},
-					["tipo"] = 2,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["classe"] = "HUNTER",
+					["custom"] = 0,
+					["tipo"] = 2,
 					["start_time"] = 1641587807,
 					["totaldenied"] = 0.041273,
 					["delay"] = 0,
-					["classe"] = "HUNTER",
+					["boss_fight_component"] = true,
 				}, -- [3]
 				{
 					["flag_original"] = 1298,
@@ -24314,7 +24058,8 @@ _detalhes_database = {
 					["healing_taken"] = 5284.070614000001,
 					["fight_component"] = true,
 					["end_time"] = 1641587924,
-					["boss_fight_component"] = true,
+					["targets_overheal"] = {
+					},
 					["nome"] = "Haugenn",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -24322,15 +24067,14 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["targets_overheal"] = {
-					},
-					["tipo"] = 2,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["classe"] = "ROGUE",
+					["custom"] = 0,
+					["tipo"] = 2,
 					["start_time"] = 1641587921,
 					["totaldenied"] = 0.07061400000000001,
 					["delay"] = 0,
-					["classe"] = "ROGUE",
+					["boss_fight_component"] = true,
 				}, -- [4]
 				{
 					["flag_original"] = 1298,
@@ -24347,15 +24091,15 @@ _detalhes_database = {
 					["healing_from"] = {
 						["Totez"] = true,
 					},
-					["classe"] = "MAGE",
+					["heal_enemy_amt"] = 0,
 					["totalover"] = 0.034428,
 					["total_without_pet"] = 0.034428,
 					["totalover_without_pet"] = 0.034428,
 					["start_time"] = 1641588200,
 					["fight_component"] = true,
 					["total"] = 0.034428,
+					["classe"] = "MAGE",
 					["healing_taken"] = 1036.034428,
-					["heal_enemy_amt"] = 0,
 					["nome"] = "Yodamat",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -24431,14 +24175,14 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["heal_enemy_amt"] = 0,
+					["classe"] = "PET",
 					["totalover"] = 0.003082,
 					["total_without_pet"] = 0.003082,
-					["total"] = 0.003082,
+					["totaldenied"] = 0.003082,
 					["totalover_without_pet"] = 0.003082,
 					["fight_component"] = true,
-					["end_time"] = 1642183999,
-					["classe"] = "PET",
+					["total"] = 0.003082,
+					["healing_taken"] = 0.003082,
 					["serial"] = "Pet-0-5208-1-4308-5807-0300740539",
 					["nome"] = "Lonac <Poklopac>",
 					["spells"] = {
@@ -24448,10 +24192,10 @@ _detalhes_database = {
 					},
 					["targets_absorbs"] = {
 					},
-					["totaldenied"] = 0.003082,
+					["end_time"] = 1642183999,
 					["heal_enemy"] = {
 					},
-					["healing_taken"] = 0.003082,
+					["heal_enemy_amt"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
@@ -25037,7 +24781,8 @@ _detalhes_database = {
 						"Searing Totem II <Totez>", -- [1]
 						"Earthbind Totem <Totez>", -- [2]
 					},
-					["nome"] = "Totez",
+					["debuff_uptime_targets"] = {
+					},
 					["classe"] = "SHAMAN",
 					["interrupt_spells"] = {
 						["_ActorTable"] = {
@@ -25159,7 +24904,7 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["boss_fight_component"] = true,
-					["debuff_uptime_targets"] = {
+					["buff_uptime_targets"] = {
 					},
 					["interrupt_targets"] = {
 						["Razorfen Geomancer"] = 4,
@@ -25170,11 +24915,11 @@ _detalhes_database = {
 					["grupo"] = true,
 					["spell_cast"] = {
 						["Earthbind Totem"] = 2,
-						["Stoneskin Totem"] = 6,
-						["Healing Wave"] = 61,
-						["Searing Totem"] = 19,
 						["Lightning Bolt"] = 1,
-						["Flametongue Weapon"] = 4,
+						["Healing Wave"] = 61,
+						["Stoneskin Totem"] = 6,
+						["Fire Nova Totem"] = 10,
+						["Searing Totem"] = 19,
 						["Flame Shock"] = 18,
 						["Lesser Healing Wave"] = 57,
 						["Lightning Shield"] = 1,
@@ -25182,7 +24927,7 @@ _detalhes_database = {
 						["Cure Poison"] = 2,
 						["Purge"] = 1,
 						["Strength of Earth Totem"] = 22,
-						["Fire Nova Totem"] = 10,
+						["Flametongue Weapon"] = 4,
 						["Earth Shock"] = 12,
 					},
 					["dispell_targets"] = {
@@ -25193,8 +24938,7 @@ _detalhes_database = {
 					["tipo"] = 4,
 					["last_event"] = 0,
 					["interrupt"] = 9.032734999999999,
-					["buff_uptime_targets"] = {
-					},
+					["nome"] = "Totez",
 					["serial"] = "Player-5239-01357825",
 					["buff_uptime"] = 701,
 				}, -- [3]
@@ -25628,15 +25372,15 @@ _detalhes_database = {
 					["flag_original"] = 4369,
 					["ownerName"] = "Poklopac",
 					["boss_fight_component"] = true,
-					["last_event"] = 0,
+					["classe"] = "PET",
 					["spell_cast"] = {
 						["Bite"] = 72,
 						["Claw"] = 290,
 						["Growl"] = 5,
 					},
 					["nome"] = "Lonac <Poklopac>",
-					["classe"] = "PET",
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Pet-0-5210-1-21308-5807-0200740539",
 					["pets"] = {
 					},
@@ -25661,14 +25405,14 @@ _detalhes_database = {
 					["flag_original"] = 4680,
 					["ownerName"] = "Razorfen Handler",
 					["nome"] = "Tamed Battleboar <Razorfen Handler>",
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["pets"] = {
 					},
 					["spell_cast"] = {
 						["Rushing Charge"] = 1,
 					},
-					["last_event"] = 0,
 					["classe"] = "PET",
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5251-47-30000-4535-000058A33E",
 					["fight_component"] = true,
 				}, -- [10]
@@ -25717,9 +25461,9 @@ _detalhes_database = {
 						["Earth Shock"] = 5,
 					},
 					["flag_original"] = 2632,
-					["classe"] = "UNKNOW",
 					["last_event"] = 0,
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-5251-47-30000-4523-0000D8A339",
 					["boss_fight_component"] = true,
 				}, -- [13]
@@ -25743,14 +25487,14 @@ _detalhes_database = {
 					["flag_original"] = 8466,
 					["ownerName"] = "Totez",
 					["nome"] = "Searing Totem II <Totez>",
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["pets"] = {
 					},
 					["spell_cast"] = {
 						["Attack"] = 128,
 					},
-					["tipo"] = 4,
 					["classe"] = "PET",
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5251-47-30000-3902-000058A4DD",
 					["boss_fight_component"] = true,
 				}, -- [15]
@@ -25781,9 +25525,9 @@ _detalhes_database = {
 						["Renew"] = 3,
 						["Mana Burn"] = 3,
 					},
-					["last_event"] = 0,
 					["classe"] = "UNKNOW",
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["serial"] = "Creature-0-5251-47-30000-4515-000158A339",
 					["flag_original"] = 68168,
 				}, -- [17]
@@ -26072,7 +25816,7 @@ _detalhes_database = {
 				}, -- [27]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["classe"] = "UNKNOW",
 					["fight_component"] = true,
 					["nome"] = "Razorfen Earthbreaker",
 					["interrupt_targets"] = {
@@ -26082,12 +25826,12 @@ _detalhes_database = {
 					["interrupt"] = 1.007623,
 					["pets"] = {
 					},
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["spell_cast"] = {
 						["Earth Shock"] = 3,
 						["Mind Tremor"] = 1,
 					},
-					["classe"] = "UNKNOW",
+					["tipo"] = 4,
 					["interrupt_spells"] = {
 						["_ActorTable"] = {
 							["Earth Shock"] = {
@@ -26270,12 +26014,12 @@ _detalhes_database = {
 					["spell_cast"] = {
 						["Earthbind"] = 2,
 					},
-					["classe"] = "PET",
-					["tipo"] = 4,
-					["last_event"] = 0,
-					["serial"] = "Creature-0-5251-47-30000-2630-000058AB42",
 					["pets"] = {
 					},
+					["tipo"] = 4,
+					["classe"] = "PET",
+					["serial"] = "Creature-0-5251-47-30000-2630-000058AB42",
+					["last_event"] = 0,
 				}, -- [38]
 				{
 					["monster"] = true,
@@ -26486,13 +26230,13 @@ _detalhes_database = {
 				{
 					["fight_component"] = true,
 					["nome"] = "Searing Totem II <Razormane Seer>",
-					["tipo"] = 4,
+					["classe"] = "PET",
 					["spell_cast"] = {
 						["Attack"] = 0,
 					},
 					["flag_original"] = 8776,
-					["classe"] = "PET",
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Creature-0-5208-1-39-3902-00005ED2D8",
 					["pets"] = {
 					},
@@ -26515,13 +26259,13 @@ _detalhes_database = {
 				{
 					["fight_component"] = true,
 					["nome"] = "Sparkleshell Snapper",
-					["classe"] = "UNKNOW",
+					["last_event"] = 0,
 					["spell_cast"] = {
 						["Head Butt"] = 0,
 					},
 					["flag_original"] = 68136,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-5208-1-42-4143-000060480D",
 					["pets"] = {
 					},
@@ -26529,13 +26273,13 @@ _detalhes_database = {
 				{
 					["fight_component"] = true,
 					["nome"] = "Sparkleshell Borer",
-					["classe"] = "UNKNOW",
+					["last_event"] = 0,
 					["spell_cast"] = {
 						["Pierce Armor"] = 0,
 					},
 					["flag_original"] = 68136,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-5208-1-42-4144-0000604B64",
 					["pets"] = {
 					},
@@ -26935,7 +26679,7 @@ _detalhes_database = {
 	},
 	["force_font_outline"] = "",
 	["character_data"] = {
-		["logons"] = 1967,
+		["logons"] = 1975,
 	},
 	["last_realversion"] = 142,
 	["announce_cooldowns"] = {
@@ -26952,5 +26696,6 @@ _detalhes_database = {
 	["cached_roles"] = {
 	},
 	["cached_specs"] = {
+		["Player-5239-013D6C3C"] = 0,
 	},
 }
