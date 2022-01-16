@@ -20,7 +20,7 @@ ItemRackUser = {
 	},
 	["Hidden"] = {
 	},
-	["CurrentSet"] = "DPS",
+	["CurrentSet"] = "lvling",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
 	},
