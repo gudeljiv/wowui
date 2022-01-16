@@ -1,8 +1,5 @@
 
 AtlasLootClassicDB = {
-	["global"] = {
-		["__addonrevision"] = 2040000,
-	},
 	["profileKeys"] = {
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
@@ -24,20 +21,34 @@ AtlasLootClassicDB = {
 		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
 		["Mxys - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
-		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
-		["Mxzq - Golemagg"] = "Default",
+		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
-		["Whatevs - Stonespine"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Dmitar - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
-		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
+		["Battlearm - Golemagg"] = "Default",
+		["Whatevs - Stonespine"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
+		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+	},
+	["global"] = {
+		["__addonrevision"] = 2040000,
+		["Addons"] = {
+			["Favourites"] = {
+				["activeSubLists"] = {
+				},
+				["lists"] = {
+					["GlobalBase"] = {
+						["__name"] = "Global base list",
+					},
+				},
+			},
+		},
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -47,6 +58,11 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -56,17 +72,8 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
-			},
 		},
 		["Verminz - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -75,6 +82,10 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Battitude - Golemagg"] = {
@@ -91,26 +102,340 @@ AtlasLootClassicDB = {
 		["Dmitar - Golemagg"] = {
 		},
 		["Poklopac - Dreadnaught"] = {
-			["GUI"] = {
+			["ClassFilter"] = {
+				["HUNTER"] = {
+				},
+				["WARRIOR"] = {
+					["ITEM_MOD_INTELLECT_SHORT"] = false,
+				},
+				["SHAMAN"] = {
+				},
+				["MAGE"] = {
+					["ITEM_MOD_STRENGTH_SHORT"] = false,
+					["ITEM_MOD_AGILITY_SHORT"] = false,
+					["ITEM_MOD_RANGED_ATTACK_POWER_SHORT"] = false,
+					["ITEM_MOD_ATTACK_POWER_SHORT"] = false,
+					["ITEM_MOD_CRIT_RANGED_RATING_SHORT"] = false,
+					["ITEM_MOD_FERAL_ATTACK_POWER_SHORT"] = false,
+					["ITEM_MOD_HIT_MELEE_RATING_SHORT"] = false,
+					["ITEM_MOD_CRIT_MELEE_RATING_SHORT"] = false,
+					["ITEM_MOD_MELEE_ATTACK_POWER_SHORT"] = false,
+					["ITEM_MOD_HIT_RANGED_RATING_SHORT"] = false,
+					["ITEM_MOD_PARRY_RATING_SHORT"] = false,
+					["ITEM_MOD_DODGE_RATING_SHORT"] = false,
+					["ITEM_MOD_DEFENSE_SKILL_RATING_SHORT"] = false,
+				},
+				["PRIEST"] = {
+					["ITEM_MOD_STRENGTH_SHORT"] = false,
+					["ITEM_MOD_AGILITY_SHORT"] = false,
+					["ITEM_MOD_RANGED_ATTACK_POWER_SHORT"] = false,
+					["ITEM_MOD_ATTACK_POWER_SHORT"] = false,
+					["ITEM_MOD_CRIT_RANGED_RATING_SHORT"] = false,
+					["ITEM_MOD_FERAL_ATTACK_POWER_SHORT"] = false,
+					["ITEM_MOD_HIT_MELEE_RATING_SHORT"] = false,
+					["ITEM_MOD_CRIT_MELEE_RATING_SHORT"] = false,
+					["ITEM_MOD_MELEE_ATTACK_POWER_SHORT"] = false,
+					["ITEM_MOD_HIT_RANGED_RATING_SHORT"] = false,
+					["ITEM_MOD_PARRY_RATING_SHORT"] = false,
+					["ITEM_MOD_DODGE_RATING_SHORT"] = false,
+					["ITEM_MOD_DEFENSE_SKILL_RATING_SHORT"] = false,
+				},
+				["WARLOCK"] = {
+					["ITEM_MOD_STRENGTH_SHORT"] = false,
+					["ITEM_MOD_AGILITY_SHORT"] = false,
+					["ITEM_MOD_RANGED_ATTACK_POWER_SHORT"] = false,
+					["ITEM_MOD_ATTACK_POWER_SHORT"] = false,
+					["ITEM_MOD_CRIT_RANGED_RATING_SHORT"] = false,
+					["ITEM_MOD_FERAL_ATTACK_POWER_SHORT"] = false,
+					["ITEM_MOD_HIT_MELEE_RATING_SHORT"] = false,
+					["ITEM_MOD_CRIT_MELEE_RATING_SHORT"] = false,
+					["ITEM_MOD_MELEE_ATTACK_POWER_SHORT"] = false,
+					["ITEM_MOD_HIT_RANGED_RATING_SHORT"] = false,
+					["ITEM_MOD_PARRY_RATING_SHORT"] = false,
+					["ITEM_MOD_DODGE_RATING_SHORT"] = false,
+					["ITEM_MOD_DEFENSE_SKILL_RATING_SHORT"] = false,
+				},
+				["DRUID"] = {
+				},
+				["ROGUE"] = {
+					["ITEM_MOD_INTELLECT_SHORT"] = false,
+				},
+				["PALADIN"] = {
+				},
+			},
+			["enableBossLevel"] = false,
+			["ContentPhase"] = {
+				["enableOnSets"] = true,
+				["enableTT"] = false,
+				["enableOnCrafting"] = true,
+				["enableOnLootTable"] = true,
+				["enableOnItems"] = true,
+			},
+			["enableAutoSelectBoss"] = true,
+			["minimap"] = {
+				["shown"] = false,
+				["locked"] = false,
+				["minimapPos"] = 218,
+				["hide"] = true,
+			},
+			["showDropRate"] = true,
+			["enableWoWHeadIntegration"] = true,
+			["Button"] = {
+				["Profession"] = {
+					["ChatLink"] = {
+						"LeftButton", -- [1]
+						"Shift", -- [2]
+					},
+					["WoWHeadLink"] = {
+						"RightButton", -- [1]
+						"Shift", -- [2]
+					},
+					["ShowExtraItems"] = {
+						"LeftButton", -- [1]
+						"None", -- [2]
+					},
+					["DressUp"] = {
+						"LeftButton", -- [1]
+						"Ctrl", -- [2]
+					},
+					["types"] = {
+						["ChatLink"] = true,
+						["ShowExtraItems"] = true,
+						["DressUp"] = true,
+						["WoWHeadLink"] = true,
+					},
+				},
+				["Faction"] = {
+					["WoWHeadLink"] = {
+						"RightButton", -- [1]
+						"Shift", -- [2]
+					},
+					["types"] = {
+						["WoWHeadLink"] = true,
+					},
+				},
+				["Item"] = {
+					["ChatLink"] = {
+						"LeftButton", -- [1]
+						"Shift", -- [2]
+					},
+					["SetFavourite"] = {
+						"LeftButton", -- [1]
+						"Alt", -- [2]
+					},
+					["WoWHeadLink"] = {
+						"RightButton", -- [1]
+						"Shift", -- [2]
+					},
+					["ShowExtraItems"] = {
+						"LeftButton", -- [1]
+						"None", -- [2]
+					},
+					["DressUp"] = {
+						"LeftButton", -- [1]
+						"Ctrl", -- [2]
+					},
+					["types"] = {
+						["ChatLink"] = true,
+						["SetFavourite"] = true,
+						["WoWHeadLink"] = true,
+						["ShowExtraItems"] = true,
+						["DressUp"] = true,
+					},
+				},
+				["Set"] = {
+					["WoWHeadLink"] = {
+						"RightButton", -- [1]
+						"Shift", -- [2]
+					},
+					["OpenSet"] = {
+						"LeftButton", -- [1]
+						"None", -- [2]
+					},
+					["DressUp"] = {
+						"LeftButton", -- [1]
+						"Ctrl", -- [2]
+					},
+					["types"] = {
+						["WoWHeadLink"] = true,
+						["OpenSet"] = true,
+						["DressUp"] = true,
+					},
+				},
+			},
+			["OptionsFrame"] = {
 				["point"] = {
-					nil, -- [1]
+					"CENTER", -- [1]
 					nil, -- [2]
 					"CENTER", -- [3]
-					11.03448486328125, -- [4]
-					77.24127960205078, -- [5]
-				},
-				["selected"] = {
-					nil, -- [1]
-					"Gnomeregan", -- [2]
-					7, -- [3]
-					1, -- [4]
+					0, -- [4]
 					0, -- [5]
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+			["Map"] = {
+				["point"] = {
+					"CENTER", -- [1]
+				},
+				["locked"] = false,
 			},
+			["Addons"] = {
+				["Favourites"] = {
+					["enabled"] = true,
+					["GUI"] = {
+						["bgColor"] = {
+							["a"] = 1,
+							["r"] = 0.45,
+							["g"] = 0.45,
+							["b"] = 0.45,
+						},
+						["scale"] = 1,
+						["content"] = {
+							["bgColor"] = {
+								["a"] = 1,
+								["r"] = 0.05,
+								["g"] = 0.05,
+								["b"] = 0.05,
+							},
+						},
+						["title"] = {
+							["bgColor"] = {
+								["a"] = 1,
+								["r"] = 0.05,
+								["g"] = 0.05,
+								["b"] = 0.05,
+							},
+							["font"] = "Friz Quadrata TT",
+							["textColor"] = {
+								["a"] = 1,
+								["r"] = 1,
+								["g"] = 1,
+								["b"] = 1,
+							},
+							["size"] = 12,
+						},
+					},
+					["activeSubLists"] = {
+					},
+					["showListInTT"] = true,
+					["activeList"] = {
+						"ProfileBase", -- [1]
+						false, -- [2]
+					},
+					["showIconInTT"] = false,
+					["lists"] = {
+						["ProfileBase"] = {
+							["__name"] = "Profile base list",
+						},
+					},
+				},
+				["Sources"] = {
+					["enabled"] = true,
+					["showRecipeSource"] = true,
+					["showDropRate"] = true,
+					["showProfRank"] = true,
+					["showLineBreak"] = true,
+					["Sources"] = {
+						[16] = false,
+					},
+				},
+			},
+			["Tooltip"] = {
+				["tooltip"] = "AtlasLootTooltip",
+				["useGameTooltip"] = true,
+			},
+			["showLvlRange"] = true,
+			["GUI"] = {
+				["classFilter"] = false,
+				["point"] = {
+					"BOTTOM", -- [1]
+					nil, -- [2]
+					"BOTTOM", -- [3]
+					-60.89646911621094, -- [4]
+					174.7587127685547, -- [5]
+				},
+				["ExpansionIcon"] = true,
+				["autoselect"] = true,
+				["mainFrame"] = {
+					["bgColor"] = {
+						["a"] = 1,
+						["r"] = 0.45,
+						["g"] = 0.45,
+						["b"] = 0.45,
+					},
+					["title"] = {
+						["bgColor"] = {
+							["a"] = 1,
+							["r"] = 0.05,
+							["g"] = 0.05,
+							["b"] = 0.05,
+						},
+						["font"] = "Friz Quadrata TT",
+						["textColor"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
+						},
+						["size"] = 12,
+					},
+					["scale"] = 1,
+				},
+				["selectedGameVersion"] = 1,
+				["DefaultFrameLocked"] = false,
+				["contentTopBar"] = {
+					["bgColor"] = {
+						["a"] = 0.7,
+						["r"] = 0.05,
+						["g"] = 0.05,
+						["b"] = 0.05,
+					},
+					["useContentColor"] = true,
+					["font"] = {
+						["color"] = {
+							["a"] = 1,
+							["r"] = 1,
+							["g"] = 1,
+							["b"] = 1,
+						},
+						["font"] = "Friz Quadrata TT",
+						["size"] = 16,
+					},
+				},
+				["selected"] = {
+					"AtlasLootClassic_DungeonsAndRaids", -- [1]
+					"ShadowfangKeep", -- [2]
+					12, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+				["contentBottomBar"] = {
+					["bgColor"] = {
+						["a"] = 0.5,
+						["r"] = 0.05,
+						["g"] = 0.05,
+						["b"] = 0.05,
+					},
+					["useContentColor"] = false,
+				},
+				["content"] = {
+					["showBgImage"] = false,
+					["bgColor"] = {
+						["a"] = 0.9,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+				},
+			},
+			["showMinEnterLvl"] = false,
+			["WorldMap"] = {
+				["showbutton"] = true,
+				["buttonOnTitleBar"] = true,
+			},
+			["enableAtlasMapIntegration"] = true,
+			["showIDsInTT"] = false,
+			["enableAutoSelect"] = true,
+			["useEnglishWoWHead"] = false,
 		},
 		["Mxym - Golemagg"] = {
 			["GUI"] = {
@@ -164,11 +489,6 @@ AtlasLootClassicDB = {
 		["Elohssa - Stonespine"] = {
 		},
 		["Nitwit - Dreadnaught"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 257.3785370538875,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -178,8 +498,17 @@ AtlasLootClassicDB = {
 					64.74999237060547, -- [5]
 				},
 			},
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 257.3785370538875,
+				["hide"] = true,
+			},
 		},
 		["Paydo - Dreadmist"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -196,10 +525,6 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 		},
 		["Mxys - Golemagg"] = {
 			["minimap"] = {
@@ -207,12 +532,12 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Pitchwise - Dreadnaught"] = {
+		["Konac - Dreadnaught"] = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
-					"WailingCaverns", -- [2]
-					8, -- [3]
+					"ShadowfangKeep", -- [2]
+					12, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},
@@ -224,7 +549,13 @@ AtlasLootClassicDB = {
 		},
 		["Vermins - Stonespine"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Mxzq - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Moolatz - Dreadnaught"] = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -238,27 +569,16 @@ AtlasLootClassicDB = {
 				["shown"] = false,
 				["hide"] = true,
 			},
-		},
-		["Battlearm - Hydraxian Waterlords"] = {
 		},
 		["Testxv - Golemagg"] = {
 		},
-		["Kosturko - Golemagg"] = {
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"Ragefire", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
+		["Battlearm - Golemagg"] = {
 		},
 		["Korupcija - Stonespine"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -267,17 +587,9 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -294,10 +606,18 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 		},
 		["Jaroslav - Golemagg"] = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -306,10 +626,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Default"] = {
@@ -329,6 +645,10 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["Addons"] = {
 				["Favourites"] = {
 					["lists"] = {
@@ -340,10 +660,6 @@ AtlasLootClassicDB = {
 					},
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 		},
 		["Judawise - Golemagg"] = {
 			["minimap"] = {
@@ -351,9 +667,7 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Battlearm - Golemagg"] = {
-		},
-		["Moolatz - Dreadnaught"] = {
+		["Kosturko - Golemagg"] = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
@@ -368,13 +682,9 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
-		["Mxzq - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
+		["Battlearm - Hydraxian Waterlords"] = {
 		},
-		["Konac - Dreadnaught"] = {
+		["Greenwise - Golemagg"] = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
@@ -382,8 +692,23 @@ AtlasLootClassicDB = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
-					"ShadowfangKeep", -- [2]
-					12, -- [3]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+		},
+		["Pitchwise - Dreadnaught"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"WailingCaverns", -- [2]
+					8, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},

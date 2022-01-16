@@ -136,3 +136,44 @@ local function TargetFrameTextAdjustment()
 end
 hooksecurefunc("TargetFrame_CheckClassification", TargetFrameTextAdjustment)
 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
+
+-- local function ListBuffs()
+-- 	for i=1,40 do 
+-- 		local name, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellId=UnitBuff("target",i)
+-- 		if name then 
+-- 			print(i.."="..name..", "..icon..", "..format("%.2f",-1*(GetTime()-expirationTime)/60).." minutes left.")
+-- 		end 
+-- 	end
+-- end
+
+
+-- local tf = CreateFrame("Frame")
+-- tf:RegisterEvent("PLAYER_TARGET_CHANGED")
+-- tf:SetScript("OnEvent", ListBuffs)
+-- TargetFrame:HookScript("OnUpdate", ListBuffs)
+-- hooksecurefunc("TargetFrame_UpdateAuras", ListBuffs)
+
+
+
+-- local function ListBuffs()
+-- 	for i=1,40 do 
+-- 		local name, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellId = UnitAura("target", i)
+-- 		if name then 
+-- 			print(i, "name:", name, "icon:", icon, "count:", count, "duration:", duration, "exp:", expirationTime)
+-- 		end 
+-- 	end
+-- end
+
+
+-- local tf = CreateFrame("Frame")
+-- tf:RegisterEvent("PLAYER_TARGET_CHANGED")
+-- tf:SetScript("OnEvent", ListBuffs)
+-- TargetFrame:HookScript("OnUpdate", ListBuffs)
+-- hooksecurefunc("TargetFrame_UpdateAuras", ListBuffs)

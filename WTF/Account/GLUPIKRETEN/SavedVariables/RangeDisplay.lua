@@ -15,30 +15,31 @@ RangeDisplayDB3 = {
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Pitchwise - Dreadnaught"] = "Default",
-		["Antun - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
-		["Nitwit - Dreadnaught"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Antun - Golemagg"] = "Default",
+		["Nitwit - Dreadnaught"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Pitchwise - Dreadnaught"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["mute"] = true,
-			["locked"] = true,
 			["units"] = {
 				["pet"] = {
 				},
+				["arena4"] = {
+				},
+				["arena5"] = {
+				},
 				["playertarget"] = {
-					["font"] = "Arial Narrow",
+					["x"] = -3.44103670120239,
 					["checkVisible"] = false,
 					["y"] = 0.645166099071503,
-					["x"] = -3.44103670120239,
+					["font"] = "Arial Narrow",
 				},
 				["focus"] = {
-				},
-				["arena2"] = {
 				},
 				["mouseover"] = {
 					["mouseAnchor"] = false,
@@ -47,11 +48,10 @@ RangeDisplayDB3 = {
 					["x"] = -3.48463487625122,
 					["font"] = "Arial Narrow",
 				},
-				["arena5"] = {
-				},
-				["arena4"] = {
+				["arena2"] = {
 				},
 			},
+			["locked"] = true,
 		},
 	},
 }
