@@ -34,6 +34,13 @@ X: -101
 Y: 96
 W: 784
 H: 260
+Frame: TargetFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 250
+Y: -96
+W: 232
+H: 100
 Frame: CharacterFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -97,13 +104,6 @@ X: 0
 Y: 0
 W: 250
 H: 42
-Frame: TargetFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 250
-Y: -96
-W: 232
-H: 100
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER

@@ -57,6 +57,7 @@ local function FixCVar()
 	SetCVar("scriptErrors", "1")
 	SetCVar("alwaysShowActionBars", "1")
 	SetCVar("AutoInteract", "0")
+	SetCVar("cursorsizepreferred", "0")
 end
 
 local frame = CreateFrame("Frame", "CVarSet")
