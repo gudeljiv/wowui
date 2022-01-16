@@ -1,21 +1,6 @@
 
 xKillCount = {
 	["show"] = false,
-	["position"] = {
-		["y"] = -222.8851318359375,
-		["x"] = 386.6781921386719,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
-	},
-	["experience"] = {
-<<<<<<< HEAD
-		["pulltotal"] = 5095,
-		["totaltotal"] = 680327,
-=======
-		["pulltotal"] = 12971,
-		["totaltotal"] = 545425,
->>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
-	},
 	["killLog"] = {
 		["Clattering Scorpid"] = {
 			["name"] = "Clattering Scorpid",
@@ -58,10 +43,6 @@ xKillCount = {
 			["count"] = 17,
 		},
 	},
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 	["experience"] = {
 		["totaltotal"] = 669526,
 		["pulltotal"] = 0,
@@ -72,6 +53,4 @@ xKillCount = {
 		["to"] = "TOPLEFT",
 		["from"] = "TOPLEFT",
 	},
->>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
->>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 }

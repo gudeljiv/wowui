@@ -9,9 +9,9 @@ Details_StreamerDB = {
 		["Greshnik - Dreadnaught"] = "Mxyz - Golemagg",
 		["Vermin - Golemagg"] = "Mxyz - Golemagg",
 		["Konac - Dreadnaught"] = "Mxyz - Golemagg",
-		["Poklopac - Dreadnaught"] = "Mxyz - Golemagg",
-		["Battlearm - Golemagg"] = "Mxyz - Golemagg",
 		["Augustin - Golemagg"] = "Mxyz - Golemagg",
+		["Battlearm - Golemagg"] = "Mxyz - Golemagg",
+		["Poklopac - Dreadnaught"] = "Mxyz - Golemagg",
 		["Moolatz - Dreadnaught"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
@@ -42,10 +42,10 @@ Details_StreamerDB = {
 			["row_texture"] = "Glamour2",
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = true,
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
+			["use_spark"] = false,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -53,24 +53,9 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-<<<<<<< HEAD
-			["use_spark"] = false,
 			["y"] = -183.107162475586,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-=======
-<<<<<<< HEAD
-=======
-			["y"] = -183.107162475586,
->>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
->>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -82,27 +67,15 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-<<<<<<< HEAD
-			["main_frame_strata"] = "LOW",
-=======
-<<<<<<< HEAD
-			["font_size"] = 10,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
-			["y"] = -183.107162475586,
-			["use_spark"] = false,
-=======
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["font_size"] = 10,
->>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
 				1, -- [3]
 				0.480826139450073, -- [4]
 			},
->>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 			["point"] = "RIGHT",
 			["row_height"] = 18,
 			["scale"] = 1,

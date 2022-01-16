@@ -13,12 +13,12 @@ MSBTProfiles_SavedVars = {
 				["Notification"] = {
 					["disabled"] = true,
 				},
-				["Outgoing"] = {
-					["stickyTextAlignIndex"] = 3,
-					["offsetX"] = 360,
-					["iconAlign"] = "Left",
+				["Incoming"] = {
+					["stickyTextAlignIndex"] = 1,
+					["offsetX"] = -400,
+					["iconAlign"] = "Right",
 					["offsetY"] = 50,
-					["textAlignIndex"] = 3,
+					["textAlignIndex"] = 1,
 				},
 				["Static"] = {
 					["disabled"] = true,
@@ -27,18 +27,18 @@ MSBTProfiles_SavedVars = {
 					["stickyDirection"] = "Up",
 					["direction"] = "Up",
 					["name"] = "CRIT",
-					["critFontSize"] = 36,
+					["scrollHeight"] = 160,
 					["stickyBehavior"] = "Normal",
 					["offsetY"] = 0,
 					["offsetX"] = -20,
-					["scrollHeight"] = 160,
+					["critFontSize"] = 36,
 				},
-				["Incoming"] = {
-					["stickyTextAlignIndex"] = 1,
-					["offsetX"] = -400,
-					["iconAlign"] = "Right",
+				["Outgoing"] = {
+					["stickyTextAlignIndex"] = 3,
+					["offsetX"] = 360,
+					["iconAlign"] = "Left",
 					["offsetY"] = 50,
-					["textAlignIndex"] = 1,
+					["textAlignIndex"] = 3,
 				},
 			},
 			["normalFontName"] = "MSBT Yellowjacket",
@@ -46,49 +46,19 @@ MSBTProfiles_SavedVars = {
 			["normalFontSize"] = 15,
 		},
 		["Multibox master"] = {
-			["creationVersion"] = "5.7.123",
+			["normalFontSize"] = 15,
 			["powerThrottleDuration"] = 2,
 			["critFontName"] = "MSBT Yellowjacket",
-<<<<<<< HEAD
-			["groupNumbers"] = true,
-=======
-<<<<<<< HEAD
-=======
 			["hideFullHoTOverheals"] = false,
->>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
->>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 			["scrollAreas"] = {
 				["Outgoing"] = {
 					["stickyTextAlignIndex"] = 3,
 					["offsetX"] = 360,
-<<<<<<< HEAD
-					["animationStyle"] = "Straight",
-					["iconAlign"] = "Left",
-					["offsetY"] = 50,
-=======
-<<<<<<< HEAD
-					["iconAlign"] = "Left",
 					["behavior"] = "MSBT_NORMAL",
+					["iconAlign"] = "Left",
 					["offsetY"] = 50,
+					["animationStyle"] = "Straight",
 					["textAlignIndex"] = 3,
-=======
-					["behavior"] = "MSBT_NORMAL",
-					["iconAlign"] = "Left",
-					["offsetY"] = 50,
->>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
-					["animationStyle"] = "Straight",
->>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
-					["textAlignIndex"] = 3,
-					["behavior"] = "MSBT_NORMAL",
-				},
-				["Incoming"] = {
-					["stickyTextAlignIndex"] = 1,
-					["offsetX"] = -400,
-					["behavior"] = "MSBT_NORMAL",
-					["iconAlign"] = "Right",
-					["offsetY"] = 50,
-					["animationStyle"] = "Straight",
-					["textAlignIndex"] = 1,
 				},
 				["Notification"] = {
 					["disabled"] = true,
@@ -103,35 +73,19 @@ MSBTProfiles_SavedVars = {
 					["offsetY"] = 0,
 					["name"] = "CRIT",
 				},
-<<<<<<< HEAD
-				["Notification"] = {
-					["disabled"] = true,
-=======
 				["Incoming"] = {
 					["stickyTextAlignIndex"] = 1,
 					["offsetX"] = -400,
-<<<<<<< HEAD
-					["animationStyle"] = "Straight",
-					["iconAlign"] = "Right",
-					["offsetY"] = 50,
-					["textAlignIndex"] = 1,
-					["behavior"] = "MSBT_NORMAL",
-				},
-			},
-			["hideFullHoTOverheals"] = false,
-=======
 					["textAlignIndex"] = 1,
 					["behavior"] = "MSBT_NORMAL",
 					["offsetY"] = 50,
 					["animationStyle"] = "Straight",
 					["iconAlign"] = "Right",
->>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 				},
 			},
->>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 			["normalFontName"] = "MSBT Yellowjacket",
-			["hideFullHoTOverheals"] = false,
-			["normalFontSize"] = 15,
+			["groupNumbers"] = true,
+			["creationVersion"] = "5.7.123",
 		},
 	},
 }

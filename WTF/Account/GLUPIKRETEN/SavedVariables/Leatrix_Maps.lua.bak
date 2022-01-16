@@ -4,140 +4,63 @@ LeaMapsDB = {
 	["AutoChangeZones"] = "Off",
 	["ShowZoneLevels"] = "On",
 	["ShowSpiritHealers"] = "On",
-<<<<<<< HEAD
-=======
 	["stationaryOpacity"] = 1,
-<<<<<<< HEAD
-	["BattleMaxZoom"] = 1,
-	["ShowTravelPoints"] = "On",
-=======
 	["ShowMinimapIcon"] = "Off",
 	["ShowFishingLevels"] = "On",
->>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["LockMapFrame"] = "Off",
 	["RevTint"] = "On",
 	["MapPosA"] = "TOP",
 	["FirstRunMessageSeen"] = true,
->>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	["BattleMapOpacity"] = 1,
-<<<<<<< HEAD
-	["tintRed"] = 0.6,
-	["ShowCoords"] = "On",
-	["BattleMapX"] = -47,
-	["ShowMinimapIcon"] = "Off",
-	["ShowFishingLevels"] = "On",
-	["EnlargePlayerArrow"] = "On",
-	["movingOpacity"] = 0.5,
-=======
 	["IncreaseZoom"] = "Off",
-	["BattleMaxZoom"] = 1,
-	["LockMapFrame"] = "Off",
-	["BattleMapR"] = "BOTTOMRIGHT",
-	["MapPosA"] = "TOP",
-	["BattlePlayerArrowSize"] = 12,
-	["stationaryOpacity"] = 1,
-	["tintRed"] = 0.6,
-	["ShowMinimapIcon"] = "Off",
+	["movingOpacity"] = 0.5,
 	["BattleMapX"] = -47,
 	["MainPanelA"] = "LEFT",
 	["ShowTravelPoints"] = "On",
 	["EnlargePlayerArrow"] = "On",
 	["ShowCoords"] = "On",
->>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["ShowDungeonIcons"] = "On",
 	["CenterMapOnPlayer"] = "Off",
 	["EnhanceBattleMap"] = "On",
 	["tintAlpha"] = 1,
-	["BattleCenterOnPlayer"] = "Off",
+	["MainPanelX"] = 267.49951171875,
 	["SetMapOpacity"] = "Off",
 	["StickyMapFrame"] = "Off",
-	["ZoneMapMenu"] = 1,
+	["BattleMapY"] = 83,
 	["MapPosR"] = "TOP",
-<<<<<<< HEAD
-	["UnlockMapFrame"] = "On",
-	["MapPosX"] = -109.1749877929688,
-	["FadeMap"] = "On",
-	["UseClassIcons"] = "On",
-=======
-<<<<<<< HEAD
-	["MainPanelR"] = "LEFT",
-=======
 	["ShowPointsOfInterest"] = "On",
->>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["MapPosX"] = -109.1749877929688,
 	["FadeMap"] = "On",
 	["UseClassIcons"] = "On",
 	["ShowZoneCrossings"] = "On",
 	["BattleCenterOnPlayer"] = "Off",
-<<<<<<< HEAD
-	["ShowPointsOfInterest"] = "On",
-=======
 	["MainPanelR"] = "LEFT",
->>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["RememberZoom"] = "On",
->>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	["BattleMapA"] = "BOTTOMRIGHT",
-	["MainPanelX"] = 267.49951171875,
-	["MainPanelR"] = "LEFT",
-	["RevealMap"] = "On",
-	["ShowZoneCrossings"] = "On",
 	["ShowScaleHandle"] = "On",
 	["PlayerArrowSize"] = 27,
-<<<<<<< HEAD
-	["RememberZoom"] = "On",
-=======
-<<<<<<< HEAD
-	["RevealMap"] = "On",
-=======
 	["UnlockMapFrame"] = "On",
->>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
->>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	["ClassIconSize"] = 20,
-	["BattleMapSize"] = 300,
-	["BattleGroupIconSize"] = 20,
-	["hide"] = true,
-	["HideTownCityIcons"] = "On",
-	["minimapPos"] = 204,
-	["ShowFlightPoints"] = "On",
-	["ShowTravelOpposing"] = "Off",
 	["IncreaseZoomMax"] = 2,
+	["BattleGroupIconSize"] = 20,
+	["ShowFlightPoints"] = "On",
+	["minimapPos"] = 204,
+	["HideTownCityIcons"] = "On",
+	["hide"] = true,
+	["ShowTravelOpposing"] = "Off",
+	["BattleMapSize"] = 300,
 	["MainPanelY"] = 176.8677368164063,
 	["NoMapBorder"] = "Off",
-<<<<<<< HEAD
-	["ShowPointsOfInterest"] = "On",
-	["BattleMapY"] = 83,
-	["tintBlue"] = 1,
-	["UseDefaultMap"] = "Off",
-	["NoFadeCursor"] = "On",
-	["movingOpacity"] = 0.5,
-	["FirstRunMessageSeen"] = true,
-	["RevTint"] = "On",
-	["ShowFishingLevels"] = "On",
-	["MapPosY"] = -37.76125335693359,
-=======
-<<<<<<< HEAD
-	["UnlockMapFrame"] = "On",
-=======
 	["RevealMap"] = "On",
->>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
 	["ZoneMapMenu"] = 1,
 	["tintBlue"] = 1,
 	["UseDefaultMap"] = "Off",
 	["NoFadeCursor"] = "On",
-<<<<<<< HEAD
-	["MapPosY"] = -37.76125335693359,
-	["BattlePlayerArrowSize"] = 12,
-	["BattleMapR"] = "BOTTOMRIGHT",
-	["MainPanelA"] = "LEFT",
-	["IncreaseZoom"] = "Off",
-=======
 	["BattleMaxZoom"] = 1,
 	["BattlePlayerArrowSize"] = 12,
 	["BattleMapR"] = "BOTTOMRIGHT",
 	["MapPosY"] = -37.76125335693359,
 	["tintRed"] = 0.6,
->>>>>>> 56d84d512cf1f22a5389baeaef9deb165ea20745
->>>>>>> 2fd015b27701bcbbf82e92b9bfb5ac613459fff9
 	["tintGreen"] = 0.6,
 	["UnlockBattlefield"] = "On",
 }
