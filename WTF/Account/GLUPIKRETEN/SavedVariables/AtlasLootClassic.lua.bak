@@ -26,7 +26,7 @@ AtlasLootClassicDB = {
 		["Vermins - Stonespine"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
 		["Mxzq - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Whatevs - Stonespine"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
@@ -36,7 +36,7 @@ AtlasLootClassicDB = {
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 	},
 	["profiles"] = {
@@ -239,9 +239,9 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Testxv - Golemagg"] = {
-		},
 		["Battlearm - Hydraxian Waterlords"] = {
+		},
+		["Testxv - Golemagg"] = {
 		},
 		["Kosturko - Golemagg"] = {
 			["GUI"] = {
@@ -382,8 +382,8 @@ AtlasLootClassicDB = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
-					"ShadowfangKeep", -- [2]
-					12, -- [3]
+					"RazorfenDowns", -- [2]
+					6, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},
