@@ -90,13 +90,6 @@ X: 0
 Y: 0
 W: 250
 H: 42
-Frame: TargetFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 250
-Y: -96
-W: 232
-H: 100
 Frame: GroupBulletinBoardFrame
 FrameLevel: 1
 Anchor: TOPRIGHT
@@ -104,6 +97,13 @@ X: -346
 Y: -134
 W: 620
 H: 741
+Frame: TargetFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 250
+Y: -96
+W: 232
+H: 100
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER

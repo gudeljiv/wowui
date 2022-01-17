@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 4128,
+	["session"] = 4130,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1227,12 +1227,20 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [158]
 		{
+			["message"] = "Interface\\FrameXML\\UIDropDownMenu.lua:971: attempt to index local 'button' (a nil value)",
+			["time"] = "2022/01/17 21:31:52",
+			["locals"] = "level = 1\nvalue = nil\ndropDownFrame = nil\nanchorName = Minimap {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n timer = 0\n beautyBorder = <table> {\n }\n SetPoint = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:94\n}\nxOffset = -98\nyOffset = -3\nmenuList = nil\nbutton = nil\nautoHideDelay = nil\nlistFrame = DropDownList1 {\n 0 = <userdata>\n dropdown = LFMFrameActivityDropDown {\n }\n shouldRefresh = true\n numButtons = 4\n maxWidth = 195.466675\n}\nlistFrameName = \"DropDownList1\"\ntempFrame = nil\npoint = nil\nrelativePoint = nil\nrelativeTo = nil\n(*temporary) = <function> defined @Interface\\FrameXML\\UIDropDownMenu.lua:25\n(*temporary) = nil\n(*temporary) = \"createframes\"\n(*temporary) = true\n(*temporary) = <function> defined @Interface\\FrameXML\\UIDropDownMenu.lua:292\n(*temporary) = 1\n(*temporary) = 0\n(*temporary) = 24\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'button' (a nil value)\"\nUIDropDownMenuDelegate = <unnamed> {\n 0 = <userdata>\n}\nGetChild = <function> defined @Interface\\FrameXML\\UIDropDownMenu.lua:63\n",
+			["stack"] = "[string \"@Interface\\FrameXML\\UIDropDownMenu.lua\"]:971: in function `ToggleDropDownMenu'\n[string \"@Interface\\AddOns\\nMinimap\\core.lua\"]:120: in function <Interface\\AddOns\\nMinimap\\core.lua:118>",
+			["session"] = 4130,
+			["counter"] = 3,
+		}, -- [159]
+		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
 			["time"] = "2022/01/02 17:31:48",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface_Vanilla\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface_Vanilla\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 4128,
-			["counter"] = 24,
-		}, -- [159]
+			["session"] = 4130,
+			["counter"] = 25,
+		}, -- [160]
 	},
 }
