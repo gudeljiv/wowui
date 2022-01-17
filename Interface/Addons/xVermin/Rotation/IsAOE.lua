@@ -5,7 +5,12 @@ function AOE(type)
 	local inRange = 0
 
 	for i = 1, 40 do
-		if UnitExists("nameplate" .. i) and IsSpellInRange("Cleave", "nameplate" .. i) == 1 then
+		if UnitExists("nameplate" .. i) and IsSpellInRange("Cleave", "nameplate" .. i) == 1 and CheckInteractDistance("nameplate"..i, 3) then
+			-- 1 = Inspect, 28 yards
+			-- 2 = Trade, 11.11 yards
+			-- 3 = Duel, 9.9 yards
+			-- 4 = Follow, 28 yards
+			-- print("nameplate"..i,CheckInteractDistance("nameplate"..i, 3))
 			inRange = inRange + 1
 		end
 	end
