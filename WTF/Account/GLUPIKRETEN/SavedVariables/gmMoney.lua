@@ -8,7 +8,7 @@ GMMONEY = {
 	},
 	["Dreadnaught"] = {
 		["Poklopac"] = {
-			["GOLD"] = 610947,
+			["GOLD"] = 612779,
 			["CLASS"] = "HUNTER",
 		},
 		["Moolatz"] = {
@@ -20,7 +20,7 @@ GMMONEY = {
 			["CLASS"] = "WARLOCK",
 		},
 		["Konac"] = {
-			["GOLD"] = 458183,
+			["GOLD"] = 464849,
 			["CLASS"] = "PRIEST",
 		},
 		["Nitwit"] = {
