@@ -1,12 +1,12 @@
 VER 3 000000000000000D "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:1205
+/castsequence [combat] reset=combat item:2455
 END
 VER 3 000000000000000C "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:3771
-/castsequence [combat] reset=combat item:1710,item:929
+/use [nocombat]item:4538
+/castsequence [combat] reset=combat item:858
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 #showtooltip item:12037
