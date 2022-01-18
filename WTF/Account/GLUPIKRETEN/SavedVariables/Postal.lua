@@ -9,12 +9,12 @@ Postal3ClassicDB = {
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
 		["Vermins - Stonespine"] = "Vermins - Stonespine",
-		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Poklopac - Dreadnaught"] = "Poklopac - Dreadnaught",
-		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
@@ -50,10 +50,10 @@ Postal3ClassicDB = {
 				"Mxzq|Golemagg|Horde|35|HUNTER", -- [15]
 				"Nitwit|Dreadnaught|Horde|5|ROGUE", -- [16]
 				"Pitchwise|Dreadnaught|Horde|28|WARRIOR", -- [17]
-				"Poklopac|Dreadnaught|Horde|33|HUNTER", -- [18]
+				"Poklopac|Dreadnaught|Horde|34|HUNTER", -- [18]
 				"Testxv|Golemagg|Horde|1|HUNTER", -- [19]
 				"Vermins|Stonespine|Horde|2|WARRIOR", -- [20]
-				"Vermin|Golemagg|Horde|36|WARRIOR", -- [21]
+				"Vermin|Golemagg|Horde|37|WARRIOR", -- [21]
 			},
 		},
 	},
@@ -85,11 +85,16 @@ Postal3ClassicDB = {
 		},
 		["Greenwise - Golemagg"] = {
 		},
+		["Pitchwise - Dreadnaught"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Konac|Dreadnaught|Horde", -- [1]
+				},
+			},
+		},
 		["Mxym - Golemagg"] = {
 		},
 		["Vermins - Stonespine"] = {
-		},
-		["Konac - Dreadnaught"] = {
 		},
 		["Vermin - Golemagg"] = {
 			["BlackBook"] = {
@@ -103,16 +108,12 @@ Postal3ClassicDB = {
 		["Poklopac - Dreadnaught"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Konac|Dreadnaught|Horde", -- [1]
+					"Pitchwise|Dreadnaught|Horde", -- [1]
+					"Konac|Dreadnaught|Horde", -- [2]
 				},
 			},
 		},
-		["Pitchwise - Dreadnaught"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Konac|Dreadnaught|Horde", -- [1]
-				},
-			},
+		["Konac - Dreadnaught"] = {
 		},
 		["Battlearm - Hydraxian Waterlords"] = {
 		},

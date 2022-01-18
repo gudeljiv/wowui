@@ -51,29 +51,19 @@ ChocolateBarDB = {
 	["profiles"] = {
 		["Default"] = {
 			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
 			},
 			["moveFrames"] = false,
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["width"] = 147.000030517578,
-					["autohide"] = false,
-					["barOffy"] = -207.589706420898,
-					["hideBarInCombat"] = false,
-					["barOffx"] = -31.9219512939453,
-				},
-				["ChocolateBar2"] = {
-					["barOffy"] = -256.666748046875,
-					["barPoint"] = "TOPRIGHT",
-					["barName"] = "ChocolateBar2",
-					["align"] = "custom",
-					["barOffx"] = -88.3325424194336,
-					["index"] = 1,
-					["width"] = 147,
-				},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
 			},
 			["fixedStrata"] = true,
 			["objSettings"] = {
@@ -295,15 +285,11 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar2",
 					["customLabel"] = "B",
 				},
-				["LFGBulletinBoard"] = {
-					["index"] = 3,
+				["TownsfolkTracker"] = {
+					["enabled"] = false,
 					["align"] = "right",
-					["isNew"] = false,
-					["showLabel"] = true,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar1",
 					["showText"] = false,
-					["customLabel"] = "LFG",
+					["barName"] = "ChocolateBar1",
 				},
 				["TellMeWhen"] = {
 					["enabled"] = false,
@@ -320,11 +306,15 @@ ChocolateBarDB = {
 					["index"] = 6,
 					["barName"] = "ChocolateBar1",
 				},
-				["TownsfolkTracker"] = {
-					["enabled"] = false,
+				["LFGBulletinBoard"] = {
+					["index"] = 3,
 					["align"] = "right",
-					["showText"] = false,
+					["isNew"] = false,
+					["showLabel"] = true,
+					["showIcon"] = false,
 					["barName"] = "ChocolateBar1",
+					["showText"] = false,
+					["customLabel"] = "LFG",
 				},
 				["MinimapIcon"] = {
 					["enabled"] = false,
@@ -438,26 +428,36 @@ ChocolateBarDB = {
 					["customLabel"] = "N",
 				},
 			},
-			["gap"] = 0,
 			["fontName"] = "Friz Quadrata TT",
+			["desaturated"] = false,
 			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
-			["desaturated"] = false,
+			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["width"] = 147.000030517578,
+					["autohide"] = false,
+					["barOffy"] = -207.589706420898,
+					["hideBarInCombat"] = false,
+					["barOffx"] = -31.9219512939453,
 				},
-				["textureName"] = "None",
+				["ChocolateBar2"] = {
+					["barOffy"] = -256.666748046875,
+					["barPoint"] = "TOPRIGHT",
+					["barName"] = "ChocolateBar2",
+					["align"] = "custom",
+					["barOffx"] = -88.3325424194336,
+					["index"] = 1,
+					["width"] = 147,
+				},
 			},
 			["textColor"] = {
 				["a"] = 1,
@@ -508,17 +508,20 @@ CB_PlayedTime = {
 	["Mxzq-"] = {
 		["total"] = 356150,
 	},
+	["Mxzq-Golemagg"] = {
+		["total"] = 356255,
+	},
 	["Battitude-"] = {
 		["total"] = 2037,
 	},
 	["Moolatz-Dreadnaught"] = {
-		["total"] = 32127,
+		["total"] = 32557,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
 	["Poklopac-Dreadnaught"] = {
-		["total"] = 198276,
+		["total"] = 204786,
 	},
 	["Ozrencic-"] = {
 		["total"] = 853,
@@ -527,7 +530,7 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Pitchwise-Dreadnaught"] = {
-		["total"] = 135552,
+		["total"] = 140214,
 	},
 	["Judawise-"] = {
 		["total"] = 437,
@@ -538,23 +541,23 @@ CB_PlayedTime = {
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
 	},
+	["Greshnik-Dreadnaught"] = {
+		["total"] = 148,
+	},
 	["Dmitar-"] = {
 		["total"] = 1872,
 	},
 	["Nitwit-"] = {
 		["total"] = 680,
 	},
+	["Kosturko-"] = {
+		["total"] = 1457,
+	},
 	["Verminz-"] = {
 		["total"] = 311368,
 	},
-	["Greshnik-Dreadnaught"] = {
-		["total"] = 148,
-	},
 	["Paydo-"] = {
 		["total"] = 18945,
-	},
-	["Pitchwise-"] = {
-		["total"] = 390,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,
@@ -562,16 +565,19 @@ CB_PlayedTime = {
 	["Elohssa-"] = {
 		["total"] = 3552,
 	},
+	["Pitchwise-"] = {
+		["total"] = 390,
+	},
 	["Grgur-"] = {
 		["total"] = 1248,
-	},
-	["Kosturko-"] = {
-		["total"] = 1457,
 	},
 	["Korupcija-"] = {
 		["total"] = 21359,
 	},
 	["Konac-Dreadnaught"] = {
-		["total"] = 84904,
+		["total"] = 85018,
+	},
+	["Vermin-Golemagg"] = {
+		["total"] = 271692,
 	},
 }

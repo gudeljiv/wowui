@@ -1,7 +1,3 @@
-VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover,exists,nodead][help][] Healing Touch(Rank 1)
-END
 VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
@@ -28,4 +24,8 @@ END
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Healing Touch
+END
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nodead][help][] Healing Touch(Rank 1)
 END

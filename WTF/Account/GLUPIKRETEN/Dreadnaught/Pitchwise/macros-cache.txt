@@ -50,3 +50,8 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Heroic Strike
 END
+VER 3 000000000100000C " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Rough Sharpening Stone
+/use [button:1] 16; [button:2] 17
+END

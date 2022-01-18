@@ -2,3 +2,5 @@ WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 ItemRackOptions: enabled
 TownsfolkTracker: disabled
+nHealth: enabled
+nPower: enabled

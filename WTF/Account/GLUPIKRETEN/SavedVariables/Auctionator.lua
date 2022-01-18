@@ -54,6 +54,10 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["7081734"] = "17:13",
 		["7080500"] = "19:4",
 	},
+	["Greenweave Leggings of the Eagle"] = {
+		["is"] = "9772:0:0:854:0",
+		["7081939"] = "27800:1",
+	},
 	["Battle Chain Pants"] = {
 		["is"] = "3282:0:0:0:0",
 		["7079243"] = "3900:1",
@@ -65,8 +69,9 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["7080501"] = "260:15",
 	},
 	["Tin Bar"] = {
-		["is"] = "3576:0:0:0:0",
 		["7081192"] = "489:6",
+		["7082500"] = "155:5",
+		["is"] = "3576:0:0:0:0",
 	},
 	["Fadeleaf"] = {
 		["is"] = "3818:0:0:0:0",
@@ -80,17 +85,17 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "5117:0:0:0:0",
 		["7081830"] = "820:8",
 	},
-	["Thistlefur Gloves of the Owl"] = {
-		["is"] = "14199:0:0:769:0",
-		["7081939"] = "11200:1",
-	},
-	["Greenweave Leggings of the Eagle"] = {
-		["is"] = "9772:0:0:854:0",
-		["7081939"] = "27800:1",
+	["Clam Meat"] = {
+		["is"] = "5503:0:0:0:0",
+		["7081680"] = "1915:2",
 	},
 	["Rough Stone"] = {
 		["is"] = "2835:0:0:0:0",
 		["7081192"] = "18:5",
+	},
+	["Thistlefur Gloves of the Owl"] = {
+		["is"] = "14199:0:0:769:0",
+		["7081939"] = "11200:1",
 	},
 	["Lesser Mana Potion"] = {
 		["is"] = "3385:0:0:0:0",
@@ -102,8 +107,8 @@ AUCTIONATOR_PRICING_HISTORY = {
 	},
 	["Heavy Leather"] = {
 		["is"] = "4234:0:0:0:0",
-		["7081938"] = "885:5",
 		["7079022"] = "285:2",
+		["7081938"] = "885:5",
 		["7080501"] = "390:3",
 	},
 	["Grizzly Jerkin of the Eagle"] = {
@@ -114,18 +119,19 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "7067:0:0:0:0",
 		["7080501"] = "5800:1",
 	},
-	["Clam Meat"] = {
-		["is"] = "5503:0:0:0:0",
-		["7081680"] = "1915:2",
+	["Shredder Operating Manual - Page 8"] = {
+		["is"] = "16652:0:0:0:0",
+		["7081734"] = "1965:1",
 	},
-	["Heavy Hide"] = {
-		["is"] = "4235:0:0:0:0",
-		["7081938"] = "1280:1",
-		["7079022"] = "1085:2",
+	["Grave Moss"] = {
+		["is"] = "3369:0:0:0:0",
+		["7074199"] = "13800:3",
+		["7079021"] = "6000:3",
+		["7080501"] = "5000:3",
 	},
-	["Large Venom Sac"] = {
-		["is"] = "1288:0:0:0:0",
-		["7079022"] = "7000:1",
+	["Silver Bar"] = {
+		["is"] = "2842:0:0:0:0",
+		["7082500"] = "400:1",
 	},
 	["Shredder Operating Manual - Page 4"] = {
 		["is"] = "16648:0:0:0:0",
@@ -135,25 +141,25 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "2997:0:0:0:0",
 		["7080501"] = "780:1",
 	},
-	["Shredder Operating Manual - Page 8"] = {
-		["is"] = "16652:0:0:0:0",
-		["7081734"] = "1965:1",
+	["Minor Mana Potion"] = {
+		["is"] = "2455:0:0:0:0",
+		["7081680"] = "37:2",
 	},
 	["Buccaneer's Bracers of Intellect"] = {
 		["is"] = "14166:0:0:26:0",
 		["7081734"] = "6700:1",
 	},
-	["Minor Mana Potion"] = {
-		["is"] = "2455:0:0:0:0",
-		["7081680"] = "37:2",
+	["Bristlebark Bindings"] = {
+		["is"] = "14569:0:0:0:0",
+		["7081680"] = "12200:1",
 	},
 	["Scroll of Protection II"] = {
 		["is"] = "1478:0:0:0:0",
 		["7081734"] = "1430:1",
 	},
-	["Bristlebark Bindings"] = {
-		["is"] = "14569:0:0:0:0",
-		["7081680"] = "12200:1",
+	["Tangy Clam Meat"] = {
+		["is"] = "5504:0:0:0:0",
+		["7081680"] = "785:6",
 	},
 	["Light Feather"] = {
 		["is"] = "17056:0:0:0:0",
@@ -167,16 +173,20 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "14231:0:0:858:0",
 		["7081939"] = "20885:1",
 	},
-	["Tangy Clam Meat"] = {
-		["is"] = "5504:0:0:0:0",
-		["7081680"] = "785:6",
-	},
 	["Outrunner's Slippers of Stamina"] = {
 		["is"] = "15498:0:0:96:0",
+		["7082491"] = "8600:1",
 		["7080501"] = "8600:1",
+	},
+	["Resilient Cape"] = {
+		["is"] = "14400:0:0:0:0",
+		["7079023"] = "9400:1",
+		["7082491"] = "9400:1",
+		["7080501"] = "9300:1",
 	},
 	["Quartz Ring of Fire Resistance"] = {
 		["is"] = "11965:0:0:1403:0",
+		["7082491"] = "4900:1",
 		["7080502"] = "4900:1",
 	},
 	["Crawler Meat"] = {
@@ -187,10 +197,9 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "6586:0:0:1018:0",
 		["7081191"] = "4500:1",
 	},
-	["Resilient Cape"] = {
-		["is"] = "14400:0:0:0:0",
-		["7079023"] = "9400:1",
-		["7080501"] = "9300:1",
+	["Shredder Operating Manual - Page 11"] = {
+		["is"] = "16655:0:0:0:0",
+		["7081734"] = "186:1",
 	},
 	["Shredder Operating Manual - Page 2"] = {
 		["is"] = "16646:0:0:0:0",
@@ -212,15 +221,17 @@ AUCTIONATOR_PRICING_HISTORY = {
 	},
 	["Barbaric Battle Axe of the Boar"] = {
 		["is"] = "3195:0:0:1100:0",
+		["7082491"] = "7600:1",
 		["7080500"] = "7600:1",
 	},
-	["Shredder Operating Manual - Page 11"] = {
-		["is"] = "16655:0:0:0:0",
-		["7081734"] = "186:1",
+	["Medicine Staff of the Wolf"] = {
+		["is"] = "4575:0:0:508:0",
+		["7080500"] = "6619:1",
 	},
 	["Ghostwalker Cloak of the Owl"] = {
 		["is"] = "15147:0:0:765:0",
 		["7079023"] = "7800:1",
+		["7082491"] = "11100:1",
 		["7080501"] = "7600:1",
 	},
 	["Blazing Wand"] = {
@@ -228,20 +239,19 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["7081109"] = "4097:1",
 		["is"] = "5212:0:0:0:0",
 	},
-	["Medicine Staff of the Wolf"] = {
-		["is"] = "4575:0:0:508:0",
-		["7080500"] = "6619:1",
+	["Large Venom Sac"] = {
+		["is"] = "1288:0:0:0:0",
+		["7079022"] = "7000:1",
+	},
+	["Heavy Hide"] = {
+		["is"] = "4235:0:0:0:0",
+		["7081938"] = "1280:1",
+		["7079022"] = "1085:2",
 	},
 	["Wild Steelbloom"] = {
 		["is"] = "3355:0:0:0:0",
 		["7079021"] = "2900:3",
 		["7080501"] = "3100:6",
-	},
-	["Grave Moss"] = {
-		["is"] = "3369:0:0:0:0",
-		["7074199"] = "13800:3",
-		["7079021"] = "6000:3",
-		["7080501"] = "5000:3",
 	},
 	["Raider's Chestpiece of Power"] = {
 		["is"] = "9783:0:0:1553:0",
@@ -256,56 +266,56 @@ AUCTIONATOR_PRICING_HISTORY = {
 AUCTIONATOR_SHOPPING_LISTS = {
 	{
 		["items"] = {
-			"Silk Cloth", -- [1]
-			"Swifthistle", -- [2]
-			"Black Lotus", -- [3]
-			"Plaguebloom", -- [4]
-			"Silverleaf", -- [5]
-			"PurpleLotus", -- [6]
-			"Purple Lotus", -- [7]
-			"\"Coarse Stone\"", -- [8]
-			"\"Steel Bar\"", -- [9]
-			"Mageweave CLoth", -- [10]
-			"Wool Cloth", -- [11]
-			"Linen Cloth", -- [12]
-			"Silver Rod", -- [13]
-			"nexus", -- [14]
-			"Elemental", -- [15]
-			"Essence", -- [16]
-			"Essence of", -- [17]
-			"Pearl", -- [18]
-			"Righteous", -- [19]
-			"Arcane", -- [20]
-			"Thorium bar", -- [21]
-			"ore", -- [22]
-			"Steel bar", -- [23]
-			"Tin Bar", -- [24]
-			"Tin ore", -- [25]
-			"Bronze bar", -- [26]
-			"Iron ore", -- [27]
-			"Iron Bar", -- [28]
-			"Copper Ore", -- [29]
-			"Copper bar", -- [30]
-			"{ Iron }", -- [31]
-			"Linen banda", -- [32]
-			"Mithril bar", -- [33]
-			"Mithril ore", -- [34]
-			"Thorium ore", -- [35]
-			"Throium ore", -- [36]
-			"Coal", -- [37]
-			"Steel ore", -- [38]
-			"Gold bar", -- [39]
-			"Gold ore", -- [40]
-			"Kill", -- [41]
-			"Bottomle", -- [42]
-			"Mooncloth", -- [43]
-			"Moocloth", -- [44]
-			"{ Engineering }", -- [45]
-			"Stone", -- [46]
-			"Travele", -- [47]
-			"Drag", -- [48]
-			"ooz", -- [49]
-			"Ingot", -- [50]
+			"Rough Sharpening Stone", -- [1]
+			"Sharpening", -- [2]
+			"Devils", -- [3]
+			"Silk Cloth", -- [4]
+			"Swifthistle", -- [5]
+			"Black Lotus", -- [6]
+			"Plaguebloom", -- [7]
+			"Silverleaf", -- [8]
+			"PurpleLotus", -- [9]
+			"Purple Lotus", -- [10]
+			"\"Coarse Stone\"", -- [11]
+			"\"Steel Bar\"", -- [12]
+			"Mageweave CLoth", -- [13]
+			"Wool Cloth", -- [14]
+			"Linen Cloth", -- [15]
+			"Silver Rod", -- [16]
+			"nexus", -- [17]
+			"Elemental", -- [18]
+			"Essence", -- [19]
+			"Essence of", -- [20]
+			"Pearl", -- [21]
+			"Righteous", -- [22]
+			"Arcane", -- [23]
+			"Thorium bar", -- [24]
+			"ore", -- [25]
+			"Steel bar", -- [26]
+			"Tin Bar", -- [27]
+			"Tin ore", -- [28]
+			"Bronze bar", -- [29]
+			"Iron ore", -- [30]
+			"Iron Bar", -- [31]
+			"Copper Ore", -- [32]
+			"Copper bar", -- [33]
+			"{ Iron }", -- [34]
+			"Linen banda", -- [35]
+			"Mithril bar", -- [36]
+			"Mithril ore", -- [37]
+			"Thorium ore", -- [38]
+			"Throium ore", -- [39]
+			"Coal", -- [40]
+			"Steel ore", -- [41]
+			"Gold bar", -- [42]
+			"Gold ore", -- [43]
+			"Kill", -- [44]
+			"Bottomle", -- [45]
+			"Mooncloth", -- [46]
+			"Moocloth", -- [47]
+			"{ Engineering }", -- [48]
+			"Stone", -- [49]
+			"Travele", -- [50]
 		},
 		["isRecents"] = 1,
 		["name"] = "Recent Searches",
@@ -458,7 +468,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4081"] = 588,
 		},
 		["Pattern: Devilsaur Leggings"] = {
-			["mr"] = 153924,
+			["mr"] = 70000,
+			["cc"] = 9,
+			["id"] = "15772:0:0:0:0",
+			["H4082"] = 70000,
+			["sc"] = 1,
 			["H4081"] = 153924,
 		},
 		["Shadowcat Hide"] = {
@@ -1651,7 +1665,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4081"] = 69997,
 		},
 		["Devilsaur Leather"] = {
-			["mr"] = 79999,
+			["mr"] = 49997,
+			["cc"] = 7,
+			["id"] = "15417:0:0:0:0",
+			["H4082"] = 49997,
+			["sc"] = 0,
 			["H4081"] = 79999,
 		},
 		["Troll's Bane Leggings"] = {
@@ -2431,13 +2449,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Wool Cloth"] = {
 			["H4080"] = 449,
-			["H4081"] = 486,
-			["sc"] = 0,
-			["cc"] = 7,
-			["id"] = "2592:0:0:0:0",
-			["H4076"] = 331,
-			["H4079"] = 432,
 			["mr"] = 486,
+			["sc"] = 0,
+			["id"] = "2592:0:0:0:0",
+			["cc"] = 7,
+			["H4079"] = 432,
+			["H4081"] = 486,
 		},
 		["Recipe: Swiftness Potion"] = {
 			["mr"] = 18798,
@@ -3045,6 +3062,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Severing Axe of the Eagle"] = {
 			["mr"] = 1700,
 			["H4081"] = 1700,
+		},
+		["Pattern: Devilsaur Gauntlets"] = {
+			["mr"] = 74999,
+			["cc"] = 9,
+			["id"] = "15758:0:0:0:0",
+			["H4082"] = 74999,
+			["sc"] = 1,
 		},
 		["Morning Glory Dew"] = {
 			["mr"] = 391,
@@ -6024,6 +6048,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 27955,
 		},
+		["Gauntlets of Ogre Strength"] = {
+			["mr"] = 4500,
+			["H4081"] = 4500,
+		},
 		["Rugged Spaulders"] = {
 			["H4081"] = 1690,
 			["cc"] = 4,
@@ -6039,14 +6067,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 52598,
 			["H4081"] = 52598,
 		},
-		["Liferoot"] = {
-			["H4080"] = 199,
-			["mr"] = 287,
-			["sc"] = 0,
-			["id"] = "3357:0:0:0:0",
-			["L4081"] = 287,
-			["cc"] = 7,
-			["H4081"] = 347,
+		["Soul Dust"] = {
+			["mr"] = 1335,
+			["H4081"] = 1335,
 		},
 		["Soldier's Armor of Strength"] = {
 			["mr"] = 4498,
@@ -6064,13 +6087,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 2012,
 			["H4081"] = 2012,
 		},
-		["Soul Dust"] = {
-			["mr"] = 1335,
-			["H4081"] = 1335,
+		["Pattern: Runecloth Headband"] = {
+			["mr"] = 56000,
+			["H4081"] = 56000,
 		},
-		["Wrangler's Belt of Intellect"] = {
-			["mr"] = 2500,
-			["H4081"] = 2500,
+		["Nightscape Shoulders"] = {
+			["mr"] = 27999,
+			["H4081"] = 27999,
 		},
 		["Nightsky Boots"] = {
 			["mr"] = 8596,
@@ -6080,41 +6103,42 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 580,
 			["H4081"] = 580,
 		},
-		["Nightscape Shoulders"] = {
-			["mr"] = 27999,
-			["H4081"] = 27999,
-		},
 		["Flask of Mojo"] = {
 			["mr"] = 246,
 			["H4081"] = 246,
-		},
-		["Silver Bar"] = {
-			["mr"] = 400,
-			["sc"] = 0,
-			["id"] = "2842:0:0:0:0",
-			["L4081"] = 400,
-			["H4081"] = 880,
-			["cc"] = 7,
 		},
 		["Recipe: Poached Sunscale Salmon"] = {
 			["mr"] = 38986,
 			["H4081"] = 38986,
 		},
-		["Battlesmasher of Stamina"] = {
-			["mr"] = 21805,
-			["H4081"] = 21805,
+		["Silver Bar"] = {
+			["H4081"] = 880,
+			["sc"] = 0,
+			["mr"] = 300,
+			["id"] = "2842:0:0:0:0",
+			["H4082"] = 300,
+			["cc"] = 7,
+			["L4081"] = 400,
 		},
-		["Pattern: Frostweave Tunic"] = {
-			["mr"] = 9299,
-			["H4081"] = 9299,
+		["Selenium Chain of the Owl"] = {
+			["mr"] = 43997,
+			["H4081"] = 43997,
 		},
 		["Elder's Hat of Frozen Wrath"] = {
 			["mr"] = 40000,
 			["H4081"] = 40000,
 		},
+		["Pattern: Frostweave Tunic"] = {
+			["mr"] = 9299,
+			["H4081"] = 9299,
+		},
 		["Formula: Enchant Gloves - Greater Agility"] = {
 			["mr"] = 96598,
 			["H4081"] = 96598,
+		},
+		["Phalanx Leggings of the Gorilla"] = {
+			["mr"] = 10000,
+			["H4081"] = 10000,
 		},
 		["Knight's Gauntlets of the Tiger"] = {
 			["mr"] = 35000,
@@ -6148,25 +6172,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 9842,
 			["H4081"] = 9842,
 		},
-		["Battering Hammer of the Monkey"] = {
-			["mr"] = 32892,
-			["H4081"] = 32892,
-		},
 		["Crawler Meat"] = {
 			["mr"] = 713,
 			["H4081"] = 713,
+		},
+		["Sorcerer Sash of the Whale"] = {
+			["mr"] = 18866,
+			["H4081"] = 18866,
 		},
 		["Recipe: Lean Wolf Steak"] = {
 			["mr"] = 14000,
 			["H4081"] = 14000,
 		},
-		["Scaled Leather Boots of the Whale"] = {
-			["mr"] = 24771,
-			["H4081"] = 24771,
-		},
 		["Conjurer's Vest of the Whale"] = {
 			["mr"] = 44508,
 			["H4081"] = 44508,
+		},
+		["Iron Strut"] = {
+			["mr"] = 590,
+			["H4081"] = 590,
 		},
 		["Recipe: Hot Smoked Bass"] = {
 			["mr"] = 26798,
@@ -6180,25 +6204,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 38375,
 			["H4081"] = 38375,
 		},
-		["Iron Bar"] = {
-			["mr"] = 520,
-			["H4081"] = 520,
+		["Stag Meat"] = {
+			["mr"] = 65,
+			["H4081"] = 65,
 		},
 		["Watcher's Boots of the Owl"] = {
 			["mr"] = 20125,
 			["H4081"] = 20125,
 		},
-		["Stag Meat"] = {
-			["mr"] = 65,
-			["H4081"] = 65,
+		["Aboriginal Loincloth of the Eagle"] = {
+			["mr"] = 16499,
+			["H4081"] = 16499,
+		},
+		["Sorcerer Bracelets of the Whale"] = {
+			["mr"] = 4500,
+			["H4081"] = 4500,
 		},
 		["Mystic's Robe"] = {
 			["mr"] = 6997,
 			["H4081"] = 6997,
-		},
-		["Raw Slitherskin Mackerel"] = {
-			["mr"] = 46,
-			["H4081"] = 46,
 		},
 		["Conjurer's Gloves of the Monkey"] = {
 			["mr"] = 20000,
@@ -6207,10 +6231,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Inscribed Buckler"] = {
 			["mr"] = 2900,
 			["H4081"] = 2900,
-		},
-		["Sorcerer Bracelets of the Whale"] = {
-			["mr"] = 4500,
-			["H4081"] = 4500,
 		},
 		["Light Bow"] = {
 			["mr"] = 6499,
@@ -6228,17 +6248,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 20000,
 			["H4081"] = 20000,
 		},
+		["Elder's Robe of the Owl"] = {
+			["mr"] = 15000,
+			["H4081"] = 15000,
+		},
 		["Gossamer Tunic of Frozen Wrath"] = {
 			["mr"] = 27999,
 			["H4081"] = 27999,
 		},
-		["Infantry Tunic of the Whale"] = {
-			["mr"] = 3315,
-			["H4081"] = 3315,
-		},
-		["Elder's Robe of the Owl"] = {
-			["mr"] = 15000,
-			["H4081"] = 15000,
+		["Solid Blasting Powder"] = {
+			["mr"] = 7500,
+			["H4081"] = 7500,
 		},
 		["Pattern: Icy Cloak"] = {
 			["mr"] = 57899,
@@ -6248,21 +6268,29 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1448,
 			["H4081"] = 1448,
 		},
+		["Coarse Sharpening Stone"] = {
+			["H4081"] = 4459,
+			["cc"] = 7,
+			["id"] = "2863:0:0:0:0",
+			["H4082"] = 4396,
+			["mr"] = 4396,
+			["sc"] = 0,
+		},
 		["Bonesnapper"] = {
 			["mr"] = 99999,
 			["H4081"] = 99999,
 		},
-		["Coarse Sharpening Stone"] = {
-			["mr"] = 4459,
-			["H4081"] = 4459,
+		["Yorgen Bracers"] = {
+			["mr"] = 379991,
+			["H4081"] = 379991,
 		},
 		["Dark Leather Pants"] = {
 			["mr"] = 4899,
 			["H4081"] = 4899,
 		},
-		["Yorgen Bracers"] = {
-			["mr"] = 379991,
-			["H4081"] = 379991,
+		["Double-barreled Shotgun"] = {
+			["mr"] = 149997,
+			["H4081"] = 149997,
 		},
 		["Arcane Boots"] = {
 			["mr"] = 29800,
@@ -6272,17 +6300,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 12360,
 			["H4081"] = 12360,
 		},
-		["Cured Thick Hide"] = {
-			["mr"] = 1949,
-			["H4081"] = 1949,
-		},
 		["Pattern: Rich Purple Silk Shirt"] = {
 			["mr"] = 328499,
 			["H4081"] = 328499,
 		},
-		["Double-barreled Shotgun"] = {
-			["mr"] = 149997,
-			["H4081"] = 149997,
+		["Cured Thick Hide"] = {
+			["mr"] = 1949,
+			["H4081"] = 1949,
+		},
+		["Recipe: Transmute Mithril to Truesilver"] = {
+			["mr"] = 19592,
+			["H4081"] = 19592,
 		},
 		["Brutal War Axe of the Monkey"] = {
 			["mr"] = 25000,
@@ -6292,25 +6320,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3993,
 			["H4081"] = 3993,
 		},
-		["Recipe: Transmute Mithril to Truesilver"] = {
-			["mr"] = 19592,
-			["H4081"] = 19592,
+		["Robust Cloak of Defense"] = {
+			["mr"] = 2604,
+			["H4081"] = 2604,
 		},
 		["Scouting Cloak of the Owl"] = {
 			["mr"] = 3199,
 			["H4081"] = 3199,
 		},
-		["Robust Cloak of Defense"] = {
-			["mr"] = 2604,
-			["H4081"] = 2604,
-		},
-		["Spiked Chain Wristbands of the Bear"] = {
-			["mr"] = 6699,
-			["H4081"] = 6699,
-		},
 		["Stringy Wolf Meat"] = {
 			["mr"] = 1000,
 			["H4081"] = 1000,
+		},
+		["Scroll of Spirit III"] = {
+			["mr"] = 940,
+			["H4081"] = 940,
 		},
 		["Dreamwalker Armor"] = {
 			["mr"] = 756957,
@@ -6324,17 +6348,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 34400,
 			["H4081"] = 34400,
 		},
+		["Raincaller Mitts of the Whale"] = {
+			["mr"] = 4500,
+			["H4081"] = 4500,
+		},
 		["Jaina's Firestarter"] = {
 			["mr"] = 400000,
 			["H4081"] = 400000,
 		},
-		["Shimmering Cloak of Fiery Wrath"] = {
-			["mr"] = 4300,
-			["H4081"] = 4300,
-		},
 		["Glimmering Mail Greaves"] = {
 			["mr"] = 12099,
 			["H4081"] = 12099,
+		},
+		["Bristlebark Belt"] = {
+			["mr"] = 10092,
+			["H4081"] = 10092,
 		},
 		["Battle Slayer of the Bear"] = {
 			["mr"] = 27144,
@@ -6352,9 +6380,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 74631,
 			["H4081"] = 74631,
 		},
-		["Pattern: White Leather Jerkin"] = {
-			["mr"] = 493,
-			["H4081"] = 493,
+		["Fortified Boots of the Bear"] = {
+			["mr"] = 12000,
+			["H4081"] = 12000,
 		},
 		["Pathfinder Hat of the Falcon"] = {
 			["mr"] = 7500000,
@@ -6364,9 +6392,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 4599,
 			["H4081"] = 4599,
 		},
-		["Fortified Boots of the Bear"] = {
-			["mr"] = 12000,
-			["H4081"] = 12000,
+		["Conjurer's Cloak of the Owl"] = {
+			["mr"] = 15337,
+			["H4081"] = 15337,
 		},
 		["Twilight Cultist Mantle"] = {
 			["mr"] = 16795,
@@ -6396,9 +6424,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 474,
 			["H4081"] = 474,
 		},
-		["Knightly Longsword of the Bear"] = {
-			["mr"] = 21899,
-			["H4081"] = 21899,
+		["Gleaming Claymore of the Tiger"] = {
+			["mr"] = 45223,
+			["H4081"] = 45223,
 		},
 		["Cabalist Leggings of the Monkey"] = {
 			["mr"] = 54000,
@@ -6408,10 +6436,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 145000,
 			["H4081"] = 145000,
 		},
-		["Gleaming Claymore of the Tiger"] = {
-			["mr"] = 45223,
-			["H4081"] = 45223,
-		},
 		["Barbaric Bracers"] = {
 			["mr"] = 99899,
 			["H4081"] = 99899,
@@ -6419,6 +6443,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Clamlette Surprise"] = {
 			["mr"] = 1089,
 			["H4081"] = 1089,
+		},
+		["Furen's Boots"] = {
+			["mr"] = 99491,
+			["H4081"] = 99491,
 		},
 		["Keller's Girdle"] = {
 			["mr"] = 350000,
@@ -6432,13 +6460,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 11190,
 			["H4081"] = 11190,
 		},
-		["Furen's Boots"] = {
-			["mr"] = 99491,
-			["H4081"] = 99491,
+		["Ez-Thro Dynamite II"] = {
+			["mr"] = 3398,
+			["H4081"] = 3398,
 		},
-		["Headstriker Sword of Stamina"] = {
-			["mr"] = 54499,
-			["H4081"] = 54499,
+		["Superior Cloak of the Whale"] = {
+			["mr"] = 14064,
+			["H4081"] = 14064,
 		},
 		["Bolt of Linen Cloth"] = {
 			["H4081"] = 313,
@@ -6447,41 +6475,41 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 7,
 			["mr"] = 313,
 		},
-		["Superior Cloak of the Whale"] = {
-			["mr"] = 14064,
-			["H4081"] = 14064,
+		["Plaguebat Fur Gloves"] = {
+			["mr"] = 299985,
+			["H4081"] = 299985,
 		},
 		["Small Seaforium Charge"] = {
 			["mr"] = 1689,
 			["H4081"] = 1689,
 		},
-		["Plaguebat Fur Gloves"] = {
-			["mr"] = 299985,
-			["H4081"] = 299985,
-		},
 		["Ironweb Spider Silk"] = {
 			["mr"] = 3899,
 			["H4081"] = 3899,
-		},
-		["Dark Iron Residue"] = {
-			["mr"] = 1198,
-			["H4081"] = 1198,
 		},
 		["Nightfin Soup"] = {
 			["mr"] = 6031,
 			["H4081"] = 6031,
 		},
+		["Raptor Flesh"] = {
+			["mr"] = 85,
+			["H4081"] = 85,
+		},
 		["Sorcerer Cloak of Intellect"] = {
 			["mr"] = 39900,
 			["H4081"] = 39900,
+		},
+		["Toughened Leather Gloves"] = {
+			["mr"] = 44897,
+			["H4081"] = 44897,
 		},
 		["Plans: Shadow Crescent Axe"] = {
 			["mr"] = 4396,
 			["H4081"] = 4396,
 		},
-		["Toughened Leather Gloves"] = {
-			["mr"] = 44897,
-			["H4081"] = 44897,
+		["Recipe: Ghost Dye"] = {
+			["mr"] = 25598,
+			["H4081"] = 25598,
 		},
 		["Dusky Belt"] = {
 			["mr"] = 22800,
@@ -6503,9 +6531,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3898,
 			["H4081"] = 3898,
 		},
-		["Recipe: Ghost Dye"] = {
-			["mr"] = 25598,
-			["H4081"] = 25598,
+		["Imbued Plate Greaves"] = {
+			["mr"] = 47949,
+			["H4081"] = 47949,
 		},
 		["Purification Potion"] = {
 			["mr"] = 6599,
@@ -6515,13 +6543,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 5300,
 			["H4081"] = 5300,
 		},
-		["Imbued Plate Greaves"] = {
-			["mr"] = 47949,
-			["H4081"] = 47949,
-		},
 		["Obsidian Greaves"] = {
 			["mr"] = 224999,
 			["H4081"] = 224999,
+		},
+		["Ember Wand of Stamina"] = {
+			["mr"] = 23000,
+			["H4081"] = 23000,
 		},
 		["Mail Combat Armguards"] = {
 			["mr"] = 4100,
@@ -6531,17 +6559,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1699,
 			["H4081"] = 1699,
 		},
-		["Ember Wand of Stamina"] = {
-			["mr"] = 23000,
-			["H4081"] = 23000,
-		},
 		["Elixir of Superior Defense"] = {
 			["mr"] = 19791,
 			["H4081"] = 19791,
 		},
-		["Tuxedo Shirt"] = {
-			["mr"] = 81992,
-			["H4081"] = 81992,
+		["Green Hills of Stranglethorn - Page 21"] = {
+			["mr"] = 774,
+			["H4081"] = 774,
+		},
+		["Brutal War Axe of the Wolf"] = {
+			["mr"] = 30000,
+			["H4081"] = 30000,
 		},
 		["Burning War Axe"] = {
 			["mr"] = 390000,
@@ -6555,13 +6583,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 14998,
 			["H4081"] = 14998,
 		},
-		["Brutal War Axe of the Wolf"] = {
-			["mr"] = 30000,
-			["H4081"] = 30000,
-		},
 		["Lupine Leggings of the Whale"] = {
 			["mr"] = 2950,
 			["H4081"] = 2950,
+		},
+		["Larval Acid"] = {
+			["mr"] = 79499,
+			["H4081"] = 79499,
 		},
 		["Pattern: Truefaith Vestments"] = {
 			["mr"] = 98500,
@@ -6571,29 +6599,29 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 10498,
 			["H4081"] = 10498,
 		},
-		["Larval Acid"] = {
-			["mr"] = 79499,
-			["H4081"] = 79499,
-		},
 		["Buccaneer's Cape of Spirit"] = {
 			["mr"] = 10000,
 			["H4081"] = 10000,
 		},
-		["Hurricane"] = {
-			["mr"] = 299997,
-			["H4081"] = 299997,
+		["Brutish Helmet of the Bear"] = {
+			["mr"] = 22246,
+			["H4081"] = 22246,
 		},
 		["Pattern: Rugged Leather Pants"] = {
 			["mr"] = 1838,
 			["H4081"] = 1838,
 		},
-		["Wrangler's Wristbands of the Eagle"] = {
-			["mr"] = 750000,
-			["H4081"] = 750000,
+		["Hurricane"] = {
+			["mr"] = 299997,
+			["H4081"] = 299997,
 		},
 		["Advanced Target Dummy"] = {
 			["mr"] = 19499,
 			["H4081"] = 19499,
+		},
+		["Sorcerer Mantle of Arcane Wrath"] = {
+			["mr"] = 15000,
+			["H4081"] = 15000,
 		},
 		["Resplendent Guardian"] = {
 			["mr"] = 18599,
@@ -6603,21 +6631,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 253080,
 			["H4081"] = 253080,
 		},
-		["Green Lens of Healing"] = {
-			["mr"] = 39999,
-			["H4081"] = 39999,
-		},
 		["Lesser Nether Essence"] = {
 			["mr"] = 7966,
 			["H4081"] = 7966,
+		},
+		["Green Lens of Healing"] = {
+			["mr"] = 39999,
+			["H4081"] = 39999,
 		},
 		["Dervish Tunic of Intellect"] = {
 			["mr"] = 9999,
 			["H4081"] = 9999,
 		},
-		["Sorcerer Mantle of Arcane Wrath"] = {
-			["mr"] = 15000,
-			["H4081"] = 15000,
+		["Valorous Wristguards"] = {
+			["mr"] = 48999,
+			["H4081"] = 48999,
 		},
 		["Grim Reaper"] = {
 			["mr"] = 49999,
@@ -6651,21 +6679,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 14998,
 			["H4081"] = 14998,
 		},
-		["Pagan Bands of the Eagle"] = {
-			["mr"] = 16997,
-			["H4081"] = 16997,
-		},
 		["Spiked Chain Breastplate of the Bear"] = {
 			["mr"] = 8000,
 			["H4081"] = 8000,
+		},
+		["Hillman's Leather Gloves"] = {
+			["mr"] = 12588,
+			["H4081"] = 12588,
 		},
 		["Elder's Padded Armor of the Eagle"] = {
 			["mr"] = 27900,
 			["H4081"] = 27900,
 		},
-		["Aboriginal Footwraps of the Whale"] = {
-			["mr"] = 2899,
-			["H4081"] = 2899,
+		["Recipe: Elixir of Giants"] = {
+			["mr"] = 104495,
+			["H4081"] = 104495,
 		},
 		["Formula: Enchant Boots - Minor Agility"] = {
 			["mr"] = 10095,
@@ -6687,13 +6715,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 229000,
 			["H4081"] = 229000,
 		},
-		["Recipe: Elixir of Giants"] = {
-			["mr"] = 104495,
-			["H4081"] = 104495,
+		["Summoner's Wand"] = {
+			["mr"] = 19997,
+			["H4081"] = 19997,
 		},
-		["Regal Leggings of the Whale"] = {
-			["mr"] = 11799,
-			["H4081"] = 11799,
+		["Captain's Buckler of the Monkey"] = {
+			["mr"] = 49899,
+			["H4081"] = 49899,
 		},
 		["Compact Shotgun"] = {
 			["mr"] = 1441,
@@ -6703,9 +6731,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 39000,
 			["H4081"] = 39000,
 		},
-		["Captain's Buckler of the Monkey"] = {
-			["mr"] = 49899,
-			["H4081"] = 49899,
+		["Regal Leggings of the Whale"] = {
+			["mr"] = 11799,
+			["H4081"] = 11799,
 		},
 		["Schematic: EZ-Thro Dynamite"] = {
 			["mr"] = 1998,
@@ -6715,9 +6743,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3495,
 			["H4081"] = 3495,
 		},
-		["Summoner's Wand"] = {
-			["mr"] = 19997,
-			["H4081"] = 19997,
+		["Revenant Leggings of the Bear"] = {
+			["mr"] = 29800,
+			["H4081"] = 29800,
 		},
 		["Carving Knife of Fiery Wrath"] = {
 			["mr"] = 14788,
@@ -6727,13 +6755,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 180000,
 			["H4081"] = 180000,
 		},
-		["Sentry's Armsplints of the Bear"] = {
-			["mr"] = 7000,
-			["H4081"] = 7000,
-		},
-		["Revenant Leggings of the Bear"] = {
-			["mr"] = 29800,
-			["H4081"] = 29800,
+		["Green Lens of Shadow Wrath"] = {
+			["mr"] = 120099,
+			["H4081"] = 120099,
 		},
 		["Lei of Lilies"] = {
 			["mr"] = 244999,
@@ -6742,6 +6766,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Dreamslayer"] = {
 			["mr"] = 43590,
 			["H4081"] = 43590,
+		},
+		["Engraved Helm of the Bear"] = {
+			["mr"] = 40000,
+			["H4081"] = 40000,
 		},
 		["Grunt's Cape of the Eagle"] = {
 			["mr"] = 18800,
@@ -6754,29 +6782,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "5212:0:0:0:0",
 			["cc"] = 2,
 		},
-		["Engraved Helm of the Bear"] = {
-			["mr"] = 40000,
-			["H4081"] = 40000,
-		},
 		["Peridot Circle of Arcane Resistance"] = {
 			["mr"] = 359899,
 			["H4081"] = 359899,
-		},
-		["Coarse Blasting Powder"] = {
-			["mr"] = 1900,
-			["H4081"] = 1900,
 		},
 		["Brocade Shoulderpads"] = {
 			["mr"] = 498,
 			["H4081"] = 498,
 		},
-		["Tigerstrike Mantle"] = {
-			["mr"] = 657000,
-			["H4081"] = 657000,
+		["Coarse Blasting Powder"] = {
+			["mr"] = 1900,
+			["H4081"] = 1900,
 		},
 		["Hi-Explosive Bomb"] = {
 			["mr"] = 1436,
 			["H4081"] = 1436,
+		},
+		["Tigerstrike Mantle"] = {
+			["mr"] = 657000,
+			["H4081"] = 657000,
 		},
 		["Rough Grinding Stone"] = {
 			["mr"] = 27,
@@ -6789,6 +6813,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Crystal Basilisk Spine"] = {
 			["mr"] = 115,
 			["H4081"] = 115,
+		},
+		["Cadet Leggings of the Eagle"] = {
+			["mr"] = 5000,
+			["H4081"] = 5000,
 		},
 		["Vision Dust"] = {
 			["mr"] = 1301,
@@ -6806,25 +6834,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3897,
 			["H4081"] = 3897,
 		},
-		["Wastewander Water Pouch"] = {
-			["mr"] = 2000,
-			["H4081"] = 2000,
-		},
 		["Elder's Mantle of the Eagle"] = {
 			["mr"] = 28900,
 			["H4081"] = 28900,
+		},
+		["Cured Heavy Hide"] = {
+			["mr"] = 2600,
+			["H4081"] = 2600,
 		},
 		["Delicious Cave Mold"] = {
 			["mr"] = 854,
 			["H4081"] = 854,
 		},
-		["Ranger Bow"] = {
-			["mr"] = 289998,
-			["H4081"] = 289998,
-		},
 		["Green Hills of Stranglethorn - Page 20"] = {
 			["mr"] = 391,
 			["H4081"] = 391,
+		},
+		["Prospector's Cloak"] = {
+			["mr"] = 1000,
+			["H4081"] = 1000,
 		},
 		["Greater Scythe of the Bear"] = {
 			["mr"] = 25000,
@@ -6850,22 +6878,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 10000,
 			["H4081"] = 10000,
 		},
-		["Prospector's Cloak"] = {
-			["mr"] = 1000,
-			["H4081"] = 1000,
-		},
-		["Sunscale Spaulders"] = {
-			["mr"] = 98099,
-			["H4081"] = 98099,
-		},
-		["Pathfinder Hat of the Bear"] = {
-			["mr"] = 499900,
-			["H4081"] = 499900,
-		},
-		["Parrot Cage (Senegal)"] = {
-			["mr"] = 19899,
-			["H4081"] = 19899,
-		},
 		["Medium Leather"] = {
 			["H4080"] = 93,
 			["mr"] = 108,
@@ -6879,6 +6891,22 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 5000,
 			["H4081"] = 5000,
 		},
+		["Pathfinder Hat of the Bear"] = {
+			["mr"] = 499900,
+			["H4081"] = 499900,
+		},
+		["Parrot Cage (Senegal)"] = {
+			["mr"] = 19899,
+			["H4081"] = 19899,
+		},
+		["Moonsteel Broadsword"] = {
+			["mr"] = 96895,
+			["H4081"] = 96895,
+		},
+		["Insignia Chestguard"] = {
+			["mr"] = 14497,
+			["H4081"] = 14497,
+		},
 		["Vanadium Talisman of the Eagle"] = {
 			["mr"] = 114000,
 			["H4081"] = 114000,
@@ -6891,15 +6919,14 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 14990,
 			["H4081"] = 14990,
 		},
-		["Insignia Chestguard"] = {
-			["mr"] = 14497,
-			["H4081"] = 14497,
+		["Tigerbane"] = {
+			["mr"] = 10000,
+			["H4081"] = 10000,
 		},
 		["Earthroot"] = {
 			["mr"] = 23,
 			["cc"] = 7,
 			["id"] = "2449:0:0:0:0",
-			["H4076"] = 32,
 			["sc"] = 0,
 			["H4081"] = 23,
 		},
@@ -6923,9 +6950,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 28000,
 			["H4081"] = 28000,
 		},
-		["Glimmering Flamberge of Stamina"] = {
-			["mr"] = 14500,
-			["H4081"] = 14500,
+		["Chief Brigadier Bracers"] = {
+			["mr"] = 2999,
+			["H4081"] = 2999,
 		},
 		["Greenweave Mantle of the Eagle"] = {
 			["mr"] = 31099,
@@ -6943,33 +6970,33 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 19597,
 			["H4081"] = 19597,
 		},
-		["Chief Brigadier Bracers"] = {
-			["mr"] = 2999,
-			["H4081"] = 2999,
+		["Barbed Club of Power"] = {
+			["mr"] = 4800,
+			["H4081"] = 4800,
 		},
-		["Iron Grenade"] = {
-			["mr"] = 2509,
-			["H4081"] = 2509,
+		["Shiny Fish Scales"] = {
+			["mr"] = 24,
+			["H4081"] = 24,
 		},
 		["Arcanite Bar"] = {
 			["mr"] = 340000,
 			["H4081"] = 340000,
 		},
-		["Gyrochronatom"] = {
-			["mr"] = 3235,
-			["H4081"] = 3235,
+		["Iron Grenade"] = {
+			["mr"] = 2509,
+			["H4081"] = 2509,
 		},
-		["Barbed Club of Power"] = {
-			["mr"] = 4800,
-			["H4081"] = 4800,
+		["Thorium Headed Arrow"] = {
+			["mr"] = 52,
+			["H4081"] = 52,
 		},
 		["Truesilver Bar"] = {
 			["mr"] = 1475,
 			["H4081"] = 1475,
 		},
-		["Thorium Headed Arrow"] = {
-			["mr"] = 52,
-			["H4081"] = 52,
+		["Recipe: Smoked Bear Meat"] = {
+			["mr"] = 4999,
+			["H4081"] = 4999,
 		},
 		["Top Half of Advanced Armorsmithing: Volume II"] = {
 			["mr"] = 2100,
@@ -7007,17 +7034,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3089,
 			["H4081"] = 3089,
 		},
-		["Recipe: Smoked Bear Meat"] = {
-			["mr"] = 4999,
-			["H4081"] = 4999,
+		["Crisp Spider Meat"] = {
+			["mr"] = 54,
+			["H4081"] = 54,
 		},
 		["Tablet of Flame Shock VI"] = {
 			["mr"] = 289999,
 			["H4081"] = 289999,
 		},
-		["Crisp Spider Meat"] = {
-			["mr"] = 54,
-			["H4081"] = 54,
+		["Stout Battlehammer of the Monkey"] = {
+			["mr"] = 49900,
+			["H4081"] = 49900,
 		},
 		["Simple Britches of the Whale"] = {
 			["mr"] = 3300,
@@ -7035,17 +7062,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 39999,
 			["H4081"] = 39999,
 		},
-		["Mechanical Chicken"] = {
-			["mr"] = 52000,
-			["H4081"] = 52000,
-		},
-		["Sturdy Quarterstaff of the Wolf"] = {
-			["mr"] = 4000,
-			["H4081"] = 4000,
-		},
 		["Dark Iron Bar"] = {
 			["mr"] = 118500,
 			["H4081"] = 118500,
+		},
+		["Mechanical Chicken"] = {
+			["mr"] = 52000,
+			["H4081"] = 52000,
 		},
 		["Gut Ripper"] = {
 			["mr"] = 597500,
@@ -7059,23 +7082,26 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3092,
 			["H4081"] = 3092,
 		},
-		["Formula: Runed Arcanite Rod"] = {
-			["mr"] = 15498,
-			["H4081"] = 15498,
-		},
 		["Sequoia Hammer of the Tiger"] = {
 			["mr"] = 9241,
 			["H4081"] = 9241,
 		},
+		["Shimmering Bracers of the Eagle"] = {
+			["mr"] = 19900,
+			["H4081"] = 19900,
+		},
+		["Jasper Link of Fire Resistance"] = {
+			["mr"] = 400000,
+			["H4081"] = 400000,
+		},
 		["Kingsblood"] = {
 			["H4080"] = 259,
-			["H4081"] = 767,
-			["sc"] = 0,
-			["cc"] = 7,
-			["id"] = "3356:0:0:0:0",
-			["H4076"] = 544,
-			["H4079"] = 173,
 			["mr"] = 767,
+			["sc"] = 0,
+			["id"] = "3356:0:0:0:0",
+			["cc"] = 7,
+			["H4079"] = 173,
+			["H4081"] = 767,
 		},
 		["Pattern: Wizardweave Turban"] = {
 			["mr"] = 819986,
@@ -7085,9 +7111,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3199,
 			["H4081"] = 3199,
 		},
-		["Stoneshield Cloak"] = {
-			["mr"] = 1499997,
-			["H4081"] = 1499997,
+		["Basalt Necklace of the Bear"] = {
+			["mr"] = 162328,
+			["H4081"] = 162328,
 		},
 		["Fortified Boots of Stamina"] = {
 			["mr"] = 22245,
@@ -7097,17 +7123,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 4598,
 			["H4081"] = 4598,
 		},
-		["Basalt Necklace of the Bear"] = {
-			["mr"] = 162328,
-			["H4081"] = 162328,
-		},
 		["Pattern: Deviate Scale Cloak"] = {
 			["mr"] = 39308,
 			["H4081"] = 39308,
 		},
-		["Councillor's Tunic of Spirit"] = {
-			["mr"] = 83918,
-			["H4081"] = 83918,
+		["Unadorned Seal of Ascension"] = {
+			["mr"] = 6199,
+			["H4081"] = 6199,
 		},
 		["Recipe: Egg Nog"] = {
 			["mr"] = 44398,
@@ -7117,13 +7139,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 11690,
 			["H4081"] = 11690,
 		},
-		["Devilsaur Leggings"] = {
-			["mr"] = 1389097,
-			["H4081"] = 1389097,
+		["Gigantic War Axe of the Monkey"] = {
+			["mr"] = 79999,
+			["H4081"] = 79999,
 		},
-		["Recipe: Barbecued Buzzard Wing"] = {
-			["mr"] = 294,
-			["H4081"] = 294,
+		["Devilsaur Leggings"] = {
+			["mr"] = 1409999,
+			["cc"] = 4,
+			["id"] = "15062:0:0:0:0",
+			["H4082"] = 1409999,
+			["sc"] = 2,
+			["H4081"] = 1389097,
 		},
 		["Phalanx Breastplate of Stamina"] = {
 			["mr"] = 7898,
@@ -7133,21 +7159,29 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1393,
 			["H4081"] = 1393,
 		},
+		["Shredder Operating Manual - Page 11"] = {
+			["mr"] = 187,
+			["cc"] = 15,
+			["id"] = "16655:0:0:0:0",
+			["L4081"] = 187,
+			["sc"] = 0,
+			["H4081"] = 195,
+		},
 		["Mail Combat Boots"] = {
 			["mr"] = 7996,
 			["H4081"] = 7996,
-		},
-		["Gloom Reaper of the Boar"] = {
-			["mr"] = 9800,
-			["H4081"] = 9800,
 		},
 		["Red Mageweave Vest"] = {
 			["mr"] = 49412,
 			["H4081"] = 49412,
 		},
-		["Elixir of Lesser Agility"] = {
-			["mr"] = 9900,
-			["H4081"] = 9900,
+		["Chromite Greaves"] = {
+			["mr"] = 29998,
+			["H4081"] = 29998,
+		},
+		["Pattern: Dusky Leather Leggings"] = {
+			["mr"] = 3376,
+			["H4081"] = 3376,
 		},
 		["Destiny"] = {
 			["mr"] = 446773,
@@ -7160,9 +7194,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["H4081"] = 1290,
 		},
-		["Chromite Greaves"] = {
-			["mr"] = 29998,
-			["H4081"] = 29998,
+		["Elixir of Lesser Agility"] = {
+			["mr"] = 9900,
+			["H4081"] = 9900,
 		},
 		["Phalanx Boots of the Bear"] = {
 			["mr"] = 12096,
@@ -7172,25 +7206,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3000,
 			["H4081"] = 3000,
 		},
-		["Pattern: Dusky Leather Leggings"] = {
-			["mr"] = 3376,
-			["H4081"] = 3376,
+		["Edged Bastard Sword of the Boar"] = {
+			["mr"] = 1999,
+			["H4081"] = 1999,
 		},
-		["Wildheart Belt"] = {
-			["mr"] = 19600,
-			["H4081"] = 19600,
+		["Cerulean Ring of Intellect"] = {
+			["mr"] = 49999,
+			["H4081"] = 49999,
 		},
 		["Witchfury"] = {
 			["mr"] = 35299,
 			["H4081"] = 35299,
 		},
-		["Edged Bastard Sword of the Boar"] = {
-			["mr"] = 1999,
-			["H4081"] = 1999,
+		["Phalanx Breastplate of the Bear"] = {
+			["mr"] = 7400,
+			["H4081"] = 7400,
 		},
-		["Bright Boots"] = {
-			["mr"] = 2898,
-			["H4081"] = 2898,
+		["The Black Knight"] = {
+			["mr"] = 50000,
+			["H4081"] = 50000,
 		},
 		["Shimmering Trousers of Healing"] = {
 			["mr"] = 85000,
@@ -7200,13 +7234,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1453,
 			["H4081"] = 1453,
 		},
-		["The Black Knight"] = {
-			["mr"] = 50000,
-			["H4081"] = 50000,
-		},
-		["Phalanx Breastplate of the Bear"] = {
-			["mr"] = 7400,
-			["H4081"] = 7400,
+		["Bright Boots"] = {
+			["mr"] = 2898,
+			["H4081"] = 2898,
 		},
 		["Forgotten Wraps"] = {
 			["mr"] = 149999,
@@ -7216,13 +7246,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 10000,
 			["H4081"] = 10000,
 		},
+		["Short Bastard Sword of the Whale"] = {
+			["mr"] = 1595,
+			["H4081"] = 1595,
+		},
 		["Elixir of Giants"] = {
 			["mr"] = 8991,
 			["H4081"] = 8991,
 		},
-		["Short Bastard Sword of the Whale"] = {
-			["mr"] = 1595,
-			["H4081"] = 1595,
+		["Nightscape Pants"] = {
+			["mr"] = 11998,
+			["H4081"] = 11998,
 		},
 		["Starfaller"] = {
 			["mr"] = 163999,
@@ -7232,9 +7266,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 15000,
 			["H4081"] = 15000,
 		},
-		["Watcher's Cape of the Owl"] = {
-			["mr"] = 6499,
-			["H4081"] = 6499,
+		["Plans: Edge of Winter"] = {
+			["mr"] = 38981,
+			["H4081"] = 38981,
 		},
 		["Brawler Gloves"] = {
 			["mr"] = 243298,
@@ -7244,9 +7278,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 42262,
 			["H4081"] = 42262,
 		},
-		["Plans: Edge of Winter"] = {
-			["mr"] = 38981,
-			["H4081"] = 38981,
+		["Recipe: Limited Invulnerability Potion"] = {
+			["mr"] = 178000,
+			["H4081"] = 178000,
 		},
 		["Sliverblade"] = {
 			["mr"] = 166599,
@@ -7264,29 +7298,29 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 307,
 			["H4081"] = 307,
 		},
-		["Recipe: Limited Invulnerability Potion"] = {
-			["mr"] = 178000,
-			["H4081"] = 178000,
+		["Tender Crab Meat"] = {
+			["mr"] = 1053,
+			["H4081"] = 1053,
 		},
 		["Nightshade Girdle of Healing"] = {
 			["mr"] = 148295,
 			["H4081"] = 148295,
 		},
-		["Wolfrunner Shoes"] = {
-			["mr"] = 488994,
-			["H4081"] = 488994,
-		},
 		["Pattern: Crimson Silk Shoulders"] = {
 			["mr"] = 3137,
 			["H4081"] = 3137,
+		},
+		["Blanchard's Stout"] = {
+			["mr"] = 198998,
+			["H4081"] = 198998,
 		},
 		["Gauntlets of Valor"] = {
 			["mr"] = 999999,
 			["H4081"] = 999999,
 		},
-		["Blanchard's Stout"] = {
-			["mr"] = 198998,
-			["H4081"] = 198998,
+		["Turtle Scale"] = {
+			["mr"] = 2798,
+			["H4081"] = 2798,
 		},
 		["Deadly Kris of Agility"] = {
 			["mr"] = 20000,
@@ -7316,9 +7350,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3000000,
 			["H4081"] = 3000000,
 		},
-		["Sorcerer Sash of the Owl"] = {
-			["mr"] = 8896,
-			["H4081"] = 8896,
+		["Schematic: Major Recombobulator"] = {
+			["mr"] = 39196,
+			["H4081"] = 39196,
 		},
 		["Sacrificial Kris of the Tiger"] = {
 			["mr"] = 29935,
@@ -7328,13 +7362,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 87500,
 			["H4081"] = 87500,
 		},
-		["Schematic: Major Recombobulator"] = {
-			["mr"] = 39196,
-			["H4081"] = 39196,
+		["Major Healing Potion"] = {
+			["mr"] = 4999,
+			["H4081"] = 4999,
 		},
-		["Flask of the Titans"] = {
-			["mr"] = 948995,
-			["H4081"] = 948995,
+		["Rigid Cape of the Eagle"] = {
+			["mr"] = 18994,
+			["H4081"] = 18994,
 		},
 		["Dense Triangle Mace"] = {
 			["mr"] = 90000,
@@ -7348,9 +7382,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 2999,
 			["H4081"] = 2999,
 		},
-		["Rigid Cape of the Eagle"] = {
-			["mr"] = 18994,
-			["H4081"] = 18994,
+		["Small Radiant Shard"] = {
+			["mr"] = 23992,
+			["H4081"] = 23992,
 		},
 		["Shining Silver Breastplate"] = {
 			["mr"] = 46000,
@@ -7361,12 +7395,16 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4081"] = 45655,
 		},
 		["Elemental Sharpening Stone"] = {
-			["mr"] = 30000,
 			["H4081"] = 30000,
+			["cc"] = 7,
+			["id"] = "18262:0:0:0:0",
+			["H4082"] = 34998,
+			["mr"] = 34998,
+			["sc"] = 0,
 		},
-		["Small Radiant Shard"] = {
-			["mr"] = 23992,
-			["H4081"] = 23992,
+		["Gossamer Tunic of the Whale"] = {
+			["mr"] = 29998,
+			["H4081"] = 29998,
 		},
 		["Runn Tum Tuber"] = {
 			["mr"] = 228,
@@ -7397,33 +7435,33 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["mr"] = 1285,
 		},
-		["Black Mageweave Leggings"] = {
-			["mr"] = 10000,
-			["H4081"] = 10000,
+		["Edged Bastard Sword of Power"] = {
+			["mr"] = 9950,
+			["H4081"] = 9950,
 		},
 		["Banded Armor of the Bear"] = {
 			["mr"] = 44121,
 			["H4081"] = 44121,
 		},
-		["Edged Bastard Sword of Power"] = {
-			["mr"] = 9950,
-			["H4081"] = 9950,
+		["Green Lens of Fiery Wrath"] = {
+			["mr"] = 39999,
+			["H4081"] = 39999,
 		},
 		["Frost Shock and You"] = {
 			["mr"] = 11600,
 			["H4081"] = 11600,
 		},
-		["Thick Armor Kit"] = {
-			["mr"] = 2692,
-			["H4081"] = 2692,
+		["Bard's Tunic of the Owl"] = {
+			["mr"] = 22838,
+			["H4081"] = 22838,
 		},
 		["Wicked Chain Legguards of the Tiger"] = {
 			["mr"] = 80000,
 			["H4081"] = 80000,
 		},
-		["Green Lens of Fiery Wrath"] = {
-			["mr"] = 39999,
-			["H4081"] = 39999,
+		["Thick Armor Kit"] = {
+			["mr"] = 2692,
+			["H4081"] = 2692,
 		},
 		["Knight's Breastplate of Strength"] = {
 			["mr"] = 21500,
@@ -7433,9 +7471,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 2900,
 			["H4081"] = 2900,
 		},
-		["Wintersbite"] = {
-			["mr"] = 2855,
-			["H4081"] = 2855,
+		["Smoldering Pants"] = {
+			["mr"] = 2525,
+			["H4081"] = 2525,
 		},
 		["Practice Lock"] = {
 			["mr"] = 396,
@@ -7449,6 +7487,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1400,
 			["H4081"] = 1400,
 		},
+		["Wintersbite"] = {
+			["mr"] = 2855,
+			["H4081"] = 2855,
+		},
+		["Emblazoned Buckler"] = {
+			["mr"] = 9000,
+			["H4081"] = 9000,
+		},
+		["Lean Wolf Flank"] = {
+			["mr"] = 136,
+			["H4081"] = 136,
+		},
 		["Resilient Cape"] = {
 			["H4080"] = 9400,
 			["mr"] = 9400,
@@ -7457,46 +7507,33 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4079"] = 9500,
 			["sc"] = 1,
 		},
-		["Emblazoned Buckler"] = {
-			["mr"] = 9000,
-			["H4081"] = 9000,
-		},
 		["Poached Sunscale Salmon"] = {
 			["mr"] = 269,
 			["H4081"] = 269,
 		},
-		["Lean Wolf Flank"] = {
-			["mr"] = 136,
-			["H4081"] = 136,
-		},
-		["Plans: Moonsteel Broadsword"] = {
-			["mr"] = 39400,
-			["H4081"] = 39400,
-		},
-		["Smoldering Pants"] = {
-			["mr"] = 2525,
-			["H4081"] = 2525,
+		["Scouting Buckler of the Monkey"] = {
+			["mr"] = 4800,
+			["H4081"] = 4800,
 		},
 		["Essence of Fire"] = {
 			["mr"] = 53997,
 			["H4081"] = 53997,
-		},
-		["Severing Axe of the Wolf"] = {
-			["mr"] = 4500,
-			["H4081"] = 4500,
-		},
-		["Shimmering Gloves of the Owl"] = {
-			["mr"] = 19267,
-			["H4081"] = 19267,
 		},
 		["Silk Cloth"] = {
 			["H4080"] = 209,
 			["mr"] = 197,
 			["cc"] = 7,
 			["id"] = "4306:0:0:0:0",
-			["H4076"] = 179,
 			["sc"] = 0,
 			["H4081"] = 197,
+		},
+		["Precisely Calibrated Boomstick"] = {
+			["mr"] = 3445099,
+			["H4081"] = 3445099,
+		},
+		["Shimmering Gloves of the Owl"] = {
+			["mr"] = 19267,
+			["H4081"] = 19267,
 		},
 		["War Paint Legguards"] = {
 			["mr"] = 1493,
@@ -7514,10 +7551,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 49900,
 			["H4081"] = 49900,
 		},
-		["Libram of Tenacity"] = {
-			["mr"] = 3100,
-			["H4081"] = 3100,
-		},
 		["Frostmaul E'ko"] = {
 			["mr"] = 46199,
 			["H4081"] = 46199,
@@ -7526,13 +7559,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 9596,
 			["H4081"] = 9596,
 		},
-		["Mechbuilder's Overalls"] = {
-			["mr"] = 587999,
-			["H4081"] = 587999,
+		["Ghost Mushroom"] = {
+			["mr"] = 9973,
+			["H4081"] = 9973,
 		},
 		["Formula: Enchant Bracer - Superior Spirit"] = {
 			["mr"] = 6900,
 			["H4081"] = 6900,
+		},
+		["Adventurer's Boots of Power"] = {
+			["mr"] = 102110,
+			["H4081"] = 102110,
 		},
 		["Slayer's Pants"] = {
 			["mr"] = 14899,
@@ -7554,25 +7591,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 13998,
 			["H4081"] = 13998,
 		},
-		["Pattern: Mooncloth Shoulders"] = {
-			["mr"] = 589999,
-			["H4081"] = 589999,
-		},
-		["Scarlet Gauntlets"] = {
-			["mr"] = 13000,
-			["H4081"] = 13000,
-		},
 		["Frostweave Gloves"] = {
 			["mr"] = 2406915,
 			["H4081"] = 2406915,
+		},
+		["Pattern: Mooncloth Shoulders"] = {
+			["mr"] = 589999,
+			["H4081"] = 589999,
 		},
 		["Durable Belt of the Eagle"] = {
 			["mr"] = 34999,
 			["H4081"] = 34999,
 		},
-		["Soul Pouch"] = {
-			["mr"] = 143937,
-			["H4081"] = 143937,
+		["Pattern: Enchanted Mageweave Pouch"] = {
+			["mr"] = 22799,
+			["H4081"] = 22799,
+		},
+		["Flask of Oil"] = {
+			["mr"] = 55,
+			["H4081"] = 55,
 		},
 		["Shadow Hood"] = {
 			["mr"] = 141313,
@@ -7582,7 +7619,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 20,
 			["cc"] = 7,
 			["id"] = "785:0:0:0:0",
-			["H4076"] = 19,
 			["sc"] = 0,
 			["H4081"] = 20,
 		},
@@ -7590,9 +7626,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 2011,
 			["H4081"] = 2011,
 		},
-		["Pattern: Enchanted Mageweave Pouch"] = {
-			["mr"] = 22799,
-			["H4081"] = 22799,
+		["Aboriginal Rod of the Falcon"] = {
+			["mr"] = 6899,
+			["H4081"] = 6899,
 		},
 		["Templar Bracers of the Bear"] = {
 			["mr"] = 45097,
@@ -7602,25 +7638,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 11999,
 			["H4081"] = 11999,
 		},
-		["Aboriginal Rod of the Falcon"] = {
-			["mr"] = 6899,
-			["H4081"] = 6899,
+		["Fortified Shield of the Tiger"] = {
+			["mr"] = 3400,
+			["H4081"] = 3400,
 		},
 		["Acrobatic Staff of the Whale"] = {
 			["mr"] = 50000,
 			["H4081"] = 50000,
 		},
-		["Fortified Shield of the Tiger"] = {
-			["mr"] = 3400,
-			["H4081"] = 3400,
+		["Ivycloth Pants of the Owl"] = {
+			["mr"] = 25337,
+			["H4081"] = 25337,
 		},
 		["Precision Bow"] = {
 			["mr"] = 7499,
 			["H4081"] = 7499,
 		},
-		["Blue Dragonscale"] = {
-			["mr"] = 570,
-			["H4081"] = 570,
+		["Pattern: Frostweave Gloves"] = {
+			["mr"] = 9865,
+			["H4081"] = 9865,
 		},
 		["Pattern: Runic Leather Gauntlets"] = {
 			["mr"] = 17400,
@@ -7630,25 +7666,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 757469,
 			["H4081"] = 757469,
 		},
-		["Pattern: Frostweave Gloves"] = {
-			["mr"] = 9865,
-			["H4081"] = 9865,
-		},
-		["Duskwoven Pants of Healing"] = {
-			["mr"] = 190000,
-			["H4081"] = 190000,
+		["Raw Rainbow Fin Albacore"] = {
+			["mr"] = 96,
+			["H4081"] = 96,
 		},
 		["Lupine Buckler of the Eagle"] = {
 			["mr"] = 1500,
 			["H4081"] = 1500,
 		},
+		["Green Hills of Stranglethorn - Page 24"] = {
+			["mr"] = 547,
+			["H4081"] = 547,
+		},
 		["Looming Gavel"] = {
 			["mr"] = 82000,
 			["H4081"] = 82000,
 		},
-		["Breath of Wind"] = {
-			["mr"] = 1998,
-			["H4081"] = 1998,
+		["Thistlefur Sandals of the Eagle"] = {
+			["mr"] = 35260,
+			["H4081"] = 35260,
 		},
 		["Raider's Shoulderpads"] = {
 			["mr"] = 2897,
@@ -7662,21 +7698,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 4998,
 			["H4081"] = 4998,
 		},
-		["Thistlefur Sandals of the Eagle"] = {
-			["mr"] = 35260,
-			["H4081"] = 35260,
+		["Royal Gloves of the Owl"] = {
+			["mr"] = 9596,
+			["H4081"] = 9596,
 		},
 		["Spiked Chain Breastplate of the Gorilla"] = {
 			["mr"] = 33900,
 			["H4081"] = 33900,
 		},
-		["Pattern: Living Leggings"] = {
-			["mr"] = 7098,
-			["H4081"] = 7098,
-		},
 		["Recipe: Sagefish Delight"] = {
 			["mr"] = 17857,
 			["H4081"] = 17857,
+		},
+		["Renegade Leggings of Power"] = {
+			["mr"] = 20000,
+			["H4081"] = 20000,
 		},
 		["Resplendent Bracelets of Shadow Wrath"] = {
 			["mr"] = 47500,
@@ -7694,35 +7730,29 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 145494,
 			["H4081"] = 145494,
 		},
-		["Renegade Leggings of Power"] = {
-			["mr"] = 20000,
-			["H4081"] = 20000,
-		},
-		["Linen Cloth"] = {
-			["H4080"] = 39,
-			["mr"] = 18,
-			["cc"] = 7,
-			["sc"] = 0,
-			["id"] = "2589:0:0:0:0",
-			["L4081"] = 18,
-			["L4080"] = 20,
-			["H4081"] = 148,
+		["Battle Chain Tunic"] = {
+			["mr"] = 4100,
+			["H4081"] = 4100,
 		},
 		["War Paint Shield"] = {
 			["mr"] = 2610,
 			["H4081"] = 2610,
 		},
-		["Durable Belt of Fiery Wrath"] = {
-			["mr"] = 9900,
-			["H4081"] = 9900,
-		},
 		["Pattern: Azure Silk Gloves"] = {
 			["mr"] = 11798,
 			["H4081"] = 11798,
 		},
+		["Durable Belt of Fiery Wrath"] = {
+			["mr"] = 9900,
+			["H4081"] = 9900,
+		},
 		["Pattern: Dusky Boots"] = {
 			["mr"] = 250000,
 			["H4081"] = 250000,
+		},
+		["Pattern: Runecloth Gloves"] = {
+			["mr"] = 53000,
+			["H4081"] = 53000,
 		},
 		["Bonecaster's Gloves of the Eagle"] = {
 			["mr"] = 63000,
@@ -7736,21 +7766,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 308998,
 			["H4081"] = 308998,
 		},
-		["Wildvine Potion"] = {
-			["mr"] = 2900,
-			["H4081"] = 2900,
+		["Shredder Operating Manual - Page 12"] = {
+			["mr"] = 1097,
+			["H4081"] = 1097,
+		},
+		["Gloom Reaper of the Tiger"] = {
+			["mr"] = 14600,
+			["H4081"] = 14600,
 		},
 		["Greater Maul of the Tiger"] = {
 			["mr"] = 40000,
 			["H4081"] = 40000,
 		},
-		["Shredder Operating Manual - Page 12"] = {
-			["mr"] = 1097,
-			["H4081"] = 1097,
-		},
-		["Savage Axe of Strength"] = {
-			["mr"] = 23000,
-			["H4081"] = 23000,
+		["Wildvine Potion"] = {
+			["mr"] = 2900,
+			["H4081"] = 2900,
 		},
 		["Conjurer's Gloves of Fiery Wrath"] = {
 			["mr"] = 30000,
@@ -7764,45 +7794,45 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 49300,
 			["H4081"] = 49300,
 		},
-		["Gloom Reaper of the Tiger"] = {
-			["mr"] = 14600,
-			["H4081"] = 14600,
+		["Archer's Jerkin of the Eagle"] = {
+			["mr"] = 12200,
+			["H4081"] = 12200,
 		},
 		["Deviate Scale"] = {
 			["mr"] = 129,
 			["H4081"] = 129,
 		},
-		["Pattern: Living Shoulders"] = {
-			["mr"] = 14999,
-			["H4081"] = 14999,
-		},
-		["Archer's Jerkin of the Eagle"] = {
-			["mr"] = 12200,
-			["H4081"] = 12200,
+		["Recipe: Hot Wolf Ribs"] = {
+			["mr"] = 16600,
+			["H4081"] = 16600,
 		},
 		["Buccaneer's Pants of the Whale"] = {
 			["mr"] = 26380,
 			["H4081"] = 26380,
 		},
+		["Edged Bastard Sword of Strength"] = {
+			["mr"] = 4999,
+			["H4081"] = 4999,
+		},
 		["Dark Iron Ale Mug"] = {
 			["mr"] = 4799,
 			["H4081"] = 4799,
 		},
-		["Edged Bastard Sword of Strength"] = {
-			["mr"] = 4999,
-			["H4081"] = 4999,
+		["Azerothian Diamond"] = {
+			["mr"] = 22200,
+			["H4081"] = 22200,
 		},
 		["Scouting Cloak of the Monkey"] = {
 			["mr"] = 19000,
 			["H4081"] = 19000,
 		},
-		["Dark Espadon of the Tiger"] = {
-			["mr"] = 99999,
-			["H4081"] = 99999,
-		},
 		["Recipe: Scorpid Surprise"] = {
 			["mr"] = 3998,
 			["H4081"] = 3998,
+		},
+		["Swamp Pendant of Eluding"] = {
+			["mr"] = 29999,
+			["H4081"] = 29999,
 		},
 		["Spiked Club of the Boar"] = {
 			["mr"] = 2500,
@@ -7812,29 +7842,29 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 50000,
 			["H4081"] = 50000,
 		},
-		["Elegant Belt of the Owl"] = {
-			["mr"] = 39999,
-			["H4081"] = 39999,
+		["Dreamless Sleep Potion"] = {
+			["mr"] = 1993,
+			["H4081"] = 1993,
 		},
 		["Raincaller Boots of the Whale"] = {
 			["mr"] = 6000,
 			["H4081"] = 6000,
 		},
-		["Dreamless Sleep Potion"] = {
-			["mr"] = 1993,
-			["H4081"] = 1993,
-		},
 		["Formula: Enchant Shield - Lesser Block"] = {
 			["mr"] = 1339997,
 			["H4081"] = 1339997,
+		},
+		["Greenweave Cloak of the Owl"] = {
+			["mr"] = 3090,
+			["H4081"] = 3090,
 		},
 		["Spider's Silk"] = {
 			["mr"] = 4964,
 			["H4081"] = 4964,
 		},
-		["Native Vest of the Owl"] = {
-			["mr"] = 5453,
-			["H4081"] = 5453,
+		["Hibernal Cowl"] = {
+			["mr"] = 24998,
+			["H4081"] = 24998,
 		},
 		["Banded Bracers of the Eagle"] = {
 			["mr"] = 4000,
@@ -7852,25 +7882,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3000,
 			["H4081"] = 3000,
 		},
-		["Hibernal Cowl"] = {
-			["mr"] = 24998,
-			["H4081"] = 24998,
-		},
-		["Sentinel Cloak of the Monkey"] = {
-			["mr"] = 30998,
-			["H4081"] = 30998,
+		["Plans: Blue Glittering Axe"] = {
+			["mr"] = 4800,
+			["H4081"] = 4800,
 		},
 		["Cured Light Hide"] = {
 			["mr"] = 214,
 			["H4081"] = 214,
-		},
-		["Swamp Pendant of the Monkey"] = {
-			["mr"] = 61099,
-			["H4081"] = 61099,
-		},
-		["Plans: Runed Copper Breastplate"] = {
-			["mr"] = 362,
-			["H4081"] = 362,
 		},
 		["Aquamarine Ring of Nature Resistance"] = {
 			["mr"] = 77699,
@@ -7880,31 +7898,42 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 49797,
 			["H4081"] = 49797,
 		},
-		["Phalanx Leggings of the Bear"] = {
-			["mr"] = 39500,
-			["H4081"] = 39500,
+		["Plans: Runed Copper Breastplate"] = {
+			["mr"] = 362,
+			["H4081"] = 362,
+		},
+		["Swamp Pendant of the Monkey"] = {
+			["mr"] = 61099,
+			["H4081"] = 61099,
+		},
+		["Wanderer's Leggings of the Monkey"] = {
+			["mr"] = 122000,
+			["H4081"] = 122000,
 		},
 		["Green Whelp Scale"] = {
 			["mr"] = 4700,
 			["H4081"] = 4700,
 		},
-		["Superior Belt of Intellect"] = {
-			["mr"] = 3684,
-			["H4081"] = 3684,
-		},
 		["Codex: Prayer of Fortitude"] = {
 			["mr"] = 10000,
 			["H4081"] = 10000,
 		},
+		["Plans: Dark Iron Plate"] = {
+			["mr"] = 79800,
+			["H4081"] = 79800,
+		},
+		["Ember Wand of Frozen Wrath"] = {
+			["mr"] = 151515,
+			["H4081"] = 151515,
+		},
 		["Grave Moss"] = {
 			["H4080"] = 4699,
-			["H4081"] = 4900,
-			["sc"] = 0,
-			["cc"] = 7,
-			["id"] = "3369:0:0:0:0",
-			["H4076"] = 13941,
-			["H4079"] = 5395,
 			["mr"] = 4900,
+			["sc"] = 0,
+			["id"] = "3369:0:0:0:0",
+			["cc"] = 7,
+			["H4079"] = 5395,
+			["H4081"] = 4900,
 		},
 		["Jasper Link of Arcane Resistance"] = {
 			["mr"] = 38995,
@@ -7922,9 +7951,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 298,
 			["H4081"] = 298,
 		},
-		["Ember Wand of Frozen Wrath"] = {
-			["mr"] = 151515,
-			["H4081"] = 151515,
+		["Mercenary Blade of the Monkey"] = {
+			["mr"] = 12196,
+			["H4081"] = 12196,
 		},
 		["Lifeless Stone"] = {
 			["mr"] = 528,
@@ -7934,6 +7963,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 51553,
 			["H4081"] = 51553,
 		},
+		["Swim Speed Potion"] = {
+			["mr"] = 15392,
+			["H4081"] = 15392,
+		},
 		["Large Venom Sac"] = {
 			["H4081"] = 28998,
 			["H4079"] = 6999,
@@ -7942,41 +7975,37 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["mr"] = 28998,
 		},
-		["Plans: Iron Shield Spike"] = {
-			["mr"] = 3499,
-			["H4081"] = 3499,
-		},
-		["Swim Speed Potion"] = {
-			["mr"] = 15392,
-			["H4081"] = 15392,
-		},
-		["Pattern: Big Voodoo Cloak"] = {
-			["mr"] = 3099,
-			["H4081"] = 3099,
-		},
-		["Medicine Staff of the Whale"] = {
-			["mr"] = 5000,
-			["H4081"] = 5000,
-		},
-		["Antipodean Rod"] = {
-			["mr"] = 44500,
-			["H4081"] = 44500,
+		["Barbaric Loincloth"] = {
+			["mr"] = 9090,
+			["H4081"] = 9090,
 		},
 		["Arcane Crystal"] = {
 			["mr"] = 182548,
 			["H4081"] = 182548,
 		},
-		["Spaulders of the Unseen"] = {
-			["mr"] = 948999,
-			["H4081"] = 948999,
+		["Pattern: Big Voodoo Cloak"] = {
+			["mr"] = 3099,
+			["H4081"] = 3099,
 		},
-		["Plans: Thorium Bracers"] = {
-			["mr"] = 6398,
-			["H4081"] = 6398,
+		["Antipodean Rod"] = {
+			["mr"] = 44500,
+			["H4081"] = 44500,
 		},
 		["Monster Omelet"] = {
 			["mr"] = 1907,
 			["H4081"] = 1907,
+		},
+		["Spaulders of the Unseen"] = {
+			["mr"] = 948999,
+			["H4081"] = 948999,
+		},
+		["Medicine Staff of the Whale"] = {
+			["mr"] = 5000,
+			["H4081"] = 5000,
+		},
+		["Small Spider Leg"] = {
+			["mr"] = 42,
+			["H4081"] = 42,
 		},
 		["Crude Scope"] = {
 			["mr"] = 596,
@@ -7986,17 +8015,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 968993,
 			["H4081"] = 968993,
 		},
-		["Small Spider Leg"] = {
-			["mr"] = 42,
-			["H4081"] = 42,
+		["Blesswind Hammer of Healing"] = {
+			["mr"] = 79498,
+			["H4081"] = 79498,
 		},
 		["Plans: Hardened Iron Shortsword"] = {
 			["mr"] = 46796,
 			["H4081"] = 46796,
 		},
-		["Blesswind Hammer of Healing"] = {
-			["mr"] = 79498,
-			["H4081"] = 79498,
+		["Hunting Bow"] = {
+			["mr"] = 23998,
+			["H4081"] = 23998,
 		},
 		["Phalanx Leggings of Power"] = {
 			["mr"] = 68999,
@@ -8006,25 +8035,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 55000,
 			["H4081"] = 55000,
 		},
-		["Raider's Belt of the Boar"] = {
-			["mr"] = 2030,
-			["H4081"] = 2030,
+		["Big Bear Meat"] = {
+			["mr"] = 1100,
+			["H4081"] = 1100,
 		},
 		["Pagan Shoes of the Whale"] = {
 			["mr"] = 9689,
 			["H4081"] = 9689,
 		},
-		["Big Bear Meat"] = {
-			["mr"] = 1100,
-			["H4081"] = 1100,
-		},
 		["Small Bronze Bomb"] = {
 			["mr"] = 3951,
 			["H4081"] = 3951,
 		},
-		["Highborne Crown"] = {
-			["mr"] = 40069,
-			["H4081"] = 40069,
+		["Meaty Bat Wing"] = {
+			["mr"] = 233,
+			["H4081"] = 233,
+		},
+		["Ironfeather"] = {
+			["mr"] = 146,
+			["H4081"] = 146,
 		},
 		["Dokebi Bracers"] = {
 			["mr"] = 19993,
@@ -8035,7 +8064,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4081"] = 206,
 		},
 		["Devilsaur Gauntlets"] = {
-			["mr"] = 509900,
+			["mr"] = 699999,
+			["cc"] = 4,
+			["id"] = "15063:0:0:0:0",
+			["H4082"] = 699999,
+			["sc"] = 2,
 			["H4081"] = 509900,
 		},
 		["Formula: Enchant Bracer - Greater Spirit"] = {
@@ -8046,89 +8079,89 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 18590,
 			["H4081"] = 18590,
 		},
-		["Tainted Pierce"] = {
-			["mr"] = 159500,
-			["H4081"] = 159500,
+		["Thorium Grenade"] = {
+			["mr"] = 8396,
+			["H4081"] = 8396,
 		},
 		["Pattern: Green Dragonscale Breastplate"] = {
 			["mr"] = 78500,
 			["H4081"] = 78500,
 		},
-		["Thorium Grenade"] = {
-			["mr"] = 8396,
-			["H4081"] = 8396,
-		},
 		["Medallion of Grand Marshal Morris"] = {
 			["mr"] = 69998,
 			["H4081"] = 69998,
 		},
-		["Training Sword of Stamina"] = {
-			["mr"] = 11498,
-			["H4081"] = 11498,
-		},
-		["Crusader's Leggings of Fire Resistance"] = {
-			["mr"] = 200000,
-			["H4081"] = 200000,
-		},
-		["Fire Protection Potion"] = {
-			["mr"] = 3797,
-			["H4081"] = 3797,
+		["19 Pound Catfish"] = {
+			["mr"] = 2000,
+			["H4081"] = 2000,
 		},
 		["Recipe: Shadow Oil"] = {
 			["mr"] = 14694,
 			["H4081"] = 14694,
 		},
-		["Short Bastard Sword of the Monkey"] = {
-			["mr"] = 1500,
-			["H4081"] = 1500,
+		["Fire Protection Potion"] = {
+			["mr"] = 3797,
+			["H4081"] = 3797,
+		},
+		["Crusader's Leggings of Fire Resistance"] = {
+			["mr"] = 200000,
+			["H4081"] = 200000,
 		},
 		["Vanguard Gauntlets"] = {
 			["mr"] = 18177,
 			["H4081"] = 18177,
 		},
+		["Short Bastard Sword of the Monkey"] = {
+			["mr"] = 1500,
+			["H4081"] = 1500,
+		},
+		["Bonecaster's Sarong of the Falcon"] = {
+			["mr"] = 109090,
+			["H4081"] = 109090,
+		},
 		["Formula: Enchant 2H Weapon - Major Intellect"] = {
 			["mr"] = 99995,
 			["H4081"] = 99995,
-		},
-		["Deadly Blunderbuss"] = {
-			["mr"] = 6900,
-			["H4081"] = 6900,
-		},
-		["Cavalier Two-hander of the Whale"] = {
-			["mr"] = 6985,
-			["H4081"] = 6985,
 		},
 		["Dwarven Hatchet of Strength"] = {
 			["mr"] = 5799,
 			["H4081"] = 5799,
 		},
-		["Topaz Ring of Shadow Resistance"] = {
-			["mr"] = 199996,
-			["H4081"] = 199996,
-		},
-		["Long Redwood Bow"] = {
-			["mr"] = 9299,
-			["H4081"] = 9299,
-		},
-		["Elixir of Frost Power"] = {
-			["mr"] = 10800,
-			["H4081"] = 10800,
-		},
-		["Soldier's Leggings of the Bear"] = {
-			["mr"] = 2800,
-			["H4081"] = 2800,
+		["Deadly Blunderbuss"] = {
+			["mr"] = 6900,
+			["H4081"] = 6900,
 		},
 		["Barbed Thorn Necklace"] = {
 			["mr"] = 1190000,
 			["H4081"] = 1190000,
 		},
+		["Cavalier Two-hander of the Whale"] = {
+			["mr"] = 6985,
+			["H4081"] = 6985,
+		},
+		["Long Redwood Bow"] = {
+			["mr"] = 9299,
+			["H4081"] = 9299,
+		},
+		["Soldier's Leggings of the Bear"] = {
+			["mr"] = 2800,
+			["H4081"] = 2800,
+		},
+		["Elixir of Frost Power"] = {
+			["mr"] = 10800,
+			["H4081"] = 10800,
+		},
 		["Spiked Chain Leggings of Power"] = {
 			["mr"] = 30000,
 			["H4081"] = 30000,
 		},
-		["Glowstar Rod of Healing"] = {
-			["mr"] = 149498,
-			["H4081"] = 149498,
+		["Lunar Mantle of the Wolf"] = {
+			["mr"] = 59900,
+			["H4081"] = 59900,
+		},
+		["Scroll of Spirit"] = {
+			["mr"] = 764,
+			["H4081"] = 764,
 		},
 		["River Pride Choker"] = {
 			["mr"] = 496999,
@@ -8154,17 +8187,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 8898,
 			["H4081"] = 8898,
 		},
-		["Sleeveless T-Shirt"] = {
-			["mr"] = 8094,
-			["H4081"] = 8094,
-		},
 		["Pattern: Chimeric Vest"] = {
 			["mr"] = 29997,
 			["H4081"] = 29997,
 		},
-		["Strange Dust"] = {
-			["mr"] = 263,
-			["H4081"] = 263,
+		["Bindings of Elements"] = {
+			["mr"] = 44797,
+			["H4081"] = 44797,
 		},
 		["Pattern: Dark Leather Gloves"] = {
 			["mr"] = 3198,
@@ -8174,25 +8203,29 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 623076,
 			["H4081"] = 623076,
 		},
-		["Schematic: Small Seaforium Charge"] = {
-			["mr"] = 1997,
-			["H4081"] = 1997,
+		["Pattern: Felcloth Boots"] = {
+			["mr"] = 9999,
+			["H4081"] = 9999,
 		},
 		["Pagan Cape of the Eagle"] = {
 			["mr"] = 15990,
 			["H4081"] = 15990,
 		},
-		["Big Iron Bomb"] = {
-			["mr"] = 10592,
-			["H4081"] = 10592,
-		},
 		["Magician Staff of the Boar"] = {
 			["mr"] = 60708,
 			["H4081"] = 60708,
 		},
+		["Big Iron Bomb"] = {
+			["mr"] = 10592,
+			["H4081"] = 10592,
+		},
 		["Watcher's Boots of the Eagle"] = {
 			["mr"] = 31000,
 			["H4081"] = 31000,
+		},
+		["Revenant Helmet of the Bear"] = {
+			["mr"] = 27050,
+			["H4081"] = 27050,
 		},
 		["Belt of Valor"] = {
 			["mr"] = 39799,
@@ -8206,41 +8239,41 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 19000,
 			["H4081"] = 19000,
 		},
-		["Revenant Helmet of the Bear"] = {
-			["mr"] = 27050,
-			["H4081"] = 27050,
-		},
-		["Dire Wand"] = {
-			["mr"] = 8795,
-			["H4081"] = 8795,
+		["Opulent Crown of the Owl"] = {
+			["mr"] = 47399,
+			["H4081"] = 47399,
 		},
 		["Mercurial Cloak of Defense"] = {
 			["mr"] = 101905,
 			["H4081"] = 101905,
 		},
-		["Marble Circle of Stamina"] = {
-			["mr"] = 29498,
-			["H4081"] = 29498,
+		["Dire Wand"] = {
+			["mr"] = 8795,
+			["H4081"] = 8795,
 		},
-		["Opulent Crown of the Owl"] = {
-			["mr"] = 47399,
-			["H4081"] = 47399,
-		},
-		["Whipwood Recurve Bow"] = {
-			["mr"] = 6062,
-			["H4081"] = 6062,
+		["Green Silk Pack"] = {
+			["mr"] = 190663,
+			["H4081"] = 190663,
 		},
 		["Pattern: Wicked Leather Belt"] = {
 			["mr"] = 37773,
 			["H4081"] = 37773,
 		},
-		["Recipe: Great Rage Potion"] = {
-			["mr"] = 75498,
-			["H4081"] = 75498,
+		["Whipwood Recurve Bow"] = {
+			["mr"] = 6062,
+			["H4081"] = 6062,
+		},
+		["Dark Rune"] = {
+			["mr"] = 67897,
+			["H4081"] = 67897,
 		},
 		["Mana Potion"] = {
 			["mr"] = 995,
 			["H4081"] = 995,
+		},
+		["Aurora Sash"] = {
+			["mr"] = 6400,
+			["H4081"] = 6400,
 		},
 		["Mark of Kern"] = {
 			["mr"] = 427997,
@@ -8250,21 +8283,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 14399,
 			["H4081"] = 14399,
 		},
-		["Durable Boots of Arcane Wrath"] = {
-			["mr"] = 5000,
-			["H4081"] = 5000,
-		},
 		["Enchanted Water"] = {
 			["mr"] = 1475,
 			["H4081"] = 1475,
+		},
+		["Runecloth Belt"] = {
+			["mr"] = 81308,
+			["H4081"] = 81308,
 		},
 		["Elixir of Lion's Strength"] = {
 			["mr"] = 1998,
 			["H4081"] = 1998,
 		},
-		["Bloodspiller"] = {
-			["mr"] = 170000,
-			["H4081"] = 170000,
+		["Recipe: Elixir of the Mongoose"] = {
+			["mr"] = 21399,
+			["H4081"] = 21399,
 		},
 		["Greenweave Bracers of Arcane Wrath"] = {
 			["mr"] = 49999,
@@ -8274,13 +8307,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 112000,
 			["H4081"] = 112000,
 		},
+		["Schematic: Thorium Grenade"] = {
+			["mr"] = 36521,
+			["H4081"] = 36521,
+		},
 		["Trickster's Handwraps of the Gorilla"] = {
 			["mr"] = 45188,
 			["H4081"] = 45188,
-		},
-		["Recipe: Elixir of the Mongoose"] = {
-			["mr"] = 21399,
-			["H4081"] = 21399,
 		},
 		["Petrolspill Leggings"] = {
 			["mr"] = 1139279,
@@ -8306,13 +8339,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 246,
 			["H4081"] = 246,
 		},
-		["Staunch Hammer of Strength"] = {
-			["mr"] = 1985,
-			["H4081"] = 1985,
-		},
 		["Handstitched Linen Britches"] = {
 			["mr"] = 1594,
 			["H4081"] = 1594,
+		},
+		["Sage's Pants of the Whale"] = {
+			["mr"] = 3534,
+			["H4081"] = 3534,
 		},
 		["Recipe: Brilliant Smallfish"] = {
 			["mr"] = 12993,
@@ -8322,9 +8355,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 958,
 			["H4081"] = 958,
 		},
-		["Sage's Pants of the Whale"] = {
-			["mr"] = 3534,
-			["H4081"] = 3534,
+		["Plans: Golden Scale Cuirass"] = {
+			["mr"] = 13199,
+			["H4081"] = 13199,
 		},
 		["Staunch Hammer of Stamina"] = {
 			["mr"] = 3700,
@@ -8342,13 +8375,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 38940,
 			["H4081"] = 38940,
 		},
-		["Twisted Sabre"] = {
-			["mr"] = 99999,
-			["H4081"] = 99999,
-		},
 		["Elder's Bracers of Fiery Wrath"] = {
 			["mr"] = 13300,
 			["H4081"] = 13300,
+		},
+		["Small Green Pouch"] = {
+			["mr"] = 796,
+			["H4081"] = 796,
 		},
 		["Massive Battle Axe of Power"] = {
 			["mr"] = 33000,
@@ -8362,21 +8395,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 79499,
 			["H4081"] = 79499,
 		},
-		["Pattern: Frostweave Pants"] = {
-			["mr"] = 11094,
-			["H4081"] = 11094,
-		},
 		["Saber Leggings"] = {
 			["mr"] = 3595,
 			["H4081"] = 3595,
+		},
+		["Large Brown Sack"] = {
+			["mr"] = 9700,
+			["H4081"] = 9700,
 		},
 		["Serpentine Loop of Nature Resistance"] = {
 			["mr"] = 690418,
 			["H4081"] = 690418,
 		},
-		["Large Brown Sack"] = {
-			["mr"] = 9700,
-			["H4081"] = 9700,
+		["Hacking Cleaver of the Boar"] = {
+			["mr"] = 12100,
+			["H4081"] = 12100,
 		},
 		["War Torn Shield of Strength"] = {
 			["mr"] = 3600,
@@ -8406,13 +8439,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 750000,
 			["H4081"] = 750000,
 		},
-		["Sentinel Bracers of the Eagle"] = {
-			["mr"] = 3000,
-			["H4081"] = 3000,
+		["Outrunner's Cuffs of the Monkey"] = {
+			["mr"] = 2498,
+			["H4081"] = 2498,
 		},
-		["Band of the Hierophant"] = {
-			["mr"] = 479999,
-			["H4081"] = 479999,
+		["Lambent Scale Pauldrons"] = {
+			["mr"] = 15000,
+			["H4081"] = 15000,
 		},
 		["Heart of Fire"] = {
 			["mr"] = 21894,
@@ -8430,25 +8463,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3299,
 			["H4081"] = 3299,
 		},
-		["Lambent Scale Pauldrons"] = {
-			["mr"] = 15000,
-			["H4081"] = 15000,
+		["Band of the Hierophant"] = {
+			["mr"] = 479999,
+			["H4081"] = 479999,
 		},
 		["Aquamarine"] = {
 			["mr"] = 2289,
 			["H4081"] = 2289,
 		},
-		["Outrunner's Cuffs of the Monkey"] = {
-			["mr"] = 2498,
-			["H4081"] = 2498,
+		["Hide of the Wild"] = {
+			["mr"] = 4859997,
+			["H4081"] = 4859997,
 		},
 		["Webwing Cloak"] = {
 			["mr"] = 9798,
 			["H4081"] = 9798,
 		},
-		["Hide of the Wild"] = {
-			["mr"] = 4859997,
-			["H4081"] = 4859997,
+		["Deadly Kris of Power"] = {
+			["mr"] = 14999,
+			["H4081"] = 14999,
 		},
 		["Nightscape Headband"] = {
 			["mr"] = 14000,
@@ -8458,17 +8491,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 382,
 			["H4081"] = 382,
 		},
-		["Barbaric Battle Axe of the Tiger"] = {
-			["mr"] = 4000,
-			["H4081"] = 4000,
+		["Imposing Pants of Agility"] = {
+			["mr"] = 30000,
+			["H4081"] = 30000,
 		},
 		["Lightforge Gauntlets"] = {
 			["mr"] = 78997,
 			["H4081"] = 78997,
-		},
-		["Imposing Pants of Agility"] = {
-			["mr"] = 30000,
-			["H4081"] = 30000,
 		},
 		["Ivycloth Boots of the Eagle"] = {
 			["mr"] = 21299,
@@ -8478,13 +8507,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 18599,
 			["H4081"] = 18599,
 		},
+		["The Arcanist's Cookbook"] = {
+			["mr"] = 44800,
+			["H4081"] = 44800,
+		},
 		["Formula: Enchant Bracer - Lesser Deflection"] = {
 			["mr"] = 11958,
 			["H4081"] = 11958,
-		},
-		["Merciless Gauntlets of Defense"] = {
-			["mr"] = 70000,
-			["H4081"] = 70000,
 		},
 		["Recipe: Lesser Stoneshield Potion"] = {
 			["mr"] = 4314,
@@ -8518,13 +8547,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 22000,
 			["H4081"] = 22000,
 		},
+		["Stonescale Oil"] = {
+			["mr"] = 42500,
+			["H4081"] = 42500,
+		},
 		["Vital Sash of the Owl"] = {
 			["mr"] = 38999,
 			["H4081"] = 38999,
 		},
-		["Stonescale Oil"] = {
-			["mr"] = 42500,
-			["H4081"] = 42500,
+		["Training Sword of the Tiger"] = {
+			["mr"] = 2444,
+			["H4081"] = 2444,
 		},
 		["Polished Zweihander of Stamina"] = {
 			["mr"] = 13000,
@@ -8534,45 +8567,45 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 858,
 			["H4081"] = 858,
 		},
-		["Training Sword of the Tiger"] = {
-			["mr"] = 2444,
-			["H4081"] = 2444,
-		},
-		["Small Glimmering Shard"] = {
-			["mr"] = 180,
-			["H4081"] = 180,
-		},
-		["Raw Longjaw Mud Snapper"] = {
-			["mr"] = 1135,
-			["H4081"] = 1135,
-		},
-		["Manual: Mageweave Bandage"] = {
-			["mr"] = 13898,
-			["H4081"] = 13898,
+		["Raw Greater Sagefish"] = {
+			["mr"] = 4583,
+			["H4081"] = 4583,
 		},
 		["Merc Sword of the Eagle"] = {
 			["mr"] = 5097,
 			["H4081"] = 5097,
 		},
+		["Manual: Mageweave Bandage"] = {
+			["mr"] = 13898,
+			["H4081"] = 13898,
+		},
+		["Raw Longjaw Mud Snapper"] = {
+			["mr"] = 1135,
+			["H4081"] = 1135,
+		},
+		["Oil of Immolation"] = {
+			["mr"] = 5582,
+			["H4081"] = 5582,
+		},
 		["Hands of Darkness"] = {
 			["mr"] = 122316,
 			["H4081"] = 122316,
-		},
-		["Inlaid Mithril Cylinder"] = {
-			["mr"] = 24899,
-			["H4081"] = 24899,
-		},
-		["Recipe: Transmute Life to Earth"] = {
-			["mr"] = 477995,
-			["H4081"] = 477995,
 		},
 		["Thallium Choker of Concentration"] = {
 			["mr"] = 64272,
 			["H4081"] = 64272,
 		},
+		["Pattern: Green Dragonscale Leggings"] = {
+			["mr"] = 9700,
+			["H4081"] = 9700,
+		},
 		["Recipe: Curiously Tasty Omelet"] = {
 			["mr"] = 9799,
 			["H4081"] = 9799,
+		},
+		["Spiked Chain Leggings of Strength"] = {
+			["mr"] = 10000,
+			["H4081"] = 10000,
 		},
 		["Hunter's Muzzle Loader"] = {
 			["mr"] = 1499,
@@ -8606,25 +8639,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 499895,
 			["H4081"] = 499895,
 		},
-		["Spiked Chain Leggings of Strength"] = {
-			["mr"] = 10000,
-			["H4081"] = 10000,
+		["Scroll of Agility IV"] = {
+			["mr"] = 14500,
+			["H4081"] = 14500,
 		},
 		["Glimmering Flamberge of Strength"] = {
 			["mr"] = 10341,
 			["H4081"] = 10341,
 		},
-		["Knight's Gauntlets of the Bear"] = {
-			["mr"] = 5799,
-			["H4081"] = 5799,
+		["Nostro's Compendium of Dragon Slaying"] = {
+			["mr"] = 443500,
+			["H4081"] = 443500,
 		},
 		["Conjurer's Gloves of the Whale"] = {
 			["mr"] = 11500,
 			["H4081"] = 11500,
 		},
-		["Scroll of Agility IV"] = {
-			["mr"] = 14500,
-			["H4081"] = 14500,
+		["Knight's Gauntlets of the Bear"] = {
+			["mr"] = 5799,
+			["H4081"] = 5799,
 		},
 		["Pattern: Brightcloth Gloves"] = {
 			["mr"] = 5899,
@@ -8634,9 +8667,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 22198,
 			["H4081"] = 22198,
 		},
-		["Book: Gift of the Wild II"] = {
-			["mr"] = 19994,
-			["H4081"] = 19994,
+		["Formula: Enchant Gloves - Advanced Mining"] = {
+			["mr"] = 1475,
+			["H4081"] = 1475,
 		},
 		["Pattern: Volcanic Breastplate"] = {
 			["mr"] = 80000,
@@ -8650,21 +8683,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 4,
 			["H4081"] = 2243,
 		},
-		["Plans: Green Iron Shoulders"] = {
-			["mr"] = 3100,
-			["H4081"] = 3100,
+		["Book: Gift of the Wild II"] = {
+			["mr"] = 19994,
+			["H4081"] = 19994,
 		},
-		["Formula: Enchant Gloves - Advanced Mining"] = {
-			["mr"] = 1475,
-			["H4081"] = 1475,
+		["Heavy Blasting Powder"] = {
+			["mr"] = 4399,
+			["H4081"] = 4399,
 		},
 		["Notched Shortsword of Stamina"] = {
 			["mr"] = 4100,
 			["H4081"] = 4100,
-		},
-		["Selenium Chain of the Eagle"] = {
-			["mr"] = 83898,
-			["H4081"] = 83898,
 		},
 		["Glimmering Flamberge of the Tiger"] = {
 			["mr"] = 45000,
@@ -8674,17 +8703,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 477696,
 			["H4081"] = 477696,
 		},
+		["Formula: Enchant Bracer - Deflection"] = {
+			["mr"] = 29098,
+			["H4081"] = 29098,
+		},
 		["Hacking Cleaver of the Monkey"] = {
 			["mr"] = 19932,
 			["H4081"] = 19932,
 		},
+		["The Emerald Dream"] = {
+			["mr"] = 3596,
+			["H4081"] = 3596,
+		},
 		["Heavy Woolen Pants"] = {
 			["mr"] = 9666,
 			["H4081"] = 9666,
-		},
-		["Formula: Enchant Bracer - Deflection"] = {
-			["mr"] = 29098,
-			["H4081"] = 29098,
 		},
 		["Pattern: Shifting Cloak"] = {
 			["mr"] = 189999,
@@ -8706,21 +8739,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 5799,
 			["H4081"] = 5799,
 		},
-		["Short Bastard Sword of the Bear"] = {
-			["mr"] = 2999,
-			["H4081"] = 2999,
+		["Royal Headband of Healing"] = {
+			["mr"] = 209999,
+			["H4081"] = 209999,
 		},
 		["Abjurer's Cloak of Stamina"] = {
 			["mr"] = 29900,
 			["H4081"] = 29900,
 		},
-		["Royal Headband of Healing"] = {
-			["mr"] = 209999,
-			["H4081"] = 209999,
+		["Short Bastard Sword of the Bear"] = {
+			["mr"] = 2999,
+			["H4081"] = 2999,
 		},
-		["Raider's Bracers of the Eagle"] = {
-			["mr"] = 2994,
-			["H4081"] = 2994,
+		["Medicine Staff of the Monkey"] = {
+			["mr"] = 20000,
+			["H4081"] = 20000,
 		},
 		["Rigid Cape of Agility"] = {
 			["mr"] = 2000,
@@ -8738,25 +8771,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 842,
 			["H4081"] = 842,
 		},
-		["Medicine Staff of the Monkey"] = {
-			["mr"] = 20000,
-			["H4081"] = 20000,
+		["Axe of Rin'ji"] = {
+			["mr"] = 199898,
+			["H4081"] = 199898,
 		},
 		["Mugthol's Helm"] = {
 			["mr"] = 56499,
 			["H4081"] = 56499,
 		},
-		["Greenweave Mantle of the Wolf"] = {
-			["mr"] = 26600,
-			["H4081"] = 26600,
-		},
 		["Felcloth Robe"] = {
 			["mr"] = 449999,
 			["H4081"] = 449999,
 		},
-		["Copper Tube"] = {
-			["mr"] = 439,
-			["H4081"] = 439,
+		["Sturdy Quarterstaff of the Boar"] = {
+			["mr"] = 11500,
+			["H4081"] = 11500,
 		},
 		["Knightly Longsword of the Monkey"] = {
 			["mr"] = 19999,
@@ -8766,13 +8795,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 89900,
 			["H4081"] = 89900,
 		},
-		["Ruined Tome"] = {
-			["mr"] = 75218,
-			["H4081"] = 75218,
+		["Bonecaster's Gloves of Healing"] = {
+			["mr"] = 39999,
+			["H4081"] = 39999,
 		},
 		["Fused Wiring"] = {
 			["mr"] = 37999,
 			["H4081"] = 37999,
+		},
+		["Imposing Gloves of the Monkey"] = {
+			["mr"] = 52000,
+			["H4081"] = 52000,
 		},
 		["Enchanted Leather"] = {
 			["mr"] = 45198,
@@ -8786,25 +8819,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 6999,
 			["H4081"] = 6999,
 		},
-		["Imposing Gloves of the Monkey"] = {
-			["mr"] = 52000,
-			["H4081"] = 52000,
-		},
 		["Pattern: Earthen Leather Shoulders"] = {
 			["mr"] = 1996,
 			["H4081"] = 1996,
 		},
-		["Conjurer's Bracers of Fiery Wrath"] = {
-			["mr"] = 19900,
-			["H4081"] = 19900,
+		["Ice Deflector"] = {
+			["mr"] = 41909,
+			["H4081"] = 41909,
+		},
+		["Mithril Gyro-Shot"] = {
+			["mr"] = 36,
+			["H4081"] = 36,
 		},
 		["Pattern: Volcanic Shoulders"] = {
 			["mr"] = 119999,
 			["H4081"] = 119999,
-		},
-		["Ice Deflector"] = {
-			["mr"] = 41909,
-			["H4081"] = 41909,
 		},
 		["Schematic: Arcanite Dragonling"] = {
 			["mr"] = 798994,
@@ -8818,45 +8847,49 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 783,
 			["H4081"] = 783,
 		},
+		["Conjurer's Bracers of Fiery Wrath"] = {
+			["mr"] = 19900,
+			["H4081"] = 19900,
+		},
 		["Carving Knife of Arcane Wrath"] = {
 			["mr"] = 11362,
 			["H4081"] = 11362,
-		},
-		["Mithril Gyro-Shot"] = {
-			["mr"] = 36,
-			["H4081"] = 36,
 		},
 		["Polished Zweihander of the Whale"] = {
 			["mr"] = 7700,
 			["H4081"] = 7700,
 		},
+		["Ruined Tome"] = {
+			["mr"] = 75218,
+			["H4081"] = 75218,
+		},
 		["The Queen's Jewel"] = {
 			["mr"] = 89499,
 			["H4081"] = 89499,
-		},
-		["Bonecaster's Gloves of Healing"] = {
-			["mr"] = 39999,
-			["H4081"] = 39999,
 		},
 		["Killmaim"] = {
 			["mr"] = 249999,
 			["H4081"] = 249999,
 		},
+		["Copper Tube"] = {
+			["mr"] = 439,
+			["H4081"] = 439,
+		},
 		["Plans: Thorium Shield Spike"] = {
 			["mr"] = 225000,
 			["H4081"] = 225000,
 		},
-		["Sturdy Quarterstaff of the Boar"] = {
-			["mr"] = 11500,
-			["H4081"] = 11500,
+		["Greenweave Mantle of the Wolf"] = {
+			["mr"] = 26600,
+			["H4081"] = 26600,
 		},
 		["Battlesmasher of the Tiger"] = {
 			["mr"] = 6000,
 			["H4081"] = 6000,
 		},
-		["Axe of Rin'ji"] = {
-			["mr"] = 199898,
-			["H4081"] = 199898,
+		["Raider's Bracers of the Eagle"] = {
+			["mr"] = 2994,
+			["H4081"] = 2994,
 		},
 		["Scouting Trousers of Agility"] = {
 			["mr"] = 29999,
@@ -8894,39 +8927,38 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 70321,
 			["H4081"] = 70321,
 		},
-		["The Emerald Dream"] = {
-			["mr"] = 3596,
-			["H4081"] = 3596,
-		},
 		["Pattern: Guardian Leather Bracers"] = {
 			["mr"] = 1699,
 			["H4081"] = 1699,
 		},
+		["Selenium Chain of the Eagle"] = {
+			["mr"] = 83898,
+			["H4081"] = 83898,
+		},
 		["Bruiseweed"] = {
 			["H4080"] = 82,
-			["H4081"] = 201,
-			["sc"] = 0,
-			["cc"] = 7,
-			["id"] = "2453:0:0:0:0",
-			["H4076"] = 78,
-			["H4079"] = 299,
 			["mr"] = 201,
+			["sc"] = 0,
+			["id"] = "2453:0:0:0:0",
+			["cc"] = 7,
+			["H4079"] = 299,
+			["H4081"] = 201,
 		},
 		["Thick Leather"] = {
 			["mr"] = 486,
 			["H4081"] = 486,
 		},
-		["Heavy Blasting Powder"] = {
-			["mr"] = 4399,
-			["H4081"] = 4399,
+		["Plans: Green Iron Shoulders"] = {
+			["mr"] = 3100,
+			["H4081"] = 3100,
 		},
 		["Mulgore Spice Bread"] = {
 			["mr"] = 1471,
 			["H4081"] = 1471,
 		},
-		["Nostro's Compendium of Dragon Slaying"] = {
-			["mr"] = 443500,
-			["H4081"] = 443500,
+		["Incendosaur Scale"] = {
+			["mr"] = 3398,
+			["H4081"] = 3398,
 		},
 		["Sentinel Trousers of the Whale"] = {
 			["mr"] = 12000,
@@ -8936,17 +8968,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 5600,
 			["H4081"] = 5600,
 		},
-		["Incendosaur Scale"] = {
-			["mr"] = 3398,
-			["H4081"] = 3398,
+		["Recipe: Transmute Life to Earth"] = {
+			["mr"] = 477995,
+			["H4081"] = 477995,
 		},
 		["Mystic's Slippers"] = {
 			["mr"] = 2396,
 			["H4081"] = 2396,
 		},
-		["Pattern: Green Dragonscale Leggings"] = {
-			["mr"] = 9700,
-			["H4081"] = 9700,
+		["Inlaid Mithril Cylinder"] = {
+			["mr"] = 24899,
+			["H4081"] = 24899,
 		},
 		["Huntsman's Belt of the Monkey"] = {
 			["mr"] = 38000,
@@ -8956,13 +8988,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 7600,
 			["H4081"] = 7600,
 		},
-		["Oil of Immolation"] = {
-			["mr"] = 5582,
-			["H4081"] = 5582,
-		},
 		["Pagan Cape of Spirit"] = {
 			["mr"] = 2099,
 			["H4081"] = 2099,
+		},
+		["Small Glimmering Shard"] = {
+			["mr"] = 180,
+			["H4081"] = 180,
 		},
 		["Copper Bar"] = {
 			["mr"] = 299,
@@ -8971,9 +9003,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4081"] = 299,
 			["cc"] = 7,
 		},
-		["Raw Greater Sagefish"] = {
-			["mr"] = 4583,
-			["H4081"] = 4583,
+		["Tracker's Headband of the Monkey"] = {
+			["mr"] = 48999,
+			["H4081"] = 48999,
 		},
 		["Battleforge Gauntlets of the Bear"] = {
 			["mr"] = 9899,
@@ -8982,10 +9014,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Dark Iron Ore"] = {
 			["mr"] = 7900,
 			["H4081"] = 7900,
-		},
-		["Tracker's Headband of the Monkey"] = {
-			["mr"] = 48999,
-			["H4081"] = 48999,
 		},
 		["Phalanx Girdle of the Gorilla"] = {
 			["mr"] = 16999,
@@ -9015,6 +9043,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 349999,
 			["H4081"] = 349999,
 		},
+		["Merciless Gauntlets of Defense"] = {
+			["mr"] = 70000,
+			["H4081"] = 70000,
+		},
 		["Mystical Gloves of the Owl"] = {
 			["mr"] = 30642,
 			["H4081"] = 30642,
@@ -9023,10 +9055,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 4678,
 			["H4081"] = 4678,
 		},
-		["The Arcanist's Cookbook"] = {
-			["mr"] = 44800,
-			["H4081"] = 44800,
-		},
 		["Nightsky Armor"] = {
 			["mr"] = 9700,
 			["H4081"] = 9700,
@@ -9034,6 +9062,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Brigade Boots of the Whale"] = {
 			["mr"] = 24000,
 			["H4081"] = 24000,
+		},
+		["Barbaric Battle Axe of the Tiger"] = {
+			["mr"] = 4000,
+			["H4081"] = 4000,
 		},
 		["Chesterfall Musket"] = {
 			["mr"] = 119999,
@@ -9051,17 +9083,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 18499,
 			["H4081"] = 18499,
 		},
-		["Deadly Kris of Power"] = {
-			["mr"] = 14999,
-			["H4081"] = 14999,
+		["Recipe: Greater Frost Protection Potion"] = {
+			["mr"] = 174499,
+			["H4081"] = 174499,
 		},
 		["Knight's Boots of the Bear"] = {
 			["mr"] = 6000,
 			["H4081"] = 6000,
 		},
-		["Recipe: Greater Frost Protection Potion"] = {
-			["mr"] = 174499,
-			["H4081"] = 174499,
+		["Sentinel Bracers of the Eagle"] = {
+			["mr"] = 3000,
+			["H4081"] = 3000,
 		},
 		["Pattern: Red Mageweave Headband"] = {
 			["mr"] = 9400,
@@ -9071,17 +9103,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 17985,
 			["H4081"] = 17985,
 		},
-		["Hacking Cleaver of the Boar"] = {
-			["mr"] = 12100,
-			["H4081"] = 12100,
+		["Heavy Runecloth Bandage"] = {
+			["mr"] = 1718,
+			["H4081"] = 1718,
 		},
 		["Citrine"] = {
 			["mr"] = 795,
 			["H4081"] = 795,
 		},
-		["Heavy Runecloth Bandage"] = {
-			["mr"] = 1718,
-			["H4081"] = 1718,
+		["Pattern: Frostweave Pants"] = {
+			["mr"] = 11094,
+			["H4081"] = 11094,
 		},
 		["Imposing Shoulders of Intellect"] = {
 			["mr"] = 30000,
@@ -9091,9 +9123,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 33000,
 			["H4081"] = 33000,
 		},
-		["Small Green Pouch"] = {
-			["mr"] = 796,
-			["H4081"] = 796,
+		["Twisted Sabre"] = {
+			["mr"] = 99999,
+			["H4081"] = 99999,
 		},
 		["Bandit Cloak of the Monkey"] = {
 			["mr"] = 18597,
@@ -9103,21 +9135,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 174496,
 			["H4081"] = 174496,
 		},
-		["Plans: Golden Scale Cuirass"] = {
-			["mr"] = 13199,
-			["H4081"] = 13199,
-		},
 		["Elixir of Demonslaying"] = {
 			["mr"] = 5195,
 			["H4081"] = 5195,
+		},
+		["Formula: Enchant Boots - Spirit"] = {
+			["mr"] = 8697,
+			["H4081"] = 8697,
 		},
 		["Phalanx Girdle of the Bear"] = {
 			["mr"] = 5999,
 			["H4081"] = 5999,
 		},
-		["Formula: Enchant Boots - Spirit"] = {
-			["mr"] = 8697,
-			["H4081"] = 8697,
+		["Staunch Hammer of Strength"] = {
+			["mr"] = 1985,
+			["H4081"] = 1985,
 		},
 		["Barbaric Battle Axe of the Monkey"] = {
 			["mr"] = 19500,
@@ -9127,9 +9159,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 189898,
 			["H4081"] = 189898,
 		},
-		["Schematic: Thorium Grenade"] = {
-			["mr"] = 36521,
-			["H4081"] = 36521,
+		["Bloodspiller"] = {
+			["mr"] = 170000,
+			["H4081"] = 170000,
 		},
 		["Ivycloth Sash of the Whale"] = {
 			["mr"] = 4796,
@@ -9139,9 +9171,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 558,
 			["H4081"] = 558,
 		},
-		["Runecloth Belt"] = {
-			["mr"] = 81308,
-			["H4081"] = 81308,
+		["Durable Boots of Arcane Wrath"] = {
+			["mr"] = 5000,
+			["H4081"] = 5000,
 		},
 		["Recipe: Rage Potion"] = {
 			["mr"] = 4599,
@@ -9151,72 +9183,73 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 29000,
 			["H4081"] = 29000,
 		},
-		["Aurora Sash"] = {
-			["mr"] = 6400,
-			["H4081"] = 6400,
+		["Recipe: Great Rage Potion"] = {
+			["mr"] = 75498,
+			["H4081"] = 75498,
 		},
 		["Wildkin E'ko"] = {
 			["mr"] = 5296,
 			["H4081"] = 5296,
 		},
-		["Dark Rune"] = {
-			["mr"] = 67897,
-			["H4081"] = 67897,
-		},
 		["Grizzly Buckler of Fiery Wrath"] = {
 			["mr"] = 2495,
 			["H4081"] = 2495,
+		},
+		["Marble Circle of Stamina"] = {
+			["mr"] = 29498,
+			["H4081"] = 29498,
 		},
 		["Pattern: Wicked Leather Pants"] = {
 			["mr"] = 14801,
 			["H4081"] = 14801,
 		},
-		["Green Silk Pack"] = {
-			["mr"] = 190663,
-			["H4081"] = 190663,
+		["Pattern: Brightcloth Robe"] = {
+			["mr"] = 8999,
+			["H4081"] = 8999,
 		},
 		["Tin Bar"] = {
-			["mr"] = 490,
-			["sc"] = 0,
-			["id"] = "3576:0:0:0:0",
 			["H4081"] = 490,
 			["cc"] = 7,
+			["id"] = "3576:0:0:0:0",
+			["H4082"] = 156,
+			["mr"] = 156,
+			["sc"] = 0,
 		},
 		["Conjurer's Cinch of Fiery Wrath"] = {
 			["mr"] = 250000,
 			["H4081"] = 250000,
 		},
-		["Pattern: Brightcloth Robe"] = {
-			["mr"] = 8999,
-			["H4081"] = 8999,
+		["Glyphed Cloak"] = {
+			["mr"] = 9553,
+			["H4081"] = 9553,
 		},
 		["Plans: Thorium Armor"] = {
 			["mr"] = 6490,
 			["H4081"] = 6490,
 		},
-		["Glyphed Cloak"] = {
-			["mr"] = 9553,
-			["H4081"] = 9553,
+		["Schematic: Small Seaforium Charge"] = {
+			["mr"] = 1997,
+			["H4081"] = 1997,
 		},
 		["Prismatic Basilisk Scale"] = {
 			["mr"] = 12298,
 			["H4081"] = 12298,
 		},
-		["Pattern: Felcloth Boots"] = {
-			["mr"] = 9999,
-			["H4081"] = 9999,
-		},
 		["Frost Oil"] = {
 			["mr"] = 14742,
 			["H4081"] = 14742,
+		},
+		["Strange Dust"] = {
+			["mr"] = 263,
+			["H4081"] = 263,
 		},
 		["Pattern: Phoenix Gloves"] = {
 			["mr"] = 7908,
 			["H4081"] = 7908,
 		},
-		["Bindings of Elements"] = {
-			["mr"] = 44797,
-			["H4081"] = 44797,
+		["Sleeveless T-Shirt"] = {
+			["mr"] = 8094,
+			["H4081"] = 8094,
 		},
 		["Ivory Band of the Boar"] = {
 			["mr"] = 20000,
@@ -9230,17 +9263,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 88799,
 			["H4081"] = 88799,
 		},
-		["Scroll of Spirit"] = {
-			["mr"] = 764,
-			["H4081"] = 764,
+		["Glowstar Rod of Healing"] = {
+			["mr"] = 149498,
+			["H4081"] = 149498,
 		},
 		["Hook Dagger of Strength"] = {
 			["mr"] = 12500,
 			["H4081"] = 12500,
-		},
-		["Lunar Mantle of the Wolf"] = {
-			["mr"] = 59900,
-			["H4081"] = 59900,
 		},
 		["Diviner Long Staff of Healing"] = {
 			["mr"] = 119999,
@@ -9249,6 +9278,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Opulent Scepter of the Falcon"] = {
 			["mr"] = 167374,
 			["H4081"] = 167374,
+		},
+		["Topaz Ring of Shadow Resistance"] = {
+			["mr"] = 199996,
+			["H4081"] = 199996,
 		},
 		["Long Tail Feather"] = {
 			["mr"] = 354,
@@ -9266,10 +9299,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 12200,
 			["H4081"] = 12200,
 		},
-		["Bonecaster's Sarong of the Falcon"] = {
-			["mr"] = 109090,
-			["H4081"] = 109090,
-		},
 		["Wildheart Bracers"] = {
 			["mr"] = 20000,
 			["H4081"] = 20000,
@@ -9278,37 +9307,41 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 75000,
 			["H4081"] = 75000,
 		},
+		["Training Sword of Stamina"] = {
+			["mr"] = 11498,
+			["H4081"] = 11498,
+		},
 		["Formal White Shirt"] = {
 			["mr"] = 5298,
 			["H4081"] = 5298,
-		},
-		["19 Pound Catfish"] = {
-			["mr"] = 2000,
-			["H4081"] = 2000,
 		},
 		["Gossamer Tunic of Shadow Wrath"] = {
 			["mr"] = 99998,
 			["H4081"] = 99998,
 		},
+		["Tainted Pierce"] = {
+			["mr"] = 159500,
+			["H4081"] = 159500,
+		},
 		["Elder's Robe of Shadow Wrath"] = {
 			["mr"] = 39900,
 			["H4081"] = 39900,
 		},
-		["Ironfeather"] = {
-			["mr"] = 146,
-			["H4081"] = 146,
+		["Highborne Crown"] = {
+			["mr"] = 40069,
+			["H4081"] = 40069,
 		},
 		["Hyperion Vambraces of Strength"] = {
 			["mr"] = 133386,
 			["H4081"] = 133386,
 		},
-		["Meaty Bat Wing"] = {
-			["mr"] = 233,
-			["H4081"] = 233,
-		},
 		["Recipe: Bristle Whisker Catfish"] = {
 			["mr"] = 20271,
 			["H4081"] = 20271,
+		},
+		["Raider's Belt of the Boar"] = {
+			["mr"] = 2030,
+			["H4081"] = 2030,
 		},
 		["Elder's Pants of the Owl"] = {
 			["mr"] = 500000,
@@ -9322,17 +9355,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1000,
 			["H4081"] = 1000,
 		},
-		["Hunting Bow"] = {
-			["mr"] = 23998,
-			["H4081"] = 23998,
+		["High Councillor's Bracers of the Owl"] = {
+			["mr"] = 80000,
+			["H4081"] = 80000,
 		},
 		["Sniper Scope"] = {
 			["mr"] = 52497,
 			["H4081"] = 52497,
 		},
-		["High Councillor's Bracers of the Owl"] = {
-			["mr"] = 80000,
-			["H4081"] = 80000,
+		["Plans: Thorium Bracers"] = {
+			["mr"] = 6398,
+			["H4081"] = 6398,
 		},
 		["Elder's Padded Armor of the Owl"] = {
 			["mr"] = 9510,
@@ -9358,57 +9391,57 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 11748,
 			["H4081"] = 11748,
 		},
-		["Barbaric Loincloth"] = {
-			["mr"] = 9090,
-			["H4081"] = 9090,
+		["Plans: Iron Shield Spike"] = {
+			["mr"] = 3499,
+			["H4081"] = 3499,
 		},
 		["Fire Oil"] = {
 			["mr"] = 949,
 			["H4081"] = 949,
 		},
+		["Superior Belt of Intellect"] = {
+			["mr"] = 3684,
+			["H4081"] = 3684,
+		},
 		["Ritual Bands of the Eagle"] = {
 			["mr"] = 21000,
 			["H4081"] = 21000,
-		},
-		["Plans: Dark Iron Plate"] = {
-			["mr"] = 79800,
-			["H4081"] = 79800,
 		},
 		["Lupine Leggings of Spirit"] = {
 			["mr"] = 2950,
 			["H4081"] = 2950,
 		},
-		["Mercenary Blade of the Monkey"] = {
-			["mr"] = 12196,
-			["H4081"] = 12196,
+		["Phalanx Leggings of the Bear"] = {
+			["mr"] = 39500,
+			["H4081"] = 39500,
 		},
 		["Bloodspattered Sash of the Bear"] = {
 			["mr"] = 5000,
 			["H4081"] = 5000,
 		},
-		["Wanderer's Leggings of the Monkey"] = {
-			["mr"] = 122000,
-			["H4081"] = 122000,
+		["Sentinel Bracers of the Owl"] = {
+			["mr"] = 20000,
+			["H4081"] = 20000,
 		},
 		["Torn Bear Pelt"] = {
 			["mr"] = 1197,
 			["H4081"] = 1197,
 		},
-		["Sentinel Bracers of the Owl"] = {
-			["mr"] = 20000,
-			["H4081"] = 20000,
-		},
 		["Pattern: Runecloth Bag"] = {
 			["mr"] = 125499,
 			["H4081"] = 125499,
+		},
+		["Sentinel Cloak of the Monkey"] = {
+			["mr"] = 30998,
+			["H4081"] = 30998,
 		},
 		["Master's Cloak of Arcane Wrath"] = {
 			["mr"] = 203833,
 			["H4081"] = 203833,
 		},
-		["Plans: Blue Glittering Axe"] = {
-			["mr"] = 4800,
-			["H4081"] = 4800,
+		["Native Vest of the Owl"] = {
+			["mr"] = 5453,
+			["H4081"] = 5453,
 		},
 		["Pattern: Wicked Leather Bracers"] = {
 			["mr"] = 15598,
@@ -9418,13 +9451,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 65603,
 			["H4081"] = 65603,
 		},
-		["Greenweave Cloak of the Owl"] = {
-			["mr"] = 3090,
-			["H4081"] = 3090,
-		},
 		["Knight's Pauldrons of the Bear"] = {
 			["mr"] = 12400,
 			["H4081"] = 12400,
+		},
+		["Elegant Belt of the Owl"] = {
+			["mr"] = 39999,
+			["H4081"] = 39999,
 		},
 		["Recipe: Rockscale Cod"] = {
 			["mr"] = 8999,
@@ -9434,17 +9467,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 6100,
 			["H4081"] = 6100,
 		},
-		["Swamp Pendant of Eluding"] = {
-			["mr"] = 29999,
-			["H4081"] = 29999,
+		["Dark Espadon of the Tiger"] = {
+			["mr"] = 99999,
+			["H4081"] = 99999,
 		},
 		["Formula: Minor Mana Oil"] = {
 			["mr"] = 24727,
 			["H4081"] = 24727,
-		},
-		["Azerothian Diamond"] = {
-			["mr"] = 22200,
-			["H4081"] = 22200,
 		},
 		["Mageweave Cloth"] = {
 			["H4081"] = 733,
@@ -9452,6 +9481,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "4338:0:0:0:0",
 			["cc"] = 7,
 			["mr"] = 733,
+		},
+		["Pattern: Living Shoulders"] = {
+			["mr"] = 14999,
+			["H4081"] = 14999,
 		},
 		["Skullance Shield"] = {
 			["mr"] = 18800,
@@ -9461,9 +9494,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 8782,
 			["H4081"] = 8782,
 		},
-		["Recipe: Hot Wolf Ribs"] = {
-			["mr"] = 16600,
-			["H4081"] = 16600,
+		["Savage Axe of Strength"] = {
+			["mr"] = 23000,
+			["H4081"] = 23000,
 		},
 		["Raincaller Mitts of Fiery Wrath"] = {
 			["mr"] = 9900,
@@ -9489,10 +9522,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 380000,
 			["H4081"] = 380000,
 		},
-		["Pattern: Runecloth Gloves"] = {
-			["mr"] = 53000,
-			["H4081"] = 53000,
-		},
 		["Sentinel Girdle of the Monkey"] = {
 			["mr"] = 22200,
 			["H4081"] = 22200,
@@ -9501,29 +9530,39 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3800,
 			["H4081"] = 3800,
 		},
+		["Linen Cloth"] = {
+			["H4080"] = 39,
+			["mr"] = 18,
+			["cc"] = 7,
+			["sc"] = 0,
+			["id"] = "2589:0:0:0:0",
+			["L4081"] = 18,
+			["L4080"] = 20,
+			["H4081"] = 148,
+		},
 		["Pagan Bands of Shadow Wrath"] = {
 			["mr"] = 12868,
 			["H4081"] = 12868,
-		},
-		["Battle Chain Tunic"] = {
-			["mr"] = 4100,
-			["H4081"] = 4100,
-		},
-		["Greenstone Circle of the Bear"] = {
-			["mr"] = 77628,
-			["H4081"] = 77628,
 		},
 		["Merc Sword of the Tiger"] = {
 			["mr"] = 3000,
 			["H4081"] = 3000,
 		},
+		["Greenstone Circle of the Bear"] = {
+			["mr"] = 77628,
+			["H4081"] = 77628,
+		},
+		["Pattern: Living Leggings"] = {
+			["mr"] = 7098,
+			["H4081"] = 7098,
+		},
 		["Wizardweave Turban"] = {
 			["mr"] = 533672,
 			["H4081"] = 533672,
 		},
-		["Royal Gloves of the Owl"] = {
-			["mr"] = 9596,
-			["H4081"] = 9596,
+		["Breath of Wind"] = {
+			["mr"] = 1998,
+			["H4081"] = 1998,
 		},
 		["Mithril Spurs"] = {
 			["mr"] = 8798,
@@ -9533,17 +9572,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 18300,
 			["H4081"] = 18300,
 		},
-		["Green Hills of Stranglethorn - Page 24"] = {
-			["mr"] = 547,
-			["H4081"] = 547,
+		["Duskwoven Pants of Healing"] = {
+			["mr"] = 190000,
+			["H4081"] = 190000,
 		},
 		["Cabalist Helm of the Tiger"] = {
 			["mr"] = 34490,
 			["H4081"] = 34490,
 		},
-		["Raw Rainbow Fin Albacore"] = {
-			["mr"] = 96,
-			["H4081"] = 96,
+		["Blue Dragonscale"] = {
+			["mr"] = 570,
+			["H4081"] = 570,
 		},
 		["Bandit Cloak of the Eagle"] = {
 			["mr"] = 18000,
@@ -9553,13 +9592,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3000,
 			["H4081"] = 3000,
 		},
-		["Ivycloth Pants of the Owl"] = {
-			["mr"] = 25337,
-			["H4081"] = 25337,
-		},
 		["Chieftain's Boots of the Monkey"] = {
 			["mr"] = 77000,
 			["H4081"] = 77000,
+		},
+		["Soul Pouch"] = {
+			["mr"] = 143937,
+			["H4081"] = 143937,
 		},
 		["Alabaster Plate Girdle"] = {
 			["mr"] = 20000,
@@ -9573,13 +9612,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 2689,
 			["H4081"] = 2689,
 		},
-		["Flask of Oil"] = {
-			["mr"] = 55,
-			["H4081"] = 55,
-		},
 		["Chromite Gauntlets"] = {
 			["mr"] = 14500,
 			["H4081"] = 14500,
+		},
+		["Scarlet Gauntlets"] = {
+			["mr"] = 13000,
+			["H4081"] = 13000,
 		},
 		["Lesser Eternal Essence"] = {
 			["mr"] = 27800,
@@ -9597,21 +9636,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1419,
 			["H4081"] = 1419,
 		},
-		["Adventurer's Boots of Power"] = {
-			["mr"] = 102110,
-			["H4081"] = 102110,
+		["Mechbuilder's Overalls"] = {
+			["mr"] = 587999,
+			["H4081"] = 587999,
 		},
 		["Red Fireworks Rocket"] = {
 			["mr"] = 192,
 			["H4081"] = 192,
 		},
-		["Ghost Mushroom"] = {
-			["mr"] = 9973,
-			["H4081"] = 9973,
-		},
 		["Pattern: Red Woolen Boots"] = {
 			["mr"] = 188,
 			["H4081"] = 188,
+		},
+		["Libram of Tenacity"] = {
+			["mr"] = 3100,
+			["H4081"] = 3100,
 		},
 		["Tundra Ring of Agility"] = {
 			["mr"] = 89999,
@@ -9621,9 +9660,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 20228,
 			["H4081"] = 20228,
 		},
-		["Precisely Calibrated Boomstick"] = {
-			["mr"] = 3445099,
-			["H4081"] = 3445099,
+		["Severing Axe of the Wolf"] = {
+			["mr"] = 4500,
+			["H4081"] = 4500,
 		},
 		["Giant Clam Meat"] = {
 			["mr"] = 305,
@@ -9637,9 +9676,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 39384,
 			["H4081"] = 39384,
 		},
-		["Scouting Buckler of the Monkey"] = {
-			["mr"] = 4800,
-			["H4081"] = 4800,
+		["Plans: Moonsteel Broadsword"] = {
+			["mr"] = 39400,
+			["H4081"] = 39400,
 		},
 		["Vital Sash of the Eagle"] = {
 			["mr"] = 38999,
@@ -9665,9 +9704,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1666,
 			["H4081"] = 1666,
 		},
-		["Bard's Tunic of the Owl"] = {
-			["mr"] = 22838,
-			["H4081"] = 22838,
+		["Black Mageweave Leggings"] = {
+			["mr"] = 10000,
+			["H4081"] = 10000,
 		},
 		["Edgemaster's Handguards"] = {
 			["mr"] = 25009995,
@@ -9681,17 +9720,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 250000,
 			["H4081"] = 250000,
 		},
-		["Gossamer Tunic of the Whale"] = {
-			["mr"] = 29998,
-			["H4081"] = 29998,
+		["Flask of the Titans"] = {
+			["mr"] = 948995,
+			["H4081"] = 948995,
 		},
 		["Black Mageweave Boots"] = {
 			["mr"] = 43899,
 			["H4081"] = 43899,
 		},
-		["Major Healing Potion"] = {
-			["mr"] = 4999,
-			["H4081"] = 4999,
+		["Sorcerer Sash of the Owl"] = {
+			["mr"] = 8896,
+			["H4081"] = 8896,
 		},
 		["Beaststalker's Belt"] = {
 			["mr"] = 251882,
@@ -9713,21 +9752,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 824,
 			["sc"] = 0,
 		},
-		["Turtle Scale"] = {
-			["mr"] = 2798,
-			["H4081"] = 2798,
-		},
 		["Ebon Scimitar of the Monkey"] = {
 			["mr"] = 106999,
 			["H4081"] = 106999,
+		},
+		["Pattern: Fine Leather Pants"] = {
+			["mr"] = 8088,
+			["H4081"] = 8088,
 		},
 		["Massive Battle Axe of the Whale"] = {
 			["mr"] = 11100,
 			["H4081"] = 11100,
 		},
-		["Pattern: Fine Leather Pants"] = {
-			["mr"] = 8088,
-			["H4081"] = 8088,
+		["Wolfrunner Shoes"] = {
+			["mr"] = 488994,
+			["H4081"] = 488994,
 		},
 		["Buccaneer's Boots of the Eagle"] = {
 			["mr"] = 19000,
@@ -9737,13 +9776,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 31799,
 			["H4081"] = 31799,
 		},
-		["Tender Crab Meat"] = {
-			["mr"] = 1053,
-			["H4081"] = 1053,
-		},
-		["Nightscape Pants"] = {
-			["mr"] = 11998,
-			["H4081"] = 11998,
+		["Rough Sharpening Stone"] = {
+			["mr"] = 100,
+			["cc"] = 7,
+			["id"] = "2862:0:0:0:0",
+			["H4082"] = 100,
+			["sc"] = 0,
 		},
 		["Merc Sword of the Boar"] = {
 			["mr"] = 5000,
@@ -9761,6 +9799,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 20000,
 			["H4081"] = 20000,
 		},
+		["Wildheart Belt"] = {
+			["mr"] = 19600,
+			["H4081"] = 19600,
+		},
 		["Red Linen Robe"] = {
 			["mr"] = 1898,
 			["H4081"] = 1898,
@@ -9769,61 +9811,57 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 48000,
 			["H4081"] = 48000,
 		},
-		["Cerulean Ring of Intellect"] = {
-			["mr"] = 49999,
-			["H4081"] = 49999,
+		["Recipe: Flask of Supreme Power"] = {
+			["mr"] = 959000,
+			["H4081"] = 959000,
 		},
 		["Funeral Pyre Vestment"] = {
 			["mr"] = 97856,
 			["H4081"] = 97856,
 		},
-		["Recipe: Flask of Supreme Power"] = {
-			["mr"] = 959000,
-			["H4081"] = 959000,
-		},
 		["Blood of the Mountain"] = {
 			["mr"] = 589598,
 			["H4081"] = 589598,
+		},
+		["Gloom Reaper of the Boar"] = {
+			["mr"] = 9800,
+			["H4081"] = 9800,
 		},
 		["Ridge Cleaver of the Boar"] = {
 			["mr"] = 32780,
 			["H4081"] = 32780,
 		},
-		["Shredder Operating Manual - Page 11"] = {
-			["mr"] = 187,
-			["cc"] = 15,
-			["id"] = "16655:0:0:0:0",
-			["L4081"] = 187,
-			["sc"] = 0,
-			["H4081"] = 195,
-		},
 		["Thistlefur Mantle of Frozen Wrath"] = {
 			["mr"] = 560000,
 			["H4081"] = 560000,
+		},
+		["Recipe: Barbecued Buzzard Wing"] = {
+			["mr"] = 294,
+			["H4081"] = 294,
 		},
 		["Birchwood Maul of the Gorilla"] = {
 			["mr"] = 1497,
 			["H4081"] = 1497,
 		},
-		["Gigantic War Axe of the Monkey"] = {
-			["mr"] = 79999,
-			["H4081"] = 79999,
-		},
 		["Conjurer's Mantle of the Owl"] = {
 			["mr"] = 5000,
 			["H4081"] = 5000,
+		},
+		["Councillor's Tunic of Spirit"] = {
+			["mr"] = 83918,
+			["H4081"] = 83918,
 		},
 		["Red Power Crystal"] = {
 			["mr"] = 3599,
 			["H4081"] = 3599,
 		},
-		["Unadorned Seal of Ascension"] = {
-			["mr"] = 6199,
-			["H4081"] = 6199,
-		},
 		["Arcanite Rod"] = {
 			["mr"] = 1696963,
 			["H4081"] = 1696963,
+		},
+		["Stoneshield Cloak"] = {
+			["mr"] = 1499997,
+			["H4081"] = 1499997,
 		},
 		["Elder's Gloves of the Eagle"] = {
 			["mr"] = 19897,
@@ -9837,25 +9875,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 8996,
 			["H4081"] = 8996,
 		},
+		["Formula: Runed Arcanite Rod"] = {
+			["mr"] = 15498,
+			["H4081"] = 15498,
+		},
 		["Robust Girdle of the Falcon"] = {
 			["mr"] = 4999,
 			["H4081"] = 4999,
-		},
-		["Jasper Link of Fire Resistance"] = {
-			["mr"] = 400000,
-			["H4081"] = 400000,
 		},
 		["Smashing Star of the Tiger"] = {
 			["mr"] = 43178,
 			["H4081"] = 43178,
 		},
-		["Shimmering Bracers of the Eagle"] = {
-			["mr"] = 19900,
-			["H4081"] = 19900,
-		},
 		["Councillor's Pants of Healing"] = {
 			["mr"] = 59897,
 			["H4081"] = 59897,
+		},
+		["Sturdy Quarterstaff of the Wolf"] = {
+			["mr"] = 4000,
+			["H4081"] = 4000,
 		},
 		["Jacinth Circle of Shadow Resistance"] = {
 			["mr"] = 5496,
@@ -9873,10 +9911,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 29489,
 			["H4081"] = 29489,
 		},
-		["Stout Battlehammer of the Monkey"] = {
-			["mr"] = 49900,
-			["H4081"] = 49900,
-		},
 		["Deadly Bronze Poniard"] = {
 			["mr"] = 59900,
 			["H4081"] = 59900,
@@ -9889,6 +9923,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3297,
 			["H4081"] = 3297,
 		},
+		["Gyrochronatom"] = {
+			["mr"] = 3235,
+			["H4081"] = 3235,
+		},
 		["Grunt's Belt of the Boar"] = {
 			["mr"] = 4087,
 			["H4081"] = 4087,
@@ -9897,9 +9935,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 258500,
 			["H4081"] = 258500,
 		},
-		["Shiny Fish Scales"] = {
-			["mr"] = 24,
-			["H4081"] = 24,
+		["Glimmering Flamberge of Stamina"] = {
+			["mr"] = 14500,
+			["H4081"] = 14500,
 		},
 		["Scroll of Agility III"] = {
 			["mr"] = 1089,
@@ -9909,13 +9947,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 8799,
 			["H4081"] = 8799,
 		},
-		["Tigerbane"] = {
-			["mr"] = 10000,
-			["H4081"] = 10000,
-		},
 		["Dalewind Trousers"] = {
 			["mr"] = 190000,
 			["H4081"] = 190000,
+		},
+		["Sunscale Spaulders"] = {
+			["mr"] = 98099,
+			["H4081"] = 98099,
 		},
 		["Battlesmasher of Power"] = {
 			["mr"] = 32338,
@@ -9933,25 +9971,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1755,
 			["H4081"] = 1755,
 		},
-		["Moonsteel Broadsword"] = {
-			["mr"] = 96895,
-			["H4081"] = 96895,
+		["Heavy Armor Kit"] = {
+			["mr"] = 1965,
+			["H4081"] = 1965,
 		},
 		["Shardtooth E'ko"] = {
 			["mr"] = 38999,
 			["H4081"] = 38999,
 		},
-		["Heavy Armor Kit"] = {
-			["mr"] = 1965,
-			["H4081"] = 1965,
+		["Ranger Bow"] = {
+			["mr"] = 289998,
+			["H4081"] = 289998,
 		},
 		["Splitting Hatchet of the Bear"] = {
 			["mr"] = 19400,
 			["H4081"] = 19400,
 		},
-		["Cured Heavy Hide"] = {
-			["mr"] = 2600,
-			["H4081"] = 2600,
+		["Wastewander Water Pouch"] = {
+			["mr"] = 2000,
+			["H4081"] = 2000,
 		},
 		["Barbaric Battle Axe of the Wolf"] = {
 			["mr"] = 2995,
@@ -9976,10 +10014,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 88007,
 			["H4081"] = 88007,
 		},
-		["Cadet Leggings of the Eagle"] = {
-			["mr"] = 5000,
-			["H4081"] = 5000,
-		},
 		["Thick Spider's Silk"] = {
 			["mr"] = 800,
 			["H4081"] = 800,
@@ -10000,13 +10034,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 140000,
 			["H4081"] = 140000,
 		},
-		["Large Copper Bomb"] = {
-			["mr"] = 3266,
-			["H4081"] = 3266,
-		},
 		["Schematic: Accurate Scope"] = {
 			["mr"] = 17021,
 			["H4081"] = 17021,
+		},
+		["Large Copper Bomb"] = {
+			["mr"] = 3266,
+			["H4081"] = 3266,
 		},
 		["Wrangler's Wristbands of Stamina"] = {
 			["mr"] = 7500000,
@@ -10016,9 +10050,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1033,
 			["H4081"] = 1033,
 		},
-		["Green Lens of Shadow Wrath"] = {
-			["mr"] = 120099,
-			["H4081"] = 120099,
+		["Sentry's Armsplints of the Bear"] = {
+			["mr"] = 7000,
+			["H4081"] = 7000,
 		},
 		["Deviate Scale Belt"] = {
 			["mr"] = 138800,
@@ -10028,6 +10062,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 23400,
 			["H4081"] = 23400,
 		},
+		["Aboriginal Footwraps of the Whale"] = {
+			["mr"] = 2899,
+			["H4081"] = 2899,
+		},
 		["Tender Crocolisk Meat"] = {
 			["mr"] = 28,
 			["H4081"] = 28,
@@ -10036,9 +10074,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 350436,
 			["H4081"] = 350436,
 		},
-		["Hillman's Leather Gloves"] = {
-			["mr"] = 12588,
-			["H4081"] = 12588,
+		["Pagan Bands of the Eagle"] = {
+			["mr"] = 16997,
+			["H4081"] = 16997,
 		},
 		["Cindercloth Gloves"] = {
 			["mr"] = 403568,
@@ -10052,10 +10090,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 212,
 			["H4081"] = 212,
 		},
-		["Valorous Wristguards"] = {
-			["mr"] = 48999,
-			["H4081"] = 48999,
-		},
 		["Lordly Armguards"] = {
 			["mr"] = 49997,
 			["H4081"] = 49997,
@@ -10063,6 +10097,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Stormgale Fists"] = {
 			["mr"] = 198570,
 			["H4081"] = 198570,
+		},
+		["Wrangler's Wristbands of the Eagle"] = {
+			["mr"] = 750000,
+			["H4081"] = 750000,
 		},
 		["Drakewing Bands"] = {
 			["mr"] = 59999,
@@ -10076,10 +10114,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 9900,
 			["H4081"] = 9900,
 		},
-		["Brutish Helmet of the Bear"] = {
-			["mr"] = 22246,
-			["H4081"] = 22246,
-		},
 		["Greater Shadow Protection Potion"] = {
 			["mr"] = 59993,
 			["H4081"] = 59993,
@@ -10087,6 +10121,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Green Hills of Stranglethorn - Page 14"] = {
 			["mr"] = 390,
 			["H4081"] = 390,
+		},
+		["Tuxedo Shirt"] = {
+			["mr"] = 81992,
+			["H4081"] = 81992,
 		},
 		["Worn Turtle Shell Shield"] = {
 			["mr"] = 2499,
@@ -10096,41 +10134,37 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 99996,
 			["H4081"] = 99996,
 		},
-		["Green Hills of Stranglethorn - Page 21"] = {
-			["mr"] = 774,
-			["H4081"] = 774,
-		},
 		["Twilight Cultist Robe"] = {
 			["mr"] = 34897,
 			["H4081"] = 34897,
-		},
-		["Vorpal Dagger of Healing"] = {
-			["mr"] = 45000,
-			["H4081"] = 45000,
 		},
 		["Stonecutter Claymore of Stamina"] = {
 			["mr"] = 13943,
 			["H4081"] = 13943,
 		},
+		["Vorpal Dagger of Healing"] = {
+			["mr"] = 45000,
+			["H4081"] = 45000,
+		},
 		["Strong Troll's Blood Potion"] = {
 			["mr"] = 1980,
 			["H4081"] = 1980,
-		},
-		["Elixir of Greater Defense"] = {
-			["mr"] = 6800,
-			["H4081"] = 6800,
 		},
 		["Native Pants of Fiery Wrath"] = {
 			["mr"] = 1666,
 			["H4081"] = 1666,
 		},
-		["Jade Breastplate of the Bear"] = {
-			["mr"] = 89998,
-			["H4081"] = 89998,
+		["Elixir of Greater Defense"] = {
+			["mr"] = 6800,
+			["H4081"] = 6800,
 		},
 		["Elder's Sash of Intellect"] = {
 			["mr"] = 15500,
 			["H4081"] = 15500,
+		},
+		["Jade Breastplate of the Bear"] = {
+			["mr"] = 89998,
+			["H4081"] = 89998,
 		},
 		["War Torn Pants of the Eagle"] = {
 			["mr"] = 3800,
@@ -10140,25 +10174,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 55000,
 			["H4081"] = 55000,
 		},
+		["Dark Iron Residue"] = {
+			["mr"] = 1198,
+			["H4081"] = 1198,
+		},
 		["Mystical Armor of Frozen Wrath"] = {
 			["mr"] = 260000,
 			["H4081"] = 260000,
-		},
-		["Raptor Flesh"] = {
-			["mr"] = 85,
-			["H4081"] = 85,
 		},
 		["Warmonger's Buckler of the Monkey"] = {
 			["mr"] = 50000,
 			["H4081"] = 50000,
 		},
+		["Headstriker Sword of Stamina"] = {
+			["mr"] = 54499,
+			["H4081"] = 54499,
+		},
 		["Superior Cloak of the Wolf"] = {
 			["mr"] = 7999,
 			["H4081"] = 7999,
-		},
-		["Ez-Thro Dynamite II"] = {
-			["mr"] = 3398,
-			["H4081"] = 3398,
 		},
 		["Murphstar of the Bear"] = {
 			["mr"] = 19598,
@@ -10171,6 +10205,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Lupine Leggings of the Falcon"] = {
 			["mr"] = 10000,
 			["H4081"] = 10000,
+		},
+		["Knightly Longsword of the Bear"] = {
+			["mr"] = 21899,
+			["H4081"] = 21899,
 		},
 		["Deviate Scale Gloves"] = {
 			["mr"] = 22800,
@@ -10188,9 +10226,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3000,
 			["H4081"] = 3000,
 		},
-		["Conjurer's Cloak of the Owl"] = {
-			["mr"] = 15337,
-			["H4081"] = 15337,
+		["Pattern: White Leather Jerkin"] = {
+			["mr"] = 493,
+			["H4081"] = 493,
 		},
 		["Durable Bracers of the Eagle"] = {
 			["mr"] = 34998,
@@ -10212,17 +10250,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1500,
 			["H4081"] = 1500,
 		},
-		["Bristlebark Belt"] = {
-			["mr"] = 10092,
-			["H4081"] = 10092,
+		["Shimmering Cloak of Fiery Wrath"] = {
+			["mr"] = 4300,
+			["H4081"] = 4300,
 		},
 		["Acrobatic Staff of Spirit"] = {
 			["mr"] = 12499,
 			["H4081"] = 12499,
-		},
-		["Raincaller Mitts of the Whale"] = {
-			["mr"] = 4500,
-			["H4081"] = 4500,
 		},
 		["Upper Map Fragment"] = {
 			["mr"] = 8997,
@@ -10232,6 +10266,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 44998,
 			["H4081"] = 44998,
 		},
+		["Spiked Chain Wristbands of the Bear"] = {
+			["mr"] = 6699,
+			["H4081"] = 6699,
+		},
 		["Orb of Deception"] = {
 			["mr"] = 1549997,
 			["H4081"] = 1549997,
@@ -10239,10 +10277,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Edged Bastard Sword of the Monkey"] = {
 			["mr"] = 2190,
 			["H4081"] = 2190,
-		},
-		["Scroll of Spirit III"] = {
-			["mr"] = 940,
-			["H4081"] = 940,
 		},
 		["Infiltrator Pants of Spirit"] = {
 			["mr"] = 30000,
@@ -10264,17 +10298,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 499997,
 			["H4081"] = 499997,
 		},
-		["Revenant Gauntlets of the Bear"] = {
-			["mr"] = 19999,
-			["H4081"] = 19999,
-		},
 		["Gargoyle's Bite"] = {
 			["mr"] = 14998,
 			["H4081"] = 14998,
 		},
+		["Revenant Gauntlets of the Bear"] = {
+			["mr"] = 19999,
+			["H4081"] = 19999,
+		},
 		["Merc Sword of the Monkey"] = {
 			["mr"] = 2489,
 			["H4081"] = 2489,
+		},
+		["Infantry Tunic of the Whale"] = {
+			["mr"] = 3315,
+			["H4081"] = 3315,
 		},
 		["Shredder Operating Manual - Page 4"] = {
 			["mr"] = 582,
@@ -10288,10 +10326,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1541,
 			["H4081"] = 1541,
 		},
-		["Solid Blasting Powder"] = {
-			["mr"] = 7500,
-			["H4081"] = 7500,
-		},
 		["Pattern: Wizardweave Robe"] = {
 			["mr"] = 999993,
 			["H4081"] = 999993,
@@ -10303,6 +10337,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Wanderer's Hat of the Monkey"] = {
 			["mr"] = 79890,
 			["H4081"] = 79890,
+		},
+		["Raw Slitherskin Mackerel"] = {
+			["mr"] = 46,
+			["H4081"] = 46,
 		},
 		["Polished Zweihander of the Boar"] = {
 			["mr"] = 10000,
@@ -10316,25 +10354,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 16312,
 			["H4081"] = 16312,
 		},
-		["Aboriginal Loincloth of the Eagle"] = {
-			["mr"] = 16499,
-			["H4081"] = 16499,
+		["Iron Bar"] = {
+			["mr"] = 520,
+			["H4081"] = 520,
 		},
 		["Merc Sword of the Whale"] = {
 			["mr"] = 1995,
 			["H4081"] = 1995,
 		},
-		["Iron Strut"] = {
-			["mr"] = 590,
-			["H4081"] = 590,
+		["Scaled Leather Boots of the Whale"] = {
+			["mr"] = 24771,
+			["H4081"] = 24771,
 		},
 		["Moon Harvest Pumpkin"] = {
 			["mr"] = 445,
 			["H4081"] = 445,
 		},
-		["Sorcerer Sash of the Whale"] = {
-			["mr"] = 18866,
-			["H4081"] = 18866,
+		["Battering Hammer of the Monkey"] = {
+			["mr"] = 32892,
+			["H4081"] = 32892,
 		},
 		["Nightscape Tunic"] = {
 			["mr"] = 14398,
@@ -10352,21 +10390,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 4400,
 			["H4081"] = 4400,
 		},
-		["Phalanx Leggings of the Gorilla"] = {
-			["mr"] = 10000,
-			["H4081"] = 10000,
-		},
 		["Elegant Circlet of the Eagle"] = {
 			["mr"] = 80000,
 			["H4081"] = 80000,
 		},
+		["Battlesmasher of Stamina"] = {
+			["mr"] = 21805,
+			["H4081"] = 21805,
+		},
 		["Conjurer's Breeches of Spirit"] = {
 			["mr"] = 5000,
 			["H4081"] = 5000,
-		},
-		["Selenium Chain of the Owl"] = {
-			["mr"] = 43997,
-			["H4081"] = 43997,
 		},
 		["Ribsplitter of the Tiger"] = {
 			["mr"] = 150000,
@@ -10376,13 +10410,22 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 19900,
 			["H4081"] = 19900,
 		},
+		["Wrangler's Belt of Intellect"] = {
+			["mr"] = 2500,
+			["H4081"] = 2500,
+		},
 		["Pattern: Fine Leather Boots"] = {
 			["mr"] = 492,
 			["H4081"] = 492,
 		},
-		["Pattern: Runecloth Headband"] = {
-			["mr"] = 56000,
-			["H4081"] = 56000,
+		["Liferoot"] = {
+			["H4080"] = 199,
+			["mr"] = 287,
+			["sc"] = 0,
+			["id"] = "3357:0:0:0:0",
+			["L4081"] = 287,
+			["cc"] = 7,
+			["H4081"] = 347,
 		},
 		["Elixir of Shadow Power"] = {
 			["mr"] = 39793,
@@ -10392,10 +10435,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 31500,
 			["H4081"] = 31500,
 		},
-		["Gauntlets of Ogre Strength"] = {
-			["mr"] = 4500,
-			["H4081"] = 4500,
+		["Watcher's Cape of the Owl"] = {
+			["mr"] = 6499,
+			["H4081"] = 6499,
 		},
+	},
+	["Golemagg_Horde"] = {
 	},
 }
 AUCTIONATOR_LAST_SCAN_TIME = 1642413099
@@ -10599,6 +10644,10 @@ AUCTIONATOR_STACKING_PREFS = {
 	["medium leather"] = {
 		["numstacks"] = 0,
 		["stacksize"] = 10,
+	},
+	["silver bar"] = {
+		["numstacks"] = 0,
+		["stacksize"] = 1,
 	},
 	["*_herbs"] = {
 		["stacksize"] = 20,

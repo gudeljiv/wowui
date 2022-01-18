@@ -28,7 +28,16 @@ RangeDisplayDB3 = {
 			["mute"] = true,
 			["locked"] = true,
 			["units"] = {
-				["pet"] = {
+				["mouseover"] = {
+					["mouseAnchor"] = false,
+					["enabled"] = false,
+					["y"] = -36.5593032836914,
+					["font"] = "Arial Narrow",
+					["x"] = -3.48463487625122,
+				},
+				["arena2"] = {
+				},
+				["focus"] = {
 				},
 				["playertarget"] = {
 					["x"] = -3.44103670120239,
@@ -36,16 +45,7 @@ RangeDisplayDB3 = {
 					["y"] = 0.645166099071503,
 					["font"] = "Arial Narrow",
 				},
-				["focus"] = {
-				},
-				["arena2"] = {
-				},
-				["mouseover"] = {
-					["mouseAnchor"] = false,
-					["enabled"] = false,
-					["y"] = -36.5593032836914,
-					["x"] = -3.48463487625122,
-					["font"] = "Arial Narrow",
+				["pet"] = {
 				},
 				["arena5"] = {
 				},

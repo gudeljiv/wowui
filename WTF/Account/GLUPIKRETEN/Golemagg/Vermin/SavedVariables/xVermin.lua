@@ -1,16 +1,6 @@
 
 xKillCount = {
 	["show"] = true,
-	["position"] = {
-		["y"] = 232.000015258789,
-		["x"] = 255.000045776367,
-		["to"] = "LEFT",
-		["from"] = "LEFT",
-	},
-	["experience"] = {
-		["pulltotal"] = 870,
-		["totaltotal"] = 53196,
-	},
 	["killLog"] = {
 		["Scarlet Preserver"] = {
 			["name"] = "Scarlet Preserver",
@@ -20,13 +10,13 @@ xKillCount = {
 			["name"] = "Scarlet Gallant",
 			["count"] = 18,
 		},
-		["Houndmaster Loksey"] = {
-			["name"] = "Houndmaster Loksey",
-			["count"] = 1,
-		},
 		["Scarlet Chaplain"] = {
 			["name"] = "Scarlet Chaplain",
 			["count"] = 2,
+		},
+		["Scarlet Monk"] = {
+			["name"] = "Scarlet Monk",
+			["count"] = 14,
 		},
 		["Scarlet Scout"] = {
 			["name"] = "Scarlet Scout",
@@ -36,17 +26,17 @@ xKillCount = {
 			["name"] = "Scarlet Magician",
 			["count"] = 1,
 		},
-		["Scarlet Diviner"] = {
-			["name"] = "Scarlet Diviner",
-			["count"] = 11,
-		},
-		["Scarlet Sentry"] = {
-			["name"] = "Scarlet Sentry",
-			["count"] = 1,
-		},
 		["Fetid Corpse"] = {
 			["name"] = "Fetid Corpse",
 			["count"] = 2,
+		},
+		["Houndmaster Loksey"] = {
+			["name"] = "Houndmaster Loksey",
+			["count"] = 1,
+		},
+		["Scarlet Diviner"] = {
+			["name"] = "Scarlet Diviner",
+			["count"] = 11,
 		},
 		["Scarlet Disciple"] = {
 			["name"] = "Scarlet Disciple",
@@ -64,13 +54,23 @@ xKillCount = {
 			["name"] = "Scarlet Adept",
 			["count"] = 2,
 		},
-		["Scarlet Monk"] = {
-			["name"] = "Scarlet Monk",
-			["count"] = 14,
+		["Scarlet Sentry"] = {
+			["name"] = "Scarlet Sentry",
+			["count"] = 1,
 		},
 		["Scarlet Beastmaster"] = {
 			["name"] = "Scarlet Beastmaster",
 			["count"] = 2,
 		},
+	},
+	["experience"] = {
+		["totaltotal"] = 53196,
+		["pulltotal"] = 870,
+	},
+	["position"] = {
+		["y"] = -144.3391876220703,
+		["x"] = 438.90771484375,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
 	},
 }

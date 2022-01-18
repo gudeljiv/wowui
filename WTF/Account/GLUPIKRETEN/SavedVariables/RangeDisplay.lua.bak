@@ -28,26 +28,26 @@ RangeDisplayDB3 = {
 			["mute"] = true,
 			["locked"] = true,
 			["units"] = {
-				["pet"] = {
+				["arena2"] = {
 				},
 				["playertarget"] = {
-					["x"] = -3.44103670120239,
-					["checkVisible"] = false,
 					["y"] = 0.645166099071503,
+					["x"] = -3.44103670120239,
 					["font"] = "Arial Narrow",
+					["checkVisible"] = false,
 				},
 				["focus"] = {
 				},
-				["arena2"] = {
+				["arena5"] = {
 				},
 				["mouseover"] = {
-					["mouseAnchor"] = false,
 					["enabled"] = false,
-					["y"] = -36.5593032836914,
-					["font"] = "Arial Narrow",
 					["x"] = -3.48463487625122,
+					["mouseAnchor"] = false,
+					["font"] = "Arial Narrow",
+					["y"] = -36.5593032836914,
 				},
-				["arena5"] = {
+				["pet"] = {
 				},
 				["arena4"] = {
 				},
