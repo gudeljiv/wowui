@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 4139,
+	["session"] = 4141,
 	["errors"] = {
 		{
 			["message"] = "...\\AddOns\\Details\\Libs\\DetailsFramework\\lib\\slider.lua:456: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DetailsFrameworkSliderButtons1:SetPoint.",
@@ -1368,5 +1368,13 @@ BugGrabberDB = {
 			["session"] = 4138,
 			["counter"] = 27,
 		}, -- [176]
+		{
+			["message"] = "...Ons\\ExtendedCharacterStats\\Modules\\Data\\SpellHit.lua:97: attempt to perform arithmetic on a nil value",
+			["time"] = "2022/01/18 18:32:33",
+			["locals"] = "self = <table> {\n GetSpellHitFromBuffs = <function> defined @Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Data\\SpellHit.lua:100\n GetSpellHitBonus = <function> defined @Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Data\\SpellHit.lua:93\n GetTalentSpellHitBonus = <function> defined @Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Data\\SpellHit.lua:44\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on a nil value\"\n_SpellHit = <table> {\n GetSpellHitFromBuffs = <function> defined @Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Data\\SpellHit.lua:100\n GetSpellHitBonus = <function> defined @Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Data\\SpellHit.lua:93\n GetTalentSpellHitBonus = <function> defined @Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Data\\SpellHit.lua:44\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Data\\SpellHit.lua\"]:97: in function `GetSpellHitBonus'\n[string \"@Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Data\\SpellHit.lua\"]:30: in function <...Ons\\ExtendedCharacterStats\\Modules\\Data\\SpellHit.lua:26>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Stats.lua\"]:167: in function <...face\\AddOns\\ExtendedCharacterStats\\Modules\\Stats.lua:165>\n[string \"@Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Stats.lua\"]:319: in function <...face\\AddOns\\ExtendedCharacterStats\\Modules\\Stats.lua:313>\n[string \"@Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Stats.lua\"]:306: in function `UpdateInformation'\n[string \"@Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Init.lua\"]:51: in function <...rface\\AddOns\\ExtendedCharacterStats\\Modules\\Init.lua:50>",
+			["session"] = 4141,
+			["counter"] = 3,
+		}, -- [177]
 	},
 }
