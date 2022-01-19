@@ -1,9 +1,12 @@
 
 unitscan_targets = {
 	["SHARPTALON"] = true,
-	["GALAK MESSENGER"] = true,
-	["TIDERESS"] = true,
 	["URSANGOUS"] = true,
+	["CITIZEN WILKES"] = true,
 	["VILE STING"] = true,
+	["TIDERESS"] = true,
 	["ROK'ALIM"] = true,
+	["GALAK MESSENGER"] = true,
+	["FARMER KALABA"] = true,
+	["MINER HACKET"] = true,
 }
