@@ -304,10 +304,15 @@ function unitscan.toggle_target(name)
 end
 	
 SLASH_UNITSCAN1 = '/unitscan'
+SLASH_UNITSCAN2 = '/us'
 function SlashCmdList.UNITSCAN(parameter)
 	local _, _, name = strfind(parameter, '^%s*(.-)%s*$')
 	
-	if name == '' then
+	if name == 'reset' then
+		for _, key in ipairs(unitscan.sorted_targets()) do
+			unitscan.toggle_target(key)
+		end
+	elseif name == '' then
 		for _, key in ipairs(unitscan.sorted_targets()) do
 			unitscan.print(key)
 		end
