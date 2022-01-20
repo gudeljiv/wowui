@@ -1,6 +1,16 @@
 
 xKillCount = {
-	["show"] = true,
+	["show"] = false,
+	["position"] = {
+		["y"] = 169.160888671875,
+		["x"] = 35.87355041503906,
+		["to"] = "LEFT",
+		["from"] = "LEFT",
+	},
+	["experience"] = {
+		["pulltotal"] = 60,
+		["totaltotal"] = 1721,
+	},
 	["killLog"] = {
 		["Mindless Zombie"] = {
 			["name"] = "Mindless Zombie",
@@ -10,15 +20,5 @@ xKillCount = {
 			["name"] = "Wretched Zombie",
 			["count"] = 2,
 		},
-	},
-	["experience"] = {
-		["totaltotal"] = 260,
-		["pulltotal"] = 52,
-	},
-	["position"] = {
-		["y"] = 169.160888671875,
-		["x"] = 35.87355041503906,
-		["to"] = "LEFT",
-		["from"] = "LEFT",
 	},
 }

@@ -143,6 +143,21 @@ __DEJUNK_SAVED_VARIABLES__ = {
 			},
 			["version"] = 3,
 		},
+		["Konac-Dreadnaught"] = {
+			["sell"] = {
+				["auto"] = true,
+				["safeMode"] = false,
+			},
+			["version"] = 3,
+			["general"] = {
+				["autoRepair"] = true,
+				["chat"] = {
+					["enabled"] = false,
+					["sell"] = false,
+					["destroy"] = false,
+				},
+			},
+		},
 		["Moolatz-Dreadnaught"] = {
 			["sell"] = {
 				["auto"] = true,
@@ -187,10 +202,10 @@ __DEJUNK_SAVED_VARIABLES__ = {
 					["5466"] = true,
 					["3401"] = true,
 					["3402"] = true,
-					["2608"] = true,
+					["5114"] = true,
 					["3676"] = true,
 					["5118"] = true,
-					["5114"] = true,
+					["2608"] = true,
 					["3669"] = true,
 					["3670"] = true,
 					["1794"] = true,
@@ -204,20 +219,12 @@ __DEJUNK_SAVED_VARIABLES__ = {
 			},
 			["version"] = 3,
 		},
-		["Konac-Dreadnaught"] = {
+		["Greshnik-Dreadnaught"] = {
 			["sell"] = {
 				["auto"] = true,
 				["safeMode"] = false,
 			},
 			["version"] = 3,
-			["general"] = {
-				["autoRepair"] = true,
-				["chat"] = {
-					["enabled"] = false,
-					["sell"] = false,
-					["destroy"] = false,
-				},
-			},
 		},
 	},
 }

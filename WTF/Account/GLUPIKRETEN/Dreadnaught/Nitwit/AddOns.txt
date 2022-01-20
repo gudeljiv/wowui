@@ -1,4 +1,4 @@
-nPower: enabled
+nPower: disabled
 nHealth: enabled
 Immersion: disabled
 AdiBags: enabled
@@ -120,3 +120,4 @@ nMinimap: enabled
 xVermin: enabled
 Leatrix_Plus: disabled
 aux-addon: disabled
+RXPGuides: disabled

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 4161,
+	["session"] = 4175,
 	["errors"] = {
 		{
 			["message"] = "...\\AddOns\\Details\\Libs\\DetailsFramework\\lib\\slider.lua:456: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: DetailsFrameworkSliderButtons1:SetPoint.",
@@ -1324,19 +1324,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [170]
 		{
-			["message"] = "(null)",
-			["time"] = "2022/01/02 09:34:18",
-			["session"] = 4135,
-			["counter"] = 49,
-		}, -- [171]
-		{
 			["message"] = "Interface\\AddOns\\Details\\core\\parser.lua:4157: attempt to call method 'DispatchAutoRunCode' (a nil value)",
 			["time"] = "2022/01/18 08:48:05",
 			["locals"] = "self = <table> {\n SetBarSpecIconSettings = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_principal.lua:4286\n APITopics = <table> {\n }\n InitializeRunCodeWindow = <function> defined @Interface\\AddOns\\Details\\core\\windows.lua:4496\n EntrarEmCombate = <function> defined @Interface\\AddOns\\Details\\core\\control.lua:368\n hex = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:952\n overall_flag = 15\n opened_windows = 3\n RefreshAttributeTextSize = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_principal.lua:7641\n PotionList = <table> {\n }\n EndRefresh = <function> defined @Interface\\AddOns\\Details\\core\\control.lua:1512\n FechaJanelaInfo = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_info.lua:399\n GetMode = <function> defined @Interface\\AddOns\\Details\\classes\\classe_instancia.lua:149\n SetMode = <function> defined @Interface\\AddOns\\Details\\classes\\classe_instancia.lua:2709\n RestoreState_CurrentMythicDungeonRun = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1489\n GetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:645\n IsPluginEnabled = <function> defined @Interface\\AddOns\\Details\\core\\plugins.lua:58\n StopTalentLoadingAnimation = <function> defined @Interface\\AddOns\\Details\\core\\gears.lua:2641\n ImportProfile = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1640\n show_totalhitdamage_on_overkill = false\n raid = 3\n SetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:495\n color_by_arena_team = true\n SortKeyGroupHeal = <function> defined @Interface\\AddOns\\Details\\classes\\classe_heal.lua:125\n SortKeyGroup = <function> defined @Interface\\AddOns\\Details\\classes\\classe_damage.lua:133\n IsInEncounter = <function> defined @Interface\\AddOns\\Details\\core\\parser.lua:5272\n Check_ZONE_CHANGED_NEW_AREA = <function> defined @Interface\\AddOns\\Details\\core\\parser.lua:4030\n plugin_window_pos = <table> {\n }\n gump = <table> {\n }\n CaptureRefresh = <function> defined @Interface\\AddOns\\Details\\core\\parser.lua:3684\n NewModule = <function> defined @Interface\\AddOns\\BlizzMove\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:235\n InstancesToStoreData = <table> {\n }\n name_space_info = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:1650\n ShowDelayMsg = <function> defined @Interface\\AddOns\\Details\\boot.lua:725\n Resize = <function> defined @Interface\\AddOns\\Details\\classes\\classe_instancia.lua:1870\n GetEncounterActorsName = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:306\n RequestCloudData = <function> defined @Interface\\AddOns\\Details\\core\\network.lua:763\n RestauraJanela = <function> defined @Interface\\AddOns\\Details\\classes\\classe_instancia.lua:1432\n default_skin_to_use = \"Minimalistic\"\n GetOpenedWindowsAmount = <function> defined @Interface\\AddOns\\Details\\classes\\classe_instancia.lua:257\n GetInstanceGroup = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_principal.lua:8106\n deadlog_events = 32\n Dump = <function> defined @Interface\\AddOns\\Details\\core\\windows.lua:7027\n OpenNewsWindow = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_news.lua:9\n last_instance_id = 189\n Disable = <function> defined @Interface\\AddOns\\BlizzMove\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:314\n atributo_energy = <table> {\n }\n UnitDamageOnUnit = <function> defined @Interface\\AddOns\\Details\\functions\\api2.lua:1123\n name_space_generic = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:1660\n storage = <table> {\n }\n FadeHandler = <table> {\n }\n AdjustAlphaByContext = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_principal.lua:7458\n ContainerSortEnemies = <function> defined @Interface\\AddOns\\Details\\classes\\classe_damage.lua:250\n ToolBar = <table> {\n }\n FixToolbarMenu = <function> defined @Interface\\AddOns\\Details\\classes\\classe_instancia.lua:1425\n UseWestNumericalSystem = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:281\n FazerAnimacao_Esquerda = <function> defined @Interface\\AddOns\\Details\\core\\windows.lua:239\n Desagrupar = <function> defined @Interface\\AddOns\\Details",
 			["stack"] = "[string \"@Interface\\AddOns\\Details\\core\\parser.lua\"]:4157: in function `?'\n[string \"@Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0-17.lua\"]:55: in function <...dOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:50>",
 			["session"] = 4135,
 			["counter"] = 2,
-		}, -- [172]
+		}, -- [171]
 		{
 			["message"] = "...ns\\CharacterStatsClassic\\CharacterStatsClassicUI.lua:35: attempt to index field '?' (a nil value)",
 			["time"] = "2022/01/18 08:48:03",
@@ -1344,7 +1338,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\CharacterStatsClassic\\CharacterStatsClassicUI.lua\"]:35: in function <...ns\\CharacterStatsClassic\\CharacterStatsClassicUI.lua:33>\n[string \"@Interface\\AddOns\\CharacterStatsClassic\\CharacterStatsClassicUI.lua\"]:69: in function `SetCharacterStats'\n[string \"@Interface\\AddOns\\CharacterStatsClassic\\CharacterStatsClassicUI.lua\"]:124: in function `UpdateStats'\n[string \"@Interface\\AddOns\\CharacterStatsClassic\\CharacterStatsClassicCore.lua\"]:23: in function <...\\CharacterStatsClassic\\CharacterStatsClassicCore.lua:22>",
 			["session"] = 4135,
 			["counter"] = 10,
-		}, -- [173]
+		}, -- [172]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
 			["time"] = "2022/01/02 17:31:48",
@@ -1352,7 +1346,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface_Vanilla\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface_Vanilla\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface_Vanilla\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface_Vanilla\\FrameXML\\ActionBarController.lua:34>",
 			["session"] = 4138,
 			["counter"] = 27,
-		}, -- [174]
+		}, -- [173]
 		{
 			["message"] = "...Ons\\ExtendedCharacterStats\\Modules\\Data\\SpellHit.lua:97: attempt to perform arithmetic on a nil value",
 			["time"] = "2022/01/18 18:32:33",
@@ -1360,7 +1354,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Data\\SpellHit.lua\"]:97: in function `GetSpellHitBonus'\n[string \"@Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Data\\SpellHit.lua\"]:30: in function <...Ons\\ExtendedCharacterStats\\Modules\\Data\\SpellHit.lua:26>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Stats.lua\"]:167: in function <...face\\AddOns\\ExtendedCharacterStats\\Modules\\Stats.lua:165>\n[string \"@Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Stats.lua\"]:319: in function <...face\\AddOns\\ExtendedCharacterStats\\Modules\\Stats.lua:313>\n[string \"@Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Stats.lua\"]:306: in function `UpdateInformation'\n[string \"@Interface\\AddOns\\ExtendedCharacterStats\\Modules\\Init.lua\"]:51: in function <...rface\\AddOns\\ExtendedCharacterStats\\Modules\\Init.lua:50>",
 			["session"] = 4141,
 			["counter"] = 3,
-		}, -- [175]
+		}, -- [174]
 		{
 			["message"] = "Interface\\AddOns\\unitscan\\unitscan-v1.1.1.lua:113: Frame unitscan_button is not movable or resizable",
 			["time"] = "2022/01/19 20:46:19",
@@ -1368,7 +1362,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetUserPlaced'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v1.1.1.lua\"]:113: in function `LOAD'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v1.1.1.lua\"]:6: in function <Interface\\AddOns\\unitscan\\unitscan.lua:4>",
 			["session"] = 4145,
 			["counter"] = 1,
-		}, -- [176]
+		}, -- [175]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'StanceButton1:ClearAllPoints()'.",
 			["time"] = "2022/01/20 06:02:43",
@@ -1376,7 +1370,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\xVermin\\Addons/nMainBar.lua\"]:20: in function <Interface\\AddOns\\xVermin\\Addons/nMainBar.lua:14>\n[string \"@Interface\\SharedXML\\C_TimerAugment.lua\"]:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
 			["session"] = 4150,
 			["counter"] = 1,
-		}, -- [177]
+		}, -- [176]
 		{
 			["message"] = "Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua:1963: Usage: SaveBindings(1||2)",
 			["time"] = "2021/12/29 10:50:52",
@@ -1384,7 +1378,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SaveBindings'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1963: in function `SetSetBindings'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:233: in function `?'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:198: in function `OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 4153,
 			["counter"] = 5,
-		}, -- [178]
+		}, -- [177]
 		{
 			["message"] = "Interface\\AddOns\\unitscan\\unitscan-v1.1.1.lua:320: 'end' expected (to close 'function' at line 307) near '<eof>'",
 			["time"] = "2022/01/20 13:44:47",
@@ -1392,13 +1386,27 @@ BugGrabberDB = {
 			["stack"] = "",
 			["session"] = 4156,
 			["counter"] = 4,
-		}, -- [179]
+		}, -- [178]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'unitscan' tried to call the protected function 'UNKNOWN()'.",
 			["time"] = "2022/01/09 15:06:14",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v1.1.1.lua\"]:42: in function `target'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v1.1.1.lua\"]:273: in function `UPDATE'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v1.1.1.lua\"]:3: in function <Interface\\AddOns\\unitscan\\unitscan.lua:3>",
 			["session"] = 4161,
 			["counter"] = 10,
+		}, -- [179]
+		{
+			["message"] = "Interface\\AddOns\\unitscan\\unitscan-v1.1.1.lua:47: attempt to call method 'isVisible' (a nil value)",
+			["time"] = "2022/01/20 18:49:15",
+			["locals"] = "us_frame = UnitScanFrame {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n beautyBorder = <table> {\n }\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n}\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = UnitScanFrame {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n beautyBorder = <table> {\n }\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n}\n(*temporary) = \"attempt to call method 'isVisible' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\unitscan\\unitscan-v1.1.1.lua\"]:47: in main chunk",
+			["session"] = 4171,
+			["counter"] = 1,
 		}, -- [180]
+		{
+			["message"] = "(null)",
+			["time"] = "2022/01/02 09:34:18",
+			["session"] = 4171,
+			["counter"] = 52,
+		}, -- [181]
 	},
 }
