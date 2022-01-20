@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 4146,
+	["session"] = 4152,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1378,11 +1378,19 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [177]
 		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'StanceButton1:ClearAllPoints()'.",
+			["time"] = "2022/01/20 06:02:43",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\xVermin\\Addons/nMainBar.lua\"]:20: in function <Interface\\AddOns\\xVermin\\Addons/nMainBar.lua:14>\n[string \"@Interface\\SharedXML\\C_TimerAugment.lua\"]:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
+			["session"] = 4150,
+			["counter"] = 1,
+		}, -- [178]
+		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'unitscan' tried to call the protected function 'UNKNOWN()'.",
 			["time"] = "2022/01/09 15:06:14",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v1.1.1.lua\"]:42: in function `target'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v1.1.1.lua\"]:273: in function `UPDATE'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v1.1.1.lua\"]:3: in function <Interface\\AddOns\\unitscan\\unitscan.lua:3>",
-			["session"] = 4146,
-			["counter"] = 6,
-		}, -- [178]
+			["session"] = 4151,
+			["counter"] = 7,
+		}, -- [179]
 	},
 }

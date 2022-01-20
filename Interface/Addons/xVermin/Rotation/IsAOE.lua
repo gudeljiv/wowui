@@ -47,7 +47,7 @@ f:SetBackdrop(
 PlayerFrame:HookScript(
 	"OnUpdate",
 	function()
-		if InCombatLockdown() then 
+		if InCombatLockdown() and not ChatFrame1EditBox:IsVisible() then 
 			if AOE() then
 				f:SetBackdropColor(1, 0, 0, 1)
 			else
@@ -58,3 +58,11 @@ PlayerFrame:HookScript(
 		end
 	end
 )
+
+-- ChatFrame1EditBox:HookScript("OnShow", function() 
+-- 	print("show") 
+-- end)
+
+-- ChatFrame1EditBox:HookScript("OnHide", function() 
+-- 	print("hide") 
+-- end)

@@ -43,6 +43,10 @@ with keyboard.Listener(on_press=on_press) as listener:
         active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
         # if pyautogui.pixel(1210, 1100)[0] == 0 and pyautogui.pixel(1210, 1100)[1] == 254 and pyautogui.pixel(1210, 1100)[2] == 0:
+
+        if pyautogui.pixel(1210, 1100) == (254, 254, 254):
+            continue
+
         if pyautogui.pixel(1210, 1100) == (0, 254, 0):
             aoe = False
         else:
