@@ -1,0 +1,79 @@
+
+SRTISaved = {
+	["alt"] = false,
+	["bindinghover"] = false,
+	["radialscale"] = 1,
+	["double"] = true,
+	["ctrl"] = true,
+	["hovertime"] = 0.2000000029802322,
+	["doublehover"] = false,
+	["shift"] = false,
+	["speed"] = 0.25,
+	["singlehover"] = false,
+}
+SRTIExternalUF = {
+	["blizzard_compactraidframes"] = {
+		"CompactRaidFrame1", -- [1]
+		"CompactRaidFrame2", -- [2]
+		"CompactRaidFrame3", -- [3]
+		"CompactRaidFrame4", -- [4]
+		"CompactRaidFrame5", -- [5]
+		"CompactRaidFrame6", -- [6]
+	},
+	["grid2"] = {
+		"Grid2LayoutHeader1UnitButton1", -- [1]
+		"Grid2LayoutHeader1UnitButton2", -- [2]
+		"Grid2LayoutHeader1UnitButton3", -- [3]
+		"Grid2LayoutHeader1UnitButton4", -- [4]
+		"Grid2LayoutHeader1UnitButton5", -- [5]
+		"Grid2LayoutHeader2UnitButton1", -- [6]
+		"Grid2LayoutHeader2UnitButton2", -- [7]
+		"Grid2LayoutHeader2UnitButton3", -- [8]
+		"Grid2LayoutHeader2UnitButton4", -- [9]
+		"Grid2LayoutHeader2UnitButton5", -- [10]
+		"Grid2LayoutHeader3UnitButton1", -- [11]
+		"Grid2LayoutHeader3UnitButton2", -- [12]
+		"Grid2LayoutHeader3UnitButton3", -- [13]
+		"Grid2LayoutHeader3UnitButton4", -- [14]
+		"Grid2LayoutHeader3UnitButton5", -- [15]
+		"Grid2LayoutHeader4UnitButton1", -- [16]
+		"Grid2LayoutHeader4UnitButton2", -- [17]
+		"Grid2LayoutHeader4UnitButton3", -- [18]
+		"Grid2LayoutHeader4UnitButton4", -- [19]
+		"Grid2LayoutHeader4UnitButton5", -- [20]
+		"Grid2LayoutHeader5UnitButton1", -- [21]
+		"Grid2LayoutHeader5UnitButton2", -- [22]
+		"Grid2LayoutHeader5UnitButton3", -- [23]
+		"Grid2LayoutHeader5UnitButton4", -- [24]
+		"Grid2LayoutHeader5UnitButton5", -- [25]
+		"Grid2LayoutHeader6UnitButton1", -- [26]
+		"Grid2LayoutHeader6UnitButton2", -- [27]
+		"Grid2LayoutHeader6UnitButton3", -- [28]
+		"Grid2LayoutHeader6UnitButton4", -- [29]
+		"Grid2LayoutHeader6UnitButton5", -- [30]
+		"Grid2LayoutHeader7UnitButton1", -- [31]
+		"Grid2LayoutHeader7UnitButton2", -- [32]
+		"Grid2LayoutHeader7UnitButton3", -- [33]
+		"Grid2LayoutHeader7UnitButton4", -- [34]
+		"Grid2LayoutHeader7UnitButton5", -- [35]
+		"Grid2LayoutHeader8UnitButton1", -- [36]
+		"Grid2LayoutHeader8UnitButton2", -- [37]
+		"Grid2LayoutHeader8UnitButton3", -- [38]
+		"Grid2LayoutHeader8UnitButton4", -- [39]
+		"Grid2LayoutHeader8UnitButton5", -- [40]
+	},
+	["aptechka"] = {
+		"NugRaid1UnitButton1", -- [1]
+		"NugRaid2UnitButton1", -- [2]
+		"NugRaid3UnitButton1", -- [3]
+		"NugRaid4UnitButton1", -- [4]
+		"NugRaid5UnitButton1", -- [5]
+		"NugRaid6UnitButton1", -- [6]
+		"NugRaid7UnitButton1", -- [7]
+		"NugRaid8UnitButton1", -- [8]
+		"NugRaid1UnitButton2", -- [9]
+		"NugRaid1UnitButton3", -- [10]
+		"NugRaid1UnitButton4", -- [11]
+		"NugRaid1UnitButton5", -- [12]
+	},
+}

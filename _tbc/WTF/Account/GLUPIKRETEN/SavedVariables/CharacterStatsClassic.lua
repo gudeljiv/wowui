@@ -1,0 +1,4 @@
+
+CharacterStatsClassicDB = {
+	["useBlizzardBlockValue"] = false,
+}
