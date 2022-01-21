@@ -165,14 +165,7 @@ function Tool.GuildNameToIndex(name, searchOffline)
 end
 
 function Tool.RunSlashCmd(cmd)
-    if Tool._EditBox==nil then 
-		Tool._EditBox = CreateFrame("EditBox", "GPILIB_myEditBox_"..TOCNAME, UIParent)
-		Tool._EditBox.chatFrame = Tool._EditBox:GetParent();
-		ChatEdit_OnLoad(Tool._EditBox);
-		Tool._EditBox:Hide()
-	end
-	Tool._EditBox:SetText(cmd) 
-	ChatEdit_SendText(Tool._EditBox)  
+	DEFAULT_CHAT_FRAME.editBox:SetText(cmd) ChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox, 0)
 end 
 
 function Tool.RGBtoEscape(r, g, b,a)
@@ -188,6 +181,13 @@ function Tool.RGBtoEscape(r, g, b,a)
 	b = b~=nil and b <= 1 and b >= 0 and b or 1
 	a = a~=nil and a <= 1 and a >= 0 and a or 1
 	return string.format("|c%02x%02x%02x%02x", a*255, r*255, g*255, b*255)
+end
+
+function Tool.RGBPercToHex(r, g, b)
+	r = r <= 1 and r >= 0 and r or 0
+	g = g <= 1 and g >= 0 and g or 0
+	b = b <= 1 and b >= 0 and b or 0
+	return string.format("%02x%02x%02x", r*255, g*255, b*255)
 end
 
 function Tool.GetRaidIcon(name)
@@ -385,7 +385,7 @@ function Tool.EnableSize(frame,border,OnStart,OnStop)
 	frame:EnableMouse(true)
 	frame:SetResizable(true)	
 	
-	path= "Interface\\AddOns\\".. TOCNAME .. "\\Resize\\"
+	-- path= "Interface\\AddOns\\".. TOCNAME .. "\\Resize\\"
 	
 	CreateSizeBorder(frame,"BOTTOM","BOTTOMLEFT", border, border, "BOTTOMRIGHT", -border, 0,"Interface\\CURSOR\\UI-Cursor-SizeLeft",45,OnStart,OnStop)
 	CreateSizeBorder(frame,"TOP","TOPLEFT", border, 0, "TOPRIGHT", -border, -border,"Interface\\CURSOR\\UI-Cursor-SizeLeft",45,OnStart,OnStop)
@@ -722,111 +722,16 @@ function Tool.SlashCommand(cmds,subcommand)
 	
 	SlashCmdList[TOCNAME]=mySlashs
 end
-	
----- quick copy&past
 
-local CopyPastFrame
-local CopyPastSavedText
-local CopyPastText
-local function CreateCopyPast()
-	local frame = CreateFrame("Frame", nil, UIParent)
-    frame:SetFrameStrata("DIALOG")
-	frame:SetBackdrop({
-        bgFile = "Interface/DialogFrame/UI-DialogBox-Background",
-        tile = true,
-        edgeFile = "Interface/DialogFrame/UI-DialogBox-Border",
-        edgeSize = 32,
-        insets = {
-            left = 11,
-            right = 12,
-            top = 12,
-            bottom = 11,
-        },
-    })
-	frame:SetSize(700, 450)
-	frame:SetPoint("CENTER")
-	frame:EnableMouse(true)
-    frame:EnableKeyboard(true)
-	frame:SetMovable(true)
-	frame:SetResizable(true)
-	frame:SetMinResize(200,200)
-	frame:RegisterForDrag("LeftButton")
-	frame:SetScript("OnDragStart",function()
-			CopyPastFrame:StartMoving()
-		end)
-	frame:SetScript("OnDragStop",function()
-			CopyPastFrame:StopMovingOrSizing();
-			CopyPastText:SetSize(CopyPastText:GetParent(scrollFrame):GetWidth(),10)
-		end)
-	frame:SetScript("OnSizeChanged",function()
-			if CopyPastText then
-				CopyPastText:SetSize(CopyPastText:GetParent(scrollFrame):GetWidth(),10)
-			end
-		end)
-		
-		
-		
-	
-	
-	Tool.EnableSize(frame)
-	
-	local button =CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
-	button:SetWidth(128)
-    button:SetPoint("BOTTOM", 0, 16)
-    button:SetText("OK")
-	button:SetScript("OnClick", function()
-        CopyPastFrame:Hide()
-    end)
-	
+function Tool.InDateRange(startDate, endDate)
+	local currentMonth, currentDay = date("%m/%d"):match("(%d+)/(%d+)")
+	local startMonth, startDay = startDate:match("(%d+)/(%d+)")
+	local endMonth, endDay = endDate:match("(%d+)/(%d+)")
 
-	
-	local scrollFrame = CreateFrame("ScrollFrame", nil, frame, "UIPanelScrollFrameTemplate")
-    scrollFrame:SetSize(10, 10)
-	scrollFrame:ClearAllPoints()
-	scrollFrame:SetPoint("TOPLEFT",frame,"TOPLEFT", 20, -20)
-	scrollFrame:SetPoint("RIGHT", -40, 0)
-	scrollFrame:SetPoint("BOTTOM",button,"TOP",0,10)
-    
-    scrollFrame:Show()
-	
-	local editBox = CreateFrame("EditBox", nil, scrollFrame)
-    editBox:SetMaxLetters(999999)
-	editBox:SetSize(editBox:GetParent(scrollFrame):GetWidth(),10)
-	editBox:ClearAllPoints()
-	--editBox:SetPoint("TOPLEFT",scrollFrame,"TOPLEFT")
-	editBox:SetPoint("RIGHT",scrollFrame,"RIGHT")
-    
-    editBox:SetFont(ChatFontNormal:GetFont())
-    editBox:SetAutoFocus(true)
-    editBox:SetMultiLine(true)
-    editBox:Show()
-    editBox:SetScript("OnEscapePressed", function(self)
-        CopyPastFrame:Hide()
-    end)
-	editBox:SetScript("OnEnterPressed", function(self)
-        CopyPastFrame:Hide()
-    end)
-	editBox:SetScript("OnTextChanged", function(self)
-        CopyPastText:SetText(CopyPastSavedText)
-		CopyPastText:HighlightText()	
-    end)
-	
-
-	scrollFrame:SetScrollChild(editBox)
-	
-	CopyPastFrame=frame
-	CopyPastTitle=title
-	CopyPastText=editBox
-	return frame
-end
-
-function Tool.CopyPast(Text)
-	if CopyPastFrame==nil then
-		CreateCopyPast()
+	if (startMonth <= currentMonth and currentMonth <= endMonth) and 
+	((currentMonth == startMonth and currentDay >= startDay) or (currentMonth == endMonth and currentDay < endDay)) then --Current month is between starting month and end month if same month as end month check to see if it hasn't ended
+		return true
+	else 
+		return false
 	end
-	CopyPastText:SetText(Text)
-	CopyPastText:HighlightText()
-	CopyPastFrame:Show()
-	CopyPastText:SetFocus()
-	CopyPastSavedText=Text
 end

@@ -21,7 +21,8 @@ skills = [
     {"name": "cleave", "key": "3", "r": 153, "g": 150, "b": 153, "rgb": (153, 150, 153), "aoe": True},
     {"name": "sunder armor", "key": "g", "r": 189, "g": 126, "b": 116, "rgb": (189, 126, 116)},
     {"name": "revenge", "key": "1", "r": 205, "g": 195, "b": 195, "rgb": (205, 195, 195)},
-    {"name": "execute", "key": "f", "r": 76, "g": 17, "b": 21, "rgb": (76, 17, 21)}
+    {"name": "execute", "key": "f", "r": 76, "g": 17, "b": 21, "rgb": (76, 17, 21)},
+    {"name": "whirlwind", "key": "6", "r": 105, "g": 212, "b": 240, "rgb": (105, 212, 240)}
 ]
 
 
@@ -40,11 +41,13 @@ def on_press(key):
 with keyboard.Listener(on_press=on_press) as listener:
     while True:
 
+        time.sleep(0.25)
+
         active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
         # if pyautogui.pixel(1210, 1100)[0] == 0 and pyautogui.pixel(1210, 1100)[1] == 254 and pyautogui.pixel(1210, 1100)[2] == 0:
 
-        if pyautogui.pixel(1210, 1100) == (254, 254, 254):
+        if pyautogui.pixel(1210, 1100) == (255, 254, 255):
             continue
 
         if pyautogui.pixel(1210, 1100) == (0, 254, 0):

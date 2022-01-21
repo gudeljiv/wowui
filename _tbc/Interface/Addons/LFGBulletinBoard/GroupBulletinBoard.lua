@@ -1,123 +1,6 @@
 local TOCNAME,GBB=...
-local L = setmetatable({}, {__index = function (t, k)  
-	if GBB.L and GBB.L[k] then 
-		return GBB.L[k]
-	elseif GBB.locales.enGB and GBB.locales.enGB[k] then
-		return GBB.locales.enGB[k]
-	else
-		return "["..k.."]"
-	end	
-end})
+
 GroupBulletinBoard_Addon=GBB
-
---[[
-
-Group Bulletin Board 	
-2.45 
-- Fixed a bug causing issue opening main window due to SM and DM dungeons
-
-2.44
-- Add TBC support. 
-- Move vanilla dungeons in a seperate panel. 
-- Rename to "LFG Bulletin Board" from "Group Bulletin Board" 
-- Refactor code. 
-- Lua sucks
-
-2.43
-- Update to work for tbc pre-patch. Fix bug with background being transparent 
-
-2.42
-- toc-Update
-
-2.41
-- repair level-display in main window
-
-2.40
-- release
-
-2.33
-- Optional: Add more info to chat on /who and when somebody comes online
-
-2.32
-- optional: Add guild in player tooltip
-- optional: Combine sub-dungeons like Dire Maul
-- message-history in tooltip
-
-2.31
-- optional: Track Party/Members (only when in dungeon)
-- click on a name in the member-list to add a note!
-- Infos in Tooltip: Last seen (with note and dungeon)
-
-2.30
-- update russian by Arrogant_Dreamer 
-
-2.22 
-- Option: Notification on world/dungeons/raids/battleground
-
-2.21
-- Remove Shout/Announce-Box - doesn't work anymore
-
-2.20 	
-- TOC-UPDATETIMER
-
-2.13
-- option to change color of message, time and chat notification
-- "two line"-design is now selectable
-
-2.12
-- detection of minmap-shape
-- set stata to low - should now be behind dialogs
-- Optional: Short one-line chat notification
-- Support for Raid-Symbols {rt1}{cirlce}
-
-2.11
-- fix bug with english client
-- fix bug with guild messages
-
-2.10
-- update russian tags for dire maul (thanks to SD_Liberty)
-- Chat-Notifications - first line is now light grey
-- some code optimizations
-- new option: Scan Guild Channel (in Filter/Channel list)
-- Shout/Announce now work with closed window
-- Item-Links have now a tooltip
-- Adjust mousewheel-scroll-speed to one line
-
-2.07 Beta
-- Fix for russian language (db west)
-
-2.06 Beta
-- Guild Member are marked with a green dot
-- Fix russian /who detection
-
-2.05
-- repair "run"-Detection
-- repair slash commands
-
-2.04 
-- bugfix Hitbox with "ChatStyle"
-- option "Don't truncate message"
-- When two request have the same time, they are sorted by name.
-- updates disabled during combat!
-- Friends are marked with a Star
-
-2.03
-- option "Don't filter own request"
-
-2.02	
-- fix same bug again
-
-2.01
-- bugfix
-
-2.00	
-- Channel-Filter
-- repair priest-icon
-- option "Show a fixed number of requests"
-- option "Chat Style"
-- About-Panel
-		
-]]--
 
 GBB.Version=GetAddOnMetadata(TOCNAME, "Version") 
 GBB.Title=GetAddOnMetadata(TOCNAME, "Title") 
@@ -128,6 +11,7 @@ GBB.MiniIcon= "Interface\\Icons\\spell_holy_prayerofshadowprotection"
 GBB.FriendIcon="Interface\\LootFrame\\toast-star"
 --"Interface\\COMMON\\FavoritesIcon"
 GBB.GuildIcon="Interface\\COMMON\\Indicator-Green"
+GBB.PastPlayerIcon="Interface\\COMMON\\Indicator-Yellow"
 GBB.TxtEscapePicture="|T%s:0|t"
 --"Interface\\Calendar\\MeetingIcon"
 --"Interface\\Icons\\spell_holy_prayerofshadowprotection"
@@ -150,7 +34,7 @@ GBB.AutoUpdateTimer=0
 GBB.Initalized = false
 GBB.LFG_Timer=0
 GBB.LFG_UPDATETIME=10
-GBB.TBCDUNGEONBREAK = 55
+GBB.TBCDUNGEONBREAK = 57
 GBB.DUNGEONBREAK = 25
 GBB.COMBINEMSGTIMER=10
 GBB.MAXCOMPACTWIDTH=350
@@ -208,7 +92,7 @@ function GBB.SplitNoNb(msg)
 	]]--
 	
 	for it,tag in ipairs(result) do		
-		lastTag=tag
+		-- lastTag=tag
 		for is,suffix in ipairs(GBB.suffixTags) do
 			if tag~=suffix and string.sub(tag,-string.len(suffix))==suffix then				
 				tinsert(add,string.sub(tag,1,-string.len(suffix)-1))
@@ -231,23 +115,29 @@ end
 function GBB.LevelRange(dungeon,short)
 	if short then 
 		if GBB.dungeonLevel[dungeon][1]>0 then
-			return string.format(L["msgLevelRangeShort"],GBB.dungeonLevel[dungeon][1],GBB.dungeonLevel[dungeon][2])
+			return string.format(GBB.L["msgLevelRangeShort"],GBB.dungeonLevel[dungeon][1],GBB.dungeonLevel[dungeon][2])
 		end
 	elseif GBB.dungeonLevel[dungeon][1]>0 then
-		return string.format(L["msgLevelRange"],GBB.dungeonLevel[dungeon][1],GBB.dungeonLevel[dungeon][2])
+		return string.format(GBB.L["msgLevelRange"],GBB.dungeonLevel[dungeon][1],GBB.dungeonLevel[dungeon][2])
 	end
 	return ""
 end
 
-function GBB.FilterDungeon(dungeon)
-	if dungeon==nil then return false end
+function GBB.FilterDungeon(dungeon, isHeroic, isRaid)
+	if dungeon == nil then return false end
+	if isHeroic == nil then isHeroic = false end
+	if isRaid == nil then isRaid = false end
+
+	-- If the user is within the level range, or if they're max level and it's heroic.
+	local inLevelRange = (not isHeroic and GBB.dungeonLevel[dungeon][1] <= GBB.UserLevel and GBB.UserLevel <= GBB.dungeonLevel[dungeon][2]) or (isHeroic and GBB.UserLevel == 70)
 	
-	return GBB.DBChar["FilterDungeon"..dungeon] and
-		(GBB.DBChar.FilterLevel==false or (GBB.dungeonLevel[dungeon][1] <= GBB.UserLevel and GBB.UserLevel <= GBB.dungeonLevel[dungeon][2]))
+	return GBB.DBChar["FilterDungeon"..dungeon] and 
+		(isRaid or ((GBB.DBChar["HeroicOnly"] == false or isHeroic) and (GBB.DBChar["NormalOnly"] == false or isHeroic == false))) and
+		(GBB.DBChar.FilterLevel == false or inLevelRange)
 end
 
 function GBB.formatTime(sec) 
-	return string.format(L["msgTimeFormat"],math.floor(sec/60), sec %60)
+	return string.format(GBB.L["msgTimeFormat"],math.floor(sec/60), sec %60)
 end
 
 function GBB.PhraseChannelList(...)
@@ -255,20 +145,20 @@ function GBB.PhraseChannelList(...)
 	for i=1,select("#", ...),3 do
 		t[select(i, ...)]= {name=select(i+1, ...),hidden=select(i+2, ...) }
 	end
-	t[20]={name=L.GuildChannel,hidden=true}
+	t[20]={name=GBB.L.GuildChannel,hidden=true}
 	return t
 end
 
 function GBB.JoinLFG()
 	if GBB.Initalized==true and GBB.LFG_Successfulljoined==false then 
-		if L["lfg_channel"]~=nil and L["lfg_channel"]~="" then 
-			local id,name=GetChannelName(L["lfg_channel"])
+		if GBB.L["lfg_channel"]~=nil and GBB.L["lfg_channel"]~="" then 
+			local id,name=GetChannelName(GBB.L["lfg_channel"])
 			if  id~=nil and id >0  then 
 				--DEFAULT_CHAT_FRAME:AddMessage("Success join lfg-channel")
 				GBB.LFG_Successfulljoined=true
 			else
 				--DEFAULT_CHAT_FRAME:AddMessage("try join lfg-channel")
-				JoinChannelByName(L["lfg_channel"])
+				JoinChannelByName(GBB.L["lfg_channel"])
 			end	
 		else
 			-- missing localization
@@ -276,6 +166,13 @@ function GBB.JoinLFG()
 			--DEFAULT_CHAT_FRAME:AddMessage("Channel not definied for "..GetLocale())
 		end
 	end
+end
+
+function GBB.BtnSelectChannel()
+	if UIDROPDOWNMENU_OPEN_MENU ~=  GBB.FramePullDownChannel then 
+		UIDropDownMenu_Initialize( GBB.FramePullDownChannel, GBB.CreateChannelPulldown, "MENU")
+	end
+	ToggleDropDownMenu(nil, nil,  GBB.FramePullDownChannel, GroupBulletinBoardFrameSelectChannel, 0,0)
 end
 
 --gui
@@ -299,7 +196,7 @@ end
 
 function GBB.ResizeFrameList()
 	local w
-	GroupBulletinBoardFrame_ScrollFrame:SetHeight(GroupBulletinBoardFrame:GetHeight() -30-25 )
+	GroupBulletinBoardFrame_ScrollFrame:SetHeight(GroupBulletinBoardFrame:GetHeight() -55-25 )
 	w=GroupBulletinBoardFrame:GetWidth() -20-10-10
 	GroupBulletinBoardFrame_ScrollFrame:SetWidth( w )
 	GroupBulletinBoardFrame_ScrollChildFrame:SetWidth( w )
@@ -341,20 +238,19 @@ end
 
 --Tag Lists
 -------------------------------------------------------------------------------------
-
 function GBB.CreateTagListLOC(loc)
 	for id,tag in pairs(GBB.badTagsLoc[loc]) do
-		if GBB.DB.OnDebug and tagList[tag]~=nil then
-			print(GBB.MSGPREFIX.."DoubleTag:"..tag.." - "..tagList[tag].." / "..GBB.TAGBAD)
+		if GBB.DB.OnDebug and GBB.tagList[tag]~=nil then
+			print(GBB.MSGPREFIX.."DoubleTag:"..tag.." - "..GBB.tagList[tag].." / "..GBB.TAGBAD)
 		end		
-		tagList[tag]=GBB.TAGBAD		
+		GBB.tagList[tag]=GBB.TAGBAD		
 	end
 	
 	for id,tag in pairs(GBB.searchTagsLoc[loc]) do
-		if GBB.DB.OnDebug and tagList[tag]~=nil then
-			print(GBB.MSGPREFIX.."DoubleTag:"..tag.." - "..tagList[tag].." / "..GBB.TAGSEARCH)
+		if GBB.DB.OnDebug and GBB.tagList[tag]~=nil then
+			print(GBB.MSGPREFIX.."DoubleTag:"..tag.." - "..GBB.tagList[tag].." / "..GBB.TAGSEARCH)
 		end
-		tagList[tag]=GBB.TAGSEARCH		
+		GBB.tagList[tag]=GBB.TAGSEARCH		
 	end
 	
 	for id,tag in pairs(GBB.suffixTagsLoc[loc]) do
@@ -366,17 +262,23 @@ function GBB.CreateTagListLOC(loc)
 	
 	for dungeon,tags in pairs(GBB.dungeonTagsLoc[loc]) do
 		for id,tag in pairs(tags) do
-			if GBB.DB.OnDebug and tagList[tag]~=nil then
-				print(GBB.MSGPREFIX.."DoubleTag:"..tag.." - "..tagList[tag].." / "..dungeon)
+			if GBB.DB.OnDebug and GBB.tagList[tag]~=nil then
+				print(GBB.MSGPREFIX.."DoubleTag:"..tag.." - "..GBB.tagList[tag].." / "..dungeon)
 			end
-			tagList[tag]=dungeon
+			GBB.tagList[tag]=dungeon
 		end
+	end
+
+	for _, tag in pairs(GBB.heroicTagsLoc[loc]) do
+		GBB.HeroicKeywords[tag] = 1
 	end
 end
 
 function GBB.CreateTagList ()
-	tagList={}
+	GBB.tagList={}
 	GBB.suffixTags={}
+	GBB.HeroicKeywords={}
+
 	if GBB.DB.TagsEnglish then
 		GBB.CreateTagListLOC("enGB")
 	end
@@ -390,13 +292,20 @@ function GBB.CreateTagList ()
 	if GBB.DB.TagsRussian then
 		GBB.CreateTagListLOC("ruRU")
 	end
+	if GBB.DB.TagsFrench then
+		GBB.CreateTagListLOC("frFR")
+	end
+	if GBB.DB.TagsZhtw then
+		GBB.CreateTagListLOC("zhTW")
+	end
 	if GBB.DB.TagsCustom then
 		GBB.searchTagsLoc["custom"]=GBB.Split(GBB.DB.Custom.Search)
 		GBB.badTagsLoc["custom"]=GBB.Split(GBB.DB.Custom.Bad)
 		GBB.suffixTagsLoc["custom"]=GBB.Split(GBB.DB.Custom.Suffix)
+		GBB.heroicTagsLoc["custom"]=GBB.Split(GBB.DB.Custom.Heroic)
 		
 		GBB.dungeonTagsLoc["custom"]={}
-		for index=1,GBB.MAXDUNGEON do
+		for index=1,GBB.TBCMAXDUNGEON do
 			GBB.dungeonTagsLoc["custom"][GBB.dungeonSort[index]]= GBB.Split(GBB.DB.Custom[GBB.dungeonSort[index]])
 		end
 		
@@ -418,16 +327,15 @@ local function hooked_createTooltip(self)
 				self:AddLine(GBB.Tool.RGBtoEscape(GBB.DB.ColorGuild).."< "..guildName.." / "..guildRankName.." >")
 			end
 		end
-	
+
 		if GBB.DB.EnableGroup and GBB.GroupTrans and GBB.GroupTrans[name] then
-		
 			local inInstance, instanceType = IsInInstance()
 		
 			if instanceType=="none" then
 				local entry=GBB.GroupTrans[name] 
 				
 				self:AddLine(" ")					
-				self:AddLine(L.msgLastSeen)					
+				self:AddLine(GBB.L.msgLastSeen)					
 				if entry.dungeon then
 					self:AddLine(entry.dungeon)
 				end
@@ -447,21 +355,28 @@ function GBB.Popup_Minimap(frame,notminimap)
 	if not GBB.PopupDynamic:Wipe(txt..(notminimap and "notminimap" or "minimap")) then
 		return
 	end
-	GBB.PopupDynamic:AddItem(L["HeaderSettings"],false, GBB.Options.Open, 1)
-	GBB.PopupDynamic:AddItem(L["TBCPanelFilter"], false, GBB.Options.Open, 2)
-	GBB.PopupDynamic:AddItem(L["PanelAbout"], false, GBB.Options.Open, 6)
+
+	GBB.PopupDynamic:AddItem(GBB.L["HeaderSettings"],false, GBB.Options.Open, 1)
+
+	if GBB.GameType == "TBC" then
+		GBB.PopupDynamic:AddItem(GBB.L["TBCPanelFilter"], false, GBB.Options.Open, 1 + GBB.PANELOFFSET)
+	else
+		GBB.PopupDynamic:AddItem(GBB.L["PanelFilter"], false, GBB.Options.Open, 2 + GBB.PANELOFFSET)
+	end
+
+	GBB.PopupDynamic:AddItem(GBB.L["PanelAbout"], false, GBB.Options.Open, 5 + GBB.PANELOFFSET)
 	
 	GBB.PopupDynamic:AddItem("",true)
-	GBB.PopupDynamic:AddItem(L["CboxNotifyChat"],false,GBB.DB,"NotifyChat")
-	GBB.PopupDynamic:AddItem(L["CboxNotifySound"],false,GBB.DB,"NotifySound")
+	GBB.PopupDynamic:AddItem(GBB.L["CboxNotifyChat"],false,GBB.DB,"NotifyChat")
+	GBB.PopupDynamic:AddItem(GBB.L["CboxNotifySound"],false,GBB.DB,"NotifySound")
 	
 	if notminimap~=false then 
 		GBB.PopupDynamic:AddItem("",true)
-		GBB.PopupDynamic:AddItem(L["CboxLockMinimapButton"],false,GBB.DB.MinimapButton,"lock")
-		GBB.PopupDynamic:AddItem(L["CboxLockMinimapButtonDistance"],false,GBB.DB.MinimapButton,"lockDistance")
+		GBB.PopupDynamic:AddItem(GBB.L["CboxLockMinimapButton"],false,GBB.DB.MinimapButton,"lock")
+		GBB.PopupDynamic:AddItem(GBB.L["CboxLockMinimapButtonDistance"],false,GBB.DB.MinimapButton,"lockDistance")
 	end
 	GBB.PopupDynamic:AddItem("",true)
-	GBB.PopupDynamic:AddItem(L["BtnCancel"],false)
+	GBB.PopupDynamic:AddItem(GBB.L["BtnCancel"],false)
 		
 	GBB.PopupDynamic:Show(frame,0,0)
 end
@@ -472,7 +387,7 @@ function GBB.Init()
 	GBB.UserLevel=UnitLevel("player")
 	GBB.UserName=(UnitFullName("player"))
 	GBB.ServerName=GetRealmName()
-		
+
 	-- Initalize options
 	if not GroupBulletinBoardDB then GroupBulletinBoardDB = {} end -- fresh DB
 	if not GroupBulletinBoardDBChar then GroupBulletinBoardDBChar = {} end -- fresh DB
@@ -480,11 +395,18 @@ function GBB.Init()
 	GBB.DB=GroupBulletinBoardDB
 	GBB.DBChar=GroupBulletinBoardDBChar
 	
+	-- Needed for the people who it got initialized as a table not a string
+	if (type(GBB.DB.FontSize) == "table") then
+    		GBB.DB.FontSize = nil
+	end
+	
 	if not GBB.DBChar.channel then GBB.DBChar.channel = {} end
 	if not GBB.DB.MinimapButton then GBB.DB.MinimapButton={} end
 	if not GBB.DB.Custom then GBB.DB.Custom={} end
 	if not GBB.DB.CustomLocales then GBB.DB.CustomLocales={} end
 	if not GBB.DB.CustomLocalesDungeon then GBB.DB.CustomLocalesDungeon={} end
+	if not GBB.DB.FontSize then GBB.DB.FontSize = "GameFontNormal" end
+	if not GBB.DB.DisplayLFG then GBB.DB.DisplayLFG = false end
 	GBB.DB.Server=nil -- old settings
 	
 	if GBB.DB.OnDebug == nil then GBB.DB.OnDebug=false end
@@ -498,16 +420,16 @@ function GBB.Init()
 	GBB.DB.minimapPos=nil
 	
 	-- Get localize and Dungeon-Information
-	GBB.LocalizationInit()	
+	GBB.L = GBB.LocalizationInit()	
 	GBB.dungeonNames = GBB.GetDungeonNames()
+	GBB.RaidList = GBB.GetRaids()
 	--GBB.dungeonLevel
 	GBB.dungeonSort = GBB.GetDungeonSort()	
-	--GBB.searchTagsLoc,GBB.badTagsLoc,GBB.dungeonTagsLoc,GBB.dungeonSecondTags,GBB.suffixTagsLoc = GroupBulletinBoard_GetTags()
-	
+
 	-- Reset Request-List
 	GBB.RequestList={}
 	GBB.FramesEntries={}
-	ownRequestDungeons={}
+
 	GBB.FoldedDungeons={}
 	
 	-- Timer-Stuff
@@ -520,9 +442,14 @@ function GBB.Init()
 	GBB.LFG_Successfulljoined=false
 	
 	GBB.AutoUpdateTimer=time()+GBB.UPDATETIMER
-		
-	
-	
+
+	GBB.AnnounceInit()
+	if GBB.DB.DisplayLFG == false then
+		GroupBulletinBoardFrameAnnounce:Hide()
+		GroupBulletinBoardFrameAnnounceMsg:Hide()
+		GroupBulletinBoardFrameSelectChannel:Hide()
+	end
+
 	local x, y, w, h = GBB.DB.X, GBB.DB.Y, GBB.DB.Width, GBB.DB.Height
 	if not x or not y or not w or not h then
 		GBB.SaveAnchors()
@@ -531,6 +458,7 @@ function GBB.Init()
 		GroupBulletinBoardFrame:SetPoint("TOPLEFT", UIParent, "BOTTOMLEFT", x, y)
 		GroupBulletinBoardFrame:SetWidth(w)
 		GroupBulletinBoardFrame:SetHeight(h)		
+
 	end
 		
 	-- slash command
@@ -549,36 +477,39 @@ function GBB.Init()
 	GBB.Tool.SlashCommand({"/gbb", "/groupbulletinboard"},{
 		{"notify","",{
 				{"chat","",{
-						{"%",L["CboxNotifyChat"],doDBSet,GBB.DB,"NotifyChat"}
+						{"%",GBB.L["CboxNotifyChat"],doDBSet,GBB.DB,"NotifyChat"}
 					}
 				},
 					
 				{"sound","",{
-						{"%",L["CboxNotifySound"],doDBSet,GBB.DB,"NotifySound"}
+						{"%",GBB.L["CboxNotifySound"],doDBSet,GBB.DB,"NotifySound"}
 					}
 				},
 			},
 		},
 		{"debug","",{
-				{"%",L["CboxOnDebug"],doDBSet,GBB.DB,"OnDebug"}
+				{"%",GBB.L["CboxOnDebug"],doDBSet,GBB.DB,"OnDebug"}
 			},
 		},
-		{"reset",L["SlashReset"],function()
+		{"reset",GBB.L["SlashReset"],function()
 				GBB.ResetWindow()
 				GBB.ShowWindow()
 			end},
-		{{"config","setup","options"},L["SlashConfig"],GBB.Options.Open,1},
-		{"about",L["SlashAbout"],GBB.Options.Open,5},
-		{"",L["SlashDefault"],GBB.ToggleWindow},
+		{{"config","setup","options"},GBB.L["SlashConfig"],GBB.Options.Open,1},
+		{"about",GBB.L["SlashAbout"],GBB.Options.Open,6},
+		{"",GBB.L["SlashDefault"],GBB.ToggleWindow},
+		{"chat","",{
+			{{"organize", "clean"},GBB.L["SlashChatOrganizer"],function()
+				GBB.InsertChat()
+			end},
+		},
+	},
 		})
-	
+		
 	-- Create options and initalize!
 	GBB.OptionsInit()
 		
-	GBB.CreateTagList()	
-		
-	
-
+	GBB.CreateTagList()		
 
 	GBB.MinimapButton.Init(GBB.DB.MinimapButton, GBB.Icon,
 		function(self,button) --onclick
@@ -593,7 +524,17 @@ function GBB.Init()
 	)	
 	
 	GBB.FramePullDownChannel=CreateFrame("Frame", "GBB.PullDownMenu", UIParent, "UIDropDownMenuTemplate")
-	
+	GroupBulletinBoardFrameTitle:SetFontObject(GBB.DB.FontSize)
+	if GBB.DB.AnnounceChannel == nil then
+		if GBB.L["lfg_channel"] ~= "" then
+			GBB.DB.AnnounceChannel = GBB.L["lfg_channel"]
+		else
+			_, GBB.DB.AnnounceChannel = GetChannelList()
+		end
+	end
+
+	GroupBulletinBoardFrameSelectChannel:SetText(GBB.DB.AnnounceChannel)
+
 	GBB.ResizeFrameList()
 	
 	if GBB.DB.EscapeQuit then 
@@ -621,9 +562,8 @@ function GBB.Init()
 	GBB.PopupDynamic=GBB.Tool.CreatePopup(GBB.OptionsUpdate)
 	
 	GBB.InitGroupList()
-	
-	GBB.Tool.AddTab(GroupBulletinBoardFrame,L.TabRequest,GroupBulletinBoardFrame_ScrollFrame)
-	GBB.Tool.AddTab(GroupBulletinBoardFrame,L.TabGroup,GroupBulletinBoardFrame_GroupFrame)
+	GBB.Tool.AddTab(GroupBulletinBoardFrame,GBB.L.TabRequest,GroupBulletinBoardFrame_ScrollFrame)
+	GBB.Tool.AddTab(GroupBulletinBoardFrame,GBB.L.TabGroup,GroupBulletinBoardFrame_GroupFrame)
 	GBB.Tool.SelectTab(GroupBulletinBoardFrame,1)
 	if GBB.DB.EnableGroup then
 		GBB.Tool.TabShow(GroupBulletinBoardFrame)
@@ -736,7 +676,7 @@ local function Event_CHAT_MSG_CHANNEL(msg,name,_3,_4,_5,_6,_7,channelID,channel,
 end
 
 local function Event_GuildMessage(msg,name,_3,_4,_5,_6,_7,channelID,channel,_10,_11,guid)
-	Event_CHAT_MSG_CHANNEL(msg,name,_3,_4,_5,_6,_7,20,L.GuildChannel,_10,_11,guid)
+	Event_CHAT_MSG_CHANNEL(msg,name,_3,_4,_5,_6,_7,20,GBB.L.GuildChannel,_10,_11,guid)
 end
 
 

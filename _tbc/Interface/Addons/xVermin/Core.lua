@@ -88,6 +88,16 @@ function xVermin:FormatValue(self)
 	end
 end
 
+-- function xVermin:FormatValue(value)
+-- 	if value >= 1e6 then
+-- 		return tonumber(format("%.1f", value/1e6)).."m"
+-- 	elseif value >= 1e4 then
+-- 		return tonumber(format("%.1f", value/1e3)).."k"
+-- 	else
+-- 		return value
+-- 	end
+-- end
+
 function xVermin:FormatNumber(number, divider)
 	if not divider then
 		divider = "."

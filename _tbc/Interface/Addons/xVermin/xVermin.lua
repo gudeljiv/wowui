@@ -111,6 +111,42 @@ f:SetScript("OnEvent",
 					PetName:Hide()
 				end
 			)
+			
+			TargetFrame:HookScript(
+				"OnUpdate",
+				function(self)
+					local hc = xVermin:FormatValue(UnitHealth("target"))
+					local hm = xVermin:FormatValue(UnitHealthMax("target"))
+					if (UnitHealth("target") < 10000) then hc = xVermin:FormatNumber(UnitHealth("target")) end
+					if (UnitHealthMax("target") < 10000) then hm = xVermin:FormatNumber(UnitHealthMax("target")) end
+
+					TargetFrameHealthBarText:Hide()
+					TargetFrameTextureFrame.HealthBarText:SetText(hc .. " / ".. hm)
+					TargetFrameTextureFrame.HealthBarText:ClearAllPoints()
+					TargetFrameTextureFrame.HealthBarText:SetPoint("CENTER", TargetFrame, "CENTER", -50, 7)
+					TargetFrameTextureFrame.HealthBarText:Show()
+					TargetFrameTextureFrame.ManaBarText:SetScale(0.8)
+					TargetFrameTextureFrame.ManaBarText:Show()
+					TargetFrameManaBarText:SetScale(0.8)
+				end
+			)
+
+			FocusFrame:HookScript(
+				"OnUpdate",
+				function(self)
+					local hc = xVermin:FormatValue(UnitHealth("focus"))
+					local hm = xVermin:FormatValue(UnitHealthMax("focus"))
+					if (UnitHealth("focus") < 10000) then hc = xVermin:FormatNumber(UnitHealth("focus")) end
+					if (UnitHealthMax("focus") < 10000) then hm = xVermin:FormatNumber(UnitHealthMax("focus")) end
+
+					FocusFrameTextureFrame.HealthBarText:SetText(hc .. " / ".. hm)
+					FocusFrameTextureFrame.HealthBarText:ClearAllPoints()
+					FocusFrameTextureFrame.HealthBarText:SetPoint("CENTER", FocusFrame, "CENTER", -50, 7)
+					FocusFrameTextureFrame.HealthBarText:Show()
+					FocusFrameTextureFrame.ManaBarText:SetScale(0.8)
+					FocusFrameTextureFrame.ManaBarText:Show()
+				end
+			)
 
 			PlayerFrameManaBarText:SetScale(0.8)
 
@@ -124,20 +160,18 @@ f:SetScript("OnEvent",
 			TargetFrame.ClearAllPoints = function() end
 			TargetFrame.SetPoint = function() end
 
-			TargetFrameTextureFrame.HealthBarText:Hide()
 		end
 
 		MiniMapWorldMapButton:Hide()
 	end
 )
 
-local function TargetFrameTextAdjustment()
-	TargetFrameHealthBarText:ClearAllPoints()
-	TargetFrameHealthBarText:SetPoint("CENTER", TargetFrame, "CENTER", -50, 7)
-	TargetFrameManaBarText:SetScale(0.8)
-end
-hooksecurefunc("TargetFrame_CheckClassification", TargetFrameTextAdjustment)
-
+-- local function TargetFrameTextAdjustment()
+-- 	TargetFrameHealthBarText:ClearAllPoints()
+-- 	TargetFrameHealthBarText:SetPoint("CENTER", TargetFrame, "CENTER", -50, 7)
+-- 	TargetFrameManaBarText:SetScale(0.8)
+-- end
+-- hooksecurefunc("TargetFrame_CheckClassification", TargetFrameTextAdjustment)
 
 
 --------------------------------------------------------------------------------------------------------------------------------------

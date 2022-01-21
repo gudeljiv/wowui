@@ -1,17 +1,10 @@
 local 	TOCNAME,GBB=...
-local L = setmetatable({}, {__index = function (t, k)  
-	if GBB.L and GBB.L[k] then 
-		return GBB.L[k]
-	elseif GBB.locales.enGB and GBB.locales.enGB[k] then
-		return GBB.locales.enGB[k]
-	else
-		return "["..k.."]"
-	end	
-end})
 
 local MAXGROUP=500
 local guildcache={}
 local friendcache={}
+local pastplayercache={}
+
 GBB.GroupTrans={}
 
 local AllowedInstanceType={"party","scenario","raid"}
@@ -19,7 +12,7 @@ local AllowedInstanceType={"party","scenario","raid"}
 
 
 function GBB.GetPlayerList()
-	local count
+	local count, prefix
 	local ret={}
 		
 	if IsInRaid() then
@@ -66,6 +59,9 @@ function GBB.AddGroupList(entry)
 		friendcache[entry.name]=entry.guid and C_FriendList.IsFriend(entry.guid)
 	end
 		
+	if pastplayercache[entry.name] == nil then
+		pastplayercache[entry.name]=entry.name and GBB.GroupTrans[entry.name]~=nil
+	end
 	GroupBulletinBoardFrame_GroupFrame:AddMessage(
 		"|Hplayer:".. entry.name .."|h"..
 		GBB.Tool.IconClass[entry.class]..
@@ -182,7 +178,7 @@ function GBB.InitGroupList()
 	end
 	
 	StaticPopupDialogs["GroupBulletinBoard_AddNote"] = {
-		text = L.msgAddNote,
+		text = GBB.L.msgAddNote,
 		button1 = ACCEPT,
 		button2 = CANCEL,
 		hasEditBox = 1,
@@ -219,7 +215,7 @@ function GBB.InitGroupList()
 	
 
 	GroupBulletinBoardFrame_GroupFrame:SetFading(false);
-	GroupBulletinBoardFrame_GroupFrame:SetFontObject(GameFontNormal);
+	GroupBulletinBoardFrame_GroupFrame:SetFontObject(GBB.DB.FontSize);
 	GroupBulletinBoardFrame_GroupFrame:SetJustifyH("LEFT");
 	GroupBulletinBoardFrame_GroupFrame:SetHyperlinksEnabled(true);
 	GroupBulletinBoardFrame_GroupFrame:SetScript("OnHyperlinkClick",ClickHyperlink)

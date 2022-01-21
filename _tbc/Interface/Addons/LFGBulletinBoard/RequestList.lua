@@ -1,14 +1,4 @@
 local 	TOCNAME,GBB=...
-local L = setmetatable({}, {__index = function (t, k)  
-	if GBB.L and GBB.L[k] then 
-		return GBB.L[k]
-	elseif GBB.locales.enGB and GBB.locales.enGB[k] then
-		return GBB.locales.enGB[k]
-	else
-		return "["..k.."]"
-	end	
-end})
-
 
 --ScrollList / Request
 -------------------------------------------------------------------------------------
@@ -83,9 +73,9 @@ local function CreateHeader(yy,dungeon)
 		GBB.FramesEntries[dungeon]:SetPoint("RIGHT", _G[AnchorRight], "RIGHT", 0, 0)						
 		_G[ItemFrameName.."_name"]:SetPoint("RIGHT",GBB.FramesEntries[dungeon], "RIGHT", 0,0)
 		local fname,h=_G[ItemFrameName.."_name"]:GetFont()
-		
 		_G[ItemFrameName.."_name"]:SetHeight(h)
 		_G[ItemFrameName]:SetHeight(h+5)
+		_G[ItemFrameName.."_name"]:SetFontObject(GBB.DB.FontSize)		
 		
 	end
 	
@@ -116,7 +106,7 @@ local function CreateHeader(yy,dungeon)
 	end
 
 	_G[ItemFrameName.."_name"]:SetText(colTXT..GBB.dungeonNames[dungeon].." |cFFAAAAAA"..GBB.LevelRange(dungeon).."|r")
-						
+	_G[ItemFrameName.."_name"]:SetFontObject(GBB.DB.FontSize)				
 	GBB.FramesEntries[dungeon]:SetPoint("TOPLEFT",_G[AnchorTop], "TOPLEFT", 0,-yy)
 	GBB.FramesEntries[dungeon]:Show()
 	
@@ -133,10 +123,14 @@ local function CreateItem(yy,i,doCompact,req,forceHight)
 	if GBB.FramesEntries[i]==nil then
 		GBB.FramesEntries[i]=CreateFrame("Frame",ItemFrameName , GroupBulletinBoardFrame_ScrollChildFrame, "GroupBulletinBoard_TmpRequest")
 		GBB.FramesEntries[i]:SetPoint("RIGHT", _G[AnchorRight], "RIGHT", 0, 0)
+
 		_G[ItemFrameName.."_name"]:SetPoint("TOPLEFT")
 		_G[ItemFrameName.."_time"]:SetPoint("TOP",_G[ItemFrameName.."_name"], "TOP",0,0)
 		
 		_G[ItemFrameName.."_message"]:SetNonSpaceWrap(false)
+		_G[ItemFrameName.."_message"]:SetFontObject(GBB.DB.FontSize)
+		_G[ItemFrameName.."_name"]:SetFontObject(GBB.DB.FontSize)
+		_G[ItemFrameName.."_time"]:SetFontObject(GBB.DB.FontSize)
 		if GBB.DontTrunicate then
 			GBB.ClearNeeded=true
 		end
@@ -183,7 +177,8 @@ local function CreateItem(yy,i,doCompact,req,forceHight)
 		end	
 		
 		local FriendIcon=(req.IsFriend and string.format(GBB.TxtEscapePicture,GBB.FriendIcon) or "") ..
-						 (req.IsGuildMember and string.format(GBB.TxtEscapePicture,GBB.GuildIcon) or "")
+						 (req.IsGuildMember and string.format(GBB.TxtEscapePicture,GBB.GuildIcon) or "") ..
+						 (req.IsPastPlayer and string.format(GBB.TxtEscapePicture,GBB.PastPlayerIcon) or "")
 	
 		local suffix="|r"
 	
@@ -201,15 +196,26 @@ local function CreateItem(yy,i,doCompact,req,forceHight)
 			ti=GBB.formatTime(time()-req.last)
 		end		
 	
+		local typePrefix
+		if req.IsHeroic == true then
+			local colorHex = GBB.Tool.RGBPercToHex(GBB.DB.HeroicDungeonColor.r,GBB.DB.HeroicDungeonColor.g,GBB.DB.HeroicDungeonColor.b)
+			typePrefix = "|c00".. colorHex .. "[" .. GBB.L["heroicAbr"] .. "]     "
+		elseif req.IsRaid == true then
+			typePrefix = "|c00ffff00" .. "[" .. GBB.L["raidAbr"] .. "]     "
+		else
+			local colorHex = GBB.Tool.RGBPercToHex(GBB.DB.NormalDungeonColor.r,GBB.DB.NormalDungeonColor.g,GBB.DB.NormalDungeonColor.b)
+			typePrefix = "|c00".. colorHex .. "[" .. GBB.L["normalAbr"] .. "]    "
+		end
+
 		if GBB.DB.ChatStyle then
-			--local col="|cFFFFC0C0"
 			_G[ItemFrameName.."_name"]:SetText()					
 			_G[ItemFrameName.."_message"]:SetText(ClassIcon.."["..prefix ..req.name..suffix.."]"..FriendIcon..": "..req.message)
 		else
-			_G[ItemFrameName.."_name"]:SetText(ClassIcon..prefix .. req.name ..suffix..FriendIcon)					
-			_G[ItemFrameName.."_message"]:SetText(req.message)
+			_G[ItemFrameName.."_name"]:SetText(ClassIcon..prefix .. req.name .. suffix..FriendIcon)					
+			_G[ItemFrameName.."_message"]:SetText(typePrefix .. suffix .. req.message)
 			_G[ItemFrameName.."_time"]:SetText(ti)
 		end
+
 		_G[ItemFrameName.."_message"]:SetTextColor(GBB.DB.EntryColor.r,GBB.DB.EntryColor.g,GBB.DB.EntryColor.b,GBB.DB.EntryColor.a)
 		_G[ItemFrameName.."_time"]:SetTextColor(GBB.DB.TimeColor.r,GBB.DB.TimeColor.g,GBB.DB.TimeColor.b,GBB.DB.TimeColor.a)
 		
@@ -274,7 +280,7 @@ local function CreateItem(yy,i,doCompact,req,forceHight)
 end
 
 local function WhoRequest(name)
-	--DEFAULT_CHAT_FRAME:AddMessage(GBB.MSGPREFIX .. string.format(L["msgStartWho"],name))
+	--DEFAULT_CHAT_FRAME:AddMessage(GBB.MSGPREFIX .. string.format(GBB.L["msgStartWho"],name))
 	--DEFAULT_CHAT_FRAME.editBox:SetText("/who " .. name) 
 	--ChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox)
 	GBB.Tool.RunSlashCmd("/who " .. name) 
@@ -282,6 +288,10 @@ end
 
 local function WhisperRequest(name)
 	ChatFrame_OpenChat("/w " .. name .." ")
+end
+
+local function InviteRequest(name)
+	GBB.Tool.RunSlashCmd("/invite " .. name)
 end
 
 local function IgnoreRequest(name)
@@ -386,11 +396,10 @@ function GBB.UpdateList()
 		end
 	end
 	
-	
 	for i,req in pairs(GBB.RequestList) do
 		if type(req) == "table" then
 		
-			if (ownRequestDungeons[req.dungeon]==true or GBB.FilterDungeon(req.dungeon)) and req.last + GBB.DB.TimeOut > time() then
+			if (ownRequestDungeons[req.dungeon]==true or GBB.FilterDungeon(req.dungeon, req.IsHeroic, req.IsRaid)) and req.last + GBB.DB.TimeOut > time() then
 				
 				count= count + 1
 				
@@ -408,7 +417,7 @@ function GBB.UpdateList()
 						end
 						hi=hi+1
 						
-						if (ownRequestDungeons[GBB.dungeonSort[hi]]==true or GBB.FilterDungeon(GBB.dungeonSort[hi])) then
+						if (ownRequestDungeons[GBB.dungeonSort[hi]]==true or GBB.FilterDungeon(GBB.dungeonSort[hi], req.IsHeroic, req.IsRaid)) then
 							yy=CreateHeader(yy,GBB.dungeonSort[hi])
 							cEntrys=0
 						else
@@ -433,7 +442,7 @@ function GBB.UpdateList()
 				yy=yy+ itemHight*(GBB.DB.ShowOnlyNb-cEntrys)
 			end
 			hi=hi+1			
-			if (ownRequestDungeons[GBB.dungeonSort[hi]]==true or GBB.FilterDungeon(GBB.dungeonSort[hi])) then
+			if (ownRequestDungeons[GBB.dungeonSort[hi]]==true or GBB.FilterDungeon(GBB.dungeonSort[hi], false, false)) then
 				yy=CreateHeader(yy,GBB.dungeonSort[hi])
 				cEntrys=0
 			else 
@@ -446,46 +455,71 @@ function GBB.UpdateList()
 	yy=yy+GroupBulletinBoardFrame_ScrollFrame:GetHeight()-20
 	
 	GroupBulletinBoardFrame_ScrollChildFrame:SetHeight(yy)
-	GroupBulletinBoardFrameStatusText:SetText(string.format(L["msgNbRequest"], count))
+	GroupBulletinBoardFrameStatusText:SetText(string.format(GBB.L["msgNbRequest"], count))
 	
 	GBB.AutoUpdateTimer=time()+GBB.UPDATETIMER
 end
 
 function GBB.GetDungeons(msg,name)
 	if msg==nil then return {} end
-
 	local dungeons={}
-	
-	local parts =GBB.SplitNoNb(msg)
 	
 	local isBad=false
 	local isGood=false
-	
+	local isHeroic=false
+
 	local runrequired=false
 	local hasrun=false
 	local runDungeon=""
 		
-	for ip, p in pairs(parts) do
-		
-		if p=="run" or p=="runs" then
-			hasrun=true
-		end
-		
-		x=tagList[p]
-		
-		if x==nil then
-			if tagList[p.."run"]~=nil then
-				runDungeon=tagList[p.."run"]
-				runrequired=true			
+	local wordcount=0
+
+	if GBB.DB.TagsZhtw then
+		for key, v in pairs(GBB.tagList) do
+			if strfind(msg:lower(), key) then
+				if v==GBB.TAGSEARCH then
+					isGood=true
+				elseif v==GBB.TAGBAD then
+					break
+				elseif v~=nil then
+					dungeons[v]=true
+				end
 			end
-		elseif x==GBB.TAGBAD then
-			isBad=true
-			break
-		elseif x==GBB.TAGSEARCH then
-			isGood=true
-		else
-			dungeons[x]=true
 		end
+		for key, v in pairs(GBB.HeroicKeywords) do
+			if strfind(msg:lower(), key) then
+				isHeroic = true
+			end
+		end
+		wordcount = string.len(msg)
+	else
+		local parts =GBB.SplitNoNb(msg)
+		for ip, p in pairs(parts) do
+			if p=="run" or p=="runs" then
+				hasrun=true
+			end
+			
+			local x=GBB.tagList[p]
+		
+			if GBB.HeroicKeywords[p] ~= nil then
+				isHeroic = true
+			end
+
+			if x==nil then
+				if GBB.tagList[p.."run"]~=nil then
+					runDungeon=GBB.tagList[p.."run"]
+					runrequired=true			
+				end
+			elseif x==GBB.TAGBAD then
+				isBad=true
+				break
+			elseif x==GBB.TAGSEARCH then
+				isGood=true
+			else
+				dungeons[x]=true
+			end
+		end
+		wordcount = #(parts)
 	end
 	
 	if runrequired and hasrun and runDungeon and isBad==false then
@@ -568,7 +602,7 @@ function GBB.GetDungeons(msg,name)
 	end
 	
 	
-	return dungeons, isGood, isBad, #(parts)
+	return dungeons, isGood, isBad, wordcount, isHeroic
 		
 end
 
@@ -610,13 +644,13 @@ function GBB.PhraseMessage(msg,name,guid,channel)
 		return
 	end
 	--flm RFD need healer and 3 dps
-	local dungeonList,isGood,isBad,wordcount=GBB.GetDungeons(msg,name)
+	local dungeonList, isGood, isBad, wordcount, isHeroic = GBB.GetDungeons(msg,name)
 	
 	if type(dungeonList) ~= "table" then return end
 	
 	local dungeonTXT=""
 	
-	if GBB.DB.UseAllInLFG and isBad==false and isGood==false and string.lower(L["lfg_channel"])==string.lower(channel) then
+	if GBB.DB.UseAllInLFG and isBad==false and isGood==false and string.lower(GBB.L["lfg_channel"])==string.lower(channel) then
 		isGood=true
 		if next(dungeonList) == nil then 
 			dungeonList["MISC"]=true
@@ -638,7 +672,9 @@ function GBB.PhraseMessage(msg,name,guid,channel)
 						end
 					end
 				end
-				
+
+				local isRaid = GBB.RaidList[dungeon] ~= nil
+
 				if index==0 then 
 					index=#GBB.RequestList +1
 					GBB.RequestList[index]={}
@@ -648,23 +684,20 @@ function GBB.PhraseMessage(msg,name,guid,channel)
 					GBB.RequestList[index].dungeon=dungeon
 					GBB.RequestList[index].IsGuildMember=IsInGuild() and IsGuildMember(guid)
 					GBB.RequestList[index].IsFriend=C_FriendList.IsFriend(guid)
+					GBB.RequestList[index].IsPastPlayer=GBB.GroupTrans[name]~=nil
 					
-					if GBB.FilterDungeon(dungeon) and dungeon~="TRADE" and dungeon~="MISC" and GBB.FoldedDungeons[dungeon]~= true then
+					if GBB.FilterDungeon(dungeon, isHeroic, isRaid) and dungeon~="TRADE" and dungeon~="MISC" and GBB.FoldedDungeons[dungeon]~= true then
 						if dungeonTXT=="" then
 							dungeonTXT=GBB.dungeonNames[dungeon]
 						else
 							dungeonTXT=GBB.dungeonNames[dungeon]..", "..dungeonTXT
 						end
 					end
-				elseif GBB.RequestList[index].message~=msg and string.lower(GBB.RequestList[index].message)~=string.lower(msg) then 
-					if GBB.RequestList[index].OldMessage then
-						GBB.RequestList[index].OldMessage=GBB.RequestList[index].message .."|n"..GBB.RequestList[index].OldMessage 
-					else
-						GBB.RequestList[index].OldMessage=GBB.RequestList[index].message
-					end			
 				end
 			
-				GBB.RequestList[index].message=msg		
+				GBB.RequestList[index].message=msg	
+				GBB.RequestList[index].IsHeroic = isHeroic
+				GBB.RequestList[index].IsRaid = isRaid
 				GBB.RequestList[index].last=requestTime
 				doUpdate=true
 			end
@@ -674,12 +707,13 @@ function GBB.PhraseMessage(msg,name,guid,channel)
 	if dungeonTXT~="" and GBB.AllowInInstance() then 
 		if GBB.DB.NotifyChat then
 			local FriendIcon=(C_FriendList.IsFriend(guid) and string.format(GBB.TxtEscapePicture,GBB.FriendIcon) or "") ..
-						 ((IsInGuild() and IsGuildMember(guid)) and string.format(GBB.TxtEscapePicture,GBB.GuildIcon) or "")
+						 ((IsInGuild() and IsGuildMember(guid)) and string.format(GBB.TxtEscapePicture,GBB.GuildIcon) or "") ..
+						 (GBB.GroupTrans[name]~=nil and string.format(GBB.TxtEscapePicture,GBB.PastPlayerIcon) or "" )
 			local linkname=	"|Hplayer:"..name.."|h[|c"..RAID_CLASS_COLORS[engClass].colorStr ..name.."|r]|h"
 			if GBB.DB.OneLineNotification then 
 				DEFAULT_CHAT_FRAME:AddMessage(GBB.MSGPREFIX..linkname..FriendIcon..": "..msg,GBB.DB.NotifyColor.r,GBB.DB.NotifyColor.g,GBB.DB.NotifyColor.b)
 			else
-				DEFAULT_CHAT_FRAME:AddMessage(GBB.MSGPREFIX..string.format(L["msgNewRequest"],linkname..FriendIcon,dungeonTXT),GBB.DB.NotifyColor.r*.8,GBB.DB.NotifyColor.g*.8,GBB.DB.NotifyColor.b*.8)
+				DEFAULT_CHAT_FRAME:AddMessage(GBB.MSGPREFIX..string.format(GBB.L["msgNewRequest"],linkname..FriendIcon,dungeonTXT),GBB.DB.NotifyColor.r*.8,GBB.DB.NotifyColor.g*.8,GBB.DB.NotifyColor.b*.8)
 				DEFAULT_CHAT_FRAME:AddMessage(GBB.MSGPREFIX..msg,GBB.DB.NotifyColor.r,GBB.DB.NotifyColor.g,GBB.DB.NotifyColor.b)
 			end
 		end
@@ -690,7 +724,6 @@ function GBB.PhraseMessage(msg,name,guid,channel)
 	
 	
 	if doUpdate then
-	
 		for i,req in pairs(GBB.RequestList) do
 			if type(req) == "table" then
 				if req.name == name and req.last ~= requestTime and req.dungeon~="TRADE" then
@@ -704,8 +737,7 @@ function GBB.PhraseMessage(msg,name,guid,channel)
 		
 	elseif GBB.DB.OnDebug then
 		
-		
-		index=#GBB.RequestList +1
+		local index=#GBB.RequestList +1
 		GBB.RequestList[index]={}
 		GBB.RequestList[index].name=name
 		GBB.RequestList[index].class=engClass
@@ -717,6 +749,7 @@ function GBB.PhraseMessage(msg,name,guid,channel)
 		end
 		
 		GBB.RequestList[index].message=msg		
+		GBB.RequestList[index].IsHeroic = isHeroic
 		GBB.RequestList[index].last=requestTime
 		GBB.UpdateList()
 	end
@@ -738,32 +771,37 @@ local function createMenu(DungeonID,req)
 		return
 	end
 	if req then
-		GBB.PopupDynamic:AddItem(string.format(L["BtnWho"],req.name),false,WhoRequest,req.name)
-		GBB.PopupDynamic:AddItem(string.format(L["BtnWispher"],req.name),false,WhisperRequest,req.name)			
-		GBB.PopupDynamic:AddItem("",true)
-		GBB.PopupDynamic:AddItem(string.format(L["BtnIgnore"],req.name),false,IgnoreRequest,req.name)	
+		GBB.PopupDynamic:AddItem(string.format(GBB.L["BtnWho"],req.name),false,WhoRequest,req.name)
+		GBB.PopupDynamic:AddItem(string.format(GBB.L["BtnWhisper"],req.name),false,WhisperRequest,req.name)			
+		GBB.PopupDynamic:AddItem(string.format(GBB.L["BtnInvite"],req.name),false,InviteRequest,req.name)
+		GBB.PopupDynamic:AddItem(string.format(GBB.L["BtnIgnore"],req.name),false,IgnoreRequest,req.name)	
 		GBB.PopupDynamic:AddItem("",true)
 	end
 	if DungeonID then 
-		GBB.PopupDynamic:AddItem(L["BtnFold"], false,GBB.FoldedDungeons,DungeonID)
-		GBB.PopupDynamic:AddItem(L["BtnFoldAll"], false,GBB.FoldAllDungeon)
-		GBB.PopupDynamic:AddItem(L["BtnUnFoldAll"], false,GBB.UnfoldAllDungeon)
+		GBB.PopupDynamic:AddItem(GBB.L["BtnFold"], false,GBB.FoldedDungeons,DungeonID)
+		GBB.PopupDynamic:AddItem(GBB.L["BtnFoldAll"], false,GBB.FoldAllDungeon)
+		GBB.PopupDynamic:AddItem(GBB.L["BtnUnFoldAll"], false,GBB.UnfoldAllDungeon)
 		GBB.PopupDynamic:AddItem("",true)
 	end	
-	GBB.PopupDynamic:AddItem(L["CboxShowTotalTime"],false,GBB.DB,"ShowTotalTime")
-	GBB.PopupDynamic:AddItem(L["CboxOrderNewTop"],false,GBB.DB,"OrderNewTop")
-	GBB.PopupDynamic:AddItem(L["CboxEnableShowOnly"],false,GBB.DB,"EnableShowOnly")
-	GBB.PopupDynamic:AddItem(L["CboxChatStyle"],false,GBB.DB,"ChatStyle")
-	GBB.PopupDynamic:AddItem(L["CboxCompactStyle"],false,GBB.DB,"CompactStyle")	
-	GBB.PopupDynamic:AddItem(L["CboxDontTrunicate"],false,GBB.DB,"DontTrunicate")
+	GBB.PopupDynamic:AddItem(GBB.L["CboxShowTotalTime"],false,GBB.DB,"ShowTotalTime")
+	GBB.PopupDynamic:AddItem(GBB.L["CboxOrderNewTop"],false,GBB.DB,"OrderNewTop")
+	GBB.PopupDynamic:AddItem(GBB.L["CboxEnableShowOnly"],false,GBB.DB,"EnableShowOnly")
+	GBB.PopupDynamic:AddItem(GBB.L["CboxChatStyle"],false,GBB.DB,"ChatStyle")
+	GBB.PopupDynamic:AddItem(GBB.L["CboxCompactStyle"],false,GBB.DB,"CompactStyle")	
+	GBB.PopupDynamic:AddItem(GBB.L["CboxDontTrunicate"],false,GBB.DB,"DontTrunicate")
 	GBB.PopupDynamic:AddItem("",true)
-	GBB.PopupDynamic:AddItem(L["CboxNotifySound"],false,GBB.DB,"NotifySound")
-	GBB.PopupDynamic:AddItem(L["CboxNotifyChat"],false,GBB.DB,"NotifyChat")		
+	GBB.PopupDynamic:AddItem(GBB.L["CboxNotifySound"],false,GBB.DB,"NotifySound")
+	GBB.PopupDynamic:AddItem(GBB.L["CboxNotifyChat"],false,GBB.DB,"NotifyChat")		
 	GBB.PopupDynamic:AddItem("",true)
-	GBB.PopupDynamic:AddItem(L["HeaderSettings"],false, GBB.Options.Open, 1)
-	GBB.PopupDynamic:AddItem(L["TBCPanelFilter"], false, GBB.Options.Open, 2)
-	GBB.PopupDynamic:AddItem(L["PanelAbout"], false, GBB.Options.Open, 6)
-	GBB.PopupDynamic:AddItem(L["BtnCancel"],false)
+	GBB.PopupDynamic:AddItem(GBB.L["HeaderSettings"],false, GBB.Options.Open, 1)
+	
+	if GBB.GameType == "TBC" then
+		GBB.PopupDynamic:AddItem(GBB.L["TBCPanelFilter"], false, GBB.Options.Open, 1 + GBB.PANELOFFSET)
+	else
+		GBB.PopupDynamic:AddItem(GBB.L["PanelFilter"], false, GBB.Options.Open, 2 + GBB.PANELOFFSET)
+	end
+	GBB.PopupDynamic:AddItem(GBB.L["PanelAbout"], false, GBB.Options.Open, 5 + GBB.PANELOFFSET)
+	GBB.PopupDynamic:AddItem(GBB.L["BtnCancel"],false)
 	GBB.PopupDynamic:Show()
 end
 
@@ -775,7 +813,7 @@ function GBB.ClickFrame(self,button)
 end
 
 function GBB.ClickDungeon(self,button)
-	id=string.match(self:GetName(), "GBB.Dungeon_(.+)") 
+	local id=string.match(self:GetName(), "GBB.Dungeon_(.+)") 
 	if id==nil or id==0 then return end
 	
 	if button=="LeftButton" then 
@@ -792,7 +830,7 @@ function GBB.ClickDungeon(self,button)
 end
 
 function GBB.ClickRequest(self,button)
-	id = string.match(self:GetName(), "GBB.Item_(.+)")
+	local id = string.match(self:GetName(), "GBB.Item_(.+)")
 	if id==nil or id==0 then return end
 	
 	local req=GBB.RequestList[tonumber(id)]
@@ -800,6 +838,8 @@ function GBB.ClickRequest(self,button)
 		if IsShiftKeyDown() then
 			WhoRequest(req.name)
 			--SendWho( req.name )
+		elseif IsControlKeyDown() then
+			InviteRequest(req.name)
 		else
 			WhisperRequest(req.name)
 		end
@@ -828,15 +868,13 @@ function GBB.RequestShowTooltip(self)
 		end
 		
 		if GBB.DB.ChatStyle then
-			GameTooltip:AddLine(string.format(L["msgLastTime"],GBB.formatTime(time()-req.last)).."|n"..string.format(L["msgTotalTime"],GBB.formatTime(time()-req.start)))
+			GameTooltip:AddLine(string.format(GBB.L["msgLastTime"],GBB.formatTime(time()-req.last)).."|n"..string.format(GBB.L["msgTotalTime"],GBB.formatTime(time()-req.start)))
 		elseif GBB.DB.ShowTotalTime then
-			GameTooltip:AddLine(string.format(L["msgLastTime"],GBB.formatTime(time()-req.last)))
+			GameTooltip:AddLine(string.format(GBB.L["msgLastTime"],GBB.formatTime(time()-req.last)))
 		else
-			GameTooltip:AddLine(string.format(L["msgTotalTime"],GBB.formatTime(time()-req.start)))
+			GameTooltip:AddLine(string.format(GBB.L["msgTotalTime"],GBB.formatTime(time()-req.start)))
 		end
-		if req.OldMessage then
-			GameTooltip:AddLine(req.OldMessage,GBB.DB.HistoryColor.r,GBB.DB.HistoryColor.g,GBB.DB.HistoryColor.b,1)
-		end
+		
 		if GBB.DB.EnableGroup and GBB.GroupTrans and GBB.GroupTrans[req.name] then
 			local entry=GBB.GroupTrans[req.name] 
 			

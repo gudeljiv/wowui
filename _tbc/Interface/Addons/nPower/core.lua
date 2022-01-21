@@ -62,7 +62,7 @@ f.Power:SetScale(nPower.scale)
 f.Power:SetSize(nPower.sizeWidth, 3)
 f.Power:SetPoint("CENTER", f, 0, -23)
 f.Power:SetStatusBarTexture("Interface\\AddOns\\nPower\\media\\statusbarTexture")
-f.Power:SetAlpha(0)
+f.Power:SetAlpha(1)
 
 f.Power.Value = f.Power:CreateFontString(nil, "ARTWORK")
 

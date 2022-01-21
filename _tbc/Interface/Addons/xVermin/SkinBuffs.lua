@@ -161,11 +161,107 @@ local function SkinPet()
 	end
 end
 
+local function SkinFocus()
+	if FocusFrameToT:IsVisible() then
+		for i = 1, 32 do
+			if _G["FocusFrameToTBuff" .. i] then
+				_G["FocusFrameToTBuff" .. i]:Hide()
+			end
+			if _G["FocusFrameToTDebuff" .. i] then
+				_G["FocusFrameToTDebuff" .. i]:Hide()
+			end
+		end
+	end
+
+	if FocusFrame:IsShown() then
+		hasPet, isHunterPet = HasPetUI()
+		if hasPet then
+			petName = UnitName("pet")
+			focusName = UnitName("focus")
+		end
+
+		for i = 1, 32 do
+			B_spellName, B_spellId, _, _, _, _, B_unitCaster = UnitBuff("focus", i)
+			D_spellName, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff("focus", i)
+
+			------------------------------------------------------------------------------------------------------------------------------------------------------
+			-- BUFFS ---------------------------------------------------------------------------------------------------------------------------------------------
+			------------------------------------------------------------------------------------------------------------------------------------------------------
+			frame = _G["FocusFrameBuff" .. i]
+			frameBorder = _G["FocusFrameBuff" .. i .. "Border"]
+			frameCount = _G["FocusFrameBuff" .. i .. "Count"]
+
+			if frameBorder then
+				frameBorder:Hide()
+			end
+
+			if frameCount then
+				frameCount:SetFont(xVermin.Config.font.atari, xVermin.Config.buff.fontsize, xVermin.Config.buff.outline)
+				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
+			end
+
+			if frame then
+				frame:CreateBeautyBorder(xVermin.Config.buff.bordersize)
+				frame:SetBeautyBorderTexture(xVermin.Config.border.default)
+				-- frame:SetScale(xVermin.Config.buff.scale)
+				frame:SetSize(28, 28)
+			end
+			-- else
+			-- 	if frame then
+			-- 		frame:Hide()
+			-- 	end
+			-- end
+
+			------------------------------------------------------------------------------------------------------------------------------------------------------
+			-- DEBUFFS -------------------------------------------------------------------------------------------------------------------------------------------
+			------------------------------------------------------------------------------------------------------------------------------------------------------
+			frame = _G["FocusFrameDebuff" .. i]
+			frameBorder = _G["FocusFrameDebuff" .. i .. "Border"]
+			frameCount = _G["FocusFrameDebuff" .. i .. "Count"]
+
+			-- if D_unitCaster == "player" or UnitName("focus") == UnitName("player") then
+			if frameBorder then
+				frameBorder:Hide()
+			end
+
+			if frameCount then
+				frameCount:SetFont(xVermin.Config.font.arial, xVermin.Config.debuff.fontsize, xVermin.Config.debuff.outline)
+				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 3, 0)
+			end
+
+			if select(4, UnitDebuff("focus", i)) then
+				color = xVermin.Config.ReplacedDebuffTypeColor[select(4, UnitDebuff("focus", i))]
+			else
+				color = xVermin.Config.ReplacedDebuffTypeColor["none"]
+			end
+
+			if frame then
+				frame:CreateBeautyBorder(xVermin.Config.debuff.bordersize)
+				frame:SetBeautyBorderTexture(xVermin.Config.border.colorize)
+				frame:SetBeautyBorderColor(color.r, color.g, color.b)
+				-- frame:SetScale(xVermin.Config.buff.scale)
+				frame:SetSize(28, 28)
+			end
+			-- else
+			-- if frame then
+			-- frame:Hide()
+			-- end
+			-- end
+		end
+	end
+end
+
 local tf = CreateFrame("Frame")
 tf:RegisterEvent("PLAYER_TARGET_CHANGED")
 tf:SetScript("OnEvent", SkinTarget)
 TargetFrame:HookScript("OnUpdate", SkinTarget)
 hooksecurefunc("TargetFrame_UpdateAuras", SkinTarget)
+
+local ff = CreateFrame("Frame")
+ff:RegisterEvent("PLAYER_FOCUS_CHANGED")
+ff:SetScript("OnEvent", SkinFocus)
+FocusFrame:HookScript("OnUpdate", SkinFocus)
+-- hooksecurefunc("FocusFrame_UpdateAuras", SkinFocus)
 
 local pf = CreateFrame("Frame")
 pf:RegisterUnitEvent("UNIT_AURA", "pet")

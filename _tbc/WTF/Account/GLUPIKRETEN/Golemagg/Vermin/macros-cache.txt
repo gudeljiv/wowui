@@ -1,7 +1,7 @@
 VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
-#showtooltip
+#showtooltip Mortal Strike
 /startattack
-/cast Mortal Strike
+/cast [stance:1/3] Mortal Strike; Berserker Stance
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

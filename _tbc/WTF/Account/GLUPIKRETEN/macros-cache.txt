@@ -2,6 +2,11 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /castsequence Find Herbs,Find Minerals
 END
+VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Coarse Sharpening Stone
+/use [button:1] 16; [button:2] 17
+END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:0
@@ -9,8 +14,8 @@ VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4539
-/castsequence [combat] reset=combat item:3928,item:1710
+/use [nocombat]item:3771
+/castsequence [combat] reset=combat item:1710
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:3771
@@ -18,9 +23,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /use item:3771
 END
 VER 3 000000000000000B "TEST" "132089"
-/run MultiBarBottomLeftButton1:ClearAllPoints()
-/run MultiBarBottomLeftButton1:SetPoint("BOTTOMLEFT", MainMenuBar, "TOPLEFT", 9, -4)
-END
-VER 3 000000000000000A "TSMMacro" "INV_Misc_Flower_01"
-/click TSMAuctioningBtn
+/run TargetFrameTextureFrame.HealthBarText:ClearAllPoints()
+/run TargetFrameTextureFrame.HealthBarText:SetPoint("CENTER", TargetFrame, "CENTER", -50, 7)
+/run TargetFrameManaBarText:SetScale(0.8)
 END

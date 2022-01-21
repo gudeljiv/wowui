@@ -11,6 +11,7 @@ local function FixBindings()
 	SetBinding("CTRL-SHIFT-V", "NAMEPLATES", 1)
 	SetBinding("CTRL-F", "FOLLOWTARGET", 1)
 	SetBinding("¸", "TARGETNEARESTENEMY", 1)
+	SetBinding("SHIFT-F", "FOCUSTARGET", 1)
 
 	SetBinding("CTRL-R", "TOGGLEGROUPFINDER", 1)
 	SetBinding("CTRL-Y", "TOGGLEACHIEVEMENT", 1)

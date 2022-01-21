@@ -1,19 +1,18 @@
-# [3.7.5](https://github.com/WeakAuras/WeakAuras2/tree/3.7.5) (2022-01-11)
+# [3.7.6](https://github.com/WeakAuras/WeakAuras2/tree/3.7.6) (2022-01-17)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/3.7.4...3.7.5)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/3.7.5...3.7.6)
 
 ## Highlights
 
- Fixes for regressions in 3.7.4 
+ Bug fixes 
 
 ## Commits
 
-Stanzilla (1):
+asakawa (1):
 
-- Update WeakAurasModelPaths from wow.tools
+- remove the retail check on all incoming heal settings
 
-Vardex (2):
+mrbuds (1):
 
-- Fix checking for unique keys
-- Fix generating unique key for suboptions
+- sanitize foreground/background subregions (#3427)
 
