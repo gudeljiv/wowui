@@ -125,17 +125,47 @@ local function TrainerFunc(frame)
 	ClassTrainerMoneyFrame:ClearAllPoints()
 	ClassTrainerMoneyFrame:SetPoint("TOPLEFT", _G["ClassTrainerFrame"], "TOPLEFT", 143, -49)
 	ClassTrainerGreetingText:Hide()
+
+	-- ElvUI fixes
+	local function ElvUIFixes()
+		local E = unpack(ElvUI)
+		if E.private.skins.blizzard.enable and E.private.skins.blizzard.trainer then
+			regions[2]:Hide()
+			regions[3]:Hide()
+			RecipeInset:Hide()
+			DetailsInset:Hide()
+			_G["ClassTrainerFrame"]:SetHeight(512)
+			_G["ClassTrainerTrainButton"]:ClearAllPoints()
+			_G["ClassTrainerTrainButton"]:SetPoint("BOTTOMRIGHT", _G["ClassTrainerFrame"], "BOTTOMRIGHT", -42, 78)
+		end
+	end
+
+	-- Run ElvUI fixes when ElvUI has loaded
+	if IsAddOnLoaded("ElvUI") then
+		ElvUIFixes()
+	else
+		local waitFrame = CreateFrame("FRAME")
+		waitFrame:RegisterEvent("ADDON_LOADED")
+		waitFrame:SetScript("OnEvent", function(self, event, arg1)
+			if arg1 == "ElvUI" then
+				ElvUIFixes()
+				waitFrame:UnregisterAllEvents()
+			end
+		end)
+	end
+
 end
 
+-- Run function when Trainer UI has loaded
 if IsAddOnLoaded("Blizzard_TrainerUI") then
 	TrainerFunc()
 else
-	local f = CreateFrame("FRAME")
-	f:RegisterEvent("ADDON_LOADED")
-	f:SetScript("OnEvent", function(self, event, arg1)
+	local waitFrame = CreateFrame("FRAME")
+	waitFrame:RegisterEvent("ADDON_LOADED")
+	waitFrame:SetScript("OnEvent", function(self, event, arg1)
 		if arg1 == "Blizzard_TrainerUI" then
 			TrainerFunc()
-			f:UnregisterAllEvents()
+			waitFrame:UnregisterAllEvents()
 		end
 	end)
 end

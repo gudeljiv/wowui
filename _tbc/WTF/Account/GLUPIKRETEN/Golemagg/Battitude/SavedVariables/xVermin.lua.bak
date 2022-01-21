@@ -1,17 +1,48 @@
 
 xKillCount = {
-	["show"] = false,
+	["show"] = true,
 	["position"] = {
-		["y"] = -350,
-		["x"] = 5,
+		["y"] = -267.949462890625,
+		["x"] = 34.17314529418945,
 		["to"] = "TOPLEFT",
 		["from"] = "TOPLEFT",
-		["anchor"] = "UIParent",
 	},
 	["experience"] = {
-		["pulltotal"] = 96,
-		["totaltotal"] = 1495,
+		["pulltotal"] = 1650,
+		["totaltotal"] = 5739,
 	},
 	["killLog"] = {
+		["Mindless Zombie"] = {
+			["name"] = "Mindless Zombie",
+			["count"] = 8,
+		},
+		["Wretched Zombie"] = {
+			["name"] = "Wretched Zombie",
+			["count"] = 14,
+		},
+		["Rattlecage Skeleton"] = {
+			["name"] = "Rattlecage Skeleton",
+			["count"] = 12,
+		},
+		["Duskbat"] = {
+			["name"] = "Duskbat",
+			["count"] = 7,
+		},
+		["Young Scavenger"] = {
+			["name"] = "Young Scavenger",
+			["count"] = 8,
+		},
+		["Young Night Web Spider"] = {
+			["name"] = "Young Night Web Spider",
+			["count"] = 11,
+		},
+		["Night Web Spider"] = {
+			["name"] = "Night Web Spider",
+			["count"] = 8,
+		},
+		["Samuel Fipps"] = {
+			["name"] = "Samuel Fipps",
+			["count"] = 1,
+		},
 	},
 }

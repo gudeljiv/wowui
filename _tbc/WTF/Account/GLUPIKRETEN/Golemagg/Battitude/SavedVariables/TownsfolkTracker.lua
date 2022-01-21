@@ -2,7 +2,7 @@
 tfTrackingList = {
 	["CLASS_TRAINER"] = true,
 	["TRANSPORTATION"] = true,
-	["DUNGEON"] = true,
+	["DUNGEON"] = false,
 	["Herbalism"] = false,
 	["TRADE_GOODS"] = false,
 	["REAGENTS"] = false,
@@ -11,7 +11,7 @@ tfTrackingList = {
 	["STABLE_MASTER"] = false,
 	["INNKEEPER"] = false,
 	["FLIGHTMASTER"] = true,
-	["RAID"] = true,
+	["RAID"] = false,
 	["Leatherworking"] = false,
 	["Cooking"] = false,
 	["Enchanting"] = false,

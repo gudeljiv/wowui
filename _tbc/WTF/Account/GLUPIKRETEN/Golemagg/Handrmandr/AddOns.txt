@@ -7,3 +7,5 @@ Bagnon_VoidStorage: disabled
 BagBrother: disabled
 RXPGuides: disabled
 nPower: disabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled

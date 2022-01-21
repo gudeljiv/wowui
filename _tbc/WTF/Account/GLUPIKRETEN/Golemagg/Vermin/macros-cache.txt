@@ -1,7 +1,7 @@
-VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
+VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast Sunder Armor
-/cast Bloodrage
+/startattack
+/cast Mortal Strike
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -49,8 +49,8 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Heroic Strike
 END
-VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
+VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/startattack
-/cast Mortal Strike
+/cast Sunder Armor
+/cast Bloodrage
 END

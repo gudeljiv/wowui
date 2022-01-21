@@ -67,6 +67,10 @@ local function TradeSkillFunc(frame)
 	-- Hide expand tab (left of All button)
 	_G["TradeSkillExpandTabLeft"]:Hide()
 
+	-- Hide skills list horizontal dividing bar (this hides it behind RecipeInset)
+	TradeSkillHorizontalBarLeft:SetSize(1, 1)
+	TradeSkillHorizontalBarLeft:Hide()
+
 	-- Get tradeskill frame textures
 	local regions = {_G["TradeSkillFrame"]:GetRegions()}
 
@@ -83,10 +87,6 @@ local function TradeSkillFunc(frame)
 	-- Hide bottom left and bottom right textures
 	regions[4]:Hide()
 	regions[5]:Hide()
-
-	-- Hide skills list dividing bar
-	regions[9]:Hide()
-	regions[10]:Hide()
 
 	-- Move create button row
 	_G["TradeSkillCreateButton"]:ClearAllPoints()
@@ -108,8 +108,38 @@ local function TradeSkillFunc(frame)
 	TradeSkillSubClassDropDown:ClearAllPoints()
 	TradeSkillSubClassDropDown:SetPoint("RIGHT", TradeSkillInvSlotDropDown, "LEFT", 0, 0)
 
+	-- ElvUI fixes
+	local function ElvUIFixes()
+		local E = unpack(ElvUI)
+		if E.private.skins.blizzard.enable and E.private.skins.blizzard.tradeskill then
+			regions[2]:Hide()
+			regions[3]:Hide()
+			RecipeInset:Hide()
+			DetailsInset:Hide()
+			_G["TradeSkillFrame"]:SetHeight(512)
+			_G["TradeSkillCancelButton"]:ClearAllPoints()
+			_G["TradeSkillCancelButton"]:SetPoint("BOTTOMRIGHT", _G["TradeSkillFrame"], "BOTTOMRIGHT", -42, 78)
+			_G["TradeSkillRankFrame"]:ClearAllPoints()
+			_G["TradeSkillRankFrame"]:SetPoint("TOPLEFT", _G["TradeSkillFrame"], "TOPLEFT", 24, -44)
+		end
+	end
+
+	-- Run ElvUI fixes when ElvUI has loaded
+	if IsAddOnLoaded("ElvUI") then
+		ElvUIFixes()
+	else
+		local waitFrame = CreateFrame("FRAME")
+		waitFrame:RegisterEvent("ADDON_LOADED")
+		waitFrame:SetScript("OnEvent", function(self, event, arg1)
+			if arg1 == "ElvUI" then
+				ElvUIFixes()
+				waitFrame:UnregisterAllEvents()
+			end
+		end)
+	end
+
 	-- Classic Profession Filter addon fixes
-	if IsAddOnLoaded("ClassicProfessionFilter") and TradeSkillFrame.SearchBox and TradeSkillFrame.HaveMats and TradeSkillFrame.HaveMats.text then
+	if IsAddOnLoaded("ClassicProfessionFilter") and TradeSkillFrame.SearchBox and TradeSkillFrame.HaveMats and TradeSkillFrame.HaveMats.text and TradeSkillFrame.SearchMats and TradeSkillFrame.SearchMats.text then
 		TradeSkillFrame.SearchBox:ClearAllPoints()
 		TradeSkillFrame.SearchBox:SetPoint("LEFT", TradeSkillRankFrame, "RIGHT", 20, -10)
 
@@ -142,12 +172,12 @@ end
 if IsAddOnLoaded("Blizzard_TradeSkillUI") then
 	TradeSkillFunc("TradeSkill")
 else
-	local f = CreateFrame("FRAME")
-	f:RegisterEvent("ADDON_LOADED")
-	f:SetScript("OnEvent", function(self, event, arg1)
+	local waitFrame = CreateFrame("FRAME")
+	waitFrame:RegisterEvent("ADDON_LOADED")
+	waitFrame:SetScript("OnEvent", function(self, event, arg1)
 		if arg1 == "Blizzard_TradeSkillUI" then
 			TradeSkillFunc("TradeSkill")
-			f:UnregisterAllEvents()
+			waitFrame:UnregisterAllEvents()
 		end
 	end)
 end

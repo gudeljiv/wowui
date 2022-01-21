@@ -1,16 +1,6 @@
 
 xKillCount = {
 	["show"] = true,
-	["position"] = {
-		["y"] = 318.499847412109,
-		["x"] = 94.0000915527344,
-		["to"] = "LEFT",
-		["from"] = "LEFT",
-	},
-	["experience"] = {
-		["pulltotal"] = 2262,
-		["totaltotal"] = 80602,
-	},
 	["killLog"] = {
 		["Rotting Worm"] = {
 			["name"] = "Rotting Worm",
@@ -36,17 +26,27 @@ xKillCount = {
 			["name"] = "Twilight's Hammer Ambassador",
 			["count"] = 10,
 		},
-		["Rotting Cadaver"] = {
-			["name"] = "Rotting Cadaver",
-			["count"] = 45,
+		["Shadowforge Senator"] = {
+			["name"] = "Shadowforge Senator",
+			["count"] = 9,
 		},
 		["Black Rat"] = {
 			["name"] = "Black Rat",
 			["count"] = 1,
 		},
-		["Shadowforge Senator"] = {
-			["name"] = "Shadowforge Senator",
-			["count"] = 9,
+		["Rotting Cadaver"] = {
+			["name"] = "Rotting Cadaver",
+			["count"] = 45,
 		},
+	},
+	["experience"] = {
+		["totaltotal"] = 80602,
+		["pulltotal"] = 2262,
+	},
+	["position"] = {
+		["y"] = 318.499847412109,
+		["x"] = 94.0000915527344,
+		["to"] = "LEFT",
+		["from"] = "LEFT",
 	},
 }
