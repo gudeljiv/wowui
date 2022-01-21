@@ -115,13 +115,17 @@ f:SetScript("OnEvent",
 			TargetFrame:HookScript(
 				"OnUpdate",
 				function(self)
-					local hc = xVermin:FormatValue(UnitHealth("target"))
-					local hm = xVermin:FormatValue(UnitHealthMax("target"))
-					if (UnitHealth("target") < 10000) then hc = xVermin:FormatNumber(UnitHealth("target")) end
-					if (UnitHealthMax("target") < 10000) then hm = xVermin:FormatNumber(UnitHealthMax("target")) end
+					TargetFrameTextureFrame.HealthBarText:SetText("")
+
+					if not UnitIsDeadOrGhost("target") then
+						local hc = xVermin:FormatValue(UnitHealth("target"))
+						local hm = xVermin:FormatValue(UnitHealthMax("target"))
+						if (UnitHealth("target") < 10000) then hc = xVermin:FormatNumber(UnitHealth("target")) end
+						if (UnitHealthMax("target") < 10000) then hm = xVermin:FormatNumber(UnitHealthMax("target")) end
+						TargetFrameTextureFrame.HealthBarText:SetText(hc .. " / ".. hm)
+					end
 
 					TargetFrameHealthBarText:Hide()
-					TargetFrameTextureFrame.HealthBarText:SetText(hc .. " / ".. hm)
 					TargetFrameTextureFrame.HealthBarText:ClearAllPoints()
 					TargetFrameTextureFrame.HealthBarText:SetPoint("CENTER", TargetFrame, "CENTER", -50, 7)
 					TargetFrameTextureFrame.HealthBarText:Show()
@@ -134,12 +138,16 @@ f:SetScript("OnEvent",
 			FocusFrame:HookScript(
 				"OnUpdate",
 				function(self)
-					local hc = xVermin:FormatValue(UnitHealth("focus"))
-					local hm = xVermin:FormatValue(UnitHealthMax("focus"))
-					if (UnitHealth("focus") < 10000) then hc = xVermin:FormatNumber(UnitHealth("focus")) end
-					if (UnitHealthMax("focus") < 10000) then hm = xVermin:FormatNumber(UnitHealthMax("focus")) end
+					FocusFrameTextureFrame.HealthBarText:SetText("")
 
-					FocusFrameTextureFrame.HealthBarText:SetText(hc .. " / ".. hm)
+					if not UnitIsDeadOrGhost("focus") then
+						local hc = xVermin:FormatValue(UnitHealth("focus"))
+						local hm = xVermin:FormatValue(UnitHealthMax("focus"))
+						if (UnitHealth("focus") < 10000) then hc = xVermin:FormatNumber(UnitHealth("focus")) end
+						if (UnitHealthMax("focus") < 10000) then hm = xVermin:FormatNumber(UnitHealthMax("focus")) end
+						FocusFrameTextureFrame.HealthBarText:SetText(hc .. " / ".. hm)
+					end
+
 					FocusFrameTextureFrame.HealthBarText:ClearAllPoints()
 					FocusFrameTextureFrame.HealthBarText:SetPoint("CENTER", FocusFrame, "CENTER", -50, 7)
 					FocusFrameTextureFrame.HealthBarText:Show()

@@ -24,6 +24,10 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["7083085"] = "6609:1",
 		["is"] = "9783:0:0:1553:0",
 	},
+	["Wolf Rider's Gloves of the Monkey"] = {
+		["is"] = "15372:0:0:608:0",
+		["7087671"] = "40000:1",
+	},
 	["Stout Battlehammer of Arcane Wrath"] = {
 		["is"] = "789:0:0:1801:0",
 		["7081680"] = "5400:1",
@@ -43,6 +47,10 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["7081734"] = "6700:1",
 		["is"] = "5254:0:0:0:0",
 	},
+	["Windchaser Woolies"] = {
+		["is"] = "14433:0:0:0:0",
+		["7087669"] = "89000:1",
+	},
 	["Bruiseweed"] = {
 		["is"] = "2453:0:0:0:0",
 		["7085775"] = "670:2",
@@ -58,6 +66,10 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["7083329"] = "6300:3",
 		["7085963"] = "8100:4",
 		["is"] = "3818:0:0:0:0",
+	},
+	["Goblin Nutcracker of the Monkey"] = {
+		["is"] = "8194:0:0:594:0",
+		["7087668"] = "29800:1",
 	},
 	["Rough Stone"] = {
 		["is"] = "2835:0:0:0:0",
@@ -94,6 +106,10 @@ AUCTIONATOR_PRICING_HISTORY = {
 	["Bolt of Woolen Cloth"] = {
 		["is"] = "2997:0:0:0:0",
 		["7080501"] = "780:1",
+	},
+	["Imposing Gloves of the Eagle"] = {
+		["is"] = "15166:0:0:863:0",
+		["7087670"] = "40000:1",
 	},
 	["Scroll of Protection II"] = {
 		["is"] = "1478:0:0:0:0",
@@ -149,6 +165,10 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["7079021"] = "2900:3",
 		["7080501"] = "3100:6",
 	},
+	["Ancient Chestpiece of the Monkey"] = {
+		["is"] = "15601:0:0:619:0",
+		["7087669"] = "60000:1",
+	},
 	["Emblazoned Bracers"] = {
 		["is"] = "4049:0:0:0:0",
 		["7085776"] = "4800:1",
@@ -166,12 +186,28 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "4566:0:0:756:0",
 		["7079243"] = "9800:1",
 	},
+	["Ancient Chestpiece of the Falcon"] = {
+		["is"] = "15601:0:0:452:0",
+		["7087669"] = "40000:1",
+	},
+	["Shredder Operating Manual - Page 2"] = {
+		["is"] = "16646:0:0:0:0",
+		["7081734"] = "1820:1",
+	},
 	["Linen Cloth"] = {
 		["7079243"] = "38:19",
 		["7080500"] = "19:4",
 		["is"] = "2589:0:0:0:0",
 		["7081734"] = "17:13",
 		["7082977"] = "99:10",
+	},
+	["Ebonclaw Reaver of the Bear"] = {
+		["is"] = "1994:0:0:1193:0",
+		["7087668"] = "40000:1",
+	},
+	["Wolf Rider's Leggings of Agility"] = {
+		["is"] = "15374:0:0:361:0",
+		["7087671"] = "110000:1",
 	},
 	["Minor Mana Potion"] = {
 		["is"] = "2455:0:0:0:0",
@@ -192,6 +228,10 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["7083085"] = "109:6",
 		["is"] = "3576:0:0:0:0",
 	},
+	["Imposing Boots of the Monkey"] = {
+		["is"] = "15162:0:0:606:0",
+		["7087670"] = "40000:1",
+	},
 	["Bristlebark Bindings"] = {
 		["is"] = "14569:0:0:0:0",
 		["7081680"] = "12200:1",
@@ -200,10 +240,22 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "5117:0:0:0:0",
 		["7081830"] = "820:8",
 	},
+	["Silver Bar"] = {
+		["is"] = "2842:0:0:0:0",
+		["7082500"] = "400:1",
+	},
+	["Ancient Pauldrons of the Eagle"] = {
+		["is"] = "15608:0:0:863:0",
+		["7087670"] = "90000:1",
+	},
 	["Thistlefur Gloves of the Owl"] = {
 		["is"] = "14199:0:0:769:0",
 		["7081939"] = "11200:1",
 		["7085776"] = "11100:1",
+	},
+	["Spiritchaser Staff of the Eagle"] = {
+		["is"] = "1613:0:0:871:0",
+		["7087668"] = "80000:1",
 	},
 	["Bronze Bar"] = {
 		["is"] = "2841:0:0:0:0",
@@ -221,6 +273,18 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "6408:0:0:0:0",
 		["7085776"] = "26800:1",
 	},
+	["Blazing Emblem"] = {
+		["is"] = "2802:0:0:0:0",
+		["7087668"] = "509000:1",
+	},
+	["Royal Trousers of the Owl"] = {
+		["is"] = "9911:0:0:788:0",
+		["7087669"] = "40000:1",
+	},
+	["Champion's Helmet of the Monkey"] = {
+		["is"] = "7540:0:0:620:0",
+		["7087669"] = "40000:1",
+	},
 	["Mail Combat Boots"] = {
 		["is"] = "4076:0:0:0:0",
 		["7085963"] = "5000:1",
@@ -228,6 +292,10 @@ AUCTIONATOR_PRICING_HISTORY = {
 	["Shredder Operating Manual - Page 4"] = {
 		["is"] = "16648:0:0:0:0",
 		["7081734"] = "575:1",
+	},
+	["Warbringer's Legguards of the Bear"] = {
+		["is"] = "14945:0:0:1210:0",
+		["7087670"] = "40000:1",
 	},
 	["Khadgar's Whisker"] = {
 		["is"] = "3358:0:0:0:0",
@@ -237,6 +305,10 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "14166:0:0:26:0",
 		["7081734"] = "6700:1",
 	},
+	["Cabalist Bracers of the Monkey"] = {
+		["is"] = "7534:0:0:600:0",
+		["7087670"] = "40000:1",
+	},
 	["Firestarter"] = {
 		["is"] = "8184:0:0:0:0",
 		["7085963"] = "24200:1",
@@ -244,6 +316,8 @@ AUCTIONATOR_PRICING_HISTORY = {
 	["Mageweave Cloth"] = {
 		["is"] = "4338:0:0:0:0",
 		["7083329"] = "540:2",
+		["7087673"] = "3300:12",
+		["7087672"] = "3300:20",
 	},
 	["Light Feather"] = {
 		["is"] = "17056:0:0:0:0",
@@ -254,13 +328,13 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "3577:0:0:0:0",
 		["7085963"] = "960:1",
 	},
-	["Shredder Operating Manual - Page 2"] = {
-		["is"] = "16646:0:0:0:0",
-		["7081734"] = "1820:1",
+	["Flask of Mojo"] = {
+		["is"] = "8151:0:0:0:0",
+		["7087672"] = "1975:1",
 	},
-	["Silver Bar"] = {
-		["is"] = "2842:0:0:0:0",
-		["7082500"] = "400:1",
+	["Bloodwoven Bracers of the Owl"] = {
+		["is"] = "14260:0:0:771:0",
+		["7087670"] = "70000:1",
 	},
 	["Heavy Hide"] = {
 		["is"] = "4235:0:0:0:0",
@@ -14221,8 +14295,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4085"] = 96092,
 		},
 		["Flask of Mojo"] = {
-			["mr"] = 1000,
-			["H4085"] = 1000,
+			["mr"] = 1413,
+			["cc"] = 7,
+			["id"] = "8151:0:0:0:0",
+			["sc"] = 11,
+			["H4085"] = 1413,
 		},
 		["Adept's Elixir"] = {
 			["mr"] = 12986,
@@ -15109,10 +15186,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4085"] = 1389906,
 		},
 		["Mageweave Cloth"] = {
-			["mr"] = 2750,
+			["mr"] = 3245,
 			["sc"] = 5,
 			["id"] = "4338:0:0:0:0",
-			["H4085"] = 2750,
+			["L4085"] = 3245,
+			["H4085"] = 3250,
 			["cc"] = 7,
 		},
 		["Talhide Chestpiece of Nature's Wrath"] = {
@@ -16057,13 +16135,34 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 358998,
 			["H4085"] = 358998,
 		},
+		["Windchaser Woolies"] = {
+			["H4085"] = 89545,
+			["cc"] = 4,
+			["id"] = "14433:0:0:0:0",
+			["sc"] = 1,
+			["mr"] = 89545,
+		},
 		["Pendant of Frozen Flame"] = {
 			["mr"] = 4729999,
 			["H4085"] = 4729999,
 		},
+		["Goblin Nutcracker of the Monkey"] = {
+			["H4085"] = 34999,
+			["cc"] = 2,
+			["id"] = "8194:0:0:595:0",
+			["sc"] = 4,
+			["mr"] = 34999,
+		},
 		["Raw Redgill"] = {
 			["mr"] = 399,
 			["H4085"] = 399,
+		},
+		["Blazing Emblem"] = {
+			["H4085"] = 510000,
+			["cc"] = 4,
+			["id"] = "2802:0:0:0:0",
+			["sc"] = 0,
+			["mr"] = 510000,
 		},
 		["Pattern: Mooncloth"] = {
 			["mr"] = 51899,
@@ -17585,17 +17684,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 11900,
 			["H4085"] = 11900,
 		},
-		["Gyrochronatom"] = {
-			["mr"] = 12999,
-			["H4085"] = 12999,
+		["Shiny Fish Scales"] = {
+			["mr"] = 498,
+			["H4085"] = 498,
 		},
 		["Arcanite Bar"] = {
 			["mr"] = 188995,
 			["H4085"] = 188995,
 		},
-		["Elixir of Major Defense"] = {
-			["mr"] = 62500,
-			["H4085"] = 62500,
+		["Iron Grenade"] = {
+			["mr"] = 693,
+			["H4085"] = 693,
 		},
 		["Owl Bracers"] = {
 			["mr"] = 11199,
@@ -17956,11 +18055,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4085"] = 100000,
 		},
 		["Runecloth"] = {
-			["H4085"] = 675,
+			["H4085"] = 815,
 			["cc"] = 7,
 			["id"] = "14047:0:0:0:0",
 			["L4085"] = 605,
-			["mr"] = 605,
+			["mr"] = 815,
 			["sc"] = 5,
 		},
 		["Scroll of Strength V"] = {
@@ -20182,13 +20281,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3006000,
 			["H4085"] = 3006000,
 		},
-		["Iron Grenade"] = {
-			["mr"] = 693,
-			["H4085"] = 693,
+		["Elixir of Major Defense"] = {
+			["mr"] = 62500,
+			["H4085"] = 62500,
 		},
-		["Shiny Fish Scales"] = {
-			["mr"] = 498,
-			["H4085"] = 498,
+		["Gyrochronatom"] = {
+			["mr"] = 12999,
+			["H4085"] = 12999,
 		},
 		["Vengeance Belt of the Bandit"] = {
 			["mr"] = 280000,
@@ -21258,6 +21357,10 @@ AUCTIONATOR_STACKING_PREFS = {
 	},
 	["medium leather"] = {
 		["stacksize"] = 10,
+		["numstacks"] = 0,
+	},
+	["flask of mojo"] = {
+		["stacksize"] = 1,
 		["numstacks"] = 0,
 	},
 	["minor healing potion"] = {

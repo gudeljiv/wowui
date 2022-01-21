@@ -260,9 +260,9 @@ ClassicCastbarsDB = {
 			1, -- [4]
 		},
 		["position"] = {
-			"TOPLEFT", -- [1]
-			275, -- [2]
-			-260, -- [3]
+			"CENTER", -- [1]
+			-10.7, -- [2]
+			-43.7, -- [3]
 		},
 		["statusColorSuccess"] = {
 			0, -- [1]

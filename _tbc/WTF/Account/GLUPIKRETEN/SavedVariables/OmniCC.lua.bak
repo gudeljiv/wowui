@@ -1,4 +1,97 @@
 
+OmniCCDB = {
+	["profileKeys"] = {
+		["Vermin - Golemagg"] = "Default",
+		["Augustin - Golemagg"] = "Default",
+	},
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "9.1.6",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["rules"] = {
+				{
+					["patterns"] = {
+						"LossOfControl", -- [1]
+						"TotemFrame", -- [2]
+					},
+					["id"] = "Ignore",
+					["priority"] = 1,
+					["theme"] = "Ignore",
+				}, -- [1]
+				{
+					["enabled"] = false,
+					["patterns"] = {
+						"Aura", -- [1]
+						"Buff", -- [2]
+						"Debuff", -- [3]
+					},
+					["name"] = "Auras",
+					["id"] = "auras",
+				}, -- [2]
+				{
+					["enabled"] = false,
+					["patterns"] = {
+						"Plate", -- [1]
+					},
+					["name"] = "Unit Nameplates",
+					["id"] = "plates",
+				}, -- [3]
+				{
+					["enabled"] = false,
+					["patterns"] = {
+						"ActionButton", -- [1]
+					},
+					["name"] = "ActionBars",
+					["id"] = "actions",
+				}, -- [4]
+			},
+			["themes"] = {
+				["Default"] = {
+					["textStyles"] = {
+						["soon"] = {
+						},
+						["seconds"] = {
+						},
+						["minutes"] = {
+						},
+						["charging"] = {
+							["r"] = 1,
+							["scale"] = 0.649999976158142,
+							["g"] = 0.98,
+							["b"] = 0.4,
+						},
+						["controlled"] = {
+							["scale"] = 1.20000004768372,
+						},
+					},
+					["fontFace"] = "Fonts\\ARIALN.TTF",
+					["spiralOpacity"] = 1.00999997742474,
+				},
+				["Ignore"] = {
+					["textStyles"] = {
+						["soon"] = {
+						},
+						["seconds"] = {
+						},
+						["minutes"] = {
+						},
+						["charging"] = {
+							["r"] = 1,
+							["scale"] = 0.65,
+							["g"] = 0.98,
+							["b"] = 0.4,
+						},
+					},
+					["enableText"] = false,
+					["spiralOpacity"] = 1,
+					["minDuration"] = 3,
+				},
+			},
+		},
+	},
+}
 OmniCC4Config = {
 	["groups"] = {
 		{

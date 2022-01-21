@@ -17570,21 +17570,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4085"] = 280000,
 			["mr"] = 280000,
 		},
-		["Elixir of Major Defense"] = {
-			["H4085"] = 62500,
-			["mr"] = 62500,
+		["Iron Grenade"] = {
+			["H4085"] = 693,
+			["mr"] = 693,
 		},
-		["Shiny Fish Scales"] = {
-			["H4085"] = 498,
-			["mr"] = 498,
+		["Gyrochronatom"] = {
+			["H4085"] = 12999,
+			["mr"] = 12999,
 		},
 		["Arcanite Bar"] = {
 			["H4085"] = 188995,
 			["mr"] = 188995,
 		},
-		["Iron Grenade"] = {
-			["H4085"] = 693,
-			["mr"] = 693,
+		["Elixir of Major Defense"] = {
+			["H4085"] = 62500,
+			["mr"] = 62500,
 		},
 		["Conqueror's Gauntlets of Shadow Protection"] = {
 			["H4085"] = 3006000,
@@ -20171,9 +20171,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H4085"] = 11199,
 			["mr"] = 11199,
 		},
-		["Gyrochronatom"] = {
-			["H4085"] = 12999,
-			["mr"] = 12999,
+		["Shiny Fish Scales"] = {
+			["H4085"] = 498,
+			["mr"] = 498,
 		},
 		["Curved Dagger of Power"] = {
 			["H4085"] = 11900,

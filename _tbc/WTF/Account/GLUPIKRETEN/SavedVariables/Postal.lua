@@ -25,7 +25,7 @@ Postal3ClassicDB = {
 				"Poklopac|Dreadnaught|Horde|36|HUNTER", -- [20]
 				"Testxv|Golemagg|Horde|1|HUNTER", -- [21]
 				"Vermins|Stonespine|Horde|2|WARRIOR", -- [22]
-				"Vermin|Golemagg|Horde|37|WARRIOR", -- [23]
+				"Vermin|Golemagg|Horde|39|WARRIOR", -- [23]
 			},
 		},
 	},

@@ -52,6 +52,17 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["locked"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -74,17 +85,6 @@ ChocolateBarDB = {
 			},
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
-			},
-			["locked"] = false,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
-				},
-				["textureName"] = "None",
 			},
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
@@ -452,14 +452,14 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
-			["gap"] = 0,
+			["desaturated"] = false,
 			["forceColor"] = false,
 			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["fontName"] = "Friz Quadrata TT",
+			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["desaturated"] = false,
+			["fontName"] = "Friz Quadrata TT",
 			["moveFrames"] = false,
 			["textColor"] = {
 				["a"] = 1,
@@ -550,7 +550,7 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 289903,
+		["total"] = 303919,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,
@@ -583,7 +583,7 @@ CB_PlayedTime = {
 		["total"] = 18945,
 	},
 	["Augustin-Golemagg"] = {
-		["total"] = 426093,
+		["total"] = 426695,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,

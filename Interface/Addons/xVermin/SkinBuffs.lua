@@ -134,7 +134,7 @@ local function SkinPet()
 			------------------------------------------------------------------------------------------------------------------------------------------------------
 			frame = _G["PetFrameDebuff" .. i]
 			frameBorder = _G["PetFrameDebuff" .. i .. "Border"]
-			frameCount = _G["PetFrameBuff" .. i .. "Count"]
+			frameCount = _G["PetFrameDebuff" .. i .. "Count"]
 
 			if frameBorder then
 				frameBorder:Hide()

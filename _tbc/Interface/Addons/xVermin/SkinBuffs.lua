@@ -39,6 +39,8 @@ local function SkinTarget()
 			frame = _G["TargetFrameBuff" .. i]
 			frameBorder = _G["TargetFrameBuff" .. i .. "Border"]
 			frameCount = _G["TargetFrameBuff" .. i .. "Count"]
+			frameCooldown = _G["TargetFrameBuff" .. i .. "Cooldown"]
+			if frameCooldown then frameCooldown:SetSwipeTexture('',0,0,0,0) end
 
 			-- if UnitIsPlayer("target") or (petName ~= nil and targetName ~= nil and targetName == petName) then
 			if frameBorder then
@@ -68,6 +70,8 @@ local function SkinTarget()
 			frame = _G["TargetFrameDebuff" .. i]
 			frameBorder = _G["TargetFrameDebuff" .. i .. "Border"]
 			frameCount = _G["TargetFrameDebuff" .. i .. "Count"]
+			frameCooldown = _G["TargetFrameDebuff" .. i .. "Cooldown"]
+			if frameCooldown then frameCooldown:SetSwipeTexture('',0,0,0,0) end
 
 			-- if D_unitCaster == "player" or UnitName("target") == UnitName("player") then
 			if frameBorder then
@@ -113,6 +117,8 @@ local function SkinPet()
 			frame = _G["PetFrameBuff" .. i]
 			frameBorder = _G["PetFrameBuff" .. i .. "Border"]
 			frameCount = _G["PetFrameBuff" .. i .. "Count"]
+			frameCooldown = _G["PetFrameBuff" .. i .. "Cooldown"]
+			if frameCooldown then frameCooldown:SetSwipeTexture('',0,0,0,0) end
 
 			if frameBorder then
 				frameBorder:Hide()
@@ -134,7 +140,9 @@ local function SkinPet()
 			------------------------------------------------------------------------------------------------------------------------------------------------------
 			frame = _G["PetFrameDebuff" .. i]
 			frameBorder = _G["PetFrameDebuff" .. i .. "Border"]
-			frameCount = _G["PetFrameBuff" .. i .. "Count"]
+			frameCount = _G["PetFrameDebuff" .. i .. "Count"]
+			frameCooldown = _G["PetFrameDebuff" .. i .. "Cooldown"]
+			if frameCooldown then frameCooldown:SetSwipeTexture('',0,0,0,0) end
 
 			if frameBorder then
 				frameBorder:Hide()
@@ -190,6 +198,8 @@ local function SkinFocus()
 			frame = _G["FocusFrameBuff" .. i]
 			frameBorder = _G["FocusFrameBuff" .. i .. "Border"]
 			frameCount = _G["FocusFrameBuff" .. i .. "Count"]
+			frameCooldown = _G["FocusFrameBuff" .. i .. "Cooldown"]
+			if frameCooldown then frameCooldown:SetSwipeTexture('',0,0,0,0) end
 
 			if frameBorder then
 				frameBorder:Hide()
@@ -218,6 +228,8 @@ local function SkinFocus()
 			frame = _G["FocusFrameDebuff" .. i]
 			frameBorder = _G["FocusFrameDebuff" .. i .. "Border"]
 			frameCount = _G["FocusFrameDebuff" .. i .. "Count"]
+			frameCooldown = _G["FocusFrameDebuff" .. i .. "Cooldown"]
+			if frameCooldown then frameCooldown:SetSwipeTexture('',0,0,0,0) end
 
 			-- if D_unitCaster == "player" or UnitName("focus") == UnitName("player") then
 			if frameBorder then
