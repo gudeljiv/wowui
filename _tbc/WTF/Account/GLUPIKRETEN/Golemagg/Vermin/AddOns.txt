@@ -24,3 +24,4 @@ RangeDisplay: disabled
 RangeDisplay_Options: disabled
 Select: disabled
 ClassicAuraDurations: disabled
+Leatrix_Plus: enabled

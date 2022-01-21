@@ -17,3 +17,4 @@ Bagnon_GuildBank: disabled
 Bagnon_VoidStorage: disabled
 BagBrother: disabled
 RXPGuides: disabled
+Leatrix_Plus: enabled

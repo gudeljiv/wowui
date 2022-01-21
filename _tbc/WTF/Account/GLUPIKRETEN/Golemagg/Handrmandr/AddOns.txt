@@ -9,3 +9,4 @@ RXPGuides: disabled
 nPower: disabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
+Leatrix_Plus: enabled

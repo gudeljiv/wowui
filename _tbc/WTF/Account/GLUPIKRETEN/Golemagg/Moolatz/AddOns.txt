@@ -118,6 +118,6 @@ nBuff: enabled
 nMainbar: enabled
 nMinimap: enabled
 xVermin: enabled
-Leatrix_Plus: disabled
+Leatrix_Plus: enabled
 aux-addon: disabled
 RXPGuides: disabled

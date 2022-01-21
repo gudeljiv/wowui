@@ -15,6 +15,7 @@ _detalhes_database = {
 							["totalabsorbed"] = 0.008765,
 							["damage_from"] = {
 								["Scorpid Reaver"] = true,
+								["Environment (Falling)"] = true,
 							},
 							["targets"] = {
 								["Scorpid Reaver"] = 1165,
@@ -157,7 +158,7 @@ _detalhes_database = {
 							["last_dps"] = 84.1708521782202,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 749.008765,
+							["damage_taken"] = 1478.008765,
 							["start_time"] = 1642755182,
 							["delay"] = 0,
 							["friendlyfire_total"] = 0,
@@ -174,17 +175,16 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4447-1-12-4140-00006A7340",
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["aID"] = "4140",
+							["on_hold"] = true,
 							["classe"] = "UNKNOW",
+							["aID"] = "4140",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 749.003741,
-							["last_dps"] = 0,
 							["fight_component"] = true,
+							["dps_started"] = true,
 							["total"] = 749.003741,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 1165.003741,
 							["last_event"] = 1642755303,
 							["nome"] = "Scorpid Reaver",
 							["spells"] = {
@@ -251,13 +251,14 @@ _detalhes_database = {
 							},
 							["timeMachine"] = 1,
 							["monster"] = true,
-							["on_hold"] = true,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 1165.003741,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1642755183,
 							["delay"] = 1642755303,
-							["dps_started"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -362,10 +363,12 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 6671,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
-					1914, -- [1]
+					1913.949124, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -386,69 +389,6 @@ _detalhes_database = {
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					1165, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "09:53:16",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scorpid Reaver",
-				["TotalElapsedCombatTime"] = 453921.587,
-				["CombatEndedAt"] = 453921.587,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Vermin"] = 1165.008765,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 453921.587,
-				["combat_id"] = 53,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Scorpid Reaver"] = 1,
-				},
-				["spells_cast_timeline"] = {
 				},
 				["player_last_events"] = {
 					["Vermin"] = {
@@ -510,17 +450,15 @@ _detalhes_database = {
 						}, -- [4]
 						{
 							true, -- [1]
-							13884, -- [2]
-							9, -- [3]
-							1642755210.416, -- [4]
-							1134, -- [5]
-							"Scorpid Reaver", -- [6]
+							3, -- [2]
+							729, -- [3]
+							1642760525.014, -- [4]
+							1775, -- [5]
+							"Environment (Falling)", -- [6]
 							nil, -- [7]
-							8, -- [8]
+							3, -- [8]
 							false, -- [9]
 							-1, -- [10]
-							false, -- [11]
-							false, -- [12]
 						}, -- [5]
 						{
 							true, -- [1]
@@ -900,8 +838,51 @@ _detalhes_database = {
 							false, -- [11]
 							false, -- [12]
 						}, -- [32]
-						["n"] = 5,
+						["n"] = 6,
 					},
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "09:53:16",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Scorpid Reaver",
+				["TotalElapsedCombatTime"] = 453921.587,
+				["CombatEndedAt"] = 453921.587,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "09:53:02",
+				["end_time"] = 453921.587,
+				["combat_id"] = 53,
+				["combat_counter"] = 6671,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Scorpid Reaver"] = 1,
+				},
+				["totals_grupo"] = {
+					1165, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["CombatSkillCache"] = {
 				},
@@ -909,7 +890,25 @@ _detalhes_database = {
 				},
 				["start_time"] = 453907.746,
 				["contra"] = "Scorpid Reaver",
-				["data_inicio"] = "09:53:02",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Vermin"] = 1165.008765,
+						}, -- [1]
+					},
+				},
 			}, -- [1]
 			{
 				{
@@ -1118,8 +1117,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["fight_component"] = true,
 							["end_time"] = 1642755175,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 1414.001247,
 							["last_event"] = 1642755173,
 							["nome"] = "Swirling Vortex",
 							["spells"] = {
@@ -1156,12 +1154,13 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
-							["monster"] = true,
 							["on_hold"] = false,
+							["monster"] = true,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 1414.001247,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1642755163,
 							["delay"] = 0,
 							["classe"] = "UNKNOW",
@@ -1176,16 +1175,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 							["friendlyfire"] = {
 							},
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 61.006043,
 							["serial"] = "Creature-0-4447-1-12-4140-00006A71CE",
 							["fight_component"] = true,
-							["total"] = 61.006043,
+							["end_time"] = 1642755182,
 							["aID"] = "4140",
 							["damage_taken"] = 0.006043,
 							["nome"] = "Scorpid Reaver",
@@ -1230,7 +1229,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1642755165,
 							["delay"] = 0,
-							["end_time"] = 1642755182,
+							["total"] = 61.006043,
 						}, -- [3]
 					},
 				}, -- [1]
@@ -1383,31 +1382,13 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Vermin"] = 1414.005329,
-						}, -- [1]
-					},
-				},
+				["data_inicio"] = "09:52:43",
 				["end_time"] = 453901.381,
 				["combat_id"] = 52,
-				["spells_cast_timeline"] = {
-				},
 				["frags"] = {
 					["Swirling Vortex"] = 1,
+				},
+				["spells_cast_timeline"] = {
 				},
 				["cleu_events"] = {
 					["n"] = 1,
@@ -1511,7 +1492,25 @@ _detalhes_database = {
 				},
 				["start_time"] = 453888.66,
 				["contra"] = "Swirling Vortex",
-				["data_inicio"] = "09:52:43",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Vermin"] = 1414.005329,
+						}, -- [1]
+					},
+				},
 			}, -- [2]
 			{
 				{
@@ -1683,16 +1682,17 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4447-1-12-4147-00006A51BD",
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["classe"] = "UNKNOW",
+							["end_time"] = 1642755159,
 							["aID"] = "4147",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 146.003826,
-							["end_time"] = 1642755159,
 							["monster"] = true,
+							["fight_component"] = true,
 							["total"] = 146.003826,
-							["damage_taken"] = 1141.003826,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1642755157,
 							["nome"] = "Saltstone Basilisk",
 							["spells"] = {
@@ -1729,16 +1729,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
-							["dps_started"] = false,
 							["on_hold"] = false,
+							["dps_started"] = false,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 1141.003826,
 							["start_time"] = 1642755148,
 							["delay"] = 0,
-							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
@@ -1751,16 +1750,17 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4447-1-12-4140-00006A71CE",
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["classe"] = "UNKNOW",
+							["end_time"] = 1642755163,
 							["aID"] = "4140",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 61.008858,
-							["end_time"] = 1642755163,
 							["monster"] = true,
+							["fight_component"] = true,
 							["total"] = 61.008858,
-							["damage_taken"] = 0.008858,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1642755162,
 							["nome"] = "Scorpid Reaver",
 							["spells"] = {
@@ -1796,16 +1796,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
-							["dps_started"] = false,
 							["on_hold"] = false,
+							["dps_started"] = false,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 0.008858,
 							["start_time"] = 1642755147,
 							["delay"] = 0,
-							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
@@ -1993,31 +1992,13 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Vermin"] = 1141.002965,
-						}, -- [1]
-					},
-				},
+				["data_inicio"] = "09:52:27",
 				["end_time"] = 453884.691,
 				["combat_id"] = 51,
-				["spells_cast_timeline"] = {
-				},
 				["frags"] = {
 					["Saltstone Basilisk"] = 1,
+				},
+				["spells_cast_timeline"] = {
 				},
 				["cleu_events"] = {
 					["n"] = 1,
@@ -2121,7 +2102,25 @@ _detalhes_database = {
 				},
 				["start_time"] = 453872.704,
 				["contra"] = "Saltstone Basilisk",
-				["data_inicio"] = "09:52:27",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Vermin"] = 1141.002965,
+						}, -- [1]
+					},
+				},
 			}, -- [3]
 			{
 				{
@@ -2301,8 +2300,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["fight_component"] = true,
 							["end_time"] = 1642755147,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 1213.007096,
 							["last_event"] = 1642755144,
 							["nome"] = "Scorpid Reaver",
 							["spells"] = {
@@ -2393,12 +2391,13 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
-							["monster"] = true,
 							["on_hold"] = false,
+							["monster"] = true,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 1213.007096,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1642755123,
 							["delay"] = 0,
 							["classe"] = "UNKNOW",
@@ -2501,18 +2500,18 @@ _detalhes_database = {
 						}, -- [1]
 						{
 							["monster"] = true,
-							["classe"] = "UNKNOW",
+							["tipo"] = 4,
 							["nome"] = "Scorpid Reaver",
 							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["aID"] = "4140",
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4447-1-12-4140-00006A71CE",
 							["spell_cast"] = {
 								[40505] = 1,
+							},
+							["fight_component"] = true,
+							["aID"] = "4140",
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-1-12-4140-00006A71CE",
+							["pets"] = {
 							},
 						}, -- [2]
 					},
@@ -2594,31 +2593,13 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Vermin"] = 1213.00185,
-						}, -- [1]
-					},
-				},
+				["data_inicio"] = "09:52:01",
 				["end_time"] = 453860.01,
 				["combat_id"] = 50,
-				["spells_cast_timeline"] = {
-				},
 				["frags"] = {
 					["Scorpid Reaver"] = 1,
+				},
+				["spells_cast_timeline"] = {
 				},
 				["cleu_events"] = {
 					["n"] = 1,
@@ -2746,7 +2727,25 @@ _detalhes_database = {
 				},
 				["start_time"] = 453846.993,
 				["contra"] = "Scorpid Reaver",
-				["data_inicio"] = "09:52:01",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Vermin"] = 1213.00185,
+						}, -- [1]
+					},
+				},
 			}, -- [4]
 			{
 				{
@@ -2861,16 +2860,17 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4447-1-12-4124-00006A54B0",
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["classe"] = "UNKNOW",
+							["end_time"] = 1642755044,
 							["aID"] = "4124",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 93.005443,
-							["end_time"] = 1642755044,
 							["monster"] = true,
+							["fight_component"] = true,
 							["total"] = 93.005443,
-							["damage_taken"] = 923.005443,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1642755042,
 							["nome"] = "Needles Cougar",
 							["spells"] = {
@@ -2908,16 +2908,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
-							["dps_started"] = false,
 							["on_hold"] = false,
+							["dps_started"] = false,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 923.005443,
 							["start_time"] = 1642755036,
 							["delay"] = 0,
-							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3074,6 +3073,25 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "09:50:35",
+				["end_time"] = 453769.597,
+				["combat_id"] = 49,
+				["frags"] = {
+					["Needles Cougar"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 453760.161,
+				["contra"] = "Needles Cougar",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -3093,25 +3111,6 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["end_time"] = 453769.597,
-				["combat_id"] = 49,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Needles Cougar"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 453760.161,
-				["contra"] = "Needles Cougar",
-				["data_inicio"] = "09:50:35",
 			}, -- [5]
 			{
 				{
@@ -3255,16 +3254,17 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4447-1-12-4120-000069B213",
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["classe"] = "UNKNOW",
+							["end_time"] = 1642755030,
 							["aID"] = "4120",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 116.002855,
-							["end_time"] = 1642755030,
 							["monster"] = true,
+							["fight_component"] = true,
 							["total"] = 116.002855,
-							["damage_taken"] = 1178.002855,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1642755028,
 							["nome"] = "Thundering Boulderkin",
 							["spells"] = {
@@ -3301,16 +3301,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
-							["dps_started"] = false,
 							["on_hold"] = false,
+							["dps_started"] = false,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 1178.002855,
 							["start_time"] = 1642755025,
 							["delay"] = 0,
-							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3474,31 +3473,13 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Vermin"] = 1178.001168,
-						}, -- [1]
-					},
-				},
+				["data_inicio"] = "09:50:22",
 				["end_time"] = 453756.288,
 				["combat_id"] = 48,
-				["spells_cast_timeline"] = {
-				},
 				["frags"] = {
 					["Thundering Boulderkin"] = 1,
+				},
+				["spells_cast_timeline"] = {
 				},
 				["cleu_events"] = {
 					["n"] = 1,
@@ -3590,7 +3571,25 @@ _detalhes_database = {
 				},
 				["start_time"] = 453747.901,
 				["contra"] = "Thundering Boulderkin",
-				["data_inicio"] = "09:50:22",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Vermin"] = 1178.001168,
+						}, -- [1]
+					},
+				},
 			}, -- [6]
 			{
 				{
@@ -3733,16 +3732,17 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4447-1-12-4249-00006993C9",
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["classe"] = "UNKNOW",
+							["end_time"] = 1642755011,
 							["aID"] = "4249",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 39.006885,
-							["end_time"] = 1642755011,
 							["monster"] = true,
+							["fight_component"] = true,
 							["total"] = 39.006885,
-							["damage_taken"] = 1046.006885,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1642755008,
 							["nome"] = "Pesterhide Snarler",
 							["spells"] = {
@@ -3779,16 +3779,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
-							["dps_started"] = false,
 							["on_hold"] = false,
+							["dps_started"] = false,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 1046.006885,
 							["start_time"] = 1642755008,
 							["delay"] = 0,
-							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3940,6 +3939,25 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "09:50:06",
+				["end_time"] = 453736.793,
+				["combat_id"] = 47,
+				["frags"] = {
+					["Pesterhide Snarler"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 453731.767,
+				["contra"] = "Pesterhide Snarler",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -3959,25 +3977,6 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["end_time"] = 453736.793,
-				["combat_id"] = 47,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Pesterhide Snarler"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 453731.767,
-				["contra"] = "Pesterhide Snarler",
-				["data_inicio"] = "09:50:06",
 			}, -- [7]
 			{
 				{
@@ -4148,16 +4147,17 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4447-1-12-4249-000069B5C8",
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["classe"] = "UNKNOW",
+							["end_time"] = 1642755002,
 							["aID"] = "4249",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 189.00422,
-							["end_time"] = 1642755002,
 							["monster"] = true,
+							["fight_component"] = true,
 							["total"] = 189.00422,
-							["damage_taken"] = 1285.00422,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1642754998,
 							["nome"] = "Pesterhide Snarler",
 							["spells"] = {
@@ -4193,16 +4193,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
-							["dps_started"] = false,
 							["on_hold"] = false,
+							["dps_started"] = false,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 1285.00422,
 							["start_time"] = 1642754990,
 							["delay"] = 0,
-							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -4390,6 +4389,25 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "09:49:50",
+				["end_time"] = 453727.449,
+				["combat_id"] = 46,
+				["frags"] = {
+					["Pesterhide Snarler"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 453715.454,
+				["contra"] = "Pesterhide Snarler",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -4409,25 +4427,6 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["end_time"] = 453727.449,
-				["combat_id"] = 46,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Pesterhide Snarler"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 453715.454,
-				["contra"] = "Pesterhide Snarler",
-				["data_inicio"] = "09:49:50",
 			}, -- [8]
 			{
 				{
@@ -4542,16 +4541,17 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4447-1-12-4119-00006A72EC",
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["classe"] = "UNKNOW",
+							["end_time"] = 1642754980,
 							["aID"] = "4119",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 98.00691499999999,
-							["end_time"] = 1642754980,
 							["monster"] = true,
+							["fight_component"] = true,
 							["total"] = 98.00691499999999,
-							["damage_taken"] = 766.0069149999999,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1642754977,
 							["nome"] = "Elder Cloud Serpent",
 							["spells"] = {
@@ -4587,16 +4587,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
-							["dps_started"] = false,
 							["on_hold"] = false,
+							["dps_started"] = false,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 766.0069149999999,
 							["start_time"] = 1642754973,
 							["delay"] = 0,
-							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -4772,6 +4771,25 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "09:49:33",
+				["end_time"] = 453705.586,
+				["combat_id"] = 45,
+				["frags"] = {
+					["Elder Cloud Serpent"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 453698.425,
+				["contra"] = "Elder Cloud Serpent",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -4791,25 +4809,6 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["end_time"] = 453705.586,
-				["combat_id"] = 45,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Elder Cloud Serpent"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 453698.425,
-				["contra"] = "Elder Cloud Serpent",
-				["data_inicio"] = "09:49:33",
 			}, -- [9]
 			{
 				{
@@ -4896,16 +4895,17 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4447-1-12-4119-00006A6DFF",
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["classe"] = "UNKNOW",
+							["end_time"] = 1642754939,
 							["aID"] = "4119",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 62.003896,
-							["end_time"] = 1642754939,
 							["monster"] = true,
+							["fight_component"] = true,
 							["total"] = 62.003896,
-							["damage_taken"] = 777.0038959999999,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1642754935,
 							["nome"] = "Elder Cloud Serpent",
 							["spells"] = {
@@ -4969,16 +4969,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
-							["dps_started"] = false,
 							["on_hold"] = false,
+							["dps_started"] = false,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 777.0038959999999,
 							["start_time"] = 1642754928,
 							["delay"] = 0,
-							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -5058,18 +5057,18 @@ _detalhes_database = {
 						}, -- [1]
 						{
 							["monster"] = true,
-							["classe"] = "UNKNOW",
+							["tipo"] = 4,
 							["nome"] = "Elder Cloud Serpent",
 							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["aID"] = "4119",
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4447-1-12-4119-00006A6DFF",
 							["spell_cast"] = {
 								[8246] = 1,
+							},
+							["fight_component"] = true,
+							["aID"] = "4119",
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-1-12-4119-00006A6DFF",
+							["pets"] = {
 							},
 						}, -- [2]
 					},
@@ -5151,6 +5150,25 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "09:48:48",
+				["end_time"] = 453665.055,
+				["combat_id"] = 44,
+				["frags"] = {
+					["Elder Cloud Serpent"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 453653.402,
+				["contra"] = "Elder Cloud Serpent",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -5170,25 +5188,6 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["end_time"] = 453665.055,
-				["combat_id"] = 44,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Elder Cloud Serpent"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 453653.402,
-				["contra"] = "Elder Cloud Serpent",
-				["data_inicio"] = "09:48:48",
 			}, -- [10]
 			{
 				{
@@ -5207,16 +5206,17 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4447-1-12-4119-00006A72D2",
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["classe"] = "UNKNOW",
+							["end_time"] = 1642754794,
 							["aID"] = "4119",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 126.004625,
-							["end_time"] = 1642754794,
 							["monster"] = true,
+							["fight_component"] = true,
 							["total"] = 126.004625,
-							["damage_taken"] = 913.004625,
+							["friendlyfire"] = {
+							},
 							["last_event"] = 1642754788,
 							["nome"] = "Elder Cloud Serpent",
 							["spells"] = {
@@ -5252,16 +5252,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
-							["dps_started"] = false,
 							["on_hold"] = false,
+							["dps_started"] = false,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 913.004625,
 							["start_time"] = 1642754784,
 							["delay"] = 0,
-							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -5562,6 +5561,25 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "09:46:24",
+				["end_time"] = 453519.437,
+				["combat_id"] = 43,
+				["frags"] = {
+					["Elder Cloud Serpent"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 453509.719,
+				["contra"] = "Elder Cloud Serpent",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -5581,25 +5599,6 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["end_time"] = 453519.437,
-				["combat_id"] = 43,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Elder Cloud Serpent"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 453509.719,
-				["contra"] = "Elder Cloud Serpent",
-				["data_inicio"] = "09:46:24",
 			}, -- [11]
 			{
 				{
@@ -5752,8 +5751,7 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["fight_component"] = true,
 							["end_time"] = 1642754770,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 871.007056,
 							["last_event"] = 1642754767,
 							["nome"] = "Elder Cloud Serpent",
 							["spells"] = {
@@ -5816,12 +5814,13 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["last_dps"] = 0,
-							["monster"] = true,
 							["on_hold"] = false,
+							["monster"] = true,
+							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 871.007056,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1642754759,
 							["delay"] = 0,
 							["classe"] = "UNKNOW",
@@ -5901,18 +5900,18 @@ _detalhes_database = {
 						}, -- [1]
 						{
 							["monster"] = true,
-							["classe"] = "UNKNOW",
+							["tipo"] = 4,
 							["nome"] = "Elder Cloud Serpent",
 							["flag_original"] = 68168,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["aID"] = "4119",
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4447-1-12-4119-0000698713",
 							["spell_cast"] = {
 								[8246] = 2,
+							},
+							["fight_component"] = true,
+							["aID"] = "4119",
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-1-12-4119-0000698713",
+							["pets"] = {
 							},
 						}, -- [2]
 					},
@@ -5994,6 +5993,25 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "09:45:58",
+				["end_time"] = 453495.919,
+				["combat_id"] = 42,
+				["frags"] = {
+					["Elder Cloud Serpent"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 453483.946,
+				["contra"] = "Elder Cloud Serpent",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -6013,25 +6031,6 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["end_time"] = 453495.919,
-				["combat_id"] = 42,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Elder Cloud Serpent"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 453483.946,
-				["contra"] = "Elder Cloud Serpent",
-				["data_inicio"] = "09:45:58",
 			}, -- [12]
 			{
 				{
@@ -6116,8 +6115,7 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
 							["aID"] = "2959",
 							["raid_targets"] = {
@@ -6126,7 +6124,8 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["fight_component"] = true,
 							["end_time"] = 1642715489,
-							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Prairie Stalker",
 							["spells"] = {
@@ -6139,7 +6138,7 @@ _detalhes_database = {
 							["total"] = 0.006296,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["on_hold"] = false,
+							["last_dps"] = 0,
 							["start_time"] = 1642715489,
 							["serial"] = "Creature-0-4447-1-9-2959-000069D90B",
 							["classe"] = "UNKNOW",
@@ -6241,6 +6240,9 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "22:51:29",
+				["end_time"] = 414215.708,
+				["combat_id"] = 41,
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -6260,10 +6262,8 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 414215.708,
-				["combat_id"] = 41,
-				["data_inicio"] = "22:51:29",
-				["spells_cast_timeline"] = {
+				["frags"] = {
+					["Prairie Stalker"] = 1,
 				},
 				["cleu_events"] = {
 					["n"] = 1,
@@ -6276,8 +6276,7 @@ _detalhes_database = {
 				["start_time"] = 414215.064,
 				["TimeData"] = {
 				},
-				["frags"] = {
-					["Prairie Stalker"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [13]
 			{
@@ -6297,17 +6296,16 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["fight_component"] = true,
+							["last_dps"] = 0,
 							["friendlyfire_total"] = 0,
+							["aID"] = "2959",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 7.004806,
-							["aID"] = "2959",
+							["fight_component"] = true,
 							["monster"] = true,
 							["end_time"] = 1642715352,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 437.004806,
 							["tipo"] = 1,
 							["nome"] = "Prairie Stalker",
 							["spells"] = {
@@ -6345,10 +6343,11 @@ _detalhes_database = {
 							},
 							["total"] = 7.004806,
 							["dps_started"] = false,
-							["last_dps"] = 0,
+							["on_hold"] = false,
 							["custom"] = 0,
 							["last_event"] = 1642715350,
-							["damage_taken"] = 437.004806,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1642715348,
 							["serial"] = "Creature-0-4447-1-9-2959-000069ADB2",
 							["classe"] = "UNKNOW",
@@ -6501,6 +6500,9 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "22:49:09",
+				["end_time"] = 414078.668,
+				["combat_id"] = 40,
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -6520,10 +6522,8 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 414078.668,
-				["combat_id"] = 40,
-				["data_inicio"] = "22:49:09",
-				["spells_cast_timeline"] = {
+				["frags"] = {
+					["Prairie Stalker"] = 1,
 				},
 				["combat_counter"] = 6657,
 				["totals_grupo"] = {
@@ -6553,8 +6553,7 @@ _detalhes_database = {
 				["start_time"] = 414075.131,
 				["TimeData"] = {
 				},
-				["frags"] = {
-					["Prairie Stalker"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [14]
 			{
@@ -6651,7 +6650,7 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["monster"] = true,
 							["total"] = 3.001214,
-							["on_hold"] = false,
+							["last_dps"] = 0,
 							["last_event"] = 1642715347,
 							["nome"] = "Prairie Stalker",
 							["spells"] = {
@@ -6690,11 +6689,11 @@ _detalhes_database = {
 							},
 							["dps_started"] = false,
 							["damage_taken"] = 202.001214,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1642715094,
 							["delay"] = 0,
 							["aID"] = "2959",
@@ -6743,11 +6742,11 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["aID"] = "4465-00E5831F",
-							["last_event"] = 1642715093,
 							["classe"] = "WARRIOR",
-							["serial"] = "Player-4465-00E5831F",
 							["tipo"] = 4,
+							["aID"] = "4465-00E5831F",
+							["serial"] = "Player-4465-00E5831F",
+							["last_event"] = 1642715093,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -6890,13 +6889,31 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "22:44:53",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Vermin"] = 202.00877,
+						}, -- [1]
+					},
+				},
 				["end_time"] = 413820.221,
 				["combat_id"] = 39,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 					["Prairie Stalker"] = 1,
-				},
-				["spells_cast_timeline"] = {
 				},
 				["combat_counter"] = 6655,
 				["totals_grupo"] = {
@@ -6926,25 +6943,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 413819.057,
 				["contra"] = "Prairie Stalker",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Vermin"] = 202.00877,
-						}, -- [1]
-					},
-				},
+				["data_inicio"] = "22:44:53",
 			}, -- [15]
 		},
 	},
@@ -7105,9 +7104,9 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["enabled"] = true,
 			["animate"] = true,
-			["author"] = "Details! Team",
-			["hide_pull_bar"] = false,
 			["useclasscolors"] = false,
+			["hide_pull_bar"] = false,
+			["author"] = "Details! Team",
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -7117,12 +7116,12 @@ _detalhes_database = {
 			["openedfromcommand"] = false,
 			["updatespeed"] = 0.2,
 			["dividebyhundred"] = true,
-			["alwaysshowme"] = true,
+			["showamount"] = false,
 			["useplayercolor"] = false,
 			["playSound"] = false,
 			["usefocus"] = false,
 			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["showamount"] = false,
+			["alwaysshowme"] = true,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -7141,9 +7140,9 @@ _detalhes_database = {
 			["enabled"] = true,
 			["opened"] = 0,
 			["max_emote_segments"] = 3,
-			["author"] = "Details! Team",
-			["hide_on_combat"] = false,
 			["show_icon"] = 5,
+			["hide_on_combat"] = false,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
@@ -7211,10 +7210,6 @@ _detalhes_database = {
 			},
 			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 10,
-			["use_spark"] = false,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -7226,7 +7221,11 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
+			["font_size"] = 10,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
 			["y"] = -183.107162475586,
+			["use_spark"] = false,
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
@@ -7237,7 +7236,7 @@ _detalhes_database = {
 			["arrow_anchor_y"] = 0,
 		},
 	},
-	["combat_counter"] = 6675,
+	["combat_counter"] = 6681,
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
@@ -7252,7 +7251,7 @@ _detalhes_database = {
 		["reverse"] = false,
 	},
 	["character_data"] = {
-		["logons"] = 1769,
+		["logons"] = 1775,
 	},
 	["force_font_outline"] = "",
 	["combat_id"] = 53,
@@ -7300,16 +7299,16 @@ _detalhes_database = {
 			},
 			["switch_healer"] = false,
 			["bars_sort_direction"] = 1,
-			["skin"] = "Minimalistic",
-			["backdrop_texture"] = "None",
 			["menu_icons_size"] = 1,
+			["switch_healer_in_combat"] = false,
+			["skin"] = "Minimalistic",
 			["menu2_icons_size"] = 1.20000004768372,
 			["tooltip"] = {
 				["n_abilities"] = 3,
 				["n_enemies"] = 3,
 			},
 			["stretch_button_side"] = 2,
-			["switch_healer_in_combat"] = false,
+			["backdrop_texture"] = "None",
 			["switch_all_roles_in_combat"] = {
 				2, -- [1]
 				1, -- [2]
@@ -7591,29 +7590,29 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Swirling Vortex"] = 0,
+						["Scorpid Reaver"] = 0,
 						["Prairie Stalker"] = 0,
 						["Pesterhide Snarler"] = 0,
-						["Needles Cougar"] = 0,
-						["Scorpid Reaver"] = 0,
+						["Thundering Boulderkin"] = 0,
+						["Swirling Vortex"] = 0,
 						["Saltstone Basilisk"] = 0,
 						["Elder Cloud Serpent"] = 0,
-						["Thundering Boulderkin"] = 0,
+						["Needles Cougar"] = 0,
 					},
 					["pets"] = {
 					},
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["tipo"] = 1,
-					["aID"] = "4465-00E5831F",
+					["classe"] = "WARRIOR",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00619,
 					["delay"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1642715243,
-					["damage_taken"] = 0.00619,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
+					["last_dps"] = 0,
 					["nome"] = "Vermin",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -7624,14 +7623,14 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Swirling Vortex"] = 0,
+									["Scorpid Reaver"] = 0,
 									["Prairie Stalker"] = 0,
 									["Pesterhide Snarler"] = 0,
-									["Needles Cougar"] = 0,
-									["Scorpid Reaver"] = 0,
+									["Thundering Boulderkin"] = 0,
+									["Swirling Vortex"] = 0,
 									["Saltstone Basilisk"] = 0,
 									["Elder Cloud Serpent"] = 0,
-									["Thundering Boulderkin"] = 0,
+									["Needles Cougar"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -7748,12 +7747,12 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Needles Cougar"] = 0,
 									["Thundering Boulderkin"] = 0,
-									["Swirling Vortex"] = 0,
+									["Needles Cougar"] = 0,
+									["Scorpid Reaver"] = 0,
 									["Pesterhide Snarler"] = 0,
 									["Elder Cloud Serpent"] = 0,
-									["Scorpid Reaver"] = 0,
+									["Swirling Vortex"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -7809,10 +7808,10 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.00619,
 					["start_time"] = 1642715240,
 					["serial"] = "Player-4465-00E5831F",
-					["classe"] = "WARRIOR",
+					["aID"] = "4465-00E5831F",
 				}, -- [1]
 				{
 					["flag_original"] = 68168,
@@ -7834,7 +7833,7 @@ _detalhes_database = {
 					["monster"] = true,
 					["dps_started"] = false,
 					["end_time"] = 1642715243,
-					["damage_taken"] = 0.007314,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Prairie Stalker",
 					["spells"] = {
@@ -7869,13 +7868,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
 					["fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.007314,
 					["start_time"] = 1642715240,
 					["serial"] = "Creature-0-4447-1-9-2959-000069ADB7",
 					["classe"] = "UNKNOW",
@@ -7891,8 +7890,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
 					["monster"] = true,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
@@ -7900,7 +7899,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["fight_component"] = true,
 					["end_time"] = 1642755655,
-					["damage_taken"] = 0.002678,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Scorpid Reaver",
 					["spells"] = {
@@ -7992,10 +7991,10 @@ _detalhes_database = {
 					["total"] = 0.002678,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.002678,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1642755652,
 					["serial"] = "Creature-0-4447-1-12-4140-00006A7340",
 					["aID"] = "4140",
@@ -8011,8 +8010,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
 					["monster"] = true,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
@@ -8020,7 +8019,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["fight_component"] = true,
 					["end_time"] = 1642755655,
-					["damage_taken"] = 0.003707,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Swirling Vortex",
 					["spells"] = {
@@ -8058,10 +8057,10 @@ _detalhes_database = {
 					["total"] = 0.003707,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.003707,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1642755652,
 					["serial"] = "Creature-0-4447-1-12-9377-00006A6BA2",
 					["aID"] = "9377",
@@ -8077,8 +8076,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
 					["monster"] = true,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
@@ -8086,7 +8085,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["fight_component"] = true,
 					["end_time"] = 1642755655,
-					["damage_taken"] = 0.007703,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Saltstone Basilisk",
 					["spells"] = {
@@ -8124,10 +8123,10 @@ _detalhes_database = {
 					["total"] = 0.007703,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.007703,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1642755652,
 					["serial"] = "Creature-0-4447-1-12-4147-00006A51BD",
 					["aID"] = "4147",
@@ -8143,8 +8142,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
 					["monster"] = true,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
@@ -8152,7 +8151,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["fight_component"] = true,
 					["end_time"] = 1642755655,
-					["damage_taken"] = 0.007318,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Needles Cougar",
 					["spells"] = {
@@ -8190,10 +8189,10 @@ _detalhes_database = {
 					["total"] = 0.007318,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.007318,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1642755652,
 					["serial"] = "Creature-0-4447-1-12-4124-00006A54B0",
 					["aID"] = "4124",
@@ -8209,8 +8208,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
 					["monster"] = true,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
@@ -8218,7 +8217,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["fight_component"] = true,
 					["end_time"] = 1642755655,
-					["damage_taken"] = 0.003823,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Thundering Boulderkin",
 					["spells"] = {
@@ -8256,10 +8255,10 @@ _detalhes_database = {
 					["total"] = 0.003823,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.003823,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1642755652,
 					["serial"] = "Creature-0-4447-1-12-4120-000069B213",
 					["aID"] = "4120",
@@ -8275,8 +8274,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
 					["monster"] = true,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
@@ -8284,7 +8283,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["fight_component"] = true,
 					["end_time"] = 1642755655,
-					["damage_taken"] = 0.005933,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Pesterhide Snarler",
 					["spells"] = {
@@ -8322,10 +8321,10 @@ _detalhes_database = {
 					["total"] = 0.005933,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.005933,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1642755652,
 					["serial"] = "Creature-0-4447-1-12-4249-00006993C9",
 					["aID"] = "4249",
@@ -8341,8 +8340,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
 					["monster"] = true,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
@@ -8350,7 +8349,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["fight_component"] = true,
 					["end_time"] = 1642755655,
-					["damage_taken"] = 0.003728,
+					["on_hold"] = false,
 					["tipo"] = 1,
 					["nome"] = "Elder Cloud Serpent",
 					["spells"] = {
@@ -8415,10 +8414,10 @@ _detalhes_database = {
 					["total"] = 0.003728,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.003728,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1642755652,
 					["serial"] = "Creature-0-4447-1-12-4119-00006A72EC",
 					["aID"] = "4119",
@@ -8511,34 +8510,34 @@ _detalhes_database = {
 				}, -- [1]
 				{
 					["monster"] = true,
-					["aID"] = "4140",
+					["tipo"] = 4,
 					["nome"] = "Scorpid Reaver",
 					["flag_original"] = 68168,
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Creature-0-4447-1-12-4140-00006A71CE",
 					["spell_cast"] = {
 						[40505] = 0,
+					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "4140",
+					["serial"] = "Creature-0-4447-1-12-4140-00006A71CE",
+					["pets"] = {
 					},
 				}, -- [2]
 				{
 					["monster"] = true,
-					["aID"] = "4119",
+					["tipo"] = 4,
 					["nome"] = "Elder Cloud Serpent",
 					["flag_original"] = 68168,
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Creature-0-4447-1-12-4119-00006A6DFF",
 					["spell_cast"] = {
 						[8246] = 0,
+					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "4119",
+					["serial"] = "Creature-0-4447-1-12-4119-00006A6DFF",
+					["pets"] = {
 					},
 				}, -- [3]
 			},

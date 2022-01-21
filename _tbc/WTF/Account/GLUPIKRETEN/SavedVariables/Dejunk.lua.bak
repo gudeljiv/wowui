@@ -98,9 +98,9 @@ __DEJUNK_SAVED_VARIABLES__ = {
 					["5115"] = true,
 					["5268"] = true,
 					["1509"] = true,
-					["5114"] = true,
-					["3402"] = true,
 					["2608"] = true,
+					["3402"] = true,
+					["5114"] = true,
 					["5118"] = true,
 					["3676"] = true,
 					["3401"] = true,
@@ -115,6 +115,34 @@ __DEJUNK_SAVED_VARIABLES__ = {
 				["auto"] = true,
 				["safeMode"] = false,
 			},
+			["version"] = 3,
+		},
+		["Handrmandr-Golemagg"] = {
+			["version"] = 3,
+		},
+		["Konac-Dreadnaught"] = {
+			["sell"] = {
+				["auto"] = true,
+				["safeMode"] = false,
+			},
+			["version"] = 3,
+			["general"] = {
+				["autoRepair"] = true,
+				["chat"] = {
+					["destroy"] = false,
+					["sell"] = false,
+					["enabled"] = false,
+				},
+			},
+		},
+		["Moolatz-Dreadnaught"] = {
+			["sell"] = {
+				["auto"] = true,
+				["safeMode"] = false,
+			},
+			["version"] = 3,
+		},
+		["Pitchwise-Dreadnaught"] = {
 			["version"] = 3,
 		},
 		["Farm"] = {
@@ -208,34 +236,6 @@ __DEJUNK_SAVED_VARIABLES__ = {
 				},
 				["safeMode"] = false,
 			},
-			["version"] = 3,
-		},
-		["Konac-Dreadnaught"] = {
-			["sell"] = {
-				["auto"] = true,
-				["safeMode"] = false,
-			},
-			["version"] = 3,
-			["general"] = {
-				["autoRepair"] = true,
-				["chat"] = {
-					["destroy"] = false,
-					["sell"] = false,
-					["enabled"] = false,
-				},
-			},
-		},
-		["Moolatz-Dreadnaught"] = {
-			["sell"] = {
-				["auto"] = true,
-				["safeMode"] = false,
-			},
-			["version"] = 3,
-		},
-		["Pitchwise-Dreadnaught"] = {
-			["version"] = 3,
-		},
-		["Handrmandr-Golemagg"] = {
 			["version"] = 3,
 		},
 	},

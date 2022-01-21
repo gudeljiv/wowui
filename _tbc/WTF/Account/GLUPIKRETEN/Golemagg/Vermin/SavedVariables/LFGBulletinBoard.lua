@@ -46,8 +46,8 @@ GroupBulletinBoardDBChar = {
 	["FilterDungeonOHB"] = true,
 	["FilterDungeonSCH"] = true,
 	["FilterDungeonEYE"] = true,
-	["FilterDungeonARC"] = true,
 	["FilterDungeonSETH"] = true,
+	["FilterDungeonARC"] = true,
 	["FilterDungeonSWP"] = true,
 	["channel"] = {
 		true, -- [1]

@@ -26,6 +26,15 @@ for i, v in pairs(
 	end
 end
 
+
+C_Timer.NewTicker(1, function(self)
+	if LFGParentFrame then
+		LFGParentFrame:SetScale(1.3)
+		self:Cancel()
+	end
+end)
+
+
 local LoDMap = {
 	Blizzard_CraftUI = {"CraftFrame"},
 	Blizzard_MacroUI = {"MacroFrame"},
@@ -33,8 +42,7 @@ local LoDMap = {
 	Blizzard_TradeSkillUI = {"TradeSkillFrame"},
 	Blizzard_InspectUI = {"InspectFrame"},
 	Blizzard_TrainerUI = {"ClassTrainerFrame"},
-	Blizzard_AuctionUI = {"AuctionFrame"},
-	Blizzard_LFGFrameUI = {"LFGParentFrame"},
+	Blizzard_AuctionUI = {"AuctionFrame"}
 }
 
 local f = CreateFrame("Frame")
@@ -64,8 +72,6 @@ f:SetScript(
 		end
 	end
 )
-
-
 
 -- AuctionFrame:HookScript(
 -- 	"OnUpdate",
