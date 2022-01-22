@@ -6,7 +6,7 @@ Bagnon_GuildBank: disabled
 Bagnon_VoidStorage: disabled
 BagBrother: disabled
 RXPGuides: disabled
-nPower: disabled
+nPower: enabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 Leatrix_Plus: enabled

@@ -1,4 +1,4 @@
-nPower: disabled
+nPower: enabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 nHealth: enabled
