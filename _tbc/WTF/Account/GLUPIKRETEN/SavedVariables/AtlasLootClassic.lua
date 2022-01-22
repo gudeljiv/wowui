@@ -22,7 +22,7 @@ AtlasLootClassicDB = {
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
 		["Mxys - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Moolatz - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
@@ -229,6 +229,19 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Moolatz - Golemagg"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 		},
 		["Konac - Dreadnaught"] = {
 			["minimap"] = {
@@ -339,14 +352,10 @@ AtlasLootClassicDB = {
 				["selected"] = {
 					nil, -- [1]
 					"BlackwingLair", -- [2]
-					8, -- [3]
+					nil, -- [3]
 					3, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -358,6 +367,10 @@ AtlasLootClassicDB = {
 						},
 					},
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Judawise - Golemagg"] = {

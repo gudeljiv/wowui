@@ -18,6 +18,7 @@ xVermin.Config = {
 	border = {
 		default = "Interface\\AddOns\\xVermin\\Media\\textureNormal",
 		colorize = "Interface\\AddOns\\xVermin\\Media\\textureWhite",
+		glow = "Interface\\AddOns\\xVermin\\Media\\textureGlow",
 		iq = {
 			"Interface\\AddOns\\xVermin\\Media\\ItemQuality0",
 			"Interface\\AddOns\\xVermin\\Media\\ItemQuality1",

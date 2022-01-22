@@ -4,7 +4,8 @@
 ---------------------------------------------
 local ArtworkPath = "Interface\\Addons\\NeatPlates_Neon\\"
 --local font = "Interface\\Addons\\NeatPlatesHub\\shared\\AccidentalPresidency.ttf"; local fontsize = 12;
-local font = "Interface\\Addons\\NeatPlatesHub\\shared\\RobotoCondensed-Bold.ttf"
+-- local font = "Interface\\Addons\\NeatPlatesHub\\shared\\RobotoCondensed-Bold.ttf"
+local font = "Fonts\\ARIALN.ttf"
 local fontsize = 10
 --print(font, fontsize)
 --local fontsize = 12;

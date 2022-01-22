@@ -63,14 +63,11 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["moveFrames"] = false,
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -440,14 +437,17 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
-			["fixedStrata"] = true,
-			["gap"] = 0,
-			["moveFrames"] = false,
 			["desaturated"] = false,
+			["gap"] = 0,
+			["forceColor"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["forceColor"] = false,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -485,7 +485,7 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 2,
+		["total"] = 396,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -605,7 +605,7 @@ CB_PlayedTime = {
 		["total"] = 89354,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 311092,
+		["total"] = 313656,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,

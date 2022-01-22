@@ -40,7 +40,7 @@ AtlasLootClassicDB = {
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Moolatz - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -348,10 +348,14 @@ AtlasLootClassicDB = {
 				["selected"] = {
 					nil, -- [1]
 					"BlackwingLair", -- [2]
-					8, -- [3]
+					nil, -- [3]
 					3, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -363,10 +367,6 @@ AtlasLootClassicDB = {
 						},
 					},
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Judawise - Golemagg"] = {
@@ -412,6 +412,19 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Moolatz - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
 		},
 	},
 }

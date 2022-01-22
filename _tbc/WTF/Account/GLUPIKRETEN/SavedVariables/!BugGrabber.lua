@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 4297,
+	["session"] = 4305,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:74: attempt to index global 'frameCooldown' (a nil value)",
@@ -129,5 +129,29 @@ BugGrabberDB = {
 			["session"] = 4297,
 			["counter"] = 4,
 		}, -- [16]
+		{
+			["message"] = "Interface\\SharedXML\\AddonList.lua:573: AddOn index must be in the range of 1 to 88",
+			["time"] = "2022/01/22 17:45:53",
+			["locals"] = "(*temporary) = 0\n",
+			["stack"] = "[string \"=[C]\"]: in function `GetAddOnInfo'\n[string \"@Interface\\SharedXML\\AddonList.lua\"]:573: in function `AddonTooltip_Update'\n[string \"@Interface\\SharedXML\\AddonList.lua\"]:452: in function `AddonListScrollFrame_OnVerticalScroll'\n[string \"*:OnVerticalScroll\"]:1: in function <[string \"*:OnVerticalScroll\"]:1>\n[string \"=[C]\"]: in function `SetVerticalScroll'\n[string \"@Interface\\SharedXML\\SecureUIPanelTemplates.lua\"]:56: in function <Interface\\SharedXML\\SecureUIPanelTemplates.lua:55>\n[string \"=[C]\"]: in function `SetValue'\n[string \"@Interface\\SharedXML\\AddonList.lua\"]:448: in function `AddonListScrollFrame_OnVerticalScroll'\n[string \"*:OnVerticalScroll\"]:1: in function <[string \"*:OnVerticalScroll\"]:1>\n[string \"=[C]\"]: in function `SetVerticalScroll'\n[string \"@Interface\\SharedXML\\SecureUIPanelTemplates.lua\"]:56: in function <Interface\\SharedXML\\SecureUIPanelTemplates.lua:55>",
+			["session"] = 4299,
+			["counter"] = 4,
+		}, -- [17]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:8: attempt to call method 'SetBackdrop' (a nil value)",
+			["time"] = "2022/01/22 18:07:33",
+			["locals"] = "self = CharacterHeadSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface_TBC\\FrameXML\\PaperDollFrame.lua:1513\n beautyShadow = <table> {\n }\n backgroundTextureName = 136516\n IconOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n checkRelic = false\n Count = CharacterHeadSlotCount {\n }\n IconBorder = <unnamed> {\n }\n Glowborder = <unnamed> {\n }\n searchOverlay = CharacterHeadSlotSearchOverlay {\n }\n icon = CharacterHeadSlotIconTexture {\n }\n qualityTexture = <unnamed> {\n }\n}\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n bgFile = \"Interface\\AddOns\\xVermin\\Media\\textureNormal\"\n tileSize = 16\n edgeFile = \"Interface\\AddOns\\xVermin\\Media\\textureNormal\"\n tile = false\n edgeSize = 4\n insets = <table> {\n }\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:101\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Color = <table> {\n }\n Class = \"WARRIOR\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:83\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:118\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:145\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:130\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua\"]:8: in function <Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:3>\n[string \"@Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua\"]:58: in function <Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:22>\n[string \"@Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua\"]:77: in function <Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:75>",
+			["session"] = 4301,
+			["counter"] = 11,
+		}, -- [18]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:58: attempt to call method 'SetBackdropBorderColor' (a nil value)",
+			["time"] = "2022/01/22 18:11:25",
+			["locals"] = "itemLink = nil\nr = 0\ng = 0.439216\nb = 0.866667\nitemLink = \"|cff0070dd|Hitem:7719::::::::39:::::::::|h[Raging Berserker's Helm]|h|r\"\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = CharacterHeadSlot {\n }\n 2 = CharacterNeckSlot {\n }\n 3 = CharacterShoulderSlot {\n }\n 4 = CharacterBackSlot {\n }\n 5 = CharacterChestSlot {\n }\n 6 = CharacterWristSlot {\n }\n 7 = CharacterHandsSlot {\n }\n 8 = CharacterWaistSlot {\n }\n 9 = CharacterLegsSlot {\n }\n 10 = CharacterFeetSlot {\n }\n 11 = CharacterFinger0Slot {\n }\n 12 = CharacterFinger1Slot {\n }\n 13 = CharacterTrinket0Slot {\n }\n 14 = CharacterTrinket1Slot {\n }\n 15 = CharacterMainHandSlot {\n }\n 16 = CharacterSecondaryHandSlot {\n }\n 17 = CharacterRangedSlot {\n }\n 18 = CharacterAmmoSlot {\n }\n 19 = CharacterTabardSlot {\n }\n 20 = CharacterShirtSlot {\n }\n}\n(for control) = 1\ni = 1\nv = CharacterHeadSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface_TBC\\FrameXML\\PaperDollFrame.lua:1513\n beautyShadow = <table> {\n }\n backgroundTextureName = 136516\n IconOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n checkRelic = false\n Count = CharacterHeadSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterHeadSlotSearchOverlay {\n }\n icon = CharacterHeadSlotIconTexture {\n }\n qualityTexture = <unnamed> {\n }\n}\n(*temporary) = nil\n(*temporary) = CharacterHeadSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface_TBC\\FrameXML\\PaperDollFrame.lua:1513\n beautyShadow = <table> {\n }\n backgroundTextureName = 136516\n IconOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n checkRelic = false\n Count = CharacterHeadSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterHeadSlotSearchOverlay {\n }\n icon = CharacterHeadSlotIconTexture {\n }\n qualityTexture = <unnamed> {\n }\n}\n(*temporary) = 0\n(*temporary) = 0.439216\n(*temporary) = 0.866667\n(*temporary) = 1\n(*temporary) = \"attempt to call method 'SetBackdropBorderColor' (a nil value)\"\n_ = \"Raging Berserker's Helm\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:101\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Color = <table> {\n }\n Class = \"WARRIOR\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:83\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:118\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:145\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:130\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua\"]:58: in function <Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:22>\n[string \"@Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua\"]:77: in function <Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:75>",
+			["session"] = 4303,
+			["counter"] = 1,
+		}, -- [19]
 	},
 }

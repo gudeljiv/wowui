@@ -1,5 +1,24 @@
 local _, xVermin = ...
 
+-- local function SetGlowBorder(self)
+-- 	self.Glowborder = CreateFrame("Frame", nil, self, BackdropTemplateMixin and "BackdropTemplate")
+-- 	self.Glowborder:SetFrameLevel(0)
+-- 	self.Glowborder:SetPoint("TOPLEFT", self, "TOPLEFT", -6, 6)
+-- 	self.Glowborder:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT", 6, -6)
+-- 	self.Glowborder:SetBackdrop(
+-- 		{
+-- 			bgFile = xVermin.Config.border.default, 
+-- 			edgeFile =  xVermin.Config.border.default,
+-- 			tile = false, 
+-- 			tileSize = 16, 
+-- 			edgeSize = 4, 
+-- 			insets = {left = -4, right = -4, top = -4, bottom = -4}
+-- 		}
+-- 	)
+-- 	self.Glowborder:SetBackdropColor(0, 0, 0, 0)
+-- 	self.Glowborder:SetBackdropBorderColor(0, 0, 0, 1)
+-- end
+
 local function BorderItemSlots()
 	local itemLink, r, g, b, itemLink
 
