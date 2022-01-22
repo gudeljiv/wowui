@@ -24,7 +24,7 @@ local function targetFrame(self, forceNormalTexture)
 	self.manabar.RightText:SetPoint("RIGHT", self.manabar, "RIGHT", -2, -1)
 	self.manabar.TextString:SetPoint("CENTER", self.manabar, "CENTER", 0, -1)
 	-- TargetFrame.threatNumericIndicator:SetPoint("BOTTOM", PlayerFrame, "TOP", 72, -21);
-	-- FocusFrame.threatNumericIndicator:SetAlpha(0);
+	-- TargetFrame.threatNumericIndicator:SetAlpha(0);
 	if (forceNormalTexture) then
 		self.haveElite = nil
 		if (classification == "minus") then
@@ -167,3 +167,40 @@ local function totFrameSelector()
 end
 hooksecurefunc("TargetofTarget_Update", totFrameSelector)
 hooksecurefunc("TargetFrame_CheckClassification", totFrameSelector)
+
+
+--	Focus ToT
+local function f_totFrame()
+	FocusFrameToTTextureFrameDeadText:ClearAllPoints()
+	FocusFrameToTTextureFrameDeadText:SetPoint("CENTER", "FocusFrameToTHealthBar", "CENTER", 1, 0)
+	FocusFrameToTTextureFrameUnconsciousText:ClearAllPoints()
+	FocusFrameToTTextureFrameUnconsciousText:SetPoint("CENTER", "FocusFrameToTHealthBar", "CENTER", 1, 0)
+	FocusFrameToTTextureFrameName:SetSize(65, 10)
+	FocusFrameToTHealthBar:ClearAllPoints()
+	FocusFrameToTHealthBar:SetPoint("TOPLEFT", 45, -15)
+	FocusFrameToTHealthBar:SetHeight(10)
+	FocusFrameToTManaBar:ClearAllPoints()
+	FocusFrameToTManaBar:SetPoint("TOPLEFT", 45, -25)
+	FocusFrameToTManaBar:SetHeight(5)
+	FocusFrameToTBackground:SetSize(50, 14)
+	FocusFrameToTBackground:ClearAllPoints()
+	FocusFrameToTBackground:SetPoint("CENTER", "FocusFrameToT", "CENTER", 20, 0)
+end
+FocusFrameToT:HookScript("OnUpdate", f_totFrame)
+-- hooksecurefunc("TargetofFocus_Update", f_totFrame)
+-- hooksecurefunc("FocusFrame_CheckClassification", totFrame)
+
+local function f_totFrameSelector()
+	if (cfg.darkFrames == true) then
+		FocusFrameToTTextureFrameTexture:SetTexture(
+			"Interface\\Addons\\whoaThickFrames_Classic\\media\\dark\\UI-TargetofTargetFrame"
+		)
+	elseif (cfg.darkFrames == false) then
+		FocusFrameToTTextureFrameTexture:SetTexture(
+			"Interface\\Addons\\whoaThickFrames_Classic\\media\\light\\UI-TargetofTargetFrame"
+		)
+	end
+end
+FocusFrameToT:HookScript("OnUpdate", f_totFrameSelector)
+-- hooksecurefunc("TargetofFocus_Update", f_totFrameSelector)
+-- hooksecurefunc("FocusFrame_CheckClassification", totFrameSelector)

@@ -2933,26 +2933,29 @@
 								if faction == "Alliance" then
 									mybar:SetColor(0, 0.5, 1, 0.5)
 								else
-									mybar:SetColor(1, 0.0, 0, 0.5)
+									-- mybar:SetColor(1, 0.0, 0, 0.5)
+									mybar:SetColor(0, 0, 0, 0.5)
 								end
-								mybar:SetShadowColor(0, 0, 0, 0.5)
-								mybar:EnableMouse()
-								mybar:SetScript("OnMouseDown", function(self, btn)
-									if btn == "RightButton" then
-										mybar:Stop()
-										LeaPlusLC.FlightProgressBar = nil
-									end
-								end)
+								mybar:SetShadowColor(0, 0, 0, 0)
+								mybar:CreateBeautyBorder(6)
 
-								mybar:SetScript("OnEnter", function()
-									mybar:SetLabel(L["Right-click to close"])
-								end)
+								-- mybar:EnableMouse()
+								-- mybar:SetScript("OnMouseDown", function(self, btn)
+								-- 	if btn == "RightButton" then
+								-- 		mybar:Stop()
+								-- 		LeaPlusLC.FlightProgressBar = nil
+								-- 	end
+								-- end)
 
-								mybar:SetScript("OnLeave", function()
-									if destination then
-										mybar:SetLabel(barName)
-									end
-								end)
+								-- mybar:SetScript("OnEnter", function()
+								-- 	mybar:SetLabel(L["Right-click to close"])
+								-- end)
+
+								-- mybar:SetScript("OnLeave", function()
+								-- 	if destination then
+								-- 		mybar:SetLabel(barName)
+								-- 	end
+								-- end)
 
 								mybar:SetLabel(barName)
 								mybar:SetDuration(duration)

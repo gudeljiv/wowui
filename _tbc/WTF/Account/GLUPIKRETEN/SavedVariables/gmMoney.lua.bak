@@ -34,7 +34,7 @@ GMMONEY = {
 			["CLASS"] = "WARLOCK",
 		},
 		["Vermin"] = {
-			["GOLD"] = 300898,
+			["GOLD"] = 938850,
 			["CLASS"] = "WARRIOR",
 		},
 	},

@@ -1,3 +1,20 @@
+1.14.26 - 19th January 2022
+- Maintenance update.
+
+1.14.16 - 22nd December 2021
+- Added missing Duskwood to Deadwind pass zone crossing.
+
+1.14.10 - 1st December 2021
+- Added a new setting under 'Show points of interest' called 'Show zone crossings'.  If enabled, zone crossings will be shown.  These are clickable arrows indicating zone exit pathways.
+- Player arrow and group icon maximum size (for both world map and battlefield map) and battlefield maximum size increased to 400%.
+- Changed the Leatrix Maps minimap icon.
+
+1.14.09 - 24th November 2021
+- If 'Center map on player' is enabled (either world map or battlefield map), the map will center more quickly after zooming, panning, etc.  You can now hold shift while panning to temporarily prevent the map from centering.
+
+1.14.08 - 17th November 2021
+- Fixed a minor issue with 'Enhance battlefield map' where the battlefield map tab remained visible on startup until the battlefield map was shown.
+
 1.14.07 - 10th November 2021
 - Updated for game version 1.14.1.
 

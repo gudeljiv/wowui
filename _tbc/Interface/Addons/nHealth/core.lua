@@ -71,6 +71,23 @@ local function FormatValue(self)
 	end
 end
 
+local function FormatNumber(number, divider)
+	if not divider then
+		divider = "."
+	end
+	if not number then
+		return 0
+	else
+		number = tonumber(number)
+	end
+	if abs(number) < 1000 then
+		return number
+	end
+	local neg = number < 0 and "-" or ""
+	local left, mid, right = tostring(abs(number)):match("^([^%d]*%d)(%d*)(.-)$")
+	return ("%s%s%s%s"):format(neg, left, mid:reverse():gsub("(%d%d%d)", "%1" .. divider):reverse(), right)
+end
+
 local function UpdateBarVisibility()
 	if not TargetFrame:IsShown() or UnitIsDeadOrGhost("target") then
 		f.Health:SetAlpha(0.3)
@@ -97,9 +114,9 @@ local function UpdateBarValue()
 		f.Health:SetValue(min)
 
 		if (nHealth.valueAbbrev) then
-			f.Health.Value:SetText(( min > 0 and FormatValue(min) or "") .. " / " .. max)
+			f.Health.Value:SetText(( min > 0 and FormatNumber(min) or 0) .. " / " .. FormatNumber(max))
 		else
-			f.Health.Value:SetText((min > 0 and min or "") .. " / " .. max)
+			f.Health.Value:SetText((min > 0 and FormatNumber(min) or 0) .. " / " .. FormatNumber(max))
 		end
 	else
 		f.Health.Value:SetText("")
