@@ -53,18 +53,18 @@ AUCTIONATOR_CONFIG = {
 		["Upper Unit Price"] = true,
 		["Available"] = false,
 	},
-	["auto_list_search"] = false,
 	["historical_prices"] = {
 	},
 	["undercut_percentage"] = 0,
+	["auto_list_search"] = false,
 	["selling_show_all_results"] = true,
-	["columns_selling_search"] = {
-	},
+	["auction_chat_log"] = true,
 	["mailbox_tooltips"] = true,
 	["columns_posting_history"] = {
 	},
 	["selling_bag_collapsed"] = false,
-	["auction_chat_log"] = true,
+	["columns_selling_search"] = {
+	},
 	["columns_shopping"] = {
 		["Name"] = false,
 		["Available"] = false,

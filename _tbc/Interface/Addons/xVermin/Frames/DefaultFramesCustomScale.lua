@@ -34,6 +34,13 @@ C_Timer.NewTicker(1, function(self)
 	end
 end)
 
+C_Timer.NewTicker(1, function(self)
+	if CraftFrame then
+		CraftFrame:SetScale(1.3)
+		self:Cancel()
+	end
+end)
+
 
 local LoDMap = {
 	Blizzard_CraftUI = {"CraftFrame"},

@@ -36,8 +36,8 @@ ChocolateBarDB = {
 		["Nitwit - Dreadnaught"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
@@ -53,9 +53,6 @@ ChocolateBarDB = {
 	["profiles"] = {
 		["Default"] = {
 			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -85,6 +82,9 @@ ChocolateBarDB = {
 					["index"] = 1,
 					["barOffx"] = -88.3325424194336,
 				},
+			},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
 			},
 			["fixedStrata"] = true,
 			["objSettings"] = {
@@ -232,7 +232,23 @@ ChocolateBarDB = {
 					["enabled"] = false,
 					["barName"] = "ChocolateBar1",
 				},
+				["Plater"] = {
+					["index"] = 3,
+					["isNew"] = false,
+					["showLabel"] = true,
+					["showText"] = false,
+					["barName"] = "ChocolateBar2",
+					["showIcon"] = false,
+					["customLabel"] = "P",
+				},
 				["MoreChocolate"] = {
+					["enabled"] = false,
+					["align"] = "right",
+					["isNew"] = false,
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+				},
+				["BagnonLauncher"] = {
 					["enabled"] = false,
 					["align"] = "right",
 					["isNew"] = false,
@@ -246,13 +262,6 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar2",
 					["showText"] = false,
 					["customLabel"] = "N",
-				},
-				["BagnonLauncher"] = {
-					["enabled"] = false,
-					["align"] = "right",
-					["isNew"] = false,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
 				},
 				["Grid2"] = {
 					["index"] = 2,
@@ -303,19 +312,17 @@ ChocolateBarDB = {
 					["customLabel"] = "AL",
 				},
 				["BugSack"] = {
-					["index"] = 4,
+					["index"] = 5,
 					["isNew"] = false,
 					["showIcon"] = false,
 					["barName"] = "ChocolateBar2",
 					["customLabel"] = "B",
 				},
-				["NIT"] = {
-					["index"] = 2,
-					["showLabel"] = true,
+				["TownsfolkTracker"] = {
+					["enabled"] = false,
+					["align"] = "right",
 					["showText"] = false,
-					["barName"] = "ChocolateBar2",
-					["showIcon"] = false,
-					["customLabel"] = "NIT",
+					["barName"] = "ChocolateBar1",
 				},
 				["TellMeWhen"] = {
 					["enabled"] = false,
@@ -347,16 +354,16 @@ ChocolateBarDB = {
 					["index"] = 1,
 					["barName"] = "ChocolateBar1",
 				},
+				["TestNoText"] = {
+					["enabled"] = false,
+					["index"] = 4,
+					["barName"] = "ChocolateBar1",
+				},
 				["Prat"] = {
 					["enabled"] = false,
 					["index"] = 3,
 					["align"] = "right",
 					["showText"] = false,
-					["barName"] = "ChocolateBar1",
-				},
-				["TestNoText"] = {
-					["enabled"] = false,
-					["index"] = 4,
 					["barName"] = "ChocolateBar1",
 				},
 				["GatherMate2"] = {
@@ -374,7 +381,7 @@ ChocolateBarDB = {
 					["widthBehavior"] = "free",
 				},
 				["TradeSkillMaster"] = {
-					["index"] = 3,
+					["index"] = 4,
 					["isNew"] = false,
 					["showLabel"] = true,
 					["showIcon"] = false,
@@ -408,11 +415,13 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "DJ",
 				},
-				["TownsfolkTracker"] = {
-					["enabled"] = false,
-					["align"] = "right",
+				["NIT"] = {
+					["index"] = 2,
+					["showLabel"] = true,
 					["showText"] = false,
-					["barName"] = "ChocolateBar1",
+					["barName"] = "ChocolateBar2",
+					["showIcon"] = false,
+					["customLabel"] = "NIT",
 				},
 				["picoFPS"] = {
 					["index"] = 1,
@@ -447,11 +456,11 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
-			["desaturated"] = false,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["fontName"] = "Friz Quadrata TT",
-			["moveFrames"] = false,
 			["gap"] = 0,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["desaturated"] = false,
+			["moveFrames"] = false,
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
 			["moduleOptions"] = {
@@ -548,7 +557,7 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 304605,
+		["total"] = 307046,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,

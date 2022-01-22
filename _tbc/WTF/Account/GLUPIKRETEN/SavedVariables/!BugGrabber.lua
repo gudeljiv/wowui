@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 4276,
+	["session"] = 4282,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -28,21 +28,13 @@ BugGrabberDB = {
 			["counter"] = 403,
 		}, -- [3]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
-			["time"] = "2022/01/21 19:49:11",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 4269,
-			["counter"] = 1,
-		}, -- [4]
-		{
 			["message"] = "[string \"Questie_ItemButton3:createBeautyBorder(4)\"]:1: attempt to call method 'createBeautyBorder' (a nil value)",
 			["time"] = "2022/01/21 21:16:01",
 			["locals"] = "(*temporary) = nil\n(*temporary) = Questie_ItemButton3 {\n FlyoutBorderShadow = Questie_ItemButton3FlyoutBorderShadow {\n }\n OnEnter = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:857\n SetItem = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:674\n NewActionTexture = <unnamed> {\n }\n Border = Questie_ItemButton3Border {\n }\n Flash = Questie_ItemButton3Flash {\n }\n line = Questie_QuestButton9 {\n }\n OnUpdate = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:799\n AutoCastable = <unnamed> {\n }\n OnShow = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:847\n questID = 992\n count = <unnamed> {\n }\n fontSize = 26\n range = <unnamed> {\n }\n itemName = \"Untapped Dowsing Widget\"\n rangeTimer = -1\n charges = 1\n 0 = <userdata>\n HotKey = Questie_ItemButton3HotKey {\n }\n FakeHide = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:871\n itemID = 8584\n SpellHighlightAnim = <unnamed> {\n }\n OnLeave = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:865\n UpdateButton = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:750\n OnHide = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:852\n OnClick = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:765\n SpellHighlightTexture = <unnamed> {\n }\n OnEvent = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:789\n icon = Questie_ItemButton3Icon {\n }\n NormalTexture = Questie_ItemButton3NormalTexture {\n }\n Name = Questie_ItemButton3Name {\n }\n FlyoutBorder = Questie_ItemButton3FlyoutBorder {\n }\n Count = Questie_ItemButton3Count {\n }\n FlyoutArrow = Questie_ItemButton3FlyoutArrow {\n }\n cooldown = Questie_ItemButton3Cooldown {\n }\n AutoCastShine = Questie_ItemButton3Shine {\n }\n}\n(*temporary) = 4\n(*temporary) = \"attempt to call method 'createBeautyBorder' (a nil value)\"\n",
 			["stack"] = "[string \"Questie_ItemButton3:createBeautyBorder(4)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 4270,
 			["counter"] = 2,
-		}, -- [5]
+		}, -- [4]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarLeft:SetScale()'.",
 			["time"] = "2022/01/21 21:48:52",
@@ -50,7 +42,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetScale'\n[string \"@Interface\\AddOns\\xVermin\\Addons/nMainBar.lua\"]:69: in function <Interface\\AddOns\\xVermin\\Addons/nMainBar.lua:64>\n[string \"@Interface\\SharedXML\\C_TimerAugment.lua\"]:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
 			["session"] = 4272,
 			["counter"] = 1,
-		}, -- [6]
+		}, -- [5]
 		{
 			["message"] = "...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:751: attempt to index local 'color' (a nil value)",
 			["time"] = "2022/01/22 06:25:24",
@@ -58,7 +50,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:751: in function `AuctionFrameBrowse_Update'\n[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:277: in function <...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:275>",
 			["session"] = 4275,
 			["counter"] = 2,
-		}, -- [7]
+		}, -- [6]
 		{
 			["message"] = "Interface\\SharedXML\\LinkUtil.lua:2: attempt to index local 'linkString' (a nil value)",
 			["time"] = "2022/01/22 06:29:20",
@@ -66,6 +58,22 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\SharedXML\\LinkUtil.lua\"]:2: in function `ExtractHyperlinkString'\n[string \"@Interface\\AddOns\\Auctionator\\Source_TBC\\Search\\GetCleanItemLink.lua\"]:2: in function `GetCleanItemLink'\n[string \"@Interface\\AddOns\\Auctionator\\Source_TBC\\Tabs\\Cancelling\\Mixins\\UndercutScan.lua\"]:31: in function `AnyUndercutItems'\n[string \"@Interface\\AddOns\\Auctionator\\Source_TBC\\Tabs\\Cancelling\\Mixins\\UndercutScan.lua\"]:67: in function `SetCancel'\n[string \"@Interface\\AddOns\\Auctionator\\Source_TBC\\Tabs\\Cancelling\\Mixins\\UndercutScan.lua\"]:25: in function <...r\\Source_TBC\\Tabs\\Cancelling\\Mixins\\UndercutScan.lua:16>\n[string \"=[C]\"]: in function `CreateFrame'\n[string \"@Interface\\AddOns\\Auctionator\\Source_TBC\\Tabs\\Mixins\\TabButton.lua\"]:12: in function `Initialize'\n[string \"@Interface\\AddOns\\Auctionator\\Source_TBC\\Tabs\\Mixins\\TabContainer.lua\"]:19: in function <...\\Auctionator\\Source_TBC\\Tabs\\Mixins\\TabContainer.lua:7>\n[string \"@Interface\\AddOns\\Auctionator\\Source_TBC\\Tabs\\Mixins\\TabContainer.lua\"]:40: in function <...\\Auctionator\\Source_TBC\\Tabs\\Mixins\\TabContainer.lua:25>\n[string \"=[C]\"]: in function `CreateFrame'\n[string \"@Interface\\AddOns\\Auctionator\\Source_TBC\\Core\\Mixin.lua\"]:5: in function <...terface\\AddOns\\Auctionator\\Source_TBC\\Core\\Mixin.lua:3>\n[string \"@Interface\\AddOns\\Auctionator\\Source_TBC\\Core\\Mixin.lua\"]:82: in function <...terface\\AddOns\\Auctionator\\Source_TBC\\Core\\Mixin.lua:79>\n...\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:1927: in function `ShowUIPanel'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:1818: in function <Interface_TBC\\FrameXML\\UIParent.lua:1814>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:2592: in function `ShowUIPanel'\n[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:172: in function `AuctionFrame_Show'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:1137: in function `UIParent_OnEvent'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Core.lua\"]:277: in function `_onClickHandler'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\ActionButton.lua\"]:349: in function `?'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua\"]:86: in function `ScriptHandlerCommon'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua\"]:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>",
 			["session"] = 4275,
 			["counter"] = 1,
+		}, -- [7]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_TrackedQuests:ClearAllPoints()'.",
+			["time"] = "2022/01/22 07:14:31",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:614: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:1247: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:198: in function <...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:162>",
+			["session"] = 4278,
+			["counter"] = 1,
 		}, -- [8]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
+			["time"] = "2022/01/21 19:49:11",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
+			["session"] = 4278,
+			["counter"] = 3,
+		}, -- [9]
 	},
 }

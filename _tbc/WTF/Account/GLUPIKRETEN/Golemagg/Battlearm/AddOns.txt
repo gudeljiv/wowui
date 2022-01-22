@@ -10,3 +10,4 @@ RXPGuides: disabled
 nPower: disabled
 Leatrix_Plus: enabled
 TradeSkillMaster: enabled
+NeatPlates: disabled

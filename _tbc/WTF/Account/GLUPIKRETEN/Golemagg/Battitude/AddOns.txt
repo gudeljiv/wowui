@@ -79,7 +79,7 @@ Lorti UI Classic: enabled
 ls_Toasts: enabled
 MikScrollingBattleText: enabled
 MSBTOptions: enabled
-NeatPlates: enabled
+NeatPlates: disabled
 NeatPlatesHub: enabled
 NeatPlatesWidgets: enabled
 NeatPlates_Alvara: enabled

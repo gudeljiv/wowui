@@ -146,6 +146,11 @@ ExtendedCharacterStats = {
 			},
 		},
 		["spell"] = {
+			["penetration"] = {
+				["display"] = true,
+				["text"] = "Penetration",
+				["refName"] = "SpellPenetration",
+			},
 			["hit"] = {
 				["bossLevel"] = {
 					["statColor"] = "558b2f",
@@ -181,13 +186,9 @@ ExtendedCharacterStats = {
 					["textColor"] = "85bb5c",
 				},
 			},
-			["penetration"] = {
-				["display"] = true,
-				["text"] = "Penetration",
-				["refName"] = "SpellPenetration",
-			},
 			["display"] = true,
 			["text"] = "Spell",
+			["refName"] = "SpellHeader",
 			["crit"] = {
 				["statColor"] = "d32f2f",
 				["display"] = true,
@@ -195,7 +196,6 @@ ExtendedCharacterStats = {
 				["refName"] = "SpellCritChance",
 				["textColor"] = "ff6659",
 			},
-			["refName"] = "SpellHeader",
 		},
 		["spellBonus"] = {
 			["physicalCrit"] = {
