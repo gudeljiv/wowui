@@ -26,3 +26,4 @@ Select: disabled
 ClassicAuraDurations: disabled
 Leatrix_Plus: enabled
 whoaThickFrames_Classic: enabled
+TradeSkillMaster: enabled

@@ -1,6 +1,10 @@
 # Auctionator
 
-## [2.5.5-1-g17bf777](https://github.com/Auctionator/BCC-Auctionator/tree/17bf7779fa5c37be1b1e27360d00fefe4c900591) (2021-06-29)
-[Full Changelog](https://github.com/Auctionator/BCC-Auctionator/compare/2.5.5...17bf7779fa5c37be1b1e27360d00fefe4c900591) [Previous Releases](https://github.com/Auctionator/BCC-Auctionator/releases)
+## [9.1.14](https://github.com/Auctionator/Auctionator/tree/9.1.14) (2022-01-16)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/9.1.13...9.1.14) [Previous Releases](https://github.com/Auctionator/Auctionator/releases)
 
-- Update README.md  
+- [Fixes #1115] TBC: Default stack size isn't always max when set to max  
+    Caused by stack size memory remembering a lower value in some cases  
+- [Fixes #1114] Full scan sometimes records wrong price  
+- [Fixes #1113] TBC: Show the price each when chain buying  
+- ReagentSearch: Show negative profits  

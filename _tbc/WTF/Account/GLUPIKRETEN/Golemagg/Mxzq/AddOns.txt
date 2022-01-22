@@ -18,3 +18,4 @@ Bagnon_VoidStorage: disabled
 BagBrother: disabled
 RXPGuides: disabled
 Leatrix_Plus: enabled
+TradeSkillMaster: enabled

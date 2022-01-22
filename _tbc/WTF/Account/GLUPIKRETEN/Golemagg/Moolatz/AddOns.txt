@@ -113,7 +113,7 @@ WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
 whoaThickFrames_Classic: enabled
 CharacterStatsClassic: enabled
-TradeSkillMaster: disabled
+TradeSkillMaster: enabled
 nBuff: enabled
 nMainbar: enabled
 nMinimap: enabled
