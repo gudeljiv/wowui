@@ -125,7 +125,8 @@ local function fontStyleDo()
 		FocusFrameTextureFrame.HealthBarTextLeft,	FocusFrameTextureFrame.HealthBarTextRight, FocusFrameTextureFrame.ManaBarText,
 		FocusFrameTextureFrame.ManaBarTextLeft,	FocusFrameTextureFrame.ManaBarTextRight, PetFrameHealthBarText, PetFrameHealthBarTextLeft, 
 		PetFrameHealthBarTextRight, PetFrameManaBarText, PetFrameManaBarTextLeft, PetFrameManaBarTextRight, }) do 
-		if v then v:SetFontObject(font); end
+		-- if v then v:SetFontObject(font); end
+		if v then v:SetFont("Fonts\\ARIALN.TTF", 14, "OUTLINE") end
 	end
 end
 
@@ -540,6 +541,7 @@ whoaMenu:SetScript("OnEvent", function(self)
 	fontSelector:SetPoint("CENTER", 65, -15)
 
 	local fontList = {
+		"Default",
 		"Retail",
 		"Retail Big",
 		"Retail Huge",
@@ -552,26 +554,29 @@ whoaMenu:SetScript("OnEvent", function(self)
 	local function OnClick(self)
 		UIDropDownMenu_SetSelectedID(fontSelector, self:GetID())
 		if (UIDropDownMenu_GetSelectedID(fontSelector)==1) then
-			cfg.fontFamily = "SystemFont_Outline_Small";
+			cfg.fontFamily = "GameFontNormal";
 			cfg.fontIndex = 1;
-		elseif (UIDropDownMenu_GetSelectedID(fontSelector)==2) then
-			cfg.fontFamily = "SystemFont_Outline";
+		elseif(UIDropDownMenu_GetSelectedID(fontSelector)==1) then
+			cfg.fontFamily = "SystemFont_Outline_Small";
 			cfg.fontIndex = 2;
 		elseif (UIDropDownMenu_GetSelectedID(fontSelector)==3) then
-			cfg.fontFamily = "Game15Font_o1";
+			cfg.fontFamily = "SystemFont_Outline";
 			cfg.fontIndex = 3;
 		elseif (UIDropDownMenu_GetSelectedID(fontSelector)==4) then
-			cfg.fontFamily = "Number12Font_o1";
+			cfg.fontFamily = "Game15Font_o1";
 			cfg.fontIndex = 4;
 		elseif (UIDropDownMenu_GetSelectedID(fontSelector)==5) then
-			cfg.fontFamily = "NumberFontNormal";
+			cfg.fontFamily = "Number12Font_o1";
 			cfg.fontIndex = 5;
 		elseif (UIDropDownMenu_GetSelectedID(fontSelector)==6) then
-			cfg.fontFamily = "NumberFont_Outline_Large";
+			cfg.fontFamily = "NumberFontNormal";
 			cfg.fontIndex = 6;
 		elseif (UIDropDownMenu_GetSelectedID(fontSelector)==7) then
-			cfg.fontFamily = "NumberFontNormalSmall";
+			cfg.fontFamily = "NumberFont_Outline_Large";
 			cfg.fontIndex = 7;
+		elseif (UIDropDownMenu_GetSelectedID(fontSelector)==8) then
+			cfg.fontFamily = "NumberFontNormalSmall";
+			cfg.fontIndex = 8;
 		end
 		fontStyleDo()
 	end

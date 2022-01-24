@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 4345,
+	["session"] = 4359,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:74: attempt to index global 'frameCooldown' (a nil value)",
@@ -116,21 +116,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [14]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
-			["time"] = "2022/01/21 19:49:11",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 4297,
-			["counter"] = 4,
-		}, -- [15]
-		{
 			["message"] = "Interface\\SharedXML\\AddonList.lua:573: AddOn index must be in the range of 1 to 88",
 			["time"] = "2022/01/22 17:45:53",
 			["locals"] = "(*temporary) = 0\n",
 			["stack"] = "[string \"=[C]\"]: in function `GetAddOnInfo'\n[string \"@Interface\\SharedXML\\AddonList.lua\"]:573: in function `AddonTooltip_Update'\n[string \"@Interface\\SharedXML\\AddonList.lua\"]:452: in function `AddonListScrollFrame_OnVerticalScroll'\n[string \"*:OnVerticalScroll\"]:1: in function <[string \"*:OnVerticalScroll\"]:1>\n[string \"=[C]\"]: in function `SetVerticalScroll'\n[string \"@Interface\\SharedXML\\SecureUIPanelTemplates.lua\"]:56: in function <Interface\\SharedXML\\SecureUIPanelTemplates.lua:55>\n[string \"=[C]\"]: in function `SetValue'\n[string \"@Interface\\SharedXML\\AddonList.lua\"]:448: in function `AddonListScrollFrame_OnVerticalScroll'\n[string \"*:OnVerticalScroll\"]:1: in function <[string \"*:OnVerticalScroll\"]:1>\n[string \"=[C]\"]: in function `SetVerticalScroll'\n[string \"@Interface\\SharedXML\\SecureUIPanelTemplates.lua\"]:56: in function <Interface\\SharedXML\\SecureUIPanelTemplates.lua:55>",
 			["session"] = 4299,
 			["counter"] = 4,
-		}, -- [16]
+		}, -- [15]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:8: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2022/01/22 18:07:33",
@@ -138,7 +130,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua\"]:8: in function <Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:3>\n[string \"@Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua\"]:58: in function <Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:22>\n[string \"@Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua\"]:77: in function <Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:75>",
 			["session"] = 4301,
 			["counter"] = 11,
-		}, -- [17]
+		}, -- [16]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:58: attempt to call method 'SetBackdropBorderColor' (a nil value)",
 			["time"] = "2022/01/22 18:11:25",
@@ -146,7 +138,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua\"]:58: in function <Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:22>\n[string \"@Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua\"]:77: in function <Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:75>",
 			["session"] = 4303,
 			["counter"] = 1,
-		}, -- [18]
+		}, -- [17]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:128: attempt to index global 'TargetFrameHealthBarText' (a nil value)",
 			["time"] = "2022/01/24 10:21:28",
@@ -154,7 +146,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:128: in function <Interface\\AddOns\\xVermin\\xVermin.lua:117>\n[string \"=[C]\"]: ?",
 			["session"] = 4319,
 			["counter"] = 1132,
-		}, -- [19]
+		}, -- [18]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'whoaThickFrames_BCC' tried to call the protected function 'PlayerFrame:SetMouseClickEnabled()'.",
 			["time"] = "2022/01/24 10:46:53",
@@ -162,7 +154,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetMouseClickEnabled'\n[string \"@Interface\\AddOns\\whoaThickFrames_BCC\\wSettings.lua\"]:161: in function `disableFramesClick'\n[string \"@Interface\\AddOns\\whoaThickFrames_BCC\\wSettings.lua\"]:392: in function <Interface\\AddOns\\whoaThickFrames_BCC\\wSettings.lua:389>",
 			["session"] = 4320,
 			["counter"] = 1,
-		}, -- [20]
+		}, -- [19]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:134: attempt to index global 'TargetFrameManaBarText' (a nil value)",
 			["time"] = "2022/01/24 10:45:43",
@@ -170,7 +162,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:134: in function <Interface\\AddOns\\xVermin\\xVermin.lua:117>\n[string \"=[C]\"]: ?",
 			["session"] = 4320,
 			["counter"] = 1385,
-		}, -- [21]
+		}, -- [20]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:134: '<name>' expected near ':'",
 			["time"] = "2022/01/24 10:48:32",
@@ -178,7 +170,7 @@ BugGrabberDB = {
 			["stack"] = "",
 			["session"] = 4321,
 			["counter"] = 4,
-		}, -- [22]
+		}, -- [21]
 		{
 			["message"] = "[string \"TargetFrameTextureFrameName:CreateBeautyBor...\"]:1: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2022/01/24 10:54:44",
@@ -186,7 +178,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"TargetFrameTextureFrameName:CreateBeautyBorder(4)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 4322,
 			["counter"] = 1,
-		}, -- [23]
+		}, -- [22]
 		{
 			["message"] = "[string \"TargetFrameTextureFramTOPLEFT\", TargetFrame, \"BOTTOMRIGHT\", -10...\"]:1: unfinished string near '<eof>'",
 			["time"] = "2022/01/24 11:09:50",
@@ -194,7 +186,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2914: in function <Interface\\FrameXML\\ChatFrame.lua:2907>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 4326,
 			["counter"] = 5,
-		}, -- [24]
+		}, -- [23]
 		{
 			["message"] = "[string \"TargetFrameTextureFrameLevelText:SetPint(\"T...\"]:1: attempt to call method 'SetPint' (a nil value)",
 			["time"] = "2022/01/24 11:10:17",
@@ -202,7 +194,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"TargetFrameTextureFrameLevelText:SetPint(\"TOPLEFT\", TargetFrame, \"BOTTOMRIGHT\", -100, 0)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2914: in function <Interface\\FrameXML\\ChatFrame.lua:2907>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 4326,
 			["counter"] = 1,
-		}, -- [25]
+		}, -- [24]
 		{
 			["message"] = "[string \"PlayerFrameHealthBarText:SetScale(1.6)/rl\"]:1: unexpected symbol near '/'",
 			["time"] = "2022/01/24 11:46:10",
@@ -210,7 +202,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 4337,
 			["counter"] = 1,
-		}, -- [26]
+		}, -- [25]
 		{
 			["message"] = "Interface\\AddOns\\MegaMacro\\src/constants.lua:67: attempt to index global 'C_LevelLink' (a nil value)",
 			["time"] = "2022/01/24 12:19:17",
@@ -218,7 +210,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\MegaMacro\\src/constants.lua\"]:67: in main chunk",
 			["session"] = 4344,
 			["counter"] = 1,
-		}, -- [27]
+		}, -- [26]
 		{
 			["message"] = "Interface\\AddOns\\MegaMacro\\src/main.lua:9: Attempt to register unknown event \"PLAYER_SPECIALIZATION_CHANGED\"",
 			["time"] = "2022/01/24 12:19:17",
@@ -226,12 +218,36 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `RegisterEvent'\n[string \"@Interface\\AddOns\\MegaMacro\\src/main.lua\"]:9: in main chunk",
 			["session"] = 4344,
 			["counter"] = 1,
-		}, -- [28]
+		}, -- [27]
 		{
 			["message"] = "(null)",
 			["session"] = 4344,
 			["time"] = "2022/01/22 13:10:29",
 			["counter"] = 15,
+		}, -- [28]
+		{
+			["message"] = "Interface\\AddOns\\whoaThickFrames_BCC\\wSettings.lua:128: PlayerFrameHealthBarText:SetFontObject(): Couldn't find font named Fonts\\ARIALN.TTF",
+			["time"] = "2022/01/24 15:50:50",
+			["locals"] = "(*temporary) = PlayerFrameHealthBarText {\n 0 = <userdata>\n}\n(*temporary) = \"Fonts\\ARIALN.TTF\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetFontObject'\n[string \"@Interface\\AddOns\\whoaThickFrames_BCC\\wSettings.lua\"]:128: in function <Interface\\AddOns\\whoaThickFrames_BCC\\wSettings.lua:116>\n[string \"@Interface\\AddOns\\whoaThickFrames_BCC\\wSettings.lua\"]:580: in function `func'\n[string \"@Interface\\FrameXML\\UIDropDownMenu.lua\"]:942: in function `UIDropDownMenuButton_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 4352,
+			["counter"] = 6,
 		}, -- [29]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
+			["time"] = "2022/01/21 19:49:11",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
+			["session"] = 4357,
+			["counter"] = 5,
+		}, -- [30]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PetActionButton1:Show()'.",
+			["time"] = "2022/01/24 16:08:29",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\AddOns\\xVermin\\Addons/nMainBar.lua\"]:89: in function <Interface\\AddOns\\xVermin\\Addons/nMainBar.lua:82>\n[string \"@Interface\\SharedXML\\C_TimerAugment.lua\"]:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
+			["session"] = 4358,
+			["counter"] = 1,
+		}, -- [31]
 	},
 }
