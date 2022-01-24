@@ -25,7 +25,8 @@ RangeDisplay_Options: disabled
 Select: disabled
 ClassicAuraDurations: disabled
 Leatrix_Plus: enabled
-whoaThickFrames_Classic: enabled
+whoaThickFrames_Classic: disabled
 TradeSkillMaster: enabled
 NeatPlates: enabled
 Plater: disabled
+whoaThickFrames_BCC: enabled

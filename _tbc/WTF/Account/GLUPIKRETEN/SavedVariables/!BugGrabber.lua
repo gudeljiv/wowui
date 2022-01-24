@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 4305,
+	["session"] = 4343,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:74: attempt to index global 'frameCooldown' (a nil value)",
@@ -153,5 +153,69 @@ BugGrabberDB = {
 			["session"] = 4303,
 			["counter"] = 1,
 		}, -- [19]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:128: attempt to index global 'TargetFrameHealthBarText' (a nil value)",
+			["time"] = "2022/01/24 10:21:28",
+			["locals"] = "self = TargetFrame {\n 0 = <userdata>\n debuffs = TargetFrameDebuffs {\n }\n portrait = TargetFramePortrait {\n }\n totFrame = TargetFrameToT {\n }\n raidTargetIcon = TargetFrameTextureFrameRaidTargetIcon {\n }\n highLevelTexture = TargetFrameTextureFrameHighLevelTexture {\n }\n petBattleIcon = TargetFrameTextureFramePetBattleIcon {\n }\n prestigePortrait = TargetFrameTextureFramePrestigePortrait {\n }\n showAuraCount = true\n showLeader = true\n healthbar = TargetFrameHealthBar {\n }\n pvpIcon = TargetFrameTextureFramePVPIcon {\n }\n buffsOnTop = true\n questIcon = TargetFrameTextureFrameQuestIcon {\n }\n deadText = TargetFrameTextureFrameDeadText {\n }\n noTextPrefix = true\n buffs = TargetFrameBuffs {\n }\n nameBackground = TargetFrameNameBackground {\n }\n showLevel = true\n levelText = TargetFrameTextureFrameLevelText {\n }\n leaderIcon = TargetFrameTextureFrameLeaderIcon {\n }\n SetPoint = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:169\n statusSign = -1\n unit = \"target\"\n showPVP = true\n spellbar = TargetFrameSpellBar {\n }\n borderTexture = TargetFrameTextureFrameTexture {\n }\n showPortrait = true\n PowerBar = TargetFrameManaBar {\n }\n auraRows = 0\n ClearAllPoints = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:168\n statusCounter = 0\n HealthBar = TargetFrameHealthBar {\n }\n name = TargetFrameTextureFrameName {\n }\n manabar = TargetFrameManaBar {\n }\n unitHPPercent = 1\n prestigeBadge = TargetFrameTextureFramePrestigeBadge {\n }\n unconsciousText = TargetFrameTextureFrameUnconsciousText {\n }\n menu = <function> defined @Interface_TBC\\FrameXML\\TargetFrame.lua:97\n TOT_AURA_ROW_WIDTH = 101\n textureFrame = TargetFrameTextureFrame {\n }\n showClassification = true\n Background = TargetFrameBackground {\n }\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"99 / 99\"\n(*temporary) = <userdata>\n(*temporary) = \"99\"\n(*temporary) = \"attempt to index global 'TargetFrameHealthBarText' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:101\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Color = <table> {\n }\n Class = \"ROGUE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:83\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:118\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:145\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:130\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:128: in function <Interface\\AddOns\\xVermin\\xVermin.lua:117>\n[string \"=[C]\"]: ?",
+			["session"] = 4319,
+			["counter"] = 1132,
+		}, -- [20]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'whoaThickFrames_BCC' tried to call the protected function 'PlayerFrame:SetMouseClickEnabled()'.",
+			["time"] = "2022/01/24 10:46:53",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetMouseClickEnabled'\n[string \"@Interface\\AddOns\\whoaThickFrames_BCC\\wSettings.lua\"]:161: in function `disableFramesClick'\n[string \"@Interface\\AddOns\\whoaThickFrames_BCC\\wSettings.lua\"]:392: in function <Interface\\AddOns\\whoaThickFrames_BCC\\wSettings.lua:389>",
+			["session"] = 4320,
+			["counter"] = 1,
+		}, -- [21]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:134: attempt to index global 'TargetFrameManaBarText' (a nil value)",
+			["time"] = "2022/01/24 10:45:43",
+			["locals"] = "self = TargetFrame {\n 0 = <userdata>\n debuffs = TargetFrameDebuffs {\n }\n portrait = TargetFramePortrait {\n }\n totFrame = TargetFrameToT {\n }\n raidTargetIcon = TargetFrameTextureFrameRaidTargetIcon {\n }\n highLevelTexture = TargetFrameTextureFrameHighLevelTexture {\n }\n petBattleIcon = TargetFrameTextureFramePetBattleIcon {\n }\n prestigePortrait = TargetFrameTextureFramePrestigePortrait {\n }\n showAuraCount = true\n showLeader = true\n healthbar = TargetFrameHealthBar {\n }\n pvpIcon = TargetFrameTextureFramePVPIcon {\n }\n buffsOnTop = true\n questIcon = TargetFrameTextureFrameQuestIcon {\n }\n deadText = TargetFrameTextureFrameDeadText {\n }\n noTextPrefix = true\n buffs = TargetFrameBuffs {\n }\n nameBackground = TargetFrameNameBackground {\n }\n showLevel = true\n levelText = TargetFrameTextureFrameLevelText {\n }\n leaderIcon = TargetFrameTextureFrameLeaderIcon {\n }\n SetPoint = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:169\n statusSign = -1\n unit = \"target\"\n showPVP = true\n spellbar = TargetFrameSpellBar {\n }\n borderTexture = TargetFrameTextureFrameTexture {\n }\n showPortrait = true\n PowerBar = TargetFrameManaBar {\n }\n auraRows = 0\n ClearAllPoints = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:168\n statusCounter = 0\n HealthBar = TargetFrameHealthBar {\n }\n name = TargetFrameTextureFrameName {\n }\n manabar = TargetFrameManaBar {\n }\n unitHPPercent = 1\n prestigeBadge = TargetFrameTextureFramePrestigeBadge {\n }\n unconsciousText = TargetFrameTextureFrameUnconsciousText {\n }\n menu = <function> defined @Interface_TBC\\FrameXML\\TargetFrame.lua:97\n TOT_AURA_ROW_WIDTH = 101\n textureFrame = TargetFrameTextureFrame {\n }\n showClassification = true\n Background = TargetFrameBackground {\n }\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = <userdata>\n(*temporary) = \"CENTER\"\n(*temporary) = -50\n(*temporary) = 7\n(*temporary) = \"attempt to index global 'TargetFrameManaBarText' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:101\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Color = <table> {\n }\n Class = \"ROGUE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:83\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:118\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:145\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:130\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:134: in function <Interface\\AddOns\\xVermin\\xVermin.lua:117>\n[string \"=[C]\"]: ?",
+			["session"] = 4320,
+			["counter"] = 1385,
+		}, -- [22]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:134: '<name>' expected near ':'",
+			["time"] = "2022/01/24 10:48:32",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 4321,
+			["counter"] = 4,
+		}, -- [23]
+		{
+			["message"] = "[string \"TargetFrameTextureFrameName:CreateBeautyBor...\"]:1: attempt to call method 'CreateBeautyBorder' (a nil value)",
+			["time"] = "2022/01/24 10:54:44",
+			["locals"] = "(*temporary) = nil\n(*temporary) = TargetFrameTextureFrameName {\n 0 = <userdata>\n}\n(*temporary) = 4\n(*temporary) = \"attempt to call method 'CreateBeautyBorder' (a nil value)\"\n",
+			["stack"] = "[string \"TargetFrameTextureFrameName:CreateBeautyBorder(4)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4322,
+			["counter"] = 1,
+		}, -- [24]
+		{
+			["message"] = "[string \"TargetFrameTextureFramTOPLEFT\", TargetFrame, \"BOTTOMRIGHT\", -10...\"]:1: unfinished string near '<eof>'",
+			["time"] = "2022/01/24 11:09:50",
+			["locals"] = "(*temporary) = \"TargetFrameTextureFramTOPLEFT\", TargetFrame, \"BOTTOMRIGHT\", -100, 0)\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2914: in function <Interface\\FrameXML\\ChatFrame.lua:2907>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 4326,
+			["counter"] = 5,
+		}, -- [25]
+		{
+			["message"] = "[string \"TargetFrameTextureFrameLevelText:SetPint(\"T...\"]:1: attempt to call method 'SetPint' (a nil value)",
+			["time"] = "2022/01/24 11:10:17",
+			["locals"] = "(*temporary) = nil\n(*temporary) = TargetFrameTextureFrameLevelText {\n 0 = <userdata>\n}\n(*temporary) = \"TOPLEFT\"\n(*temporary) = TargetFrame {\n 0 = <userdata>\n debuffs = TargetFrameDebuffs {\n }\n portrait = TargetFramePortrait {\n }\n totFrame = TargetFrameToT {\n }\n raidTargetIcon = TargetFrameTextureFrameRaidTargetIcon {\n }\n highLevelTexture = TargetFrameTextureFrameHighLevelTexture {\n }\n petBattleIcon = TargetFrameTextureFramePetBattleIcon {\n }\n prestigePortrait = TargetFrameTextureFramePrestigePortrait {\n }\n showAuraCount = true\n showLeader = true\n healthbar = TargetFrameHealthBar {\n }\n pvpIcon = TargetFrameTextureFramePVPIcon {\n }\n buffsOnTop = true\n questIcon = TargetFrameTextureFrameQuestIcon {\n }\n deadText = TargetFrameTextureFrameDeadText {\n }\n noTextPrefix = true\n buffs = TargetFrameBuffs {\n }\n nameBackground = TargetFrameNameBackground {\n }\n showLevel = true\n levelText = TargetFrameTextureFrameLevelText {\n }\n leaderIcon = TargetFrameTextureFrameLeaderIcon {\n }\n SetPoint = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:193\n statusSign = -1\n unit = \"target\"\n showPVP = true\n spellbar = TargetFrameSpellBar {\n }\n borderTexture = TargetFrameTextureFrameTexture {\n }\n showPortrait = true\n PowerBar = TargetFrameManaBar {\n }\n auraRows = 0\n ClearAllPoints = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:192\n statusCounter = 0\n HealthBar = TargetFrameHealthBar {\n }\n name = TargetFrameTextureFrameName {\n }\n manabar = TargetFrameManaBar {\n }\n unitHPPercent = 1\n prestigeBadge = TargetFrameTextureFramePrestigeBadge {\n }\n unconsciousText = TargetFrameTextureFrameUnconsciousText {\n }\n menu = <function> defined @Interface_TBC\\FrameXML\\TargetFrame.lua:97\n TOT_AURA_ROW_WIDTH = 101\n textureFrame = TargetFrameTextureFrame {\n }\n showClassification = true\n Background = TargetFrameBackground {\n }\n}\n(*temporary) = \"BOTTOMRIGHT\"\n(*temporary) = -100\n(*temporary) = 0\n(*temporary) = \"attempt to call method 'SetPint' (a nil value)\"\n",
+			["stack"] = "[string \"TargetFrameTextureFrameLevelText:SetPint(\"TOPLEFT\", TargetFrame, \"BOTTOMRIGHT\", -100, 0)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2914: in function <Interface\\FrameXML\\ChatFrame.lua:2907>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 4326,
+			["counter"] = 1,
+		}, -- [26]
+		{
+			["message"] = "[string \"PlayerFrameHealthBarText:SetScale(1.6)/rl\"]:1: unexpected symbol near '/'",
+			["time"] = "2022/01/24 11:46:10",
+			["locals"] = "(*temporary) = \"PlayerFrameHealthBarText:SetScale(1.6)/rl\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4337,
+			["counter"] = 1,
+		}, -- [27]
 	},
 }

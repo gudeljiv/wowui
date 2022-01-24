@@ -112,6 +112,25 @@ f:SetScript("OnEvent",
 				end
 			)
 			
+			PlayerFrame:HookScript(
+				"OnUpdate",
+				function(self)
+					if PlayerName then PlayerName:Hide() end
+					if PlayerFrameHealthBarText then 
+						PlayerFrameHealthBarText:ClearAllPoints()
+						PlayerFrameHealthBarText:SetPoint("CENTER", PlayerFrameHealthBar, "CENTER", 0, 0)
+						PlayerFrameHealthBarText:SetScale(1.5)
+						PlayerFrameHealthBarText:Show()
+					end
+					if PlayerFrameManaBarText then 
+						PlayerFrameManaBarText:ClearAllPoints()
+						PlayerFrameManaBarText:SetPoint("CENTER", PlayerFrameManaBar, "CENTER", 0, -1)
+						PlayerFrameManaBarText:SetScale(1.2)
+						PlayerFrameManaBarText:Show()
+					end
+				end
+			)
+
 			TargetFrame:HookScript(
 				"OnUpdate",
 				function(self)
@@ -125,13 +144,33 @@ f:SetScript("OnEvent",
 						TargetFrameTextureFrame.HealthBarText:SetText(hc .. " / ".. hm)
 					end
 
-					TargetFrameHealthBarText:Hide()
-					TargetFrameTextureFrame.HealthBarText:ClearAllPoints()
-					TargetFrameTextureFrame.HealthBarText:SetPoint("CENTER", TargetFrame, "CENTER", -50, 7)
-					TargetFrameTextureFrame.HealthBarText:Show()
-					TargetFrameTextureFrame.ManaBarText:SetScale(0.8)
-					TargetFrameTextureFrame.ManaBarText:Show()
-					TargetFrameManaBarText:SetScale(0.8)
+					if TargetFrameHealthBarText then TargetFrameHealthBarText:Hide() end
+					if TargetFrameTextureFrameName then 
+						TargetFrameTextureFrameName:Show()
+						TargetFrameTextureFrameName:ClearAllPoints()
+						TargetFrameTextureFrameName:SetPoint("CENTER", TargetFrameHealthBar, "CENTER", 0, 6)
+						TargetFrameTextureFrameName:SetScale(1.4)
+					end
+					if TargetFrameTextureFrame and TargetFrameTextureFrame.HealthBarText then 
+						TargetFrameTextureFrame.HealthBarText:ClearAllPoints()
+						TargetFrameTextureFrame.HealthBarText:SetPoint("CENTER", TargetFrameHealthBar, "CENTER", 0, -5)
+						TargetFrameTextureFrame.HealthBarText:SetScale(1.6)
+						TargetFrameTextureFrame.HealthBarText:Show()
+						TargetFrameTextureFrameDeadText:SetPoint("CENTER", TargetFrameHealthBar, "CENTER", 0, -5)
+						TargetFrameTextureFrameDeadText:SetScale(1.6)
+					end
+					if TargetFrameTextureFrame and TargetFrameTextureFrame.ManaBarText then 
+						TargetFrameTextureFrame.ManaBarText:ClearAllPoints()
+						TargetFrameTextureFrame.ManaBarText:SetPoint("CENTER", TargetFrameManaBar, "CENTER", 0, -1)
+						TargetFrameTextureFrame.ManaBarText:SetScale(1.2)
+						TargetFrameTextureFrame.ManaBarText:Show()
+					end
+					if TargetFrameTextureFrame then TargetFrameTextureFrame:SetScale(0.8) end
+
+					if TargetFrameTextureFrameLevelText then
+						TargetFrameTextureFrameLevelText:ClearAllPoints()
+						TargetFrameTextureFrameLevelText:SetPoint("CENTER", TargetFrame, "CENTER", 78, -22)
+					end
 				end
 			)
 
@@ -148,15 +187,34 @@ f:SetScript("OnEvent",
 						FocusFrameTextureFrame.HealthBarText:SetText(hc .. " / ".. hm)
 					end
 
-					FocusFrameTextureFrame.HealthBarText:ClearAllPoints()
-					FocusFrameTextureFrame.HealthBarText:SetPoint("CENTER", FocusFrame, "CENTER", -50, 7)
-					FocusFrameTextureFrame.HealthBarText:Show()
-					FocusFrameTextureFrame.ManaBarText:SetScale(0.8)
-					FocusFrameTextureFrame.ManaBarText:Show()
+					if FocusFrameHealthBarText then FocusFrameHealthBarText:Hide() end
+					if FocusFrameTextureFrameName then 
+						FocusFrameTextureFrameName:Show()
+						FocusFrameTextureFrameName:ClearAllPoints()
+						FocusFrameTextureFrameName:SetPoint("CENTER", FocusFrameHealthBar, "CENTER", 0, 6)
+						FocusFrameTextureFrameName:SetScale(1.4)
+					end
+					if FocusFrameTextureFrame and FocusFrameTextureFrame.HealthBarText then 
+						FocusFrameTextureFrame.HealthBarText:ClearAllPoints()
+						FocusFrameTextureFrame.HealthBarText:SetPoint("CENTER", FocusFrameHealthBar, "CENTER", 0, -5)
+						FocusFrameTextureFrame.HealthBarText:SetScale(1.6)
+						FocusFrameTextureFrame.HealthBarText:Show()
+						FocusFrameTextureFrameDeadText:SetPoint("CENTER", FocusFrameHealthBar, "CENTER", 0, -5)
+						FocusFrameTextureFrameDeadText:SetScale(1.6)
+					end
+					if FocusFrameTextureFrame and FocusFrameTextureFrame.ManaBarText then 
+						FocusFrameTextureFrame.ManaBarText:ClearAllPoints()
+						FocusFrameTextureFrame.ManaBarText:SetPoint("CENTER", FocusFrameManaBar, "CENTER", 0, -1)
+						FocusFrameTextureFrame.ManaBarText:SetScale(1.2)
+						FocusFrameTextureFrame.ManaBarText:Show()
+					end
+					if FocusFrameTextureFrame then FocusFrameTextureFrame:SetScale(0.8) end
+					if FocusFrameTextureFrameLevelText then
+						FocusFrameTextureFrameLevelText:ClearAllPoints()
+						FocusFrameTextureFrameLevelText:SetPoint("CENTER", FocusFrame, "CENTER", 78, -22)
+					end
 				end
 			)
-
-			PlayerFrameManaBarText:SetScale(0.8)
 
 			PlayerFrame:ClearAllPoints()
 			PlayerFrame:SetPoint("CENTER", UIParent, "CENTER", -250, -96)
@@ -167,6 +225,11 @@ f:SetScript("OnEvent",
 			TargetFrame:SetPoint("CENTER", UIParent, "CENTER", 250, -96)
 			TargetFrame.ClearAllPoints = function() end
 			TargetFrame.SetPoint = function() end
+
+			FocusFrame:ClearAllPoints()
+			FocusFrame:SetPoint("CENTER", TargetFrame, "CENTER", 200, 100)
+			FocusFrame.ClearAllPoints = function() end
+			FocusFrame.SetPoint = function() end
 
 		end
 

@@ -41,6 +41,13 @@ X: -142
 Y: 72
 W: 858
 H: 660
+Frame: InterfaceOptionsFrame
+FrameLevel: 1
+Anchor: TOP
+X: -10
+Y: -132
+W: 858
+H: 660
 Frame: AddonList
 FrameLevel: 1
 Anchor: TOP
@@ -97,13 +104,6 @@ X: 243
 Y: -107
 W: 50
 H: 50
-Frame: InterfaceOptionsFrame
-FrameLevel: 1
-Anchor: TOP
-X: -10
-Y: -132
-W: 858
-H: 660
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER

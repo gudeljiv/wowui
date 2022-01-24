@@ -95,8 +95,8 @@ GroupBulletinBoardDBChar = {
 		true, -- [20]
 	},
 	["HeroicOnly"] = false,
-	["FilterDungeonSWP"] = true,
 	["FilterDungeonSETH"] = true,
+	["FilterDungeonSWP"] = true,
 	["FilterDungeonEYE"] = true,
 	["FilterDungeonOHB"] = true,
 }

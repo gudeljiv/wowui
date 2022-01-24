@@ -9,7 +9,7 @@ VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1708
+/use [nocombat]item:0
 /castsequence [combat] reset=combat item:6149
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
@@ -23,7 +23,6 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /use item:3771
 END
 VER 3 000000000000000B "TEST" "132089"
-/run TargetFrameBuff1:SetScale(3)
-/run TargetFrameBuff1Cooldown:SetSwipeTexture('',0,0,0,0)
-/run TargetFrameBuff1Cooldown:SetEdgeTexture('')
+/run TargetFrameTextureFrameLevelText:ClearAllPoints()
+/run TargetFrameTextureFrameLevelText:SetPoint("TOPLEFT", TargetFrame, "BOTTOMRIGHT", -70, 46)
 END

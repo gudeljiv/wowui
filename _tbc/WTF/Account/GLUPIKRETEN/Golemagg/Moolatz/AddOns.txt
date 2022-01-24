@@ -111,7 +111,7 @@ WeakAuras: enabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
-whoaThickFrames_Classic: enabled
+whoaThickFrames_Classic: disabled
 CharacterStatsClassic: enabled
 TradeSkillMaster: enabled
 nBuff: enabled
@@ -121,3 +121,4 @@ xVermin: enabled
 Leatrix_Plus: enabled
 aux-addon: disabled
 RXPGuides: disabled
+whoaThickFrames_BCC: enabled

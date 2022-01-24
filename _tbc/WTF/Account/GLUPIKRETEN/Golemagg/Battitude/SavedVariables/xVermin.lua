@@ -1,6 +1,6 @@
 
 xKillCount = {
-	["show"] = true,
+	["show"] = false,
 	["killLog"] = {
 		["Mindless Zombie"] = {
 			["name"] = "Mindless Zombie",
@@ -12,7 +12,7 @@ xKillCount = {
 		},
 		["Rattlecage Skeleton"] = {
 			["name"] = "Rattlecage Skeleton",
-			["count"] = 13,
+			["count"] = 16,
 		},
 		["Decrepit Darkhound"] = {
 			["name"] = "Decrepit Darkhound",
@@ -30,21 +30,21 @@ xKillCount = {
 			["name"] = "Scarlet Convert",
 			["count"] = 13,
 		},
-		["Meven Korgal"] = {
-			["name"] = "Meven Korgal",
-			["count"] = 3,
+		["Tirisfal Farmhand"] = {
+			["name"] = "Tirisfal Farmhand",
+			["count"] = 1,
 		},
 		["Wretched Zombie"] = {
 			["name"] = "Wretched Zombie",
-			["count"] = 15,
+			["count"] = 18,
 		},
 		["Samuel Fipps"] = {
 			["name"] = "Samuel Fipps",
 			["count"] = 1,
 		},
-		["Tirisfal Farmhand"] = {
-			["name"] = "Tirisfal Farmhand",
-			["count"] = 1,
+		["Meven Korgal"] = {
+			["name"] = "Meven Korgal",
+			["count"] = 3,
 		},
 		["Rotting Dead"] = {
 			["name"] = "Rotting Dead",
@@ -64,13 +64,13 @@ xKillCount = {
 		},
 	},
 	["experience"] = {
-		["totaltotal"] = 12953,
-		["pulltotal"] = 2625,
+		["totaltotal"] = 14138,
+		["pulltotal"] = 26,
 	},
 	["position"] = {
-		["y"] = 210.8275451660156,
-		["x"] = 8.252876281738281,
-		["to"] = "LEFT",
-		["from"] = "LEFT",
+		["y"] = 217.2070007324219,
+		["x"] = -444.0689392089844,
+		["to"] = "CENTER",
+		["from"] = "CENTER",
 	},
 }
