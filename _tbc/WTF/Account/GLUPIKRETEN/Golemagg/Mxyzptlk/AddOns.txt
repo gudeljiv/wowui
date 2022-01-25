@@ -19,6 +19,6 @@ BagBrother: disabled
 RXPGuides: disabled
 Leatrix_Plus: enabled
 TradeSkillMaster: enabled
-NeatPlates: disabled
+NeatPlates: enabled
 whoaThickFrames_BCC: enabled
 whoaThickFrames_Classic: disabled

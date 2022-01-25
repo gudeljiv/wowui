@@ -1,21 +1,21 @@
+VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence Find Herbs,Find Minerals
+END
 VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use Coarse Sharpening Stone
 /use [button:1] 16; [button:2] 17
 END
-VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/castsequence Find Herbs,Find Minerals
-END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:0
-/castsequence [combat] reset=combat item:6149
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4599
-/castsequence [combat] reset=combat item:3928,item:1710
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:3771
