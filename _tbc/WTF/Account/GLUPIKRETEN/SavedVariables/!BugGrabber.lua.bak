@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 4364,
+	["session"] = 4366,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -249,5 +249,13 @@ BugGrabberDB = {
 			["session"] = 4363,
 			["counter"] = 3,
 		}, -- [31]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'whoaThickFrames_BCC' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
+			["time"] = "2022/01/25 22:20:46",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\FrameXML\\FlowContainer.lua\"]:157: in function `FlowContainer_DoLayout'\n[string \"@Interface\\FrameXML\\FlowContainer.lua\"]:17: in function `FlowContainer_ResumeUpdates'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:185: in function `CompactRaidFrameContainer_LayoutFrames'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:130: in function `CompactRaidFrameContainer_TryUpdate'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:62: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 4366,
+			["counter"] = 1,
+		}, -- [32]
 	},
 }

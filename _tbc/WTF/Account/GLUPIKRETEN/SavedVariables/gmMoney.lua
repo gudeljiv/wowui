@@ -68,7 +68,7 @@ GMMONEY = {
 			["CLASS"] = "ROGUE",
 		},
 		["Mxyzptlk"] = {
-			["GOLD"] = 170395,
+			["GOLD"] = 171897,
 			["CLASS"] = "WARLOCK",
 		},
 		["Vermin"] = {
