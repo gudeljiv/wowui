@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 4360,
 	["lastSanitation"] = 3,
-	["session"] = 4359,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:74: attempt to index global 'frameCooldown' (a nil value)",
@@ -221,8 +221,8 @@ BugGrabberDB = {
 		}, -- [27]
 		{
 			["message"] = "(null)",
-			["session"] = 4344,
 			["time"] = "2022/01/22 13:10:29",
+			["session"] = 4344,
 			["counter"] = 15,
 		}, -- [28]
 		{
