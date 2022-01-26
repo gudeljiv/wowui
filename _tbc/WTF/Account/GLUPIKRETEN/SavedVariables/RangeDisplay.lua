@@ -15,12 +15,12 @@ RangeDisplayDB3 = {
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Pitchwise - Dreadnaught"] = "Default",
-		["Antun - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
-		["Nitwit - Dreadnaught"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Antun - Golemagg"] = "Default",
+		["Nitwit - Dreadnaught"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Pitchwise - Dreadnaught"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
 	},
 	["profiles"] = {
@@ -28,21 +28,21 @@ RangeDisplayDB3 = {
 			["mute"] = true,
 			["locked"] = true,
 			["units"] = {
-				["arena2"] = {
-				},
-				["playertarget"] = {
-					["y"] = 0.645166099071503,
-					["x"] = -3.44103670120239,
+				["mouseover"] = {
+					["mouseAnchor"] = false,
+					["enabled"] = false,
+					["y"] = -36.5593032836914,
 					["font"] = "Arial Narrow",
-					["checkVisible"] = false,
+					["x"] = -3.48463487625122,
+				},
+				["arena2"] = {
 				},
 				["focus"] = {
 				},
-				["mouseover"] = {
-					["enabled"] = false,
-					["x"] = -3.48463487625122,
-					["mouseAnchor"] = false,
-					["y"] = -36.5593032836914,
+				["playertarget"] = {
+					["x"] = -3.44103670120239,
+					["checkVisible"] = false,
+					["y"] = 0.645166099071503,
 					["font"] = "Arial Narrow",
 				},
 				["pet"] = {

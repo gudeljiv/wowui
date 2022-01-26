@@ -20,8 +20,8 @@ Bagnon_VoidStorage: disabled
 BagBrother: disabled
 RXPGuides: disabled
 CharacterStatsClassic: disabled
-RangeDisplay: disabled
-RangeDisplay_Options: disabled
+RangeDisplay: enabled
+RangeDisplay_Options: enabled
 Select: disabled
 ClassicAuraDurations: disabled
 Leatrix_Plus: enabled
