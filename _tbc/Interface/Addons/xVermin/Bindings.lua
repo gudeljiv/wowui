@@ -23,7 +23,7 @@ local function FixBindings()
 	SetBinding("L", "TOGGLEQUESTLOG", 1)
 	SetBinding("SHIFT-K", "BAGNON_KEYS_TOGGLE", 1)
 
-	if xVermin.Class == ("HUNTER" or "WARLOCK") then
+	if xVermin.Class == "HUNTER" or xVermin.Class == "WARLOCK" then
 		SetBinding("ALT-1", "BONUSACTIONBUTTON1", 1)
 		SetBinding("ALT-2", "BONUSACTIONBUTTON2", 1)
 		SetBinding("ALT-3", "BONUSACTIONBUTTON3", 1)
@@ -86,7 +86,7 @@ local function FixBindings()
 	SetBinding("ALT-S", "MULTIACTIONBAR3BUTTON11", 1)
 	SetBinding("SHIFT-S", "MULTIACTIONBAR3BUTTON12", 1)
 
-	if xVermin.Class == ("HUNTER" or "WARLOCK") then
+	if xVermin.Class == "HUNTER" or xVermin.Class == "WARLOCK" then
 		SetBinding("SHIFT-1", "MULTIACTIONBAR4BUTTON1", 1)
 		SetBinding("SHIFT-2", "MULTIACTIONBAR4BUTTON2", 1)
 		SetBinding("SHIFT-3", "MULTIACTIONBAR4BUTTON3", 1)
@@ -106,13 +106,13 @@ local function FixBindings()
 
 	SetBinding("J", "CLICK RingMenuToggleRing1:LeftButton", 1)
 
-	if UnitName("player") == "XXKonac" then
-		SetBinding("CTRL-H", "NONE", 1)
-		SetBinding("CTRL-M", "NONE", 1)
-		SetBinding("ALT-X", "MULTIACTIONBAR2BUTTON10", 1)
-		SetBinding("SHIFT-X", "MULTIACTIONBAR2BUTTON11", 1)
-		SetBinding("X", "MULTIACTIONBAR2BUTTON12", 1)
-	end
+	-- if UnitName("player") == "Konac" then
+	-- 	SetBinding("CTRL-H", "NONE", 1)
+	-- 	SetBinding("CTRL-M", "NONE", 1)
+	-- 	SetBinding("ALT-X", "MULTIACTIONBAR2BUTTON10", 1)
+	-- 	SetBinding("SHIFT-X", "MULTIACTIONBAR2BUTTON11", 1)
+	-- 	SetBinding("X", "MULTIACTIONBAR2BUTTON12", 1)
+	-- end
 end
 
 local function ClearAllBindings()
@@ -131,6 +131,7 @@ local function ClearAllBindings()
 	-- 	-- SetBinding(x[i])
 	-- end
 
+	SetBinding("K", "NONE", 1)
 	SetBinding("7", "NONE", 1)
 	SetBinding("8", "NONE", 1)
 	SetBinding("9", "NONE", 1)

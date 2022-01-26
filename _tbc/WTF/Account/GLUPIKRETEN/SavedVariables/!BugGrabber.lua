@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 4369,
+	["session"] = 4383,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:74: attempt to index global 'frameCooldown' (a nil value)",
@@ -257,5 +257,13 @@ BugGrabberDB = {
 			["session"] = 4366,
 			["counter"] = 1,
 		}, -- [32]
+		{
+			["message"] = "[string \"TargetFrameManaBarText:SetScale(0.8)\"]:1: attempt to index global 'TargetFrameManaBarText' (a nil value)",
+			["time"] = "2022/01/26 13:43:10",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'TargetFrameManaBarText' (a nil value)\"\n",
+			["stack"] = "[string \"TargetFrameManaBarText:SetScale(0.8)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4382,
+			["counter"] = 1,
+		}, -- [33]
 	},
 }

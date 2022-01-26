@@ -231,6 +231,10 @@ f:SetScript("OnEvent",
 			FocusFrame.ClearAllPoints = function() end
 			FocusFrame.SetPoint = function() end
 
+			PlayerFrameManaBarText:SetScale(0.8)
+			TargetFrameTextureFrame.ManaBarText:SetScale(0.8)
+			FocusFrameTextureFrame.ManaBarText:SetScale(0.8)
+
 		end
 
 		MiniMapWorldMapButton:Hide()
