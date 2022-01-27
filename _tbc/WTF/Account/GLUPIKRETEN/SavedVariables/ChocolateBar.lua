@@ -52,11 +52,6 @@ ChocolateBarDB = {
 	["addonVersion"] = "v3.7.7",
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -77,10 +72,19 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
 				},
+				["textureName"] = "None",
 			},
+			["forceColor"] = false,
+			["locked"] = false,
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -450,23 +454,19 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
+			["desaturated"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["fixedStrata"] = true,
 			["gap"] = 0,
-			["moveFrames"] = false,
-			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["forceColor"] = false,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
+			["fontName"] = "Friz Quadrata TT",
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
 			},
 			["textColor"] = {
 				["a"] = 1,
@@ -605,7 +605,7 @@ CB_PlayedTime = {
 		["total"] = 89354,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 324037,
+		["total"] = 329977,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,

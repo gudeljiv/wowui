@@ -122,3 +122,10 @@ Leatrix_Plus: enabled
 aux-addon: disabled
 RXPGuides: disabled
 whoaThickFrames_BCC: enabled
+AutoOpen: enabled
+BlizzMove_Debug: enabled
+ExtendedCharacterStats: enabled
+ImprovedMacroFrame: enabled
+LFGBulletinBoard: enabled
+WideQuestLog: enabled
+Questie: enabled
