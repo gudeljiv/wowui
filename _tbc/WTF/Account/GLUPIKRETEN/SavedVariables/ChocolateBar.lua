@@ -36,13 +36,13 @@ ChocolateBarDB = {
 		["Vermins - Stonespine"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
@@ -72,6 +72,10 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["forceColor"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -82,8 +86,6 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["forceColor"] = false,
-			["locked"] = false,
 			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
@@ -364,6 +366,13 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "R",
 				},
+				["Details!"] = {
+					["widthBehavior"] = "free",
+					["align"] = "center",
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["index"] = 3,
+				},
 				["TradeSkillMaster"] = {
 					["index"] = 4,
 					["isNew"] = false,
@@ -372,13 +381,6 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar2",
 					["showIcon"] = false,
 					["customLabel"] = "TSM",
-				},
-				["Details!"] = {
-					["widthBehavior"] = "free",
-					["align"] = "center",
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
-					["index"] = 3,
 				},
 				["GatherMate2"] = {
 					["enabled"] = false,
@@ -454,20 +456,18 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
-			["desaturated"] = false,
+			["gap"] = 0,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["fixedStrata"] = true,
-			["gap"] = 0,
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontName"] = "Friz Quadrata TT",
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
+			["desaturated"] = false,
+			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -605,7 +605,7 @@ CB_PlayedTime = {
 		["total"] = 89354,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 329977,
+		["total"] = 334114,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,

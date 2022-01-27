@@ -103,6 +103,7 @@ local function FixBindings()
 	SetBinding("CTRL-D", "MULTIACTIONBAR4BUTTON9", 1)
 	SetBinding("CTRL-H", "MULTIACTIONBAR4BUTTON10", 1)
 	SetBinding("CTRL-M", "MULTIACTIONBAR4BUTTON11", 1)
+	SetBinding("I", "MULTIACTIONBAR4BUTTON12", 1)
 
 	SetBinding("J", "CLICK RingMenuToggleRing1:LeftButton", 1)
 
@@ -131,6 +132,7 @@ local function ClearAllBindings()
 	-- 	-- SetBinding(x[i])
 	-- end
 
+	SetBinding("I", "NONE", 1)
 	SetBinding("K", "NONE", 1)
 	SetBinding("7", "NONE", 1)
 	SetBinding("8", "NONE", 1)

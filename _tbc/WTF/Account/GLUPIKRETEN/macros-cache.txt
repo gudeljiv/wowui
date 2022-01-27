@@ -1,3 +1,6 @@
+VER 3 000000000000000E " " "136106"
+/run InspectUnit("target")
+END
 VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /castsequence Find Herbs,Find Minerals

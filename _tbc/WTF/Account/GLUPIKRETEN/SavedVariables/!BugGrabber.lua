@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 4390,
+	["session"] = 4396,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -273,5 +273,13 @@ BugGrabberDB = {
 			["session"] = 4390,
 			["counter"] = 5,
 		}, -- [34]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/InspectFrame.lua:88: attempt to index global 'InspectFrame' (a nil value)",
+			["time"] = "2022/01/27 19:19:23",
+			["locals"] = "self = MyBindingInspectTargetButton {\n 0 = <userdata>\n}\nbutton = \"LeftButton\"\ndown = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = \"attempt to index global 'InspectFrame' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Frames/InspectFrame.lua\"]:88: in function <Interface\\AddOns\\xVermin\\Frames/InspectFrame.lua:81>",
+			["session"] = 4393,
+			["counter"] = 10,
+		}, -- [35]
 	},
 }

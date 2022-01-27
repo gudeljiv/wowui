@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 4389,
+	["session"] = 4395,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:74: attempt to index global 'frameCooldown' (a nil value)",
@@ -234,21 +234,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [29]
 		{
-			["message"] = "...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:751: attempt to index local 'color' (a nil value)",
-			["time"] = "2022/01/22 06:25:24",
-			["locals"] = "numBatchAuctions = 42896\ntotalAuctions = 42896\nbutton = BrowseButton8 {\n 0 = <userdata>\n PriceTooltipFrame = <unnamed> {\n }\n}\nbuttonName = \"BrowseButton8\"\nbuttonHighlight = BrowseButton8Highlight {\n 0 = <userdata>\n}\niconTexture = BrowseButton7ItemIconTexture {\n 0 = <userdata>\n}\nitemName = BrowseButton8Name {\n 0 = <userdata>\n}\ncolor = nil\nitemCount = BrowseButton7ItemCount {\n 0 = <userdata>\n}\nmoneyFrame = BrowseButton7MoneyFrame {\n 0 = <userdata>\n vadjust = 0\n trialErrorButton = BrowseButton7MoneyFrameTrialErrorButton {\n }\n moneyType = \"AUCTION\"\n info = <table> {\n }\n small = 1\n staticMoney = 4983\n maxDisplayWidth = 146\n}\nyourBidText = BrowseButton7YourBidText {\n 0 = <userdata>\n}\nbuyoutFrame = BrowseButton7BuyoutFrame {\n 0 = <userdata>\n}\nbuyoutMoney = BrowseButton7BuyoutFrameMoney {\n 0 = <userdata>\n vadjust = 0\n trialErrorButton = BrowseButton7BuyoutFrameMoneyTrialErrorButton {\n }\n moneyType = \"AUCTION\"\n info = <table> {\n }\n small = 1\n staticMoney = 5245\n maxDisplayWidth = 146\n}\noffset = 0\nindex = 8\nisLastSlotEmpty = nil\nname = \"\"\ntexture = 134939\ncount = 1\nquality = -1\ncanUse = false\nlevel = 0\nlevelColHeader = nil\nminBid = 47500\nminIncrement = 0\nbuyoutPrice = 50000\nduration = 1\nbidAmount = 0\nhighBidder = false\nbidderFullName = nil\nowner = nil\nownerFullName = nil\nsaleStatus = 0\nitemId = 5640\nhasAllInfo = true\ndisplayedPrice = 4983\nrequiredBid = 4983\n(for index) = 8\n(for limit) = 8\n(for step) = 1\ni = 8\nshouldHide = false\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = BrowseButton8Name {\n 0 = <userdata>\n}\n(*temporary) = \"\"\n(*temporary) = <userdata>\n(*temporary) = false\n(*temporary) = 0\n(*temporary) = nil\n(*temporary) = 47500\n(*temporary) = 0\n(*temporary) = 50000\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 5640\n(*temporary) = true\n(*temporary) = \"attempt to index local 'color' (a nil value)\"\n",
-			["stack"] = "[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:751: in function `AuctionFrameBrowse_Update'\n[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:277: in function <...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:275>",
-			["session"] = 4363,
-			["counter"] = 3,
-		}, -- [30]
-		{
 			["message"] = "[string \"TargetFrameManaBarText:SetScale(0.8)\"]:1: attempt to index global 'TargetFrameManaBarText' (a nil value)",
 			["time"] = "2022/01/26 13:43:10",
 			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'TargetFrameManaBarText' (a nil value)\"\n",
 			["stack"] = "[string \"TargetFrameManaBarText:SetScale(0.8)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 4382,
 			["counter"] = 1,
-		}, -- [31]
+		}, -- [30]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'whoaThickFrames_BCC' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
 			["time"] = "2022/01/25 22:20:46",
@@ -256,7 +248,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\FrameXML\\FlowContainer.lua\"]:157: in function `FlowContainer_DoLayout'\n[string \"@Interface\\FrameXML\\FlowContainer.lua\"]:17: in function `FlowContainer_ResumeUpdates'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:185: in function `CompactRaidFrameContainer_LayoutFrames'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:130: in function `CompactRaidFrameContainer_TryUpdate'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:62: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 4384,
 			["counter"] = 2,
-		}, -- [32]
+		}, -- [31]
 		{
 			["message"] = "Interface\\FrameXML\\UnitFrame.lua:284: Usage: GameTooltip:SetUnit(\"unit\"[, hideStatus])",
 			["time"] = "2022/01/26 19:38:02",
@@ -264,14 +256,30 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetUnit'\n[string \"@Interface\\FrameXML\\UnitFrame.lua\"]:284: in function `UnitFrame_UpdateTooltip'\n[string \"@Interface\\FrameXML\\UnitFrame.lua\"]:270: in function <Interface\\FrameXML\\UnitFrame.lua:257>",
 			["session"] = 4384,
 			["counter"] = 2,
-		}, -- [33]
+		}, -- [32]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
 			["time"] = "2022/01/21 19:49:11",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 4387,
-			["counter"] = 7,
+			["session"] = 4390,
+			["counter"] = 8,
+		}, -- [33]
+		{
+			["message"] = "...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:751: attempt to index local 'color' (a nil value)",
+			["time"] = "2022/01/22 06:25:24",
+			["locals"] = "numBatchAuctions = 42896\ntotalAuctions = 42896\nbutton = BrowseButton8 {\n 0 = <userdata>\n PriceTooltipFrame = <unnamed> {\n }\n}\nbuttonName = \"BrowseButton8\"\nbuttonHighlight = BrowseButton8Highlight {\n 0 = <userdata>\n}\niconTexture = BrowseButton7ItemIconTexture {\n 0 = <userdata>\n}\nitemName = BrowseButton8Name {\n 0 = <userdata>\n}\ncolor = nil\nitemCount = BrowseButton7ItemCount {\n 0 = <userdata>\n}\nmoneyFrame = BrowseButton7MoneyFrame {\n 0 = <userdata>\n vadjust = 0\n trialErrorButton = BrowseButton7MoneyFrameTrialErrorButton {\n }\n moneyType = \"AUCTION\"\n info = <table> {\n }\n small = 1\n staticMoney = 4983\n maxDisplayWidth = 146\n}\nyourBidText = BrowseButton7YourBidText {\n 0 = <userdata>\n}\nbuyoutFrame = BrowseButton7BuyoutFrame {\n 0 = <userdata>\n}\nbuyoutMoney = BrowseButton7BuyoutFrameMoney {\n 0 = <userdata>\n vadjust = 0\n trialErrorButton = BrowseButton7BuyoutFrameMoneyTrialErrorButton {\n }\n moneyType = \"AUCTION\"\n info = <table> {\n }\n small = 1\n staticMoney = 5245\n maxDisplayWidth = 146\n}\noffset = 0\nindex = 8\nisLastSlotEmpty = nil\nname = \"\"\ntexture = 134939\ncount = 1\nquality = -1\ncanUse = false\nlevel = 0\nlevelColHeader = nil\nminBid = 47500\nminIncrement = 0\nbuyoutPrice = 50000\nduration = 1\nbidAmount = 0\nhighBidder = false\nbidderFullName = nil\nowner = nil\nownerFullName = nil\nsaleStatus = 0\nitemId = 5640\nhasAllInfo = true\ndisplayedPrice = 4983\nrequiredBid = 4983\n(for index) = 8\n(for limit) = 8\n(for step) = 1\ni = 8\nshouldHide = false\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = BrowseButton8Name {\n 0 = <userdata>\n}\n(*temporary) = \"\"\n(*temporary) = <userdata>\n(*temporary) = false\n(*temporary) = 0\n(*temporary) = nil\n(*temporary) = 47500\n(*temporary) = 0\n(*temporary) = 50000\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 5640\n(*temporary) = true\n(*temporary) = \"attempt to index local 'color' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:751: in function `AuctionFrameBrowse_Update'\n[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:277: in function <...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:275>",
+			["session"] = 4390,
+			["counter"] = 5,
 		}, -- [34]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/InspectFrame.lua:88: attempt to index global 'InspectFrame' (a nil value)",
+			["time"] = "2022/01/27 19:19:23",
+			["locals"] = "self = MyBindingInspectTargetButton {\n 0 = <userdata>\n}\nbutton = \"LeftButton\"\ndown = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = \"attempt to index global 'InspectFrame' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Frames/InspectFrame.lua\"]:88: in function <Interface\\AddOns\\xVermin\\Frames/InspectFrame.lua:81>",
+			["session"] = 4393,
+			["counter"] = 10,
+		}, -- [35]
 	},
 }
