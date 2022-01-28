@@ -2937,7 +2937,6 @@
 									mybar:SetColor(0, 0, 0, 0.5)
 								end
 								mybar:SetShadowColor(0, 0, 0, 0)
-								mybar:CreateBeautyBorder(6)
 
 								-- mybar:EnableMouse()
 								-- mybar:SetScript("OnMouseDown", function(self, btn)

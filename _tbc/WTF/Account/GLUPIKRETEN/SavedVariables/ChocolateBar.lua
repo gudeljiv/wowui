@@ -52,7 +52,30 @@ ChocolateBarDB = {
 	["addonVersion"] = "v3.7.7",
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["width"] = 147.000030517578,
+					["autohide"] = false,
+					["barOffy"] = -207.589706420898,
+					["hideBarInCombat"] = false,
+					["barOffx"] = -31.9219512939453,
+				},
+				["ChocolateBar2"] = {
+					["barOffy"] = -256.666748046875,
+					["barPoint"] = "TOPRIGHT",
+					["barName"] = "ChocolateBar2",
+					["align"] = "custom",
+					["barOffx"] = -88.3325424194336,
+					["index"] = 1,
+					["width"] = 147,
+				},
+			},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -62,10 +85,6 @@ ChocolateBarDB = {
 					["r"] = 0,
 				},
 				["textureName"] = "None",
-			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
 			},
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
@@ -440,34 +459,15 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
-			["gap"] = 0,
-			["fixedStrata"] = true,
 			["desaturated"] = false,
-			["moveFrames"] = false,
+			["fixedStrata"] = true,
 			["fontName"] = "Friz Quadrata TT",
+			["moveFrames"] = false,
+			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["forceColor"] = false,
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["width"] = 147.000030517578,
-					["autohide"] = false,
-					["barOffy"] = -207.589706420898,
-					["hideBarInCombat"] = false,
-					["barOffx"] = -31.9219512939453,
-				},
-				["ChocolateBar2"] = {
-					["barOffy"] = -256.666748046875,
-					["barPoint"] = "TOPRIGHT",
-					["barName"] = "ChocolateBar2",
-					["align"] = "custom",
-					["barOffx"] = -88.3325424194336,
-					["index"] = 1,
-					["width"] = 147,
-				},
-			},
+			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -551,7 +551,7 @@ CB_PlayedTime = {
 		["total"] = 1,
 	},
 	["Mxyzptlk-Golemagg"] = {
-		["total"] = 21475,
+		["total"] = 23772,
 	},
 	["Judawise-"] = {
 		["total"] = 437,
@@ -560,7 +560,7 @@ CB_PlayedTime = {
 		["total"] = 1789,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 161423,
+		["total"] = 161512,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
@@ -590,7 +590,7 @@ CB_PlayedTime = {
 		["total"] = 18945,
 	},
 	["Augustin-Golemagg"] = {
-		["total"] = 427009,
+		["total"] = 429684,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,
@@ -605,7 +605,7 @@ CB_PlayedTime = {
 		["total"] = 89354,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 336474,
+		["total"] = 344984,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,

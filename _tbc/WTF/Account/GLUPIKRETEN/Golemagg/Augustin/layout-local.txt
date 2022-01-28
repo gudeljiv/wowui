@@ -1,4 +1,11 @@
 Version: 1
+Frame: KillCountFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 99
+Y: -3
+W: 270
+H: 157
 Frame: PlayerFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -78,9 +85,9 @@ W: 724
 H: 513
 Frame: LootFrame
 FrameLevel: 10
-Anchor: CENTER
+Anchor: TOP
 X: 480
-Y: 220
+Y: -264
 W: 170
 H: 240
 Frame: ItemRefTooltip
@@ -96,6 +103,13 @@ Anchor: TOPLEFT
 X: 297
 Y: -173
 W: 920
+H: 600
+Frame: MacroFrame
+FrameLevel: 1
+Anchor: LEFT
+X: 16
+Y: 93
+W: 535
 H: 600
 Frame: nTooltip_Anchor
 FrameLevel: 1

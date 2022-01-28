@@ -17,9 +17,9 @@ NeatPlatesOptions = {
 	["SecondSpecProfile"] = "Default",
 	["EmulatedTargetPlate"] = false,
 	["EnforceRequiredCVars"] = true,
-	["WelcomeShown"] = true,
-	["BlizzardNameVisibility"] = false,
 	["ForceBlizzardFont"] = false,
+	["BlizzardNameVisibility"] = false,
+	["WelcomeShown"] = true,
 	["NameplateClickableWidth"] = 1,
 	["FirstSpecProfile"] = "Default",
 }

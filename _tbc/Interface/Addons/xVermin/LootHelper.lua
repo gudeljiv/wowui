@@ -85,7 +85,7 @@ f:SetScript(
 )
 
 local btn = CreateFrame("BUTTON", "MyBindingLootHelper")
-SetBindingClick("ALT-Q", btn:GetName())
+SetBindingClick("ALT-Q", "MyBindingLootHelper")
 btn:SetScript(
 	"OnClick",
 	function(self, event)
