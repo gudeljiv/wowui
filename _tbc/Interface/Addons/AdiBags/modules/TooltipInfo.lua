@@ -1,6 +1,6 @@
 --[[
 AdiBags - Adirelle's bag addon.
-Copyright 2010-2014 Adirelle (adirelle@gmail.com)
+Copyright 2010-2021 Adirelle (adirelle@gmail.com)
 All rights reserved.
 
 This file is part of AdiBags.
@@ -18,6 +18,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
+
 local addonName, addon = ...
 local L = addon.L
 
@@ -37,88 +38,65 @@ local tsort = _G.table.sort
 local wipe = _G.wipe
 --GLOBALS>
 
-local mod = addon:NewModule("TooltipInfo", "ABEvent-1.0", "AceHook-3.0")
-mod.uiName = L["Tooltip information"]
-mod.uiDesc = L["Add more information in tooltips related to items in your bags."]
+local mod = addon:NewModule('TooltipInfo', 'ABEvent-1.0', 'AceHook-3.0')
+mod.uiName = L['Tooltip information']
+mod.uiDesc = L['Add more information in tooltips related to items in your bags.']
 
 function mod:OnInitialize()
-	self.db =
-		addon.db:RegisterNamespace(
-		self.name,
-		{
-			profile = {
-				item = "any",
-				container = "any",
-				filter = "any"
-			}
-		}
-	)
+	self.db = addon.db:RegisterNamespace(self.name, {profile={
+		item = 'any',
+		container = 'any',
+		filter = 'any',
+	}})
 end
 
 function mod:OnEnable()
 	if not self.hooked then
-		GameTooltip:HookScript(
-			"OnTooltipSetItem",
-			function(...)
-				if self:IsEnabled() then
-					return self:OnTooltipSetItem(...)
-				end
+		GameTooltip:HookScript('OnTooltipSetItem', function(...)
+			if self:IsEnabled() then
+				return self:OnTooltipSetItem(...)
 			end
-		)
+		end)
 		self.hooked = true
 	end
 end
 
 function mod:GetOptions()
-	local modMeta = {
-		__index = {
-			type = "select",
-			width = "double",
-			values = {
-				never = L["Never"],
-				shift = L["When shift is held down"],
-				ctrl = L["When ctrl is held down"],
-				alt = L["When alt is held down"],
-				any = L["When any modifier key is held down"],
-				always = L["Always"]
-			}
-		}
-	}
+	local modMeta = { __index = {
+		type = "select",
+		width = "double",
+		values = {
+			never = L["Never"],
+			shift = L["When shift is held down"],
+			ctrl = L["When ctrl is held down"],
+			alt = L["When alt is held down"],
+			any = L["When any modifier key is held down"],
+			always = L["Always"],
+		},
+	}}
 	return {
-		item = setmetatable(
-			{
-				name = L["Show item information..."],
-				order = 10
-			},
-			modMeta
-		),
-		container = setmetatable(
-			{
-				name = L["Show container information..."],
-				order = 20
-			},
-			modMeta
-		),
-		filter = setmetatable(
-			{
-				name = L["Show filtering information..."],
-				order = 30
-			},
-			modMeta
-		)
+		item = setmetatable({
+			name = L["Show item information..."],
+			order = 10,
+		}, modMeta),
+		container = setmetatable({
+			name = L["Show container information..."],
+			order = 20,
+		}, modMeta),
+		filter = setmetatable({
+			name = L["Show filtering information..."],
+			order = 30,
+		}, modMeta),
 	}, addon:GetOptionHandler(self)
 end
 
 local modifierTests = {
-	never = function()
-	end,
-	always = function()
-		return true
-	end,
+	never = function() end,
+	always = function() return true end,
 	any = IsModifierKeyDown,
 	shift = IsShiftKeyDown,
 	ctrl = IsControlKeyDown,
-	alt = IsAltKeyDown
+	alt = IsAltKeyDown,
 }
 
 local function TestModifier(name)
@@ -130,13 +108,9 @@ local GetBagSlotFromId = addon.GetBagSlotFromId
 
 function mod:OnTooltipSetItem(tt)
 	local button = tt:GetOwner()
-	if not button then
-		return
-	end
+	if not button then return end
 	local bag, slot, container = button.bag, button.slot, button.container
-	if not (bag and slot and container) then
-		return
-	end
+	if not (bag and slot and container) then return end
 
 	local slotData = container.content[bag][slot]
 

@@ -1,5 +1,5 @@
 -- Widget created by Yssaril
-local DataVersion = 9003
+local DataVersion = 9004
 local AGSMW = LibStub:NewLibrary("AceGUISharedMediaWidgets-1.0", DataVersion)
 
 if not AGSMW then
@@ -255,9 +255,6 @@ do
 	end
 
 	function AGSMW:ReturnDropDownFrame(frame)
-		if not frame.SetBackdrop then
-			Mixin(frame, BackdropTemplateMixin)
-		end
 		ClearFrames(frame)
 		frame:ClearAllPoints()
 		frame:Hide()

@@ -1,6 +1,6 @@
 --[[
 AdiBags - Adirelle's bag addon.
-Copyright 2010-2014 Adirelle (adirelle@gmail.com)
+Copyright 2010-2021 Adirelle (adirelle@gmail.com)
 All rights reserved.
 
 This file is part of AdiBags.
@@ -18,6 +18,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
+
 local addonName, addon = ...
 local L = addon.L
 
@@ -42,7 +43,7 @@ addon.hookedBags = hookedBags
 local containersFrames = {}
 do
 	for i = 1, NUM_CONTAINER_FRAMES, 1 do
-		containersFrames[i] = _G["ContainerFrame" .. i]
+		containersFrames[i] = _G["ContainerFrame"..i]
 	end
 end
 
@@ -106,9 +107,7 @@ function addon:ToggleAllBags()
 end
 
 function addon:OpenAllBags(requesterFrame)
-	if requesterFrame then
-		return
-	end -- UpdateInteractingWindow takes care of these cases
+	if requesterFrame then return end -- UpdateInteractingWindow takes care of these cases
 	for _, bag in self:IterateBags() do
 		bag:Open()
 	end
@@ -118,9 +117,7 @@ function addon:OpenAllBags(requesterFrame)
 end
 
 function addon:CloseAllBags(requesterFrame)
-	if requesterFrame then
-		return
-	end -- UpdateInteractingWindow takes care of these cases
+	if requesterFrame then return end -- UpdateInteractingWindow takes care of these cases
 	local found = false
 	for i, bag in self:IterateBags() do
 		if bag:Close() then
@@ -175,7 +172,7 @@ function addon:OpenBackpack()
 		ourBackpack:Open()
 	else
 		local frame = self:GetContainerFrame(BACKPACK_CONTAINER, true)
-		self.backpackWasOpen = not (not frame)
+		self.backpackWasOpen = not not frame
 	end
 	return self.backpackWasOpen
 end

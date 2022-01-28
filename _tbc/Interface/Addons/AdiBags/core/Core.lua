@@ -1,6 +1,6 @@
 --[[
 AdiBags - Adirelle's bag addon.
-Copyright 2010-2014 Adirelle (adirelle@gmail.com)
+Copyright 2010-2021 Adirelle (adirelle@gmail.com)
 All rights reserved.
 
 This file is part of AdiBags.
@@ -18,6 +18,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
+
 local addonName, addon = ...
 local L = addon.L
 
@@ -43,7 +44,7 @@ local type = _G.type
 local unpack = _G.unpack
 --GLOBALS>
 
-LibStub("AceAddon-3.0"):NewAddon(addon, addonName, "ABEvent-1.0", "ABBucket-1.0", "AceHook-3.0", "AceConsole-3.0")
+LibStub('AceAddon-3.0'):NewAddon(addon, addonName, 'ABEvent-1.0', 'ABBucket-1.0', 'AceHook-3.0', 'AceConsole-3.0')
 --[===[@debug@
 _G[addonName] = addon
 --@end-debug@]===]
@@ -57,8 +58,7 @@ if AdiDebug then
 	AdiDebug:Embed(addon, addonName)
 else
 --@end-alpha@]===]
-function addon.Debug()
-end
+	function addon.Debug() end
 --[===[@alpha@
 end
 --@end-alpha@]===]
@@ -84,27 +84,13 @@ function addon:OnInitialize()
 	self.DEFAULT_SETTINGS.profile.bagFont = bfd
 	self.DEFAULT_SETTINGS.profile.sectionFont = self:GetFontDefaults(GameFontNormalLeft)
 
-	self.db = LibStub("AceDB-3.0"):New(addonName .. "DB", self.DEFAULT_SETTINGS, true)
+	self.db = LibStub('AceDB-3.0'):New(addonName.."DB", self.DEFAULT_SETTINGS, true)
 	self.db.RegisterCallback(self, "OnProfileChanged")
 	self.db.RegisterCallback(self, "OnProfileCopied", "OnProfileChanged")
 	self.db.RegisterCallback(self, "OnProfileReset", "Reconfigure")
 
-	self.bagFont =
-		self:CreateFont(
-		addonName .. "BagFont",
-		GameFontHighlightLarge,
-		function()
-			return self.db.profile.bagFont
-		end
-	)
-	self.sectionFont =
-		self:CreateFont(
-		addonName .. "SectionFont",
-		GameFontNormalLeft,
-		function()
-			return self.db.profile.sectionFont
-		end
-	)
+	self.bagFont = self:CreateFont(addonName.."BagFont", GameFontHighlightLarge, function() return self.db.profile.bagFont end)
+	self.sectionFont = self:CreateFont(addonName.."SectionFont", GameFontNormalLeft, function() return self.db.profile.sectionFont end)
 
 	self.itemParentFrames = {}
 
@@ -114,46 +100,38 @@ function addon:OnInitialize()
 	self:SetEnabledState(false)
 
 	-- Persistant handlers
-	self.RegisterBucketMessage(
-		addonName,
-		"AdiBags_ConfigChanged",
-		0.2,
-		function(...)
-			addon:ConfigChanged(...)
-		end
-	)
-	self.RegisterEvent(
-		addonName,
-		"PLAYER_ENTERING_WORLD",
-		function()
-			if self.db.profile.enabled then
-				self:Enable()
-			end
-		end
-	)
+	self.RegisterBucketMessage(addonName, 'AdiBags_ConfigChanged', 0.2, function(...) addon:ConfigChanged(...) end)
+	self.RegisterEvent(addonName, 'PLAYER_ENTERING_WORLD', function() if self.db.profile.enabled then self:Enable() end end)
 
 	self:UpgradeProfile()
 
-	self:RegisterChatCommand(
-		"adibags",
-		function(cmd)
-			addon:OpenOptions(strsplit(" ", cmd or ""))
-		end,
-		true
-	)
+	self:RegisterChatCommand("adibags", function(cmd)
+		addon:OpenOptions(strsplit(' ', cmd or ""))
+	end, true)
 
-	self:Debug("Initialized")
+	-- Just a warning
+	--[===[@alpha@
+	if geterrorhandler() == _G._ERRORMESSAGE and not GetCVarBool("scriptErrors") then
+		print('|cffffee00', L["Warning: You are using an alpha or beta version of AdiBags without displaying Lua errors. If anything goes wrong, AdiBags (or any other addon causing some error) will simply stop working for apparently no reason. Please either enable the display of Lua errors or install an error handler addon like BugSack or Swatter."], '|r')
+	end
+	--@end-alpha@]===]
+
+	self:Debug('Initialized')
 end
 
 function addon:OnEnable()
+
 	self.globalLock = false
 
-	self:RegisterEvent("BAG_UPDATE")
-	self:RegisterEvent("BAG_UPDATE_DELAYED")
-	self:RegisterBucketEvent("PLAYERBANKSLOTS_CHANGED", 0.01, "BankUpdated")
-	self:RegisterEvent("PLAYER_LEAVING_WORLD", "Disable")
-	self:RegisterMessage("AdiBags_BagOpened", "LayoutBags", "opened")
-	self:RegisterMessage("AdiBags_BagClosed", "LayoutBags", "closed")
+	self:RegisterEvent('BAG_UPDATE')
+	self:RegisterEvent('BAG_UPDATE_DELAYED')
+	self:RegisterBucketEvent('PLAYERBANKSLOTS_CHANGED', 0.01, 'BankUpdated')
+
+	self:RegisterEvent('PLAYER_LEAVING_WORLD', 'Disable')
+
+	self:RegisterMessage('AdiBags_BagOpened', 'LayoutBags')
+	self:RegisterMessage('AdiBags_BagClosed', 'LayoutBags')
+
 	self:RawHook("OpenAllBags", true)
 	self:RawHook("CloseAllBags", true)
 	self:RawHook("ToggleAllBags", true)
@@ -163,19 +141,19 @@ function addon:OnEnable()
 	self:RawHook("CloseBag", true)
 	self:RawHook("OpenBackpack", true)
 	self:RawHook("CloseBackpack", true)
-	self:RawHook("CloseSpecialWindows", true)
+	self:RawHook('CloseSpecialWindows', true)
 
 	-- Track most windows involving items
-	self:RegisterEvent("BANKFRAME_OPENED", "UpdateInteractingWindow")
-	self:RegisterEvent("BANKFRAME_CLOSED", "UpdateInteractingWindow")
-	self:RegisterEvent("MAIL_SHOW", "UpdateInteractingWindow")
-	self:RegisterEvent("MAIL_CLOSED", "UpdateInteractingWindow")
-	self:RegisterEvent("MERCHANT_SHOW", "UpdateInteractingWindow")
-	self:RegisterEvent("MERCHANT_CLOSED", "UpdateInteractingWindow")
-	self:RegisterEvent("AUCTION_HOUSE_SHOW", "UpdateInteractingWindow")
-	self:RegisterEvent("AUCTION_HOUSE_CLOSED", "UpdateInteractingWindow")
-	self:RegisterEvent("TRADE_SHOW", "UpdateInteractingWindow")
-	self:RegisterEvent("TRADE_CLOSED", "UpdateInteractingWindow")
+	self:RegisterEvent('BANKFRAME_OPENED', 'UpdateInteractingWindow')
+	self:RegisterEvent('BANKFRAME_CLOSED', 'UpdateInteractingWindow')
+	self:RegisterEvent('MAIL_SHOW', 'UpdateInteractingWindow')
+	self:RegisterEvent('MAIL_CLOSED', 'UpdateInteractingWindow')
+	self:RegisterEvent('MERCHANT_SHOW', 'UpdateInteractingWindow')
+	self:RegisterEvent('MERCHANT_CLOSED', 'UpdateInteractingWindow')
+	self:RegisterEvent('AUCTION_HOUSE_SHOW', 'UpdateInteractingWindow')
+	self:RegisterEvent('AUCTION_HOUSE_CLOSED', 'UpdateInteractingWindow')
+	self:RegisterEvent('TRADE_SHOW', 'UpdateInteractingWindow')
+	self:RegisterEvent('TRADE_CLOSED', 'UpdateInteractingWindow')
 
 	self:SetSortingOrder(self.db.profile.sortingOrder)
 
@@ -193,13 +171,13 @@ function addon:OnEnable()
 	self.sectionFont:ApplySettings()
 	self:UpdatePositionMode()
 
-	self:Debug("Enabled")
+	self:Debug('Enabled')
 end
 
 function addon:OnDisable()
 	self.anchor:Hide()
 	self:CloseAllBags()
-	self:Debug("Disabled")
+	self:Debug('Disabled')
 end
 
 function addon:Reconfigure()
@@ -274,31 +252,7 @@ function addon:UpgradeProfile()
 			skin.fontSectionColor = nil
 		end
 	end
-end
 
---------------------------------------------------------------------------------
--- Error reporting
---------------------------------------------------------------------------------
-
-local BugGrabber = addon.BugGrabber
-if BugGrabber then
-	if BugGrabber.setupCallbacks then
-		BugGrabber.setupCallbacks()
-	end
-	local pattern = "(" .. addonName .. "[^\n]+%.lua):%d+:"
-	BugGrabber.RegisterCallback(
-		addon,
-		"BugGrabber_BugGrabbed",
-		function(_, errorObject)
-			local ref = errorObject and errorObject.stack and strmatch(errorObject.stack, pattern)
-			if ref and not strmatch(ref, "\\libs\\") then
-				if not addon.db.global.muteBugGrabber then
-					print(format("|cffffff00" .. L["Error in %s: %s -- details: %s"], addonName, "|r" .. errorObject.message, BugGrabber:GetChatLink(errorObject)))
-				end
-				addon:Debug("Error:", errorObject.message)
-			end
-		end
-	)
 end
 
 --------------------------------------------------------------------------------
@@ -307,7 +261,7 @@ end
 
 do
 	local configAddonName = "AdiBags_Config"
-	local why = "???"
+	local why = '???'
 	local function CouldNotLoad()
 		print("|cffff0000AdiBags:", format(ADDON_LOAD_FAILED, configAddonName, why), "|r")
 	end
@@ -315,7 +269,7 @@ do
 		self.OpenOptions = CouldNotLoad
 		local loaded, reason = LoadAddOn(configAddonName)
 		if not loaded then
-			why = _G["ADDON_" .. reason]
+			why = _G['ADDON_'..reason]
 		end
 		addon:OpenOptions(...)
 	end
@@ -323,7 +277,7 @@ end
 
 do
 	-- Create the Blizzard addon option frame
-	local panel = CreateFrame("Frame", addonName .. "BlizzOptions")
+	local panel = CreateFrame("Frame", addonName.."BlizzOptions")
 	panel.name = addonName
 	InterfaceOptions_AddCategory(panel)
 
@@ -335,17 +289,14 @@ do
 	fs:SetText(addonName)
 
 	local button = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
-	button:SetText(L["Configure"])
+	button:SetText(L['Configure'])
 	button:SetWidth(128)
 	button:SetPoint("TOPLEFT", 10, -48)
-	button:SetScript(
-		"OnClick",
-		function()
-			while CloseWindows() do
-			end
-			return addon:OpenOptions()
-		end
-	)
+	button:SetScript('OnClick', function()
+		while CloseWindows() do end
+		return addon:OpenOptions()
+	end)
+
 end
 
 --------------------------------------------------------------------------------
@@ -356,7 +307,7 @@ local moduleProto = {
 	Debug = addon.Debug,
 	OpenOptions = function(self)
 		return addon:OpenOptions("modules", self.moduleName)
-	end
+	end,
 }
 addon.moduleProto = moduleProto
 addon:SetDefaultModulePrototype(moduleProto)
@@ -366,14 +317,14 @@ addon:SetDefaultModulePrototype(moduleProto)
 --------------------------------------------------------------------------------
 
 local updatedBags = {}
-local updatedBank = {[BANK_CONTAINER] = true}
+local updatedBank = { [BANK_CONTAINER] = true }
 
 function addon:BAG_UPDATE(event, bag)
 	updatedBags[bag] = true
 end
 
 function addon:BAG_UPDATE_DELAYED(event)
-	self:SendMessage("AdiBags_BagUpdated", updatedBags)
+	self:SendMessage('AdiBags_BagUpdated', updatedBags)
 	wipe(updatedBags)
 end
 
@@ -381,7 +332,7 @@ function addon:BankUpdated(slots)
 	-- Wrap several PLAYERBANKSLOTS_CHANGED into one AdiBags_BagUpdated message
 	for slot in pairs(slots) do
 		if slot > 0 and slot <= NUM_BANKGENERIC_SLOTS then
-			return self:SendMessage("AdiBags_BagUpdated", updatedBank)
+			return self:SendMessage('AdiBags_BagUpdated', updatedBank)
 		end
 	end
 end
@@ -400,13 +351,13 @@ function addon:ConfigChanged(vars)
 	elseif not self:IsEnabled() then
 		return
 	elseif vars.filter then
-		return self:SendMessage("AdiBags_FiltersChanged")
+		return self:SendMessage('AdiBags_FiltersChanged')
 	else
 		for name in pairs(vars) do
-			if strmatch(name, "virtualStacks") then
-				return self:SendMessage("AdiBags_FiltersChanged")
-			elseif strmatch(name, "bags%.") then
-				local _, bagName = strsplit(".", name)
+			if strmatch(name, 'virtualStacks') then
+				return self:SendMessage('AdiBags_FiltersChanged')
+			elseif strmatch(name, 'bags%.') then
+				local _, bagName = strsplit('.', name)
 				local bag = self:GetModule(bagName)
 				local enabled = self.db.profile.bags[bagName]
 				if enabled and not bag:IsEnabled() then
@@ -414,9 +365,9 @@ function addon:ConfigChanged(vars)
 				elseif not enabled and bag:IsEnabled() then
 					bag:Disable()
 				end
-			elseif strmatch(name, "columnWidth") then
-				return self:SendMessage("AdiBags_LayoutChanged")
-			elseif strmatch(name, "^skin%.font") then
+			elseif strmatch(name, 'columnWidth') then
+				return self:SendMessage('AdiBags_LayoutChanged')
+			elseif strmatch(name, '^skin%.font') then
 				return self:UpdateFonts()
 			end
 		end
@@ -424,23 +375,23 @@ function addon:ConfigChanged(vars)
 	if vars.sortingOrder then
 		return self:SetSortingOrder(self.db.profile.sortingOrder)
 	elseif vars.maxHeight then
-		return self:SendMessage("AdiBags_LayoutChanged")
+		return self:SendMessage('AdiBags_LayoutChanged')
 	elseif vars.scale then
 		return self:LayoutBags()
 	elseif vars.positionMode then
 		return self:UpdatePositionMode()
 	else
-		self:SendMessage("AdiBags_UpdateAllButtons")
+		self:SendMessage('AdiBags_UpdateAllButtons')
 	end
 end
 
 function addon:SetGlobalLock(locked)
-	locked = not (not locked)
+	locked = not not locked
 	if locked ~= self.globalLock then
 		self.globalLock = locked
-		self:SendMessage("AdiBags_GlobalLockChanged", locked)
+		self:SendMessage('AdiBags_GlobalLockChanged', locked)
 		if not locked then
-			self:SendMessage("AdiBags_LayoutChanged")
+			self:SendMessage('AdiBags_LayoutChanged')
 		end
 		return true
 	end
@@ -453,16 +404,16 @@ end
 do
 	local current
 	function addon:UpdateInteractingWindow(event, ...)
-		local new = strmatch(event, "^([_%w]+)_OPEN") or strmatch(event, "^([_%w]+)_SHOW$") or strmatch(event, "^([_%w]+)_UPDATE$")
-		self:Debug("UpdateInteractingWindow", event, current, "=>", new, "|", ...)
+		local new = strmatch(event, '^([_%w]+)_OPEN') or strmatch(event, '^([_%w]+)_SHOW$') or strmatch(event, '^([_%w]+)_UPDATE$')
+		self:Debug('UpdateInteractingWindow', event, current, '=>', new, '|', ...)
 		if new ~= current then
 			local old = current
 			current = new
 			self.atBank = (current == "BANKFRAME")
 			if self.db.profile.virtualStacks.notWhenTrading ~= 0 then
-				self:SendMessage("AdiBags_FiltersChanged", true)
+				self:SendMessage('AdiBags_FiltersChanged', true)
 			end
-			self:SendMessage("AdiBags_InteractingWindowChanged", new, old)
+			self:SendMessage('AdiBags_InteractingWindowChanged', new, old)
 		end
 	end
 
@@ -477,12 +428,12 @@ end
 
 function addon:ShouldStack(slotData)
 	local conf = self.db.profile.virtualStacks
-	local hintSuffix = "#" .. tostring(slotData.bagFamily)
+	local hintSuffix = '#'..tostring(slotData.bagFamily)
 	if not slotData.link then
-		return conf.freeSpace, "*Free*" .. hintSuffix
+		return conf.freeSpace, "*Free*"..hintSuffix
 	end
 	if not self.db.profile.showBagType then
-		hintSuffix = ""
+		hintSuffix = ''
 	end
 	local window, unstack = self:GetInteractingWindow(), 0
 	if window then
@@ -495,13 +446,13 @@ function addon:ShouldStack(slotData)
 	if maxStack > 1 then
 		if conf.stackable then
 			if (slotData.count or 1) == maxStack then
-				return true, tostring(slotData.itemId) .. hintSuffix
+				return true, tostring(slotData.itemId)..hintSuffix
 			elseif unstack < 3 then
-				return conf.incomplete, tostring(slotData.itemId) .. hintSuffix
+				return conf.incomplete, tostring(slotData.itemId)..hintSuffix
 			end
 		end
 	elseif conf.others and unstack < 2 then
-		return true, tostring(self.GetDistinctItemID(slotData.link)) .. hintSuffix
+		return true, tostring(self.GetDistinctItemID(slotData.link))..hintSuffix
 	end
 end
 
@@ -509,11 +460,11 @@ end
 -- Skin-related methods
 --------------------------------------------------------------------------------
 
-local LSM = LibStub("LibSharedMedia-3.0")
+local LSM = LibStub('LibSharedMedia-3.0')
 
 function addon:GetContainerSkin(containerName)
 	local skin = self.db.profile.skin
-	local r, g, b, a = unpack(skin[(containerName .. "Color")], 1, 4)
+	local r, g, b, a = unpack(skin[(containerName..'Color')], 1, 4)
 	local backdrop = addon.BACKDROP
 	backdrop.bgFile = LSM:Fetch(LSM.MediaType.BACKGROUND, skin.background)
 	backdrop.edgeFile = LSM:Fetch(LSM.MediaType.BORDER, skin.border)

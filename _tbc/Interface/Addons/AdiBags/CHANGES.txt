@@ -1,15 +1,10 @@
-tag 464ca7c60a67f5eb12032a9acf4ea78d08c7a0d7 v1.9.20-classic
+tag be6010fece47cc4f121c8371e5dd7e0a7e6c917f v1.9.26-bcc
 Author:	Talyrius <contact@talyrius.net>
-Date:	Sun Jun 28 10:21:35 2020 -0700
+Date:	Wed Sep 15 13:01:58 2021 -0700
 
-commit ae5316728d565b03325cfa48c3e1ee213aa37304
-Author: Janne Virtala <wibestn@gmail.com>
-Date:   Sun Jun 28 20:02:59 2020 +0300
+commit 17594af17f03dd5f74782f619e6d1eda456b6e93
+Author: Talyrius <contact@talyrius.net>
+Date:   Wed Sep 15 13:01:06 2021 -0700
 
-    Junk: Fixed support for Scrap.
-    
-    Fixes #416.
-    
-    Co-authored-by: veyh <veyh@users.noreply.github.com>
-    Co-authored-by: Talyrius <contact@talyrius.net>
+    Updated for Patch 2.5.2: Overlords of Outland.
 

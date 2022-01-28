@@ -1,6 +1,6 @@
 --[[
 AdiBags - Adirelle's bag addon.
-Copyright 2010-2014 Adirelle (adirelle@gmail.com)
+Copyright 2010-2021 Adirelle (adirelle@gmail.com)
 All rights reserved.
 
 This file is part of AdiBags.
@@ -18,6 +18,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
+
 local addonName, addon = ...
 
 function addon:SetupDefaultFilters()
@@ -43,37 +44,47 @@ function addon:SetupDefaultFilters()
 	local TRADE_GOODS = GetItemClassInfo(LE_ITEM_CLASS_TRADEGOODS)
 	local WEAPON = GetItemClassInfo(LE_ITEM_CLASS_WEAPON)
 	local ARMOR = GetItemClassInfo(LE_ITEM_CLASS_ARMOR)
-	local JEWELRY = L["Jewelry"]
-	local EQUIPMENT = L["Equipment"]
-	local AMMUNITION = L["Ammunition"]
+	local KEY = GetItemClassInfo(LE_ITEM_CLASS_KEY)
+	local JEWELRY = L['Jewelry']
+	local EQUIPMENT = L['Equipment']
+	local AMMUNITION = L['Ammunition']
 
 	-- Define global ordering
-	self:SetCategoryOrders {
+	self:SetCategoryOrders{
 		[QUEST] = 30,
 		[TRADE_GOODS] = 20,
 		[EQUIPMENT] = 10,
 		[CONSUMMABLE] = -10,
 		[MISCELLANEOUS] = -20,
 		[AMMUNITION] = -30,
-		[JUNK] = -40
+		[KEY] = -40,
+		[JUNK] = -50,
 	}
+
+	-- [90] Key
+	do
+		local keyFilter = addon:RegisterFilter('Key', 90, function(self, slotData)
+			if slotData.bagFamily == 256 or slotData.class == KEY or slotData.subclass == KEY then
+				return KEY
+			else
+				return false
+			end
+		end)
+		keyFilter.uiName = KEY
+		keyFilter.uiDesc = L['Put items categorized as keys in their own section.']
+	end
 
 	-- [75] Quest Items
 	do
-		local questItemFilter =
-			addon:RegisterFilter(
-			"Quest",
-			75,
-			function(self, slotData)
-				if slotData.class == QUEST or slotData.subclass == QUEST then
-					return QUEST
-				else
-					return false
-				end
+		local questItemFilter = addon:RegisterFilter('Quest', 75, function(self, slotData)
+			if slotData.class == QUEST or slotData.subclass == QUEST then
+				return QUEST
+			else
+				return false
 			end
-		)
-		questItemFilter.uiName = L["Quest Items"]
-		questItemFilter.uiDesc = L["Put quest-related items in their own section."]
+		end)
+		questItemFilter.uiName = L['Quest Items']
+		questItemFilter.uiDesc = L['Put quest-related items in their own section.']
 	end
 
 	-- [60] Equipment
@@ -107,96 +118,84 @@ function addon:SetupDefaultFilters()
 			INVTYPE_WEAPONMAINHAND = WEAPON,
 			INVTYPE_WEAPONMAINHAND_PET = WEAPON,
 			INVTYPE_WEAPONOFFHAND = WEAPON,
-			INVTYPE_WRIST = ARMOR
+			INVTYPE_WRIST = ARMOR,
 		}
 
-		local equipmentFilter =
-			addon:RegisterFilter(
-			"Equipment",
-			60,
-			function(self, slotData)
-				local equipSlot = slotData.equipSlot
-				if equipSlot and equipSlot ~= "" then
-					local rule = self.db.profile.dispatchRule
-					local category
-					if rule == "category" then
-						category = equipCategories[equipSlot] or _G[equipSlot]
-					elseif rule == "slot" then
-						category = _G[equipSlot]
-					end
-					if category == ARMOR and self.db.profile.armorTypes and slotData.subclass then
-						category = slotData.subclass
-					end
-					return category or EQUIPMENT, EQUIPMENT
+		local equipmentFilter = addon:RegisterFilter('Equipment', 60, function(self, slotData)
+			local equipSlot = slotData.equipSlot
+			if equipSlot and equipSlot ~= "" then
+				local rule = self.db.profile.dispatchRule
+				local category
+				if rule == 'category' then
+					category = equipCategories[equipSlot] or _G[equipSlot]
+				elseif rule == 'slot' then
+					category = _G[equipSlot]
 				end
+				if category == ARMOR and self.db.profile.armorTypes and slotData.subclass then
+					category = slotData.subclass
+				end
+				return category or EQUIPMENT, EQUIPMENT
 			end
-		)
+		end)
 		equipmentFilter.uiName = EQUIPMENT
 		equipmentFilter.uiDesc = L['Put any item that can be equipped (including bags) into the "Equipment" section.']
 
 		function equipmentFilter:OnInitialize()
-			self.db = addon.db:RegisterNamespace("Equipment", {profile = {dispatchRule = "category", armorTypes = false}})
+			self.db = addon.db:RegisterNamespace('Equipment', { profile = { dispatchRule = 'category', armorTypes = false } })
 		end
 
 		function equipmentFilter:GetOptions()
 			return {
 				dispatchRule = {
-					name = L["Section setup"],
-					desc = L["Select the sections in which the items should be dispatched."],
-					type = "select",
-					width = "double",
+					name = L['Section setup'],
+					desc = L['Select the sections in which the items should be dispatched.'],
+					type = 'select',
+					width = 'double',
 					order = 10,
 					values = {
-						one = L["Only one section."],
-						category = L["Four general sections."],
-						slot = L["One section per item slot."]
-					}
+						one = L['Only one section.'],
+						category = L['Four general sections.'],
+						slot = L['One section per item slot.'],
+					},
 				},
 				armorTypes = {
-					name = L["Split armors by types"],
-					desc = L["Check this so armors are dispatched in four sections by type."],
-					type = "toggle",
+					name = L['Split armors by types'],
+					desc = L['Check this so armors are dispatched in four sections by type.'],
+					type = 'toggle',
 					order = 20,
-					disabled = function()
-						return self.db.profile.dispatchRule ~= "category"
-					end
-				}
+					disabled = function() return self.db.profile.dispatchRule ~= 'category' end,
+				},
 			}, addon:GetOptionHandler(self, true)
 		end
 	end
 
 	-- [10] Item classes
 	do
-		local itemCat = addon:RegisterFilter("ItemCategory", 10)
-		itemCat.uiName = L["Item category"]
-		itemCat.uiDesc =
-			L["Put items in sections depending on their first-level category at the Auction House."] ..
-			"\n|cffff7700" .. L["Please note this filter matchs every item. Any filter with lower priority than this one will have no effect."] .. "|r"
+		local itemCat = addon:RegisterFilter('ItemCategory', 10)
+		itemCat.uiName = L['Item category']
+		itemCat.uiDesc = L['Put items in sections depending on their first-level category at the Auction House.']
+			..'\n|cffff7700'..L['Please note this filter matchs every item. Any filter with lower priority than this one will have no effect.']..'|r'
 
 		function itemCat:OnInitialize(slotData)
-			self.db =
-				addon.db:RegisterNamespace(
-				self.moduleName,
-				{
-					profile = {
-						splitBySubclass = {false}
-					}
+			self.db = addon.db:RegisterNamespace(self.moduleName, {
+				profile = {
+					splitBySubclass = { false }
 				}
-			)
+			})
 		end
 
 		function itemCat:GetOptions()
 			return {
 				splitBySubclass = {
-					name = L["Split by subcategories"],
-					desc = L["Select which first-level categories should be split by sub-categories."],
-					type = "multiselect",
+					name = L['Split by subcategories'],
+					desc = L['Select which first-level categories should be split by sub-categories.'],
+					type = 'multiselect',
 					order = 10,
 					values = {
 						[TRADE_GOODS] = TRADE_GOODS,
 						[CONSUMMABLE] = CONSUMMABLE,
 						[MISCELLANEOUS] = MISCELLANEOUS,
-						[RECIPE] = RECIPE
+						[RECIPE] = RECIPE,
 					}
 				}
 			}, addon:GetOptionHandler(self, true)
@@ -210,5 +209,7 @@ function addon:SetupDefaultFilters()
 				return class
 			end
 		end
+
 	end
+
 end

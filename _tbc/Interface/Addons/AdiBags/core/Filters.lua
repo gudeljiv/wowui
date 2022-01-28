@@ -1,6 +1,6 @@
 --[[
 AdiBags - Adirelle's bag addon.
-Copyright 2010-2014 Adirelle (adirelle@gmail.com)
+Copyright 2010-2021 Adirelle (adirelle@gmail.com)
 All rights reserved.
 
 This file is part of AdiBags.
@@ -18,6 +18,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
+
 local addonName, addon = ...
 local L = addon.L
 
@@ -36,17 +37,13 @@ local wipe = _G.wipe
 -- Filter prototype
 --------------------------------------------------------------------------------
 
-local filterProto =
-	setmetatable(
-	{
-		isFilter = true,
-		priority = 0,
-		OpenOptions = function(self)
-			return addon:OpenOptions("filters", self.filterName)
-		end
-	},
-	{__index = addon.moduleProto}
-)
+local filterProto = setmetatable({
+	isFilter = true,
+	priority = 0,
+	OpenOptions = function(self)
+		return addon:OpenOptions("filters", self.filterName)
+	end,
+}, { __index = addon.moduleProto })
 addon.filterProto = filterProto
 
 function filterProto:GetPriority()
@@ -85,7 +82,7 @@ do
 
 	function addon:UpdateFilters()
 		activeFilters, allFilters = nil, nil
-		self:SendMessage("AdiBags_FiltersChanged")
+		self:SendMessage('AdiBags_FiltersChanged')
 	end
 
 	function GetAllFilters()

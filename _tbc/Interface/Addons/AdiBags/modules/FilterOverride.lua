@@ -1,6 +1,6 @@
 --[[
 AdiBags - Adirelle's bag addon.
-Copyright 2010-2014 Adirelle (adirelle@gmail.com)
+Copyright 2010-2021 Adirelle (adirelle@gmail.com)
 All rights reserved.
 
 This file is part of AdiBags.
@@ -258,6 +258,7 @@ function mod:GetOptions()
 				name = L['Items'],
 				desc = L['Click on a item to remove it from the list. You can drop an item on the empty slot to add it to the list.'],
 				type = 'multiselect',
+				width = 'full',
 				dialogControl = 'ItemList',
 				order = 40,
 				get = function() return true end,
@@ -527,4 +528,3 @@ function mod:CURSOR_UPDATE()
 		addon.UnregisterSectionHeaderScript(self, 'OnReceiveDrag')
 	end
 end
-
