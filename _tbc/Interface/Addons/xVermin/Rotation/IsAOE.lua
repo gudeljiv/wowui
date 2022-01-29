@@ -59,6 +59,21 @@ PlayerFrame:HookScript(
 	end
 )
 
+-- TargetFrame:HookScript(
+-- 	"OnUpdate",
+-- 	function()
+-- 		if InCombatLockdown() and not ChatFrame1EditBox:IsVisible() then 
+-- 			local name, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible, spellId = UnitCastingInfo("target")
+-- 			-- if name then 
+-- 			-- 	print(name, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible, spellId)
+-- 			-- end
+-- 			-- if name then
+-- 			-- 	f:SetBackdropColor(1, 0, 1, 1)
+-- 			-- end
+-- 		end
+-- 	end
+-- )
+
 -- ChatFrame1EditBox:HookScript("OnShow", function() 
 -- 	print("show") 
 -- end)

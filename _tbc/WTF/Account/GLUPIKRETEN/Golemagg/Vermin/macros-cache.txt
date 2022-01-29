@@ -51,6 +51,7 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
 #showtooltip
+/startattack
 /cast Sunder Armor
 /cast Bloodrage
 END
