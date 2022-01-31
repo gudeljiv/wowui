@@ -129,3 +129,7 @@ ImprovedMacroFrame: enabled
 LFGBulletinBoard: enabled
 WideQuestLog: enabled
 Questie: enabled
+oUF: disabled
+oUF_Neav: disabled
+oUF_NeavRaid: disabled
+TrinketMenu: enabled
