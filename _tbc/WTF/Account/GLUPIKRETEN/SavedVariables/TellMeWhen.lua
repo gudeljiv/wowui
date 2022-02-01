@@ -5590,7 +5590,6 @@ TellMeWhenDB = {
 		},
 		["Warlock"] = {
 			["Locked"] = true,
-			["Version"] = 91200,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -5615,45 +5614,43 @@ TellMeWhenDB = {
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TWYSTcQ410f",
-					["Columns"] = 20,
-					["Scale"] = 1,
-					["Alpha"] = 0,
-					["TextureName"] = "Details Flat",
-					["Name"] = "General Buffs/Debbufs",
-					["Locked"] = true,
-					["Icons"] = {
-						{
-							["GUID"] = "TMW:icon:1TWYSTcSCl0z",
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["BuffOrDebuff"] = "HARMFUL",
-							["Enabled"] = true,
-							["Name"] = "Blood Fury",
-						}, -- [1]
-						{
-							["Enabled"] = true,
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
-								},
-							},
-							["Name"] = "Enrage",
-							["GUID"] = "TMW:icon:1TZvNvgAkfmq",
-						}, -- [2]
-					},
 					["Point"] = {
 						["y"] = -40,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
+					["Scale"] = 1,
+					["Icons"] = {
+						{
+							["GUID"] = "TMW:icon:1TWYSTcSCl0z",
+							["Type"] = "buff",
+							["Name"] = "Blood Fury",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Enabled"] = true,
+							["ShowTimerText"] = true,
+						}, -- [1]
+						{
+							["Enabled"] = true,
+							["Type"] = "buff",
+							["Name"] = "Enrage",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
+								},
+							},
+							["ShowTimerText"] = true,
+							["GUID"] = "TMW:icon:1TZvNvgAkfmq",
+						}, -- [2]
+					},
+					["TextureName"] = "Details Flat",
+					["Name"] = "General Buffs/Debbufs",
+					["Locked"] = true,
+					["Alpha"] = 0,
+					["Columns"] = 20,
 				}, -- [2]
 				{
 					["GUID"] = "TMW:group:1V6krZ0tqss=",
-					["Point"] = {
-						["y"] = -88,
-					},
+					["Columns"] = 1,
 					["Scale"] = 1.5,
 					["Icons"] = {
 						{
@@ -5683,11 +5680,19 @@ TellMeWhenDB = {
 					["LayoutDirection"] = 2,
 					["Name"] = "Warlock Rotation",
 					["Locked"] = true,
-					["Columns"] = 1,
+					["Point"] = {
+						["y"] = -88,
+					},
 					["OnlyInCombat"] = true,
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1V6ky7Uf4nZ5",
+					["Name"] = "Warlock Spells",
+					["Point"] = {
+						["y"] = -5,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
 					["Icons"] = {
 						{
 							["Enabled"] = true,
@@ -5740,20 +5745,20 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Unit"] = "target",
 						}, -- [3]
+						[20] = {
+							["Enabled"] = true,
+							["Type"] = "item",
+							["Name"] = "healh",
+						},
 					},
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
-					["Name"] = "Warlock Spells",
-					["Scale"] = 1,
+					["Locked"] = true,
 					["Columns"] = 20,
 					["Alpha"] = 0,
-					["Locked"] = true,
+					["Scale"] = 1,
 				}, -- [4]
 			},
 			["NumGroups"] = 4,
+			["Version"] = 91200,
 		},
 		["Arms"] = {
 			["Version"] = 91200,
@@ -11885,16 +11890,15 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["Type"] = "meta",
 							["Icons"] = {
-								"TMW:icon:1X=ERE5kaXRD", -- [1]
-								"TMW:icon:1TU=hLnlwyeY", -- [2]
-								"TMW:icon:1TQv_Ltf40Wl", -- [3]
-								"TMW:icon:1TQv_LtTwAae", -- [4]
-								"TMW:icon:1Xrn34GriOqy", -- [5]
-								"TMW:icon:1TZvNvflXM0_", -- [6]
-								"TMW:icon:1XzwOSGxkHLD", -- [7]
-								"TMW:icon:1Xwc=6KNp27d", -- [8]
-								"TMW:icon:1XwhZnw4w0Sf", -- [9]
-								"TMW:icon:1TQv_Lti1RyX", -- [10]
+								"TMW:icon:1TU=hLnlwyeY", -- [1]
+								"TMW:icon:1TQv_Ltf40Wl", -- [2]
+								"TMW:icon:1TQv_LtTwAae", -- [3]
+								"TMW:icon:1Xrn34GriOqy", -- [4]
+								"TMW:icon:1TZvNvflXM0_", -- [5]
+								"TMW:icon:1XzwOSGxkHLD", -- [6]
+								"TMW:icon:1Xwc=6KNp27d", -- [7]
+								"TMW:icon:1XwhZnw4w0Sf", -- [8]
+								"TMW:icon:1TQv_Lti1RyX", -- [9]
 							},
 							["Name"] = "Rend",
 							["Enabled"] = true,
@@ -11977,7 +11981,15 @@ TellMeWhenDB = {
 							["OnlyMine"] = true,
 							["Type"] = "buff",
 							["Name"] = "Rend",
-							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1TQv_LtTwAae",
+							["States"] = {
+								{
+									["Alpha"] = 0,
+								}, -- [1]
+								{
+									["Alpha"] = 1,
+								}, -- [2]
+							},
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -11986,8 +11998,8 @@ TellMeWhenDB = {
 								}, -- [1]
 								{
 									["Type"] = "HEALTH",
-									["Unit"] = "target",
 									["Operator"] = ">=",
+									["Unit"] = "target",
 									["Level"] = 20,
 								}, -- [2]
 								{
@@ -12001,15 +12013,7 @@ TellMeWhenDB = {
 								}, -- [4]
 								["n"] = 4,
 							},
-							["GUID"] = "TMW:icon:1TQv_LtTwAae",
-							["States"] = {
-								{
-									["Alpha"] = 0,
-								}, -- [1]
-								{
-									["Alpha"] = 1,
-								}, -- [2]
-							},
+							["Enabled"] = true,
 						}, -- [1]
 						{
 							["Type"] = "buff",
@@ -12046,8 +12050,8 @@ TellMeWhenDB = {
 								}, -- [1]
 								{
 									["Type"] = "HEALTH",
-									["Unit"] = "target",
 									["Operator"] = ">=",
+									["Unit"] = "target",
 									["PrtsBefore"] = 1,
 									["Level"] = 20,
 								}, -- [2]
@@ -12133,8 +12137,8 @@ TellMeWhenDB = {
 							["Conditions"] = {
 								{
 									["Type"] = "DEBUFFSTACKS",
-									["Unit"] = "target",
 									["Operator"] = "<=",
+									["Unit"] = "target",
 									["Level"] = 5,
 								}, -- [1]
 								["n"] = 1,
@@ -12190,8 +12194,8 @@ TellMeWhenDB = {
 								}, -- [1]
 								{
 									["Type"] = "HEALTH",
-									["Unit"] = "target",
 									["Operator"] = ">=",
+									["Unit"] = "target",
 									["Level"] = 20,
 								}, -- [2]
 								["n"] = 2,
@@ -12214,8 +12218,8 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "HEALTH",
-									["Operator"] = ">",
 									["Unit"] = "target",
+									["Operator"] = ">",
 									["Level"] = 20,
 								}, -- [3]
 								{
@@ -12224,8 +12228,8 @@ TellMeWhenDB = {
 								}, -- [4]
 								{
 									["Type"] = "LIBRANGECHECK",
-									["Operator"] = "<=",
 									["Unit"] = "target",
+									["Operator"] = "<=",
 									["Level"] = 10,
 								}, -- [5]
 								["n"] = 5,
@@ -12261,9 +12265,9 @@ TellMeWhenDB = {
 								{
 									["Type"] = "STANCE",
 									["PrtsAfter"] = 1,
-									["AndOr"] = "OR",
-									["Name"] = "Berserker Stance",
 									["Level"] = 1,
+									["Name"] = "Berserker Stance",
+									["AndOr"] = "OR",
 								}, -- [4]
 								{
 									["Type"] = "SPELLCD",
@@ -12286,13 +12290,26 @@ TellMeWhenDB = {
 								}, -- [1]
 								{
 									["Type"] = "HEALTH",
-									["Unit"] = "target",
 									["Operator"] = ">",
+									["Unit"] = "target",
 									["Level"] = 20,
 								}, -- [2]
 								["n"] = 2,
 							},
 						}, -- [13]
+						{
+							["Type"] = "cooldown",
+							["Name"] = "Pummel",
+							["Enabled"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "STANCE",
+									["Name"] = "Berserker Stance",
+								}, -- [1]
+								["n"] = 2,
+							},
+							["RangeCheck"] = true,
+						}, -- [14]
 						[20] = {
 							["BuffOrDebuff"] = "HARMFUL",
 							["GUID"] = "TMW:icon:1TWYMfcUzmi6",
@@ -12312,9 +12329,10 @@ TellMeWhenDB = {
 						{
 							["Type"] = "meta",
 							["Icons"] = {
-								"TMW:icon:1TWYSTcSCl0z", -- [1]
-								"TMW:icon:1TZvNvgAkfmq", -- [2]
-								"TMW:icon:1Xx3hMFQR0cV", -- [3]
+								"TMW:icon:1X=ERE5kaXRD", -- [1]
+								"TMW:icon:1TWYSTcSCl0z", -- [2]
+								"TMW:icon:1TZvNvgAkfmq", -- [3]
+								"TMW:icon:1Xx3hMFQR0cV", -- [4]
 							},
 							["Enabled"] = true,
 						}, -- [1]
@@ -12329,28 +12347,30 @@ TellMeWhenDB = {
 					["Name"] = "Other",
 				}, -- [3]
 				{
-					["Point"] = {
-						["y"] = -40,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
 					["Scale"] = 1,
 					["TextureName"] = "Details Flat",
 					["Locked"] = true,
 					["GUID"] = "TMW:group:1TWYSTcQ410f",
 					["Columns"] = 20,
+					["Alpha"] = 0,
+					["Name"] = "General Buffs/Debbufs",
+					["Point"] = {
+						["y"] = -40,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
 					["Icons"] = {
 						{
 							["BuffOrDebuff"] = "HARMFUL",
 							["Type"] = "buff",
-							["Name"] = "Blood Fury",
 							["ShowTimerText"] = true,
+							["Name"] = "Blood Fury",
 							["GUID"] = "TMW:icon:1TWYSTcSCl0z",
 							["Enabled"] = true,
 						}, -- [1]
 						{
 							["Type"] = "buff",
-							["ShowTimerText"] = true,
+							["Name"] = "Enrage",
 							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1TZvNvgAkfmq",
 							["SettingsPerView"] = {
@@ -12358,19 +12378,20 @@ TellMeWhenDB = {
 									["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
 								},
 							},
-							["Name"] = "Enrage",
+							["ShowTimerText"] = true,
 						}, -- [2]
 						{
 							["BuffOrDebuff"] = "HARMFUL",
 							["Type"] = "buff",
-							["Name"] = "Recently Bandaged",
 							["ShowTimerText"] = true,
+							["Name"] = "Recently Bandaged",
 							["GUID"] = "TMW:icon:1Xx3hMFQR0cV",
 							["Enabled"] = true,
 						}, -- [3]
 						[18] = {
 							["Type"] = "item",
 							["Name"] = "Healthstone",
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "HEALTH",
@@ -12381,12 +12402,11 @@ TellMeWhenDB = {
 							},
 							["GUID"] = "TMW:icon:1X=ERE5iZ8VU",
 							["CustomTex"] = "5720",
-							["Enabled"] = true,
 						},
 						[19] = {
 							["Type"] = "item",
-							["OnlyInBags"] = true,
 							["Name"] = "Major Healing Potion",
+							["GUID"] = "TMW:icon:1X=ERE5kaXRD",
 							["Conditions"] = {
 								{
 									["Type"] = "HEALTH",
@@ -12395,21 +12415,19 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["GUID"] = "TMW:icon:1X=ERE5kaXRD",
+							["OnlyInBags"] = true,
 							["Enabled"] = true,
 						},
 						[20] = {
 							["Type"] = "buff",
 							["CBarOffs"] = 2,
-							["ShowTimerText"] = true,
 							["Name"] = "Renew",
+							["ShowTimerText"] = true,
 							["GUID"] = "TMW:icon:1VagxKm_xQWz",
 							["ShowCBar"] = true,
 							["Enabled"] = true,
 						},
 					},
-					["Name"] = "General Buffs/Debbufs",
-					["Alpha"] = 0,
 				}, -- [4]
 				{
 					["Scale"] = 1,

@@ -153,9 +153,10 @@ Postal3ClassicDB = {
 		["Vermin - Golemagg"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Mxyz|Golemagg|Horde", -- [1]
-					"Mxyzptlk|Golemagg|Horde", -- [2]
-					"Kamenac|Golemagg|Horde", -- [3]
+					"Hrvatina|Golemagg|Horde", -- [1]
+					"Mxyz|Golemagg|Horde", -- [2]
+					"Mxyzptlk|Golemagg|Horde", -- [3]
+					"Kamenac|Golemagg|Horde", -- [4]
 				},
 			},
 		},

@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 4470,
+	["session"] = 4494,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -102,21 +102,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [13]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
-			["time"] = "2022/01/28 15:02:47",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 4465,
-			["counter"] = 8,
-		}, -- [14]
-		{
 			["message"] = "Interface\\AddOns\\oUF\\colors-Colors.lua:125: attempt to call global 'GetThreatStatusColor' (a nil value)",
 			["time"] = "2022/01/31 16:12:33",
 			["locals"] = "parent = \"oUF\"\nns = <table> {\n oUF = <table> {\n }\n}\noUF = <table> {\n DisableBlizzard = <function> defined @Interface\\AddOns\\oUF\\blizzard.lua:64\n SetActiveStyle = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:426\n EnableFactory = <function> defined @Interface\\AddOns\\oUF\\factory.lua:50\n SpawnHeader = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:634\n RegisterStyle = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:410\n AddElement = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:856\n Private = <table> {\n }\n Factory = <function> defined @Interface\\AddOns\\oUF\\factory.lua:34\n SpawnNamePlates = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:755\n version = \"devel\"\n RunFactoryQueue = <function> defined @Interface\\AddOns\\oUF\\factory.lua:69\n DisableFactory = <function> defined @Interface\\AddOns\\oUF\\factory.lua:59\n objects = <table> {\n }\n RegisterMetaFunction = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:392\n RegisterInitCallback = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:381\n headers = <table> {\n }\n HandleUnit = <function> defined @Interface\\AddOns\\oUF\\units.lua:166\n GetActiveStyle = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:438\n IterateStyles = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:453\n Spawn = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:726\n}\nPrivate = <table> {\n unitSelectionType = <function> defined @Interface\\AddOns\\oUF\\private.lua:57\n UpdateUnits = <function> defined @Interface\\AddOns\\oUF\\events.lua:30\n argcheck = <function> defined @Interface\\AddOns\\oUF\\private.lua:4\n print = <function> defined @Interface\\AddOns\\oUF\\private.lua:16\n validateUnit = <function> defined @Interface\\AddOns\\oUF\\private.lua:30\n enableTargetUpdate = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:28\n frame_metatable = <table> {\n }\n error = <function> defined @Interface\\AddOns\\oUF\\private.lua:20\n unitExists = <function> defined @Interface\\AddOns\\oUF\\private.lua:24\n}\nframe_metatable = <table> {\n __index = <unnamed> {\n }\n}\ncolors = <table> {\n runes = <table> {\n }\n threat = <table> {\n }\n power = <table> {\n }\n class = <table> {\n }\n disconnected = <table> {\n }\n tapped = <table> {\n }\n health = <table> {\n }\n reaction = <table> {\n }\n debuff = <table> {\n }\n selection = <table> {\n }\n smooth = <table> {\n }\n}\ncustomClassColors = <function> defined @Interface\\AddOns\\oUF\\colors.lua:46\n(for index) = 0\n(for limit) = 3\n(for step) = 1\ni = 0\n(*temporary) = <table> {\n}\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = \"attempt to call global 'GetThreatStatusColor' (a nil value)\"\n",
 			["stack"] = "[string \"@Interface\\AddOns\\oUF\\colors-Colors.lua\"]:125: in main chunk",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [15]
+		}, -- [14]
 		{
 			["message"] = "...e\\AddOns\\oUF\\elements\\pvpclassificationindicator.lua:34: attempt to index field 'PvPUnitClassification' (a nil value)",
 			["time"] = "2022/01/31 16:12:33",
@@ -124,7 +116,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\oUF\\elements\\pvpclassificationindicator.lua\"]:34: in main chunk",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [16]
+		}, -- [15]
 		{
 			["message"] = "Interface\\AddOns\\oUF\\elements\\summonindicator.lua:29: attempt to index field 'SummonStatus' (a nil value)",
 			["time"] = "2022/01/31 16:12:33",
@@ -132,7 +124,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\oUF\\elements\\summonindicator.lua\"]:29: in main chunk",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [17]
+		}, -- [16]
 		{
 			["message"] = "Interface\\AddOns\\oUF_Neav\\core.lua:6: attempt to index field 'colors' (a nil value)",
 			["time"] = "2022/01/31 16:12:33",
@@ -140,7 +132,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\oUF_Neav\\core.lua\"]:6: in main chunk",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [18]
+		}, -- [17]
 		{
 			["message"] = "...id\\modules\\oUF_Freebgrid\\oUF_Freebgrid_AurasList.lua:109: table index is nil",
 			["time"] = "2022/01/31 16:12:33",
@@ -148,7 +140,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\oUF_NeavRaid\\modules\\oUF_Freebgrid\\oUF_Freebgrid_AurasList.lua\"]:109: in main chunk",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [19]
+		}, -- [18]
 		{
 			["message"] = "...avRaid\\modules\\oUF_Freebgrid\\oUF_Freebgrid_Auras.lua:174: Attempt to register unknown event \"PLAYER_SPECIALIZATION_CHANGED\"",
 			["time"] = "2022/01/31 16:12:33",
@@ -156,7 +148,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `RegisterEvent'\n[string \"@Interface\\AddOns\\oUF_NeavRaid\\modules\\oUF_Freebgrid\\oUF_Freebgrid_Auras.lua\"]:174: in main chunk",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [20]
+		}, -- [19]
 		{
 			["message"] = "Interface\\AddOns\\oUF_NeavRaid\\core.lua:17: attempt to index field 'colors' (a nil value)",
 			["time"] = "2022/01/31 16:12:33",
@@ -164,7 +156,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\oUF_NeavRaid\\core.lua\"]:17: in main chunk",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [21]
+		}, -- [20]
 		{
 			["message"] = "Interface\\AddOns\\oUF\\events.lua:134: Attempt to register unknown event \"ARENA_PREP_OPPONENT_SPECIALIZATIONS\"",
 			["time"] = "2022/01/31 16:12:35",
@@ -172,12 +164,36 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\oUF\\events.lua\"]:134: in function `RegisterEvent'\n[string \"@Interface\\AddOns\\oUF\\units.lua\"]:179: in function `HandleUnit'\n[string \"@Interface\\AddOns\\oUF\\ouf-@project-version@.lua\"]:309: in function <Interface\\AddOns\\oUF\\ouf.lua:260>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\oUF\\ouf-@project-version@.lua\"]:737: in function `Spawn'\n[string \"@Interface\\AddOns\\oUF_Neav\\arena-Arena.lua\"]:341: in function `func'\n[string \"@Interface\\AddOns\\oUF\\factory.lua\"]:20: in function <Interface\\AddOns\\oUF\\factory.lua:16>\n[string \"=(tail call)\"]: ?",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [22]
+		}, -- [21]
 		{
 			["message"] = "(null)",
 			["time"] = "2022/01/31 16:12:36",
 			["session"] = 4468,
 			["counter"] = 9,
+		}, -- [22]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PetActionButton1:Show()'.",
+			["time"] = "2022/02/01 15:25:36",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\AddOns\\xVermin\\Addons/nMainBar.lua\"]:89: in function <Interface\\AddOns\\xVermin\\Addons/nMainBar.lua:82>\n[string \"@Interface\\SharedXML\\C_TimerAugment.lua\"]:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
+			["session"] = 4478,
+			["counter"] = 2,
 		}, -- [23]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_TrackedQuests:ClearAllPoints()'.",
+			["time"] = "2022/02/01 15:08:07",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:610: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:1243: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:1818: in function <...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1817>",
+			["session"] = 4485,
+			["counter"] = 3,
+		}, -- [24]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
+			["time"] = "2022/01/28 15:02:47",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
+			["session"] = 4487,
+			["counter"] = 19,
+		}, -- [25]
 	},
 }

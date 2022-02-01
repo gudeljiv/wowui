@@ -66,7 +66,9 @@ local function FixBindings()
 	SetBinding("X", "MULTIACTIONBAR1BUTTON8", 1)
 
 	SetBinding("MOUSEWHEELDOWN", "MULTIACTIONBAR2BUTTON1", 1)
+	SetBinding("F10", "MULTIACTIONBAR2BUTTON1", 2)
 	SetBinding("MOUSEWHEELUP", "MULTIACTIONBAR2BUTTON2", 1)
+	SetBinding("F11", "MULTIACTIONBAR2BUTTON2", 2)
 	SetBinding("ALT-9", "MULTIACTIONBAR2BUTTON3", 1)
 	SetBinding("ALT-0", "MULTIACTIONBAR2BUTTON4", 1)
 	SetBinding("ALT-E", "MULTIACTIONBAR2BUTTON5", 1)
@@ -204,6 +206,11 @@ local function ClearAllBindings()
 	SetBinding("CTRL-F12", "NONE", 1)
 	SetBinding("CTRL-SHIFT-B", "NONE", 1)
 	SetBinding("CTRL-L", "NONE", 1)
+	
+	SetBinding("F10", "NONE", 1)
+	SetBinding("F10", "NONE", 2)
+	SetBinding("F11", "NONE", 1)
+	SetBinding("F11", "NONE", 2)
 
 	FixBindings()
 end

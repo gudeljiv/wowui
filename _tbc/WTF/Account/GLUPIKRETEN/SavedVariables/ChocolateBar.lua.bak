@@ -460,11 +460,11 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
-			["gap"] = 0,
-			["fixedStrata"] = true,
-			["desaturated"] = false,
-			["moveFrames"] = false,
 			["fontName"] = "Friz Quadrata TT",
+			["fixedStrata"] = true,
+			["gap"] = 0,
+			["moveFrames"] = false,
+			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["forceColor"] = false,
@@ -554,7 +554,7 @@ CB_PlayedTime = {
 		["total"] = 1,
 	},
 	["Mxyzptlk-Golemagg"] = {
-		["total"] = 24310,
+		["total"] = 25089,
 	},
 	["Judawise-"] = {
 		["total"] = 437,
@@ -608,7 +608,7 @@ CB_PlayedTime = {
 		["total"] = 89354,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 378287,
+		["total"] = 388823,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,

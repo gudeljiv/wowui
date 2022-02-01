@@ -22,7 +22,9 @@ skills = [
     {"name": "sunder armor", "key": "g", "r": 189, "g": 126, "b": 116, "rgb": (189, 126, 116)},
     {"name": "revenge", "key": "1", "r": 205, "g": 195, "b": 195, "rgb": (205, 195, 195)},
     {"name": "execute", "key": "f", "r": 76, "g": 17, "b": 21, "rgb": (76, 17, 21)},
+    {"name": "mortal strike", "key": "f11", "r": 147, "g": 145, "b": 146, "rgb": (147, 145, 146)},
     {"name": "whirlwind", "key": "6", "r": 105, "g": 212, "b": 240, "rgb": (105, 212, 240)}
+    # {"name": "healing potion", "key": "6", "r": 227, "g": 34, "b": 27, "rgb": (227, 34, 27)}
 ]
 
 

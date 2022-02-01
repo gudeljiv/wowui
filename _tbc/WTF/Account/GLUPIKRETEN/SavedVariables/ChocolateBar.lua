@@ -462,14 +462,14 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
-			["desaturated"] = false,
+			["gap"] = 0,
 			["forceColor"] = false,
 			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["gap"] = 0,
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontName"] = "Friz Quadrata TT",
+			["desaturated"] = false,
 			["moveFrames"] = false,
 			["textColor"] = {
 				["a"] = 1,
@@ -560,7 +560,7 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 380732,
+		["total"] = 388911,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,
@@ -611,6 +611,6 @@ CB_PlayedTime = {
 		["total"] = 1789,
 	},
 	["Mxyzptlk-Golemagg"] = {
-		["total"] = 24310,
+		["total"] = 25089,
 	},
 }

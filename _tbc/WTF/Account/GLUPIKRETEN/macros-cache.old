@@ -1,3 +1,7 @@
+VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence Find Herbs,Find Minerals
+END
 VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use Coarse Sharpening Stone
@@ -7,19 +11,15 @@ VER 3 000000000000000E " " "136106"
 /run InspectUnit("target")
 /run SortBags()
 END
-VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/castsequence Find Herbs,Find Minerals
-END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:159
+/use [nocombat]item:1645
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:117
-/castsequence [combat] reset=combat 
+/use [nocombat]item:8952
+/castsequence [combat] reset=combat item:13446
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:3771
