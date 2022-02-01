@@ -13,7 +13,26 @@ TrackingIconFrame:Hide()
 
 local function TrackingIcon()
 	TrackingIconFrame:Hide()
-	local texture = GetTrackingTexture()
+	-- local texture = GetTrackingTexture()
+	local texture
+
+	for i=1,GetNumTrackingTypes() do
+		local n,t,a = GetTrackingInfo(i)
+		if a and (
+			t == 136025 or
+			t == 133939 or
+			t == 135942 or
+			t == 136142 or
+			t == 132328 or
+			t == 132320 or
+			t == 136217 or
+			t == 135861 or
+			t == 134153 or
+			t == 132275
+		) then
+			texture = t
+		end
+	end
 
 	if (texture) then
 		-- Minerals
@@ -133,3 +152,5 @@ MiniMapTracking:HookScript(
 		MiniMapTracking:Hide()
 	end
 )
+
+

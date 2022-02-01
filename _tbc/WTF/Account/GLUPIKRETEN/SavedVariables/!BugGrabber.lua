@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 4495,
+	["session"] = 4509,
 	["errors"] = {
 		{
 			["message"] = "...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua:1867: AceConfigRegistry-3.0-20:ValidateOptionsTable(): AdiBags.args.bags.args.sections.args.columnWidth.args.Backpack.name: expected a string or funcref, got 'false'",
@@ -94,21 +94,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [12]
 		{
-			["message"] = "...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:751: attempt to index local 'color' (a nil value)",
-			["time"] = "2022/01/29 17:15:36",
-			["locals"] = "numBatchAuctions = 54394\ntotalAuctions = 54394\nbutton = BrowseButton2 {\n 0 = <userdata>\n itemCount = 20\n bidAmount = 94981\n buyoutPrice = 99980\n itemIndex = 2\n PriceTooltipFrame = <unnamed> {\n }\n}\nbuttonName = \"BrowseButton2\"\nbuttonHighlight = BrowseButton2Highlight {\n 0 = <userdata>\n}\niconTexture = BrowseButton1ItemIconTexture {\n 0 = <userdata>\n}\nitemName = BrowseButton2Name {\n 0 = <userdata>\n}\ncolor = nil\nitemCount = BrowseButton1ItemCount {\n 0 = <userdata>\n}\nmoneyFrame = BrowseButton1MoneyFrame {\n 0 = <userdata>\n vadjust = 0\n trialErrorButton = BrowseButton1MoneyFrameTrialErrorButton {\n }\n moneyType = \"AUCTION\"\n info = <table> {\n }\n small = 1\n staticMoney = 12999\n maxDisplayWidth = 146\n}\nyourBidText = BrowseButton1YourBidText {\n 0 = <userdata>\n}\nbuyoutFrame = BrowseButton1BuyoutFrame {\n 0 = <userdata>\n}\nbuyoutMoney = BrowseButton1BuyoutFrameMoney {\n 0 = <userdata>\n vadjust = 0\n trialErrorButton = BrowseButton1BuyoutFrameMoneyTrialErrorButton {\n }\n moneyType = \"AUCTION\"\n info = <table> {\n }\n small = 1\n staticMoney = 12999\n maxDisplayWidth = 146\n}\noffset = 0\nindex = 2\nisLastSlotEmpty = nil\nname = \"\"\ntexture = 134492\ncount = 1\nquality = -1\ncanUse = false\nlevel = 286066432\nlevelColHeader = nil\nminBid = 56050\nminIncrement = 0\nbuyoutPrice = 59000\nduration = 1\nbidAmount = 0\nhighBidder = false\nbidderFullName = nil\nowner = nil\nownerFullName = nil\nsaleStatus = 0\nitemId = 19278\nhasAllInfo = true\ndisplayedPrice = 12999\nrequiredBid = 12999\n(for index) = 2\n(for limit) = 8\n(for step) = 1\ni = 2\nshouldHide = false\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = BrowseButton2Name {\n 0 = <userdata>\n}\n(*temporary) = \"\"\n(*temporary) = <userdata>\n(*temporary) = false\n(*temporary) = 286066432\n(*temporary) = nil\n(*temporary) = 56050\n(*temporary) = 0\n(*temporary) = 59000\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 19278\n(*temporary) = true\n(*temporary) = \"attempt to index local 'color' (a nil value)\"\n",
-			["stack"] = "[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:751: in function `AuctionFrameBrowse_Update'\n[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:277: in function <...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:275>",
-			["session"] = 4454,
-			["counter"] = 1,
-		}, -- [13]
-		{
 			["message"] = "Interface\\AddOns\\oUF\\colors-Colors.lua:125: attempt to call global 'GetThreatStatusColor' (a nil value)",
 			["time"] = "2022/01/31 16:12:33",
 			["locals"] = "parent = \"oUF\"\nns = <table> {\n oUF = <table> {\n }\n}\noUF = <table> {\n DisableBlizzard = <function> defined @Interface\\AddOns\\oUF\\blizzard.lua:64\n SetActiveStyle = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:426\n EnableFactory = <function> defined @Interface\\AddOns\\oUF\\factory.lua:50\n SpawnHeader = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:634\n RegisterStyle = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:410\n AddElement = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:856\n Private = <table> {\n }\n Factory = <function> defined @Interface\\AddOns\\oUF\\factory.lua:34\n SpawnNamePlates = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:755\n version = \"devel\"\n RunFactoryQueue = <function> defined @Interface\\AddOns\\oUF\\factory.lua:69\n DisableFactory = <function> defined @Interface\\AddOns\\oUF\\factory.lua:59\n objects = <table> {\n }\n RegisterMetaFunction = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:392\n RegisterInitCallback = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:381\n headers = <table> {\n }\n HandleUnit = <function> defined @Interface\\AddOns\\oUF\\units.lua:166\n GetActiveStyle = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:438\n IterateStyles = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:453\n Spawn = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:726\n}\nPrivate = <table> {\n unitSelectionType = <function> defined @Interface\\AddOns\\oUF\\private.lua:57\n UpdateUnits = <function> defined @Interface\\AddOns\\oUF\\events.lua:30\n argcheck = <function> defined @Interface\\AddOns\\oUF\\private.lua:4\n print = <function> defined @Interface\\AddOns\\oUF\\private.lua:16\n validateUnit = <function> defined @Interface\\AddOns\\oUF\\private.lua:30\n enableTargetUpdate = <function> defined @Interface\\AddOns\\oUF\\ouf.lua:28\n frame_metatable = <table> {\n }\n error = <function> defined @Interface\\AddOns\\oUF\\private.lua:20\n unitExists = <function> defined @Interface\\AddOns\\oUF\\private.lua:24\n}\nframe_metatable = <table> {\n __index = <unnamed> {\n }\n}\ncolors = <table> {\n runes = <table> {\n }\n threat = <table> {\n }\n power = <table> {\n }\n class = <table> {\n }\n disconnected = <table> {\n }\n tapped = <table> {\n }\n health = <table> {\n }\n reaction = <table> {\n }\n debuff = <table> {\n }\n selection = <table> {\n }\n smooth = <table> {\n }\n}\ncustomClassColors = <function> defined @Interface\\AddOns\\oUF\\colors.lua:46\n(for index) = 0\n(for limit) = 3\n(for step) = 1\ni = 0\n(*temporary) = <table> {\n}\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = \"attempt to call global 'GetThreatStatusColor' (a nil value)\"\n",
 			["stack"] = "[string \"@Interface\\AddOns\\oUF\\colors-Colors.lua\"]:125: in main chunk",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [14]
+		}, -- [13]
 		{
 			["message"] = "...e\\AddOns\\oUF\\elements\\pvpclassificationindicator.lua:34: attempt to index field 'PvPUnitClassification' (a nil value)",
 			["time"] = "2022/01/31 16:12:33",
@@ -116,7 +108,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\oUF\\elements\\pvpclassificationindicator.lua\"]:34: in main chunk",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [15]
+		}, -- [14]
 		{
 			["message"] = "Interface\\AddOns\\oUF\\elements\\summonindicator.lua:29: attempt to index field 'SummonStatus' (a nil value)",
 			["time"] = "2022/01/31 16:12:33",
@@ -124,7 +116,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\oUF\\elements\\summonindicator.lua\"]:29: in main chunk",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [16]
+		}, -- [15]
 		{
 			["message"] = "Interface\\AddOns\\oUF_Neav\\core.lua:6: attempt to index field 'colors' (a nil value)",
 			["time"] = "2022/01/31 16:12:33",
@@ -132,7 +124,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\oUF_Neav\\core.lua\"]:6: in main chunk",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [17]
+		}, -- [16]
 		{
 			["message"] = "...id\\modules\\oUF_Freebgrid\\oUF_Freebgrid_AurasList.lua:109: table index is nil",
 			["time"] = "2022/01/31 16:12:33",
@@ -140,7 +132,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\oUF_NeavRaid\\modules\\oUF_Freebgrid\\oUF_Freebgrid_AurasList.lua\"]:109: in main chunk",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [18]
+		}, -- [17]
 		{
 			["message"] = "...avRaid\\modules\\oUF_Freebgrid\\oUF_Freebgrid_Auras.lua:174: Attempt to register unknown event \"PLAYER_SPECIALIZATION_CHANGED\"",
 			["time"] = "2022/01/31 16:12:33",
@@ -148,7 +140,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `RegisterEvent'\n[string \"@Interface\\AddOns\\oUF_NeavRaid\\modules\\oUF_Freebgrid\\oUF_Freebgrid_Auras.lua\"]:174: in main chunk",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [19]
+		}, -- [18]
 		{
 			["message"] = "Interface\\AddOns\\oUF_NeavRaid\\core.lua:17: attempt to index field 'colors' (a nil value)",
 			["time"] = "2022/01/31 16:12:33",
@@ -156,7 +148,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\oUF_NeavRaid\\core.lua\"]:17: in main chunk",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [20]
+		}, -- [19]
 		{
 			["message"] = "Interface\\AddOns\\oUF\\events.lua:134: Attempt to register unknown event \"ARENA_PREP_OPPONENT_SPECIALIZATIONS\"",
 			["time"] = "2022/01/31 16:12:35",
@@ -164,13 +156,13 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\oUF\\events.lua\"]:134: in function `RegisterEvent'\n[string \"@Interface\\AddOns\\oUF\\units.lua\"]:179: in function `HandleUnit'\n[string \"@Interface\\AddOns\\oUF\\ouf-@project-version@.lua\"]:309: in function <Interface\\AddOns\\oUF\\ouf.lua:260>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\oUF\\ouf-@project-version@.lua\"]:737: in function `Spawn'\n[string \"@Interface\\AddOns\\oUF_Neav\\arena-Arena.lua\"]:341: in function `func'\n[string \"@Interface\\AddOns\\oUF\\factory.lua\"]:20: in function <Interface\\AddOns\\oUF\\factory.lua:16>\n[string \"=(tail call)\"]: ?",
 			["session"] = 4468,
 			["counter"] = 1,
-		}, -- [21]
+		}, -- [20]
 		{
 			["message"] = "(null)",
 			["session"] = 4468,
 			["time"] = "2022/01/31 16:12:36",
 			["counter"] = 9,
-		}, -- [22]
+		}, -- [21]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PetActionButton1:Show()'.",
 			["time"] = "2022/02/01 15:25:36",
@@ -178,22 +170,38 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\AddOns\\xVermin\\Addons/nMainBar.lua\"]:89: in function <Interface\\AddOns\\xVermin\\Addons/nMainBar.lua:82>\n[string \"@Interface\\SharedXML\\C_TimerAugment.lua\"]:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
 			["session"] = 4478,
 			["counter"] = 2,
-		}, -- [23]
+		}, -- [22]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_TrackedQuests:ClearAllPoints()'.",
 			["time"] = "2022/02/01 15:08:07",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:610: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:1243: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:1818: in function <...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1817>",
-			["session"] = 4485,
-			["counter"] = 3,
-		}, -- [24]
+			["session"] = 4496,
+			["counter"] = 4,
+		}, -- [23]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
 			["time"] = "2022/01/28 15:02:47",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 4487,
-			["counter"] = 19,
+			["session"] = 4496,
+			["counter"] = 20,
+		}, -- [24]
+		{
+			["message"] = "...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:751: attempt to index local 'color' (a nil value)",
+			["time"] = "2022/01/29 17:15:36",
+			["locals"] = "numBatchAuctions = 54394\ntotalAuctions = 54394\nbutton = BrowseButton2 {\n 0 = <userdata>\n itemCount = 20\n bidAmount = 94981\n buyoutPrice = 99980\n itemIndex = 2\n PriceTooltipFrame = <unnamed> {\n }\n}\nbuttonName = \"BrowseButton2\"\nbuttonHighlight = BrowseButton2Highlight {\n 0 = <userdata>\n}\niconTexture = BrowseButton1ItemIconTexture {\n 0 = <userdata>\n}\nitemName = BrowseButton2Name {\n 0 = <userdata>\n}\ncolor = nil\nitemCount = BrowseButton1ItemCount {\n 0 = <userdata>\n}\nmoneyFrame = BrowseButton1MoneyFrame {\n 0 = <userdata>\n vadjust = 0\n trialErrorButton = BrowseButton1MoneyFrameTrialErrorButton {\n }\n moneyType = \"AUCTION\"\n info = <table> {\n }\n small = 1\n staticMoney = 12999\n maxDisplayWidth = 146\n}\nyourBidText = BrowseButton1YourBidText {\n 0 = <userdata>\n}\nbuyoutFrame = BrowseButton1BuyoutFrame {\n 0 = <userdata>\n}\nbuyoutMoney = BrowseButton1BuyoutFrameMoney {\n 0 = <userdata>\n vadjust = 0\n trialErrorButton = BrowseButton1BuyoutFrameMoneyTrialErrorButton {\n }\n moneyType = \"AUCTION\"\n info = <table> {\n }\n small = 1\n staticMoney = 12999\n maxDisplayWidth = 146\n}\noffset = 0\nindex = 2\nisLastSlotEmpty = nil\nname = \"\"\ntexture = 134492\ncount = 1\nquality = -1\ncanUse = false\nlevel = 286066432\nlevelColHeader = nil\nminBid = 56050\nminIncrement = 0\nbuyoutPrice = 59000\nduration = 1\nbidAmount = 0\nhighBidder = false\nbidderFullName = nil\nowner = nil\nownerFullName = nil\nsaleStatus = 0\nitemId = 19278\nhasAllInfo = true\ndisplayedPrice = 12999\nrequiredBid = 12999\n(for index) = 2\n(for limit) = 8\n(for step) = 1\ni = 2\nshouldHide = false\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = BrowseButton2Name {\n 0 = <userdata>\n}\n(*temporary) = \"\"\n(*temporary) = <userdata>\n(*temporary) = false\n(*temporary) = 286066432\n(*temporary) = nil\n(*temporary) = 56050\n(*temporary) = 0\n(*temporary) = 59000\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 19278\n(*temporary) = true\n(*temporary) = \"attempt to index local 'color' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:751: in function `AuctionFrameBrowse_Update'\n[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:277: in function <...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:275>",
+			["session"] = 4509,
+			["counter"] = 2,
 		}, -- [25]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:399: attempt to compare number with nil",
+			["time"] = "2022/02/01 21:17:52",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n 16 = <table> {\n }\n 17 = <table> {\n }\n 18 = <table> {\n }\n 19 = <table> {\n }\n 20 = <table> {\n }\n 21 = <table> {\n }\n 22 = <table> {\n }\n 23 = <table> {\n }\n 24 = <table> {\n }\n 25 = <table> {\n }\n 26 = <table> {\n }\n 27 = <table> {\n }\n 28 = <table> {\n }\n 29 = <table> {\n }\n 30 = <table> {\n }\n 31 = <table> {\n }\n 32 = <table> {\n }\n 33 = <table> {\n }\n 34 = <table> {\n }\n 35 = <table> {\n }\n 36 = <table> {\n }\n 37 = <table> {\n }\n 38 = <table> {\n }\n 39 = <table> {\n }\n 40 = <table> {\n }\n 41 = <table> {\n }\n 42 = <table> {\n }\n 43 = <table> {\n }\n 44 = <table> {\n }\n 45 = <table> {\n }\n 46 = <table> {\n }\n 47 = <table> {\n }\n 48 = <table> {\n }\n 49 = <table> {\n }\n 50 = <table> {\n }\n 51 = <table> {\n }\n 52 = <table> {\n }\n 53 = <table> {\n }\n 54 = <table> {\n }\n 55 = <table> {\n }\n 56 = <table> {\n }\n 57 = <table> {\n }\n 58 = <table> {\n }\n 59 = <table> {\n }\n 60 = <table> {\n }\n 61 = <table> {\n }\n 62 = <table> {\n }\n 63 = <table> {\n }\n 64 = <table> {\n }\n 65 = <table> {\n }\n 66 = <table> {\n }\n 67 = <table> {\n }\n 68 = <table> {\n }\n 69 = <table> {\n }\n 70 = <table> {\n }\n 71 = <table> {\n }\n 72 = <table> {\n }\n 73 = <table> {\n }\n 74 = <table> {\n }\n 75 = <table> {\n }\n 76 = <table> {\n }\n 77 = <table> {\n }\n 78 = <table> {\n }\n 79 = <table> {\n }\n 80 = <table> {\n }\n 81 = <table> {\n }\n 82 = <table> {\n }\n}\n(for control) = 5\n_ = 5\nsrc = <table> {\n item = \"6948::::1:0\"\n position = 12\n targetCount = 20\n targetItem = \"3771::::1:0\"\n count = 1\n container = 4\n}\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = \"6948::::1:0\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to compare number with nil\"\nmodel = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n 16 = <table> {\n }\n 17 = <table> {\n }\n 18 = <table> {\n }\n 19 = <table> {\n }\n 20 = <table> {\n }\n 21 = <table> {\n }\n 22 = <table> {\n }\n 23 = <table> {\n }\n 24 = <table> {\n }\n 25 = <table> {\n }\n 26 = <table> {\n }\n 27 = <table> {\n }\n 28 = <table> {\n }\n 29 = <table> {\n }\n 30 = <table> {\n }\n 31 = <table> {\n }\n 32 = <table> {\n }\n 33 = <table> {\n }\n 34 = <table> {\n }\n 35 = <table> {\n }\n 36 = <table> {\n }\n 37 = <table> {\n }\n 38 = <table> {\n }\n 39 = <table> {\n }\n 40 = <table> {\n }\n 41 = <table> {\n }\n 42 = <table> {\n }\n 43 = <table> {\n }\n 44 = <table> {\n }\n 45 = <table> {\n }\n 46 = <table> {\n }\n 47 = <table> {\n }\n 48 = <table> {\n }\n 49 = <table> {\n }\n 50 = <table> {\n }\n 51 = <table> {\n }\n 52 = <table> {\n }\n 53 = <table> {\n }\n 54 = <table> {\n }\n 55 = <table> {\n }\n 56 = <table> {\n }\n 57 = <table> {\n }\n 58 = <table> {\n }\n 59 = <table> {\n }\n 60 = <table> {\n }\n 61 = <table> {\n }\n 62 = <table> {\n }\n 63 = <table> {\n }\n 64 = <table> {\n }\n 65 = <table> {\n }\n 66 = <table> {\n }\n 67 = <table> {\n }\n 68 = <table> {\n }\n 69 = <table> {\n }\n 70 = <table> {\n }\n 71 = <table> {\n }\n 72 = <table> {\n }\n 73 = <table> {\n }\n 74 = <table> {\n }\n 75 = <table> {\n }\n 76 = <table> {\n }\n 77 = <table> {\n }\n 78 = <table> {\n }\n 79 = <table> {\n }\n 80 = <table> {\n }\n 81 = <table> {\n }\n 82 = <table> {\n }\n}\nitemStacks = <table> {\n 929::::1:0 = 5\n 3771::::1:0 = 20\n 1710::::1:0 = 5\n 3030::::1:0 = 200\n 1994::::1:0 = 1\n 11362::::1:0 = 1\n 3667::::1:0 = 10\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\SortBags.lua\"]:399: in function `Stack'\n[string \"@Interface\\AddOns\\xVermin\\SortBags.lua\"]:254: in function <Interface\\AddOns\\xVermin\\SortBags.lua:241>",
+			["session"] = 4509,
+			["counter"] = 6,
+		}, -- [26]
 	},
 }
