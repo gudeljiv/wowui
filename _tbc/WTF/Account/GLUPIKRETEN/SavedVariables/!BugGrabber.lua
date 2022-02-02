@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 4509,
+	["session"] = 4513,
 	["errors"] = {
 		{
 			["message"] = "...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua:1867: AceConfigRegistry-3.0-20:ValidateOptionsTable(): AdiBags.args.bags.args.sections.args.columnWidth.args.Backpack.name: expected a string or funcref, got 'false'",
@@ -203,5 +203,13 @@ BugGrabberDB = {
 			["session"] = 4509,
 			["counter"] = 6,
 		}, -- [26]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PickupAction()'.",
+			["time"] = "2022/02/02 09:23:28",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `PickupAction'\n[string \"*:OnDragStart\"]:2: in function <[string \"*:OnDragStart\"]:1>",
+			["session"] = 4511,
+			["counter"] = 1,
+		}, -- [27]
 	},
 }

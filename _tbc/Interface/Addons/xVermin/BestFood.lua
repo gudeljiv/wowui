@@ -24,6 +24,8 @@ local function CreateOrUpdateMacro(macroName, text)
 	end
 end
 
+local NeedsFoodBadly
+
 NeedsFoodBadly = CreateFrame("frame")
 NeedsFoodBadly:RegisterEvent("BAG_UPDATE_DELAYED")
 NeedsFoodBadly:RegisterEvent("PLAYER_REGEN_ENABLED")

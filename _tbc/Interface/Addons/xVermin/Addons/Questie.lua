@@ -1,4 +1,5 @@
 local _, xVermin = ...
+local ib
 
 C_Timer.NewTicker(1, function(self)
 	if Questie_BaseFrame then

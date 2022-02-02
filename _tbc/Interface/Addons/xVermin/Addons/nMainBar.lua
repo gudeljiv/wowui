@@ -1,4 +1,5 @@
 local _, xVermin = ...
+local count
 
 MainMenuExpBar:Hide()
 MainMenuExpBar:HookScript("OnShow", function(self)

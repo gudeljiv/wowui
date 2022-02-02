@@ -1,6 +1,6 @@
 local _, xVermin = ...
 
-function RepositionLootFrames()
+local function RepositionLootFrames()
 	-- if not _G["LootRollMoverAnchor_Frame"] then return end
 	-- if not LRMDB then return end
 	local frame = _G["GroupLootContainer"]

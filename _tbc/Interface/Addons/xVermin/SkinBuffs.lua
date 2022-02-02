@@ -9,6 +9,7 @@ ReplacedDebuffTypeColor["Poison"] = {r = 0.00, g = 0.60, b = 0}
 ReplacedDebuffTypeColor[""] = ReplacedDebuffTypeColor["none"]
 
 local frame, frameBorder, frameCount, color, B_spellId, D_spellId, B_unitCaster, D_unitCaster, petName, targetName, hasPet, isHunterPet
+local frameCooldown, B_spellName, D_spellName
 
 local function SkinTarget()
 	if TargetFrameToT:IsVisible() then

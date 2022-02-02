@@ -17,6 +17,7 @@ LS_TOASTS_GLOBAL_CONFIG = {
 		["Ozrencic - Golemagg"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
 		["Handrmandr - Golemagg"] = "Default",
+		["Vermina - Golemagg"] = "Default",
 		["Pitchwise - Golemagg"] = "Default",
 		["Elohssa - Stonespine"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",

@@ -22,6 +22,7 @@ ChocolateBarDB = {
 		["Ozrencic - Golemagg"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
 		["Handrmandr - Golemagg"] = "Default",
+		["Vermina - Golemagg"] = "Default",
 		["Tukac - Genesis"] = "Default",
 		["Pitchwise - Golemagg"] = "Default",
 		["Elohssa - Stonespine"] = "Default",
@@ -52,30 +53,7 @@ ChocolateBarDB = {
 	["addonVersion"] = "v3.7.7",
 	["profiles"] = {
 		["Default"] = {
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["width"] = 147.000030517578,
-					["autohide"] = false,
-					["barOffy"] = -207.589706420898,
-					["hideBarInCombat"] = false,
-					["barOffx"] = -31.9219512939453,
-				},
-				["ChocolateBar2"] = {
-					["barOffy"] = -256.666748046875,
-					["barPoint"] = "TOPRIGHT",
-					["barName"] = "ChocolateBar2",
-					["align"] = "custom",
-					["barOffx"] = -88.3325424194336,
-					["index"] = 1,
-					["width"] = 147,
-				},
-			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["moveFrames"] = false,
+			["locked"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -86,7 +64,14 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["fixedStrata"] = true,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -459,18 +444,34 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
-			["gap"] = 0,
 			["fontName"] = "Friz Quadrata TT",
-			["forceColor"] = false,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["fixedStrata"] = true,
+			["gap"] = 0,
+			["moveFrames"] = false,
 			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["locked"] = false,
+			["forceColor"] = false,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["width"] = 147.000030517578,
+					["autohide"] = false,
+					["barOffy"] = -207.589706420898,
+					["hideBarInCombat"] = false,
+					["barOffx"] = -31.9219512939453,
+				},
+				["ChocolateBar2"] = {
+					["barOffy"] = -256.666748046875,
+					["barPoint"] = "TOPRIGHT",
+					["barName"] = "ChocolateBar2",
+					["align"] = "custom",
+					["barOffx"] = -88.3325424194336,
+					["index"] = 1,
+					["width"] = 147,
+				},
+			},
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -527,7 +528,7 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 357528,
+		["total"] = 358883,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -547,32 +548,35 @@ CB_PlayedTime = {
 	["Nitwit-Dreadnaught"] = {
 		["total"] = 8735,
 	},
+	["Mxyzptlk-Golemagg"] = {
+		["total"] = 25089,
+	},
 	["Pitchwise-Dreadnaught"] = {
 		["total"] = 140587,
 	},
 	["Handrmandr-Golemagg"] = {
 		["total"] = 1,
 	},
-	["Mxyzptlk-Golemagg"] = {
-		["total"] = 25089,
+	["Battlearm-Golemagg"] = {
+		["total"] = 1789,
 	},
 	["Judawise-"] = {
 		["total"] = 437,
 	},
-	["Battlearm-Golemagg"] = {
-		["total"] = 1789,
-	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 161862,
+		["total"] = 162147,
 	},
-	["Koloman-"] = {
-		["total"] = 129,
+	["Konac-Dreadnaught"] = {
+		["total"] = 89354,
 	},
 	["Korupcija-"] = {
 		["total"] = 21359,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
+	},
+	["Pitchwise-"] = {
+		["total"] = 390,
 	},
 	["Elohssa-"] = {
 		["total"] = 3552,
@@ -595,22 +599,22 @@ CB_PlayedTime = {
 	["Augustin-Golemagg"] = {
 		["total"] = 430801,
 	},
-	["Pitchwise-"] = {
-		["total"] = 390,
-	},
 	["Mxyzptlk-"] = {
 		["total"] = 8794,
 	},
+	["Koloman-"] = {
+		["total"] = 129,
+	},
 	["Grgur-"] = {
 		["total"] = 1248,
-	},
-	["Konac-Dreadnaught"] = {
-		["total"] = 89354,
 	},
 	["Vermin-Golemagg"] = {
 		["total"] = 389048,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,
+	},
+	["Vermina-Golemagg"] = {
+		["total"] = 585,
 	},
 }

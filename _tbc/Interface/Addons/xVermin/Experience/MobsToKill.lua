@@ -3,7 +3,7 @@ local _, xVermin = ...
 local r, g, b, NewXP, hmmm, gained, XPToLVL, num, segment, relperc, r1, r2, g1, g2, b1, b2, PlayerXP, PetExpFrame, PlayerExpFrame, percent, rested, output, pcxp, pmxp, ppercent, MobsToKill
 local timer = time()
 
-MobsToKill = CreateFrame("Frame", "CustomContainer_CombatMobsToKill", CustomContainer_Combat)
+local MobsToKill = CreateFrame("Frame", "CustomContainer_CombatMobsToKill", CustomContainer_Combat)
 MobsToKill:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 0)
 MobsToKill:SetWidth(10)
 MobsToKill:SetHeight(10)
@@ -12,7 +12,7 @@ MobsToKill.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
 MobsToKill.text:SetPoint("RIGHT", CustomContainer_Combat, "RIGHT", -5, -1)
 MobsToKill:Hide()
 
-gainedExperience = CreateFrame("Frame", "CustomContainer_CombatgainedExperience", CustomContainer_Combat)
+local gainedExperience = CreateFrame("Frame", "CustomContainer_CombatgainedExperience", CustomContainer_Combat)
 gainedExperience:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 0)
 gainedExperience:SetWidth(10)
 gainedExperience:SetHeight(10)

@@ -1,6 +1,6 @@
 local _, xVermin = ...
 
-function AutoRepair()
+local function AutoRepair()
 	if (CanMerchantRepair() == true) then
 		local repairAllCost, canRepair = GetRepairAllCost()
 		if (canRepair == true) then

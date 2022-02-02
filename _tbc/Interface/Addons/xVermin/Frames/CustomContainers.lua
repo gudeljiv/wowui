@@ -3,12 +3,12 @@ local _, xVermin = ...
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 -- CUSTOM CONTAINER COMBAT
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-cc = CreateFrame("Frame", "CustomContainer", UIParent)
+local cc = CreateFrame("Frame", "CustomContainer", UIParent)
 cc:SetWidth(110)
 cc:SetHeight(20)
 cc:SetPoint("BOTTOM", UIParent, "BOTTOM", 0, 300)
 
-cc_combat = CreateFrame("Frame", "CustomContainer_Combat", cc, BackdropTemplateMixin and "BackdropTemplate")
+local cc_combat = CreateFrame("Frame", "CustomContainer_Combat", cc, BackdropTemplateMixin and "BackdropTemplate")
 cc_combat:SetWidth(110)
 cc_combat:SetHeight(20)
 cc_combat:SetPoint("LEFT", cc, "LEFT", 0, 0)
@@ -99,7 +99,7 @@ cc:SetWidth(154)
 cc:SetHeight(30)
 cc:SetPoint("TOPRIGHT", "Minimap", "BOTTOMRIGHT", 0, -10)
 
-cc1 = CreateFrame("Frame", "CustomContainer_1", cc, BackdropTemplateMixin and "BackdropTemplate")
+local cc1 = CreateFrame("Frame", "CustomContainer_1", cc, BackdropTemplateMixin and "BackdropTemplate")
 cc1:SetWidth(154)
 cc1:SetHeight(30)
 cc1:SetPoint("LEFT", cc, "LEFT", 0, 0)
@@ -126,7 +126,7 @@ cc:SetWidth(154)
 cc:SetHeight(30)
 cc:SetPoint("TOPRIGHT", cc1, "BOTTOMRIGHT", 0, -10)
 
-cc2 = CreateFrame("Frame", "CustomContainer_2", cc, BackdropTemplateMixin and "BackdropTemplate")
+local cc2 = CreateFrame("Frame", "CustomContainer_2", cc, BackdropTemplateMixin and "BackdropTemplate")
 cc2:SetWidth(154)
 cc2:SetHeight(30)
 cc2:SetPoint("LEFT", cc, "LEFT", 0, 0)
