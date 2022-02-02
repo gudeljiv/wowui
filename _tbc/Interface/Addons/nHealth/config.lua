@@ -7,7 +7,7 @@ nHealth = {
 	showCombatRegen = true, 
 
 	activeAlpha = 0.8,
-	inactiveAlpha = 0.2,
+	inactiveAlpha = 0,
 	emptyAlpha = 0,
 
 	valueAbbrev = true,
