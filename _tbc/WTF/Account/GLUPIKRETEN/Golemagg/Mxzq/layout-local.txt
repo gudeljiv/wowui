@@ -76,13 +76,6 @@ X: 239
 Y: 120
 W: 920
 H: 600
-Frame: nTooltip_Anchor
-FrameLevel: 1
-Anchor: BOTTOMRIGHT
-X: -27
-Y: 27
-W: 50
-H: 50
 Frame: MacroFrame
 FrameLevel: 1
 Anchor: LEFT
@@ -90,6 +83,13 @@ X: 16
 Y: 93
 W: 535
 H: 600
+Frame: nTooltip_Anchor
+FrameLevel: 1
+Anchor: BOTTOMRIGHT
+X: -27
+Y: 27
+W: 50
+H: 50
 Frame: CharacterFrame
 FrameLevel: 1
 Anchor: TOPLEFT

@@ -110,7 +110,7 @@ function NeedsFoodBadly:UpdateMacros()
 	best.healthstone = self:Sorted(best.healthstone, self.BetterHealthstone)
 	best.manaGem = self:Sorted(best.manaGem, self.BetterManaGem)
 	best.bandage = self:Sorted(best.bandage, self.BetterBandage)
-	foodMacro =
+	local foodMacro =
 		defaultFoodMacro:gsub(
 		"<%a+>",
 		{
@@ -120,7 +120,7 @@ function NeedsFoodBadly:UpdateMacros()
 			["<hPotions>"] = self:BuildSequence(best.healthstone, best.hPotion)
 		}
 	)
-	drinkMacro =
+	local drinkMacro =
 		defaultDrinkMacro:gsub(
 		"<%a+>",
 		{
@@ -138,7 +138,7 @@ function NeedsFoodBadly:UpdateMacros()
 	if (UnitExists("pet") and xVermin.Class == "HUNTER") then
 		-- local petType = UnitCreatureFamily("pet")
 
-		petfoodMacro =
+		local petfoodMacro =
 			defaultPetFoodMacro:gsub(
 			"<%a+>",
 			{
@@ -150,7 +150,7 @@ function NeedsFoodBadly:UpdateMacros()
 end
 
 function NeedsFoodBadly:Sorted(t, f)
-	sortedTable = {}
+	local sortedTable = {}
 	for _, v in pairs(t) do
 		table.insert(sortedTable, v)
 	end
@@ -389,7 +389,7 @@ function NeedsFoodBadly:BuildSequence(stone, potions)
 		table.insert(sequence, "item:" .. tostring(potion.id))
 		-- end
 	end
-	sequenceStr = table.concat(sequence, ",", 1, math.min(table.getn(sequence), 14))
+	local sequenceStr = table.concat(sequence, ",", 1, math.min(table.getn(sequence), 14))
 	return sequenceStr
 end
 

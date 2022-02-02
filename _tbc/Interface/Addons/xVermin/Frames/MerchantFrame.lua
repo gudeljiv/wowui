@@ -25,7 +25,7 @@ addonLoadedFrame:SetScript(
 					Skin()
 				end
 			)
-			MerchantItemFrameHooked = true
+			MerchantFrameHooked = true
 		end
 	end
 )

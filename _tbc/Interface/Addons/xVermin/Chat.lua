@@ -177,9 +177,7 @@ local function SetChat()
 			ChatFrame8
 		}
 	) do
-		v.SetPoint = function()
-		end
-
+		v.SetPoint = function() end
 		background = _G[v:GetName() .. "Background"]
 		
 		if (v:GetName() == "ChatFrame7" or v:GetName() == "ChatFrame8") then
@@ -202,26 +200,20 @@ local function SetChat()
 		local MinimizeButton = _G[v:GetName() .. "ButtonFrameMinimizeButton"]
 
 		UpButton:Hide()
-		UpButton.Show = function()
-		end
+		UpButton.Show = function() end
 
 		DownButton:Hide()
-		DownButton.Show = function()
-		end
+		DownButton.Show = function() end
 
 		MinimizeButton:Hide()
-		DownButton.Show = function()
-		end
+		DownButton.Show = function() end
 
 		BottomButton:ClearAllPoints()
 		BottomButton:SetPoint("BOTTOMRIGHT", v, "BOTTOMRIGHT", 0, -5)
 		BottomButton:SetScale(0.7)
-		BottomButton.SetPoint = function()
-		end
-		BottomButton.Hide = function()
-		end
-		BottomButton.SetScale = function()
-		end
+		BottomButton.SetPoint = function() end
+		BottomButton.Hide = function() end
+		BottomButton.SetScale = function() end
 
 		v:EnableMouse(false)
 	end

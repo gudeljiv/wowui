@@ -2,6 +2,7 @@ local _, xVermin = ...
 
 local size = 125
 local scale = 1.4
+local MaxXP, CurrentXP, percent, r, g, b
 
 local PlayerXP = CreateFrame("Frame", "PlayerXPFrame", UIParent)
 PlayerXP:SetScale(scale)

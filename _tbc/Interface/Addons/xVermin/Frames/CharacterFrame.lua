@@ -50,7 +50,7 @@ local function BorderItemSlots()
 
 		itemLink = GetInventoryItemLink("player", GetInventorySlotInfo(v:GetName():gsub("Character", "")))
 		if (itemLink) then
-			_, _, itemRarity = GetItemInfo(itemLink)
+			local _, _, itemRarity = GetItemInfo(itemLink)
 			if (itemRarity and itemRarity > 1) then
 				r, g, b = GetItemQualityColor(itemRarity)
 				v:SetBeautyBorderTexture(xVermin.Config.border.colorize)

@@ -136,9 +136,9 @@ function xVermin:ColorGradient(perc, ...)
 		return r, g, b
 	end
 
-	num = select("#", ...) / 3
-	segment, relperc = math.modf(perc * (num - 1))
-	r1, g1, b1, r2, g2, b2 = select((segment * 3) + 1, ...)
+	local num = select("#", ...) / 3
+	local segment, relperc = math.modf(perc * (num - 1))
+	local r1, g1, b1, r2, g2, b2 = select((segment * 3) + 1, ...)
 	return r1 + (r2 - r1) * relperc, g1 + (g2 - g1) * relperc, b1 + (b2 - b1) * relperc
 end
 

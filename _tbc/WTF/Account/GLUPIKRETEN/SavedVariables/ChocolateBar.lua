@@ -37,8 +37,8 @@ ChocolateBarDB = {
 		["Nitwit - Dreadnaught"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
@@ -54,6 +54,9 @@ ChocolateBarDB = {
 	["profiles"] = {
 		["Default"] = {
 			["locked"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -84,13 +87,7 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -379,13 +376,6 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
-				["Details!"] = {
-					["index"] = 3,
-					["align"] = "center",
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
-					["widthBehavior"] = "free",
-				},
 				["TradeSkillMaster"] = {
 					["index"] = 4,
 					["isNew"] = false,
@@ -394,6 +384,13 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar2",
 					["showText"] = false,
 					["customLabel"] = "TSM",
+				},
+				["Details!"] = {
+					["index"] = 3,
+					["align"] = "center",
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["widthBehavior"] = "free",
 				},
 				["kRestack"] = {
 					["index"] = 3,
@@ -464,14 +461,17 @@ ChocolateBarDB = {
 				},
 			},
 			["gap"] = 0,
-			["forceColor"] = false,
-			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["desaturated"] = false,
+			["moveFrames"] = false,
 			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["desaturated"] = false,
-			["moveFrames"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+			["forceColor"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -528,7 +528,7 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 358883,
+		["total"] = 359961,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -609,7 +609,7 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 162147,
+		["total"] = 162577,
 	},
 	["Battlearm-Golemagg"] = {
 		["total"] = 1789,
