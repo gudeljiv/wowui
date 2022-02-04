@@ -90,13 +90,13 @@ end
 
 local function UpdateBarVisibility()
 	if not TargetFrame:IsShown() or UnitIsDeadOrGhost("target") then
-		f.Health:SetAlpha(0.3)
+		f.Health:SetAlpha(nHealth.noTargetAlpha)
 	elseif (InCombatLockdown()) then
-		securecall("UIFrameFadeIn", f.Health, 0.3, f.Health:GetAlpha(), nHealth.activeAlpha)
+		securecall("UIFrameFadeIn", f.Health, nHealth.noTargetAlpha, f.Health:GetAlpha(), nHealth.activeAlpha)
 	elseif (not InCombatLockdown() and UnitHealth("target") > 0) then
-		securecall("UIFrameFadeOut", f.Health, 0.3, f.Health:GetAlpha(), nHealth.inactiveAlpha)
+		securecall("UIFrameFadeOut", f.Health, nHealth.noTargetAlpha, f.Health:GetAlpha(), nHealth.inactiveAlpha)
 	else
-		securecall("UIFrameFadeOut", f.Health, 0.3, f.Health:GetAlpha(), nHealth.emptyAlpha)
+		securecall("UIFrameFadeOut", f.Health, nHealth.noTargetAlpha, f.Health:GetAlpha(), nHealth.emptyAlpha)
 	end
 end
 

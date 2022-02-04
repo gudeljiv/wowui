@@ -22,9 +22,9 @@ VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 /castsequence [combat] reset=combat item:1710,item:929
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:3667
 /cast feed pet
-/use item:0
+/use item:3667
 END
 VER 3 000000000000000B "TEST" "132089"
 /run print(UnitCastingInfo("target"))

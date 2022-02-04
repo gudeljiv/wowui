@@ -216,7 +216,7 @@ local function CreateWidgetFrame(extended)
 
 		-- Target-Of Text
 		frame.TargetText = frame:CreateFontString(nil, "OVERLAY")
-		frame.TargetText:SetFont(font, 8, "OUTLINE")
+		frame.TargetText:SetFont(font, 7, "OUTLINE")
 		--frame.TargetText:SetShadowOffset(1, -1)
 		--frame.TargetText:SetShadowColor(0,0,0,1)
 		frame.TargetText:SetWidth(50)
@@ -227,7 +227,7 @@ local function CreateWidgetFrame(extended)
 		--]]
 		-- [[ Text on side
 		frame.TargetText:SetJustifyH("RIGHT")
-		frame.TargetText:SetPoint("RIGHT",frame.Line,"LEFT", -5, 2)
+		frame.TargetText:SetPoint("RIGHT",frame.Line,"LEFT", -4, 1)
 		--]]
 		-- Mechanics/Setup
 		frame.FadeLater = FadeLater
