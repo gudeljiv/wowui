@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 4534,
+	["session"] = 4538,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -216,8 +216,8 @@ BugGrabberDB = {
 			["time"] = "2022/02/05 18:24:12",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\FrameXML\\CompactUnitFrame.lua\"]:359: in function `CompactUnitFrame_UpdateVisible'\n[string \"@Interface\\FrameXML\\CompactUnitFrame.lua\"]:292: in function `CompactUnitFrame_UpdateAll'\n[string \"@Interface\\FrameXML\\CompactUnitFrame.lua\"]:125: in function <Interface\\FrameXML\\CompactUnitFrame.lua:53>",
-			["session"] = 4532,
-			["counter"] = 1,
+			["session"] = 4538,
+			["counter"] = 2,
 		}, -- [28]
 	},
 }

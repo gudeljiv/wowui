@@ -28,7 +28,6 @@ C_Timer.NewTicker(1, function(self)
 
 				TomTomCrazyArrow:SetPoint("TOPRIGHT", self, "TOPLEFT", -20, -10)
 
-
 				for i = 1, 32 do
 					ib = _G["Questie_ItemButton" .. i]
 					if ib then ib:CreateBeautyBorder(6) end
