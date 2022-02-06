@@ -60,12 +60,6 @@ __DEJUNK_SAVED_VARIABLES__ = {
 			},
 			["version"] = 3,
 		},
-		["Pitchwise-Dreadnaught"] = {
-			["version"] = 3,
-		},
-		["Handrmandr-Golemagg"] = {
-			["version"] = 3,
-		},
 		["Default"] = {
 			["destroy"] = {
 				["autoOpen"] = {
@@ -97,17 +91,17 @@ __DEJUNK_SAVED_VARIABLES__ = {
 					["5516"] = true,
 					["11387"] = true,
 					["9334"] = true,
-					["5125"] = true,
-					["3676"] = true,
 					["1520"] = true,
+					["3676"] = true,
+					["5125"] = true,
 					["9242"] = true,
 					["2608"] = true,
 					["4775"] = true,
 					["4877"] = true,
 					["5120"] = true,
 					["4555"] = true,
-					["1509"] = true,
 					["6300"] = true,
+					["1509"] = true,
 					["5115"] = true,
 					["5268"] = true,
 					["5466"] = true,
@@ -221,6 +215,12 @@ __DEJUNK_SAVED_VARIABLES__ = {
 				},
 				["safeMode"] = false,
 			},
+			["version"] = 3,
+		},
+		["Pitchwise-Dreadnaught"] = {
+			["version"] = 3,
+		},
+		["Handrmandr-Golemagg"] = {
 			["version"] = 3,
 		},
 		["Konac-Dreadnaught"] = {

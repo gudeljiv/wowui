@@ -37,13 +37,13 @@ ChocolateBarDB = {
 		["Vermins - Stonespine"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Judawise - Golemagg"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
@@ -73,10 +73,6 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["moveFrames"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -87,7 +83,9 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["fixedStrata"] = true,
+			["forceColor"] = false,
+			["locked"] = false,
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -369,13 +367,6 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "R",
 				},
-				["Details!"] = {
-					["widthBehavior"] = "free",
-					["align"] = "center",
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
-					["index"] = 3,
-				},
 				["TradeSkillMaster"] = {
 					["index"] = 4,
 					["isNew"] = false,
@@ -384,6 +375,13 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar2",
 					["showIcon"] = false,
 					["customLabel"] = "TSM",
+				},
+				["Details!"] = {
+					["widthBehavior"] = "free",
+					["align"] = "center",
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["index"] = 3,
 				},
 				["GatherMate2"] = {
 					["enabled"] = false,
@@ -460,18 +458,20 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
 			["desaturated"] = false,
-			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
 			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["locked"] = false,
+			["fontName"] = "Friz Quadrata TT",
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -528,7 +528,7 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 369582,
+		["total"] = 378264,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -564,7 +564,7 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 163373,
+		["total"] = 163415,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,
