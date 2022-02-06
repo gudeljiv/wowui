@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 4538,
+	["session"] = 4542,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -216,8 +216,32 @@ BugGrabberDB = {
 			["time"] = "2022/02/05 18:24:12",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\FrameXML\\CompactUnitFrame.lua\"]:359: in function `CompactUnitFrame_UpdateVisible'\n[string \"@Interface\\FrameXML\\CompactUnitFrame.lua\"]:292: in function `CompactUnitFrame_UpdateAll'\n[string \"@Interface\\FrameXML\\CompactUnitFrame.lua\"]:125: in function <Interface\\FrameXML\\CompactUnitFrame.lua:53>",
-			["session"] = 4538,
-			["counter"] = 2,
+			["session"] = 4539,
+			["counter"] = 3,
 		}, -- [28]
+		{
+			["message"] = "Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:1407: attempt to call method 'SetBackdrop' (a nil value)",
+			["time"] = "2022/02/06 22:20:33",
+			["locals"] = "parent = <unnamed> {\n 0 = <userdata>\n controls = <table> {\n }\n}\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n bgFile = \"Interface\\Addons\\MSBTOptions\\Artwork\\PlainBackdrop\"\n insets = <table> {\n }\n edgeFile = \"Interface\\Tooltips\\UI-Tooltip-Border\"\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\ndropdownListboxFrame = <unnamed> {\n 0 = <userdata>\n}\nCreateListbox = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:510\nDropdown_CreateLine = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:1178\nDropdown_DisplayLine = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:1193\nDropdown_OnClickLine = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:1203\n",
+			["stack"] = "[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua\"]:1407: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:1402>\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua\"]:1430: in function `CreateDropdown'\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua\"]:868: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua:808>\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua\"]:1109: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua:1108>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsMain.lua\"]:297: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsMain.lua:154>\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsMain.lua\"]:309: in function `ShowMainFrame'\n[string \"@Interface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua\"]:1654: in function <...rface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua:1639>\n[string \"@Interface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua\"]:2132: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4540,
+			["counter"] = 1,
+		}, -- [29]
+		{
+			["message"] = "Interface\\AddOns\\MSBTOptions\\MSBTOptionsPopups.lua:127: attempt to call method 'SetBackdrop' (a nil value)",
+			["time"] = "2022/02/06 22:20:40",
+			["locals"] = "frame = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n bgFile = \"Interface\\Addons\\MSBTOptions\\Artwork\\PlainBackdrop\"\n insets = <table> {\n }\n edgeFile = \"Interface\\Tooltips\\UI-Tooltip-Border\"\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\npopupBackdrop = <table> {\n bgFile = \"Interface\\Addons\\MSBTOptions\\Artwork\\PlainBackdrop\"\n insets = <table> {\n }\n edgeFile = \"Interface\\Tooltips\\UI-Tooltip-Border\"\n}\nOnHidePopup = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsPopups.lua:109\n",
+			["stack"] = "[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsPopups.lua\"]:127: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsPopups.lua:118>\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsPopups.lua\"]:1609: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsPopups.lua:1608>\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsPopups.lua\"]:1946: in function `ShowScrollAreaConfig'\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua\"]:1418: in function `clickHandler'\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua\"]:780: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:778>",
+			["session"] = 4540,
+			["counter"] = 1,
+		}, -- [30]
+		{
+			["message"] = "Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:1063: attempt to call method 'SetBackdrop' (a nil value)",
+			["time"] = "2022/02/06 22:25:36",
+			["locals"] = "parent = <unnamed> {\n 0 = <userdata>\n controls = <table> {\n }\n}\nslider = <unnamed> {\n 0 = <userdata>\n}\nsliderFrame = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n bgFile = \"Interface\\Buttons\\UI-SliderBar-Background\"\n tileSize = 8\n edgeFile = \"Interface\\Buttons\\UI-SliderBar-Border\"\n tile = true\n edgeSize = 8\n insets = <table> {\n }\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\nsliderBackdrop = <table> {\n bgFile = \"Interface\\Buttons\\UI-SliderBar-Background\"\n tileSize = 8\n edgeFile = \"Interface\\Buttons\\UI-SliderBar-Border\"\n tile = true\n edgeSize = 8\n insets = <table> {\n }\n}\nSlider_OnValueChanged = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:918\nSlider_OnEnter = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:932\nSlider_OnLeave = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:943\nSlider_Configure = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:972\nSlider_SetLabel = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:951\nSlider_SetTooltip = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:964\nSlider_SetValueChangedHandler = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:983\nSlider_SetMinMaxValues = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:991\nSlider_SetValueStep = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:999\nSlider_GetValue = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:1007\nSlider_SetValue = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:1015\nSlider_Enable = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:1032\nSlider_Disable = <function> defined @Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:1023\n",
+			["stack"] = "[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua\"]:1063: in function `CreateSlider'\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua\"]:945: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua:808>\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua\"]:1109: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua:1108>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsMain.lua\"]:297: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsMain.lua:154>\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsMain.lua\"]:309: in function `ShowMainFrame'\n[string \"@Interface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua\"]:1654: in function <...rface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua:1639>\n[string \"@Interface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua\"]:2132: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4541,
+			["counter"] = 1,
+		}, -- [31]
 	},
 }

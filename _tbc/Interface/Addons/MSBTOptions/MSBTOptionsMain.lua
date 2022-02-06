@@ -86,7 +86,7 @@ end
 -- Called by listbox to create a line for the tabs on the left.
 -- ****************************************************************************
 local function CreateTabLine(this)
-	local frame = CreateFrame("Button", nil, this)
+	local frame = CreateFrame("Button", nil, this, BackdropTemplateMixin and "BackdropTemplate")
 
 	local fontString = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
 	fontString:SetPoint("LEFT", frame, "LEFT")
@@ -153,7 +153,7 @@ end
 -- ****************************************************************************
 local function CreateMainFrame()
 	-- Main frame.
-	mainFrame = CreateFrame("Frame", "MSBTMainOptionsFrame", UIParent)
+	mainFrame = CreateFrame("Frame", "MSBTMainOptionsFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 	mainFrame:EnableMouse(true)
 	mainFrame:SetMovable(true)
 	mainFrame:RegisterForDrag("LeftButton")

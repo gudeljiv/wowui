@@ -116,7 +116,7 @@ end
 -- Creates a new generic popup.
 -- ****************************************************************************
 local function CreatePopup()
-	local frame = CreateFrame("Frame", nil, UIParent)
+	local frame = CreateFrame("Frame", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate")
 	frame:Hide()
 	frame:EnableMouse(true)
 	frame:SetMovable(true)
@@ -525,7 +525,7 @@ local function CreateFontPopup()
 
 
 	-- Normal container frame.
-	local normalFrame = CreateFrame("Frame", nil, frame)
+	local normalFrame = CreateFrame("Frame", nil, frame, BackdropTemplateMixin and "BackdropTemplate")
 	normalFrame:SetWidth(195)
 	normalFrame:SetPoint("TOPLEFT", frame, "TOPLEFT", 20, -60)
 	normalFrame:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", 20, 40)
@@ -533,7 +533,7 @@ local function CreateFontPopup()
 
 
 	-- Normal controls container frame.
-	local normalControlsFrame = CreateFrame("Frame", nil, normalFrame)
+	local normalControlsFrame = CreateFrame("Frame", nil, normalFrame, BackdropTemplateMixin and "BackdropTemplate")
 	normalControlsFrame:SetWidth(155)
 	normalControlsFrame:SetPoint("TOPLEFT")
 	normalControlsFrame:SetPoint("BOTTOMLEFT")
@@ -604,7 +604,7 @@ local function CreateFontPopup()
 
 
 	-- Normal inherit container frame.
-	local normalInheritFrame = CreateFrame("Frame", nil, normalFrame)
+	local normalInheritFrame = CreateFrame("Frame", nil, normalFrame, BackdropTemplateMixin and "BackdropTemplate")
 	normalInheritFrame:SetWidth(40)
 	normalInheritFrame:SetPoint("TOPLEFT", normalControlsFrame, "TOPRIGHT")
 	normalInheritFrame:SetPoint("BOTTOMLEFT", normalControlsFrame, "BOTTOMRIGHT")
@@ -668,7 +668,7 @@ local function CreateFontPopup()
 
 
 	-- Crit container frame.
-	local critFrame = CreateFrame("Frame", nil, frame)
+	local critFrame = CreateFrame("Frame", nil, frame, BackdropTemplateMixin and "BackdropTemplate")
 	critFrame:SetWidth(195)
 	critFrame:SetPoint("TOPRIGHT", frame, "TOPRIGHT", -20, -60)
 	critFrame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -20, 40)
@@ -676,7 +676,7 @@ local function CreateFontPopup()
 
 
 	-- Crit controls container frame.
-	local critControlsFrame = CreateFrame("Frame", nil, critFrame)
+	local critControlsFrame = CreateFrame("Frame", nil, critFrame, BackdropTemplateMixin and "BackdropTemplate")
 	critControlsFrame:SetWidth(155)
 	critControlsFrame:SetPoint("TOPLEFT")
 	critControlsFrame:SetPoint("BOTTOMLEFT")
@@ -747,7 +747,7 @@ local function CreateFontPopup()
 
 
 	-- Crit inherit container frame.
-	local critInheritFrame = CreateFrame("Frame", nil, critFrame)
+	local critInheritFrame = CreateFrame("Frame", nil, critFrame, BackdropTemplateMixin and "BackdropTemplate")
 	critInheritFrame:SetWidth(40)
 	critInheritFrame:SetPoint("TOPLEFT", critControlsFrame, "TOPRIGHT")
 	critInheritFrame:SetPoint("BOTTOMLEFT", critControlsFrame, "BOTTOMRIGHT")
@@ -1540,7 +1540,7 @@ local function CreateScrollAreaMoverFrame(scrollArea)
 	local moverFrames = popupFrames.scrollAreaConfigFrame.moverFrames
 
 	if (not moverFrames[scrollArea]) then
-		local frame = CreateFrame("FRAME", nil, UIParent)
+		local frame = CreateFrame("FRAME", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		frame:Hide()
 		frame:SetMovable(true)
 		frame:EnableMouse(true)
@@ -2668,7 +2668,7 @@ end
 -- ****************************************************************************
 local function CreateMainEventConditionsLine(this)
 	local controls = popupFrames.mainEventFrame.controls
-	local frame = CreateFrame("Button", nil, this)
+	local frame = CreateFrame("Button", nil, this, BackdropTemplateMixin and "BackdropTemplate")
 	frame:EnableMouse(false)
 
 	-- Edit condition button.
@@ -3041,7 +3041,7 @@ end
 -- ****************************************************************************
 local function CreateMainEventsLine(this)
 	local controls = popupFrames.triggerFrame.controls
-	local frame = CreateFrame("Button", nil, this)
+	local frame = CreateFrame("Button", nil, this, BackdropTemplateMixin and "BackdropTemplate")
 	frame:EnableMouse(false)
 
 	-- Edit event button.
@@ -3079,7 +3079,7 @@ end
 -- ****************************************************************************
 local function CreateExceptionsLine(this)
 	local controls = popupFrames.triggerFrame.controls
-	local frame = CreateFrame("Button", nil, this)
+	local frame = CreateFrame("Button", nil, this, BackdropTemplateMixin and "BackdropTemplate")
 	frame:EnableMouse(false)
 
 	-- Edit exception button.
@@ -3750,7 +3750,7 @@ end
 -- ****************************************************************************
 local function CreateItemListLine(this)
 	local controls = popupFrames.itemListFrame.controls
-	local frame = CreateFrame("Button", nil, this)
+	local frame = CreateFrame("Button", nil, this, BackdropTemplateMixin and "BackdropTemplate")
 	frame:EnableMouse(false)
 
 	-- Delete item button.
@@ -3972,7 +3972,7 @@ end
 -- ****************************************************************************
 local function CreateSkillListLine(this)
 	local controls = popupFrames.skillListFrame.controls
-	local frame = CreateFrame("Button", nil, this)
+	local frame = CreateFrame("Button", nil, this, BackdropTemplateMixin and "BackdropTemplate")
 	frame:EnableMouse(false)
 
 	-- Delete skill button.
