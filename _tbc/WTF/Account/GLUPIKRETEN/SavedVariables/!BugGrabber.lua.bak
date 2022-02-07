@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 4538,
 	["lastSanitation"] = 3,
+	["session"] = 4539,
 	["errors"] = {
 		{
 			["message"] = "...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua:1867: AceConfigRegistry-3.0-20:ValidateOptionsTable(): AdiBags.args.bags.args.sections.args.columnWidth.args.Backpack.name: expected a string or funcref, got 'false'",
@@ -159,8 +159,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/01/31 16:12:36",
 			["session"] = 4468,
+			["time"] = "2022/01/31 16:12:36",
 			["counter"] = 9,
 		}, -- [21]
 		{
@@ -216,8 +216,8 @@ BugGrabberDB = {
 			["time"] = "2022/02/05 18:24:12",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\FrameXML\\CompactUnitFrame.lua\"]:359: in function `CompactUnitFrame_UpdateVisible'\n[string \"@Interface\\FrameXML\\CompactUnitFrame.lua\"]:292: in function `CompactUnitFrame_UpdateAll'\n[string \"@Interface\\FrameXML\\CompactUnitFrame.lua\"]:125: in function <Interface\\FrameXML\\CompactUnitFrame.lua:53>",
-			["session"] = 4538,
-			["counter"] = 2,
+			["session"] = 4539,
+			["counter"] = 3,
 		}, -- [28]
 	},
 }
