@@ -1,0 +1,20 @@
+
+xKillCount = {
+	["show"] = true,
+	["killLog"] = {
+		["Scorpid Worker"] = {
+			["name"] = "Scorpid Worker",
+			["count"] = 1,
+		},
+		["Mottled Boar"] = {
+			["name"] = "Mottled Boar",
+			["count"] = 8,
+		},
+	},
+	["position"] = {
+		["y"] = 103.201644897461,
+		["x"] = 441.982574462891,
+		["to"] = "LEFT",
+		["from"] = "LEFT",
+	},
+}

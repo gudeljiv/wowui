@@ -1,0 +1,7 @@
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+nPower: disabled
+Immersion: disabled
+AdiBags: enabled
+AdiBags_Config: enabled
+Sorted: disabled
