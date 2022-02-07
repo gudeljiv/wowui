@@ -1,5 +1,0 @@
-
-NeatPlatesWidgetSettings = {
-	["RaidTankList"] = {
-	},
-}

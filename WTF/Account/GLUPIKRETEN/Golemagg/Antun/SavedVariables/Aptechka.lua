@@ -1,3 +1,0 @@
-
-AptechkaDB_Char = {
-}

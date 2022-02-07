@@ -1,3 +1,0 @@
-TownsfolkTracker: disabled
-nHealth: enabled
-nPower: enabled
