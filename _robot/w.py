@@ -12,6 +12,8 @@ debug = False
 
 x = 1280
 y = 860
+x_RotationFrame = 1210
+y_RotationFrame = 1100
 
 skills = [
     {"name": "rend", "key": "5", "r": 79, "g": 2, "b": 0, "rgb": (79, 2, 0)},
@@ -47,12 +49,11 @@ with keyboard.Listener(on_press=on_press) as listener:
 
         active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
-        # if pyautogui.pixel(1210, 1100)[0] == 0 and pyautogui.pixel(1210, 1100)[1] == 254 and pyautogui.pixel(1210, 1100)[2] == 0:
-
-        if pyautogui.pixel(1210, 1100) == (255, 254, 255):
+        # ako je chat otvoren.. ili nesto trece... ako je kockica bijela
+        if pyautogui.pixel(x_RotationFrame, y_RotationFrame) == (255, 254, 255):
             continue
 
-        if pyautogui.pixel(1210, 1100) == (0, 254, 0):
+        if pyautogui.pixel(x_RotationFrame, y_RotationFrame) == (0, 254, 0):
             aoe = False
         else:
             aoe = True

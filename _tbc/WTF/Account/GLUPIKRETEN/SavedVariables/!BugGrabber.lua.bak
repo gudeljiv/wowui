@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 4544,
+	["session"] = 4550,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -172,21 +172,13 @@ BugGrabberDB = {
 			["counter"] = 4,
 		}, -- [22]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
-			["time"] = "2022/01/28 15:02:47",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 4496,
-			["counter"] = 20,
-		}, -- [23]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:399: attempt to compare number with nil",
 			["time"] = "2022/02/01 21:17:52",
 			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n 16 = <table> {\n }\n 17 = <table> {\n }\n 18 = <table> {\n }\n 19 = <table> {\n }\n 20 = <table> {\n }\n 21 = <table> {\n }\n 22 = <table> {\n }\n 23 = <table> {\n }\n 24 = <table> {\n }\n 25 = <table> {\n }\n 26 = <table> {\n }\n 27 = <table> {\n }\n 28 = <table> {\n }\n 29 = <table> {\n }\n 30 = <table> {\n }\n 31 = <table> {\n }\n 32 = <table> {\n }\n 33 = <table> {\n }\n 34 = <table> {\n }\n 35 = <table> {\n }\n 36 = <table> {\n }\n 37 = <table> {\n }\n 38 = <table> {\n }\n 39 = <table> {\n }\n 40 = <table> {\n }\n 41 = <table> {\n }\n 42 = <table> {\n }\n 43 = <table> {\n }\n 44 = <table> {\n }\n 45 = <table> {\n }\n 46 = <table> {\n }\n 47 = <table> {\n }\n 48 = <table> {\n }\n 49 = <table> {\n }\n 50 = <table> {\n }\n 51 = <table> {\n }\n 52 = <table> {\n }\n 53 = <table> {\n }\n 54 = <table> {\n }\n 55 = <table> {\n }\n 56 = <table> {\n }\n 57 = <table> {\n }\n 58 = <table> {\n }\n 59 = <table> {\n }\n 60 = <table> {\n }\n 61 = <table> {\n }\n 62 = <table> {\n }\n 63 = <table> {\n }\n 64 = <table> {\n }\n 65 = <table> {\n }\n 66 = <table> {\n }\n 67 = <table> {\n }\n 68 = <table> {\n }\n 69 = <table> {\n }\n 70 = <table> {\n }\n 71 = <table> {\n }\n 72 = <table> {\n }\n 73 = <table> {\n }\n 74 = <table> {\n }\n 75 = <table> {\n }\n 76 = <table> {\n }\n 77 = <table> {\n }\n 78 = <table> {\n }\n 79 = <table> {\n }\n 80 = <table> {\n }\n 81 = <table> {\n }\n 82 = <table> {\n }\n}\n(for control) = 5\n_ = 5\nsrc = <table> {\n item = \"6948::::1:0\"\n position = 12\n targetCount = 20\n targetItem = \"3771::::1:0\"\n count = 1\n container = 4\n}\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = \"6948::::1:0\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to compare number with nil\"\nmodel = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n 16 = <table> {\n }\n 17 = <table> {\n }\n 18 = <table> {\n }\n 19 = <table> {\n }\n 20 = <table> {\n }\n 21 = <table> {\n }\n 22 = <table> {\n }\n 23 = <table> {\n }\n 24 = <table> {\n }\n 25 = <table> {\n }\n 26 = <table> {\n }\n 27 = <table> {\n }\n 28 = <table> {\n }\n 29 = <table> {\n }\n 30 = <table> {\n }\n 31 = <table> {\n }\n 32 = <table> {\n }\n 33 = <table> {\n }\n 34 = <table> {\n }\n 35 = <table> {\n }\n 36 = <table> {\n }\n 37 = <table> {\n }\n 38 = <table> {\n }\n 39 = <table> {\n }\n 40 = <table> {\n }\n 41 = <table> {\n }\n 42 = <table> {\n }\n 43 = <table> {\n }\n 44 = <table> {\n }\n 45 = <table> {\n }\n 46 = <table> {\n }\n 47 = <table> {\n }\n 48 = <table> {\n }\n 49 = <table> {\n }\n 50 = <table> {\n }\n 51 = <table> {\n }\n 52 = <table> {\n }\n 53 = <table> {\n }\n 54 = <table> {\n }\n 55 = <table> {\n }\n 56 = <table> {\n }\n 57 = <table> {\n }\n 58 = <table> {\n }\n 59 = <table> {\n }\n 60 = <table> {\n }\n 61 = <table> {\n }\n 62 = <table> {\n }\n 63 = <table> {\n }\n 64 = <table> {\n }\n 65 = <table> {\n }\n 66 = <table> {\n }\n 67 = <table> {\n }\n 68 = <table> {\n }\n 69 = <table> {\n }\n 70 = <table> {\n }\n 71 = <table> {\n }\n 72 = <table> {\n }\n 73 = <table> {\n }\n 74 = <table> {\n }\n 75 = <table> {\n }\n 76 = <table> {\n }\n 77 = <table> {\n }\n 78 = <table> {\n }\n 79 = <table> {\n }\n 80 = <table> {\n }\n 81 = <table> {\n }\n 82 = <table> {\n }\n}\nitemStacks = <table> {\n 929::::1:0 = 5\n 3771::::1:0 = 20\n 1710::::1:0 = 5\n 3030::::1:0 = 200\n 1994::::1:0 = 1\n 11362::::1:0 = 1\n 3667::::1:0 = 10\n}\n",
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\SortBags.lua\"]:399: in function `Stack'\n[string \"@Interface\\AddOns\\xVermin\\SortBags.lua\"]:254: in function <Interface\\AddOns\\xVermin\\SortBags.lua:241>",
 			["session"] = 4509,
 			["counter"] = 6,
-		}, -- [24]
+		}, -- [23]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PickupAction()'.",
 			["time"] = "2022/02/02 09:23:28",
@@ -194,7 +186,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `PickupAction'\n[string \"*:OnDragStart\"]:2: in function <[string \"*:OnDragStart\"]:1>",
 			["session"] = 4511,
 			["counter"] = 1,
-		}, -- [25]
+		}, -- [24]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PetActionButton1:Show()'.",
 			["time"] = "2022/02/01 15:25:36",
@@ -202,7 +194,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\AddOns\\xVermin\\Addons/nMainBar.lua\"]:89: in function <Interface\\AddOns\\xVermin\\Addons/nMainBar.lua:82>\n[string \"@Interface\\SharedXML\\C_TimerAugment.lua\"]:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
 			["session"] = 4527,
 			["counter"] = 4,
-		}, -- [26]
+		}, -- [25]
 		{
 			["message"] = "...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:751: attempt to index local 'color' (a nil value)",
 			["time"] = "2022/01/29 17:15:36",
@@ -210,7 +202,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:751: in function `AuctionFrameBrowse_Update'\n[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:277: in function <...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:275>",
 			["session"] = 4529,
 			["counter"] = 5,
-		}, -- [27]
+		}, -- [26]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'whoaThickFrames_BCC' tried to call the protected function 'CompactRaidFrame1:Show()'.",
 			["time"] = "2022/02/05 18:24:12",
@@ -218,7 +210,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\FrameXML\\CompactUnitFrame.lua\"]:359: in function `CompactUnitFrame_UpdateVisible'\n[string \"@Interface\\FrameXML\\CompactUnitFrame.lua\"]:292: in function `CompactUnitFrame_UpdateAll'\n[string \"@Interface\\FrameXML\\CompactUnitFrame.lua\"]:125: in function <Interface\\FrameXML\\CompactUnitFrame.lua:53>",
 			["session"] = 4539,
 			["counter"] = 3,
-		}, -- [28]
+		}, -- [27]
 		{
 			["message"] = "Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:1407: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2022/02/06 22:20:33",
@@ -226,7 +218,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua\"]:1407: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:1402>\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua\"]:1430: in function `CreateDropdown'\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua\"]:868: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua:808>\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua\"]:1109: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua:1108>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsMain.lua\"]:297: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsMain.lua:154>\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsMain.lua\"]:309: in function `ShowMainFrame'\n[string \"@Interface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua\"]:1654: in function <...rface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua:1639>\n[string \"@Interface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua\"]:2132: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 4540,
 			["counter"] = 1,
-		}, -- [29]
+		}, -- [28]
 		{
 			["message"] = "Interface\\AddOns\\MSBTOptions\\MSBTOptionsPopups.lua:127: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2022/02/06 22:20:40",
@@ -234,7 +226,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsPopups.lua\"]:127: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsPopups.lua:118>\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsPopups.lua\"]:1609: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsPopups.lua:1608>\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsPopups.lua\"]:1946: in function `ShowScrollAreaConfig'\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua\"]:1418: in function `clickHandler'\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua\"]:780: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:778>",
 			["session"] = 4540,
 			["counter"] = 1,
-		}, -- [30]
+		}, -- [29]
 		{
 			["message"] = "Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua:1063: attempt to call method 'SetBackdrop' (a nil value)",
 			["time"] = "2022/02/06 22:25:36",
@@ -242,6 +234,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsControls.lua\"]:1063: in function `CreateSlider'\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua\"]:945: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua:808>\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua\"]:1109: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsTabs.lua:1108>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsMain.lua\"]:297: in function <Interface\\AddOns\\MSBTOptions\\MSBTOptionsMain.lua:154>\n[string \"@Interface\\AddOns\\MSBTOptions\\MSBTOptionsMain.lua\"]:309: in function `ShowMainFrame'\n[string \"@Interface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua\"]:1654: in function <...rface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua:1639>\n[string \"@Interface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua\"]:2132: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 4541,
 			["counter"] = 1,
+		}, -- [30]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
+			["time"] = "2022/01/28 15:02:47",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
+			["session"] = 4550,
+			["counter"] = 22,
 		}, -- [31]
 	},
 }

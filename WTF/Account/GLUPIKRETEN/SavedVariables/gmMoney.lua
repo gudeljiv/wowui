@@ -1,9 +1,33 @@
 
 GMMONEY = {
-	["Hydraxian Waterlords"] = {
+	["Golemagg"] = {
 		["Battlearm"] = {
-			["GOLD"] = 0,
+			["GOLD"] = 47807,
+			["CLASS"] = "SHAMAN",
+		},
+		["Mxzq"] = {
+			["GOLD"] = 98681,
 			["CLASS"] = "HUNTER",
+		},
+		["Augustin"] = {
+			["GOLD"] = 34442,
+			["CLASS"] = "MAGE",
+		},
+		["Mxyz"] = {
+			["GOLD"] = 3042140,
+			["CLASS"] = "PRIEST",
+		},
+		["Battitude"] = {
+			["GOLD"] = 98,
+			["CLASS"] = "ROGUE",
+		},
+		["Mxyzptlk"] = {
+			["GOLD"] = 41,
+			["CLASS"] = "WARLOCK",
+		},
+		["Vermin"] = {
+			["GOLD"] = 80357,
+			["CLASS"] = "WARRIOR",
 		},
 	},
 	["Dreadnaught"] = {
@@ -38,38 +62,14 @@ GMMONEY = {
 			["CLASS"] = "WARRIOR",
 		},
 	},
-	["Golemagg"] = {
+	["Hydraxian Waterlords"] = {
 		["Battlearm"] = {
-			["GOLD"] = 47807,
-			["CLASS"] = "SHAMAN",
-		},
-		["Mxzq"] = {
-			["GOLD"] = 98681,
+			["GOLD"] = 0,
 			["CLASS"] = "HUNTER",
-		},
-		["Augustin"] = {
-			["GOLD"] = 34442,
-			["CLASS"] = "MAGE",
-		},
-		["Mxyz"] = {
-			["GOLD"] = 3042140,
-			["CLASS"] = "PRIEST",
-		},
-		["Battitude"] = {
-			["GOLD"] = 98,
-			["CLASS"] = "ROGUE",
-		},
-		["Mxyzptlk"] = {
-			["GOLD"] = 41,
-			["CLASS"] = "WARLOCK",
-		},
-		["Vermin"] = {
-			["GOLD"] = 80357,
-			["CLASS"] = "WARRIOR",
 		},
 	},
 }
 GMMONEYSET = {
-	["TEXTMODE"] = true,
 	["FULLDISP"] = true,
+	["TEXTMODE"] = true,
 }
