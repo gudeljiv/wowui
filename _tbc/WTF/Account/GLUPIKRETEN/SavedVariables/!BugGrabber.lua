@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 4544,
 	["lastSanitation"] = 3,
+	["session"] = 4545,
 	["errors"] = {
 		{
 			["message"] = "...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua:1867: AceConfigRegistry-3.0-20:ValidateOptionsTable(): AdiBags.args.bags.args.sections.args.columnWidth.args.Backpack.name: expected a string or funcref, got 'false'",
@@ -159,8 +159,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/01/31 16:12:36",
 			["session"] = 4468,
+			["time"] = "2022/01/31 16:12:36",
 			["counter"] = 9,
 		}, -- [21]
 		{
