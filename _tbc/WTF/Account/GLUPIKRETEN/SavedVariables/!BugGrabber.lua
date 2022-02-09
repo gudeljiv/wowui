@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 4560,
 	["lastSanitation"] = 3,
-	["session"] = 4559,
 	["errors"] = {
 		{
 			["message"] = "...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua:1867: AceConfigRegistry-3.0-20:ValidateOptionsTable(): AdiBags.args.bags.args.sections.args.columnWidth.args.Backpack.name: expected a string or funcref, got 'false'",
@@ -159,8 +159,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "(null)",
-			["session"] = 4468,
 			["time"] = "2022/01/31 16:12:36",
+			["session"] = 4468,
 			["counter"] = 9,
 		}, -- [21]
 		{
@@ -251,5 +251,13 @@ BugGrabberDB = {
 			["session"] = 4551,
 			["counter"] = 1,
 		}, -- [32]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'whoaThickFrames_BCC' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
+			["time"] = "2022/02/09 20:17:04",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\FrameXML\\FlowContainer.lua\"]:157: in function `FlowContainer_DoLayout'\n[string \"@Interface\\FrameXML\\FlowContainer.lua\"]:17: in function `FlowContainer_ResumeUpdates'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:185: in function `CompactRaidFrameContainer_LayoutFrames'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:130: in function `CompactRaidFrameContainer_TryUpdate'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:62: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 4560,
+			["counter"] = 1,
+		}, -- [33]
 	},
 }
