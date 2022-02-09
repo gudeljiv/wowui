@@ -166,6 +166,14 @@ function addon:BindCurrentCastData(castbar, unitID, isChanneled)
             cast.isUninterruptible = self.db.npcCastUninterruptibleCache[npcID .. spellName]
             -- Check for debuff silences. If mob is still casting while silenced he's most likely interrupt immune
             -- (if silence effect hits but not kick itself it wont actually show up in CLEU as spell immuned so we gotta check here aswell)
+
+			if(select(2, UnitClass("player")) =="WARRIOR") then
+				local _,_,isActiveBattleStance = GetShapeshiftFormInfo(2) -- ako je battle stance
+				if not isActiveBattleStance then
+					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+				end 
+			end
+
             for i = 1, 40 do
                 local debuffName = UnitAura(unitID, i, "HARMFUL")
                 if not debuffName then break end
@@ -325,6 +333,7 @@ function addon:UNIT_SPELLCAST_CHANNEL_START(unitID)
 end
 
 function addon:UNIT_SPELLCAST_STOP(unitID)
+	RotationFrame2:SetBackdropColor(1, 1, 1, 1)
     local castbar = activeFrames[unitID]
     if not castbar then return end
 
@@ -402,6 +411,7 @@ end
 addon.UNIT_SPELLCAST_FAILED_QUIET = addon.UNIT_SPELLCAST_FAILED
 
 function addon:UNIT_SPELLCAST_CHANNEL_STOP(unitID)
+	RotationFrame2:SetBackdropColor(1, 1, 1, 1)
     local castbar = activeFrames[unitID]
     if not castbar then return end
 

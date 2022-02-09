@@ -43,7 +43,6 @@ f:SetBackdrop(
 	}
 )
 
-
 PlayerFrame:HookScript(
 	"OnUpdate",
 	function()
@@ -58,6 +57,24 @@ PlayerFrame:HookScript(
 		end
 	end
 )
+
+local f = CreateFrame("Frame", "RotationFrame2", UIParent, BackdropTemplateMixin and "BackdropTemplate")
+f:SetWidth(5)
+f:SetHeight(5)
+f:ClearAllPoints()
+f:SetPoint("RIGHT", CustomContainer_Combat, "LEFT", -15, 0)
+f:SetFrameStrata("BACKGROUND")
+f:SetBackdrop(
+	{
+		bgFile = xVermin.Config.background.white,
+		edgeFile = "",
+		tile = false,
+		tileSize = 0,
+		edgeSize = 0,
+		insets = {left = 0, right = 0, top = 0, bottom = 0}
+	}
+)
+f:SetBackdropColor(1, 1, 1, 1)
 
 -- TargetFrame:HookScript(
 -- 	"OnUpdate",

@@ -83,9 +83,9 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["moveFrames"] = false,
+			["forceColor"] = false,
 			["locked"] = false,
-			["fixedStrata"] = true,
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -458,17 +458,17 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
-			["desaturated"] = false,
-			["forceColor"] = false,
+			["gap"] = 0,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
-			["gap"] = 0,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["desaturated"] = false,
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
@@ -549,7 +549,7 @@ CB_PlayedTime = {
 		["total"] = 8735,
 	},
 	["Mxyzptlk-Golemagg"] = {
-		["total"] = 25089,
+		["total"] = 26263,
 	},
 	["Pitchwise-Dreadnaught"] = {
 		["total"] = 140587,
@@ -609,7 +609,7 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 392342,
+		["total"] = 392956,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,
