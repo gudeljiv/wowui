@@ -47,9 +47,11 @@ local function FixBindings()
 	if xVermin.Class == "MAGE" then
 		SetBinding("ALT-MOUSEWHEELUP", "NONE", 1)
 		SetBinding("SHIFT-MOUSEWHEELUP", "NONE", 1)
+		SetBinding("F9", "NONE", 2)
 	else
 		SetBinding("ALT-MOUSEWHEELUP", "ACTIONBUTTON7", 1)
 		SetBinding("SHIFT-MOUSEWHEELUP", "ACTIONBUTTON8", 1)
+		SetBinding("F9", "ACTIONBUTTON8", 2)
 	end
 
 	SetBinding("TAB", "ACTIONBUTTON10", 1)
@@ -191,6 +193,8 @@ local function ClearAllBindings()
 
 	SetBinding("ALT-MOUSEWHEELUP", "NONE", 1)
 	SetBinding("ALT-MOUSEWHEELDOWN", "NONE", 1)
+	SetBinding("SHIFT-MOUSEWHEELDOWN", "NONE", 1)
+	SetBinding("SHIFT-MOUSEWHEELUP", "NONE", 1)
 
 	SetBinding("SHIFT-1", "NONE", 1)
 	SetBinding("SHIFT-2", "NONE", 1)
@@ -207,6 +211,8 @@ local function ClearAllBindings()
 	SetBinding("CTRL-SHIFT-B", "NONE", 1)
 	SetBinding("CTRL-L", "NONE", 1)
 	
+	SetBinding("F9", "NONE", 1)
+	SetBinding("F9", "NONE", 2)
 	SetBinding("F10", "NONE", 1)
 	SetBinding("F10", "NONE", 2)
 	SetBinding("F11", "NONE", 1)

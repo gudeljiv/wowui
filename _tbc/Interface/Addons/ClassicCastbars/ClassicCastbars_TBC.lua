@@ -169,9 +169,10 @@ function addon:BindCurrentCastData(castbar, unitID, isChanneled)
 
 			-- WARRIOR INTERRUPT
 			if(select(2, UnitClass("player")) == "WARRIOR") then
-				local _,_,isActiveBattleStance = GetShapeshiftFormInfo(2) -- ako je battle stance
-				if not isActiveBattleStance then
-					if UnitPower("player") >= 10 and IsSpellInRange("Pummel", "target") == 1 then -- check if we have at least 10 rage and we are in pummel distance
+				local _,active = GetShapeshiftFormInfo(1) -- ako je battle stance
+				if not active then
+					-- if  IsUsableSpell("Pummel") 
+					if IsSpellInRange("Pummel", "target") == 1 then -- check if we have at least 10 rage and we are in pummel distance
 						RotationFrame2:SetBackdropColor(0, 1, 0, 1)
 					end
 				end 
