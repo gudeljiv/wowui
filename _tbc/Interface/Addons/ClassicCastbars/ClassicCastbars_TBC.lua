@@ -167,12 +167,21 @@ function addon:BindCurrentCastData(castbar, unitID, isChanneled)
             -- Check for debuff silences. If mob is still casting while silenced he's most likely interrupt immune
             -- (if silence effect hits but not kick itself it wont actually show up in CLEU as spell immuned so we gotta check here aswell)
 
+			-- WARRIOR INTERRUPT
 			if(select(2, UnitClass("player")) == "WARRIOR") then
 				local _,_,isActiveBattleStance = GetShapeshiftFormInfo(2) -- ako je battle stance
 				if not isActiveBattleStance then
-					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+					if UnitPower("player") >= 10 and IsSpellInRange("Pummel", "target") == 1 then -- check if we have at least 10 rage and we are in pummel distance
+						RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+					end
 				end 
 			end
+
+			-- if(select(2, UnitClass("player")) == "WARLOCK") then
+			-- 	if UnitPower("player") >= 10 then
+			-- 		RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+			-- 	end
+			-- end
 
             for i = 1, 40 do
                 local debuffName = UnitAura(unitID, i, "HARMFUL")
