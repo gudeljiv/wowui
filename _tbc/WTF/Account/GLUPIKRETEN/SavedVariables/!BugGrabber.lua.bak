@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 4550,
 	["lastSanitation"] = 3,
+	["session"] = 4559,
 	["errors"] = {
 		{
 			["message"] = "...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua:1867: AceConfigRegistry-3.0-20:ValidateOptionsTable(): AdiBags.args.bags.args.sections.args.columnWidth.args.Backpack.name: expected a string or funcref, got 'false'",
@@ -159,8 +159,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/01/31 16:12:36",
 			["session"] = 4468,
+			["time"] = "2022/01/31 16:12:36",
 			["counter"] = 9,
 		}, -- [21]
 		{
@@ -240,8 +240,16 @@ BugGrabberDB = {
 			["time"] = "2022/01/28 15:02:47",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 4550,
-			["counter"] = 22,
+			["session"] = 4551,
+			["counter"] = 23,
 		}, -- [31]
+		{
+			["message"] = "...n\\Components\\IconModules\\IconModule_Texts\\Config.lua:651: attempt to call method 'GetParent' (a nil value)",
+			["time"] = "2022/02/08 20:20:19",
+			["locals"] = "button = <unnamed> {\n 0 = <userdata>\n notCheckable = true\n func = <function> defined @Interface\\AddOns\\TellMeWhen\\Components\\IconModules\\IconModule_Texts\\Config.lua:650\n tooltipText = \"|cffff7f7f|r|cffffffff[|r|cff00ffffStacks|r|cffff7fff:|r|cff00ff00Hide|r|cffffffff(|r|cffff7f7f0|r|cffffffff)|r|cffffffff]|r|cffff7f7f|r\"\n ExpandArrow = <unnamed> {\n }\n value = \"[Stacks:Hide(0)]\"\n Icon = <unnamed> {\n }\n tooltipWrap = false\n InvisibleButton = <unnamed> {\n }\n listFrame = TMWDropDownsList1 {\n }\n Highlight = <unnamed> {\n }\n UnCheck = <unnamed> {\n }\n Check = <unnamed> {\n }\n arg1 = <table> {\n }\n tooltipTitle = \"Used 20 |4time:times;.\"\n}\ndropdown = <table> {\n scrollable = true\n wrapTooltips = true\n initialize = <function> defined @Interface\\AddOns\\TellMeWhen\\Components\\IconModules\\IconModule_Texts\\Config.lua:657\n}\n(*temporary) = nil\n(*temporary) = <table> {\n scrollable = true\n wrapTooltips = true\n initialize = <function> defined @Interface\\AddOns\\TellMeWhen\\Components\\IconModules\\IconModule_Texts\\Config.lua:657\n}\n(*temporary) = \"attempt to call method 'GetParent' (a nil value)\"\nCI = <table> {\n icon = TellMeWhen_Group2_Icon6 {\n }\n group = TellMeWhen_Group2 {\n }\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\TellMeWhen\\Components\\IconModules\\IconModule_Texts\\Config.lua\"]:651: in function `func'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TMWUIDropDownMenu.lua\"]:473: in function `Button_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 4551,
+			["counter"] = 1,
+		}, -- [32]
 	},
 }
