@@ -1,2 +1,3 @@
 
-ClassicCastbarsCharDB = nil
+ClassicCastbarsCharDB = {
+}
