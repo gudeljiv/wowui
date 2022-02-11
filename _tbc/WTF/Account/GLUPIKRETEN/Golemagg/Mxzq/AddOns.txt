@@ -102,4 +102,7 @@ Questie: enabled
 oUF: disabled
 oUF_Neav: disabled
 oUF_NeavRaid: disabled
+FarmHud: enabled
+FarmHud_QuestArrow: enabled
+TrackingSwitcher: enabled
 TrinketMenu: enabled

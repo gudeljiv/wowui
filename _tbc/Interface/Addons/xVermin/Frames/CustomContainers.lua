@@ -3,7 +3,7 @@ local _, xVermin = ...
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 -- CUSTOM CONTAINER COMBAT
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-local cc = CreateFrame("Frame", "CustomContainer", UIParent)
+local cc = CreateFrame("Frame", "CustomContainer_CENTER", UIParent)
 cc:SetWidth(110)
 cc:SetHeight(20)
 cc:SetPoint("BOTTOM", UIParent, "BOTTOM", 0, 300)
@@ -94,10 +94,11 @@ f:SetScript(
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 -- CUSTOM CONTAINER 1 (minimap 1)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
-cc = CreateFrame("Frame", "CustomContainer", UIParent)
+cc = CreateFrame("Frame", "CustomContainer_MM", UIParent)
 cc:SetWidth(154)
 cc:SetHeight(30)
-cc:SetPoint("TOPRIGHT", "Minimap", "BOTTOMRIGHT", 0, -10)
+-- cc:SetPoint("TOPRIGHT", "MinimapCluster", "BOTTOMRIGHT", 0, -10)
+cc:SetPoint("TOP", "MinimapCluster", "BOTTOM", -15, -20)
 
 local cc1 = CreateFrame("Frame", "CustomContainer_1", cc, BackdropTemplateMixin and "BackdropTemplate")
 cc1:SetWidth(154)

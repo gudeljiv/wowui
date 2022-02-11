@@ -91,7 +91,7 @@ f:SetScript("OnEvent",
 			-------------------------------------------
 			Minimap:ClearAllPoints()
 			Minimap:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -40, -40)
-			Minimap.SetPoint = function() end
+			-- Minimap.SetPoint = function() end
 
 			-------------------------------------------
 			--- pet, player and target frame positioning

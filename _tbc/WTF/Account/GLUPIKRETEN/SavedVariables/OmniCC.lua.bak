@@ -1,14 +1,15 @@
 
 OmniCCDB = {
 	["profileKeys"] = {
-		["Vermin - Golemagg"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
-		["Mxzq - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
 	},
 	["global"] = {
 		["dbVersion"] = 6,
@@ -119,6 +120,7 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
+	["engine"] = "AniUpdater",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -129,7 +131,7 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["engine"] = "AniUpdater",
+	["version"] = "8.1.1",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -245,5 +247,4 @@ OmniCC4Config = {
 			["fontSize"] = 18,
 		},
 	},
-	["version"] = "8.1.1",
 }
