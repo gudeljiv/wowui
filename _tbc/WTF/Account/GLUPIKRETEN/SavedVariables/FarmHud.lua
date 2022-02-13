@@ -20,10 +20,10 @@ FarmHudDB = {
 	["tracking^132328"] = "client",
 	["coords_radius"] = 0.51,
 	["cardinalpoints_color1"] = {
-		1, -- [1]
-		0.82, -- [2]
-		0, -- [3]
-		0.7, -- [4]
+		0.0196078431372549, -- [1]
+		1, -- [2]
+		0.6431372549019607, -- [3]
+		0.7000000178813934, -- [4]
 	},
 	["tracking^136458"] = "client",
 	["hud_scale"] = 1.4,
@@ -51,14 +51,14 @@ FarmHudDB = {
 	},
 	["buttons_show"] = false,
 	["holdKeyForMouseOn"] = "_none",
-	["coords_show"] = true,
+	["coords_show"] = false,
 	["showDummy"] = true,
 	["tracking^135861"] = "client",
 	["SuperTrackedQuest"] = true,
 	["gathercircle_show"] = true,
 	["tracking^136464"] = "client",
 	["tracking^136453"] = "client",
-	["cardinalpoints_radius"] = 0.47,
+	["cardinalpoints_radius"] = 0.475,
 	["coords_bottom"] = false,
 	["tracking^132320"] = "client",
 	["tracking^136454"] = "client",
@@ -76,9 +76,9 @@ FarmHudDB = {
 		["radius"] = 80,
 		["hide"] = true,
 	},
-	["text_scale"] = 1.4,
+	["text_scale"] = 1.5,
 	["showDummyBg"] = true,
-	["time_show"] = true,
+	["time_show"] = false,
 	["tracking^133939"] = "client",
 	["healcircle_color"] = {
 		0, -- [1]
@@ -87,7 +87,7 @@ FarmHudDB = {
 		0.5, -- [4]
 	},
 	["tracking^136217"] = "client",
-	["healcircle_show"] = true,
+	["healcircle_show"] = false,
 	["time_radius"] = 0.48,
 	["tracking^136455"] = "client",
 	["cardinalpoints_show"] = true,

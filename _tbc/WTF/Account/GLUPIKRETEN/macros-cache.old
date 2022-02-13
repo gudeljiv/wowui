@@ -12,12 +12,12 @@ VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 /use [button:1] 16; [button:2] 17
 END
 VER 3 000000000000000F "AttackSpeed" "132089"
-/run print 
+/run mainSpeed, offSpeed = UnitAttackSpeed("target") print(format("%s: attack speed = %.2f", GetUnitName("target"), mainSpeed))
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:1645
-/castsequence [combat] reset=combat item:6149
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
