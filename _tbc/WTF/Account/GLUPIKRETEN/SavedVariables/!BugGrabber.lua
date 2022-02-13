@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 4592,
 	["lastSanitation"] = 3,
-	["session"] = 4591,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -35,5 +35,21 @@ BugGrabberDB = {
 			["session"] = 4590,
 			["counter"] = 1,
 		}, -- [4]
+		{
+			["message"] = "...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua:219: Action[FrameMeasurement] failed because[Can't measure restricted regions]: attempted from: NeatPlatesCarrier-1:GetPoint().",
+			["time"] = "2022/02/13 17:33:53",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"=[C]\"]: in function `GetPoint'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:219: in function `HighlightFrame'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:242: in function <...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools.lua:233>",
+			["session"] = 4592,
+			["counter"] = 9,
+		}, -- [5]
+		{
+			["message"] = "...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua:219: Action[FrameMeasurement] failed because[Can't measure restricted regions]: attempted from: <unnamed>:GetPoint().",
+			["time"] = "2022/02/13 17:34:46",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"=[C]\"]: in function `GetPoint'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:219: in function `HighlightFrame'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:242: in function <...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools.lua:233>",
+			["session"] = 4592,
+			["counter"] = 3,
+		}, -- [6]
 	},
 }

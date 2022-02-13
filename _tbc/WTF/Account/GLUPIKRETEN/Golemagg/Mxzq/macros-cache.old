@@ -1,7 +1,9 @@
-VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /petattack
-/cast Hunter's Mark
+/startattack
+/cast Serpent Sting
+/cast !Auto Shot
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -42,10 +44,8 @@ VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 /cast [nopet] Call Pet
 /cast Mend Pet
 END
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /petattack
-/startattack
-/cast Serpent Sting
-/cast !Auto Shot
+/cast Hunter's Mark
 END

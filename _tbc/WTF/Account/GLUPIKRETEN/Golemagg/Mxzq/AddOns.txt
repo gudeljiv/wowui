@@ -108,3 +108,4 @@ TrackingSwitcher: enabled
 TrinketMenu: enabled
 Blizzard_CompactRaidFrames: disabled
 Blizzard_CUFProfiles: disabled
+TradeSkillMaster_AppHelper: enabled

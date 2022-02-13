@@ -5,7 +5,7 @@ TrackingSwitcherCharDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["castInterval"] = 10,
+			["castInterval"] = 6,
 		},
 	},
 }
