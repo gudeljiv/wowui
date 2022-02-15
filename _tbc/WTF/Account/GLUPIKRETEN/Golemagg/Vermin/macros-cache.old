@@ -38,6 +38,7 @@ VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Shield Bash
 /startattack
 /cast [stance:1/2] Shield Bash; Battle Stance
+/cast Bloodrage
 END
 VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Thunder Clap
@@ -54,4 +55,10 @@ VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Sunder Armor
 /cast Bloodrage
+END
+VER 3 000000000100000C " " "INV_MISC_QUESTIONMARK"
+#showtooltip Pummel
+/startattack
+/cast Bloodrage
+/cast Pummel
 END
