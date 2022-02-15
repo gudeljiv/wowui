@@ -170,7 +170,6 @@ function addon:BindCurrentCastData(castbar, unitID, isChanneled)
 			-- WARRIOR INTERRUPT
 			if(select(2, UnitClass("player")) == "WARRIOR") then
 				local _,active = GetShapeshiftFormInfo(1) -- ako je battle stance
-				print(active, IsSpellInRange("Pummel", "target"))
 				if not active then
 					-- if  IsUsableSpell("Pummel") 
 					if IsSpellInRange("Pummel", "target") == 1 then -- check if we have at least 10 rage and we are in pummel distance
