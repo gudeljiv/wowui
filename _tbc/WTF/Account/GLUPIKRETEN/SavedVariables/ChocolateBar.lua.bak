@@ -37,8 +37,8 @@ ChocolateBarDB = {
 		["Nitwit - Dreadnaught"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
@@ -53,6 +53,20 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["locked"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -72,20 +86,6 @@ ChocolateBarDB = {
 					["index"] = 1,
 					["barOffx"] = -88.3325424194336,
 				},
-			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["locked"] = false,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
-				},
-				["textureName"] = "None",
 			},
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
@@ -472,14 +472,14 @@ ChocolateBarDB = {
 					["customLabel"] = "FH",
 				},
 			},
-			["desaturated"] = false,
+			["gap"] = 0,
 			["forceColor"] = false,
 			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["gap"] = 0,
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontName"] = "Friz Quadrata TT",
+			["desaturated"] = false,
 			["moveFrames"] = false,
 			["textColor"] = {
 				["a"] = 1,
@@ -573,7 +573,7 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 411349,
+		["total"] = 421496,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,
@@ -618,7 +618,7 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 164027,
+		["total"] = 164287,
 	},
 	["Battlearm-Golemagg"] = {
 		["total"] = 2096,

@@ -51,6 +51,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
         # ako je chat otvoren.. ili nesto trece... ako je kockica bijela
         if pyautogui.pixel(x_aoe, y_aoe) == (255, 254, 255):
+            print("skipping", "...")
             continue
 
         if pyautogui.pixel(x_interrupt, y_interrupt) == (0, 254, 0):

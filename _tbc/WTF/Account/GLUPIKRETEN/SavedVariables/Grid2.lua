@@ -1,7 +1,7 @@
 
 Grid2DB = {
 	["namespaces"] = {
-		["LibDualSpec-1.0"] = {
+		["Grid2AoeHeals"] = {
 		},
 		["Grid2Layout"] = {
 			["global"] = {
@@ -145,11 +145,9 @@ Grid2DB = {
 				},
 			},
 		},
-		["Grid2AoeHeals"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["Grid2Options"] = {
-		},
-		["Grid2RaidDebuffs"] = {
 		},
 		["Grid2Frame"] = {
 			["profiles"] = {
@@ -186,18 +184,18 @@ Grid2DB = {
 							},
 							["frameTexture"] = "Glamour2",
 							["frameBorderTexture"] = "None",
+							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								[10] = 40,
 								[5] = 50,
 							},
-							["mouseoverHighlight"] = false,
-							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
 							},
+							["orientation"] = "VERTICAL",
 							["frameWidth"] = 125,
 							["frameBorderColor"] = {
 								["a"] = 0,
@@ -237,18 +235,18 @@ Grid2DB = {
 								["g"] = 1,
 								["r"] = 1,
 							},
+							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["orientation"] = "VERTICAL",
+							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								[5] = 45,
 								[10] = 50,
 							},
-							["mouseoverHighlight"] = false,
 							["frameWidth"] = 125,
 							["frameTexture"] = "Glamour2",
 						}, -- [2]
@@ -278,18 +276,18 @@ Grid2DB = {
 							},
 							["frameTexture"] = "Glamour2",
 							["frameBorderTexture"] = "None",
+							["frameHeights"] = {
+								[25] = 20,
+								[40] = 20,
+							},
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["frameHeights"] = {
-								[25] = 20,
-								[40] = 20,
-							},
-							["orientation"] = "VERTICAL",
 							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameWidth"] = 120,
 							["frameBorderColor"] = {
 								["a"] = 0,
@@ -310,6 +308,8 @@ Grid2DB = {
 					["frameBorderTexture"] = "None",
 				},
 			},
+		},
+		["Grid2RaidDebuffs"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -1649,23 +1649,23 @@ Grid2DB = {
 					["type"] = "alpha",
 				},
 				["mana"] = {
-					["backTexture"] = "Glamour2",
+					["height"] = 4,
 					["type"] = "bar",
-					["orientation"] = "HORIZONTAL",
-					["backColor"] = {
-						["a"] = 0.3061864972114563,
-						["b"] = 0,
-						["g"] = 0,
-						["r"] = 0,
-					},
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "BOTTOM",
 						["point"] = "BOTTOM",
 						["x"] = 0,
 					},
+					["backColor"] = {
+						["a"] = 0.3061864972114563,
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 0,
+					},
+					["orientation"] = "HORIZONTAL",
 					["level"] = 3,
-					["height"] = 4,
+					["backTexture"] = "Glamour2",
 					["texture"] = "Glamour2",
 				},
 				["health-color"] = {
@@ -1912,8 +1912,7 @@ Grid2DB = {
 				["icon-left"] = {
 					["raid-icon-player"] = 155,
 				},
-				["corner-bottom-left"] = {
-					["threat"] = 50,
+				["text-up"] = {
 				},
 				["text-up-color"] = {
 					["charmed"] = 65,
@@ -1922,7 +1921,8 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
-				["text-up"] = {
+				["corner-bottom-left"] = {
+					["threat"] = 50,
 				},
 				["corner-top-right"] = {
 					["debuff-Disease"] = 50,
@@ -2261,15 +2261,15 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
-				["text-down-color"] = {
-					["classcolor"] = 99,
-				},
 				["text-up-color"] = {
 					["charmed"] = 65,
 					["feign-death"] = 96,
 					["health-deficit"] = 50,
 					["offline"] = 93,
 					["death"] = 95,
+				},
+				["text-down-color"] = {
+					["classcolor"] = 99,
 				},
 				["icon-center"] = {
 					["ready-check"] = 150,
@@ -2816,15 +2816,15 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
+				["text-down-color"] = {
+					["classcolor"] = 99,
+				},
 				["text-up-color"] = {
 					["charmed"] = 65,
 					["feign-death"] = 96,
 					["health-deficit"] = 50,
 					["offline"] = 93,
 					["death"] = 95,
-				},
-				["text-down-color"] = {
-					["classcolor"] = 99,
 				},
 				["icon-center"] = {
 					["ready-check"] = 150,

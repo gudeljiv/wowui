@@ -57,7 +57,7 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 573.7486572265625,
+					["y"] = 573.7485961914062,
 					["x"] = -1059.562767028809,
 					["w"] = 234.8973236083984,
 					["h"] = 136.6408081054688,
@@ -92,9 +92,9 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 573.7486572265625,
+					["y"] = 573.7485961914062,
 					["x"] = -827.6269226074219,
-					["w"] = 228.9744415283203,
+					["w"] = 228.9743957519531,
 					["h"] = 136.6408081054688,
 				},
 				["solo"] = {
@@ -127,10 +127,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -522.0343801497693,
-					["x"] = 420.5404929385178,
+					["y"] = -522.0344564461107,
+					["x"] = 420.5406150279987,
 					["w"] = 179.9998016357422,
-					["h"] = 178.3075408935547,
+					["h"] = 178.3075561523438,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -155,7 +155,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1569743963,
 	["active_profile"] = "BetterThreat",
-	["last_day"] = "08",
+	["last_day"] = "15",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -164,9 +164,9 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["enabled"] = true,
 			["animate"] = true,
-			["useclasscolors"] = false,
-			["hide_pull_bar"] = false,
 			["author"] = "Details! Team",
+			["hide_pull_bar"] = false,
+			["useclasscolors"] = false,
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -176,12 +176,12 @@ _detalhes_database = {
 			["openedfromcommand"] = false,
 			["updatespeed"] = 0.2,
 			["dividebyhundred"] = true,
-			["showamount"] = false,
+			["alwaysshowme"] = true,
 			["useplayercolor"] = false,
 			["playSound"] = false,
 			["usefocus"] = false,
 			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["alwaysshowme"] = true,
+			["showamount"] = false,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -200,9 +200,9 @@ _detalhes_database = {
 			["enabled"] = true,
 			["opened"] = 0,
 			["max_emote_segments"] = 3,
-			["author"] = "Details! Team",
-			["hide_on_combat"] = false,
 			["show_icon"] = 5,
+			["hide_on_combat"] = false,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
@@ -260,12 +260,7 @@ _detalhes_database = {
 			["point"] = "RIGHT",
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -273,9 +268,8 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["y"] = -183.107162475586,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -287,30 +281,36 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
+			["font_size"] = 10,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
+			["y"] = -183.107162475586,
 			["use_spark"] = false,
-			["font_size"] = 10,
-			["author"] = "Details! Team",
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["main_frame_locked"] = true,
 			["arrow_anchor_y"] = 0,
 		},
-	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
 	},
 	["announce_prepots"] = {
 		["enabled"] = false,
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
+	["combat_counter"] = 4184,
 	["cached_roles"] = {
 	},
-	["combat_counter"] = 4180,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["last_realversion"] = 145,
 	["character_data"] = {
-		["logons"] = 1891,
+		["logons"] = 1893,
 	},
 	["combat_id"] = 823,
 	["savedStyles"] = {

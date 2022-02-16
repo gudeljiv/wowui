@@ -46,7 +46,7 @@ f:SetBackdrop(
 PlayerFrame:HookScript(
 	"OnUpdate",
 	function()
-		if InCombatLockdown() and not ChatFrame1EditBox:IsVisible() then 
+		if InCombatLockdown() and not ChatFrame1EditBox:IsVisible() and not IsMounted() then 
 			if AOE() then
 				f:SetBackdropColor(1, 0, 0, 1)
 			else
