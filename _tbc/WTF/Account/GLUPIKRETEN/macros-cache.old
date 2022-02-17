@@ -1,7 +1,3 @@
-VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/castsequence Find Herbs,Find Minerals
-END
 VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use Coarse Sharpening Stone
@@ -11,17 +7,21 @@ VER 3 000000000000000E " " "136106"
 /run InspectUnit("target")
 /run SortBags()
 END
+VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence Find Herbs,Find Minerals
+END
 VER 3 000000000000000F "AttackSpeed" "132089"
 /run mainSpeed, offSpeed = UnitAttackSpeed("target") print(format("%s: attack speed = %.2f", GetUnitName("target"), mainSpeed))
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:1645
-/castsequence [combat] reset=combat item:6149
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4599
+/use [nocombat]item:4602
 /castsequence [combat] reset=combat item:3928,item:1710,item:929
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"

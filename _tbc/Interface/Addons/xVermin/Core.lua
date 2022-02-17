@@ -1,6 +1,6 @@
 local _, xVermin = ...
 
-RAID_CLASS_COLORS["SHAMAN"] = {r = 0 / 255, g = 112 / 255, b = 222 / 255, colorStr = "ff0070DE"}
+-- RAID_CLASS_COLORS["SHAMAN"] = {r = 0 / 255, g = 112 / 255, b = 222 / 255, colorStr = "ff0070DE"}
 xVermin.Class = select(2, UnitClass("player"))
 xVermin.ClassColor = RAID_CLASS_COLORS[xVermin.Class]
 
