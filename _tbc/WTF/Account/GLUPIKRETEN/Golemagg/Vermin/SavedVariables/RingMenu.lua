@@ -7,9 +7,9 @@ RingMenu_ringConfig = {
 	{
 		["backdropColor"] = {
 			["a"] = 0.5,
-			["r"] = 0,
-			["g"] = 0,
 			["b"] = 0,
+			["g"] = 0,
+			["r"] = 0,
 		},
 		["radius"] = 125,
 		["backdropScale"] = 1.5,

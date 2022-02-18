@@ -65,7 +65,9 @@ with keyboard.Listener(on_press=on_press) as listener:
             if dprint:
                 print("interrupt", "f9")
             pyautogui.press("f9", presses=3)
-            continue
+            pyautogui.press("f9", presses=3)
+            pyautogui.press("f9", presses=3)
+            pyautogui.press("f9", presses=3)
 
         if debug:
             time.sleep(1)
