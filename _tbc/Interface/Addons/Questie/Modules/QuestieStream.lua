@@ -43,17 +43,16 @@ function QuestieStreamLib:GetStream(mode) -- returns a new stream
     if stream then
         return stream
     else
-        stream = {
-            _pointer = 1,
-            _bin = {},
-            _raw_bin = {},
-            _rawptr = 1,
-            _level = 0,
-        }
+        stream = {}
     end
     for k,v in pairs(QuestieStreamLib) do -- copy functions to new object
         stream[k] = v
     end
+    stream._pointer = 1
+    stream._bin = {}
+    stream._raw_bin = {}
+    stream._rawptr = 1
+    stream._level = 0
     stream.reset = function(self)
         self._pointer = 1
         self._bin = {}
@@ -69,13 +68,9 @@ function QuestieStreamLib:GetStream(mode) -- returns a new stream
         stream._mode = mode
         if mode == "raw" then
             stream.ReadByte = QuestieStreamLib._ReadByte_raw
-            stream.ReadShort = QuestieStreamLib._ReadShort_raw
-            stream.ReadInt24 = QuestieStreamLib._ReadInt24_raw
-            stream.ReadInt = QuestieStreamLib._ReadInt_raw
-            stream.ReadInt12Pair = QuestieStreamLib._ReadInt12Pair_raw
-            stream.ReadTinyString = QuestieStreamLib._ReadTinyString_raw
-            stream.ReadShortString = QuestieStreamLib._ReadShortString_raw
-            stream.ReadTinyStringNil = QuestieStreamLib._ReadTinyStringNil_raw
+            stream.ReadTinyString = QuestieStreamLib._ReadTinyStringBySubstring
+            stream.ReadShortString = QuestieStreamLib._ReadShortStringBySubstring
+            stream.ReadTinyStringNil = QuestieStreamLib._ReadTinyStringNilBySubstring
             stream._WriteByte = QuestieStreamLib._writeByte
         elseif mode == "1short" then
             stream.ReadByte = QuestieStreamLib._ReadByte_1short
@@ -200,9 +195,11 @@ function QuestieStreamLib:_WriteByte_raw(e)
 end
 
 function QuestieStreamLib:_ReadByte_raw()
-    local p = self._pointer
-    self._pointer = p + 1
-    return stringbyte(self._bin, p)
+    local val = stringbyte(self._bin, self._pointer)
+    --print("Read data at " .. self._pointer .. " = " .. val)
+    self._pointer = self._pointer + 1
+    return val
+    --return self:_readByte()
 end
 
 -- this is now set in GetStream based on type
@@ -239,46 +236,17 @@ function QuestieStreamLib:ReadShort()
     return lshift(self:ReadByte(), 8) + self:ReadByte();
 end
 
-function QuestieStreamLib:_ReadShort_raw()
-    local p = self._pointer
-    self._pointer = p + 2
-    local a,b = stringbyte(self._bin, p, p+1)
-    return a*256 + b
-end
-
 function QuestieStreamLib:ReadInt12Pair()
     local a = self:ReadByte()
     return self:ReadByte() + lshift(band(a, 15), 8), self:ReadByte() + lshift(band(a, 240), 4)
-end
-
-function QuestieStreamLib:_ReadInt12Pair_raw()
-    local p = self._pointer
-    self._pointer = p + 3
-    local a,b,c = stringbyte(self._bin, p, p+2)
-    local low4bit = a % 16
-    return low4bit * 256 + b, (a - low4bit) * 16 + c
 end
 
 function QuestieStreamLib:ReadInt24()
     return lshift(self:ReadByte(), 16) + lshift(self:ReadByte(), 8) + self:ReadByte();
 end
 
-function QuestieStreamLib:_ReadInt24_raw()
-    local p = self._pointer
-    self._pointer = p + 3
-    local a,b,c = stringbyte(self._bin, p, p+2)
-    return a*65536 + b*256 + c
-end
-
 function QuestieStreamLib:ReadInt()
     return lshift(self:ReadByte(), 24) + lshift(self:ReadByte(), 16) + lshift(self:ReadByte(), 8) + self:ReadByte();
-end
-
-function QuestieStreamLib:_ReadInt_raw()
-    local p = self._pointer
-    self._pointer = p + 4
-    local a,b,c,d = stringbyte(self._bin, p, p+3)
-    return a*16777216 + b*65536 + c*256 + d
 end
 
 function QuestieStreamLib:ReadLong()
@@ -294,30 +262,20 @@ function QuestieStreamLib:ReadTinyString()
     return stringchar(unpack(ret))
 end
 
-function QuestieStreamLib:_ReadTinyString_raw()
-    local p = self._pointer
-
-    -- inline _ReadByte_raw
-    local length = stringbyte(self._bin, p)
-    p = p + 1
-
-    self._pointer = p + length
-    return stringsub(self._bin, p, p+length-1)
+function QuestieStreamLib:_ReadTinyStringBySubstring()
+    local length = self:ReadByte()
+    if length == 0 then return "" end
+    local ret = stringsub(self._bin, self._pointer, self._pointer+length-1)
+    self._pointer = self._pointer + length
+    return ret
 end
 
-function QuestieStreamLib:_ReadTinyStringNil_raw()
-    local p = self._pointer
-
-    -- inline _ReadByte_raw
-    local length = stringbyte(self._bin, p)
-    p = p + 1
-
-    if length == 0 then
-        self._pointer = p
-        return nil
-    end
-    self._pointer = p + length
-    return stringsub(self._bin, p, p+length-1)
+function QuestieStreamLib:_ReadTinyStringNilBySubstring()
+    local length = self:ReadByte()
+    if length == 0 then return nil end
+    local ret = stringsub(self._bin, self._pointer, self._pointer+length-1)
+    self._pointer = self._pointer + length
+    return ret
 end
 
 function QuestieStreamLib:ReadTinyStringNil()
@@ -346,16 +304,11 @@ function QuestieStreamLib:ReadShortString()
     end
 end
 
-function QuestieStreamLib:_ReadShortString_raw()
-    local p = self._pointer
-
-    -- inline _ReadShort_raw
-    local a,b = stringbyte(self._bin, p, p+1)
-    local length = a*256 + b
-    p = p + 2
-
-    self._pointer = p + length
-    return stringsub(self._bin, p, p+length-1)
+function QuestieStreamLib:_ReadShortStringBySubstring()
+    local length = self:ReadShort()
+    local ret = stringsub(self._bin, self._pointer, self._pointer+length-1)
+    self._pointer = self._pointer + length
+    return ret
 end
 
 function QuestieStreamLib:WriteBytes(...)

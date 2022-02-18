@@ -76,28 +76,30 @@ QuestieDBCompiler.readers = {
     ["u24"] = QuestieStream.ReadInt24,
     ["u32"] = QuestieStream.ReadInt,
     ["u12pair"] = function(stream)
-        local a,b = stream:ReadInt12Pair()
+        local ret = {stream:ReadInt12Pair()}
         -- bit of a hack
-        if a == 0 and b == 0 then
+        if ret[1] == 0 and ret[2] == 0 then
             return nil
         end
-        return {a, b}
+        return ret
     end,
     ["u24pair"] = function(stream)
-        local a,b = stream:ReadInt24(), stream:ReadInt24()
+        local ret = {stream:ReadInt24(), stream:ReadInt24()}
         -- bit of a hack
-        if a == 0 and b == 0 then
+        if ret[1] == 0 and ret[2] == 0 then
             return nil
         end
-        return {a, b}
+
+        return ret
     end,
     ["s24pair"] = function(stream)
-        local a,b = stream:ReadInt24()-8388608, stream:ReadInt24()-8388608
+        local ret = {stream:ReadInt24()-8388608, stream:ReadInt24()-8388608}
         -- bit of a hack
-        if a == 0 and b == 0 then
+        if ret[1] == 0 and ret[2] == 0 then
             return nil
         end
-        return {a, b}
+
+        return ret
     end,
     ["u8string"] = function(stream)
         local ret = stream:ReadTinyString()
@@ -563,7 +565,6 @@ QuestieDBCompiler.writers = {
     end
 }
 
--- NOTE: stream:Read*() increment _pointer, so sum Read + _pointer, not _pointer + Read
 QuestieDBCompiler.skippers = {
     ["s8"] = function(stream) stream._pointer = stream._pointer + 1 end,
     ["u8"] = function(stream) stream._pointer = stream._pointer + 1 end,
@@ -604,13 +605,9 @@ QuestieDBCompiler.skippers = {
             stream._pointer = stream:ReadShort() * 3 + stream._pointer
         end
     end,
-    ["trigger"] = function(stream)
-        local len = stream:ReadShort()
-        if len > 0 then
-            stream._pointer = stream._pointer - 2
-            stream._pointer = stream:ReadByte() + stream._pointer
-            QuestieDBCompiler.skippers["spawnlist"](stream)
-        end
+    ["trigger"] = function(stream) 
+        stream._pointer = stream:ReadByte() + stream._pointer
+        QuestieDBCompiler.skippers["spawnlist"](stream)
     end,
     ["questgivers"] = function(stream)
         --local count = stream:ReadByte()
@@ -796,8 +793,7 @@ function QuestieDBCompiler:CompileTableCoroutine(tbl, types, order, lookup, data
             local entry = tbl[id]
 
             QuestieDBCompiler.pointerMap[id] = QuestieDBCompiler.stream._pointer--pointerStart
-            for i=1, #order do
-                local key = order[i]
+            for _, key in pairs(order) do
                 local v = entry[lookup[key]]
                 local t = types[key]
 
@@ -827,8 +823,7 @@ function QuestieDBCompiler:BuildSkipMap(types, order) -- skip map is used for ra
     local ptr = 0
     local haveDynamic = false
     local lastIndex
-    for index = 1, #order do
-        local key = order[index]
+    for index, key in pairs(order) do
         local typ = types[key]
         indexToKey[index] = key
         keyToIndex[key] = index
@@ -883,17 +878,14 @@ function QuestieDBCompiler:Compile()
     Questie.db.global.dbCompiledCount = (Questie.db.global.dbCompiledCount or 0) + 1
 
     if Questie.db.global.debugEnabled then
+        Questie:Debug(Questie.DEBUG_DEVELOP, "Validating objects...")
         coroutine.yield()
-        Questie:Debug(Questie.DEBUG_INFO, "Validating NPCs...")
-        QuestieDBCompiler:ValidateNPCs()
-        coroutine.yield()
-        Questie:Debug(Questie.DEBUG_INFO, "Validating objects...")
         QuestieDBCompiler:ValidateObjects()
+        Questie:Debug(Questie.DEBUG_DEVELOP, "Validating items...")
         coroutine.yield()
-        Questie:Debug(Questie.DEBUG_INFO, "Validating items...")
         QuestieDBCompiler:ValidateItems()
+        Questie:Debug(Questie.DEBUG_DEVELOP, "Validating quests...")
         coroutine.yield()
-        Questie:Debug(Questie.DEBUG_INFO, "Validating quests...")
         QuestieDBCompiler:ValidateQuests()
     end
 end
@@ -1154,7 +1146,7 @@ function QuestieDBCompiler:GetDBHandle(data, pointers, skipMap, keyToRootIndex, 
                     Questie:Error("ERROR: Unhandled db key: " .. key)
                 end
                 for i = lastIndex, targetIndex-1 do
-                    QuestieDBCompiler.skippers[types[indexToKey[i]]](stream)
+                    QuestieDBCompiler.readers[types[indexToKey[i]]](stream)
                 end
             end
             return QuestieDBCompiler.readers[typ](stream)
@@ -1201,7 +1193,7 @@ function QuestieDBCompiler:GetDBHandle(data, pointers, skipMap, keyToRootIndex, 
                             Questie:Error("ERROR: Unhandled db key: " .. key)
                         end
                         for i = lastIndex, targetIndex-1 do
-                            QuestieDBCompiler.skippers[types[indexToKey[i]]](stream)
+                            QuestieDBCompiler.readers[types[indexToKey[i]]](stream)
                         end
                     end
                     local res = QuestieDBCompiler.readers[typ](stream)
@@ -1227,7 +1219,7 @@ function QuestieDBCompiler:GetDBHandle(data, pointers, skipMap, keyToRootIndex, 
                     Questie:Error("ERROR: Unhandled db key: " .. key)
                 end
                 for i = lastIndex, targetIndex-1 do
-                    QuestieDBCompiler.skippers[types[indexToKey[i]]](stream)
+                    QuestieDBCompiler.readers[types[indexToKey[i]]](stream)
                 end
             end
             return QuestieDBCompiler.readers[typ](stream)
@@ -1251,7 +1243,7 @@ function QuestieDBCompiler:GetDBHandle(data, pointers, skipMap, keyToRootIndex, 
                         Questie:Error("ERROR: Unhandled db key: " .. key)
                     end
                     for i = lastIndex, targetIndex-1 do
-                        QuestieDBCompiler.skippers[types[indexToKey[i]]](stream)
+                        QuestieDBCompiler.readers[types[indexToKey[i]]](stream)
                     end
                 end
                 local res = QuestieDBCompiler.readers[typ](stream)
