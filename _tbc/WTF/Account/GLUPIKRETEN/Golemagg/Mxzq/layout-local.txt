@@ -55,6 +55,13 @@ X: -27
 Y: 27
 W: 50
 H: 50
+Frame: NeatPlatesCustomizationPanel
+FrameLevel: 1
+Anchor: CENTER
+X: -7
+Y: 49
+W: 600
+H: 300
 Frame: LootFrame
 FrameLevel: 10
 Anchor: TOP
@@ -76,3 +83,10 @@ X: 250
 Y: -96
 W: 232
 H: 100
+Frame: GroupBulletinBoardFrame
+FrameLevel: 1
+Anchor: RIGHT
+X: -335
+Y: 117
+W: 763
+H: 806
