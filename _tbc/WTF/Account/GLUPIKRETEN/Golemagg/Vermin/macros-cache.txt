@@ -67,3 +67,11 @@ VER 3 000000000100000D " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Mortal Strike
 END
+VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [stance:1/3] Death Wish
+/cast [stance:3] Recklessness
+/cast [stance:1/3] Blood Fury
+/cast [stance:1/3] Bloodrage
+/cast [stance:2] Shield Wall
+END

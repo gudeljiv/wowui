@@ -62,3 +62,8 @@ VER 3 000000000100000C " " "INV_MISC_QUESTIONMARK"
 /cast Bloodrage
 /cast Pummel
 END
+VER 3 000000000100000D " " "INV_MISC_QUESTIONMARK"
+#showtooltip Mortal Strike
+/startattack
+/cast Mortal Strike
+END

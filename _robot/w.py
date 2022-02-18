@@ -9,6 +9,7 @@ import win32gui
 
 aoe = False
 debug = False
+dprint = False
 
 x = 1280
 y = 860
@@ -34,16 +35,21 @@ skills = [
 
 def on_press(key):
     global debug
+    global dprint
 
     try:
         if key == keyboard.Key.f12:
             debug = not debug
             print("debug:", debug)
+        if key == keyboard.Key.f8:
+            dprint = not dprint
+            print("dprint:", dprint)
     except:
         return
 
 
 with keyboard.Listener(on_press=on_press) as listener:
+
     while True:
 
         time.sleep(0.25)
@@ -51,22 +57,26 @@ with keyboard.Listener(on_press=on_press) as listener:
 
         # ako je chat otvoren.. ili nesto trece... ako je kockica bijela
         if pyautogui.pixel(x_aoe, y_aoe) == (255, 254, 255):
-            print("skipping", "...")
+            if dprint:
+                print("skipping", "...")
             continue
 
         if pyautogui.pixel(x_interrupt, y_interrupt) == (0, 254, 0):
-            print("interrupt", "f9")
+            if dprint:
+                print("interrupt", "f9")
             pyautogui.press("f9", presses=3)
             continue
 
         if debug:
             time.sleep(1)
-            print("coords:", pyautogui.pixel(x, y), active_window)
+            if dprint:
+                print("coords:", pyautogui.pixel(x, y), active_window)
         else:
             if(active_window != "World of Warcraft"):
                 continue
 
             for skill in skills:
                 if pyautogui.pixel(x, y) == skill["rgb"]:
-                    print(skill["name"], skill["key"])
+                    if dprint:
+                        print(skill["name"], skill["key"])
                     pyautogui.press(skill["key"], presses=3)
