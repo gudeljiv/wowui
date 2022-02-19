@@ -5,6 +5,8 @@ SpyDB = {
 			["Horde"] = {
 				["Mxyz"] = {
 				},
+				["Mxzq"] = {
+				},
 				["Vermin"] = {
 				},
 			},
@@ -19,6 +21,7 @@ SpyDB = {
 	["profileKeys"] = {
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 	},
 	["profiles"] = {
 		["Vermin - Golemagg"] = {
@@ -41,6 +44,18 @@ SpyDB = {
 			["BarTexture"] = "Glamour2",
 		},
 		["Mxyz - Golemagg"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Mxzq - Golemagg"] = {
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -49,7 +64,6 @@ SpyDB = {
 				},
 			},
 			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
 		},
 	},

@@ -50,7 +50,7 @@ local SET_CONTENT = data:AddContentType(AL["Sets"], ATLASLOOT_PVP_COLOR)
 local COLLECTIONS_CONTENT = data:AddContentType(AL["Collections"], ATLASLOOT_COLLECTIONS_COLOR)
 local WORLD_EVENT_CONTENT = data:AddContentType(AL["World Events"], ATLASLOOT_SEASONALEVENTS_COLOR)
 
---[====[@version-bcc@
+--@version-bcc@
 data["BadgeofJustice"] = {
 	name = format(AL["'%s' Vendor"], "Badge of Justice"),
 	ContentType = VENDOR_CONTENT,
@@ -166,7 +166,7 @@ data["BadgeofJustice"] = {
 		},
 	}
 }
---@end-version-bcc@]====]
+--@end-version-bcc@
 
 data["TierSets"] = {
 	name = AL["Tier Sets"],
@@ -229,7 +229,7 @@ data["TierSets"] = {
 				{ 24, 528 }, -- Paladin
 			},
 		},
---[====[@version-bcc@
+--@version-bcc@
 		{ -- T4
 			name = format(AL["Tier %s Sets"], "4"),
 			[NORMAL_DIFF] = {
@@ -296,7 +296,7 @@ data["TierSets"] = {
 				{ 28,   680 }, -- Paladin / DD
 			},
 		},
---@end-version-bcc@]====]
+--@end-version-bcc@
 	},
 }
 
@@ -333,7 +333,7 @@ data["DungeonSets"] = {
 				{ 24, 516 }, -- Paladin
 			},
 		},
---[====[@version-bcc@
+--@version-bcc@
 		{ -- T0.5 / D2
 			name = format(AL["Dungeon Set %s"], "3"),
 			[NORMAL_DIFF] = {
@@ -352,7 +352,7 @@ data["DungeonSets"] = {
 				{ 22, 653 },
 			},
 		},
---@end-version-bcc@]====]
+--@end-version-bcc@
 	}
 }
 
@@ -514,7 +514,7 @@ data["MiscSets"] = {
 	},
 }
 
---[====[@version-bcc@
+--@version-bcc@
 data["WorldEpicsBCC"] = {
 	name = AL["World Epics"],
 	ContentType = COLLECTIONS_CONTENT,
@@ -574,7 +574,7 @@ data["WorldEpicsBCC"] = {
 		},
 	},
 }
---@end-version-bcc@]====]
+--@end-version-bcc@
 data["WorldEpics"] = {
 	name = AL["World Epics"],
 	ContentType = COLLECTIONS_CONTENT,
@@ -720,7 +720,7 @@ data["Mounts"] = {
 				{ 116,  8632 }, -- Reins of the Spotted Frostsaber
 				{ 117,  8631 }, -- Reins of the Striped Frostsaber
 				{ 118,  8629 }, -- Reins of the Striped Nightsaber
-			--[====[@version-bcc@
+			--@version-bcc@
 				{ 105, 29745 }, -- Great Blue Elekk
 				{ 106, 29746 }, -- Great Green Elekk
 				{ 107, 29747 }, -- Great Purple Elekk
@@ -734,7 +734,7 @@ data["Mounts"] = {
 				{ 124, 25470 }, -- Golden Gryphon
 				{ 125, 25471 }, -- Ebon Gryphon
 				{ 126, 25472 }, -- Snowy Gryphon
-			--@end-version-bcc@]====]
+			--@end-version-bcc@
 			},
 			[HORDE_DIFF] = {
 				{ 1,  18798 }, -- Horn of the Swift Gray Wolf
@@ -774,7 +774,7 @@ data["Mounts"] = {
 				{ 121, 25474 }, -- Tawny Windrider
 				{ 122, 25475 }, -- Blue Windrider
 				{ 123, 25476 }, -- Green Windrider
-			--@end-version-bcc@]====]
+			--@end-version-bcc@
 			},
 		},
 		{ -- PvPMountsPvP
@@ -785,7 +785,7 @@ data["Mounts"] = {
 				{ 4,  GetForVersion(18243,29465) }, -- Black Battlestrider
 				{ 5,  GetForVersion(18241,29468) }, -- Black War Steed Bridle
 				{ 6,  GetForVersion(18242,29471) }, -- Reins of the Black War Tiger
---[====[@version-bcc@
+--@version-bcc@
 				{ 7,  35906 }, -- Reins of the Black War Elekk
 				{ 9,  29228 }, -- Reins of the Dark War Talbuk
 				{ 10,  28915 }, -- Reins of the Dark Riding Talbuk
@@ -793,7 +793,7 @@ data["Mounts"] = {
 				{ 17,  34092 }, -- Merciless Nether Drake
 				{ 18,  37676 }, -- Vengeful Nether Drake
 				{ 19,  43516 }, -- Brutal Nether Drake
---@end-version-bcc@]====]
+--@end-version-bcc@
 			},
 			[HORDE_DIFF] = {
 				{ 1, 19029 }, -- Horn of the Frostwolf Howler
@@ -801,7 +801,7 @@ data["Mounts"] = {
 				{ 4, GetForVersion(18247,29466) }, -- Black War Kodo
 				{ 5, GetForVersion(18246,29472) }, -- Whistle of the Black War Raptor
 				{ 6, GetForVersion(18248,29470) }, -- Red Skeletal Warhorse
---[====[@version-bcc@
+--@version-bcc@
 				{ 7, 34129 }, -- Swift Warstrider
 				{ 9, 29228 }, -- Reins of the Dark War Talbuk
 				{ 10,  28915 }, -- Reins of the Dark Riding Talbuk
@@ -809,7 +809,7 @@ data["Mounts"] = {
 				{ 17,  34092 }, -- Merciless Nether Drake
 				{ 18,  37676 }, -- Vengeful Nether Drake
 				{ 19,  43516 }, -- Brutal Nether Drake
---@end-version-bcc@]====]
+--@end-version-bcc@
 			},
 		},
 		{
@@ -818,19 +818,19 @@ data["Mounts"] = {
 				{ 1, 13335 }, -- Deathcharger's Reins
 				{ 3, 19872 }, -- Swift Razzashi Raptor
 				{ 5, 19902 }, -- Swift Zulian Tiger
---[====[@version-bcc@
+--@version-bcc@
 				{ 7, 32768 }, -- Reins of the Raven Lord
 				{ 9, 33809 }, -- Amani War Bear
 				{ 16, 30480 }, -- Fiery Warhorse's Reins
 				{ 18, 32458 }, -- Ashes of Al'ar
---@end-version-bcc@]====]
+--@end-version-bcc@
 			},
 		},
 		{
 			name = AL["Reputation"],
 			[ALLIANCE_DIFF] = {
 				{ 1, 13086 }, -- Reins of the Winterspring Frostsaber
---[====[@version-bcc@
+--@version-bcc@
 				{ 3, 29227 }, -- Reins of the Cobalt War Talbuk
 				{ 4, 29229 }, -- Reins of the Silver War Talbuk
 				{ 5, 29230 }, -- Reins of the Tan War Talbuk
@@ -851,9 +851,9 @@ data["Mounts"] = {
                 { 27, 32860 }, -- Reins of the Purple Netherwing Drake
                 { 28, 32861 }, -- Reins of the Veridian Netherwing Drake
                 { 29, 32862 }, -- Reins of the Violet Netherwing Drake
---@end-version-bcc@]====]
+--@end-version-bcc@
 			},
---[====[@version-bcc@
+--@version-bcc@
 			[HORDE_DIFF] = {
 				{ 1, 29102 }, -- Reins of the Cobalt War Talbuk
 				{ 2, 29104 }, -- Reins of the Silver War Talbuk
@@ -878,9 +878,9 @@ data["Mounts"] = {
                 { 29, 32862 }, -- Reins of the Violet Netherwing Drake
 
 			},
---@end-version-bcc@]====]
+--@end-version-bcc@
 		},
---[====[@version-bcc@
+--@version-bcc@
 		{
 			name = AL["World Events"],
 			[NORMAL_DIFF] = {
@@ -903,19 +903,19 @@ data["Mounts"] = {
 				{ 2, 34060 }, -- Flying Machine Control
 			},
 		},
---@end-version-bcc@]====]
+--@end-version-bcc@
 		{
 			name = ALIL["Special"],
 			[NORMAL_DIFF] = {
 				{ 1, 21176 }, -- Black Qiraji Resonating Crystal
 				{ 3, 23720 }, -- Riding Turtle
---[====[@version-bcc@
+--@version-bcc@
 				{ 5, 33225 }, -- Reins of the Swift Spectral Tiger
 				{ 6, 33224 }, -- Reins of the Spectral Tiger
 				{ 8, 38576 }, -- Big Battle Bear
 				{ 16, 35226 }, -- X-51 Nether-Rocket X-TREME
 				{ 17, 35225 }, -- X-51 Nether-Rocket
---@end-version-bcc@]====]
+--@end-version-bcc@
 			},
 		},
 		{ -- AQ40
@@ -949,9 +949,9 @@ data["Tabards"] = {
 				{ 18, 23192 }, -- Tabard of the Scarlet Crusade
 				{ 19, 23705 }, -- Tabard of Flame
 				{ 20, 23709 }, -- Tabard of Frost
---[====[@version-bcc@
+--@version-bcc@
 				{ 22, 28788 }, -- Tabard of the Protector
---@end-version-bcc@]====]
+--@end-version-bcc@
 			},
 			[HORDE_DIFF] = {
 				GetItemsFromDiff = ALLIANCE_DIFF,
@@ -965,7 +965,7 @@ data["Tabards"] = {
 	},
 }
 
---[====[@version-bcc@
+--@version-bcc@
 data["LegendarysBCC"] = {
 	name = AL["Legendarys"],
 	ContentType = COLLECTIONS_CONTENT,
@@ -1000,7 +1000,7 @@ data["LegendarysBCC"] = {
 		},
 	},
 }
---@end-version-bcc@]====]
+--@end-version-bcc@
 
 data["Legendarys"] = {
 	name = AL["Legendarys"],
@@ -1262,7 +1262,7 @@ data["HalloweenTBC"] = {
 				{ 23, 20574 }, -- Flimsy Female Undead Mask
 			},
 		},
---[====[@version-bcc@
+--@version-bcc@
 		{ -- SMHeadlessHorseman
 			name = C_Map_GetAreaInfo(796).." - "..AL["Graveyard - Headless Horseman"],
 			[NORMAL_DIFF] = {
@@ -1282,7 +1282,7 @@ data["HalloweenTBC"] = {
                 { 24, 33154 }, -- Sinister Squashling
 			},
 		},
---@end-version-bcc@]====]
+--@end-version-bcc@
 	},
 }
 
@@ -1484,13 +1484,13 @@ data["Darkmoon"] = {
 				{ 3,  19267 }, -- Darkmoon Card: Maelstrom
 				{ 4,  19257 }, -- Darkmoon Card: Heroism
 				{ 5,  19277 }, -- Darkmoon Card: Twisting Nether
---[====[@version-bcc@
+--@version-bcc@
 				{ 7, "INV_Box_01", nil, AL["Burning Crusade"] },
 				{ 8,  31907 }, -- Darkmoon Card: Vengeance
 				{ 9,  31890 }, -- Darkmoon Card: Crusade
 				{ 10,  31891 }, -- Darkmoon Card: Wrath
 				{ 11,  31914 }, -- Darkmoon Card: Madness
---@end-version-bcc@]====]
+--@end-version-bcc@
 				{ 16,  19491, 19182, [ATLASLOOT_IT_AMOUNT2] = 1200 }, -- Amulet of the Darkmoon
 				{ 17,  19426, 19182, [ATLASLOOT_IT_AMOUNT2] = 1200 }, -- Orb of the Darkmoon
 				{ 19,  19293, 19182, [ATLASLOOT_IT_AMOUNT2] = 50 }, -- Last Year's Mutton

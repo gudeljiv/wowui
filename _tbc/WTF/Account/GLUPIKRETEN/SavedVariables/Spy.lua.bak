@@ -3,6 +3,10 @@ SpyDB = {
 	["kosData"] = {
 		["Golemagg"] = {
 			["Horde"] = {
+				["Mxyz"] = {
+				},
+				["Mxzq"] = {
+				},
 				["Vermin"] = {
 				},
 			},
@@ -16,9 +20,12 @@ SpyDB = {
 	},
 	["profileKeys"] = {
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 	},
 	["profiles"] = {
 		["Vermin - Golemagg"] = {
+			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 828.6608276367188,
@@ -33,8 +40,30 @@ SpyDB = {
 					},
 				},
 			},
-			["AppendUnitNameCheck"] = true,
+			["AppendUnitKoSCheck"] = true,
 			["BarTexture"] = "Glamour2",
+		},
+		["Mxyz - Golemagg"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Mxzq - Golemagg"] = {
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitNameCheck"] = true,
 			["AppendUnitKoSCheck"] = true,
 		},
 	},
