@@ -1,3 +1,9 @@
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Mongoose Bite
+/cast Raptor Strike
+END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast feign death
@@ -14,7 +20,6 @@ VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/petattack
 /cast Hunter's Mark
 END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
@@ -34,16 +39,9 @@ VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 /petattack
 /startattack
 /cast Arcane Shot
-/cast !Auto Shot
 END
 VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast rapid fire
-/cast blood fury
-END
-VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Mongoose Bite
-/cast Raptor Strike
+/cast Rapid Fire
+/cast Blood Fury
 END

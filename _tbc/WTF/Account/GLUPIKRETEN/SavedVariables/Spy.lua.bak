@@ -45,7 +45,6 @@ SpyDB = {
 		},
 		["Mxyz - Golemagg"] = {
 			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {

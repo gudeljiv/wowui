@@ -1,5 +1,5 @@
 local _, xVermin = ...
-local ib
+local ib, numQuests
 
 C_Timer.NewTicker(1, function(self)
 	if Questie_BaseFrame then
@@ -7,6 +7,15 @@ C_Timer.NewTicker(1, function(self)
 				Mixin(Questie_BaseFrame, BackdropTemplateMixin)
 			end
 			Questie_BaseFrame:HookScript("OnUpdate", function(self)
+
+				_, numQuests = GetNumQuestLogEntries()
+				if numQuests > 0 then
+					if not self:IsVisible() then self:Show() end
+				else
+					if self:IsVisible() then self:Hide() end
+				end
+
+
 				self:ClearAllPoints()
 				self:SetPoint("TOPRIGHT", "CustomContainer_2", "BOTTOMRIGHT", 0, -10)
 				self:CreateBeautyBorder(8)
