@@ -64,14 +64,11 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["forceColor"] = false,
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -453,14 +450,17 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
-			["desaturated"] = false,
+			["gap"] = 0,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["fixedStrata"] = true,
 			["fontName"] = "Friz Quadrata TT",
-			["moveFrames"] = false,
-			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["forceColor"] = false,
+			["desaturated"] = false,
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -537,7 +537,7 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 410894,
+		["total"] = 448896,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -573,7 +573,7 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 164287,
+		["total"] = 165623,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,
@@ -618,7 +618,7 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 425997,
+		["total"] = 440423,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,

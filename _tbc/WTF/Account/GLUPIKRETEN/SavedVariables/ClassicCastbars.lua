@@ -159,14 +159,14 @@ ClassicCastbarsDB = {
 	["version"] = "29",
 	["focus"] = {
 		["castFontSize"] = 10,
-		["showTimer"] = false,
+		["showTimer"] = true,
 		["textPoint"] = "CENTER",
-		["autoPosition"] = true,
+		["autoPosition"] = false,
 		["textPositionX"] = 0,
 		["showSpark"] = true,
 		["iconPositionX"] = -5,
 		["hideIconBorder"] = false,
-		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
+		["castStatusBar"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
 		["showIcon"] = true,
 		["borderColor"] = {
 			1, -- [1]
@@ -188,8 +188,8 @@ ClassicCastbarsDB = {
 			0.7, -- [3]
 			1, -- [4]
 		},
-		["enabled"] = false,
-		["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border-Small",
+		["enabled"] = true,
+		["castBorder"] = "Interface\\Tooltips\\UI-Tooltip-Border",
 		["frameLevel"] = 10,
 		["textPositionY"] = 0,
 		["castFont"] = "Fonts\\FRIZQT__.TTF",
@@ -215,8 +215,8 @@ ClassicCastbarsDB = {
 		},
 		["position"] = {
 			"CENTER", -- [1]
-			-19, -- [2]
-			-112, -- [3]
+			-10.7, -- [2]
+			-80.7, -- [3]
 		},
 		["height"] = 15,
 		["statusBackgroundColor"] = {
@@ -416,12 +416,12 @@ ClassicCastbarsDB = {
 	},
 	["target"] = {
 		["castFontSize"] = 10,
-		["autoPosition"] = true,
+		["autoPosition"] = false,
 		["textPoint"] = "CENTER",
 		["iconPositionX"] = -5,
 		["textPositionX"] = 0,
 		["showSpark"] = true,
-		["showTimer"] = false,
+		["showTimer"] = true,
 		["ignoreParentAlpha"] = false,
 		["castStatusBar"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
 		["showIcon"] = true,
@@ -472,8 +472,8 @@ ClassicCastbarsDB = {
 		},
 		["position"] = {
 			"CENTER", -- [1]
-			-18, -- [2]
-			-87, -- [3]
+			-10.5, -- [2]
+			-72.6, -- [3]
 		},
 		["height"] = 15,
 		["statusBackgroundColor"] = {

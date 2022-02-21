@@ -9,6 +9,7 @@ import win32gui
 
 aoe = False
 debug = False
+dprint = False
 
 x = 1280
 y = 860
@@ -27,23 +28,30 @@ skills = [
     {"name": "revenge", "key": "1", "r": 205, "g": 195, "b": 195, "rgb": (205, 195, 195)},
     {"name": "execute", "key": "f", "r": 76, "g": 17, "b": 21, "rgb": (76, 17, 21)},
     {"name": "mortal strike", "key": "f11", "r": 147, "g": 145, "b": 146, "rgb": (147, 145, 146), "aoe": False},
-    {"name": "whirlwind", "key": "6", "r": 105, "g": 212, "b": 240, "rgb": (105, 212, 240)}
+    {"name": "whirlwind", "key": "6", "r": 105, "g": 212, "b": 240, "rgb": (105, 212, 240)},
+
+    {"name": "mongoose bite", "key": "f10", "r": 135, "g": 133, "b": 135, "rgb": (135, 133, 135)},
     # {"name": "healing potion", "key": "6", "r": 227, "g": 34, "b": 27, "rgb": (227, 34, 27)}
 ]
 
 
 def on_press(key):
     global debug
+    global dprint
 
     try:
         if key == keyboard.Key.f12:
             debug = not debug
             print("debug:", debug)
+        if key == keyboard.Key.f8:
+            dprint = not dprint
+            print("dprint:", dprint)
     except:
         return
 
 
 with keyboard.Listener(on_press=on_press) as listener:
+
     while True:
 
         time.sleep(0.25)
@@ -51,22 +59,28 @@ with keyboard.Listener(on_press=on_press) as listener:
 
         # ako je chat otvoren.. ili nesto trece... ako je kockica bijela
         if pyautogui.pixel(x_aoe, y_aoe) == (255, 254, 255):
-            print("skipping", "...")
+            if dprint:
+                print("skipping", "...")
             continue
 
         if pyautogui.pixel(x_interrupt, y_interrupt) == (0, 254, 0):
-            print("interrupt", "f9")
+            if dprint:
+                print("interrupt", "f9")
             pyautogui.press("f9", presses=3)
-            continue
+            pyautogui.press("f9", presses=3)
+            pyautogui.press("f9", presses=3)
+            pyautogui.press("f9", presses=3)
 
         if debug:
             time.sleep(1)
-            print("coords:", pyautogui.pixel(x, y), active_window)
+            if dprint:
+                print("coords:", pyautogui.pixel(x, y), active_window)
         else:
             if(active_window != "World of Warcraft"):
                 continue
 
             for skill in skills:
                 if pyautogui.pixel(x, y) == skill["rgb"]:
-                    print(skill["name"], skill["key"])
+                    if dprint:
+                        print(skill["name"], skill["key"])
                     pyautogui.press(skill["key"], presses=3)

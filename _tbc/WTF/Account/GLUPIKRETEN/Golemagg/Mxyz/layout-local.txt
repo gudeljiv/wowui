@@ -30,7 +30,7 @@ H: 260
 Frame: DressUpFrame
 FrameLevel: 1
 Anchor: TOP
-X: -254
+X: -344
 Y: -104
 W: 384
 H: 512

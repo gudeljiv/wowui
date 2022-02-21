@@ -50,7 +50,7 @@ FarmHudDB = {
 		0.7, -- [4]
 	},
 	["buttons_show"] = false,
-	["holdKeyForMouseOn"] = "_none",
+	["holdKeyForMouseOn"] = "_NONE",
 	["coords_show"] = false,
 	["showDummy"] = true,
 	["tracking^135861"] = "client",

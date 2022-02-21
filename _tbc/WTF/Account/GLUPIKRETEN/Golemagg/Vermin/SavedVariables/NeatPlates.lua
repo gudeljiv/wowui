@@ -2,7 +2,6 @@
 NeatPlatesOptions = {
 	["BlizzardScaling"] = false,
 	["EnemyAutomation"] = {
-		["Combat"] = "show",
 	},
 	["ForceHealthUpdates"] = false,
 	["ActiveTheme"] = "Neon",

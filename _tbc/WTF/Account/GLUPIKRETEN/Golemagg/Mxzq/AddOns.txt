@@ -1,4 +1,4 @@
-nPower: enabled
+nPower: disabled
 nHealth: enabled
 Immersion: disabled
 AdiBags: enabled

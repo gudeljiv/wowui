@@ -1,6 +1,6 @@
-## Interface: 11401
+## Interface: 20503
 ## Author: Lag
-## Version: v2.4.0
+## Version: v2.4.1-bcc
 ## Dependencies: AtlasLootClassic
 ## LoadOnDemand: 1
 

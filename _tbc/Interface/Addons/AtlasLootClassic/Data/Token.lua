@@ -294,7 +294,7 @@ local TOKEN = {
 	[21187] = 21178, -- Earthweave Cloak
 	[21179] = 21178, -- Band of Earthen Wrath
 
---[====[@version-bcc@
+--@version-bcc@
 
 	--- T4
 	-- Head
@@ -413,7 +413,7 @@ local TOKEN = {
 	-- Brewfest
 	[33016] = { 33017, 33018, 33019, 33020, 33021 }, -- Blue Brewfest Stein
 	[32912] = { 32917, 32918, 32920, 32915, 32919 }, -- Yellow Brewfest Stein
---@end-version-bcc@]====]
+--@end-version-bcc@
 }
 
 local function Init()

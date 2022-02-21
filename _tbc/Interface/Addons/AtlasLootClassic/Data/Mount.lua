@@ -119,7 +119,7 @@ local MOUNT_LIST = {
     [23720] = 17158, -- Riding Turtle
     [21176] = 15677, -- Black Qiraji Resonating Crystal
     [20221] = 15293, -- Foror's Fabled Steed
---[====[@version-bcc@
+--@version-bcc@
     -- factionMounts
     [29745] = 19871, -- Great Blue Elekk
     [29746] = 19873, -- Great Green Elekk
@@ -216,7 +216,7 @@ local MOUNT_LIST = {
     [37011] = 21939, -- Magic Broom
     [33183] = 21939, -- Old Magic Broom
     [33189] = 21939, -- Rickety Magic Broom
---@end-version-bcc@]====]
+--@end-version-bcc@
 }
 
 

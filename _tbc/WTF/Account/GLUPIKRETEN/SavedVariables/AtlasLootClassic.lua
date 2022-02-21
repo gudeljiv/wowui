@@ -41,7 +41,7 @@ AtlasLootClassicDB = {
 		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
 	},
 	["global"] = {
-		["__addonrevision"] = 2040000,
+		["__addonrevision"] = 2040001,
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -317,10 +317,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["selectedGameVersion"] = 1,
 				["selected"] = {
@@ -337,6 +333,10 @@ AtlasLootClassicDB = {
 					-226.2529449462891, -- [4]
 					-159.2184143066406, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Jaroslav - Golemagg"] = {
@@ -358,19 +358,20 @@ AtlasLootClassicDB = {
 		},
 		["Default"] = {
 			["GUI"] = {
-				["point"] = {
-					"LEFT", -- [1]
-					nil, -- [2]
-					"LEFT", -- [3]
-					238.9998168945313, -- [4]
-					119.7502059936523, -- [5]
-				},
+				["selectedGameVersion"] = 1,
 				["selected"] = {
 					nil, -- [1]
-					"ScarletMonasteryCathedral", -- [2]
-					3, -- [3]
+					"Uldaman", -- [2]
+					10, -- [3]
 					1, -- [4]
 					0, -- [5]
+				},
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-344.3334350585938, -- [4]
+					141.3907928466797, -- [5]
 				},
 			},
 			["Addons"] = {

@@ -1263,7 +1263,7 @@ data["ScarletMonasteryGraveyard"] = {
 				{ 14, 7730 }, -- Cobalt Crusher
 			},
 		},
---[====[@version-bcc@
+--@version-bcc@
         { -- SMHeadlessHorseman
             name = AL["Headless Horseman"],
             npcID = 23682,
@@ -1288,7 +1288,7 @@ data["ScarletMonasteryGraveyard"] = {
                 { 24, 33154 }, -- Sinister Squashling
             }
         },
---@end-version-bcc@]====]
+--@end-version-bcc@
 		KEYS,
 	},
 }

@@ -25,12 +25,10 @@ VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:4599
+#showtooltip item:12203
 /cast feed pet
-/use item:4599
+/use item:12203
 END
 VER 3 000000000000000B "TEST" "132089"
-/run BuffButton1:ClearAllPoints()
-/run BuffButton1:SetPoint("TOPRIGHT", MinimapCluster, "TOPLEFT", 0, -65)
-/run MinimapCluster:CreateBeautyBorder(5)
+/run ChatFrame7Background:SetAlpha(1)
 END
