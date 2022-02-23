@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 4648,
 	["lastSanitation"] = 3,
+	["session"] = 4649,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",

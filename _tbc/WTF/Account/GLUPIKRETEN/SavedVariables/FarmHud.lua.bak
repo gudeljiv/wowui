@@ -39,38 +39,38 @@ FarmHudDB = {
 	["rotation"] = true,
 	["buttons_alpha"] = 0.6,
 	["tracking^136025"] = "client",
-	["buttons_radius"] = 0.56,
+	["tracking^136142"] = "client",
 	["player_dot"] = "blizz",
 	["hud_size"] = 1,
-	["tracking^132275"] = "client",
+	["buttons_show"] = false,
 	["mouseoverinfo_color"] = {
 		1, -- [1]
 		0.82, -- [2]
 		0, -- [3]
 		0.7, -- [4]
 	},
-	["buttons_show"] = false,
-	["holdKeyForMouseOn"] = "_NONE",
+	["tracking^132275"] = "client",
+	["tracking^135942"] = "client",
 	["coords_show"] = false,
+	["cardinalpoints_show"] = true,
 	["showDummy"] = true,
-	["tracking^135861"] = "client",
-	["SuperTrackedQuest"] = true,
+	["tracking^136455"] = "client",
 	["gathercircle_show"] = true,
 	["tracking^136464"] = "client",
 	["tracking^136453"] = "client",
-	["cardinalpoints_radius"] = 0.475,
-	["coords_bottom"] = false,
 	["tracking^132320"] = "client",
-	["tracking^136454"] = "client",
+	["tracking^136217"] = "client",
+	["cardinalpoints_radius"] = 0.475,
+	["healcircle_color"] = {
+		0, -- [1]
+		0.7, -- [2]
+		1, -- [3]
+		0.5, -- [4]
+	},
 	["tracking^136451"] = "client",
 	["buttons_buttom"] = false,
 	["time_bottom"] = false,
-	["time_color"] = {
-		1, -- [1]
-		0.82, -- [2]
-		0, -- [3]
-		0.7, -- [4]
-	},
+	["tracking^133939"] = "client",
 	["MinimapIcon"] = {
 		["minimapPos"] = 220,
 		["radius"] = 80,
@@ -79,20 +79,20 @@ FarmHudDB = {
 	["text_scale"] = 1.5,
 	["showDummyBg"] = true,
 	["time_show"] = false,
-	["tracking^133939"] = "client",
-	["healcircle_color"] = {
-		0, -- [1]
-		0.7, -- [2]
-		1, -- [3]
-		0.5, -- [4]
+	["time_color"] = {
+		1, -- [1]
+		0.82, -- [2]
+		0, -- [3]
+		0.7, -- [4]
 	},
-	["tracking^136217"] = "client",
+	["tracking^136454"] = "client",
+	["coords_bottom"] = false,
 	["healcircle_show"] = false,
 	["time_radius"] = 0.48,
-	["tracking^136455"] = "client",
-	["cardinalpoints_show"] = true,
-	["tracking^135942"] = "client",
+	["SuperTrackedQuest"] = true,
+	["tracking^135861"] = "client",
+	["holdKeyForMouseOn"] = "_NONE",
 	["time_local"] = true,
 	["tracking^136452"] = "client",
-	["tracking^136142"] = "client",
+	["buttons_radius"] = 0.56,
 }
