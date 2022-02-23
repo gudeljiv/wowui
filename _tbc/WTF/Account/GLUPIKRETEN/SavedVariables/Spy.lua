@@ -44,6 +44,13 @@ SpyDB = {
 			["BarTexture"] = "Glamour2",
 		},
 		["Mxyz - Golemagg"] = {
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = 883.6232299804688,
+					["x"] = 513.337646484375,
+					["h"] = 34.99994277954102,
+				},
+			},
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -52,7 +59,9 @@ SpyDB = {
 				},
 			},
 			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
+			["HideSpy"] = true,
 		},
 		["Mxzq - Golemagg"] = {
 			["AppendUnitNameCheck"] = true,
