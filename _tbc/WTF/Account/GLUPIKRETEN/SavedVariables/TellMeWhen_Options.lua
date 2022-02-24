@@ -4,57 +4,35 @@ TMWOptDB = {
 		["enus"] = {
 			["ItemCache"] = {
 				[1645365478] = {
-					["|cff1eff00|Hitem:15605::::::605:::::::::::|h[Ancient Gauntlets of the Monkey]|h|r"] = 1,
-					["|cffffffff|Hitem:11285:::::::::::::::::|h[Jagged Arrow]|h|r"] = 1,
-					["|cffffffff|Hitem:6149:::::::::::::::::|h[Greater Mana Potion]|h|r"] = 1,
-					["|cff1eff00|Hitem:14241::::::215:::::::::::|h[Darkmist Handguards of Spirit]|h|r"] = 1,
-					["|cffffffff|Hitem:8153:::::::::::::::::|h[Wildvine]|h|r"] = 1,
-					["|cffffffff|Hitem:8483:::::::::::::::::|h[Wastewander Water Pouch]|h|r"] = 1,
-					["|cff1eff00|Hitem:8398:::::::::::::::::|h[Pattern: Tough Scorpid Gloves]|h|r"] = 1,
-					["|cff1eff00|Hitem:7552:::::::::::::::::|h[Falcon's Hook]|h|r"] = 1,
-					["|cffffffff|Hitem:3928:::::::::::::::::|h[Superior Healing Potion]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:3961:::::::::::::::::|h[Thick Leather Belt]|h|r"] = 1,
-					["|cffffffff|Hitem:8831:::::::::::::::::|h[Purple Lotus]|h|r"] = 1,
-					["|cff1eff00|Hitem:33273:::::::::::::::::|h[Seasoned Marshwood Bow]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:3778:::::::::::::::::|h[Taut Compound Bow]|h|r"] = 1,
-					["|cff1eff00|Hitem:15591::::::617:::::::::::|h[Steadfast Breastplate of the Monkey]|h|r"] = 1,
-					["|cff1eff00|Hitem:15603::::::514:::::::::::|h[Ancient Cloak of the Wolf]|h|r"] = 1,
-					["|cff1eff00|Hitem:6422:::::::::::::::::|h[Glyphed Helm]|h|r"] = 1,
-					["|cffffffff|Hitem:4306:::::::::::::::::|h[Silk Cloth]|h|r"] = 1,
-					["|cff1eff00|Hitem:14421:::::::::::::::::|h[Silksand Circlet]|h|r"] = 1,
-					["|cffffffff|Hitem:4338:::::::::::::::::|h[Mageweave Cloth]|h|r"] = 1,
-					["|cffffffff|Hitem:2772:::::::::::::::::|h[Iron Ore]|h|r"] = 1,
 					["|cff1eff00|Hitem:15234::::::1020:::::::::::|h[Greater Scythe of the Whale]|h|r"] = 1,
-					["|cff0070dd|Hitem:6690:::::::::::::::::|h[Ferine Leggings]|h|r"] = 1,
-					["|cff1eff00|Hitem:9633:::::::::::::::::|h[Jangdor's Handcrafted Boots]|h|r"] = 1,
+					["|cff1eff00|Hitem:14421:::::::::::::::::|h[Silksand Circlet]|h|r"] = 1,
+					["|cffffffff|Hitem:4306:::::::::::::::::|h[Silk Cloth]|h|r"] = 1,
 					["|cffffffff|Hitem:8443:::::::::::::::::|h[Gahz'ridian Ornament]|h|r"] = 1,
-					["|cffffffff|Hitem:1710:::::::::::::::::|h[Greater Healing Potion]|h|r"] = 1,
-					["|cff1eff00|Hitem:33263:::::::::::::::::|h[Raptor Eye Ring]|h|r"] = 1,
-					["|cff1eff00|Hitem:4637:::::::::::::::::|h[Steel Lockbox]|h|r"] = 1,
-					["|cff1eff00|Hitem:33250:::::::::::::::::|h[Archer's Wristguard]|h|r"] = 1,
-					["|cffffffff|Hitem:9245:::::::::::::::::|h[Stoley's Bottle]|h|r"] = 1,
-					["|cff1eff00|Hitem:866::::::614:::::::::::|h[Monk's Staff of the Monkey]|h|r"] = 1,
+					["|cff1eff00|Hitem:14241::::::215:::::::::::|h[Darkmist Handguards of Spirit]|h|r"] = 1,
+					["|cffffffff|Hitem:2772:::::::::::::::::|h[Iron Ore]|h|r"] = 1,
+					["|cffffffff|Hitem:4424:::::::::::::::::|h[Scroll of Spirit III]|h|r"] = 1,
+					["|cff1eff00|Hitem:4568::::::17:::::::::::|h[Grunt Axe of Agility]|h|r"] = 1,
 					["|cff1eff00|Hitem:7909:::::::::::::::::|h[Aquamarine]|h|r"] = 1,
 					["|cffffffff|Hitem:9369:::::::::::::::::|h[Iridescent Sprite Darter Wing]|h|r"] = 1,
-					["|cff1eff00|Hitem:33261:::::::::::::::::|h[Destroyer's Cloak]|h|r"] = 1,
-					["|cff0070dd|Hitem:1132:::::::::::::::::|h[Horn of the Timber Wolf]|h|r"] = 1,
-					["|cffffffff|Hitem:4599:::::::::::::::::|h[Cured Ham Steak]|h|r"] = 1,
+					["|cffffffff|Hitem:8153:::::::::::::::::|h[Wildvine]|h|r"] = 1,
+					["|cff1eff00|Hitem:7552:::::::::::::::::|h[Falcon's Hook]|h|r"] = 1,
 					["|cff1eff00|Hitem:14255::::::1030:::::::::::|h[Lunar Belt of the Whale]|h|r"] = 1,
-					["|cffffffff|Hitem:929:::::::::::::::::|h[Healing Potion]|h|r"] = 1,
-					["|cffffffff|Hitem:1645:::::::::::::::::|h[Moonberry Juice]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:3961:::::::::::::::::|h[Thick Leather Belt]|h|r"] = 1,
+					["|cff1eff00|Hitem:4637:::::::::::::::::|h[Steel Lockbox]|h|r"] = 1,
+					["|cff1eff00|Hitem:8398:::::::::::::::::|h[Pattern: Tough Scorpid Gloves]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:3784:::::::::::::::::|h[Metal Stave]|h|r"] = 1,
+					["|cffffffff|Hitem:4599:::::::::::::::::|h[Cured Ham Steak]|h|r"] = 1,
+					["|cffffffff|Hitem:1645:::::::::::::::::|h[Moonberry Juice]|h|r"] = 1,
+					["|cffffffff|Hitem:8831:::::::::::::::::|h[Purple Lotus]|h|r"] = 1,
 					["|cffffffff|Hitem:9260:::::::::::::::::|h[Volatile Rum]|h|r"] = 1,
-					["|cffffffff|Hitem:2901:::::::::::::::::|h[Mining Pick]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:3942:::::::::::::::::|h[Crochet Shoulderpads]|h|r"] = 1,
-					["|cffffffff|Hitem:10699:::::::::::::::::|h[Yeh'kinya's Bramble]|h|r"] = 1,
-					["|cff1eff00|Hitem:4568::::::17:::::::::::|h[Grunt Axe of Agility]|h|r"] = 1,
-					["|cff1eff00|Hitem:7387:::::::::::::::::|h[Dusky Belt]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:3778:::::::::::::::::|h[Taut Compound Bow]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:4019:::::::::::::::::|h[Heavy Flint Axe]|h|r"] = 1,
 					["|cff0070dd|Hitem:6692:::::::::::::::::|h[Pronged Reaver]|h|r"] = 1,
-					["|cffffffff|Hitem:4424:::::::::::::::::|h[Scroll of Spirit III]|h|r"] = 1,
+					["|cff1eff00|Hitem:15603::::::514:::::::::::|h[Ancient Cloak of the Wolf]|h|r"] = 1,
 					["|cff1eff00|Hitem:8395:::::::::::::::::|h[Pattern: Tough Scorpid Breastplate]|h|r"] = 1,
 					["|cffffffff|Hitem:9978:::::::::::::::::|h[Gahz'ridian Detector]|h|r"] = 1,
-					["|cff1eff00|Hitem:15127::::::766:::::::::::|h[Robust Shoulders of the Owl]|h|r"] = 1,
+					["|cffffffff|Hitem:4338:::::::::::::::::|h[Mageweave Cloth]|h|r"] = 1,
 				},
 				[1644514523] = {
 					["|cffffffff|Hitem:19020:::::::::::::::::|h[Camp Mojache Zukk'ash Report]|h|r"] = 1,
@@ -69,19 +47,9 @@ TMWOptDB = {
 					["|cff9d9d9d|Hitem:15794:::::::::::::::::|h[Ripped Ogre Loincloth]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:11409:::::::::::::::::|h[Bear Organ]|h|r"] = 1,
 					["|cff1eff00|Hitem:33237:::::::::::::::::|h[Brogg's Battle Harness]|h|r"] = 1,
-					["|cff1eff00|Hitem:9658:::::::::::::::::|h[Boots of the Maharishi]|h|r"] = 1,
-					["|cffffffff|Hitem:9629:::::::::::::::::|h[A Shrunken Head]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:15798:::::::::::::::::|h[Chipped Ogre Teeth]|h|r"] = 1,
-				},
-				[1643201091] = {
-					["|cffffffff|Hitem:769:::::::::::::::::|h[Chunk of Boar Meat]|h|r"] = 1,
-					["|cffffffff|Hitem:4925:::::::::::::::::|h[Primitive Hand Blade]|h|r"] = 1,
-					["|cffffffff|Hitem:4992:::::::::::::::::|h[Recruitment Letter]|h|r"] = 1,
-					["|cffffffff|Hitem:4883:::::::::::::::::|h[Admiral Proudmoore's Orders]|h|r"] = 1,
-					["|cffffffff|Hitem:2070:::::::::::::::::|h[Darnassian Bleu]|h|r"] = 1,
-					["|cffffffff|Hitem:118:::::::::::::::::|h[Minor Healing Potion]|h|r"] = 1,
-					["|cffffffff|Hitem:3274:::::::::::::::::|h[Flax Boots]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:3171:::::::::::::::::|h[Broken Boar Tusk]|h|r"] = 1,
+					["|cffffffff|Hitem:9629:::::::::::::::::|h[A Shrunken Head]|h|r"] = 1,
+					["|cff1eff00|Hitem:9658:::::::::::::::::|h[Boots of the Maharishi]|h|r"] = 1,
 				},
 				[1643401330] = {
 					["|cff1eff00|Hitem:14783:::::::::::::::::|h[Khan's Belt]|h|r"] = 1,
@@ -93,33 +61,33 @@ TMWOptDB = {
 					["|cffffffff|Hitem:14544:::::::::::::::::|h[Lieutenant's Insignia]|h|r"] = 1,
 					["|cff1eff00|Hitem:11288:::::::::::::::::|h[Greater Magic Wand]|h|r"] = 1,
 					["|cffffffff|Hitem:2455:::::::::::::::::|h[Minor Mana Potion]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:5123:::::::::::::::::|h[Steel Arrowhead]|h|r"] = 1,
 					["|cffffffff|Hitem:15299:::::::::::::::::|h[Grizzly Cape]|h|r"] = 1,
-					["|cffffffff|Hitem:159:::::::::::::::::|h[Refreshing Spring Water]|h|r"] = 1,
+					["|cffffffff|Hitem:6062:::::::::::::::::|h[Heavy Cord Bracers]|h|r"] = 1,
 					["|cffffffff|Hitem:5469:::::::::::::::::|h[Strider Meat]|h|r"] = 1,
 					["|cffffffff|Hitem:2589:::::::::::::::::|h[Linen Cloth]|h|r"] = 1,
 					["|cffffffff|Hitem:117:::::::::::::::::|h[Tough Jerky]|h|r"] = 1,
 					["|cffffffff|Hitem:11848:::::::::::::::::|h[Flax Belt]|h|r"] = 1,
-					["|cff1eff00|Hitem:11287:::::::::::::::::|h[Lesser Magic Wand]|h|r"] = 1,
-					["|cffffffff|Hitem:15483:::::::::::::::::|h[War Torn Cape]|h|r"] = 1,
+					["|cffffffff|Hitem:4936:::::::::::::::::|h[Dirt-trodden Boots]|h|r"] = 1,
+					["|cffffffff|Hitem:6713:::::::::::::::::|h[Ripped Pants]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:5114:::::::::::::::::|h[Severed Talon]|h|r"] = 1,
 					["|cffffffff|Hitem:5062:::::::::::::::::|h[Raptor Head]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:5123:::::::::::::::::|h[Steel Arrowhead]|h|r"] = 1,
-					["|cffffffff|Hitem:6713:::::::::::::::::|h[Ripped Pants]|h|r"] = 1,
 					["|cffffffff|Hitem:17056:::::::::::::::::|h[Light Feather]|h|r"] = 1,
-					["|cffffffff|Hitem:4936:::::::::::::::::|h[Dirt-trodden Boots]|h|r"] = 1,
+					["|cff1eff00|Hitem:11287:::::::::::::::::|h[Lesser Magic Wand]|h|r"] = 1,
+					["|cffffffff|Hitem:6265:::::::::::::::::|h[Soul Shard]|h|r"] = 1,
 					["|cffffffff|Hitem:4932:::::::::::::::::|h[Harpy Wing Clipper]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:2635:::::::::::::::::|h[Loose Chain Belt]|h|r"] = 1,
-					["|cffffffff|Hitem:6265:::::::::::::::::|h[Soul Shard]|h|r"] = 1,
-					["|cffffffff|Hitem:6062:::::::::::::::::|h[Heavy Cord Bracers]|h|r"] = 1,
+					["|cffffffff|Hitem:15483:::::::::::::::::|h[War Torn Cape]|h|r"] = 1,
 					["|cffffffff|Hitem:4916:::::::::::::::::|h[Soft Wool Vest]|h|r"] = 1,
+					["|cffffffff|Hitem:159:::::::::::::::::|h[Refreshing Spring Water]|h|r"] = 1,
 				},
 				[1643878989] = {
 					["|cffffffff|Hitem:5785:::::::::::::::::|h[Thick Murloc Scale]|h|r"] = 1,
 					["|cffffffff|Hitem:33110:::::::::::::::::|h[Razorspine's Sword]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:4555:::::::::::::::::|h[Thick Scaly Tail]|h|r"] = 1,
+					["|cffffffff|Hitem:6362:::::::::::::::::|h[Raw Rockscale Cod]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:770:::::::::::::::::|h[Pointy Crocolisk Tooth]|h|r"] = 1,
 					["|cffffffff|Hitem:17057:::::::::::::::::|h[Shiny Fish Scales]|h|r"] = 1,
-					["|cffffffff|Hitem:6362:::::::::::::::::|h[Raw Rockscale Cod]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:4555:::::::::::::::::|h[Thick Scaly Tail]|h|r"] = 1,
 				},
 				[1645039898] = {
 					["|cff9d9d9d|Hitem:4591:::::::::::::::::|h[Eagle Eye]|h|r"] = 1,
@@ -128,17 +96,17 @@ TMWOptDB = {
 				[1645183584] = {
 					["|cff9d9d9d|Hitem:878:::::::::::::::::|h[Fist-sized Spinneret]|h|r"] = 1,
 					["|cffffffff|Hitem:22644:::::::::::::::::|h[Crunchy Spider Leg]|h|r"] = 1,
-					["|cffffffff|Hitem:2251:::::::::::::::::|h[Gooey Spider Leg]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:3702:::::::::::::::::|h[Bear Gall Bladder]|h|r"] = 1,
-					["|cffffffff|Hitem:3182:::::::::::::::::|h[Spider's Silk]|h|r"] = 1,
 					["|cff1eff00|Hitem:19118:::::::::::::::::|h[Nature's Breath]|h|r"] = 1,
+					["|cffffffff|Hitem:3182:::::::::::::::::|h[Spider's Silk]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:3702:::::::::::::::::|h[Bear Gall Bladder]|h|r"] = 1,
+					["|cffffffff|Hitem:2251:::::::::::::::::|h[Gooey Spider Leg]|h|r"] = 1,
 				},
 				[1643833936] = {
 					["|cff1eff00|Hitem:9886::::::598:::::::::::|h[Huntsman's Bands of the Monkey]|h|r"] = 1,
 				},
 				[1644138408] = {
-					["|cff1eff00|Hitem:2987:::::::::::::::::|h[Inscribed Leather Boots]|h|r"] = 1,
 					["|cffffffff|Hitem:5918:::::::::::::::::|h[Defiant Orc Head]|h|r"] = 1,
+					["|cff1eff00|Hitem:2987:::::::::::::::::|h[Inscribed Leather Boots]|h|r"] = 1,
 				},
 				[1645123369] = {
 					["|cffffffff|Hitem:19071:::::::::::::::::|h[Vessel of Tainted Blood]|h|r"] = 1,
@@ -156,24 +124,24 @@ TMWOptDB = {
 					["|cffffffff|Hitem:7067:::::::::::::::::|h[Elemental Earth]|h|r"] = 1,
 					["|cffffffff|Hitem:2771:::::::::::::::::|h[Tin Ore]|h|r"] = 1,
 					["|cff1eff00|Hitem:4086:::::::::::::::::|h[Flash Rifle]|h|r"] = 1,
-					["|cff1eff00|Hitem:4979:::::::::::::::::|h[Enchanted Stonecloth Bracers]|h|r"] = 1,
 					["|cffffffff|Hitem:4852:::::::::::::::::|h[Flash Bomb]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:1688:::::::::::::::::|h[Long Soft Tail]|h|r"] = 1,
-					["|cffffffff|Hitem:8150:::::::::::::::::|h[Deeprock Salt]|h|r"] = 1,
-					["|cffffffff|Hitem:4582:::::::::::::::::|h[Soft Bushy Tail]|h|r"] = 1,
+					["|cff1eff00|Hitem:4979:::::::::::::::::|h[Enchanted Stonecloth Bracers]|h|r"] = 1,
 					["|cffffffff|Hitem:4609:::::::::::::::::|h[Recipe: Barbecued Buzzard Wing]|h|r"] = 1,
-					["|cff1eff00|Hitem:7448::::::255:::::::::::|h[Sentinel Girdle of the Falcon]|h|r"] = 1,
+					["|cffffffff|Hitem:8150:::::::::::::::::|h[Deeprock Salt]|h|r"] = 1,
 					["|cffffffff|Hitem:2863:::::::::::::::::|h[Coarse Sharpening Stone]|h|r"] = 1,
+					["|cffffffff|Hitem:4582:::::::::::::::::|h[Soft Bushy Tail]|h|r"] = 1,
+					["|cff1eff00|Hitem:7448::::::255:::::::::::|h[Sentinel Girdle of the Falcon]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:1688:::::::::::::::::|h[Long Soft Tail]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:4784:::::::::::::::::|h[Lifeless Stone]|h|r"] = 1,
 				},
 				[1644663322] = {
 					["|cffffffff|Hitem:9589:::::::::::::::::|h[Encrusted Minerals]|h|r"] = 1,
 					["|cff1eff00|Hitem:14262::::::2040:::::::::::|h[Bloodwoven Mitts of Healing]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:4460:::::::::::::::::|h[Ripped Wing Webbing]|h|r"] = 1,
+					["|cffffffff|Hitem:9591:::::::::::::::::|h[Resilient Sinew]|h|r"] = 1,
 					["|cffffffff|Hitem:4096:::::::::::::::::|h[Coarse Gorilla Hair]|h|r"] = 1,
 					["|cffffffff|Hitem:9592:::::::::::::::::|h[Metallic Fragments]|h|r"] = 1,
 					["|cff1eff00|Hitem:8705:::::::::::::::::|h[OOX-22/FE Distress Beacon]|h|r"] = 1,
-					["|cffffffff|Hitem:9591:::::::::::::::::|h[Resilient Sinew]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:6444:::::::::::::::::|h[Forked Tongue]|h|r"] = 1,
 					["|cff1eff00|Hitem:10702:::::::::::::::::|h[Enormous Ogre Boots]|h|r"] = 1,
 					["|cff1eff00|Hitem:12054:::::::::::::::::|h[Demon Band]|h|r"] = 1,
@@ -195,65 +163,65 @@ TMWOptDB = {
 					["|cff9d9d9d|Hitem:1520:::::::::::::::::|h[Troll Sweat]|h|r"] = 1,
 					["|cffffffff|Hitem:8146:::::::::::::::::|h[Wicked Claw]|h|r"] = 1,
 					["|cff1eff00|Hitem:9705:::::::::::::::::|h[Tharg's Shoelace]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:3676:::::::::::::::::|h[Slimy Ichor]|h|r"] = 1,
+					["|cff1eff00|Hitem:12689:::::::::::::::::|h[Plans: Radiant Breastplate]|h|r"] = 1,
 					["|cff0070dd|Hitem:10330:::::::::::::::::|h[Scarlet Leggings]|h|r"] = 1,
 					["|cff0070dd|Hitem:2815:::::::::::::::::|h[Curve-bladed Ripper]|h|r"] = 1,
-					["|cff1eff00|Hitem:12689:::::::::::::::::|h[Plans: Radiant Breastplate]|h|r"] = 1,
-					["|cffffffff|Hitem:12208:::::::::::::::::|h[Tender Wolf Meat]|h|r"] = 1,
 					["|cffffffff|Hitem:12203:::::::::::::::::|h[Red Wolf Meat]|h|r"] = 1,
+					["|cffffffff|Hitem:12208:::::::::::::::::|h[Tender Wolf Meat]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:3676:::::::::::::::::|h[Slimy Ichor]|h|r"] = 1,
 					["|cff1eff00|Hitem:12040::::::598:::::::::::|h[Forest Pendant of the Monkey]|h|r"] = 1,
 				},
 				[1643619867] = {
-					["|cff1eff00|Hitem:9518:::::::::::::::::|h[Mud's Crushers]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:6826:::::::::::::::::|h[Brilliant Scale]|h|r"] = 1,
-					["|cffffffff|Hitem:3033:::::::::::::::::|h[Solid Shot]|h|r"] = 1,
 					["|cffffffff|Hitem:9460:::::::::::::::::|h[Grimtotem Horn]|h|r"] = 1,
-					["|cff1eff00|Hitem:4132:::::::::::::::::|h[Darkspear Armsplints]|h|r"] = 1,
+					["|cffffffff|Hitem:3033:::::::::::::::::|h[Solid Shot]|h|r"] = 1,
 					["|cff1eff00|Hitem:3430::::::677:::::::::::|h[Sniper Rifle of the Tiger]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:3669:::::::::::::::::|h[Gelatinous Goo]|h|r"] = 1,
 					["|cffffffff|Hitem:8173:::::::::::::::::|h[Thick Armor Kit]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:3669:::::::::::::::::|h[Gelatinous Goo]|h|r"] = 1,
+					["|cff1eff00|Hitem:9518:::::::::::::::::|h[Mud's Crushers]|h|r"] = 1,
+					["|cff1eff00|Hitem:4132:::::::::::::::::|h[Darkspear Armsplints]|h|r"] = 1,
 				},
 				[1645205777] = {
-					["|cff1eff00|Hitem:9399:::::::::::::::::|h[Precision Arrow]|h|r"] = 1,
+					["|cff1eff00|Hitem:19037:::::::::::::::::|h[Emerald Peak Spaulders]|h|r"] = 1,
 					["|cff0070dd|Hitem:6975:::::::::::::::::|h[Whirlwind Axe]|h|r"] = 1,
 					["|cff0070dd|Hitem:9398:::::::::::::::::|h[Worn Running Boots]|h|r"] = 1,
+					["|cffffffff|Hitem:21745:::::::::::::::::|h[Elder's Moonstone]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:6302:::::::::::::::::|h[Delicate Insect Wing]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:6300:::::::::::::::::|h[Husk Fragment]|h|r"] = 1,
+					["|cff0070dd|Hitem:5665:::::::::::::::::|h[Horn of the Dire Wolf]|h|r"] = 1,
 					["|cff0070dd|Hitem:9388::::::599:::::::::::|h[Revelosh's Armguards of the Monkey]|h|r"] = 1,
-					["|cff1eff00|Hitem:33251:::::::::::::::::|h[Steel-banded Hauberk]|h|r"] = 1,
-					["|cffffffff|Hitem:8957:::::::::::::::::|h[Spinefin Halibut]|h|r"] = 1,
 					["|cff0070dd|Hitem:7719:::::::::::::::::|h[Raging Berserker's Helm]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:19935:::::::::::::::::|h[Empty Venom Sac]|h|r"] = 1,
 					["|cff1eff00|Hitem:8277:::::::::::::::::|h[Valorous Girdle]|h|r"] = 1,
-					["|cffffffff|Hitem:13446:::::::::::::::::|h[Major Healing Potion]|h|r"] = 1,
-					["|cffffffff|Hitem:8587:::::::::::::::::|h[Centipaar Insect Parts]|h|r"] = 1,
-					["|cff0070dd|Hitem:19159:::::::::::::::::|h[Woven Ivy Necklace]|h|r"] = 1,
-					["|cff0070dd|Hitem:5665:::::::::::::::::|h[Horn of the Dire Wolf]|h|r"] = 1,
+					["|cff1eff00|Hitem:9399:::::::::::::::::|h[Precision Arrow]|h|r"] = 1,
 					["|cff0070dd|Hitem:9410::::::1208:::::::::::|h[Cragfists of the Bear]|h|r"] = 1,
+					["|cff0070dd|Hitem:19159:::::::::::::::::|h[Woven Ivy Necklace]|h|r"] = 1,
+					["|cffffffff|Hitem:8957:::::::::::::::::|h[Spinefin Halibut]|h|r"] = 1,
+					["|cff1eff00|Hitem:15870:::::::::::::::::|h[Golden Skeleton Key]|h|r"] = 1,
 					["|cffffffff|Hitem:4422:::::::::::::::::|h[Scroll of Stamina III]|h|r"] = 1,
 					["|cffffffff|Hitem:5956:::::::::::::::::|h[Blacksmith Hammer]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:6300:::::::::::::::::|h[Husk Fragment]|h|r"] = 1,
+					["|cff1eff00|Hitem:2820:::::::::::::::::|h[Nifty Stopwatch]|h|r"] = 1,
 					["|cffffffff|Hitem:21537:::::::::::::::::|h[Festival Dumplings]|h|r"] = 1,
 					["|cff1eff00|Hitem:19117:::::::::::::::::|h[Laquered Wooden Plate Legplates]|h|r"] = 1,
-					["|cff1eff00|Hitem:15870:::::::::::::::::|h[Golden Skeleton Key]|h|r"] = 1,
-					["|cff0070dd|Hitem:9400:::::::::::::::::|h[Baelog's Shortbow]|h|r"] = 1,
-					["|cffffffff|Hitem:21745:::::::::::::::::|h[Elder's Moonstone]|h|r"] = 1,
+					["|cffffffff|Hitem:8587:::::::::::::::::|h[Centipaar Insect Parts]|h|r"] = 1,
 					["|cff1eff00|Hitem:19120:::::::::::::::::|h[Rune of the Guard Captain]|h|r"] = 1,
+					["|cff0070dd|Hitem:9400:::::::::::::::::|h[Baelog's Shortbow]|h|r"] = 1,
 					["|cffffffff|Hitem:12037:::::::::::::::::|h[Mystery Meat]|h|r"] = 1,
-					["|cff1eff00|Hitem:2820:::::::::::::::::|h[Nifty Stopwatch]|h|r"] = 1,
-					["|cffffffff|Hitem:14530:::::::::::::::::|h[Heavy Runecloth Bandage]|h|r"] = 1,
-					["|cff1eff00|Hitem:5351:::::::::::::::::|h[Bounty Hunter's Ring]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:19937:::::::::::::::::|h[Small Scorpid Claw]|h|r"] = 1,
-					["|cff1eff00|Hitem:19037:::::::::::::::::|h[Emerald Peak Spaulders]|h|r"] = 1,
+					["|cffffffff|Hitem:13446:::::::::::::::::|h[Major Healing Potion]|h|r"] = 1,
+					["|cff1eff00|Hitem:5351:::::::::::::::::|h[Bounty Hunter's Ring]|h|r"] = 1,
+					["|cff1eff00|Hitem:33251:::::::::::::::::|h[Steel-banded Hauberk]|h|r"] = 1,
+					["|cffffffff|Hitem:14530:::::::::::::::::|h[Heavy Runecloth Bandage]|h|r"] = 1,
 				},
 				[1644341314] = {
 					["|cff1eff00|Hitem:15370::::::1203:::::::::::|h[Wolf Rider's Boots of the Bear]|h|r"] = 1,
 					["|cff1eff00|Hitem:9661:::::::::::::::::|h[Earthclasp Barrier]|h|r"] = 1,
 					["|cffffffff|Hitem:2447:::::::::::::::::|h[Peacebloom]|h|r"] = 1,
+					["|cffffffff|Hitem:1177:::::::::::::::::|h[Oil of Olaf]|h|r"] = 1,
 					["|cffffffff|Hitem:22529:::::::::::::::::|h[Savage Frond]|h|r"] = 1,
 					["|cff1eff00|Hitem:15625::::::524:::::::::::|h[Gryphon Mail Gauntlets of the Wolf]|h|r"] = 1,
 					["|cffffffff|Hitem:3820:::::::::::::::::|h[Stranglekelp]|h|r"] = 1,
 					["|cff1eff00|Hitem:4638:::::::::::::::::|h[Reinforced Steel Lockbox]|h|r"] = 1,
-					["|cffffffff|Hitem:1177:::::::::::::::::|h[Oil of Olaf]|h|r"] = 1,
 					["|cff0070dd|Hitem:7991:::::::::::::::::|h[Plans: Mithril Scale Shoulders]|h|r"] = 1,
 					["|cff1eff00|Hitem:14940::::::948:::::::::::|h[Warbringer's Sabatons  of the Gorilla]|h|r"] = 1,
 				},
@@ -262,9 +230,9 @@ TMWOptDB = {
 				},
 				[1645187622] = {
 					["|cffffffff|Hitem:5117:::::::::::::::::|h[Vibrant Plume]|h|r"] = 1,
-					["|cff1eff00|Hitem:19022:::::::::::::::::|h[Nat Pagle's Extreme Angler FC-5000]|h|r"] = 1,
 					["|cffffffff|Hitem:7846:::::::::::::::::|h[Crag Coyote Fang]|h|r"] = 1,
 					["|cff1eff00|Hitem:6344:::::::::::::::::|h[Formula: Enchant Bracer - Minor Spirit]|h|r"] = 1,
+					["|cff1eff00|Hitem:19022:::::::::::::::::|h[Nat Pagle's Extreme Angler FC-5000]|h|r"] = 1,
 				},
 				[1643744272] = {
 					["|cff9d9d9d|Hitem:19938:::::::::::::::::|h[Heavy Scorpid Leg]|h|r"] = 1,
@@ -281,55 +249,87 @@ TMWOptDB = {
 					["|cffffffff|Hitem:14047:::::::::::::::::|h[Runecloth]|h|r"] = 1,
 				},
 				[1643745627] = {
-					["|cffffffff|Hitem:4546:::::::::::::::::|h[Call of the Raptor]|h|r"] = 1,
 					["|cffffffff|Hitem:20388:::::::::::::::::|h[Lollipop]|h|r"] = 1,
+					["|cffffffff|Hitem:4546:::::::::::::::::|h[Call of the Raptor]|h|r"] = 1,
 				},
 				[1645371506] = {
 					["|cff9d9d9d|Hitem:6144:::::::::::::::::|h[Neophyte's Robe]|h|r"] = 1,
+					["|cffffffff|Hitem:36:::::::::::::::::|h[Worn Mace]|h|r"] = 1,
 					["|cffffffff|Hitem:51:::::::::::::::::|h[Neophyte's Boots]|h|r"] = 1,
-					["|cffffffff|Hitem:6948:::::::::::::::::|h[Hearthstone]|h|r"] = 1,
+					["|cffffffff|Hitem:3275:::::::::::::::::|h[Flax Gloves]|h|r"] = 1,
 					["|cffffffff|Hitem:53:::::::::::::::::|h[Neophyte's Shirt]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:52:::::::::::::::::|h[Neophyte's Pants]|h|r"] = 1,
-					["|cffffffff|Hitem:3275:::::::::::::::::|h[Flax Gloves]|h|r"] = 1,
-					["|cffffffff|Hitem:36:::::::::::::::::|h[Worn Mace]|h|r"] = 1,
+				},
+				[1645727165] = {
+					["|cff0070dd|Hitem:9533:::::::::::::::::|h[Masons Fraternity Ring]|h|r"] = 1,
+					["|cff1eff00|Hitem:15605::::::605:::::::::::|h[Ancient Gauntlets of the Monkey]|h|r"] = 1,
+					["|cff0070dd|Hitem:6690:::::::::::::::::|h[Ferine Leggings]|h|r"] = 1,
+					["|cffffffff|Hitem:11285:::::::::::::::::|h[Jagged Arrow]|h|r"] = 1,
+					["|cffffffff|Hitem:6149:::::::::::::::::|h[Greater Mana Potion]|h|r"] = 1,
+					["|cffffffff|Hitem:8952:::::::::::::::::|h[Roasted Quail]|h|r"] = 1,
+					["|cffffffff|Hitem:8483:::::::::::::::::|h[Wastewander Water Pouch]|h|r"] = 1,
+					["|cff1eff00|Hitem:866::::::614:::::::::::|h[Monk's Staff of the Monkey]|h|r"] = 1,
+					["|cff1eff00|Hitem:33273:::::::::::::::::|h[Seasoned Marshwood Bow]|h|r"] = 1,
+					["|cffffffff|Hitem:1710:::::::::::::::::|h[Greater Healing Potion]|h|r"] = 1,
+					["|cff1eff00|Hitem:9633:::::::::::::::::|h[Jangdor's Handcrafted Boots]|h|r"] = 1,
+					["|cff1eff00|Hitem:33261:::::::::::::::::|h[Destroyer's Cloak]|h|r"] = 1,
+					["|cffffffff|Hitem:3928:::::::::::::::::|h[Superior Healing Potion]|h|r"] = 1,
+					["|cff1eff00|Hitem:33263:::::::::::::::::|h[Raptor Eye Ring]|h|r"] = 1,
+					["|cff1eff00|Hitem:33250:::::::::::::::::|h[Archer's Wristguard]|h|r"] = 1,
+					["|cff1eff00|Hitem:7387:::::::::::::::::|h[Dusky Belt]|h|r"] = 1,
+					["|cffffffff|Hitem:3827:::::::::::::::::|h[Mana Potion]|h|r"] = 1,
+					["|cffffffff|Hitem:4419:::::::::::::::::|h[Scroll of Intellect III]|h|r"] = 1,
+					["|cffffffff|Hitem:2901:::::::::::::::::|h[Mining Pick]|h|r"] = 1,
+					["|cffffffff|Hitem:9523:::::::::::::::::|h[Troll Temper]|h|r"] = 1,
+					["|cffffffff|Hitem:10699:::::::::::::::::|h[Yeh'kinya's Bramble]|h|r"] = 1,
+					["|cff1eff00|Hitem:15127::::::766:::::::::::|h[Robust Shoulders of the Owl]|h|r"] = 1,
+					["|cff0070dd|Hitem:1132:::::::::::::::::|h[Horn of the Timber Wolf]|h|r"] = 1,
+					["|cff1eff00|Hitem:6422:::::::::::::::::|h[Glyphed Helm]|h|r"] = 1,
+					["|cffffffff|Hitem:6948:::::::::::::::::|h[Hearthstone]|h|r"] = 1,
+					["|cffffffff|Hitem:929:::::::::::::::::|h[Healing Potion]|h|r"] = 1,
+					["|cffffffff|Hitem:8766:::::::::::::::::|h[Morning Glory Dew]|h|r"] = 1,
+					["|cff1eff00|Hitem:15591::::::617:::::::::::|h[Steadfast Breastplate of the Monkey]|h|r"] = 1,
+					["|cffffffff|Hitem:9245:::::::::::::::::|h[Stoley's Bottle]|h|r"] = 1,
 				},
 				[1643376809] = {
 					["|cff1eff00|Hitem:5011:::::::::::::::::|h[Welken Ring]|h|r"] = 1,
-					["|cffffffff|Hitem:12840:::::::::::::::::|h[Minion's Scourgestone]|h|r"] = 1,
+					["|cff1eff00|Hitem:7910:::::::::::::::::|h[Star Ruby]|h|r"] = 1,
 					["|cff0070dd|Hitem:13331:::::::::::::::::|h[Red Skeletal Horse]|h|r"] = 1,
 					["|cff1eff00|Hitem:15382::::::855:::::::::::|h[Rageclaw Cloak of the Eagle]|h|r"] = 1,
 					["|cffffffff|Hitem:5514:::::::::::::::::|h[Mana Agate]|h|r"] = 1,
 					["|cffffffff|Hitem:8007:::::::::::::::::|h[Mana Citrine]|h|r"] = 1,
+					["|cff1eff00|Hitem:14269::::::864:::::::::::|h[Gaea's Slippers of the Eagle]|h|r"] = 1,
 					["|cff1eff00|Hitem:9911::::::874:::::::::::|h[Royal Trousers of the Eagle]|h|r"] = 1,
 					["|cff1eff00|Hitem:14262::::::861:::::::::::|h[Bloodwoven Mitts of the Eagle]|h|r"] = 1,
 					["|cff1eff00|Hitem:12029::::::174:::::::::::|h[Greenstone Talisman of Intellect]|h|r"] = 1,
-					["|cff1eff00|Hitem:7910:::::::::::::::::|h[Star Ruby]|h|r"] = 1,
-					["|cffffffff|Hitem:20389:::::::::::::::::|h[Candy Corn]|h|r"] = 1,
-					["|cff1eff00|Hitem:5216::::::761:::::::::::|h[Umbral Wand of the Owl]|h|r"] = 1,
-					["|cff1eff00|Hitem:14269::::::864:::::::::::|h[Gaea's Slippers of the Eagle]|h|r"] = 1,
-					["|cffffffff|Hitem:18945:::::::::::::::::|h[Dark Iron Residue]|h|r"] = 1,
 					["|cff1eff00|Hitem:14258::::::862:::::::::::|h[Bloodwoven Cord of the Eagle]|h|r"] = 1,
-					["|cffffffff|Hitem:17032:::::::::::::::::|h[Rune of Portals]|h|r"] = 1,
+					["|cffffffff|Hitem:20389:::::::::::::::::|h[Candy Corn]|h|r"] = 1,
+					["|cffffffff|Hitem:12840:::::::::::::::::|h[Minion's Scourgestone]|h|r"] = 1,
 					["|cff1eff00|Hitem:14221::::::766:::::::::::|h[Geomancer's Bracers of the Owl]|h|r"] = 1,
+					["|cffffffff|Hitem:18945:::::::::::::::::|h[Dark Iron Residue]|h|r"] = 1,
+					["|cff1eff00|Hitem:5775:::::::::::::::::|h[Pattern: Black Silk Pack]|h|r"] = 1,
+					["|cffffffff|Hitem:17032:::::::::::::::::|h[Rune of Portals]|h|r"] = 1,
+					["|cffffffff|Hitem:5513:::::::::::::::::|h[Mana Jade]|h|r"] = 1,
 					["|cffffffff|Hitem:13443:::::::::::::::::|h[Superior Mana Potion]|h|r"] = 1,
-					["|cffffffff|Hitem:17031:::::::::::::::::|h[Rune of Teleportation]|h|r"] = 1,
+					["|cffffffff|Hitem:12846:::::::::::::::::|h[Argent Dawn Commission]|h|r"] = 1,
 					["|cff0070dd|Hitem:6505:::::::::::::::::|h[Crescent Staff]|h|r"] = 1,
 					["|cff1eff00|Hitem:3739:::::::::::::::::|h[Skull Ring]|h|r"] = 1,
-					["|cff1eff00|Hitem:7520::::::875:::::::::::|h[Gossamer Headpiece of the Eagle]|h|r"] = 1,
-					["|cffffffff|Hitem:5513:::::::::::::::::|h[Mana Jade]|h|r"] = 1,
+					["|cffffffff|Hitem:17031:::::::::::::::::|h[Rune of Teleportation]|h|r"] = 1,
 					["|cff1eff00|Hitem:8113:::::::::::::::::|h[Hibernal Robe]|h|r"] = 1,
 					["|cff1eff00|Hitem:14212::::::855:::::::::::|h[Vital Shoulders of the Eagle]|h|r"] = 1,
-					["|cff1eff00|Hitem:5775:::::::::::::::::|h[Pattern: Black Silk Pack]|h|r"] = 1,
-					["|cffffffff|Hitem:12846:::::::::::::::::|h[Argent Dawn Commission]|h|r"] = 1,
+					["|cff1eff00|Hitem:5216::::::761:::::::::::|h[Umbral Wand of the Owl]|h|r"] = 1,
+					["|cff1eff00|Hitem:7520::::::875:::::::::::|h[Gossamer Headpiece of the Eagle]|h|r"] = 1,
 				},
-				[1645192434] = {
-					["|cffffffff|Hitem:9252:::::::::::::::::|h[Lower Map Fragment]|h|r"] = 1,
-					["|cffffffff|Hitem:4602:::::::::::::::::|h[Moon Harvest Pumpkin]|h|r"] = 1,
-					["|cffffffff|Hitem:9251:::::::::::::::::|h[Upper Map Fragment]|h|r"] = 1,
-					["|cffffffff|Hitem:8584:::::::::::::::::|h[Untapped Dowsing Widget]|h|r"] = 1,
+				[1643467061] = {
+					["|cffffffff|Hitem:6167:::::::::::::::::|h[Neeka's Report]|h|r"] = 1,
 				},
-				[1644570288] = {
-					["|cffffffff|Hitem:9628:::::::::::::::::|h[Neeru's Herb Pouch]|h|r"] = 1,
+				[1643485320] = {
+					["|cff1eff00|Hitem:8194::::::595:::::::::::|h[Goblin Nutcracker of the Monkey]|h|r"] = 1,
+					["|cffffffff|Hitem:3470:::::::::::::::::|h[Rough Grinding Stone]|h|r"] = 1,
+					["|cff1eff00|Hitem:15608::::::212:::::::::::|h[Ancient Pauldrons of Agility]|h|r"] = 1,
+					["|cffffffff|Hitem:4640:::::::::::::::::|h[Sign of the Earth]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:3965:::::::::::::::::|h[Thick Leather Gloves]|h|r"] = 1,
+					["|cffffffff|Hitem:10940:::::::::::::::::|h[Strange Dust]|h|r"] = 1,
 				},
 				[1643377967] = {
 					["|cffffffff|Hitem:14529:::::::::::::::::|h[Runecloth Bandage]|h|r"] = 1,
@@ -340,38 +340,46 @@ TMWOptDB = {
 					["|cffffffff|Hitem:12205:::::::::::::::::|h[White Spider Meat]|h|r"] = 1,
 					["|cffffffff|Hitem:3818:::::::::::::::::|h[Fadeleaf]|h|r"] = 1,
 					["|cff1eff00|Hitem:5751:::::::::::::::::|h[Webwing Cloak]|h|r"] = 1,
-					["|cffffffff|Hitem:3667:::::::::::::::::|h[Tender Crocolisk Meat]|h|r"] = 1,
 					["|cff1eff00|Hitem:15213::::::1187:::::::::::|h[Mercenary Blade of the Bear]|h|r"] = 1,
-					["|cffffffff|Hitem:10285:::::::::::::::::|h[Shadow Silk]|h|r"] = 1,
-					["|cffffffff|Hitem:3357:::::::::::::::::|h[Liferoot]|h|r"] = 1,
-					["|cff1eff00|Hitem:15284:::::::::::::::::|h[Long Battle Bow]|h|r"] = 1,
+					["|cffffffff|Hitem:3667:::::::::::::::::|h[Tender Crocolisk Meat]|h|r"] = 1,
 					["|cffffffff|Hitem:17058:::::::::::::::::|h[Fish Oil]|h|r"] = 1,
-					["|cff1eff00|Hitem:1994::::::511:::::::::::|h[Ebonclaw Reaver of the Wolf]|h|r"] = 1,
+					["|cffffffff|Hitem:10285:::::::::::::::::|h[Shadow Silk]|h|r"] = 1,
+					["|cff1eff00|Hitem:15284:::::::::::::::::|h[Long Battle Bow]|h|r"] = 1,
 					["|cffffffff|Hitem:3356:::::::::::::::::|h[Kingsblood]|h|r"] = 1,
+					["|cff1eff00|Hitem:1994::::::511:::::::::::|h[Ebonclaw Reaver of the Wolf]|h|r"] = 1,
+					["|cffffffff|Hitem:3357:::::::::::::::::|h[Liferoot]|h|r"] = 1,
 					["|cffffffff|Hitem:1725:::::::::::::::::|h[Large Knapsack]|h|r"] = 1,
 				},
 				[1643729473] = {
 					["|cff9d9d9d|Hitem:4018:::::::::::::::::|h[Whetted Claymore]|h|r"] = 1,
 					["|cffffffff|Hitem:8973:::::::::::::::::|h[Thick Yeti Hide]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:3986:::::::::::::::::|h[Protective Pavise]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:4590:::::::::::::::::|h[Curved Yellow Bill]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:11418:::::::::::::::::|h[Hollow Wing Bone]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:4590:::::::::::::::::|h[Curved Yellow Bill]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:3986:::::::::::::::::|h[Protective Pavise]|h|r"] = 1,
 					["|cffffffff|Hitem:9590:::::::::::::::::|h[Splintered Log]|h|r"] = 1,
 				},
-				[1643877127] = {
-					["|cffffffff|Hitem:5884:::::::::::::::::|h[Unpopped Darkmist Eye]|h|r"] = 1,
+				[1643790422] = {
+					["|cff9d9d9d|Hitem:20846:::::::::::::::::|h[Faintly Glowing Eye]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:21008:::::::::::::::::|h[Unkempt Shoes]|h|r"] = 1,
+					["|cffffffff|Hitem:20474:::::::::::::::::|h[Sunstrider Book Satchel]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:24143:::::::::::::::::|h[Initiate's Shirt]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:24146:::::::::::::::::|h[Initiate's Boots]|h|r"] = 1,
+					["|cffffffff|Hitem:20997:::::::::::::::::|h[Green Chain Boots]|h|r"] = 1,
+					["|cffffffff|Hitem:20857:::::::::::::::::|h[Honey Bread]|h|r"] = 1,
+					["|cffffffff|Hitem:23346:::::::::::::::::|h[Battleworn Claymore]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:24145:::::::::::::::::|h[Initiate's Pants]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:20845:::::::::::::::::|h[Torn Wyrm Scale]|h|r"] = 1,
 				},
-				[1645032896] = {
-					["|cffffffff|Hitem:3827:::::::::::::::::|h[Mana Potion]|h|r"] = 1,
-					["|cffffffff|Hitem:8151:::::::::::::::::|h[Flask of Mojo]|h|r"] = 1,
-					["|cffffffff|Hitem:8952:::::::::::::::::|h[Roasted Quail]|h|r"] = 1,
-					["|cff1eff00|Hitem:8278:::::::::::::::::|h[Valorous Greaves]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:11417:::::::::::::::::|h[Feathery Wing]|h|r"] = 1,
-					["|cffffffff|Hitem:4601:::::::::::::::::|h[Soft Banana Bread]|h|r"] = 1,
-					["|cffffffff|Hitem:19025:::::::::::::::::|h[Skylord Plume]|h|r"] = 1,
-					["|cffffffff|Hitem:12207:::::::::::::::::|h[Giant Egg]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:4000:::::::::::::::::|h[Overlinked Chain Belt]|h|r"] = 1,
-					["|cffffffff|Hitem:19033:::::::::::::::::|h[Slagtree's Lost Tools]|h|r"] = 1,
+				[1643464142] = {
+					["|cff1eff00|Hitem:16215:::::::::::::::::|h[Formula: Enchant Boots - Greater Stamina]|h|r"] = 1,
+					["|cff1eff00|Hitem:11166:::::::::::::::::|h[Formula: Enchant Gloves - Skinning]|h|r"] = 1,
+				},
+				[1643461536] = {
+					["|cffffffff|Hitem:5637:::::::::::::::::|h[Large Fang]|h|r"] = 1,
+					["|cffffffff|Hitem:4544:::::::::::::::::|h[Mulgore Spice Bread]|h|r"] = 1,
+					["|cffffffff|Hitem:5116:::::::::::::::::|h[Long Tail Feather]|h|r"] = 1,
+					["|cffffffff|Hitem:12202:::::::::::::::::|h[Tiger Meat]|h|r"] = 1,
+					["|cffffffff|Hitem:1708:::::::::::::::::|h[Sweet Nectar]|h|r"] = 1,
 				},
 				[1643729363] = {
 					["|cffffffff|Hitem:5512:::::::::::::::::|h[Minor Healthstone]|h|r"] = 1,
@@ -382,6 +390,10 @@ TMWOptDB = {
 				},
 				[1644186063] = {
 					["|cffffffff|Hitem:20413:::::::::::::::::|h[Hallowed Wand - Random]|h|r"] = 1,
+				},
+				[1644571032] = {
+					["|cff9d9d9d|Hitem:153:::::::::::::::::|h[Primitive Kilt]|h|r"] = 1,
+					["|cffffffff|Hitem:154:::::::::::::::::|h[Primitive Mantle]|h|r"] = 1,
 				},
 				[1643701965] = {
 					["|cffffffff|Hitem:21711:::::::::::::::::|h[Lunar Festival Invitation]|h|r"] = 1,
@@ -398,10 +410,6 @@ TMWOptDB = {
 					["|cffffffff|Hitem:7912:::::::::::::::::|h[Solid Stone]|h|r"] = 1,
 					["|cffffffff|Hitem:2838:::::::::::::::::|h[Heavy Stone]|h|r"] = 1,
 				},
-				[1644571032] = {
-					["|cff9d9d9d|Hitem:153:::::::::::::::::|h[Primitive Kilt]|h|r"] = 1,
-					["|cffffffff|Hitem:154:::::::::::::::::|h[Primitive Mantle]|h|r"] = 1,
-				},
 				[1645295972] = {
 					["|cff9d9d9d|Hitem:4093:::::::::::::::::|h[Large Basilisk Tail]|h|r"] = 1,
 					["|cff1eff00|Hitem:15369::::::1202:::::::::::|h[Wolf Rider's Belt of the Bear]|h|r"] = 1,
@@ -413,40 +421,27 @@ TMWOptDB = {
 					["|cff9d9d9d|Hitem:4025:::::::::::::::::|h[Balanced Long Bow]|h|r"] = 1,
 					["|cff9d9d9d|Hitem:3941:::::::::::::::::|h[Crochet Pants]|h|r"] = 1,
 				},
-				[1643461536] = {
-					["|cffffffff|Hitem:12202:::::::::::::::::|h[Tiger Meat]|h|r"] = 1,
-					["|cffffffff|Hitem:4544:::::::::::::::::|h[Mulgore Spice Bread]|h|r"] = 1,
-					["|cffffffff|Hitem:5116:::::::::::::::::|h[Long Tail Feather]|h|r"] = 1,
-					["|cffffffff|Hitem:5637:::::::::::::::::|h[Large Fang]|h|r"] = 1,
-					["|cffffffff|Hitem:1708:::::::::::::::::|h[Sweet Nectar]|h|r"] = 1,
+				[1645032896] = {
+					["|cffffffff|Hitem:8151:::::::::::::::::|h[Flask of Mojo]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:4000:::::::::::::::::|h[Overlinked Chain Belt]|h|r"] = 1,
+					["|cff1eff00|Hitem:8278:::::::::::::::::|h[Valorous Greaves]|h|r"] = 1,
+					["|cff9d9d9d|Hitem:11417:::::::::::::::::|h[Feathery Wing]|h|r"] = 1,
+					["|cffffffff|Hitem:4601:::::::::::::::::|h[Soft Banana Bread]|h|r"] = 1,
+					["|cffffffff|Hitem:19025:::::::::::::::::|h[Skylord Plume]|h|r"] = 1,
+					["|cffffffff|Hitem:12207:::::::::::::::::|h[Giant Egg]|h|r"] = 1,
+					["|cffffffff|Hitem:19033:::::::::::::::::|h[Slagtree's Lost Tools]|h|r"] = 1,
 				},
-				[1643464142] = {
-					["|cff1eff00|Hitem:16215:::::::::::::::::|h[Formula: Enchant Boots - Greater Stamina]|h|r"] = 1,
-					["|cff1eff00|Hitem:11166:::::::::::::::::|h[Formula: Enchant Gloves - Skinning]|h|r"] = 1,
+				[1643877127] = {
+					["|cffffffff|Hitem:5884:::::::::::::::::|h[Unpopped Darkmist Eye]|h|r"] = 1,
 				},
-				[1643790422] = {
-					["|cff9d9d9d|Hitem:20846:::::::::::::::::|h[Faintly Glowing Eye]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:21008:::::::::::::::::|h[Unkempt Shoes]|h|r"] = 1,
-					["|cffffffff|Hitem:20474:::::::::::::::::|h[Sunstrider Book Satchel]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:24143:::::::::::::::::|h[Initiate's Shirt]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:24146:::::::::::::::::|h[Initiate's Boots]|h|r"] = 1,
-					["|cffffffff|Hitem:20997:::::::::::::::::|h[Green Chain Boots]|h|r"] = 1,
-					["|cffffffff|Hitem:20857:::::::::::::::::|h[Honey Bread]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:20845:::::::::::::::::|h[Torn Wyrm Scale]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:24145:::::::::::::::::|h[Initiate's Pants]|h|r"] = 1,
-					["|cffffffff|Hitem:23346:::::::::::::::::|h[Battleworn Claymore]|h|r"] = 1,
+				[1645192434] = {
+					["|cffffffff|Hitem:4602:::::::::::::::::|h[Moon Harvest Pumpkin]|h|r"] = 1,
+					["|cffffffff|Hitem:8584:::::::::::::::::|h[Untapped Dowsing Widget]|h|r"] = 1,
+					["|cffffffff|Hitem:9251:::::::::::::::::|h[Upper Map Fragment]|h|r"] = 1,
+					["|cffffffff|Hitem:9252:::::::::::::::::|h[Lower Map Fragment]|h|r"] = 1,
 				},
-				[1643485320] = {
-					["|cff1eff00|Hitem:8194::::::595:::::::::::|h[Goblin Nutcracker of the Monkey]|h|r"] = 1,
-					["|cffffffff|Hitem:4419:::::::::::::::::|h[Scroll of Intellect III]|h|r"] = 1,
-					["|cffffffff|Hitem:10940:::::::::::::::::|h[Strange Dust]|h|r"] = 1,
-					["|cff1eff00|Hitem:15608::::::212:::::::::::|h[Ancient Pauldrons of Agility]|h|r"] = 1,
-					["|cffffffff|Hitem:3470:::::::::::::::::|h[Rough Grinding Stone]|h|r"] = 1,
-					["|cff9d9d9d|Hitem:3965:::::::::::::::::|h[Thick Leather Gloves]|h|r"] = 1,
-					["|cffffffff|Hitem:4640:::::::::::::::::|h[Sign of the Earth]|h|r"] = 1,
-				},
-				[1643467061] = {
-					["|cffffffff|Hitem:6167:::::::::::::::::|h[Neeka's Report]|h|r"] = 1,
+				[1644570288] = {
+					["|cffffffff|Hitem:9628:::::::::::::::::|h[Neeru's Herb Pouch]|h|r"] = 1,
 				},
 			},
 			["XPac_AuraCache"] = 2,
@@ -778,6 +773,7 @@ TMWOptDB = {
 				[17312] = 2,
 				[1086] = 2,
 				[1094] = 2,
+				[17504] = 2,
 				[43308] = 2,
 				[33265] = 2,
 				[10899] = 2,
@@ -905,6 +901,7 @@ TMWOptDB = {
 				[11733] = 2,
 				[13812] = 2,
 				[9750] = 2,
+				[23842] = 2,
 				[9910] = 2,
 				[51954] = 2,
 				[19876] = 2,
@@ -928,6 +925,7 @@ TMWOptDB = {
 				[5277] = 2,
 				[25218] = 2,
 				[8599] = 1,
+				[8631] = 2,
 				[1850] = 2,
 				[27681] = 2,
 				[10838] = 2,
@@ -1115,181 +1113,185 @@ TMWOptDB = {
 				[11641] = 1,
 				[27720] = 2,
 				[6950] = 1,
+				[4068] = 2,
+				[17767] = 2,
 				[16071] = 1,
 				[19884] = 2,
-				[11990] = 1,
-				[31033] = 2,
+				[37128] = 2,
+				[19264] = 2,
+				[14267] = 2,
+				[10157] = 2,
+				[10898] = 2,
+				[45124] = 2,
 				[18103] = 1,
-				[10173] = 2,
-				[14251] = 2,
 				[34123] = 2,
-				[1008] = 2,
+				[10093] = 1,
 				[7102] = 1,
-				[24799] = 2,
-				[36897] = 2,
+				[29203] = 2,
+				[35166] = 2,
 				[28488] = 2,
 				[10170] = 2,
 				[10186] = 2,
-				[8119] = 2,
+				[24799] = 2,
 				[11922] = 1,
 				[12543] = 2,
-				[10174] = 2,
+				[16488] = 2,
 				[8219] = 2,
-				[12544] = 1,
+				[6016] = 1,
 				[3600] = 1,
 				[3604] = 1,
-				[20053] = 2,
-				[20300] = 2,
-				[28142] = 2,
-				[45619] = 2,
-				[20186] = 2,
+				[7322] = 2,
+				[30339] = 2,
+				[25999] = 2,
+				[14294] = 2,
+				[30029] = 2,
 				[41608] = 2,
 				[39625] = 2,
-				[11980] = 1,
+				[783] = 2,
 				[37706] = 2,
 				[8427] = 2,
 				[7294] = 2,
 				[7302] = 2,
 				[20306] = 2,
-				[23888] = 2,
+				[7300] = 2,
 				[23147] = 2,
 				[17038] = 2,
-				[5262] = 1,
+				[7165] = 1,
 				[25290] = 2,
 				[38346] = 2,
 				[7366] = 1,
-				[42735] = 2,
+				[42491] = 1,
 				[8910] = 2,
-				[10278] = 2,
-				[19709] = 2,
-				[8629] = 1,
+				[27665] = 2,
+				[44055] = 2,
+				[1038] = 2,
 				[15473] = 2,
 				[17390] = 2,
-				[33951] = 1,
-				[33259] = 2,
+				[14752] = 2,
+				[7927] = 2,
 				[27721] = 2,
-				[26982] = 2,
-				[17627] = 2,
-				[2941] = 2,
-				[8907] = 2,
-				[10180] = 2,
+				[33259] = 2,
+				[20764] = 2,
+				[33078] = 2,
+				[19837] = 2,
+				[19853] = 2,
 				[10890] = 2,
 				[33357] = 2,
 				[41609] = 2,
 				[39626] = 2,
-				[19853] = 2,
+				[8907] = 2,
 				[5487] = 2,
 				[13033] = 2,
 				[19885] = 2,
 				[19480] = 2,
-				[18265] = 2,
-				[35165] = 2,
-				[7289] = 1,
+				[25202] = 2,
+				[8408] = 2,
+				[12540] = 1,
 				[16864] = 2,
-				[8112] = 2,
+				[5784] = 2,
+				[24708] = 2,
+				[1066] = 2,
 				[2379] = 2,
-				[23843] = 2,
-				[2893] = 2,
-				[11597] = 2,
+				[23028] = 2,
 				[20301] = 2,
 				[28521] = 2,
-				[11581] = 2,
+				[6278] = 1,
 				[1032] = 2,
 				[8385] = 1,
 				[8096] = 2,
 				[20572] = 2,
-				[23161] = 2,
+				[27046] = 2,
 				[32910] = 1,
-				[18791] = 2,
-				[6346] = 2,
+				[28501] = 2,
+				[14322] = 2,
 				[7272] = 1,
 				[16591] = 2,
 				[3223] = 2,
-				[8788] = 1,
-				[27239] = 2,
+				[19710] = 2,
+				[66] = 2,
 				[41610] = 2,
 				[39627] = 2,
-				[20765] = 2,
+				[8914] = 2,
 				[33944] = 2,
-				[46837] = 2,
-				[28540] = 2,
-				[20005] = 2,
-				[27127] = 2,
-				[10938] = 2,
+				[3166] = 2,
+				[20925] = 2,
+				[21850] = 2,
+				[6268] = 1,
+				[26664] = 2,
 				[20293] = 2,
 				[20540] = 1,
 				[24394] = 2,
 				[25291] = 2,
 				[7870] = 2,
-				[26980] = 2,
+				[34754] = 2,
 				[25387] = 2,
-				[782] = 2,
-				[20166] = 2,
-				[10447] = 2,
-				[13163] = 2,
+				[348] = 2,
+				[9128] = 1,
+				[28518] = 2,
+				[768] = 2,
 				[15848] = 1,
 				[17391] = 2,
-				[10215] = 2,
+				[8377] = 1,
 				[28694] = 2,
 				[27722] = 2,
 				[29801] = 2,
-				[33721] = 2,
+				[20308] = 2,
 				[25771] = 2,
-				[34519] = 2,
+				[19852] = 2,
 				[37325] = 2,
-				[8138] = 1,
-				[8014] = 1,
 				[17743] = 1,
+				[8014] = 1,
+				[41611] = 2,
 				[39628] = 2,
 				[19854] = 2,
-				[19615] = 2,
+				[12160] = 1,
 				[11390] = 2,
-				[29063] = 2,
-				[2374] = 2,
+				[19711] = 2,
 				[50247] = 2,
-				[592] = 2,
+				[8078] = 1,
+				[13031] = 2,
 				[8094] = 2,
-				[11406] = 2,
 				[3385] = 1,
+				[28490] = 2,
 				[8118] = 2,
-				[9823] = 2,
+				[40396] = 2,
 				[8134] = 2,
 				[16280] = 2,
-				[28490] = 2,
-				[3248] = 1,
-				[594] = 2,
-				[37198] = 2,
+				[20302] = 2,
+				[12525] = 2,
+				[33082] = 2,
+				[28682] = 2,
 				[10219] = 2,
 				[34767] = 2,
 				[8204] = 2,
 				[8220] = 2,
-				[33082] = 2,
+				[10767] = 1,
 				[10299] = 2,
 				[35087] = 2,
 				[43339] = 2,
-				[745] = 1,
+				[2378] = 2,
 				[744] = 1,
 				[6215] = 2,
 				[6223] = 2,
-				[24583] = 2,
+				[8137] = 1,
 				[8380] = 2,
-				[2458] = 2,
-				[8098] = 2,
-				[12741] = 1,
-				[51955] = 2,
-				[10160] = 2,
+				[20511] = 2,
+				[15269] = 2,
+				[7926] = 2,
+				[24131] = 2,
+				[36563] = 2,
 				[27179] = 2,
 				[8492] = 2,
 				[24735] = 2,
 				[25228] = 2,
-				[12731] = 2,
-				[19879] = 2,
-				[23948] = 1,
+				[36900] = 2,
+				[8113] = 2,
+				[23840] = 2,
 				[1075] = 2,
-				[23836] = 2,
+				[36554] = 2,
 				[10667] = 2,
 				[19311] = 2,
-				[25898] = 2,
+				[33946] = 2,
 				[6907] = 1,
 				[24907] = 2,
 				[29674] = 2,
@@ -1297,224 +1299,226 @@ TMWOptDB = {
 				[21970] = 2,
 				[27723] = 2,
 				[5697] = 2,
-				[7301] = 2,
+				[5599] = 2,
 				[3661] = 2,
-				[8402] = 2,
+				[22959] = 2,
 				[39374] = 2,
-				[27145] = 2,
-				[5232] = 2,
+				[18708] = 2,
 				[23885] = 2,
-				[13443] = 1,
-				[28520] = 2,
+				[12970] = 2,
+				[5229] = 2,
+				[16870] = 2,
 				[3583] = 1,
 				[8940] = 2,
-				[14324] = 2,
+				[3409] = 2,
 				[6535] = 1,
 				[20578] = 2,
-				[8242] = 1,
+				[42648] = 1,
 				[15588] = 1,
 				[7804] = 2,
-				[24425] = 1,
+				[33736] = 2,
 				[709] = 2,
-				[20356] = 2,
-				[28491] = 2,
+				[32788] = 2,
+				[3639] = 1,
 				[6607] = 1,
 				[20303] = 2,
 				[18288] = 2,
-				[8205] = 2,
+				[46989] = 2,
 				[26540] = 1,
 				[20912] = 2,
 				[34769] = 2,
-				[10220] = 2,
-				[20066] = 2,
-				[976] = 2,
+				[20290] = 2,
+				[5225] = 2,
+				[24398] = 2,
 				[10169] = 2,
-				[10156] = 2,
+				[12551] = 1,
 				[16561] = 1,
 				[16593] = 2,
 				[22766] = 1,
 				[18608] = 2,
 				[25899] = 2,
-				[11371] = 2,
+				[10670] = 1,
 				[6751] = 1,
 				[7386] = 1,
 				[20911] = 2,
 				[29131] = 2,
 				[6783] = 2,
-				[2565] = 2,
-				[43135] = 1,
-				[11962] = 1,
+				[20289] = 2,
+				[30807] = 2,
+				[30823] = 2,
 				[11711] = 2,
-				[20162] = 2,
-				[7372] = 2,
+				[26635] = 2,
+				[10298] = 2,
 				[10161] = 2,
 				[14868] = 1,
 				[9841] = 2,
 				[25389] = 2,
 				[18499] = 2,
 				[18803] = 2,
-				[18191] = 2,
-				[2974] = 2,
-				[20154] = 2,
-				[11771] = 2,
-				[9756] = 2,
-				[21551] = 2,
-				[22783] = 2,
-				[41635] = 2,
-				[31047] = 2,
-				[2457] = 2,
-				[19746] = 2,
-				[25037] = 2,
 				[673] = 2,
+				[25037] = 2,
+				[19746] = 2,
+				[11771] = 2,
+				[21551] = 2,
+				[9756] = 2,
+				[31047] = 2,
+				[41635] = 2,
+				[22783] = 2,
+				[2457] = 2,
+				[20154] = 2,
+				[2974] = 2,
+				[18191] = 2,
 				[9884] = 2,
 				[23886] = 2,
 				[2481] = 2,
 				[1243] = 2,
 				[1245] = 2,
-				[10298] = 2,
-				[26635] = 2,
+				[7372] = 2,
+				[20162] = 2,
 				[12043] = 2,
-				[30823] = 2,
-				[30807] = 2,
-				[20289] = 2,
+				[11962] = 1,
+				[43135] = 1,
+				[2565] = 2,
 				[10060] = 2,
-				[10670] = 1,
+				[11371] = 2,
 				[10092] = 1,
 				[7103] = 2,
-				[12551] = 1,
+				[976] = 2,
 				[12187] = 1,
-				[24398] = 2,
-				[5225] = 2,
-				[20290] = 2,
+				[10156] = 2,
+				[20066] = 2,
+				[20356] = 2,
 				[14298] = 2,
-				[46989] = 2,
-				[3639] = 1,
-				[32788] = 2,
+				[10220] = 2,
+				[28491] = 2,
+				[8205] = 2,
 				[8221] = 2,
-				[33736] = 2,
+				[24425] = 1,
 				[10300] = 2,
 				[8269] = 1,
-				[42648] = 1,
+				[8242] = 1,
 				[324] = 2,
-				[3409] = 2,
+				[14324] = 2,
 				[325] = 2,
-				[16870] = 2,
-				[5229] = 2,
-				[18708] = 2,
-				[12970] = 2,
-				[22959] = 2,
+				[28520] = 2,
+				[13443] = 1,
+				[8402] = 2,
+				[27145] = 2,
+				[5232] = 2,
 				[27085] = 2,
-				[5599] = 2,
+				[7301] = 2,
 				[27149] = 2,
 				[29228] = 2,
 				[27213] = 2,
 				[5280] = 1,
 				[2645] = 2,
-				[33946] = 2,
-				[36554] = 2,
-				[23840] = 2,
-				[8113] = 2,
-				[36900] = 2,
+				[25898] = 2,
+				[23836] = 2,
+				[23948] = 1,
+				[19879] = 2,
+				[10160] = 2,
 				[10668] = 2,
-				[36563] = 2,
-				[24131] = 2,
-				[7926] = 2,
-				[15269] = 2,
-				[20511] = 2,
-				[8137] = 1,
+				[12731] = 2,
+				[51955] = 2,
+				[12741] = 1,
+				[8098] = 2,
+				[2458] = 2,
+				[24583] = 2,
 				[8733] = 1,
-				[2378] = 2,
-				[10767] = 1,
+				[745] = 1,
+				[37198] = 2,
 				[5416] = 1,
-				[12525] = 2,
-				[28682] = 2,
-				[19264] = 2,
+				[594] = 2,
+				[3248] = 1,
+				[9823] = 2,
 				[10892] = 2,
-				[20302] = 2,
-				[13031] = 2,
-				[19711] = 2,
-				[8078] = 1,
+				[11406] = 2,
+				[592] = 2,
+				[2374] = 2,
+				[29063] = 2,
 				[13019] = 2,
-				[12160] = 1,
-				[41611] = 2,
-				[19852] = 2,
-				[20308] = 2,
+				[19615] = 2,
+				[8138] = 1,
+				[34519] = 2,
+				[33721] = 2,
 				[9005] = 2,
-				[8377] = 1,
-				[768] = 2,
-				[28518] = 2,
-				[348] = 2,
-				[9128] = 1,
-				[34754] = 2,
+				[10215] = 2,
+				[20166] = 2,
+				[10447] = 2,
+				[13163] = 2,
+				[782] = 2,
+				[26980] = 2,
 				[15258] = 2,
 				[20305] = 2,
 				[11196] = 2,
-				[26664] = 2,
-				[6268] = 1,
-				[21850] = 2,
-				[20925] = 2,
-				[3166] = 2,
+				[10938] = 2,
+				[27127] = 2,
+				[20005] = 2,
+				[28540] = 2,
+				[46837] = 2,
 				[2825] = 2,
-				[8914] = 2,
-				[66] = 2,
-				[19710] = 2,
+				[20765] = 2,
+				[27239] = 2,
+				[8788] = 1,
 				[18610] = 2,
 				[16595] = 2,
-				[14322] = 2,
-				[28501] = 2,
-				[27046] = 2,
+				[6346] = 2,
+				[18791] = 2,
+				[23161] = 2,
 				[11436] = 1,
 				[26990] = 2,
 				[24975] = 2,
 				[20913] = 2,
-				[6278] = 1,
-				[23028] = 2,
+				[11581] = 2,
+				[11597] = 2,
 				[27150] = 2,
-				[1066] = 2,
-				[5784] = 2,
-				[24708] = 2,
+				[23843] = 2,
+				[2893] = 2,
+				[8112] = 2,
 				[11596] = 2,
-				[12540] = 1,
-				[8408] = 2,
-				[25202] = 2,
+				[7289] = 1,
+				[35165] = 2,
+				[18265] = 2,
 				[1459] = 2,
 				[1461] = 2,
 				[1463] = 2,
-				[19837] = 2,
-				[33078] = 2,
-				[20764] = 2,
-				[7927] = 2,
+				[10180] = 2,
+				[26982] = 2,
+				[17627] = 2,
+				[2941] = 2,
 				[13819] = 2,
-				[14752] = 2,
+				[33951] = 1,
 				[19506] = 2,
-				[1038] = 2,
-				[44055] = 2,
-				[27665] = 2,
+				[8629] = 1,
+				[19709] = 2,
+				[10278] = 2,
 				[9821] = 2,
-				[42491] = 1,
-				[7165] = 1,
-				[7300] = 2,
+				[42735] = 2,
+				[5262] = 1,
+				[45619] = 2,
 				[9885] = 2,
-				[30029] = 2,
-				[783] = 2,
-				[25999] = 2,
-				[14294] = 2,
-				[30339] = 2,
-				[6016] = 1,
-				[7322] = 2,
-				[16488] = 2,
+				[23888] = 2,
+				[20186] = 2,
+				[11980] = 1,
+				[20053] = 2,
+				[20300] = 2,
+				[28142] = 2,
+				[12544] = 1,
+				[10174] = 2,
 				[20050] = 2,
 				[8095] = 2,
 				[1515] = 2,
-				[35166] = 2,
-				[10093] = 1,
-				[29203] = 2,
+				[36897] = 2,
+				[8119] = 2,
+				[1008] = 2,
 				[3045] = 2,
-				[45124] = 2,
-				[10157] = 2,
-				[14267] = 2,
-				[10898] = 2,
+				[31033] = 2,
+				[14251] = 2,
+				[10173] = 2,
+				[11990] = 1,
 			},
+			["XPac_ItemCache"] = 2,
+			["SpellCacheWoWVersion"] = "42328",
 			["SpellCacheInvalidRanges"] = {
 				[7156] = 3,
 				[20490] = 6,
@@ -2898,257 +2902,257 @@ TMWOptDB = {
 				[26429] = 13,
 				[11233] = 4,
 				[18751] = 3,
-				[42124] = 6,
-				[27856] = 3,
+				[4155] = 4,
+				[52237] = 368,
 				[12219] = 22,
 				[51927] = 25,
 				[43074] = 19,
-				[20106] = 5,
+				[14150] = 6,
 				[37791] = 5,
-				[51658] = 3,
-				[28042] = 12,
+				[51647] = 8,
+				[51641] = 5,
 				[7953] = 7,
-				[23532] = 5,
+				[11256] = 8,
 				[35191] = 3,
-				[31592] = 3,
-				[25131] = 9,
+				[3046] = 4,
+				[51121] = 28,
 				[19839] = 11,
-				[11482] = 3,
+				[51011] = 109,
 				[18734] = 9,
 				[24126] = 5,
-				[50853] = 16,
+				[50763] = 84,
 				[36215] = 5,
-				[8859] = 13,
+				[50750] = 12,
 				[52851] = 119,
-				[21933] = 3,
+				[50740] = 9,
 				[49477] = 16,
-				[50652] = 30,
-				[23305] = 3,
+				[50632] = 12,
+				[50697] = 36,
 				[1033] = 5,
-				[23499] = 5,
-				[3640] = 4,
+				[50500] = 17,
+				[50494] = 5,
 				[1045] = 5,
 				[24958] = 9,
 				[12513] = 5,
-				[22228] = 19,
+				[50400] = 25,
 				[27560] = 4,
 				[25214] = 3,
-				[23926] = 3,
-				[15367] = 22,
-				[18348] = 3,
+				[50370] = 28,
+				[50201] = 8,
+				[50195] = 5,
 				[34552] = 5,
 				[42870] = 8,
 				[17408] = 19,
 				[25662] = 6,
 				[29821] = 9,
-				[7286] = 3,
-				[18634] = 13,
+				[50187] = 7,
+				[9319] = 5,
 				[1109] = 11,
 				[51956] = 53,
 				[8930] = 6,
-				[43766] = 5,
-				[30791] = 7,
+				[50102] = 78,
+				[22601] = 17,
 				[13121] = 17,
 				[22207] = 20,
 				[13185] = 13,
-				[12600] = 3,
-				[4247] = 15,
-				[20970] = 17,
+				[34647] = 3,
+				[44946] = 3,
+				[30861] = 3,
 				[1153] = 6,
 				[30781] = 9,
-				[18290] = 17,
+				[22705] = 4,
 				[29030] = 8,
-				[22929] = 6,
-				[50094] = 4,
+				[49889] = 19,
+				[23057] = 3,
 				[49909] = 40,
 				[1181] = 25,
 				[35991] = 3,
-				[12314] = 3,
+				[29294] = 4,
 				[34041] = 20,
 				[4786] = 15,
 				[19200] = 13,
-				[2996] = 11,
-				[34264] = 3,
+				[49865] = 4,
+				[32990] = 6,
 				[9673] = 39,
-				[14876] = 11,
-				[18283] = 5,
-				[17100] = 4,
-				[26790] = 7,
-				[47378] = 21,
+				[8047] = 3,
+				[3189] = 15,
+				[42836] = 3,
+				[49765] = 33,
+				[49758] = 6,
 				[6448] = 10,
 				[9922] = 4,
 				[19904] = 33,
 				[5590] = 5,
-				[49739] = 11,
+				[404] = 4,
 				[25958] = 17,
 				[44407] = 3,
 				[10114] = 18,
-				[3152] = 5,
-				[11320] = 7,
-				[7133] = 3,
-				[46663] = 5,
-				[37771] = 4,
+				[4465] = 28,
+				[3281] = 3,
+				[4521] = 3,
+				[3289] = 3,
+				[45961] = 15,
 				[45303] = 10,
-				[48685] = 19,
-				[19944] = 8,
+				[24369] = 5,
+				[40918] = 8,
 				[21863] = 5,
-				[25105] = 4,
-				[29777] = 10,
+				[44780] = 14,
+				[43924] = 3,
 				[25087] = 11,
-				[49329] = 7,
-				[32780] = 3,
+				[49380] = 4,
+				[8199] = 3,
 				[42360] = 4,
 				[8300] = 12,
 				[42616] = 4,
-				[1707] = 3,
+				[1540] = 3,
 				[49303] = 15,
 				[5378] = 6,
-				[22374] = 18,
-				[1365] = 8,
+				[6701] = 10,
+				[25919] = 18,
 				[43384] = 12,
 				[10882] = 5,
-				[25919] = 18,
-				[6952] = 5,
-				[6661] = 3,
+				[1365] = 8,
+				[47124] = 3,
+				[11821] = 3,
 				[11276] = 3,
-				[30191] = 3,
+				[37401] = 3,
 				[44280] = 5,
-				[9277] = 17,
-				[26340] = 4,
-				[8952] = 3,
+				[17717] = 10,
+				[18188] = 3,
+				[5397] = 4,
 				[15297] = 8,
-				[28939] = 5,
+				[48803] = 86,
 				[30718] = 13,
 				[32891] = 3,
-				[6437] = 6,
-				[45115] = 4,
-				[48474] = 60,
+				[48034] = 7,
+				[10062] = 10,
+				[8424] = 3,
 				[7280] = 5,
-				[11223] = 9,
-				[25170] = 4,
-				[38077] = 3,
+				[519] = 7,
+				[22837] = 3,
+				[3701] = 14,
 				[906] = 7,
 				[11586] = 5,
 				[3645] = 3,
-				[50935] = 41,
+				[933] = 6,
 				[23360] = 4,
 				[1465] = 20,
 				[8020] = 4,
-				[1835] = 7,
-				[5941] = 10,
+				[25332] = 7,
+				[31246] = 3,
 				[11842] = 34,
-				[48321] = 21,
+				[48351] = 9,
 				[51703] = 13,
 				[5885] = 3,
-				[46893] = 3,
+				[31855] = 3,
 				[12002] = 16,
-				[10773] = 14,
-				[2851] = 4,
+				[5509] = 3,
+				[47446] = 43,
 				[37947] = 3,
 				[1517] = 5,
 				[28415] = 3,
-				[26567] = 4,
+				[11238] = 4,
 				[1529] = 6,
-				[12909] = 29,
+				[48306] = 14,
 				[40954] = 3,
-				[5609] = 5,
-				[24563] = 8,
+				[15068] = 19,
 				[45433] = 4,
-				[36154] = 13,
-				[7260] = 5,
+				[20673] = 3,
+				[43928] = 5,
+				[48058] = 40,
 				[20865] = 4,
 				[6258] = 4,
-				[5197] = 3,
+				[22292] = 19,
 				[16962] = 3,
 				[46329] = 3,
-				[5181] = 4,
-				[1589] = 15,
+				[26482] = 6,
+				[7888] = 3,
 				[12706] = 3,
 				[47311] = 3,
-				[10918] = 3,
+				[35466] = 4,
 				[39561] = 4,
 				[1605] = 3,
-				[35210] = 19,
-				[484] = 7,
-				[31150] = 58,
-				[1792] = 3,
-				[14228] = 19,
+				[5428] = 52,
+				[16759] = 4,
+				[29329] = 3,
+				[47328] = 3,
+				[3543] = 4,
 				[6514] = 3,
 				[10102] = 11,
 				[44154] = 9,
 				[15129] = 38,
-				[1979] = 12,
-				[22762] = 4,
+				[13869] = 3,
+				[23668] = 7,
 				[22337] = 14,
-				[43318] = 3,
+				[499] = 13,
 				[13282] = 16,
-				[42806] = 7,
+				[19670] = 4,
 				[6674] = 3,
 				[1673] = 7,
 				[37244] = 3,
 				[1681] = 25,
-				[30577] = 7,
-				[1720] = 5,
+				[46619] = 3,
+				[5969] = 9,
 				[37756] = 3,
 				[9475] = 3,
-				[4210] = 11,
-				[37392] = 3,
-				[10374] = 13,
+				[47181] = 67,
+				[23993] = 9,
+				[45575] = 7,
 				[31487] = 10,
-				[37574] = 3,
-				[46940] = 22,
-				[47058] = 7,
+				[24276] = 7,
+				[44506] = 11,
+				[1580] = 8,
 				[6914] = 3,
 				[46788] = 6,
 				[43259] = 4,
-				[21014] = 13,
+				[10895] = 3,
 				[13954] = 4,
 				[11125] = 4,
-				[26144] = 10,
-				[557] = 6,
+				[10527] = 7,
+				[45178] = 4,
 				[1761] = 5,
 				[48250] = 55,
-				[6508] = 4,
+				[42716] = 9,
 				[36221] = 3,
-				[20651] = 3,
+				[4437] = 6,
 				[24385] = 3,
-				[7345] = 8,
+				[46805] = 3,
 				[31965] = 4,
-				[35721] = 3,
-				[22358] = 13,
+				[24007] = 4,
+				[35000] = 4,
 				[1801] = 3,
 				[1805] = 4,
-				[29984] = 5,
+				[34529] = 7,
 				[33406] = 3,
 				[12628] = 11,
-				[42236] = 7,
+				[50426] = 51,
 				[46075] = 5,
 				[25153] = 5,
-				[50426] = 51,
+				[42236] = 7,
 				[25473] = 4,
 				[21250] = 17,
 				[1845] = 3,
 				[42748] = 4,
-				[46644] = 4,
+				[24085] = 3,
 				[564] = 4,
 				[1861] = 20,
 				[7458] = 6,
-				[37024] = 3,
-				[36419] = 7,
+				[26228] = 4,
+				[6577] = 3,
 				[43644] = 3,
 				[35582] = 11,
-				[46399] = 3,
-				[1558] = 21,
-				[25397] = 23,
+				[569] = 9,
+				[38475] = 7,
+				[6665] = 3,
 				[1544] = 13,
 				[26305] = 20,
-				[11171] = 4,
 				[1909] = 27,
+				[11171] = 4,
 				[20450] = 13,
 				[38992] = 3,
-				[35674] = 5,
+				[42778] = 3,
 				[26689] = 3,
-				[22049] = 18,
+				[29070] = 3,
 				[7730] = 7,
 				[1937] = 3,
 				[4802] = 3,
@@ -3156,96 +3160,96 @@ TMWOptDB = {
 				[45948] = 3,
 				[37886] = 3,
 				[27201] = 3,
-				[11651] = 3,
 				[19139] = 11,
+				[38270] = 3,
 				[50683] = 13,
 				[39097] = 3,
 				[46844] = 3,
-				[1500] = 9,
-				[2883] = 10,
-				[37925] = 5,
+				[19320] = 42,
+				[607] = 4,
+				[612] = 21,
 				[29853] = 5,
-				[39324] = 4,
+				[9792] = 3,
 				[2001] = 5,
-				[92] = 4,
+				[45469] = 9,
 				[28033] = 8,
 				[32256] = 3,
 				[39934] = 3,
-				[46106] = 11,
 				[28289] = 4,
-				[20437] = 12,
+				[2025] = 23,
 				[44541] = 6,
-				[18153] = 6,
-				[18882] = 5,
-				[45979] = 9,
-				[20611] = 3,
+				[36351] = 3,
+				[46309] = 4,
+				[6985] = 6,
+				[46247] = 15,
+				[16061] = 6,
 				[24642] = 4,
 				[16516] = 11,
-				[50011] = 37,
+				[31004] = 4,
 				[49847] = 15,
-				[35619] = 54,
-				[34805] = 3,
+				[2688] = 3,
+				[24118] = 3,
 				[20931] = 5,
 				[8452] = 3,
 				[33920] = 3,
-				[18329] = 18,
+				[8973] = 7,
 				[12643] = 11,
 				[5580] = 6,
-				[10208] = 3,
-				[47134] = 34,
-				[11133] = 14,
+				[10240] = 4,
+				[40025] = 4,
 				[43006] = 28,
+				[34816] = 4,
 				[21656] = 11,
-				[47978] = 45,
-				[30040] = 3,
+				[46700] = 5,
+				[19993] = 9,
 				[25726] = 9,
-				[40310] = 3,
-				[8533] = 19,
-				[40977] = 3,
-				[16584] = 3,
-				[33032] = 8,
+				[19161] = 7,
+				[12687] = 6,
+				[7323] = 5,
+				[45445] = 10,
+				[49412] = 27,
 				[4515] = 5,
 				[8294] = 5,
-				[12563] = 6,
+				[8881] = 11,
 				[24055] = 3,
 				[48893] = 24,
-				[38705] = 3,
+				[42186] = 12,
 				[26626] = 9,
 				[2314] = 15,
-				[4988] = 13,
-				[9348] = 9,
+				[44448] = 3,
 				[2338] = 24,
-				[2459] = 20,
-				[21567] = 20,
-				[9553] = 19,
-				[42266] = 3,
-				[7409] = 9,
-				[42314] = 3,
-				[2427] = 15,
-				[11529] = 5,
-				[751] = 4,
+				[9348] = 9,
+				[13231] = 3,
+				[45645] = 12,
+				[11248] = 4,
+				[45088] = 3,
+				[5650] = 15,
+				[15454] = 4,
+				[10019] = 3,
+				[714] = 6,
+				[43865] = 8,
 				[27522] = 4,
-				[46764] = 4,
-				[22169] = 18,
-				[45263] = 3,
+				[5786] = 23,
+				[725] = 6,
+				[760] = 8,
 				[13891] = 4,
 				[27842] = 4,
 				[29365] = 6,
-				[45258] = 4,
+				[42460] = 3,
 				[4963] = 7,
 				[9713] = 20,
 				[9988] = 3,
-				[21119] = 8,
+				[27734] = 3,
 				[5027] = 14,
 				[5043] = 5,
 				[14211] = 16,
 				[44671] = 12,
 				[14275] = 3,
-				[35126] = 3,
+				[44258] = 4,
 				[20703] = 4,
-				[27205] = 4,
+				[11557] = 7,
 				[5155] = 4,
-				[33927] = 5,
+				[44885] = 48,
 				[42610] = 3,
 				[5203] = 3,
 				[38286] = 3,
@@ -3256,379 +3260,377 @@ TMWOptDB = {
 				[34178] = 3,
 				[10628] = 23,
 				[38529] = 4,
-				[45106] = 3,
+				[37542] = 4,
 				[10724] = 5,
-				[28970] = 17,
-				[10294] = 4,
+				[4203] = 6,
+				[44961] = 7,
 				[51454] = 41,
 				[29890] = 3,
-				[1140] = 12,
-				[39553] = 3,
 				[30082] = 3,
-				[6555] = 3,
+				[39553] = 3,
+				[10948] = 3,
+				[6475] = 4,
 				[1967] = 11,
 				[30274] = 6,
 				[22148] = 19,
 				[52606] = 239,
-				[23805] = 6,
+				[42880] = 29,
 				[42937] = 6,
 				[19291] = 3,
-				[14753] = 14,
-				[27355] = 6,
-				[33155] = 3,
+				[44830] = 5,
+				[44812] = 5,
+				[4355] = 7,
 				[5667] = 5,
 				[15459] = 4,
-				[38674] = 6,
+				[8738] = 9,
 				[18757] = 4,
 				[5731] = 4,
-				[8484] = 5,
-				[9058] = 19,
-				[8468] = 15,
-				[44437] = 10,
+				[807] = 5,
+				[25976] = 12,
+				[819] = 3,
 				[38274] = 3,
+				[50559] = 72,
 				[38402] = 5,
-				[17699] = 8,
+				[44660] = 10,
 				[5859] = 3,
 				[46976] = 5,
-				[28631] = 33,
-				[1162] = 16,
+				[22941] = 4,
+				[35883] = 3,
 				[43159] = 9,
 				[51583] = 34,
 				[23812] = 10,
 				[11940] = 18,
-				[16131] = 5,
-				[6067] = 7,
-				[39938] = 3,
-				[28227] = 7,
 				[48384] = 17,
 				[28355] = 3,
+				[39938] = 3,
+				[28227] = 7,
+				[12100] = 18,
+				[6067] = 7,
 				[36355] = 9,
 				[28483] = 3,
-				[44601] = 3,
+				[2063] = 7,
 				[20421] = 3,
 				[6714] = 3,
-				[13328] = 10,
+				[26491] = 25,
 				[6179] = 11,
 				[9013] = 19,
-				[838] = 7,
-				[10469] = 3,
-				[858] = 7,
-				[10970] = 17,
+				[5531] = 12,
+				[37765] = 3,
+				[43877] = 3,
+				[866] = 5,
 				[16902] = 6,
 				[12580] = 4,
-				[887] = 10,
-				[1011] = 3,
-				[10194] = 3,
+				[880] = 3,
+				[7058] = 9,
+				[10162] = 3,
 				[3178] = 10,
-				[36997] = 15,
-				[22013] = 14,
+				[14372] = 7,
+				[12892] = 3,
 				[21981] = 6,
-				[12305] = 3,
-				[23932] = 15,
-				[12481] = 3,
+				[12401] = 17,
+				[916] = 5,
 				[25860] = 3,
-				[36229] = 8,
+				[8837] = 15,
+				[44419] = 7,
 				[9859] = 3,
 				[30147] = 4,
-				[10498] = 23,
+				[43345] = 7,
 				[22499] = 19,
 				[6563] = 9,
-				[922] = 8,
+				[7330] = 10,
 				[3298] = 6,
-				[44802] = 4,
+				[17214] = 10,
 				[18310] = 17,
-				[32067] = 4,
-				[3974] = 3,
-				[13924] = 3,
-				[44048] = 5,
-				[43412] = 6,
-				[11714] = 3,
+				[35461] = 3,
+				[39300] = 6,
+				[47490] = 24,
+				[5371] = 3,
+				[6206] = 7,
+				[23739] = 19,
 				[43475] = 3,
 				[3378] = 7,
 				[6771] = 3,
-				[11090] = 4,
-				[38188] = 4,
-				[11282] = 3,
-				[2407] = 18,
-				[43649] = 4,
-				[9637] = 16,
 				[13169] = 11,
+				[38188] = 4,
+				[43649] = 4,
+				[2407] = 18,
+				[11282] = 3,
+				[9637] = 16,
+				[11090] = 4,
 				[19398] = 9,
-				[23739] = 19,
-				[6206] = 7,
-				[5371] = 3,
-				[39300] = 6,
-				[47490] = 24,
-				[35461] = 3,
-				[17214] = 10,
-				[7330] = 10,
+				[11714] = 3,
+				[43412] = 6,
+				[44048] = 5,
+				[13924] = 3,
+				[3974] = 3,
+				[32067] = 4,
+				[44802] = 4,
+				[922] = 8,
 				[14084] = 3,
-				[43345] = 7,
+				[10498] = 23,
 				[3538] = 4,
-				[44419] = 7,
-				[8837] = 15,
-				[916] = 5,
-				[12401] = 17,
+				[36229] = 8,
+				[12481] = 3,
+				[23932] = 15,
+				[12305] = 3,
 				[24517] = 12,
-				[12892] = 3,
-				[14372] = 7,
-				[10162] = 3,
-				[7058] = 9,
-				[880] = 3,
-				[866] = 5,
-				[43877] = 3,
-				[37765] = 3,
-				[5531] = 12,
+				[22013] = 14,
+				[36997] = 15,
+				[10194] = 3,
+				[1011] = 3,
+				[887] = 10,
+				[10970] = 17,
+				[858] = 7,
+				[10469] = 3,
+				[838] = 7,
 				[29252] = 3,
-				[26491] = 25,
+				[13328] = 10,
 				[21190] = 17,
-				[2063] = 7,
+				[44601] = 3,
 				[29508] = 3,
-				[12100] = 18,
+				[16131] = 5,
 				[25541] = 3,
-				[35883] = 3,
-				[22941] = 4,
-				[44660] = 10,
-				[50559] = 72,
-				[819] = 3,
-				[25976] = 12,
-				[807] = 5,
-				[8738] = 9,
-				[4355] = 7,
-				[44812] = 5,
-				[44830] = 5,
+				[1162] = 16,
+				[28631] = 33,
+				[17699] = 8,
+				[44437] = 10,
+				[8468] = 15,
+				[9058] = 19,
+				[8484] = 5,
+				[38674] = 6,
+				[33155] = 3,
+				[27355] = 6,
+				[14753] = 14,
 				[11109] = 4,
 				[44548] = 25,
-				[42880] = 29,
+				[23805] = 6,
 				[36614] = 3,
-				[6475] = 4,
-				[10948] = 3,
-				[44961] = 7,
-				[4203] = 6,
-				[37542] = 4,
+				[6555] = 3,
+				[1140] = 12,
+				[10294] = 4,
+				[28970] = 17,
+				[45106] = 3,
 				[3874] = 40,
 				[45700] = 14,
 				[18823] = 3,
 				[45956] = 3,
-				[44885] = 48,
-				[11557] = 7,
+				[33927] = 5,
+				[27205] = 4,
 				[46340] = 3,
-				[44258] = 4,
-				[27734] = 3,
+				[35126] = 3,
+				[21119] = 8,
 				[23366] = 12,
-				[42460] = 3,
+				[45258] = 4,
 				[23494] = 4,
-				[760] = 8,
-				[725] = 6,
-				[5786] = 23,
-				[43865] = 8,
-				[714] = 6,
-				[10019] = 3,
-				[15454] = 4,
-				[5650] = 15,
-				[45088] = 3,
-				[11248] = 4,
-				[45645] = 12,
-				[13231] = 3,
+				[45263] = 3,
+				[22169] = 18,
+				[46764] = 4,
+				[751] = 4,
+				[11529] = 5,
+				[2427] = 15,
+				[42314] = 3,
+				[7409] = 9,
+				[42266] = 3,
+				[9553] = 19,
+				[21567] = 20,
+				[2459] = 20,
 				[28421] = 3,
-				[44448] = 3,
-				[42186] = 12,
+				[4988] = 13,
+				[38705] = 3,
 				[12261] = 17,
-				[8881] = 11,
+				[12563] = 6,
 				[4116] = 14,
-				[49412] = 27,
-				[45445] = 10,
-				[7323] = 5,
-				[12687] = 6,
-				[19161] = 7,
+				[33032] = 8,
+				[16584] = 3,
+				[40977] = 3,
+				[8533] = 19,
+				[40310] = 3,
 				[33672] = 3,
-				[19993] = 9,
-				[46700] = 5,
+				[30040] = 3,
+				[47978] = 45,
 				[8518] = 14,
-				[34816] = 4,
-				[40025] = 4,
-				[10240] = 4,
+				[11133] = 14,
+				[47134] = 34,
+				[10208] = 3,
 				[46853] = 22,
-				[8973] = 7,
-				[24118] = 3,
-				[2688] = 3,
+				[18329] = 18,
+				[34805] = 3,
+				[35619] = 54,
 				[12869] = 3,
-				[31004] = 4,
-				[16061] = 6,
-				[46247] = 15,
-				[6985] = 6,
-				[46309] = 4,
-				[36351] = 3,
-				[2025] = 23,
+				[50011] = 37,
+				[20611] = 3,
+				[45979] = 9,
+				[18882] = 5,
+				[18153] = 6,
+				[20437] = 12,
+				[46106] = 11,
 				[24066] = 5,
-				[45469] = 9,
-				[9792] = 3,
+				[92] = 4,
+				[39324] = 4,
 				[18248] = 12,
-				[612] = 21,
-				[607] = 4,
-				[19320] = 42,
+				[37925] = 5,
+				[2883] = 10,
+				[1500] = 9,
 				[18504] = 26,
-				[38270] = 3,
+				[11651] = 3,
 				[4660] = 81,
 				[22791] = 4,
-				[29070] = 3,
-				[42778] = 3,
+				[22049] = 18,
+				[35674] = 5,
 				[18888] = 42,
 				[50181] = 5,
 				[42119] = 4,
 				[23175] = 4,
-				[6665] = 3,
-				[38475] = 7,
-				[569] = 9,
-				[6577] = 3,
-				[26228] = 4,
+				[25397] = 23,
+				[1558] = 21,
+				[46399] = 3,
+				[36419] = 7,
+				[37024] = 3,
 				[47110] = 3,
-				[24085] = 3,
+				[46644] = 4,
 				[34558] = 11,
 				[43399] = 6,
 				[51717] = 130,
-				[34529] = 7,
-				[35000] = 4,
-				[24007] = 4,
+				[29984] = 5,
+				[22358] = 13,
+				[35721] = 3,
 				[35849] = 4,
-				[46805] = 3,
-				[4437] = 6,
-				[42716] = 9,
-				[45178] = 4,
-				[10527] = 7,
+				[7345] = 8,
+				[20651] = 3,
+				[6508] = 4,
+				[557] = 6,
+				[26144] = 10,
 				[10182] = 3,
-				[10895] = 3,
+				[21014] = 13,
 				[36873] = 3,
-				[1580] = 8,
-				[44506] = 11,
-				[24276] = 7,
-				[45575] = 7,
-				[23993] = 9,
-				[47181] = 67,
-				[5969] = 9,
-				[46619] = 3,
-				[19670] = 4,
-				[499] = 13,
-				[23668] = 7,
-				[13869] = 3,
+				[47058] = 7,
+				[46940] = 22,
+				[37574] = 3,
+				[10374] = 13,
+				[37392] = 3,
+				[4210] = 11,
+				[1720] = 5,
+				[30577] = 7,
+				[42806] = 7,
+				[43318] = 3,
+				[22762] = 4,
+				[1979] = 12,
 				[42632] = 5,
 				[38665] = 4,
-				[3543] = 4,
-				[47328] = 3,
-				[29329] = 3,
-				[16759] = 4,
-				[5428] = 52,
+				[14228] = 19,
+				[1792] = 3,
+				[31150] = 58,
+				[484] = 7,
+				[35210] = 19,
 				[35338] = 4,
-				[35466] = 4,
+				[10918] = 3,
 				[43784] = 21,
-				[7888] = 3,
-				[26482] = 6,
-				[22292] = 19,
-				[48058] = 40,
-				[43928] = 5,
-				[20673] = 3,
-				[15068] = 19,
-				[48306] = 14,
-				[11238] = 4,
+				[1589] = 15,
+				[5181] = 4,
+				[5197] = 3,
+				[7260] = 5,
+				[36154] = 13,
+				[24563] = 8,
+				[5609] = 5,
+				[12909] = 29,
+				[26567] = 4,
 				[11270] = 3,
-				[47446] = 43,
-				[5509] = 3,
-				[31855] = 3,
+				[2851] = 4,
+				[10773] = 14,
+				[46893] = 3,
 				[5700] = 3,
-				[48351] = 9,
-				[31246] = 3,
-				[25332] = 7,
+				[48321] = 21,
+				[5941] = 10,
+				[1835] = 7,
 				[5764] = 17,
-				[933] = 6,
+				[50935] = 41,
 				[46344] = 8,
 				[5812] = 45,
-				[3701] = 14,
-				[22837] = 3,
-				[519] = 7,
+				[38077] = 3,
+				[25170] = 4,
+				[11223] = 9,
 				[27591] = 8,
-				[8424] = 3,
-				[10062] = 10,
-				[48034] = 7,
-				[48803] = 86,
-				[5397] = 4,
-				[18188] = 3,
-				[17717] = 10,
-				[37401] = 3,
+				[48474] = 60,
+				[45115] = 4,
+				[6437] = 6,
+				[28939] = 5,
+				[8952] = 3,
+				[26340] = 4,
+				[9277] = 17,
+				[30191] = 3,
 				[24072] = 8,
-				[11821] = 3,
-				[47124] = 3,
+				[6661] = 3,
+				[6952] = 5,
 				[32454] = 20,
-				[6701] = 10,
+				[22374] = 18,
 				[36491] = 3,
-				[1540] = 3,
+				[1707] = 3,
 				[6132] = 4,
-				[8199] = 3,
-				[49380] = 4,
-				[43924] = 3,
-				[44780] = 14,
+				[32780] = 3,
+				[49329] = 7,
+				[29777] = 10,
+				[25105] = 4,
 				[12422] = 16,
-				[40918] = 8,
-				[24369] = 5,
-				[45961] = 15,
-				[3289] = 3,
-				[4521] = 3,
-				[3281] = 3,
-				[4465] = 28,
+				[19944] = 8,
+				[48685] = 19,
+				[37771] = 4,
+				[46663] = 5,
+				[7133] = 3,
+				[11320] = 7,
+				[3152] = 5,
 				[25352] = 5,
-				[404] = 4,
+				[49739] = 11,
 				[25480] = 5,
 				[17354] = 10,
-				[49758] = 6,
-				[49765] = 33,
-				[42836] = 3,
-				[3189] = 15,
-				[8047] = 3,
+				[47378] = 21,
+				[26790] = 7,
+				[17100] = 4,
+				[18283] = 5,
+				[14876] = 11,
 				[51848] = 78,
-				[32990] = 6,
-				[49865] = 4,
-				[29294] = 4,
+				[34264] = 3,
+				[2996] = 11,
+				[12314] = 3,
 				[22089] = 31,
-				[23057] = 3,
-				[49889] = 19,
+				[50094] = 4,
+				[22929] = 6,
 				[26376] = 3,
-				[22705] = 4,
-				[30861] = 3,
-				[44946] = 3,
-				[34647] = 3,
-				[22601] = 17,
-				[50102] = 78,
-				[9319] = 5,
-				[50187] = 7,
-				[50195] = 5,
-				[50201] = 8,
-				[50370] = 28,
+				[18290] = 17,
+				[20970] = 17,
+				[4247] = 15,
+				[12600] = 3,
+				[30791] = 7,
+				[43766] = 5,
+				[18634] = 13,
+				[7286] = 3,
+				[18348] = 3,
+				[15367] = 22,
+				[23926] = 3,
 				[37900] = 4,
-				[50400] = 25,
-				[50494] = 5,
-				[50500] = 17,
-				[50697] = 36,
-				[50632] = 12,
+				[22228] = 19,
+				[3640] = 4,
+				[23499] = 5,
+				[23305] = 3,
+				[50652] = 30,
 				[42763] = 3,
-				[50740] = 9,
-				[50750] = 12,
-				[50763] = 84,
+				[21933] = 3,
+				[8859] = 13,
+				[50853] = 16,
 				[43275] = 15,
-				[51011] = 109,
-				[51121] = 28,
-				[3046] = 4,
-				[11256] = 8,
-				[51641] = 5,
-				[51647] = 8,
+				[11482] = 3,
+				[25131] = 9,
+				[31592] = 3,
+				[23532] = 5,
+				[28042] = 12,
+				[51658] = 3,
 				[10023] = 9,
-				[14150] = 6,
+				[20106] = 5,
 				[44427] = 4,
 				[36365] = 5,
 				[48778] = 11,
-				[52237] = 368,
-				[4155] = 4,
+				[27856] = 3,
+				[42124] = 6,
 			},
-			["SpellCacheWoWVersion"] = "42328",
-			["XPac_ItemCache"] = 2,
 		},
 	},
 	["profileKeys"] = {
@@ -3655,29 +3657,29 @@ TMWOptDB = {
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Paydo - Dreadmist"] = "Warrior",
 		["Mxys - Golemagg"] = "Priest",
-		["Moolatz - Golemagg"] = "Druid",
+		["Moolatz - Dreadnaught"] = "Druid",
 		["Vermins - Stonespine"] = "Warrior",
-		["Konac - Dreadnaught"] = "Priest",
-		["Greenwise - Golemagg"] = "Warrior",
+		["Mxzq - Golemagg"] = "Hunter",
+		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
 		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
+		["Korupcija - Stonespine"] = "Warrior",
 		["Mxym - Golemagg"] = "Priest",
-		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Warlock",
 		["Jaroslav - Golemagg"] = "Druid",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Warlock",
+		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Judawise - Golemagg"] = "Warrior",
-		["Korupcija - Stonespine"] = "Warrior",
-		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
-		["Mxzq - Golemagg"] = "Hunter",
-		["Moolatz - Dreadnaught"] = "Druid",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
+		["Greenwise - Golemagg"] = "Warrior",
+		["Konac - Dreadnaught"] = "Priest",
+		["Moolatz - Golemagg"] = "Druid",
 	},
 	["global"] = {
 		["RecentColors"] = {
 			"00000000", -- [1]
 			"ff000000", -- [2]
 		},
-		["TellMeWhenDBBackupDate"] = 1645616743,
+		["TellMeWhenDBBackupDate"] = 1645727165,
 		["EditorHeight"] = 670.833435058594,
 		["LastChangelogVersion"] = 91200,
 		["ConfigWarningN"] = -9999950,
@@ -3704,19 +3706,19 @@ TMWOptDB = {
 				["Paydo - Dreadmist"] = "Warrior",
 				["Mxys - Golemagg"] = "Priest",
 				["Vermins - Stonespine"] = "Warrior",
-				["Testxv - Golemagg"] = "Testxv - Golemagg",
+				["Moolatz - Golemagg"] = "Druid",
 				["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
-				["Mxyzptlk - Golemagg"] = "Warlock",
-				["Konac - Dreadnaught"] = "Priest",
-				["Pitchwise - Dreadnaught"] = "Warrior",
+				["Dotwise - Golemagg"] = "Warrior",
+				["Battlearm - Golemagg"] = "Battlearm - Golemagg",
+				["Greenwise - Golemagg"] = "Warrior",
 				["Jaroslav - Golemagg"] = "Druid",
 				["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 				["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 				["Judawise - Golemagg"] = "Warrior",
-				["Greenwise - Golemagg"] = "Warrior",
-				["Battlearm - Golemagg"] = "Battlearm - Golemagg",
-				["Dotwise - Golemagg"] = "Warrior",
-				["Moolatz - Golemagg"] = "Druid",
+				["Pitchwise - Dreadnaught"] = "Warrior",
+				["Konac - Dreadnaught"] = "Priest",
+				["Mxyzptlk - Golemagg"] = "Warlock",
+				["Testxv - Golemagg"] = "Testxv - Golemagg",
 			},
 			["global"] = {
 				["TextLayouts"] = {
@@ -3754,16 +3756,16 @@ TMWOptDB = {
 							["Height"] = 1,
 						}, -- [1]
 						{
-							["Outline"] = "OUTLINE",
-							["SkinAs"] = "Count",
+							["DefaultText"] = "[Stacks:Hide(0)]",
 							["Anchors"] = {
 								{
 									["point"] = "BOTTOMRIGHT",
 									["relativePoint"] = "BOTTOMRIGHT",
 								}, -- [1]
 							},
+							["SkinAs"] = "Count",
 							["StringName"] = "Stacks",
-							["DefaultText"] = "[Stacks:Hide(0)]",
+							["Outline"] = "OUTLINE",
 						}, -- [2]
 						["GUID"] = "TMW:textlayout:1TYZ96XyCAeK",
 						["Name"] = "Icon Layout 2",
@@ -3790,7 +3792,10 @@ TMWOptDB = {
 							["StringName"] = "Binding/Label",
 						}, -- [1]
 						{
+							["Outline"] = "OUTLINE",
+							["SkinAs"] = "Count",
 							["DefaultText"] = "[Stacks:Hide(0)]",
+							["StringName"] = "Stacks",
 							["Anchors"] = {
 								{
 									["y"] = 2,
@@ -3798,9 +3803,6 @@ TMWOptDB = {
 									["relativePoint"] = "BOTTOMRIGHT",
 								}, -- [1]
 							},
-							["Outline"] = "OUTLINE",
-							["StringName"] = "Stacks",
-							["SkinAs"] = "Count",
 							["Size"] = 9,
 						}, -- [2]
 						["GUID"] = "TMW:textlayout:1TZve345g=GK",
@@ -3928,8 +3930,8 @@ TMWOptDB = {
 							["Name"] = "Warrior Rotation",
 							["SettingsPerView"] = {
 								["icon"] = {
-									["BorderColor"] = "00000000",
 									["BorderInset"] = false,
+									["BorderColor"] = "00000000",
 								},
 							},
 							["Locked"] = true,
@@ -3943,12 +3945,15 @@ TMWOptDB = {
 						}, -- [1]
 						{
 							["GUID"] = "TMW:group:1TQvxnAfbGyU",
-							["Name"] = "Warrior Spells",
+							["Locked"] = true,
 							["Point"] = {
 								["y"] = -5,
 								["point"] = "TOP",
 								["relativePoint"] = "TOP",
 							},
+							["Alpha"] = 0,
+							["Scale"] = 1,
+							["Columns"] = 20,
 							["Icons"] = {
 								{
 									["Enabled"] = true,
@@ -3986,8 +3991,8 @@ TMWOptDB = {
 											["Operator"] = ">=",
 										}, -- [1]
 										{
-											["Level"] = 15,
 											["Type"] = "BUFFDUR",
+											["Level"] = 15,
 											["Name"] = "Battle Shout",
 											["Operator"] = "<=",
 										}, -- [2]
@@ -4030,21 +4035,14 @@ TMWOptDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Name"] = "Overpower",
 									["GUID"] = "TMW:icon:1TU=hLnlwyeY",
+									["Name"] = "Overpower",
 								}, -- [4]
 								{
 									["Enabled"] = true,
 									["Type"] = "buff",
 									["Name"] = "Demoralizing Shout",
-									["States"] = {
-										{
-											["Alpha"] = 0,
-										}, -- [1]
-										{
-											["Alpha"] = 1,
-										}, -- [2]
-									},
+									["Unit"] = "target",
 									["BuffOrDebuff"] = "HARMFUL",
 									["Conditions"] = {
 										{
@@ -4059,7 +4057,14 @@ TMWOptDB = {
 										["n"] = 2,
 									},
 									["GUID"] = "TMW:icon:1TWZdpV26rm5",
-									["Unit"] = "target",
+									["States"] = {
+										{
+											["Alpha"] = 0,
+										}, -- [1]
+										{
+											["Alpha"] = 1,
+										}, -- [2]
+									},
 								}, -- [5]
 								{
 									["GUID"] = "TMW:icon:1TYYu4EDbfSz",
@@ -4089,10 +4094,7 @@ TMWOptDB = {
 									["GUID"] = "TMW:icon:1TWYMfcUzmi6",
 								},
 							},
-							["Locked"] = true,
-							["Columns"] = 20,
-							["Alpha"] = 0,
-							["Scale"] = 1,
+							["Name"] = "Warrior Spells",
 						}, -- [2]
 						{
 							["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -4129,8 +4131,8 @@ TMWOptDB = {
 									["Type"] = "buff",
 									["Name"] = "Blood Fury",
 									["BuffOrDebuff"] = "HARMFUL",
-									["Enabled"] = true,
 									["ShowTimerText"] = true,
+									["Enabled"] = true,
 								}, -- [1]
 								{
 									["Enabled"] = true,
@@ -4141,24 +4143,27 @@ TMWOptDB = {
 											["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
 										},
 									},
-									["ShowTimerText"] = true,
 									["GUID"] = "TMW:icon:1TZvNvgAkfmq",
+									["ShowTimerText"] = true,
 								}, -- [2]
 							},
 							["TextureName"] = "Details Flat",
 							["Name"] = "General Buffs/Debbufs",
 							["Locked"] = true,
-							["Alpha"] = 0,
 							["Columns"] = 20,
+							["Alpha"] = 0,
 						}, -- [4]
 						{
 							["GUID"] = "TMW:group:1TeVAjjUoOOh",
-							["Name"] = "Hunter Spells",
+							["Locked"] = true,
 							["Point"] = {
 								["y"] = -75,
 								["point"] = "TOP",
 								["relativePoint"] = "TOP",
 							},
+							["Alpha"] = 0,
+							["Scale"] = 1,
+							["Columns"] = 20,
 							["Icons"] = {
 								{
 									["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
@@ -4166,8 +4171,8 @@ TMWOptDB = {
 									["Name"] = "Serpent Sting",
 									["Enabled"] = true,
 									["BuffOrDebuff"] = "HARMFUL",
-									["ShowTimerText"] = true,
 									["Type"] = "buff",
+									["ShowTimerText"] = true,
 									["Unit"] = "target",
 								}, -- [1]
 								{
@@ -4180,19 +4185,13 @@ TMWOptDB = {
 									["Unit"] = "target",
 								}, -- [2]
 							},
-							["Locked"] = true,
-							["Columns"] = 20,
-							["Alpha"] = 0,
-							["Scale"] = 1,
+							["Name"] = "Hunter Spells",
 						}, -- [5]
 						{
 							["GUID"] = "TMW:group:1TeVDtajUwqa",
 							["Columns"] = 3,
 							["Scale"] = 1.5,
-							["Point"] = {
-								["y"] = -88,
-								["x"] = 4.06901041666667e-05,
-							},
+							["Name"] = "Hunter Rotation",
 							["Icons"] = {
 								{
 									["Enabled"] = true,
@@ -4209,16 +4208,19 @@ TMWOptDB = {
 									},
 								}, -- [2]
 							},
-							["Name"] = "Hunter Rotation",
+							["Point"] = {
+								["y"] = -88,
+								["x"] = 4.06901041666667e-05,
+							},
 						}, -- [6]
 						{
 							["GUID"] = "TMW:group:1V6krZ0tqss=",
 							["Columns"] = 1,
 							["Scale"] = 1.5,
+							["Name"] = "Warlock Rotation",
 							["Point"] = {
 								["y"] = -88,
 							},
-							["Name"] = "Warlock Rotation",
 						}, -- [7]
 					},
 					["Version"] = 91200,
@@ -4226,7 +4228,7 @@ TMWOptDB = {
 				},
 				["Arms"] = {
 					["Version"] = 91200,
-					["WarnInvalids"] = false,
+					["TextureName"] = "Blizzard Raid Bar",
 					["Groups"] = {
 						{
 							["GUID"] = "TMW:group:1QvASKcpevmB",
@@ -4256,16 +4258,16 @@ TMWOptDB = {
 											["Type"] = "TALENTLEARNED",
 										}, -- [1]
 										{
-											["Name"] = "208086",
-											["Type"] = "DEBUFFDUR",
 											["Checked"] = true,
+											["Type"] = "DEBUFFDUR",
+											["Name"] = "208086",
 											["Unit"] = "target",
 										}, -- [2]
 										{
-											["Operator"] = ">",
+											["Unit"] = "target",
 											["Level"] = 20,
 											["Type"] = "HEALTH",
-											["Unit"] = "target",
+											["Operator"] = ">",
 										}, -- [3]
 										["n"] = 3,
 									},
@@ -4284,8 +4286,8 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "107574",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RZ8uyGIHkyU",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["Name"] = "22397",
@@ -4301,15 +4303,15 @@ TMWOptDB = {
 										}, -- [3]
 										["n"] = 3,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RZ8uyGIHkyU",
+									["FakeHidden"] = true,
 								}, -- [2]
 								{
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "227847",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1Rg1PA0lcPyA",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["Name"] = "testofmight",
@@ -4327,9 +4329,9 @@ TMWOptDB = {
 											["Operator"] = "<=",
 										}, -- [3]
 										{
-											["Name"] = "208086",
-											["Type"] = "DEBUFFDUR",
 											["Checked"] = true,
+											["Type"] = "DEBUFFDUR",
+											["Name"] = "208086",
 											["Unit"] = "target",
 										}, -- [4]
 										{
@@ -4340,10 +4342,10 @@ TMWOptDB = {
 											["Operator"] = "<",
 										}, -- [5]
 										{
-											["Type"] = "TALENTLEARNED",
-											["Level"] = 1,
 											["Name"] = "22391",
+											["Level"] = 1,
 											["PrtsAfter"] = 1,
+											["Type"] = "TALENTLEARNED",
 										}, -- [6]
 										{
 											["Type"] = "SPELLCD",
@@ -4383,10 +4385,10 @@ TMWOptDB = {
 											["Operator"] = "~=",
 										}, -- [12]
 										{
-											["Type"] = "TALENTLEARNED",
-											["Level"] = 1,
 											["Name"] = "22391",
+											["Level"] = 1,
 											["PrtsAfter"] = 2,
+											["Type"] = "TALENTLEARNED",
 										}, -- [13]
 										{
 											["PrtsBefore"] = 1,
@@ -4395,10 +4397,10 @@ TMWOptDB = {
 											["Level"] = 1,
 										}, -- [14]
 										{
-											["Type"] = "LASTCAST",
-											["Level"] = 1,
 											["Name"] = "167105",
+											["Level"] = 1,
 											["PrtsAfter"] = 1,
+											["Type"] = "LASTCAST",
 										}, -- [15]
 										{
 											["Type"] = "BUFFDUR",
@@ -4437,15 +4439,15 @@ TMWOptDB = {
 										}, -- [21]
 										["n"] = 21,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1Rg1PA0lcPyA",
+									["FakeHidden"] = true,
 								}, -- [3]
 								{
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "167105",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RGdpp2C6tbD",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["PrtsBefore"] = 3,
@@ -4475,8 +4477,8 @@ TMWOptDB = {
 											["Name"] = "testofmight",
 										}, -- [5]
 										{
-											["Level"] = 55,
 											["Type"] = "RAGE_ABS",
+											["Level"] = 55,
 											["PrtsAfter"] = 1,
 											["Operator"] = ">",
 										}, -- [6]
@@ -4497,22 +4499,15 @@ TMWOptDB = {
 										}, -- [9]
 										["n"] = 9,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RGdpp2C6tbD",
+									["FakeHidden"] = true,
 								}, -- [4]
 								{
 									["GUID"] = "TMW:icon:1RTBzFiJhwQj",
 									["ShowTimer"] = true,
-									["FakeHidden"] = true,
 									["ClockGCD"] = true,
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												"", -- [1]
-												"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-											},
-										},
-									},
+									["FakeHidden"] = true,
+									["Type"] = "cooldown",
 									["Name"] = "12294",
 									["DurationMax"] = 2,
 									["Enabled"] = true,
@@ -4525,14 +4520,14 @@ TMWOptDB = {
 											["Unit"] = "target",
 										}, -- [1]
 										{
-											["Level"] = 1,
 											["Type"] = "SPELLCD",
+											["Level"] = 1,
 											["Name"] = "12294",
 											["Operator"] = "<",
 										}, -- [2]
 										{
-											["Level"] = 30,
 											["Type"] = "RAGE_ABS",
+											["Level"] = 30,
 											["Name"] = "12294",
 											["Operator"] = ">=",
 										}, -- [3]
@@ -4551,17 +4546,17 @@ TMWOptDB = {
 										{
 											["Type"] = "DEBUFFSTACKS",
 											["Checked"] = true,
-											["Level"] = 2,
-											["PrtsBefore"] = 1,
 											["AndOr"] = "OR",
+											["PrtsBefore"] = 1,
+											["Level"] = 2,
 											["Name"] = "272866",
 											["Unit"] = "target",
 										}, -- [6]
 										{
 											["Type"] = "DEBUFFSTACKS",
 											["Checked"] = true,
-											["Level"] = 2,
 											["AndOr"] = "OR",
+											["Level"] = 2,
 											["Name"] = "272867",
 											["Unit"] = "target",
 										}, -- [7]
@@ -4569,8 +4564,8 @@ TMWOptDB = {
 											["Type"] = "DEBUFFSTACKS",
 											["Checked"] = true,
 											["Name"] = "272870",
-											["Level"] = 2,
 											["AndOr"] = "OR",
+											["Level"] = 2,
 											["PrtsAfter"] = 3,
 											["Unit"] = "target",
 										}, -- [8]
@@ -4580,7 +4575,14 @@ TMWOptDB = {
 										}, -- [9]
 										["n"] = 9,
 									},
-									["Type"] = "cooldown",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												"", -- [1]
+												"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+											},
+										},
+									},
 									["States"] = {
 										nil, -- [1]
 										{
@@ -4591,16 +4593,9 @@ TMWOptDB = {
 								{
 									["GUID"] = "TMW:icon:1RGdpp2Rvc8H",
 									["ShowTimer"] = true,
-									["FakeHidden"] = true,
 									["ClockGCD"] = true,
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												"", -- [1]
-												"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-											},
-										},
-									},
+									["FakeHidden"] = true,
+									["Type"] = "cooldown",
 									["Name"] = "12294",
 									["DurationMax"] = 2,
 									["Enabled"] = true,
@@ -4628,9 +4623,9 @@ TMWOptDB = {
 											["Operator"] = "~=",
 										}, -- [3]
 										{
-											["Name"] = "execute",
-											["Type"] = "COUNTER",
 											["PrtsAfter"] = 1,
+											["Type"] = "COUNTER",
+											["Name"] = "execute",
 											["Unit"] = "target",
 										}, -- [4]
 										{
@@ -4639,7 +4634,14 @@ TMWOptDB = {
 										}, -- [5]
 										["n"] = 5,
 									},
-									["Type"] = "cooldown",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												"", -- [1]
+												"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+											},
+										},
+									},
 									["States"] = {
 										nil, -- [1]
 										{
@@ -4651,8 +4653,8 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "260643",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RGe00HwCayk",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "RAGE_ABS",
@@ -4669,30 +4671,24 @@ TMWOptDB = {
 										}, -- [3]
 										["n"] = 3,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RGe00HwCayk",
+									["FakeHidden"] = true,
 								}, -- [7]
 								{
 									["GUID"] = "TMW:icon:1RGeD0uAObsB",
 									["ShowTimer"] = true,
-									["FakeHidden"] = true,
 									["ClockGCD"] = true,
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
-											},
-										},
-									},
+									["FakeHidden"] = true,
+									["Type"] = "cooldown",
 									["Name"] = "12294",
 									["DurationMax"] = 2,
 									["Enabled"] = true,
 									["Conditions"] = {
 										{
-											["Type"] = "BUFFSTACKS",
-											["Level"] = 2,
 											["Name"] = "7384",
+											["Level"] = 2,
 											["Checked"] = true,
+											["Type"] = "BUFFSTACKS",
 										}, -- [1]
 										{
 											["Name"] = "12294",
@@ -4724,7 +4720,13 @@ TMWOptDB = {
 										}, -- [6]
 										["n"] = 6,
 									},
-									["Type"] = "cooldown",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
+											},
+										},
+									},
 									["States"] = {
 										nil, -- [1]
 										{
@@ -4736,16 +4738,16 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "227847",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RTBzNx11CSK",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "DEBUFFDUR",
 											["Checked"] = true,
-											["Operator"] = ">",
+											["Unit"] = "target",
 											["Level"] = 2,
 											["Name"] = "208086",
-											["Unit"] = "target",
+											["Operator"] = ">",
 										}, -- [1]
 										{
 											["Type"] = "COUNTER",
@@ -4765,10 +4767,10 @@ TMWOptDB = {
 											["Operator"] = "<",
 										}, -- [4]
 										{
-											["Type"] = "COUNTER",
-											["Level"] = 1,
 											["Name"] = "execute",
+											["Level"] = 1,
 											["PrtsAfter"] = 2,
+											["Type"] = "COUNTER",
 										}, -- [5]
 										{
 											["Name"] = "cooldown_toggle",
@@ -4785,8 +4787,8 @@ TMWOptDB = {
 										}, -- [8]
 										["n"] = 8,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RTBzNx11CSK",
+									["FakeHidden"] = true,
 								}, -- [9]
 								{
 									["Enabled"] = true,
@@ -4800,7 +4802,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["FakeHidden"] = true,
+									["Type"] = "cooldown",
 									["Conditions"] = {
 										{
 											["Icon"] = "TMW:icon:1RTC8jApfn=I",
@@ -4845,7 +4847,7 @@ TMWOptDB = {
 										["n"] = 7,
 									},
 									["GUID"] = "TMW:icon:1RGdpp2XiEgf",
-									["Type"] = "cooldown",
+									["FakeHidden"] = true,
 								}, -- [10]
 								{
 									["Enabled"] = true,
@@ -4859,7 +4861,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["FakeHidden"] = true,
+									["Type"] = "cooldown",
 									["Conditions"] = {
 										{
 											["PrtsBefore"] = 2,
@@ -4874,9 +4876,9 @@ TMWOptDB = {
 											["Type"] = "DEBUFFDUR",
 											["Name"] = "208086",
 											["PrtsBefore"] = 2,
-											["Operator"] = "~=",
-											["PrtsAfter"] = 1,
 											["Unit"] = "target",
+											["PrtsAfter"] = 1,
+											["Operator"] = "~=",
 										}, -- [3]
 										{
 											["Type"] = "DEBUFFDUR",
@@ -4905,14 +4907,14 @@ TMWOptDB = {
 										["n"] = 7,
 									},
 									["GUID"] = "TMW:icon:1Rg0on0B7Owq",
-									["Type"] = "cooldown",
+									["FakeHidden"] = true,
 								}, -- [11]
 								{
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "163201",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RGdpp2IFjGf",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "RAGE_ABS",
@@ -4937,10 +4939,10 @@ TMWOptDB = {
 										}, -- [3]
 										{
 											["Type"] = "HEALTH",
-											["Operator"] = "<",
+											["Unit"] = "target",
 											["Level"] = 20,
 											["PrtsAfter"] = 1,
-											["Unit"] = "target",
+											["Operator"] = "<",
 										}, -- [4]
 										{
 											["PrtsBefore"] = 1,
@@ -4955,10 +4957,10 @@ TMWOptDB = {
 										}, -- [6]
 										{
 											["Type"] = "HEALTH",
-											["Operator"] = "<",
+											["Unit"] = "target",
 											["Level"] = 35,
 											["PrtsAfter"] = 3,
-											["Unit"] = "target",
+											["Operator"] = "<",
 										}, -- [7]
 										{
 											["Type"] = "BUFFDUR",
@@ -4995,15 +4997,15 @@ TMWOptDB = {
 										}, -- [13]
 										["n"] = 13,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RGdpp2IFjGf",
+									["FakeHidden"] = true,
 								}, -- [12]
 								{
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "1680",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RGdpp2dIykT",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["Name"] = "22489",
@@ -5024,22 +5026,22 @@ TMWOptDB = {
 											["Operator"] = "~=",
 										}, -- [3]
 										{
-											["Operator"] = ">",
+											["Unit"] = "target",
 											["Level"] = 20,
 											["Type"] = "HEALTH",
-											["Unit"] = "target",
+											["Operator"] = ">",
 										}, -- [4]
 										{
-											["Level"] = 1,
 											["Type"] = "SPELLCD",
+											["Level"] = 1,
 											["Name"] = "12294",
 											["Operator"] = ">",
 										}, -- [5]
 										{
-											["Type"] = "COUNTER",
-											["Level"] = 1,
 											["Name"] = "testofmight",
+											["Level"] = 1,
 											["PrtsAfter"] = 1,
+											["Type"] = "COUNTER",
 										}, -- [6]
 										{
 											["PrtsBefore"] = 2,
@@ -5055,10 +5057,10 @@ TMWOptDB = {
 											["Operator"] = ">",
 										}, -- [8]
 										{
-											["Type"] = "TALENTLEARNED",
-											["Level"] = 1,
 											["Name"] = "22391",
+											["Level"] = 1,
 											["PrtsAfter"] = 1,
+											["Type"] = "TALENTLEARNED",
 										}, -- [9]
 										{
 											["Type"] = "SPELLCD",
@@ -5075,15 +5077,15 @@ TMWOptDB = {
 										}, -- [11]
 										{
 											["Type"] = "RAGE_ABS",
-											["Level"] = 65,
-											["PrtsBefore"] = 1,
 											["AndOr"] = "OR",
+											["PrtsBefore"] = 1,
+											["Level"] = 65,
 											["PrtsAfter"] = 3,
 											["Operator"] = ">",
 										}, -- [12]
 										{
-											["Level"] = 30,
 											["Type"] = "RAGE_ABS",
+											["Level"] = 30,
 											["PrtsAfter"] = 2,
 											["Operator"] = ">",
 										}, -- [13]
@@ -5093,15 +5095,15 @@ TMWOptDB = {
 										}, -- [14]
 										["n"] = 14,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RGdpp2dIykT",
+									["FakeHidden"] = true,
 								}, -- [13]
 								{
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "1464",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RGeIgsJQX0r",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "TALENTLEARNED",
@@ -5123,22 +5125,22 @@ TMWOptDB = {
 											["Operator"] = "~=",
 										}, -- [3]
 										{
-											["Operator"] = ">",
+											["Unit"] = "target",
 											["Level"] = 20,
 											["Type"] = "HEALTH",
-											["Unit"] = "target",
+											["Operator"] = ">",
 										}, -- [4]
 										{
-											["Level"] = 1,
 											["Type"] = "SPELLCD",
+											["Level"] = 1,
 											["Name"] = "12294",
 											["Operator"] = ">",
 										}, -- [5]
 										{
-											["Type"] = "COUNTER",
-											["Level"] = 1,
 											["Name"] = "testofmight",
+											["Level"] = 1,
 											["PrtsAfter"] = 1,
+											["Type"] = "COUNTER",
 										}, -- [6]
 										{
 											["PrtsBefore"] = 1,
@@ -5154,10 +5156,10 @@ TMWOptDB = {
 											["Operator"] = ">",
 										}, -- [8]
 										{
-											["Type"] = "TALENTLEARNED",
-											["Level"] = 1,
 											["Name"] = "22391",
+											["Level"] = 1,
 											["PrtsAfter"] = 1,
+											["Type"] = "TALENTLEARNED",
 										}, -- [9]
 										{
 											["Type"] = "SPELLCD",
@@ -5174,9 +5176,9 @@ TMWOptDB = {
 										}, -- [11]
 										{
 											["Type"] = "RAGE_ABS",
-											["Level"] = 65,
-											["PrtsBefore"] = 1,
 											["AndOr"] = "OR",
+											["PrtsBefore"] = 1,
+											["Level"] = 65,
 											["PrtsAfter"] = 4,
 											["Operator"] = ">",
 										}, -- [12]
@@ -5186,8 +5188,8 @@ TMWOptDB = {
 										}, -- [13]
 										["n"] = 13,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RGeIgsJQX0r",
+									["FakeHidden"] = true,
 								}, -- [14]
 								{
 									["Enabled"] = true,
@@ -5222,10 +5224,10 @@ TMWOptDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
-									["GUID"] = "TMW:icon:1RJiuYRHNBx2",
+									["Type"] = "swingtimer",
 									["FakeHidden"] = true,
 									["CustomTex"] = "8386",
-									["Type"] = "swingtimer",
+									["GUID"] = "TMW:icon:1RJiuYRHNBx2",
 								}, -- [15]
 								{
 									["GUID"] = "TMW:icon:1RJiuYRLZrXP",
@@ -5234,25 +5236,25 @@ TMWOptDB = {
 									["FakeHidden"] = true,
 									["Events"] = {
 										{
-											["Event"] = "WCSP",
-											["Type"] = "Animations",
 											["Period"] = 1,
+											["Type"] = "Animations",
+											["Event"] = "WCSP",
 											["Animation"] = "ICONFLASH",
 										}, -- [1]
 										["n"] = 1,
 									},
 									["DurationMax"] = 1,
-									["Enabled"] = true,
-									["CustomTex"] = "8386",
 									["Type"] = "swingtimer",
+									["CustomTex"] = "8386",
+									["Enabled"] = true,
 								}, -- [16]
 								{
 									["ShowTTText"] = true,
 									["Type"] = "buff",
 									["Name"] = "7384",
-									["GUID"] = "TMW:icon:1RGeD0uM4U3o",
-									["FakeHidden"] = true,
 									["Enabled"] = true,
+									["FakeHidden"] = true,
+									["GUID"] = "TMW:icon:1RGeD0uM4U3o",
 								}, -- [17]
 								nil, -- [18]
 								{
@@ -5273,10 +5275,10 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "260708",
-									["GUID"] = "TMW:icon:1RL=eAHTYJcw",
-									["FakeHidden"] = true,
-									["ClockGCD"] = true,
 									["Type"] = "cooldown",
+									["ClockGCD"] = true,
+									["FakeHidden"] = true,
+									["GUID"] = "TMW:icon:1RL=eAHTYJcw",
 								}, -- [21]
 								{
 									["Enabled"] = true,
@@ -5294,16 +5296,16 @@ TMWOptDB = {
 											["Type"] = "TALENTLEARNED",
 										}, -- [1]
 										{
-											["Name"] = "208086",
-											["Type"] = "DEBUFFDUR",
 											["Checked"] = true,
+											["Type"] = "DEBUFFDUR",
+											["Name"] = "208086",
 											["Unit"] = "target",
 										}, -- [2]
 										{
-											["Operator"] = ">",
+											["Unit"] = "target",
 											["Level"] = 20,
 											["Type"] = "HEALTH",
-											["Unit"] = "target",
+											["Operator"] = ">",
 										}, -- [3]
 										["n"] = 3,
 									},
@@ -5319,8 +5321,8 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "167105",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RL=eAHVfoHi",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["PrtsBefore"] = 2,
@@ -5341,23 +5343,23 @@ TMWOptDB = {
 										}, -- [3]
 										["n"] = 3,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RL=eAHVfoHi",
+									["FakeHidden"] = true,
 								}, -- [23]
 								{
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "227847",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RTCMxEg4qi8",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "DEBUFFDUR",
 											["Checked"] = true,
-											["Operator"] = ">",
+											["Unit"] = "target",
 											["Level"] = 2,
 											["Name"] = "208086",
-											["Unit"] = "target",
+											["Operator"] = ">",
 										}, -- [1]
 										{
 											["Type"] = "TALENTLEARNED",
@@ -5374,22 +5376,15 @@ TMWOptDB = {
 										}, -- [4]
 										["n"] = 4,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RTCMxEg4qi8",
+									["FakeHidden"] = true,
 								}, -- [24]
 								{
 									["GUID"] = "TMW:icon:1RTCN7EH5rEt",
 									["ShowTimer"] = true,
-									["FakeHidden"] = true,
 									["ClockGCD"] = true,
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												"", -- [1]
-												"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-											},
-										},
-									},
+									["FakeHidden"] = true,
+									["Type"] = "cooldown",
 									["Name"] = "12294",
 									["DurationMax"] = 2,
 									["Enabled"] = true,
@@ -5402,14 +5397,14 @@ TMWOptDB = {
 											["Unit"] = "target",
 										}, -- [1]
 										{
-											["Level"] = 1.5,
 											["Type"] = "SPELLCD",
+											["Level"] = 1.5,
 											["Name"] = "12294",
 											["Operator"] = "<",
 										}, -- [2]
 										{
-											["Level"] = 30,
 											["Type"] = "RAGE_ABS",
+											["Level"] = 30,
 											["Name"] = "12294",
 											["Operator"] = ">=",
 										}, -- [3]
@@ -5428,17 +5423,17 @@ TMWOptDB = {
 										{
 											["Type"] = "DEBUFFSTACKS",
 											["Checked"] = true,
-											["Level"] = 2,
-											["PrtsBefore"] = 1,
 											["AndOr"] = "OR",
+											["PrtsBefore"] = 1,
+											["Level"] = 2,
 											["Name"] = "272866",
 											["Unit"] = "target",
 										}, -- [6]
 										{
 											["Type"] = "DEBUFFSTACKS",
 											["Checked"] = true,
-											["Level"] = 2,
 											["AndOr"] = "OR",
+											["Level"] = 2,
 											["Name"] = "272867",
 											["Unit"] = "target",
 										}, -- [7]
@@ -5446,8 +5441,8 @@ TMWOptDB = {
 											["Type"] = "DEBUFFSTACKS",
 											["Checked"] = true,
 											["Name"] = "272870",
-											["Level"] = 2,
 											["AndOr"] = "OR",
+											["Level"] = 2,
 											["PrtsAfter"] = 3,
 											["Unit"] = "target",
 										}, -- [8]
@@ -5457,7 +5452,14 @@ TMWOptDB = {
 										}, -- [9]
 										["n"] = 9,
 									},
-									["Type"] = "cooldown",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												"", -- [1]
+												"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+											},
+										},
+									},
 									["States"] = {
 										nil, -- [1]
 										{
@@ -5468,16 +5470,9 @@ TMWOptDB = {
 								{
 									["GUID"] = "TMW:icon:1RL=eAHXlHCC",
 									["ShowTimer"] = true,
-									["FakeHidden"] = true,
 									["ClockGCD"] = true,
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												"", -- [1]
-												"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-											},
-										},
-									},
+									["FakeHidden"] = true,
+									["Type"] = "cooldown",
 									["Name"] = "12294",
 									["DurationMax"] = 2,
 									["Enabled"] = true,
@@ -5505,14 +5500,21 @@ TMWOptDB = {
 											["Operator"] = "~=",
 										}, -- [3]
 										{
-											["Name"] = "execute",
-											["Type"] = "COUNTER",
 											["PrtsAfter"] = 1,
+											["Type"] = "COUNTER",
+											["Name"] = "execute",
 											["Unit"] = "target",
 										}, -- [4]
 										["n"] = 4,
 									},
-									["Type"] = "cooldown",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												"", -- [1]
+												"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+											},
+										},
+									},
 									["States"] = {
 										nil, -- [1]
 										{
@@ -5524,8 +5526,8 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "260643",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RL=eAHYlywP",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "RAGE_ABS",
@@ -5538,30 +5540,24 @@ TMWOptDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RL=eAHYlywP",
+									["FakeHidden"] = true,
 								}, -- [27]
 								{
 									["GUID"] = "TMW:icon:1RL=eAHaq80u",
 									["ShowTimer"] = true,
-									["FakeHidden"] = true,
 									["ClockGCD"] = true,
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
-											},
-										},
-									},
+									["FakeHidden"] = true,
+									["Type"] = "cooldown",
 									["Name"] = "12294",
 									["DurationMax"] = 2,
 									["Enabled"] = true,
 									["Conditions"] = {
 										{
-											["Type"] = "BUFFSTACKS",
-											["Level"] = 2,
 											["Name"] = "7384",
+											["Level"] = 2,
 											["Checked"] = true,
+											["Type"] = "BUFFSTACKS",
 										}, -- [1]
 										{
 											["Name"] = "12294",
@@ -5589,7 +5585,13 @@ TMWOptDB = {
 										}, -- [5]
 										["n"] = 5,
 									},
-									["Type"] = "cooldown",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
+											},
+										},
+									},
 									["States"] = {
 										nil, -- [1]
 										{
@@ -5601,8 +5603,8 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "845",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1Ra7fP21bk42",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "RAGE_ABS",
@@ -5615,43 +5617,43 @@ TMWOptDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1Ra7fP21bk42",
+									["FakeHidden"] = true,
 								}, -- [29]
 								{
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "228920",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RTCPcVTM2Je",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "DEBUFFDUR",
 											["Checked"] = true,
-											["Operator"] = ">",
+											["Unit"] = "target",
 											["PrtsBefore"] = 2,
 											["Level"] = 2,
 											["Name"] = "208086",
-											["Unit"] = "target",
+											["Operator"] = ">",
 										}, -- [1]
 										{
 											["Type"] = "HEALTH",
-											["Operator"] = ">",
+											["Unit"] = "target",
 											["Level"] = 20,
 											["PrtsAfter"] = 1,
-											["Unit"] = "target",
+											["Operator"] = ">",
 										}, -- [2]
 										{
 											["Type"] = "HEALTH",
-											["Operator"] = "<=",
+											["Unit"] = "target",
 											["PrtsBefore"] = 1,
 											["AndOr"] = "OR",
 											["Level"] = 20,
-											["Unit"] = "target",
+											["Operator"] = "<=",
 										}, -- [3]
 										{
-											["Level"] = 30,
 											["Type"] = "RAGE_ABS",
+											["Level"] = 30,
 											["PrtsAfter"] = 2,
 											["Operator"] = "<",
 										}, -- [4]
@@ -5669,8 +5671,8 @@ TMWOptDB = {
 										}, -- [7]
 										["n"] = 7,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RTCPcVTM2Je",
+									["FakeHidden"] = true,
 								}, -- [30]
 								{
 									["Enabled"] = true,
@@ -5684,7 +5686,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["FakeHidden"] = true,
+									["Type"] = "cooldown",
 									["Conditions"] = {
 										{
 											["Type"] = "BUFFDUR",
@@ -5694,14 +5696,14 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["GUID"] = "TMW:icon:1RL=eAHZoKRG",
-									["Type"] = "cooldown",
+									["FakeHidden"] = true,
 								}, -- [31]
 								{
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "163201",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RL=eAHWk5Yo",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "RAGE_ABS",
@@ -5726,10 +5728,10 @@ TMWOptDB = {
 										}, -- [3]
 										{
 											["Type"] = "HEALTH",
-											["Operator"] = "<",
+											["Unit"] = "target",
 											["Level"] = 20,
 											["PrtsAfter"] = 1,
-											["Unit"] = "target",
+											["Operator"] = "<",
 										}, -- [4]
 										{
 											["PrtsBefore"] = 1,
@@ -5744,10 +5746,10 @@ TMWOptDB = {
 										}, -- [6]
 										{
 											["Type"] = "HEALTH",
-											["Operator"] = "<",
+											["Unit"] = "target",
 											["Level"] = 35,
 											["PrtsAfter"] = 3,
-											["Unit"] = "target",
+											["Operator"] = "<",
 										}, -- [7]
 										{
 											["Type"] = "BUFFDUR",
@@ -5758,15 +5760,15 @@ TMWOptDB = {
 										}, -- [8]
 										["n"] = 8,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RL=eAHWk5Yo",
+									["FakeHidden"] = true,
 								}, -- [32]
 								{
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "1680",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RL=eAHbqFqW",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "RAGE_ABS",
@@ -5782,8 +5784,8 @@ TMWOptDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RL=eAHbqFqW",
+									["FakeHidden"] = true,
 								}, -- [33]
 								{
 									["Enabled"] = true,
@@ -5818,10 +5820,10 @@ TMWOptDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
-									["GUID"] = "TMW:icon:1RL=eAHcqhaW",
+									["Type"] = "swingtimer",
 									["FakeHidden"] = true,
 									["CustomTex"] = "8386",
-									["Type"] = "swingtimer",
+									["GUID"] = "TMW:icon:1RL=eAHcqhaW",
 								}, -- [34]
 								nil, -- [35]
 								nil, -- [36]
@@ -5859,16 +5861,16 @@ TMWOptDB = {
 										{
 											["Type"] = "DEBUFFDUR",
 											["Checked"] = true,
-											["Operator"] = "<",
+											["Unit"] = "target",
 											["Level"] = 2,
 											["Name"] = "208086",
-											["Unit"] = "target",
+											["Operator"] = "<",
 										}, -- [2]
 										{
-											["Operator"] = ">",
+											["Unit"] = "target",
 											["Level"] = 20,
 											["Type"] = "HEALTH",
-											["Unit"] = "target",
+											["Operator"] = ">",
 										}, -- [3]
 										{
 											["Type"] = "ICON",
@@ -5893,7 +5895,7 @@ TMWOptDB = {
 									["Type"] = "cooldown",
 									["Name"] = "167105",
 									["DurationMax"] = 2,
-									["FakeHidden"] = true,
+									["GUID"] = "TMW:icon:1RTBxKd2Ohfq",
 									["Conditions"] = {
 										{
 											["Type"] = "SPELLCD",
@@ -5920,8 +5922,8 @@ TMWOptDB = {
 											["Name"] = "testofmight",
 										}, -- [4]
 										{
-											["Level"] = 30,
 											["Type"] = "RAGE_ABS",
+											["Level"] = 30,
 											["PrtsAfter"] = 1,
 											["Operator"] = ">",
 										}, -- [5]
@@ -5947,7 +5949,7 @@ TMWOptDB = {
 										}, -- [9]
 										["n"] = 9,
 									},
-									["GUID"] = "TMW:icon:1RTBxKd2Ohfq",
+									["FakeHidden"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
@@ -5958,16 +5960,9 @@ TMWOptDB = {
 								{
 									["GUID"] = "TMW:icon:1RTC7Mb45nXX",
 									["ShowTimer"] = true,
-									["FakeHidden"] = true,
 									["ClockGCD"] = true,
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												"", -- [1]
-												"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-											},
-										},
-									},
+									["FakeHidden"] = true,
+									["Type"] = "cooldown",
 									["Name"] = "12294",
 									["DurationMax"] = 2,
 									["Enabled"] = true,
@@ -5980,8 +5975,8 @@ TMWOptDB = {
 											["Unit"] = "target",
 										}, -- [1]
 										{
-											["Level"] = 3.5,
 											["Type"] = "SPELLCD",
+											["Level"] = 3.5,
 											["Name"] = "12294",
 											["Operator"] = "<",
 										}, -- [2]
@@ -6000,8 +5995,8 @@ TMWOptDB = {
 											["Operator"] = ">=",
 										}, -- [4]
 										{
-											["Level"] = 2,
 											["Type"] = "MHSWING",
+											["Level"] = 2,
 											["PrtsAfter"] = 2,
 											["Operator"] = "<",
 										}, -- [5]
@@ -6028,7 +6023,14 @@ TMWOptDB = {
 										}, -- [9]
 										["n"] = 9,
 									},
-									["Type"] = "cooldown",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												"", -- [1]
+												"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+											},
+										},
+									},
 									["States"] = {
 										nil, -- [1]
 										{
@@ -6039,16 +6041,9 @@ TMWOptDB = {
 								{
 									["GUID"] = "TMW:icon:1RTBxKd4NdPL",
 									["ShowTimer"] = true,
-									["FakeHidden"] = true,
 									["ClockGCD"] = true,
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												"", -- [1]
-												"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-											},
-										},
-									},
+									["FakeHidden"] = true,
+									["Type"] = "cooldown",
 									["Name"] = "12294",
 									["DurationMax"] = 2,
 									["Enabled"] = true,
@@ -6075,8 +6070,8 @@ TMWOptDB = {
 											["Operator"] = ">=",
 										}, -- [3]
 										{
-											["Level"] = 2,
 											["Type"] = "MHSWING",
+											["Level"] = 2,
 											["PrtsAfter"] = 2,
 											["Operator"] = "<",
 										}, -- [4]
@@ -6089,9 +6084,9 @@ TMWOptDB = {
 											["Operator"] = "~=",
 										}, -- [5]
 										{
-											["Name"] = "execute",
-											["Type"] = "COUNTER",
 											["PrtsAfter"] = 1,
+											["Type"] = "COUNTER",
+											["Name"] = "execute",
 											["Unit"] = "target",
 										}, -- [6]
 										{
@@ -6101,7 +6096,14 @@ TMWOptDB = {
 										}, -- [7]
 										["n"] = 7,
 									},
-									["Type"] = "cooldown",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												"", -- [1]
+												"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+											},
+										},
+									},
 									["States"] = {
 										nil, -- [1]
 										{
@@ -6117,7 +6119,7 @@ TMWOptDB = {
 									["Type"] = "cooldown",
 									["Name"] = "260643",
 									["DurationMax"] = 2,
-									["FakeHidden"] = true,
+									["GUID"] = "TMW:icon:1RTBxKd5Ox2K",
 									["Conditions"] = {
 										{
 											["Type"] = "RAGE_ABS",
@@ -6135,7 +6137,7 @@ TMWOptDB = {
 										}, -- [3]
 										["n"] = 3,
 									},
-									["GUID"] = "TMW:icon:1RTBxKd5Ox2K",
+									["FakeHidden"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
@@ -6146,15 +6148,9 @@ TMWOptDB = {
 								{
 									["GUID"] = "TMW:icon:1RTBxKd6Np0=",
 									["ShowTimer"] = true,
-									["FakeHidden"] = true,
 									["ClockGCD"] = true,
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
-											},
-										},
-									},
+									["FakeHidden"] = true,
+									["Type"] = "cooldown",
 									["Name"] = "12294",
 									["DurationMax"] = 2,
 									["Enabled"] = true,
@@ -6167,8 +6163,8 @@ TMWOptDB = {
 											["Name"] = "7384",
 										}, -- [1]
 										{
-											["Level"] = 1.5,
 											["Type"] = "SPELLCD",
+											["Level"] = 1.5,
 											["Name"] = "12294",
 											["Operator"] = "<",
 										}, -- [2]
@@ -6187,8 +6183,8 @@ TMWOptDB = {
 											["Operator"] = ">=",
 										}, -- [4]
 										{
-											["Level"] = 2,
 											["Type"] = "MHSWING",
+											["Level"] = 2,
 											["PrtsAfter"] = 2,
 											["Operator"] = "<",
 										}, -- [5]
@@ -6201,9 +6197,9 @@ TMWOptDB = {
 											["Operator"] = "~=",
 										}, -- [6]
 										{
-											["Name"] = "execute",
-											["Type"] = "COUNTER",
 											["PrtsAfter"] = 1,
+											["Type"] = "COUNTER",
+											["Name"] = "execute",
 											["Unit"] = "target",
 										}, -- [7]
 										{
@@ -6213,7 +6209,13 @@ TMWOptDB = {
 										}, -- [8]
 										["n"] = 8,
 									},
-									["Type"] = "cooldown",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
+											},
+										},
+									},
 									["States"] = {
 										nil, -- [1]
 										{
@@ -6225,15 +6227,9 @@ TMWOptDB = {
 									["GUID"] = "TMW:icon:1RTBxKd7Msy4",
 									["ShowTimer"] = true,
 									["DurationMaxEnabled"] = true,
-									["FakeHidden"] = true,
 									["ClockGCD"] = true,
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												[2] = "[Stacks:Hide(0, 1)]",
-											},
-										},
-									},
+									["FakeHidden"] = true,
+									["Type"] = "cooldown",
 									["Name"] = "7384",
 									["DurationMax"] = 2,
 									["Enabled"] = true,
@@ -6261,8 +6257,8 @@ TMWOptDB = {
 											["Level"] = 1,
 										}, -- [4]
 										{
-											["Level"] = 35,
 											["Type"] = "RAGE_ABS",
+											["Level"] = 35,
 											["PrtsAfter"] = 2,
 											["Operator"] = "<",
 										}, -- [5]
@@ -6285,7 +6281,13 @@ TMWOptDB = {
 										}, -- [8]
 										["n"] = 8,
 									},
-									["Type"] = "cooldown",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												[2] = "[Stacks:Hide(0, 1)]",
+											},
+										},
+									},
 									["States"] = {
 										nil, -- [1]
 										{
@@ -6305,7 +6307,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["FakeHidden"] = true,
+									["Type"] = "cooldown",
 									["Conditions"] = {
 										{
 											["PrtsBefore"] = 2,
@@ -6325,19 +6327,19 @@ TMWOptDB = {
 										{
 											["Type"] = "DEBUFFDUR",
 											["Name"] = "208086",
-											["Operator"] = "~=",
-											["PrtsAfter"] = 1,
 											["Unit"] = "target",
+											["PrtsAfter"] = 1,
+											["Operator"] = "~=",
 										}, -- [4]
 										{
-											["Operator"] = "<",
+											["Unit"] = "target",
 											["Type"] = "DEBUFFDUR",
 											["Checked"] = true,
 											["Name"] = "208086",
-											["Level"] = 2,
 											["AndOr"] = "OR",
+											["Level"] = 2,
 											["PrtsAfter"] = 2,
-											["Unit"] = "target",
+											["Operator"] = "<",
 										}, -- [5]
 										{
 											["Type"] = "COUNTER",
@@ -6366,14 +6368,14 @@ TMWOptDB = {
 										["n"] = 9,
 									},
 									["GUID"] = "TMW:icon:1Rg1qywrOCAo",
-									["Type"] = "cooldown",
+									["FakeHidden"] = true,
 								}, -- [48]
 								{
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "163201",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RTBxKd8OIaD",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "RAGE_ABS",
@@ -6389,8 +6391,8 @@ TMWOptDB = {
 											["Operator"] = ">=",
 										}, -- [2]
 										{
-											["Level"] = 2,
 											["Type"] = "MHSWING",
+											["Level"] = 2,
 											["PrtsAfter"] = 2,
 											["Operator"] = "<",
 										}, -- [3]
@@ -6410,10 +6412,10 @@ TMWOptDB = {
 										}, -- [5]
 										{
 											["Type"] = "HEALTH",
-											["Operator"] = "<",
+											["Unit"] = "target",
 											["Level"] = 20,
 											["PrtsAfter"] = 1,
-											["Unit"] = "target",
+											["Operator"] = "<",
 										}, -- [6]
 										{
 											["PrtsBefore"] = 1,
@@ -6428,10 +6430,10 @@ TMWOptDB = {
 										}, -- [8]
 										{
 											["Type"] = "HEALTH",
-											["Operator"] = "<",
+											["Unit"] = "target",
 											["Level"] = 35,
 											["PrtsAfter"] = 3,
-											["Unit"] = "target",
+											["Operator"] = "<",
 										}, -- [9]
 										{
 											["Type"] = "BUFFDUR",
@@ -6469,15 +6471,15 @@ TMWOptDB = {
 										}, -- [15]
 										["n"] = 15,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RTBxKd8OIaD",
+									["FakeHidden"] = true,
 								}, -- [49]
 								{
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "1680",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RTBxKd9OUM_",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["PrtsBefore"] = 1,
@@ -6499,14 +6501,14 @@ TMWOptDB = {
 											["Operator"] = "~=",
 										}, -- [3]
 										{
-											["Operator"] = ">",
+											["Unit"] = "target",
 											["Level"] = 20,
 											["Type"] = "HEALTH",
-											["Unit"] = "target",
+											["Operator"] = ">",
 										}, -- [4]
 										{
-											["Level"] = 1,
 											["Type"] = "SPELLCD",
+											["Level"] = 1,
 											["Name"] = "12294",
 											["Operator"] = ">",
 										}, -- [5]
@@ -6530,10 +6532,10 @@ TMWOptDB = {
 											["Operator"] = ">",
 										}, -- [8]
 										{
-											["Type"] = "TALENTLEARNED",
-											["Level"] = 1,
 											["Name"] = "22391",
+											["Level"] = 1,
 											["PrtsAfter"] = 1,
+											["Type"] = "TALENTLEARNED",
 										}, -- [9]
 										{
 											["Type"] = "SPELLCD",
@@ -6550,9 +6552,9 @@ TMWOptDB = {
 										}, -- [11]
 										{
 											["Type"] = "RAGE_ABS",
-											["Level"] = 40,
-											["PrtsBefore"] = 1,
 											["AndOr"] = "OR",
+											["PrtsBefore"] = 1,
+											["Level"] = 40,
 											["PrtsAfter"] = 4,
 											["Operator"] = ">",
 										}, -- [12]
@@ -6563,15 +6565,15 @@ TMWOptDB = {
 										}, -- [13]
 										["n"] = 13,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RTBxKd9OUM_",
+									["FakeHidden"] = true,
 								}, -- [50]
 								{
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["Name"] = "1464",
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1RTBxKdANcIS",
+									["Type"] = "cooldown",
+									["ClockGCD"] = true,
 									["Conditions"] = {
 										{
 											["PrtsBefore"] = 1,
@@ -6594,14 +6596,14 @@ TMWOptDB = {
 											["Operator"] = "~=",
 										}, -- [3]
 										{
-											["Operator"] = ">",
+											["Unit"] = "target",
 											["Level"] = 20,
 											["Type"] = "HEALTH",
-											["Unit"] = "target",
+											["Operator"] = ">",
 										}, -- [4]
 										{
-											["Level"] = 1,
 											["Type"] = "SPELLCD",
+											["Level"] = 1,
 											["Name"] = "12294",
 											["Operator"] = ">",
 										}, -- [5]
@@ -6625,10 +6627,10 @@ TMWOptDB = {
 											["Operator"] = ">",
 										}, -- [8]
 										{
-											["Type"] = "TALENTLEARNED",
-											["Level"] = 1,
 											["Name"] = "22391",
+											["Level"] = 1,
 											["PrtsAfter"] = 1,
+											["Type"] = "TALENTLEARNED",
 										}, -- [9]
 										{
 											["Type"] = "SPELLCD",
@@ -6645,9 +6647,9 @@ TMWOptDB = {
 										}, -- [11]
 										{
 											["Type"] = "RAGE_ABS",
-											["Level"] = 40,
-											["PrtsBefore"] = 1,
 											["AndOr"] = "OR",
+											["PrtsBefore"] = 1,
+											["Level"] = 40,
 											["PrtsAfter"] = 4,
 											["Operator"] = ">",
 										}, -- [12]
@@ -6658,8 +6660,8 @@ TMWOptDB = {
 										}, -- [13]
 										["n"] = 13,
 									},
-									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1RTBxKdANcIS",
+									["FakeHidden"] = true,
 								}, -- [51]
 								nil, -- [52]
 								nil, -- [53]
@@ -6695,13 +6697,13 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Type"] = "cooldown",
+									["ShowTimerText"] = true,
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										{
 											["Type"] = "TALENTLEARNED",
@@ -6710,7 +6712,7 @@ TMWOptDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
-									["ShowTimerText"] = true,
+									["Type"] = "cooldown",
 									["States"] = {
 										nil, -- [1]
 										{
@@ -6733,13 +6735,13 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Type"] = "cooldown",
+									["ShowTimerText"] = true,
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										{
 											["Name"] = "22397",
@@ -6752,7 +6754,7 @@ TMWOptDB = {
 										}, -- [3]
 										["n"] = 3,
 									},
-									["ShowTimerText"] = true,
+									["Type"] = "cooldown",
 									["States"] = {
 										nil, -- [1]
 										{
@@ -6772,13 +6774,13 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Enabled"] = true,
+									["Type"] = "buff",
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										{
 											["Name"] = "22397",
@@ -6787,7 +6789,7 @@ TMWOptDB = {
 										["n"] = 2,
 									},
 									["ShowTimerText"] = true,
-									["Type"] = "buff",
+									["Enabled"] = true,
 								}, -- [65]
 								{
 									["GUID"] = "TMW:icon:1RGePi2vizrO",
@@ -6802,13 +6804,13 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Type"] = "cooldown",
+									["ShowTimerText"] = true,
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										{
 											["Name"] = "22399",
@@ -6821,7 +6823,7 @@ TMWOptDB = {
 										}, -- [3]
 										["n"] = 3,
 									},
-									["ShowTimerText"] = true,
+									["Type"] = "cooldown",
 									["States"] = {
 										nil, -- [1]
 										{
@@ -6841,13 +6843,13 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Enabled"] = true,
+									["Type"] = "buff",
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										{
 											["Name"] = "22399",
@@ -6856,7 +6858,7 @@ TMWOptDB = {
 										["n"] = 2,
 									},
 									["ShowTimerText"] = true,
-									["Type"] = "buff",
+									["Enabled"] = true,
 								}, -- [67]
 								{
 									["GUID"] = "TMW:icon:1RGfOgkWiSuM",
@@ -6871,13 +6873,13 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Type"] = "cooldown",
+									["ShowTimerText"] = true,
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										{
 											["Name"] = "21667",
@@ -6885,7 +6887,7 @@ TMWOptDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
-									["ShowTimerText"] = true,
+									["Type"] = "cooldown",
 									["States"] = {
 										nil, -- [1]
 										{
@@ -6906,13 +6908,13 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Type"] = "cooldown",
+									["ShowTimerText"] = true,
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										{
 											["Type"] = "TALENTLEARNED",
@@ -6921,7 +6923,7 @@ TMWOptDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
-									["ShowTimerText"] = true,
+									["Type"] = "cooldown",
 									["States"] = {
 										nil, -- [1]
 										{
@@ -6942,13 +6944,13 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Type"] = "cooldown",
+									["ShowTimerText"] = true,
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										{
 											["Name"] = "22391",
@@ -6956,7 +6958,7 @@ TMWOptDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
-									["ShowTimerText"] = true,
+									["Type"] = "cooldown",
 									["States"] = {
 										nil, -- [1]
 										{
@@ -6976,13 +6978,13 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Enabled"] = true,
 									["GUID"] = "TMW:icon:1TCHfoi=WAuc",
+									["Enabled"] = true,
 								}, -- [72]
 								[83] = {
 									["Enabled"] = true,
 									["Type"] = "conditionicon",
-									["GUID"] = "TMW:icon:1RTC8jAsrdvG",
+									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "ICON",
@@ -7017,12 +7019,12 @@ TMWOptDB = {
 										["n"] = 6,
 									},
 									["CustomTex"] = "260643",
-									["FakeHidden"] = true,
+									["GUID"] = "TMW:icon:1RTC8jAsrdvG",
 								},
 								[85] = {
 									["Enabled"] = true,
 									["Type"] = "conditionicon",
-									["GUID"] = "TMW:icon:1RTC8jApfn=I",
+									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "ICON",
@@ -7072,7 +7074,7 @@ TMWOptDB = {
 										["n"] = 9,
 									},
 									["CustomTex"] = "7384",
-									["FakeHidden"] = true,
+									["GUID"] = "TMW:icon:1RTC8jApfn=I",
 								},
 								[87] = {
 									["Enabled"] = true,
@@ -7084,7 +7086,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["GUID"] = "TMW:icon:1RTC8jAyqkvm",
+									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "ICON",
@@ -7144,18 +7146,63 @@ TMWOptDB = {
 										["n"] = 11,
 									},
 									["CustomTex"] = "5308",
-									["FakeHidden"] = true,
+									["GUID"] = "TMW:icon:1RTC8jAyqkvm",
 								},
-								[136] = {
+								[133] = {
 									["Enabled"] = true,
-									["ShowTimer"] = true,
+									["Type"] = "conditionicon",
+									["ClockGCD"] = true,
+									["Events"] = {
+										{
+											["Type"] = "Animations",
+											["Period"] = 0.8,
+											["Animation"] = "ICONALPHAFLASH",
+											["Infinite"] = true,
+											["OnConditionConditions"] = {
+												{
+													["Icon"] = "TMW:icon:1QpP_HqMELD0",
+													["Type"] = "ICON",
+												}, -- [1]
+												["n"] = 1,
+											},
+											["Event"] = "WCSP",
+											["AnimColor"] = "ff000000",
+										}, -- [1]
+										["n"] = 1,
+									},
+									["Name"] = "403",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												"", -- [1]
+												"", -- [2]
+											},
+										},
+									},
 									["FakeHidden"] = true,
-									["OnlyMine"] = true,
-									["Name"] = "46924; 227847",
-									["GUID"] = "TMW:icon:1RL=eAD8Kmw0",
-									["DurationMin"] = 1,
-									["DurationMinEnabled"] = true,
-									["Type"] = "buff",
+									["Conditions"] = {
+										{
+											["Type"] = "COUNTER",
+											["Name"] = "target_toggle",
+											["Level"] = 1,
+										}, -- [1]
+										{
+											["PrtsBefore"] = 1,
+											["Type"] = "EXISTS",
+											["Level"] = 1,
+											["Unit"] = "target",
+										}, -- [2]
+										{
+											["Type"] = "REACT",
+											["AndOr"] = "OR",
+											["Level"] = 2,
+											["PrtsAfter"] = 1,
+											["Unit"] = "target",
+										}, -- [3]
+										["n"] = 3,
+									},
+									["CustomTex"] = "163446",
+									["GUID"] = "TMW:icon:1QpP_HqMELD0",
 								},
 								[122] = {
 									["GUID"] = "TMW:icon:1T3cIasRc1aj",
@@ -7265,10 +7312,305 @@ TMWOptDB = {
 									["CustomTex"] = "204219",
 									["FakeHidden"] = true,
 								},
+								[137] = {
+									["GUID"] = "TMW:icon:1Rg0QjxDyopx",
+									["ShowTimer"] = true,
+									["Name"] = "6673",
+									["Enabled"] = true,
+									["Events"] = {
+										{
+											["Type"] = "Animations",
+											["OnConditionConditions"] = {
+												{
+													["Icon"] = "TMW:icon:1Rg0QjxDyopx",
+													["Type"] = "ICON",
+												}, -- [1]
+												["n"] = 1,
+											},
+											["Event"] = "WCSP",
+											["Animation"] = "ACTVTNGLOW",
+										}, -- [1]
+										["n"] = 1,
+									},
+									["Type"] = "buff",
+									["FakeHidden"] = true,
+									["States"] = {
+										{
+											["Alpha"] = 0,
+										}, -- [1]
+										{
+											["Alpha"] = 1,
+										}, -- [2]
+									},
+								},
+								[99] = {
+									["Enabled"] = true,
+									["Type"] = "conditionicon",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												[2] = "Predict Help",
+											},
+										},
+									},
+									["CustomTex"] = "NONE",
+									["FakeHidden"] = true,
+								},
+								[101] = {
+									["Enabled"] = true,
+									["Type"] = "conditionicon",
+									["Events"] = {
+										{
+											["Type"] = "Counter",
+											["CounterAmt"] = 0,
+											["CounterOperation"] = "=",
+											["OnConditionConditions"] = {
+												{
+													["Icon"] = "TMW:icon:1RYjPWe1zjh4",
+													["Type"] = "ICON",
+												}, -- [1]
+												["n"] = 1,
+											},
+											["Event"] = "WCSP",
+											["Counter"] = "arms_bs",
+										}, -- [1]
+										["n"] = 1,
+									},
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												[2] = "On",
+											},
+										},
+									},
+									["FakeHidden"] = true,
+									["CustomTex"] = "46924",
+									["GUID"] = "TMW:icon:1RYjPWe1zjh4",
+								},
+								[103] = {
+									["Enabled"] = true,
+									["Type"] = "conditionicon",
+									["Events"] = {
+										{
+											["Type"] = "Counter",
+											["CounterAmt"] = 0,
+											["CounterOperation"] = "=",
+											["OnConditionConditions"] = {
+												{
+													["Icon"] = "TMW:icon:1RYjOKqPrqZ0",
+													["Type"] = "ICON",
+												}, -- [1]
+												["n"] = 1,
+											},
+											["Event"] = "WCSP",
+											["Counter"] = "arms_rav",
+										}, -- [1]
+										["n"] = 1,
+									},
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												[2] = "On",
+											},
+										},
+									},
+									["FakeHidden"] = true,
+									["CustomTex"] = "152277",
+									["GUID"] = "TMW:icon:1RYjOKqPrqZ0",
+								},
+								[105] = {
+									["Enabled"] = true,
+									["Type"] = "conditionicon",
+									["Events"] = {
+										{
+											["Type"] = "Counter",
+											["CounterAmt"] = 0,
+											["CounterOperation"] = "=",
+											["OnConditionConditions"] = {
+												{
+													["Icon"] = "TMW:icon:1RYjOK3OUw0_",
+													["Type"] = "ICON",
+												}, -- [1]
+												["n"] = 1,
+											},
+											["Event"] = "WCSP",
+											["Counter"] = "arms_avatar",
+										}, -- [1]
+										["n"] = 1,
+									},
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												[2] = "On",
+											},
+										},
+									},
+									["FakeHidden"] = true,
+									["CustomTex"] = "107574",
+									["GUID"] = "TMW:icon:1RYjOK3OUw0_",
+								},
+								[107] = {
+									["Enabled"] = true,
+									["Type"] = "conditionicon",
+									["Events"] = {
+										{
+											["Type"] = "Counter",
+											["CounterAmt"] = 0,
+											["CounterOperation"] = "=",
+											["OnConditionConditions"] = {
+												{
+													["Icon"] = "TMW:icon:1RZA9mRp2XSl",
+													["Type"] = "ICON",
+												}, -- [1]
+												["n"] = 1,
+											},
+											["Event"] = "WCSP",
+											["Counter"] = "arms_cs",
+										}, -- [1]
+										["n"] = 1,
+									},
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												[2] = "On",
+											},
+										},
+									},
+									["FakeHidden"] = true,
+									["CustomTex"] = "167105",
+									["GUID"] = "TMW:icon:1RZA9mRp2XSl",
+								},
+								[109] = {
+									["GUID"] = "TMW:icon:1RZ8bU8TfXPC",
+									["Type"] = "conditionicon",
+									["Events"] = {
+										{
+											["Type"] = "Counter",
+											["CounterAmt"] = 0,
+											["CounterOperation"] = "=",
+											["OnConditionConditions"] = {
+												{
+													["Icon"] = "TMW:icon:1RZ8bU8TfXPC",
+													["Type"] = "ICON",
+												}, -- [1]
+												["n"] = 1,
+											},
+											["Event"] = "WCSP",
+											["Counter"] = "testofmight",
+										}, -- [1]
+										["n"] = 1,
+									},
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												[2] = "On",
+											},
+										},
+									},
+									["CustomTex"] = "275529",
+									["FakeHidden"] = true,
+								},
+								[80] = {
+									["Enabled"] = true,
+								},
+								[82] = {
+									["Enabled"] = true,
+									["Type"] = "conditionicon",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												[2] = "2",
+											},
+										},
+									},
+									["FakeHidden"] = true,
+									["Conditions"] = {
+										{
+											["Type"] = "ICON",
+											["Icon"] = "TMW:icon:1RGdpp24C0VS",
+											["Level"] = 1,
+										}, -- [1]
+										{
+											["Type"] = "ICON",
+											["Icon"] = "TMW:icon:1RZ8uyGIHkyU",
+											["Level"] = 1,
+										}, -- [2]
+										{
+											["Type"] = "ICON",
+											["Icon"] = "TMW:icon:1Rg1PA0lcPyA",
+											["Level"] = 1,
+										}, -- [3]
+										{
+											["Type"] = "ICON",
+											["Icon"] = "TMW:icon:1RGdpp2C6tbD",
+											["Level"] = 1,
+										}, -- [4]
+										{
+											["Type"] = "ICON",
+											["Icon"] = "TMW:icon:1RTBzFiJhwQj",
+											["Level"] = 1,
+										}, -- [5]
+										["n"] = 5,
+									},
+									["CustomTex"] = "12294",
+									["GUID"] = "TMW:icon:1RTD2m1wLgWu",
+								},
+								[84] = {
+									["Enabled"] = true,
+									["Type"] = "conditionicon",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												[2] = "3",
+											},
+										},
+									},
+									["FakeHidden"] = true,
+									["Conditions"] = {
+										{
+											["Type"] = "ICON",
+											["Icon"] = "TMW:icon:1RGdpp24C0VS",
+											["Level"] = 1,
+										}, -- [1]
+										{
+											["Type"] = "ICON",
+											["Icon"] = "TMW:icon:1RZ8uyGIHkyU",
+											["Level"] = 1,
+										}, -- [2]
+										{
+											["Type"] = "ICON",
+											["Icon"] = "TMW:icon:1Rg1PA0lcPyA",
+											["Level"] = 1,
+										}, -- [3]
+										{
+											["Type"] = "ICON",
+											["Icon"] = "TMW:icon:1RGdpp2C6tbD",
+											["Level"] = 1,
+										}, -- [4]
+										{
+											["Type"] = "ICON",
+											["Icon"] = "TMW:icon:1RTBzFiJhwQj",
+											["Level"] = 1,
+										}, -- [5]
+										{
+											["Type"] = "ICON",
+											["Icon"] = "TMW:icon:1RGdpp2Rvc8H",
+											["Level"] = 1,
+										}, -- [6]
+										{
+											["Type"] = "ICON",
+											["Icon"] = "TMW:icon:1RGe00HwCayk",
+											["Level"] = 1,
+										}, -- [7]
+										["n"] = 7,
+									},
+									["CustomTex"] = "12294",
+									["GUID"] = "TMW:icon:1RTC8jAvrtK1",
+								},
 								[86] = {
 									["Enabled"] = true,
 									["Type"] = "conditionicon",
-									["GUID"] = "TMW:icon:1Rg1obpBJO85",
+									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "ICON",
@@ -7323,306 +7665,7 @@ TMWOptDB = {
 										["n"] = 10,
 									},
 									["CustomTex"] = "7384",
-									["FakeHidden"] = true,
-								},
-								[99] = {
-									["Enabled"] = true,
-									["Type"] = "conditionicon",
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												[2] = "Predict Help",
-											},
-										},
-									},
-									["CustomTex"] = "NONE",
-									["FakeHidden"] = true,
-								},
-								[101] = {
-									["Enabled"] = true,
-									["Type"] = "conditionicon",
-									["Events"] = {
-										{
-											["Type"] = "Counter",
-											["CounterAmt"] = 0,
-											["CounterOperation"] = "=",
-											["OnConditionConditions"] = {
-												{
-													["Icon"] = "TMW:icon:1RYjPWe1zjh4",
-													["Type"] = "ICON",
-												}, -- [1]
-												["n"] = 1,
-											},
-											["Event"] = "WCSP",
-											["Counter"] = "arms_bs",
-										}, -- [1]
-										["n"] = 1,
-									},
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												[2] = "On",
-											},
-										},
-									},
-									["GUID"] = "TMW:icon:1RYjPWe1zjh4",
-									["CustomTex"] = "46924",
-									["FakeHidden"] = true,
-								},
-								[103] = {
-									["Enabled"] = true,
-									["Type"] = "conditionicon",
-									["Events"] = {
-										{
-											["Type"] = "Counter",
-											["CounterAmt"] = 0,
-											["CounterOperation"] = "=",
-											["OnConditionConditions"] = {
-												{
-													["Icon"] = "TMW:icon:1RYjOKqPrqZ0",
-													["Type"] = "ICON",
-												}, -- [1]
-												["n"] = 1,
-											},
-											["Event"] = "WCSP",
-											["Counter"] = "arms_rav",
-										}, -- [1]
-										["n"] = 1,
-									},
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												[2] = "On",
-											},
-										},
-									},
-									["GUID"] = "TMW:icon:1RYjOKqPrqZ0",
-									["CustomTex"] = "152277",
-									["FakeHidden"] = true,
-								},
-								[105] = {
-									["Enabled"] = true,
-									["Type"] = "conditionicon",
-									["Events"] = {
-										{
-											["Type"] = "Counter",
-											["CounterAmt"] = 0,
-											["CounterOperation"] = "=",
-											["OnConditionConditions"] = {
-												{
-													["Icon"] = "TMW:icon:1RYjOK3OUw0_",
-													["Type"] = "ICON",
-												}, -- [1]
-												["n"] = 1,
-											},
-											["Event"] = "WCSP",
-											["Counter"] = "arms_avatar",
-										}, -- [1]
-										["n"] = 1,
-									},
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												[2] = "On",
-											},
-										},
-									},
-									["GUID"] = "TMW:icon:1RYjOK3OUw0_",
-									["CustomTex"] = "107574",
-									["FakeHidden"] = true,
-								},
-								[107] = {
-									["Enabled"] = true,
-									["Type"] = "conditionicon",
-									["Events"] = {
-										{
-											["Type"] = "Counter",
-											["CounterAmt"] = 0,
-											["CounterOperation"] = "=",
-											["OnConditionConditions"] = {
-												{
-													["Icon"] = "TMW:icon:1RZA9mRp2XSl",
-													["Type"] = "ICON",
-												}, -- [1]
-												["n"] = 1,
-											},
-											["Event"] = "WCSP",
-											["Counter"] = "arms_cs",
-										}, -- [1]
-										["n"] = 1,
-									},
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												[2] = "On",
-											},
-										},
-									},
-									["GUID"] = "TMW:icon:1RZA9mRp2XSl",
-									["CustomTex"] = "167105",
-									["FakeHidden"] = true,
-								},
-								[109] = {
-									["GUID"] = "TMW:icon:1RZ8bU8TfXPC",
-									["Type"] = "conditionicon",
-									["Events"] = {
-										{
-											["Type"] = "Counter",
-											["CounterAmt"] = 0,
-											["CounterOperation"] = "=",
-											["OnConditionConditions"] = {
-												{
-													["Icon"] = "TMW:icon:1RZ8bU8TfXPC",
-													["Type"] = "ICON",
-												}, -- [1]
-												["n"] = 1,
-											},
-											["Event"] = "WCSP",
-											["Counter"] = "testofmight",
-										}, -- [1]
-										["n"] = 1,
-									},
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												[2] = "On",
-											},
-										},
-									},
-									["CustomTex"] = "275529",
-									["FakeHidden"] = true,
-								},
-								[80] = {
-									["Enabled"] = true,
-								},
-								[82] = {
-									["Enabled"] = true,
-									["Type"] = "conditionicon",
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												[2] = "2",
-											},
-										},
-									},
-									["GUID"] = "TMW:icon:1RTD2m1wLgWu",
-									["Conditions"] = {
-										{
-											["Type"] = "ICON",
-											["Icon"] = "TMW:icon:1RGdpp24C0VS",
-											["Level"] = 1,
-										}, -- [1]
-										{
-											["Type"] = "ICON",
-											["Icon"] = "TMW:icon:1RZ8uyGIHkyU",
-											["Level"] = 1,
-										}, -- [2]
-										{
-											["Type"] = "ICON",
-											["Icon"] = "TMW:icon:1Rg1PA0lcPyA",
-											["Level"] = 1,
-										}, -- [3]
-										{
-											["Type"] = "ICON",
-											["Icon"] = "TMW:icon:1RGdpp2C6tbD",
-											["Level"] = 1,
-										}, -- [4]
-										{
-											["Type"] = "ICON",
-											["Icon"] = "TMW:icon:1RTBzFiJhwQj",
-											["Level"] = 1,
-										}, -- [5]
-										["n"] = 5,
-									},
-									["CustomTex"] = "12294",
-									["FakeHidden"] = true,
-								},
-								[133] = {
-									["Enabled"] = true,
-									["Type"] = "conditionicon",
-									["ClockGCD"] = true,
-									["GUID"] = "TMW:icon:1QpP_HqMELD0",
-									["Events"] = {
-										{
-											["Type"] = "Animations",
-											["Period"] = 0.8,
-											["Animation"] = "ICONALPHAFLASH",
-											["AnimColor"] = "ff000000",
-											["OnConditionConditions"] = {
-												{
-													["Icon"] = "TMW:icon:1QpP_HqMELD0",
-													["Type"] = "ICON",
-												}, -- [1]
-												["n"] = 1,
-											},
-											["Event"] = "WCSP",
-											["Infinite"] = true,
-										}, -- [1]
-										["n"] = 1,
-									},
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												"", -- [1]
-												"", -- [2]
-											},
-										},
-									},
-									["FakeHidden"] = true,
-									["Conditions"] = {
-										{
-											["Type"] = "COUNTER",
-											["Name"] = "target_toggle",
-											["Level"] = 1,
-										}, -- [1]
-										{
-											["PrtsBefore"] = 1,
-											["Type"] = "EXISTS",
-											["Level"] = 1,
-											["Unit"] = "target",
-										}, -- [2]
-										{
-											["Type"] = "REACT",
-											["Level"] = 2,
-											["AndOr"] = "OR",
-											["PrtsAfter"] = 1,
-											["Unit"] = "target",
-										}, -- [3]
-										["n"] = 3,
-									},
-									["CustomTex"] = "163446",
-									["Name"] = "403",
-								},
-								[137] = {
-									["GUID"] = "TMW:icon:1Rg0QjxDyopx",
-									["ShowTimer"] = true,
-									["Name"] = "6673",
-									["Enabled"] = true,
-									["FakeHidden"] = true,
-									["Type"] = "buff",
-									["Events"] = {
-										{
-											["OnConditionConditions"] = {
-												{
-													["Icon"] = "TMW:icon:1Rg0QjxDyopx",
-													["Type"] = "ICON",
-												}, -- [1]
-												["n"] = 1,
-											},
-											["Type"] = "Animations",
-											["Event"] = "WCSP",
-											["Animation"] = "ACTVTNGLOW",
-										}, -- [1]
-										["n"] = 1,
-									},
-									["States"] = {
-										{
-											["Alpha"] = 0,
-										}, -- [1]
-										{
-											["Alpha"] = 1,
-										}, -- [2]
-									},
+									["GUID"] = "TMW:icon:1Rg1obpBJO85",
 								},
 								[119] = {
 									["Enabled"] = true,
@@ -7664,7 +7707,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Enabled"] = true,
+									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
 											["Name"] = "settings_toggle",
@@ -7673,7 +7716,7 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["CustomTex"] = "143612",
-									["FakeHidden"] = true,
+									["Enabled"] = true,
 								},
 								[123] = {
 									["GUID"] = "TMW:icon:1T3cIanoNemZ",
@@ -7702,7 +7745,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Enabled"] = true,
+									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
 											["Name"] = "settings_toggle",
@@ -7711,7 +7754,7 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["CustomTex"] = "88163",
-									["FakeHidden"] = true,
+									["Enabled"] = true,
 								},
 								[125] = {
 									["GUID"] = "TMW:icon:1T3cIanoUjuz",
@@ -7740,7 +7783,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Enabled"] = true,
+									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
 											["Name"] = "settings_toggle",
@@ -7749,37 +7792,102 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["CustomTex"] = "204219",
-									["FakeHidden"] = true,
+									["Enabled"] = true,
 								},
-								[110] = {
+								[79] = {
 									["Enabled"] = true,
 									["Type"] = "conditionicon",
-									["Events"] = {
-										{
-											["Type"] = "Counter",
-											["CounterOperation"] = "=",
-											["OnConditionConditions"] = {
-												{
-													["Icon"] = "TMW:icon:1RZ8bU8Z1jLS",
-													["Type"] = "ICON",
-												}, -- [1]
-												["n"] = 1,
-											},
-											["Event"] = "WCSP",
-											["Counter"] = "testofmight",
-										}, -- [1]
-										["n"] = 1,
-									},
 									["SettingsPerView"] = {
 										["icon"] = {
 											["Texts"] = {
-												[2] = "Off",
+												[2] = "Cooldowns",
 											},
 										},
 									},
-									["GUID"] = "TMW:icon:1RZ8bU8Z1jLS",
-									["CustomTex"] = "275529",
+									["CustomTex"] = "NONE",
 									["FakeHidden"] = true,
+								},
+								[138] = {
+									["Enabled"] = true,
+									["Type"] = "conditionicon",
+									["Name"] = "280735",
+									["ClockGCD"] = true,
+									["Events"] = {
+										{
+											["CounterOperation"] = "=",
+											["Type"] = "Counter",
+											["Event"] = "OnShow",
+											["Counter"] = "execute",
+										}, -- [1]
+										{
+											["Type"] = "Counter",
+											["CounterOperation"] = "=",
+											["CounterAmt"] = 0,
+											["Event"] = "OnHide",
+											["Counter"] = "execute",
+										}, -- [2]
+										["n"] = 2,
+									},
+									["Conditions"] = {
+										{
+											["Type"] = "HEALTH",
+											["Unit"] = "target",
+											["PrtsBefore"] = 2,
+											["Level"] = 20,
+											["PrtsAfter"] = 1,
+											["Operator"] = "<",
+										}, -- [1]
+										{
+											["PrtsBefore"] = 1,
+											["Type"] = "TALENTLEARNED",
+											["Name"] = "22380",
+											["AndOr"] = "OR",
+										}, -- [2]
+										{
+											["Type"] = "HEALTH",
+											["Unit"] = "target",
+											["Level"] = 35,
+											["PrtsAfter"] = 2,
+											["Operator"] = "<",
+										}, -- [3]
+										{
+											["Type"] = "UNITSPEC",
+											["BitFlags"] = {
+												[71] = true,
+											},
+										}, -- [4]
+										{
+											["Type"] = "EXISTS",
+											["Unit"] = "target",
+										}, -- [5]
+										["n"] = 5,
+									},
+									["CustomTex"] = "5308",
+									["FakeHidden"] = true,
+								},
+								[134] = {
+									["Enabled"] = true,
+									["ShowTimer"] = true,
+									["ClockGCD"] = true,
+									["FakeHidden"] = true,
+									["Name"] = "403",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												"", -- [1]
+												"", -- [2]
+											},
+										},
+									},
+									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1QpNXXs1Yg0u",
+									["CustomTex"] = "NONE",
+									["States"] = {
+										nil, -- [1]
+										{
+											["Alpha"] = 1,
+										}, -- [2]
+									},
 								},
 								[102] = {
 									["GUID"] = "TMW:icon:1RYjOKqM=xzp",
@@ -7809,88 +7917,6 @@ TMWOptDB = {
 									},
 									["CustomTex"] = "46924",
 									["FakeHidden"] = true,
-								},
-								[134] = {
-									["Enabled"] = true,
-									["ShowTimer"] = true,
-									["ClockGCD"] = true,
-									["FakeHidden"] = true,
-									["Name"] = "403",
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												"", -- [1]
-												"", -- [2]
-											},
-										},
-									},
-									["Type"] = "cooldown",
-									["GUID"] = "TMW:icon:1QpNXXs1Yg0u",
-									["CustomTex"] = "NONE",
-									["States"] = {
-										nil, -- [1]
-										{
-											["Alpha"] = 1,
-										}, -- [2]
-									},
-								},
-								[138] = {
-									["Enabled"] = true,
-									["Type"] = "conditionicon",
-									["Name"] = "280735",
-									["FakeHidden"] = true,
-									["Events"] = {
-										{
-											["CounterOperation"] = "=",
-											["Type"] = "Counter",
-											["Event"] = "OnShow",
-											["Counter"] = "execute",
-										}, -- [1]
-										{
-											["Type"] = "Counter",
-											["CounterOperation"] = "=",
-											["CounterAmt"] = 0,
-											["Event"] = "OnHide",
-											["Counter"] = "execute",
-										}, -- [2]
-										["n"] = 2,
-									},
-									["Conditions"] = {
-										{
-											["Type"] = "HEALTH",
-											["Operator"] = "<",
-											["PrtsBefore"] = 2,
-											["Level"] = 20,
-											["PrtsAfter"] = 1,
-											["Unit"] = "target",
-										}, -- [1]
-										{
-											["PrtsBefore"] = 1,
-											["Type"] = "TALENTLEARNED",
-											["Name"] = "22380",
-											["AndOr"] = "OR",
-										}, -- [2]
-										{
-											["Type"] = "HEALTH",
-											["Operator"] = "<",
-											["Level"] = 35,
-											["PrtsAfter"] = 2,
-											["Unit"] = "target",
-										}, -- [3]
-										{
-											["BitFlags"] = {
-												[71] = true,
-											},
-											["Type"] = "UNITSPEC",
-										}, -- [4]
-										{
-											["Unit"] = "target",
-											["Type"] = "EXISTS",
-										}, -- [5]
-										["n"] = 5,
-									},
-									["CustomTex"] = "5308",
-									["ClockGCD"] = true,
 								},
 								[104] = {
 									["GUID"] = "TMW:icon:1RYjOKqSlOoj",
@@ -7979,18 +8005,35 @@ TMWOptDB = {
 									["CustomTex"] = "167105",
 									["FakeHidden"] = true,
 								},
-								[79] = {
+								[110] = {
 									["Enabled"] = true,
 									["Type"] = "conditionicon",
+									["Events"] = {
+										{
+											["Type"] = "Counter",
+											["CounterOperation"] = "=",
+											["OnConditionConditions"] = {
+												{
+													["Icon"] = "TMW:icon:1RZ8bU8Z1jLS",
+													["Type"] = "ICON",
+												}, -- [1]
+												["n"] = 1,
+											},
+											["Event"] = "WCSP",
+											["Counter"] = "testofmight",
+										}, -- [1]
+										["n"] = 1,
+									},
 									["SettingsPerView"] = {
 										["icon"] = {
 											["Texts"] = {
-												[2] = "Cooldowns",
+												[2] = "Off",
 											},
 										},
 									},
-									["CustomTex"] = "NONE",
 									["FakeHidden"] = true,
+									["CustomTex"] = "275529",
+									["GUID"] = "TMW:icon:1RZ8bU8Z1jLS",
 								},
 								[81] = {
 									["Enabled"] = true,
@@ -8003,7 +8046,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["GUID"] = "TMW:icon:1RTD2ohayX3V",
+									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "ICON",
@@ -8028,59 +8071,18 @@ TMWOptDB = {
 										["n"] = 4,
 									},
 									["CustomTex"] = "12294",
-									["FakeHidden"] = true,
+									["GUID"] = "TMW:icon:1RTD2ohayX3V",
 								},
-								[84] = {
+								[136] = {
 									["Enabled"] = true,
-									["Type"] = "conditionicon",
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												[2] = "3",
-											},
-										},
-									},
-									["GUID"] = "TMW:icon:1RTC8jAvrtK1",
-									["Conditions"] = {
-										{
-											["Type"] = "ICON",
-											["Icon"] = "TMW:icon:1RGdpp24C0VS",
-											["Level"] = 1,
-										}, -- [1]
-										{
-											["Type"] = "ICON",
-											["Icon"] = "TMW:icon:1RZ8uyGIHkyU",
-											["Level"] = 1,
-										}, -- [2]
-										{
-											["Type"] = "ICON",
-											["Icon"] = "TMW:icon:1Rg1PA0lcPyA",
-											["Level"] = 1,
-										}, -- [3]
-										{
-											["Type"] = "ICON",
-											["Icon"] = "TMW:icon:1RGdpp2C6tbD",
-											["Level"] = 1,
-										}, -- [4]
-										{
-											["Type"] = "ICON",
-											["Icon"] = "TMW:icon:1RTBzFiJhwQj",
-											["Level"] = 1,
-										}, -- [5]
-										{
-											["Type"] = "ICON",
-											["Icon"] = "TMW:icon:1RGdpp2Rvc8H",
-											["Level"] = 1,
-										}, -- [6]
-										{
-											["Type"] = "ICON",
-											["Icon"] = "TMW:icon:1RGe00HwCayk",
-											["Level"] = 1,
-										}, -- [7]
-										["n"] = 7,
-									},
-									["CustomTex"] = "12294",
+									["ShowTimer"] = true,
 									["FakeHidden"] = true,
+									["OnlyMine"] = true,
+									["Name"] = "46924; 227847",
+									["Type"] = "buff",
+									["DurationMin"] = 1,
+									["DurationMinEnabled"] = true,
+									["GUID"] = "TMW:icon:1RL=eAD8Kmw0",
 								},
 							},
 							["Name"] = "Arms Profile",
@@ -8164,8 +8166,14 @@ TMWOptDB = {
 						}, -- [2]
 						{
 							["BackdropColor"] = "ff000000",
-							["GUID"] = "TMW:group:1QoUgaC7I4Vd",
 							["Columns"] = 1,
+							["Point"] = {
+								["y"] = -57.32825844569,
+								["relativeTo"] = "TMW:group:1Ov1GPZDfFXX",
+								["point"] = "TOP",
+								["relativePoint"] = "TOP",
+								["x"] = 0.00032635226234065,
+							},
 							["View"] = "bar",
 							["Scale"] = 0.954276204109192,
 							["Rows"] = 4,
@@ -8190,8 +8198,8 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Infinite"] = true,
 											["Animation"] = "ICONBORDER",
+											["Infinite"] = true,
 										}, -- [1]
 										["n"] = 1,
 									},
@@ -8231,10 +8239,10 @@ TMWOptDB = {
 									},
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										["n"] = 1,
 									},
@@ -8255,8 +8263,8 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Infinite"] = true,
 											["Animation"] = "ICONBORDER",
+											["Infinite"] = true,
 										}, -- [1]
 										["n"] = 1,
 									},
@@ -8285,9 +8293,6 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Enabled"] = true,
-									["TimerBar_EnableColors"] = true,
-									["BarDisplay_Invert"] = true,
 									["Events"] = {
 										{
 											["Type"] = "Animations",
@@ -8305,11 +8310,14 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Infinite"] = true,
 											["Animation"] = "ICONBORDER",
+											["Infinite"] = true,
 										}, -- [1]
 										["n"] = 1,
 									},
+									["BarDisplay_Invert"] = true,
+									["TimerBar_EnableColors"] = true,
+									["Enabled"] = true,
 								}, -- [3]
 								{
 									["Enabled"] = true,
@@ -8331,8 +8339,8 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Infinite"] = true,
 											["Animation"] = "ICONBORDER",
+											["Infinite"] = true,
 										}, -- [1]
 										["n"] = 1,
 									},
@@ -8344,10 +8352,10 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
+									["BackdropColor"] = "ffff6500",
 									["BackdropColor_Enable"] = true,
 									["TimerBar_CompleteColor"] = "0000ff00",
-									["BackdropColor"] = "ffff6500",
+									["TimerBar_EnableColors"] = true,
 								}, -- [4]
 								{
 									["BackdropColor"] = "ff402200",
@@ -8356,6 +8364,10 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["BackdropColor_Enable"] = true,
 									["TimerBar_CompleteColor"] = "ffac5d00",
+									["TimerBar_StartColor"] = "ffac5d00",
+									["ShowTTText"] = true,
+									["OnlyMine"] = true,
+									["Name"] = "190456",
 									["SettingsPerView"] = {
 										["bar"] = {
 											["TextLayout"] = "icon2",
@@ -8365,10 +8377,6 @@ TMWOptDB = {
 											},
 										},
 									},
-									["ShowTTText"] = true,
-									["OnlyMine"] = true,
-									["Name"] = "190456",
-									["TimerBar_StartColor"] = "ffac5d00",
 									["Events"] = {
 										{
 											["Type"] = "Animations",
@@ -8386,17 +8394,17 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Infinite"] = true,
 											["Animation"] = "ICONBORDER",
+											["Infinite"] = true,
 										}, -- [1]
 										["n"] = 1,
 									},
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[73] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										["n"] = 1,
 									},
@@ -8476,8 +8484,8 @@ TMWOptDB = {
 									["Level"] = 1,
 								}, -- [8]
 								{
-									["Level"] = 1,
 									["Type"] = "VEHICLE",
+									["Level"] = 1,
 								}, -- [9]
 								["n"] = 9,
 							},
@@ -8485,13 +8493,7 @@ TMWOptDB = {
 								[72] = false,
 								[73] = false,
 							},
-							["Point"] = {
-								["y"] = -57.32825844569,
-								["relativeTo"] = "TMW:group:1Ov1GPZDfFXX",
-								["point"] = "TOP",
-								["relativePoint"] = "TOP",
-								["x"] = 0.00032635226234065,
-							},
+							["GUID"] = "TMW:group:1QoUgaC7I4Vd",
 						}, -- [3]
 						{
 							["GUID"] = "TMW:group:1Ov1GPZDfFXX",
@@ -8503,9 +8505,62 @@ TMWOptDB = {
 								["relativePoint"] = "TOP",
 								["x"] = 0.0370833462401805,
 							},
-							["EnabledSpecs"] = {
-								[72] = false,
-								[73] = false,
+							["Icons"] = {
+								{
+									["Enabled"] = true,
+									["Type"] = "meta",
+									["Events"] = {
+										{
+											["Type"] = "Animations",
+											["Animation"] = "ICONBORDER",
+											["AnimColor"] = "ff000000",
+											["Event"] = "WCSP",
+											["Fade"] = false,
+											["Thickness"] = 3,
+											["Period"] = 0,
+											["OnConditionConditions"] = {
+												{
+													["Type"] = "COUNTER",
+													["Name"] = "border_toggle",
+													["Icon"] = "TMW:icon:1PBsicu04=LR",
+												}, -- [1]
+												["n"] = 1,
+											},
+											["Infinite"] = true,
+										}, -- [1]
+										["n"] = 1,
+									},
+									["Conditions"] = {
+										{
+											["Type"] = "UNITSPEC",
+											["BitFlags"] = {
+												[71] = true,
+											},
+										}, -- [1]
+										["n"] = 1,
+									},
+									["Icons"] = {
+										"TMW:icon:1QpP_HqMELD0", -- [1]
+										"TMW:icon:1RL=eAD8Kmw0", -- [2]
+										"TMW:icon:1RGdpp24C0VS", -- [3]
+										"TMW:icon:1RZ8uyGIHkyU", -- [4]
+										"TMW:icon:1Rg1PA0lcPyA", -- [5]
+										"TMW:icon:1RGdpp2C6tbD", -- [6]
+										"TMW:icon:1RTBzFiJhwQj", -- [7]
+										"TMW:icon:1RGdpp2Rvc8H", -- [8]
+										"TMW:icon:1RGe00HwCayk", -- [9]
+										"TMW:icon:1RGeD0uAObsB", -- [10]
+										"TMW:icon:1RTBzNx11CSK", -- [11]
+										"TMW:icon:1RGdpp2XiEgf", -- [12]
+										"TMW:icon:1Rg0on0B7Owq", -- [13]
+										"TMW:icon:1RGdpp2IFjGf", -- [14]
+										"TMW:icon:1RGdpp2dIykT", -- [15]
+										"TMW:icon:1RGeIgsJQX0r", -- [16]
+										"TMW:icon:1RJiuYRHNBx2", -- [17]
+										"TMW:icon:1QpNXXs1Yg0u", -- [18]
+									},
+									["GUID"] = "TMW:icon:1R6WKU2symQa",
+								}, -- [1]
 							},
 							["Scale"] = 1.75434064865112,
 							["Conditions"] = {
@@ -8555,67 +8610,14 @@ TMWOptDB = {
 									["Level"] = 1,
 								}, -- [8]
 								{
-									["Level"] = 1,
 									["Type"] = "VEHICLE",
+									["Level"] = 1,
 								}, -- [9]
 								["n"] = 9,
 							},
-							["Icons"] = {
-								{
-									["Enabled"] = true,
-									["Type"] = "meta",
-									["Events"] = {
-										{
-											["Type"] = "Animations",
-											["Animation"] = "ICONBORDER",
-											["AnimColor"] = "ff000000",
-											["Event"] = "WCSP",
-											["Fade"] = false,
-											["Thickness"] = 3,
-											["Period"] = 0,
-											["OnConditionConditions"] = {
-												{
-													["Type"] = "COUNTER",
-													["Name"] = "border_toggle",
-													["Icon"] = "TMW:icon:1PBsicu04=LR",
-												}, -- [1]
-												["n"] = 1,
-											},
-											["Infinite"] = true,
-										}, -- [1]
-										["n"] = 1,
-									},
-									["Conditions"] = {
-										{
-											["BitFlags"] = {
-												[71] = true,
-											},
-											["Type"] = "UNITSPEC",
-										}, -- [1]
-										["n"] = 1,
-									},
-									["Icons"] = {
-										"TMW:icon:1QpP_HqMELD0", -- [1]
-										"TMW:icon:1RL=eAD8Kmw0", -- [2]
-										"TMW:icon:1RGdpp24C0VS", -- [3]
-										"TMW:icon:1RZ8uyGIHkyU", -- [4]
-										"TMW:icon:1Rg1PA0lcPyA", -- [5]
-										"TMW:icon:1RGdpp2C6tbD", -- [6]
-										"TMW:icon:1RTBzFiJhwQj", -- [7]
-										"TMW:icon:1RGdpp2Rvc8H", -- [8]
-										"TMW:icon:1RGe00HwCayk", -- [9]
-										"TMW:icon:1RGeD0uAObsB", -- [10]
-										"TMW:icon:1RTBzNx11CSK", -- [11]
-										"TMW:icon:1RGdpp2XiEgf", -- [12]
-										"TMW:icon:1Rg0on0B7Owq", -- [13]
-										"TMW:icon:1RGdpp2IFjGf", -- [14]
-										"TMW:icon:1RGdpp2dIykT", -- [15]
-										"TMW:icon:1RGeIgsJQX0r", -- [16]
-										"TMW:icon:1RJiuYRHNBx2", -- [17]
-										"TMW:icon:1QpNXXs1Yg0u", -- [18]
-									},
-									["GUID"] = "TMW:icon:1R6WKU2symQa",
-								}, -- [1]
+							["EnabledSpecs"] = {
+								[72] = false,
+								[73] = false,
 							},
 							["Name"] = "Main Rotation (Meta)",
 						}, -- [4]
@@ -8623,8 +8625,8 @@ TMWOptDB = {
 							["GUID"] = "TMW:group:1QvCPR5qcfPC",
 							["Strata"] = "LOW",
 							["Point"] = {
-								["relativeTo"] = "TMW:group:1QoUgaC7I4Vd",
 								["x"] = -0.00019878718566014,
+								["relativeTo"] = "TMW:group:1QoUgaC7I4Vd",
 								["point"] = "TOP",
 								["relativePoint"] = "BOTTOM",
 							},
@@ -8663,8 +8665,8 @@ TMWOptDB = {
 									["GUID"] = "TMW:icon:1QvCRK1mfvhk",
 									["ShowTimer"] = true,
 									["Enabled"] = true,
-									["Type"] = "cooldown",
 									["ShowTimerText"] = true,
+									["Name"] = "6552",
 									["SettingsPerView"] = {
 										["icon"] = {
 											["Texts"] = {
@@ -8703,7 +8705,7 @@ TMWOptDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Name"] = "6552",
+									["Type"] = "cooldown",
 									["States"] = {
 										nil, -- [1]
 										{
@@ -8876,8 +8878,8 @@ TMWOptDB = {
 									["Level"] = 1,
 								}, -- [8]
 								{
-									["Level"] = 1,
 									["Type"] = "VEHICLE",
+									["Level"] = 1,
 								}, -- [9]
 								["n"] = 9,
 							},
@@ -8913,7 +8915,7 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["Type"] = "conditionicon",
 									["BarDisplay_Reverse"] = true,
-									["TimerBar_CompleteColor"] = "ff886332",
+									["TimerBar_EnableColors"] = true,
 									["ConditionDur"] = 5,
 									["SettingsPerView"] = {
 										["bar"] = {
@@ -8924,7 +8926,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["CustomTex"] = "NONE",
+									["BarDisplay_Invert"] = true,
 									["Conditions"] = {
 										{
 											["Icon"] = "TMW:icon:1T1lwuRfZ3C7",
@@ -8932,8 +8934,8 @@ TMWOptDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
-									["TimerBar_EnableColors"] = true,
-									["BarDisplay_Invert"] = true,
+									["CustomTex"] = "NONE",
+									["TimerBar_CompleteColor"] = "ff886332",
 								}, -- [1]
 								{
 									["Enabled"] = true,
@@ -8950,9 +8952,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["CustomTex"] = "NONE",
 									["BarDisplay_Invert"] = true,
+									["CustomTex"] = "NONE",
+									["TimerBar_EnableColors"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
@@ -8987,8 +8989,8 @@ TMWOptDB = {
 										}, -- [2]
 										{
 											["Type"] = "Animations",
-											["AnimColor"] = "ff00fff1",
 											["Animation"] = "ICONFLASH",
+											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 											["OnlyShown"] = true,
 											["OnConditionConditions"] = {
 												{
@@ -8997,7 +8999,7 @@ TMWOptDB = {
 												["n"] = 1,
 											},
 											["Event"] = "WCSP",
-											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+											["AnimColor"] = "ff00fff1",
 										}, -- [3]
 										["n"] = 3,
 									},
@@ -9038,8 +9040,8 @@ TMWOptDB = {
 										}, -- [2]
 										{
 											["Type"] = "Animations",
-											["AnimColor"] = "ff00fff1",
 											["Animation"] = "ICONFLASH",
+											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 											["OnlyShown"] = true,
 											["OnConditionConditions"] = {
 												{
@@ -9048,7 +9050,7 @@ TMWOptDB = {
 												["n"] = 1,
 											},
 											["Event"] = "WCSP",
-											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+											["AnimColor"] = "ff00fff1",
 										}, -- [3]
 										["n"] = 3,
 									},
@@ -9089,8 +9091,8 @@ TMWOptDB = {
 										}, -- [2]
 										{
 											["Type"] = "Animations",
-											["AnimColor"] = "ff00fff1",
 											["Animation"] = "ICONFLASH",
+											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 											["OnlyShown"] = true,
 											["OnConditionConditions"] = {
 												{
@@ -9099,7 +9101,7 @@ TMWOptDB = {
 												["n"] = 1,
 											},
 											["Event"] = "WCSP",
-											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+											["AnimColor"] = "ff00fff1",
 										}, -- [3]
 										["n"] = 3,
 									},
@@ -9128,9 +9130,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["CustomTex"] = "NONE",
 									["BarDisplay_Invert"] = true,
+									["CustomTex"] = "NONE",
+									["TimerBar_EnableColors"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
@@ -9152,10 +9154,10 @@ TMWOptDB = {
 									["BarDisplay_Invert"] = true,
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										["n"] = 1,
 									},
@@ -9190,7 +9192,7 @@ TMWOptDB = {
 										{
 											["Type"] = "Animations",
 											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-											["AnimColor"] = "ff00fff1",
+											["Animation"] = "ICONFLASH",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "MOUSEOVER",
@@ -9198,7 +9200,7 @@ TMWOptDB = {
 												["n"] = 1,
 											},
 											["Event"] = "WCSP",
-											["Animation"] = "ICONFLASH",
+											["AnimColor"] = "ff00fff1",
 										}, -- [3]
 										["n"] = 3,
 									},
@@ -9212,10 +9214,10 @@ TMWOptDB = {
 									},
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										{
 											["Type"] = "TALENTLEARNED",
@@ -9254,7 +9256,7 @@ TMWOptDB = {
 										{
 											["Type"] = "Animations",
 											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-											["AnimColor"] = "ff00fff1",
+											["Animation"] = "ICONFLASH",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "MOUSEOVER",
@@ -9262,7 +9264,7 @@ TMWOptDB = {
 												["n"] = 1,
 											},
 											["Event"] = "WCSP",
-											["Animation"] = "ICONFLASH",
+											["AnimColor"] = "ff00fff1",
 										}, -- [3]
 										["n"] = 3,
 									},
@@ -9276,10 +9278,10 @@ TMWOptDB = {
 									},
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										{
 											["Name"] = "21667",
@@ -9317,7 +9319,7 @@ TMWOptDB = {
 										{
 											["Type"] = "Animations",
 											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-											["AnimColor"] = "ff00fff1",
+											["Animation"] = "ICONFLASH",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "MOUSEOVER",
@@ -9325,7 +9327,7 @@ TMWOptDB = {
 												["n"] = 1,
 											},
 											["Event"] = "WCSP",
-											["Animation"] = "ICONFLASH",
+											["AnimColor"] = "ff00fff1",
 										}, -- [3]
 										["n"] = 3,
 									},
@@ -9339,10 +9341,10 @@ TMWOptDB = {
 									},
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										["n"] = 1,
 									},
@@ -9376,7 +9378,7 @@ TMWOptDB = {
 										{
 											["Type"] = "Animations",
 											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-											["AnimColor"] = "ff00fff1",
+											["Animation"] = "ICONFLASH",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "MOUSEOVER",
@@ -9384,7 +9386,7 @@ TMWOptDB = {
 												["n"] = 1,
 											},
 											["Event"] = "WCSP",
-											["Animation"] = "ICONFLASH",
+											["AnimColor"] = "ff00fff1",
 										}, -- [3]
 										["n"] = 3,
 									},
@@ -9398,10 +9400,10 @@ TMWOptDB = {
 									},
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										["n"] = 1,
 									},
@@ -9433,10 +9435,11 @@ TMWOptDB = {
 											["Fade"] = false,
 										}, -- [2]
 										{
-											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+											["Animation"] = "ICONFLASH",
 											["Type"] = "Animations",
 											["Period"] = 0,
-											["Animation"] = "ICONFLASH",
+											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+											["AnimColor"] = "7f00ff1d",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "testofmight",
@@ -9444,7 +9447,6 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
-											["AnimColor"] = "7f00ff1d",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [3]
@@ -9472,10 +9474,10 @@ TMWOptDB = {
 									},
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										["n"] = 1,
 									},
@@ -9492,7 +9494,7 @@ TMWOptDB = {
 									["Order"] = 1,
 								}, -- [2]
 							},
-							["TimerBar_EnableColors"] = true,
+							["GUID"] = "TMW:group:1T3cKuwHQNun",
 							["Name"] = "Cooldown Menu",
 							["SettingsPerView"] = {
 								["bar"] = {
@@ -9501,7 +9503,7 @@ TMWOptDB = {
 									["Icon"] = false,
 								},
 							},
-							["ShrinkGroup"] = true,
+							["BackdropColor"] = "00333333",
 							["Conditions"] = {
 								{
 									["Type"] = "COUNTER",
@@ -9510,8 +9512,8 @@ TMWOptDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["BackdropColor"] = "00333333",
-							["GUID"] = "TMW:group:1T3cKuwHQNun",
+							["ShrinkGroup"] = true,
+							["TimerBar_EnableColors"] = true,
 						}, -- [6]
 						{
 							["GUID"] = "TMW:group:1T1lA4Tqg1qw",
@@ -9540,20 +9542,20 @@ TMWOptDB = {
 										}, -- [2]
 										{
 											["Type"] = "Counter",
-											["Frequency"] = 0.2,
+											["Counter"] = "menu_open",
 											["CounterAmt"] = 0,
 											["CounterOperation"] = "=",
 											["OnConditionConditions"] = {
 												{
-													["Level"] = 2,
 													["Type"] = "COUNTER",
+													["Level"] = 2,
 													["Name"] = "menu_open",
 													["Operator"] = ">=",
 												}, -- [1]
 												["n"] = 1,
 											},
 											["Event"] = "WCSP",
-											["Counter"] = "menu_open",
+											["Frequency"] = 0.2,
 										}, -- [3]
 										{
 											["Type"] = "Counter",
@@ -9573,8 +9575,8 @@ TMWOptDB = {
 											["CounterOperation"] = "=",
 											["OnConditionConditions"] = {
 												{
-													["Level"] = 1,
 													["Type"] = "MOUSEOVER",
+													["Level"] = 1,
 												}, -- [1]
 												["n"] = 1,
 											},
@@ -9585,6 +9587,7 @@ TMWOptDB = {
 											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONBORDER",
+											["AnimColor"] = "ff000000",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "border_toggle",
@@ -9592,7 +9595,6 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
-											["AnimColor"] = "ff000000",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [6]
@@ -9610,11 +9612,11 @@ TMWOptDB = {
 								{
 									["GUID"] = "TMW:icon:1T1lwuRfZ3C7",
 									["Type"] = "conditionicon",
-									["Enabled"] = true,
-									["ConditionDurEnabled"] = true,
+									["ConditionDur"] = 5,
+									["CustomTex"] = "Attack",
 									["FakeHidden"] = true,
 									["OnlyIfCounting"] = true,
-									["ConditionDur"] = 5,
+									["ShowTimerText"] = true,
 									["SettingsPerView"] = {
 										["icon"] = {
 											["TextLayout"] = "bar1",
@@ -9640,6 +9642,7 @@ TMWOptDB = {
 											["Counter"] = "menu_open_c",
 										}, -- [2]
 										{
+											["Type"] = "Counter",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "COMBAT",
@@ -9651,7 +9654,6 @@ TMWOptDB = {
 												}, -- [2]
 												["n"] = 2,
 											},
-											["Type"] = "Counter",
 											["Event"] = "OnCondition",
 											["Counter"] = "menu_open_c",
 										}, -- [3]
@@ -9666,8 +9668,8 @@ TMWOptDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
-									["CustomTex"] = "Attack",
-									["ShowTimerText"] = true,
+									["ConditionDurEnabled"] = true,
+									["Enabled"] = true,
 								}, -- [2]
 							},
 							["LayoutDirection"] = 4,
@@ -9715,8 +9717,8 @@ TMWOptDB = {
 									["BarDisplay_FakeMax"] = 18,
 									["BackdropColor_Enable"] = true,
 									["BarDisplay_Reverse"] = true,
-									["Name"] = "260708",
 									["ShowTimerText"] = true,
+									["Name"] = "260708",
 									["SettingsPerView"] = {
 										["icon"] = {
 											["Texts"] = {
@@ -9730,21 +9732,6 @@ TMWOptDB = {
 											},
 										},
 									},
-									["BackdropColor"] = "00ff6500",
-									["Conditions"] = {
-										{
-											["BitFlags"] = {
-												[71] = true,
-											},
-											["Type"] = "UNITSPEC",
-										}, -- [1]
-										{
-											["Type"] = "ICON",
-											["Icon"] = "TMW:icon:1RGeD16XRQTK",
-											["Level"] = 1,
-										}, -- [2]
-										["n"] = 2,
-									},
 									["Events"] = {
 										{
 											["Type"] = "Animations",
@@ -9754,9 +9741,9 @@ TMWOptDB = {
 											["Operator"] = "<=",
 											["PassingCndt"] = true,
 											["OnlyShown"] = true,
-											["Animation"] = "ICONALPHAFLASH",
-											["Value"] = 1,
 											["CndtJustPassed"] = true,
+											["Value"] = 1,
+											["Animation"] = "ICONALPHAFLASH",
 										}, -- [1]
 										{
 											["Type"] = "Animations",
@@ -9766,9 +9753,9 @@ TMWOptDB = {
 											["Operator"] = "<=",
 											["PassingCndt"] = true,
 											["OnlyShown"] = true,
-											["Animation"] = "ICONBORDER",
-											["Value"] = 1,
 											["CndtJustPassed"] = true,
+											["Value"] = 1,
+											["Animation"] = "ICONBORDER",
 										}, -- [2]
 										{
 											["Type"] = "Animations",
@@ -9786,11 +9773,26 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Infinite"] = true,
 											["Animation"] = "ICONBORDER",
+											["Infinite"] = true,
 										}, -- [3]
 										["n"] = 3,
 									},
+									["Conditions"] = {
+										{
+											["Type"] = "UNITSPEC",
+											["BitFlags"] = {
+												[71] = true,
+											},
+										}, -- [1]
+										{
+											["Type"] = "ICON",
+											["Icon"] = "TMW:icon:1RGeD16XRQTK",
+											["Level"] = 1,
+										}, -- [2]
+										["n"] = 2,
+									},
+									["BackdropColor"] = "00ff6500",
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -9805,7 +9807,9 @@ TMWOptDB = {
 									["ShowTimer"] = true,
 									["TimerBar_MiddleColor"] = "ffffa500",
 									["TimerBar_CompleteColor"] = "ffff6500",
-									["Enabled"] = true,
+									["Type"] = "buff",
+									["ShowTimerText"] = true,
+									["TimerBar_StartColor"] = "ffffda00",
 									["Events"] = {
 										{
 											["Type"] = "Animations",
@@ -9815,8 +9819,8 @@ TMWOptDB = {
 											["Operator"] = ">",
 											["PassingCndt"] = true,
 											["OnlyShown"] = true,
-											["Infinite"] = true,
 											["Animation"] = "ICONBORDER",
+											["Infinite"] = true,
 										}, -- [1]
 										{
 											["Type"] = "Animations",
@@ -9834,8 +9838,8 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Infinite"] = true,
 											["Animation"] = "ICONBORDER",
+											["Infinite"] = true,
 										}, -- [2]
 										{
 											["Type"] = "Animations",
@@ -9858,20 +9862,18 @@ TMWOptDB = {
 											},
 										},
 									},
-									["ShowTimerText"] = true,
-									["TimerBar_StartColor"] = "ffffda00",
 									["Name"] = "260708",
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										["n"] = 1,
 									},
 									["TimerBar_EnableColors"] = true,
-									["Type"] = "buff",
+									["Enabled"] = true,
 								}, -- [2]
 							},
 							["SortPriorities"] = {
@@ -9942,13 +9944,13 @@ TMWOptDB = {
 									["Level"] = 1,
 								}, -- [8]
 								{
-									["Level"] = 1,
 									["Type"] = "VEHICLE",
+									["Level"] = 1,
 								}, -- [9]
 								["n"] = 9,
 							},
-							["View"] = "bar",
 							["BackdropColor"] = "ff000000",
+							["View"] = "bar",
 						}, -- [8]
 						{
 							["GUID"] = "TMW:group:1T3cM2MZ41y7",
@@ -9986,10 +9988,10 @@ TMWOptDB = {
 									},
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										["n"] = 1,
 									},
@@ -10038,10 +10040,10 @@ TMWOptDB = {
 									},
 									["Conditions"] = {
 										{
+											["Type"] = "UNITSPEC",
 											["BitFlags"] = {
 												[71] = true,
 											},
-											["Type"] = "UNITSPEC",
 										}, -- [1]
 										["n"] = 1,
 									},
@@ -10116,8 +10118,8 @@ TMWOptDB = {
 									["Level"] = 1,
 								}, -- [8]
 								{
-									["Level"] = 1,
 									["Type"] = "VEHICLE",
+									["Level"] = 1,
 								}, -- [9]
 								["n"] = 9,
 							},
@@ -10129,7 +10131,7 @@ TMWOptDB = {
 						}, -- [9]
 					},
 					["NumGroups"] = 9,
-					["TextureName"] = "Blizzard Raid Bar",
+					["WarnInvalids"] = false,
 				},
 				["Poklopac - Dreadnaught"] = {
 					["Version"] = 91200,
@@ -10151,38 +10153,35 @@ TMWOptDB = {
 					["Groups"] = {
 						{
 							["GUID"] = "TMW:group:1TQvxnAfbGyU",
-							["Columns"] = 20,
+							["Scale"] = 1,
 							["Point"] = {
 								["y"] = -5,
 								["point"] = "TOP",
 								["relativePoint"] = "TOP",
 							},
-							["Alpha"] = 0,
-							["Scale"] = 1,
-							["Name"] = "Spells",
 							["Icons"] = {
 								{
 									["GUID"] = "TMW:icon:1TQv_LtTwAae",
 									["OnlyMine"] = true,
 									["Name"] = "Dampen Magic",
-									["Enabled"] = true,
-									["ShowTimerText"] = true,
 									["Type"] = "buff",
+									["ShowTimerText"] = true,
+									["Enabled"] = true,
 								}, -- [1]
 								{
 									["GUID"] = "TMW:icon:1TQv_Ltf40Wl",
 									["Type"] = "buff",
 									["ShowTimerText"] = true,
-									["Enabled"] = true,
 									["Name"] = "Mana Shield",
+									["Enabled"] = true,
 								}, -- [2]
 								{
 									["Enabled"] = true,
 									["Type"] = "cooldown",
 									["ShowTimerText"] = true,
 									["Name"] = "Frost Nova",
-									["GUID"] = "TMW:icon:1TQv_Lti1RyX",
 									["CooldownCheck"] = true,
+									["GUID"] = "TMW:icon:1TQv_Lti1RyX",
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -10211,14 +10210,7 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["Type"] = "buff",
 									["Name"] = "Demoralizing Shout",
-									["States"] = {
-										{
-											["Alpha"] = 0,
-										}, -- [1]
-										{
-											["Alpha"] = 1,
-										}, -- [2]
-									},
+									["Unit"] = "target",
 									["BuffOrDebuff"] = "HARMFUL",
 									["Conditions"] = {
 										{
@@ -10233,7 +10225,14 @@ TMWOptDB = {
 										["n"] = 2,
 									},
 									["GUID"] = "TMW:icon:1TWZdpV26rm5",
-									["Unit"] = "target",
+									["States"] = {
+										{
+											["Alpha"] = 0,
+										}, -- [1]
+										{
+											["Alpha"] = 1,
+										}, -- [2]
+									},
 								}, -- [5]
 								{
 									["GUID"] = "TMW:icon:1TYYu4EDbfSz",
@@ -10264,6 +10263,9 @@ TMWOptDB = {
 								},
 							},
 							["Locked"] = true,
+							["Name"] = "Spells",
+							["Alpha"] = 0,
+							["Columns"] = 20,
 						}, -- [1]
 						{
 							["GUID"] = "TMW:group:1TWYSTcQ410f",
@@ -10278,8 +10280,8 @@ TMWOptDB = {
 									["GUID"] = "TMW:icon:1TWYSTcSCl0z",
 									["Type"] = "buff",
 									["ShowTimerText"] = true,
-									["Enabled"] = true,
 									["Name"] = "Renew",
+									["Enabled"] = true,
 								}, -- [1]
 								{
 									["Enabled"] = true,
@@ -10290,23 +10292,23 @@ TMWOptDB = {
 											["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
 										},
 									},
-									["ShowTimerText"] = true,
 									["GUID"] = "TMW:icon:1TZvNvgAkfmq",
+									["ShowTimerText"] = true,
 								}, -- [2]
 							},
 							["TextureName"] = "Details Flat",
 							["Name"] = "General Buffs/Debbufs",
 							["Locked"] = true,
-							["Alpha"] = 0,
 							["Columns"] = 20,
+							["Alpha"] = 0,
 						}, -- [2]
 						{
 							["GUID"] = "TMW:group:1TWYPj24VzCn",
-							["Name"] = "BuffTrack",
 							["Point"] = {
 								["y"] = -29.2003912925716,
 								["x"] = -209.401206970214,
 							},
+							["Name"] = "BuffTrack",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["SpacingX"] = 3,
@@ -10418,19 +10420,14 @@ TMWOptDB = {
 							["TextureName"] = "Details Flat",
 							["Name"] = "General Buffs/Debbufs",
 							["Locked"] = true,
-							["Point"] = {
-								["y"] = -40,
-								["point"] = "TOP",
-								["relativePoint"] = "TOP",
-							},
 							["Icons"] = {
 								{
 									["GUID"] = "TMW:icon:1TWYSTcSCl0z",
 									["Type"] = "buff",
 									["ShowTimerText"] = true,
 									["BuffOrDebuff"] = "HARMFUL",
-									["Name"] = "Blood Fury",
 									["Enabled"] = true,
+									["Name"] = "Blood Fury",
 								}, -- [1]
 								{
 									["Enabled"] = true,
@@ -10441,9 +10438,14 @@ TMWOptDB = {
 											["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
 										},
 									},
-									["GUID"] = "TMW:icon:1TZvNvgAkfmq",
 									["Name"] = "Enrage",
+									["GUID"] = "TMW:icon:1TZvNvgAkfmq",
 								}, -- [2]
+							},
+							["Point"] = {
+								["y"] = -40,
+								["point"] = "TOP",
+								["relativePoint"] = "TOP",
 							},
 						}, -- [2]
 						{
@@ -10485,20 +10487,17 @@ TMWOptDB = {
 						}, -- [3]
 						{
 							["GUID"] = "TMW:group:1V6ky7Uf4nZ5",
-							["Locked"] = true,
 							["Columns"] = 20,
-							["Alpha"] = 0,
-							["Scale"] = 1,
-							["Name"] = "Warlock Spells",
+							["Point"] = {
+								["y"] = -5,
+								["point"] = "TOP",
+								["relativePoint"] = "TOP",
+							},
 							["Icons"] = {
 								{
 									["Enabled"] = true,
 									["OnlyMine"] = true,
 									["Name"] = "Immolate",
-									["Unit"] = "target",
-									["BuffOrDebuff"] = "HARMFUL",
-									["Type"] = "buff",
-									["GUID"] = "TMW:icon:1V6ky7UjmQN=",
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -10507,15 +10506,15 @@ TMWOptDB = {
 											["Alpha"] = 1,
 										}, -- [2]
 									},
+									["BuffOrDebuff"] = "HARMFUL",
+									["GUID"] = "TMW:icon:1V6ky7UjmQN=",
+									["Type"] = "buff",
+									["Unit"] = "target",
 								}, -- [1]
 								{
 									["Enabled"] = true,
 									["OnlyMine"] = true,
 									["Name"] = "Corruption",
-									["Unit"] = "target",
-									["BuffOrDebuff"] = "HARMFUL",
-									["Type"] = "buff",
-									["GUID"] = "TMW:icon:1V6ky7UreCKN",
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -10524,15 +10523,15 @@ TMWOptDB = {
 											["Alpha"] = 1,
 										}, -- [2]
 									},
+									["BuffOrDebuff"] = "HARMFUL",
+									["GUID"] = "TMW:icon:1V6ky7UreCKN",
+									["Type"] = "buff",
+									["Unit"] = "target",
 								}, -- [2]
 								{
 									["Enabled"] = true,
 									["OnlyMine"] = true,
 									["Name"] = "Curse of Agony",
-									["Unit"] = "target",
-									["BuffOrDebuff"] = "HARMFUL",
-									["Type"] = "buff",
-									["GUID"] = "TMW:icon:1V6ky7Uy=NmE",
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -10541,6 +10540,10 @@ TMWOptDB = {
 											["Alpha"] = 1,
 										}, -- [2]
 									},
+									["BuffOrDebuff"] = "HARMFUL",
+									["GUID"] = "TMW:icon:1V6ky7Uy=NmE",
+									["Type"] = "buff",
+									["Unit"] = "target",
 								}, -- [3]
 								[20] = {
 									["Enabled"] = true,
@@ -10548,11 +10551,10 @@ TMWOptDB = {
 									["Name"] = "healh",
 								},
 							},
-							["Point"] = {
-								["y"] = -5,
-								["point"] = "TOP",
-								["relativePoint"] = "TOP",
-							},
+							["Scale"] = 1,
+							["Name"] = "Warlock Spells",
+							["Alpha"] = 0,
+							["Locked"] = true,
 						}, -- [4]
 					},
 					["NumGroups"] = 4,
@@ -10615,9 +10617,6 @@ TMWOptDB = {
 							["GUID"] = "TMW:group:1TRVv5Bhqdi2",
 							["Columns"] = 15,
 							["Name"] = "Hunter Profile",
-							["Alpha"] = 0,
-							["Scale"] = 0.600000023841858,
-							["Rows"] = 7,
 							["Icons"] = {
 								nil, -- [1]
 								{
@@ -10628,7 +10627,7 @@ TMWOptDB = {
 									["Type"] = "buff",
 									["Unit"] = "target",
 									["ClockGCD"] = true,
-									["ShowTimerText"] = true,
+									["GUID"] = "TMW:icon:1TVSlzDpfz8W",
 									["Name"] = "1130; 14323; 14324; 14325",
 									["DurationMax"] = 3,
 									["FakeHidden"] = true,
@@ -10643,7 +10642,7 @@ TMWOptDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
-									["GUID"] = "TMW:icon:1TVSlzDpfz8W",
+									["ShowTimerText"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
@@ -10660,7 +10659,7 @@ TMWOptDB = {
 									["ClockGCD"] = true,
 									["OnlyMine"] = true,
 									["ShowTimerText"] = true,
-									["Name"] = "5116",
+									["Type"] = "buff",
 									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
@@ -10690,7 +10689,7 @@ TMWOptDB = {
 										}, -- [6]
 										["n"] = 6,
 									},
-									["Type"] = "buff",
+									["Name"] = "5116",
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -10709,7 +10708,7 @@ TMWOptDB = {
 									["ClockGCD"] = true,
 									["OnlyMine"] = true,
 									["ShowTimerText"] = true,
-									["Name"] = "2974; 14267; 14268",
+									["Type"] = "buff",
 									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
@@ -10732,7 +10731,7 @@ TMWOptDB = {
 										}, -- [4]
 										["n"] = 4,
 									},
-									["Type"] = "buff",
+									["Name"] = "2974; 14267; 14268",
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -10747,8 +10746,8 @@ TMWOptDB = {
 									["ShowTimer"] = true,
 									["ClockGCD"] = true,
 									["ShowTimerText"] = true,
-									["Type"] = "reactive",
-									["Name"] = "1495",
+									["GUID"] = "TMW:icon:1TVSeFFt8WOP",
+									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
 											["Name"] = "spell = IsSpellKnown(1495)\n\nreturn spell",
@@ -10766,8 +10765,8 @@ TMWOptDB = {
 										}, -- [3]
 										["n"] = 3,
 									},
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1TVSeFFt8WOP",
+									["Name"] = "1495",
+									["Type"] = "reactive",
 								}, -- [5]
 								{
 									["Enabled"] = true,
@@ -10835,8 +10834,8 @@ TMWOptDB = {
 									["ShowTimer"] = true,
 									["ClockGCD"] = true,
 									["ShowTimerText"] = true,
-									["Type"] = "cooldown",
-									["Name"] = "19434",
+									["GUID"] = "TMW:icon:1TVSIOSMkJrY",
+									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "PTSINTAL",
@@ -10858,8 +10857,8 @@ TMWOptDB = {
 										}, -- [4]
 										["n"] = 4,
 									},
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1TVSIOSMkJrY",
+									["Name"] = "19434",
+									["Type"] = "cooldown",
 								}, -- [8]
 								{
 									["Enabled"] = true,
@@ -10872,7 +10871,7 @@ TMWOptDB = {
 									["OnlyMine"] = true,
 									["ShowTimerText"] = true,
 									["DurationMax"] = 3,
-									["Name"] = "1978; 13549; 13550; 13551; 13552; 13553; 13554; 13555; 25295",
+									["Type"] = "buff",
 									["Conditions"] = {
 										{
 											["Name"] = "spell = IsSpellKnown(1978)\n\nreturn spell",
@@ -10898,7 +10897,7 @@ TMWOptDB = {
 										}, -- [5]
 										["n"] = 5,
 									},
-									["Type"] = "buff",
+									["Name"] = "1978; 13549; 13550; 13551; 13552; 13553; 13554; 13555; 25295",
 									["States"] = {
 										nil, -- [1]
 										{
@@ -10910,9 +10909,28 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["ClockGCD"] = true,
-									["Type"] = "cooldown",
+									["GUID"] = "TMW:icon:1TT8M1YQC7C2",
 									["ShowTimerText"] = true,
-									["Name"] = "3044",
+									["Events"] = {
+										{
+											["Type"] = "Animations",
+											["Animation"] = "ICONOVERLAYIMG",
+											["Alpha"] = 1,
+											["Fade"] = false,
+											["Image"] = "2643",
+											["Period"] = 0,
+											["OnlyShown"] = true,
+											["OnConditionConditions"] = {
+												{
+													["Icon"] = "TMW:icon:1TVSIOVxdUiM",
+													["Type"] = "ICON",
+												}, -- [1]
+												["n"] = 1,
+											},
+											["Event"] = "WCSP",
+										}, -- [1]
+										["n"] = 1,
+									},
 									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
@@ -10939,35 +10957,16 @@ TMWOptDB = {
 										}, -- [5]
 										["n"] = 5,
 									},
-									["Events"] = {
-										{
-											["Type"] = "Animations",
-											["Animation"] = "ICONOVERLAYIMG",
-											["Alpha"] = 1,
-											["Fade"] = false,
-											["Image"] = "2643",
-											["Period"] = 0,
-											["OnlyShown"] = true,
-											["OnConditionConditions"] = {
-												{
-													["Icon"] = "TMW:icon:1TVSIOVxdUiM",
-													["Type"] = "ICON",
-												}, -- [1]
-												["n"] = 1,
-											},
-											["Event"] = "WCSP",
-										}, -- [1]
-										["n"] = 1,
-									},
-									["GUID"] = "TMW:icon:1TT8M1YQC7C2",
+									["Name"] = "3044",
+									["Type"] = "cooldown",
 								}, -- [10]
 								{
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["GUID"] = "TMW:icon:1TT6tqd5wK83",
 									["Type"] = "cooldown",
-									["ClockGCD"] = true,
 									["FakeHidden"] = true,
+									["ClockGCD"] = true,
 									["BarDisplay_BarGCD"] = true,
 									["Events"] = {
 										{
@@ -11019,16 +11018,9 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["GUID"] = "TMW:icon:1TVSrNWYFamc",
-									["ShowTimerText"] = true,
+									["Type"] = "buff",
 									["BuffOrDebuff"] = "HARMFUL",
 									["DurationMaxEnabled"] = true,
-									["DurationMin"] = 3,
-									["Unit"] = "target",
-									["FakeHidden"] = true,
-									["OnlyMine"] = true,
-									["Name"] = "1978; 13549; 13550; 13551; 13552; 13553; 13554; 13555; 25295",
-									["DurationMax"] = 4.5,
-									["DurationMinEnabled"] = true,
 									["Conditions"] = {
 										{
 											["Name"] = "spell = IsSpellKnown(1978)\n\nreturn spell",
@@ -11050,7 +11042,14 @@ TMWOptDB = {
 										}, -- [4]
 										["n"] = 4,
 									},
-									["Type"] = "buff",
+									["Unit"] = "target",
+									["FakeHidden"] = true,
+									["OnlyMine"] = true,
+									["Name"] = "1978; 13549; 13550; 13551; 13552; 13553; 13554; 13555; 25295",
+									["DurationMax"] = 4.5,
+									["DurationMinEnabled"] = true,
+									["DurationMin"] = 3,
+									["ShowTimerText"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
@@ -11085,7 +11084,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Enabled"] = true,
+									["GUID"] = "TMW:icon:1T4P1u1jl30C",
 									["Conditions"] = {
 										{
 											["Name"] = "settings_toggle",
@@ -11094,7 +11093,7 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["CustomTex"] = "21913",
-									["GUID"] = "TMW:icon:1T4P1u1jl30C",
+									["Enabled"] = true,
 								},
 								[54] = {
 									["FakeHidden"] = true,
@@ -11123,7 +11122,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Enabled"] = true,
+									["GUID"] = "TMW:icon:1TT71vNC3VXL",
 									["Conditions"] = {
 										{
 											["Name"] = "settings_toggle",
@@ -11132,14 +11131,14 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["CustomTex"] = "19507",
-									["GUID"] = "TMW:icon:1TT71vNC3VXL",
+									["Enabled"] = true,
 								},
 								[76] = {
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["FakeHidden"] = true,
 									["ShowTimerText"] = true,
-									["Type"] = "conditionicon",
+									["GUID"] = "TMW:icon:1TVSIOVxdUiM",
 									["Name"] = "2643",
 									["Conditions"] = {
 										{
@@ -11153,16 +11152,15 @@ TMWOptDB = {
 										["n"] = 2,
 									},
 									["CustomTex"] = "2643",
-									["GUID"] = "TMW:icon:1TVSIOVxdUiM",
+									["Type"] = "conditionicon",
 								},
 								[39] = {
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["DurationMaxEnabled"] = true,
 									["GUID"] = "TMW:icon:1TVSIOUd0NXr",
-									["ShowTimerText"] = true,
+									["Type"] = "cooldown",
 									["ClockGCD"] = true,
-									["Name"] = "3044",
 									["Events"] = {
 										{
 											["Type"] = "Animations",
@@ -11183,6 +11181,7 @@ TMWOptDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
+									["Name"] = "3044",
 									["DurationMax"] = 1.5,
 									["FakeHidden"] = true,
 									["Conditions"] = {
@@ -11206,7 +11205,7 @@ TMWOptDB = {
 										}, -- [4]
 										["n"] = 4,
 									},
-									["Type"] = "cooldown",
+									["ShowTimerText"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
@@ -11292,30 +11291,27 @@ TMWOptDB = {
 									["Name"] = "2974; 14267; 14268",
 									["GUID"] = "TMW:icon:1ToXQH9jBX8w",
 									["BuffOrDebuff"] = "HARMFUL",
-									["Enabled"] = true,
 									["OnlyMine"] = true,
+									["Enabled"] = true,
 									["Unit"] = "target",
 								},
 								[94] = {
 									["Enabled"] = true,
 									["Type"] = "buff",
 									["Name"] = "20043; 20190",
-									["OnlyMine"] = true,
 									["GUID"] = "TMW:icon:1TVSIOWpyLe9",
+									["OnlyMine"] = true,
 								},
 								[32] = {
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["GUID"] = "TMW:icon:1TVSqJ8ycRuW",
-									["FakeHidden"] = true,
+									["Type"] = "buff",
 									["BuffOrDebuff"] = "HARMFUL",
 									["DurationMaxEnabled"] = true,
-									["DurationMin"] = 3,
+									["DurationMinEnabled"] = true,
 									["Unit"] = "target",
 									["ClockGCD"] = true,
-									["ShowTimerText"] = true,
-									["Name"] = "1130; 14323; 14324; 14325",
-									["DurationMax"] = 4.5,
 									["Conditions"] = {
 										{
 											["Name"] = "spell = IsSpellKnown(1130)\n\nreturn spell",
@@ -11332,8 +11328,11 @@ TMWOptDB = {
 										}, -- [3]
 										["n"] = 3,
 									},
-									["DurationMinEnabled"] = true,
-									["Type"] = "buff",
+									["Name"] = "1130; 14323; 14324; 14325",
+									["DurationMax"] = 4.5,
+									["ShowTimerText"] = true,
+									["DurationMin"] = 3,
+									["FakeHidden"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
@@ -11347,10 +11346,10 @@ TMWOptDB = {
 									["GUID"] = "TMW:icon:1TVSIOUeNL9L",
 									["Type"] = "cooldown",
 									["ClockGCD"] = true,
-									["BarDisplay_BarGCD"] = true,
 									["ShowTimerText"] = true,
-									["FakeHidden"] = true,
+									["BarDisplay_BarGCD"] = true,
 									["Name"] = 75,
+									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
 											["Name"] = "melee_range",
@@ -11393,7 +11392,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Enabled"] = true,
+									["GUID"] = "TMW:icon:1T4P1xmoGuCz",
 									["Conditions"] = {
 										{
 											["Name"] = "settings_toggle",
@@ -11402,14 +11401,14 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["CustomTex"] = "13715",
-									["GUID"] = "TMW:icon:1T4P1xmoGuCz",
+									["Enabled"] = true,
 								},
 								[80] = {
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["ShowTimerText"] = true,
 									["GUID"] = "TMW:icon:1TVSIOWJ1T0I",
-									["Name"] = "5116",
+									["Type"] = "cooldown",
 									["Conditions"] = {
 										{
 											["Name"] = "spell = IsSpellKnown(5116)\n\nreturn spell",
@@ -11417,7 +11416,7 @@ TMWOptDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Type"] = "cooldown",
+									["Name"] = "5116",
 									["States"] = {
 										nil, -- [1]
 										{
@@ -11461,10 +11460,10 @@ TMWOptDB = {
 									},
 									["Conditions"] = {
 										{
-											["Operator"] = "<=",
+											["Unit"] = "target",
 											["Level"] = 5,
 											["Type"] = "LIBRANGECHECK",
-											["Unit"] = "target",
+											["Operator"] = "<=",
 										}, -- [1]
 										["n"] = 1,
 									},
@@ -11477,7 +11476,7 @@ TMWOptDB = {
 									["Type"] = "cooldown",
 									["BuffOrDebuff"] = "HARMFUL",
 									["DurationMaxEnabled"] = true,
-									["ShowTimerText"] = true,
+									["GUID"] = "TMW:icon:1TVSqR9grYi3",
 									["Unit"] = "target",
 									["ClockGCD"] = true,
 									["OnlyMine"] = true,
@@ -11513,7 +11512,7 @@ TMWOptDB = {
 										}, -- [6]
 										["n"] = 6,
 									},
-									["GUID"] = "TMW:icon:1TVSqR9grYi3",
+									["ShowTimerText"] = true,
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -11564,13 +11563,13 @@ TMWOptDB = {
 									["ShowTimer"] = true,
 									["BuffOrDebuff"] = "HARMFUL",
 									["DurationMaxEnabled"] = true,
-									["Type"] = "buff",
+									["GUID"] = "TMW:icon:1TVSqg4jQ45b",
 									["Unit"] = "target",
 									["ClockGCD"] = true,
 									["OnlyMine"] = true,
 									["ShowTimerText"] = true,
 									["DurationMax"] = 1.5,
-									["Name"] = "2974; 14267; 14268",
+									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "MANAUSABLE",
@@ -11592,8 +11591,8 @@ TMWOptDB = {
 										}, -- [4]
 										["n"] = 4,
 									},
-									["FakeHidden"] = true,
-									["GUID"] = "TMW:icon:1TVSqg4jQ45b",
+									["Name"] = "2974; 14267; 14268",
+									["Type"] = "buff",
 								},
 								[50] = {
 									["FakeHidden"] = true,
@@ -11622,7 +11621,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Enabled"] = true,
+									["GUID"] = "TMW:icon:1T4P1xniOGqa",
 									["Conditions"] = {
 										{
 											["Name"] = "settings_toggle",
@@ -11631,7 +11630,7 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["CustomTex"] = "1130",
-									["GUID"] = "TMW:icon:1T4P1xniOGqa",
+									["Enabled"] = true,
 								},
 								[35] = {
 									["Enabled"] = true,
@@ -11639,7 +11638,7 @@ TMWOptDB = {
 									["ClockGCD"] = true,
 									["GUID"] = "TMW:icon:1TVSqyJmaHeI",
 									["ShowTimerText"] = true,
-									["Name"] = "2973",
+									["Type"] = "cooldown",
 									["FakeHidden"] = true,
 									["Conditions"] = {
 										{
@@ -11658,7 +11657,7 @@ TMWOptDB = {
 										}, -- [3]
 										["n"] = 3,
 									},
-									["Type"] = "cooldown",
+									["Name"] = "2973",
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -11800,72 +11799,36 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Enabled"] = true,
-									["CustomTex"] = "NONE",
 									["GUID"] = "TMW:icon:1TT6FY9daRvb",
-								},
-								[91] = {
-									["FakeHidden"] = true,
-									["Type"] = "conditionicon",
-									["Events"] = {
-										{
-											["Type"] = "Counter",
-											["CounterOperation"] = "=",
-											["OnConditionConditions"] = {
-												{
-													["Icon"] = "TMW:icon:1TRoURgXVpaz",
-													["Type"] = "ICON",
-												}, -- [1]
-												["n"] = 1,
-											},
-											["Event"] = "WCSP",
-											["Counter"] = "aoe_check",
-										}, -- [1]
-										{
-											["Type"] = "Counter",
-											["CounterAmt"] = 0,
-											["CounterOperation"] = "=",
-											["OnConditionConditions"] = {
-												{
-													["Type"] = "ICON",
-													["Icon"] = "TMW:icon:1TRoURgXVpaz",
-													["Level"] = 1,
-												}, -- [1]
-												["n"] = 1,
-											},
-											["Event"] = "WCSP",
-											["Counter"] = "aoe_check",
-										}, -- [2]
-										["n"] = 2,
-									},
-									["SettingsPerView"] = {
-										["icon"] = {
-											["TextLayout"] = "icon1",
-											["Texts"] = {
-												"", -- [1]
-												"4", -- [2]
-											},
-										},
-									},
+									["CustomTex"] = "NONE",
 									["Enabled"] = true,
+								},
+								[77] = {
+									["Enabled"] = true,
+									["ShowTimer"] = true,
+									["FakeHidden"] = true,
+									["ShowTimerText"] = true,
+									["GUID"] = "TMW:icon:1TVSIOW0oWeD",
+									["Name"] = "2643",
 									["Conditions"] = {
 										{
-											["Name"] = "local inRange = 0\nfor i = 1, 15 do\n    if UnitExists('nameplate' .. i) and IsSpellInRange('Arcane Explosion', 'nameplate' .. i) == 1 then\n        inRange = inRange + 1\n    end\nend\nif inRange > 2 then    \n    \n    return true\nend",
+											["Name"] = "spell = IsSpellKnown(2974)\n\nreturn spell",
 											["Type"] = "LUA",
 										}, -- [1]
 										{
-											["Type"] = "LEVEL",
-											["Level"] = 20,
-											["Operator"] = ">=",
+											["Type"] = "LUA",
+											["Name"] = "spell = IsSpellKnown(14267)\n\nreturn spell",
+											["AndOr"] = "OR",
 										}, -- [2]
 										{
-											["Name"] = "aoe_toggle",
-											["Type"] = "COUNTER",
+											["Type"] = "LUA",
+											["Name"] = "spell = IsSpellKnown(14268)\n\nreturn spell",
+											["AndOr"] = "OR",
 										}, -- [3]
 										["n"] = 3,
 									},
-									["CustomTex"] = "10",
-									["GUID"] = "TMW:icon:1TRoURgXVpaz",
+									["CustomTex"] = "2974",
+									["Type"] = "conditionicon",
 								},
 								[88] = {
 									["Conditions"] = {
@@ -11876,41 +11839,86 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 								},
-								[93] = {
+								[97] = {
 									["Enabled"] = true,
-									["Type"] = "buff",
-									["Name"] = "13165; 14318; 14319; 14320; 14321; 14322; 25296",
-									["OnlyMine"] = true,
-									["GUID"] = "TMW:icon:1TVSIOWoVz8k",
+									["CLEUEvents"] = {
+										["RANGE_DAMAGE"] = true,
+									},
+									["Name"] = "75",
+									["CLEUDur"] = 1,
+									["Events"] = {
+										{
+											["Type"] = "Counter",
+											["Event"] = "OnShow",
+											["Counter"] = "auto_shot",
+										}, -- [1]
+										{
+											["Type"] = "Counter",
+											["CounterAmt"] = 0,
+											["CounterOperation"] = "=",
+											["OnConditionConditions"] = {
+												{
+													["Type"] = "COUNTER",
+													["Name"] = "auto_shot",
+													["Level"] = 2,
+												}, -- [1]
+												["n"] = 1,
+											},
+											["Event"] = "OnCondition",
+											["Counter"] = "auto_shot",
+										}, -- [2]
+										{
+											["Type"] = "Counter",
+											["CounterAmt"] = 0,
+											["CounterOperation"] = "=",
+											["OnConditionConditions"] = {
+												{
+													["Type"] = "COMBAT",
+													["Name"] = "auto_shot",
+													["Level"] = 1,
+												}, -- [1]
+												["n"] = 1,
+											},
+											["Event"] = "WCSP",
+											["Counter"] = "auto_shot",
+										}, -- [3]
+										["n"] = 3,
+									},
+									["Type"] = "cleu",
 								},
-								[95] = {
+								[75] = {
+									["FakeHidden"] = true,
+									["Type"] = "conditionicon",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["Texts"] = {
+												[2] = "Predict Help",
+											},
+										},
+									},
+									["CustomTex"] = "NONE",
 									["Enabled"] = true,
-									["Type"] = "buff",
-									["Name"] = "20043; 20190; 13165; 14318; 14319; 14320; 14321; 14322; 25296; 13161; 5118; 13159; 13163",
-									["OnlyMine"] = true,
-									["GUID"] = "TMW:icon:1TVSIOWrar8Y",
 								},
 								[37] = {
 									["Enabled"] = true,
 									["ShowTimer"] = true,
 									["DurationMaxEnabled"] = true,
 									["GUID"] = "TMW:icon:1TVSrFdTPYOk",
-									["ShowTimerText"] = true,
+									["Type"] = "cooldown",
 									["ClockGCD"] = true,
-									["Name"] = "19434",
 									["Events"] = {
 										{
-											["Type"] = "Animations",
 											["Image"] = "5676",
+											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONOVERLAYIMG",
-											["Alpha"] = 1,
+											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
-													["Operator"] = "<",
+													["Unit"] = "target",
 													["Level"] = 10,
 													["Type"] = "HEALTH",
-													["Unit"] = "target",
+													["Operator"] = "<",
 												}, -- [1]
 												{
 													["Name"] = "spell = IsSpellKnown(5676)\n\nreturn spell",
@@ -11918,11 +11926,12 @@ TMWOptDB = {
 												}, -- [2]
 												["n"] = 2,
 											},
-											["Event"] = "WCSP",
+											["Alpha"] = 1,
 											["Fade"] = false,
 										}, -- [1]
 										["n"] = 1,
 									},
+									["Name"] = "19434",
 									["DurationMax"] = 1.5,
 									["FakeHidden"] = true,
 									["Conditions"] = {
@@ -11942,7 +11951,7 @@ TMWOptDB = {
 										}, -- [3]
 										["n"] = 3,
 									},
-									["Type"] = "cooldown",
+									["ShowTimerText"] = true,
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -12006,13 +12015,12 @@ TMWOptDB = {
 									["ShowTimer"] = true,
 									["GUID"] = "TMW:icon:1TVSIOWDccaT",
 									["ShowTimerText"] = true,
-									["Name"] = "781",
+									["Type"] = "cooldown",
 									["Events"] = {
 										{
 											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONBORDER",
-											["AnimColor"] = "ff000000",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "targettarget",
@@ -12025,6 +12033,7 @@ TMWOptDB = {
 												}, -- [2]
 												["n"] = 2,
 											},
+											["AnimColor"] = "ff000000",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [1]
@@ -12043,14 +12052,14 @@ TMWOptDB = {
 										}, -- [2]
 										{
 											["Type"] = "ICON",
-											["AndOr"] = "OR",
-											["Level"] = 1,
 											["PrtsAfter"] = 1,
+											["Level"] = 1,
 											["Icon"] = "TMW:icon:1TVSIOWJ1T0I",
+											["AndOr"] = "OR",
 										}, -- [3]
 										["n"] = 3,
 									},
-									["Type"] = "cooldown",
+									["Name"] = "781",
 									["States"] = {
 										nil, -- [1]
 										{
@@ -12058,32 +12067,36 @@ TMWOptDB = {
 										}, -- [2]
 									},
 								},
-								[75] = {
+								[95] = {
+									["Enabled"] = true,
+									["Type"] = "buff",
+									["Name"] = "20043; 20190; 13165; 14318; 14319; 14320; 14321; 14322; 25296; 13161; 5118; 13159; 13163",
+									["GUID"] = "TMW:icon:1TVSIOWrar8Y",
+									["OnlyMine"] = true,
+								},
+								[93] = {
+									["Enabled"] = true,
+									["Type"] = "buff",
+									["Name"] = "13165; 14318; 14319; 14320; 14321; 14322; 25296",
+									["GUID"] = "TMW:icon:1TVSIOWoVz8k",
+									["OnlyMine"] = true,
+								},
+								[91] = {
 									["FakeHidden"] = true,
 									["Type"] = "conditionicon",
-									["SettingsPerView"] = {
-										["icon"] = {
-											["Texts"] = {
-												[2] = "Predict Help",
-											},
-										},
-									},
-									["CustomTex"] = "NONE",
-									["Enabled"] = true,
-								},
-								[97] = {
-									["Enabled"] = true,
-									["CLEUEvents"] = {
-										["RANGE_DAMAGE"] = true,
-									},
-									["Name"] = "75",
-									["CLEUDur"] = 1,
-									["Type"] = "cleu",
 									["Events"] = {
 										{
 											["Type"] = "Counter",
-											["Event"] = "OnShow",
-											["Counter"] = "auto_shot",
+											["CounterOperation"] = "=",
+											["OnConditionConditions"] = {
+												{
+													["Icon"] = "TMW:icon:1TRoURgXVpaz",
+													["Type"] = "ICON",
+												}, -- [1]
+												["n"] = 1,
+											},
+											["Event"] = "WCSP",
+											["Counter"] = "aoe_check",
 										}, -- [1]
 										{
 											["Type"] = "Counter",
@@ -12091,61 +12104,50 @@ TMWOptDB = {
 											["CounterOperation"] = "=",
 											["OnConditionConditions"] = {
 												{
-													["Type"] = "COUNTER",
-													["Name"] = "auto_shot",
-													["Level"] = 2,
-												}, -- [1]
-												["n"] = 1,
-											},
-											["Event"] = "OnCondition",
-											["Counter"] = "auto_shot",
-										}, -- [2]
-										{
-											["Type"] = "Counter",
-											["CounterAmt"] = 0,
-											["CounterOperation"] = "=",
-											["OnConditionConditions"] = {
-												{
-													["Type"] = "COMBAT",
-													["Name"] = "auto_shot",
+													["Type"] = "ICON",
+													["Icon"] = "TMW:icon:1TRoURgXVpaz",
 													["Level"] = 1,
 												}, -- [1]
 												["n"] = 1,
 											},
 											["Event"] = "WCSP",
-											["Counter"] = "auto_shot",
-										}, -- [3]
-										["n"] = 3,
+											["Counter"] = "aoe_check",
+										}, -- [2]
+										["n"] = 2,
 									},
-								},
-								[77] = {
-									["Enabled"] = true,
-									["ShowTimer"] = true,
-									["FakeHidden"] = true,
-									["ShowTimerText"] = true,
-									["Type"] = "conditionicon",
-									["Name"] = "2643",
+									["SettingsPerView"] = {
+										["icon"] = {
+											["TextLayout"] = "icon1",
+											["Texts"] = {
+												"", -- [1]
+												"4", -- [2]
+											},
+										},
+									},
+									["GUID"] = "TMW:icon:1TRoURgXVpaz",
 									["Conditions"] = {
 										{
-											["Name"] = "spell = IsSpellKnown(2974)\n\nreturn spell",
+											["Name"] = "local inRange = 0\nfor i = 1, 15 do\n    if UnitExists('nameplate' .. i) and IsSpellInRange('Arcane Explosion', 'nameplate' .. i) == 1 then\n        inRange = inRange + 1\n    end\nend\nif inRange > 2 then    \n    \n    return true\nend",
 											["Type"] = "LUA",
 										}, -- [1]
 										{
-											["Type"] = "LUA",
-											["Name"] = "spell = IsSpellKnown(14267)\n\nreturn spell",
-											["AndOr"] = "OR",
+											["Type"] = "LEVEL",
+											["Level"] = 20,
+											["Operator"] = ">=",
 										}, -- [2]
 										{
-											["Type"] = "LUA",
-											["Name"] = "spell = IsSpellKnown(14268)\n\nreturn spell",
-											["AndOr"] = "OR",
+											["Name"] = "aoe_toggle",
+											["Type"] = "COUNTER",
 										}, -- [3]
 										["n"] = 3,
 									},
-									["CustomTex"] = "2974",
-									["GUID"] = "TMW:icon:1TVSIOW0oWeD",
+									["CustomTex"] = "10",
+									["Enabled"] = true,
 								},
 							},
+							["Scale"] = 0.600000023841858,
+							["Rows"] = 7,
+							["Alpha"] = 0,
 							["Point"] = {
 								["y"] = -7.30746799045408,
 								["x"] = 4.18984222412109,
@@ -12224,7 +12226,6 @@ TMWOptDB = {
 											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONBORDER",
-											["AnimColor"] = "ff000000",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "border_toggle",
@@ -12232,6 +12233,7 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
+											["AnimColor"] = "ff000000",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [1]
@@ -12257,7 +12259,6 @@ TMWOptDB = {
 											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONBORDER",
-											["AnimColor"] = "ff000000",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "border_toggle",
@@ -12265,6 +12266,7 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
+											["AnimColor"] = "ff000000",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [1]
@@ -12283,7 +12285,10 @@ TMWOptDB = {
 						{
 							["GUID"] = "TMW:group:1TRW5crzGrfW",
 							["Columns"] = 1,
-							["Name"] = "Main Meta",
+							["Point"] = {
+								["y"] = -97.4739888509115,
+								["x"] = -1.26411946614583,
+							},
 							["Scale"] = 1.5,
 							["Conditions"] = {
 								{
@@ -12390,7 +12395,6 @@ TMWOptDB = {
 											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONBORDER",
-											["AnimColor"] = "ff000000",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "border_toggle",
@@ -12398,6 +12402,7 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
+											["AnimColor"] = "ff000000",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [2]
@@ -12418,15 +12423,18 @@ TMWOptDB = {
 									["GUID"] = "TMW:icon:1TT6FY4b9DCn",
 								}, -- [1]
 							},
-							["Point"] = {
-								["y"] = -97.4739888509115,
-								["x"] = -1.26411946614583,
-							},
+							["Name"] = "Main Meta",
 						}, -- [3]
 						{
 							["View"] = "bar",
 							["Columns"] = 1,
-							["GUID"] = "TMW:group:1TRksRXJhTqd",
+							["Point"] = {
+								["y"] = 8.96281651823714e-05,
+								["relativeTo"] = "TMW:group:1TRW5crzGrfW",
+								["point"] = "TOP",
+								["relativePoint"] = "BOTTOM",
+								["x"] = -8.92121632755042e-05,
+							},
 							["Scale"] = 0.805015742778778,
 							["Rows"] = 4,
 							["Icons"] = {
@@ -12529,6 +12537,19 @@ TMWOptDB = {
 										["n"] = 2,
 									},
 									["TimerBar_StartColor"] = "ffb00000",
+									["TimerBar_EnableColors"] = true,
+									["Conditions"] = {
+										{
+											["Unit"] = "pet",
+											["Type"] = "EXISTS",
+										}, -- [1]
+										{
+											["Unit"] = "pet",
+											["Type"] = "ALIVE",
+										}, -- [2]
+										["n"] = 2,
+									},
+									["CustomTex"] = "NONE",
 									["SettingsPerView"] = {
 										["bar"] = {
 											["Texts"] = {
@@ -12537,19 +12558,6 @@ TMWOptDB = {
 											},
 										},
 									},
-									["Conditions"] = {
-										{
-											["Type"] = "EXISTS",
-											["Unit"] = "pet",
-										}, -- [1]
-										{
-											["Type"] = "ALIVE",
-											["Unit"] = "pet",
-										}, -- [2]
-										["n"] = 2,
-									},
-									["TimerBar_EnableColors"] = true,
-									["CustomTex"] = "NONE",
 								}, -- [3]
 								{
 									["Enabled"] = true,
@@ -12562,39 +12570,31 @@ TMWOptDB = {
 										{
 											["Thickness"] = 3,
 											["Type"] = "Animations",
-											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+											["AnimColor"] = "ffffff00",
 											["Animation"] = "ICONBORDER",
 											["OnlyShown"] = true,
-											["AnimColor"] = "ffffff00",
-											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
-													["Type"] = "EXISTS",
 													["Level"] = 1,
+													["Type"] = "EXISTS",
 													["Name"] = "border_toggle",
 													["Unit"] = "pet",
 												}, -- [1]
 												{
-													["Type"] = "ALIVE",
 													["Level"] = 1,
+													["Type"] = "ALIVE",
 													["AndOr"] = "OR",
 													["Unit"] = "pet",
 												}, -- [2]
 												["n"] = 2,
 											},
+											["Event"] = "WCSP",
+											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 										}, -- [1]
 										["n"] = 1,
 									},
 									["TimerBar_StartColor"] = "ffb00000",
-									["SettingsPerView"] = {
-										["bar"] = {
-											["TextLayout"] = "bar1",
-											["Texts"] = {
-												"", -- [1]
-												"      REVIVE/CALL PET", -- [2]
-											},
-										},
-									},
+									["TimerBar_EnableColors"] = true,
 									["Conditions"] = {
 										{
 											["PrtsBefore"] = 1,
@@ -12604,8 +12604,8 @@ TMWOptDB = {
 										}, -- [1]
 										{
 											["Type"] = "ALIVE",
-											["AndOr"] = "OR",
 											["Level"] = 1,
+											["AndOr"] = "OR",
 											["PrtsAfter"] = 1,
 											["Unit"] = "pet",
 										}, -- [2]
@@ -12615,12 +12615,20 @@ TMWOptDB = {
 										}, -- [3]
 										["n"] = 3,
 									},
-									["TimerBar_EnableColors"] = true,
 									["CustomTex"] = "883",
+									["SettingsPerView"] = {
+										["bar"] = {
+											["TextLayout"] = "bar1",
+											["Texts"] = {
+												"", -- [1]
+												"      REVIVE/CALL PET", -- [2]
+											},
+										},
+									},
 								}, -- [4]
 							},
 							["TextureName"] = "Solid",
-							["BackdropColor"] = "ff000000",
+							["BackdropColor_Enable"] = true,
 							["SortPriorities"] = {
 								{
 									["Method"] = "fakehidden",
@@ -12637,8 +12645,8 @@ TMWOptDB = {
 							["Name"] = "Bars",
 							["SettingsPerView"] = {
 								["bar"] = {
-									["SizeX"] = 170,
 									["Icon"] = false,
+									["SizeX"] = 170,
 									["SizeY"] = 22,
 								},
 							},
@@ -12691,14 +12699,8 @@ TMWOptDB = {
 								}, -- [8]
 								["n"] = 8,
 							},
-							["BackdropColor_Enable"] = true,
-							["Point"] = {
-								["y"] = 8.96281651823714e-05,
-								["relativeTo"] = "TMW:group:1TRW5crzGrfW",
-								["point"] = "TOP",
-								["relativePoint"] = "BOTTOM",
-								["x"] = -8.92121632755042e-05,
-							},
+							["BackdropColor"] = "ff000000",
+							["GUID"] = "TMW:group:1TRksRXJhTqd",
 						}, -- [4]
 						{
 							["GUID"] = "TMW:group:1TRnYiiWZwGk",
@@ -12708,14 +12710,17 @@ TMWOptDB = {
 								{
 									["Enabled"] = true,
 									["ShowTimer"] = true,
-									["OnlyInBags"] = true,
-									["ShowTimerText"] = true,
+									["States"] = {
+										nil, -- [1]
+										{
+											["Alpha"] = 1,
+										}, -- [2]
+									},
 									["Events"] = {
 										{
 											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONBORDER",
-											["AnimColor"] = "ff000000",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "border_toggle",
@@ -12723,11 +12728,13 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
+											["AnimColor"] = "ff000000",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [1]
 										["n"] = 1,
 									},
+									["ShowTimerText"] = true,
 									["Type"] = "cooldown",
 									["Name"] = "1510",
 									["Conditions"] = {
@@ -12738,24 +12745,22 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["OnlyEquipped"] = true,
+									["OnlyInBags"] = true,
+								}, -- [1]
+								{
+									["Enabled"] = true,
+									["ShowTimer"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
 											["Alpha"] = 1,
 										}, -- [2]
 									},
-								}, -- [1]
-								{
-									["Enabled"] = true,
-									["ShowTimer"] = true,
-									["OnlyInBags"] = true,
-									["ShowTimerText"] = true,
 									["Events"] = {
 										{
 											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONBORDER",
-											["AnimColor"] = "ff000000",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "border_toggle",
@@ -12763,11 +12768,13 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
+											["AnimColor"] = "ff000000",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [1]
 										["n"] = 1,
 									},
+									["ShowTimerText"] = true,
 									["Type"] = "cooldown",
 									["Name"] = "13795",
 									["Conditions"] = {
@@ -12778,24 +12785,22 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["OnlyEquipped"] = true,
+									["OnlyInBags"] = true,
+								}, -- [2]
+								{
+									["Enabled"] = true,
+									["ShowTimer"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
 											["Alpha"] = 1,
 										}, -- [2]
 									},
-								}, -- [2]
-								{
-									["Enabled"] = true,
-									["ShowTimer"] = true,
-									["OnlyInBags"] = true,
-									["ShowTimerText"] = true,
 									["Events"] = {
 										{
 											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONBORDER",
-											["AnimColor"] = "ff000000",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "border_toggle",
@@ -12803,11 +12808,13 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
+											["AnimColor"] = "ff000000",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [1]
 										["n"] = 1,
 									},
+									["ShowTimerText"] = true,
 									["Type"] = "cooldown",
 									["Name"] = "5384",
 									["Conditions"] = {
@@ -12818,24 +12825,22 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["OnlyEquipped"] = true,
+									["OnlyInBags"] = true,
+								}, -- [3]
+								{
+									["Enabled"] = true,
+									["ShowTimer"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
 											["Alpha"] = 1,
 										}, -- [2]
 									},
-								}, -- [3]
-								{
-									["Enabled"] = true,
-									["ShowTimer"] = true,
-									["OnlyInBags"] = true,
-									["ShowTimerText"] = true,
 									["Events"] = {
 										{
 											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONBORDER",
-											["AnimColor"] = "ff000000",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "border_toggle",
@@ -12843,11 +12848,13 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
+											["AnimColor"] = "ff000000",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [1]
 										["n"] = 1,
 									},
+									["ShowTimerText"] = true,
 									["Type"] = "cooldown",
 									["Name"] = "19503",
 									["Conditions"] = {
@@ -12859,24 +12866,22 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["OnlyEquipped"] = true,
+									["OnlyInBags"] = true,
+								}, -- [4]
+								{
+									["Enabled"] = true,
+									["ShowTimer"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
 											["Alpha"] = 1,
 										}, -- [2]
 									},
-								}, -- [4]
-								{
-									["Enabled"] = true,
-									["ShowTimer"] = true,
-									["OnlyInBags"] = true,
-									["ShowTimerText"] = true,
 									["Events"] = {
 										{
 											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONBORDER",
-											["AnimColor"] = "ff000000",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "border_toggle",
@@ -12884,11 +12889,13 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
+											["AnimColor"] = "ff000000",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [1]
 										["n"] = 1,
 									},
+									["ShowTimerText"] = true,
 									["Type"] = "cooldown",
 									["Name"] = "19263",
 									["Conditions"] = {
@@ -12900,24 +12907,22 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["OnlyEquipped"] = true,
+									["OnlyInBags"] = true,
+								}, -- [5]
+								{
+									["Enabled"] = true,
+									["ShowTimer"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
 											["Alpha"] = 1,
 										}, -- [2]
 									},
-								}, -- [5]
-								{
-									["Enabled"] = true,
-									["ShowTimer"] = true,
-									["OnlyInBags"] = true,
-									["ShowTimerText"] = true,
 									["Events"] = {
 										{
 											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONBORDER",
-											["AnimColor"] = "ff000000",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "border_toggle",
@@ -12925,11 +12930,13 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
+											["AnimColor"] = "ff000000",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [1]
 										["n"] = 1,
 									},
+									["ShowTimerText"] = true,
 									["Type"] = "cooldown",
 									["Name"] = "19574",
 									["Conditions"] = {
@@ -12941,24 +12948,22 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["OnlyEquipped"] = true,
+									["OnlyInBags"] = true,
+								}, -- [6]
+								{
+									["Enabled"] = true,
+									["ShowTimer"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
 											["Alpha"] = 1,
 										}, -- [2]
 									},
-								}, -- [6]
-								{
-									["Enabled"] = true,
-									["ShowTimer"] = true,
-									["OnlyInBags"] = true,
-									["ShowTimerText"] = true,
 									["Events"] = {
 										{
 											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONBORDER",
-											["AnimColor"] = "ff000000",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "border_toggle",
@@ -12966,11 +12971,13 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
+											["AnimColor"] = "ff000000",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [1]
 										["n"] = 1,
 									},
+									["ShowTimerText"] = true,
 									["Type"] = "cooldown",
 									["Name"] = "3045",
 									["Conditions"] = {
@@ -12981,12 +12988,7 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["OnlyEquipped"] = true,
-									["States"] = {
-										nil, -- [1]
-										{
-											["Alpha"] = 1,
-										}, -- [2]
-									},
+									["OnlyInBags"] = true,
 								}, -- [7]
 							},
 							["SortPriorities"] = {
@@ -13081,7 +13083,7 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["Type"] = "conditionicon",
 									["TimerBar_CompleteColor"] = "ff886332",
-									["BarDisplay_Reverse"] = true,
+									["CustomTex"] = "NONE",
 									["ConditionDur"] = 5,
 									["SettingsPerView"] = {
 										["bar"] = {
@@ -13092,7 +13094,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
+									["BarDisplay_Invert"] = true,
 									["Conditions"] = {
 										{
 											["Icon"] = "TMW:icon:1T1lwuRfZ3C7",
@@ -13100,8 +13102,8 @@ TMWOptDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
-									["CustomTex"] = "NONE",
-									["BarDisplay_Invert"] = true,
+									["TimerBar_EnableColors"] = true,
+									["BarDisplay_Reverse"] = true,
 								}, -- [1]
 								{
 									["Enabled"] = true,
@@ -13118,9 +13120,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["CustomTex"] = "NONE",
 									["BarDisplay_Invert"] = true,
+									["CustomTex"] = "NONE",
+									["TimerBar_EnableColors"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
@@ -13155,17 +13157,17 @@ TMWOptDB = {
 										}, -- [2]
 										{
 											["Type"] = "Animations",
-											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+											["AnimColor"] = "ff00fff1",
 											["Animation"] = "ICONFLASH",
 											["OnlyShown"] = true,
-											["AnimColor"] = "ff00fff1",
-											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "MOUSEOVER",
 												}, -- [1]
 												["n"] = 1,
 											},
+											["Event"] = "WCSP",
+											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 										}, -- [3]
 										["n"] = 3,
 									},
@@ -13206,17 +13208,17 @@ TMWOptDB = {
 										}, -- [2]
 										{
 											["Type"] = "Animations",
-											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+											["AnimColor"] = "ff00fff1",
 											["Animation"] = "ICONFLASH",
 											["OnlyShown"] = true,
-											["AnimColor"] = "ff00fff1",
-											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "MOUSEOVER",
 												}, -- [1]
 												["n"] = 1,
 											},
+											["Event"] = "WCSP",
+											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 										}, -- [3]
 										["n"] = 3,
 									},
@@ -13257,17 +13259,17 @@ TMWOptDB = {
 										}, -- [2]
 										{
 											["Type"] = "Animations",
-											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+											["AnimColor"] = "ff00fff1",
 											["Animation"] = "ICONFLASH",
 											["OnlyShown"] = true,
-											["AnimColor"] = "ff00fff1",
-											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "MOUSEOVER",
 												}, -- [1]
 												["n"] = 1,
 											},
+											["Event"] = "WCSP",
+											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 										}, -- [3]
 										["n"] = 3,
 									},
@@ -13296,9 +13298,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["CustomTex"] = "NONE",
 									["BarDisplay_Invert"] = true,
+									["CustomTex"] = "NONE",
+									["TimerBar_EnableColors"] = true,
 									["States"] = {
 										nil, -- [1]
 										{
@@ -13348,15 +13350,15 @@ TMWOptDB = {
 										{
 											["Type"] = "Animations",
 											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-											["Animation"] = "ICONFLASH",
 											["AnimColor"] = "af00c0ff",
-											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "MOUSEOVER",
 												}, -- [1]
 												["n"] = 1,
 											},
+											["Event"] = "WCSP",
+											["Animation"] = "ICONFLASH",
 										}, -- [3]
 										["n"] = 3,
 									},
@@ -13368,10 +13370,10 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["TimerBar_CompleteColor"] = "005dff55",
 									["CustomTex"] = "NONE",
 									["BarDisplay_Invert"] = true,
+									["TimerBar_CompleteColor"] = "005dff55",
+									["TimerBar_EnableColors"] = true,
 								}, -- [8]
 								{
 									["Type"] = "conditionicon",
@@ -13396,9 +13398,7 @@ TMWOptDB = {
 										{
 											["Type"] = "Animations",
 											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-											["Animation"] = "ICONFLASH",
 											["AnimColor"] = "9400d4ff",
-											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "heal/dps_toggle",
@@ -13409,6 +13409,8 @@ TMWOptDB = {
 												}, -- [2]
 												["n"] = 2,
 											},
+											["Event"] = "WCSP",
+											["Animation"] = "ICONFLASH",
 										}, -- [2]
 										{
 											["Type"] = "Lua",
@@ -13431,11 +13433,10 @@ TMWOptDB = {
 											["Fade"] = false,
 										}, -- [4]
 										{
-											["Animation"] = "ICONFLASH",
+											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 											["Type"] = "Animations",
 											["Period"] = 0,
-											["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-											["AnimColor"] = "9400d4ff",
+											["Animation"] = "ICONFLASH",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "COUNTER",
@@ -13444,6 +13445,7 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
+											["AnimColor"] = "9400d4ff",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [5]
@@ -13457,10 +13459,10 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["TimerBar_CompleteColor"] = "005dff55",
 									["CustomTex"] = "NONE",
 									["BarDisplay_Invert"] = true,
+									["TimerBar_CompleteColor"] = "005dff55",
+									["TimerBar_EnableColors"] = true,
 								}, -- [9]
 							},
 							["SortPriorities"] = {
@@ -13481,7 +13483,7 @@ TMWOptDB = {
 									["Icon"] = false,
 								},
 							},
-							["GUID"] = "TMW:group:1T4PJbRYY3Gh",
+							["ShrinkGroup"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "COUNTER",
@@ -13491,7 +13493,7 @@ TMWOptDB = {
 								["n"] = 1,
 							},
 							["BackdropColor"] = "00333333",
-							["ShrinkGroup"] = true,
+							["GUID"] = "TMW:group:1T4PJbRYY3Gh",
 						}, -- [6]
 						{
 							["GUID"] = "TMW:group:1T1lA4Tqg1qw",
@@ -13515,20 +13517,20 @@ TMWOptDB = {
 										}, -- [2]
 										{
 											["Type"] = "Counter",
-											["Counter"] = "menu_open",
+											["Frequency"] = 0.2,
 											["CounterAmt"] = 0,
 											["CounterOperation"] = "=",
 											["OnConditionConditions"] = {
 												{
-													["Type"] = "COUNTER",
 													["Level"] = 2,
+													["Type"] = "COUNTER",
 													["Name"] = "menu_open",
 													["Operator"] = ">=",
 												}, -- [1]
 												["n"] = 1,
 											},
 											["Event"] = "WCSP",
-											["Frequency"] = 0.2,
+											["Counter"] = "menu_open",
 										}, -- [3]
 										{
 											["Type"] = "Counter",
@@ -13548,8 +13550,8 @@ TMWOptDB = {
 											["CounterOperation"] = "=",
 											["OnConditionConditions"] = {
 												{
-													["Type"] = "MOUSEOVER",
 													["Level"] = 1,
+													["Type"] = "MOUSEOVER",
 												}, -- [1]
 												["n"] = 1,
 											},
@@ -13560,7 +13562,6 @@ TMWOptDB = {
 											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONBORDER",
-											["AnimColor"] = "ff000000",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "border_toggle",
@@ -13568,6 +13569,7 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
+											["AnimColor"] = "ff000000",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [6]
@@ -13588,7 +13590,7 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["Type"] = "conditionicon",
 									["ShowTimerText"] = true,
-									["CustomTex"] = "Attack",
+									["ConditionDurEnabled"] = true,
 									["FakeHidden"] = true,
 									["OnlyIfCounting"] = true,
 									["Events"] = {
@@ -13607,7 +13609,6 @@ TMWOptDB = {
 											["Counter"] = "menu_open_c",
 										}, -- [2]
 										{
-											["Type"] = "Counter",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "COMBAT",
@@ -13619,6 +13620,7 @@ TMWOptDB = {
 												}, -- [2]
 												["n"] = 2,
 											},
+											["Type"] = "Counter",
 											["Event"] = "OnCondition",
 											["Counter"] = "menu_open_c",
 										}, -- [3]
@@ -13643,7 +13645,7 @@ TMWOptDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
-									["ConditionDurEnabled"] = true,
+									["CustomTex"] = "Attack",
 									["ConditionDur"] = 5,
 								}, -- [2]
 							},
@@ -13667,7 +13669,11 @@ TMWOptDB = {
 							["GUID"] = "TMW:group:1TVT63sQgMqo",
 							["Strata"] = "HIGH",
 							["Columns"] = 1,
-							["Name"] = "Aspects",
+							["Point"] = {
+								["relativeTo"] = "TMW:group:1TRW5crzGrfW",
+								["point"] = "BOTTOM",
+								["relativePoint"] = "TOP",
+							},
 							["Scale"] = 0.600000023841858,
 							["Conditions"] = {
 								{
@@ -13747,29 +13753,29 @@ TMWOptDB = {
 											["Event"] = "WCSP",
 										}, -- [1]
 										{
-											["Type"] = "Animations",
 											["Image"] = "13161",
+											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONOVERLAYIMG",
-											["Alpha"] = 1,
+											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
-													["Checked"] = true,
-													["Type"] = "BUFFDUR",
 													["Name"] = "13161",
+													["Type"] = "BUFFDUR",
+													["Checked"] = true,
 													["Operator"] = "~=",
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Event"] = "WCSP",
+											["Alpha"] = 1,
 											["Fade"] = false,
 										}, -- [2]
 										{
-											["Type"] = "Animations",
 											["Image"] = "13165",
+											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONOVERLAYIMG",
-											["Alpha"] = 1,
+											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "ICON",
@@ -13781,15 +13787,15 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Event"] = "WCSP",
+											["Alpha"] = 1,
 											["Fade"] = false,
 										}, -- [3]
 										{
-											["Type"] = "Animations",
 											["Image"] = "13163",
+											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONOVERLAYIMG",
-											["Alpha"] = 1,
+											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "BUFFDUR",
@@ -13801,33 +13807,33 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Event"] = "WCSP",
+											["Alpha"] = 1,
 											["Fade"] = false,
 										}, -- [4]
 										{
-											["Type"] = "Animations",
 											["Image"] = "5118",
+											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONOVERLAYIMG",
-											["Alpha"] = 1,
+											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
-													["Checked"] = true,
-													["Type"] = "BUFFDUR",
 													["Name"] = "5118",
+													["Type"] = "BUFFDUR",
+													["Checked"] = true,
 													["Operator"] = "~=",
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Event"] = "WCSP",
+											["Alpha"] = 1,
 											["Fade"] = false,
 										}, -- [5]
 										{
-											["Type"] = "Animations",
 											["Image"] = "20043",
+											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONOVERLAYIMG",
-											["Alpha"] = 1,
+											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "ICON",
@@ -13839,15 +13845,15 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Event"] = "WCSP",
+											["Alpha"] = 1,
 											["Fade"] = false,
 										}, -- [6]
 										{
-											["Type"] = "Animations",
 											["Image"] = "13159",
+											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONOVERLAYIMG",
-											["Alpha"] = 1,
+											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "BUFFDUR",
@@ -13859,13 +13865,13 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Event"] = "WCSP",
+											["Alpha"] = 1,
 											["Fade"] = false,
 										}, -- [7]
 										{
 											["Type"] = "Animations",
 											["Animation"] = "ICONBORDER",
-											["Image"] = "13159",
+											["Alpha"] = 1,
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "BUFFDUR",
@@ -13877,19 +13883,15 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Alpha"] = 1,
 											["Event"] = "WCSP",
+											["Image"] = "13159",
 										}, -- [8]
 										["n"] = 8,
 									},
 									["CustomTex"] = "NONE",
 								}, -- [1]
 							},
-							["Point"] = {
-								["relativeTo"] = "TMW:group:1TRW5crzGrfW",
-								["point"] = "BOTTOM",
-								["relativePoint"] = "TOP",
-							},
+							["Name"] = "Aspects",
 						}, -- [8]
 						{
 							["View"] = "bar",
@@ -13899,7 +13901,7 @@ TMWOptDB = {
 								{
 									["BackdropColor"] = "00333333",
 									["Type"] = "conditionicon",
-									["BackdropColor_Enable"] = true,
+									["Enabled"] = true,
 									["SettingsPerView"] = {
 										["bar"] = {
 											["Texts"] = {
@@ -13908,7 +13910,7 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_CompleteColor"] = "0000ff00",
+									["TimerBar_EnableColors"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "COUNTER",
@@ -13917,8 +13919,8 @@ TMWOptDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
-									["TimerBar_EnableColors"] = true,
-									["Enabled"] = true,
+									["TimerBar_CompleteColor"] = "0000ff00",
+									["BackdropColor_Enable"] = true,
 								}, -- [1]
 							},
 							["Name"] = "Version",
@@ -13929,12 +13931,12 @@ TMWOptDB = {
 								},
 							},
 							["Locked"] = true,
-							["GUID"] = "TMW:group:1TlsU424Yf48",
 							["Point"] = {
 								["y"] = -83.1354304445333,
 								["point"] = "TOP",
 								["relativePoint"] = "TOP",
 							},
+							["GUID"] = "TMW:group:1TlsU424Yf48",
 						}, -- [9]
 						{
 							["View"] = "bar",
@@ -13958,9 +13960,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [1]
 								{
@@ -13979,9 +13981,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [2]
 								{
@@ -14000,9 +14002,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [3]
 								{
@@ -14021,9 +14023,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [4]
 								{
@@ -14042,9 +14044,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [5]
 								{
@@ -14063,9 +14065,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [6]
 								{
@@ -14084,9 +14086,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [7]
 								{
@@ -14105,9 +14107,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [8]
 								{
@@ -14126,9 +14128,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [9]
 								{
@@ -14147,9 +14149,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [10]
 								{
@@ -14168,9 +14170,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [11]
 								{
@@ -14189,9 +14191,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [12]
 								{
@@ -14210,9 +14212,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [13]
 								{
@@ -14231,9 +14233,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [14]
 								{
@@ -14252,9 +14254,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [15]
 								{
@@ -14273,9 +14275,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [16]
 								{
@@ -14294,9 +14296,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [17]
 								{
@@ -14315,9 +14317,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [18]
 								{
@@ -14336,9 +14338,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [19]
 								{
@@ -14357,18 +14359,18 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [20]
 							},
 							["Name"] = "Ammo 1",
 							["SettingsPerView"] = {
 								["bar"] = {
-									["SizeX"] = 1.8,
-									["BorderInset"] = false,
 									["Icon"] = false,
+									["BorderInset"] = false,
+									["SizeX"] = 1.8,
 									["SizeY"] = 10,
 								},
 							},
@@ -14420,13 +14422,13 @@ TMWOptDB = {
 								}, -- [8]
 								["n"] = 8,
 							},
-							["GUID"] = "TMW:group:1To6C6Z742Ke",
 							["Point"] = {
 								["y"] = -42,
 								["relativeTo"] = "TMW:group:1TRW5crzGrfW",
 								["x"] = -5,
 								["relativePoint"] = "LEFT",
 							},
+							["GUID"] = "TMW:group:1To6C6Z742Ke",
 						}, -- [10]
 						{
 							["View"] = "bar",
@@ -14450,9 +14452,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [1]
 								{
@@ -14471,9 +14473,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [2]
 								{
@@ -14492,9 +14494,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [3]
 								{
@@ -14513,9 +14515,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [4]
 								{
@@ -14534,9 +14536,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [5]
 								{
@@ -14555,9 +14557,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [6]
 								{
@@ -14576,9 +14578,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [7]
 								{
@@ -14597,9 +14599,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [8]
 								{
@@ -14618,9 +14620,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [9]
 								{
@@ -14639,9 +14641,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [10]
 								{
@@ -14660,9 +14662,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [11]
 								{
@@ -14681,9 +14683,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [12]
 								{
@@ -14702,9 +14704,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [13]
 								{
@@ -14723,9 +14725,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [14]
 								{
@@ -14744,9 +14746,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [15]
 								{
@@ -14765,9 +14767,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [16]
 								{
@@ -14786,9 +14788,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [17]
 								{
@@ -14807,9 +14809,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [18]
 								{
@@ -14828,9 +14830,9 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [19]
 								{
@@ -14849,17 +14851,17 @@ TMWOptDB = {
 											},
 										},
 									},
-									["TimerBar_EnableColors"] = true,
-									["StackMinEnabled"] = true,
 									["BarDisplay_Invert"] = true,
+									["StackMinEnabled"] = true,
+									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [20]
 							},
 							["Name"] = "Ammo2",
 							["SettingsPerView"] = {
 								["bar"] = {
-									["SizeX"] = 1.8,
 									["Icon"] = false,
+									["SizeX"] = 1.8,
 									["SizeY"] = 10,
 								},
 							},
@@ -14912,12 +14914,12 @@ TMWOptDB = {
 								}, -- [8]
 								["n"] = 8,
 							},
-							["GUID"] = "TMW:group:1To6LXAC9Pm=",
 							["Point"] = {
 								["relativeTo"] = "TMW:group:1To6C6Z742Ke",
 								["point"] = "LEFT",
 								["relativePoint"] = "RIGHT",
 							},
+							["GUID"] = "TMW:group:1To6LXAC9Pm=",
 						}, -- [11]
 						{
 							["View"] = "bar",
@@ -14928,7 +14930,12 @@ TMWOptDB = {
 								},
 							},
 							["Scale"] = 1.11061465740204,
-							["GUID"] = "TMW:group:1To6c=dO874e",
+							["Point"] = {
+								["y"] = -118.407198257969,
+								["x"] = 0.613753437995911,
+								["point"] = "TOPLEFT",
+								["relativePoint"] = "TOPLEFT",
+							},
 							["Icons"] = {
 								{
 									["StackMin"] = 200,
@@ -14972,18 +14979,13 @@ TMWOptDB = {
 											},
 										},
 									},
-									["BackdropColor_Enable"] = true,
 									["Enabled"] = true,
+									["BackdropColor_Enable"] = true,
 									["TimerBar_EnableColors"] = true,
 									["OnlyInBags"] = true,
 								}, -- [2]
 							},
-							["Point"] = {
-								["y"] = -118.407198257969,
-								["x"] = 0.613753437995911,
-								["point"] = "TOPLEFT",
-								["relativePoint"] = "TOPLEFT",
-							},
+							["GUID"] = "TMW:group:1To6c=dO874e",
 						}, -- [12]
 						{
 							["GUID"] = "TMW:group:1To6q47skjGf",
@@ -14991,8 +14993,8 @@ TMWOptDB = {
 							["Columns"] = 1,
 							["SettingsPerView"] = {
 								["icon"] = {
-									["BorderIcon"] = 4,
 									["BorderInset"] = true,
+									["BorderIcon"] = 4,
 								},
 							},
 							["Scale"] = 0.59,
@@ -15077,8 +15079,8 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["Type"] = "cooldown",
 									["BarDisplay_Invert"] = true,
-									["ShowTimerText"] = true,
 									["Name"] = 75,
+									["ShowTimerText"] = true,
 									["SettingsPerView"] = {
 										["bar"] = {
 											["Texts"] = {
@@ -15089,11 +15091,11 @@ TMWOptDB = {
 									},
 									["Events"] = {
 										{
-											["Type"] = "Animations",
 											["Image"] = "1510",
+											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONOVERLAYIMG",
-											["Alpha"] = 1,
+											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
 													["Type"] = "COUNTER",
@@ -15110,7 +15112,7 @@ TMWOptDB = {
 												}, -- [3]
 												["n"] = 3,
 											},
-											["Event"] = "WCSP",
+											["Alpha"] = 1,
 											["Fade"] = false,
 										}, -- [1]
 										["n"] = 1,
@@ -15135,8 +15137,8 @@ TMWOptDB = {
 							},
 							["SettingsPerView"] = {
 								["bar"] = {
-									["SizeX"] = 528.4,
 									["Icon"] = false,
+									["SizeX"] = 528.4,
 									["SizeY"] = 12,
 								},
 							},
@@ -15189,19 +15191,24 @@ TMWOptDB = {
 								}, -- [8]
 								["n"] = 8,
 							},
-							["GUID"] = "TMW:group:1ToTf=FXnCas",
 							["Point"] = {
 								["y"] = -50,
 								["relativeTo"] = "TMW:group:1TRW5crzGrfW",
 								["point"] = "TOP",
 								["relativePoint"] = "BOTTOM",
 							},
+							["GUID"] = "TMW:group:1ToTf=FXnCas",
 						}, -- [14]
 						{
 							["GUID"] = "TMW:group:1ToW0Zn8i3m8",
 							["Strata"] = "HIGH",
 							["Columns"] = 1,
-							["Scale"] = 0.59,
+							["Point"] = {
+								["y"] = -30,
+								["relativeTo"] = "TMW:group:1To6q47skjGf",
+								["point"] = "LEFT",
+								["relativePoint"] = "LEFT",
+							},
 							["Locked"] = true,
 							["Conditions"] = {
 								{
@@ -15261,7 +15268,6 @@ TMWOptDB = {
 											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONBORDER",
-											["AnimColor"] = "ff000000",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "border_toggle",
@@ -15269,93 +15275,89 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
+											["AnimColor"] = "ff000000",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [1]
 										{
-											["Type"] = "Animations",
 											["Image"] = "28059",
+											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONOVERLAYIMG",
-											["Alpha"] = 1,
+											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
-													["Type"] = "HAPPINESS",
 													["BitFlags"] = 4,
+													["Type"] = "HAPPINESS",
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Event"] = "WCSP",
+											["Alpha"] = 1,
 											["Fade"] = false,
 										}, -- [2]
 										{
-											["Type"] = "Animations",
 											["Image"] = "28084",
+											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONOVERLAYIMG",
-											["Alpha"] = 1,
+											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
-													["Type"] = "HAPPINESS",
 													["BitFlags"] = 1,
+													["Type"] = "HAPPINESS",
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Event"] = "WCSP",
+											["Alpha"] = 1,
 											["Fade"] = false,
 										}, -- [3]
 										{
 											["Type"] = "Animations",
 											["Animation"] = "ICONBORDER",
-											["Image"] = "28084",
+											["Alpha"] = 1,
 											["OnConditionConditions"] = {
 												{
-													["Type"] = "HAPPINESS",
 													["BitFlags"] = 1,
+													["Type"] = "HAPPINESS",
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Alpha"] = 1,
 											["Event"] = "WCSP",
+											["Image"] = "28084",
 										}, -- [4]
 										{
-											["Type"] = "Animations",
 											["Image"] = "23214",
+											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONOVERLAYIMG",
-											["Alpha"] = 1,
+											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
-													["Type"] = "HAPPINESS",
 													["BitFlags"] = 2,
+													["Type"] = "HAPPINESS",
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Event"] = "WCSP",
+											["Alpha"] = 1,
 											["Fade"] = false,
 										}, -- [5]
 										["n"] = 5,
 									},
 									["Conditions"] = {
 										{
-											["Type"] = "EXISTS",
 											["Unit"] = "pet",
+											["Type"] = "EXISTS",
 										}, -- [1]
 										{
-											["Type"] = "ALIVE",
 											["Unit"] = "pet",
+											["Type"] = "ALIVE",
 										}, -- [2]
 										["n"] = 2,
 									},
 									["CustomTex"] = "NONE",
 								}, -- [1]
 							},
-							["Point"] = {
-								["y"] = -30,
-								["relativeTo"] = "TMW:group:1To6q47skjGf",
-								["point"] = "LEFT",
-								["relativePoint"] = "LEFT",
-							},
+							["Scale"] = 0.59,
 						}, -- [15]
 						{
 							["View"] = "bar",
@@ -15367,25 +15369,22 @@ TMWOptDB = {
 								},
 							},
 							["Scale"] = 0.25,
-							["GUID"] = "TMW:group:1ToXtohxkhmd",
+							["Point"] = {
+								["y"] = -17.114990234375,
+								["x"] = 1089.48962402344,
+								["point"] = "TOPLEFT",
+								["relativePoint"] = "TOPLEFT",
+							},
 							["Icons"] = {
 								{
 									["BackdropColor"] = "00333333",
 									["Type"] = "conditionicon",
 									["TimerBar_MiddleColor"] = "00ffff00",
-									["ConditionDur"] = 5,
+									["GUID"] = "TMW:icon:1ToXXbNIIbiY",
 									["BackdropColor_Enable"] = true,
 									["TimerBar_CompleteColor"] = "0000ff00",
-									["TimerBar_EnableColors"] = true,
-									["SettingsPerView"] = {
-										["bar"] = {
-											["TextLayout"] = "icon2",
-											["Texts"] = {
-												"Happiness has [\"DECREASED!\":Red]", -- [1]
-												"Happiness has [\"DECREASED!\":Red]", -- [2]
-											},
-										},
-									},
+									["ConditionDurEnabled"] = true,
+									["TimerBar_StartColor"] = "00ff0000",
 									["OnlyIfCounting"] = true,
 									["Events"] = {
 										{
@@ -15395,17 +15394,25 @@ TMWOptDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
-									["TimerBar_StartColor"] = "00ff0000",
+									["SettingsPerView"] = {
+										["bar"] = {
+											["TextLayout"] = "icon2",
+											["Texts"] = {
+												"Happiness has [\"DECREASED!\":Red]", -- [1]
+												"Happiness has [\"DECREASED!\":Red]", -- [2]
+											},
+										},
+									},
 									["Enabled"] = true,
 									["Conditions"] = {
 										{
-											["Type"] = "HAPPINESS",
 											["BitFlags"] = 3,
+											["Type"] = "HAPPINESS",
 										}, -- [1]
 										["n"] = 1,
 									},
-									["ConditionDurEnabled"] = true,
-									["GUID"] = "TMW:icon:1ToXXbNIIbiY",
+									["TimerBar_EnableColors"] = true,
+									["ConditionDur"] = 5,
 								}, -- [1]
 								{
 									["Enabled"] = true,
@@ -15415,17 +15422,16 @@ TMWOptDB = {
 									["OnlyIfCounting"] = true,
 								}, -- [2]
 							},
-							["Point"] = {
-								["y"] = -17.114990234375,
-								["x"] = 1089.48962402344,
-								["point"] = "TOPLEFT",
-								["relativePoint"] = "TOPLEFT",
-							},
+							["GUID"] = "TMW:group:1ToXtohxkhmd",
 						}, -- [16]
 						{
 							["View"] = "bar",
-							["Scale"] = 1.25617873668671,
 							["Columns"] = 1,
+							["Point"] = {
+								["y"] = -165,
+								["point"] = "TOP",
+								["relativePoint"] = "TOP",
+							},
 							["SettingsPerView"] = {
 								["bar"] = {
 									["SizeX"] = 292.663726806641,
@@ -15445,17 +15451,15 @@ TMWOptDB = {
 									["Enabled"] = true,
 								}, -- [1]
 							},
-							["Point"] = {
-								["y"] = -165,
-								["point"] = "TOP",
-								["relativePoint"] = "TOP",
-							},
+							["Scale"] = 1.25617873668671,
 						}, -- [17]
 						{
 							["GUID"] = "TMW:group:1ToaOwcAiwGJ",
 							["Columns"] = 1,
 							["Scale"] = 1.97506868839264,
-							["Locked"] = true,
+							["Point"] = {
+								["y"] = 114.372060823582,
+							},
 							["Icons"] = {
 								{
 									["Enabled"] = true,
@@ -15466,7 +15470,6 @@ TMWOptDB = {
 											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONBORDER",
-											["AnimColor"] = "ff000000",
 											["OnConditionConditions"] = {
 												{
 													["Name"] = "border_toggle",
@@ -15474,69 +15477,70 @@ TMWOptDB = {
 												}, -- [1]
 												["n"] = 1,
 											},
+											["AnimColor"] = "ff000000",
 											["Event"] = "WCSP",
 											["Fade"] = false,
 										}, -- [1]
 										{
-											["Type"] = "Animations",
 											["Image"] = "28059",
+											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONOVERLAYIMG",
-											["Alpha"] = 1,
+											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
-													["Type"] = "HAPPINESS",
 													["BitFlags"] = 4,
+													["Type"] = "HAPPINESS",
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Event"] = "WCSP",
+											["Alpha"] = 1,
 											["Fade"] = false,
 										}, -- [2]
 										{
-											["Type"] = "Animations",
 											["Image"] = "28084",
+											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONOVERLAYIMG",
-											["Alpha"] = 1,
+											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
-													["Type"] = "HAPPINESS",
 													["BitFlags"] = 1,
+													["Type"] = "HAPPINESS",
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Event"] = "WCSP",
+											["Alpha"] = 1,
 											["Fade"] = false,
 										}, -- [3]
 										{
 											["Type"] = "Animations",
 											["Animation"] = "ICONBORDER",
-											["Image"] = "28084",
+											["Alpha"] = 1,
 											["OnConditionConditions"] = {
 												{
-													["Type"] = "HAPPINESS",
 													["BitFlags"] = 1,
+													["Type"] = "HAPPINESS",
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Alpha"] = 1,
 											["Event"] = "WCSP",
+											["Image"] = "28084",
 										}, -- [4]
 										{
-											["Type"] = "Animations",
 											["Image"] = "23214",
+											["Type"] = "Animations",
 											["Period"] = 0,
 											["Animation"] = "ICONOVERLAYIMG",
-											["Alpha"] = 1,
+											["Event"] = "WCSP",
 											["OnConditionConditions"] = {
 												{
-													["Type"] = "HAPPINESS",
 													["BitFlags"] = 2,
+													["Type"] = "HAPPINESS",
 												}, -- [1]
 												["n"] = 1,
 											},
-											["Event"] = "WCSP",
+											["Alpha"] = 1,
 											["Fade"] = false,
 										}, -- [5]
 										["n"] = 5,
@@ -15550,29 +15554,33 @@ TMWOptDB = {
 									},
 									["Conditions"] = {
 										{
-											["Type"] = "UNITISUNIT",
 											["AndOr"] = "OR",
+											["Type"] = "UNITISUNIT",
 											["Name"] = "pet",
 											["Unit"] = "target",
 										}, -- [1]
 										{
-											["Type"] = "COMBAT",
 											["Level"] = 1,
+											["Type"] = "COMBAT",
 										}, -- [2]
 										["n"] = 2,
 									},
 									["CustomTex"] = "NONE",
 								}, -- [1]
 							},
-							["Point"] = {
-								["y"] = 114.372060823582,
-							},
+							["Locked"] = true,
 						}, -- [18]
 						{
 							["GUID"] = "TMW:group:1ToaQe8RWB82",
 							["Columns"] = 1,
 							["Scale"] = 0.710862457752228,
-							["Locked"] = true,
+							["Point"] = {
+								["y"] = -9.74870521118185e-05,
+								["relativeTo"] = "TMW:group:1ToaOwcAiwGJ",
+								["point"] = "TOP",
+								["relativePoint"] = "BOTTOM",
+								["x"] = 2.33982563919343,
+							},
 							["Icons"] = {
 								{
 									["Enabled"] = true,
@@ -15588,33 +15596,26 @@ TMWOptDB = {
 									},
 									["Conditions"] = {
 										{
-											["Type"] = "UNITISUNIT",
 											["AndOr"] = "OR",
+											["Type"] = "UNITISUNIT",
 											["Name"] = "pet",
 											["Unit"] = "target",
 										}, -- [1]
 										{
-											["Type"] = "COMBAT",
 											["Level"] = 1,
+											["Type"] = "COMBAT",
 										}, -- [2]
 										["n"] = 2,
 									},
 									["CustomTex"] = "NONE",
 								}, -- [1]
 							},
-							["Point"] = {
-								["y"] = -9.74870521118185e-05,
-								["relativeTo"] = "TMW:group:1ToaOwcAiwGJ",
-								["point"] = "TOP",
-								["relativePoint"] = "BOTTOM",
-								["x"] = 2.33982563919343,
-							},
+							["Locked"] = true,
 						}, -- [19]
 					},
 					["NumGroups"] = 19,
 				},
 				["Hunter"] = {
-					["Locked"] = true,
 					["Groups"] = {
 						{
 							["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -15622,56 +15623,64 @@ TMWOptDB = {
 								["y"] = -20,
 								["x"] = -230,
 							},
-							["Name"] = "Other",
 							["Scale"] = 1.5,
+							["TextureName"] = "Details Flat",
 							["Columns"] = 1,
 							["Icons"] = {
 								{
-									["Enabled"] = true,
 									["Type"] = "meta",
 									["Icons"] = {
 										"TMW:icon:1VjwkIslWpyf", -- [1]
 										"TMW:icon:1VjwkIsn7fZp", -- [2]
 									},
+									["Enabled"] = true,
 								}, -- [1]
 							},
-							["TextureName"] = "Details Flat",
+							["Name"] = "Other",
 						}, -- [1]
 						{
-							["GUID"] = "TMW:group:1TeVAjjUoOOh",
+							["Point"] = {
+								["y"] = -5,
+								["point"] = "TOP",
+								["relativePoint"] = "TOP",
+							},
 							["Scale"] = 1,
+							["Locked"] = true,
+							["GUID"] = "TMW:group:1TeVAjjUoOOh",
+							["Columns"] = 20,
+							["Alpha"] = 0,
 							["Name"] = "Hunter Spells",
 							["Icons"] = {
 								{
-									["Enabled"] = true,
-									["Type"] = "buff",
 									["BuffOrDebuff"] = "HARMFUL",
 									["Unit"] = "target",
 									["OnlyMine"] = true,
+									["Type"] = "buff",
 									["Name"] = "Serpent Sting",
+									["Enabled"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "MANA_ABS",
-											["Level"] = 150,
 											["Operator"] = ">",
+											["Level"] = 150,
 										}, -- [1]
 										{
+											["Type"] = "LIBRANGECHECK",
+											["Unit"] = "target",
 											["Operator"] = "<=",
 											["Level"] = 35,
-											["Type"] = "LIBRANGECHECK",
-											["Unit"] = "target",
 										}, -- [2]
 										{
-											["Unit"] = "target",
-											["Level"] = 5,
 											["Type"] = "LIBRANGECHECK",
 											["Operator"] = ">=",
+											["Unit"] = "target",
+											["Level"] = 5,
 										}, -- [3]
 										{
 											["Type"] = "CREATURETYPE",
-											["Level"] = 1,
-											["Name"] = "Elemental; Undead",
 											["Unit"] = "target",
+											["Name"] = "Elemental; Undead",
+											["Level"] = 1,
 										}, -- [4]
 										["n"] = 4,
 									},
@@ -15686,13 +15695,12 @@ TMWOptDB = {
 									},
 								}, -- [1]
 								{
-									["GUID"] = "TMW:icon:1TeVAjjavXC6",
+									["BuffOrDebuff"] = "HARMFUL",
+									["Unit"] = "target",
 									["Type"] = "buff",
 									["ShowTimerText"] = true,
-									["Unit"] = "target",
-									["BuffOrDebuff"] = "HARMFUL",
 									["Name"] = "Hunter's Mark",
-									["Enabled"] = true,
+									["GUID"] = "TMW:icon:1TeVAjjavXC6",
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -15701,39 +15709,39 @@ TMWOptDB = {
 											["Alpha"] = 0.15,
 										}, -- [2]
 									},
+									["Enabled"] = true,
 								}, -- [2]
 								{
-									["Enabled"] = true,
 									["Type"] = "cooldown",
 									["Name"] = "Arcane Shot",
-									["RangeCheck"] = true,
+									["Enabled"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "MANA_ABS",
-											["Level"] = 100,
 											["Operator"] = ">",
+											["Level"] = 100,
 										}, -- [1]
 										{
-											["Unit"] = "target",
-											["Level"] = 35,
 											["Type"] = "LIBRANGECHECK",
 											["Operator"] = "<=",
+											["Unit"] = "target",
+											["Level"] = 35,
 										}, -- [2]
 										{
-											["Unit"] = "target",
-											["Level"] = 5,
 											["Type"] = "LIBRANGECHECK",
 											["Operator"] = ">=",
+											["Unit"] = "target",
+											["Level"] = 5,
 										}, -- [3]
 										["n"] = 3,
 									},
 									["GUID"] = "TMW:icon:1V6lsULwY3_Y",
+									["RangeCheck"] = true,
 								}, -- [3]
 								{
-									["GUID"] = "TMW:icon:1V6noP8ARoel",
 									["Type"] = "buff",
 									["Name"] = "Aspect of the Hawk",
-									["Enabled"] = true,
+									["GUID"] = "TMW:icon:1V6noP8ARoel",
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -15742,25 +15750,26 @@ TMWOptDB = {
 											["Alpha"] = 1,
 										}, -- [2]
 									},
+									["Enabled"] = true,
 								}, -- [4]
 								{
-									["Enabled"] = true,
 									["Type"] = "reactive",
 									["Name"] = "Mongoose Bite",
+									["Enabled"] = true,
+									["GUID"] = "TMW:icon:1Y4IE=LQhFW4",
 									["Conditions"] = {
 										{
-											["Name"] = "Mongoose Bite",
 											["Type"] = "SPELLCD",
+											["Name"] = "Mongoose Bite",
 										}, -- [1]
 										{
-											["Unit"] = "target",
-											["Level"] = 5,
 											["Type"] = "LIBRANGECHECK",
 											["Operator"] = "<=",
+											["Unit"] = "target",
+											["Level"] = 5,
 										}, -- [2]
 										["n"] = 2,
 									},
-									["GUID"] = "TMW:icon:1Y4IE=LQhFW4",
 								}, -- [5]
 								nil, -- [6]
 								nil, -- [7]
@@ -15775,27 +15784,11 @@ TMWOptDB = {
 								nil, -- [16]
 								nil, -- [17]
 								{
-									["GUID"] = "TMW:icon:1X=OmHlbqz67",
+									["Unit"] = "pet",
 									["Type"] = "cooldown",
 									["Name"] = "Mend Pet",
-									["Unit"] = "pet",
 									["ManaCheck"] = true,
-									["Conditions"] = {
-										{
-											["Operator"] = "<=",
-											["Level"] = 45,
-											["Type"] = "HEALTH",
-											["Unit"] = "pet",
-										}, -- [1]
-										{
-											["Operator"] = "<=",
-											["Type"] = "BUFFDUR",
-											["Name"] = "Mend Pet",
-											["Unit"] = "pet",
-										}, -- [2]
-										["n"] = 2,
-									},
-									["Enabled"] = true,
+									["GUID"] = "TMW:icon:1X=OmHlbqz67",
 									["States"] = {
 										nil, -- [1]
 										nil, -- [2]
@@ -15804,77 +15797,86 @@ TMWOptDB = {
 											["Alpha"] = 0,
 										}, -- [4]
 									},
+									["Conditions"] = {
+										{
+											["Type"] = "HEALTH",
+											["Unit"] = "pet",
+											["Operator"] = "<=",
+											["Level"] = 45,
+										}, -- [1]
+										{
+											["Type"] = "BUFFDUR",
+											["Unit"] = "pet",
+											["Operator"] = "<=",
+											["Name"] = "Mend Pet",
+										}, -- [2]
+										["n"] = 2,
+									},
+									["Enabled"] = true,
 								}, -- [18]
 								{
-									["Enabled"] = true,
+									["BuffOrDebuff"] = "HARMFUL",
+									["Unit"] = "pet",
 									["Type"] = "buff",
 									["ShowTimerText"] = true,
-									["Name"] = "Crystal Gaze",
-									["BuffOrDebuff"] = "HARMFUL",
+									["Enabled"] = true,
 									["GUID"] = "TMW:icon:1VjwkIslWpyf",
 									["CustomTex"] = "3635",
-									["Unit"] = "pet",
+									["Name"] = "Crystal Gaze",
 								}, -- [19]
 								{
-									["GUID"] = "TMW:icon:1VjwkIsn7fZp",
+									["Unit"] = "pet",
 									["Type"] = "buff",
 									["ShowTimerText"] = true,
-									["Enabled"] = true,
 									["Name"] = "Frenzy Effect",
+									["GUID"] = "TMW:icon:1VjwkIsn7fZp",
 									["CustomTex"] = "19615",
-									["Unit"] = "pet",
+									["Enabled"] = true,
 								}, -- [20]
-							},
-							["Locked"] = true,
-							["Columns"] = 20,
-							["Alpha"] = 0,
-							["Point"] = {
-								["y"] = -5,
-								["point"] = "TOP",
-								["relativePoint"] = "TOP",
 							},
 						}, -- [2]
 						{
-							["GUID"] = "TMW:group:1TeVDtajUwqa",
 							["Point"] = {
 								["y"] = -88,
 								["x"] = 4.06901041666667e-05,
 							},
-							["Name"] = "Hunter Rotation",
 							["Scale"] = 1.5,
 							["Locked"] = true,
+							["OnlyInCombat"] = true,
 							["Columns"] = 3,
 							["Icons"] = {
 								{
-									["Enabled"] = true,
 									["Type"] = "meta",
 									["Icons"] = {
 										"TMW:icon:1V6noP8ARoel", -- [1]
 										"TMW:icon:1TeVAjjavXC6", -- [2]
 									},
+									["Enabled"] = true,
 								}, -- [1]
 								{
-									["Enabled"] = true,
 									["Type"] = "meta",
 									["Icons"] = {
 										"TMW:icon:1Y4IE=LQhFW4", -- [1]
 										"TMW:icon:1TeVAjjXQ0WB", -- [2]
 										"TMW:icon:1V6lsULwY3_Y", -- [3]
 									},
+									["Enabled"] = true,
 								}, -- [2]
 								{
-									["Enabled"] = true,
 									["Type"] = "meta",
 									["Icons"] = {
 										"TMW:icon:1X=OmHlbqz67", -- [1]
 									},
+									["Enabled"] = true,
 								}, -- [3]
 							},
-							["OnlyInCombat"] = true,
+							["Name"] = "Hunter Rotation",
+							["GUID"] = "TMW:group:1TeVDtajUwqa",
 						}, -- [3]
 					},
-					["Version"] = 91200,
 					["NumGroups"] = 3,
+					["Version"] = 91200,
+					["Locked"] = true,
 				},
 				["Warrior"] = {
 					["Locked"] = true,
@@ -15957,8 +15959,8 @@ TMWOptDB = {
 							["Name"] = "Warrior Rotation",
 							["SettingsPerView"] = {
 								["icon"] = {
-									["BorderInset"] = false,
 									["BorderColor"] = "00000000",
+									["BorderInset"] = false,
 								},
 							},
 							["Locked"] = true,
@@ -15972,8 +15974,15 @@ TMWOptDB = {
 						}, -- [1]
 						{
 							["GUID"] = "TMW:group:1TQvxnAfbGyU",
-							["Locked"] = true,
 							["Columns"] = 20,
+							["Point"] = {
+								["y"] = -5,
+								["point"] = "TOP",
+								["relativePoint"] = "TOP",
+							},
+							["Alpha"] = 0,
+							["Scale"] = 1,
+							["Name"] = "Warrior Spells",
 							["Icons"] = {
 								{
 									["Enabled"] = true,
@@ -15989,10 +15998,10 @@ TMWOptDB = {
 											["Operator"] = ">=",
 										}, -- [1]
 										{
-											["Operator"] = ">=",
+											["Unit"] = "target",
 											["Level"] = 20,
 											["Type"] = "HEALTH",
-											["Unit"] = "target",
+											["Operator"] = ">=",
 										}, -- [2]
 										{
 											["Type"] = "CREATURETYPE",
@@ -16004,10 +16013,10 @@ TMWOptDB = {
 											["Type"] = "STANCE",
 										}, -- [4]
 										{
-											["Operator"] = ">=",
+											["Unit"] = "target",
 											["Level"] = 1000,
 											["Type"] = "HEALTH_ABS",
-											["Unit"] = "target",
+											["Operator"] = ">=",
 										}, -- [5]
 										["n"] = 5,
 									},
@@ -16032,8 +16041,8 @@ TMWOptDB = {
 											["Operator"] = ">=",
 										}, -- [1]
 										{
-											["Type"] = "BUFFDUR",
 											["Level"] = 5,
+											["Type"] = "BUFFDUR",
 											["Name"] = "Battle Shout",
 											["Operator"] = "<=",
 										}, -- [2]
@@ -16051,14 +16060,14 @@ TMWOptDB = {
 											["Type"] = "HEALTH",
 											["PrtsBefore"] = 1,
 											["Level"] = 20,
-											["Operator"] = ">=",
 											["Unit"] = "target",
+											["Operator"] = ">=",
 										}, -- [1]
 										{
-											["Name"] = "Defensive Stance",
 											["AndOr"] = "OR",
-											["PrtsAfter"] = 1,
 											["Type"] = "STANCE",
+											["PrtsAfter"] = 1,
+											["Name"] = "Defensive Stance",
 										}, -- [2]
 										{
 											["Type"] = "SPELLCD",
@@ -16098,14 +16107,21 @@ TMWOptDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
-									["GUID"] = "TMW:icon:1TU=hLnlwyeY",
 									["ShowTimerText"] = true,
+									["GUID"] = "TMW:icon:1TU=hLnlwyeY",
 								}, -- [4]
 								{
 									["Enabled"] = true,
 									["Type"] = "buff",
 									["Name"] = "Demoralizing Shout",
-									["Unit"] = "target",
+									["States"] = {
+										{
+											["Alpha"] = 0,
+										}, -- [1]
+										{
+											["Alpha"] = 1,
+										}, -- [2]
+									},
 									["BuffOrDebuff"] = "HARMFUL",
 									["Conditions"] = {
 										{
@@ -16120,14 +16136,7 @@ TMWOptDB = {
 										["n"] = 2,
 									},
 									["GUID"] = "TMW:icon:1TWZdpV26rm5",
-									["States"] = {
-										{
-											["Alpha"] = 0,
-										}, -- [1]
-										{
-											["Alpha"] = 1,
-										}, -- [2]
-									},
+									["Unit"] = "target",
 								}, -- [5]
 								{
 									["Enabled"] = true,
@@ -16143,29 +16152,30 @@ TMWOptDB = {
 											},
 										},
 									},
+									["HideIfNoUnits"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "DEBUFFSTACKS",
 											["Name"] = "Sunder Armor",
 											["Level"] = 2,
-											["Operator"] = "<",
 											["Unit"] = "target",
+											["Operator"] = "<",
 										}, -- [1]
 										{
-											["Type"] = "ALIVE",
 											["Unit"] = "target",
+											["Type"] = "ALIVE",
 										}, -- [2]
 										{
-											["Unit"] = "target",
+											["Operator"] = ">=",
 											["Level"] = 20,
 											["Type"] = "HEALTH",
-											["Operator"] = ">=",
+											["Unit"] = "target",
 										}, -- [3]
 										{
-											["Operator"] = ">=",
+											["Unit"] = "target",
 											["Level"] = 1000,
 											["Type"] = "HEALTH_ABS",
-											["Unit"] = "target",
+											["Operator"] = ">=",
 										}, -- [4]
 										{
 											["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and IsSpellInRange(\"Cleave\", \"nameplate\" .. i) == 1 and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 1 then\n    return false\nelse\n    return true\nend",
@@ -16173,7 +16183,6 @@ TMWOptDB = {
 										}, -- [5]
 										["n"] = 5,
 									},
-									["HideIfNoUnits"] = true,
 									["GUID"] = "TMW:icon:1TYYu4EDbfSz",
 									["States"] = {
 										nil, -- [1]
@@ -16244,14 +16253,14 @@ TMWOptDB = {
 											["Type"] = "HEALTH",
 											["PrtsBefore"] = 1,
 											["Level"] = 20,
-											["Operator"] = ">=",
 											["Unit"] = "target",
+											["Operator"] = ">=",
 										}, -- [1]
 										{
-											["Name"] = "Defensive Stance",
 											["AndOr"] = "OR",
-											["PrtsAfter"] = 1,
 											["Type"] = "STANCE",
+											["PrtsAfter"] = 1,
+											["Name"] = "Defensive Stance",
 										}, -- [2]
 										{
 											["Type"] = "SPELLCD",
@@ -16285,20 +16294,20 @@ TMWOptDB = {
 											["Type"] = "STANCE",
 										}, -- [1]
 										{
-											["Unit"] = "target",
+											["Operator"] = ">",
 											["Level"] = 20,
 											["Type"] = "HEALTH",
-											["Operator"] = ">",
+											["Unit"] = "target",
 										}, -- [2]
 										{
-											["Type"] = "EXISTS",
 											["Unit"] = "target",
+											["Type"] = "EXISTS",
 										}, -- [3]
 										{
-											["Unit"] = "target",
+											["Operator"] = "<=",
 											["Level"] = 10,
 											["Type"] = "LIBRANGECHECK",
-											["Operator"] = "<=",
+											["Unit"] = "target",
 										}, -- [4]
 										{
 											["PrtsBefore"] = 1,
@@ -16395,10 +16404,10 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["Conditions"] = {
 										{
-											["Operator"] = ">",
+											["Unit"] = "target",
 											["Level"] = 20,
 											["Type"] = "HEALTH",
-											["Unit"] = "target",
+											["Operator"] = ">",
 										}, -- [1]
 										{
 											["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and IsSpellInRange(\"Cleave\", \"nameplate\" .. i) == 1 and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 1 then\n    return false\nelse\n    return true\nend",
@@ -16474,14 +16483,7 @@ TMWOptDB = {
 									["GUID"] = "TMW:icon:1TWYMfcUzmi6",
 								},
 							},
-							["Scale"] = 1,
-							["Name"] = "Warrior Spells",
-							["Alpha"] = 0,
-							["Point"] = {
-								["y"] = -5,
-								["point"] = "TOP",
-								["relativePoint"] = "TOP",
-							},
+							["Locked"] = true,
 						}, -- [2]
 						{
 							["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -16527,8 +16529,8 @@ TMWOptDB = {
 									["Type"] = "buff",
 									["Name"] = "Blood Fury",
 									["BuffOrDebuff"] = "HARMFUL",
-									["ShowTimerText"] = true,
 									["Enabled"] = true,
+									["ShowTimerText"] = true,
 								}, -- [1]
 								{
 									["Enabled"] = true,
@@ -16539,16 +16541,16 @@ TMWOptDB = {
 											["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
 										},
 									},
-									["GUID"] = "TMW:icon:1TZvNvgAkfmq",
 									["Name"] = "Enrage",
+									["GUID"] = "TMW:icon:1TZvNvgAkfmq",
 								}, -- [2]
 								{
 									["GUID"] = "TMW:icon:1Xx3hMFQR0cV",
 									["Type"] = "buff",
 									["Name"] = "Recently Bandaged",
 									["BuffOrDebuff"] = "HARMFUL",
-									["ShowTimerText"] = true,
 									["Enabled"] = true,
+									["ShowTimerText"] = true,
 								}, -- [3]
 								[18] = {
 									["Enabled"] = true,
@@ -16587,28 +16589,28 @@ TMWOptDB = {
 									["GUID"] = "TMW:icon:1VagxKm_xQWz",
 									["Type"] = "buff",
 									["CBarOffs"] = 2,
-									["Name"] = "Renew",
+									["Enabled"] = true,
 									["ShowTimerText"] = true,
 									["ShowCBar"] = true,
-									["Enabled"] = true,
+									["Name"] = "Renew",
 								},
 							},
 							["TextureName"] = "Details Flat",
 							["Name"] = "General Buffs/Debbufs",
 							["Locked"] = true,
-							["Columns"] = 20,
 							["Alpha"] = 0,
+							["Columns"] = 20,
 						}, -- [4]
 						{
 							["Enabled"] = false,
 							["Columns"] = 1,
 							["Scale"] = 1,
-							["Locked"] = true,
-							["GUID"] = "TMW:group:1V917nUku0KT",
 							["Point"] = {
 								["y"] = -140,
 								["x"] = 42.500244140625,
 							},
+							["GUID"] = "TMW:group:1V917nUku0KT",
+							["Locked"] = true,
 						}, -- [5]
 					},
 					["Version"] = 91200,
@@ -16694,8 +16696,8 @@ TMWOptDB = {
 							["Name"] = "Warrior Rotation",
 							["SettingsPerView"] = {
 								["icon"] = {
-									["BorderColor"] = "00000000",
 									["BorderInset"] = false,
+									["BorderColor"] = "00000000",
 								},
 							},
 							["Locked"] = true,
@@ -16709,12 +16711,11 @@ TMWOptDB = {
 						}, -- [1]
 						{
 							["GUID"] = "TMW:group:1TQvxnAfbGyU",
-							["Point"] = {
-								["y"] = -5,
-								["point"] = "TOP",
-								["relativePoint"] = "TOP",
-							},
+							["Scale"] = 1,
 							["Name"] = "Warrior Spells",
+							["Alpha"] = 0,
+							["Locked"] = true,
+							["Columns"] = 20,
 							["Icons"] = {
 								{
 									["GUID"] = "TMW:icon:1TQv_LtTwAae",
@@ -16730,10 +16731,10 @@ TMWOptDB = {
 											["Operator"] = ">=",
 										}, -- [1]
 										{
-											["Unit"] = "target",
+											["Operator"] = ">=",
 											["Level"] = 20,
 											["Type"] = "HEALTH",
-											["Operator"] = ">=",
+											["Unit"] = "target",
 										}, -- [2]
 										{
 											["Type"] = "CREATURETYPE",
@@ -16792,14 +16793,14 @@ TMWOptDB = {
 											["Type"] = "HEALTH",
 											["PrtsBefore"] = 1,
 											["Level"] = 20,
-											["Unit"] = "target",
 											["Operator"] = ">=",
+											["Unit"] = "target",
 										}, -- [2]
 										{
-											["AndOr"] = "OR",
-											["Type"] = "STANCE",
 											["PrtsAfter"] = 1,
+											["Type"] = "STANCE",
 											["Name"] = "Defensive Stance",
+											["AndOr"] = "OR",
 										}, -- [3]
 										["n"] = 3,
 									},
@@ -16822,21 +16823,14 @@ TMWOptDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
-									["ShowTimerText"] = true,
 									["GUID"] = "TMW:icon:1TU=hLnlwyeY",
+									["ShowTimerText"] = true,
 								}, -- [4]
 								{
 									["Enabled"] = true,
 									["Type"] = "buff",
 									["Name"] = "Demoralizing Shout",
-									["States"] = {
-										{
-											["Alpha"] = 0,
-										}, -- [1]
-										{
-											["Alpha"] = 1,
-										}, -- [2]
-									},
+									["Unit"] = "target",
 									["BuffOrDebuff"] = "HARMFUL",
 									["Conditions"] = {
 										{
@@ -16851,7 +16845,14 @@ TMWOptDB = {
 										["n"] = 2,
 									},
 									["GUID"] = "TMW:icon:1TWZdpV26rm5",
-									["Unit"] = "target",
+									["States"] = {
+										{
+											["Alpha"] = 0,
+										}, -- [1]
+										{
+											["Alpha"] = 1,
+										}, -- [2]
+									},
 								}, -- [5]
 								{
 									["GUID"] = "TMW:icon:1TYYu4EDbfSz",
@@ -16869,10 +16870,10 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["Conditions"] = {
 										{
-											["Unit"] = "target",
+											["Operator"] = "<=",
 											["Level"] = 5,
 											["Type"] = "DEBUFFSTACKS",
-											["Operator"] = "<=",
+											["Unit"] = "target",
 										}, -- [1]
 										["n"] = 1,
 									},
@@ -16934,10 +16935,10 @@ TMWOptDB = {
 											["Operator"] = ">=",
 										}, -- [1]
 										{
-											["Unit"] = "target",
+											["Operator"] = ">=",
 											["Level"] = 20,
 											["Type"] = "HEALTH",
-											["Operator"] = ">=",
+											["Unit"] = "target",
 										}, -- [2]
 										["n"] = 2,
 									},
@@ -16957,20 +16958,20 @@ TMWOptDB = {
 											["Type"] = "STANCE",
 										}, -- [2]
 										{
-											["Unit"] = "target",
+											["Operator"] = ">",
 											["Level"] = 20,
 											["Type"] = "HEALTH",
-											["Operator"] = ">",
+											["Unit"] = "target",
 										}, -- [3]
 										{
-											["Unit"] = "target",
 											["Type"] = "EXISTS",
+											["Unit"] = "target",
 										}, -- [4]
 										{
-											["Unit"] = "target",
+											["Operator"] = "<=",
 											["Level"] = 10,
 											["Type"] = "LIBRANGECHECK",
-											["Operator"] = "<=",
+											["Unit"] = "target",
 										}, -- [5]
 										["n"] = 5,
 									},
@@ -17029,10 +17030,10 @@ TMWOptDB = {
 											["Operator"] = ">=",
 										}, -- [1]
 										{
-											["Unit"] = "target",
+											["Operator"] = ">",
 											["Level"] = 20,
 											["Type"] = "HEALTH",
-											["Operator"] = ">",
+											["Unit"] = "target",
 										}, -- [2]
 										["n"] = 2,
 									},
@@ -17056,10 +17057,11 @@ TMWOptDB = {
 									["GUID"] = "TMW:icon:1TWYMfcUzmi6",
 								},
 							},
-							["Scale"] = 1,
-							["Columns"] = 20,
-							["Alpha"] = 0,
-							["Locked"] = true,
+							["Point"] = {
+								["y"] = -5,
+								["point"] = "TOP",
+								["relativePoint"] = "TOP",
+							},
 						}, -- [2]
 						{
 							["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -17099,14 +17101,19 @@ TMWOptDB = {
 							["TextureName"] = "Details Flat",
 							["Name"] = "General Buffs/Debbufs",
 							["Locked"] = true,
+							["Point"] = {
+								["y"] = -40,
+								["point"] = "TOP",
+								["relativePoint"] = "TOP",
+							},
 							["Icons"] = {
 								{
 									["GUID"] = "TMW:icon:1TWYSTcSCl0z",
 									["Type"] = "buff",
 									["Name"] = "Blood Fury",
 									["BuffOrDebuff"] = "HARMFUL",
-									["Enabled"] = true,
 									["ShowTimerText"] = true,
+									["Enabled"] = true,
 								}, -- [1]
 								{
 									["Enabled"] = true,
@@ -17117,16 +17124,16 @@ TMWOptDB = {
 											["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
 										},
 									},
-									["ShowTimerText"] = true,
 									["GUID"] = "TMW:icon:1TZvNvgAkfmq",
+									["ShowTimerText"] = true,
 								}, -- [2]
 								{
 									["GUID"] = "TMW:icon:1Xx3hMFQR0cV",
 									["Type"] = "buff",
 									["Name"] = "Recently Bandaged",
 									["BuffOrDebuff"] = "HARMFUL",
-									["Enabled"] = true,
 									["ShowTimerText"] = true,
+									["Enabled"] = true,
 								}, -- [3]
 								[18] = {
 									["Enabled"] = true,
@@ -17162,28 +17169,23 @@ TMWOptDB = {
 									["GUID"] = "TMW:icon:1VagxKm_xQWz",
 									["Type"] = "buff",
 									["CBarOffs"] = 2,
-									["Enabled"] = true,
+									["Name"] = "Renew",
 									["ShowTimerText"] = true,
 									["ShowCBar"] = true,
-									["Name"] = "Renew",
+									["Enabled"] = true,
 								},
-							},
-							["Point"] = {
-								["y"] = -40,
-								["point"] = "TOP",
-								["relativePoint"] = "TOP",
 							},
 						}, -- [4]
 						{
 							["Enabled"] = false,
 							["Columns"] = 1,
 							["Scale"] = 1,
+							["Locked"] = true,
+							["GUID"] = "TMW:group:1V917nUku0KT",
 							["Point"] = {
 								["y"] = -140,
 								["x"] = 42.500244140625,
 							},
-							["GUID"] = "TMW:group:1V917nUku0KT",
-							["Locked"] = true,
 						}, -- [5]
 					},
 				},
@@ -17196,20 +17198,20 @@ TMWOptDB = {
 						}, -- [1]
 					},
 				},
-				["Testxv - Golemagg"] = {
+				["Battlearm - Golemagg"] = {
 					["Locked"] = true,
-					["Version"] = 86907,
-					["Groups"] = {
-						{
-							["GUID"] = "TMW:group:1VWiCxYSqwKw",
-						}, -- [1]
-					},
-				},
-				["Pitchwise - Dreadnaught"] = {
 					["Version"] = 91200,
 					["Groups"] = {
 						{
-							["GUID"] = "TMW:group:1Xm47LbdEYcq",
+							["GUID"] = "TMW:group:1Vbhru5eED7w",
+						}, -- [1]
+					},
+				},
+				["Mxym - Golemagg"] = {
+					["Version"] = 86907,
+					["Groups"] = {
+						{
+							["GUID"] = "TMW:group:1V9lxa5qigKR",
 						}, -- [1]
 					},
 				},
@@ -17229,184 +17231,6 @@ TMWOptDB = {
 							["GUID"] = "TMW:group:1V9nWrIIEiys",
 						}, -- [1]
 					},
-				},
-				["Moolatz - Golemagg"] = {
-					["Version"] = 91200,
-					["Groups"] = {
-						{
-							["GUID"] = "TMW:group:1XwcshcBUCEg",
-						}, -- [1]
-					},
-				},
-				["Augustin - Golemagg"] = {
-					["Version"] = 86907,
-					["Groups"] = {
-						{
-							["GUID"] = "TMW:group:1VAdMpuRA5RP",
-						}, -- [1]
-					},
-				},
-				["Priest"] = {
-					["Groups"] = {
-						{
-							["GUID"] = "TMW:group:1TWYPj24VzCn",
-							["Scale"] = 1.5,
-							["TextureName"] = "Details Flat",
-							["Columns"] = 1,
-							["Icons"] = {
-								{
-									["Type"] = "meta",
-									["Icons"] = {
-										"TMW:icon:1VjwkIsn7fZp", -- [1]
-									},
-									["Enabled"] = true,
-								}, -- [1]
-							},
-							["Name"] = "Other",
-							["Point"] = {
-								["y"] = -20,
-								["x"] = -230,
-							},
-						}, -- [1]
-						{
-							["Point"] = {
-								["y"] = -5,
-								["point"] = "TOP",
-								["relativePoint"] = "TOP",
-							},
-							["Scale"] = 1,
-							["Locked"] = true,
-							["GUID"] = "TMW:group:1TeVAjjUoOOh",
-							["Columns"] = 20,
-							["Icons"] = {
-								{
-									["BuffOrDebuff"] = "HARMFUL",
-									["Unit"] = "target",
-									["OnlyMine"] = true,
-									["Type"] = "buff",
-									["Name"] = "Serpent Sting",
-									["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
-									["States"] = {
-										{
-											["Alpha"] = 0,
-										}, -- [1]
-										{
-											["Alpha"] = 1,
-										}, -- [2]
-									},
-									["Conditions"] = {
-										{
-											["Type"] = "MANA_ABS",
-											["Operator"] = ">",
-											["Level"] = 100,
-										}, -- [1]
-										{
-											["Type"] = "LIBRANGECHECK",
-											["Unit"] = "target",
-											["Operator"] = "<=",
-											["Level"] = 35,
-										}, -- [2]
-										["n"] = 2,
-									},
-									["Enabled"] = true,
-								}, -- [1]
-								{
-									["BuffOrDebuff"] = "HARMFUL",
-									["Unit"] = "target",
-									["Type"] = "buff",
-									["Name"] = "Hunter's Mark",
-									["ShowTimerText"] = true,
-									["GUID"] = "TMW:icon:1TeVAjjavXC6",
-									["States"] = {
-										{
-											["Alpha"] = 0,
-										}, -- [1]
-										{
-											["Alpha"] = 0.15,
-										}, -- [2]
-									},
-									["Enabled"] = true,
-								}, -- [2]
-								{
-									["Type"] = "cooldown",
-									["Name"] = "Arcane Shot",
-									["Enabled"] = true,
-									["Conditions"] = {
-										{
-											["Type"] = "MANA_ABS",
-											["Operator"] = ">",
-											["Level"] = 100,
-										}, -- [1]
-										["n"] = 1,
-									},
-									["GUID"] = "TMW:icon:1V6lsULwY3_Y",
-									["RangeCheck"] = true,
-								}, -- [3]
-								{
-									["Type"] = "buff",
-									["Name"] = "Aspect of the Hawk",
-									["GUID"] = "TMW:icon:1V6noP8ARoel",
-									["States"] = {
-										{
-											["Alpha"] = 0,
-										}, -- [1]
-										{
-											["Alpha"] = 1,
-										}, -- [2]
-									},
-									["Enabled"] = true,
-								}, -- [4]
-								[19] = {
-									["BuffOrDebuff"] = "HARMFUL",
-									["Unit"] = "pet",
-									["Type"] = "buff",
-									["Name"] = "Crystal Gaze",
-									["ShowTimerText"] = true,
-									["GUID"] = "TMW:icon:1VjwkIslWpyf",
-									["Enabled"] = true,
-								},
-								[20] = {
-									["BuffOrDebuff"] = "HARMFUL",
-									["Type"] = "buff",
-									["Name"] = "Weakened Soul",
-									["ShowTimerText"] = true,
-									["GUID"] = "TMW:icon:1VjwkIsn7fZp",
-									["Enabled"] = true,
-								},
-							},
-							["Name"] = "Hunter Spells",
-							["Alpha"] = 0,
-						}, -- [2]
-						{
-							["Point"] = {
-								["y"] = -88,
-								["x"] = 4.06901041666667e-05,
-							},
-							["Scale"] = 1.5,
-							["Locked"] = true,
-							["OnlyInCombat"] = true,
-							["Columns"] = 3,
-							["Icons"] = {
-								{
-									["Type"] = "meta",
-									["Icons"] = {
-										"TMW:icon:1V6noP8ARoel", -- [1]
-									},
-								}, -- [1]
-								{
-									["Type"] = "meta",
-									["Icons"] = {
-										"TMW:icon:1V6lsULwY3_Y", -- [1]
-									},
-								}, -- [2]
-							},
-							["Name"] = "Hunter Rotation",
-							["GUID"] = "TMW:group:1TeVDtajUwqa",
-						}, -- [3]
-					},
-					["NumGroups"] = 3,
-					["Version"] = 91200,
-					["Locked"] = true,
 				},
 				["Druid"] = {
 					["Locked"] = true,
@@ -17430,15 +17254,12 @@ TMWOptDB = {
 						}, -- [1]
 						{
 							["GUID"] = "TMW:group:1TeVAjjUoOOh",
-							["Scale"] = 1,
 							["Point"] = {
 								["y"] = -5,
 								["point"] = "TOP",
 								["relativePoint"] = "TOP",
 							},
-							["Alpha"] = 0,
-							["Locked"] = true,
-							["Name"] = "Druid Spells",
+							["Columns"] = 20,
 							["Icons"] = {
 								{
 									["Enabled"] = true,
@@ -17490,8 +17311,6 @@ TMWOptDB = {
 									["Enabled"] = true,
 									["Type"] = "buff",
 									["BuffOrDebuff"] = "HARMFUL",
-									["Unit"] = "target",
-									["GUID"] = "TMW:icon:1V6noP8ARoel",
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -17500,19 +17319,24 @@ TMWOptDB = {
 											["Alpha"] = 1,
 										}, -- [2]
 									},
+									["GUID"] = "TMW:icon:1V6noP8ARoel",
+									["Unit"] = "target",
 								}, -- [4]
 							},
-							["Columns"] = 20,
+							["Locked"] = true,
+							["Name"] = "Druid Spells",
+							["Alpha"] = 0,
+							["Scale"] = 1,
 						}, -- [2]
 						{
 							["GUID"] = "TMW:group:1TeVDtajUwqa",
+							["Name"] = "Rotation",
 							["Point"] = {
 								["y"] = -88,
 								["x"] = 4.06901041666667e-05,
 							},
-							["Name"] = "Rotation",
-							["Scale"] = 1.5,
 							["Locked"] = true,
+							["Scale"] = 1.5,
 							["Columns"] = 3,
 							["Icons"] = {
 								{
@@ -17528,20 +17352,198 @@ TMWOptDB = {
 					["Version"] = 91200,
 					["NumGroups"] = 3,
 				},
-				["Mxym - Golemagg"] = {
+				["Augustin - Golemagg"] = {
 					["Version"] = 86907,
 					["Groups"] = {
 						{
-							["GUID"] = "TMW:group:1V9lxa5qigKR",
+							["GUID"] = "TMW:group:1VAdMpuRA5RP",
 						}, -- [1]
 					},
 				},
-				["Battlearm - Golemagg"] = {
+				["Priest"] = {
 					["Locked"] = true,
+					["NumGroups"] = 3,
+					["Groups"] = {
+						{
+							["GUID"] = "TMW:group:1TWYPj24VzCn",
+							["Columns"] = 1,
+							["Point"] = {
+								["y"] = -20,
+								["x"] = -230,
+							},
+							["Scale"] = 1.5,
+							["Name"] = "Other",
+							["Icons"] = {
+								{
+									["Enabled"] = true,
+									["Type"] = "meta",
+									["Icons"] = {
+										"TMW:icon:1VjwkIsn7fZp", -- [1]
+									},
+								}, -- [1]
+							},
+							["TextureName"] = "Details Flat",
+						}, -- [1]
+						{
+							["GUID"] = "TMW:group:1TeVAjjUoOOh",
+							["Locked"] = true,
+							["Point"] = {
+								["y"] = -5,
+								["point"] = "TOP",
+								["relativePoint"] = "TOP",
+							},
+							["Alpha"] = 0,
+							["Scale"] = 1,
+							["Columns"] = 20,
+							["Icons"] = {
+								{
+									["Enabled"] = true,
+									["Type"] = "buff",
+									["BuffOrDebuff"] = "HARMFUL",
+									["Unit"] = "target",
+									["OnlyMine"] = true,
+									["Name"] = "Serpent Sting",
+									["Conditions"] = {
+										{
+											["Type"] = "MANA_ABS",
+											["Level"] = 100,
+											["Operator"] = ">",
+										}, -- [1]
+										{
+											["Unit"] = "target",
+											["Level"] = 35,
+											["Type"] = "LIBRANGECHECK",
+											["Operator"] = "<=",
+										}, -- [2]
+										["n"] = 2,
+									},
+									["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
+									["States"] = {
+										{
+											["Alpha"] = 0,
+										}, -- [1]
+										{
+											["Alpha"] = 1,
+										}, -- [2]
+									},
+								}, -- [1]
+								{
+									["GUID"] = "TMW:icon:1TeVAjjavXC6",
+									["Type"] = "buff",
+									["ShowTimerText"] = true,
+									["Unit"] = "target",
+									["BuffOrDebuff"] = "HARMFUL",
+									["Name"] = "Hunter's Mark",
+									["Enabled"] = true,
+									["States"] = {
+										{
+											["Alpha"] = 0,
+										}, -- [1]
+										{
+											["Alpha"] = 0.15,
+										}, -- [2]
+									},
+								}, -- [2]
+								{
+									["Enabled"] = true,
+									["Type"] = "cooldown",
+									["Name"] = "Arcane Shot",
+									["RangeCheck"] = true,
+									["Conditions"] = {
+										{
+											["Type"] = "MANA_ABS",
+											["Level"] = 100,
+											["Operator"] = ">",
+										}, -- [1]
+										["n"] = 1,
+									},
+									["GUID"] = "TMW:icon:1V6lsULwY3_Y",
+								}, -- [3]
+								{
+									["GUID"] = "TMW:icon:1V6noP8ARoel",
+									["Type"] = "buff",
+									["Name"] = "Aspect of the Hawk",
+									["Enabled"] = true,
+									["States"] = {
+										{
+											["Alpha"] = 0,
+										}, -- [1]
+										{
+											["Alpha"] = 1,
+										}, -- [2]
+									},
+								}, -- [4]
+								[19] = {
+									["GUID"] = "TMW:icon:1VjwkIslWpyf",
+									["Type"] = "buff",
+									["ShowTimerText"] = true,
+									["BuffOrDebuff"] = "HARMFUL",
+									["Enabled"] = true,
+									["Name"] = "Crystal Gaze",
+									["Unit"] = "pet",
+								},
+								[20] = {
+									["GUID"] = "TMW:icon:1VjwkIsn7fZp",
+									["Type"] = "buff",
+									["ShowTimerText"] = true,
+									["BuffOrDebuff"] = "HARMFUL",
+									["Name"] = "Weakened Soul",
+									["Enabled"] = true,
+								},
+							},
+							["Name"] = "Hunter Spells",
+						}, -- [2]
+						{
+							["GUID"] = "TMW:group:1TeVDtajUwqa",
+							["Point"] = {
+								["y"] = -88,
+								["x"] = 4.06901041666667e-05,
+							},
+							["Name"] = "Hunter Rotation",
+							["Scale"] = 1.5,
+							["Locked"] = true,
+							["Columns"] = 3,
+							["Icons"] = {
+								{
+									["Icons"] = {
+										"TMW:icon:1V6noP8ARoel", -- [1]
+									},
+									["Type"] = "meta",
+								}, -- [1]
+								{
+									["Icons"] = {
+										"TMW:icon:1V6lsULwY3_Y", -- [1]
+									},
+									["Type"] = "meta",
+								}, -- [2]
+							},
+							["OnlyInCombat"] = true,
+						}, -- [3]
+					},
+					["Version"] = 91200,
+				},
+				["Moolatz - Golemagg"] = {
 					["Version"] = 91200,
 					["Groups"] = {
 						{
-							["GUID"] = "TMW:group:1Vbhru5eED7w",
+							["GUID"] = "TMW:group:1XwcshcBUCEg",
+						}, -- [1]
+					},
+				},
+				["Pitchwise - Dreadnaught"] = {
+					["Version"] = 91200,
+					["Groups"] = {
+						{
+							["GUID"] = "TMW:group:1Xm47LbdEYcq",
+						}, -- [1]
+					},
+				},
+				["Testxv - Golemagg"] = {
+					["Locked"] = true,
+					["Version"] = 86907,
+					["Groups"] = {
+						{
+							["GUID"] = "TMW:group:1VWiCxYSqwKw",
 						}, -- [1]
 					},
 				},
@@ -17628,7 +17630,7 @@ TMWOptDB = {
 		["Battlearm - Golemagg"] = {
 			["Version"] = 91200,
 		},
-		["Moolatz - Golemagg"] = {
+		["Moolatz - Dreadnaught"] = {
 			["Version"] = 91200,
 		},
 		["Paydo - Dreadmist"] = {
@@ -17639,10 +17641,10 @@ TMWOptDB = {
 		},
 		["TEST HUNTER"] = {
 		},
-		["Konac - Dreadnaught"] = {
+		["Pitchwise - Dreadnaught"] = {
 			["Version"] = 91200,
 		},
-		["Nitwit - Dreadnaught"] = {
+		["Mage"] = {
 			["Version"] = 91200,
 		},
 		["Vermin - Golemagg"] = {
@@ -17661,7 +17663,7 @@ TMWOptDB = {
 		["Dotwise - Golemagg"] = {
 			["Version"] = 86907,
 		},
-		["Kosturko - Golemagg"] = {
+		["Vermins - Stonespine"] = {
 			["Version"] = 86907,
 		},
 		["Warrior"] = {
@@ -17674,17 +17676,17 @@ TMWOptDB = {
 				-53.0668067932129, -- [5]
 			},
 		},
-		["Vermins - Stonespine"] = {
-			["Version"] = 86907,
+		["Paladin"] = {
+			["Version"] = 91200,
 		},
-		["Klhjakhsgdjh - Golemagg"] = {
-			["Version"] = 86907,
-		},
-		["Testxv - Golemagg"] = {
-			["Version"] = 86907,
+		["Druid"] = {
+			["Version"] = 91200,
 		},
 		["Battlearm - Hydraxian Waterlords"] = {
 			["Version"] = 87601,
+		},
+		["Testxv - Golemagg"] = {
+			["Version"] = 86907,
 		},
 		["Greenwise - Golemagg"] = {
 			["Version"] = 86907,
@@ -17697,11 +17699,11 @@ TMWOptDB = {
 		["Jaroslav - Golemagg"] = {
 			["Version"] = 86907,
 		},
-		["Druid"] = {
-			["Version"] = 91200,
+		["Klhjakhsgdjh - Golemagg"] = {
+			["Version"] = 86907,
 		},
-		["Paladin"] = {
-			["Version"] = 91200,
+		["Kosturko - Golemagg"] = {
+			["Version"] = 86907,
 		},
 		["Judawise - Golemagg"] = {
 			["Version"] = 86907,
@@ -17709,13 +17711,13 @@ TMWOptDB = {
 		["Priest"] = {
 			["Version"] = 91200,
 		},
-		["Mage"] = {
+		["Nitwit - Dreadnaught"] = {
 			["Version"] = 91200,
 		},
-		["Pitchwise - Dreadnaught"] = {
+		["Konac - Dreadnaught"] = {
 			["Version"] = 91200,
 		},
-		["Moolatz - Dreadnaught"] = {
+		["Moolatz - Golemagg"] = {
 			["Version"] = 91200,
 		},
 	},

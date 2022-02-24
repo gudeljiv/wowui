@@ -1,3 +1,9 @@
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/startattack
+/cast Arcane Shot
+END
 VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Rapid Fire
@@ -27,21 +33,15 @@ VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Hunter's Mark
 END
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/petattack
-/startattack
-/cast Serpent Sting
-END
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /petattack
 /startattack
 /cast Multi-Shot
 END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /petattack
 /startattack
-/cast Arcane Shot
+/cast Serpent Sting
 END

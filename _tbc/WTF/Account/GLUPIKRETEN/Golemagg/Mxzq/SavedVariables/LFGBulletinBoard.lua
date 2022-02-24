@@ -52,7 +52,7 @@ GroupBulletinBoardDBChar = {
 	["FilterDungeonSCH"] = true,
 	["FilterDungeonDM2"] = true,
 	["FilterDungeonBWL"] = false,
-	["FilterDungeonSETH"] = true,
+	["FilterDungeonARC"] = true,
 	["FilterDungeonZG"] = false,
 	["FilterDungeonAQ40"] = false,
 	["FilterDungeonMC"] = false,
@@ -94,7 +94,7 @@ GroupBulletinBoardDBChar = {
 		true, -- [20]
 	},
 	["HeroicOnly"] = false,
-	["FilterDungeonARC"] = true,
+	["FilterDungeonSETH"] = true,
 	["FilterDungeonSWP"] = true,
 	["FilterDungeonEYE"] = true,
 	["FilterDungeonOHB"] = true,

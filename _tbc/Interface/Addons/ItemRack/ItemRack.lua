@@ -1163,6 +1163,8 @@ function ItemRack.BuildMenu(id,menuInclude,masqueGroup)
 			else
 				_G["ItemRackMenu"..i.."Count"]:SetText("")
 			end
+
+			_G["ItemRackMenu"..i.."Count"]:SetScale(0.6)
 		end
 	end
 end
