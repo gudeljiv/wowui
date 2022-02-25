@@ -71,10 +71,10 @@ SpyDB = {
 					},
 				},
 			},
+			["HideSpy"] = true,
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
-			["HideSpy"] = true,
 		},
 	},
 }
