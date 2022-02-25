@@ -1,9 +1,0 @@
-## Interface: 20501
-## Title: FarmHud [QuestArrow]
-## Version: 8.8.0-release
-## Notes: Experimental way to suppress the quest arrow while FarmHud is active.
-## Author: Hizuro
-## Dependencies: FarmHud
-## DefaultState: enabled
-
-FarmHud_QuestArrow.lua
