@@ -1,0 +1,81 @@
+VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
+#showtooltip Mortal Strike
+/startattack
+/cast [stance:1/3] Mortal Strike; Berserker Stance
+END
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Bloodrage
+/cast Berserker Rage
+END
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Cleave
+END
+VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Overpower
+/startattack
+/cast [stance:1] Overpower; Battle Stance
+END
+VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Whirlwind
+/startattack
+/cast [stance:3] Whirlwind; Berserker Stance
+END
+VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Mocking Blow
+/startattack
+/cast [stance:1] Mocking Blow; Battle Stance
+END
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Charge
+/startattack
+/cast Sunder Armor
+/cast Charge
+END
+VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Shield Bash
+/startattack
+/cast [stance:1/2] Shield Bash; Battle Stance
+/cast Bloodrage
+END
+VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Thunder Clap
+/startattack
+/cast [stance:1/3] Thunder Clap; Battle Stance
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Heroic Strike
+END
+VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Sunder Armor
+/cast Bloodrage
+END
+VER 3 000000000100000C " " "INV_MISC_QUESTIONMARK"
+#showtooltip Pummel
+/startattack
+/cast Bloodrage
+/cast Pummel
+END
+VER 3 000000000100000D " " "INV_MISC_QUESTIONMARK"
+#showtooltip Mortal Strike
+/startattack
+/cast Mortal Strike
+END
+VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [stance:1/3] Death Wish
+/cast [stance:3] Recklessness
+/cast [stance:1/3] Blood Fury
+/cast [stance:1/3] Bloodrage
+/cast [stance:2] Shield Wall
+END
+VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [stance:2] Disarm; Defensive Stance
+END

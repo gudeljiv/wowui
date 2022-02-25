@@ -1,0 +1,27 @@
+2020-09-14
+- Added code to increment "version" so derivative "WoWHead" addon can't label this as obsolete
+
+2020-09-09
+- Refreshed data from WoWHead
+- Cleaned up data to remove duplicates
+
+2020-06-08
+- Pulled updated data (for herbalism) from Wowhead so additional nodes for Black Lotus
+- Not bothered to clean it up (merging my own nodes, cleaning database etc) do that yourselves...
+
+2019-09-25
+- Refiltered data from source to add back in Plaguebloom
+- Ran scan and removal of duplicate entries
+
+2019-09-22
+- Ran de-duplication of nodes
+- Added in any nodes I found while questing
+- Removed the "zone [0]" extra data
+
+2019-09-11 
+- Fixed the format of the treasure nodes
+- Shifted the Eastern Plaguelands nodes
+
+2019-11-21
+- Updates to EPL herbs from moodinsk (https://www.curseforge.com/members/moodinsk)
+- Cleared out some obviously wrong nodes (outside zones etc)

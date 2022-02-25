@@ -1,0 +1,12 @@
+## Interface: 20501
+
+## Title: TrackingSwitcher
+## Version: 1.3.0
+## Author: Epenance
+## Notes: Helper addon to swap between trackings when out of combat.
+## SavedVariables: TrackingSwitcherDB
+## SavedVariablesPerCharacter: TrackingSwitcherCharDB
+
+embeds.xml
+
+TrackingSwitcher.lua
