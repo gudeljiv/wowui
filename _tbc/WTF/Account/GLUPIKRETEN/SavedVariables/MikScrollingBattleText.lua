@@ -66,13 +66,13 @@ MSBTProfiles_SavedVars = {
 				["PET_INCOMING_DEFLECT"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_OUTGOING_EVADE"] = {
+				["PET_OUTGOING_DAMAGE"] = {
 					["scrollArea"] = "Custom2",
 				},
 				["PET_OUTGOING_HOT_CRIT"] = {
 					["scrollArea"] = "Custom2",
 				},
-				["PET_OUTGOING_DAMAGE"] = {
+				["PET_OUTGOING_EVADE"] = {
 					["scrollArea"] = "Custom2",
 				},
 				["PET_INCOMING_DAMAGE"] = {
@@ -153,7 +153,7 @@ MSBTProfiles_SavedVars = {
 				["PET_INCOMING_SPELL_DAMAGE_CRIT"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_INCOMING_SPELL_DOT"] = {
+				["PET_INCOMING_SPELL_BLOCK"] = {
 					["scrollArea"] = "Custom3",
 				},
 				["PET_INCOMING_SPELL_DEFLECT"] = {
@@ -171,11 +171,11 @@ MSBTProfiles_SavedVars = {
 				["PET_INCOMING_ABSORB"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_INCOMING_SPELL_DAMAGE_SHIELD_CRIT"] = {
+				["PET_INCOMING_HEAL_CRIT"] = {
 					["scrollArea"] = "Custom3",
 				},
-				["PET_OUTGOING_MISS"] = {
-					["scrollArea"] = "Custom2",
+				["PET_INCOMING_HEAL"] = {
+					["scrollArea"] = "Custom3",
 				},
 				["PET_OUTGOING_HOT"] = {
 					["scrollArea"] = "Custom2",
@@ -243,26 +243,24 @@ MSBTProfiles_SavedVars = {
 			["powerThrottleDuration"] = 2,
 			["critFontName"] = "MSBT Yellowjacket",
 			["groupNumbers"] = true,
-			["hideFullHoTOverheals"] = false,
-			["normalFontName"] = "MSBT Yellowjacket",
 			["scrollAreas"] = {
 				["Outgoing"] = {
 					["stickyTextAlignIndex"] = 3,
 					["offsetX"] = 360,
-					["textAlignIndex"] = 3,
-					["behavior"] = "MSBT_NORMAL",
-					["offsetY"] = 50,
 					["animationStyle"] = "Straight",
 					["iconAlign"] = "Left",
+					["offsetY"] = 50,
+					["textAlignIndex"] = 3,
+					["behavior"] = "MSBT_NORMAL",
 				},
 				["Incoming"] = {
 					["stickyTextAlignIndex"] = 1,
 					["offsetX"] = -400,
-					["iconAlign"] = "Right",
 					["behavior"] = "MSBT_NORMAL",
+					["iconAlign"] = "Right",
 					["offsetY"] = 50,
-					["textAlignIndex"] = 1,
 					["animationStyle"] = "Straight",
+					["textAlignIndex"] = 1,
 				},
 				["Static"] = {
 					["disabled"] = true,
@@ -278,6 +276,8 @@ MSBTProfiles_SavedVars = {
 					["disabled"] = true,
 				},
 			},
+			["normalFontName"] = "MSBT Yellowjacket",
+			["hideFullHoTOverheals"] = false,
 			["normalFontSize"] = 15,
 		},
 	},

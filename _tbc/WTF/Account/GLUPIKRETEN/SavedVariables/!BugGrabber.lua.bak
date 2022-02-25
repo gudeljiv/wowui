@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 4650,
+	["session"] = 4652,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -219,5 +219,28 @@ BugGrabberDB = {
 			["session"] = 4638,
 			["counter"] = 1,
 		}, -- [27]
+		{
+			["message"] = "[string \"ItemRackMenu1Count:Scale(0.8)\"]:1: attempt to call method 'Scale' (a nil value)",
+			["time"] = "2022/02/24 19:22:42",
+			["locals"] = "(*temporary) = nil\n(*temporary) = ItemRackMenu1Count {\n 0 = <userdata>\n}\n(*temporary) = 0.800000\n(*temporary) = \"attempt to call method 'Scale' (a nil value)\"\n",
+			["stack"] = "[string \"ItemRackMenu1Count:Scale(0.8)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4652,
+			["counter"] = 1,
+		}, -- [28]
+		{
+			["message"] = "[string \"ItemRackMenu1Count:Scale(0.7)\"]:1: attempt to call method 'Scale' (a nil value)",
+			["time"] = "2022/02/24 19:22:47",
+			["locals"] = "(*temporary) = nil\n(*temporary) = ItemRackMenu1Count {\n 0 = <userdata>\n}\n(*temporary) = 0.700000\n(*temporary) = \"attempt to call method 'Scale' (a nil value)\"\n",
+			["stack"] = "[string \"ItemRackMenu1Count:Scale(0.7)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4652,
+			["counter"] = 1,
+		}, -- [29]
+		{
+			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'ExtendedCharacterStats' tried to call the protected function 'CopyToClipboard()'.",
+			["time"] = "2022/02/24 19:24:02",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `CopyToClipboard'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:55: in function `FrameStackTooltip_HandleFrameCommand'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:25: in function `command'\n[string \"@Interface\\SharedXML\\KeyCommand.lua\"]:47: in function `Update'\n[string \"@Interface\\SharedXML\\KeyCommand.lua\"]:111: in function `KeyCommand_Update'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:234: in function <...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools.lua:233>",
+			["session"] = 4652,
+			["counter"] = 1,
+		}, -- [30]
 	},
 }
