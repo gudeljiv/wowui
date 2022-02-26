@@ -4,9 +4,9 @@ NeatPlatesSettings = {
 	["GlobalAdditonalAuras"] = {
 	},
 	["DefaultProfile"] = "Default",
-	["GlobalEmphasizedAuraPriority"] = {
-	},
 	["GlobalAuraLookup"] = {
+	},
+	["GlobalEmphasizedAuraPriority"] = {
 	},
 	["GlobalEmphasizedAuraLookup"] = {
 	},

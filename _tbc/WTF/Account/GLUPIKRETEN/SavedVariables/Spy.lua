@@ -44,7 +44,6 @@ SpyDB = {
 			["BarTexture"] = "Glamour2",
 		},
 		["Mxyz - Golemagg"] = {
-			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 883.6232299804688,
@@ -59,11 +58,13 @@ SpyDB = {
 					},
 				},
 			},
-			["AppendUnitKoSCheck"] = true,
-			["MainWindowVis"] = false,
 			["HideSpy"] = true,
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["AppendUnitKoSCheck"] = true,
 		},
 		["Mxzq - Golemagg"] = {
+			["AppendUnitNameCheck"] = true,
 			["Colors"] = {
 				["Alert"] = {
 					["Stealth Text"] = {
@@ -79,10 +80,9 @@ SpyDB = {
 					},
 				},
 			},
-			["HideSpy"] = true,
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
+			["MainWindowVis"] = false,
+			["HideSpy"] = true,
 		},
 	},
 }
