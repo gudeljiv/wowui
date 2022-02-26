@@ -45,6 +45,7 @@ Addons/RangeDisplay.lua
 Addons/Recount.lua
 Addons/RXPGuide.lua
 Addons/TinyThreat.lua
+Addons/TrinketMenu.lua
 
 AutoCarrot.lua
 AutoBuyAmmo.lua

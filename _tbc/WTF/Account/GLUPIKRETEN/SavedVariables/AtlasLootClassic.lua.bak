@@ -51,6 +51,11 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -59,11 +64,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
 			},
 		},
 		["Verminz - Golemagg"] = {
@@ -353,9 +353,22 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+			["GUI"] = {
+				["selectedGameVersion"] = 1,
+				["selected"] = {
+					nil, -- [1]
+					"Uldaman", -- [2]
+					10, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-344.3334350585938, -- [4]
+					141.3907928466797, -- [5]
+				},
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -368,22 +381,9 @@ AtlasLootClassicDB = {
 					},
 				},
 			},
-			["GUI"] = {
-				["point"] = {
-					nil, -- [1]
-					nil, -- [2]
-					"CENTER", -- [3]
-					-344.3334350585938, -- [4]
-					141.3907928466797, -- [5]
-				},
-				["selectedGameVersion"] = 1,
-				["selected"] = {
-					nil, -- [1]
-					"Uldaman", -- [2]
-					10, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Judawise - Golemagg"] = {

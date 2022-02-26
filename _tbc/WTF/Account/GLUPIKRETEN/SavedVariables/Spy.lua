@@ -65,16 +65,24 @@ SpyDB = {
 		},
 		["Mxzq - Golemagg"] = {
 			["Colors"] = {
+				["Alert"] = {
+					["Stealth Text"] = {
+						["a"] = 1,
+					},
+					["Name Text"] = {
+						["a"] = 1,
+					},
+				},
 				["Bar"] = {
 					["Bar Text"] = {
 						["a"] = 1,
 					},
 				},
 			},
+			["HideSpy"] = true,
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
-			["HideSpy"] = true,
 		},
 	},
 }

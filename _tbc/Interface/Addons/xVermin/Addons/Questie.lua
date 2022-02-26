@@ -45,4 +45,3 @@ C_Timer.NewTicker(1, function(self)
 		self:Cancel()
 	end
 end)
-
