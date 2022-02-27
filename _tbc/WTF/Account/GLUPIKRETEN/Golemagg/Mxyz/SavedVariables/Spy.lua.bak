@@ -1,10 +1,10 @@
 
 SpyPerCharDB = {
-	["PlayerData"] = {
-	},
+	["version"] = "1.1",
 	["IgnoreData"] = {
 	},
-	["version"] = "1.1",
 	["KOSData"] = {
+	},
+	["PlayerData"] = {
 	},
 }
