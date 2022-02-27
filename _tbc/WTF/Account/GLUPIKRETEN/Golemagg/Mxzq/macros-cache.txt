@@ -1,7 +1,8 @@
-VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast Rapid Fire
-/cast Blood Fury
+/petattack
+/startattack
+/cast Arcane Shot
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -39,9 +40,8 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Serpent Sting
 END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/petattack
-/startattack
-/cast Arcane Shot
+/cast Rapid Fire
+/cast Blood Fury
 END

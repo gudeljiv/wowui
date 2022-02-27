@@ -1,9 +1,8 @@
 
 SpyPerCharDB = {
-	["version"] = "1.1",
-	["IgnoreData"] = {
-	},
 	["KOSData"] = {
+	},
+	["IgnoreData"] = {
 	},
 	["PlayerData"] = {
 		["Nolipa"] = {
@@ -192,20 +191,6 @@ SpyPerCharDB = {
 			["race"] = "Human",
 			["name"] = "Natharius",
 		},
-		["Bóóba"] = {
-			["mapID"] = 1446,
-			["zone"] = "Tanaris",
-			["mapY"] = 0.24,
-			["class"] = "HUNTER",
-			["isEnemy"] = true,
-			["mapX"] = 0.37,
-			["isGuess"] = true,
-			["time"] = 1645369644,
-			["subZone"] = "Sandsorrow Watch",
-			["level"] = 10,
-			["race"] = "Night Elf",
-			["name"] = "Bóóba",
-		},
 		["Nightfever"] = {
 			["mapID"] = 1446,
 			["zone"] = "Tanaris",
@@ -219,6 +204,20 @@ SpyPerCharDB = {
 			["level"] = 1,
 			["isGuess"] = true,
 			["time"] = 1645365995,
+		},
+		["Bóóba"] = {
+			["mapID"] = 1446,
+			["zone"] = "Tanaris",
+			["mapY"] = 0.24,
+			["class"] = "HUNTER",
+			["isEnemy"] = true,
+			["mapX"] = 0.37,
+			["isGuess"] = true,
+			["time"] = 1645369644,
+			["subZone"] = "Sandsorrow Watch",
+			["level"] = 10,
+			["race"] = "Night Elf",
+			["name"] = "Bóóba",
 		},
 		["Efox"] = {
 			["mapID"] = 1446,
@@ -243,12 +242,12 @@ SpyPerCharDB = {
 			["isEnemy"] = true,
 			["loses"] = 1,
 			["race"] = "Gnome",
-			["time"] = 1645352776,
+			["name"] = "Initshead",
 			["subZone"] = "Noonshade Ruins",
 			["mapX"] = 0.6,
 			["level"] = 45,
 			["isGuess"] = false,
-			["name"] = "Initshead",
+			["time"] = 1645352776,
 		},
 		["Morothdrein"] = {
 			["mapID"] = 1446,
@@ -386,4 +385,5 @@ SpyPerCharDB = {
 			["subZone"] = "Gadgetzan",
 		},
 	},
+	["version"] = "1.1",
 }
