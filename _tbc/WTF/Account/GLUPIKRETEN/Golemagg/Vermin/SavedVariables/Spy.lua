@@ -1,0 +1,52 @@
+
+SpyPerCharDB = {
+	["PlayerData"] = {
+		["Nimanga"] = {
+			["mapID"] = 1446,
+			["zone"] = "Tanaris",
+			["mapY"] = 0.27,
+			["class"] = "PALADIN",
+			["isEnemy"] = true,
+			["mapX"] = 0.52,
+			["isGuess"] = true,
+			["time"] = 1645361264,
+			["subZone"] = "Gadgetzan",
+			["level"] = 40,
+			["race"] = "Draenei",
+			["name"] = "Nimanga",
+		},
+		["Hanesha"] = {
+			["mapID"] = 1446,
+			["zone"] = "Tanaris",
+			["mapY"] = 0.38,
+			["class"] = "SHAMAN",
+			["isEnemy"] = true,
+			["mapX"] = 0.35,
+			["isGuess"] = false,
+			["time"] = 1645205006,
+			["subZone"] = "The Noxious Lair",
+			["level"] = 46,
+			["race"] = "Draenei",
+			["name"] = "Hanesha",
+		},
+		["Dyruu"] = {
+			["mapID"] = 1446,
+			["zone"] = "Tanaris",
+			["mapY"] = 0.27,
+			["class"] = "DRUID",
+			["isEnemy"] = true,
+			["mapX"] = 0.52,
+			["isGuess"] = true,
+			["time"] = 1645361264,
+			["subZone"] = "Gadgetzan",
+			["level"] = 20,
+			["race"] = "Night Elf",
+			["name"] = "Dyruu",
+		},
+	},
+	["IgnoreData"] = {
+	},
+	["version"] = "1.1",
+	["KOSData"] = {
+	},
+}
