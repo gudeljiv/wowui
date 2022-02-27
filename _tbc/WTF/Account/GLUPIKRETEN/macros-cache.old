@@ -16,18 +16,18 @@ VER 3 000000000000000F "AttackSpeed" "132089"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:8766
+/castsequence [combat] reset=combat item:6149
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:8952
+/castsequence [combat] reset=combat item:3928
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:12208
+#showtooltip item:12203
 /cast feed pet
-/use item:12208
+/use item:12203
 END
 VER 3 000000000000000B "TEST" "132089"
 /run TrinketMenu_MainFrame:ClearAllPoints()

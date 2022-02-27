@@ -64,6 +64,14 @@ SpyDB = {
 			["HideSpy"] = true,
 		},
 		["Mxzq - Golemagg"] = {
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = 803.7760009765625,
+					["x"] = 348.9654235839844,
+					["w"] = 159.9999847412109,
+					["h"] = 51.00009918212891,
+				},
+			},
 			["Colors"] = {
 				["Alert"] = {
 					["Stealth Text"] = {
