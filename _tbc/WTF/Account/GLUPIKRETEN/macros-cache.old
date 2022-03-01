@@ -25,13 +25,10 @@ VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 /castsequence [combat] reset=combat item:3928
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:12203
+#showtooltip item:35562
 /cast feed pet
-/use item:12203
+/use item:35562
 END
 VER 3 000000000000000B "TEST" "132089"
-/run TrinketMenu_MainFrame:ClearAllPoints()
-/run TrinketMenu_MainFrame:SetPoint("RIGHT", PlayerFrame, "LEFT", 30, 4)
-/run TrinketMenu_MainFrame:CreateBeautyBorder(6)
-/run PlayerFrame:CreateBeautyBorder(6)
+/run g="groundEffectDensity";i=GetCVar(g);SetCVar(g,16) C_Timer.After(10,function()SetCVar(g,i)end)
 END

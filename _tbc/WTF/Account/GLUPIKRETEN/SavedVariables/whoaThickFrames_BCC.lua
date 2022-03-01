@@ -12,7 +12,7 @@ cfg = {
 	["showPartyPets"] = false,
 	["noClickFrame"] = false,
 	["fontFamily"] = "GameFontNormal",
-	["largeAuraSize"] = 27,
+	["whoaTextureIndex"] = 15,
 	["playerFrameSelect"] = "UI-TargetingFrame",
 	["whoaTexture"] = true,
 	["classColor"] = true,
@@ -21,6 +21,6 @@ cfg = {
 	["usePartyFrames"] = true,
 	["darkFrames"] = true,
 	["minimapZoom"] = true,
-	["whoaTextureIndex"] = 15,
+	["largeAuraSize"] = 27,
 	["playerNameHide"] = true,
 }
