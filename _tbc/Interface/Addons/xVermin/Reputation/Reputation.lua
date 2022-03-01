@@ -149,8 +149,8 @@ local function UpdateBarValueAndColor()
 			if value.FactionInfo.earnedValue < -3000 then
 				standing = "HOSTILE"
 				color = {r = 255 / 255, g = 0 / 255, b = 0 / 255}
-				standingValue = 9000 + value.FactionInfo.earnedValue
-				topValue = 6000
+				standingValue = 6000 + value.FactionInfo.earnedValue
+				topValue = 3000
 			end
 
 			if value.FactionInfo.earnedValue < -6000 then

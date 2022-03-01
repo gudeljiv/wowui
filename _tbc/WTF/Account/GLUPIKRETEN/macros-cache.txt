@@ -25,9 +25,9 @@ VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 /castsequence [combat] reset=combat item:3928
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:8952
+#showtooltip item:4599
 /cast feed pet
-/use item:8952
+/use item:4599
 END
 VER 3 000000000000000B "TEST" "132089"
 /run TrinketMenu_MainFrame:ClearAllPoints()
