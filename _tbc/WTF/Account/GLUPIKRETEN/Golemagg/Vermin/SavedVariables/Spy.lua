@@ -1,5 +1,10 @@
 
 SpyPerCharDB = {
+	["version"] = "1.1",
+	["IgnoreData"] = {
+	},
+	["KOSData"] = {
+	},
 	["PlayerData"] = {
 		["Nimanga"] = {
 			["mapID"] = 1446,
@@ -43,10 +48,5 @@ SpyPerCharDB = {
 			["race"] = "Night Elf",
 			["name"] = "Dyruu",
 		},
-	},
-	["IgnoreData"] = {
-	},
-	["version"] = "1.1",
-	["KOSData"] = {
 	},
 }

@@ -75,3 +75,7 @@ VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 /cast [stance:1/3] Bloodrage
 /cast [stance:2] Shield Wall
 END
+VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [stance:2] Disarm; Defensive Stance
+END
