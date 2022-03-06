@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 4676,
 	["lastSanitation"] = 3,
+	["session"] = 4693,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -279,8 +279,46 @@ BugGrabberDB = {
 			["time"] = "2022/02/15 18:27:27",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 4676,
-			["counter"] = 15,
+			["session"] = 4677,
+			["counter"] = 16,
 		}, -- [35]
+		{
+			["message"] = "[string \"Error in: Find Minerals\"]:7: attempt to index global 'MiniMapTrackingFrame' (a nil value)",
+			["time"] = "2022/03/06 12:18:48",
+			["stack"] = "[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:611: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:537>\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:747: in function `ScanEventsInternal'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:708: in function `ScanEvents'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:1429: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:1427>",
+			["session"] = 4680,
+			["counter"] = 5,
+		}, -- [36]
+		{
+			["message"] = "[string \"Error in: Find Herbs\"]:7: attempt to index global 'MiniMapTrackingFrame' (a nil value)",
+			["time"] = "2022/03/06 12:18:48",
+			["stack"] = "[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:611: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:537>\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:747: in function `ScanEventsInternal'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:708: in function `ScanEvents'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:1429: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:1427>",
+			["session"] = 4680,
+			["counter"] = 161,
+		}, -- [37]
+		{
+			["message"] = "[string \"titm:CreateBeautyBorder(6)\"]:1: attempt to index global 'titm' (a nil value)",
+			["time"] = "2022/03/06 15:57:26",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'titm' (a nil value)\"\n",
+			["stack"] = "[string \"titm:CreateBeautyBorder(6)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4686,
+			["counter"] = 1,
+		}, -- [38]
+		{
+			["message"] = "[string \"titm:Show()\"]:1: attempt to index global 'titm' (a nil value)",
+			["time"] = "2022/03/06 15:57:37",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'titm' (a nil value)\"\n",
+			["stack"] = "[string \"titm:Show()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4686,
+			["counter"] = 1,
+		}, -- [39]
+		{
+			["message"] = "[string \"TrackingIconTextFrame:SetPoint(\"CENTER\")\"]:1: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: TrackingIconTextFrame:SetPoint.",
+			["time"] = "2022/03/06 15:58:41",
+			["locals"] = "(*temporary) = TrackingIconTextFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\n(*temporary) = \"CENTER\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"TrackingIconTextFrame:SetPoint(\"CENTER\")\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4686,
+			["counter"] = 1,
+		}, -- [40]
 	},
 }

@@ -1,5 +1,15 @@
 local _, xVermin = ...
 
+local titm = CreateFrame("Frame", "TrackingIconTextFrame")
+titm:SetPoint("CENTER", UIParent, "CENTER", 0, -55)
+titm.text = titm:CreateFontString(nil, "ARTWORK")
+titm.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
+titm.text:SetShadowOffset(1, -1)
+titm.text:SetPoint("TOP", titm, "TOP", 0, 0)
+titm.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+titm:SetWidth(titm.text:GetStringWidth())
+titm:SetHeight(titm.text:GetStringHeight())
+
 local TrackingIconFrame = CreateFrame("Frame", "TrackingIconFrame", Minimap)
 TrackingIconFrame:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", -5, -5)
 TrackingIconFrame:SetWidth(16)
@@ -37,62 +47,80 @@ local function TrackingIcon()
 	if (texture) then
 		-- Minerals
 		if (texture == 136025) then
+			titm.text:SetText("MINERALS")
 			TrackingIconFrame:Show()
 			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\spell_nature_earthquake")
 		end
 
 		-- Herbs
 		if (texture == 133939) then
+			titm.text:SetText("HERBS")
 			TrackingIconFrame:Show()
 			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\inv_misc_flower_02")
 		end
 
 		-- Humanoids
 		if (texture == 135942) then
+			titm.text:SetText("HUMANOIDS")
 			TrackingIconFrame:Show()
 			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\spell_holy_prayerofhealing")
 		end
 
 		--Undead
 		if (texture == 136142) then
+			titm.text:SetText("UNDEAD")
 			TrackingIconFrame:Show()
 			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\spell_shadow_darksummoning")
 		end
 
 		-- Beasts
 		if (texture == 132328) then
+			titm.text:SetText("BEASTS")
 			TrackingIconFrame:Show()
 			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\ability_tracking")
 		end
 
 		-- Hidden
 		if (texture == 132320) then
+			titm.text:SetText("HIDDEN")
 			TrackingIconFrame:Show()
 			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\ability_stealth")
 		end
 
 		-- Demons
 		if (texture == 136217) then
+			titm.text:SetText("DEMONS")
 			TrackingIconFrame:Show()
 			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\spell_shadow_summonfelhunter")
 		end
 
 		-- Elementals
 		if (texture == 135861) then
+			titm.text:SetText("ELEMENTALS")
 			TrackingIconFrame:Show()
 			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\spell_frost_summonwaterelemental")
 		end
 
 		-- Dragonkin
 		if (texture == 134153) then
+			titm.text:SetText("DRAGONKIN")
 			TrackingIconFrame:Show()
 			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\inv_misc_head_dragon_01")
 		end
 
 		-- Giants
 		if (texture == 132275) then
+			titm.text:SetText("GIANTS")
 			TrackingIconFrame:Show()
 			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\ability_racial_avatar")
+		end
+
+		if not texture then 
+			titm:Hide()
+		else 
+			titm:SetWidth(titm.text:GetStringWidth())
+			titm:SetHeight(titm.text:GetStringHeight())
+			titm:Show()
 		end
 	end
 end
