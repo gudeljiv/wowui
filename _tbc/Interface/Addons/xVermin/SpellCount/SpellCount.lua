@@ -2,7 +2,7 @@ local ActionBars = {'Action','MultiBarBottomLeft','MultiBarBottomRight','MultiBa
 local c
 
 
-function PrintActions()
+local function PrintActions()
 	for _, barName in pairs(ActionBars) do
 		for i = 1, 12 do
 			local button = _G[barName .. 'Button' .. i]
@@ -22,14 +22,10 @@ function PrintActions()
 				end
 
 				if actionName then
-					if(actionType == "spell") then
-						c = GetSpellPowerCost(actionName)
-						print(button:GetName(), actionType, (GetSpellLink(id)), actionName, id)
-					end
+					c = GetSpellPowerCost(actionName)
+					print(button:GetName(), actionType, (GetSpellLink(id)), actionName, c["mana"])
 				end
 			end
 		end
 	end
 end
-
-PrintActions()

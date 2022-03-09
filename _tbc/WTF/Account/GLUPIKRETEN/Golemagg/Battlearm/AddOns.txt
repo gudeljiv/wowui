@@ -7,7 +7,7 @@ Bagnon_GuildBank: disabled
 Bagnon_VoidStorage: disabled
 BagBrother: disabled
 RXPGuides: disabled
-nPower: enabled
+nPower: disabled
 Leatrix_Plus: enabled
 TradeSkillMaster: enabled
 NeatPlates: enabled

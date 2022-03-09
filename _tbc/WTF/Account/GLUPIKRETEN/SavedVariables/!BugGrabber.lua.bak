@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 4714,
+	["session"] = 4720,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -388,5 +388,35 @@ BugGrabberDB = {
 			["session"] = 4704,
 			["counter"] = 1,
 		}, -- [49]
+		{
+			["message"] = "(null)",
+			["time"] = "2022/03/09 13:39:43",
+			["session"] = 4718,
+			["counter"] = 3,
+		}, -- [50]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SpellCount/SpellCount.lua:26: attempt to index upvalue 'c' (a nil value)",
+			["time"] = "2022/03/09 13:39:40",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = \"Action\"\n 2 = \"MultiBarBottomLeft\"\n 3 = \"MultiBarBottomRight\"\n 4 = \"MultiBarRight\"\n 5 = \"MultiBarLeft\"\n}\n(for control) = 5\n_ = 5\nbarName = \"MultiBarLeft\"\n(for index) = 1\n(for limit) = 12\n(for step) = 1\ni = 1\nbutton = MultiBarLeftButton1 {\n 0 = <userdata>\n HotKey = MultiBarLeftButton1HotKey {\n }\n action = 37\n NewActionTexture = <unnamed> {\n }\n Border = MultiBarLeftButton1Border {\n }\n Flash = MultiBarLeftButton1Flash {\n }\n flashtime = 0\n icon = MultiBarLeftButton1Icon {\n }\n feedback_action = 37\n AutoCastable = <unnamed> {\n }\n SpellHighlightAnim = <unnamed> {\n }\n rangeTimer = -1\n eventsRegistered = true\n Name = MultiBarLeftButton1Name {\n }\n flashing = 0\n SpellHighlightTexture = <unnamed> {\n }\n buttonType = \"MULTIACTIONBAR4BUTTON\"\n NormalTexture = MultiBarLeftButton1NormalTexture {\n }\n FlyoutBorderShadow = MultiBarLeftButton1FlyoutBorderShadow {\n }\n FlyoutBorder = MultiBarLeftButton1FlyoutBorder {\n }\n Count = MultiBarLeftButton1Count {\n }\n AutoCastShine = MultiBarLeftButton1Shine {\n }\n FlyoutArrow = MultiBarLeftButton1FlyoutArrow {\n }\n cooldown = MultiBarLeftButton1Cooldown {\n }\n zoneAbilityDisabled = false\n}\nslot = 37\nactionName = \"Minor Healthstone\"\n_ = nil\nactionType = \"item\"\nid = 5512\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"MultiBarLeftButton1\"\n(*temporary) = \"item\"\n(*temporary) = \"|cff71d5ff|Hspell:5512:0|h[Fill Phial]|h|r\"\n(*temporary) = \"Minor Healthstone\"\n(*temporary) = nil\n(*temporary) = \"attempt to index upvalue 'c' (a nil value)\"\nActionBars = <table> {\n 1 = \"Action\"\n 2 = \"MultiBarBottomLeft\"\n 3 = \"MultiBarBottomRight\"\n 4 = \"MultiBarRight\"\n 5 = \"MultiBarLeft\"\n}\nc = nil\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\SpellCount/SpellCount.lua\"]:26: in function `PrintActions'\n[string \"@Interface\\AddOns\\xVermin\\SpellCount/SpellCount.lua\"]:33: in main chunk",
+			["session"] = 4718,
+			["counter"] = 2,
+		}, -- [51]
+		{
+			["message"] = "[string \"print(GetSpellPowerCost(\"Drain Soul\")[\"cost\"]\"]:1: ')' expected near '<eof>'",
+			["time"] = "2022/03/09 13:40:57",
+			["locals"] = "(*temporary) = \"print(GetSpellPowerCost(\"Drain Soul\")[\"cost\"]\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4718,
+			["counter"] = 1,
+		}, -- [52]
+		{
+			["message"] = "[string \"print(GetSpellPowerCost(\"Drain Soul\")[1][\"cost\"]\"]:1: ')' expected near '<eof>'",
+			["time"] = "2022/03/09 13:41:08",
+			["locals"] = "(*temporary) = \"print(GetSpellPowerCost(\"Drain Soul\")[1][\"cost\"]\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4718,
+			["counter"] = 1,
+		}, -- [53]
 	},
 }

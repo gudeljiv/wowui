@@ -1,0 +1,8 @@
+
+MIPO = {
+	["author"] = "D4KiR",
+	["colorauthor"] = "|c0000ffff",
+	["DEBUG"] = false,
+	["name"] = "Missing Power",
+	["colorname"] = "|c008888ff",
+}
