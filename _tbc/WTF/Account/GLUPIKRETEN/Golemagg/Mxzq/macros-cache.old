@@ -1,3 +1,9 @@
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/startattack
+/cast Serpent Sting
+END
 VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Rapid Fire
@@ -38,10 +44,4 @@ VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 /petattack
 /startattack
 /cast Multi-Shot
-END
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/petattack
-/startattack
-/cast Serpent Sting
 END

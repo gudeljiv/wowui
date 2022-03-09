@@ -90,13 +90,6 @@ X: 252
 Y: -260
 W: 365
 H: 200
-Frame: Spy_MainWindow
-FrameLevel: 10
-Anchor: CENTER
-X: -466
-Y: 204
-W: 160
-H: 35
 Frame: nTooltip_Anchor
 FrameLevel: 1
 Anchor: TOP
@@ -104,6 +97,13 @@ X: 243
 Y: -107
 W: 50
 H: 50
+Frame: Spy_MainWindow
+FrameLevel: 10
+Anchor: CENTER
+X: -466
+Y: 204
+W: 160
+H: 35
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER

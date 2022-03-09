@@ -1,6 +1,6 @@
 
 Blizzard_CombatLog_Filters = {
-	["currentFilter"] = 4,
+	["currentFilter"] = 2,
 	["filters"] = {
 		{
 			["quickButtonName"] = "My actions",

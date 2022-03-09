@@ -87,10 +87,7 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -472,15 +469,18 @@ ChocolateBarDB = {
 					["customLabel"] = "FH",
 				},
 			},
-			["desaturated"] = false,
-			["forceColor"] = false,
-			["fixedStrata"] = true,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["gap"] = 0,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["desaturated"] = false,
+			["moveFrames"] = false,
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontName"] = "Friz Quadrata TT",
-			["moveFrames"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+			["forceColor"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -537,7 +537,7 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 561374,
+		["total"] = 570676,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -618,7 +618,7 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 169089,
+		["total"] = 169176,
 	},
 	["Battlearm-Golemagg"] = {
 		["total"] = 2096,

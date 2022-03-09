@@ -17,6 +17,9 @@ local function BuyAmmo()
 	if playerLevel > 39 then
 		ammoLevel = 40
 	end
+	if playerLevel > 54 then
+		ammoLevel = 55
+	end
 
 
 	
