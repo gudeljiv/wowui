@@ -25,7 +25,6 @@ SpyDB = {
 	},
 	["profiles"] = {
 		["Vermin - Golemagg"] = {
-			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 828.6608276367188,
@@ -40,8 +39,9 @@ SpyDB = {
 					},
 				},
 			},
-			["AppendUnitKoSCheck"] = true,
+			["AppendUnitNameCheck"] = true,
 			["BarTexture"] = "Glamour2",
+			["AppendUnitKoSCheck"] = true,
 		},
 		["Mxyz - Golemagg"] = {
 			["AppendUnitNameCheck"] = true,
@@ -64,6 +64,7 @@ SpyDB = {
 			["HideSpy"] = true,
 		},
 		["Mxzq - Golemagg"] = {
+			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 803.5690307617188,
@@ -86,10 +87,9 @@ SpyDB = {
 					},
 				},
 			},
-			["HideSpy"] = true,
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
+			["MainWindowVis"] = false,
+			["HideSpy"] = true,
 		},
 	},
 }
