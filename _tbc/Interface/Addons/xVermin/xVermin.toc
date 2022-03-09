@@ -76,4 +76,6 @@ Rotation/_Core.lua
 Rotation/IsAOE.lua
 Rotation/Warrior.lua
 
+SpellCount/SpellCount.lua
+
 xVermin.lua

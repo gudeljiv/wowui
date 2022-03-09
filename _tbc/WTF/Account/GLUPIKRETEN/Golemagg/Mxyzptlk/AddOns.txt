@@ -1,4 +1,4 @@
-nPower: enabled
+nPower: disabled
 nHealth: enabled
 Immersion: disabled
 AdiBags: enabled
@@ -106,4 +106,3 @@ FarmHud: enabled
 FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: enabled
-TradeSkillMaster_AppHelper: enabled

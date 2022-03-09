@@ -7,6 +7,8 @@ SpyDB = {
 				},
 				["Mxzq"] = {
 				},
+				["Mxyzptlk"] = {
+				},
 				["Vermin"] = {
 				},
 			},
@@ -20,8 +22,9 @@ SpyDB = {
 	},
 	["profileKeys"] = {
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 	},
 	["profiles"] = {
 		["Vermin - Golemagg"] = {
@@ -43,27 +46,8 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 			["BarTexture"] = "Glamour2",
 		},
-		["Mxyz - Golemagg"] = {
-			["AppendUnitNameCheck"] = true,
-			["MainWindow"] = {
-				["Position"] = {
-					["y"] = 883.6232299804688,
-					["x"] = 513.337646484375,
-					["h"] = 34.99994277954102,
-				},
-			},
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["AppendUnitKoSCheck"] = true,
-			["MainWindowVis"] = false,
-			["HideSpy"] = true,
-		},
 		["Mxzq - Golemagg"] = {
+			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = 803.5690307617188,
@@ -86,7 +70,38 @@ SpyDB = {
 					},
 				},
 			},
+			["AppendUnitKoSCheck"] = true,
+			["MainWindowVis"] = false,
 			["HideSpy"] = true,
+		},
+		["Mxyz - Golemagg"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = 883.6232299804688,
+					["x"] = 513.337646484375,
+					["h"] = 34.99994277954102,
+				},
+			},
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+			["MainWindowVis"] = false,
+			["HideSpy"] = true,
+		},
+		["Mxyzptlk - Golemagg"] = {
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["AppendUnitKoSCheck"] = true,
