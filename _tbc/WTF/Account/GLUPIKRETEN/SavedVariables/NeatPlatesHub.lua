@@ -621,7 +621,7 @@ NeatPlatesHubSettings = {
 		["WidgetDebuffTrackList"] = "",
 		["BuffSeparationMode"] = 1,
 		["TextStatusForceShadow"] = false,
-		["OpacityFiltered"] = 0,
+		["OpacitySpotlight"] = 0.85,
 		["HeadlineFriendlySubtext"] = "RoleGuildLevel",
 		["OpacitySpotlightRaidMarked"] = false,
 		["StyleFriendlyBarsNoMinions"] = false,
@@ -704,7 +704,7 @@ NeatPlatesHubSettings = {
 		},
 		["LowHealthThreshold"] = 0.3,
 		["HighlightFocusMode"] = 1,
-		["OpacitySpotlight"] = 0.85,
+		["OpacityFiltered"] = 0,
 		["TextColorNormal"] = {
 			["a"] = 0.3999991118907929,
 			["r"] = 0.6509789824485779,

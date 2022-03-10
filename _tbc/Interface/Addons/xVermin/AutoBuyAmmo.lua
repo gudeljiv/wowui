@@ -21,7 +21,6 @@ local function BuyAmmo()
 		ammoLevel = 55
 	end
 
-
 	
 	if xVermin.Class ~= ("HUNTER" or "WARRIOR") then
 		return

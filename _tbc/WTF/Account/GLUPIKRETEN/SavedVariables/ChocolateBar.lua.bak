@@ -37,13 +37,13 @@ ChocolateBarDB = {
 		["Vermins - Stonespine"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
@@ -53,11 +53,6 @@ ChocolateBarDB = {
 	["addonVersion"] = "v3.7.7",
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["moveFrames"] = false,
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -78,7 +73,21 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
-			["fixedStrata"] = true,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["forceColor"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
+			},
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -460,27 +469,18 @@ ChocolateBarDB = {
 					["customLabel"] = "P",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
 			["desaturated"] = false,
-			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
 			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
-			},
+			["fontName"] = "Friz Quadrata TT",
+			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -573,7 +573,7 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 169089,
+		["total"] = 169684,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,
