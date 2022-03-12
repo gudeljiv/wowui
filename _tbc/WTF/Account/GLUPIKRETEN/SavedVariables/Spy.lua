@@ -5,9 +5,9 @@ SpyDB = {
 			["Horde"] = {
 				["Mxyz"] = {
 				},
-				["Mxyzptlk"] = {
-				},
 				["Mxzq"] = {
+				},
+				["Mxyzptlk"] = {
 				},
 				["Vermin"] = {
 				},
@@ -22,9 +22,9 @@ SpyDB = {
 	},
 	["profileKeys"] = {
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 	},
 	["profiles"] = {
 		["Vermin - Golemagg"] = {
@@ -45,38 +45,6 @@ SpyDB = {
 			},
 			["AppendUnitKoSCheck"] = true,
 			["BarTexture"] = "Glamour2",
-		},
-		["Mxyzptlk - Golemagg"] = {
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["AppendUnitKoSCheck"] = true,
-		},
-		["Mxyz - Golemagg"] = {
-			["MainWindow"] = {
-				["Position"] = {
-					["y"] = 883.6232299804688,
-					["x"] = 513.337646484375,
-					["h"] = 34.99994277954102,
-				},
-			},
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["HideSpy"] = true,
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
-			["AppendUnitKoSCheck"] = true,
 		},
 		["Mxzq - Golemagg"] = {
 			["AppendUnitNameCheck"] = true,
@@ -105,6 +73,38 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 			["MainWindowVis"] = false,
 			["HideSpy"] = true,
+		},
+		["Mxyz - Golemagg"] = {
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = 883.6232299804688,
+					["x"] = 513.337646484375,
+					["h"] = 34.99994277954102,
+				},
+			},
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["HideSpy"] = true,
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Mxyzptlk - Golemagg"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
 		},
 	},
 }
