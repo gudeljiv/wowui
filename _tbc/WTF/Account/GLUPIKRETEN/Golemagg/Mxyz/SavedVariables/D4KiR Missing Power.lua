@@ -10,10 +10,10 @@ MIPOPC = {
 	["experiment"] = false,
 	["customcolor"] = false,
 	["showtickbar"] = true,
-	["fontsize"] = 12,
+	["DEBUG"] = false,
 	["fontx"] = 0,
 	["shownextready"] = true,
 	["showamountcounter"] = true,
+	["fontsize"] = 12,
 	["fonty"] = 0,
-	["DEBUG"] = false,
 }

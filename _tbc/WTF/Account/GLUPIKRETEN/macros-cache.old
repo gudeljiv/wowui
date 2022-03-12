@@ -17,7 +17,7 @@ END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:8766
-/castsequence [combat] reset=combat item:6149
+/castsequence [combat] reset=combat item:13444,item:6149
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
@@ -25,9 +25,9 @@ VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 /castsequence [combat] reset=combat item:13446,item:3928
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:8952
 /cast feed pet
-/use item:0
+/use item:8952
 END
 VER 3 000000000000000B "TEST" "132089"
 /run SetBinding("F10", "NONE", 2)
