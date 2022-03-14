@@ -3,7 +3,7 @@ local _, xVermin = ...
 local _G, _M = getfenv(0), {}
 setfenv(1, setmetatable(_M, {__index = _G}))
 
-CreateFrame("GameTooltip", "SortBagsTooltip", nil, "GameTooltipTemplate")
+CreateFrame('GameTooltip', 'SortBagsTooltip', nil, 'GameTooltipTemplate')
 
 local CONTAINERS
 
@@ -37,7 +37,7 @@ end
 
 local function set(...)
 	local t = {}
-	local n = select("#", ...)
+	local n = select('#', ...)
 	for i = 1, n do
 		t[select(i, ...)] = true
 	end
@@ -46,7 +46,7 @@ end
 
 local function union(...)
 	local t = {}
-	local n = select("#", ...)
+	local n = select('#', ...)
 	for i = 1, n do
 		for k in pairs(select(i, ...)) do
 			t[k] = true
@@ -221,7 +221,7 @@ local CLASSES = {
 local model, itemStacks, itemClasses, itemSortKeys
 
 do
-	local f = CreateFrame "Frame"
+	local f = CreateFrame 'Frame'
 	f:Hide()
 
 	local timeout
@@ -237,7 +237,7 @@ do
 
 	local delay = 0
 	f:SetScript(
-		"OnUpdate",
+		'OnUpdate',
 		function(_, arg1)
 			if InCombatLockdown() or GetTime() > timeout then
 				f:Hide()
@@ -302,12 +302,12 @@ do
 		local text =
 			gsub(
 			ITEM_SPELL_CHARGES,
-			"(-?%d+)(.-)|4([^;]-);",
+			'(-?%d+)(.-)|4([^;]-);',
 			function(numberString, gap, numberForms)
 				local singular, dual, plural
-				_, _, singular, dual, plural = strfind(numberForms, "(.+):(.+):(.+)")
+				_, _, singular, dual, plural = strfind(numberForms, '(.+):(.+):(.+)')
 				if not singular then
-					_, _, singular, plural = strfind(numberForms, "(.+):(.+)")
+					_, _, singular, plural = strfind(numberForms, '(.+):(.+)')
 				end
 				local i = abs(tonumber(numberString))
 				local numberForm
@@ -330,23 +330,23 @@ do
 end
 
 function TooltipInfo(container, position)
-	SortBagsTooltip:SetOwner(UIParent, "ANCHOR_NONE")
+	SortBagsTooltip:SetOwner(UIParent, 'ANCHOR_NONE')
 	SortBagsTooltip:ClearLines()
 
 	if container == BANK_CONTAINER then
-		SortBagsTooltip:SetInventoryItem("player", BankButtonIDToInvSlotID(position))
+		SortBagsTooltip:SetInventoryItem('player', BankButtonIDToInvSlotID(position))
 	else
 		SortBagsTooltip:SetBagItem(container, position)
 	end
 
 	local charges, usable, soulbound, quest, conjured
 	for i = 1, SortBagsTooltip:NumLines() do
-		local text = getglobal("SortBagsTooltipTextLeft" .. i):GetText()
+		local text = getglobal('SortBagsTooltipTextLeft' .. i):GetText()
 
 		local charges = itemCharges(text)
 		if charges then
 			charges = charges
-		elseif strfind(text, "^" .. ITEM_SPELL_TRIGGER_ONUSE) then
+		elseif strfind(text, '^' .. ITEM_SPELL_TRIGGER_ONUSE) then
 			usable = true
 		elseif text == ITEM_SOULBOUND then
 			soulbound = true
@@ -516,9 +516,9 @@ end
 function Item(container, position)
 	local link = GetContainerItemLink(container, position)
 	if link then
-		local _, _, itemID, enchantID, suffixID, uniqueID = strfind(link, "item:(%d+):(%d*):(%d*):(%d*)")
+		local _, _, itemID, enchantID, suffixID, uniqueID = strfind(link, 'item:(%d+):(%d*):(%d*):(%d*)')
 		itemID = tonumber(itemID)
-		local _, _, quality, _, _, _, _, stack, slot, _, sellPrice, classId, subClassId = GetItemInfo("item:" .. itemID)
+		local _, _, quality, _, _, _, _, stack, slot, _, sellPrice, classId, subClassId = GetItemInfo('item:' .. itemID)
 		local charges, usable, soulbound, quest, conjured = TooltipInfo(container, position)
 
 		local sortKey = {}
@@ -587,7 +587,7 @@ function Item(container, position)
 		tinsert(sortKey, enchantID)
 		tinsert(sortKey, uniqueID)
 
-		local key = format("%s:%s:%s:%s:%s:%s", itemID, enchantID, suffixID, uniqueID, charges, (soulbound and 1 or 0))
+		local key = format('%s:%s:%s:%s:%s:%s', itemID, enchantID, suffixID, uniqueID, charges, (soulbound and 1 or 0))
 
 		itemStacks[key] = stack
 		itemSortKeys[key] = sortKey
@@ -610,15 +610,15 @@ end
 -- 	end
 -- )
 
-local f = CreateFrame("frame")
+local f = CreateFrame('frame')
 f:SetScript(
-	"OnEvent",
+	'OnEvent',
 	function(self, event)
 		C_Timer.After(
 			5,
 			function()
 				SortBags()
-				if event == "BANKFRAME_OPENED" or event == "BANKFRAME_CLOSED" then
+				if event == 'BANKFRAME_OPENED' or event == 'BANKFRAME_CLOSED' then
 					SortBankBags()
 				end
 				ResetNewItemsAdiBags()

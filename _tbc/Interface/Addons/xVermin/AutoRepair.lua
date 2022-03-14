@@ -6,7 +6,7 @@ local function AutoRepair()
 		if (canRepair == true) then
 			if (repairAllCost <= GetMoney()) then
 				RepairAllItems(false)
-				ChatFrame6:AddMessage("Your items have been repaired for " .. GetCoinText(repairAllCost, ", ") .. ".", 255, 255, 0)
+				ChatFrame6:AddMessage('Your items have been repaired for ' .. GetCoinText(repairAllCost, ', ') .. '.', 255, 255, 0)
 			else
 				ChatFrame6:AddMessage("You don't have enough money for repair!", 255, 0, 0)
 			end
@@ -14,6 +14,6 @@ local function AutoRepair()
 	end
 end
 
-local f = CreateFrame("frame")
-f:SetScript("OnEvent", AutoRepair)
-f:RegisterEvent("MERCHANT_SHOW")
+local f = CreateFrame('frame')
+f:SetScript('OnEvent', AutoRepair)
+f:RegisterEvent('MERCHANT_SHOW')

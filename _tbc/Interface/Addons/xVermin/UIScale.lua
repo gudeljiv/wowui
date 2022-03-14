@@ -1,10 +1,10 @@
 local _, xVermin = ...
 
-local f = CreateFrame("Frame")
-f:RegisterEvent("VARIABLES_LOADED")
-f:RegisterEvent("UI_SCALE_CHANGED")
+local f = CreateFrame('Frame')
+f:RegisterEvent('VARIABLES_LOADED')
+f:RegisterEvent('UI_SCALE_CHANGED')
 f:SetScript(
-	"OnEvent",
+	'OnEvent',
 	function(self, event)
 		if not InCombatLockdown() then
 			-- -- pixel perfect ???!??!
@@ -20,11 +20,11 @@ f:SetScript(
 			-- end
 			UIParent:SetScale(xVermin.Config.UIscale)
 		else
-			self:RegisterEvent("PLAYER_REGEN_ENABLED")
+			self:RegisterEvent('PLAYER_REGEN_ENABLED')
 		end
 
-		if event == "PLAYER_REGEN_ENABLED" then
-			self:UnregisterEvent("PLAYER_REGEN_ENABLED")
+		if event == 'PLAYER_REGEN_ENABLED' then
+			self:UnregisterEvent('PLAYER_REGEN_ENABLED')
 		end
 	end
 )

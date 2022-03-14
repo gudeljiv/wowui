@@ -8,37 +8,37 @@ local resolution = ({GetScreenResolutions()})[GetCurrentResolution()]
 xVermin.Config = {
 	UIscale = 0.58,
 	font = {
-		arial = "Fonts\\ARIALN.ttf",
-		atari = "Interface\\AddOns\\xVermin\\Media\\Atari.ttf",
-		damage = "Interface\\AddOns\\xVermin\\Media\\Damage.ttf"
+		arial = 'Fonts\\ARIALN.ttf',
+		atari = 'Interface\\AddOns\\xVermin\\Media\\Atari.ttf',
+		damage = 'Interface\\AddOns\\xVermin\\Media\\Damage.ttf'
 	},
 	background = {
-		white = "Interface\\Buttons\\WHITE8x8"
+		white = 'Interface\\Buttons\\WHITE8x8'
 	},
 	border = {
-		default = "Interface\\AddOns\\xVermin\\Media\\textureNormal",
-		colorize = "Interface\\AddOns\\xVermin\\Media\\textureWhite",
-		glow = "Interface\\AddOns\\xVermin\\Media\\textureGlow",
+		default = 'Interface\\AddOns\\xVermin\\Media\\textureNormal',
+		colorize = 'Interface\\AddOns\\xVermin\\Media\\textureWhite',
+		glow = 'Interface\\AddOns\\xVermin\\Media\\textureGlow',
 		iq = {
-			"Interface\\AddOns\\xVermin\\Media\\ItemQuality0",
-			"Interface\\AddOns\\xVermin\\Media\\ItemQuality1",
-			"Interface\\AddOns\\xVermin\\Media\\ItemQuality2",
-			"Interface\\AddOns\\xVermin\\Media\\ItemQuality3",
-			"Interface\\AddOns\\xVermin\\Media\\ItemQuality4",
-			"Interface\\AddOns\\xVermin\\Media\\ItemQuality5",
-			"Interface\\AddOns\\xVermin\\Media\\ItemQuality6",
-			"Interface\\AddOns\\xVermin\\Media\\ItemQuality7"
+			'Interface\\AddOns\\xVermin\\Media\\ItemQuality0',
+			'Interface\\AddOns\\xVermin\\Media\\ItemQuality1',
+			'Interface\\AddOns\\xVermin\\Media\\ItemQuality2',
+			'Interface\\AddOns\\xVermin\\Media\\ItemQuality3',
+			'Interface\\AddOns\\xVermin\\Media\\ItemQuality4',
+			'Interface\\AddOns\\xVermin\\Media\\ItemQuality5',
+			'Interface\\AddOns\\xVermin\\Media\\ItemQuality6',
+			'Interface\\AddOns\\xVermin\\Media\\ItemQuality7'
 		}
 	},
 	buff = {
 		scale = 1.3,
 		fontsize = 9,
-		outline = "THINOUTLINE",
+		outline = 'THINOUTLINE',
 		bordersize = 6,
 		position = {
-			"BOTTOMRIGHT",
+			'BOTTOMRIGHT',
 			frame,
-			"BOTTOMRIGHT",
+			'BOTTOMRIGHT',
 			0,
 			2
 		}
@@ -46,36 +46,36 @@ xVermin.Config = {
 	debuff = {
 		scale = 1.3,
 		fontsize = 9,
-		outline = "THINOUTLINE",
+		outline = 'THINOUTLINE',
 		bordersize = 6,
 		position = {
-			"BOTTOMRIGHT",
+			'BOTTOMRIGHT',
 			frame,
-			"BOTTOMRIGHT",
+			'BOTTOMRIGHT',
 			0,
 			2
 		}
 	},
 	petbuff = {
 		fontsize = 9,
-		outline = "THINOUTLINE",
+		outline = 'THINOUTLINE',
 		bordersize = 6,
 		position = {
-			"BOTTOMRIGHT",
+			'BOTTOMRIGHT',
 			frame,
-			"BOTTOMRIGHT",
+			'BOTTOMRIGHT',
 			0,
 			2
 		}
 	},
 	petdebuff = {
 		fontsize = 9,
-		outline = "THINOUTLINE",
+		outline = 'THINOUTLINE',
 		bordersize = 6,
 		position = {
-			"BOTTOMRIGHT",
+			'BOTTOMRIGHT',
 			frame,
-			"BOTTOMRIGHT",
+			'BOTTOMRIGHT',
 			0,
 			2
 		}
@@ -107,52 +107,50 @@ xVermin.Config = {
 	}
 }
 
-
 local function GatherData()
-	
 	xVermin.Config.Data = {}
 	xVermin.Config.Data.player = {
-		health ={ 
-			current = UnitHealth("player"),
-			max = UnitHealthMax("player"),
-			percentage = tonumber(string.format("%.0f", UnitHealth("player") / UnitHealthMax("player") * 100)),
+		health = {
+			current = UnitHealth('player'),
+			max = UnitHealthMax('player'),
+			percentage = tonumber(string.format('%.0f', UnitHealth('player') / UnitHealthMax('player') * 100))
 		},
-		mana ={ 
-			current = UnitPower("player"),
-			max = UnitPowerMax("player"),
-			percentage = tonumber(string.format("%.0f", UnitPower("player") / UnitPowerMax("player") * 100)),
+		mana = {
+			current = UnitPower('player'),
+			max = UnitPowerMax('player'),
+			percentage = tonumber(string.format('%.0f', UnitPower('player') / UnitPowerMax('player') * 100))
 		},
-		xp ={ 
-			current = UnitXP("player"),
-			max = UnitXPMax("player"),
-			percentage = tonumber(string.format("%.0f", UnitXP("player") / UnitXPMax("player") * 100)),
+		xp = {
+			current = UnitXP('player'),
+			max = UnitXPMax('player'),
+			percentage = tonumber(string.format('%.0f', UnitXP('player') / UnitXPMax('player') * 100))
 		}
 	}
 
 	xVermin.Config.Data.target = {
 		exists = false,
-		health ={},
-		mana ={},
-		xp ={}
+		health = {},
+		mana = {},
+		xp = {}
 	}
 
-	if UnitExists("target") then
+	if UnitExists('target') then
 		xVermin.Config.Data.target = {
 			exists = true,
-			health ={ 
-				current = UnitHealth("target"),
-				max = UnitHealthMax("target"),
-				percentage = tonumber(string.format("%.0f", UnitHealth("target") / UnitHealthMax("target") * 100)),
+			health = {
+				current = UnitHealth('target'),
+				max = UnitHealthMax('target'),
+				percentage = tonumber(string.format('%.0f', UnitHealth('target') / UnitHealthMax('target') * 100))
 			},
-			mana ={ 
-				current = UnitPower("target"),
-				max = UnitPowerMax("target"),
-				percentage = tonumber(string.format("%.0f", UnitPower("target") / UnitPowerMax("target") * 100)),
+			mana = {
+				current = UnitPower('target'),
+				max = UnitPowerMax('target'),
+				percentage = tonumber(string.format('%.0f', UnitPower('target') / UnitPowerMax('target') * 100))
 			},
-			xp ={ 
-				current = UnitXP("target"),
-				max = UnitXPMax("target"),
-				percentage = tonumber(string.format("%.0f", UnitXP("target") / UnitXPMax("target") * 100)),
+			xp = {
+				current = UnitXP('target'),
+				max = UnitXPMax('target'),
+				percentage = tonumber(string.format('%.0f', UnitXP('target') / UnitXPMax('target') * 100))
 			}
 		}
 	end

@@ -28,7 +28,7 @@ local function BorderItemInspectSlots(counter)
 	) do
 		v:CreateBeautyBorder(8)
 
-		itemLink = GetInventoryItemLink("target", i)
+		itemLink = GetInventoryItemLink('target', i)
 		-- print(i, itemLink)
 		if (itemLink) then
 			_, _, itemRarity = GetItemInfo(itemLink)
@@ -48,15 +48,15 @@ local function BorderItemInspectSlots(counter)
 end
 
 local InspectFrameHooked = false
-local addonLoadedFrame = CreateFrame("Frame")
-addonLoadedFrame:RegisterEvent("ADDON_LOADED")
+local addonLoadedFrame = CreateFrame('Frame')
+addonLoadedFrame:RegisterEvent('ADDON_LOADED')
 addonLoadedFrame:SetScript(
-	"OnEvent",
+	'OnEvent',
 	function(self, event, arg1, ...)
-		if not InspectFrameHooked and arg1 == "Blizzard_InspectUI" then
+		if not InspectFrameHooked and arg1 == 'Blizzard_InspectUI' then
 			hooksecurefunc(
 				InspectFrame,
-				"Show",
+				'Show',
 				function()
 					local counter = 0
 					C_Timer.After(

@@ -1,21 +1,21 @@
 local _, xVermin = ...
 
-local f = CreateFrame("Frame")
+local f = CreateFrame('Frame')
 f:SetScript(
-	"OnEvent",
+	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
 		if isInitialLogin or isReloadingUi then
-			if (IsAddOnLoaded("MonkeyQuest")) then
+			if (IsAddOnLoaded('MonkeyQuest')) then
 				if not MonkeyQuestFrame.SetBackdrop then
 					Mixin(MonkeyQuestFrame, BackdropTemplateMixin)
 				end
 				MonkeyQuestFrame:ClearAllPoints()
-				MonkeyQuestFrame:SetPoint("TOPRIGHT", "CustomContainer_2", "BOTTOMRIGHT", 0, -10)
+				MonkeyQuestFrame:SetPoint('TOPRIGHT', 'CustomContainer_2', 'BOTTOMRIGHT', 0, -10)
 				MonkeyQuestFrame:CreateBeautyBorder(8)
 				MonkeyQuestFrame:SetBackdrop(
 					{
-						bgFile = "Interface\\Buttons\\WHITE8x8",
-						edgeFile = "",
+						bgFile = 'Interface\\Buttons\\WHITE8x8',
+						edgeFile = '',
 						tile = false,
 						tileSize = 0,
 						edgeSize = 0,
@@ -33,8 +33,8 @@ f:SetScript(
 				end
 				MkQL_Main_Frame:SetBackdrop(
 					{
-						bgFile = "Interface\\Buttons\\WHITE8x8",
-						edgeFile = "",
+						bgFile = 'Interface\\Buttons\\WHITE8x8',
+						edgeFile = '',
 						tile = false,
 						tileSize = 0,
 						edgeSize = 0,
@@ -45,10 +45,10 @@ f:SetScript(
 				MkQL_Main_Frame:CreateBeautyBorder(8)
 
 				for i = 1, 50 do
-					local frame = _G["MkQL_RewardItem" .. i .. "_Btn"]
-					
+					local frame = _G['MkQL_RewardItem' .. i .. '_Btn']
+
 					if (frame ~= nil) then
-						local texture = _G["MkQL_RewardItem" .. i .. "_BtnIconTexture"]
+						local texture = _G['MkQL_RewardItem' .. i .. '_BtnIconTexture']
 
 						if not frame.SetBackdrop then
 							Mixin(frame, BackdropTemplateMixin)
@@ -59,11 +59,10 @@ f:SetScript(
 
 						-- frame:CreateBeautyBorder(8)
 						texture:SetTexCoord(0.08, 0.92, 0.08, 0.92)
-
 					end
 				end
 			end
 		end
 	end
 )
-f:RegisterEvent("PLAYER_ENTERING_WORLD")
+f:RegisterEvent('PLAYER_ENTERING_WORLD')

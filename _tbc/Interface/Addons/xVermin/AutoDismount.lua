@@ -16,6 +16,6 @@ local function CheckDismount(self, event, ...)
 	UIErrorsFrame:Clear()
 end
 
-local f = CreateFrame("Frame")
-f:RegisterEvent("UI_ERROR_MESSAGE")
-f:SetScript("OnEvent", CheckDismount)
+local f = CreateFrame('Frame')
+f:RegisterEvent('UI_ERROR_MESSAGE')
+f:SetScript('OnEvent', CheckDismount)

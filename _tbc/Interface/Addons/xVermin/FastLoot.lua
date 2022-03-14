@@ -4,7 +4,7 @@ local delay = 0
 local function FastLoot()
 	if GetTime() - delay >= 0.3 then
 		delay = GetTime()
-		if GetCVarBool("autoLootDefault") ~= IsModifiedClick("AUTOLOOTTOGGLE") then
+		if GetCVarBool('autoLootDefault') ~= IsModifiedClick('AUTOLOOTTOGGLE') then
 			for i = GetNumLootItems(), 1, -1 do
 				LootSlot(i)
 			end
@@ -13,6 +13,6 @@ local function FastLoot()
 	end
 end
 
-local f = CreateFrame("Frame")
-f:RegisterEvent("LOOT_READY")
-f:SetScript("OnEvent", FastLoot)
+local f = CreateFrame('Frame')
+f:RegisterEvent('LOOT_READY')
+f:SetScript('OnEvent', FastLoot)

@@ -33,12 +33,12 @@ local function Calculate()
 		local seconds = time % 60
 
 		if (durationStr ~= nil) then
-			durationStr = durationStr .. " - "
+			durationStr = durationStr .. ' - '
 		else
-			durationStr = ""
+			durationStr = ''
 		end
 
-		durationStr = durationStr .. minutes .. ":" .. string.format("%02d", seconds)
+		durationStr = durationStr .. minutes .. ':' .. string.format('%02d', seconds)
 	end
 
 	local rem = oldestTime and (oldestTime + 3600 - now)
@@ -46,8 +46,8 @@ local function Calculate()
 	local instanceStr
 
 	if count > 0 then
-		instanceStr = string.format("You have entered %d instances recently.\n More instances will be available in %s.", count, rem and SecondsToTime(rem) or "n/a")
+		instanceStr = string.format('You have entered %d instances recently.\n More instances will be available in %s.', count, rem and SecondsToTime(rem) or 'n/a')
 	end
 
-	return instanceStr or "", durationStr or ""
+	return instanceStr or '', durationStr or ''
 end

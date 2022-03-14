@@ -1,10 +1,9 @@
 local _, xVermin = ...
 
-
 -- local function CheckDebuff(d)
--- 	for i=1,40 do 
+-- 	for i=1,40 do
 -- 		local debuff = UnitDebuff("target",i)
--- 		if debuff then 
+-- 		if debuff then
 -- 			if debuff == d then
 -- 				return false
 -- 			else
@@ -16,7 +15,7 @@ local _, xVermin = ...
 
 -- local function Show()
 -- 	if not InCombatLockdown() then return end
-	
+
 -- 	t_hp_percentage = tonumber(string.format("%.0f", UnitHealth("target") / UnitHealthMax("target") * 100))
 
 -- 	if not CheckDebuff("Rend") and t_hp_percentage > 20 and not UnitIsDead("target") then
@@ -35,11 +34,7 @@ local _, xVermin = ...
 -- 	end
 -- )
 
-
-
-
 -- local targetHP = format("%.0f", (UnitHealth("target") / UnitHealthMax("target")) * 100)
-
 
 -- PlayerFrame:HookScript("OnUpdate", THealthShow)
 
@@ -51,14 +46,14 @@ local _, xVermin = ...
 -- 		if unit ~= "target" then return end
 -- 		if InCombatLockdown() then return end
 
--- 		for i=1,40 do 
+-- 		for i=1,40 do
 -- 			local debuff = UnitDebuff("target",i)
 -- 			print(debuff)
--- 			if debuff and debuff == "Rend" then 
+-- 			if debuff and debuff == "Rend" then
 -- 				print("rend")
 -- 			else
 -- 				print("no rend")
--- 			end 
+-- 			end
 -- 		end
 
 -- 	else
@@ -88,43 +83,40 @@ local _, xVermin = ...
 
 -- 		local data = {
 -- 			player = {
--- 				health ={ 
+-- 				health ={
 -- 					current = UnitHealth("player"),
 -- 					max = UnitHealthMax("player"),
 -- 					percentage = string.format("%.f", data.player.health.current / data.player.health.max * 100),
 -- 				},
--- 				mana ={ 
+-- 				mana ={
 -- 					current = UnitMana("player"),
 -- 					max = UnitManaMax("player"),
 -- 					percentage = string.format("%.f", data.player.mana.current / data.player.mana.max * 100),
 -- 				},
--- 				xp ={ 
+-- 				xp ={
 -- 					current = UnitXP("player"),
 -- 					max = UnitXPMax("player"),
 -- 					percentage = string.format("%.f", data.player.xp.current / data.player.xp.max * 100),
 -- 				}
 -- 			},
 -- 			target = {
--- 				health ={ 
+-- 				health ={
 -- 					current = UnitHealth("target"),
 -- 					max = UnitHealthMax("target"),
 -- 					percentage = string.format("%.f", data.target.health.current / data.target.health.max * 100),
 -- 				},
--- 				mana ={ 
+-- 				mana ={
 -- 					current = UnitMana("target"),
 -- 					max = UnitManaMax("target"),
 -- 					percentage = string.format("%.f", data.target.mana.current / data.target.mana.max * 100),
 -- 				},
--- 				xp ={ 
+-- 				xp ={
 -- 					current = UnitXP("target"),
 -- 					max = UnitXPMax("target"),
 -- 					percentage = string.format("%.f", data.target.xp.current / data.target.xp.max * 100),
 -- 				}
 -- 			}
 -- 		}
-
-		
-
 
 -- 	end
 -- )

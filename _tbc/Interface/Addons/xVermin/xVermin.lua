@@ -1,8 +1,9 @@
 local _, xVermin = ...
 
-local f = CreateFrame("Frame")
-f:RegisterEvent("PLAYER_ENTERING_WORLD")
-f:SetScript("OnEvent",
+local f = CreateFrame('Frame')
+f:RegisterEvent('PLAYER_ENTERING_WORLD')
+f:SetScript(
+	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
 		if isInitialLogin or isReloadingUi then
 			SHOW_MULTI_ACTIONBAR_1 = 1
@@ -17,10 +18,10 @@ f:SetScript("OnEvent",
 			-- Position of choco bars
 			-------------------------------------------
 			ChocolateBar1:ClearAllPoints()
-			ChocolateBar1:SetPoint("LEFT", CustomContainer_1, "LEFT", 5, 0)
+			ChocolateBar1:SetPoint('LEFT', CustomContainer_1, 'LEFT', 5, 0)
 			ChocolateBar1:SetWidth(145)
 			ChocolateBar2:ClearAllPoints()
-			ChocolateBar2:SetPoint("LEFT", CustomContainer_2, "LEFT", 5, 0)
+			ChocolateBar2:SetPoint('LEFT', CustomContainer_2, 'LEFT', 5, 0)
 			ChocolateBar2:SetWidth(145)
 
 			-------------------------------------------
@@ -30,12 +31,12 @@ f:SetScript("OnEvent",
 				Mixin(BNToastFrame, BackdropTemplateMixin)
 			end
 			BNToastFrame:ClearAllPoints()
-			BNToastFrame:SetPoint("BOTTOMLEFT", ChatFrame4, "TOPLEFT", 0, 35)
+			BNToastFrame:SetPoint('BOTTOMLEFT', ChatFrame4, 'TOPLEFT', 0, 35)
 			BNToastFrame.CloseButton:Hide()
 			BNToastFrame:SetBackdrop(
 				{
-					bgFile = "Interface\\Buttons\\WHITE8x8",
-					edgeFile = "",
+					bgFile = 'Interface\\Buttons\\WHITE8x8',
+					edgeFile = '',
 					tile = false,
 					tileSize = 0,
 					edgeSize = 0,
@@ -45,17 +46,19 @@ f:SetScript("OnEvent",
 			BNToastFrame:SetBackdropColor(0, 0, 0, 0.75)
 			BNToastFrame:SetWidth(250)
 			BNToastFrame:CreateBeautyBorder(8)
-			BNToastFrame.ClearAllPoints = function() end
-			BNToastFrame.SetPoint = function() end
+			BNToastFrame.ClearAllPoints = function()
+			end
+			BNToastFrame.SetPoint = function()
+			end
 
 			-------------------------------------------
 			-- Reposition loot frame.
 			-------------------------------------------
 			LootFrame:HookScript(
-				"OnShow",
+				'OnShow',
 				function(self)
 					LootFrame:ClearAllPoints()
-					LootFrame:SetPoint("BOTTOMLEFT", CustomContainer_Combat, "TOPLEFT", 450, 500)
+					LootFrame:SetPoint('BOTTOMLEFT', CustomContainer_Combat, 'TOPLEFT', 450, 500)
 				end
 			)
 
@@ -63,10 +66,10 @@ f:SetScript("OnEvent",
 			-- Reposition quest timer frame.
 			-------------------------------------------
 			QuestTimerFrame:HookScript(
-				"OnUpdate",
+				'OnUpdate',
 				function(self)
 					QuestTimerFrame:ClearAllPoints()
-					QuestTimerFrame:SetPoint("BOTTOMRIGHT", CustomContainer_2, "BOTTOMLEFT", 0, -9)
+					QuestTimerFrame:SetPoint('BOTTOMRIGHT', CustomContainer_2, 'BOTTOMLEFT', 0, -9)
 				end
 			)
 
@@ -84,45 +87,47 @@ f:SetScript("OnEvent",
 			-- CastingBarFrame Text
 			-------------------------------------------
 			CastingBarFrame.Text:ClearAllPoints()
-			CastingBarFrame.Text:SetPoint("CENTER", CastingBarFrame, 0, 2)
+			CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)
 
 			-------------------------------------------
 			-- minimap
 			-------------------------------------------
 			Minimap:ClearAllPoints()
-			Minimap:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -40, -40)
+			Minimap:SetPoint('TOPRIGHT', UIParent, 'TOPRIGHT', -40, -40)
 			-- Minimap.SetPoint = function() end
 
 			-------------------------------------------
 			--- pet, player and target frame positioning
 			-------------------------------------------
 			PetFrame:HookScript(
-				"OnUpdate",
+				'OnUpdate',
 				function(self)
-					PetFrameHealthBarText:SetFont(xVermin.Config.font.atari, 10, "THINOUTLINE")
-					PetFrameHealthBarText:SetPoint("TOPRIGHT", PetFrameHealthBar, "TOPRIGHT", 0, 2)
-					PetFrameHealthBarText:SetPoint("TOPRIGHT", PetFrameHealthBar, "TOPRIGHT", 2, -22)
-					PetFrameHealthBarText.SetPoint = function() end
-					PetFrameManaBarText:SetFont(xVermin.Config.font.atari, 10, "THINOUTLINE")
-					PetFrameManaBarText:SetPoint("TOPRIGHT", PetFrameManaBar, "TOPRIGHT", 0, 0)
-					PetFrameManaBarText.SetPoint = function() end
+					PetFrameHealthBarText:SetFont(xVermin.Config.font.atari, 10, 'THINOUTLINE')
+					PetFrameHealthBarText:SetPoint('TOPRIGHT', PetFrameHealthBar, 'TOPRIGHT', 0, 2)
+					PetFrameHealthBarText:SetPoint('TOPRIGHT', PetFrameHealthBar, 'TOPRIGHT', 2, -22)
+					PetFrameHealthBarText.SetPoint = function()
+					end
+					PetFrameManaBarText:SetFont(xVermin.Config.font.atari, 10, 'THINOUTLINE')
+					PetFrameManaBarText:SetPoint('TOPRIGHT', PetFrameManaBar, 'TOPRIGHT', 0, 0)
+					PetFrameManaBarText.SetPoint = function()
+					end
 					PetFrameHealthBarText:Hide()
 					PetFrameManaBarText:Hide()
 					PetName:Hide()
 				end
 			)
-			
+
 			-- PlayerFrame:HookScript(
 			-- 	"OnUpdate",
 			-- 	function(self)
 			-- 		if PlayerName then PlayerName:Hide() end
-			-- 		if PlayerFrameHealthBarText then 
+			-- 		if PlayerFrameHealthBarText then
 			-- 			PlayerFrameHealthBarText:ClearAllPoints()
 			-- 			PlayerFrameHealthBarText:SetPoint("CENTER", PlayerFrameHealthBar, "CENTER", 0, 0)
 			-- 			PlayerFrameHealthBarText:SetScale(1.5)
 			-- 			PlayerFrameHealthBarText:Show()
 			-- 		end
-			-- 		if PlayerFrameManaBarText then 
+			-- 		if PlayerFrameManaBarText then
 			-- 			PlayerFrameManaBarText:ClearAllPoints()
 			-- 			PlayerFrameManaBarText:SetPoint("CENTER", PlayerFrameManaBar, "CENTER", 0, -1)
 			-- 			PlayerFrameManaBarText:SetScale(1.2)
@@ -145,13 +150,13 @@ f:SetScript("OnEvent",
 			-- 		end
 
 			-- 		if TargetFrameHealthBarText then TargetFrameHealthBarText:Hide() end
-			-- 		if TargetFrameTextureFrameName then 
+			-- 		if TargetFrameTextureFrameName then
 			-- 			TargetFrameTextureFrameName:Show()
 			-- 			TargetFrameTextureFrameName:ClearAllPoints()
 			-- 			TargetFrameTextureFrameName:SetPoint("CENTER", TargetFrameHealthBar, "CENTER", 0, 6)
 			-- 			TargetFrameTextureFrameName:SetScale(1.4)
 			-- 		end
-			-- 		if TargetFrameTextureFrame and TargetFrameTextureFrame.HealthBarText then 
+			-- 		if TargetFrameTextureFrame and TargetFrameTextureFrame.HealthBarText then
 			-- 			TargetFrameTextureFrame.HealthBarText:ClearAllPoints()
 			-- 			TargetFrameTextureFrame.HealthBarText:SetPoint("CENTER", TargetFrameHealthBar, "CENTER", 0, -5)
 			-- 			TargetFrameTextureFrame.HealthBarText:SetScale(1.6)
@@ -159,7 +164,7 @@ f:SetScript("OnEvent",
 			-- 			TargetFrameTextureFrameDeadText:SetPoint("CENTER", TargetFrameHealthBar, "CENTER", 0, -5)
 			-- 			TargetFrameTextureFrameDeadText:SetScale(1.6)
 			-- 		end
-			-- 		if TargetFrameTextureFrame and TargetFrameTextureFrame.ManaBarText then 
+			-- 		if TargetFrameTextureFrame and TargetFrameTextureFrame.ManaBarText then
 			-- 			TargetFrameTextureFrame.ManaBarText:ClearAllPoints()
 			-- 			TargetFrameTextureFrame.ManaBarText:SetPoint("CENTER", TargetFrameManaBar, "CENTER", 0, -1)
 			-- 			TargetFrameTextureFrame.ManaBarText:SetScale(1.2)
@@ -188,13 +193,13 @@ f:SetScript("OnEvent",
 			-- 		end
 
 			-- 		if FocusFrameHealthBarText then FocusFrameHealthBarText:Hide() end
-			-- 		if FocusFrameTextureFrameName then 
+			-- 		if FocusFrameTextureFrameName then
 			-- 			FocusFrameTextureFrameName:Show()
 			-- 			FocusFrameTextureFrameName:ClearAllPoints()
 			-- 			FocusFrameTextureFrameName:SetPoint("CENTER", FocusFrameHealthBar, "CENTER", 0, 6)
 			-- 			FocusFrameTextureFrameName:SetScale(1.4)
 			-- 		end
-			-- 		if FocusFrameTextureFrame and FocusFrameTextureFrame.HealthBarText then 
+			-- 		if FocusFrameTextureFrame and FocusFrameTextureFrame.HealthBarText then
 			-- 			FocusFrameTextureFrame.HealthBarText:ClearAllPoints()
 			-- 			FocusFrameTextureFrame.HealthBarText:SetPoint("CENTER", FocusFrameHealthBar, "CENTER", 0, -5)
 			-- 			FocusFrameTextureFrame.HealthBarText:SetScale(1.6)
@@ -202,7 +207,7 @@ f:SetScript("OnEvent",
 			-- 			FocusFrameTextureFrameDeadText:SetPoint("CENTER", FocusFrameHealthBar, "CENTER", 0, -5)
 			-- 			FocusFrameTextureFrameDeadText:SetScale(1.6)
 			-- 		end
-			-- 		if FocusFrameTextureFrame and FocusFrameTextureFrame.ManaBarText then 
+			-- 		if FocusFrameTextureFrame and FocusFrameTextureFrame.ManaBarText then
 			-- 			FocusFrameTextureFrame.ManaBarText:ClearAllPoints()
 			-- 			FocusFrameTextureFrame.ManaBarText:SetPoint("CENTER", FocusFrameManaBar, "CENTER", 0, -1)
 			-- 			FocusFrameTextureFrame.ManaBarText:SetScale(1.2)
@@ -217,24 +222,29 @@ f:SetScript("OnEvent",
 			-- )
 
 			PlayerFrame:ClearAllPoints()
-			PlayerFrame:SetPoint("CENTER", UIParent, "CENTER", -250, -96)
-			PlayerFrame.ClearAllPoints = function() end
-			PlayerFrame.SetPoint = function() end
+			PlayerFrame:SetPoint('CENTER', UIParent, 'CENTER', -250, -96)
+			PlayerFrame.ClearAllPoints = function()
+			end
+			PlayerFrame.SetPoint = function()
+			end
 
 			TargetFrame:ClearAllPoints()
-			TargetFrame:SetPoint("CENTER", UIParent, "CENTER", 250, -96)
-			TargetFrame.ClearAllPoints = function() end
-			TargetFrame.SetPoint = function() end
+			TargetFrame:SetPoint('CENTER', UIParent, 'CENTER', 250, -96)
+			TargetFrame.ClearAllPoints = function()
+			end
+			TargetFrame.SetPoint = function()
+			end
 
 			FocusFrame:ClearAllPoints()
-			FocusFrame:SetPoint("CENTER", TargetFrame, "CENTER", 200, 100)
-			FocusFrame.ClearAllPoints = function() end
-			FocusFrame.SetPoint = function() end
+			FocusFrame:SetPoint('CENTER', TargetFrame, 'CENTER', 200, 100)
+			FocusFrame.ClearAllPoints = function()
+			end
+			FocusFrame.SetPoint = function()
+			end
 
 			PlayerFrameManaBarText:SetScale(0.8)
 			TargetFrameTextureFrame.ManaBarText:SetScale(0.8)
 			FocusFrameTextureFrame.ManaBarText:SetScale(0.8)
-
 		end
 
 		MiniMapWorldMapButton:Hide()
@@ -248,7 +258,6 @@ f:SetScript("OnEvent",
 -- end
 -- hooksecurefunc("TargetFrame_CheckClassification", TargetFrameTextAdjustment)
 
-
 --------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -256,38 +265,31 @@ f:SetScript("OnEvent",
 --------------------------------------------------------------------------------------------------------------------------------------
 
 -- local function ListBuffs()
--- 	for i=1,40 do 
+-- 	for i=1,40 do
 -- 		local name, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellId=UnitBuff("target",i)
--- 		if name then 
+-- 		if name then
 -- 			print(i.."="..name..", "..icon..", "..format("%.2f",-1*(GetTime()-expirationTime)/60).." minutes left.")
--- 		end 
+-- 		end
 -- 	end
 -- end
-
 
 -- local tf = CreateFrame("Frame")
 -- tf:RegisterEvent("PLAYER_TARGET_CHANGED")
 -- tf:SetScript("OnEvent", ListBuffs)
 -- TargetFrame:HookScript("OnUpdate", ListBuffs)
 -- hooksecurefunc("TargetFrame_UpdateAuras", ListBuffs)
-
-
 
 -- local function ListBuffs()
--- 	for i=1,40 do 
+-- 	for i=1,40 do
 -- 		local name, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellId = UnitAura("target", i)
--- 		if name then 
+-- 		if name then
 -- 			print(i, "name:", name, "icon:", icon, "count:", count, "duration:", duration, "exp:", expirationTime)
--- 		end 
+-- 		end
 -- 	end
 -- end
-
 
 -- local tf = CreateFrame("Frame")
 -- tf:RegisterEvent("PLAYER_TARGET_CHANGED")
 -- tf:SetScript("OnEvent", ListBuffs)
 -- TargetFrame:HookScript("OnUpdate", ListBuffs)
 -- hooksecurefunc("TargetFrame_UpdateAuras", ListBuffs)
-
-
-

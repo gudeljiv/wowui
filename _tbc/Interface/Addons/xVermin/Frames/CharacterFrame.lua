@@ -7,11 +7,11 @@ local _, xVermin = ...
 -- 	self.Glowborder:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT", 6, -6)
 -- 	self.Glowborder:SetBackdrop(
 -- 		{
--- 			bgFile = xVermin.Config.border.default, 
+-- 			bgFile = xVermin.Config.border.default,
 -- 			edgeFile =  xVermin.Config.border.default,
--- 			tile = false, 
--- 			tileSize = 16, 
--- 			edgeSize = 4, 
+-- 			tile = false,
+-- 			tileSize = 16,
+-- 			edgeSize = 4,
 -- 			insets = {left = -4, right = -4, top = -4, bottom = -4}
 -- 		}
 -- 	)
@@ -48,7 +48,7 @@ local function BorderItemSlots()
 	) do
 		v:CreateBeautyBorder(8)
 
-		itemLink = GetInventoryItemLink("player", GetInventorySlotInfo(v:GetName():gsub("Character", "")))
+		itemLink = GetInventoryItemLink('player', GetInventorySlotInfo(v:GetName():gsub('Character', '')))
 		if (itemLink) then
 			local _, _, itemRarity = GetItemInfo(itemLink)
 			if (itemRarity and itemRarity > 1) then
@@ -66,16 +66,16 @@ local function BorderItemSlots()
 	end
 end
 
-local f = CreateFrame("Frame")
-f:RegisterEvent("UNIT_INVENTORY_CHANGED")
-f:RegisterEvent("PLAYER_ENTERING_WORLD")
+local f = CreateFrame('Frame')
+f:RegisterEvent('UNIT_INVENTORY_CHANGED')
+f:RegisterEvent('PLAYER_ENTERING_WORLD')
 f:SetScript(
-	"OnEvent",
+	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
-		if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
+		if event == 'PLAYER_ENTERING_WORLD' and (isInitialLogin or isReloadingUi) then
 			BorderItemSlots()
 		end
-		if event == "UNIT_INVENTORY_CHANGED" then
+		if event == 'UNIT_INVENTORY_CHANGED' then
 			BorderItemSlots()
 		end
 	end

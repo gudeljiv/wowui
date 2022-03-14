@@ -1,6 +1,5 @@
-local ActionBars = {'Action','MultiBarBottomLeft','MultiBarBottomRight','MultiBarRight','MultiBarLeft'}
+local ActionBars = {'Action', 'MultiBarBottomLeft', 'MultiBarBottomRight', 'MultiBarRight', 'MultiBarLeft'}
 local c
-
 
 local function PrintActions()
 	for _, barName in pairs(ActionBars) do
@@ -10,11 +9,11 @@ local function PrintActions()
 			if HasAction(slot) then
 				local actionName, _
 				local actionType, id = GetActionInfo(slot)
-				
+
 				if actionType == 'macro' then
-					actionName, _ , id = GetMacroSpell(id)
 					-- The first return value from GetMacroSpell is the spell name,
 					-- so there's no need for an additional call to GetSpellInfo.
+					actionName, _, id = GetMacroSpell(id)
 				elseif actionType == 'item' then
 					actionName = GetItemInfo(id)
 				elseif actionType == 'spell' then
@@ -23,7 +22,7 @@ local function PrintActions()
 
 				if actionName then
 					c = GetSpellPowerCost(actionName)
-					print(button:GetName(), actionType, (GetSpellLink(id)), actionName, c["mana"])
+					print(button:GetName(), actionType, (GetSpellLink(id)), actionName, c['mana'])
 				end
 			end
 		end

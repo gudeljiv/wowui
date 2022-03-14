@@ -1,12 +1,12 @@
 local _, xVermin = ...
 
 local ReplacedDebuffTypeColor = {}
-ReplacedDebuffTypeColor["none"] = {r = 0.80, g = 0, b = 0}
-ReplacedDebuffTypeColor["Magic"] = {r = 0.20, g = 0.60, b = 1.00}
-ReplacedDebuffTypeColor["Curse"] = {r = 0.60, g = 0.00, b = 1.00}
-ReplacedDebuffTypeColor["Disease"] = {r = 0.60, g = 0.40, b = 0}
-ReplacedDebuffTypeColor["Poison"] = {r = 0.00, g = 0.60, b = 0}
-ReplacedDebuffTypeColor[""] = ReplacedDebuffTypeColor["none"]
+ReplacedDebuffTypeColor['none'] = {r = 0.80, g = 0, b = 0}
+ReplacedDebuffTypeColor['Magic'] = {r = 0.20, g = 0.60, b = 1.00}
+ReplacedDebuffTypeColor['Curse'] = {r = 0.60, g = 0.00, b = 1.00}
+ReplacedDebuffTypeColor['Disease'] = {r = 0.60, g = 0.40, b = 0}
+ReplacedDebuffTypeColor['Poison'] = {r = 0.00, g = 0.60, b = 0}
+ReplacedDebuffTypeColor[''] = ReplacedDebuffTypeColor['none']
 
 local frame, frameBorder, frameCount, color, B_spellId, D_spellId, B_unitCaster, D_unitCaster, petName, targetName, hasPet, isHunterPet
 local frameCooldown, B_spellName, D_spellName
@@ -14,11 +14,11 @@ local frameCooldown, B_spellName, D_spellName
 local function SkinTarget()
 	if TargetFrameToT:IsVisible() then
 		for i = 1, 32 do
-			if _G["TargetFrameToTBuff" .. i] then
-				_G["TargetFrameToTBuff" .. i]:Hide()
+			if _G['TargetFrameToTBuff' .. i] then
+				_G['TargetFrameToTBuff' .. i]:Hide()
 			end
-			if _G["TargetFrameToTDebuff" .. i] then
-				_G["TargetFrameToTDebuff" .. i]:Hide()
+			if _G['TargetFrameToTDebuff' .. i] then
+				_G['TargetFrameToTDebuff' .. i]:Hide()
 			end
 		end
 	end
@@ -26,22 +26,24 @@ local function SkinTarget()
 	if TargetFrame:IsShown() then
 		hasPet, isHunterPet = HasPetUI()
 		if hasPet then
-			petName = UnitName("pet")
-			targetName = UnitName("target")
+			petName = UnitName('pet')
+			targetName = UnitName('target')
 		end
 
 		for i = 1, 32 do
-			B_spellName, B_spellId, _, _, _, _, B_unitCaster = UnitBuff("target", i)
-			D_spellName, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff("target", i)
+			B_spellName, B_spellId, _, _, _, _, B_unitCaster = UnitBuff('target', i)
+			D_spellName, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff('target', i)
 
 			------------------------------------------------------------------------------------------------------------------------------------------------------
 			-- BUFFS ---------------------------------------------------------------------------------------------------------------------------------------------
 			------------------------------------------------------------------------------------------------------------------------------------------------------
-			frame = _G["TargetFrameBuff" .. i]
-			frameBorder = _G["TargetFrameBuff" .. i .. "Border"]
-			frameCount = _G["TargetFrameBuff" .. i .. "Count"]
-			frameCooldown = _G["TargetFrameBuff" .. i .. "Cooldown"]
-			if frameCooldown then frameCooldown:SetSwipeTexture('',0,0,0,0) end
+			frame = _G['TargetFrameBuff' .. i]
+			frameBorder = _G['TargetFrameBuff' .. i .. 'Border']
+			frameCount = _G['TargetFrameBuff' .. i .. 'Count']
+			frameCooldown = _G['TargetFrameBuff' .. i .. 'Cooldown']
+			if frameCooldown then
+				frameCooldown:SetSwipeTexture('', 0, 0, 0, 0)
+			end
 
 			-- if UnitIsPlayer("target") or (petName ~= nil and targetName ~= nil and targetName == petName) then
 			if frameBorder then
@@ -50,7 +52,7 @@ local function SkinTarget()
 
 			if frameCount then
 				frameCount:SetFont(xVermin.Config.font.atari, xVermin.Config.buff.fontsize, xVermin.Config.buff.outline)
-				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
+				frameCount:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', 0, 2)
 			end
 
 			if frame then
@@ -68,11 +70,13 @@ local function SkinTarget()
 			------------------------------------------------------------------------------------------------------------------------------------------------------
 			-- DEBUFFS -------------------------------------------------------------------------------------------------------------------------------------------
 			------------------------------------------------------------------------------------------------------------------------------------------------------
-			frame = _G["TargetFrameDebuff" .. i]
-			frameBorder = _G["TargetFrameDebuff" .. i .. "Border"]
-			frameCount = _G["TargetFrameDebuff" .. i .. "Count"]
-			frameCooldown = _G["TargetFrameDebuff" .. i .. "Cooldown"]
-			if frameCooldown then frameCooldown:SetSwipeTexture('',0,0,0,0) end
+			frame = _G['TargetFrameDebuff' .. i]
+			frameBorder = _G['TargetFrameDebuff' .. i .. 'Border']
+			frameCount = _G['TargetFrameDebuff' .. i .. 'Count']
+			frameCooldown = _G['TargetFrameDebuff' .. i .. 'Cooldown']
+			if frameCooldown then
+				frameCooldown:SetSwipeTexture('', 0, 0, 0, 0)
+			end
 
 			-- if D_unitCaster == "player" or UnitName("target") == UnitName("player") then
 			if frameBorder then
@@ -81,13 +85,13 @@ local function SkinTarget()
 
 			if frameCount then
 				frameCount:SetFont(xVermin.Config.font.arial, xVermin.Config.debuff.fontsize, xVermin.Config.debuff.outline)
-				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 3, 0)
+				frameCount:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', 3, 0)
 			end
 
-			if select(4, UnitDebuff("target", i)) then
-				color = xVermin.Config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))]
+			if select(4, UnitDebuff('target', i)) then
+				color = xVermin.Config.ReplacedDebuffTypeColor[select(4, UnitDebuff('target', i))]
 			else
-				color = xVermin.Config.ReplacedDebuffTypeColor["none"]
+				color = xVermin.Config.ReplacedDebuffTypeColor['none']
 			end
 
 			if frame then
@@ -109,17 +113,19 @@ end
 local function SkinPet()
 	if PetFrame:IsShown() then
 		for i = 1, 32 do
-			B_spellName, B_spellId, _, _, _, _, B_unitCaster = UnitBuff("pet", i)
-			D_spellName, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff("pet", i)
+			B_spellName, B_spellId, _, _, _, _, B_unitCaster = UnitBuff('pet', i)
+			D_spellName, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff('pet', i)
 
 			------------------------------------------------------------------------------------------------------------------------------------------------------
 			-- BUFFS ---------------------------------------------------------------------------------------------------------------------------------------------
 			------------------------------------------------------------------------------------------------------------------------------------------------------
-			frame = _G["PetFrameBuff" .. i]
-			frameBorder = _G["PetFrameBuff" .. i .. "Border"]
-			frameCount = _G["PetFrameBuff" .. i .. "Count"]
-			frameCooldown = _G["PetFrameBuff" .. i .. "Cooldown"]
-			if frameCooldown then frameCooldown:SetSwipeTexture('',0,0,0,0) end
+			frame = _G['PetFrameBuff' .. i]
+			frameBorder = _G['PetFrameBuff' .. i .. 'Border']
+			frameCount = _G['PetFrameBuff' .. i .. 'Count']
+			frameCooldown = _G['PetFrameBuff' .. i .. 'Cooldown']
+			if frameCooldown then
+				frameCooldown:SetSwipeTexture('', 0, 0, 0, 0)
+			end
 
 			if frameBorder then
 				frameBorder:Hide()
@@ -127,7 +133,7 @@ local function SkinPet()
 
 			if frameCount then
 				frameCount:SetFont(xVermin.Config.font.atari, xVermin.Config.petbuff.fontsize, xVermin.Config.petbuff.outline)
-				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
+				frameCount:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', 0, 2)
 			end
 
 			if frame then
@@ -139,11 +145,13 @@ local function SkinPet()
 			------------------------------------------------------------------------------------------------------------------------------------------------------
 			-- DEBUFFS -------------------------------------------------------------------------------------------------------------------------------------------
 			------------------------------------------------------------------------------------------------------------------------------------------------------
-			frame = _G["PetFrameDebuff" .. i]
-			frameBorder = _G["PetFrameDebuff" .. i .. "Border"]
-			frameCount = _G["PetFrameDebuff" .. i .. "Count"]
-			frameCooldown = _G["PetFrameDebuff" .. i .. "Cooldown"]
-			if frameCooldown then frameCooldown:SetSwipeTexture('',0,0,0,0) end
+			frame = _G['PetFrameDebuff' .. i]
+			frameBorder = _G['PetFrameDebuff' .. i .. 'Border']
+			frameCount = _G['PetFrameDebuff' .. i .. 'Count']
+			frameCooldown = _G['PetFrameDebuff' .. i .. 'Cooldown']
+			if frameCooldown then
+				frameCooldown:SetSwipeTexture('', 0, 0, 0, 0)
+			end
 
 			if frameBorder then
 				frameBorder:Hide()
@@ -151,13 +159,13 @@ local function SkinPet()
 
 			if frameCount then
 				frameCount:SetFont(xVermin.Config.font.atari, xVermin.Config.petdebuff.fontsize, xVermin.Config.petdebuff.outline)
-				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
+				frameCount:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', 0, 2)
 			end
 
-			if select(4, UnitDebuff("pet", i)) then
-				color = xVermin.Config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))]
+			if select(4, UnitDebuff('pet', i)) then
+				color = xVermin.Config.ReplacedDebuffTypeColor[select(4, UnitDebuff('target', i))]
 			else
-				color = xVermin.Config.ReplacedDebuffTypeColor["none"]
+				color = xVermin.Config.ReplacedDebuffTypeColor['none']
 			end
 
 			if frame then
@@ -173,11 +181,11 @@ end
 local function SkinFocus()
 	if FocusFrameToT:IsVisible() then
 		for i = 1, 32 do
-			if _G["FocusFrameToTBuff" .. i] then
-				_G["FocusFrameToTBuff" .. i]:Hide()
+			if _G['FocusFrameToTBuff' .. i] then
+				_G['FocusFrameToTBuff' .. i]:Hide()
 			end
-			if _G["FocusFrameToTDebuff" .. i] then
-				_G["FocusFrameToTDebuff" .. i]:Hide()
+			if _G['FocusFrameToTDebuff' .. i] then
+				_G['FocusFrameToTDebuff' .. i]:Hide()
 			end
 		end
 	end
@@ -185,22 +193,24 @@ local function SkinFocus()
 	if FocusFrame:IsShown() then
 		hasPet, isHunterPet = HasPetUI()
 		if hasPet then
-			petName = UnitName("pet")
-			focusName = UnitName("focus")
+			petName = UnitName('pet')
+			focusName = UnitName('focus')
 		end
 
 		for i = 1, 32 do
-			B_spellName, B_spellId, _, _, _, _, B_unitCaster = UnitBuff("focus", i)
-			D_spellName, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff("focus", i)
+			B_spellName, B_spellId, _, _, _, _, B_unitCaster = UnitBuff('focus', i)
+			D_spellName, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff('focus', i)
 
 			------------------------------------------------------------------------------------------------------------------------------------------------------
 			-- BUFFS ---------------------------------------------------------------------------------------------------------------------------------------------
 			------------------------------------------------------------------------------------------------------------------------------------------------------
-			frame = _G["FocusFrameBuff" .. i]
-			frameBorder = _G["FocusFrameBuff" .. i .. "Border"]
-			frameCount = _G["FocusFrameBuff" .. i .. "Count"]
-			frameCooldown = _G["FocusFrameBuff" .. i .. "Cooldown"]
-			if frameCooldown then frameCooldown:SetSwipeTexture('',0,0,0,0) end
+			frame = _G['FocusFrameBuff' .. i]
+			frameBorder = _G['FocusFrameBuff' .. i .. 'Border']
+			frameCount = _G['FocusFrameBuff' .. i .. 'Count']
+			frameCooldown = _G['FocusFrameBuff' .. i .. 'Cooldown']
+			if frameCooldown then
+				frameCooldown:SetSwipeTexture('', 0, 0, 0, 0)
+			end
 
 			if frameBorder then
 				frameBorder:Hide()
@@ -208,7 +218,7 @@ local function SkinFocus()
 
 			if frameCount then
 				frameCount:SetFont(xVermin.Config.font.atari, xVermin.Config.buff.fontsize, xVermin.Config.buff.outline)
-				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
+				frameCount:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', 0, 2)
 			end
 
 			if frame then
@@ -226,11 +236,13 @@ local function SkinFocus()
 			------------------------------------------------------------------------------------------------------------------------------------------------------
 			-- DEBUFFS -------------------------------------------------------------------------------------------------------------------------------------------
 			------------------------------------------------------------------------------------------------------------------------------------------------------
-			frame = _G["FocusFrameDebuff" .. i]
-			frameBorder = _G["FocusFrameDebuff" .. i .. "Border"]
-			frameCount = _G["FocusFrameDebuff" .. i .. "Count"]
-			frameCooldown = _G["FocusFrameDebuff" .. i .. "Cooldown"]
-			if frameCooldown then frameCooldown:SetSwipeTexture('',0,0,0,0) end
+			frame = _G['FocusFrameDebuff' .. i]
+			frameBorder = _G['FocusFrameDebuff' .. i .. 'Border']
+			frameCount = _G['FocusFrameDebuff' .. i .. 'Count']
+			frameCooldown = _G['FocusFrameDebuff' .. i .. 'Cooldown']
+			if frameCooldown then
+				frameCooldown:SetSwipeTexture('', 0, 0, 0, 0)
+			end
 
 			-- if D_unitCaster == "player" or UnitName("focus") == UnitName("player") then
 			if frameBorder then
@@ -239,13 +251,13 @@ local function SkinFocus()
 
 			if frameCount then
 				frameCount:SetFont(xVermin.Config.font.arial, xVermin.Config.debuff.fontsize, xVermin.Config.debuff.outline)
-				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 3, 0)
+				frameCount:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', 3, 0)
 			end
 
-			if select(4, UnitDebuff("focus", i)) then
-				color = xVermin.Config.ReplacedDebuffTypeColor[select(4, UnitDebuff("focus", i))]
+			if select(4, UnitDebuff('focus', i)) then
+				color = xVermin.Config.ReplacedDebuffTypeColor[select(4, UnitDebuff('focus', i))]
 			else
-				color = xVermin.Config.ReplacedDebuffTypeColor["none"]
+				color = xVermin.Config.ReplacedDebuffTypeColor['none']
 			end
 
 			if frame then
@@ -264,19 +276,19 @@ local function SkinFocus()
 	end
 end
 
-local tf = CreateFrame("Frame")
-tf:RegisterEvent("PLAYER_TARGET_CHANGED")
-tf:SetScript("OnEvent", SkinTarget)
-TargetFrame:HookScript("OnUpdate", SkinTarget)
-hooksecurefunc("TargetFrame_UpdateAuras", SkinTarget)
+local tf = CreateFrame('Frame')
+tf:RegisterEvent('PLAYER_TARGET_CHANGED')
+tf:SetScript('OnEvent', SkinTarget)
+TargetFrame:HookScript('OnUpdate', SkinTarget)
+hooksecurefunc('TargetFrame_UpdateAuras', SkinTarget)
 
-local ff = CreateFrame("Frame")
-ff:RegisterEvent("PLAYER_FOCUS_CHANGED")
-ff:SetScript("OnEvent", SkinFocus)
-FocusFrame:HookScript("OnUpdate", SkinFocus)
+local ff = CreateFrame('Frame')
+ff:RegisterEvent('PLAYER_FOCUS_CHANGED')
+ff:SetScript('OnEvent', SkinFocus)
+FocusFrame:HookScript('OnUpdate', SkinFocus)
 -- hooksecurefunc("FocusFrame_UpdateAuras", SkinFocus)
 
-local pf = CreateFrame("Frame")
-pf:RegisterUnitEvent("UNIT_AURA", "pet")
-pf:SetScript("OnEvent", SkinPet)
-PetFrame:HookScript("OnUpdate", SkinPet)
+local pf = CreateFrame('Frame')
+pf:RegisterUnitEvent('UNIT_AURA', 'pet')
+pf:SetScript('OnEvent', SkinPet)
+PetFrame:HookScript('OnUpdate', SkinPet)

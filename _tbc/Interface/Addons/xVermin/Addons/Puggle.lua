@@ -1,11 +1,11 @@
 local _, xVermin = ...
 
-local f = CreateFrame("Frame")
+local f = CreateFrame('Frame')
 f:SetScript(
-	"OnEvent",
+	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
 		if isInitialLogin or isReloadingUi then
-			if (IsAddOnLoaded("Puggle")) then
+			if (IsAddOnLoaded('Puggle')) then
 				if not Puggle_ContainerFrame.SetBackdrop then
 					Mixin(Puggle_ContainerFrame, BackdropTemplateMixin)
 				end
@@ -13,7 +13,7 @@ f:SetScript(
 				Puggle_ContainerFrame:SetBackdrop(
 					{
 						bgFile = xVermin.Config.background.white,
-						edgeFile = "",
+						edgeFile = '',
 						tile = false,
 						tileSize = 0,
 						edgeSize = 0,
@@ -25,4 +25,4 @@ f:SetScript(
 		end
 	end
 )
-f:RegisterEvent("PLAYER_ENTERING_WORLD")
+f:RegisterEvent('PLAYER_ENTERING_WORLD')

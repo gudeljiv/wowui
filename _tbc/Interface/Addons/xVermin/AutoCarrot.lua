@@ -10,7 +10,7 @@ local function AC()
 		return
 	end
 
-	local itemId = GetInventoryItemID("player", 13)
+	local itemId = GetInventoryItemID('player', 13)
 
 	if IsMounted() then
 		if itemId and itemId ~= 11122 then
@@ -33,11 +33,11 @@ local function AC()
 	end
 end
 
-local f = CreateFrame("Frame")
-f:SetScript("OnUpdate", AC)
+local f = CreateFrame('Frame')
+f:SetScript('OnUpdate', AC)
 
-SLASH_AUTOCARROT1 = "/ac"
-SlashCmdList["AUTOCARROT"] = function(msg)
+SLASH_AUTOCARROT1 = '/ac'
+SlashCmdList['AUTOCARROT'] = function(msg)
 	AutoCarrot.Enabled = not AutoCarrot.Enabled
-	print("|cffed9121AutoCarrot: |cff" .. (AutoCarrot.Enabled and "ff0000disabled" or "1eff00enabled"))
+	print('|cffed9121AutoCarrot: |cff' .. (AutoCarrot.Enabled and 'ff0000disabled' or '1eff00enabled'))
 end
