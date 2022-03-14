@@ -61,7 +61,7 @@ TellMeWhen_Options: enabled
 !Colorz: enabled
 !Beautycase: enabled
 Align: enabled
-Auctionator: enabled
+Auctionator: disabled
 BlizzMove: enabled
 ChocolateBar: enabled
 ClassicAuraDurations: enabled
@@ -113,7 +113,7 @@ WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
 whoaThickFrames_Classic: disabled
 CharacterStatsClassic: enabled
-TradeSkillMaster: enabled
+TradeSkillMaster: disabled
 nBuff: enabled
 nMainbar: enabled
 nMinimap: enabled
@@ -136,4 +136,3 @@ FarmHud: enabled
 FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: enabled
-TradeSkillMaster_AppHelper: enabled

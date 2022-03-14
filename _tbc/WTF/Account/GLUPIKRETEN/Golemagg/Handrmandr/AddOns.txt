@@ -10,7 +10,7 @@ nPower: disabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 Leatrix_Plus: enabled
-TradeSkillMaster: enabled
+TradeSkillMaster: disabled
 NeatPlates: enabled
 whoaThickFrames_BCC: enabled
 whoaThickFrames_Classic: disabled
@@ -29,7 +29,7 @@ AtlasLootClassic_Factions: enabled
 AtlasLootClassic_PvP: enabled
 AtlasLootClassic: enabled
 AtlasLootClassic_Data: enabled
-Auctionator: enabled
+Auctionator: disabled
 AutoOpen: enabled
 BlizzMove: enabled
 BlizzMove_Debug: enabled
@@ -105,4 +105,3 @@ FarmHud: enabled
 FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: enabled
-TradeSkillMaster_AppHelper: enabled

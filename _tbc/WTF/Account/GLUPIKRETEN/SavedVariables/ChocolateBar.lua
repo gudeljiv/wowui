@@ -37,8 +37,8 @@ ChocolateBarDB = {
 		["Nitwit - Dreadnaught"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
@@ -73,10 +73,6 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["locked"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -87,7 +83,14 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["moveFrames"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["locked"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -195,10 +198,11 @@ ChocolateBarDB = {
 					["enabled"] = false,
 					["index"] = 4,
 					["align"] = "right",
+					["isNew"] = false,
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
 					["showIcon"] = false,
+					["barName"] = "ChocolateBar1",
+					["showText"] = false,
 					["customLabel"] = "TE",
 				},
 				["ItemRack"] = {
@@ -469,18 +473,15 @@ ChocolateBarDB = {
 					["customLabel"] = "FH",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
 			["desaturated"] = false,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
 			["forceColor"] = false,
+			["fixedStrata"] = true,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fixedStrata"] = true,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fontName"] = "Friz Quadrata TT",
+			["moveFrames"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -537,7 +538,7 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 609726,
+		["total"] = 613402,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -618,7 +619,7 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 170811,
+		["total"] = 170892,
 	},
 	["Battlearm-Golemagg"] = {
 		["total"] = 2096,

@@ -13,8 +13,8 @@ TrackEverythingCharDB = {
 						[19883] = false,
 					},
 				},
-				["interval"] = 10,
 				["enable"] = false,
+				["interval"] = 10,
 			},
 			["minimap"] = {
 				["minimapPos"] = 357.844707803176,
