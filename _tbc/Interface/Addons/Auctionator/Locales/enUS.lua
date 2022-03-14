@@ -397,6 +397,8 @@ AUCTIONATOR_LOCALES.enUS = function()
   L["DAY_6"] = "Friday"
   L["DAY_7"] = "Saturday"
 
+  L["TODAY"] = "Today"
+
   L["TEMPORARY_LOWER_CASE"] = "temporary"
 
   L["CONFIG_PROFILE_CATEGORY"] = "Profile"
@@ -511,6 +513,9 @@ AUCTIONATOR_LOCALES.enUS = function()
   L["HISTORY"] = "History"
   L["CURRENT"] = "Current"
   L["SERVER_TOOK_TOO_LONG"] = "The server took too long to respond. Your action may not have had an effect."
+  L["CONFIG_SHOPPING_LIST_FULL_REFRESH"] = "Refresh all pages when clicking the Refresh button"
+  L["CONFIG_SHOPPING_LIST_FULL_REFRESH_TOOLTIP_HEADER"] = "Refresh All Pages"
+  L["CONFIG_SHOPPING_LIST_FULL_REFRESH_TOOLTIP_TEXT"] = "Only the first page is needed to determine the cheapest price, if you are only interested in the cheapest price and don't need to see the rest of the results you can turn this option off for a speed boost."
 
   L["STARTING_PRICE_PERCENTAGE_SUFFIX"] = "% of the stack price"
   L["STARTING_PRICE_PERCENTAGE"] = "Starting Price"
@@ -523,6 +528,7 @@ AUCTIONATOR_LOCALES.enUS = function()
   L["BUYING_X_FOR_X"] = "Buying %s for %s"
   L["BRACKETS_X_EACH"] = "(%s each)"
   L["ALREADY_PURCHASED_X"] = "Already purchased %s"
+  L["PRICE_INCREASE_WARNING"] = "Price increased by %s, waiting %ss"
   L["PURCHASED_X_XX"] = "Purchased %s x%s"
   L["DEFAULT_STACK_SIZES"] = "Default Stack Sizes"
   L["CONFIG_SELLING_TBC_ALL_ITEMS"] = "Options to set the default posting settings for all items."

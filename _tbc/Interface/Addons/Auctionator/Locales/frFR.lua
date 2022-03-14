@@ -146,6 +146,12 @@ Autrement, seule la première page de résultats est considérée comme pertinen
 L["CONFIG_SELLING_TEXT"] = "Options liées à l'onglet Vente."
 L["CONFIG_SHOPPING_CATEGORY"] = "Achat"
 L["CONFIG_SHOPPING_LIST"] = "Options liées aux listes d'achats."
+--[[Translation missing --]]
+L["CONFIG_SHOPPING_LIST_FULL_REFRESH"] = "Refresh all pages when clicking the Refresh button"
+--[[Translation missing --]]
+L["CONFIG_SHOPPING_LIST_FULL_REFRESH_TOOLTIP_HEADER"] = "Refresh All Pages"
+--[[Translation missing --]]
+L["CONFIG_SHOPPING_LIST_FULL_REFRESH_TOOLTIP_TEXT"] = "Only the first page is needed to determine the cheapest price, if you are only interested in the cheapest price and don't need to see the rest of the results you can turn this option off for a speed boost."
 L["CONFIG_SHOPPING_LIST_MISSING_TERMS"] = "Afficher les objets introuvables d'une liste d'achats"
 L["CONFIG_SHOPPING_LIST_MISSING_TERMS_TOOLTIP_HEADER"] = "Recherches sans résultat"
 L["CONFIG_SHOPPING_LIST_MISSING_TERMS_TOOLTIP_TEXT"] = "Lorsqu'un objet est introuvable, il sera quand même affiché dans les résultats et indiquera une quantité disponible de 0."
@@ -273,6 +279,8 @@ L["PET_TOOLTIP_TOOLTIP_HEADER"] = "Prix des mascottes"
 L["PET_TOOLTIP_TOOLTIP_TEXT"] = "Inclu les prix des mascottes dans les info-bulles."
 L["POST"] = "Mettre en vente"
 L["PRICE"] = "Prix"
+--[[Translation missing --]]
+L["PRICE_INCREASE_WARNING"] = "Price increased by %s, waiting %ss"
 L["PROFILE_TOGGLE_TOOLTIP_HEADER"] = "Activer les paramètres par personnage"
 L["PROFILE_TOGGLE_TOOLTIP_TEXT"] = "Les modifications apportées aux paramètres d'Auctionator n'affecteront que ce personnage."
 L["PROFIT_COLON"] = "Gains :"
@@ -471,6 +479,8 @@ L["TEMPORARY_LOWER_CASE"] = "temporaire"
 L["TIME_LEFT"] = "Temps restant"
 L["TIME_LEFT_H"] = "Temps restant (h)"
 L["TO_CRAFT_COLON"] = "Coût :"
+--[[Translation missing --]]
+L["TODAY"] = "Today"
 L["TOO_BIG_PERCENTAGE"] = "%%  doit être <= 100 (fournis  %s)"
 L["TOO_MANY_SEARCH_RESULTS"] = "Trop de résultats de recherche. Limitation des résultats affichés."
 L["TOO_SMALL_PERCENTAGE"] = "%%  doit être >= 0 (fournis  %s)"

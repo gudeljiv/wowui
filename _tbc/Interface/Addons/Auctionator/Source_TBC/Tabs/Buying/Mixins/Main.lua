@@ -166,6 +166,7 @@ function AuctionatorBuyFrameMixinForShopping:ReceiveEvent(eventName, eventData, 
     self:Reset()
 
     if #eventData.entries > 0 then
+      self.SearchDataProvider:SetRequestAllResults(Auctionator.Config.Get(Auctionator.Config.Options.SHOPPING_SHOW_ALL_RESULTS))
       self.SearchDataProvider:SetQuery(eventData.entries[1].itemLink)
       self.HistoryDataProvider:SetItemLink(eventData.entries[1].itemLink)
     else
@@ -185,7 +186,6 @@ AuctionatorBuyFrameMixinForSelling = CreateFromMixins(AuctionatorBuyFrameMixin)
 function AuctionatorBuyFrameMixinForSelling:Init()
   AuctionatorBuyFrameMixin.Init(self)
   Auctionator.EventBus:Register(self, {
-    Auctionator.Selling.Events.BagItemClicked,
     Auctionator.Selling.Events.RefreshBuying,
   })
 end

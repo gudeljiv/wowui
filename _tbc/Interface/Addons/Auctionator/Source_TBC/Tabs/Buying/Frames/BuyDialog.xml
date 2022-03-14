@@ -1,10 +1,16 @@
 <Ui>
-  <Frame name="AuctionatorBuyDialogTemplate" frameStrata="Dialog" mixin="AuctionatorBuyDialogMixin" virtual="true" enableMouse="true">
+  <Frame name="AuctionatorBuyDialogTemplate" frameStrata="Dialog" mixin="AuctionatorBuyDialogMixin" virtual="true" enableMouse="true" movable="true" clampedToScreen="true">
     <Scripts>
       <OnLoad method="OnLoad"/>
       <OnEvent method="OnEvent"/>
       <OnShow method="OnShow"/>
       <OnHide method="OnHide"/>
+      <OnDragStart>
+        self:StartMoving()
+      </OnDragStart>
+      <OnDragStop>
+        self:StopMovingOrSizing()
+      </OnDragStop>
     </Scripts>
     <KeyValues>
       <KeyValue key="layoutType" value="Dialog" type="string"/>
@@ -33,9 +39,14 @@
             <Anchor point="TOP" relativeKey="$parent.PurchaseDetails" relativePoint="BOTTOM" y="-6"/>
           </Anchors>
         </FontString>
-        <FontString parentKey="NumberPurchased" inherits="GameFontNormal" text="ALREADY_PURCHASED_X">
+        <FontString parentKey="NumberPurchased" inherits="GameFontNormal" text="AUCTIONATOR_L_ALREADY_PURCHASED_X">
           <Anchors>
             <Anchor point="TOP" relativeKey="$parent.UnitPrice" relativePoint="BOTTOM" y="-8"/>
+          </Anchors>
+        </FontString>
+        <FontString parentKey="PriceWarning" inherits="GameFontRedLarge" text="AUCTIONATOR_L_PRICE_INCREASE_WARNING">
+          <Anchors>
+            <Anchor point="TOP" relativeKey="$parent.NumberPurchased" relativePoint="BOTTOM" y="13"/>
           </Anchors>
         </FontString>
       </Layer>
