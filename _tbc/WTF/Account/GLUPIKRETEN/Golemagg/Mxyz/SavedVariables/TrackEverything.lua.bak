@@ -11,7 +11,6 @@ TrackEverythingCharDB = {
 			["minimap"] = {
 				["minimapPos"] = 18.9194164216765,
 				["scale"] = 0.77,
-				["hide"] = true,
 			},
 		},
 	},

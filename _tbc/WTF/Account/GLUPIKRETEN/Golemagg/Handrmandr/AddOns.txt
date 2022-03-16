@@ -105,3 +105,5 @@ FarmHud: enabled
 FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: enabled
+AuctionFaster: disabled
+aux-addon: enabled

@@ -128,7 +128,7 @@ NeatPlatesHubSettings = {
 			["b"] = 0.9999977946281433,
 		},
 		["WidgetDebuff"] = true,
-		["TextHealthPercentPrecision"] = -0,
+		["TextHealthPercentPrecision"] = 0,
 		["TextUseBlizzardFont"] = false,
 		["ColorPartyAggroText"] = false,
 		["ColorSchoolShadow"] = {
@@ -621,7 +621,7 @@ NeatPlatesHubSettings = {
 		["WidgetDebuffTrackList"] = "",
 		["BuffSeparationMode"] = 1,
 		["TextStatusForceShadow"] = false,
-		["OpacityFiltered"] = -0,
+		["OpacityFiltered"] = 0,
 		["HeadlineFriendlySubtext"] = "RoleGuildLevel",
 		["OpacitySpotlightRaidMarked"] = false,
 		["StyleFriendlyBarsNoMinions"] = false,

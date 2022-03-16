@@ -108,3 +108,5 @@ TrackingSwitcher: enabled
 TrinketMenu: enabled
 Blizzard_CompactRaidFrames: disabled
 Blizzard_CUFProfiles: disabled
+AuctionFaster: disabled
+aux-addon: enabled

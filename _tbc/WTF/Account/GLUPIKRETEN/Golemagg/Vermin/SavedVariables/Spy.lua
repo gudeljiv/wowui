@@ -1,5 +1,9 @@
 
 SpyPerCharDB = {
+	["KOSData"] = {
+	},
+	["IgnoreData"] = {
+	},
 	["PlayerData"] = {
 		["Nimanga"] = {
 			["mapID"] = 1446,
@@ -9,11 +13,11 @@ SpyPerCharDB = {
 			["isEnemy"] = true,
 			["mapX"] = 0.52,
 			["isGuess"] = true,
-			["name"] = "Nimanga",
-			["race"] = "Draenei",
-			["level"] = 40,
-			["subZone"] = "Gadgetzan",
 			["time"] = 1645361264,
+			["subZone"] = "Gadgetzan",
+			["level"] = 40,
+			["race"] = "Draenei",
+			["name"] = "Nimanga",
 		},
 		["Hanesha"] = {
 			["mapID"] = 1446,
@@ -23,11 +27,11 @@ SpyPerCharDB = {
 			["isEnemy"] = true,
 			["mapX"] = 0.35,
 			["isGuess"] = false,
-			["name"] = "Hanesha",
-			["race"] = "Draenei",
-			["level"] = 46,
-			["subZone"] = "The Noxious Lair",
 			["time"] = 1645205006,
+			["subZone"] = "The Noxious Lair",
+			["level"] = 46,
+			["race"] = "Draenei",
+			["name"] = "Hanesha",
 		},
 		["Dyruu"] = {
 			["mapID"] = 1446,
@@ -37,16 +41,12 @@ SpyPerCharDB = {
 			["isEnemy"] = true,
 			["mapX"] = 0.52,
 			["isGuess"] = true,
-			["name"] = "Dyruu",
-			["race"] = "Night Elf",
-			["level"] = 20,
-			["subZone"] = "Gadgetzan",
 			["time"] = 1645361264,
+			["subZone"] = "Gadgetzan",
+			["level"] = 20,
+			["race"] = "Night Elf",
+			["name"] = "Dyruu",
 		},
 	},
-	["IgnoreData"] = {
-	},
 	["version"] = "1.1",
-	["KOSData"] = {
-	},
 }

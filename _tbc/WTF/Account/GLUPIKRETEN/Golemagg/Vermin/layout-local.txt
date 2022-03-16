@@ -118,13 +118,6 @@ X: 21
 Y: 92
 W: 1000
 H: 762
-Frame: TrinketMenu_OptFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 284
-Y: 186
-W: 300
-H: 336
 Frame: nTooltip_Anchor
 FrameLevel: 1
 Anchor: TOP
@@ -132,6 +125,13 @@ X: 243
 Y: -107
 W: 50
 H: 50
+Frame: TrinketMenu_OptFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 284
+Y: 186
+W: 300
+H: 336
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

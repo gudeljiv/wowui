@@ -11,10 +11,10 @@ TrinketMenuPerOptions = {
 	},
 	["Hidden"] = {
 	},
-	["MenuDock"] = "BOTTOMLEFT",
+	["MenuScale"] = 1.100000023841858,
 	["MainDock"] = "BOTTOMRIGHT",
 	["YPos"] = 546.0211791992188,
-	["MenuScale"] = 1.100000023841858,
+	["MenuDock"] = "BOTTOMLEFT",
 	["MenuOrient"] = "VERTICAL",
 }
 TrinketMenuQueue = {

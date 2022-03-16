@@ -317,7 +317,18 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
+				["point"] = {
+					"TOP", -- [1]
+					nil, -- [2]
+					"TOP", -- [3]
+					-226.2529449462891, -- [4]
+					-159.2184143066406, -- [5]
+				},
 				["selectedGameVersion"] = 1,
 				["selected"] = {
 					nil, -- [1]
@@ -326,17 +337,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-				["point"] = {
-					"TOP", -- [1]
-					nil, -- [2]
-					"TOP", -- [3]
-					-226.2529449462891, -- [4]
-					-159.2184143066406, -- [5]
-				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Jaroslav - Golemagg"] = {
@@ -357,6 +357,23 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
+			["GUI"] = {
+				["selectedGameVersion"] = 1,
+				["selected"] = {
+					nil, -- [1]
+					"Uldaman", -- [2]
+					10, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-344.3334350585938, -- [4]
+					141.3907928466797, -- [5]
+				},
+			},
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
@@ -370,23 +387,6 @@ AtlasLootClassicDB = {
 							},
 						},
 					},
-				},
-			},
-			["GUI"] = {
-				["point"] = {
-					nil, -- [1]
-					nil, -- [2]
-					"CENTER", -- [3]
-					-344.3334350585938, -- [4]
-					141.3907928466797, -- [5]
-				},
-				["selectedGameVersion"] = 1,
-				["selected"] = {
-					nil, -- [1]
-					"Uldaman", -- [2]
-					10, -- [3]
-					1, -- [4]
-					0, -- [5]
 				},
 			},
 		},
