@@ -30,19 +30,29 @@ SpyDB = {
 		["Vermin - Golemagg"] = {
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = 828.6608276367188,
-					["x"] = 4.597715854644775,
+					["y"] = 843.2817993164062,
+					["x"] = 453.7359313964844,
 					["h"] = 34.99994277954102,
 				},
 			},
 			["Colors"] = {
+				["Alert"] = {
+					["Stealth Text"] = {
+						["a"] = 1,
+					},
+					["Name Text"] = {
+						["a"] = 1,
+					},
+				},
 				["Bar"] = {
 					["Bar Text"] = {
 						["a"] = 1,
 					},
 				},
 			},
+			["HideSpy"] = true,
 			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
 			["BarTexture"] = "Glamour2",
 			["AppendUnitKoSCheck"] = true,
 		},

@@ -111,6 +111,8 @@ oUF_NeavRaid: disabled
 FarmHud: enabled
 FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
-TrinketMenu: enabled
+TrinketMenu: disabled
 AuctionFaster: disabled
 aux-addon: enabled
+TradeSkillMaster_AppHelper: disabled
+D4KiR Missing Power: disabled

@@ -1,8 +1,9 @@
 
 SpyPerCharDB = {
-	["KOSData"] = {
-	},
+	["version"] = "1.1",
 	["IgnoreData"] = {
+	},
+	["KOSData"] = {
 	},
 	["PlayerData"] = {
 		["Nimanga"] = {
@@ -19,6 +20,23 @@ SpyPerCharDB = {
 			["race"] = "Draenei",
 			["name"] = "Nimanga",
 		},
+		["Taio"] = {
+			["mapID"] = 1448,
+			["guild"] = "Blackjacklol Cool Club",
+			["zone"] = "Felwood",
+			["mapY"] = 0.6,
+			["class"] = "DRUID",
+			["wins"] = 1,
+			["isEnemy"] = true,
+			["name"] = "Taio",
+			["mapX"] = 0.35,
+			["isGuess"] = false,
+			["race"] = "Night Elf",
+			["subZone"] = "Jaedenar",
+			["level"] = 56,
+			["time"] = 1647453130,
+			["loses"] = 1,
+		},
 		["Hanesha"] = {
 			["mapID"] = 1446,
 			["zone"] = "Tanaris",
@@ -32,6 +50,36 @@ SpyPerCharDB = {
 			["level"] = 46,
 			["race"] = "Draenei",
 			["name"] = "Hanesha",
+		},
+		["Måg"] = {
+			["mapID"] = 1448,
+			["guild"] = "ASSC",
+			["zone"] = "Felwood",
+			["mapY"] = 0.6,
+			["class"] = "PRIEST",
+			["isEnemy"] = true,
+			["mapX"] = 0.37,
+			["isGuess"] = false,
+			["time"] = 1647453220,
+			["subZone"] = "Jaedenar",
+			["level"] = 51,
+			["race"] = "Dwarf",
+			["name"] = "Måg",
+		},
+		["Kattamisen"] = {
+			["mapID"] = 1448,
+			["guild"] = "ASSC",
+			["zone"] = "Felwood",
+			["mapY"] = 0.6,
+			["class"] = "PALADIN",
+			["isEnemy"] = true,
+			["mapX"] = 0.37,
+			["isGuess"] = false,
+			["time"] = 1647453219,
+			["subZone"] = "Jaedenar",
+			["level"] = 51,
+			["race"] = "Dwarf",
+			["name"] = "Kattamisen",
 		},
 		["Dyruu"] = {
 			["mapID"] = 1446,
@@ -48,5 +96,4 @@ SpyPerCharDB = {
 			["name"] = "Dyruu",
 		},
 	},
-	["version"] = "1.1",
 }

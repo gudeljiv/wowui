@@ -332,8 +332,8 @@ AtlasLootClassicDB = {
 				["selectedGameVersion"] = 1,
 				["selected"] = {
 					nil, -- [1]
-					"TheTempleOfAtal'Hakkar", -- [2]
-					2, -- [3]
+					"Maraudon", -- [2]
+					11, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},

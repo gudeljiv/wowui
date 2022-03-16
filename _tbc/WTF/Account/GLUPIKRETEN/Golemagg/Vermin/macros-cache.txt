@@ -32,6 +32,7 @@ VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Sunder Armor
 /cast Charge
+/cast Berserker Stance
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Shield Bash
