@@ -17,14 +17,31 @@ KuiNameplatesCoreSaved = {
 			["nameonly_neutral"] = true,
 			["mouseover_glow"] = true,
 			["frame_width_target"] = 160,
+			["auras_sort"] = 1,
 			["nameonly_combat_hostile_player"] = false,
-			["show_quest_icon"] = false,
+			["health_text_hostile_max"] = 2,
+			["cvar_enable"] = true,
+			["name_colour_npc_friendly"] = {
+				0.00784313725490196, -- [1]
+				1, -- [2]
+				0, -- [3]
+			},
+			["name_colour_player_hostile"] = {
+				1, -- [1]
+				0, -- [2]
+				0.00784313725490196, -- [3]
+			},
+			["health_text"] = true,
 			["global_scale"] = 1.3,
 			["nameonly_hostile_players"] = true,
-			["health_text"] = true,
 			["nameonly_damaged_enemies"] = false,
+			["name_colour_npc_hostile"] = {
+				1, -- [1]
+				0, -- [2]
+				0.04705882352941176, -- [3]
+			},
 			["bar_animation"] = 2,
-			["cvar_enable"] = true,
+			["execute_enabled"] = false,
 			["threat_brackets"] = true,
 			["bar_texture"] = "Glamour2",
 		},
