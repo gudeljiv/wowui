@@ -203,10 +203,20 @@ local function UpdateBarValueAndColor()
 			_G[value.frameStatusBar].Value2:SetText(xVermin:Round(standingValue / topValue * 100) .. '%')
 			_G[value.frameStatusBar].FactionName2:SetText(standing)
 
-			_G[value.frameStatusBar].Value:Show()
-			_G[value.frameStatusBar].Value2:Hide()
-			_G[value.frameStatusBar].FactionName:Show()
-			_G[value.frameStatusBar].FactionName2:Hide()
+			if not _G[value.frameStatusBar].Value2:IsVisible() then
+				_G[value.frameStatusBar].Value:Show()
+			end
+			if not _G[value.frameStatusBar].FactionName2:IsVisible() then
+				_G[value.frameStatusBar].Value:Show()
+			end
+			if _G[value.frameStatusBar].Value:IsVisible() and _G[value.frameStatusBar].Value2:IsVisible() then
+				_G[value.frameStatusBar].Value:Show()
+				_G[value.frameStatusBar].Value2:Hide()
+			end
+			if _G[value.frameStatusBar].FactionName:IsVisible() and _G[value.frameStatusBar].FactionName2:IsVisible() then
+				_G[value.frameStatusBar].FactionName:Show()
+				_G[value.frameStatusBar].FactionName2:Hide()
+			end
 
 			_G[value.frameStatusBar .. '_wrap']:SetFrameStrata('HIGH')
 			_G[value.frameStatusBar .. '_wrap']:SetScript(

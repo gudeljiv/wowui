@@ -19,7 +19,7 @@ BagBrother: disabled
 RXPGuides: disabled
 Leatrix_Plus: enabled
 TradeSkillMaster: disabled
-NeatPlates: enabled
+NeatPlates: disabled
 whoaThickFrames_BCC: enabled
 whoaThickFrames_Classic: disabled
 RangeDisplay: enabled
@@ -63,12 +63,12 @@ Lorti UI Classic: enabled
 ls_Toasts: enabled
 MikScrollingBattleText: enabled
 MSBTOptions: enabled
-NeatPlatesHub: enabled
-NeatPlatesWidgets: enabled
+NeatPlatesHub: disabled
+NeatPlatesWidgets: disabled
 NeatPlates_Alvara: enabled
 NeatPlates_Graphite: enabled
 NeatPlates_Grey: enabled
-NeatPlates_Neon: enabled
+NeatPlates_Neon: disabled
 NeatPlates_Quatre: enabled
 NeatPlates_Roth: enabled
 NeatPlates_Slim_Horizontal: enabled
@@ -105,8 +105,16 @@ oUF_NeavRaid: disabled
 FarmHud: enabled
 FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
-TrinketMenu: enabled
+TrinketMenu: disabled
 Blizzard_CompactRaidFrames: disabled
 Blizzard_CUFProfiles: disabled
 AuctionFaster: disabled
 aux-addon: enabled
+D4KiR Missing Power: disabled
+TrackEverything: enabled
+Kui_Media: enabled
+Kui_Nameplates: enabled
+Kui_Nameplates_Core_Config: enabled
+Kui_Nameplates_Core: enabled
+Plater: disabled
+KiwiPlates: disabled

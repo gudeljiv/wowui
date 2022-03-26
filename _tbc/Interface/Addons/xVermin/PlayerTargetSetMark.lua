@@ -5,9 +5,10 @@ local mark = false
 
 local function ClearMark()
 	if not UnitInParty('player') then
-		for i = 1, 9 do
+		for i = 0, 8 do
 			SetRaidTarget('player', i)
 		end
+		SetRaidTarget('player', 0)
 	end
 end
 

@@ -3,11 +3,13 @@ SpyDB = {
 	["kosData"] = {
 		["Golemagg"] = {
 			["Horde"] = {
+				["Mxzq"] = {
+				},
 				["Mxyz"] = {
 				},
-				["Mxyzptlk"] = {
+				["Vermina"] = {
 				},
-				["Mxzq"] = {
+				["Mxyzptlk"] = {
 				},
 				["Vermin"] = {
 				},
@@ -21,42 +23,26 @@ SpyDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Vermina - Golemagg"] = "Vermina - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
 	},
 	["profiles"] = {
-		["Vermin - Golemagg"] = {
-			["MainWindow"] = {
-				["Position"] = {
-					["y"] = 843.2817993164062,
-					["x"] = 453.7359313964844,
-					["h"] = 34.99994277954102,
-				},
-			},
+		["Mxyzptlk - Golemagg"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
 			["Colors"] = {
-				["Alert"] = {
-					["Stealth Text"] = {
-						["a"] = 1,
-					},
-					["Name Text"] = {
-						["a"] = 1,
-					},
-				},
 				["Bar"] = {
 					["Bar Text"] = {
 						["a"] = 1,
 					},
 				},
 			},
-			["HideSpy"] = true,
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
-			["BarTexture"] = "Glamour2",
 			["AppendUnitKoSCheck"] = true,
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Vermina - Golemagg"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindowVis"] = false,
 			["Colors"] = {
@@ -89,12 +75,41 @@ SpyDB = {
 			["HideSpy"] = true,
 		},
 		["Mxzq - Golemagg"] = {
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = 803.0519409179688,
+					["x"] = 319.0345458984375,
+					["w"] = 159.9999847412109,
+					["h"] = 66.99996948242188,
+				},
+			},
+			["Colors"] = {
+				["Alert"] = {
+					["Stealth Text"] = {
+						["a"] = 1,
+					},
+					["Name Text"] = {
+						["a"] = 1,
+					},
+				},
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["HideSpy"] = true,
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Vermin - Golemagg"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = 803.5690307617188,
-					["x"] = 362.7931518554688,
-					["h"] = 50.99993515014648,
+					["y"] = 829.1896362304688,
+					["x"] = 324.2069091796875,
+					["h"] = 83,
 				},
 			},
 			["Colors"] = {
@@ -113,6 +128,7 @@ SpyDB = {
 				},
 			},
 			["AppendUnitKoSCheck"] = true,
+			["BarTexture"] = "Glamour2",
 			["MainWindowVis"] = false,
 			["HideSpy"] = true,
 		},

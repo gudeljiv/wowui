@@ -1,8 +1,3 @@
-VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/use Coarse Sharpening Stone
-/use [button:1] 16; [button:2] 17
-END
 VER 3 000000000000000E " " "136106"
 /run InspectUnit("target")
 /run SortBags()
@@ -11,18 +6,23 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /castsequence Find Herbs,Find Minerals
 END
+VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Coarse Sharpening Stone
+/use [button:1] 16; [button:2] 17
+END
 VER 3 000000000000000F "AttackSpeed" "132089"
 /run mainSpeed, offSpeed = UnitAttackSpeed("target") print(format("%s: attack speed = %.2f", GetUnitName("target"), mainSpeed))
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:159
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:4540
+/castsequence [combat] reset=combat item:118
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:27854
@@ -30,8 +30,6 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /use item:27854
 END
 VER 3 000000000000000B "TEST" "132089"
-/run SetBinding("F10", "NONE", 2)
-/run  SetBinding("F11", "NONE", 2)
-/run  SetBinding("F10", "MULTIACTIONBAR2BUTTON1", 2)
-/run  SetBinding("F11", "MULTIACTIONBAR2BUTTON2", 2)
+/run ChatFrame3Tab:ClearAllPoints()
+/run ChatFrame3Tab:SetPoint('BOTTOMLEFT', ChatFrame3, 'TOPLEFT', -3, 7)
 END

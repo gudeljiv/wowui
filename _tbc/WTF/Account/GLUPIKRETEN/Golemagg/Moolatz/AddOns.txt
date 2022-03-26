@@ -79,13 +79,13 @@ Lorti UI Classic: enabled
 ls_Toasts: enabled
 MikScrollingBattleText: enabled
 MSBTOptions: enabled
-NeatPlates: enabled
-NeatPlatesHub: enabled
-NeatPlatesWidgets: enabled
+NeatPlates: disabled
+NeatPlatesHub: disabled
+NeatPlatesWidgets: disabled
 NeatPlates_Alvara: enabled
 NeatPlates_Graphite: enabled
 NeatPlates_Grey: enabled
-NeatPlates_Neon: enabled
+NeatPlates_Neon: disabled
 NeatPlates_Quatre: enabled
 NeatPlates_Roth: enabled
 NeatPlates_Slim_Horizontal: enabled
@@ -137,3 +137,9 @@ FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: enabled
 AuctionFaster: disabled
+TrackEverything: enabled
+Kui_Media: disabled
+Kui_Nameplates: disabled
+Kui_Nameplates_Core_Config: disabled
+Kui_Nameplates_Core: disabled
+Plater: disabled

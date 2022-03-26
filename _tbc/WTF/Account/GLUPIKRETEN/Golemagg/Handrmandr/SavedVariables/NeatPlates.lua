@@ -1,24 +1,25 @@
 
 NeatPlatesOptions = {
-	["SecondSpecProfile"] = "Default",
+	["BlizzardScaling"] = false,
 	["EnemyAutomation"] = {
 	},
 	["ForceHealthUpdates"] = false,
 	["ActiveTheme"] = "Neon",
-	["EmulatedTargetPlate"] = false,
-	["OverrideOutline"] = 1,
+	["NameplateClickableHeight"] = 1,
+	["WelcomeShown"] = true,
 	["BlizzardWidgets"] = true,
+	["HealthFrequent"] = true,
 	["FriendlyAutomation"] = {
 	},
 	["DisableCastBars"] = false,
 	["FourthSpecProfile"] = "Default",
 	["ThirdSpecProfile"] = "Default",
-	["WelcomeShown"] = true,
-	["ForceBlizzardFont"] = false,
+	["SecondSpecProfile"] = "Default",
+	["EmulatedTargetPlate"] = false,
 	["EnforceRequiredCVars"] = true,
-	["NameplateClickableHeight"] = 1,
+	["ForceBlizzardFont"] = false,
 	["BlizzardNameVisibility"] = false,
-	["BlizzardScaling"] = false,
+	["OverrideOutline"] = 1,
 	["NameplateClickableWidth"] = 1,
 	["FirstSpecProfile"] = "Default",
 }

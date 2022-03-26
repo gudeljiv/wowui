@@ -467,23 +467,30 @@ kc:SetScript(
 				local amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand
 				local spellId, spellName, spellSchool
 
-				if UnitExists('pet') and sourceGUID == UnitGUID('pet') then
-					if eventType == 'SWING_DAMAGE' then
-						amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand = select(12, CombatLogGetCurrentEventInfo())
-					elseif eventType == 'SPELL_DAMAGE' then
-						spellId, spellName, spellSchool, amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand = select(12, CombatLogGetCurrentEventInfo())
-					end
+				-- print(eventType)
 
-					if (overkill and overkill ~= -1) then
-						SendToTable(destName, 'pet')
-						combatTimer = time()
-					end
-				else
-					if (eventType == 'PARTY_KILL' and sourceGUID == UnitGUID('player')) then
-						SendToTable(destName, 'player')
-						combatTimer = time()
-					end
+				if (eventType == 'UNIT_DIED') then
+					SendToTable(destName, 'everybody')
+					combatTimer = time()
 				end
+
+			-- if UnitExists('pet') and sourceGUID == UnitGUID('pet') then
+			-- 	if eventType == 'SWING_DAMAGE' then
+			-- 		amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand = select(12, CombatLogGetCurrentEventInfo())
+			-- 	elseif eventType == 'SPELL_DAMAGE' then
+			-- 		spellId, spellName, spellSchool, amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand = select(12, CombatLogGetCurrentEventInfo())
+			-- 	end
+
+			-- 	if (overkill and overkill ~= -1) then
+			-- 		SendToTable(destName, 'pet')
+			-- 		combatTimer = time()
+			-- 	end
+			-- else
+			-- 	if (eventType == 'PARTY_KILL' and sourceGUID == UnitGUID('player')) then
+			-- 		SendToTable(destName, 'player')
+			-- 		combatTimer = time()
+			-- 	end
+			-- end
 			end
 
 			DisplayData()

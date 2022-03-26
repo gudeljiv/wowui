@@ -143,6 +143,12 @@ NeatPlatesHubSettings = {
 		["DefaultNeutralNameplatesOnNPCs"] = false,
 		["StyleFriendlyMode"] = 2,
 		["AdvancedEnableUnitCache"] = true,
+		["FriendlySubtextColor"] = {
+			["a"] = 0,
+			["b"] = 0,
+			["g"] = 0,
+			["r"] = 0,
+		},
 		["HighlightMouseoverMode"] = 1,
 		["OpacityFilterNeutralUnits"] = false,
 		["TextColorFriendlyNPC"] = {
@@ -153,6 +159,12 @@ NeatPlatesHubSettings = {
 		},
 		["OpacityFilterEnemyNPC"] = false,
 		["TextNameColorMode"] = 1,
+		["EnemySubtextColor"] = {
+			["a"] = 0,
+			["b"] = 0,
+			["g"] = 0,
+			["r"] = 0,
+		},
 		["ClassEnemyIcon"] = false,
 		["OpacityTarget"] = 1,
 		["TextColorHostilePlayer"] = {
@@ -239,6 +251,7 @@ NeatPlatesHubSettings = {
 			["g"] = 0.588234007358551,
 			["r"] = 0.05882339924573898,
 		},
+		["NameplateNoStackingFriendly"] = false,
 		["OpacityFilterFriendlyNPC"] = false,
 		["ColorRangeMelee"] = {
 			["a"] = 0,

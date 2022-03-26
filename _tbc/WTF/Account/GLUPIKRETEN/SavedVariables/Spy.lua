@@ -3,9 +3,11 @@ SpyDB = {
 	["kosData"] = {
 		["Golemagg"] = {
 			["Horde"] = {
+				["Mxzq"] = {
+				},
 				["Mxyz"] = {
 				},
-				["Mxzq"] = {
+				["Vermina"] = {
 				},
 				["Mxyzptlk"] = {
 				},
@@ -21,19 +23,64 @@ SpyDB = {
 		},
 	},
 	["profileKeys"] = {
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Vermina - Golemagg"] = "Vermina - Golemagg",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 	},
 	["profiles"] = {
+		["Mxyzptlk - Golemagg"] = {
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Vermina - Golemagg"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindowVis"] = false,
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+		},
+		["Mxyz - Golemagg"] = {
+			["AppendUnitNameCheck"] = true,
+			["MainWindow"] = {
+				["Position"] = {
+					["y"] = 883.6232299804688,
+					["x"] = 513.337646484375,
+					["h"] = 34.99994277954102,
+				},
+			},
+			["Colors"] = {
+				["Bar"] = {
+					["Bar Text"] = {
+						["a"] = 1,
+					},
+				},
+			},
+			["AppendUnitKoSCheck"] = true,
+			["MainWindowVis"] = false,
+			["HideSpy"] = true,
+		},
 		["Vermin - Golemagg"] = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = 843.2817993164062,
-					["x"] = 453.7359313964844,
-					["h"] = 34.99994277954102,
+					["y"] = 829.1896362304688,
+					["x"] = 324.2069091796875,
+					["h"] = 83,
 				},
 			},
 			["Colors"] = {
@@ -60,9 +107,10 @@ SpyDB = {
 			["AppendUnitNameCheck"] = true,
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = 803.5690307617188,
-					["x"] = 362.7931518554688,
-					["h"] = 50.99993515014648,
+					["y"] = 803.0519409179688,
+					["x"] = 319.0345458984375,
+					["w"] = 159.9999847412109,
+					["h"] = 66.99996948242188,
 				},
 			},
 			["Colors"] = {
@@ -83,38 +131,6 @@ SpyDB = {
 			["AppendUnitKoSCheck"] = true,
 			["MainWindowVis"] = false,
 			["HideSpy"] = true,
-		},
-		["Mxyz - Golemagg"] = {
-			["MainWindow"] = {
-				["Position"] = {
-					["y"] = 883.6232299804688,
-					["x"] = 513.337646484375,
-					["h"] = 34.99994277954102,
-				},
-			},
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["HideSpy"] = true,
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
-			["AppendUnitKoSCheck"] = true,
-		},
-		["Mxyzptlk - Golemagg"] = {
-			["AppendUnitNameCheck"] = true,
-			["MainWindowVis"] = false,
-			["Colors"] = {
-				["Bar"] = {
-					["Bar Text"] = {
-						["a"] = 1,
-					},
-				},
-			},
-			["AppendUnitKoSCheck"] = true,
 		},
 	},
 }

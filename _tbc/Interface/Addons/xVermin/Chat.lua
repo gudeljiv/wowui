@@ -75,37 +75,6 @@ local function SetChat()
 	ChatFrame1:SetHeight(220)
 	FCF_SetChatWindowFontSize(nil, ChatFrame1, 12)
 
-	OpenChatWindow(2)
-	FCF_SetLocked(ChatFrame2, nil)
-	FCF_UnDockFrame(ChatFrame2)
-	ChatFrame2:ClearAllPoints()
-	ChatFrame2:SetClampedToScreen()
-	ChatFrame2:SetClampRectInsets(0, -1, 0, 0)
-	ChatFrame2:SetPoint('BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 3, 7)
-	ChatFrame2:SetHeight(196)
-	FCF_SetChatWindowFontSize(nil, ChatFrame2, 12)
-	ChatFrame2:SetUserPlaced(true)
-	FCF_SavePositionAndDimensions(ChatFrame2)
-	FCF_DockFrame(ChatFrame2)
-
-	local frame = ChatFrame3
-	FCF_SetWindowName(frame, 'Groups and parties')
-	FCF_SetChatWindowFontSize(nil, frame, 12)
-	ChatFrame_RemoveAllMessageGroups(ChatFrame3)
-	ChatFrame_AddMessageGroup(frame, 'GUILD')
-	ChatFrame_AddMessageGroup(frame, 'OFFICER')
-	ChatFrame_AddMessageGroup(frame, 'PARTY')
-	ChatFrame_AddMessageGroup(frame, 'PARTY_LEADER')
-	ChatFrame_AddMessageGroup(frame, 'RAID')
-	ChatFrame_AddMessageGroup(frame, 'RAID_LEADER')
-	ChatFrame_AddMessageGroup(frame, 'RAID_WARNING')
-	ChatFrame_AddMessageGroup(frame, 'BATTLEGROUND')
-	ChatFrame_AddMessageGroup(frame, 'BATTLEGROUND_LEADER')
-	ChatFrame_AddMessageGroup(frame, 'INSTANCE_CHAT')
-	ChatFrame_AddMessageGroup(frame, 'INSTANCE_CHAT_LEADER')
-	ChatFrame_AddMessageGroup(frame, 'WHISPER')
-	ChatFrame_AddMessageGroup(frame, 'BN_WHISPER')
-
 	ChatFrame_RemoveMessageGroup(ChatFrame1, 'GUILD')
 	ChatFrame_RemoveMessageGroup(ChatFrame1, 'OFFICER')
 	ChatFrame_RemoveMessageGroup(ChatFrame1, 'PARTY')
@@ -120,10 +89,44 @@ local function SetChat()
 	ChatFrame_RemoveMessageGroup(ChatFrame1, 'WHISPER')
 	ChatFrame_RemoveMessageGroup(ChatFrame1, 'BN_WHISPER')
 
+	OpenChatWindow(2)
+	FCF_SetLocked(ChatFrame2, nil)
+	FCF_UnDockFrame(ChatFrame2)
+	ChatFrame2:ClearAllPoints()
+	ChatFrame2:SetClampedToScreen()
+	ChatFrame2:SetClampRectInsets(0, -1, 0, 0)
+	ChatFrame2:SetPoint('BOTTOMLEFT', UIParent, 'BOTTOMLEFT', 3, 7)
+	ChatFrame2:SetHeight(196)
+	FCF_SetChatWindowFontSize(nil, ChatFrame2, 12)
+	ChatFrame2:SetUserPlaced(true)
+	FCF_SavePositionAndDimensions(ChatFrame2)
+	FCF_DockFrame(ChatFrame2)
+
+	local frame = ChatFrame3
+	FCF_UnDockFrame(frame)
+	FCF_SetWindowName(frame, 'Groups and parties')
+	FCF_SetChatWindowFontSize(nil, frame, 12)
+	ChatFrame_RemoveAllMessageGroups(frame)
+	ChatFrame_AddMessageGroup(frame, 'GUILD')
+	ChatFrame_AddMessageGroup(frame, 'OFFICER')
+	ChatFrame_AddMessageGroup(frame, 'PARTY')
+	ChatFrame_AddMessageGroup(frame, 'PARTY_LEADER')
+	ChatFrame_AddMessageGroup(frame, 'RAID')
+	ChatFrame_AddMessageGroup(frame, 'RAID_LEADER')
+	ChatFrame_AddMessageGroup(frame, 'RAID_WARNING')
+	ChatFrame_AddMessageGroup(frame, 'BATTLEGROUND')
+	ChatFrame_AddMessageGroup(frame, 'BATTLEGROUND_LEADER')
+	ChatFrame_AddMessageGroup(frame, 'INSTANCE_CHAT')
+	ChatFrame_AddMessageGroup(frame, 'INSTANCE_CHAT_LEADER')
+	ChatFrame_AddMessageGroup(frame, 'WHISPER')
+	ChatFrame_AddMessageGroup(frame, 'BN_WHISPER')
+
 	ChatFrame3:ClearAllPoints()
 	ChatFrame3:SetClampedToScreen()
 	ChatFrame3:SetClampRectInsets(0, -1, 0, 0)
 	ChatFrame3:SetPoint('BOTTOMRIGHT', UIParent, 'BOTTOMRIGHT', -3, 7)
+	ChatFrame3Tab:ClearAllPoints()
+	ChatFrame3Tab:SetPoint('BOTTOMLEFT', ChatFrame3, 'TOPLEFT', -3, 7)
 	ChatFrame3:SetHeight(220)
 	ChatFrame3:Show()
 	ChatFrame3Tab:Show()
@@ -173,7 +176,7 @@ local function SetChat()
 	ChatFrame7:SetPoint('TOPLEFT', UIParent, 'TOPLEFT', 3, -225)
 	ChatFrame7:SetHeight(250)
 	ChatFrame7:Show()
-	ChatFrame7Tab:Show()
+	ChatFrame7Tab:Hide()
 
 	-- local frame = ChatFrame8
 	-- FCF_SetWindowName(frame, "XP")
@@ -187,7 +190,7 @@ local function SetChat()
 	-- ChatFrame8:Show()
 	-- ChatFrame8Tab:Show()
 
-	local background
+	local background, tab
 
 	for i, v in pairs(
 		{
@@ -206,22 +209,7 @@ local function SetChat()
 		background = _G[v:GetName() .. 'Background']
 
 		if (v:GetName() == 'ChatFrame7' or v:GetName() == 'ChatFrame8') then
-			-- v:SetWidth((chatWidth / 2) - 4)
-			-- _G[v:GetName() .. "Background"]:SetAlpha(0.3)
 			v:SetWidth((chatWidth / 1.3) - 4)
-			background:SetAlpha(0)
-			v:SetScript(
-				'OnEnter',
-				function()
-					background:SetAlpha(1)
-				end
-			)
-			v:SetScript(
-				'OnLeave',
-				function()
-					background:SetAlpha(0)
-				end
-			)
 		else
 			v:SetWidth(chatWidth)
 			background:SetAlpha(0.6)

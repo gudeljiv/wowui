@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 4774,
 	["lastSanitation"] = 3,
+	["session"] = 4831,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -366,8 +366,8 @@ BugGrabberDB = {
 		}, -- [46]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/03/09 13:39:43",
 			["session"] = 4718,
+			["time"] = "2022/03/09 13:39:43",
 			["counter"] = 3,
 		}, -- [47]
 		{
@@ -411,21 +411,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [52]
 		{
-			["message"] = "Interface\\AddOns\\aux-addon\\color-Color.lua:8: attempt to concatenate local 'text' (a boolean value)",
-			["time"] = "2022/03/15 16:53:33",
-			["locals"] = "self = <table> {\n}\ntext = true\nr = 41\ng = 146\nb = 255\na = 1\n(*temporary) = \"|c012992FF\"\n(*temporary) = true\n(*temporary) = \"|r\"\n(*temporary) = 41\n(*temporary) = 146\n(*temporary) = 255\n(*temporary) = \"attempt to concatenate local 'text' (a boolean value)\"\nmt = <table> {\n __concat = <function> defined @Interface\\AddOns\\aux-addon\\color.lua:13\n color = <table> {\n }\n __metatable = false\n __newindex = <function> defined @Interface\\AddOns\\aux-addon\\libs\\package.lua:18\n __call = <function> defined @Interface\\AddOns\\aux-addon\\color.lua:5\n}\n",
-			["stack"] = "[string \"@Interface\\AddOns\\aux-addon\\color-Color.lua\"]:8: in function `blue'\n[string \"@Interface\\AddOns\\aux-addon\\core\\slash.lua\"]:77: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
-			["session"] = 4759,
-			["counter"] = 1,
-		}, -- [53]
-		{
 			["message"] = "Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:659: attempt to index global 'row' (a nil value)",
 			["time"] = "2022/03/15 17:03:31",
 			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n rt = <unnamed> {\n }\n highlight = <unnamed> {\n }\n expandKey = \"14097:842\"\n cells = <table> {\n }\n expandable = true\n indented = false\n record = <table> {\n }\n}\nrt = <unnamed> {\n 0 = <userdata>\n OnEnter = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:647\n ResizeColumns = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:600\n SetSelectedRecord = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:850\n handlers = <table> {\n }\n OnClick = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:671\n OnDoubleClick = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:686\n records = <table> {\n }\n ContainsRecord = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:912\n rowInfo = <table> {\n }\n GetSelection = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:934\n OnIconEnter = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:635\n OnHeadColumnClick = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:614\n isSorted = true\n rows = <table> {\n }\n contentFrame = <unnamed> {\n }\n expanded = <table> {\n }\n scrollFrame = aux.frame2 {\n }\n sorts = <table> {\n }\n columns = <table> {\n }\n OnIconLeave = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:644\n SetSort = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:917\n OnLeave = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:665\n headCells = <table> {\n }\n SetDatabase = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:873\n RemoveAuctionRecord = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:905\n UpdateRows = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:751\n SetHandler = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:931\n SetRowInfo = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:829\n ROW_HEIGHT = 18.937500\n UpdateRowInfo = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:697\n Reset = <function> defined @Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:867\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = GameTooltip {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n GetBackdropColor = <function> defined @Interface\\SharedXML\\SharedTooltipTemplates.lua:182\n SetHyperlink = <function> defined =[C]:-1\n SetTradeSkillItem = <function> defined =[C]:-1\n SetBackdropBorderColor = <function> defined @Interface\\AddOns\\Lorti UI Classic\\core\\frames.lua:213\n SetCraftItem = <function> defined =[C]:-1\n comparing = false\n beautyBorder = <table> {\n }\n TopOverlay = <unnamed> {\n }\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\SharedTooltipTemplates.lua:190\n default = 1\n SetUnitDebuff = <function> defined =[C]:-1\n SetItemByID = <function> defined =[C]:-1\n SetLootItem = <function> defined =[C]:-1\n SetQuestItem = <function> defined =[C]:-1\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\SharedTooltipTemplates.lua:194\n SetCraftSpell = <function> defined =[C]:-1\n SetInboxItem = <function> defined =[C]:-1\n layoutType = \"TooltipDefaultLayout\"\n shoppingTooltips = <table> {\n }\n TMW_SetDogTag = <function> defined @Interface\\AddOns\\TellMeWhen\\Components\\Core\\Common\\DogTags\\config.lua:403\n SetMerchantItem = <function> defined =[C]:-1\n SetQuestLogItem = <function> defined =[C]:-1\n TMW_SetEquiv = <function> defined @Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:165\n SetTradeTargetItem = <function> defined =[C]:-1\n Background = NeavBackground {\n }\n SetTradePlayerItem = <function> defined =[C]:-1\n SetUnitBuff = <function> defined =[C]:-1\n SetSendMailItem = <function> defined =[C]:-1\n SetUnitAura = <function> defined =[C]:-1\n updateTooltip = 0.033000\n SetInventoryItem = <function> defined =[C]:-1\n TMW_SetSpellByIDWithClassIcon = <function> defined @Interface\\AddOns\\TellMeWhen\\Components\\Core\\Spells\\ClassSpellCache.lua:191\n NineSlice = <unnamed> {\n }\n TooltipBackdrop",
 			["stack"] = "[string \"@Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua\"]:659: in function <Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:647>",
 			["session"] = 4765,
 			["counter"] = 5,
-		}, -- [54]
+		}, -- [53]
 		{
 			["message"] = "Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:660: attempt to index local 'row' (a nil value)",
 			["time"] = "2022/03/15 17:03:59",
@@ -433,7 +425,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua\"]:660: in function <Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:647>",
 			["session"] = 4766,
 			["counter"] = 3,
-		}, -- [55]
+		}, -- [54]
 		{
 			["message"] = "Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:661: attempt to index local 'row' (a nil value)",
 			["time"] = "2022/03/15 17:05:20",
@@ -441,7 +433,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua\"]:661: in function <Interface\\AddOns\\aux-addon\\gui\\auction_listing.lua:647>",
 			["session"] = 4767,
 			["counter"] = 7,
-		}, -- [56]
+		}, -- [55]
 		{
 			["message"] = "...s\\Questie\\Modules\\Tracker\\QuestieTrackerPrivates.lua:32: Frame Questie_BaseFrame is not movable",
 			["time"] = "2022/02/18 13:33:52",
@@ -449,7 +441,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `StartMoving'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTrackerPrivates.lua\"]:32: in function <...s\\Questie\\Modules\\Tracker\\QuestieTrackerPrivates.lua:19>",
 			["session"] = 4770,
 			["counter"] = 10,
-		}, -- [57]
+		}, -- [56]
 		{
 			["message"] = "Interface\\AddOns\\TrinketMenu\\TrinketMenu-9.0.4.lua:817: attempt to index field '?' (a nil value)",
 			["time"] = "2022/03/12 20:02:03",
@@ -457,14 +449,61 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\TrinketMenu\\TrinketMenu-9.0.4.lua\"]:817: in function `func'\n[string \"@Interface\\AddOns\\TrinketMenu\\TrinketMenu-9.0.4.lua\"]:665: in function `TimersFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
 			["session"] = 4772,
 			["counter"] = 44,
+		}, -- [57]
+		{
+			["message"] = "...erface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:70: bad argument #2 to 'format' (string expected, got nil)",
+			["time"] = "2022/03/23 15:27:11",
+			["locals"] = "(*temporary) = \"%s-%s\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"string expected, got nil\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `format'\n[string \"@Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua\"]:70: in function <...erface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:65>\n[string \"@Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua\"]:78: in function <...erface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:77>",
+			["session"] = 4775,
+			["counter"] = 1,
 		}, -- [58]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
 			["time"] = "2022/02/15 18:27:27",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 4773,
-			["counter"] = 19,
+			["session"] = 4775,
+			["counter"] = 20,
 		}, -- [59]
+		{
+			["message"] = "...BugSack\\Libs\\AceSerializer-3.0\\AceSerializer-3.0-5.lua:247: bad argument #1 to 'gsub' (string expected, got nil)",
+			["time"] = "2022/03/23 16:29:51",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\BugSack\\Libs\\AceSerializer-3.0\\AceSerializer-3.0-5.lua\"]:247: in function `Deserialize'\n[string \"@Interface\\AddOns\\Details\\core\\network.lua\"]:404: in function `func'\n[string \"@Interface\\AddOns\\Details\\core\\network.lua\"]:648: in function `?'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\BugSack\\Libs\\AceComm-3.0\\AceComm-3.0-12.lua\"]:222: in function `OnReceiveMultipartLast'\n[string \"@Interface\\AddOns\\BugSack\\Libs\\AceComm-3.0\\AceComm-3.0-12.lua\"]:256: in function <...face\\AddOns\\BugSack\\Libs\\AceComm-3.0\\AceComm-3.0.lua:246>",
+			["session"] = 4785,
+			["counter"] = 1,
+		}, -- [60]
+		{
+			["message"] = "...erface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:91: table index is nil",
+			["time"] = "2022/03/23 16:43:23",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"TIME_PLAYED_MSG\"\ntotalTimeInSeconds = 474468\ntimeAtThisLevel = 1223\n(*temporary) = <table> {\n Jaroslav- = <table> {\n }\n Greenwise- = <table> {\n }\n Moolatz-Golemagg = <table> {\n }\n Testxv- = <table> {\n }\n Augustin- = <table> {\n }\n Mxys- = <table> {\n }\n Mxyz- = <table> {\n }\n Antun- = <table> {\n }\n Vermin- = <table> {\n }\n Mxym- = <table> {\n }\n Klhjakhsgdjh- = <table> {\n }\n Battitude-Golemagg = <table> {\n }\n Whatevs- = <table> {\n }\n Vermins- = <table> {\n }\n Mxzq- = <table> {\n }\n Mxzq-Golemagg = <table> {\n }\n Battitude- = <table> {\n }\n Moolatz-Dreadnaught = <table> {\n }\n Dotwise- = <table> {\n }\n Poklopac-Dreadnaught = <table> {\n }\n Ozrencic- = <table> {\n }\n Nitwit-Dreadnaught = <table> {\n }\n Mxyzptlk-Golemagg = <table> {\n }\n Pitchwise-Dreadnaught = <table> {\n }\n Handrmandr-Golemagg = <table> {\n }\n Battlearm-Golemagg = <table> {\n }\n Judawise- = <table> {\n }\n Mxyz-Golemagg = <table> {\n }\n Konac-Dreadnaught = <table> {\n }\n Korupcija- = <table> {\n }\n Kosturko- = <table> {\n }\n Pitchwise- = <table> {\n }\n Elohssa- = <table> {\n }\n Dmitar- = <table> {\n }\n Nitwit- = <table> {\n }\n Verminz- = <table> {\n }\n Greshnik-Dreadnaught = <table> {\n }\n Paydo- = <table> {\n }\n Augustin-Golemagg = <table> {\n }\n Mxyzptlk- = <table> {\n }\n Koloman- = <table> {\n }\n Grgur- = <table> {\n }\n Vermin-Golemagg = <table> {\n }\n Battlearm- = <table> {\n }\n Vermina-Golemagg = <table> {\n }\n}\n(*temporary) = nil\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"table index is nil\"\ndb = <table> {\n Jaroslav- = <table> {\n }\n Greenwise- = <table> {\n }\n Moolatz-Golemagg = <table> {\n }\n Testxv- = <table> {\n }\n Augustin- = <table> {\n }\n Mxys- = <table> {\n }\n Mxyz- = <table> {\n }\n Antun- = <table> {\n }\n Vermin- = <table> {\n }\n Mxym- = <table> {\n }\n Klhjakhsgdjh- = <table> {\n }\n Battitude-Golemagg = <table> {\n }\n Whatevs- = <table> {\n }\n Vermins- = <table> {\n }\n Mxzq- = <table> {\n }\n Mxzq-Golemagg = <table> {\n }\n Battitude- = <table> {\n }\n Moolatz-Dreadnaught = <table> {\n }\n Dotwise- = <table> {\n }\n Poklopac-Dreadnaught = <table> {\n }\n Ozrencic- = <table> {\n }\n Nitwit-Dreadnaught = <table> {\n }\n Mxyzptlk-Golemagg = <table> {\n }\n Pitchwise-Dreadnaught = <table> {\n }\n Handrmandr-Golemagg = <table> {\n }\n Battlearm-Golemagg = <table> {\n }\n Judawise- = <table> {\n }\n Mxyz-Golemagg = <table> {\n }\n Konac-Dreadnaught = <table> {\n }\n Korupcija- = <table> {\n }\n Kosturko- = <table> {\n }\n Pitchwise- = <table> {\n }\n Elohssa- = <table> {\n }\n Dmitar- = <table> {\n }\n Nitwit- = <table> {\n }\n Verminz- = <table> {\n }\n Greshnik-Dreadnaught = <table> {\n }\n Paydo- = <table> {\n }\n Augustin-Golemagg = <table> {\n }\n Mxyzptlk- = <table> {\n }\n Koloman- = <table> {\n }\n Grgur- = <table> {\n }\n Vermin-Golemagg = <table> {\n }\n Battlearm- = <table> {\n }\n Vermina-Golemagg = <table> {\n }\n}\ngetPlayerIdentifier = <function> defined @Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:73\nGetMaxLevelForPlayerExpansion = <function> defined @Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:85\ndataobj = <table> {\n}\nformatTime = <function> defined @Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:45\n",
+			["stack"] = "[string \"@Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua\"]:91: in function <...erface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:89>",
+			["session"] = 4786,
+			["counter"] = 1,
+		}, -- [61]
+		{
+			["message"] = "...erface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:92: table index is nil",
+			["time"] = "2022/03/23 16:47:29",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"TIME_PLAYED_MSG\"\ntotalTimeInSeconds = 474713\ntimeAtThisLevel = 1468\n(*temporary) = <table> {\n Jaroslav- = <table> {\n }\n Greenwise- = <table> {\n }\n Moolatz-Golemagg = <table> {\n }\n Testxv- = <table> {\n }\n Augustin- = <table> {\n }\n Mxys- = <table> {\n }\n Mxyz- = <table> {\n }\n Antun- = <table> {\n }\n Vermin- = <table> {\n }\n Mxym- = <table> {\n }\n Klhjakhsgdjh- = <table> {\n }\n Battitude-Golemagg = <table> {\n }\n Whatevs- = <table> {\n }\n Vermins- = <table> {\n }\n Mxzq- = <table> {\n }\n Mxzq-Golemagg = <table> {\n }\n Battitude- = <table> {\n }\n Moolatz-Dreadnaught = <table> {\n }\n Dotwise- = <table> {\n }\n Poklopac-Dreadnaught = <table> {\n }\n Ozrencic- = <table> {\n }\n Nitwit-Dreadnaught = <table> {\n }\n Mxyzptlk-Golemagg = <table> {\n }\n Pitchwise-Dreadnaught = <table> {\n }\n Handrmandr-Golemagg = <table> {\n }\n Battlearm-Golemagg = <table> {\n }\n Judawise- = <table> {\n }\n Mxyz-Golemagg = <table> {\n }\n Konac-Dreadnaught = <table> {\n }\n Korupcija- = <table> {\n }\n Kosturko- = <table> {\n }\n Pitchwise- = <table> {\n }\n Elohssa- = <table> {\n }\n Dmitar- = <table> {\n }\n Nitwit- = <table> {\n }\n Verminz- = <table> {\n }\n Greshnik-Dreadnaught = <table> {\n }\n Paydo- = <table> {\n }\n Augustin-Golemagg = <table> {\n }\n Mxyzptlk- = <table> {\n }\n Koloman- = <table> {\n }\n Grgur- = <table> {\n }\n Vermin-Golemagg = <table> {\n }\n Battlearm- = <table> {\n }\n Vermina-Golemagg = <table> {\n }\n}\n(*temporary) = nil\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"table index is nil\"\ngetPlayerIdentifier = <function> defined @Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:73\ndb = <table> {\n Jaroslav- = <table> {\n }\n Greenwise- = <table> {\n }\n Moolatz-Golemagg = <table> {\n }\n Testxv- = <table> {\n }\n Augustin- = <table> {\n }\n Mxys- = <table> {\n }\n Mxyz- = <table> {\n }\n Antun- = <table> {\n }\n Vermin- = <table> {\n }\n Mxym- = <table> {\n }\n Klhjakhsgdjh- = <table> {\n }\n Battitude-Golemagg = <table> {\n }\n Whatevs- = <table> {\n }\n Vermins- = <table> {\n }\n Mxzq- = <table> {\n }\n Mxzq-Golemagg = <table> {\n }\n Battitude- = <table> {\n }\n Moolatz-Dreadnaught = <table> {\n }\n Dotwise- = <table> {\n }\n Poklopac-Dreadnaught = <table> {\n }\n Ozrencic- = <table> {\n }\n Nitwit-Dreadnaught = <table> {\n }\n Mxyzptlk-Golemagg = <table> {\n }\n Pitchwise-Dreadnaught = <table> {\n }\n Handrmandr-Golemagg = <table> {\n }\n Battlearm-Golemagg = <table> {\n }\n Judawise- = <table> {\n }\n Mxyz-Golemagg = <table> {\n }\n Konac-Dreadnaught = <table> {\n }\n Korupcija- = <table> {\n }\n Kosturko- = <table> {\n }\n Pitchwise- = <table> {\n }\n Elohssa- = <table> {\n }\n Dmitar- = <table> {\n }\n Nitwit- = <table> {\n }\n Verminz- = <table> {\n }\n Greshnik-Dreadnaught = <table> {\n }\n Paydo- = <table> {\n }\n Augustin-Golemagg = <table> {\n }\n Mxyzptlk- = <table> {\n }\n Koloman- = <table> {\n }\n Grgur- = <table> {\n }\n Vermin-Golemagg = <table> {\n }\n Battlearm- = <table> {\n }\n Vermina-Golemagg = <table> {\n }\n}\nGetMaxLevelForPlayerExpansion = <function> defined @Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:85\ndataobj = <table> {\n}\nformatTime = <function> defined @Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:45\n",
+			["stack"] = "[string \"@Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua\"]:92: in function <...erface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:89>",
+			["session"] = 4788,
+			["counter"] = 1,
+		}, -- [62]
+		{
+			["message"] = "...erface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:97: table index is nil",
+			["time"] = "2022/03/23 16:49:21",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"TIME_PLAYED_MSG\"\ntotalTimeInSeconds = 474825\ntimeAtThisLevel = 1580\n(*temporary) = <table> {\n Jaroslav- = <table> {\n }\n Greenwise- = <table> {\n }\n Moolatz-Golemagg = <table> {\n }\n Testxv- = <table> {\n }\n Augustin- = <table> {\n }\n Mxys- = <table> {\n }\n Mxyz- = <table> {\n }\n Antun- = <table> {\n }\n Vermin- = <table> {\n }\n Mxym- = <table> {\n }\n Klhjakhsgdjh- = <table> {\n }\n Battitude-Golemagg = <table> {\n }\n Whatevs- = <table> {\n }\n Vermins- = <table> {\n }\n Mxzq- = <table> {\n }\n Mxzq-Golemagg = <table> {\n }\n Battitude- = <table> {\n }\n Moolatz-Dreadnaught = <table> {\n }\n Dotwise- = <table> {\n }\n Poklopac-Dreadnaught = <table> {\n }\n Ozrencic- = <table> {\n }\n Nitwit-Dreadnaught = <table> {\n }\n Vermina-Golemagg = <table> {\n }\n Pitchwise-Dreadnaught = <table> {\n }\n Handrmandr-Golemagg = <table> {\n }\n Battlearm- = <table> {\n }\n Judawise- = <table> {\n }\n Vermin-Golemagg = <table> {\n }\n Konac-Dreadnaught = <table> {\n }\n Koloman- = <table> {\n }\n Mxyzptlk- = <table> {\n }\n Pitchwise- = <table> {\n }\n Elohssa- = <table> {\n }\n Dmitar- = <table> {\n }\n Nitwit- = <table> {\n }\n Greshnik-Dreadnaught = <table> {\n }\n Verminz- = <table> {\n }\n Paydo- = <table> {\n }\n Augustin-Golemagg = <table> {\n }\n Kosturko- = <table> {\n }\n Korupcija- = <table> {\n }\n Grgur- = <table> {\n }\n Mxyz-Golemagg = <table> {\n }\n Battlearm-Golemagg = <table> {\n }\n Mxyzptlk-Golemagg = <table> {\n }\n}\n(*temporary) = nil\n(*temporary) = <table> {\n}\n(*temporary) = 2\n(*temporary) = <function> defined @Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:76\n(*temporary) = <function> defined @Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:76\n(*temporary) = nil\n(*temporary) = \"table index is nil\"\ngetPlayerIdentifier = <function> defined @Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:73\ndb = <table> {\n Jaroslav- = <table> {\n }\n Greenwise- = <table> {\n }\n Moolatz-Golemagg = <table> {\n }\n Testxv- = <table> {\n }\n Augustin- = <table> {\n }\n Mxys- = <table> {\n }\n Mxyz- = <table> {\n }\n Antun- = <table> {\n }\n Vermin- = <table> {\n }\n Mxym- = <table> {\n }\n Klhjakhsgdjh- = <table> {\n }\n Battitude-Golemagg = <table> {\n }\n Whatevs- = <table> {\n }\n Vermins- = <table> {\n }\n Mxzq- = <table> {\n }\n Mxzq-Golemagg = <table> {\n }\n Battitude- = <table> {\n }\n Moolatz-Dreadnaught = <table> {\n }\n Dotwise- = <table> {\n }\n Poklopac-Dreadnaught = <table> {\n }\n Ozrencic- = <table> {\n }\n Nitwit-Dreadnaught = <table> {\n }\n Vermina-Golemagg = <table> {\n }\n Pitchwise-Dreadnaught = <table> {\n }\n Handrmandr-Golemagg = <table> {\n }\n Battlearm- = <table> {\n }\n Judawise- = <table> {\n }\n Vermin-Golemagg = <table> {\n }\n Konac-Dreadnaught = <table> {\n }\n Koloman- = <table> {\n }\n Mxyzptlk- = <table> {\n }\n Pitchwise- = <table> {\n }\n Elohssa- = <table> {\n }\n Dmitar- = <table> {\n }\n Nitwit- = <table> {\n }\n Greshnik-Dreadnaught = <table> {\n }\n Verminz- = <table> {\n }\n Paydo- = <table> {\n }\n Augustin-Golemagg = <table> {\n }\n Kosturko- = <table> {\n }\n Korupcija- = <table> {\n }\n Grgur- = <table> {\n }\n Mxyz-Golemagg = <table> {\n }\n Battlearm-Golemagg = <table> {\n }\n Mxyzptlk-Golemagg = <table> {\n }\n}\nGetMaxLevelForPlayerExpansion = <function> defined @Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:90\ndataobj = <table> {\n}\nformatTime = <function> defined @Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:45\n",
+			["stack"] = "[string \"@Interface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua\"]:97: in function <...erface\\AddOns\\ChocolateBar\\modules\\CB_PlayedTime.lua:94>",
+			["session"] = 4789,
+			["counter"] = 2,
+		}, -- [63]
+		{
+			["message"] = "Interface\\AddOns\\aux-addon\\color-Color.lua:8: attempt to concatenate local 'text' (a boolean value)",
+			["time"] = "2022/03/15 16:53:33",
+			["locals"] = "self = <table> {\n}\ntext = true\nr = 41\ng = 146\nb = 255\na = 1\n(*temporary) = \"|c012992FF\"\n(*temporary) = true\n(*temporary) = \"|r\"\n(*temporary) = 41\n(*temporary) = 146\n(*temporary) = 255\n(*temporary) = \"attempt to concatenate local 'text' (a boolean value)\"\nmt = <table> {\n __concat = <function> defined @Interface\\AddOns\\aux-addon\\color.lua:13\n color = <table> {\n }\n __metatable = false\n __newindex = <function> defined @Interface\\AddOns\\aux-addon\\libs\\package.lua:18\n __call = <function> defined @Interface\\AddOns\\aux-addon\\color.lua:5\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\aux-addon\\color-Color.lua\"]:8: in function `blue'\n[string \"@Interface\\AddOns\\aux-addon\\core\\slash.lua\"]:77: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4819,
+			["counter"] = 2,
+		}, -- [64]
 	},
 }
