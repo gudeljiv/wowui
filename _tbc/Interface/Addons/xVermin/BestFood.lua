@@ -591,7 +591,9 @@ NeedsFoodBadly.Food = {
 	[13932] = {id = 13932, name = 'Poached Sunscale Salmon', lvl = 35, conj = false, hp = 874.8, hp5 = 6},
 	[1401] = {id = 1401, name = 'Green Tea Leaf', lvl = 4, conj = false, hp = 30, mp = 60},
 	[5473] = {id = 5473, name = 'Scorpid Surprise', lvl = 0, conj = false, hp = 294},
-	[27854] = {id = 27854, name = 'smoked talbuk venison', lvl = 55, conj = false, hp = 4320}
+	[27854] = {id = 27854, name = 'Smoked Talbuk Venison', lvl = 55, conj = false, hp = 4320},
+	[28399] = {id = 28399, name = 'Filtered Draenic Water', lvl = 55, conj = false, mp = 5100},
+	[34062] = {id = 34062, name = 'Conjured Manna Biscuit', lvl = 55, conj = true, hp = 7500, mp = 7500}
 }
 NeedsFoodBadly.Potion = {
 	[13446] = {id = 13446, name = 'Major Healing Potion', lvl = 45, low = 1050, high = 1750, hp = true},

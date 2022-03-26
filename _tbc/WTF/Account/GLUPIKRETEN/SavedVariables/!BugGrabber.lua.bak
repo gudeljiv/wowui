@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 4830,
+	["session"] = 4832,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -505,5 +505,13 @@ BugGrabberDB = {
 			["session"] = 4819,
 			["counter"] = 2,
 		}, -- [64]
+		{
+			["message"] = "...ddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:138: Wrong data type, expected 'string', got nil ",
+			["time"] = "2022/03/26 16:29:55",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"Wrong data type, expected 'string', got nil \"\n",
+			["stack"] = "[string \"=[C]\"]: in function `assert'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua\"]:138: in function `GetProfessionInfoByItemName'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua\"]:111: in function `GetProfessionRequiredSkillColor'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua\"]:161: in function `RedrawTooltip'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua\"]:43: in function <...face\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua:38>\n[string \"=[C]\"]: ?",
+			["session"] = 4832,
+			["counter"] = 2,
+		}, -- [65]
 	},
 }

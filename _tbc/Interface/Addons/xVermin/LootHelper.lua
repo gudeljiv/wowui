@@ -19,6 +19,15 @@ lm:SetHeight(lm.text:GetStringHeight())
 lm:Hide()
 
 ----------------------------------------------------------
+-- BINDING BUTTON FRAME
+----------------------------------------------------------
+local btn = CreateFrame('BUTTON', 'MyBindingLootHelper')
+btn:SetWidth(1)
+btn:SetHeight(1)
+btn:SetPoint('TOP')
+btn:Hide()
+
+----------------------------------------------------------
 -- BLIZZARD counter
 ----------------------------------------------------------
 local bcf = CreateFrame('Frame', 'BlizzardCountFrame')
@@ -88,8 +97,6 @@ f:SetScript(
 	end
 )
 
-local btn = CreateFrame('BUTTON', 'MyBindingLootHelper')
-SetBindingClick('ALT-Q', 'MyBindingLootHelper')
 btn:SetScript(
 	'OnClick',
 	function(self, event)
@@ -115,6 +122,11 @@ bcf:RegisterEvent('PLAYER_REGEN_DISABLED')
 bcf:SetScript(
 	'OnEvent',
 	function(self, event, ...)
+		if event == 'ADDON_LOADED' then
+			local ok = SetBindingClick('ALT-Q', 'MyBindingLootHelper')
+			print('MyBindingLootHelper loaded:', ok)
+		end
+
 		-- if xVermin.Class == "MAGE" or xVermin.Class == "SHAMAN" or xVermin.Class == "PRIEST" or xVermin.Class == "HUNTER" or xVermin.Class == "PALADIN" or xVermin.Class == "WARLOCK" then
 		if xVermin.Class == 'MAGE' then
 			---------------------------------------------------------

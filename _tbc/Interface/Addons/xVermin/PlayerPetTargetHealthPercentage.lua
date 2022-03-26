@@ -25,7 +25,7 @@ local PetHealthFrame = CreateFrame('Frame', 'PetHealthFrame', UIParent)
 PetHealthFrame:SetWidth(1)
 PetHealthFrame:SetHeight(1)
 PetHealthFrame:SetAlpha(0.3)
-PetHealthFrame:SetPoint('CENTER', UIParent, 'CENTER', -120, -137)
+-- PetHealthFrame:SetPoint('CENTER', UIParent, 'CENTER', -120, -137)
 PetHealthFrame.text = PetHealthFrame:CreateFontString(nil, 'ARTWORK')
 PetHealthFrame.text:SetFont(xVermin.Config.font.arial, 18, 'THINOUTLINE')
 PetHealthFrame.text:SetPoint('CENTER', PetHealthFrame, 'CENTER', 0, 0)
@@ -43,6 +43,13 @@ local function PetHealthShow()
 	PetHealthFrame.text:SetText(petHP)
 	PetHealthFrame.text:SetVertexColor(1, 1, 1)
 	PetHealthFrame.text:Show()
+
+	-- no happiness
+	if PetFrameHappiness:IsVisible() then
+		PetHealthFrame:SetPoint('LEFT', PetFrame, 'RIGHT', 40, -4)
+	else
+		PetHealthFrame:SetPoint('LEFT', PetFrame, 'RIGHT', 20, -4)
+	end
 end
 
 local function PetHealthHide()

@@ -108,8 +108,8 @@ TrinketMenu: enabled
 AuctionFaster: disabled
 aux-addon: enabled
 TrackEverything: enabled
-Kui_Media: disabled
-Kui_Nameplates: disabled
-Kui_Nameplates_Core_Config: disabled
-Kui_Nameplates_Core: disabled
+Kui_Media: enabled
+Kui_Nameplates: enabled
+Kui_Nameplates_Core_Config: enabled
+Kui_Nameplates_Core: enabled
 Plater: disabled
