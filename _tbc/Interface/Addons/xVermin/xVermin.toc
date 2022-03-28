@@ -61,6 +61,7 @@ DamageFont.lua
 ErrorsFilter.lua
 FastLoot.lua
 GarbageCollector.lua
+ItemID.lua
 LootHelper.lua
 PlayerPetTargetHealthPercentage.lua
 PlayerTargetSetMark.lua

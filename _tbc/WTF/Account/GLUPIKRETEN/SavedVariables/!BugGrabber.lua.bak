@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 4834,
 	["lastSanitation"] = 3,
+	["session"] = 4837,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -366,8 +366,8 @@ BugGrabberDB = {
 		}, -- [46]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/03/09 13:39:43",
 			["session"] = 4718,
+			["time"] = "2022/03/09 13:39:43",
 			["counter"] = 3,
 		}, -- [47]
 		{
@@ -510,8 +510,8 @@ BugGrabberDB = {
 			["time"] = "2022/03/26 16:29:55",
 			["locals"] = "(*temporary) = nil\n(*temporary) = \"Wrong data type, expected 'string', got nil \"\n",
 			["stack"] = "[string \"=[C]\"]: in function `assert'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua\"]:138: in function `GetProfessionInfoByItemName'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua\"]:111: in function `GetProfessionRequiredSkillColor'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua\"]:161: in function `RedrawTooltip'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua\"]:43: in function <...face\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua:38>\n[string \"=[C]\"]: ?",
-			["session"] = 4832,
-			["counter"] = 2,
+			["session"] = 4835,
+			["counter"] = 6,
 		}, -- [65]
 	},
 }
