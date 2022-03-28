@@ -84,7 +84,8 @@ local private = {
 			{name = L['Ancient Lichen'], id = '', itemId = 22790, minSkillLevel = 340},
 			{name = L['Netherbloom'], id = '', itemId = 22791, minSkillLevel = 350},
 			{name = L['Nightmare Vine'], id = '', itemId = 22792, minSkillLevel = 365},
-			{name = L['Mana Thistle'], id = '', itemId = 22793, minSkillLevel = 375}
+			{name = L['Mana Thistle'], id = '', itemId = 22793, minSkillLevel = 375},
+			{name = L['Bloodthistle'], id = '', itemId = 22710, minSkillLevel = 1}
 		}
 	},
 	Skinning = {
