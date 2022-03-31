@@ -1,10 +1,14 @@
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/startattack
-/cast Seal of Righteousness
-END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /startattack
 /cast Judgement
+END
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][] Holy Light
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/startattack
+/cast Seal of Righteousness
 END
