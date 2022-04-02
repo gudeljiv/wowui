@@ -16,12 +16,12 @@ VER 3 000000000000000F "AttackSpeed" "132089"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:159
+/use [nocombat]item:1179
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4540
+/use [nocombat]item:2287
 /castsequence [combat] reset=combat item:858
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
