@@ -1,3 +1,0 @@
-
-BackpackBankDB = nil
-BackpackPosition = nil

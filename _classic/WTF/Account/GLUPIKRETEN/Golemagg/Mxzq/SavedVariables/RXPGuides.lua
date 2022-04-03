@@ -1,7 +1,0 @@
-
-RXPCData = {
-	["flightPaths"] = {
-	},
-	["stepSkip"] = {
-	},
-}
