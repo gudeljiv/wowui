@@ -14,12 +14,12 @@ Grid2DB = {
 					["BackgroundTexture"] = "None",
 					["BorderB"] = 0.501960784313726,
 					["layouts"] = {
-						["raid"] = "By Group & Class",
 						["arena"] = "By Group & Class",
-						["solo"] = "By Group & Class",
 						["party"] = "By Group & Class",
+						["solo"] = "By Group & Class",
+						["raid"] = "By Group & Class",
 					},
-					["BackgroundB"] = 0.101960784313725,
+					["BackgroundR"] = 0.101960784313725,
 					["BorderR"] = 0.501960784313726,
 					["Spacing"] = 1,
 					["anchor"] = "CENTER",
@@ -28,6 +28,10 @@ Grid2DB = {
 						["hide"] = true,
 					},
 					["PosY"] = 79.999838360142,
+					["BackgroundB"] = 0.101960784313725,
+					["BackgroundA"] = 0,
+					["BorderG"] = 0.501960784313726,
+					["BorderTexture"] = "None",
 					["extraThemes"] = {
 						{
 							["BackgroundTexture"] = "None",
@@ -139,10 +143,6 @@ Grid2DB = {
 							["FrameDisplay"] = "Always",
 						}, -- [3]
 					},
-					["BackgroundA"] = 0,
-					["BorderG"] = 0.501960784313726,
-					["BorderTexture"] = "None",
-					["BackgroundR"] = 0.101960784313725,
 					["PosX"] = -253.333301786579,
 				},
 			},
@@ -827,16 +827,6 @@ Grid2DB = {
 					["blinkThreshold"] = 3,
 					["spellName"] = 27827,
 				},
-				["debuff-WeakenedSoul"] = {
-					["type"] = "debuff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0.9,
-						["g"] = 0.2,
-						["r"] = 0,
-					},
-					["spellName"] = 6788,
-				},
 				["buff-Renew-mine"] = {
 					["color1"] = {
 						["a"] = 1,
@@ -857,6 +847,16 @@ Grid2DB = {
 						["r"] = 0,
 					},
 					["spellName"] = 10901,
+				},
+				["debuff-WeakenedSoul"] = {
+					["type"] = "debuff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.9,
+						["g"] = 0.2,
+						["r"] = 0,
+					},
+					["spellName"] = 6788,
 				},
 			},
 			["versions"] = {
@@ -1688,21 +1688,21 @@ Grid2DB = {
 				["health"] = {
 					["texture"] = "Glamour2",
 					["type"] = "bar",
-					["orientation"] = "HORIZONTAL",
-					["backColor"] = {
-						["a"] = 0.389516115188599,
-						["r"] = 0,
-						["g"] = 0,
-						["b"] = 0,
-					},
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "CENTER",
 						["point"] = "CENTER",
 						["x"] = 0,
 					},
-					["level"] = 2,
+					["backColor"] = {
+						["a"] = 0.389516115188599,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
 					["backTexture"] = "Glamour2",
+					["level"] = 2,
+					["orientation"] = "HORIZONTAL",
 					["color1"] = {
 						["a"] = 1,
 						["b"] = 0,
@@ -2159,9 +2159,9 @@ Grid2DB = {
 						["b"] = 0,
 					},
 				},
-				["buff-BlessingOfWisdom"] = {
+				["buff-BlessingOfMight"] = {
 					["type"] = "buff",
-					["spellName"] = 25290,
+					["spellName"] = 25291,
 					["color1"] = {
 						["a"] = 1,
 						["r"] = 0.7,
@@ -2169,9 +2169,9 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
-				["buff-BlessingOfWisdom(greater)"] = {
+				["buff-BlessingOfWisdom"] = {
 					["type"] = "buff",
-					["spellName"] = 25918,
+					["spellName"] = 25290,
 					["color1"] = {
 						["a"] = 1,
 						["r"] = 0.7,
@@ -2199,9 +2199,9 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
-				["buff-BlessingOfMight"] = {
+				["buff-BlessingOfWisdom(greater)"] = {
 					["type"] = "buff",
-					["spellName"] = 25291,
+					["spellName"] = 25918,
 					["color1"] = {
 						["a"] = 1,
 						["r"] = 0.7,
