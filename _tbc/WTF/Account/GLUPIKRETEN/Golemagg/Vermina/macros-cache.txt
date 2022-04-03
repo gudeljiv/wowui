@@ -1,3 +1,12 @@
+VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, harm, nodead][] Mana Tap
+END
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/startattack
+/cast Judgement
+END
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][] Holy Light
@@ -10,13 +19,4 @@ END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, harm, nodead][] Hammer of Justice
-END
-VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover, harm, nodead][] Mana Tap
-END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/startattack
-/cast Judgement
 END
