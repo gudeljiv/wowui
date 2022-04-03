@@ -1,4 +1,0 @@
-
-LovelyLootPCDB = {
-	["charSpec"] = false,
-}
