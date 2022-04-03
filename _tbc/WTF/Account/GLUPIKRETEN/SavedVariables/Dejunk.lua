@@ -6,9 +6,43 @@ __DEJUNK_SAVED_VARIABLES__ = {
 			["frame"] = {
 				["point"] = {
 					"TOPRIGHT", -- [1]
-					-372, -- [2]
-					-79, -- [3]
+					-247, -- [2]
+					-125, -- [3]
 				},
+			},
+			["inclusions"] = {
+				["4880"] = true,
+				["4604"] = true,
+				["4541"] = true,
+				["4879"] = true,
+				["5635"] = true,
+				["2996"] = true,
+				["17056"] = true,
+				["3376"] = true,
+				["3670"] = true,
+				["5125"] = true,
+				["3181"] = true,
+				["1179"] = true,
+				["6444"] = true,
+				["2287"] = true,
+				["1206"] = true,
+				["4606"] = true,
+				["4605"] = true,
+				["2924"] = true,
+				["1766"] = true,
+				["3180"] = true,
+				["2764"] = true,
+				["818"] = true,
+				["1817"] = true,
+				["4537"] = true,
+				["3674"] = true,
+				["3676"] = true,
+				["6445"] = true,
+				["3669"] = true,
+				["5124"] = true,
+				["3401"] = true,
+				["771"] = true,
+				["4877"] = true,
 			},
 		},
 		["minimapIcon"] = {
@@ -249,6 +283,12 @@ __DEJUNK_SAVED_VARIABLES__ = {
 			["version"] = 3,
 		},
 		["Vermina-Golemagg"] = {
+			["destroy"] = {
+				["autoOpen"] = {
+					["enabled"] = true,
+					["value"] = 3,
+				},
+			},
 			["version"] = 3,
 		},
 	},

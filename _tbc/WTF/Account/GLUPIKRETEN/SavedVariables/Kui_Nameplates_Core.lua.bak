@@ -11,6 +11,7 @@ KuiNameplatesCoreSaved = {
 			["auras_hide_all_other"] = true,
 			["guild_text_players"] = true,
 			["frame_width"] = 120,
+			["auras_icon_normal_size"] = 28,
 			["nameonly_combat_hostile"] = false,
 			["title_text_players"] = true,
 			["health_text_hostile_dmg"] = 2,
@@ -19,22 +20,22 @@ KuiNameplatesCoreSaved = {
 			["frame_width_target"] = 160,
 			["auras_sort"] = 1,
 			["nameonly_combat_hostile_player"] = false,
-			["health_text_hostile_max"] = 2,
 			["health_text"] = true,
 			["name_colour_npc_friendly"] = {
 				0.00784313725490196, -- [1]
 				1, -- [2]
 				0, -- [3]
 			},
+			["cvar_enable"] = true,
 			["name_colour_player_hostile"] = {
 				1, -- [1]
 				0, -- [2]
 				0.00784313725490196, -- [3]
 			},
-			["cvar_enable"] = true,
+			["nameonly_damaged_enemies"] = false,
 			["global_scale"] = 1.3,
 			["nameonly_hostile_players"] = true,
-			["nameonly_damaged_enemies"] = false,
+			["threat_brackets"] = true,
 			["name_colour_npc_hostile"] = {
 				1, -- [1]
 				0, -- [2]
@@ -42,7 +43,7 @@ KuiNameplatesCoreSaved = {
 			},
 			["bar_animation"] = 2,
 			["execute_enabled"] = false,
-			["threat_brackets"] = true,
+			["health_text_hostile_max"] = 2,
 			["bar_texture"] = "Glamour2",
 		},
 	},
