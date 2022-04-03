@@ -1,0 +1,8 @@
+
+BB = {
+	["Enabled"] = 1,
+	["Buffs"] = {
+	},
+	["Selected"] = 0,
+	["Population"] = 0,
+}

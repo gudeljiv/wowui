@@ -1,0 +1,60 @@
+## Interface: 20502
+## Title: Track Everything
+## Author: Mickeya <Solid> @Gehennas-Alliance EU
+## Version: 1.7.13-release-bcc
+## SavedVariables: TrackEverythingDB
+## SavedVariablesPerCharacter: TrackEverythingCharDB
+## OptionalDeps: GatherMate2
+## Notes: Addon to simplify the usability of tracking abilities with auto-switching function and more.
+# Notes-frFR: 
+# Notes-deDE: 
+# Notes-esES: 
+# Notes-esMX: 
+# Notes-koKR: 
+## Notes-ruRU: Аддон для облегчения использования способностей отслеживания с функцией автоматического переключения и не только.
+# Notes-zhCN: 
+# Notes-zhTW: 
+# Notes-itIT: 
+
+## X-Curse-Project-ID: 399326
+## X-WoWI-ID: 25637
+## X-Author-Game-Info: EU Gehennas (Mickeya). E-mail: sm.ownmail@gmail.com, Discord: whatyougonado#9852, Battle.net: BULBASAUR#2352
+
+# External libs
+External\EmbeddedLibs\LibStub\LibStub.lua
+External\EmbeddedLibs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+External\EmbeddedLibs\AceAddon-3.0\AceAddon-3.0.xml
+External\EmbeddedLibs\AceEvent-3.0\AceEvent-3.0.xml
+External\EmbeddedLibs\AceTimer-3.0\AceTimer-3.0.xml
+External\EmbeddedLibs\AceHook-3.0\AceHook-3.0.xml
+External\EmbeddedLibs\AceDB-3.0\AceDB-3.0.xml
+External\EmbeddedLibs\AceLocale-3.0\AceLocale-3.0.xml
+External\EmbeddedLibs\AceConsole-3.0\AceConsole-3.0.xml
+External\EmbeddedLibs\AceGUI-3.0\AceGUI-3.0.xml
+External\EmbeddedLibs\AceConfig-3.0\AceConfig-3.0.xml
+External\EmbeddedLibs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+External\EmbeddedLibs\LibDBIcon-1.0\LibDBIcon-1.0.lua
+#External\EmbeddedLibs\HereBeDragons-2.0\HereBeDragons-2.0.lua
+#External\EmbeddedLibs\LibTouristClassic-1.0\LibTouristClassic-1.0.lua
+
+# Main addon file
+TrackEverything.lua
+
+# Locale
+Locale\Locale.lua
+
+# Util
+Core\Util\MyLib.lua
+
+# Core init file
+Core\Core.lua
+
+# Services
+Core\Service\Colors.lua
+Core\Service\Log.lua
+Core\Service\Settings.lua
+Core\Service\Icon.lua
+Core\Service\SpellSwitcher.lua
+Core\Service\SlashCommands.lua
+Core\Service\GatheringInfo.lua
+Core\Service\Tooltip.lua

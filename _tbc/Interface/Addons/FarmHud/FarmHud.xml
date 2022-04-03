@@ -1,0 +1,137 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+	<Script file="Localization.lua"/>
+	<Script file="FarmHud.lua"/>
+	<Script file="FarmHud_Options.lua"/>
+	<Script file="FarmHud_DataBroker.lua"/>
+
+	<FontString name="FarmHudFont" inherits="SystemFont_Small2" outline="THICK" hidden="true" virtual="true">
+		<Shadow>
+			<Offset x=".2" y="-.2"/>
+			<Color r="0" g="0" b="0"/>
+		</Shadow>
+	</FontString>
+
+	<Button name="FarmHudonScreenButtonTemplate" virtual="true">
+		<Size x="20" y="20"/>
+		<HighlightTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Highlight" alphaMode="ADD"/>
+		<Scripts>
+			<OnClick>
+				local id = self:GetID();
+				if id==1 then
+					FarmHud:ToggleMouse();
+				elseif id==2 then
+					FarmHud:ToggleBackground();
+				elseif id==3 then
+					FarmHud:ToggleOptions();
+				elseif id==4 then
+					FarmHud:Toggle(false)
+				end
+			</OnClick>
+		</Scripts>
+	</Button>
+
+	<Frame name="FarmHudMinimapDummy" hidden="true">
+		<Layers>
+			<Layer level="BACKGROUND" textureSubLevel="-2">
+				<Texture file="interface/GLUES/CREDITS/Pandaria/Sha_SizeProgression_011" setallpoints="true" hidden="true" parentKey="bg" mask="interface/CHARACTERFRAME/TempPortraitAlphaMask" alpha="0.6">
+					<Color r="0" g="0" b="0" a="1" />
+				</Texture>
+			</Layer>
+		</Layers>
+	</Frame>
+
+	<Frame name="FarmHud" parent="UIParent" mixin="FarmHudMixin" frameStrata="BACKGROUND" alpha="1" hidden="true">
+		<Size x="140" y="140"/>
+		<Anchors>
+			<Anchor point="CENTER" relativeTo="WorldFrame" relativePoint="CENTER" />
+		</Anchors>
+		<Layers>
+			<Layer level="ARTWORK">
+				<Texture parentKey="gatherCircle" file="Interface\AddOns\FarmHud\media\gathercircle" alphaMode="ADD" hidden="true">
+					<Size x="60" y="60"/>
+					<Anchors>
+						<Anchor point="CENTER" />
+					</Anchors>
+				</Texture>
+				<Texture parentKey="healCircle" file="Interface\AddOns\FarmHud\media\gathercircle" alphaMode="ADD" hidden="true">
+					<Size x="30" y="30"/>
+					<Anchors>
+						<Anchor point="CENTER" />
+					</Anchors>
+				</Texture>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Frame parentKey="cluster">
+				<Anchors>
+					<Anchor point="CENTER" relativePoint="CENTER" />
+				</Anchors>
+			</Frame>
+			<Frame parentKey="TextFrame">
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString parentKey="mouseWarn" inherits="FarmHudFont" text="MOUSE ON" hidden="true" />
+						<FontString parentKey="coords" inherits="FarmHudFont" hidden="true" />
+						<FontString parentKey="time" inherits="FarmHudFont" hidden="true" />
+						<FontString parentArray="cardinalPoints" inherits="FarmHudFont" text="N" />
+						<FontString parentArray="cardinalPoints" inherits="FarmHudFont" text="NE" />
+						<FontString parentArray="cardinalPoints" inherits="FarmHudFont" text="E" />
+						<FontString parentArray="cardinalPoints" inherits="FarmHudFont" text="SE" />
+						<FontString parentArray="cardinalPoints" inherits="FarmHudFont" text="S" />
+						<FontString parentArray="cardinalPoints" inherits="FarmHudFont" text="SW" />
+						<FontString parentArray="cardinalPoints" inherits="FarmHudFont" text="W" />
+						<FontString parentArray="cardinalPoints" inherits="FarmHudFont" text="NW" />
+					</Layer>
+				</Layers>
+			</Frame>
+			<Frame name="FarmHudMoveResizeBorder" frameStrata="TOOLTIP"  hidden="true" setallpoints="true">
+				<Backdrop edgeFile="Interface\Addons\FarmHud\media\BorderBlue2">
+					<EdgeSize val="8" />
+				</Backdrop>
+			</Frame>
+			<Frame parentKey="onScreenButtons" hidden="true">
+				<Size x="1" y="1" />
+				<Frames>
+					<Button parentKey="mouseButton" inherits="FarmHudonScreenButtonTemplate" id="1">
+						<Anchors>
+							<Anchor point="CENTER" x="-34"/>
+						</Anchors>
+						<NormalTexture file="Interface\AddOns\FarmHud\media\Mouse-Normal"/>
+						<PushedTexture file="Interface\AddOns\FarmHud\media\Mouse-Pushed"/>
+					</Button>
+					<Button parentKey="backgroundButton" inherits="FarmHudonScreenButtonTemplate" id="2">
+						<Anchors>
+							<Anchor point="CENTER" x="-12"/>
+						</Anchors>
+						<NormalTexture file="Interface\WorldMap\WorldMap-Icon" />
+						<PushedTexture file="Interface\WorldMap\WorldMap-Icon" desaturated="true" />
+					</Button>
+					<Button parentKey="optionsButton" inherits="FarmHudonScreenButtonTemplate" id="3">
+						<Anchors>
+							<Anchor point="CENTER" x="12"/>
+						</Anchors>
+						<NormalTexture file="Interface\AddOns\FarmHud\media\options" />
+						<PushedTexture file="Interface\AddOns\FarmHud\media\options" desaturated="true" />
+					</Button>
+					<Button parentKey="closeButton" inherits="FarmHudonScreenButtonTemplate" id="4">
+						<Anchors>
+							<Anchor point="CENTER" x="34"/>
+						</Anchors>
+						<NormalTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Up"/>
+						<PushedTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Down"/>
+					</Button>
+				</Frames>
+			</Frame>
+			<Frame parentKey="HideElements" hidden="true" />
+		</Frames>
+		<Scripts>
+			<OnLoad method="OnLoad" />
+			<OnEvent method="OnEvent" />
+			<OnShow method="OnShow" />
+			<OnHide method="OnHide"/>
+		</Scripts>
+	</Frame>
+
+</Ui>

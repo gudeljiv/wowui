@@ -1,0 +1,5 @@
+VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Sinister Strike
+END

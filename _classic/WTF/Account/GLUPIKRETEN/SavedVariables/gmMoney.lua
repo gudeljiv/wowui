@@ -1,0 +1,75 @@
+
+GMMONEY = {
+	["Golemagg"] = {
+		["Battlearm"] = {
+			["GOLD"] = 47807,
+			["CLASS"] = "SHAMAN",
+		},
+		["Mxzq"] = {
+			["GOLD"] = 98681,
+			["CLASS"] = "HUNTER",
+		},
+		["Augustin"] = {
+			["GOLD"] = 34442,
+			["CLASS"] = "MAGE",
+		},
+		["Mxyz"] = {
+			["GOLD"] = 3042140,
+			["CLASS"] = "PRIEST",
+		},
+		["Battitude"] = {
+			["GOLD"] = 98,
+			["CLASS"] = "ROGUE",
+		},
+		["Mxyzptlk"] = {
+			["GOLD"] = 41,
+			["CLASS"] = "WARLOCK",
+		},
+		["Vermin"] = {
+			["GOLD"] = 80357,
+			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Dreadnaught"] = {
+		["Poklopac"] = {
+			["GOLD"] = 686231,
+			["CLASS"] = "HUNTER",
+		},
+		["Moolatz"] = {
+			["GOLD"] = 107693,
+			["CLASS"] = "DRUID",
+		},
+		["Greshnik"] = {
+			["GOLD"] = 70,
+			["CLASS"] = "WARLOCK",
+		},
+		["Konac"] = {
+			["GOLD"] = 706899,
+			["CLASS"] = "PRIEST",
+		},
+		["Nitwit"] = {
+			["GOLD"] = 620,
+			["CLASS"] = "ROGUE",
+		},
+		["Pitchwise"] = {
+			["GOLD"] = 70411,
+			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Stonespine"] = {
+		["Vermins"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Hydraxian Waterlords"] = {
+		["Battlearm"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "HUNTER",
+		},
+	},
+}
+GMMONEYSET = {
+	["FULLDISP"] = true,
+	["TEXTMODE"] = true,
+}
