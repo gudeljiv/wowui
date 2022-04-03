@@ -1,2 +1,0 @@
-
-CoolLineCharDB = nil

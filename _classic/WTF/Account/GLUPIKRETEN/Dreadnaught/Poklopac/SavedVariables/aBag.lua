@@ -1,3 +1,0 @@
-
-bindingOne = nil
-bindingTwo = nil
