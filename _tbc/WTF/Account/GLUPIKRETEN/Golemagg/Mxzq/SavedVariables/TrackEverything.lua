@@ -5,8 +5,16 @@ TrackEverythingCharDB = {
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
-			["minimap"] = {
-				["minimapPos"] = 357.844707803176,
+			["autoTracking"] = {
+				["spellSwitcher"] = {
+					["trackingSpells"] = {
+						["spells"] = {
+							true, -- [1]
+							true, -- [2]
+						},
+					},
+					["interval"] = 3,
+				},
 			},
 			["general"] = {
 				["enable"] = false,
@@ -19,16 +27,8 @@ TrackEverythingCharDB = {
 					},
 				},
 			},
-			["autoTracking"] = {
-				["spellSwitcher"] = {
-					["trackingSpells"] = {
-						["spells"] = {
-							true, -- [1]
-							true, -- [2]
-						},
-					},
-					["interval"] = 3,
-				},
+			["minimap"] = {
+				["minimapPos"] = 357.844707803176,
 			},
 		},
 	},

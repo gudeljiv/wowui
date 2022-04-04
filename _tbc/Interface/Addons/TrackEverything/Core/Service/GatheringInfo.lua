@@ -142,8 +142,7 @@ function GatheringInfo:GetProfessionInfoByItemName(itemName, professionName)
 
 	if professionName == 'Mining' then
 		-- =================================================================================
-		--[[ We use LibTouristClassic-1.0 libriary here as backup here in case we didn't get
-    data from default table--]]
+		--[[ We use LibTouristClassic-1.0 libriary here as backup here in case we didn't get data from default table--]]
 		-- =================================================================================
 		-- for node in LT:IterateMiningNodes() do
 		--   if node.nodeName == itemName then return node.minLevel, node.nodeObjectID end
@@ -161,8 +160,7 @@ function GatheringInfo:GetProfessionInfoByItemName(itemName, professionName)
 			end
 		end
 	-- =================================================================================
-	--[[ We use LibTouristClassic-1.0 libriary here as backup here in case we didn't get
-    data from default table--]]
+	--[[ We use LibTouristClassic-1.0 libriary here as backup here in case we didn't get data from default table--]]
 	-- =================================================================================
 	-- for node in LT:IterateHerbs() do
 	--   if node.name == itemName then return node.minLevel, node.itemID end
