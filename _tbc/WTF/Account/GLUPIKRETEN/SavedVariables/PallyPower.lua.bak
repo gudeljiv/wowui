@@ -1,28 +1,35 @@
 
 PallyPowerDB = {
 	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Other",
 		["Vermina - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
+			["autobuff"] = {
+				["autobutton"] = false,
+			},
 			["buffscale"] = 1,
-			["auras"] = false,
+			["SalvInCombat"] = true,
 			["seal"] = 6,
+			["auras"] = false,
+			["configscale"] = 1.2,
 			["rfbuff"] = false,
+			["enable"] = true,
 			["display"] = {
 				["enableDragHandle"] = false,
 			},
+			["layout"] = "Layout 1",
+			["minimap"] = {
+				["show"] = false,
+			},
+			["rf"] = false,
+		},
+		["Other"] = {
 			["enable"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
-			["configscale"] = 1.2,
-			["SalvInCombat"] = true,
-			["autobuff"] = {
-				["autobutton"] = false,
-			},
-			["layout"] = "Layout 1",
-			["rf"] = false,
 		},
 	},
 }
