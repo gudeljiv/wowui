@@ -39,8 +39,8 @@ Bagnon_VoidStorage: disabled
 !BugGrabber: enabled
 BugSack: enabled
 WeaponSwingTimer: enabled
-ItemRack: enabled
-ItemRackOptions: enabled
+ItemRack: disabled
+ItemRackOptions: disabled
 EavesDrop: disabled
 nTooltip: enabled
 DBM-Core: disabled

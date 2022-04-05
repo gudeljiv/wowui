@@ -1,0 +1,173 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Frame name="GqUiFrameEvents" inherits="BasicFrameTemplateWithInset" frameStrata="DIALOG" script="gearquipper-uiFrameEvents" hidden="true">
+		<Size>
+			<AbsDimension x="350" y="175"/>
+		</Size>
+		<Anchors>
+			<Anchor point="CENTER">
+				<Offset>
+					<AbsDimension x="0" y="50"/>
+				</Offset>
+			</Anchor>
+		</Anchors>
+
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parentFontString" inherits="GameFontNormal">
+					<Size x="290" y="23"/>
+					<Anchors>
+						<Anchor point="TOP">
+							<Offset>
+								<AbsDimension x="-10" y="0"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+
+		<Frames>
+			<Frame name="GqUiFrameEventsContent">
+				<Size>
+					<AbsDimension x="330" y="100"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="9" y="-30"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+
+				<Frames>
+					<Frame name="GqUiFrameEventsSetLabel">
+						<Size>
+							<AbsDimension x="150" y="30"/>
+						</Size>
+						<Anchors>
+							<Anchor point="TOPRIGHT">
+								<Offset>
+									<AbsDimension x="0" y="0"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+
+						<Layers>
+							<Layer level="ARTWORK">
+								<FontString name="$parentFontString" inherits="GameFontNormal">
+									<Anchors>
+										<Anchor point="LEFT"/>
+									</Anchors>
+								</FontString>
+							</Layer>
+						</Layers>
+					</Frame>
+
+					<Frame name="GqUiFrameEventsErrorsLabel">
+						<Size>
+							<AbsDimension x="170" y="10"/>
+						</Size>
+						<Anchors>
+							<Anchor point="BOTTOMLEFT">
+								<Offset>
+									<AbsDimension x="5" y="-10"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+
+						<Layers>
+							<Layer level="ARTWORK">
+								<FontString name="$parentFontString" inherits="GameFontNormalSmall">
+									<Anchors>
+										<Anchor point="LEFT">
+											<Offset>
+												<AbsDimension x="0" y="0"/>
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</FontString>
+							</Layer>
+						</Layers>
+					</Frame>
+				</Frames>
+			</Frame>
+
+			<CheckButton name="$parent_CbPVE" checked="true" inherits="ChatConfigCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="BOTTOMRIGHT">
+						<Offset x="-138" y="63"/>
+					</Anchor> 
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString name="$parentFontString" inherits="GameFontNormal">
+							<Anchors>
+								<Anchor point="LEFT">
+									<Offset>
+										<AbsDimension x="25" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnClick> GqUiFrameEvents_CbPVE_OnClick(self); </OnClick>
+				</Scripts>
+			</CheckButton>
+
+			<CheckButton name="$parent_CbPVP" checked="true" inherits="ChatConfigCheckButtonTemplate">
+				<Anchors>
+					<Anchor point="BOTTOMRIGHT">
+						<Offset x="-138" y="42"/>
+					</Anchor> 
+				</Anchors>
+				<Layers>
+					<Layer level="ARTWORK">
+						<FontString name="$parentFontString" inherits="GameFontNormal">
+							<Anchors>
+								<Anchor point="LEFT">
+									<Offset>
+										<AbsDimension x="25" y="0"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnClick> GqUiFrameEvents_CbPVP_OnClick(self); </OnClick>
+				</Scripts>
+			</CheckButton>
+
+			<Button name="$parent_BtnApply" inherits="GqButtonTemplate">
+				<Anchors>
+					<Anchor point="BOTTOMLEFT">
+						<Offset x="12" y="10"/>
+					</Anchor> 
+				</Anchors>
+				<Scripts>
+					<OnClick> GqUiFrameEvents_BtnApply_OnClick(); </OnClick>
+				</Scripts>
+			</Button>
+
+			<Button name="$parent_BtnCancel" inherits="GqButtonTemplate">
+				<Anchors>
+					<Anchor point="BOTTOMRIGHT">
+						<Offset x="-12" y="10"/>
+					</Anchor> 
+				</Anchors>
+				<Scripts>
+					<OnClick> GqUiFrameEvents_BtnCancel_OnClick(); </OnClick>
+				</Scripts>
+			</Button>
+		</Frames>
+
+		<Scripts>
+			<OnShow>
+				GqUiFrameEvents_OnShow(self);
+			</OnShow>
+		</Scripts>
+	</Frame>
+</Ui>

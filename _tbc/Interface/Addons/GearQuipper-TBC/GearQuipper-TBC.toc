@@ -1,0 +1,32 @@
+## Interface: 20504
+## Title: GearQuipper |c0000ff00TBC|r
+## Notes: Quick switch your gear sets and action slots.
+## Author: Benjamin Bober
+## Version: 31
+## SavedVariables: GQ_DATA, GQ_OPTIONS, GQ_AUX
+## OptionalDeps: GW2_UI, LibStub, LibDataBroker-1.1, CallbackHandler-1.0
+
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+
+gearquipper.lua
+
+core\gearquipper-main.lua
+core\gearquipper-options.lua
+core\gearquipper-data.lua
+core\gearquipper-misc.lua
+core\gearquipper-broker.lua
+
+ui\gearquipper-ui.lua
+ui\gearquipper-ui-frame.lua
+ui\gearquipper-ui-frame.xml
+ui\gearquipper-ui-frame-events.lua
+ui\gearquipper-ui-frame-events.xml
+ui\gearquipper-ui-quickslot.lua
+ui\gearquipper-ui-quickslot.xml
+ui\gearquipper-ui-tooltip.lua
+
+localization\gearquipper-language.lua
+localization\gearquipper-deDE.lua
+localization\gearquipper-koKR.lua

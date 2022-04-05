@@ -1,0 +1,23 @@
+Version 31 (22-03-23):
+- Added: Doubleclick on GQ LDB item will switch to previous set
+- Added: TBag addon support
+- TBC Classic only: Upgraded to interface version 20504
+
+Version 30 (22-02-17):
+- Fixed: Set item highlighting for bank slots 25-28
+- Fixed: Set item availability checking for bank slots 25-28
+- Fixed: Bag 12 should now reset its alpha properly after set item highlighting
+- Added: Events for warrior stances (yes, finally!)
+- Fixed: UI will no longer get unlocked upon SPELLCAST_END
+
+Version 29 (22-01-19):
+- TBC Classic only: Upgraded to interface version 20503
+
+Version 28 (22-01-06):
+- Fixed: Items now should get saved properly when they receive an enchantment.
+- Fixed: (Re)socketed or (re)enchanted items will now only be saved on sets which are not partial or the slot is active.
+- Fixed: CraftFrame will now position itself properly OnShow if GqUiFrame is open.
+- Fixed: TradeSkillFrame will now position itself properly OnShow if GqUiFrame is open.
+- Classic Era only: Upgraded to interface version 11401
+
+No continuous changelog before version 28.

@@ -11,7 +11,8 @@ local function RepositionLootFrames()
 
 	for i = 1, NUM_GROUP_LOOT_FRAMES do
 		frame = _G['GroupLootFrame' .. i]
-		if frame and frame ~= nil and CanAccessObject(frame) then
+		-- if frame and frame ~= nil and CanAccessObject(frame) then
+		if frame and frame ~= nil then
 			if i == 1 then
 				frame:ClearAllPoints()
 				frame:SetPoint('LEFT', CustomContainer_Combat, 'RIGHT', 380, 250)

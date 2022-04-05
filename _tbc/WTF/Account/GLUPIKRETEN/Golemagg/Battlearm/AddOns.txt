@@ -53,8 +53,8 @@ Grid2RaidDebuffs: enabled
 Grid2RaidDebuffsOptions: enabled
 Grid2LDB: enabled
 ImprovedMacroFrame: enabled
-ItemRack: enabled
-ItemRackOptions: enabled
+ItemRack: disabled
+ItemRackOptions: disabled
 Leatrix_Maps: enabled
 LFGBulletinBoard: enabled
 Lorti UI Classic: enabled

@@ -61,8 +61,8 @@ GatherMate2: enabled
 GatherMate2_Data: enabled
 gmMoney: enabled
 ImprovedMacroFrame: enabled
-ItemRack: enabled
-ItemRackOptions: enabled
+ItemRack: disabled
+ItemRackOptions: disabled
 Leatrix_Maps: enabled
 LFGBulletinBoard: enabled
 Lorti UI Classic: enabled
