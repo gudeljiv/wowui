@@ -293,3 +293,47 @@ f:SetScript(
 -- tf:SetScript("OnEvent", ListBuffs)
 -- TargetFrame:HookScript("OnUpdate", ListBuffs)
 -- hooksecurefunc("TargetFrame_UpdateAuras", ListBuffs)
+
+-- local function TradeSkillReagent(f)
+-- 	print(f:GetName())
+-- 	for i = 1, 40 do
+-- 		local frame = 'TradeSkillReagent' .. i .. 'Count'
+-- 		print(frame)
+-- 		-- if frame then
+-- 		-- 	frame:SetScale(0.6)
+-- 		-- end
+-- 	end
+-- end
+
+-- if IsAddOnLoaded('Blizzard_CraftUI') then
+-- 	TradeSkillReagent(self)
+-- else
+-- 	local waitFrame = CreateFrame('FRAME')
+-- 	waitFrame:RegisterEvent('ADDON_LOADED')
+-- 	waitFrame:SetScript(
+-- 		'OnEvent',
+-- 		function(self, event, arg1)
+-- 			if arg1 == 'Blizzard_CraftUI' then
+-- 				TradeSkillReagent(self)
+-- 				waitFrame:UnregisterAllEvents()
+-- 			end
+-- 		end
+-- 	)
+-- end
+
+-- -- Run function when TradeSkill UI has loaded
+-- if IsAddOnLoaded('Blizzard_TradeSkillUI') then
+-- 	TradeSkillReagent(self)
+-- else
+-- 	local waitFrame = CreateFrame('FRAME')
+-- 	waitFrame:RegisterEvent('ADDON_LOADED')
+-- 	waitFrame:SetScript(
+-- 		'OnEvent',
+-- 		function(self, event, arg1)
+-- 			if arg1 == 'Blizzard_TradeSkillUI' then
+-- 				TradeSkillReagent(self)
+-- 				waitFrame:UnregisterAllEvents()
+-- 			end
+-- 		end
+-- 	)
+-- end
