@@ -2,12 +2,12 @@
 GQ_DATA = {
 	["Golemagg"] = {
 		["Vermina"] = {
-			["FIELD_EVENTS_ENABLED"] = false,
-			["FIELD_CURRENTSET"] = "TANK",
+			["FIELD_IGNOREDSLOTS"] = {
+			},
+			["FIELD_CURRENTSET"] = "DPS",
 			["FIELD_EVENTS"] = {
 			},
-			["FIELD_BANK"] = {
-			},
+			["FIELD_LASTSET"] = "TANK",
 			["FIELD_SETS"] = {
 				["$PREVIOUSEQUIPMENT"] = {
 					["FIELD_SLOTS"] = {
@@ -21,7 +21,7 @@ GQ_DATA = {
 						"item:6459:15:::::::25:::::::::", -- [8]
 						"item:15306::::::841:2015066112:25:::::::::", -- [9]
 						"item:10413:15:::::::25:::::::::", -- [10]
-						"item:25439::::::::25:::::::::", -- [11]
+						"item:5313::::::::25:::::::::", -- [11]
 						"item:6414::::::::25:::::::::", -- [12]
 						"VALUE_NONE", -- [13]
 						"VALUE_NONE", -- [14]
@@ -34,8 +34,6 @@ GQ_DATA = {
 					},
 					["FIELD_OPT_PARTIAL"] = false,
 					["FIELD_OPT_ACTIONSLOTS"] = true,
-					["FIELD_SLOTSTATES"] = {
-					},
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = " ",
@@ -47,8 +45,8 @@ GQ_DATA = {
 						}, -- [2]
 						{
 							["FIELD_ID"] = 26573,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [3]
 						"VALUE_NONE", -- [4]
 						"VALUE_NONE", -- [5]
@@ -56,8 +54,8 @@ GQ_DATA = {
 						"VALUE_NONE", -- [7]
 						{
 							["FIELD_ID"] = 28730,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [8]
 						"VALUE_NONE", -- [9]
 						{
@@ -74,8 +72,8 @@ GQ_DATA = {
 						}, -- [12]
 						{
 							["FIELD_ID"] = 3274,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [13]
 						"VALUE_NONE", -- [14]
 						"VALUE_NONE", -- [15]
@@ -92,68 +90,68 @@ GQ_DATA = {
 						"VALUE_NONE", -- [23]
 						{
 							["FIELD_ID"] = 3104,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [24]
 						{
 							["FIELD_ID"] = 19835,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [25]
 						{
 							["FIELD_ID"] = 19742,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [26]
 						"VALUE_NONE", -- [27]
 						{
 							["FIELD_ID"] = 1044,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [28]
 						"VALUE_NONE", -- [29]
 						{
 							["FIELD_ID"] = 643,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [30]
 						{
 							["FIELD_ID"] = 7294,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [31]
 						{
 							["FIELD_ID"] = 19746,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [32]
 						"VALUE_NONE", -- [33]
 						{
 							["FIELD_ID"] = 7328,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [34]
 						"VALUE_NONE", -- [35]
 						"VALUE_NONE", -- [36]
 						{
 							["FIELD_ID"] = 20375,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [37]
 						{
 							["FIELD_ID"] = 20305,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [38]
 						{
 							["FIELD_ID"] = 20288,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [39]
 						{
 							["FIELD_ID"] = 20164,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [40]
 						"VALUE_NONE", -- [41]
 						"VALUE_NONE", -- [42]
@@ -194,8 +192,8 @@ GQ_DATA = {
 						"VALUE_NONE", -- [59]
 						{
 							["FIELD_ID"] = 25780,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [60]
 						{
 							["FIELD_ID"] = " ",
@@ -203,8 +201,8 @@ GQ_DATA = {
 						}, -- [61]
 						{
 							["FIELD_ID"] = 5573,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [62]
 						"VALUE_NONE", -- [63]
 						{
@@ -220,8 +218,8 @@ GQ_DATA = {
 						}, -- [68]
 						{
 							["FIELD_ID"] = 633,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [69]
 						"VALUE_NONE", -- [70]
 						"VALUE_NONE", -- [71]
@@ -274,6 +272,8 @@ GQ_DATA = {
 						"VALUE_NONE", -- [118]
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
+					},
+					["FIELD_SLOTSTATES"] = {
 					},
 				},
 				["TANK"] = {
@@ -288,7 +288,7 @@ GQ_DATA = {
 						"item:6459:15:::::::25:::::::::", -- [8]
 						"item:15306::::::841:2015066112:25:::::::::", -- [9]
 						"item:10413:15:::::::25:::::::::", -- [10]
-						"item:25439::::::::25:::::::::", -- [11]
+						"item:5351::::::::25:::::::::", -- [11]
 						"item:6414::::::::25:::::::::", -- [12]
 						"VALUE_NONE", -- [13]
 						"VALUE_NONE", -- [14]
@@ -300,9 +300,7 @@ GQ_DATA = {
 						[0] = 0,
 					},
 					["FIELD_OPT_PARTIAL"] = false,
-					["FIELD_SLOTSTATES"] = {
-					},
-					["FIELD_SHOWHELMET"] = false,
+					["FIELD_SHOWCLOAK"] = false,
 					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
@@ -315,8 +313,8 @@ GQ_DATA = {
 						}, -- [2]
 						{
 							["FIELD_ID"] = 26573,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [3]
 						"VALUE_NONE", -- [4]
 						"VALUE_NONE", -- [5]
@@ -324,8 +322,8 @@ GQ_DATA = {
 						"VALUE_NONE", -- [7]
 						{
 							["FIELD_ID"] = 28730,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [8]
 						"VALUE_NONE", -- [9]
 						{
@@ -342,8 +340,8 @@ GQ_DATA = {
 						}, -- [12]
 						{
 							["FIELD_ID"] = 3274,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [13]
 						"VALUE_NONE", -- [14]
 						"VALUE_NONE", -- [15]
@@ -360,68 +358,68 @@ GQ_DATA = {
 						"VALUE_NONE", -- [23]
 						{
 							["FIELD_ID"] = 3104,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [24]
 						{
 							["FIELD_ID"] = 19835,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [25]
 						{
 							["FIELD_ID"] = 19742,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [26]
 						"VALUE_NONE", -- [27]
 						{
 							["FIELD_ID"] = 1044,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [28]
 						"VALUE_NONE", -- [29]
 						{
 							["FIELD_ID"] = 643,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [30]
 						{
 							["FIELD_ID"] = 7294,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [31]
 						{
 							["FIELD_ID"] = 19746,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [32]
 						"VALUE_NONE", -- [33]
 						{
 							["FIELD_ID"] = 7328,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [34]
 						"VALUE_NONE", -- [35]
 						"VALUE_NONE", -- [36]
 						{
 							["FIELD_ID"] = 20375,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [37]
 						{
 							["FIELD_ID"] = 20305,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [38]
 						{
 							["FIELD_ID"] = 20288,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [39]
 						{
 							["FIELD_ID"] = 20164,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [40]
 						"VALUE_NONE", -- [41]
 						"VALUE_NONE", -- [42]
@@ -462,8 +460,8 @@ GQ_DATA = {
 						"VALUE_NONE", -- [59]
 						{
 							["FIELD_ID"] = 25780,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [60]
 						{
 							["FIELD_ID"] = " ",
@@ -471,8 +469,8 @@ GQ_DATA = {
 						}, -- [61]
 						{
 							["FIELD_ID"] = 5573,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [62]
 						"VALUE_NONE", -- [63]
 						{
@@ -488,8 +486,8 @@ GQ_DATA = {
 						}, -- [68]
 						{
 							["FIELD_ID"] = 633,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [69]
 						"VALUE_NONE", -- [70]
 						"VALUE_NONE", -- [71]
@@ -543,7 +541,9 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
-					["FIELD_SHOWCLOAK"] = false,
+					["FIELD_SHOWHELMET"] = false,
+					["FIELD_SLOTSTATES"] = {
+					},
 				},
 				["HEAL"] = {
 					["FIELD_SLOTS"] = {
@@ -557,7 +557,7 @@ GQ_DATA = {
 						"item:6459:15:::::::25:::::::::", -- [8]
 						"item:15306::::::841:2015066112:25:::::::::", -- [9]
 						"item:10413:15:::::::25:::::::::", -- [10]
-						"item:25439::::::::25:::::::::", -- [11]
+						"item:5313::::::::25:::::::::", -- [11]
 						"item:6414::::::::25:::::::::", -- [12]
 						"VALUE_NONE", -- [13]
 						"VALUE_NONE", -- [14]
@@ -569,9 +569,7 @@ GQ_DATA = {
 						[0] = 0,
 					},
 					["FIELD_OPT_PARTIAL"] = false,
-					["FIELD_SLOTSTATES"] = {
-					},
-					["FIELD_SHOWHELMET"] = false,
+					["FIELD_SHOWCLOAK"] = false,
 					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
@@ -584,8 +582,8 @@ GQ_DATA = {
 						}, -- [2]
 						{
 							["FIELD_ID"] = 26573,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [3]
 						"VALUE_NONE", -- [4]
 						"VALUE_NONE", -- [5]
@@ -593,8 +591,8 @@ GQ_DATA = {
 						"VALUE_NONE", -- [7]
 						{
 							["FIELD_ID"] = 28730,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [8]
 						"VALUE_NONE", -- [9]
 						{
@@ -611,8 +609,8 @@ GQ_DATA = {
 						}, -- [12]
 						{
 							["FIELD_ID"] = 3274,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [13]
 						"VALUE_NONE", -- [14]
 						"VALUE_NONE", -- [15]
@@ -629,68 +627,68 @@ GQ_DATA = {
 						"VALUE_NONE", -- [23]
 						{
 							["FIELD_ID"] = 3104,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [24]
 						{
 							["FIELD_ID"] = 19835,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [25]
 						{
 							["FIELD_ID"] = 19742,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [26]
 						"VALUE_NONE", -- [27]
 						{
 							["FIELD_ID"] = 1044,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [28]
 						"VALUE_NONE", -- [29]
 						{
 							["FIELD_ID"] = 643,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [30]
 						{
 							["FIELD_ID"] = 7294,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [31]
 						{
 							["FIELD_ID"] = 19746,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [32]
 						"VALUE_NONE", -- [33]
 						{
 							["FIELD_ID"] = 7328,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [34]
 						"VALUE_NONE", -- [35]
 						"VALUE_NONE", -- [36]
 						{
 							["FIELD_ID"] = 20375,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [37]
 						{
 							["FIELD_ID"] = 20305,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [38]
 						{
 							["FIELD_ID"] = 20288,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [39]
 						{
 							["FIELD_ID"] = 20164,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [40]
 						"VALUE_NONE", -- [41]
 						"VALUE_NONE", -- [42]
@@ -731,8 +729,8 @@ GQ_DATA = {
 						"VALUE_NONE", -- [59]
 						{
 							["FIELD_ID"] = 25780,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [60]
 						{
 							["FIELD_ID"] = " ",
@@ -740,8 +738,8 @@ GQ_DATA = {
 						}, -- [61]
 						{
 							["FIELD_ID"] = 5573,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [62]
 						"VALUE_NONE", -- [63]
 						{
@@ -757,8 +755,8 @@ GQ_DATA = {
 						}, -- [68]
 						{
 							["FIELD_ID"] = 633,
-							["FIELD_TYPE"] = "spell",
 							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
 						}, -- [69]
 						"VALUE_NONE", -- [70]
 						"VALUE_NONE", -- [71]
@@ -812,18 +810,308 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
+					["FIELD_SHOWHELMET"] = false,
+					["FIELD_SLOTSTATES"] = {
+					},
+				},
+				["DPS"] = {
+					["FIELD_SLOTS"] = {
+						"VALUE_NONE", -- [1]
+						"item:25438::::::::25:::::::::", -- [2]
+						"item:5254::::::::25:::::::::", -- [3]
+						"item:5107::::::::25:::::::::", -- [4]
+						"item:6627::::::::25:::::::::", -- [5]
+						"item:6319::::::::25:::::::::", -- [6]
+						"item:10410:15:::::::25:::::::::", -- [7]
+						"item:6459:15:::::::25:::::::::", -- [8]
+						"item:15306::::::841:2015066112:25:::::::::", -- [9]
+						"item:10413:15:::::::25:::::::::", -- [10]
+						"item:5351::::::::25:::::::::", -- [11]
+						"item:6414::::::::25:::::::::", -- [12]
+						"VALUE_NONE", -- [13]
+						"VALUE_NONE", -- [14]
+						"item:6340::::::::25:::::::::", -- [15]
+						"item:6641::::::::25:::::::::", -- [16]
+						"VALUE_NONE", -- [17]
+						"VALUE_NONE", -- [18]
+						"VALUE_NONE", -- [19]
+						[0] = 0,
+					},
+					["FIELD_OPT_PARTIAL"] = false,
 					["FIELD_SHOWCLOAK"] = false,
+					["FIELD_ACTIONSLOTS"] = {
+						{
+							["FIELD_ID"] = " ",
+							["FIELD_TYPE"] = "macro",
+						}, -- [1]
+						{
+							["FIELD_ID"] = " ",
+							["FIELD_TYPE"] = "macro",
+						}, -- [2]
+						{
+							["FIELD_ID"] = 26573,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [3]
+						"VALUE_NONE", -- [4]
+						"VALUE_NONE", -- [5]
+						"VALUE_NONE", -- [6]
+						"VALUE_NONE", -- [7]
+						{
+							["FIELD_ID"] = 28730,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [8]
+						"VALUE_NONE", -- [9]
+						{
+							["FIELD_ID"] = " ",
+							["FIELD_TYPE"] = "macro",
+						}, -- [10]
+						{
+							["FIELD_ID"] = " ",
+							["FIELD_TYPE"] = "macro",
+						}, -- [11]
+						{
+							["FIELD_ID"] = " ",
+							["FIELD_TYPE"] = "macro",
+						}, -- [12]
+						{
+							["FIELD_ID"] = 3274,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [13]
+						"VALUE_NONE", -- [14]
+						"VALUE_NONE", -- [15]
+						"VALUE_NONE", -- [16]
+						"VALUE_NONE", -- [17]
+						"VALUE_NONE", -- [18]
+						{
+							["FIELD_ID"] = 6948,
+							["FIELD_TYPE"] = "item",
+						}, -- [19]
+						"VALUE_NONE", -- [20]
+						"VALUE_NONE", -- [21]
+						"VALUE_NONE", -- [22]
+						"VALUE_NONE", -- [23]
+						{
+							["FIELD_ID"] = 3104,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [24]
+						{
+							["FIELD_ID"] = 19835,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [25]
+						{
+							["FIELD_ID"] = 19742,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [26]
+						"VALUE_NONE", -- [27]
+						{
+							["FIELD_ID"] = 1044,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [28]
+						"VALUE_NONE", -- [29]
+						{
+							["FIELD_ID"] = 643,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [30]
+						{
+							["FIELD_ID"] = 7294,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [31]
+						{
+							["FIELD_ID"] = 19746,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [32]
+						"VALUE_NONE", -- [33]
+						{
+							["FIELD_ID"] = 7328,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [34]
+						"VALUE_NONE", -- [35]
+						"VALUE_NONE", -- [36]
+						{
+							["FIELD_ID"] = 20375,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [37]
+						{
+							["FIELD_ID"] = 20305,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [38]
+						{
+							["FIELD_ID"] = 20288,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [39]
+						{
+							["FIELD_ID"] = 20164,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [40]
+						"VALUE_NONE", -- [41]
+						"VALUE_NONE", -- [42]
+						"VALUE_NONE", -- [43]
+						{
+							["FIELD_ID"] = 1251,
+							["FIELD_TYPE"] = "item",
+						}, -- [44]
+						"VALUE_NONE", -- [45]
+						{
+							["FIELD_ID"] = "Food",
+							["FIELD_TYPE"] = "macro",
+						}, -- [46]
+						{
+							["FIELD_ID"] = "Drink",
+							["FIELD_TYPE"] = "macro",
+						}, -- [47]
+						{
+							["FIELD_ID"] = " ",
+							["FIELD_TYPE"] = "macro",
+						}, -- [48]
+						{
+							["FIELD_ID"] = " ",
+							["FIELD_TYPE"] = "macro",
+						}, -- [49]
+						{
+							["FIELD_ID"] = " ",
+							["FIELD_TYPE"] = "macro",
+						}, -- [50]
+						"VALUE_NONE", -- [51]
+						"VALUE_NONE", -- [52]
+						"VALUE_NONE", -- [53]
+						"VALUE_NONE", -- [54]
+						"VALUE_NONE", -- [55]
+						{
+							["FIELD_ID"] = "TEST",
+							["FIELD_TYPE"] = "macro",
+						}, -- [56]
+						"VALUE_NONE", -- [57]
+						"VALUE_NONE", -- [58]
+						"VALUE_NONE", -- [59]
+						{
+							["FIELD_ID"] = 25780,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [60]
+						{
+							["FIELD_ID"] = " ",
+							["FIELD_TYPE"] = "macro",
+						}, -- [61]
+						{
+							["FIELD_ID"] = 5573,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [62]
+						"VALUE_NONE", -- [63]
+						{
+							["FIELD_ID"] = " ",
+							["FIELD_TYPE"] = "macro",
+						}, -- [64]
+						"VALUE_NONE", -- [65]
+						"VALUE_NONE", -- [66]
+						"VALUE_NONE", -- [67]
+						{
+							["FIELD_ID"] = " ",
+							["FIELD_TYPE"] = "macro",
+						}, -- [68]
+						{
+							["FIELD_ID"] = 633,
+							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_TYPE"] = "spell",
+						}, -- [69]
+						"VALUE_NONE", -- [70]
+						"VALUE_NONE", -- [71]
+						"VALUE_NONE", -- [72]
+						"VALUE_NONE", -- [73]
+						"VALUE_NONE", -- [74]
+						"VALUE_NONE", -- [75]
+						"VALUE_NONE", -- [76]
+						"VALUE_NONE", -- [77]
+						"VALUE_NONE", -- [78]
+						"VALUE_NONE", -- [79]
+						"VALUE_NONE", -- [80]
+						"VALUE_NONE", -- [81]
+						"VALUE_NONE", -- [82]
+						"VALUE_NONE", -- [83]
+						"VALUE_NONE", -- [84]
+						"VALUE_NONE", -- [85]
+						"VALUE_NONE", -- [86]
+						"VALUE_NONE", -- [87]
+						"VALUE_NONE", -- [88]
+						"VALUE_NONE", -- [89]
+						"VALUE_NONE", -- [90]
+						"VALUE_NONE", -- [91]
+						"VALUE_NONE", -- [92]
+						"VALUE_NONE", -- [93]
+						"VALUE_NONE", -- [94]
+						"VALUE_NONE", -- [95]
+						"VALUE_NONE", -- [96]
+						"VALUE_NONE", -- [97]
+						"VALUE_NONE", -- [98]
+						"VALUE_NONE", -- [99]
+						"VALUE_NONE", -- [100]
+						"VALUE_NONE", -- [101]
+						"VALUE_NONE", -- [102]
+						"VALUE_NONE", -- [103]
+						"VALUE_NONE", -- [104]
+						"VALUE_NONE", -- [105]
+						"VALUE_NONE", -- [106]
+						"VALUE_NONE", -- [107]
+						"VALUE_NONE", -- [108]
+						"VALUE_NONE", -- [109]
+						"VALUE_NONE", -- [110]
+						"VALUE_NONE", -- [111]
+						"VALUE_NONE", -- [112]
+						"VALUE_NONE", -- [113]
+						"VALUE_NONE", -- [114]
+						"VALUE_NONE", -- [115]
+						"VALUE_NONE", -- [116]
+						"VALUE_NONE", -- [117]
+						"VALUE_NONE", -- [118]
+						"VALUE_NONE", -- [119]
+						"VALUE_NONE", -- [120]
+					},
+					["FIELD_OPT_ACTIONSLOTS"] = true,
+					["FIELD_SHOWHELMET"] = false,
+					["FIELD_SLOTSTATES"] = {
+					},
 				},
 			},
-			["FIELD_LASTSET"] = "HEAL",
+			["FIELD_BANK"] = {
+			},
 			["FIELD_INVENTORY"] = {
+				["item:6447::::::::25:::::::::"] = {
+					["ITEM_BAG_ID"] = 1,
+					["ITEM_SLOT_ID"] = 1,
+				},
+				["item:25439::::::::25:::::::::"] = {
+					["ITEM_BAG_ID"] = 0,
+					["ITEM_SLOT_ID"] = 2,
+				},
+				["item:5351::::::::25:::::::::"] = {
+					["ITEM_BAG_ID"] = 0,
+					["ITEM_SLOT_ID"] = 2,
+				},
 				["item:6633::::::::25:::::::::"] = {
 					["ITEM_BAG_ID"] = 4,
-					["ITEM_SLOT_ID"] = 11,
+					["ITEM_SLOT_ID"] = 14,
+				},
+				["item:6641::::::::25:::::::::"] = {
+					["ITEM_BAG_ID"] = 4,
+					["ITEM_SLOT_ID"] = 14,
 				},
 			},
-			["FIELD_IGNOREDSLOTS"] = {
-			},
+			["FIELD_EVENTS_ENABLED"] = false,
 		},
 	},
 }
@@ -831,21 +1119,21 @@ GQ_OPTIONS = {
 	["OPT_MOUNTING_CRUSADER_AURA"] = true,
 	["OPT_SLOTSTATES"] = false,
 	["OPT_SHOWCURRENTSET"] = true,
+	["OPT_MENUOPEN"] = false,
 	["OPT_SCRIPTEDITORENABLED"] = false,
 	["OPT_SWITCHDELAY"] = 600,
 	["OPT_AUTOUPRANKSPELLS_ALLRANKS"] = false,
 	["OPT_VERSION"] = 30,
-	["OPT_SHOWSLOTBACKDROPS"] = true,
-	["OPT_NOTIFYQUEUES"] = true,
+	["OPT_SAVECHANGES"] = "OPTVALUE_SAVECHANGES_GQMENU",
 	["OPT_IGNOREMANUALITEMS"] = false,
 	["OPT_SHOWBROKERTOOLTIP"] = true,
-	["OPT_SHOWITEMTOOLTIP"] = true,
+	["OPT_ACTIONBARS"] = true,
 	["OPT_AUTOUPRANKSPELLS"] = true,
 	["OPT_SAVECHANGES_ACTIONSLOTS"] = "OPTVALUE_SAVECHANGES_GQMENU",
-	["OPT_ACTIONBARS"] = true,
+	["OPT_SHOWITEMTOOLTIP"] = true,
 	["OPT_HIGHLIGHTCHANGES"] = true,
-	["OPT_SAVECHANGES"] = "OPTVALUE_SAVECHANGES_GQMENU",
-	["OPT_MENUOPEN"] = false,
+	["OPT_NOTIFYQUEUES"] = true,
+	["OPT_SHOWSLOTBACKDROPS"] = true,
 	["OPT_NOTIFYCHANGES"] = true,
 }
 GQ_AUX = {

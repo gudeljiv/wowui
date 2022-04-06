@@ -187,7 +187,7 @@ function addon:BindCurrentCastData(castbar, unitID, isChanneled)
 
 			-- PALADIN INTERRUPT
 			if (select(2, UnitClass('player')) == 'PALADIN') then
-				if IsUsableSpell('Arcane Torrent') and IsSpellInRange('Judgement', 'target') == 1 then
+				if GetSpellCooldown('Arcane Torrent') == 0 and CheckInteractDistance('target', 3) then
 					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
 				end
 			end

@@ -206,19 +206,19 @@ local function CraftFunc()
 	end
 end
 
--- Run function when Craft UI has loaded
-if IsAddOnLoaded('Blizzard_CraftUI') then
-	CraftFunc()
-else
-	local waitFrame = CreateFrame('FRAME')
-	waitFrame:RegisterEvent('ADDON_LOADED')
-	waitFrame:SetScript(
-		'OnEvent',
-		function(self, event, arg1)
-			if arg1 == 'Blizzard_CraftUI' then
-				CraftFunc()
-				waitFrame:UnregisterAllEvents()
-			end
-		end
-	)
-end
+-- -- Run function when Craft UI has loaded
+-- if IsAddOnLoaded('Blizzard_CraftUI') then
+-- 	CraftFunc()
+-- else
+-- 	local waitFrame = CreateFrame('FRAME')
+-- 	waitFrame:RegisterEvent('ADDON_LOADED')
+-- 	waitFrame:SetScript(
+-- 		'OnEvent',
+-- 		function(self, event, arg1)
+-- 			if arg1 == 'Blizzard_CraftUI' then
+-- 				CraftFunc()
+-- 				waitFrame:UnregisterAllEvents()
+-- 			end
+-- 		end
+-- 	)
+-- end

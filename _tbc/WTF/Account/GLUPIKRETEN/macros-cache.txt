@@ -30,8 +30,5 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /use item:27854
 END
 VER 3 000000000000000B "TEST" "132089"
-/run TradeSkillSkillIcon.oGlowBorder:Hide()
-/run TradeSkillDetailHeaderLeft:Hide()
-/run TradeSkillSkillIcon:CreateBeautyBorder(8)
-/run TradeSkillReagent1Count:SetScale(0.6)
+/run PallyPowerBlessingsFrameAuraGroup1AuraHeaderIcon:Show()
 END

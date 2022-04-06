@@ -14,7 +14,7 @@ Frames/DefaultFramesCustomScale.lua
 Frames/DefaultFramesDarker.lua
 # Frames/EnhancedCraftFrame.lua
 # Frames/EnhancedTrainerFrame.lua
-# Frames/EnhancedProfessionsFrame.lua
+Frames/EnhancedProfessionsFrame.lua
 Frames/GroopLootFrame.lua
 Frames/InspectFrame.lua
 Frames/KillCount.lua
@@ -41,6 +41,7 @@ Addons/nMainBar.lua
 Addons/Omen.lua
 Addons/Puggle.lua
 Addons/Questie.lua
+Addons/PallyPower.lua
 Addons/RangeDisplay.lua
 Addons/Recount.lua
 Addons/RXPGuide.lua

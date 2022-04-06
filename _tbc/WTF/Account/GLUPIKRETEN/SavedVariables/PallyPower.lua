@@ -23,6 +23,7 @@ PallyPowerDB = {
 				["autobutton"] = false,
 			},
 			["SalvInCombat"] = true,
+			["ShowTooltips"] = false,
 			["rf"] = false,
 		},
 		["Other"] = {

@@ -174,8 +174,34 @@ local function TradeSkillFunc(frame)
 end
 
 -- Run function when TradeSkill UI has loaded
+-- if IsAddOnLoaded('Blizzard_TradeSkillUI') then
+-- 	TradeSkillFunc('TradeSkill')
+-- else
+-- 	local waitFrame = CreateFrame('FRAME')
+-- 	waitFrame:RegisterEvent('ADDON_LOADED')
+-- 	waitFrame:SetScript(
+-- 		'OnEvent',
+-- 		function(self, event, arg1)
+-- 			if arg1 == 'Blizzard_TradeSkillUI' then
+-- 				TradeSkillFunc('TradeSkill')
+-- 				waitFrame:UnregisterAllEvents()
+-- 			end
+-- 		end
+-- 	)
+-- end
+
+local function TradeSkillReagent()
+	for i = 1, 40 do
+		local frame = _G['TradeSkillReagent' .. i .. 'Count']
+		if frame then
+			frame:SetScale(0.6)
+		end
+	end
+end
+
+-- -- Run function when TradeSkill UI has loaded
 if IsAddOnLoaded('Blizzard_TradeSkillUI') then
-	TradeSkillFunc('TradeSkill')
+	TradeSkillReagent()
 else
 	local waitFrame = CreateFrame('FRAME')
 	waitFrame:RegisterEvent('ADDON_LOADED')
@@ -183,7 +209,7 @@ else
 		'OnEvent',
 		function(self, event, arg1)
 			if arg1 == 'Blizzard_TradeSkillUI' then
-				TradeSkillFunc('TradeSkill')
+				TradeSkillReagent()
 				waitFrame:UnregisterAllEvents()
 			end
 		end

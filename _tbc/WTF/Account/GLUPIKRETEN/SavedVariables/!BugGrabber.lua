@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 4868,
 	["lastSanitation"] = 3,
+	["session"] = 4883,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -366,8 +366,8 @@ BugGrabberDB = {
 		}, -- [46]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/03/09 13:39:43",
 			["session"] = 4718,
+			["time"] = "2022/03/09 13:39:43",
 			["counter"] = 3,
 		}, -- [47]
 		{
@@ -569,5 +569,85 @@ BugGrabberDB = {
 			["session"] = 4866,
 			["counter"] = 21,
 		}, -- [72]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:300: attempt to index local 'frame' (a nil value)",
+			["time"] = "2022/04/06 18:04:08",
+			["locals"] = "(for index) = 9\n(for limit) = 40\n(for step) = 1\ni = 9\nframe = nil\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:118\n(*temporary) = \"9\"\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'frame' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:300: in function <Interface\\AddOns\\xVermin\\xVermin.lua:297>\n[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:333: in function <Interface\\AddOns\\xVermin\\xVermin.lua:331>\n[string \"=[C]\"]: in function `LoadAddOn'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:375: in function `UIParentLoadAddOn'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:442: in function `TradeSkillFrame_LoadUI'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:1163: in function <Interface_TBC\\FrameXML\\UIParent.lua:681>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>\n[string \"=[C]\"]: ?\n[string \"@Interface\\FrameXML\\SecureHandlers.lua\"]:266: in function <Interface\\FrameXML\\SecureHandlers.lua:263>\n[string \"=[C]\"]: ?\n[string \"@Interface\\FrameXML\\SecureHandlers.lua\"]:296: in function <Interface\\FrameXML\\SecureHandlers.lua:279>\n[string \"=(tail call)\"]: ?",
+			["session"] = 4871,
+			["counter"] = 1,
+		}, -- [73]
+		{
+			["message"] = "...e\\AddOns\\xVermin\\Frames/EnhancedProfessionsFrame.lua:196: attempt to index local 'frame' (a nil value)",
+			["time"] = "2022/04/06 18:07:10",
+			["locals"] = "(for index) = 9\n(for limit) = 40\n(for step) = 1\ni = 9\nframe = nil\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:118\n(*temporary) = \"9\"\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'frame' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Frames/EnhancedProfessionsFrame.lua\"]:196: in function <...e\\AddOns\\xVermin\\Frames/EnhancedProfessionsFrame.lua:193>\n[string \"@Interface\\AddOns\\xVermin\\Frames/EnhancedProfessionsFrame.lua\"]:213: in function <...e\\AddOns\\xVermin\\Frames/EnhancedProfessionsFrame.lua:211>\n[string \"=[C]\"]: in function `LoadAddOn'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:375: in function `UIParentLoadAddOn'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:442: in function `TradeSkillFrame_LoadUI'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:1163: in function <Interface_TBC\\FrameXML\\UIParent.lua:681>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>\n[string \"=[C]\"]: ?\n[string \"@Interface\\FrameXML\\SecureHandlers.lua\"]:266: in function <Interface\\FrameXML\\SecureHandlers.lua:263>\n[string \"=[C]\"]: ?\n[string \"@Interface\\FrameXML\\SecureHandlers.lua\"]:296: in function <Interface\\FrameXML\\SecureHandlers.lua:279>\n[string \"=(tail call)\"]: ?",
+			["session"] = 4874,
+			["counter"] = 1,
+		}, -- [74]
+		{
+			["message"] = "[string \"print(IsSpellInRange(spellID, 'target'))\"]:1: IsSpellInRange(): Invalid spell slot",
+			["time"] = "2022/04/06 18:19:12",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"target\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `IsSpellInRange'\n[string \"print(IsSpellInRange(spellID, 'target'))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 4875,
+			["counter"] = 4,
+		}, -- [75]
+		{
+			["message"] = "[string \"PallyPowerBlessingFrame:CreateBeautyBorder(...\"]:1: attempt to index global 'PallyPowerBlessingFrame' (a nil value)",
+			["time"] = "2022/04/06 18:34:14",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'PallyPowerBlessingFrame' (a nil value)\"\n",
+			["stack"] = "[string \"PallyPowerBlessingFrame:CreateBeautyBorder(8)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4599: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4876,
+			["counter"] = 1,
+		}, -- [76]
+		{
+			["message"] = "[string \"PallyPowerBlessingsFrame.BottomsEdge:Hide()\"]:1: attempt to index field 'BottomsEdge' (a nil value)",
+			["time"] = "2022/04/06 18:36:51",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'BottomsEdge' (a nil value)\"\n",
+			["stack"] = "[string \"PallyPowerBlessingsFrame.BottomsEdge:Hide()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 4876,
+			["counter"] = 1,
+		}, -- [77]
+		{
+			["message"] = "[string \"AuraGroup1AuraHeader:CreateBeautyBorder(6)\"]:1: attempt to index global 'AuraGroup1AuraHeader' (a nil value)",
+			["time"] = "2022/04/06 18:47:25",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'AuraGroup1AuraHeader' (a nil value)\"\n",
+			["stack"] = "[string \"AuraGroup1AuraHeader:CreateBeautyBorder(6)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4599: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4878,
+			["counter"] = 1,
+		}, -- [78]
+		{
+			["message"] = "[string \"AuraGroup1AuraHeaderIcon:CreateBeautyBorder...\"]:1: attempt to index global 'AuraGroup1AuraHeaderIcon' (a nil value)",
+			["time"] = "2022/04/06 18:48:18",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'AuraGroup1AuraHeaderIcon' (a nil value)\"\n",
+			["stack"] = "[string \"AuraGroup1AuraHeaderIcon:CreateBeautyBorder(6)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4599: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 4878,
+			["counter"] = 1,
+		}, -- [79]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Addons/PallyPower.lua:37: attempt to concatenate upvalue 'frame' (a table value)",
+			["time"] = "2022/04/06 18:49:25",
+			["locals"] = "self = PallyPowerBlessingsFrame {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n beautyBorder = <table> {\n }\n Center = <unnamed> {\n }\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n RightEdge = <unnamed> {\n }\n backdropInfo = <table> {\n }\n BottomEdge = <unnamed> {\n }\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n BottomLeftCorner = <unnamed> {\n }\n BottomRightCorner = <unnamed> {\n }\n TopEdge = <unnamed> {\n }\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n TopRightCorner = <unnamed> {\n }\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n TopLeftCorner = <unnamed> {\n }\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n LeftEdge = <unnamed> {\n }\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n}\n(for index) = 1\n(for limit) = 40\n(for step) = 1\ni = 1\n(*temporary) = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n aux.frame11Shine10 = aux.frame11Shine10 {\n }\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 778\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 399\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n PallyPowerC8P7BuffIcon = PallyPowerC8P7BuffIcon {\n }\n aux.frame12FlyoutBorderShadow = aux.frame12FlyoutBorderShadow {\n }\n LFGBulletinBoardO_Edit_260CboxOnDebug = LFGBulletinBoardO_Edit_260CboxOnDebug {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n GuildScrollFrameEntry20 = GuildScrollFrameEntry20 {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem2AltCurrencyFrameItem1Text = MerchantItem2AltCurrencyFrameItem1Text {\n }\n DetailsWindowOptionsBarTextEditorEntryNumberLines = DetailsWindowOptionsBarTextEditorEntryNumberLines {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n CHAT_HEADER_SUFFIX = \": \"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:600\n MANA = \"Mana\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2391\n BOOST2_WARRIOR_COLOSSUSSMASH = \"Use |cFFFFFFFFColossus Smash|r.\n\n|cFFFFFFFFColossus Smash|r increases your damage.\"\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n AutoCompleteEditBox_OnKeyDown = <function> de",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Addons/PallyPower.lua\"]:37: in function <Interface\\AddOns\\xVermin\\Addons/PallyPower.lua:14>",
+			["session"] = 4879,
+			["counter"] = 829,
+		}, -- [80]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Addons/PallyPower.lua:42: attempt to call method 'CreateBeautyBorder' (a nil value)",
+			["time"] = "2022/04/06 18:51:05",
+			["locals"] = "self = PallyPowerBlessingsFrame {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n beautyBorder = <table> {\n }\n Center = <unnamed> {\n }\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n RightEdge = <unnamed> {\n }\n backdropInfo = <table> {\n }\n BottomEdge = <unnamed> {\n }\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n BottomLeftCorner = <unnamed> {\n }\n BottomRightCorner = <unnamed> {\n }\n TopEdge = <unnamed> {\n }\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n TopRightCorner = <unnamed> {\n }\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n TopLeftCorner = <unnamed> {\n }\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n LeftEdge = <unnamed> {\n }\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n}\n(for index) = 1\n(for limit) = 40\n(for step) = 1\ni = 1\nag = PallyPowerBlessingsFrameAuraGroup1AuraHeaderIcon {\n 0 = <userdata>\n}\ncg = PallyPowerBlessingsFrameClassGroup1ClassButtonIcon {\n 0 = <userdata>\n}\npa = PallyPowerBlessingsFramePlayer1Aura1Icon {\n 0 = <userdata>\n}\npc = PallyPowerBlessingsFramePlayer1Class1Icon {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = PallyPowerBlessingsFrameAuraGroup1AuraHeaderIcon {\n 0 = <userdata>\n}\n(*temporary) = 6\n(*temporary) = \"attempt to call method 'CreateBeautyBorder' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Addons/PallyPower.lua\"]:42: in function <Interface\\AddOns\\xVermin\\Addons/PallyPower.lua:14>",
+			["session"] = 4880,
+			["counter"] = 416,
+		}, -- [81]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Addons/PallyPower.lua:43: attempt to call method 'CreateBeautyBorder' (a nil value)",
+			["time"] = "2022/04/06 18:52:06",
+			["locals"] = "self = PallyPowerBlessingsFrame {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n beautyBorder = <table> {\n }\n Center = <unnamed> {\n }\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n RightEdge = <unnamed> {\n }\n backdropInfo = <table> {\n }\n BottomEdge = <unnamed> {\n }\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n BottomLeftCorner = <unnamed> {\n }\n BottomRightCorner = <unnamed> {\n }\n TopEdge = <unnamed> {\n }\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n TopRightCorner = <unnamed> {\n }\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n TopLeftCorner = <unnamed> {\n }\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n LeftEdge = <unnamed> {\n }\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n}\n(for index) = 1\n(for limit) = 40\n(for step) = 1\ni = 1\nag = PallyPowerBlessingsFrameAuraGroup1AuraHeaderIcon {\n 0 = <userdata>\n}\ncg = PallyPowerBlessingsFrameClassGroup1ClassButtonIcon {\n 0 = <userdata>\n}\npa = PallyPowerBlessingsFramePlayer1Aura1Icon {\n 0 = <userdata>\n}\npc = PallyPowerBlessingsFramePlayer1Class1Icon {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = PallyPowerBlessingsFrameAuraGroup1AuraHeaderIcon {\n 0 = <userdata>\n}\n(*temporary) = 6\n(*temporary) = \"attempt to call method 'CreateBeautyBorder' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Addons/PallyPower.lua\"]:43: in function <Interface\\AddOns\\xVermin\\Addons/PallyPower.lua:14>",
+			["session"] = 4881,
+			["counter"] = 1350,
+		}, -- [82]
 	},
 }
