@@ -1574,7 +1574,7 @@ end
 		QualityGlow:SetTexCoord(0.25, 0.75, 0.25, 0.75);
 		QualityGlow:SetSize(buttonHeight - 2, buttonHeight - 2);
 		QualityGlow:SetPoint("CENTER", Icon);
-		-- QualityGlow:SetAlpha(0.75);
+		-- QualityGlow:SetAlpha(0.5);
 		QualityGlow:Show();
 		Button.QualityGlow = QualityGlow;
 
@@ -1983,7 +1983,7 @@ end
 				if price_a_material > 0 then
 					T_PriceInfoInFrame[2]:SetText(
 						L["COST_PRICE"] .. ": " ..
-						(unk_in > 0 and (AuctionMod.F_GetMoneyString(price_a_material) .. " (|cffff0000" .. unk_in .. L["ITEMS_UNK"] .. "|r)") or AuctionMod.F_GetMoneyString(price_a_material))
+						(unk_in > 0 and (AuctionMod.F_GetMoneyString(price_a_material) .. " (|cffff0000" .. unk_in .." ".. L["ITEMS_UNK"] .. "|r)") or AuctionMod.F_GetMoneyString(price_a_material))
 					);
 				else
 					T_PriceInfoInFrame[2]:SetText(
