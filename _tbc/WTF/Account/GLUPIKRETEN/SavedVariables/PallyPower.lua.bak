@@ -6,23 +6,23 @@ PallyPowerDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["autobuff"] = {
-				["autobutton"] = false,
-			},
 			["buffscale"] = 1,
-			["SalvInCombat"] = true,
-			["seal"] = 6,
 			["auras"] = false,
-			["configscale"] = 1.2,
+			["layout"] = "Layout 1",
+			["seal"] = 6,
 			["rfbuff"] = false,
-			["enable"] = true,
 			["display"] = {
 				["enableDragHandle"] = false,
 			},
-			["layout"] = "Layout 1",
+			["enable"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
+			["configscale"] = 1.2,
+			["autobuff"] = {
+				["autobutton"] = false,
+			},
+			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {

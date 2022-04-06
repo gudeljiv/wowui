@@ -1,7 +1,7 @@
 
 Grid2DB = {
 	["namespaces"] = {
-		["Grid2AoeHeals"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["Grid2Layout"] = {
 			["global"] = {
@@ -11,27 +11,19 @@ Grid2DB = {
 			},
 			["profiles"] = {
 				["Default"] = {
+					["BackgroundG"] = 0.101960784313725,
 					["BackgroundTexture"] = "None",
 					["BorderB"] = 0.501960784313726,
+					["minimapIcon"] = {
+						["hide"] = true,
+					},
 					["layouts"] = {
 						["arena"] = "By Group & Class",
 						["party"] = "By Group & Class",
 						["solo"] = "By Group & Class",
 						["raid"] = "By Group & Class",
 					},
-					["BackgroundR"] = 0.101960784313725,
-					["BorderR"] = 0.501960784313726,
-					["Spacing"] = 1,
-					["anchor"] = "CENTER",
-					["BackgroundG"] = 0.101960784313725,
-					["minimapIcon"] = {
-						["hide"] = true,
-					},
 					["PosY"] = 79.999838360142,
-					["BackgroundB"] = 0.101960784313725,
-					["BackgroundA"] = 0,
-					["BorderG"] = 0.501960784313726,
-					["BorderTexture"] = "None",
 					["extraThemes"] = {
 						{
 							["BackgroundTexture"] = "None",
@@ -143,7 +135,15 @@ Grid2DB = {
 							["FrameDisplay"] = "Always",
 						}, -- [3]
 					},
+					["BackgroundB"] = 0.101960784313725,
+					["Spacing"] = 1,
+					["BackgroundA"] = 0,
+					["BorderR"] = 0.501960784313726,
+					["BorderG"] = 0.501960784313726,
+					["anchor"] = "CENTER",
+					["BorderTexture"] = "None",
 					["PosX"] = -253.333301786579,
+					["BackgroundR"] = 0.101960784313725,
 				},
 				["Paladin"] = {
 					["BackgroundTexture"] = "None",
@@ -154,10 +154,14 @@ Grid2DB = {
 						["solo"] = "By Group & Class",
 						["party"] = "By Group & Class",
 					},
-					["BackgroundR"] = 0.101960784313725,
+					["BackgroundB"] = 0.101960784313725,
 					["BorderR"] = 0.501960784313726,
-					["Spacing"] = 1,
+					["BorderTexture"] = "None",
 					["anchor"] = "CENTER",
+					["BackgroundG"] = 0.101960784313725,
+					["minimapIcon"] = {
+						["hide"] = true,
+					},
 					["PosY"] = 79.999838360142,
 					["extraThemes"] = {
 						{
@@ -270,21 +274,19 @@ Grid2DB = {
 							["Spacing"] = 1,
 						}, -- [3]
 					},
-					["BackgroundB"] = 0.101960784313725,
 					["BackgroundA"] = 0,
-					["BorderTexture"] = "None",
 					["BorderG"] = 0.501960784313726,
-					["BackgroundG"] = 0.101960784313725,
+					["Spacing"] = 1,
+					["BackgroundR"] = 0.101960784313725,
 					["PosX"] = -253.333301786579,
-					["minimapIcon"] = {
-						["hide"] = true,
-					},
 				},
 			},
 		},
-		["LibDualSpec-1.0"] = {
+		["Grid2AoeHeals"] = {
 		},
 		["Grid2Options"] = {
+		},
+		["Grid2RaidDebuffs"] = {
 		},
 		["Grid2Frame"] = {
 			["profiles"] = {
@@ -293,7 +295,9 @@ Grid2DB = {
 						["a"] = 0,
 					},
 					["fontSize"] = 12,
+					["frameHeight"] = 50,
 					["frameBorder"] = 1,
+					["barTexture"] = "Glamour2",
 					["extraThemes"] = {
 						{
 							["frameColor"] = {
@@ -321,18 +325,18 @@ Grid2DB = {
 							},
 							["frameTexture"] = "Glamour2",
 							["frameBorderTexture"] = "None",
-							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								[10] = 40,
 								[5] = 50,
 							},
+							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
 							},
-							["orientation"] = "VERTICAL",
 							["frameWidth"] = 125,
 							["frameBorderColor"] = {
 								["a"] = 0,
@@ -372,18 +376,18 @@ Grid2DB = {
 								["g"] = 1,
 								["r"] = 1,
 							},
-							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameHeights"] = {
 								[5] = 45,
 								[10] = 50,
 							},
+							["mouseoverHighlight"] = false,
 							["frameWidth"] = 125,
 							["frameTexture"] = "Glamour2",
 						}, -- [2]
@@ -413,18 +417,18 @@ Grid2DB = {
 							},
 							["frameTexture"] = "Glamour2",
 							["frameBorderTexture"] = "None",
-							["frameHeights"] = {
-								[25] = 20,
-								[40] = 20,
-							},
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["mouseoverHighlight"] = false,
+							["frameHeights"] = {
+								[25] = 20,
+								[40] = 20,
+							},
 							["orientation"] = "VERTICAL",
+							["mouseoverHighlight"] = false,
 							["frameWidth"] = 120,
 							["frameBorderColor"] = {
 								["a"] = 0,
@@ -434,15 +438,13 @@ Grid2DB = {
 							},
 						}, -- [3]
 					},
-					["frameBorderDistance"] = -2,
-					["frameHeight"] = 50,
-					["frameTexture"] = "Glamour2",
-					["barTexture"] = "Glamour2",
+					["frameBorderTexture"] = "None",
 					["frameContentColor"] = {
 						["a"] = 0,
 					},
+					["frameTexture"] = "Glamour2",
 					["frameWidth"] = 120,
-					["frameBorderTexture"] = "None",
+					["frameBorderDistance"] = -2,
 				},
 				["Paladin"] = {
 					["frameColor"] = {
@@ -476,24 +478,24 @@ Grid2DB = {
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["frameHeights"] = {
-								[10] = 40,
-								[5] = 50,
-							},
-							["orientation"] = "VERTICAL",
 							["mouseoverColor"] = {
 								["a"] = 1,
 								["b"] = 1,
 								["g"] = 1,
 								["r"] = 1,
 							},
-							["mouseoverHighlight"] = false,
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
+							["frameHeights"] = {
+								[10] = 40,
+								[5] = 50,
+							},
+							["orientation"] = "VERTICAL",
+							["mouseoverHighlight"] = false,
 							["frameWidth"] = 125,
 							["frameBorderTexture"] = "None",
 						}, -- [1]
@@ -517,6 +519,13 @@ Grid2DB = {
 								[10] = 125,
 							},
 							["frameTexture"] = "Glamour2",
+							["frameBorderColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["mouseoverHighlight"] = false,
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
@@ -527,14 +536,7 @@ Grid2DB = {
 								[5] = 45,
 								[10] = 50,
 							},
-							["frameBorderColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
 							["orientation"] = "VERTICAL",
-							["mouseoverHighlight"] = false,
 							["frameWidth"] = 125,
 							["mouseoverColor"] = {
 								["a"] = 1,
@@ -568,6 +570,13 @@ Grid2DB = {
 								["g"] = 0,
 								["b"] = 0,
 							},
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["r"] = 1,
+								["g"] = 1,
+								["b"] = 1,
+							},
+							["mouseoverHighlight"] = false,
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
@@ -575,34 +584,25 @@ Grid2DB = {
 								["b"] = 0,
 							},
 							["orientation"] = "VERTICAL",
-							["mouseoverColor"] = {
-								["a"] = 1,
-								["r"] = 1,
-								["g"] = 1,
-								["b"] = 1,
-							},
 							["frameHeights"] = {
 								[25] = 20,
 								[40] = 20,
 							},
-							["mouseoverHighlight"] = false,
 							["frameWidth"] = 120,
 							["frameBorderTexture"] = "None",
 						}, -- [3]
 					},
 					["frameBorderDistance"] = -2,
 					["frameHeight"] = 50,
-					["frameBorderTexture"] = "None",
-					["barTexture"] = "Glamour2",
 					["frameTexture"] = "Glamour2",
+					["barTexture"] = "Glamour2",
 					["frameContentColor"] = {
 						["a"] = 0,
 					},
 					["frameWidth"] = 120,
+					["frameBorderTexture"] = "None",
 				},
 			},
-		},
-		["Grid2RaidDebuffs"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -1842,23 +1842,23 @@ Grid2DB = {
 					["fontSize"] = 10,
 				},
 				["mana"] = {
-					["height"] = 4,
+					["orientation"] = "HORIZONTAL",
 					["type"] = "bar",
-					["backTexture"] = "Glamour2",
-					["backColor"] = {
-						["a"] = 0.3061864972114563,
-						["r"] = 0,
-						["g"] = 0,
-						["b"] = 0,
-					},
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "BOTTOM",
 						["point"] = "BOTTOM",
 						["x"] = 0,
 					},
+					["backColor"] = {
+						["a"] = 0.3061864972114563,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+					["backTexture"] = "Glamour2",
 					["level"] = 3,
-					["orientation"] = "HORIZONTAL",
+					["height"] = 4,
 					["texture"] = "Glamour2",
 				},
 				["border"] = {
@@ -2070,27 +2070,9 @@ Grid2DB = {
 				["name"] = {
 					["defaultName"] = 1,
 				},
-				["buff-MarkoftheWild"] = {
+				["buff-Rejuvenation-mine"] = {
 					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["missing"] = true,
-					["load"] = {
-						["playerClass"] = {
-							["DRUID"] = true,
-						},
-					},
-					["mine"] = false,
-					["spellName"] = 1126,
-				},
-				["buff-Thorns-mine"] = {
-					["type"] = "buff",
-					["spellName"] = 467,
-					["missing"] = true,
+					["spellName"] = 1058,
 					["mine"] = 1,
 					["load"] = {
 						["playerClass"] = {
@@ -2120,9 +2102,19 @@ Grid2DB = {
 					},
 					["spellName"] = 139,
 				},
-				["buff-Rejuvenation-mine"] = {
+				["classcolor"] = {
+					["colors"] = {
+						["SHAMAN"] = {
+							["r"] = 0.0901960784313726,
+							["g"] = 0.392156862745098,
+							["b"] = 0.67843137254902,
+						},
+					},
+				},
+				["buff-Thorns-mine"] = {
 					["type"] = "buff",
-					["spellName"] = 1058,
+					["spellName"] = 467,
+					["missing"] = true,
 					["mine"] = 1,
 					["load"] = {
 						["playerClass"] = {
@@ -2136,14 +2128,22 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
-				["classcolor"] = {
-					["colors"] = {
-						["SHAMAN"] = {
-							["r"] = 0.0901960784313726,
-							["g"] = 0.392156862745098,
-							["b"] = 0.67843137254902,
+				["buff-MarkoftheWild"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["missing"] = true,
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
 						},
 					},
+					["mine"] = false,
+					["spellName"] = 1126,
 				},
 			},
 			["versions"] = {
@@ -2200,10 +2200,10 @@ Grid2DB = {
 				["health"] = {
 					["health-current"] = 99,
 				},
+				["text-up"] = {
+				},
 				["corner-bottom-left"] = {
 					["threat"] = 50,
-				},
-				["text-up"] = {
 				},
 				["text-up-color"] = {
 					["charmed"] = 65,
@@ -2394,23 +2394,23 @@ Grid2DB = {
 					["type"] = "alpha",
 				},
 				["mana"] = {
-					["height"] = 4,
+					["backTexture"] = "Glamour2",
 					["type"] = "bar",
-					["location"] = {
-						["y"] = 0,
-						["relPoint"] = "BOTTOM",
-						["point"] = "BOTTOM",
-						["x"] = 0,
-					},
+					["orientation"] = "HORIZONTAL",
 					["backColor"] = {
 						["a"] = 0.3061864972114563,
 						["b"] = 0,
 						["g"] = 0,
 						["r"] = 0,
 					},
-					["orientation"] = "HORIZONTAL",
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "BOTTOM",
+						["point"] = "BOTTOM",
+						["x"] = 0,
+					},
 					["level"] = 3,
-					["backTexture"] = "Glamour2",
+					["height"] = 4,
 					["texture"] = "Glamour2",
 				},
 				["health-color"] = {
@@ -2502,22 +2502,22 @@ Grid2DB = {
 				},
 			},
 			["statuses"] = {
-				["buff-PowerWord:Fortitude"] = {
+				["buff-Thorns-mine"] = {
 					["type"] = "buff",
-					["spellName"] = "Power Word: Fortitude",
-					["missing"] = true,
-					["mine"] = false,
-					["load"] = {
-						["playerClass"] = {
-							["PRIEST"] = true,
-						},
-					},
 					["color1"] = {
 						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
 						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
 					},
+					["missing"] = true,
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+					["mine"] = 1,
+					["spellName"] = 467,
 				},
 				["name"] = {
 					["defaultName"] = 1,
@@ -2538,22 +2538,6 @@ Grid2DB = {
 					["mine"] = 1,
 					["spellName"] = 1058,
 				},
-				["buff-Renew-mine"] = {
-					["type"] = "buff",
-					["spellName"] = 139,
-					["load"] = {
-						["playerClass"] = {
-							["PRIEST"] = true,
-						},
-					},
-					["mine"] = 1,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
 				["classcolor"] = {
 					["colors"] = {
 						["SHAMAN"] = {
@@ -2563,22 +2547,22 @@ Grid2DB = {
 						},
 					},
 				},
-				["buff-Thorns-mine"] = {
+				["buff-PowerWord:Fortitude"] = {
 					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
+					["spellName"] = "Power Word: Fortitude",
 					["missing"] = true,
+					["mine"] = false,
 					["load"] = {
 						["playerClass"] = {
-							["DRUID"] = true,
+							["PRIEST"] = true,
 						},
 					},
-					["mine"] = 1,
-					["spellName"] = 467,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
 				},
 				["buff-MarkoftheWild"] = {
 					["type"] = "buff",
@@ -2590,6 +2574,22 @@ Grid2DB = {
 							["DRUID"] = true,
 						},
 					},
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["buff-Renew-mine"] = {
+					["type"] = "buff",
+					["spellName"] = 139,
+					["load"] = {
+						["playerClass"] = {
+							["PRIEST"] = true,
+						},
+					},
+					["mine"] = 1,
 					["color1"] = {
 						["a"] = 1,
 						["r"] = 1,
@@ -2657,7 +2657,8 @@ Grid2DB = {
 				["icon-left"] = {
 					["raid-icon-player"] = 155,
 				},
-				["text-up"] = {
+				["corner-bottom-left"] = {
+					["threat"] = 50,
 				},
 				["text-up-color"] = {
 					["charmed"] = 65,
@@ -2666,8 +2667,7 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
-				["corner-bottom-left"] = {
-					["threat"] = 50,
+				["text-up"] = {
 				},
 				["corner-top-right"] = {
 					["debuff-Disease"] = 50,
@@ -3006,15 +3006,15 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
+				["text-down-color"] = {
+					["classcolor"] = 99,
+				},
 				["text-up-color"] = {
 					["charmed"] = 65,
 					["feign-death"] = 96,
 					["health-deficit"] = 50,
 					["offline"] = 93,
 					["death"] = 95,
-				},
-				["text-down-color"] = {
-					["classcolor"] = 99,
 				},
 				["icon-center"] = {
 					["ready-check"] = 150,
@@ -3561,15 +3561,15 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
-				["text-down-color"] = {
-					["classcolor"] = 99,
-				},
 				["text-up-color"] = {
 					["charmed"] = 65,
 					["feign-death"] = 96,
 					["health-deficit"] = 50,
 					["offline"] = 93,
 					["death"] = 95,
+				},
+				["text-down-color"] = {
+					["classcolor"] = 99,
 				},
 				["icon-center"] = {
 					["ready-check"] = 150,

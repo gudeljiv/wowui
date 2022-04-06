@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 4862,
+	["session"] = 4868,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -537,5 +537,37 @@ BugGrabberDB = {
 			["session"] = 4861,
 			["counter"] = 7,
 		}, -- [68]
+		{
+			["message"] = "[string \"TradeSkillSearchBox:SetPoint('LEFT', TradeS...\"]:1: attempt to index global 'TradeSkillSearchBox' (a nil value)",
+			["time"] = "2022/04/06 11:08:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'TradeSkillSearchBox' (a nil value)\"\n",
+			["stack"] = "[string \"TradeSkillSearchBox:SetPoint('LEFT', TradeSkillRankFrame, 'LEFT', 20, -10)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 4865,
+			["counter"] = 13,
+		}, -- [69]
+		{
+			["message"] = "[string \"TradeSkillSearchBox:SetPoint('BOTTOMLEFT', ...\"]:1: attempt to index global 'TradeSkillSearchBox' (a nil value)",
+			["time"] = "2022/04/06 11:09:44",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'TradeSkillSearchBox' (a nil value)\"\n",
+			["stack"] = "[string \"TradeSkillSearchBox:SetPoint('BOTTOMLEFT', TradeSkillRankFrame, 'TOPLEFT', 20, -10)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 4865,
+			["counter"] = 20,
+		}, -- [70]
+		{
+			["message"] = "[string \"TradeSkillSearchBox:ClearlAllPoints();\"]:1: attempt to index global 'TradeSkillSearchBox' (a nil value)",
+			["time"] = "2022/04/06 11:08:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'TradeSkillSearchBox' (a nil value)\"\n",
+			["stack"] = "[string \"TradeSkillSearchBox:ClearlAllPoints();\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 4865,
+			["counter"] = 34,
+		}, -- [71]
+		{
+			["message"] = "[string \"TradeSearchInputBox:ClearlAllPoints();\"]:1: attempt to call method 'ClearlAllPoints' (a nil value)",
+			["time"] = "2022/04/06 11:10:40",
+			["locals"] = "(*temporary) = nil\n(*temporary) = TradeSearchInputBox {\n 0 = <userdata>\n}\n(*temporary) = \"attempt to call method 'ClearlAllPoints' (a nil value)\"\n",
+			["stack"] = "[string \"TradeSearchInputBox:ClearlAllPoints();\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 4866,
+			["counter"] = 21,
+		}, -- [72]
 	},
 }

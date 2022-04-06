@@ -303,6 +303,7 @@ GQ_DATA = {
 					["FIELD_SLOTSTATES"] = {
 					},
 					["FIELD_SHOWHELMET"] = false,
+					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = " ",
@@ -542,7 +543,6 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
-					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_SHOWCLOAK"] = false,
 				},
 				["HEAL"] = {
@@ -572,6 +572,7 @@ GQ_DATA = {
 					["FIELD_SLOTSTATES"] = {
 					},
 					["FIELD_SHOWHELMET"] = false,
+					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = " ",
@@ -811,7 +812,6 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
-					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_SHOWCLOAK"] = false,
 				},
 			},
@@ -837,12 +837,12 @@ GQ_OPTIONS = {
 	["OPT_VERSION"] = 30,
 	["OPT_SHOWSLOTBACKDROPS"] = true,
 	["OPT_NOTIFYQUEUES"] = true,
-	["OPT_SHOWBROKERTOOLTIP"] = true,
 	["OPT_IGNOREMANUALITEMS"] = false,
-	["OPT_AUTOUPRANKSPELLS"] = true,
-	["OPT_ACTIONBARS"] = true,
-	["OPT_SAVECHANGES_ACTIONSLOTS"] = "OPTVALUE_SAVECHANGES_GQMENU",
+	["OPT_SHOWBROKERTOOLTIP"] = true,
 	["OPT_SHOWITEMTOOLTIP"] = true,
+	["OPT_AUTOUPRANKSPELLS"] = true,
+	["OPT_SAVECHANGES_ACTIONSLOTS"] = "OPTVALUE_SAVECHANGES_GQMENU",
+	["OPT_ACTIONBARS"] = true,
 	["OPT_HIGHLIGHTCHANGES"] = true,
 	["OPT_SAVECHANGES"] = "OPTVALUE_SAVECHANGES_GQMENU",
 	["OPT_MENUOPEN"] = false,

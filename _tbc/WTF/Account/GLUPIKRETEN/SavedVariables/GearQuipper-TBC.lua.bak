@@ -2,10 +2,12 @@
 GQ_DATA = {
 	["Golemagg"] = {
 		["Vermina"] = {
-			["FIELD_CURRENTSET"] = "TANK",
-			["FIELD_LASTSET"] = "HEAL",
-			["FIELD_BANK"] = {
+			["FIELD_IGNOREDSLOTS"] = {
 			},
+			["FIELD_CURRENTSET"] = "TANK",
+			["FIELD_EVENTS"] = {
+			},
+			["FIELD_LASTSET"] = "HEAL",
 			["FIELD_SETS"] = {
 				["$PREVIOUSEQUIPMENT"] = {
 					["FIELD_SLOTS"] = {
@@ -298,6 +300,8 @@ GQ_DATA = {
 						[0] = 0,
 					},
 					["FIELD_OPT_PARTIAL"] = false,
+					["FIELD_SHOWCLOAK"] = false,
+					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = " ",
@@ -537,8 +541,6 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
-					["FIELD_SHOWCLOAK"] = false,
-					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_SHOWHELMET"] = false,
 					["FIELD_SLOTSTATES"] = {
 					},
@@ -567,6 +569,8 @@ GQ_DATA = {
 						[0] = 0,
 					},
 					["FIELD_OPT_PARTIAL"] = false,
+					["FIELD_SHOWCLOAK"] = false,
+					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = " ",
@@ -806,19 +810,20 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
-					["FIELD_SHOWCLOAK"] = false,
-					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_SHOWHELMET"] = false,
 					["FIELD_SLOTSTATES"] = {
 					},
 				},
 			},
-			["FIELD_IGNOREDSLOTS"] = {
+			["FIELD_BANK"] = {
 			},
 			["FIELD_INVENTORY"] = {
+				["item:6633::::::::25:::::::::"] = {
+					["ITEM_BAG_ID"] = 4,
+					["ITEM_SLOT_ID"] = 11,
+				},
 			},
-			["FIELD_EVENTS"] = {
-			},
+			["FIELD_EVENTS_ENABLED"] = false,
 		},
 	},
 }
@@ -829,15 +834,15 @@ GQ_OPTIONS = {
 	["OPT_SCRIPTEDITORENABLED"] = false,
 	["OPT_SWITCHDELAY"] = 600,
 	["OPT_AUTOUPRANKSPELLS_ALLRANKS"] = false,
-	["OPT_MENUOPEN"] = true,
+	["OPT_MENUOPEN"] = false,
 	["OPT_VERSION"] = 30,
-	["OPT_ACTIONBARS"] = true,
-	["OPT_SHOWBROKERTOOLTIP"] = true,
+	["OPT_SAVECHANGES"] = "OPTVALUE_SAVECHANGES_GQMENU",
 	["OPT_IGNOREMANUALITEMS"] = false,
-	["OPT_SHOWITEMTOOLTIP"] = true,
-	["OPT_SAVECHANGES"] = "OPTVALUE_SAVECHANGES_CHARMENU",
-	["OPT_SAVECHANGES_ACTIONSLOTS"] = "OPTVALUE_SAVECHANGES_ALWAYS",
+	["OPT_SHOWBROKERTOOLTIP"] = true,
+	["OPT_ACTIONBARS"] = true,
 	["OPT_AUTOUPRANKSPELLS"] = true,
+	["OPT_SAVECHANGES_ACTIONSLOTS"] = "OPTVALUE_SAVECHANGES_GQMENU",
+	["OPT_SHOWITEMTOOLTIP"] = true,
 	["OPT_HIGHLIGHTCHANGES"] = true,
 	["OPT_NOTIFYQUEUES"] = true,
 	["OPT_SHOWSLOTBACKDROPS"] = true,
