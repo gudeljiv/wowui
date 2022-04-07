@@ -114,3 +114,4 @@ Kui_Nameplates: enabled
 Kui_Nameplates_Core_Config: enabled
 Kui_Nameplates_Core: enabled
 Plater: disabled
+MissingTradeSkillsList_TBC_Data: enabled

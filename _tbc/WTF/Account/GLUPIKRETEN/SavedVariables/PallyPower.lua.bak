@@ -3,6 +3,8 @@ PallyPowerDB = {
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Other",
 		["Vermina - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Other",
+		["Vermin - Golemagg"] = "Other",
 	},
 	["profiles"] = {
 		["Default"] = {
