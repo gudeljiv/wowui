@@ -30,7 +30,7 @@ AtlasLootClassicDB = {
 		["Vermins - Stonespine"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
@@ -39,7 +39,7 @@ AtlasLootClassicDB = {
 		["Dmitar - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 		["Moolatz - Golemagg"] = "Default",
 	},
@@ -51,11 +51,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -64,6 +59,11 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
 			},
 		},
 		["Verminz - Golemagg"] = {
@@ -291,9 +291,9 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Battlearm - Hydraxian Waterlords"] = {
-		},
 		["Testxv - Golemagg"] = {
+		},
+		["Battlearm - Hydraxian Waterlords"] = {
 		},
 		["Battlearm - Golemagg"] = {
 		},
@@ -318,6 +318,13 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 			["GUI"] = {
+				["point"] = {
+					"TOP", -- [1]
+					nil, -- [2]
+					"TOP", -- [3]
+					-226.2529449462891, -- [4]
+					-159.2184143066406, -- [5]
+				},
 				["selectedGameVersion"] = 1,
 				["selected"] = {
 					nil, -- [1]
@@ -325,13 +332,6 @@ AtlasLootClassicDB = {
 					11, -- [3]
 					1, -- [4]
 					0, -- [5]
-				},
-				["point"] = {
-					"TOP", -- [1]
-					nil, -- [2]
-					"TOP", -- [3]
-					-226.2529449462891, -- [4]
-					-159.2184143066406, -- [5]
 				},
 			},
 		},
@@ -353,6 +353,23 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
+			["GUI"] = {
+				["selectedGameVersion"] = 1,
+				["selected"] = {
+					nil, -- [1]
+					"RazorfenKraul", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-344.3334350585938, -- [4]
+					141.3907928466797, -- [5]
+				},
+			},
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
@@ -366,23 +383,6 @@ AtlasLootClassicDB = {
 							},
 						},
 					},
-				},
-			},
-			["GUI"] = {
-				["point"] = {
-					nil, -- [1]
-					nil, -- [2]
-					"CENTER", -- [3]
-					-344.3334350585938, -- [4]
-					141.3907928466797, -- [5]
-				},
-				["selectedGameVersion"] = 1,
-				["selected"] = {
-					nil, -- [1]
-					"RazorfenKraul", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
 				},
 			},
 		},

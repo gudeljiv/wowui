@@ -7,7 +7,7 @@ GQ_DATA = {
 			["FIELD_CURRENTSET"] = "DPS",
 			["FIELD_EVENTS"] = {
 			},
-			["FIELD_LASTSET"] = "TANK",
+			["FIELD_LASTSET"] = "HEAL",
 			["FIELD_SETS"] = {
 				["$PREVIOUSEQUIPMENT"] = {
 					["FIELD_SLOTS"] = {
@@ -279,29 +279,28 @@ GQ_DATA = {
 				["TANK"] = {
 					["FIELD_SLOTS"] = {
 						"VALUE_NONE", -- [1]
-						"item:25438::::::::25:::::::::", -- [2]
-						"item:5254::::::::25:::::::::", -- [3]
-						"item:5107::::::::25:::::::::", -- [4]
-						"item:6627::::::::25:::::::::", -- [5]
-						"item:6319::::::::25:::::::::", -- [6]
-						"item:10410:15:::::::25:::::::::", -- [7]
-						"item:6459:15:::::::25:::::::::", -- [8]
-						"item:15306::::::841:2015066112:25:::::::::", -- [9]
-						"item:10413:15:::::::25:::::::::", -- [10]
-						"item:5351::::::::25:::::::::", -- [11]
-						"item:6414::::::::25:::::::::", -- [12]
+						"item:25438::::::::26:::::::::", -- [2]
+						"item:5254::::::::26:::::::::", -- [3]
+						"item:5107::::::::26:::::::::", -- [4]
+						"item:6627::::::::26:::::::::", -- [5]
+						"item:6319::::::::26:::::::::", -- [6]
+						"item:10410:15:::::::26:::::::::", -- [7]
+						"item:6459:15:::::::26:::::::::", -- [8]
+						"item:15306::::::841:2015066112:26:::::::::", -- [9]
+						"item:10413:15:::::::26:::::::::", -- [10]
+						"item:5351::::::::26:::::::::", -- [11]
+						"item:6414::::::::26:::::::::", -- [12]
 						"VALUE_NONE", -- [13]
 						"VALUE_NONE", -- [14]
-						"item:6340::::::::25:::::::::", -- [15]
-						"item:6633::::::::25:::::::::", -- [16]
-						"item:6447::::::::25:::::::::", -- [17]
+						"item:6340::::::::26:::::::::", -- [15]
+						"item:6633::::::::26:::::::::", -- [16]
+						"item:6447::::::::26:::::::::", -- [17]
 						"VALUE_NONE", -- [18]
 						"VALUE_NONE", -- [19]
 						[0] = 0,
 					},
 					["FIELD_OPT_PARTIAL"] = false,
 					["FIELD_SHOWCLOAK"] = false,
-					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = " ",
@@ -541,6 +540,7 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
+					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_SHOWHELMET"] = false,
 					["FIELD_SLOTSTATES"] = {
 					},
@@ -548,29 +548,28 @@ GQ_DATA = {
 				["HEAL"] = {
 					["FIELD_SLOTS"] = {
 						"VALUE_NONE", -- [1]
-						"item:25438::::::::25:::::::::", -- [2]
-						"item:5254::::::::25:::::::::", -- [3]
-						"item:5107::::::::25:::::::::", -- [4]
-						"item:6627::::::::25:::::::::", -- [5]
-						"item:6319::::::::25:::::::::", -- [6]
-						"item:10410:15:::::::25:::::::::", -- [7]
-						"item:6459:15:::::::25:::::::::", -- [8]
-						"item:15306::::::841:2015066112:25:::::::::", -- [9]
-						"item:10413:15:::::::25:::::::::", -- [10]
-						"item:5313::::::::25:::::::::", -- [11]
-						"item:6414::::::::25:::::::::", -- [12]
+						"item:25438::::::::26:::::::::", -- [2]
+						"item:5254::::::::26:::::::::", -- [3]
+						"item:5107::::::::26:::::::::", -- [4]
+						"item:6627::::::::26:::::::::", -- [5]
+						"item:6319::::::::26:::::::::", -- [6]
+						"item:10410:15:::::::26:::::::::", -- [7]
+						"item:6459:15:::::::26:::::::::", -- [8]
+						"item:15306::::::841:2015066112:26:::::::::", -- [9]
+						"item:10413:15:::::::26:::::::::", -- [10]
+						"item:5351::::::::26:::::::::", -- [11]
+						"item:6414::::::::26:::::::::", -- [12]
 						"VALUE_NONE", -- [13]
 						"VALUE_NONE", -- [14]
-						"item:6340::::::::25:::::::::", -- [15]
-						"item:6633::::::::25:::::::::", -- [16]
-						"item:6447::::::::25:::::::::", -- [17]
+						"item:6340::::::::26:::::::::", -- [15]
+						"item:6633::::::::26:::::::::", -- [16]
+						"item:6447::::::::26:::::::::", -- [17]
 						"VALUE_NONE", -- [18]
 						"VALUE_NONE", -- [19]
 						[0] = 0,
 					},
 					["FIELD_OPT_PARTIAL"] = false,
 					["FIELD_SHOWCLOAK"] = false,
-					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = " ",
@@ -810,6 +809,7 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
+					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_SHOWHELMET"] = false,
 					["FIELD_SLOTSTATES"] = {
 					},
@@ -817,21 +817,21 @@ GQ_DATA = {
 				["DPS"] = {
 					["FIELD_SLOTS"] = {
 						"VALUE_NONE", -- [1]
-						"item:25438::::::::25:::::::::", -- [2]
-						"item:5254::::::::25:::::::::", -- [3]
-						"item:5107::::::::25:::::::::", -- [4]
-						"item:6627::::::::25:::::::::", -- [5]
-						"item:6319::::::::25:::::::::", -- [6]
-						"item:10410:15:::::::25:::::::::", -- [7]
-						"item:6459:15:::::::25:::::::::", -- [8]
-						"item:15306::::::841:2015066112:25:::::::::", -- [9]
-						"item:10413:15:::::::25:::::::::", -- [10]
-						"item:5351::::::::25:::::::::", -- [11]
-						"item:6414::::::::25:::::::::", -- [12]
+						"item:25438::::::::26:::::::::", -- [2]
+						"item:5254::::::::26:::::::::", -- [3]
+						"item:5107::::::::26:::::::::", -- [4]
+						"item:6627::::::::26:::::::::", -- [5]
+						"item:6319::::::::26:::::::::", -- [6]
+						"item:10410:15:::::::26:::::::::", -- [7]
+						"item:6459:15:::::::26:::::::::", -- [8]
+						"item:15306::::::841:2015066112:26:::::::::", -- [9]
+						"item:10413:15:::::::26:::::::::", -- [10]
+						"item:5351::::::::26:::::::::", -- [11]
+						"item:6414::::::::26:::::::::", -- [12]
 						"VALUE_NONE", -- [13]
 						"VALUE_NONE", -- [14]
-						"item:6340::::::::25:::::::::", -- [15]
-						"item:6641::::::::25:::::::::", -- [16]
+						"item:6340::::::::26:::::::::", -- [15]
+						"item:6641::::::::26:::::::::", -- [16]
 						"VALUE_NONE", -- [17]
 						"VALUE_NONE", -- [18]
 						"VALUE_NONE", -- [19]
@@ -839,6 +839,7 @@ GQ_DATA = {
 					},
 					["FIELD_OPT_PARTIAL"] = false,
 					["FIELD_SHOWCLOAK"] = false,
+					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = " ",
@@ -894,9 +895,9 @@ GQ_DATA = {
 						"VALUE_NONE", -- [22]
 						"VALUE_NONE", -- [23]
 						{
-							["FIELD_ID"] = 3104,
-							["FIELD_SUBTYPE"] = "spell",
+							["FIELD_ID"] = 3811,
 							["FIELD_TYPE"] = "spell",
+							["FIELD_SUBTYPE"] = "spell",
 						}, -- [24]
 						{
 							["FIELD_ID"] = 19835,
@@ -1081,7 +1082,6 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
-					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_SHOWHELMET"] = false,
 					["FIELD_SLOTSTATES"] = {
 					},
@@ -1098,17 +1098,29 @@ GQ_DATA = {
 					["ITEM_BAG_ID"] = 0,
 					["ITEM_SLOT_ID"] = 2,
 				},
+				["item:6641::::::::25:::::::::"] = {
+					["ITEM_BAG_ID"] = 4,
+					["ITEM_SLOT_ID"] = 14,
+				},
 				["item:5351::::::::25:::::::::"] = {
 					["ITEM_BAG_ID"] = 0,
 					["ITEM_SLOT_ID"] = 2,
+				},
+				["item:6641::::::::26:::::::::"] = {
+					["ITEM_BAG_ID"] = 4,
+					["ITEM_SLOT_ID"] = 12,
+				},
+				["item:6447::::::::26:::::::::"] = {
+					["ITEM_BAG_ID"] = 4,
+					["ITEM_SLOT_ID"] = 11,
 				},
 				["item:6633::::::::25:::::::::"] = {
 					["ITEM_BAG_ID"] = 4,
 					["ITEM_SLOT_ID"] = 14,
 				},
-				["item:6641::::::::25:::::::::"] = {
+				["item:6633::::::::26:::::::::"] = {
 					["ITEM_BAG_ID"] = 4,
-					["ITEM_SLOT_ID"] = 14,
+					["ITEM_SLOT_ID"] = 12,
 				},
 			},
 			["FIELD_EVENTS_ENABLED"] = false,
@@ -1144,7 +1156,6 @@ GQ_DATA = {
 					},
 					["FIELD_OPT_PARTIAL"] = false,
 					["FIELD_SHOWCLOAK"] = true,
-					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = 5019,
@@ -1290,6 +1301,7 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
+					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_SHOWHELMET"] = true,
 					["FIELD_SLOTSTATES"] = {
 					},
@@ -1507,7 +1519,6 @@ GQ_DATA = {
 					["FIELD_SLOTSTATES"] = {
 					},
 					["FIELD_SHOWHELMET"] = false,
-					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_ACTIONSLOTS"] = {
 						{
 							["FIELD_ID"] = 6603,
@@ -1833,6 +1844,7 @@ GQ_DATA = {
 						"VALUE_NONE", -- [119]
 						"VALUE_NONE", -- [120]
 					},
+					["FIELD_OPT_ACTIONSLOTS"] = true,
 					["FIELD_SHOWCLOAK"] = false,
 				},
 				["$PREVIOUSEQUIPMENT"] = {
@@ -2204,8 +2216,8 @@ GQ_OPTIONS = {
 	["OPT_SCRIPTEDITORENABLED"] = false,
 	["OPT_SWITCHDELAY"] = 600,
 	["OPT_AUTOUPRANKSPELLS_ALLRANKS"] = false,
+	["OPT_MENUOPEN"] = true,
 	["OPT_VERSION"] = 30,
-	["OPT_SHOWSLOTBACKDROPS"] = true,
 	["OPT_SAVECHANGES"] = "OPTVALUE_SAVECHANGES_GQMENU",
 	["OPT_IGNOREMANUALITEMS"] = false,
 	["OPT_SHOWBROKERTOOLTIP"] = true,
@@ -2215,7 +2227,7 @@ GQ_OPTIONS = {
 	["OPT_SHOWITEMTOOLTIP"] = true,
 	["OPT_HIGHLIGHTCHANGES"] = true,
 	["OPT_NOTIFYQUEUES"] = true,
-	["OPT_MENUOPEN"] = false,
+	["OPT_SHOWSLOTBACKDROPS"] = true,
 	["OPT_NOTIFYCHANGES"] = true,
 }
 GQ_AUX = {

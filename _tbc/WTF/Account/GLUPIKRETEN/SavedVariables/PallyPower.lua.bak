@@ -8,24 +8,24 @@ PallyPowerDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["buffscale"] = 1,
-			["auras"] = false,
-			["layout"] = "Layout 1",
-			["seal"] = 6,
-			["rfbuff"] = false,
-			["display"] = {
-				["enableDragHandle"] = false,
-			},
-			["enable"] = true,
-			["minimap"] = {
-				["show"] = false,
-			},
-			["configscale"] = 1.2,
 			["autobuff"] = {
 				["autobutton"] = false,
 			},
-			["SalvInCombat"] = true,
+			["buffscale"] = 1,
+			["layout"] = "Layout 1",
+			["seal"] = 6,
+			["auras"] = false,
 			["ShowTooltips"] = false,
+			["configscale"] = 1.2,
+			["rfbuff"] = false,
+			["enable"] = true,
+			["display"] = {
+				["enableDragHandle"] = false,
+			},
+			["SalvInCombat"] = true,
+			["minimap"] = {
+				["show"] = false,
+			},
 			["rf"] = false,
 		},
 		["Other"] = {
