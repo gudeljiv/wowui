@@ -22,10 +22,10 @@ PallyPowerDB = {
 			["display"] = {
 				["enableDragHandle"] = false,
 			},
-			["SalvInCombat"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
+			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {

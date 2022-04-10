@@ -1,1 +1,0 @@
-svn:https://repos.wowace.com/wow/callbackhandler/trunk/CallbackHandler-1.0

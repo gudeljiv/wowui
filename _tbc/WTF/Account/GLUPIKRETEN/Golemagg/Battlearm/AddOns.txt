@@ -9,7 +9,7 @@ BagBrother: disabled
 RXPGuides: disabled
 nPower: disabled
 Leatrix_Plus: enabled
-TradeSkillMaster: disabled
+TradeSkillMaster: enabled
 NeatPlates: disabled
 whoaThickFrames_BCC: enabled
 whoaThickFrames_Classic: disabled
@@ -53,8 +53,8 @@ Grid2RaidDebuffs: enabled
 Grid2RaidDebuffsOptions: enabled
 Grid2LDB: enabled
 ImprovedMacroFrame: enabled
-ItemRack: disabled
-ItemRackOptions: disabled
+ItemRack: enabled
+ItemRackOptions: enabled
 Leatrix_Maps: enabled
 LFGBulletinBoard: enabled
 Lorti UI Classic: enabled
@@ -105,10 +105,12 @@ FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: enabled
 AuctionFaster: disabled
-aux-addon: enabled
+aux-addon: disabled
 TrackEverything: enabled
 Kui_Media: enabled
 Kui_Nameplates: enabled
 Kui_Nameplates_Core_Config: enabled
 Kui_Nameplates_Core: enabled
 Plater: disabled
+NovaInstanceTracker: enabled
+PallyPower: enabled

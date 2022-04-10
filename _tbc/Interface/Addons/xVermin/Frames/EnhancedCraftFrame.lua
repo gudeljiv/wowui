@@ -167,7 +167,7 @@ local function CraftFunc()
 		)
 	end
 
-	-- Fix for TradeSkillMaster moving the craft create button
+	-- Fix for CraftMaster moving the craft create button
 	hooksecurefunc(
 		CraftCreateButton,
 		'SetFrameLevel',
@@ -222,3 +222,29 @@ end
 -- 		end
 -- 	)
 -- end
+
+local function CraftReagent()
+	for i = 1, 40 do
+		local frame = _G['CraftReagent' .. i .. 'Count']
+		if frame then
+			frame:SetScale(0.6)
+		end
+	end
+end
+
+-- -- Run function when Craft UI has loaded
+if IsAddOnLoaded('Blizzard_CraftUI') then
+	CraftReagent()
+else
+	local waitFrame = CreateFrame('FRAME')
+	waitFrame:RegisterEvent('ADDON_LOADED')
+	waitFrame:SetScript(
+		'OnEvent',
+		function(self, event, arg1)
+			if arg1 == 'Blizzard_CraftUI' then
+				CraftReagent()
+				waitFrame:UnregisterAllEvents()
+			end
+		end
+	)
+end

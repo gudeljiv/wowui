@@ -26,7 +26,7 @@ Select: disabled
 ClassicAuraDurations: disabled
 Leatrix_Plus: enabled
 whoaThickFrames_Classic: disabled
-TradeSkillMaster: disabled
+TradeSkillMaster: enabled
 NeatPlates: disabled
 Plater: disabled
 whoaThickFrames_BCC: enabled
@@ -61,8 +61,8 @@ GatherMate2: enabled
 GatherMate2_Data: enabled
 gmMoney: enabled
 ImprovedMacroFrame: enabled
-ItemRack: disabled
-ItemRackOptions: disabled
+ItemRack: enabled
+ItemRackOptions: enabled
 Leatrix_Maps: enabled
 LFGBulletinBoard: enabled
 Lorti UI Classic: enabled
@@ -113,7 +113,7 @@ FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: disabled
 AuctionFaster: disabled
-aux-addon: enabled
+aux-addon: disabled
 TradeSkillMaster_AppHelper: disabled
 D4KiR Missing Power: disabled
 TrackEverything: enabled
@@ -122,3 +122,5 @@ Kui_Nameplates: enabled
 Kui_Nameplates_Core_Config: enabled
 Kui_Nameplates_Core: enabled
 MissingTradeSkillsList_TBC_Data: enabled
+NovaInstanceTracker: enabled
+PallyPower: enabled

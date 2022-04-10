@@ -39,8 +39,8 @@ Bagnon_VoidStorage: disabled
 !BugGrabber: enabled
 BugSack: enabled
 WeaponSwingTimer: enabled
-ItemRack: disabled
-ItemRackOptions: disabled
+ItemRack: enabled
+ItemRackOptions: enabled
 EavesDrop: disabled
 nTooltip: enabled
 DBM-Core: disabled
@@ -113,13 +113,13 @@ WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
 whoaThickFrames_Classic: disabled
 CharacterStatsClassic: enabled
-TradeSkillMaster: disabled
+TradeSkillMaster: enabled
 nBuff: enabled
 nMainbar: enabled
 nMinimap: enabled
 xVermin: enabled
 Leatrix_Plus: enabled
-aux-addon: enabled
+aux-addon: disabled
 RXPGuides: disabled
 whoaThickFrames_BCC: enabled
 AutoOpen: enabled
@@ -143,3 +143,5 @@ Kui_Nameplates: enabled
 Kui_Nameplates_Core_Config: enabled
 Kui_Nameplates_Core: enabled
 Plater: disabled
+NovaInstanceTracker: enabled
+PallyPower: enabled

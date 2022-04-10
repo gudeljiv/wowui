@@ -18,7 +18,7 @@ Bagnon_VoidStorage: disabled
 BagBrother: disabled
 RXPGuides: disabled
 Leatrix_Plus: enabled
-TradeSkillMaster: disabled
+TradeSkillMaster: enabled
 NeatPlates: disabled
 whoaThickFrames_BCC: enabled
 whoaThickFrames_Classic: disabled
@@ -55,8 +55,8 @@ GatherMate2: enabled
 GatherMate2_Data: enabled
 gmMoney: enabled
 ImprovedMacroFrame: enabled
-ItemRack: disabled
-ItemRackOptions: disabled
+ItemRack: enabled
+ItemRackOptions: enabled
 Leatrix_Maps: enabled
 LFGBulletinBoard: enabled
 Lorti UI Classic: enabled
@@ -109,7 +109,7 @@ TrinketMenu: disabled
 Blizzard_CompactRaidFrames: disabled
 Blizzard_CUFProfiles: disabled
 AuctionFaster: disabled
-aux-addon: enabled
+aux-addon: disabled
 D4KiR Missing Power: disabled
 TrackEverything: enabled
 Kui_Media: enabled
@@ -118,3 +118,5 @@ Kui_Nameplates_Core_Config: enabled
 Kui_Nameplates_Core: enabled
 Plater: disabled
 KiwiPlates: disabled
+NovaInstanceTracker: enabled
+PallyPower: enabled

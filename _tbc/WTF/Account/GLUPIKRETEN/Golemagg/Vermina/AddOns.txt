@@ -26,7 +26,7 @@ Select: disabled
 ClassicAuraDurations: disabled
 Leatrix_Plus: enabled
 whoaThickFrames_Classic: disabled
-TradeSkillMaster: disabled
+TradeSkillMaster: enabled
 NeatPlates: disabled
 Plater: disabled
 whoaThickFrames_BCC: enabled
@@ -113,7 +113,7 @@ FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: enabled
 AuctionFaster: disabled
-aux-addon: enabled
+aux-addon: disabled
 D4KiR Missing Power: disabled
 TrackEverything: enabled
 Kui_Media: enabled
@@ -122,3 +122,5 @@ Kui_Nameplates_Core_Config: enabled
 Kui_Nameplates_Core: enabled
 KiwiPlates: disabled
 MissingTradeSkillsList_TBC_Data: enabled
+NovaInstanceTracker: enabled
+PallyPower: enabled

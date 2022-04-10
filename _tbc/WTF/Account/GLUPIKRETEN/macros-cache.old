@@ -17,12 +17,12 @@ END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/castsequence [combat] reset=combat item:6149
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:8957
+/castsequence [combat] reset=combat item:13446,item:3928
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:27854
@@ -30,5 +30,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /use item:27854
 END
 VER 3 000000000000000B "TEST" "132089"
-/run PallyPowerBlessingsFrameAuraGroup1AuraHeaderIcon:Show()
+/click CraftCreateButton
+/run GetMouseFocus():Click()
+/click StaticPopup1Button1
 END
