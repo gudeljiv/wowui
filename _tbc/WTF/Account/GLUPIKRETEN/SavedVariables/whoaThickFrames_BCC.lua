@@ -1,5 +1,6 @@
 
 cfg = {
+	["doVehicleFrame"] = false,
 	["reactColor"] = true,
 	["fontIndex"] = 1,
 	["cfg"] = true,
@@ -12,10 +13,10 @@ cfg = {
 	["showPartyPets"] = false,
 	["noClickFrame"] = false,
 	["fontFamily"] = "GameFontNormal",
-	["largeAuraSize"] = 27,
+	["classColor"] = true,
 	["playerFrameSelect"] = "UI-TargetingFrame",
 	["whoaTexture"] = true,
-	["classColor"] = true,
+	["largeAuraSize"] = 27,
 	["useBossFrames"] = true,
 	["smallAuraSize"] = 20,
 	["usePartyFrames"] = true,

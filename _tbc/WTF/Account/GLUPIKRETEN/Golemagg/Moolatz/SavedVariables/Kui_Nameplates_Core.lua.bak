@@ -1,2 +1,4 @@
 
-KuiNameplatesCoreCharacterSaved = nil
+KuiNameplatesCoreCharacterSaved = {
+	["profile"] = "default",
+}

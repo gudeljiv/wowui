@@ -7,8 +7,8 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 182,
 					["tipo"] = 2,
+					["combatId"] = 182,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -19,23 +19,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Duskbat"] = 46,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 46.003698,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["aID"] = "4465-01FA5DEE",
 							["dps_started"] = false,
 							["end_time"] = 1643020787,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-01FA5DEE",
+							["damage_taken"] = 2.003698,
+							["total"] = 46.003698,
 							["nome"] = "Battitude",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -54,16 +53,16 @@ _detalhes_database = {
 										["c_max"] = 10,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 10,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -82,16 +81,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -110,29 +109,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 46.003698,
-							["serial"] = "Player-4465-01FA5DEE",
-							["last_dps"] = 15.21286309535991,
-							["custom"] = 0,
+							["last_dps"] = 14.44386122423638,
+							["friendlyfire_total"] = 0,
+							["colocacao"] = 1,
 							["last_event"] = 1643020787,
-							["damage_taken"] = 2.003698,
+							["on_hold"] = false,
 							["start_time"] = 1643020784,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4465-01FA5DEE",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -145,20 +145,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["tipo"] = 1,
+							["total"] = 2.0084,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2.0084,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["fight_component"] = true,
-							["dps_started"] = false,
 							["end_time"] = 1643020787,
-							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 46.0084,
 							["nome"] = "Duskbat",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -177,70 +176,71 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
 							["aID"] = "1512",
-							["total"] = 2.0084,
-							["serial"] = "Creature-0-4447-0-26-1512-00006E56F6",
 							["last_dps"] = 0,
+							["on_hold"] = false,
 							["custom"] = 0,
 							["last_event"] = 1643020786,
-							["damage_taken"] = 46.0084,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1643020786,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4447-0-26-1512-00006E56F6",
+							["dps_started"] = false,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 182,
 					["tipo"] = 3,
+					["combatId"] = 182,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 182,
 					["tipo"] = 7,
+					["combatId"] = 182,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 182,
 					["tipo"] = 9,
+					["combatId"] = 182,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "ROGUE",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[1752] = 1,
 								[2098] = 1,
 							},
-							["tipo"] = 4,
-							["aID"] = "4465-01FA5DEE",
-							["serial"] = "Player-4465-01FA5DEE",
-							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 182,
 					["tipo"] = 2,
+					["combatId"] = 182,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -256,30 +256,32 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 6824,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
-					47.990098, -- [1]
+					47.978564, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
 					46, -- [1]
@@ -288,22 +290,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "11:39:47",
 				["pvp"] = true,
 				["cleu_timeline"] = {
@@ -315,11 +318,33 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "11:39:44",
+				["end_time"] = 719509.962,
+				["combat_id"] = 182,
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["combat_counter"] = 6824,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Rat"] = 1,
+					["Duskbat"] = 1,
+				},
+				["start_time"] = 719506.777,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Battitude"] = 46.003698,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -328,36 +353,12 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Battitude"] = 46.003698,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 719509.962,
-				["combat_id"] = 182,
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["data_inicio"] = "11:39:44",
-				["start_time"] = 719506.777,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Duskbat"] = 1,
-					["Rat"] = 1,
 				},
 			}, -- [1]
 			{
 				{
-					["combatId"] = 181,
 					["tipo"] = 2,
+					["combatId"] = 181,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -368,24 +369,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Duskbat"] = 62,
 							},
-							["total"] = 62.005783,
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 62.005783,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1643020743,
 							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 62.005783,
+							["damage_taken"] = 4.005783,
 							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -404,16 +403,16 @@ _detalhes_database = {
 										["c_max"] = 11,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 11,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -432,16 +431,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -460,28 +459,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01FA5DEE",
 							["last_dps"] = 8.93455086447538,
-							["custom"] = 0,
+							["end_time"] = 1643020743,
+							["colocacao"] = 1,
 							["last_event"] = 1643020742,
-							["damage_taken"] = 4.005783,
+							["on_hold"] = false,
 							["start_time"] = 1643020736,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4465-01FA5DEE",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -494,21 +495,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 4.007133,
+							["tipo"] = 1,
+							["aID"] = "1512",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4.007133,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1643020743,
+							["total"] = 4.007133,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 62.007133,
 							["nome"] = "Duskbat",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -527,69 +526,71 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "1512",
-							["serial"] = "Creature-0-4447-0-26-1512-00006E56EC",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
+							["end_time"] = 1643020743,
 							["custom"] = 0,
 							["last_event"] = 1643020740,
-							["damage_taken"] = 62.007133,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1643020736,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4447-0-26-1512-00006E56EC",
+							["dps_started"] = false,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 181,
 					["tipo"] = 3,
+					["combatId"] = 181,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 181,
 					["tipo"] = 7,
+					["combatId"] = 181,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 181,
 					["tipo"] = 9,
+					["combatId"] = 181,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "ROGUE",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[1752] = 1,
 								[2098] = 1,
 							},
-							["tipo"] = 4,
-							["aID"] = "4465-01FA5DEE",
-							["serial"] = "Player-4465-01FA5DEE",
-							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 181,
 					["tipo"] = 2,
+					["combatId"] = 181,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -605,7 +606,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 6823,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					65.991076, -- [1]
@@ -614,21 +617,21 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
 					62, -- [1]
@@ -637,22 +640,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "11:39:03",
 				["pvp"] = true,
 				["cleu_timeline"] = {
@@ -664,11 +668,32 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "11:38:56",
+				["end_time"] = 719465.5260000001,
+				["combat_id"] = 181,
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["combat_counter"] = 6823,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Duskbat"] = 1,
+				},
+				["start_time"] = 719458.586,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Battitude"] = 62.005783,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -677,35 +702,12 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Battitude"] = 62.005783,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 719465.5260000001,
-				["combat_id"] = 181,
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["data_inicio"] = "11:38:56",
-				["start_time"] = 719458.586,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Duskbat"] = 1,
 				},
 			}, -- [2]
 			{
 				{
-					["combatId"] = 180,
 					["tipo"] = 2,
+					["combatId"] = 180,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -716,24 +718,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Young Scavenger"] = 44,
 							},
-							["total"] = 44.007628,
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 44.007628,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1643020712,
 							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 44.007628,
+							["damage_taken"] = 3.007628,
 							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -752,16 +752,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -780,28 +780,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01FA5DEE",
 							["last_dps"] = 6.679967820290627,
-							["custom"] = 0,
+							["end_time"] = 1643020712,
+							["colocacao"] = 1,
 							["last_event"] = 1643020712,
-							["damage_taken"] = 3.007628,
+							["on_hold"] = false,
 							["start_time"] = 1643020705,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4465-01FA5DEE",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -814,21 +816,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 3.006171,
+							["tipo"] = 1,
+							["aID"] = "1508",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3.006171,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1643020712,
+							["total"] = 3.006171,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 44.006171,
 							["nome"] = "Young Scavenger",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -847,68 +847,70 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "1508",
-							["serial"] = "Creature-0-4447-0-26-1508-00006E581A",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
+							["end_time"] = 1643020712,
 							["custom"] = 0,
 							["last_event"] = 1643020711,
-							["damage_taken"] = 44.006171,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1643020705,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4447-0-26-1508-00006E581A",
+							["dps_started"] = false,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 180,
 					["tipo"] = 3,
+					["combatId"] = 180,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 180,
 					["tipo"] = 7,
+					["combatId"] = 180,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 180,
 					["tipo"] = 9,
+					["combatId"] = 180,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "ROGUE",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[1752] = 1,
 							},
-							["tipo"] = 4,
-							["aID"] = "4465-01FA5DEE",
-							["serial"] = "Player-4465-01FA5DEE",
-							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 180,
 					["tipo"] = 2,
+					["combatId"] = 180,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -924,7 +926,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 6822,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					47, -- [1]
@@ -933,21 +937,21 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
 					44, -- [1]
@@ -956,22 +960,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "11:38:32",
 				["pvp"] = true,
 				["cleu_timeline"] = {
@@ -983,11 +988,32 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "11:38:25",
+				["end_time"] = 719434.848,
+				["combat_id"] = 180,
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["combat_counter"] = 6822,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Young Scavenger"] = 1,
+				},
+				["start_time"] = 719428.186,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Battitude"] = 44.007628,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -996,35 +1022,12 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Battitude"] = 44.007628,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 719434.848,
-				["combat_id"] = 180,
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["data_inicio"] = "11:38:25",
-				["start_time"] = 719428.186,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Young Scavenger"] = 1,
 				},
 			}, -- [3]
 			{
 				{
-					["combatId"] = 179,
 					["tipo"] = 2,
+					["combatId"] = 179,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -1035,24 +1038,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Rattlecage Skeleton"] = 58,
 							},
-							["total"] = 58.007295,
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 58.007295,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1643020704,
 							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 58.007295,
+							["damage_taken"] = 7.007295,
 							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1071,16 +1072,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -1099,16 +1100,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -1127,28 +1128,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01FA5DEE",
 							["last_dps"] = 11.6997367890652,
-							["custom"] = 0,
+							["end_time"] = 1643020704,
+							["colocacao"] = 1,
 							["last_event"] = 1643020702,
-							["damage_taken"] = 7.007295,
+							["on_hold"] = false,
 							["start_time"] = 1643020698,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4465-01FA5DEE",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -1161,21 +1164,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 7.004772,
+							["tipo"] = 1,
+							["aID"] = "1890",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 7.004772,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1643020704,
+							["total"] = 7.004772,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 58.004772,
 							["nome"] = "Rattlecage Skeleton",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1194,68 +1195,70 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "1890",
-							["serial"] = "Creature-0-4447-0-26-1890-00006E7D37",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
+							["end_time"] = 1643020704,
 							["custom"] = 0,
 							["last_event"] = 1643020702,
-							["damage_taken"] = 58.004772,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1643020698,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4447-0-26-1890-00006E7D37",
+							["dps_started"] = false,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 179,
 					["tipo"] = 3,
+					["combatId"] = 179,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 179,
 					["tipo"] = 7,
+					["combatId"] = 179,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 179,
 					["tipo"] = 9,
+					["combatId"] = 179,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "ROGUE",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[1752] = 1,
 								[2098] = 1,
 							},
-							["tipo"] = 4,
-							["aID"] = "4465-01FA5DEE",
-							["serial"] = "Player-4465-01FA5DEE",
-							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 179,
 					["tipo"] = 2,
+					["combatId"] = 179,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1271,7 +1274,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 6821,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					65, -- [1]
@@ -1280,21 +1285,21 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
 					58, -- [1]
@@ -1303,22 +1308,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "11:38:24",
 				["pvp"] = true,
 				["cleu_timeline"] = {
@@ -1330,11 +1336,32 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "11:38:18",
+				["end_time"] = 719426.813,
+				["combat_id"] = 179,
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["combat_counter"] = 6821,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Rattlecage Skeleton"] = 1,
+				},
+				["start_time"] = 719420.483,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Battitude"] = 58.007295,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -1343,35 +1370,12 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Battitude"] = 58.007295,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 719426.813,
-				["combat_id"] = 179,
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["data_inicio"] = "11:38:18",
-				["start_time"] = 719420.483,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Rattlecage Skeleton"] = 1,
 				},
 			}, -- [4]
 			{
 				{
-					["combatId"] = 178,
 					["tipo"] = 2,
+					["combatId"] = 178,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -1382,24 +1386,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Rattlecage Skeleton"] = 55,
 							},
-							["total"] = 55.003485,
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 55.003485,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1643020694,
 							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 55.003485,
+							["damage_taken"] = 6.003485,
 							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1418,16 +1420,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -1446,16 +1448,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -1474,28 +1476,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01FA5DEE",
 							["last_dps"] = 5.238926088222577,
-							["custom"] = 0,
+							["end_time"] = 1643020694,
+							["colocacao"] = 1,
 							["last_event"] = 1643020693,
-							["damage_taken"] = 6.003485,
+							["on_hold"] = false,
 							["start_time"] = 1643020683,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4465-01FA5DEE",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -1508,21 +1512,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 6.004279,
+							["tipo"] = 1,
+							["aID"] = "1890",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 6.004279,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1643020694,
+							["total"] = 6.004279,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 55.004279,
 							["nome"] = "Rattlecage Skeleton",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1541,69 +1543,71 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 2,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 2,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "1890",
-							["serial"] = "Creature-0-4447-0-26-1890-00006E7D22",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
+							["end_time"] = 1643020694,
 							["custom"] = 0,
 							["last_event"] = 1643020692,
-							["damage_taken"] = 55.004279,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1643020688,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4447-0-26-1890-00006E7D22",
+							["dps_started"] = false,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 178,
 					["tipo"] = 3,
+					["combatId"] = 178,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 178,
 					["tipo"] = 7,
+					["combatId"] = 178,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 178,
 					["tipo"] = 9,
+					["combatId"] = 178,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "ROGUE",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[1752] = 1,
 								[2098] = 1,
 							},
-							["tipo"] = 4,
-							["aID"] = "4465-01FA5DEE",
-							["serial"] = "Player-4465-01FA5DEE",
-							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 178,
 					["tipo"] = 2,
+					["combatId"] = 178,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1619,7 +1623,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 6820,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					61, -- [1]
@@ -1628,21 +1634,21 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
 					55, -- [1]
@@ -1651,22 +1657,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "11:38:14",
 				["pvp"] = true,
 				["cleu_timeline"] = {
@@ -1678,11 +1685,32 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "11:38:03",
+				["end_time"] = 719416.676,
+				["combat_id"] = 178,
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["combat_counter"] = 6820,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Rattlecage Skeleton"] = 1,
+				},
+				["start_time"] = 719405.645,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Battitude"] = 55.003485,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -1691,63 +1719,38 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Battitude"] = 55.003485,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 719416.676,
-				["combat_id"] = 178,
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["data_inicio"] = "11:38:03",
-				["start_time"] = 719405.645,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Rattlecage Skeleton"] = 1,
 				},
 			}, -- [5]
 			{
 				{
-					["combatId"] = 177,
 					["tipo"] = 2,
+					["combatId"] = 177,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.007618,
-							["aID"] = "4465-01FA5DEE",
 							["damage_from"] = {
 								["Wretched Zombie"] = true,
 							},
 							["targets"] = {
 								["Wretched Zombie"] = 111,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["colocacao"] = 1,
-							["end_time"] = 1643020656,
-							["classe"] = "ROGUE",
+							["custom"] = 0,
+							["tipo"] = 1,
+							["aID"] = "4465-01FA5DEE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 111.007618,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 111.007618,
 							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1643020656,
+							["damage_taken"] = 33.007618,
 							["on_hold"] = false,
 							["nome"] = "Battitude",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
@@ -1766,16 +1769,16 @@ _detalhes_database = {
 										["c_max"] = 12,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 11,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 8,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -1794,16 +1797,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -1822,28 +1825,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01FA5DEE",
 							["last_dps"] = 4.283197052125331,
-							["custom"] = 0,
+							["total"] = 111.007618,
+							["colocacao"] = 1,
 							["last_event"] = 1643020654,
-							["damage_taken"] = 33.007618,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1643020629,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4465-01FA5DEE",
+							["classe"] = "ROGUE",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -1854,22 +1859,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Battitude"] = 33,
 							},
-							["aID"] = "1502",
 							["pets"] = {
 							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["aID"] = "1502",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 33.007196,
+							["delay"] = 0,
+							["fight_component"] = true,
 							["end_time"] = 1643020656,
-							["dps_started"] = false,
 							["total"] = 33.007196,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 111.007196,
 							["nome"] = "Wretched Zombie",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1888,70 +1893,70 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 4,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 16,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 4,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4447-0-26-1502-00006E7A34",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
+							["dps_started"] = false,
 							["custom"] = 0,
 							["last_event"] = 1643020653,
-							["damage_taken"] = 111.007196,
+							["on_hold"] = false,
 							["start_time"] = 1643020629,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4447-0-26-1502-00006E7A34",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 177,
 					["tipo"] = 3,
+					["combatId"] = 177,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 177,
 					["tipo"] = 7,
+					["combatId"] = 177,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 177,
 					["tipo"] = 9,
+					["combatId"] = 177,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "ROGUE",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[2098] = 2,
 								[1752] = 2,
 							},
-							["tipo"] = 4,
-							["aID"] = "4465-01FA5DEE",
-							["serial"] = "Player-4465-01FA5DEE",
-							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 177,
 					["tipo"] = 2,
+					["combatId"] = 177,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1967,7 +1972,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 6819,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					144, -- [1]
@@ -1976,21 +1983,21 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
 					111, -- [1]
@@ -1999,22 +2006,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "11:37:36",
 				["pvp"] = true,
 				["cleu_timeline"] = {
@@ -2026,11 +2034,32 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "11:37:09",
+				["end_time"] = 719378.775,
+				["combat_id"] = 177,
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["combat_counter"] = 6819,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Wretched Zombie"] = 2,
+				},
+				["start_time"] = 719351.713,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Battitude"] = 111.007618,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -2039,35 +2068,12 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Battitude"] = 111.007618,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 719378.775,
-				["combat_id"] = 177,
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["data_inicio"] = "11:37:09",
-				["start_time"] = 719351.713,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Wretched Zombie"] = 2,
 				},
 			}, -- [6]
 			{
 				{
-					["combatId"] = 176,
 					["tipo"] = 2,
+					["combatId"] = 176,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -2078,24 +2084,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Rattlecage Skeleton"] = 61,
 							},
-							["total"] = 61.005363,
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 61.005363,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1643020624,
 							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 61.005363,
+							["damage_taken"] = 4.005363,
 							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
@@ -2114,16 +2118,16 @@ _detalhes_database = {
 										["c_max"] = 11,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 11,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -2142,16 +2146,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -2170,28 +2174,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01FA5DEE",
 							["last_dps"] = 11.55404602266613,
-							["custom"] = 0,
+							["end_time"] = 1643020624,
+							["colocacao"] = 1,
 							["last_event"] = 1643020623,
-							["damage_taken"] = 4.005363,
+							["on_hold"] = false,
 							["start_time"] = 1643020618,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4465-01FA5DEE",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -2204,21 +2210,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 4.001733,
+							["tipo"] = 1,
+							["aID"] = "1890",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4.001733,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1643020624,
+							["total"] = 4.001733,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 61.001733,
 							["nome"] = "Rattlecage Skeleton",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -2237,69 +2241,71 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "1890",
-							["serial"] = "Creature-0-4447-0-26-1890-00006E7D13",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
+							["end_time"] = 1643020624,
 							["custom"] = 0,
 							["last_event"] = 1643020622,
-							["damage_taken"] = 61.001733,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1643020618,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4447-0-26-1890-00006E7D13",
+							["dps_started"] = false,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 176,
 					["tipo"] = 3,
+					["combatId"] = 176,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 176,
 					["tipo"] = 7,
+					["combatId"] = 176,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 176,
 					["tipo"] = 9,
+					["combatId"] = 176,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "ROGUE",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[1752] = 1,
 								[2098] = 1,
 							},
-							["tipo"] = 4,
-							["aID"] = "4465-01FA5DEE",
-							["serial"] = "Player-4465-01FA5DEE",
-							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 176,
 					["tipo"] = 2,
+					["combatId"] = 176,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -2315,7 +2321,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 6818,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					65, -- [1]
@@ -2324,21 +2332,21 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
 					61, -- [1]
@@ -2347,22 +2355,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "11:37:05",
 				["pvp"] = true,
 				["cleu_timeline"] = {
@@ -2374,11 +2383,32 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "11:36:58",
+				["end_time"] = 719347.269,
+				["combat_id"] = 176,
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["combat_counter"] = 6818,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Rattlecage Skeleton"] = 1,
+				},
+				["start_time"] = 719340.775,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Battitude"] = 61.005363,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -2387,35 +2417,12 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Battitude"] = 61.005363,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 719347.269,
-				["combat_id"] = 176,
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["data_inicio"] = "11:36:58",
-				["start_time"] = 719340.775,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Rattlecage Skeleton"] = 1,
 				},
 			}, -- [7]
 			{
 				{
-					["combatId"] = 175,
 					["tipo"] = 2,
+					["combatId"] = 175,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -2426,24 +2433,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Wretched Zombie"] = 42,
 							},
-							["total"] = 42.007082,
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 42.007082,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1643020592,
 							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 42.007082,
+							["damage_taken"] = 4.007082000000001,
 							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -2462,16 +2467,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 1,
@@ -2490,16 +2495,16 @@ _detalhes_database = {
 										["c_max"] = 17,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 17,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -2518,28 +2523,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01FA5DEE",
 							["last_dps"] = 12.68712836006204,
-							["custom"] = 0,
+							["end_time"] = 1643020592,
+							["colocacao"] = 1,
 							["last_event"] = 1643020592,
-							["damage_taken"] = 4.007082000000001,
+							["on_hold"] = false,
 							["start_time"] = 1643020589,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4465-01FA5DEE",
+							["friendlyfire"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 199208,
@@ -2552,21 +2559,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 4.004637,
+							["tipo"] = 1,
+							["aID"] = "1502",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4.004637,
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
 							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1643020592,
+							["total"] = 4.004637,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 42.004637,
 							["nome"] = "Wretched Zombie",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -2585,67 +2590,69 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "1502",
-							["serial"] = "Creature-0-4447-0-26-1502-00006E7495",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 0,
+							["end_time"] = 1643020592,
 							["custom"] = 0,
 							["last_event"] = 1643020591,
-							["damage_taken"] = 42.004637,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1643020589,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4447-0-26-1502-00006E7495",
+							["dps_started"] = false,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 175,
 					["tipo"] = 3,
+					["combatId"] = 175,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 175,
 					["tipo"] = 7,
+					["combatId"] = 175,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 175,
 					["tipo"] = 9,
+					["combatId"] = 175,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "ROGUE",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[2098] = 1,
 							},
-							["tipo"] = 4,
-							["aID"] = "4465-01FA5DEE",
-							["serial"] = "Player-4465-01FA5DEE",
-							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 175,
 					["tipo"] = 2,
+					["combatId"] = 175,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -2661,7 +2668,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 6817,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					46, -- [1]
@@ -2670,21 +2679,21 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
 					42, -- [1]
@@ -2693,22 +2702,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "11:36:32",
 				["pvp"] = true,
 				["cleu_timeline"] = {
@@ -2720,11 +2730,32 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "11:36:29",
+				["end_time"] = 719314.949,
+				["combat_id"] = 175,
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["combat_counter"] = 6817,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Wretched Zombie"] = 1,
+				},
+				["start_time"] = 719311.638,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Battitude"] = 42.007082,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -2733,29 +2764,6 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Battitude"] = 42.007082,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 719314.949,
-				["combat_id"] = 175,
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["data_inicio"] = "11:36:29",
-				["start_time"] = 719311.638,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Wretched Zombie"] = 1,
 				},
 			}, -- [8]
 			{
@@ -2772,19 +2780,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Rattlecage Skeleton"] = 68,
 							},
+							["serial"] = "Player-4465-01FA5DEE",
 							["pets"] = {
 							},
-							["delay"] = 1643017559,
+							["colocacao"] = 1,
+							["last_dps"] = 0.9529464818741654,
 							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 68.001308,
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
+							["aID"] = "4465-01FA5DEE",
 							["dps_started"] = false,
 							["total"] = 68.001308,
-							["aID"] = "4465-01FA5DEE",
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1643017625,
 							["nome"] = "Battitude",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2805,16 +2815,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 6,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -2833,16 +2843,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -2861,16 +2871,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
@@ -2878,14 +2888,12 @@ _detalhes_database = {
 							["grupo"] = true,
 							["end_time"] = 1643017625,
 							["damage_taken"] = 53.001308,
+							["custom"] = 0,
 							["tipo"] = 1,
-							["colocacao"] = 1,
-							["last_event"] = 1643017625,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1643017619,
-							["serial"] = "Player-4465-01FA5DEE",
-							["last_dps"] = 0.9529464818741654,
+							["delay"] = 1643017559,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -2902,16 +2910,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
 							["aID"] = "1890",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 173.00263,
-							["end_time"] = 1643020589,
-							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-0-26-1890-00006E744C",
 							["dps_started"] = false,
+							["end_time"] = 1643020589,
 							["total"] = 173.00263,
-							["delay"] = 1643019481,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 1042.00263,
 							["nome"] = "Rattlecage Skeleton",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2932,35 +2941,34 @@ _detalhes_database = {
 										["counter"] = 85,
 										["total"] = 173,
 										["c_max"] = 0,
-										["r_amt"] = 0,
+										["MISS"] = 3,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["b_dmg"] = 0,
+										["DODGE"] = 13,
 										["spellschool"] = 1,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["n_amt"] = 69,
-										["DODGE"] = 13,
-										["MISS"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 								},
 								["tipo"] = 2,
 							},
+							["last_event"] = 1643019481,
 							["fight_component"] = true,
-							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
-							["tipo"] = 1,
 							["custom"] = 0,
-							["last_event"] = 1643019481,
-							["damage_taken"] = 1042.00263,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1643019525,
-							["serial"] = "Creature-0-4447-0-26-1890-00006E744C",
-							["last_dps"] = 0,
+							["delay"] = 1643019481,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -2982,19 +2990,19 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["tipo"] = 4,
+							["classe"] = "ROGUE",
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
-							["last_event"] = 0,
-							["aID"] = "4465-01FA5DEE",
-							["classe"] = "ROGUE",
-							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[1752] = 1,
 								[2098] = 1,
 							},
+							["tipo"] = 4,
+							["aID"] = "4465-01FA5DEE",
+							["serial"] = "Player-4465-01FA5DEE",
+							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -3016,9 +3024,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 6805,
 				["playing_solo"] = true,
 				["totals"] = {
 					240.7861129999996, -- [1]
@@ -3027,42 +3033,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					68, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
@@ -3083,10 +3070,7 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Battitude"] = 68.001308,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -3094,26 +3078,50 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Battitude"] = 68.001308,
+						}, -- [1]
 					},
 				},
 				["end_time"] = 716348.958,
 				["combat_id"] = 174,
-				["spells_cast_timeline"] = {
-				},
 				["frags"] = {
 					["Rattlecage Skeleton"] = 1,
 					["Wretched Zombie"] = 1,
 				},
-				["combat_counter"] = 6805,
+				["data_inicio"] = "10:45:55",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					68, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["start_time"] = 716277.599,
 				["TimeData"] = {
 				},
-				["data_inicio"] = "10:45:55",
+				["spells_cast_timeline"] = {
+				},
 			}, -- [9]
 			{
 				{
@@ -3129,20 +3137,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Wretched Zombie"] = 65,
 							},
-							["delay"] = 1643017197,
+							["serial"] = "Player-4465-01FA5DEE",
 							["pets"] = {
 							},
-							["custom"] = 0,
+							["colocacao"] = 1,
+							["aID"] = "4465-01FA5DEE",
 							["classe"] = "ROGUE",
-							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 65.002213,
-							["damage_taken"] = 47.002213,
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["total"] = 65.002213,
-							["on_hold"] = false,
-							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1643017259,
 							["nome"] = "Battitude",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3163,16 +3172,16 @@ _detalhes_database = {
 										["c_max"] = 11,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 11,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 1,
@@ -3191,16 +3200,16 @@ _detalhes_database = {
 										["c_max"] = 18,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 18,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -3219,30 +3228,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 1.030048061990465,
 							["end_time"] = 1643017260,
-							["colocacao"] = 1,
-							["last_event"] = 1643017259,
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 1.030048061990465,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 47.002213,
 							["start_time"] = 1643017256,
-							["serial"] = "Player-4465-01FA5DEE",
-							["aID"] = "4465-01FA5DEE",
+							["delay"] = 1643017197,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 199208,
@@ -3255,17 +3263,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["classe"] = "UNKNOW",
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
-							["damage_taken"] = 65.001671,
-							["aID"] = "1502",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 47.001671,
-							["delay"] = 0,
+							["serial"] = "Creature-0-4447-0-26-1502-00006E724D",
 							["fight_component"] = true,
 							["total"] = 47.001671,
 							["end_time"] = 1643017260,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Wretched Zombie",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3284,34 +3293,33 @@ _detalhes_database = {
 										["counter"] = 31,
 										["total"] = 47,
 										["c_max"] = 0,
-										["r_amt"] = 0,
+										["DODGE"] = 6,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["b_dmg"] = 0,
+										["MISS"] = 3,
 										["spellschool"] = 1,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["n_amt"] = 22,
-										["MISS"] = 3,
-										["DODGE"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["dps_started"] = false,
-							["custom"] = 0,
 							["last_event"] = 1643017257,
-							["friendlyfire"] = {
-							},
+							["dps_started"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 65.001671,
 							["start_time"] = 1643017197,
-							["serial"] = "Creature-0-4447-0-26-1502-00006E724D",
-							["classe"] = "UNKNOW",
+							["delay"] = 0,
+							["aID"] = "1502",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3333,19 +3341,19 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["aID"] = "4465-01FA5DEE",
+							["tipo"] = 4,
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
-							["last_event"] = 0,
-							["classe"] = "ROGUE",
-							["tipo"] = 4,
-							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[1752] = 1,
 								[2098] = 1,
 							},
+							["aID"] = "4465-01FA5DEE",
+							["classe"] = "ROGUE",
+							["serial"] = "Player-4465-01FA5DEE",
+							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -3367,9 +3375,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 6802,
 				["playing_solo"] = true,
 				["totals"] = {
 					111.986058, -- [1]
@@ -3378,42 +3384,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					65, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
@@ -3432,29 +3419,14 @@ _detalhes_database = {
 				["data_inicio"] = "10:39:57",
 				["end_time"] = 715982.8150000001,
 				["combat_id"] = 173,
-				["frags"] = {
-					["Mindless Zombie"] = 1,
-					["Wretched Zombie"] = 1,
-				},
 				["spells_cast_timeline"] = {
-				},
-				["combat_counter"] = 6802,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 715919.709,
-				["TimeData"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Battitude"] = 65.002213,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -3462,8 +3434,44 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Battitude"] = 65.002213,
+						}, -- [1]
 					},
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					65, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 715919.709,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Mindless Zombie"] = 1,
+					["Wretched Zombie"] = 1,
 				},
 			}, -- [10]
 			{
@@ -3480,21 +3488,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Wretched Zombie"] = 55,
 							},
-							["delay"] = 0,
+							["serial"] = "Player-4465-01FA5DEE",
 							["pets"] = {
 							},
-							["custom"] = 0,
+							["colocacao"] = 1,
+							["classe"] = "ROGUE",
 							["aID"] = "4465-01FA5DEE",
-							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 55.002439,
-							["damage_taken"] = 5.002439,
-							["dps_started"] = false,
-							["total"] = 55.002439,
 							["friendlyfire"] = {
 							},
-							["tipo"] = 1,
+							["dps_started"] = false,
+							["total"] = 55.002439,
+							["on_hold"] = false,
+							["last_event"] = 1643017179,
 							["nome"] = "Battitude",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3515,16 +3523,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -3543,16 +3551,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[2098] = {
 										["c_amt"] = 1,
@@ -3571,29 +3579,29 @@ _detalhes_database = {
 										["c_max"] = 20,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 20,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 7.221010765422335,
 							["end_time"] = 1643017179,
-							["colocacao"] = 1,
-							["last_event"] = 1643017179,
-							["on_hold"] = false,
+							["last_dps"] = 7.221010765422335,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 5.002439,
 							["start_time"] = 1643017172,
-							["serial"] = "Player-4465-01FA5DEE",
-							["classe"] = "ROGUE",
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -3606,17 +3614,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 55.004424,
 							["aID"] = "1502",
-							["on_hold"] = false,
-							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 5.004424,
-							["delay"] = 0,
+							["serial"] = "Creature-0-4447-0-26-1502-00006E7229",
 							["dps_started"] = false,
 							["total"] = 5.004424,
 							["fight_component"] = true,
-							["damage_taken"] = 55.004424,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Wretched Zombie",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3637,31 +3646,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["spellschool"] = 1,
-										["MISS"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["end_time"] = 1643017179,
-							["custom"] = 0,
 							["last_event"] = 1643017178,
-							["friendlyfire"] = {
-							},
+							["end_time"] = 1643017179,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1643017172,
-							["serial"] = "Creature-0-4447-0-26-1502-00006E7229",
-							["friendlyfire_total"] = 0,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3683,18 +3691,18 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["aID"] = "4465-01FA5DEE",
+							["tipo"] = 4,
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
-							["last_event"] = 0,
-							["classe"] = "ROGUE",
-							["tipo"] = 4,
-							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[2098] = 1,
 							},
+							["aID"] = "4465-01FA5DEE",
+							["classe"] = "ROGUE",
+							["serial"] = "Player-4465-01FA5DEE",
+							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -3716,9 +3724,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 6801,
 				["playing_solo"] = true,
 				["totals"] = {
 					59.99458, -- [1]
@@ -3727,42 +3733,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					55, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
@@ -3781,28 +3768,14 @@ _detalhes_database = {
 				["data_inicio"] = "10:39:32",
 				["end_time"] = 715902.243,
 				["combat_id"] = 172,
-				["frags"] = {
-					["Wretched Zombie"] = 1,
-				},
 				["spells_cast_timeline"] = {
-				},
-				["combat_counter"] = 6801,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 715894.626,
-				["TimeData"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Battitude"] = 55.002439,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -3810,8 +3783,43 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Battitude"] = 55.002439,
+						}, -- [1]
 					},
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					55, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 715894.626,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Wretched Zombie"] = 1,
 				},
 			}, -- [11]
 			{
@@ -3828,21 +3836,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Rattlecage Skeleton"] = 75,
 							},
-							["serial"] = "Player-4465-01FA5DEE",
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["colocacao"] = 1,
+							["custom"] = 0,
+							["classe"] = "ROGUE",
 							["friendlyfire_total"] = 0,
-							["aID"] = "4465-01FA5DEE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 75.00220999999999,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 75.00220999999999,
 							["friendlyfire"] = {
 							},
-							["last_event"] = 1643017107,
+							["dps_started"] = false,
+							["total"] = 75.00220999999999,
+							["damage_taken"] = 9.00221,
+							["tipo"] = 1,
 							["nome"] = "Battitude",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3863,16 +3871,16 @@ _detalhes_database = {
 										["c_max"] = 11,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 11,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -3891,16 +3899,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -3919,29 +3927,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 7.653286734657511,
 							["end_time"] = 1643017108,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 9.00221,
+							["last_dps"] = 7.653286734657511,
+							["colocacao"] = 1,
+							["last_event"] = 1643017107,
+							["on_hold"] = false,
 							["start_time"] = 1643017098,
-							["delay"] = 0,
-							["classe"] = "ROGUE",
+							["serial"] = "Player-4465-01FA5DEE",
+							["aID"] = "4465-01FA5DEE",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -3954,18 +3962,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["friendlyfire_total"] = 0,
+							["end_time"] = 1643017108,
 							["aID"] = "1890",
-							["dps_started"] = false,
-							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 9.00745,
-							["serial"] = "Creature-0-4447-0-26-1890-00006E7357",
-							["fight_component"] = true,
+							["delay"] = 0,
+							["dps_started"] = false,
 							["total"] = 9.00745,
-							["end_time"] = 1643017108,
-							["friendlyfire"] = {
-							},
+							["fight_component"] = true,
+							["damage_taken"] = 75.00745,
 							["nome"] = "Rattlecage Skeleton",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3984,33 +3991,34 @@ _detalhes_database = {
 										["counter"] = 5,
 										["total"] = 9,
 										["c_max"] = 0,
-										["MISS"] = 1,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
+										["b_dmg"] = 0,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["DODGE"] = 1,
+										["MISS"] = 1,
 									}, -- [1]
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1643017106,
-							["on_hold"] = false,
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 75.00745,
+							["last_dps"] = 0,
+							["on_hold"] = false,
+							["custom"] = 0,
+							["last_event"] = 1643017106,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1643017098,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-4447-0-26-1890-00006E7357",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -4032,19 +4040,19 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["tipo"] = 4,
+							["classe"] = "ROGUE",
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["aID"] = "4465-01FA5DEE",
+							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[1752] = 1,
 								[2098] = 1,
 							},
-							["aID"] = "4465-01FA5DEE",
-							["classe"] = "ROGUE",
-							["serial"] = "Player-4465-01FA5DEE",
-							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -4066,7 +4074,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 6799,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					83.986406, -- [1]
@@ -4075,23 +4085,42 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					75, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
@@ -4107,17 +4136,15 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "10:38:18",
-				["end_time"] = 715830.685,
-				["combat_id"] = 171,
-				["spells_cast_timeline"] = {
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Battitude"] = 75.00220999999999,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -4125,44 +4152,25 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Battitude"] = 75.00220999999999,
-						}, -- [1]
+					["damage_section"] = {
 					},
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					75, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 715820.885,
-				["TimeData"] = {
+				["end_time"] = 715830.685,
+				["combat_id"] = 171,
+				["spells_cast_timeline"] = {
 				},
 				["frags"] = {
 					["Rattlecage Skeleton"] = 1,
 				},
+				["combat_counter"] = 6799,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 715820.885,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "10:38:18",
 			}, -- [12]
 			{
 				{
@@ -4178,21 +4186,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Rattlecage Skeleton"] = 69,
 							},
-							["serial"] = "Player-4465-01FA5DEE",
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["colocacao"] = 1,
+							["custom"] = 0,
+							["end_time"] = 1643016865,
 							["classe"] = "ROGUE",
-							["aID"] = "4465-01FA5DEE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 69.008116,
-							["damage_taken"] = 8.008116,
-							["dps_started"] = false,
-							["total"] = 69.008116,
 							["friendlyfire"] = {
 							},
-							["last_event"] = 1643016864,
+							["dps_started"] = false,
+							["total"] = 69.008116,
+							["last_dps"] = 6.184631295965756,
+							["tipo"] = 1,
 							["nome"] = "Battitude",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -4213,16 +4221,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -4241,16 +4249,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -4269,29 +4277,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 6.184631295965756,
+							["on_hold"] = false,
+							["colocacao"] = 1,
+							["last_event"] = 1643016864,
+							["damage_taken"] = 8.008116,
 							["start_time"] = 1643016854,
-							["delay"] = 0,
-							["end_time"] = 1643016865,
+							["serial"] = "Player-4465-01FA5DEE",
+							["aID"] = "4465-01FA5DEE",
 						}, -- [1]
 						{
 							["flag_original"] = 199208,
@@ -4304,18 +4312,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["aID"] = "1890",
+							["total"] = 8.004959,
 							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 8.004959,
-							["serial"] = "Creature-0-4447-0-26-1890-00006E719C",
-							["dps_started"] = false,
+							["delay"] = 0,
+							["fight_component"] = true,
 							["end_time"] = 1643016865,
-							["total"] = 8.004959,
-							["friendlyfire"] = {
-							},
+							["dps_started"] = false,
+							["damage_taken"] = 69.004959,
 							["nome"] = "Rattlecage Skeleton",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -4336,30 +4343,31 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									}, -- [1]
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1643016862,
-							["on_hold"] = false,
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 69.004959,
+							["last_dps"] = 0,
+							["on_hold"] = false,
+							["custom"] = 0,
+							["last_event"] = 1643016862,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1643016854,
-							["delay"] = 0,
-							["aID"] = "1890",
+							["serial"] = "Creature-0-4447-0-26-1890-00006E719C",
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -4381,19 +4389,19 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["aID"] = "4465-01FA5DEE",
+							["tipo"] = 4,
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["aID"] = "4465-01FA5DEE",
+							["classe"] = "ROGUE",
+							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[1752] = 1,
 								[2098] = 1,
 							},
-							["classe"] = "ROGUE",
-							["tipo"] = 4,
-							["serial"] = "Player-4465-01FA5DEE",
-							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -4415,7 +4423,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 6796,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					76.980242, -- [1]
@@ -4424,23 +4434,42 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					69, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
@@ -4456,12 +4485,32 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "10:34:14",
+				["end_time"] = 715588.125,
+				["combat_id"] = 170,
+				["frags"] = {
+					["Rattlecage Skeleton"] = 1,
+					["Rat"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 6796,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 715576.9670000001,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Battitude"] = 69.008116,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -4469,49 +4518,8 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Battitude"] = 69.008116,
-						}, -- [1]
+					["damage_section"] = {
 					},
-				},
-				["end_time"] = 715588.125,
-				["combat_id"] = 170,
-				["frags"] = {
-					["Rattlecage Skeleton"] = 1,
-					["Rat"] = 1,
-				},
-				["data_inicio"] = "10:34:14",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					69, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 715576.9670000001,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
 				},
 			}, -- [13]
 			{
@@ -4528,21 +4536,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Wretched Zombie"] = 45,
 							},
-							["delay"] = 0,
+							["serial"] = "Player-4465-01FA5DEE",
 							["pets"] = {
 							},
-							["custom"] = 0,
+							["colocacao"] = 1,
+							["classe"] = "ROGUE",
 							["friendlyfire_total"] = 0,
-							["aID"] = "4465-01FA5DEE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 45.006954,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 45.006954,
 							["friendlyfire"] = {
 							},
-							["tipo"] = 1,
+							["dps_started"] = false,
+							["total"] = 45.006954,
+							["damage_taken"] = 4.006954,
+							["last_event"] = 1643016596,
 							["nome"] = "Battitude",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -4563,16 +4571,16 @@ _detalhes_database = {
 										["c_max"] = 12,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 12,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -4591,16 +4599,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -4619,29 +4627,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["end_time"] = 1643016598,
 							["last_dps"] = 7.002793527279277,
-							["colocacao"] = 1,
-							["last_event"] = 1643016596,
-							["damage_taken"] = 4.006954,
+							["end_time"] = 1643016598,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1643016592,
-							["serial"] = "Player-4465-01FA5DEE",
-							["classe"] = "ROGUE",
+							["delay"] = 0,
+							["aID"] = "4465-01FA5DEE",
 						}, -- [1]
 						{
 							["flag_original"] = 199208,
@@ -4654,17 +4662,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
 							["aID"] = "1502",
-							["total"] = 4.001842,
-							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4.001842,
-							["delay"] = 0,
+							["serial"] = "Creature-0-4447-0-26-1502-00006E7068",
 							["fight_component"] = true,
+							["total"] = 4.001842,
 							["end_time"] = 1643016598,
-							["dps_started"] = false,
-							["damage_taken"] = 45.001842,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Wretched Zombie",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -4684,34 +4693,33 @@ _detalhes_database = {
 										["counter"] = 7,
 										["total"] = 4,
 										["c_max"] = 0,
-										["r_amt"] = 0,
+										["MISS"] = 3,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["b_dmg"] = 0,
+										["DODGE"] = 2,
 										["spellschool"] = 1,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["DODGE"] = 2,
-										["MISS"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["on_hold"] = false,
-							["custom"] = 0,
 							["last_event"] = 1643016837,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 45.001842,
 							["start_time"] = 1643016592,
-							["serial"] = "Creature-0-4447-0-26-1502-00006E7068",
-							["friendlyfire_total"] = 0,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -4733,18 +4741,18 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["tipo"] = 4,
+							["classe"] = "ROGUE",
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
-							["last_event"] = 0,
-							["aID"] = "4465-01FA5DEE",
-							["classe"] = "ROGUE",
-							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[2098] = 1,
 							},
+							["tipo"] = 4,
+							["aID"] = "4465-01FA5DEE",
+							["serial"] = "Player-4465-01FA5DEE",
+							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -4766,9 +4774,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 6794,
 				["playing_solo"] = true,
 				["totals"] = {
 					48.986766, -- [1]
@@ -4777,42 +4783,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					45, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
@@ -4831,28 +4818,14 @@ _detalhes_database = {
 				["data_inicio"] = "10:29:52",
 				["end_time"] = 715321.2660000001,
 				["combat_id"] = 169,
-				["frags"] = {
-					["Wretched Zombie"] = 1,
-				},
 				["spells_cast_timeline"] = {
-				},
-				["combat_counter"] = 6794,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 715314.839,
-				["TimeData"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Battitude"] = 45.006954,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -4860,8 +4833,43 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Battitude"] = 45.006954,
+						}, -- [1]
 					},
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					45, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 715314.839,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Wretched Zombie"] = 1,
 				},
 			}, -- [14]
 			{
@@ -4878,21 +4886,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Wretched Zombie"] = 50,
 							},
-							["serial"] = "Player-4465-01FA5DEE",
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["colocacao"] = 1,
+							["custom"] = 0,
+							["aID"] = "4465-01FA5DEE",
 							["classe"] = "ROGUE",
-							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 50.001162,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 4.001162,
 							["dps_started"] = false,
 							["total"] = 50.001162,
-							["damage_taken"] = 4.001162,
-							["last_event"] = 1643016560,
+							["on_hold"] = false,
+							["tipo"] = 1,
 							["nome"] = "Battitude",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -4913,16 +4920,16 @@ _detalhes_database = {
 										["c_max"] = 10,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 10,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -4941,16 +4948,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -4969,29 +4976,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 6.326858408159902,
 							["end_time"] = 1643016562,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
+							["last_dps"] = 6.326858408159902,
+							["colocacao"] = 1,
+							["last_event"] = 1643016560,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1643016554,
-							["delay"] = 0,
-							["aID"] = "4465-01FA5DEE",
+							["serial"] = "Player-4465-01FA5DEE",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -5004,18 +5012,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["classe"] = "UNKNOW",
+							["end_time"] = 1643016562,
 							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["aID"] = "1502",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4.003747,
-							["serial"] = "Creature-0-4447-0-26-1502-00006E6D94",
-							["fight_component"] = true,
+							["delay"] = 0,
+							["dps_started"] = false,
 							["total"] = 4.003747,
-							["end_time"] = 1643016562,
-							["friendlyfire"] = {
-							},
+							["fight_component"] = true,
+							["damage_taken"] = 50.003747,
 							["nome"] = "Wretched Zombie",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5036,30 +5043,31 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									}, -- [1]
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1643016560,
-							["on_hold"] = false,
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 50.003747,
+							["last_dps"] = 0,
+							["on_hold"] = false,
+							["custom"] = 0,
+							["last_event"] = 1643016560,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1643016554,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-0-26-1502-00006E6D94",
+							["aID"] = "1502",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -5081,18 +5089,18 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["classe"] = "ROGUE",
+							["aID"] = "4465-01FA5DEE",
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "ROGUE",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[2098] = 1,
 							},
-							["tipo"] = 4,
-							["aID"] = "4465-01FA5DEE",
-							["serial"] = "Player-4465-01FA5DEE",
-							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -5114,7 +5122,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 6792,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					54, -- [1]
@@ -5123,23 +5133,42 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					50, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
@@ -5155,17 +5184,15 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "10:29:15",
-				["end_time"] = 715285.707,
-				["combat_id"] = 168,
-				["spells_cast_timeline"] = {
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Battitude"] = 50.001162,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -5173,44 +5200,25 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Battitude"] = 50.001162,
-						}, -- [1]
+					["damage_section"] = {
 					},
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					50, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 715277.804,
-				["TimeData"] = {
+				["end_time"] = 715285.707,
+				["combat_id"] = 168,
+				["spells_cast_timeline"] = {
 				},
 				["frags"] = {
 					["Wretched Zombie"] = 1,
 				},
+				["combat_counter"] = 6792,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 715277.804,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "10:29:15",
 			}, -- [15]
 			{
 				{
@@ -5226,20 +5234,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Rattlecage Skeleton"] = 81,
 							},
-							["delay"] = 1643016389,
+							["serial"] = "Player-4465-01FA5DEE",
 							["pets"] = {
 							},
-							["custom"] = 0,
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
 							["aID"] = "4465-01FA5DEE",
-							["classe"] = "ROGUE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 81.008103,
-							["damage_taken"] = 37.008103,
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["total"] = 81.008103,
-							["on_hold"] = false,
-							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1643016422,
 							["nome"] = "Battitude",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5260,16 +5269,16 @@ _detalhes_database = {
 										["c_max"] = 11,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 11,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -5288,16 +5297,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -5316,30 +5325,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["end_time"] = 1643016422,
 							["last_dps"] = 2.405014488015144,
-							["colocacao"] = 1,
-							["last_event"] = 1643016422,
-							["friendlyfire"] = {
-							},
+							["end_time"] = 1643016422,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 37.008103,
 							["start_time"] = 1643016416,
-							["serial"] = "Player-4465-01FA5DEE",
-							["friendlyfire_total"] = 0,
+							["delay"] = 1643016389,
+							["classe"] = "ROGUE",
 						}, -- [1]
 						{
 							["flag_original"] = 199208,
@@ -5352,17 +5360,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["aID"] = "1890",
+							["fight_component"] = true,
 							["classe"] = "UNKNOW",
-							["end_time"] = 1643016422,
-							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 37.007616,
-							["delay"] = 0,
+							["serial"] = "Creature-0-4447-0-26-1890-00006E708D",
 							["dps_started"] = false,
+							["end_time"] = 1643016422,
 							["total"] = 37.007616,
-							["fight_component"] = true,
-							["damage_taken"] = 81.007616,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Rattlecage Skeleton",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5383,31 +5392,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["DODGE"] = 4,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 13,
-										["spellschool"] = 1,
-										["DODGE"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["on_hold"] = false,
-							["custom"] = 0,
 							["last_event"] = 1643016421,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 81.007616,
 							["start_time"] = 1643016391,
-							["serial"] = "Creature-0-4447-0-26-1890-00006E708D",
-							["aID"] = "1890",
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -5429,19 +5437,19 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["aID"] = "4465-01FA5DEE",
+							["tipo"] = 4,
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
-							["last_event"] = 0,
-							["classe"] = "ROGUE",
-							["tipo"] = 4,
-							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[1752] = 2,
 								[2098] = 1,
 							},
+							["aID"] = "4465-01FA5DEE",
+							["classe"] = "ROGUE",
+							["serial"] = "Player-4465-01FA5DEE",
+							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -5463,9 +5471,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 6790,
 				["playing_solo"] = true,
 				["totals"] = {
 					117.982226, -- [1]
@@ -5474,42 +5480,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					81, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
@@ -5530,10 +5517,7 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Battitude"] = 81.008103,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -5541,27 +5525,51 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Battitude"] = 81.008103,
+						}, -- [1]
 					},
 				},
 				["end_time"] = 715145.491,
 				["combat_id"] = 167,
-				["spells_cast_timeline"] = {
-				},
 				["frags"] = {
 					["Wretched Zombie"] = 1,
 					["Rattlecage Skeleton"] = 1,
 					["Rat"] = 1,
 				},
-				["combat_counter"] = 6790,
+				["data_inicio"] = "10:26:29",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					81, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["start_time"] = 715111.808,
 				["TimeData"] = {
 				},
-				["data_inicio"] = "10:26:29",
+				["spells_cast_timeline"] = {
+				},
 			}, -- [16]
 			{
 				{
@@ -5577,21 +5585,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Rattlecage Skeleton"] = 74,
 							},
-							["serial"] = "Player-4465-01FA5DEE",
+							["delay"] = 1643016121,
 							["pets"] = {
 							},
-							["colocacao"] = 1,
+							["custom"] = 0,
+							["classe"] = "ROGUE",
 							["friendlyfire_total"] = 0,
-							["aID"] = "4465-01FA5DEE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 74.00326,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 74.00326,
 							["friendlyfire"] = {
 							},
-							["last_event"] = 1643016146,
+							["dps_started"] = false,
+							["total"] = 74.00326,
+							["damage_taken"] = 31.00326,
+							["tipo"] = 1,
 							["nome"] = "Battitude",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5612,17 +5620,17 @@ _detalhes_database = {
 										["c_max"] = 10,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 2,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 8,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 6,
-										["b_dmg"] = 2,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -5641,16 +5649,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -5669,29 +5677,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 2.564393235843818,
 							["end_time"] = 1643016147,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 31.00326,
+							["last_dps"] = 2.564393235843818,
+							["colocacao"] = 1,
+							["last_event"] = 1643016146,
+							["on_hold"] = false,
 							["start_time"] = 1643016135,
-							["delay"] = 1643016121,
-							["classe"] = "ROGUE",
+							["serial"] = "Player-4465-01FA5DEE",
+							["aID"] = "4465-01FA5DEE",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -5704,18 +5712,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["friendlyfire_total"] = 0,
+							["total"] = 31.008573,
 							["aID"] = "1890",
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 31.008573,
-							["serial"] = "Creature-0-4447-0-26-1890-00006E6ED7",
-							["dps_started"] = false,
+							["delay"] = 0,
+							["fight_component"] = true,
 							["end_time"] = 1643016147,
-							["total"] = 31.008573,
-							["friendlyfire"] = {
-							},
+							["dps_started"] = false,
+							["damage_taken"] = 74.008573,
 							["nome"] = "Rattlecage Skeleton",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5736,30 +5743,31 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 4,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 11,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 4,
 									}, -- [1]
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1643016146,
-							["on_hold"] = false,
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 74.008573,
+							["last_dps"] = 0,
+							["on_hold"] = false,
+							["custom"] = 0,
+							["last_event"] = 1643016146,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1643016118,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-4447-0-26-1890-00006E6ED7",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -5781,19 +5789,19 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["tipo"] = 4,
+							["classe"] = "ROGUE",
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["aID"] = "4465-01FA5DEE",
+							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[2098] = 2,
 								[1752] = 1,
 							},
-							["aID"] = "4465-01FA5DEE",
-							["classe"] = "ROGUE",
-							["serial"] = "Player-4465-01FA5DEE",
-							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -5815,7 +5823,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 6788,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					104.986973, -- [1]
@@ -5824,23 +5834,42 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					74, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
@@ -5856,12 +5885,31 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "10:21:59",
+				["end_time"] = 714870.848,
+				["combat_id"] = 166,
+				["frags"] = {
+					["Rattlecage Skeleton"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 6788,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 714841.99,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Battitude"] = 74.00326,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -5869,48 +5917,8 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Battitude"] = 74.00326,
-						}, -- [1]
+					["damage_section"] = {
 					},
-				},
-				["end_time"] = 714870.848,
-				["combat_id"] = 166,
-				["frags"] = {
-					["Rattlecage Skeleton"] = 1,
-				},
-				["data_inicio"] = "10:21:59",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					74, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 714841.99,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
 				},
 			}, -- [17]
 			{
@@ -5927,21 +5935,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Wretched Zombie"] = 55,
 							},
-							["serial"] = "Player-4465-01FA5DEE",
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["colocacao"] = 1,
+							["custom"] = 0,
+							["friendlyfire_total"] = 0,
 							["classe"] = "ROGUE",
-							["aID"] = "4465-01FA5DEE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 55.004892,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["total"] = 55.004892,
-							["on_hold"] = false,
-							["last_event"] = 1643016114,
+							["damage_taken"] = 6.004892,
+							["tipo"] = 1,
 							["nome"] = "Battitude",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5962,16 +5969,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[1752] = {
 										["c_amt"] = 0,
@@ -5990,16 +5997,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1752,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 									[2098] = {
 										["c_amt"] = 0,
@@ -6018,29 +6025,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 2098,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["end_time"] = 1643016114,
 							["last_dps"] = 8.387449222373906,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 6.004892,
+							["end_time"] = 1643016114,
+							["colocacao"] = 1,
+							["last_event"] = 1643016114,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1643016108,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Player-4465-01FA5DEE",
+							["aID"] = "4465-01FA5DEE",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -6053,18 +6061,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["classe"] = "UNKNOW",
+							["friendlyfire"] = {
+							},
 							["friendlyfire_total"] = 0,
-							["damage_taken"] = 55.002855,
-							["aID"] = "1502",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 6.002855,
-							["serial"] = "Creature-0-4447-0-26-1502-00006E6EC2",
+							["delay"] = 0,
 							["dps_started"] = false,
 							["total"] = 6.002855,
 							["fight_component"] = true,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["nome"] = "Wretched Zombie",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -6085,30 +6093,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									}, -- [1]
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1643016114,
-							["end_time"] = 1643016114,
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["on_hold"] = false,
+							["last_dps"] = 0,
+							["end_time"] = 1643016114,
+							["custom"] = 0,
+							["last_event"] = 1643016114,
+							["damage_taken"] = 55.002855,
 							["start_time"] = 1643016108,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-0-26-1502-00006E6EC2",
+							["aID"] = "1502",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -6130,19 +6138,19 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 132369,
-							["tipo"] = 4,
+							["classe"] = "ROGUE",
 							["nome"] = "Battitude",
 							["grupo"] = true,
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["aID"] = "4465-01FA5DEE",
+							["serial"] = "Player-4465-01FA5DEE",
 							["spell_cast"] = {
 								[1752] = 1,
 								[2098] = 1,
 							},
-							["aID"] = "4465-01FA5DEE",
-							["classe"] = "ROGUE",
-							["serial"] = "Player-4465-01FA5DEE",
-							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -6164,7 +6172,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 6787,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					61, -- [1]
@@ -6173,23 +6183,42 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					55, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
@@ -6205,12 +6234,31 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "10:21:49",
+				["end_time"] = 714837.958,
+				["combat_id"] = 165,
+				["frags"] = {
+					["Wretched Zombie"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 6787,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 714831.4,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Battitude"] = 55.004892,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -6218,48 +6266,8 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Battitude"] = 55.004892,
-						}, -- [1]
+					["damage_section"] = {
 					},
-				},
-				["end_time"] = 714837.958,
-				["combat_id"] = 165,
-				["frags"] = {
-					["Wretched Zombie"] = 1,
-				},
-				["data_inicio"] = "10:21:49",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					55, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 714831.4,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
 				},
 			}, -- [18]
 		},
@@ -6421,9 +6429,9 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["enabled"] = true,
 			["animate"] = true,
-			["useclasscolors"] = false,
+			["showamount"] = false,
 			["hide_pull_bar"] = false,
-			["author"] = "Details! Team",
+			["useclasscolors"] = false,
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -6438,16 +6446,16 @@ _detalhes_database = {
 			["playSound"] = false,
 			["usefocus"] = false,
 			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["showamount"] = false,
+			["author"] = "Details! Team",
+		},
+		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
+			["enabled"] = true,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
 			["SpellBarsShowType"] = 1,
-		},
-		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
-			["enabled"] = true,
-			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
@@ -6456,20 +6464,10 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
 			["opened"] = 0,
-			["max_emote_segments"] = 3,
+			["author"] = "Details! Team",
 			["show_icon"] = 5,
 			["hide_on_combat"] = false,
-			["author"] = "Details! Team",
-		},
-		["DETAILS_PLUGIN_YANP"] = {
-			["enabled"] = true,
-			["rightclick_closed"] = false,
-			["auto_open"] = true,
-			["hide_on_combat"] = true,
-			["author"] = "Details! Team",
-			["deaths_table"] = {
-			},
-			["shown_time"] = 30,
+			["max_emote_segments"] = 3,
 		},
 		["DETAILS_PLUGIN_TIME_ATTACK"] = {
 			["enabled"] = true,
@@ -6482,10 +6480,20 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["realm_lastamt"] = 0,
+			["author"] = "Details! Team",
 			["realm_history"] = {
 			},
+			["realm_lastamt"] = 0,
+		},
+		["DETAILS_PLUGIN_YANP"] = {
+			["enabled"] = true,
+			["rightclick_closed"] = false,
+			["auto_open"] = true,
 			["author"] = "Details! Team",
+			["hide_on_combat"] = true,
+			["deaths_table"] = {
+			},
+			["shown_time"] = 30,
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -6512,17 +6520,12 @@ _detalhes_database = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Glamour2",
-			["scale"] = 1,
-			["row_height"] = 18,
-			["point"] = "RIGHT",
+			["arrow_anchor_y"] = 0,
+			["main_frame_locked"] = true,
+			["author"] = "Details! Team",
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["use_spark"] = false,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -6530,8 +6533,14 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["y"] = -183.107162475586,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -6539,21 +6548,25 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -6.103515625e-05,
 				["x"] = 0.00311279296875,
-				["size"] = 32,
-				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
 			},
-			["font_size"] = 10,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
-			["y"] = -183.107162475586,
-			["use_spark"] = false,
-			["author"] = "Details! Team",
-			["main_frame_locked"] = true,
-			["arrow_anchor_y"] = 0,
+			["font_size"] = 10,
+			["main_frame_strata"] = "LOW",
+			["point"] = "RIGHT",
+			["row_height"] = 18,
+			["scale"] = 1,
 		},
 	},
+	["combat_counter"] = 6825,
 	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["announce_damagerecord"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
@@ -6562,13 +6575,9 @@ _detalhes_database = {
 		["reverse"] = false,
 		["channel"] = "SELF",
 	},
-	["cached_roles"] = {
+	["cached_talents"] = {
 	},
-	["combat_counter"] = 6824,
-	["last_realversion"] = 145,
-	["character_data"] = {
-		["logons"] = 1792,
-	},
+	["ignore_nicktag"] = true,
 	["combat_id"] = 182,
 	["savedStyles"] = {
 		{
@@ -6594,12 +6603,12 @@ _detalhes_database = {
 			["hide_out_of_combat"] = false,
 			["name"] = "final",
 			["following"] = {
+				["enabled"] = false,
 				["bar_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 				},
-				["enabled"] = false,
 				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -6614,39 +6623,86 @@ _detalhes_database = {
 			},
 			["switch_healer"] = false,
 			["bars_sort_direction"] = 1,
-			["switch_healer_in_combat"] = false,
 			["skin"] = "Minimalistic",
 			["backdrop_texture"] = "None",
+			["menu_icons_size"] = 1,
 			["menu2_icons_size"] = 1.20000004768372,
 			["tooltip"] = {
 				["n_abilities"] = 3,
 				["n_enemies"] = 3,
 			},
 			["stretch_button_side"] = 2,
-			["menu_icons_size"] = 1,
+			["switch_healer_in_combat"] = false,
 			["switch_all_roles_in_combat"] = {
 				2, -- [1]
 				1, -- [2]
 				8, -- [3]
 			},
-			["switch_tank_in_combat"] = false,
-			["bg_alpha"] = 0.0199999995529652,
-			["attribute_text"] = {
-				["enabled"] = false,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_size"] = 11,
-				["anchor"] = {
-					-17, -- [1]
-					10, -- [2]
+			["instance_button_anchor"] = {
+				-27, -- [1]
+				1, -- [2]
+			},
+			["version"] = 3,
+			["row_info"] = {
+				["textR_outline"] = false,
+				["textL_outline"] = false,
+				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes_small_alpha",
+				["texture_background_file"] = "Interface\\TargetingFrame\\UI-StatusBar",
+				["fixed_texture_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
 				},
-				["text_color"] = {
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["textR_enable_custom_text"] = true,
+				["texture_background_class_color"] = true,
+				["textL_enable_custom_text"] = true,
+				["textL_show_number"] = false,
+				["space"] = {
+					["right"] = 0,
+					["left"] = 0,
+					["between"] = 0,
+				},
+				["fixed_texture_background_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0.680000007152557, -- [4]
+				},
+				["textR_custom_text"] = "{data1} ({data2}) ",
+				["start_after_icon"] = false,
+				["font_face_file"] = "Fonts\\ARIALN.TTF",
+				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
 				},
-				["text_face"] = "Arial Narrow",
+				["backdrop"] = {
+					["enabled"] = false,
+					["size"] = 12,
+					["color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["texture"] = "Details BarBorder 2",
+				},
+				["textL_class_colors"] = false,
+				["textL_custom_text"] = "{data3}{data2}",
+				["textR_class_colors"] = false,
+				["alpha"] = 0,
+				["no_icon"] = false,
+				["font_size"] = 11,
+				["texture_background"] = "Blizzard",
+				["font_face"] = "Arial Narrow",
+				["texture_class_colors"] = true,
+				["height"] = 20,
+				["texture_file"] = "Interface\\AddOns\\Details\\images\\BantoBar",
+				["texture"] = "BantoBar",
+				["percent_type"] = 1,
 			},
 			["closebutton_config"] = {
 				["pushed_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Down",
@@ -6670,26 +6726,30 @@ _detalhes_database = {
 				["onleave"] = 1,
 			},
 			["show_statusbar"] = false,
-			["switch_damager"] = false,
-			["auto_hide_menu"] = {
-				["left"] = true,
-				["right"] = true,
+			["menu2_anchor_down"] = {
+				32, -- [1]
+				0, -- [2]
 			},
-			["strata"] = "LOW",
-			["bars_grow_direction"] = 1,
-			["resetbutton_config"] = {
-				["normal_vertexcolor"] = {
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
-					1, -- [4]
 				},
-				["highlight_texcoord"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					1, -- [4]
+			},
+			["strata"] = "LOW",
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
 				},
+			},
+			["resetbutton_config"] = {
+				["anchor"] = {
+					2, -- [1]
+					0, -- [2]
+				},
+				["normal_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
 				["highlight_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
 				["normal_texcoord"] = {
 					0, -- [1]
@@ -6703,10 +6763,17 @@ _detalhes_database = {
 					1, -- [3]
 					1, -- [4]
 				},
-				["normal_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
-				["anchor"] = {
-					2, -- [1]
-					0, -- [2]
+				["highlight_texcoord"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["normal_vertexcolor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
 				},
 				["size"] = {
 					13, -- [1]
@@ -6715,31 +6782,21 @@ _detalhes_database = {
 			},
 			["switch_tank"] = false,
 			["hide_in_combat_alpha"] = 0,
-			["switch_all_roles_after_wipe"] = false,
+			["plugins_grow_direction"] = 1,
 			["menu_icons"] = {
 				true, -- [1]
 				true, -- [2]
 				true, -- [3]
 				true, -- [4]
 			},
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
+			["desaturated_menu"] = false,
+			["show_sidebars"] = false,
+			["window_scale"] = 1,
 			["menu_anchor_down"] = {
 				-22, -- [1]
 				0, -- [2]
 			},
-			["window_scale"] = 1,
-			["switch_damager_in_combat"] = false,
+			["grab_on_top"] = false,
 			["instancebutton_config"] = {
 				["textcolor"] = {
 					0.8, -- [1]
@@ -6760,8 +6817,8 @@ _detalhes_database = {
 				["textfont"] = "Friz Quadrata TT",
 				["textshadow"] = false,
 			},
+			["switch_damager_in_combat"] = false,
 			["hide_icon"] = true,
-			["grab_on_top"] = false,
 			["menu2_anchor"] = {
 				32, -- [1]
 				3, -- [2]
@@ -6770,29 +6827,28 @@ _detalhes_database = {
 			["auto_current"] = true,
 			["toolbar_side"] = 2,
 			["bg_g"] = 0,
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
-			},
+			["bars_grow_direction"] = 1,
 			["hide_in_combat"] = false,
-			["show_sidebars"] = false,
-			["desaturated_menu"] = false,
-			["plugins_grow_direction"] = 1,
+			["auto_hide_menu"] = {
+				["left"] = true,
+				["right"] = true,
+			},
+			["switch_damager"] = false,
+			["switch_all_roles_after_wipe"] = false,
 			["wallpaper"] = {
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
+				["enabled"] = false,
 				["texcoord"] = {
 					0, -- [1]
 					1, -- [2]
 					0, -- [3]
 					1, -- [4]
 				},
-				["enabled"] = false,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 				["anchor"] = "all",
 				["height"] = 0,
 				["alpha"] = 0.5,
@@ -6808,76 +6864,39 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["version"] = 3,
-			["instance_button_anchor"] = {
-				-27, -- [1]
-				1, -- [2]
-			},
-			["row_info"] = {
-				["textR_outline"] = false,
-				["textL_outline"] = false,
-				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes_small_alpha",
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["textL_enable_custom_text"] = true,
-				["texture_background_file"] = "Interface\\TargetingFrame\\UI-StatusBar",
-				["textR_enable_custom_text"] = true,
-				["texture_background_class_color"] = true,
-				["fixed_texture_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
+			["bg_alpha"] = 0.0199999995529652,
+			["switch_tank_in_combat"] = false,
+			["attribute_text"] = {
+				["enabled"] = false,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_size"] = 11,
+				["anchor"] = {
+					-17, -- [1]
+					10, -- [2]
 				},
-				["textL_show_number"] = false,
-				["space"] = {
-					["right"] = 0,
-					["left"] = 0,
-					["between"] = 0,
-				},
-				["fixed_texture_background_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0.680000007152557, -- [4]
-				},
-				["textR_custom_text"] = "{data1} ({data2}) ",
-				["texture"] = "BantoBar",
-				["font_face_file"] = "Fonts\\ARIALN.TTF",
-				["fixed_text_color"] = {
+				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
 				},
-				["textL_custom_text"] = "{data3}{data2}",
-				["texture_background"] = "Blizzard",
-				["alpha"] = 0,
-				["textL_class_colors"] = false,
-				["backdrop"] = {
-					["enabled"] = false,
-					["size"] = 12,
-					["color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["texture"] = "Details BarBorder 2",
-				},
-				["no_icon"] = false,
-				["font_size"] = 11,
-				["textR_class_colors"] = false,
-				["font_face"] = "Arial Narrow",
-				["texture_class_colors"] = true,
-				["height"] = 20,
-				["texture_file"] = "Interface\\AddOns\\Details\\images\\BantoBar",
-				["start_after_icon"] = false,
-				["percent_type"] = 1,
+				["text_face"] = "Arial Narrow",
 			},
 			["bg_b"] = 0,
 		}, -- [1]
 	},
-	["force_font_outline"] = "",
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
+	},
 	["on_death_menu"] = true,
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -6895,23 +6914,25 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Rattlecage Skeleton"] = 0,
+						["Young Scavenger"] = 0,
 						["Wretched Zombie"] = 0,
+						["Rattlecage Skeleton"] = 0,
+						["Duskbat"] = 0,
 					},
 					["pets"] = {
 					},
-					["damage_taken"] = 0.006911,
-					["tipo"] = 1,
+					["aID"] = "4465-01FA5DEE",
+					["last_event"] = 0,
 					["classe"] = "ROGUE",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006911,
-					["delay"] = 0,
+					["serial"] = "Player-4465-01FA5DEE",
 					["dps_started"] = false,
 					["end_time"] = 1643015367,
-					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
+					["on_hold"] = false,
 					["nome"] = "Battitude",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -6922,8 +6943,10 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Rattlecage Skeleton"] = 0,
+									["Young Scavenger"] = 0,
 									["Wretched Zombie"] = 0,
+									["Rattlecage Skeleton"] = 0,
+									["Duskbat"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -6933,15 +6956,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[1752] = {
 								["c_amt"] = 0,
@@ -6950,8 +6973,10 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Rattlecage Skeleton"] = 0,
+									["Young Scavenger"] = 0,
 									["Wretched Zombie"] = 0,
+									["Rattlecage Skeleton"] = 0,
+									["Duskbat"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -6961,15 +6986,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1752,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[2098] = {
 								["c_amt"] = 0,
@@ -6978,8 +7003,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Rattlecage Skeleton"] = 0,
 									["Wretched Zombie"] = 0,
+									["Rattlecage Skeleton"] = 0,
+									["Duskbat"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -6989,15 +7015,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 2098,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -7006,11 +7032,11 @@ _detalhes_database = {
 					["total"] = 0.006911,
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["damage_taken"] = 0.006911,
 					["start_time"] = 1643015364,
-					["serial"] = "Player-4465-01FA5DEE",
-					["aID"] = "4465-01FA5DEE",
+					["delay"] = 0,
+					["last_dps"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 68136,
@@ -7024,17 +7050,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["damage_taken"] = 0.003437,
-					["last_dps"] = 0,
+					["aID"] = "1890",
+					["on_hold"] = false,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003437,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4447-0-26-1890-00006E55EC",
 					["fight_component"] = true,
 					["end_time"] = 1643015367,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Rattlecage Skeleton",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -7057,29 +7084,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["dps_started"] = false,
-					["total"] = 0.003437,
-					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["total"] = 0.003437,
+					["dps_started"] = false,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 0.003437,
 					["start_time"] = 1643015364,
-					["serial"] = "Creature-0-4447-0-26-1890-00006E55EC",
-					["aID"] = "1890",
+					["delay"] = 0,
+					["last_dps"] = 0,
 				}, -- [2]
 				{
 					["flag_original"] = 68136,
@@ -7091,18 +7117,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
+					["damage_taken"] = 0.001363,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
-					["friendlyfire"] = {
-					},
-					["aID"] = "1502",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001363,
-					["serial"] = "Creature-0-4447-0-26-1502-00006E553B",
+					["delay"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1643015459,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["nome"] = "Wretched Zombie",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -7124,6 +7149,72 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							}, -- [1]
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["dps_started"] = false,
+					["total"] = 0.001363,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["start_time"] = 1643015456,
+					["serial"] = "Creature-0-4447-0-26-1502-00006E553B",
+					["aID"] = "1502",
+				}, -- [3]
+				{
+					["flag_original"] = 68136,
+					["totalabsorbed"] = 0.008555,
+					["aID"] = "1512",
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Battitude"] = 0,
+					},
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.008555,
+					["last_event"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1643020794,
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["nome"] = "Duskbat",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Battitude"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
@@ -7135,18 +7226,83 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							}, -- [1]
 						},
-						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["total"] = 0.001363,
-					["dps_started"] = false,
+					["friendlyfire"] = {
+					},
+					["total"] = 0.008555,
+					["serial"] = "Creature-0-4447-0-26-1512-00006E56F6",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1643015456,
+					["damage_taken"] = 0.008555,
+					["start_time"] = 1643020791,
 					["delay"] = 0,
-					["damage_taken"] = 0.001363,
-				}, -- [3]
+					["last_dps"] = 0,
+				}, -- [4]
+				{
+					["flag_original"] = 68136,
+					["totalabsorbed"] = 0.00814,
+					["aID"] = "1508",
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Battitude"] = 0,
+					},
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.00814,
+					["last_event"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1643020794,
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["nome"] = "Young Scavenger",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Battitude"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+						},
+					},
+					["friendlyfire"] = {
+					},
+					["total"] = 0.00814,
+					["serial"] = "Creature-0-4447-0-26-1508-00006E581A",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 0.00814,
+					["start_time"] = 1643020791,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [5]
 			},
 		}, -- [1]
 		{
@@ -7164,19 +7320,19 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["aID"] = "4465-01FA5DEE",
+					["last_event"] = 0,
 					["nome"] = "Battitude",
 					["grupo"] = true,
 					["pets"] = {
 					},
-					["tipo"] = 4,
-					["classe"] = "ROGUE",
-					["last_event"] = 0,
-					["serial"] = "Player-4465-01FA5DEE",
 					["spell_cast"] = {
 						[1752] = 0,
 						[2098] = 0,
 					},
+					["aID"] = "4465-01FA5DEE",
+					["classe"] = "ROGUE",
+					["serial"] = "Player-4465-01FA5DEE",
+					["tipo"] = 4,
 				}, -- [1]
 			},
 		}, -- [4]
@@ -7195,7 +7351,7 @@ _detalhes_database = {
 		["alternate_power"] = {
 		},
 		["combat_counter"] = 6776,
-		["spells_cast_timeline"] = {
+		["frags"] = {
 		},
 		["totals"] = {
 			0, -- [1]
@@ -7204,21 +7360,21 @@ _detalhes_database = {
 				0, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
-				[3] = 0,
 				[6] = 0,
+				[3] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
 			}, -- [4]
-			["frags_total"] = 0,
 			["voidzone_damage"] = 0,
+			["frags_total"] = 0,
 		},
 		["player_last_events"] = {
 		},
@@ -7228,6 +7384,35 @@ _detalhes_database = {
 		["__call"] = {
 		},
 		["data_inicio"] = 0,
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["damage"] = {
+			},
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage_section"] = {
+			},
+		},
+		["overall_refreshed"] = true,
+		["hasSaved"] = true,
+		["spells_cast_timeline"] = {
+		},
+		["data_fim"] = 0,
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+		["CombatSkillCache"] = {
+		},
+		["cleu_timeline"] = {
+		},
+		["start_time"] = 0,
+		["TimeData"] = {
+		},
 		["totals_grupo"] = {
 			0, -- [1]
 			0, -- [2]
@@ -7235,68 +7420,30 @@ _detalhes_database = {
 				0, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
-				[3] = 0,
 				[6] = 0,
+				[3] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
 			}, -- [4]
 		},
-		["overall_refreshed"] = true,
-		["hasSaved"] = true,
-		["frags"] = {
-		},
-		["data_fim"] = 0,
-		["cleu_timeline"] = {
-		},
-		["CombatSkillCache"] = {
-		},
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-		["start_time"] = 0,
-		["TimeData"] = {
-		},
-		["PhaseData"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-			}, -- [1]
-			["damage_section"] = {
-			},
-			["heal_section"] = {
-			},
-			["heal"] = {
-			},
-			["damage"] = {
-			},
-		},
 	},
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "",
-		["started"] = false,
-		["segment_id"] = 0,
-		["ej_id"] = 0,
-		["started_at"] = 0,
-		["run_id"] = 0,
-		["level"] = 0,
-		["dungeon_zone_id"] = 0,
-		["previous_boss_killed_at"] = 0,
+	["force_font_outline"] = "",
+	["character_data"] = {
+		["logons"] = 1793,
 	},
-	["ignore_nicktag"] = true,
-	["cached_talents"] = {
-	},
+	["last_realversion"] = 145,
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -7304,9 +7451,7 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["cached_roles"] = {
 	},
 	["cached_specs"] = {
 	},

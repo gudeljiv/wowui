@@ -7,8 +7,326 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 386,
 					["tipo"] = 2,
+					["combatId"] = 387,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008858,
+							["damage_from"] = {
+								["Mountain Cougar"] = true,
+							},
+							["targets"] = {
+								["Mountain Cougar"] = 74,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 74.008858,
+							["aID"] = "4465-02B843FA",
+							["dps_started"] = false,
+							["end_time"] = 1649673897,
+							["damage_taken"] = 27.008858,
+							["total"] = 74.008858,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Mountain Cougar"] = 21,
+										},
+										["n_dmg"] = 21,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[5176] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Mountain Cougar"] = 53,
+										},
+										["n_dmg"] = 53,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 53,
+										["c_max"] = 0,
+										["id"] = 5176,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_dps"] = 4.204809840351149,
+							["friendlyfire_total"] = 0,
+							["colocacao"] = 1,
+							["last_event"] = 1649673897,
+							["on_hold"] = false,
+							["start_time"] = 1649673880,
+							["serial"] = "Player-4465-02B843FA",
+							["friendlyfire"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.001034,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 27,
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["total"] = 27.001034,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 27.001034,
+							["delay"] = 0,
+							["fight_component"] = true,
+							["end_time"] = 1649673897,
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 74.001034,
+							["nome"] = "Mountain Cougar",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Moolatz"] = 27,
+										},
+										["n_dmg"] = 27,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 27,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 9,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["aID"] = "2961",
+							["last_dps"] = 0,
+							["on_hold"] = false,
+							["custom"] = 0,
+							["last_event"] = 1649673897,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1649673881,
+							["serial"] = "Creature-0-4448-1-125-2961-0000540447",
+							["dps_started"] = false,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 387,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 387,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 387,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["classe"] = "DRUID",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-02B843FA",
+							["spell_cast"] = {
+								[5176] = 3,
+							},
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 387,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["tempo_start"] = 1649673880,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 7053,
+				["playing_solo"] = true,
+				["totals"] = {
+					101, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					74, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "12:44:58",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Mountain Cougar",
+				["TotalElapsedCombatTime"] = 132429.753,
+				["CombatEndedAt"] = 132429.753,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 74.008858,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 132429.753,
+				["combat_id"] = 387,
+				["spells_cast_timeline"] = {
+				},
+				["data_inicio"] = "12:44:40",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 132412.152,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Mountain Cougar"] = 1,
+				},
+			}, -- [1]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 386,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -19,23 +337,23 @@ _detalhes_database = {
 							["targets"] = {
 								["Mountain Cougar"] = 76,
 							},
+							["serial"] = "Player-4465-02B843FA",
 							["pets"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
-							["classe"] = "DRUID",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 76.001369,
-							["colocacao"] = 1,
+							["aID"] = "4465-02B843FA",
+							["dps_started"] = false,
+							["total"] = 76.001369,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1648195920,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
+							["last_event"] = 1648195918,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -94,17 +412,17 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 76.001369,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 7.639096291067369,
+							["last_dps"] = 6.658026193583178,
+							["end_time"] = 1648195920,
 							["custom"] = 0,
-							["last_event"] = 1648195918,
+							["tipo"] = 1,
 							["damage_taken"] = 9.001369,
 							["start_time"] = 1648195909,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "DRUID",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -117,20 +435,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "2961",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 9.006848,
+							["serial"] = "Creature-0-4448-1-42-2961-0006BD23D3",
+							["fight_component"] = true,
+							["total"] = 9.006848,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1648195920,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Mountain Cougar",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -161,56 +479,56 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "2961",
-							["total"] = 9.006848,
-							["serial"] = "Creature-0-4448-1-42-2961-0006BD23D3",
+							["last_event"] = 1648195917,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1648195917,
+							["tipo"] = 1,
 							["damage_taken"] = 76.00684799999999,
 							["start_time"] = 1648195913,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1648195920,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 386,
 					["tipo"] = 3,
+					["combatId"] = 386,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 386,
 					["tipo"] = 7,
+					["combatId"] = 386,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 386,
 					["tipo"] = 9,
+					["combatId"] = 386,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["pets"] = {
 							},
-							["classe"] = "DRUID",
 							["spell_cast"] = {
 								[5176] = 3,
 							},
-							["tipo"] = 4,
 							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
 							["last_event"] = 0,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 386,
 					["tipo"] = 2,
+					["combatId"] = 386,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -220,14 +538,12 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
+				["CombatStartedAt"] = 132411.585,
 				["tempo_start"] = 1648195909,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Mountain Cougar",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -245,48 +561,43 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["TotalElapsedCombatTime"] = 1849229.209,
-				["combat_counter"] = 7051,
+				["player_last_events"] = {
+				},
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "09:12:01",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Mountain Cougar",
+				["TotalElapsedCombatTime"] = 1849229.209,
+				["CombatEndedAt"] = 1849229.209,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 76.001369,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 1849229.209,
-				["player_last_events"] = {
-				},
-				["instance_type"] = "none",
-				["CombatEndedAt"] = 1849229.209,
 				["data_inicio"] = "09:11:49",
+				["end_time"] = 1849229.209,
+				["combat_id"] = 386,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Mountain Cougar"] = 1,
+				},
+				["combat_counter"] = 7051,
+				["CombatSkillCache"] = {
+				},
 				["totals_grupo"] = {
 					76, -- [1]
 					0, -- [2]
@@ -300,28 +611,37 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "09:12:01",
-				["combat_id"] = 386,
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Mountain Cougar"] = 1,
-				},
 				["start_time"] = 1849217.794,
 				["TimeData"] = {
 				},
-				["pvp"] = true,
-			}, -- [1]
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 76.001369,
+						}, -- [1]
+					},
+				},
+			}, -- [2]
 			{
 				{
 					["tipo"] = 2,
@@ -336,19 +656,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Mountain Cougar"] = 80,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["delay"] = 0,
+							["custom"] = 0,
+							["classe"] = "DRUID",
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 80.001345,
-							["custom"] = 0,
-							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
 							["total"] = 80.001345,
-							["classe"] = "DRUID",
-							["aID"] = "4465-02B843FA",
+							["damage_taken"] = 22.001345,
+							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -414,15 +736,13 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["end_time"] = 1643020957,
-							["damage_taken"] = 22.001345,
 							["last_dps"] = 4.047217331918357,
 							["colocacao"] = 1,
 							["last_event"] = 1643020955,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1643020937,
 							["serial"] = "Player-4465-02B843FA",
-							["on_hold"] = false,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -435,16 +755,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["tipo"] = 1,
-							["total"] = 22.002025,
-							["classe"] = "UNKNOW",
+							["end_time"] = 1643020957,
+							["friendlyfire_total"] = 0,
+							["aID"] = "2961",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 22.002025,
 							["delay"] = 0,
+							["dps_started"] = false,
+							["total"] = 22.002025,
 							["fight_component"] = true,
-							["end_time"] = 1643020957,
-							["friendlyfire_total"] = 0,
 							["damage_taken"] = 80.002025,
 							["nome"] = "Mountain Cougar",
 							["spells"] = {
@@ -480,7 +800,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["aID"] = "2961",
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["on_hold"] = false,
 							["custom"] = 0,
@@ -489,7 +809,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1643020940,
 							["serial"] = "Creature-0-4447-1-9-2961-00006E72A1",
-							["dps_started"] = false,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -511,14 +831,14 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["last_event"] = 0,
-							["classe"] = "DRUID",
 							["tipo"] = 4,
+							["aID"] = "4465-02B843FA",
 							["serial"] = "Player-4465-02B843FA",
 							["spell_cast"] = {
 								[5176] = 2,
@@ -604,6 +924,12 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "11:42:18",
+				["end_time"] = 719680.534,
+				["combat_id"] = 385,
+				["frags"] = {
+					["Mountain Cougar"] = 1,
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -623,11 +949,6 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 719680.534,
-				["combat_id"] = 385,
-				["spells_cast_timeline"] = {
-				},
-				["data_inicio"] = "11:42:18",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -638,10 +959,9 @@ _detalhes_database = {
 				["start_time"] = 719660.767,
 				["TimeData"] = {
 				},
-				["frags"] = {
-					["Mountain Cougar"] = 1,
+				["spells_cast_timeline"] = {
 				},
-			}, -- [2]
+			}, -- [3]
 			{
 				{
 					["tipo"] = 2,
@@ -660,16 +980,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 77.00766899999999,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["total"] = 77.00766899999999,
 							["damage_taken"] = 14.007669,
-							["aID"] = "4465-02B843FA",
+							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -737,11 +1057,11 @@ _detalhes_database = {
 							["end_time"] = 1643020928,
 							["colocacao"] = 1,
 							["last_event"] = 1643020926,
-							["on_hold"] = false,
-							["start_time"] = 1643020914,
-							["serial"] = "Player-4465-02B843FA",
 							["friendlyfire"] = {
 							},
+							["start_time"] = 1643020914,
+							["serial"] = "Player-4465-02B843FA",
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -754,17 +1074,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["tipo"] = 1,
-							["aID"] = "2961",
 							["classe"] = "UNKNOW",
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 14.005155,
 							["delay"] = 0,
-							["fight_component"] = true,
+							["dps_started"] = false,
 							["total"] = 14.005155,
+							["fight_component"] = true,
 							["on_hold"] = false,
-							["damage_taken"] = 77.005155,
 							["nome"] = "Mountain Cougar",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -799,16 +1120,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire_total"] = 0,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["end_time"] = 1643020928,
 							["custom"] = 0,
 							["last_event"] = 1643020925,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 77.005155,
 							["start_time"] = 1643020916,
 							["serial"] = "Creature-0-4447-1-9-2961-00006E7277",
-							["dps_started"] = false,
+							["aID"] = "2961",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -830,14 +1150,14 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["last_event"] = 0,
-							["classe"] = "DRUID",
 							["tipo"] = 4,
+							["aID"] = "4465-02B843FA",
 							["serial"] = "Player-4465-02B843FA",
 							["spell_cast"] = {
 								[5176] = 3,
@@ -925,22 +1245,6 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "11:41:55",
-				["end_time"] = 719651.0260000001,
-				["combat_id"] = 384,
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["combat_counter"] = 7048,
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Mountain Cougar"] = 1,
-				},
-				["start_time"] = 719637.6680000001,
-				["TimeData"] = {
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -960,7 +1264,23 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-			}, -- [3]
+				["end_time"] = 719651.0260000001,
+				["combat_id"] = 384,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Mountain Cougar"] = 1,
+				},
+				["combat_counter"] = 7048,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 719637.6680000001,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "11:41:55",
+			}, -- [4]
 			{
 				{
 					["tipo"] = 2,
@@ -979,15 +1299,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["last_dps"] = 6.335899164105501,
-							["aID"] = "4465-02B843FA",
+							["end_time"] = 1642870982,
+							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 72.00749400000001,
-							["total"] = 72.00749400000001,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
-							["end_time"] = 1642870982,
-							["damage_taken"] = 12.007494,
+							["total"] = 72.00749400000001,
+							["last_dps"] = 6.335899164105501,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -1056,11 +1377,10 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["colocacao"] = 1,
 							["last_event"] = 1642870981,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 12.007494,
 							["start_time"] = 1642870970,
 							["serial"] = "Player-4465-02B843FA",
-							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -1073,16 +1393,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["end_time"] = 1642870982,
-							["friendlyfire_total"] = 0,
 							["aID"] = "2961",
+							["total"] = 12.002662,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 12.002662,
 							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 12.002662,
 							["fight_component"] = true,
+							["end_time"] = 1642870982,
+							["dps_started"] = false,
 							["damage_taken"] = 72.002662,
 							["nome"] = "Mountain Cougar",
 							["spells"] = {
@@ -1127,7 +1447,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1642870973,
 							["serial"] = "Creature-0-4447-1-9-2961-00006BEE77",
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -1149,14 +1469,14 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["classe"] = "DRUID",
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["last_event"] = 0,
-							["tipo"] = 4,
 							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
 							["spell_cast"] = {
 								[5176] = 2,
@@ -1244,11 +1564,6 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "18:02:50",
-				["end_time"] = 569706.193,
-				["combat_id"] = 383,
-				["spells_cast_timeline"] = {
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -1268,6 +1583,12 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
+				["end_time"] = 569706.193,
+				["combat_id"] = 383,
+				["frags"] = {
+					["Mountain Cougar"] = 1,
+				},
+				["data_inicio"] = "18:02:50",
 				["combat_counter"] = 7045,
 				["CombatSkillCache"] = {
 				},
@@ -1276,10 +1597,9 @@ _detalhes_database = {
 				["start_time"] = 569694.828,
 				["TimeData"] = {
 				},
-				["frags"] = {
-					["Mountain Cougar"] = 1,
+				["spells_cast_timeline"] = {
 				},
-			}, -- [4]
+			}, -- [5]
 			{
 				{
 					["tipo"] = 2,
@@ -1298,15 +1618,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 79.006354,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
 							["total"] = 79.006354,
-							["damage_taken"] = 9.006354,
+							["on_hold"] = false,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -1375,11 +1696,10 @@ _detalhes_database = {
 							["end_time"] = 1642870927,
 							["colocacao"] = 1,
 							["last_event"] = 1642870927,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 9.006354,
 							["start_time"] = 1642870916,
 							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -1392,10 +1712,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["friendlyfire"] = {
-							},
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 79.00584,
+							["aID"] = "2961",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 9.00584,
@@ -1403,7 +1722,8 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 9.00584,
 							["fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Mountain Cougar",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1443,10 +1763,10 @@ _detalhes_database = {
 							["end_time"] = 1642870927,
 							["custom"] = 0,
 							["last_event"] = 1642870925,
-							["damage_taken"] = 79.00584,
+							["on_hold"] = false,
 							["start_time"] = 1642870921,
 							["serial"] = "Creature-0-4447-1-9-2961-00006BED5D",
-							["aID"] = "2961",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -1468,17 +1788,17 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["spell_cast"] = {
-								[5176] = 1,
+							["pets"] = {
 							},
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 11,
-							["aID"] = "4465-02B843FA",
-							["pets"] = {
+							["spell_cast"] = {
+								[5176] = 1,
 							},
+							["aID"] = "4465-02B843FA",
+							["buff_uptime"] = 11,
 							["last_event"] = 1642870927,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
@@ -1582,6 +1902,22 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "18:01:56",
+				["end_time"] = 569651.5430000001,
+				["combat_id"] = 382,
+				["frags"] = {
+					["Mountain Cougar"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 7044,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 569640.411,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -1601,23 +1937,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 569651.5430000001,
-				["combat_id"] = 382,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Mountain Cougar"] = 1,
-				},
-				["combat_counter"] = 7044,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 569640.411,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "18:01:56",
-			}, -- [5]
+			}, -- [6]
 			{
 				{
 					["tipo"] = 2,
@@ -1636,15 +1956,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 78.008359,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
 							["total"] = 78.008359,
-							["damage_taken"] = 15.008359,
+							["on_hold"] = false,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -1713,11 +2034,10 @@ _detalhes_database = {
 							["end_time"] = 1642870910,
 							["colocacao"] = 1,
 							["last_event"] = 1642870909,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 15.008359,
 							["start_time"] = 1642870894,
 							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -1730,10 +2050,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["friendlyfire"] = {
-							},
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 78.006361,
+							["aID"] = "2961",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 15.006361,
@@ -1741,7 +2060,8 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 15.006361,
 							["fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Mountain Cougar",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1782,10 +2102,10 @@ _detalhes_database = {
 							["end_time"] = 1642870910,
 							["custom"] = 0,
 							["last_event"] = 1642870907,
-							["damage_taken"] = 78.006361,
+							["on_hold"] = false,
 							["start_time"] = 1642870897,
 							["serial"] = "Creature-0-4447-1-9-2961-00006BEDF5",
-							["aID"] = "2961",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -1807,17 +2127,17 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["spell_cast"] = {
-								[5176] = 1,
+							["pets"] = {
 							},
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 16,
-							["aID"] = "4465-02B843FA",
-							["pets"] = {
+							["spell_cast"] = {
+								[5176] = 1,
 							},
+							["aID"] = "4465-02B843FA",
+							["buff_uptime"] = 16,
 							["last_event"] = 1642870910,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
@@ -1921,6 +2241,22 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "18:01:34",
+				["end_time"] = 569634.643,
+				["combat_id"] = 381,
+				["frags"] = {
+					["Mountain Cougar"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 7043,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 569618.194,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -1940,23 +2276,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 569634.643,
-				["combat_id"] = 381,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Mountain Cougar"] = 1,
-				},
-				["combat_counter"] = 7043,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 569618.194,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "18:01:34",
-			}, -- [6]
+			}, -- [7]
 			{
 				{
 					["tipo"] = 2,
@@ -1975,16 +2295,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 81.002838,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["end_time"] = 1642870866,
-							["damage_taken"] = 17.002838,
+							["friendlyfire"] = {
+							},
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -2054,10 +2374,10 @@ _detalhes_database = {
 							["total"] = 81.002838,
 							["colocacao"] = 1,
 							["last_event"] = 1642870865,
-							["on_hold"] = false,
+							["damage_taken"] = 17.002838,
 							["start_time"] = 1642870848,
 							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -2070,18 +2390,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 17.002876,
-							["on_hold"] = false,
-							["classe"] = "UNKNOW",
+							["end_time"] = 1642870866,
+							["damage_taken"] = 81.002876,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 17.002876,
 							["delay"] = 0,
 							["fight_component"] = true,
-							["end_time"] = 1642870866,
+							["total"] = 17.002876,
 							["aID"] = "2961",
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["nome"] = "Mountain Cougar",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2122,10 +2441,11 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["custom"] = 0,
 							["last_event"] = 1642870863,
-							["damage_taken"] = 81.002876,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1642870851,
 							["serial"] = "Creature-0-4447-1-9-2961-00006BEE0F",
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -2147,17 +2467,17 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["spell_cast"] = {
-								[5176] = 2,
+							["pets"] = {
 							},
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 18,
-							["aID"] = "4465-02B843FA",
-							["pets"] = {
+							["spell_cast"] = {
+								[5176] = 2,
 							},
+							["aID"] = "4465-02B843FA",
+							["buff_uptime"] = 18,
 							["last_event"] = 1642870866,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
@@ -2261,6 +2581,22 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "18:00:49",
+				["end_time"] = 569590.493,
+				["combat_id"] = 380,
+				["frags"] = {
+					["Mountain Cougar"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 7042,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 569573.089,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -2280,23 +2616,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 569590.493,
-				["combat_id"] = 380,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Mountain Cougar"] = 1,
-				},
-				["combat_counter"] = 7042,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 569573.089,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "18:00:49",
-			}, -- [7]
+			}, -- [8]
 			{
 				{
 					["tipo"] = 2,
@@ -2315,15 +2635,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 71.006539,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
 							["total"] = 71.006539,
-							["damage_taken"] = 18.006539,
+							["on_hold"] = false,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -2392,11 +2713,10 @@ _detalhes_database = {
 							["end_time"] = 1642870830,
 							["colocacao"] = 1,
 							["last_event"] = 1642870829,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 18.006539,
 							["start_time"] = 1642870814,
 							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -2409,10 +2729,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["friendlyfire"] = {
-							},
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 71.006564,
+							["aID"] = "2961",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 18.006564,
@@ -2420,7 +2739,8 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 18.006564,
 							["fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Mountain Cougar",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2460,10 +2780,10 @@ _detalhes_database = {
 							["end_time"] = 1642870830,
 							["custom"] = 0,
 							["last_event"] = 1642870827,
-							["damage_taken"] = 71.006564,
+							["on_hold"] = false,
 							["start_time"] = 1642870817,
 							["serial"] = "Creature-0-4447-1-9-2961-00006BEDAC",
-							["aID"] = "2961",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -2485,17 +2805,17 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["spell_cast"] = {
-								[5176] = 1,
+							["pets"] = {
 							},
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 16,
-							["aID"] = "4465-02B843FA",
-							["pets"] = {
+							["spell_cast"] = {
+								[5176] = 1,
 							},
+							["aID"] = "4465-02B843FA",
+							["buff_uptime"] = 16,
 							["last_event"] = 1642870830,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
@@ -2599,6 +2919,22 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "18:00:14",
+				["end_time"] = 569554.541,
+				["combat_id"] = 379,
+				["frags"] = {
+					["Mountain Cougar"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 7041,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 569538.348,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -2618,23 +2954,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 569554.541,
-				["combat_id"] = 379,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Mountain Cougar"] = 1,
-				},
-				["combat_counter"] = 7041,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 569538.348,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "18:00:14",
-			}, -- [8]
+			}, -- [9]
 			{
 				{
 					["tipo"] = 2,
@@ -2653,15 +2973,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 71.001639,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
 							["total"] = 71.001639,
-							["damage_taken"] = 12.001639,
+							["on_hold"] = false,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -2730,11 +3051,10 @@ _detalhes_database = {
 							["end_time"] = 1642870810,
 							["colocacao"] = 1,
 							["last_event"] = 1642870809,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 12.001639,
 							["start_time"] = 1642870799,
 							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -2747,10 +3067,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["friendlyfire"] = {
-							},
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 71.00565,
+							["aID"] = "2961",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 12.00565,
@@ -2758,7 +3077,8 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 12.00565,
 							["fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Mountain Cougar",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2798,10 +3118,10 @@ _detalhes_database = {
 							["end_time"] = 1642870810,
 							["custom"] = 0,
 							["last_event"] = 1642870808,
-							["damage_taken"] = 71.00565,
+							["on_hold"] = false,
 							["start_time"] = 1642870802,
 							["serial"] = "Creature-0-4447-1-9-2961-00006BED92",
-							["aID"] = "2961",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -2823,17 +3143,17 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["spell_cast"] = {
-								[5176] = 2,
+							["pets"] = {
 							},
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 11,
-							["aID"] = "4465-02B843FA",
-							["pets"] = {
+							["spell_cast"] = {
+								[5176] = 2,
 							},
+							["aID"] = "4465-02B843FA",
+							["buff_uptime"] = 11,
 							["last_event"] = 1642870810,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
@@ -2937,6 +3257,22 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "17:59:59",
+				["end_time"] = 569534.725,
+				["combat_id"] = 378,
+				["frags"] = {
+					["Mountain Cougar"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 7040,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 569523.183,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -2956,23 +3292,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 569534.725,
-				["combat_id"] = 378,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Mountain Cougar"] = 1,
-				},
-				["combat_counter"] = 7040,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 569523.183,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:59:59",
-			}, -- [9]
+			}, -- [10]
 			{
 				{
 					["tipo"] = 2,
@@ -2991,15 +3311,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 80.008939,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
 							["total"] = 80.008939,
-							["damage_taken"] = 16.008939,
+							["on_hold"] = false,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -3068,11 +3389,10 @@ _detalhes_database = {
 							["end_time"] = 1642870785,
 							["colocacao"] = 1,
 							["last_event"] = 1642870784,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 16.008939,
 							["start_time"] = 1642870770,
 							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -3085,10 +3405,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["friendlyfire"] = {
-							},
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 80.002323,
+							["aID"] = "2961",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 16.002323,
@@ -3096,7 +3415,8 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 16.002323,
 							["fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Mountain Cougar",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3136,10 +3456,10 @@ _detalhes_database = {
 							["end_time"] = 1642870785,
 							["custom"] = 0,
 							["last_event"] = 1642870782,
-							["damage_taken"] = 80.002323,
+							["on_hold"] = false,
 							["start_time"] = 1642870774,
 							["serial"] = "Creature-0-4447-1-9-2961-00006BCE9B",
-							["aID"] = "2961",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3161,17 +3481,17 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["spell_cast"] = {
-								[5176] = 2,
+							["pets"] = {
 							},
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 15,
-							["aID"] = "4465-02B843FA",
-							["pets"] = {
+							["spell_cast"] = {
+								[5176] = 2,
 							},
+							["aID"] = "4465-02B843FA",
+							["buff_uptime"] = 15,
 							["last_event"] = 1642870785,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
@@ -3275,6 +3595,22 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "17:59:31",
+				["end_time"] = 569509.287,
+				["combat_id"] = 377,
+				["frags"] = {
+					["Mountain Cougar"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 7039,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 569495.019,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -3294,23 +3630,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 569509.287,
-				["combat_id"] = 377,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Mountain Cougar"] = 1,
-				},
-				["combat_counter"] = 7039,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 569495.019,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:59:31",
-			}, -- [10]
+			}, -- [11]
 			{
 				{
 					["tipo"] = 2,
@@ -3329,15 +3649,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 72.001652,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
 							["total"] = 72.001652,
-							["damage_taken"] = 15.001652,
+							["on_hold"] = false,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -3406,11 +3727,10 @@ _detalhes_database = {
 							["end_time"] = 1642870753,
 							["colocacao"] = 1,
 							["last_event"] = 1642870752,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 15.001652,
 							["start_time"] = 1642870740,
 							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -3423,10 +3743,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["friendlyfire"] = {
-							},
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 72.00778700000001,
+							["aID"] = "2961",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 15.007787,
@@ -3434,7 +3753,8 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 15.007787,
 							["fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Mountain Cougar",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3475,10 +3795,10 @@ _detalhes_database = {
 							["end_time"] = 1642870753,
 							["custom"] = 0,
 							["last_event"] = 1642870752,
-							["damage_taken"] = 72.00778700000001,
+							["on_hold"] = false,
 							["start_time"] = 1642870742,
 							["serial"] = "Creature-0-4447-1-9-2961-00006BCE86",
-							["aID"] = "2961",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3500,17 +3820,17 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["spell_cast"] = {
-								[5176] = 2,
+							["pets"] = {
 							},
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 13,
-							["aID"] = "4465-02B843FA",
-							["pets"] = {
+							["spell_cast"] = {
+								[5176] = 2,
 							},
+							["aID"] = "4465-02B843FA",
+							["buff_uptime"] = 13,
 							["last_event"] = 1642870753,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
@@ -3614,6 +3934,22 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "17:59:01",
+				["end_time"] = 569477.622,
+				["combat_id"] = 376,
+				["frags"] = {
+					["Mountain Cougar"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 7038,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 569465.063,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -3633,23 +3969,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 569477.622,
-				["combat_id"] = 376,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Mountain Cougar"] = 1,
-				},
-				["combat_counter"] = 7038,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 569465.063,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:59:01",
-			}, -- [11]
+			}, -- [12]
 			{
 				{
 					["tipo"] = 2,
@@ -3668,15 +3988,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 71.007741,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
 							["total"] = 71.007741,
-							["damage_taken"] = 20.007741,
+							["on_hold"] = false,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -3745,11 +4066,10 @@ _detalhes_database = {
 							["end_time"] = 1642870711,
 							["colocacao"] = 1,
 							["last_event"] = 1642870711,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 20.007741,
 							["start_time"] = 1642870694,
 							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -3762,10 +4082,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["friendlyfire"] = {
-							},
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 71.001963,
+							["aID"] = "2961",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 20.001963,
@@ -3773,7 +4092,8 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 20.001963,
 							["fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Mountain Cougar",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3814,10 +4134,10 @@ _detalhes_database = {
 							["end_time"] = 1642870711,
 							["custom"] = 0,
 							["last_event"] = 1642870709,
-							["damage_taken"] = 71.001963,
+							["on_hold"] = false,
 							["start_time"] = 1642870695,
 							["serial"] = "Creature-0-4447-1-9-2961-00006B8261",
-							["aID"] = "2961",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3950,6 +4270,22 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "17:58:14",
+				["end_time"] = 569436.101,
+				["combat_id"] = 375,
+				["frags"] = {
+					["Mountain Cougar"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 7037,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 569418.631,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -3969,23 +4305,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 569436.101,
-				["combat_id"] = 375,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Mountain Cougar"] = 1,
-				},
-				["combat_counter"] = 7037,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 569418.631,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:58:14",
-			}, -- [12]
+			}, -- [13]
 			{
 				{
 					["tipo"] = 2,
@@ -4003,15 +4323,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 43.004935,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
 							["total"] = 43.004935,
-							["damage_taken"] = 0.004935,
+							["on_hold"] = false,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -4052,11 +4373,10 @@ _detalhes_database = {
 							["end_time"] = 1642870318,
 							["colocacao"] = 1,
 							["last_event"] = 1642870318,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 0.004935,
 							["start_time"] = 1642870315,
 							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -4068,16 +4388,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["end_time"] = 1642870318,
-							["friendlyfire_total"] = 0,
 							["aID"] = "2955",
+							["total"] = 0.001859,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.001859,
 							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.001859,
 							["fight_component"] = true,
+							["end_time"] = 1642870318,
+							["dps_started"] = false,
 							["damage_taken"] = 43.001859,
 							["nome"] = "Plainstrider",
 							["spells"] = {
@@ -4094,7 +4414,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1642870318,
 							["serial"] = "Creature-0-4447-1-9-2955-00006C361E",
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -4116,14 +4436,14 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["classe"] = "DRUID",
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["last_event"] = 0,
-							["tipo"] = 4,
 							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
 							["spell_cast"] = {
 								[5176] = 2,
@@ -4211,6 +4531,22 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "17:51:56",
+				["end_time"] = 569043.066,
+				["combat_id"] = 374,
+				["frags"] = {
+					["Plainstrider"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 7036,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 569039.981,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -4230,23 +4566,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 569043.066,
-				["combat_id"] = 374,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-				["combat_counter"] = 7036,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 569039.981,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:51:56",
-			}, -- [13]
+			}, -- [14]
 			{
 				{
 					["tipo"] = 2,
@@ -4265,15 +4585,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 59.005262,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
 							["total"] = 59.005262,
-							["damage_taken"] = 4.005262,
+							["on_hold"] = false,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -4342,11 +4663,10 @@ _detalhes_database = {
 							["end_time"] = 1642870310,
 							["colocacao"] = 1,
 							["last_event"] = 1642870309,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 4.005262,
 							["start_time"] = 1642870302,
 							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -4359,10 +4679,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["friendlyfire"] = {
-							},
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 59.001528,
+							["aID"] = "2955",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4.001528,
@@ -4370,7 +4689,8 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 4.001528,
 							["fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Plainstrider",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -4410,10 +4730,10 @@ _detalhes_database = {
 							["end_time"] = 1642870310,
 							["custom"] = 0,
 							["last_event"] = 1642870308,
-							["damage_taken"] = 59.001528,
+							["on_hold"] = false,
 							["start_time"] = 1642870306,
 							["serial"] = "Creature-0-4447-1-9-2955-00006B80B5",
-							["aID"] = "2955",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -4435,14 +4755,14 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["classe"] = "DRUID",
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["last_event"] = 0,
-							["tipo"] = 4,
 							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
 							["spell_cast"] = {
 								[5176] = 2,
@@ -4530,6 +4850,22 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "17:51:42",
+				["end_time"] = 569034.167,
+				["combat_id"] = 373,
+				["frags"] = {
+					["Plainstrider"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 7035,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 569026.1680000001,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -4549,23 +4885,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 569034.167,
-				["combat_id"] = 373,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-				["combat_counter"] = 7035,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 569026.1680000001,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:51:42",
-			}, -- [14]
+			}, -- [15]
 			{
 				{
 					["tipo"] = 2,
@@ -4583,15 +4903,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 52.004077,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
 							["total"] = 52.004077,
-							["damage_taken"] = 0.004077,
+							["on_hold"] = false,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -4660,11 +4981,10 @@ _detalhes_database = {
 							["end_time"] = 1642870119,
 							["colocacao"] = 1,
 							["last_event"] = 1642870119,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 0.004077,
 							["start_time"] = 1642870114,
 							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -4676,16 +4996,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["end_time"] = 1642870119,
-							["friendlyfire_total"] = 0,
 							["aID"] = "2955",
+							["total"] = 0.005745,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.005745,
 							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.005745,
 							["fight_component"] = true,
+							["end_time"] = 1642870119,
+							["dps_started"] = false,
 							["damage_taken"] = 52.005745,
 							["nome"] = "Plainstrider",
 							["spells"] = {
@@ -4702,7 +5022,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1642870119,
 							["serial"] = "Creature-0-4447-1-9-2955-00006BF1BA",
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -4724,14 +5044,14 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["classe"] = "DRUID",
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["last_event"] = 0,
-							["tipo"] = 4,
 							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
 							["spell_cast"] = {
 								[5176] = 1,
@@ -4819,6 +5139,22 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "17:48:34",
+				["end_time"] = 568843.808,
+				["combat_id"] = 372,
+				["frags"] = {
+					["Plainstrider"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 7034,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 568838.743,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -4838,23 +5174,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 568843.808,
-				["combat_id"] = 372,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-				["combat_counter"] = 7034,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 568838.743,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:48:34",
-			}, -- [15]
+			}, -- [16]
 			{
 				{
 					["tipo"] = 2,
@@ -4873,15 +5193,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 63.00107,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
 							["total"] = 63.00107,
-							["damage_taken"] = 12.00107,
+							["on_hold"] = false,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -4950,11 +5271,10 @@ _detalhes_database = {
 							["end_time"] = 1642870097,
 							["colocacao"] = 1,
 							["last_event"] = 1642870097,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 12.00107,
 							["start_time"] = 1642870080,
 							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -4967,10 +5287,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["friendlyfire"] = {
-							},
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 63.005655,
+							["aID"] = "2955",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 12.005655,
@@ -4978,7 +5297,8 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 12.005655,
 							["fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Plainstrider",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5020,10 +5340,10 @@ _detalhes_database = {
 							["end_time"] = 1642870097,
 							["custom"] = 0,
 							["last_event"] = 1642870096,
-							["damage_taken"] = 63.005655,
+							["on_hold"] = false,
 							["start_time"] = 1642870082,
 							["serial"] = "Creature-0-4447-1-9-2955-00006BF1A0",
-							["aID"] = "2955",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -5045,14 +5365,14 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["classe"] = "DRUID",
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["last_event"] = 0,
-							["tipo"] = 4,
 							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
 							["spell_cast"] = {
 								[5176] = 1,
@@ -5140,6 +5460,22 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "17:48:01",
+				["end_time"] = 568822.06,
+				["combat_id"] = 371,
+				["frags"] = {
+					["Plainstrider"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 7033,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 568805.042,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -5159,23 +5495,7 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 568822.06,
-				["combat_id"] = 371,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-				["combat_counter"] = 7033,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 568805.042,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:48:01",
-			}, -- [16]
+			}, -- [17]
 			{
 				{
 					["tipo"] = 2,
@@ -5194,15 +5514,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 51.004036,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
 							["total"] = 51.004036,
-							["damage_taken"] = 2.004036,
+							["on_hold"] = false,
 							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
@@ -5272,11 +5593,10 @@ _detalhes_database = {
 							["end_time"] = 1642870070,
 							["colocacao"] = 1,
 							["last_event"] = 1642870076,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 2.004036,
 							["start_time"] = 1642870064,
 							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -5289,10 +5609,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["friendlyfire"] = {
-							},
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 51.006614,
+							["aID"] = "2955",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2.006614,
@@ -5300,7 +5619,8 @@ _detalhes_database = {
 							["dps_started"] = false,
 							["total"] = 2.006614,
 							["fight_component"] = true,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Plainstrider",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5341,10 +5661,10 @@ _detalhes_database = {
 							["end_time"] = 1642870070,
 							["custom"] = 0,
 							["last_event"] = 1642870080,
-							["damage_taken"] = 51.006614,
+							["on_hold"] = false,
 							["start_time"] = 1642870068,
 							["serial"] = "Creature-0-4447-1-9-2955-00006C0A66",
-							["aID"] = "2955",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -5366,14 +5686,14 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["classe"] = "DRUID",
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["last_event"] = 0,
-							["tipo"] = 4,
 							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
 							["spell_cast"] = {
 								[5176] = 2,
@@ -5461,6 +5781,22 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "17:47:44",
+				["end_time"] = 568794.496,
+				["combat_id"] = 370,
+				["frags"] = {
+					["Plainstrider"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 7032,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 568788.438,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -5480,343 +5816,6 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 568794.496,
-				["combat_id"] = 370,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-				["combat_counter"] = 7032,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 568788.438,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:47:44",
-			}, -- [17]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 369,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005237,
-							["damage_from"] = {
-								["Plainstrider"] = true,
-							},
-							["targets"] = {
-								["Plainstrider"] = 68,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 68.005237,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1642870045,
-							["damage_taken"] = 4.005237,
-							["tipo"] = 1,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 22,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Plainstrider"] = 43,
-										},
-										["n_dmg"] = 21,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 43,
-										["c_max"] = 22,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 22,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[5176] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Plainstrider"] = 25,
-										},
-										["n_dmg"] = 25,
-										["n_min"] = 12,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 25,
-										["c_max"] = 0,
-										["id"] = 5176,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 7.200130968716845,
-							["total"] = 68.005237,
-							["colocacao"] = 1,
-							["last_event"] = 1642870044,
-							["on_hold"] = false,
-							["start_time"] = 1642870035,
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.001518,
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 4,
-							},
-							["pets"] = {
-							},
-							["total"] = 4.001518,
-							["on_hold"] = false,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 4.001518,
-							["delay"] = 0,
-							["fight_component"] = true,
-							["end_time"] = 1642870045,
-							["aID"] = "2955",
-							["friendlyfire"] = {
-							},
-							["nome"] = "Plainstrider",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2,
-										["targets"] = {
-											["Moolatz"] = 4,
-										},
-										["n_dmg"] = 4,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 4,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["n_amt"] = 2,
-										["DODGE"] = 1,
-										["MISS"] = 1,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["dps_started"] = false,
-							["custom"] = 0,
-							["last_event"] = 1642870044,
-							["damage_taken"] = 68.001518,
-							["start_time"] = 1642870040,
-							["serial"] = "Creature-0-4447-1-9-2955-00006BEA0B",
-							["friendlyfire_total"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 369,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 369,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 369,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["classe"] = "DRUID",
-							["nome"] = "Moolatz",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["tipo"] = 4,
-							["aID"] = "4465-02B843FA",
-							["serial"] = "Player-4465-02B843FA",
-							["spell_cast"] = {
-								[5176] = 1,
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 369,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 568786.93,
-				["tempo_start"] = 1642870035,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					72, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					68, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "17:47:25",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Plainstrider",
-				["TotalElapsedCombatTime"] = 568769.4720000001,
-				["CombatEndedAt"] = 568769.4720000001,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Moolatz"] = 68.005237,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 568769.4720000001,
-				["combat_id"] = 369,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-				["combat_counter"] = 7031,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 568759.757,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "17:47:15",
 			}, -- [18]
 		},
 	},
@@ -5906,8 +5905,8 @@ _detalhes_database = {
 			["pos"] = {
 				["normal"] = {
 					["y"] = 573.7485961914062,
-					["x"] = -709.9259033203125,
-					["w"] = 228.9743957519531,
+					["x"] = -709.9258728027344,
+					["w"] = 228.9744415283203,
 					["h"] = 136.6408081054688,
 				},
 				["solo"] = {
@@ -5956,7 +5955,7 @@ _detalhes_database = {
 	},
 	["nick_tag_cache"] = {
 		["last_version"] = 14,
-		["nextreset"] = 1649491826,
+		["nextreset"] = 1650969863,
 	},
 	["last_instance_id"] = 189,
 	["announce_interrupts"] = {
@@ -5968,7 +5967,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1604861214,
 	["active_profile"] = "BetterThreat",
-	["last_day"] = "25",
+	["last_day"] = "11",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -5977,9 +5976,9 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["enabled"] = true,
 			["animate"] = true,
-			["author"] = "Details! Team",
-			["hide_pull_bar"] = false,
 			["useclasscolors"] = false,
+			["hide_pull_bar"] = false,
+			["author"] = "Details! Team",
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -5989,12 +5988,12 @@ _detalhes_database = {
 			["openedfromcommand"] = false,
 			["updatespeed"] = 0.2,
 			["dividebyhundred"] = true,
-			["showamount"] = false,
+			["alwaysshowme"] = true,
 			["useplayercolor"] = false,
 			["playSound"] = false,
 			["usefocus"] = false,
 			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["alwaysshowme"] = true,
+			["showamount"] = false,
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
@@ -6013,9 +6012,9 @@ _detalhes_database = {
 			["enabled"] = true,
 			["opened"] = 0,
 			["max_emote_segments"] = 3,
-			["author"] = "Details! Team",
-			["hide_on_combat"] = false,
 			["show_icon"] = 5,
+			["hide_on_combat"] = false,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
@@ -6073,7 +6072,7 @@ _detalhes_database = {
 			["point"] = "RIGHT",
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -6081,9 +6080,13 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["author"] = "Details! Team",
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["y"] = -183.107162475586,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -6095,37 +6098,33 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
+			["font_size"] = 10,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
+			["y"] = -183.107162475586,
 			["use_spark"] = false,
-			["font_size"] = 10,
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["main_frame_locked"] = true,
 			["arrow_anchor_y"] = 0,
 		},
+	},
+	["combat_counter"] = 7054,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["cached_roles"] = {
 	},
 	["announce_prepots"] = {
 		["enabled"] = false,
 		["reverse"] = false,
 		["channel"] = "SELF",
 	},
-	["combat_counter"] = 7051,
-	["cached_roles"] = {
-	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
 	["last_realversion"] = 145,
 	["character_data"] = {
-		["logons"] = 1806,
+		["logons"] = 1808,
 	},
-	["combat_id"] = 386,
+	["combat_id"] = 387,
 	["savedStyles"] = {
 		{
 			["hide_in_combat_type"] = 1,
@@ -6170,16 +6169,16 @@ _detalhes_database = {
 			},
 			["switch_healer"] = false,
 			["bars_sort_direction"] = 1,
-			["backdrop_texture"] = "None",
-			["menu_icons_size"] = 1,
 			["switch_healer_in_combat"] = false,
+			["skin"] = "Minimalistic",
+			["backdrop_texture"] = "None",
 			["menu2_icons_size"] = 1.20000004768372,
 			["tooltip"] = {
 				["n_abilities"] = 3,
 				["n_enemies"] = 3,
 			},
 			["stretch_button_side"] = 2,
-			["skin"] = "Minimalistic",
+			["menu_icons_size"] = 1,
 			["switch_all_roles_in_combat"] = {
 				2, -- [1]
 				1, -- [2]
@@ -6456,7 +6455,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["total"] = 0.00461,
+					["end_time"] = 1643020882,
 					["last_event"] = 0,
 					["classe"] = "DRUID",
 					["raid_targets"] = {
@@ -6464,10 +6463,9 @@ _detalhes_database = {
 					["total_without_pet"] = 0.00461,
 					["serial"] = "Player-4465-02B843FA",
 					["dps_started"] = false,
-					["end_time"] = 1643020882,
+					["total"] = 0.00461,
+					["last_dps"] = 0,
 					["damage_taken"] = 0.00461,
-					["friendlyfire"] = {
-					},
 					["nome"] = "Moolatz",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -6535,10 +6533,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1643020879,
 					["delay"] = 0,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 				}, -- [1]
 				{
 					["flag_original"] = 68136,
@@ -6550,9 +6549,9 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["damage_taken"] = 0.004182,
 					["aID"] = "2961",
+					["last_dps"] = 0,
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004182,
@@ -6560,7 +6559,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1643020882,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 0.004182,
 					["nome"] = "Mountain Cougar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -6599,11 +6598,11 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1643020879,
-					["delay"] = 0,
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1643020879,
+					["delay"] = 0,
+					["on_hold"] = false,
 				}, -- [2]
 				{
 					["flag_original"] = 68136,
@@ -6615,9 +6614,9 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["damage_taken"] = 0.003694,
 					["aID"] = "2955",
+					["last_dps"] = 0,
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003694,
@@ -6625,7 +6624,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1643020882,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 0.003694,
 					["nome"] = "Plainstrider",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -6664,11 +6663,11 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1643020879,
-					["delay"] = 0,
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1643020879,
+					["delay"] = 0,
+					["on_hold"] = false,
 				}, -- [3]
 			},
 		}, -- [1]
@@ -6687,16 +6686,16 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["buff_uptime"] = 0,
+					["pets"] = {
+					},
 					["buff_uptime_targets"] = {
 					},
 					["grupo"] = true,
 					["nome"] = "Moolatz",
+					["buff_uptime"] = 0,
+					["last_event"] = 0,
 					["spell_cast"] = {
 						[5176] = 0,
-					},
-					["last_event"] = 0,
-					["pets"] = {
 					},
 					["tipo"] = 4,
 					["aID"] = "4465-02B843FA",
