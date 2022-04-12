@@ -11,24 +11,24 @@ PallyPowerDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["autobuff"] = {
-				["autobutton"] = false,
-			},
 			["buffscale"] = 1,
+			["auras"] = false,
 			["layout"] = "Layout 1",
 			["seal"] = 6,
-			["auras"] = false,
-			["ShowTooltips"] = false,
-			["configscale"] = 1.2,
 			["rfbuff"] = false,
-			["enable"] = true,
 			["display"] = {
 				["enableDragHandle"] = false,
 			},
-			["SalvInCombat"] = true,
+			["enable"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
+			["configscale"] = 1.2,
+			["autobuff"] = {
+				["autobutton"] = false,
+			},
+			["SalvInCombat"] = true,
+			["ShowTooltips"] = false,
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -40,6 +40,18 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
+	["Vermina"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0, -- [4]
+		0, -- [5]
+		0, -- [6]
+		0, -- [7]
+		0, -- [8]
+		0, -- [9]
+		0, -- [10]
+	},
 }
 PallyPower_NormalAssignments = {
 }

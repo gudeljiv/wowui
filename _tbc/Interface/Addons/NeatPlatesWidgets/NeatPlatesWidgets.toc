@@ -1,0 +1,6 @@
+## Interface: 90200
+## Title: NeatPlates Widgets
+## Notes: Library of Widgets
+## Dependencies: NeatPlates
+
+Widgets.xml

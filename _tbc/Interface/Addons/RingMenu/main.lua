@@ -1,5 +1,5 @@
 local RingMenu_AddonName, RingMenu = ...
-local Masque, MasqueVersion = LibStub("Masque", true)
+local Masque, MasqueVersion = LibStub('Masque', true)
 
 local RingMenu_globalConfigDefault = {
 	numRings = 1,
@@ -58,24 +58,24 @@ function RingMenu_UpdateRing(ringID)
 
 	if not RingMenu.ringFrame[ringID] then
 		-- Lazy-init of the ringFrame itself
-		RingMenu.ringFrame[ringID] = CreateFrame("Frame", "RingMenuRingFrame" .. ringID, UIParent)
+		RingMenu.ringFrame[ringID] = CreateFrame('Frame', 'RingMenuRingFrame' .. ringID, UIParent)
 		local rf = RingMenu.ringFrame[ringID]
 		rf.ringID = ringID
 
 		-- Backdrop texture
-		rf.backdrop = rf:CreateTexture(rf:GetName() .. "Backdrop", "BACKGROUND")
-		rf.backdrop:SetPoint("BOTTOMLEFT", rf, "BOTTOMLEFT")
-		rf.backdrop:SetPoint("TOPRIGHT", rf, "TOPRIGHT")
-		rf.backdrop:SetTexture("Interface\\AddOns\\RingMenu\\RingMenuBackdrop.tga")
+		rf.backdrop = rf:CreateTexture(rf:GetName() .. 'Backdrop', 'BACKGROUND')
+		rf.backdrop:SetPoint('BOTTOMLEFT', rf, 'BOTTOMLEFT')
+		rf.backdrop:SetPoint('TOPRIGHT', rf, 'TOPRIGHT')
+		rf.backdrop:SetTexture('Interface\\AddOns\\RingMenu\\RingMenuBackdrop.tga')
 
 		-- An invisible button used as a secure handler for
 		-- (a) responding to CLICK RingMenuToggleRing*:LeftButton binding events on a secure path
 		-- (b) running secure event responses for the ring button OnClick event
-		rf.toggleButton = CreateFrame("Button", "RingMenuToggleRing" .. ringID, rf, "SecureHandlerMouseUpDownTemplate")
-		rf.toggleButton:SetAttribute("downbutton", "")
-		rf.toggleButton:SetFrameRef("UIParent", UIParent)
+		rf.toggleButton = CreateFrame('Button', 'RingMenuToggleRing' .. ringID, rf, 'SecureHandlerMouseUpDownTemplate')
+		rf.toggleButton:SetAttribute('downbutton', '')
+		rf.toggleButton:SetFrameRef('UIParent', UIParent)
 		rf.toggleButton:SetAttribute(
-			"_onmousedown",
+			'_onmousedown',
 			[[ -- (self, button)
 				local rf = self:GetParent()
 				local numRings = self:GetAttribute("numRings")
@@ -112,23 +112,23 @@ function RingMenu_UpdateRing(ringID)
 	local frameSize = 2 * config.radius * config.backdropScale
 	rf:SetSize(frameSize, frameSize)
 	rf.backdrop:SetVertexColor(config.backdropColor.r, config.backdropColor.g, config.backdropColor.b, config.backdropColor.a)
-	rf.toggleButton:SetAttribute("allowMultipleOpenRings", RingMenu_globalConfig.allowMultipleOpenRings)
-	rf:SetAttribute("closeOnClick", config.closeOnClick)
+	rf.toggleButton:SetAttribute('allowMultipleOpenRings', RingMenu_globalConfig.allowMultipleOpenRings)
+	rf:SetAttribute('closeOnClick', config.closeOnClick)
 
 	-- Lazy-init this ringFrame's buttons
 	rf.button = rf.button or {}
 	for buttonID = 1, (config.numSlots or 1) do
 		if not rf.button[buttonID] then
-			rf.button[buttonID] = CreateFrame("CheckButton", "RingMenuRingFrame" .. ringID .. "Button" .. buttonID, rf, "ActionBarButtonTemplate")
+			rf.button[buttonID] = CreateFrame('CheckButton', 'RingMenuRingFrame' .. ringID .. 'Button' .. buttonID, rf, 'ActionBarButtonTemplate')
 			if Masque then
-				local masqueRing = Masque:Group("RingMenu")
+				local masqueRing = Masque:Group('RingMenu')
 				masqueRing:AddButton(rf.button[buttonID])
 			end
 			local button = rf.button[buttonID]
 			button.ringID = ringID
 			button.buttonID = buttonID
 
-			rf.toggleButton:WrapScript(button, "OnClick", [[ -- (self, button, down)
+			rf.toggleButton:WrapScript(button, 'OnClick', [[ -- (self, button, down)
                 local rf = self:GetParent()
                 local closeOnClick = rf:GetAttribute("closeOnClick")
                 if closeOnClick then
@@ -141,11 +141,11 @@ function RingMenu_UpdateRing(ringID)
 		local angle = 2 * math.pi * (0.25 - (buttonID - 1) / config.numSlots - config.angle / 360.0)
 		local posX = config.radius * math.cos(angle)
 		local posY = config.radius * math.sin(angle)
-		button:SetPoint("CENTER", rf, "CENTER", posX, posY)
-		button:SetAttribute("type", "action")
+		button:SetPoint('CENTER', rf, 'CENTER', posX, posY)
+		button:SetAttribute('type', 'action')
 		local firstSlot = config.firstSlot or 1
 		local buttonSlot = firstSlot + buttonID - 1
-		button:SetAttribute("action", buttonSlot)
+		button:SetAttribute('action', buttonSlot)
 	end
 	-- Hide unused buttons
 	for id, button in ipairs(rf.button) do
@@ -161,10 +161,10 @@ function RingMenu_UpdateRingCrossReferences()
 		for ringIDOther = 1, RingMenu_globalConfig.numRings do
 			local rfOther = RingMenu.ringFrame[ringIDOther]
 			if rfOther then
-				rf.toggleButton:SetFrameRef("RingFrame" .. ringIDOther, rfOther)
+				rf.toggleButton:SetFrameRef('RingFrame' .. ringIDOther, rfOther)
 			end
 		end
-		rf.toggleButton:SetAttribute("numRings", RingMenu_globalConfig.numRings)
+		rf.toggleButton:SetAttribute('numRings', RingMenu_globalConfig.numRings)
 	end
 end
 
@@ -176,9 +176,9 @@ function RingMenu_UpdateAllRings()
 end
 
 -- The main frame is used only to respond to global events
-RingMenu.mainFrame = CreateFrame("Frame")
+RingMenu.mainFrame = CreateFrame('Frame')
 RingMenu.mainFrame.OnEvent = function(self, event, arg1)
-	if event == "ADDON_LOADED" and arg1 == RingMenu_AddonName then
+	if event == 'ADDON_LOADED' and arg1 == RingMenu_AddonName then
 		-- Update empty fields in settings with default values
 		RingMenu_globalConfig = RingMenu_globalConfig or {}
 		RingMenu.update_with_defaults(RingMenu_globalConfig, RingMenu_globalConfigDefault)
@@ -199,12 +199,12 @@ RingMenu.mainFrame.OnEvent = function(self, event, arg1)
 		RingMenuOptions_SetupPanel()
 	end
 end
-RingMenu.mainFrame:RegisterEvent("ADDON_LOADED")
-RingMenu.mainFrame:SetScript("OnEvent", RingMenu.mainFrame.OnEvent)
+RingMenu.mainFrame:RegisterEvent('ADDON_LOADED')
+RingMenu.mainFrame:SetScript('OnEvent', RingMenu.mainFrame.OnEvent)
 
-SLASH_RINGMENU1 = "/ringmenu"
+SLASH_RINGMENU1 = '/ringmenu'
 function SlashCmdList.RINGMENU(msg, editBox)
 	-- Workaround: this function has to be called twice
-	InterfaceOptionsFrame_OpenToCategory("RingMenu")
-	InterfaceOptionsFrame_OpenToCategory("RingMenu")
+	InterfaceOptionsFrame_OpenToCategory('RingMenu')
+	InterfaceOptionsFrame_OpenToCategory('RingMenu')
 end
