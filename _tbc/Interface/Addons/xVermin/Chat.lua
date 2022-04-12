@@ -192,6 +192,23 @@ local function SetChat()
 
 	local background, tab
 
+	-- if not ChatFrame1.SetBackdrop then
+	-- 	Mixin(ChatFrame1, BackdropTemplateMixin)
+	-- end
+	-- ChatFrame1:SetBackdrop(
+	-- 	{
+	-- 		bgFile = xVermin.Config.background.white,
+	-- 		edgeFile = '',
+	-- 		tile = false,
+	-- 		tileSize = 0,
+	-- 		edgeSize = 0,
+	-- 		insets = {left = 0, right = 0, top = 0, bottom = 0}
+	-- 	}
+	-- )
+	-- ChatFrame1:SetBackdropColor(0, 0, 0, 0.6)
+	-- ChatFrame1:SetFrameStrata('BACKGROUND')
+	-- ChatFrame1:CreateBeautyBorder(6)
+
 	for i, v in pairs(
 		{
 			ChatFrame1,
