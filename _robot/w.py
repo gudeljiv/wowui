@@ -19,16 +19,16 @@ x_interrupt = 1200
 y_interrupt = 1100
 
 skills = [
-    {"name": "rend", "key": "5", "r": 79, "g": 2, "b": 0, "rgb": (79, 2, 0)},
-    {"name": "battle shout", "key": "f4", "r": 193, "g": 115, "b": 110, "rgb": (193, 115, 110)},
-    {"name": "overpower", "key": "4", "r": 89, "g": 97, "b": 107, "rgb": (89, 97, 107)},
-    {"name": "heroic strike", "key": "2", "r": 153, "g": 150, "b": 153, "rgb": (153, 150, 153), "aoe": False},
-    {"name": "cleave", "key": "3", "r": 128, "g": 128, "b": 126, "rgb": (128, 128, 126), "aoe": True},
-    {"name": "sunder armor", "key": "g", "r": 189, "g": 126, "b": 116, "rgb": (189, 126, 116), "aoe": False},
-    {"name": "revenge", "key": "1", "r": 205, "g": 195, "b": 195, "rgb": (205, 195, 195)},
-    {"name": "execute", "key": "f", "r": 76, "g": 17, "b": 21, "rgb": (76, 17, 21)},
-    {"name": "mortal strike", "key": "f11", "r": 147, "g": 145, "b": 146, "rgb": (147, 145, 146), "aoe": False},
-    {"name": "whirlwind", "key": "6", "r": 105, "g": 212, "b": 240, "rgb": (105, 212, 240)},
+    {"name": "battle shout", "key": "f4", "r": 193, "g": 115, "b": 110, "rgb": (203, 121, 116)},
+    {"name": "sunder armor", "key": "g", "r": 189, "g": 126, "b": 116, "rgb": (191, 129, 115), "aoe": False},
+    {"name": "mortal strike", "key": "f11", "r": 147, "g": 145, "b": 146, "rgb": (163, 160, 162), "aoe": False},
+    {"name": "rend", "key": "5", "r": 79, "g": 2, "b": 0, "rgb": (80, 2, 0)},
+    {"name": "overpower", "key": "4", "r": 89, "g": 97, "b": 107, "rgb": (75, 89, 102)},
+    {"name": "heroic strike", "key": "2", "r": 153, "g": 150, "b": 153, "rgb": (150, 147, 151), "aoe": False},
+    {"name": "cleave", "key": "3", "r": 128, "g": 128, "b": 126, "rgb": (127, 129, 129), "aoe": True},
+    {"name": "revenge", "key": "1", "r": 205, "g": 195, "b": 195, "rgb": (215, 204, 205)},
+    {"name": "execute", "key": "f", "r": 76, "g": 17, "b": 21, "rgb": (71, 0, 0)},
+    {"name": "whirlwind", "key": "6", "r": 105, "g": 212, "b": 240, "rgb": (115, 226, 248)},
 
     {"name": "mongoose bite", "key": "f10", "r": 135, "g": 133, "b": 135, "rgb": (135, 133, 135)},
     # {"name": "healing potion", "key": "6", "r": 227, "g": 34, "b": 27, "rgb": (227, 34, 27)}
