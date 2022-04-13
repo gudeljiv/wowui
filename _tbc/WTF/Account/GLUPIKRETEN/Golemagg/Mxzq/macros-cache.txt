@@ -1,3 +1,9 @@
+VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Rapid Fire
+/cast Blood Fury
+/cast Bestial Wrath
+END
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /petattack
@@ -39,10 +45,4 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 /petattack
 /startattack
 /cast Serpent Sting
-END
-VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast Rapid Fire
-/cast Blood Fury
-/cast Bestial Wrath
 END

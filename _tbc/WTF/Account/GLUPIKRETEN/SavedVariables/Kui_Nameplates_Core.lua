@@ -6,10 +6,17 @@ KuiNameplatesCoreSaved = {
 	["profiles"] = {
 		["default"] = {
 			["nameonly_all_enemies"] = true,
+			["name_colour_npc_friendly"] = {
+				0.00784313725490196, -- [1]
+				1, -- [2]
+				0, -- [3]
+			},
 			["level_nameonly"] = true,
-			["target_arrows_size"] = 38,
+			["threat_brackets"] = true,
 			["auras_hide_all_other"] = true,
-			["guild_text_players"] = true,
+			["combat_hostile"] = 3,
+			["health_text_hostile_max"] = 2,
+			["nameonly_enemies"] = false,
 			["frame_width"] = 120,
 			["auras_icon_normal_size"] = 28,
 			["nameonly_combat_hostile"] = false,
@@ -17,25 +24,21 @@ KuiNameplatesCoreSaved = {
 			["health_text_hostile_dmg"] = 2,
 			["nameonly_neutral"] = true,
 			["mouseover_glow"] = true,
-			["frame_width_target"] = 160,
+			["tankmode_force_offtank"] = true,
 			["auras_sort"] = 1,
-			["nameonly_combat_hostile_player"] = false,
+			["target_arrows_size"] = 38,
+			["frame_width_target"] = 160,
+			["guild_text_players"] = true,
 			["health_text"] = true,
-			["name_colour_npc_friendly"] = {
-				0.00784313725490196, -- [1]
-				1, -- [2]
-				0, -- [3]
-			},
-			["cvar_enable"] = true,
 			["name_colour_player_hostile"] = {
 				1, -- [1]
 				0, -- [2]
 				0.00784313725490196, -- [3]
 			},
-			["nameonly_damaged_enemies"] = false,
+			["colour_player_class"] = true,
 			["global_scale"] = 1.3,
-			["nameonly_hostile_players"] = true,
-			["threat_brackets"] = true,
+			["fade_non_target_alpha"] = 0.75,
+			["cvar_enable"] = true,
 			["name_colour_npc_hostile"] = {
 				1, -- [1]
 				0, -- [2]
@@ -43,7 +46,7 @@ KuiNameplatesCoreSaved = {
 			},
 			["bar_animation"] = 2,
 			["execute_enabled"] = false,
-			["health_text_hostile_max"] = 2,
+			["nameonly_damaged_enemies"] = false,
 			["bar_texture"] = "Glamour2",
 		},
 	},

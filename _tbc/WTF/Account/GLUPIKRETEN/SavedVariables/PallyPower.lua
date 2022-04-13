@@ -11,24 +11,21 @@ PallyPowerDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["buffscale"] = 1,
-			["auras"] = false,
-			["layout"] = "Layout 1",
-			["seal"] = 6,
-			["rfbuff"] = false,
-			["display"] = {
-				["enableDragHandle"] = false,
-			},
-			["enable"] = true,
-			["minimap"] = {
-				["show"] = false,
-			},
-			["configscale"] = 1.2,
 			["autobuff"] = {
 				["autobutton"] = false,
 			},
-			["SalvInCombat"] = true,
+			["buffscale"] = 1,
+			["layout"] = "Layout 6",
+			["seal"] = 6,
+			["auras"] = false,
 			["ShowTooltips"] = false,
+			["configscale"] = 1.2,
+			["rfbuff"] = false,
+			["enable"] = true,
+			["SalvInCombat"] = true,
+			["minimap"] = {
+				["show"] = false,
+			},
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -41,22 +38,22 @@ PallyPowerDB = {
 }
 PallyPower_Assignments = {
 	["Vermina"] = {
-		0, -- [1]
-		0, -- [2]
-		0, -- [3]
-		0, -- [4]
-		0, -- [5]
-		0, -- [6]
-		0, -- [7]
-		0, -- [8]
-		0, -- [9]
-		0, -- [10]
+		2, -- [1]
+		2, -- [2]
+		1, -- [3]
+		2, -- [4]
+		2, -- [5]
+		2, -- [6]
+		1, -- [7]
+		1, -- [8]
+		1, -- [9]
+		2, -- [10]
 	},
 }
 PallyPower_NormalAssignments = {
 }
 PallyPower_AuraAssignments = {
-	["Vermina"] = 1,
+	["Vermina"] = 2,
 	["Rojïn-Razorfen"] = 2,
 }
 PallyPower_SavedPresets = nil
