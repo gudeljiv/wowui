@@ -79,13 +79,13 @@ Lorti UI Classic: enabled
 ls_Toasts: enabled
 MikScrollingBattleText: enabled
 MSBTOptions: enabled
-NeatPlates: enabled
-NeatPlatesHub: enabled
-NeatPlatesWidgets: enabled
+NeatPlates: disabled
+NeatPlatesHub: disabled
+NeatPlatesWidgets: disabled
 NeatPlates_Alvara: enabled
 NeatPlates_Graphite: enabled
 NeatPlates_Grey: enabled
-NeatPlates_Neon: enabled
+NeatPlates_Neon: disabled
 NeatPlates_Quatre: enabled
 NeatPlates_Roth: enabled
 NeatPlates_Slim_Horizontal: enabled
@@ -157,3 +157,4 @@ ElvUI_DTBars2: disabled
 ElvUI_QuestXP: disabled
 ElvUI_CustomTags: disabled
 kExtraBossFrames: disabled
+TidyPlates_ThreatPlates: disabled

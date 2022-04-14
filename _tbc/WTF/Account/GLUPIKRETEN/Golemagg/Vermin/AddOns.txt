@@ -27,7 +27,7 @@ ClassicAuraDurations: disabled
 Leatrix_Plus: enabled
 whoaThickFrames_Classic: disabled
 TradeSkillMaster: enabled
-NeatPlates: enabled
+NeatPlates: disabled
 Plater: disabled
 whoaThickFrames_BCC: enabled
 !Colorz: enabled
@@ -69,12 +69,12 @@ Lorti UI Classic: enabled
 ls_Toasts: enabled
 MikScrollingBattleText: enabled
 MSBTOptions: enabled
-NeatPlatesHub: enabled
-NeatPlatesWidgets: enabled
+NeatPlatesHub: disabled
+NeatPlatesWidgets: disabled
 NeatPlates_Alvara: enabled
 NeatPlates_Graphite: enabled
 NeatPlates_Grey: enabled
-NeatPlates_Neon: enabled
+NeatPlates_Neon: disabled
 NeatPlates_Quatre: enabled
 NeatPlates_Roth: enabled
 NeatPlates_Slim_Horizontal: enabled
@@ -124,3 +124,4 @@ Kui_Nameplates_Core: disabled
 MissingTradeSkillsList_TBC_Data: enabled
 NovaInstanceTracker: enabled
 PallyPower: enabled
+TidyPlates_ThreatPlates: disabled
