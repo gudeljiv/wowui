@@ -35,6 +35,5 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /use item:27674
 END
 VER 3 0000000000000010 "TEST" "3940790"
-/run ChatFrame1TopTexture:Hide()
-/run ChatFrame1Background:Hide()
+/run print(CustomContainer_2:isProtected())
 END

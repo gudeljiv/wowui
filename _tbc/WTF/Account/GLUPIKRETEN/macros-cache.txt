@@ -30,11 +30,10 @@ VER 3 000000000000000B "lvl enchant" "132089"
 /click StaticPopup1Button1
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:29292
+#showtooltip item:27651
 /cast feed pet
-/use item:29292
+/use item:27651
 END
 VER 3 0000000000000010 "TEST" "3940790"
-/run ChatFrame1TopTexture:Hide()
-/run ChatFrame1Background:Hide()
+/run print(CustomContainer_2:isProtected())
 END

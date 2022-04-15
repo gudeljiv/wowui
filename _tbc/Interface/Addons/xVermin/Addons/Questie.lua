@@ -40,7 +40,6 @@ C_Timer.NewTicker(
 					end
 					self.SetPoint = function()
 					end
-					self:SetMovable(false)
 
 					TomTomCrazyArrow:SetPoint('TOPRIGHT', self, 'TOPLEFT', -20, -10)
 

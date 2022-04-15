@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 4932,
 	["lastSanitation"] = 3,
-	["session"] = 4917,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -733,8 +733,8 @@ BugGrabberDB = {
 		}, -- [92]
 		{
 			["message"] = "(null)",
-			["session"] = 4904,
 			["time"] = "2022/03/09 13:39:43",
+			["session"] = 4904,
 			["counter"] = 6,
 		}, -- [93]
 		{
@@ -795,14 +795,14 @@ BugGrabberDB = {
 		}, -- [100]
 		{
 			["message"] = "  (null)",
-			["session"] = 4914,
 			["time"] = "2022/04/13 16:37:53",
+			["session"] = 4914,
 			["counter"] = 3,
 		}, -- [101]
 		{
 			["message"] = " (null)",
-			["session"] = 4914,
 			["time"] = "2022/04/11 11:49:12",
+			["session"] = 4914,
 			["counter"] = 13,
 		}, -- [102]
 		{
@@ -838,20 +838,76 @@ BugGrabberDB = {
 			["counter"] = 2,
 		}, -- [106]
 		{
+			["message"] = "[string \"print(CustomContainer_2:isLocked())\"]:1: attempt to call method 'isLocked' (a nil value)",
+			["time"] = "2022/04/15 11:29:11",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:118\n(*temporary) = nil\n(*temporary) = CustomContainer_2 {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n beautyBorder = <table> {\n }\n Center = <unnamed> {\n }\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n RightEdge = <unnamed> {\n }\n backdropInfo = <table> {\n }\n BottomEdge = <unnamed> {\n }\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n BottomLeftCorner = <unnamed> {\n }\n BottomRightCorner = <unnamed> {\n }\n TopEdge = <unnamed> {\n }\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n TopRightCorner = <unnamed> {\n }\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n TopLeftCorner = <unnamed> {\n }\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n LeftEdge = <unnamed> {\n }\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n}\n(*temporary) = \"attempt to call method 'isLocked' (a nil value)\"\n",
+			["stack"] = "[string \"print(CustomContainer_2:isLocked())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 4923,
+			["counter"] = 1,
+		}, -- [107]
+		{
+			["message"] = "[string \"print(CustomContainer_2:isMoveable())\"]:1: attempt to call method 'isMoveable' (a nil value)",
+			["time"] = "2022/04/15 11:29:20",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:118\n(*temporary) = nil\n(*temporary) = CustomContainer_2 {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n beautyBorder = <table> {\n }\n Center = <unnamed> {\n }\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n RightEdge = <unnamed> {\n }\n backdropInfo = <table> {\n }\n BottomEdge = <unnamed> {\n }\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n BottomLeftCorner = <unnamed> {\n }\n BottomRightCorner = <unnamed> {\n }\n TopEdge = <unnamed> {\n }\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n TopRightCorner = <unnamed> {\n }\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n TopLeftCorner = <unnamed> {\n }\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n LeftEdge = <unnamed> {\n }\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n}\n(*temporary) = \"attempt to call method 'isMoveable' (a nil value)\"\n",
+			["stack"] = "[string \"print(CustomContainer_2:isMoveable())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 4923,
+			["counter"] = 1,
+		}, -- [108]
+		{
+			["message"] = "[string \"print(CustomContainer_2:isProtected())\"]:1: attempt to call method 'isProtected' (a nil value)",
+			["time"] = "2022/04/15 11:31:21",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:118\n(*temporary) = nil\n(*temporary) = CustomContainer_2 {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n beautyBorder = <table> {\n }\n Center = <unnamed> {\n }\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n RightEdge = <unnamed> {\n }\n backdropInfo = <table> {\n }\n BottomEdge = <unnamed> {\n }\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n BottomLeftCorner = <unnamed> {\n }\n BottomRightCorner = <unnamed> {\n }\n TopEdge = <unnamed> {\n }\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n TopRightCorner = <unnamed> {\n }\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n TopLeftCorner = <unnamed> {\n }\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n LeftEdge = <unnamed> {\n }\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n}\n(*temporary) = \"attempt to call method 'isProtected' (a nil value)\"\n",
+			["stack"] = "[string \"print(CustomContainer_2:isProtected())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 4923,
+			["counter"] = 1,
+		}, -- [109]
+		{
 			["message"] = "...s\\Questie\\Modules\\Tracker\\QuestieTrackerPrivates.lua:32: Frame Questie_BaseFrame is not movable",
 			["time"] = "2022/02/18 13:33:52",
 			["locals"] = "(*temporary) = Questie_BaseFrame {\n 0 = <userdata>\n SetPoint = <function> defined @Interface\\AddOns\\xVermin\\Addons/Questie.lua:25\n BottomEdge = <unnamed> {\n }\n beautyShadow = <table> {\n }\n beautyBorder = <table> {\n }\n TopLeftCorner = <unnamed> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n Update = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:239\n Center = <unnamed> {\n }\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n RightEdge = <unnamed> {\n }\n backdropInfo = <table> {\n }\n ClearAllPoints = <function> defined @Interface\\AddOns\\xVermin\\Addons/Questie.lua:24\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n BottomLeftCorner = <unnamed> {\n }\n BottomRightCorner = <unnamed> {\n }\n TopEdge = <unnamed> {\n }\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n TopRightCorner = <unnamed> {\n }\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n sizer = Questie_Sizer {\n }\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n LeftEdge = <unnamed> {\n }\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n}\n",
 			["stack"] = "[string \"=[C]\"]: in function `StartMoving'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTrackerPrivates.lua\"]:32: in function <...s\\Questie\\Modules\\Tracker\\QuestieTrackerPrivates.lua:19>",
-			["session"] = 4917,
-			["counter"] = 12,
-		}, -- [107]
+			["session"] = 4924,
+			["counter"] = 13,
+		}, -- [110]
+		{
+			["message"] = "...s\\Questie\\Modules\\Tracker\\QuestieTrackerPrivates.lua:33: Frame Questie_BaseFrame is not movable",
+			["time"] = "2022/04/15 11:38:21",
+			["locals"] = "(*temporary) = Questie_BaseFrame {\n 0 = <userdata>\n SetPoint = <function> defined @Interface\\AddOns\\xVermin\\Addons/Questie.lua:41\n BottomEdge = <unnamed> {\n }\n beautyShadow = <table> {\n }\n beautyBorder = <table> {\n }\n TopLeftCorner = <unnamed> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n Update = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:239\n Center = <unnamed> {\n }\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n RightEdge = <unnamed> {\n }\n backdropInfo = <table> {\n }\n ClearAllPoints = <function> defined @Interface\\AddOns\\xVermin\\Addons/Questie.lua:39\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n BottomLeftCorner = <unnamed> {\n }\n BottomRightCorner = <unnamed> {\n }\n TopEdge = <unnamed> {\n }\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n TopRightCorner = <unnamed> {\n }\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n sizer = Questie_Sizer {\n }\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n LeftEdge = <unnamed> {\n }\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n}\n",
+			["stack"] = "[string \"=[C]\"]: in function `StartMoving'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTrackerPrivates.lua\"]:33: in function <...s\\Questie\\Modules\\Tracker\\QuestieTrackerPrivates.lua:19>",
+			["session"] = 4925,
+			["counter"] = 1,
+		}, -- [111]
 		{
 			["message"] = "...ddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:139: Wrong data type, expected 'string', got nil ",
 			["time"] = "2022/04/04 17:24:55",
 			["locals"] = "(*temporary) = nil\n(*temporary) = \"Wrong data type, expected 'string', got nil \"\n",
 			["stack"] = "[string \"=[C]\"]: in function `assert'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua\"]:139: in function `GetProfessionInfoByItemName'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua\"]:112: in function `GetProfessionRequiredSkillColor'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua\"]:161: in function `RedrawTooltip'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua\"]:43: in function <...face\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua:38>\n[string \"=[C]\"]: ?",
-			["session"] = 4917,
-			["counter"] = 35,
-		}, -- [108]
+			["session"] = 4928,
+			["counter"] = 155,
+		}, -- [112]
+		{
+			["message"] = "...ddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:139: Wrong data type, expected 'string', got string ",
+			["time"] = "2022/04/15 17:17:45",
+			["locals"] = "(*temporary) = false\n(*temporary) = \"Wrong data type, expected 'string', got string \"\n",
+			["stack"] = "[string \"=[C]\"]: in function `assert'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua\"]:139: in function `GetProfessionInfoByItemName'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua\"]:104: in function `ModifyTooltip'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua\"]:40: in function <...face\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua:38>",
+			["session"] = 4929,
+			["counter"] = 8,
+		}, -- [113]
+		{
+			["message"] = "...ddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:140: Wrong data type, expected 'string', got string ",
+			["time"] = "2022/04/15 17:18:45",
+			["locals"] = "(*temporary) = false\n(*temporary) = \"Wrong data type, expected 'string', got string \"\n",
+			["stack"] = "[string \"=[C]\"]: in function `assert'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua\"]:140: in function `GetProfessionInfoByItemName'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua\"]:104: in function `ModifyTooltip'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua\"]:40: in function <...face\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua:38>\n[string \"=[C]\"]: ?",
+			["session"] = 4930,
+			["counter"] = 3,
+		}, -- [114]
+		{
+			["message"] = "...ddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:240: attempt to compare number with string",
+			["time"] = "2022/04/15 17:21:45",
+			["locals"] = "self = <table> {\n GetGatheringSkillColor = <function> defined @Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:234\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:367\n Enable = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:294\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n EnableModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:332\n modules = <table> {\n }\n GetModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:210\n IterateEmbeds = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:442\n IsProfessionItemName = <function> defined @Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:216\n defaultModuleLibraries = <table> {\n }\n GetProfessionRequiredSkillColor = <function> defined @Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:110\n GetPlayerProfessionSkillLevelByProfessionName = <function> defined @Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:122\n GetDataKeyByLookupValue = <function> defined @Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:277\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:409\n CalculateDifficultyByUnitLevel = <function> defined @Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:224\n name = \"Track Everything_GatheringInfo\"\n IsEnabled = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:451\n orderedModules = <table> {\n }\n DisableModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:350\n RegisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n UnregisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:153\n GetDataByKey = <function> defined @Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:106\n IsModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:217\n baseName = \"TrackEverything\"\n SetDefaultModuleState = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:387\n SendMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:59\n GetLookupValues = <function> defined @Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:262\n SetEnabledState = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n GetProfessionInfoByItemName = <function> defined @Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:137\n enabledState = true\n GetData = <function> defined @Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:258\n RegisterEvent = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n UnregisterAllMessages = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n GetProfessionNameByEntryName = <function> defined @Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:181\n GetRGBColorsFromQuestDifficulty = <function> defined @Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:287\n OnInitialize = <function> defined @Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:99\n IterateModules = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:437\n NewModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:235\n defaultModuleState = true\n GetName = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:279\n moduleName = \"GatheringInfo\"\n UnregisterEvent = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:153\n Disable = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:314\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua\"]:240: in function <...ddOns\\TrackEverything\\Core\\Service\\GatheringInfo.lua:234>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua\"]:161: in function `RedrawTooltip'\n[string \"@Interface\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua\"]:43: in function <...face\\AddOns\\TrackEverything\\Core\\Service\\Tooltip.lua:38>\n[string \"=[C]\"]: ?",
+			["session"] = 4931,
+			["counter"] = 4,
+		}, -- [115]
 	},
 }

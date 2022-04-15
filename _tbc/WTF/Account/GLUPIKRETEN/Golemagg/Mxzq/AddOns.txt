@@ -111,7 +111,7 @@ Blizzard_CUFProfiles: disabled
 AuctionFaster: disabled
 aux-addon: disabled
 D4KiR Missing Power: disabled
-TrackEverything: enabled
+TrackEverything: disabled
 Kui_Media: enabled
 Kui_Nameplates: enabled
 Kui_Nameplates_Core_Config: enabled
