@@ -125,13 +125,6 @@ X: 243
 Y: -107
 W: 50
 H: 50
-Frame: PallyPowerBlessingsFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 1098
-H: 1200
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
@@ -139,6 +132,13 @@ X: -232
 Y: 134
 W: 30
 H: 30
+Frame: PallyPowerBlessingsFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 1098
+H: 229
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER

@@ -41,13 +41,6 @@ X: -388
 Y: -183
 W: 500
 H: 478
-Frame: TargetFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 250
-Y: -96
-W: 232
-H: 100
 Frame: FocusFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -118,6 +111,13 @@ X: 243
 Y: -107
 W: 50
 H: 50
+Frame: TargetFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 250
+Y: -96
+W: 232
+H: 100
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM

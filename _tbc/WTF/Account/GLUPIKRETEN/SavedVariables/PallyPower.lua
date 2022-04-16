@@ -22,10 +22,10 @@ PallyPowerDB = {
 			["configscale"] = 1.2,
 			["rfbuff"] = false,
 			["enable"] = true,
+			["SalvInCombat"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
-			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -43,6 +43,7 @@ PallyPower_NormalAssignments = {
 PallyPower_AuraAssignments = {
 	["Vermina"] = 1,
 	["Rojïn-Razorfen"] = 2,
+	["Carroll"] = 0,
 }
 PallyPower_SavedPresets = nil
 PallyPower_ChanNames = {

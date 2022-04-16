@@ -380,11 +380,10 @@ AtlasLootClassicDB = {
 					-344.3334350585938, -- [4]
 					141.3907928466797, -- [5]
 				},
-				["selectedGameVersion"] = 1,
 				["selected"] = {
 					nil, -- [1]
-					"RazorfenKraul", -- [2]
-					nil, -- [3]
+					"TheShatteredHalls", -- [2]
+					3, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},
