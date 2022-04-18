@@ -19,6 +19,8 @@ x_interrupt = 1200
 y_interrupt = 1100
 
 skills = [
+
+    # first system settings
     {"name": "battle shout", "key": "f4", "r": 193, "g": 115, "b": 110, "rgb": (203, 121, 116)},
     {"name": "sunder armor", "key": "g", "r": 189, "g": 126, "b": 116, "rgb": (191, 129, 115), "aoe": False},
     {"name": "mortal strike", "key": "f11", "r": 147, "g": 145, "b": 146, "rgb": (163, 160, 162), "aoe": False},
@@ -30,7 +32,19 @@ skills = [
     {"name": "execute", "key": "f", "r": 76, "g": 17, "b": 21, "rgb": (71, 0, 0)},
     {"name": "whirlwind", "key": "6", "r": 105, "g": 212, "b": 240, "rgb": (115, 226, 248)},
 
-    {"name": "mongoose bite", "key": "f10", "r": 135, "g": 133, "b": 135, "rgb": (135, 133, 135)},
+    # second system settings
+    # {"name": "battle shout", "key": "f4", "r": 193, "g": 115, "b": 110, "rgb": (193, 115, 110)},
+    # {"name": "sunder armor", "key": "g", "r": 189, "g": 126, "b": 116, "rgb": (189, 126, 116)},
+    # {"name": "mortal strike", "key": "f11", "r": 147, "g": 145, "b": 146, "rgb": (147, 145, 146)},
+    # {"name": "rend", "key": "5", "r": 79, "g": 2, "b": 0, "rgb": (79, 2, 0)},
+    # {"name": "overpower", "key": "4", "r": 88, "g": 99, "b": 107, "rgb": (88, 99, 107)},
+    # {"name": "heroic strike", "key": "2", "r": 153, "g": 150, "b": 153, "rgb": (153, 150, 153), "aoe": False},
+    # {"name": "cleave", "key": "3", "r": 153, "g": 150, "b": 153, "rgb": (153, 150, 153), "aoe": True},
+    # {"name": "revenge", "key": "1", "r": 205, "g": 195, "b": 195, "rgb": (205, 195, 195)},
+    # {"name": "execute", "key": "f", "r": 76, "g": 17, "b": 21, "rgb": (76, 17, 21)},
+    # {"name": "whirlwind", "key": "6", "r": 105, "g": 210, "b": 240, "rgb": (105, 210, 240)},
+
+    # {"name": "mongoose bite", "key": "f10", "r": 135, "g": 133, "b": 135, "rgb": (135, 133, 135)},
     # {"name": "healing potion", "key": "6", "r": 227, "g": 34, "b": 27, "rgb": (227, 34, 27)}
 ]
 
@@ -54,11 +68,11 @@ with keyboard.Listener(on_press=on_press) as listener:
 
     while True:
 
-        time.sleep(0.25)
+        time.sleep(0.2)
         active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
         # ako je chat otvoren.. ili nesto trece... ako je kockica bijela
-        if pyautogui.pixel(x_aoe, y_aoe) == (255, 254, 255):
+        if pyautogui.pixel(x_aoe, y_aoe) == (255, 254, 255) and debug == False:
             if dprint:
                 print("skipping", "...")
             continue
@@ -67,20 +81,24 @@ with keyboard.Listener(on_press=on_press) as listener:
             if dprint:
                 print("interrupt", "f9")
             pyautogui.press("f9", presses=3)
-            pyautogui.press("f9", presses=3)
-            pyautogui.press("f9", presses=3)
-            pyautogui.press("f9", presses=3)
 
         if debug:
             time.sleep(1)
             if dprint:
-                print("coords:", pyautogui.pixel(x, y), active_window)
+                print(pyautogui.pixel(x, y), pyautogui.pixel(x, y)[0], pyautogui.pixel(x, y)[1], pyautogui.pixel(x, y)[2])
+                # print("coords:", pyautogui.pixel(x, y), active_window)
         else:
             if(active_window != "World of Warcraft"):
                 continue
 
             for skill in skills:
-                if pyautogui.pixel(x, y) == skill["rgb"]:
+                r = pyautogui.pixel(x, y)[0]
+                g = pyautogui.pixel(x, y)[1]
+                b = pyautogui.pixel(x, y)[2]
+                margin = 10
+
+               # if pyautogui.pixel(x, y) == skill["rgb"]:
+                if (skill["r"] - margin <= r <= skill["r"] + margin) and (skill["g"] - margin <= g <= skill["g"] + margin) and (skill["b"] - margin <= b <= skill["b"] + margin):
                     if dprint:
                         print(skill["name"], skill["key"])
                     pyautogui.press(skill["key"], presses=3)

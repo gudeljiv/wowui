@@ -266,6 +266,13 @@ f:SetScript(
 		end
 
 		MiniMapWorldMapButton:Hide()
+
+		UIWidgetBelowMinimapContainerFrame:ClearAllPoints()
+		UIWidgetBelowMinimapContainerFrame:SetPoint('TOPRIGHT', 'UIParent', 'TOPRIGHT', -35, 4)
+		UIWidgetBelowMinimapContainerFrame.ClearAllPoints = function()
+		end
+		UIWidgetBelowMinimapContainerFrame.SetPoint = function()
+		end
 	end
 )
 
