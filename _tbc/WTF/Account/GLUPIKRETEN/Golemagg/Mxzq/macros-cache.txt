@@ -1,11 +1,3 @@
-VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast feign death
-/stopattack
-/stopattack
-/stopcasting
-/petpassive
-END
 VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@pet,dead]Revive Pet
@@ -14,6 +6,7 @@ VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
+/tar lymyx
 /cast Hunter's Mark
 END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
@@ -47,4 +40,12 @@ VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Mongoose Bite
 /cast Raptor Strike
+END
+VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast feign death
+/stopattack
+/stopattack
+/stopcasting
+/petpassive
 END
