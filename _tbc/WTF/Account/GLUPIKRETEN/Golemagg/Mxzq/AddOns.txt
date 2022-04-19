@@ -128,3 +128,6 @@ TidyPlates_Graphite: disabled
 TidyPlates_Grey: disabled
 TidyPlates_Neon: disabled
 TidyPlates_Quatre: disabled
+BuyEmAllClassic: enabled
+PitBull4: enabled
+PitBull4_DogTagTexts: enabled

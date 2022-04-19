@@ -819,6 +819,7 @@ function QuestieQuestFixes:Load()
             [questKeys.exclusiveTo] = {1681}, -- #1724
         },
         [1684] = {
+            [questKeys.startedBy] = {{2151,3598,3657},nil,nil},
             [questKeys.exclusiveTo] = {1639,1666,1678,1686,1680},
         },
         [1686] = {
@@ -1763,6 +1764,24 @@ function QuestieQuestFixes:Load()
         },
         [5893] = {
             [questKeys.questLevel] = 55,
+        },
+        [5923] = {
+            [questKeys.startedBy] = {{4218},nil,nil},
+        },
+        [5924] = {
+            [questKeys.startedBy] = {{5505},nil,nil},
+        },
+        [5925] = {
+            [questKeys.startedBy] = {{3602},nil,nil},
+        },
+        [5926] = {
+            [questKeys.startedBy] = {{6746},nil,nil},
+        },
+        [5927] = {
+            [questKeys.startedBy] = {{6929},nil,nil},
+        },
+        [5928] = {
+            [questKeys.startedBy] = {{3064},nil,nil},
         },
         -----------------------
         [5929] = {
@@ -3365,7 +3384,7 @@ function QuestieQuestFixes:Load()
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.requiredClasses] = classIDs.WARLOCK,
             [questKeys.objectivesText] = {"Bring the hearts of Avelina Lilly and Isaac Pearson to Carendin Halgar in the Temple of the Damned."},
-            [questKeys.objectives] = {nil,nil,{{190179,190180}},nil,nil},
+            [questKeys.objectives] = {nil,nil,{{190179},{190180}},nil,nil},
             [questKeys.exclusiveTo] = {65610},
             [questKeys.zoneOrSort] = sortKeys.WARLOCK,
         },
@@ -3381,6 +3400,7 @@ function QuestieQuestFixes:Load()
             [questKeys.objectives] = {{{185335}},nil,nil,nil,nil},
             [questKeys.preQuestSingle] = {65593},
             [questKeys.requiredSourceItems] = {190181},
+            [questKeys.exclusiveTo] = {65604},
             [questKeys.zoneOrSort] = sortKeys.WARLOCK,
             [questKeys.extraObjectives] = {{{[zoneIDs.UNDERCITY]={{86.4,26.4}}}, ICON_TYPE_EVENT, "Use the Lovers' Hearts to summon an Incubus and slay it.",}},
         },
@@ -3437,6 +3457,7 @@ function QuestieQuestFixes:Load()
             [questKeys.objectives] = {{{185335}},nil,nil,nil,nil},
             [questKeys.preQuestSingle] = {65610},
             [questKeys.requiredSourceItems] = {190187},
+            [questKeys.exclusiveTo] = {65597},
             [questKeys.zoneOrSort] = sortKeys.WARLOCK,
             [questKeys.extraObjectives] = {{{[zoneIDs.ORGRIMMAR]={{49.4,50}}}, ICON_TYPE_EVENT, "Use the Withered Scarf to summon an Incubus and slay it.",}},
         },

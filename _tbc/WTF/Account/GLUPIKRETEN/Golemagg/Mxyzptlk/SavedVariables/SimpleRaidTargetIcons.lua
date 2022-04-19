@@ -33,4 +33,8 @@ SRTIExternalUF = {
 		"NugRaid7UnitButton1", -- [7]
 		"NugRaid8UnitButton1", -- [8]
 	},
+	["pitbull4"] = {
+		"PitBull4_Frames_Target", -- [1]
+		"PitBull4_Frames_Target's target", -- [2]
+	},
 }

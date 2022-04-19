@@ -46,4 +46,8 @@ SRTIExternalUF = {
 		"Grid2LayoutHeader2UnitButton4", -- [9]
 		"Grid2LayoutHeader2UnitButton5", -- [10]
 	},
+	["pitbull4"] = {
+		"PitBull4_Frames_Target", -- [1]
+		"PitBull4_Frames_Target's target", -- [2]
+	},
 }
