@@ -593,7 +593,11 @@ NeedsFoodBadly.Food = {
 	[5473] = {id = 5473, name = 'Scorpid Surprise', lvl = 0, conj = false, hp = 294},
 	[27854] = {id = 27854, name = 'Smoked Talbuk Venison', lvl = 55, conj = false, hp = 4320},
 	[28399] = {id = 28399, name = 'Filtered Draenic Water', lvl = 55, conj = false, mp = 5100},
-	[34062] = {id = 34062, name = 'Conjured Manna Biscuit', lvl = 55, conj = true, hp = 7500, mp = 7500}
+	[34062] = {id = 34062, name = 'Conjured Manna Biscuit', lvl = 55, conj = true, hp = 7500, mp = 7500},
+	[27859] = {id = 27859, name = 'Zangar Caps', lvl = 55, conj = true, hp = 4320},
+	[27857] = {id = 27857, name = 'Garadar Sharp', lvl = 55, conj = true, hp = 4320},
+	[27856] = {id = 27856, name = 'Skethyl Berries', lvl = 55, conj = true, hp = 4320},
+	[27651] = {id = 27651, name = 'Buzzar Bites', lvl = 55, conj = true, hp = 874.8, stam = 20}
 }
 NeedsFoodBadly.Potion = {
 	[13446] = {id = 13446, name = 'Major Healing Potion', lvl = 45, low = 1050, high = 1750, hp = true},
