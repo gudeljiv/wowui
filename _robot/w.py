@@ -24,6 +24,7 @@ skills = [
     {"name": "battle shout", "key": "f4", "r": 193, "g": 115, "b": 110, "rgb": (193, 115, 110)},
     {"name": "sunder armor", "key": "g", "r": 189, "g": 126, "b": 116, "rgb": (189, 126, 116), "aoe": False},
     {"name": "mortal strike", "key": "f11", "r": 147, "g": 145, "b": 146, "rgb": (147, 145, 146), "aoe": False},
+    {"name": "bloodthirst", "key": "f11", "r": 208, "g": 90, "b": 57, "rgb": (208, 90, 57)},
     {"name": "heroic strike", "key": "2", "r": 153, "g": 150, "b": 154, "rgb": (153, 150, 154), "aoe": False},
     {"name": "rend", "key": "5", "r": 80, "g": 2, "b": 0, "rgb": (80, 2, 0)},
     {"name": "overpower", "key": "4", "r": 89, "g": 97, "b": 107, "rgb": (89, 97, 107)},

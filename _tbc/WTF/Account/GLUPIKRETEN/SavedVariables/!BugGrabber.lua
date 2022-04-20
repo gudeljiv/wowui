@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 4966,
+	["session"] = 4968,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -942,20 +942,20 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [119]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
-			["time"] = "2022/02/15 18:27:27",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 4964,
-			["counter"] = 30,
-		}, -- [120]
-		{
 			["message"] = "[string \"Applause\"]:1: '=' expected near '<eof>'",
 			["time"] = "2022/04/19 19:59:14",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 4964,
 			["counter"] = 2,
+		}, -- [120]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
+			["time"] = "2022/02/15 18:27:27",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
+			["session"] = 4968,
+			["counter"] = 31,
 		}, -- [121]
 	},
 }
