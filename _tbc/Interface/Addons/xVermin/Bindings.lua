@@ -74,7 +74,9 @@ local function FixBindings()
 	SetBinding('MOUSEWHEELUP', 'MULTIACTIONBAR2BUTTON2', 1)
 	SetBinding('F11', 'MULTIACTIONBAR2BUTTON2', 2)
 	SetBinding('ALT-9', 'MULTIACTIONBAR2BUTTON3', 1)
+	SetBinding('HOME', 'MULTIACTIONBAR2BUTTON3', 2)
 	SetBinding('ALT-0', 'MULTIACTIONBAR2BUTTON4', 1)
+	SetBinding('END', 'MULTIACTIONBAR2BUTTON4', 2)
 	SetBinding('ALT-E', 'MULTIACTIONBAR2BUTTON5', 1)
 
 	-- SetBinding("F1", "STANCEBUTTON1", 1)
@@ -226,6 +228,11 @@ local function ClearAllBindings()
 	SetBinding('F10', 'NONE', 2)
 	SetBinding('F11', 'NONE', 1)
 	SetBinding('F11', 'NONE', 2)
+
+	SetBinding('HOME', 'NONE', 1)
+	SetBinding('HOME', 'NONE', 2)
+	SetBinding('END', 'NONE', 1)
+	SetBinding('END', 'NONE', 2)
 
 	FixBindings()
 end

@@ -32,6 +32,8 @@ skills = [
     {"name": "revenge", "key": "1", "r": 205, "g": 195, "b": 195, "rgb": (205, 195, 195)},
     {"name": "execute", "key": "f", "r": 76, "g": 17, "b": 21, "rgb": (76, 17, 21)},
     {"name": "whirlwind", "key": "6", "r": 105, "g": 212, "b": 240, "rgb": (105, 210, 240)},
+    {"name": "rampage", "key": "home", "r": 175, "g": 126, "b": 90, "rgb": (175, 126, 90)},
+    {"name": "sweeping strikes", "key": "v", "r": 116, "g": 49, "b": 0, "rgb": (116, 49, 0)},
 
     # second system settings
     # {"name": "battle shout", "key": "f4", "r": 193, "g": 115, "b": 110, "rgb": (193, 115, 110)},
