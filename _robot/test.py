@@ -1,15 +1,31 @@
+from pyautogui import *
 import pyautogui
 import time
+import keyboard
+import random
+from time import gmtime, strftime
+from pynput import keyboard
 import win32gui
-import win32api
-import win32con
 
-x_interrupt = 1200
-y_interrupt = 1100
 
-while True:
+x = 1535
+y = 1150
 
-    active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
-    time.sleep(1)
-    print(pyautogui.pixel(x_interrupt, y_interrupt))
+def on_press(key):
+    global debug
+    global dprint
+
+    try:
+        if key == keyboard.Key.f12:
+            active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
+            print(active_window, x, y, pyautogui.pixel(x, y))
+
+    except:
+        return
+
+
+with keyboard.Listener(on_press=on_press) as listener:
+
+    while True:
+        time.sleep(0.01)

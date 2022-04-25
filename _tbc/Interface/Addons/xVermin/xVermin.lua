@@ -275,7 +275,7 @@ f:SetScript(
 		end
 
 		UIWidgetTopCenterContainerFrame:ClearAllPoints()
-		UIWidgetTopCenterContainerFrame:SetPoint('TOPRIGHT', 'MinimapCluster', 'BOTTOMLEFT', -40, -15)
+		UIWidgetTopCenterContainerFrame:SetPoint('TOP', 'UIParent', 'TOP', 0, -50)
 		UIWidgetTopCenterContainerFrame.ClearAllPoints = function()
 		end
 		UIWidgetTopCenterContainerFrame.SetPoint = function()
