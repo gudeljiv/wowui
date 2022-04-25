@@ -91,3 +91,9 @@ VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 /cast Sweeping Strikes
 /cast Bloodrage
 END
+VER 3 0000000001000013 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast [stance:1/3] Victory Rush
+/cast [stance:2] Shield Slam
+END
