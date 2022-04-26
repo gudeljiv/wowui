@@ -11,28 +11,33 @@ aoe = False
 debug = False
 dprint = False
 
-x = 1535
-y = 1150
-x_aoe = 1445
-y_aoe = 1470
-x_interrupt = 1430
-y_interrupt = 1470
+x = 1280
+y = 860
+x_aoe = 1210
+y_aoe = 1100
+x_interrupt = 1200
+y_interrupt = 1100
 
 skills = [
     {"name": "battle shout", "key": "f4", "rgb": (193, 115, 110)},
+    {"name": "demoralizing shout", "key": "f5", "rgb": (7, 5, 0)},
+
     {"name": "sunder armor", "key": "g", "rgb": (189, 126, 116)},
+
     {"name": "mortal strike", "key": "f11", "rgb": (147, 145, 146)},
     {"name": "bloodthirst", "key": "f11", "rgb": (208, 90, 57)},
     {"name": "heroic strike", "key": "2", "rgb": (153, 150, 154)},
+    {"name": "cleave", "key": "3", "rgb": (128, 128, 126)},
+    {"name": "whirlwind", "key": "6", "rgb": (105, 210, 240)},
+    {"name": "execute", "key": "f", "rgb": (76, 17, 21)},
+
     {"name": "rend", "key": "5", "rgb": (80, 2, 0)},
     {"name": "overpower", "key": "4", "rgb": (89, 97, 107)},
-    {"name": "cleave", "key": "3", "rgb": (128, 128, 126)},
     {"name": "revenge", "key": "1", "rgb": (205, 195, 195)},
-    {"name": "execute", "key": "f", "rgb": (76, 17, 21)},
-    {"name": "whirlwind", "key": "6", "rgb": (105, 210, 240)},
+
     {"name": "rampage", "key": "home", "rgb": (175, 126, 90)},
     {"name": "sweeping strikes", "key": "r", "modifier": "alt", "rgb": (116, 49, 0)},
-    {"name": "victory rush", "key": "e", "modifier": "shift", "rgb": (212, 92, 44)},
+    {"name": "victory rush", "key": "e", "modifier": "shift", "rgb": (208, 109, 58)},
 ]
 
 

@@ -8,8 +8,11 @@ from pynput import keyboard
 import win32gui
 
 
-x = 1535
-y = 1150
+# x = 1535
+# y = 1150
+
+x = 1280
+y = 860
 
 
 def on_press(key):
@@ -19,9 +22,7 @@ def on_press(key):
     try:
         if key == keyboard.Key.f12:
             active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
-            print(active_window, x, y, pyautogui.pixel(x, y))
-            pyautogui.hotkey("e")
-
+            print("x:", x, "y:", y, "|| rgb:", pyautogui.pixel(x, y))
     except:
         return
 
