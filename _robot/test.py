@@ -20,6 +20,7 @@ def on_press(key):
         if key == keyboard.Key.f12:
             active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
             print(active_window, x, y, pyautogui.pixel(x, y))
+            pyautogui.hotkey("e")
 
     except:
         return
