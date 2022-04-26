@@ -1,9 +1,3 @@
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/petattack
-/startattack
-/cast Serpent Sting
-END
 VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Rapid Fire
@@ -48,4 +42,10 @@ VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /tar lymyx
 /cast Hunter's Mark
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/startattack
+/cast Serpent Sting
 END
