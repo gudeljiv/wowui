@@ -27,8 +27,8 @@ KuiNameplatesCoreSaved = {
 			["frame_width"] = 120,
 			["title_text_players"] = true,
 			["frame_width_target"] = 160,
-			["tankmode_force_enable"] = true,
 			["nameonly_hostile_players"] = true,
+			["tankmode_force_enable"] = true,
 			["name_colour_player_hostile"] = {
 				1, -- [1]
 				0, -- [2]

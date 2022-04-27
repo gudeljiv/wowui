@@ -280,6 +280,11 @@ f:SetScript(
 		end
 		UIWidgetTopCenterContainerFrame.SetPoint = function()
 		end
+
+		MiniMapBattlefieldFrame:ClearAllPoints()
+		MiniMapBattlefieldFrame:SetPoint('BOTTOMRIGHT', 'Minimap', 'BOTTOMRIGHT', 0, 0)
+		MiniMapBattlefieldFrame.SetPoint = function()
+		end
 	end
 )
 

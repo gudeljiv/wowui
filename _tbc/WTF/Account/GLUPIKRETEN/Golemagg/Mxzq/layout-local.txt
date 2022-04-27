@@ -9,10 +9,10 @@ H: 30
 Frame: Grid2LayoutFrame
 FrameLevel: 1
 Anchor: CENTER
-X: -482
-Y: 103
-W: 250
-H: 40
+X: -460
+Y: 101
+W: 253
+H: 42
 Frame: PlayerFrame
 FrameLevel: 1
 Anchor: CENTER

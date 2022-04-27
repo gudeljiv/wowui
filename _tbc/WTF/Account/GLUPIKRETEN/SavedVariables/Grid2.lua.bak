@@ -14,12 +14,12 @@ Grid2DB = {
 					["BackgroundTexture"] = "None",
 					["BorderB"] = 0.501960784313726,
 					["layouts"] = {
-						["party"] = "By Group & Class",
-						["raid"] = "By Group & Class",
-						["solo"] = "By Group & Class",
 						["arena"] = "By Group & Class",
+						["party"] = "By Group & Class w/Pets",
+						["solo"] = "By Group & Class w/Pets",
+						["raid"] = "By Group & Class",
 					},
-					["BackgroundB"] = 0.101960784313725,
+					["BackgroundR"] = 0.101960784313725,
 					["BorderR"] = 0.501960784313726,
 					["Spacing"] = 1,
 					["anchor"] = "LEFT",
@@ -27,11 +27,8 @@ Grid2DB = {
 					["minimapIcon"] = {
 						["hide"] = true,
 					},
-					["PosY"] = -2.655029220477445e-05,
-					["BackgroundR"] = 0.101960784313725,
-					["BackgroundA"] = 0,
-					["BorderG"] = 0.501960784313726,
-					["BorderTexture"] = "None",
+					["PosY"] = 42.6666293264816,
+					["Padding"] = 2,
 					["extraThemes"] = {
 						{
 							["BackgroundTexture"] = "None",
@@ -48,7 +45,7 @@ Grid2DB = {
 							["FrameDisplay"] = "Always",
 							["BorderA"] = 0,
 							["BorderR"] = 0.501960784313726,
-							["Spacing"] = 0,
+							["Spacing"] = 1,
 							["anchor"] = "CENTER",
 							["Positions"] = {
 								["By Group & Class w/Pets10001"] = {
@@ -64,16 +61,16 @@ Grid2DB = {
 							},
 							["clamp"] = true,
 							["groupAnchor"] = "TOPLEFT",
-							["PosY"] = 60.00004069295301,
+							["PosY"] = 58.66667075993897,
 							["FrameLock"] = false,
 							["BackgroundB"] = 0.101960784313725,
 							["BackgroundA"] = 0,
-							["Padding"] = 0,
+							["Padding"] = 1,
 							["BorderG"] = 0.501960784313726,
 							["BorderTexture"] = "None",
 							["horizontal"] = false,
 							["BackgroundG"] = 0.101960784313725,
-							["PosX"] = -279.4666721037061,
+							["PosX"] = -266.6666821994994,
 						}, -- [1]
 						{
 							["BackgroundTexture"] = "None",
@@ -91,20 +88,20 @@ Grid2DB = {
 							["FrameDisplay"] = "Always",
 							["BorderA"] = 0,
 							["BorderR"] = 0.501960784313726,
-							["Spacing"] = 0,
+							["Spacing"] = 1,
 							["anchor"] = "CENTER",
 							["Positions"] = {
 							},
 							["clamp"] = true,
 							["groupAnchor"] = "TOPLEFT",
-							["PosY"] = 34.28570656348938,
-							["PosX"] = -239.9998795686952,
+							["PosY"] = 31.99997420738555,
+							["PosX"] = -320.0000783775568,
 							["BackgroundG"] = 0.101960784313725,
 							["BackgroundA"] = 0,
 							["horizontal"] = false,
 							["BorderG"] = 0.501960784313726,
 							["BorderTexture"] = "None",
-							["Padding"] = 0,
+							["Padding"] = 1,
 							["BackgroundB"] = 0.101960784313725,
 							["FrameLock"] = false,
 						}, -- [2]
@@ -150,18 +147,23 @@ Grid2DB = {
 							},
 							["BackgroundG"] = 0.101960784313725,
 							["groupAnchor"] = "TOPLEFT",
-							["PosY"] = 160.00000834465,
+							["PosY"] = 53.3332910831507,
 							["Spacing"] = 1,
 							["BackgroundR"] = 0.101960784313725,
 							["BackgroundA"] = 0,
 							["horizontal"] = false,
 							["BorderG"] = 0.501960784313726,
 							["PosX"] = 0,
-							["Padding"] = 0,
+							["Padding"] = 1,
 							["clamp"] = true,
 							["FrameDisplay"] = "Always",
 						}, -- [3]
 					},
+					["BackgroundA"] = 0,
+					["BorderG"] = 0.501960784313726,
+					["BorderTexture"] = "None",
+					["horizontal"] = false,
+					["BackgroundB"] = 0.101960784313725,
 					["PosX"] = 0,
 				},
 				["Paladin"] = {
@@ -172,10 +174,10 @@ Grid2DB = {
 						["hide"] = true,
 					},
 					["layouts"] = {
-						["raid"] = "By Group & Class",
-						["party"] = "By Group & Class",
-						["solo"] = "By Group & Class",
 						["arena"] = "By Group & Class",
+						["raid"] = "By Group & Class",
+						["solo"] = "By Group & Class",
+						["party"] = "By Group & Class",
 					},
 					["PosY"] = 79.999838360142,
 					["BackgroundB"] = 0.101960784313725,
@@ -293,10 +295,10 @@ Grid2DB = {
 					["Spacing"] = 1,
 					["BackgroundA"] = 0,
 					["BorderR"] = 0.501960784313726,
-					["BorderTexture"] = "None",
-					["anchor"] = "CENTER",
 					["BorderG"] = 0.501960784313726,
+					["anchor"] = "CENTER",
 					["PosX"] = -253.333301786579,
+					["BorderTexture"] = "None",
 					["BackgroundR"] = 0.101960784313725,
 				},
 			},
@@ -403,7 +405,7 @@ Grid2DB = {
 								[10] = 35,
 							},
 							["mouseoverHighlight"] = false,
-							["frameWidth"] = 125,
+							["frameWidth"] = 120,
 							["frameTexture"] = "Glamour2",
 						}, -- [2]
 						{
@@ -418,7 +420,8 @@ Grid2DB = {
 							["iconSize"] = 14,
 							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
 							["frameBorderDistance"] = -2,
-							["frameHeight"] = 50,
+							["frameHeight"] = 20,
+							["frameTexture"] = "Glamour2",
 							["barTexture"] = "Glamour2",
 							["mouseoverColor"] = {
 								["a"] = 1,
@@ -430,7 +433,6 @@ Grid2DB = {
 								[25] = 100,
 								[40] = 100,
 							},
-							["frameTexture"] = "Glamour2",
 							["frameBorderTexture"] = "None",
 							["frameContentColor"] = {
 								["a"] = 0,
@@ -438,13 +440,14 @@ Grid2DB = {
 								["g"] = 0,
 								["r"] = 0,
 							},
+							["menuDisabled"] = true,
 							["frameHeights"] = {
 								[25] = 25,
 								[40] = 25,
 							},
 							["orientation"] = "VERTICAL",
 							["mouseoverHighlight"] = false,
-							["frameWidth"] = 120,
+							["frameWidth"] = 50,
 							["frameBorderColor"] = {
 								["a"] = 0,
 								["b"] = 0,
@@ -454,13 +457,13 @@ Grid2DB = {
 						}, -- [3]
 					},
 					["frameBorderDistance"] = -2,
-					["frameHeight"] = 50,
+					["frameHeight"] = 30,
 					["frameTexture"] = "Glamour2",
 					["barTexture"] = "Glamour2",
 					["frameContentColor"] = {
 						["a"] = 0,
 					},
-					["frameWidth"] = 120,
+					["frameWidth"] = 60,
 					["frameBorderTexture"] = "None",
 				},
 				["Paladin"] = {
@@ -1135,6 +1138,17 @@ Grid2DB = {
 					["blinkThreshold"] = 3,
 					["spellName"] = 27827,
 				},
+				["buff-Renew-mine"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["type"] = "buff",
+					["mine"] = true,
+					["spellName"] = 25315,
+				},
 				["buff-PowerWordShield"] = {
 					["type"] = "buff",
 					["color1"] = {
@@ -1154,17 +1168,6 @@ Grid2DB = {
 						["r"] = 0,
 					},
 					["spellName"] = 6788,
-				},
-				["buff-Renew-mine"] = {
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["type"] = "buff",
-					["mine"] = true,
-					["spellName"] = 25315,
 				},
 			},
 			["versions"] = {
@@ -1983,21 +1986,21 @@ Grid2DB = {
 						["b"] = 0,
 					},
 					["type"] = "bar",
-					["location"] = {
-						["y"] = 0,
-						["relPoint"] = "CENTER",
-						["point"] = "CENTER",
-						["x"] = 0,
-					},
+					["orientation"] = "HORIZONTAL",
 					["backColor"] = {
 						["a"] = 0.389516115188599,
 						["b"] = 0,
 						["g"] = 0,
 						["r"] = 0,
 					},
-					["backTexture"] = "Glamour2",
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "CENTER",
+						["point"] = "CENTER",
+						["x"] = 0,
+					},
 					["level"] = 2,
-					["orientation"] = "HORIZONTAL",
+					["backTexture"] = "Glamour2",
 					["texture"] = "Glamour2",
 				},
 				["corner-bottom-left"] = {
@@ -2448,21 +2451,21 @@ Grid2DB = {
 				["health"] = {
 					["texture"] = "Glamour2",
 					["type"] = "bar",
-					["backTexture"] = "Glamour2",
-					["backColor"] = {
-						["a"] = 0.389516115188599,
-						["r"] = 0,
-						["g"] = 0,
-						["b"] = 0,
-					},
-					["orientation"] = "HORIZONTAL",
-					["level"] = 2,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "CENTER",
 						["point"] = "CENTER",
 						["x"] = 0,
 					},
+					["backColor"] = {
+						["a"] = 0.389516115188599,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+					["backTexture"] = "Glamour2",
+					["level"] = 2,
+					["orientation"] = "HORIZONTAL",
 					["color1"] = {
 						["a"] = 1,
 						["b"] = 0,
@@ -2694,10 +2697,10 @@ Grid2DB = {
 			},
 			["themes"] = {
 				["enabled"] = {
-					["25"] = 3,
+					["25"] = 0,
 					["party"] = 1,
 					["solo"] = 1,
-					["40"] = 3,
+					["40"] = 0,
 					["10"] = 2,
 				},
 				["indicators"] = {
@@ -2920,9 +2923,9 @@ Grid2DB = {
 						["b"] = 0,
 					},
 				},
-				["buff-BlessingOfWisdom(greater)"] = {
+				["buff-BlessingOfMight"] = {
 					["type"] = "buff",
-					["spellName"] = 25918,
+					["spellName"] = 25291,
 					["color1"] = {
 						["a"] = 1,
 						["r"] = 0.7,
@@ -2930,9 +2933,9 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
-				["buff-BlessingOfMight"] = {
+				["buff-BlessingOfWisdom"] = {
 					["type"] = "buff",
-					["spellName"] = 25291,
+					["spellName"] = 25290,
 					["color1"] = {
 						["a"] = 1,
 						["r"] = 0.7,
@@ -2960,9 +2963,9 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
-				["buff-BlessingOfWisdom"] = {
+				["buff-BlessingOfWisdom(greater)"] = {
 					["type"] = "buff",
-					["spellName"] = 25290,
+					["spellName"] = 25918,
 					["color1"] = {
 						["a"] = 1,
 						["r"] = 0.7,
