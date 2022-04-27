@@ -317,15 +317,11 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
-				["selectedGameVersion"] = 1,
-				["selected"] = {
-					nil, -- [1]
-					"Maraudon", -- [2]
-					11, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
 				["point"] = {
 					"TOP", -- [1]
 					nil, -- [2]
@@ -333,10 +329,13 @@ AtlasLootClassicDB = {
 					-226.2529449462891, -- [4]
 					-159.2184143066406, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+				["selected"] = {
+					nil, -- [1]
+					"TheSlavePens", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
 			},
 		},
 		["Jaroslav - Golemagg"] = {
@@ -357,21 +356,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-			["Addons"] = {
-				["Favourites"] = {
-					["lists"] = {
-						["ProfileBase"] = {
-							["mainItems"] = {
-								[8] = true,
-							},
-						},
-					},
-				},
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -387,6 +371,21 @@ AtlasLootClassicDB = {
 					6, -- [4]
 					0, -- [5]
 				},
+			},
+			["Addons"] = {
+				["Favourites"] = {
+					["lists"] = {
+						["ProfileBase"] = {
+							["mainItems"] = {
+								[8] = true,
+							},
+						},
+					},
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Judawise - Golemagg"] = {

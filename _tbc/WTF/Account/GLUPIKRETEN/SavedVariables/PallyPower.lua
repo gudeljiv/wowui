@@ -46,6 +46,7 @@ PallyPower_AuraAssignments = {
 	["Vermina"] = 1,
 	["Carroll"] = 0,
 	["Draxam"] = 1,
+	["Problemas"] = 2,
 }
 PallyPower_SavedPresets = nil
 PallyPower_ChanNames = {
