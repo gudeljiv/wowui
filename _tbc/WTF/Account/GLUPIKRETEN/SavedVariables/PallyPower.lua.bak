@@ -22,10 +22,10 @@ PallyPowerDB = {
 			["configscale"] = 1.2,
 			["rfbuff"] = false,
 			["enable"] = true,
-			["SalvInCombat"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
+			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -52,12 +52,12 @@ PallyPower_AuraAssignments = {
 	["Problemas"] = 2,
 	["Tal-Razorfen"] = 1,
 	["Naukadin-Patchwerk"] = 1,
-	["Naomix-Sulfuron"] = 7,
-	["Rojïn-Razorfen"] = 2,
-	["Nashaka-Gehennas"] = 7,
-	["Silvannka-Gehennas"] = 0,
-	["Rylithia-Gehennas"] = 7,
 	["Konvice"] = 3,
+	["Rylithia-Gehennas"] = 7,
+	["Silvannka-Gehennas"] = 0,
+	["Nashaka-Gehennas"] = 7,
+	["Rojïn-Razorfen"] = 2,
+	["Naomix-Sulfuron"] = 7,
 }
 PallyPower_SavedPresets = nil
 PallyPower_ChanNames = {

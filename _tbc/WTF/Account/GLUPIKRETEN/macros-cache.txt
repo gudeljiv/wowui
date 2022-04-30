@@ -21,7 +21,7 @@ VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:27859
+/use [nocombat]item:27854
 /castsequence [combat] reset=combat item:13446
 END
 VER 3 000000000000000B "lvl enchant" "132089"
@@ -30,11 +30,10 @@ VER 3 000000000000000B "lvl enchant" "132089"
 /click StaticPopup1Button1
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:27671
+#showtooltip item:27854
 /cast feed pet
-/use item:27671
+/use item:27854
 END
 VER 3 0000000000000010 "TEST" "3940790"
-/run MiniMapBattlefieldFrame:ClearAllPoints()
-/run MiniMapBattlefieldFrame:SetPoint("BOTTOMRIGHT", "Minimap", "BOTTOMRIGHT", 0, 0)
+/run  SetCVar("nameplateShowEnemies",1)
 END

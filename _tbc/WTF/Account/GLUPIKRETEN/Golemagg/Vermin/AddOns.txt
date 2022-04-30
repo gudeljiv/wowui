@@ -117,10 +117,10 @@ aux-addon: disabled
 TradeSkillMaster_AppHelper: disabled
 D4KiR Missing Power: disabled
 TrackEverything: enabled
-Kui_Media: enabled
-Kui_Nameplates: enabled
-Kui_Nameplates_Core_Config: enabled
-Kui_Nameplates_Core: enabled
+Kui_Media: disabled
+Kui_Nameplates: disabled
+Kui_Nameplates_Core_Config: disabled
+Kui_Nameplates_Core: disabled
 MissingTradeSkillsList_TBC_Data: enabled
 NovaInstanceTracker: enabled
 PallyPower: enabled

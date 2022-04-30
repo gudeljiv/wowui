@@ -1,8 +1,5 @@
 
 KuiNameplatesCoreSaved = {
-	["226_CLASSPOWERS_Y"] = true,
-	["226_TARGET_SIZE"] = true,
-	["226_AURAS_TRANSITION"] = true,
 	["profiles"] = {
 		["default"] = {
 			["nameonly_all_enemies"] = true,
@@ -30,8 +27,8 @@ KuiNameplatesCoreSaved = {
 			["frame_width"] = 120,
 			["title_text_players"] = true,
 			["frame_width_target"] = 160,
-			["tankmode_force_offtank"] = true,
-			["frame_glow_size_threat"] = 20,
+			["nameonly_hostile_players"] = true,
+			["tankmode_force_enable"] = true,
 			["name_colour_player_hostile"] = {
 				1, -- [1]
 				0, -- [2]
@@ -40,16 +37,19 @@ KuiNameplatesCoreSaved = {
 			["frame_minus_size"] = false,
 			["global_scale"] = 1.3,
 			["target_arrows_size"] = 40,
-			["level_nameonly"] = true,
 			["guild_text_players"] = true,
+			["level_nameonly"] = true,
 			["cvar_enable"] = true,
 			["name_colour_npc_friendly"] = {
 				0.00784313725490196, -- [1]
 				1, -- [2]
 				0, -- [3]
 			},
-			["tankmode_force_enable"] = true,
-			["nameonly_hostile_players"] = true,
+			["frame_glow_size_threat"] = 20,
+			["tankmode_force_offtank"] = true,
 		},
 	},
+	["226_TARGET_SIZE"] = true,
+	["226_AURAS_TRANSITION"] = true,
+	["226_CLASSPOWERS_Y"] = true,
 }
