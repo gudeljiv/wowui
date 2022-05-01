@@ -274,11 +274,13 @@ f:SetScript(
 		UIWidgetBelowMinimapContainerFrame.SetPoint = function()
 		end
 
-		UIWidgetTopCenterContainerFrame:ClearAllPoints()
-		UIWidgetTopCenterContainerFrame:SetPoint('TOP', 'UIParent', 'TOP', 0, -50)
-		UIWidgetTopCenterContainerFrame.ClearAllPoints = function()
-		end
-		UIWidgetTopCenterContainerFrame.SetPoint = function()
+		if (nHealthStatusBar and nHealthStatusBar:IsVisible()) then
+			UIWidgetTopCenterContainerFrame:ClearAllPoints()
+			UIWidgetTopCenterContainerFrame:SetPoint('TOP', 'UIParent', 'TOP', 0, -70)
+			UIWidgetTopCenterContainerFrame.ClearAllPoints = function()
+			end
+			UIWidgetTopCenterContainerFrame.SetPoint = function()
+			end
 		end
 
 		MiniMapBattlefieldFrame:ClearAllPoints()
