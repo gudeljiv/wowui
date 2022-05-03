@@ -11,23 +11,28 @@ import win32gui
 # x = 1535
 # y = 1150
 
-x = 1280
-y = 860
+x = 1285
+y = 865
 
 
 def on_press(key):
     global debug
     global dprint
 
-    try:
-        if key == keyboard.Key.f12:
-            active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
-            print("x:", x, "y:", y, "|| rgb:", pyautogui.pixel(x, y))
-    except:
-        return
+    # try:
+    #     # if key == keyboard.Key.f12:
+    #     time.sleep(1)
+    #     active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
+    #     cursorx, cursory = pyautogui.position()
+    #     print("x:", x, "y:", y, "|| rgb:", pyautogui.pixel(x, y), "|| cursor:", cursorx, cursory, pyautogui.screenshot().getpixel((cursorx, cursorx)))
+    # except:
+    #     return
 
 
 with keyboard.Listener(on_press=on_press) as listener:
 
     while True:
-        time.sleep(0.01)
+        time.sleep(1)
+        active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
+        cursorx, cursory = pyautogui.position()
+        print("x:", x, "y:", y, "|| rgb:", pyautogui.pixel(x, y), "|| cursor:", cursorx, cursory)

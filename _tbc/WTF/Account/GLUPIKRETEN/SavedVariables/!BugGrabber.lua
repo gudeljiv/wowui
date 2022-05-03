@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 5050,
 	["lastSanitation"] = 3,
+	["session"] = 5053,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -709,8 +709,8 @@ BugGrabberDB = {
 		}, -- [89]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/03/09 13:39:43",
 			["session"] = 4904,
+			["time"] = "2022/03/09 13:39:43",
 			["counter"] = 6,
 		}, -- [90]
 		{
@@ -755,14 +755,14 @@ BugGrabberDB = {
 		}, -- [95]
 		{
 			["message"] = "  (null)",
-			["time"] = "2022/04/13 16:37:53",
 			["session"] = 4914,
+			["time"] = "2022/04/13 16:37:53",
 			["counter"] = 3,
 		}, -- [96]
 		{
 			["message"] = " (null)",
-			["time"] = "2022/04/11 11:49:12",
 			["session"] = 4914,
+			["time"] = "2022/04/11 11:49:12",
 			["counter"] = 13,
 		}, -- [97]
 		{
@@ -966,29 +966,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [122]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
-			["time"] = "2022/02/15 18:27:27",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 5021,
-			["counter"] = 46,
-		}, -- [123]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'nBuff' tried to call the protected function 'TargetFrameToT:Show()'.",
-			["time"] = "2022/04/16 18:15:48",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
-			["session"] = 5021,
-			["counter"] = 7,
-		}, -- [124]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'Questie_BaseFrame:ClearAllPoints()'.",
 			["time"] = "2022/04/29 19:32:34",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\xVermin\\Addons/Questie.lua\"]:25: in function <Interface\\AddOns\\xVermin\\Addons/Questie.lua:13>",
 			["session"] = 5028,
 			["counter"] = 1,
-		}, -- [125]
+		}, -- [123]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_TrackedQuests:ClearAllPoints()'.",
 			["time"] = "2022/03/07 16:08:32",
@@ -996,7 +980,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:610: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:1243: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:198: in function <...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:162>",
 			["session"] = 5028,
 			["counter"] = 2,
-		}, -- [126]
+		}, -- [124]
 		{
 			["message"] = "[string \"print(nHealthStatusFrame:IsVisible())\"]:1: attempt to index global 'nHealthStatusFrame' (a nil value)",
 			["time"] = "2022/04/30 18:29:53",
@@ -1004,7 +988,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(nHealthStatusFrame:IsVisible())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 5032,
 			["counter"] = 1,
-		}, -- [127]
+		}, -- [125]
 		{
 			["message"] = "[string \"print(nHealthStatusFrame:isVisible())\"]:1: attempt to index global 'nHealthStatusFrame' (a nil value)",
 			["time"] = "2022/04/30 18:30:02",
@@ -1012,7 +996,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(nHealthStatusFrame:isVisible())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 5032,
 			["counter"] = 1,
-		}, -- [128]
+		}, -- [126]
 		{
 			["message"] = "[string \"print(nHealthStatusBar:isVisible())\"]:1: attempt to index global 'nHealthStatusBar' (a nil value)",
 			["time"] = "2022/04/30 18:31:38",
@@ -1020,7 +1004,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(nHealthStatusBar:isVisible())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 5032,
 			["counter"] = 1,
-		}, -- [129]
+		}, -- [127]
 		{
 			["message"] = "...erface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate-3.lua:3240: script ran too long",
 			["time"] = "2022/04/30 18:37:30",
@@ -1028,6 +1012,22 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate-3.lua\"]:3240: in function `EncodeForPrint'\n[string \"@Interface\\AddOns\\Plater\\Plater_Comms.lua\"]:114: in function `CompressData'\n[string \"@Interface\\AddOns\\Plater\\Plater-Plater-v349-BCC.lua\"]:10009: in function `ExportProfileToString'\n[string \"@Interface\\AddOns\\Plater\\Plater_OptionsPanel.lua\"]:537: in function <Interface\\AddOns\\Plater\\Plater_OptionsPanel.lua:501>",
 			["session"] = 5036,
 			["counter"] = 1,
+		}, -- [128]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
+			["time"] = "2022/02/15 18:27:27",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
+			["session"] = 5053,
+			["counter"] = 48,
+		}, -- [129]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'nBuff' tried to call the protected function 'TargetFrameToT:Show()'.",
+			["time"] = "2022/04/16 18:15:48",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
+			["session"] = 5053,
+			["counter"] = 8,
 		}, -- [130]
 	},
 }

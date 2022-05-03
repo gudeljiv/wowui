@@ -22,10 +22,10 @@ PallyPowerDB = {
 			["configscale"] = 1.2,
 			["rfbuff"] = false,
 			["enable"] = true,
-			["SalvInCombat"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
+			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {
