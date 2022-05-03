@@ -22,10 +22,10 @@ PallyPowerDB = {
 			["configscale"] = 1.2,
 			["rfbuff"] = false,
 			["enable"] = true,
-			["SalvInCombat"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
+			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -37,27 +37,31 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
+	["Yamadin"] = {
+		4, -- [1]
+		4, -- [2]
+		3, -- [3]
+		3, -- [4]
+		6, -- [5]
+		4, -- [6]
+		4, -- [7]
+		4, -- [8]
+		4, -- [9]
+		0, -- [10]
+	},
 }
 PallyPower_NormalAssignments = {
 }
 PallyPower_AuraAssignments = {
-	["Carroll"] = 0,
-	["ßubblebut-Firemaw"] = 1,
-	["Tankzuu-Gehennas"] = 1,
-	["Meity-Gehennas"] = 2,
-	["Glocklord-Sulfuron"] = 3,
-	["Vermina"] = 1,
-	["Azhog-Venoxis"] = 2,
-	["Draxam"] = 1,
-	["Problemas"] = 2,
-	["Tal-Razorfen"] = 1,
-	["Naukadin-Patchwerk"] = 1,
-	["Naomix-Sulfuron"] = 7,
-	["Rojïn-Razorfen"] = 2,
-	["Nashaka-Gehennas"] = 7,
-	["Silvannka-Gehennas"] = 0,
-	["Rylithia-Gehennas"] = 7,
 	["Konvice"] = 3,
+	["Hemabussen"] = 0,
+	["Rojïn-Razorfen"] = 2,
+	["Nezrin"] = 2,
+	["Sapexcz"] = 1,
+	["Yamadin"] = 2,
+	["Vermina"] = 1,
+	["Carroll"] = 0,
+	["Canestengyno"] = 1,
 }
 PallyPower_SavedPresets = nil
 PallyPower_ChanNames = {

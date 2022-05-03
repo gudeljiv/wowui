@@ -597,7 +597,8 @@ NeedsFoodBadly.Food = {
 	[27859] = {id = 27859, name = 'Zangar Caps', lvl = 55, conj = true, hp = 4320},
 	[27857] = {id = 27857, name = 'Garadar Sharp', lvl = 55, conj = true, hp = 4320},
 	[27856] = {id = 27856, name = 'Skethyl Berries', lvl = 55, conj = true, hp = 4320},
-	[27651] = {id = 27651, name = 'Buzzar Bites', lvl = 55, conj = true, hp = 874.8, stam = 20}
+	[27651] = {id = 27651, name = 'Buzzar Bites', lvl = 55, conj = true, hp = 874.8, stam = 20},
+	[29451] = {id = 29451, name = 'Clefthoof Ribs', lvl = 65, conj = false, hp = 7500}
 }
 NeedsFoodBadly.Potion = {
 	[13446] = {id = 13446, name = 'Major Healing Potion', lvl = 45, low = 1050, high = 1750, hp = true},

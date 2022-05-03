@@ -94,6 +94,12 @@ function QuestieQuestFixes:Load()
         [165] = {
             [questKeys.exclusiveTo] = {148}, --#1173
         },
+        [171] = {
+            [questKeys.zoneOrSort] = sortKeys.SEASONAL,
+        },
+        [172] = {
+            [questKeys.zoneOrSort] = sortKeys.SEASONAL,
+        },
         [219] = {
             [questKeys.triggerEnd] = {"Escort Corporal Keeshan back to Redridge", {[zoneIDs.REDRIDGE_MOUNTAINS]={{33.36,48.7}}}},
         },
@@ -256,6 +262,7 @@ function QuestieQuestFixes:Load()
         [558] = {
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.preQuestGroup] = {1687,1479,1558},
+            [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
         [566] = {
             [questKeys.preQuestSingle] = {549}, -- #1484
@@ -431,9 +438,14 @@ function QuestieQuestFixes:Load()
         },
         [910] = {
             [questKeys.triggerEnd] = {"Go to the docks of Ratchet in the Barrens.", {[zoneIDs.THE_BARRENS]={{62.96,38.04}}}},
+            [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
         [911] = {
             [questKeys.triggerEnd] = {"Go to the Mor'shan Rampart in the Barrens.", {[zoneIDs.THE_BARRENS]={{47.9,5.36}}}},
+            [questKeys.zoneOrSort] = sortKeys.SEASONAL,
+        },
+        [915] = {
+            [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
         [918] = {
             [questKeys.preQuestSingle] = {},
@@ -443,6 +455,7 @@ function QuestieQuestFixes:Load()
         },
         [925] = {
             [questKeys.preQuestGroup] = {1800,910,911},
+            [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
         [926] = {
             [questKeys.parentQuest] = 924, -- #806
@@ -656,6 +669,12 @@ function QuestieQuestFixes:Load()
         [1364] = {
             [questKeys.preQuestSingle] = {1363}, -- #1674
         },
+        [1367] = {
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, "Slay Gelkis centaur to increase your reputation with the Magram Clan", 0, {{"monster", 4653},{"monster", 4647},{"monster", 4646},{"monster", 4661},{"monster", 5602},{"monster", 4648},{"monster", 4649},{"monster", 4651},{"monster", 4652}}}}
+        },
+        [1368] = {
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_SLAY, "Slay Magram centaur to increase your reputation with the Gelkis Clan", 0, {{"monster", 4643},{"monster", 4645},{"monster", 4662},{"monster", 5601},{"monster", 4638},{"monster", 4641},{"monster", 6068},{"monster", 4640},{"monster", 4639},{"monster", 4642},{"monster", 4644}}}}
+        },
         [1388] = {
             [questKeys.preQuestSingle] = {1383},
         },
@@ -699,6 +718,9 @@ function QuestieQuestFixes:Load()
         [1447] = {
             [questKeys.triggerEnd] = {"Defeat Dashel Stonefist", {[zoneIDs.STORMWIND_CITY]={{70.1,44.85}}}},
         },
+        [1468] = {
+            [questKeys.zoneOrSort] = sortKeys.SEASONAL,
+        },
         [1470] = {
             [questKeys.exclusiveTo] = {1485}, -- #999
         },
@@ -716,6 +738,7 @@ function QuestieQuestFixes:Load()
         },
         [1479] = {
             [questKeys.triggerEnd] = {"Go to the bank in Darnassus, otherwise known as the Bough of the Eternals.", {[zoneIDs.DARNASSUS]={{41.31,43.54}}}},
+            [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
         [1483] = {
             [questKeys.exclusiveTo] = {1093},
@@ -752,6 +775,7 @@ function QuestieQuestFixes:Load()
         },
         [1558] = {
             [questKeys.triggerEnd] = {"Go to the top of the Stonewrought Dam in Loch Modan.", {[zoneIDs.LOCH_MODAN]={{47.63,14.33}}}},
+            [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
         [1559] = {
             [questKeys.preQuestSingle] = {705},
@@ -827,6 +851,7 @@ function QuestieQuestFixes:Load()
         },
         [1687] = {
             [questKeys.triggerEnd] = {"Go to the Westfall Lighthouse.", {[zoneIDs.WESTFALL]={{30.41,85.61}}}},
+            [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
         [1700] = {
             [questKeys.requiredRaces] = raceIDs.HUMAN,
@@ -858,6 +883,7 @@ function QuestieQuestFixes:Load()
         },
         [1800] = {
             [questKeys.triggerEnd] = {"Go to the old Lordaeron Throne Room that lies just before descending into the Undercity.", {[zoneIDs.UNDERCITY]={{65.97,36.12}}}},
+            [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
         [1823] = {
             [questKeys.startedBy] = {{3041,3354,4595},nil,nil},
@@ -1422,6 +1448,9 @@ function QuestieQuestFixes:Load()
         [4841] = {
             [questKeys.preQuestSingle] = {},
         },
+        [4822] = {
+            [questKeys.zoneOrSort] = sortKeys.SEASONAL,
+        },
         [4866] = {
             [questKeys.triggerEnd] = {"Milked", {[zoneIDs.BURNING_STEPPES]={{65.11,23.68}}}},
         },
@@ -1600,6 +1629,9 @@ function QuestieQuestFixes:Load()
         },
         [5421] = {
             [questKeys.questLevel] = 25,
+        },
+        [5502] = {
+            [questKeys.zoneOrSort] = sortKeys.SEASONAL,
         },
         [5503] = {
             [questKeys.requiredRaces] = raceIDs.ALL,
@@ -1897,6 +1929,7 @@ function QuestieQuestFixes:Load()
             [questKeys.preQuestGroup] = {6022,6042,6133,6135,6136}, -- #1950
         },
         [6163] = {
+            [questKeys.preQuestSingle] = {},
             [questKeys.preQuestGroup] = {6022,6042,6133,6135,6136}, -- #1950
         },
         [6382] = {

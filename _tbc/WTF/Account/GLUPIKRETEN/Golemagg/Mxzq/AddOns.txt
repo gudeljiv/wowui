@@ -1,5 +1,5 @@
 nPower: disabled
-nHealth: enabled
+nHealth: disabled
 Immersion: disabled
 AdiBags: enabled
 AdiBags_Config: enabled
@@ -131,3 +131,9 @@ TidyPlates_Quatre: disabled
 BuyEmAllClassic: enabled
 PitBull4: enabled
 PitBull4_DogTagTexts: enabled
+Pawn: disabled
+Masque_Caith: disabled
+Masque: disabled
+Masque_Entropy: disabled
+Masque_Cainyx: disabled
+Masque_Gm_Sr: disabled

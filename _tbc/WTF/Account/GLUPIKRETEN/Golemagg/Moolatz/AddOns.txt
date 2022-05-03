@@ -1,5 +1,5 @@
 nPower: disabled
-nHealth: enabled
+nHealth: disabled
 Immersion: disabled
 AdiBags: enabled
 AdiBags_Config: enabled
@@ -142,7 +142,7 @@ Kui_Media: disabled
 Kui_Nameplates: disabled
 Kui_Nameplates_Core_Config: disabled
 Kui_Nameplates_Core: disabled
-Plater: disabled
+Plater: enabled
 NovaInstanceTracker: enabled
 PallyPower: enabled
 TidyPlates_ThreatPlates: disabled

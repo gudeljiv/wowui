@@ -36,10 +36,20 @@ f:SetScript(
 		if event == 'PLAYER_REGEN_DISABLED' then
 			cc_combat:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
 			cc_combat:SetBeautyBorderColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+			SetCVar('nameplateShowEnemies', 1)
+			SetCVar('nameplateShowEnemyMinions', 1)
+			SetCVar('nameplateShowEnemyMinus', 1)
+		-- SetCVar('nameplateShowFriends', 0)
+		-- SetCVar('nameplateShowFriendlyMinions', 0)
 		end
 		if event == 'PLAYER_REGEN_ENABLED' then
 			cc_combat:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureNormal')
 			cc_combat:SetBeautyBorderColor(1, 1, 1, 1)
+			SetCVar('nameplateShowEnemies', 0)
+			SetCVar('nameplateShowEnemyMinions', 0)
+			SetCVar('nameplateShowEnemyMinus', 0)
+		-- SetCVar('nameplateShowFriends', 1)
+		-- SetCVar('nameplateShowFriendlyMinions', 1)
 		end
 	end
 )

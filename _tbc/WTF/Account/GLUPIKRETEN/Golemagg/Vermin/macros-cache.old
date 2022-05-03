@@ -39,11 +39,6 @@ VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 /cast [stance:1/2] Shield Bash; Battle Stance
 /cast Bloodrage
 END
-VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Thunder Clap
-/startattack
-/cast [stance:1/3] Thunder Clap; Battle Stance
-END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
@@ -73,6 +68,8 @@ VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 /cast [stance:1/3] Bloodrage
 /cast [stance:1/3] Death Wish
 /cast [stance:2] Shield Wall
+/use 14
+/use 13
 END
 VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

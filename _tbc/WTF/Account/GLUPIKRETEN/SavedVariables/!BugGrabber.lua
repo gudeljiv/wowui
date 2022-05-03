@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 5050,
 	["lastSanitation"] = 3,
-	["session"] = 4997,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -204,13 +204,20 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [25]
 		{
+			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'ExtendedCharacterStats' tried to call the protected function 'CopyToClipboard()'.",
+			["time"] = "2022/02/24 19:24:02",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `CopyToClipboard'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:55: in function `FrameStackTooltip_HandleFrameCommand'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:25: in function `command'\n[string \"@Interface\\SharedXML\\KeyCommand.lua\"]:47: in function `Update'\n[string \"@Interface\\SharedXML\\KeyCommand.lua\"]:111: in function `KeyCommand_Update'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:234: in function <...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools.lua:233>",
+			["session"] = 4652,
+			["counter"] = 1,
+		}, -- [26]
+		{
 			["message"] = "[string \"TrinketMenu_MainFrame:SetPoint(\"RIGHT\", Pla...\"]:1: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: TrinketMenu_MainFrame:SetPoint.",
 			["time"] = "2022/02/26 17:17:38",
 			["locals"] = "(*temporary) = TrinketMenu_MainFrame {\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n 0 = <userdata>\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n}\n(*temporary) = \"RIGHT\"\n(*temporary) = PlayerFrame {\n isAnimatedOut = false\n portrait = PlayerPortrait {\n }\n statusSign = -1\n unit = \"player\"\n inSequence = false\n feedbackText = PlayerHitIndicator {\n }\n SetPoint = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:222\n ClearAllPoints = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:221\n statusCounter = 0\n healthbar = PlayerFrameHealthBar {\n }\n manabar = PlayerFrameManaBar {\n }\n state = \"player\"\n menu = <function> defined @Interface\\FrameXML\\PlayerFrame.lua:47\n feedbackStartTime = 1520211.467000\n feedbackFontHeight = 30\n name = PlayerName {\n }\n 0 = <userdata>\n}\n(*temporary) = \"LEFT\"\n(*temporary) = 0\n(*temporary) = 0\n",
 			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"TrinketMenu_MainFrame:SetPoint(\"RIGHT\", PlayerFrame, \"LEFT\", 0,0)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2914: in function <Interface\\FrameXML\\ChatFrame.lua:2907>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 4654,
 			["counter"] = 1,
-		}, -- [26]
+		}, -- [27]
 		{
 			["message"] = "[string \"TrinketMenu_MainFrame:CreateBautyBorder(6)\"]:1: attempt to call method 'CreateBautyBorder' (a nil value)",
 			["time"] = "2022/02/26 17:19:17",
@@ -218,7 +225,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"TrinketMenu_MainFrame:CreateBautyBorder(6)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2914: in function <Interface\\FrameXML\\ChatFrame.lua:2907>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 4654,
 			["counter"] = 1,
-		}, -- [27]
+		}, -- [28]
 		{
 			["message"] = "[string \"PlayerFrame:CreateBautyBorder(6)\"]:1: attempt to call method 'CreateBautyBorder' (a nil value)",
 			["time"] = "2022/02/26 17:19:17",
@@ -226,7 +233,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"PlayerFrame:CreateBautyBorder(6)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2914: in function <Interface\\FrameXML\\ChatFrame.lua:2907>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 4654,
 			["counter"] = 1,
-		}, -- [28]
+		}, -- [29]
 		{
 			["message"] = "[string \"TrinketMenu_MainFrame:SetPoint(\"RIGHT\", Pla...\"]:1: Action[SetPoint] failed because[Failure]: attempted from: TrinketMenu_MainFrame:SetPoint.",
 			["time"] = "2022/02/26 17:20:19",
@@ -234,7 +241,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"TrinketMenu_MainFrame:SetPoint(\"RIGHT\", PlayerPortrait, \"LEFT\", 20, 10)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2914: in function <Interface\\FrameXML\\ChatFrame.lua:2907>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:341: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:623: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 4654,
 			["counter"] = 1,
-		}, -- [29]
+		}, -- [30]
 		{
 			["message"] = "Interface\\AddOns\\TrinketMenu\\TrinketMenu-9.0.4.lua:617: Frame TrinketMenu_MainFrame is not movable",
 			["time"] = "2022/02/26 17:23:32",
@@ -242,21 +249,21 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `StartMoving'\n[string \"@Interface\\AddOns\\TrinketMenu\\TrinketMenu-9.0.4.lua\"]:617: in function `MainFrame_OnMouseDown'\n[string \"*:OnMouseDown\"]:1: in function <[string \"*:OnMouseDown\"]:1>",
 			["session"] = 4655,
 			["counter"] = 1,
-		}, -- [30]
+		}, -- [31]
 		{
 			["message"] = "[string \"Error in: Find Minerals\"]:7: attempt to index global 'MiniMapTrackingFrame' (a nil value)",
 			["time"] = "2022/03/06 12:18:48",
 			["stack"] = "[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:611: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:537>\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:747: in function `ScanEventsInternal'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:708: in function `ScanEvents'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:1429: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:1427>",
 			["session"] = 4680,
 			["counter"] = 5,
-		}, -- [31]
+		}, -- [32]
 		{
 			["message"] = "[string \"Error in: Find Herbs\"]:7: attempt to index global 'MiniMapTrackingFrame' (a nil value)",
 			["time"] = "2022/03/06 12:18:48",
 			["stack"] = "[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:611: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:537>\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:747: in function `ScanEventsInternal'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:708: in function `ScanEvents'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:1429: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:1427>",
 			["session"] = 4680,
 			["counter"] = 161,
-		}, -- [32]
+		}, -- [33]
 		{
 			["message"] = "[string \"titm:CreateBeautyBorder(6)\"]:1: attempt to index global 'titm' (a nil value)",
 			["time"] = "2022/03/06 15:57:26",
@@ -264,7 +271,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"titm:CreateBeautyBorder(6)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 4686,
 			["counter"] = 1,
-		}, -- [33]
+		}, -- [34]
 		{
 			["message"] = "[string \"titm:Show()\"]:1: attempt to index global 'titm' (a nil value)",
 			["time"] = "2022/03/06 15:57:37",
@@ -272,7 +279,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"titm:Show()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 4686,
 			["counter"] = 1,
-		}, -- [34]
+		}, -- [35]
 		{
 			["message"] = "[string \"TrackingIconTextFrame:SetPoint(\"CENTER\")\"]:1: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: TrackingIconTextFrame:SetPoint.",
 			["time"] = "2022/03/06 15:58:41",
@@ -280,21 +287,21 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"TrackingIconTextFrame:SetPoint(\"CENTER\")\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2156: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4829: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4492: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4528: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 4686,
 			["counter"] = 1,
-		}, -- [35]
+		}, -- [36]
 		{
 			["message"] = "LibDogTag-3.0-20210821131131.20210821: Error with code \"[Status or (FractionalHP:Short ' || ' PercentHP:Percent)]\" (Base;Unit). ...llMeWhen\\Lib\\LibDogTag-Unit-3.0\\Categories\\Auras-Auras.lua:66: attempt to perform arithmetic on local 'count' (a string value)",
 			["time"] = "2022/03/07 12:15:18",
 			["stack"] = "[string \"=[C]\"]: in function `tagError'\n[string \"@Interface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\LibDogTag-3.0-20210821131131.lua\"]:304: in function <...ddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\LibDogTag-3.0.lua:290>\n[string \"@Interface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\LibDogTag-3.0-20210821131131.lua\"]:440: in function `AddFontString'\n[string \"@Interface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0-20210821131131\\Help.lua\"]:716: in function <...terface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\Help.lua:712>\n[string \"@Interface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0-20210821131131\\Help.lua\"]:728: in function <...terface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\Help.lua:722>",
 			["session"] = 4700,
 			["counter"] = 8,
-		}, -- [36]
+		}, -- [37]
 		{
 			["message"] = "LibDogTag-3.0-20210821131131.20210821: Error with code \"[Status:MissingHP:Hide(0)][Offline:AFK:HasDivineIntervention:Dead?IsFeignedDeath:HasSoulstone:Dead]\" (Base;Unit). ...llMeWhen\\Lib\\LibDogTag-Unit-3.0\\Categories\\Auras-Auras.lua:66: attempt to perform arithmetic on local 'count' (a string value)",
 			["time"] = "2022/03/07 12:15:54",
 			["stack"] = "[string \"=[C]\"]: in function `tagError'\n[string \"@Interface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\LibDogTag-3.0-20210821131131.lua\"]:304: in function <...ddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\LibDogTag-3.0.lua:290>\n[string \"@Interface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\LibDogTag-3.0-20210821131131.lua\"]:440: in function `AddFontString'\n[string \"@Interface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0-20210821131131\\Help.lua\"]:716: in function <...terface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\Help.lua:712>\n[string \"@Interface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0-20210821131131\\Help.lua\"]:728: in function <...terface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\Help.lua:722>",
 			["session"] = 4700,
 			["counter"] = 104,
-		}, -- [37]
+		}, -- [38]
 		{
 			["message"] = "...rface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0-20210821131131\\Events.lua:711: ...llMeWhen\\Lib\\LibDogTag-Unit-3.0\\Categories\\Auras-Auras.lua:147: attempt to perform arithmetic on local 'count' (a nil value)",
 			["time"] = "2022/03/07 12:28:28",
@@ -302,21 +309,21 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0-20210821131131\\Events.lua\"]:711: in function <...rface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\Events.lua:702>",
 			["session"] = 4700,
 			["counter"] = 2,
-		}, -- [38]
+		}, -- [39]
 		{
 			["message"] = "LibDogTag-3.0-20210821131131.20210821: Error with code \"[Status or (if IsFriend then\\\n    MissingHP:Hide(0):Short:Color('ff7f7f')\\\nelse\\\n    FractionalHP(known=true):Short or PercentHP:Percent\\\nend)]\" (Base;Stats;TMW;Unit). ...llMeWhen\\Lib\\LibDogTag-Unit-3.0\\Categories\\Auras-Auras.lua:42: attempt to perform arithmetic on local 'count' (a nil value)",
 			["time"] = "2022/03/07 12:31:53",
 			["stack"] = "[string \"=[C]\"]: in function `tagError'\n[string \"@Interface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0-20210821131131\\Compiler.lua\"]:2173: in function <...ace\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\Compiler.lua:2153>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Common\\DogTags\\config.lua\"]:508: in function `TestDogTagString'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\IconModules\\IconModule_Texts\\Config.lua\"]:748: in function `LoadConfig'\n[string \"*:OnLoad\"]:4: in function <[string \"*:OnLoad\"]:3>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1129: in function `CScriptCall'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1473: in function `RequestReload'\n...\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:619: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:607>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.1.2.lua\"]:837: in function `Fire'\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.1.2.lua\"]:2650: in function `UpdateNormally'\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.1.2.lua\"]:2810: in function `Update'\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.1.2.lua\"]:2926: in function `LockToggle'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 4700,
 			["counter"] = 10,
-		}, -- [39]
+		}, -- [40]
 		{
 			["message"] = "LibDogTag-3.0-20210821131131.20210821: Error with code \"[THICKOUTLINE][Status or (if IsFriend then\\\n    MissingHP:Hide(0):Short:Color('ff7f7f')\\\nelse\\\n    FractionalHP(known=true):Short or PercentHP:Percent\\\nend)]\" (Base;Stats;TMW;Unit). ...llMeWhen\\Lib\\LibDogTag-Unit-3.0\\Categories\\Auras-Auras.lua:42: attempt to perform arithmetic on local 'count' (a nil value)",
 			["time"] = "2022/03/07 12:31:53",
 			["stack"] = "[string \"=[C]\"]: in function `tagError'\n[string \"@Interface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\LibDogTag-3.0-20210821131131.lua\"]:304: in function <...ddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\LibDogTag-3.0.lua:290>\n[string \"@Interface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\LibDogTag-3.0-20210821131131.lua\"]:440: in function `AddFontString'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\IconModules\\IconModule_Texts\\Texts.lua\"]:933: in function `OnKwargsUpdated'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\IconModules\\IconModule_Texts\\Texts.lua\"]:887: in function <...en\\Components\\IconModules\\IconModule_Texts\\Texts.lua:789>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[2]\"]:9: in function <[string \"safecall Dispatcher[2]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\IconModule.lua\"]:94: in function <...ace\\AddOns\\TellMeWhen\\Components\\Core\\IconModule.lua:83>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n...\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:619: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:607>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.1.2.lua\"]:837: in function `Fire'\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.1.2.lua\"]:2650: in function `UpdateNormally'\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.1.2.lua\"]:2810: in function `Update'\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.1.2.lua\"]:2926: in function `LockToggle'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 4700,
 			["counter"] = 14,
-		}, -- [40]
+		}, -- [41]
 		{
 			["message"] = "...rface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0-20210821131131\\Events.lua:711: ...llMeWhen\\Lib\\LibDogTag-Unit-3.0\\Categories\\Auras-Auras.lua:126: attempt to perform arithmetic on local 'count' (a string value)",
 			["time"] = "2022/03/07 12:20:55",
@@ -324,7 +331,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0-20210821131131\\Events.lua\"]:711: in function <...rface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\Events.lua:702>",
 			["session"] = 4700,
 			["counter"] = 18,
-		}, -- [41]
+		}, -- [42]
 		{
 			["message"] = "...rface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0-20210821131131\\Events.lua:711: ...llMeWhen\\Lib\\LibDogTag-Unit-3.0\\Categories\\Auras-Auras.lua:147: attempt to perform arithmetic on local 'count' (a string value)",
 			["time"] = "2022/03/07 12:20:13",
@@ -332,7 +339,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0-20210821131131\\Events.lua\"]:711: in function <...rface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\Events.lua:702>",
 			["session"] = 4700,
 			["counter"] = 88,
-		}, -- [42]
+		}, -- [43]
 		{
 			["message"] = "...rface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0-20210821131131\\Events.lua:711: ...llMeWhen\\Lib\\LibDogTag-Unit-3.0\\Categories\\Auras-Auras.lua:126: attempt to perform arithmetic on local 'count' (a nil value)",
 			["time"] = "2022/03/07 12:20:06",
@@ -340,14 +347,6 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0-20210821131131\\Events.lua\"]:711: in function <...rface\\AddOns\\TellMeWhen\\Lib\\LibDogTag-3.0\\Events.lua:702>",
 			["session"] = 4700,
 			["counter"] = 585,
-		}, -- [43]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_TrackedQuests:ClearAllPoints()'.",
-			["time"] = "2022/03/07 16:08:32",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:610: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:1243: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:198: in function <...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:162>",
-			["session"] = 4704,
-			["counter"] = 1,
 		}, -- [44]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SpellCount/SpellCount.lua:26: attempt to index upvalue 'c' (a nil value)",
@@ -710,8 +709,8 @@ BugGrabberDB = {
 		}, -- [89]
 		{
 			["message"] = "(null)",
-			["session"] = 4904,
 			["time"] = "2022/03/09 13:39:43",
+			["session"] = 4904,
 			["counter"] = 6,
 		}, -- [90]
 		{
@@ -756,14 +755,14 @@ BugGrabberDB = {
 		}, -- [95]
 		{
 			["message"] = "  (null)",
-			["session"] = 4914,
 			["time"] = "2022/04/13 16:37:53",
+			["session"] = 4914,
 			["counter"] = 3,
 		}, -- [96]
 		{
 			["message"] = " (null)",
-			["session"] = 4914,
 			["time"] = "2022/04/11 11:49:12",
+			["session"] = 4914,
 			["counter"] = 13,
 		}, -- [97]
 		{
@@ -911,59 +910,124 @@ BugGrabberDB = {
 			["counter"] = 2,
 		}, -- [115]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'nBuff' tried to call the protected function 'TargetFrameToT:Show()'.",
-			["time"] = "2022/04/16 18:15:48",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
-			["session"] = 4981,
-			["counter"] = 2,
-		}, -- [116]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
-			["time"] = "2022/02/15 18:27:27",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 4985,
-			["counter"] = 36,
-		}, -- [117]
-		{
 			["message"] = "...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:751: attempt to index local 'color' (a nil value)",
 			["time"] = "2022/02/17 22:46:39",
 			["locals"] = "numBatchAuctions = 52811\ntotalAuctions = 52811\nbutton = BrowseButton2 {\n 0 = <userdata>\n itemCount = 20\n bidAmount = 34580\n buyoutPrice = 6995960\n itemIndex = 2\n PriceTooltipFrame = <unnamed> {\n }\n}\nbuttonName = \"BrowseButton2\"\nbuttonHighlight = BrowseButton2Highlight {\n 0 = <userdata>\n}\niconTexture = BrowseButton1ItemIconTexture {\n 0 = <userdata>\n}\nitemName = BrowseButton2Name {\n 0 = <userdata>\n}\ncolor = nil\nitemCount = BrowseButton1ItemCount {\n 0 = <userdata>\n}\nmoneyFrame = BrowseButton1MoneyFrame {\n 0 = <userdata>\n vadjust = 0\n trialErrorButton = BrowseButton1MoneyFrameTrialErrorButton {\n }\n moneyType = \"AUCTION\"\n info = <table> {\n }\n small = 1\n staticMoney = 2296\n maxDisplayWidth = 146\n}\nyourBidText = BrowseButton1YourBidText {\n 0 = <userdata>\n}\nbuyoutFrame = BrowseButton1BuyoutFrame {\n 0 = <userdata>\n}\nbuyoutMoney = BrowseButton1BuyoutFrameMoney {\n 0 = <userdata>\n vadjust = 0\n trialErrorButton = BrowseButton1BuyoutFrameMoneyTrialErrorButton {\n }\n moneyType = \"AUCTION\"\n info = <table> {\n }\n small = 1\n staticMoney = 2499\n maxDisplayWidth = 146\n}\noffset = 0\nindex = 2\nisLastSlotEmpty = nil\nname = \"\"\ntexture = 134955\ncount = 1\nquality = -1\ncanUse = false\nlevel = 0\nlevelColHeader = nil\nminBid = 43995\nminIncrement = 0\nbuyoutPrice = 43995\nduration = 3\nbidAmount = 0\nhighBidder = false\nbidderFullName = nil\nowner = nil\nownerFullName = nil\nsaleStatus = 0\nitemId = 15894\nhasAllInfo = true\ndisplayedPrice = 2296\nrequiredBid = 2296\n(for index) = 2\n(for limit) = 8\n(for step) = 1\ni = 2\nshouldHide = false\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = BrowseButton2Name {\n 0 = <userdata>\n}\n(*temporary) = \"\"\n(*temporary) = <userdata>\n(*temporary) = false\n(*temporary) = 0\n(*temporary) = nil\n(*temporary) = 43995\n(*temporary) = 0\n(*temporary) = 43995\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 15894\n(*temporary) = true\n(*temporary) = \"attempt to index local 'color' (a nil value)\"\n",
 			["stack"] = "[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:751: in function `AuctionFrameBrowse_Update'\n[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:277: in function <...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:275>",
-			["session"] = 4986,
+			["session"] = 4981,
 			["counter"] = 10,
+		}, -- [116]
+		{
+			["message"] = "Interface\\AddOns\\nBuff\\core.lua:43: attempt to call global 'UnitHasVehicleUI' (a nil value)",
+			["time"] = "2022/04/26 10:05:22",
+			["locals"] = "self = BuffButton1 {\n 0 = <userdata>\n Shadow = BuffButton1Shadow {\n }\n parent = BuffFrame {\n }\n duration = BuffButton1Duration {\n }\n unit = \"player\"\n count = BuffButton1Count {\n }\n filter = \"HELPFUL\"\n timeMod = 1\n expirationTime = 60987.418000\n timeLeft = 2190.895000\n texture = BuffButton1Overlay {\n }\n}\n(*temporary) = nil\n(*temporary) = \"player\"\n(*temporary) = \"attempt to call global 'UnitHasVehicleUI' (a nil value)\"\ncfg = <table> {\n countFont = \"Fonts\\ARIALN.ttf\"\n debuffScale = 1\n durationFont = \"Fonts\\ARIALN.ttf\"\n debuffFontSize = 18\n debuffSize = 48\n buffFontSize = 12\n buffSize = 36\n buffPerRow = 8\n paddingY = 7\n buffCountSize = 14\n paddingX = 7\n borderDebuff = \"Interface\\AddOns\\nBuff\\media\\textureDebuff\"\n buffScale = 1\n debuffCountSize = 16\n borderBuff = \"Interface\\AddOns\\nBuff\\media\\textureOverlay\"\n buffBorderColor = <table> {\n }\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\nBuff\\core.lua\"]:43: in function <Interface\\AddOns\\nBuff\\core.lua:40>\n[string \"@Interface\\AddOns\\nBuff\\core.lua\"]:79: in function <Interface\\AddOns\\nBuff\\core.lua:66>\n[string \"=[C]\"]: in function `BuffFrame_UpdateAllBuffAnchors'\n[string \"@Interface\\FrameXML\\BuffFrame.lua\"]:103: in function `BuffFrame_Update'\n[string \"@Interface\\FrameXML\\BuffFrame.lua\"]:48: in function <Interface\\FrameXML\\BuffFrame.lua:44>\n[string \"=[C]\"]: ?",
+			["session"] = 4996,
+			["counter"] = 5,
+		}, -- [117]
+		{
+			["message"] = "Interface\\AddOns\\ChocolateBar\\Chocolate.lua:325: Action[FrameMeasurement] failed because[Can't measure restricted regions]: attempted from: NamePlate1PlaterUnitFrame:GetPoint().",
+			["time"] = "2022/04/29 10:42:49",
+			["locals"] = "(*temporary) = NamePlate1PlaterUnitFrame {\n UpdateUnitFrame = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9502\n Plater = true\n isNamePlate = true\n HasHideHookRegistered = true\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n IsTarget = false\n IsUIParent = true\n TargetNeonDown = <unnamed> {\n }\n powerBar = NamePlate1PlaterUnitFramePowerBar {\n }\n CanCheckAggro = true\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n ScriptRunInitialization = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10197\n namePlateUnitToken = \"nameplate1\"\n aggroGlowUpper = <unnamed> {\n }\n GhostAuraCache = <table> {\n }\n ScriptRunOnShow = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10158\n namePlateNpcId = 3244\n HookGetInfo = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10041\n UnregisterEvents = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9240\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n RegisterEvents = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9214\n IsUnitNameplate = true\n ExtraIconFrame = NamePlate1PlaterUnitFrameExtraIconRow {\n }\n RefreshID = 6\n namePlateUnitName = \"Greater Plainstrider\"\n ScriptRunNoAttach = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10231\n SetHealthBarColor = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9209\n HasHooksRegistered = true\n IsUnitEvent = <table> {\n }\n namePlateThreatPercent = 0\n UNIT_ENTERED_VEHICLE = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9534\n CheckVehiclePossession = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9328\n HighlightFrame = NamePlate1PlaterUnitFrameHealthBarHighlightOverlay {\n }\n ScriptRunOnHide = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10181\n blizzardPlateFrameID = \"table: 000001C3538FA430\"\n ScriptHotReload = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10116\n ScriptRunOnUpdate = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10138\n castBar2 = NamePlate1PlaterUnitFrameCastBar2 {\n }\n nameplateScaleAdjust = 1\n healthBar = NamePlate1PlaterUnitFrameHealthBar {\n }\n UNIT_NAME_UPDATE = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9522\n BossModIconFrame = NamePlate1PlaterUnitFrameHealthBarBossModIconRow {\n }\n BodyFlashFrame = <unnamed> {\n }\n UpdateName = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9452\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n ActorTitleSpecial = <unnamed> {\n }\n actorType = \"enemynpc\"\n namePlateClassification = \"normal\"\n ScriptRunCommMessageHook = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10208\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n PLAYER_TARGET_CHANGED = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9517\n namePlateInRange = true\n aggroGlowLower = <unnamed> {\n }\n BuffFrame = NamePlate1PlaterUnitFrameBuffFrame1 {\n }\n isBattlePet = false\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n isWidgetOnlyMode = false\n UnitFrameEvents = <table> {\n }\n InExecuteRange = false\n namePlateThreatOffTankIsTanking = false\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n namePlateUnitReaction = 4\n castBar = NamePlate1PlaterUnitFrameCastBar {\n }\n IsProtected = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10319\n SetUnit = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9279\n unitName = <unnamed> {\n }\n Top3DFrame = NamePlate13DFrame {\n }\n CustomIndicators = <table> {\n }\n namePlateUnitNameLower = \"greater plainstrider\"\n TargetTextures4Sides = <table> {\n }\n targetOverlay = <unnamed> {\n }\n ThreatIcon = <unnamed> {\n }\n PlaterRaidTargetFrame = <unnamed> {\n }\n ScriptGetContainer = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10029\n PlayerCannotAttack = false\n SetAlphaTo = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:8075\n ActorNameSpecial = <unnamed> {\n }\n UNIT_EXITED_VEHICLE = <function> defined @Interface\\AddOn",
+			["stack"] = "[string \"=[C]\"]: in function `GetPoint'\n[string \"@Interface\\AddOns\\ChocolateBar\\Chocolate.lua\"]:325: in function <Interface\\AddOns\\ChocolateBar\\Chocolate.lua:307>",
+			["session"] = 5005,
+			["counter"] = 1,
 		}, -- [118]
 		{
-			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'ExtendedCharacterStats' tried to call the protected function 'CopyToClipboard()'.",
-			["time"] = "2022/02/24 19:24:02",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `CopyToClipboard'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:55: in function `FrameStackTooltip_HandleFrameCommand'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:25: in function `command'\n[string \"@Interface\\SharedXML\\KeyCommand.lua\"]:47: in function `Update'\n[string \"@Interface\\SharedXML\\KeyCommand.lua\"]:111: in function `KeyCommand_Update'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:234: in function <...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools.lua:233>",
-			["session"] = 4987,
-			["counter"] = 2,
-		}, -- [119]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Grid2' tried to call the protected function 'Grid2LayoutHeader1:Hide()'.",
-			["time"] = "2022/04/27 15:15:06",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface\\AddOns\\Grid2\\GridLayout.lua\"]:120: in function `Update'\n[string \"@Interface\\AddOns\\Grid2\\GridLayout.lua\"]:490: in function `UpdateHeaders'\n[string \"@Interface\\AddOns\\Grid2\\GridLayout.lua\"]:677: in function `UpdateFramesSize'\n[string \"@Interface\\AddOns\\Grid2\\GridLayout.lua\"]:667: in function `UpdateDisplay'\n[string \"@Interface\\AddOns\\Grid2Options\\modules\\themes\\GridGeneral.lua\"]:272: in function <...e\\AddOns\\Grid2Options\\modules\\themes\\GridGeneral.lua:270>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:51: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:49>\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:847: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:668>\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:899: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:887>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:72: in function <...face\\AddOns\\BlizzMove\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:70>\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:306: in function `Fire'\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIWidget-Slider.lua\"]:112: in function <...Move\\Libs\\AceGUI-3.0\\widgets\\AceGUIWidget-Slider.lua:99>",
-			["session"] = 4988,
+			["message"] = "Interface\\AddOns\\ChocolateBar\\DragAndDrop.lua:86: attempt to index upvalue 'focus' (a nil value)",
+			["time"] = "2022/04/29 10:42:52",
+			["locals"] = "self = <table> {\n Start = <function> defined @Interface\\AddOns\\ChocolateBar\\DragAndDrop.lua:67\n UnregisterFrame = <function> defined @Interface\\AddOns\\ChocolateBar\\DragAndDrop.lua:63\n Stop = <function> defined @Interface\\AddOns\\ChocolateBar\\DragAndDrop.lua:79\n RegisterFrame = <function> defined @Interface\\AddOns\\ChocolateBar\\DragAndDrop.lua:54\n}\nframe = ChocolatePlater {\n BottomLeftCorner = <unnamed> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n icon = <unnamed> {\n }\n obj = <table> {\n }\n text = <unnamed> {\n }\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n bar = ChocolateBar2 {\n }\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n highlight = <function> defined @Interface\\AddOns\\ChocolateBar\\Chocolate.lua:355\n Update = <function> defined @Interface\\AddOns\\ChocolateBar\\Chocolate.lua:300\n isMoving = false\n settings = <table> {\n }\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n Center = <unnamed> {\n }\n RightEdge = <unnamed> {\n }\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:180\n labelText = \"|cffffd100P|r \"\n 0 = <userdata>\n TopEdge = <unnamed> {\n }\n BottomEdge = <unnamed> {\n }\n name = \"Plater\"\n BottomRightCorner = <unnamed> {\n }\n TopRightCorner = <unnamed> {\n }\n TopLeftCorner = <unnamed> {\n }\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:206\n backdropInfo = <table> {\n }\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:391\n LeftEdge = <unnamed> {\n }\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"OnUpdate\"\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = nil\n(*temporary) = ChocolateBar2 {\n 0 = <userdata>\n UpdateBar = <function> defined @Interface\\AddOns\\ChocolateBar\\Bar.lua:428\n GetFocus = <function> defined @Interface\\AddOns\\ChocolateBar\\Bar.lua:421\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n autohide = false\n Drop = <function> defined @Interface\\AddOns\\ChocolateBar\\Bar.lua:394\n UpdateColors = <function> defined @Interface\\AddOns\\ChocolateBar\\Bar.lua:121\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:414\n UpdateStrata = <function> defined @Interface\\AddOns\\ChocolateBar\\Bar.lua:76\n New = <function> defined @Interface\\AddOns\\ChocolateBar\\Bar.lua:28\n EatChocolatePiece = <function> defined @Interface\\AddOns\\ChocolateBar\\Bar.lua:184\n tempHide = false\n chocoMostRight = ChocolatepicoFPS {\n }\n chocolist = <table> {\n }\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:286\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:321\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n LoseFocus = <function> defined @Interface\\AddOns\\ChocolateBar\\Bar.lua:417\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:401\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:339\n listCenter = <table> {\n }\n chocoMostLeft = ChocolateBugSack {\n }\n UpdateDragChocolate = <function> defined @Interface\\AddOns\\ChocolateBar\\Bar.lua:346\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n Center = <unnamed> {\n }\n RightEdge = <unnamed> {\n }\n UpdateScale = <function> defined @Interface\\AddOns\\ChocolateBar\\Bar.lua:105\n LeftEdge = <unnamed> {\n }\n Drag = <function> defined",
+			["stack"] = "[string \"@Interface\\AddOns\\ChocolateBar\\DragAndDrop.lua\"]:86: in function `Stop'\n[string \"@Interface\\AddOns\\ChocolateBar\\Chocolate.lua\"]:347: in function <Interface\\AddOns\\ChocolateBar\\Chocolate.lua:341>",
+			["session"] = 5005,
 			["counter"] = 1,
-		}, -- [120]
+		}, -- [119]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'ArenaEnemyFrames:ClearAllPoints()'.",
 			["time"] = "2022/04/11 12:01:06",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:2525: in function `UIParentManageFramePositions'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:1831: in function <Interface_TBC\\FrameXML\\UIParent.lua:1818>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:2550: in function <Interface_TBC\\FrameXML\\UIParent.lua:2548>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\StanceBar.lua\"]:43: in function `StanceBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:56: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 4989,
+			["session"] = 5020,
 			["counter"] = 3,
-		}, -- [121]
+		}, -- [120]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'AdiBags' tried to call the protected function 'ArenaEnemyFrames:SetPoint()'.",
 			["time"] = "2022/04/11 12:13:03",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetPoint'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:2526: in function `UIParentManageFramePositions'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:1831: in function <Interface_TBC\\FrameXML\\UIParent.lua:1818>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:2550: in function <Interface_TBC\\FrameXML\\UIParent.lua:2548>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UIParent_ManageFramePositions'\n[string \"@Interface\\FrameXML\\MainMenuBar.lua\"]:212: in function `MainMenuBar_UpdateExperienceBars'\n[string \"*:OnEvent\"]:6: in function <[string \"*:OnEvent\"]:1>\n[string \"=[C]\"]: in function `ExpandFactionHeader'\n[string \"@Interface\\AddOns\\Questie\\Modules\\QuestieReputation.lua\"]:13: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua\"]:381: in function <...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:379>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `Fire'\n[string \"@Interface\\AddOns\\BlizzMove\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua\"]:120: in function <...\\AddOns\\BlizzMove\\Libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
-			["session"] = 4989,
-			["counter"] = 3,
+			["session"] = 5020,
+			["counter"] = 2,
+		}, -- [121]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\GarbageCollector.lua:8: script ran too long",
+			["time"] = "2022/04/29 12:06:44",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\GarbageCollector.lua\"]:8: in function <Interface\\AddOns\\xVermin\\GarbageCollector.lua:6>\n[string \"@Interface\\SharedXML\\C_TimerAugment.lua\"]:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
+			["session"] = 5020,
+			["counter"] = 1,
 		}, -- [122]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
+			["time"] = "2022/02/15 18:27:27",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
+			["session"] = 5021,
+			["counter"] = 46,
+		}, -- [123]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'nBuff' tried to call the protected function 'TargetFrameToT:Show()'.",
+			["time"] = "2022/04/16 18:15:48",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
+			["session"] = 5021,
+			["counter"] = 7,
+		}, -- [124]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'Questie_BaseFrame:ClearAllPoints()'.",
+			["time"] = "2022/04/29 19:32:34",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\xVermin\\Addons/Questie.lua\"]:25: in function <Interface\\AddOns\\xVermin\\Addons/Questie.lua:13>",
+			["session"] = 5028,
+			["counter"] = 1,
+		}, -- [125]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_TrackedQuests:ClearAllPoints()'.",
+			["time"] = "2022/03/07 16:08:32",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:610: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:1243: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:198: in function <...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:162>",
+			["session"] = 5028,
+			["counter"] = 2,
+		}, -- [126]
+		{
+			["message"] = "[string \"print(nHealthStatusFrame:IsVisible())\"]:1: attempt to index global 'nHealthStatusFrame' (a nil value)",
+			["time"] = "2022/04/30 18:29:53",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:118\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'nHealthStatusFrame' (a nil value)\"\n",
+			["stack"] = "[string \"print(nHealthStatusFrame:IsVisible())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 5032,
+			["counter"] = 1,
+		}, -- [127]
+		{
+			["message"] = "[string \"print(nHealthStatusFrame:isVisible())\"]:1: attempt to index global 'nHealthStatusFrame' (a nil value)",
+			["time"] = "2022/04/30 18:30:02",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:118\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'nHealthStatusFrame' (a nil value)\"\n",
+			["stack"] = "[string \"print(nHealthStatusFrame:isVisible())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 5032,
+			["counter"] = 1,
+		}, -- [128]
+		{
+			["message"] = "[string \"print(nHealthStatusBar:isVisible())\"]:1: attempt to index global 'nHealthStatusBar' (a nil value)",
+			["time"] = "2022/04/30 18:31:38",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:118\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'nHealthStatusBar' (a nil value)\"\n",
+			["stack"] = "[string \"print(nHealthStatusBar:isVisible())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 5032,
+			["counter"] = 1,
+		}, -- [129]
+		{
+			["message"] = "...erface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate-3.lua:3240: script ran too long",
+			["time"] = "2022/04/30 18:37:30",
+			["locals"] = "self = <table> {\n DecodeForWoWChatChannel = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:3172\n _MAJOR = \"LibDeflate\"\n CompressZlib = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:2054\n EncodeForWoWAddonChannel = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:3088\n _VERSION = \"1.0.2-release\"\n CreateCodec = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:2918\n DecompressZlibWithDict = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:2808\n _COPYRIGHT = \"LibDeflate 1.0.2-release Copyright (C) 2018-2020 Haoqian He. Licensed under the zlib License\"\n CompressZlibWithDict = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:2076\n internals = <table> {\n }\n CompressDeflate = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:2008\n EncodeForPrint = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:3221\n EncodeForWoWChatChannel = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:3157\n DecompressDeflate = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:2732\n DecodeForWoWAddonChannel = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:3103\n DecodeForPrint = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:3276\n Adler32 = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:349\n CreateDictionary = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:437\n CompressDeflateWithDict = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:2033\n DecompressZlib = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:2781\n _MINOR = 3\n DecompressDeflateWithDict = <function> defined @Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate.lua:2759\n}\nstr = \"ì}MsÛH–àáÄDIÕ\"ïwÔAvY5.ÙaÉÕSë²$%¬A€€–U½¥ÓÆFÌÎa»—óDÌ}ÑÑ1f¦'ö4aó½Ì@&HŠ¤ìêV¹lQD\"óeæË—ïûëçgç§“t4Ï/‚ü¢²«°¸âÙup><?G³ “âb8ŸL.òY8Š‚ø\"?†ñù‰v~Ì³àb˜…Á‡8JBÒ …ç'ºq~š²hV\\Œƒ\" Cœà8‡i’Ù|T¤Ùa:ÉÀódTDirw¹“‡ñdïîržDÅñ˜}xžÓ|“gÁ0†´[üm÷î»»Kö§üÔïOâ ¿¾»È°ëòQœŽ‚øîòðÕÉóão/ž¿Ü?}qqôöÍþÙñ«“»Ëoj}Fi2‰®ØÙQ«+q¼iÌƒ8¾½»‘u(Â»Ëàî2	oî.‹ðS1ÏÈ“4#¿]Ã'\n\\DÓF—Ñ„,B’Õl§SÒïsxãŒö´‹½ˆp°?êWpb]´×1;{zˆðOƒ+òýN¹ƒQA¶»Ê¸OOÃâ0Ó¬hG'Û‡Wîh?Ž_§QRä;Â«a2^aCZ9Ï£äŠoÌó&Í>,¹û¼›ó!ß”Ëö¬Úß0L²ä·¸7üìHVe™Õ¹Nov¤:^	žçQå×áx0½ˆÆáú0Â#T5,Ý¯=ÝQC³ÇW{Oœf\n\"ª'c’EèHÏ½} ™=†áRóÄ O4òwà,ýÕ¼¸çðFçð\"\nstrlen = 54110\nstrlenMinus2 = 54108\ni = 49147\nbuffer = <table> {\n 1 = \"S3xt\"\n 2 = \"ZTns\"\n 3 = \"wc(F\"\n 4 = \"Htmr\"\n 5 = \"jvTi\"\n 6 = \"n((d\"\n 7 = \"3rDq\"\n 8 = \"Fyxw\"\n 9 = \"14s2\"\n 10 = \"HLC1\"\n 11 = \"tTUS\"\n 12 = \"Kajb\"\n 13 = \"LWAq\"\n 14 = \"aUaG\"\n 15 = \"wwvV\"\n 16 = \"LoTX\"\n 17 = \"gXSZ\"\n 18 = \"H9WU\"\n 19 = \"x258\"\n 20 = \"eXCF\"\n 21 = \"pSr0\"\n 22 = \"BeDm\"\n 23 = \")zMP\"\n 24 = \"Nypn\"\n 25 = \")f28\"\n 26 = \"9Ymb\"\n 27 = \"saKj\"\n 28 = \"iPiP\"\n 29 = \"SRUv\"\n 30 = \"5Ywu\"\n 31 = \"ejY8\"\n 32 = \"Lz(Y\"\n 33 = \"x(((\"\n 34 = \"DU(5\"\n 35 = \"ND(P\"\n 36 = \"tshn\"\n 37 = \"p)IG\"\n 38 = \"8lkc\"\n 39 = \"YUkS\"\n 40 = \"4IG4\"\n 41 = \"zxhC\"\n 42 = \"(WZp\"\n 43 = \"DE0f\"\n 44 = \"ZcYc\"\n 45 = \"tkUy\"\n 46 = \"48jt\"\n 47 = \"UiFw\"\n 48 = \"4OOG\"\n 49 = \"4lId\"\n 50 = \")yy8\"\n 51 = \"5NOD\"\n 52 = \"(PbZ\"\n 53 = \"ZcUy\"\n 54 = \"ywyW\"\n 55 = \"hIJs\"\n 56 = \"cjni\"\n 57 = \"yu45\"\n 58 = \"NOBC\"\n 59 = \"(P5J\"\n 60 = \"YIMv\"\n 61 = \"CX4G\"\n 62 = \"IaYq\"\n 63 = \"Ccoo\"\n 64 = \"hMMK\"\n 65 = \"xKnF\"\n 66 = \"urA2\"\n 67 = \"HPJd\"\n 68 = \"jd88\"\n 69 = \"Krfr\"\n 70 = \"Pj3D\"\n 71 = \"5o5H\"\n 72 = \"Xt27\"\n 73 = \"UlNN\"\n 74 = \"evC8\"\n 75 = \"y2hE\"\n 76 = \"EwW0\"\n 77 = \"qYNd\"\n 78 = \"t(4z\"\n 79 = \"bdJH\"\n 80 = \"ps7w\"\n 81 = \"8329\"\n 82 = \"UV7U\"\n 83 = \"lz)P\"\n 84 = \"8t97\"\n 85 = \"pjoi\"\n 86 = \")67U\"\n 87 = \"CmbY\"\n 88 = \"WUU8\"\n 89 = \"rXPJ\"\n 90 = \"cIV7\"\n 91 = \"YdF1\"\n 92 = \"jp)4\"\n 93 = \"V9IN\"\n 94 = \")Y9p\"\n 95 = \"9fxC\"\n 96 = \"0BFZ\"\n 97 = \"(ND8\"\n 98 = \"Ro5U\"\n 99 = \"l)MA\"\n 100 = \"99Gr\"\n 101 = \"PjtI\"\n 102 = \"UAa2\"\n 103 = \"zh1Q\"\n 104 = \"RehV\"\n 105 = \"PbjZ\"\n 106 = \"dIJV\"\n 107 = \"9Ulh\"\n 108 = \"rwhk\"\n 109 = \"cV7Y\"\n 110 = \"G7Um\"\n 111 = \"j8M7\"\n 112 = \"USi8\"\n 113 = \"tfZZ\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\Details\\Libs\\LibDeflate\\LibDeflate-3.lua\"]:3240: in function `EncodeForPrint'\n[string \"@Interface\\AddOns\\Plater\\Plater_Comms.lua\"]:114: in function `CompressData'\n[string \"@Interface\\AddOns\\Plater\\Plater-Plater-v349-BCC.lua\"]:10009: in function `ExportProfileToString'\n[string \"@Interface\\AddOns\\Plater\\Plater_OptionsPanel.lua\"]:537: in function <Interface\\AddOns\\Plater\\Plater_OptionsPanel.lua:501>",
+			["session"] = 5036,
+			["counter"] = 1,
+		}, -- [130]
 	},
 }

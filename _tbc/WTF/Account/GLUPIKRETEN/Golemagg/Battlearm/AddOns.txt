@@ -1,6 +1,6 @@
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
-nHealth: enabled
+nHealth: disabled
 Bagnon: disabled
 Bagnon_Config: disabled
 Bagnon_GuildBank: disabled
@@ -111,7 +111,7 @@ Kui_Media: disabled
 Kui_Nameplates: disabled
 Kui_Nameplates_Core_Config: disabled
 Kui_Nameplates_Core: disabled
-Plater: disabled
+Plater: enabled
 NovaInstanceTracker: enabled
 PallyPower: enabled
 TidyPlates_ThreatPlates: disabled

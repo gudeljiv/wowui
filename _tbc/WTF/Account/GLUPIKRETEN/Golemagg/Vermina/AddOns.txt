@@ -1,5 +1,5 @@
 nPower: disabled
-nHealth: enabled
+nHealth: disabled
 Immersion: disabled
 AdiBags: enabled
 AdiBags_Config: enabled
@@ -28,7 +28,7 @@ Leatrix_Plus: enabled
 whoaThickFrames_Classic: disabled
 TradeSkillMaster: enabled
 NeatPlates: disabled
-Plater: disabled
+Plater: enabled
 whoaThickFrames_BCC: enabled
 !Colorz: enabled
 !Beautycase: enabled
