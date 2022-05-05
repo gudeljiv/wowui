@@ -83,13 +83,6 @@ X: -27
 Y: 27
 W: 50
 H: 50
-Frame: PlaterOptionsPanelFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 2
-Y: 2
-W: 1100
-H: 650
 Frame: TargetFrame
 FrameLevel: 2
 Anchor: CENTER

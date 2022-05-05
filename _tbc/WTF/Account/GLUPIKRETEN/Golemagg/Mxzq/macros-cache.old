@@ -62,3 +62,10 @@ VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
 /use 13
 /use 14
 END
+VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
+#showtooltip Steady Shot
+/cast !Auto Shot
+/petattack
+/startattack
+/cast Steady Shot
+END

@@ -22,10 +22,10 @@ PallyPowerDB = {
 			["configscale"] = 1.2,
 			["rfbuff"] = false,
 			["enable"] = true,
+			["SalvInCombat"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
-			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -37,18 +37,6 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
-	["Yamadin"] = {
-		4, -- [1]
-		4, -- [2]
-		3, -- [3]
-		3, -- [4]
-		6, -- [5]
-		4, -- [6]
-		4, -- [7]
-		4, -- [8]
-		4, -- [9]
-		0, -- [10]
-	},
 }
 PallyPower_NormalAssignments = {
 }
