@@ -1,8 +1,9 @@
-VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
+VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
+#showtooltip Steady Shot
+/cast !Auto Shot
+/petattack
 /startattack
-/cast Mongoose Bite
-/cast Raptor Strike
+/cast Steady Shot
 END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -62,10 +63,9 @@ VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
 /use 13
 /use 14
 END
-VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
-#showtooltip Steady Shot
-/cast !Auto Shot
-/petattack
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
 /startattack
-/cast Steady Shot
+/cast Mongoose Bite
+/cast Raptor Strike
 END
