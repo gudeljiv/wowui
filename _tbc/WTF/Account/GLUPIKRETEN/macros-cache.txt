@@ -30,9 +30,9 @@ VER 3 000000000000000B "lvl enchant" "132089"
 /click StaticPopup1Button1
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:29451
+#showtooltip item:27681
 /cast feed pet
-/use item:29451
+/use item:27681
 END
 VER 3 0000000000000010 "TEST" "3940790"
 /run  print(nHealthStatusBar:isVisible())

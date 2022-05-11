@@ -37,8 +37,8 @@ ChocolateBarDB = {
 		["Nitwit - Dreadnaught"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
@@ -73,10 +73,6 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["locked"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -87,7 +83,11 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["fixedStrata"] = true,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["locked"] = false,
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -131,7 +131,9 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 				},
 				["VuhDo"] = {
+					["enabled"] = false,
 					["align"] = "right",
+					["isNew"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},
@@ -314,10 +316,14 @@ ChocolateBarDB = {
 					["index"] = 4,
 					["barName"] = "ChocolateBar1",
 				},
-				["CB_Entertainer"] = {
-					["enabled"] = false,
+				["PallyPower"] = {
 					["index"] = 2,
-					["barName"] = "ChocolateBar1",
+					["isNew"] = false,
+					["showLabel"] = true,
+					["showIcon"] = false,
+					["barName"] = "ChocolateBar2",
+					["showText"] = false,
+					["customLabel"] = "PP",
 				},
 				["CB_ItemLevel"] = {
 					["enabled"] = false,
@@ -336,14 +342,17 @@ ChocolateBarDB = {
 					["widthBehavior"] = "free",
 					["customLabel"] = "L",
 				},
-				["PallyPower"] = {
+				["CB_Entertainer"] = {
+					["enabled"] = false,
 					["index"] = 2,
-					["isNew"] = false,
-					["showLabel"] = true,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar2",
+					["barName"] = "ChocolateBar1",
+				},
+				["Prat"] = {
+					["enabled"] = false,
+					["index"] = 3,
+					["align"] = "right",
 					["showText"] = false,
-					["customLabel"] = "PP",
+					["barName"] = "ChocolateBar1",
 				},
 				["AtlasLoot"] = {
 					["index"] = 1,
@@ -354,13 +363,6 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 					["showIcon"] = false,
 					["customLabel"] = "AL",
-				},
-				["Prat"] = {
-					["enabled"] = false,
-					["index"] = 3,
-					["align"] = "right",
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
 				},
 				["TradeSkillMaster"] = {
 					["index"] = 3,
@@ -515,17 +517,17 @@ ChocolateBarDB = {
 				},
 			},
 			["fontName"] = "Friz Quadrata TT",
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["gap"] = 0,
-			["moveFrames"] = false,
 			["desaturated"] = false,
-			["textOffset"] = 2,
-			["height"] = 20,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
 			["forceColor"] = false,
+			["gap"] = 0,
+			["textOffset"] = 2,
+			["height"] = 20,
+			["fixedStrata"] = true,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
