@@ -1,5 +1,5 @@
-## v4.11.26 Changes
+## v4.11.29 Changes
 
-* [Classic] Fix incorrect disenchantables
+* Fixed an issue where row text weren't always updated properly in some edge cases
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

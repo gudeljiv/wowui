@@ -627,7 +627,7 @@ function private.FSMCreate()
 				local actionFormatStr = nil
 				if context.searchContext:IsBuyoutScan() then
 					actionFormatStr = L["Buy %d / %d"]
-				elseif context.searchContext:IsBidScan()  then
+				elseif context.searchContext:IsBidScan() then
 					actionFormatStr = L["Bid %d / %d"]
 				else
 					error("Invalid scan type")

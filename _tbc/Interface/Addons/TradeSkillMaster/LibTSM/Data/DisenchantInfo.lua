@@ -431,8 +431,8 @@ elseif TSM.IsWowBCClassic() then
 			minLevel = 66,
 			maxLevel = 70,
 			sourceInfo = {
-				{classId = LE_ITEM_CLASS_ARMOR, quality = 2, minItemLevel = 100, maxItemLevel = 999,  requiredSkill = 275, matRate = 0.220, minAmount = 1, maxAmount = 2, amountOfMats = 0.330},
-				{classId = LE_ITEM_CLASS_WEAPON, quality = 2, minItemLevel = 100, maxItemLevel = 999,  requiredSkill = 275, matRate = 0.750, minAmount = 1, maxAmount = 2, amountOfMats = 1.100},
+				{classId = LE_ITEM_CLASS_ARMOR, quality = 2, minItemLevel = 100, maxItemLevel = 999, requiredSkill = 275, matRate = 0.220, minAmount = 1, maxAmount = 2, amountOfMats = 0.330},
+				{classId = LE_ITEM_CLASS_WEAPON, quality = 2, minItemLevel = 100, maxItemLevel = 999, requiredSkill = 275, matRate = 0.750, minAmount = 1, maxAmount = 2, amountOfMats = 1.100},
 			},
 		},
 

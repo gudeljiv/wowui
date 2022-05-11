@@ -788,7 +788,7 @@ function private.ParsePriceString(str, badPriceSources)
 		if convertItemLink then -- check for itemLink in convert params
 			convertItem = ItemString.Get(convertItemLink)
 			if not convertItem then
-				return nil, L["Invalid item link."]  -- there's an invalid item link in the convertParams
+				return nil, L["Invalid item link."] -- there's an invalid item link in the convertParams
 			end
 			convertPriceSource = strmatch(convertParams, "^ *(.-) *,")
 		elseif convertItemString then -- check for itemString in convert params

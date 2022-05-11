@@ -26,7 +26,7 @@ elseif TSM.IsWowBCClassic() then
 		["i:818"] = { -- Tigerseye
 			["i:2770"] = {requiredSkill = 20, matRate = 0.5000, minAmount = 1, maxAmount = 1, amountOfMats = 0.1000}, -- Copper Ore
 		},
-		["i:1210"] = {  -- Shadowgem
+		["i:1210"] = { -- Shadowgem
 			["i:2771"] = {requiredSkill = 50, matRate = 0.3600, minAmount = 1, maxAmount = 1, amountOfMats = 0.0720}, -- Tin Ore
 			["i:2770"] = {requiredSkill = 20, matRate = 0.1000, minAmount = 1, maxAmount = 1, amountOfMats = 0.0200}, -- Copper Ore
 		},
@@ -131,7 +131,7 @@ else
 		["i:818"] = { -- Tigerseye
 			["i:2770"] = {matRate = 0.5000, minAmount = 1, maxAmount = 1, amountOfMats = 0.1000}, -- Copper Ore
 		},
-		["i:1210"] = {  -- Shadowgem
+		["i:1210"] = { -- Shadowgem
 			["i:2771"] = {matRate = 0.3800, minAmount = 1, maxAmount = 2, amountOfMats = 0.0800}, -- Tin Ore
 			["i:2770"] = {matRate = 0.1000, minAmount = 1, maxAmount = 1, amountOfMats = 0.0200}, -- Copper Ore
 		},

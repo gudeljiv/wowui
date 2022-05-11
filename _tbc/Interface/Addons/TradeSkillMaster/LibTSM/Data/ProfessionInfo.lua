@@ -625,6 +625,7 @@ local OPTIONAL_MAT_INFO = {
 	["i:187742"] = { absItemLevel = 262 }, -- Crafter's Mark of the First Ones
 	["i:185960"] = { relItemLevels = { [74] = true, [87] = true }, relCraftLevel = 2 }, -- Vestige of Origins
 	["i:187784"] = { relItemLevels = { [116] = true }, relCraftLevel = 3 }, -- Vestige of the Eternal
+	["i:191781"] = { relItemLevels = { [74] = true }, reqCraftLevels = { [1] = true }, relCraftLevel = 4, ignored = true }, -- Vestige of the Devourers
 }
 local REL_ITEM_LEVEL_BY_RANK = {
 	[1] = 15,
@@ -680,11 +681,16 @@ end
 
 function ProfessionInfo.GetOptionalMatByRelItemLevel(relItemLevel)
 	for itemString, info in pairs(OPTIONAL_MAT_INFO) do
-		if info.relItemLevels and info.relItemLevels[relItemLevel] then
+		if info.relItemLevels and info.relItemLevels[relItemLevel] and not info.ignored then
 			return itemString
 		end
 	end
 	return nil
+end
+
+function ProfessionInfo.GetRequiredLevelByOptionalMat(itemString)
+	local info = OPTIONAL_MAT_INFO[itemString]
+	return info and info.reqCraftLevels or nil
 end
 
 function ProfessionInfo.GetItemLevelByOptionalMat(itemString)
