@@ -6,6 +6,13 @@ X: -167
 Y: 134
 W: 30
 H: 30
+Frame: Vd1
+FrameLevel: 2
+Anchor: LEFT
+X: 446
+Y: 131
+W: 186
+H: 44
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
@@ -83,6 +90,13 @@ X: -27
 Y: 27
 W: 50
 H: 50
+Frame: VuhDoNewOptionsTabbedFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 232
+Y: 144
+W: 648
+H: 455
 Frame: TargetFrame
 FrameLevel: 2
 Anchor: CENTER
