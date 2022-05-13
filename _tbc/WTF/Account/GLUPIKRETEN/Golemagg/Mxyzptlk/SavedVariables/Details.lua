@@ -23,17 +23,16 @@ _detalhes_database = {
 								"Bizpit <Mxyzptlk>", -- [1]
 							},
 							["custom"] = 0,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 							["aID"] = "4465-01CE7466",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 135.007406,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["end_time"] = 1652287474,
 							["damage_taken"] = 0.007406,
-							["friendlyfire_total"] = 0,
+							["tipo"] = 1,
 							["nome"] = "Mxyzptlk",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -157,7 +156,8 @@ _detalhes_database = {
 							["total"] = 223.007406,
 							["colocacao"] = 1,
 							["last_event"] = 1652287474,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1652287461,
 							["serial"] = "Player-4465-01CE7466",
 							["classe"] = "WARLOCK",
@@ -165,7 +165,8 @@ _detalhes_database = {
 						{
 							["flag_original"] = 4369,
 							["totalabsorbed"] = 0.008745,
-							["damage_taken"] = 59.008745,
+							["friendlyfire"] = {
+							},
 							["damage_from"] = {
 								["Greater Plainstrider"] = true,
 							},
@@ -174,16 +175,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 88.008745,
-							["custom"] = 0,
 							["classe"] = "PET",
+							["custom"] = 0,
+							["aID"] = "Pet-0-4469-1-44-416-010032E4F9",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 88.008745,
-							["tipo"] = 1,
+							["damage_taken"] = 59.008745,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1652287474,
+							["total"] = 88.008745,
 							["friendlyfire_total"] = 0,
 							["ownerName"] = "Mxyzptlk",
 							["nome"] = "Bizpit <Mxyzptlk>",
@@ -221,31 +222,31 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["aID"] = "Pet-0-4469-1-44-416-010032E4F9",
-							["last_dps"] = 6.724898372430896,
+							["end_time"] = 1652287474,
+							["tipo"] = 1,
 							["colocacao"] = 2,
 							["last_event"] = 1652287472,
-							["on_hold"] = false,
+							["last_dps"] = 6.724898372430896,
 							["start_time"] = 1652287461,
 							["serial"] = "Pet-0-4469-1-44-416-010032E4F9",
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 						}, -- [2]
 						{
 							["flag_original"] = 68136,
 							["totalabsorbed"] = 0.004492,
 							["damage_from"] = {
-								["Bizpit <Mxyzptlk>"] = true,
 								["Mxyzptlk"] = true,
+								["Bizpit <Mxyzptlk>"] = true,
+								["Loki"] = true,
 							},
 							["targets"] = {
 								["Bizpit <Mxyzptlk>"] = 59,
 							},
 							["pets"] = {
 							},
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
-							["aID"] = "3244",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 59.004492,
@@ -253,7 +254,8 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["total"] = 59.004492,
 							["end_time"] = 1652287474,
-							["damage_taken"] = 223.004492,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Greater Plainstrider",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -288,16 +290,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["dps_started"] = false,
 							["custom"] = 0,
 							["last_event"] = 1652287471,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 239.004492,
 							["start_time"] = 1652287465,
 							["serial"] = "Creature-0-4469-1-44-3244-00007BE4E6",
-							["classe"] = "UNKNOW",
+							["aID"] = "3244",
 						}, -- [3]
 					},
 				}, -- [1]
@@ -325,7 +326,6 @@ _detalhes_database = {
 							["total"] = 0.003881,
 							["nome"] = "Mxyzptlk",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									[31818] = {
 										["total"] = 0,
@@ -337,6 +337,7 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -400,16 +401,15 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[6307] = {
-										["activedamt"] = 2,
+										["activedamt"] = 4,
 										["id"] = 6307,
 										["targets"] = {
 										},
-										["actived_at"] = 1652361715,
-										["uptime"] = 0,
+										["uptime"] = 1382,
 										["counter"] = 0,
 										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 2,
+										["actived"] = false,
+										["appliedamt"] = 4,
 									},
 								},
 								["tipo"] = 9,
@@ -423,27 +423,27 @@ _detalhes_database = {
 								[5019] = 3,
 								[172] = 1,
 							},
-							["tipo"] = 4,
+							["aID"] = "4465-01CE7466",
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1652361715,
+							["last_event"] = 1652428288,
+							["tipo"] = 4,
+							["buff_uptime"] = 1382,
+							["serial"] = "Player-4465-01CE7466",
 							["buff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 0,
-							["serial"] = "Player-4465-01CE7466",
-							["aID"] = "4465-01CE7466",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["aID"] = "Pet-0-4469-1-44-416-010032E4F9",
+							["tipo"] = 4,
 							["ownerName"] = "Mxyzptlk",
 							["nome"] = "Bizpit <Mxyzptlk>",
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["last_event"] = 0,
+							["aID"] = "Pet-0-4469-1-44-416-010032E4F9",
 							["classe"] = "PET",
-							["tipo"] = 4,
 							["serial"] = "Pet-0-4469-1-44-416-010032E4F9",
 							["spell_cast"] = {
 								[7799] = 5,
@@ -474,7 +474,7 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					282, -- [1]
+					281.994577, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -534,15 +534,15 @@ _detalhes_database = {
 				["data_inicio"] = "18:44:22",
 				["end_time"] = 88015.41100000001,
 				["combat_id"] = 2214,
-				["spells_cast_timeline"] = {
+				["frags"] = {
+					["Greater Plainstrider"] = 1,
 				},
-				["player_last_events"] = {
+				["spells_cast_timeline"] = {
 				},
 				["combat_counter"] = 2961,
 				["CombatSkillCache"] = {
 				},
-				["frags"] = {
-					["Greater Plainstrider"] = 1,
+				["player_last_events"] = {
 				},
 				["start_time"] = 88002.32400000001,
 				["TimeData"] = {
@@ -587,16 +587,17 @@ _detalhes_database = {
 								"Bizpit <Mxyzptlk>", -- [1]
 							},
 							["custom"] = 0,
-							["tipo"] = 1,
+							["classe"] = "WARLOCK",
 							["aID"] = "4465-01CE7466",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 147.002868,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["end_time"] = 1652287444,
-							["damage_taken"] = 14.002868,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
 							["nome"] = "Mxyzptlk",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -749,16 +750,16 @@ _detalhes_database = {
 							["total"] = 222.002868,
 							["colocacao"] = 1,
 							["last_event"] = 1652287443,
-							["friendlyfire"] = {
-							},
+							["damage_taken"] = 14.002868,
 							["start_time"] = 1652287431,
 							["serial"] = "Player-4465-01CE7466",
-							["classe"] = "WARLOCK",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
 							["totalabsorbed"] = 0.006481,
-							["damage_taken"] = 14.006481,
+							["friendlyfire"] = {
+							},
 							["damage_from"] = {
 								["Greater Plainstrider"] = true,
 							},
@@ -773,7 +774,7 @@ _detalhes_database = {
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 75.00648100000001,
-							["tipo"] = 1,
+							["damage_taken"] = 14.006481,
 							["delay"] = 0,
 							["dps_started"] = false,
 							["total"] = 75.00648100000001,
@@ -815,14 +816,13 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["end_time"] = 1652287444,
-							["last_dps"] = 6.206063296378185,
+							["tipo"] = 1,
 							["colocacao"] = 2,
 							["last_event"] = 1652287440,
-							["on_hold"] = false,
+							["last_dps"] = 6.206063296378185,
 							["start_time"] = 1652287431,
 							["serial"] = "Pet-0-4469-1-44-416-010032E4F9",
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 						}, -- [2]
 						{
 							["flag_original"] = 68136,
@@ -837,17 +837,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 222.005793,
 							["aID"] = "3244",
-							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 28.005793,
 							["delay"] = 0,
-							["fight_component"] = true,
+							["dps_started"] = false,
 							["total"] = 28.005793,
-							["on_hold"] = false,
-							["damage_taken"] = 222.005793,
+							["fight_component"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Greater Plainstrider",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -883,16 +884,15 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire_total"] = 0,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["end_time"] = 1652287444,
 							["custom"] = 0,
 							["last_event"] = 1652287436,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["start_time"] = 1652287434,
 							["serial"] = "Creature-0-4469-1-44-3244-00007BE46E",
-							["dps_started"] = false,
+							["classe"] = "UNKNOW",
 						}, -- [3]
 					},
 				}, -- [1]
@@ -986,15 +986,15 @@ _detalhes_database = {
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["aID"] = "Pet-0-4469-1-44-416-010032E4F9",
+							["tipo"] = 4,
 							["ownerName"] = "Mxyzptlk",
 							["nome"] = "Bizpit <Mxyzptlk>",
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["last_event"] = 0,
+							["aID"] = "Pet-0-4469-1-44-416-010032E4F9",
 							["classe"] = "PET",
-							["tipo"] = 4,
 							["serial"] = "Pet-0-4469-1-44-416-010032E4F9",
 							["spell_cast"] = {
 								[7799] = 4,
@@ -1085,15 +1085,15 @@ _detalhes_database = {
 				["data_inicio"] = "18:43:52",
 				["end_time"] = 87984.649,
 				["combat_id"] = 2213,
-				["spells_cast_timeline"] = {
+				["frags"] = {
+					["Greater Plainstrider"] = 1,
 				},
-				["player_last_events"] = {
+				["spells_cast_timeline"] = {
 				},
 				["combat_counter"] = 2960,
 				["CombatSkillCache"] = {
 				},
-				["frags"] = {
-					["Greater Plainstrider"] = 1,
+				["player_last_events"] = {
 				},
 				["start_time"] = 87971.902,
 				["TimeData"] = {
@@ -1138,16 +1138,16 @@ _detalhes_database = {
 								"Bizpit <Mxyzptlk>", -- [1]
 							},
 							["colocacao"] = 1,
-							["on_hold"] = false,
+							["classe"] = "WARLOCK",
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 176.00318,
-							["aID"] = "4465-01CE7466",
-							["dps_started"] = false,
-							["total"] = 248.00318,
 							["friendlyfire"] = {
 							},
+							["dps_started"] = false,
+							["total"] = 248.00318,
+							["damage_taken"] = 61.00318,
 							["last_event"] = 1651742425,
 							["nome"] = "Mxyzptlk",
 							["spells"] = {
@@ -1273,10 +1273,10 @@ _detalhes_database = {
 							["end_time"] = 1651742426,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 61.00318,
+							["on_hold"] = false,
 							["start_time"] = 1651742400,
 							["delay"] = 0,
-							["classe"] = "WARLOCK",
+							["aID"] = "4465-01CE7466",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -1358,16 +1358,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
 							["aID"] = "3244",
-							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 61.003607,
 							["serial"] = "Creature-0-4448-1-34-3244-0000738CBD",
 							["fight_component"] = true,
 							["total"] = 61.003607,
-							["friendlyfire_total"] = 0,
+							["end_time"] = 1651742426,
 							["friendlyfire"] = {
 							},
 							["nome"] = "Greater Plainstrider",
@@ -1412,7 +1412,7 @@ _detalhes_database = {
 							["damage_taken"] = 248.003607,
 							["start_time"] = 1651742421,
 							["delay"] = 1651742407,
-							["end_time"] = 1651742426,
+							["classe"] = "UNKNOW",
 						}, -- [3]
 					},
 				}, -- [1]
@@ -1515,18 +1515,18 @@ _detalhes_database = {
 								[5019] = 1,
 								[5782] = 2,
 							},
-							["aID"] = "4465-01CE7466",
-							["nome"] = "Mxyzptlk",
-							["last_event"] = 1652287393,
-							["tipo"] = 4,
-							["buff_uptime"] = 0,
-							["serial"] = "Player-4465-01CE7466",
 							["buff_uptime_targets"] = {
 							},
+							["nome"] = "Mxyzptlk",
+							["last_event"] = 1652287393,
+							["aID"] = "4465-01CE7466",
+							["buff_uptime"] = 0,
+							["serial"] = "Player-4465-01CE7466",
+							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["tipo"] = 4,
+							["classe"] = "PET",
 							["ownerName"] = "Mxyzptlk",
 							["nome"] = "Bizpit <Mxyzptlk>",
 							["grupo"] = true,
@@ -1535,8 +1535,8 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[7799] = 5,
 							},
+							["tipo"] = 4,
 							["aID"] = "Pet-0-4448-1-34-416-020032E4F9",
-							["classe"] = "PET",
 							["serial"] = "Pet-0-4448-1-34-416-020032E4F9",
 							["last_event"] = 0,
 						}, -- [2]
@@ -1778,12 +1778,7 @@ _detalhes_database = {
 			["point"] = "CENTER",
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
+			["author"] = "Details! Team",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -1791,8 +1786,18 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+			["use_spark"] = true,
+			["y"] = -4.57763671875e-05,
+			["x"] = 0,
+			["font_face"] = "Friz Quadrata TT",
+			["font_size"] = 10,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -1804,30 +1809,25 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["font_size"] = 10,
-			["x"] = 0,
-			["font_face"] = "Friz Quadrata TT",
-			["y"] = -4.57763671875e-05,
-			["use_spark"] = true,
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["main_frame_locked"] = false,
 			["arrow_anchor_y"] = 0,
 		},
+	},
+	["cached_talents"] = {
 	},
 	["announce_prepots"] = {
 		["enabled"] = false,
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["last_day"] = "12",
 	["announce_damagerecord"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["cached_talents"] = {
-	},
+	["last_day"] = "13",
 	["character_data"] = {
-		["logons"] = 726,
+		["logons"] = 730,
 	},
 	["local_instances_config"] = {
 		{
@@ -2037,8 +2037,10 @@ _detalhes_database = {
 					1, -- [3]
 					1, -- [4]
 				},
+				["textL_custom_text"] = "{data3}{data2}",
+				["texture_background"] = "Blizzard",
 				["alpha"] = 0,
-				["textR_class_colors"] = false,
+				["textL_class_colors"] = false,
 				["backdrop"] = {
 					["enabled"] = false,
 					["size"] = 12,
@@ -2050,11 +2052,9 @@ _detalhes_database = {
 					},
 					["texture"] = "Details BarBorder 2",
 				},
-				["texture_background"] = "Blizzard",
-				["textL_custom_text"] = "{data3}{data2}",
 				["no_icon"] = false,
 				["font_size"] = 11,
-				["textL_class_colors"] = false,
+				["textR_class_colors"] = false,
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
 				["height"] = 20,
@@ -2084,8 +2084,11 @@ _detalhes_database = {
 				["onleave"] = 1,
 			},
 			["show_statusbar"] = false,
-			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
+			["switch_damager"] = false,
+			["auto_hide_menu"] = {
+				["left"] = true,
+				["right"] = true,
+			},
 			["strata"] = "LOW",
 			["row_show_animation"] = {
 				["anim"] = "Fade",
@@ -2137,17 +2140,24 @@ _detalhes_database = {
 				true, -- [3]
 				true, -- [4]
 			},
-			["switch_damager"] = false,
-			["auto_hide_menu"] = {
-				["left"] = true,
-				["right"] = true,
+			["menu2_anchor_down"] = {
+				32, -- [1]
+				0, -- [2]
+			},
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
 			},
 			["window_scale"] = 1,
 			["menu_anchor_down"] = {
 				-22, -- [1]
 				0, -- [2]
 			},
-			["hide_icon"] = true,
+			["switch_damager_in_combat"] = false,
 			["instancebutton_config"] = {
 				["textcolor"] = {
 					0.8, -- [1]
@@ -2168,8 +2178,8 @@ _detalhes_database = {
 				["textfont"] = "Friz Quadrata TT",
 				["textshadow"] = false,
 			},
+			["hide_icon"] = true,
 			["grab_on_top"] = false,
-			["switch_damager_in_combat"] = false,
 			["menu2_anchor"] = {
 				32, -- [1]
 				3, -- [2]
@@ -2180,18 +2190,8 @@ _detalhes_database = {
 			["bg_g"] = 0,
 			["bars_grow_direction"] = 1,
 			["hide_in_combat"] = false,
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
+			["show_sidebars"] = false,
+			["desaturated_menu"] = false,
 			["switch_all_roles_after_wipe"] = false,
 			["wallpaper"] = {
 				["enabled"] = false,
@@ -2245,7 +2245,7 @@ _detalhes_database = {
 		}, -- [1]
 	},
 	["force_font_outline"] = "",
-	["combat_counter"] = 2962,
+	["combat_counter"] = 2966,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -2266,7 +2266,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["classe"] = "WARLOCK",
 					["raid_targets"] = {
@@ -2275,8 +2276,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1652287393,
-					["on_hold"] = false,
 					["damage_taken"] = 0.006047,
+					["on_hold"] = false,
 					["nome"] = "Mxyzptlk",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -2334,33 +2335,6 @@ _detalhes_database = {
 								["extra"] = {
 								},
 							},
-							[5019] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Greater Plainstrider"] = 0,
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 5019,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
 							[707] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -2387,6 +2361,33 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["extra"] = {
 								},
+							},
+							[5019] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Greater Plainstrider"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 5019,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[5782] = {
 								["c_amt"] = 0,
@@ -2450,8 +2451,7 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1652287390,
 					["serial"] = "Player-4465-01CE7466",
 					["total"] = 0.006047,
@@ -2467,9 +2467,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
+					["damage_taken"] = 0.005483,
 					["aID"] = "3244",
 					["raid_targets"] = {
 					},
@@ -2478,7 +2477,8 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1652287393,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.005483,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Greater Plainstrider",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -2518,7 +2518,7 @@ _detalhes_database = {
 					["total"] = 0.005483,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652287390,
 					["serial"] = "Creature-0-4448-1-34-3244-0000738CBD",
 					["classe"] = "UNKNOW",
@@ -2533,7 +2533,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["classe"] = "PET",
 					["raid_targets"] = {
@@ -2542,8 +2543,8 @@ _detalhes_database = {
 					["delay"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1652287393,
-					["on_hold"] = false,
 					["damage_taken"] = 0.003145,
+					["on_hold"] = false,
 					["nome"] = "Bizpit <Mxyzptlk>",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -2582,8 +2583,7 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1652287390,
 					["serial"] = "Pet-0-4448-1-34-416-020032E4F9",
 					["total"] = 0.003145,
@@ -2598,6 +2598,42 @@ _detalhes_database = {
 		{
 			["tipo"] = 7,
 			["_ActorTable"] = {
+				{
+					["received"] = 0.003253,
+					["resource"] = 0.018777,
+					["targets"] = {
+						["Mxyzptlk"] = 0,
+					},
+					["pets"] = {
+					},
+					["powertype"] = 0,
+					["classe"] = "WARLOCK",
+					["passiveover"] = 0.003253,
+					["total"] = 0.003253,
+					["nome"] = "Mxyzptlk",
+					["spells"] = {
+						["_ActorTable"] = {
+							[31818] = {
+								["total"] = 0,
+								["id"] = 31818,
+								["totalover"] = 0,
+								["targets"] = {
+									["Mxyzptlk"] = 0,
+								},
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 7,
+					},
+					["grupo"] = true,
+					["flag_original"] = 1297,
+					["aID"] = "4465-01CE7466",
+					["tipo"] = 3,
+					["last_event"] = 0,
+					["alternatepower"] = 0.003253,
+					["serial"] = "Player-4465-01CE7466",
+					["totalover"] = 0.003253,
+				}, -- [1]
 			},
 		}, -- [3]
 		{
@@ -2657,27 +2693,27 @@ _detalhes_database = {
 						[5019] = 0,
 						[980] = 0,
 					},
-					["aID"] = "4465-01CE7466",
+					["tipo"] = 4,
 					["buff_uptime_targets"] = {
 					},
 					["last_event"] = 0,
-					["debuff_uptime_targets"] = {
-					},
+					["aID"] = "4465-01CE7466",
 					["pets"] = {
 					},
 					["serial"] = "Player-4465-01CE7466",
-					["tipo"] = 4,
+					["debuff_uptime_targets"] = {
+					},
 				}, -- [1]
 				{
 					["flag_original"] = 4369,
-					["classe"] = "PET",
+					["aID"] = "Pet-0-4448-1-34-416-020032E4F9",
 					["nome"] = "Bizpit <Mxyzptlk>",
 					["grupo"] = true,
 					["pets"] = {
 					},
 					["tipo"] = 4,
+					["classe"] = "PET",
 					["last_event"] = 0,
-					["aID"] = "Pet-0-4448-1-34-416-020032E4F9",
 					["serial"] = "Pet-0-4448-1-34-416-020032E4F9",
 					["spell_cast"] = {
 						[7799] = 0,
