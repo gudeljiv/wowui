@@ -69,7 +69,11 @@ LeaPlusDB = {
 	["CooldownsOnPlayer"] = "Off",
 	["MuteChimes"] = "Off",
 	["AutoQuestAvailable"] = "On",
+<<<<<<< HEAD
 	["HideMiniMapButton"] = "On",
+=======
+	["BlockDrunkenSpam"] = "Off",
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 	["ShowRaidToggle"] = "Off",
 	["MiniShowBugSack"] = "Off",
 	["ViewPortAlpha"] = 0,
@@ -106,22 +110,40 @@ LeaPlusDB = {
 	["TipShowRank"] = "On",
 	["ViewPortRight"] = 0,
 	["NoCombatLogTab"] = "Off",
+<<<<<<< HEAD
 	["ViewPortEnable"] = "Off",
 	["ClassColorsInChat"] = "Off",
 	["HideDressupStats"] = "Off",
 	["MoveChatEditBoxToTop"] = "Off",
 	["PlayerChainMenu"] = 2,
 	["EnhanceTrainers"] = "Off",
+=======
+	["PlayerChainMenu"] = 2,
+	["ClassColorsInChat"] = "Off",
+	["HideDressupStats"] = "Off",
+	["MoveChatEditBoxToTop"] = "Off",
+	["ViewPortEnable"] = "Off",
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 	["ShowVolume"] = "Off",
-	["MinimapY"] = -22,
 	["MuteInterface"] = "Off",
+	["EnhanceTrainers"] = "Off",
+	["MinimapY"] = -22,
+<<<<<<< HEAD
+	["MuteInterface"] = "Off",
+=======
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 	["MusicContinent"] = "Zones",
 	["DismountNoMoving"] = "On",
 	["ViewPortLeft"] = 0,
 	["ShowFlightTimes"] = "On",
 	["HideZoneTextBar"] = "Off",
+<<<<<<< HEAD
 	["AutomateGossip"] = "Off",
 	["AutomateQuests"] = "Off",
+=======
+	["AutomateQuests"] = "Off",
+	["AutomateGossip"] = "Off",
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 	["AutoAcceptSummon"] = "Off",
 	["BuffFrameY"] = -13,
 	["AutoSellShowSummary"] = "On",
@@ -140,12 +162,21 @@ LeaPlusDB = {
 	["HideActionButtonText"] = "Off",
 	["MuteGameSounds"] = "Off",
 	["BuffFrameR"] = "TOPRIGHT",
+<<<<<<< HEAD
 	["ShowPlayerChain"] = "Off",
 	["MuteEvents"] = "Off",
 	["AhGoldOnly"] = "Off",
 	["EnableHotkey"] = "Off",
 	["NoBagAutomation"] = "Off",
 	["MiniClusterScale"] = 1,
+=======
+	["AhGoldOnly"] = "Off",
+	["MuteEvents"] = "Off",
+	["ShowPlayerChain"] = "Off",
+	["MiniClusterScale"] = 1,
+	["NoBagAutomation"] = "Off",
+	["EnableHotkey"] = "Off",
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 	["AutoSellJunk"] = "On",
 	["AutoRepairGear"] = "On",
 	["CharAddonList"] = "Off",
@@ -167,7 +198,11 @@ LeaPlusDB = {
 	["RecentChatWindow"] = "Off",
 	["DismountShowFormBtn"] = "On",
 	["FocusA"] = "CENTER",
+<<<<<<< HEAD
 	["MuteTrains"] = "Off",
+=======
+	["LeaPlusMailFontSize"] = 15,
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 	["MainPanelY"] = 75.40217590332031,
 	["TipShowOtherRank"] = "Off",
 	["ShowCooldownID"] = "On",
@@ -179,7 +214,11 @@ LeaPlusDB = {
 	["FocusScale"] = 1,
 	["AutoReleaseDelay"] = 200,
 	["NoPartyInvites"] = "Off",
+<<<<<<< HEAD
 	["BlockDrunkenSpam"] = "Off",
+=======
+	["HideMiniMapButton"] = "On",
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 	["MinimapSize"] = 140,
 	["MuteGyrocopters"] = "Off",
 }

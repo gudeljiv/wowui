@@ -1,5 +1,7 @@
 VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
 #showtooltip Steady Shot
+/use 13
+/use 14
 /cast !Auto Shot
 /petattack
 /startattack

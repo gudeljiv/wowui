@@ -46,9 +46,11 @@ PallyPower_AuraAssignments = {
 	["Rojïn-Razorfen"] = 2,
 	["Nezrin"] = 2,
 	["Sapexcz"] = 1,
+	["Carroll"] = 0,
 	["Yamadin"] = 2,
 	["Vermina"] = 1,
-	["Carroll"] = 0,
+	["Meeyak"] = 0,
+	["Bellicosa"] = 7,
 	["Canestengyno"] = 1,
 }
 PallyPower_SavedPresets = nil

@@ -96,3 +96,6 @@ VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [stance:2] Disarm; Defensive Stance
 END
+VER 3 0000000001000014 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1WM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END

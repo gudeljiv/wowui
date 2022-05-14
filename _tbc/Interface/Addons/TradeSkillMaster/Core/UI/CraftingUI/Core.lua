@@ -30,9 +30,9 @@ local BEAST_TRAINING_RUS = "Воспитание питомца"
 local IGNORED_PROFESSIONS = {
 	[2787] = true, -- Abominable Stitching
 	[7620] = true, -- Fishing Skills (shows up as Fishing)
-	[53428] = true,  -- Runeforging
+	[53428] = true, -- Runeforging
 	[158756] = true, -- Skinning Skills
-	[193290] = true,  -- Herbalism Skills
+	[193290] = true, -- Herbalism Skills
 	[278910] = true, -- Archaeology
 }
 

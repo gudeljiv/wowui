@@ -633,7 +633,7 @@ function private.RankOnEnter(row)
 	local rank = CraftString.GetRank(data)
 	if rank and rank > 0 then
 		assert(not Tooltip.IsVisible())
-		local spellId =  CraftString.GetSpellId(data)
+		local spellId = CraftString.GetSpellId(data)
 		GameTooltip:SetOwner(row._buttons.rank, "ANCHOR_PRESERVE")
 		GameTooltip:ClearAllPoints()
 		GameTooltip:SetPoint("LEFT", row._buttons.rank, "RIGHT")

@@ -19,6 +19,7 @@ local Wow = TSM.Include("Util.Wow")
 local Theme = TSM.Include("Util.Theme")
 local ItemString = TSM.Include("Util.ItemString")
 local RecipeString = TSM.Include("Util.RecipeString")
+local ProfessionInfo = TSM.Include("Data.ProfessionInfo")
 local BagTracking = TSM.Include("Service.BagTracking")
 local ItemInfo = TSM.Include("Service.ItemInfo")
 local Settings = TSM.Include("Service.Settings")
@@ -644,6 +645,7 @@ end
 function private.GetOptionalReagentList(viewContainer)
 	local selectedCraftString = viewContainer:GetContext():GetContext()
 	local level = viewContainer:GetContext():GetElement("__parent.__parent.rankDropdown"):GetSelectedItemKey()
+	selectedCraftString = CraftString.Get(CraftString.GetSpellId(selectedCraftString), nil, level)
 	local _, resultItemString = TSM.Crafting.ProfessionUtil.GetResultInfo(selectedCraftString)
 	local resultTooltip = TSM.Crafting.ProfessionUtil.GetCraftResultTooltipFromRecipeString(RecipeString.FromCraftString(selectedCraftString, private.optionalMats, nil, level))
 	return UIElements.New("Frame", "frame")
@@ -1134,6 +1136,13 @@ function private.FSMCreate()
 			-- clicked on a category row
 			return
 		end
+		for k, itemId in pairs(private.optionalMats) do
+			local levelTable = ProfessionInfo.GetRequiredLevelByOptionalMat(ItemString.Get(itemId))
+			if levelTable and not levelTable[context.selectedCraftLevel] then
+				-- this optional material can't be used with the selected craft level
+				private.optionalMats[k] = nil
+			end
+		end
 		fsmPrivate.UpdateRecipeTooltip(context)
 		local spellId = CraftString.GetSpellId(context.selectedCraftString)
 		local rank = CraftString.GetRank(context.selectedCraftString)
@@ -1597,7 +1606,7 @@ function private.FSMCreate()
 			end)
 			:AddEvent("EV_RECIPE_LEVEL_SELECTION_UPDATED", function(context, level)
 				context.selectedCraftLevel = level
-				fsmPrivate.UpdateRecipeTooltip(context)
+				fsmPrivate.UpdateOptionalMaterials(context)
 				fsmPrivate.UpdateCraftCost(context)
 				fsmPrivate.UpdateMaterials(context)
 			end)

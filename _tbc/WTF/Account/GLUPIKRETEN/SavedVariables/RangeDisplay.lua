@@ -22,7 +22,11 @@ RangeDisplayDB3 = {
 		["Jaroslav - Golemagg"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+<<<<<<< HEAD
 		["Moolatz - Golemagg"] = "Default",
+=======
+		["Grgur - Golemagg"] = "Default",
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 		["Moolatz - Dreadnaught"] = "Default",
 	},
 	["profiles"] = {

@@ -5,13 +5,19 @@ LeaMapsDB = {
 	["ShowZoneLevels"] = "On",
 	["ShowSpiritHealers"] = "On",
 	["stationaryOpacity"] = 1,
+<<<<<<< HEAD
 	["MainPanelA"] = "CENTER",
 	["ShowTravelPoints"] = "On",
+=======
+	["MapPosY"] = -58.1002197265625,
+	["ShowFishingLevels"] = "On",
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 	["LockMapFrame"] = "Off",
 	["RevTint"] = "On",
 	["MapPosA"] = "TOP",
 	["FirstRunMessageSeen"] = true,
 	["BattleMapOpacity"] = 1,
+<<<<<<< HEAD
 	["tintRed"] = 0.6,
 	["ShowCoords"] = "On",
 	["BattleMapX"] = -47,
@@ -19,6 +25,15 @@ LeaMapsDB = {
 	["ShowFishingLevels"] = "On",
 	["ShowDungeonIcons"] = "On",
 	["movingOpacity"] = 0.5,
+=======
+	["IncreaseZoom"] = "Off",
+	["movingOpacity"] = 0.5,
+	["BattleMapX"] = -47,
+	["BattleMaxZoom"] = 1,
+	["ShowTravelPoints"] = "On",
+	["ShowDungeonIcons"] = "On",
+	["ShowCoords"] = "On",
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 	["UseDefaultMap"] = "Off",
 	["CenterMapOnPlayer"] = "Off",
 	["EnhanceBattleMap"] = "On",
@@ -56,11 +71,19 @@ LeaMapsDB = {
 	["tintBlue"] = 1,
 	["EnlargePlayerArrow"] = "On",
 	["NoFadeCursor"] = "On",
+<<<<<<< HEAD
 	["ShowMinimapIcon"] = "Off",
 	["BattlePlayerArrowSize"] = 12,
 	["BattleMapR"] = "BOTTOMRIGHT",
 	["BattleMaxZoom"] = 1,
 	["IncreaseZoom"] = "Off",
+=======
+	["MainPanelA"] = "CENTER",
+	["BattlePlayerArrowSize"] = 12,
+	["BattleMapR"] = "BOTTOMRIGHT",
+	["ShowMinimapIcon"] = "Off",
+	["tintRed"] = 0.6,
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 	["tintGreen"] = 0.6,
 	["UnlockBattlefield"] = "On",
 }

@@ -18006,7 +18006,7 @@ L["Below min price. Posting at normal."] = "Below min price. Posting at normal."
 --[[Translation missing --]]
 L["Below you can ignore this operation on certain characters or realms."] = "Below you can ignore this operation on certain characters or realms."
 L["Bid %d / %d"] = "出價 %d / %d"
-L["Bid (item)"] = "出價（項目）"
+L["Bid (item)"] = "出價（物品）"
 L["Bid (stack)"] = "出價（堆疊）"
 --[[Translation missing --]]
 L["Bid (total)"] = "Bid (total)"
@@ -18053,7 +18053,7 @@ L["Buyback All"] = "Buyback All"
 L["Buyer/Seller"] = "買方/賣方"
 --[[Translation missing --]]
 L["Buyout"] = "Buyout"
-L["Buyout (item)"] = "直購 (項目)"
+L["Buyout (item)"] = "直購（物品）"
 --[[Translation missing --]]
 L["Buyout (stack)"] = "Buyout (stack)"
 --[[Translation missing --]]
@@ -18125,8 +18125,7 @@ L["Clear Data"] = "清除資料"
 L["Clear Filters"] = "清除篩選"
 L["Clear Old Data"] = "清除舊資料"
 L["Clear Old Data?"] = "清除舊資料?"
---[[Translation missing --]]
-L["Click and drag to resize this window."] = "Click and drag to resize this window."
+L["Click and drag to resize this window."] = "點擊並拖曳來調整視窗大小."
 --[[Translation missing --]]
 L["Click to hide this item for the current session. Hold shift to hide this item permanently."] = "Click to hide this item for the current session. Hold shift to hide this item permanently."
 --[[Translation missing --]]
@@ -18569,8 +18568,7 @@ L["Hold shift to move the items to the parent group instead of removing them."] 
 L["Hold SHIFT to not continue after the inbox refreshes"] = "Hold SHIFT to not continue after the inbox refreshes"
 --[[Translation missing --]]
 L["Hold SHIFT to not continue after the inbox refreshes and CTRL to not open mail with money attached."] = "Hold SHIFT to not continue after the inbox refreshes and CTRL to not open mail with money attached."
---[[Translation missing --]]
-L["Hold SHIFT while dragging to scale the window instead."] = "Hold SHIFT while dragging to scale the window instead."
+L["Hold SHIFT while dragging to scale the window instead."] = "拖曳時按住SHIFT鍵來調整視窗尺寸與字體大小."
 --[[Translation missing --]]
 L["Hr"] = "Hr"
 --[[Translation missing --]]
@@ -18747,8 +18745,7 @@ L["Management Options"] = "管理選項"
 L["Many commonly-used actions in TSM can be added to a macro and bound to your scroll wheel. Use the options below to setup this macro and scroll wheel binding."] = "Many commonly-used actions in TSM can be added to a macro and bound to your scroll wheel. Use the options below to setup this macro and scroll wheel binding."
 --[[Translation missing --]]
 L["Map Ping"] = "Map Ping"
---[[Translation missing --]]
-L["Market Value"] = "Market Value"
+L["Market Value"] = "市值"
 --[[Translation missing --]]
 L["Market value"] = "Market value"
 L["Market value price source"] = "市值價格來源"
@@ -18885,8 +18882,7 @@ L["No AuctionDB Realm Data"] = "No AuctionDB Realm Data"
 --[[Translation missing --]]
 L["No AuctionDB Region Data"] = "No AuctionDB Region Data"
 L["No Characters"] = "無角色"
---[[Translation missing --]]
-L["No Crafts"] = "No Crafts"
+L["No Crafts"] = "無製品"
 L["No Faction-Realms"] = "無陣營-伺服器"
 --[[Translation missing --]]
 L["No group selected"] = "No group selected"
@@ -19256,8 +19252,7 @@ L["Resuming Scan..."] = "Resuming Scan..."
 --[[Translation missing --]]
 L["Retrying %d auction(s) which failed."] = "Retrying %d auction(s) which failed."
 L["Revenue"] = "收入"
---[[Translation missing --]]
-L["Right-Click to reset the window size, scale, and position to their defaults."] = "Right-Click to reset the window size, scale, and position to their defaults."
+L["Right-Click to reset the window size, scale, and position to their defaults."] = "按右鍵使視窗尺寸, 字體大小, 與視窗位置回到預設值."
 --[[Translation missing --]]
 L["Run Advanced Item Search"] = "Run Advanced Item Search"
 --[[Translation missing --]]

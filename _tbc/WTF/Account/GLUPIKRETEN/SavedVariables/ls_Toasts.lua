@@ -26,8 +26,13 @@ LS_TOASTS_GLOBAL_CONFIG = {
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
+<<<<<<< HEAD
 		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Testxv - Golemagg"] = "Default",
+=======
+		["Testxv - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Greenwise - Golemagg"] = "Default",

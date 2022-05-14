@@ -5,11 +5,16 @@ TargetHealthFrame:SetWidth(1)
 TargetHealthFrame:SetHeight(1)
 TargetHealthFrame:SetAlpha(0.3)
 -- TargetHealthFrame:SetPoint("CENTER", UIParent, "CENTER", 100, -40)
-TargetHealthFrame:SetPoint('RIGHT', nHealthStatusBar, 'RIGHT', -32, 18)
-TargetHealthFrame.text = TargetHealthFrame:CreateFontString(nil, 'ARTWORK')
-TargetHealthFrame.text:SetFont(xVermin.Config.font.arial, 28, 'THINOUTLINE')
-TargetHealthFrame.text:SetPoint('CENTER', TargetHealthFrame, 'CENTER', 0, 0)
-TargetHealthFrame:SetFrameStrata('LOW')
+
+if nHealthStatusBar then
+	TargetHealthFrame:SetPoint('RIGHT', nHealthStatusBar, 'RIGHT', -32, 18)
+	TargetHealthFrame.text = TargetHealthFrame:CreateFontString(nil, 'ARTWORK')
+	TargetHealthFrame.text:SetFont(xVermin.Config.font.arial, 28, 'THINOUTLINE')
+	TargetHealthFrame.text:SetPoint('CENTER', TargetHealthFrame, 'CENTER', 0, 0)
+	TargetHealthFrame:SetFrameStrata('LOW')
+else
+	TargetHealthFrame:Hide()
+end
 
 -- local PlayerHealthFrame = CreateFrame("Frame", "PlayerHealthFrame", UIParent)
 -- PlayerHealthFrame:SetWidth(1)
@@ -21,7 +26,7 @@ TargetHealthFrame:SetFrameStrata('LOW')
 -- PlayerHealthFrame.text:SetPoint("CENTER", PlayerHealthFrame, "CENTER", 0, 0)
 -- PlayerHealthFrame:SetFrameStrata("LOW")
 
-local PetHealthFrame = CreateFrame('Frame', 'PetHealthFrame', UIParent)
+local PetHealthFrame = CreateFrame('Frame', 'sss', UIParent)
 PetHealthFrame:SetWidth(1)
 PetHealthFrame:SetHeight(1)
 PetHealthFrame:SetAlpha(0.3)
@@ -57,51 +62,53 @@ local function PetHealthHide()
 end
 
 local function TargetHealthHide()
-	TargetHealthFrame.text:Hide()
+	if TargetHealthFrame:IsVisible() then
+		TargetHealthFrame.text:Hide()
+	end
 end
 
 local function TargetHealthShow()
-	local targetHP = format('%.0f', (UnitHealth('target') / UnitHealthMax('target')) * 100)
-	TargetHealthFrame.text:SetText(targetHP .. '%')
-	TargetHealthFrame.text:SetVertexColor(1, 1, 1)
-	TargetHealthFrame.text:Show()
+	if TargetHealthFrame:IsVisible() then
+		local targetHP = format('%.0f', (UnitHealth('target') / UnitHealthMax('target')) * 100)
+		TargetHealthFrame.text:SetText(targetHP .. '%')
+		TargetHealthFrame.text:SetVertexColor(1, 1, 1)
+		TargetHealthFrame.text:Show()
+	end
 end
 
-TargetFrame:HookScript('OnUpdate', TargetHealthShow)
-TargetFrame:HookScript('OnHide', TargetHealthHide)
-
+-- TargetFrame:HookScript('OnUpdate', TargetHealthShow)
+-- TargetFrame:HookScript('OnHide', TargetHealthHide)
+-- PetFrame:HookScript('OnUpdate', PetHealthShow)
+-- PetFrame:HookScript('OnHide', PetHealthHide)
 -- PlayerFrame:HookScript("OnUpdate", PlayerHealthShow)
 
-PetFrame:HookScript('OnUpdate', PetHealthShow)
-PetFrame:HookScript('OnHide', PetHealthHide)
-
-local f = CreateFrame('Frame')
-f:RegisterEvent('PLAYER_REGEN_DISABLED')
-f:RegisterEvent('PLAYER_REGEN_ENABLED')
-f:SetScript(
-	'OnEvent',
-	function(self, event, ...)
-		if event == 'PLAYER_REGEN_DISABLED' then
-			if PlayerHealthFrame then
-				PlayerHealthFrame:SetAlpha(0.8)
-			end
-			if TargetHealthFrame then
-				TargetHealthFrame:SetAlpha(0.8)
-			end
-			if PetHealthFrame then
-				PetHealthFrame:SetAlpha(0.8)
-			end
-		end
-		if event == 'PLAYER_REGEN_ENABLED' then
-			if PlayerHealthFrame then
-				PlayerHealthFrame:SetAlpha(0.3)
-			end
-			if TargetHealthFrame then
-				TargetHealthFrame:SetAlpha(0.3)
-			end
-			if PetHealthFrame then
-				PetHealthFrame:SetAlpha(0.3)
-			end
-		end
-	end
-)
+-- local f = CreateFrame('Frame')
+-- f:RegisterEvent('PLAYER_REGEN_DISABLED')
+-- f:RegisterEvent('PLAYER_REGEN_ENABLED')
+-- f:SetScript(
+-- 	'OnEvent',
+-- 	function(self, event, ...)
+-- 		if event == 'PLAYER_REGEN_DISABLED' then
+-- 			if PlayerHealthFrame then
+-- 				PlayerHealthFrame:SetAlpha(0.8)
+-- 			end
+-- 			if TargetHealthFrame then
+-- 				TargetHealthFrame:SetAlpha(0.8)
+-- 			end
+-- 			if PetHealthFrame then
+-- 				PetHealthFrame:SetAlpha(0.8)
+-- 			end
+-- 		end
+-- 		if event == 'PLAYER_REGEN_ENABLED' then
+-- 			if PlayerHealthFrame then
+-- 				PlayerHealthFrame:SetAlpha(0.3)
+-- 			end
+-- 			if TargetHealthFrame then
+-- 				TargetHealthFrame:SetAlpha(0.3)
+-- 			end
+-- 			if PetHealthFrame then
+-- 				PetHealthFrame:SetAlpha(0.3)
+-- 			end
+-- 		end
+-- 	end
+-- )

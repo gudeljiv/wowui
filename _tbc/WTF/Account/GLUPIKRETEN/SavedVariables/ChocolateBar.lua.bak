@@ -73,6 +73,7 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
+<<<<<<< HEAD
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
@@ -87,6 +88,22 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
+=======
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["locked"] = false,
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
@@ -131,7 +148,9 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 				},
 				["VuhDo"] = {
+					["enabled"] = false,
 					["align"] = "right",
+					["isNew"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 				},

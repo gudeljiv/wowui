@@ -26,7 +26,11 @@ __DEJUNK_SAVED_VARIABLES__ = {
 				},
 			},
 			["inclusions"] = {
+<<<<<<< HEAD
 				["4880"] = true,
+=======
+				["1206"] = true,
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 				["4604"] = true,
 				["4541"] = true,
 				["4879"] = true,
@@ -39,7 +43,11 @@ __DEJUNK_SAVED_VARIABLES__ = {
 				["3181"] = true,
 				["1179"] = true,
 				["3669"] = true,
+<<<<<<< HEAD
 				["2287"] = true,
+=======
+				["4877"] = true,
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 				["771"] = true,
 				["4606"] = true,
 				["4605"] = true,
@@ -56,8 +64,13 @@ __DEJUNK_SAVED_VARIABLES__ = {
 				["6444"] = true,
 				["3670"] = true,
 				["3376"] = true,
+<<<<<<< HEAD
 				["4877"] = true,
 				["2996"] = true,
+=======
+				["4880"] = true,
+				["3181"] = true,
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 			},
 		},
 		["minimapIcon"] = {
@@ -95,6 +108,7 @@ __DEJUNK_SAVED_VARIABLES__ = {
 			["version"] = 3,
 		},
 		["Vermina-Golemagg"] = {
+<<<<<<< HEAD
 			["destroy"] = {
 				["autoOpen"] = {
 					["enabled"] = true,
@@ -113,12 +127,17 @@ __DEJUNK_SAVED_VARIABLES__ = {
 			["version"] = 3,
 		},
 		["Default"] = {
+=======
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 			["destroy"] = {
 				["autoOpen"] = {
 					["enabled"] = true,
 					["value"] = 3,
 				},
+			},
+			["sell"] = {
 				["inclusions"] = {
+<<<<<<< HEAD
 					["2777"] = true,
 					["4867"] = true,
 					["1511"] = true,
@@ -168,8 +187,39 @@ __DEJUNK_SAVED_VARIABLES__ = {
 					["1794"] = true,
 					["3301"] = true,
 					["1702"] = true,
+=======
+					["4239"] = true,
+					["4246"] = true,
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 				},
 			},
+			["version"] = 3,
+		},
+		["Moolatz-Golemagg"] = {
+			["version"] = 3,
+		},
+		["Pitchwise-Dreadnaught"] = {
+			["version"] = 3,
+		},
+		["Handrmandr-Golemagg"] = {
+			["version"] = 3,
+		},
+		["Konac-Dreadnaught"] = {
+			["sell"] = {
+				["auto"] = true,
+				["safeMode"] = false,
+			},
+			["version"] = 3,
+			["general"] = {
+				["autoRepair"] = true,
+				["chat"] = {
+					["destroy"] = false,
+					["sell"] = false,
+					["enabled"] = false,
+				},
+			},
+		},
+		["Moolatz-Dreadnaught"] = {
 			["sell"] = {
 				["auto"] = true,
 				["safeMode"] = false,
@@ -269,6 +319,7 @@ __DEJUNK_SAVED_VARIABLES__ = {
 			},
 			["version"] = 3,
 		},
+<<<<<<< HEAD
 		["Konac-Dreadnaught"] = {
 			["sell"] = {
 				["auto"] = true,
@@ -285,16 +336,79 @@ __DEJUNK_SAVED_VARIABLES__ = {
 			},
 		},
 		["Moolatz-Dreadnaught"] = {
+=======
+		["Default"] = {
+			["destroy"] = {
+				["autoOpen"] = {
+					["enabled"] = true,
+					["value"] = 3,
+				},
+				["inclusions"] = {
+					["2777"] = true,
+					["4867"] = true,
+					["1511"] = true,
+					["4875"] = true,
+					["4878"] = true,
+					["3936"] = true,
+					["5128"] = true,
+					["1701"] = true,
+					["6302"] = true,
+					["3180"] = true,
+					["17057"] = true,
+					["6445"] = true,
+					["6444"] = true,
+					["5124"] = true,
+					["6826"] = true,
+					["1512"] = true,
+					["4776"] = true,
+					["4872"] = true,
+					["5133"] = true,
+					["3375"] = true,
+					["9335"] = true,
+					["5516"] = true,
+					["3670"] = true,
+					["3669"] = true,
+					["3181"] = true,
+					["5118"] = true,
+					["5125"] = true,
+					["5269"] = true,
+					["5114"] = true,
+					["4775"] = true,
+					["4877"] = true,
+					["5120"] = true,
+					["4555"] = true,
+					["3401"] = true,
+					["5466"] = true,
+					["5115"] = true,
+					["5268"] = true,
+					["1509"] = true,
+					["6300"] = true,
+					["3402"] = true,
+					["2608"] = true,
+					["9242"] = true,
+					["3676"] = true,
+					["1520"] = true,
+					["9334"] = true,
+					["11387"] = true,
+					["1794"] = true,
+					["3301"] = true,
+					["1702"] = true,
+				},
+			},
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 			["sell"] = {
 				["auto"] = true,
 				["safeMode"] = false,
 			},
+<<<<<<< HEAD
 			["version"] = 3,
 		},
 		["Handrmandr-Golemagg"] = {
 			["version"] = 3,
 		},
 		["Pitchwise-Dreadnaught"] = {
+=======
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 			["version"] = 3,
 		},
 	},

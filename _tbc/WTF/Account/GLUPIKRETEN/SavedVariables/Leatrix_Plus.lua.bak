@@ -112,9 +112,15 @@ LeaPlusDB = {
 	["MoveChatEditBoxToTop"] = "Off",
 	["PlayerChainMenu"] = 2,
 	["PlusPanelAlpha"] = 0,
+<<<<<<< HEAD
 	["MuteInterface"] = "Off",
 	["ShowVolume"] = "Off",
 	["MinimapY"] = -22,
+=======
+	["MinimapY"] = -22,
+	["MuteInterface"] = "Off",
+	["EnhanceTrainers"] = "Off",
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 	["EasyItemDestroy"] = "Off",
 	["DismountNoMoving"] = "On",
 	["ShowFlightTimes"] = "On",
@@ -155,13 +161,20 @@ LeaPlusDB = {
 	["HideErrorMessages"] = "Off",
 	["TipOffsetY"] = 94,
 	["AutomateQuests"] = "Off",
+<<<<<<< HEAD
 	["AutomateGossip"] = "Off",
+=======
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 	["ViewPortLeft"] = 0,
 	["BookFontChange"] = "Off",
 	["MusicContinent"] = "Zones",
 	["ShowVanityControls"] = "Off",
 	["LeaPlusTipSize"] = 1,
+<<<<<<< HEAD
 	["EnhanceTrainers"] = "Off",
+=======
+	["ShowVolume"] = "Off",
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 	["HideDressupStats"] = "Off",
 	["ViewPortEnable"] = "Off",
 	["RecentChatWindow"] = "Off",

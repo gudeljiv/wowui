@@ -52,7 +52,7 @@ Postal3ClassicDB = {
 				"Moolatz|Golemagg|Horde|3|DRUID", -- [14]
 				"Mxyzptlk|Golemagg|Horde|14|WARLOCK", -- [15]
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [16]
-				"Mxzq|Golemagg|Horde|65|HUNTER", -- [17]
+				"Mxzq|Golemagg|Horde|66|HUNTER", -- [17]
 				"Nitwit|Dreadnaught|Horde|5|ROGUE", -- [18]
 				"Pitchwise|Dreadnaught|Horde|28|WARRIOR", -- [19]
 				"Poklopac|Dreadnaught|Horde|36|HUNTER", -- [20]

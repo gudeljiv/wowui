@@ -1,6 +1,10 @@
 
 BugGrabberDB = {
+<<<<<<< HEAD
 	["session"] = 5060,
+=======
+	["session"] = 5078,
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1029,5 +1033,69 @@ BugGrabberDB = {
 			["session"] = 5053,
 			["counter"] = 8,
 		}, -- [130]
+		{
+			["message"] = "[string \"print(UnitBuff(\"player\"))\"]:1: Usage: UnitBuff(\"unit\", [index][, \"filter\"])",
+			["time"] = "2022/05/11 15:54:21",
+			["locals"] = "(*temporary) = \"player\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `UnitBuff'\n[string \"print(UnitBuff(\"player\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4599: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 5063,
+			["counter"] = 1,
+		}, -- [131]
+		{
+			["message"] = "[string \"print(UnitAura(\"player\"))\"]:1: Usage: UnitAura(\"unit\", [index][, \"filter\"])",
+			["time"] = "2022/05/11 15:54:30",
+			["locals"] = "(*temporary) = \"player\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `UnitAura'\n[string \"print(UnitAura(\"player\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4599: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 5063,
+			["counter"] = 1,
+		}, -- [132]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PetActionButton1:Show()'.",
+			["time"] = "2022/05/11 16:11:32",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\AddOns\\xVermin\\Addons/nMainBar.lua\"]:119: in function <Interface\\AddOns\\xVermin\\Addons/nMainBar.lua:113>\n[string \"@Interface\\SharedXML\\C_TimerAugment.lua\"]:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
+			["session"] = 5064,
+			["counter"] = 1,
+		}, -- [133]
+		{
+			["message"] = "...e\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua:65: attempt to index field 'text' (a nil value)",
+			["time"] = "2022/05/11 16:12:34",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'text' (a nil value)\"\nTargetHealthFrame = TargetHealthFrame {\n 0 = <userdata>\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua\"]:65: in function <...e\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua:64>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:108: in function `TargetFrame_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:154: in function <Interface_TBC\\FrameXML\\TargetFrame.lua:146>",
+			["session"] = 5065,
+			["counter"] = 2,
+		}, -- [134]
+		{
+			["message"] = "...e\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua:70: attempt to index field 'text' (a nil value)",
+			["time"] = "2022/05/11 16:11:32",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua\"]:70: in function <...e\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua:68>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
+			["session"] = 5065,
+			["counter"] = 769,
+		}, -- [135]
+		{
+			["message"] = "...e\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua:65: attempt to index global 'TawdrgetHealthFrame' (a nil value)",
+			["time"] = "2022/05/11 16:14:35",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua\"]:65: in function <...e\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua:64>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:108: in function `TargetFrame_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:154: in function <Interface_TBC\\FrameXML\\TargetFrame.lua:146>",
+			["session"] = 5066,
+			["counter"] = 2,
+		}, -- [136]
+		{
+			["message"] = "...e\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua:66: attempt to index field 'text' (a nil value)",
+			["time"] = "2022/05/11 16:15:47",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'text' (a nil value)\"\nTargetHealthFrame = TargetHealthFrame {\n 0 = <userdata>\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua\"]:66: in function <...e\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua:64>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:108: in function `TargetFrame_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:154: in function <Interface_TBC\\FrameXML\\TargetFrame.lua:146>",
+			["session"] = 5067,
+			["counter"] = 1,
+		}, -- [137]
+		{
+			["message"] = "...e\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua:73: attempt to index field 'text' (a nil value)",
+			["time"] = "2022/05/11 16:15:47",
+			["locals"] = "targetHP = \"0\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"0\"\n(*temporary) = \"target\"\n(*temporary) = 4572\n(*temporary) = \"attempt to index field 'text' (a nil value)\"\nTargetHealthFrame = TargetHealthFrame {\n 0 = <userdata>\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua\"]:73: in function <...e\\AddOns\\xVermin\\PlayerPetTargetHealthPercentage.lua:70>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
+			["session"] = 5067,
+			["counter"] = 186,
+		}, -- [138]
 	},
 }

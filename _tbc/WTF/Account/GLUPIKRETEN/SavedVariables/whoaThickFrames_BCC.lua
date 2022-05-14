@@ -22,6 +22,10 @@ cfg = {
 	["usePartyFrames"] = true,
 	["darkFrames"] = true,
 	["minimapZoom"] = true,
+<<<<<<< HEAD
 	["largeAuraSize"] = 27,
+=======
+	["classColor"] = true,
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 	["playerNameHide"] = true,
 }

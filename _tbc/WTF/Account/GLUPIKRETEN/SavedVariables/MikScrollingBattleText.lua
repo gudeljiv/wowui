@@ -78,8 +78,13 @@ MSBTProfiles_SavedVars = {
 				["PET_INCOMING_DAMAGE"] = {
 					["scrollArea"] = "Custom3",
 				},
+<<<<<<< HEAD
 				["PET_OUTGOING_MISS"] = {
 					["scrollArea"] = "Custom2",
+=======
+				["PET_INCOMING_HEAL"] = {
+					["scrollArea"] = "Custom3",
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 				},
 				["PET_INCOMING_SPELL_DODGE"] = {
 					["scrollArea"] = "Custom3",
@@ -90,7 +95,11 @@ MSBTProfiles_SavedVars = {
 				["PET_OUTGOING_BLOCK"] = {
 					["scrollArea"] = "Custom2",
 				},
+<<<<<<< HEAD
 				["PET_INCOMING_SPELL_DAMAGE_SHIELD_CRIT"] = {
+=======
+				["PET_INCOMING_HEAL_CRIT"] = {
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 					["scrollArea"] = "Custom3",
 				},
 				["PET_OUTGOING_HEAL"] = {
@@ -99,13 +108,13 @@ MSBTProfiles_SavedVars = {
 				["PET_OUTGOING_SPELL_DOT"] = {
 					["scrollArea"] = "Custom2",
 				},
-				["PET_INCOMING_HEAL"] = {
-					["scrollArea"] = "Custom3",
+				["PET_OUTGOING_MISS"] = {
+					["scrollArea"] = "Custom2",
 				},
 				["PET_OUTGOING_HEAL_CRIT"] = {
 					["scrollArea"] = "Custom2",
 				},
-				["PET_INCOMING_HEAL_CRIT"] = {
+				["PET_INCOMING_SPELL_DAMAGE_SHIELD_CRIT"] = {
 					["scrollArea"] = "Custom3",
 				},
 				["PET_INCOMING_ABSORB"] = {
@@ -132,10 +141,14 @@ MSBTProfiles_SavedVars = {
 				["PET_INCOMING_SPELL_IMMUNE"] = {
 					["scrollArea"] = "Custom3",
 				},
+<<<<<<< HEAD
 				["PET_INCOMING_SPELL_DOT"] = {
+=======
+				["PET_INCOMING_SPELL_BLOCK"] = {
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 					["scrollArea"] = "Custom3",
 				},
-				["PET_INCOMING_SPELL_BLOCK"] = {
+				["PET_INCOMING_SPELL_DOT"] = {
 					["scrollArea"] = "Custom3",
 				},
 				["PET_INCOMING_SPELL_DOT_CRIT"] = {
@@ -177,7 +190,11 @@ MSBTProfiles_SavedVars = {
 				["PET_OUTGOING_IMMUNE"] = {
 					["scrollArea"] = "Custom2",
 				},
+<<<<<<< HEAD
 				["PET_OUTGOING_DAMAGE"] = {
+=======
+				["PET_OUTGOING_EVADE"] = {
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 					["scrollArea"] = "Custom2",
 				},
 			},
@@ -242,15 +259,29 @@ MSBTProfiles_SavedVars = {
 			["normalFontSize"] = 15,
 			["powerThrottleDuration"] = 2,
 			["critFontName"] = "MSBT Yellowjacket",
+<<<<<<< HEAD
+=======
+			["hideFullHoTOverheals"] = false,
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 			["scrollAreas"] = {
 				["Outgoing"] = {
 					["stickyTextAlignIndex"] = 3,
 					["offsetX"] = 360,
+<<<<<<< HEAD
 					["iconAlign"] = "Left",
 					["behavior"] = "MSBT_NORMAL",
 					["offsetY"] = 50,
 					["textAlignIndex"] = 3,
+=======
+					["behavior"] = "MSBT_NORMAL",
+					["iconAlign"] = "Left",
+					["offsetY"] = 50,
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 					["animationStyle"] = "Straight",
+					["textAlignIndex"] = 3,
+				},
+				["Notification"] = {
+					["disabled"] = true,
 				},
 				["Notification"] = {
 					["disabled"] = true,
@@ -268,6 +299,7 @@ MSBTProfiles_SavedVars = {
 				["Incoming"] = {
 					["stickyTextAlignIndex"] = 1,
 					["offsetX"] = -400,
+<<<<<<< HEAD
 					["animationStyle"] = "Straight",
 					["iconAlign"] = "Right",
 					["offsetY"] = 50,
@@ -276,6 +308,15 @@ MSBTProfiles_SavedVars = {
 				},
 			},
 			["hideFullHoTOverheals"] = false,
+=======
+					["textAlignIndex"] = 1,
+					["behavior"] = "MSBT_NORMAL",
+					["offsetY"] = 50,
+					["animationStyle"] = "Straight",
+					["iconAlign"] = "Right",
+				},
+			},
+>>>>>>> 736684e2a8b62066c5755e02f83d4f53be0b8efc
 			["normalFontName"] = "MSBT Yellowjacket",
 			["groupNumbers"] = true,
 			["creationVersion"] = "5.7.123",

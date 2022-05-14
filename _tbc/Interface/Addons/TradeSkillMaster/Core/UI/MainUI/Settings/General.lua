@@ -387,7 +387,7 @@ end
 function private.ProfileCheckboxOnValueChanged(checkbox, value)
 	if not value then
 		-- can't uncheck profile checkboxes
-		checkbox:SetChecked(true,  true)
+		checkbox:SetChecked(true, true)
 		checkbox:Draw()
 		return
 	end
