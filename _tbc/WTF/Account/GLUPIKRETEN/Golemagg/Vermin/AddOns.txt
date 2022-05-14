@@ -129,3 +129,5 @@ BuyEmAllClassic: enabled
 PitBull4: disabled
 PitBull4_DogTagTexts: disabled
 Pawn: disabled
+VuhDo: enabled
+VuhDoOptions: enabled

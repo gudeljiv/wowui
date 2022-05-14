@@ -22,10 +22,10 @@ PallyPowerDB = {
 			["configscale"] = 1.2,
 			["rfbuff"] = false,
 			["enable"] = true,
-			["SalvInCombat"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
+			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -37,8 +37,25 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
+	["Eshquîa"] = {
+		2, -- [1]
+		2, -- [2]
+		1, -- [3]
+		1, -- [4]
+		1, -- [5]
+		2, -- [6]
+		1, -- [7]
+		1, -- [8]
+		1, -- [9]
+		0, -- [10]
+	},
 }
 PallyPower_NormalAssignments = {
+	["Eshquîa"] = {
+		[5] = {
+			["Eshquîa"] = 3,
+		},
+	},
 }
 PallyPower_AuraAssignments = {
 	["Konvice"] = 3,
@@ -46,6 +63,7 @@ PallyPower_AuraAssignments = {
 	["Rojïn-Razorfen"] = 2,
 	["Nezrin"] = 2,
 	["Sapexcz"] = 1,
+	["Eshquîa"] = 3,
 	["Carroll"] = 0,
 	["Yamadin"] = 2,
 	["Vermina"] = 1,
