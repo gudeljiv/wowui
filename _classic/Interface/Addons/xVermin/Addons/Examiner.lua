@@ -1,0 +1,55 @@
+local _, xVermin = ...
+
+-- local function SkinItems()
+-- 	local itemLink, r, g, b, itemLink
+-- 	for i, v in pairs(
+-- 		{
+-- 			ExaminerItemButtonHeadSlot,
+-- 			ExaminerItemButtonNeckSlot,
+-- 			ExaminerItemButtonShoulderSlot,
+-- 			ExaminerItemButtonShirtSlot,
+-- 			ExaminerItemButtonChestSlot,
+-- 			ExaminerItemButtonWaistSlot,
+-- 			ExaminerItemButtonLegsSlot,
+-- 			ExaminerItemButtonFeetSlot,
+-- 			ExaminerItemButtonWristSlot,
+-- 			ExaminerItemButtonHandsSlot,
+-- 			ExaminerItemButtonFinger0Slot,
+-- 			ExaminerItemButtonFinger1Slot,
+-- 			ExaminerItemButtonTrinket0Slot,
+-- 			ExaminerItemButtonTrinket1Slot,
+-- 			ExaminerItemButtonBackSlot,
+-- 			ExaminerItemButtonMainHandSlot,
+-- 			ExaminerItemButtonSecondaryHandSlot,
+-- 			ExaminerItemButtonRangedSlot,
+-- 			ExaminerItemButtonTabardSlot
+-- 		}
+-- 	) do
+-- 		v:CreateBeautyBorder(8)
+-- 		itemLink = GetInventoryItemLink("target", i)
+-- 		-- print(i, itemLink)
+-- 		if (itemLink) then
+-- 			_, _, itemRarity = GetItemInfo(itemLink)
+-- 			if (itemRarity and itemRarity > 1) then
+-- 				r, g, b = GetItemQualityColor(itemRarity)
+-- 				v:SetBeautyBorderTexture(xVermin.Config.border.colorize)
+-- 				v:SetBeautyBorderColor(r, g, b, 1)
+-- 			else
+-- 				v:SetBeautyBorderTexture(xVermin.Config.border.default)
+-- 				v:SetBeautyBorderColor(1, 1, 1, 1)
+-- 			end
+-- 		else
+-- 			v:SetBeautyBorderTexture(xVermin.Config.border.default)
+-- 			v:SetBeautyBorderColor(1, 1, 1, 1)
+-- 		end
+-- 	end
+-- end
+-- if (IsAddOnLoaded("Examiner")) then
+-- 	print("loaded")
+-- 	Examiner:HookScript(
+-- 		"OnShow",
+-- 		function()
+-- 			print("open")
+-- 		end
+-- 	)
+-- end
