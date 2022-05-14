@@ -97,5 +97,5 @@ VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 /cast [stance:2] Disarm; Defensive Stance
 END
 VER 3 0000000001000014 "VuhDoDCShieldData" "Ability_Repair"
-R1SH1IH1MR1WM1PM2WM2SH2RM2SH2IH3SH3SH3MR3MR3HR4IH4IH4RM4SH4DH5MR5LR5MR5SH5LR6RM6SH6MR6RM6HR7SH7WM[x]7IH8IH8IH8WM8WM8HR[x]7WM[x][x][x][x][x][x][x][x][x][x][x][x][x][x]0__[x][x][x][x][x][x]0__[x][x]0__[x][x][x][x][x][x][x][x][x][x][x][x][x]0__[x][x]
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1WM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
 END
