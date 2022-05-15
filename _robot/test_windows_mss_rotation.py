@@ -7,6 +7,7 @@ from pynput import keyboard
 import win32gui
 from pyautogui import *
 import pyautogui
+from _skills import skills
 
 aoe = False
 debug = False
@@ -20,23 +21,6 @@ x_interrupt = 1430
 y_interrupt = 1470
 
 margin = 1
-
-skills = [
-    {"name": "battle shout", "key": "f4", "rgb": (157, 90, 85)},
-    {"name": "demoralizing shout", "key": "f5", "rgb": (9, 9, 0)},
-    {"name": "sunder armor", "key": "g", "rgb": (185, 120, 110)},
-    {"name": "bloodthirst", "key": "f11", "rgb": (240, 108, 68)},
-    {"name": "rend", "key": "5", "rgb": (9, 0, 0)},
-    {"name": "overpower", "key": "4", "rgb": (87, 96, 101)},
-    {"name": "heroic strike", "key": "2", "rgb": (105, 92, 97)},
-    {"name": "cleave", "key": "3", "rgb": (107, 106, 107)},
-    {"name": "revenge", "key": "1", "rgb": (198, 194, 189)},
-    {"name": "execute", "key": "f", "rgb": (138, 83, 55)},
-    {"name": "whirlwind", "key": "6", "rgb": (80, 182, 231)},
-    {"name": "rampage", "key": "home", "rgb": (233, 128, 67)},
-    {"name": "sweeping strikes", "key": "r", "modifier": "alt", "rgb": (178, 100, 0)},
-    {"name": "victory rush", "key": "e", "modifier": "shift", "rgb": (200, 82, 37)},
-]
 
 
 def on_press(key):
