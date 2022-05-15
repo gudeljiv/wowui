@@ -5,12 +5,18 @@ import os
 from os.path import exists
 import keyboard
 from pynput import keyboard
-import win32gui
 from pyautogui import *
 import pyautogui
 from _skills import skills
 import cv2
 from skimage.metrics import structural_similarity
+from sys import platform
+
+if platform == "darwin":
+    from AppKit import NSWorkspace
+if platform == "win32":
+    import win32gui
+
 
 aoe = False
 debug = False
@@ -47,7 +53,10 @@ with keyboard.Listener(on_press=on_press) as listener:
 
         while True:
 
-            active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
+            if platform == "darwin":
+                active_window = NSWorkspace.sharedWorkspace().activeApplication()['NSApplicationName']
+            if platform == "win32":
+                active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
             start_time = time.time()
             p_main = {"top": 0, "left": 0, "width": x*2, "height": y*2}
@@ -80,7 +89,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                         print("interrupt", "f9", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
                     pyautogui.hotkey("f9")
 
-                if(active_window != "World of Warcraft" and not debug):
+                if(active_window != "World of Warcraft"):
                     if dprint:
                         print(active_window, "skipping", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
                     continue
@@ -92,15 +101,15 @@ with keyboard.Listener(on_press=on_press) as listener:
                     input = "images/" + skill["name"] + ".png"
                     if exists(input):
 
-                        image = cv2.imread(input)
-                        temp = cv2.imread(output)
-                        before_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-                        after_gray = cv2.cvtColor(temp, cv2.COLOR_BGR2GRAY)
+                        existing = cv2.cvtColor(cv2.imread(input), cv2.COLOR_BGR2GRAY)
+                        grabbed = cv2.cvtColor(cv2.imread(output), cv2.COLOR_BGR2GRAY)
+                        # os.remove(main_image)
 
-                        (score, diff) = structural_similarity(before_gray, after_gray, full=True)
+                        (score, diff) = structural_similarity(existing, grabbed, full=True)
 
                         if(score*100 > 90):
-                            print(skill["name"], skill["key"])
+                            if dprint:
+                                print(skill["name"], skill["key"])
 
                             if "modifier" in skill.keys():
                                 pyautogui.hotkey(skill["modifier"], skill["key"])

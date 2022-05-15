@@ -1,59 +1,35 @@
+import time
+import mss.tools
+import mss
+import os
+from os.path import exists
+import keyboard
+from pynput import keyboard
 from pyautogui import *
 import pyautogui
-import time
-import keyboard
-import random
-from time import gmtime, strftime
-from pynput import keyboard
-import win32gui
+from _skills import skills
+import cv2
+from skimage.metrics import structural_similarity
+from sys import platform
+
+if platform == "darwin":
+    from AppKit import NSWorkspace
+if platform == "win32":
+    import win32gui
+
 
 aoe = False
 debug = False
 dprint = False
 
-x = 1535
-y = 1150
-x_aoe = 1445
-y_aoe = 1470
-x_interrupt = 1430
-y_interrupt = 1470
+x = 6  # 1535
+y = 6  # 1150
+x_aoe = 17
+y_aoe = 2
+x_interrupt = 27
+y_interrupt = 2
 
-skills = [
-
-    # desktop
-    {"name": "battle shout", "key": "f4", "rgb": (193, 115, 110)},
-    {"name": "sunder armor", "key": "g", "rgb": (189, 126, 116)},
-    {"name": "mortal strike", "key": "f11", "rgb": (147, 145, 146)},
-    {"name": "bloodthirst", "key": "f11", "rgb": (208, 90, 57)},
-    {"name": "heroic strike", "key": "2", "rgb": (153, 150, 154)},
-    {"name": "rend", "key": "5", "rgb": (80, 2, 0)},
-    {"name": "overpower", "key": "4", "rgb": (89, 97, 107)},
-    {"name": "cleave", "key": "3", "rgb": (128, 128, 126)},
-    {"name": "revenge", "key": "1", "rgb": (205, 195, 195)},
-    {"name": "execute", "key": "f", "rgb": (76, 17, 21)},
-    {"name": "whirlwind", "key": "6", "rgb": (105, 210, 240)},
-    {"name": "rampage", "key": "home", "rgb": (175, 126, 90)},
-    {"name": "sweeping strikes", "key": "v", "rgb": (116, 49, 0)},
-
-    # laptop
-    # {"name": "battle shout", "key": "f4", "rgb": (192, 126, 98)},
-    # {"name": "sunder armor", "key": "g", "rgb": (190, 125, 114)},
-    # {"name": "bloodthirst", "key": "f11", "rgb": (237, 108, 69)},
-    # {"name": "mortal strike", "key": "f11", "rgb": (147, 145, 146)},
-    # {"name": "rend", "key": "5", "rgb": (13, 0, 0)},
-    # {"name": "overpower", "key": "4", "rgb": (89, 97, 107)},
-    # {"name": "heroic strike", "key": "2", "rgb": (106, 92, 97)},
-    # {"name": "cleave", "key": "3", "rgb": (84, 83, 84)},
-    # {"name": "revenge", "key": "1", "rgb": (198, 193, 188)},
-    # {"name": "execute", "key": "f", "rgb": (141, 88, 58)},
-    # {"name": "whirlwind", "key": "6", "rgb": (114, 231, 255)},
-    # {"name": "rampage", "key": "home", "rgb": (248, 186, 133)},
-    # {"name": "sweeping strikes", "key": "v", "rgb": (196, 115, 2)},
-    # {"name": "victory rush", "key": "x", "rgb": (212, 92, 44)},
-
-    # {"name": "mongoose bite", "key": "f10", "rgb": (135, 133, 135)},
-    # {"name": "healing potion", "key": "6", "rgb": (227, 34, 27)}
-]
+margin = 1
 
 
 def on_press(key):
@@ -73,41 +49,74 @@ def on_press(key):
 
 with keyboard.Listener(on_press=on_press) as listener:
 
-    while True:
+    with mss.mss() as sct:
 
-        time.sleep(0.01)
-        active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
+        while True:
 
-        # ako je chat otvoren.. ili nesto trece... ako je kockica bijela
-        if pyautogui.pixel(x_aoe, y_aoe) == (255, 254, 255) and debug == False:
-            # if dprint:
-            # print("skipping", "...")
-            continue
+            if platform == "darwin":
+                active_window = NSWorkspace.sharedWorkspace().activeApplication()['NSApplicationName']
+            if platform == "win32":
+                active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
-        if pyautogui.pixel(x_interrupt, y_interrupt) == (0, 254, 0):
-            if dprint:
-                print("interrupt", "f9")
-            pyautogui.press("f9")
+            start_time = time.time()
+            p_main = {"top": 0, "left": 0, "width": x*2, "height": y*2}
+            p_aoe = {"top": 0, "left": x_aoe, "width": 5, "height": 2}
+            p_interrupt = {"top": 0, "left": x_interrupt, "width": 5, "height": 2}
 
-        if debug:
-            time.sleep(1)
-            if dprint:
-                print(active_window, pyautogui.pixel(x, y))
-        else:
+            output = "main_{top}x{left}_{width}x{height}.png".format(**p_main)
 
-            if(active_window != "World of Warcraft"):
-                continue
+            # Grab the pixel data
+            main_image = sct.grab(p_main)
+            main = main_image.pixel(int(x/2), int(y/2))
 
-            for skill in skills:
-                r_live = pyautogui.pixel(x, y)[0]
-                g_live = pyautogui.pixel(x, y)[1]
-                b_live = pyautogui.pixel(x, y)[2]
-                r_local = skill["rgb"][0]
-                g_local = skill["rgb"][1]
-                b_local = skill["rgb"][2]
-                margin = 5
+            aoe_image = sct.grab(p_aoe)
+            aoe = aoe_image.pixel(1, 1)
+            # mss.tools.to_png(aoe_image.rgb, aoe_image.size, output="aoe_{top}x{left}_{width}x{height}.png".format(**p_aoe))
 
-                if (r_local - margin <= r_live <= r_local + margin) and (g_local - margin <= g_live <= g_local + margin) and (b_local - margin <= b_live <= b_local + margin):
+            interrupt_image = sct.grab(p_interrupt)
+            interrupt = interrupt_image.pixel(1, 1)
+            # mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="interrupt_{top}x{left}_{width}x{height}.png".format(**p_interrupt))
+
+            if not debug:
+
+                if aoe == (255, 255, 255):
                     if dprint:
-                        print(skill["name"], skill["key"], skill["rgb"], pyautogui.pixel(x, y))
-                    pyautogui.press(skill["key"])
+                        print("skipping",  f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                    continue
+
+                if interrupt == (0, 255, 0):
+                    if dprint:
+                        print("interrupt", "f9", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                    pyautogui.hotkey("f9")
+
+                if(active_window != "World of Warcraft"):
+                    if dprint:
+                        print(active_window, "skipping", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                    continue
+
+                # rotation
+                mss.tools.to_png(main_image.rgb, main_image.size, output=output)
+                for skill in skills:
+
+                    input = "images/" + skill["name"] + ".png"
+                    if exists(input):
+
+                        existing = cv2.cvtColor(cv2.imread(input), cv2.COLOR_BGR2GRAY)
+                        grabbed = cv2.cvtColor(cv2.imread(output), cv2.COLOR_BGR2GRAY)
+                        # os.remove(main_image)
+
+                        (score, diff) = structural_similarity(existing, grabbed, full=True)
+
+                        if(score*100 > 90):
+                            if dprint:
+                                print(skill["name"], skill["key"])
+
+                            if "modifier" in skill.keys():
+                                pyautogui.hotkey(skill["modifier"], skill["key"])
+                            else:
+                                pyautogui.hotkey(skill["key"])
+
+            if debug:
+                time.sleep(0.5)
+                mss.tools.to_png(main_image.rgb, main_image.size, output=output)
+                print(output, main, aoe, interrupt, active_window, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
