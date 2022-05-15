@@ -4148,9 +4148,9 @@ VUHDO_PANEL_SETUP = {
 			["scale"] = 1,
 			["relativePoint"] = "BOTTOMLEFT",
 			["orientation"] = "TOPLEFT",
-			["height"] = 53.9999885559082,
+			["height"] = 53.99997329711914,
 			["growth"] = "TOPLEFT",
-			["width"] = 196,
+			["width"] = 195.9999694824219,
 		},
 		["RAID_ICON"] = {
 			["show"] = true,
@@ -4161,8 +4161,6 @@ VUHDO_PANEL_SETUP = {
 		},
 		["frameStrata"] = "MEDIUM",
 		["MODEL"] = {
-			["ordering"] = 0,
-			["sort"] = 0,
 			["groups"] = {
 				1, -- [1]
 				2, -- [2]
@@ -4174,6 +4172,8 @@ VUHDO_PANEL_SETUP = {
 				8, -- [8]
 				40, -- [9]
 			},
+			["ordering"] = 0,
+			["sort"] = 0,
 			["isReverse"] = false,
 		},
 		["TOOLTIP"] = {
@@ -4283,13 +4283,13 @@ VUHDO_PANEL_SETUP = {
 			["isTarClassColBack"] = false,
 			["showTarget"] = false,
 			["borderGapY"] = 2,
-			["barWidth"] = 95,
 			["columnSpacing"] = 2,
+			["barWidth"] = 95,
 			["rowSpacing"] = 2,
 		},
 		["ID_TEXT"] = {
 			["showTags"] = true,
-			["_spacing"] = 22.00010299682617,
+			["_spacing"] = 21.99990844726563,
 			["showNickname"] = false,
 			["showClass"] = false,
 			["showName"] = true,
@@ -4445,8 +4445,8 @@ VUHDO_PANEL_SETUP = {
 			["isTarClassColBack"] = false,
 			["showTarget"] = false,
 			["borderGapY"] = 5,
-			["barWidth"] = 80,
 			["columnSpacing"] = 5,
+			["barWidth"] = 80,
 			["rowSpacing"] = 2,
 		},
 		["ID_TEXT"] = {
@@ -4607,8 +4607,8 @@ VUHDO_PANEL_SETUP = {
 			["isTarClassColBack"] = false,
 			["showTarget"] = false,
 			["borderGapY"] = 5,
-			["barWidth"] = 80,
 			["columnSpacing"] = 5,
+			["barWidth"] = 80,
 			["rowSpacing"] = 2,
 		},
 		["ID_TEXT"] = {
@@ -4768,8 +4768,8 @@ VUHDO_PANEL_SETUP = {
 			["isTarClassColBack"] = false,
 			["showTarget"] = false,
 			["borderGapY"] = 5,
-			["barWidth"] = 80,
 			["columnSpacing"] = 5,
+			["barWidth"] = 80,
 			["rowSpacing"] = 2,
 		},
 		["ID_TEXT"] = {
@@ -4929,8 +4929,8 @@ VUHDO_PANEL_SETUP = {
 			["isTarClassColBack"] = false,
 			["showTarget"] = false,
 			["borderGapY"] = 5,
-			["barWidth"] = 80,
 			["columnSpacing"] = 5,
+			["barWidth"] = 80,
 			["rowSpacing"] = 2,
 		},
 		["ID_TEXT"] = {
@@ -5090,8 +5090,8 @@ VUHDO_PANEL_SETUP = {
 			["isTarClassColBack"] = false,
 			["showTarget"] = false,
 			["borderGapY"] = 5,
-			["barWidth"] = 80,
 			["columnSpacing"] = 5,
+			["barWidth"] = 80,
 			["rowSpacing"] = 2,
 		},
 		["ID_TEXT"] = {
@@ -5251,8 +5251,8 @@ VUHDO_PANEL_SETUP = {
 			["isTarClassColBack"] = false,
 			["showTarget"] = false,
 			["borderGapY"] = 5,
-			["barWidth"] = 80,
 			["columnSpacing"] = 5,
+			["barWidth"] = 80,
 			["rowSpacing"] = 2,
 		},
 		["ID_TEXT"] = {
@@ -5412,8 +5412,8 @@ VUHDO_PANEL_SETUP = {
 			["isTarClassColBack"] = false,
 			["showTarget"] = false,
 			["borderGapY"] = 5,
-			["barWidth"] = 80,
 			["columnSpacing"] = 5,
+			["barWidth"] = 80,
 			["rowSpacing"] = 2,
 		},
 		["ID_TEXT"] = {
@@ -5573,8 +5573,8 @@ VUHDO_PANEL_SETUP = {
 			["isTarClassColBack"] = false,
 			["showTarget"] = false,
 			["borderGapY"] = 5,
-			["barWidth"] = 80,
 			["columnSpacing"] = 5,
+			["barWidth"] = 80,
 			["rowSpacing"] = 2,
 		},
 		["ID_TEXT"] = {
@@ -5734,8 +5734,8 @@ VUHDO_PANEL_SETUP = {
 			["isTarClassColBack"] = false,
 			["showTarget"] = false,
 			["borderGapY"] = 5,
-			["barWidth"] = 80,
 			["columnSpacing"] = 5,
+			["barWidth"] = 80,
 			["rowSpacing"] = 2,
 		},
 		["ID_TEXT"] = {
@@ -6944,9 +6944,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w10", -- [2]
 			"", -- [3]
 		},
-		["ctrl2"] = {
-			"CTRL-", -- [1]
-			"-w6", -- [2]
+		["shift1"] = {
+			"SHIFT-", -- [1]
+			"-w7", -- [2]
 			"", -- [3]
 		},
 		["2"] = {
@@ -6954,9 +6954,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w2", -- [2]
 			"", -- [3]
 		},
-		["shift1"] = {
-			"SHIFT-", -- [1]
-			"-w7", -- [2]
+		["ctrlshift2"] = {
+			"CTRL-SHIFT-", -- [1]
+			"-w14", -- [2]
 			"", -- [3]
 		},
 		["shift2"] = {
@@ -7009,9 +7009,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w5", -- [2]
 			"", -- [3]
 		},
-		["ctrlshift2"] = {
-			"CTRL-SHIFT-", -- [1]
-			"-w14", -- [2]
+		["ctrl2"] = {
+			"CTRL-", -- [1]
+			"-w6", -- [2]
 			"", -- [3]
 		},
 	},
@@ -7038,9 +7038,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w10", -- [2]
 			"", -- [3]
 		},
-		["ctrl2"] = {
-			"CTRL-", -- [1]
-			"-w6", -- [2]
+		["shift1"] = {
+			"SHIFT-", -- [1]
+			"-w7", -- [2]
 			"", -- [3]
 		},
 		["2"] = {
@@ -7048,9 +7048,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w2", -- [2]
 			"", -- [3]
 		},
-		["shift1"] = {
-			"SHIFT-", -- [1]
-			"-w7", -- [2]
+		["ctrlshift2"] = {
+			"CTRL-SHIFT-", -- [1]
+			"-w14", -- [2]
 			"", -- [3]
 		},
 		["shift2"] = {
@@ -7103,9 +7103,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w5", -- [2]
 			"", -- [3]
 		},
-		["ctrlshift2"] = {
-			"CTRL-SHIFT-", -- [1]
-			"-w14", -- [2]
+		["ctrl2"] = {
+			"CTRL-", -- [1]
+			"-w6", -- [2]
 			"", -- [3]
 		},
 	},
@@ -7166,7 +7166,7 @@ VUHDO_RAID = {
 		["unit"] = "player",
 		["debuff"] = 0,
 		["healthmax"] = 288,
-		["loghealth"] = 203,
+		["loghealth"] = 173,
 		["dead"] = false,
 		["charmed"] = false,
 		["fullName"] = "Mxyzptlk",
@@ -7201,7 +7201,7 @@ VUHDO_RAID = {
 		["unit"] = "pet",
 		["powertype"] = 0,
 		["healthmax"] = 138,
-		["loghealth"] = 124,
+		["loghealth"] = 118,
 		["dead"] = false,
 		["charmed"] = false,
 		["fullName"] = "Bizpit",
@@ -7240,9 +7240,9 @@ VUHDO_INDICATOR_CONFIG = {
 		},
 		["SWIFTMEND_INDICATOR"] = "",
 		["THREAT_MARK"] = "",
+		["MANA_BAR"] = "Manabars: All Powers",
 		["BAR_BORDER"] = "Aggro Indicator",
 		["SIDE_RIGHT"] = "",
-		["MANA_BAR"] = "Manabars: All Powers",
 		["HEALTH_BAR"] = "Health (generic, class col)",
 		["DAMAGE_FLASH_BAR"] = "",
 		["INCOMING_BAR"] = "",

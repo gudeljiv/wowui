@@ -28,9 +28,9 @@ end
 
 local f = CreateFrame('Frame', 'RotationFrame', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
 f:SetWidth(5)
-f:SetHeight(5)
+f:SetHeight(2)
 f:ClearAllPoints()
-f:SetPoint('RIGHT', CustomContainer_Combat, 'LEFT', -5, 0)
+f:SetPoint('TOPLEFT', UIParent, 'TOPLEFT', 15, 0)
 f:SetFrameStrata('BACKGROUND')
 f:SetBackdrop(
 	{
@@ -60,9 +60,9 @@ PlayerFrame:HookScript(
 
 local f = CreateFrame('Frame', 'RotationFrame2', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
 f:SetWidth(5)
-f:SetHeight(5)
+f:SetHeight(2)
 f:ClearAllPoints()
-f:SetPoint('RIGHT', CustomContainer_Combat, 'LEFT', -15, 0)
+f:SetPoint('TOPLEFT', UIParent, 'TOPLEFT', 25, 0)
 f:SetFrameStrata('BACKGROUND')
 f:SetBackdrop(
 	{

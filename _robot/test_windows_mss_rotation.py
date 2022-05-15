@@ -2,23 +2,26 @@ import time
 import mss.tools
 import mss
 import os
+from os.path import exists
 import keyboard
 from pynput import keyboard
 import win32gui
 from pyautogui import *
 import pyautogui
 from _skills import skills
+import cv2
+from skimage.metrics import structural_similarity
 
 aoe = False
 debug = False
 dprint = False
 
-x = 1535
-y = 1150
-x_aoe = 1445
-y_aoe = 1470
-x_interrupt = 1430
-y_interrupt = 1470
+x = 6  # 1535
+y = 6  # 1150
+x_aoe = 17
+y_aoe = 2
+x_interrupt = 27
+y_interrupt = 2
 
 margin = 1
 
@@ -47,47 +50,64 @@ with keyboard.Listener(on_press=on_press) as listener:
             active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
             start_time = time.time()
-            p_main = {"top": y-margin, "left": x-margin, "width": margin*2, "height": margin*2}
-            p_aoe = {"top": y_aoe-margin, "left": x_aoe-margin, "width": margin*2, "height": margin*2}
-            p_interrupt = {"top": y_interrupt-margin, "left": x_interrupt-margin, "width": margin*2, "height": margin*2}
+            p_main = {"top": 0, "left": 0, "width": x*2, "height": y*2}
+            p_aoe = {"top": 0, "left": x_aoe, "width": 5, "height": 2}
+            p_interrupt = {"top": 0, "left": x_interrupt, "width": 5, "height": 2}
+
+            output = "main_{top}x{left}_{width}x{height}.png".format(**p_main)
 
             # Grab the pixel data
-            main = sct.grab(p_main).pixel(0, 0)
-            aoe = sct.grab(p_aoe).pixel(0, 0)
-            interrupt = sct.grab(p_interrupt).pixel(0, 0)
+            main_image = sct.grab(p_main)
+            main = main_image.pixel(int(x/2), int(y/2))
 
-            if aoe == (255, 254, 255) and debug == False:
-                if dprint:
-                    print("skipping",  f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
-                continue
+            aoe_image = sct.grab(p_aoe)
+            aoe = aoe_image.pixel(1, 1)
+            # mss.tools.to_png(aoe_image.rgb, aoe_image.size, output="aoe_{top}x{left}_{width}x{height}.png".format(**p_aoe))
 
-            if interrupt == (0, 254, 0):
-                if dprint:
-                    print("interrupt", "f9", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
-                pyautogui.hotkey("f9")
+            interrupt_image = sct.grab(p_interrupt)
+            interrupt = interrupt_image.pixel(1, 1)
+            # mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="interrupt_{top}x{left}_{width}x{height}.png".format(**p_interrupt))
 
-            if(active_window != "World of Warcraft" and not debug):
-                if dprint:
-                    print(active_window, "skipping", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
-                continue
+            if not debug:
 
-            # rotation
-            for skill in skills:
-                r_live = main[0]
-                g_live = main[1]
-                b_live = main[2]
-                r_local = skill["rgb"][0]
-                g_local = skill["rgb"][1]
-                b_local = skill["rgb"][2]
-                pixel_error = 5
-
-                if (r_local - pixel_error <= r_live <= r_local + pixel_error) and (g_local - pixel_error <= g_live <= g_local + pixel_error) and (b_local - pixel_error <= b_live <= b_local + pixel_error):
+                if aoe == (255, 255, 255):
                     if dprint:
-                        print(skill["name"], skill["key"], skill["rgb"], main)
-                    if "modifier" in skill.keys():
-                        pyautogui.hotkey(skill["modifier"], skill["key"])
-                    else:
-                        pyautogui.hotkey(skill["key"])
+                        print("skipping",  f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                    continue
+
+                if interrupt == (0, 255, 0):
+                    if dprint:
+                        print("interrupt", "f9", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                    pyautogui.hotkey("f9")
+
+                if(active_window != "World of Warcraft" and not debug):
+                    if dprint:
+                        print(active_window, "skipping", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                    continue
+
+                # rotation
+                mss.tools.to_png(main_image.rgb, main_image.size, output=output)
+                for skill in skills:
+
+                    input = "images/" + skill["name"] + ".png"
+                    if exists(input):
+
+                        image = cv2.imread(input)
+                        temp = cv2.imread(output)
+                        before_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+                        after_gray = cv2.cvtColor(temp, cv2.COLOR_BGR2GRAY)
+
+                        (score, diff) = structural_similarity(before_gray, after_gray, full=True)
+
+                        if(score*100 > 90):
+                            print(skill["name"], skill["key"])
+
+                            if "modifier" in skill.keys():
+                                pyautogui.hotkey(skill["modifier"], skill["key"])
+                            else:
+                                pyautogui.hotkey(skill["key"])
 
             if debug:
-                print(main, main[0], main[1], main[2], aoe, interrupt, active_window, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                time.sleep(0.5)
+                mss.tools.to_png(main_image.rgb, main_image.size, output=output)
+                print(output, main, aoe, interrupt, active_window, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
