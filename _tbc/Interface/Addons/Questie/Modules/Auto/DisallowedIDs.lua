@@ -166,6 +166,9 @@ _QuestieAuto.disallowedQuests = {
     [8288] = true,
     -- Aldor/scryer quests
     [10551] = true,
-    [10552] = true
+    [10552] = true,
 
+    [11545] = true, -- Shattered Sun charity quest
+    [11548] = true, -- Shattered Sun charity quest
+    [11549] = true, -- Shattered Sun title
 }

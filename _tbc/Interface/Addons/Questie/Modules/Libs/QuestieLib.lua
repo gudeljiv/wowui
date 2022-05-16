@@ -15,6 +15,9 @@ local math_sqrt = math.sqrt
 local math_max = math.max
 local tinsert = table.insert
 local stringSub = string.sub
+local strim = string.trim
+local smatch = string.match
+local tostring, tonumber = tostring, tonumber
 
 --[[
     Red: 5+ level above player
@@ -102,27 +105,6 @@ function QuestieLib:GetRGBForObjective(objective)
     end
 end
 
----@param questId number @The quest ID
----@return boolean
-function QuestieLib:IsResponseCorrect(questId)
-    local objectiveList = C_QuestLog.GetQuestObjectives(questId)
-
-    if not objectiveList then
-        return false
-    end
-
-    for key, objective in pairs(objectiveList) do
-        local text, objectiveType = objective.text, objective.type
-        if (not objectiveType) or objectiveType == ""
-        or (not text) or stringSub(text, 1, 1) == " " then
-            Questie:Debug(Questie.DEBUG_CRITICAL, "[QuestieLib:GetQuestObjectives] Objective not cached yet. questId=", questId, "objective=", key, "type=", objectiveType, "text=", text)
-            return false
-        end
-    end
-
-    return true
-end
-
 ---@param questId number
 ---@param showLevel number @ Whether the quest level should be included
 ---@param showState boolean @ Whether to show (Complete/Failed)
@@ -174,7 +156,7 @@ function QuestieLib:GetQuestString(questId, name, level, blizzLike)
     if questType and questTag then
         local char = "+"
         if (not blizzLike) then
-            char = string.sub(questTag, 1, 1)
+            char = stringSub(questTag, 1, 1)
         end
 
         local langCode = l10n:GetUILocale() -- the string.sub above doesn't work for multi byte characters in Chinese
@@ -233,7 +215,7 @@ function QuestieLib:GetLevelString(questId, _, level, blizzLike)
     if questType and questTag then
         local char = "+"
         if (not blizzLike) then
-            char = string.sub(questTag, 1, 1)
+            char = stringSub(questTag, 1, 1)
         end
 
         local langCode = l10n:GetUILocale() -- the string.sub above doesn't work for multi byte characters in Chinese
@@ -306,14 +288,6 @@ function QuestieLib:GetRaceString(raceMask)
     end
 end
 
-function QuestieLib:ProfileFunction(functionReference, includeSubroutine)
-    -- Optional var
-    if (not includeSubroutine) then includeSubroutine = true end
-    local now, count = GetFunctionCPUUsage(functionReference, includeSubroutine)
-    -- Questie:Print("[QuestieLib]", "Profiling Avg:", round(time/count, 6));
-    return now, count
-end
-
 function QuestieLib:CacheItemNames(questId)
     local quest = QuestieDB:GetQuest(questId)
     if (quest and quest.ObjectiveData) then
@@ -321,7 +295,7 @@ function QuestieLib:CacheItemNames(questId)
             if objectiveDB.Type == "item" then
                 if not ((QuestieDB.ItemPointers or QuestieDB.itemData)[objectiveDB.Id]) then
                     Questie:Debug(Questie.DEBUG_DEVELOP,
-                                  "Requesting item information for missing itemId:",
+                                  "[QuestieLib:CacheItemNames] Requesting item information for missing itemId:",
                                   objectiveDB.Id)
                     local item = Item:CreateFromItemID(objectiveDB.Id)
                     item:ContinueOnItemLoad(
@@ -333,7 +307,7 @@ function QuestieLib:CacheItemNames(questId)
                                 QuestieDB.itemDataOverrides[objectiveDB.Id][1] = itemName
                             end
                             Questie:Debug(Questie.DEBUG_DEVELOP,
-                                          "Created item information for item:",
+                                          "[QuestieLib:CacheItemNames] Created item information for item:",
                                           itemName, ":", objectiveDB.Id)
                         end)
                 end
@@ -351,20 +325,6 @@ end
 
 function QuestieLib:Maxdist(x, y, i, e)
     return math_max(math_abs(x - i), math_abs(y - e))
-end
-
-function QuestieLib:Remap(value, low1, high1, low2, high2)
-    return low2 + (value - low1) * (high2 - low2) / (high1 - low1)
-end
-
-function QuestieLib:GetTableSize(table)
-    local count = 0
-    if table then
-        for _,_ in pairs(table) do
-            count = count +1
-        end
-    end
-    return count
 end
 
 local cachedTitle
@@ -410,20 +370,6 @@ function QuestieLib:GetAddonVersionString()
     return "v" .. tostring(major) .. "." .. tostring(minor) .. "." .. tostring(patch) .. hash .. buildType
 end
 
--- Search for just Addon\\ at the front since the interface part often gets trimmed
--- Code Credit Author(s): Cryect (cryect@gmail.com), Xinhuan and their LibGraph-2.0
-do
-    local path = string.match(debugstack(1, 1, 0),
-                              "AddOns\\(.+)Modules\\Libs\\QuestieLib.lua")
-    if path then
-        QuestieLib.AddonPath = "Interface\\AddOns\\" .. path
-    else
-        local major, minor, patch, commit = QuestieLib:GetAddonVersionInfo()
-        error("v" .. major .. "." .. minor .. "." .. patch .. "_" .. commit ..
-                  " cannot determine the folder it is located in because the path is too long and got truncated in the debugstack(1, 1, 0) function call")
-    end
-end
-
 function QuestieLib:Count(table) -- according to stack overflow, # and table.getn arent reliable (I've experienced this? not sure whats up)
     local count = 0
     for _, _ in pairs(table) do count = count + 1 end
@@ -453,21 +399,6 @@ function QuestieLib:SanitizePattern(pattern)
     return sanitize_cache[pattern]
 end
 
-function QuestieLib:SortQuestsByLevel(quests)
-    local sortedQuestsByLevel = {}
-
-    local function compareTablesByIndex(a, b)
-        return a[1] < b[1]
-    end
-
-    for _, q in pairs(quests) do
-        tinsert(sortedQuestsByLevel, {q.questLevel, q})
-    end
-    table.sort(sortedQuestsByLevel, compareTablesByIndex)
-
-    return sortedQuestsByLevel
-end
-
 function QuestieLib:SortQuestIDsByLevel(quests)
     local sortedQuestsByLevel = {}
 
@@ -482,46 +413,6 @@ function QuestieLib:SortQuestIDsByLevel(quests)
     table.sort(sortedQuestsByLevel, compareTablesByIndex)
 
     return sortedQuestsByLevel
-end
-
----------------------------------------------------------------------------------------------------
--- Returns the Levenshtein distance between the two given strings
--- credit to https://gist.github.com/Badgerati/3261142
-function QuestieLib:Levenshtein(str1, str2)
-    local len1 = string.len(str1)
-    local len2 = string.len(str2)
-    local matrix = {}
-    local cost
-    -- quick cut-offs to save time
-    if (len1 == 0) then
-        return len2
-    elseif (len2 == 0) then
-        return len1
-    elseif (str1 == str2) then
-        return 0
-    end
-    -- initialise the base matrix values
-    for i = 0, len1, 1 do
-        matrix[i] = {}
-        matrix[i][0] = i
-    end
-    for j = 0, len2, 1 do
-        matrix[0][j] = j
-    end
-    -- actual Levenshtein algorithm
-    for i = 1, len1, 1 do
-        for j = 1, len2, 1 do
-            if (string.byte(str1, i) == string.byte(str2, j)) then
-                cost = 0
-            else
-                cost = 1
-            end
-            matrix[i][j] = math.min(matrix[i - 1][j] + 1, matrix[i][j - 1] + 1,
-                                    matrix[i - 1][j - 1] + cost)
-        end
-    end
-    -- return the last value - this is the Levenshtein distance
-    return matrix[len1][len2]
 end
 
 local randomSeed = 0
@@ -561,3 +452,70 @@ function QuestieLib:UnpackBinary(val)
     end
     return ret
 end
+
+
+-- Link contains test bench for regex in lua.
+-- https://hastebin.com/anodilisuw.bash
+-- QUEST_MONSTERS_KILLED etc. patterns are from WoW API
+local L_QUEST_MONSTERS_KILLED = QuestieLib:SanitizePattern(QUEST_MONSTERS_KILLED)
+local L_QUEST_ITEMS_NEEDED = QuestieLib:SanitizePattern(QUEST_ITEMS_NEEDED)
+local L_QUEST_OBJECTS_FOUND = QuestieLib:SanitizePattern(QUEST_OBJECTS_FOUND)
+
+--- 'FooBar slain: 0/3' --> 'FooBar'
+--- 'EpicItem : 0/1' --> 'EpicItem'
+---@param text string @requires nil check and first character ~= " " check before call
+---@param objectiveType string
+function QuestieLib.TrimObjectiveText(text, objectiveType)
+    local originalText = text
+
+    if objectiveType == "monster" then
+        local n, _, monsterName = smatch(text, L_QUEST_MONSTERS_KILLED)
+        if tonumber(monsterName) then -- SOME objectives are reversed in TBC, why blizzard?
+            monsterName = n
+        end
+
+        if (not monsterName) or (strlen(monsterName) == strlen(originalText)) then
+            --The above doesn't seem to work with the chinese, the row below tries to remove the extra numbers.
+            text = smatch(monsterName or text, "(.*)：");
+        else
+            text = monsterName
+        end
+    elseif objectiveType == "item" then
+        local n, _, itemName = smatch(text, L_QUEST_ITEMS_NEEDED)
+        if tonumber(itemName) then -- SOME objectives are reversed in TBC, why blizzard?
+            itemName = n
+        end
+
+        text = itemName
+    elseif objectiveType == "object" then
+        local n, _, objectName = smatch(text, L_QUEST_OBJECTS_FOUND)
+        if tonumber(objectName) then -- SOME objectives are reversed in TBC, why blizzard?
+            objectName = n
+        end
+
+        text = objectName
+    end
+
+    -- If the functions above do not give a good answer fall back to older regex to get something.
+    if not text then
+        text = smatch(originalText, "^(.*):%s") or smatch(originalText, "%s：(.*)$") or smatch(originalText, "^(.*)：%s") or originalText
+    end
+
+    text = strim(text)
+    --Questie:Debug(Questie.DEBUG_DEVELOP, "[TrimObjectiveText] \""..originalText.."\" --> \""..text.."\"") -- Comment out this debug for speed when not used.
+    return text
+end
+
+--[[  KEEP THIS FOR NOW
+
+            -- Look if it contains "slain"
+            if(smatch(text, slain)) then
+                --English first, chinese after
+                text = smatch(objective.text, "(.*)"..slain.."%W*%d+/%d+") or smatch(objective.text, "%d+/%d+%W*"..slain.."(.*)")
+                --Capital %W is required due to chinese not being alphanumerical
+                --text = smatch(objective.text, '^(.*)%s+%w+:%s') or smatch(objective.text, '%s：%W+%s(.+)$');
+            else
+                --English first, chinese after
+                text = smatch(objective.text, "^(.*):%s") or smatch(objective.text, "%s：(.*)$");
+            end
+]]--

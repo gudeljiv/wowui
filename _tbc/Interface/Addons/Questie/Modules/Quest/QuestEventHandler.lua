@@ -18,8 +18,10 @@ local QuestieLib = QuestieLoader:ImportModule("QuestieLib")
 local QuestieDB = QuestieLoader:ImportModule("QuestieDB")
 ---@type QuestieAnnounce
 local QuestieAnnounce = QuestieLoader:ImportModule("QuestieAnnounce")
+---@type IsleOfQuelDanas
+local IsleOfQuelDanas = QuestieLoader:ImportModule("IsleOfQuelDanas")
 
-local stringSub = string.sub
+local stringByte = string.byte
 local tableRemove = table.remove
 
 -- 3 * (Max possible number of quests in game quest log)
@@ -100,8 +102,8 @@ function _QuestEventHandler:HandleQuestAccepted(questId)
     -- We first check the quest objectives and retry in the next QLU event if they are not correct yet
     local questObjectives = C_QuestLog.GetQuestObjectives(questId)
     for _, objective in pairs(questObjectives) do
-        -- When the objective text is not cached yet it looks similar to " slain 0/1"
-        if (not objective.text) or stringSub(objective.text, 1, 1) == " " then
+        -- When the objective text is not cached yet it looks similar to " slain: 0/1"
+        if (not objective.text) or (stringByte(objective.text, 1) == 32) then -- if (text starts with a space " ") then
             Questie:Debug(Questie.DEBUG_SPAM, "Objective texts are not correct yet")
             _QuestLogUpdateQueue:Insert(function()
                 return _QuestEventHandler:HandleQuestAccepted(questId)
@@ -115,9 +117,15 @@ function _QuestEventHandler:HandleQuestAccepted(questId)
     Questie:Debug(Questie.DEBUG_SPAM, "Objectives are correct. Calling accept logic. quest:", questId)
     questLog[questId].state = QUEST_LOG_STATES.QUEST_ACCEPTED
     QuestieHash:AddNewQuestHash(questId)
-    QuestieQuest:AcceptQuest(questId)
     QuestieJourney:AcceptQuest(questId)
     QuestieAnnounce:AcceptedQuest(questId)
+
+    local isLastIslePhase = Questie.db.global.isleOfQuelDanasPhase == IsleOfQuelDanas.MAX_ISLE_OF_QUEL_DANAS_PHASES
+    if Questie.IsTBC and (not isLastIslePhase) and IsleOfQuelDanas.CheckForActivePhase(questId) then
+        QuestieQuest:SmoothReset()
+    else
+        QuestieQuest:AcceptQuest(questId)
+    end
 
     return true
 end

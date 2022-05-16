@@ -277,31 +277,45 @@ function QuestieDB:GetItem(itemId)
         return nil
     end
 
-    local item = {};
+    local item = {
+        Id = itemId,
+        Sources = {},
+        Hidden = QuestieCorrections.questItemBlacklist[itemId]
+    }
 
     for stringKey, intKey in pairs(QuestieDB.itemKeys) do
         item[stringKey] = rawdata[intKey]
     end
 
-    item.Id = itemId;
-    item.Sources = {};
-    item.Hidden = QuestieCorrections.questItemBlacklist[itemId]
+    local sources = item.Sources
+
     if rawdata[QuestieDB.itemKeys.npcDrops] then
-        for _, v in pairs(rawdata[QuestieDB.itemKeys.npcDrops]) do -- droppedBy = 3, relatedQuests=2, containedIn=4
-            local source = {};
-            source.Type = "monster";
-            source.Id = v;
-            tinsert(item.Sources, source);
+        for _, npcId in pairs(rawdata[QuestieDB.itemKeys.npcDrops]) do
+            sources[#sources+1] = {
+                Id = npcId,
+                Type = "monster",
+            }
         end
     end
+
+    if rawdata[QuestieDB.itemKeys.vendors] then
+        for _, npcId in pairs(rawdata[QuestieDB.itemKeys.vendors]) do
+            sources[#sources+1] = {
+                Id = npcId,
+                Type = "monster",
+            }
+        end
+    end
+
     if rawdata[QuestieDB.itemKeys.objectDrops] then
-        for _, v in pairs(rawdata[QuestieDB.itemKeys.objectDrops]) do -- droppedBy = 3, relatedQuests=2, containedIn=4
-            local source = {};
-            source.Type = "object";
-            source.Id = v;
-            tinsert(item.Sources, source);
+        for _, v in pairs(rawdata[QuestieDB.itemKeys.objectDrops]) do
+            sources[#sources+1] = {
+                Id = v,
+                Type = "object",
+            }
         end
     end
+
     return item
 end
 
@@ -531,14 +545,14 @@ function QuestieDB:IsDoable(questId)
     local requiredRaces = QuestieDB.QueryQuestSingle(questId, "requiredRaces")
 
     if (not QuestiePlayer:HasRequiredRace(requiredRaces)) then
-        Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB:IsDoable] race requirement not fulfilled for questId: " .. questId)
+        Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB:IsDoable] race requirement not fulfilled for questId:", questId)
         return false
     end
 
     local requiredClasses = QuestieDB.QueryQuestSingle(questId, "requiredClasses")
 
     if (not QuestiePlayer:HasRequiredClass(requiredClasses)) then
-        Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB:IsDoable] class requirement not fulfilled for questId: " .. questId)
+        Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB:IsDoable] class requirement not fulfilled for questId:", questId)
         return false
     end
 
