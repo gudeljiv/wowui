@@ -76,6 +76,13 @@ X: -27
 Y: 27
 W: 50
 H: 50
+Frame: DetailsPluginContainerWindow
+FrameLevel: 1
+Anchor: CENTER
+X: 169
+Y: 84
+W: 925
+H: 600
 Frame: TargetFrame
 FrameLevel: 2
 Anchor: CENTER
