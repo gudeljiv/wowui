@@ -1019,6 +1019,10 @@ local class_specs_coords = {
 		[178008] = true, --Decrepit Orb, Sylvanas SoD
 		[179963] = true, --Terror Orb, Sylvanas SoD
 		[175861] = true, --Glacial Spike, Kel'Thusad SoD
+		[182778] = true, --Collapsing Quasar, Rygelon SotFO
+		[182823] = true, --Cosmic Core, Rygelon SotFO
+		[183945] = true, --Unstable Matter, Rygelon SotFO
+		[183745] = true, --Protoform Schematic, Lihuvim SotFO
 	}
 
 	--update the settings cache for scritps
@@ -1870,7 +1874,20 @@ local class_specs_coords = {
 		["nameplateMinAlphaDistance"] = true,
 		["nameplateShowDebuffsOnFriendly"] = true,
 	}
-	--on logout or on profile change, save some important cvars inside the profile
+	
+	function get_cvar_value(value)
+		if value == nil then return nil end
+		--bool checks
+		if type(value) == "boolean" then
+			value = value and 1 or 0 --store as 1/0
+		elseif value == "true" then
+			value = 1
+		elseif value == "false" then
+			value = 0
+		end
+		return tostring(value) --to store string representation
+	end
+	--on logout or on profile change, or when they are actually set, save some important cvars inside the profile
 	function Plater.SaveConsoleVariables(cvar, value) --private
 		--print("save cvars", cvar, value, debugstack())
 		local cvarTable = Plater.db.profile.saved_cvars
@@ -1881,28 +1898,34 @@ local class_specs_coords = {
 			cvarTable = Plater.db.profile.saved_cvars
 		end
 		
-		if not cvar then
+		if not cvar then -- store all
 			for CVarName, enabled in pairs (cvars_to_store) do
 				if enabled then
-					cvarTable [CVarName] = tostring(GetCVar (CVarName))
+					cvarTable [CVarName] = get_cvar_value(GetCVar (CVarName))
 				end
 			end
 		elseif cvars_to_store [cvar] then
-			cvarTable [cvar] = tostring(value)
+			cvarTable [cvar] = get_cvar_value(value)
 		end
 		
 	end
-	hooksecurefunc('SetCVar', Plater.SaveConsoleVariables)
-	hooksecurefunc('ConsoleExec', function(console)
-		local par1, par2, par3 = console:match('^(%S+)%s+(%S+)%s*(%S*)')
-		if par1 then
-			if par1:lower() == 'set' then -- /console SET cvar value
-				Plater.SaveConsoleVariables(par2, par3)
-			else -- /console cvar value
-				Plater.SaveConsoleVariables(par1, par2)
+	--restore profile cvars
+	function Plater.RestoreProfileCVars()
+		if (InCombatLockdown()) then
+			C_Timer.After (1, function() Plater.RestoreProfileCVars() end)
+			return
+		end
+		
+		--> try to restore cvars from the profile
+		local savedCVars = Plater.db and Plater.db.profile and Plater.db.profile.saved_cvars
+		if (savedCVars) then
+			for CVarName, CVarValue in pairs (savedCVars) do
+				if cvars_to_store [CVarName] then --only restore what we want to store/restore!
+					SetCVar (CVarName, get_cvar_value(CVarValue))
+				end
 			end
 		end
-	end)
+	end
 
 	--refresh call back will run all functions in its table when Plater refreshes the dynamic upvales for the file
 	Plater.DBRefreshCallback = {}
@@ -2094,6 +2117,7 @@ local class_specs_coords = {
 			Plater.UpdateUIParentScale (unitFrame.PlateFrame)
 		else
 			unitFrame:SetScale (unitFrame.nameplateScaleAdjust)
+			Plater.UpdatePlateSize(unitFrame.PlateFrame)
 		end
 	end
 	
@@ -2750,6 +2774,113 @@ local class_specs_coords = {
 			--Plater.SaveConsoleVariables()
 		end,
 		
+		VARIABLES_LOADED = function()
+			
+			C_Timer.After (0.1, Plater.ForceCVars)
+			
+			C_Timer.After (0.2, Plater.RestoreProfileCVars)
+
+			C_Timer.After (0.3, Plater.UpdatePlateClickSpace)
+			
+			-- hook CVar saving
+			hooksecurefunc('SetCVar', Plater.SaveConsoleVariables)
+			hooksecurefunc('ConsoleExec', function(console)
+				local par1, par2, par3 = console:match('^(%S+)%s+(%S+)%s*(%S*)')
+				if par1 then
+					if par1:lower() == 'set' then -- /console SET cvar value
+						Plater.SaveConsoleVariables(par2, par3)
+					else -- /console cvar value
+						Plater.SaveConsoleVariables(par1, par2)
+					end
+				end
+			end)
+			
+		end,
+		
+		--many times at saved variables load the spell database isn't loaded yet
+		PLAYER_LOGIN = function()			
+			
+			--C_Timer.After (0.1, Plater.GetSpellForRangeCheck)
+			
+			-- ensure OmniCC settings are up to date
+			C_Timer.After (1, Plater.RefreshOmniCCGroup)
+			
+			--wait more time for the talents information be received from the server
+			C_Timer.After (4, Plater.GetHealthCutoffValue)
+			
+			C_Timer.After (2, Plater.ScheduleZoneChangeHook)
+			
+			C_Timer.After (5, function()
+				local petGUID = UnitGUID ("playerpet")
+				if (petGUID) then
+					local entry = {ownerGUID = Plater.PlayerGUID, ownerName = UnitName("player"), petName = UnitName("playerpet"), time = time()}
+					Plater.PlayerPetCache [petGUID] = entry
+				end
+			end)
+			
+			--if the user just used a /reload to enable ui parenting, auto adjust the fine tune scale
+			--the uiparent fine tune scale initially: after testing and playing around with it, I think it should be 1 / UIParent:GetEffectiveScale() and scaling should be done by multiplying defaultScale * scaleFineTune
+			if (Plater.db.profile.use_ui_parent_just_enabled) then
+				Plater.db.profile.use_ui_parent_just_enabled = false
+				if (Plater.db.profile.ui_parent_scale_tune == 0) then
+					--@Ariani - march 9
+					Plater.db.profile.ui_parent_scale_tune = 1 / UIParent:GetEffectiveScale()
+					
+					--@Tercio:
+					--if (UIParent:GetEffectiveScale() < 1) then
+					--	Plater.db.profile.ui_parent_scale_tune = 1 - UIParent:GetEffectiveScale()
+					--end
+				end
+			end
+			
+			if (not Plater.db.profile.number_region_first_run) then
+				if (GetLocale() == "koKR") then
+					Plater.db.profile.number_region = "eastasia"
+				elseif (GetLocale() == "zhCN") then
+					Plater.db.profile.number_region = "eastasia"
+				elseif (GetLocale() == "zhTW") then
+					Plater.db.profile.number_region = "eastasia"
+				else
+					Plater.db.profile.number_region = "western"
+				end
+				
+				Plater.db.profile.number_region_first_run = true
+			end
+			
+			if (Plater.db.profile.reopoen_options_panel_on_tab) then
+				C_Timer.After (2, function()
+					Plater.OpenOptionsPanel()
+					PlaterOptionsPanelContainer:SelectIndex (Plater, Plater.db.profile.reopoen_options_panel_on_tab)
+					Plater.db.profile.reopoen_options_panel_on_tab = false
+				end)
+			end
+			
+			--run hooks on player logon
+			if (HOOK_PLAYER_LOGON.ScriptAmount > 0) then
+				C_Timer.After (1, function()
+					for i = 1, HOOK_PLAYER_LOGON.ScriptAmount do
+						local hookInfo = HOOK_PLAYER_LOGON [i]
+						Plater.ScriptMetaFunctions.ScriptRunNoAttach (hookInfo, "Player Logon")
+					end
+				end)
+			end
+			
+			--check addons incompatibility
+			--> Plater has issues with ElvUI due to be using the same namespace for unitFrame and healthBar
+			C_Timer.After (15, function()
+				if (IsAddOnLoaded ("ElvUI")) then
+					if (ElvUI[1] and ElvUI[1].private and ElvUI[1].private.nameplates and ElvUI[1].private.nameplates.enable) then
+						Plater:Msg ("'ElvUI Nameplates' and 'Plater Nameplates' are enabled and both nameplates won't work together.")
+						Plater:Msg ("You may disable ElvUI Nameplates at /elvui > Nameplates section or you may disable Plater at the addon control panel.")
+					end
+				end 
+			end)
+
+			-- ensure resources are up to date
+			C_Timer.After (3, Plater.Resources.OnSpecChanged)
+
+		end,
+		
 		DISPLAY_SIZE_CHANGED = function()
 			for _, plateFrame in ipairs (Plater.GetAllShownPlates()) do
 				if plateFrame.unitFrame.PlaterOnScreen then
@@ -3201,6 +3332,57 @@ local class_specs_coords = {
 				castBar.IsCastBar = true
 				castBar.isNamePlate = true
 				castBar.ThrottleUpdate = 0
+				
+				--check if Masque is enabled on Plater and reskin the cast icon
+				local castIconFrame = castBar.Icon
+				if (Plater.Masque and not castIconFrame.Masqued) then
+					--as masque only skins buttons and not textures alone, work around that with a dummy frame and some meta-table shenannigans to not break anything...
+					--create the button frame and anchor the original icon within
+					local dummyMasqueIconButton = CreateFrame ("Button", castBar:GetName() .. "dummyMasqueIconButton", castBar, BackdropTemplateMixin and "BackdropTemplate")
+					dummyMasqueIconButton:SetSize(castIconFrame:GetSize())
+					castIconFrame:ClearAllPoints()
+					castIconFrame:SetParent(dummyMasqueIconButton)
+					castIconFrame:SetPoint("TOPLEFT")
+					castIconFrame:SetPoint("BOTTOMRIGHT")
+					castIconFrame:Show()
+					
+					--overwrite original and keep a reference
+					dummyMasqueIconButton.Icon = castIconFrame
+					castBar.IconOrig = castIconFrame
+					castBar.Icon = dummyMasqueIconButton
+					
+					--now ensure all calls to the icon which are directed towards the original texture are re-routed to the icon texture
+					local origIndex = getmetatable(dummyMasqueIconButton).__index
+					local metaTable = {
+						__index = function (t,k)
+							--print(k, rawget(dummyMasqueIconButton, k), rawget(origIndex, k), castIconFrame[k])
+							local v = rawget(dummyMasqueIconButton, k) or rawget(origIndex, k)
+							if not v then
+								v = castIconFrame[k]--rawget(castIconFrame, k) or rawget(getmetatable(castIconFrame).__index, k) or rawget(t, k)
+								if type(v) == "function" then
+									return function(self, ...) return castIconFrame[k](castIconFrame, ...) end
+								end
+							end
+							return v
+						end,
+					
+						__newindex = function (t,k,v)
+							rawset(t, k, v)
+						end
+						
+					}
+					setmetatable(dummyMasqueIconButton, metaTable)
+					dummyMasqueIconButton:Show()
+					
+					-- now skin!
+					local t = {
+						Icon = castIconFrame,
+					}
+					Plater.Masque.CastIcon:AddButton (dummyMasqueIconButton, t, "Frame", true)
+					Plater.Masque.CastIcon:ReSkin(dummyMasqueIconButton)
+					castIconFrame.Masqued = true
+					dummyMasqueIconButton.Masqued = true
+				end
 				
 				--mix the plater functions into the castbar (most of the functions are for scripting support)
 				DF:Mixin (castBar, Plater.ScriptMetaFunctions)
@@ -4059,6 +4241,7 @@ function Plater.OnInit() --private --~oninit ~init
 			Plater.Masque.AuraFrame2 = Masque:Group ("Plater Nameplates", "Aura Frame 2")
 			Plater.Masque.BuffSpecial = Masque:Group ("Plater Nameplates", "Buff Special")
 			Plater.Masque.BossModIconFrame = Masque:Group ("Plater Nameplates", "Boss Mod Icons")
+			Plater.Masque.CastIcon = Masque:Group ("Plater Nameplates", "Cast Bar Icons")
 		end
 	
 	--set some cvars that we want to set
@@ -4074,14 +4257,8 @@ function Plater.OnInit() --private --~oninit ~init
 		end
 	
 	--schedule data update
-		if IS_WOW_PROJECT_MAINLINE then
-			C_Timer.After (0.1, Plater.UpdatePlateClickSpace)
-		else
-			Plater.UpdatePlateClickSpace() -- try updating immediately for classic
-		end
 		--C_Timer.After (1, Plater.GetSpellForRangeCheck)
 		C_Timer.After (4, Plater.GetHealthCutoffValue)
-		C_Timer.After (4.2, Plater.ForceCVars)
 	
 	--hooking scripts has load conditions, here it creates a load filter for plater
 	--so when a load condition is changed it reload hooks
@@ -4189,98 +4366,8 @@ function Plater.OnInit() --private --~oninit ~init
 			Plater.EventHandlerFrame:RegisterEvent ("UPDATE_SHAPESHIFT_FORM")
 		end
 		
-		--many times at saved variables load the spell database isn't loaded yet
-		function Plater:PLAYER_LOGIN()
-			C_Timer.After(0.1, Plater.RestoreProfileCVars)
-			
-			C_Timer.After (0.2, Plater.ForceCVars)
-			--C_Timer.After (0.3, Plater.GetSpellForRangeCheck)
-			if IS_WOW_PROJECT_MAINLINE then
-				C_Timer.After (0.4, Plater.UpdatePlateClickSpace)
-			else
-				Plater.UpdatePlateClickSpace() -- update immediately for classic/tbc
-			end
-			
-			
-			-- ensure OmniCC settings are up to date
-			C_Timer.After (1, Plater.RefreshOmniCCGroup)
-			
-			--wait more time for the talents information be received from the server
-			C_Timer.After (4, Plater.GetHealthCutoffValue)
-			
-			C_Timer.After (2, Plater.ScheduleZoneChangeHook)
-			
-			C_Timer.After (5, function()
-				local petGUID = UnitGUID ("playerpet")
-				if (petGUID) then
-					local entry = {ownerGUID = Plater.PlayerGUID, ownerName = UnitName("player"), petName = UnitName("playerpet"), time = time()}
-					Plater.PlayerPetCache [petGUID] = entry
-				end
-			end)
-			
-			--if the user just used a /reload to enable ui parenting, auto adjust the fine tune scale
-			--the uiparent fine tune scale initially: after testing and playing around with it, I think it should be 1 / UIParent:GetEffectiveScale() and scaling should be done by multiplying defaultScale * scaleFineTune
-			if (Plater.db.profile.use_ui_parent_just_enabled) then
-				Plater.db.profile.use_ui_parent_just_enabled = false
-				if (Plater.db.profile.ui_parent_scale_tune == 0) then
-					--@Ariani - march 9
-					Plater.db.profile.ui_parent_scale_tune = 1 / UIParent:GetEffectiveScale()
-					
-					--@Tercio:
-					--if (UIParent:GetEffectiveScale() < 1) then
-					--	Plater.db.profile.ui_parent_scale_tune = 1 - UIParent:GetEffectiveScale()
-					--end
-				end
-			end
-			
-			if (not Plater.db.profile.number_region_first_run) then
-				if (GetLocale() == "koKR") then
-					Plater.db.profile.number_region = "eastasia"
-				elseif (GetLocale() == "zhCN") then
-					Plater.db.profile.number_region = "eastasia"
-				elseif (GetLocale() == "zhTW") then
-					Plater.db.profile.number_region = "eastasia"
-				else
-					Plater.db.profile.number_region = "western"
-				end
-				
-				Plater.db.profile.number_region_first_run = true
-			end
-			
-			if (Plater.db.profile.reopoen_options_panel_on_tab) then
-				C_Timer.After (2, function()
-					Plater.OpenOptionsPanel()
-					PlaterOptionsPanelContainer:SelectIndex (Plater, Plater.db.profile.reopoen_options_panel_on_tab)
-					Plater.db.profile.reopoen_options_panel_on_tab = false
-				end)
-			end
-			
-			--run hooks on player logon
-			if (HOOK_PLAYER_LOGON.ScriptAmount > 0) then
-				C_Timer.After (1, function()
-					for i = 1, HOOK_PLAYER_LOGON.ScriptAmount do
-						local hookInfo = HOOK_PLAYER_LOGON [i]
-						Plater.ScriptMetaFunctions.ScriptRunNoAttach (hookInfo, "Player Logon")
-					end
-				end)
-			end
-			
-			--check addons incompatibility
-			--> Plater has issues with ElvUI due to be using the same namespace for unitFrame and healthBar
-			C_Timer.After (15, function()
-				if (IsAddOnLoaded ("ElvUI")) then
-					if (ElvUI[1] and ElvUI[1].private and ElvUI[1].private.nameplates and ElvUI[1].private.nameplates.enable) then
-						Plater:Msg ("'ElvUI Nameplates' and 'Plater Nameplates' are enabled and both nameplates won't work together.")
-						Plater:Msg ("You may disable ElvUI Nameplates at /elvui > Nameplates section or you may disable Plater at the addon control panel.")
-					end
-				end 
-			end)
-
-			-- ensure resources are up to date
-			C_Timer.After (3, Plater.Resources.OnSpecChanged)
-
-		end
-		Plater:RegisterEvent ("PLAYER_LOGIN")
+		Plater.EventHandlerFrame:RegisterEvent ("PLAYER_LOGIN")
+		Plater.EventHandlerFrame:RegisterEvent ("VARIABLES_LOADED")
 
 		--power update for hooking scripts
 		local hookPowerEventFrame = CreateFrame ("frame")
@@ -4698,6 +4785,9 @@ function Plater.OnInit() --private --~oninit ~init
 				borderShield:SetPoint ("center", castBar.Icon, "center")
 				PixelUtil.SetSize (borderShield, castBarHeight * 1.4, castBarHeight * 1.4)
 				borderShield:SetDesaturated (false)
+			end
+			if castBar.Icon.Masqued then
+				Plater.Masque.CastIcon:ReSkin(castBar.Icon)
 			end
 		end
 		
@@ -5521,8 +5611,10 @@ end
 			--health bar
 				--this calculates the health bar anchor points
 				--it will always be placed in the center of the nameplate main frame attached with two anchor points
-				local xOffSet = (plateFrame:GetWidth() - healthBarWidth) / 2
-				local yOffSet = (plateFrame:GetHeight() - healthBarHeight) / 2
+				local xOffSet = (plateFrame:GetWidth() - (healthBarWidth * unitFrame.nameplateScaleAdjust)) / 2
+				local yOffSet = (plateFrame:GetHeight() - (healthBarHeight * unitFrame.nameplateScaleAdjust)) / 2
+				
+				healthBar:SetScale(1/unitFrame.nameplateScaleAdjust)
 				
 				healthBar:ClearAllPoints()
 				PixelUtil.SetPoint (healthBar, "topleft", unitFrame, "topleft", xOffSet + profile.global_offset_x, -yOffSet + profile.global_offset_y)
@@ -7517,6 +7609,7 @@ end
 			unitFrame.ExtraIconFrame:SetOption ("surpress_tulla_omni_cc", Plater.db.profile.disable_omnicc_on_auras)
 			unitFrame.ExtraIconFrame:SetOption ("surpress_blizzard_cd_timer", true)
 			unitFrame.ExtraIconFrame:SetOption ("decimal_timer", Plater.db.profile.extra_icon_timer_decimals)
+			unitFrame.ExtraIconFrame:SetOption ("cooldown_reverse", Plater.db.profile.extra_icon_cooldown_reverse)
 			
 			--> update refresh ID
 			unitFrame.ExtraIconFrame.RefreshID = PLATER_REFRESH_ID
@@ -8585,6 +8678,8 @@ end
 						castBar.IsInterrupted = true
 						castBar.InterruptSourceName = sourceName
 						castBar.InterruptSourceGUID = sourceGUID
+						
+						castBar.FrameOverlay.TargetName:Hide() -- hide the target immediately
 						--> check and stop the casting script if any
 						castBar:OnHideWidget()
 					end
@@ -8608,7 +8703,7 @@ end
 				if (not sourceFlag or bit.band(sourceFlag, 0x00000400) == 0) then --not a player
 					local npcId = Plater:GetNpcIdFromGuid(sourceGUID or "")
 					if (npcId and npcId ~= 0) then
-						DB_CAPTURED_CASTS[spellID] = {npcID = Plater:GetNpcIdFromGuid(sourceGUID or ""), encounterID = Plater.CurrentEncounterID, encounterName = Plater.CurrentEncounterName}
+						DB_CAPTURED_CASTS[spellID] = {npcID = npcId, encounterID = Plater.CurrentEncounterID, encounterName = Plater.CurrentEncounterName}
 					end
 				end
 			end
@@ -8879,26 +8974,6 @@ function Plater.SetCVarsOnFirstRun()
 	
 	--Plater:Msg ("Plater has been successfully installed on this character.")
 
-end
-
-function Plater.RestoreProfileCVars()
-	if (InCombatLockdown()) then
-		C_Timer.After (1, function() Plater.RestoreProfileCVars() end)
-		return
-	end
-	
---> try to restore cvars from the profile
-	local savedCVars = Plater.db and Plater.db.profile and Plater.db.profile.saved_cvars
-	if (savedCVars) then
-		for CVarName, CVarValue in pairs (savedCVars) do
-			if cvars_to_store [CVarName] then --only restore what we want to store/restore!
-				SetCVar (CVarName, CVarValue)
-			end
-		end
-		if (PlaterOptionsPanelFrame) then
-			--PlaterOptionsPanelFrame.RefreshOptionsFrame()
-		end
-	end
 end
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
