@@ -128,3 +128,4 @@ TidyPlates_ThreatPlates: disabled
 BuyEmAllClassic: enabled
 PitBull4: enabled
 PitBull4_DogTagTexts: enabled
+VuhDo: enabled
