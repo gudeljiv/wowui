@@ -58,11 +58,6 @@ VER 3 000000000100000C " " "INV_MISC_QUESTIONMARK"
 /cast Bloodrage
 /cast Pummel
 END
-VER 3 000000000100000D " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Mortal Strike
-END
 VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [stance:3] Recklessness
@@ -98,4 +93,7 @@ VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000014 "VuhDoDCShieldData" "Ability_Repair"
 P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1WM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0000000001000015 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Ver[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
 END

@@ -17,7 +17,8 @@ local messages = {
 	'You are facing the wrong way',
 	'Target too close',
 	'You are in combat',
-	'Someone is already looting that corpse.'
+	'Someone is already looting that corpse.',
+	'Must have a Shield equipped'
 }
 
 local enable

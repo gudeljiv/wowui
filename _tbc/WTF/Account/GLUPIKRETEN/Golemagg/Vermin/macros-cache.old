@@ -58,11 +58,6 @@ VER 3 000000000100000C " " "INV_MISC_QUESTIONMARK"
 /cast Bloodrage
 /cast Pummel
 END
-VER 3 000000000100000D " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Mortal Strike
-END
 VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [stance:3] Recklessness

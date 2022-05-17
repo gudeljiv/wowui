@@ -4,6 +4,9 @@ WeakAurasOptionsSaved = {
 	["needsRebuild"] = false,
 	["version"] = "3.7.6",
 	["locale"] = "enUS",
+	["savedSnippets"] = {
+	},
+	["spellCacheAchivements"] = true,
 	["spellCache"] = {
 		["Enchant Cloak - Greater Defense"] = {
 			["spells"] = {
@@ -40030,7 +40033,7 @@ WeakAurasOptionsSaved = {
 		},
 		["Shoot (TEST)"] = {
 			["spells"] = {
-				[19881] = 135540,
+				[19881] = 132317,
 			},
 		},
 		["Transporter Explosion"] = {
@@ -55939,7 +55942,7 @@ WeakAurasOptionsSaved = {
 				[38584] = 135825,
 				[7389] = 132150,
 				[6351] = 135825,
-				[6603] = 135373,
+				[6603] = 135145,
 				[31992] = 135825,
 				[3606] = 135825,
 				[25530] = 135825,
@@ -56577,7 +56580,7 @@ WeakAurasOptionsSaved = {
 		},
 		["Whip Terrorfiend"] = {
 			["spells"] = {
-				[35673] = 135373,
+				[35673] = 135145,
 			},
 		},
 		["Paranoia"] = {
@@ -74211,7 +74214,7 @@ WeakAurasOptionsSaved = {
 				[15547] = 132222,
 				[40124] = 132222,
 				[8996] = 132222,
-				[5019] = 135540,
+				[5019] = 132317,
 				[8997] = 132222,
 				[32103] = 132222,
 				[47001] = 132222,
@@ -90570,7 +90573,7 @@ WeakAurasOptionsSaved = {
 		},
 		["Auto Shot"] = {
 			["spells"] = {
-				[75] = 135540,
+				[75] = 132369,
 			},
 		},
 		["Flamecrack"] = {
@@ -91538,8 +91541,5 @@ WeakAurasOptionsSaved = {
 			},
 		},
 	},
-	["spellCacheAchivements"] = true,
-	["savedSnippets"] = {
-	},
-	["build"] = "43400",
+	["build"] = "43638",
 }
