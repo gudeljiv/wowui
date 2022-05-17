@@ -10,10 +10,10 @@ ExtendedCharacterStats = {
 		},
 		["statsWindowClosedOnOpen"] = false,
 		["addColorsToStatTexts"] = true,
-		["headerFontSize"] = 11,
-		["showQualityColors"] = false,
-		["profileVersion"] = 11,
 		["statFontSize"] = 10,
+		["showQualityColors"] = false,
+		["headerFontSize"] = 11,
+		["profileVersion"] = 11,
 	},
 	["profile"] = {
 		["ranged"] = {
@@ -39,14 +39,8 @@ ExtendedCharacterStats = {
 					["refName"] = "RangedHitBossLevel",
 					["textColor"] = "85bb5c",
 				},
+				["isSubGroup"] = true,
 				["display"] = true,
-				["sameLevel"] = {
-					["statColor"] = "558b2f",
-					["display"] = true,
-					["text"] = "Miss",
-					["refName"] = "RangedHitSameLevel",
-					["textColor"] = "85bb5c",
-				},
 				["rating"] = {
 					["text"] = "Rating",
 					["statColor"] = "558b2f",
@@ -55,7 +49,13 @@ ExtendedCharacterStats = {
 					["refName"] = "RangedHitRating",
 					["textColor"] = "85bb5c",
 				},
-				["isSubGroup"] = true,
+				["sameLevel"] = {
+					["statColor"] = "558b2f",
+					["display"] = true,
+					["text"] = "Miss",
+					["refName"] = "RangedHitSameLevel",
+					["textColor"] = "85bb5c",
+				},
 				["text"] = "Hit",
 				["refName"] = "RangedHitHeader",
 				["bonus"] = {
@@ -146,6 +146,11 @@ ExtendedCharacterStats = {
 			},
 		},
 		["spell"] = {
+			["penetration"] = {
+				["display"] = true,
+				["text"] = "Penetration",
+				["refName"] = "SpellPenetration",
+			},
 			["hit"] = {
 				["bossLevel"] = {
 					["statColor"] = "558b2f",
@@ -154,14 +159,8 @@ ExtendedCharacterStats = {
 					["refName"] = "SpellHitBossLevel",
 					["textColor"] = "85bb5c",
 				},
+				["isSubGroup"] = true,
 				["display"] = true,
-				["sameLevel"] = {
-					["statColor"] = "558b2f",
-					["display"] = true,
-					["text"] = "Miss",
-					["refName"] = "SpellHitSameLevel",
-					["textColor"] = "85bb5c",
-				},
 				["rating"] = {
 					["text"] = "Rating",
 					["statColor"] = "558b2f",
@@ -170,7 +169,13 @@ ExtendedCharacterStats = {
 					["refName"] = "SpellHitRating",
 					["textColor"] = "85bb5c",
 				},
-				["isSubGroup"] = true,
+				["sameLevel"] = {
+					["statColor"] = "558b2f",
+					["display"] = true,
+					["text"] = "Miss",
+					["refName"] = "SpellHitSameLevel",
+					["textColor"] = "85bb5c",
+				},
 				["text"] = "Hit",
 				["refName"] = "SpellHitHeader",
 				["bonus"] = {
@@ -181,13 +186,9 @@ ExtendedCharacterStats = {
 					["textColor"] = "85bb5c",
 				},
 			},
-			["penetration"] = {
-				["display"] = true,
-				["text"] = "Penetration",
-				["refName"] = "SpellPenetration",
-			},
 			["display"] = true,
 			["text"] = "Spell",
+			["refName"] = "SpellHeader",
 			["crit"] = {
 				["statColor"] = "d32f2f",
 				["display"] = true,
@@ -195,7 +196,6 @@ ExtendedCharacterStats = {
 				["refName"] = "SpellCritChance",
 				["textColor"] = "ff6659",
 			},
-			["refName"] = "SpellHeader",
 		},
 		["spellBonus"] = {
 			["physicalCrit"] = {
@@ -362,10 +362,7 @@ ExtendedCharacterStats = {
 					["refName"] = "MeleeAttackSpeedOffHand",
 					["textColor"] = "009688",
 				},
-				["display"] = true,
 				["isSubGroup"] = true,
-				["text"] = "Attack Speed",
-				["refName"] = "MeleeAttackSpeedHeader",
 				["mainHand"] = {
 					["statColor"] = "00766c",
 					["display"] = true,
@@ -373,6 +370,9 @@ ExtendedCharacterStats = {
 					["refName"] = "MeleeAttackSpeedMainHand",
 					["textColor"] = "009688",
 				},
+				["text"] = "Attack Speed",
+				["refName"] = "MeleeAttackSpeedHeader",
+				["display"] = true,
 			},
 			["hit"] = {
 				["bossLevel"] = {
@@ -382,14 +382,8 @@ ExtendedCharacterStats = {
 					["refName"] = "MeleeHitBossLevel",
 					["textColor"] = "85bb5c",
 				},
+				["isSubGroup"] = true,
 				["display"] = true,
-				["sameLevel"] = {
-					["statColor"] = "558b2f",
-					["display"] = true,
-					["text"] = "Miss",
-					["refName"] = "MeleeHitSameLevel",
-					["textColor"] = "85bb5c",
-				},
 				["rating"] = {
 					["text"] = "Rating",
 					["statColor"] = "558b2f",
@@ -398,7 +392,13 @@ ExtendedCharacterStats = {
 					["refName"] = "MeleeHitRating",
 					["textColor"] = "85bb5c",
 				},
-				["isSubGroup"] = true,
+				["sameLevel"] = {
+					["statColor"] = "558b2f",
+					["display"] = true,
+					["text"] = "Miss",
+					["refName"] = "MeleeHitSameLevel",
+					["textColor"] = "85bb5c",
+				},
 				["text"] = "Hit",
 				["refName"] = "MeleeHitHeader",
 				["bonus"] = {

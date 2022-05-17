@@ -12,21 +12,21 @@ PallyPowerDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["autobuff"] = {
-				["autobutton"] = false,
-			},
 			["buffscale"] = 1,
+			["auras"] = false,
 			["layout"] = "Layout 6",
 			["seal"] = 6,
-			["auras"] = false,
-			["ShowTooltips"] = false,
-			["configscale"] = 1.2,
 			["rfbuff"] = false,
 			["enable"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
+			["configscale"] = 1.2,
+			["autobuff"] = {
+				["autobutton"] = false,
+			},
 			["SalvInCombat"] = true,
+			["ShowTooltips"] = false,
 			["rf"] = false,
 		},
 		["Other"] = {
