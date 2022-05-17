@@ -69,7 +69,7 @@ with keyboard.Listener(on_press=on_press) as listener:
             p_aoe = {"top": 0, "left": x_aoe, "width": 5, "height": 2}
             p_interrupt = {"top": 0, "left": x_interrupt, "width": 5, "height": 2}
 
-            output = "main_{top}x{left}_{width}x{height}.png".format(**p_main)
+            output = dir_path+"/images/_main_{top}x{left}_{width}x{height}.png".format(**p_main)
 
             # Grab the pixel data
             main_image = sct.grab(p_main)
