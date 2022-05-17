@@ -4,6 +4,7 @@ import mss
 import os
 from os.path import exists
 import keyboard
+from numpy import place
 from pynput import keyboard
 from pyautogui import *
 import pyautogui
@@ -17,7 +18,6 @@ if platform == "darwin":
 if platform == "win32":
     import win32gui
 
-
 aoe = False
 debug = False
 dprint = False
@@ -28,8 +28,14 @@ x_aoe = 17
 y_aoe = 2
 x_interrupt = 27
 y_interrupt = 2
+file_path = os.path.abspath(__file__)
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
 margin = 1
+
+# print(file_path)
+# print(dir_path)
+# print(exists(dir_path+"/images/battle shout.png"))
 
 
 def on_press(key):
@@ -81,7 +87,8 @@ with keyboard.Listener(on_press=on_press) as listener:
 
                 if aoe == (255, 255, 255):
                     if dprint:
-                        print("skipping",  f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                        # print("skipping",  f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                        placeholder = False
                     continue
 
                 if interrupt == (0, 255, 0):
@@ -91,14 +98,15 @@ with keyboard.Listener(on_press=on_press) as listener:
 
                 if(active_window != "World of Warcraft"):
                     if dprint:
-                        print(active_window, "skipping", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                        # print(active_window, "skipping", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                        placeholder = False
                     continue
 
                 # rotation
                 mss.tools.to_png(main_image.rgb, main_image.size, output=output)
                 for skill in skills:
 
-                    input = "images/" + skill["name"] + ".png"
+                    input = dir_path+"/images/" + skill["name"] + ".png"
                     if exists(input):
 
                         existing = cv2.cvtColor(cv2.imread(input), cv2.COLOR_BGR2GRAY)
@@ -109,7 +117,7 @@ with keyboard.Listener(on_press=on_press) as listener:
 
                         if(score*100 > 90):
                             if dprint:
-                                print(skill["name"], skill["key"])
+                                print(skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
 
                             if "modifier" in skill.keys():
                                 pyautogui.hotkey(skill["modifier"], skill["key"])

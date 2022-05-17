@@ -1,4 +1,6 @@
 skills = [
+
+    # warrior
     {"name": "battle shout", "key": "f4"},
     {"name": "demoralizing shout", "key": "f5"},
     {"name": "sunder armor", "key": "g"},
@@ -15,12 +17,15 @@ skills = [
     {"name": "victory rush", "key": "e", "modifier": "shift"},
     {"name": "thunder clap", "key": "e"},
 
+    # warlock
     {"name": "immolate", "key": "h"},
     {"name": "corruption", "key": "v"},
     {"name": "curse of agony", "key": "g"},
 
+    # hunter
     {"name": "serpent sting", "key": "9", "modifier": "alt"},
     {"name": "arcane shot", "key": "f11"},
     {"name": "multi shot", "key": "0", "modifier": "alt"},
     {"name": "steady shot", "key": "f10"},
+
 ]
