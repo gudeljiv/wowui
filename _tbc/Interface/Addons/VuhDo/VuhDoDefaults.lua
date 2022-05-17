@@ -391,7 +391,9 @@ end
 --
 local function VUHDO_makeFullColorWoOpacity(...)
 	local tColor = VUHDO_makeFullColor(...);
+	
 	tColor["useOpacity"] = false;
+	
 	return tColor;
 end
 
@@ -400,10 +402,14 @@ end
 --
 local function VUHDO_makeHotColor(...)
 	local tColor = VUHDO_makeFullColor(...);
+	
 	tColor["isFullDuration"] = false;
 	tColor["isClock"] = false;
 	tColor["countdownMode"] = 1;
 	tColor["useOpacity"] = false;
+	tColor["isFadeOut"] = false;
+	tColor["isFlashWhenLow"] = false;
+	
 	return tColor;
 end
 
@@ -1856,7 +1862,7 @@ function VUHDO_loadDefaultPanelSetup()
 
 		VUHDO_PANEL_SETUP[tPanelNum] = VUHDO_ensureSanity("VUHDO_PANEL_SETUP[" .. tPanelNum .. "]", VUHDO_PANEL_SETUP[tPanelNum], VUHDO_DEFAULT_PER_PANEL_SETUP);
 	end
-
+	
 	VUHDO_PANEL_SETUP = VUHDO_ensureSanity("VUHDO_PANEL_SETUP", VUHDO_PANEL_SETUP, VUHDO_DEFAULT_PANEL_SETUP);
 	VUHDO_DEFAULT_PANEL_SETUP = VUHDO_compressAndPackTable(VUHDO_DEFAULT_PANEL_SETUP);
 	VUHDO_DEFAULT_PER_PANEL_SETUP = VUHDO_compressAndPackTable(VUHDO_DEFAULT_PER_PANEL_SETUP);

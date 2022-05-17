@@ -743,6 +743,8 @@ VUHDO_I18N_TT.K579 = "Выбрать цвет подсветки фрейма.";
 VUHDO_I18N_TT.K580 = "Выберите модификатор для использования с ПКМ для добавления дебафов в чёрный список."
 VUHDO_I18N_TT.K581 = "Отметьте, чтобы показывать ники на фреймах.";
 VUHDO_I18N_TT.K582 = "Select the unit to target.";
+VUHDO_I18N_TT.K583 = "Check to make all HoT icons fade out when the HoT is expiring.";
+VUHDO_I18N_TT.K584 = "Check to make all HoT icons flash when the HoT is expiring.";
 
 -- TBCC game version specific strings (tooltip IDs begin at K900)
 
@@ -1346,6 +1348,8 @@ VUHDO_I18N_FOCUS_HARM = "Focus unit (hostile only)";
 VUHDO_I18N_MOUSEOVER_HARM = "Mouseover unit (hostile only)";
 VUHDO_I18N_MOUSEOVER_TARGET_HARM = "Mouseover's target unit (hostile only)";
 VUHDO_I18N_MOUSEOVER_TARGET_TARGET_HARM = "Mouseover's target's target unit (hostile only)";
+
+VUHDO_I18N_CLOCK = "Clock";
 
 -- TBCC game version specific strings
 

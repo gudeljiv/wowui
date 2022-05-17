@@ -638,7 +638,9 @@ VUHDO_I18N_TT.K578 = "选择图标闪光的颜色.";
 VUHDO_I18N_TT.K579 = "选择技能条闪光的颜色.";
 VUHDO_I18N_TT.K580 = "选择一个修改键，使用鼠标右键将debuff图标列入黑名单."
 VUHDO_I18N_TT.K581 = "选中可在栏上显示玩家昵称.";
-VUHDO_I18N_TT.K582 = "Select the unit to target.";
+VUHDO_I18N_TT.K582 = "选择释放的目标";
+VUHDO_I18N_TT.K583 = "Check to make all HoT icons fade out when the HoT is expiring.";
+VUHDO_I18N_TT.K584 = "Check to make all HoT icons flash when the HoT is expiring.";
 
 -- TBCC game version specific strings (tooltip IDs begin at K900)
 
@@ -1158,18 +1160,20 @@ VUHDO_I18N_SHOW_HEAL_ABSORB = "显示\n治疗吸收";
 VUHDO_I18N_HEAL_ABSORB_BAR = "治疗吸收条";
 
 VUHDO_I18N_PLAYER = "自己";
-VUHDO_I18N_TARGET = "Target unit"
-VUHDO_I18N_TARGET_TARGET = "Target's target unit"
-VUHDO_I18N_FOCUS = "焦点";
-VUHDO_I18N_MOUSEOVER = "Mouseover unit";
-VUHDO_I18N_MOUSEOVER_TARGET = "Mouseover's target unit";
-VUHDO_I18N_MOUSEOVER_TARGET_TARGET = "Mouseover's target's target unit";
-VUHDO_I18N_TARGET_HARM = "Target unit (hostile only)";
-VUHDO_I18N_TARGET_TARGET_HARM = "Target's target unit (hostile only)";
-VUHDO_I18N_FOCUS_HARM = "Focus unit (hostile only)";
-VUHDO_I18N_MOUSEOVER_HARM = "Mouseover unit (hostile only)";
-VUHDO_I18N_MOUSEOVER_TARGET_HARM = "Mouseover's target unit (hostile only)";
-VUHDO_I18N_MOUSEOVER_TARGET_TARGET_HARM = "Mouseover's target's target unit (hostile only)";
+VUHDO_I18N_TARGET = "目标单位"
+VUHDO_I18N_TARGET_TARGET = "目标的目标单位"
+VUHDO_I18N_FOCUS = "焦点单位";
+VUHDO_I18N_MOUSEOVER = "鼠标指向单位";
+VUHDO_I18N_MOUSEOVER_TARGET = "鼠标指向的目标单位";
+VUHDO_I18N_MOUSEOVER_TARGET_TARGET = "鼠标指向目标的目标单位";
+VUHDO_I18N_TARGET_HARM = "目标单位 (仅敌对)";
+VUHDO_I18N_TARGET_TARGET_HARM = "目标的目标 (仅敌对)";
+VUHDO_I18N_FOCUS_HARM = "焦点单位 (仅敌对)";
+VUHDO_I18N_MOUSEOVER_HARM = "鼠标指向单位 (仅敌对)";
+VUHDO_I18N_MOUSEOVER_TARGET_HARM = "鼠标指向的目标单位 (仅敌对)";
+VUHDO_I18N_MOUSEOVER_TARGET_TARGET_HARM = "鼠标指向目标的目标单位 (仅敌对)";
+
+VUHDO_I18N_CLOCK = "时钟";
 
 -- TBCC game version specific strings
 

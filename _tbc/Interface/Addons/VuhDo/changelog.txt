@@ -40,6 +40,7 @@ Bugfixes:
   
   
 Improvements:  
+-- Added background flash or fade out per HoT icon  
 -- Added unit macro conditional options for auto-trigger custom spells  
 -- Added trinket slots ('13' and '14') as valid actions  
 -- Updated string localizations for Russian (ruRU)  
