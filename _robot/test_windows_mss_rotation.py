@@ -13,6 +13,8 @@ import cv2
 from skimage.metrics import structural_similarity
 from sys import platform
 
+start_time = time.time()
+
 if platform == "darwin":
     from AppKit import NSWorkspace
 if platform == "win32":
@@ -30,12 +32,10 @@ x_interrupt = 27
 y_interrupt = 2
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
-
 margin = 1
 
-# print(file_path)
-# print(dir_path)
-# print(exists(dir_path+"/images/battle shout.png"))
+
+print("Script loaded and ready...", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
 
 
 def on_press(key):

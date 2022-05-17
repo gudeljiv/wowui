@@ -1,21 +1,28 @@
-import time
-import mss.tools
-import mss
+import cv2
+import pyautogui
+
 import os
-from os.path import exists
-import keyboard
-from numpy import place
+import sys
+import mss
+import mss.tools
+import time
+
 from pynput import keyboard
 from pyautogui import *
-import pyautogui
-from _skills import skills
-import cv2
+from os.path import isfile, join
+from os import listdir
+from os.path import exists
 from skimage.metrics import structural_similarity
-from sys import platform
 
-if platform == "darwin":
+from _skills import skills
+
+
+start_time = time.time()
+
+
+if sys.platform == "darwin":
     from AppKit import NSWorkspace
-if platform == "win32":
+if sys.platform == "win32":
     import win32gui
 
 aoe = False
@@ -28,14 +35,20 @@ x_aoe = 17
 y_aoe = 2
 x_interrupt = 27
 y_interrupt = 2
+margin = 1
+
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-margin = 1
+abilities_folder = dir_path + "/images"
+abilities_list = [f for f in listdir(abilities_folder) if isfile(join(abilities_folder, f))]
 
-# print(file_path)
-# print(dir_path)
-# print(exists(dir_path+"/images/battle shout.png"))
+abilities = {}
+for ability in abilities_list:
+    cv2grey = cv2.cvtColor(cv2.imread(abilities_folder + "/" + ability), cv2.COLOR_BGR2GRAY)
+    abilities[ability.replace(".png", "")] = cv2grey
+
+print("Script loaded and ready...", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
 
 
 def on_press(key):
@@ -59,9 +72,9 @@ with keyboard.Listener(on_press=on_press) as listener:
 
         while True:
 
-            if platform == "darwin":
+            if sys.platform == "darwin":
                 active_window = NSWorkspace.sharedWorkspace().activeApplication()['NSApplicationName']
-            if platform == "win32":
+            if sys.platform == "win32":
                 active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
             start_time = time.time()
@@ -69,9 +82,8 @@ with keyboard.Listener(on_press=on_press) as listener:
             p_aoe = {"top": 0, "left": x_aoe, "width": 5, "height": 2}
             p_interrupt = {"top": 0, "left": x_interrupt, "width": 5, "height": 2}
 
-            output = dir_path+"/images/_main_{top}x{left}_{width}x{height}.png".format(**p_main)
+            grabbed_image = dir_path + "/_main_{top}x{left}_{width}x{height}.png".format(**p_main)
 
-            # Grab the pixel data
             main_image = sct.grab(p_main)
             main = main_image.pixel(int(x/2), int(y/2))
 
@@ -85,46 +97,64 @@ with keyboard.Listener(on_press=on_press) as listener:
 
             if not debug:
 
+                # skipping combat, chat open ... any other reason (white -> skip, green -> combat)
                 if aoe == (255, 255, 255):
-                    if dprint:
-                        # print("skipping",  f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
-                        placeholder = False
                     continue
 
+                # aoe indicator, white --> red
                 if interrupt == (0, 255, 0):
                     if dprint:
                         print("interrupt", "f9", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
                     pyautogui.hotkey("f9")
 
-                if(active_window != "World of Warcraft"):
-                    if dprint:
-                        # print(active_window, "skipping", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
-                        placeholder = False
+                time.sleep(1)
+
+                if(active_window != "World of Warcraft" and sys.platform == "win32"):
+                    continue
+                if(active_window != "Wow" and sys.platform == "darwin"):
                     continue
 
                 # rotation
-                mss.tools.to_png(main_image.rgb, main_image.size, output=output)
+                mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
                 for skill in skills:
+                    start_time = time.time()
+                    # grabbed = cv2.cvtColor(cv2.imread(dir_path + "/test.png"), cv2.COLOR_BGR2GRAY)
+                    grabbed = cv2.cvtColor(cv2.imread(grabbed_image), cv2.COLOR_BGR2GRAY)
+                    # os.remove(grabbed_image)
 
-                    input = dir_path+"/images/" + skill["name"] + ".png"
-                    if exists(input):
-
-                        existing = cv2.cvtColor(cv2.imread(input), cv2.COLOR_BGR2GRAY)
-                        grabbed = cv2.cvtColor(cv2.imread(output), cv2.COLOR_BGR2GRAY)
-                        # os.remove(main_image)
-
-                        (score, diff) = structural_similarity(existing, grabbed, full=True)
-
-                        if(score*100 > 90):
+                    for ability in abilities:
+                        (score, diff) = structural_similarity(abilities[ability], grabbed, full=True)
+                        print(score*100, ability, skill["name"])
+                        if(score*100 > 90 and ability == skill["name"]):
                             if dprint:
-                                print(skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
-
+                                print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
                             if "modifier" in skill.keys():
                                 pyautogui.hotkey(skill["modifier"], skill["key"])
                             else:
                                 pyautogui.hotkey(skill["key"])
 
+                # for skill in skills:
+
+                #     # input = abilities_folder + skill["name"] + ".png"
+                #     # if exists(input):
+                #     # existing = cv2.cvtColor(cv2.imread(input), cv2.COLOR_BGR2GRAY)
+
+                #     grabbed = cv2.cvtColor(cv2.imread(output), cv2.COLOR_BGR2GRAY)
+                #     os.remove(output)
+
+                #     for ability in abilities:
+                #         (score, diff) = structural_similarity(ability, grabbed, full=True)
+
+                #         if(score*100 > 90):
+                #             if dprint:
+                #                 print(skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+
+                #             if "modifier" in skill.keys():
+                #                 pyautogui.hotkey(skill["modifier"], skill["key"])
+                #             else:
+                #                 pyautogui.hotkey(skill["key"])
+
             if debug:
                 time.sleep(0.5)
-                mss.tools.to_png(main_image.rgb, main_image.size, output=output)
-                print(output, main, aoe, interrupt, active_window, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
+                print(grabbed_image, main, aoe, interrupt, active_window, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")

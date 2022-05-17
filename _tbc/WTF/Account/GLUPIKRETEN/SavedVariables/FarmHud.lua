@@ -43,25 +43,25 @@ FarmHudDB = {
 	["buttons_radius"] = 0.56,
 	["player_dot"] = "blizz",
 	["hud_size"] = 1,
-	["buttons_show"] = false,
+	["tracking^132275"] = "client",
 	["mouseoverinfo_color"] = {
 		1, -- [1]
 		0.82, -- [2]
 		0, -- [3]
 		0.7, -- [4]
 	},
-	["tracking^132275"] = "client",
+	["buttons_show"] = false,
 	["holdKeyForMouseOn"] = "_NONE",
 	["coords_show"] = false,
-	["showDummy"] = true,
 	["tracking^135861"] = "client",
+	["showDummy"] = true,
 	["SuperTrackedQuest"] = true,
 	["gathercircle_show"] = false,
 	["tracking^136464"] = "client",
 	["tracking^136453"] = "client",
 	["coords_bottom"] = false,
-	["tracking^132320"] = "client",
 	["cardinalpoints_radius"] = 0.475,
+	["tracking^132320"] = "client",
 	["time_color"] = {
 		1, -- [1]
 		0.82, -- [2]
