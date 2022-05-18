@@ -25,6 +25,7 @@ if sys.platform == "win32":
 aoe = False
 debug = False
 dprint = False
+pause = True
 
 x = 6
 y = 6
@@ -45,17 +46,28 @@ for ability in abilities_list:
     cv2grey = cv2.cvtColor(cv2.imread(abilities_folder + "/" + ability), cv2.COLOR_BGR2GRAY)
     abilities[ability.replace(".png", "")] = cv2grey
 
-print("Script loaded and ready...")
+print("Script loaded and ready...", "Rotation is paused")
 
 
 def on_press(key):
     global debug
     global dprint
+    global pause
 
     try:
-        if key == keyboard.Key.f12:
+        if key == keyboard.Key.f7:
             debug = not debug
             print("debug:", debug)
+        if key == keyboard.Key.f12:
+            pause = not pause
+            if pause:
+                if dprint:
+                    print("Rotation is paused")
+                pyautogui.hotkey("shift", "f2")
+            else:
+                if dprint:
+                    print("Rotation is not paused")
+                pyautogui.hotkey("shift", "f1")
         if key == keyboard.Key.f8:
             dprint = not dprint
             print("dprint:", dprint)
@@ -92,7 +104,7 @@ with keyboard.Listener(on_press=on_press) as listener:
             interrupt = interrupt_image.pixel(1, 1)
             # mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="interrupt_{top}x{left}_{width}x{height}.png".format(**p_interrupt))
 
-            if not debug:
+            if not debug and not pause:
                 # skipping combat, chat open ... any other reason (white -> skip, green -> combat)
                 if aoe == (255, 255, 255):
                     continue

@@ -76,6 +76,13 @@ X: 16
 Y: -116
 W: 338
 H: 424
+Frame: MacroFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 45
+Y: -59
+W: 535
+H: 600
 Frame: GroupBulletinBoardFrame
 FrameLevel: 1
 Anchor: RIGHT
@@ -90,6 +97,13 @@ X: -27
 Y: 27
 W: 50
 H: 50
+Frame: VuhDoNewOptionsTabbedFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 648
+H: 455
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER

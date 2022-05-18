@@ -28,6 +28,7 @@ skills = [
     {"name": "arcane shot", "key": "f11"},
     {"name": "multi shot", "key": "0", "modifier": "alt"},
     {"name": "steady shot", "key": "f10"},
+    {"name": "mend pet", "key": "v"},
 
     #  druid
     {"name": "wrath", "key": "1"},

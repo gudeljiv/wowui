@@ -24,15 +24,24 @@ VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 /use [nocombat]item:0
 /castsequence [combat] reset=combat 
 END
+VER 3 0000000000000011 "GREEN" "2241756"
+/run RotationFrame3:ClearAllPoints()
+/run RotationFrame3:SetPoint('LEFT', PlayerFrame, 'RIGHT', 0, 6)
+/run RotationFrame3:SetHeight(40)
+/run RotationFrame3:SetWidth(3)
+END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
 /run GetMouseFocus():Click()
 /click StaticPopup1Button1
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:27681
+#showtooltip item:27677
 /cast feed pet
-/use item:27681
+/use item:27677
+END
+VER 3 0000000000000012 "RED" "2241756"
+/run RotationFrame3:SetBackdropColor(1, 0, 0, 0.9)
 END
 VER 3 0000000000000010 "TEST" "3940790"
 /run  print(nHealthStatusBar:isVisible())

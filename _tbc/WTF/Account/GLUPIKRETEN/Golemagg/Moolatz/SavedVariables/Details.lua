@@ -7,8 +7,1721 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 424,
+					["combatId"] = 429,
 					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007607,
+							["damage_from"] = {
+								["Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Plainstrider"] = 58,
+							},
+							["aID"] = "4465-02B843FA",
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 58.007607,
+							["end_time"] = 1652882147,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 58.007607,
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Plainstrider"] = 45,
+										},
+										["n_dmg"] = 45,
+										["n_min"] = 11,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 45,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[8921] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Plainstrider"] = 13,
+										},
+										["n_dmg"] = 13,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 13,
+										["c_max"] = 0,
+										["id"] = 8921,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 5.835188311040027,
+							["custom"] = 0,
+							["last_event"] = 1652882146,
+							["damage_taken"] = 11.007607,
+							["start_time"] = 1652882136,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.005233,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 11,
+							},
+							["pets"] = {
+							},
+							["aID"] = "2955",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 11.005233,
+							["friendlyfire"] = {
+							},
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 11.005233,
+							["end_time"] = 1652882147,
+							["on_hold"] = false,
+							["nome"] = "Plainstrider",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Moolatz"] = 11,
+										},
+										["n_dmg"] = 11,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 11,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-4445-1-56-2955-000004F4ED",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1652882144,
+							["damage_taken"] = 58.005233,
+							["start_time"] = 1652882136,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 429,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 429,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 429,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["debuff_uptime"] = 6,
+							["tipo"] = 4,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8921] = {
+										["activedamt"] = 0,
+										["id"] = 8921,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[8921] = 1,
+							},
+							["nome"] = "Moolatz",
+							["classe"] = "DRUID",
+							["last_event"] = 1652882146,
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["aID"] = "4465-02B843FA",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 429,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 610510.394,
+				["tempo_start"] = 1652882136,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 7114,
+				["playing_solo"] = true,
+				["totals"] = {
+					69, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					58, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:55:48",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Plainstrider",
+				["TotalElapsedCombatTime"] = 11.19300000008661,
+				["CombatEndedAt"] = 610521.587,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 58.007607,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 610521.587,
+				["combat_id"] = 429,
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "15:55:37",
+				["start_time"] = 610510.394,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Plainstrider"] = 1,
+				},
+			}, -- [1]
+			{
+				{
+					["combatId"] = 428,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007539,
+							["damage_from"] = {
+								["Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Plainstrider"] = 55,
+							},
+							["total"] = 55.007539,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 55.007539,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1652882128,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[8921] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Plainstrider"] = 16,
+										},
+										["n_dmg"] = 16,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = 8921,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[5176] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Plainstrider"] = 39,
+										},
+										["n_dmg"] = 39,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 39,
+										["c_max"] = 0,
+										["id"] = 5176,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 8.795577070571294,
+							["custom"] = 0,
+							["last_event"] = 1652882128,
+							["damage_taken"] = 4.007539,
+							["start_time"] = 1652882122,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.00289,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 4,
+							},
+							["pets"] = {
+							},
+							["total"] = 4.00289,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 4.00289,
+							["friendlyfire"] = {
+							},
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1652882128,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Plainstrider",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Moolatz"] = 4,
+										},
+										["n_dmg"] = 4,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "2955",
+							["serial"] = "Creature-0-4445-1-56-2955-000004BA28",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1652882128,
+							["damage_taken"] = 55.00289,
+							["start_time"] = 1652882126,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 428,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 428,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 428,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["debuff_uptime"] = 0,
+							["tipo"] = 4,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8921] = {
+										["activedamt"] = -1,
+										["id"] = 8921,
+										["targets"] = {
+										},
+										["actived_at"] = 1652882128,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[5176] = 2,
+							},
+							["nome"] = "Moolatz",
+							["classe"] = "DRUID",
+							["last_event"] = 1652882128,
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["aID"] = "4465-02B843FA",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 428,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["tempo_start"] = 1652882122,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Plainstrider",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					59, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["TotalElapsedCombatTime"] = 610502.92,
+				["combat_counter"] = 7113,
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 55.007539,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 610502.92,
+				["player_last_events"] = {
+				},
+				["instance_type"] = "none",
+				["CombatEndedAt"] = 610502.92,
+				["data_inicio"] = "15:55:23",
+				["totals_grupo"] = {
+					55, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "15:55:29",
+				["combat_id"] = 428,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Plainstrider"] = 1,
+				},
+				["start_time"] = 610496.666,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [2]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 427,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005428,
+							["damage_from"] = {
+								["Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Plainstrider"] = 68,
+							},
+							["pets"] = {
+							},
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 68.005428,
+							["custom"] = 0,
+							["classe"] = "DRUID",
+							["dps_started"] = false,
+							["total"] = 68.005428,
+							["aID"] = "4465-02B843FA",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Plainstrider"] = 23,
+										},
+										["n_dmg"] = 23,
+										["n_min"] = 11,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 23,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[8921] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 7,
+										["targets"] = {
+											["Plainstrider"] = 15,
+										},
+										["n_dmg"] = 15,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = 8921,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 64,
+									},
+									[5176] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Plainstrider"] = 30,
+										},
+										["n_dmg"] = 30,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 30,
+										["c_max"] = 0,
+										["id"] = 5176,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1652880437,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["colocacao"] = 1,
+							["last_event"] = 1652880436,
+							["damage_taken"] = 7.005428,
+							["start_time"] = 1652880425,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 6.048152614755908,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.007876,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 7,
+							},
+							["pets"] = {
+							},
+							["aID"] = "2955",
+							["total"] = 7.007876,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 7.007876,
+							["delay"] = 0,
+							["fight_component"] = true,
+							["end_time"] = 1652880437,
+							["dps_started"] = false,
+							["damage_taken"] = 68.007876,
+							["nome"] = "Plainstrider",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Moolatz"] = 7,
+										},
+										["n_dmg"] = 7,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 7,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["on_hold"] = false,
+							["custom"] = 0,
+							["last_event"] = 1652880434,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1652880430,
+							["serial"] = "Creature-0-4445-1-56-2955-000004DAEC",
+							["friendlyfire_total"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 427,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 427,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 427,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["debuff_uptime"] = 8,
+							["aID"] = "4465-02B843FA",
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[8921] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 8921,
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Moolatz",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["last_event"] = 1652880436,
+							["debuff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[8921] = 1,
+								[5176] = 1,
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["classe"] = "DRUID",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 427,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 610496.283,
+				["tempo_start"] = 1652880425,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					75, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					68, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "15:27:17",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Plainstrider",
+				["TotalElapsedCombatTime"] = 608810.517,
+				["CombatEndedAt"] = 608810.517,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 68.005428,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 608810.517,
+				["combat_id"] = 427,
+				["frags"] = {
+					["Plainstrider"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["combat_counter"] = 7107,
+				["start_time"] = 608799.273,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "15:27:06",
+			}, -- [3]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 426,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006328,
+							["damage_from"] = {
+								["Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Plainstrider"] = 62,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 62.006328,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1652880419,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Plainstrider"] = 46,
+										},
+										["n_dmg"] = 46,
+										["n_min"] = 11,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 46,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[5176] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Plainstrider"] = 16,
+										},
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = 5176,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_dps"] = 4.996883552266456,
+							["total"] = 62.006328,
+							["colocacao"] = 1,
+							["last_event"] = 1652880418,
+							["damage_taken"] = 10.006328,
+							["start_time"] = 1652880406,
+							["serial"] = "Player-4465-02B843FA",
+							["friendlyfire_total"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.004427,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 10,
+							},
+							["pets"] = {
+							},
+							["end_time"] = 1652880419,
+							["damage_taken"] = 62.004427,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 10.004427,
+							["delay"] = 0,
+							["fight_component"] = true,
+							["total"] = 10.004427,
+							["aID"] = "2955",
+							["on_hold"] = false,
+							["nome"] = "Plainstrider",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Moolatz"] = 10,
+										},
+										["n_dmg"] = 10,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 10,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 4,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["dps_started"] = false,
+							["custom"] = 0,
+							["last_event"] = 1652880417,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1652880411,
+							["serial"] = "Creature-0-4445-1-56-2955-000004B9BF",
+							["classe"] = "UNKNOW",
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 426,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 426,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 426,
+					["_ActorTable"] = {
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 426,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 608797.59,
+				["tempo_start"] = 1652880406,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					72, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					62, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "15:26:59",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Plainstrider",
+				["TotalElapsedCombatTime"] = 608792.737,
+				["CombatEndedAt"] = 608792.737,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "15:26:46",
+				["end_time"] = 608792.737,
+				["combat_id"] = 426,
+				["frags"] = {
+					["Plainstrider"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 7106,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 608779.826,
+				["TimeData"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 62.006328,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+			}, -- [4]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 425,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00396,
+							["damage_from"] = {
+								["Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Plainstrider"] = 52,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 52.00396,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 52.00396,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Plainstrider"] = 11,
+										},
+										["n_dmg"] = 11,
+										["n_min"] = 11,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 11,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[8921] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Plainstrider"] = 12,
+										},
+										["n_dmg"] = 12,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 12,
+										["c_max"] = 0,
+										["id"] = 8921,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 64,
+									},
+									[5176] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Plainstrider"] = 29,
+										},
+										["n_dmg"] = 29,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 29,
+										["c_max"] = 0,
+										["id"] = 5176,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_dps"] = 8.73282283801276,
+							["end_time"] = 1652880399,
+							["colocacao"] = 1,
+							["last_event"] = 1652880398,
+							["damage_taken"] = 4.00396,
+							["start_time"] = 1652880393,
+							["serial"] = "Player-4465-02B843FA",
+							["friendlyfire_total"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.001512,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 4,
+							},
+							["pets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 52.001512,
+							["aID"] = "2955",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 4.001512,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["total"] = 4.001512,
+							["fight_component"] = true,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Plainstrider",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Moolatz"] = 4,
+										},
+										["n_dmg"] = 4,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["end_time"] = 1652880399,
+							["custom"] = 0,
+							["last_event"] = 1652880397,
+							["on_hold"] = false,
+							["start_time"] = 1652880393,
+							["serial"] = "Creature-0-4445-1-56-2955-000004BAC9",
+							["classe"] = "UNKNOW",
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 425,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 425,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 425,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["debuff_uptime"] = 4,
+							["aID"] = "4465-02B843FA",
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[8921] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 8921,
+										["uptime"] = 4,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["nome"] = "Moolatz",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["last_event"] = 1652880398,
+							["debuff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["spell_cast"] = {
+								[5176] = 2,
+								[8921] = 1,
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["classe"] = "DRUID",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 425,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 608778.559,
+				["tempo_start"] = 1652880393,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					56, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					52, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "15:26:39",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Plainstrider",
+				["TotalElapsedCombatTime"] = 6.439000000013039,
+				["CombatEndedAt"] = 608773.035,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "15:26:33",
+				["end_time"] = 608773.035,
+				["combat_id"] = 425,
+				["frags"] = {
+					["Plainstrider"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 7105,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 608766.596,
+				["TimeData"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Moolatz"] = 52.00396,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+			}, -- [5]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 424,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -19,23 +1732,23 @@ _detalhes_database = {
 							["targets"] = {
 								["Plainstrider"] = 64,
 							},
+							["serial"] = "Player-4465-02B843FA",
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
 							["classe"] = "DRUID",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 64.001635,
-							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1652865555,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
+							["total"] = 64.001635,
+							["damage_taken"] = 2.001635,
+							["last_event"] = 1652865554,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -122,17 +1835,17 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 64.001635,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 7.198474299898272,
+							["last_dps"] = 6.536114685446948,
+							["end_time"] = 1652865555,
 							["custom"] = 0,
-							["last_event"] = 1652865554,
-							["damage_taken"] = 2.001635,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1652865545,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -145,20 +1858,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["aID"] = "2955",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2.005985,
+							["serial"] = "Creature-0-4445-1-56-2955-000004B9E9",
+							["fight_component"] = true,
+							["total"] = 2.005985,
+							["end_time"] = 1652865555,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1652865555,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Plainstrider",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -190,42 +1903,41 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "2955",
-							["total"] = 2.005985,
-							["serial"] = "Creature-0-4445-1-56-2955-000004B9E9",
+							["last_event"] = 1652865552,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1652865552,
+							["tipo"] = 1,
 							["damage_taken"] = 64.005985,
 							["start_time"] = 1652865552,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 424,
 					["tipo"] = 3,
+					["combatId"] = 424,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 424,
 					["tipo"] = 7,
+					["combatId"] = 424,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 424,
 					["tipo"] = 9,
+					["combatId"] = 424,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["debuff_uptime"] = 0,
-							["tipo"] = 4,
+							["classe"] = "DRUID",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[8921] = {
 										["activedamt"] = -1,
@@ -240,6 +1952,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime_targets"] = {
 							},
@@ -247,8 +1960,8 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[5176] = 1,
 							},
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
-							["classe"] = "DRUID",
 							["last_event"] = 1652865554,
 							["pets"] = {
 							},
@@ -258,8 +1971,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 424,
 					["tipo"] = 2,
+					["combatId"] = 424,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -274,12 +1987,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Plainstrider",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7103,
 				["playing_solo"] = true,
 				["totals"] = {
 					66, -- [1]
@@ -294,19 +2002,28 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["TotalElapsedCombatTime"] = 593928.964,
-				["combat_counter"] = 7103,
+				["player_last_events"] = {
+				},
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:19:15",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Plainstrider",
+				["TotalElapsedCombatTime"] = 593928.964,
+				["CombatEndedAt"] = 593928.964,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -316,13 +2033,13 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -331,11 +2048,21 @@ _detalhes_database = {
 					},
 				},
 				["end_time"] = 593928.964,
-				["player_last_events"] = {
+				["combat_id"] = 424,
+				["frags"] = {
+					["Plainstrider"] = 1,
 				},
-				["instance_type"] = "none",
-				["CombatEndedAt"] = 593928.964,
+				["spells_cast_timeline"] = {
+				},
 				["data_inicio"] = "11:19:05",
+				["CombatSkillCache"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["start_time"] = 593919.172,
+				["TimeData"] = {
+				},
 				["totals_grupo"] = {
 					64, -- [1]
 					0, -- [2]
@@ -349,47 +2076,34 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "11:19:15",
-				["combat_id"] = 424,
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-				["start_time"] = 593919.172,
-				["TimeData"] = {
-				},
-				["pvp"] = true,
-			}, -- [1]
+			}, -- [6]
 			{
 				{
-					["combatId"] = 423,
 					["tipo"] = 2,
+					["combatId"] = 423,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.008197,
-							["aID"] = "4465-02B843FA",
 							["damage_from"] = {
 								["Plainstrider"] = true,
 							},
 							["targets"] = {
 								["Plainstrider"] = 43,
 							},
+							["serial"] = "Player-4465-02B843FA",
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["end_time"] = 1652865526,
+							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
@@ -397,12 +2111,11 @@ _detalhes_database = {
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["total"] = 43.008197,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["end_time"] = 1652865526,
+							["damage_taken"] = 3.008197,
+							["last_event"] = 1652865526,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[8921] = {
 										["c_amt"] = 0,
@@ -461,16 +2174,17 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
+							["total"] = 43.008197,
 							["last_dps"] = 7.122921000399352,
 							["custom"] = 0,
-							["last_event"] = 1652865526,
-							["damage_taken"] = 3.008197,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1652865520,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -481,22 +2195,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Moolatz"] = 3,
 							},
-							["aID"] = "2955",
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["classe"] = "UNKNOW",
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3.008522,
+							["serial"] = "Creature-0-4445-1-56-2955-0017844A25",
+							["fight_component"] = true,
 							["end_time"] = 1652865526,
-							["dps_started"] = false,
-							["total"] = 3.008522,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["aID"] = "2955",
+							["friendlyfire"] = {
+							},
 							["nome"] = "Plainstrider",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -527,42 +2241,41 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4445-1-56-2955-0017844A25",
+							["last_event"] = 1652865525,
+							["dps_started"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1652865525,
+							["tipo"] = 1,
 							["damage_taken"] = 43.008522,
 							["start_time"] = 1652865523,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 3.008522,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 423,
 					["tipo"] = 3,
+					["combatId"] = 423,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 423,
 					["tipo"] = 7,
+					["combatId"] = 423,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 423,
 					["tipo"] = 9,
+					["combatId"] = 423,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["debuff_uptime"] = 0,
-							["tipo"] = 4,
+							["classe"] = "DRUID",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[8921] = {
 										["activedamt"] = -1,
@@ -577,6 +2290,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime_targets"] = {
 							},
@@ -584,8 +2298,8 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[5176] = 2,
 							},
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
-							["classe"] = "DRUID",
 							["last_event"] = 1652865526,
 							["pets"] = {
 							},
@@ -595,8 +2309,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 423,
 					["tipo"] = 2,
+					["combatId"] = 423,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -627,15 +2341,60 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:18:47",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Plainstrider",
+				["TotalElapsedCombatTime"] = 593900.554,
+				["CombatEndedAt"] = 593900.554,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "11:18:40",
+				["end_time"] = 593900.554,
+				["combat_id"] = 423,
+				["spells_cast_timeline"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 43.008197,
+						}, -- [1]
+					},
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
 					43, -- [1]
@@ -650,69 +2409,25 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "11:18:47",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Plainstrider",
-				["TotalElapsedCombatTime"] = 593900.554,
-				["CombatEndedAt"] = 593900.554,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 43.008197,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 593900.554,
-				["combat_id"] = 423,
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["data_inicio"] = "11:18:40",
 				["start_time"] = 593893.9990000001,
 				["TimeData"] = {
 				},
 				["frags"] = {
 					["Plainstrider"] = 1,
 				},
-			}, -- [2]
+			}, -- [7]
 			{
 				{
-					["combatId"] = 422,
 					["tipo"] = 2,
+					["combatId"] = 422,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -722,24 +2437,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Plainstrider"] = 42,
 							},
-							["total"] = 42.004731,
+							["serial"] = "Player-4465-02B843FA",
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 42.004731,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
-							["end_time"] = 1652865462,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
+							["total"] = 42.004731,
+							["damage_taken"] = 0.004731,
+							["last_event"] = 1652865461,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[8921] = {
 										["c_amt"] = 0,
@@ -798,16 +2511,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
+							["end_time"] = 1652865462,
 							["last_dps"] = 11.34343262190437,
 							["custom"] = 0,
-							["last_event"] = 1652865461,
-							["damage_taken"] = 0.004731,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1652865458,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -819,58 +2534,57 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["aID"] = "2955",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.004978,
+							["serial"] = "Creature-0-4445-1-56-2955-001C044A25",
+							["fight_component"] = true,
+							["total"] = 0.004978,
+							["end_time"] = 1652865462,
 							["friendlyfire"] = {
 							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1652865462,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Plainstrider",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "2955",
-							["total"] = 0.004978,
-							["serial"] = "Creature-0-4445-1-56-2955-001C044A25",
+							["last_event"] = 0,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
+							["tipo"] = 1,
 							["damage_taken"] = 42.004978,
 							["start_time"] = 1652865462,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 422,
 					["tipo"] = 3,
+					["combatId"] = 422,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 422,
 					["tipo"] = 7,
+					["combatId"] = 422,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 422,
 					["tipo"] = 9,
+					["combatId"] = 422,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["debuff_uptime"] = 0,
-							["tipo"] = 4,
+							["classe"] = "DRUID",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[8921] = {
 										["activedamt"] = -1,
@@ -885,6 +2599,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime_targets"] = {
 							},
@@ -892,8 +2607,8 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[5176] = 1,
 							},
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
-							["classe"] = "DRUID",
 							["last_event"] = 1652865461,
 							["pets"] = {
 							},
@@ -903,8 +2618,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 422,
 					["tipo"] = 2,
+					["combatId"] = 422,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -935,15 +2650,60 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:17:43",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Plainstrider",
+				["TotalElapsedCombatTime"] = 593836.52,
+				["CombatEndedAt"] = 593836.52,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "11:17:38",
+				["end_time"] = 593836.52,
+				["combat_id"] = 422,
+				["spells_cast_timeline"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 42.004731,
+						}, -- [1]
+					},
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
 					42, -- [1]
@@ -958,84 +2718,40 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "11:17:43",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Plainstrider",
-				["TotalElapsedCombatTime"] = 593836.52,
-				["CombatEndedAt"] = 593836.52,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 42.004731,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 593836.52,
-				["combat_id"] = 422,
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["data_inicio"] = "11:17:38",
 				["start_time"] = 593831.933,
 				["TimeData"] = {
 				},
 				["frags"] = {
 					["Plainstrider"] = 1,
 				},
-			}, -- [3]
+			}, -- [8]
 			{
 				{
-					["combatId"] = 421,
 					["tipo"] = 2,
+					["combatId"] = 421,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.002832,
-							["aID"] = "4465-02B843FA",
 							["damage_from"] = {
 								["Plainstrider"] = true,
 							},
 							["targets"] = {
 								["Plainstrider"] = 49,
 							},
+							["serial"] = "Player-4465-02B843FA",
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["end_time"] = 1652865413,
+							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
@@ -1043,12 +2759,11 @@ _detalhes_database = {
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["total"] = 49.002832,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["end_time"] = 1652865413,
+							["damage_taken"] = 6.002832,
+							["last_event"] = 1652865413,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1107,16 +2822,17 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
+							["total"] = 49.002832,
 							["last_dps"] = 4.824063004502798,
 							["custom"] = 0,
-							["last_event"] = 1652865413,
-							["damage_taken"] = 6.002832,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1652865403,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -1127,22 +2843,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Moolatz"] = 6,
 							},
-							["aID"] = "2955",
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["classe"] = "UNKNOW",
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 6.001951,
+							["serial"] = "Creature-0-4445-1-56-2955-0000045004",
+							["fight_component"] = true,
 							["end_time"] = 1652865413,
-							["dps_started"] = false,
-							["total"] = 6.001951,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["aID"] = "2955",
+							["friendlyfire"] = {
+							},
 							["nome"] = "Plainstrider",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1173,43 +2889,43 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4445-1-56-2955-0000045004",
+							["last_event"] = 1652865412,
+							["dps_started"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1652865412,
+							["tipo"] = 1,
 							["damage_taken"] = 49.001951,
 							["start_time"] = 1652865406,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 6.001951,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 421,
 					["tipo"] = 3,
+					["combatId"] = 421,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 421,
 					["tipo"] = 7,
+					["combatId"] = 421,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 421,
 					["tipo"] = 9,
+					["combatId"] = 421,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
+							["classe"] = "DRUID",
 							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["pets"] = {
 							},
-							["classe"] = "DRUID",
 							["spell_cast"] = {
 								[5176] = 1,
 							},
@@ -1221,8 +2937,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 421,
 					["tipo"] = 2,
+					["combatId"] = 421,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1253,15 +2969,60 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:16:53",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Plainstrider",
+				["TotalElapsedCombatTime"] = 593787.0430000001,
+				["CombatEndedAt"] = 593787.0430000001,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "11:16:43",
+				["end_time"] = 593787.0430000001,
+				["combat_id"] = 421,
+				["spells_cast_timeline"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 49.002832,
+						}, -- [1]
+					},
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
 					49, -- [1]
@@ -1276,69 +3037,25 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "11:16:53",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Plainstrider",
-				["TotalElapsedCombatTime"] = 593787.0430000001,
-				["CombatEndedAt"] = 593787.0430000001,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 49.002832,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 593787.0430000001,
-				["combat_id"] = 421,
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["data_inicio"] = "11:16:43",
 				["start_time"] = 593776.885,
 				["TimeData"] = {
 				},
 				["frags"] = {
 					["Plainstrider"] = 1,
 				},
-			}, -- [4]
+			}, -- [9]
 			{
 				{
-					["combatId"] = 420,
 					["tipo"] = 2,
+					["combatId"] = 420,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -1349,24 +3066,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Plainstrider"] = 45,
 							},
-							["total"] = 45.003476,
+							["serial"] = "Player-4465-02B843FA",
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 45.003476,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
-							["end_time"] = 1652865393,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
+							["total"] = 45.003476,
+							["damage_taken"] = 2.003476,
+							["last_event"] = 1652865393,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[8921] = {
 										["c_amt"] = 0,
@@ -1425,16 +3140,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
+							["end_time"] = 1652865393,
 							["last_dps"] = 7.351106827865354,
 							["custom"] = 0,
-							["last_event"] = 1652865393,
-							["damage_taken"] = 2.003476,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1652865387,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -1447,21 +3164,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 2.006956,
 							["classe"] = "UNKNOW",
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2.006956,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4445-1-56-2955-0015044A25",
 							["dps_started"] = false,
-							["end_time"] = 1652865393,
+							["total"] = 2.006956,
+							["fight_component"] = true,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Plainstrider",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1492,41 +3208,41 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "2955",
-							["serial"] = "Creature-0-4445-1-56-2955-0015044A25",
+							["last_event"] = 1652865392,
+							["end_time"] = 1652865393,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1652865392,
+							["tipo"] = 1,
 							["damage_taken"] = 45.006956,
 							["start_time"] = 1652865390,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["aID"] = "2955",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 420,
 					["tipo"] = 3,
+					["combatId"] = 420,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 420,
 					["tipo"] = 7,
+					["combatId"] = 420,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 420,
 					["tipo"] = 9,
+					["combatId"] = 420,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["debuff_uptime"] = 0,
-							["tipo"] = 4,
+							["classe"] = "DRUID",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[8921] = {
 										["activedamt"] = -1,
@@ -1541,6 +3257,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime_targets"] = {
 							},
@@ -1548,8 +3265,8 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[5176] = 2,
 							},
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
-							["classe"] = "DRUID",
 							["last_event"] = 1652865393,
 							["pets"] = {
 							},
@@ -1559,8 +3276,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 420,
 					["tipo"] = 2,
+					["combatId"] = 420,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1591,15 +3308,60 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:16:33",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Plainstrider",
+				["TotalElapsedCombatTime"] = 6.121999999973923,
+				["CombatEndedAt"] = 593767.13,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "11:16:27",
+				["end_time"] = 593767.13,
+				["combat_id"] = 420,
+				["spells_cast_timeline"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 45.003476,
+						}, -- [1]
+					},
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
 					45, -- [1]
@@ -1614,69 +3376,25 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "11:16:33",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Plainstrider",
-				["TotalElapsedCombatTime"] = 6.121999999973923,
-				["CombatEndedAt"] = 593767.13,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 45.003476,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 593767.13,
-				["combat_id"] = 420,
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["data_inicio"] = "11:16:27",
 				["start_time"] = 593761.008,
 				["TimeData"] = {
 				},
 				["frags"] = {
 					["Plainstrider"] = 1,
 				},
-			}, -- [5]
+			}, -- [10]
 			{
 				{
-					["combatId"] = 419,
 					["tipo"] = 2,
+					["combatId"] = 419,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -1687,24 +3405,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Plainstrider"] = 44,
 							},
-							["total"] = 44.005514,
+							["serial"] = "Player-4465-02B843FA",
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 44.005514,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
-							["end_time"] = 1652865365,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
+							["total"] = 44.005514,
+							["damage_taken"] = 3.005514,
+							["last_event"] = 1652865364,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[8921] = {
 										["c_amt"] = 0,
@@ -1751,10 +3467,10 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 5176,
 										["r_dmg"] = 0,
-										["RESIST"] = 1,
 										["spellschool"] = 8,
 										["extra"] = {
 										},
+										["RESIST"] = 1,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
@@ -1764,16 +3480,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
+							["end_time"] = 1652865365,
 							["last_dps"] = 7.188094413620948,
 							["custom"] = 0,
-							["last_event"] = 1652865364,
-							["damage_taken"] = 3.005514,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1652865358,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -1786,21 +3504,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 3.006137,
 							["classe"] = "UNKNOW",
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3.006137,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4445-1-56-2955-0000044FF4",
 							["dps_started"] = false,
-							["end_time"] = 1652865365,
+							["total"] = 3.006137,
+							["fight_component"] = true,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Plainstrider",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1831,41 +3548,41 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "2955",
-							["serial"] = "Creature-0-4445-1-56-2955-0000044FF4",
+							["last_event"] = 1652865363,
+							["end_time"] = 1652865365,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1652865363,
+							["tipo"] = 1,
 							["damage_taken"] = 44.006137,
 							["start_time"] = 1652865361,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["aID"] = "2955",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 419,
 					["tipo"] = 3,
+					["combatId"] = 419,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 419,
 					["tipo"] = 7,
+					["combatId"] = 419,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 419,
 					["tipo"] = 9,
+					["combatId"] = 419,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["debuff_uptime"] = 0,
-							["tipo"] = 4,
+							["classe"] = "DRUID",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[8921] = {
 										["activedamt"] = -1,
@@ -1880,6 +3597,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime_targets"] = {
 							},
@@ -1887,8 +3605,8 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[5176] = 2,
 							},
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
-							["classe"] = "DRUID",
 							["last_event"] = 1652865364,
 							["pets"] = {
 							},
@@ -1898,8 +3616,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 419,
 					["tipo"] = 2,
+					["combatId"] = 419,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1914,12 +3632,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Plainstrider",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 7098,
 				["playing_solo"] = true,
 				["totals"] = {
 					47, -- [1]
@@ -1934,19 +3647,28 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["TotalElapsedCombatTime"] = 593738.7390000001,
-				["combat_counter"] = 7098,
+				["player_last_events"] = {
+				},
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:16:05",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Plainstrider",
+				["TotalElapsedCombatTime"] = 593738.7390000001,
+				["CombatEndedAt"] = 593738.7390000001,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -1956,13 +3678,13 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -1971,11 +3693,21 @@ _detalhes_database = {
 					},
 				},
 				["end_time"] = 593738.7390000001,
-				["player_last_events"] = {
+				["combat_id"] = 419,
+				["frags"] = {
+					["Plainstrider"] = 1,
 				},
-				["instance_type"] = "none",
-				["CombatEndedAt"] = 593738.7390000001,
+				["spells_cast_timeline"] = {
+				},
 				["data_inicio"] = "11:15:59",
+				["CombatSkillCache"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["start_time"] = 593732.366,
+				["TimeData"] = {
+				},
 				["totals_grupo"] = {
 					44, -- [1]
 					0, -- [2]
@@ -1989,32 +3721,19 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "11:16:05",
-				["combat_id"] = 419,
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-				["start_time"] = 593732.366,
-				["TimeData"] = {
-				},
-				["pvp"] = true,
-			}, -- [6]
+			}, -- [11]
 			{
 				{
-					["combatId"] = 418,
 					["tipo"] = 2,
+					["combatId"] = 418,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -2025,24 +3744,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Plainstrider"] = 53,
 							},
-							["total"] = 53.007003,
+							["serial"] = "Player-4465-02B843FA",
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 53.007003,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["dps_started"] = false,
-							["end_time"] = 1652865333,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
+							["total"] = 53.007003,
+							["damage_taken"] = 1.007003,
+							["last_event"] = 1652865332,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[8921] = {
 										["c_amt"] = 0,
@@ -2101,16 +3818,18 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
+							["end_time"] = 1652865333,
 							["last_dps"] = 8.778900794879911,
 							["custom"] = 0,
-							["last_event"] = 1652865332,
-							["damage_taken"] = 1.007003,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1652865326,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -2123,21 +3842,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 1.00528,
 							["classe"] = "UNKNOW",
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1.00528,
-							["friendlyfire"] = {
-							},
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4445-1-56-2955-0016844A25",
 							["dps_started"] = false,
-							["end_time"] = 1652865333,
+							["total"] = 1.00528,
+							["fight_component"] = true,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Plainstrider",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -2168,41 +3886,41 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "2955",
-							["serial"] = "Creature-0-4445-1-56-2955-0016844A25",
+							["last_event"] = 1652865331,
+							["end_time"] = 1652865333,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1652865331,
+							["tipo"] = 1,
 							["damage_taken"] = 53.00528,
 							["start_time"] = 1652865331,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["aID"] = "2955",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 418,
 					["tipo"] = 3,
+					["combatId"] = 418,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 418,
 					["tipo"] = 7,
+					["combatId"] = 418,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 418,
 					["tipo"] = 9,
+					["combatId"] = 418,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["debuff_uptime"] = 0,
-							["tipo"] = 4,
+							["classe"] = "DRUID",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[8921] = {
 										["activedamt"] = -1,
@@ -2217,6 +3935,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime_targets"] = {
 							},
@@ -2224,8 +3943,8 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[5176] = 2,
 							},
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
-							["classe"] = "DRUID",
 							["last_event"] = 1652865332,
 							["pets"] = {
 							},
@@ -2235,8 +3954,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 418,
 					["tipo"] = 2,
+					["combatId"] = 418,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -2267,15 +3986,60 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:15:33",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Plainstrider",
+				["TotalElapsedCombatTime"] = 593707.096,
+				["CombatEndedAt"] = 593707.096,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "11:15:27",
+				["end_time"] = 593707.096,
+				["combat_id"] = 418,
+				["spells_cast_timeline"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 53.007003,
+						}, -- [1]
+					},
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
 					53, -- [1]
@@ -2290,84 +4054,40 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "11:15:33",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Plainstrider",
-				["TotalElapsedCombatTime"] = 593707.096,
-				["CombatEndedAt"] = 593707.096,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 53.007003,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 593707.096,
-				["combat_id"] = 418,
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["data_inicio"] = "11:15:27",
 				["start_time"] = 593700.608,
 				["TimeData"] = {
 				},
 				["frags"] = {
 					["Plainstrider"] = 1,
 				},
-			}, -- [7]
+			}, -- [12]
 			{
 				{
-					["combatId"] = 417,
 					["tipo"] = 2,
+					["combatId"] = 417,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.006737,
-							["aID"] = "4465-02B843FA",
 							["damage_from"] = {
 								["Plainstrider"] = true,
 							},
 							["targets"] = {
 								["Plainstrider"] = 43,
 							},
+							["serial"] = "Player-4465-02B843FA",
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["end_time"] = 1652865291,
+							["friendlyfire_total"] = 0,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
@@ -2375,12 +4095,11 @@ _detalhes_database = {
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["total"] = 43.006737,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["end_time"] = 1652865291,
+							["damage_taken"] = 3.006737,
+							["last_event"] = 1652865291,
 							["nome"] = "Moolatz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[8921] = {
 										["c_amt"] = 0,
@@ -2439,16 +4158,17 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
+							["total"] = 43.006737,
 							["last_dps"] = 7.123859036069192,
 							["custom"] = 0,
-							["last_event"] = 1652865291,
-							["damage_taken"] = 3.006737,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1652865285,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -2459,22 +4179,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Moolatz"] = 3,
 							},
-							["aID"] = "2955",
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["classe"] = "UNKNOW",
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3.004049,
+							["serial"] = "Creature-0-4445-1-56-2955-0000044FE0",
+							["fight_component"] = true,
 							["end_time"] = 1652865291,
-							["dps_started"] = false,
-							["total"] = 3.004049,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["aID"] = "2955",
+							["friendlyfire"] = {
+							},
 							["nome"] = "Plainstrider",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -2505,42 +4225,41 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4445-1-56-2955-0000044FE0",
+							["last_event"] = 1652865290,
+							["dps_started"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1652865290,
+							["tipo"] = 1,
 							["damage_taken"] = 43.004049,
 							["start_time"] = 1652865288,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 3.004049,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 417,
 					["tipo"] = 3,
+					["combatId"] = 417,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 417,
 					["tipo"] = 7,
+					["combatId"] = 417,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 417,
 					["tipo"] = 9,
+					["combatId"] = 417,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["debuff_uptime"] = 0,
-							["tipo"] = 4,
+							["classe"] = "DRUID",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[8921] = {
 										["activedamt"] = -1,
@@ -2555,6 +4274,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime_targets"] = {
 							},
@@ -2562,8 +4282,8 @@ _detalhes_database = {
 							["spell_cast"] = {
 								[5176] = 1,
 							},
+							["tipo"] = 4,
 							["nome"] = "Moolatz",
-							["classe"] = "DRUID",
 							["last_event"] = 1652865291,
 							["pets"] = {
 							},
@@ -2573,8 +4293,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 417,
 					["tipo"] = 2,
+					["combatId"] = 417,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -2605,15 +4325,60 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "11:14:52",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Plainstrider",
+				["TotalElapsedCombatTime"] = 593665.277,
+				["CombatEndedAt"] = 593665.277,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "11:14:45",
+				["end_time"] = 593665.277,
+				["combat_id"] = 417,
+				["spells_cast_timeline"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 43.006737,
+						}, -- [1]
+					},
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
 					43, -- [1]
@@ -2628,65 +4393,21 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "11:14:52",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Plainstrider",
-				["TotalElapsedCombatTime"] = 593665.277,
-				["CombatEndedAt"] = 593665.277,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 43.006737,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 593665.277,
-				["combat_id"] = 417,
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["data_inicio"] = "11:14:45",
 				["start_time"] = 593659.1240000001,
 				["TimeData"] = {
 				},
 				["frags"] = {
 					["Plainstrider"] = 1,
 				},
-			}, -- [8]
+			}, -- [13]
 			{
 				{
 					["tipo"] = 2,
@@ -2701,19 +4422,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Plainstrider"] = 47,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["custom"] = 0,
+							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 47.007418,
-							["custom"] = 0,
-							["tipo"] = 1,
+							["damage_taken"] = 3.007418,
 							["dps_started"] = false,
 							["total"] = 47.007418,
-							["classe"] = "DRUID",
-							["aID"] = "4465-02B843FA",
+							["on_hold"] = false,
+							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2778,7 +4500,6 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["end_time"] = 1652815496,
-							["damage_taken"] = 3.007418,
 							["last_dps"] = 4.757835829957272,
 							["colocacao"] = 1,
 							["last_event"] = 1652815496,
@@ -2786,7 +4507,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1652815487,
 							["serial"] = "Player-4465-02B843FA",
-							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -2799,16 +4520,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["tipo"] = 1,
-							["total"] = 3.004437,
 							["classe"] = "UNKNOW",
+							["end_time"] = 1652815496,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3.004437,
 							["delay"] = 0,
+							["dps_started"] = false,
+							["total"] = 3.004437,
 							["fight_component"] = true,
-							["end_time"] = 1652815496,
-							["friendlyfire_total"] = 0,
 							["damage_taken"] = 47.004437,
 							["nome"] = "Plainstrider",
 							["spells"] = {
@@ -2844,7 +4565,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["aID"] = "2955",
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["on_hold"] = false,
 							["custom"] = 0,
@@ -2853,7 +4574,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1652815490,
 							["serial"] = "Creature-0-4469-1-30-2955-000003EB73",
-							["dps_started"] = false,
+							["aID"] = "2955",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -2953,6 +4674,12 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "21:24:47",
+				["end_time"] = 84846.144,
+				["combat_id"] = 416,
+				["frags"] = {
+					["Plainstrider"] = 1,
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -2972,11 +4699,6 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 84846.144,
-				["combat_id"] = 416,
-				["spells_cast_timeline"] = {
-				},
-				["data_inicio"] = "21:24:47",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -2987,10 +4709,9 @@ _detalhes_database = {
 				["start_time"] = 84836.264,
 				["TimeData"] = {
 				},
-				["frags"] = {
-					["Plainstrider"] = 1,
+				["spells_cast_timeline"] = {
 				},
-			}, -- [9]
+			}, -- [14]
 			{
 				{
 					["tipo"] = 2,
@@ -3009,16 +4730,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["tipo"] = 1,
 							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 59.001366,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 10.001366,
 							["dps_started"] = false,
 							["end_time"] = 1652815382,
-							["damage_taken"] = 10.001366,
 							["on_hold"] = false,
+							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3105,17 +4826,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["tipo"] = 1,
+							["total"] = 13.008272,
 							["friendlyfire"] = {
 							},
-							["aID"] = "2955",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 13.008272,
 							["delay"] = 1652815417,
 							["fight_component"] = true,
 							["end_time"] = 1652815487,
-							["total"] = 13.008272,
+							["aID"] = "2955",
 							["damage_taken"] = 133.008272,
 							["nome"] = "Plainstrider",
 							["spells"] = {
@@ -3152,7 +4873,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire_total"] = 0,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["dps_started"] = false,
 							["custom"] = 0,
@@ -3160,7 +4881,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1652815441,
 							["serial"] = "Creature-0-4469-1-30-2955-000003F513",
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3262,22 +4983,6 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "21:22:51",
-				["end_time"] = 84731.825,
-				["combat_id"] = 415,
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["combat_counter"] = 7093,
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-				["start_time"] = 84720.66,
-				["TimeData"] = {
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -3297,7 +5002,23 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-			}, -- [10]
+				["end_time"] = 84731.825,
+				["combat_id"] = 415,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Plainstrider"] = 1,
+				},
+				["combat_counter"] = 7093,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 84720.66,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "21:22:51",
+			}, -- [15]
 			{
 				{
 					["tipo"] = 2,
@@ -3314,17 +5035,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["tipo"] = 1,
+							["total"] = 6.008471,
 							["friendlyfire"] = {
 							},
-							["aID"] = "2955",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 6.008471,
 							["delay"] = 0,
 							["fight_component"] = true,
 							["end_time"] = 1652814941,
-							["total"] = 6.008471,
+							["aID"] = "2955",
 							["damage_taken"] = 50.008471,
 							["nome"] = "Plainstrider",
 							["spells"] = {
@@ -3361,7 +5082,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire_total"] = 0,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["dps_started"] = false,
 							["custom"] = 0,
@@ -3369,7 +5090,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1652814932,
 							["serial"] = "Creature-0-4469-1-30-2955-000003E874",
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -3384,16 +5105,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["tipo"] = 1,
 							["aID"] = "4465-02B843FA",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 50.008249,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 6.008249,
 							["dps_started"] = false,
 							["end_time"] = 1652814941,
-							["damage_taken"] = 6.008249,
 							["on_hold"] = false,
+							["tipo"] = 1,
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3567,22 +5288,6 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "21:15:32",
-				["end_time"] = 84290.759,
-				["combat_id"] = 414,
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["combat_counter"] = 7092,
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-				["start_time"] = 84281.406,
-				["TimeData"] = {
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -3602,7 +5307,23 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-			}, -- [11]
+				["end_time"] = 84290.759,
+				["combat_id"] = 414,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Plainstrider"] = 1,
+				},
+				["combat_counter"] = 7092,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 84281.406,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "21:15:32",
+			}, -- [16]
 			{
 				{
 					["tipo"] = 2,
@@ -3621,14 +5342,14 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["last_dps"] = 5.636150673138006,
-							["classe"] = "DRUID",
+							["total"] = 72.007461,
+							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 72.007461,
-							["end_time"] = 1652807283,
+							["last_dps"] = 5.636150673138006,
 							["dps_started"] = false,
-							["total"] = 72.007461,
+							["end_time"] = 1652807283,
 							["on_hold"] = false,
 							["last_event"] = 1652807283,
 							["nome"] = "Moolatz",
@@ -3702,7 +5423,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1652807270,
 							["delay"] = 0,
-							["aID"] = "4465-02B843FA",
+							["classe"] = "DRUID",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -3852,13 +5573,31 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "19:07:50",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 72.007461,
+						}, -- [1]
+					},
+				},
 				["end_time"] = 76632.485,
 				["combat_id"] = 413,
-				["spells_cast_timeline"] = {
-				},
 				["frags"] = {
 					["Plainstrider"] = 1,
+				},
+				["spells_cast_timeline"] = {
 				},
 				["combat_counter"] = 7090,
 				["CombatSkillCache"] = {
@@ -3887,26 +5626,8 @@ _detalhes_database = {
 				["start_time"] = 76619.709,
 				["TimeData"] = {
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 72.007461,
-						}, -- [1]
-					},
-				},
-			}, -- [12]
+				["data_inicio"] = "19:07:50",
+			}, -- [17]
 			{
 				{
 					["tipo"] = 2,
@@ -3925,13 +5646,13 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
 							["classe"] = "DRUID",
+							["aID"] = "4465-02B843FA",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 46.002492,
-							["aID"] = "4465-02B843FA",
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
 							["total"] = 46.002492,
 							["on_hold"] = false,
@@ -4019,16 +5740,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 46.001555,
 							["aID"] = "2955",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 5.001555,
 							["serial"] = "Creature-0-4469-1-30-2955-000003777E",
-							["fight_component"] = true,
+							["dps_started"] = false,
 							["total"] = 5.001555,
-							["damage_taken"] = 46.001555,
+							["fight_component"] = true,
 							["friendlyfire"] = {
 							},
 							["nome"] = "Plainstrider",
@@ -4154,11 +5875,6 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "19:05:40",
-				["end_time"] = 76499.08,
-				["combat_id"] = 412,
-				["spells_cast_timeline"] = {
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -4178,6 +5894,12 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 76499.08,
+				["combat_id"] = 412,
+				["frags"] = {
+					["Plainstrider"] = 1,
+				},
+				["data_inicio"] = "19:05:40",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -4205,2446 +5927,6 @@ _detalhes_database = {
 					}, -- [4]
 				},
 				["start_time"] = 76489.669,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-			}, -- [13]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 411,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.00718,
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 15,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["friendlyfire_total"] = 0,
-							["aID"] = "2955",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 15.00718,
-							["serial"] = "Creature-0-4469-1-30-2955-000003D4A2",
-							["fight_component"] = true,
-							["end_time"] = 1652807021,
-							["damage_taken"] = 59.00718,
-							["on_hold"] = false,
-							["nome"] = "Plainstrider",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Moolatz"] = 15,
-										},
-										["n_dmg"] = 15,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 15,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1652807018,
-							["dps_started"] = false,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1652807006,
-							["delay"] = 0,
-							["total"] = 15.00718,
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007908,
-							["damage_from"] = {
-								["Plainstrider"] = true,
-							},
-							["targets"] = {
-								["Plainstrider"] = 59,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["classe"] = "DRUID",
-							["aID"] = "4465-02B843FA",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 59.007908,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1652807021,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1652807019,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Plainstrider"] = 45,
-										},
-										["n_dmg"] = 45,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 45,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[5176] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 14,
-										["targets"] = {
-											["Plainstrider"] = 14,
-										},
-										["n_dmg"] = 14,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 14,
-										["c_max"] = 0,
-										["id"] = 5176,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 59.007908,
-							["last_dps"] = 4.443032000601469,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 15.007908,
-							["start_time"] = 1652807008,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 411,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 411,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 411,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["tipo"] = 4,
-							["nome"] = "Moolatz",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[5176] = 1,
-							},
-							["aID"] = "4465-02B843FA",
-							["classe"] = "DRUID",
-							["serial"] = "Player-4465-02B843FA",
-							["last_event"] = 0,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 411,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 76488.696,
-				["tempo_start"] = 1652807006,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 7088,
-				["playing_solo"] = true,
-				["totals"] = {
-					74, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:03:41",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Plainstrider",
-				["TotalElapsedCombatTime"] = 76370.47,
-				["CombatEndedAt"] = 76370.47,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:03:27",
-				["end_time"] = 76370.47,
-				["combat_id"] = 411,
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 59.007908,
-						}, -- [1]
-					},
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					59, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 76355.939,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-			}, -- [14]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 410,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008383,
-							["damage_from"] = {
-								["Plainstrider"] = true,
-							},
-							["targets"] = {
-								["Plainstrider"] = 46,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["classe"] = "DRUID",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 46.008383,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 46.008383,
-							["damage_taken"] = 3.008383,
-							["tipo"] = 1,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Plainstrider"] = 33,
-										},
-										["n_dmg"] = 33,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 33,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[5176] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Plainstrider"] = 13,
-										},
-										["n_dmg"] = 13,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 13,
-										["c_max"] = 0,
-										["id"] = 5176,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1652806637,
-							["last_dps"] = 4.785560952776505,
-							["colocacao"] = 1,
-							["last_event"] = 1652807003,
-							["on_hold"] = false,
-							["start_time"] = 1652806627,
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.006498,
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 3,
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1652806637,
-							["friendlyfire_total"] = 0,
-							["aID"] = "2955",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 3.006498,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 3.006498,
-							["fight_component"] = true,
-							["damage_taken"] = 46.006498,
-							["nome"] = "Plainstrider",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2,
-										["targets"] = {
-											["Moolatz"] = 3,
-										},
-										["n_dmg"] = 3,
-										["n_min"] = 1,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 3,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 2,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["on_hold"] = false,
-							["custom"] = 0,
-							["last_event"] = 1652806634,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1652806630,
-							["serial"] = "Creature-0-4469-1-30-2955-000002BEB7",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 410,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 410,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 410,
-					["_ActorTable"] = {
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 410,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 76351.482,
-				["tempo_start"] = 1652806627,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 7086,
-				["playing_solo"] = true,
-				["totals"] = {
-					49, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					46, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "18:57:17",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Plainstrider",
-				["TotalElapsedCombatTime"] = 76006.318,
-				["CombatEndedAt"] = 76006.318,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "18:57:08",
-				["end_time"] = 76006.318,
-				["combat_id"] = 410,
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Moolatz"] = 46.008383,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 75996.704,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [15]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 409,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003695,
-							["damage_from"] = {
-								["Plainstrider"] = true,
-							},
-							["targets"] = {
-								["Plainstrider"] = 50,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["aID"] = "4465-02B843FA",
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 50.003695,
-							["damage_taken"] = 5.003695,
-							["dps_started"] = false,
-							["total"] = 50.003695,
-							["on_hold"] = false,
-							["last_event"] = 1652782881,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Plainstrider"] = 36,
-										},
-										["n_dmg"] = 36,
-										["n_min"] = 12,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 36,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[5176] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 14,
-										["targets"] = {
-											["Plainstrider"] = 14,
-										},
-										["n_dmg"] = 14,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 14,
-										["c_max"] = 0,
-										["id"] = 5176,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 5.115467519169402,
-							["end_time"] = 1652782882,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1652782872,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.007776,
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 5,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 5.007776,
-							["serial"] = "Creature-0-4469-1-30-2955-000002A548",
-							["dps_started"] = false,
-							["end_time"] = 1652782882,
-							["total"] = 5.007776,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Plainstrider",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2,
-										["targets"] = {
-											["Moolatz"] = 5,
-										},
-										["n_dmg"] = 5,
-										["n_min"] = 1,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 5,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1652782879,
-							["on_hold"] = false,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 50.007776,
-							["start_time"] = 1652782875,
-							["delay"] = 0,
-							["aID"] = "2955",
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 409,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorb"] = 0.007468,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-								["Moolatz"] = 8,
-							},
-							["targets"] = {
-							},
-							["heal_enemy_amt"] = 0,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.007468,
-							["healing_from"] = {
-							},
-							["healing_taken"] = 0.007468,
-							["totalover"] = 8.007468,
-							["total_without_pet"] = 0.007468,
-							["iniciar_hps"] = false,
-							["start_time"] = 1652782875,
-							["aID"] = "4465-02B843FA",
-							["total"] = 0.007468,
-							["end_time"] = 1652782882,
-							["classe"] = "DRUID",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["_ActorTable"] = {
-									[774] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Moolatz"] = 8,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Moolatz"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 8,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 774,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 0,
-										["totaldenied"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["delay"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1652782875,
-							["on_hold"] = false,
-							["totaldenied"] = 0.007468,
-							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 409,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 409,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 3,
-							["classe"] = "DRUID",
-							["pets"] = {
-							},
-							["last_event"] = 1652782875,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[774] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 3,
-										["id"] = 774,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 409,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 75995.531,
-				["tempo_start"] = 1652782872,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					55, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "12:21:22",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Plainstrider",
-				["TotalElapsedCombatTime"] = 511254.935,
-				["CombatEndedAt"] = 511254.935,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Moolatz"] = 0.007468,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 50.003695,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 511254.935,
-				["combat_id"] = 409,
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["combat_counter"] = 7084,
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					50, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 511245.16,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "12:21:13",
-			}, -- [16]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 408,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001934,
-							["damage_from"] = {
-								["Plainstrider"] = true,
-							},
-							["targets"] = {
-								["Plainstrider"] = 42,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["aID"] = "4465-02B843FA",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 42.001934,
-							["damage_taken"] = 2.001934,
-							["dps_started"] = false,
-							["total"] = 42.001934,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1652782854,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["_ActorTable"] = {
-									[8921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Plainstrider"] = 13,
-										},
-										["n_dmg"] = 13,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 13,
-										["c_max"] = 0,
-										["id"] = 8921,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[5176] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 15,
-										["targets"] = {
-											["Plainstrider"] = 29,
-										},
-										["n_dmg"] = 29,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 29,
-										["c_max"] = 0,
-										["id"] = 5176,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1652782856,
-							["last_dps"] = 11.93575845400678,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1652782851,
-							["delay"] = 0,
-							["classe"] = "DRUID",
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.0019,
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 2,
-							},
-							["pets"] = {
-							},
-							["aID"] = "2955",
-							["on_hold"] = false,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 2.0019,
-							["serial"] = "Creature-0-4469-1-30-2955-00000356EA",
-							["dps_started"] = false,
-							["total"] = 2.0019,
-							["fight_component"] = true,
-							["damage_taken"] = 42.0019,
-							["nome"] = "Plainstrider",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2,
-										["targets"] = {
-											["Moolatz"] = 2,
-										},
-										["n_dmg"] = 2,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 2,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1652782854,
-							["end_time"] = 1652782856,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1652782854,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 408,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 408,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 408,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["debuff_uptime"] = 0,
-							["classe"] = "DRUID",
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8921] = {
-										["activedamt"] = -1,
-										["id"] = 8921,
-										["targets"] = {
-										},
-										["actived_at"] = 1652782854,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[5176] = 1,
-							},
-							["tipo"] = 4,
-							["nome"] = "Moolatz",
-							["last_event"] = 1652782854,
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 408,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 511243.993,
-				["tempo_start"] = 1652782851,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 7083,
-				["playing_solo"] = true,
-				["totals"] = {
-					44, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "12:20:56",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Plainstrider",
-				["TotalElapsedCombatTime"] = 511229.013,
-				["CombatEndedAt"] = 511229.013,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 42.001934,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 511229.013,
-				["combat_id"] = 408,
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-				["data_inicio"] = "12:20:51",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					42, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 511223.924,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [17]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 407,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = "0x514",
-							["totalabsorbed"] = 0.00701,
-							["damage_from"] = {
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 46537137,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.00701,
-							["classe"] = "WARRIOR",
-							["serial"] = "0x0000-0000-0000",
-							["dps_started"] = false,
-							["end_time"] = 1652782851,
-							["damage_taken"] = 58666707,
-							["total"] = 13976737.26117356,
-							["nome"] = "Orman of Stromgarde",
-							["spec"] = 73,
-							["grupo"] = true,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["last_dps"] = 38447.48481870326,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1652782851,
-							["delay"] = 0,
-							["on_hold"] = false,
-						}, -- [1]
-						{
-							["flag_original"] = "0x514",
-							["totalabsorbed"] = 0.008926,
-							["damage_from"] = {
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 19516727,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008926,
-							["classe"] = "MAGE",
-							["serial"] = "0x0000-0000-0000",
-							["dps_started"] = false,
-							["end_time"] = 1652782851,
-							["damage_taken"] = 41025789,
-							["total"] = 9113280.98463356,
-							["nome"] = "Archmage Trelane",
-							["spec"] = 64,
-							["grupo"] = true,
-							["tipo"] = 1,
-							["colocacao"] = 2,
-							["last_dps"] = 25521.39268248804,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1652782851,
-							["delay"] = 0,
-							["on_hold"] = false,
-						}, -- [2]
-						{
-							["flag_original"] = "0x514",
-							["totalabsorbed"] = 0.003284,
-							["damage_from"] = {
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 10408691,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.003284,
-							["classe"] = "ROGUE",
-							["serial"] = "0x0000-0000-0000",
-							["dps_started"] = false,
-							["end_time"] = 1652782851,
-							["damage_taken"] = 15620288,
-							["total"] = 8614168.982286124,
-							["nome"] = "Lisa Gallywix",
-							["spec"] = 259,
-							["grupo"] = true,
-							["tipo"] = 1,
-							["colocacao"] = 3,
-							["last_dps"] = 22607.94328516346,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1652782851,
-							["delay"] = 0,
-							["on_hold"] = false,
-						}, -- [3]
-						{
-							["flag_original"] = "0x514",
-							["totalabsorbed"] = 0.006794,
-							["damage_from"] = {
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 38360247,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.006794,
-							["classe"] = "DEATHKNIGHT",
-							["serial"] = "0x0000-0000-0000",
-							["dps_started"] = false,
-							["end_time"] = 1652782851,
-							["damage_taken"] = 45515519,
-							["total"] = 8134511.068259004,
-							["nome"] = "Baron Rivendare",
-							["spec"] = 250,
-							["grupo"] = true,
-							["tipo"] = 1,
-							["colocacao"] = 4,
-							["last_dps"] = 22053.35162843766,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1652782851,
-							["delay"] = 0,
-							["on_hold"] = false,
-						}, -- [4]
-						{
-							["flag_original"] = "0x514",
-							["totalabsorbed"] = 0.001822,
-							["damage_from"] = {
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["classe"] = "MAGE",
-							["spec"] = 63,
-							["aID"] = "",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.001822,
-							["friendlyfire"] = {
-							},
-							["serial"] = "0x0000-0000-0000",
-							["dps_started"] = false,
-							["total"] = 6512745.7013763,
-							["friendlyfire_total"] = 22364482,
-							["on_hold"] = false,
-							["nome"] = "Kael'thas Sunstrider",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1652782851,
-							["last_event"] = 0,
-							["colocacao"] = 5,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 33812840,
-							["start_time"] = 1652782851,
-							["delay"] = 0,
-							["last_dps"] = 18612.09905514489,
-						}, -- [5]
-						{
-							["flag_original"] = "0x514",
-							["totalabsorbed"] = 0.005306,
-							["damage_from"] = {
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 11256001,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.005306,
-							["classe"] = "WARLOCK",
-							["serial"] = "0x0000-0000-0000",
-							["dps_started"] = false,
-							["end_time"] = 1652782851,
-							["damage_taken"] = 32291069,
-							["total"] = 4875139.002403831,
-							["nome"] = "Ner'zhul",
-							["spec"] = 265,
-							["grupo"] = true,
-							["tipo"] = 1,
-							["colocacao"] = 6,
-							["last_dps"] = 13434.57617505465,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1652782851,
-							["delay"] = 0,
-							["on_hold"] = false,
-						}, -- [6]
-						{
-							["flag_original"] = "0x514",
-							["totalabsorbed"] = 0.008367,
-							["damage_from"] = {
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["classe"] = "WARRIOR",
-							["spec"] = 71,
-							["aID"] = "",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008367,
-							["friendlyfire"] = {
-							},
-							["serial"] = "0x0000-0000-0000",
-							["dps_started"] = false,
-							["total"] = 3393316.63712361,
-							["friendlyfire_total"] = 43304738,
-							["on_hold"] = false,
-							["nome"] = "Footman Malakai",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1652782851,
-							["last_event"] = 0,
-							["colocacao"] = 6,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 57554207,
-							["start_time"] = 1652782851,
-							["delay"] = 0,
-							["last_dps"] = 16419.2970795658,
-						}, -- [7]
-						{
-							["flag_original"] = "0x514",
-							["totalabsorbed"] = 0.001195,
-							["damage_from"] = {
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 18383713,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.001195,
-							["classe"] = "PRIEST",
-							["serial"] = "0x0000-0000-0000",
-							["dps_started"] = false,
-							["end_time"] = 1652782851,
-							["damage_taken"] = 31351373,
-							["total"] = 1959058.734888137,
-							["nome"] = "Tyrande Whisperwind",
-							["spec"] = 257,
-							["grupo"] = true,
-							["tipo"] = 1,
-							["colocacao"] = 6,
-							["last_dps"] = 27819.74516327183,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1652782851,
-							["delay"] = 0,
-							["on_hold"] = false,
-						}, -- [8]
-						{
-							["flag_original"] = "0x514",
-							["totalabsorbed"] = 0.008658,
-							["damage_from"] = {
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["classe"] = "WARRIOR",
-							["spec"] = 73,
-							["aID"] = "",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008658,
-							["friendlyfire"] = {
-							},
-							["serial"] = "0x0000-0000-0000",
-							["dps_started"] = false,
-							["total"] = 1505318.924878667,
-							["friendlyfire_total"] = 34164741,
-							["on_hold"] = false,
-							["nome"] = "Cairne Bloodhoof",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1652782851,
-							["last_event"] = 0,
-							["colocacao"] = 6,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 41094461,
-							["start_time"] = 1652782851,
-							["delay"] = 0,
-							["last_dps"] = 25411.8341045342,
-						}, -- [9]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005962,
-							["damage_from"] = {
-								["Plainstrider"] = true,
-							},
-							["targets"] = {
-								["Plainstrider"] = 103,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["aID"] = "4465-02B843FA",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 103.005962,
-							["damage_taken"] = 16.005962,
-							["dps_started"] = false,
-							["total"] = 5.328225744965167,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1652782791,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Plainstrider"] = 35,
-										},
-										["n_dmg"] = 35,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 35,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[5176] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 15,
-										["targets"] = {
-											["Plainstrider"] = 43,
-										},
-										["n_dmg"] = 43,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 43,
-										["c_max"] = 0,
-										["id"] = 5176,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Plainstrider"] = 25,
-										},
-										["n_dmg"] = 25,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 25,
-										["c_max"] = 0,
-										["id"] = 8921,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1652782793,
-							["last_dps"] = 5.820203525830396,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1652782773,
-							["delay"] = 0,
-							["classe"] = "DRUID",
-						}, -- [10]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.004657,
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 16,
-							},
-							["pets"] = {
-							},
-							["aID"] = "2955",
-							["on_hold"] = false,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 16.004657,
-							["serial"] = "Creature-0-4469-1-30-2955-000002BE82",
-							["dps_started"] = false,
-							["total"] = 2.361233280355074,
-							["fight_component"] = true,
-							["damage_taken"] = 103.004657,
-							["nome"] = "Plainstrider",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2,
-										["targets"] = {
-											["Moolatz"] = 16,
-										},
-										["n_dmg"] = 16,
-										["n_min"] = 1,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 9,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1652782790,
-							["end_time"] = 1652782793,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1652782775,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [11]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 407,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 276,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 48407648,
-							["total_without_pet"] = 0.003319,
-							["total"] = 26508219.56039916,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "0x0000-0000-0000",
-							["totalabsorb"] = 50087344,
-							["last_hps"] = 70288.22377179362,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.003319,
-							["healing_taken"] = 22331064,
-							["end_time"] = 1652782851,
-							["healing_from"] = {
-							},
-							["spec"] = 105,
-							["nome"] = "Eonar",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1652782851,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "",
-							["totaldenied"] = 0.003319,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 276,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 53647855,
-							["total_without_pet"] = 0.002123,
-							["total"] = 24407508.50235166,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 2,
-							["on_hold"] = false,
-							["serial"] = "0x0000-0000-0000",
-							["totalabsorb"] = 14537136,
-							["last_hps"] = 64792.27324995661,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.002123,
-							["healing_taken"] = 56329715,
-							["end_time"] = 1652782851,
-							["healing_from"] = {
-							},
-							["spec"] = 70,
-							["nome"] = "Bolvar Fordragon",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1652782851,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "",
-							["totaldenied"] = 0.002123,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 276,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
-							["totalover"] = 54530860,
-							["total_without_pet"] = 0.004896,
-							["total"] = 12444247.40779679,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 3,
-							["on_hold"] = false,
-							["serial"] = "0x0000-0000-0000",
-							["totalabsorb"] = 54433012,
-							["last_hps"] = 33691.37808045481,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.004896,
-							["healing_taken"] = 16625833,
-							["end_time"] = 1652782851,
-							["healing_from"] = {
-							},
-							["spec"] = 64,
-							["nome"] = "Antonidas",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1652782851,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "",
-							["totaldenied"] = 0.004896,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [3]
-						{
-							["flag_original"] = 276,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "WARLOCK",
-							["totalover"] = 22341969,
-							["total_without_pet"] = 0.001789,
-							["total"] = 6699396.257254275,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 4,
-							["on_hold"] = false,
-							["serial"] = "0x0000-0000-0000",
-							["totalabsorb"] = 26716175,
-							["last_hps"] = 18428.83149923603,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.001789,
-							["healing_taken"] = 46016532,
-							["end_time"] = 1652782851,
-							["healing_from"] = {
-							},
-							["spec"] = 265,
-							["nome"] = "C'Thun",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1652782851,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "",
-							["totaldenied"] = 0.001789,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [4]
-						{
-							["flag_original"] = 276,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "ROGUE",
-							["totalover"] = 10867265,
-							["total_without_pet"] = 0.002255,
-							["total"] = 3931946.920606269,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 5,
-							["on_hold"] = false,
-							["serial"] = "0x0000-0000-0000",
-							["totalabsorb"] = 12115383,
-							["last_hps"] = 10931.91350161331,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.002255,
-							["healing_taken"] = 17327153,
-							["end_time"] = 1652782851,
-							["healing_from"] = {
-							},
-							["spec"] = 259,
-							["nome"] = "Lisa Gallywix",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1652782851,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "",
-							["totaldenied"] = 0.002255,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [5]
-						{
-							["flag_original"] = 276,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "SHAMAN",
-							["totalover"] = 28524198,
-							["total_without_pet"] = 0.005041,
-							["total"] = 2952753.454982317,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 6,
-							["on_hold"] = false,
-							["serial"] = "0x0000-0000-0000",
-							["totalabsorb"] = 35456335,
-							["last_hps"] = 8289.966576214307,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.005041,
-							["healing_taken"] = 47521062,
-							["end_time"] = 1652782851,
-							["healing_from"] = {
-							},
-							["spec"] = 263,
-							["nome"] = "Your Math Teacher",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1652782851,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "",
-							["totaldenied"] = 0.005041,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [6]
-						{
-							["flag_original"] = 276,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 19660039,
-							["total_without_pet"] = 0.00579,
-							["total"] = 2372112.601626297,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 6,
-							["on_hold"] = false,
-							["serial"] = "0x0000-0000-0000",
-							["totalabsorb"] = 50380318,
-							["last_hps"] = 8227.334023663541,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.00579,
-							["healing_taken"] = 56620991,
-							["end_time"] = 1652782851,
-							["healing_from"] = {
-							},
-							["spec"] = 250,
-							["nome"] = "The Lich King",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1652782851,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "",
-							["totaldenied"] = 0.00579,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [7]
-						{
-							["flag_original"] = 276,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DEATHKNIGHT",
-							["totalover"] = 55941212,
-							["total_without_pet"] = 0.001459,
-							["total"] = 1633727.643703079,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 6,
-							["on_hold"] = false,
-							["serial"] = "0x0000-0000-0000",
-							["totalabsorb"] = 38734616,
-							["last_hps"] = 8663.905105250647,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.001459,
-							["healing_taken"] = 12274327,
-							["end_time"] = 1652782851,
-							["healing_from"] = {
-							},
-							["spec"] = 251,
-							["nome"] = "Drek'Thar",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1652782851,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "",
-							["totaldenied"] = 0.001459,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [8]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 407,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 407,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["debuff_uptime"] = 13,
-							["classe"] = "DRUID",
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8921] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = -1,
-										["uptime"] = 13,
-										["id"] = 8921,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[5176] = 2,
-								[8921] = 1,
-							},
-							["tipo"] = 4,
-							["nome"] = "Moolatz",
-							["last_event"] = 1652782791,
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 407,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 511223.608,
-				["tempo_start"] = 1652782773,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 7082,
-				["playing_solo"] = true,
-				["totals"] = {
-					319120520, -- [1]
-					364627071, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "12:19:53",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Illidan Stormrage",
-				["TotalElapsedCombatTime"] = 511165.743,
-				["CombatEndedAt"] = 511165.743,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 103.005962,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 511171.814,
-				["combat_id"] = 407,
-				["frags"] = {
-					["Plainstrider"] = 2,
-				},
-				["data_inicio"] = "12:19:34",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					319120520, -- [1]
-					364627071, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 510811.814,
 				["TimeData"] = {
 				},
 				["spells_cast_timeline"] = {
@@ -6820,9 +6102,9 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["enabled"] = true,
 			["animate"] = true,
-			["alwaysshowme"] = true,
+			["showamount"] = false,
 			["hide_pull_bar"] = false,
-			["author"] = "Details! Team",
+			["useclasscolors"] = false,
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -6832,12 +6114,12 @@ _detalhes_database = {
 			["openedfromcommand"] = false,
 			["updatespeed"] = 0.2,
 			["dividebyhundred"] = true,
-			["showamount"] = false,
+			["alwaysshowme"] = true,
 			["useplayercolor"] = false,
 			["playSound"] = false,
 			["usefocus"] = false,
 			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["enabled"] = true,
@@ -6855,8 +6137,8 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
 			["opened"] = 0,
-			["show_icon"] = 5,
 			["author"] = "Details! Team",
+			["show_icon"] = 5,
 			["hide_on_combat"] = false,
 			["max_emote_segments"] = 3,
 		},
@@ -6916,20 +6198,6 @@ _detalhes_database = {
 			["main_frame_strata"] = "LOW",
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["author"] = "Details! Team",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["use_spark"] = false,
-			["y"] = -183.107162475586,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -6941,6 +6209,20 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["author"] = "Details! Team",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["font_size"] = 10,
+			["use_spark"] = false,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["y"] = -183.107162475586,
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
@@ -6957,7 +6239,7 @@ _detalhes_database = {
 		["reverse"] = false,
 		["channel"] = "SELF",
 	},
-	["combat_counter"] = 7103,
+	["combat_counter"] = 7114,
 	["announce_damagerecord"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
@@ -6969,7 +6251,7 @@ _detalhes_database = {
 	["cached_talents"] = {
 	},
 	["ignore_nicktag"] = true,
-	["combat_id"] = 424,
+	["combat_id"] = 429,
 	["savedStyles"] = {
 		{
 			["hide_in_combat_type"] = 1,
@@ -7014,16 +6296,16 @@ _detalhes_database = {
 			},
 			["switch_healer"] = false,
 			["bars_sort_direction"] = 1,
-			["backdrop_texture"] = "None",
-			["menu_icons_size"] = 1,
 			["switch_healer_in_combat"] = false,
+			["skin"] = "Minimalistic",
+			["backdrop_texture"] = "None",
 			["menu2_icons_size"] = 1.20000004768372,
 			["tooltip"] = {
 				["n_abilities"] = 3,
 				["n_enemies"] = 3,
 			},
 			["stretch_button_side"] = 2,
-			["skin"] = "Minimalistic",
+			["menu_icons_size"] = 1,
 			["switch_all_roles_in_combat"] = {
 				2, -- [1]
 				1, -- [2]
@@ -7070,10 +6352,17 @@ _detalhes_database = {
 				["onleave"] = 1,
 			},
 			["show_statusbar"] = false,
-			["switch_damager"] = false,
-			["auto_hide_menu"] = {
-				["left"] = true,
-				["right"] = true,
+			["menu2_anchor_down"] = {
+				32, -- [1]
+				0, -- [2]
+			},
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
 			},
 			["strata"] = "LOW",
 			["bars_grow_direction"] = 1,
@@ -7122,24 +6411,14 @@ _detalhes_database = {
 				true, -- [3]
 				true, -- [4]
 			},
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
+			["desaturated_menu"] = false,
+			["show_sidebars"] = false,
 			["menu_anchor_down"] = {
 				-22, -- [1]
 				0, -- [2]
 			},
 			["window_scale"] = 1,
-			["switch_damager_in_combat"] = false,
+			["grab_on_top"] = false,
 			["instancebutton_config"] = {
 				["textcolor"] = {
 					0.8, -- [1]
@@ -7160,8 +6439,8 @@ _detalhes_database = {
 				["textfont"] = "Friz Quadrata TT",
 				["textshadow"] = false,
 			},
+			["switch_damager_in_combat"] = false,
 			["hide_icon"] = true,
-			["grab_on_top"] = false,
 			["menu2_anchor"] = {
 				32, -- [1]
 				3, -- [2]
@@ -7176,8 +6455,11 @@ _detalhes_database = {
 				},
 			},
 			["hide_in_combat"] = false,
-			["show_sidebars"] = false,
-			["desaturated_menu"] = false,
+			["auto_hide_menu"] = {
+				["left"] = true,
+				["right"] = true,
+			},
+			["switch_damager"] = false,
 			["plugins_grow_direction"] = 1,
 			["wallpaper"] = {
 				["overlay"] = {
@@ -7249,10 +6531,6 @@ _detalhes_database = {
 					1, -- [3]
 					1, -- [4]
 				},
-				["textL_custom_text"] = "{data3}{data2}",
-				["texture_background"] = "Blizzard",
-				["alpha"] = 0,
-				["textL_class_colors"] = false,
 				["backdrop"] = {
 					["enabled"] = false,
 					["size"] = 12,
@@ -7264,9 +6542,13 @@ _detalhes_database = {
 					},
 					["texture"] = "Details BarBorder 2",
 				},
+				["textL_class_colors"] = false,
+				["textL_custom_text"] = "{data3}{data2}",
+				["textR_class_colors"] = false,
+				["alpha"] = 0,
 				["no_icon"] = false,
 				["font_size"] = 11,
-				["textR_class_colors"] = false,
+				["texture_background"] = "Blizzard",
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
 				["height"] = 20,
@@ -7309,7 +6591,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["end_time"] = 1652781839,
+					["total"] = 0.004146,
 					["last_event"] = 0,
 					["classe"] = "DRUID",
 					["raid_targets"] = {
@@ -7317,9 +6599,10 @@ _detalhes_database = {
 					["total_without_pet"] = 0.004146,
 					["serial"] = "Player-4465-02B843FA",
 					["dps_started"] = false,
-					["total"] = 0.004146,
-					["last_dps"] = 0,
+					["end_time"] = 1652781839,
 					["damage_taken"] = 0.004146,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Moolatz",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -7412,11 +6695,10 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1652781836,
 					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 				}, -- [1]
 				{
 					["flag_original"] = 68136,
@@ -7431,9 +6713,9 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["aID"] = "2955",
-					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
+					["damage_taken"] = 0.002893,
+					["aID"] = "2955",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002893,
@@ -7441,7 +6723,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1652781839,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.002893,
+					["on_hold"] = false,
 					["nome"] = "Plainstrider",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -7483,11 +6765,11 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1652781836,
 					["delay"] = 0,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 				}, -- [2]
 				{
 					["flag_original"] = "0x514",
@@ -7504,15 +6786,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["aID"] = "",
 					["friendlyfire_total"] = 0,
+					["aID"] = "",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007949,
 					["friendlyfire"] = {
 					},
 					["dps_started"] = false,
-					["total"] = 0.007949,
+					["end_time"] = 1652806606,
 					["damage_taken"] = 0.007949,
 					["tipo"] = 1,
 					["nome"] = "Orman of Stromgarde",
@@ -7525,7 +6807,7 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["start_time"] = 1652806603,
 					["serial"] = "0x0000-0000-0000",
-					["end_time"] = 1652806606,
+					["total"] = 0.007949,
 				}, -- [3]
 				{
 					["flag_original"] = "0x514",
@@ -7542,15 +6824,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["aID"] = "",
 					["friendlyfire_total"] = 0,
+					["aID"] = "",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008271,
 					["friendlyfire"] = {
 					},
 					["dps_started"] = false,
-					["total"] = 0.008271,
+					["end_time"] = 1652806606,
 					["damage_taken"] = 0.008271,
 					["tipo"] = 1,
 					["nome"] = "Archmage Trelane",
@@ -7563,7 +6845,7 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["start_time"] = 1652806603,
 					["serial"] = "0x0000-0000-0000",
-					["end_time"] = 1652806606,
+					["total"] = 0.008271,
 				}, -- [4]
 				{
 					["flag_original"] = "0x514",
@@ -7580,15 +6862,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["aID"] = "",
 					["friendlyfire_total"] = 0,
+					["aID"] = "",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006836,
 					["friendlyfire"] = {
 					},
 					["dps_started"] = false,
-					["total"] = 0.006836,
+					["end_time"] = 1652806606,
 					["damage_taken"] = 0.006836,
 					["tipo"] = 1,
 					["nome"] = "Lisa Gallywix",
@@ -7601,7 +6883,7 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["start_time"] = 1652806603,
 					["serial"] = "0x0000-0000-0000",
-					["end_time"] = 1652806606,
+					["total"] = 0.006836,
 				}, -- [5]
 				{
 					["flag_original"] = "0x514",
@@ -7618,15 +6900,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["aID"] = "",
 					["friendlyfire_total"] = 0,
+					["aID"] = "",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005481,
 					["friendlyfire"] = {
 					},
 					["dps_started"] = false,
-					["total"] = 0.005481,
+					["end_time"] = 1652806606,
 					["damage_taken"] = 0.005481,
 					["tipo"] = 1,
 					["nome"] = "Baron Rivendare",
@@ -7639,7 +6921,7 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["start_time"] = 1652806603,
 					["serial"] = "0x0000-0000-0000",
-					["end_time"] = 1652806606,
+					["total"] = 0.005481,
 				}, -- [6]
 				{
 					["flag_original"] = "0x514",
@@ -7656,15 +6938,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["aID"] = "",
 					["friendlyfire_total"] = 0,
+					["aID"] = "",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002697,
 					["friendlyfire"] = {
 					},
 					["dps_started"] = false,
-					["total"] = 0.002697,
+					["end_time"] = 1652806606,
 					["damage_taken"] = 0.002697,
 					["tipo"] = 1,
 					["nome"] = "Kael'thas Sunstrider",
@@ -7677,7 +6959,7 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["start_time"] = 1652806603,
 					["serial"] = "0x0000-0000-0000",
-					["end_time"] = 1652806606,
+					["total"] = 0.002697,
 				}, -- [7]
 				{
 					["flag_original"] = "0x514",
@@ -7694,15 +6976,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["aID"] = "",
 					["friendlyfire_total"] = 0,
+					["aID"] = "",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001304,
 					["friendlyfire"] = {
 					},
 					["dps_started"] = false,
-					["total"] = 0.001304,
+					["end_time"] = 1652806606,
 					["damage_taken"] = 0.001304,
 					["tipo"] = 1,
 					["nome"] = "Ner'zhul",
@@ -7715,7 +6997,7 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["start_time"] = 1652806603,
 					["serial"] = "0x0000-0000-0000",
-					["end_time"] = 1652806606,
+					["total"] = 0.001304,
 				}, -- [8]
 				{
 					["flag_original"] = "0x514",
@@ -7732,15 +7014,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["aID"] = "",
 					["friendlyfire_total"] = 0,
+					["aID"] = "",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008035,
 					["friendlyfire"] = {
 					},
 					["dps_started"] = false,
-					["total"] = 0.008035,
+					["end_time"] = 1652806606,
 					["damage_taken"] = 0.008035,
 					["tipo"] = 1,
 					["nome"] = "Footman Malakai",
@@ -7753,7 +7035,7 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["start_time"] = 1652806603,
 					["serial"] = "0x0000-0000-0000",
-					["end_time"] = 1652806606,
+					["total"] = 0.008035,
 				}, -- [9]
 				{
 					["flag_original"] = "0x514",
@@ -7770,15 +7052,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["aID"] = "",
 					["friendlyfire_total"] = 0,
+					["aID"] = "",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006217,
 					["friendlyfire"] = {
 					},
 					["dps_started"] = false,
-					["total"] = 0.006217,
+					["end_time"] = 1652806606,
 					["damage_taken"] = 0.006217,
 					["tipo"] = 1,
 					["nome"] = "Tyrande Whisperwind",
@@ -7791,7 +7073,7 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["start_time"] = 1652806603,
 					["serial"] = "0x0000-0000-0000",
-					["end_time"] = 1652806606,
+					["total"] = 0.006217,
 				}, -- [10]
 				{
 					["flag_original"] = "0x514",
@@ -7808,15 +7090,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["aID"] = "",
 					["friendlyfire_total"] = 0,
+					["aID"] = "",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006785,
 					["friendlyfire"] = {
 					},
 					["dps_started"] = false,
-					["total"] = 0.006785,
+					["end_time"] = 1652806606,
 					["damage_taken"] = 0.006785,
 					["tipo"] = 1,
 					["nome"] = "Cairne Bloodhoof",
@@ -7829,7 +7111,7 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["start_time"] = 1652806603,
 					["serial"] = "0x0000-0000-0000",
-					["end_time"] = 1652806606,
+					["total"] = 0.006785,
 				}, -- [11]
 			},
 		}, -- [1]
@@ -7851,16 +7133,15 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["classe"] = "DRUID",
+					["heal_enemy_amt"] = 0,
 					["totalover"] = 0.003202,
 					["total_without_pet"] = 0.003202,
 					["totalover_without_pet"] = 0.003202,
 					["totaldenied"] = 0.003202,
 					["healing_taken"] = 0.003202,
-					["end_time"] = 1652806606,
-					["targets_absorbs"] = {
-					},
-					["heal_enemy_amt"] = 0,
+					["total"] = 0.003202,
+					["classe"] = "DRUID",
+					["aID"] = "4465-02B843FA",
 					["nome"] = "Moolatz",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -7893,16 +7174,17 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["total"] = 0.003202,
+					["end_time"] = 1652806606,
 					["heal_enemy"] = {
 					},
-					["last_event"] = 0,
-					["custom"] = 0,
 					["tipo"] = 2,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["on_hold"] = false,
 					["start_time"] = 1652806603,
 					["serial"] = "Player-4465-02B843FA",
-					["aID"] = "4465-02B843FA",
+					["targets_absorbs"] = {
+					},
 				}, -- [1]
 				{
 					["flag_original"] = 276,
@@ -7941,11 +7223,11 @@ _detalhes_database = {
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.007039,
 					["custom"] = 0,
-					["tipo"] = 2,
+					["last_event"] = 0,
 					["classe"] = "DRUID",
 					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 				}, -- [2]
 				{
 					["flag_original"] = 276,
@@ -7984,11 +7266,11 @@ _detalhes_database = {
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.002041,
 					["custom"] = 0,
-					["tipo"] = 2,
+					["last_event"] = 0,
 					["classe"] = "PALADIN",
 					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 				}, -- [3]
 				{
 					["flag_original"] = 276,
@@ -8027,11 +7309,11 @@ _detalhes_database = {
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.001632,
 					["custom"] = 0,
-					["tipo"] = 2,
+					["last_event"] = 0,
 					["classe"] = "MAGE",
 					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 				}, -- [4]
 				{
 					["flag_original"] = 276,
@@ -8070,11 +7352,11 @@ _detalhes_database = {
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.003004,
 					["custom"] = 0,
-					["tipo"] = 2,
+					["last_event"] = 0,
 					["classe"] = "WARLOCK",
 					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 				}, -- [5]
 				{
 					["flag_original"] = 276,
@@ -8113,11 +7395,11 @@ _detalhes_database = {
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.005148,
 					["custom"] = 0,
-					["tipo"] = 2,
+					["last_event"] = 0,
 					["classe"] = "ROGUE",
 					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 				}, -- [6]
 				{
 					["flag_original"] = 276,
@@ -8156,11 +7438,11 @@ _detalhes_database = {
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.00152,
 					["custom"] = 0,
-					["tipo"] = 2,
+					["last_event"] = 0,
 					["classe"] = "SHAMAN",
 					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 				}, -- [7]
 				{
 					["flag_original"] = 276,
@@ -8199,11 +7481,11 @@ _detalhes_database = {
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.008522,
 					["custom"] = 0,
-					["tipo"] = 2,
+					["last_event"] = 0,
 					["classe"] = "DEATHKNIGHT",
 					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 				}, -- [8]
 				{
 					["flag_original"] = 276,
@@ -8242,11 +7524,11 @@ _detalhes_database = {
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.003004,
 					["custom"] = 0,
-					["tipo"] = 2,
+					["last_event"] = 0,
 					["classe"] = "DEATHKNIGHT",
 					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 				}, -- [9]
 			},
 		}, -- [2]
@@ -8411,7 +7693,7 @@ _detalhes_database = {
 	},
 	["force_font_outline"] = "",
 	["character_data"] = {
-		["logons"] = 1815,
+		["logons"] = 1821,
 	},
 	["last_realversion"] = 146,
 	["announce_cooldowns"] = {

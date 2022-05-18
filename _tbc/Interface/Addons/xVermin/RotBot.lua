@@ -6,13 +6,13 @@ SetBindingClick('SHIFT-F2', F2:GetName())
 F1:SetScript(
 	'OnClick',
 	function(self, event)
-		print('Single target mode')
+		RotationFrame3:SetBackdropColor(0, 1, 0, 0.9)
 	end
 )
 
 F2:SetScript(
 	'OnClick',
 	function(self, event)
-		print('AOE mode')
+		RotationFrame3:SetBackdropColor(1, 0, 0, 0.9)
 	end
 )
