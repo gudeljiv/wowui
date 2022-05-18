@@ -27,13 +27,6 @@ X: -72
 Y: -98
 W: 784
 H: 260
-Frame: InterfaceOptionsFrame
-FrameLevel: 1
-Anchor: TOP
-X: 77
-Y: -116
-W: 858
-H: 660
 Frame: CharacterFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -104,6 +97,13 @@ X: 0
 Y: 0
 W: 648
 H: 455
+Frame: InterfaceOptionsFrame
+FrameLevel: 1
+Anchor: TOP
+X: 77
+Y: -116
+W: 858
+H: 660
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER
