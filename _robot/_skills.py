@@ -21,6 +21,7 @@ skills = [
     {"name": "immolate", "key": "h"},
     {"name": "corruption", "key": "v"},
     {"name": "curse of agony", "key": "g"},
+    {"name": "shadowbolt", "key": "f11"},
 
     # hunter
     {"name": "serpent sting", "key": "9", "modifier": "alt"},

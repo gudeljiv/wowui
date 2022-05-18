@@ -8,6 +8,7 @@ import os
 import sys
 import mss
 import mss.tools
+import numpy
 
 from pynput import keyboard
 from pyautogui import *
@@ -102,25 +103,26 @@ with keyboard.Listener(on_press=on_press) as listener:
                         print("interrupt", "f9", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
                     pyautogui.hotkey("f9")
 
-                time.sleep(1)
-
                 if(active_window != "World of Warcraft" and sys.platform == "win32"):
                     continue
                 if(active_window != "Wow" and sys.platform == "darwin"):
                     continue
 
                 # grabbed image handling
-                mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
-                img = cv2.imread(grabbed_image)
-                grabbed = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-                os.remove(grabbed_image)
+                # mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
+                # img = cv2.imread(main_image)
+                # grabbed = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+                # os.remove(grabbed_image)
+                grabbed = cv2.cvtColor(numpy.array(main_image), cv2.COLOR_BGR2GRAY)
+
+                # print("checking skills...", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
 
                 # rotation
                 for skill in skills:
-
+                    start_skills_time = time.time()
                     for ability in abilities:
                         (score, diff) = structural_similarity(abilities[ability], grabbed, full=True)
-                        print(score*100, ability, skill["name"])
+                        # print(score*100, ability, skill["name"], f"Finish in: {round(1000 * (time.time() - start_time))} ms ", f"Finish in: {round(1000 * (time.time() - start_skills_time))} ms ")
                         if(score*100 > 90 and ability == skill["name"]):
                             if dprint:
                                 print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
@@ -128,7 +130,6 @@ with keyboard.Listener(on_press=on_press) as listener:
                                 pyautogui.hotkey(skill["modifier"], skill["key"])
                             else:
                                 pyautogui.hotkey(skill["key"])
-
             if debug:
                 time.sleep(0.5)
                 mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
