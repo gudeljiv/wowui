@@ -1,3 +1,7 @@
+VER 3 000000000000000E " " "136106"
+/run InspectUnit("target")
+/run SortBags()
+END
 VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /castsequence Find Herbs,Find Minerals
@@ -7,22 +11,18 @@ VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 /use Coarse Sharpening Stone
 /use [button:1] 16; [button:2] 17
 END
-VER 3 000000000000000E " " "136106"
-/run InspectUnit("target")
-/run SortBags()
-END
 VER 3 000000000000000F "AttackSpeed" "132089"
 /run mainSpeed, offSpeed = UnitAttackSpeed("target") print(format("%s: attack speed = %.2f", GetUnitName("target"), mainSpeed))
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:159
-/castsequence [combat] reset=combat 
+/use [nocombat]item:34062
+/castsequence [combat] reset=combat item:22832,item:13444
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4536
-/castsequence [combat] reset=combat 
+/use [nocombat]item:34062
+/castsequence [combat] reset=combat item:22829,item:28100,item:13446
 END
 VER 3 0000000000000011 "GREEN" "2241756"
 /run RotationFrame3:ClearAllPoints()
@@ -36,9 +36,9 @@ VER 3 000000000000000B "lvl enchant" "132089"
 /click StaticPopup1Button1
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:27677
+#showtooltip item:0
 /cast feed pet
-/use item:27677
+/use item:0
 END
 VER 3 0000000000000012 "RED" "2241756"
 /run RotationFrame3:SetBackdropColor(1, 0, 0, 0.9)
