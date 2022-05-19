@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 5154,
 	["lastSanitation"] = 3,
-	["session"] = 5143,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -701,8 +701,8 @@ BugGrabberDB = {
 		}, -- [88]
 		{
 			["message"] = "(null)",
-			["session"] = 4904,
 			["time"] = "2022/03/09 13:39:43",
+			["session"] = 4904,
 			["counter"] = 6,
 		}, -- [89]
 		{
@@ -747,14 +747,14 @@ BugGrabberDB = {
 		}, -- [94]
 		{
 			["message"] = "  (null)",
-			["session"] = 4914,
 			["time"] = "2022/04/13 16:37:53",
+			["session"] = 4914,
 			["counter"] = 3,
 		}, -- [95]
 		{
 			["message"] = " (null)",
-			["session"] = 4914,
 			["time"] = "2022/04/11 11:49:12",
+			["session"] = 4914,
 			["counter"] = 13,
 		}, -- [96]
 		{
@@ -1107,5 +1107,53 @@ BugGrabberDB = {
 			["session"] = 5137,
 			["counter"] = 57,
 		}, -- [140]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/IsAOE.lua:59: Usage: UnitBuff(\"unit\", [index][, \"filter\"])",
+			["time"] = "2022/05/19 16:55:58",
+			["locals"] = "(*temporary) = \"player\"\n(*temporary) = \"Aspect of the Hawk\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `UnitBuff'\n[string \"@Interface\\AddOns\\xVermin\\Rotation/IsAOE.lua\"]:59: in function <Interface\\AddOns\\xVermin\\Rotation/IsAOE.lua:55>\n[string \"=[C]\"]: ?",
+			["session"] = 5146,
+			["counter"] = 593,
+		}, -- [141]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/IsAOE.lua:58: Usage: UnitBuff(\"unit\", [index][, \"filter\"])",
+			["time"] = "2022/05/19 16:57:04",
+			["locals"] = "(*temporary) = \"player\"\n(*temporary) = \"Aspect of the Hawk\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `UnitBuff'\n[string \"@Interface\\AddOns\\xVermin\\Rotation/IsAOE.lua\"]:58: in function <Interface\\AddOns\\xVermin\\Rotation/IsAOE.lua:55>\n[string \"=[C]\"]: ?",
+			["session"] = 5147,
+			["counter"] = 805,
+		}, -- [142]
+		{
+			["message"] = "[string \"print(UnitBuff('player', \"Aspect of the Haw...\"]:1: Usage: UnitBuff(\"unit\", [index][, \"filter\"])",
+			["time"] = "2022/05/19 16:58:47",
+			["locals"] = "(*temporary) = \"player\"\n(*temporary) = \"Aspect of the Hawk\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `UnitBuff'\n[string \"print(UnitBuff('player', \"Aspect of the Hawk\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 5148,
+			["counter"] = 1,
+		}, -- [143]
+		{
+			["message"] = "[string \"for i=1,40 do local B=UnitBuff(\"target\",i); if B = \"Aspect of t...\"]:1: 'then' expected near '='",
+			["time"] = "2022/05/19 17:02:53",
+			["locals"] = "(*temporary) = \"for i=1,40 do local B=UnitBuff(\"target\",i); if B = \"Aspect of the Hawk\" then print(i..\"=\"..B) end end\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 5150,
+			["counter"] = 1,
+		}, -- [144]
+		{
+			["message"] = "[string \"for i=1,40 do local B=UnitBuff(\"target\",i); if B == \"Aspect of ...\"]:1: 'end' expected near 'else'",
+			["time"] = "2022/05/19 17:03:52",
+			["locals"] = "(*temporary) = \"for i=1,40 do local B=UnitBuff(\"target\",i); if B == \"Aspect of the Hawk\" then print(i..\"=\"..B) end else print(B) end\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 5150,
+			["counter"] = 1,
+		}, -- [145]
+		{
+			["message"] = "[string \"for i=1,40 do local B=UnitBuff(\"target\",i); if B == \"Aspect of ...\"]:1: 'end' expected near '<eof>'",
+			["time"] = "2022/05/19 17:04:09",
+			["locals"] = "(*temporary) = \"for i=1,40 do local B=UnitBuff(\"target\",i); if B == \"Aspect of the Hawk\" then print(i..\"=\"..B) else print(B) end\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 5150,
+			["counter"] = 1,
+		}, -- [146]
 	},
 }

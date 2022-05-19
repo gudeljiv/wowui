@@ -23,10 +23,10 @@ PallyPowerDB = {
 			["configscale"] = 1.2,
 			["rfbuff"] = false,
 			["enable"] = true,
+			["SalvInCombat"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
-			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -47,6 +47,7 @@ PallyPower_AuraAssignments = {
 	["Rojïn-Razorfen"] = 2,
 	["Nezrin"] = 2,
 	["Sapexcz"] = 1,
+	["Darcassan"] = 0,
 	["Eshquîa"] = 3,
 	["Carroll"] = 0,
 	["Yamadin"] = 2,
