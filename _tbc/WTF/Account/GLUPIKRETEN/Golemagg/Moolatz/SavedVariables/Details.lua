@@ -7,17 +7,17 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 552,
+					["combatId"] = 592,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005037,
+							["totalabsorbed"] = 0.003711,
 							["damage_from"] = {
-								["Flatland Prowler"] = true,
+								["Flatland Cougar"] = true,
 							},
 							["targets"] = {
-								["Flatland Prowler"] = 3,
+								["Flatland Cougar"] = 26,
 							},
 							["pets"] = {
 							},
@@ -25,12 +25,12 @@ _detalhes_database = {
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 3.005037,
+							["total_without_pet"] = 26.003711,
 							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1653048850,
+							["end_time"] = 1653054899,
 							["friendlyfire_total"] = 0,
 							["aID"] = "4465-02B843FA",
 							["nome"] = "Moolatz",
@@ -44,15 +44,44 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 3,
 										["targets"] = {
-											["Flatland Prowler"] = 3,
+											["Flatland Cougar"] = 6,
 										},
-										["n_dmg"] = 3,
+										["n_dmg"] = 6,
 										["n_min"] = 3,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 3,
+										["counter"] = 3,
+										["total"] = 6,
 										["c_max"] = 0,
 										["id"] = 467,
+										["r_dmg"] = 0,
+										["RESIST"] = 1,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[339] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 5,
+										["targets"] = {
+											["Flatland Cougar"] = 20,
+										},
+										["n_dmg"] = 20,
+										["n_min"] = 5,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 20,
+										["c_max"] = 0,
+										["id"] = 339,
 										["r_dmg"] = 0,
 										["spellschool"] = 8,
 										["extra"] = {
@@ -61,34 +90,35 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 							},
 							["grupo"] = true,
-							["total"] = 3.005037,
+							["total"] = 26.003711,
 							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 0.5092419928865005,
+							["last_dps"] = 1.458179274370736,
 							["custom"] = 0,
-							["last_event"] = 1653048845,
-							["damage_taken"] = 13.005037,
-							["start_time"] = 1653048845,
+							["last_event"] = 1653054896,
+							["damage_taken"] = 30.003711,
+							["start_time"] = 1653054881,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002135,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00781,
 							["damage_from"] = {
 								["Moolatz"] = true,
-								["Broldokk"] = true,
+								["Brave Darksky"] = true,
 							},
 							["targets"] = {
-								["Moolatz"] = 13,
+								["Moolatz"] = 30,
+								["Brave Darksky"] = 37,
 							},
-							["total"] = 13.002135,
+							["total"] = 67.00781,
 							["pets"] = {
 							},
 							["friendlyfire"] = {
@@ -96,14 +126,14 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 13.002135,
+							["total_without_pet"] = 67.00781,
 							["fight_component"] = true,
 							["monster"] = true,
 							["dps_started"] = false,
-							["end_time"] = 1653048850,
+							["end_time"] = 1653054899,
 							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
-							["nome"] = "Flatland Prowler",
+							["nome"] = "Flatland Cougar",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -112,18 +142,20 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 13,
+										["n_max"] = 11,
 										["targets"] = {
-											["Moolatz"] = 13,
+											["Moolatz"] = 30,
+											["Brave Darksky"] = 37,
 										},
-										["n_dmg"] = 13,
-										["n_min"] = 13,
+										["n_dmg"] = 67,
+										["n_min"] = 6,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 13,
+										["counter"] = 9,
+										["total"] = 67,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
+										["MISS"] = 1,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
@@ -131,55 +163,73 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 8,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
 							},
-							["aID"] = "3566",
-							["serial"] = "Creature-0-4445-1-56-3566-0000078602",
+							["aID"] = "3035",
+							["serial"] = "Creature-0-4445-1-56-3035-000007997F",
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1653048845,
-							["damage_taken"] = 243.002135,
-							["start_time"] = 1653048845,
+							["last_event"] = 1653054898,
+							["damage_taken"] = 194.00781,
+							["start_time"] = 1653054881,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 552,
+					["combatId"] = 592,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 552,
+					["combatId"] = 592,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 552,
+					["combatId"] = 592,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["spell_cast"] = {
-								[8613] = 1,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[339] = {
+										["activedamt"] = 0,
+										["id"] = 339,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
 							},
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 10,
 							["pets"] = {
 							},
-							["classe"] = "DRUID",
-							["last_event"] = 1653048850,
-							["tipo"] = 4,
+							["cc_done_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[339] = {
+										["id"] = 339,
+										["targets"] = {
+											["Flatland Cougar"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
@@ -188,7 +238,7 @@ _detalhes_database = {
 										["id"] = 1126,
 										["targets"] = {
 										},
-										["uptime"] = 5,
+										["uptime"] = 18,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -199,7 +249,7 @@ _detalhes_database = {
 										["id"] = 467,
 										["targets"] = {
 										},
-										["uptime"] = 5,
+										["uptime"] = 18,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -207,13 +257,30 @@ _detalhes_database = {
 									},
 								},
 							},
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime"] = 12,
+							["cc_done"] = 1.005241,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[339] = 1,
+							},
+							["cc_done_targets"] = {
+								["Flatland Cougar"] = 1,
+							},
+							["buff_uptime"] = 36,
+							["last_event"] = 1653054899,
+							["nome"] = "Moolatz",
+							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 552,
+					["combatId"] = 592,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -224,20 +291,20 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
-				["tempo_start"] = 1653048845,
+				["tempo_start"] = 1653054881,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Flatland Prowler",
+				["enemy"] = "Flatland Cougar",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					15.99309900000003, -- [1]
+					92.985982, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -259,8 +326,8 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["TotalElapsedCombatTime"] = 777226.272,
-				["combat_counter"] = 7242,
+				["TotalElapsedCombatTime"] = 783274.4280000001,
+				["combat_counter"] = 7283,
 				["frags_need_refresh"] = true,
 				["aura_timeline"] = {
 				},
@@ -281,18 +348,18 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Moolatz"] = 3.005037,
+							["Moolatz"] = 26.003711,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 777226.272,
+				["end_time"] = 783274.4280000001,
 				["player_last_events"] = {
 				},
 				["instance_type"] = "none",
-				["CombatEndedAt"] = 777226.272,
-				["data_inicio"] = "14:14:06",
+				["CombatEndedAt"] = 783274.4280000001,
+				["data_inicio"] = "15:54:42",
 				["totals_grupo"] = {
-					3, -- [1]
+					26, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -314,45 +381,483 @@ _detalhes_database = {
 				},
 				["spells_cast_timeline"] = {
 				},
-				["data_fim"] = "14:14:11",
-				["combat_id"] = 552,
+				["data_fim"] = "15:55:00",
+				["combat_id"] = 592,
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
-					["Flatland Prowler"] = 1,
+					["Flatland Cougar"] = 1,
 				},
-				["start_time"] = 777220.371,
+				["start_time"] = 783256.595,
 				["TimeData"] = {
 				},
-				["contra"] = "Flatland Prowler",
+				["contra"] = "Flatland Cougar",
 			}, -- [1]
 			{
 				{
-					["combatId"] = 551,
+					["combatId"] = 591,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006764,
-							["aID"] = "4465-02B843FA",
+							["totalabsorbed"] = 0.007317,
 							["damage_from"] = {
-								["Windfury Harpy"] = true,
+								["Flatland Cougar"] = true,
 							},
 							["targets"] = {
-								["Windfury Harpy"] = 93,
+								["Flatland Cougar"] = 139,
+							},
+							["total"] = 139.007317,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 139.007317,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1653054857,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Flatland Cougar"] = 27,
+										},
+										["n_dmg"] = 27,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 27,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 12,
+										["r_amt"] = 0,
+									}, -- [1]
+									[467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Flatland Cougar"] = 18,
+										},
+										["n_dmg"] = 18,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 18,
+										["c_max"] = 0,
+										["id"] = 467,
+										["r_dmg"] = 0,
+										["RESIST"] = 1,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[5177] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 40,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Flatland Cougar"] = 71,
+										},
+										["n_dmg"] = 31,
+										["n_min"] = 31,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 71,
+										["c_max"] = 40,
+										["id"] = 5177,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 40,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8921] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Flatland Cougar"] = 23,
+										},
+										["n_dmg"] = 23,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 23,
+										["c_max"] = 0,
+										["id"] = 8921,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 11.06746154453675,
+							["custom"] = 0,
+							["last_event"] = 1653054856,
+							["damage_taken"] = 61.007317,
+							["start_time"] = 1653054843,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00896,
+							["total"] = 61.00896,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 61,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 61.00896,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1653054857,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Flatland Cougar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Moolatz"] = 61,
+										},
+										["n_dmg"] = 61,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 61,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "3035",
+							["serial"] = "Creature-0-4445-1-56-3035-00000798A9",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653054856,
+							["damage_taken"] = 139.00896,
+							["start_time"] = 1653054844,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 591,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 591,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 591,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[8921] = {
+										["activedamt"] = 0,
+										["id"] = 8921,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 30,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[467] = {
+										["activedamt"] = 1,
+										["id"] = 467,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1126] = {
+										["activedamt"] = 1,
+										["id"] = 1126,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[774] = {
+										["activedamt"] = 1,
+										["id"] = 774,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 9,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[8921] = 1,
+								[774] = 1,
+								[5177] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1653054857,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 591,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 783254.981,
+				["tempo_start"] = 1653054843,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 7282,
+				["playing_solo"] = true,
+				["totals"] = {
+					200, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					139, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:54:17",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Flatland Cougar",
+				["TotalElapsedCombatTime"] = 783232.292,
+				["CombatEndedAt"] = 783232.292,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 139.007317,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 783232.292,
+				["combat_id"] = 591,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:54:04",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Flatland Cougar"] = 1,
+				},
+				["start_time"] = 783218.814,
+				["TimeData"] = {
+				},
+				["contra"] = "Flatland Cougar",
+			}, -- [2]
+			{
+				{
+					["combatId"] = 590,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.0033,
+							["aID"] = "4465-02B843FA",
+							["damage_from"] = {
+								["Flatland Cougar"] = true,
+							},
+							["targets"] = {
+								["Flatland Cougar"] = 146,
 							},
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["end_time"] = 1653048722,
+							["end_time"] = 1653054778,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 93.006764,
+							["total_without_pet"] = 146.0033,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["total"] = 93.006764,
+							["total"] = 146.0033,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Moolatz",
@@ -366,13 +871,13 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 17,
 										["targets"] = {
-											["Windfury Harpy"] = 49,
+											["Flatland Cougar"] = 17,
 										},
-										["n_dmg"] = 49,
-										["n_min"] = 15,
+										["n_dmg"] = 17,
+										["n_min"] = 17,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 49,
+										["counter"] = 1,
+										["total"] = 17,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -383,7 +888,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -394,552 +899,168 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 3,
 										["targets"] = {
-											["Windfury Harpy"] = 15,
+											["Flatland Cougar"] = 9,
 										},
-										["n_dmg"] = 15,
+										["n_dmg"] = 9,
 										["n_min"] = 3,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 15,
+										["counter"] = 3,
+										["total"] = 9,
 										["c_max"] = 0,
 										["id"] = 467,
 										["r_dmg"] = 0,
-										["RESIST"] = 1,
 										["spellschool"] = 8,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[5177] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 29,
-										["targets"] = {
-											["Windfury Harpy"] = 29,
-										},
-										["n_dmg"] = 29,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 29,
-										["c_max"] = 0,
-										["id"] = 5177,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 7.185318603204022,
-							["custom"] = 0,
-							["last_event"] = 1653048720,
-							["damage_taken"] = 67.006764,
-							["start_time"] = 1653048709,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002814,
-							["aID"] = "2962",
-							["damage_from"] = {
-								["Moolatz"] = true,
-								["Broldokk"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 67,
-							},
-							["end_time"] = 1653048722,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 67.002814,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 67.002814,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Windfury Harpy",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Moolatz"] = 67,
-										},
-										["n_dmg"] = 67,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 67,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4445-1-56-2962-0000077071",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653048719,
-							["damage_taken"] = 173.002814,
-							["start_time"] = 1653048709,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 551,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 551,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 551,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["spell_cast"] = {
-								[5177] = 1,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 26,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
-							["last_event"] = 1653048722,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
-										["targets"] = {
-										},
-										["uptime"] = 13,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[467] = {
-										["activedamt"] = 1,
-										["id"] = 467,
-										["targets"] = {
-										},
-										["uptime"] = 13,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 551,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 777218.253,
-				["tempo_start"] = 1653048709,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 7241,
-				["playing_solo"] = true,
-				["totals"] = {
-					159.973362, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					93, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "14:12:03",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Windfury Harpy",
-				["TotalElapsedCombatTime"] = 777098,
-				["CombatEndedAt"] = 777098,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 93.006764,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 777098,
-				["combat_id"] = 551,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "14:11:50",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Windfury Harpy"] = 1,
-				},
-				["start_time"] = 777085.056,
-				["TimeData"] = {
-				},
-				["contra"] = "Windfury Harpy",
-			}, -- [2]
-			{
-				{
-					["combatId"] = 550,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006755,
-							["damage_from"] = {
-								["Windfury Wind Witch"] = true,
-							},
-							["targets"] = {
-								["Windfury Wind Witch"] = 148,
-							},
-							["total"] = 148.006755,
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 148.006755,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1653048698,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 15,
-										["targets"] = {
-											["Windfury Wind Witch"] = 15,
-										},
-										["n_dmg"] = 15,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 15,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Windfury Wind Witch"] = 12,
-										},
-										["n_dmg"] = 12,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 12,
-										["c_max"] = 0,
-										["id"] = 8921,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[5177] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 39,
-										["g_amt"] = 0,
-										["n_max"] = 29,
-										["targets"] = {
-											["Windfury Wind Witch"] = 121,
-										},
-										["n_dmg"] = 82,
-										["n_min"] = 26,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 121,
-										["c_max"] = 39,
-										["id"] = 5177,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 39,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
+									[5177] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Flatland Cougar"] = 120,
+										},
+										["n_dmg"] = 120,
+										["n_min"] = 29,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 120,
+										["c_max"] = 0,
+										["id"] = 5177,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 								},
 							},
 							["grupo"] = true,
 							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 17.02988781499744,
+							["last_dps"] = 17.40413636912427,
 							["custom"] = 0,
-							["last_event"] = 1653048697,
-							["damage_taken"] = 16.006755,
-							["start_time"] = 1653048689,
+							["last_event"] = 1653054777,
+							["damage_taken"] = 24.0033,
+							["start_time"] = 1653054768,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001515,
-							["total"] = 16.001515,
+							["totalabsorbed"] = 0.007608,
+							["aID"] = "3035",
 							["damage_from"] = {
 								["Moolatz"] = true,
 							},
 							["targets"] = {
-								["Moolatz"] = 16,
+								["Moolatz"] = 24,
 							},
+							["end_time"] = 1653054778,
 							["pets"] = {
 							},
-							["monster"] = true,
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 16.001515,
-							["on_hold"] = false,
+							["total_without_pet"] = 24.007608,
+							["monster"] = true,
 							["dps_started"] = false,
-							["end_time"] = 1653048698,
+							["total"] = 24.007608,
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Windfury Wind Witch",
+							["nome"] = "Flatland Cougar",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									[9532] = {
+									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["n_max"] = 9,
 										["targets"] = {
-											["Moolatz"] = 16,
+											["Moolatz"] = 24,
 										},
-										["n_dmg"] = 16,
-										["n_min"] = 16,
+										["n_dmg"] = 24,
+										["n_min"] = 7,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 16,
+										["counter"] = 3,
+										["total"] = 24,
 										["c_max"] = 0,
-										["id"] = 9532,
-										["r_dmg"] = 16,
-										["RESIST"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 2,
+										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 3,
 										["b_dmg"] = 0,
-										["r_amt"] = 1,
-									},
+										["r_amt"] = 0,
+									}, -- [1]
 								},
 							},
-							["aID"] = "2963",
-							["serial"] = "Creature-0-4445-1-56-2963-0000076FA6",
+							["friendlyfire"] = {
+							},
+							["serial"] = "Creature-0-4445-1-56-3035-0000078266",
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1653048697,
-							["damage_taken"] = 148.001515,
-							["start_time"] = 1653048692,
+							["last_event"] = 1653054776,
+							["damage_taken"] = 146.007608,
+							["start_time"] = 1653054772,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 550,
+					["combatId"] = 590,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 550,
+					["combatId"] = 590,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 550,
+					["combatId"] = 590,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8921] = {
-										["activedamt"] = 0,
-										["id"] = 8921,
-										["targets"] = {
-										},
-										["uptime"] = 3,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
+							["spell_cast"] = {
+								[5177] = 3,
 							},
-							["buff_uptime"] = 18,
-							["aID"] = "4465-02B843FA",
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Moolatz",
+							["buff_uptime"] = 20,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["last_event"] = 1653054778,
+							["tipo"] = 4,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
@@ -948,7 +1069,7 @@ _detalhes_database = {
 										["id"] = 1126,
 										["targets"] = {
 										},
-										["uptime"] = 9,
+										["uptime"] = 10,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -959,7 +1080,7 @@ _detalhes_database = {
 										["id"] = 467,
 										["targets"] = {
 										},
-										["uptime"] = 9,
+										["uptime"] = 10,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -967,44 +1088,13 @@ _detalhes_database = {
 									},
 								},
 							},
-							["debuff_uptime"] = 3,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[5177] = 3,
-								[8921] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Moolatz",
-							["last_event"] = 1653048698,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
-						{
-							["monster"] = true,
-							["nome"] = "Windfury Wind Witch",
-							["flag_original"] = 68168,
-							["spell_cast"] = {
-								[9532] = 2,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4445-1-56-2963-0000076FA6",
-							["aID"] = "2963",
-						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 550,
+					["combatId"] = 590,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -1015,16 +1105,16 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
-				["CombatStartedAt"] = 777081.921,
-				["tempo_start"] = 1653048689,
+				["CombatStartedAt"] = 783217.681,
+				["tempo_start"] = 1653054768,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 7240,
+				["combat_counter"] = 7281,
 				["playing_solo"] = true,
 				["totals"] = {
-					163.992649, -- [1]
+					170, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1047,7 +1137,7 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					148, -- [1]
+					146, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1069,12 +1159,12 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "14:11:39",
+				["data_fim"] = "15:52:59",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Windfury Wind Witch",
-				["TotalElapsedCombatTime"] = 777073.715,
-				["CombatEndedAt"] = 777073.715,
+				["enemy"] = "Flatland Cougar",
+				["TotalElapsedCombatTime"] = 783153.643,
+				["CombatEndedAt"] = 783153.643,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -1094,12 +1184,12 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Moolatz"] = 148.006755,
+							["Moolatz"] = 146.0033,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 777073.715,
-				["combat_id"] = 550,
+				["end_time"] = 783153.643,
+				["combat_id"] = 590,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -1107,44 +1197,44 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["data_inicio"] = "14:11:30",
+				["data_inicio"] = "15:52:49",
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
-					["Windfury Wind Witch"] = 1,
+					["Flatland Cougar"] = 1,
 				},
-				["start_time"] = 777064.372,
+				["start_time"] = 783144.037,
 				["TimeData"] = {
 				},
-				["contra"] = "Windfury Wind Witch",
+				["contra"] = "Flatland Cougar",
 			}, -- [3]
 			{
 				{
-					["combatId"] = 549,
+					["combatId"] = 589,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008902,
+							["totalabsorbed"] = 0.005514,
 							["damage_from"] = {
-								["Windfury Harpy"] = true,
+								["Flatland Cougar"] = true,
 							},
 							["targets"] = {
-								["Windfury Harpy"] = 157,
+								["Flatland Cougar"] = 153,
 							},
-							["total"] = 157.008902,
+							["total"] = 153.005514,
 							["pets"] = {
 							},
 							["on_hold"] = false,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 157.008902,
+							["total_without_pet"] = 153.005514,
 							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1653048655,
+							["end_time"] = 1653054760,
 							["friendlyfire_total"] = 0,
 							["aID"] = "4465-02B843FA",
 							["nome"] = "Moolatz",
@@ -1156,30 +1246,57 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 18,
+										["n_max"] = 17,
 										["targets"] = {
-											["Windfury Harpy"] = 54,
+											["Flatland Cougar"] = 63,
 										},
-										["n_dmg"] = 54,
-										["n_min"] = 18,
+										["n_dmg"] = 63,
+										["n_min"] = 15,
 										["g_dmg"] = 0,
 										["counter"] = 4,
-										["total"] = 54,
+										["total"] = 63,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["PARRY"] = 1,
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
+									[5177] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 44,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Flatland Cougar"] = 75,
+										},
+										["n_dmg"] = 31,
+										["n_min"] = 31,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 75,
+										["c_max"] = 44,
+										["id"] = 5177,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 44,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[467] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -1187,7 +1304,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 3,
 										["targets"] = {
-											["Windfury Harpy"] = 15,
+											["Flatland Cougar"] = 15,
 										},
 										["n_dmg"] = 15,
 										["n_min"] = 3,
@@ -1208,83 +1325,27 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[5177] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 38,
-										["g_amt"] = 0,
-										["n_max"] = 29,
-										["targets"] = {
-											["Windfury Harpy"] = 67,
-										},
-										["n_dmg"] = 29,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 67,
-										["c_max"] = 38,
-										["id"] = 5177,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 38,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Windfury Harpy"] = 21,
-										},
-										["n_dmg"] = 21,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 21,
-										["c_max"] = 0,
-										["id"] = 8921,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 								},
 							},
 							["grupo"] = true,
 							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 7.566329429932122,
+							["last_dps"] = 10.38733971488075,
 							["custom"] = 0,
-							["last_event"] = 1653048654,
-							["damage_taken"] = 54.008902,
-							["start_time"] = 1653048634,
+							["last_event"] = 1653054759,
+							["damage_taken"] = 42.005514,
+							["start_time"] = 1653054744,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004383,
-							["total"] = 54.004383,
+							["totalabsorbed"] = 0.003798,
+							["total"] = 42.003798,
 							["damage_from"] = {
 								["Moolatz"] = true,
 							},
 							["targets"] = {
-								["Moolatz"] = 54,
+								["Moolatz"] = 42,
 							},
 							["pets"] = {
 							},
@@ -1293,14 +1354,14 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 54.004383,
+							["total_without_pet"] = 42.003798,
 							["on_hold"] = false,
 							["dps_started"] = false,
-							["end_time"] = 1653048655,
+							["end_time"] = 1653054760,
 							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["nome"] = "Windfury Harpy",
+							["nome"] = "Flatland Cougar",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -1309,20 +1370,19 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 12,
+										["n_max"] = 9,
 										["targets"] = {
-											["Moolatz"] = 54,
+											["Moolatz"] = 42,
 										},
-										["n_dmg"] = 54,
-										["n_min"] = 10,
+										["n_dmg"] = 42,
+										["n_min"] = 8,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 54,
+										["counter"] = 6,
+										["total"] = 42,
 										["c_max"] = 0,
-										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
+										["MISS"] = 1,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
@@ -1336,32 +1396,1276 @@ _detalhes_database = {
 									}, -- [1]
 								},
 							},
-							["aID"] = "2962",
-							["serial"] = "Creature-0-4445-1-56-2962-000007705C",
+							["aID"] = "3035",
+							["serial"] = "Creature-0-4445-1-56-3035-0000078D53",
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1653048651,
-							["damage_taken"] = 157.004383,
-							["start_time"] = 1653048642,
+							["last_event"] = 1653054758,
+							["damage_taken"] = 153.003798,
+							["start_time"] = 1653054750,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 549,
+					["combatId"] = 589,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 549,
+					["combatId"] = 589,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 549,
+					["combatId"] = 589,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["spell_cast"] = {
+								[5177] = 1,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Moolatz",
+							["buff_uptime"] = 32,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["last_event"] = 1653054760,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1126] = {
+										["activedamt"] = 1,
+										["id"] = 1126,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[467] = {
+										["activedamt"] = 1,
+										["id"] = 467,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["aID"] = "4465-02B843FA",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 589,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 783142.7170000001,
+				["tempo_start"] = 1653054744,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 7280,
+				["playing_solo"] = true,
+				["totals"] = {
+					195, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					153, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:52:41",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Flatland Cougar",
+				["TotalElapsedCombatTime"] = 783135.78,
+				["CombatEndedAt"] = 783135.78,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 153.005514,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 783135.78,
+				["combat_id"] = 589,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:52:25",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Flatland Cougar"] = 1,
+				},
+				["start_time"] = 783120.015,
+				["TimeData"] = {
+				},
+				["contra"] = "Flatland Cougar",
+			}, -- [4]
+			{
+				{
+					["combatId"] = 588,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007046,
+							["damage_from"] = {
+								["Prairie Stalker"] = true,
+							},
+							["targets"] = {
+								["Prairie Stalker"] = 164,
+							},
+							["total"] = 164.007046,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 164.007046,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1653054723,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 31,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Prairie Stalker"] = 74,
+										},
+										["n_dmg"] = 43,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 74,
+										["c_max"] = 31,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 31,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Prairie Stalker"] = 33,
+										},
+										["n_dmg"] = 33,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 33,
+										["c_max"] = 0,
+										["id"] = 467,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 11,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[5177] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Prairie Stalker"] = 57,
+										},
+										["n_dmg"] = 57,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 57,
+										["c_max"] = 0,
+										["id"] = 5177,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 7.885333237175217,
+							["custom"] = 0,
+							["last_event"] = 1653054722,
+							["damage_taken"] = 82.007046,
+							["start_time"] = 1653054702,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006296,
+							["total"] = 82.00629599999999,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 82,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 82.00629599999999,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1653054723,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Prairie Stalker",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Moolatz"] = 82,
+										},
+										["n_dmg"] = 82,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 82,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 11,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "2959",
+							["serial"] = "Creature-0-4445-1-56-2959-0000078F1E",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653054721,
+							["damage_taken"] = 164.006296,
+							["start_time"] = 1653054705,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 588,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "DRUID",
+							["totalover"] = 0.00147,
+							["total_without_pet"] = 8.00147,
+							["total"] = 8.00147,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.00147,
+							["last_hps"] = 0.3909258354505837,
+							["targets"] = {
+								["Moolatz"] = 8,
+							},
+							["totalover_without_pet"] = 0.00147,
+							["healing_taken"] = 8.00147,
+							["fight_component"] = true,
+							["end_time"] = 1653054723,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[774] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 8,
+										["targets"] = {
+											["Moolatz"] = 8,
+										},
+										["n_min"] = 8,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 8,
+										["c_max"] = 0,
+										["id"] = 774,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 8,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1653054722,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02B843FA",
+							["totaldenied"] = 0.00147,
+							["delay"] = 0,
+							["last_event"] = 1653054722,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 588,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 588,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["fight_component"] = true,
+							["spell_cast"] = {
+								[5177] = 1,
+								[774] = 1,
+							},
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Moolatz",
+							["buff_uptime"] = 46,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["tipo"] = 4,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[467] = {
+										["activedamt"] = 1,
+										["id"] = 467,
+										["targets"] = {
+										},
+										["uptime"] = 21,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1126] = {
+										["activedamt"] = 1,
+										["id"] = 1126,
+										["targets"] = {
+										},
+										["uptime"] = 21,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[774] = {
+										["activedamt"] = 1,
+										["id"] = 774,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["last_event"] = 1653054723,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 588,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 783118.681,
+				["tempo_start"] = 1653054702,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 7279,
+				["playing_solo"] = true,
+				["totals"] = {
+					246, -- [1]
+					8, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					164, -- [1]
+					8, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:52:04",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Prairie Stalker",
+				["TotalElapsedCombatTime"] = 783098.617,
+				["CombatEndedAt"] = 783098.617,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 8.00147,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 164.007046,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 783098.617,
+				["combat_id"] = 588,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:51:42",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Prairie Stalker"] = 1,
+				},
+				["start_time"] = 783077.23,
+				["TimeData"] = {
+				},
+				["contra"] = "Prairie Stalker",
+			}, -- [5]
+			{
+				{
+					["combatId"] = 587,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008197,
+							["damage_from"] = {
+								["Flatland Cougar"] = true,
+							},
+							["targets"] = {
+								["Flatland Cougar"] = 168,
+							},
+							["total"] = 168.008197,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 168.008197,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1653054689,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 28,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Flatland Cougar"] = 28,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 28,
+										["c_max"] = 28,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 28,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Flatland Cougar"] = 9,
+										},
+										["n_dmg"] = 9,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 9,
+										["c_max"] = 0,
+										["id"] = 467,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[5177] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 46,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Flatland Cougar"] = 131,
+										},
+										["n_dmg"] = 85,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 131,
+										["c_max"] = 46,
+										["id"] = 5177,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 46,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 12.65312524471874,
+							["custom"] = 0,
+							["last_event"] = 1653054688,
+							["damage_taken"] = 31.008197,
+							["start_time"] = 1653054675,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006261,
+							["total"] = 31.006261,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 31,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 31.006261,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1653054689,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Flatland Cougar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Moolatz"] = 31,
+										},
+										["n_dmg"] = 31,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 31,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "3035",
+							["serial"] = "Creature-0-4445-1-56-3035-000007829F",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653054687,
+							["damage_taken"] = 168.006261,
+							["start_time"] = 1653054683,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 587,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 587,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 587,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["spell_cast"] = {
+								[5177] = 3,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Moolatz",
+							["buff_uptime"] = 28,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["last_event"] = 1653054689,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1126] = {
+										["activedamt"] = 1,
+										["id"] = 1126,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[467] = {
+										["activedamt"] = 1,
+										["id"] = 467,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["aID"] = "4465-02B843FA",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 587,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 783075.73,
+				["tempo_start"] = 1653054675,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 7278,
+				["playing_solo"] = true,
+				["totals"] = {
+					199, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					168, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:51:30",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Flatland Cougar",
+				["TotalElapsedCombatTime"] = 783064.987,
+				["CombatEndedAt"] = 783064.987,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 168.008197,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 783064.987,
+				["combat_id"] = 587,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:51:16",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Flatland Cougar"] = 1,
+				},
+				["start_time"] = 783050.39,
+				["TimeData"] = {
+				},
+				["contra"] = "Flatland Cougar",
+			}, -- [6]
+			{
+				{
+					["combatId"] = 586,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003401,
+							["aID"] = "4465-02B843FA",
+							["damage_from"] = {
+								["Prairie Stalker"] = true,
+							},
+							["targets"] = {
+								["Prairie Stalker"] = 157,
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["end_time"] = 1653054654,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 157.003401,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 157.003401,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Prairie Stalker"] = 29,
+										},
+										["n_dmg"] = 29,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 29,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Prairie Stalker"] = 18,
+										},
+										["n_dmg"] = 18,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 18,
+										["c_max"] = 0,
+										["id"] = 467,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8921] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Prairie Stalker"] = 18,
+										},
+										["n_dmg"] = 18,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 18,
+										["c_max"] = 0,
+										["id"] = 8921,
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[5177] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Prairie Stalker"] = 92,
+										},
+										["n_dmg"] = 92,
+										["n_min"] = 30,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 92,
+										["c_max"] = 0,
+										["id"] = 5177,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 14.77261958972664,
+							["custom"] = 0,
+							["last_event"] = 1653054653,
+							["damage_taken"] = 47.003401,
+							["start_time"] = 1653054643,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.0031,
+							["aID"] = "2959",
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 47,
+							},
+							["end_time"] = 1653054654,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 47.0031,
+							["monster"] = true,
+							["dps_started"] = false,
+							["total"] = 47.0031,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Prairie Stalker",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Moolatz"] = 47,
+										},
+										["n_dmg"] = 47,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 47,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["serial"] = "Creature-0-4445-1-56-2959-000006ADB6",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653054653,
+							["damage_taken"] = 157.0031,
+							["start_time"] = 1653054646,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 586,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 586,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 586,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -1374,7 +2678,7 @@ _detalhes_database = {
 										["id"] = 8921,
 										["targets"] = {
 										},
-										["uptime"] = 9,
+										["uptime"] = 8,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -1382,7 +2686,7 @@ _detalhes_database = {
 									},
 								},
 							},
-							["buff_uptime"] = 42,
+							["buff_uptime"] = 22,
 							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
@@ -1392,7 +2696,7 @@ _detalhes_database = {
 										["id"] = 1126,
 										["targets"] = {
 										},
-										["uptime"] = 21,
+										["uptime"] = 11,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -1403,7 +2707,7 @@ _detalhes_database = {
 										["id"] = 467,
 										["targets"] = {
 										},
-										["uptime"] = 21,
+										["uptime"] = 11,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -1411,18 +2715,18 @@ _detalhes_database = {
 									},
 								},
 							},
-							["debuff_uptime"] = 9,
+							["debuff_uptime"] = 8,
 							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
+								[5177] = 2,
 								[8921] = 1,
-								[5177] = 1,
 							},
 							["debuff_uptime_targets"] = {
 							},
 							["nome"] = "Moolatz",
-							["last_event"] = 1653048655,
+							["last_event"] = 1653054654,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
@@ -1432,7 +2736,7 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 549,
+					["combatId"] = 586,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -1443,16 +2747,16 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
-				["CombatStartedAt"] = 777063.354,
-				["tempo_start"] = 1653048634,
+				["CombatStartedAt"] = 783048.892,
+				["tempo_start"] = 1653054643,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 7239,
+				["combat_counter"] = 7277,
 				["playing_solo"] = true,
 				["totals"] = {
-					211, -- [1]
+					204, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1497,12 +2801,12 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "14:10:55",
+				["data_fim"] = "15:50:55",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Windfury Harpy",
-				["TotalElapsedCombatTime"] = 777030.36,
-				["CombatEndedAt"] = 777030.36,
+				["enemy"] = "Prairie Stalker",
+				["TotalElapsedCombatTime"] = 783029.74,
+				["CombatEndedAt"] = 783029.74,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -1522,12 +2826,12 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Moolatz"] = 157.008902,
+							["Moolatz"] = 157.003401,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 777030.36,
-				["combat_id"] = 549,
+				["end_time"] = 783029.74,
+				["combat_id"] = 586,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -1535,44 +2839,44 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["data_inicio"] = "14:10:35",
+				["data_inicio"] = "15:50:44",
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
-					["Windfury Harpy"] = 1,
+					["Prairie Stalker"] = 1,
 				},
-				["start_time"] = 777009.609,
+				["start_time"] = 783018.664,
 				["TimeData"] = {
 				},
-				["contra"] = "Windfury Harpy",
-			}, -- [4]
+				["contra"] = "Prairie Stalker",
+			}, -- [7]
 			{
 				{
-					["combatId"] = 548,
+					["combatId"] = 585,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006483,
+							["totalabsorbed"] = 0.004772,
 							["aID"] = "4465-02B843FA",
 							["damage_from"] = {
-								["Windfury Harpy"] = true,
+								["Flatland Cougar"] = true,
 							},
 							["targets"] = {
-								["Windfury Harpy"] = 165,
+								["Flatland Cougar"] = 138,
 							},
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["end_time"] = 1653048618,
+							["end_time"] = 1653054615,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 165.006483,
+							["total_without_pet"] = 138.004772,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["total"] = 165.006483,
+							["total"] = 138.004772,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Moolatz",
@@ -1583,16 +2887,16 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 18,
+										["g_amt"] = 0,
+										["n_max"] = 16,
 										["targets"] = {
-											["Windfury Harpy"] = 81,
+											["Flatland Cougar"] = 32,
 										},
-										["n_dmg"] = 66,
-										["n_min"] = 15,
-										["g_dmg"] = 15,
-										["counter"] = 5,
-										["total"] = 81,
+										["n_dmg"] = 32,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -1603,7 +2907,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -1614,7 +2918,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 3,
 										["targets"] = {
-											["Windfury Harpy"] = 15,
+											["Flatland Cougar"] = 15,
 										},
 										["n_dmg"] = 15,
 										["n_min"] = 3,
@@ -1640,451 +2944,18 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 29,
+										["n_max"] = 31,
 										["targets"] = {
-											["Windfury Harpy"] = 56,
+											["Flatland Cougar"] = 91,
 										},
-										["n_dmg"] = 56,
-										["n_min"] = 27,
+										["n_dmg"] = 91,
+										["n_min"] = 30,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 56,
+										["counter"] = 3,
+										["total"] = 91,
 										["c_max"] = 0,
 										["id"] = 5177,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Windfury Harpy"] = 13,
-										},
-										["n_dmg"] = 13,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 13,
-										["c_max"] = 0,
-										["id"] = 8921,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 5.471581490200097,
-							["custom"] = 0,
-							["last_event"] = 1653048618,
-							["damage_taken"] = 86.006483,
-							["start_time"] = 1653048588,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008008,
-							["aID"] = "2962",
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 86,
-							},
-							["end_time"] = 1653048618,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 86.008008,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 86.008008,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Windfury Harpy",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Moolatz"] = 86,
-										},
-										["n_dmg"] = 86,
-										["n_min"] = 12,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 86,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 2,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4445-1-56-2962-00000770FE",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653048612,
-							["damage_taken"] = 165.008008,
-							["start_time"] = 1653048594,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 548,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 548,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 548,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8921] = {
-										["activedamt"] = 0,
-										["id"] = 8921,
-										["targets"] = {
-										},
-										["uptime"] = 4,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 54,
-							["aID"] = "4465-02B843FA",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[467] = {
-										["activedamt"] = 2,
-										["id"] = 467,
-										["targets"] = {
-										},
-										["uptime"] = 24,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
-										["targets"] = {
-										},
-										["uptime"] = 30,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["debuff_uptime"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[467] = 1,
-								[5177] = 1,
-								[8921] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Moolatz",
-							["last_event"] = 1653048618,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
-							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 548,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 777008.475,
-				["tempo_start"] = 1653048588,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 7238,
-				["playing_solo"] = true,
-				["totals"] = {
-					251, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					165, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "14:10:19",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Windfury Harpy",
-				["TotalElapsedCombatTime"] = 776993.978,
-				["CombatEndedAt"] = 776993.978,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 165.006483,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 776993.978,
-				["combat_id"] = 548,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "14:09:49",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Windfury Harpy"] = 1,
-				},
-				["start_time"] = 776963.488,
-				["TimeData"] = {
-				},
-				["contra"] = "Windfury Harpy",
-			}, -- [5]
-			{
-				{
-					["combatId"] = 547,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004612,
-							["aID"] = "4465-02B843FA",
-							["damage_from"] = {
-								["Windfury Wind Witch"] = true,
-								["Windfury Harpy"] = true,
-							},
-							["targets"] = {
-								["Windfury Wind Witch"] = 156,
-								["Windfury Harpy"] = 150,
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["end_time"] = 1653048578,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 306.004612,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 306.004612,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 19,
-										["targets"] = {
-											["Windfury Wind Witch"] = 45,
-											["Windfury Harpy"] = 114,
-										},
-										["n_dmg"] = 145,
-										["n_min"] = 15,
-										["g_dmg"] = 14,
-										["counter"] = 10,
-										["total"] = 159,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 9,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Windfury Wind Witch"] = 3,
-											["Windfury Harpy"] = 36,
-										},
-										["n_dmg"] = 39,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 13,
-										["total"] = 39,
-										["c_max"] = 0,
-										["id"] = 467,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 13,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[5177] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 29,
-										["targets"] = {
-											["Windfury Wind Witch"] = 87,
-										},
-										["n_dmg"] = 87,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 87,
-										["c_max"] = 0,
-										["id"] = 5177,
-										["r_dmg"] = 0,
-										["RESIST"] = 1,
 										["spellschool"] = 8,
 										["extra"] = {
 										},
@@ -2096,1567 +2967,62 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[8921] = {
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 11.80435993488365,
+							["custom"] = 0,
+							["last_event"] = 1653054613,
+							["damage_taken"] = 39.004772,
+							["start_time"] = 1653054602,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006245,
+							["aID"] = "3035",
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 39,
+							},
+							["end_time"] = 1653054615,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 39.006245,
+							["monster"] = true,
+							["dps_started"] = false,
+							["total"] = 39.006245,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Flatland Cougar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 9,
 										["targets"] = {
-											["Windfury Wind Witch"] = 21,
-										},
-										["n_dmg"] = 21,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 21,
-										["c_max"] = 0,
-										["id"] = 8921,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 7.090826370056816,
-							["custom"] = 0,
-							["last_event"] = 1653048577,
-							["damage_taken"] = 181.004612,
-							["start_time"] = 1653048534,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00142,
-							["aID"] = "2963",
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 51,
-							},
-							["end_time"] = 1653048578,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 51.00142,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 51.00142,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Windfury Wind Witch",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Moolatz"] = 11,
-										},
-										["n_dmg"] = 11,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 11,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[9532] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Moolatz"] = 40,
-										},
-										["n_dmg"] = 40,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 40,
-										["c_max"] = 0,
-										["id"] = 9532,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4445-1-56-2963-0000076F1E",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653048544,
-							["damage_taken"] = 156.00142,
-							["start_time"] = 1653048573,
-							["delay"] = 1653048544,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005614,
-							["total"] = 130.005614,
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 130,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 130.005614,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1653048578,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Windfury Harpy",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Moolatz"] = 130,
-										},
-										["n_dmg"] = 130,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 130,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 12,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["aID"] = "2962",
-							["serial"] = "Creature-0-4445-1-56-2962-0000077038",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653048574,
-							["damage_taken"] = 150.005614,
-							["start_time"] = 1653048552,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 547,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.006894,
-							["total_without_pet"] = 80.006894,
-							["total"] = 80.006894,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.006894,
-							["last_hps"] = 2.343082469399574,
-							["targets"] = {
-								["Moolatz"] = 80,
-							},
-							["totalover_without_pet"] = 0.006894,
-							["healing_taken"] = 80.006894,
-							["fight_component"] = true,
-							["end_time"] = 1653048578,
-							["healing_from"] = {
-								["Moolatz"] = true,
-							},
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[5185] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 48,
-										["targets"] = {
-											["Moolatz"] = 48,
-										},
-										["n_min"] = 48,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 48,
-										["c_max"] = 0,
-										["id"] = 5185,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 48,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-									[774] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 8,
-										["targets"] = {
-											["Moolatz"] = 32,
-										},
-										["n_min"] = 8,
-										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = 774,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 32,
-										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1653048565,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.006894,
-							["delay"] = 1653048568,
-							["last_event"] = 1653048568,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 547,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 547,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8921] = {
-										["activedamt"] = 0,
-										["id"] = 8921,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 100,
-							["aID"] = "4465-02B843FA",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[467] = {
-										["activedamt"] = 1,
-										["id"] = 467,
-										["targets"] = {
-										},
-										["uptime"] = 44,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
-										["targets"] = {
-										},
-										["uptime"] = 44,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[774] = {
-										["activedamt"] = 1,
-										["id"] = 774,
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 9,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[5185] = 1,
-								[8921] = 1,
-								[774] = 1,
-								[5177] = 3,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Moolatz",
-							["last_event"] = 1653048578,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
-							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["monster"] = true,
-							["nome"] = "Windfury Wind Witch",
-							["flag_original"] = 68168,
-							["spell_cast"] = {
-								[9532] = 2,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4445-1-56-2963-0000076F1E",
-							["aID"] = "2963",
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 547,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 776961.921,
-				["tempo_start"] = 1653048534,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 7237,
-				["playing_solo"] = true,
-				["totals"] = {
-					487, -- [1]
-					80, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					306, -- [1]
-					80, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "14:09:39",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Windfury Wind Witch",
-				["TotalElapsedCombatTime"] = 776953.562,
-				["CombatEndedAt"] = 776953.562,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Moolatz"] = 80.006894,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 306.004612,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 776953.562,
-				["combat_id"] = 547,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "14:08:55",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Windfury Wind Witch"] = 1,
-					["Windfury Harpy"] = 1,
-				},
-				["start_time"] = 776909.792,
-				["TimeData"] = {
-				},
-				["contra"] = "Windfury Wind Witch",
-			}, -- [6]
-			{
-				{
-					["combatId"] = 546,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008835,
-							["aID"] = "2960",
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 50,
-							},
-							["end_time"] = 1653048520,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 50.008835,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 50.008835,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Prairie Wolf Alpha",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 15,
-										["targets"] = {
-											["Moolatz"] = 50,
-										},
-										["n_dmg"] = 50,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 50,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4445-1-56-2960-000006B06D",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653048519,
-							["damage_taken"] = 12.008835,
-							["start_time"] = 1653048508,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003777,
-							["aID"] = "4465-02B843FA",
-							["damage_from"] = {
-								["Prairie Wolf Alpha"] = true,
-							},
-							["targets"] = {
-								["Prairie Wolf Alpha"] = 12,
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["end_time"] = 1653048520,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 12.003777,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 12.003777,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Prairie Wolf Alpha"] = 12,
-										},
-										["n_dmg"] = 12,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 12,
-										["c_max"] = 0,
-										["id"] = 467,
-										["r_dmg"] = 0,
-										["RESIST"] = 1,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 1.140718141222256,
-							["custom"] = 0,
-							["last_event"] = 1653048519,
-							["damage_taken"] = 50.003777,
-							["start_time"] = 1653048508,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 546,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.002343,
-							["total_without_pet"] = 16.002343,
-							["total"] = 16.002343,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.002343,
-							["last_hps"] = 1.680741833849861,
-							["targets"] = {
-								["Moolatz"] = 16,
-							},
-							["totalover_without_pet"] = 0.002343,
-							["healing_taken"] = 16.002343,
-							["fight_component"] = true,
-							["end_time"] = 1653048520,
-							["healing_from"] = {
-								["Moolatz"] = true,
-							},
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[774] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 8,
-										["targets"] = {
-											["Moolatz"] = 16,
-										},
-										["n_min"] = 8,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 774,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 16,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1653048515,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.002343,
-							["delay"] = 0,
-							["last_event"] = 1653048518,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 546,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 546,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["fight_component"] = true,
-							["spell_cast"] = {
-								[774] = 1,
-							},
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 32,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
-							["tipo"] = 4,
-							["aID"] = "4465-02B843FA",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[467] = {
-										["activedamt"] = 1,
-										["id"] = 467,
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[774] = {
-										["activedamt"] = 1,
-										["id"] = 774,
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["last_event"] = 1653048520,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 546,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 776908.292,
-				["tempo_start"] = 1653048508,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 7236,
-				["playing_solo"] = true,
-				["totals"] = {
-					62, -- [1]
-					16, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					12, -- [1]
-					16, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["data_fim"] = "14:08:41",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Prairie Wolf Alpha",
-				["TotalElapsedCombatTime"] = 776895.366,
-				["CombatEndedAt"] = 776895.366,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Moolatz"] = 16.002343,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 12.003777,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 776895.366,
-				["combat_id"] = 546,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "14:08:29",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-				},
-				["start_time"] = 776884.0430000001,
-				["TimeData"] = {
-				},
-				["contra"] = "Prairie Wolf Alpha",
-			}, -- [7]
-			{
-				{
-					["combatId"] = 545,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007961,
-							["damage_from"] = {
-								["Windfury Harpy"] = true,
-							},
-							["targets"] = {
-								["Windfury Harpy"] = 161,
-							},
-							["total"] = 161.007961,
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 161.007961,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1653048488,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Windfury Harpy"] = 100,
-										},
-										["n_dmg"] = 100,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 100,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Windfury Harpy"] = 24,
-										},
-										["n_dmg"] = 24,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 24,
-										["c_max"] = 0,
-										["id"] = 467,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[5177] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 27,
-										["targets"] = {
-											["Windfury Harpy"] = 27,
-										},
-										["n_dmg"] = 27,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 27,
-										["c_max"] = 0,
-										["id"] = 5177,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Windfury Harpy"] = 10,
-										},
-										["n_dmg"] = 10,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 10,
-										["c_max"] = 0,
-										["id"] = 8921,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 6.900144038732386,
-							["custom"] = 0,
-							["last_event"] = 1653048487,
-							["damage_taken"] = 101.007961,
-							["start_time"] = 1653048464,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007162,
-							["total"] = 101.007162,
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 101,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 101.007162,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1653048488,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Windfury Harpy",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Moolatz"] = 101,
-										},
-										["n_dmg"] = 101,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 101,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["aID"] = "2962",
-							["serial"] = "Creature-0-4445-1-56-2962-0000076F57",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653048482,
-							["damage_taken"] = 161.007162,
-							["start_time"] = 1653048468,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 545,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 545,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 545,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8921] = {
-										["activedamt"] = 0,
-										["id"] = 8921,
-										["targets"] = {
-										},
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 48,
-							["aID"] = "4465-02B843FA",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[467] = {
-										["activedamt"] = 1,
-										["id"] = 467,
-										["targets"] = {
-										},
-										["uptime"] = 24,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
-										["targets"] = {
-										},
-										["uptime"] = 24,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["debuff_uptime"] = 0,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[8921] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Moolatz",
-							["last_event"] = 1653048488,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
-							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 545,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 776880.753,
-				["tempo_start"] = 1653048464,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 7235,
-				["playing_solo"] = true,
-				["totals"] = {
-					262, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					161, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "14:08:09",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Windfury Harpy",
-				["TotalElapsedCombatTime"] = 776863.823,
-				["CombatEndedAt"] = 776863.823,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 161.007961,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 776863.823,
-				["combat_id"] = 545,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "14:07:45",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Windfury Harpy"] = 1,
-				},
-				["start_time"] = 776839.721,
-				["TimeData"] = {
-				},
-				["contra"] = "Windfury Harpy",
-			}, -- [8]
-			{
-				{
-					["combatId"] = 544,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004128,
-							["aID"] = "4465-02B843FA",
-							["damage_from"] = {
-								["Windfury Wind Witch"] = true,
-							},
-							["targets"] = {
-								["Windfury Wind Witch"] = 148,
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["end_time"] = 1653048456,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 148.004128,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 148.004128,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 2,
-										["n_max"] = 15,
-										["targets"] = {
-											["Windfury Wind Witch"] = 61,
-										},
-										["n_dmg"] = 30,
-										["n_min"] = 15,
-										["g_dmg"] = 31,
-										["counter"] = 6,
-										["total"] = 61,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 2,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Windfury Wind Witch"] = 12,
-										},
-										["n_dmg"] = 12,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 12,
-										["c_max"] = 0,
-										["id"] = 467,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Windfury Wind Witch"] = 23,
-										},
-										["n_dmg"] = 23,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 23,
-										["c_max"] = 0,
-										["id"] = 8921,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[5177] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Windfury Wind Witch"] = 52,
-										},
-										["n_dmg"] = 52,
-										["n_min"] = 26,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 52,
-										["c_max"] = 0,
-										["id"] = 5177,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 4.747069343774706,
-							["custom"] = 0,
-							["last_event"] = 1653048455,
-							["damage_taken"] = 111.004128,
-							["start_time"] = 1653048424,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005264,
-							["total"] = 111.005264,
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 111,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 111.005264,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1653048456,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Windfury Wind Witch",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
 											["Moolatz"] = 39,
 										},
 										["n_dmg"] = 39,
-										["n_min"] = 9,
+										["n_min"] = 7,
 										["g_dmg"] = 0,
 										["counter"] = 5,
 										["total"] = 39,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["MISS"] = 1,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
@@ -3664,271 +3030,90 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 5,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[9532] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 20,
-										["targets"] = {
-											["Moolatz"] = 72,
-										},
-										["n_dmg"] = 72,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 72,
-										["c_max"] = 0,
-										["id"] = 9532,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 4,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 								},
 							},
-							["aID"] = "2963",
-							["serial"] = "Creature-0-4445-1-56-2963-0000076FAB",
+							["friendlyfire"] = {
+							},
+							["serial"] = "Creature-0-4445-1-56-3035-0000063A99",
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1653048453,
-							["damage_taken"] = 148.005264,
-							["start_time"] = 1653048426,
+							["last_event"] = 1653054613,
+							["damage_taken"] = 138.006245,
+							["start_time"] = 1653054605,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 544,
+					["combatId"] = 585,
 					["tipo"] = 3,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.006228,
-							["total_without_pet"] = 92.006228,
-							["total"] = 92.006228,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.006228,
-							["last_hps"] = 3.048885840218652,
-							["targets"] = {
-								["Moolatz"] = 92,
-							},
-							["totalover_without_pet"] = 0.006228,
-							["healing_taken"] = 92.006228,
-							["fight_component"] = true,
-							["end_time"] = 1653048456,
-							["healing_from"] = {
-								["Moolatz"] = true,
-							},
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[774] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 8,
-										["targets"] = {
-											["Moolatz"] = 40,
-										},
-										["n_min"] = 8,
-										["counter"] = 5,
-										["overheal"] = 0,
-										["total"] = 40,
-										["c_max"] = 0,
-										["id"] = 774,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 40,
-										["totaldenied"] = 0,
-										["n_amt"] = 5,
-										["absorbed"] = 0,
-									},
-									[5185] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 52,
-										["targets"] = {
-											["Moolatz"] = 52,
-										},
-										["n_min"] = 52,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 52,
-										["c_max"] = 0,
-										["id"] = 5185,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 52,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1653048442,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.006228,
-							["delay"] = 1653048431,
-							["last_event"] = 1653048454,
-						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 544,
+					["combatId"] = 585,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 544,
+					["combatId"] = 585,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8921] = {
-										["activedamt"] = -1,
-										["id"] = 8921,
-										["targets"] = {
-										},
-										["actived_at"] = 1653048433,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20549] = {
-										["activedamt"] = 0,
-										["id"] = 20549,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
+							["spell_cast"] = {
+								[5177] = 2,
 							},
-							["buff_uptime"] = 79,
-							["aID"] = "4465-02B843FA",
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Moolatz",
+							["buff_uptime"] = 26,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["last_event"] = 1653054615,
+							["tipo"] = 4,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[467] = {
-										["activedamt"] = 1,
-										["id"] = 467,
-										["targets"] = {
-										},
-										["uptime"] = 32,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[1126] = {
 										["activedamt"] = 1,
 										["id"] = 1126,
 										["targets"] = {
 										},
-										["uptime"] = 32,
+										["uptime"] = 13,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[774] = {
-										["activedamt"] = 2,
-										["id"] = 774,
+									[467] = {
+										["activedamt"] = 1,
+										["id"] = 467,
 										["targets"] = {
 										},
-										["uptime"] = 15,
-										["appliedamt"] = 2,
+										["uptime"] = 13,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
 							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 2,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[5185] = 1,
-								[5177] = 1,
-								[774] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Moolatz",
-							["last_event"] = 1653048456,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
-						{
-							["monster"] = true,
-							["nome"] = "Windfury Wind Witch",
-							["flag_original"] = 68168,
-							["spell_cast"] = {
-								[9532] = 4,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4445-1-56-2963-0000076FAB",
-							["aID"] = "2963",
-						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 544,
+					["combatId"] = 585,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -3939,17 +3124,17 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
-				["CombatStartedAt"] = 776838.454,
-				["tempo_start"] = 1653048424,
+				["CombatStartedAt"] = 783017.297,
+				["tempo_start"] = 1653054602,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 7234,
+				["combat_counter"] = 7276,
 				["playing_solo"] = true,
 				["totals"] = {
-					259, -- [1]
-					92, -- [2]
+					177, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -3971,8 +3156,8 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					148, -- [1]
-					92, -- [2]
+					138, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -3993,12 +3178,12 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "14:07:37",
+				["data_fim"] = "15:50:16",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Windfury Wind Witch",
-				["TotalElapsedCombatTime"] = 776831.463,
-				["CombatEndedAt"] = 776831.463,
+				["enemy"] = "Flatland Cougar",
+				["TotalElapsedCombatTime"] = 782990.474,
+				["CombatEndedAt"] = 782990.474,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -4012,19 +3197,18 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Moolatz"] = 92.006228,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Moolatz"] = 148.004128,
+							["Moolatz"] = 138.004772,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 776831.463,
-				["combat_id"] = 544,
+				["end_time"] = 782990.474,
+				["combat_id"] = 585,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -4032,44 +3216,114 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["data_inicio"] = "14:07:05",
+				["data_inicio"] = "15:50:02",
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
-					["Windfury Wind Witch"] = 1,
+					["Flatland Cougar"] = 1,
 				},
-				["start_time"] = 776799.484,
+				["start_time"] = 782977.232,
 				["TimeData"] = {
 				},
-				["contra"] = "Windfury Wind Witch",
-			}, -- [9]
+				["contra"] = "Flatland Cougar",
+			}, -- [8]
 			{
 				{
-					["combatId"] = 543,
+					["combatId"] = 584,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002089,
-							["aID"] = "4465-02B843FA",
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00393,
+							["aID"] = "3035",
 							["damage_from"] = {
-								["Windfury Harpy"] = true,
+								["Moolatz"] = true,
 							},
 							["targets"] = {
-								["Windfury Harpy"] = 164,
+								["Moolatz"] = 93,
+							},
+							["end_time"] = 1653054580,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 93.00393,
+							["monster"] = true,
+							["dps_started"] = false,
+							["total"] = 93.00393,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Flatland Cougar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Moolatz"] = 93,
+										},
+										["n_dmg"] = 93,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 93,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 11,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["serial"] = "Creature-0-4445-1-56-3035-00000660C1",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653054578,
+							["damage_taken"] = 139.00393,
+							["start_time"] = 1653054554,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008851,
+							["aID"] = "4465-02B843FA",
+							["damage_from"] = {
+								["Flatland Cougar"] = true,
+							},
+							["targets"] = {
+								["Flatland Cougar"] = 139,
 							},
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["end_time"] = 1653048417,
+							["end_time"] = 1653054580,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 164.002089,
+							["total_without_pet"] = 139.008851,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["total"] = 164.002089,
+							["total"] = 139.008851,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Moolatz",
@@ -4078,18 +3332,18 @@ _detalhes_database = {
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
-										["b_amt"] = 1,
+										["b_amt"] = 0,
 										["c_dmg"] = 0,
-										["g_amt"] = 1,
+										["g_amt"] = 0,
 										["n_max"] = 17,
 										["targets"] = {
-											["Windfury Harpy"] = 89,
+											["Flatland Cougar"] = 80,
 										},
-										["n_dmg"] = 74,
-										["n_min"] = 11,
-										["g_dmg"] = 15,
-										["counter"] = 6,
-										["total"] = 89,
+										["n_dmg"] = 80,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 80,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -4101,37 +3355,9 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 11,
-										["r_amt"] = 0,
-									}, -- [1]
-									[467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Windfury Harpy"] = 18,
-										},
-										["n_dmg"] = 18,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 18,
-										["c_max"] = 0,
-										["id"] = 467,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									},
+									}, -- [1]
 									[5177] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -4139,13 +3365,13 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 29,
 										["targets"] = {
-											["Windfury Harpy"] = 57,
+											["Flatland Cougar"] = 29,
 										},
-										["n_dmg"] = 57,
-										["n_min"] = 28,
+										["n_dmg"] = 29,
+										["n_min"] = 29,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 57,
+										["counter"] = 1,
+										["total"] = 29,
 										["c_max"] = 0,
 										["id"] = 5177,
 										["r_dmg"] = 0,
@@ -4156,7 +3382,36 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Flatland Cougar"] = 30,
+										},
+										["n_dmg"] = 30,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 30,
+										["c_max"] = 0,
+										["id"] = 467,
+										["r_dmg"] = 0,
+										["RESIST"] = 1,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 10,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -4164,116 +3419,143 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 7.527866014844261,
+							["last_dps"] = 5.654443987952365,
 							["custom"] = 0,
-							["last_event"] = 1653048416,
-							["damage_taken"] = 76.002089,
-							["start_time"] = 1653048394,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00192,
-							["aID"] = "2962",
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 76,
-							},
-							["end_time"] = 1653048417,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 76.00192,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 76.00192,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Windfury Harpy",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 15,
-										["targets"] = {
-											["Moolatz"] = 76,
-										},
-										["n_dmg"] = 76,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 76,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4445-1-56-2962-0000076F86",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653048409,
-							["damage_taken"] = 164.00192,
-							["start_time"] = 1653048397,
+							["last_event"] = 1653054578,
+							["damage_taken"] = 93.00885099999999,
+							["start_time"] = 1653054554,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 543,
+					["combatId"] = 584,
 					["tipo"] = 3,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "DRUID",
+							["totalover"] = 0.00364,
+							["total_without_pet"] = 74.00364,
+							["total"] = 74.00364,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.00364,
+							["last_hps"] = 9.000685964539562,
+							["targets"] = {
+								["Moolatz"] = 74,
+							},
+							["totalover_without_pet"] = 0.00364,
+							["healing_taken"] = 74.00364,
+							["fight_component"] = true,
+							["end_time"] = 1653054580,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[774] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 8,
+										["targets"] = {
+											["Moolatz"] = 24,
+										},
+										["n_min"] = 8,
+										["counter"] = 3,
+										["overheal"] = 0,
+										["total"] = 24,
+										["c_max"] = 0,
+										["id"] = 774,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 24,
+										["totaldenied"] = 0,
+										["n_amt"] = 3,
+										["absorbed"] = 0,
+									},
+									[5185] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 50,
+										["targets"] = {
+											["Moolatz"] = 50,
+										},
+										["n_min"] = 50,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 50,
+										["c_max"] = 0,
+										["id"] = 5185,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 50,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1653054571,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02B843FA",
+							["totaldenied"] = 0.00364,
+							["delay"] = 1653054562,
+							["last_event"] = 1653054562,
+						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 543,
+					["combatId"] = 584,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 543,
+					["combatId"] = 584,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1047,
+							["fight_component"] = true,
 							["spell_cast"] = {
 								[5177] = 1,
+								[5185] = 1,
 							},
+							["flag_original"] = 1047,
 							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["nome"] = "Moolatz",
-							["buff_uptime"] = 46,
+							["buff_uptime"] = 58,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
-							["last_event"] = 1653048417,
 							["tipo"] = 4,
+							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
@@ -4282,7 +3564,7 @@ _detalhes_database = {
 										["id"] = 467,
 										["targets"] = {
 										},
-										["uptime"] = 23,
+										["uptime"] = 26,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -4293,7 +3575,18 @@ _detalhes_database = {
 										["id"] = 1126,
 										["targets"] = {
 										},
-										["uptime"] = 23,
+										["uptime"] = 26,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[774] = {
+										["activedamt"] = 1,
+										["id"] = 774,
+										["targets"] = {
+										},
+										["uptime"] = 6,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -4302,12 +3595,12 @@ _detalhes_database = {
 								},
 							},
 							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
+							["last_event"] = 1653054580,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 543,
+					["combatId"] = 584,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -4318,17 +3611,17 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
-				["CombatStartedAt"] = 776798.834,
-				["tempo_start"] = 1653048394,
+				["CombatStartedAt"] = 782976.181,
+				["tempo_start"] = 1653054554,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 7233,
+				["combat_counter"] = 7275,
 				["playing_solo"] = true,
 				["totals"] = {
-					240, -- [1]
-					0, -- [2]
+					232, -- [1]
+					74, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -4350,8 +3643,8 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					164, -- [1]
-					0, -- [2]
+					139, -- [1]
+					74, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -4372,12 +3665,12 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "14:06:58",
+				["data_fim"] = "15:49:40",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Windfury Harpy",
-				["TotalElapsedCombatTime"] = 776792.648,
-				["CombatEndedAt"] = 776792.648,
+				["enemy"] = "Flatland Cougar",
+				["TotalElapsedCombatTime"] = 782955.2270000001,
+				["CombatEndedAt"] = 782955.2270000001,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -4391,18 +3684,19 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
+							["Moolatz"] = 74.00364,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Moolatz"] = 164.002089,
+							["Moolatz"] = 139.008851,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 776792.648,
-				["combat_id"] = 543,
+				["end_time"] = 782955.2270000001,
+				["combat_id"] = 584,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -4410,78 +3704,76 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["data_inicio"] = "14:06:35",
+				["data_inicio"] = "15:49:14",
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
-					["Windfury Harpy"] = 1,
+					["Flatland Cougar"] = 1,
 				},
-				["start_time"] = 776769.843,
+				["start_time"] = 782929.275,
 				["TimeData"] = {
 				},
-				["contra"] = "Windfury Harpy",
-			}, -- [10]
+				["contra"] = "Flatland Cougar",
+			}, -- [9]
 			{
 				{
-					["combatId"] = 542,
+					["combatId"] = 583,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00132,
-							["aID"] = "4465-02B843FA",
+							["totalabsorbed"] = 0.005185,
 							["damage_from"] = {
-								["Windfury Harpy"] = true,
+								["Flatland Cougar"] = true,
 							},
 							["targets"] = {
-								["Windfury Harpy"] = 137,
+								["Flatland Cougar"] = 161,
 							},
+							["total"] = 161.005185,
 							["pets"] = {
 							},
-							["colocacao"] = 1,
-							["end_time"] = 1653048384,
+							["on_hold"] = false,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 137.00132,
+							["total_without_pet"] = 161.005185,
+							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["total"] = 137.00132,
+							["end_time"] = 1653054544,
 							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["aID"] = "4465-02B843FA",
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
-										["b_amt"] = 1,
+										["b_amt"] = 0,
 										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 19,
+										["g_amt"] = 0,
+										["n_max"] = 17,
 										["targets"] = {
-											["Windfury Harpy"] = 84,
+											["Flatland Cougar"] = 102,
 										},
-										["n_dmg"] = 66,
+										["n_dmg"] = 102,
 										["n_min"] = 13,
-										["g_dmg"] = 18,
+										["g_dmg"] = 0,
 										["counter"] = 7,
-										["total"] = 84,
+										["total"] = 102,
 										["c_max"] = 0,
-										["DODGE"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["PARRY"] = 1,
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 13,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 									[467] = {
@@ -4491,17 +3783,16 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 3,
 										["targets"] = {
-											["Windfury Harpy"] = 27,
+											["Flatland Cougar"] = 33,
 										},
-										["n_dmg"] = 27,
+										["n_dmg"] = 33,
 										["n_min"] = 3,
 										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 27,
+										["counter"] = 11,
+										["total"] = 33,
 										["c_max"] = 0,
 										["id"] = 467,
 										["r_dmg"] = 0,
-										["RESIST"] = 1,
 										["spellschool"] = 8,
 										["extra"] = {
 										},
@@ -4509,7 +3800,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 9,
+										["n_amt"] = 11,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -4520,7 +3811,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 26,
 										["targets"] = {
-											["Windfury Harpy"] = 26,
+											["Flatland Cougar"] = 26,
 										},
 										["n_dmg"] = 26,
 										["n_min"] = 26,
@@ -4545,23 +3836,23 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 5.301703494467636,
+							["last_dps"] = 6.082093721652771,
 							["custom"] = 0,
-							["last_event"] = 1653048384,
-							["damage_taken"] = 107.00132,
-							["start_time"] = 1653048358,
+							["last_event"] = 1653054543,
+							["damage_taken"] = 118.005185,
+							["start_time"] = 1653054517,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002579,
-							["total"] = 107.002579,
+							["totalabsorbed"] = 0.007772,
+							["total"] = 118.007772,
 							["damage_from"] = {
 								["Moolatz"] = true,
 							},
 							["targets"] = {
-								["Moolatz"] = 107,
+								["Moolatz"] = 118,
 							},
 							["pets"] = {
 							},
@@ -4570,14 +3861,14 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 107.002579,
+							["total_without_pet"] = 118.007772,
 							["on_hold"] = false,
 							["dps_started"] = false,
-							["end_time"] = 1653048384,
+							["end_time"] = 1653054544,
 							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["nome"] = "Windfury Harpy",
+							["nome"] = "Flatland Cougar",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -4588,13 +3879,13 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 12,
 										["targets"] = {
-											["Moolatz"] = 107,
+											["Moolatz"] = 118,
 										},
-										["n_dmg"] = 107,
+										["n_dmg"] = 118,
 										["n_min"] = 9,
 										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 107,
+										["counter"] = 12,
+										["total"] = 118,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -4606,26 +3897,26 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 10,
+										["n_amt"] = 11,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
 								},
 							},
-							["aID"] = "2962",
-							["serial"] = "Creature-0-4445-1-56-2962-0001076E91",
+							["aID"] = "3035",
+							["serial"] = "Creature-0-4445-1-56-3035-00000664C0",
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1653048379,
-							["damage_taken"] = 137.002579,
-							["start_time"] = 1653048359,
+							["last_event"] = 1653054542,
+							["damage_taken"] = 161.007772,
+							["start_time"] = 1653054520,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 542,
+					["combatId"] = 583,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
@@ -4636,9 +3927,9 @@ _detalhes_database = {
 							},
 							["iniciar_hps"] = false,
 							["classe"] = "DRUID",
-							["totalover"] = 0.0074,
-							["total_without_pet"] = 83.0074,
-							["total"] = 83.0074,
+							["totalover"] = 0.0076,
+							["total_without_pet"] = 24.0076,
+							["total"] = 24.0076,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
@@ -4646,15 +3937,15 @@ _detalhes_database = {
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.0074,
-							["last_hps"] = 4.392390729194359,
+							["totalabsorb"] = 0.0076,
+							["last_hps"] = 0.9679703249728111,
 							["targets"] = {
-								["Moolatz"] = 83,
+								["Moolatz"] = 24,
 							},
-							["totalover_without_pet"] = 0.0074,
-							["healing_taken"] = 83.0074,
+							["totalover_without_pet"] = 0.0076,
+							["healing_taken"] = 24.0076,
 							["fight_component"] = true,
-							["end_time"] = 1653048384,
+							["end_time"] = 1653054544,
 							["healing_from"] = {
 								["Moolatz"] = true,
 							},
@@ -4669,82 +3960,58 @@ _detalhes_database = {
 										},
 										["n_max"] = 8,
 										["targets"] = {
-											["Moolatz"] = 32,
+											["Moolatz"] = 24,
 										},
 										["n_min"] = 8,
-										["counter"] = 4,
+										["counter"] = 3,
 										["overheal"] = 0,
-										["total"] = 32,
+										["total"] = 24,
 										["c_max"] = 0,
 										["id"] = 774,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 32,
+										["n_curado"] = 24,
 										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["absorbed"] = 0,
-									},
-									[5185] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 51,
-										["targets"] = {
-											["Moolatz"] = 51,
-										},
-										["n_min"] = 51,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 51,
-										["c_max"] = 0,
-										["id"] = 5185,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 51,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 3,
 										["absorbed"] = 0,
 									},
 								},
 							},
 							["grupo"] = true,
 							["heal_enemy_amt"] = 0,
-							["start_time"] = 1653048360,
+							["start_time"] = 1653054536,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.0074,
+							["totaldenied"] = 0.0076,
 							["delay"] = 0,
-							["last_event"] = 1653048377,
+							["last_event"] = 1653054541,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 542,
+					["combatId"] = 583,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 542,
+					["combatId"] = 583,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["fight_component"] = true,
 							["spell_cast"] = {
-								[5185] = 1,
+								[774] = 1,
 							},
 							["flag_original"] = 1047,
 							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["nome"] = "Moolatz",
-							["buff_uptime"] = 63,
+							["buff_uptime"] = 65,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
@@ -4758,7 +4025,7 @@ _detalhes_database = {
 										["id"] = 467,
 										["targets"] = {
 										},
-										["uptime"] = 26,
+										["uptime"] = 27,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -4769,7 +4036,7 @@ _detalhes_database = {
 										["id"] = 1126,
 										["targets"] = {
 										},
-										["uptime"] = 26,
+										["uptime"] = 27,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -4789,12 +4056,12 @@ _detalhes_database = {
 								},
 							},
 							["serial"] = "Player-4465-02B843FA",
-							["last_event"] = 1653048384,
+							["last_event"] = 1653054544,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 542,
+					["combatId"] = 583,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -4805,17 +4072,17 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
-				["CombatStartedAt"] = 776768.51,
-				["tempo_start"] = 1653048358,
+				["CombatStartedAt"] = 782927.642,
+				["tempo_start"] = 1653054517,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 7232,
+				["combat_counter"] = 7274,
 				["playing_solo"] = true,
 				["totals"] = {
-					244, -- [1]
-					83, -- [2]
+					279, -- [1]
+					24, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -4837,8 +4104,8 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					137, -- [1]
-					83, -- [2]
+					161, -- [1]
+					24, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -4859,12 +4126,12 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "14:06:25",
+				["data_fim"] = "15:49:05",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Windfury Harpy",
-				["TotalElapsedCombatTime"] = 776759.455,
-				["CombatEndedAt"] = 776759.455,
+				["enemy"] = "Flatland Cougar",
+				["TotalElapsedCombatTime"] = 782919.566,
+				["CombatEndedAt"] = 782919.566,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -4878,19 +4145,19 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Moolatz"] = 83.0074,
+							["Moolatz"] = 24.0076,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Moolatz"] = 137.00132,
+							["Moolatz"] = 161.005185,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 776759.455,
-				["combat_id"] = 542,
+				["end_time"] = 782919.566,
+				["combat_id"] = 583,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -4898,44 +4165,44 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["data_inicio"] = "14:05:59",
+				["data_inicio"] = "15:48:37",
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
-					["Windfury Harpy"] = 1,
+					["Flatland Cougar"] = 1,
 				},
-				["start_time"] = 776733.6140000001,
+				["start_time"] = 782892.343,
 				["TimeData"] = {
 				},
-				["contra"] = "Windfury Harpy",
-			}, -- [11]
+				["contra"] = "Flatland Cougar",
+			}, -- [10]
 			{
 				{
-					["combatId"] = 541,
+					["combatId"] = 582,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001648,
+							["totalabsorbed"] = 0.002015,
 							["aID"] = "4465-02B843FA",
 							["damage_from"] = {
-								["Windfury Harpy"] = true,
+								["Mazzranache"] = true,
 							},
 							["targets"] = {
-								["Windfury Harpy"] = 139,
+								["Mazzranache"] = 198,
 							},
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["end_time"] = 1653048349,
+							["end_time"] = 1653054494,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 139.001648,
+							["total_without_pet"] = 198.002015,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["total"] = 139.001648,
+							["total"] = 198.002015,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Moolatz",
@@ -4946,16 +4213,394 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
+										["g_amt"] = 1,
+										["n_max"] = 15,
 										["targets"] = {
-											["Windfury Harpy"] = 34,
+											["Mazzranache"] = 60,
 										},
-										["n_dmg"] = 34,
-										["n_min"] = 16,
+										["n_dmg"] = 45,
+										["n_min"] = 15,
+										["g_dmg"] = 15,
+										["counter"] = 4,
+										["total"] = 60,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Mazzranache"] = 24,
+										},
+										["n_dmg"] = 24,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 24,
+										["c_max"] = 0,
+										["id"] = 467,
+										["r_dmg"] = 0,
+										["RESIST"] = 1,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 8,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[5177] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Mazzranache"] = 114,
+										},
+										["n_dmg"] = 114,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 114,
+										["c_max"] = 0,
+										["id"] = 5177,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 9.891692811114238,
+							["custom"] = 0,
+							["last_event"] = 1653054491,
+							["damage_taken"] = 133.002015,
+							["start_time"] = 1653054471,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006387,
+							["aID"] = "3068",
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 133,
+							},
+							["end_time"] = 1653054494,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 133.006387,
+							["monster"] = true,
+							["dps_started"] = false,
+							["total"] = 133.006387,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Mazzranache",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 41,
+										["targets"] = {
+											["Moolatz"] = 133,
+										},
+										["n_dmg"] = 133,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 133,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 9,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["serial"] = "Creature-0-4445-1-56-3068-000007876F",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653054490,
+							["damage_taken"] = 198.006387,
+							["start_time"] = 1653054474,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 582,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 582,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 582,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["spell_cast"] = {
+								[5177] = 3,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Moolatz",
+							["buff_uptime"] = 46,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["last_event"] = 1653054494,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1126] = {
+										["activedamt"] = 1,
+										["id"] = 1126,
+										["targets"] = {
+										},
+										["uptime"] = 23,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[467] = {
+										["activedamt"] = 1,
+										["id"] = 467,
+										["targets"] = {
+										},
+										["uptime"] = 23,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["aID"] = "4465-02B843FA",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 582,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 782891.0260000001,
+				["tempo_start"] = 1653054471,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 7273,
+				["playing_solo"] = true,
+				["totals"] = {
+					331, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					198, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:48:15",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Mazzranache",
+				["TotalElapsedCombatTime"] = 782870.0920000001,
+				["CombatEndedAt"] = 782870.0920000001,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 198.002015,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 782870.0920000001,
+				["combat_id"] = 582,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:47:52",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Mazzranache"] = 1,
+				},
+				["start_time"] = 782847.022,
+				["TimeData"] = {
+				},
+				["contra"] = "Mazzranache",
+			}, -- [11]
+			{
+				{
+					["combatId"] = 581,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003256,
+							["damage_from"] = {
+								["Prairie Stalker"] = true,
+							},
+							["targets"] = {
+								["Prairie Stalker"] = 157,
+							},
+							["total"] = 157.003256,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 157.003256,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1653054458,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Prairie Stalker"] = 30,
+										},
+										["n_dmg"] = 30,
+										["n_min"] = 14,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 34,
+										["total"] = 30,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -4977,432 +4622,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 3,
 										["targets"] = {
-											["Windfury Harpy"] = 9,
-										},
-										["n_dmg"] = 9,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 9,
-										["c_max"] = 0,
-										["id"] = 467,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Windfury Harpy"] = 16,
-										},
-										["n_dmg"] = 16,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 8921,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[5177] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 29,
-										["targets"] = {
-											["Windfury Harpy"] = 80,
-										},
-										["n_dmg"] = 80,
-										["n_min"] = 25,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 80,
-										["c_max"] = 0,
-										["id"] = 5177,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 14.67035862800439,
-							["custom"] = 0,
-							["last_event"] = 1653048348,
-							["damage_taken"] = 31.001648,
-							["start_time"] = 1653048339,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003739,
-							["aID"] = "2962",
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 31,
-							},
-							["end_time"] = 1653048349,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 31.003739,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 31.003739,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Windfury Harpy",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Moolatz"] = 31,
-										},
-										["n_dmg"] = 31,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 31,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4445-1-56-2962-0000076F23",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653048346,
-							["damage_taken"] = 139.003739,
-							["start_time"] = 1653048342,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 541,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 541,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 541,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8921] = {
-										["activedamt"] = 0,
-										["id"] = 8921,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 20,
-							["aID"] = "4465-02B843FA",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[467] = {
-										["activedamt"] = 1,
-										["id"] = 467,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["debuff_uptime"] = 7,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[5177] = 2,
-								[8921] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Moolatz",
-							["last_event"] = 1653048349,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
-							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 541,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 776732.713,
-				["tempo_start"] = 1653048339,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 7231,
-				["playing_solo"] = true,
-				["totals"] = {
-					170, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					139, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "14:05:49",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Windfury Harpy",
-				["TotalElapsedCombatTime"] = 776724.275,
-				["CombatEndedAt"] = 776724.275,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 139.001648,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 776724.275,
-				["combat_id"] = 541,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "14:05:39",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Windfury Harpy"] = 1,
-				},
-				["start_time"] = 776714.349,
-				["TimeData"] = {
-				},
-				["contra"] = "Windfury Harpy",
-			}, -- [12]
-			{
-				{
-					["combatId"] = 540,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003437,
-							["aID"] = "4465-02B843FA",
-							["damage_from"] = {
-								["Windfury Harpy"] = true,
-							},
-							["targets"] = {
-								["Windfury Harpy"] = 171,
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["end_time"] = 1653048323,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 171.003437,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 171.003437,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 32,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Windfury Harpy"] = 82,
-										},
-										["n_dmg"] = 50,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 82,
-										["c_max"] = 32,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 32,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Windfury Harpy"] = 15,
+											["Prairie Stalker"] = 15,
 										},
 										["n_dmg"] = 15,
 										["n_min"] = 3,
@@ -5428,47 +4648,19 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 27,
+										["n_max"] = 30,
 										["targets"] = {
-											["Windfury Harpy"] = 54,
+											["Prairie Stalker"] = 112,
 										},
-										["n_dmg"] = 54,
+										["n_dmg"] = 112,
 										["n_min"] = 27,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 54,
+										["counter"] = 4,
+										["total"] = 112,
 										["c_max"] = 0,
 										["id"] = 5177,
 										["r_dmg"] = 0,
 										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Windfury Harpy"] = 20,
-										},
-										["n_dmg"] = 20,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 20,
-										["c_max"] = 0,
-										["id"] = 8921,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -5483,38 +4675,39 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 8.592273992562758,
+							["last_dps"] = 14.48102342732857,
 							["custom"] = 0,
-							["last_event"] = 1653048322,
-							["damage_taken"] = 63.003437,
-							["start_time"] = 1653048302,
+							["last_event"] = 1653054458,
+							["damage_taken"] = 39.003256,
+							["start_time"] = 1653054447,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005907,
-							["aID"] = "2962",
+							["totalabsorbed"] = 0.005501,
+							["total"] = 39.005501,
 							["damage_from"] = {
 								["Moolatz"] = true,
 							},
 							["targets"] = {
-								["Moolatz"] = 63,
+								["Moolatz"] = 39,
 							},
-							["end_time"] = 1653048323,
 							["pets"] = {
 							},
+							["monster"] = true,
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 63.005907,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 63.005907,
+							["total_without_pet"] = 39.005501,
 							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1653054458,
 							["friendlyfire_total"] = 0,
-							["nome"] = "Windfury Harpy",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Prairie Stalker",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -5523,15 +4716,15 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 14,
+										["n_max"] = 9,
 										["targets"] = {
-											["Moolatz"] = 63,
+											["Moolatz"] = 39,
 										},
-										["n_dmg"] = 63,
-										["n_min"] = 11,
+										["n_dmg"] = 39,
+										["n_min"] = 7,
 										["g_dmg"] = 0,
 										["counter"] = 5,
-										["total"] = 63,
+										["total"] = 39,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -5548,156 +4741,69 @@ _detalhes_database = {
 									}, -- [1]
 								},
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4445-1-56-2962-0000076EE0",
+							["aID"] = "2959",
+							["serial"] = "Creature-0-4445-1-56-2959-000006AE1F",
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1653048314,
-							["damage_taken"] = 171.005907,
-							["start_time"] = 1653048306,
+							["last_event"] = 1653054457,
+							["damage_taken"] = 157.005501,
+							["start_time"] = 1653054451,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 540,
+					["combatId"] = 581,
 					["tipo"] = 3,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.005254,
-							["total_without_pet"] = 32.005254,
-							["total"] = 32.005254,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.005254,
-							["last_hps"] = 3.03080056816578,
-							["targets"] = {
-								["Moolatz"] = 32,
-							},
-							["totalover_without_pet"] = 0.005254,
-							["healing_taken"] = 32.005254,
-							["fight_component"] = true,
-							["end_time"] = 1653048323,
-							["healing_from"] = {
-								["Moolatz"] = true,
-							},
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[774] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 8,
-										["targets"] = {
-											["Moolatz"] = 32,
-										},
-										["n_min"] = 8,
-										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = 774,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 32,
-										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1653048313,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.005254,
-							["delay"] = 1653048312,
-							["last_event"] = 1653048312,
-						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 540,
+					["combatId"] = 581,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 540,
+					["combatId"] = 581,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8921] = {
-										["activedamt"] = 0,
-										["id"] = 8921,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
+							["spell_cast"] = {
+								[5177] = 3,
 							},
-							["buff_uptime"] = 52,
-							["aID"] = "4465-02B843FA",
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Moolatz",
+							["buff_uptime"] = 22,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["last_event"] = 1653054458,
+							["tipo"] = 4,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[467] = {
-										["activedamt"] = 1,
-										["id"] = 467,
-										["targets"] = {
-										},
-										["uptime"] = 21,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[1126] = {
 										["activedamt"] = 1,
 										["id"] = 1126,
 										["targets"] = {
 										},
-										["uptime"] = 21,
+										["uptime"] = 11,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[774] = {
+									[467] = {
 										["activedamt"] = 1,
-										["id"] = 774,
+										["id"] = 467,
 										["targets"] = {
 										},
-										["uptime"] = 10,
+										["uptime"] = 11,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -5705,29 +4811,13 @@ _detalhes_database = {
 									},
 								},
 							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 9,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[5177] = 1,
-								[8921] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Moolatz",
-							["last_event"] = 1653048323,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 540,
+					["combatId"] = 581,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -5738,17 +4828,17 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
-				["CombatStartedAt"] = 776713.115,
-				["tempo_start"] = 1653048302,
+				["CombatStartedAt"] = 782845.755,
+				["tempo_start"] = 1653054447,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 7230,
+				["combat_counter"] = 7272,
 				["playing_solo"] = true,
 				["totals"] = {
-					234, -- [1]
-					32, -- [2]
+					196, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -5770,8 +4860,8 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					171, -- [1]
-					32, -- [2]
+					157, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -5792,12 +4882,12 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "14:05:24",
+				["data_fim"] = "15:47:39",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Windfury Harpy",
-				["TotalElapsedCombatTime"] = 776698.3690000001,
-				["CombatEndedAt"] = 776698.3690000001,
+				["enemy"] = "Prairie Stalker",
+				["TotalElapsedCombatTime"] = 782833.942,
+				["CombatEndedAt"] = 782833.942,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -5811,19 +4901,18 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Moolatz"] = 32.005254,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Moolatz"] = 171.003437,
+							["Moolatz"] = 157.003256,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 776698.3690000001,
-				["combat_id"] = 540,
+				["end_time"] = 782833.942,
+				["combat_id"] = 581,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -5831,78 +4920,78 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["data_inicio"] = "14:05:03",
+				["data_inicio"] = "15:47:28",
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
-					["Windfury Harpy"] = 1,
+					["Prairie Stalker"] = 1,
 				},
-				["start_time"] = 776677.549,
+				["start_time"] = 782822.818,
 				["TimeData"] = {
 				},
-				["contra"] = "Windfury Harpy",
-			}, -- [13]
+				["contra"] = "Prairie Stalker",
+			}, -- [12]
 			{
 				{
-					["combatId"] = 539,
+					["combatId"] = 580,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007056,
-							["aID"] = "4465-02B843FA",
+							["totalabsorbed"] = 0.007374,
 							["damage_from"] = {
-								["Windfury Wind Witch"] = true,
+								["Flatland Cougar"] = true,
 							},
 							["targets"] = {
-								["Windfury Wind Witch"] = 179,
+								["Flatland Cougar"] = 138,
 							},
+							["total"] = 138.007374,
 							["pets"] = {
 							},
-							["colocacao"] = 1,
-							["end_time"] = 1653048294,
+							["on_hold"] = false,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 179.007056,
+							["total_without_pet"] = 138.007374,
+							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["total"] = 179.007056,
+							["end_time"] = 1653054415,
 							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["aID"] = "4465-02B843FA",
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
+									[5177] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 2,
-										["n_max"] = 15,
+										["c_dmg"] = 45,
+										["g_amt"] = 0,
+										["n_max"] = 29,
 										["targets"] = {
-											["Windfury Wind Witch"] = 112,
+											["Flatland Cougar"] = 132,
 										},
-										["n_dmg"] = 83,
-										["n_min"] = 12,
-										["g_dmg"] = 29,
-										["counter"] = 8,
-										["total"] = 112,
-										["c_max"] = 0,
-										["id"] = 1,
+										["n_dmg"] = 87,
+										["n_min"] = 29,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 132,
+										["c_max"] = 45,
+										["id"] = 5177,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["spellschool"] = 8,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 45,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 3,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									}, -- [1]
+									},
 									[467] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -5910,13 +4999,13 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 3,
 										["targets"] = {
-											["Windfury Wind Witch"] = 18,
+											["Flatland Cougar"] = 6,
 										},
-										["n_dmg"] = 18,
+										["n_dmg"] = 6,
 										["n_min"] = 3,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 18,
+										["counter"] = 2,
+										["total"] = 6,
 										["c_max"] = 0,
 										["id"] = 467,
 										["r_dmg"] = 0,
@@ -5927,63 +5016,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[8921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Windfury Wind Witch"] = 22,
-										},
-										["n_dmg"] = 22,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 22,
-										["c_max"] = 0,
-										["id"] = 8921,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[5177] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 27,
-										["targets"] = {
-											["Windfury Wind Witch"] = 27,
-										},
-										["n_dmg"] = 27,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 27,
-										["c_max"] = 0,
-										["id"] = 5177,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -5991,38 +5024,39 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 5.825914730213407,
+							["last_dps"] = 18.22120068650551,
 							["custom"] = 0,
-							["last_event"] = 1653048294,
-							["damage_taken"] = 120.007056,
-							["start_time"] = 1653048263,
+							["last_event"] = 1653054413,
+							["damage_taken"] = 16.007374,
+							["start_time"] = 1653054406,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005132,
-							["aID"] = "2963",
+							["totalabsorbed"] = 0.006884,
+							["total"] = 16.006884,
 							["damage_from"] = {
 								["Moolatz"] = true,
 							},
 							["targets"] = {
-								["Moolatz"] = 120,
+								["Moolatz"] = 16,
 							},
-							["end_time"] = 1653048294,
 							["pets"] = {
 							},
+							["monster"] = true,
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 120.005132,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 120.005132,
+							["total_without_pet"] = 16.006884,
 							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1653054415,
 							["friendlyfire_total"] = 0,
-							["nome"] = "Windfury Wind Witch",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Flatland Cougar",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -6031,15 +5065,268 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 12,
+										["n_max"] = 8,
 										["targets"] = {
-											["Moolatz"] = 68,
+											["Moolatz"] = 16,
 										},
-										["n_dmg"] = 68,
-										["n_min"] = 10,
+										["n_dmg"] = 16,
+										["n_min"] = 8,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 68,
+										["counter"] = 2,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "3035",
+							["serial"] = "Creature-0-4445-1-56-3035-000006AF53",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653054413,
+							["damage_taken"] = 138.006884,
+							["start_time"] = 1653054411,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 580,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 580,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 580,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["spell_cast"] = {
+								[5177] = 3,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Moolatz",
+							["buff_uptime"] = 18,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["last_event"] = 1653054415,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1126] = {
+										["activedamt"] = 1,
+										["id"] = 1126,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[467] = {
+										["activedamt"] = 1,
+										["id"] = 467,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["aID"] = "4465-02B843FA",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 580,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 782821.268,
+				["tempo_start"] = 1653054406,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 7271,
+				["playing_solo"] = true,
+				["totals"] = {
+					154, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					138, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:46:55",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Flatland Cougar",
+				["TotalElapsedCombatTime"] = 782790.241,
+				["CombatEndedAt"] = 782790.241,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 138.007374,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 782790.241,
+				["combat_id"] = 580,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:46:47",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Flatland Cougar"] = 1,
+				},
+				["start_time"] = 782781.718,
+				["TimeData"] = {
+				},
+				["contra"] = "Flatland Cougar",
+			}, -- [13]
+			{
+				{
+					["combatId"] = 579,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008864,
+							["aID"] = "4465-02B843FA",
+							["damage_from"] = {
+								["Flatland Cougar"] = true,
+							},
+							["targets"] = {
+								["Flatland Cougar"] = 156,
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["end_time"] = 1653054366,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 156.008864,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 156.008864,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Flatland Cougar"] = 73,
+										},
+										["n_dmg"] = 73,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 73,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -6051,197 +5338,184 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 5,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[9532] = {
+									[5177] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 22,
+										["n_max"] = 31,
 										["targets"] = {
-											["Moolatz"] = 52,
+											["Flatland Cougar"] = 59,
 										},
-										["n_dmg"] = 52,
-										["n_min"] = 13,
+										["n_dmg"] = 59,
+										["n_min"] = 28,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 52,
+										["counter"] = 2,
+										["total"] = 59,
 										["c_max"] = 0,
-										["id"] = 9532,
-										["r_dmg"] = 30,
+										["id"] = 5177,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 3,
+										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
-										["r_amt"] = 2,
+										["r_amt"] = 0,
 									},
+									[467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Flatland Cougar"] = 24,
+										},
+										["n_dmg"] = 24,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 24,
+										["c_max"] = 0,
+										["id"] = 467,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 8,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 5.204285418828857,
+							["custom"] = 0,
+							["last_event"] = 1653054365,
+							["damage_taken"] = 116.008864,
+							["start_time"] = 1653054335,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00693,
+							["aID"] = "3035",
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 116,
+							},
+							["end_time"] = 1653054366,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 116.00693,
+							["monster"] = true,
+							["dps_started"] = false,
+							["total"] = 116.00693,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Flatland Cougar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Moolatz"] = 116,
+										},
+										["n_dmg"] = 116,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 116,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 12,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
 								},
 							},
 							["friendlyfire"] = {
 							},
-							["serial"] = "Creature-0-4445-1-56-2963-0000076F14",
+							["serial"] = "Creature-0-4445-1-56-3035-0000077009",
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1653048289,
-							["damage_taken"] = 179.005132,
-							["start_time"] = 1653048266,
+							["last_event"] = 1653054365,
+							["damage_taken"] = 156.00693,
+							["start_time"] = 1653054341,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 539,
+					["combatId"] = 579,
 					["tipo"] = 3,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.005215,
-							["total_without_pet"] = 73.00521499999999,
-							["total"] = 73.00521499999999,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.005215,
-							["last_hps"] = 2.529896212360998,
-							["targets"] = {
-								["Moolatz"] = 73,
-							},
-							["totalover_without_pet"] = 0.005215,
-							["healing_taken"] = 73.00521499999999,
-							["fight_component"] = true,
-							["end_time"] = 1653048294,
-							["healing_from"] = {
-								["Moolatz"] = true,
-							},
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[5185] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 41,
-										["targets"] = {
-											["Moolatz"] = 41,
-										},
-										["n_min"] = 41,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 41,
-										["c_max"] = 0,
-										["id"] = 5185,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 41,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["absorbed"] = 0,
-									},
-									[774] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 8,
-										["targets"] = {
-											["Moolatz"] = 32,
-										},
-										["n_min"] = 8,
-										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = 774,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 32,
-										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1653048280,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.005215,
-							["delay"] = 0,
-							["last_event"] = 1653048292,
-						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 539,
+					["combatId"] = 579,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 539,
+					["combatId"] = 579,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8921] = {
-										["activedamt"] = -1,
-										["id"] = 8921,
-										["targets"] = {
-										},
-										["actived_at"] = 1653048272,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
+							["spell_cast"] = {
+								[5177] = 1,
+								[467] = 1,
 							},
-							["buff_uptime"] = 74,
-							["aID"] = "4465-02B843FA",
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Moolatz",
+							["buff_uptime"] = 50,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["last_event"] = 1653054366,
+							["tipo"] = 4,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[467] = {
-										["activedamt"] = 1,
-										["id"] = 467,
-										["targets"] = {
-										},
-										["uptime"] = 31,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[1126] = {
 										["activedamt"] = 1,
 										["id"] = 1126,
@@ -6253,12 +5527,12 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[774] = {
+									[467] = {
 										["activedamt"] = 1,
-										["id"] = 774,
+										["id"] = 467,
 										["targets"] = {
 										},
-										["uptime"] = 12,
+										["uptime"] = 19,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -6266,45 +5540,13 @@ _detalhes_database = {
 									},
 								},
 							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 0,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[5185] = 1,
-								[774] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Moolatz",
-							["last_event"] = 1653048294,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
-						{
-							["monster"] = true,
-							["nome"] = "Windfury Wind Witch",
-							["flag_original"] = 68168,
-							["spell_cast"] = {
-								[9532] = 3,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4445-1-56-2963-0000076F14",
-							["aID"] = "2963",
-						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 539,
+					["combatId"] = 579,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -6315,17 +5557,17 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
-				["CombatStartedAt"] = 776675.983,
-				["tempo_start"] = 1653048263,
+				["CombatStartedAt"] = 782780.368,
+				["tempo_start"] = 1653054335,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 7229,
+				["combat_counter"] = 7270,
 				["playing_solo"] = true,
 				["totals"] = {
-					299, -- [1]
-					73, -- [2]
+					272, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -6347,8 +5589,8 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					179, -- [1]
-					73, -- [2]
+					156, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -6369,12 +5611,12 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "14:04:55",
+				["data_fim"] = "15:46:06",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Windfury Wind Witch",
-				["TotalElapsedCombatTime"] = 776669.627,
-				["CombatEndedAt"] = 776669.627,
+				["enemy"] = "Flatland Cougar",
+				["TotalElapsedCombatTime"] = 782741.287,
+				["CombatEndedAt"] = 782741.287,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -6388,19 +5630,18 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Moolatz"] = 73.00521499999999,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Moolatz"] = 179.007056,
+							["Moolatz"] = 156.008864,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 776669.627,
-				["combat_id"] = 539,
+				["end_time"] = 782741.287,
+				["combat_id"] = 579,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -6408,46 +5649,46 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["data_inicio"] = "14:04:24",
+				["data_inicio"] = "15:45:36",
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
-					["Windfury Wind Witch"] = 1,
+					["Flatland Cougar"] = 1,
 				},
-				["start_time"] = 776638.9010000001,
+				["start_time"] = 782710.611,
 				["TimeData"] = {
 				},
-				["contra"] = "Windfury Wind Witch",
+				["contra"] = "Flatland Cougar",
 			}, -- [14]
 			{
 				{
-					["combatId"] = 538,
+					["combatId"] = 578,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008868,
-							["aID"] = "4465-02B843FA",
+							["totalabsorbed"] = 0.004685,
 							["damage_from"] = {
-								["Windfury Harpy"] = true,
+								["Prairie Stalker"] = true,
 							},
 							["targets"] = {
-								["Windfury Harpy"] = 139,
+								["Prairie Stalker"] = 142,
 							},
+							["total"] = 142.004685,
 							["pets"] = {
 							},
-							["colocacao"] = 1,
-							["end_time"] = 1653048253,
+							["on_hold"] = false,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 139.008868,
+							["total_without_pet"] = 142.004685,
+							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["total"] = 139.008868,
+							["end_time"] = 1653054321,
 							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["aID"] = "4465-02B843FA",
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["tipo"] = 2,
@@ -6457,15 +5698,15 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 18,
+										["n_max"] = 17,
 										["targets"] = {
-											["Windfury Harpy"] = 51,
+											["Prairie Stalker"] = 17,
 										},
-										["n_dmg"] = 51,
-										["n_min"] = 16,
+										["n_dmg"] = 17,
+										["n_min"] = 17,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 51,
+										["counter"] = 1,
+										["total"] = 17,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -6476,7 +5717,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -6487,7 +5728,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 3,
 										["targets"] = {
-											["Windfury Harpy"] = 12,
+											["Prairie Stalker"] = 12,
 										},
 										["n_dmg"] = 12,
 										["n_min"] = 3,
@@ -6508,48 +5749,20 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[8921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Windfury Harpy"] = 22,
-										},
-										["n_dmg"] = 22,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 22,
-										["c_max"] = 0,
-										["id"] = 8921,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[5177] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 27,
+										["n_max"] = 30,
 										["targets"] = {
-											["Windfury Harpy"] = 54,
+											["Prairie Stalker"] = 113,
 										},
-										["n_dmg"] = 54,
+										["n_dmg"] = 113,
 										["n_min"] = 27,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 54,
+										["counter"] = 4,
+										["total"] = 113,
 										["c_max"] = 0,
 										["id"] = 5177,
 										["r_dmg"] = 0,
@@ -6560,7 +5773,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -6568,38 +5781,39 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 8.366971710575497,
+							["last_dps"] = 17.7041123302444,
 							["custom"] = 0,
-							["last_event"] = 1653048252,
-							["damage_taken"] = 43.008868,
-							["start_time"] = 1653048236,
+							["last_event"] = 1653054318,
+							["damage_taken"] = 22.004685,
+							["start_time"] = 1653054310,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001679,
-							["aID"] = "2962",
+							["totalabsorbed"] = 0.00599,
+							["total"] = 22.00599,
 							["damage_from"] = {
 								["Moolatz"] = true,
 							},
 							["targets"] = {
-								["Moolatz"] = 43,
+								["Moolatz"] = 22,
 							},
-							["end_time"] = 1653048253,
 							["pets"] = {
 							},
+							["monster"] = true,
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 43.001679,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 43.001679,
+							["total_without_pet"] = 22.00599,
 							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1653054321,
 							["friendlyfire_total"] = 0,
-							["nome"] = "Windfury Harpy",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Prairie Stalker",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -6608,15 +5822,15 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 11,
+										["n_max"] = 6,
 										["targets"] = {
-											["Moolatz"] = 43,
+											["Moolatz"] = 22,
 										},
-										["n_dmg"] = 43,
-										["n_min"] = 10,
+										["n_dmg"] = 22,
+										["n_min"] = 5,
 										["g_dmg"] = 0,
 										["counter"] = 4,
-										["total"] = 43,
+										["total"] = 22,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
@@ -6633,75 +5847,69 @@ _detalhes_database = {
 									}, -- [1]
 								},
 							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4445-1-56-2962-0000076F0E",
+							["aID"] = "2959",
+							["serial"] = "Creature-0-4445-1-56-2959-0000076AD6",
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1653048246,
-							["damage_taken"] = 139.001679,
-							["start_time"] = 1653048240,
+							["last_event"] = 1653054318,
+							["damage_taken"] = 142.00599,
+							["start_time"] = 1653054313,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 538,
+					["combatId"] = 578,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 538,
+					["combatId"] = 578,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 538,
+					["combatId"] = 578,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8921] = {
-										["activedamt"] = 0,
-										["id"] = 8921,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
+							["spell_cast"] = {
+								[5177] = 3,
 							},
-							["buff_uptime"] = 34,
-							["aID"] = "4465-02B843FA",
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Moolatz",
+							["buff_uptime"] = 22,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["last_event"] = 1653054321,
+							["tipo"] = 4,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[467] = {
-										["activedamt"] = 1,
-										["id"] = 467,
-										["targets"] = {
-										},
-										["uptime"] = 17,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[1126] = {
 										["activedamt"] = 1,
 										["id"] = 1126,
 										["targets"] = {
 										},
-										["uptime"] = 17,
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[467] = {
+										["activedamt"] = 1,
+										["id"] = 467,
+										["targets"] = {
+										},
+										["uptime"] = 11,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -6709,28 +5917,13 @@ _detalhes_database = {
 									},
 								},
 							},
-							["debuff_uptime"] = 9,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[5177] = 1,
-								[8921] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Moolatz",
-							["last_event"] = 1653048253,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
 							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
+							["aID"] = "4465-02B843FA",
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 538,
+					["combatId"] = 578,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -6741,16 +5934,16 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
-				["CombatStartedAt"] = 776638.1020000001,
-				["tempo_start"] = 1653048236,
+				["CombatStartedAt"] = 782708.991,
+				["tempo_start"] = 1653054310,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 7228,
+				["combat_counter"] = 7269,
 				["playing_solo"] = true,
 				["totals"] = {
-					182, -- [1]
+					164, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -6773,7 +5966,7 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					139, -- [1]
+					142, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -6795,12 +5988,12 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "14:04:14",
+				["data_fim"] = "15:45:21",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Windfury Harpy",
-				["TotalElapsedCombatTime"] = 776628.393,
-				["CombatEndedAt"] = 776628.393,
+				["enemy"] = "Prairie Stalker",
+				["TotalElapsedCombatTime"] = 782696.331,
+				["CombatEndedAt"] = 782696.331,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -6820,12 +6013,12 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Moolatz"] = 139.008868,
+							["Moolatz"] = 142.004685,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 776628.393,
-				["combat_id"] = 538,
+				["end_time"] = 782696.331,
+				["combat_id"] = 578,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -6833,44 +6026,44 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["data_inicio"] = "14:03:57",
+				["data_inicio"] = "15:45:11",
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
-					["Windfury Harpy"] = 1,
+					["Prairie Stalker"] = 1,
 				},
-				["start_time"] = 776611.779,
+				["start_time"] = 782685.493,
 				["TimeData"] = {
 				},
-				["contra"] = "Windfury Harpy",
+				["contra"] = "Prairie Stalker",
 			}, -- [15]
 			{
 				{
-					["combatId"] = 537,
+					["combatId"] = 577,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007757,
+							["totalabsorbed"] = 0.005304,
 							["aID"] = "4465-02B843FA",
 							["damage_from"] = {
-								["Windfury Harpy"] = true,
+								["Flatland Cougar"] = true,
 							},
 							["targets"] = {
-								["Windfury Harpy"] = 152,
+								["Flatland Cougar"] = 163,
 							},
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["end_time"] = 1653048215,
+							["end_time"] = 1653054294,
 							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 152.007757,
+							["total_without_pet"] = 163.005304,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["total"] = 152.007757,
+							["total"] = 163.005304,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Moolatz",
@@ -6878,52 +6071,23 @@ _detalhes_database = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 34,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Windfury Harpy"] = 65,
-										},
-										["n_dmg"] = 31,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 65,
-										["c_max"] = 34,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 34,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[467] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
+										["g_amt"] = 1,
+										["n_max"] = 15,
 										["targets"] = {
-											["Windfury Harpy"] = 9,
+											["Flatland Cougar"] = 58,
 										},
-										["n_dmg"] = 9,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
+										["n_dmg"] = 44,
+										["n_min"] = 14,
+										["g_dmg"] = 14,
 										["counter"] = 4,
-										["total"] = 9,
+										["total"] = 58,
 										["c_max"] = 0,
-										["id"] = 467,
+										["id"] = 1,
 										["r_dmg"] = 0,
-										["RESIST"] = 1,
-										["spellschool"] = 8,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
@@ -6933,516 +6097,7 @@ _detalhes_database = {
 										["n_amt"] = 3,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									},
-									[8921] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Windfury Harpy"] = 23,
-										},
-										["n_dmg"] = 23,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 23,
-										["c_max"] = 0,
-										["id"] = 8921,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[5177] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Windfury Harpy"] = 55,
-										},
-										["n_dmg"] = 55,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 55,
-										["c_max"] = 0,
-										["id"] = 5177,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 11.77533170657491,
-							["custom"] = 0,
-							["last_event"] = 1653048213,
-							["damage_taken"] = 44.007757,
-							["start_time"] = 1653048200,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002649,
-							["aID"] = "2962",
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 44,
-							},
-							["end_time"] = 1653048215,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 44.002649,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 44.002649,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Windfury Harpy",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Moolatz"] = 44,
-										},
-										["n_dmg"] = 44,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 44,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
 									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4445-1-56-2962-0000076EB6",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653048211,
-							["damage_taken"] = 152.002649,
-							["start_time"] = 1653048205,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 537,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.005128,
-							["total_without_pet"] = 32.005128,
-							["total"] = 32.005128,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.005128,
-							["last_hps"] = 2.300706491271912,
-							["targets"] = {
-								["Moolatz"] = 32,
-							},
-							["totalover_without_pet"] = 0.005128,
-							["healing_taken"] = 32.005128,
-							["fight_component"] = true,
-							["end_time"] = 1653048215,
-							["healing_from"] = {
-								["Moolatz"] = true,
-							},
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[774] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 8,
-										["targets"] = {
-											["Moolatz"] = 32,
-										},
-										["n_min"] = 8,
-										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = 774,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 32,
-										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1653048205,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.005128,
-							["delay"] = 0,
-							["last_event"] = 1653048214,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 537,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 537,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[8921] = {
-										["activedamt"] = 0,
-										["id"] = 8921,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 42,
-							["aID"] = "4465-02B843FA",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[467] = {
-										["activedamt"] = 1,
-										["id"] = 467,
-										["targets"] = {
-										},
-										["uptime"] = 15,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
-										["targets"] = {
-										},
-										["uptime"] = 15,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[774] = {
-										["activedamt"] = 1,
-										["id"] = 774,
-										["targets"] = {
-										},
-										["uptime"] = 12,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 9,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[8921] = 1,
-								[774] = 1,
-								[5177] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Moolatz",
-							["last_event"] = 1653048215,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
-							["serial"] = "Player-4465-02B843FA",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 537,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 776610.4450000001,
-				["tempo_start"] = 1653048200,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 7227,
-				["playing_solo"] = true,
-				["totals"] = {
-					196, -- [1]
-					32, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					152, -- [1]
-					32, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "14:03:35",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Windfury Harpy",
-				["TotalElapsedCombatTime"] = 776590.279,
-				["CombatEndedAt"] = 776590.279,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Moolatz"] = 32.005128,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 152.007757,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 776590.279,
-				["combat_id"] = 537,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "14:03:21",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Windfury Harpy"] = 1,
-				},
-				["start_time"] = 776576.118,
-				["TimeData"] = {
-				},
-				["contra"] = "Windfury Harpy",
-			}, -- [16]
-			{
-				{
-					["combatId"] = 536,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002316,
-							["damage_from"] = {
-								["Windfury Harpy"] = true,
-							},
-							["targets"] = {
-								["Windfury Harpy"] = 154,
-							},
-							["total"] = 154.002316,
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 154.002316,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1653048191,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02B843FA",
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Windfury Harpy"] = 80,
-										},
-										["n_dmg"] = 80,
-										["n_min"] = 12,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 80,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 12,
-										["r_amt"] = 0,
-									}, -- [1]
-									[5177] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 30,
-										["targets"] = {
-											["Windfury Harpy"] = 56,
-										},
-										["n_dmg"] = 56,
-										["n_min"] = 26,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 56,
-										["c_max"] = 0,
-										["id"] = 5177,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[467] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -7450,17 +6105,16 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 3,
 										["targets"] = {
-											["Windfury Harpy"] = 18,
+											["Flatland Cougar"] = 18,
 										},
 										["n_dmg"] = 18,
 										["n_min"] = 3,
 										["g_dmg"] = 0,
-										["counter"] = 7,
+										["counter"] = 6,
 										["total"] = 18,
 										["c_max"] = 0,
 										["id"] = 467,
 										["r_dmg"] = 0,
-										["RESIST"] = 1,
 										["spellschool"] = 8,
 										["extra"] = {
 										},
@@ -7472,427 +6126,20 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 6.138485172196613,
-							["custom"] = 0,
-							["last_event"] = 1653048191,
-							["damage_taken"] = 77.00231600000001,
-							["start_time"] = 1653048165,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007935,
-							["total"] = 77.007935,
-							["damage_from"] = {
-								["Moolatz"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 77,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 77.007935,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1653048191,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Windfury Harpy",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Moolatz"] = 77,
-										},
-										["n_dmg"] = 77,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 77,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["DODGE"] = 2,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["aID"] = "2962",
-							["serial"] = "Creature-0-4445-1-56-2962-0000876E91",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653048186,
-							["damage_taken"] = 154.007935,
-							["start_time"] = 1653048172,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 536,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.006406,
-							["total_without_pet"] = 40.006406,
-							["total"] = 40.006406,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.006406,
-							["last_hps"] = 1.594643096301731,
-							["targets"] = {
-								["Moolatz"] = 40,
-							},
-							["totalover_without_pet"] = 0.006406,
-							["healing_taken"] = 40.006406,
-							["fight_component"] = true,
-							["end_time"] = 1653048191,
-							["healing_from"] = {
-								["Moolatz"] = true,
-							},
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[774] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 8,
-										["targets"] = {
-											["Moolatz"] = 40,
-										},
-										["n_min"] = 8,
-										["counter"] = 5,
-										["overheal"] = 0,
-										["total"] = 40,
-										["c_max"] = 0,
-										["id"] = 774,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 40,
-										["totaldenied"] = 0,
-										["n_amt"] = 5,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1653048182,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.006406,
-							["delay"] = 1653048170,
-							["last_event"] = 1653048191,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 536,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 536,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["fight_component"] = true,
-							["spell_cast"] = {
-								[5177] = 1,
-								[774] = 1,
-							},
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 66,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
-							["tipo"] = 4,
-							["aID"] = "4465-02B843FA",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[467] = {
-										["activedamt"] = 1,
-										["id"] = 467,
-										["targets"] = {
-										},
-										["uptime"] = 26,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1126] = {
-										["activedamt"] = 1,
-										["id"] = 1126,
-										["targets"] = {
-										},
-										["uptime"] = 26,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[774] = {
-										["activedamt"] = 2,
-										["id"] = 774,
-										["targets"] = {
-										},
-										["uptime"] = 14,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["last_event"] = 1653048191,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 536,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Moolatz", -- [1]
-				},
-				["CombatStartedAt"] = 776574.452,
-				["tempo_start"] = 1653048165,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 7226,
-				["playing_solo"] = true,
-				["totals"] = {
-					231, -- [1]
-					40, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					154, -- [1]
-					40, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "14:03:12",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Windfury Harpy",
-				["TotalElapsedCombatTime"] = 776566.875,
-				["CombatEndedAt"] = 776566.875,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Moolatz"] = 40.006406,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Moolatz"] = 154.002316,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 776566.875,
-				["combat_id"] = 536,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "14:02:46",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Windfury Harpy"] = 1,
-				},
-				["start_time"] = 776541.2540000001,
-				["TimeData"] = {
-				},
-				["contra"] = "Windfury Harpy",
-			}, -- [17]
-			{
-				{
-					["combatId"] = 535,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001175,
-							["aID"] = "4465-02B843FA",
-							["damage_from"] = {
-								["Windfury Harpy"] = true,
-							},
-							["targets"] = {
-								["Windfury Harpy"] = 169,
-							},
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["end_time"] = 1653048155,
-							["classe"] = "DRUID",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 169.001175,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 169.001175,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 71,
-										["g_amt"] = 0,
-										["n_max"] = 17,
-										["targets"] = {
-											["Windfury Harpy"] = 121,
-										},
-										["n_dmg"] = 50,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 121,
-										["c_max"] = 37,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 34,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
 									[5177] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 27,
+										["n_max"] = 31,
 										["targets"] = {
-											["Windfury Harpy"] = 27,
+											["Flatland Cougar"] = 87,
 										},
-										["n_dmg"] = 27,
+										["n_dmg"] = 87,
 										["n_min"] = 27,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 27,
+										["counter"] = 3,
+										["total"] = 87,
 										["c_max"] = 0,
 										["id"] = 5177,
 										["r_dmg"] = 0,
@@ -7903,35 +6150,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Windfury Harpy"] = 21,
-										},
-										["n_dmg"] = 21,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 21,
-										["c_max"] = 0,
-										["id"] = 467,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
+										["n_amt"] = 3,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -7939,38 +6158,38 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["serial"] = "Player-4465-02B843FA",
-							["last_dps"] = 7.74027548776014,
+							["last_dps"] = 10.27387520481581,
 							["custom"] = 0,
-							["last_event"] = 1653048154,
-							["damage_taken"] = 78.001175,
-							["start_time"] = 1653048133,
+							["last_event"] = 1653054294,
+							["damage_taken"] = 61.005304,
+							["start_time"] = 1653054278,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001404,
-							["aID"] = "2962",
+							["totalabsorbed"] = 0.00716,
+							["aID"] = "3035",
 							["damage_from"] = {
 								["Moolatz"] = true,
 							},
 							["targets"] = {
-								["Moolatz"] = 78,
+								["Moolatz"] = 61,
 							},
-							["end_time"] = 1653048155,
+							["end_time"] = 1653054294,
 							["pets"] = {
 							},
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 78.00140400000001,
+							["total_without_pet"] = 61.00716,
 							["monster"] = true,
 							["dps_started"] = false,
-							["total"] = 78.00140400000001,
+							["total"] = 61.00716,
 							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
-							["nome"] = "Windfury Harpy",
+							["nome"] = "Flatland Cougar",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -7979,19 +6198,18 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 12,
+										["n_max"] = 11,
 										["targets"] = {
-											["Moolatz"] = 78,
+											["Moolatz"] = 61,
 										},
-										["n_dmg"] = 78,
-										["n_min"] = 10,
+										["n_dmg"] = 61,
+										["n_min"] = 9,
 										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 78,
+										["counter"] = 6,
+										["total"] = 61,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
@@ -7999,7 +6217,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 7,
+										["n_amt"] = 6,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -8007,147 +6225,68 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["serial"] = "Creature-0-4445-1-56-2962-0000076F1E",
+							["serial"] = "Creature-0-4445-1-56-3035-0000078EFF",
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1653048151,
-							["damage_taken"] = 169.001404,
-							["start_time"] = 1653048137,
+							["last_event"] = 1653054293,
+							["damage_taken"] = 163.00716,
+							["start_time"] = 1653054283,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 535,
+					["combatId"] = 577,
 					["tipo"] = 3,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "DRUID",
-							["totalover"] = 0.002897,
-							["total_without_pet"] = 16.002897,
-							["total"] = 16.002897,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02B843FA",
-							["totalabsorb"] = 0.002897,
-							["last_hps"] = 3.320103111988289,
-							["targets"] = {
-								["Moolatz"] = 16,
-							},
-							["totalover_without_pet"] = 0.002897,
-							["healing_taken"] = 16.002897,
-							["fight_component"] = true,
-							["end_time"] = 1653048155,
-							["healing_from"] = {
-								["Moolatz"] = true,
-							},
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[774] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 8,
-										["targets"] = {
-											["Moolatz"] = 16,
-										},
-										["n_min"] = 8,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 774,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 16,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1653048151,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-02B843FA",
-							["totaldenied"] = 0.002897,
-							["delay"] = 1653048137,
-							["last_event"] = 1653048137,
-						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 535,
+					["combatId"] = 577,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 535,
+					["combatId"] = 577,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
-							["fight_component"] = true,
 							["flag_original"] = 1047,
+							["spell_cast"] = {
+								[5177] = 2,
+							},
 							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["nome"] = "Moolatz",
-							["buff_uptime"] = 48,
+							["buff_uptime"] = 32,
 							["pets"] = {
 							},
 							["classe"] = "DRUID",
-							["last_event"] = 1653048155,
+							["last_event"] = 1653054294,
 							["tipo"] = 4,
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[467] = {
-										["activedamt"] = 1,
-										["id"] = 467,
-										["targets"] = {
-										},
-										["uptime"] = 22,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									[1126] = {
 										["activedamt"] = 1,
 										["id"] = 1126,
 										["targets"] = {
 										},
-										["uptime"] = 22,
+										["uptime"] = 16,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[774] = {
+									[467] = {
 										["activedamt"] = 1,
-										["id"] = 774,
+										["id"] = 467,
 										["targets"] = {
 										},
-										["uptime"] = 4,
+										["uptime"] = 16,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -8161,7 +6300,7 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 535,
+					["combatId"] = 577,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -8172,17 +6311,17 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
-				["CombatStartedAt"] = 776539.587,
-				["tempo_start"] = 1653048133,
+				["CombatStartedAt"] = 782683.789,
+				["tempo_start"] = 1653054278,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 7225,
+				["combat_counter"] = 7268,
 				["playing_solo"] = true,
 				["totals"] = {
-					247, -- [1]
-					16, -- [2]
+					224, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -8204,8 +6343,8 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					169, -- [1]
-					16, -- [2]
+					163, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -8226,12 +6365,12 @@ _detalhes_database = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "14:02:36",
+				["data_fim"] = "15:44:55",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Windfury Harpy",
-				["TotalElapsedCombatTime"] = 776531.196,
-				["CombatEndedAt"] = 776531.196,
+				["enemy"] = "Flatland Cougar",
+				["TotalElapsedCombatTime"] = 782670.011,
+				["CombatEndedAt"] = 782670.011,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -8245,19 +6384,18 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Moolatz"] = 16.002897,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Moolatz"] = 169.001175,
+							["Moolatz"] = 163.005304,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 776531.196,
-				["combat_id"] = 535,
+				["end_time"] = 782670.011,
+				["combat_id"] = 577,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -8265,16 +6403,770 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["data_inicio"] = "14:02:14",
+				["data_inicio"] = "15:44:39",
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
-					["Windfury Harpy"] = 1,
+					["Flatland Cougar"] = 1,
 				},
-				["start_time"] = 776508.478,
+				["start_time"] = 782654.145,
 				["TimeData"] = {
 				},
-				["contra"] = "Windfury Harpy",
+				["contra"] = "Flatland Cougar",
+			}, -- [16]
+			{
+				{
+					["combatId"] = 576,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004908,
+							["damage_from"] = {
+								["Prairie Stalker"] = true,
+							},
+							["targets"] = {
+								["Prairie Stalker"] = 160,
+							},
+							["total"] = 160.004908,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 160.004908,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1653054266,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Prairie Stalker"] = 15,
+										},
+										["n_dmg"] = 15,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Prairie Stalker"] = 12,
+										},
+										["n_dmg"] = 12,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 12,
+										["c_max"] = 0,
+										["id"] = 467,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[5177] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 46,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Prairie Stalker"] = 133,
+										},
+										["n_dmg"] = 87,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 133,
+										["c_max"] = 46,
+										["id"] = 5177,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 46,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 19.30561148662099,
+							["custom"] = 0,
+							["last_event"] = 1653054265,
+							["damage_taken"] = 31.004908,
+							["start_time"] = 1653054257,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.005378,
+							["total"] = 31.005378,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 31,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 31.005378,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1653054266,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Prairie Stalker",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Moolatz"] = 31,
+										},
+										["n_dmg"] = 31,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 31,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "2959",
+							["serial"] = "Creature-0-4445-1-56-2959-000006A57F",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653054265,
+							["damage_taken"] = 160.005378,
+							["start_time"] = 1653054260,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 576,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 576,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 576,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["spell_cast"] = {
+								[5177] = 3,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Moolatz",
+							["buff_uptime"] = 18,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["last_event"] = 1653054266,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1126] = {
+										["activedamt"] = 1,
+										["id"] = 1126,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[467] = {
+										["activedamt"] = 1,
+										["id"] = 467,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["aID"] = "4465-02B843FA",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 576,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 782652.564,
+				["tempo_start"] = 1653054257,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 7267,
+				["playing_solo"] = true,
+				["totals"] = {
+					191, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					160, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:44:27",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Prairie Stalker",
+				["TotalElapsedCombatTime"] = 782642.086,
+				["CombatEndedAt"] = 782642.086,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 160.004908,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 782642.086,
+				["combat_id"] = 576,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:44:18",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Prairie Stalker"] = 1,
+				},
+				["start_time"] = 782632.731,
+				["TimeData"] = {
+				},
+				["contra"] = "Prairie Stalker",
+			}, -- [17]
+			{
+				{
+					["combatId"] = 575,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00439,
+							["aID"] = "4465-02B843FA",
+							["damage_from"] = {
+								["Flatland Cougar"] = true,
+							},
+							["targets"] = {
+								["Flatland Cougar"] = 163,
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["end_time"] = 1653054243,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 163.00439,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 163.00439,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Flatland Cougar"] = 60,
+										},
+										["n_dmg"] = 60,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 60,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Flatland Cougar"] = 18,
+										},
+										["n_dmg"] = 18,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 18,
+										["c_max"] = 0,
+										["id"] = 467,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[5177] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Flatland Cougar"] = 85,
+										},
+										["n_dmg"] = 85,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 85,
+										["c_max"] = 0,
+										["id"] = 5177,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 9.849207854957182,
+							["custom"] = 0,
+							["last_event"] = 1653054243,
+							["damage_taken"] = 63.00439,
+							["start_time"] = 1653054227,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006361,
+							["aID"] = "3035",
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 63,
+							},
+							["end_time"] = 1653054243,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 63.006361,
+							["monster"] = true,
+							["dps_started"] = false,
+							["total"] = 63.006361,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Flatland Cougar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Moolatz"] = 63,
+										},
+										["n_dmg"] = 63,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 63,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["serial"] = "Creature-0-4445-1-56-3035-0000069D80",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653054242,
+							["damage_taken"] = 163.006361,
+							["start_time"] = 1653054232,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 575,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 575,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 575,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["spell_cast"] = {
+								[5177] = 2,
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Moolatz",
+							["buff_uptime"] = 32,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["last_event"] = 1653054243,
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1126] = {
+										["activedamt"] = 1,
+										["id"] = 1126,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[467] = {
+										["activedamt"] = 1,
+										["id"] = 467,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-02B843FA",
+							["aID"] = "4465-02B843FA",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 575,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 782631.18,
+				["tempo_start"] = 1653054227,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 7266,
+				["playing_solo"] = true,
+				["totals"] = {
+					226, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					163, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:44:04",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Flatland Cougar",
+				["TotalElapsedCombatTime"] = 782619.018,
+				["CombatEndedAt"] = 782619.018,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 163.00439,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 782619.018,
+				["combat_id"] = 575,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:43:48",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Flatland Cougar"] = 1,
+				},
+				["start_time"] = 782602.468,
+				["TimeData"] = {
+				},
+				["contra"] = "Flatland Cougar",
 			}, -- [18]
 		},
 	},
@@ -8286,9 +7178,9 @@ _detalhes_database = {
 		["show_options"] = false,
 		["pos"] = {
 		},
+		["height"] = 18,
 		["cooldowns"] = {
 		},
-		["height"] = 18,
 		["framme_locked"] = false,
 		["show_conditions"] = {
 			["only_inside_instance"] = true,
@@ -8446,9 +7338,9 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["enabled"] = true,
 			["animate"] = true,
-			["author"] = "Details! Team",
+			["alwaysshowme"] = true,
 			["hide_pull_bar"] = false,
-			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -8463,16 +7355,16 @@ _detalhes_database = {
 			["playSound"] = false,
 			["usefocus"] = false,
 			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["alwaysshowme"] = true,
+			["useclasscolors"] = false,
+		},
+		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
+			["enabled"] = true,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
 			["SpellBarsShowType"] = 1,
-		},
-		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
-			["enabled"] = true,
-			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
@@ -8481,20 +7373,10 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
 			["opened"] = 0,
-			["max_emote_segments"] = 3,
+			["show_icon"] = 5,
 			["author"] = "Details! Team",
 			["hide_on_combat"] = false,
-			["show_icon"] = 5,
-		},
-		["DETAILS_PLUGIN_YANP"] = {
-			["enabled"] = true,
-			["rightclick_closed"] = false,
-			["auto_open"] = true,
-			["hide_on_combat"] = true,
-			["author"] = "Details! Team",
-			["deaths_table"] = {
-			},
-			["shown_time"] = 30,
+			["max_emote_segments"] = 3,
 		},
 		["DETAILS_PLUGIN_TIME_ATTACK"] = {
 			["enabled"] = true,
@@ -8507,10 +7389,20 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["realm_lastamt"] = 0,
+			["author"] = "Details! Team",
 			["realm_history"] = {
 			},
+			["realm_lastamt"] = 0,
+		},
+		["DETAILS_PLUGIN_YANP"] = {
+			["enabled"] = true,
+			["rightclick_closed"] = false,
+			["auto_open"] = true,
 			["author"] = "Details! Team",
+			["hide_on_combat"] = true,
+			["deaths_table"] = {
+			},
+			["shown_time"] = 30,
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -8537,12 +7429,12 @@ _detalhes_database = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Glamour2",
-			["scale"] = 1,
-			["row_height"] = 18,
-			["point"] = "RIGHT",
+			["arrow_anchor_y"] = 0,
+			["main_frame_locked"] = true,
+			["main_frame_strata"] = "LOW",
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["author"] = "Details! Team",
+			["y"] = -183.107162475586,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -8550,17 +7442,8 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 10,
-			["use_spark"] = false,
-			["x"] = -4.001220703125,
-			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -8568,34 +7451,43 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -6.103515625e-05,
 				["x"] = 0.00311279296875,
-				["size"] = 32,
-				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
 			},
-			["y"] = -183.107162475586,
-			["main_frame_strata"] = "LOW",
-			["main_frame_locked"] = true,
-			["arrow_anchor_y"] = 0,
+			["font_size"] = 10,
+			["x"] = -4.001220703125,
+			["font_face"] = "Friz Quadrata TT",
+			["use_spark"] = false,
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
+			["point"] = "RIGHT",
+			["row_height"] = 18,
+			["scale"] = 1,
 		},
-	},
-	["combat_counter"] = 7242,
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
-	["cached_roles"] = {
-		["Player-4465-024FFAAB"] = "HEALER",
 	},
 	["announce_prepots"] = {
 		["enabled"] = false,
 		["reverse"] = false,
 		["channel"] = "SELF",
 	},
-	["last_realversion"] = 146,
-	["character_data"] = {
-		["logons"] = 1826,
+	["combat_counter"] = 7283,
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
-	["combat_id"] = 552,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
+	["cached_talents"] = {
+	},
+	["ignore_nicktag"] = true,
+	["combat_id"] = 592,
 	["savedStyles"] = {
 		{
 			["hide_in_combat_type"] = 1,
@@ -8620,12 +7512,12 @@ _detalhes_database = {
 			["hide_out_of_combat"] = false,
 			["name"] = "final",
 			["following"] = {
-				["enabled"] = false,
 				["bar_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 				},
+				["enabled"] = false,
 				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -8640,86 +7532,39 @@ _detalhes_database = {
 			},
 			["switch_healer"] = false,
 			["bars_sort_direction"] = 1,
-			["menu_icons_size"] = 1,
 			["switch_healer_in_combat"] = false,
 			["skin"] = "Minimalistic",
+			["backdrop_texture"] = "None",
 			["menu2_icons_size"] = 1.20000004768372,
 			["tooltip"] = {
 				["n_abilities"] = 3,
 				["n_enemies"] = 3,
 			},
 			["stretch_button_side"] = 2,
-			["backdrop_texture"] = "None",
+			["menu_icons_size"] = 1,
 			["switch_all_roles_in_combat"] = {
 				2, -- [1]
 				1, -- [2]
 				8, -- [3]
 			},
-			["instance_button_anchor"] = {
-				-27, -- [1]
-				1, -- [2]
-			},
-			["version"] = 3,
-			["row_info"] = {
-				["textR_outline"] = false,
-				["textL_outline"] = false,
-				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes_small_alpha",
-				["texture_background_file"] = "Interface\\TargetingFrame\\UI-StatusBar",
-				["fixed_texture_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
+			["switch_tank_in_combat"] = false,
+			["bg_alpha"] = 0.0199999995529652,
+			["attribute_text"] = {
+				["enabled"] = false,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_size"] = 11,
+				["anchor"] = {
+					-17, -- [1]
+					10, -- [2]
 				},
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["textR_enable_custom_text"] = true,
-				["texture_background_class_color"] = true,
-				["textL_enable_custom_text"] = true,
-				["textL_show_number"] = false,
-				["space"] = {
-					["right"] = 0,
-					["left"] = 0,
-					["between"] = 0,
-				},
-				["fixed_texture_background_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0.680000007152557, -- [4]
-				},
-				["textR_custom_text"] = "{data1} ({data2}) ",
-				["start_after_icon"] = false,
-				["font_face_file"] = "Fonts\\ARIALN.TTF",
-				["fixed_text_color"] = {
+				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
 				},
-				["backdrop"] = {
-					["enabled"] = false,
-					["size"] = 12,
-					["color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["texture"] = "Details BarBorder 2",
-				},
-				["textL_class_colors"] = false,
-				["textL_custom_text"] = "{data3}{data2}",
-				["textR_class_colors"] = false,
-				["alpha"] = 0,
-				["no_icon"] = false,
-				["font_size"] = 11,
-				["texture_background"] = "Blizzard",
-				["font_face"] = "Arial Narrow",
-				["texture_class_colors"] = true,
-				["height"] = 20,
-				["texture_file"] = "Interface\\AddOns\\Details\\images\\BantoBar",
-				["texture"] = "BantoBar",
-				["percent_type"] = 1,
+				["text_face"] = "Arial Narrow",
 			},
 			["closebutton_config"] = {
 				["pushed_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Down",
@@ -8743,30 +7588,23 @@ _detalhes_database = {
 				["onleave"] = 1,
 			},
 			["show_statusbar"] = false,
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
+			["desaturated_menu"] = false,
+			["show_sidebars"] = false,
+			["strata"] = "LOW",
+			["bars_grow_direction"] = 1,
+			["resetbutton_config"] = {
+				["normal_vertexcolor"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
+					1, -- [4]
 				},
-			},
-			["strata"] = "LOW",
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
+				["highlight_texcoord"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					1, -- [4]
 				},
-			},
-			["resetbutton_config"] = {
-				["anchor"] = {
-					2, -- [1]
-					0, -- [2]
-				},
-				["normal_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
 				["highlight_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
 				["normal_texcoord"] = {
 					0, -- [1]
@@ -8780,17 +7618,10 @@ _detalhes_database = {
 					1, -- [3]
 					1, -- [4]
 				},
-				["highlight_texcoord"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["normal_vertexcolor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
+				["normal_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
+				["anchor"] = {
+					2, -- [1]
+					0, -- [2]
 				},
 				["size"] = {
 					13, -- [1]
@@ -8799,21 +7630,24 @@ _detalhes_database = {
 			},
 			["switch_tank"] = false,
 			["hide_in_combat_alpha"] = 0,
-			["plugins_grow_direction"] = 1,
+			["switch_all_roles_after_wipe"] = false,
 			["menu_icons"] = {
 				true, -- [1]
 				true, -- [2]
 				true, -- [3]
 				true, -- [4]
 			},
-			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
-			["window_scale"] = 1,
+			["switch_damager"] = false,
+			["auto_hide_menu"] = {
+				["left"] = true,
+				["right"] = true,
+			},
 			["menu_anchor_down"] = {
 				-22, -- [1]
 				0, -- [2]
 			},
-			["grab_on_top"] = false,
+			["window_scale"] = 1,
+			["hide_icon"] = true,
 			["instancebutton_config"] = {
 				["textcolor"] = {
 					0.8, -- [1]
@@ -8834,8 +7668,8 @@ _detalhes_database = {
 				["textfont"] = "Friz Quadrata TT",
 				["textshadow"] = false,
 			},
+			["grab_on_top"] = false,
 			["switch_damager_in_combat"] = false,
-			["hide_icon"] = true,
 			["menu2_anchor"] = {
 				32, -- [1]
 				3, -- [2]
@@ -8844,28 +7678,39 @@ _detalhes_database = {
 			["auto_current"] = true,
 			["toolbar_side"] = 2,
 			["bg_g"] = 0,
-			["bars_grow_direction"] = 1,
-			["hide_in_combat"] = false,
-			["auto_hide_menu"] = {
-				["left"] = true,
-				["right"] = true,
-			},
-			["switch_damager"] = false,
-			["switch_all_roles_after_wipe"] = false,
-			["wallpaper"] = {
-				["enabled"] = false,
-				["texcoord"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					1, -- [4]
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
 				},
+			},
+			["hide_in_combat"] = false,
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["menu2_anchor_down"] = {
+				32, -- [1]
+				0, -- [2]
+			},
+			["plugins_grow_direction"] = 1,
+			["wallpaper"] = {
 				["overlay"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
 				},
+				["texcoord"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["enabled"] = false,
 				["anchor"] = "all",
 				["height"] = 0,
 				["alpha"] = 0.5,
@@ -8881,29 +7726,86 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["bg_alpha"] = 0.0199999995529652,
-			["switch_tank_in_combat"] = false,
-			["attribute_text"] = {
-				["enabled"] = false,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_size"] = 11,
-				["anchor"] = {
-					-17, -- [1]
-					10, -- [2]
+			["version"] = 3,
+			["instance_button_anchor"] = {
+				-27, -- [1]
+				1, -- [2]
+			},
+			["row_info"] = {
+				["textR_outline"] = false,
+				["textL_outline"] = false,
+				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes_small_alpha",
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["textL_enable_custom_text"] = true,
+				["texture_background_file"] = "Interface\\TargetingFrame\\UI-StatusBar",
+				["textR_enable_custom_text"] = true,
+				["texture_background_class_color"] = true,
+				["fixed_texture_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
 				},
-				["text_color"] = {
+				["textL_show_number"] = false,
+				["space"] = {
+					["right"] = 0,
+					["left"] = 0,
+					["between"] = 0,
+				},
+				["fixed_texture_background_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0.680000007152557, -- [4]
+				},
+				["textR_custom_text"] = "{data1} ({data2}) ",
+				["texture"] = "BantoBar",
+				["font_face_file"] = "Fonts\\ARIALN.TTF",
+				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
 				},
-				["text_face"] = "Arial Narrow",
+				["alpha"] = 0,
+				["textR_class_colors"] = false,
+				["backdrop"] = {
+					["enabled"] = false,
+					["size"] = 12,
+					["color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["texture"] = "Details BarBorder 2",
+				},
+				["texture_background"] = "Blizzard",
+				["textL_custom_text"] = "{data3}{data2}",
+				["no_icon"] = false,
+				["font_size"] = 11,
+				["textL_class_colors"] = false,
+				["font_face"] = "Arial Narrow",
+				["texture_class_colors"] = true,
+				["height"] = 20,
+				["texture_file"] = "Interface\\AddOns\\Details\\images\\BantoBar",
+				["start_after_icon"] = false,
+				["percent_type"] = 1,
 			},
 			["bg_b"] = 0,
 		}, -- [1]
 	},
-	["force_font_outline"] = "",
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
+	},
 	["on_death_menu"] = true,
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -8926,26 +7828,27 @@ _detalhes_database = {
 						["Plainstrider"] = 0,
 						["Elder Plainstrider"] = 0,
 						["Prairie Stalker"] = 0,
+						["Flatland Prowler"] = 0,
 						["Windfury Wind Witch"] = 0,
-						["Taloned Swoop"] = 0,
 						["Prairie Wolf Alpha"] = 0,
+						["Taloned Swoop"] = 0,
 						["Windfury Harpy"] = 0,
 						["Adult Plainstrider"] = 0,
 					},
 					["pets"] = {
 					},
-					["damage_taken"] = 0.004146,
-					["tipo"] = 1,
+					["end_time"] = 1652781839,
+					["last_event"] = 0,
 					["classe"] = "DRUID",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004146,
-					["delay"] = 0,
+					["serial"] = "Player-4465-02B843FA",
 					["dps_started"] = false,
 					["total"] = 0.004146,
-					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
+					["on_hold"] = false,
 					["nome"] = "Moolatz",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -8974,15 +7877,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[5176] = {
 								["c_amt"] = 0,
@@ -9001,15 +7904,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 5176,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 							[8921] = {
 								["c_amt"] = 0,
@@ -9018,6 +7921,7 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Windfury Wind Witch"] = 0,
 									["Taloned Swoop"] = 0,
 									["Windfury Harpy"] = 0,
 									["Plainstrider"] = 0,
@@ -9030,44 +7934,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 8921,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[467] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Taloned Swoop"] = 0,
-									["Windfury Harpy"] = 0,
-									["Prairie Wolf Alpha"] = 0,
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 467,
-								["r_dmg"] = 0,
+								["a_dmg"] = 0,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
 							},
 							[5177] = {
 								["c_amt"] = 0,
@@ -9076,14 +7951,14 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Adult Plainstrider"] = 0,
+									["Elder Plainstrider"] = 0,
 									["Prairie Stalker"] = 0,
 									["Prairie Wolf"] = 0,
-									["Flatland Cougar"] = 0,
 									["Windfury Wind Witch"] = 0,
+									["Flatland Cougar"] = 0,
 									["Taloned Swoop"] = 0,
 									["Windfury Harpy"] = 0,
-									["Elder Plainstrider"] = 0,
+									["Adult Plainstrider"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -9093,15 +7968,46 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 5177,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[467] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Flatland Prowler"] = 0,
+									["Windfury Wind Witch"] = 0,
+									["Prairie Wolf Alpha"] = 0,
+									["Windfury Harpy"] = 0,
+									["Taloned Swoop"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 467,
+								["r_dmg"] = 0,
 								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
@@ -9110,11 +8016,11 @@ _detalhes_database = {
 					["aID"] = "4465-02B843FA",
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["damage_taken"] = 0.004146,
 					["start_time"] = 1652781836,
-					["serial"] = "Player-4465-02B843FA",
-					["end_time"] = 1652781839,
+					["delay"] = 0,
+					["last_dps"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 68136,
@@ -9123,23 +8029,24 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Mithovor"] = 0,
-						["Wickedwild"] = 0,
 						["Moolatz"] = 0,
+						["Wickedwild"] = 0,
 						["Vokes"] = 0,
 					},
 					["pets"] = {
 					},
-					["damage_taken"] = 0.002893,
-					["last_dps"] = 0,
+					["aID"] = "2955",
+					["on_hold"] = false,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002893,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4469-1-30-2955-0000014793",
 					["fight_component"] = true,
 					["end_time"] = 1652781839,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Plainstrider",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -9151,8 +8058,8 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Mithovor"] = 0,
-									["Wickedwild"] = 0,
 									["Moolatz"] = 0,
+									["Wickedwild"] = 0,
 									["Vokes"] = 0,
 								},
 								["n_dmg"] = 0,
@@ -9163,29 +8070,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["dps_started"] = false,
-					["total"] = 0.002893,
-					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["total"] = 0.002893,
+					["dps_started"] = false,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 0.002893,
 					["start_time"] = 1652781836,
-					["serial"] = "Creature-0-4469-1-30-2955-0000014793",
-					["aID"] = "2955",
+					["delay"] = 0,
+					["last_dps"] = 0,
 				}, -- [2]
 				{
 					["flag_original"] = "0x514",
@@ -9194,36 +8100,36 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["serial"] = "0x0000-0000-0000",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["spec"] = 73,
-					["total"] = 0.007949,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.007949,
-					["last_dps"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1652806606,
-					["friendlyfire"] = {
-					},
-					["last_event"] = 0,
-					["nome"] = "Orman of Stromgarde",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["grupo"] = true,
-					["on_hold"] = false,
-					["classe"] = "WARRIOR",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.007949,
-					["start_time"] = 1652806603,
-					["delay"] = 0,
 					["aID"] = "",
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.007949,
+					["friendlyfire"] = {
+					},
+					["dps_started"] = false,
+					["total"] = 0.007949,
+					["damage_taken"] = 0.007949,
+					["tipo"] = 1,
+					["nome"] = "Orman of Stromgarde",
+					["spec"] = 73,
+					["grupo"] = true,
+					["classe"] = "WARRIOR",
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1652806603,
+					["serial"] = "0x0000-0000-0000",
+					["end_time"] = 1652806606,
 				}, -- [3]
 				{
 					["flag_original"] = "0x514",
@@ -9232,36 +8138,36 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["serial"] = "0x0000-0000-0000",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["spec"] = 64,
-					["total"] = 0.008271,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.008271,
-					["last_dps"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1652806606,
-					["friendlyfire"] = {
-					},
-					["last_event"] = 0,
-					["nome"] = "Archmage Trelane",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["grupo"] = true,
-					["on_hold"] = false,
-					["classe"] = "MAGE",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.008271,
-					["start_time"] = 1652806603,
-					["delay"] = 0,
 					["aID"] = "",
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.008271,
+					["friendlyfire"] = {
+					},
+					["dps_started"] = false,
+					["total"] = 0.008271,
+					["damage_taken"] = 0.008271,
+					["tipo"] = 1,
+					["nome"] = "Archmage Trelane",
+					["spec"] = 64,
+					["grupo"] = true,
+					["classe"] = "MAGE",
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1652806603,
+					["serial"] = "0x0000-0000-0000",
+					["end_time"] = 1652806606,
 				}, -- [4]
 				{
 					["flag_original"] = "0x514",
@@ -9270,36 +8176,36 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["serial"] = "0x0000-0000-0000",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["spec"] = 259,
-					["total"] = 0.006836,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.006836,
-					["last_dps"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1652806606,
-					["friendlyfire"] = {
-					},
-					["last_event"] = 0,
-					["nome"] = "Lisa Gallywix",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["grupo"] = true,
-					["on_hold"] = false,
-					["classe"] = "ROGUE",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.006836,
-					["start_time"] = 1652806603,
-					["delay"] = 0,
 					["aID"] = "",
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.006836,
+					["friendlyfire"] = {
+					},
+					["dps_started"] = false,
+					["total"] = 0.006836,
+					["damage_taken"] = 0.006836,
+					["tipo"] = 1,
+					["nome"] = "Lisa Gallywix",
+					["spec"] = 259,
+					["grupo"] = true,
+					["classe"] = "ROGUE",
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1652806603,
+					["serial"] = "0x0000-0000-0000",
+					["end_time"] = 1652806606,
 				}, -- [5]
 				{
 					["flag_original"] = "0x514",
@@ -9308,36 +8214,36 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["serial"] = "0x0000-0000-0000",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["spec"] = 250,
-					["total"] = 0.005481,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.005481,
-					["last_dps"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1652806606,
-					["friendlyfire"] = {
-					},
-					["last_event"] = 0,
-					["nome"] = "Baron Rivendare",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["grupo"] = true,
-					["on_hold"] = false,
-					["classe"] = "DEATHKNIGHT",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.005481,
-					["start_time"] = 1652806603,
-					["delay"] = 0,
 					["aID"] = "",
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.005481,
+					["friendlyfire"] = {
+					},
+					["dps_started"] = false,
+					["total"] = 0.005481,
+					["damage_taken"] = 0.005481,
+					["tipo"] = 1,
+					["nome"] = "Baron Rivendare",
+					["spec"] = 250,
+					["grupo"] = true,
+					["classe"] = "DEATHKNIGHT",
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1652806603,
+					["serial"] = "0x0000-0000-0000",
+					["end_time"] = 1652806606,
 				}, -- [6]
 				{
 					["flag_original"] = "0x514",
@@ -9346,36 +8252,36 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["serial"] = "0x0000-0000-0000",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["spec"] = 63,
-					["total"] = 0.002697,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.002697,
-					["last_dps"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1652806606,
-					["friendlyfire"] = {
-					},
-					["last_event"] = 0,
-					["nome"] = "Kael'thas Sunstrider",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["grupo"] = true,
-					["on_hold"] = false,
-					["classe"] = "MAGE",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.002697,
-					["start_time"] = 1652806603,
-					["delay"] = 0,
 					["aID"] = "",
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.002697,
+					["friendlyfire"] = {
+					},
+					["dps_started"] = false,
+					["total"] = 0.002697,
+					["damage_taken"] = 0.002697,
+					["tipo"] = 1,
+					["nome"] = "Kael'thas Sunstrider",
+					["spec"] = 63,
+					["grupo"] = true,
+					["classe"] = "MAGE",
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1652806603,
+					["serial"] = "0x0000-0000-0000",
+					["end_time"] = 1652806606,
 				}, -- [7]
 				{
 					["flag_original"] = "0x514",
@@ -9384,36 +8290,36 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["serial"] = "0x0000-0000-0000",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["spec"] = 265,
-					["total"] = 0.001304,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.001304,
-					["last_dps"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1652806606,
-					["friendlyfire"] = {
-					},
-					["last_event"] = 0,
-					["nome"] = "Ner'zhul",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["grupo"] = true,
-					["on_hold"] = false,
-					["classe"] = "WARLOCK",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.001304,
-					["start_time"] = 1652806603,
-					["delay"] = 0,
 					["aID"] = "",
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.001304,
+					["friendlyfire"] = {
+					},
+					["dps_started"] = false,
+					["total"] = 0.001304,
+					["damage_taken"] = 0.001304,
+					["tipo"] = 1,
+					["nome"] = "Ner'zhul",
+					["spec"] = 265,
+					["grupo"] = true,
+					["classe"] = "WARLOCK",
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1652806603,
+					["serial"] = "0x0000-0000-0000",
+					["end_time"] = 1652806606,
 				}, -- [8]
 				{
 					["flag_original"] = "0x514",
@@ -9422,36 +8328,36 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["serial"] = "0x0000-0000-0000",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["spec"] = 71,
-					["total"] = 0.008035,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.008035,
-					["last_dps"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1652806606,
-					["friendlyfire"] = {
-					},
-					["last_event"] = 0,
-					["nome"] = "Footman Malakai",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["grupo"] = true,
-					["on_hold"] = false,
-					["classe"] = "WARRIOR",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.008035,
-					["start_time"] = 1652806603,
-					["delay"] = 0,
 					["aID"] = "",
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.008035,
+					["friendlyfire"] = {
+					},
+					["dps_started"] = false,
+					["total"] = 0.008035,
+					["damage_taken"] = 0.008035,
+					["tipo"] = 1,
+					["nome"] = "Footman Malakai",
+					["spec"] = 71,
+					["grupo"] = true,
+					["classe"] = "WARRIOR",
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1652806603,
+					["serial"] = "0x0000-0000-0000",
+					["end_time"] = 1652806606,
 				}, -- [9]
 				{
 					["flag_original"] = "0x514",
@@ -9460,36 +8366,36 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["serial"] = "0x0000-0000-0000",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["spec"] = 257,
-					["total"] = 0.006217,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.006217,
-					["last_dps"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1652806606,
-					["friendlyfire"] = {
-					},
-					["last_event"] = 0,
-					["nome"] = "Tyrande Whisperwind",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["grupo"] = true,
-					["on_hold"] = false,
-					["classe"] = "PRIEST",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.006217,
-					["start_time"] = 1652806603,
-					["delay"] = 0,
 					["aID"] = "",
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.006217,
+					["friendlyfire"] = {
+					},
+					["dps_started"] = false,
+					["total"] = 0.006217,
+					["damage_taken"] = 0.006217,
+					["tipo"] = 1,
+					["nome"] = "Tyrande Whisperwind",
+					["spec"] = 257,
+					["grupo"] = true,
+					["classe"] = "PRIEST",
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1652806603,
+					["serial"] = "0x0000-0000-0000",
+					["end_time"] = 1652806606,
 				}, -- [10]
 				{
 					["flag_original"] = "0x514",
@@ -9498,36 +8404,36 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["serial"] = "0x0000-0000-0000",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["spec"] = 73,
-					["total"] = 0.006785,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.006785,
-					["last_dps"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1652806606,
-					["friendlyfire"] = {
-					},
-					["last_event"] = 0,
-					["nome"] = "Cairne Bloodhoof",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["grupo"] = true,
-					["on_hold"] = false,
-					["classe"] = "WARRIOR",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.006785,
-					["start_time"] = 1652806603,
-					["delay"] = 0,
 					["aID"] = "",
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.006785,
+					["friendlyfire"] = {
+					},
+					["dps_started"] = false,
+					["total"] = 0.006785,
+					["damage_taken"] = 0.006785,
+					["tipo"] = 1,
+					["nome"] = "Cairne Bloodhoof",
+					["spec"] = 73,
+					["grupo"] = true,
+					["classe"] = "WARRIOR",
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1652806603,
+					["serial"] = "0x0000-0000-0000",
+					["end_time"] = 1652806606,
 				}, -- [11]
 				{
 					["flag_original"] = 68168,
@@ -9538,20 +8444,20 @@ _detalhes_database = {
 						["Moolatz"] = 0,
 						["Taunkablood"] = 0,
 					},
-					["serial"] = "Creature-0-4445-1-56-2962-00000673FB",
+					["delay"] = 0,
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["aID"] = "2962",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006729,
-					["end_time"] = 1653037902,
 					["dps_started"] = false,
-					["total"] = 0.006729,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1653037902,
+					["damage_taken"] = 0.006729,
+					["tipo"] = 1,
 					["nome"] = "Windfury Harpy",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -9573,29 +8479,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["total"] = 0.006729,
 					["friendlyfire"] = {
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.006729,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1653037899,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4445-1-56-2962-00000673FB",
+					["aID"] = "2962",
 				}, -- [12]
 				{
 					["flag_original"] = 68168,
@@ -9605,20 +8511,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Moolatz"] = 0,
 					},
-					["serial"] = "Creature-0-4445-1-56-2971-0000065A99",
+					["delay"] = 0,
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["aID"] = "2971",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004241,
-					["end_time"] = 1653037902,
 					["dps_started"] = false,
-					["total"] = 0.004241,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1653037902,
+					["damage_taken"] = 0.004241,
+					["tipo"] = 1,
 					["nome"] = "Taloned Swoop",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -9639,15 +8545,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 							[5708] = {
 								["c_amt"] = 0,
@@ -9666,29 +8572,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 5708,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["total"] = 0.004241,
 					["friendlyfire"] = {
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.004241,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1653037899,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4445-1-56-2971-0000065A99",
+					["aID"] = "2971",
 				}, -- [13]
 				{
 					["flag_original"] = 68168,
@@ -9698,20 +8604,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Moolatz"] = 0,
 					},
-					["serial"] = "Creature-0-4445-1-56-3035-00000660B2",
+					["delay"] = 0,
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["aID"] = "3035",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005023,
-					["end_time"] = 1653037902,
 					["dps_started"] = false,
-					["total"] = 0.005023,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1653037902,
+					["damage_taken"] = 0.005023,
+					["tipo"] = 1,
 					["nome"] = "Flatland Cougar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -9732,29 +8638,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["total"] = 0.005023,
 					["friendlyfire"] = {
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.005023,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1653037899,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4445-1-56-3035-00000660B2",
+					["aID"] = "3035",
 				}, -- [14]
 				{
 					["flag_original"] = 68136,
@@ -9766,17 +8672,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
+					["friendlyfire"] = {
+					},
+					["on_hold"] = false,
 					["classe"] = "UNKNOW",
-					["damage_taken"] = 0.003558,
-					["aID"] = "2957",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003558,
-					["serial"] = "Creature-0-4445-1-56-2957-000005636F",
+					["delay"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1653037902,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Elder Plainstrider",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -9797,15 +8704,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 							[7272] = {
 								["c_amt"] = 0,
@@ -9824,29 +8731,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 7272,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["total"] = 0.003558,
-					["dps_started"] = false,
-					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["total"] = 0.003558,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["damage_taken"] = 0.003558,
 					["start_time"] = 1653037899,
-					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["serial"] = "Creature-0-4445-1-56-2957-000005636F",
+					["aID"] = "2957",
 				}, -- [15]
 				{
 					["flag_original"] = 68136,
@@ -9858,17 +8764,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
+					["friendlyfire"] = {
+					},
+					["on_hold"] = false,
 					["classe"] = "UNKNOW",
-					["damage_taken"] = 0.001059,
-					["aID"] = "2956",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001059,
-					["serial"] = "Creature-0-4445-1-56-2956-0000063F54",
+					["delay"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1653037902,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Adult Plainstrider",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -9889,29 +8796,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["total"] = 0.001059,
-					["dps_started"] = false,
-					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["total"] = 0.001059,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["damage_taken"] = 0.001059,
 					["start_time"] = 1653037899,
-					["delay"] = 0,
-					["friendlyfire"] = {
-					},
+					["serial"] = "Creature-0-4445-1-56-2956-0000063F54",
+					["aID"] = "2956",
 				}, -- [16]
 				{
 					["flag_original"] = 68168,
@@ -9921,20 +8827,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Moolatz"] = 0,
 					},
-					["serial"] = "Creature-0-4445-1-56-2959-0000056988",
+					["delay"] = 0,
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["aID"] = "2959",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003744,
-					["end_time"] = 1653037902,
 					["dps_started"] = false,
-					["total"] = 0.003744,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1653037902,
+					["damage_taken"] = 0.003744,
+					["tipo"] = 1,
 					["nome"] = "Prairie Stalker",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -9955,29 +8861,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["total"] = 0.003744,
 					["friendlyfire"] = {
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.003744,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1653037899,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4445-1-56-2959-0000056988",
+					["aID"] = "2959",
 				}, -- [17]
 				{
 					["flag_original"] = 68168,
@@ -9987,20 +8893,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Moolatz"] = 0,
 					},
-					["serial"] = "Creature-0-4445-1-56-2958-0000066404",
+					["delay"] = 0,
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["aID"] = "2958",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003585,
-					["end_time"] = 1653037902,
 					["dps_started"] = false,
-					["total"] = 0.003585,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1653037902,
+					["damage_taken"] = 0.003585,
+					["tipo"] = 1,
 					["nome"] = "Prairie Wolf",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -10021,15 +8927,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 							[5781] = {
 								["c_amt"] = 0,
@@ -10047,29 +8953,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 5781,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["total"] = 0.003585,
 					["friendlyfire"] = {
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.003585,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1653037899,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4445-1-56-2958-0000066404",
+					["aID"] = "2958",
 				}, -- [18]
 				{
 					["flag_original"] = 68168,
@@ -10079,20 +8985,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Moolatz"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4445-1-56-2960-000006AEE5",
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.004444,
+					["friendlyfire_total"] = 0,
+					["fight_component"] = true,
 					["aID"] = "2960",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004444,
-					["total"] = 0.004444,
-					["monster"] = true,
 					["end_time"] = 1653045421,
-					["last_dps"] = 0,
-					["tipo"] = 1,
+					["dps_started"] = false,
+					["total"] = 0.004444,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Prairie Wolf Alpha",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -10113,29 +9019,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
-					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["damage_taken"] = 0.004444,
 					["start_time"] = 1653045418,
-					["serial"] = "Creature-0-4445-1-56-2960-000006AEE5",
-					["fight_component"] = true,
+					["delay"] = 0,
+					["monster"] = true,
 				}, -- [19]
 				{
 					["flag_original"] = 68168,
@@ -10145,23 +9051,50 @@ _detalhes_database = {
 					["targets"] = {
 						["Moolatz"] = 0,
 					},
-					["delay"] = 0,
+					["serial"] = "Creature-0-4445-1-56-2963-0000073A95",
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.007547,
+					["friendlyfire_total"] = 0,
+					["fight_component"] = true,
 					["aID"] = "2963",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007547,
-					["total"] = 0.007547,
-					["monster"] = true,
 					["end_time"] = 1653045421,
-					["last_dps"] = 0,
-					["tipo"] = 1,
+					["dps_started"] = false,
+					["total"] = 0.007547,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Windfury Wind Witch",
 					["spells"] = {
 						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
 							[9532] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -10179,30 +9112,96 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 9532,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
-					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["damage_taken"] = 0.007547,
 					["start_time"] = 1653045418,
-					["serial"] = "Creature-0-4445-1-56-2963-0000073A95",
-					["fight_component"] = true,
+					["delay"] = 0,
+					["monster"] = true,
 				}, -- [20]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.002692,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["aID"] = "3566",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.002692,
+					["end_time"] = 1653052214,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 0.002692,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["nome"] = "Flatland Prowler",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+						},
+					},
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["serial"] = "Creature-0-4445-1-56-3566-0000078602",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1653052211,
+					["delay"] = 0,
+					["damage_taken"] = 0.002692,
+				}, -- [21]
 			},
 		}, -- [1]
 		{
@@ -10212,26 +9211,27 @@ _detalhes_database = {
 					["flag_original"] = 1297,
 					["totalabsorb"] = 0.003202,
 					["last_hps"] = 0,
-					["healing_from"] = {
+					["targets_overheal"] = {
+						["Moolatz"] = 0,
 					},
 					["targets"] = {
 						["Moolatz"] = 0,
 					},
-					["healing_taken"] = 0.003202,
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["totalover_without_pet"] = 0.003202,
-					["targets_overheal"] = {
-						["Moolatz"] = 0,
+					["iniciar_hps"] = false,
+					["healing_from"] = {
 					},
-					["heal_enemy_amt"] = 0,
+					["aID"] = "4465-02B843FA",
 					["totalover"] = 0.003202,
 					["total_without_pet"] = 0.003202,
-					["iniciar_hps"] = false,
-					["start_time"] = 1652806603,
-					["aID"] = "4465-02B843FA",
-					["total"] = 0.003202,
+					["totalover_without_pet"] = 0.003202,
+					["totaldenied"] = 0.003202,
+					["heal_enemy_amt"] = 0,
 					["end_time"] = 1652806606,
+					["targets_absorbs"] = {
+					},
 					["classe"] = "DRUID",
 					["nome"] = "Moolatz",
 					["spells"] = {
@@ -10256,9 +9256,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[5185] = {
@@ -10280,35 +9280,34 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["targets_absorbs"] = {
-					},
+					["total"] = 0.003202,
 					["heal_enemy"] = {
 					},
-					["serial"] = "Player-4465-02B843FA",
+					["tipo"] = 2,
 					["custom"] = 0,
 					["last_event"] = 0,
 					["on_hold"] = false,
-					["totaldenied"] = 0.003202,
-					["delay"] = 0,
-					["tipo"] = 2,
+					["start_time"] = 1652806603,
+					["serial"] = "Player-4465-02B843FA",
+					["healing_taken"] = 0.003202,
 				}, -- [1]
 				{
 					["flag_original"] = 276,
-					["targets_overheal"] = {
+					["healing_from"] = {
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["classe"] = "DRUID",
+					["aID"] = "",
 					["totalover"] = 0.007039,
 					["total_without_pet"] = 0.007039,
 					["total"] = 0.007039,
@@ -10325,8 +9324,8 @@ _detalhes_database = {
 					["totalover_without_pet"] = 0.007039,
 					["healing_taken"] = 0.007039,
 					["end_time"] = 1652806606,
-					["tipo"] = 2,
-					["healing_from"] = {
+					["spec"] = 105,
+					["targets_overheal"] = {
 					},
 					["nome"] = "Eonar",
 					["spells"] = {
@@ -10335,23 +9334,23 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["aID"] = "",
-					["start_time"] = 1652806603,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.007039,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["classe"] = "DRUID",
+					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["spec"] = 105,
+					["last_event"] = 0,
 				}, -- [2]
 				{
 					["flag_original"] = 276,
-					["targets_overheal"] = {
+					["healing_from"] = {
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["classe"] = "PALADIN",
+					["aID"] = "",
 					["totalover"] = 0.002041,
 					["total_without_pet"] = 0.002041,
 					["total"] = 0.002041,
@@ -10368,8 +9367,8 @@ _detalhes_database = {
 					["totalover_without_pet"] = 0.002041,
 					["healing_taken"] = 0.002041,
 					["end_time"] = 1652806606,
-					["tipo"] = 2,
-					["healing_from"] = {
+					["spec"] = 70,
+					["targets_overheal"] = {
 					},
 					["nome"] = "Bolvar Fordragon",
 					["spells"] = {
@@ -10378,23 +9377,23 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["aID"] = "",
-					["start_time"] = 1652806603,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.002041,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["classe"] = "PALADIN",
+					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["spec"] = 70,
+					["last_event"] = 0,
 				}, -- [3]
 				{
 					["flag_original"] = 276,
-					["targets_overheal"] = {
+					["healing_from"] = {
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["classe"] = "MAGE",
+					["aID"] = "",
 					["totalover"] = 0.001632,
 					["total_without_pet"] = 0.001632,
 					["total"] = 0.001632,
@@ -10411,8 +9410,8 @@ _detalhes_database = {
 					["totalover_without_pet"] = 0.001632,
 					["healing_taken"] = 0.001632,
 					["end_time"] = 1652806606,
-					["tipo"] = 2,
-					["healing_from"] = {
+					["spec"] = 64,
+					["targets_overheal"] = {
 					},
 					["nome"] = "Antonidas",
 					["spells"] = {
@@ -10421,23 +9420,23 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["aID"] = "",
-					["start_time"] = 1652806603,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.001632,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["classe"] = "MAGE",
+					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["spec"] = 64,
+					["last_event"] = 0,
 				}, -- [4]
 				{
 					["flag_original"] = 276,
-					["targets_overheal"] = {
+					["healing_from"] = {
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["classe"] = "WARLOCK",
+					["aID"] = "",
 					["totalover"] = 0.003004,
 					["total_without_pet"] = 0.003004,
 					["total"] = 0.003004,
@@ -10454,8 +9453,8 @@ _detalhes_database = {
 					["totalover_without_pet"] = 0.003004,
 					["healing_taken"] = 0.003004,
 					["end_time"] = 1652806606,
-					["tipo"] = 2,
-					["healing_from"] = {
+					["spec"] = 265,
+					["targets_overheal"] = {
 					},
 					["nome"] = "C'Thun",
 					["spells"] = {
@@ -10464,23 +9463,23 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["aID"] = "",
-					["start_time"] = 1652806603,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.003004,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["classe"] = "WARLOCK",
+					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["spec"] = 265,
+					["last_event"] = 0,
 				}, -- [5]
 				{
 					["flag_original"] = 276,
-					["targets_overheal"] = {
+					["healing_from"] = {
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["classe"] = "ROGUE",
+					["aID"] = "",
 					["totalover"] = 0.005148,
 					["total_without_pet"] = 0.005148,
 					["total"] = 0.005148,
@@ -10497,8 +9496,8 @@ _detalhes_database = {
 					["totalover_without_pet"] = 0.005148,
 					["healing_taken"] = 0.005148,
 					["end_time"] = 1652806606,
-					["tipo"] = 2,
-					["healing_from"] = {
+					["spec"] = 259,
+					["targets_overheal"] = {
 					},
 					["nome"] = "Lisa Gallywix",
 					["spells"] = {
@@ -10507,23 +9506,23 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["aID"] = "",
-					["start_time"] = 1652806603,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.005148,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["classe"] = "ROGUE",
+					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["spec"] = 259,
+					["last_event"] = 0,
 				}, -- [6]
 				{
 					["flag_original"] = 276,
-					["targets_overheal"] = {
+					["healing_from"] = {
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["classe"] = "SHAMAN",
+					["aID"] = "",
 					["totalover"] = 0.00152,
 					["total_without_pet"] = 0.00152,
 					["total"] = 0.00152,
@@ -10540,8 +9539,8 @@ _detalhes_database = {
 					["totalover_without_pet"] = 0.00152,
 					["healing_taken"] = 0.00152,
 					["end_time"] = 1652806606,
-					["tipo"] = 2,
-					["healing_from"] = {
+					["spec"] = 263,
+					["targets_overheal"] = {
 					},
 					["nome"] = "Your Math Teacher",
 					["spells"] = {
@@ -10550,23 +9549,23 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["aID"] = "",
-					["start_time"] = 1652806603,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.00152,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["classe"] = "SHAMAN",
+					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["spec"] = 263,
+					["last_event"] = 0,
 				}, -- [7]
 				{
 					["flag_original"] = 276,
-					["targets_overheal"] = {
+					["healing_from"] = {
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["classe"] = "DEATHKNIGHT",
+					["aID"] = "",
 					["totalover"] = 0.008522,
 					["total_without_pet"] = 0.008522,
 					["total"] = 0.008522,
@@ -10583,8 +9582,8 @@ _detalhes_database = {
 					["totalover_without_pet"] = 0.008522,
 					["healing_taken"] = 0.008522,
 					["end_time"] = 1652806606,
-					["tipo"] = 2,
-					["healing_from"] = {
+					["spec"] = 250,
+					["targets_overheal"] = {
 					},
 					["nome"] = "The Lich King",
 					["spells"] = {
@@ -10593,23 +9592,23 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["aID"] = "",
-					["start_time"] = 1652806603,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.008522,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["classe"] = "DEATHKNIGHT",
+					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["spec"] = 250,
+					["last_event"] = 0,
 				}, -- [8]
 				{
 					["flag_original"] = 276,
-					["targets_overheal"] = {
+					["healing_from"] = {
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["classe"] = "DEATHKNIGHT",
+					["aID"] = "",
 					["totalover"] = 0.003004,
 					["total_without_pet"] = 0.003004,
 					["total"] = 0.003004,
@@ -10626,8 +9625,8 @@ _detalhes_database = {
 					["totalover_without_pet"] = 0.003004,
 					["healing_taken"] = 0.003004,
 					["end_time"] = 1652806606,
-					["tipo"] = 2,
-					["healing_from"] = {
+					["spec"] = 251,
+					["targets_overheal"] = {
 					},
 					["nome"] = "Drek'Thar",
 					["spells"] = {
@@ -10636,14 +9635,14 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["aID"] = "",
-					["start_time"] = 1652806603,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["heal_enemy_amt"] = 0,
 					["totaldenied"] = 0.003004,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["classe"] = "DEATHKNIGHT",
+					["start_time"] = 1652806603,
 					["delay"] = 0,
-					["spec"] = 251,
+					["last_event"] = 0,
 				}, -- [9]
 			},
 		}, -- [2]
@@ -10661,6 +9660,12 @@ _detalhes_database = {
 						["_ActorTable"] = {
 							[8921] = {
 								["id"] = 8921,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[20549] = {
+								["id"] = 20549,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -10695,89 +9700,90 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
-					["nome"] = "Moolatz",
+					["buff_uptime_targets"] = {
+					},
 					["grupo"] = true,
 					["spell_cast"] = {
+						[8613] = 0,
 						[5177] = 0,
 						[467] = 0,
 						[774] = 0,
 						[5176] = 0,
 						[5185] = 0,
-						[1126] = 0,
 						[8921] = 0,
+						[1126] = 0,
 					},
-					["buff_uptime"] = 0,
-					["buff_uptime_targets"] = {
-					},
-					["tipo"] = 4,
-					["last_event"] = 0,
-					["classe"] = "DRUID",
-					["serial"] = "Player-4465-02B843FA",
 					["debuff_uptime_targets"] = {
 					},
+					["nome"] = "Moolatz",
+					["tipo"] = 4,
+					["buff_uptime"] = 0,
+					["classe"] = "DRUID",
+					["serial"] = "Player-4465-02B843FA",
+					["last_event"] = 0,
 				}, -- [1]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["aID"] = "2971",
 					["nome"] = "Taloned Swoop",
+					["flag_original"] = 68168,
 					["pets"] = {
 					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4445-1-56-2971-0000065A99",
 					["spell_cast"] = {
 						[5708] = 0,
 					},
-					["fight_component"] = true,
-					["aID"] = "2971",
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4445-1-56-2971-0000065A99",
-					["flag_original"] = 68168,
 				}, -- [2]
 				{
 					["fight_component"] = true,
-					["last_event"] = 0,
+					["aID"] = "2957",
 					["nome"] = "Elder Plainstrider",
 					["pets"] = {
 					},
+					["tipo"] = 4,
+					["flag_original"] = 68136,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4445-1-56-2957-000005636F",
 					["spell_cast"] = {
 						[7272] = 0,
 					},
-					["flag_original"] = 68136,
-					["aID"] = "2957",
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4445-1-56-2957-000005636F",
-					["tipo"] = 4,
 				}, -- [3]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["aID"] = "2958",
 					["nome"] = "Prairie Wolf",
+					["flag_original"] = 68168,
 					["pets"] = {
 					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4445-1-56-2958-0000066404",
 					["spell_cast"] = {
 						[5781] = 0,
 					},
-					["fight_component"] = true,
-					["aID"] = "2958",
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4445-1-56-2958-0000066404",
-					["flag_original"] = 68168,
 				}, -- [4]
 				{
 					["monster"] = true,
-					["flag_original"] = 68168,
+					["last_event"] = 0,
 					["nome"] = "Windfury Wind Witch",
-					["tipo"] = 4,
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[9532] = 0,
 					},
 					["fight_component"] = true,
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
 					["aID"] = "2963",
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4445-1-56-2963-0000073A95",
-					["pets"] = {
-					},
+					["flag_original"] = 68168,
 				}, -- [5]
 			},
 		}, -- [4]
@@ -10796,7 +9802,7 @@ _detalhes_database = {
 		["alternate_power"] = {
 		},
 		["combat_counter"] = 7061,
-		["spells_cast_timeline"] = {
+		["frags"] = {
 		},
 		["totals"] = {
 			0, -- [1]
@@ -10805,21 +9811,21 @@ _detalhes_database = {
 				0, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
-				[3] = 0,
 				[6] = 0,
+				[3] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
 			}, -- [4]
-			["frags_total"] = 0,
 			["voidzone_damage"] = 0,
+			["frags_total"] = 0,
 		},
 		["player_last_events"] = {
 		},
@@ -10829,6 +9835,35 @@ _detalhes_database = {
 		["__call"] = {
 		},
 		["data_inicio"] = 0,
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["damage"] = {
+			},
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage_section"] = {
+			},
+		},
+		["overall_refreshed"] = true,
+		["hasSaved"] = true,
+		["spells_cast_timeline"] = {
+		},
+		["data_fim"] = 0,
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+		["CombatSkillCache"] = {
+		},
+		["cleu_timeline"] = {
+		},
+		["start_time"] = 0,
+		["TimeData"] = {
+		},
 		["totals_grupo"] = {
 			0, -- [1]
 			0, -- [2]
@@ -10836,68 +9871,30 @@ _detalhes_database = {
 				0, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
-				[3] = 0,
 				[6] = 0,
+				[3] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
 			}, -- [4]
 		},
-		["overall_refreshed"] = true,
-		["hasSaved"] = true,
-		["frags"] = {
-		},
-		["data_fim"] = 0,
-		["cleu_timeline"] = {
-		},
-		["CombatSkillCache"] = {
-		},
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-		["start_time"] = 0,
-		["TimeData"] = {
-		},
-		["PhaseData"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-			}, -- [1]
-			["damage_section"] = {
-			},
-			["heal_section"] = {
-			},
-			["heal"] = {
-			},
-			["damage"] = {
-			},
-		},
 	},
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "",
-		["started"] = false,
-		["segment_id"] = 0,
-		["ej_id"] = 0,
-		["started_at"] = 0,
-		["run_id"] = 0,
-		["level"] = 0,
-		["dungeon_zone_id"] = 0,
-		["previous_boss_killed_at"] = 0,
+	["force_font_outline"] = "",
+	["character_data"] = {
+		["logons"] = 1827,
 	},
-	["ignore_nicktag"] = true,
-	["cached_talents"] = {
-	},
+	["last_realversion"] = 146,
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -10905,9 +9902,8 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["cached_roles"] = {
+		["Player-4465-024FFAAB"] = "HEALER",
 	},
 	["cached_specs"] = {
 	},

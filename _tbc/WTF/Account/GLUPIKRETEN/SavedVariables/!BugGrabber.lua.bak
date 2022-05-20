@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 5166,
 	["lastSanitation"] = 3,
-	["session"] = 5165,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -701,8 +701,8 @@ BugGrabberDB = {
 		}, -- [88]
 		{
 			["message"] = "(null)",
-			["session"] = 4904,
 			["time"] = "2022/03/09 13:39:43",
+			["session"] = 4904,
 			["counter"] = 6,
 		}, -- [89]
 		{
@@ -747,14 +747,14 @@ BugGrabberDB = {
 		}, -- [94]
 		{
 			["message"] = "  (null)",
-			["session"] = 4914,
 			["time"] = "2022/04/13 16:37:53",
+			["session"] = 4914,
 			["counter"] = 3,
 		}, -- [95]
 		{
 			["message"] = " (null)",
-			["session"] = 4914,
 			["time"] = "2022/04/11 11:49:12",
+			["session"] = 4914,
 			["counter"] = 13,
 		}, -- [96]
 		{
@@ -1155,5 +1155,13 @@ BugGrabberDB = {
 			["session"] = 5150,
 			["counter"] = 1,
 		}, -- [146]
+		{
+			["message"] = "Interface\\FrameXML\\ContainerFrame.lua:1153: attempt to index a nil value",
+			["time"] = "2022/05/20 13:23:14",
+			["locals"] = "itemButton = AdiBagsItemButton84 {\n NormalTexture = AdiBagsItemButton84NormalTexture {\n }\n bag = 4\n BattlepayItemTexture = <unnamed> {\n }\n beautyShadow = <table> {\n }\n IconOverlay = <unnamed> {\n }\n BagStaticTop = <unnamed> {\n }\n IconBorder = <unnamed> {\n }\n flashAnim = <unnamed> {\n }\n icon = AdiBagsItemButton84IconTexture {\n }\n UpdateTooltip = <function> defined @Interface\\FrameXML\\ContainerFrame.lua:1323\n ExtendedOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n UpgradeIcon = <unnamed> {\n }\n NewItemTexture = <unnamed> {\n }\n Cooldown = AdiBagsItemButton84Cooldown {\n }\n BagStaticBottom = <unnamed> {\n }\n filterName = \"Junk\"\n flash = <unnamed> {\n }\n ExtendedSlot = <unnamed> {\n }\n IconQuestTexture = AdiBagsItemButton84IconQuestTexture {\n }\n IconTexture = AdiBagsItemButton84IconTexture {\n }\n JunkIcon = <unnamed> {\n }\n Stock = AdiBagsItemButton84Stock {\n }\n slot = 2\n count = 1\n timeSinceUpgradeCheck = 0\n Count = AdiBagsItemButton84Count {\n }\n 0 = <userdata>\n searchOverlay = AdiBagsItemButton84SearchOverlay {\n }\n newitemglowAnim = <unnamed> {\n }\n ExtendedOverlay2 = <unnamed> {\n }\n}\nisEquipped = nil\nquantity = 1\nslot = 2\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index a nil value\"\n",
+			["stack"] = "[string \"@Interface\\FrameXML\\ContainerFrame.lua\"]:1153: in function `ContainerFrame_GetExtendedPriceString'\n[string \"*:OnMouseUp\"]:2: in function <[string \"*:OnMouseUp\"]:1>\n[string \"=[C]\"]: ?",
+			["session"] = 5166,
+			["counter"] = 4,
+		}, -- [147]
 	},
 }
