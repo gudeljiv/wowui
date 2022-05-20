@@ -88,7 +88,7 @@ ClassicCastbarsDB = {
 		["textPositionX"] = 0,
 		["showSpark"] = true,
 		["showTimer"] = false,
-		["ignoreParentAlpha"] = false,
+		["hideIconBorder"] = false,
 		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["showIcon"] = true,
 		["borderColor"] = {
@@ -127,8 +127,8 @@ ClassicCastbarsDB = {
 			0, -- [2]
 			0, -- [3]
 		},
-		["textOutline"] = "",
 		["width"] = 120,
+		["textOutline"] = "",
 		["iconPositionY"] = 0,
 		["statusColorChannel"] = {
 			0, -- [1]
@@ -148,7 +148,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["hideIconBorder"] = false,
+		["ignoreParentAlpha"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -165,7 +165,7 @@ ClassicCastbarsDB = {
 		["textPositionX"] = 0,
 		["showSpark"] = true,
 		["iconPositionX"] = -5,
-		["hideIconBorder"] = false,
+		["ignoreParentAlpha"] = false,
 		["castStatusBar"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
 		["showIcon"] = true,
 		["borderColor"] = {
@@ -204,8 +204,8 @@ ClassicCastbarsDB = {
 			0, -- [2]
 			0, -- [3]
 		},
-		["textOutline"] = "",
 		["width"] = 150,
+		["textOutline"] = "",
 		["iconPositionY"] = 0,
 		["statusColorChannel"] = {
 			0, -- [1]
@@ -225,7 +225,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["ignoreParentAlpha"] = false,
+		["hideIconBorder"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -266,11 +266,11 @@ ClassicCastbarsDB = {
 		["15517Sweep"] = true,
 		["11382Threatening Gaze"] = true,
 		["16165Arcane Explosion"] = true,
-		["14947Stun Bomb Attack"] = true,
 		["11372Venom Spit"] = true,
+		["14947Stun Bomb Attack"] = true,
 		["15311Entangling Roots"] = true,
 		["12557Dominate Mind"] = true,
-		["15956Locust Swarm"] = true,
+		["17942Acid Spray"] = true,
 		["16146Raise Dead"] = true,
 		["16021Chain Lightning"] = true,
 		["15114Massive Geyser"] = true,
@@ -278,20 +278,20 @@ ClassicCastbarsDB = {
 		["12259Shadow Bolt"] = true,
 		["10436Banshee Wail"] = true,
 		["11981Shadow Flame"] = true,
-		["16021Lightning Totem"] = true,
-		["14943Stun Bomb Attack"] = true,
 		["11359Soul Tap"] = true,
-		["16446Stoneskin"] = true,
+		["14943Stun Bomb Attack"] = true,
+		["16021Lightning Totem"] = true,
+		["11490Sacrifice"] = true,
 		["12459Demon Portal"] = true,
 		["8127Chain Lightning"] = true,
 		["12264Arcane Explosion"] = true,
 		["12119Dominate Mind"] = true,
 		["11492Enervate"] = true,
 		["15114Frost Breath"] = true,
-		["11981Wing Buffet"] = true,
+		["10184Fireball"] = true,
 		["12201Boulder"] = true,
 		["14601Wing Buffet"] = true,
-		["15589Eye Beam"] = true,
+		["15979Pointy Spike"] = true,
 		["16215Arcane Explosion"] = true,
 		["15311Fear"] = true,
 		["15246Mana Burn"] = true,
@@ -300,12 +300,12 @@ ClassicCastbarsDB = {
 		["15247Mind Flay"] = true,
 		["14020Ignite Flesh"] = true,
 		["11492Wild Regeneration"] = true,
-		["10184Fireball"] = true,
+		["11981Wing Buffet"] = true,
 		["11983Wing Buffet"] = true,
-		["15979Pointy Spike"] = true,
+		["15589Eye Beam"] = true,
 		["13161Stun Bomb Attack"] = true,
-		["16022Mind Flay"] = true,
-		["16021Fear"] = true,
+		["15247Mana Burn"] = true,
+		["6109Frost Breath"] = true,
 		["11983Shadow Flame"] = true,
 		["14834Blood Siphon"] = true,
 		["11729Toxic Spit"] = true,
@@ -314,16 +314,16 @@ ClassicCastbarsDB = {
 		["10184Flame Breath"] = true,
 		["12459Shadow Bolt"] = true,
 		["14601Shadow Flame"] = true,
-		["6109Frost Breath"] = true,
+		["13280Massive Geyser"] = true,
 		["14890Bellowing Roar"] = true,
 		["15956Impale"] = true,
 		["15979Spike Volley"] = true,
-		["13280Massive Geyser"] = true,
+		["16021Fear"] = true,
 		["12435Fireball Volley"] = true,
 		["6109Manastorm"] = true,
 		["16368Shadow Bolt Volley"] = true,
-		["15247Mana Burn"] = true,
-		["11490Sacrifice"] = true,
+		["16022Mind Flay"] = true,
+		["16446Stoneskin"] = true,
 		["12265Fireball"] = true,
 		["15727Eye Beam"] = true,
 		["10438Frostbolt"] = true,
@@ -334,7 +334,7 @@ ClassicCastbarsDB = {
 		["14944Stun Bomb Attack"] = true,
 		["11339Volley"] = true,
 		["11583Shadow Flame"] = true,
-		["17942Acid Spray"] = true,
+		["15956Locust Swarm"] = true,
 		["15311Silence"] = true,
 		["14020Frost Burn"] = true,
 		["13996Bomb"] = true,
@@ -347,7 +347,7 @@ ClassicCastbarsDB = {
 		["textPositionX"] = 0,
 		["showSpark"] = true,
 		["showTimer"] = false,
-		["ignoreParentAlpha"] = false,
+		["hideIconBorder"] = false,
 		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
 		["showIcon"] = true,
 		["borderColor"] = {
@@ -386,8 +386,8 @@ ClassicCastbarsDB = {
 			0, -- [2]
 			0, -- [3]
 		},
-		["textOutline"] = "",
 		["width"] = 150,
+		["textOutline"] = "",
 		["iconPositionY"] = 0,
 		["statusColorChannel"] = {
 			0, -- [1]
@@ -407,7 +407,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["hideIconBorder"] = false,
+		["ignoreParentAlpha"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -423,7 +423,7 @@ ClassicCastbarsDB = {
 		["textPositionX"] = 0,
 		["showSpark"] = true,
 		["showTimer"] = true,
-		["ignoreParentAlpha"] = false,
+		["hideIconBorder"] = false,
 		["castStatusBar"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
 		["showIcon"] = true,
 		["borderColor"] = {
@@ -462,8 +462,8 @@ ClassicCastbarsDB = {
 			0, -- [2]
 			0, -- [3]
 		},
-		["textOutline"] = "",
 		["width"] = 150,
+		["textOutline"] = "",
 		["iconPositionY"] = 0,
 		["statusColorChannel"] = {
 			0, -- [1]
@@ -483,7 +483,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["hideIconBorder"] = false,
+		["ignoreParentAlpha"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -499,7 +499,7 @@ ClassicCastbarsDB = {
 		["textPositionX"] = 0,
 		["showSpark"] = true,
 		["showTimer"] = false,
-		["ignoreParentAlpha"] = false,
+		["hideIconBorder"] = false,
 		["castStatusBar"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
 		["showIcon"] = true,
 		["borderColor"] = {
@@ -538,8 +538,8 @@ ClassicCastbarsDB = {
 			0, -- [2]
 			0, -- [3]
 		},
-		["textOutline"] = "",
 		["width"] = 190,
+		["textOutline"] = "",
 		["iconPositionY"] = 0,
 		["statusColorChannel"] = {
 			0, -- [1]
@@ -559,7 +559,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			0.535, -- [4]
 		},
-		["hideIconBorder"] = false,
+		["ignoreParentAlpha"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]

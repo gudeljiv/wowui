@@ -31,8 +31,11 @@ skills = [
     {"name": "mend pet", "key": "v"},
 
     #  druid
-    {"name": "wrath", "key": "1"},
-    {"name": "moonfire", "key": "2"},
-    {"name": "mark of the wild", "key": "1", "modifier": "alt"},
-    {"name": "thorns", "key": "2", "modifier": "alt"},
+    # {"name": "wrath", "key": "1"},
+    # {"name": "moonfire", "key": "2"},
+    # {"name": "healing touch", "key": "f"},
+    # {"name": "mark of the wild", "key": "1", "modifier": "alt"},
+    # {"name": "thorns", "key": "2", "modifier": "alt"},
+    {"name": "maul", "key": "1"},
+    {"name": "demoralizing roar", "key": "3", "modifier": "alt"},
 ]

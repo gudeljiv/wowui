@@ -50,10 +50,10 @@ PallyPower_AuraAssignments = {
 	["Darcassan"] = 0,
 	["Eshquîa"] = 3,
 	["Carroll"] = 0,
-	["Yamadin"] = 2,
 	["Meeyak"] = 0,
-	["Vermina"] = 1,
+	["Yamadin"] = 2,
 	["Dixuck"] = 3,
+	["Vermina"] = 1,
 	["Bellicosa"] = 7,
 	["Canestengyno"] = 1,
 }
