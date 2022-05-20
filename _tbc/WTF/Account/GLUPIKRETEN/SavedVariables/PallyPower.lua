@@ -23,10 +23,10 @@ PallyPowerDB = {
 			["configscale"] = 1.2,
 			["rfbuff"] = false,
 			["enable"] = true,
+			["SalvInCombat"] = true,
 			["minimap"] = {
 				["show"] = false,
 			},
-			["SalvInCombat"] = true,
 			["rf"] = false,
 		},
 		["Other"] = {
@@ -50,10 +50,10 @@ PallyPower_AuraAssignments = {
 	["Darcassan"] = 0,
 	["Eshquîa"] = 3,
 	["Carroll"] = 0,
-	["Yamadin"] = 2,
-	["Meeyak"] = 0,
 	["Vermina"] = 1,
+	["Meeyak"] = 0,
 	["Dixuck"] = 3,
+	["Yamadin"] = 2,
 	["Bellicosa"] = 7,
 	["Canestengyno"] = 1,
 }

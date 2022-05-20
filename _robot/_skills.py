@@ -33,4 +33,6 @@ skills = [
     #  druid
     {"name": "wrath", "key": "1"},
     {"name": "moonfire", "key": "2"},
+    {"name": "mark of the wild", "key": "1", "modifier": "alt"},
+    {"name": "thorns", "key": "2", "modifier": "alt"},
 ]
