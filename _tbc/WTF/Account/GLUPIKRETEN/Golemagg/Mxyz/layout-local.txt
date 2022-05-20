@@ -111,6 +111,13 @@ X: 0
 Y: 0
 W: 648
 H: 455
+Frame: WeakAurasOptions
+FrameLevel: 1
+Anchor: LEFT
+X: 52
+Y: 37
+W: 942
+H: 929
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER
