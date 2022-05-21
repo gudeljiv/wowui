@@ -43,17 +43,37 @@ f:SetBackdrop(
 	}
 )
 
+local buffs = {
+	['Feign Dead'] = true
+}
+
+-- white -> skip
+-- green -> single target
+-- red -> aoe
 PlayerFrame:HookScript(
 	'OnUpdate',
 	function()
-		if InCombatLockdown() and not ChatFrame1EditBox:IsVisible() and not IsMounted() then
-			if AOE() then
-				f:SetBackdropColor(1, 0, 0, 1)
-			else
-				f:SetBackdropColor(0, 1, 0, 1)
+		haveBuff = false
+
+		for buff in pairs(buffs) do
+			for i = 1, 40 do
+				local B = UnitBuff('player', i)
+				if B and B == buff then
+					haveBuff = true
+				end
 			end
+		end
+
+		if ChatFrame1EditBox:IsVisible() or IsMounted() or haveBuff then
+			f:SetBackdropColor(1, 1, 1, 1) -- white
 		else
-			f:SetBackdropColor(1, 1, 1, 1)
+			if InCombatLockdown() then
+				if AOE() then
+					f:SetBackdropColor(1, 0, 0, 1) -- red
+				else
+					f:SetBackdropColor(0, 1, 0, 1) -- green
+				end
+			end
 		end
 	end
 )

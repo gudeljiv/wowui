@@ -16,19 +16,13 @@ VER 3 000000000000000F "AttackSpeed" "132089"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:27860
-/castsequence [combat] reset=combat item:22832,item:13444
+/use [nocombat]item:2288
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:29451
-/castsequence [combat] reset=combat item:22829,item:28100,item:13446
-END
-VER 3 0000000000000011 "GREEN" "2241756"
-/run RotationFrame3:ClearAllPoints()
-/run RotationFrame3:SetPoint('LEFT', PlayerFrame, 'RIGHT', 0, 6)
-/run RotationFrame3:SetHeight(40)
-/run RotationFrame3:SetWidth(3)
+/use [nocombat]item:414
+/castsequence [combat] reset=combat item:858,item:118
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
@@ -40,9 +34,6 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /cast feed pet
 /use item:27677
 END
-VER 3 0000000000000012 "RED" "2241756"
-/run RotationFrame3:SetBackdropColor(1, 0, 0, 0.9)
-END
 VER 3 0000000000000010 "TEST" "3940790"
-/run  print(nHealthStatusBar:isVisible())
+/run for i=1,40 do local B=UnitBuff("player",i); if B and B == "Aspect of the Hawk" then print(i.."="..B) end end
 END
