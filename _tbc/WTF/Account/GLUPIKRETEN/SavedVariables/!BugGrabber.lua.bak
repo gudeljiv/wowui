@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 5168,
 	["lastSanitation"] = 3,
+	["session"] = 5169,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -693,8 +693,8 @@ BugGrabberDB = {
 		}, -- [87]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/03/09 13:39:43",
 			["session"] = 4904,
+			["time"] = "2022/03/09 13:39:43",
 			["counter"] = 6,
 		}, -- [88]
 		{
@@ -739,14 +739,14 @@ BugGrabberDB = {
 		}, -- [93]
 		{
 			["message"] = "  (null)",
-			["time"] = "2022/04/13 16:37:53",
 			["session"] = 4914,
+			["time"] = "2022/04/13 16:37:53",
 			["counter"] = 3,
 		}, -- [94]
 		{
 			["message"] = " (null)",
-			["time"] = "2022/04/11 11:49:12",
 			["session"] = 4914,
+			["time"] = "2022/04/11 11:49:12",
 			["counter"] = 13,
 		}, -- [95]
 		{
@@ -1155,27 +1155,27 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [146]
 		{
-			["message"] = "Usage: CastSpellByName(name[, target])",
-			["time"] = "2022/05/20 18:39:50",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `CastSpellByName'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:997: in function <Interface\\FrameXML\\ChatFrame.lua:925>\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:1236: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4880: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:14: in function `MultiActionButtonDown'\n[string \"MULTIACTIONBAR4BUTTON11\"]:2: in function <[string \"MULTIACTIONBAR4BUTTON11\"]:1>",
-			["session"] = 5168,
-			["counter"] = 1,
-		}, -- [147]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ImprovedMacroFrame' tried to call the protected function 'EditMacro()'.",
 			["time"] = "2022/02/12 14:50:26",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `EditMacro'\n[string \"@Interface\\AddOns\\Blizzard_MacroUI\\Blizzard_MacroUI.lua\"]:503: in function `MacroFrame_SaveMacro'\n[string \"@Interface\\AddOns\\ImprovedMacroFrame\\ImprovedMacroFrame-1.0.2.lua\"]:44: in function <...ace\\AddOns\\ImprovedMacroFrame\\ImprovedMacroFrame.lua:42>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:2089: in function `SetUIPanel'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:2169: in function `HideUIPanel'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:1822: in function <Interface_TBC\\FrameXML\\UIParent.lua:1814>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:2612: in function `HideUIPanel'\n[string \"@Interface\\SharedXML\\SharedUIPanelTemplates.lua\"]:313: in function `HideParentPanel'\n[string \"@Interface\\SharedXML\\SharedUIPanelTemplates.lua\"]:180: in function <Interface\\SharedXML\\SharedUIPanelTemplates.lua:174>",
 			["session"] = 5168,
 			["counter"] = 3,
-		}, -- [148]
+		}, -- [147]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_TrackedQuests:ClearAllPoints()'.",
 			["time"] = "2022/03/07 16:08:32",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:610: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:1243: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:198: in function <...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:162>",
 			["session"] = 5168,
+			["counter"] = 3,
+		}, -- [148]
+		{
+			["message"] = "Usage: CastSpellByName(name[, target])",
+			["time"] = "2022/05/20 18:39:50",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `CastSpellByName'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:997: in function <Interface\\FrameXML\\ChatFrame.lua:925>\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:1236: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4880: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2944: in function <Interface\\FrameXML\\ChatFrame.lua:2937>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:14: in function `MultiActionButtonDown'\n[string \"MULTIACTIONBAR4BUTTON11\"]:2: in function <[string \"MULTIACTIONBAR4BUTTON11\"]:1>",
+			["session"] = 5169,
 			["counter"] = 3,
 		}, -- [149]
 	},

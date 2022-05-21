@@ -22,15 +22,15 @@ if sys.platform == "darwin":
 if sys.platform == "win32":
     import win32gui
 
-aoe = False
+combat = False
 debug = False
 dprint = False
 pause = True
 
 x = 6
 y = 6
-x_aoe = 17
-y_aoe = 2
+x_combat = 17
+y_combat = 2
 x_interrupt = 27
 y_interrupt = 2
 margin = 1
@@ -88,7 +88,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
             p_main = {"top": 0, "left": 0, "width": x*2, "height": y*2}
-            p_aoe = {"top": 0, "left": x_aoe, "width": 5, "height": 2}
+            p_combat = {"top": 0, "left": x_combat, "width": 5, "height": 2}
             p_interrupt = {"top": 0, "left": x_interrupt, "width": 5, "height": 2}
 
             grabbed_image = dir_path + "/_main_{top}x{left}_{width}x{height}.png".format(**p_main)
@@ -96,20 +96,23 @@ with keyboard.Listener(on_press=on_press) as listener:
             main_image = sct.grab(p_main)
             main = main_image.pixel(int(x/2), int(y/2))
 
-            aoe_image = sct.grab(p_aoe)
-            aoe = aoe_image.pixel(1, 1)
-            # mss.tools.to_png(aoe_image.rgb, aoe_image.size, output="aoe_{top}x{left}_{width}x{height}.png".format(**p_aoe))
+            combat_image = sct.grab(p_combat)
+            combat = combat_image.pixel(1, 1)
+            # mss.tools.to_png(combat_image.rgb, combat_image.size, output="combat_{top}x{left}_{width}x{height}.png".format(**p_combat))
 
             interrupt_image = sct.grab(p_interrupt)
             interrupt = interrupt_image.pixel(1, 1)
             # mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="interrupt_{top}x{left}_{width}x{height}.png".format(**p_interrupt))
 
             if not debug and not pause:
-                # skipping combat, chat open ... any other reason (white -> skip, green -> combat)
-                if aoe == (255, 255, 255):
+                # skipping combat, chat open
+                # any other reason
+                # (white -> skip, green -> combat)
+                if combat == (255, 255, 255):
                     continue
 
-                # aoe indicator, white --> red
+                # interrupt indicator
+                # white --> green
                 if interrupt == (0, 255, 0):
                     if dprint:
                         print("interrupt", "f9", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
@@ -127,8 +130,6 @@ with keyboard.Listener(on_press=on_press) as listener:
                 # os.remove(grabbed_image)
                 grabbed = cv2.cvtColor(numpy.array(main_image), cv2.COLOR_BGR2GRAY)
 
-                # print("checking skills...", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
-
                 # rotation
                 for skill in skills:
                     start_skills_time = time.time()
@@ -142,7 +143,8 @@ with keyboard.Listener(on_press=on_press) as listener:
                                 pyautogui.hotkey(skill["modifier"], skill["key"])
                             else:
                                 pyautogui.hotkey(skill["key"])
+
             if debug:
                 time.sleep(0.5)
                 mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
-                print(grabbed_image, main, aoe, interrupt, active_window, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                print(grabbed_image, main, combat, interrupt, active_window, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")

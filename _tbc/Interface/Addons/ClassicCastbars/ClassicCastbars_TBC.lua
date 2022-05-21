@@ -174,11 +174,18 @@ function addon:BindCurrentCastData(castbar, unitID, isChanneled)
 			-- Check for debuff silences. If mob is still casting while silenced he's most likely interrupt immune
 			-- (if silence effect hits but not kick itself it wont actually show up in CLEU as spell immuned so we gotta check here aswell)
 
+			-- CheckInteractDistance
+			-- 1 = Inspect, 28 yards
+			-- 2 = Trade, 11.11 yards
+			-- 3 = Duel, 9.9 yards
+			-- 4 = Follow, 28 yards
+
 			-- WARRIOR INTERRUPT
 			if (select(2, UnitClass('player')) == 'WARRIOR') then
-				local _, active = GetShapeshiftFormInfo(1) -- ako je battle stance
-				if not active then
-					-- if  IsUsableSpell("Pummel")
+				local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
+				local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
+				local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
+				if not battle then
 					if IsSpellInRange('Pummel', 'target') == 1 then
 						RotationFrame2:SetBackdropColor(0, 1, 0, 1)
 					end
@@ -192,11 +199,18 @@ function addon:BindCurrentCastData(castbar, unitID, isChanneled)
 				end
 			end
 
-			-- if(select(2, UnitClass("player")) == "WARLOCK") then
-			-- 	if UnitPower("player") >= 10 then
-			-- 		RotationFrame2:SetBackdropColor(0, 1, 0, 1)
-			-- 	end
-			-- end
+			-- DRUID INTERRUPT
+			if (select(2, UnitClass('player')) == 'DRUID') then
+				local _, bear = GetShapeshiftFormInfo(1) -- ako je bear form
+				local _, aquatic = GetShapeshiftFormInfo(2) -- ako je aquatic form
+				local _, cat = GetShapeshiftFormInfo(3) -- ako je cat form
+				local _, travel = GetShapeshiftFormInfo(4) -- ako je travel form
+				local _, moonkin = GetShapeshiftFormInfo(5) -- ako je moonkin form
+				local _, tree = GetShapeshiftFormInfo(6) -- ako je tree form
+				if GetSpellCooldown('Bash') == 0 and CheckInteractDistance('target', 3) then
+					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+				end
+			end
 
 			for i = 1, 40 do
 				local debuffName = UnitAura(unitID, i, 'HARMFUL')
