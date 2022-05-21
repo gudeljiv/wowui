@@ -207,7 +207,7 @@ function addon:BindCurrentCastData(castbar, unitID, isChanneled)
 				local _, travel = GetShapeshiftFormInfo(4) -- ako je travel form
 				local _, moonkin = GetShapeshiftFormInfo(5) -- ako je moonkin form
 				local _, tree = GetShapeshiftFormInfo(6) -- ako je tree form
-				if GetSpellCooldown('Bash') == 0 and CheckInteractDistance('target', 3) then
+				if bear and GetSpellCooldown('Bash') == 0 and CheckInteractDistance('target', 3) then
 					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
 				end
 			end

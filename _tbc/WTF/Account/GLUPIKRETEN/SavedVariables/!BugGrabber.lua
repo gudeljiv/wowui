@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 5180,
+	["session"] = 5184,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1155,21 +1155,13 @@ BugGrabberDB = {
 			["counter"] = 3,
 		}, -- [146]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
-			["time"] = "2022/02/15 18:27:27",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 5174,
-			["counter"] = 60,
-		}, -- [147]
-		{
 			["message"] = "Interface\\AddOns\\ChocolateBar\\Chocolate.lua:325: Action[FrameMeasurement] failed because[Can't measure restricted regions]: attempted from: NamePlate1PlaterUnitFrame:GetPoint().",
 			["time"] = "2022/04/29 10:42:49",
 			["locals"] = "(*temporary) = NamePlate1PlaterUnitFrame {\n UpdateUnitFrame = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9502\n Plater = true\n isNamePlate = true\n HasHideHookRegistered = true\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:382\n IsTarget = false\n IsUIParent = true\n TargetNeonDown = <unnamed> {\n }\n powerBar = NamePlate1PlaterUnitFramePowerBar {\n }\n CanCheckAggro = true\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:274\n ScriptRunInitialization = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10197\n namePlateUnitToken = \"nameplate1\"\n aggroGlowUpper = <unnamed> {\n }\n GhostAuraCache = <table> {\n }\n ScriptRunOnShow = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10158\n namePlateNpcId = 3244\n HookGetInfo = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10041\n UnregisterEvents = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9240\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:270\n RegisterEvents = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9214\n IsUnitNameplate = true\n ExtraIconFrame = NamePlate1PlaterUnitFrameExtraIconRow {\n }\n RefreshID = 6\n namePlateUnitName = \"Greater Plainstrider\"\n ScriptRunNoAttach = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10231\n SetHealthBarColor = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9209\n HasHooksRegistered = true\n IsUnitEvent = <table> {\n }\n namePlateThreatPercent = 0\n UNIT_ENTERED_VEHICLE = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9534\n CheckVehiclePossession = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9328\n HighlightFrame = NamePlate1PlaterUnitFrameHealthBarHighlightOverlay {\n }\n ScriptRunOnHide = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10181\n blizzardPlateFrameID = \"table: 000001C3538FA430\"\n ScriptHotReload = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10116\n ScriptRunOnUpdate = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10138\n castBar2 = NamePlate1PlaterUnitFrameCastBar2 {\n }\n nameplateScaleAdjust = 1\n healthBar = NamePlate1PlaterUnitFrameHealthBar {\n }\n UNIT_NAME_UPDATE = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9522\n BossModIconFrame = NamePlate1PlaterUnitFrameHealthBarBossModIconRow {\n }\n BodyFlashFrame = <unnamed> {\n }\n UpdateName = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9452\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:258\n ActorTitleSpecial = <unnamed> {\n }\n actorType = \"enemynpc\"\n namePlateClassification = \"normal\"\n ScriptRunCommMessageHook = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10208\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:174\n PLAYER_TARGET_CHANGED = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9517\n namePlateInRange = true\n aggroGlowLower = <unnamed> {\n }\n BuffFrame = NamePlate1PlaterUnitFrameBuffFrame1 {\n }\n isBattlePet = false\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:238\n isWidgetOnlyMode = false\n UnitFrameEvents = <table> {\n }\n InExecuteRange = false\n namePlateThreatOffTankIsTanking = false\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:144\n namePlateUnitReaction = 4\n castBar = NamePlate1PlaterUnitFrameCastBar {\n }\n IsProtected = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10319\n SetUnit = <function> defined @Interface\\AddOns\\Plater\\libs\\DF\\panel.lua:9279\n unitName = <unnamed> {\n }\n Top3DFrame = NamePlate13DFrame {\n }\n CustomIndicators = <table> {\n }\n namePlateUnitNameLower = \"greater plainstrider\"\n TargetTextures4Sides = <table> {\n }\n targetOverlay = <unnamed> {\n }\n ThreatIcon = <unnamed> {\n }\n PlaterRaidTargetFrame = <unnamed> {\n }\n ScriptGetContainer = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:10029\n PlayerCannotAttack = false\n SetAlphaTo = <function> defined @Interface\\AddOns\\Plater\\Plater.lua:8075\n ActorNameSpecial = <unnamed> {\n }\n UNIT_EXITED_VEHICLE = <function> defined @Interface\\AddOn",
 			["stack"] = "[string \"=[C]\"]: in function `GetPoint'\n[string \"@Interface\\AddOns\\ChocolateBar\\Chocolate.lua\"]:325: in function <Interface\\AddOns\\ChocolateBar\\Chocolate.lua:307>",
 			["session"] = 5178,
 			["counter"] = 2,
-		}, -- [148]
+		}, -- [147]
 		{
 			["message"] = "Interface\\AddOns\\ChocolateBar\\DragAndDrop.lua:86: attempt to index upvalue 'focus' (a nil value)",
 			["time"] = "2022/04/29 10:42:52",
@@ -1177,7 +1169,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\ChocolateBar\\DragAndDrop.lua\"]:86: in function `Stop'\n[string \"@Interface\\AddOns\\ChocolateBar\\Chocolate.lua\"]:347: in function <Interface\\AddOns\\ChocolateBar\\Chocolate.lua:341>",
 			["session"] = 5178,
 			["counter"] = 2,
-		}, -- [149]
+		}, -- [148]
 		{
 			["message"] = "Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua:1097: Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")",
 			["time"] = "2022/05/21 16:50:41",
@@ -1185,6 +1177,21 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `GetItemInfo'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1097: in function `BuildMenu'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1797: in function `OnClick'\n[string \"@Interface\\AddOns\\ChocolateBar\\Chocolate.lua\"]:289: in function <Interface\\AddOns\\ChocolateBar\\Chocolate.lua:286>",
 			["session"] = 5179,
 			["counter"] = 3,
+		}, -- [149]
+		{
+			["message"] = "[string \"Condition_STANCE_EXISTS_ALIVE_LUA_LUA_RAGE_...\"]:7: [string \"local inRange = 0...\"]:3: 'then' expected near ')'",
+			["time"] = "2022/05/21 18:37:06",
+			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"Condition_STANCE_EXISTS_ALIVE_LUA_LUA_RAGE_ABS\"]:7: in function `CheckFunction'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:265: in function <...eWhen\\Components\\Core\\Conditions\\ConditionObject.lua:259>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:234: in function `RegisterForUpdating'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:318: in function `DeclareExternalUpdater'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua\"]:1040: in function `Setup'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua\"]:71: in function <Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:65>\n[string \"=(tail call)\"]: ?\n...\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1129: in function `CScriptCall'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:980: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:968>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1040: in function `CScriptBubble'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1469: in function `OnSettingSaved'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:2057: in function `SaveSetting'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:2029: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:2026>",
+			["session"] = 5181,
+			["counter"] = 1,
 		}, -- [150]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
+			["time"] = "2022/02/15 18:27:27",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
+			["session"] = 5184,
+			["counter"] = 63,
+		}, -- [151]
 	},
 }
