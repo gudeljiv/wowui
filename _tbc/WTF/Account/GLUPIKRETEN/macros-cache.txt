@@ -14,15 +14,18 @@ END
 VER 3 000000000000000F "AttackSpeed" "132089"
 /run mainSpeed, offSpeed = UnitAttackSpeed("target") print(format("%s: attack speed = %.2f", GetUnitName("target"), mainSpeed))
 END
+VER 3 0000000000000011 "D/H" "2241756"
+/itemrack toggle dps, heal
+END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:1179
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:414
+/castsequence [combat] reset=combat item:858,item:118
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
