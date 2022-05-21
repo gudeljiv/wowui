@@ -16,13 +16,13 @@ VER 3 000000000000000F "AttackSpeed" "132089"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:2288
+/use [nocombat]item:0
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:414
-/castsequence [combat] reset=combat item:858,item:118
+/use [nocombat]item:29449
+/castsequence [combat] reset=combat item:22829
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
@@ -30,9 +30,9 @@ VER 3 000000000000000B "lvl enchant" "132089"
 /click StaticPopup1Button1
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:27677
+#showtooltip item:29451
 /cast feed pet
-/use item:27677
+/use item:29451
 END
 VER 3 0000000000000010 "TEST" "3940790"
 /run for i=1,40 do local B=UnitBuff("player",i); if B and B == "Aspect of the Hawk" then print(i.."="..B) end end
