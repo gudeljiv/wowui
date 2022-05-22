@@ -114,6 +114,7 @@ local function FixBindings()
 	SetBinding('I', 'MULTIACTIONBAR4BUTTON12', 1)
 
 	SetBinding('J', 'CLICK RingMenuToggleRing1:LeftButton', 1)
+	SetBinding('ALT-G', 'Open/Close LFGBulletinBoard', 1)
 
 	-- if UnitName("player") == "Konac" then
 	-- 	SetBinding("CTRL-H", "NONE", 1)
