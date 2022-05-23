@@ -2486,6 +2486,12 @@ function QuestieTBCQuestFixes:Load()
             [questKeys.exclusiveTo] = {11513,11514},
             [questKeys.requiredMinRep] = {932,3000},
         },
+        [11520] = {
+            [questKeys.extraObjectives] = {
+                {nil, ICON_TYPE_EVENT, "Use Razorthorn Flayer Gland on Razorthorn Ravager to tame it", 0, {{"monster", 24922}}},
+                {nil, ICON_TYPE_OBJECT, "Use Expose Razorthorn Root of your tamed Razorthorn Ravager to expose Razorthorn Root", 0, {{"object", 187073}}},
+            },
+        },
         [11523] = {
             [questKeys.extraObjectives] = {{nil, ICON_TYPE_EVENT, "Energize a Crystal Ward", 0, {{"object", 187078}}}},
             [questKeys.triggerEnd] = {"Energize a Crystal Ward", {}}, -- Dummy to not tirgger objective missing error
@@ -2495,6 +2501,9 @@ function QuestieTBCQuestFixes:Load()
         },
         [11525] = {
             [questKeys.objectives] = {{{24972, "Converted Sentry Deployed"}}},
+        },
+        [11526] = {
+            [questKeys.preQuestSingle] = {},
         },
         [11532] = {
             [questKeys.extraObjectives] = {{nil, ICON_TYPE_EVENT, "Speak to Ayren Cloudbreaker", 0, {{"monster", 25059}}}},
@@ -2511,6 +2520,9 @@ function QuestieTBCQuestFixes:Load()
         },
         [11538] = {
             [questKeys.objectives] = {{{25003,"Emissary of Hate Impaled"},},nil,nil,nil,{{24999,25001,25002,25008,25068,},25068},},
+        },
+        [11544] = {
+            [questKeys.extraObjectives] = {{nil, ICON_TYPE_EVENT, "Break down Ata'mal Metal on the anvil to cleanse it", 0, {{"object", 187111}}}},
         },
         [11580] = {
             [questKeys.startedBy] = {nil,{187559},nil},

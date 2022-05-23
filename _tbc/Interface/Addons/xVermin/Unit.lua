@@ -41,7 +41,7 @@ local usVisible = false
 PlayerFrame:HookScript(
 	'OnUpdate',
 	function()
-		speed = string.format('%d', (GetUnitSpeed('Player') / 7) * 100)
+		speed = ceil(GetUnitSpeed('player') / 0.07)
 		if speed and speed ~= '0' then
 			usVisible = true
 			us.text:SetText(speed .. '%')

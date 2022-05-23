@@ -37,8 +37,9 @@ skills = [
     # {"name": "healing touch", "key": "f"},
     # {"name": "mark of the wild", "key": "1", "modifier": "alt"},
     # {"name": "thorns", "key": "2", "modifier": "alt"},
-    {"name": "druid attack", "key": "4", "modifier": "alt"},
     {"name": "maul", "key": "1"},
     {"name": "swipe", "key": "2"},
     {"name": "demoralizing roar", "key": "3", "modifier": "alt"},
+    {"name": "claw", "key": "1"},
+    {"name": "rip", "key": "5"},
 ]

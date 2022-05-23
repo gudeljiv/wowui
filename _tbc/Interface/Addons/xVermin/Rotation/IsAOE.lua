@@ -64,7 +64,7 @@ PlayerFrame:HookScript(
 			end
 		end
 
-		if ChatFrame1EditBox:IsVisible() or IsMounted() or haveBuff then
+		if IsAltKeyDown() or ChatFrame1EditBox:IsVisible() or IsMounted() or haveBuff then
 			f:SetBackdropColor(1, 1, 1, 1) -- white
 		else
 			if InCombatLockdown() then
@@ -73,6 +73,8 @@ PlayerFrame:HookScript(
 				else
 					f:SetBackdropColor(0, 1, 0, 1) -- green
 				end
+			else
+				f:SetBackdropColor(1, 1, 1, 1) -- white
 			end
 		end
 	end

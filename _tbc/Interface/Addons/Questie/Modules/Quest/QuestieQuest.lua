@@ -367,7 +367,8 @@ end
 ---@param questId number
 function QuestieQuest:CompleteQuest(questId)
     QuestiePlayer.currentQuestlog[questId] = nil;
-    local isRepeatable =  mod(QuestieDB.QueryQuestSingle(questId, "specialFlags"), 2) == 1
+    local specialFlags = QuestieDB.QueryQuestSingle(questId, "specialFlags")
+    local isRepeatable = specialFlags and mod(specialFlags, 2) == 1
     -- Only quests that are daily quests or aren't repeatable should be marked complete,
     -- otherwise objectives for repeatable quests won't track correctly - #1433
     Questie.db.char.complete[questId] = QuestieDB:IsDailyQuest(questId) or (not isRepeatable);
@@ -1356,7 +1357,7 @@ function QuestieQuest:CalculateAndDrawAvailableQuestsIterative(callback)
                             ---@type Quest
                             local quest = QuestieDB:GetQuest(questId)
                             if (not quest.tagInfoWasCached) then
-                                Questie:Debug(Questie.DEBUG_DEVELOP, "Caching tag info for quest", quest.Id)
+                                Questie:Debug(Questie.DEBUG_SPAM, "Caching tag info for quest", quest.Id)
                                 quest:GetQuestTagInfo() -- cache to load in the tooltip
                                 quest.tagInfoWasCached = true
                             end

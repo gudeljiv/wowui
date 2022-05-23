@@ -111,6 +111,10 @@ with keyboard.Listener(on_press=on_press) as listener:
                 if combat == (255, 255, 255):
                     continue
 
+                behind = False
+                if combat == (0, 0, 255):
+                    behind = True
+
                 # interrupt indicator
                 # white --> green
                 if interrupt == (0, 255, 0):
@@ -139,6 +143,8 @@ with keyboard.Listener(on_press=on_press) as listener:
                         if(score*100 > 90 and ability == skill["name"]):
                             if dprint:
                                 print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                            if(behind and skill["name"] == "claw"):
+                                skill["key"] = 2
                             if "modifier" in skill.keys():
                                 pyautogui.hotkey(skill["modifier"], skill["key"])
                             else:
