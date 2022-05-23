@@ -1,3 +1,7 @@
+VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence Find Herbs,Find Minerals
+END
 VER 3 0000000000000012 " " "132143"
 #showtooltip
 /startattack
@@ -10,10 +14,6 @@ END
 VER 3 000000000000000E " " "136106"
 /run InspectUnit("target")
 /run SortBags()
-END
-VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/castsequence Find Herbs,Find Minerals
 END
 VER 3 0000000000000011 "D/H" "2241756"
 /itemrack toggle dps, heal

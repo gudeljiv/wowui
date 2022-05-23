@@ -41,5 +41,6 @@ skills = [
     {"name": "swipe", "key": "2"},
     {"name": "demoralizing roar", "key": "3", "modifier": "alt"},
     {"name": "claw", "key": "1"},
+    {"name": "shred", "key": "2"},
     {"name": "rip", "key": "5"},
 ]

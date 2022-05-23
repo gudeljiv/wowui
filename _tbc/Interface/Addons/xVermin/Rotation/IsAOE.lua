@@ -116,6 +116,24 @@ f:SetBackdrop(
 )
 f:SetBackdropColor(1, 0, 0, 0.9)
 
+local f = CreateFrame('Frame', 'RotationFrame4', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
+f:SetWidth(5)
+f:SetHeight(2)
+f:ClearAllPoints()
+f:SetPoint('TOPLEFT', UIParent, 'TOPLEFT', 35, 0)
+f:SetFrameStrata('BACKGROUND')
+f:SetBackdrop(
+	{
+		bgFile = xVermin.Config.background.white,
+		edgeFile = '',
+		tile = false,
+		tileSize = 0,
+		edgeSize = 0,
+		insets = {left = 0, right = 0, top = 0, bottom = 0}
+	}
+)
+f:SetBackdropColor(1, 1, 1, 1)
+
 -- TargetFrame:HookScript(
 -- 	"OnUpdate",
 -- 	function()

@@ -16,22 +16,22 @@ local function CheckDismount(self, event, ...)
 	UIErrorsFrame:Clear()
 end
 
-local f = CreateFrame('Frame')
-f:RegisterEvent('UI_ERROR_MESSAGE')
-f:SetScript('OnEvent', CheckDismount)
+-- local f = CreateFrame('Frame')
+-- f:RegisterEvent('UI_ERROR_MESSAGE')
+-- f:SetScript('OnEvent', CheckDismount)
 
-local function BehindCheck(self, event, ...)
-	-- "You must be behind the target"
-	-- print('asd', select(2, ...), select(2, ...):find('behind'))
-	if InCombatLockdown() and UnitExists('target') and not UnitIsDeadOrGhost('target') then
-		if select(2, ...) and select(2, ...):find('behind') ~= nil then
-			RotationFrame:SetBackdropColor(0, 0, 1, 1)
-		end
-	end
-end
+-- local function BehindCheck(self, event, ...)
+-- 	-- "You must be behind the target"
+-- 	-- print('asd', select(2, ...), select(2, ...):find('behind'))
+-- 	if InCombatLockdown() and UnitExists('target') and not UnitIsDeadOrGhost('target') then
+-- 		if select(2, ...) and select(2, ...):find('behind') ~= nil then
+-- 			RotationFrame:SetBackdropColor(0, 0, 1, 1)
+-- 		end
+-- 	end
+-- end
 
-local f2 = CreateFrame('Frame')
-f2:RegisterEvent('UI_ERROR_MESSAGE')
-f2:SetScript('OnEvent', BehindCheck)
+-- local f2 = CreateFrame('Frame')
+-- f2:RegisterEvent('UI_ERROR_MESSAGE')
+-- f2:SetScript('OnEvent', BehindCheck)
 
-PlayerFrame:HookScript('OnUpdate', BehindCheck)
+-- PlayerFrame:HookScript('OnUpdate', BehindCheck)

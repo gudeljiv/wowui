@@ -33,6 +33,8 @@ x_combat = 17
 y_combat = 2
 x_interrupt = 27
 y_interrupt = 2
+# x_behind = 37
+# y_behind = 2
 margin = 1
 
 file_path = os.path.abspath(__file__)
@@ -90,6 +92,7 @@ with keyboard.Listener(on_press=on_press) as listener:
             p_main = {"top": 0, "left": 0, "width": x*2, "height": y*2}
             p_combat = {"top": 0, "left": x_combat, "width": 5, "height": 2}
             p_interrupt = {"top": 0, "left": x_interrupt, "width": 5, "height": 2}
+            # p_behind = {"top": 0, "left": x_behind, "width": 5, "height": 2}
 
             grabbed_image = dir_path + "/_main_{top}x{left}_{width}x{height}.png".format(**p_main)
 
@@ -104,16 +107,17 @@ with keyboard.Listener(on_press=on_press) as listener:
             interrupt = interrupt_image.pixel(1, 1)
             # mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="interrupt_{top}x{left}_{width}x{height}.png".format(**p_interrupt))
 
+            # behind_image = sct.grab(p_behind)
+            # behind = behind_image.pixel(1, 1)
+            # mss.tools.to_png(behind_image.rgb, behind_image.size, output="behind_{top}x{left}_{width}x{height}.png".format(**p_behind))
+            # print(behind)
+
             if not debug and not pause:
                 # skipping combat, chat open
                 # any other reason
                 # (white -> skip, green -> combat)
                 if combat == (255, 255, 255):
                     continue
-
-                behind = False
-                if combat == (0, 0, 255):
-                    behind = True
 
                 # interrupt indicator
                 # white --> green
@@ -143,10 +147,9 @@ with keyboard.Listener(on_press=on_press) as listener:
                         if(score*100 > 90 and ability == skill["name"]):
                             if dprint:
                                 print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
-                            if(behind and skill["name"] == "claw"):
-                                skill["key"] = 2
+
                             if "modifier" in skill.keys():
-                                pyautogui.hotkey(skill["modifier"], skill["key"])
+                                pyautogui.hotkey(skill["modifier"],  skill["key"])
                             else:
                                 pyautogui.hotkey(skill["key"])
 
