@@ -35,6 +35,7 @@ VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Swipe
+/cast Enrage
 END
 VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
 #showtooltip

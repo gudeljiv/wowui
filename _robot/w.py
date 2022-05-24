@@ -1,4 +1,5 @@
 from _skills import skills
+from _colors import color
 import time
 
 import cv2
@@ -26,16 +27,10 @@ combat = False
 debug = False
 dprint = False
 pause = True
+wow_class = "warrior"
 
 x = 6
 y = 6
-x_combat = 17
-y_combat = 2
-x_interrupt = 27
-y_interrupt = 2
-# x_behind = 37
-# y_behind = 2
-margin = 1
 
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -47,6 +42,7 @@ abilities = {}
 for ability in abilities_list:
     cv2grey = cv2.cvtColor(cv2.imread(abilities_folder + "/" + ability), cv2.COLOR_BGR2GRAY)
     abilities[ability.replace(".png", "")] = cv2grey
+
 
 print("Script loaded and ready...", "Rotation is paused")
 
@@ -90,27 +86,36 @@ with keyboard.Listener(on_press=on_press) as listener:
                 active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
             p_main = {"top": 0, "left": 0, "width": x*2, "height": y*2}
-            p_combat = {"top": 0, "left": x_combat, "width": 5, "height": 2}
-            p_interrupt = {"top": 0, "left": x_interrupt, "width": 5, "height": 2}
-            # p_behind = {"top": 0, "left": x_behind, "width": 5, "height": 2}
+            p_combat = {"top": 0, "left": 17, "width": 7, "height": 7}
+            p_interrupt = {"top": 0, "left": 28, "width": 7, "height": 7}
+            p_behind = {"top": 0, "left": 39, "width": 7, "height": 7}
+            p_clss = {"top": 0, "left": 49, "width": 7, "height": 7}
 
-            grabbed_image = dir_path + "/_main_{top}x{left}_{width}x{height}.png".format(**p_main)
+            # grabbed_image = dir_path + "/_main_{top}x{left}_{width}x{height}.png".format(**p_main)
 
             main_image = sct.grab(p_main)
-            main = main_image.pixel(int(x/2), int(y/2))
+            # main = main_image.pixel(int(x/2), int(y/2))
 
             combat_image = sct.grab(p_combat)
-            combat = combat_image.pixel(1, 1)
-            # mss.tools.to_png(combat_image.rgb, combat_image.size, output="combat_{top}x{left}_{width}x{height}.png".format(**p_combat))
+            combat = combat_image.pixel(5, 5)
+            # mss.tools.to_png(combat_image.rgb, combat_image.size, output="_robot/combat_{top}x{left}_{width}x{height}.png".format(**p_combat))
 
             interrupt_image = sct.grab(p_interrupt)
-            interrupt = interrupt_image.pixel(1, 1)
-            # mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="interrupt_{top}x{left}_{width}x{height}.png".format(**p_interrupt))
+            interrupt = interrupt_image.pixel(5, 5)
+            # mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="_robot/interrupt_{top}x{left}_{width}x{height}.png".format(**p_interrupt))
 
-            # behind_image = sct.grab(p_behind)
-            # behind = behind_image.pixel(1, 1)
-            # mss.tools.to_png(behind_image.rgb, behind_image.size, output="behind_{top}x{left}_{width}x{height}.png".format(**p_behind))
-            # print(behind)
+            behind_image = sct.grab(p_behind)
+            behind = behind_image.pixel(5, 5)
+            # mss.tools.to_png(behind_image.rgb, behind_image.size, output="_robot/behind_{top}x{left}_{width}x{height}.png".format(**p_behind))
+
+            clss_image = sct.grab(p_clss)
+            clss = clss_image.pixel(5, 5)
+            # mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/clss_{top}x{left}_{width}x{height}.png".format(**p_clss))
+
+            try:
+                wow_class = color['#%02x%02x%02x' % clss]
+            except:
+                wow_class = "warrior"
 
             if not debug and not pause:
                 # skipping combat, chat open
@@ -139,7 +144,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 grabbed = cv2.cvtColor(numpy.array(main_image), cv2.COLOR_BGR2GRAY)
 
                 # rotation
-                for skill in skills:
+                for skill in skills[wow_class]:
                     start_skills_time = time.time()
                     for ability in abilities:
                         (score, diff) = structural_similarity(abilities[ability], grabbed, full=True)

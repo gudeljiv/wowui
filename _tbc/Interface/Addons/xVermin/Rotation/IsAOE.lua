@@ -27,8 +27,8 @@ function AOE(type)
 end
 
 local f = CreateFrame('Frame', 'RotationFrame', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
-f:SetWidth(5)
-f:SetHeight(2)
+f:SetWidth(7)
+f:SetHeight(7)
 f:ClearAllPoints()
 f:SetPoint('TOPLEFT', UIParent, 'TOPLEFT', 15, 0)
 f:SetFrameStrata('BACKGROUND')
@@ -81,8 +81,8 @@ PlayerFrame:HookScript(
 )
 
 local f = CreateFrame('Frame', 'RotationFrame2', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
-f:SetWidth(5)
-f:SetHeight(2)
+f:SetWidth(7)
+f:SetHeight(7)
 f:ClearAllPoints()
 f:SetPoint('TOPLEFT', UIParent, 'TOPLEFT', 25, 0)
 f:SetFrameStrata('BACKGROUND')
@@ -117,8 +117,8 @@ f:SetBackdrop(
 f:SetBackdropColor(1, 0, 0, 0.9)
 
 local f = CreateFrame('Frame', 'RotationFrame4', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
-f:SetWidth(5)
-f:SetHeight(2)
+f:SetWidth(7)
+f:SetHeight(7)
 f:ClearAllPoints()
 f:SetPoint('TOPLEFT', UIParent, 'TOPLEFT', 35, 0)
 f:SetFrameStrata('BACKGROUND')
@@ -134,25 +134,21 @@ f:SetBackdrop(
 )
 f:SetBackdropColor(1, 1, 1, 1)
 
--- TargetFrame:HookScript(
--- 	"OnUpdate",
--- 	function()
--- 		if InCombatLockdown() and not ChatFrame1EditBox:IsVisible() then
--- 			local name, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible, spellId = UnitCastingInfo("target")
--- 			-- if name then
--- 			-- 	print(name, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible, spellId)
--- 			-- end
--- 			-- if name then
--- 			-- 	f:SetBackdropColor(1, 0, 1, 1)
--- 			-- end
--- 		end
--- 	end
--- )
-
--- ChatFrame1EditBox:HookScript("OnShow", function()
--- 	print("show")
--- end)
-
--- ChatFrame1EditBox:HookScript("OnHide", function()
--- 	print("hide")
--- end)
+local f = CreateFrame('Frame', 'RotationFrame5', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
+f:SetWidth(7)
+f:SetHeight(7)
+f:ClearAllPoints()
+f:SetPoint('TOPLEFT', UIParent, 'TOPLEFT', 45, 0)
+f:SetFrameStrata('BACKGROUND')
+f:SetBackdrop(
+	{
+		bgFile = xVermin.Config.background.white,
+		edgeFile = '',
+		tile = false,
+		tileSize = 0,
+		edgeSize = 0,
+		insets = {left = 0, right = 0, top = 0, bottom = 0}
+	}
+)
+f:SetBackdropColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+-- f:SetBackdropColor(1, 1, 1, 1)

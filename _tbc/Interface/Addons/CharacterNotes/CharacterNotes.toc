@@ -1,0 +1,23 @@
+## Interface: 20501
+## Title: Character Notes
+## Notes: Set and manage character notes that are displayed in unit tooltips and /who results.
+## Author: Talryn
+## Version: 9.1.0
+## OptionalDeps: Ace3, LibDeformat-3.0, lib-st, LibDataBroker-1.1, LibDBIcon-1.0, LibAlts-1.0
+## X-Embeds: Ace3
+## X-Category: Interface Enhancements
+## SavedVariables: CharacterNotesDB
+## X-Curse-Project-ID: 24993
+## X-WoWI-ID: 17406
+
+embeds.xml
+
+locale.xml
+
+Core.lua
+RealmData.lua
+NotesDB.lua
+CharacterNotes.lua
+Options.lua
+InterfaceMods.lua
+Import.lua

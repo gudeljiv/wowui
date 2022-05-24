@@ -4158,8 +4158,6 @@ VUHDO_PANEL_SETUP = {
 		},
 		["frameStrata"] = "LOW",
 		["MODEL"] = {
-			["sort"] = 1,
-			["ordering"] = 0,
 			["groups"] = {
 				1, -- [1]
 				2, -- [2]
@@ -4171,6 +4169,8 @@ VUHDO_PANEL_SETUP = {
 				8, -- [8]
 				40, -- [9]
 			},
+			["sort"] = 1,
+			["ordering"] = 0,
 			["isReverse"] = false,
 		},
 		["TOOLTIP"] = {
@@ -6963,9 +6963,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w10", -- [2]
 			"", -- [3]
 		},
-		["shift1"] = {
-			"SHIFT-", -- [1]
-			"-w7", -- [2]
+		["ctrl2"] = {
+			"CTRL-", -- [1]
+			"-w6", -- [2]
 			"", -- [3]
 		},
 		["2"] = {
@@ -6973,9 +6973,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w2", -- [2]
 			"", -- [3]
 		},
-		["ctrl2"] = {
-			"CTRL-", -- [1]
-			"-w6", -- [2]
+		["ctrlshift2"] = {
+			"CTRL-SHIFT-", -- [1]
+			"-w14", -- [2]
 			"", -- [3]
 		},
 		["shift2"] = {
@@ -7028,9 +7028,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w1", -- [2]
 			"", -- [3]
 		},
-		["ctrlshift2"] = {
-			"CTRL-SHIFT-", -- [1]
-			"-w14", -- [2]
+		["shift1"] = {
+			"SHIFT-", -- [1]
+			"-w7", -- [2]
 			"", -- [3]
 		},
 	},
@@ -7060,9 +7060,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w10", -- [2]
 			"", -- [3]
 		},
-		["shift1"] = {
-			"SHIFT-", -- [1]
-			"-w7", -- [2]
+		["ctrl2"] = {
+			"CTRL-", -- [1]
+			"-w6", -- [2]
 			"", -- [3]
 		},
 		["2"] = {
@@ -7070,9 +7070,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w2", -- [2]
 			"", -- [3]
 		},
-		["ctrl2"] = {
-			"CTRL-", -- [1]
-			"-w6", -- [2]
+		["ctrlshift2"] = {
+			"CTRL-SHIFT-", -- [1]
+			"-w14", -- [2]
 			"", -- [3]
 		},
 		["shift2"] = {
@@ -7125,9 +7125,9 @@ VUHDO_SPELLS_KEYBOARD = {
 			"-w1", -- [2]
 			"", -- [3]
 		},
-		["ctrlshift2"] = {
-			"CTRL-SHIFT-", -- [1]
-			"-w14", -- [2]
+		["shift1"] = {
+			"SHIFT-", -- [1]
+			"-w7", -- [2]
 			"", -- [3]
 		},
 	},
@@ -7166,12 +7166,12 @@ VUHDO_SPEC_LAYOUTS = {
 VUHDO_GROUP_SIZE = 1
 VUHDO_RAID = {
 	["player"] = {
-		["zone"] = "The Barrens",
+		["zone"] = "The Wailing Caverns",
 		["baseRange"] = true,
 		["class"] = "DRUID",
 		["role"] = 61,
-		["sortMaxHp"] = 888,
-		["map"] = "The Barrens",
+		["sortMaxHp"] = 975,
+		["map"] = "Kalimdor",
 		["threat"] = 0,
 		["powermax"] = 100,
 		["threatPerc"] = 0,
@@ -7184,8 +7184,8 @@ VUHDO_RAID = {
 		["range"] = true,
 		["unit"] = "player",
 		["debuff"] = 0,
-		["healthmax"] = 888,
-		["loghealth"] = 888,
+		["healthmax"] = 975,
+		["loghealth"] = 911,
 		["dead"] = false,
 		["charmed"] = false,
 		["fullName"] = "Moolatz",
@@ -7194,7 +7194,7 @@ VUHDO_RAID = {
 		["targetUnit"] = "target",
 		["isAltPower"] = false,
 		["visible"] = true,
-		["health"] = 888,
+		["health"] = 911,
 		["className"] = "Druid",
 		["afk"] = false,
 		["powertype"] = 3,
@@ -7224,9 +7224,9 @@ VUHDO_INDICATOR_CONFIG = {
 		},
 		["SIDE_LEFT"] = "",
 		["THREAT_MARK"] = "",
+		["MANA_BAR"] = "Manabars: All Powers",
 		["BAR_BORDER"] = "Aggro Indicator",
 		["SIDE_RIGHT"] = "",
-		["MANA_BAR"] = "Manabars: All Powers",
 		["HEALTH_BAR"] = "Health (generic, class col)",
 		["CLUSTER_BORDER"] = "",
 		["SWIFTMEND_INDICATOR"] = "",
