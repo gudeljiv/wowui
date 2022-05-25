@@ -1,15 +1,16 @@
 
 CharacterNotesDB = {
-	["profiles"] = {
-		["Default"] = {
+	["realm"] = {
+		["Golemagg"] = {
+			["removedSpacesFromRealm"] = true,
 		},
 	},
 	["profileKeys"] = {
 		["Moolatz - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 	},
-	["realm"] = {
-		["Golemagg"] = {
-			["removedSpacesFromRealm"] = true,
+	["profiles"] = {
+		["Default"] = {
 		},
 	},
 }
