@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 5240,
 	["lastSanitation"] = 3,
-	["session"] = 5239,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -685,8 +685,8 @@ BugGrabberDB = {
 		}, -- [86]
 		{
 			["message"] = "(null)",
-			["session"] = 4904,
 			["time"] = "2022/03/09 13:39:43",
+			["session"] = 4904,
 			["counter"] = 6,
 		}, -- [87]
 		{
@@ -731,14 +731,14 @@ BugGrabberDB = {
 		}, -- [92]
 		{
 			["message"] = "  (null)",
-			["session"] = 4914,
 			["time"] = "2022/04/13 16:37:53",
+			["session"] = 4914,
 			["counter"] = 3,
 		}, -- [93]
 		{
 			["message"] = " (null)",
-			["session"] = 4914,
 			["time"] = "2022/04/11 11:49:12",
+			["session"] = 4914,
 			["counter"] = 13,
 		}, -- [94]
 		{
@@ -1337,5 +1337,13 @@ BugGrabberDB = {
 			["session"] = 5239,
 			["counter"] = 3,
 		}, -- [169]
+		{
+			["message"] = "Interface_TBC\\FrameXML\\UnitPopup.lua:1011: attempt to index local 'playerLocation' (a nil value)",
+			["time"] = "2022/05/25 18:34:05",
+			["locals"] = "dropdownMenu = FriendsDropDown {\n selectedLootMethod = \"Loot: Group Loot\"\n Right = FriendsDropDownRight {\n }\n chatTarget = \"Protexx\"\n lineID = \"43\"\n displayMode = \"MENU\"\n chatFrame = ChatFrame1 {\n }\n Button = FriendsDropDownButton {\n }\n Icon = FriendsDropDownIcon {\n }\n Text = FriendsDropDownText {\n }\n Middle = FriendsDropDownMiddle {\n }\n 0 = <userdata>\n initialize = <function> defined @Interface_TBC\\FrameXML\\FriendsFrame.lua:248\n name = \"Protexx\"\n chatType = \"CHANNEL\"\n Left = FriendsDropDownLeft {\n }\n selectedLootThreshold = \"Uncommon\"\n which = \"FRIEND\"\n}\ninInstance = false\ninstanceType = \"none\"\ninParty = false\ninRaid = false\nisLeader = false\nisAssistant = false\ninBattleground = nil\ncanCoop = nil\nisPlayer = nil\nguid = nil\nplayerLocation = nil\nhaveBattleTag = true\nisOffline = false\nisLocalPlayer = false\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = \"REPORT_SPAM\"\n 2 = \"REPORT_BAD_LANGUAGE\"\n 3 = \"REPORT_BAD_NAME\"\n 4 = \"REPORT_BAD_GUILD_NAME\"\n 5 = \"REPORT_CHEATING\"\n 6 = \"REPORT_BAD_ARENA_TEAM_NAME\"\n}\n(for control) = 1\nindex = 1\nvalue = \"REPORT_SPAM\"\nshown = true\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'playerLocation' (a nil value)\"\nUnitPopup_GetGUID = <function> defined @Interface_TBC\\FrameXML\\UnitPopup.lua:666\nUnitPopup_TryCreatePlayerLocation = <function> defined @Interface_TBC\\FrameXML\\UnitPopup.lua:676\nUnitPopup_HasBattleTag = <function> defined @Interface_TBC\\FrameXML\\UnitPopup.lua:820\nUnitPopup_IsPlayerOffline = <function> defined @Interface_TBC\\FrameXML\\UnitPopup.lua:835\nUnitPopup_GetIsLocalPlayer = <function> defined @Interface_TBC\\FrameXML\\UnitPopup.lua:857\ncommandToRoleId = <table> {\n COMMUNITIES_ROLE_OWNER = 1\n COMMUNITIES_ROLE_LEADER = 2\n COMMUNITIES_ROLE_MEMBER = 4\n COMMUNITIES_ROLE_MODERATOR = 3\n}\n",
+			["stack"] = "[string \"@Interface_TBC\\FrameXML\\UnitPopup.lua\"]:1011: in function `UnitPopup_HideButtons'\n[string \"@Interface_TBC\\FrameXML\\UnitPopup.lua\"]:327: in function `UnitPopup_ShowMenu'\n[string \"@Interface_TBC\\FrameXML\\FriendsFrame.lua\"]:249: in function `initFunction'\n[string \"@Interface\\FrameXML\\UIDropDownMenu.lua\"]:79: in function `UIDropDownMenu_Initialize'\n[string \"@Interface\\FrameXML\\UIDropDownMenu.lua\"]:1092: in function `ToggleDropDownMenu'\n[string \"@Interface\\FrameXML\\UIDropDownMenu.lua\"]:205: in function <Interface\\FrameXML\\UIDropDownMenu.lua:200>",
+			["session"] = 5240,
+			["counter"] = 1,
+		}, -- [170]
 	},
 }
