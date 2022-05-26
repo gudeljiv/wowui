@@ -53,9 +53,9 @@ PallyPower_AuraAssignments = {
 	["Carroll"] = 0,
 	["Phalanxy"] = 1,
 	["Dixuck"] = 3,
-	["Meeyak"] = 0,
-	["Vermina"] = 1,
 	["Yamadin"] = 2,
+	["Vermina"] = 1,
+	["Meeyak"] = 0,
 	["Bellicosa"] = 7,
 	["Canestengyno"] = 1,
 }

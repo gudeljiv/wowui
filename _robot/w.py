@@ -29,8 +29,8 @@ dprint = False
 pause = True
 wow_class = "warrior"
 
-x = 6
-y = 6
+x = 10
+y = 10
 
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -86,36 +86,38 @@ with keyboard.Listener(on_press=on_press) as listener:
                 active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
             p_main = {"top": 0, "left": 0, "width": x*2, "height": y*2}
-            p_combat = {"top": 0, "left": 17, "width": 7, "height": 7}
-            p_interrupt = {"top": 0, "left": 28, "width": 7, "height": 7}
-            p_behind = {"top": 0, "left": 39, "width": 7, "height": 7}
-            p_clss = {"top": 0, "left": 49, "width": 7, "height": 7}
+            p_combat = {"top": 0, "left": 24, "width": 7, "height": 7}
+            p_interrupt = {"top": 0, "left": 42, "width": 7, "height": 7}
+            p_behind = {"top": 0, "left": 62, "width": 7, "height": 7}
+            p_clss = {"top": 0, "left": 74, "width": 7, "height": 7}
 
-            # grabbed_image = dir_path + "/_main_{top}x{left}_{width}x{height}.png".format(**p_main)
+            grabbed_image = dir_path + "/_main.png".format(**p_main)
 
             main_image = sct.grab(p_main)
-            # main = main_image.pixel(int(x/2), int(y/2))
+            main = main_image.pixel(int(x/2), int(y/2))
 
             combat_image = sct.grab(p_combat)
             combat = combat_image.pixel(5, 5)
-            # mss.tools.to_png(combat_image.rgb, combat_image.size, output="_robot/combat_{top}x{left}_{width}x{height}.png".format(**p_combat))
+            # mss.tools.to_png(combat_image.rgb, combat_image.size, output="_robot/combat.png".format(**p_combat))
 
             interrupt_image = sct.grab(p_interrupt)
             interrupt = interrupt_image.pixel(5, 5)
-            # mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="_robot/interrupt_{top}x{left}_{width}x{height}.png".format(**p_interrupt))
+            # mss.tools.to_png(interrupt_image.rgb, interrupt_image.size, output="_robot/interrupt.png".format(**p_interrupt))
 
             behind_image = sct.grab(p_behind)
             behind = behind_image.pixel(5, 5)
-            # mss.tools.to_png(behind_image.rgb, behind_image.size, output="_robot/behind_{top}x{left}_{width}x{height}.png".format(**p_behind))
+            # mss.tools.to_png(behind_image.rgb, behind_image.size, output="_robot/behind.png".format(**p_behind))
 
             clss_image = sct.grab(p_clss)
             clss = clss_image.pixel(5, 5)
-            # mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/clss_{top}x{left}_{width}x{height}.png".format(**p_clss))
+            # mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/clss.png".format(**p_clss))
 
             try:
                 wow_class = color['#%02x%02x%02x' % clss]
             except:
                 wow_class = "warrior"
+
+            # print(clss, wow_class)
 
             if not debug and not pause:
                 # skipping combat, chat open
@@ -147,6 +149,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 for skill in skills[wow_class]:
                     start_skills_time = time.time()
                     for ability in abilities:
+                        # mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
                         (score, diff) = structural_similarity(abilities[ability], grabbed, full=True)
                         # print(score*100, ability, skill["name"], f"Finish in: {round(1000 * (time.time() - start_time))} ms ", f"Finish in: {round(1000 * (time.time() - start_skills_time))} ms ")
                         if(score*100 > 90 and ability == skill["name"]):

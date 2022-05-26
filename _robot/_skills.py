@@ -48,4 +48,8 @@ skills["druid"] = [
     {"name": "claw", "key": "1"},
     {"name": "shred", "key": "2"},
     {"name": "rip", "key": "5"},
+    {"name": "rake", "key": "3"},
+]
+
+skills["priest"] = [
 ]
