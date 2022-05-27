@@ -60,7 +60,7 @@ FollowMePls: enabled
 GatherMate2: enabled
 GatherMate2_Data: enabled
 gmMoney: enabled
-ImprovedMacroFrame: enabled
+ImprovedMacroFrame: disabled
 ItemRack: enabled
 ItemRackOptions: enabled
 Leatrix_Maps: enabled
@@ -129,3 +129,5 @@ BuyEmAllClassic: enabled
 PitBull4: enabled
 PitBull4_DogTagTexts: enabled
 VuhDo: enabled
+AdiBags-ItemRackSets: enabled
+VuhDoOptions: enabled

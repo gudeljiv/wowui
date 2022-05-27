@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 5248,
 	["lastSanitation"] = 3,
+	["session"] = 5251,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -685,8 +685,8 @@ BugGrabberDB = {
 		}, -- [86]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/03/09 13:39:43",
 			["session"] = 4904,
+			["time"] = "2022/03/09 13:39:43",
 			["counter"] = 6,
 		}, -- [87]
 		{
@@ -731,14 +731,14 @@ BugGrabberDB = {
 		}, -- [92]
 		{
 			["message"] = "  (null)",
-			["time"] = "2022/04/13 16:37:53",
 			["session"] = 4914,
+			["time"] = "2022/04/13 16:37:53",
 			["counter"] = 3,
 		}, -- [93]
 		{
 			["message"] = " (null)",
-			["time"] = "2022/04/11 11:49:12",
 			["session"] = 4914,
+			["time"] = "2022/04/11 11:49:12",
 			["counter"] = 13,
 		}, -- [94]
 		{
@@ -1342,8 +1342,48 @@ BugGrabberDB = {
 			["time"] = "2022/02/15 18:27:27",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 5248,
-			["counter"] = 85,
+			["session"] = 5249,
+			["counter"] = 86,
 		}, -- [170]
+		{
+			["message"] = "[string \"PlayerStatFrame:Hide()\"]:1: attempt to index global 'PlayerStatFrame' (a nil value)",
+			["time"] = "2022/05/27 21:31:16",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'PlayerStatFrame' (a nil value)\"\n",
+			["stack"] = "[string \"PlayerStatFrame:Hide()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4599: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 5249,
+			["counter"] = 1,
+		}, -- [171]
+		{
+			["message"] = "[string \"PlayerStatFrameRight:Hide()\"]:1: attempt to index global 'PlayerStatFrameRight' (a nil value)",
+			["time"] = "2022/05/27 21:31:28",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'PlayerStatFrameRight' (a nil value)\"\n",
+			["stack"] = "[string \"PlayerStatFrameRight:Hide()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4599: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 5249,
+			["counter"] = 1,
+		}, -- [172]
+		{
+			["message"] = "...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua:252: Action[SetPoint] failed because[Cannot anchor to a region dependent on it]: attempted from: <unnamed>:SetAllPoints.",
+			["time"] = "2022/05/27 21:34:30",
+			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n HighlightFrame = <function> defined @Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools.lua:280\n RetrieveAnchorHighlight = <function> defined @Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools.lua:268\n}\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetAllPoints'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:252: in function <...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools.lua:250>\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:281: in function `HighlightFrame'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_TableInspector.lua\"]:165: in function `UpdateFocusedHighlight'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_TableInspector.lua\"]:206: in function `InspectTable'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:78: in function `FrameStackTooltip_InspectTable'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:65: in function `command'\n[string \"@Interface\\SharedXML\\KeyCommand.lua\"]:56: in function `Update'\n[string \"@Interface\\SharedXML\\KeyCommand.lua\"]:111: in function `KeyCommand_Update'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:301: in function <...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools.lua:300>",
+			["session"] = 5249,
+			["counter"] = 1,
+		}, -- [173]
+		{
+			["message"] = "[string \"BCS:UpdatePaperdollStats(\"PlayerStatFrameLe...\"]:1: attempt to index global 'BCS' (a nil value)",
+			["time"] = "2022/05/27 21:34:35",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'BCS' (a nil value)\"\n",
+			["stack"] = "[string \"BCS:UpdatePaperdollStats(\"PlayerStatFrameLeft\", 2)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4599: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 5249,
+			["counter"] = 4,
+		}, -- [174]
+		{
+			["message"] = "[string \"UpdatePaperdollStats\"]:1: '=' expected near '<eof>'",
+			["time"] = "2022/05/27 21:38:05",
+			["locals"] = "(*temporary) = \"UpdatePaperdollStats\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2174: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4900: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4563: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4599: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 5250,
+			["counter"] = 1,
+		}, -- [175]
 	},
 }

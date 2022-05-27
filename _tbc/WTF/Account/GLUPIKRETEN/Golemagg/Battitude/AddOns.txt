@@ -125,7 +125,7 @@ whoaThickFrames_BCC: enabled
 AutoOpen: enabled
 BlizzMove_Debug: enabled
 ExtendedCharacterStats: enabled
-ImprovedMacroFrame: enabled
+ImprovedMacroFrame: disabled
 LFGBulletinBoard: enabled
 WideQuestLog: enabled
 Questie: enabled
@@ -162,3 +162,5 @@ BuyEmAllClassic: enabled
 PitBull4: enabled
 PitBull4_DogTagTexts: enabled
 VuhDo: enabled
+AdiBags-ItemRackSets: enabled
+VuhDoOptions: enabled
