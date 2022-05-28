@@ -130,8 +130,8 @@ with keyboard.Listener(on_press=on_press) as listener:
             # mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/clss.png".format(**p_clss))
             hex = '#%02x%02x%02x' % clss
 
+            # matching closest class color to define in colors
             color_distance = 1000
-            # print(hex)
             for c in color:
                 rgb = parse_hex_color(c)
                 if color_similarity(rgb, clss) <= color_distance:
