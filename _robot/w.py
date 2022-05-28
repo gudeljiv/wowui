@@ -134,7 +134,7 @@ with keyboard.Listener(on_press=on_press) as listener:
             # print(hex)
             for c in color:
                 rgb = parse_hex_color(c)
-                if color_similarity(rgb, clss) < color_distance:
+                if color_similarity(rgb, clss) <= color_distance:
                     color_distance = color_similarity(rgb, clss)
                     hex = c
 
