@@ -10,6 +10,8 @@ import sys
 import mss
 import mss.tools
 import numpy
+import win32gui
+import math
 
 from pynput import keyboard
 from pyautogui import *
@@ -17,11 +19,7 @@ from os.path import isfile, join
 from os import listdir
 from os.path import exists
 from skimage.metrics import structural_similarity
-
-if sys.platform == "darwin":
-    from AppKit import NSWorkspace
-if sys.platform == "win32":
-    import win32gui
+from win32api import GetSystemMetrics
 
 combat = False
 debug = False
@@ -29,13 +27,23 @@ dprint = False
 pause = True
 wow_class = "warrior"
 
+screen_width = GetSystemMetrics(0)
+screen_height = GetSystemMetrics(1)
+
+monitor = "4k"
+if screen_width == 2560:
+    monitor = "2k"
+
 x = 10
 y = 10
+if monitor == "2k":
+    x = 7
+    y = 7
 
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-abilities_folder = dir_path + "/images"
+abilities_folder = dir_path + "/images/" + monitor
 abilities_list = [f for f in listdir(abilities_folder) if isfile(join(abilities_folder, f))]
 
 abilities = {}
@@ -44,7 +52,7 @@ for ability in abilities_list:
     abilities[ability.replace(".png", "")] = cv2grey
 
 
-print("Script loaded and ready...", "Rotation is paused")
+print("Script loaded and ready.", "Rotation is paused.", "Monitor:", monitor, abilities_folder)
 
 
 def on_press(key):
@@ -73,23 +81,32 @@ def on_press(key):
         return
 
 
+def parse_hex_color(string):
+    if string.startswith("#"):
+        string = string[1:]
+    r = int(string[0:2], 16)  # red color value
+    g = int(string[2:4], 16)  # green color value
+    b = int(string[4:6], 16)  # blue color value
+    return r, g, b
+
+
+def color_similarity(base_col_val, oth_col_val):
+    return math.sqrt(sum((base_col_val[i]-oth_col_val[i])**2 for i in range(3)))
+
+
 with keyboard.Listener(on_press=on_press) as listener:
 
     with mss.mss() as sct:
 
         while True:
             start_time = time.time()
-
-            if sys.platform == "darwin":
-                active_window = NSWorkspace.sharedWorkspace().activeApplication()['NSApplicationName']
-            if sys.platform == "win32":
-                active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
+            active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
 
             p_main = {"top": 0, "left": 0, "width": x*2, "height": y*2}
-            p_combat = {"top": 0, "left": 24, "width": 7, "height": 7}
-            p_interrupt = {"top": 0, "left": 42, "width": 7, "height": 7}
-            p_behind = {"top": 0, "left": 62, "width": 7, "height": 7}
-            p_clss = {"top": 0, "left": 74, "width": 7, "height": 7}
+            p_combat = {"top": 0, "left": monitor == "2k" and 17 or 24, "width": 7, "height": 7}
+            p_interrupt = {"top": 0, "left": monitor == "2k" and 27 or 42, "width": 7, "height": 7}
+            p_behind = {"top": 0, "left": monitor == "2k" and 38 or 62, "width": 7, "height": 7}
+            p_clss = {"top": 0, "left": monitor == "2k" and 49 or 74, "width": 7, "height": 7}
 
             grabbed_image = dir_path + "/_main.png".format(**p_main)
 
@@ -111,15 +128,29 @@ with keyboard.Listener(on_press=on_press) as listener:
             clss_image = sct.grab(p_clss)
             clss = clss_image.pixel(5, 5)
             # mss.tools.to_png(clss_image.rgb, clss_image.size, output="_robot/clss.png".format(**p_clss))
+            hex = '#%02x%02x%02x' % clss
+
+            color_distance = 1000
+            # print(hex)
+            for c in color:
+                rgb = parse_hex_color(c)
+                if color_similarity(rgb, clss) < color_distance:
+                    color_distance = color_similarity(rgb, clss)
+                    hex = c
 
             try:
-                wow_class = color['#%02x%02x%02x' % clss]
+                wow_class = color[hex]
             except:
                 wow_class = "warrior"
 
-            # print(clss, wow_class)
+            # print(clss, '#%02x%02x%02x' % clss, wow_class)
+            # print(active_window, combat, interrupt, wow_class)
 
             if not debug and not pause:
+
+                if active_window != "World of Warcraft":
+                    continue
+
                 # skipping combat, chat open
                 # any other reason
                 # (white -> skip, green -> combat)
@@ -133,17 +164,9 @@ with keyboard.Listener(on_press=on_press) as listener:
                         print("interrupt", "f9", f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
                     pyautogui.hotkey("f9")
 
-                if(active_window != "World of Warcraft" and sys.platform == "win32"):
-                    continue
-                if(active_window != "Wow" and sys.platform == "darwin"):
-                    continue
-
-                # grabbed image handling
-                # mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
-                # img = cv2.imread(main_image)
-                # grabbed = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-                # os.remove(grabbed_image)
                 grabbed = cv2.cvtColor(numpy.array(main_image), cv2.COLOR_BGR2GRAY)
+
+                # print(hex, wow_class)
 
                 # rotation
                 for skill in skills[wow_class]:
