@@ -24,24 +24,19 @@ skills["warlock"] = [
     {"name": "immolate", "key": "h"},
     {"name": "corruption", "key": "v"},
     {"name": "curse of agony", "key": "g"},
-    {"name": "shadowbolt", "key": "f11"},
+    {"name": "shadow bolt", "key": "f11"},
 ]
 
 skills["hunter"] = [
     {"name": "serpent sting", "key": "9", "modifier": "alt"},
     {"name": "arcane shot", "key": "f11"},
-    {"name": "multi shot", "key": "0", "modifier": "alt"},
+    {"name": "multi-shot", "key": "0", "modifier": "alt"},
     {"name": "steady shot", "key": "f10"},
     {"name": "mend pet", "key": "v"},
     {"name": "kill command", "key": "4"},
 ]
 
 skills["druid"] = [
-    # {"name": "wrath", "key": "1"},
-    # {"name": "moonfire", "key": "2"},
-    # {"name": "healing touch", "key": "f"},
-    # {"name": "mark of the wild", "key": "1", "modifier": "alt"},
-    # {"name": "thorns", "key": "2", "modifier": "alt"},
     {"name": "maul", "key": "1"},
     {"name": "swipe", "key": "2"},
     {"name": "demoralizing roar", "key": "3", "modifier": "alt"},

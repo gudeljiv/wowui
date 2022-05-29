@@ -8,15 +8,15 @@ local format = string.format
 local sort = table.sort
 local tinsert = tinsert
 
-local playerName, _ = UnitName("player")
+local playerName, _ = UnitName('player')
 local playerRealm = GetRealmName()
 
 local NUM_ADDONS_TO_DISPLAY = cfg.tab.numberOfAddons or GetNumAddOns()
 local activezone = CreateColor(0.3, 1.0, 0.0, 1)
 local inactivezone = CreateColor(0.75, 0.75, 0.75, 1)
-local guildIcon = CreateTextureMarkup("Interface\\GossipFrame\\TabardGossipIcon", 16, 16, 16, 16, 0, 1, 0, 1, 0, 0)
-local friendIcon = CreateAtlasMarkup("groupfinder-icon-friend", 18, 18)
-local performanceIcon = CreateTextureMarkup("Interface\\AddOns\\nMinimap\\media\\texturePerformance", 32, 32, 10, 10, 0, 1, 0, 1, 0, 0)
+local guildIcon = CreateTextureMarkup('Interface\\GossipFrame\\TabardGossipIcon', 16, 16, 16, 16, 0, 1, 0, 1, 0, 0)
+local friendIcon = CreateAtlasMarkup('groupfinder-icon-friend', 18, 18)
+local performanceIcon = CreateTextureMarkup('Interface\\AddOns\\nMinimap\\media\\texturePerformance', 32, 32, 10, 10, 0, 1, 0, 1, 0, 0)
 
 local FriendListEntries = {}
 local GuildListEntries = {}
@@ -24,11 +24,11 @@ local MemoryListEntries = {}
 local AddonTable = {}
 
 for i = 1, NUM_ADDONS_TO_DISPLAY do
-	AddonTable[i] = {value = 0, name = ""}
+	AddonTable[i] = {value = 0, name = ''}
 end
 
 local statusText = {
-	[0] = "",
+	[0] = '',
 	[1] = CHAT_MSG_AFK,
 	[2] = DEFAULT_DND_MESSAGE
 }
@@ -80,12 +80,12 @@ local function SetupChildFrames(self, template, numEntries, initialOffsetX, init
 	local entry, entryHeight, entries
 
 	local parentName = self:GetName()
-	local entryName = parentName and (parentName .. "Entry") or nil
+	local entryName = parentName and (parentName .. 'Entry') or nil
 
-	initialPoint = initialPoint or "TOPLEFT"
-	initialRelative = initialRelative or "TOPLEFT"
-	point = point or "TOPLEFT"
-	relativePoint = relativePoint or "BOTTOMLEFT"
+	initialPoint = initialPoint or 'TOPLEFT'
+	initialRelative = initialRelative or 'TOPLEFT'
+	point = point or 'TOPLEFT'
+	relativePoint = relativePoint or 'BOTTOMLEFT'
 	offsetX = offsetX or 0
 	offsetY = offsetY or 0
 
@@ -93,10 +93,10 @@ local function SetupChildFrames(self, template, numEntries, initialOffsetX, init
 		entries = self.entries
 		entryHeight = entries[1]:GetHeight()
 	else
-		entry = CreateFrame("FRAME", entryName and (entryName .. 1) or nil, scrollChild, template)
+		entry = CreateFrame('FRAME', entryName and (entryName .. 1) or nil, scrollChild, template)
 		entryHeight = entry:GetHeight()
 		entry:SetPoint(initialPoint, scrollChild, initialRelative, initialOffsetX, initialOffsetY)
-		entry:SetPoint("TOPRIGHT", scrollChild, initialOffsetX, initialOffsetY)
+		entry:SetPoint('TOPRIGHT', scrollChild, initialOffsetX, initialOffsetY)
 		entries = {}
 		tinsert(entries, entry)
 	end
@@ -106,9 +106,9 @@ local function SetupChildFrames(self, template, numEntries, initialOffsetX, init
 	local numEntries = numEntries or math.ceil(self:GetHeight() / self.entryHeight) + 1
 
 	for i = #entries + 1, numEntries do
-		entry = CreateFrame("FRAME", entryName and (entryName .. i) or nil, scrollChild, template)
+		entry = CreateFrame('FRAME', entryName and (entryName .. i) or nil, scrollChild, template)
 		entry:SetPoint(point, entries[i - 1], relativePoint, offsetX, offsetY)
-		entry:SetPoint("TOPRIGHT", entries[i - 1], "BOTTOMRIGHT", offsetX, offsetY)
+		entry:SetPoint('TOPRIGHT', entries[i - 1], 'BOTTOMRIGHT', offsetX, offsetY)
 		tinsert(entries, entry)
 	end
 
@@ -121,21 +121,21 @@ local function SetupChildFrames(self, template, numEntries, initialOffsetX, init
 end
 
 local function CreateScrollFrame(name, width, height, numChild)
-	local scrollFrame = CreateFrame("ScrollFrame", name .. "ScrollFrame", UIParent, "TooltipScrollFrameTemplate")
+	local scrollFrame = CreateFrame('ScrollFrame', name .. 'ScrollFrame', UIParent, 'TooltipScrollFrameTemplate')
 	scrollFrame:SetSize(width, height)
-	scrollFrame:SetPoint("CENTER")
+	scrollFrame:SetPoint('CENTER')
 	scrollFrame:Hide()
 
-	scrollFrame.scrollChild = CreateFrame("FRAME", name .. "ScrollChild")
+	scrollFrame.scrollChild = CreateFrame('FRAME', name .. 'ScrollChild')
 	scrollFrame:SetScrollChild(scrollFrame.scrollChild)
 
-	scrollFrame.scrollBar = _G[scrollFrame:GetName() .. "ScrollBar"]
+	scrollFrame.scrollBar = _G[scrollFrame:GetName() .. 'ScrollBar']
 	scrollFrame.scrollBar:SetAlpha(0)
 
-	SetupChildFrames(scrollFrame, "DoubleTemplate", numChild)
+	SetupChildFrames(scrollFrame, 'DoubleTemplate', numChild)
 
 	scrollFrame:SetScript(
-		"OnSizeChanged",
+		'OnSizeChanged',
 		function(self, width, height)
 			if self:IsShown() then
 				GameTooltip:SetMinimumWidth(width)
@@ -159,26 +159,26 @@ function nMinimapTab_OnLoad(self)
 
 	self.lastUpdate = 0
 
-	self:RegisterEvent("PLAYER_LOGIN")
+	self:RegisterEvent('PLAYER_LOGIN')
 	self:SetWidth(Minimap:GetWidth() - 6)
 	self:CreateBeautyBorder(11)
 	nMinimapTab_HideTab()
 
 	if cfg.tab.showBelowMinimap then
 		self:ClearAllPoints()
-		self:SetPoint("TOP", Minimap, "BOTTOM", 0, 2)
+		self:SetPoint('TOP', Minimap, 'BOTTOM', 0, 2)
 	end
 
 	self:CreateBeautyBorder(10)
-	local classColor = RAID_CLASS_COLORS[select(2, UnitClass("player"))]
-	if select(2, UnitClass("player")) == "SHAMAN" then
+	local classColor = RAID_CLASS_COLORS[select(2, UnitClass('player'))]
+	if select(2, UnitClass('player')) == 'SHAMAN' then
 		classColor = {
 			b = 0.86666476726532,
 			g = 0.4392147064209,
 			r = 0
 		}
 	end
-	self:SetBeautyBorderTexture("white")
+	self:SetBeautyBorderTexture('white')
 	self:SetBeautyBorderColor(classColor.r, classColor.g, classColor.b)
 end
 
@@ -197,7 +197,7 @@ function nMinimapTab_ShowTab()
 		return
 	end
 
-	securecall("UIFrameFadeIn", nMinimapTab, 0.20, nMinimapTab:GetAlpha(), 1)
+	securecall('UIFrameFadeIn', nMinimapTab, 0.20, nMinimapTab:GetAlpha(), 1)
 end
 
 function nMinimapTab_HideTab()
@@ -207,7 +207,7 @@ function nMinimapTab_HideTab()
 		return
 	end
 
-	securecall("UIFrameFadeOut", nMinimapTab, 0.20, nMinimapTab:GetAlpha(), 0)
+	securecall('UIFrameFadeOut', nMinimapTab, 0.20, nMinimapTab:GetAlpha(), 0)
 end
 
 --// Guild Frame
@@ -215,13 +215,13 @@ end
 function nMinimap:UpdateGuildText(self)
 	if IsInGuild() then
 		local totalMembers, onlineMembers, onlineAndMobileMembers = GetNumGuildMembers()
-		self.Text:SetFormattedText("%s%d", guildIcon, onlineMembers)
+		self.Text:SetFormattedText('%s%d', guildIcon, onlineMembers)
 	else
-		self.Text:SetText(guildIcon .. " -")
+		self.Text:SetText(guildIcon .. ' -')
 	end
 end
 
-local GuildScroll = CreateScrollFrame("Guild", 300, 550, 1000)
+local GuildScroll = CreateScrollFrame('Guild', 300, 550, 1000)
 
 function nMinimap_UpdateGuildButton(entry)
 	local scrollFrame = GuildScrollFrame
@@ -251,7 +251,7 @@ function nMinimap_UpdateGuildButton(entry)
 			classc.b = 1
 		end
 
-		name, server = strsplit("-", nameserver)
+		name, server = strsplit('-', nameserver)
 
 		-- n = name .. " (" .. server .. ")"
 
@@ -259,7 +259,7 @@ function nMinimap_UpdateGuildButton(entry)
 		name = WrapTextInColorCode(name, CreateColor(classc.r, classc.g, classc.b, 1):GenerateHexColor())
 		zone = WrapTextInColorCode(zone, CreateColor(1, 1, 1, 1):GenerateHexColor())
 
-		entry.LeftText:SetFormattedText("%s %s", level, name)
+		entry.LeftText:SetFormattedText('%s %s', level, name)
 		entry.RightText:SetText(zone)
 
 		minWidth = math.max(minWidth, entry.LeftText:GetWidth() + entry.RightText:GetWidth() + 100)
@@ -350,7 +350,7 @@ function nMinimapTab_Guild_UpdateScrollFrame()
 end
 
 function nMinimapTab_Guild_OnEvent(self, event, ...)
-	if event == "PLAYER_GUILD_UPDATE" or event == "GUILD_ROSTER_UPDATE" then
+	if event == 'PLAYER_GUILD_UPDATE' or event == 'GUILD_ROSTER_UPDATE' then
 		GuildRoster()
 	end
 	nMinimap:UpdateGuildText(self)
@@ -372,26 +372,26 @@ function nMinimapTab_Guild_ShowTooltip(self)
 
 	GameTooltip:ClearLines()
 	GameTooltip:ClearAllPoints()
-	GameTooltip:SetPoint("TOPRIGHT", self, "BOTTOMRIGHT", 0, 2)
-	GameTooltip:SetOwner(self, "ANCHOR_PRESERVE")
-	GameTooltip:AddLine(GetGuildInfo("player"))
-	GameTooltip:AddLine(" ")
+	GameTooltip:SetPoint('TOPRIGHT', self, 'BOTTOMRIGHT', 0, 2)
+	GameTooltip:SetOwner(self, 'ANCHOR_PRESERVE')
+	GameTooltip:AddLine(GetGuildInfo('player'))
+	GameTooltip:AddLine(' ')
 	GameTooltip:AddLine(GUILD_MOTD)
-	GameTooltip:AddLine(GetGuildRosterMOTD() or "-", 1, 1, 1, true)
-	GameTooltip:AddLine(" ")
+	GameTooltip:AddLine(GetGuildRosterMOTD() or '-', 1, 1, 1, true)
+	GameTooltip:AddLine(' ')
 
 	if onlineMembers > 1 then
 		GameTooltip_InsertFrame(GameTooltip, GuildScroll)
 	end
 
-	GameTooltip:AddLine(" ")
-	GameTooltip:AddLine(GUILD_MEMBERS_ONLINE_COLON .. " " .. format("|cffffffff%d/%d|r", onlineMembers, totalMembers))
+	GameTooltip:AddLine(' ')
+	GameTooltip:AddLine(GUILD_MEMBERS_ONLINE_COLON .. ' ' .. format('|cffffffff%d/%d|r', onlineMembers, totalMembers))
 	GameTooltip:Show()
 end
 
 -- // Friends Frame
 
-local FriendsScroll = CreateScrollFrame("Friends", 300, 550, 200)
+local FriendsScroll = CreateScrollFrame('Friends', 300, 550, 200)
 
 function nMinimap_UpdateFriendButton(entry)
 	local scrollFrame = FriendsScrollFrame
@@ -441,13 +441,13 @@ function nMinimap_UpdateFriendButton(entry)
 				levelc = GetQuestDifficultyColor(level)
 
 				if classc == nil then
-					characterName = characterName .. "-UnknownClass"
+					characterName = characterName .. '-UnknownClass'
 					classc = FRIENDS_BNET_NAME_COLOR
 				end
 
 				level = WrapTextInColorCode(level, CreateColor(levelc.r, levelc.g, levelc.b, 1):GenerateHexColor())
 
-				entry.LeftText:SetFormattedText("%s (%s %s) %s", accountName, level, characterName, statusText[status])
+				entry.LeftText:SetFormattedText('%s (%s %s) %s', accountName, level, characterName, statusText[status])
 				entry.RightText:SetText(clientIcon)
 			else
 				entry.LeftText:SetFormattedText(accountName)
@@ -480,7 +480,7 @@ function nMinimap_UpdateFriendButton(entry)
 
 				info.name = info.name or UNKNOWN
 
-				local chatFlag = ""
+				local chatFlag = ''
 				if info.dnd then
 					chatFlag = DEFAULT_DND_MESSAGE
 				elseif info.afk then
@@ -499,7 +499,7 @@ function nMinimap_UpdateFriendButton(entry)
 				info.name = WrapTextInColorCode(info.name, classc:GenerateHexColor())
 				info.area = WrapTextInColorCode(info.area, zonec:GenerateHexColor())
 
-				entry.LeftText:SetFormattedText("%s %s %s", info.level, info.name, chatFlag)
+				entry.LeftText:SetFormattedText('%s %s %s', info.level, info.name, chatFlag)
 				entry.RightText:SetFormattedText(info.area)
 
 				minWidth = math.max(minWidth, entry.LeftText:GetWidth() + entry.RightText:GetWidth() + 100)
@@ -594,13 +594,13 @@ function nMinimapTab_Friends_ShowTooltip(self)
 	end
 
 	GameTooltip:ClearAllPoints()
-	GameTooltip:SetPoint("TOPRIGHT", self, "BOTTOMRIGHT", 0, 2)
-	GameTooltip:SetOwner(self, "ANCHOR_PRESERVE")
+	GameTooltip:SetPoint('TOPRIGHT', self, 'BOTTOMRIGHT', 0, 2)
+	GameTooltip:SetOwner(self, 'ANCHOR_PRESERVE')
 	GameTooltip:ClearLines()
-	GameTooltip:AddLine(format("%s: %s/%s", FRIENDS_LIST_ONLINE, totalFriendsOnline, totalfriends))
+	GameTooltip:AddLine(format('%s: %s/%s', FRIENDS_LIST_ONLINE, totalFriendsOnline, totalfriends))
 
 	if totalFriendsOnline > 0 then
-		GameTooltip:AddLine(" ")
+		GameTooltip:AddLine(' ')
 		GameTooltip_InsertFrame(GameTooltip, FriendsScroll)
 	end
 
@@ -615,7 +615,7 @@ function nMinimapTab_Friends_OnEvent(self, event, ...)
 	local WoWTotal, WoWOnline = C_FriendList.GetNumFriends(), C_FriendList.GetNumOnlineFriends()
 	local totalFriendsOnline = BNOnline + WoWOnline
 
-	self.Text:SetFormattedText("%s%d", friendIcon, totalFriendsOnline)
+	self.Text:SetFormattedText('%s%d', friendIcon, totalFriendsOnline)
 	nMinimapTab_Friends_UpdateScrollFrame()
 end
 
@@ -667,7 +667,7 @@ local function NumberOfActiveAddon()
 	return active
 end
 
-local MemoryScroll = CreateScrollFrame("Memory", 300, 550, NUM_ADDONS_TO_DISPLAY)
+local MemoryScroll = CreateScrollFrame('Memory', 300, 550, NUM_ADDONS_TO_DISPLAY)
 
 function nMinimap_UpdateMemoryButton(entry)
 	local scrollFrame = MemoryScrollFrame
@@ -684,9 +684,9 @@ function nMinimap_UpdateMemoryButton(entry)
 		entry.LeftText:SetText(name)
 
 		if value > 1000 then
-			entry.RightText:SetFormattedText("%.2f MB", value / 1000)
+			entry.RightText:SetFormattedText('%.2f MB', value / 1000)
 		else
-			entry.RightText:SetFormattedText("%.0f KB", value)
+			entry.RightText:SetFormattedText('%.0f KB', value)
 		end
 	end
 
@@ -754,23 +754,23 @@ function nMinimapTab_Info_ShowTooltip(self)
 
 	GameTooltip:ClearLines()
 	GameTooltip:ClearAllPoints()
-	GameTooltip:SetPoint("TOPRIGHT", self, "BOTTOMRIGHT", 0, 2)
-	GameTooltip:SetOwner(self, "ANCHOR_PRESERVE")
+	GameTooltip:SetPoint('TOPRIGHT', self, 'BOTTOMRIGHT', 0, 2)
+	GameTooltip:SetOwner(self, 'ANCHOR_PRESERVE')
 	GameTooltip:AddLine(COMBAT_MISC_INFO)
-	GameTooltip:AddLine(" ")
+	GameTooltip:AddLine(' ')
 
 	-- Ping
 	local _, _, lagHome, lagWorld = GetNetStats()
 
-	GameTooltip:AddLine("|cffFFFFFF" .. HOME .. ":|r " .. format("%s ms", lagHome), RGBGradient(lagHome / 100))
-	GameTooltip:AddLine("|cffFFFFFF" .. WORLD .. ":|r " .. format("%d ms", lagWorld), RGBGradient(lagWorld / 100))
+	GameTooltip:AddLine('|cffFFFFFF' .. HOME .. ':|r ' .. format('%s ms', lagHome), RGBGradient(lagHome / 100))
+	GameTooltip:AddLine('|cffFFFFFF' .. WORLD .. ':|r ' .. format('%d ms', lagWorld), RGBGradient(lagWorld / 100))
 
 	-- Protocol Types
-	if GetCVarBool("useIPv6") then
-		local ipTypes = {"IPv4", "IPv6"}
+	if GetCVarBool('useIPv6') then
+		local ipTypes = {'IPv4', 'IPv6'}
 		local ipTypeHome, ipTypeWorld = GetNetIpTypes()
 		local ip6 = format(MAINMENUBAR_PROTOCOLS_LABEL, ipTypes[ipTypeHome or 0] or UNKNOWN, ipTypes[ipTypeWorld or 0] or UNKNOWN)
-		GameTooltip:AddLine(" ")
+		GameTooltip:AddLine(' ')
 		GameTooltip:AddLine(ip6, 1.0, 1.0, 1.0)
 	end
 
@@ -779,12 +779,12 @@ function nMinimapTab_Info_ShowTooltip(self)
 	if bandwidth > 0 then
 		local bandwidthText = format(MAINMENUBAR_BANDWIDTH_LABEL, bandwidth)
 		local downloadText = format(MAINMENUBAR_DOWNLOAD_PERCENT_LABEL, floor(GetDownloadedPercentage() * 100 + 0.5))
-		GameTooltip:AddLine(" ")
+		GameTooltip:AddLine(' ')
 		GameTooltip:AddDoubleLine(bandwidthText, downloadText, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0)
 	end
 
 	-- Memory
-	GameTooltip:AddLine(" ")
+	GameTooltip:AddLine(' ')
 	GameTooltip:AddLine(format(TOTAL_MEM_MB_ABBR, totalMem / 1000), 1.0, 1.0, 1.0)
 
 	if NUM_ADDONS_TO_DISPLAY > 0 then
@@ -799,14 +799,14 @@ end
 
 if not cfg.tab.showAlways then
 	Minimap:HookScript(
-		"OnEnter",
+		'OnEnter',
 		function()
 			nMinimapTab_ShowTab()
 		end
 	)
 
 	Minimap:HookScript(
-		"OnLeave",
+		'OnLeave',
 		function()
 			nMinimapTab_HideTab()
 		end

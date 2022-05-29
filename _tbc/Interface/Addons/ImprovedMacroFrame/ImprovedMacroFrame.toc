@@ -1,8 +1,0 @@
-﻿## Interface: 90005
-## Title: Improved Macro Frame
-## Version: 1.0.2
-## Author: Rustyboy of Barthilas
-## Notes: Increases the size of the default macro interface.
-ImprovedMacroFrame.lua
-ImprovedMacroFrame.xml
-Localization.lua
