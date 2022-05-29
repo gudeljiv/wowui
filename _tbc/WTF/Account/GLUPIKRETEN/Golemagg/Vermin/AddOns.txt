@@ -132,3 +132,5 @@ Pawn: disabled
 VuhDo: enabled
 VuhDoOptions: enabled
 AdiBags-ItemRackSets: enabled
+ErrorFilter: enabled
+ErrorMonster: disabled

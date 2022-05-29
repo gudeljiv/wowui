@@ -164,3 +164,5 @@ PitBull4_DogTagTexts: enabled
 VuhDo: enabled
 AdiBags-ItemRackSets: enabled
 VuhDoOptions: enabled
+ErrorFilter: enabled
+ErrorMonster: disabled

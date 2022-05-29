@@ -40,11 +40,25 @@ function uierrorsframe_addmessage(frame, text, red, green, blue, id)
 	old_uierrosframe_addmessage(frame, text, red, green, blue, id)
 end
 
-local frame = CreateFrame('Frame')
-frame:SetScript(
-	'OnEvent',
-	function()
-		enable()
-	end
-)
-frame:RegisterEvent('PLAYER_LOGIN')
+-- local frame = CreateFrame('Frame')
+-- frame:SetScript(
+-- 	'OnEvent',
+-- 	function()
+-- 		enable()
+-- 	end
+-- )
+-- frame:RegisterEvent('PLAYER_LOGIN')
+
+-- local frame = CreateFrame('Frame')
+-- frame:SetScript(
+-- 	'OnEvent',
+-- 	function(self, event, isInitialLogin, isReloadingUi)
+-- 		if event == 'PLAYER_REGEN_DISABLED' then
+-- 			UIErrorsFrame:Hide()
+-- 		else
+-- 			UIErrorsFrame:Show()
+-- 		end
+-- 	end
+-- )
+-- frame:RegisterEvent('PLAYER_REGEN_ENABLED')
+-- frame:RegisterEvent('PLAYER_REGEN_DISABLED')

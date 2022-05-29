@@ -1,0 +1,11 @@
+
+ErrorFilterDB = {
+	["profileKeys"] = {
+		["Moolatz - Golemagg"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["sink20OutputSink"] = "ChatFrame",
+		},
+	},
+}

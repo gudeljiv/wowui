@@ -382,8 +382,8 @@ AtlasLootClassicDB = {
 				["selectedGameVersion"] = 1,
 				["selected"] = {
 					nil, -- [1]
-					"ScarletMonasteryGraveyard", -- [2]
-					7, -- [3]
+					"ScarletMonasteryLibrary", -- [2]
+					2, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},

@@ -51,6 +51,11 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -59,11 +64,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
 			},
 		},
 		["Verminz - Golemagg"] = {
@@ -352,9 +352,22 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+			["GUI"] = {
+				["selectedGameVersion"] = 1,
+				["selected"] = {
+					nil, -- [1]
+					"ScarletMonasteryLibrary", -- [2]
+					2, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+				["point"] = {
+					"LEFT", -- [1]
+					nil, -- [2]
+					"LEFT", -- [3]
+					296.0728454589844, -- [4]
+					161.2300415039063, -- [5]
+				},
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -367,22 +380,9 @@ AtlasLootClassicDB = {
 					},
 				},
 			},
-			["GUI"] = {
-				["point"] = {
-					"LEFT", -- [1]
-					nil, -- [2]
-					"LEFT", -- [3]
-					296.0728454589844, -- [4]
-					161.2300415039063, -- [5]
-				},
-				["selectedGameVersion"] = 1,
-				["selected"] = {
-					nil, -- [1]
-					"ScarletMonasteryGraveyard", -- [2]
-					7, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Judawise - Golemagg"] = {
