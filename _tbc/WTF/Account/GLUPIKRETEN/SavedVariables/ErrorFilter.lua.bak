@@ -1,11 +1,20 @@
 
 ErrorFilterDB = {
 	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["sink20OutputSink"] = "ChatFrame",
+			["updateOnlyInCombat"] = true,
+			["filters"] = {
+				["You are too far away!"] = true,
+				["You are facing the wrong way!"] = true,
+				["Target needs to be in front of you."] = true,
+				["Out of range."] = true,
+				["You are too far away."] = true,
+			},
 		},
 	},
 }

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 5280,
 	["lastSanitation"] = 3,
-	["session"] = 5277,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -678,8 +678,8 @@ BugGrabberDB = {
 		}, -- [85]
 		{
 			["message"] = "(null)",
-			["session"] = 4904,
 			["time"] = "2022/03/09 13:39:43",
+			["session"] = 4904,
 			["counter"] = 6,
 		}, -- [86]
 		{
@@ -724,14 +724,14 @@ BugGrabberDB = {
 		}, -- [91]
 		{
 			["message"] = "  (null)",
-			["session"] = 4914,
 			["time"] = "2022/04/13 16:37:53",
+			["session"] = 4914,
 			["counter"] = 3,
 		}, -- [92]
 		{
 			["message"] = " (null)",
-			["session"] = 4914,
 			["time"] = "2022/04/11 11:49:12",
+			["session"] = 4914,
 			["counter"] = 13,
 		}, -- [93]
 		{
@@ -1387,26 +1387,26 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [175]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
-			["time"] = "2022/02/15 18:27:27",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 5267,
-			["counter"] = 94,
-		}, -- [176]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ErrorMonster' tried to call the protected function 'UNKNOWN()'.",
 			["time"] = "2022/05/29 16:48:06",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\ErrorMonster\\Libs\\LibSink-2.0\\LibSink-2.0-90106.lua\"]:446: in function `func'\n[string \"@Interface\\AddOns\\ErrorMonster\\Libs\\LibSink-2.0\\LibSink-2.0-90106.lua\"]:519: in function <...AddOns\\ErrorMonster\\Libs\\LibSink-2.0\\LibSink-2.0.lua:505>\n[string \"@Interface\\AddOns\\ErrorMonster\\Libs\\LibSink-2.0\\LibSink-2.0-90106.lua\"]:525: in function `Pour'\n[string \"@Interface\\AddOns\\ErrorMonster\\ErrorMonster-v9.1.0.lua\"]:39: in function <Interface\\AddOns\\ErrorMonster\\ErrorMonster.lua:20>\n[string \"=[C]\"]: in function `TurnOrActionStop'\n[string \"TURNORACTION\"]:4: in function <[string \"TURNORACTION\"]:1>",
 			["session"] = 5268,
 			["counter"] = 1,
-		}, -- [177]
+		}, -- [176]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'ExtendedCharacterStats' tried to call the protected function 'CopyToClipboard()'.",
 			["time"] = "2022/02/24 19:24:02",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `CopyToClipboard'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:55: in function `FrameStackTooltip_HandleFrameCommand'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:25: in function `command'\n[string \"@Interface\\SharedXML\\KeyCommand.lua\"]:47: in function `Update'\n[string \"@Interface\\SharedXML\\KeyCommand.lua\"]:111: in function `KeyCommand_Update'\n[string \"@Interface\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua\"]:234: in function <...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools.lua:233>",
 			["session"] = 5275,
 			["counter"] = 2,
+		}, -- [177]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
+			["time"] = "2022/02/15 18:27:27",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
+			["session"] = 5280,
+			["counter"] = 95,
 		}, -- [178]
 	},
 }
