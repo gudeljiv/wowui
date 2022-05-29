@@ -101,5 +101,5 @@ ItemRackUser = {
 	["Queues"] = {
 	},
 	["MenuScale"] = 1.2,
-	["CurrentSet"] = "heal",
+	["CurrentSet"] = "dps",
 }

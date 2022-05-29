@@ -2,8 +2,9 @@
 ErrorFilterDB = {
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
-		["Mxyz - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

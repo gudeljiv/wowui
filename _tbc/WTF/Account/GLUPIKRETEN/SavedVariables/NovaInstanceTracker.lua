@@ -92,7 +92,7 @@ NITdatabase = {
 					["maxXP"] = 768900,
 					["gender"] = "Male",
 					["prof1"] = "Herbalism",
-					["restedXP"] = 888232,
+					["restedXP"] = 900082,
 					["totalBagSlots"] = 68,
 					["freeBagSlots"] = 49,
 					["hasPet"] = true,
@@ -108,8 +108,8 @@ NITdatabase = {
 					["ammo"] = 2800,
 					["race"] = "Orc",
 					["resting"] = true,
-					["time"] = 1653838883,
-					["gold"] = 8285470,
+					["time"] = 1653847764,
+					["gold"] = 5785440,
 					["currentXP"] = 59057,
 					["fishingSkillMax"] = 0,
 					["classEnglish"] = "HUNTER",
@@ -172,7 +172,7 @@ NITdatabase = {
 				["Moolatz"] = {
 					[17026] = 0,
 					["cookingSkill"] = 0,
-					["profSkill1"] = 111,
+					["profSkill1"] = 123,
 					["instances"] = {
 						[43] = 8,
 						[389] = 7,
@@ -188,15 +188,15 @@ NITdatabase = {
 					["maxXP"] = 38800,
 					["gender"] = "Male",
 					["prof1"] = "Herbalism",
-					["restedXP"] = 0,
+					["restedXP"] = 78,
 					["totalBagSlots"] = 84,
-					["freeBagSlots"] = 64,
+					["freeBagSlots"] = 66,
 					["guildRankName"] = "Lurker",
 					["raceEnglish"] = "Tauren",
 					["profSkillMax1"] = 165,
 					["resting"] = true,
-					["time"] = 1653841019,
-					["gold"] = 553565,
+					["time"] = 1653848720,
+					["gold"] = 4064808,
 					["realm"] = "Golemagg",
 					["level"] = 30,
 					["raceLocalized"] = "Tauren",
@@ -205,7 +205,7 @@ NITdatabase = {
 					["classEnglish"] = "DRUID",
 					["firstaidSkillMax"] = 0,
 					["cookingSkillMax"] = 0,
-					["currentXP"] = 8908,
+					["currentXP"] = 24334,
 					["guild"] = "LevelUp Inc",
 					["race"] = "Tauren",
 					["fishingSkill"] = 0,
@@ -380,14 +380,14 @@ NITdatabase = {
 					["cookingSkill"] = 37,
 					["profSkill1"] = 235,
 					["instances"] = {
-						[489] = 1,
+						[529] = 3,
 						[546] = 4,
 						[542] = 5,
-						[543] = 6,
+						[489] = 1,
 						[329] = 20,
 						[547] = 1,
 						[30] = 2,
-						[529] = 3,
+						[543] = 6,
 					},
 					["firstaidSkillMax"] = 375,
 					["profSkill2"] = 320,
@@ -396,15 +396,15 @@ NITdatabase = {
 					["maxXP"] = 710200,
 					["gender"] = "Male",
 					["prof1"] = "Blacksmithing",
-					["restedXP"] = 894858,
+					["restedXP"] = 1026644,
 					["totalBagSlots"] = 84,
-					["freeBagSlots"] = 45,
+					["freeBagSlots"] = 50,
 					["currentXP"] = 487632,
 					["raceEnglish"] = "Orc",
 					["profSkillMax1"] = 300,
 					["race"] = "Orc",
-					["time"] = 1653741464,
-					["gold"] = 6527073,
+					["time"] = 1653848344,
+					["gold"] = 5526923,
 					["realm"] = "Golemagg",
 					["profSkillMax2"] = 375,
 					["firstaidSkill"] = 375,
@@ -498,6 +498,12 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "LevelUp Inc",
 						},
+						["Hokipoki"] = {
+							["class"] = "Warlock",
+							["level"] = 29,
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Whisky Pullz",
+						},
 						["Ymirjotun"] = {
 							["class"] = "Hunter",
 							["level"] = 29,
@@ -508,12 +514,6 @@ NITdatabase = {
 							["level"] = 25,
 							["classEnglish"] = "WARRIOR",
 							["class"] = "Warrior",
-						},
-						["Hokipoki"] = {
-							["class"] = "Warlock",
-							["level"] = 29,
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "Whisky Pullz",
 						},
 					},
 					["class"] = "Druid",
@@ -3891,10 +3891,10 @@ NITdatabase = {
 							["class"] = "Shaman",
 						},
 						["Vermina"] = {
-							["level"] = 18,
-							["class"] = "Paladin",
-							["name"] = "Vermina",
 							["classEnglish"] = "PALADIN",
+							["level"] = 18,
+							["name"] = "Vermina",
+							["class"] = "Paladin",
 						},
 					},
 					["class"] = "Paladin",
@@ -3925,10 +3925,10 @@ NITdatabase = {
 					["leftMoney"] = 741619,
 					["group"] = {
 						["Deadri"] = {
-							["classEnglish"] = "MAGE",
-							["level"] = 53,
-							["name"] = "Deadri",
 							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["name"] = "Deadri",
+							["level"] = 53,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -3988,10 +3988,10 @@ NITdatabase = {
 					["leftMoney"] = 696751,
 					["group"] = {
 						["Deadri"] = {
-							["classEnglish"] = "MAGE",
-							["level"] = 53,
-							["name"] = "Deadri",
 							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["name"] = "Deadri",
+							["level"] = 53,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -4051,10 +4051,10 @@ NITdatabase = {
 					["leftMoney"] = 652031,
 					["group"] = {
 						["Deadri"] = {
-							["classEnglish"] = "MAGE",
-							["level"] = 52,
-							["name"] = "Deadri",
 							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["name"] = "Deadri",
+							["level"] = 52,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -4114,10 +4114,10 @@ NITdatabase = {
 					["leftMoney"] = 588946,
 					["group"] = {
 						["Deadri"] = {
-							["classEnglish"] = "MAGE",
-							["level"] = 52,
-							["name"] = "Deadri",
 							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["name"] = "Deadri",
+							["level"] = 52,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -4184,10 +4184,10 @@ NITdatabase = {
 							["level"] = 46,
 						},
 						["Dëltrix"] = {
-							["classEnglish"] = "SHAMAN",
-							["level"] = 51,
-							["name"] = "Dëltrix",
 							["class"] = "Shaman",
+							["classEnglish"] = "SHAMAN",
+							["name"] = "Dëltrix",
+							["level"] = 51,
 						},
 						["Zazadin"] = {
 							["name"] = "Zazadin",
@@ -4197,10 +4197,10 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Deadri"] = {
-							["classEnglish"] = "MAGE",
-							["level"] = 52,
-							["name"] = "Deadri",
 							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["name"] = "Deadri",
+							["level"] = 52,
 						},
 						["Superuser"] = {
 							["name"] = "Superuser",
@@ -4253,10 +4253,10 @@ NITdatabase = {
 							["level"] = 51,
 						},
 						["Deadri"] = {
-							["classEnglish"] = "MAGE",
-							["level"] = 52,
-							["name"] = "Deadri",
 							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["name"] = "Deadri",
+							["level"] = 52,
 						},
 						["Zazadin"] = {
 							["name"] = "Zazadin",
@@ -4308,12 +4308,12 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4480-329-511-10419-0000BB5DEE",
 					["leftMoney"] = 1300336,
 					["group"] = {
-						["Superuser"] = {
-							["name"] = "Superuser",
-							["guildName"] = "Eduskunta",
+						["Zazadin"] = {
+							["name"] = "Zazadin",
+							["guildName"] = "Before Insanity",
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["level"] = 53,
+							["level"] = 70,
 						},
 						["Dëltrix"] = {
 							["name"] = "Dëltrix",
@@ -4322,24 +4322,24 @@ NITdatabase = {
 							["class"] = "Shaman",
 							["level"] = 51,
 						},
-						["Zazadin"] = {
-							["name"] = "Zazadin",
-							["guildName"] = "Before Insanity",
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["level"] = 70,
+						["Bloodravens"] = {
+							["class"] = "Priest",
+							["classEnglish"] = "PRIEST",
+							["name"] = "Bloodravens",
+							["level"] = 51,
 						},
 						["Deadri"] = {
-							["classEnglish"] = "MAGE",
-							["level"] = 51,
-							["name"] = "Deadri",
 							["class"] = "Mage",
-						},
-						["Bloodravens"] = {
-							["classEnglish"] = "PRIEST",
+							["classEnglish"] = "MAGE",
+							["name"] = "Deadri",
 							["level"] = 51,
-							["name"] = "Bloodravens",
-							["class"] = "Priest",
+						},
+						["Superuser"] = {
+							["name"] = "Superuser",
+							["guildName"] = "Eduskunta",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["level"] = 53,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -4378,10 +4378,10 @@ NITdatabase = {
 					["leftMoney"] = 1255731,
 					["group"] = {
 						["Deadri"] = {
-							["classEnglish"] = "MAGE",
-							["level"] = 51,
-							["name"] = "Deadri",
 							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["name"] = "Deadri",
+							["level"] = 51,
 						},
 						["Dëltrix"] = {
 							["name"] = "Dëltrix",
@@ -4398,10 +4398,10 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Larren"] = {
-							["classEnglish"] = "PALADIN",
-							["level"] = 57,
-							["name"] = "Larren",
 							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["name"] = "Larren",
+							["level"] = 57,
 						},
 						["Bloodravens"] = {
 							["name"] = "Bloodravens",
@@ -4453,13 +4453,6 @@ NITdatabase = {
 							["class"] = "Shaman",
 							["level"] = 51,
 						},
-						["Zazadin"] = {
-							["name"] = "Zazadin",
-							["guildName"] = "Before Insanity",
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-							["level"] = 70,
-						},
 						["Larren"] = {
 							["name"] = "Larren",
 							["guildName"] = "Three Crowns",
@@ -4473,6 +4466,13 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["class"] = "Priest",
 							["level"] = 51,
+						},
+						["Zazadin"] = {
+							["name"] = "Zazadin",
+							["guildName"] = "Before Insanity",
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+							["level"] = 70,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -4510,12 +4510,12 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4446-329-4928-10419-0000BB518A",
 					["leftMoney"] = 1165066,
 					["group"] = {
-						["Bloodravens"] = {
-							["name"] = "Bloodravens",
-							["guildName"] = "Up For Anything",
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
-							["level"] = 51,
+						["Larren"] = {
+							["name"] = "Larren",
+							["guildName"] = "Three Crowns",
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+							["level"] = 57,
 						},
 						["Dëltrix"] = {
 							["name"] = "Dëltrix",
@@ -4524,25 +4524,25 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["level"] = 50,
 						},
-						["Larren"] = {
-							["name"] = "Larren",
-							["guildName"] = "Three Crowns",
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-							["level"] = 57,
-						},
-						["Boxr"] = {
-							["classEnglish"] = "WARRIOR",
-							["level"] = 51,
-							["name"] = "Boxr",
-							["class"] = "Warrior",
-						},
 						["Zazadin"] = {
 							["name"] = "Zazadin",
 							["guildName"] = "Before Insanity",
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 							["level"] = 70,
+						},
+						["Boxr"] = {
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
+							["name"] = "Boxr",
+							["level"] = 51,
+						},
+						["Bloodravens"] = {
+							["name"] = "Bloodravens",
+							["guildName"] = "Up For Anything",
+							["class"] = "Priest",
+							["classEnglish"] = "PRIEST",
+							["level"] = 51,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -4580,19 +4580,19 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4459-329-23948-10418-00053B4E36",
 					["leftMoney"] = 1969118,
 					["group"] = {
-						["Bloodravens"] = {
-							["name"] = "Bloodravens",
-							["guildName"] = "Up For Anything",
-							["classEnglish"] = "PRIEST",
-							["class"] = "Priest",
-							["level"] = 51,
-						},
 						["Larren"] = {
 							["name"] = "Larren",
 							["guildName"] = "Three Crowns",
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 							["level"] = 57,
+						},
+						["Zazadin"] = {
+							["name"] = "Zazadin",
+							["guildName"] = "Before Insanity",
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+							["level"] = 70,
 						},
 						["Boxr"] = {
 							["name"] = "Boxr",
@@ -4601,12 +4601,12 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["level"] = 51,
 						},
-						["Zazadin"] = {
-							["name"] = "Zazadin",
-							["guildName"] = "Before Insanity",
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-							["level"] = 70,
+						["Bloodravens"] = {
+							["name"] = "Bloodravens",
+							["guildName"] = "Up For Anything",
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
+							["level"] = 51,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -4644,19 +4644,19 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4445-329-5700-10418-00003B4B91",
 					["leftMoney"] = 1920375,
 					["group"] = {
-						["Bloodravens"] = {
-							["name"] = "Bloodravens",
-							["guildName"] = "Up For Anything",
-							["classEnglish"] = "PRIEST",
-							["class"] = "Priest",
-							["level"] = 50,
-						},
 						["Larren"] = {
 							["name"] = "Larren",
 							["guildName"] = "Three Crowns",
 							["classEnglish"] = "PALADIN",
 							["class"] = "Paladin",
 							["level"] = 56,
+						},
+						["Zazadin"] = {
+							["name"] = "Zazadin",
+							["guildName"] = "Before Insanity",
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+							["level"] = 70,
 						},
 						["Boxr"] = {
 							["name"] = "Boxr",
@@ -4665,12 +4665,12 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["level"] = 51,
 						},
-						["Zazadin"] = {
-							["name"] = "Zazadin",
-							["guildName"] = "Before Insanity",
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-							["level"] = 70,
+						["Bloodravens"] = {
+							["name"] = "Bloodravens",
+							["guildName"] = "Up For Anything",
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
+							["level"] = 50,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -4708,19 +4708,19 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4445-329-5500-10420-0000BB4894",
 					["leftMoney"] = 1877646,
 					["group"] = {
-						["Zazadin"] = {
-							["name"] = "Zazadin",
-							["guildName"] = "Before Insanity",
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-							["level"] = 70,
-						},
 						["Bloodravens"] = {
 							["name"] = "Bloodravens",
 							["guildName"] = "Up For Anything",
 							["classEnglish"] = "PRIEST",
 							["class"] = "Priest",
 							["level"] = 50,
+						},
+						["Larren"] = {
+							["name"] = "Larren",
+							["guildName"] = "Three Crowns",
+							["class"] = "Paladin",
+							["level"] = 56,
+							["classEnglish"] = "PALADIN",
 						},
 						["Boxr"] = {
 							["name"] = "Boxr",
@@ -4729,12 +4729,12 @@ NITdatabase = {
 							["level"] = 51,
 							["classEnglish"] = "WARRIOR",
 						},
-						["Larren"] = {
-							["name"] = "Larren",
-							["guildName"] = "Three Crowns",
-							["class"] = "Paladin",
-							["level"] = 56,
+						["Zazadin"] = {
+							["name"] = "Zazadin",
+							["guildName"] = "Before Insanity",
 							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+							["level"] = 70,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -4772,18 +4772,18 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4458-329-2267-10420-0000BB4577",
 					["leftMoney"] = 1831632,
 					["group"] = {
-						["Bloodravens"] = {
-							["name"] = "Bloodravens",
-							["guildName"] = "Up For Anything",
-							["classEnglish"] = "PRIEST",
-							["level"] = 50,
-							["class"] = "Priest",
-						},
 						["Larren"] = {
 							["name"] = "Larren",
 							["guildName"] = "Three Crowns",
 							["classEnglish"] = "PALADIN",
 							["level"] = 56,
+							["class"] = "Paladin",
+						},
+						["Zazadin"] = {
+							["name"] = "Zazadin",
+							["guildName"] = "Before Insanity",
+							["classEnglish"] = "PALADIN",
+							["level"] = 70,
 							["class"] = "Paladin",
 						},
 						["Boxr"] = {
@@ -4793,12 +4793,12 @@ NITdatabase = {
 							["level"] = 50,
 							["class"] = "Warrior",
 						},
-						["Zazadin"] = {
-							["name"] = "Zazadin",
-							["guildName"] = "Before Insanity",
-							["classEnglish"] = "PALADIN",
-							["level"] = 70,
-							["class"] = "Paladin",
+						["Bloodravens"] = {
+							["name"] = "Bloodravens",
+							["guildName"] = "Up For Anything",
+							["classEnglish"] = "PRIEST",
+							["level"] = 50,
+							["class"] = "Priest",
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -4836,19 +4836,19 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4469-329-8377-10420-00013B423F",
 					["leftMoney"] = 1782837,
 					["group"] = {
-						["Zazadin"] = {
-							["name"] = "Zazadin",
-							["guildName"] = "Before Insanity",
-							["classEnglish"] = "PALADIN",
-							["level"] = 70,
-							["class"] = "Paladin",
-						},
 						["Bloodravens"] = {
 							["name"] = "Bloodravens",
 							["guildName"] = "Up For Anything",
 							["classEnglish"] = "PRIEST",
 							["level"] = 49,
 							["class"] = "Priest",
+						},
+						["Larren"] = {
+							["name"] = "Larren",
+							["guildName"] = "Three Crowns",
+							["class"] = "Paladin",
+							["level"] = 56,
+							["classEnglish"] = "PALADIN",
 						},
 						["Boxr"] = {
 							["name"] = "Boxr",
@@ -4857,12 +4857,12 @@ NITdatabase = {
 							["level"] = 50,
 							["classEnglish"] = "WARRIOR",
 						},
-						["Larren"] = {
-							["name"] = "Larren",
-							["guildName"] = "Three Crowns",
-							["class"] = "Paladin",
-							["level"] = 56,
+						["Zazadin"] = {
+							["name"] = "Zazadin",
+							["guildName"] = "Before Insanity",
 							["classEnglish"] = "PALADIN",
+							["level"] = 70,
+							["class"] = "Paladin",
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -4898,7 +4898,7 @@ NITdatabase = {
 				}, -- [72]
 			},
 		},
-		["lastVersionMsg"] = 1653830671,
+		["lastVersionMsg"] = 1653845218,
 		["minimapButton"] = false,
 		["statsOnlyWhenActivity"] = true,
 		["timeStampZone"] = "server",

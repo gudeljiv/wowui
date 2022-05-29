@@ -86,7 +86,7 @@ H: 455
 Frame: GroupBulletinBoardFrame
 FrameLevel: 1
 Anchor: CENTER
-X: 348
-Y: -2
-W: 892
-H: 676
+X: 306
+Y: 75
+W: 943
+H: 692

@@ -2,6 +2,7 @@
 ErrorFilterDB = {
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 	},
@@ -9,10 +10,10 @@ ErrorFilterDB = {
 		["Default"] = {
 			["updateOnlyInCombat"] = true,
 			["filters"] = {
-				["You are too far away!"] = true,
 				["You are facing the wrong way!"] = true,
-				["Target needs to be in front of you."] = true,
 				["Out of range."] = true,
+				["Target needs to be in front of you."] = true,
+				["You are too far away!"] = true,
 				["You are too far away."] = true,
 			},
 		},
