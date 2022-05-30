@@ -7,90 +7,82 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 56,
+					["combatId"] = 110,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008155,
+							["totalabsorbed"] = 0.007248,
 							["damage_from"] = {
-								["Scarlet Soldier"] = true,
+								["Sparkleshell Snapper"] = true,
 							},
 							["targets"] = {
+								["Sparkleshell Snapper"] = 1321,
 							},
-							["on_hold"] = false,
+							["aID"] = "4465-02B843FA",
 							["pets"] = {
 							},
+							["on_hold"] = false,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1321.007248,
+							["end_time"] = 1653936076,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 1321.007248,
 							["friendlyfire"] = {
 							},
 							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008155,
-							["aID"] = "4465-02B843FA",
-							["dps_started"] = false,
-							["total"] = 0.008155,
-							["classe"] = "DRUID",
-							["serial"] = "Player-4465-02B843FA",
 							["nome"] = "Moolatz",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["end_time"] = 1653921112,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 120.008155,
-							["start_time"] = 1653921112,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008536,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Moolatz"] = 120,
-							},
-							["total"] = 120.008536,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 120.008536,
-							["fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1653921112,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Scarlet Soldier",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
 									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 151,
+										["g_amt"] = 0,
+										["n_max"] = 45,
+										["targets"] = {
+											["Sparkleshell Snapper"] = 511,
+										},
+										["n_dmg"] = 360,
+										["n_min"] = 37,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 511,
+										["c_max"] = 78,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 73,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 9,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[6785] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 120,
+										["n_max"] = 261,
 										["targets"] = {
-											["Moolatz"] = 120,
+											["Sparkleshell Snapper"] = 261,
 										},
-										["n_dmg"] = 120,
-										["n_min"] = 120,
+										["n_dmg"] = 261,
+										["n_min"] = 261,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 120,
+										["total"] = 261,
 										["c_max"] = 0,
-										["id"] = 1,
+										["id"] = 6785,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
@@ -102,41 +94,337 @@ _detalhes_database = {
 										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									}, -- [1]
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Sparkleshell Snapper"] = 84,
+										},
+										["n_dmg"] = 84,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 84,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[1823] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Sparkleshell Snapper"] = 113,
+										},
+										["n_dmg"] = 113,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 113,
+										["c_max"] = 0,
+										["id"] = 1823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[22568] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 180,
+										["targets"] = {
+											["Sparkleshell Snapper"] = 180,
+										},
+										["n_dmg"] = 180,
+										["n_min"] = 180,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 180,
+										["c_max"] = 0,
+										["id"] = 22568,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[3029] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 88,
+										["targets"] = {
+											["Sparkleshell Snapper"] = 172,
+										},
+										["n_dmg"] = 172,
+										["n_min"] = 84,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 172,
+										["c_max"] = 0,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 								},
 							},
-							["aID"] = "4286",
-							["serial"] = "Creature-0-4446-189-25099-4286-000094D54F",
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 107.5388511886684,
+							["custom"] = 0,
+							["last_event"] = 1653936075,
+							["damage_taken"] = 423.007248,
+							["start_time"] = 1653936063,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.007247,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 423,
+							},
+							["pets"] = {
+							},
+							["aID"] = "4143",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 423.007247,
+							["friendlyfire"] = {
+							},
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 423.007247,
+							["end_time"] = 1653936076,
+							["on_hold"] = false,
+							["nome"] = "Sparkleshell Snapper",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 50,
+										["targets"] = {
+											["Moolatz"] = 273,
+										},
+										["n_dmg"] = 273,
+										["n_min"] = 41,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 273,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[7273] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Moolatz"] = 150,
+										},
+										["n_dmg"] = 150,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 150,
+										["c_max"] = 0,
+										["id"] = 7273,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 16,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-4447-1-51-4143-0000150B3C",
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1653921111,
-							["damage_taken"] = 0.008536,
-							["start_time"] = 1653921111,
+							["last_event"] = 1653936075,
+							["damage_taken"] = 1321.007247,
+							["start_time"] = 1653936063,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 56,
+					["combatId"] = 110,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 56,
+					["combatId"] = 110,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 56,
+					["combatId"] = 110,
 					["tipo"] = 9,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[17390] = {
+										["activedamt"] = 0,
+										["id"] = 17390,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 39,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 19,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[17390] = 1,
+								[22568] = 1,
+								[1823] = 1,
+								[3029] = 2,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1653936076,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 56,
+					["combatId"] = 110,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -147,16 +435,16 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Moolatz", -- [1]
 				},
-				["CombatStartedAt"] = 1649492.955,
-				["tempo_start"] = 1653921111,
+				["CombatStartedAt"] = 1664444.221,
+				["tempo_start"] = 1653936063,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 9185,
+				["combat_counter"] = 9241,
 				["playing_solo"] = true,
 				["totals"] = {
-					119.986946, -- [1]
+					1744, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -179,7 +467,7 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					0, -- [1]
+					1321, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -199,14 +487,15 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["frags_need_refresh"] = false,
+				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["data_fim"] = "16:31:52",
+				["data_fim"] = "20:41:17",
+				["pvp"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Scarlet Soldier",
-				["TotalElapsedCombatTime"] = 2.462000000057742,
-				["CombatEndedAt"] = 1649495.417,
+				["enemy"] = "Sparkleshell Snapper",
+				["TotalElapsedCombatTime"] = 12.95099999988452,
+				["CombatEndedAt"] = 1664457.172,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -226,871 +515,355 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Moolatz"] = 0.008155,
+							["Moolatz"] = 1321.007248,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 1649492.554,
-				["combat_id"] = 56,
+				["end_time"] = 1664457.172,
+				["combat_id"] = 110,
+				["spells_cast_timeline"] = {
+				},
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["spells_cast_timeline"] = {
-				},
 				["player_last_events"] = {
 				},
-				["data_inicio"] = "16:31:51",
 				["CombatSkillCache"] = {
 				},
-				["frags"] = {
-				},
-				["start_time"] = 1649491.937,
+				["data_inicio"] = "20:41:04",
+				["start_time"] = 1664444.221,
 				["TimeData"] = {
 				},
-				["contra"] = "Scarlet Soldier",
+				["frags"] = {
+					["Sparkleshell Snapper"] = 1,
+				},
 			}, -- [1]
 			{
 				{
-					["combatId"] = 52,
+					["combatId"] = 109,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.006708,
-							["aID"] = "4287",
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008718,
 							["damage_from"] = {
-								["Axxos"] = true,
+								["Sparkleshell Snapper"] = true,
 							},
 							["targets"] = {
-								["Axxos"] = 875,
+								["Sparkleshell Snapper"] = 1452,
 							},
-							["end_time"] = 1653920842,
+							["total"] = 1452.008718,
 							["pets"] = {
 							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
+							["on_hold"] = false,
+							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 875.006708,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 875.006708,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Scarlet Gallant",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 13,
-										["targets"] = {
-											["Axxos"] = 413,
-										},
-										["n_dmg"] = 413,
-										["a_dmg"] = 0,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 211,
-										["BLOCK"] = 46,
-										["total"] = 413,
-										["c_max"] = 0,
-										["DODGE"] = 53,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 41,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 32,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 39,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[5589] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Axxos"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 5589,
-										["r_dmg"] = 0,
-										["RESIST"] = 10,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 10,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[14517] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 47,
-										["targets"] = {
-											["Axxos"] = 462,
-										},
-										["n_dmg"] = 462,
-										["MISS"] = 1,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
-										["counter"] = 41,
-										["BLOCK"] = 9,
-										["total"] = 462,
-										["c_max"] = 0,
-										["a_dmg"] = 0,
-										["id"] = 14517,
-										["r_dmg"] = 0,
-										["DODGE"] = 10,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["PARRY"] = 6,
-										["c_min"] = 0,
-										["successful_casted"] = 37,
-										["a_amt"] = 0,
-										["n_amt"] = 15,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4446-189-24623-4287-000194D0E4",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653920823,
-							["damage_taken"] = 56309.006708,
-							["start_time"] = 1653920792,
-							["delay"] = 1653920823,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.007063,
-							["aID"] = "4465-02E98A53",
-							["damage_from"] = {
-								["Houndmaster Loksey"] = true,
-								["Scarlet Gallant"] = true,
-								["Scarlet Tracking Hound"] = true,
-								["Scarlet Adept"] = true,
-								["Scarlet Beastmaster"] = true,
-							},
-							["targets"] = {
-								["Houndmaster Loksey"] = 7655,
-								["Scarlet Gallant"] = 56309,
-								["Scarlet Tracking Hound"] = 23016,
-								["Scarlet Adept"] = 14187,
-								["Scarlet Beastmaster"] = 13395,
-							},
-							["pets"] = {
-							},
+							["total_without_pet"] = 1452.008718,
 							["colocacao"] = 1,
-							["end_time"] = 1653920842,
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 114562.007063,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["total"] = 114562.007063,
+							["end_time"] = 1653936045,
 							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Axxos",
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 580,
-										["g_amt"] = 0,
-										["n_max"] = 182,
+										["b_amt"] = 1,
+										["c_dmg"] = 169,
+										["g_amt"] = 1,
+										["n_max"] = 43,
 										["targets"] = {
-											["Houndmaster Loksey"] = 898,
-											["Scarlet Adept"] = 761,
-											["Scarlet Gallant"] = 2582,
+											["Sparkleshell Snapper"] = 622,
 										},
-										["n_dmg"] = 3661,
-										["n_min"] = 75,
-										["g_dmg"] = 0,
-										["counter"] = 31,
-										["total"] = 4241,
-										["c_max"] = 322,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-											["extra_attack"] = 4,
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 258,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 29,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[27168] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 55,
-										["targets"] = {
-											["Houndmaster Loksey"] = 110,
-											["Scarlet Gallant"] = 3010,
-											["Scarlet Tracking Hound"] = 1171,
-											["Scarlet Adept"] = 54,
-											["Scarlet Beastmaster"] = 436,
-										},
-										["n_dmg"] = 4781,
-										["n_min"] = 53,
-										["g_dmg"] = 0,
-										["counter"] = 90,
-										["total"] = 4781,
-										["c_max"] = 0,
-										["id"] = 27168,
-										["r_dmg"] = 0,
-										["RESIST"] = 2,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 88,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27156] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 252,
-										["targets"] = {
-											["Houndmaster Loksey"] = 504,
-											["Scarlet Adept"] = 504,
-										},
-										["n_dmg"] = 1008,
-										["n_min"] = 252,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 1008,
-										["c_max"] = 0,
-										["id"] = 27156,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27157] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1133,
-										["targets"] = {
-											["Houndmaster Loksey"] = 1133,
-											["Scarlet Beastmaster"] = 46,
-										},
-										["n_dmg"] = 1179,
-										["n_min"] = 46,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1179,
-										["c_max"] = 0,
-										["id"] = 27157,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27173] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 224,
-										["targets"] = {
-											["Houndmaster Loksey"] = 4689,
-											["Scarlet Gallant"] = 43639,
-											["Scarlet Tracking Hound"] = 19817,
-											["Scarlet Adept"] = 12305,
-											["Scarlet Beastmaster"] = 11469,
-										},
-										["n_dmg"] = 91919,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 433,
-										["total"] = 91919,
-										["c_max"] = 0,
-										["id"] = 27173,
-										["r_dmg"] = 0,
-										["RESIST"] = 1,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 432,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[26573] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 81,
-										["targets"] = {
-											["Houndmaster Loksey"] = 321,
-											["Scarlet Gallant"] = 7078,
-											["Scarlet Tracking Hound"] = 2028,
-											["Scarlet Adept"] = 563,
-											["Scarlet Beastmaster"] = 1444,
-										},
-										["n_dmg"] = 11434,
-										["n_min"] = 78,
-										["g_dmg"] = 0,
-										["counter"] = 145,
-										["total"] = 11434,
-										["c_max"] = 0,
-										["id"] = 26573,
-										["r_dmg"] = 0,
-										["RESIST"] = 2,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 143,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-02E98A53",
-							["last_dps"] = 1203.496203032534,
-							["custom"] = 0,
-							["last_event"] = 1653920832,
-							["damage_taken"] = 1112.007063,
-							["start_time"] = 1653920761,
-							["delay"] = 1653920832,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.001372,
-							["aID"] = "4296",
-							["damage_from"] = {
-								["Axxos"] = true,
-							},
-							["targets"] = {
-								["Axxos"] = 18,
-							},
-							["end_time"] = 1653920842,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 18.001372,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 18.001372,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Scarlet Adept",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Axxos"] = 18,
-										},
-										["n_dmg"] = 18,
-										["MISS"] = 2,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["BLOCK"] = 1,
-										["total"] = 18,
-										["c_max"] = 0,
-										["DODGE"] = 2,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 4,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[9734] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Axxos"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 9734,
-										["r_dmg"] = 0,
-										["RESIST"] = 9,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 9,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[6063] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 6063,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 5,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4446-189-24623-4296-000114D0E4",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653920825,
-							["damage_taken"] = 14187.001372,
-							["start_time"] = 1653920819,
-							["delay"] = 1653920825,
-							["tipo"] = 1,
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.007758,
-							["aID"] = "4288",
-							["damage_from"] = {
-								["Axxos"] = true,
-							},
-							["targets"] = {
-								["Axxos"] = 149,
-							},
-							["end_time"] = 1653920842,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 149.007758,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 149.007758,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Scarlet Beastmaster",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Axxos"] = 56,
-										},
-										["n_dmg"] = 56,
-										["DODGE"] = 7,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 31,
-										["a_dmg"] = 0,
-										["total"] = 56,
-										["c_max"] = 0,
-										["MISS"] = 5,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["BLOCK"] = 8,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 6,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[7896] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Axxos"] = 63,
-										},
-										["n_dmg"] = 63,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 63,
-										["c_max"] = 0,
-										["id"] = 7896,
-										["r_dmg"] = 0,
-										["BLOCK"] = 2,
-										["MISS"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[6660] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Axxos"] = 30,
-										},
-										["n_dmg"] = 30,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 30,
-										["c_max"] = 0,
-										["BLOCK"] = 1,
-										["id"] = 6660,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 4,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4446-189-24623-4288-000114D0E4",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653920827,
-							["damage_taken"] = 13395.007758,
-							["start_time"] = 1653920788,
-							["delay"] = 1653920827,
-							["tipo"] = 1,
-						}, -- [4]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.004244,
-							["aID"] = "4304",
-							["damage_from"] = {
-								["Axxos"] = true,
-							},
-							["targets"] = {
-								["Axxos"] = 51,
-							},
-							["end_time"] = 1653920842,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 51.004244,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 51.004244,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Scarlet Tracking Hound",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Axxos"] = 51,
-										},
-										["n_dmg"] = 51,
-										["MISS"] = 19,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 104,
-										["DODGE"] = 35,
-										["total"] = 51,
-										["c_max"] = 0,
-										["BLOCK"] = 23,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 21,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-4446-189-24623-4304-000094D0E4",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653920807,
-							["damage_taken"] = 23016.004244,
-							["start_time"] = 1653920813,
-							["delay"] = 1653920807,
-							["tipo"] = 1,
-						}, -- [5]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002493,
-							["aID"] = "3974",
-							["damage_from"] = {
-								["Axxos"] = true,
-							},
-							["targets"] = {
-								["Axxos"] = 19,
-							},
-							["end_time"] = 1653920842,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 19.002493,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 19.002493,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Houndmaster Loksey",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 19,
-										["targets"] = {
-											["Axxos"] = 19,
-										},
-										["n_dmg"] = 19,
-										["a_dmg"] = 0,
+										["n_dmg"] = 417,
 										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 37,
-										["BLOCK"] = 3,
-										["total"] = 19,
-										["c_max"] = 0,
-										["DODGE"] = 12,
+										["g_dmg"] = 36,
+										["counter"] = 16,
+										["total"] = 622,
+										["c_max"] = 85,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["MISS"] = 15,
+										["a_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["PARRY"] = 6,
+										["PARRY"] = 2,
+										["c_min"] = 84,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 11,
+										["b_dmg"] = 19,
+										["r_amt"] = 0,
+									}, -- [1]
+									[6785] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 269,
+										["targets"] = {
+											["Sparkleshell Snapper"] = 269,
+										},
+										["n_dmg"] = 269,
+										["n_min"] = 269,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 269,
+										["c_max"] = 0,
+										["id"] = 6785,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									}, -- [1]
-									[6192] = {
+									},
+									[8914] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 12,
 										["targets"] = {
+											["Sparkleshell Snapper"] = 96,
 										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 96,
+										["n_min"] = 12,
 										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
+										["counter"] = 8,
+										["total"] = 96,
 										["c_max"] = 0,
-										["id"] = 6192,
+										["id"] = 8914,
 										["r_dmg"] = 0,
+										["spellschool"] = 8,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 4,
+										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 8,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[6742] = {
+									[1823] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 35,
 										["targets"] = {
+											["Sparkleshell Snapper"] = 113,
 										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 113,
+										["n_min"] = 26,
 										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
+										["counter"] = 4,
+										["total"] = 113,
 										["c_max"] = 0,
-										["id"] = 6742,
+										["id"] = 1823,
 										["r_dmg"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 1,
+										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[22568] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 187,
+										["targets"] = {
+											["Sparkleshell Snapper"] = 187,
+										},
+										["n_dmg"] = 187,
+										["n_min"] = 187,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 187,
+										["c_max"] = 0,
+										["id"] = 22568,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[3029] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 85,
+										["targets"] = {
+											["Sparkleshell Snapper"] = 165,
+										},
+										["n_dmg"] = 165,
+										["n_min"] = 80,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 165,
+										["c_max"] = 0,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 91.69616154110615,
+							["custom"] = 0,
+							["last_event"] = 1653936045,
+							["damage_taken"] = 610.008718,
+							["start_time"] = 1653936029,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.008751,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 610,
+							},
+							["pets"] = {
+							},
+							["total"] = 610.0087510000001,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 610.0087510000001,
 							["friendlyfire"] = {
 							},
-							["serial"] = "Creature-0-4446-189-24623-3974-000014D0E4",
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1653936063,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Sparkleshell Snapper",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 87,
+										["g_amt"] = 0,
+										["n_max"] = 63,
+										["targets"] = {
+											["Moolatz"] = 429,
+										},
+										["n_dmg"] = 342,
+										["n_min"] = 43,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 429,
+										["c_max"] = 87,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 87,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[7273] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Moolatz"] = 181,
+										},
+										["n_dmg"] = 181,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 19,
+										["total"] = 181,
+										["c_max"] = 0,
+										["id"] = 7273,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 19,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["aID"] = "4143",
+							["serial"] = "Creature-0-4447-1-51-4143-0000150B46",
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1653920814,
-							["damage_taken"] = 7655.002493,
-							["start_time"] = 1653920810,
-							["delay"] = 1653920814,
+							["last_event"] = 1653936063,
+							["damage_taken"] = 1452.008751,
+							["start_time"] = 1653936029,
+							["delay"] = 0,
 							["tipo"] = 1,
-						}, -- [6]
+						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 52,
+					["combatId"] = 109,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 52,
+					["combatId"] = 109,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 52,
+					["combatId"] = 109,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -1098,333 +871,32 @@ _detalhes_database = {
 							["debuff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
-									[26573] = {
-										["activedamt"] = 20,
-										["id"] = 26573,
-										["targets"] = {
-										},
-										["uptime"] = 79,
-										["appliedamt"] = 60,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[25771] = {
-										["activedamt"] = -1,
-										["id"] = 25771,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920743,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27173] = {
+									[17390] = {
 										["activedamt"] = 0,
-										["id"] = 27173,
+										["id"] = 17390,
 										["targets"] = {
 										},
-										["uptime"] = 28,
-										["appliedamt"] = 82,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["dispell"] = 5.003316,
-							["buff_uptime"] = 108,
-							["aID"] = "4465-02E98A53",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[20134] = {
-										["activedamt"] = 5,
-										["id"] = 20134,
-										["targets"] = {
-										},
-										["uptime"] = 47,
-										["appliedamt"] = 5,
-										["refreshamt"] = 12,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[33263] = {
-										["activedamt"] = 1,
-										["id"] = 33263,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920737,
-										["uptime"] = 0,
+										["uptime"] = 15,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[33721] = {
-										["activedamt"] = 1,
-										["id"] = 33721,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920737,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[27155] = {
-										["activedamt"] = 2,
-										["id"] = 27155,
-										["targets"] = {
-										},
-										["uptime"] = 20,
-										["appliedamt"] = 2,
-										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[28734] = {
-										["activedamt"] = 1,
-										["id"] = 28734,
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
 										["targets"] = {
 										},
-										["actived_at"] = 1653920746,
 										["uptime"] = 9,
 										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[20218] = {
-										["activedamt"] = 1,
-										["id"] = 20218,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920737,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[25780] = {
-										["activedamt"] = 1,
-										["id"] = 25780,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920737,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[35078] = {
-										["activedamt"] = 1,
-										["id"] = 35078,
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									[20178] = {
-										["activedamt"] = 2,
-										["id"] = 20178,
-										["targets"] = {
-										},
-										["uptime"] = 22,
-										["appliedamt"] = 2,
-										["refreshamt"] = 5,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27168] = {
-										["activedamt"] = 1,
-										["id"] = 27168,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920737,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[39625] = {
-										["activedamt"] = 1,
-										["id"] = 39625,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920737,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
 								},
 							},
-							["dispell_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[4987] = {
-										["dispell"] = 5,
-										["id"] = 4987,
-										["dispell_oque"] = {
-											[14517] = 5,
-										},
-										["targets"] = {
-											["Axxos"] = 5,
-										},
-										["counter"] = 0,
-									},
-								},
-							},
-							["dispell_oque"] = {
-								[14517] = 5,
-							},
-							["debuff_uptime"] = 107,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[26573] = 2,
-								[27155] = 3,
-								[4987] = 5,
-								[20271] = 2,
-								[27173] = 4,
-								[28734] = 1,
-							},
-							["dispell_targets"] = {
-								["Axxos"] = 5,
-							},
-							["nome"] = "Axxos",
-							["last_event"] = 1653920832,
-							["pets"] = {
-							},
-							["classe"] = "PALADIN",
-							["serial"] = "Player-4465-02E98A53",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Whiteye",
-							["buff_uptime"] = 0,
-							["pets"] = {
-							},
-							["classe"] = "PALADIN",
-							["last_event"] = 1653920737,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[20218] = {
-										["activedamt"] = 1,
-										["id"] = 20218,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920737,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02EA1CC7",
-							["aID"] = "4465-02EA1CC7",
-						}, -- [2]
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Kamides",
-							["buff_uptime"] = 0,
-							["pets"] = {
-							},
-							["classe"] = "PALADIN",
-							["last_event"] = 1653920737,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[20218] = {
-										["activedamt"] = 1,
-										["id"] = 20218,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920737,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02E963B0",
-							["aID"] = "4465-02E963B0",
-						}, -- [3]
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Glurvas",
-							["buff_uptime"] = 0,
-							["pets"] = {
-							},
-							["classe"] = "HUNTER",
-							["last_event"] = 1653920737,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[5118] = {
-										["activedamt"] = 1,
-										["id"] = 5118,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920737,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02E90A98",
-							["aID"] = "4465-02E90A98",
-						}, -- [4]
-						{
-							["flag_original"] = 1047,
-							["spell_cast"] = {
-								[768] = 1,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 0,
-							["pets"] = {
-							},
-							["classe"] = "DRUID",
-							["last_event"] = 1653920738,
-							["tipo"] = 4,
+							["buff_uptime"] = 48,
+							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
 								["_ActorTable"] = {
@@ -1433,11 +905,21 @@ _detalhes_database = {
 										["id"] = 5234,
 										["targets"] = {
 										},
-										["actived_at"] = 1653920737,
-										["uptime"] = 0,
+										["uptime"] = 16,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
-										["actived"] = true,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
 										["counter"] = 0,
 									},
 									[768] = {
@@ -1445,13586 +927,109 @@ _detalhes_database = {
 										["id"] = 768,
 										["targets"] = {
 										},
-										["actived_at"] = 1653920738,
-										["uptime"] = 0,
+										["uptime"] = 16,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [5]
-						{
-							["monster"] = true,
-							["nome"] = "Scarlet Adept",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[9734] = 9,
-								[6063] = 5,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-189-24623-4296-000114D0E4",
-							["aID"] = "4296",
-						}, -- [6]
-						{
-							["monster"] = true,
-							["nome"] = "Scarlet Gallant",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[5589] = 10,
-								[14517] = 37,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-189-24623-4287-000394D0E4",
-							["aID"] = "4287",
-						}, -- [7]
-						{
-							["monster"] = true,
-							["nome"] = "Scarlet Beastmaster",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[7896] = 2,
-								[6660] = 4,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-189-24623-4288-000114D0E4",
-							["aID"] = "4288",
-						}, -- [8]
-						{
-							["monster"] = true,
-							["nome"] = "Houndmaster Loksey",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[6192] = 4,
-								[6742] = 1,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-189-24623-3974-000014D0E4",
-							["aID"] = "3974",
-						}, -- [9]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 52,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Glurvas"] = true,
-					["Moolatz"] = true,
-					["Whiteye"] = true,
-					["Kamides"] = true,
-					["Axxos"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Glurvas", -- [1]
-					"Kamides", -- [2]
-					"Whiteye", -- [3]
-					"Moolatz", -- [4]
-					"Axxos", -- [5]
-				},
-				["tempo_start"] = 1653920737,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Scarlet Gallant",
-				["combat_counter"] = 9181,
-				["totals"] = {
-					115673.9951, -- [1]
-					-0.011933, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 5,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["instance_type"] = "none",
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "16:25:37",
-				["end_time"] = 1649222.868,
-				["combat_id"] = 52,
-				["cleu_timeline"] = {
-				},
-				["totals_grupo"] = {
-					114562, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 5,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Axxos"] = 114562.007063,
-						}, -- [1]
-					},
-				},
-				["frags"] = {
-					["Houndmaster Loksey"] = 1,
-					["Scarlet Gallant"] = 20,
-					["Scarlet Tracking Hound"] = 7,
-					["Scarlet Adept"] = 4,
-					["Scarlet Beastmaster"] = 4,
-				},
-				["data_fim"] = "16:27:22",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1649117.611,
-				["contra"] = "Scarlet Gallant",
-				["TimeData"] = {
-				},
-			}, -- [2]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 49,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.001452,
-							["damage_from"] = {
-								["Scarlet Chaplain"] = true,
-								["Scarlet Champion"] = true,
-								["Scarlet Sorcerer"] = true,
-								["Scarlet Myrmidon"] = true,
-								["Scarlet Defender"] = true,
-								["Scarlet Abbot"] = true,
-								["Scarlet Wizard"] = true,
-								["Scarlet Monk"] = true,
-								["Scarlet Centurion"] = true,
-								["Scarlet Commander Mograine"] = true,
-							},
-							["targets"] = {
-								["Scarlet Chaplain"] = 8700,
-								["Scarlet Centurion"] = 87538,
-								["Scarlet Sorcerer"] = 27294,
-								["Scarlet Myrmidon"] = 47502,
-								["Scarlet Defender"] = 22526,
-								["Scarlet Abbot"] = 17366,
-								["Scarlet Champion"] = 27051,
-								["Scarlet Wizard"] = 44435,
-								["Scarlet Monk"] = 30052,
-								["Scarlet Commander Mograine"] = 5275,
-							},
-							["pets"] = {
-							},
-							["delay"] = 1653920404,
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 317739.001452,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["dps_started"] = false,
-							["total"] = 317739.001452,
-							["aID"] = "4465-02E98A53",
-							["friendlyfire_total"] = 0,
-							["nome"] = "Axxos",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 9,
-										["b_amt"] = 0,
-										["c_dmg"] = 2768,
-										["g_amt"] = 0,
-										["n_max"] = 240,
-										["targets"] = {
-											["Scarlet Chaplain"] = 731,
-											["Scarlet Centurion"] = 3232,
-											["Scarlet Sorcerer"] = 1923,
-											["Scarlet Myrmidon"] = 1278,
-											["Scarlet Wizard"] = 596,
-											["Scarlet Monk"] = 814,
-											["Scarlet Defender"] = 101,
-											["Scarlet Commander Mograine"] = 676,
-										},
-										["n_dmg"] = 6583,
-										["n_min"] = 66,
-										["g_dmg"] = 0,
-										["counter"] = 55,
-										["total"] = 9351,
-										["c_max"] = 385,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 187,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 46,
-										["extra"] = {
-											["extra_attack"] = 17,
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[26573] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 81,
-										["targets"] = {
-											["Scarlet Wizard"] = 320,
-											["Scarlet Defender"] = 377,
-											["Scarlet Myrmidon"] = 1365,
-										},
-										["n_dmg"] = 2062,
-										["n_min"] = 72,
-										["g_dmg"] = 0,
-										["counter"] = 26,
-										["total"] = 2062,
-										["c_max"] = 0,
-										["id"] = 26573,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 26,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[27169] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 72,
-										["targets"] = {
-											["Scarlet Chaplain"] = 109,
-											["Scarlet Champion"] = 1380,
-											["Scarlet Sorcerer"] = 357,
-											["Scarlet Myrmidon"] = 2610,
-											["Scarlet Defender"] = 965,
-											["Scarlet Abbot"] = 700,
-											["Scarlet Wizard"] = 1018,
-											["Scarlet Monk"] = 1713,
-											["Scarlet Centurion"] = 3040,
-											["Scarlet Commander Mograine"] = 267,
-										},
-										["n_dmg"] = 12159,
-										["n_min"] = 49,
-										["g_dmg"] = 0,
-										["counter"] = 190,
-										["total"] = 12159,
-										["c_max"] = 0,
-										["id"] = 27169,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 187,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[27156] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 380,
-										["targets"] = {
-											["Scarlet Chaplain"] = 782,
-										},
-										["n_dmg"] = 782,
-										["n_min"] = 150,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 782,
-										["c_max"] = 0,
-										["id"] = 27156,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[27157] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 238,
-										["g_amt"] = 0,
-										["n_max"] = 1149,
-										["targets"] = {
-											["Scarlet Chaplain"] = 1387,
-										},
-										["n_dmg"] = 1149,
-										["n_min"] = 1149,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1387,
-										["c_max"] = 238,
-										["id"] = 27157,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 238,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[27173] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 334,
-										["targets"] = {
-											["Scarlet Chaplain"] = 5691,
-											["Scarlet Champion"] = 25671,
-											["Scarlet Sorcerer"] = 25014,
-											["Scarlet Myrmidon"] = 42249,
-											["Scarlet Defender"] = 21083,
-											["Scarlet Abbot"] = 16666,
-											["Scarlet Wizard"] = 42501,
-											["Scarlet Monk"] = 27525,
-											["Scarlet Centurion"] = 81266,
-											["Scarlet Commander Mograine"] = 4332,
-										},
-										["n_dmg"] = 291998,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 938,
-										["total"] = 291998,
-										["c_max"] = 0,
-										["id"] = 27173,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 935,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1653920418,
-							["damage_taken"] = 2124.001452,
-							["on_hold"] = false,
-							["colocacao"] = 1,
-							["last_event"] = 1653920404,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653920300,
-							["serial"] = "Player-4465-02E98A53",
-							["last_dps"] = 1879.267320330603,
-						}, -- [1]
-						{
-							["flag_original"] = 2600,
-							["totalabsorbed"] = 0.002594,
-							["damage_from"] = {
-								["Axxos"] = true,
-							},
-							["targets"] = {
-								["Axxos"] = 624,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["aID"] = "4301",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 624.002594,
-							["delay"] = 1653920404,
-							["fight_component"] = true,
-							["end_time"] = 1653920418,
-							["total"] = 624.002594,
-							["damage_taken"] = 87538.00259399999,
-							["nome"] = "Scarlet Centurion",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 44,
-										["targets"] = {
-											["Axxos"] = 624,
-										},
-										["n_dmg"] = 624,
-										["r_amt"] = 0,
-										["n_min"] = 32,
-										["g_dmg"] = 0,
-										["counter"] = 193,
-										["b_dmg"] = 0,
-										["total"] = 624,
-										["c_max"] = 0,
-										["DODGE"] = 49,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_amt"] = 0,
-										["extra"] = {
-										},
-										["c_min"] = 0,
-										["PARRY"] = 51,
-										["BLOCK"] = 47,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 16,
-										["MISS"] = 30,
-										["a_dmg"] = 0,
-									}, -- [1]
-									[31403] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 31403,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 17,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[8990] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Axxos"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 8990,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 10,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 0,
-							["dps_started"] = false,
-							["custom"] = 0,
-							["last_event"] = 1653920404,
-							["on_hold"] = false,
-							["start_time"] = 1653920395,
-							["serial"] = "Creature-0-4446-189-24623-4301-000394D0E5",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.004811,
-							["damage_from"] = {
-								["Axxos"] = true,
-							},
-							["targets"] = {
-								["Axxos"] = 416,
-							},
-							["pets"] = {
-							},
-							["delay"] = 1653920383,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 416.004811,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["monster"] = true,
-							["total"] = 416.004811,
-							["aID"] = "4295",
-							["dps_started"] = false,
-							["nome"] = "Scarlet Myrmidon",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 30,
-										["targets"] = {
-											["Axxos"] = 416,
-										},
-										["n_dmg"] = 416,
-										["r_amt"] = 0,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 344,
-										["b_dmg"] = 0,
-										["total"] = 416,
-										["c_max"] = 0,
-										["MISS"] = 112,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_amt"] = 0,
-										["extra"] = {
-										},
-										["c_min"] = 0,
-										["PARRY"] = 64,
-										["BLOCK"] = 39,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 45,
-										["DODGE"] = 84,
-										["a_dmg"] = 0,
-									}, -- [1]
-									[8269] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 8269,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 13,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["end_time"] = 1653920418,
-							["damage_taken"] = 47502.004811,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653920383,
-							["on_hold"] = false,
-							["start_time"] = 1653920376,
-							["serial"] = "Creature-0-4446-189-24623-4295-000194D0E5",
-							["friendlyfire"] = {
-							},
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.004488,
-							["damage_from"] = {
-								["Axxos"] = true,
-							},
-							["targets"] = {
-								["Axxos"] = 354,
-							},
-							["pets"] = {
-							},
-							["delay"] = 1653920398,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 354.004488,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["monster"] = true,
-							["total"] = 354.004488,
-							["aID"] = "4302",
-							["dps_started"] = false,
-							["nome"] = "Scarlet Champion",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 23,
-										["targets"] = {
-											["Axxos"] = 42,
-										},
-										["n_dmg"] = 42,
-										["r_amt"] = 0,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 59,
-										["b_dmg"] = 0,
-										["total"] = 42,
-										["c_max"] = 0,
-										["MISS"] = 13,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_amt"] = 0,
-										["extra"] = {
-										},
-										["c_min"] = 0,
-										["PARRY"] = 10,
-										["BLOCK"] = 19,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 2,
-										["DODGE"] = 15,
-										["a_dmg"] = 0,
-									}, -- [1]
-									[17143] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 312,
-										["targets"] = {
-											["Axxos"] = 312,
-										},
-										["n_dmg"] = 312,
-										["n_min"] = 312,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["r_amt"] = 0,
-										["total"] = 312,
-										["c_max"] = 0,
-										["b_dmg"] = 0,
-										["id"] = 17143,
-										["r_dmg"] = 0,
-										["DODGE"] = 2,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["PARRY"] = 1,
-										["BLOCK"] = 2,
-										["successful_casted"] = 9,
-										["extra"] = {
-										},
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["MISS"] = 3,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["end_time"] = 1653920418,
-							["damage_taken"] = 27051.004488,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653920398,
-							["on_hold"] = false,
-							["start_time"] = 1653920410,
-							["serial"] = "Creature-0-4446-189-24623-4302-000094D0E5",
-							["friendlyfire"] = {
-							},
-						}, -- [4]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.003139,
-							["damage_from"] = {
-								["Axxos"] = true,
-							},
-							["targets"] = {
-								["Axxos"] = 253,
-							},
-							["pets"] = {
-							},
-							["delay"] = 1653920383,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 253.003139,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["monster"] = true,
-							["total"] = 253.003139,
-							["aID"] = "4300",
-							["dps_started"] = false,
-							["nome"] = "Scarlet Wizard",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 17,
-										["targets"] = {
-											["Axxos"] = 160,
-										},
-										["n_dmg"] = 160,
-										["r_amt"] = 0,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 89,
-										["b_dmg"] = 0,
-										["total"] = 160,
-										["c_max"] = 0,
-										["DODGE"] = 30,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_amt"] = 0,
-										["extra"] = {
-										},
-										["c_min"] = 0,
-										["PARRY"] = 17,
-										["BLOCK"] = 15,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 10,
-										["MISS"] = 17,
-										["a_dmg"] = 0,
-									}, -- [1]
-									[2601] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 2601,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 8,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[3054] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 24,
-										["targets"] = {
-											["Axxos"] = 93,
-										},
-										["n_dmg"] = 93,
-										["n_min"] = 23,
-										["g_dmg"] = 0,
-										["counter"] = 74,
-										["total"] = 93,
-										["c_max"] = 0,
-										["id"] = 3054,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 70,
-										["extra"] = {
-										},
-										["spellschool"] = 4,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["end_time"] = 1653920418,
-							["damage_taken"] = 44435.003139,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653920383,
-							["on_hold"] = false,
-							["start_time"] = 1653920401,
-							["serial"] = "Creature-0-4446-189-24623-4300-000494D0E5",
-							["friendlyfire"] = {
-							},
-						}, -- [5]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.0078,
-							["damage_from"] = {
-								["Axxos"] = true,
-							},
-							["targets"] = {
-								["Axxos"] = 115,
-							},
-							["pets"] = {
-							},
-							["delay"] = 1653920402,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 115.0078,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["monster"] = true,
-							["total"] = 115.0078,
-							["aID"] = "4540",
-							["dps_started"] = false,
-							["nome"] = "Scarlet Monk",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 24,
-										["targets"] = {
-											["Axxos"] = 115,
-										},
-										["n_dmg"] = 115,
-										["r_amt"] = 0,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 208,
-										["b_dmg"] = 0,
-										["total"] = 115,
-										["c_max"] = 0,
-										["DODGE"] = 59,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_amt"] = 0,
-										["extra"] = {
-											["extra_attack"] = 7,
-										},
-										["c_min"] = 0,
-										["PARRY"] = 46,
-										["BLOCK"] = 24,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["MISS"] = 73,
-									}, -- [1]
-									[3391] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3391,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 9,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[11978] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Axxos"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 15,
-										["r_amt"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["b_dmg"] = 0,
-										["id"] = 11978,
-										["r_dmg"] = 0,
-										["MISS"] = 4,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["PARRY"] = 2,
-										["BLOCK"] = 5,
-										["successful_casted"] = 15,
-										["extra"] = {
-										},
-										["n_amt"] = 0,
-										["DODGE"] = 4,
-										["a_dmg"] = 0,
-									},
-									[8990] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Axxos"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 8990,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 4,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["end_time"] = 1653920418,
-							["damage_taken"] = 30052.0078,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653920402,
-							["on_hold"] = false,
-							["start_time"] = 1653920409,
-							["serial"] = "Creature-0-4446-189-24623-4540-000394D0E5",
-							["friendlyfire"] = {
-							},
-						}, -- [6]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.00276,
-							["damage_from"] = {
-								["Axxos"] = true,
-							},
-							["targets"] = {
-								["Axxos"] = 95,
-							},
-							["pets"] = {
-							},
-							["delay"] = 1653920383,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 95.00276,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["monster"] = true,
-							["total"] = 95.00276,
-							["aID"] = "4303",
-							["dps_started"] = false,
-							["nome"] = "Scarlet Abbot",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 40,
-										["targets"] = {
-											["Axxos"] = 95,
-										},
-										["n_dmg"] = 95,
-										["r_amt"] = 0,
-										["n_min"] = 20,
-										["MISS"] = 6,
-										["counter"] = 41,
-										["b_dmg"] = 0,
-										["total"] = 95,
-										["c_max"] = 0,
-										["DODGE"] = 11,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_amt"] = 0,
-										["extra"] = {
-										},
-										["c_min"] = 0,
-										["PARRY"] = 10,
-										["BLOCK"] = 11,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["g_dmg"] = 0,
-									}, -- [1]
-									[8362] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 8362,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 3,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[8269] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 8269,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 5,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["end_time"] = 1653920418,
-							["damage_taken"] = 17366.00276,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653920383,
-							["on_hold"] = false,
-							["start_time"] = 1653920413,
-							["serial"] = "Creature-0-4446-189-24623-4303-000094D0E5",
-							["friendlyfire"] = {
-							},
-						}, -- [7]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.006326,
-							["damage_from"] = {
-								["Axxos"] = true,
-							},
-							["targets"] = {
-								["Axxos"] = 93,
-							},
-							["pets"] = {
-							},
-							["delay"] = 1653920403,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 93.006326,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["monster"] = true,
-							["total"] = 93.006326,
-							["aID"] = "4298",
-							["dps_started"] = false,
-							["nome"] = "Scarlet Defender",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 15,
-										["targets"] = {
-											["Axxos"] = 85,
-										},
-										["n_dmg"] = 85,
-										["r_amt"] = 0,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 56,
-										["b_dmg"] = 0,
-										["total"] = 85,
-										["c_max"] = 0,
-										["MISS"] = 8,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_amt"] = 0,
-										["extra"] = {
-										},
-										["c_min"] = 0,
-										["PARRY"] = 11,
-										["BLOCK"] = 14,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 7,
-										["DODGE"] = 16,
-										["a_dmg"] = 0,
-									}, -- [1]
-									[11972] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 3,
-										["targets"] = {
-											["Axxos"] = 8,
-										},
-										["n_dmg"] = 8,
-										["n_min"] = 1,
-										["g_dmg"] = 0,
-										["counter"] = 18,
-										["r_amt"] = 0,
-										["total"] = 8,
-										["c_max"] = 0,
-										["b_dmg"] = 0,
-										["id"] = 11972,
-										["r_dmg"] = 0,
-										["MISS"] = 2,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["PARRY"] = 1,
-										["BLOCK"] = 6,
-										["successful_casted"] = 11,
-										["extra"] = {
-										},
-										["n_amt"] = 4,
-										["DODGE"] = 5,
-										["a_dmg"] = 0,
-									},
-									[7164] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 7164,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[3639] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3639,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 9,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["end_time"] = 1653920418,
-							["damage_taken"] = 22526.006326,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653920530,
-							["on_hold"] = false,
-							["start_time"] = 1653920376,
-							["serial"] = "Creature-0-4446-189-24623-4298-000114D0E5",
-							["friendlyfire"] = {
-							},
-						}, -- [8]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.004974,
-							["damage_from"] = {
-								["Axxos"] = true,
-							},
-							["targets"] = {
-								["Axxos"] = 73,
-							},
-							["pets"] = {
-							},
-							["delay"] = 1653920384,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 73.004974,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["monster"] = true,
-							["total"] = 73.004974,
-							["aID"] = "3976",
-							["dps_started"] = false,
-							["nome"] = "Scarlet Commander Mograine",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Axxos"] = 73,
-										},
-										["n_dmg"] = 73,
-										["n_min"] = 36,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["r_amt"] = 0,
-										["total"] = 73,
-										["c_max"] = 0,
-										["b_dmg"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["PARRY"] = 2,
-										["BLOCK"] = 3,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["n_amt"] = 2,
-										["DODGE"] = 2,
-										["a_dmg"] = 0,
-									}, -- [1]
-									[8990] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Axxos"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 8990,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[14518] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Axxos"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 14518,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["BLOCK"] = 1,
-										["successful_casted"] = 2,
-										["c_min"] = 0,
-										["n_amt"] = 0,
-										["extra"] = {
-										},
-										["MISS"] = 1,
-									},
-									[5589] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Axxos"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 5589,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["end_time"] = 1653920418,
-							["damage_taken"] = 5275.004974,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653920384,
-							["on_hold"] = false,
-							["start_time"] = 1653920402,
-							["serial"] = "Creature-0-4446-189-24623-3976-000014D0E4",
-							["friendlyfire"] = {
-							},
-						}, -- [9]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002269,
-							["damage_from"] = {
-								["Axxos"] = true,
-							},
-							["targets"] = {
-								["Axxos"] = 73,
-							},
-							["pets"] = {
-							},
-							["delay"] = 1653920402,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 73.002269,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["monster"] = true,
-							["total"] = 73.002269,
-							["aID"] = "4294",
-							["dps_started"] = false,
-							["nome"] = "Scarlet Sorcerer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Axxos"] = 73,
-										},
-										["n_dmg"] = 73,
-										["r_amt"] = 0,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 24,
-										["b_dmg"] = 0,
-										["total"] = 73,
-										["c_max"] = 0,
-										["a_dmg"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_amt"] = 0,
-										["extra"] = {
-										},
-										["c_min"] = 0,
-										["PARRY"] = 5,
-										["BLOCK"] = 5,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 9,
-										["MISS"] = 4,
-										["DODGE"] = 1,
-									}, -- [1]
-									[9672] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Axxos"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 9672,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 11,
-										["a_amt"] = 0,
-										["RESIST"] = 11,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[8990] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Axxos"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 8990,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[6146] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Axxos"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 6146,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["end_time"] = 1653920418,
-							["damage_taken"] = 27294.002269,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653920402,
-							["on_hold"] = false,
-							["start_time"] = 1653920398,
-							["serial"] = "Creature-0-4446-189-24623-4294-000094D0E5",
-							["friendlyfire"] = {
-							},
-						}, -- [10]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.003769,
-							["damage_from"] = {
-								["Axxos"] = true,
-							},
-							["targets"] = {
-								["Axxos"] = 28,
-							},
-							["pets"] = {
-							},
-							["delay"] = 1653920401,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 28.003769,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["monster"] = true,
-							["total"] = 28.003769,
-							["aID"] = "4299",
-							["dps_started"] = false,
-							["nome"] = "Scarlet Chaplain",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 14,
-										["targets"] = {
-											["Axxos"] = 28,
-										},
-										["n_dmg"] = 28,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["r_amt"] = 0,
-										["total"] = 28,
-										["c_max"] = 0,
-										["b_dmg"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["BLOCK"] = 2,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["n_amt"] = 2,
-										["DODGE"] = 3,
-										["MISS"] = 2,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["end_time"] = 1653920418,
-							["damage_taken"] = 8700.003768999999,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653920401,
-							["on_hold"] = false,
-							["start_time"] = 1653920402,
-							["serial"] = "Creature-0-4446-189-24623-4299-000394D0E5",
-							["friendlyfire"] = {
-							},
-						}, -- [11]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 49,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 49,
-					["_ActorTable"] = {
-						{
-							["received"] = 592.007429,
-							["resource"] = 0.007429,
-							["targets"] = {
-								["Axxos"] = 592,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "PALADIN",
-							["passiveover"] = 0.007429,
-							["total"] = 592.007429,
-							["nome"] = "Axxos",
-							["spells"] = {
-								["_ActorTable"] = {
-									[27167] = {
-										["total"] = 592,
-										["id"] = 27167,
-										["totalover"] = 134,
-										["targets"] = {
-											["Axxos"] = 592,
-										},
-										["counter"] = 6,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 134.007429,
-							["alternatepower"] = 0.007429,
-							["last_event"] = 1653920304,
-							["tipo"] = 3,
-							["aID"] = "4465-02E98A53",
-							["serial"] = "Player-4465-02E98A53",
-							["flag_original"] = 1298,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 49,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[26573] = {
-										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 26573,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 10,
-									},
-									[27164] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 27164,
-										["uptime"] = 157,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[25771] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 25771,
-										["uptime"] = 107,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[27173] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 27173,
-										["uptime"] = 28,
-										["targets"] = {
-										},
-										["appliedamt"] = 180,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["dispell"] = 1.005151,
-							["cooldowns_defensive"] = 1.004101,
-							["buff_uptime"] = 328,
-							["last_cooldown"] = {
-								1653920305.687, -- [1]
-								642, -- [2]
-							},
-							["serial"] = "Player-4465-02E98A53",
-							["aID"] = "4465-02E98A53",
-							["cooldowns_defensive_targets"] = {
-								["Axxos"] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[20134] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 6,
-										["refreshamt"] = 30,
-										["id"] = 20134,
-										["uptime"] = 85,
-										["targets"] = {
-										},
-										["appliedamt"] = 6,
-									},
-									[27169] = {
-										["activedamt"] = 1,
-										["id"] = 27169,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920249,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									[33263] = {
-										["activedamt"] = 1,
-										["id"] = 33263,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920249,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									[33721] = {
-										["activedamt"] = 1,
-										["id"] = 33721,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920249,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									[27166] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 4,
-										["refreshamt"] = 0,
-										["id"] = 27166,
-										["uptime"] = 43,
-										["targets"] = {
-										},
-										["appliedamt"] = 4,
-									},
-									[27155] = {
-										["activedamt"] = 3,
-										["id"] = 27155,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920402,
-										["uptime"] = 8,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 3,
-									},
-									[39625] = {
-										["activedamt"] = 1,
-										["id"] = 39625,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920249,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									[20218] = {
-										["activedamt"] = 1,
-										["id"] = 20218,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920249,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									[35078] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 35078,
-										["uptime"] = 20,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[28734] = {
-										["activedamt"] = 1,
-										["id"] = 28734,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920361,
-										["uptime"] = 43,
-										["counter"] = 0,
-										["refreshamt"] = 2,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									[25780] = {
-										["activedamt"] = 1,
-										["id"] = 25780,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920249,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									[642] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 642,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20178] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 5,
-										["refreshamt"] = 22,
-										["id"] = 20178,
-										["uptime"] = 78,
-										["targets"] = {
-										},
-										["appliedamt"] = 5,
-									},
-									[31884] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 31884,
-										["uptime"] = 21,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[43712] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 43712,
-										["uptime"] = 20,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["dispell_spells"] = {
-								["_ActorTable"] = {
-									[4987] = {
-										["targets"] = {
-											["Axxos"] = 1,
-										},
-										["id"] = 4987,
-										["dispell_oque"] = {
-											[6146] = 1,
-										},
-										["dispell"] = 1,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 300,
-							["classe"] = "PALADIN",
-							["tipo"] = 4,
+							["debuff_uptime"] = 24,
 							["buff_uptime_targets"] = {
 							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[642] = 1,
-								[27173] = 4,
-								[27166] = 3,
-								[43712] = 1,
-								[28734] = 2,
-								[20271] = 5,
-								[31884] = 1,
-								[26573] = 2,
-								[4987] = 1,
-								[27155] = 3,
-							},
-							["pets"] = {
-							},
-							["nome"] = "Axxos",
-							["last_event"] = 1653920410,
-							["debuff_uptime_targets"] = {
-							},
-							["dispell_targets"] = {
-								["Axxos"] = 1,
-							},
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[642] = {
-										["id"] = 642,
-										["targets"] = {
-											["Axxos"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["dispell_oque"] = {
-								[6146] = 1,
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Whiteye",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02EA1CC7",
-							["buff_uptime"] = 0,
-							["tipo"] = 4,
-							["last_event"] = 1653920249,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[20218] = {
-										["activedamt"] = 1,
-										["id"] = 20218,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920249,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02EA1CC7",
-							["classe"] = "PALADIN",
-						}, -- [2]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Kamides",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02E963B0",
-							["buff_uptime"] = 0,
-							["tipo"] = 4,
-							["last_event"] = 1653920249,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[20218] = {
-										["activedamt"] = 1,
-										["id"] = 20218,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920249,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E963B0",
-							["classe"] = "PALADIN",
-						}, -- [3]
-						{
-							["flag_original"] = 1047,
-							["buff_uptime"] = 169,
-							["nome"] = "Glurvas",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02E90A98",
-							["spell_cast"] = {
-								[1510] = 1,
-								[13159] = 1,
-							},
-							["last_event"] = 1653920415,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[1510] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 1510,
-										["uptime"] = 6,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[5118] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 5118,
-										["uptime"] = 163,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[13159] = {
-										["activedamt"] = 1,
-										["id"] = 13159,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920415,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E90A98",
-							["classe"] = "HUNTER",
-						}, -- [4]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Moolatz",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02B843FA",
-							["buff_uptime"] = 0,
-							["tipo"] = 4,
-							["last_event"] = 1653920249,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920249,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["classe"] = "DRUID",
-						}, -- [5]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Defender",
-							["aID"] = "4298",
-							["spell_cast"] = {
-								[11972] = 11,
-								[7164] = 2,
-								[3639] = 9,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4446-189-24623-4298-000114D0E5",
-							["flag_original"] = 2632,
-						}, -- [6]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Wizard",
-							["aID"] = "4300",
-							["spell_cast"] = {
-								[2601] = 8,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4446-189-24623-4300-000494D0E5",
-							["flag_original"] = 2632,
-						}, -- [7]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Sorcerer",
-							["aID"] = "4294",
-							["spell_cast"] = {
-								[9672] = 11,
-								[6146] = 2,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4446-189-24623-4294-000094D0E5",
-							["flag_original"] = 2632,
-						}, -- [8]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Centurion",
-							["aID"] = "4301",
-							["spell_cast"] = {
-								[31403] = 17,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4446-189-24623-4301-000214D0E4",
-							["flag_original"] = 2632,
-						}, -- [9]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Monk",
-							["aID"] = "4540",
-							["spell_cast"] = {
-								[3391] = 9,
-								[11978] = 15,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4446-189-24623-4540-000394D0E5",
-							["flag_original"] = 2632,
-						}, -- [10]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Commander Mograine",
-							["aID"] = "3976",
-							["spell_cast"] = {
-								[5589] = 1,
-								[14518] = 2,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4446-189-24623-3976-000014D0E4",
-							["flag_original"] = 2632,
-						}, -- [11]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Champion",
-							["aID"] = "4302",
-							["spell_cast"] = {
-								[17143] = 9,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4446-189-24623-4302-000094D0E5",
-							["flag_original"] = 2632,
-						}, -- [12]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Myrmidon",
-							["aID"] = "4295",
-							["spell_cast"] = {
-								[8269] = 13,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4446-189-24623-4295-000314D0E5",
-							["flag_original"] = 2632,
-						}, -- [13]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Abbot",
-							["aID"] = "4303",
-							["spell_cast"] = {
-								[8362] = 3,
-								[8269] = 5,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4446-189-24623-4303-000114D0E5",
-							["flag_original"] = 2632,
-						}, -- [14]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 49,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Glurvas"] = true,
-					["Moolatz"] = true,
-					["Whiteye"] = true,
-					["Kamides"] = true,
-					["Axxos"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Glurvas", -- [1]
-					"Kamides", -- [2]
-					"Whiteye", -- [3]
-					"Moolatz", -- [4]
-					"Axxos", -- [5]
-				},
-				["tempo_start"] = 1653920249,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Scarlet Myrmidon",
-				["combat_counter"] = 9177,
-				["totals"] = {
-					319863, -- [1]
-					-0.003803, -- [2]
-					{
-						0, -- [1]
-						[0] = 592,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 1,
-						["cooldowns_defensive"] = 1,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["totals_grupo"] = {
-					317739, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 592,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 1,
-						["cooldowns_defensive"] = 1,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "16:17:30",
-				["end_time"] = 1648799.471,
-				["spells_cast_timeline"] = {
-				},
-				["instance_type"] = "none",
-				["TimeData"] = {
-				},
-				["cleu_timeline"] = {
-				},
-				["hasSaved"] = true,
-				["frags"] = {
-					["Scarlet Chaplain"] = 3,
-					["Scarlet Centurion"] = 21,
-					["Scarlet Sorcerer"] = 10,
-					["Scarlet Myrmidon"] = 13,
-					["Scarlet Defender"] = 6,
-					["Scarlet Abbot"] = 5,
-					["Scarlet Monk"] = 9,
-					["Scarlet Wizard"] = 13,
-					["Scarlet Champion"] = 8,
-				},
-				["data_fim"] = "16:20:19",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Axxos"] = 317739.001452,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["start_time"] = 1648630.395,
-				["contra"] = "Scarlet Myrmidon",
-				["combat_id"] = 49,
-			}, -- [3]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 48,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.007477,
-							["damage_from"] = {
-								["Moolatz"] = true,
-								["Blait"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 427,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4283",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 427.007477,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1653920202,
-							["damage_taken"] = 1286.007477,
-							["total"] = 427.007477,
-							["nome"] = "Scarlet Sentry",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 47,
-										["targets"] = {
-											["Moolatz"] = 427,
-											["Blait"] = 0,
-										},
-										["n_dmg"] = 427,
-										["r_amt"] = 0,
-										["n_min"] = 37,
-										["g_dmg"] = 0,
-										["counter"] = 19,
-										["b_dmg"] = 0,
-										["total"] = 427,
-										["c_max"] = 0,
-										["DODGE"] = 2,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_amt"] = 0,
-										["extra"] = {
-										},
-										["c_min"] = 0,
-										["PARRY"] = 2,
-										["BLOCK"] = 1,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 10,
-										["a_dmg"] = 0,
-										["MISS"] = 4,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1653920201,
-							["on_hold"] = false,
-							["start_time"] = 1653920179,
-							["serial"] = "Creature-0-4447-0-59-4283-000014CD86",
-							["classe"] = "UNKNOW",
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00213,
-							["damage_from"] = {
-								["Scarlet Sentry"] = true,
-							},
-							["targets"] = {
-								["Scarlet Sentry"] = 1140,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4465-02B843FA",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1140.00213,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1653920202,
-							["damage_taken"] = 427.00213,
-							["on_hold"] = false,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 291,
-										["g_amt"] = 0,
-										["n_max"] = 40,
-										["targets"] = {
-											["Scarlet Sentry"] = 691,
-										},
-										["n_dmg"] = 400,
-										["n_min"] = 33,
-										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 691,
-										["c_max"] = 81,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 67,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["n_amt"] = 11,
-										["MISS"] = 1,
-										["a_dmg"] = 0,
-									}, -- [1]
-									[3029] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 68,
-										["targets"] = {
-											["Scarlet Sentry"] = 319,
-										},
-										["n_dmg"] = 319,
-										["n_min"] = 62,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 319,
-										["c_max"] = 0,
-										["id"] = 3029,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-									[9492] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 44,
-										["targets"] = {
-											["Scarlet Sentry"] = 130,
-										},
-										["n_dmg"] = 130,
-										["n_min"] = 43,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 130,
-										["c_max"] = 0,
-										["id"] = 9492,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 51.19463490227724,
-							["total"] = 1140.00213,
-							["colocacao"] = 1,
-							["last_event"] = 1653920200,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653920181,
-							["serial"] = "Player-4465-02B843FA",
-							["classe"] = "DRUID",
-						}, -- [2]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.006196,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Scarlet Myrmidon"] = 54,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["total"] = 54.006196,
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 54.006196,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1653920249,
-							["aID"] = "4465-02E98A53",
-							["damage_taken"] = 0.006196,
-							["nome"] = "Axxos",
-							["spells"] = {
-								["_ActorTable"] = {
-									[27169] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 54,
-										["targets"] = {
-											["Scarlet Myrmidon"] = 54,
-										},
-										["n_dmg"] = 54,
-										["n_min"] = 54,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 54,
-										["c_max"] = 0,
-										["id"] = 27169,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653920249,
-							["on_hold"] = false,
-							["start_time"] = 1653920249,
-							["serial"] = "Player-4465-02E98A53",
-							["friendlyfire"] = {
-							},
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 48,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 48,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 48,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Kamides",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02E963B0",
-							["buff_uptime"] = 0,
-							["tipo"] = 4,
-							["last_event"] = 1653920179,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[20218] = {
-										["activedamt"] = 1,
-										["id"] = 20218,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920179,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E963B0",
-							["classe"] = "PALADIN",
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Glurvas",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02E90A98",
-							["buff_uptime"] = 0,
-							["tipo"] = 4,
-							["last_event"] = 1653920179,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[13159] = {
-										["activedamt"] = 1,
-										["id"] = 13159,
-										["targets"] = {
-										},
-										["actived_at"] = 1653920179,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E90A98",
-							["classe"] = "HUNTER",
-						}, -- [2]
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[15571] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 5,
-										["id"] = 15571,
-										["uptime"] = 14,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[9492] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 9492,
-										["uptime"] = 7,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02B843FA",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 768,
-										["uptime"] = 23,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 21,
-							["nome"] = "Moolatz",
-							["grupo"] = true,
-							["spell_cast"] = {
-								[3029] = 5,
-								[9492] = 1,
-							},
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["last_event"] = 1653920202,
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "DRUID",
-							["serial"] = "Player-4465-02B843FA",
-							["buff_uptime"] = 23,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 48,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Glurvas"] = true,
-					["Moolatz"] = true,
-					["Whiteye"] = true,
-					["Kamides"] = true,
-					["Axxos"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Glurvas", -- [1]
-					"Kamides", -- [2]
-					"Whiteye", -- [3]
-					"Moolatz", -- [4]
-					"Axxos", -- [5]
-				},
-				["tempo_start"] = 1653920179,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 9176,
-				["totals"] = {
-					1620.989009, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					1194, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "16:16:43",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Sentry",
-				["TotalElapsedCombatTime"] = 1648583.626,
-				["CombatEndedAt"] = 1648583.626,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Moolatz"] = 1140.00213,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 1648583.975,
-				["combat_id"] = 48,
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["data_inicio"] = "16:16:20",
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Scarlet Sentry",
-				["start_time"] = 1648560.973,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Scarlet Sentry"] = 2,
-				},
-			}, -- [4]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 47,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.003367,
-							["damage_from"] = {
-								["Moolatz"] = true,
-								["Kamides"] = true,
-							},
-							["targets"] = {
-								["Moolatz"] = 355,
-							},
-							["delay"] = 1653920106,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4281",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 355.003367,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1653920132,
-							["damage_taken"] = 1104.003367,
-							["total"] = 355.003367,
-							["nome"] = "Scarlet Scout",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 45,
-										["targets"] = {
-											["Moolatz"] = 123,
-										},
-										["n_dmg"] = 123,
-										["n_min"] = 39,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 123,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 3,
-										["spellschool"] = 1,
-										["DODGE"] = 1,
-									}, -- [1]
-									[6979] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 64,
-										["targets"] = {
-											["Moolatz"] = 126,
-										},
-										["n_dmg"] = 126,
-										["n_min"] = 62,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 126,
-										["c_max"] = 0,
-										["id"] = 6979,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[6660] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 57,
-										["targets"] = {
-											["Moolatz"] = 106,
-										},
-										["n_dmg"] = 106,
-										["n_min"] = 49,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 106,
-										["c_max"] = 0,
-										["id"] = 6660,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1653920128,
-							["on_hold"] = false,
-							["start_time"] = 1653920117,
-							["serial"] = "Creature-0-4447-0-59-4281-000014CABB",
-							["classe"] = "UNKNOW",
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004766,
-							["damage_from"] = {
-								["Scarlet Scout"] = true,
-							},
-							["targets"] = {
-								["Scarlet Scout"] = 624,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4465-02B843FA",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 624.004766,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1653920132,
-							["damage_taken"] = 355.004766,
-							["on_hold"] = false,
-							["nome"] = "Moolatz",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 3,
-										["b_amt"] = 1,
-										["c_dmg"] = 235,
-										["g_amt"] = 0,
-										["n_max"] = 41,
-										["targets"] = {
-											["Scarlet Scout"] = 489,
-										},
-										["n_dmg"] = 254,
-										["n_min"] = 23,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 489,
-										["c_max"] = 88,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 23,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 71,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 7,
-										["spellschool"] = 1,
-										["DODGE"] = 1,
-									}, -- [1]
-									[3029] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 68,
-										["targets"] = {
-											["Scarlet Scout"] = 135,
-										},
-										["n_dmg"] = 135,
-										["n_min"] = 67,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 135,
-										["c_max"] = 0,
-										["id"] = 3029,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 2,
-										["spellschool"] = 1,
-										["DODGE"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 24.95919227237791,
-							["total"] = 624.004766,
-							["colocacao"] = 1,
-							["last_event"] = 1653920130,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653920120,
-							["serial"] = "Player-4465-02B843FA",
-							["classe"] = "DRUID",
-						}, -- [2]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.004893,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Scarlet Scout"] = 480,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 480.004893,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 480.004893,
-							["damage_taken"] = 0.004893,
-							["aID"] = "4465-02E963B0",
-							["nome"] = "Kamides",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 167,
-										["targets"] = {
-											["Scarlet Scout"] = 314,
-										},
-										["n_dmg"] = 314,
-										["n_min"] = 147,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 314,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[20283] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 108,
-										["targets"] = {
-											["Scarlet Scout"] = 108,
-										},
-										["n_dmg"] = 108,
-										["n_min"] = 108,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 108,
-										["c_max"] = 0,
-										["id"] = 20283,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[25737] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Scarlet Scout"] = 58,
-										},
-										["n_dmg"] = 58,
-										["n_min"] = 58,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 58,
-										["c_max"] = 0,
-										["id"] = 25737,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 19.19942774294321,
-							["end_time"] = 1653920132,
-							["colocacao"] = 2,
-							["last_event"] = 1653920131,
-							["on_hold"] = false,
-							["start_time"] = 1653920128,
-							["serial"] = "Player-4465-02E963B0",
-							["friendlyfire"] = {
-							},
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 47,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 47,
-					["_ActorTable"] = {
-						{
-							["received"] = 81.002346,
-							["resource"] = 0.002346,
-							["targets"] = {
-								["Kamides"] = 81,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "PALADIN",
-							["passiveover"] = 0.002346,
-							["total"] = 81.002346,
-							["nome"] = "Kamides",
-							["spells"] = {
-								["_ActorTable"] = {
-									[31930] = {
-										["total"] = 81,
-										["id"] = 31930,
-										["totalover"] = 0,
-										["targets"] = {
-											["Kamides"] = 81,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 0.002346,
-							["alternatepower"] = 0.002346,
-							["last_event"] = 1653920128,
-							["tipo"] = 3,
-							["aID"] = "4465-02E963B0",
-							["serial"] = "Player-4465-02E963B0",
-							["flag_original"] = 1298,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 47,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime"] = 40,
-							["nome"] = "Kamides",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02E963B0",
-							["spell_cast"] = {
-								[20290] = 2,
-								[20271] = 1,
-							},
-							["last_event"] = 1653920132,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[34769] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 34769,
-										["uptime"] = 7,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20218] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 20218,
-										["uptime"] = 26,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20290] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 20290,
-										["uptime"] = 7,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E963B0",
-							["classe"] = "PALADIN",
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[17390] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 17390,
-										["uptime"] = 6,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[9492] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 9492,
-										["uptime"] = 1,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02B843FA",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[783] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 783,
-										["uptime"] = 12,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[768] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 768,
-										["uptime"] = 14,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 7,
-							["nome"] = "Moolatz",
 							["grupo"] = true,
 							["spell_cast"] = {
 								[17390] = 1,
-								[768] = 1,
-								[3029] = 3,
-								[9492] = 1,
+								[22568] = 1,
+								[1823] = 1,
+								[3029] = 2,
 							},
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["last_event"] = 1653920132,
 							["debuff_uptime_targets"] = {
 							},
-							["classe"] = "DRUID",
-							["serial"] = "Player-4465-02B843FA",
-							["buff_uptime"] = 26,
-						}, -- [2]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Scout",
-							["aID"] = "4281",
-							["spell_cast"] = {
-								[6979] = 2,
-								[6660] = 1,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4447-0-59-4281-000014CABB",
-							["flag_original"] = 2632,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 47,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Glurvas"] = true,
-					["Moolatz"] = true,
-					["Whiteye"] = true,
-					["Kamides"] = true,
-					["Axxos"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Glurvas", -- [1]
-					"Kamides", -- [2]
-					"Whiteye", -- [3]
-					"Moolatz", -- [4]
-					"Axxos", -- [5]
-				},
-				["CombatStartedAt"] = 1648558.972,
-				["tempo_start"] = 1653920106,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 9175,
-				["totals"] = {
-					1459, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 81,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "16:15:33",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Scout",
-				["TotalElapsedCombatTime"] = 1648513.155,
-				["CombatEndedAt"] = 1648513.155,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "16:15:07",
-				["end_time"] = 1648513.972,
-				["combat_id"] = 47,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["totals_grupo"] = {
-					1104, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 81,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["contra"] = "Scarlet Scout",
-				["CombatSkillCache"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Moolatz"] = 624.004766,
-							["Kamides"] = 480.004893,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["start_time"] = 1648487.969,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Scarlet Scout"] = 1,
-				},
-			}, -- [5]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 46,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.0058,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Kamides"] = 375,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4283",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 375.0058,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1653920093,
-							["damage_taken"] = 0.0058,
-							["total"] = 375.0058,
-							["nome"] = "Scarlet Sentry",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 38,
-										["targets"] = {
-											["Kamides"] = 375,
-										},
-										["n_dmg"] = 375,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 375,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 11,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1653920093,
-							["on_hold"] = false,
-							["start_time"] = 1653920080,
-							["serial"] = "Creature-0-4447-0-59-4283-000014CD86",
-							["classe"] = "UNKNOW",
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.007603,
-							["damage_from"] = {
-								["Scarlet Sentry"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["aID"] = "4465-02E963B0",
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.007603,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1653920093,
-							["friendlyfire_total"] = 0,
-							["damage_taken"] = 375.007603,
-							["nome"] = "Kamides",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["on_hold"] = false,
-							["start_time"] = 1653920093,
-							["serial"] = "Player-4465-02E963B0",
-							["total"] = 0.007603,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 46,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 46,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 46,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Kamides",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02E963B0",
-							["buff_uptime"] = 13,
-							["tipo"] = 4,
-							["last_event"] = 1653920093,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[20218] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 20218,
-										["uptime"] = 13,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E963B0",
-							["classe"] = "PALADIN",
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["buff_uptime"] = 21,
 							["nome"] = "Moolatz",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
+							["last_event"] = 1653936045,
 							["pets"] = {
 							},
-							["aID"] = "4465-02B843FA",
-							["spell_cast"] = {
-								[768] = 1,
-								[1850] = 1,
-							},
-							["last_event"] = 1653920093,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 768,
-										["uptime"] = 13,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[1850] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 1850,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02B843FA",
 							["classe"] = "DRUID",
-						}, -- [2]
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 109,
 					["tipo"] = 2,
-					["combatId"] = 46,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Glurvas"] = true,
 					["Moolatz"] = true,
-					["Whiteye"] = true,
-					["Kamides"] = true,
-					["Axxos"] = true,
 				},
-				["CombatStartedAt"] = 1648487.268,
-				["tempo_start"] = 1653920080,
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 1664410.318,
+				["tempo_start"] = 1653936029,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["enemy"] = "Scarlet Sentry",
-				["combat_counter"] = 9174,
-				["raid_roster_indexed"] = {
-					"Glurvas", -- [1]
-					"Kamides", -- [2]
-					"Whiteye", -- [3]
-					"Moolatz", -- [4]
-					"Axxos", -- [5]
-				},
+				["combat_counter"] = 9240,
+				["playing_solo"] = true,
 				["totals"] = {
-					375, -- [1]
+					2062, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_timeline"] = {
-				},
-				["frags_need_refresh"] = false,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "16:14:41",
-				["end_time"] = 1648474.752,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["instance_type"] = "none",
 				["totals_grupo"] = {
-					0, -- [1]
+					1452, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Kamides"] = 0.007603,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["hasSaved"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "16:14:54",
-				["frags"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_id"] = 46,
-				["start_time"] = 1648461.75,
-				["TimeData"] = {
-				},
-				["contra"] = "Scarlet Sentry",
-			}, -- [6]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 43,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.005808,
-							["damage_from"] = {
-								["Scarlet Centurion"] = true,
-								["Scarlet Sorcerer"] = true,
-								["Scarlet Myrmidon"] = true,
-								["Scarlet Defender"] = true,
-								["Scarlet Abbot"] = true,
-								["Scarlet Monk"] = true,
-								["Scarlet Wizard"] = true,
-								["Scarlet Champion"] = true,
-								["Scarlet Commander Mograine"] = true,
-							},
-							["targets"] = {
-								["Scarlet Chaplain"] = 55,
-								["Scarlet Centurion"] = 2654,
-								["Scarlet Sorcerer"] = 718,
-								["Scarlet Myrmidon"] = 2373,
-								["Scarlet Defender"] = 1039,
-								["Scarlet Abbot"] = 465,
-								["Scarlet Champion"] = 2084,
-								["Scarlet Monk"] = 1293,
-								["Scarlet Wizard"] = 395,
-								["Scarlet Commander Mograine"] = 89,
-							},
-							["delay"] = 1653918734,
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4465-02BCE74D",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 11165.005808,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1653918776,
-							["damage_taken"] = 5389.005808,
-							["on_hold"] = false,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 55,
-										["targets"] = {
-											["Scarlet Chaplain"] = 55,
-										},
-										["n_dmg"] = 55,
-										["n_min"] = 55,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 55,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[7321] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Monk"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Myrmidon"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 7321,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 8,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-									[27087] = {
-										["c_amt"] = 6,
-										["b_amt"] = 0,
-										["c_dmg"] = 2600,
-										["g_amt"] = 0,
-										["n_max"] = 217,
-										["targets"] = {
-											["Scarlet Centurion"] = 2384,
-											["Scarlet Champion"] = 1948,
-											["Scarlet Sorcerer"] = 433,
-											["Scarlet Myrmidon"] = 1300,
-											["Scarlet Monk"] = 867,
-											["Scarlet Wizard"] = 216,
-											["Scarlet Defender"] = 390,
-											["Scarlet Abbot"] = 217,
-										},
-										["n_dmg"] = 5155,
-										["n_min"] = 195,
-										["g_dmg"] = 0,
-										["counter"] = 31,
-										["total"] = 7755,
-										["c_max"] = 434,
-										["id"] = 27087,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 24,
-										["a_amt"] = 0,
-										["c_min"] = 433,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-									[27088] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 314,
-										["g_amt"] = 0,
-										["n_max"] = 164,
-										["targets"] = {
-											["Scarlet Champion"] = 0,
-											["Scarlet Defender"] = 297,
-											["Scarlet Myrmidon"] = 478,
-										},
-										["n_dmg"] = 461,
-										["n_min"] = 146,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 775,
-										["c_max"] = 314,
-										["id"] = 27088,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["c_min"] = 314,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-									[1449] = {
-										["c_amt"] = 10,
-										["b_amt"] = 0,
-										["c_dmg"] = 827,
-										["g_amt"] = 0,
-										["n_max"] = 97,
-										["targets"] = {
-											["Scarlet Centurion"] = 270,
-											["Scarlet Sorcerer"] = 285,
-											["Scarlet Myrmidon"] = 595,
-											["Scarlet Defender"] = 352,
-											["Scarlet Abbot"] = 248,
-											["Scarlet Wizard"] = 179,
-											["Scarlet Monk"] = 426,
-											["Scarlet Champion"] = 136,
-											["Scarlet Commander Mograine"] = 89,
-										},
-										["n_dmg"] = 1753,
-										["n_min"] = 40,
-										["g_dmg"] = 0,
-										["counter"] = 59,
-										["total"] = 2580,
-										["c_max"] = 144,
-										["r_amt"] = 0,
-										["EVADE"] = 11,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 35,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 65,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["RESIST"] = 3,
-										["spellschool"] = 64,
-										["id"] = 1449,
-									},
-									[42198] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Chaplain"] = 0,
-											["Scarlet Centurion"] = 0,
-											["Scarlet Sorcerer"] = 0,
-											["Scarlet Myrmidon"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Abbot"] = 0,
-											["Scarlet Monk"] = 0,
-											["Scarlet Wizard"] = 0,
-											["Scarlet Champion"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 57,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 42198,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 57,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 32.08215155180658,
-							["total"] = 11165.005808,
-							["colocacao"] = 1,
-							["last_event"] = 1653918734,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653918580,
-							["serial"] = "Player-4465-02BCE74D",
-							["classe"] = "MAGE",
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.007883,
-							["damage_from"] = {
-								["Scarlet Wizard"] = true,
-							},
-							["targets"] = {
-								["Scarlet Chaplain"] = 14,
-							},
-							["delay"] = 1653918737,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4465-02E08F27",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 14.007883,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1653918776,
-							["damage_taken"] = 122.007883,
-							["on_hold"] = false,
-							["nome"] = "Queliarel",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Chaplain"] = 14,
-											["Scarlet Wizard"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 14,
-										["counter"] = 2,
-										["total"] = 14,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									}, -- [1]
-									[865] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Centurion"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 865,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-									[42210] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Chaplain"] = 0,
-											["Scarlet Champion"] = 0,
-											["Scarlet Centurion"] = 0,
-											["Scarlet Myrmidon"] = 0,
-											["Scarlet Monk"] = 0,
-											["Scarlet Wizard"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Abbot"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 48,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 42210,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 48,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 0.04025103372574753,
-							["total"] = 14.007883,
-							["colocacao"] = 2,
-							["last_event"] = 1653918737,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653918775,
-							["serial"] = "Player-4465-02E08F27",
-							["classe"] = "MAGE",
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 1321.007204,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 1746,
-							},
-							["delay"] = 1653918706,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4294",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1746.007204,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1653918776,
-							["damage_taken"] = 718.007204,
-							["total"] = 1746.007204,
-							["nome"] = "Scarlet Sorcerer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 40,
-										["targets"] = {
-											["Kawakii"] = 40,
-										},
-										["n_dmg"] = 40,
-										["n_min"] = 40,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 40,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[9672] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 114,
-										["targets"] = {
-											["Kawakii"] = 1706,
-										},
-										["n_dmg"] = 1706,
-										["n_min"] = 43,
-										["g_dmg"] = 0,
-										["counter"] = 32,
-										["total"] = 1706,
-										["c_max"] = 0,
-										["id"] = 9672,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 26,
-										["c_min"] = 0,
-										["successful_casted"] = 8,
-										["a_amt"] = 0,
-										["RESIST"] = 6,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[6146] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Kawakii"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 6146,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1653918706,
-							["on_hold"] = false,
-							["start_time"] = 1653918694,
-							["serial"] = "Creature-0-4457-189-19400-4294-000014CA9D",
-							["classe"] = "UNKNOW",
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 496.003803,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 812,
-							},
-							["delay"] = 1653918566,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4302",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 812.0038030000001,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1653918776,
-							["damage_taken"] = 2084.003803,
-							["total"] = 812.0038030000001,
-							["nome"] = "Scarlet Champion",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 102,
-										["targets"] = {
-											["Kawakii"] = 199,
-										},
-										["n_dmg"] = 199,
-										["n_min"] = 97,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 199,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 2,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									}, -- [1]
-									[17143] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 316,
-										["targets"] = {
-											["Kawakii"] = 613,
-										},
-										["n_dmg"] = 613,
-										["n_min"] = 297,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 613,
-										["c_max"] = 0,
-										["id"] = 17143,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1653918566,
-							["on_hold"] = false,
-							["start_time"] = 1653918768,
-							["serial"] = "Creature-0-4457-189-19400-4302-000214CA9C",
-							["classe"] = "UNKNOW",
-						}, -- [4]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 527.002692,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 765,
-							},
-							["delay"] = 1653918520,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4295",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 765.002692,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1653918776,
-							["damage_taken"] = 2373.002692,
-							["total"] = 765.002692,
-							["nome"] = "Scarlet Myrmidon",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 81,
-										["targets"] = {
-											["Kawakii"] = 765,
-										},
-										["n_dmg"] = 765,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 19,
-										["total"] = 765,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["n_amt"] = 14,
-										["MISS"] = 4,
-										["DODGE"] = 1,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1653918520,
-							["on_hold"] = false,
-							["start_time"] = 1653918765,
-							["serial"] = "Creature-0-4457-189-19400-4295-000194CA9D",
-							["classe"] = "UNKNOW",
-						}, -- [5]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 281.004113,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 697,
-							},
-							["delay"] = 1653918726,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4540",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 697.004113,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1653918776,
-							["damage_taken"] = 1293.004113,
-							["total"] = 697.004113,
-							["nome"] = "Scarlet Monk",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 100,
-										["targets"] = {
-											["Kawakii"] = 681,
-										},
-										["n_dmg"] = 681,
-										["n_min"] = 46,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 681,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-											["extra_attack"] = 7,
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 8,
-										["spellschool"] = 1,
-										["MISS"] = 3,
-									}, -- [1]
-									[3391] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3391,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 11,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[11978] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Kawakii"] = 16,
-										},
-										["n_dmg"] = 16,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 11978,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1653918726,
-							["on_hold"] = false,
-							["start_time"] = 1653918772,
-							["serial"] = "Creature-0-4457-189-19400-4540-000994CA9C",
-							["classe"] = "UNKNOW",
-						}, -- [6]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 287.003899,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 560,
-							},
-							["delay"] = 1653918520,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4301",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 560.003899,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1653918776,
-							["damage_taken"] = 2654.003899,
-							["total"] = 560.003899,
-							["nome"] = "Scarlet Centurion",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 146,
-										["targets"] = {
-											["Kawakii"] = 560,
-										},
-										["n_dmg"] = 560,
-										["n_min"] = 136,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 560,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 4,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									}, -- [1]
-									[31403] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 31403,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 17,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1653918520,
-							["on_hold"] = false,
-							["start_time"] = 1653918771,
-							["serial"] = "Creature-0-4457-189-19400-4301-000114CA9B",
-							["classe"] = "UNKNOW",
-						}, -- [7]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 289.005822,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 480,
-							},
-							["delay"] = 1653918575,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4298",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 480.005822,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1653918776,
-							["damage_taken"] = 1039.005822,
-							["total"] = 480.005822,
-							["nome"] = "Scarlet Defender",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 76,
-										["targets"] = {
-											["Kawakii"] = 427,
-										},
-										["n_dmg"] = 427,
-										["n_min"] = 48,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 427,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 7,
-										["spellschool"] = 1,
-										["MISS"] = 2,
-									}, -- [1]
-									[11972] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Kawakii"] = 53,
-										},
-										["n_dmg"] = 53,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 53,
-										["c_max"] = 0,
-										["id"] = 11972,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["extra"] = {
-										},
-										["DODGE"] = 1,
-									},
-									[7164] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 7164,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 3,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[3639] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3639,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 11,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1653918575,
-							["on_hold"] = false,
-							["start_time"] = 1653918754,
-							["serial"] = "Creature-0-4457-189-19400-4298-000294CA9C",
-							["classe"] = "UNKNOW",
-						}, -- [8]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 122.001723,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Queliarel"] = 122,
-								["Kawakii"] = 173,
-							},
-							["delay"] = 1653918734,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4300",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 295.001723,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1653918776,
-							["damage_taken"] = 395.001723,
-							["total"] = 295.001723,
-							["nome"] = "Scarlet Wizard",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 78,
-										["targets"] = {
-											["Kawakii"] = 151,
-										},
-										["n_dmg"] = 151,
-										["n_min"] = 73,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 151,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[2601] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 2601,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 4,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[3054] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Queliarel"] = 122,
-											["Kawakii"] = 22,
-										},
-										["n_dmg"] = 144,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 144,
-										["c_max"] = 0,
-										["id"] = 3054,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["extra"] = {
-										},
-										["spellschool"] = 4,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1653918734,
-							["on_hold"] = false,
-							["start_time"] = 1653918771,
-							["serial"] = "Creature-0-4457-189-19400-4300-000214CA9C",
-							["classe"] = "UNKNOW",
-						}, -- [9]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.007184,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 56,
-								["Water Elemental <Kawakii>"] = 46,
-							},
-							["delay"] = 1653918615,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "3976",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 102.007184,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1653918776,
-							["damage_taken"] = 89.007184,
-							["total"] = 102.007184,
-							["nome"] = "Scarlet Commander Mograine",
-							["spells"] = {
-								["_ActorTable"] = {
-									[14518] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 56,
-										["targets"] = {
-											["Kawakii"] = 56,
-											["Water Elemental <Kawakii>"] = 46,
-										},
-										["n_dmg"] = 102,
-										["n_min"] = 46,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 102,
-										["c_max"] = 0,
-										["id"] = 14518,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1653918615,
-							["on_hold"] = false,
-							["start_time"] = 1653918775,
-							["serial"] = "Creature-0-4457-189-19400-3976-000014CA9B",
-							["classe"] = "UNKNOW",
-						}, -- [10]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.006061,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 100,
-							},
-							["delay"] = 1653918520,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4303",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 100.006061,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1653918776,
-							["damage_taken"] = 465.006061,
-							["total"] = 100.006061,
-							["nome"] = "Scarlet Abbot",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 100,
-										["targets"] = {
-											["Kawakii"] = 100,
-										},
-										["n_dmg"] = 100,
-										["n_min"] = 100,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 100,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1653918520,
-							["on_hold"] = false,
-							["start_time"] = 1653918775,
-							["serial"] = "Creature-0-4457-189-19400-4303-000094CA9B",
-							["classe"] = "UNKNOW",
-						}, -- [11]
-						{
-							["flag_original"] = 2600,
-							["totalabsorbed"] = 0.005485,
-							["damage_from"] = {
-								["Queliarel"] = true,
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["aID"] = "4299",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.005485,
-							["delay"] = 0,
-							["fight_component"] = true,
-							["total"] = 0.005485,
-							["end_time"] = 1653918776,
-							["damage_taken"] = 69.005485,
-							["nome"] = "Scarlet Chaplain",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["last_dps"] = 0,
-							["dps_started"] = false,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653918776,
-							["serial"] = "Creature-0-4457-189-19400-4299-000714CA9C",
-							["classe"] = "UNKNOW",
-						}, -- [12]
-						{
-							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.004511,
-							["damage_from"] = {
-								["Scarlet Commander Mograine"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.004511,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1653918776,
-							["total"] = 0.004511,
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 46.004511,
-							["aID"] = "510",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653918776,
-							["serial"] = "Creature-0-4457-189-19400-510-000014CB72",
-							["on_hold"] = false,
-						}, -- [13]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 43,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Kawakii"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.006981,
-							["total_without_pet"] = 18481.006981,
-							["total"] = 18481.006981,
-							["targets_absorbs"] = {
-								["Kawakii"] = 11090,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BCE74D",
-							["totalabsorb"] = 11090.006981,
-							["last_hps"] = 53.10435811592705,
-							["targets"] = {
-								["Kawakii"] = 18481,
-							},
-							["totalover_without_pet"] = 0.006981,
-							["healing_taken"] = 18481.006981,
-							["fight_component"] = true,
-							["end_time"] = 1653918776,
-							["last_event"] = 1653918744,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[33405] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 10836,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 297,
-										["targets"] = {
-											["Kawakii"] = 10836,
-										},
-										["n_min"] = 1,
-										["counter"] = 138,
-										["overheal"] = 0,
-										["total"] = 10836,
-										["c_max"] = 0,
-										["id"] = 33405,
-										["targets_absorbs"] = {
-											["Kawakii"] = 10836,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 10836,
-										["totaldenied"] = 0,
-										["n_amt"] = 138,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[32796] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 254,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 57,
-										["targets"] = {
-											["Kawakii"] = 254,
-										},
-										["n_min"] = 45,
-										["counter"] = 5,
-										["overheal"] = 0,
-										["total"] = 254,
-										["c_max"] = 0,
-										["id"] = 32796,
-										["targets_absorbs"] = {
-											["Kawakii"] = 254,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 254,
-										["totaldenied"] = 0,
-										["n_amt"] = 5,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[28495] = {
-										["c_amt"] = 1,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 2048,
-										["targets"] = {
-											["Kawakii"] = 4841,
-										},
-										["n_min"] = 2048,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 4841,
-										["c_max"] = 2793,
-										["id"] = 28495,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 2793,
-										["c_curado"] = 2793,
-										["n_amt"] = 1,
-										["n_curado"] = 2048,
-										["totaldenied"] = 0,
-										["absorbed"] = 0,
-									},
-									[27031] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 425,
-										["targets"] = {
-											["Kawakii"] = 2550,
-										},
-										["n_min"] = 425,
-										["counter"] = 6,
-										["overheal"] = 0,
-										["total"] = 2550,
-										["c_max"] = 0,
-										["id"] = 27031,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_amt"] = 6,
-										["n_curado"] = 2550,
-										["totaldenied"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02BCE74D",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.006981,
-							["start_time"] = 1653918595,
-							["delay"] = 1653918744,
-							["classe"] = "MAGE",
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Queliarel"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.002839,
-							["total_without_pet"] = 122.002839,
-							["total"] = 122.002839,
-							["targets_absorbs"] = {
-								["Queliarel"] = 122,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 2,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02E08F27",
-							["totalabsorb"] = 122.002839,
-							["last_hps"] = 0.3505697746922891,
-							["targets"] = {
-								["Queliarel"] = 122,
-							},
-							["totalover_without_pet"] = 0.002839,
-							["healing_taken"] = 122.002839,
-							["fight_component"] = true,
-							["end_time"] = 1653918776,
-							["last_event"] = 1653918734,
-							["nome"] = "Queliarel",
-							["spells"] = {
-								["_ActorTable"] = {
-									[8495] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 122,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 31,
-										["targets"] = {
-											["Queliarel"] = 122,
-										},
-										["n_min"] = 30,
-										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 122,
-										["c_max"] = 0,
-										["id"] = 8495,
-										["targets_absorbs"] = {
-											["Queliarel"] = 122,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 122,
-										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02E08F27",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.002839,
-							["start_time"] = 1653918774,
-							["delay"] = 1653918734,
-							["classe"] = "MAGE",
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 43,
-					["_ActorTable"] = {
-						{
-							["received"] = 43883.004894,
-							["resource"] = 0.004894,
-							["targets"] = {
-								["Kawakii"] = 43883,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.004894,
-							["fight_component"] = true,
-							["total"] = 43883.004894,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[29442] = {
-										["total"] = 43883,
-										["id"] = 29442,
-										["totalover"] = 16870,
-										["targets"] = {
-											["Kawakii"] = 43883,
-										},
-										["counter"] = 111,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 16870.004894,
-							["alternatepower"] = 0.004894,
-							["last_event"] = 1653918740,
-							["tipo"] = 3,
-							["aID"] = "4465-02BCE74D",
-							["serial"] = "Player-4465-02BCE74D",
-							["flag_original"] = 1298,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 43,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[41425] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 41425,
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[11196] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 11196,
-										["uptime"] = 60,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[27087] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 27087,
-										["uptime"] = 11,
-										["targets"] = {
-										},
-										["appliedamt"] = 30,
-									},
-									[27088] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 27088,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 4,
-									},
-									[7321] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 9,
-										["refreshamt"] = 11,
-										["id"] = 7321,
-										["uptime"] = 281,
-										["targets"] = {
-										},
-										["appliedamt"] = 29,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["tipo"] = 4,
-							["cooldowns_defensive"] = 1.007218,
-							["buff_uptime"] = 813,
-							["last_cooldown"] = {
-								1653918567.213, -- [1]
-								45438, -- [2]
-							},
-							["cc_done_spells"] = {
-								["_ActorTable"] = {
-									[27088] = {
-										["id"] = 27088,
-										["targets"] = {
-											["Scarlet Defender"] = 2,
-											["Scarlet Myrmidon"] = 2,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["aID"] = "4465-02BCE74D",
-							["cooldowns_defensive_targets"] = {
-								["Kawakii"] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[33944] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 33944,
-										["uptime"] = 242,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[27124] = {
-										["activedamt"] = 1,
-										["id"] = 27124,
-										["targets"] = {
-										},
-										["actived_at"] = 1653918427,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									[27031] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 27031,
-										["uptime"] = 6,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[37444] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 12,
-										["refreshamt"] = 48,
-										["id"] = 37444,
-										["uptime"] = 90,
-										["targets"] = {
-										},
-										["appliedamt"] = 12,
-									},
-									[45438] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 45438,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[1953] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 7,
-										["refreshamt"] = 0,
-										["id"] = 1953,
-										["uptime"] = 7,
-										["targets"] = {
-										},
-										["appliedamt"] = 7,
-									},
-									[27126] = {
-										["activedamt"] = 1,
-										["id"] = 27126,
-										["targets"] = {
-										},
-										["actived_at"] = 1653918427,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									[27085] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 28,
-										["refreshamt"] = 0,
-										["id"] = 27085,
-										["uptime"] = 100,
-										["targets"] = {
-										},
-										["appliedamt"] = 28,
-									},
-									[33405] = {
-										["activedamt"] = 9,
-										["id"] = 33405,
-										["targets"] = {
-										},
-										["actived_at"] = 1653918723,
-										["uptime"] = 209,
-										["counter"] = 0,
-										["refreshamt"] = 1,
-										["actived"] = true,
-										["appliedamt"] = 9,
-									},
-									[12536] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 6,
-										["refreshamt"] = 0,
-										["id"] = 12536,
-										["uptime"] = 31,
-										["targets"] = {
-										},
-										["appliedamt"] = 6,
-									},
-									[32796] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 3,
-										["refreshamt"] = 0,
-										["id"] = 32796,
-										["uptime"] = 90,
-										["targets"] = {
-										},
-										["appliedamt"] = 3,
-									},
-									[35084] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 3,
-										["refreshamt"] = 0,
-										["id"] = 35084,
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["appliedamt"] = 3,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 390,
-							["serial"] = "Player-4465-02BCE74D",
-							["cc_done"] = 4.006317,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["cc_done_targets"] = {
-								["Scarlet Defender"] = 2,
-								["Scarlet Myrmidon"] = 2,
-							},
-							["classe"] = "MAGE",
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["last_event"] = 1653918751,
-							["nome"] = "Kawakii",
-							["debuff_uptime_targets"] = {
-							},
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[45438] = {
-										["id"] = 45438,
-										["targets"] = {
-											["Kawakii"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["spell_cast"] = {
-								[33405] = 9,
-								[1449] = 18,
-								[27087] = 3,
-								[27031] = 1,
-								[30455] = 4,
-								[11958] = 1,
-								[27088] = 5,
-								[1953] = 7,
-								[32796] = 3,
-								[27085] = 28,
-								[45438] = 1,
-								[31687] = 1,
-								[27082] = 11,
-								[28495] = 2,
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Kaftunik",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02E9A18A",
-							["buff_uptime"] = 0,
-							["tipo"] = 4,
-							["last_event"] = 1653918427,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
-										["actived_at"] = 1653918427,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E9A18A",
-							["classe"] = "DRUID",
-						}, -- [2]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Moolatz",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02B843FA",
-							["buff_uptime"] = 0,
-							["tipo"] = 4,
-							["last_event"] = 1653918427,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
-										["actived_at"] = 1653918427,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["classe"] = "DRUID",
-						}, -- [3]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Defender",
-							["aID"] = "4298",
-							["spell_cast"] = {
-								[11972] = 2,
-								[7164] = 3,
-								[3639] = 11,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4457-189-19400-4298-000094CA9C",
-							["flag_original"] = 2632,
-						}, -- [4]
-						{
-							["flag_original"] = 1298,
-							["buff_uptime"] = 290,
-							["fight_component"] = true,
-							["nome"] = "Queliarel",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[8427] = 4,
-								[8407] = 3,
-								[865] = 1,
-								[8495] = 6,
-								[1953] = 1,
-								[8412] = 1,
-								[2139] = 1,
-							},
-							["last_event"] = 1653918774,
-							["aID"] = "4465-02E08F27",
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8427] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 4,
-										["refreshamt"] = 0,
-										["id"] = 8427,
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["appliedamt"] = 4,
-									},
-									[8495] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 3,
-										["refreshamt"] = 3,
-										["id"] = 8495,
-										["uptime"] = 259,
-										["targets"] = {
-										},
-										["appliedamt"] = 3,
-									},
-									[1953] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 1953,
-										["uptime"] = 1,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E08F27",
-							["classe"] = "MAGE",
-						}, -- [5]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Sorcerer",
-							["aID"] = "4294",
-							["spell_cast"] = {
-								[9672] = 8,
-								[6146] = 1,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4457-189-19400-4294-000014CA9D",
-							["flag_original"] = 2632,
-						}, -- [6]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Wizard",
-							["aID"] = "4300",
-							["spell_cast"] = {
-								[2601] = 4,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4457-189-19400-4300-000214CA9C",
-							["flag_original"] = 2632,
-						}, -- [7]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Centurion",
-							["aID"] = "4301",
-							["spell_cast"] = {
-								[31403] = 17,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4457-189-19400-4301-000114CA9B",
-							["flag_original"] = 2632,
-						}, -- [8]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["aID"] = "4540",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[11978] = {
-										["id"] = 11978,
-										["counter"] = 1,
-										["targets"] = {
-											["Kawakii"] = 1,
-										},
-										["interrompeu_oque"] = {
-											[27085] = 1,
-										},
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[27085] = 1,
-							},
-							["monster"] = true,
-							["nome"] = "Scarlet Monk",
-							["interrupt_targets"] = {
-								["Kawakii"] = 1,
-							},
-							["spell_cast"] = {
-								[3391] = 11,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["interrupt"] = 1.001181,
-							["serial"] = "Creature-0-4457-189-19400-4540-000994CA9C",
-							["last_event"] = 1653918726,
-						}, -- [9]
-						{
-							["flag_original"] = 4370,
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["aID"] = "510",
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4457-189-19400-510-000014CB72",
-							["spell_cast"] = {
-								[31707] = 13,
-								[33395] = 1,
-							},
-						}, -- [10]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 43,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vaelyah"] = true,
-					["Kawakii"] = true,
-					["Kaftunik"] = true,
-					["Queliarel"] = true,
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Queliarel", -- [1]
-					"Kaftunik", -- [2]
-					"Vaelyah", -- [3]
-					"Kawakii", -- [4]
-					"Moolatz", -- [5]
-				},
-				["tempo_start"] = 1653918427,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Scarlet Defender",
-				["combat_counter"] = 9171,
-				["totals"] = {
-					16736, -- [1]
-					18602.990728, -- [2]
-					{
-						0, -- [1]
-						[0] = 43883,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["totals_grupo"] = {
-					11179, -- [1]
-					18603, -- [2]
-					{
-						0, -- [1]
-						[0] = 43883,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
 						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = false,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "15:47:08",
-				["end_time"] = 1647156.478,
-				["spells_cast_timeline"] = {
-				},
-				["instance_type"] = "none",
-				["TimeData"] = {
-				},
-				["cleu_timeline"] = {
-				},
-				["hasSaved"] = true,
-				["frags"] = {
-				},
-				["data_fim"] = "15:52:56",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Queliarel"] = 14.007883,
-							["Kawakii"] = 11165.005808,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Queliarel"] = 122.002839,
-							["Kawakii"] = 18481.006981,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["start_time"] = 1646808.465,
-				["contra"] = "Scarlet Defender",
-				["combat_id"] = 43,
-			}, -- [7]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 41,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.001785,
-							["damage_from"] = {
-								["Scarlet Soldier"] = true,
-								["Scarlet Evoker"] = true,
-								["Scarlet Defender"] = true,
-								["Scarlet Conjuror"] = true,
-							},
-							["targets"] = {
-								["Scarlet Conjuror"] = 94,
-								["Scarlet Evoker"] = 91,
-								["Scarlet Soldier"] = 1132,
-								["Fire Elemental"] = 95,
-							},
-							["delay"] = 1653918293,
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4465-02BCE74D",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1412.001785,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1653918328,
-							["damage_taken"] = 621.0017849999999,
-							["on_hold"] = false,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[1449] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 283,
-										["g_amt"] = 0,
-										["n_max"] = 98,
-										["targets"] = {
-											["Scarlet Soldier"] = 1132,
-											["Scarlet Protector"] = 0,
-											["Scarlet Conjuror"] = 94,
-											["Scarlet Guardsman"] = 0,
-											["Fire Elemental"] = 95,
-											["Scarlet Evoker"] = 91,
-										},
-										["n_dmg"] = 1129,
-										["n_min"] = 90,
-										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 1412,
-										["c_max"] = 143,
-										["id"] = 1449,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 12,
-										["a_amt"] = 0,
-										["c_min"] = 140,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 64,
-									},
-									[42198] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Soldier"] = 0,
-											["Scarlet Protector"] = 0,
-											["Scarlet Myrmidon"] = 0,
-											["Scarlet Guardsman"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Evoker"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 18,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 42198,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 18,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-									[27088] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Evoker"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 27088,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-									[27086] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Fire Elemental"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 27086,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 4,
-										["IMMUNE"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 8.695020598305733,
-							["total"] = 1412.001785,
-							["colocacao"] = 1,
-							["last_event"] = 1653918293,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653918284,
-							["serial"] = "Player-4465-02BCE74D",
-							["classe"] = "MAGE",
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.002077,
-							["damage_from"] = {
-								["Scarlet Evoker"] = true,
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4465-02E08F27",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.002077,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1653918328,
-							["damage_taken"] = 161.002077,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Queliarel",
-							["spells"] = {
-								["_ActorTable"] = {
-									[42210] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Soldier"] = 0,
-											["Scarlet Protector"] = 0,
-											["Fire Elemental"] = 0,
-											["Scarlet Guardsman"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Myrmidon"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 42210,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 10,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 1.604592053521115e-05,
-							["total"] = 0.002077,
-							["colocacao"] = 2,
-							["last_event"] = 1653918263,
-							["on_hold"] = false,
-							["start_time"] = 1653918328,
-							["serial"] = "Player-4465-02E08F27",
-							["classe"] = "MAGE",
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 161.004756,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Queliarel"] = 161,
-								["Kawakii"] = 234,
-							},
-							["delay"] = 1653918294,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4289",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 395.004756,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1653918328,
-							["damage_taken"] = 91.004756,
-							["total"] = 395.004756,
-							["nome"] = "Scarlet Evoker",
-							["spells"] = {
-								["_ActorTable"] = {
-									[2601] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 2601,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 3,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[8422] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 161,
-										["targets"] = {
-											["Queliarel"] = 161,
-										},
-										["n_dmg"] = 161,
-										["n_min"] = 161,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 161,
-										["c_max"] = 0,
-										["id"] = 8422,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 4,
-									},
-									[9053] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 72,
-										["targets"] = {
-											["Kawakii"] = 234,
-										},
-										["n_dmg"] = 234,
-										["n_min"] = 42,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 234,
-										["c_max"] = 0,
-										["id"] = 9053,
-										["r_dmg"] = 90,
-										["r_amt"] = 2,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["c_min"] = 0,
-										["successful_casted"] = 5,
-										["a_amt"] = 0,
-										["RESIST"] = 5,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1653918294,
-							["on_hold"] = false,
-							["start_time"] = 1653918318,
-							["serial"] = "Creature-0-4469-189-3297-4289-000014C7C3",
-							["classe"] = "UNKNOW",
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 312.005061,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 312,
-							},
-							["delay"] = 1653918198,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4286",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 312.005061,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1653918328,
-							["damage_taken"] = 1132.005061,
-							["total"] = 312.005061,
-							["nome"] = "Scarlet Soldier",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 56,
-										["targets"] = {
-											["Kawakii"] = 312,
-										},
-										["n_dmg"] = 312,
-										["n_min"] = 47,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 312,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["n_amt"] = 6,
-										["DODGE"] = 1,
-										["MISS"] = 2,
-									}, -- [1]
-									[3639] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3639,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 15,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1653918198,
-							["on_hold"] = false,
-							["start_time"] = 1653918316,
-							["serial"] = "Creature-0-4469-189-3297-4286-000014C7C3",
-							["classe"] = "UNKNOW",
-						}, -- [4]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.005624,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 65,
-							},
-							["delay"] = 1653918240,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4297",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 65.005624,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1653918328,
-							["damage_taken"] = 94.005624,
-							["total"] = 65.005624,
-							["nome"] = "Scarlet Conjuror",
-							["spells"] = {
-								["_ActorTable"] = {
-									[9053] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 65,
-										["targets"] = {
-											["Kawakii"] = 65,
-										},
-										["n_dmg"] = 65,
-										["n_min"] = 65,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 65,
-										["c_max"] = 0,
-										["id"] = 9053,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["RESIST"] = 2,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1653918240,
-							["on_hold"] = false,
-							["start_time"] = 1653918327,
-							["serial"] = "Creature-0-4469-189-3297-4297-000014C7C2",
-							["classe"] = "UNKNOW",
-						}, -- [5]
-						{
-							["flag_original"] = 2600,
-							["totalabsorbed"] = 0.001406,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Kawakii"] = 10,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["aID"] = "4298",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 10.001406,
-							["delay"] = 1653918165,
-							["fight_component"] = true,
-							["end_time"] = 1653918328,
-							["total"] = 10.001406,
-							["damage_taken"] = 0.001406,
-							["nome"] = "Scarlet Defender",
-							["spells"] = {
-								["_ActorTable"] = {
-									[11972] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Kawakii"] = 10,
-										},
-										["n_dmg"] = 10,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 10,
-										["c_max"] = 0,
-										["id"] = 11972,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-									[3639] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3639,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 18,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 0,
-							["dps_started"] = false,
-							["custom"] = 0,
-							["last_event"] = 1653918165,
-							["on_hold"] = false,
-							["start_time"] = 1653918327,
-							["serial"] = "Creature-0-4469-189-3297-4298-000214C7C3",
-							["classe"] = "UNKNOW",
-						}, -- [6]
-						{
-							["flag_original"] = 4680,
-							["totalabsorbed"] = 0.00637,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["aID"] = "575",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.00637,
-							["delay"] = 0,
-							["fight_component"] = true,
-							["total"] = 0.00637,
-							["end_time"] = 1653918328,
-							["damage_taken"] = 95.00637,
-							["nome"] = "Fire Elemental",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["last_dps"] = 0,
-							["dps_started"] = false,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653918328,
-							["serial"] = "Creature-0-4469-189-3297-575-000014C802",
-							["classe"] = "PET",
-						}, -- [7]
-						{
-							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.002176,
-							["damage_from"] = {
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.002176,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1653918328,
-							["total"] = 0.002176,
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[33395] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Soldier"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 33395,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 0.002176,
-							["aID"] = "510",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653918239,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653918328,
-							["serial"] = "Creature-0-4469-189-3297-510-000014CA17",
-							["on_hold"] = false,
-						}, -- [8]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 41,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Kawakii"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.003761,
-							["total_without_pet"] = 2744.003761,
-							["total"] = 2744.003761,
-							["targets_absorbs"] = {
-								["Kawakii"] = 2744,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BCE74D",
-							["totalabsorb"] = 2744.003761,
-							["last_hps"] = 21.198876406994,
-							["targets"] = {
-								["Kawakii"] = 2744,
-							},
-							["totalover_without_pet"] = 0.003761,
-							["healing_taken"] = 2744.003761,
-							["fight_component"] = true,
-							["end_time"] = 1653918328,
-							["last_event"] = 1653918227,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[33405] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 2744,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 120,
-										["targets"] = {
-											["Kawakii"] = 2744,
-										},
-										["n_min"] = 22,
-										["counter"] = 43,
-										["overheal"] = 0,
-										["total"] = 2744,
-										["c_max"] = 0,
-										["id"] = 33405,
-										["targets_absorbs"] = {
-											["Kawakii"] = 2744,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 2744,
-										["totaldenied"] = 0,
-										["n_amt"] = 43,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02BCE74D",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.003761,
-							["start_time"] = 1653918305,
-							["delay"] = 1653918227,
-							["classe"] = "MAGE",
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Queliarel"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.005244,
-							["total_without_pet"] = 161.005244,
-							["total"] = 161.005244,
-							["targets_absorbs"] = {
-								["Queliarel"] = 161,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 2,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02E08F27",
-							["totalabsorb"] = 161.005244,
-							["last_hps"] = 1.243850433787329,
-							["targets"] = {
-								["Queliarel"] = 161,
-							},
-							["totalover_without_pet"] = 0.005244,
-							["healing_taken"] = 161.005244,
-							["fight_component"] = true,
-							["end_time"] = 1653918328,
-							["last_event"] = 1653918294,
-							["nome"] = "Queliarel",
-							["spells"] = {
-								["_ActorTable"] = {
-									[8495] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 161,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 161,
-										["targets"] = {
-											["Queliarel"] = 161,
-										},
-										["n_min"] = 161,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 161,
-										["c_max"] = 0,
-										["id"] = 8495,
-										["targets_absorbs"] = {
-											["Queliarel"] = 161,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 161,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02E08F27",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.005244,
-							["start_time"] = 1653918327,
-							["delay"] = 1653918294,
-							["classe"] = "MAGE",
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 41,
-					["_ActorTable"] = {
-						{
-							["received"] = 17713.003594,
-							["resource"] = 0.003594,
-							["targets"] = {
-								["Kawakii"] = 17713,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.003594,
-							["fight_component"] = true,
-							["total"] = 17713.003594,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[29442] = {
-										["total"] = 17713,
-										["id"] = 29442,
-										["totalover"] = 2537,
-										["targets"] = {
-											["Kawakii"] = 17713,
-										},
-										["counter"] = 37,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 2537.003594,
-							["alternatepower"] = 0.003594,
-							["last_event"] = 1653918296,
-							["tipo"] = 3,
-							["aID"] = "4465-02BCE74D",
-							["serial"] = "Player-4465-02BCE74D",
-							["flag_original"] = 1298,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 41,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[7321] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 7321,
-										["uptime"] = 141,
-										["targets"] = {
-										},
-										["appliedamt"] = 6,
-									},
-									[41425] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 41425,
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["cooldowns_defensive"] = 1.001412,
-							["buff_uptime"] = 297,
-							["last_cooldown"] = {
-								1653918218.757, -- [1]
-								45438, -- [2]
-							},
-							["aID"] = "4465-02BCE74D",
-							["cooldowns_defensive_targets"] = {
-								["Kawakii"] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[33944] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 33944,
-										["uptime"] = 2,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[27124] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 27124,
-										["uptime"] = 2,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[27128] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 27128,
-										["uptime"] = 57,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[2479] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 2479,
-										["uptime"] = 0,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-									[33405] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 33405,
-										["uptime"] = 60,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[45438] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 45438,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[1953] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 4,
-										["refreshamt"] = 0,
-										["id"] = 1953,
-										["uptime"] = 4,
-										["targets"] = {
-										},
-										["appliedamt"] = 4,
-									},
-									[27126] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 27126,
-										["uptime"] = 2,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[27085] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 12,
-										["refreshamt"] = 0,
-										["id"] = 27085,
-										["uptime"] = 53,
-										["targets"] = {
-										},
-										["appliedamt"] = 12,
-									},
-									[37444] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 6,
-										["refreshamt"] = 52,
-										["id"] = 37444,
-										["uptime"] = 56,
-										["targets"] = {
-										},
-										["appliedamt"] = 6,
-									},
-									[12536] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 4,
-										["refreshamt"] = 0,
-										["id"] = 12536,
-										["uptime"] = 23,
-										["targets"] = {
-										},
-										["appliedamt"] = 4,
-									},
-									[35084] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 35084,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[12472] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 12472,
-										["uptime"] = 20,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 171,
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[27086] = 2,
-								[2139] = 1,
-								[33405] = 1,
-								[1449] = 12,
-								[45438] = 1,
-								[1953] = 4,
-								[27128] = 1,
-								[12472] = 1,
-								[31687] = 1,
-								[27088] = 2,
-								[27082] = 1,
-								[27085] = 12,
-							},
-							["serial"] = "Player-4465-02BCE74D",
-							["classe"] = "MAGE",
-							["last_event"] = 1653918328,
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["nome"] = "Kawakii",
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[45438] = {
-										["id"] = 45438,
-										["targets"] = {
-											["Kawakii"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Kaftunik",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02E9A18A",
-							["buff_uptime"] = 0,
-							["tipo"] = 4,
-							["last_event"] = 1653918165,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
-										["actived_at"] = 1653918165,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E9A18A",
-							["classe"] = "DRUID",
-						}, -- [2]
-						{
-							["flag_original"] = 1047,
-							["buff_uptime"] = 124,
-							["fight_component"] = true,
-							["nome"] = "Queliarel",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[120] = 1,
-								[8427] = 3,
-								[865] = 2,
-								[8495] = 2,
-								[1953] = 4,
-							},
-							["last_event"] = 1653918321,
-							["aID"] = "4465-02E08F27",
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[1953] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 4,
-										["refreshamt"] = 0,
-										["id"] = 1953,
-										["uptime"] = 4,
-										["targets"] = {
-										},
-										["appliedamt"] = 4,
-									},
-									[8495] = {
-										["activedamt"] = 3,
-										["id"] = 8495,
-										["targets"] = {
-										},
-										["actived_at"] = 1653918281,
-										["uptime"] = 103,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 3,
-									},
-									[8427] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 3,
-										["refreshamt"] = 0,
-										["id"] = 8427,
-										["uptime"] = 17,
-										["targets"] = {
-										},
-										["appliedamt"] = 3,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E08F27",
-							["classe"] = "MAGE",
-						}, -- [3]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Moolatz",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02B843FA",
-							["buff_uptime"] = 2,
-							["tipo"] = 4,
-							["last_event"] = 1653918328,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 768,
-										["uptime"] = 2,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[2383] = {
-										["activedamt"] = 1,
-										["id"] = 2383,
-										["targets"] = {
-										},
-										["actived_at"] = 1653918326,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["classe"] = "DRUID",
-						}, -- [4]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Soldier",
-							["aID"] = "4286",
-							["spell_cast"] = {
-								[3639] = 15,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4469-189-3297-4286-000014C7C3",
-							["flag_original"] = 2632,
-						}, -- [5]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Defender",
-							["aID"] = "4298",
-							["spell_cast"] = {
-								[3639] = 18,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4469-189-3297-4298-000394C7C4",
-							["flag_original"] = 2632,
-						}, -- [6]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Conjuror",
-							["aID"] = "4297",
-							["spell_cast"] = {
-								[9053] = 2,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4469-189-3297-4297-000014C7C2",
-							["flag_original"] = 2632,
-						}, -- [7]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Evoker",
-							["aID"] = "4289",
-							["spell_cast"] = {
-								[9053] = 5,
-								[2601] = 3,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4469-189-3297-4289-000014C7C3",
-							["flag_original"] = 2632,
-						}, -- [8]
-						{
-							["flag_original"] = 4370,
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["aID"] = "510",
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4469-189-3297-510-000014CA17",
-							["spell_cast"] = {
-								[33395] = 2,
-								[31707] = 4,
-							},
-						}, -- [9]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 41,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vaelyah"] = true,
-					["Kawakii"] = true,
-					["Kaftunik"] = true,
-					["Queliarel"] = true,
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Queliarel", -- [1]
-					"Kaftunik", -- [2]
-					"Vaelyah", -- [3]
-					"Kawakii", -- [4]
-					"Moolatz", -- [5]
-				},
-				["tempo_start"] = 1653918165,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Scarlet Defender",
-				["combat_counter"] = 9169,
-				["totals"] = {
-					2193.985124, -- [1]
-					2905, -- [2]
-					{
-						0, -- [1]
-						[0] = 17713,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
 						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["totals_grupo"] = {
-					1412, -- [1]
-					2905, -- [2]
-					{
-						0, -- [1]
-						[0] = 17713,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
 						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "15:42:46",
-				["end_time"] = 1646708.646,
-				["spells_cast_timeline"] = {
-				},
 				["instance_type"] = "none",
-				["combat_id"] = 41,
-				["cleu_timeline"] = {
-				},
-				["hasSaved"] = true,
-				["frags"] = {
-					["Water Elemental"] = 1,
-				},
-				["data_fim"] = "15:45:28",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Queliarel"] = 0.002077,
-							["Kawakii"] = 1412.001785,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Queliarel"] = 161.005244,
-							["Kawakii"] = 2744.003761,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["start_time"] = 1646546.254,
-				["TimeData"] = {
-				},
+				["data_fim"] = "20:40:46",
 				["pvp"] = true,
-			}, -- [8]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 39,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.003136,
-							["damage_from"] = {
-								["Scarlet Sorcerer"] = true,
-								["Scarlet Defender"] = true,
-								["Scarlet Commander Mograine"] = true,
-							},
-							["targets"] = {
-								["Scarlet Wizard"] = 970,
-								["Scarlet Soldier"] = 584,
-							},
-							["delay"] = 1653917973,
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4465-02BCE74D",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1554.003136,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1653918032,
-							["damage_taken"] = 1366.003136,
-							["on_hold"] = false,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[27088] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Sorcerer"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 27088,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-									[27082] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 500,
-										["g_amt"] = 0,
-										["n_max"] = 584,
-										["targets"] = {
-											["Scarlet Wizard"] = 970,
-											["Scarlet Centurion"] = 0,
-											["Scarlet Soldier"] = 584,
-										},
-										["n_dmg"] = 1054,
-										["n_min"] = 470,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 1554,
-										["c_max"] = 500,
-										["id"] = 27082,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["c_min"] = 500,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 64,
-									},
-									[42198] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Chaplain"] = 0,
-											["Scarlet Champion"] = 0,
-											["Scarlet Sorcerer"] = 0,
-											["Scarlet Myrmidon"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Abbot"] = 0,
-											["Scarlet Wizard"] = 0,
-											["Scarlet Monk"] = 0,
-											["Scarlet Centurion"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 56,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 42198,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 56,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 7.69258976402374,
-							["total"] = 1554.003136,
-							["colocacao"] = 1,
-							["last_event"] = 1653918031,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653917994,
-							["serial"] = "Player-4465-02BCE74D",
-							["classe"] = "MAGE",
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.004717,
-							["damage_from"] = {
-								["Scarlet Defender"] = true,
-								["Scarlet Wizard"] = true,
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4465-02E08F27",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.004717,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1653918003,
-							["damage_taken"] = 155.004717,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Queliarel",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Chaplain"] = 0,
-											["Scarlet Centurion"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["DODGE"] = 2,
-									}, -- [1]
-									[42210] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Chaplain"] = 0,
-											["Scarlet Centurion"] = 0,
-											["Scarlet Sorcerer"] = 0,
-											["Scarlet Myrmidon"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Abbot"] = 0,
-											["Scarlet Champion"] = 0,
-											["Scarlet Wizard"] = 0,
-											["Scarlet Monk"] = 0,
-											["Scarlet Commander Mograine"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 53,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 42210,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 53,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 2.739097613379606e-05,
-							["total"] = 0.004717,
-							["colocacao"] = 2,
-							["last_event"] = 1653917966,
-							["on_hold"] = false,
-							["start_time"] = 1653918003,
-							["serial"] = "Player-4465-02E08F27",
-							["classe"] = "MAGE",
-						}, -- [2]
-						{
-							["flag_original"] = 2600,
-							["totalabsorbed"] = 776.007161,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Kawakii"] = 1282,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["aID"] = "4294",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1282.007161,
-							["delay"] = 1653917965,
-							["fight_component"] = true,
-							["end_time"] = 1653918003,
-							["total"] = 1282.007161,
-							["damage_taken"] = 0.007161,
-							["nome"] = "Scarlet Sorcerer",
-							["spells"] = {
-								["_ActorTable"] = {
-									[9672] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 115,
-										["targets"] = {
-											["Kawakii"] = 1282,
-										},
-										["n_dmg"] = 1282,
-										["n_min"] = 46,
-										["g_dmg"] = 0,
-										["counter"] = 21,
-										["total"] = 1282,
-										["c_max"] = 0,
-										["id"] = 9672,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 21,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 0,
-							["dps_started"] = false,
-							["custom"] = 0,
-							["last_event"] = 1653917965,
-							["on_hold"] = false,
-							["start_time"] = 1653917947,
-							["serial"] = "Creature-0-4469-189-3297-4294-000094C7C4",
-							["classe"] = "UNKNOW",
-						}, -- [3]
-						{
-							["flag_original"] = 2600,
-							["totalabsorbed"] = 124.003477,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Queliarel"] = 124,
-								["Water Elemental <Kawakii>"] = 31,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["aID"] = "4300",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 155.003477,
-							["delay"] = 1653917954,
-							["fight_component"] = true,
-							["end_time"] = 1653918003,
-							["total"] = 155.003477,
-							["damage_taken"] = 970.003477,
-							["nome"] = "Scarlet Wizard",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3054] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Queliarel"] = 124,
-											["Water Elemental <Kawakii>"] = 31,
-										},
-										["n_dmg"] = 155,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 155,
-										["c_max"] = 0,
-										["id"] = 3054,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["extra"] = {
-										},
-										["spellschool"] = 4,
-									},
-									[2601] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 2601,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 0,
-							["dps_started"] = false,
-							["custom"] = 0,
-							["last_event"] = 1653917954,
-							["on_hold"] = false,
-							["start_time"] = 1653918000,
-							["serial"] = "Creature-0-4469-189-3297-4300-000094C7C2",
-							["classe"] = "UNKNOW",
-						}, -- [4]
-						{
-							["flag_original"] = 2600,
-							["totalabsorbed"] = 57.006433,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Water Elemental <Kawakii>"] = 92,
-								["Kawakii"] = 57,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["aID"] = "3976",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 149.006433,
-							["delay"] = 1653917897,
-							["fight_component"] = true,
-							["end_time"] = 1653918003,
-							["total"] = 149.006433,
-							["damage_taken"] = 0.006433,
-							["nome"] = "Scarlet Commander Mograine",
-							["spells"] = {
-								["_ActorTable"] = {
-									[14518] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 57,
-										["targets"] = {
-											["Water Elemental <Kawakii>"] = 92,
-											["Kawakii"] = 57,
-										},
-										["n_dmg"] = 149,
-										["n_min"] = 46,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 149,
-										["c_max"] = 0,
-										["id"] = 14518,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 0,
-							["dps_started"] = false,
-							["custom"] = 0,
-							["last_event"] = 1653917897,
-							["on_hold"] = false,
-							["start_time"] = 1653918002,
-							["serial"] = "Creature-0-4469-189-3297-3976-000014C7C2",
-							["classe"] = "UNKNOW",
-						}, -- [5]
-						{
-							["flag_original"] = 2600,
-							["totalabsorbed"] = 40.00563,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Queliarel"] = 31,
-								["Kawakii"] = 27,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["aID"] = "4298",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 58.00563,
-							["delay"] = 1653917945,
-							["fight_component"] = true,
-							["end_time"] = 1653918003,
-							["total"] = 58.00563,
-							["damage_taken"] = 0.00563,
-							["nome"] = "Scarlet Defender",
-							["spells"] = {
-								["_ActorTable"] = {
-									[11972] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Queliarel"] = 31,
-											["Kawakii"] = 27,
-										},
-										["n_dmg"] = 58,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 58,
-										["c_max"] = 0,
-										["id"] = 11972,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-									[7164] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 7164,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 0,
-							["dps_started"] = false,
-							["custom"] = 0,
-							["last_event"] = 1653917945,
-							["on_hold"] = false,
-							["start_time"] = 1653917996,
-							["serial"] = "Creature-0-4469-189-3297-4298-000114C7C4",
-							["classe"] = "UNKNOW",
-						}, -- [6]
-						{
-							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.004224,
-							["damage_from"] = {
-								["Scarlet Commander Mograine"] = true,
-								["Scarlet Wizard"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.004224,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1653918003,
-							["total"] = 0.004224,
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[33395] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Monk"] = 0,
-											["Scarlet Myrmidon"] = 0,
-											["Scarlet Abbot"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 33395,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 123.004224,
-							["aID"] = "510",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653917835,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653918003,
-							["serial"] = "Creature-0-4469-189-3297-510-000014C883",
-							["on_hold"] = false,
-						}, -- [7]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 39,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Kawakii"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.00512,
-							["total_without_pet"] = 5342.00512,
-							["total"] = 5342.00512,
-							["targets_absorbs"] = {
-								["Kawakii"] = 5342,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BCE74D",
-							["totalabsorb"] = 5342.00512,
-							["last_hps"] = 32.33502687519216,
-							["targets"] = {
-								["Kawakii"] = 5342,
-							},
-							["totalover_without_pet"] = 0.00512,
-							["healing_taken"] = 5342.00512,
-							["fight_component"] = true,
-							["end_time"] = 1653918003,
-							["last_event"] = 1653917966,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[33405] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 5342,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 148,
-										["targets"] = {
-											["Kawakii"] = 5342,
-										},
-										["n_min"] = 9,
-										["counter"] = 65,
-										["overheal"] = 0,
-										["total"] = 5342,
-										["c_max"] = 0,
-										["id"] = 33405,
-										["targets_absorbs"] = {
-											["Kawakii"] = 5342,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 5342,
-										["totaldenied"] = 0,
-										["n_amt"] = 65,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02BCE74D",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.00512,
-							["start_time"] = 1653917936,
-							["delay"] = 1653917966,
-							["classe"] = "MAGE",
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Queliarel"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.005994,
-							["total_without_pet"] = 155.005994,
-							["total"] = 155.005994,
-							["targets_absorbs"] = {
-								["Queliarel"] = 155,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 2,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02E08F27",
-							["totalabsorb"] = 155.005994,
-							["last_hps"] = 0.9382475061734639,
-							["targets"] = {
-								["Queliarel"] = 155,
-							},
-							["totalover_without_pet"] = 0.005994,
-							["healing_taken"] = 155.005994,
-							["fight_component"] = true,
-							["end_time"] = 1653918003,
-							["last_event"] = 1653917954,
-							["nome"] = "Queliarel",
-							["spells"] = {
-								["_ActorTable"] = {
-									[8495] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 155,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 31,
-										["targets"] = {
-											["Queliarel"] = 155,
-										},
-										["n_min"] = 15,
-										["counter"] = 6,
-										["overheal"] = 0,
-										["total"] = 155,
-										["c_max"] = 0,
-										["id"] = 8495,
-										["targets_absorbs"] = {
-											["Queliarel"] = 155,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 155,
-										["totaldenied"] = 0,
-										["n_amt"] = 6,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02E08F27",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.005994,
-							["start_time"] = 1653917989,
-							["delay"] = 1653917954,
-							["classe"] = "MAGE",
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 39,
-					["_ActorTable"] = {
-						{
-							["received"] = 30434.004584,
-							["resource"] = 0.004584,
-							["targets"] = {
-								["Kawakii"] = 30434,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.004584,
-							["fight_component"] = true,
-							["total"] = 30434.004584,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[29442] = {
-										["total"] = 30434,
-										["id"] = 29442,
-										["totalover"] = 16081,
-										["targets"] = {
-											["Kawakii"] = 30434,
-										},
-										["counter"] = 85,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 16081.004584,
-							["alternatepower"] = 0.004584,
-							["last_event"] = 1653917961,
-							["tipo"] = 3,
-							["aID"] = "4465-02BCE74D",
-							["serial"] = "Player-4465-02BCE74D",
-							["flag_original"] = 1298,
-						}, -- [1]
-						{
-							["received"] = 1326.007437,
-							["resource"] = 0.007437,
-							["targets"] = {
-								["Queliarel"] = 1326,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.007437,
-							["fight_component"] = true,
-							["total"] = 1326.007437,
-							["nome"] = "Queliarel",
-							["spells"] = {
-								["_ActorTable"] = {
-									[12051] = {
-										["total"] = 1326,
-										["id"] = 12051,
-										["totalover"] = 0,
-										["targets"] = {
-											["Queliarel"] = 1326,
-										},
-										["counter"] = 3,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 0.007437,
-							["alternatepower"] = 0.007437,
-							["last_event"] = 1653917941,
-							["tipo"] = 3,
-							["aID"] = "4465-02E08F27",
-							["serial"] = "Player-4465-02E08F27",
-							["flag_original"] = 1298,
-						}, -- [2]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 39,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[41425] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 41425,
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[11196] = {
-										["activedamt"] = -1,
-										["id"] = 11196,
-										["targets"] = {
-										},
-										["actived_at"] = 1653917853,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["cooldowns_defensive"] = 1.001807,
-							["buff_uptime"] = 464,
-							["last_cooldown"] = {
-								1653917814.998, -- [1]
-								45438, -- [2]
-							},
-							["aID"] = "4465-02BCE74D",
-							["cooldowns_defensive_targets"] = {
-								["Kawakii"] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[33944] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 33944,
-										["uptime"] = 138,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[27124] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 27124,
-										["uptime"] = 1,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[2479] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 2479,
-										["uptime"] = 0,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-									[27126] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 27126,
-										["uptime"] = 1,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[45438] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 45438,
-										["uptime"] = 9,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[1953] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 1953,
-										["uptime"] = 2,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[37444] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 5,
-										["refreshamt"] = 17,
-										["id"] = 37444,
-										["uptime"] = 38,
-										["targets"] = {
-										},
-										["appliedamt"] = 5,
-									},
-									[27085] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 24,
-										["refreshamt"] = 0,
-										["id"] = 27085,
-										["uptime"] = 95,
-										["targets"] = {
-										},
-										["appliedamt"] = 24,
-									},
-									[35084] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 35084,
-										["uptime"] = 20,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[12536] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 6,
-										["refreshamt"] = 0,
-										["id"] = 12536,
-										["uptime"] = 17,
-										["targets"] = {
-										},
-										["appliedamt"] = 6,
-									},
-									[32796] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 32796,
-										["uptime"] = 47,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[33405] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 4,
-										["refreshamt"] = 0,
-										["id"] = 33405,
-										["uptime"] = 96,
-										["targets"] = {
-										},
-										["appliedamt"] = 4,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 30,
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[33405] = 3,
-								[27087] = 1,
-								[30455] = 3,
-								[27088] = 1,
-								[1953] = 2,
-								[27085] = 24,
-								[45438] = 1,
-								[31687] = 1,
-								[27082] = 14,
-								[32796] = 1,
-							},
-							["serial"] = "Player-4465-02BCE74D",
-							["classe"] = "MAGE",
-							["last_event"] = 1653918003,
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["nome"] = "Kawakii",
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[45438] = {
-										["id"] = 45438,
-										["targets"] = {
-											["Kawakii"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Kaftunik",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02E9A18A",
-							["buff_uptime"] = 0,
-							["tipo"] = 4,
-							["last_event"] = 1653917801,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
-										["actived_at"] = 1653917801,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E9A18A",
-							["classe"] = "DRUID",
-						}, -- [2]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Moolatz",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02B843FA",
-							["buff_uptime"] = 1,
-							["tipo"] = 4,
-							["last_event"] = 1653918003,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 768,
-										["uptime"] = 1,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[2383] = {
-										["activedamt"] = 1,
-										["id"] = 2383,
-										["targets"] = {
-										},
-										["actived_at"] = 1653918002,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["classe"] = "DRUID",
-						}, -- [3]
-						{
-							["flag_original"] = 1298,
-							["buff_uptime"] = 189,
-							["fight_component"] = true,
-							["nome"] = "Queliarel",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[8427] = 5,
-								[12051] = 1,
-								[8495] = 4,
-								[2139] = 1,
-								[8412] = 1,
-							},
-							["last_event"] = 1653917956,
-							["aID"] = "4465-02E08F27",
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8427] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 5,
-										["refreshamt"] = 0,
-										["id"] = 8427,
-										["uptime"] = 40,
-										["targets"] = {
-										},
-										["appliedamt"] = 5,
-									},
-									[8495] = {
-										["activedamt"] = 3,
-										["id"] = 8495,
-										["targets"] = {
-										},
-										["actived_at"] = 1653917956,
-										["uptime"] = 143,
-										["counter"] = 0,
-										["refreshamt"] = 1,
-										["actived"] = true,
-										["appliedamt"] = 3,
-									},
-									[12051] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 12051,
-										["uptime"] = 6,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E08F27",
-							["classe"] = "MAGE",
-						}, -- [4]
-						{
-							["flag_original"] = 4370,
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["aID"] = "510",
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4469-189-3297-510-000014C883",
-							["spell_cast"] = {
-								[31707] = 12,
-								[33395] = 1,
-							},
-						}, -- [5]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["aID"] = "4298",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[11972] = {
-										["id"] = 11972,
-										["counter"] = 1,
-										["targets"] = {
-											["Queliarel"] = 1,
-										},
-										["interrompeu_oque"] = {
-											[12051] = 1,
-										},
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[12051] = 1,
-							},
-							["monster"] = true,
-							["nome"] = "Scarlet Defender",
-							["interrupt_targets"] = {
-								["Queliarel"] = 1,
-							},
-							["spell_cast"] = {
-								[7164] = 1,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["interrupt"] = 1.003497,
-							["serial"] = "Creature-0-4469-189-3297-4298-000314C7C4",
-							["last_event"] = 1653917941,
-						}, -- [6]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Wizard",
-							["aID"] = "4300",
-							["spell_cast"] = {
-								[2601] = 1,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4469-189-3297-4300-000194C7C4",
-							["flag_original"] = 2632,
-						}, -- [7]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 39,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vaelyah"] = true,
-					["Kawakii"] = true,
-					["Kaftunik"] = true,
-					["Queliarel"] = true,
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Queliarel", -- [1]
-					"Kaftunik", -- [2]
-					"Vaelyah", -- [3]
-					"Kawakii", -- [4]
-					"Moolatz", -- [5]
-				},
-				["tempo_start"] = 1653917801,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Scarlet Defender",
-				["combat_counter"] = 9167,
-				["totals"] = {
-					3197.97089, -- [1]
-					5497, -- [2]
-					{
-						0, -- [1]
-						[0] = 31760,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["totals_grupo"] = {
-					1554, -- [1]
-					5497, -- [2]
-					{
-						0, -- [1]
-						[0] = 31760,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "15:36:42",
-				["end_time"] = 1646384.824,
-				["spells_cast_timeline"] = {
-				},
-				["instance_type"] = "none",
-				["combat_id"] = 39,
 				["cleu_timeline"] = {
 				},
-				["hasSaved"] = true,
-				["frags"] = {
-					["Water Elemental"] = 1,
-					["Scarlet Wizard"] = 2,
-				},
-				["data_fim"] = "15:40:04",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Queliarel"] = 0.004717,
-							["Kawakii"] = 970.003136,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Queliarel"] = 155.005994,
-							["Kawakii"] = 5342.00512,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["start_time"] = 1646182.811,
-				["TimeData"] = {
-				},
-				["pvp"] = true,
-			}, -- [9]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 38,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.007162,
-							["damage_from"] = {
-								["Scarlet Myrmidon"] = true,
-							},
-							["targets"] = {
-								["Scarlet Sorcerer"] = 340,
-								["Scarlet Myrmidon"] = 652,
-							},
-							["serial"] = "Player-4465-02BCE74D",
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 992.007162,
-							["aID"] = "4465-02BCE74D",
-							["dps_started"] = false,
-							["total"] = 992.007162,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1653917799,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[27088] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 674,
-										["g_amt"] = 0,
-										["n_max"] = 160,
-										["targets"] = {
-											["Scarlet Sorcerer"] = 340,
-											["Scarlet Myrmidon"] = 652,
-										},
-										["n_dmg"] = 318,
-										["n_min"] = 158,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 992,
-										["c_max"] = 340,
-										["id"] = 27088,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 334,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[1449] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Myrmidon"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 1449,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 64,
-										["EVADE"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 102.6072778230763,
-							["end_time"] = 1653917684,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 194.007162,
-							["start_time"] = 1653917682,
-							["delay"] = 0,
-							["classe"] = "MAGE",
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 134.003963,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 194,
-							},
-							["serial"] = "Creature-0-4469-189-3297-4295-000094C7C3",
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["aID"] = "4295",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 194.003963,
-							["end_time"] = 1653917684,
-							["monster"] = true,
-							["total"] = 194.003963,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1653917682,
-							["nome"] = "Scarlet Myrmidon",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 60,
-										["targets"] = {
-											["Kawakii"] = 194,
-										},
-										["n_dmg"] = 194,
-										["n_min"] = 24,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 194,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["on_hold"] = false,
-							["damage_taken"] = 652.003963,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653917674,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.00594,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-							},
-							["serial"] = "Creature-0-4469-189-3297-4294-000114C7C3",
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["aID"] = "4294",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.00594,
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 0.00594,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 0,
-							["nome"] = "Scarlet Sorcerer",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["damage_taken"] = 340.00594,
-							["end_time"] = 1653917684,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653917684,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 38,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["aID"] = "4465-02BCE74D",
-							["totalover"] = 0.00376,
-							["total_without_pet"] = 194.00376,
-							["total"] = 194.00376,
-							["targets_absorbs"] = {
-								["Kawakii"] = 194,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BCE74D",
-							["totalabsorb"] = 194.00376,
-							["last_hps"] = 20.06658667756818,
-							["targets"] = {
-								["Kawakii"] = 194,
-							},
-							["totalover_without_pet"] = 0.00376,
-							["healing_taken"] = 194.00376,
-							["fight_component"] = true,
-							["end_time"] = 1653917684,
-							["classe"] = "MAGE",
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[33405] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 194,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 60,
-										["targets"] = {
-											["Kawakii"] = 194,
-										},
-										["n_min"] = 24,
-										["counter"] = 5,
-										["overheal"] = 0,
-										["total"] = 194,
-										["c_max"] = 0,
-										["id"] = 33405,
-										["targets_absorbs"] = {
-											["Kawakii"] = 194,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 5,
-										["n_curado"] = 194,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Kawakii"] = true,
-							},
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653917682,
-							["start_time"] = 1653917674,
-							["totaldenied"] = 0.00376,
-							["delay"] = 0,
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 38,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 38,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[7321] = {
-										["appliedamt"] = 3,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 10,
-										["id"] = 7321,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27088] = {
-										["appliedamt"] = 4,
-										["targets"] = {
-										},
-										["activedamt"] = 4,
-										["uptime"] = 2,
-										["id"] = 27088,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 0,
-							["cc_done_spells"] = {
-								["_ActorTable"] = {
-									[27088] = {
-										["id"] = 27088,
-										["targets"] = {
-											["Scarlet Sorcerer"] = 1,
-											["Scarlet Myrmidon"] = 3,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["aID"] = "4465-02BCE74D",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[33405] = {
-										["activedamt"] = 1,
-										["id"] = 33405,
-										["targets"] = {
-										},
-										["actived_at"] = 1653917674,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[37444] = {
-										["activedamt"] = 1,
-										["id"] = 37444,
-										["targets"] = {
-										},
-										["actived_at"] = 1653917682,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[35084] = {
-										["activedamt"] = 1,
-										["id"] = 35084,
-										["targets"] = {
-										},
-										["actived_at"] = 1653917682,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[33944] = {
-										["activedamt"] = 1,
-										["id"] = 33944,
-										["targets"] = {
-										},
-										["actived_at"] = 1653917674,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[27124] = {
-										["activedamt"] = 1,
-										["id"] = 27124,
-										["targets"] = {
-										},
-										["actived_at"] = 1653917674,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[27126] = {
-										["activedamt"] = 1,
-										["id"] = 27126,
-										["targets"] = {
-										},
-										["actived_at"] = 1653917674,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["spell_cast"] = {
-								[27088] = 1,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 12,
-							["cc_done"] = 4.005206,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["cc_done_targets"] = {
-								["Scarlet Sorcerer"] = 1,
-								["Scarlet Myrmidon"] = 3,
-							},
-							["classe"] = "MAGE",
-							["nome"] = "Kawakii",
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["last_event"] = 1653917683,
-							["serial"] = "Player-4465-02BCE74D",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Kaftunik",
-							["buff_uptime"] = 0,
-							["classe"] = "DRUID",
-							["pets"] = {
-							},
-							["last_event"] = 1653917674,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
-										["actived_at"] = 1653917674,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E9A18A",
-							["aID"] = "4465-02E9A18A",
-						}, -- [2]
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 0,
-							["classe"] = "DRUID",
-							["pets"] = {
-							},
-							["last_event"] = 1653917674,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
-										["actived_at"] = 1653917674,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 38,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vaelyah"] = true,
-					["Kawakii"] = true,
-					["Kaftunik"] = true,
-					["Queliarel"] = true,
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Queliarel", -- [1]
-					"Kaftunik", -- [2]
-					"Vaelyah", -- [3]
-					"Kawakii", -- [4]
-					"Moolatz", -- [5]
-				},
-				["tempo_start"] = 1653917674,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Scarlet Myrmidon",
-				["combat_counter"] = 9165,
-				["totals"] = {
-					1185.991887, -- [1]
-					194, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Kawakii"] = 194.00376,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Kawakii"] = 992.007162,
-						}, -- [1]
-					},
-				},
-				["frags_need_refresh"] = false,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "15:34:35",
-				["end_time"] = 1646065.036,
-				["combat_id"] = 38,
-				["instance_type"] = "none",
-				["contra"] = "Scarlet Myrmidon",
-				["cleu_timeline"] = {
-				},
-				["hasSaved"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "15:34:44",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-				},
-				["start_time"] = 1646055.368,
-				["TimeData"] = {
-				},
-				["totals_grupo"] = {
-					992, -- [1]
-					194, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-			}, -- [10]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 34,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.003248,
-							["damage_from"] = {
-								["Scarlet Sorcerer"] = true,
-								["Scarlet Myrmidon"] = true,
-								["Scarlet Wizard"] = true,
-								["Scarlet Defender"] = true,
-								["Scarlet Commander Mograine"] = true,
-							},
-							["targets"] = {
-								["Scarlet Centurion"] = 581,
-								["Scarlet Sorcerer"] = 166,
-								["Scarlet Myrmidon"] = 847,
-								["Scarlet Wizard"] = 628,
-								["Scarlet Defender"] = 806,
-							},
-							["serial"] = "Player-4465-02BCE74D",
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["colocacao"] = 1,
-							["classe"] = "MAGE",
-							["aID"] = "4465-02BCE74D",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 3028.003248,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1653917271,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1653917220,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[7321] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Commander Mograine"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 7321,
-										["r_dmg"] = 0,
-										["IMMUNE"] = 1,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[42198] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Chaplain"] = 0,
-											["Scarlet Champion"] = 0,
-											["Scarlet Sorcerer"] = 0,
-											["Scarlet Myrmidon"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Abbot"] = 0,
-											["Scarlet Wizard"] = 0,
-											["Scarlet Monk"] = 0,
-											["Scarlet Centurion"] = 0,
-											["Scarlet Commander Mograine"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 56,
-										["total"] = 0,
-										["c_max"] = 0,
-										["IMMUNE"] = 4,
-										["id"] = 42198,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["RESIST"] = 52,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27088] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 327,
-										["g_amt"] = 0,
-										["n_max"] = 170,
-										["targets"] = {
-											["Scarlet Monk"] = 0,
-											["Scarlet Sorcerer"] = 166,
-											["Scarlet Myrmidon"] = 664,
-										},
-										["n_dmg"] = 503,
-										["n_min"] = 166,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 830,
-										["c_max"] = 327,
-										["id"] = 27088,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["c_min"] = 327,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27082] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 581,
-										["targets"] = {
-											["Scarlet Wizard"] = 533,
-											["Scarlet Defender"] = 528,
-											["Scarlet Centurion"] = 581,
-										},
-										["n_dmg"] = 1642,
-										["n_min"] = 528,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 1642,
-										["c_max"] = 0,
-										["id"] = 27082,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[1449] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 95,
-										["targets"] = {
-											["Scarlet Wizard"] = 95,
-											["Scarlet Centurion"] = 0,
-											["Scarlet Defender"] = 278,
-											["Scarlet Myrmidon"] = 183,
-										},
-										["n_dmg"] = 556,
-										["n_min"] = 91,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 556,
-										["c_max"] = 0,
-										["id"] = 1449,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 3028.003248,
-							["last_dps"] = 9.252733336392215,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 3049.003248,
-							["start_time"] = 1653917152,
-							["delay"] = 1653917220,
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.007376,
-							["damage_from"] = {
-								["Scarlet Defender"] = true,
-								["Scarlet Wizard"] = true,
-							},
-							["targets"] = {
-								["Scarlet Sorcerer"] = 20,
-								["Scarlet Myrmidon"] = 1,
-							},
-							["serial"] = "Player-4465-02E08F27",
-							["pets"] = {
-							},
-							["colocacao"] = 2,
-							["classe"] = "MAGE",
-							["aID"] = "4465-02E08F27",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 21.007376,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1653917271,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1653917223,
-							["nome"] = "Queliarel",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 2,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Sorcerer"] = 20,
-											["Scarlet Myrmidon"] = 1,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 21,
-										["counter"] = 2,
-										["total"] = 21,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[42210] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Chaplain"] = 0,
-											["Scarlet Centurion"] = 0,
-											["Scarlet Sorcerer"] = 0,
-											["Scarlet Myrmidon"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Abbot"] = 0,
-											["Scarlet Wizard"] = 0,
-											["Scarlet Champion"] = 0,
-											["Scarlet Commander Mograine"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 39,
-										["total"] = 0,
-										["c_max"] = 0,
-										["IMMUNE"] = 3,
-										["id"] = 42210,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["RESIST"] = 36,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 21.007376,
-							["last_dps"] = 0.06419268154805022,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 392.007376,
-							["start_time"] = 1653917261,
-							["delay"] = 1653917223,
-							["friendlyfire_total"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 1593.007971,
-							["damage_from"] = {
-								["Queliarel"] = true,
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 2376,
-							},
-							["serial"] = "Creature-0-4446-189-23350-4294-000094C4C1",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "4294",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 2376.007971,
-							["damage_taken"] = 186.007971,
-							["dps_started"] = false,
-							["end_time"] = 1653917271,
-							["on_hold"] = false,
-							["last_event"] = 1653917221,
-							["nome"] = "Scarlet Sorcerer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Kawakii"] = 51,
-										},
-										["n_dmg"] = 51,
-										["n_min"] = 25,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 51,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[9672] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 116,
-										["targets"] = {
-											["Kawakii"] = 2325,
-										},
-										["n_dmg"] = 2325,
-										["n_min"] = 87,
-										["g_dmg"] = 0,
-										["counter"] = 24,
-										["total"] = 2325,
-										["c_max"] = 0,
-										["id"] = 9672,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["RESIST"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 23,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 2376.007971,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653917205,
-							["delay"] = 1653917221,
-							["fight_component"] = true,
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 498.001164,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Water Elemental <Kawakii>"] = 186,
-								["Queliarel"] = 378,
-								["Kawakii"] = 150,
-							},
-							["serial"] = "Creature-0-4446-189-23350-4300-000094C4C1",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "4300",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 714.001164,
-							["damage_taken"] = 628.001164,
-							["dps_started"] = false,
-							["end_time"] = 1653917271,
-							["on_hold"] = false,
-							["last_event"] = 1653917214,
-							["nome"] = "Scarlet Wizard",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 45,
-										["targets"] = {
-											["Kawakii"] = 89,
-										},
-										["n_dmg"] = 89,
-										["n_min"] = 44,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 89,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8439] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 146,
-										["targets"] = {
-											["Queliarel"] = 287,
-										},
-										["n_dmg"] = 287,
-										["n_min"] = 141,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 287,
-										["c_max"] = 0,
-										["id"] = 8439,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[3054] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Water Elemental <Kawakii>"] = 186,
-											["Queliarel"] = 91,
-											["Kawakii"] = 61,
-										},
-										["n_dmg"] = 338,
-										["n_min"] = 30,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 338,
-										["c_max"] = 0,
-										["id"] = 3054,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 11,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[2601] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 2601,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 10,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 714.001164,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653917236,
-							["delay"] = 1653917214,
-							["fight_component"] = true,
-						}, -- [4]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 234.00302,
-							["damage_from"] = {
-								["Queliarel"] = true,
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 291,
-							},
-							["serial"] = "Creature-0-4446-189-23350-4295-000194C4BF",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "4295",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 291.00302,
-							["damage_taken"] = 848.00302,
-							["dps_started"] = false,
-							["end_time"] = 1653917271,
-							["on_hold"] = false,
-							["last_event"] = 1653917035,
-							["nome"] = "Scarlet Myrmidon",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 57,
-										["targets"] = {
-											["Kawakii"] = 291,
-										},
-										["n_dmg"] = 291,
-										["n_min"] = 24,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 291,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 3,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 291.00302,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653917262,
-							["delay"] = 1653917035,
-							["fight_component"] = true,
-						}, -- [5]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 189.002902,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Water Elemental <Kawakii>"] = 15,
-								["Queliarel"] = 14,
-								["Kawakii"] = 175,
-							},
-							["serial"] = "Creature-0-4446-189-23350-4298-000494C4C1",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "4298",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 204.002902,
-							["damage_taken"] = 806.002902,
-							["dps_started"] = false,
-							["end_time"] = 1653917271,
-							["on_hold"] = false,
-							["last_event"] = 1653917214,
-							["nome"] = "Scarlet Defender",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 71,
-										["targets"] = {
-											["Kawakii"] = 175,
-										},
-										["n_dmg"] = 175,
-										["n_min"] = 50,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 175,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[3639] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3639,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 8,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[7164] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 7164,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[11972] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 14,
-										["targets"] = {
-											["Queliarel"] = 14,
-											["Water Elemental <Kawakii>"] = 15,
-										},
-										["n_dmg"] = 29,
-										["n_min"] = 1,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 29,
-										["c_max"] = 0,
-										["id"] = 11972,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 1,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 204.002902,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653917267,
-							["delay"] = 1653917214,
-							["fight_component"] = true,
-						}, -- [6]
-						{
-							["flag_original"] = 2600,
-							["totalabsorbed"] = 57.007564,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Kawakii"] = 57,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["friendlyfire_total"] = 0,
-							["aID"] = "3976",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 57.007564,
-							["serial"] = "Creature-0-4446-189-23350-3976-000014C4BF",
-							["fight_component"] = true,
-							["end_time"] = 1653917271,
-							["damage_taken"] = 0.007564,
-							["on_hold"] = false,
-							["nome"] = "Scarlet Commander Mograine",
-							["spells"] = {
-								["_ActorTable"] = {
-									[14518] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 57,
-										["targets"] = {
-											["Kawakii"] = 57,
-										},
-										["n_dmg"] = 57,
-										["n_min"] = 57,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 57,
-										["c_max"] = 0,
-										["id"] = 14518,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1653917127,
-							["dps_started"] = false,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653917270,
-							["delay"] = 1653917127,
-							["total"] = 57.007564,
-						}, -- [7]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.007864,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-							},
-							["serial"] = "Creature-0-4446-189-23350-4301-000314C4C0",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "4301",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.007864,
-							["damage_taken"] = 581.007864,
-							["dps_started"] = false,
-							["end_time"] = 1653917271,
-							["on_hold"] = false,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Centurion",
-							["spells"] = {
-								["_ActorTable"] = {
-									[31403] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 31403,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 11,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 0.007864,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653917271,
-							["delay"] = 0,
-							["fight_component"] = true,
-						}, -- [8]
-						{
-							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.005893,
-							["damage_from"] = {
-								["Scarlet Wizard"] = true,
-								["Scarlet Defender"] = true,
-								["Scarlet Champion"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["last_event"] = 0,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.005893,
-							["serial"] = "Creature-0-4446-189-23350-510-000014C59F",
-							["dps_started"] = false,
-							["end_time"] = 1653917271,
-							["total"] = 0.005893,
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["aID"] = "510",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 592.005893,
-							["start_time"] = 1653917271,
-							["delay"] = 0,
-							["classe"] = "PET",
-						}, -- [9]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 34,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["targets_overheal"] = {
-								["Kawakii"] = 425,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["aID"] = "4465-02BCE74D",
-							["totalover"] = 425.001861,
-							["total_without_pet"] = 6490.001861,
-							["total"] = 6490.001861,
-							["targets_absorbs"] = {
-								["Kawakii"] = 6490,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BCE74D",
-							["totalabsorb"] = 6490.001861,
-							["last_hps"] = 24.00157493556034,
-							["targets"] = {
-								["Kawakii"] = 6490,
-							},
-							["totalover_without_pet"] = 0.001861,
-							["healing_taken"] = 6490.001861,
-							["fight_component"] = true,
-							["end_time"] = 1653917271,
-							["classe"] = "MAGE",
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[27031] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Kawakii"] = 425,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Kawakii"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 1,
-										["overheal"] = 425,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 27031,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 0,
-										["absorbed"] = 0,
-									},
-									[33405] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 6099,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 144,
-										["targets"] = {
-											["Kawakii"] = 6099,
-										},
-										["n_min"] = 4,
-										["counter"] = 85,
-										["overheal"] = 0,
-										["total"] = 6099,
-										["c_max"] = 0,
-										["id"] = 33405,
-										["targets_absorbs"] = {
-											["Kawakii"] = 6099,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 85,
-										["n_curado"] = 6099,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[32796] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 391,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 105,
-										["targets"] = {
-											["Kawakii"] = 391,
-										},
-										["n_min"] = 89,
-										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 391,
-										["c_max"] = 0,
-										["id"] = 32796,
-										["targets_absorbs"] = {
-											["Kawakii"] = 391,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["n_curado"] = 391,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Kawakii"] = true,
-							},
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653917214,
-							["start_time"] = 1653917104,
-							["totaldenied"] = 0.001861,
-							["delay"] = 1653917214,
-							["tipo"] = 2,
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["aID"] = "4465-02E08F27",
-							["totalover"] = 0.006273,
-							["total_without_pet"] = 392.006273,
-							["total"] = 392.006273,
-							["targets_absorbs"] = {
-								["Queliarel"] = 392,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 2,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02E08F27",
-							["totalabsorb"] = 392.006273,
-							["last_hps"] = 1.44973270241397,
-							["targets"] = {
-								["Queliarel"] = 392,
-							},
-							["totalover_without_pet"] = 0.006273,
-							["healing_taken"] = 392.006273,
-							["fight_component"] = true,
-							["end_time"] = 1653917271,
-							["classe"] = "MAGE",
-							["nome"] = "Queliarel",
-							["spells"] = {
-								["_ActorTable"] = {
-									[8495] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 392,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 146,
-										["targets"] = {
-											["Queliarel"] = 392,
-										},
-										["n_min"] = 14,
-										["counter"] = 6,
-										["overheal"] = 0,
-										["total"] = 392,
-										["c_max"] = 0,
-										["id"] = 8495,
-										["targets_absorbs"] = {
-											["Queliarel"] = 392,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 6,
-										["n_curado"] = 392,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Queliarel"] = true,
-							},
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653917214,
-							["start_time"] = 1653917259,
-							["totaldenied"] = 0.006273,
-							["delay"] = 1653917214,
-							["tipo"] = 2,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 34,
-					["_ActorTable"] = {
-						{
-							["received"] = 33379.008873,
-							["resource"] = 0.008873,
-							["targets"] = {
-								["Kawakii"] = 33379,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.008873,
-							["fight_component"] = true,
-							["total"] = 33379.008873,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[29442] = {
-										["total"] = 33379,
-										["id"] = 29442,
-										["totalover"] = 13683,
-										["targets"] = {
-											["Kawakii"] = 33379,
-										},
-										["counter"] = 86,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["flag_original"] = 1298,
-							["alternatepower"] = 0.008873,
-							["last_event"] = 1653917232,
-							["aID"] = "4465-02BCE74D",
-							["tipo"] = 3,
-							["serial"] = "Player-4465-02BCE74D",
-							["totalover"] = 13683.008873,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 34,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[41425] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 30,
-										["id"] = 41425,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[11196] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 60,
-										["id"] = 11196,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27088] = {
-										["appliedamt"] = 4,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 8,
-										["id"] = 27088,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27085] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 1,
-										["id"] = 27085,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[7321] = {
-										["appliedamt"] = 12,
-										["targets"] = {
-										},
-										["activedamt"] = 3,
-										["uptime"] = 258,
-										["id"] = 7321,
-										["refreshamt"] = 6,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["spell_cast"] = {
-								[33405] = 4,
-								[1449] = 17,
-								[27031] = 1,
-								[30455] = 4,
-								[27088] = 3,
-								[1953] = 7,
-								[27085] = 24,
-								[31687] = 1,
-								[27082] = 15,
-								[32796] = 3,
-								[45438] = 1,
-							},
-							["cooldowns_defensive"] = 1.006043,
-							["buff_uptime"] = 1244,
-							["last_cooldown"] = {
-								1653917074.293, -- [1]
-								45438, -- [2]
-							},
-							["cc_done_spells"] = {
-								["_ActorTable"] = {
-									[27088] = {
-										["id"] = 27088,
-										["targets"] = {
-											["Scarlet Sorcerer"] = 1,
-											["Scarlet Myrmidon"] = 3,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["aID"] = "4465-02BCE74D",
-							["cooldowns_defensive_targets"] = {
-								["Kawakii"] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[35084] = {
-										["appliedamt"] = 4,
-										["targets"] = {
-										},
-										["activedamt"] = 4,
-										["uptime"] = 40,
-										["id"] = 35084,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27124] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 327,
-										["id"] = 27124,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27031] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 2,
-										["id"] = 27031,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[2479] = {
-										["appliedamt"] = 0,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 0,
-										["id"] = 2479,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[45438] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 9,
-										["id"] = 45438,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1953] = {
-										["appliedamt"] = 7,
-										["targets"] = {
-										},
-										["activedamt"] = 7,
-										["uptime"] = 7,
-										["id"] = 1953,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27126] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 327,
-										["id"] = 27126,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27085] = {
-										["appliedamt"] = 24,
-										["targets"] = {
-										},
-										["activedamt"] = 24,
-										["uptime"] = 94,
-										["id"] = 27085,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[37444] = {
-										["appliedamt"] = 13,
-										["targets"] = {
-										},
-										["activedamt"] = 13,
-										["uptime"] = 94,
-										["id"] = 37444,
-										["refreshamt"] = 22,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[12536] = {
-										["appliedamt"] = 9,
-										["targets"] = {
-										},
-										["activedamt"] = 9,
-										["uptime"] = 43,
-										["id"] = 12536,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[32796] = {
-										["appliedamt"] = 3,
-										["targets"] = {
-										},
-										["activedamt"] = 3,
-										["uptime"] = 90,
-										["id"] = 32796,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[33405] = {
-										["appliedamt"] = 4,
-										["targets"] = {
-										},
-										["activedamt"] = 4,
-										["uptime"] = 211,
-										["id"] = 33405,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 357,
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[45438] = {
-										["id"] = 45438,
-										["targets"] = {
-											["Kawakii"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["cc_done"] = 4.004623000000001,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["cc_done_targets"] = {
-								["Scarlet Sorcerer"] = 1,
-								["Scarlet Myrmidon"] = 3,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Kawakii",
-							["tipo"] = 4,
-							["last_event"] = 1653917271,
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["serial"] = "Player-4465-02BCE74D",
-							["classe"] = "MAGE",
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Kaftunik",
-							["buff_uptime"] = 0,
-							["classe"] = "DRUID",
-							["pets"] = {
-							},
-							["last_event"] = 1653916944,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
-										["actived_at"] = 1653916944,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E9A18A",
-							["aID"] = "4465-02E9A18A",
-						}, -- [2]
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8407] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 74,
-										["id"] = 8407,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 264,
-							["aID"] = "4465-02E08F27",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[1953] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 2,
-										["id"] = 1953,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8495] = {
-										["activedamt"] = 4,
-										["id"] = 8495,
-										["targets"] = {
-										},
-										["actived_at"] = 1653917225,
-										["uptime"] = 238,
-										["appliedamt"] = 4,
-										["refreshamt"] = 4,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[8427] = {
-										["appliedamt"] = 3,
-										["targets"] = {
-										},
-										["activedamt"] = 3,
-										["uptime"] = 24,
-										["id"] = 8427,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 74,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[8427] = 3,
-								[8407] = 2,
-								[8495] = 7,
-								[1953] = 2,
-								[8412] = 2,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1653917266,
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["classe"] = "MAGE",
-							["serial"] = "Player-4465-02E08F27",
-							["nome"] = "Queliarel",
-						}, -- [3]
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 327,
-							["classe"] = "DRUID",
-							["pets"] = {
-							},
-							["last_event"] = 1653917271,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 327,
-										["id"] = 768,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [4]
-						{
-							["monster"] = true,
-							["tipo"] = 4,
-							["nome"] = "Scarlet Sorcerer",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[9672] = 2,
-							},
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4446-189-23350-4294-000094C4C1",
-							["aID"] = "4294",
-						}, -- [5]
-						{
-							["monster"] = true,
-							["tipo"] = 4,
-							["nome"] = "Scarlet Wizard",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[2601] = 10,
-							},
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4446-189-23350-4300-000094C4C1",
-							["aID"] = "4300",
-						}, -- [6]
-						{
-							["monster"] = true,
-							["tipo"] = 4,
-							["nome"] = "Scarlet Centurion",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[31403] = 11,
-							},
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4446-189-23350-4301-000314C4C0",
-							["aID"] = "4301",
-						}, -- [7]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["aID"] = "4298",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[11972] = {
-										["id"] = 11972,
-										["interrompeu_oque"] = {
-											[31707] = 1,
-										},
-										["targets"] = {
-											["Water Elemental"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[31707] = 1,
-							},
-							["fight_component"] = true,
-							["interrupt"] = 1.006532,
-							["interrupt_targets"] = {
-								["Water Elemental"] = 1,
-							},
-							["spell_cast"] = {
-								[3639] = 8,
-								[7164] = 2,
-							},
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 1653917128,
-							["monster"] = true,
-							["serial"] = "Creature-0-4446-189-23350-4298-000194C4C1",
-							["nome"] = "Scarlet Defender",
-						}, -- [8]
-						{
-							["flag_original"] = 4370,
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[31707] = 8,
-								[33395] = 1,
-							},
-							["aID"] = "510",
-							["classe"] = "PET",
-							["serial"] = "Creature-0-4446-189-23350-510-000014C59F",
-							["last_event"] = 0,
-						}, -- [9]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 34,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vaelyah"] = true,
-					["Kawakii"] = true,
-					["Kaftunik"] = true,
-					["Queliarel"] = true,
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Queliarel", -- [1]
-					"Kaftunik", -- [2]
-					"Vaelyah", -- [3]
-					"Kawakii", -- [4]
-					"Moolatz", -- [5]
-				},
-				["tempo_start"] = 1653916944,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Scarlet Myrmidon",
-				["combat_counter"] = 9161,
-				["totals"] = {
-					6690.955908999999, -- [1]
-					6881.991139, -- [2]
-					{
-						0, -- [1]
-						[0] = 33379,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 1,
-						["dispell"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Queliarel"] = 392.006273,
-							["Kawakii"] = 6490.001861,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Queliarel"] = 21.007376,
-							["Kawakii"] = 3028.003248,
-						}, -- [1]
-					},
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "15:22:25",
-				["end_time"] = 1645652.544,
-				["combat_id"] = 34,
-				["instance_type"] = "none",
-				["contra"] = "Scarlet Myrmidon",
-				["cleu_timeline"] = {
-				},
-				["hasSaved"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "15:27:52",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Water Elemental"] = 1,
-					["Scarlet Centurion"] = 1,
-					["Scarlet Wizard"] = 1,
-				},
-				["start_time"] = 1645325.289,
-				["TimeData"] = {
-				},
-				["totals_grupo"] = {
-					3049, -- [1]
-					6882, -- [2]
-					{
-						0, -- [1]
-						[0] = 33379,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 1,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-			}, -- [11]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 30,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.0085,
-							["damage_from"] = {
-								["Scarlet Sorcerer"] = true,
-								["Scarlet Monk"] = true,
-								["Scarlet Defender"] = true,
-								["Scarlet Myrmidon"] = true,
-							},
-							["targets"] = {
-								["Scarlet Soldier"] = 1184,
-								["Scarlet Sorcerer"] = 190,
-								["Scarlet Myrmidon"] = 753,
-								["Scarlet Wizard"] = 1006,
-								["Scarlet Defender"] = 1089,
-							},
-							["serial"] = "Player-4465-02BCE74D",
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["colocacao"] = 1,
-							["classe"] = "MAGE",
-							["aID"] = "4465-02BCE74D",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 4222.0085,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1653916524,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1653916523,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 106,
-										["targets"] = {
-											["Scarlet Myrmidon"] = 106,
-										},
-										["n_dmg"] = 106,
-										["n_min"] = 106,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 106,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[7321] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Wizard"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Myrmidon"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 7321,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["RESIST"] = 3,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27088] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 321,
-										["g_amt"] = 0,
-										["n_max"] = 169,
-										["targets"] = {
-											["Scarlet Centurion"] = 0,
-											["Scarlet Defender"] = 481,
-											["Scarlet Myrmidon"] = 326,
-										},
-										["n_dmg"] = 486,
-										["n_min"] = 157,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 807,
-										["c_max"] = 321,
-										["id"] = 27088,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["RESIST"] = 2,
-										["a_dmg"] = 0,
-										["c_min"] = 321,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[42198] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Chaplain"] = 0,
-											["Scarlet Champion"] = 0,
-											["Scarlet Sorcerer"] = 0,
-											["Scarlet Myrmidon"] = 0,
-											["Scarlet Wizard"] = 0,
-											["Scarlet Monk"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Centurion"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 50,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 42198,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["RESIST"] = 50,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27082] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 596,
-										["targets"] = {
-											["Scarlet Wizard"] = 1006,
-											["Scarlet Defender"] = 287,
-											["Scarlet Soldier"] = 1184,
-										},
-										["n_dmg"] = 2477,
-										["n_min"] = 287,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 2477,
-										["c_max"] = 0,
-										["id"] = 27082,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[1449] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 276,
-										["g_amt"] = 0,
-										["n_max"] = 96,
-										["targets"] = {
-											["Scarlet Sorcerer"] = 190,
-											["Scarlet Defender"] = 321,
-											["Scarlet Myrmidon"] = 321,
-										},
-										["n_dmg"] = 556,
-										["n_min"] = 86,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 832,
-										["c_max"] = 142,
-										["id"] = 1449,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 134,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 4222.0085,
-							["last_dps"] = 12.64063047337799,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 2227.0085,
-							["start_time"] = 1653916374,
-							["delay"] = 1653916460,
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.007279,
-							["damage_from"] = {
-							},
-							["targets"] = {
-							},
-							["serial"] = "Player-4465-02E08F27",
-							["pets"] = {
-							},
-							["colocacao"] = 2,
-							["classe"] = "MAGE",
-							["aID"] = "4465-02E08F27",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.007279,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1653916498,
-							["on_hold"] = false,
-							["last_event"] = 1653916458,
-							["nome"] = "Queliarel",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Sorcerer"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[42210] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Centurion"] = 0,
-											["Scarlet Myrmidon"] = 0,
-											["Scarlet Champion"] = 0,
-											["Scarlet Wizard"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Abbot"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 47,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 42210,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["RESIST"] = 47,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 0.007279,
-							["last_dps"] = 2.461474991290862e-05,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653916498,
-							["delay"] = 0,
-							["damage_taken"] = 0.007279,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 1320.004366,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 1943,
-							},
-							["serial"] = "Creature-0-4460-189-18533-4294-000194C1DB",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "4294",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1943.004366,
-							["damage_taken"] = 190.004366,
-							["dps_started"] = false,
-							["end_time"] = 1653916498,
-							["on_hold"] = false,
-							["last_event"] = 1653916448,
-							["nome"] = "Scarlet Sorcerer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Kawakii"] = 52,
-										},
-										["n_dmg"] = 52,
-										["n_min"] = 26,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 52,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[9672] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 117,
-										["targets"] = {
-											["Kawakii"] = 1891,
-										},
-										["n_dmg"] = 1891,
-										["n_min"] = 46,
-										["g_dmg"] = 0,
-										["counter"] = 22,
-										["total"] = 1891,
-										["c_max"] = 0,
-										["id"] = 9672,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 104,
-										["RESIST"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 1,
-										["n_amt"] = 21,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 1943.004366,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653916436,
-							["delay"] = 1653916448,
-							["fight_component"] = true,
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 195.001093,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 195,
-							},
-							["serial"] = "Creature-0-4460-189-18533-4295-000514C1DB",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "4295",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 195.001093,
-							["damage_taken"] = 753.001093,
-							["dps_started"] = false,
-							["end_time"] = 1653916498,
-							["on_hold"] = false,
-							["last_event"] = 1653916257,
-							["nome"] = "Scarlet Myrmidon",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 49,
-										["targets"] = {
-											["Kawakii"] = 195,
-										},
-										["n_dmg"] = 195,
-										["n_min"] = 24,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 195,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 3,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 195.001093,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653916483,
-							["delay"] = 1653916257,
-							["fight_component"] = true,
-						}, -- [4]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 18.004121,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Water Elemental <Kawakii>"] = 43,
-								["Kawakii"] = 81,
-							},
-							["serial"] = "Creature-0-4460-189-18533-4298-000094C1DB",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "4298",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 124.004121,
-							["damage_taken"] = 1089.004121,
-							["dps_started"] = false,
-							["end_time"] = 1653916498,
-							["on_hold"] = false,
-							["last_event"] = 1653916460,
-							["nome"] = "Scarlet Defender",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 54,
-										["targets"] = {
-											["Kawakii"] = 54,
-										},
-										["n_dmg"] = 54,
-										["n_min"] = 54,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 54,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[3639] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3639,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 15,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[7164] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 7164,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 4,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[11972] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Water Elemental <Kawakii>"] = 43,
-											["Kawakii"] = 27,
-										},
-										["n_dmg"] = 70,
-										["n_min"] = 1,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 70,
-										["c_max"] = 0,
-										["id"] = 11972,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 10,
-										["b_dmg"] = 1,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 124.004121,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653916497,
-							["delay"] = 1653916460,
-							["fight_component"] = true,
-						}, -- [5]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002233,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Water Elemental <Kawakii>"] = 31,
-							},
-							["serial"] = "Creature-0-4460-189-18533-4300-000014C1DB",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "4300",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 31.002233,
-							["damage_taken"] = 1006.002233,
-							["dps_started"] = false,
-							["end_time"] = 1653916498,
-							["on_hold"] = false,
-							["last_event"] = 1653916346,
-							["nome"] = "Scarlet Wizard",
-							["spells"] = {
-								["_ActorTable"] = {
-									[2601] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 2601,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 7,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[3054] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Water Elemental <Kawakii>"] = 31,
-										},
-										["n_dmg"] = 31,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 31,
-										["c_max"] = 0,
-										["id"] = 3054,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 31.002233,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653916497,
-							["delay"] = 1653916346,
-							["fight_component"] = true,
-						}, -- [6]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 8.003032,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Water Elemental <Kawakii>"] = 21,
-								["Kawakii"] = 8,
-							},
-							["serial"] = "Creature-0-4460-189-18533-4540-000194C1DB",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "4540",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 29.003032,
-							["damage_taken"] = 0.003032,
-							["dps_started"] = false,
-							["end_time"] = 1653916498,
-							["on_hold"] = false,
-							["last_event"] = 1653916346,
-							["nome"] = "Scarlet Monk",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3391] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3391,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 7,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[11978] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Water Elemental <Kawakii>"] = 21,
-											["Kawakii"] = 8,
-										},
-										["n_dmg"] = 29,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 29,
-										["c_max"] = 0,
-										["id"] = 11978,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 29.003032,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653916497,
-							["delay"] = 1653916346,
-							["fight_component"] = true,
-						}, -- [7]
-						{
-							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.00106,
-							["damage_from"] = {
-								["Scarlet Wizard"] = true,
-								["Scarlet Defender"] = true,
-								["Scarlet Monk"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["last_event"] = 1653916344,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.00106,
-							["serial"] = "Creature-0-4460-189-18533-510-000014C290",
-							["dps_started"] = false,
-							["end_time"] = 1653916498,
-							["total"] = 0.00106,
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[33395] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Champion"] = 0,
-											["Scarlet Wizard"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 33395,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["RESIST"] = 2,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["aID"] = "510",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 95.00106,
-							["start_time"] = 1653916498,
-							["delay"] = 0,
-							["classe"] = "PET",
-						}, -- [8]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 30,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["targets_overheal"] = {
-								["Kawakii"] = 752,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["aID"] = "4465-02BCE74D",
-							["totalover"] = 752.001943,
-							["total_without_pet"] = 7147.001943,
-							["total"] = 7147.001943,
-							["targets_absorbs"] = {
-								["Kawakii"] = 7049,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BCE74D",
-							["totalabsorb"] = 7049.001943,
-							["last_hps"] = 21.39801721241858,
-							["targets"] = {
-								["Kawakii"] = 7147,
-							},
-							["totalover_without_pet"] = 0.001943,
-							["healing_taken"] = 7147.001943,
-							["fight_component"] = true,
-							["end_time"] = 1653916498,
-							["classe"] = "MAGE",
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[27031] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Kawakii"] = 752,
-										},
-										["n_max"] = 98,
-										["targets"] = {
-											["Kawakii"] = 98,
-										},
-										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 752,
-										["total"] = 98,
-										["c_max"] = 0,
-										["id"] = 27031,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["n_curado"] = 98,
-										["absorbed"] = 0,
-									},
-									[33405] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 6950,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 152,
-										["targets"] = {
-											["Kawakii"] = 6950,
-										},
-										["n_min"] = 8,
-										["counter"] = 89,
-										["overheal"] = 0,
-										["total"] = 6950,
-										["c_max"] = 0,
-										["id"] = 33405,
-										["targets_absorbs"] = {
-											["Kawakii"] = 6950,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 89,
-										["n_curado"] = 6950,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[32796] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 99,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 53,
-										["targets"] = {
-											["Kawakii"] = 99,
-										},
-										["n_min"] = 46,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 99,
-										["c_max"] = 0,
-										["id"] = 32796,
-										["targets_absorbs"] = {
-											["Kawakii"] = 99,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["n_curado"] = 99,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Kawakii"] = true,
-							},
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653916448,
-							["start_time"] = 1653916331,
-							["totaldenied"] = 0.001943,
-							["delay"] = 1653916448,
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 30,
-					["_ActorTable"] = {
-						{
-							["received"] = 32312.001284,
-							["resource"] = 0.001284,
-							["targets"] = {
-								["Kawakii"] = 32312,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.001284,
-							["fight_component"] = true,
-							["total"] = 32312.001284,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[29442] = {
-										["total"] = 32312,
-										["id"] = 29442,
-										["totalover"] = 18047,
-										["targets"] = {
-											["Kawakii"] = 32312,
-										},
-										["counter"] = 92,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["flag_original"] = 1298,
-							["alternatepower"] = 0.001284,
-							["last_event"] = 1653916461,
-							["aID"] = "4465-02BCE74D",
-							["tipo"] = 3,
-							["serial"] = "Player-4465-02BCE74D",
-							["totalover"] = 18047.001284,
-						}, -- [1]
-						{
-							["received"] = 1737.002772,
-							["resource"] = 0.002772,
-							["targets"] = {
-								["Queliarel"] = 1737,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.002772,
-							["total"] = 1737.002772,
-							["nome"] = "Queliarel",
-							["spells"] = {
-								["_ActorTable"] = {
-									[12051] = {
-										["total"] = 1737,
-										["id"] = 12051,
-										["totalover"] = 0,
-										["targets"] = {
-											["Queliarel"] = 1737,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["flag_original"] = 1298,
-							["alternatepower"] = 0.002772,
-							["last_event"] = 1653916393,
-							["aID"] = "4465-02E08F27",
-							["tipo"] = 3,
-							["serial"] = "Player-4465-02E08F27",
-							["totalover"] = 0.002772,
-						}, -- [2]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 30,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[7321] = {
-										["appliedamt"] = 8,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 262,
-										["id"] = 7321,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[41425] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 30,
-										["id"] = 41425,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27088] = {
-										["appliedamt"] = 4,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 8,
-										["id"] = 27088,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[11196] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 60,
-										["id"] = 11196,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["spell_cast"] = {
-								[33405] = 5,
-								[1449] = 18,
-								[27031] = 1,
-								[30455] = 2,
-								[27088] = 3,
-								[1953] = 8,
-								[27085] = 27,
-								[12472] = 1,
-								[27082] = 12,
-								[31687] = 1,
-								[32796] = 4,
-								[45438] = 1,
-							},
-							["cooldowns_defensive"] = 1.008784,
-							["buff_uptime"] = 854,
-							["last_cooldown"] = {
-								1653916291.461, -- [1]
-								45438, -- [2]
-							},
-							["cc_done_spells"] = {
-								["_ActorTable"] = {
-									[27088] = {
-										["id"] = 27088,
-										["targets"] = {
-											["Scarlet Defender"] = 2,
-											["Scarlet Myrmidon"] = 2,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["aID"] = "4465-02BCE74D",
-							["cooldowns_defensive_targets"] = {
-								["Kawakii"] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[35084] = {
-										["appliedamt"] = 4,
-										["targets"] = {
-										},
-										["activedamt"] = 4,
-										["uptime"] = 40,
-										["id"] = 35084,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27124] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 2,
-										["id"] = 27124,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[33944] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 161,
-										["id"] = 33944,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27031] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 3,
-										["id"] = 27031,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[2479] = {
-										["appliedamt"] = 0,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 0,
-										["id"] = 2479,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[12472] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 20,
-										["id"] = 12472,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[45438] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 9,
-										["id"] = 45438,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1953] = {
-										["appliedamt"] = 8,
-										["targets"] = {
-										},
-										["activedamt"] = 8,
-										["uptime"] = 8,
-										["id"] = 1953,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[37444] = {
-										["appliedamt"] = 12,
-										["targets"] = {
-										},
-										["activedamt"] = 12,
-										["uptime"] = 92,
-										["id"] = 37444,
-										["refreshamt"] = 29,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27085] = {
-										["appliedamt"] = 27,
-										["targets"] = {
-										},
-										["activedamt"] = 27,
-										["uptime"] = 100,
-										["id"] = 27085,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[33405] = {
-										["appliedamt"] = 5,
-										["targets"] = {
-										},
-										["activedamt"] = 5,
-										["uptime"] = 232,
-										["id"] = 33405,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[12536] = {
-										["appliedamt"] = 11,
-										["targets"] = {
-										},
-										["activedamt"] = 11,
-										["uptime"] = 65,
-										["id"] = 12536,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[32796] = {
-										["appliedamt"] = 3,
-										["targets"] = {
-										},
-										["activedamt"] = 3,
-										["uptime"] = 120,
-										["id"] = 32796,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27126] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 2,
-										["id"] = 27126,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 360,
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[45438] = {
-										["id"] = 45438,
-										["targets"] = {
-											["Kawakii"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["cc_done"] = 4.002619,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["cc_done_targets"] = {
-								["Scarlet Defender"] = 2,
-								["Scarlet Myrmidon"] = 2,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Kawakii",
-							["tipo"] = 4,
-							["last_event"] = 1653916498,
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["serial"] = "Player-4465-02BCE74D",
-							["classe"] = "MAGE",
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Kaftunik",
-							["buff_uptime"] = 0,
-							["classe"] = "DRUID",
-							["pets"] = {
-							},
-							["last_event"] = 1653916164,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
-										["actived_at"] = 1653916164,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E9A18A",
-							["aID"] = "4465-02E9A18A",
-						}, -- [2]
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 3,
-							["classe"] = "DRUID",
-							["pets"] = {
-							},
-							["last_event"] = 1653916498,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 3,
-										["id"] = 768,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[2383] = {
-										["activedamt"] = 1,
-										["id"] = 2383,
-										["targets"] = {
-										},
-										["actived_at"] = 1653916495,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["aID"] = "4298",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[11972] = {
-										["id"] = 11972,
-										["interrompeu_oque"] = {
-											[27085] = 1,
-										},
-										["targets"] = {
-											["Kawakii"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[27085] = 1,
-							},
-							["fight_component"] = true,
-							["interrupt"] = 1.006378,
-							["interrupt_targets"] = {
-								["Kawakii"] = 1,
-							},
-							["spell_cast"] = {
-								[3639] = 15,
-								[7164] = 4,
-							},
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 1653916460,
-							["monster"] = true,
-							["serial"] = "Creature-0-4460-189-18533-4298-000094C1DB",
-							["nome"] = "Scarlet Defender",
-						}, -- [4]
-						{
-							["flag_original"] = 1298,
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Queliarel",
-							["spell_cast"] = {
-								[8427] = 4,
-								[8407] = 2,
-								[12051] = 1,
-								[1953] = 1,
-								[8495] = 5,
-							},
-							["classe"] = "MAGE",
-							["buff_uptime"] = 216,
-							["last_event"] = 1653916492,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8427] = {
-										["appliedamt"] = 4,
-										["targets"] = {
-										},
-										["activedamt"] = 4,
-										["uptime"] = 29,
-										["id"] = 8427,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8495] = {
-										["activedamt"] = 3,
-										["id"] = 8495,
-										["targets"] = {
-										},
-										["actived_at"] = 1653916450,
-										["uptime"] = 178,
-										["appliedamt"] = 3,
-										["refreshamt"] = 2,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[1953] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 1,
-										["id"] = 1953,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[12051] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 8,
-										["id"] = 12051,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E08F27",
-							["aID"] = "4465-02E08F27",
-						}, -- [5]
-						{
-							["monster"] = true,
-							["tipo"] = 4,
-							["nome"] = "Scarlet Wizard",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[2601] = 7,
-							},
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4460-189-18533-4300-000014C1DB",
-							["aID"] = "4300",
-						}, -- [6]
-						{
-							["monster"] = true,
-							["tipo"] = 4,
-							["nome"] = "Scarlet Monk",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[3391] = 7,
-							},
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4460-189-18533-4540-000194C1DB",
-							["aID"] = "4540",
-						}, -- [7]
-						{
-							["monster"] = true,
-							["tipo"] = 4,
-							["nome"] = "Scarlet Sorcerer",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[9672] = 2,
-							},
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4460-189-18533-4294-000094C1DC",
-							["aID"] = "4294",
-						}, -- [8]
-						{
-							["flag_original"] = 4370,
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[33395] = 2,
-								[31707] = 4,
-							},
-							["aID"] = "510",
-							["classe"] = "PET",
-							["serial"] = "Creature-0-4460-189-18533-510-000014C290",
-							["last_event"] = 0,
-						}, -- [9]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 30,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vaelyah"] = true,
-					["Kawakii"] = true,
-					["Kaftunik"] = true,
-					["Queliarel"] = true,
-					["Moolatz"] = true,
-				},
-				["CombatStartedAt"] = 1644905.397,
-				["tempo_start"] = 1653916164,
-				["cleu_timeline"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Scarlet Defender",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["raid_roster_indexed"] = {
-					"Queliarel", -- [1]
-					"Kaftunik", -- [2]
-					"Vaelyah", -- [3]
-					"Kawakii", -- [4]
-					"Moolatz", -- [5]
-				},
-				["totals"] = {
-					6543.99134, -- [1]
-					7147, -- [2]
-					{
-						0, -- [1]
-						[0] = 34049,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 1,
-						["dispell"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					4222, -- [1]
-					7147, -- [2]
-					{
-						0, -- [1]
-						[0] = 34049,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 1,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["last_events_tables"] = {
-				},
-				["frags_need_refresh"] = true,
+				["enemy"] = "Sparkleshell Snapper",
+				["TotalElapsedCombatTime"] = 16.08499999996275,
+				["CombatEndedAt"] = 1664426.403,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -15034,3583 +1039,36 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Kawakii"] = 7147.001943,
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Queliarel"] = 0.007279,
-							["Kawakii"] = 3038.0085,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 1644879.311,
-				["combat_counter"] = 9157,
-				["instance_type"] = "none",
-				["player_last_events"] = {
-				},
-				["combat_id"] = 30,
-				["hasSaved"] = true,
-				["frags"] = {
-					["Scarlet Defender"] = 1,
-					["Scarlet Wizard"] = 2,
-				},
-				["data_fim"] = "15:14:59",
-				["data_inicio"] = "15:09:25",
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Scarlet Defender",
-				["start_time"] = 1644545.308,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [12]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 25,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 66834,
-							["totalabsorbed"] = 224.001707,
-							["damage_from"] = {
-								["Scarlet Champion"] = true,
-								["Scarlet Sorcerer"] = true,
-								["Scarlet Myrmidon"] = true,
-								["Scarlet Wizard"] = true,
-								["Scarlet Defender"] = true,
-								["Scarlet Monk"] = true,
-							},
-							["targets"] = {
-								["Scarlet Sorcerer"] = 596,
-								["Scarlet Myrmidon"] = 913,
-								["Scarlet Wizard"] = 95,
-								["Scarlet Defender"] = 617,
-								["Scarlet Commander Mograine"] = 794,
-							},
-							["serial"] = "Player-4465-02BCE74D",
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["colocacao"] = 1,
-							["classe"] = "MAGE",
-							["aID"] = "4465-02BCE74D",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 3015.001707,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1653914955,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1653914905,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 43,
-										["g_amt"] = 0,
-										["n_max"] = 113,
-										["targets"] = {
-											["Scarlet Commander Mograine"] = 794,
-										},
-										["n_dmg"] = 751,
-										["n_min"] = 51,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 794,
-										["c_max"] = 43,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 43,
-										["c_min"] = 43,
-										["successful_casted"] = 0,
-										["a_amt"] = 1,
-										["n_amt"] = 10,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[1449] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 578,
-										["g_amt"] = 0,
-										["n_max"] = 98,
-										["targets"] = {
-											["Scarlet Wizard"] = 95,
-											["Scarlet Sorcerer"] = 430,
-											["Scarlet Myrmidon"] = 913,
-										},
-										["n_dmg"] = 860,
-										["n_min"] = 93,
-										["g_dmg"] = 0,
-										["counter"] = 13,
-										["total"] = 1438,
-										["c_max"] = 147,
-										["id"] = 1449,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 141,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 9,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[7321] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Commander Mograine"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 7321,
-										["r_dmg"] = 0,
-										["IMMUNE"] = 1,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[42198] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Chaplain"] = 0,
-											["Scarlet Champion"] = 0,
-											["Scarlet Sorcerer"] = 0,
-											["Scarlet Myrmidon"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Abbot"] = 0,
-											["Scarlet Monk"] = 0,
-											["Scarlet Wizard"] = 0,
-											["Scarlet Centurion"] = 0,
-											["Scarlet Commander Mograine"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 74,
-										["total"] = 0,
-										["c_max"] = 0,
-										["IMMUNE"] = 5,
-										["id"] = 42198,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["RESIST"] = 69,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[27088] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 298,
-										["g_amt"] = 0,
-										["n_max"] = 166,
-										["targets"] = {
-											["Scarlet Champion"] = 0,
-											["Scarlet Sorcerer"] = 166,
-											["Scarlet Defender"] = 617,
-										},
-										["n_dmg"] = 485,
-										["n_min"] = 153,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 783,
-										["c_max"] = 298,
-										["id"] = 27088,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["c_min"] = 298,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 3015.001707,
-							["last_dps"] = 8.468772876904593,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 1801.001707,
-							["start_time"] = 1653914772,
-							["delay"] = 1653914905,
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.006548,
-							["damage_from"] = {
-								["Scarlet Wizard"] = true,
-							},
-							["targets"] = {
-							},
-							["serial"] = "Player-4465-02E08F27",
-							["pets"] = {
-							},
-							["colocacao"] = 2,
-							["classe"] = "MAGE",
-							["aID"] = "4465-02E08F27",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.006548,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1653914955,
-							["on_hold"] = false,
-							["last_event"] = 1653914889,
-							["nome"] = "Queliarel",
-							["spells"] = {
-								["_ActorTable"] = {
-									[42210] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Chaplain"] = 0,
-											["Scarlet Champion"] = 0,
-											["Scarlet Sorcerer"] = 0,
-											["Scarlet Myrmidon"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Abbot"] = 0,
-											["Scarlet Wizard"] = 0,
-											["Scarlet Centurion"] = 0,
-											["Scarlet Commander Mograine"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 41,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 42210,
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["extra"] = {
-										},
-										["RESIST"] = 41,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 0.006548,
-							["last_dps"] = 2.078288110147742e-05,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653914955,
-							["delay"] = 0,
-							["damage_taken"] = 322.006548,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 605.001758,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 1107,
-							},
-							["serial"] = "Creature-0-4457-189-17649-4294-000094BB6A",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "4294",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1107.001758,
-							["damage_taken"] = 596.001758,
-							["dps_started"] = false,
-							["end_time"] = 1653914955,
-							["on_hold"] = false,
-							["last_event"] = 1653914906,
-							["nome"] = "Scarlet Sorcerer",
-							["spells"] = {
-								["_ActorTable"] = {
-									[9672] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Kawakii"] = 1107,
-										},
-										["n_dmg"] = 1107,
-										["n_min"] = 43,
-										["g_dmg"] = 0,
-										["counter"] = 25,
-										["total"] = 1107,
-										["c_max"] = 0,
-										["id"] = 9672,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["RESIST"] = 3,
-										["c_min"] = 0,
-										["successful_casted"] = 3,
-										["a_amt"] = 0,
-										["n_amt"] = 22,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[6146] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Kawakii"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 6146,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["RESIST"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 1107.001758,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653914899,
-							["delay"] = 1653914906,
-							["fight_component"] = true,
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 223.00181,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Water Elemental <Kawakii>"] = 62,
-								["Queliarel"] = 322,
-								["Kawakii"] = 48,
-							},
-							["serial"] = "Creature-0-4457-189-17649-4300-000194BB69",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "4300",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 432.00181,
-							["damage_taken"] = 95.00181,
-							["dps_started"] = false,
-							["end_time"] = 1653914955,
-							["on_hold"] = false,
-							["last_event"] = 1653914888,
-							["nome"] = "Scarlet Wizard",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 48,
-										["targets"] = {
-											["Kawakii"] = 48,
-										},
-										["n_dmg"] = 48,
-										["n_min"] = 48,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 48,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[8439] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 147,
-										["targets"] = {
-											["Queliarel"] = 292,
-										},
-										["n_dmg"] = 292,
-										["n_min"] = 145,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 292,
-										["c_max"] = 0,
-										["id"] = 8439,
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["extra"] = {
-										},
-										["a_dmg"] = 147,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 1,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[3054] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Queliarel"] = 30,
-											["Water Elemental <Kawakii>"] = 62,
-										},
-										["n_dmg"] = 92,
-										["n_min"] = 30,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 92,
-										["c_max"] = 0,
-										["id"] = 3054,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[2601] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 2601,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 7,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 432.00181,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653914951,
-							["delay"] = 1653914888,
-							["fight_component"] = true,
-						}, -- [4]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 176.005122,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Water Elemental <Kawakii>"] = 28,
-								["Kawakii"] = 245,
-							},
-							["serial"] = "Creature-0-4457-189-17649-4298-000394BB6A",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "4298",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 273.005122,
-							["damage_taken"] = 617.005122,
-							["dps_started"] = false,
-							["end_time"] = 1653914955,
-							["on_hold"] = false,
-							["last_event"] = 1653914892,
-							["nome"] = "Scarlet Defender",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 60,
-										["targets"] = {
-											["Kawakii"] = 227,
-										},
-										["n_dmg"] = 227,
-										["n_min"] = 53,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 227,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[11972] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Water Elemental <Kawakii>"] = 28,
-											["Kawakii"] = 18,
-										},
-										["n_dmg"] = 46,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 46,
-										["c_max"] = 0,
-										["id"] = 11972,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[7164] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 7164,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 6,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[3639] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3639,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 10,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 273.005122,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653914934,
-							["delay"] = 1653914892,
-							["fight_component"] = true,
-						}, -- [5]
-						{
-							["flag_original"] = 2600,
-							["totalabsorbed"] = 0.002684,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Kawakii"] = 253,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["friendlyfire_total"] = 0,
-							["aID"] = "4302",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 253.002684,
-							["serial"] = "Creature-0-4457-189-17649-4302-000114BB6A",
-							["fight_component"] = true,
-							["end_time"] = 1653914955,
-							["damage_taken"] = 0.002684,
-							["on_hold"] = false,
-							["nome"] = "Scarlet Champion",
-							["spells"] = {
-								["_ActorTable"] = {
-									[17143] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 253,
-										["targets"] = {
-											["Kawakii"] = 253,
-										},
-										["n_dmg"] = 253,
-										["n_min"] = 253,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 253,
-										["c_max"] = 0,
-										["id"] = 17143,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1653914914,
-							["dps_started"] = false,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653914954,
-							["delay"] = 1653914914,
-							["total"] = 253.002684,
-						}, -- [6]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 130.008883,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 130,
-							},
-							["serial"] = "Creature-0-4457-189-17649-4295-000194BB6A",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "4295",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 130.008883,
-							["damage_taken"] = 913.008883,
-							["dps_started"] = false,
-							["end_time"] = 1653914955,
-							["on_hold"] = false,
-							["last_event"] = 1653914691,
-							["nome"] = "Scarlet Myrmidon",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 51,
-										["targets"] = {
-											["Kawakii"] = 130,
-										},
-										["n_dmg"] = 130,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 130,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 130.008883,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653914947,
-							["delay"] = 1653914691,
-							["fight_component"] = true,
-						}, -- [7]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 9.008622,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Kawakii"] = 18,
-							},
-							["serial"] = "Creature-0-4457-189-17649-4540-000394BB69",
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["aID"] = "4540",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 18.008622,
-							["damage_taken"] = 0.008622,
-							["dps_started"] = false,
-							["end_time"] = 1653914955,
-							["on_hold"] = false,
-							["last_event"] = 1653914896,
-							["nome"] = "Scarlet Monk",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3391] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3391,
-										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 9,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[11978] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Kawakii"] = 18,
-										},
-										["n_dmg"] = 18,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 18,
-										["c_max"] = 0,
-										["id"] = 11978,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["total"] = 18.008622,
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["start_time"] = 1653914954,
-							["delay"] = 1653914896,
-							["fight_component"] = true,
-						}, -- [8]
-						{
-							["flag_original"] = 2600,
-							["totalabsorbed"] = 0.008186,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008186,
-							["serial"] = "Creature-0-4457-189-17649-3976-000014BB69",
-							["fight_component"] = true,
-							["total"] = 0.008186,
-							["end_time"] = 1653914955,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Scarlet Commander Mograine",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 0,
-							["dps_started"] = false,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 794.008186,
-							["start_time"] = 1653914955,
-							["delay"] = 0,
-							["aID"] = "3976",
-						}, -- [9]
-						{
-							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.003211,
-							["damage_from"] = {
-								["Scarlet Defender"] = true,
-								["Scarlet Wizard"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["last_event"] = 0,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.003211,
-							["serial"] = "Creature-0-4457-189-17649-510-000014BC71",
-							["dps_started"] = false,
-							["end_time"] = 1653914955,
-							["total"] = 0.003211,
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["aID"] = "510",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 90.003211,
-							["start_time"] = 1653914955,
-							["delay"] = 0,
-							["classe"] = "PET",
-						}, -- [10]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 25,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 66834,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["aID"] = "4465-02BCE74D",
-							["totalover"] = 0.008137,
-							["total_without_pet"] = 7678.008137,
-							["total"] = 7678.008137,
-							["targets_absorbs"] = {
-								["Kawakii"] = 5543,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BCE74D",
-							["totalabsorb"] = 5543.008137,
-							["last_hps"] = 21.56659046272254,
-							["targets"] = {
-								["Kawakii"] = 7678,
-							},
-							["totalover_without_pet"] = 0.008137,
-							["healing_taken"] = 7678.008137,
-							["fight_component"] = true,
-							["end_time"] = 1653914955,
-							["classe"] = "MAGE",
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[33405] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 5543,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 149,
-										["targets"] = {
-											["Kawakii"] = 5543,
-										},
-										["n_min"] = 9,
-										["counter"] = 77,
-										["overheal"] = 0,
-										["total"] = 5543,
-										["c_max"] = 0,
-										["id"] = 33405,
-										["targets_absorbs"] = {
-											["Kawakii"] = 5543,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 77,
-										["n_curado"] = 5543,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[28495] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 2135,
-										["targets"] = {
-											["Kawakii"] = 2135,
-										},
-										["n_min"] = 2135,
-										["counter"] = 1,
-										["overheal"] = 0,
-										["total"] = 2135,
-										["c_max"] = 0,
-										["id"] = 28495,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 2135,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Kawakii"] = true,
-							},
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653914924,
-							["start_time"] = 1653914833,
-							["totaldenied"] = 0.008137,
-							["delay"] = 1653914924,
-							["tipo"] = 2,
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["aID"] = "4465-02E08F27",
-							["totalover"] = 0.008838,
-							["total_without_pet"] = 205.008838,
-							["total"] = 205.008838,
-							["targets_absorbs"] = {
-								["Queliarel"] = 205,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 2,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02E08F27",
-							["totalabsorb"] = 205.008838,
-							["last_hps"] = 0.5758448768865416,
-							["targets"] = {
-								["Queliarel"] = 205,
-							},
-							["totalover_without_pet"] = 0.008838,
-							["healing_taken"] = 205.008838,
-							["fight_component"] = true,
-							["end_time"] = 1653914955,
-							["classe"] = "MAGE",
-							["nome"] = "Queliarel",
-							["spells"] = {
-								["_ActorTable"] = {
-									[8495] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 205,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 145,
-										["targets"] = {
-											["Queliarel"] = 205,
-										},
-										["n_min"] = 30,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 205,
-										["c_max"] = 0,
-										["id"] = 8495,
-										["targets_absorbs"] = {
-											["Queliarel"] = 205,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 3,
-										["n_curado"] = 205,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Queliarel"] = true,
-							},
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653914888,
-							["start_time"] = 1653914951,
-							["totaldenied"] = 0.008838,
-							["delay"] = 1653914888,
-							["tipo"] = 2,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 25,
-					["_ActorTable"] = {
-						{
-							["received"] = 40755.005242,
-							["resource"] = 0.005242,
-							["targets"] = {
-								["Kawakii"] = 40755,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.005242,
-							["fight_component"] = true,
-							["total"] = 40755.005242,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[29442] = {
-										["total"] = 40755,
-										["id"] = 29442,
-										["totalover"] = 19447,
-										["targets"] = {
-											["Kawakii"] = 40755,
-										},
-										["counter"] = 110,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["flag_original"] = 1298,
-							["alternatepower"] = 0.005242,
-							["last_event"] = 1653914919,
-							["aID"] = "4465-02BCE74D",
-							["tipo"] = 3,
-							["serial"] = "Player-4465-02BCE74D",
-							["totalover"] = 19447.005242,
-						}, -- [1]
-						{
-							["received"] = 1738.004929,
-							["resource"] = 0.004929,
-							["targets"] = {
-								["Queliarel"] = 1738,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.004929,
-							["fight_component"] = true,
-							["total"] = 1738.004929,
-							["nome"] = "Queliarel",
-							["spells"] = {
-								["_ActorTable"] = {
-									[12051] = {
-										["total"] = 1738,
-										["id"] = 12051,
-										["totalover"] = 0,
-										["targets"] = {
-											["Queliarel"] = 1738,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["flag_original"] = 1298,
-							["alternatepower"] = 0.004929,
-							["last_event"] = 1653914900,
-							["aID"] = "4465-02E08F27",
-							["tipo"] = 3,
-							["serial"] = "Player-4465-02E08F27",
-							["totalover"] = 0.004929,
-						}, -- [2]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 25,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[7321] = {
-										["appliedamt"] = 9,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 289,
-										["id"] = 7321,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[41425] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 30,
-										["id"] = 41425,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27088] = {
-										["appliedamt"] = 4,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 8,
-										["id"] = 27088,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[11196] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 60,
-										["id"] = 11196,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["spell_cast"] = {
-								[33405] = 5,
-								[1449] = 20,
-								[27031] = 1,
-								[30455] = 2,
-								[27088] = 3,
-								[1953] = 7,
-								[28495] = 1,
-								[27085] = 34,
-								[27082] = 7,
-								[31687] = 1,
-								[32796] = 1,
-								[45438] = 1,
-							},
-							["cooldowns_defensive"] = 1.008559,
-							["buff_uptime"] = 546,
-							["last_cooldown"] = {
-								1653914724.682, -- [1]
-								45438, -- [2]
-							},
-							["cc_done_spells"] = {
-								["_ActorTable"] = {
-									[27088] = {
-										["id"] = 27088,
-										["targets"] = {
-											["Scarlet Sorcerer"] = 1,
-											["Scarlet Defender"] = 3,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["aID"] = "4465-02BCE74D",
-							["cooldowns_defensive_targets"] = {
-								["Kawakii"] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[33944] = {
-										["activedamt"] = 1,
-										["id"] = 33944,
-										["targets"] = {
-										},
-										["actived_at"] = 1653914599,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[27124] = {
-										["activedamt"] = 1,
-										["id"] = 27124,
-										["targets"] = {
-										},
-										["actived_at"] = 1653914599,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[27031] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 1,
-										["id"] = 27031,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[35084] = {
-										["appliedamt"] = 3,
-										["targets"] = {
-										},
-										["activedamt"] = 3,
-										["uptime"] = 30,
-										["id"] = 35084,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[45438] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 9,
-										["id"] = 45438,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1953] = {
-										["appliedamt"] = 7,
-										["targets"] = {
-										},
-										["activedamt"] = 7,
-										["uptime"] = 7,
-										["id"] = 1953,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[37444] = {
-										["appliedamt"] = 6,
-										["targets"] = {
-										},
-										["activedamt"] = 6,
-										["uptime"] = 58,
-										["id"] = 37444,
-										["refreshamt"] = 21,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27085] = {
-										["appliedamt"] = 34,
-										["targets"] = {
-										},
-										["activedamt"] = 34,
-										["uptime"] = 117,
-										["id"] = 27085,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[33405] = {
-										["activedamt"] = 6,
-										["id"] = 33405,
-										["targets"] = {
-										},
-										["actived_at"] = 1653914916,
-										["uptime"] = 243,
-										["appliedamt"] = 6,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[12536] = {
-										["appliedamt"] = 8,
-										["targets"] = {
-										},
-										["activedamt"] = 8,
-										["uptime"] = 51,
-										["id"] = 12536,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[32796] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 30,
-										["id"] = 32796,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[27126] = {
-										["activedamt"] = 1,
-										["id"] = 27126,
-										["targets"] = {
-										},
-										["actived_at"] = 1653914599,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 387,
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[45438] = {
-										["id"] = 45438,
-										["targets"] = {
-											["Kawakii"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["cc_done"] = 4.001914,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["cc_done_targets"] = {
-								["Scarlet Sorcerer"] = 1,
-								["Scarlet Defender"] = 3,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Kawakii",
-							["tipo"] = 4,
-							["last_event"] = 1653914941,
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["serial"] = "Player-4465-02BCE74D",
-							["classe"] = "MAGE",
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Kaftunik",
-							["buff_uptime"] = 0,
-							["classe"] = "DRUID",
-							["pets"] = {
-							},
-							["last_event"] = 1653914599,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
-										["actived_at"] = 1653914599,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E9A18A",
-							["aID"] = "4465-02E9A18A",
-						}, -- [2]
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Moolatz",
-							["buff_uptime"] = 0,
-							["classe"] = "DRUID",
-							["pets"] = {
-							},
-							["last_event"] = 1653914599,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
-										["actived_at"] = 1653914599,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["aID"] = "4465-02B843FA",
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["aID"] = "4298",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[11972] = {
-										["id"] = 11972,
-										["interrompeu_oque"] = {
-											[31707] = 2,
-										},
-										["targets"] = {
-											["Water Elemental"] = 2,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[31707] = 2,
-							},
-							["fight_component"] = true,
-							["interrupt"] = 2.0086,
-							["interrupt_targets"] = {
-								["Water Elemental"] = 2,
-							},
-							["spell_cast"] = {
-								[11972] = 1,
-								[7164] = 6,
-								[3639] = 10,
-							},
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 1653914770,
-							["monster"] = true,
-							["serial"] = "Creature-0-4457-189-17649-4298-000494BB6A",
-							["nome"] = "Scarlet Defender",
-						}, -- [4]
-						{
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["flag_original"] = 1298,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["nome"] = "Queliarel",
-							["spell_cast"] = {
-								[1953] = 4,
-								[8495] = 4,
-								[12051] = 1,
-								[8427] = 4,
-							},
-							["buff_uptime"] = 193,
-							["classe"] = "MAGE",
-							["tipo"] = 4,
-							["aID"] = "4465-02E08F27",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[1953] = {
-										["appliedamt"] = 4,
-										["targets"] = {
-										},
-										["activedamt"] = 4,
-										["uptime"] = 4,
-										["id"] = 1953,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8495] = {
-										["activedamt"] = 4,
-										["id"] = 8495,
-										["targets"] = {
-										},
-										["actived_at"] = 1653914900,
-										["uptime"] = 153,
-										["appliedamt"] = 4,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									[12051] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 8,
-										["id"] = 12051,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[8427] = {
-										["appliedamt"] = 4,
-										["targets"] = {
-										},
-										["activedamt"] = 4,
-										["uptime"] = 28,
-										["id"] = 8427,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E08F27",
-							["last_event"] = 1653914947,
-						}, -- [5]
-						{
-							["monster"] = true,
-							["tipo"] = 4,
-							["nome"] = "Scarlet Wizard",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[2601] = 7,
-							},
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4457-189-17649-4300-000194BB69",
-							["aID"] = "4300",
-						}, -- [6]
-						{
-							["monster"] = true,
-							["tipo"] = 4,
-							["nome"] = "Scarlet Monk",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[3391] = 9,
-							},
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4457-189-17649-4540-000394BB69",
-							["aID"] = "4540",
-						}, -- [7]
-						{
-							["monster"] = true,
-							["tipo"] = 4,
-							["nome"] = "Scarlet Sorcerer",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[9672] = 3,
-								[6146] = 1,
-							},
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4457-189-17649-4294-000094BB69",
-							["aID"] = "4294",
-						}, -- [8]
-						{
-							["flag_original"] = 4370,
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								[31707] = 4,
-							},
-							["aID"] = "510",
-							["classe"] = "PET",
-							["serial"] = "Creature-0-4457-189-17649-510-000014BC71",
-							["last_event"] = 0,
-						}, -- [9]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 25,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vaelyah"] = true,
-					["Kawakii"] = true,
-					["Kaftunik"] = true,
-					["Queliarel"] = true,
-					["Moolatz"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Queliarel", -- [1]
-					"Kaftunik", -- [2]
-					"Vaelyah", -- [3]
-					"Kawakii", -- [4]
-					"Moolatz", -- [5]
-				},
-				["tempo_start"] = 1653914599,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Scarlet Defender",
-				["combat_counter"] = 9152,
-				["totals"] = {
-					5227.968666, -- [1]
-					7883, -- [2]
-					{
-						0, -- [1]
-						[0] = 42493,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 1,
-						["dispell"] = 0,
-						["interrupt"] = 1.997265,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
 					["damage_section"] = {
 					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Queliarel"] = 205.008838,
-							["Kawakii"] = 7678.008137,
-						}, -- [1]
-					},
 					["damage"] = {
 						{
-							["Queliarel"] = 0.006548,
-							["Kawakii"] = 3015.001707,
+							["Moolatz"] = 1452.008718,
 						}, -- [1]
 					},
 				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "14:43:20",
-				["end_time"] = 1643336.194,
-				["combat_id"] = 25,
-				["instance_type"] = "none",
-				["contra"] = "Scarlet Defender",
-				["cleu_timeline"] = {
-				},
-				["hasSaved"] = true,
+				["end_time"] = 1664426.403,
+				["combat_id"] = 109,
 				["spells_cast_timeline"] = {
 				},
-				["data_fim"] = "14:49:16",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Water Elemental"] = 1,
-				},
-				["start_time"] = 1642980.18,
-				["TimeData"] = {
-				},
-				["totals_grupo"] = {
-					3015, -- [1]
-					7883, -- [2]
-					{
-						0, -- [1]
-						[0] = 42493,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 1,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-			}, -- [13]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 21,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.004489,
-							["damage_from"] = {
-								["Scarlet Centurion"] = true,
-								["Scarlet Sorcerer"] = true,
-								["Scarlet Myrmidon"] = true,
-								["Scarlet Monk"] = true,
-								["Scarlet Defender"] = true,
-								["Scarlet Evoker"] = true,
-							},
-							["targets"] = {
-								["Scarlet Centurion"] = 1372,
-								["Scarlet Sorcerer"] = 283,
-								["Scarlet Myrmidon"] = 978,
-								["Scarlet Wizard"] = 175,
-								["Scarlet Defender"] = 488,
-								["Scarlet Champion"] = 273,
-							},
-							["delay"] = 1653913999,
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["custom"] = 0,
-							["aID"] = "4465-02BCE74D",
-							["classe"] = "MAGE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 3569.004489,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 3569.004489,
-							["damage_taken"] = 3814.004489,
-							["tipo"] = 1,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[42198] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Chaplain"] = 0,
-											["Scarlet Champion"] = 0,
-											["Scarlet Sorcerer"] = 0,
-											["Scarlet Myrmidon"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Abbot"] = 0,
-											["Scarlet Monk"] = 0,
-											["Scarlet Wizard"] = 0,
-											["Scarlet Centurion"] = 0,
-											["Scarlet Commander Mograine"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 77,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 42198,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["RESIST"] = 75,
-										["spellschool"] = 16,
-										["EVADE"] = 2,
-									},
-									[2139] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Commander Mograine"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 2139,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 64,
-										["IMMUNE"] = 1,
-									},
-									[27088] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 170,
-										["targets"] = {
-											["Scarlet Defender"] = 308,
-											["Scarlet Myrmidon"] = 329,
-										},
-										["n_dmg"] = 637,
-										["n_min"] = 143,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 637,
-										["c_max"] = 0,
-										["id"] = 27088,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-									[1449] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 279,
-										["g_amt"] = 0,
-										["n_max"] = 97,
-										["targets"] = {
-											["Scarlet Defender"] = 180,
-											["Scarlet Centurion"] = 288,
-											["Scarlet Sorcerer"] = 283,
-											["Scarlet Myrmidon"] = 649,
-										},
-										["n_dmg"] = 1121,
-										["n_min"] = 84,
-										["g_dmg"] = 0,
-										["counter"] = 14,
-										["total"] = 1400,
-										["c_max"] = 144,
-										["id"] = 1449,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 135,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 12,
-										["extra"] = {
-										},
-										["spellschool"] = 64,
-									},
-									[27082] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 601,
-										["targets"] = {
-											["Scarlet Champion"] = 0,
-											["Scarlet Wizard"] = 175,
-											["Scarlet Centurion"] = 1084,
-											["Scarlet Abbot"] = 0,
-										},
-										["n_dmg"] = 1259,
-										["n_min"] = 175,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 1259,
-										["c_max"] = 0,
-										["id"] = 27082,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 64,
-									},
-									[30455] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 273,
-										["targets"] = {
-											["Scarlet Champion"] = 273,
-										},
-										["n_dmg"] = 273,
-										["n_min"] = 273,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 273,
-										["c_max"] = 0,
-										["id"] = 30455,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1653914024,
-							["on_hold"] = false,
-							["colocacao"] = 1,
-							["last_event"] = 1653913999,
-							["last_dps"] = 9.740626436935885,
-							["start_time"] = 1653913856,
-							["serial"] = "Player-4465-02BCE74D",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 2783.008583,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 3187,
-							},
-							["delay"] = 1653913993,
-							["pets"] = {
-							},
-							["end_time"] = 1653914024,
-							["aID"] = "4294",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 3187.008583,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 3187.008583,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Sorcerer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 27,
-										["targets"] = {
-											["Kawakii"] = 49,
-										},
-										["n_dmg"] = 49,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 49,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[9672] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 119,
-										["targets"] = {
-											["Kawakii"] = 3138,
-										},
-										["n_dmg"] = 3138,
-										["n_min"] = 86,
-										["g_dmg"] = 0,
-										["counter"] = 34,
-										["total"] = 3138,
-										["c_max"] = 0,
-										["id"] = 9672,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 30,
-										["c_min"] = 0,
-										["successful_casted"] = 4,
-										["a_amt"] = 0,
-										["RESIST"] = 4,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["damage_taken"] = 283.008583,
-							["fight_component"] = true,
-							["custom"] = 0,
-							["last_event"] = 1653913993,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653913940,
-							["serial"] = "Creature-0-4458-189-29768-4294-000214B781",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 207.008803,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 207,
-							},
-							["delay"] = 1653913751,
-							["pets"] = {
-							},
-							["end_time"] = 1653914024,
-							["aID"] = "4295",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 207.008803,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 207.008803,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Myrmidon",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 56,
-										["targets"] = {
-											["Kawakii"] = 207,
-										},
-										["n_dmg"] = 207,
-										["n_min"] = 25,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 207,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 5,
-										["spellschool"] = 1,
-										["MISS"] = 3,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["damage_taken"] = 978.008803,
-							["fight_component"] = true,
-							["custom"] = 0,
-							["last_event"] = 1653913751,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653914010,
-							["serial"] = "Creature-0-4458-189-29768-4295-000694B781",
-							["classe"] = "UNKNOW",
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 8.001583,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Kawakii"] = 179,
-							},
-							["delay"] = 1653913980,
-							["pets"] = {
-							},
-							["end_time"] = 1653914024,
-							["aID"] = "4540",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 179.001583,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 179.001583,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Monk",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 86,
-										["targets"] = {
-											["Kawakii"] = 171,
-										},
-										["n_dmg"] = 171,
-										["n_min"] = 85,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 171,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 2,
-										["spellschool"] = 1,
-										["MISS"] = 3,
-									}, -- [1]
-									[11978] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Kawakii"] = 8,
-										},
-										["n_dmg"] = 8,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 8,
-										["c_max"] = 0,
-										["id"] = 11978,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-									[3391] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3391,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 10,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["damage_taken"] = 0.001583,
-							["fight_component"] = true,
-							["custom"] = 0,
-							["last_event"] = 1653913980,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653914023,
-							["serial"] = "Creature-0-4458-189-29768-4540-000694B780",
-							["classe"] = "UNKNOW",
-						}, -- [4]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 138.003339,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 138,
-							},
-							["delay"] = 1653913948,
-							["pets"] = {
-							},
-							["end_time"] = 1653914024,
-							["aID"] = "4301",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 138.003339,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 138.003339,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Centurion",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 138,
-										["targets"] = {
-											["Kawakii"] = 138,
-										},
-										["n_dmg"] = 138,
-										["n_min"] = 138,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 138,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[31403] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 31403,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 10,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["damage_taken"] = 1372.003339,
-							["fight_component"] = true,
-							["custom"] = 0,
-							["last_event"] = 1653913948,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653914023,
-							["serial"] = "Creature-0-4458-189-29768-4301-000014B781",
-							["classe"] = "UNKNOW",
-						}, -- [5]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 90.007745,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 81,
-								["Water Elemental <Kawakii>"] = 7,
-							},
-							["delay"] = 1653913957,
-							["pets"] = {
-							},
-							["end_time"] = 1653914024,
-							["aID"] = "4298",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 88.007745,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 88.007745,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Defender",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 63,
-										["targets"] = {
-											["Kawakii"] = 63,
-										},
-										["n_dmg"] = 63,
-										["n_min"] = 63,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 63,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 1,
-										["spellschool"] = 1,
-										["MISS"] = 3,
-									}, -- [1]
-									[11972] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Kawakii"] = 18,
-											["Water Elemental <Kawakii>"] = 7,
-										},
-										["n_dmg"] = 25,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 25,
-										["c_max"] = 0,
-										["id"] = 11972,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[7164] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 7164,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 5,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[3639] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3639,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 9,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["damage_taken"] = 488.007745,
-							["fight_component"] = true,
-							["custom"] = 0,
-							["last_event"] = 1653914225,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653914023,
-							["serial"] = "Creature-0-4458-189-29768-4298-000114B780",
-							["classe"] = "UNKNOW",
-						}, -- [6]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.00204,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Water Elemental <Kawakii>"] = 30,
-							},
-							["delay"] = 1653913815,
-							["pets"] = {
-							},
-							["end_time"] = 1653914024,
-							["aID"] = "4300",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 30.00204,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 30.00204,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Wizard",
-							["spells"] = {
-								["_ActorTable"] = {
-									[2601] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 2601,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 6,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[3054] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 30,
-										["targets"] = {
-											["Water Elemental <Kawakii>"] = 30,
-										},
-										["n_dmg"] = 30,
-										["n_min"] = 30,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 30,
-										["c_max"] = 0,
-										["id"] = 3054,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 4,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["damage_taken"] = 175.00204,
-							["fight_component"] = true,
-							["custom"] = 0,
-							["last_event"] = 1653913815,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653914023,
-							["serial"] = "Creature-0-4458-189-29768-4300-000294B780",
-							["classe"] = "UNKNOW",
-						}, -- [7]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002705,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["end_time"] = 1653914024,
-							["aID"] = "4302",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.002705,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 0.002705,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Champion",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["damage_taken"] = 273.002705,
-							["fight_component"] = true,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653914024,
-							["serial"] = "Creature-0-4458-189-29768-4302-000094B781",
-							["classe"] = "UNKNOW",
-						}, -- [8]
-						{
-							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.00104,
-							["damage_from"] = {
-								["Scarlet Wizard"] = true,
-								["Scarlet Defender"] = true,
-								["Scarlet Commander Mograine"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.00104,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1653914024,
-							["friendlyfire"] = {
-							},
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 77.00104,
-							["aID"] = "510",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["on_hold"] = false,
-							["start_time"] = 1653914024,
-							["serial"] = "Creature-0-4458-189-29768-510-000014B8C2",
-							["total"] = 0.00104,
-						}, -- [9]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 21,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Kawakii"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
-							["totalover"] = 0.00588,
-							["total_without_pet"] = 9503.00588,
-							["total"] = 9503.00588,
-							["targets_absorbs"] = {
-								["Kawakii"] = 9503,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BCE74D",
-							["totalabsorb"] = 9503.00588,
-							["last_hps"] = 25.93586827654034,
-							["targets"] = {
-								["Kawakii"] = 9503,
-							},
-							["totalover_without_pet"] = 0.00588,
-							["healing_taken"] = 9503.00588,
-							["fight_component"] = true,
-							["end_time"] = 1653914024,
-							["tipo"] = 2,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[33405] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 8968,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 146,
-										["targets"] = {
-											["Kawakii"] = 8968,
-										},
-										["n_min"] = 8,
-										["counter"] = 107,
-										["overheal"] = 0,
-										["total"] = 8968,
-										["c_max"] = 0,
-										["id"] = 33405,
-										["targets_absorbs"] = {
-											["Kawakii"] = 8968,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["n_amt"] = 107,
-										["n_curado"] = 8968,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[32796] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 535,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 119,
-										["targets"] = {
-											["Kawakii"] = 535,
-										},
-										["n_min"] = 94,
-										["counter"] = 5,
-										["overheal"] = 0,
-										["total"] = 535,
-										["c_max"] = 0,
-										["id"] = 32796,
-										["targets_absorbs"] = {
-											["Kawakii"] = 535,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["n_amt"] = 5,
-										["n_curado"] = 535,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02BCE74D",
-							["custom"] = 0,
-							["last_event"] = 1653913996,
-							["totaldenied"] = 0.00588,
-							["start_time"] = 1653913787,
-							["delay"] = 1653913996,
-							["heal_enemy_amt"] = 0,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 21,
-					["_ActorTable"] = {
-						{
-							["received"] = 41640.003404,
-							["resource"] = 0.003404,
-							["targets"] = {
-								["Kawakii"] = 41640,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.003404,
-							["fight_component"] = true,
-							["total"] = 41640.003404,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[29442] = {
-										["total"] = 41640,
-										["id"] = 29442,
-										["totalover"] = 20758,
-										["targets"] = {
-											["Kawakii"] = 41640,
-										},
-										["counter"] = 114,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 20758.003404,
-							["alternatepower"] = 0.003404,
-							["last_event"] = 1653914224,
-							["tipo"] = 3,
-							["aID"] = "4465-02BCE74D",
-							["serial"] = "Player-4465-02BCE74D",
-							["flag_original"] = 1298,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 21,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[7321] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 13,
-										["refreshamt"] = 2,
-										["id"] = 7321,
-										["uptime"] = 270,
-										["targets"] = {
-										},
-										["appliedamt"] = 24,
-									},
-									[41425] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 41425,
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[27088] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 27088,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 4,
-									},
-									[27085] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 27085,
-										["uptime"] = 0,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["classe"] = "MAGE",
-							["cooldowns_defensive"] = 1.003836,
-							["buff_uptime"] = 693,
-							["last_cooldown"] = {
-								1653913782.088, -- [1]
-								45438, -- [2]
-							},
-							["cc_done_spells"] = {
-								["_ActorTable"] = {
-									[27088] = {
-										["id"] = 27088,
-										["targets"] = {
-											["Scarlet Defender"] = 2,
-											["Scarlet Myrmidon"] = 2,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["aID"] = "4465-02BCE74D",
-							["cooldowns_defensive_targets"] = {
-								["Kawakii"] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[35084] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 3,
-										["refreshamt"] = 0,
-										["id"] = 35084,
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["appliedamt"] = 3,
-									},
-									[27124] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 27124,
-										["uptime"] = 1,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[2479] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 2479,
-										["uptime"] = 0,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-									[45438] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 45438,
-										["uptime"] = 9,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[1953] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 8,
-										["refreshamt"] = 0,
-										["id"] = 1953,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 8,
-									},
-									[27126] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 27126,
-										["uptime"] = 1,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[27085] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 32,
-										["refreshamt"] = 0,
-										["id"] = 27085,
-										["uptime"] = 112,
-										["targets"] = {
-										},
-										["appliedamt"] = 32,
-									},
-									[37444] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 11,
-										["refreshamt"] = 25,
-										["id"] = 37444,
-										["uptime"] = 91,
-										["targets"] = {
-										},
-										["appliedamt"] = 11,
-									},
-									[12536] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 7,
-										["refreshamt"] = 0,
-										["id"] = 12536,
-										["uptime"] = 33,
-										["targets"] = {
-										},
-										["appliedamt"] = 7,
-									},
-									[32796] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 4,
-										["refreshamt"] = 0,
-										["id"] = 32796,
-										["uptime"] = 120,
-										["targets"] = {
-										},
-										["appliedamt"] = 4,
-									},
-									[33405] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 7,
-										["refreshamt"] = 2,
-										["id"] = 33405,
-										["uptime"] = 288,
-										["targets"] = {
-										},
-										["appliedamt"] = 7,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 308,
-							["serial"] = "Player-4465-02BCE74D",
-							["cc_done"] = 4.005356,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[2139] = 2,
-								[33405] = 7,
-								[1449] = 19,
-								[30455] = 2,
-								[27088] = 3,
-								[1953] = 8,
-								[27085] = 32,
-								[45438] = 1,
-								[32796] = 4,
-								[31687] = 1,
-								[27082] = 15,
-							},
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["last_event"] = 1653914024,
-							["tipo"] = 4,
-							["nome"] = "Kawakii",
-							["debuff_uptime_targets"] = {
-							},
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[45438] = {
-										["id"] = 45438,
-										["targets"] = {
-											["Kawakii"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["cc_done_targets"] = {
-								["Scarlet Defender"] = 2,
-								["Scarlet Myrmidon"] = 2,
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Kaftunik",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02E9A18A",
-							["buff_uptime"] = 0,
-							["tipo"] = 4,
-							["last_event"] = 1653913658,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["activedamt"] = 1,
-										["id"] = 768,
-										["targets"] = {
-										},
-										["actived_at"] = 1653913658,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E9A18A",
-							["classe"] = "DRUID",
-						}, -- [2]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Moolatz",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02B843FA",
-							["buff_uptime"] = 1,
-							["tipo"] = 4,
-							["last_event"] = 1653914024,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 768,
-										["uptime"] = 1,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[2383] = {
-										["activedamt"] = 1,
-										["id"] = 2383,
-										["targets"] = {
-										},
-										["actived_at"] = 1653914023,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["classe"] = "DRUID",
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["aID"] = "4298",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[11972] = {
-										["id"] = 11972,
-										["counter"] = 1,
-										["targets"] = {
-											["Water Elemental"] = 1,
-										},
-										["interrompeu_oque"] = {
-											[31707] = 1,
-										},
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[31707] = 1,
-							},
-							["monster"] = true,
-							["interrupt"] = 1.007347,
-							["interrupt_targets"] = {
-								["Water Elemental"] = 1,
-							},
-							["spell_cast"] = {
-								[11972] = 1,
-								[7164] = 5,
-								[3639] = 9,
-							},
-							["last_event"] = 1653913838,
-							["tipo"] = 4,
-							["nome"] = "Scarlet Defender",
-							["fight_component"] = true,
-							["serial"] = "Creature-0-4458-189-29768-4298-000114B780",
-							["classe"] = "UNKNOW",
-						}, -- [4]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Scarlet Wizard",
-							["aID"] = "4300",
-							["spell_cast"] = {
-								[2601] = 6,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4458-189-29768-4300-000294B780",
-							["flag_original"] = 2632,
-						}, -- [5]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Scarlet Centurion",
-							["aID"] = "4301",
-							["spell_cast"] = {
-								[31403] = 10,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4458-189-29768-4301-000014B781",
-							["flag_original"] = 2632,
-						}, -- [6]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["aID"] = "4540",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[11978] = {
-										["id"] = 11978,
-										["counter"] = 1,
-										["targets"] = {
-											["Kawakii"] = 1,
-										},
-										["interrompeu_oque"] = {
-											[27085] = 1,
-										},
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[27085] = 1,
-							},
-							["monster"] = true,
-							["interrupt"] = 1.006341,
-							["interrupt_targets"] = {
-								["Kawakii"] = 1,
-							},
-							["spell_cast"] = {
-								[3391] = 10,
-							},
-							["last_event"] = 1653913929,
-							["tipo"] = 4,
-							["nome"] = "Scarlet Monk",
-							["fight_component"] = true,
-							["serial"] = "Creature-0-4458-189-29768-4540-000694B780",
-							["classe"] = "UNKNOW",
-						}, -- [7]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Scarlet Sorcerer",
-							["aID"] = "4294",
-							["spell_cast"] = {
-								[9672] = 4,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4458-189-29768-4294-000414B781",
-							["flag_original"] = 2632,
-						}, -- [8]
-						{
-							["flag_original"] = 4370,
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["classe"] = "PET",
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["tipo"] = 4,
-							["aID"] = "510",
-							["serial"] = "Creature-0-4458-189-29768-510-000014B8C2",
-							["spell_cast"] = {
-								[31707] = 9,
-							},
-						}, -- [9]
-						{
-							["flag_original"] = 1298,
-							["spell_cast"] = {
-								[1953] = 2,
-								[8495] = 1,
-							},
-							["nome"] = "Queliarel",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02E08F27",
-							["buff_uptime"] = 0,
-							["last_event"] = 1653914024,
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[8495] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 8495,
-										["uptime"] = 0,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E08F27",
-							["classe"] = "MAGE",
-						}, -- [10]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 21,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Kaftunik"] = true,
-					["Vaelyah"] = true,
-					["Moolatz"] = true,
-					["Kawakii"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Kaftunik", -- [1]
-					"Vaelyah", -- [2]
-					"Moolatz", -- [3]
-					"Kawakii", -- [4]
-				},
-				["tempo_start"] = 1653913658,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Scarlet Defender",
-				["combat_counter"] = 9147,
-				["totals"] = {
-					7397.979632000001, -- [1]
-					9503, -- [2]
-					{
-						0, -- [1]
-						[0] = 41640,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 2,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
 				["player_last_events"] = {
-					["Kawakii"] = {
+					["Moolatz"] = {
 						{
 							true, -- [1]
 							1, -- [2]
-							22, -- [3]
-							1653914175.396, -- [4]
-							7013, -- [5]
-							"Scarlet Evoker", -- [6]
+							43, -- [3]
+							1653936063.164, -- [4]
+							1296, -- [5]
+							"Sparkleshell Snapper", -- [6]
 							nil, -- [7]
 							1, -- [8]
 							false, -- [9]
@@ -18683,1615 +1141,483 @@ _detalhes_database = {
 						["n"] = 2,
 					},
 				},
-				["frags"] = {
-					["Scarlet Wizard"] = 1,
-					["Scarlet Centurion"] = 1,
-					["Scarlet Champion"] = 1,
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Kawakii"] = 3569.004489,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Kawakii"] = 9503.00588,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 1642404.821,
-				["totals_grupo"] = {
-					3569, -- [1]
-					9503, -- [2]
-					{
-						0, -- [1]
-						[0] = 41640,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
-					}, -- [4]
-				},
-				["combat_id"] = 21,
-				["TimeData"] = {
-				},
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "14:33:44",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
 				["CombatSkillCache"] = {
 				},
-				["cleu_timeline"] = {
+				["data_inicio"] = "20:40:30",
+				["start_time"] = 1664410.318,
+				["TimeData"] = {
 				},
-				["start_time"] = 1642038.417,
-				["contra"] = "Scarlet Defender",
-				["data_inicio"] = "14:27:38",
-			}, -- [14]
+				["frags"] = {
+					["Sparkleshell Snapper"] = 1,
+				},
+			}, -- [2]
 			{
 				{
+					["combatId"] = 108,
 					["tipo"] = 2,
-					["combatId"] = 17,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 75.00792200000001,
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00148,
+							["aID"] = "4465-02B843FA",
 							["damage_from"] = {
-								["Kawakii"] = true,
+								["Scorpid Terror"] = true,
+								["Sparkleshell Snapper"] = true,
 							},
 							["targets"] = {
-								["Kawakii"] = 131,
+								["Scorpid Terror"] = 1301,
 							},
-							["delay"] = 1653912813,
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
+							["colocacao"] = 1,
+							["end_time"] = 1653935985,
+							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 131.007922,
-							["damage_taken"] = 1489.007922,
+							["total_without_pet"] = 1301.00148,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
-							["end_time"] = 1653913082,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Myrmidon",
+							["total"] = 1301.00148,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Moolatz",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 0,
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 134,
 										["g_amt"] = 0,
-										["n_max"] = 56,
+										["n_max"] = 41,
 										["targets"] = {
-											["Kawakii"] = 131,
+											["Scorpid Terror"] = 539,
 										},
-										["n_dmg"] = 131,
-										["n_min"] = 24,
+										["n_dmg"] = 405,
+										["n_min"] = 32,
 										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 131,
-										["c_max"] = 0,
+										["counter"] = 14,
+										["total"] = 539,
+										["c_max"] = 69,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["a_dmg"] = 0,
-										["n_amt"] = 3,
-										["spellschool"] = 1,
-										["MISS"] = 5,
+										["c_min"] = 65,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 11,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 131.007922,
-							["custom"] = 0,
-							["last_event"] = 1653912813,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653913068,
-							["serial"] = "Creature-0-4459-189-7573-4295-000394B454",
-							["aID"] = "4295",
-						}, -- [1]
-						{
-							["flag_original"] = 66834,
-							["totalabsorbed"] = 0.008003,
-							["damage_from"] = {
-								["Scarlet Sorcerer"] = true,
-								["Scarlet Myrmidon"] = true,
-								["Scarlet Wizard"] = true,
-								["Scarlet Defender"] = true,
-								["Scarlet Monk"] = true,
-							},
-							["targets"] = {
-								["Scarlet Centurion"] = 742,
-								["Scarlet Sorcerer"] = 92,
-								["Scarlet Myrmidon"] = 1489,
-								["Scarlet Monk"] = 92,
-								["Scarlet Defender"] = 1222,
-								["Scarlet Abbot"] = 69,
-							},
-							["delay"] = 1653913037,
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
-							["classe"] = "MAGE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 3706.008003,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1653913082,
-							["damage_taken"] = 1081.008003,
-							["tipo"] = 1,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[7321] = {
+									[6785] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 235,
 										["targets"] = {
-											["Scarlet Commander Mograine"] = 0,
+											["Scorpid Terror"] = 235,
 										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 235,
+										["n_min"] = 235,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 0,
+										["total"] = 235,
 										["c_max"] = 0,
-										["id"] = 7321,
+										["id"] = 6785,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 16,
-										["IMMUNE"] = 1,
-									},
-									[1449] = {
-										["c_amt"] = 7,
-										["b_amt"] = 0,
-										["c_dmg"] = 531,
-										["g_amt"] = 0,
-										["n_max"] = 98,
-										["targets"] = {
-											["Scarlet Centurion"] = 299,
-											["Scarlet Sorcerer"] = 92,
-											["Scarlet Myrmidon"] = 826,
-											["Scarlet Monk"] = 92,
-											["Scarlet Defender"] = 451,
-											["Scarlet Abbot"] = 69,
-										},
-										["n_dmg"] = 1298,
-										["n_min"] = 41,
-										["g_dmg"] = 0,
-										["counter"] = 28,
-										["total"] = 1829,
-										["c_max"] = 123,
-										["id"] = 1449,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 63,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 21,
-										["extra"] = {
-										},
-										["spellschool"] = 64,
-									},
-									[42198] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Chaplain"] = 0,
-											["Scarlet Centurion"] = 0,
-											["Scarlet Sorcerer"] = 0,
-											["Scarlet Myrmidon"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Abbot"] = 0,
-											["Scarlet Champion"] = 0,
-											["Scarlet Monk"] = 0,
-											["Scarlet Wizard"] = 0,
-											["Scarlet Commander Mograine"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 89,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 42198,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["RESIST"] = 83,
-										["spellschool"] = 16,
-										["IMMUNE"] = 6,
-									},
-									[27082] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 443,
-										["g_amt"] = 0,
-										["n_max"] = 481,
-										["targets"] = {
-											["Scarlet Defender"] = 481,
-											["Scarlet Centurion"] = 443,
-										},
-										["n_dmg"] = 481,
-										["n_min"] = 481,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 924,
-										["c_max"] = 443,
-										["id"] = 27082,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 443,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Scorpid Terror"] = 72,
+										},
+										["n_dmg"] = 72,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 72,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
 										["extra"] = {
 										},
-										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
-									[27088] = {
+									[1823] = {
 										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 631,
+										["c_dmg"] = 141,
 										["g_amt"] = 0,
-										["n_max"] = 164,
+										["n_max"] = 26,
 										["targets"] = {
-											["Scarlet Chaplain"] = 0,
-											["Scarlet Defender"] = 290,
-											["Scarlet Myrmidon"] = 663,
+											["Scorpid Terror"] = 219,
 										},
-										["n_dmg"] = 322,
-										["n_min"] = 158,
+										["n_dmg"] = 78,
+										["n_min"] = 26,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 953,
-										["c_max"] = 341,
-										["id"] = 27088,
+										["counter"] = 6,
+										["total"] = 219,
+										["c_max"] = 71,
+										["id"] = 1823,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["c_min"] = 290,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 1,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["spellschool"] = 16,
+										["a_dmg"] = 0,
+										["c_min"] = 70,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[22568] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 162,
+										["targets"] = {
+											["Scorpid Terror"] = 162,
+										},
+										["n_dmg"] = 162,
+										["n_min"] = 162,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 162,
+										["c_max"] = 0,
+										["id"] = 22568,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[3029] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 74,
+										["targets"] = {
+											["Scorpid Terror"] = 74,
+										},
+										["n_dmg"] = 74,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 74,
+										["c_max"] = 0,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 11.87811656618587,
-							["total"] = 3706.008003,
-							["colocacao"] = 1,
-							["last_event"] = 1653913037,
-							["on_hold"] = false,
-							["start_time"] = 1653912926,
-							["serial"] = "Player-4465-02BCE74D",
-							["aID"] = "4465-02BCE74D",
-						}, -- [2]
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 92.06719128275665,
+							["custom"] = 0,
+							["last_event"] = 1653935984,
+							["damage_taken"] = 271.00148,
+							["start_time"] = 1653935970,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 166.00181,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007421,
+							["aID"] = "4139",
 							["damage_from"] = {
-								["Kawakii"] = true,
+								["Moolatz"] = true,
 							},
 							["targets"] = {
-								["Kawakii"] = 199,
+								["Moolatz"] = 222,
 							},
-							["delay"] = 1653912856,
+							["end_time"] = 1653935985,
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 199.00181,
-							["damage_taken"] = 1222.00181,
+							["total_without_pet"] = 222.007421,
+							["monster"] = true,
 							["dps_started"] = false,
-							["end_time"] = 1653913082,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Defender",
+							["total"] = 222.007421,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Scorpid Terror",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 58,
+										["n_max"] = 50,
 										["targets"] = {
-											["Kawakii"] = 157,
+											["Moolatz"] = 222,
 										},
-										["n_dmg"] = 157,
-										["n_min"] = 49,
+										["n_dmg"] = 222,
+										["n_min"] = 38,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 157,
+										["counter"] = 6,
+										["total"] = 222,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["extra"] = {
-										},
+										["DODGE"] = 1,
 										["spellschool"] = 1,
-									}, -- [1]
-									[3639] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3639,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 11,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
 										["extra"] = {
 										},
-									},
-									[7164] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 7164,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 5,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[11972] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Kawakii"] = 42,
-										},
-										["n_dmg"] = 42,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 42,
-										["c_max"] = 0,
-										["id"] = 11972,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 199.00181,
-							["custom"] = 0,
-							["last_event"] = 1653912856,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653913072,
-							["serial"] = "Creature-0-4459-189-7573-4298-000694B454",
-							["aID"] = "4298",
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 80.001191,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Kawakii"] = 80,
-								["Water Elemental <Kawakii>"] = 30,
-							},
-							["delay"] = 1653912869,
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 110.001191,
-							["damage_taken"] = 0.001191,
-							["dps_started"] = false,
-							["end_time"] = 1653913082,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Wizard",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 80,
-										["targets"] = {
-											["Kawakii"] = 80,
-										},
-										["n_dmg"] = 80,
-										["n_min"] = 80,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 80,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
 										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["r_amt"] = 0,
 									}, -- [1]
-									[2601] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 2601,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 4,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[3054] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 30,
-										["targets"] = {
-											["Water Elemental <Kawakii>"] = 30,
-										},
-										["n_dmg"] = 30,
-										["n_min"] = 30,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 30,
-										["c_max"] = 0,
-										["id"] = 3054,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 4,
-									},
 								},
-								["tipo"] = 2,
 							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 110.001191,
-							["custom"] = 0,
-							["last_event"] = 1653912869,
 							["friendlyfire"] = {
 							},
-							["start_time"] = 1653913081,
-							["serial"] = "Creature-0-4459-189-7573-4300-000094B455",
-							["aID"] = "4300",
-						}, -- [4]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 348.001612,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 663,
-							},
-							["delay"] = 1653913031,
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 663.001612,
-							["damage_taken"] = 92.001612,
-							["dps_started"] = false,
-							["end_time"] = 1653913082,
+							["serial"] = "Creature-0-4447-1-51-4139-000014ED41",
 							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Sorcerer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 38,
-										["targets"] = {
-											["Kawakii"] = 63,
-										},
-										["n_dmg"] = 63,
-										["n_min"] = 25,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 63,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[9672] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 114,
-										["targets"] = {
-											["Kawakii"] = 600,
-										},
-										["n_dmg"] = 600,
-										["n_min"] = 44,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 600,
-										["c_max"] = 0,
-										["id"] = 9672,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["c_min"] = 0,
-										["successful_casted"] = 3,
-										["a_amt"] = 0,
-										["RESIST"] = 3,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 663.001612,
 							["custom"] = 0,
-							["last_event"] = 1653913031,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653913052,
-							["serial"] = "Creature-0-4459-189-7573-4294-000114B454",
-							["aID"] = "4294",
-						}, -- [5]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.003853,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-							},
+							["last_event"] = 1653935982,
+							["damage_taken"] = 1301.007421,
+							["start_time"] = 1653935972,
 							["delay"] = 0,
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.003853,
-							["damage_taken"] = 742.0038529999999,
-							["dps_started"] = false,
-							["end_time"] = 1653913082,
-							["last_dps"] = 0,
 							["tipo"] = 1,
-							["nome"] = "Scarlet Centurion",
-							["spells"] = {
-								["_ActorTable"] = {
-									[31403] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 31403,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 14,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 0.003853,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653913082,
-							["serial"] = "Creature-0-4459-189-7573-4301-000214B455",
-							["aID"] = "4301",
-						}, -- [6]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.007956,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 8,
-							},
-							["delay"] = 1653912856,
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 8.007956,
-							["damage_taken"] = 92.00795600000001,
-							["dps_started"] = false,
-							["end_time"] = 1653913082,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Monk",
-							["spells"] = {
-								["_ActorTable"] = {
-									[3391] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3391,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 8,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-									[11978] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Kawakii"] = 8,
-										},
-										["n_dmg"] = 8,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 8,
-										["c_max"] = 0,
-										["id"] = 11978,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 8.007956,
-							["custom"] = 0,
-							["last_event"] = 1653912856,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653913081,
-							["serial"] = "Creature-0-4459-189-7573-4540-000714B454",
-							["aID"] = "4540",
-						}, -- [7]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.006124,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.006124,
-							["damage_taken"] = 69.006124,
-							["dps_started"] = false,
-							["end_time"] = 1653913082,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Abbot",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 0.006124,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653913082,
-							["serial"] = "Creature-0-4459-189-7573-4303-000094B455",
-							["aID"] = "4303",
-						}, -- [8]
-						{
-							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.007494,
-							["damage_from"] = {
-								["Scarlet Wizard"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.007494,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1653913082,
-							["friendlyfire"] = {
-							},
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 30.007494,
-							["aID"] = "510",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["on_hold"] = false,
-							["start_time"] = 1653913082,
-							["serial"] = "Creature-0-4459-189-7573-510-000014B51D",
-							["total"] = 0.007494,
-						}, -- [9]
+						}, -- [2]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 108,
 					["tipo"] = 3,
-					["combatId"] = 17,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 66834,
-							["healing_from"] = {
-								["Kawakii"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
-							["totalover"] = 640.003136,
-							["total_without_pet"] = 4943.003136,
-							["total"] = 4943.003136,
-							["targets_absorbs"] = {
-								["Kawakii"] = 4733,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BCE74D",
-							["totalabsorb"] = 4733.003136,
-							["last_hps"] = 15.84280643455219,
-							["targets"] = {
-								["Kawakii"] = 4943,
-							},
-							["totalover_without_pet"] = 0.003136,
-							["healing_taken"] = 4943.003136,
-							["fight_component"] = true,
-							["end_time"] = 1653913082,
-							["tipo"] = 2,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[33405] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 4733,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 142,
-										["targets"] = {
-											["Kawakii"] = 4733,
-										},
-										["n_min"] = 9,
-										["counter"] = 69,
-										["overheal"] = 0,
-										["total"] = 4733,
-										["c_max"] = 0,
-										["id"] = 33405,
-										["targets_absorbs"] = {
-											["Kawakii"] = 4733,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["n_amt"] = 69,
-										["n_curado"] = 4733,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[27031] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Kawakii"] = 640,
-										},
-										["n_max"] = 210,
-										["targets"] = {
-											["Kawakii"] = 210,
-										},
-										["n_min"] = 0,
-										["counter"] = 2,
-										["overheal"] = 640,
-										["total"] = 210,
-										["c_max"] = 0,
-										["id"] = 27031,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 210,
-										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-								["Kawakii"] = 640,
-							},
-							["aID"] = "4465-02BCE74D",
-							["custom"] = 0,
-							["last_event"] = 1653913031,
-							["totaldenied"] = 0.003136,
-							["start_time"] = 1653912990,
-							["delay"] = 1653913031,
-							["heal_enemy_amt"] = 0,
-						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 108,
 					["tipo"] = 7,
-					["combatId"] = 17,
 					["_ActorTable"] = {
-						{
-							["received"] = 36966.00376,
-							["resource"] = 0.00376,
-							["targets"] = {
-								["Kawakii"] = 36966,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.00376,
-							["fight_component"] = true,
-							["total"] = 36966.00376,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[29442] = {
-										["total"] = 36966,
-										["id"] = 29442,
-										["totalover"] = 20973,
-										["targets"] = {
-											["Kawakii"] = 36966,
-										},
-										["counter"] = 105,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 20973.00376,
-							["alternatepower"] = 0.00376,
-							["last_event"] = 1653913041,
-							["tipo"] = 3,
-							["aID"] = "4465-02BCE74D",
-							["serial"] = "Player-4465-02BCE74D",
-							["flag_original"] = 66834,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
+					["combatId"] = 108,
 					["tipo"] = 9,
-					["combatId"] = 17,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[41425] = {
-										["counter"] = 0,
-										["actived"] = false,
+									[1823] = {
 										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 41425,
-										["uptime"] = 30,
+										["id"] = 1823,
 										["targets"] = {
 										},
+										["uptime"] = 9,
 										["appliedamt"] = 1,
-									},
-									[11196] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
 										["refreshamt"] = 0,
-										["id"] = 11196,
-										["uptime"] = 60,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[17390] = {
+										["activedamt"] = 0,
+										["id"] = 17390,
 										["targets"] = {
 										},
+										["uptime"] = 11,
 										["appliedamt"] = 1,
-									},
-									[27088] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
 										["refreshamt"] = 0,
-										["id"] = 27088,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 4,
-									},
-									[7321] = {
-										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 2,
-										["id"] = 7321,
-										["uptime"] = 31,
-										["targets"] = {
-										},
-										["appliedamt"] = 8,
-									},
-									[27085] = {
 										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 27085,
-										["uptime"] = 2,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["classe"] = "MAGE",
-							["cooldowns_defensive"] = 1.002026,
-							["buff_uptime"] = 1603,
-							["last_cooldown"] = {
-								1653912846.379, -- [1]
-								45438, -- [2]
-							},
-							["cc_done_spells"] = {
-								["_ActorTable"] = {
-									[27088] = {
-										["id"] = 27088,
-										["targets"] = {
-											["Scarlet Defender"] = 1,
-											["Scarlet Myrmidon"] = 3,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["aID"] = "4465-02BCE74D",
-							["cooldowns_defensive_targets"] = {
-								["Kawakii"] = 1,
-							},
+							["buff_uptime"] = 45,
+							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[33944] = {
-										["counter"] = 0,
-										["actived"] = false,
+									[5234] = {
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 33944,
-										["uptime"] = 251,
+										["id"] = 5234,
 										["targets"] = {
 										},
+										["uptime"] = 15,
 										["appliedamt"] = 1,
-									},
-									[27124] = {
-										["counter"] = 0,
+										["refreshamt"] = 0,
 										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 27124,
-										["uptime"] = 363,
+										["id"] = 8914,
 										["targets"] = {
 										},
+										["uptime"] = 15,
 										["appliedamt"] = 1,
-									},
-									[27031] = {
-										["counter"] = 0,
+										["refreshamt"] = 0,
 										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 27031,
-										["uptime"] = 3,
+										["id"] = 768,
 										["targets"] = {
 										},
+										["uptime"] = 15,
 										["appliedamt"] = 1,
-									},
-									[2479] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
 										["refreshamt"] = 0,
-										["id"] = 2479,
-										["uptime"] = 0,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-									[27126] = {
-										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 27126,
-										["uptime"] = 363,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[45438] = {
 										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 45438,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[1953] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 7,
-										["refreshamt"] = 0,
-										["id"] = 1953,
-										["uptime"] = 7,
-										["targets"] = {
-										},
-										["appliedamt"] = 7,
-									},
-									[37444] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 9,
-										["refreshamt"] = 26,
-										["id"] = 37444,
-										["uptime"] = 71,
-										["targets"] = {
-										},
-										["appliedamt"] = 9,
-									},
-									[27085] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 31,
-										["refreshamt"] = 0,
-										["id"] = 27085,
-										["uptime"] = 137,
-										["targets"] = {
-										},
-										["appliedamt"] = 31,
-									},
-									[33405] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 5,
-										["refreshamt"] = 0,
-										["id"] = 33405,
-										["uptime"] = 251,
-										["targets"] = {
-										},
-										["appliedamt"] = 5,
-									},
-									[12536] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 5,
-										["refreshamt"] = 0,
-										["id"] = 12536,
-										["uptime"] = 27,
-										["targets"] = {
-										},
-										["appliedamt"] = 5,
-									},
-									[32796] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 3,
-										["refreshamt"] = 0,
-										["id"] = 32796,
-										["uptime"] = 90,
-										["targets"] = {
-										},
-										["appliedamt"] = 3,
-									},
-									[35084] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 3,
-										["refreshamt"] = 0,
-										["id"] = 35084,
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["appliedamt"] = 3,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 131,
-							["serial"] = "Player-4465-02BCE74D",
-							["cc_done"] = 4.003214,
+							["debuff_uptime"] = 20,
 							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
-								[33405] = 4,
-								[1449] = 18,
-								[27031] = 1,
-								[30455] = 3,
-								[27088] = 3,
-								[1953] = 7,
-								[27085] = 31,
-								[45438] = 1,
-								[32796] = 3,
-								[31687] = 1,
-								[27082] = 6,
+								[17390] = 1,
+								[22568] = 1,
+								[1823] = 3,
+								[3029] = 2,
 							},
-							["pets"] = {
-								"Water Elemental <Kawakii>", -- [1]
-							},
-							["last_event"] = 1653913082,
-							["tipo"] = 4,
-							["nome"] = "Kawakii",
 							["debuff_uptime_targets"] = {
 							},
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[45438] = {
-										["id"] = 45438,
-										["targets"] = {
-											["Kawakii"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["cc_done_targets"] = {
-								["Scarlet Defender"] = 1,
-								["Scarlet Myrmidon"] = 3,
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Kaftunik",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02E9A18A",
-							["buff_uptime"] = 0,
-							["tipo"] = 4,
-							["last_event"] = 1653913082,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 768,
-										["uptime"] = 0,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E9A18A",
-							["classe"] = "DRUID",
-						}, -- [2]
-						{
-							["flag_original"] = 1047,
 							["nome"] = "Moolatz",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
+							["last_event"] = 1653935985,
 							["pets"] = {
 							},
-							["aID"] = "4465-02B843FA",
-							["buff_uptime"] = 363,
-							["tipo"] = 4,
-							["last_event"] = 1653913082,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 768,
-										["uptime"] = 363,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02B843FA",
 							["classe"] = "DRUID",
-						}, -- [3]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Scarlet Defender",
-							["aID"] = "4298",
-							["spell_cast"] = {
-								[7164] = 5,
-								[3639] = 11,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
+							["serial"] = "Player-4465-02B843FA",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4459-189-7573-4298-000694B454",
-							["flag_original"] = 2632,
-						}, -- [4]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Scarlet Centurion",
-							["aID"] = "4301",
-							["spell_cast"] = {
-								[31403] = 14,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4459-189-7573-4301-000214B455",
-							["flag_original"] = 2632,
-						}, -- [5]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Scarlet Monk",
-							["aID"] = "4540",
-							["spell_cast"] = {
-								[3391] = 8,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4459-189-7573-4540-000714B454",
-							["flag_original"] = 2632,
-						}, -- [6]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Scarlet Wizard",
-							["aID"] = "4300",
-							["spell_cast"] = {
-								[2601] = 4,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4459-189-7573-4300-000094B455",
-							["flag_original"] = 2632,
-						}, -- [7]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Scarlet Sorcerer",
-							["aID"] = "4294",
-							["spell_cast"] = {
-								[9672] = 3,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4459-189-7573-4294-000094B454",
-							["flag_original"] = 2632,
-						}, -- [8]
-						{
-							["flag_original"] = 4370,
-							["ownerName"] = "Kawakii",
-							["nome"] = "Water Elemental <Kawakii>",
-							["classe"] = "PET",
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["tipo"] = 4,
-							["aID"] = "510",
-							["serial"] = "Creature-0-4459-189-7573-510-000014B51D",
-							["spell_cast"] = {
-								[33395] = 1,
-								[31707] = 8,
-							},
-						}, -- [9]
+						}, -- [1]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 108,
 					["tipo"] = 2,
-					["combatId"] = 17,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Triickz"] = true,
-					["Vaelyah"] = true,
-					["Kawakii"] = true,
-					["Kaftunik"] = true,
 					["Moolatz"] = true,
 				},
 				["raid_roster_indexed"] = {
-					"Kaftunik", -- [1]
-					"Triickz", -- [2]
-					"Kawakii", -- [3]
-					"Vaelyah", -- [4]
-					"Moolatz", -- [5]
+					"Moolatz", -- [1]
 				},
-				["tempo_start"] = 1653912719,
+				["CombatStartedAt"] = 1664351.433,
+				["tempo_start"] = 1653935970,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["enemy"] = "Scarlet Myrmidon",
-				["combat_counter"] = 9143,
+				["combat_counter"] = 9239,
+				["playing_solo"] = true,
 				["totals"] = {
-					4817, -- [1]
-					4943, -- [2]
+					1522.995793, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 36966,
+						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags"] = {
-					["Scarlet Defender"] = 1,
-					["Scarlet Centurion"] = 1,
+				["totals_grupo"] = {
+					1301, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "20:39:45",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Scorpid Terror",
+				["TotalElapsedCombatTime"] = 14.31600000010803,
+				["CombatEndedAt"] = 1664365.749,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -20301,756 +1627,2567 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Kawakii"] = 3706.008003,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Kawakii"] = 4943.003136,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1301.00148,
+						}, -- [1]
+					},
 				},
-				["end_time"] = 1641463.72,
-				["totals_grupo"] = {
-					3706, -- [1]
-					4943, -- [2]
-					{
-						0, -- [1]
-						[0] = 36966,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
-					}, -- [4]
-				},
-				["combat_id"] = 17,
-				["TimeData"] = {
-				},
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "14:18:03",
+				["end_time"] = 1664365.749,
+				["combat_id"] = 108,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+					["Moolatz"] = {
+						{
+							true, -- [1]
+							1, -- [2]
+							49, -- [3]
+							1653936029.261, -- [4]
+							1494, -- [5]
+							"Sparkleshell Snapper", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["data_inicio"] = "20:39:31",
 				["CombatSkillCache"] = {
 				},
-				["cleu_timeline"] = {
+				["frags"] = {
+					["Scorpid Terror"] = 1,
 				},
-				["start_time"] = 1641100.259,
-				["contra"] = "Scarlet Myrmidon",
-				["data_inicio"] = "14:12:00",
-			}, -- [15]
+				["start_time"] = 1664351.333,
+				["TimeData"] = {
+				},
+				["contra"] = "Scorpid Terror",
+			}, -- [3]
 			{
 				{
+					["combatId"] = 107,
 					["tipo"] = 2,
-					["combatId"] = 13,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.002787,
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002419,
 							["damage_from"] = {
-								["Scarlet Sorcerer"] = true,
-								["Scarlet Myrmidon"] = true,
-								["Scarlet Wizard"] = true,
-								["Scarlet Defender"] = true,
-								["Scarlet Monk"] = true,
+								["Saltstone Crystalhide"] = true,
+								["Scorpid Terror"] = true,
 							},
 							["targets"] = {
-								["Scarlet Sorcerer"] = 158,
-								["Scarlet Wizard"] = 93,
-								["Scarlet Defender"] = 1100,
-								["Scarlet Myrmidon"] = 93,
+								["Saltstone Crystalhide"] = 1014,
 							},
-							["delay"] = 1653912182,
+							["total"] = 1014.002419,
 							["pets"] = {
 							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
-							["classe"] = "MAGE",
+							["on_hold"] = false,
+							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 1444.002787,
+							["total_without_pet"] = 1014.002419,
+							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1653912230,
-							["damage_taken"] = 2342.002787,
-							["tipo"] = 1,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[7321] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Wizard"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 7321,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-									[42198] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Chaplain"] = 0,
-											["Scarlet Centurion"] = 0,
-											["Scarlet Sorcerer"] = 0,
-											["Scarlet Myrmidon"] = 0,
-											["Scarlet Defender"] = 0,
-											["Scarlet Abbot"] = 0,
-											["Scarlet Wizard"] = 0,
-											["Scarlet Monk"] = 0,
-											["Scarlet Champion"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 74,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 42198,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 74,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-									[2139] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Commander Mograine"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 2139,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 64,
-										["IMMUNE"] = 1,
-									},
-									[1449] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 127,
-										["g_amt"] = 0,
-										["n_max"] = 94,
-										["targets"] = {
-											["Scarlet Wizard"] = 93,
-											["Scarlet Defender"] = 305,
-											["Scarlet Myrmidon"] = 93,
-										},
-										["n_dmg"] = 364,
-										["n_min"] = 84,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 491,
-										["c_max"] = 127,
-										["id"] = 1449,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 127,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["extra"] = {
-										},
-										["spellschool"] = 64,
-									},
-									[27082] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Abbot"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 27082,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 64,
-									},
-									[27088] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 625,
-										["g_amt"] = 0,
-										["n_max"] = 170,
-										["targets"] = {
-											["Scarlet Defender"] = 795,
-											["Scarlet Sorcerer"] = 158,
-										},
-										["n_dmg"] = 328,
-										["n_min"] = 158,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 953,
-										["c_max"] = 327,
-										["id"] = 27088,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 298,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 3.744538888413891,
-							["total"] = 1444.002787,
-							["colocacao"] = 1,
-							["last_event"] = 1653912182,
-							["on_hold"] = false,
-							["start_time"] = 1653912073,
-							["serial"] = "Player-4465-02BCE74D",
-							["aID"] = "4465-02BCE74D",
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 1419.001423,
-							["damage_from"] = {
-								["Kawakii"] = true,
-							},
-							["targets"] = {
-								["Kawakii"] = 1743,
-							},
-							["delay"] = 1653912170,
-							["pets"] = {
-							},
+							["end_time"] = 1653935942,
 							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1743.001423,
-							["damage_taken"] = 158.001423,
-							["dps_started"] = false,
-							["end_time"] = 1653912230,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Sorcerer",
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 263,
+										["g_amt"] = 0,
+										["n_max"] = 46,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 521,
+										},
+										["n_dmg"] = 258,
+										["n_min"] = 39,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 521,
+										["c_max"] = 91,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 82,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[3029] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 22,
+										["n_max"] = 84,
 										["targets"] = {
-											["Kawakii"] = 22,
+											["Saltstone Crystalhide"] = 84,
 										},
-										["n_dmg"] = 22,
-										["n_min"] = 22,
+										["n_dmg"] = 84,
+										["n_min"] = 84,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 22,
+										["total"] = 84,
 										["c_max"] = 0,
-										["id"] = 1,
+										["id"] = 3029,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[9672] = {
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[6785] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 116,
+										["n_max"] = 265,
 										["targets"] = {
-											["Kawakii"] = 1721,
+											["Saltstone Crystalhide"] = 265,
 										},
-										["n_dmg"] = 1721,
-										["n_min"] = 89,
+										["n_dmg"] = 265,
+										["n_min"] = 265,
 										["g_dmg"] = 0,
-										["counter"] = 18,
-										["total"] = 1721,
+										["counter"] = 1,
+										["total"] = 265,
 										["c_max"] = 0,
-										["id"] = 9672,
+										["id"] = 6785,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 17,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_dmg"] = 0,
-										["RESIST"] = 1,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["spellschool"] = 16,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 48,
+										},
+										["n_dmg"] = 48,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 48,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[1823] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 70,
+										["g_amt"] = 0,
+										["n_max"] = 26,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 96,
+										},
+										["n_dmg"] = 26,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 96,
+										["c_max"] = 70,
+										["id"] = 1823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 70,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 1743.001423,
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 123.7040891800642,
 							["custom"] = 0,
-							["last_event"] = 1653912170,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653912206,
-							["serial"] = "Creature-0-4445-189-11963-4294-000094B0C6",
-							["aID"] = "4294",
-						}, -- [2]
+							["last_event"] = 1653935941,
+							["damage_taken"] = 155.002419,
+							["start_time"] = 1653935933,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 307.008213,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001012,
+							["total"] = 115.001012,
 							["damage_from"] = {
-								["Kawakii"] = true,
+								["Moolatz"] = true,
 							},
 							["targets"] = {
-								["Kawakii"] = 411,
+								["Moolatz"] = 115,
 							},
-							["delay"] = 1653911982,
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
+							["monster"] = true,
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 411.008213,
-							["damage_taken"] = 1100.008213,
+							["total_without_pet"] = 115.001012,
+							["on_hold"] = false,
 							["dps_started"] = false,
-							["end_time"] = 1653912230,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Defender",
+							["end_time"] = 1653935942,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Saltstone Crystalhide",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 59,
+										["n_max"] = 43,
 										["targets"] = {
-											["Kawakii"] = 377,
+											["Moolatz"] = 115,
 										},
-										["n_dmg"] = 377,
-										["n_min"] = 47,
+										["n_dmg"] = 115,
+										["n_min"] = 33,
 										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 377,
+										["counter"] = 4,
+										["total"] = 115,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["a_amt"] = 1,
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_dmg"] = 49,
-										["n_amt"] = 7,
-										["spellschool"] = 1,
-										["MISS"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
-									[3639] = {
+								},
+							},
+							["aID"] = "4151",
+							["serial"] = "Creature-0-4447-1-51-4151-000014E7BF",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653935941,
+							["damage_taken"] = 1014.001012,
+							["start_time"] = 1653935935,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 107,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 107,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 107,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[17390] = {
+										["activedamt"] = 0,
+										["id"] = 17390,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 27,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 12,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[17390] = 1,
+								[1823] = 1,
+								[3029] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1653935942,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 107,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 1664314.481,
+				["tempo_start"] = 1653935933,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9238,
+				["playing_solo"] = true,
+				["totals"] = {
+					1128.996987, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1014, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "20:39:02",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Saltstone Crystalhide",
+				["TotalElapsedCombatTime"] = 8.333999999798834,
+				["CombatEndedAt"] = 1664322.815,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1014.002419,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1664322.815,
+				["combat_id"] = 107,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+					["Moolatz"] = {
+						{
+							true, -- [1]
+							1, -- [2]
+							40, -- [3]
+							1653935970.276, -- [4]
+							1494, -- [5]
+							"Scorpid Terror", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["data_inicio"] = "20:38:54",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Saltstone Crystalhide"] = 1,
+				},
+				["start_time"] = 1664314.481,
+				["TimeData"] = {
+				},
+				["contra"] = "Saltstone Crystalhide",
+			}, -- [4]
+			{
+				{
+					["combatId"] = 106,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004483,
+							["aID"] = "4465-02B843FA",
+							["damage_from"] = {
+								["Sparkleshell Snapper"] = true,
+								["Saltstone Crystalhide"] = true,
+							},
+							["targets"] = {
+								["Sparkleshell Snapper"] = 1412,
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["end_time"] = 1653935876,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1412.004483,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 1412.004483,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 163,
+										["g_amt"] = 0,
+										["n_max"] = 44,
+										["targets"] = {
+											["Sparkleshell Snapper"] = 563,
+										},
+										["n_dmg"] = 400,
+										["n_min"] = 34,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 563,
+										["c_max"] = 82,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 81,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 10,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[6785] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 266,
 										["targets"] = {
+											["Sparkleshell Snapper"] = 266,
 										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 266,
+										["n_min"] = 266,
 										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
+										["counter"] = 1,
+										["total"] = 266,
 										["c_max"] = 0,
-										["id"] = 3639,
+										["id"] = 6785,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 20,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
-									[7164] = {
+									[8914] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Sparkleshell Snapper"] = 72,
+										},
+										["n_dmg"] = 72,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 72,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[1823] = {
+										["c_amt"] = 1,
+										["b_amt"] = 1,
+										["c_dmg"] = 71,
+										["g_amt"] = 0,
+										["n_max"] = 26,
+										["targets"] = {
+											["Sparkleshell Snapper"] = 165,
+										},
+										["n_dmg"] = 94,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 165,
+										["c_max"] = 71,
+										["id"] = 1823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 71,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 16,
+										["r_amt"] = 0,
+									},
+									[22568] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 183,
+										["targets"] = {
+											["Sparkleshell Snapper"] = 183,
+										},
+										["n_dmg"] = 183,
+										["n_min"] = 183,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 183,
+										["c_max"] = 0,
+										["id"] = 22568,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[3029] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 163,
+										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
+											["Sparkleshell Snapper"] = 163,
 										},
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 7164,
+										["counter"] = 1,
+										["total"] = 163,
+										["c_max"] = 163,
+										["id"] = 3029,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 8,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
+										["a_dmg"] = 0,
+										["c_min"] = 163,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
-									[11972] = {
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 107.3686018547943,
+							["custom"] = 0,
+							["last_event"] = 1653935875,
+							["damage_taken"] = 519.0044829999999,
+							["start_time"] = 1653935863,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.00552,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 476,
+							},
+							["aID"] = "4143",
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 476.00552,
+							["end_time"] = 1653935876,
+							["dps_started"] = false,
+							["total"] = 476.00552,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Sparkleshell Snapper",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 72,
+										["targets"] = {
+											["Moolatz"] = 314,
+										},
+										["n_dmg"] = 314,
+										["n_min"] = 40,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 314,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[7273] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 10,
 										["targets"] = {
-											["Kawakii"] = 34,
+											["Moolatz"] = 162,
 										},
-										["n_dmg"] = 34,
-										["n_min"] = 8,
+										["n_dmg"] = 162,
+										["n_min"] = 9,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 34,
+										["counter"] = 17,
+										["total"] = 162,
 										["c_max"] = 0,
-										["id"] = 11972,
+										["id"] = 7273,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["n_amt"] = 17,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 411.008213,
-							["custom"] = 0,
-							["last_event"] = 1653911982,
 							["friendlyfire"] = {
 							},
-							["start_time"] = 1653912212,
-							["serial"] = "Creature-0-4445-189-11963-4298-000794B0C6",
-							["aID"] = "4298",
-						}, -- [3]
+							["serial"] = "Creature-0-4447-1-51-4143-0000150AE8",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653935875,
+							["damage_taken"] = 1412.00552,
+							["start_time"] = 1653935863,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 106,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 106,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 106,
+					["tipo"] = 9,
+					["_ActorTable"] = {
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 97.002721,
-							["damage_from"] = {
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[17390] = {
+										["activedamt"] = 0,
+										["id"] = 17390,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
 							},
-							["targets"] = {
-								["Kawakii"] = 97,
+							["buff_uptime"] = 39,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
 							},
-							["delay"] = 1653912146,
+							["debuff_uptime"] = 19,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[17390] = 1,
+								[22568] = 1,
+								[1823] = 2,
+								[3029] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1653935876,
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 106,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["tempo_start"] = 1653935863,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Sparkleshell Snapper",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					1887.99699, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["TotalElapsedCombatTime"] = 1664257.211,
+				["combat_counter"] = 9237,
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1412.004483,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1664257.211,
+				["player_last_events"] = {
+					["Moolatz"] = {
+						{
+							true, -- [1]
+							1, -- [2]
+							43, -- [3]
+							1653935933.424, -- [4]
+							1494, -- [5]
+							"Saltstone Crystalhide", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["instance_type"] = "none",
+				["CombatEndedAt"] = 1664257.211,
+				["data_inicio"] = "20:37:43",
+				["totals_grupo"] = {
+					1412, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "20:37:57",
+				["combat_id"] = 106,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Sparkleshell Snapper"] = 1,
+				},
+				["start_time"] = 1664244.06,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [5]
+			{
+				{
+					["combatId"] = 105,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002538,
+							["total"] = 210.002538,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 210,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 97.002721,
-							["damage_taken"] = 0.002721,
+							["total_without_pet"] = 210.002538,
+							["on_hold"] = false,
 							["dps_started"] = false,
-							["end_time"] = 1653912230,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Monk",
+							["end_time"] = 1653935837,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Scorpid Terror",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 88,
+										["n_max"] = 48,
 										["targets"] = {
-											["Kawakii"] = 88,
+											["Moolatz"] = 210,
 										},
-										["n_dmg"] = 88,
-										["n_min"] = 88,
+										["n_dmg"] = 210,
+										["n_min"] = 37,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 88,
+										["counter"] = 7,
+										["total"] = 210,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["DODGE"] = 2,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "4139",
+							["serial"] = "Creature-0-4447-1-51-4139-0000150AB4",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653935835,
+							["damage_taken"] = 1370.002538,
+							["start_time"] = 1653935824,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005976,
+							["damage_from"] = {
+								["Scorpid Terror"] = true,
+							},
+							["targets"] = {
+								["Scorpid Terror"] = 1370,
+							},
+							["total"] = 1370.005976,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1370.005976,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1653935837,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 233,
+										["g_amt"] = 0,
+										["n_max"] = 42,
+										["targets"] = {
+											["Scorpid Terror"] = 466,
+										},
+										["n_dmg"] = 233,
+										["n_min"] = 36,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 466,
+										["c_max"] = 80,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["spellschool"] = 1,
+										["PARRY"] = 1,
+										["c_min"] = 75,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
-									[3391] = {
-										["c_amt"] = 0,
+									[22568] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 419,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
+											["Scorpid Terror"] = 419,
 										},
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 3391,
+										["counter"] = 1,
+										["total"] = 419,
+										["c_max"] = 419,
+										["id"] = 22568,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 7,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
+										["a_dmg"] = 0,
+										["c_min"] = 419,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
-									[11978] = {
+									[3029] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 150,
+										["g_amt"] = 0,
+										["n_max"] = 84,
+										["targets"] = {
+											["Scorpid Terror"] = 312,
+										},
+										["n_dmg"] = 162,
+										["n_min"] = 78,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 312,
+										["c_max"] = 150,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 150,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[1823] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Scorpid Terror"] = 113,
+										},
+										["n_dmg"] = 113,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 113,
+										["c_max"] = 0,
+										["id"] = 1823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Scorpid Terror"] = 60,
+										},
+										["n_dmg"] = 60,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 60,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 107.5780114636026,
+							["custom"] = 0,
+							["last_event"] = 1653935836,
+							["damage_taken"] = 210.005976,
+							["start_time"] = 1653935824,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 105,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 105,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 105,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[17390] = {
+										["activedamt"] = 0,
+										["id"] = 17390,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 39,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 15,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[17390] = 1,
+								[22568] = 1,
+								[3029] = 4,
+								[1823] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1653935837,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 105,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 1664244.06,
+				["tempo_start"] = 1653935824,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9236,
+				["playing_solo"] = true,
+				["totals"] = {
+					1580, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1370, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "20:37:17",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Scorpid Terror",
+				["TotalElapsedCombatTime"] = 1664217.942,
+				["CombatEndedAt"] = 1664217.942,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1370.005976,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1664217.942,
+				["combat_id"] = 105,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "20:37:04",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Scorpid Terror"] = 1,
+				},
+				["start_time"] = 1664204.973,
+				["TimeData"] = {
+				},
+				["contra"] = "Scorpid Terror",
+			}, -- [6]
+			{
+				{
+					["combatId"] = 104,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.005693,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 431,
+							},
+							["aID"] = "4144",
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 431.005693,
+							["end_time"] = 1653935633,
+							["dps_started"] = false,
+							["total"] = 431.005693,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Sparkleshell Borer",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 100,
+										["g_amt"] = 0,
+										["n_max"] = 48,
+										["targets"] = {
+											["Moolatz"] = 319,
+										},
+										["n_dmg"] = 219,
+										["n_min"] = 37,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 319,
+										["c_max"] = 100,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 100,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[7273] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 9,
 										["targets"] = {
-											["Kawakii"] = 9,
+											["Moolatz"] = 112,
 										},
-										["n_dmg"] = 9,
-										["n_min"] = 9,
+										["n_dmg"] = 112,
+										["n_min"] = 8,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 9,
+										["counter"] = 15,
+										["total"] = 112,
 										["c_max"] = 0,
-										["id"] = 11978,
+										["id"] = 7273,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
+										["RESIST"] = 2,
+										["spellschool"] = 8,
 										["extra"] = {
 										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 13,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 97.002721,
-							["custom"] = 0,
-							["last_event"] = 1653912146,
 							["friendlyfire"] = {
 							},
-							["start_time"] = 1653912229,
-							["serial"] = "Creature-0-4445-189-11963-4540-000494B0C6",
-							["aID"] = "4540",
-						}, -- [4]
+							["serial"] = "Creature-0-4447-1-51-4144-0000150C27",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653935632,
+							["damage_taken"] = 1194.005693,
+							["start_time"] = 1653935622,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 46.006262,
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002689,
+							["aID"] = "4465-02B843FA",
 							["damage_from"] = {
-								["Kawakii"] = true,
+								["Sparkleshell Borer"] = true,
 							},
 							["targets"] = {
-								["Kawakii"] = 46,
+								["Sparkleshell Borer"] = 1194,
 							},
-							["delay"] = 1653911936,
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
+							["colocacao"] = 1,
+							["end_time"] = 1653935633,
+							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 46.006262,
-							["damage_taken"] = 93.006262,
+							["total_without_pet"] = 1194.002689,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
-							["end_time"] = 1653912230,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Myrmidon",
+							["total"] = 1194.002689,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Moolatz",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 265,
+										["g_amt"] = 0,
+										["n_max"] = 45,
+										["targets"] = {
+											["Sparkleshell Borer"] = 594,
+										},
+										["n_dmg"] = 329,
+										["n_min"] = 35,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 594,
+										["c_max"] = 90,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 85,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 8,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[3029] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 46,
+										["n_max"] = 81,
 										["targets"] = {
-											["Kawakii"] = 46,
+											["Sparkleshell Borer"] = 162,
 										},
-										["n_dmg"] = 46,
-										["n_min"] = 46,
+										["n_dmg"] = 162,
+										["n_min"] = 81,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 162,
+										["c_max"] = 0,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[6785] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 279,
+										["targets"] = {
+											["Sparkleshell Borer"] = 279,
+										},
+										["n_dmg"] = 279,
+										["n_min"] = 279,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 46,
+										["total"] = 279,
 										["c_max"] = 0,
-										["id"] = 1,
+										["id"] = 6785,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Sparkleshell Borer"] = 72,
+										},
+										["n_dmg"] = 72,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 72,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
 										["extra"] = {
 										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[1823] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Sparkleshell Borer"] = 87,
+										},
+										["n_dmg"] = 87,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 87,
+										["c_max"] = 0,
+										["id"] = 1823,
+										["r_dmg"] = 0,
 										["spellschool"] = 1,
-									}, -- [1]
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 								},
-								["tipo"] = 2,
 							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 46.006262,
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 110.0564742379749,
 							["custom"] = 0,
-							["last_event"] = 1653911936,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653912229,
-							["serial"] = "Creature-0-4445-189-11963-4295-000314B0C5",
-							["aID"] = "4295",
-						}, -- [5]
+							["last_event"] = 1653935632,
+							["damage_taken"] = 431.002689,
+							["start_time"] = 1653935622,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 104,
+					["tipo"] = 3,
+					["_ActorTable"] = {
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 45.001464,
-							["damage_from"] = {
-								["Kawakii"] = true,
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
 							},
-							["targets"] = {
-								["Kawakii"] = 45,
-							},
-							["delay"] = 1653911930,
 							["pets"] = {
 							},
+							["iniciar_hps"] = false,
+							["classe"] = "DRUID",
+							["totalover"] = 0.003689,
+							["total_without_pet"] = 152.003689,
+							["total"] = 152.003689,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.003689,
+							["last_hps"] = 39.48147766377026,
+							["targets"] = {
+								["Moolatz"] = 152,
+							},
+							["totalover_without_pet"] = 0.003689,
+							["healing_taken"] = 152.003689,
+							["fight_component"] = true,
+							["end_time"] = 1653935633,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[3627] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 76,
+										["targets"] = {
+											["Moolatz"] = 152,
+										},
+										["n_min"] = 76,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 152,
+										["c_max"] = 0,
+										["id"] = 3627,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 152,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1653935622,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02B843FA",
+							["totaldenied"] = 0.003689,
+							["delay"] = 0,
+							["last_event"] = 1653935625,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 104,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 104,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[17390] = {
+										["activedamt"] = 0,
+										["id"] = 17390,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 36,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[3627] = {
+										["activedamt"] = 1,
+										["id"] = 3627,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 17,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[17390] = 1,
+								[1823] = 1,
+								[3029] = 2,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1653935633,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 104,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 1664203.353,
+				["tempo_start"] = 1653935622,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9235,
+				["playing_solo"] = true,
+				["totals"] = {
+					1625, -- [1]
+					152, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1194, -- [1]
+					152, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "20:33:54",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Sparkleshell Borer",
+				["TotalElapsedCombatTime"] = 1664014.229,
+				["CombatEndedAt"] = 1664014.229,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 152.003689,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1194.002689,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1664014.229,
+				["combat_id"] = 104,
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "20:33:42",
+				["start_time"] = 1664002.877,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Sparkleshell Borer"] = 1,
+				},
+			}, -- [7]
+			{
+				{
+					["combatId"] = 103,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003211,
+							["aID"] = "4465-02B843FA",
+							["damage_from"] = {
+								["Sparkleshell Borer"] = true,
+							},
+							["targets"] = {
+								["Sparkleshell Borer"] = 1231,
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["end_time"] = 1653935610,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1231.003211,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 1231.003211,
 							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 238,
+										["g_amt"] = 0,
+										["n_max"] = 44,
+										["targets"] = {
+											["Sparkleshell Borer"] = 609,
+										},
+										["n_dmg"] = 371,
+										["n_min"] = 38,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["MISS"] = 1,
+										["total"] = 609,
+										["c_max"] = 84,
+										["a_dmg"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 75,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 9,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[22568] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 183,
+										["targets"] = {
+											["Sparkleshell Borer"] = 183,
+										},
+										["n_dmg"] = 183,
+										["n_min"] = 183,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 183,
+										["c_max"] = 0,
+										["id"] = 22568,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[3029] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 88,
+										["targets"] = {
+											["Sparkleshell Borer"] = 254,
+										},
+										["n_dmg"] = 254,
+										["n_min"] = 81,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 254,
+										["c_max"] = 0,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Sparkleshell Borer"] = 72,
+										},
+										["n_dmg"] = 72,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 72,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[1823] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Sparkleshell Borer"] = 113,
+										},
+										["n_dmg"] = 113,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 113,
+										["c_max"] = 0,
+										["id"] = 1823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 84.99642415241087,
+							["custom"] = 0,
+							["last_event"] = 1653935609,
+							["damage_taken"] = 405.003211,
+							["start_time"] = 1653935594,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.007784,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 405,
+							},
+							["aID"] = "4144",
+							["pets"] = {
+							},
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 45.001464,
-							["damage_taken"] = 93.001464,
+							["total_without_pet"] = 405.007784,
+							["end_time"] = 1653935610,
 							["dps_started"] = false,
-							["end_time"] = 1653912230,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Wizard",
+							["total"] = 405.007784,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Sparkleshell Borer",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -21059,672 +4196,265 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 45,
 										["targets"] = {
-											["Kawakii"] = 45,
+											["Moolatz"] = 252,
 										},
-										["n_dmg"] = 45,
-										["n_min"] = 45,
+										["n_dmg"] = 252,
+										["n_min"] = 38,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 45,
+										["counter"] = 8,
+										["total"] = 252,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["DODGE"] = 2,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
-									[2601] = {
+									[7273] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 9,
 										["targets"] = {
+											["Moolatz"] = 153,
 										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 153,
+										["n_min"] = 9,
 										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
+										["counter"] = 17,
+										["total"] = 153,
 										["c_max"] = 0,
-										["id"] = 2601,
+										["id"] = 7273,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 7,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
+										["spellschool"] = 8,
 										["extra"] = {
 										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 17,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 45.001464,
-							["custom"] = 0,
-							["last_event"] = 1653911930,
 							["friendlyfire"] = {
 							},
-							["start_time"] = 1653912229,
-							["serial"] = "Creature-0-4445-189-11963-4300-000414B0C5",
-							["aID"] = "4300",
-						}, -- [6]
+							["serial"] = "Creature-0-4447-1-51-4144-0000150C7F",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653935609,
+							["damage_taken"] = 1231.007784,
+							["start_time"] = 1653935594,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 103,
 					["tipo"] = 3,
-					["combatId"] = 13,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Kawakii"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
-							["totalover"] = 0.00244,
-							["total_without_pet"] = 8541.00244,
-							["total"] = 8541.00244,
-							["targets_absorbs"] = {
-								["Kawakii"] = 8541,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BCE74D",
-							["totalabsorb"] = 8541.00244,
-							["last_hps"] = 22.14823688052752,
-							["targets"] = {
-								["Kawakii"] = 8541,
-							},
-							["totalover_without_pet"] = 0.00244,
-							["healing_taken"] = 8541.00244,
-							["fight_component"] = true,
-							["end_time"] = 1653912230,
-							["tipo"] = 2,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[33405] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 8355,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 142,
-										["targets"] = {
-											["Kawakii"] = 8355,
-										},
-										["n_min"] = 2,
-										["counter"] = 110,
-										["overheal"] = 0,
-										["total"] = 8355,
-										["c_max"] = 0,
-										["id"] = 33405,
-										["targets_absorbs"] = {
-											["Kawakii"] = 8355,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["n_amt"] = 110,
-										["n_curado"] = 8355,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									[32796] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 186,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 94,
-										["targets"] = {
-											["Kawakii"] = 186,
-										},
-										["n_min"] = 92,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 186,
-										["c_max"] = 0,
-										["id"] = 32796,
-										["targets_absorbs"] = {
-											["Kawakii"] = 186,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["n_amt"] = 2,
-										["n_curado"] = 186,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02BCE74D",
-							["custom"] = 0,
-							["last_event"] = 1653912198,
-							["totaldenied"] = 0.00244,
-							["start_time"] = 1653912025,
-							["delay"] = 1653912198,
-							["heal_enemy_amt"] = 0,
-						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 103,
 					["tipo"] = 7,
-					["combatId"] = 13,
 					["_ActorTable"] = {
-						{
-							["received"] = 42223.001856,
-							["resource"] = 0.001856,
-							["targets"] = {
-								["Kawakii"] = 42223,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.001856,
-							["fight_component"] = true,
-							["total"] = 42223.001856,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[29442] = {
-										["total"] = 39779,
-										["id"] = 29442,
-										["totalover"] = 13753,
-										["targets"] = {
-											["Kawakii"] = 39779,
-										},
-										["counter"] = 97,
-									},
-									[27103] = {
-										["total"] = 2444,
-										["id"] = 27103,
-										["totalover"] = 0,
-										["targets"] = {
-											["Kawakii"] = 2444,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 13753.001856,
-							["alternatepower"] = 0.001856,
-							["last_event"] = 1653912200,
-							["tipo"] = 3,
-							["aID"] = "4465-02BCE74D",
-							["serial"] = "Player-4465-02BCE74D",
-							["flag_original"] = 1298,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
+					["combatId"] = 103,
 					["tipo"] = 9,
-					["combatId"] = 13,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[7321] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 2,
-										["id"] = 7321,
-										["uptime"] = 316,
-										["targets"] = {
-										},
-										["appliedamt"] = 11,
-									},
-									[41425] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 41425,
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[27088] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 27088,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 4,
-									},
-								},
 								["tipo"] = 9,
-							},
-							["classe"] = "MAGE",
-							["cooldowns_defensive"] = 1.005863,
-							["buff_uptime"] = 1473,
-							["last_cooldown"] = {
-								1653911971.824, -- [1]
-								45438, -- [2]
-							},
-							["cc_done_spells"] = {
 								["_ActorTable"] = {
-									[27088] = {
-										["id"] = 27088,
-										["targets"] = {
-											["Scarlet Sorcerer"] = 1,
-											["Scarlet Defender"] = 3,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["aID"] = "4465-02BCE74D",
-							["cooldowns_defensive_targets"] = {
-								["Kawakii"] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[35084] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 3,
-										["refreshamt"] = 0,
-										["id"] = 35084,
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["appliedamt"] = 3,
-									},
-									[27124] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 27124,
-										["uptime"] = 385,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[2479] = {
-										["counter"] = 0,
-										["actived"] = false,
+									[1823] = {
 										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 2479,
-										["uptime"] = 0,
+										["id"] = 1823,
 										["targets"] = {
 										},
-										["appliedamt"] = 0,
-									},
-									[45438] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 45438,
 										["uptime"] = 9,
-										["targets"] = {
-										},
 										["appliedamt"] = 1,
-									},
-									[1953] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 7,
 										["refreshamt"] = 0,
-										["id"] = 1953,
-										["uptime"] = 7,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[17390] = {
+										["activedamt"] = -1,
+										["id"] = 17390,
 										["targets"] = {
 										},
-										["appliedamt"] = 7,
-									},
-									[27126] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
+										["actived_at"] = 1653935609,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
 										["refreshamt"] = 0,
-										["id"] = 27126,
-										["uptime"] = 385,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[27085] = {
-										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 37,
-										["refreshamt"] = 0,
-										["id"] = 27085,
-										["uptime"] = 126,
-										["targets"] = {
-										},
-										["appliedamt"] = 37,
-									},
-									[37444] = {
 										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 10,
-										["refreshamt"] = 19,
-										["id"] = 37444,
-										["uptime"] = 78,
-										["targets"] = {
-										},
-										["appliedamt"] = 10,
-									},
-									[12536] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 7,
-										["refreshamt"] = 0,
-										["id"] = 12536,
-										["uptime"] = 38,
-										["targets"] = {
-										},
-										["appliedamt"] = 7,
-									},
-									[32796] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 3,
-										["refreshamt"] = 0,
-										["id"] = 32796,
-										["uptime"] = 90,
-										["targets"] = {
-										},
-										["appliedamt"] = 3,
-									},
-									[33405] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 6,
-										["refreshamt"] = 2,
-										["id"] = 33405,
-										["uptime"] = 325,
-										["targets"] = {
-										},
-										["appliedamt"] = 6,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 354,
-							["serial"] = "Player-4465-02BCE74D",
-							["cc_done"] = 4.001286,
+							["buff_uptime"] = 48,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 9,
 							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
-								[2139] = 1,
-								[33405] = 7,
-								[1449] = 12,
-								[27087] = 1,
-								[30455] = 5,
-								[27088] = 3,
-								[1953] = 7,
-								[27085] = 37,
-								[45438] = 1,
-								[32796] = 3,
-								[27082] = 14,
-								[27103] = 1,
+								[3029] = 3,
+								[22568] = 1,
 							},
-							["pets"] = {
-							},
-							["last_event"] = 1653912230,
-							["tipo"] = 4,
-							["nome"] = "Kawakii",
 							["debuff_uptime_targets"] = {
 							},
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[45438] = {
-										["id"] = 45438,
-										["targets"] = {
-											["Kawakii"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
+							["nome"] = "Moolatz",
+							["last_event"] = 1653935610,
+							["pets"] = {
 							},
-							["cc_done_targets"] = {
-								["Scarlet Sorcerer"] = 1,
-								["Scarlet Defender"] = 3,
-							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
 						}, -- [1]
 						{
-							["flag_original"] = 1047,
-							["nome"] = "Kaftunik",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
+							["flag_original"] = 68136,
+							["classe"] = "UNKNOW",
+							["nome"] = "Sparkleshell Borer",
 							["pets"] = {
 							},
-							["aID"] = "4465-02E9A18A",
-							["buff_uptime"] = 0,
-							["tipo"] = 4,
-							["last_event"] = 1653912230,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = 768,
-										["uptime"] = 0,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-								},
-								["tipo"] = 9,
+							["fight_component"] = true,
+							["spell_cast"] = {
+								[6016] = 1,
 							},
-							["serial"] = "Player-4465-02E9A18A",
-							["classe"] = "DRUID",
+							["tipo"] = 4,
+							["aID"] = "4144",
+							["serial"] = "Creature-0-4447-1-51-4144-0000150C7F",
+							["last_event"] = 0,
 						}, -- [2]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Moolatz",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02B843FA",
-							["buff_uptime"] = 385,
-							["tipo"] = 4,
-							["last_event"] = 1653912230,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 768,
-										["uptime"] = 385,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["classe"] = "DRUID",
-						}, -- [3]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Scarlet Defender",
-							["aID"] = "4298",
-							["spell_cast"] = {
-								[7164] = 8,
-								[3639] = 20,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4445-189-11963-4298-000794B0C6",
-							["flag_original"] = 2632,
-						}, -- [4]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Scarlet Wizard",
-							["aID"] = "4300",
-							["spell_cast"] = {
-								[2601] = 7,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4445-189-11963-4300-000414B0C5",
-							["flag_original"] = 2632,
-						}, -- [5]
-						{
-							["flag_original"] = 2632,
-							["pets"] = {
-							},
-							["aID"] = "4540",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[11978] = {
-										["id"] = 11978,
-										["counter"] = 1,
-										["targets"] = {
-											["Kawakii"] = 1,
-										},
-										["interrompeu_oque"] = {
-											[27085] = 1,
-										},
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[27085] = 1,
-							},
-							["monster"] = true,
-							["interrupt"] = 1.008395,
-							["interrupt_targets"] = {
-								["Kawakii"] = 1,
-							},
-							["spell_cast"] = {
-								[3391] = 7,
-								[11978] = 1,
-							},
-							["last_event"] = 1653912146,
-							["tipo"] = 4,
-							["nome"] = "Scarlet Monk",
-							["fight_component"] = true,
-							["serial"] = "Creature-0-4445-189-11963-4540-000494B0C6",
-							["classe"] = "UNKNOW",
-						}, -- [6]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Scarlet Sorcerer",
-							["aID"] = "4294",
-							["spell_cast"] = {
-								[9672] = 1,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4445-189-11963-4294-000014B0C5",
-							["flag_original"] = 2632,
-						}, -- [7]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 103,
 					["tipo"] = 2,
-					["combatId"] = 13,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Triickz"] = true,
-					["Vaelyah"] = true,
-					["Kawakii"] = true,
-					["Kaftunik"] = true,
 					["Moolatz"] = true,
 				},
 				["raid_roster_indexed"] = {
-					"Kaftunik", -- [1]
-					"Triickz", -- [2]
-					"Kawakii", -- [3]
-					"Vaelyah", -- [4]
-					"Moolatz", -- [5]
+					"Moolatz", -- [1]
 				},
-				["tempo_start"] = 1653911845,
+				["CombatStartedAt"] = 1664002.877,
+				["tempo_start"] = 1653935594,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["enemy"] = "Scarlet Defender",
-				["combat_counter"] = 9139,
+				["combat_counter"] = 9234,
+				["playing_solo"] = true,
 				["totals"] = {
-					3785.991858, -- [1]
-					8541, -- [2]
+					1636, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 42223,
+						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 1,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1231, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
-				["frags"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "20:33:30",
+				["pvp"] = true,
+				["cleu_timeline"] = {
 				},
-				["frags_need_refresh"] = false,
+				["enemy"] = "Sparkleshell Borer",
+				["TotalElapsedCombatTime"] = 1663991.092,
+				["CombatEndedAt"] = 1663991.092,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -21734,94 +4464,2354 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Kawakii"] = 1444.002787,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Kawakii"] = 8541.00244,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1231.003211,
+						}, -- [1]
+					},
 				},
-				["end_time"] = 1640611.902,
-				["totals_grupo"] = {
-					1444, -- [1]
-					8541, -- [2]
+				["end_time"] = 1663991.092,
+				["combat_id"] = 103,
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "20:33:15",
+				["start_time"] = 1663975.576,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Sparkleshell Borer"] = 1,
+				},
+			}, -- [8]
+			{
+				{
+					["combatId"] = 102,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002526,
+							["aID"] = "4150",
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 209,
+							},
+							["end_time"] = 1653935577,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 209.002526,
+							["monster"] = true,
+							["dps_started"] = false,
+							["total"] = 209.002526,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Saltstone Gazer",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 49,
+										["targets"] = {
+											["Moolatz"] = 209,
+										},
+										["n_dmg"] = 209,
+										["n_min"] = 37,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 209,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[3635] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Moolatz"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 3635,
+										["r_dmg"] = 0,
+										["RESIST"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["serial"] = "Creature-0-4447-1-51-4150-0000150B8A",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653935574,
+							["damage_taken"] = 1336.002526,
+							["start_time"] = 1653935561,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008288,
+							["aID"] = "4465-02B843FA",
+							["damage_from"] = {
+								["Saltstone Gazer"] = true,
+							},
+							["targets"] = {
+								["Saltstone Gazer"] = 1336,
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["end_time"] = 1653935577,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1336.008288,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 1336.008288,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 346,
+										["g_amt"] = 0,
+										["n_max"] = 45,
+										["targets"] = {
+											["Saltstone Gazer"] = 743,
+										},
+										["n_dmg"] = 397,
+										["n_min"] = 35,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 743,
+										["c_max"] = 93,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 80,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 10,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[22568] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 172,
+										["targets"] = {
+											["Saltstone Gazer"] = 172,
+										},
+										["n_dmg"] = 172,
+										["n_min"] = 172,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 172,
+										["c_max"] = 0,
+										["id"] = 22568,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[3029] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 158,
+										["g_amt"] = 0,
+										["n_max"] = 90,
+										["targets"] = {
+											["Saltstone Gazer"] = 248,
+										},
+										["n_dmg"] = 90,
+										["n_min"] = 90,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 248,
+										["c_max"] = 158,
+										["DODGE"] = 1,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["MISS"] = 2,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 158,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[1823] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Saltstone Gazer"] = 113,
+										},
+										["n_dmg"] = 113,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 113,
+										["c_max"] = 0,
+										["id"] = 1823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Saltstone Gazer"] = 60,
+										},
+										["n_dmg"] = 60,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 60,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 88.67704022238284,
+							["custom"] = 0,
+							["last_event"] = 1653935576,
+							["damage_taken"] = 209.008288,
+							["start_time"] = 1653935561,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 102,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 102,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 102,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[17390] = {
+										["activedamt"] = 0,
+										["id"] = 17390,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 48,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 20,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[17390] = 1,
+								[22568] = 2,
+								[3029] = 5,
+								[1823] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1653935577,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["monster"] = true,
+							["nome"] = "Saltstone Gazer",
+							["flag_original"] = 68168,
+							["spell_cast"] = {
+								[3635] = 1,
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Creature-0-4447-1-51-4150-0000150B8A",
+							["aID"] = "4150",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 102,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 1663972.092,
+				["tempo_start"] = 1653935561,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9233,
+				["playing_solo"] = true,
+				["totals"] = {
+					1545, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 42223,
+						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1336, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 13,
-				["TimeData"] = {
-				},
+				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["spells_cast_timeline"] = {
+				["data_fim"] = "20:32:57",
+				["cleu_timeline"] = {
 				},
-				["data_fim"] = "14:03:51",
+				["enemy"] = "Saltstone Gazer",
+				["TotalElapsedCombatTime"] = 1663957.959,
+				["CombatEndedAt"] = 1663957.959,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1336.008288,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1663957.959,
+				["combat_id"] = 102,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "20:32:42",
 				["CombatSkillCache"] = {
 				},
-				["cleu_timeline"] = {
+				["frags"] = {
+					["Saltstone Gazer"] = 1,
 				},
-				["start_time"] = 1640226.273,
-				["contra"] = "Scarlet Defender",
-				["data_inicio"] = "13:57:26",
-			}, -- [16]
+				["start_time"] = 1663942.308,
+				["TimeData"] = {
+				},
+				["contra"] = "Saltstone Gazer",
+			}, -- [9]
 			{
 				{
+					["combatId"] = 101,
 					["tipo"] = 2,
-					["combatId"] = 9,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.005334,
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.001447,
 							["damage_from"] = {
-								["Kawakii"] = true,
+								["Moolatz"] = true,
 							},
 							["targets"] = {
-								["Triickz"] = 89,
-								["Kawakii"] = 25,
+								["Moolatz"] = 268,
 							},
-							["delay"] = 0,
 							["pets"] = {
+							},
+							["total"] = 268.001447,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 268.001447,
+							["friendlyfire"] = {
+							},
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1653935524,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Sparkleshell Borer",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 45,
+										["targets"] = {
+											["Moolatz"] = 160,
+										},
+										["n_dmg"] = 160,
+										["n_min"] = 37,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 160,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[7273] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Moolatz"] = 108,
+										},
+										["n_dmg"] = 108,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 108,
+										["c_max"] = 0,
+										["id"] = 7273,
+										["r_dmg"] = 0,
+										["RESIST"] = 1,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 12,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["aID"] = "4144",
+							["serial"] = "Creature-0-4447-1-51-4144-0000150A70",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653935522,
+							["damage_taken"] = 1290.001447,
+							["start_time"] = 1653935513,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005223,
+							["damage_from"] = {
+								["Sparkleshell Borer"] = true,
+							},
+							["targets"] = {
+								["Sparkleshell Borer"] = 1290,
+							},
+							["total"] = 1290.005223,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1290.005223,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1653935524,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 79,
+										["g_amt"] = 0,
+										["n_max"] = 45,
+										["targets"] = {
+											["Sparkleshell Borer"] = 387,
+										},
+										["n_dmg"] = 308,
+										["n_min"] = 36,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 387,
+										["c_max"] = 79,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 79,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 8,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[6785] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 524,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Sparkleshell Borer"] = 524,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 524,
+										["c_max"] = 524,
+										["id"] = 6785,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 524,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Sparkleshell Borer"] = 24,
+										},
+										["n_dmg"] = 24,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 24,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[1823] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Sparkleshell Borer"] = 87,
+										},
+										["n_dmg"] = 87,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 87,
+										["c_max"] = 0,
+										["id"] = 1823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[22568] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 188,
+										["targets"] = {
+											["Sparkleshell Borer"] = 188,
+										},
+										["n_dmg"] = 188,
+										["n_min"] = 188,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 188,
+										["c_max"] = 0,
+										["id"] = 22568,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[3029] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 80,
+										["targets"] = {
+											["Sparkleshell Borer"] = 80,
+										},
+										["n_dmg"] = 80,
+										["n_min"] = 80,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 80,
+										["c_max"] = 0,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 130.9517026694578,
+							["custom"] = 0,
+							["last_event"] = 1653935522,
+							["damage_taken"] = 268.005223,
+							["start_time"] = 1653935513,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 101,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "DRUID",
+							["totalover"] = 0.007038,
+							["total_without_pet"] = 76.007038,
+							["total"] = 76.007038,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.007038,
+							["last_hps"] = 30.18547974674552,
+							["targets"] = {
+								["Moolatz"] = 76,
+							},
+							["totalover_without_pet"] = 0.007038,
+							["healing_taken"] = 76.007038,
+							["fight_component"] = true,
+							["end_time"] = 1653935524,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[3627] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 76,
+										["targets"] = {
+											["Moolatz"] = 76,
+										},
+										["n_min"] = 76,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 76,
+										["c_max"] = 0,
+										["id"] = 3627,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 76,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1653935515,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02B843FA",
+							["totaldenied"] = 0.007038,
+							["delay"] = 0,
+							["last_event"] = 1653935515,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 101,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 101,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[17390] = {
+										["activedamt"] = 0,
+										["id"] = 17390,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 26,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[3627] = {
+										["activedamt"] = 1,
+										["id"] = 3627,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 15,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[17390] = 1,
+								[22568] = 1,
+								[1823] = 1,
+								[3029] = 2,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1653935524,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 101,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 1663940.14,
+				["tempo_start"] = 1653935513,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9232,
+				["playing_solo"] = true,
+				["totals"] = {
+					1558, -- [1]
+					76, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1290, -- [1]
+					76, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "20:32:04",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Sparkleshell Borer",
+				["TotalElapsedCombatTime"] = 1663904.819,
+				["CombatEndedAt"] = 1663904.819,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 76.007038,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1290.005223,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1663904.819,
+				["combat_id"] = 101,
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "20:31:53",
+				["start_time"] = 1663893.786,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Sparkleshell Borer"] = 1,
+				},
+			}, -- [10]
+			{
+				{
+					["combatId"] = 100,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004789,
+							["aID"] = "4465-02B843FA",
+							["damage_from"] = {
+								["Scorpid Terror"] = true,
+							},
+							["targets"] = {
+								["Scorpid Terror"] = 1294,
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["end_time"] = 1653935495,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1294.004789,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 1294.004789,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 229,
+										["g_amt"] = 0,
+										["n_max"] = 41,
+										["targets"] = {
+											["Scorpid Terror"] = 603,
+										},
+										["n_dmg"] = 374,
+										["n_min"] = 34,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 603,
+										["c_max"] = 83,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 73,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 10,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[22568] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 204,
+										["targets"] = {
+											["Scorpid Terror"] = 204,
+										},
+										["n_dmg"] = 204,
+										["n_min"] = 204,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 204,
+										["c_max"] = 0,
+										["id"] = 22568,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[3029] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 162,
+										["g_amt"] = 0,
+										["n_max"] = 78,
+										["targets"] = {
+											["Scorpid Terror"] = 314,
+										},
+										["n_dmg"] = 152,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 314,
+										["c_max"] = 162,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 162,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Scorpid Terror"] = 60,
+										},
+										["n_dmg"] = 60,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 60,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[1823] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Scorpid Terror"] = 113,
+										},
+										["n_dmg"] = 113,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 113,
+										["c_max"] = 0,
+										["id"] = 1823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 106.3623860762262,
+							["custom"] = 0,
+							["last_event"] = 1653935494,
+							["damage_taken"] = 228.004789,
+							["start_time"] = 1653935482,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.008036,
+							["aID"] = "4139",
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 228,
+							},
+							["end_time"] = 1653935495,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 228.008036,
+							["monster"] = true,
+							["dps_started"] = false,
+							["total"] = 228.008036,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Scorpid Terror",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 50,
+										["targets"] = {
+											["Moolatz"] = 228,
+										},
+										["n_dmg"] = 228,
+										["n_min"] = 39,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 228,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
 							},
 							["friendlyfire"] = {
 							},
-							["total"] = 114.005334,
-							["aID"] = "4283",
+							["serial"] = "Creature-0-4447-1-51-4139-0000150C50",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653935492,
+							["damage_taken"] = 1294.008036,
+							["start_time"] = 1653935482,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 100,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 100,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 100,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[17390] = {
+										["activedamt"] = 0,
+										["id"] = 17390,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 39,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 18,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[17390] = 1,
+								[3029] = 4,
+								[22568] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1653935495,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 100,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 1663893.786,
+				["tempo_start"] = 1653935482,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9231,
+				["playing_solo"] = true,
+				["totals"] = {
+					1522, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1294, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "20:31:35",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Scorpid Terror",
+				["TotalElapsedCombatTime"] = 1663875.736,
+				["CombatEndedAt"] = 1663875.736,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1294.004789,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1663875.736,
+				["combat_id"] = 100,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "20:31:23",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Scorpid Terror"] = 1,
+				},
+				["start_time"] = 1663863.12,
+				["TimeData"] = {
+				},
+				["contra"] = "Scorpid Terror",
+			}, -- [11]
+			{
+				{
+					["combatId"] = 99,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007549,
+							["damage_from"] = {
+								["Scorpid Terror"] = true,
+							},
+							["targets"] = {
+								["Scorpid Terror"] = 1239,
+							},
+							["total"] = 1239.007549,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "DRUID",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 114.005334,
+							["total_without_pet"] = 1239.007549,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1653935476,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 1,
+										["c_dmg"] = 80,
+										["g_amt"] = 0,
+										["n_max"] = 41,
+										["targets"] = {
+											["Scorpid Terror"] = 454,
+										},
+										["n_dmg"] = 374,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 454,
+										["c_max"] = 80,
+										["a_dmg"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 2,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 2,
+										["c_min"] = 80,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 11,
+										["b_dmg"] = 18,
+										["r_amt"] = 0,
+									}, -- [1]
+									[22568] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 171,
+										["targets"] = {
+											["Scorpid Terror"] = 171,
+										},
+										["n_dmg"] = 171,
+										["n_min"] = 171,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 171,
+										["c_max"] = 0,
+										["id"] = 22568,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[3029] = {
+										["c_amt"] = 2,
+										["b_amt"] = 1,
+										["c_dmg"] = 309,
+										["g_amt"] = 0,
+										["n_max"] = 60,
+										["targets"] = {
+											["Scorpid Terror"] = 369,
+										},
+										["n_dmg"] = 60,
+										["n_min"] = 60,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 369,
+										["c_max"] = 156,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 153,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 60,
+										["r_amt"] = 0,
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Scorpid Terror"] = 96,
+										},
+										["n_dmg"] = 96,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 96,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 8,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[1823] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 36,
+										["targets"] = {
+											["Scorpid Terror"] = 149,
+										},
+										["n_dmg"] = 149,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 149,
+										["c_max"] = 0,
+										["id"] = 1823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 82.1350711967557,
+							["custom"] = 0,
+							["last_event"] = 1653935473,
+							["damage_taken"] = 382.007549,
+							["start_time"] = 1653935458,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004494,
+							["total"] = 382.004494,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 382,
+							},
+							["pets"] = {
+							},
 							["monster"] = true,
 							["fight_component"] = true,
-							["end_time"] = 1653911344,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Scarlet Sentry",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 382.004494,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1653935476,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Scorpid Terror",
 							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 77,
+										["g_amt"] = 0,
+										["n_max"] = 48,
+										["targets"] = {
+											["Moolatz"] = 382,
+										},
+										["n_dmg"] = 305,
+										["n_min"] = 38,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 382,
+										["c_max"] = 77,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 77,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "4139",
+							["serial"] = "Creature-0-4447-1-51-4139-0000150C4B",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653935473,
+							["damage_taken"] = 1239.004494,
+							["start_time"] = 1653935458,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 99,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 99,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 99,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[17390] = {
+										["activedamt"] = 0,
+										["id"] = 17390,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 54,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 18,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 18,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["uptime"] = 18,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 22,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[17390] = 1,
+								[1823] = 1,
+								[3029] = 4,
+								[22568] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1653935476,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 99,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 1663862.77,
+				["tempo_start"] = 1653935458,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9230,
+				["playing_solo"] = true,
+				["totals"] = {
+					1621, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1239, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "20:31:17",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Scorpid Terror",
+				["TotalElapsedCombatTime"] = 1663857.502,
+				["CombatEndedAt"] = 1663857.502,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1239.007549,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1663857.502,
+				["combat_id"] = 99,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "20:30:59",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Scorpid Terror"] = 1,
+				},
+				["start_time"] = 1663839.533,
+				["TimeData"] = {
+				},
+				["contra"] = "Scorpid Terror",
+			}, -- [12]
+			{
+				{
+					["combatId"] = 98,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002726,
+							["aID"] = "4465-02B843FA",
+							["damage_from"] = {
+								["Salt Flats Vulture"] = true,
+							},
+							["targets"] = {
+								["Salt Flats Vulture"] = 1240,
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["end_time"] = 1653935448,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1240.002726,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 1240.002726,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 2,
+										["c_dmg"] = 149,
+										["g_amt"] = 0,
+										["n_max"] = 45,
+										["targets"] = {
+											["Salt Flats Vulture"] = 611,
+										},
+										["n_dmg"] = 462,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 611,
+										["c_max"] = 77,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 2,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 72,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 12,
+										["b_dmg"] = 41,
+										["r_amt"] = 0,
+									}, -- [1]
+									[22568] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 190,
+										["targets"] = {
+											["Salt Flats Vulture"] = 190,
+										},
+										["n_dmg"] = 190,
+										["n_min"] = 190,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 190,
+										["c_max"] = 0,
+										["id"] = 22568,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[3029] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 159,
+										["g_amt"] = 0,
+										["n_max"] = 83,
+										["targets"] = {
+											["Salt Flats Vulture"] = 242,
+										},
+										["n_dmg"] = 83,
+										["n_min"] = 83,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 242,
+										["c_max"] = 159,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 159,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[1823] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Salt Flats Vulture"] = 113,
+										},
+										["n_dmg"] = 113,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 113,
+										["c_max"] = 0,
+										["id"] = 1823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Salt Flats Vulture"] = 84,
+										},
+										["n_dmg"] = 84,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 84,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 71.81760257127219,
+							["custom"] = 0,
+							["last_event"] = 1653935448,
+							["damage_taken"] = 262.002726,
+							["start_time"] = 1653935431,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003498,
+							["aID"] = "4158",
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 262,
+							},
+							["end_time"] = 1653935448,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 262.003498,
+							["monster"] = true,
+							["dps_started"] = false,
+							["total"] = 262.003498,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Salt Flats Vulture",
+							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -21830,426 +6820,231 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 47,
 										["targets"] = {
-											["Triickz"] = 89,
-											["Kawakii"] = 25,
+											["Moolatz"] = 262,
 										},
-										["n_dmg"] = 114,
-										["n_min"] = 25,
+										["n_dmg"] = 262,
+										["n_min"] = 38,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 114,
+										["counter"] = 8,
+										["total"] = 262,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["DODGE"] = 2,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 								},
-								["tipo"] = 2,
 							},
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1653911343,
-							["damage_taken"] = 1509.005334,
-							["start_time"] = 1653911339,
-							["serial"] = "Creature-0-4447-0-59-4283-000014AEEC",
-							["classe"] = "UNKNOW",
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.003789,
-							["damage_from"] = {
-								["Scarlet Sentry"] = true,
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["aID"] = "4465-02E807F0",
-							["classe"] = "SHAMAN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.003789,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 0.003789,
-							["damage_taken"] = 89.003789,
-							["tipo"] = 1,
-							["nome"] = "Triickz",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 0.0008118705806498032,
-							["friendlyfire_total"] = 0,
-							["colocacao"] = 2,
-							["last_event"] = 0,
 							["friendlyfire"] = {
 							},
-							["start_time"] = 1653911344,
-							["serial"] = "Player-4465-02E807F0",
-							["end_time"] = 1653911344,
+							["serial"] = "Creature-0-4447-1-51-4158-0000150C46",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653935447,
+							["damage_taken"] = 1240.003498,
+							["start_time"] = 1653935433,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [2]
-						{
-							["flag_original"] = 66834,
-							["totalabsorbed"] = 0.004246,
-							["damage_from"] = {
-								["Scarlet Sentry"] = true,
-							},
-							["targets"] = {
-								["Scarlet Sentry"] = 1509,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
-							["classe"] = "MAGE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1509.004246,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 1509.004246,
-							["damage_taken"] = 25.004246,
-							["tipo"] = 1,
-							["nome"] = "Kawakii",
-							["spells"] = {
-								["_ActorTable"] = {
-									[27082] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 903,
-										["g_amt"] = 0,
-										["n_max"] = 606,
-										["targets"] = {
-											["Scarlet Sentry"] = 1509,
-										},
-										["n_dmg"] = 606,
-										["n_min"] = 606,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1509,
-										["c_max"] = 903,
-										["id"] = 27082,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 903,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 64,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 323.3349573510263,
-							["end_time"] = 1653911344,
-							["colocacao"] = 1,
-							["last_event"] = 1653911343,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1653911342,
-							["serial"] = "Player-4465-02BCE74D",
-							["aID"] = "4465-02BCE74D",
-						}, -- [3]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 98,
 					["tipo"] = 3,
-					["combatId"] = 9,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
+					["combatId"] = 98,
 					["tipo"] = 7,
-					["combatId"] = 9,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
+					["combatId"] = 98,
 					["tipo"] = 9,
-					["combatId"] = 9,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[7321] = {
-										["counter"] = 0,
-										["actived"] = false,
+									[17390] = {
 										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 7321,
-										["uptime"] = 0,
+										["id"] = 17390,
 										["targets"] = {
 										},
+										["uptime"] = 17,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02BCE74D",
+							["buff_uptime"] = 51,
+							["aID"] = "4465-02B843FA",
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[33944] = {
-										["counter"] = 0,
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 17,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
 										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 33944,
-										["uptime"] = 5,
+										["id"] = 8914,
 										["targets"] = {
 										},
+										["uptime"] = 17,
 										["appliedamt"] = 1,
-									},
-									[2479] = {
-										["activedamt"] = 1,
-										["id"] = 2479,
-										["targets"] = {
-										},
-										["actived_at"] = 1653911339,
-										["uptime"] = 0,
-										["counter"] = 0,
 										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									[27126] = {
-										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 27126,
-										["uptime"] = 5,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[27124] = {
 										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 27124,
-										["uptime"] = 5,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
 									},
-									[37444] = {
-										["counter"] = 0,
-										["actived"] = false,
+									[768] = {
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 37444,
-										["uptime"] = 1,
+										["id"] = 768,
 										["targets"] = {
 										},
+										["uptime"] = 17,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 0,
-							["nome"] = "Kawakii",
+							["debuff_uptime"] = 26,
+							["buff_uptime_targets"] = {
+							},
 							["grupo"] = true,
 							["spell_cast"] = {
-								[27082] = 2,
+								[17390] = 1,
+								[22568] = 1,
+								[1823] = 1,
+								[3029] = 2,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
+							["nome"] = "Moolatz",
+							["last_event"] = 1653935448,
+							["pets"] = {
 							},
-							["last_event"] = 1653911344,
-							["buff_uptime"] = 16,
-							["classe"] = "MAGE",
-							["serial"] = "Player-4465-02BCE74D",
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
 							["tipo"] = 4,
 						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Kaftunik",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02E9A18A",
-							["buff_uptime"] = 5,
-							["tipo"] = 4,
-							["last_event"] = 1653911344,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 768,
-										["uptime"] = 5,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02E9A18A",
-							["classe"] = "DRUID",
-						}, -- [2]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Moolatz",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02B843FA",
-							["buff_uptime"] = 5,
-							["tipo"] = 4,
-							["last_event"] = 1653911344,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[768] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 768,
-										["uptime"] = 5,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02B843FA",
-							["classe"] = "DRUID",
-						}, -- [3]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 98,
 					["tipo"] = 2,
-					["combatId"] = 9,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Triickz"] = true,
-					["Vaelyah"] = true,
-					["Kawakii"] = true,
-					["Kaftunik"] = true,
 					["Moolatz"] = true,
 				},
-				["CombatStartedAt"] = 1639742.325,
-				["tempo_start"] = 1653911339,
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 1663838.085,
+				["tempo_start"] = 1653935431,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["enemy"] = "Scarlet Sentry",
-				["combat_counter"] = 9135,
-				["raid_roster_indexed"] = {
-					"Kaftunik", -- [1]
-					"Triickz", -- [2]
-					"Kawakii", -- [3]
-					"Vaelyah", -- [4]
-					"Moolatz", -- [5]
-				},
+				["combat_counter"] = 9229,
+				["playing_solo"] = true,
 				["totals"] = {
-					1623, -- [1]
+					1502, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_timeline"] = {
+				["totals_grupo"] = {
+					1240, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "20:30:49",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Salt Flats Vulture",
+				["TotalElapsedCombatTime"] = 17.76800000015646,
+				["CombatEndedAt"] = 1663829.583,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
-				},
-				["data_inicio"] = "13:48:59",
-				["end_time"] = 1639724.656,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["combat_id"] = 9,
-				["totals_grupo"] = {
-					1509, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Triickz"] = 0.003789,
-							["Kawakii"] = 1509.004246,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -22258,22 +7053,2733 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1240.002726,
+						}, -- [1]
+					},
 				},
-				["hasSaved"] = true,
-				["frags"] = {
-					["Scarlet Sentry"] = 1,
+				["end_time"] = 1663829.583,
+				["combat_id"] = 98,
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["data_fim"] = "13:49:04",
 				["spells_cast_timeline"] = {
 				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "20:30:31",
 				["CombatSkillCache"] = {
 				},
-				["instance_type"] = "none",
-				["start_time"] = 1639719.656,
-				["contra"] = "Scarlet Sentry",
+				["frags"] = {
+					["Salt Flats Vulture"] = 1,
+				},
+				["start_time"] = 1663811.815,
 				["TimeData"] = {
 				},
+				["contra"] = "Salt Flats Vulture",
+			}, -- [13]
+			{
+				{
+					["combatId"] = 97,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005566,
+							["damage_from"] = {
+								["Saltstone Crystalhide"] = true,
+								["Salt Flats Vulture"] = true,
+							},
+							["targets"] = {
+								["Saltstone Crystalhide"] = 1025,
+							},
+							["total"] = 1025.005566,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1025.005566,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1653935391,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 175,
+										["g_amt"] = 0,
+										["n_max"] = 47,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 605,
+										},
+										["n_dmg"] = 430,
+										["n_min"] = 39,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 605,
+										["c_max"] = 93,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 82,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 10,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[1823] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 70,
+										["g_amt"] = 0,
+										["n_max"] = 26,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 96,
+										},
+										["n_dmg"] = 26,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 96,
+										["c_max"] = 70,
+										["id"] = 1823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 70,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[3029] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 175,
+										["g_amt"] = 0,
+										["n_max"] = 89,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 264,
+										},
+										["n_dmg"] = 89,
+										["n_min"] = 89,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 264,
+										["c_max"] = 175,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 175,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 60,
+										},
+										["n_dmg"] = 60,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 60,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 91.23325019943512,
+							["custom"] = 0,
+							["last_event"] = 1653935390,
+							["damage_taken"] = 246.005566,
+							["start_time"] = 1653935379,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004728,
+							["total"] = 199.004728,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 199,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 199.004728,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1653935391,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Saltstone Crystalhide",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 43,
+										["targets"] = {
+											["Moolatz"] = 199,
+										},
+										["n_dmg"] = 199,
+										["n_min"] = 35,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 199,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "4151",
+							["serial"] = "Creature-0-4447-1-51-4151-00001508D9",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653935390,
+							["damage_taken"] = 1025.004728,
+							["start_time"] = 1653935380,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 97,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 97,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 97,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[17390] = {
+										["activedamt"] = -1,
+										["id"] = 17390,
+										["targets"] = {
+										},
+										["actived_at"] = 1653935390,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 36,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 6,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[3029] = 2,
+								[1823] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1653935391,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 97,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 1663796.798,
+				["tempo_start"] = 1653935379,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9228,
+				["playing_solo"] = true,
+				["totals"] = {
+					1223.990289, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1025, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "20:29:51",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Saltstone Crystalhide",
+				["TotalElapsedCombatTime"] = 11.35000000009313,
+				["CombatEndedAt"] = 1663808.148,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1025.005566,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1663772.079,
+				["combat_id"] = 97,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+					["Moolatz"] = {
+						{
+							true, -- [1]
+							1, -- [2]
+							47, -- [3]
+							1653935430.758, -- [4]
+							1483, -- [5]
+							"Salt Flats Vulture", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["data_inicio"] = "20:29:39",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Saltstone Crystalhide"] = 1,
+				},
+				["start_time"] = 1663759.844,
+				["TimeData"] = {
+				},
+				["contra"] = "Saltstone Crystalhide",
+			}, -- [14]
+			{
+				{
+					["combatId"] = 96,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00495,
+							["damage_from"] = {
+								["Saltstone Crystalhide"] = true,
+							},
+							["targets"] = {
+								["Saltstone Crystalhide"] = 1036,
+							},
+							["total"] = 1036.00495,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1036.00495,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1653935364,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 1,
+										["c_dmg"] = 168,
+										["g_amt"] = 0,
+										["n_max"] = 47,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 412,
+										},
+										["n_dmg"] = 244,
+										["n_min"] = 29,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 412,
+										["c_max"] = 89,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 79,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 29,
+										["r_amt"] = 0,
+									}, -- [1]
+									[22568] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 184,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 184,
+										},
+										["n_dmg"] = 184,
+										["n_min"] = 184,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 184,
+										["c_max"] = 0,
+										["id"] = 22568,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[3029] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 89,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 267,
+										},
+										["n_dmg"] = 267,
+										["n_min"] = 89,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 267,
+										["c_max"] = 0,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[1823] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 113,
+										},
+										["n_dmg"] = 113,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 113,
+										["c_max"] = 0,
+										["id"] = 1823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 60,
+										},
+										["n_dmg"] = 60,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 60,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 106.8046340211313,
+							["custom"] = 0,
+							["last_event"] = 1653935364,
+							["damage_taken"] = 204.00495,
+							["start_time"] = 1653935354,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004344,
+							["total"] = 204.004344,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 204,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 204.004344,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1653935364,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Saltstone Crystalhide",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 45,
+										["targets"] = {
+											["Moolatz"] = 204,
+										},
+										["n_dmg"] = 204,
+										["n_min"] = 34,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 204,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "4151",
+							["serial"] = "Creature-0-4447-1-51-4151-000015099A",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653935362,
+							["damage_taken"] = 1036.004344,
+							["start_time"] = 1653935354,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 96,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 96,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 96,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[17390] = {
+										["activedamt"] = -1,
+										["id"] = 17390,
+										["targets"] = {
+										},
+										["actived_at"] = 1653935364,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 30,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 9,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[22568] = 1,
+								[3029] = 4,
+								[1823] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1653935364,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 96,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 1663759.129,
+				["tempo_start"] = 1653935354,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9227,
+				["playing_solo"] = true,
+				["totals"] = {
+					1240, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1036, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "20:29:25",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Saltstone Crystalhide",
+				["TotalElapsedCombatTime"] = 1663745.361,
+				["CombatEndedAt"] = 1663745.361,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1036.00495,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1663745.361,
+				["combat_id"] = 96,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "20:29:15",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Saltstone Crystalhide"] = 1,
+				},
+				["start_time"] = 1663735.661,
+				["TimeData"] = {
+				},
+				["contra"] = "Saltstone Crystalhide",
+			}, -- [15]
+			{
+				{
+					["combatId"] = 95,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003023,
+							["aID"] = "4465-02B843FA",
+							["damage_from"] = {
+								["Saltstone Crystalhide"] = true,
+							},
+							["targets"] = {
+								["Saltstone Crystalhide"] = 1035,
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["end_time"] = 1653935328,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1035.003023,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 1035.003023,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 2,
+										["c_dmg"] = 80,
+										["g_amt"] = 0,
+										["n_max"] = 47,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 613,
+										},
+										["n_dmg"] = 533,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 613,
+										["c_max"] = 80,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 80,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 13,
+										["b_dmg"] = 57,
+										["r_amt"] = 0,
+									}, -- [1]
+									[3029] = {
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 87,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 163,
+										},
+										["n_dmg"] = 163,
+										["n_min"] = 76,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 163,
+										["c_max"] = 0,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 76,
+										["r_amt"] = 0,
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 84,
+										},
+										["n_dmg"] = 84,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 84,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[1823] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 36,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 175,
+										},
+										["n_dmg"] = 175,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 175,
+										["c_max"] = 0,
+										["id"] = 1823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 70.88576282434651,
+							["custom"] = 0,
+							["last_event"] = 1653935326,
+							["damage_taken"] = 281.003023,
+							["start_time"] = 1653935312,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001821,
+							["total"] = 281.001821,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 281,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 281.001821,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1653935328,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Saltstone Crystalhide",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 45,
+										["targets"] = {
+											["Moolatz"] = 281,
+										},
+										["n_dmg"] = 281,
+										["n_min"] = 35,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 281,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "4151",
+							["serial"] = "Creature-0-4447-1-51-4151-0000950C7A",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653935326,
+							["damage_taken"] = 1035.001821,
+							["start_time"] = 1653935314,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 95,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "DRUID",
+							["totalover"] = 0.007238,
+							["total_without_pet"] = 152.007238,
+							["total"] = 152.007238,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.007238,
+							["last_hps"] = 25.61631917708176,
+							["targets"] = {
+								["Moolatz"] = 152,
+							},
+							["totalover_without_pet"] = 0.007238,
+							["healing_taken"] = 152.007238,
+							["fight_component"] = true,
+							["end_time"] = 1653935328,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[3627] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 76,
+										["targets"] = {
+											["Moolatz"] = 152,
+										},
+										["n_min"] = 76,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 152,
+										["c_max"] = 0,
+										["id"] = 3627,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 152,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1653935324,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02B843FA",
+							["totaldenied"] = 0.007238,
+							["delay"] = 1653935318,
+							["last_event"] = 1653935318,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 95,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 95,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[17390] = {
+										["activedamt"] = -1,
+										["id"] = 17390,
+										["targets"] = {
+										},
+										["actived_at"] = 1653935326,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 54,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[3627] = {
+										["activedamt"] = 1,
+										["id"] = 3627,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 12,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[3029] = 2,
+								[1823] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1653935328,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 95,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 1663733.927,
+				["tempo_start"] = 1653935312,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9226,
+				["playing_solo"] = true,
+				["totals"] = {
+					1316, -- [1]
+					152, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1035, -- [1]
+					152, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "20:28:48",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Saltstone Crystalhide",
+				["TotalElapsedCombatTime"] = 1663708.943,
+				["CombatEndedAt"] = 1663708.943,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 152.007238,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1035.003023,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1663708.943,
+				["combat_id"] = 95,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "20:28:32",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Saltstone Crystalhide"] = 1,
+				},
+				["start_time"] = 1663693.074,
+				["TimeData"] = {
+				},
+				["contra"] = "Saltstone Crystalhide",
+			}, -- [16]
+			{
+				{
+					["combatId"] = 94,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003041,
+							["aID"] = "4465-02B843FA",
+							["damage_from"] = {
+								["Saltstone Gazer"] = true,
+							},
+							["targets"] = {
+								["Saltstone Gazer"] = 1292,
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["end_time"] = 1653935302,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1292.003041,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 1292.003041,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 45,
+										["targets"] = {
+											["Saltstone Gazer"] = 643,
+										},
+										["n_dmg"] = 643,
+										["n_min"] = 25,
+										["g_dmg"] = 0,
+										["counter"] = 19,
+										["DODGE"] = 1,
+										["total"] = 643,
+										["c_max"] = 0,
+										["a_dmg"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 16,
+										["b_dmg"] = 25,
+										["r_amt"] = 0,
+									}, -- [1]
+									[22568] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 196,
+										["targets"] = {
+											["Saltstone Gazer"] = 196,
+										},
+										["n_dmg"] = 196,
+										["n_min"] = 196,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 196,
+										["c_max"] = 0,
+										["id"] = 22568,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[3029] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 85,
+										["targets"] = {
+											["Saltstone Gazer"] = 169,
+										},
+										["n_dmg"] = 169,
+										["n_min"] = 84,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 169,
+										["c_max"] = 0,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Saltstone Gazer"] = 84,
+										},
+										["n_dmg"] = 84,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 84,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["RESIST"] = 1,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[1823] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Saltstone Gazer"] = 200,
+										},
+										["n_dmg"] = 200,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 200,
+										["c_max"] = 0,
+										["id"] = 1823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 71.11030001653351,
+							["custom"] = 0,
+							["last_event"] = 1653935301,
+							["damage_taken"] = 412.003041,
+							["start_time"] = 1653935283,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007559,
+							["aID"] = "4150",
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 412,
+							},
+							["end_time"] = 1653935302,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 412.007559,
+							["monster"] = true,
+							["dps_started"] = false,
+							["total"] = 412.007559,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Saltstone Gazer",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 98,
+										["g_amt"] = 0,
+										["n_max"] = 50,
+										["targets"] = {
+											["Moolatz"] = 412,
+										},
+										["n_dmg"] = 314,
+										["n_min"] = 39,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 412,
+										["c_max"] = 98,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 2,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 98,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["serial"] = "Creature-0-4447-1-51-4150-0000150CA9",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653935300,
+							["damage_taken"] = 1292.007559,
+							["start_time"] = 1653935285,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 94,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+								["Moolatz"] = 27,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "DRUID",
+							["totalover"] = 27.008254,
+							["total_without_pet"] = 49.008254,
+							["total"] = 49.008254,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.008254,
+							["last_hps"] = 26.7220577967033,
+							["targets"] = {
+								["Moolatz"] = 49,
+							},
+							["totalover_without_pet"] = 0.008254,
+							["healing_taken"] = 49.008254,
+							["fight_component"] = true,
+							["end_time"] = 1653935302,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[3627] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Moolatz"] = 27,
+										},
+										["n_max"] = 49,
+										["targets"] = {
+											["Moolatz"] = 49,
+										},
+										["n_min"] = 49,
+										["counter"] = 1,
+										["overheal"] = 27,
+										["total"] = 49,
+										["c_max"] = 0,
+										["id"] = 3627,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 49,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1653935301,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02B843FA",
+							["totaldenied"] = 0.008254,
+							["delay"] = 1653935285,
+							["last_event"] = 1653935285,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 94,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 94,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
+										["targets"] = {
+										},
+										["uptime"] = 15,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[17390] = {
+										["activedamt"] = -1,
+										["id"] = 17390,
+										["targets"] = {
+										},
+										["actived_at"] = 1653935301,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 59,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["uptime"] = 19,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 19,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 19,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[3627] = {
+										["activedamt"] = 1,
+										["id"] = 3627,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 15,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[22568] = 1,
+								[1823] = 1,
+								[3029] = 2,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1653935302,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 94,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 1663691.391,
+				["tempo_start"] = 1653935283,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9225,
+				["playing_solo"] = true,
+				["totals"] = {
+					1704, -- [1]
+					49, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1292, -- [1]
+					49, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "20:28:23",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Saltstone Gazer",
+				["TotalElapsedCombatTime"] = 1663683.443,
+				["CombatEndedAt"] = 1663683.443,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 49.008254,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1292.003041,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1663683.443,
+				["combat_id"] = 94,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "20:28:04",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Saltstone Gazer"] = 1,
+				},
+				["start_time"] = 1663664.155,
+				["TimeData"] = {
+				},
+				["contra"] = "Saltstone Gazer",
 			}, -- [17]
+			{
+				{
+					["combatId"] = 93,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00365,
+							["damage_from"] = {
+								["Saltstone Crystalhide"] = true,
+							},
+							["targets"] = {
+								["Saltstone Crystalhide"] = 1021,
+							},
+							["total"] = 1021.00365,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "DRUID",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1021.00365,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1653935248,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02B843FA",
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 1,
+										["c_dmg"] = 77,
+										["g_amt"] = 0,
+										["n_max"] = 44,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 507,
+										},
+										["n_dmg"] = 430,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 507,
+										["c_max"] = 77,
+										["DODGE"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 77,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 11,
+										["b_dmg"] = 26,
+										["r_amt"] = 0,
+									}, -- [1]
+									[3029] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 84,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 84,
+										},
+										["n_dmg"] = 84,
+										["n_min"] = 84,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 84,
+										["c_max"] = 0,
+										["id"] = 3029,
+										["r_dmg"] = 0,
+										["MISS"] = 2,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8914] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 48,
+										},
+										["n_dmg"] = 48,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 48,
+										["c_max"] = 0,
+										["id"] = 8914,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[1823] = {
+										["c_amt"] = 1,
+										["b_amt"] = 1,
+										["c_dmg"] = 71,
+										["g_amt"] = 0,
+										["n_max"] = 26,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 193,
+										},
+										["n_dmg"] = 122,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 193,
+										["c_max"] = 71,
+										["id"] = 1823,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 71,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 18,
+										["r_amt"] = 0,
+									},
+									[22568] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 189,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 189,
+										},
+										["n_dmg"] = 189,
+										["n_min"] = 189,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 189,
+										["c_max"] = 0,
+										["id"] = 22568,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[17390] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Saltstone Crystalhide"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 17390,
+										["r_dmg"] = 0,
+										["RESIST"] = 1,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02B843FA",
+							["last_dps"] = 73.4429326715482,
+							["custom"] = 0,
+							["last_event"] = 1653935248,
+							["damage_taken"] = 153.00365,
+							["start_time"] = 1653935234,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.008526,
+							["total"] = 153.008526,
+							["damage_from"] = {
+								["Moolatz"] = true,
+							},
+							["targets"] = {
+								["Moolatz"] = 153,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 153.008526,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1653935248,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Saltstone Crystalhide",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 42,
+										["targets"] = {
+											["Moolatz"] = 153,
+										},
+										["n_dmg"] = 153,
+										["n_min"] = 34,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 153,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 3,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "4151",
+							["serial"] = "Creature-0-4447-1-51-4151-0000150A95",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1653935248,
+							["damage_taken"] = 1021.008526,
+							["start_time"] = 1653935240,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 93,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "DRUID",
+							["totalover"] = 0.002463,
+							["total_without_pet"] = 228.002463,
+							["total"] = 228.002463,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02B843FA",
+							["totalabsorb"] = 0.002463,
+							["last_hps"] = 30.26715292690363,
+							["targets"] = {
+								["Moolatz"] = 228,
+							},
+							["totalover_without_pet"] = 0.002463,
+							["healing_taken"] = 228.002463,
+							["fight_component"] = true,
+							["end_time"] = 1653935248,
+							["healing_from"] = {
+								["Moolatz"] = true,
+							},
+							["nome"] = "Moolatz",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[3627] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 76,
+										["targets"] = {
+											["Moolatz"] = 228,
+										},
+										["n_min"] = 76,
+										["counter"] = 3,
+										["overheal"] = 0,
+										["total"] = 228,
+										["c_max"] = 0,
+										["id"] = 3627,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 228,
+										["totaldenied"] = 0,
+										["n_amt"] = 3,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1653935236,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02B843FA",
+							["totaldenied"] = 0.002463,
+							["delay"] = 0,
+							["last_event"] = 1653935242,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 93,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 93,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[1823] = {
+										["activedamt"] = 0,
+										["id"] = 1823,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[17390] = {
+										["activedamt"] = 0,
+										["id"] = 17390,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 50,
+							["aID"] = "4465-02B843FA",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[768] = {
+										["activedamt"] = 1,
+										["id"] = 768,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[5234] = {
+										["activedamt"] = 1,
+										["id"] = 5234,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[8914] = {
+										["activedamt"] = 1,
+										["id"] = 8914,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[3627] = {
+										["activedamt"] = 1,
+										["id"] = 3627,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 19,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[17390] = 2,
+								[22568] = 1,
+								[3029] = 3,
+								[1823] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Moolatz",
+							["last_event"] = 1653935248,
+							["pets"] = {
+							},
+							["classe"] = "DRUID",
+							["serial"] = "Player-4465-02B843FA",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 93,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Moolatz"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Moolatz", -- [1]
+				},
+				["CombatStartedAt"] = 1663662.722,
+				["tempo_start"] = 1653935234,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9224,
+				["playing_solo"] = true,
+				["totals"] = {
+					1174, -- [1]
+					228, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1021, -- [1]
+					228, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "20:27:29",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Saltstone Crystalhide",
+				["TotalElapsedCombatTime"] = 1663629.604,
+				["CombatEndedAt"] = 1663629.604,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Moolatz"] = 228.002463,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Moolatz"] = 1021.00365,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1663629.604,
+				["combat_id"] = 93,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "20:27:15",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Saltstone Crystalhide"] = 1,
+				},
+				["start_time"] = 1663615.352,
+				["TimeData"] = {
+				},
+				["contra"] = "Saltstone Crystalhide",
+			}, -- [18]
 		},
 	},
 	["ocd_tracker"] = {
@@ -22490,9 +9996,9 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["enabled"] = true,
 			["animate"] = true,
-			["alwaysshowme"] = true,
+			["showamount"] = false,
 			["hide_pull_bar"] = false,
-			["author"] = "Details! Team",
+			["useclasscolors"] = false,
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -22502,12 +10008,12 @@ _detalhes_database = {
 			["openedfromcommand"] = false,
 			["updatespeed"] = 0.2,
 			["dividebyhundred"] = true,
-			["showamount"] = false,
+			["alwaysshowme"] = true,
 			["useplayercolor"] = false,
 			["playSound"] = false,
 			["usefocus"] = false,
 			["playSoundFile"] = "Details Threat Warning Volume 3",
-			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["enabled"] = true,
@@ -22525,8 +10031,8 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
 			["opened"] = 0,
-			["show_icon"] = 5,
 			["author"] = "Details! Team",
+			["show_icon"] = 5,
 			["hide_on_combat"] = false,
 			["max_emote_segments"] = 3,
 		},
@@ -22583,24 +10089,9 @@ _detalhes_database = {
 			["row_texture"] = "Glamour2",
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = true,
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["y"] = -183.107162475586,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -22612,30 +10103,45 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["author"] = "Details! Team",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["font_size"] = 10,
+			["use_spark"] = false,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
-			["use_spark"] = false,
-			["author"] = "Details! Team",
+			["y"] = -183.107162475586,
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["point"] = "RIGHT",
 			["row_height"] = 18,
 			["scale"] = 1,
 		},
-	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
 	},
 	["announce_prepots"] = {
 		["enabled"] = false,
 		["reverse"] = false,
 		["channel"] = "SELF",
 	},
+	["combat_counter"] = 9241,
 	["announce_damagerecord"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["combat_counter"] = 9185,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["cached_talents"] = {
 		["Player-4465-017E7EB8"] = {
 			{
@@ -26974,7 +14480,7 @@ _detalhes_database = {
 			}, -- [29]
 			{
 				136231, -- [1]
-				0, -- [2]
+				2, -- [2]
 				4, -- [3]
 				1, -- [4]
 				2, -- [5]
@@ -27001,7 +14507,7 @@ _detalhes_database = {
 			}, -- [32]
 			{
 				132141, -- [1]
-				0, -- [2]
+				2, -- [2]
 				5, -- [3]
 				1, -- [4]
 				2, -- [5]
@@ -27028,7 +14534,7 @@ _detalhes_database = {
 			}, -- [35]
 			{
 				135879, -- [1]
-				0, -- [2]
+				1, -- [2]
 				6, -- [3]
 				2, -- [4]
 				2, -- [5]
@@ -27832,7 +15338,7 @@ _detalhes_database = {
 		},
 	},
 	["ignore_nicktag"] = true,
-	["combat_id"] = 56,
+	["combat_id"] = 110,
 	["savedStyles"] = {
 		{
 			["hide_in_combat_type"] = 1,
@@ -27933,8 +15439,11 @@ _detalhes_database = {
 				["onleave"] = 1,
 			},
 			["show_statusbar"] = false,
-			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
+			["switch_damager"] = false,
+			["auto_hide_menu"] = {
+				["left"] = true,
+				["right"] = true,
+			},
 			["strata"] = "LOW",
 			["bars_grow_direction"] = 1,
 			["resetbutton_config"] = {
@@ -27982,17 +15491,24 @@ _detalhes_database = {
 				true, -- [3]
 				true, -- [4]
 			},
-			["switch_damager"] = false,
-			["auto_hide_menu"] = {
-				["left"] = true,
-				["right"] = true,
+			["menu2_anchor_down"] = {
+				32, -- [1]
+				0, -- [2]
+			},
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
 			},
 			["menu_anchor_down"] = {
 				-22, -- [1]
 				0, -- [2]
 			},
 			["window_scale"] = 1,
-			["hide_icon"] = true,
+			["switch_damager_in_combat"] = false,
 			["instancebutton_config"] = {
 				["textcolor"] = {
 					0.8, -- [1]
@@ -28013,8 +15529,8 @@ _detalhes_database = {
 				["textfont"] = "Friz Quadrata TT",
 				["textshadow"] = false,
 			},
+			["hide_icon"] = true,
 			["grab_on_top"] = false,
-			["switch_damager_in_combat"] = false,
 			["menu2_anchor"] = {
 				32, -- [1]
 				3, -- [2]
@@ -28029,18 +15545,8 @@ _detalhes_database = {
 				},
 			},
 			["hide_in_combat"] = false,
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
+			["show_sidebars"] = false,
+			["desaturated_menu"] = false,
 			["plugins_grow_direction"] = 1,
 			["wallpaper"] = {
 				["overlay"] = {
@@ -28112,8 +15618,10 @@ _detalhes_database = {
 					1, -- [3]
 					1, -- [4]
 				},
+				["textL_custom_text"] = "{data3}{data2}",
+				["texture_background"] = "Blizzard",
 				["alpha"] = 0,
-				["textR_class_colors"] = false,
+				["textL_class_colors"] = false,
 				["backdrop"] = {
 					["enabled"] = false,
 					["size"] = 12,
@@ -28125,11 +15633,9 @@ _detalhes_database = {
 					},
 					["texture"] = "Details BarBorder 2",
 				},
-				["texture_background"] = "Blizzard",
-				["textL_custom_text"] = "{data3}{data2}",
 				["no_icon"] = false,
 				["font_size"] = 11,
-				["textL_class_colors"] = false,
+				["textR_class_colors"] = false,
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
 				["height"] = 20,
@@ -28181,7 +15687,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["classe"] = "PALADIN",
 					["raid_targets"] = {
@@ -28189,10 +15696,9 @@ _detalhes_database = {
 					["total_without_pet"] = 0.00788,
 					["delay"] = 0,
 					["dps_started"] = false,
-					["total"] = 0.00788,
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
+					["end_time"] = 1653909169,
+					["damage_taken"] = 0.00788,
+					["on_hold"] = false,
 					["nome"] = "Extod",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -28308,10 +15814,10 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.00788,
+					["last_dps"] = 0,
 					["start_time"] = 1653909166,
 					["serial"] = "Player-4465-0282DBA2",
-					["end_time"] = 1653909169,
+					["total"] = 0.00788,
 				}, -- [1]
 				{
 					["flag_original"] = 1298,
@@ -28327,7 +15833,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["classe"] = "PALADIN",
 					["raid_targets"] = {
@@ -28335,10 +15842,9 @@ _detalhes_database = {
 					["total_without_pet"] = 0.002488,
 					["delay"] = 0,
 					["dps_started"] = false,
-					["total"] = 0.002488,
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
+					["end_time"] = 1653909169,
+					["damage_taken"] = 0.002488,
+					["on_hold"] = false,
 					["nome"] = "Acheros",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -28381,10 +15887,10 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.002488,
+					["last_dps"] = 0,
 					["start_time"] = 1653909166,
 					["serial"] = "Player-4465-02564042",
-					["end_time"] = 1653909169,
+					["total"] = 0.002488,
 				}, -- [2]
 				{
 					["flag_original"] = 1297,
@@ -28392,14 +15898,23 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Scarlet Sentry"] = 0,
-						["Scarlet Wizard"] = 0,
-						["Scarlet Scout"] = 0,
 						["Scarlet Champion"] = 0,
+						["Needles Cougar"] = 0,
+						["Thunderhawk Hatchling"] = 0,
+						["Scarlet Scout"] = 0,
+						["Grimtotem Stomper"] = 0,
+						["Wandering Barrens Giraffe"] = 0,
+						["Scarlet Sentry"] = 0,
+						["Drywallow Snapper"] = 0,
+						["Grimtotem Bandit"] = 0,
+						["Scarlet Wizard"] = 0,
+						["Grimtotem Geomancer"] = 0,
+						["Arikara"] = 0,
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["classe"] = "DRUID",
 					["raid_targets"] = {
@@ -28407,10 +15922,9 @@ _detalhes_database = {
 					["total_without_pet"] = 0.008128,
 					["delay"] = 0,
 					["dps_started"] = false,
-					["total"] = 0.008128,
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
+					["end_time"] = 1653909169,
+					["damage_taken"] = 0.008128,
+					["on_hold"] = false,
 					["nome"] = "Moolatz",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -28421,8 +15935,15 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Scarlet Sentry"] = 0,
+									["Thunderhawk Hatchling"] = 0,
 									["Scarlet Scout"] = 0,
+									["Grimtotem Stomper"] = 0,
+									["Wandering Barrens Giraffe"] = 0,
+									["Scarlet Sentry"] = 0,
+									["Drywallow Snapper"] = 0,
+									["Grimtotem Bandit"] = 0,
+									["Grimtotem Geomancer"] = 0,
+									["Arikara"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -28442,6 +15963,185 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							}, -- [1]
+							[3029] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Thunderhawk Hatchling"] = 0,
+									["Scarlet Scout"] = 0,
+									["Grimtotem Stomper"] = 0,
+									["Wandering Barrens Giraffe"] = 0,
+									["Scarlet Sentry"] = 0,
+									["Drywallow Snapper"] = 0,
+									["Grimtotem Bandit"] = 0,
+									["Grimtotem Geomancer"] = 0,
+									["Arikara"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 3029,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[8914] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Grimtotem Stomper"] = 0,
+									["Grimtotem Bandit"] = 0,
+									["Drywallow Snapper"] = 0,
+									["Needles Cougar"] = 0,
+									["Thunderhawk Hatchling"] = 0,
+									["Arikara"] = 0,
+									["Grimtotem Geomancer"] = 0,
+									["Wandering Barrens Giraffe"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 8914,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[9492] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Scarlet Sentry"] = 0,
+									["Drywallow Snapper"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 9492,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[22568] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Drywallow Snapper"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 22568,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[6785] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Grimtotem Geomancer"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 6785,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[17390] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Grimtotem Geomancer"] = 0,
+									["Grimtotem Bandit"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 17390,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
 							[10299] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -28470,61 +16170,6 @@ _detalhes_database = {
 								["extra"] = {
 								},
 							},
-							[3029] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Scarlet Sentry"] = 0,
-									["Scarlet Scout"] = 0,
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 3029,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[9492] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Scarlet Sentry"] = 0,
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 9492,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
 						},
 						["tipo"] = 2,
 					},
@@ -28533,10 +16178,10 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.008128,
+					["last_dps"] = 0,
 					["start_time"] = 1653909166,
 					["serial"] = "Player-4465-02B843FA",
-					["end_time"] = 1653909169,
+					["total"] = 0.008128,
 				}, -- [3]
 				{
 					["flag_original"] = 1298,
@@ -28547,7 +16192,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["classe"] = "ROGUE",
 					["raid_targets"] = {
@@ -28555,10 +16201,9 @@ _detalhes_database = {
 					["total_without_pet"] = 0.006188,
 					["delay"] = 0,
 					["dps_started"] = false,
-					["total"] = 0.006188,
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
+					["end_time"] = 1653909169,
+					["damage_taken"] = 0.006188,
+					["on_hold"] = false,
 					["nome"] = "Sneakykiller",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -28597,10 +16242,10 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.006188,
+					["last_dps"] = 0,
 					["start_time"] = 1653909166,
 					["serial"] = "Player-4465-017E7EB8",
-					["end_time"] = 1653909169,
+					["total"] = 0.006188,
 				}, -- [4]
 				{
 					["flag_original"] = 1298,
@@ -28611,7 +16256,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
 					["classe"] = "PALADIN",
 					["raid_targets"] = {
@@ -28619,10 +16265,9 @@ _detalhes_database = {
 					["total_without_pet"] = 0.00444,
 					["delay"] = 0,
 					["dps_started"] = false,
-					["total"] = 0.00444,
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
+					["end_time"] = 1653909169,
+					["damage_taken"] = 0.00444,
+					["on_hold"] = false,
 					["nome"] = "Yezzyx",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -28634,10 +16279,10 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.00444,
+					["last_dps"] = 0,
 					["start_time"] = 1653909166,
 					["serial"] = "Player-4465-02E70409",
-					["end_time"] = 1653909169,
+					["total"] = 0.00444,
 				}, -- [5]
 				{
 					["flag_original"] = 2632,
@@ -28655,15 +16300,15 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["monster"] = true,
+					["on_hold"] = false,
 					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["aID"] = "4301",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008829,
-					["total"] = 0.008829,
+					["monster"] = true,
 					["dps_started"] = false,
-					["end_time"] = 1653909169,
+					["total"] = 0.008829,
 					["damage_taken"] = 0.008829,
 					["tipo"] = 1,
 					["nome"] = "Scarlet Centurion",
@@ -28757,16 +16402,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
-					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1653909169,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
 					["start_time"] = 1653909166,
 					["serial"] = "Creature-0-4447-189-13250-4301-000294A01E",
-					["aID"] = "4301",
+					["classe"] = "UNKNOW",
 				}, -- [6]
 				{
 					["flag_original"] = 2600,
@@ -28783,17 +16428,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["total"] = 304.01216,
-					["on_hold"] = false,
-					["aID"] = "4302",
+					["end_time"] = 1653909169,
+					["last_dps"] = 0,
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 304.01216,
 					["delay"] = 0,
 					["dps_started"] = false,
-					["end_time"] = 1653909169,
+					["total"] = 304.01216,
 					["classe"] = "UNKNOW",
-					["damage_taken"] = 0.01216,
+					["on_hold"] = false,
 					["nome"] = "Scarlet Champion",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -28895,10 +16540,10 @@ _detalhes_database = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.01216,
 					["start_time"] = 1653909165,
 					["serial"] = "Creature-0-4447-189-13250-4302-000094A01E",
-					["friendlyfire_total"] = 0,
+					["aID"] = "4302",
 				}, -- [7]
 				{
 					["flag_original"] = 2600,
@@ -28915,17 +16560,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["total"] = 9.010249,
-					["on_hold"] = false,
-					["aID"] = "4540",
+					["end_time"] = 1653909169,
+					["last_dps"] = 0,
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 9.010249,
 					["delay"] = 0,
 					["dps_started"] = false,
-					["end_time"] = 1653909169,
+					["total"] = 9.010249,
 					["classe"] = "UNKNOW",
-					["damage_taken"] = 0.010249,
+					["on_hold"] = false,
 					["nome"] = "Scarlet Monk",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -29054,10 +16699,10 @@ _detalhes_database = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.010249,
 					["start_time"] = 1653909165,
 					["serial"] = "Creature-0-4447-189-13250-4540-000214A01E",
-					["friendlyfire_total"] = 0,
+					["aID"] = "4540",
 				}, -- [8]
 				{
 					["flag_original"] = 2600,
@@ -29077,17 +16722,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["total"] = 104.015765,
-					["on_hold"] = false,
-					["aID"] = "4300",
+					["end_time"] = 1653909169,
+					["last_dps"] = 0,
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 104.015765,
 					["delay"] = 0,
 					["dps_started"] = false,
-					["end_time"] = 1653909169,
+					["total"] = 104.015765,
 					["classe"] = "UNKNOW",
-					["damage_taken"] = 97.015765,
+					["on_hold"] = false,
 					["nome"] = "Scarlet Wizard",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -29217,10 +16862,10 @@ _detalhes_database = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 97.015765,
 					["start_time"] = 1653909163,
 					["serial"] = "Creature-0-4447-189-13250-4300-000094A020",
-					["friendlyfire_total"] = 0,
+					["aID"] = "4300",
 				}, -- [9]
 				{
 					["flag_original"] = 2600,
@@ -29240,16 +16885,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
+					["fight_component"] = true,
+					["on_hold"] = false,
 					["aID"] = "4298",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2323.080731,
-					["tipo"] = 1,
-					["damage_taken"] = 119431.080731,
+					["delay"] = 0,
 					["dps_started"] = false,
-					["total"] = 2323.080731,
-					["fight_component"] = true,
+					["end_time"] = 1653909169,
 					["friendlyfire_total"] = 0,
+					["damage_taken"] = 119431.080731,
 					["nome"] = "Scarlet Defender",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -29271,13 +16917,13 @@ _detalhes_database = {
 								["a_amt"] = 0,
 								["total"] = 1443,
 								["c_max"] = 0,
-								["BLOCK"] = 61,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
 								["b_dmg"] = 0,
 								["extra"] = {
 								},
+								["BLOCK"] = 61,
 								["PARRY"] = 22,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
@@ -29355,16 +17001,16 @@ _detalhes_database = {
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 173,
-								["c_min"] = 0,
+								["r_amt"] = 0,
 								["total"] = 880,
 								["c_max"] = 0,
-								["r_amt"] = 0,
+								["b_dmg"] = 1,
 								["id"] = 11972,
 								["r_dmg"] = 0,
-								["b_dmg"] = 1,
 								["extra"] = {
 								},
 								["a_amt"] = 1,
+								["c_min"] = 0,
 								["PARRY"] = 6,
 								["BLOCK"] = 24,
 								["successful_casted"] = 36,
@@ -29376,17 +17022,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["delay"] = 0,
-					["end_time"] = 1653909169,
+					["tipo"] = 1,
 					["classe"] = "UNKNOW",
 					["last_dps"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1653908902,
-					["serial"] = "Creature-0-4447-189-13250-4298-000114A020",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1653908902,
+					["serial"] = "Creature-0-4447-189-13250-4298-000114A020",
+					["total"] = 2323.080731,
 				}, -- [10]
 				{
 					["flag_original"] = 2632,
@@ -29403,14 +17048,14 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["total"] = 0.004518,
 					["friendlyfire_total"] = 0,
+					["aID"] = "4303",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004518,
+					["monster"] = true,
 					["dps_started"] = false,
-					["fight_component"] = true,
 					["end_time"] = 1653909169,
 					["damage_taken"] = 0.004518,
 					["tipo"] = 1,
@@ -29529,16 +17174,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.004518,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1653909166,
 					["serial"] = "Creature-0-4447-189-13250-4303-000014A020",
-					["aID"] = "4303",
+					["classe"] = "UNKNOW",
 				}, -- [11]
 				{
 					["flag_original"] = 2632,
@@ -29554,20 +17199,20 @@ _detalhes_database = {
 						["Axxos"] = 512,
 						["Kawakii"] = 1945,
 					},
-					["end_time"] = 1653909169,
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["dps_started"] = false,
 					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2457.082389,
-					["delay"] = 0,
-					["monster"] = true,
+					["end_time"] = 1653909169,
 					["fight_component"] = true,
 					["total"] = 2457.082389,
 					["last_dps"] = 0,
-					["aID"] = "4295",
+					["tipo"] = 1,
 					["nome"] = "Scarlet Myrmidon",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -29589,13 +17234,13 @@ _detalhes_database = {
 								["a_amt"] = 1,
 								["total"] = 2457,
 								["c_max"] = 0,
-								["BLOCK"] = 80,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
 								["b_dmg"] = 0,
 								["extra"] = {
 								},
+								["BLOCK"] = 80,
 								["PARRY"] = 60,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
@@ -29660,16 +17305,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 108294.082389,
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
+					["damage_taken"] = 108294.082389,
+					["aID"] = "4295",
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1653909104,
 					["serial"] = "Creature-0-4447-189-13250-4295-000214A01E",
-					["on_hold"] = false,
+					["monster"] = true,
 				}, -- [12]
 				{
 					["flag_original"] = 2632,
@@ -29687,15 +17332,15 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["monster"] = true,
+					["on_hold"] = false,
 					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["aID"] = "4294",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2102.012274,
-					["total"] = 2102.012274,
+					["monster"] = true,
 					["dps_started"] = false,
-					["end_time"] = 1653909169,
+					["total"] = 2102.012274,
 					["damage_taken"] = 374.012274,
 					["tipo"] = 1,
 					["nome"] = "Scarlet Sorcerer",
@@ -29821,16 +17466,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
-					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1653909169,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
 					["start_time"] = 1653909065,
 					["serial"] = "Creature-0-4447-189-13250-4294-000114A01F",
-					["aID"] = "4294",
+					["classe"] = "UNKNOW",
 				}, -- [13]
 				{
 					["flag_original"] = 2600,
@@ -29845,17 +17490,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["total"] = 116.010438,
-					["on_hold"] = false,
-					["aID"] = "3976",
+					["end_time"] = 1653909169,
+					["last_dps"] = 0,
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 116.010438,
 					["delay"] = 0,
 					["dps_started"] = false,
-					["end_time"] = 1653909169,
+					["total"] = 116.010438,
 					["classe"] = "UNKNOW",
-					["damage_taken"] = 0.010438,
+					["on_hold"] = false,
 					["nome"] = "Scarlet Commander Mograine",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -29981,10 +17626,10 @@ _detalhes_database = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.010438,
 					["start_time"] = 1653909165,
 					["serial"] = "Creature-0-4447-189-13250-3976-000014A01E",
-					["friendlyfire_total"] = 0,
+					["aID"] = "3976",
 				}, -- [14]
 				{
 					["flag_original"] = 2632,
@@ -29998,14 +17643,14 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["monster"] = true,
+					["total"] = 0.008908,
 					["friendlyfire_total"] = 0,
+					["aID"] = "4299",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008908,
+					["monster"] = true,
 					["dps_started"] = false,
-					["fight_component"] = true,
 					["end_time"] = 1653909169,
 					["damage_taken"] = 0.008908,
 					["tipo"] = 1,
@@ -30095,16 +17740,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 0.008908,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
-					["last_dps"] = 0,
+					["fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1653909166,
 					["serial"] = "Creature-0-4447-189-13250-4299-000514A01E",
-					["aID"] = "4299",
+					["classe"] = "UNKNOW",
 				}, -- [15]
 				{
 					["flag_original"] = 1298,
@@ -30116,13 +17761,13 @@ _detalhes_database = {
 						["Scarlet Soldier"] = true,
 						["Scarlet Defender"] = true,
 						["Fire Elemental <Scarlet Conjuror> <Scarlet Conjuror>"] = true,
-						["Scarlet Conjuror"] = true,
+						["Fire Elemental"] = true,
 						["Scarlet Evoker"] = true,
 						["Scarlet Protector"] = true,
-						["Fire Elemental"] = true,
+						["Scarlet Conjuror"] = true,
 						["Scarlet Guardsman"] = true,
-						["Scarlet Monk"] = true,
 						["Scarlet Wizard"] = true,
+						["Scarlet Monk"] = true,
 						["Scarlet Commander Mograine"] = true,
 					},
 					["targets"] = {
@@ -30148,17 +17793,17 @@ _detalhes_database = {
 					["pets"] = {
 						"Water Elemental <Kawakii>", -- [1]
 					},
-					["damage_taken"] = 17171.088227,
+					["total"] = 308962.0882270001,
 					["tipo"] = 1,
-					["aID"] = "4465-02BCE74D",
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 308962.0882270001,
 					["delay"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1653909716,
-					["total"] = 308962.0882270001,
-					["last_dps"] = 0,
+					["on_hold"] = false,
+					["damage_taken"] = 17171.088227,
 					["nome"] = "Kawakii",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -30218,7 +17863,7 @@ _detalhes_database = {
 								["total"] = 0,
 								["c_max"] = 0,
 								["r_amt"] = 0,
-								["id"] = 7321,
+								["EVADE"] = 1,
 								["r_dmg"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -30230,7 +17875,7 @@ _detalhes_database = {
 								},
 								["RESIST"] = 15,
 								["IMMUNE"] = 1,
-								["EVADE"] = 1,
+								["id"] = 7321,
 							},
 							[2139] = {
 								["c_amt"] = 0,
@@ -30266,21 +17911,21 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 104,
 								["targets"] = {
-									["Scarlet Soldier"] = 8723,
 									["Scarlet Centurion"] = 0,
+									["Scarlet Champion"] = 0,
 									["Scarlet Sorcerer"] = 274,
 									["Scarlet Myrmidon"] = 3132,
-									["Scarlet Champion"] = 0,
-									["Fire Elemental <Scarlet Conjuror>"] = 141,
-									["Scarlet Defender"] = 2200,
 									["Scarlet Abbot"] = 0,
 									["Scarlet Guardsman"] = 1737,
+									["Scarlet Defender"] = 2200,
+									["Fire Elemental <Scarlet Conjuror>"] = 141,
 									["Scarlet Evoker"] = 752,
+									["Scarlet Soldier"] = 8723,
 									["Scarlet Protector"] = 1452,
-									["Scarlet Conjuror"] = 932,
-									["Scarlet Monk"] = 0,
-									["Scarlet Wizard"] = 97,
 									["Fire Elemental"] = 1644,
+									["Scarlet Conjuror"] = 932,
+									["Scarlet Wizard"] = 97,
+									["Scarlet Monk"] = 0,
 									["Scarlet Commander Mograine"] = 0,
 								},
 								["n_dmg"] = 14872,
@@ -30317,8 +17962,8 @@ _detalhes_database = {
 									["Scarlet Soldier"] = 4803,
 									["Scarlet Protector"] = 1676,
 									["Fire Elemental"] = 448,
-									["Scarlet Wizard"] = 0,
 									["Scarlet Guardsman"] = 4154,
+									["Scarlet Wizard"] = 0,
 									["Scarlet Monk"] = 0,
 									["Scarlet Champion"] = 0,
 								},
@@ -30385,14 +18030,14 @@ _detalhes_database = {
 									["Scarlet Sorcerer"] = 0,
 									["Scarlet Myrmidon"] = 490,
 									["Scarlet Defender"] = 793,
-									["Fire Elemental"] = 0,
-									["Scarlet Guardsman"] = 350,
-									["Scarlet Evoker"] = 0,
-									["Scarlet Protector"] = 195,
 									["Scarlet Conjuror"] = 0,
 									["Scarlet Wizard"] = 0,
-									["Scarlet Monk"] = 0,
 									["Scarlet Soldier"] = 358,
+									["Scarlet Protector"] = 195,
+									["Fire Elemental"] = 0,
+									["Scarlet Guardsman"] = 350,
+									["Scarlet Monk"] = 0,
+									["Scarlet Evoker"] = 0,
 									["Scarlet Centurion"] = 0,
 								},
 								["n_dmg"] = 1801,
@@ -30455,17 +18100,17 @@ _detalhes_database = {
 									["Scarlet Champion"] = 0,
 									["Scarlet Sorcerer"] = 0,
 									["Scarlet Myrmidon"] = 11758,
-									["Scarlet Soldier"] = 30122,
 									["Scarlet Centurion"] = 0,
+									["Scarlet Evoker"] = 8724,
 									["Scarlet Defender"] = 18171,
 									["Scarlet Abbot"] = 0,
 									["Scarlet Sentry"] = 0,
-									["Scarlet Evoker"] = 8724,
+									["Scarlet Soldier"] = 30122,
 									["Scarlet Protector"] = 3582,
 									["Scarlet Conjuror"] = 4587,
 									["Scarlet Monk"] = 0,
-									["Scarlet Wizard"] = 0,
 									["Scarlet Guardsman"] = 8322,
+									["Scarlet Wizard"] = 0,
 									["Scarlet Commander Mograine"] = 0,
 								},
 								["n_dmg"] = 66303,
@@ -30499,16 +18144,16 @@ _detalhes_database = {
 									["Scarlet Sorcerer"] = 0,
 									["Scarlet Myrmidon"] = 34548,
 									["Scarlet Champion"] = 0,
-									["Scarlet Soldier"] = 37160,
+									["Scarlet Evoker"] = 5067,
 									["Scarlet Defender"] = 33429,
 									["Scarlet Abbot"] = 0,
 									["Scarlet Guardsman"] = 36328,
-									["Scarlet Evoker"] = 5067,
+									["Scarlet Soldier"] = 37160,
 									["Scarlet Protector"] = 30519,
-									["Fire Elemental"] = 471,
+									["Scarlet Conjuror"] = 533,
 									["Scarlet Wizard"] = 0,
 									["Scarlet Monk"] = 0,
-									["Scarlet Conjuror"] = 533,
+									["Fire Elemental"] = 471,
 									["Scarlet Commander Mograine"] = 0,
 								},
 								["n_dmg"] = 178055,
@@ -30540,10 +18185,10 @@ _detalhes_database = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1653908720,
 					["serial"] = "Player-4465-02BCE74D",
-					["friendlyfire_total"] = 0,
+					["aID"] = "4465-02BCE74D",
 				}, -- [16]
 				{
 					["flag_original"] = 2632,
@@ -30555,22 +18200,23 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Axxos"] = 487,
+						["Moolatz"] = 0,
 						["Kawakii"] = 2916,
 					},
-					["end_time"] = 1653909716,
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["aID"] = "4286",
+					["dps_started"] = false,
 					["friendlyfire_total"] = 0,
+					["aID"] = "4286",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 3403.078092,
-					["delay"] = 0,
-					["fight_component"] = true,
+					["end_time"] = 1653909716,
 					["monster"] = true,
 					["total"] = 3403.078092,
 					["last_dps"] = 0,
-					["classe"] = "UNKNOW",
+					["tipo"] = 1,
 					["nome"] = "Scarlet Soldier",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -30582,6 +18228,7 @@ _detalhes_database = {
 								["n_max"] = 60,
 								["targets"] = {
 									["Axxos"] = 487,
+									["Moolatz"] = 0,
 									["Kawakii"] = 2916,
 								},
 								["n_dmg"] = 3403,
@@ -30591,13 +18238,13 @@ _detalhes_database = {
 								["a_amt"] = 3,
 								["total"] = 3403,
 								["c_max"] = 0,
-								["BLOCK"] = 44,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
 								["b_dmg"] = 0,
 								["extra"] = {
 								},
+								["BLOCK"] = 44,
 								["PARRY"] = 18,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
@@ -30635,16 +18282,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 137156.078092,
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
+					["damage_taken"] = 137156.078092,
+					["classe"] = "UNKNOW",
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1653909521,
 					["serial"] = "Creature-0-4447-189-13989-4286-000214A576",
-					["on_hold"] = false,
+					["fight_component"] = true,
 				}, -- [17]
 				{
 					["flag_original"] = 2632,
@@ -30660,20 +18307,20 @@ _detalhes_database = {
 						["Queliarel"] = 0,
 						["Axxos"] = 427,
 					},
-					["end_time"] = 1653909716,
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
+					["dps_started"] = false,
 					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 4525.066001,
-					["delay"] = 0,
-					["monster"] = true,
+					["end_time"] = 1653909716,
 					["fight_component"] = true,
 					["total"] = 4525.066001,
 					["last_dps"] = 0,
-					["aID"] = "4289",
+					["tipo"] = 1,
 					["nome"] = "Scarlet Evoker",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -30696,10 +18343,10 @@ _detalhes_database = {
 								["DODGE"] = 3,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["BLOCK"] = 2,
 								["r_amt"] = 0,
 								["b_dmg"] = 0,
 								["a_dmg"] = 0,
+								["BLOCK"] = 2,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
@@ -30708,32 +18355,6 @@ _detalhes_database = {
 								},
 								["MISS"] = 2,
 							}, -- [1]
-							[2601] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 2601,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 55,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							},
 							[9053] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -30762,33 +18383,6 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["extra"] = {
 								},
-							},
-							[8422] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Queliarel"] = 0,
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 8422,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
 							},
 							[3054] = {
 								["c_amt"] = 0,
@@ -30820,19 +18414,72 @@ _detalhes_database = {
 								["extra"] = {
 								},
 							},
+							[8422] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Queliarel"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 8422,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[2601] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 2601,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 55,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
 						},
 						["tipo"] = 2,
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 26124.066001,
-					["tipo"] = 1,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
+					["damage_taken"] = 26124.066001,
+					["aID"] = "4289",
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1653909518,
 					["serial"] = "Creature-0-4447-189-13989-4289-000014A576",
-					["on_hold"] = false,
+					["monster"] = true,
 				}, -- [18]
 				{
 					["flag_original"] = 2632,
@@ -30846,20 +18493,20 @@ _detalhes_database = {
 						["Axxos"] = 480,
 						["Kawakii"] = 1210,
 					},
-					["end_time"] = 1653909716,
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["aID"] = "4290",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
+					["aID"] = "4290",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 1690.06209,
-					["delay"] = 0,
-					["dps_started"] = false,
+					["end_time"] = 1653909716,
 					["fight_component"] = true,
 					["total"] = 1690.06209,
 					["last_dps"] = 0,
-					["classe"] = "UNKNOW",
+					["tipo"] = 1,
 					["nome"] = "Scarlet Guardsman",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -30880,13 +18527,13 @@ _detalhes_database = {
 								["a_amt"] = 0,
 								["total"] = 1690,
 								["c_max"] = 0,
-								["BLOCK"] = 24,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
 								["b_dmg"] = 0,
 								["extra"] = {
 								},
+								["BLOCK"] = 24,
 								["PARRY"] = 4,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
@@ -30937,7 +18584,8 @@ _detalhes_database = {
 								["total"] = 0,
 								["c_max"] = 0,
 								["b_dmg"] = 0,
-								["id"] = 6713,
+								["extra"] = {
+								},
 								["r_dmg"] = 0,
 								["DODGE"] = 3,
 								["MISS"] = 2,
@@ -30948,22 +18596,21 @@ _detalhes_database = {
 								["a_amt"] = 0,
 								["n_amt"] = 0,
 								["a_dmg"] = 0,
-								["extra"] = {
-								},
+								["id"] = 6713,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["monster"] = true,
+					["on_hold"] = false,
 					["damage_taken"] = 88931.06209,
-					["tipo"] = 1,
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1653909643,
-					["serial"] = "Creature-0-4447-189-13989-4290-000094A577",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1653909643,
+					["serial"] = "Creature-0-4447-189-13989-4290-000094A577",
+					["dps_started"] = false,
 				}, -- [19]
 				{
 					["flag_original"] = 4680,
@@ -30978,16 +18625,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "PET",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 529.052805,
-					["tipo"] = 1,
-					["last_dps"] = 0,
+					["delay"] = 0,
 					["dps_started"] = false,
-					["total"] = 529.052805,
-					["fight_component"] = true,
+					["end_time"] = 1653909716,
 					["aID"] = "575",
+					["last_dps"] = 0,
 					["nome"] = "Fire Elemental",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -31025,17 +18674,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["delay"] = 0,
-					["end_time"] = 1653909716,
+					["tipo"] = 1,
 					["friendlyfire_total"] = 0,
 					["damage_taken"] = 6609.052805,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["start_time"] = 1653909690,
 					["serial"] = "Creature-0-4447-189-13989-575-000014A578",
-					["on_hold"] = false,
+					["total"] = 529.052805,
 				}, -- [20]
 				{
 					["flag_original"] = 2600,
@@ -31051,16 +18698,17 @@ _detalhes_database = {
 					["pets"] = {
 						"Fire Elemental <Scarlet Conjuror>", -- [1]
 					},
+					["total"] = 2333.069954,
+					["on_hold"] = false,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2302.069954,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["dps_started"] = false,
+					["delay"] = 0,
+					["fight_component"] = true,
 					["end_time"] = 1653909716,
-					["total"] = 2333.069954,
 					["friendlyfire_total"] = 0,
+					["last_dps"] = 0,
 					["nome"] = "Scarlet Conjuror",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -31081,19 +18729,19 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["total"] = 28,
 								["c_max"] = 0,
-								["BLOCK"] = 2,
-								["id"] = 1,
-								["r_dmg"] = 0,
 								["DODGE"] = 7,
+								["extra"] = {
+								},
+								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["b_dmg"] = 0,
+								["BLOCK"] = 2,
 								["PARRY"] = 1,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 3,
-								["extra"] = {
-								},
+								["id"] = 1,
 								["MISS"] = 2,
 							}, -- [1]
 							[9053] = {
@@ -31128,17 +18776,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["delay"] = 0,
-					["fight_component"] = true,
+					["tipo"] = 1,
 					["aID"] = "4297",
 					["damage_taken"] = 14167.069954,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1653909576,
-					["serial"] = "Creature-0-4447-189-13989-4297-000014A576",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1653909576,
+					["serial"] = "Creature-0-4447-189-13989-4297-000014A576",
+					["dps_started"] = false,
 				}, -- [21]
 				{
 					["flag_original"] = 2632,
@@ -31152,20 +18799,20 @@ _detalhes_database = {
 						["Axxos"] = 201,
 						["Kawakii"] = 185,
 					},
-					["dps_started"] = false,
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["friendlyfire_total"] = 0,
+					["end_time"] = 1653909716,
 					["aID"] = "4292",
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 386.04852,
-					["delay"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
 					["fight_component"] = true,
 					["total"] = 386.04852,
 					["last_dps"] = 0,
-					["classe"] = "UNKNOW",
+					["tipo"] = 1,
 					["nome"] = "Scarlet Protector",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -31186,13 +18833,13 @@ _detalhes_database = {
 								["a_amt"] = 0,
 								["total"] = 386,
 								["c_max"] = 0,
-								["BLOCK"] = 19,
+								["r_amt"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
 								["b_dmg"] = 0,
 								["extra"] = {
 								},
+								["BLOCK"] = 19,
 								["PARRY"] = 7,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
@@ -31230,16 +18877,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["end_time"] = 1653909716,
+					["damage_taken"] = 60587.04852,
 					["friendlyfire"] = {
 					},
-					["tipo"] = 1,
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 60587.04852,
+					["on_hold"] = false,
 					["start_time"] = 1653909690,
 					["serial"] = "Creature-0-4447-189-13989-4292-000014A576",
-					["on_hold"] = false,
+					["monster"] = true,
 				}, -- [22]
 				{
 					["flag_original"] = 1298,
@@ -31251,18 +18898,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
-					["classe"] = "DRUID",
+					["aID"] = "4465-02E9A18A",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 8.010137,
 					["delay"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1653910914,
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.010137,
+					["on_hold"] = false,
 					["nome"] = "Kaftunik",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -31303,10 +18950,10 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.010137,
+					["last_dps"] = 0,
 					["start_time"] = 1653910903,
 					["serial"] = "Player-4465-02E9A18A",
-					["aID"] = "4465-02E9A18A",
+					["classe"] = "DRUID",
 				}, -- [23]
 				{
 					["flag_original"] = 4680,
@@ -31320,16 +18967,16 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["on_hold"] = false,
-					["friendlyfire_total"] = 0,
+					["last_dps"] = 0,
 					["aID"] = "575",
+					["classe"] = "PET",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 31.011268,
 					["dps_started"] = false,
 					["fight_component"] = true,
 					["end_time"] = 1653912619,
-					["damage_taken"] = 141.011268,
+					["on_hold"] = false,
 					["ownerName"] = "Scarlet Conjuror",
 					["nome"] = "Fire Elemental <Scarlet Conjuror>",
 					["spells"] = {
@@ -31370,10 +19017,10 @@ _detalhes_database = {
 					["total"] = 31.011268,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 141.011268,
 					["start_time"] = 1653912615,
 					["serial"] = "Creature-0-4445-189-11963-575-000014B2CE",
-					["classe"] = "PET",
+					["friendlyfire_total"] = 0,
 				}, -- [24]
 				{
 					["flag_original"] = 1298,
@@ -31385,18 +19032,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["tipo"] = 1,
-					["classe"] = "SHAMAN",
+					["aID"] = "4465-02E807F0",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 123.00455,
 					["delay"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1653913488,
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.00455,
+					["on_hold"] = false,
 					["nome"] = "Triickz",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -31435,10 +19082,10 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.00455,
+					["last_dps"] = 0,
 					["start_time"] = 1653913483,
 					["serial"] = "Player-4465-02E807F0",
-					["aID"] = "4465-02E807F0",
+					["classe"] = "SHAMAN",
 				}, -- [25]
 				{
 					["flag_original"] = 2632,
@@ -31453,20 +19100,20 @@ _detalhes_database = {
 						["Kamides"] = 0,
 						["Axxos"] = 6,
 					},
-					["dps_started"] = false,
+					["serial"] = "Creature-0-4447-0-59-4283-000014AEEC",
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["end_time"] = 1653914155,
+					["friendlyfire_total"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 6.008081,
-					["serial"] = "Creature-0-4447-0-59-4283-000014AEEC",
-					["friendlyfire_total"] = 0,
-					["monster"] = true,
-					["total"] = 6.008081,
+					["dps_started"] = false,
 					["fight_component"] = true,
-					["aID"] = "4283",
+					["total"] = 6.008081,
+					["last_dps"] = 0,
+					["last_event"] = 0,
 					["nome"] = "Scarlet Sentry",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -31493,12 +19140,12 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["BLOCK"] = 1,
 								["MISS"] = 1,
 								["extra"] = {
 								},
-								["PARRY"] = 1,
 								["c_min"] = 0,
+								["PARRY"] = 1,
+								["BLOCK"] = 1,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 1,
@@ -31508,16 +19155,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["end_time"] = 1653914155,
+					["damage_taken"] = 2100.008081,
 					["on_hold"] = false,
-					["last_event"] = 0,
+					["aID"] = "4283",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 2100.008081,
-					["start_time"] = 1653914147,
-					["delay"] = 0,
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1653914147,
+					["delay"] = 0,
+					["monster"] = true,
 				}, -- [26]
 				{
 					["flag_original"] = 1298,
@@ -31536,15 +19183,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["friendlyfire_total"] = 0,
-					["last_event"] = 0,
 					["classe"] = "MAGE",
+					["last_event"] = 0,
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 4415.020581999999,
 					["serial"] = "Player-4465-02E08F27",
 					["dps_started"] = false,
-					["end_time"] = 1653914426,
+					["total"] = 4415.020581999999,
 					["aID"] = "4465-02E08F27",
 					["friendlyfire"] = {
 					},
@@ -31647,16 +19294,16 @@ _detalhes_database = {
 									["Scarlet Centurion"] = 0,
 									["Scarlet Sorcerer"] = 0,
 									["Scarlet Myrmidon"] = 375,
-									["Scarlet Soldier"] = 501,
+									["Scarlet Champion"] = 0,
 									["Scarlet Defender"] = 778,
 									["Scarlet Abbot"] = 0,
-									["Scarlet Monk"] = 0,
+									["Scarlet Wizard"] = 0,
 									["Scarlet Evoker"] = 75,
 									["Scarlet Protector"] = 1844,
 									["Fire Elemental"] = 0,
-									["Scarlet Wizard"] = 0,
+									["Scarlet Monk"] = 0,
 									["Scarlet Guardsman"] = 621,
-									["Scarlet Champion"] = 0,
+									["Scarlet Soldier"] = 501,
 									["Scarlet Commander Mograine"] = 0,
 								},
 								["n_dmg"] = 4194,
@@ -31689,25 +19336,24 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["start_time"] = 1653914405,
 					["delay"] = 0,
-					["total"] = 4415.020581999999,
+					["end_time"] = 1653914426,
 				}, -- [27]
 				{
 					["flag_original"] = 1298,
 					["totalabsorbed"] = 0.018289,
-					["end_time"] = 1653920575,
 					["damage_from"] = {
 						["Scarlet Myrmidon"] = true,
 						["Scarlet Scryer"] = true,
 						["Scarlet Defender"] = true,
-						["Herod"] = true,
+						["Scarlet Guardsman"] = true,
 						["Scarlet Sentry"] = true,
 						["Scarlet Evoker"] = true,
 						["Scarlet Protector"] = true,
-						["Fire Elemental"] = true,
-						["Scarlet Torturer"] = true,
-						["Scarlet Guardsman"] = true,
-						["Scarlet Soldier"] = true,
 						["Scarlet Conjuror"] = true,
+						["Scarlet Torturer"] = true,
+						["Herod"] = true,
+						["Scarlet Soldier"] = true,
+						["Fire Elemental"] = true,
 					},
 					["targets"] = {
 						["Scarlet Sorcerer"] = 0,
@@ -31718,33 +19364,39 @@ _detalhes_database = {
 						["Fire Elemental"] = 4046,
 						["Scarlet Torturer"] = 17643,
 						["Scarlet Guardsman"] = 37073,
-						["Scarlet Commander Mograine"] = 0,
+						["Interrogator Vishas"] = 4967,
+						["Scarlet Beastmaster"] = 0,
 						["Scarlet Chaplain"] = 0,
 						["Scarlet Centurion"] = 0,
-						["Scarlet Defender"] = 58456,
-						["Scarlet Abbot"] = 0,
-						["Scarlet Sentry"] = 2100,
-						["Scarlet Evoker"] = 11216,
-						["Interrogator Vishas"] = 4967,
-						["Scarlet Conjuror"] = 8115,
+						["Scarlet Gallant"] = 0,
 						["Scarlet Champion"] = 0,
 						["Scarlet Monk"] = 0,
-						["Herod"] = 10472,
+						["Scarlet Sentry"] = 2100,
+						["Scarlet Defender"] = 58456,
+						["Scarlet Abbot"] = 0,
+						["Houndmaster Loksey"] = 0,
+						["Scarlet Evoker"] = 11216,
 						["Scarlet Wizard"] = 0,
+						["Scarlet Conjuror"] = 8115,
+						["Scarlet Tracking Hound"] = 0,
+						["Scarlet Adept"] = 0,
+						["Herod"] = 10472,
+						["Scarlet Commander Mograine"] = 0,
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
-					["classe"] = "PALADIN",
+					["total"] = 290898.018289,
+					["tipo"] = 1,
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 						[128] = 10472,
 					},
 					["total_without_pet"] = 290898.018289,
-					["tipo"] = 1,
-					["dps_started"] = false,
-					["total"] = 290898.018289,
-					["aID"] = "4465-02E98A53",
 					["delay"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1653920575,
+					["aID"] = "4465-02E98A53",
+					["last_dps"] = 0,
 					["nome"] = "Axxos",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -31755,22 +19407,25 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 228,
 								["targets"] = {
-									["Scarlet Chaplain"] = 0,
-									["Scarlet Centurion"] = 0,
 									["Scarlet Sorcerer"] = 0,
 									["Scarlet Myrmidon"] = 282,
 									["Scarlet Scryer"] = 270,
+									["Scarlet Soldier"] = 2930,
+									["Scarlet Protector"] = 118,
+									["Scarlet Torturer"] = 113,
 									["Scarlet Guardsman"] = 1005,
+									["Scarlet Commander Mograine"] = 0,
+									["Scarlet Chaplain"] = 0,
+									["Scarlet Centurion"] = 0,
+									["Scarlet Gallant"] = 0,
 									["Scarlet Defender"] = 503,
 									["Interrogator Vishas"] = 515,
 									["Scarlet Sentry"] = 668,
-									["Scarlet Soldier"] = 2930,
-									["Scarlet Protector"] = 118,
-									["Herod"] = 2450,
-									["Scarlet Torturer"] = 113,
-									["Scarlet Wizard"] = 0,
 									["Scarlet Monk"] = 0,
-									["Scarlet Commander Mograine"] = 0,
+									["Herod"] = 2450,
+									["Scarlet Adept"] = 0,
+									["Scarlet Wizard"] = 0,
+									["Houndmaster Loksey"] = 0,
 								},
 								["n_dmg"] = 6511,
 								["n_min"] = 0,
@@ -31792,65 +19447,101 @@ _detalhes_database = {
 								["b_dmg"] = 583,
 								["r_amt"] = 0,
 							}, -- [1]
-							[28734] = {
+							[27173] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 334,
 								["targets"] = {
-									["Scarlet Protector"] = 0,
+									["Scarlet Sorcerer"] = 0,
+									["Scarlet Myrmidon"] = 45421,
+									["Scarlet Scryer"] = 7088,
+									["Scarlet Soldier"] = 47053,
+									["Scarlet Protector"] = 18126,
+									["Fire Elemental"] = 3726,
+									["Scarlet Torturer"] = 16601,
+									["Scarlet Guardsman"] = 32386,
+									["Interrogator Vishas"] = 3301,
+									["Scarlet Beastmaster"] = 0,
+									["Scarlet Chaplain"] = 0,
+									["Scarlet Centurion"] = 0,
+									["Scarlet Gallant"] = 0,
+									["Scarlet Wizard"] = 0,
+									["Herod"] = 1668,
+									["Scarlet Sentry"] = 328,
+									["Scarlet Defender"] = 50568,
+									["Scarlet Abbot"] = 0,
+									["Houndmaster Loksey"] = 0,
+									["Scarlet Evoker"] = 11074,
+									["Scarlet Monk"] = 0,
+									["Scarlet Conjuror"] = 7972,
+									["Scarlet Tracking Hound"] = 0,
+									["Scarlet Adept"] = 0,
+									["Scarlet Champion"] = 0,
+									["Scarlet Commander Mograine"] = 0,
 								},
-								["n_dmg"] = 0,
+								["n_dmg"] = 245312,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 0,
+								["counter"] = 836,
+								["total"] = 245312,
 								["c_max"] = 0,
-								["id"] = 28734,
+								["id"] = 27173,
 								["r_dmg"] = 0,
-								["RESIST"] = 1,
+								["IMMUNE"] = 1,
 								["extra"] = {
 								},
+								["RESIST"] = 2,
 								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 833,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
-							[26573] = {
+							[27168] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 81,
+								["n_max"] = 72,
 								["targets"] = {
-									["Scarlet Soldier"] = 1689,
-									["Scarlet Protector"] = 1527,
-									["Scarlet Myrmidon"] = 2971,
-									["Fire Elemental"] = 320,
-									["Scarlet Wizard"] = 0,
-									["Scarlet Defender"] = 3182,
-									["Scarlet Guardsman"] = 2128,
+									["Scarlet Myrmidon"] = 5244,
+									["Scarlet Scryer"] = 55,
+									["Scarlet Soldier"] = 2834,
+									["Scarlet Protector"] = 1202,
+									["Scarlet Torturer"] = 929,
+									["Scarlet Guardsman"] = 1554,
+									["Scarlet Beastmaster"] = 0,
+									["Scarlet Gallant"] = 0,
+									["Scarlet Defender"] = 4203,
+									["Interrogator Vishas"] = 55,
+									["Scarlet Sentry"] = 54,
+									["Scarlet Evoker"] = 142,
+									["Scarlet Conjuror"] = 143,
+									["Scarlet Tracking Hound"] = 0,
+									["Herod"] = 55,
+									["Houndmaster Loksey"] = 0,
+									["Scarlet Adept"] = 0,
 								},
-								["n_dmg"] = 11817,
+								["n_dmg"] = 16470,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 155,
-								["total"] = 11817,
+								["counter"] = 269,
+								["total"] = 16470,
 								["c_max"] = 0,
-								["id"] = 26573,
+								["id"] = 27168,
 								["r_dmg"] = 0,
-								["RESIST"] = 1,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
+								["RESIST"] = 2,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 154,
+								["n_amt"] = 267,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
@@ -31897,8 +19588,10 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 381,
 								["targets"] = {
-									["Scarlet Chaplain"] = 0,
+									["Houndmaster Loksey"] = 0,
 									["Herod"] = 3044,
+									["Scarlet Adept"] = 0,
+									["Scarlet Chaplain"] = 0,
 									["Interrogator Vishas"] = 545,
 								},
 								["n_dmg"] = 3589,
@@ -31927,10 +19620,12 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 1703,
 								["targets"] = {
-									["Scarlet Chaplain"] = 0,
-									["Herod"] = 1703,
 									["Scarlet Sentry"] = 1050,
 									["Interrogator Vishas"] = 551,
+									["Scarlet Chaplain"] = 0,
+									["Herod"] = 1703,
+									["Houndmaster Loksey"] = 0,
+									["Scarlet Beastmaster"] = 0,
 								},
 								["n_dmg"] = 3304,
 								["n_min"] = 0,
@@ -31977,91 +19672,70 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
-							[27173] = {
+							[28734] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 334,
+								["n_max"] = 0,
 								["targets"] = {
-									["Scarlet Sorcerer"] = 0,
-									["Scarlet Myrmidon"] = 45421,
-									["Scarlet Scryer"] = 7088,
-									["Scarlet Soldier"] = 47053,
-									["Scarlet Protector"] = 18126,
-									["Fire Elemental"] = 3726,
-									["Scarlet Torturer"] = 16601,
-									["Scarlet Guardsman"] = 32386,
-									["Scarlet Commander Mograine"] = 0,
-									["Scarlet Chaplain"] = 0,
-									["Scarlet Centurion"] = 0,
-									["Scarlet Defender"] = 50568,
-									["Scarlet Abbot"] = 0,
-									["Scarlet Sentry"] = 328,
-									["Scarlet Evoker"] = 11074,
-									["Interrogator Vishas"] = 3301,
-									["Scarlet Conjuror"] = 7972,
-									["Herod"] = 1668,
-									["Scarlet Wizard"] = 0,
-									["Scarlet Champion"] = 0,
-									["Scarlet Monk"] = 0,
+									["Scarlet Protector"] = 0,
 								},
-								["n_dmg"] = 245312,
+								["n_dmg"] = 0,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 836,
-								["total"] = 245312,
+								["counter"] = 1,
+								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = 27173,
+								["id"] = 28734,
 								["r_dmg"] = 0,
-								["IMMUNE"] = 1,
-								["RESIST"] = 2,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
+								["RESIST"] = 1,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 833,
+								["n_amt"] = 0,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
-							[27168] = {
+							[26573] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 72,
+								["n_max"] = 81,
 								["targets"] = {
-									["Scarlet Myrmidon"] = 5244,
-									["Scarlet Scryer"] = 55,
-									["Scarlet Defender"] = 4203,
-									["Interrogator Vishas"] = 55,
-									["Scarlet Sentry"] = 54,
-									["Scarlet Evoker"] = 142,
-									["Scarlet Protector"] = 1202,
-									["Scarlet Conjuror"] = 143,
-									["Scarlet Torturer"] = 929,
-									["Scarlet Guardsman"] = 1554,
-									["Herod"] = 55,
-									["Scarlet Soldier"] = 2834,
+									["Scarlet Gallant"] = 0,
+									["Scarlet Myrmidon"] = 2971,
+									["Scarlet Defender"] = 3182,
+									["Scarlet Wizard"] = 0,
+									["Houndmaster Loksey"] = 0,
+									["Scarlet Soldier"] = 1689,
+									["Scarlet Protector"] = 1527,
+									["Fire Elemental"] = 320,
+									["Scarlet Tracking Hound"] = 0,
+									["Scarlet Guardsman"] = 2128,
+									["Scarlet Adept"] = 0,
+									["Scarlet Beastmaster"] = 0,
 								},
-								["n_dmg"] = 16470,
+								["n_dmg"] = 11817,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 269,
-								["total"] = 16470,
+								["counter"] = 155,
+								["total"] = 11817,
 								["c_max"] = 0,
-								["id"] = 27168,
+								["id"] = 26573,
 								["r_dmg"] = 0,
-								["RESIST"] = 2,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
+								["RESIST"] = 1,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 267,
+								["n_amt"] = 154,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
@@ -32077,7 +19751,7 @@ _detalhes_database = {
 					},
 					["start_time"] = 1653920431,
 					["serial"] = "Player-4465-02E98A53",
-					["friendlyfire_total"] = 0,
+					["classe"] = "PALADIN",
 				}, -- [28]
 				{
 					["flag_original"] = 2632,
@@ -32087,22 +19761,22 @@ _detalhes_database = {
 					["targets"] = {
 						["Moolatz"] = 0,
 					},
+					["serial"] = "Creature-0-4447-0-59-4281-000014CABB",
 					["pets"] = {
 					},
-					["monster"] = true,
+					["friendlyfire_total"] = 0,
+					["fight_component"] = true,
 					["aID"] = "4281",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008186,
 					["end_time"] = 1653920577,
-					["fight_component"] = true,
 					["dps_started"] = false,
 					["total"] = 0.008186,
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
 					["last_event"] = 0,
 					["nome"] = "Scarlet Scout",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -32186,18 +19860,18 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["on_hold"] = false,
-					["friendlyfire_total"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
-					["serial"] = "Creature-0-4447-0-59-4281-000014CABB",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.008186,
 					["start_time"] = 1653920574,
 					["delay"] = 0,
-					["damage_taken"] = 0.008186,
+					["monster"] = true,
 				}, -- [29]
 				{
 					["flag_original"] = 1298,
@@ -32210,20 +19884,20 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
+					["classe"] = "PALADIN",
+					["last_event"] = 0,
 					["aID"] = "4465-02E963B0",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 162.015128,
-					["friendlyfire"] = {
-					},
-					["last_event"] = 0,
+					["serial"] = "Player-4465-02E963B0",
 					["dps_started"] = false,
 					["total"] = 162.015128,
-					["classe"] = "PALADIN",
-					["friendlyfire_total"] = 0,
+					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Kamides",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -32308,22 +19982,21 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["end_time"] = 1653920577,
 					["on_hold"] = false,
-					["serial"] = "Player-4465-02E963B0",
+					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.015128,
 					["start_time"] = 1653920571,
 					["delay"] = 0,
-					["damage_taken"] = 0.015128,
+					["end_time"] = 1653920577,
 				}, -- [30]
 				{
 					["flag_original"] = 2600,
 					["totalabsorbed"] = 0.008315,
-					["aID"] = "3975",
 					["damage_from"] = {
 						["Axxos"] = true,
 					},
@@ -32332,19 +20005,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
 					["classe"] = "UNKNOW",
+					["damage_taken"] = 10472.008315,
+					["aID"] = "3975",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 164.008315,
-					["last_event"] = 0,
-					["dps_started"] = false,
+					["serial"] = "Creature-0-4446-189-24623-3975-000014D0E4",
+					["fight_component"] = true,
 					["end_time"] = 1653920706,
-					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
+					["on_hold"] = false,
 					["nome"] = "Herod",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -32361,14 +20034,14 @@ _detalhes_database = {
 								["counter"] = 5,
 								["total"] = 0,
 								["c_max"] = 0,
-								["BLOCK"] = 1,
+								["MISS"] = 1,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 1,
 								["DODGE"] = 3,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
+								["BLOCK"] = 1,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
@@ -32500,10 +20173,10 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 15496,
 								["r_dmg"] = 0,
-								["BLOCK"] = 1,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
+								["BLOCK"] = 1,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
@@ -32512,22 +20185,22 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["last_event"] = 0,
 					["total"] = 164.008315,
-					["serial"] = "Creature-0-4446-189-24623-3975-000014D0E4",
+					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 10472.008315,
+					["last_dps"] = 0,
 					["start_time"] = 1653920686,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 				}, -- [31]
 				{
 					["flag_original"] = 2600,
 					["totalabsorbed"] = 0.012007,
-					["aID"] = "4293",
 					["damage_from"] = {
 						["Axxos"] = true,
 					},
@@ -32536,19 +20209,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
 					["classe"] = "UNKNOW",
+					["damage_taken"] = 7413.012007,
+					["aID"] = "4293",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 6.012007000000001,
-					["last_event"] = 0,
-					["dps_started"] = false,
+					["serial"] = "Creature-0-4446-189-24623-4293-000014D0E4",
+					["fight_component"] = true,
 					["end_time"] = 1653920910,
-					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
+					["on_hold"] = false,
 					["nome"] = "Scarlet Scryer",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -32564,22 +20237,22 @@ _detalhes_database = {
 								["g_dmg"] = 0,
 								["counter"] = 10,
 								["a_dmg"] = 0,
-								["total"] = 6,
+								["r_amt"] = 0,
 								["c_max"] = 0,
 								["MISS"] = 2,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["DODGE"] = 4,
-								["BLOCK"] = 1,
 								["extra"] = {
 								},
+								["BLOCK"] = 1,
 								["PARRY"] = 2,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 1,
 								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["total"] = 6,
 							}, -- [1]
 							[9613] = {
 								["c_amt"] = 0,
@@ -32598,10 +20271,10 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 9613,
 								["r_dmg"] = 0,
-								["RESIST"] = 4,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
+								["RESIST"] = 4,
 								["c_min"] = 0,
 								["successful_casted"] = 5,
 								["a_amt"] = 0,
@@ -32610,17 +20283,18 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["last_event"] = 0,
 					["total"] = 6.012007000000001,
-					["serial"] = "Creature-0-4446-189-24623-4293-000014D0E4",
+					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 7413.012007,
+					["last_dps"] = 0,
 					["start_time"] = 1653920889,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 				}, -- [32]
 				{
 					["flag_original"] = 2632,
@@ -32631,24 +20305,23 @@ _detalhes_database = {
 					["targets"] = {
 						["Axxos"] = 37,
 					},
-					["on_hold"] = false,
+					["serial"] = "Creature-0-4446-189-24623-4306-000394D0E4",
 					["pets"] = {
 					},
-					["monster"] = true,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["aID"] = "4306",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 37.007561,
-					["friendlyfire"] = {
-					},
 					["end_time"] = 1653920910,
 					["dps_started"] = false,
 					["total"] = 37.007561,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["nome"] = "Scarlet Torturer",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -32664,39 +20337,39 @@ _detalhes_database = {
 								["g_dmg"] = 0,
 								["counter"] = 54,
 								["a_dmg"] = 0,
-								["total"] = 37,
+								["r_amt"] = 0,
 								["c_max"] = 0,
-								["BLOCK"] = 17,
+								["MISS"] = 13,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 13,
 								["DODGE"] = 16,
 								["extra"] = {
 								},
+								["BLOCK"] = 17,
 								["PARRY"] = 5,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 3,
 								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["total"] = 37,
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-4446-189-24623-4306-000394D0E4",
+					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 17643.007561,
 					["start_time"] = 1653920888,
 					["delay"] = 0,
-					["damage_taken"] = 17643.007561,
+					["monster"] = true,
 				}, -- [33]
 				{
 					["flag_original"] = 2600,
 					["totalabsorbed"] = 0.010302,
-					["aID"] = "3983",
 					["damage_from"] = {
 						["Glurvas"] = true,
 						["Kamides"] = true,
@@ -32706,19 +20379,19 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
 					["classe"] = "UNKNOW",
+					["damage_taken"] = 5327.010302000001,
+					["aID"] = "3983",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.010302,
-					["last_event"] = 0,
-					["dps_started"] = false,
+					["serial"] = "Creature-0-4446-189-24623-3983-000014D0E4",
+					["fight_component"] = true,
 					["end_time"] = 1653920910,
-					["on_hold"] = false,
 					["friendlyfire_total"] = 0,
+					["on_hold"] = false,
 					["nome"] = "Interrogator Vishas",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -32734,22 +20407,22 @@ _detalhes_database = {
 								["g_dmg"] = 0,
 								["counter"] = 22,
 								["a_dmg"] = 0,
-								["total"] = 0,
+								["r_amt"] = 0,
 								["c_max"] = 0,
 								["MISS"] = 14,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["DODGE"] = 3,
-								["BLOCK"] = 1,
 								["extra"] = {
 								},
+								["BLOCK"] = 1,
 								["PARRY"] = 4,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
 								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["total"] = 0,
 							}, -- [1]
 							[2767] = {
 								["c_amt"] = 0,
@@ -32768,10 +20441,10 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 2767,
 								["r_dmg"] = 0,
-								["RESIST"] = 3,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
+								["RESIST"] = 3,
 								["c_min"] = 0,
 								["successful_casted"] = 3,
 								["a_amt"] = 0,
@@ -32780,22 +20453,22 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["last_event"] = 0,
 					["total"] = 0.010302,
-					["serial"] = "Creature-0-4446-189-24623-3983-000014D0E4",
+					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 5327.010302000001,
+					["last_dps"] = 0,
 					["start_time"] = 1653920907,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 				}, -- [34]
 				{
 					["flag_original"] = 1298,
 					["totalabsorbed"] = 0.010445,
-					["aID"] = "4465-02E90A98",
 					["damage_from"] = {
 					},
 					["targets"] = {
@@ -32803,20 +20476,20 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_event"] = 0,
 					["classe"] = "HUNTER",
+					["last_event"] = 0,
+					["aID"] = "4465-02E90A98",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 198.010445,
-					["friendlyfire"] = {
-					},
+					["serial"] = "Player-4465-02E90A98",
 					["dps_started"] = false,
 					["end_time"] = 1653920910,
-					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 0.010445,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Glurvas",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							[14284] = {
 								["c_amt"] = 0,
@@ -32874,17 +20547,1194 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
 					["grupo"] = true,
 					["total"] = 198.010445,
-					["serial"] = "Player-4465-02E90A98",
+					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.010445,
+					["last_dps"] = 0,
 					["start_time"] = 1653920900,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 				}, -- [35]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.008422,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Axxos"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.008422,
+					["aID"] = "4287",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.008422,
+					["total"] = 0.008422,
+					["monster"] = true,
+					["end_time"] = 1653930151,
+					["last_dps"] = 0,
+					["tipo"] = 1,
+					["nome"] = "Scarlet Gallant",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Axxos"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							}, -- [1]
+							[5589] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Axxos"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 5589,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[14517] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Axxos"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 14517,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+						},
+						["tipo"] = 2,
+					},
+					["classe"] = "UNKNOW",
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1653930148,
+					["serial"] = "Creature-0-4446-189-24623-4287-000194D0E4",
+					["fight_component"] = true,
+				}, -- [36]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.005315,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Axxos"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.005315,
+					["aID"] = "4296",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.005315,
+					["total"] = 0.005315,
+					["monster"] = true,
+					["end_time"] = 1653930151,
+					["last_dps"] = 0,
+					["tipo"] = 1,
+					["nome"] = "Scarlet Adept",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Axxos"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							}, -- [1]
+							[9734] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Axxos"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 9734,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[6063] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 6063,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+						},
+						["tipo"] = 2,
+					},
+					["classe"] = "UNKNOW",
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1653930148,
+					["serial"] = "Creature-0-4446-189-24623-4296-000114D0E4",
+					["fight_component"] = true,
+				}, -- [37]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.001229,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Axxos"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.001229,
+					["aID"] = "4288",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.001229,
+					["total"] = 0.001229,
+					["monster"] = true,
+					["end_time"] = 1653930151,
+					["last_dps"] = 0,
+					["tipo"] = 1,
+					["nome"] = "Scarlet Beastmaster",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Axxos"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							}, -- [1]
+							[7896] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Axxos"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 7896,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[6660] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Axxos"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 6660,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+						},
+						["tipo"] = 2,
+					},
+					["classe"] = "UNKNOW",
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1653930148,
+					["serial"] = "Creature-0-4446-189-24623-4288-000114D0E4",
+					["fight_component"] = true,
+				}, -- [38]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.00463,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Axxos"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.00463,
+					["aID"] = "4304",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.00463,
+					["total"] = 0.00463,
+					["monster"] = true,
+					["end_time"] = 1653930151,
+					["last_dps"] = 0,
+					["tipo"] = 1,
+					["nome"] = "Scarlet Tracking Hound",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Axxos"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							}, -- [1]
+						},
+						["tipo"] = 2,
+					},
+					["classe"] = "UNKNOW",
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1653930148,
+					["serial"] = "Creature-0-4446-189-24623-4304-000094D0E4",
+					["fight_component"] = true,
+				}, -- [39]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.003941,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Axxos"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.003941,
+					["aID"] = "3974",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.003941,
+					["total"] = 0.003941,
+					["monster"] = true,
+					["end_time"] = 1653930151,
+					["last_dps"] = 0,
+					["tipo"] = 1,
+					["nome"] = "Houndmaster Loksey",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Axxos"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							}, -- [1]
+							[6192] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 6192,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[6742] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 6742,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+						},
+						["tipo"] = 2,
+					},
+					["classe"] = "UNKNOW",
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1653930148,
+					["serial"] = "Creature-0-4446-189-24623-3974-000014D0E4",
+					["fight_component"] = true,
+				}, -- [40]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.006543,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["aID"] = "4124",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.006543,
+					["end_time"] = 1653933772,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 0.006543,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["nome"] = "Needles Cougar",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+						},
+					},
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["serial"] = "Creature-0-4447-1-51-4124-000014A04B",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1653933769,
+					["delay"] = 0,
+					["damage_taken"] = 0.006543,
+				}, -- [41]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.007581,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["aID"] = "10882",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.007581,
+					["end_time"] = 1653933772,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 0.007581,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["nome"] = "Arikara",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+							[8599] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 8599,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[17213] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 17213,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+					},
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["serial"] = "Creature-0-4447-1-51-10882-0000150542",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1653933769,
+					["delay"] = 0,
+					["damage_taken"] = 0.007581,
+				}, -- [42]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.005488,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["aID"] = "10760",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.005488,
+					["end_time"] = 1653933772,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 0.005488,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["nome"] = "Grimtotem Geomancer",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+							[20811] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 20811,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+					},
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["serial"] = "Creature-0-4447-1-51-10760-000014F9D6",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1653933769,
+					["delay"] = 0,
+					["damage_taken"] = 0.005488,
+				}, -- [43]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.001989,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["aID"] = "10759",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.001989,
+					["end_time"] = 1653933772,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 0.001989,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["nome"] = "Grimtotem Stomper",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+						},
+					},
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["serial"] = "Creature-0-4447-1-51-10759-000014F9D6",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1653933769,
+					["delay"] = 0,
+					["damage_taken"] = 0.001989,
+				}, -- [44]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.001971,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+						["Folding"] = 0,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["aID"] = "10758",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.001971,
+					["end_time"] = 1653933772,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 0.001971,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["nome"] = "Grimtotem Bandit",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+									["Folding"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+							[6713] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 6713,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+					},
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["serial"] = "Creature-0-4447-1-51-10758-000014FD48",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1653933769,
+					["delay"] = 0,
+					["damage_taken"] = 0.001971,
+				}, -- [45]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.008752,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["aID"] = "4343",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.008752,
+					["end_time"] = 1653933772,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 0.008752,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["nome"] = "Drywallow Snapper",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+							[19319] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 19319,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+					},
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["serial"] = "Creature-0-4447-1-49-4343-000014FA15",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1653933769,
+					["delay"] = 0,
+					["damage_taken"] = 0.008752,
+				}, -- [46]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.00354,
+					["damage_from"] = {
+					},
+					["targets"] = {
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["aID"] = "3247",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.00354,
+					["end_time"] = 1653933772,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 0.00354,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["nome"] = "Thunderhawk Hatchling",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+						},
+					},
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["serial"] = "Creature-0-4447-1-50-3247-000014F06A",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1653933769,
+					["delay"] = 0,
+					["damage_taken"] = 0.00354,
+				}, -- [47]
+				{
+					["flag_original"] = 68136,
+					["totalabsorbed"] = 0.002024,
+					["aID"] = "3463",
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+					},
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.002024,
+					["last_event"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1653933772,
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["nome"] = "Wandering Barrens Giraffe",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+						},
+					},
+					["friendlyfire"] = {
+					},
+					["total"] = 0.002024,
+					["serial"] = "Creature-0-4447-1-50-3463-000014F050",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 0.002024,
+					["start_time"] = 1653933769,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [48]
 			},
 		}, -- [1]
 		{
@@ -32892,8 +21742,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1298,
-					["targets_overheal"] = {
-						["Extod"] = 0,
+					["healing_from"] = {
 					},
 					["pets"] = {
 					},
@@ -32917,7 +21766,7 @@ _detalhes_database = {
 					["healing_taken"] = 0.007903,
 					["fight_component"] = true,
 					["end_time"] = 1653909169,
-					["classe"] = "PALADIN",
+					["aID"] = "4465-0282DBA2",
 					["nome"] = "Extod",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -32940,9 +21789,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
+								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 							[33090] = {
@@ -32965,28 +21814,29 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
+								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["healing_from"] = {
+					["targets_overheal"] = {
+						["Extod"] = 0,
 					},
-					["tipo"] = 2,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.007903,
 					["start_time"] = 1653909166,
 					["delay"] = 0,
-					["aID"] = "4465-0282DBA2",
+					["classe"] = "PALADIN",
 				}, -- [1]
 				{
 					["flag_original"] = 1298,
-					["targets_overheal"] = {
+					["healing_from"] = {
 					},
 					["pets"] = {
 					},
@@ -33010,7 +21860,7 @@ _detalhes_database = {
 					["healing_taken"] = 0.00165,
 					["fight_component"] = true,
 					["end_time"] = 1653909169,
-					["classe"] = "PALADIN",
+					["aID"] = "4465-02E70409",
 					["nome"] = "Yezzyx",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -33033,28 +21883,28 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
+								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["healing_from"] = {
+					["targets_overheal"] = {
 					},
-					["tipo"] = 2,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.00165,
 					["start_time"] = 1653909166,
 					["delay"] = 0,
-					["aID"] = "4465-02E70409",
+					["classe"] = "PALADIN",
 				}, -- [2]
 				{
 					["flag_original"] = 1298,
-					["targets_overheal"] = {
+					["healing_from"] = {
 					},
 					["pets"] = {
 					},
@@ -33078,7 +21928,7 @@ _detalhes_database = {
 					["healing_taken"] = 0.004332,
 					["fight_component"] = true,
 					["end_time"] = 1653909169,
-					["classe"] = "PALADIN",
+					["aID"] = "4465-02564042",
 					["nome"] = "Acheros",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -33101,29 +21951,29 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
+								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["healing_from"] = {
+					["targets_overheal"] = {
 					},
-					["tipo"] = 2,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.004332,
 					["start_time"] = 1653909166,
 					["delay"] = 0,
-					["aID"] = "4465-02564042",
+					["classe"] = "PALADIN",
 				}, -- [3]
 				{
 					["flag_original"] = 1298,
-					["targets_overheal"] = {
-						["Kawakii"] = 0,
+					["healing_from"] = {
+						["Kawakii"] = true,
 					},
 					["pets"] = {
 					},
@@ -33148,7 +21998,7 @@ _detalhes_database = {
 					["healing_taken"] = 53025.08435,
 					["fight_component"] = true,
 					["end_time"] = 1653909716,
-					["classe"] = "MAGE",
+					["heal_enemy_amt"] = 0,
 					["nome"] = "Kawakii",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -33172,9 +22022,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["n_curado"] = 593,
 								["totaldenied"] = 0,
 								["n_amt"] = 12,
+								["n_curado"] = 593,
 								["absorbed"] = 0,
 							},
 							[27128] = {
@@ -33197,9 +22047,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["n_curado"] = 1099,
 								["totaldenied"] = 0,
 								["n_amt"] = 18,
+								["n_curado"] = 1099,
 								["absorbed"] = 0,
 							},
 							[27031] = {
@@ -33222,9 +22072,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
+								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							[28495] = {
@@ -33246,9 +22096,9 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["n_curado"] = 2186,
 								["totaldenied"] = 0,
 								["n_amt"] = 1,
+								["n_curado"] = 2186,
 								["absorbed"] = 0,
 							},
 							[33405] = {
@@ -33271,29 +22121,29 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["n_curado"] = 49147,
 								["totaldenied"] = 0,
 								["n_amt"] = 876,
+								["n_curado"] = 49147,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["healing_from"] = {
-						["Kawakii"] = true,
+					["targets_overheal"] = {
+						["Kawakii"] = 0,
 					},
-					["last_event"] = 0,
-					["custom"] = 0,
 					["tipo"] = 2,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["totaldenied"] = 0.08435000000000001,
 					["start_time"] = 1653908834,
 					["delay"] = 0,
-					["heal_enemy_amt"] = 0,
+					["classe"] = "MAGE",
 				}, -- [4]
 				{
 					["flag_original"] = 1298,
-					["healing_from"] = {
+					["targets_overheal"] = {
 					},
 					["pets"] = {
 					},
@@ -33318,7 +22168,7 @@ _detalhes_database = {
 					["healing_taken"] = 0.006445,
 					["fight_component"] = true,
 					["end_time"] = 1653917786,
-					["aID"] = "4465-02E08F27",
+					["classe"] = "MAGE",
 					["nome"] = "Queliarel",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -33342,24 +22192,24 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["n_amt"] = 0,
 								["n_curado"] = 0,
 								["totaldenied"] = 0,
+								["n_amt"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["targets_overheal"] = {
+					["healing_from"] = {
 					},
-					["last_event"] = 0,
-					["custom"] = 0,
 					["tipo"] = 2,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["totaldenied"] = 0.006445,
 					["start_time"] = 1653917783,
 					["delay"] = 0,
-					["classe"] = "MAGE",
+					["aID"] = "4465-02E08F27",
 				}, -- [5]
 				{
 					["flag_original"] = 1298,
@@ -33388,9 +22238,7 @@ _detalhes_database = {
 					["healing_taken"] = 15089.013484,
 					["fight_component"] = true,
 					["end_time"] = 1653920575,
-					["healing_from"] = {
-						["Axxos"] = true,
-					},
+					["classe"] = "PALADIN",
 					["nome"] = "Axxos",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -33414,24 +22262,161 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 1990,
-								["n_amt"] = 208,
 								["n_curado"] = 13099,
 								["totaldenied"] = 0,
+								["n_amt"] = 208,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["tipo"] = 2,
-					["heal_enemy_amt"] = 0,
-					["custom"] = 0,
+					["healing_from"] = {
+						["Axxos"] = true,
+					},
 					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.013484,
 					["start_time"] = 1653920539,
 					["delay"] = 0,
-					["classe"] = "PALADIN",
+					["heal_enemy_amt"] = 0,
 				}, -- [6]
+				{
+					["flag_original"] = 1297,
+					["totalabsorb"] = 0.001816,
+					["last_hps"] = 0,
+					["targets_overheal"] = {
+					},
+					["healing_from"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+					},
+					["targets_absorbs"] = {
+					},
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["totalover_without_pet"] = 0.001816,
+					["classe"] = "DRUID",
+					["totalover"] = 0.001816,
+					["total_without_pet"] = 0.001816,
+					["start_time"] = 1653933769,
+					["heal_enemy_amt"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1653933772,
+					["healing_taken"] = 0.001816,
+					["total"] = 0.001816,
+					["nome"] = "Moolatz",
+					["spells"] = {
+						["tipo"] = 3,
+						["_ActorTable"] = {
+							[3627] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_min"] = 0,
+								["counter"] = 0,
+								["overheal"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 3627,
+								["targets_absorbs"] = {
+								},
+								["c_min"] = 0,
+								["c_curado"] = 0,
+								["n_curado"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 0,
+								["absorbed"] = 0,
+							},
+						},
+					},
+					["grupo"] = true,
+					["aID"] = "4465-02B843FA",
+					["heal_enemy"] = {
+					},
+					["serial"] = "Player-4465-02B843FA",
+					["custom"] = 0,
+					["tipo"] = 2,
+					["on_hold"] = false,
+					["totaldenied"] = 0.001816,
+					["delay"] = 0,
+					["last_event"] = 0,
+				}, -- [7]
+				{
+					["flag_original"] = 1304,
+					["totalabsorb"] = 0.005053,
+					["last_hps"] = 0,
+					["targets_overheal"] = {
+					},
+					["targets"] = {
+						["Moolatz"] = 0,
+					},
+					["healing_from"] = {
+					},
+					["pets"] = {
+					},
+					["totalover_without_pet"] = 0.005053,
+					["start_time"] = 1653933769,
+					["aID"] = "4465-02E76B92",
+					["totalover"] = 0.005053,
+					["total_without_pet"] = 0.005053,
+					["iniciar_hps"] = false,
+					["heal_enemy_amt"] = 0,
+					["fight_component"] = true,
+					["total"] = 0.005053,
+					["classe"] = "UNGROUPPLAYER",
+					["end_time"] = 1653933772,
+					["nome"] = "Folding",
+					["spells"] = {
+						["tipo"] = 3,
+						["_ActorTable"] = {
+							[1026] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 0,
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["n_min"] = 0,
+								["counter"] = 0,
+								["overheal"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1026,
+								["targets_absorbs"] = {
+								},
+								["c_min"] = 0,
+								["c_curado"] = 0,
+								["n_curado"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 0,
+								["absorbed"] = 0,
+							},
+						},
+					},
+					["healing_taken"] = 0.005053,
+					["targets_absorbs"] = {
+					},
+					["heal_enemy"] = {
+					},
+					["serial"] = "Player-4465-02E76B92",
+					["custom"] = 0,
+					["tipo"] = 2,
+					["on_hold"] = false,
+					["totaldenied"] = 0.005053,
+					["delay"] = 0,
+					["last_event"] = 0,
+				}, -- [8]
 			},
 		}, -- [2]
 		{
@@ -33485,7 +22470,7 @@ _detalhes_database = {
 				}, -- [1]
 				{
 					["received"] = 213637.062789,
-					["resource"] = 0.159412,
+					["resource"] = 0.196903,
 					["targets"] = {
 						["Kawakii"] = 0,
 					},
@@ -33531,7 +22516,7 @@ _detalhes_database = {
 				}, -- [2]
 				{
 					["received"] = 0.005451,
-					["resource"] = 0.02829,
+					["resource"] = 0.04342800000000001,
 					["targets"] = {
 						["Queliarel"] = 0,
 					},
@@ -33567,9 +22552,9 @@ _detalhes_database = {
 				}, -- [3]
 				{
 					["received"] = 1405.011631,
-					["resource"] = 0.01906,
+					["resource"] = 0.033918,
 					["targets"] = {
-						["Axxos"] = 1405,
+						["Axxos"] = 0,
 					},
 					["pets"] = {
 					},
@@ -33578,18 +22563,15 @@ _detalhes_database = {
 					["passiveover"] = 0.004297,
 					["fight_component"] = true,
 					["total"] = 1405.011631,
-					["tipo"] = 3,
-					["totalover"] = 0.004297,
 					["nome"] = "Axxos",
 					["spells"] = {
-						["tipo"] = 7,
 						["_ActorTable"] = {
 							[27167] = {
 								["total"] = 1331,
 								["id"] = 27167,
 								["totalover"] = 0,
 								["targets"] = {
-									["Axxos"] = 1331,
+									["Axxos"] = 0,
 								},
 								["counter"] = 12,
 							},
@@ -33603,17 +22585,20 @@ _detalhes_database = {
 								["counter"] = 1,
 							},
 						},
+						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["flag_original"] = 1298,
+					["totalover"] = 0.004297,
+					["aID"] = "4465-02E98A53",
+					["tipo"] = 3,
 					["alternatepower"] = 0.011631,
 					["last_event"] = 0,
-					["aID"] = "4465-02E98A53",
 					["serial"] = "Player-4465-02E98A53",
+					["flag_original"] = 1298,
 				}, -- [4]
 				{
 					["received"] = 0.007495,
-					["resource"] = 0.009840999999999999,
+					["resource"] = 0.014533,
 					["targets"] = {
 						["Kamides"] = 0,
 					},
@@ -33623,11 +22608,8 @@ _detalhes_database = {
 					["classe"] = "PALADIN",
 					["passiveover"] = 0.007495,
 					["total"] = 0.007495,
-					["tipo"] = 3,
-					["totalover"] = 0.007495,
 					["nome"] = "Kamides",
 					["spells"] = {
-						["tipo"] = 7,
 						["_ActorTable"] = {
 							[31930] = {
 								["total"] = 0,
@@ -33639,13 +22621,16 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["flag_original"] = 1298,
+					["totalover"] = 0.007495,
+					["aID"] = "4465-02E963B0",
+					["tipo"] = 3,
 					["alternatepower"] = 0.007495,
 					["last_event"] = 0,
-					["aID"] = "4465-02E963B0",
 					["serial"] = "Player-4465-02E963B0",
+					["flag_original"] = 1298,
 				}, -- [5]
 			},
 		}, -- [3]
@@ -33750,14 +22735,14 @@ _detalhes_database = {
 					["nome"] = "Extod",
 					["grupo"] = true,
 					["spell_cast"] = {
-						[28734] = 0,
 						[27166] = 0,
+						[28734] = 0,
 						[20271] = 0,
 						[27136] = 0,
 						[33089] = 0,
 						[35163] = 0,
-						[31884] = 0,
 						[27173] = 0,
+						[31884] = 0,
 					},
 					["aID"] = "4465-0282DBA2",
 					["tipo"] = 4,
@@ -33839,10 +22824,9 @@ _detalhes_database = {
 					},
 					["fight_component"] = true,
 					["debuff_uptime"] = 0,
-					["aID"] = "4465-02E70409",
 					["buff_uptime"] = 0,
-					["debuff_uptime_targets"] = {
-					},
+					["aID"] = "4465-02E70409",
+					["nome"] = "Yezzyx",
 					["grupo"] = true,
 					["spell_cast"] = {
 						[1042] = 0,
@@ -33864,9 +22848,10 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["tipo"] = 4,
 					["last_event"] = 0,
-					["nome"] = "Yezzyx",
+					["tipo"] = 4,
+					["debuff_uptime_targets"] = {
+					},
 					["cooldowns_defensive_spells"] = {
 						["_ActorTable"] = {
 							[642] = {
@@ -33883,16 +22868,16 @@ _detalhes_database = {
 				}, -- [3]
 				{
 					["fight_component"] = true,
-					["buff_uptime"] = 0,
+					["spell_cast"] = {
+						[1026] = 0,
+					},
 					["flag_original"] = 1047,
 					["buff_uptime_targets"] = {
 					},
 					["grupo"] = true,
 					["nome"] = "Acheros",
+					["buff_uptime"] = 0,
 					["pets"] = {
-					},
-					["spell_cast"] = {
-						[1026] = 0,
 					},
 					["tipo"] = 4,
 					["classe"] = "PALADIN",
@@ -33914,7 +22899,6 @@ _detalhes_database = {
 				{
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[9492] = {
 								["id"] = 9492,
@@ -33935,9 +22919,10 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
-					["pets"] = {
-					},
+					["dispell"] = 0,
+					["buff_uptime"] = 3079,
 					["classe"] = "DRUID",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -33951,8 +22936,20 @@ _detalhes_database = {
 								},
 								["refreshamt"] = 0,
 							},
+							[8914] = {
+								["id"] = 8914,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
 							[1850] = {
 								["id"] = 1850,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[3627] = {
+								["id"] = 3627,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -33992,12 +22989,32 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
+					["dispell_targets"] = {
+						["Moolatz"] = 0,
+					},
 					["debuff_uptime"] = 0,
+					["dispell_oque"] = {
+					},
+					["dispell_spells"] = {
+						["tipo"] = 9,
+						["_ActorTable"] = {
+							[2782] = {
+								["id"] = 2782,
+								["dispell_oque"] = {
+								},
+								["targets"] = {
+									["Moolatz"] = 0,
+								},
+								["counter"] = 0,
+							},
+						},
+					},
 					["buff_uptime_targets"] = {
 					},
 					["grupo"] = true,
 					["spell_cast"] = {
 						[768] = 0,
+						[22568] = 0,
 						[1850] = 0,
 						[9492] = 0,
 						[17390] = 0,
@@ -34005,29 +23022,30 @@ _detalhes_database = {
 						[5215] = 1,
 						[3029] = 0,
 					},
-					["debuff_uptime_targets"] = {
+					["pets"] = {
 					},
-					["buff_uptime"] = 3079,
-					["tipo"] = 4,
 					["nome"] = "Moolatz",
+					["tipo"] = 4,
+					["aID"] = "4465-02B843FA",
 					["last_event"] = 0,
 					["serial"] = "Player-4465-02B843FA",
-					["aID"] = "4465-02B843FA",
+					["debuff_uptime_targets"] = {
+					},
 				}, -- [5]
 				{
 					["monster"] = true,
-					["aID"] = "4301",
+					["tipo"] = 4,
 					["nome"] = "Scarlet Centurion",
 					["flag_original"] = 2632,
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Creature-0-4447-189-13250-4301-000294A01E",
 					["spell_cast"] = {
 						[31403] = 11,
+					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "4301",
+					["serial"] = "Creature-0-4447-189-13250-4301-000294A01E",
+					["pets"] = {
 					},
 				}, -- [6]
 				{
@@ -34061,7 +23079,7 @@ _detalhes_database = {
 						[27085] = 1,
 					},
 					["fight_component"] = true,
-					["interrupt"] = 5.01908,
+					["nome"] = "Scarlet Defender",
 					["interrupt_targets"] = {
 						["Kawakii"] = 1,
 						["Water Elemental"] = 3,
@@ -34073,12 +23091,12 @@ _detalhes_database = {
 						[7164] = 19,
 						[11972] = 36,
 					},
-					["classe"] = "UNKNOW",
+					["last_event"] = 0,
 					["tipo"] = 4,
-					["nome"] = "Scarlet Defender",
+					["classe"] = "UNKNOW",
 					["monster"] = true,
 					["serial"] = "Creature-0-4447-189-13250-4298-000414A01F",
-					["last_event"] = 0,
+					["interrupt"] = 5.01908,
 				}, -- [7]
 				{
 					["flag_original"] = 2632,
@@ -34102,7 +23120,7 @@ _detalhes_database = {
 					["interrompeu_oque"] = {
 					},
 					["fight_component"] = true,
-					["interrupt"] = 0,
+					["nome"] = "Scarlet Monk",
 					["interrupt_targets"] = {
 						["Kawakii"] = 0,
 					},
@@ -34110,128 +23128,128 @@ _detalhes_database = {
 						[3391] = 5,
 						[11978] = 0,
 					},
+					["aID"] = "4540",
 					["tipo"] = 4,
 					["last_event"] = 0,
-					["nome"] = "Scarlet Monk",
 					["monster"] = true,
 					["serial"] = "Creature-0-4447-189-13250-4540-000294A01F",
-					["aID"] = "4540",
+					["interrupt"] = 0,
 				}, -- [8]
 				{
 					["monster"] = true,
-					["aID"] = "4294",
+					["tipo"] = 4,
 					["nome"] = "Scarlet Sorcerer",
 					["flag_original"] = 2632,
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Creature-0-4447-189-13250-4294-000114A01F",
 					["spell_cast"] = {
 						[9672] = 2,
 						[6146] = 0,
 					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "4294",
+					["serial"] = "Creature-0-4447-189-13250-4294-000114A01F",
+					["pets"] = {
+					},
 				}, -- [9]
 				{
 					["monster"] = true,
-					["aID"] = "4300",
+					["tipo"] = 4,
 					["nome"] = "Scarlet Wizard",
 					["flag_original"] = 2632,
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Creature-0-4447-189-13250-4300-000194A01E",
 					["spell_cast"] = {
 						[2601] = 8,
+					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "4300",
+					["serial"] = "Creature-0-4447-189-13250-4300-000194A01E",
+					["pets"] = {
 					},
 				}, -- [10]
 				{
 					["monster"] = true,
-					["aID"] = "3976",
+					["tipo"] = 4,
 					["nome"] = "Scarlet Commander Mograine",
 					["flag_original"] = 2632,
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Creature-0-4447-189-13250-3976-000014A01E",
 					["spell_cast"] = {
 						[5589] = 0,
 						[14518] = 0,
 					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "3976",
+					["serial"] = "Creature-0-4447-189-13250-3976-000014A01E",
+					["pets"] = {
+					},
 				}, -- [11]
 				{
 					["monster"] = true,
-					["aID"] = "4302",
+					["tipo"] = 4,
 					["nome"] = "Scarlet Champion",
 					["flag_original"] = 2632,
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Creature-0-4447-189-13250-4302-000094A01E",
 					["spell_cast"] = {
 						[17143] = 0,
+					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "4302",
+					["serial"] = "Creature-0-4447-189-13250-4302-000094A01E",
+					["pets"] = {
 					},
 				}, -- [12]
 				{
 					["monster"] = true,
-					["aID"] = "4299",
+					["tipo"] = 4,
 					["nome"] = "Scarlet Chaplain",
 					["flag_original"] = 2632,
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Creature-0-4447-189-13250-4299-000314A01F",
 					["spell_cast"] = {
 						[6066] = 0,
 						[8362] = 0,
 					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "4299",
+					["serial"] = "Creature-0-4447-189-13250-4299-000314A01F",
+					["pets"] = {
+					},
 				}, -- [13]
 				{
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["pets"] = {
+					},
 					["nome"] = "Scarlet Myrmidon",
 					["monster"] = true,
 					["spell_cast"] = {
 						[8269] = 34,
 					},
 					["flag_original"] = 2632,
-					["classe"] = "UNKNOW",
 					["last_event"] = 0,
-					["pets"] = {
-					},
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
 					["serial"] = "Creature-0-4447-189-13250-4295-000114A01E",
 					["aID"] = "4295",
 				}, -- [14]
 				{
 					["monster"] = true,
-					["aID"] = "4303",
+					["tipo"] = 4,
 					["nome"] = "Scarlet Abbot",
 					["flag_original"] = 2632,
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Creature-0-4447-189-13250-4303-000114A01E",
 					["spell_cast"] = {
 						[6064] = 0,
 						[8362] = 0,
 						[8269] = 0,
+					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "4303",
+					["serial"] = "Creature-0-4447-189-13250-4303-000114A01E",
+					["pets"] = {
 					},
 				}, -- [15]
 				{
@@ -34328,7 +23346,7 @@ _detalhes_database = {
 					["pets"] = {
 						"Water Elemental <Kawakii>", -- [1]
 					},
-					["classe"] = "MAGE",
+					["aID"] = "4465-02BCE74D",
 					["cc_done_spells"] = {
 						["_ActorTable"] = {
 							[27088] = {
@@ -34346,7 +23364,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["aID"] = "4465-02BCE74D",
+					["classe"] = "MAGE",
 					["cooldowns_defensive_targets"] = {
 						["Kawakii"] = 11,
 					},
@@ -34548,8 +23566,7 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["cc_done"] = 52.022433,
-					["debuff_uptime_targets"] = {
-					},
+					["nome"] = "Kawakii",
 					["grupo"] = true,
 					["cc_done_targets"] = {
 						["Scarlet Soldier"] = 11,
@@ -34562,8 +23579,8 @@ _detalhes_database = {
 					["buff_uptime_targets"] = {
 					},
 					["buff_uptime"] = 10141,
-					["tipo"] = 4,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["spell_cast"] = {
 						[27103] = 1,
 						[27088] = 33,
@@ -34587,7 +23604,8 @@ _detalhes_database = {
 						[33405] = 35,
 					},
 					["serial"] = "Player-4465-02BCE74D",
-					["nome"] = "Kawakii",
+					["debuff_uptime_targets"] = {
+					},
 				}, -- [17]
 				{
 					["flag_original"] = 1047,
@@ -34621,24 +23639,24 @@ _detalhes_database = {
 				}, -- [18]
 				{
 					["monster"] = true,
-					["fight_component"] = true,
+					["pets"] = {
+					},
 					["nome"] = "Scarlet Evoker",
-					["flag_original"] = 2632,
+					["fight_component"] = true,
 					["spell_cast"] = {
 						[2601] = 55,
 						[9053] = 118,
 					},
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
+					["flag_original"] = 2632,
 					["aID"] = "4289",
-					["pets"] = {
-					},
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
 					["serial"] = "Creature-0-4447-189-13989-4289-000014A576",
 					["tipo"] = 4,
 				}, -- [19]
 				{
 					["flag_original"] = 2632,
-					["aID"] = "4286",
+					["monster"] = true,
 					["nome"] = "Scarlet Soldier",
 					["fight_component"] = true,
 					["pets"] = {
@@ -34646,15 +23664,16 @@ _detalhes_database = {
 					["spell_cast"] = {
 						[3639] = 251,
 					},
-					["classe"] = "UNKNOW",
 					["tipo"] = 4,
-					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["aID"] = "4286",
 					["serial"] = "Creature-0-4447-189-13989-4286-000294A577",
 					["last_event"] = 0,
 				}, -- [20]
 				{
 					["fight_component"] = true,
-					["tipo"] = 4,
+					["pets"] = {
+					},
 					["nome"] = "Scarlet Guardsman",
 					["monster"] = true,
 					["spell_cast"] = {
@@ -34662,58 +23681,57 @@ _detalhes_database = {
 						[6713] = 14,
 					},
 					["flag_original"] = 2632,
-					["classe"] = "UNKNOW",
 					["last_event"] = 0,
-					["pets"] = {
-					},
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
 					["serial"] = "Creature-0-4447-189-13989-4290-000094A577",
 					["aID"] = "4290",
 				}, -- [21]
 				{
 					["monster"] = true,
-					["fight_component"] = true,
+					["pets"] = {
+					},
 					["nome"] = "Scarlet Conjuror",
-					["flag_original"] = 2632,
+					["fight_component"] = true,
 					["spell_cast"] = {
 						[9053] = 50,
 					},
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
+					["flag_original"] = 2632,
 					["aID"] = "4297",
-					["pets"] = {
-					},
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
 					["serial"] = "Creature-0-4447-189-13989-4297-000094A576",
 					["tipo"] = 4,
 				}, -- [22]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["last_event"] = 0,
 					["nome"] = "Scarlet Protector",
 					["fight_component"] = true,
-					["spell_cast"] = {
-						[31713] = 22,
+					["pets"] = {
 					},
 					["flag_original"] = 2632,
-					["tipo"] = 4,
 					["aID"] = "4292",
-					["last_event"] = 0,
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4447-189-13989-4292-000114A576",
-					["pets"] = {
+					["spell_cast"] = {
+						[31713] = 22,
 					},
 				}, -- [23]
 				{
 					["flag_original"] = 1047,
-					["spell_cast"] = {
-						[8046] = 1,
-					},
+					["buff_uptime"] = 187,
 					["buff_uptime_targets"] = {
 					},
 					["grupo"] = true,
 					["nome"] = "Triickz",
-					["pets"] = {
+					["spell_cast"] = {
+						[8046] = 1,
 					},
 					["classe"] = "SHAMAN",
-					["buff_uptime"] = 187,
+					["pets"] = {
+					},
 					["tipo"] = 4,
 					["aID"] = "4465-02E807F0",
 					["buff_uptime_spells"] = {
@@ -34816,15 +23834,15 @@ _detalhes_database = {
 						[2139] = 0,
 						[8427] = 7,
 					},
-					["tipo"] = 4,
+					["aID"] = "4465-02E08F27",
 					["nome"] = "Queliarel",
 					["last_event"] = 0,
-					["aID"] = "4465-02E08F27",
+					["debuff_uptime_targets"] = {
+					},
 					["pets"] = {
 					},
 					["serial"] = "Player-4465-02E08F27",
-					["debuff_uptime_targets"] = {
-					},
+					["tipo"] = 4,
 				}, -- [25]
 				{
 					["flag_original"] = 1047,
@@ -34873,11 +23891,11 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["last_event"] = 0,
 					["dispell"] = 0,
 					["cooldowns_defensive"] = 1.013635,
 					["pets"] = {
 					},
+					["serial"] = "Player-4465-02E98A53",
 					["aID"] = "4465-02E98A53",
 					["cooldowns_defensive_targets"] = {
 						["Axxos"] = 1,
@@ -35053,12 +24071,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["dispell_oque"] = {
-					},
-					["fight_component"] = true,
-					["debuff_uptime"] = 151,
 					["dispell_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 							[4987] = {
 								["id"] = 4987,
@@ -35070,12 +24083,16 @@ _detalhes_database = {
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
+					["fight_component"] = true,
+					["debuff_uptime"] = 151,
 					["dispell_targets"] = {
 						["Axxos"] = 0,
 					},
-					["debuff_uptime_targets"] = {
+					["dispell_oque"] = {
 					},
+					["nome"] = "Axxos",
 					["grupo"] = true,
 					["spell_cast"] = {
 						[33089] = 2,
@@ -35092,12 +24109,13 @@ _detalhes_database = {
 						[26573] = 2,
 						[31884] = 1,
 					},
-					["serial"] = "Player-4465-02E98A53",
 					["classe"] = "PALADIN",
+					["last_event"] = 0,
 					["tipo"] = 4,
 					["buff_uptime_targets"] = {
 					},
-					["buff_uptime"] = 1809,
+					["debuff_uptime_targets"] = {
+					},
 					["cooldowns_defensive_spells"] = {
 						["_ActorTable"] = {
 							[642] = {
@@ -35110,18 +24128,18 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["nome"] = "Axxos",
+					["buff_uptime"] = 1809,
 				}, -- [26]
 				{
 					["flag_original"] = 1047,
 					["buff_uptime_targets"] = {
 					},
-					["nome"] = "Whiteye",
 					["grupo"] = true,
+					["nome"] = "Whiteye",
 					["buff_uptime"] = 206,
+					["classe"] = "PALADIN",
 					["pets"] = {
 					},
-					["classe"] = "PALADIN",
 					["last_event"] = 0,
 					["aID"] = "4465-02EA1CC7",
 					["buff_uptime_spells"] = {
@@ -35144,18 +24162,18 @@ _detalhes_database = {
 				}, -- [27]
 				{
 					["flag_original"] = 1047,
+					["buff_uptime"] = 206,
+					["nome"] = "Kamides",
+					["grupo"] = true,
+					["buff_uptime_targets"] = {
+					},
 					["spell_cast"] = {
 						[20290] = 0,
 						[20271] = 0,
 					},
-					["nome"] = "Kamides",
-					["buff_uptime_targets"] = {
-					},
-					["grupo"] = true,
+					["classe"] = "PALADIN",
 					["pets"] = {
 					},
-					["buff_uptime"] = 206,
-					["classe"] = "PALADIN",
 					["last_event"] = 0,
 					["aID"] = "4465-02E963B0",
 					["buff_uptime_spells"] = {
@@ -35190,20 +24208,20 @@ _detalhes_database = {
 				}, -- [28]
 				{
 					["flag_original"] = 1047,
-					["spell_cast"] = {
-						[75] = 3,
-						[1510] = 0,
-						[13159] = 0,
-						[14284] = 2,
-					},
+					["buff_uptime"] = 189,
 					["nome"] = "Glurvas",
+					["grupo"] = true,
 					["buff_uptime_targets"] = {
 					},
-					["grupo"] = true,
+					["spell_cast"] = {
+						[13159] = 0,
+						[1510] = 0,
+						[14284] = 2,
+						[75] = 3,
+					},
+					["classe"] = "HUNTER",
 					["pets"] = {
 					},
-					["buff_uptime"] = 189,
-					["classe"] = "HUNTER",
 					["last_event"] = 0,
 					["aID"] = "4465-02E90A98",
 					["buff_uptime_spells"] = {
@@ -35238,72 +24256,224 @@ _detalhes_database = {
 				}, -- [29]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["last_event"] = 0,
 					["nome"] = "Scarlet Scout",
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[6979] = 0,
 						[6660] = 0,
 					},
-					["pets"] = {
-					},
 					["fight_component"] = true,
-					["flag_original"] = 2632,
 					["aID"] = "4281",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4447-0-59-4281-000014CABB",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4447-0-59-4281-000014CABB",
+					["flag_original"] = 2632,
 				}, -- [30]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[8260] = 1,
-						[15578] = 10,
-						[8269] = 1,
-						[8989] = 2,
-					},
+					["last_event"] = 0,
 					["nome"] = "Herod",
 					["pets"] = {
 					},
+					["spell_cast"] = {
+						[8269] = 1,
+						[15578] = 10,
+						[8989] = 2,
+						[8260] = 1,
+					},
 					["fight_component"] = true,
-					["flag_original"] = 2632,
 					["aID"] = "3975",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4446-189-24623-3975-000014D0E4",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4446-189-24623-3975-000014D0E4",
+					["flag_original"] = 2632,
 				}, -- [31]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[2767] = 3,
-					},
+					["last_event"] = 0,
 					["nome"] = "Interrogator Vishas",
 					["pets"] = {
 					},
+					["spell_cast"] = {
+						[2767] = 3,
+					},
 					["fight_component"] = true,
-					["flag_original"] = 2632,
 					["aID"] = "3983",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4446-189-24623-3983-000014D0E4",
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4446-189-24623-3983-000014D0E4",
+					["flag_original"] = 2632,
 				}, -- [32]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["nome"] = "Scarlet Scryer",
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						[9613] = 5,
 					},
-					["nome"] = "Scarlet Scryer",
+					["fight_component"] = true,
+					["aID"] = "4293",
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4446-189-24623-4293-000094D0E4",
+					["flag_original"] = 2632,
+				}, -- [33]
+				{
+					["monster"] = true,
+					["flag_original"] = 2632,
+					["nome"] = "Scarlet Adept",
+					["tipo"] = 4,
+					["spell_cast"] = {
+						[9734] = 0,
+						[6063] = 0,
+					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "4296",
+					["serial"] = "Creature-0-4446-189-24623-4296-000114D0E4",
+					["pets"] = {
+					},
+				}, -- [34]
+				{
+					["monster"] = true,
+					["flag_original"] = 2632,
+					["nome"] = "Scarlet Gallant",
+					["tipo"] = 4,
+					["spell_cast"] = {
+						[5589] = 0,
+						[14517] = 0,
+					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "4287",
+					["serial"] = "Creature-0-4446-189-24623-4287-000394D0E4",
+					["pets"] = {
+					},
+				}, -- [35]
+				{
+					["monster"] = true,
+					["flag_original"] = 2632,
+					["nome"] = "Scarlet Beastmaster",
+					["tipo"] = 4,
+					["spell_cast"] = {
+						[7896] = 0,
+						[6660] = 0,
+					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "4288",
+					["serial"] = "Creature-0-4446-189-24623-4288-000114D0E4",
+					["pets"] = {
+					},
+				}, -- [36]
+				{
+					["monster"] = true,
+					["flag_original"] = 2632,
+					["nome"] = "Houndmaster Loksey",
+					["tipo"] = 4,
+					["spell_cast"] = {
+						[6192] = 0,
+						[6742] = 0,
+					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "3974",
+					["serial"] = "Creature-0-4446-189-24623-3974-000014D0E4",
+					["pets"] = {
+					},
+				}, -- [37]
+				{
+					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["nome"] = "Arikara",
+					["spell_cast"] = {
+						[8599] = 0,
+						[17213] = 0,
+					},
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["flag_original"] = 68168,
+					["aID"] = "10882",
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4447-1-51-10882-0000150542",
+					["tipo"] = 4,
+				}, -- [38]
+				{
+					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["nome"] = "Grimtotem Geomancer",
+					["spell_cast"] = {
+						[20811] = 0,
+					},
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["flag_original"] = 68168,
+					["aID"] = "10760",
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4447-1-51-10760-000014F9D6",
+					["tipo"] = 4,
+				}, -- [39]
+				{
+					["fight_component"] = true,
+					["nome"] = "Folding",
+					["last_event"] = 0,
+					["pets"] = {
+					},
+					["spell_cast"] = {
+						[26573] = 0,
+						[20271] = 0,
+						[20424] = 0,
+						[1026] = 0,
+						[20375] = 0,
+					},
+					["flag_original"] = 1304,
+					["aID"] = "4465-02E76B92",
+					["classe"] = "UNGROUPPLAYER",
+					["serial"] = "Player-4465-02E76B92",
+					["tipo"] = 4,
+				}, -- [40]
+				{
+					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["nome"] = "Grimtotem Bandit",
+					["spell_cast"] = {
+						[6713] = 0,
+					},
 					["pets"] = {
 					},
 					["fight_component"] = true,
 					["flag_original"] = 2632,
-					["aID"] = "4293",
+					["aID"] = "10758",
 					["last_event"] = 0,
-					["serial"] = "Creature-0-4446-189-24623-4293-000094D0E4",
+					["serial"] = "Creature-0-4447-1-51-10758-000014FD48",
 					["tipo"] = 4,
-				}, -- [33]
+				}, -- [41]
+				{
+					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["nome"] = "Drywallow Snapper",
+					["spell_cast"] = {
+						[19319] = 0,
+					},
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["flag_original"] = 68168,
+					["aID"] = "4343",
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4447-1-49-4343-000014FA15",
+					["tipo"] = 4,
+				}, -- [42]
 			},
 		}, -- [4]
 		{
@@ -35324,7 +24494,7 @@ _detalhes_database = {
 		},
 		["combat_counter"] = 9124,
 		["totals"] = {
-			625291.6603960003, -- [1]
+			625291.6555050003, -- [1]
 			68114.03202500001, -- [2]
 			{
 				0, -- [1]
@@ -35555,7 +24725,7 @@ _detalhes_database = {
 	},
 	["force_font_outline"] = "",
 	["character_data"] = {
-		["logons"] = 1915,
+		["logons"] = 1917,
 	},
 	["last_realversion"] = 146,
 	["announce_cooldowns"] = {
@@ -35595,13 +24765,13 @@ _detalhes_database = {
 		["Player-4465-00DFD773"] = "DAMAGER",
 		["Player-4465-02C5D029"] = "DAMAGER",
 		["Player-4465-02BC5265"] = "TANK",
-		["Player-4465-02E58934"] = "TANK",
+		["Player-4465-02E7CDCC"] = "DAMAGER",
 		["Player-4465-02E67BDA"] = "DAMAGER",
 		["Player-4465-02E3B4C2"] = "DAMAGER",
 		["Player-4465-02E98A53"] = "TANK",
 		["Player-4465-02E88CAB"] = "DAMAGER",
 		["Player-4465-02E9A18A"] = "DAMAGER",
-		["Player-4465-02E4A3DF"] = "DAMAGER",
+		["Player-4465-02E58934"] = "TANK",
 		["Player-4465-02E72E83"] = "DAMAGER",
 		["Player-4465-02E59964"] = "DAMAGER",
 		["Player-4465-02BCE74D"] = "DAMAGER",
@@ -35610,22 +24780,19 @@ _detalhes_database = {
 		["Player-4465-02E8854A"] = "DAMAGER",
 		["Player-4465-02E807F0"] = "DAMAGER",
 		["Player-4465-02E381E0"] = "DAMAGER",
-		["Player-4465-02E04F27"] = "HEALER",
+		["Player-4465-02E87F18"] = "DAMAGER",
 		["Player-4465-02E59B91"] = "DAMAGER",
 		["Player-4465-02E8CB25"] = "DAMAGER",
-		["Player-4465-02E87F18"] = "DAMAGER",
-		["Player-4465-02E8515A"] = "DAMAGER",
 		["Player-4465-02DF9BD4"] = "DAMAGER",
+		["Player-4465-02E8515A"] = "DAMAGER",
+		["Player-4465-02E04F27"] = "HEALER",
 		["Player-4465-02E47675"] = "DAMAGER",
-		["Player-4465-02E7CDCC"] = "DAMAGER",
+		["Player-4465-02E4A3DF"] = "DAMAGER",
 		["Player-4465-02E48B0A"] = "DAMAGER",
 		["Player-4465-02E896F9"] = "DAMAGER",
 		["Player-4465-02E65254"] = "DAMAGER",
 		["Player-4465-02E3211D"] = "DAMAGER",
 	},
 	["cached_specs"] = {
-		["Player-4465-02EA1CC7"] = 70,
-		["Player-4465-02E98A53"] = 66,
-		["Player-4465-02B843FA"] = 103,
 	},
 }

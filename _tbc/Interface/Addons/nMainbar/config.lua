@@ -6,13 +6,13 @@ nMainbar.Config = {
 		showVehicleKeybinds = true,
 		showKeybinds = true,
 		showMacronames = true,
-		outOfRangeType = "icon", -- Changes how out of range coloring is displayed. Options: icon, hotkey.
+		outOfRangeType = 'icon', -- Changes how out of range coloring is displayed. Options: icon, hotkey.
 		countFontsize = 19,
-		countFont = "Interface\\AddOns\\nMainbar\\media\\font.ttf",
+		countFont = 'Interface\\AddOns\\nMainbar\\media\\font.ttf',
 		macronameFontsize = 17,
-		macronameFont = "Interface\\AddOns\\nMainbar\\media\\font.ttf",
+		macronameFont = 'Interface\\AddOns\\nMainbar\\media\\font.ttf',
 		hotkeyFontsize = 18,
-		hotkeyFont = "Interface\\AddOns\\nMainbar\\media\\font.ttf",
+		hotkeyFont = 'Interface\\AddOns\\nMainbar\\media\\font.ttf',
 		petHotKeyFontsize = 15
 	},
 	color = {
@@ -30,25 +30,25 @@ nMainbar.Config = {
 		mouseover = true,
 		fontsize = 12,
 		-- font = 'Fonts\\ARIALN.ttf',
-		font = "Interface\\AddOns\\nMainbar\\media\\font.ttf"
+		font = 'Interface\\AddOns\\nMainbar\\media\\font.ttf'
 	},
 	repBar = {
 		mouseover = true,
 		fontsize = 12,
 		-- font = 'Fonts\\ARIALN.ttf',
-		font = "Interface\\AddOns\\nMainbar\\media\\font.ttf"
+		font = 'Interface\\AddOns\\nMainbar\\media\\font.ttf'
 	},
 	artifactBar = {
 		mouseover = true,
 		fontsize = 14,
 		-- font = 'Fonts\\ARIALN.ttf',
-		font = "Interface\\AddOns\\nMainbar\\media\\font.ttf"
+		font = 'Interface\\AddOns\\nMainbar\\media\\font.ttf'
 	},
 	honorBar = {
 		mouseover = true,
 		fontsize = 14,
 		-- font = 'Fonts\\ARIALN.ttf',
-		font = "Interface\\AddOns\\nMainbar\\media\\font.ttf"
+		font = 'Interface\\AddOns\\nMainbar\\media\\font.ttf'
 	},
 	MainMenuBar = {
 		scale = 1,
@@ -75,7 +75,7 @@ nMainbar.Config = {
 		mouseover = false,
 		hide = true,
 		scale = 1,
-		alpha = 1,
+		alpha = 0,
 		hiddenAlpha = 0
 	},
 	multiBarLeft = {
@@ -100,7 +100,7 @@ nMainbar.Config = {
 		hiddenAlpha = 0,
 		alpha = 1,
 		orderVertical = false,
-		verticalPosition = "LEFT" -- 'LEFT' or 'RIGHT'
+		verticalPosition = 'LEFT' -- 'LEFT' or 'RIGHT'
 	},
 	extraBar = {
 		enabled = false,

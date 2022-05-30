@@ -4,6 +4,9 @@ WeakAurasOptionsSaved = {
 	["needsRebuild"] = false,
 	["version"] = "3.7.6",
 	["locale"] = "enUS",
+	["savedSnippets"] = {
+	},
+	["spellCacheAchivements"] = true,
 	["spellCache"] = {
 		["Enchant Cloak - Greater Defense"] = {
 			["spells"] = {
@@ -94,9 +97,9 @@ WeakAurasOptionsSaved = {
 				[3339] = 136133,
 			},
 		},
-		["Chestnut Mare"] = {
+		["Hillman's Leather Gloves"] = {
 			["spells"] = {
-				[6648] = 132261,
+				[3764] = 136247,
 			},
 		},
 		["Jade Serpentblade"] = {
@@ -219,9 +222,9 @@ WeakAurasOptionsSaved = {
 				[24] = 136235,
 			},
 		},
-		["Increase Holy Dam 33"] = {
+		["Increased Shadow Resist 17"] = {
 			["spells"] = {
-				[21521] = 136235,
+				[14680] = 136235,
 			},
 		},
 		["Summon Cannon Master Willey"] = {
@@ -430,9 +433,9 @@ WeakAurasOptionsSaved = {
 				[18404] = 132149,
 			},
 		},
-		["Lobster Stew"] = {
+		["Healing Wave of Antu'sul"] = {
 			["spells"] = {
-				[18245] = 136192,
+				[11895] = 135916,
 			},
 		},
 		["Imperial Plate Helm"] = {
@@ -611,14 +614,9 @@ WeakAurasOptionsSaved = {
 				[39070] = 136012,
 			},
 		},
-		["Meteor"] = {
+		["Rich Purple Silk Shirt"] = {
 			["spells"] = {
-				[26558] = 135808,
-				[24340] = 135808,
-				[36837] = 135808,
-				[41276] = 135808,
-				[38903] = 135808,
-				[28884] = 135808,
+				[3872] = 132149,
 			},
 		},
 		["Shield Bash - Silenced"] = {
@@ -644,11 +642,9 @@ WeakAurasOptionsSaved = {
 				[46359] = 136235,
 			},
 		},
-		["Field Repair Bot 74A"] = {
+		["Block Value"] = {
 			["spells"] = {
-				[22700] = 136172,
-				[22704] = 136235,
-				[22864] = 136235,
+				[27941] = 136235,
 			},
 		},
 		["Attack Power - Feral (+1197)"] = {
@@ -680,11 +676,9 @@ WeakAurasOptionsSaved = {
 				[27063] = 132189,
 			},
 		},
-		["Amplify Damage"] = {
+		["Fetch!"] = {
 			["spells"] = {
-				[12738] = 136006,
-				[12248] = 136006,
-				[39095] = 136201,
+				[20541] = 132165,
 			},
 		},
 		["Attack Power 32"] = {
@@ -1030,9 +1024,9 @@ WeakAurasOptionsSaved = {
 				[40204] = 136235,
 			},
 		},
-		["Improved Volley and Multishot"] = {
+		["Reload Explode"] = {
 			["spells"] = {
-				[23566] = 136235,
+				[13239] = 135805,
 			},
 		},
 		["Molten Blast"] = {
@@ -1084,9 +1078,10 @@ WeakAurasOptionsSaved = {
 				[41588] = 136037,
 			},
 		},
-		["Craftsman's Monocle"] = {
+		["The Green Tower"] = {
 			["spells"] = {
-				[3966] = 136235,
+				[17154] = 136104,
+				[18097] = 136235,
 			},
 		},
 		["Battlemaster"] = {
@@ -1094,9 +1089,9 @@ WeakAurasOptionsSaved = {
 				[28005] = 135907,
 			},
 		},
-		["Far Sight"] = {
+		["Braided Copper Ring"] = {
 			["spells"] = {
-				[6196] = 136034,
+				[25493] = 136235,
 			},
 		},
 		["Attack Power Ranged 53"] = {
@@ -1312,9 +1307,9 @@ WeakAurasOptionsSaved = {
 				[39411] = 135913,
 			},
 		},
-		["Increase Arcane Dam 33"] = {
+		["Attack Power Ranged 2"] = {
 			["spells"] = {
-				[17828] = 136235,
+				[21426] = 136235,
 			},
 		},
 		["Curse of the Shattered Hand"] = {
@@ -1327,9 +1322,9 @@ WeakAurasOptionsSaved = {
 				[6245] = 136168,
 			},
 		},
-		["Spell Penetration 150 Frost Resist"] = {
+		["Increase Holy Dam 44"] = {
 			["spells"] = {
-				[26204] = 136235,
+				[21529] = 136235,
 			},
 		},
 		["Spirit Particles (red, big)"] = {
@@ -1353,9 +1348,9 @@ WeakAurasOptionsSaved = {
 				[37378] = 136196,
 			},
 		},
-		["Dreamless Sleep Potion"] = {
+		["Capture Hippogryph"] = {
 			["spells"] = {
-				[15833] = 136235,
+				[11887] = 136235,
 			},
 		},
 		["Language Thalassian"] = {
@@ -1555,19 +1550,22 @@ WeakAurasOptionsSaved = {
 				[3100] = 136241,
 			},
 		},
-		["Stormpike Reputation +2"] = {
+		["Increase Healing 55"] = {
 			["spells"] = {
-				[21829] = 136235,
+				[22748] = 136235,
+				[18036] = 136235,
+				[41783] = 136235,
 			},
 		},
-		["Large Blue Firework Cluster"] = {
+		["Furious Anger"] = {
 			["spells"] = {
-				[26488] = 136235,
+				[16791] = 136224,
+				[16792] = 136224,
 			},
 		},
-		["Runed Truesilver Rod"] = {
+		["Green Dragon Transform DND"] = {
 			["spells"] = {
-				[13702] = 135148,
+				[25105] = 136235,
 			},
 		},
 		["Threatening Growl"] = {
@@ -1581,14 +1579,15 @@ WeakAurasOptionsSaved = {
 				[15437] = 136235,
 			},
 		},
-		["Robes of Arcana"] = {
+		["Attunement to the Core"] = {
 			["spells"] = {
-				[6692] = 132149,
+				[22877] = 136235,
 			},
 		},
-		["Grom's Tauren Tribute"] = {
+		["Spirit of Boar"] = {
 			["spells"] = {
-				[24102] = 136235,
+				[10668] = 136075,
+				[10671] = 136075,
 			},
 		},
 		["Gem Explosion"] = {
@@ -1816,21 +1815,9 @@ WeakAurasOptionsSaved = {
 				[44263] = 136235,
 			},
 		},
-		["Intercept"] = {
+		["Summon Duke Earth, Trigger"] = {
 			["spells"] = {
-				[25275] = 132307,
-				[30154] = 132307,
-				[25272] = 132307,
-				[27826] = 132307,
-				[30200] = 132307,
-				[30199] = 132307,
-				[20252] = 132307,
-				[20616] = 132307,
-				[30151] = 132307,
-				[30194] = 132307,
-				[30198] = 132307,
-				[20617] = 132307,
-				[27577] = 132307,
+				[24771] = 136235,
 			},
 		},
 		["Storm Gauntlets"] = {
@@ -1893,11 +1880,9 @@ WeakAurasOptionsSaved = {
 				[26777] = 132149,
 			},
 		},
-		["Hibernate"] = {
+		["Light Leather Bracers"] = {
 			["spells"] = {
-				[18657] = 136090,
-				[18658] = 136090,
-				[2637] = 136090,
+				[9065] = 136247,
 			},
 		},
 		["Kael Gaining Power"] = {
@@ -2073,11 +2058,9 @@ WeakAurasOptionsSaved = {
 				[33119] = 136235,
 			},
 		},
-		["Humanoid Slaying"] = {
+		["Increased Block 8"] = {
 			["spells"] = {
-				[19151] = 135942,
-				[19152] = 135942,
-				[19153] = 135942,
+				[21472] = 136235,
 			},
 		},
 		["Nagmara's Love Potion"] = {
@@ -2112,9 +2095,9 @@ WeakAurasOptionsSaved = {
 				[35832] = 136235,
 			},
 		},
-		["Smoking Heart of the Mountain"] = {
+		["Tag: Clear"] = {
 			["spells"] = {
-				[15596] = 134084,
+				[20410] = 132156,
 			},
 		},
 		["Robotron Console Key"] = {
@@ -2164,9 +2147,10 @@ WeakAurasOptionsSaved = {
 				[26081] = 132337,
 			},
 		},
-		["Create House (TEST)"] = {
+		["Freezing Claw"] = {
 			["spells"] = {
-				[6757] = 132281,
+				[17010] = 135836,
+				[17011] = 135853,
 			},
 		},
 		["Increased Strength 21"] = {
@@ -2258,14 +2242,14 @@ WeakAurasOptionsSaved = {
 				[26211] = 132316,
 			},
 		},
-		["Pillow Fight"] = {
+		["Expert Cook"] = {
 			["spells"] = {
-				[23416] = 132337,
+				[19886] = 133971,
 			},
 		},
-		["Echoes of Lordaeron UNUSED"] = {
+		["Shade Form Visual"] = {
 			["spells"] = {
-				[8878] = 132486,
+				[17673] = 136121,
 			},
 		},
 		["Use Key"] = {
@@ -2344,9 +2328,9 @@ WeakAurasOptionsSaved = {
 				[25339] = 136235,
 			},
 		},
-		["Quickdraw Quiver"] = {
+		["Mana Rejuvenation"] = {
 			["spells"] = {
-				[14930] = 136247,
+				[19634] = 136077,
 			},
 		},
 		["Teleport to Molten Core DND"] = {
@@ -2365,9 +2349,11 @@ WeakAurasOptionsSaved = {
 				[14561] = 136235,
 			},
 		},
-		["Savior's Sacrifice"] = {
+		["Healthstone"] = {
 			["spells"] = {
-				[18826] = 135893,
+				[23472] = 135230,
+				[23473] = 135230,
+				[5720] = 135230,
 			},
 		},
 		["Nimble Reflexes III"] = {
@@ -2409,9 +2395,9 @@ WeakAurasOptionsSaved = {
 				[6617] = 136235,
 			},
 		},
-		["Summon Duke Water, Trigger"] = {
+		["Increased Hit Rating 40"] = {
 			["spells"] = {
-				[24773] = 136235,
+				[15467] = 136235,
 			},
 		},
 		["Turtle's Shell"] = {
@@ -2479,9 +2465,10 @@ WeakAurasOptionsSaved = {
 				[17458] = 132247,
 			},
 		},
-		["Silithid Swarm Passive"] = {
+		["Engulfing Shadows"] = {
 			["spells"] = {
-				[6590] = 132111,
+				[21978] = 136169,
+				[27860] = 136169,
 			},
 		},
 		["Runed Blood Garnet"] = {
@@ -2551,9 +2538,13 @@ WeakAurasOptionsSaved = {
 				[41718] = 136235,
 			},
 		},
-		["Large Timber Wolf"] = {
+		["Improved Flamestrike"] = {
 			["spells"] = {
-				[580] = 132224,
+				[12350] = 135826,
+				[11108] = 135826,
+				[12349] = 135826,
+				[37423] = 136235,
+				[24491] = 136235,
 			},
 		},
 		["Minor Wizard Oil"] = {
@@ -2577,9 +2568,11 @@ WeakAurasOptionsSaved = {
 				[550] = 136067,
 			},
 		},
-		["Increased Strength 14"] = {
+		["Frost Shot"] = {
 			["spells"] = {
-				[9267] = 136235,
+				[12551] = 135989,
+				[6984] = 135989,
+				[18802] = 135989,
 			},
 		},
 		["Low Swipe"] = {
@@ -2779,14 +2772,9 @@ WeakAurasOptionsSaved = {
 				[8732] = 132326,
 			},
 		},
-		["Curse of Recklessness"] = {
+		["Flee"] = {
 			["spells"] = {
-				[11717] = 136225,
-				[7659] = 136225,
-				[27226] = 136225,
-				[16231] = 136225,
-				[7658] = 136225,
-				[704] = 136225,
+				[5024] = 135996,
 			},
 		},
 		["Healing of the Ages"] = {
@@ -3153,10 +3141,9 @@ WeakAurasOptionsSaved = {
 				[7754] = 136192,
 			},
 		},
-		["Wrath of Air Totem"] = {
+		["Summon Burning Felguard"] = {
 			["spells"] = {
-				[2895] = 136092,
-				[3738] = 136092,
+				[16004] = 135805,
 			},
 		},
 		["Brood Power: Green"] = {
@@ -3272,9 +3259,9 @@ WeakAurasOptionsSaved = {
 				[23158] = 135860,
 			},
 		},
-		["Mor'rogal Enchant"] = {
+		["Attack Power Ranged 43"] = {
 			["spells"] = {
-				[20528] = 136235,
+				[21443] = 136235,
 			},
 		},
 		["Knockout"] = {
@@ -3305,13 +3292,9 @@ WeakAurasOptionsSaved = {
 				[26608] = 136235,
 			},
 		},
-		["Lethal Shots"] = {
+		["Elemental Mastery"] = {
 			["spells"] = {
-				[19426] = 132312,
-				[19427] = 132312,
-				[19429] = 132312,
-				[19430] = 132312,
-				[19431] = 132312,
+				[16166] = 136115,
 			},
 		},
 		["Summon Prairie Chicken"] = {
@@ -3347,9 +3330,9 @@ WeakAurasOptionsSaved = {
 				[3292] = 136192,
 			},
 		},
-		["Gizlock's Dummy Charm Effect"] = {
+		["TESTT"] = {
 			["spells"] = {
-				[21835] = 136235,
+				[18801] = 136235,
 			},
 		},
 		["Protection Aura"] = {
@@ -3422,9 +3405,9 @@ WeakAurasOptionsSaved = {
 				[8778] = 132149,
 			},
 		},
-		["Spirit of Kirith"] = {
+		["Create Signet of Beckoning: Air"] = {
 			["spells"] = {
-				[10853] = 135864,
+				[24890] = 136235,
 			},
 		},
 		["Brilliant Smallfish"] = {
@@ -3487,9 +3470,13 @@ WeakAurasOptionsSaved = {
 				[30286] = 136235,
 			},
 		},
-		["Summon Aku'mai"] = {
+		["Trueshot Aura"] = {
 			["spells"] = {
-				[24625] = 136121,
+				[20905] = 132329,
+				[27066] = 132329,
+				[31519] = 132329,
+				[20906] = 132329,
+				[19506] = 132329,
 			},
 		},
 		["Apexis Emanations"] = {
@@ -3547,15 +3534,9 @@ WeakAurasOptionsSaved = {
 				[20217] = 135995,
 			},
 		},
-		["Invisibility"] = {
+		["Aura Leech (PT)"] = {
 			["spells"] = {
-				[66] = 132220,
-				[11392] = 134798,
-				[886] = 136235,
-				[32754] = 135994,
-				[28500] = 135724,
-				[32612] = 132220,
-				[23452] = 132866,
+				[2969] = 136235,
 			},
 		},
 		["Forsaken Skill: Holy"] = {
@@ -3742,18 +3723,9 @@ WeakAurasOptionsSaved = {
 				[367062] = 135432,
 			},
 		},
-		["Fixate"] = {
+		["Enhance Blunt Weapon IV"] = {
 			["spells"] = {
-				[41294] = 136215,
-				[41295] = 136235,
-				[12021] = 136129,
-				[34719] = 136129,
-				[40607] = 136129,
-				[42123] = 136235,
-				[41614] = 136129,
-				[40414] = 136129,
-				[41976] = 136129,
-				[40892] = 136129,
+				[9903] = 135258,
 			},
 		},
 		["Ram - Knockup Trap"] = {
@@ -4203,10 +4175,9 @@ WeakAurasOptionsSaved = {
 				[20364] = 136235,
 			},
 		},
-		["Increase Spell Dam 5"] = {
+		["Block"] = {
 			["spells"] = {
-				[9395] = 136235,
-				[40689] = 136235,
+				[107] = 132110,
 			},
 		},
 		["Heavy Mithril Helm"] = {
@@ -4297,15 +4268,9 @@ WeakAurasOptionsSaved = {
 				[38695] = 136235,
 			},
 		},
-		["Healing Focus"] = {
+		["Increase Shadow Dam 33"] = {
 			["spells"] = {
-				[16232] = 136043,
-				[14913] = 135918,
-				[16233] = 136043,
-				[16230] = 136043,
-				[16234] = 136043,
-				[15012] = 135918,
-				[16181] = 136043,
+				[18013] = 136235,
 			},
 		},
 		["Solid Weightstone"] = {
@@ -4318,9 +4283,9 @@ WeakAurasOptionsSaved = {
 				[29251] = 136235,
 			},
 		},
-		["Core Marksman Rifle"] = {
+		["Increased Arcane Resist 36"] = {
 			["spells"] = {
-				[22795] = 136235,
+				[14738] = 136235,
 			},
 		},
 		["Gossip NPC Appearance - Troll Female"] = {
@@ -4381,9 +4346,9 @@ WeakAurasOptionsSaved = {
 				[597] = 133951,
 			},
 		},
-		["Tailoring Pattern - Mooncloth Boots"] = {
+		["Gloves of Spell Mastery"] = {
 			["spells"] = {
-				[21207] = 132539,
+				[18454] = 132149,
 			},
 		},
 		["Dragonmaw Knockdown: The Aggro Check Aura"] = {
@@ -4522,9 +4487,10 @@ WeakAurasOptionsSaved = {
 				[6818] = 135914,
 			},
 		},
-		["Increase Fire Dam 69"] = {
+		["Split"] = {
 			["spells"] = {
-				[26701] = 136235,
+				[19569] = 136192,
+				[19570] = 136192,
 			},
 		},
 		["Mark of Mograine"] = {
@@ -4970,10 +4936,10 @@ WeakAurasOptionsSaved = {
 				[27503] = 136235,
 			},
 		},
-		["Create Weegli's Barrel"] = {
+		["Shadow Oil"] = {
 			["spells"] = {
-				[10770] = 133748,
-				[10772] = 133748,
+				[3449] = 136235,
+				[3594] = 134828,
 			},
 		},
 		["Chaos Charge"] = {
@@ -5031,9 +4997,9 @@ WeakAurasOptionsSaved = {
 				[13631] = 135913,
 			},
 		},
-		["Holiday - Lunar Teleport: Orgrimmar"] = {
+		["Stratholme Holy Water"] = {
 			["spells"] = {
-				[26453] = 135758,
+				[17291] = 136235,
 			},
 		},
 		["Exalted Shattered Sun Offensive Aura Effect"] = {
@@ -5104,15 +5070,16 @@ WeakAurasOptionsSaved = {
 				[26129] = 136011,
 			},
 		},
-		["Mighty Rage Potion"] = {
+		["Cloak of Fire"] = {
 			["spells"] = {
-				[17527] = 136235,
-				[17552] = 136235,
+				[18374] = 136235,
+				[18364] = 135806,
+				[18422] = 132149,
 			},
 		},
-		["Rabies"] = {
+		["Deepdive Helmet"] = {
 			["spells"] = {
-				[3150] = 135914,
+				[12617] = 136235,
 			},
 		},
 		["Alex's Audacity"] = {
@@ -5135,10 +5102,9 @@ WeakAurasOptionsSaved = {
 				[49963] = 135727,
 			},
 		},
-		["Tame Swoop"] = {
+		["Increase Frost Dam 9"] = {
 			["spells"] = {
-				[19680] = 132164,
-				[19692] = 132164,
+				[7702] = 136235,
 			},
 		},
 		["Summon Gurky"] = {
@@ -5151,9 +5117,10 @@ WeakAurasOptionsSaved = {
 				[38802] = 136235,
 			},
 		},
-		["Harvest Swarm"] = {
+		["Lesser Mana Oil"] = {
 			["spells"] = {
-				[7277] = 135899,
+				[25120] = 134879,
+				[25127] = 134879,
 			},
 		},
 		["Knockdown Proc"] = {
@@ -5200,10 +5167,9 @@ WeakAurasOptionsSaved = {
 				[16555] = 135861,
 			},
 		},
-		["Mana Regeneration"] = {
+		["Call of Vaelastrasz"] = {
 			["spells"] = {
-				[18194] = 136053,
-				[24363] = 134825,
+				[16349] = 136235,
 			},
 		},
 		["Spellbreaker"] = {
@@ -5249,12 +5215,9 @@ WeakAurasOptionsSaved = {
 				[14193] = 136130,
 			},
 		},
-		["Curse of Thorns"] = {
+		["Encaged Emberseer"] = {
 			["spells"] = {
-				[6910] = 136063,
-				[16247] = 136121,
-				[6909] = 136121,
-				[16248] = 136063,
+				[15282] = 136121,
 			},
 		},
 		["Divine Protection"] = {
@@ -5310,9 +5273,18 @@ WeakAurasOptionsSaved = {
 				[28161] = 136235,
 			},
 		},
-		["Restore Energy"] = {
+		["Magma Totem"] = {
 			["spells"] = {
-				[9512] = 136235,
+				[10579] = 135826,
+				[10581] = 135826,
+				[10585] = 135826,
+				[10587] = 135826,
+				[10580] = 135826,
+				[8187] = 135826,
+				[25552] = 135826,
+				[10586] = 135826,
+				[8190] = 135826,
+				[25550] = 135826,
 			},
 		},
 		["Increased Agility 12"] = {
@@ -5375,9 +5347,9 @@ WeakAurasOptionsSaved = {
 				[40981] = 136235,
 			},
 		},
-		["Spawn Bronze Drakonid"] = {
+		["Enchant Chest - Lesser Stats"] = {
 			["spells"] = {
-				[22657] = 134395,
+				[13700] = 135913,
 			},
 		},
 		["Golden Scale Gauntlets"] = {
@@ -5390,9 +5362,9 @@ WeakAurasOptionsSaved = {
 				[5810] = 132154,
 			},
 		},
-		["Increase Spell Dam 60"] = {
+		["Riptide"] = {
 			["spells"] = {
-				[26158] = 136235,
+				[22419] = 132343,
 			},
 		},
 		["Elixir of Major Mageblood"] = {
@@ -5400,9 +5372,10 @@ WeakAurasOptionsSaved = {
 				[28570] = 136235,
 			},
 		},
-		["Uther's Light Effect"] = {
+		["Warchief's Blessing"] = {
 			["spells"] = {
-				[10368] = 135940,
+				[16609] = 135759,
+				[355366] = 135759,
 			},
 		},
 		["Crystallize"] = {
@@ -5518,9 +5491,9 @@ WeakAurasOptionsSaved = {
 				[20474] = 135826,
 			},
 		},
-		["Gathering Speed"] = {
+		["Increased Arcane Resist 03"] = {
 			["spells"] = {
-				[1834] = 132347,
+				[14705] = 136235,
 			},
 		},
 		["Onyxia Scale Breastplate"] = {
@@ -5528,9 +5501,9 @@ WeakAurasOptionsSaved = {
 				[19106] = 136235,
 			},
 		},
-		["Uther's Gnome Tribute"] = {
+		["Increase Shadow Dam 23"] = {
 			["spells"] = {
-				[24106] = 136235,
+				[14793] = 136235,
 			},
 		},
 		["Syndicate Disguise"] = {
@@ -5663,9 +5636,9 @@ WeakAurasOptionsSaved = {
 				[5412] = 136235,
 			},
 		},
-		["Argent Boots"] = {
+		["Cured Rugged Hide"] = {
 			["spells"] = {
-				[23664] = 132149,
+				[19047] = 136235,
 			},
 		},
 		["Flameheart Vest"] = {
@@ -5851,9 +5824,9 @@ WeakAurasOptionsSaved = {
 				[367060] = 136235,
 			},
 		},
-		["Enchant Weapon - Crusader"] = {
+		["Attack Power Ranged 72"] = {
 			["spells"] = {
-				[20034] = 135913,
+				[21454] = 136235,
 			},
 		},
 		["Greater Frost Protection Potion"] = {
@@ -5866,9 +5839,9 @@ WeakAurasOptionsSaved = {
 				[366917] = 135745,
 			},
 		},
-		["Revall"] = {
+		["Summon Green Qiraji Battle Tank"] = {
 			["spells"] = {
-				[26687] = 135955,
+				[26056] = 134397,
 			},
 		},
 		["Stamina"] = {
@@ -6012,11 +5985,10 @@ WeakAurasOptionsSaved = {
 				[355814] = 136190,
 			},
 		},
-		["Improved Sunder Armor"] = {
+		["Feral Swiftness"] = {
 			["spells"] = {
-				[12810] = 132363,
-				[12308] = 132363,
-				[12811] = 132363,
+				[17002] = 136095,
+				[24866] = 136095,
 			},
 		},
 		["Siphon Blessing"] = {
@@ -6044,9 +6016,9 @@ WeakAurasOptionsSaved = {
 				[354645] = 135745,
 			},
 		},
-		["Strength of the Ages"] = {
+		["Summon Eliza's Guard"] = {
 			["spells"] = {
-				[4539] = 136188,
+				[3107] = 136142,
 			},
 		},
 		["Teleport: Champion's Hall"] = {
@@ -6387,9 +6359,9 @@ WeakAurasOptionsSaved = {
 				[30755] = 134056,
 			},
 		},
-		["Transform Visual"] = {
+		["Increase Spell Dam 41"] = {
 			["spells"] = {
-				[24085] = 136235,
+				[18057] = 136235,
 			},
 		},
 		["Frenzy Effect"] = {
@@ -6447,10 +6419,9 @@ WeakAurasOptionsSaved = {
 				[14665] = 136235,
 			},
 		},
-		["Superior Healing Ward"] = {
+		["Evasion TEST"] = {
 			["spells"] = {
-				[15869] = 135928,
-				[32194] = 135928,
+				[21878] = 136205,
 			},
 		},
 		["Golemagg's Trust"] = {
@@ -6524,12 +6495,9 @@ WeakAurasOptionsSaved = {
 				[40172] = 136235,
 			},
 		},
-		["Improved Nature's Grasp"] = {
+		["Cloaking"] = {
 			["spells"] = {
-				[17249] = 136063,
-				[17247] = 136063,
-				[17245] = 136063,
-				[17248] = 136063,
+				[4079] = 136047,
 			},
 		},
 		["Attack Power 14"] = {
@@ -6538,11 +6506,9 @@ WeakAurasOptionsSaved = {
 				[41845] = 136235,
 			},
 		},
-		["Mercurial Shield"] = {
+		["Increase Holy Dam 17"] = {
 			["spells"] = {
-				[26465] = 136162,
-				[26463] = 136235,
-				[26464] = 136162,
+				[21510] = 136235,
 			},
 		},
 		["Increase Frost Dam 51"] = {
@@ -6555,9 +6521,26 @@ WeakAurasOptionsSaved = {
 				[18017] = 136235,
 			},
 		},
-		["Teleport Anvilmar"] = {
+		["Banish"] = {
 			["spells"] = {
-				[1936] = 136235,
+				[37527] = 136135,
+				[710] = 136135,
+				[39674] = 136135,
+				[35182] = 136135,
+				[38376] = 136135,
+				[18647] = 136135,
+				[44765] = 136135,
+				[38009] = 136135,
+				[39622] = 136135,
+				[37546] = 136135,
+				[40370] = 136135,
+				[38791] = 136135,
+				[27565] = 136135,
+				[37833] = 136135,
+				[8994] = 136135,
+				[44836] = 136135,
+				[24466] = 135994,
+				[30231] = 136135,
 			},
 		},
 		["Summon Water Elemental"] = {
@@ -6606,21 +6589,14 @@ WeakAurasOptionsSaved = {
 				[350277] = 135724,
 			},
 		},
-		["Deafening Screech"] = {
+		["Enchant Weapon - Demonslaying"] = {
 			["spells"] = {
-				[3589] = 136122,
+				[13915] = 135913,
 			},
 		},
-		["Birth"] = {
+		["Teleport Altar of the Tides"] = {
 			["spells"] = {
-				[26047] = 136235,
-				[37745] = 136235,
-				[7398] = 136235,
-				[41600] = 136235,
-				[26586] = 136235,
-				[26262] = 136235,
-				[34115] = 136235,
-				[20480] = 136235,
+				[3721] = 136235,
 			},
 		},
 		["Bind Self (TEST)"] = {
@@ -6690,9 +6666,13 @@ WeakAurasOptionsSaved = {
 				[34772] = 136235,
 			},
 		},
-		["Wickerman Guardian Ember"] = {
+		["Flare"] = {
 			["spells"] = {
-				[25007] = 136235,
+				[28822] = 135815,
+				[1543] = 135815,
+				[41095] = 135839,
+				[41094] = 135839,
+				[10113] = 136235,
 			},
 		},
 		["Torch Toss (Shadow)"] = {
@@ -7015,9 +6995,9 @@ WeakAurasOptionsSaved = {
 				[20591] = 132864,
 			},
 		},
-		["Mar'li Transform"] = {
+		["Increase Healing 51"] = {
 			["spells"] = {
-				[24084] = 136172,
+				[18035] = 136235,
 			},
 		},
 		["BVid - Ongoing Healing"] = {
@@ -7087,9 +7067,10 @@ WeakAurasOptionsSaved = {
 				[13695] = 135913,
 			},
 		},
-		["Enchant Shield - Lesser Protection"] = {
+		["Enchant Weapon - Soulfrost"] = {
 			["spells"] = {
-				[13464] = 135913,
+				[27982] = 135913,
+				[46538] = 135913,
 			},
 		},
 		["Sign of Battle"] = {
@@ -7166,12 +7147,13 @@ WeakAurasOptionsSaved = {
 				[53085] = 136235,
 			},
 		},
-		["Dark Pact"] = {
+		["Master Healer"] = {
 			["spells"] = {
-				[18938] = 136141,
-				[27265] = 136141,
-				[18937] = 136141,
-				[18220] = 136141,
+				[15024] = 135917,
+				[15025] = 135917,
+				[15026] = 135917,
+				[14904] = 135917,
+				[15027] = 135917,
 			},
 		},
 		["Embrace of the Twisting Nether"] = {
@@ -7194,9 +7176,9 @@ WeakAurasOptionsSaved = {
 				[52845] = 134188,
 			},
 		},
-		["Increase Shadow Dam 72"] = {
+		["Enchanted Thorium"] = {
 			["spells"] = {
-				[26737] = 136235,
+				[17180] = 133229,
 			},
 		},
 		["Release Fred"] = {
@@ -7306,9 +7288,9 @@ WeakAurasOptionsSaved = {
 				[4520] = 132369,
 			},
 		},
-		["Forcefield Collapse"] = {
+		["Increased Agility 31"] = {
 			["spells"] = {
-				[13235] = 136135,
+				[14395] = 136235,
 			},
 		},
 		["Runic Plate Leggings"] = {
@@ -7316,10 +7298,9 @@ WeakAurasOptionsSaved = {
 				[16732] = 136192,
 			},
 		},
-		["Greater Blessing of Light"] = {
+		["Port to Mazthoril"] = {
 			["spells"] = {
-				[25890] = 135909,
-				[27145] = 135909,
+				[17160] = 136235,
 			},
 		},
 		["Sleight of Hand"] = {
@@ -7392,9 +7373,9 @@ WeakAurasOptionsSaved = {
 				[30249] = 132150,
 			},
 		},
-		["Increase Fire Dam 50"] = {
+		["Pick Lock"] = {
 			["spells"] = {
-				[17884] = 136235,
+				[1804] = 136058,
 			},
 		},
 		["Netherweave Bandage"] = {
@@ -7414,9 +7395,9 @@ WeakAurasOptionsSaved = {
 				[14700] = 136235,
 			},
 		},
-		["Magic Stone Helmet"] = {
+		["Increased Agility 26"] = {
 			["spells"] = {
-				[9084] = 136245,
+				[14390] = 136235,
 			},
 		},
 		["Fel Fire Aura"] = {
@@ -7500,9 +7481,9 @@ WeakAurasOptionsSaved = {
 				[22597] = 136074,
 			},
 		},
-		["Violet Raptor"] = {
+		["Increase Fire Dam 29"] = {
 			["spells"] = {
-				[10799] = 132253,
+				[13830] = 136235,
 			},
 		},
 		["Reputation - Booty Bay +500"] = {
@@ -7520,9 +7501,9 @@ WeakAurasOptionsSaved = {
 				[37976] = 136235,
 			},
 		},
-		["[PH] Teleport to Orgrimmar"] = {
+		["Call Bleak Worg"] = {
 			["spells"] = {
-				[4996] = 136235,
+				[7487] = 136130,
 			},
 		},
 		["Spirit of Runn Tum"] = {
@@ -7581,10 +7562,9 @@ WeakAurasOptionsSaved = {
 				[51510] = 133712,
 			},
 		},
-		["Hunter Armor Energize"] = {
+		["Increase Frost Dam 69"] = {
 			["spells"] = {
-				[27785] = 136235,
-				[27786] = 136039,
+				[26725] = 136235,
 			},
 		},
 		["Create PvP Taunt"] = {
@@ -7645,9 +7625,9 @@ WeakAurasOptionsSaved = {
 				[51412] = 132117,
 			},
 		},
-		["Meeting Stone Summon"] = {
+		["Increased Stamina 25"] = {
 			["spells"] = {
-				[23598] = 136223,
+				[14472] = 136235,
 			},
 		},
 		["Call Friends"] = {
@@ -7665,9 +7645,9 @@ WeakAurasOptionsSaved = {
 				[51342] = 136235,
 			},
 		},
-		["Increased Intellect 42"] = {
+		["Create Warsong Mark of Honor"] = {
 			["spells"] = {
-				[14942] = 136235,
+				[23702] = 136235,
 			},
 		},
 		["Avenging Wrath"] = {
@@ -7810,11 +7790,9 @@ WeakAurasOptionsSaved = {
 				[39939] = 135270,
 			},
 		},
-		["Cleave Armor"] = {
+		["Summon Goblin Bomb"] = {
 			["spells"] = {
-				[5480] = 132109,
-				[5508] = 132109,
-				[15280] = 132355,
+				[13258] = 132281,
 			},
 		},
 		["Blessing of Might"] = {
@@ -7890,10 +7868,9 @@ WeakAurasOptionsSaved = {
 				[50849] = 136235,
 			},
 		},
-		["Icy Scale Breastplate"] = {
+		["Improved Eviscerate and Rupture"] = {
 			["spells"] = {
-				[28222] = 136235,
-				[28257] = 136021,
+				[24471] = 136235,
 			},
 		},
 		["Handful of Copper Bolts"] = {
@@ -7921,9 +7898,9 @@ WeakAurasOptionsSaved = {
 				[36468] = 136168,
 			},
 		},
-		["Noxious Breath"] = {
+		["Increased Block 1"] = {
 			["spells"] = {
-				[24818] = 136169,
+				[21469] = 136235,
 			},
 		},
 		["White Remedy Cape"] = {
@@ -7946,9 +7923,9 @@ WeakAurasOptionsSaved = {
 				[50736] = 133708,
 			},
 		},
-		["QAEnchant Weapon +15 Strength"] = {
+		["Primal Mooncloth"] = {
 			["spells"] = {
-				[27093] = 135913,
+				[26751] = 132149,
 			},
 		},
 		["Charged Arcane Shot"] = {
@@ -8102,9 +8079,9 @@ WeakAurasOptionsSaved = {
 				[50532] = 136235,
 			},
 		},
-		["Increase Ice Dam 20"] = {
+		["Shadowskin Gloves"] = {
 			["spells"] = {
-				[25066] = 136235,
+				[22711] = 136247,
 			},
 		},
 		["Cannibalize"] = {
@@ -8167,9 +8144,9 @@ WeakAurasOptionsSaved = {
 				[16991] = 136192,
 			},
 		},
-		["Obsidian Raptor"] = {
+		["Fiery Chain Girdle"] = {
 			["spells"] = {
-				[10798] = 132253,
+				[20872] = 136192,
 			},
 		},
 		["Listening to Music (Parent)"] = {
@@ -8475,10 +8452,9 @@ WeakAurasOptionsSaved = {
 				[23169] = 134157,
 			},
 		},
-		["Jubling Cooldown"] = {
+		["Increase Nature Dam 29"] = {
 			["spells"] = {
-				[23852] = 136235,
-				[23853] = 136235,
+				[17819] = 136235,
 			},
 		},
 		["Enchanting Cast Visual"] = {
@@ -8520,10 +8496,9 @@ WeakAurasOptionsSaved = {
 				[51640] = 135068,
 			},
 		},
-		["Wolfshead Helm Energy"] = {
+		["Ghostweave Gloves"] = {
 			["spells"] = {
-				[17770] = 135998,
-				[29940] = 135998,
+				[18413] = 132149,
 			},
 		},
 		["Gahz'ranka Slam"] = {
@@ -8674,9 +8649,19 @@ WeakAurasOptionsSaved = {
 				[5909] = 132791,
 			},
 		},
-		["Perm. Illusion Shade"] = {
+		["Filling"] = {
 			["spells"] = {
-				[8357] = 132311,
+				[16073] = 136235,
+				[16077] = 136235,
+				[6803] = 136235,
+				[6609] = 136235,
+				[6610] = 136235,
+				[6611] = 136235,
+				[25855] = 136235,
+				[41920] = 132623,
+				[9582] = 136235,
+				[18397] = 136235,
+				[4976] = 136235,
 			},
 		},
 		["Blessing of the Holy Spring"] = {
@@ -8782,9 +8767,9 @@ WeakAurasOptionsSaved = {
 				[38277] = 136235,
 			},
 		},
-		["Thorium Greatsword"] = {
+		["Bone Shards"] = {
 			["spells"] = {
-				[16960] = 136192,
+				[17014] = 136191,
 			},
 		},
 		["Arcane Dust"] = {
@@ -8847,10 +8832,13 @@ WeakAurasOptionsSaved = {
 				[32656] = 136192,
 			},
 		},
-		["Polar Gloves"] = {
+		["Resistance"] = {
 			["spells"] = {
-				[28220] = 136235,
-				[28255] = 136021,
+				[11363] = 134719,
+				[13796] = 136235,
+				[11364] = 134719,
+				[27963] = 136235,
+				[2380] = 134719,
 			},
 		},
 		["Elixir of Ironskin"] = {
@@ -8905,14 +8893,9 @@ WeakAurasOptionsSaved = {
 				[50051] = 136235,
 			},
 		},
-		["Improved Mind Blast"] = {
+		["Essence of the Red"] = {
 			["spells"] = {
-				[15273] = 136224,
-				[15312] = 136224,
-				[15316] = 136224,
-				[15313] = 136224,
-				[15314] = 136224,
-				[38412] = 136235,
+				[23513] = 135819,
 			},
 		},
 		["Spiteful Fury"] = {
@@ -8983,11 +8966,9 @@ WeakAurasOptionsSaved = {
 				[7266] = 136235,
 			},
 		},
-		["Deadly Poison VI"] = {
+		["Fun Bomb"] = {
 			["spells"] = {
-				[26969] = 132290,
-				[26967] = 132290,
-				[26968] = 132290,
+				[20547] = 132863,
 			},
 		},
 		["Fist Weapon Specialization"] = {
@@ -9116,16 +9097,15 @@ WeakAurasOptionsSaved = {
 				[23188] = 136235,
 			},
 		},
-		["Increased Agility 32"] = {
+		["Fang of the Crystal Spider"] = {
 			["spells"] = {
-				[14396] = 136235,
+				[17331] = 136113,
 			},
 		},
-		["Brood Power: Blue"] = {
+		["Increased Stamina 18"] = {
 			["spells"] = {
-				[22559] = 136010,
-				[22290] = 136010,
-				[39037] = 136010,
+				[14465] = 136235,
+				[41778] = 136235,
 			},
 		},
 		["BOTM - Belch Brew - Belch Visual"] = {
@@ -9133,14 +9113,9 @@ WeakAurasOptionsSaved = {
 				[49860] = 134437,
 			},
 		},
-		["Void Bolt"] = {
+		["Netherweave Boots"] = {
 			["spells"] = {
-				[22709] = 136197,
-				[39252] = 136197,
-				[21066] = 136163,
-				[33047] = 136163,
-				[7588] = 136197,
-				[39329] = 136197,
+				[26772] = 132149,
 			},
 		},
 		["Fly to Death Location"] = {
@@ -9153,9 +9128,9 @@ WeakAurasOptionsSaved = {
 				[49846] = 136235,
 			},
 		},
-		["Drawing Kit"] = {
+		["Happy Pet"] = {
 			["spells"] = {
-				[12304] = 136235,
+				[24716] = 132161,
 			},
 		},
 		["Holiday - Midsummer, Stamp Out Bonfire, Quest Complete"] = {
@@ -9188,14 +9163,14 @@ WeakAurasOptionsSaved = {
 				[11841] = 136051,
 			},
 		},
-		["Unseen"] = {
+		["Increased Strength 01"] = {
 			["spells"] = {
-				[4986] = 136047,
+				[7464] = 136235,
 			},
 		},
-		["Netherweave Bracers"] = {
+		["Rocket, BLUE"] = {
 			["spells"] = {
-				[26764] = 132149,
+				[26344] = 136235,
 			},
 		},
 		["Rocket Boots Xtreme"] = {
@@ -9223,9 +9198,10 @@ WeakAurasOptionsSaved = {
 				[49826] = 136235,
 			},
 		},
-		["Potion of Curing"] = {
+		["Increased Intellect 05"] = {
 			["spells"] = {
-				[3174] = 136240,
+				[7495] = 136235,
+				[41827] = 136235,
 			},
 		},
 		["Increase Healing 486"] = {
@@ -9312,9 +9288,9 @@ WeakAurasOptionsSaved = {
 				[24741] = 136116,
 			},
 		},
-		["Increase Arcane Dam 51"] = {
+		["The Breaking"] = {
 			["spells"] = {
-				[17847] = 136235,
+				[22989] = 136164,
 			},
 		},
 		["Summon Crimson Cannon"] = {
@@ -9332,9 +9308,9 @@ WeakAurasOptionsSaved = {
 				[49750] = 132842,
 			},
 		},
-		["Two-Handed Swords"] = {
+		["Embossed Leather Gloves"] = {
 			["spells"] = {
-				[202] = 132223,
+				[3756] = 136247,
 			},
 		},
 		["BOTM - Fire Brew - Belch Fire Visual"] = {
@@ -9353,14 +9329,9 @@ WeakAurasOptionsSaved = {
 				[11088] = 136157,
 			},
 		},
-		["Improved Seal of Righteousness"] = {
+		["Holy Sunder"] = {
 			["spells"] = {
-				[20224] = 132325,
-				[20330] = 132325,
-				[20331] = 132325,
-				[20332] = 132325,
-				[43743] = 136030,
-				[20225] = 132325,
+				[9176] = 136139,
 			},
 		},
 		["Dress Shoes"] = {
@@ -9383,10 +9354,10 @@ WeakAurasOptionsSaved = {
 				[27569] = 135926,
 			},
 		},
-		["Commanding Shout"] = {
+		["Corrupted Healing Stream Totem"] = {
 			["spells"] = {
-				[469] = 132351,
-				[22440] = 135995,
+				[23422] = 135127,
+				[32135] = 135127,
 			},
 		},
 		["BOTM - Vendor - Transform -  Alliance"] = {
@@ -9597,9 +9568,10 @@ WeakAurasOptionsSaved = {
 				[49446] = 136235,
 			},
 		},
-		["Vekniss Catalyst"] = {
+		["Increase Spell Dam 840"] = {
 			["spells"] = {
-				[26078] = 132104,
+				[24243] = 136235,
+				[35889] = 136235,
 			},
 		},
 		["Racer Slam, death scene: car flip"] = {
@@ -9712,9 +9684,10 @@ WeakAurasOptionsSaved = {
 				[49379] = 132246,
 			},
 		},
-		["Attack Power 16"] = {
+		["Commanding Shout"] = {
 			["spells"] = {
-				[9329] = 136235,
+				[469] = 132351,
+				[22440] = 135995,
 			},
 		},
 		["Summon Bloodpetal Mini Pests"] = {
@@ -9887,9 +9860,9 @@ WeakAurasOptionsSaved = {
 				[49353] = 136235,
 			},
 		},
-		["Biletoad Infection"] = {
+		["Blue Dragonscale Shoulders"] = {
 			["spells"] = {
-				[10251] = 135914,
+				[19089] = 136235,
 			},
 		},
 		["Racer Slam, death scene: car flip fire"] = {
@@ -9932,9 +9905,9 @@ WeakAurasOptionsSaved = {
 				[14402] = 136235,
 			},
 		},
-		["Enchant Bracer - Minor Stamina"] = {
+		["Charge Stave of Equinex"] = {
 			["spells"] = {
-				[7457] = 135913,
+				[11537] = 136235,
 			},
 		},
 		["Racer Slam, death scene: debris"] = {
@@ -9957,9 +9930,9 @@ WeakAurasOptionsSaved = {
 				[49324] = 135039,
 			},
 		},
-		["Bind Draconic For Dummies"] = {
+		["Summon Gunther's Visage"] = {
 			["spells"] = {
-				[25719] = 136235,
+				[7762] = 136235,
 			},
 		},
 		["Increased Strength 36"] = {
@@ -10001,9 +9974,9 @@ WeakAurasOptionsSaved = {
 				[49318] = 136235,
 			},
 		},
-		["Test Black Diamond"] = {
+		["[PH] Summon Minion parent (ghoul/skeleton)"] = {
 			["spells"] = {
-				[27057] = 136192,
+				[28185] = 136235,
 			},
 		},
 		["Throw Torch"] = {
@@ -10061,10 +10034,9 @@ WeakAurasOptionsSaved = {
 				[42552] = 136235,
 			},
 		},
-		["Mechanical Squirrel"] = {
+		["Journeyman Tailor"] = {
 			["spells"] = {
-				[3928] = 136235,
-				[4055] = 136172,
+				[3912] = 136249,
 			},
 		},
 		["Knockdown Fel Cannon: The Aggro Check"] = {
@@ -10103,9 +10075,9 @@ WeakAurasOptionsSaved = {
 				[49007] = 132127,
 			},
 		},
-		["Invocation of the Wickerman"] = {
+		["Egg Explosion"] = {
 			["spells"] = {
-				[24705] = 135462,
+				[19593] = 136144,
 			},
 		},
 		["15% speed bonus"] = {
@@ -10120,9 +10092,12 @@ WeakAurasOptionsSaved = {
 				[39048] = 136183,
 			},
 		},
-		["Heart of the Wild Cat Effect"] = {
+		["Dust Field"] = {
 			["spells"] = {
-				[24900] = 135879,
+				[41981] = 136018,
+				[21909] = 136018,
+				[21868] = 136018,
+				[41982] = 136018,
 			},
 		},
 		["Khorium Boar"] = {
@@ -10229,9 +10204,9 @@ WeakAurasOptionsSaved = {
 				[14523] = 136053,
 			},
 		},
-		["[PH] Teleport to Ratchet"] = {
+		["Improved Judgement of Light"] = {
 			["spells"] = {
-				[4999] = 136235,
+				[23564] = 136235,
 			},
 		},
 		["Obsidian Echo"] = {
@@ -10239,9 +10214,18 @@ WeakAurasOptionsSaved = {
 				[40011] = 136235,
 			},
 		},
-		["Increased Arcane Resist 35"] = {
+		["Rupture"] = {
 			["spells"] = {
-				[14737] = 136235,
+				[8640] = 132302,
+				[14903] = 132302,
+				[11275] = 132302,
+				[8639] = 132302,
+				[26867] = 132302,
+				[15583] = 132302,
+				[11274] = 132302,
+				[14874] = 132302,
+				[1943] = 132302,
+				[11273] = 132302,
 			},
 		},
 		["Delicate Arcanite Converter"] = {
@@ -10300,21 +10284,9 @@ WeakAurasOptionsSaved = {
 				[37965] = 132100,
 			},
 		},
-		["Impale"] = {
+		["Increase Frost Dam 6"] = {
 			["spells"] = {
-				[26025] = 132155,
-				[24049] = 132324,
-				[16493] = 132312,
-				[39061] = 132324,
-				[32716] = 132324,
-				[16494] = 132312,
-				[26548] = 132324,
-				[34451] = 132324,
-				[15860] = 132324,
-				[34580] = 132155,
-				[16001] = 132324,
-				[29583] = 132324,
-				[28783] = 132090,
+				[7700] = 136235,
 			},
 		},
 		["Portal Opening"] = {
@@ -10353,9 +10325,9 @@ WeakAurasOptionsSaved = {
 				[35694] = 135994,
 			},
 		},
-		["Smashing Blow V"] = {
+		["Elixir of Ogre's Strength"] = {
 			["spells"] = {
-				[2446] = 132326,
+				[3188] = 136235,
 			},
 		},
 		["Holiday - Lunar Teleport: Thunderbluff"] = {
@@ -10373,9 +10345,9 @@ WeakAurasOptionsSaved = {
 				[42422] = 132311,
 			},
 		},
-		["Ironforge Gift of Friendship"] = {
+		["Flow of the Northspring"] = {
 			["spells"] = {
-				[27665] = 134140,
+				[11014] = 135953,
 			},
 		},
 		["Damage"] = {
@@ -10390,14 +10362,9 @@ WeakAurasOptionsSaved = {
 				[31663] = 132301,
 			},
 		},
-		["Expose Armor"] = {
+		["Discombobulate"] = {
 			["spells"] = {
-				[8647] = 132354,
-				[26866] = 132354,
-				[11197] = 132354,
-				[11198] = 132354,
-				[8650] = 132354,
-				[8649] = 132354,
+				[4060] = 136203,
 			},
 		},
 		["Emote Point"] = {
@@ -10465,11 +10432,9 @@ WeakAurasOptionsSaved = {
 				[7224] = 136192,
 			},
 		},
-		["Eye Beam"] = {
+		["Rift Spawn Invisibility"] = {
 			["spells"] = {
-				[341722] = 136014,
-				[32950] = 136014,
-				[26134] = 136014,
+				[9093] = 135994,
 			},
 		},
 		["Caledis's Disguise"] = {
@@ -10515,14 +10480,15 @@ WeakAurasOptionsSaved = {
 				[34339] = 135260,
 			},
 		},
-		["Rocket, YELLOW"] = {
+		["Increase Healing 30"] = {
 			["spells"] = {
-				[26349] = 136235,
+				[25067] = 136235,
+				[33027] = 136235,
 			},
 		},
-		["Increase Holy Dam 44"] = {
+		["Spell Penetration 150 Frost Resist"] = {
 			["spells"] = {
-				[21529] = 136235,
+				[26204] = 136235,
 			},
 		},
 		["Players Won - A - Summon Dark Iron Dwarf Plans"] = {
@@ -10616,9 +10582,9 @@ WeakAurasOptionsSaved = {
 				[40387] = 136235,
 			},
 		},
-		["Green Iron Leggings"] = {
+		["Trip"] = {
 			["spells"] = {
-				[3506] = 136192,
+				[101] = 132309,
 			},
 		},
 		["Rental Racing Ram"] = {
@@ -10631,9 +10597,9 @@ WeakAurasOptionsSaved = {
 				[48041] = 136235,
 			},
 		},
-		["Increased Agility 44"] = {
+		["Increase Arcane Dam 19"] = {
 			["spells"] = {
-				[14938] = 136235,
+				[13603] = 136235,
 			},
 		},
 		["Black War Elekk"] = {
@@ -10679,19 +10645,35 @@ WeakAurasOptionsSaved = {
 				[12806] = 136235,
 			},
 		},
-		["Shadow Resistance Aura"] = {
+		["Improved Immolate"] = {
 			["spells"] = {
-				[19895] = 136192,
-				[19896] = 136192,
-				[19876] = 136192,
-				[27151] = 136192,
+				[17815] = 135817,
+				[17833] = 135817,
+				[17834] = 135817,
+				[17835] = 135817,
+				[17836] = 135817,
 			},
 		},
-		["Improved Concentration Aura"] = {
+		["Earth Shock"] = {
 			["spells"] = {
-				[20255] = 135933,
-				[20256] = 135933,
-				[20254] = 135933,
+				[10413] = 136026,
+				[13281] = 136026,
+				[10414] = 136026,
+				[8044] = 136026,
+				[26194] = 136026,
+				[43305] = 136026,
+				[8045] = 136026,
+				[15501] = 136026,
+				[25454] = 136026,
+				[23114] = 136026,
+				[8042] = 136026,
+				[13728] = 136026,
+				[47071] = 136026,
+				[22885] = 136026,
+				[10412] = 136026,
+				[25025] = 136026,
+				[8046] = 136026,
+				[24685] = 136026,
 			},
 		},
 		["Throw Hammer"] = {
@@ -10737,9 +10719,9 @@ WeakAurasOptionsSaved = {
 				[47760] = 136235,
 			},
 		},
-		["Camp Type: Ghost/Skeleton"] = {
+		["Red Linen Shirt"] = {
 			["spells"] = {
-				[28197] = 136235,
+				[2392] = 132149,
 			},
 		},
 		["Stealth 5"] = {
@@ -10804,9 +10786,9 @@ WeakAurasOptionsSaved = {
 				[47718] = 132337,
 			},
 		},
-		["Increased Stamina 25"] = {
+		["Increased Armor 120"] = {
 			["spells"] = {
-				[14472] = 136235,
+				[15508] = 136235,
 			},
 		},
 		["Mole Machine Player Land"] = {
@@ -11168,9 +11150,9 @@ WeakAurasOptionsSaved = {
 				[37213] = 136235,
 			},
 		},
-		["Resistance - Fire"] = {
+		["QAEnchant Gloves +15 Agility"] = {
 			["spells"] = {
-				[13652] = 136235,
+				[27112] = 135913,
 			},
 		},
 		["Mystic Spellthread"] = {
@@ -11233,9 +11215,9 @@ WeakAurasOptionsSaved = {
 				[30670] = 136030,
 			},
 		},
-		["Increase Arcane Dam 47"] = {
+		["Freeze Solid"] = {
 			["spells"] = {
-				[17844] = 136235,
+				[11836] = 135852,
 			},
 		},
 		["Spider Sausage"] = {
@@ -11359,19 +11341,19 @@ WeakAurasOptionsSaved = {
 				[12328] = 132306,
 			},
 		},
-		["Force Target - Kick"] = {
+		["Portal of Madness"] = {
 			["spells"] = {
-				[17744] = 136168,
+				[24621] = 135759,
 			},
 		},
-		["Mithril Coif"] = {
+		["Create Nimboya's Laden Pike"] = {
 			["spells"] = {
-				[9961] = 136192,
+				[18887] = 135128,
 			},
 		},
-		["Adored"] = {
+		["Increase Arcane Dam 33"] = {
 			["spells"] = {
-				[26680] = 135450,
+				[17828] = 136235,
 			},
 		},
 		["Summon Honor Hold Gryphon Brigadier South"] = {
@@ -11399,9 +11381,9 @@ WeakAurasOptionsSaved = {
 				[47345] = 132790,
 			},
 		},
-		["Stasis Effect"] = {
+		["[PH] Teleport to Orgrimmar"] = {
 			["spells"] = {
-				[2140] = 136069,
+				[4996] = 136235,
 			},
 		},
 		["Monstrous Kaliri Aggro Check"] = {
@@ -11827,10 +11809,9 @@ WeakAurasOptionsSaved = {
 				[9935] = 136192,
 			},
 		},
-		["Dense Dynamite"] = {
+		["Increase Nature Dam 4"] = {
 			["spells"] = {
-				[23063] = 135826,
-				[23070] = 136235,
+				[7692] = 136235,
 			},
 		},
 		["Aery Soul Captured"] = {
@@ -11865,9 +11846,13 @@ WeakAurasOptionsSaved = {
 				[2403] = 136235,
 			},
 		},
-		["Distracting Pain"] = {
+		["Shadow Weaving"] = {
 			["spells"] = {
-				[3603] = 132278,
+				[15332] = 136123,
+				[15333] = 136123,
+				[15257] = 136123,
+				[15331] = 136123,
+				[15334] = 136123,
 			},
 		},
 		["Stay Submerged"] = {
@@ -11925,9 +11910,10 @@ WeakAurasOptionsSaved = {
 				[46969] = 136235,
 			},
 		},
-		["Create Scepter of Beckoning: Earth"] = {
+		["Summon Theradrim Shardling"] = {
 			["spells"] = {
-				[24897] = 136235,
+				[21057] = 135849,
+				[21809] = 135849,
 			},
 		},
 		["Wild Draenish Gloves"] = {
@@ -12204,9 +12190,9 @@ WeakAurasOptionsSaved = {
 				[43742] = 135729,
 			},
 		},
-		["Enhance Blunt Weapon IV"] = {
+		["Rough Copper Vest"] = {
 			["spells"] = {
-				[9903] = 135258,
+				[12260] = 136192,
 			},
 		},
 		["Improved Lash of Pain"] = {
@@ -12250,9 +12236,9 @@ WeakAurasOptionsSaved = {
 				[7497] = 136235,
 			},
 		},
-		["Wound Poison V"] = {
+		["QAEnchant Cloak +1% Dodge"] = {
 			["spells"] = {
-				[27283] = 134197,
+				[27122] = 135913,
 			},
 		},
 		["Akama Despawn"] = {
@@ -12322,9 +12308,9 @@ WeakAurasOptionsSaved = {
 				[32161] = 134499,
 			},
 		},
-		["Fill Amethyst Phial"] = {
+		["Summon Rookery Whelp"] = {
 			["spells"] = {
-				[22562] = 136235,
+				[15745] = 136235,
 			},
 		},
 		["Holy Shock Bonus"] = {
@@ -12337,9 +12323,9 @@ WeakAurasOptionsSaved = {
 				[46850] = 133029,
 			},
 		},
-		["Increase Spell Dam 26"] = {
+		["Intellect IX"] = {
 			["spells"] = {
-				[18049] = 136235,
+				[16888] = 134721,
 			},
 		},
 		["Minion Despawner"] = {
@@ -12384,9 +12370,14 @@ WeakAurasOptionsSaved = {
 				[34076] = 136235,
 			},
 		},
-		["Summon Blue Qiraji Battle Tank"] = {
+		["Curse of Recklessness"] = {
 			["spells"] = {
-				[25953] = 134398,
+				[11717] = 136225,
+				[7659] = 136225,
+				[27226] = 136225,
+				[16231] = 136225,
+				[7658] = 136225,
+				[704] = 136225,
 			},
 		},
 		["Summon Royal Earth, Trigger"] = {
@@ -12480,9 +12471,9 @@ WeakAurasOptionsSaved = {
 				[37225] = 136235,
 			},
 		},
-		["Get Gosssip, Test"] = {
+		["Opening Booty Chest"] = {
 			["spells"] = {
-				[26683] = 136235,
+				[5107] = 136235,
 			},
 		},
 		["Summon Enslaved Soul"] = {
@@ -12511,9 +12502,9 @@ WeakAurasOptionsSaved = {
 				[46819] = 136235,
 			},
 		},
-		["Demonic Doom"] = {
+		["Golden Scale Boots"] = {
 			["spells"] = {
-				[23298] = 136221,
+				[3515] = 136192,
 			},
 		},
 		["Frozen Core Gets Hit"] = {
@@ -12531,9 +12522,9 @@ WeakAurasOptionsSaved = {
 				[46607] = 136235,
 			},
 		},
-		["Summon Shadowstrike"] = {
+		["Receive Reward AND Quest Object, Ironforge Guard"] = {
 			["spells"] = {
-				[21181] = 136235,
+				[27244] = 136235,
 			},
 		},
 		["Berserker Stance Passive"] = {
@@ -12625,9 +12616,9 @@ WeakAurasOptionsSaved = {
 				[36676] = 136235,
 			},
 		},
-		["Presence of Death"] = {
+		["Evil Eye"] = {
 			["spells"] = {
-				[3109] = 136195,
+				[3233] = 136129,
 			},
 		},
 		["Teleport to Ground"] = {
@@ -12693,13 +12684,9 @@ WeakAurasOptionsSaved = {
 				[46779] = 134071,
 			},
 		},
-		["Improved Flamestrike"] = {
+		["Increase Healing 29"] = {
 			["spells"] = {
-				[12350] = 135826,
-				[11108] = 135826,
-				[12349] = 135826,
-				[37423] = 136235,
-				[24491] = 136235,
+				[9316] = 136235,
 			},
 		},
 		["Figurine - Crimson Serpent"] = {
@@ -12825,9 +12812,10 @@ WeakAurasOptionsSaved = {
 				[46734] = 136235,
 			},
 		},
-		["Heavy Timbermaw Belt"] = {
+		["Plague Effect"] = {
 			["spells"] = {
-				[23628] = 136192,
+				[19594] = 136140,
+				[26557] = 136140,
 			},
 		},
 		["Increased Crossbow"] = {
@@ -13024,9 +13012,9 @@ WeakAurasOptionsSaved = {
 				[5377] = 136168,
 			},
 		},
-		["Netherweave Robe"] = {
+		["Rocket, WHITE"] = {
 			["spells"] = {
-				[26773] = 132149,
+				[26348] = 136235,
 			},
 		},
 		["Set Flag: all torch returning quests are complete"] = {
@@ -13127,14 +13115,14 @@ WeakAurasOptionsSaved = {
 				[41134] = 136192,
 			},
 		},
-		["Gizlock's Dummy Taunt Effect"] = {
+		["Stonesplinter Trogg Disguise"] = {
 			["spells"] = {
-				[21860] = 132333,
+				[5265] = 132288,
 			},
 		},
-		["Planting Guse's Beacon"] = {
+		["Transmute: Arcanite"] = {
 			["spells"] = {
-				[21355] = 136235,
+				[17187] = 134459,
 			},
 		},
 		["Enchant Chest - Stats"] = {
@@ -13199,9 +13187,9 @@ WeakAurasOptionsSaved = {
 				[40559] = 136247,
 			},
 		},
-		["Extract Essence"] = {
+		["Summon Nether Drake"] = {
 			["spells"] = {
-				[4538] = 135956,
+				[3363] = 132250,
 			},
 		},
 		["Khorium Champion"] = {
@@ -13360,9 +13348,10 @@ WeakAurasOptionsSaved = {
 				[34785] = 135753,
 			},
 		},
-		["Sanctified Orb"] = {
+		["Create Relic Bundle"] = {
 			["spells"] = {
-				[24865] = 134123,
+				[18987] = 136235,
+				[18988] = 136235,
 			},
 		},
 		["Summon Ahune's Loot, Heroic"] = {
@@ -13370,9 +13359,9 @@ WeakAurasOptionsSaved = {
 				[46622] = 136235,
 			},
 		},
-		["Kick Peon Prologue"] = {
+		["Rat Nova"] = {
 			["spells"] = {
-				[17749] = 136235,
+				[10018] = 133946,
 			},
 		},
 		["Keilnei Bow Shot"] = {
@@ -13385,9 +13374,9 @@ WeakAurasOptionsSaved = {
 				[3856] = 132149,
 			},
 		},
-		["Conjure Guse's Beacon DND"] = {
+		["Guardian Effect"] = {
 			["spells"] = {
-				[21356] = 136235,
+				[10342] = 135893,
 			},
 		},
 		["Damage Reduction: Nature"] = {
@@ -13463,9 +13452,10 @@ WeakAurasOptionsSaved = {
 				[46593] = 136235,
 			},
 		},
-		["Create Primal Life"] = {
+		["Zap Crystal Corpse"] = {
 			["spells"] = {
-				[28106] = 136192,
+				[28056] = 136235,
+				[348571] = 136235,
 			},
 		},
 		["Arcanite Rod"] = {
@@ -13701,9 +13691,9 @@ WeakAurasOptionsSaved = {
 				[40865] = 136226,
 			},
 		},
-		["Thorns Dmg +3"] = {
+		["Beast Slaying 21"] = {
 			["spells"] = {
-				[20886] = 136051,
+				[18080] = 136235,
 			},
 		},
 		["Ranshalla Waiting"] = {
@@ -13809,9 +13799,14 @@ WeakAurasOptionsSaved = {
 				[36447] = 136208,
 			},
 		},
-		["Grom's Forsaken Tribute"] = {
+		["Frostbrand Weapon"] = {
 			["spells"] = {
-				[24103] = 136235,
+				[8038] = 135847,
+				[8033] = 135847,
+				[16355] = 135847,
+				[16356] = 135847,
+				[10456] = 135847,
+				[25500] = 135847,
 			},
 		},
 		["Increase Spell Dam 180"] = {
@@ -13872,11 +13867,10 @@ WeakAurasOptionsSaved = {
 				[41730] = 136235,
 			},
 		},
-		["Defibrillated!"] = {
+		["Flip Out"] = {
 			["spells"] = {
-				[23055] = 136075,
-				[8338] = 136075,
-				[34330] = 136075,
+				[8219] = 132288,
+				[8220] = 132288,
 			},
 		},
 		["Lock Down"] = {
@@ -13980,16 +13974,14 @@ WeakAurasOptionsSaved = {
 				[32259] = 136235,
 			},
 		},
-		["Thorium Shield Spike"] = {
+		["Chromatic Protection"] = {
 			["spells"] = {
-				[16623] = 136235,
-				[16624] = 136235,
-				[16651] = 136192,
+				[16372] = 134563,
 			},
 		},
-		["Increased Agility 23"] = {
+		["Attack Order"] = {
 			["spells"] = {
-				[14387] = 136235,
+				[25471] = 132212,
 			},
 		},
 		["Thick Draenic Pants"] = {
@@ -14090,9 +14082,10 @@ WeakAurasOptionsSaved = {
 				[30543] = 136235,
 			},
 		},
-		["Enchant Boots - Greater Stamina"] = {
+		["Iron Grenade"] = {
 			["spells"] = {
-				[20020] = 135913,
+				[3962] = 136235,
+				[4068] = 135826,
 			},
 		},
 		["Might of Frostwolf"] = {
@@ -14105,9 +14098,9 @@ WeakAurasOptionsSaved = {
 				[29116] = 136235,
 			},
 		},
-		["Test Maul"] = {
+		["Black Mageweave Headband"] = {
 			["spells"] = {
-				[24042] = 132136,
+				[12072] = 132149,
 			},
 		},
 		["Luminous Bluetail"] = {
@@ -14236,36 +14229,9 @@ WeakAurasOptionsSaved = {
 				[18677] = 136235,
 			},
 		},
-		["Immolation"] = {
+		["Helcular's Puppets Passive"] = {
 			["spells"] = {
-				[31722] = 136219,
-				[31304] = 136219,
-				[31723] = 136219,
-				[4436] = 135817,
-				[47080] = 135817,
-				[34528] = 135817,
-				[47075] = 135817,
-				[39809] = 135817,
-				[19483] = 136219,
-				[21142] = 135817,
-				[40148] = 135818,
-				[38999] = 135817,
-				[40953] = 135815,
-				[29948] = 135817,
-				[35995] = 135818,
-				[20153] = 136219,
-				[35935] = 135815,
-				[39808] = 135817,
-				[38944] = 135815,
-				[39007] = 136219,
-				[12744] = 135817,
-				[39138] = 135817,
-				[37155] = 135815,
-				[37060] = 136219,
-				[37059] = 135817,
-				[33650] = 136219,
-				[31303] = 136219,
-				[33651] = 136219,
+				[4951] = 136163,
 			},
 		},
 		["Anveena's Prison"] = {
@@ -14353,9 +14319,9 @@ WeakAurasOptionsSaved = {
 				[40608] = 136015,
 			},
 		},
-		["Rocket, RED"] = {
+		["Increased Frost Resist 11"] = {
 			["spells"] = {
-				[26347] = 136235,
+				[14551] = 136235,
 			},
 		},
 		["Increase Spell Dam 132"] = {
@@ -14606,9 +14572,9 @@ WeakAurasOptionsSaved = {
 				[35063] = 136235,
 			},
 		},
-		["Beast Slaying 42"] = {
+		["Ashbringer"] = {
 			["spells"] = {
-				[15688] = 136235,
+				[28282] = 135331,
 			},
 		},
 		["Killer Instinct"] = {
@@ -14655,10 +14621,9 @@ WeakAurasOptionsSaved = {
 				[36961] = 136235,
 			},
 		},
-		["Heal on Kill"] = {
+		["Black Whelp Cloak"] = {
 			["spells"] = {
-				[18983] = 135934,
-				[18984] = 135920,
+				[9070] = 136247,
 			},
 		},
 		["Infernal Defense"] = {
@@ -14714,9 +14679,24 @@ WeakAurasOptionsSaved = {
 				[46267] = 136170,
 			},
 		},
-		["Frailty"] = {
+		["Death Coil"] = {
 			["spells"] = {
-				[12530] = 136119,
+				[35954] = 136145,
+				[17925] = 136145,
+				[41070] = 136145,
+				[46283] = 136145,
+				[39661] = 136145,
+				[17926] = 136145,
+				[30500] = 136145,
+				[32709] = 136145,
+				[6789] = 136145,
+				[28412] = 136145,
+				[30741] = 136145,
+				[34437] = 136145,
+				[44142] = 136145,
+				[38065] = 136145,
+				[33130] = 136145,
+				[27223] = 136145,
 			},
 		},
 		["Imp in a Bottle (say)"] = {
@@ -14833,9 +14813,9 @@ WeakAurasOptionsSaved = {
 				[33628] = 136050,
 			},
 		},
-		["Receive Object of Affection"] = {
+		["QAEnchant Gloves +1% Haste"] = {
 			["spells"] = {
-				[26665] = 136235,
+				[22106] = 135913,
 			},
 		},
 		["Azure Shoulders"] = {
@@ -14966,9 +14946,13 @@ WeakAurasOptionsSaved = {
 				[40647] = 136192,
 			},
 		},
-		["Flame Spray"] = {
+		["Infected Wound"] = {
 			["spells"] = {
-				[10733] = 135805,
+				[17230] = 136066,
+				[29306] = 136066,
+				[29307] = 136066,
+				[3427] = 136066,
+				[31282] = 136066,
 			},
 		},
 		["Increased Intellect 45"] = {
@@ -15137,13 +15121,9 @@ WeakAurasOptionsSaved = {
 				[37830] = 134430,
 			},
 		},
-		["Improved Demoralizing Shout"] = {
+		["Increased Agility 44"] = {
 			["spells"] = {
-				[12879] = 132366,
-				[12876] = 132366,
-				[12324] = 132366,
-				[12878] = 132366,
-				[12877] = 132366,
+				[14938] = 136235,
 			},
 		},
 		["Improved Blessing of Salvation"] = {
@@ -15162,10 +15142,21 @@ WeakAurasOptionsSaved = {
 				[34217] = 135753,
 			},
 		},
-		["The Green Tower"] = {
+		["Shadow Resistance"] = {
 			["spells"] = {
-				[17154] = 136104,
-				[18097] = 136235,
+				[24506] = 136121,
+				[24514] = 136121,
+				[24488] = 136121,
+				[24507] = 136121,
+				[24515] = 136121,
+				[28769] = 136121,
+				[27535] = 136185,
+				[24516] = 136121,
+				[24505] = 136121,
+				[20579] = 136152,
+				[27353] = 136121,
+				[27056] = 136121,
+				[24490] = 136121,
 			},
 		},
 		["Energy Bolt Periodic"] = {
@@ -15270,9 +15261,11 @@ WeakAurasOptionsSaved = {
 				[31448] = 132149,
 			},
 		},
-		["Summon Echeyakee"] = {
+		["Sand Storm"] = {
 			["spells"] = {
-				[12189] = 136168,
+				[10134] = 136022,
+				[25160] = 136022,
+				[10092] = 136022,
 			},
 		},
 		["Eruption"] = {
@@ -15640,20 +15633,12 @@ WeakAurasOptionsSaved = {
 				[37360] = 134423,
 			},
 		},
-		["Ravage"] = {
+		["Improved Nature's Grasp"] = {
 			["spells"] = {
-				[29906] = 132152,
-				[3242] = 132152,
-				[8391] = 132152,
-				[6785] = 132141,
-				[3446] = 132152,
-				[9867] = 132141,
-				[33781] = 132152,
-				[27005] = 132141,
-				[24333] = 132152,
-				[24213] = 132152,
-				[6787] = 132141,
-				[9866] = 132141,
+				[17249] = 136063,
+				[17247] = 136063,
+				[17245] = 136063,
+				[17248] = 136063,
 			},
 		},
 		["Seal of Corruption"] = {
@@ -15852,10 +15837,9 @@ WeakAurasOptionsSaved = {
 				[46070] = 136235,
 			},
 		},
-		["Cadaver Worms"] = {
+		["Increased Arcane Resist 23"] = {
 			["spells"] = {
-				[16142] = 136188,
-				[16143] = 136134,
+				[14725] = 136235,
 			},
 		},
 		["Increase Healing 524"] = {
@@ -15868,9 +15852,12 @@ WeakAurasOptionsSaved = {
 				[41079] = 136235,
 			},
 		},
-		["Create Bone Dust"] = {
+		["Gnomish Mind Control Cap"] = {
 			["spells"] = {
-				[17270] = 136235,
+				[26740] = 135995,
+				[13181] = 135995,
+				[13180] = 135995,
+				[12907] = 136235,
 			},
 		},
 		["Summon Silver Dragonhawk Hatchling"] = {
@@ -15964,11 +15951,9 @@ WeakAurasOptionsSaved = {
 				[16182] = 136052,
 			},
 		},
-		["Improved Kick"] = {
+		["Runecloth Cloak"] = {
 			["spells"] = {
-				[24434] = 136235,
-				[13754] = 132219,
-				[13867] = 132219,
+				[18409] = 132149,
 			},
 		},
 		["Hellfire Superiority"] = {
@@ -15999,9 +15984,9 @@ WeakAurasOptionsSaved = {
 				[36442] = 135871,
 			},
 		},
-		["Omarion's Secrets"] = {
+		["Polymorph: Pig"] = {
 			["spells"] = {
-				[28288] = 136235,
+				[28285] = 135997,
 			},
 		},
 		["Destroy"] = {
@@ -16019,9 +16004,9 @@ WeakAurasOptionsSaved = {
 				[28683] = 132572,
 			},
 		},
-		["Balnazzar Transform"] = {
+		["Increased Intellect 42"] = {
 			["spells"] = {
-				[17288] = 136129,
+				[14942] = 136235,
 			},
 		},
 		["Negative Energy"] = {
@@ -16098,9 +16083,13 @@ WeakAurasOptionsSaved = {
 				[45998] = 136194,
 			},
 		},
-		["Increased Shadow Resist 45"] = {
+		["Shield Charge"] = {
 			["spells"] = {
-				[14994] = 136235,
+				[19131] = 132337,
+				[15749] = 132337,
+				[35472] = 132337,
+				[31863] = 135940,
+				[38630] = 132337,
 			},
 		},
 		["Open Portal Periodic"] = {
@@ -16136,9 +16125,9 @@ WeakAurasOptionsSaved = {
 				[45695] = 133971,
 			},
 		},
-		["Spirit Particles (green)"] = {
+		["Increased Agility 32"] = {
 			["spells"] = {
-				[18951] = 135864,
+				[14396] = 136235,
 			},
 		},
 		["Summon Void Sentinel Summoner"] = {
@@ -16238,9 +16227,9 @@ WeakAurasOptionsSaved = {
 				[30802] = 136110,
 			},
 		},
-		["J'eevee summons object"] = {
+		["Enchant Weapon - Minor Beastslayer"] = {
 			["spells"] = {
-				[23140] = 136235,
+				[7786] = 135913,
 			},
 		},
 		["Minor Scorpion Venom"] = {
@@ -16321,16 +16310,9 @@ WeakAurasOptionsSaved = {
 				[40194] = 136235,
 			},
 		},
-		["Shadow Power"] = {
+		["Pillow Fight"] = {
 			["spells"] = {
-				[33221] = 136204,
-				[33223] = 136204,
-				[33225] = 136204,
-				[39193] = 136172,
-				[33222] = 136204,
-				[11474] = 134826,
-				[35322] = 136172,
-				[33224] = 136204,
+				[23416] = 132337,
 			},
 		},
 		["Swiftstrike Bracers"] = {
@@ -16358,9 +16340,9 @@ WeakAurasOptionsSaved = {
 				[39172] = 132390,
 			},
 		},
-		["Attack Order"] = {
+		["Swift Brown Steed"] = {
 			["spells"] = {
-				[25471] = 132212,
+				[23229] = 132261,
 			},
 		},
 		["Summon Attumen (Mounted)"] = {
@@ -16475,9 +16457,13 @@ WeakAurasOptionsSaved = {
 				[45927] = 136234,
 			},
 		},
-		["Challenger is Dazed"] = {
+		["Flametongue Totem Proc"] = {
 			["spells"] = {
-				[8672] = 136175,
+				[8248] = 136040,
+				[16389] = 136040,
+				[8253] = 136040,
+				[25555] = 136040,
+				[10523] = 136040,
 			},
 		},
 		["Greater Dreamless Sleep Potion"] = {
@@ -16554,9 +16540,10 @@ WeakAurasOptionsSaved = {
 				[982] = 132163,
 			},
 		},
-		["Increase Fire Dam 72"] = {
+		["Arcane Bomb"] = {
 			["spells"] = {
-				[26703] = 136235,
+				[19821] = 135975,
+				[19831] = 136235,
 			},
 		},
 		["Complete Alterac Valley quest"] = {
@@ -16604,10 +16591,9 @@ WeakAurasOptionsSaved = {
 				[34088] = 135975,
 			},
 		},
-		["Enhancing Totems"] = {
+		["Simple Kilt"] = {
 			["spells"] = {
-				[16259] = 136023,
-				[16295] = 136023,
+				[12046] = 132149,
 			},
 		},
 		["Summon Brutallus Death Cloud"] = {
@@ -16645,9 +16631,9 @@ WeakAurasOptionsSaved = {
 				[9357] = 136235,
 			},
 		},
-		["Spirit of Old"] = {
+		["Rugged Leather Pants"] = {
 			["spells"] = {
-				[3653] = 136222,
+				[9064] = 136247,
 			},
 		},
 		["Ethereum Relay"] = {
@@ -16675,22 +16661,14 @@ WeakAurasOptionsSaved = {
 				[16354] = 135990,
 			},
 		},
-		["Wavering Will"] = {
+		["Increase Holy Dam 54"] = {
 			["spells"] = {
-				[7127] = 136119,
-				[36699] = 136119,
-				[46299] = 136119,
+				[21536] = 136235,
 			},
 		},
-		["Expose Weakness"] = {
+		["Wicked Milking"] = {
 			["spells"] = {
-				[34502] = 132295,
-				[23577] = 132212,
-				[23578] = 132212,
-				[34501] = 132295,
-				[34503] = 132295,
-				[7140] = 132109,
-				[34500] = 132295,
+				[16472] = 136067,
 			},
 		},
 		["Consume"] = {
@@ -16750,9 +16728,9 @@ WeakAurasOptionsSaved = {
 				[45399] = 136235,
 			},
 		},
-		["Happy Pet"] = {
+		["Increased Strength 15"] = {
 			["spells"] = {
-				[24716] = 132161,
+				[13198] = 136235,
 			},
 		},
 		["Increased Spirit 08"] = {
@@ -16976,10 +16954,10 @@ WeakAurasOptionsSaved = {
 				[17505] = 136203,
 			},
 		},
-		["Flip Out"] = {
+		["Shadow Resilience"] = {
 			["spells"] = {
-				[8219] = 132288,
-				[8220] = 132288,
+				[14910] = 136162,
+				[33371] = 136162,
 			},
 		},
 		["Handful of Fel Iron Bolts"] = {
@@ -17103,9 +17081,9 @@ WeakAurasOptionsSaved = {
 				[45784] = 136235,
 			},
 		},
-		["Fire Reflector"] = {
+		["Increase Holy Dam 9"] = {
 			["spells"] = {
-				[23097] = 135824,
+				[21504] = 136235,
 			},
 		},
 		["The Exorcism Lightning Bunny Visual"] = {
@@ -17138,9 +17116,9 @@ WeakAurasOptionsSaved = {
 				[35567] = 136247,
 			},
 		},
-		["Divining Trance"] = {
+		["Capture Felhound Spirit"] = {
 			["spells"] = {
-				[5017] = 136235,
+				[16627] = 136163,
 			},
 		},
 		["Felfire Fission"] = {
@@ -17231,9 +17209,9 @@ WeakAurasOptionsSaved = {
 				[21942] = 136080,
 			},
 		},
-		["Increased Armor 180"] = {
+		["Dispel"] = {
 			["spells"] = {
-				[18188] = 136235,
+				[25808] = 135894,
 			},
 		},
 		["Displacing Temporal Rift"] = {
@@ -17431,31 +17409,13 @@ WeakAurasOptionsSaved = {
 				[14944] = 136235,
 			},
 		},
-		["Attack Power 40"] = {
+		["Tidal Focus"] = {
 			["spells"] = {
-				[41713] = 136235,
-				[41808] = 136235,
-				[14049] = 136235,
-				[41904] = 136235,
-				[41689] = 136235,
-				[41907] = 136235,
-				[41722] = 136235,
-				[41755] = 136235,
-				[41695] = 136235,
-				[41790] = 136235,
-				[41667] = 136235,
-				[41763] = 136235,
-				[41888] = 136235,
-				[41796] = 136235,
-				[41813] = 136235,
-				[41844] = 136235,
-				[41768] = 136235,
-				[41707] = 136235,
-				[41832] = 136235,
-				[41895] = 136235,
-				[41693] = 136235,
-				[41711] = 136235,
-				[41649] = 136235,
+				[16214] = 135859,
+				[16215] = 135859,
+				[16216] = 135859,
+				[16217] = 135859,
+				[16179] = 135859,
 			},
 		},
 		["Blue Windrider"] = {
@@ -17478,9 +17438,9 @@ WeakAurasOptionsSaved = {
 				[45648] = 133943,
 			},
 		},
-		["Enchanting Lullaby"] = {
+		["Increased Fire Resist 26"] = {
 			["spells"] = {
-				[16798] = 136209,
+				[14606] = 136235,
 			},
 		},
 		["Rune of the Dawn"] = {
@@ -17623,9 +17583,17 @@ WeakAurasOptionsSaved = {
 				[2096] = 135934,
 			},
 		},
-		["Rising Spirit"] = {
+		["Rip"] = {
 			["spells"] = {
-				[10767] = 136053,
+				[9752] = 132152,
+				[27008] = 132152,
+				[9492] = 132152,
+				[1079] = 132152,
+				[33912] = 132152,
+				[9894] = 132152,
+				[9896] = 132152,
+				[9493] = 132152,
+				[36590] = 132152,
 			},
 		},
 		["Light's Grace"] = {
@@ -17637,13 +17605,9 @@ WeakAurasOptionsSaved = {
 				[31835] = 135931,
 			},
 		},
-		["Improved Hamstring"] = {
+		["Increase Fire Dam 72"] = {
 			["spells"] = {
-				[23695] = 132316,
-				[12289] = 132316,
-				[24428] = 136235,
-				[23694] = 132316,
-				[12668] = 132316,
+				[26703] = 136235,
 			},
 		},
 		["Trigger Top Strafe"] = {
@@ -17669,9 +17633,9 @@ WeakAurasOptionsSaved = {
 				[25778] = 132939,
 			},
 		},
-		["Golden Scale Boots"] = {
+		["Increased Frost Resist 16"] = {
 			["spells"] = {
-				[3515] = 136192,
+				[14556] = 136235,
 			},
 		},
 		["Fog of Corruption"] = {
@@ -17706,9 +17670,9 @@ WeakAurasOptionsSaved = {
 				[6606] = 136168,
 			},
 		},
-		["Increased Spirit 13"] = {
+		["Summon Deepmoss Matriarch"] = {
 			["spells"] = {
-				[9262] = 136235,
+				[6536] = 136074,
 			},
 		},
 		["Faction, Spar"] = {
@@ -18206,9 +18170,12 @@ WeakAurasOptionsSaved = {
 				[17465] = 132264,
 			},
 		},
-		["Enchant Weapon - Minor Striking"] = {
+		["Unholy Frenzy"] = {
 			["spells"] = {
-				[7788] = 135913,
+				[27995] = 136012,
+				[24672] = 136012,
+				[31626] = 136224,
+				[8699] = 136012,
 			},
 		},
 		["Attack Power 04"] = {
@@ -18338,9 +18305,10 @@ WeakAurasOptionsSaved = {
 				[6195] = 134298,
 			},
 		},
-		["Tag: Arrow"] = {
+		["Decrease Mana Cost - Shadow"] = {
 			["spells"] = {
-				[20374] = 132212,
+				[17912] = 136235,
+				[17916] = 136235,
 			},
 		},
 		["Punctured Voodoo Doll MAG DND"] = {
@@ -18353,9 +18321,11 @@ WeakAurasOptionsSaved = {
 				[32272] = 135761,
 			},
 		},
-		["Dodge Mastery"] = {
+		["Improved Kick"] = {
 			["spells"] = {
-				[2118] = 136047,
+				[24434] = 136235,
+				[13754] = 132219,
+				[13867] = 132219,
 			},
 		},
 		["Summon Wave E Mob"] = {
@@ -18419,9 +18389,9 @@ WeakAurasOptionsSaved = {
 				[45320] = 136206,
 			},
 		},
-		["Exceptional Mana"] = {
+		["Death Wish"] = {
 			["spells"] = {
-				[27956] = 136235,
+				[12292] = 136146,
 			},
 		},
 		["Howling Blade"] = {
@@ -18459,12 +18429,9 @@ WeakAurasOptionsSaved = {
 				[36169] = 136235,
 			},
 		},
-		["Mithril Mechanical Dragonling"] = {
+		["Attack Power 18"] = {
 			["spells"] = {
-				[12624] = 134153,
-				[12749] = 134153,
-				[23050] = 134156,
-				[23075] = 134153,
+				[9330] = 136235,
 			},
 		},
 		["Throw Cupid's Dart"] = {
@@ -18515,9 +18482,10 @@ WeakAurasOptionsSaved = {
 				[45267] = 136235,
 			},
 		},
-		["Increase Shadow/Frost Dam 54"] = {
+		["Enchant 2H Weapon - Major Agility"] = {
 			["spells"] = {
-				[27980] = 136235,
+				[27977] = 135913,
+				[46461] = 135913,
 			},
 		},
 		["Increase Healing 38"] = {
@@ -18530,9 +18498,13 @@ WeakAurasOptionsSaved = {
 				[41518] = 132250,
 			},
 		},
-		["Shadows Consumed"] = {
+		["Ice Block"] = {
 			["spells"] = {
-				[27599] = 136121,
+				[45438] = 135841,
+				[41590] = 135841,
+				[46604] = 135841,
+				[27619] = 135841,
+				[36911] = 135841,
 			},
 		},
 		["Swift Orange Raptor"] = {
@@ -18545,9 +18517,9 @@ WeakAurasOptionsSaved = {
 				[41080] = 136140,
 			},
 		},
-		["Headmaster's Charge"] = {
+		["Scorch Breath"] = {
 			["spells"] = {
-				[18264] = 136232,
+				[5010] = 135826,
 			},
 		},
 		["Benediction"] = {
@@ -18717,10 +18689,11 @@ WeakAurasOptionsSaved = {
 				[30100] = 132164,
 			},
 		},
-		["Improved Frost Nova"] = {
+		["Mithril Spurs"] = {
 			["spells"] = {
-				[11165] = 135840,
-				[12475] = 135840,
+				[9783] = 132307,
+				[7215] = 136235,
+				[9964] = 136192,
 			},
 		},
 		["Heavy Leather Ammo Pouch"] = {
@@ -18784,10 +18757,23 @@ WeakAurasOptionsSaved = {
 				[17329] = 136063,
 			},
 		},
-		["Gas"] = {
+		["Sinister Strike"] = {
 			["spells"] = {
-				[28369] = 136006,
-				[30075] = 136006,
+				[1752] = 136189,
+				[1760] = 136189,
+				[46558] = 136189,
+				[14873] = 136189,
+				[1757] = 136189,
+				[26862] = 136189,
+				[11294] = 136189,
+				[26861] = 136189,
+				[1758] = 136189,
+				[19472] = 136189,
+				[15667] = 136189,
+				[15581] = 136189,
+				[8621] = 136189,
+				[11293] = 136189,
+				[1759] = 136189,
 			},
 		},
 		["Copy Off-hand Weapon"] = {
@@ -18795,9 +18781,9 @@ WeakAurasOptionsSaved = {
 				[45206] = 132343,
 			},
 		},
-		["Summon Island Frog"] = {
+		["Blessing of Blackfathom"] = {
 			["spells"] = {
-				[10702] = 132311,
+				[8733] = 135850,
 			},
 		},
 		["Summon Serpent Messenger"] = {
@@ -19103,9 +19089,9 @@ WeakAurasOptionsSaved = {
 				[45132] = 136235,
 			},
 		},
-		["Fengus' Ferocity"] = {
+		["Striker's Arcane Shot Bonus"] = {
 			["spells"] = {
-				[22817] = 136109,
+				[26173] = 136235,
 			},
 		},
 		["Fletcher's Gloves"] = {
@@ -19201,9 +19187,9 @@ WeakAurasOptionsSaved = {
 				[45127] = 132311,
 			},
 		},
-		["Increased Spirit 41"] = {
+		["Lesser Health"] = {
 			["spells"] = {
-				[14947] = 136235,
+				[7747] = 136235,
 			},
 		},
 		["Increased Fire Resist 14"] = {
@@ -19242,10 +19228,9 @@ WeakAurasOptionsSaved = {
 				[45124] = 135767,
 			},
 		},
-		["Increase Healing 20"] = {
+		["Smashing Blow"] = {
 			["spells"] = {
-				[9407] = 136235,
-				[27925] = 136235,
+				[2442] = 132326,
 			},
 		},
 		["Holiday - Valentine - Romantic Picnic Drink Visual"] = {
@@ -19278,9 +19263,9 @@ WeakAurasOptionsSaved = {
 				[39844] = 135808,
 			},
 		},
-		["Increased Shadow Resist 43"] = {
+		["Growl of Fortitude"] = {
 			["spells"] = {
-				[14992] = 136235,
+				[4148] = 132091,
 			},
 		},
 		["Holiday - Valentine - Romantic Picnic Meal Eat Visual"] = {
@@ -19324,11 +19309,9 @@ WeakAurasOptionsSaved = {
 				[9107] = 136235,
 			},
 		},
-		["Increase Spell Dam 14"] = {
+		["Cascade of Roses"] = {
 			["spells"] = {
-				[356299] = 136235,
-				[40705] = 136235,
-				[9343] = 136235,
+				[27571] = 133851,
 			},
 		},
 		["Greengill Slave Freed"] = {
@@ -19453,9 +19436,9 @@ WeakAurasOptionsSaved = {
 				[41956] = 136235,
 			},
 		},
-		["Enchant Weapon - Greater Striking"] = {
+		["Guardian Armor"] = {
 			["spells"] = {
-				[13943] = 135913,
+				[3773] = 136247,
 			},
 		},
 		["Mace Stun Effect"] = {
@@ -19524,9 +19507,9 @@ WeakAurasOptionsSaved = {
 				[45072] = 135805,
 			},
 		},
-		["Lesser Stoneshield Potion"] = {
+		["Citrine Ring of Rapid Healing"] = {
 			["spells"] = {
-				[4942] = 136235,
+				[25621] = 136235,
 			},
 		},
 		["Summon Expedition Scout"] = {
@@ -19534,9 +19517,9 @@ WeakAurasOptionsSaved = {
 				[32030] = 136235,
 			},
 		},
-		["Radiation Poisoning"] = {
+		["Summon Tamed Bird"] = {
 			["spells"] = {
-				[11638] = 136133,
+				[7904] = 132150,
 			},
 		},
 		["Summon Parasitic Serpent"] = {
@@ -19571,9 +19554,9 @@ WeakAurasOptionsSaved = {
 				[32410] = 135962,
 			},
 		},
-		["Nullify"] = {
+		["Uther's Human Tribute"] = {
 			["spells"] = {
-				[26552] = 136039,
+				[24105] = 136235,
 			},
 		},
 		["Regrowth Bonus"] = {
@@ -19596,9 +19579,9 @@ WeakAurasOptionsSaved = {
 				[7954] = 136247,
 			},
 		},
-		["Increase Holy Dam 37"] = {
+		["Resist Poison"] = {
 			["spells"] = {
-				[21524] = 136235,
+				[6513] = 136067,
 			},
 		},
 		["Test Strike W35"] = {
@@ -19611,9 +19594,9 @@ WeakAurasOptionsSaved = {
 				[9079] = 135750,
 			},
 		},
-		["Smelt Iron"] = {
+		["Increase Arcane Dam 47"] = {
 			["spells"] = {
-				[3307] = 136235,
+				[17844] = 136235,
 			},
 		},
 		["Summon Rocket Bot"] = {
@@ -19683,9 +19666,15 @@ WeakAurasOptionsSaved = {
 				[45040] = 134123,
 			},
 		},
-		["Break Big Stuff"] = {
+		["Healing Focus"] = {
 			["spells"] = {
-				[7962] = 136137,
+				[16232] = 136043,
+				[14913] = 135918,
+				[16233] = 136043,
+				[16230] = 136043,
+				[16234] = 136043,
+				[15012] = 135918,
+				[16181] = 136043,
 			},
 		},
 		["Bronze Axe"] = {
@@ -19822,9 +19811,9 @@ WeakAurasOptionsSaved = {
 				[42035] = 135819,
 			},
 		},
-		["Formal White Shirt"] = {
+		["Turquoise Raptor"] = {
 			["spells"] = {
-				[3871] = 132149,
+				[10796] = 132253,
 			},
 		},
 		["Poisonous Blood"] = {
@@ -19869,9 +19858,9 @@ WeakAurasOptionsSaved = {
 				[16083] = 132261,
 			},
 		},
-		["Copper Claymore"] = {
+		["Heavy Woolen Gloves"] = {
 			["spells"] = {
-				[9983] = 136192,
+				[3843] = 132149,
 			},
 		},
 		["Holiday Drink"] = {
@@ -20056,9 +20045,9 @@ WeakAurasOptionsSaved = {
 				[10132] = 136022,
 			},
 		},
-		["Attack Power 48"] = {
+		["Ultra-Flash Shadow Reflector"] = {
 			["spells"] = {
-				[9333] = 136235,
+				[23082] = 136235,
 			},
 		},
 		["Portal Effect: Undercity"] = {
@@ -20086,9 +20075,9 @@ WeakAurasOptionsSaved = {
 				[43782] = 136235,
 			},
 		},
-		["Artisan Enchanting"] = {
+		["Summon Burning Exile"] = {
 			["spells"] = {
-				[13921] = 136244,
+				[4929] = 136192,
 			},
 		},
 		["Improved Corruption"] = {
@@ -20130,9 +20119,10 @@ WeakAurasOptionsSaved = {
 				[23792] = 136097,
 			},
 		},
-		["Crunchy Spider Surprise"] = {
+		["Chill Nova"] = {
 			["spells"] = {
-				[28267] = 136192,
+				[18099] = 135848,
+				[36148] = 135848,
 			},
 		},
 		["Increase Healing 11"] = {
@@ -20247,9 +20237,9 @@ WeakAurasOptionsSaved = {
 				[30173] = 136075,
 			},
 		},
-		["TESTT"] = {
+		["Dungeon Set 2.0 Ghosts"] = {
 			["spells"] = {
-				[18801] = 136235,
+				[27614] = 135994,
 			},
 		},
 		["Green Beam Belly"] = {
@@ -20315,9 +20305,14 @@ WeakAurasOptionsSaved = {
 				[23558] = 136235,
 			},
 		},
-		["Punctured Voodoo Doll ROG DND"] = {
+		["Improved Wing Clip"] = {
 			["spells"] = {
-				[24281] = 136235,
+				[19229] = 132309,
+				[19232] = 132309,
+				[19233] = 132309,
+				[47168] = 132309,
+				[19228] = 132309,
+				[35963] = 132309,
 			},
 		},
 		["Bolt of Eonar"] = {
@@ -20355,9 +20350,9 @@ WeakAurasOptionsSaved = {
 				[30434] = 136152,
 			},
 		},
-		["Teleport to Razelikh (GROUP)"] = {
+		["Create Cleansing Totem"] = {
 			["spells"] = {
-				[27686] = 136235,
+				[4983] = 136168,
 			},
 		},
 		["Show Dot Variable"] = {
@@ -20375,9 +20370,9 @@ WeakAurasOptionsSaved = {
 				[24203] = 136235,
 			},
 		},
-		["Runecloth Tunic"] = {
+		["Increased Fire Resist 17"] = {
 			["spells"] = {
-				[18407] = 132149,
+				[14597] = 136235,
 			},
 		},
 		["Increase Holy Dam 14"] = {
@@ -20510,9 +20505,10 @@ WeakAurasOptionsSaved = {
 				[15243] = 135812,
 			},
 		},
-		["Increase Nature Dam 11"] = {
+		["Dense Dynamite"] = {
 			["spells"] = {
-				[9409] = 136235,
+				[23063] = 135826,
+				[23070] = 136235,
 			},
 		},
 		["Attack Power - Feral (+0539)"] = {
@@ -20682,10 +20678,9 @@ WeakAurasOptionsSaved = {
 				[18070] = 136007,
 			},
 		},
-		["Frost Burn"] = {
+		["Call of Sul'thraze"] = {
 			["spells"] = {
-				[23187] = 135836,
-				[23189] = 135836,
+				[11654] = 136235,
 			},
 		},
 		["Thorium Drill"] = {
@@ -20733,9 +20728,9 @@ WeakAurasOptionsSaved = {
 				[44892] = 136235,
 			},
 		},
-		["Demon Slaying 33"] = {
+		["Long Silken Cloak"] = {
 			["spells"] = {
-				[18079] = 136172,
+				[3861] = 132149,
 			},
 		},
 		["Reputation - Weaponsmithing"] = {
@@ -20992,10 +20987,9 @@ WeakAurasOptionsSaved = {
 				[11596] = 132363,
 			},
 		},
-		["Spirit of Zandalar"] = {
+		["Summon Treasure Hunting Swashbuckler"] = {
 			["spells"] = {
-				[24425] = 132107,
-				[355365] = 132107,
+				[11487] = 136235,
 			},
 		},
 		["Summon Flamekin Rager"] = {
@@ -21044,9 +21038,9 @@ WeakAurasOptionsSaved = {
 				[36118] = 132320,
 			},
 		},
-		["Hold Rifle"] = {
+		["Orcish War Leggings"] = {
 			["spells"] = {
-				[16723] = 132222,
+				[9957] = 136192,
 			},
 		},
 		["Bash'ir Phasing Device"] = {
@@ -21222,22 +21216,25 @@ WeakAurasOptionsSaved = {
 				[10696] = 132311,
 			},
 		},
-		["Refocus"] = {
+		["Increased Armor 180"] = {
 			["spells"] = {
-				[24531] = 132212,
+				[18188] = 136235,
 			},
 		},
-		["Soul Fire"] = {
+		["Heavy Quiver"] = {
 			["spells"] = {
-				[17924] = 135808,
-				[6353] = 135808,
-				[27211] = 135808,
-				[30545] = 135808,
+				[9193] = 136247,
 			},
 		},
-		["Beast Slaying 21"] = {
+		["Armor"] = {
 			["spells"] = {
-				[18080] = 136235,
+				[8094] = 132341,
+				[8091] = 132341,
+				[11349] = 134866,
+				[8095] = 132341,
+				[12175] = 132341,
+				[33079] = 132341,
+				[3220] = 134866,
 			},
 		},
 		["Warder Despawn"] = {
@@ -21255,10 +21252,10 @@ WeakAurasOptionsSaved = {
 				[37824] = 136202,
 			},
 		},
-		["Thorium Grenade"] = {
+		["Improved Power Word: Fortitude"] = {
 			["spells"] = {
-				[19769] = 135826,
-				[19790] = 136235,
+				[14749] = 135987,
+				[14767] = 135987,
 			},
 		},
 		["Exhaustion"] = {
@@ -21300,9 +21297,9 @@ WeakAurasOptionsSaved = {
 				[19879] = 134153,
 			},
 		},
-		["Robe of Winter Night"] = {
+		["Deadly Toxin"] = {
 			["spells"] = {
-				[18436] = 132149,
+				[11539] = 132290,
 			},
 		},
 		["Nether Portal - Domination"] = {
@@ -21419,10 +21416,18 @@ WeakAurasOptionsSaved = {
 				[44794] = 134071,
 			},
 		},
-		["Activate MG Turret"] = {
+		["Blue Beam"] = {
 			["spells"] = {
-				[25026] = 135619,
-				[39694] = 135619,
+				[30945] = 136131,
+				[34209] = 136208,
+				[40225] = 136208,
+				[34211] = 136208,
+				[31806] = 136208,
+				[34212] = 136208,
+				[38015] = 136208,
+				[22203] = 136208,
+				[38034] = 136208,
+				[32930] = 136208,
 			},
 		},
 		["Death Lightning"] = {
@@ -21472,10 +21477,10 @@ WeakAurasOptionsSaved = {
 				[44768] = 136247,
 			},
 		},
-		["Increase Shadow Dam 57"] = {
+		["Wrath of Air Totem"] = {
 			["spells"] = {
-				[25706] = 136235,
-				[26729] = 136235,
+				[2895] = 136092,
+				[3738] = 136092,
 			},
 		},
 		["Dragon's Call"] = {
@@ -21625,11 +21630,9 @@ WeakAurasOptionsSaved = {
 				[23249] = 132245,
 			},
 		},
-		["Improved Heroic Strike"] = {
+		["Gem Studded Band"] = {
 			["spells"] = {
-				[12663] = 132282,
-				[12664] = 132282,
-				[12282] = 132282,
+				[26896] = 136235,
 			},
 		},
 		["Demon Link"] = {
@@ -21712,9 +21715,9 @@ WeakAurasOptionsSaved = {
 				[44689] = 136235,
 			},
 		},
-		["Guardian Effect"] = {
+		["Lava Spout Totem Passive"] = {
 			["spells"] = {
-				[10342] = 135893,
+				[8266] = 135826,
 			},
 		},
 		["Infection"] = {
@@ -21742,10 +21745,9 @@ WeakAurasOptionsSaved = {
 				[29042] = 135741,
 			},
 		},
-		["Mending"] = {
+		["Test Maul"] = {
 			["spells"] = {
-				[2147] = 136085,
-				[36968] = 135928,
+				[24042] = 132136,
 			},
 		},
 		["Soul Transfer"] = {
@@ -21820,9 +21822,10 @@ WeakAurasOptionsSaved = {
 				[35890] = 136235,
 			},
 		},
-		["Forsaken Skill: 2H Axes"] = {
+		["Hateful Strike"] = {
 			["spells"] = {
-				[7045] = 132408,
+				[28308] = 136235,
+				[41926] = 136235,
 			},
 		},
 		["Alliance Flag Capture"] = {
@@ -21872,26 +21875,9 @@ WeakAurasOptionsSaved = {
 				[23709] = 136235,
 			},
 		},
-		["Earth Shock"] = {
+		["Open Wound Effect"] = {
 			["spells"] = {
-				[10413] = 136026,
-				[13281] = 136026,
-				[10414] = 136026,
-				[8044] = 136026,
-				[26194] = 136026,
-				[43305] = 136026,
-				[8045] = 136026,
-				[15501] = 136026,
-				[25454] = 136026,
-				[23114] = 136026,
-				[8042] = 136026,
-				[13728] = 136026,
-				[47071] = 136026,
-				[22885] = 136026,
-				[10412] = 136026,
-				[25025] = 136026,
-				[8046] = 136026,
-				[24685] = 136026,
+				[4244] = 136168,
 			},
 		},
 		["Summon Spirit"] = {
@@ -21918,20 +21904,14 @@ WeakAurasOptionsSaved = {
 				[46047] = 136016,
 			},
 		},
-		["Reckoning"] = {
+		["Increase Fire Dam 40"] = {
 			["spells"] = {
-				[20181] = 135882,
-				[20182] = 135882,
-				[20177] = 135882,
-				[20178] = 135882,
-				[20179] = 135882,
-				[20180] = 135882,
-				[32746] = 135882,
+				[17875] = 136235,
 			},
 		},
-		["QAEnchant Gloves +30 Healing"] = {
+		["Arcanoweave Robe"] = {
 			["spells"] = {
-				[27111] = 135913,
+				[26784] = 132149,
 			},
 		},
 		["Omar's Seal of Approval"] = {
@@ -21949,9 +21929,9 @@ WeakAurasOptionsSaved = {
 				[44574] = 135794,
 			},
 		},
-		["Increased Stamina 30"] = {
+		["Increased Strength 17"] = {
 			["spells"] = {
-				[14477] = 136235,
+				[14489] = 136235,
 			},
 		},
 		["Hellfire Tower Token, Alliance (1)"] = {
@@ -21996,9 +21976,9 @@ WeakAurasOptionsSaved = {
 				[48320] = 136218,
 			},
 		},
-		["Applying the Lure"] = {
+		["Gyrochronatom"] = {
 			["spells"] = {
-				[15627] = 136235,
+				[3961] = 136235,
 			},
 		},
 		["Increase Frost Dam 56"] = {
@@ -22091,9 +22071,9 @@ WeakAurasOptionsSaved = {
 				[44475] = 135728,
 			},
 		},
-		["Eyes of the Beast"] = {
+		["Ephemeral Power"] = {
 			["spells"] = {
-				[1002] = 132150,
+				[23271] = 135934,
 			},
 		},
 		["Armor Penetration 56"] = {
@@ -22137,9 +22117,9 @@ WeakAurasOptionsSaved = {
 				[2313] = 136235,
 			},
 		},
-		["Black Diamond Crab"] = {
+		["Green Tinted Goggles"] = {
 			["spells"] = {
-				[26609] = 132186,
+				[3956] = 136235,
 			},
 		},
 		["Toast"] = {
@@ -22157,10 +22137,9 @@ WeakAurasOptionsSaved = {
 				[29675] = 133971,
 			},
 		},
-		["Improved Life Tap"] = {
+		["Chromatic Mutation"] = {
 			["spells"] = {
-				[18182] = 136126,
-				[18183] = 136126,
+				[23174] = 136172,
 			},
 		},
 		["Lunar Festival Cluster Credit Marker"] = {
@@ -22178,9 +22157,9 @@ WeakAurasOptionsSaved = {
 				[44411] = 136131,
 			},
 		},
-		["Increased Arcane Resist 39"] = {
+		["Bly's Band's Escape"] = {
 			["spells"] = {
-				[14741] = 136235,
+				[11365] = 134414,
 			},
 		},
 		["Giselda Transform DND"] = {
@@ -22213,11 +22192,11 @@ WeakAurasOptionsSaved = {
 				[35596] = 136149,
 			},
 		},
-		["Arcane Channeling"] = {
+		["Super Shrink Ray"] = {
 			["spells"] = {
-				[32783] = 135731,
-				[39550] = 135735,
-				[23017] = 135743,
+				[22742] = 135989,
+				[31485] = 135989,
+				[36341] = 135989,
 			},
 		},
 		["Release Imp"] = {
@@ -22240,9 +22219,102 @@ WeakAurasOptionsSaved = {
 				[18457] = 132149,
 			},
 		},
-		["Eye of Divinity"] = {
+		["Breath"] = {
 			["spells"] = {
-				[23101] = 135933,
+				[18564] = 135805,
+				[18566] = 135805,
+				[18568] = 135805,
+				[18570] = 135805,
+				[18572] = 135805,
+				[18574] = 135805,
+				[18576] = 135805,
+				[18578] = 135805,
+				[18580] = 135805,
+				[18582] = 135805,
+				[18584] = 135805,
+				[18586] = 135805,
+				[18588] = 135805,
+				[18590] = 135805,
+				[18592] = 135805,
+				[18594] = 135805,
+				[18596] = 135805,
+				[18598] = 135805,
+				[18600] = 135805,
+				[18602] = 135805,
+				[18604] = 135805,
+				[18606] = 135805,
+				[18354] = 135805,
+				[17086] = 135805,
+				[18358] = 135805,
+				[18360] = 135805,
+				[17092] = 135805,
+				[17094] = 135805,
+				[18620] = 135805,
+				[18622] = 135805,
+				[18624] = 135805,
+				[18626] = 135805,
+				[18628] = 135805,
+				[22268] = 135805,
+				[22267] = 135805,
+				[21139] = 135805,
+				[21138] = 135805,
+				[21137] = 135805,
+				[21136] = 135805,
+				[21135] = 135805,
+				[21133] = 135805,
+				[21132] = 135805,
+				[21131] = 135805,
+				[18612] = 135805,
+				[18613] = 135805,
+				[18614] = 135805,
+				[18621] = 135805,
+				[18619] = 135805,
+				[18618] = 135805,
+				[18617] = 135805,
+				[18616] = 135805,
+				[18565] = 135805,
+				[18567] = 135805,
+				[18569] = 135805,
+				[18571] = 135805,
+				[18573] = 135805,
+				[18575] = 135805,
+				[18615] = 135805,
+				[18579] = 135805,
+				[18581] = 135805,
+				[18583] = 135805,
+				[18585] = 135805,
+				[18587] = 135805,
+				[18589] = 135805,
+				[18591] = 135805,
+				[18593] = 135805,
+				[18595] = 135805,
+				[18597] = 135805,
+				[18599] = 135805,
+				[18601] = 135805,
+				[18603] = 135805,
+				[18605] = 135805,
+				[18353] = 135805,
+				[18355] = 135805,
+				[18357] = 135805,
+				[18359] = 135805,
+				[17091] = 135805,
+				[17093] = 135805,
+				[17095] = 135805,
+				[17097] = 135805,
+				[18623] = 135805,
+				[18625] = 135805,
+				[18627] = 135805,
+				[18611] = 135805,
+				[18609] = 135805,
+				[18607] = 135805,
+				[17087] = 135805,
+				[17088] = 135805,
+				[17089] = 135805,
+				[17090] = 135805,
+				[18351] = 135805,
+				[18352] = 135805,
+				[18356] = 135805,
+				[18361] = 135805,
 			},
 		},
 		["Brewfest - Create Ram Racing Crop (self)"] = {
@@ -22331,14 +22403,9 @@ WeakAurasOptionsSaved = {
 				[44360] = 136235,
 			},
 		},
-		["Fire Power"] = {
+		["Add Fire Dam - Weap 08"] = {
 			["spells"] = {
-				[12378] = 135817,
-				[7844] = 134813,
-				[12400] = 135817,
-				[12398] = 135817,
-				[12399] = 135817,
-				[11124] = 135817,
+				[7723] = 136235,
 			},
 		},
 		["Move"] = {
@@ -22367,9 +22434,9 @@ WeakAurasOptionsSaved = {
 				[13168] = 136224,
 			},
 		},
-		["Increase Holy Dam 30"] = {
+		["Increased Shadow Resist 31"] = {
 			["spells"] = {
-				[21519] = 136235,
+				[14694] = 136235,
 			},
 		},
 		["Boon of Life"] = {
@@ -22634,13 +22701,10 @@ WeakAurasOptionsSaved = {
 				[44314] = 136116,
 			},
 		},
-		["Shadow Weaving"] = {
+		["Goblin Rocket Helmet"] = {
 			["spells"] = {
-				[15332] = 136123,
-				[15333] = 136123,
-				[15257] = 136123,
-				[15331] = 136123,
-				[15334] = 136123,
+				[12758] = 136235,
+				[13821] = 135805,
 			},
 		},
 		["Head of the Horseman Invisible"] = {
@@ -22665,9 +22729,9 @@ WeakAurasOptionsSaved = {
 				[39345] = 135819,
 			},
 		},
-		["Self Stun - 15 seconds"] = {
+		["Mebok Smart Drink"] = {
 			["spells"] = {
-				[14821] = 136168,
+				[7920] = 136235,
 			},
 		},
 		["Improved Polymorph"] = {
@@ -22745,9 +22809,13 @@ WeakAurasOptionsSaved = {
 				[2393] = 132149,
 			},
 		},
-		["Summon Cadaverous Worm"] = {
+		["Improved Hamstring"] = {
 			["spells"] = {
-				[22825] = 136168,
+				[23695] = 132316,
+				[12289] = 132316,
+				[24428] = 136235,
+				[23694] = 132316,
+				[12668] = 132316,
 			},
 		},
 		["Backward Lunge"] = {
@@ -22775,10 +22843,9 @@ WeakAurasOptionsSaved = {
 				[44251] = 136235,
 			},
 		},
-		["Petrification"] = {
+		["Whirring Bronze Gizmo"] = {
 			["spells"] = {
-				[17624] = 134806,
-				[39933] = 134806,
+				[3942] = 136235,
 			},
 		},
 		["Has LOOTED Large Jack-o'-Lantern"] = {
@@ -22844,24 +22911,14 @@ WeakAurasOptionsSaved = {
 				[29049] = 134333,
 			},
 		},
-		["Increase Arcane Dam 9"] = {
+		["Perm. Illusion Slime"] = {
 			["spells"] = {
-				[13595] = 136235,
+				[8299] = 132311,
 			},
 		},
-		["Scorpid Poison"] = {
+		["Demon Slaying 30"] = {
 			["spells"] = {
-				[24641] = 132274,
-				[27060] = 132274,
-				[24589] = 132274,
-				[24586] = 132274,
-				[24583] = 132274,
-				[24587] = 132274,
-				[24640] = 132274,
-				[24584] = 132274,
-				[24588] = 132274,
-				[27361] = 132274,
-				[6411] = 136016,
+				[20858] = 136172,
 			},
 		},
 		["Increase Spell Dam 46"] = {
@@ -22879,14 +22936,14 @@ WeakAurasOptionsSaved = {
 				[28745] = 136235,
 			},
 		},
-		["Detect Amore"] = {
+		["Firework Launcher"] = {
 			["spells"] = {
-				[26802] = 133884,
+				[26442] = 136235,
 			},
 		},
-		["Voodoo"] = {
+		["Increased Nature Resist 16"] = {
 			["spells"] = {
-				[17009] = 136121,
+				[14637] = 136235,
 			},
 		},
 		["Fast Cast (NYI)"] = {
@@ -23009,9 +23066,9 @@ WeakAurasOptionsSaved = {
 				[37859] = 135826,
 			},
 		},
-		["Small Silk Pack"] = {
+		["Wavestorm 2"] = {
 			["spells"] = {
-				[3813] = 136249,
+				[553] = 136235,
 			},
 		},
 		["Player, Troll/Night Elf"] = {
@@ -23054,9 +23111,11 @@ WeakAurasOptionsSaved = {
 				[44168] = 136235,
 			},
 		},
-		["Nightscape Boots"] = {
+		["Thorium Shield Spike"] = {
 			["spells"] = {
-				[10558] = 136247,
+				[16623] = 136235,
+				[16624] = 136235,
+				[16651] = 136192,
 			},
 		},
 		["Great White Kodo"] = {
@@ -23121,9 +23180,9 @@ WeakAurasOptionsSaved = {
 				[23122] = 136235,
 			},
 		},
-		["Elemental Mastery"] = {
+		["Cursed Blade"] = {
 			["spells"] = {
-				[16166] = 136115,
+				[5271] = 136020,
 			},
 		},
 		["Fists of Arcane Fury"] = {
@@ -23144,9 +23203,9 @@ WeakAurasOptionsSaved = {
 				[44113] = 132800,
 			},
 		},
-		["Land Mine Impact"] = {
+		["Increased All Resist 13"] = {
 			["spells"] = {
-				[22498] = 136235,
+				[18684] = 136235,
 			},
 		},
 		["Brewfest Reveler - Drunk Goblin"] = {
@@ -23187,9 +23246,9 @@ WeakAurasOptionsSaved = {
 				[9332] = 136235,
 			},
 		},
-		["Drink Disease Bottle"] = {
+		["Minor Health"] = {
 			["spells"] = {
-				[6355] = 134799,
+				[7419] = 136235,
 			},
 		},
 		["Z"] = {
@@ -23202,9 +23261,9 @@ WeakAurasOptionsSaved = {
 				[44083] = 136235,
 			},
 		},
-		["Soul Shatter"] = {
+		["Bronze Tube"] = {
 			["spells"] = {
-				[10771] = 135805,
+				[3938] = 136235,
 			},
 		},
 		["Pet Fish"] = {
@@ -23266,9 +23325,9 @@ WeakAurasOptionsSaved = {
 				[31864] = 135860,
 			},
 		},
-		["Eject Sneed"] = {
+		["Headmaster's Charge"] = {
 			["spells"] = {
-				[5141] = 135805,
+				[18264] = 136232,
 			},
 		},
 		["Avatar of Flame"] = {
@@ -23367,9 +23426,9 @@ WeakAurasOptionsSaved = {
 				[21336] = 135864,
 			},
 		},
-		["Thorns Dmg +4"] = {
+		["Sloth Effect"] = {
 			["spells"] = {
-				[20889] = 136051,
+				[3510] = 136188,
 			},
 		},
 		["Windfury Impact Visual"] = {
@@ -23430,9 +23489,9 @@ WeakAurasOptionsSaved = {
 				[17905] = 136235,
 			},
 		},
-		["Full Grown"] = {
+		["Frost Reflector"] = {
 			["spells"] = {
-				[24088] = 136101,
+				[23131] = 135850,
 			},
 		},
 		["Poison Aura"] = {
@@ -23515,9 +23574,9 @@ WeakAurasOptionsSaved = {
 				[44031] = 135860,
 			},
 		},
-		["Spirit Shade Visual"] = {
+		["Runic Leather Bracers"] = {
 			["spells"] = {
-				[24809] = 136123,
+				[19065] = 136235,
 			},
 		},
 		["Summon Felstorm Hound"] = {
@@ -23566,9 +23625,11 @@ WeakAurasOptionsSaved = {
 				[16886] = 136062,
 			},
 		},
-		["Corrupted Intellect Passive"] = {
+		["Improved Heroic Strike"] = {
 			["spells"] = {
-				[6823] = 136006,
+				[12663] = 132282,
+				[12664] = 132282,
+				[12282] = 132282,
 			},
 		},
 		["Face Random Fel Orc"] = {
@@ -23586,9 +23647,16 @@ WeakAurasOptionsSaved = {
 				[25771] = 135952,
 			},
 		},
-		["Summon Goblin Bomb"] = {
+		["Slam"] = {
 			["spells"] = {
-				[13258] = 132281,
+				[1464] = 132340,
+				[11430] = 132357,
+				[34620] = 132154,
+				[8820] = 132340,
+				[25242] = 132340,
+				[25241] = 132340,
+				[11604] = 132340,
+				[11605] = 132340,
 			},
 		},
 		["Charred Wolf Meat"] = {
@@ -23620,9 +23688,9 @@ WeakAurasOptionsSaved = {
 				[41237] = 135230,
 			},
 		},
-		["Summon Party Bot"] = {
+		["Fake Death"] = {
 			["spells"] = {
-				[7975] = 136074,
+				[8226] = 136187,
 			},
 		},
 		["Create Oathstone of Ysera's Dragonflight"] = {
@@ -23657,15 +23725,15 @@ WeakAurasOptionsSaved = {
 				[10647] = 136247,
 			},
 		},
-		["Increase Frost Dam 64"] = {
+		["Increased Stamina 19"] = {
 			["spells"] = {
-				[26722] = 136235,
+				[14466] = 136235,
 			},
 		},
-		["Spirit Shock"] = {
+		["White Wedding Dress"] = {
 			["spells"] = {
-				[10794] = 136140,
-				[41426] = 135739,
+				[12091] = 132149,
+				[12131] = 136021,
 			},
 		},
 		["Has Pumpkin Head"] = {
@@ -23799,9 +23867,9 @@ WeakAurasOptionsSaved = {
 				[45061] = 136240,
 			},
 		},
-		["Fetch!"] = {
+		["Splintered Obsidian"] = {
 			["spells"] = {
-				[20541] = 132165,
+				[10072] = 136126,
 			},
 		},
 		["Honor Points Branch, 1-60"] = {
@@ -23921,9 +23989,9 @@ WeakAurasOptionsSaved = {
 				[43941] = 136235,
 			},
 		},
-		["Conjure Stormpike Rank 4 Insignia DND"] = {
+		["Unseen"] = {
 			["spells"] = {
-				[22117] = 136235,
+				[4986] = 136047,
 			},
 		},
 		["Armor Penetration 1400"] = {
@@ -23971,9 +24039,9 @@ WeakAurasOptionsSaved = {
 				[43922] = 136235,
 			},
 		},
-		["Mage Portal State"] = {
+		["Portal: Karazhan"] = {
 			["spells"] = {
-				[28146] = 135751,
+				[28148] = 135751,
 			},
 		},
 		["Empty Festive Mug"] = {
@@ -24037,15 +24105,9 @@ WeakAurasOptionsSaved = {
 				[37481] = 136235,
 			},
 		},
-		["Stoneclaw Totem"] = {
+		["Lost Control"] = {
 			["spells"] = {
-				[5730] = 136097,
-				[6390] = 136097,
-				[6392] = 136097,
-				[10427] = 136097,
-				[25525] = 136097,
-				[6391] = 136097,
-				[10428] = 136097,
+				[7184] = 132281,
 			},
 		},
 		["Magtheridon Melee Trinket"] = {
@@ -24053,9 +24115,9 @@ WeakAurasOptionsSaved = {
 				[34774] = 135934,
 			},
 		},
-		["Nullify Disease"] = {
+		["Parachute Cloak"] = {
 			["spells"] = {
-				[2871] = 136083,
+				[12616] = 136235,
 			},
 		},
 		["Peace of Ogri'la"] = {
@@ -24139,9 +24201,9 @@ WeakAurasOptionsSaved = {
 				[7929] = 136192,
 			},
 		},
-		["Increased Agility 26"] = {
+		["Flarecore Gloves"] = {
 			["spells"] = {
-				[14390] = 136235,
+				[20849] = 132149,
 			},
 		},
 		["Brewfest Reveler - Dwarf"] = {
@@ -24149,9 +24211,9 @@ WeakAurasOptionsSaved = {
 				[43909] = 132792,
 			},
 		},
-		["Free Master"] = {
+		["Crocolisk Gumbo"] = {
 			["spells"] = {
-				[1528] = 136064,
+				[3373] = 136192,
 			},
 		},
 		["Increased Shadow Resist 05"] = {
@@ -24195,9 +24257,9 @@ WeakAurasOptionsSaved = {
 				[28763] = 136235,
 			},
 		},
-		["Thick Armor Kit"] = {
+		["Enchanter's Cowl"] = {
 			["spells"] = {
-				[10487] = 136247,
+				[3857] = 132149,
 			},
 		},
 		["Seasoned Wolf Kabob"] = {
@@ -24296,9 +24358,10 @@ WeakAurasOptionsSaved = {
 				[45106] = 136235,
 			},
 		},
-		["Frostwolf Muzzle DND"] = {
+		["Healing Ward V Passive"] = {
 			["spells"] = {
-				[21794] = 136235,
+				[4972] = 136222,
+				[11901] = 136222,
 			},
 		},
 		["Red Beam"] = {
@@ -24347,9 +24410,9 @@ WeakAurasOptionsSaved = {
 				[43880] = 132248,
 			},
 		},
-		["Increased Strength 15"] = {
+		["Conjure Ichman's Beacon DND"] = {
 			["spells"] = {
-				[13198] = 136235,
+				[21731] = 136235,
 			},
 		},
 		["Test Fury"] = {
@@ -24382,9 +24445,9 @@ WeakAurasOptionsSaved = {
 				[23043] = 136224,
 			},
 		},
-		["Krazek's Drug"] = {
+		["Divining Trance"] = {
 			["spells"] = {
-				[6903] = 134374,
+				[5017] = 136235,
 			},
 		},
 		["Holiday Cheer"] = {
@@ -24486,9 +24549,9 @@ WeakAurasOptionsSaved = {
 				[20037] = 136235,
 			},
 		},
-		["Arathi Basin Mark of Honor (Loser)"] = {
+		["Frost Power"] = {
 			["spells"] = {
-				[24952] = 136235,
+				[21920] = 134714,
 			},
 		},
 		["Beer Basted Boar Ribs"] = {
@@ -24758,9 +24821,9 @@ WeakAurasOptionsSaved = {
 				[43819] = 135982,
 			},
 		},
-		["Increase Arcane Dam 6"] = {
+		["Adored"] = {
 			["spells"] = {
-				[13593] = 136235,
+				[26680] = 135450,
 			},
 		},
 		["Fury of the Crashing Waves"] = {
@@ -24785,9 +24848,9 @@ WeakAurasOptionsSaved = {
 				[29643] = 136192,
 			},
 		},
-		["Touch of Vaelastrasz"] = {
+		["Mar'li Transform"] = {
 			["spells"] = {
-				[16319] = 136235,
+				[24084] = 136172,
 			},
 		},
 		["Furbolg Form"] = {
@@ -24967,9 +25030,10 @@ WeakAurasOptionsSaved = {
 				[36612] = 132278,
 			},
 		},
-		["Speak Draconic"] = {
+		["Ramstein's Lightning Bolts"] = {
 			["spells"] = {
-				[23758] = 136036,
+				[17668] = 135990,
+				[17669] = 135990,
 			},
 		},
 		["Reduced Rejuvenation Cost"] = {
@@ -25006,9 +25070,9 @@ WeakAurasOptionsSaved = {
 				[43730] = 135990,
 			},
 		},
-		["Freeze III PROC"] = {
+		["Challenger is Dazed"] = {
 			["spells"] = {
-				[2647] = 135860,
+				[8672] = 136175,
 			},
 		},
 		["Flame Armor Kit"] = {
@@ -25061,9 +25125,9 @@ WeakAurasOptionsSaved = {
 				[40622] = 132536,
 			},
 		},
-		["Large Yellow Firework Cluster"] = {
+		["Video Camera 4"] = {
 			["spells"] = {
-				[26519] = 136235,
+				[25762] = 132347,
 			},
 		},
 		["Trigger Brewfest Racing Ram - Relay Race - Intro"] = {
@@ -25141,10 +25205,9 @@ WeakAurasOptionsSaved = {
 				[37523] = 134952,
 			},
 		},
-		["Enchant 2H Weapon - Savagery"] = {
+		["Dirk's Rememberin' Poison"] = {
 			["spells"] = {
-				[27971] = 135913,
-				[46462] = 135913,
+				[27582] = 136116,
 			},
 		},
 		["Hardened Skin"] = {
@@ -25167,15 +25230,9 @@ WeakAurasOptionsSaved = {
 				[39660] = 136235,
 			},
 		},
-		["Ice Barrier"] = {
+		["Prismatic Form: Water"] = {
 			["spells"] = {
-				[11426] = 135988,
-				[13033] = 135988,
-				[27134] = 135988,
-				[13031] = 135988,
-				[33245] = 135988,
-				[13032] = 135988,
-				[33405] = 135988,
+				[4935] = 136160,
 			},
 		},
 		["Diabolic Remedy"] = {
@@ -25531,9 +25588,9 @@ WeakAurasOptionsSaved = {
 				[25804] = 132791,
 			},
 		},
-		["Mass Teleport"] = {
+		["Applying the Lure"] = {
 			["spells"] = {
-				[16807] = 135994,
+				[15627] = 136235,
 			},
 		},
 		["Lesser Shielding"] = {
@@ -25632,10 +25689,9 @@ WeakAurasOptionsSaved = {
 				[29188] = 135743,
 			},
 		},
-		["Devotion Armor Increased"] = {
+		["Xiggs Signal Flare"] = {
 			["spells"] = {
-				[27850] = 136052,
-				[352513] = 136052,
+				[12283] = 136235,
 			},
 		},
 		["Gossip NPC Appearance - Human Male, Halloween"] = {
@@ -25929,9 +25985,9 @@ WeakAurasOptionsSaved = {
 				[32366] = 136160,
 			},
 		},
-		["Stunning Strike"] = {
+		["QAEnchant Weapon +15 Strength"] = {
 			["spells"] = {
-				[5703] = 132326,
+				[27093] = 135913,
 			},
 		},
 		["Cosmetic - Ashli's Fireball 01"] = {
@@ -25954,15 +26010,9 @@ WeakAurasOptionsSaved = {
 				[28325] = 136235,
 			},
 		},
-		["Furor"] = {
+		["Teleport Anvilmar"] = {
 			["spells"] = {
-				[17059] = 135881,
-				[17060] = 135881,
-				[17061] = 135881,
-				[17056] = 135881,
-				[17057] = 135881,
-				[17058] = 135881,
-				[17099] = 136152,
+				[1936] = 136235,
 			},
 		},
 		["Omen's Moonlight"] = {
@@ -26092,9 +26142,9 @@ WeakAurasOptionsSaved = {
 				[23705] = 136235,
 			},
 		},
-		["Fel Suppression"] = {
+		["Freeze Anim"] = {
 			["spells"] = {
-				[10270] = 135965,
+				[16245] = 136235,
 			},
 		},
 		["Increased Nature Resist 02"] = {
@@ -26181,9 +26231,9 @@ WeakAurasOptionsSaved = {
 				[43362] = 132149,
 			},
 		},
-		["Increased Frost Resist 44"] = {
+		["Flame Spray"] = {
 			["spells"] = {
-				[14980] = 136235,
+				[10733] = 135805,
 			},
 		},
 		["Uldaman Sub-Boss Agro"] = {
@@ -26278,9 +26328,9 @@ WeakAurasOptionsSaved = {
 				[5409] = 136235,
 			},
 		},
-		["Greater Magic Wand"] = {
+		["Enchant Boots - Greater Stamina"] = {
 			["spells"] = {
-				[14807] = 135144,
+				[20020] = 135913,
 			},
 		},
 		["Summon Blue Moth"] = {
@@ -26494,9 +26544,9 @@ WeakAurasOptionsSaved = {
 				[43347] = 136235,
 			},
 		},
-		["Transform C'Thun -> Phase 2"] = {
+		["Summon Templar Fire, Trigger"] = {
 			["spells"] = {
-				[26232] = 136235,
+				[24747] = 136235,
 			},
 		},
 		["Drop Mine"] = {
@@ -26583,9 +26633,9 @@ WeakAurasOptionsSaved = {
 				[36031] = 132311,
 			},
 		},
-		["Bolt of Netherweave"] = {
+		["Small Yellow Rocket"] = {
 			["spells"] = {
-				[26745] = 132149,
+				[26295] = 136235,
 			},
 		},
 		["Tame Prairie Stalker"] = {
@@ -26614,9 +26664,9 @@ WeakAurasOptionsSaved = {
 				[43324] = 136235,
 			},
 		},
-		["Arcane Bubble"] = {
+		["Copper Claymore"] = {
 			["spells"] = {
-				[9438] = 135896,
+				[9983] = 136192,
 			},
 		},
 		["Use Legion Teleporter"] = {
@@ -26769,9 +26819,9 @@ WeakAurasOptionsSaved = {
 				[11473] = 136235,
 			},
 		},
-		["Shadow Staff"] = {
+		["Receive Reward AND Quest Object, Undercity Guard"] = {
 			["spells"] = {
-				[27338] = 136137,
+				[27246] = 136235,
 			},
 		},
 		["Periodic Taunt"] = {
@@ -26789,9 +26839,11 @@ WeakAurasOptionsSaved = {
 				[43263] = 136025,
 			},
 		},
-		["Freeze Rookery Egg"] = {
+		["Slowing Poison"] = {
 			["spells"] = {
-				[15748] = 136235,
+				[8601] = 136093,
+				[14897] = 136093,
+				[7992] = 136093,
 			},
 		},
 		["Cosmetic - Zul'Aman - Dust Cloud"] = {
@@ -26858,9 +26910,9 @@ WeakAurasOptionsSaved = {
 				[42410] = 136235,
 			},
 		},
-		["Pet Upgrade"] = {
+		["Punctured Voodoo Doll ROG DND"] = {
 			["spells"] = {
-				[1588] = 136235,
+				[24281] = 136235,
 			},
 		},
 		["Summon Templar, Trigger"] = {
@@ -26907,9 +26959,12 @@ WeakAurasOptionsSaved = {
 				[21456] = 136235,
 			},
 		},
-		["Felstriker"] = {
+		["Surefooted"] = {
 			["spells"] = {
-				[16551] = 132090,
+				[27953] = 132219,
+				[19290] = 132219,
+				[19294] = 132219,
+				[24283] = 132219,
 			},
 		},
 		["Spirit Decay"] = {
@@ -26928,18 +26983,10 @@ WeakAurasOptionsSaved = {
 				[37675] = 135797,
 			},
 		},
-		["Explode"] = {
+		["Improved Prayer of Healing"] = {
 			["spells"] = {
-				[36719] = 135735,
-				[26059] = 135826,
-				[28433] = 135826,
-				[7670] = 135805,
-				[36722] = 135735,
-				[38830] = 135735,
-				[38831] = 135735,
-				[25698] = 135826,
-				[30687] = 135826,
-				[25699] = 135826,
+				[21339] = 136235,
+				[37564] = 136235,
 			},
 		},
 		["Ground Stomp"] = {
@@ -27058,10 +27105,9 @@ WeakAurasOptionsSaved = {
 				[43130] = 136064,
 			},
 		},
-		["Body Switch"] = {
+		["Attack Power 34"] = {
 			["spells"] = {
-				[22900] = 136192,
-				[22901] = 136192,
+				[15806] = 136235,
 			},
 		},
 		["Ancestor Invisibility"] = {
@@ -27411,9 +27457,9 @@ WeakAurasOptionsSaved = {
 				[44436] = 133981,
 			},
 		},
-		["Hatch Rookery Egg"] = {
+		["Web Spin"] = {
 			["spells"] = {
-				[15746] = 132834,
+				[24600] = 136022,
 			},
 		},
 		["Wand Specialization"] = {
@@ -27648,9 +27694,14 @@ WeakAurasOptionsSaved = {
 				[14627] = 136235,
 			},
 		},
-		["Summon Deviate Viper"] = {
+		["Nature's Ally"] = {
 			["spells"] = {
-				[7973] = 136121,
+				[21938] = 136095,
+				[21925] = 136095,
+				[20988] = 136095,
+				[21927] = 136095,
+				[21928] = 136095,
+				[21926] = 136095,
 			},
 		},
 		["Plainsrunning"] = {
@@ -27668,13 +27719,9 @@ WeakAurasOptionsSaved = {
 				[48684] = 136235,
 			},
 		},
-		["Windfury Totem Effect"] = {
+		["Demon Summoning Torch"] = {
 			["spells"] = {
-				[10607] = 136114,
-				[10611] = 136114,
-				[25580] = 136114,
-				[8514] = 136114,
-				[25579] = 136114,
+				[25793] = 136235,
 			},
 		},
 		["Shield Stance"] = {
@@ -27914,9 +27961,9 @@ WeakAurasOptionsSaved = {
 				[36308] = 135731,
 			},
 		},
-		["Quest - Polymorph Impact"] = {
+		["Proc Self Heal 22"] = {
 			["spells"] = {
-				[24180] = 136235,
+				[9778] = 136235,
 			},
 		},
 		["Cosmetic - Zul'Aman Quest - Zul'jin Spirit Beam"] = {
@@ -28106,20 +28153,14 @@ WeakAurasOptionsSaved = {
 				[36507] = 134520,
 			},
 		},
-		["Spell Warding"] = {
+		["Increase Holy Dam 29"] = {
 			["spells"] = {
-				[27902] = 135976,
-				[27903] = 135976,
-				[27904] = 135976,
-				[31846] = 135925,
-				[31847] = 135925,
-				[27900] = 135976,
-				[27901] = 135976,
+				[21518] = 136235,
 			},
 		},
-		["Figurine - Emerald Owl"] = {
+		["Duskwither's Fireball"] = {
 			["spells"] = {
-				[26909] = 136235,
+				[26660] = 135808,
 			},
 		},
 		["Great Golden Draenite"] = {
@@ -28314,15 +28355,9 @@ WeakAurasOptionsSaved = {
 				[42655] = 136235,
 			},
 		},
-		["Upgrade Zigguraut"] = {
+		["Enchant Bracer - Minor Stamina"] = {
 			["spells"] = {
-				[17241] = 136235,
-				[17242] = 136235,
-				[17236] = 136235,
-				[17237] = 136235,
-				[17224] = 136235,
-				[17239] = 136235,
-				[17240] = 136235,
+				[7457] = 135913,
 			},
 		},
 		["Cosmetic - Budd Nedreck - Throw Vial Rebound"] = {
@@ -28678,12 +28713,9 @@ WeakAurasOptionsSaved = {
 				[43150] = 132133,
 			},
 		},
-		["Greater Intellect"] = {
+		["Horde Reputation"] = {
 			["spells"] = {
-				[11394] = 134721,
-				[11396] = 134721,
-				[11395] = 134721,
-				[13825] = 136235,
+				[26125] = 132485,
 			},
 		},
 		["Cannon Blast"] = {
@@ -28938,9 +28970,9 @@ WeakAurasOptionsSaved = {
 				[42528] = 136235,
 			},
 		},
-		["Fill the Egg of Hakkar"] = {
+		["Wound Poison V"] = {
 			["spells"] = {
-				[12735] = 136235,
+				[27283] = 134197,
 			},
 		},
 		["Brewfest - Throw Brewfest Mug Bounce"] = {
@@ -28987,10 +29019,9 @@ WeakAurasOptionsSaved = {
 				[42520] = 135819,
 			},
 		},
-		["Compact Harvest Reaper"] = {
+		["Gray Ram"] = {
 			["spells"] = {
-				[4078] = 136172,
-				[7979] = 136172,
+				[6777] = 132248,
 			},
 		},
 		["Thick Murloc Armor"] = {
@@ -29483,9 +29514,9 @@ WeakAurasOptionsSaved = {
 				[14645] = 136235,
 			},
 		},
-		["Tough Scorpid Breastplate"] = {
+		["Summon Hyacinth Macaw"] = {
 			["spells"] = {
-				[10525] = 136247,
+				[10682] = 132311,
 			},
 		},
 		["Destroy Earthen Guards"] = {
@@ -29510,10 +29541,9 @@ WeakAurasOptionsSaved = {
 				[42426] = 136235,
 			},
 		},
-		["Mistletoe"] = {
+		["Getting Tide Pool Sample #4"] = {
 			["spells"] = {
-				[26004] = 136041,
-				[26218] = 133749,
+				[12808] = 136235,
 			},
 		},
 		["Attack Power - Feral (+0697)"] = {
@@ -29670,9 +29700,9 @@ WeakAurasOptionsSaved = {
 				[42395] = 132122,
 			},
 		},
-		["Increased Fire Resist 26"] = {
+		["Conjure Guse's Beacon DND"] = {
 			["spells"] = {
-				[14606] = 136235,
+				[21356] = 136235,
 			},
 		},
 		["Enchant Cloak - Fire Resistance"] = {
@@ -29803,9 +29833,9 @@ WeakAurasOptionsSaved = {
 				[8554] = 132792,
 			},
 		},
-		["Treat"] = {
+		["Increased Offhand Damage 10"] = {
 			["spells"] = {
-				[24715] = 136235,
+				[21012] = 136235,
 			},
 		},
 		["Murloc Costume"] = {
@@ -29858,9 +29888,9 @@ WeakAurasOptionsSaved = {
 				[42349] = 132384,
 			},
 		},
-		["Sharp Dresser"] = {
+		["Increased Frost Resist 46"] = {
 			["spells"] = {
-				[17816] = 136235,
+				[14982] = 136235,
 			},
 		},
 		["Tag: Purple Ball"] = {
@@ -29980,9 +30010,9 @@ WeakAurasOptionsSaved = {
 				[42337] = 132193,
 			},
 		},
-		["Magic Missile (TEST)"] = {
+		["Golden Scale Coif"] = {
 			["spells"] = {
-				[58] = 136235,
+				[3503] = 136192,
 			},
 		},
 		["Has Water Bucket"] = {
@@ -30026,10 +30056,9 @@ WeakAurasOptionsSaved = {
 				[31575] = 135752,
 			},
 		},
-		["Heavy Runecloth Bandage"] = {
+		["Increased Arcane Resist 40"] = {
 			["spells"] = {
-				[18630] = 136192,
-				[18632] = 133682,
+				[14742] = 136235,
 			},
 		},
 		["Unstable Currents"] = {
@@ -30053,9 +30082,9 @@ WeakAurasOptionsSaved = {
 				[42322] = 132384,
 			},
 		},
-		["Greater Holy Protection Potion"] = {
+		["Windreaper"] = {
 			["spells"] = {
-				[17579] = 136235,
+				[20586] = 136022,
 			},
 		},
 		["Researcher Arcane Power"] = {
@@ -30202,9 +30231,9 @@ WeakAurasOptionsSaved = {
 				[40226] = 135869,
 			},
 		},
-		["Transmute: Water to Undeath"] = {
+		["Linen Belt"] = {
 			["spells"] = {
-				[17564] = 134459,
+				[8776] = 132149,
 			},
 		},
 		["Salvage Wreckage"] = {
@@ -30235,9 +30264,9 @@ WeakAurasOptionsSaved = {
 				[742] = 132318,
 			},
 		},
-		["Elixir of Defense"] = {
+		["Nefarian's Barrier"] = {
 			["spells"] = {
-				[3177] = 136235,
+				[22663] = 136120,
 			},
 		},
 		["Pumpkin Life Cycle"] = {
@@ -30280,9 +30309,10 @@ WeakAurasOptionsSaved = {
 				[42271] = 136235,
 			},
 		},
-		["Block Value 19"] = {
+		["Tranquil Mechanical Yeti"] = {
 			["spells"] = {
-				[23731] = 136235,
+				[26011] = 136235,
+				[26012] = 136235,
 			},
 		},
 		["Summon Duke"] = {
@@ -30379,9 +30409,9 @@ WeakAurasOptionsSaved = {
 				[33963] = 136235,
 			},
 		},
-		["Undead Slayer 108"] = {
+		["Enchant Weapon - Minor Striking"] = {
 			["spells"] = {
-				[17508] = 135923,
+				[7788] = 135913,
 			},
 		},
 		["Summon Midsummer Bonfire Fuel Counter"] = {
@@ -30394,9 +30424,9 @@ WeakAurasOptionsSaved = {
 				[11960] = 136020,
 			},
 		},
-		["Dreamless Sleep"] = {
+		["Enchant Shield - Lesser Protection"] = {
 			["spells"] = {
-				[15822] = 136090,
+				[13464] = 135913,
 			},
 		},
 		["Banish the Demons: Banishment Beam Periodic Aura Effect"] = {
@@ -30461,9 +30491,22 @@ WeakAurasOptionsSaved = {
 				[10657] = 136247,
 			},
 		},
-		["Mana Spike"] = {
+		["Wyvern Sting"] = {
 			["spells"] = {
-				[8358] = 135915,
+				[24131] = 135125,
+				[24135] = 135125,
+				[27068] = 135125,
+				[24132] = 135125,
+				[24335] = 135125,
+				[27069] = 135125,
+				[24133] = 135125,
+				[41186] = 135125,
+				[19386] = 135125,
+				[26233] = 135125,
+				[24134] = 135125,
+				[26748] = 135125,
+				[26180] = 135125,
+				[24336] = 135125,
 			},
 		},
 		["Eternal Silence"] = {
@@ -30522,9 +30565,9 @@ WeakAurasOptionsSaved = {
 				[42177] = 136235,
 			},
 		},
-		["Ebon Shadowbag"] = {
+		["Purple Firework Cluster"] = {
 			["spells"] = {
-				[26759] = 132149,
+				[26326] = 136235,
 			},
 		},
 		["Evidence Marker Invis"] = {
@@ -30636,10 +30679,9 @@ WeakAurasOptionsSaved = {
 				[30752] = 132111,
 			},
 		},
-		["Rallying Cry of the Dragonslayer"] = {
+		["Attack Power 38"] = {
 			["spells"] = {
-				[22888] = 134153,
-				[355363] = 134153,
+				[15808] = 136235,
 			},
 		},
 		["Repentance"] = {
@@ -30795,9 +30837,13 @@ WeakAurasOptionsSaved = {
 				[42127] = 136235,
 			},
 		},
-		["Swift Timber Wolf"] = {
+		["Ancestral Knowledge"] = {
 			["spells"] = {
-				[23251] = 132266,
+				[17486] = 136162,
+				[17487] = 136162,
+				[17488] = 136162,
+				[17489] = 136162,
+				[17485] = 136162,
 			},
 		},
 		["Call Anathema"] = {
@@ -30825,9 +30871,9 @@ WeakAurasOptionsSaved = {
 				[36640] = 136051,
 			},
 		},
-		["Elixir of Ogre's Strength"] = {
+		["Frost Leather Cloak"] = {
 			["spells"] = {
-				[3188] = 136235,
+				[9198] = 136247,
 			},
 		},
 		["Find Minerals"] = {
@@ -30841,15 +30887,9 @@ WeakAurasOptionsSaved = {
 				[33570] = 136023,
 			},
 		},
-		["Flameblade"] = {
+		["Mana Spike"] = {
 			["spells"] = {
-				[7807] = 135811,
-				[7874] = 135811,
-				[7806] = 135811,
-				[7829] = 135811,
-				[38793] = 135811,
-				[7875] = 135811,
-				[7808] = 135811,
+				[8358] = 135915,
 			},
 		},
 		["Chaos Slam"] = {
@@ -30960,9 +31000,9 @@ WeakAurasOptionsSaved = {
 				[19090] = 136235,
 			},
 		},
-		["[PH] Summon Minion parent (ghost/skeleton)"] = {
+		["Lovingly Crafted Boomstick"] = {
 			["spells"] = {
-				[28184] = 136235,
+				[3939] = 136235,
 			},
 		},
 		["Dark Leather Cloak"] = {
@@ -31066,9 +31106,9 @@ WeakAurasOptionsSaved = {
 				[13010] = 135989,
 			},
 		},
-		["Azrethoc's Flight"] = {
+		["Increased Spirit 38"] = {
 			["spells"] = {
-				[7974] = 136018,
+				[14459] = 136235,
 			},
 		},
 		["Shadoweave Robe"] = {
@@ -31081,9 +31121,9 @@ WeakAurasOptionsSaved = {
 				[42093] = 136235,
 			},
 		},
-		["Forsaken Skills"] = {
+		["Call of Eskhandar"] = {
 			["spells"] = {
-				[7054] = 136121,
+				[22648] = 134176,
 			},
 		},
 		["Headless Horseman - Fire Size"] = {
@@ -31116,15 +31156,9 @@ WeakAurasOptionsSaved = {
 				[16785] = 135903,
 			},
 		},
-		["Create Soulstone"] = {
+		["Wickerman Guardian Ember"] = {
 			["spells"] = {
-				[20755] = 136210,
-				[693] = 136210,
-				[20022] = 136210,
-				[20752] = 136210,
-				[27238] = 136210,
-				[20757] = 136210,
-				[20756] = 136210,
+				[25007] = 136235,
 			},
 		},
 		["Increase Healing 103"] = {
@@ -31132,16 +31166,9 @@ WeakAurasOptionsSaved = {
 				[42089] = 136235,
 			},
 		},
-		["Bear Form"] = {
+		["Increase Arcane Dam 31"] = {
 			["spells"] = {
-				[7090] = 132276,
-				[31792] = 132276,
-				[5487] = 132276,
-				[32357] = 132276,
-				[19030] = 132276,
-				[27543] = 132276,
-				[19179] = 132276,
-				[18309] = 132276,
+				[17827] = 136235,
 			},
 		},
 		["Leech (TEST)"] = {
@@ -31220,9 +31247,9 @@ WeakAurasOptionsSaved = {
 				[42074] = 136235,
 			},
 		},
-		["Greater Water Breathing"] = {
+		["QAEnchant Cloak +10 Shadow Resistance"] = {
 			["spells"] = {
-				[22807] = 135859,
+				[6476] = 136235,
 			},
 		},
 		["Guardian's Favor"] = {
@@ -31236,9 +31263,9 @@ WeakAurasOptionsSaved = {
 				[12590] = 136235,
 			},
 		},
-		["Summon Tamed Boar"] = {
+		["Grom's Forsaken Tribute"] = {
 			["spells"] = {
-				[7905] = 135997,
+				[24103] = 136235,
 			},
 		},
 		["Aggro Bleeding Hollow"] = {
@@ -31357,9 +31384,10 @@ WeakAurasOptionsSaved = {
 				[37449] = 136235,
 			},
 		},
-		["Green Silk Armor"] = {
+		["Increase Shadow Dam 57"] = {
 			["spells"] = {
-				[8784] = 132149,
+				[25706] = 136235,
+				[26729] = 136235,
 			},
 		},
 		["Resistances"] = {
@@ -31368,9 +31396,10 @@ WeakAurasOptionsSaved = {
 				[37637] = 136116,
 			},
 		},
-		["Increased Stamina 42"] = {
+		["Corrupted Healing"] = {
 			["spells"] = {
-				[14954] = 136235,
+				[23401] = 136129,
+				[23402] = 136152,
 			},
 		},
 		["[DND]Rescue Wyvern"] = {
@@ -31417,9 +31446,9 @@ WeakAurasOptionsSaved = {
 				[42051] = 135744,
 			},
 		},
-		["Stoneshield"] = {
+		["Extract Essence"] = {
 			["spells"] = {
-				[4941] = 134847,
+				[4538] = 135956,
 			},
 		},
 		["Eye for an Eye"] = {
@@ -31725,9 +31754,9 @@ WeakAurasOptionsSaved = {
 				[25036] = 136235,
 			},
 		},
-		["Embossed Leather Boots"] = {
+		["Increased Arcane Resist 39"] = {
 			["spells"] = {
-				[2161] = 136247,
+				[14741] = 136235,
 			},
 		},
 		["Coarse Weightstone"] = {
@@ -31740,9 +31769,9 @@ WeakAurasOptionsSaved = {
 				[41986] = 132352,
 			},
 		},
-		["Gloves of the Greatfather"] = {
+		["Increased Nature Resist 18"] = {
 			["spells"] = {
-				[21943] = 136247,
+				[14639] = 136235,
 			},
 		},
 		["Inscribed Noble Topaz"] = {
@@ -31973,9 +32002,9 @@ WeakAurasOptionsSaved = {
 				[13744] = 135806,
 			},
 		},
-		["Juju Ember"] = {
+		["Dreamweave Gloves"] = {
 			["spells"] = {
-				[16326] = 134317,
+				[12067] = 132149,
 			},
 		},
 		["Increase Nature Dam 47"] = {
@@ -32365,10 +32394,9 @@ WeakAurasOptionsSaved = {
 				[22761] = 136192,
 			},
 		},
-		["Spirit Totem"] = {
+		["Conjure Stormpike Rank 2 Insignia DND"] = {
 			["spells"] = {
-				[25000] = 136102,
-				[25001] = 136061,
+				[22115] = 136235,
 			},
 		},
 		["Earthbind Totem"] = {
@@ -32424,9 +32452,9 @@ WeakAurasOptionsSaved = {
 				[38916] = 134937,
 			},
 		},
-		["Curiously Tasty Omelet"] = {
+		["Enchant Weapon - Crusader"] = {
 			["spells"] = {
-				[3376] = 136192,
+				[20034] = 135913,
 			},
 		},
 		["Guns"] = {
@@ -32579,9 +32607,9 @@ WeakAurasOptionsSaved = {
 				[41560] = 136235,
 			},
 		},
-		["Increased Fire Resist 22"] = {
+		["Stone Dwarf Awaken Visual"] = {
 			["spells"] = {
-				[14602] = 136235,
+				[10254] = 136025,
 			},
 		},
 		["Curse of the Plaguebringer"] = {
@@ -32599,9 +32627,9 @@ WeakAurasOptionsSaved = {
 				[37366] = 136235,
 			},
 		},
-		["Copper Battle Axe"] = {
+		["Glowy (Yellow)"] = {
 			["spells"] = {
-				[3293] = 136192,
+				[22580] = 135741,
 			},
 		},
 		["Summon Reins (Voranaku)"] = {
@@ -32609,9 +32637,9 @@ WeakAurasOptionsSaved = {
 				[41548] = 136235,
 			},
 		},
-		["Fishing Skill +50"] = {
+		["Increased Shadow Resist 29"] = {
 			["spells"] = {
-				[8083] = 136245,
+				[14692] = 136235,
 			},
 		},
 		["Mage Tier 6 Trinket"] = {
@@ -32629,9 +32657,9 @@ WeakAurasOptionsSaved = {
 				[17841] = 136235,
 			},
 		},
-		["Beast Slaying"] = {
+		["Corrupt Weapon"] = {
 			["spells"] = {
-				[20557] = 134357,
+				[23436] = 136129,
 			},
 		},
 		["Deadly Poison III"] = {
@@ -32665,9 +32693,9 @@ WeakAurasOptionsSaved = {
 				[35071] = 132204,
 			},
 		},
-		["Touch of Death"] = {
+		["Abyssal Punishment"] = {
 			["spells"] = {
-				[3108] = 136230,
+				[24803] = 136235,
 			},
 		},
 		["Summon Cottontail Rabbit"] = {
@@ -33183,14 +33211,9 @@ WeakAurasOptionsSaved = {
 				[9098] = 136235,
 			},
 		},
-		["Unbridled Wrath"] = {
+		["Speak Draconic"] = {
 			["spells"] = {
-				[12322] = 136097,
-				[13002] = 136097,
-				[12964] = 136097,
-				[13000] = 136097,
-				[13001] = 136097,
-				[12999] = 136097,
+				[23758] = 136036,
 			},
 		},
 		["Brewfest Request Chick Chuck Mug Aura"] = {
@@ -33223,9 +33246,10 @@ WeakAurasOptionsSaved = {
 				[10662] = 133611,
 			},
 		},
-		["Increase Shadow Dam 21"] = {
+		["Slime"] = {
 			["spells"] = {
-				[9328] = 136235,
+				[16456] = 136006,
+				[28801] = 132108,
 			},
 		},
 		["Tranquilizing Shot"] = {
@@ -33488,40 +33512,9 @@ WeakAurasOptionsSaved = {
 				[25260] = 136184,
 			},
 		},
-		["Renew"] = {
+		["Attack Power Ranged 12"] = {
 			["spells"] = {
-				[36969] = 135953,
-				[23895] = 135953,
-				[25058] = 135953,
-				[6075] = 135953,
-				[47079] = 135953,
-				[36679] = 135953,
-				[37260] = 135953,
-				[25315] = 135953,
-				[38210] = 135953,
-				[27606] = 135953,
-				[10927] = 135953,
-				[8362] = 135953,
-				[31325] = 135953,
-				[44174] = 135953,
-				[10928] = 135953,
-				[46563] = 135953,
-				[46192] = 135953,
-				[37978] = 135953,
-				[10929] = 135953,
-				[22168] = 135953,
-				[25222] = 135953,
-				[34423] = 135953,
-				[139] = 135953,
-				[41456] = 135953,
-				[45859] = 135953,
-				[6076] = 135953,
-				[6074] = 135953,
-				[6078] = 135953,
-				[6077] = 135953,
-				[28807] = 136235,
-				[11640] = 135953,
-				[25221] = 135953,
+				[21430] = 136235,
 			},
 		},
 		["Anger Camp Key"] = {
@@ -33557,9 +33550,10 @@ WeakAurasOptionsSaved = {
 				[41846] = 136235,
 			},
 		},
-		["Remove Amorous"] = {
+		["Persistent Shield"] = {
 			["spells"] = {
-				[26879] = 136235,
+				[26467] = 133575,
+				[26470] = 136094,
 			},
 		},
 		["Painful Rage"] = {
@@ -33578,9 +33572,9 @@ WeakAurasOptionsSaved = {
 				[41360] = 135734,
 			},
 		},
-		["Onyxia"] = {
+		["Incite Hostility"] = {
 			["spells"] = {
-				[18387] = 136235,
+				[8354] = 132270,
 			},
 		},
 		["Slip'kik's Savvy"] = {
@@ -33604,14 +33598,9 @@ WeakAurasOptionsSaved = {
 				[29653] = 135990,
 			},
 		},
-		["Rage"] = {
+		["Summon Aqua Guardian"] = {
 			["spells"] = {
-				[38380] = 136116,
-				[6612] = 132366,
-				[16789] = 136224,
-				[9174] = 132277,
-				[32888] = 136116,
-				[40417] = 136224,
+				[8372] = 135864,
 			},
 		},
 		["Spectral Blast"] = {
@@ -33810,9 +33799,9 @@ WeakAurasOptionsSaved = {
 				[41304] = 136235,
 			},
 		},
-		["Peon Sleeping (Stun emote)"] = {
+		["Washte Pawne's Resolve"] = {
 			["spells"] = {
-				[18795] = 136235,
+				[5324] = 136075,
 			},
 		},
 		["Adept's Elixir"] = {
@@ -33954,9 +33943,23 @@ WeakAurasOptionsSaved = {
 				[24994] = 136235,
 			},
 		},
-		["Gnomish Transporter"] = {
+		["Berserk"] = {
 			["spells"] = {
-				[23453] = 135728,
+				[41924] = 136224,
+				[35595] = 136224,
+				[26615] = 132117,
+				[23397] = 136129,
+				[46587] = 136224,
+				[43] = 132277,
+				[31974] = 132117,
+				[28498] = 136224,
+				[45078] = 136206,
+				[32965] = 136146,
+				[21340] = 136146,
+				[26068] = 132117,
+				[47008] = 136224,
+				[26662] = 136224,
+				[27680] = 136224,
 			},
 		},
 		["Magic Sucker Device Channel(dnd)"] = {
@@ -33979,9 +33982,9 @@ WeakAurasOptionsSaved = {
 				[41283] = 136235,
 			},
 		},
-		["Prophecy Flash Heal Bonus"] = {
+		["Summon Illusionary Phantasm"] = {
 			["spells"] = {
-				[21973] = 136235,
+				[8986] = 135824,
 			},
 		},
 		["Taxi - Skyguard Outpost to Skettis"] = {
@@ -34083,9 +34086,10 @@ WeakAurasOptionsSaved = {
 				[14638] = 136235,
 			},
 		},
-		["Localized Toxin"] = {
+		["Improved Lay on Hands"] = {
 			["spells"] = {
-				[7947] = 136016,
+				[20234] = 135928,
+				[20235] = 135928,
 			},
 		},
 		["Quest - Black Temple - Deathsworn - Door Open"] = {
@@ -34231,9 +34235,9 @@ WeakAurasOptionsSaved = {
 				[32265] = 135894,
 			},
 		},
-		["Charm (Possess)"] = {
+		["Journeyman Cook"] = {
 			["spells"] = {
-				[530] = 135994,
+				[3412] = 133971,
 			},
 		},
 		["Rimblat Grows Flower DND"] = {
@@ -34317,9 +34321,9 @@ WeakAurasOptionsSaved = {
 				[3855] = 132149,
 			},
 		},
-		["Light On Fire"] = {
+		["Bronze Greatsword"] = {
 			["spells"] = {
-				[17667] = 136235,
+				[9986] = 136192,
 			},
 		},
 		["Goblin Car Camera"] = {
@@ -34366,9 +34370,9 @@ WeakAurasOptionsSaved = {
 				[8203] = 135994,
 			},
 		},
-		["Heavy Woolen Gloves"] = {
+		["Thorns Dmg +3"] = {
 			["spells"] = {
-				[3843] = 132149,
+				[20886] = 136051,
 			},
 		},
 		["Zul'Aman Object Visual"] = {
@@ -34402,9 +34406,9 @@ WeakAurasOptionsSaved = {
 				[41228] = 136235,
 			},
 		},
-		["Increase Shadow Dam 29"] = {
+		["Increased Arcane Resist 42"] = {
 			["spells"] = {
-				[18010] = 136235,
+				[14966] = 136235,
 			},
 		},
 		["Bash'ir Landing Boss: Reagent - West"] = {
@@ -34450,14 +34454,9 @@ WeakAurasOptionsSaved = {
 				[41217] = 136235,
 			},
 		},
-		["Quake"] = {
+		["Large Timber Wolf"] = {
 			["spells"] = {
-				[30576] = 136025,
-				[30571] = 136235,
-				[30572] = 136235,
-				[26093] = 136025,
-				[30658] = 136235,
-				[30657] = 136235,
+				[580] = 132224,
 			},
 		},
 		["Summon Bash'ir Boss North"] = {
@@ -34503,10 +34502,9 @@ WeakAurasOptionsSaved = {
 				[22717] = 132251,
 			},
 		},
-		["ClearAll"] = {
+		["Increase Shadow Dam 69"] = {
 			["spells"] = {
-				[25565] = 136235,
-				[28471] = 135753,
+				[23265] = 136235,
 			},
 		},
 		["Debilitating Touch"] = {
@@ -34549,9 +34547,9 @@ WeakAurasOptionsSaved = {
 				[10729] = 136235,
 			},
 		},
-		["Bronze Greatsword"] = {
+		["The Power of Friendship"] = {
 			["spells"] = {
-				[9986] = 136192,
+				[26664] = 133345,
 			},
 		},
 		["Arcane Lightning"] = {
@@ -34592,9 +34590,9 @@ WeakAurasOptionsSaved = {
 				[39409] = 135913,
 			},
 		},
-		["Large Green Firework Cluster"] = {
+		["Archaedas Awaken Visual (DND)"] = {
 			["spells"] = {
-				[26490] = 136235,
+				[10347] = 136025,
 			},
 		},
 		["Great Purple Elekk"] = {
@@ -34855,13 +34853,9 @@ WeakAurasOptionsSaved = {
 				[3564] = 136248,
 			},
 		},
-		["Spiritual Focus"] = {
+		["Conjure Stormpike Rank 5 Insignia DND"] = {
 			["spells"] = {
-				[20209] = 135736,
-				[20205] = 135736,
-				[20206] = 135736,
-				[20207] = 135736,
-				[20208] = 135736,
+				[22118] = 136235,
 			},
 		},
 		["Distract"] = {
@@ -34884,9 +34878,9 @@ WeakAurasOptionsSaved = {
 				[34856] = 135966,
 			},
 		},
-		["Kreeg's Stout Beatdown"] = {
+		["Revive Dig Rat"] = {
 			["spells"] = {
-				[22790] = 132792,
+				[5161] = 135955,
 			},
 		},
 		["QAEnchant Cloak +3 Agility"] = {
@@ -34957,10 +34951,9 @@ WeakAurasOptionsSaved = {
 				[41107] = 132344,
 			},
 		},
-		["Arctic Reach"] = {
+		["Peon Sleeping (Stun emote)"] = {
 			["spells"] = {
-				[16757] = 136141,
-				[16758] = 136141,
+				[18795] = 136235,
 			},
 		},
 		["Runecloth Gloves"] = {
@@ -35077,9 +35070,9 @@ WeakAurasOptionsSaved = {
 				[9396] = 136235,
 			},
 		},
-		["Forsaken Skill: 2H Maces"] = {
+		["Skin of Rock"] = {
 			["spells"] = {
-				[7046] = 133040,
+				[3574] = 132154,
 			},
 		},
 		["QAEnchant Weapon +7 Damage"] = {
@@ -35092,9 +35085,9 @@ WeakAurasOptionsSaved = {
 				[22767] = 136235,
 			},
 		},
-		["Increased Spirit 11"] = {
+		["Increase Healing 187"] = {
 			["spells"] = {
-				[9112] = 136235,
+				[26814] = 136235,
 			},
 		},
 		["Raise Dead Check"] = {
@@ -35138,15 +35131,15 @@ WeakAurasOptionsSaved = {
 				[41053] = 135568,
 			},
 		},
-		["Sand Breath"] = {
+		["Increased Hit Rating 20"] = {
 			["spells"] = {
-				[31473] = 135831,
-				[39049] = 135831,
-				[20716] = 135831,
-				[20717] = 135831,
-				[35351] = 135831,
-				[31478] = 135831,
-				[31914] = 135831,
+				[15465] = 136235,
+				[39516] = 136235,
+				[39982] = 136235,
+				[41678] = 136235,
+				[39482] = 136235,
+				[41749] = 136235,
+				[41679] = 136235,
 			},
 		},
 		["Poleaxe Specialization"] = {
@@ -35334,9 +35327,9 @@ WeakAurasOptionsSaved = {
 				[24186] = 136235,
 			},
 		},
-		["Blacksmithing Skill +10"] = {
+		["Throw Dark Iron Ale"] = {
 			["spells"] = {
-				[7824] = 136241,
+				[14814] = 132791,
 			},
 		},
 		["Shield Guard"] = {
@@ -35680,10 +35673,9 @@ WeakAurasOptionsSaved = {
 				[17015] = 136235,
 			},
 		},
-		["Enchant Bracer - Restore Mana Prime"] = {
+		["Distracting Pain"] = {
 			["spells"] = {
-				[27913] = 135913,
-				[46497] = 135913,
+				[3603] = 132278,
 			},
 		},
 		["Summon Shade of Akama Trigger"] = {
@@ -35811,9 +35803,13 @@ WeakAurasOptionsSaved = {
 				[40909] = 136235,
 			},
 		},
-		["Summon Mana Bursts"] = {
+		["Gnomish Death Ray"] = {
 			["spells"] = {
-				[22939] = 135741,
+				[13278] = 136197,
+				[13279] = 136197,
+				[13493] = 136197,
+				[13280] = 136197,
+				[12759] = 136235,
 			},
 		},
 		["Crimson Silk Robe"] = {
@@ -35851,9 +35847,31 @@ WeakAurasOptionsSaved = {
 				[40902] = 136235,
 			},
 		},
-		["Dimensional Portal"] = {
+		["Attack Power 40"] = {
 			["spells"] = {
-				[6700] = 136235,
+				[41713] = 136235,
+				[41808] = 136235,
+				[14049] = 136235,
+				[41904] = 136235,
+				[41689] = 136235,
+				[41907] = 136235,
+				[41722] = 136235,
+				[41755] = 136235,
+				[41695] = 136235,
+				[41790] = 136235,
+				[41667] = 136235,
+				[41763] = 136235,
+				[41888] = 136235,
+				[41796] = 136235,
+				[41813] = 136235,
+				[41844] = 136235,
+				[41768] = 136235,
+				[41707] = 136235,
+				[41832] = 136235,
+				[41895] = 136235,
+				[41693] = 136235,
+				[41711] = 136235,
+				[41649] = 136235,
 			},
 		},
 		["Destroy Deathforged Infernal"] = {
@@ -36082,9 +36100,9 @@ WeakAurasOptionsSaved = {
 				[40874] = 136083,
 			},
 		},
-		["Summon Effect"] = {
+		["Increase Spell Dam 26"] = {
 			["spells"] = {
-				[8677] = 136119,
+				[18049] = 136235,
 			},
 		},
 		["Test Enemy Crit Bonus - 10%"] = {
@@ -36142,9 +36160,13 @@ WeakAurasOptionsSaved = {
 				[31981] = 136064,
 			},
 		},
-		["Roar of Fortitude"] = {
+		["Shadow Focus"] = {
 			["spells"] = {
-				[4238] = 132091,
+				[15329] = 136126,
+				[15260] = 136126,
+				[15327] = 136126,
+				[15328] = 136126,
+				[15330] = 136126,
 			},
 		},
 		["Wicked Beam"] = {
@@ -36162,9 +36184,9 @@ WeakAurasOptionsSaved = {
 				[15293] = 136192,
 			},
 		},
-		["Arcanoweave Boots"] = {
+		["Rocket, WHITE BIG"] = {
 			["spells"] = {
-				[26783] = 132149,
+				[26355] = 136235,
 			},
 		},
 		["Stormy Star of Elune"] = {
@@ -36236,32 +36258,14 @@ WeakAurasOptionsSaved = {
 				[23950] = 136235,
 			},
 		},
-		["Holy Shock"] = {
+		["Nightscape Headband"] = {
 			["spells"] = {
-				[25911] = 135972,
-				[25912] = 135972,
-				[25913] = 135972,
-				[20473] = 135972,
-				[33072] = 135972,
-				[33073] = 135972,
-				[33074] = 135972,
-				[25902] = 135972,
-				[25903] = 135972,
-				[27175] = 135972,
-				[20929] = 135972,
-				[27176] = 135972,
-				[20930] = 135972,
-				[25914] = 135972,
-				[36340] = 135972,
-				[35160] = 136235,
-				[27174] = 135972,
-				[38921] = 135972,
-				[32771] = 135972,
+				[10507] = 136247,
 			},
 		},
-		["Wavestorm 2"] = {
+		["Standard Scope"] = {
 			["spells"] = {
-				[553] = 136235,
+				[3978] = 136235,
 			},
 		},
 		["Agonizing Flames"] = {
@@ -36310,13 +36314,15 @@ WeakAurasOptionsSaved = {
 				[352971] = 135745,
 			},
 		},
-		["Call of Flame"] = {
+		["Stoneclaw Totem"] = {
 			["spells"] = {
-				[16162] = 135817,
-				[16163] = 135817,
-				[16160] = 135817,
-				[16038] = 135817,
-				[16161] = 135817,
+				[5730] = 136097,
+				[6390] = 136097,
+				[6392] = 136097,
+				[10427] = 136097,
+				[25525] = 136097,
+				[6391] = 136097,
+				[10428] = 136097,
 			},
 		},
 		["Gossip NPC Appearance - Dwarf Male"] = {
@@ -36339,9 +36345,9 @@ WeakAurasOptionsSaved = {
 				[26789] = 135808,
 			},
 		},
-		["Increased Fire Resist 28"] = {
+		["Worg Sentry"] = {
 			["spells"] = {
-				[14608] = 136235,
+				[16527] = 136129,
 			},
 		},
 		["Druid's Potion"] = {
@@ -36349,9 +36355,9 @@ WeakAurasOptionsSaved = {
 				[8141] = 135915,
 			},
 		},
-		["Fire Shield Effect III"] = {
+		["Create Ironforge Parcel of Cards"] = {
 			["spells"] = {
-				[3054] = 135817,
+				[27703] = 136235,
 			},
 		},
 		["Gingerbread Cookie"] = {
@@ -36487,9 +36493,10 @@ WeakAurasOptionsSaved = {
 				[11017] = 136217,
 			},
 		},
-		["Receive Quest Object, Orgrimmar Guard"] = {
+		["Ectoplasmic Distiller"] = {
 			["spells"] = {
-				[27507] = 136235,
+				[27420] = 135990,
+				[27433] = 136074,
 			},
 		},
 		["Target Mark"] = {
@@ -36586,9 +36593,9 @@ WeakAurasOptionsSaved = {
 				[25656] = 133849,
 			},
 		},
-		["Sol H"] = {
+		["Calm Dragonkin"] = {
 			["spells"] = {
-				[3206] = 135859,
+				[19872] = 136046,
 			},
 		},
 		["Frostmane Strength"] = {
@@ -36742,9 +36749,9 @@ WeakAurasOptionsSaved = {
 				[40762] = 135753,
 			},
 		},
-		["Quick Shots"] = {
+		["Runic Leather Gauntlets"] = {
 			["spells"] = {
-				[6150] = 132347,
+				[19055] = 136235,
 			},
 		},
 		["Summon Lava Burst D"] = {
@@ -36838,9 +36845,10 @@ WeakAurasOptionsSaved = {
 				[40735] = 132344,
 			},
 		},
-		["Exorcise Atiesh"] = {
+		["Teleport to Razelikh"] = {
 			["spells"] = {
-				[28354] = 136235,
+				[12885] = 136235,
+				[13142] = 136235,
 			},
 		},
 		["Expose Razorthorn Root"] = {
@@ -36935,9 +36943,10 @@ WeakAurasOptionsSaved = {
 				[40726] = 132353,
 			},
 		},
-		["Healing Ward IV Passive"] = {
+		["Rogue Armor Energize"] = {
 			["spells"] = {
-				[6276] = 136222,
+				[27787] = 136235,
+				[27788] = 136039,
 			},
 		},
 		["Calling Kor'kron Wind Rider"] = {
@@ -36991,10 +37000,9 @@ WeakAurasOptionsSaved = {
 				[8345] = 132997,
 			},
 		},
-		["Fumble"] = {
+		["Major Healing Potion"] = {
 			["spells"] = {
-				[5917] = 136159,
-				[44040] = 136235,
+				[17556] = 136235,
 			},
 		},
 		["Chemical Flames"] = {
@@ -37024,9 +37032,9 @@ WeakAurasOptionsSaved = {
 				[40694] = 136235,
 			},
 		},
-		["Felstrom Resurrection"] = {
+		["Increase Fire Dam 9"] = {
 			["spells"] = {
-				[3488] = 136232,
+				[7688] = 136235,
 			},
 		},
 		["Quest - Port Skettis Prisoner - Location 01"] = {
@@ -37455,9 +37463,9 @@ WeakAurasOptionsSaved = {
 				[3055] = 135817,
 			},
 		},
-		["Increased Aura Radii"] = {
+		["Send Fray Combatant"] = {
 			["spells"] = {
-				[23565] = 136235,
+				[8645] = 136235,
 			},
 		},
 		["Spiritual Soup"] = {
@@ -37619,9 +37627,9 @@ WeakAurasOptionsSaved = {
 				[26921] = 136235,
 			},
 		},
-		["Script Test"] = {
+		["Felstrom Resurrection"] = {
 			["spells"] = {
-				[5581] = 136006,
+				[3488] = 136232,
 			},
 		},
 		["Portal Crystals"] = {
@@ -37701,9 +37709,11 @@ WeakAurasOptionsSaved = {
 				[40592] = 135794,
 			},
 		},
-		["Touch of Ravenclaw"] = {
+		["Field Repair Bot 74A"] = {
 			["spells"] = {
-				[3263] = 136188,
+				[22700] = 136172,
+				[22704] = 136235,
+				[22864] = 136235,
 			},
 		},
 		["Mark of Hydross"] = {
@@ -37721,10 +37731,9 @@ WeakAurasOptionsSaved = {
 				[40585] = 136181,
 			},
 		},
-		["Glacial Cloak"] = {
+		["Create Knucklebone Pouch"] = {
 			["spells"] = {
-				[28208] = 132149,
-				[28263] = 136021,
+				[16195] = 136235,
 			},
 		},
 		["Unstable Flask of the Physician"] = {
@@ -37814,9 +37823,10 @@ WeakAurasOptionsSaved = {
 				[40552] = 136235,
 			},
 		},
-		["Thick Leather"] = {
+		["Increase Fire Dam 21"] = {
 			["spells"] = {
-				[20650] = 136235,
+				[9298] = 136235,
+				[23483] = 136235,
 			},
 		},
 		["Swift Razzashi Raptor"] = {
@@ -37835,9 +37845,9 @@ WeakAurasOptionsSaved = {
 				[41932] = 132140,
 			},
 		},
-		["Conjure Frostwolf Rank 5 Insignia DND"] = {
+		["Diving Sweep"] = {
 			["spells"] = {
-				[22112] = 136235,
+				[7145] = 132338,
 			},
 		},
 		["Dark Strike"] = {
@@ -37878,9 +37888,9 @@ WeakAurasOptionsSaved = {
 				[40547] = 136129,
 			},
 		},
-		["Summon Crawler"] = {
+		["Soul Freed"] = {
 			["spells"] = {
-				[8656] = 133708,
+				[17370] = 136235,
 			},
 		},
 		["Warped Armor"] = {
@@ -37910,9 +37920,10 @@ WeakAurasOptionsSaved = {
 				[3017] = 136235,
 			},
 		},
-		["Ruby Pendant of Fire"] = {
+		["Summon RC Blimp"] = {
 			["spells"] = {
-				[26883] = 136235,
+				[25005] = 136235,
+				[25006] = 136235,
 			},
 		},
 		["Imp in a Bottle (specical case... NOT!)"] = {
@@ -38022,13 +38033,9 @@ WeakAurasOptionsSaved = {
 				[40511] = 136235,
 			},
 		},
-		["Ranged Weapon Specialization"] = {
+		["Increased Stamina 14"] = {
 			["spells"] = {
-				[19509] = 135615,
-				[19510] = 135615,
-				[19511] = 135615,
-				[19507] = 135615,
-				[19508] = 135615,
+				[9265] = 136235,
 			},
 		},
 		["Fireball Barrage"] = {
@@ -38066,14 +38073,14 @@ WeakAurasOptionsSaved = {
 				[52052] = 136235,
 			},
 		},
-		["Deadly Blunderbuss"] = {
+		["Aquatic Form (Passive)"] = {
 			["spells"] = {
-				[3936] = 136235,
+				[5421] = 132112,
 			},
 		},
-		["Dowsing"] = {
+		["Ryson's All Seeing Eye"] = {
 			["spells"] = {
-				[11758] = 136235,
+				[21546] = 136152,
 			},
 		},
 		["Marduk's Curse"] = {
@@ -38171,9 +38178,28 @@ WeakAurasOptionsSaved = {
 				[40982] = 135730,
 			},
 		},
-		["Attack Power - Feral (+0420)"] = {
+		["Gore"] = {
 			["spells"] = {
-				[28154] = 136235,
+				[35295] = 135664,
+				[35296] = 135664,
+				[35297] = 135664,
+				[35298] = 135664,
+				[35299] = 135664,
+				[32019] = 132155,
+				[35302] = 135664,
+				[35303] = 135664,
+				[35304] = 135664,
+				[35305] = 135664,
+				[35306] = 135664,
+				[35307] = 135664,
+				[35308] = 135664,
+				[4102] = 136231,
+				[35290] = 135664,
+				[35291] = 135664,
+				[35292] = 135664,
+				[35293] = 135664,
+				[35294] = 135664,
+				[35300] = 135664,
 			},
 		},
 		["Drain Festive Mug"] = {
@@ -38264,18 +38290,14 @@ WeakAurasOptionsSaved = {
 				[4160] = 132278,
 			},
 		},
-		["Shield Charge"] = {
+		["Dark Iron Taskmaster Death"] = {
 			["spells"] = {
-				[19131] = 132337,
-				[15749] = 132337,
-				[35472] = 132337,
-				[31863] = 135940,
-				[38630] = 132337,
+				[12613] = 136122,
 			},
 		},
-		["Increased Frost Resist 05"] = {
+		["Ruby Crown of Restoration"] = {
 			["spells"] = {
-				[14546] = 136235,
+				[26878] = 136235,
 			},
 		},
 		["Increased Stamina 39"] = {
@@ -38288,9 +38310,15 @@ WeakAurasOptionsSaved = {
 				[49494] = 132802,
 			},
 		},
-		["Summon Treasure Hunting Swashbuckler"] = {
+		["Blessing of Wisdom"] = {
 			["spells"] = {
-				[11487] = 136235,
+				[19852] = 135970,
+				[19853] = 135970,
+				[19742] = 135970,
+				[27142] = 135970,
+				[19850] = 135970,
+				[25290] = 135970,
+				[19854] = 135970,
 			},
 		},
 		["Spirit of Competition: Winner (Effect)"] = {
@@ -38420,9 +38448,9 @@ WeakAurasOptionsSaved = {
 				[27050] = 132278,
 			},
 		},
-		["Improved Eviscerate and Rupture"] = {
+		["Goblin Engineer"] = {
 			["spells"] = {
-				[24471] = 136235,
+				[20222] = 135826,
 			},
 		},
 		["Brain Bash"] = {
@@ -38476,9 +38504,9 @@ WeakAurasOptionsSaved = {
 				[17646] = 136235,
 			},
 		},
-		["Imperial Plate Belt"] = {
+		["Crispy Lizard Tail"] = {
 			["spells"] = {
-				[16647] = 136192,
+				[6418] = 136192,
 			},
 		},
 		["Headless Horseman Climax - Head's Breath"] = {
@@ -38541,9 +38569,9 @@ WeakAurasOptionsSaved = {
 				[40404] = 136235,
 			},
 		},
-		["Increase Spell Dam 4"] = {
+		["Healing Ward IV Passive"] = {
 			["spells"] = {
-				[9394] = 136235,
+				[6276] = 136222,
 			},
 		},
 		["Elixir of Major Fortitude"] = {
@@ -38659,9 +38687,9 @@ WeakAurasOptionsSaved = {
 				[14613] = 136235,
 			},
 		},
-		["Dark Silk Shirt"] = {
+		["Create Summoner Shield"] = {
 			["spells"] = {
-				[3870] = 132149,
+				[28132] = 136235,
 			},
 		},
 		["Spellfire Gloves"] = {
@@ -38737,10 +38765,9 @@ WeakAurasOptionsSaved = {
 				[21479] = 136235,
 			},
 		},
-		["Frost Specialization"] = {
+		["Forsaken Skills"] = {
 			["spells"] = {
-				[4870] = 135848,
-				[4877] = 135858,
+				[7054] = 136121,
 			},
 		},
 		["JD Explosion"] = {
@@ -38758,9 +38785,9 @@ WeakAurasOptionsSaved = {
 				[8797] = 132149,
 			},
 		},
-		["Create Sapta"] = {
+		["Create Primal Life"] = {
 			["spells"] = {
-				[9200] = 133951,
+				[28106] = 136192,
 			},
 		},
 		["Gout of Flame"] = {
@@ -38898,9 +38925,9 @@ WeakAurasOptionsSaved = {
 				[35899] = 136235,
 			},
 		},
-		["Golden Scale Coif"] = {
+		["Increase Fire Dam 50"] = {
 			["spells"] = {
-				[3503] = 136192,
+				[17884] = 136235,
 			},
 		},
 		["Death Hammer"] = {
@@ -38965,9 +38992,12 @@ WeakAurasOptionsSaved = {
 				[18463] = 136208,
 			},
 		},
-		["Scorch Breath"] = {
+		["Windwall Totem"] = {
 			["spells"] = {
-				[5010] = 135826,
+				[15111] = 136022,
+				[15107] = 136022,
+				[15112] = 136022,
+				[25577] = 136022,
 			},
 		},
 		["Corrupting Plague"] = {
@@ -39020,9 +39050,9 @@ WeakAurasOptionsSaved = {
 				[39177] = 136235,
 			},
 		},
-		["Expert Cook"] = {
+		["[PH] Cystal Bazooka"] = {
 			["spells"] = {
-				[19886] = 133971,
+				[27849] = 136235,
 			},
 		},
 		["Legion Ring - Tractor Beam"] = {
@@ -39120,14 +39150,16 @@ WeakAurasOptionsSaved = {
 				[16387] = 136040,
 			},
 		},
-		["Diseased Slime"] = {
+		["Spirit Shock"] = {
 			["spells"] = {
-				[6907] = 136134,
+				[10794] = 136140,
+				[41426] = 135739,
 			},
 		},
-		["Stealth 1"] = {
+		["Elusiveness"] = {
 			["spells"] = {
-				[9590] = 132320,
+				[13981] = 135994,
+				[14066] = 135994,
 			},
 		},
 		["Bestial Fury"] = {
@@ -39159,11 +39191,10 @@ WeakAurasOptionsSaved = {
 				[40325] = 136141,
 			},
 		},
-		["Feral Instinct"] = {
+		["Destroy Spear"] = {
 			["spells"] = {
-				[16949] = 132089,
-				[16947] = 132089,
-				[16948] = 132089,
+				[16557] = 136130,
+				[16558] = 136130,
 			},
 		},
 		["Foreman's Enchanted Helmet"] = {
@@ -39192,9 +39223,9 @@ WeakAurasOptionsSaved = {
 				[33965] = 136235,
 			},
 		},
-		["Pacify"] = {
+		["Increased Nature Resist 27"] = {
 			["spells"] = {
-				[10730] = 132311,
+				[14649] = 136235,
 			},
 		},
 		["Summon Lucky"] = {
@@ -39248,9 +39279,9 @@ WeakAurasOptionsSaved = {
 				[8852] = 136065,
 			},
 		},
-		["Summon Lupine Delusions"] = {
+		["Strong Cleave"] = {
 			["spells"] = {
-				[7132] = 136222,
+				[8255] = 132338,
 			},
 		},
 		["Increase Frost Dam 78"] = {
@@ -39278,11 +39309,9 @@ WeakAurasOptionsSaved = {
 				[31862] = 135986,
 			},
 		},
-		["Endurance"] = {
+		["Enchanted Gaea Seed"] = {
 			["spells"] = {
-				[13872] = 136205,
-				[13742] = 136205,
-				[20550] = 136112,
+				[20269] = 136235,
 			},
 		},
 		["Possess Demon"] = {
@@ -39322,9 +39351,26 @@ WeakAurasOptionsSaved = {
 				[40308] = 136235,
 			},
 		},
-		["QADebug Instant Cast"] = {
+		["Strike"] = {
 			["spells"] = {
-				[27204] = 132369,
+				[31754] = 132282,
+				[12057] = 132282,
+				[13584] = 132282,
+				[19730] = 132282,
+				[13446] = 132282,
+				[14516] = 132282,
+				[18368] = 132282,
+				[11998] = 132282,
+				[38598] = 132282,
+				[11976] = 132282,
+				[15580] = 132282,
+				[19644] = 132282,
+				[43298] = 132282,
+				[22591] = 132282,
+				[34920] = 132282,
+				[31907] = 132282,
+				[33626] = 132282,
+				[26181] = 136235,
 			},
 		},
 		["OCW COT Horde On Quest Check"] = {
@@ -39354,10 +39400,9 @@ WeakAurasOptionsSaved = {
 				[28373] = 136235,
 			},
 		},
-		["Prayer of Spirit"] = {
+		["Increased Strength 31"] = {
 			["spells"] = {
-				[27681] = 135946,
-				[32999] = 135946,
+				[14503] = 136235,
 			},
 		},
 		["OCW Dark Portal Horde On Quest Check"] = {
@@ -39410,9 +39455,9 @@ WeakAurasOptionsSaved = {
 				[40292] = 132862,
 			},
 		},
-		["Increase Healing 187"] = {
+		["Holiday - Lunar Teleport: Darnassus"] = {
 			["spells"] = {
-				[26814] = 136235,
+				[26450] = 135758,
 			},
 		},
 		["Howling Dust"] = {
@@ -39446,9 +39491,9 @@ WeakAurasOptionsSaved = {
 				[33068] = 136235,
 			},
 		},
-		["Increased Spirit 24"] = {
+		["Land Mine Impact"] = {
 			["spells"] = {
-				[14444] = 136235,
+				[22498] = 136235,
 			},
 		},
 		["Perm. Illusion Skeleton"] = {
@@ -39462,9 +39507,9 @@ WeakAurasOptionsSaved = {
 				[38774] = 132507,
 			},
 		},
-		["Summon Burning Imp"] = {
+		["Reaper of Souls DND"] = {
 			["spells"] = {
-				[15126] = 135805,
+				[28355] = 136235,
 			},
 		},
 		["Call Scepter DND"] = {
@@ -39477,9 +39522,9 @@ WeakAurasOptionsSaved = {
 				[40286] = 136235,
 			},
 		},
-		["Blessing of Blackfathom"] = {
+		["Increased Spirit 34"] = {
 			["spells"] = {
-				[8733] = 135850,
+				[14456] = 136235,
 			},
 		},
 		["Simple Teleport"] = {
@@ -39497,9 +39542,9 @@ WeakAurasOptionsSaved = {
 				[3718] = 136173,
 			},
 		},
-		["Create Minion Trap: Ghost/Ghoul"] = {
+		["Tormenting Strike"] = {
 			["spells"] = {
-				[28195] = 136235,
+				[15969] = 136136,
 			},
 		},
 		["Increased Stamina 06"] = {
@@ -39739,9 +39784,9 @@ WeakAurasOptionsSaved = {
 				[34137] = 136235,
 			},
 		},
-		["Helboar"] = {
+		["Fire Storm"] = {
 			["spells"] = {
-				[12896] = 135817,
+				[13899] = 135826,
 			},
 		},
 		["Picnic"] = {
@@ -39749,9 +39794,9 @@ WeakAurasOptionsSaved = {
 				[40530] = 136235,
 			},
 		},
-		["Fill Deino's Flask"] = {
+		["Arcane Detonation"] = {
 			["spells"] = {
-				[9052] = 136235,
+				[23722] = 135753,
 			},
 		},
 		["Change Facing, Left"] = {
@@ -39840,13 +39885,14 @@ WeakAurasOptionsSaved = {
 				[40232] = 136235,
 			},
 		},
-		["Melee Specialization"] = {
+		["Vampiric Aura"] = {
 			["spells"] = {
-				[19383] = 132393,
-				[19384] = 132393,
-				[19385] = 132393,
-				[19381] = 132393,
-				[19382] = 132393,
+				[34929] = 136231,
+				[31285] = 136231,
+				[38196] = 136231,
+				[38061] = 136231,
+				[31317] = 136231,
+				[20810] = 136231,
 			},
 		},
 		["Summon Salvaged Lockbox"] = {
@@ -39904,9 +39950,10 @@ WeakAurasOptionsSaved = {
 				[6755] = 136168,
 			},
 		},
-		["Create Thunder Bluff Pledges of Loyalty"] = {
+		["Improved Mana Burn"] = {
 			["spells"] = {
-				[27716] = 136235,
+				[14750] = 136170,
+				[14772] = 136170,
 			},
 		},
 		["Accurate Scope"] = {
@@ -39932,14 +39979,9 @@ WeakAurasOptionsSaved = {
 				[13599] = 136235,
 			},
 		},
-		["Mass Dispel"] = {
+		["Felcloth Robe"] = {
 			["spells"] = {
-				[32592] = 135739,
-				[4526] = 136222,
-				[353184] = 135739,
-				[38082] = 135739,
-				[39897] = 135739,
-				[32375] = 135739,
+				[18451] = 132149,
 			},
 		},
 		["Dragonmaw Nether Drake"] = {
@@ -39973,9 +40015,9 @@ WeakAurasOptionsSaved = {
 				[40209] = 136235,
 			},
 		},
-		["Shadow Goggles"] = {
+		["Increased Agility 33"] = {
 			["spells"] = {
-				[3940] = 136235,
+				[14397] = 136235,
 			},
 		},
 		["Increase Arcane Dam 66"] = {
@@ -39983,9 +40025,15 @@ WeakAurasOptionsSaved = {
 				[26711] = 136235,
 			},
 		},
-		["Bijou Vanish"] = {
+		["Reckoning"] = {
 			["spells"] = {
-				[15993] = 136235,
+				[20181] = 135882,
+				[20182] = 135882,
+				[20177] = 135882,
+				[20178] = 135882,
+				[20179] = 135882,
+				[20180] = 135882,
+				[32746] = 135882,
 			},
 		},
 		["Burning Brand"] = {
@@ -40190,9 +40238,9 @@ WeakAurasOptionsSaved = {
 				[40177] = 136235,
 			},
 		},
-		["Create Crest of Beckoning: Earth"] = {
+		["Slime Stream"] = {
 			["spells"] = {
-				[24887] = 136235,
+				[28137] = 136144,
 			},
 		},
 		["Might of Ragnaros"] = {
@@ -40354,9 +40402,9 @@ WeakAurasOptionsSaved = {
 				[40156] = 136018,
 			},
 		},
-		["QAEnchant Weapon +15 Agility"] = {
+		["Festive Red Pant Suit"] = {
 			["spells"] = {
-				[26792] = 135913,
+				[26407] = 132149,
 			},
 		},
 		["Area Ping (Ghost)"] = {
@@ -40411,9 +40459,9 @@ WeakAurasOptionsSaved = {
 				[11595] = 136235,
 			},
 		},
-		["Blessing of Salvation"] = {
+		["Placing Smokey's Explosives"] = {
 			["spells"] = {
-				[1038] = 135967,
+				[19250] = 136235,
 			},
 		},
 		["Magic Sucker Device Despawner, Mob AE"] = {
@@ -40724,12 +40772,9 @@ WeakAurasOptionsSaved = {
 				[40084] = 132212,
 			},
 		},
-		["Improved Blocking"] = {
+		["Thick Leather"] = {
 			["spells"] = {
-				[3418] = 135806,
-				[3639] = 135806,
-				[3248] = 135806,
-				[3419] = 135806,
+				[20650] = 136235,
 			},
 		},
 		["Increased Agility 15"] = {
@@ -40837,9 +40882,9 @@ WeakAurasOptionsSaved = {
 				[10865] = 136235,
 			},
 		},
-		["QAEnchant Cloak -2% Threat"] = {
+		["Lobster Stew"] = {
 			["spells"] = {
-				[27121] = 135913,
+				[18245] = 136192,
 			},
 		},
 		["Night's End"] = {
@@ -40852,9 +40897,9 @@ WeakAurasOptionsSaved = {
 				[14695] = 136235,
 			},
 		},
-		["Unbalancing Strike"] = {
+		["Greater Blessing of Salvation"] = {
 			["spells"] = {
-				[26613] = 132340,
+				[25895] = 135910,
 			},
 		},
 		["Ethereal Ring Visual, Lightning Jumper Aura"] = {
@@ -40862,9 +40907,9 @@ WeakAurasOptionsSaved = {
 				[41567] = 136235,
 			},
 		},
-		["Fire's Glow"] = {
+		["Obsidian Insight"] = {
 			["spells"] = {
-				[7363] = 135805,
+				[26166] = 133573,
 			},
 		},
 		["Simon Game Pre-game timer"] = {
@@ -40888,9 +40933,10 @@ WeakAurasOptionsSaved = {
 				[31923] = 136235,
 			},
 		},
-		["Evolving Ectoplasm (Blue)"] = {
+		["Improved Bloodrage"] = {
 			["spells"] = {
-				[7944] = 135835,
+				[12301] = 132277,
+				[12818] = 132277,
 			},
 		},
 		["Shadesteel Bracers"] = {
@@ -40954,9 +41000,11 @@ WeakAurasOptionsSaved = {
 				[40005] = 136247,
 			},
 		},
-		["Track Elementals"] = {
+		["Closing"] = {
 			["spells"] = {
-				[19880] = 135861,
+				[6233] = 136235,
+				[6246] = 136235,
+				[21652] = 136235,
 			},
 		},
 		["Increased Frost Resist 32"] = {
@@ -40984,12 +41032,9 @@ WeakAurasOptionsSaved = {
 				[40001] = 136247,
 			},
 		},
-		["Windwall Totem"] = {
+		["Azrethoc's Flight"] = {
 			["spells"] = {
-				[15111] = 136022,
-				[15107] = 136022,
-				[15112] = 136022,
-				[25577] = 136022,
+				[7974] = 136018,
 			},
 		},
 		["Simon Game Button Pressed"] = {
@@ -41059,9 +41104,9 @@ WeakAurasOptionsSaved = {
 				[28779] = 135444,
 			},
 		},
-		["Argent Shoulders"] = {
+		["Blue Linen Vest"] = {
 			["spells"] = {
-				[23665] = 132149,
+				[7630] = 132149,
 			},
 		},
 		["Liquid Fire"] = {
@@ -41142,9 +41187,11 @@ WeakAurasOptionsSaved = {
 				[39986] = 136235,
 			},
 		},
-		["Attack Power 78"] = {
+		["Breath of Fire"] = {
 			["spells"] = {
-				[15825] = 136235,
+				[12278] = 135818,
+				[29388] = 135818,
+				[12257] = 135818,
 			},
 		},
 		["Legion Ring - Spawn Lightning"] = {
@@ -41219,9 +41266,9 @@ WeakAurasOptionsSaved = {
 				[38170] = 136235,
 			},
 		},
-		["Crispy Lizard Tail"] = {
+		["Opening Benedict's Chest"] = {
 			["spells"] = {
-				[6418] = 136192,
+				[6529] = 136235,
 			},
 		},
 		["Defender of the Timbermaw"] = {
@@ -41305,9 +41352,9 @@ WeakAurasOptionsSaved = {
 				[44797] = 136235,
 			},
 		},
-		["Portals Deck"] = {
+		["Bind Chapter 2"] = {
 			["spells"] = {
-				[23680] = 136235,
+				[20530] = 136235,
 			},
 		},
 		["Increase Healing 112"] = {
@@ -41335,9 +41382,10 @@ WeakAurasOptionsSaved = {
 				[21542] = 136235,
 			},
 		},
-		["Increased Fire Resist 18"] = {
+		["Destructive Reach"] = {
 			["spells"] = {
-				[14598] = 136235,
+				[17917] = 136133,
+				[17918] = 136133,
 			},
 		},
 		["A'dal's Song of Battle"] = {
@@ -41421,9 +41469,9 @@ WeakAurasOptionsSaved = {
 				[39943] = 136235,
 			},
 		},
-		["Chicken Other"] = {
+		["Saurfang's Rage"] = {
 			["spells"] = {
-				[3246] = 135996,
+				[26339] = 136235,
 			},
 		},
 		["Enchant Chest - Lesser Mana"] = {
@@ -41555,9 +41603,18 @@ WeakAurasOptionsSaved = {
 				[39921] = 135789,
 			},
 		},
-		["Ring of Twilight Shadows"] = {
+		["Dive"] = {
 			["spells"] = {
-				[25318] = 136235,
+				[23145] = 136126,
+				[23149] = 136126,
+				[29903] = 132182,
+				[37156] = 132182,
+				[23146] = 136126,
+				[23150] = 136126,
+				[23147] = 136126,
+				[40279] = 132182,
+				[23148] = 136126,
+				[37588] = 132307,
 			},
 		},
 		["Increased Block 11"] = {
@@ -41769,10 +41826,9 @@ WeakAurasOptionsSaved = {
 				[39893] = 135857,
 			},
 		},
-		["Spawn Smoke"] = {
+		["Receive Quest Object, Orgrimmar Guard"] = {
 			["spells"] = {
-				[10389] = 136235,
-				[29802] = 136235,
+				[27507] = 136235,
 			},
 		},
 		["Maggoc: Summon Maggoc's Treasure Chest"] = {
@@ -41821,9 +41877,13 @@ WeakAurasOptionsSaved = {
 				[35423] = 135757,
 			},
 		},
-		["Cursed Blade"] = {
+		["Dagger Specialization"] = {
 			["spells"] = {
-				[5271] = 136020,
+				[13806] = 135641,
+				[13807] = 135641,
+				[13804] = 135641,
+				[13805] = 135641,
+				[13706] = 135641,
 			},
 		},
 		["Volatile Healing Potion"] = {
@@ -41836,9 +41896,9 @@ WeakAurasOptionsSaved = {
 				[2660] = 136192,
 			},
 		},
-		["Poison Stinger"] = {
+		["Corrupted Totems"] = {
 			["spells"] = {
-				[25748] = 134324,
+				[23425] = 136129,
 			},
 		},
 		["Divine Shield"] = {
@@ -42065,29 +42125,14 @@ WeakAurasOptionsSaved = {
 				[30468] = 135729,
 			},
 		},
-		["Summon Spectral Projections"] = {
+		["Robe of the Void"] = {
 			["spells"] = {
-				[17653] = 136222,
+				[18458] = 132149,
 			},
 		},
-		["Frost Breath"] = {
+		["Increase Threat"] = {
 			["spells"] = {
-				[30101] = 136235,
-				[3129] = 135848,
-				[16099] = 135848,
-				[29318] = 135833,
-				[45200] = 135846,
-				[3131] = 135848,
-				[45199] = 135846,
-				[21099] = 135848,
-				[30930] = 135848,
-				[44799] = 135844,
-				[16340] = 135848,
-				[31688] = 135846,
-				[45065] = 135844,
-				[22479] = 135848,
-				[16094] = 135848,
-				[28524] = 135833,
+				[25063] = 136235,
 			},
 		},
 		["Rizzle's Escape"] = {
@@ -42296,9 +42341,9 @@ WeakAurasOptionsSaved = {
 				[25669] = 136235,
 			},
 		},
-		["Power Shield 500"] = {
+		["Increased Spirit 46"] = {
 			["spells"] = {
-				[20705] = 135940,
+				[14952] = 136235,
 			},
 		},
 		["Attack Power Ranged 55"] = {
@@ -42490,9 +42535,9 @@ WeakAurasOptionsSaved = {
 				[8257] = 132274,
 			},
 		},
-		["Zap Crystal"] = {
+		["Damage Crystal"] = {
 			["spells"] = {
-				[28032] = 136235,
+				[28041] = 136235,
 			},
 		},
 		["Superior Healing Potion"] = {
@@ -42517,9 +42562,9 @@ WeakAurasOptionsSaved = {
 				[39804] = 135995,
 			},
 		},
-		["Swift Brown Steed"] = {
+		["Malfunction"] = {
 			["spells"] = {
-				[23229] = 132261,
+				[13319] = 135805,
 			},
 		},
 		["Silver Riding Nether Ray"] = {
@@ -42572,9 +42617,9 @@ WeakAurasOptionsSaved = {
 				[26228] = 136235,
 			},
 		},
-		["Electrostatic Charge"] = {
+		["Diseased Slime"] = {
 			["spells"] = {
-				[13959] = 136235,
+				[6907] = 136134,
 			},
 		},
 		["Soot Covering"] = {
@@ -42588,10 +42633,9 @@ WeakAurasOptionsSaved = {
 				[16655] = 136192,
 			},
 		},
-		["Warlock Channeling"] = {
+		["Increase Holy Dam 43"] = {
 			["spells"] = {
-				[8675] = 136121,
-				[29322] = 136121,
+				[21528] = 136235,
 			},
 		},
 		["Summon Dreadbone Skeleton"] = {
@@ -42761,9 +42805,12 @@ WeakAurasOptionsSaved = {
 				[11476] = 136235,
 			},
 		},
-		["Fishing Skill +75"] = {
+		["Virulent Poison Proc"] = {
 			["spells"] = {
-				[8084] = 136245,
+				[22413] = 136188,
+				[16428] = 136188,
+				[21645] = 136188,
+				[12254] = 136188,
 			},
 		},
 		["The Jade Eye"] = {
@@ -43172,9 +43219,9 @@ WeakAurasOptionsSaved = {
 				[38433] = 132197,
 			},
 		},
-		["Red Swashbuckler's Shirt"] = {
+		["Receive Reward AND Quest Object, Common, Orgrimmar"] = {
 			["spells"] = {
-				[8489] = 132149,
+				[27505] = 136235,
 			},
 		},
 		["Opening Mana-Tombs Stasis Chamber"] = {
@@ -43204,9 +43251,9 @@ WeakAurasOptionsSaved = {
 				[39849] = 136235,
 			},
 		},
-		["Minor Intellect"] = {
+		["Shadow Goggles"] = {
 			["spells"] = {
-				[7792] = 136235,
+				[3940] = 136235,
 			},
 		},
 		["In Game"] = {
@@ -43271,13 +43318,9 @@ WeakAurasOptionsSaved = {
 				[2164] = 136247,
 			},
 		},
-		["Instant Poison"] = {
+		["Improved Wrath/Starfire"] = {
 			["spells"] = {
-				[28428] = 136016,
-				[8680] = 132273,
-				[8681] = 132273,
-				[41189] = 136016,
-				[8679] = 132273,
+				[24433] = 136235,
 			},
 		},
 		["Frost Visual State"] = {
@@ -43554,9 +43597,9 @@ WeakAurasOptionsSaved = {
 				[39483] = 136235,
 			},
 		},
-		["Increased Critical 100"] = {
+		["Shadow Bolt Vortex"] = {
 			["spells"] = {
-				[17713] = 136235,
+				[6963] = 136197,
 			},
 		},
 		["Blessings Deck"] = {
@@ -43619,10 +43662,21 @@ WeakAurasOptionsSaved = {
 				[39471] = 136235,
 			},
 		},
-		["Image Projection"] = {
+		["Intercept"] = {
 			["spells"] = {
-				[17651] = 136164,
-				[17652] = 136164,
+				[25275] = 132307,
+				[30154] = 132307,
+				[25272] = 132307,
+				[27826] = 132307,
+				[30200] = 132307,
+				[30199] = 132307,
+				[20252] = 132307,
+				[20616] = 132307,
+				[30151] = 132307,
+				[30194] = 132307,
+				[30198] = 132307,
+				[20617] = 132307,
+				[27577] = 132307,
 			},
 		},
 		["Veiled Flame Spessarite"] = {
@@ -43678,9 +43732,9 @@ WeakAurasOptionsSaved = {
 				[39452] = 136235,
 			},
 		},
-		["Satchel of Cenarius"] = {
+		["Enchant Weapon - Strength"] = {
 			["spells"] = {
-				[27725] = 132149,
+				[23799] = 135913,
 			},
 		},
 		["Blue Dragon Transform DND"] = {
@@ -43757,10 +43811,9 @@ WeakAurasOptionsSaved = {
 				[27829] = 136192,
 			},
 		},
-		["Hateful Strike"] = {
+		["Ball Lightning"] = {
 			["spells"] = {
-				[28308] = 136235,
-				[41926] = 136235,
+				[28299] = 135990,
 			},
 		},
 		["Shadowflame Hellfire and RoF"] = {
@@ -43853,9 +43906,9 @@ WeakAurasOptionsSaved = {
 				[11196] = 133678,
 			},
 		},
-		["Dreamscale Breastplate"] = {
+		["Dowsing"] = {
 			["spells"] = {
-				[24703] = 136235,
+				[11758] = 136235,
 			},
 		},
 		["Bounty of the Harvest"] = {
@@ -44090,9 +44143,15 @@ WeakAurasOptionsSaved = {
 				[39390] = 135955,
 			},
 		},
-		["Tormenting Strike"] = {
+		["Judgement"] = {
 			["spells"] = {
-				[15969] = 136136,
+				[23590] = 135972,
+				[23591] = 135972,
+				[10321] = 135959,
+				[43838] = 135960,
+				[35170] = 136235,
+				[20271] = 135959,
+				[41467] = 135959,
 			},
 		},
 		["60 yd Leash"] = {
@@ -44100,43 +44159,13 @@ WeakAurasOptionsSaved = {
 				[39386] = 135998,
 			},
 		},
-		["Poison"] = {
+		["Endurance Training"] = {
 			["spells"] = {
-				[28241] = 136133,
-				[11918] = 136016,
-				[16400] = 136016,
-				[16401] = 136016,
-				[26610] = 136016,
-				[26612] = 132104,
-				[25605] = 136016,
-				[21952] = 136016,
-				[17292] = 136016,
-				[24097] = 136016,
-				[38616] = 132273,
-				[744] = 136016,
-				[19448] = 136016,
-				[30915] = 136133,
-				[17183] = 136016,
-				[348005] = 136016,
-				[38463] = 136133,
-				[8313] = 136016,
-				[31747] = 136006,
-				[18203] = 136016,
-				[28158] = 136064,
-				[18208] = 136016,
-				[38615] = 132273,
-				[44144] = 136006,
-				[25645] = 136016,
-				[13518] = 136016,
-				[13298] = 136016,
-				[37840] = 136006,
-				[17511] = 136016,
-				[38462] = 136064,
-				[18197] = 136016,
-				[34969] = 136016,
-				[17330] = 136016,
-				[18077] = 136016,
-				[30914] = 136064,
+				[19586] = 136080,
+				[19587] = 136080,
+				[19583] = 136080,
+				[19584] = 136080,
+				[19585] = 136080,
 			},
 		},
 		["Purify"] = {
@@ -44149,13 +44178,9 @@ WeakAurasOptionsSaved = {
 				[39380] = 136235,
 			},
 		},
-		["Master Healer"] = {
+		["Evil God Counterspell"] = {
 			["spells"] = {
-				[15024] = 135917,
-				[15025] = 135917,
-				[15026] = 135917,
-				[14904] = 135917,
-				[15027] = 135917,
+				[12458] = 136235,
 			},
 		},
 		["Heavy Woolen Cloak"] = {
@@ -44178,10 +44203,12 @@ WeakAurasOptionsSaved = {
 				[31865] = 136175,
 			},
 		},
-		["Recklessness"] = {
+		["Improved Blocking"] = {
 			["spells"] = {
-				[1719] = 132109,
-				[13847] = 132109,
+				[3418] = 135806,
+				[3639] = 135806,
+				[3248] = 135806,
+				[3419] = 135806,
 			},
 		},
 		["Wicked Leather Headband"] = {
@@ -44230,9 +44257,12 @@ WeakAurasOptionsSaved = {
 				[7494] = 136235,
 			},
 		},
-		["Receive Quest Object, Darnassus Guard"] = {
+		["Improved Mend Pet"] = {
 			["spells"] = {
-				[27504] = 136235,
+				[24406] = 132179,
+				[19572] = 132179,
+				[19573] = 132179,
+				[23560] = 136235,
 			},
 		},
 		["Hand of Medivh"] = {
@@ -44250,11 +44280,9 @@ WeakAurasOptionsSaved = {
 				[39331] = 135975,
 			},
 		},
-		["Prayer of Shadow Protection"] = {
+		["Create Stormwind Bundle of Cards"] = {
 			["spells"] = {
-				[39236] = 135945,
-				[39374] = 135945,
-				[27683] = 135945,
+				[27701] = 136235,
 			},
 		},
 		["Brewfest - Wallop"] = {
@@ -44368,28 +44396,9 @@ WeakAurasOptionsSaved = {
 				[28726] = 134217,
 			},
 		},
-		["Gore"] = {
+		["Touch of Ravenclaw"] = {
 			["spells"] = {
-				[35295] = 135664,
-				[35296] = 135664,
-				[35297] = 135664,
-				[35298] = 135664,
-				[35299] = 135664,
-				[32019] = 132155,
-				[35302] = 135664,
-				[35303] = 135664,
-				[35304] = 135664,
-				[35305] = 135664,
-				[35306] = 135664,
-				[35307] = 135664,
-				[35308] = 135664,
-				[4102] = 136231,
-				[35290] = 135664,
-				[35291] = 135664,
-				[35292] = 135664,
-				[35293] = 135664,
-				[35294] = 135664,
-				[35300] = 135664,
+				[3263] = 136188,
 			},
 		},
 		["Clintar - Periodic Agro"] = {
@@ -44438,10 +44447,10 @@ WeakAurasOptionsSaved = {
 				[31419] = 136235,
 			},
 		},
-		["Mortar Shot"] = {
+		["Increased Arcane Resist 10"] = {
 			["spells"] = {
-				[16786] = 132222,
-				[40649] = 136235,
+				[14712] = 136235,
+				[41870] = 136235,
 			},
 		},
 		["Signal to Master (Alliance)"] = {
@@ -44478,9 +44487,9 @@ WeakAurasOptionsSaved = {
 				[39887] = 136235,
 			},
 		},
-		["Catseye Ultra Goggles"] = {
+		["Elixir of Defense"] = {
 			["spells"] = {
-				[12607] = 136235,
+				[3177] = 136235,
 			},
 		},
 		["Hellfire - The Exorcism, Jules threatens"] = {
@@ -44678,9 +44687,11 @@ WeakAurasOptionsSaved = {
 				[49328] = 136235,
 			},
 		},
-		["Fire Weakness"] = {
+		["Arcane Channeling"] = {
 			["spells"] = {
-				[25177] = 134396,
+				[32783] = 135731,
+				[39550] = 135735,
+				[23017] = 135743,
 			},
 		},
 		["Storm Bolt"] = {
@@ -44777,9 +44788,23 @@ WeakAurasOptionsSaved = {
 				[26911] = 136235,
 			},
 		},
-		["Disturb Minion Trap, Buttress"] = {
+		["Devour Magic"] = {
 			["spells"] = {
-				[27886] = 136235,
+				[19736] = 136075,
+				[27495] = 136075,
+				[20427] = 136075,
+				[19737] = 136075,
+				[27496] = 136075,
+				[19505] = 136075,
+				[19734] = 136075,
+				[19738] = 136075,
+				[17012] = 136075,
+				[19731] = 136075,
+				[27276] = 136075,
+				[19739] = 136075,
+				[20428] = 136075,
+				[27277] = 136075,
+				[20426] = 136075,
 			},
 		},
 		["Silver Riding Talbuk"] = {
@@ -44822,10 +44847,9 @@ WeakAurasOptionsSaved = {
 				[21086] = 136146,
 			},
 		},
-		["Tree Form"] = {
+		["Gammerita Turtle Camera"] = {
 			["spells"] = {
-				[22688] = 136095,
-				[34551] = 132129,
+				[11610] = 136235,
 			},
 		},
 		["Take Immune Periodic Damage <Not Working>"] = {
@@ -44868,12 +44892,33 @@ WeakAurasOptionsSaved = {
 				[41157] = 136247,
 			},
 		},
-		["Unholy Frenzy"] = {
+		["Haste"] = {
 			["spells"] = {
-				[27995] = 136012,
-				[24672] = 136012,
-				[31626] = 136224,
-				[8699] = 136012,
+				[33807] = 132369,
+				[29413] = 132208,
+				[28701] = 136075,
+				[14824] = 132208,
+				[29416] = 132208,
+				[37163] = 136075,
+				[14825] = 132208,
+				[37165] = 136235,
+				[29418] = 132208,
+				[14826] = 132208,
+				[37728] = 136047,
+				[35776] = 136011,
+				[13494] = 136047,
+				[28507] = 134730,
+				[14828] = 132208,
+				[65] = 136047,
+				[43242] = 135788,
+				[34775] = 132294,
+				[14829] = 132208,
+				[29417] = 132208,
+				[29415] = 132208,
+				[21165] = 136047,
+				[29414] = 132208,
+				[13533] = 136047,
+				[14827] = 132208,
 			},
 		},
 		["Sha'tari Torch"] = {
@@ -44927,9 +44972,10 @@ WeakAurasOptionsSaved = {
 				[39179] = 136235,
 			},
 		},
-		["Increase Shadow Dam 1"] = {
+		["Enchant Weapon - Sunfire"] = {
 			["spells"] = {
-				[7704] = 136235,
+				[27981] = 135913,
+				[46540] = 135913,
 			},
 		},
 		["Mark of the Dragonmaw"] = {
@@ -44991,9 +45037,9 @@ WeakAurasOptionsSaved = {
 				[39159] = 132544,
 			},
 		},
-		["Increased Agility 31"] = {
+		["Cooked Crab Claw"] = {
 			["spells"] = {
-				[14395] = 136235,
+				[2545] = 136192,
 			},
 		},
 		["Arcane Fortitude"] = {
@@ -45060,9 +45106,11 @@ WeakAurasOptionsSaved = {
 				[25102] = 136057,
 			},
 		},
-		["Minor Agility"] = {
+		["Axe Flurry"] = {
 			["spells"] = {
-				[7778] = 136235,
+				[24020] = 132397,
+				[24018] = 132397,
+				[24071] = 132397,
 			},
 		},
 		["Shadow Spear"] = {
@@ -45075,9 +45123,9 @@ WeakAurasOptionsSaved = {
 				[10239] = 136219,
 			},
 		},
-		["Increase Frost Dam 27"] = {
+		["Green Iron Leggings"] = {
 			["spells"] = {
-				[17892] = 136235,
+				[3506] = 136192,
 			},
 		},
 		["Throw 15 Bottles"] = {
@@ -45154,9 +45202,9 @@ WeakAurasOptionsSaved = {
 				[31560] = 135826,
 			},
 		},
-		["Enchant Bracer - Superior Stamina"] = {
+		["Ahn'Qiraj Reward Buff (Caster - 40)"] = {
 			["spells"] = {
-				[20011] = 135913,
+				[25798] = 134969,
 			},
 		},
 		["OCW COT Horde Whisper to Controller 02"] = {
@@ -45274,9 +45322,9 @@ WeakAurasOptionsSaved = {
 				[28624] = 136235,
 			},
 		},
-		["Baby Murloc"] = {
+		["Bolt Charge Bramble"] = {
 			["spells"] = {
-				[24984] = 134301,
+				[9056] = 135990,
 			},
 		},
 		["Summon Honor Hold Gryphon Brigadier Foothill"] = {
@@ -45309,9 +45357,9 @@ WeakAurasOptionsSaved = {
 				[21370] = 136235,
 			},
 		},
-		["Ashenvale Outrunner Sneak"] = {
+		["Aegis of Ragnaros"] = {
 			["spells"] = {
-				[20540] = 132320,
+				[20620] = 136121,
 			},
 		},
 		["Summon Templar Air, Trigger"] = {
@@ -45494,9 +45542,21 @@ WeakAurasOptionsSaved = {
 				[38992] = 136235,
 			},
 		},
-		["Armor +24"] = {
+		["Dual Wield Specialization"] = {
 			["spells"] = {
-				[2833] = 133610,
+				[23584] = 132147,
+				[13851] = 132147,
+				[30818] = 132148,
+				[23585] = 132147,
+				[30819] = 132148,
+				[30816] = 132148,
+				[13848] = 132147,
+				[23586] = 132147,
+				[13852] = 132147,
+				[23588] = 132147,
+				[13715] = 132147,
+				[23587] = 132147,
+				[13849] = 132147,
 			},
 		},
 		["Multiple Effects"] = {
@@ -45514,14 +45574,14 @@ WeakAurasOptionsSaved = {
 				[16447] = 136235,
 			},
 		},
-		["Minor Spirit"] = {
+		["Quest - Kodo Fade Out (DND)"] = {
 			["spells"] = {
-				[7456] = 136235,
+				[22969] = 136235,
 			},
 		},
-		["Summon Moonstalker Runt"] = {
+		["Defensive Stance Passive"] = {
 			["spells"] = {
-				[8594] = 132142,
+				[7376] = 132341,
 			},
 		},
 		["Spore Quake"] = {
@@ -45534,9 +45594,10 @@ WeakAurasOptionsSaved = {
 				[20595] = 134537,
 			},
 		},
-		["Death Wish"] = {
+		["Find Herbs"] = {
 			["spells"] = {
-				[12292] = 136146,
+				[2383] = 133939,
+				[8387] = 134183,
 			},
 		},
 		["Fel Reaver Repair"] = {
@@ -45574,9 +45635,9 @@ WeakAurasOptionsSaved = {
 				[38929] = 134766,
 			},
 		},
-		["Corrupt Weapon"] = {
+		["Wail of Nightlash"] = {
 			["spells"] = {
-				[23436] = 136129,
+				[3485] = 136183,
 			},
 		},
 		["Fel Ache"] = {
@@ -45594,10 +45655,15 @@ WeakAurasOptionsSaved = {
 				[23962] = 136235,
 			},
 		},
-		["Greater Beast Slayer 25"] = {
+		["Replenish Mana"] = {
 			["spells"] = {
-				[20891] = 134310,
-				[20893] = 134310,
+				[10058] = 134134,
+				[33394] = 134134,
+				[5405] = 134134,
+				[27103] = 134134,
+				[18385] = 134134,
+				[10057] = 134134,
+				[10052] = 134134,
 			},
 		},
 		["Mental Interference"] = {
@@ -45665,10 +45731,42 @@ WeakAurasOptionsSaved = {
 				[15504] = 135915,
 			},
 		},
-		["Increased Arcane Resist 10"] = {
+		["Rend"] = {
 			["spells"] = {
-				[14712] = 136235,
-				[41870] = 136235,
+				[17153] = 132155,
+				[43246] = 132155,
+				[11572] = 132155,
+				[11573] = 132155,
+				[11574] = 132155,
+				[21949] = 132155,
+				[16406] = 132155,
+				[29574] = 132155,
+				[6546] = 132155,
+				[6547] = 132155,
+				[12054] = 132155,
+				[6548] = 132155,
+				[13443] = 132155,
+				[13318] = 132155,
+				[13445] = 132155,
+				[772] = 132155,
+				[17504] = 132155,
+				[18200] = 132155,
+				[18075] = 132155,
+				[18202] = 132155,
+				[36965] = 132155,
+				[18078] = 132155,
+				[37662] = 132155,
+				[16509] = 132155,
+				[13738] = 132155,
+				[36991] = 132155,
+				[16403] = 132155,
+				[14118] = 132155,
+				[14087] = 132155,
+				[11977] = 132155,
+				[29578] = 132155,
+				[25208] = 132155,
+				[16393] = 132155,
+				[18106] = 132155,
 			},
 		},
 		["Flask of the Titans"] = {
@@ -45764,9 +45862,9 @@ WeakAurasOptionsSaved = {
 				[38885] = 136235,
 			},
 		},
-		["Runed Silver Rod"] = {
+		["Fast Acting Poison"] = {
 			["spells"] = {
-				[7795] = 135138,
+				[6647] = 132273,
 			},
 		},
 		["Eviscerate and Envenom Discount"] = {
@@ -45805,10 +45903,9 @@ WeakAurasOptionsSaved = {
 				[30184] = 135805,
 			},
 		},
-		["Weapon Counterweight"] = {
+		["Old Enriched Manna Biscuit"] = {
 			["spells"] = {
-				[7217] = 136235,
-				[7218] = 136235,
+				[25697] = 134062,
 			},
 		},
 		["Swift Frostsaber"] = {
@@ -45831,9 +45928,13 @@ WeakAurasOptionsSaved = {
 				[38362] = 132161,
 			},
 		},
-		["Summon Royal Random"] = {
+		["Dropped Weapon"] = {
 			["spells"] = {
-				[24784] = 136235,
+				[25655] = 132343,
+				[25057] = 132343,
+				[33126] = 132343,
+				[23365] = 132343,
+				[6608] = 132343,
 			},
 		},
 		["Increased Fire Resist 08"] = {
@@ -45869,10 +45970,11 @@ WeakAurasOptionsSaved = {
 				[38797] = 135730,
 			},
 		},
-		["Shadow Wrath"] = {
+		["Deadly Poison VII"] = {
 			["spells"] = {
-				[27286] = 136208,
-				[37372] = 136208,
+				[27186] = 132290,
+				[27187] = 132290,
+				[27282] = 132290,
 			},
 		},
 		["Druid Signal"] = {
@@ -45978,9 +46080,9 @@ WeakAurasOptionsSaved = {
 				[38757] = 136235,
 			},
 		},
-		["Mass Healing"] = {
+		["Elixir of Firepower"] = {
 			["spells"] = {
-				[25839] = 135913,
+				[7845] = 136235,
 			},
 		},
 		["Increase Spell Dam 62"] = {
@@ -46032,9 +46134,12 @@ WeakAurasOptionsSaved = {
 				[12088] = 132149,
 			},
 		},
-		["Repulsive Gaze"] = {
+		["Improved Power Word: Shield"] = {
 			["spells"] = {
-				[21869] = 132154,
+				[14748] = 135940,
+				[14768] = 135940,
+				[24191] = 136235,
+				[14769] = 135940,
 			},
 		},
 		["Sloth Passive"] = {
@@ -46281,9 +46386,9 @@ WeakAurasOptionsSaved = {
 				[33340] = 135744,
 			},
 		},
-		["Stun 1% for 1 sec"] = {
+		["Enchant Gloves - Strength"] = {
 			["spells"] = {
-				[20884] = 133477,
+				[13887] = 135913,
 			},
 		},
 		["Increased Frost Resist 38"] = {
@@ -46296,9 +46401,9 @@ WeakAurasOptionsSaved = {
 				[33829] = 136183,
 			},
 		},
-		["Increased Stamina 19"] = {
+		["Increase Spell Dam 60"] = {
 			["spells"] = {
-				[14466] = 136235,
+				[26158] = 136235,
 			},
 		},
 		["Rancid Mushroom Primer"] = {
@@ -46327,9 +46432,9 @@ WeakAurasOptionsSaved = {
 				[17529] = 136235,
 			},
 		},
-		["Ephemeral Power"] = {
+		["Empty Phial"] = {
 			["spells"] = {
-				[23271] = 135934,
+				[11513] = 136235,
 			},
 		},
 		["Copy of Charge"] = {
@@ -46337,9 +46442,9 @@ WeakAurasOptionsSaved = {
 				[50874] = 132337,
 			},
 		},
-		["Surge 2"] = {
+		["Dissolve Armor"] = {
 			["spells"] = {
-				[19223] = 132337,
+				[13013] = 136007,
 			},
 		},
 		["Frostbrand Proc"] = {
@@ -46429,12 +46534,9 @@ WeakAurasOptionsSaved = {
 				[26108] = 136175,
 			},
 		},
-		["Crypt Scarabs"] = {
+		["Doomcaller Immolate Bonus"] = {
 			["spells"] = {
-				[16418] = 136128,
-				[31591] = 136128,
-				[16594] = 136128,
-				[16795] = 136128,
+				[26116] = 136235,
 			},
 		},
 		["Summon Tito"] = {
@@ -46579,9 +46681,9 @@ WeakAurasOptionsSaved = {
 				[38540] = 135894,
 			},
 		},
-		["Enchant Bracer - Minor Spirit"] = {
+		["Handstitched Leather Boots"] = {
 			["spells"] = {
-				[7766] = 135913,
+				[2149] = 136247,
 			},
 		},
 		["Protection of Elune"] = {
@@ -46660,9 +46762,10 @@ WeakAurasOptionsSaved = {
 				[26735] = 136235,
 			},
 		},
-		["Lesser Blocking"] = {
+		["Hi-Explosive Bomb"] = {
 			["spells"] = {
-				[13690] = 136235,
+				[12543] = 135826,
+				[12619] = 136235,
 			},
 		},
 		["Create Ethereal Summoner"] = {
@@ -46707,9 +46810,9 @@ WeakAurasOptionsSaved = {
 				[16528] = 136016,
 			},
 		},
-		["Holiday - Teleport: Moonglade"] = {
+		["Basilisk Skin"] = {
 			["spells"] = {
-				[26448] = 135758,
+				[10351] = 134314,
 			},
 		},
 		["Iceguard Leggings"] = {
@@ -46808,9 +46911,12 @@ WeakAurasOptionsSaved = {
 				[38448] = 133133,
 			},
 		},
-		["Enchant Weapon - Demonslaying"] = {
+		["Summon Incubus"] = {
 			["spells"] = {
-				[13915] = 135913,
+				[713] = 4352492,
+				[366881] = 4352492,
+				[366894] = 136220,
+				[366902] = 136220,
 			},
 		},
 		["Stasis Test"] = {
@@ -46838,9 +46944,9 @@ WeakAurasOptionsSaved = {
 				[11209] = 133061,
 			},
 		},
-		["Summon Peddlefeet"] = {
+		["Smitten"] = {
 			["spells"] = {
-				[27570] = 132311,
+				[27572] = 132382,
 			},
 		},
 		["Spite"] = {
@@ -46864,10 +46970,9 @@ WeakAurasOptionsSaved = {
 				[38441] = 136201,
 			},
 		},
-		["Mark of Flames"] = {
+		["Deafening Screech"] = {
 			["spells"] = {
-				[15128] = 135807,
-				[25050] = 135807,
+				[3589] = 136122,
 			},
 		},
 		["Swat"] = {
@@ -46887,11 +46992,9 @@ WeakAurasOptionsSaved = {
 				[28833] = 135900,
 			},
 		},
-		["Twilight Cultist Disguise"] = {
+		["Increased Arcane Resist 22"] = {
 			["spells"] = {
-				[24746] = 136235,
-				[24748] = 136235,
-				[24782] = 136235,
+				[14724] = 136235,
 			},
 		},
 		["Chain Heal Discount"] = {
@@ -46946,15 +47049,9 @@ WeakAurasOptionsSaved = {
 				[46512] = 135913,
 			},
 		},
-		["Devouring Plague"] = {
+		["Summon Purple Tallstrider"] = {
 			["spells"] = {
-				[19278] = 136123,
-				[19279] = 136123,
-				[19280] = 136123,
-				[25467] = 136123,
-				[19276] = 136123,
-				[19277] = 136123,
-				[2944] = 136123,
+				[10803] = 132253,
 			},
 		},
 		["Starfire Crit"] = {
@@ -46999,9 +47096,9 @@ WeakAurasOptionsSaved = {
 				[18414] = 132149,
 			},
 		},
-		["Increase Holy Dam 9"] = {
+		["Roar of Fortitude"] = {
 			["spells"] = {
-				[21504] = 136235,
+				[4238] = 132091,
 			},
 		},
 		["Improved Greater Heal"] = {
@@ -47009,9 +47106,14 @@ WeakAurasOptionsSaved = {
 				[38411] = 136235,
 			},
 		},
-		["Aspect of the Pack"] = {
+		["Unbridled Wrath"] = {
 			["spells"] = {
-				[13159] = 132267,
+				[12322] = 136097,
+				[13002] = 136097,
+				[12964] = 136097,
+				[13000] = 136097,
+				[13001] = 136097,
+				[12999] = 136097,
 			},
 		},
 		["Fel Fireball"] = {
@@ -47075,14 +47177,14 @@ WeakAurasOptionsSaved = {
 				[16122] = 132320,
 			},
 		},
-		["Spawn Bile Sludge"] = {
+		["Repulsive Gaze"] = {
 			["spells"] = {
-				[27889] = 136118,
+				[21869] = 132154,
 			},
 		},
-		["Windreaper"] = {
+		["Summon Tamed Raptor"] = {
 			["spells"] = {
-				[20586] = 136022,
+				[7910] = 133723,
 			},
 		},
 		["Inscription of the Blade"] = {
@@ -47132,9 +47234,28 @@ WeakAurasOptionsSaved = {
 				[33356] = 136168,
 			},
 		},
-		["Demon Summoning Torch"] = {
+		["Holy Fire"] = {
 			["spells"] = {
-				[25793] = 136235,
+				[29522] = 135972,
+				[25384] = 135972,
+				[38585] = 135972,
+				[15266] = 135972,
+				[17140] = 135972,
+				[17141] = 135972,
+				[15267] = 135972,
+				[17142] = 135972,
+				[18167] = 135972,
+				[15261] = 135972,
+				[15262] = 135972,
+				[29563] = 135972,
+				[23860] = 135972,
+				[15263] = 135972,
+				[39323] = 136235,
+				[36947] = 135972,
+				[18165] = 135972,
+				[15264] = 135972,
+				[14914] = 135972,
+				[15265] = 135972,
 			},
 		},
 		["Damage Immunity: Frost"] = {
@@ -47262,15 +47383,30 @@ WeakAurasOptionsSaved = {
 				[43957] = 132796,
 			},
 		},
-		["Decrease Mana Cost - Shadow"] = {
+		["Inferno"] = {
 			["spells"] = {
-				[17912] = 136235,
-				[17916] = 136235,
+				[1122] = 136219,
+				[19695] = 135818,
+				[22699] = 135860,
+				[358663] = 136219,
+				[39346] = 135818,
+				[39941] = 136219,
+				[38939] = 136219,
+				[31299] = 136219,
+				[35268] = 135818,
+				[1413] = 136219,
+				[33679] = 136219,
+				[24670] = 136219,
+				[37625] = 136219,
+				[19698] = 135818,
+				[35283] = 135818,
+				[34249] = 136219,
 			},
 		},
-		["Summon Aquementas"] = {
+		["Rebuild"] = {
 			["spells"] = {
-				[13978] = 136235,
+				[10345] = 136168,
+				[13951] = 136168,
 			},
 		},
 		["Tag: Purple Cloud"] = {
@@ -47378,34 +47514,9 @@ WeakAurasOptionsSaved = {
 				[13099] = 132149,
 			},
 		},
-		["Lash of Pain"] = {
+		["Create Thunder Bluff Pledges of Loyalty"] = {
 			["spells"] = {
-				[27274] = 136136,
-				[7815] = 136136,
-				[27493] = 136136,
-				[11779] = 136136,
-				[7816] = 136136,
-				[41353] = 136136,
-				[7878] = 136136,
-				[20398] = 136136,
-				[44640] = 136136,
-				[20399] = 136136,
-				[11781] = 136136,
-				[20400] = 136136,
-				[36864] = 136136,
-				[20401] = 136136,
-				[11782] = 136136,
-				[20402] = 136136,
-				[11778] = 136136,
-				[38852] = 136136,
-				[15968] = 136136,
-				[7876] = 136136,
-				[7877] = 136136,
-				[7814] = 136136,
-				[11783] = 136136,
-				[21987] = 136136,
-				[32202] = 136136,
-				[11780] = 136136,
+				[27716] = 136235,
 			},
 		},
 		["Ice Totem"] = {
@@ -47440,9 +47551,9 @@ WeakAurasOptionsSaved = {
 				[38326] = 135929,
 			},
 		},
-		["Increase Spell Dam 29"] = {
+		["Enchant Boots - Minor Agility"] = {
 			["spells"] = {
-				[13881] = 136235,
+				[7867] = 135913,
 			},
 		},
 		["Critter Enlarger"] = {
@@ -47450,9 +47561,9 @@ WeakAurasOptionsSaved = {
 				[30549] = 136235,
 			},
 		},
-		["Mightfish Steak"] = {
+		["Blood Tiger Breastplate"] = {
 			["spells"] = {
-				[18246] = 136192,
+				[24124] = 136235,
 			},
 		},
 		["Burn Blood Elf Equipment"] = {
@@ -47499,23 +47610,9 @@ WeakAurasOptionsSaved = {
 				[25039] = 135864,
 			},
 		},
-		["Sword Specialization"] = {
+		["Enchant Gloves - Greater Strength"] = {
 			["spells"] = {
-				[4352] = 132223,
-				[12814] = 135328,
-				[4354] = 132223,
-				[20597] = 132223,
-				[13960] = 135328,
-				[13962] = 135328,
-				[13964] = 135328,
-				[16459] = 135328,
-				[12813] = 135328,
-				[12815] = 135328,
-				[4362] = 132223,
-				[13961] = 135328,
-				[12281] = 135328,
-				[13963] = 135328,
-				[12812] = 135328,
+				[20013] = 135913,
 			},
 		},
 		["The Dark of Night"] = {
@@ -47802,9 +47899,9 @@ WeakAurasOptionsSaved = {
 				[40079] = 132286,
 			},
 		},
-		["Enchant Gloves - Minor Haste"] = {
+		["Journeyman Blacksmith"] = {
 			["spells"] = {
-				[13948] = 135913,
+				[2021] = 136241,
 			},
 		},
 		["Blackwhelp Net"] = {
@@ -47893,9 +47990,10 @@ WeakAurasOptionsSaved = {
 				[38157] = 132760,
 			},
 		},
-		["Coarse Blasting Powder"] = {
+		["Insight"] = {
 			["spells"] = {
-				[3929] = 136235,
+				[18820] = 135932,
+				[37620] = 135736,
 			},
 		},
 		["Add Fire Dam - Weap 12"] = {
@@ -48041,9 +48139,9 @@ WeakAurasOptionsSaved = {
 				[29369] = 136235,
 			},
 		},
-		["Increased Shadow Resist 29"] = {
+		["Black Grasp of the Destroyer"] = {
 			["spells"] = {
-				[14692] = 136235,
+				[27589] = 136192,
 			},
 		},
 		["Gossip NPC Appearance - Goblin Female, Christmas"] = {
@@ -48122,9 +48220,9 @@ WeakAurasOptionsSaved = {
 				[38057] = 136120,
 			},
 		},
-		["Summon Images"] = {
+		["Increased Shadow Resist 36"] = {
 			["spells"] = {
-				[747] = 136235,
+				[14698] = 136235,
 			},
 		},
 		["Tune Deathforge Infernal"] = {
@@ -48203,16 +48301,9 @@ WeakAurasOptionsSaved = {
 				[37089] = 135797,
 			},
 		},
-		["Drain Soul"] = {
+		["Juggler Vein Rupture"] = {
 			["spells"] = {
-				[35839] = 136163,
-				[11675] = 136163,
-				[18371] = 136163,
-				[8288] = 136163,
-				[27217] = 136163,
-				[1120] = 136163,
-				[32862] = 136163,
-				[8289] = 136163,
+				[10265] = 136168,
 			},
 		},
 		["Fel Reaver Sentinel Tag"] = {
@@ -48247,9 +48338,18 @@ WeakAurasOptionsSaved = {
 				[12059] = 132149,
 			},
 		},
-		["Heavy Scorpid Gauntlets"] = {
+		["Seal of Light"] = {
 			["spells"] = {
-				[19064] = 136235,
+				[27161] = 135917,
+				[20340] = 135917,
+				[20333] = 135917,
+				[20165] = 135917,
+				[20334] = 135917,
+				[27160] = 135917,
+				[20167] = 135917,
+				[20349] = 135917,
+				[20347] = 135917,
+				[20348] = 135917,
 			},
 		},
 		["Shadow Council Channel"] = {
@@ -48404,9 +48504,9 @@ WeakAurasOptionsSaved = {
 				[35158] = 135843,
 			},
 		},
-		["Create Banner of Provocation"] = {
+		["Expert Enchanting"] = {
 			["spells"] = {
-				[27755] = 136235,
+				[7416] = 136244,
 			},
 		},
 		["Cannon Port Accepted Loc Ruuan"] = {
@@ -48439,9 +48539,9 @@ WeakAurasOptionsSaved = {
 				[38449] = 135833,
 			},
 		},
-		["Ahn'Qiraj Reward Buff (Melee - 40)"] = {
+		["Idom Rool Camera Shake"] = {
 			["spells"] = {
-				[25795] = 134969,
+				[12816] = 136235,
 			},
 		},
 		["Ahn'Qiraj Reward Buff (Melee - 20)"] = {
@@ -48582,9 +48682,9 @@ WeakAurasOptionsSaved = {
 				[37904] = 136124,
 			},
 		},
-		["Summon Tamed Turtle"] = {
+		["Nightfin Soup"] = {
 			["spells"] = {
-				[7915] = 134061,
+				[18243] = 136192,
 			},
 		},
 		["Summon Hammertoe's Spirit"] = {
@@ -48592,9 +48692,9 @@ WeakAurasOptionsSaved = {
 				[4985] = 135955,
 			},
 		},
-		["Increased Arcane Resist 12"] = {
+		["Spellstone"] = {
 			["spells"] = {
-				[14714] = 136235,
+				[128] = 134131,
 			},
 		},
 		["Multi-Spectrum Light Trap"] = {
@@ -48619,9 +48719,9 @@ WeakAurasOptionsSaved = {
 				[37896] = 135815,
 			},
 		},
-		["Brown Skeletal Horse"] = {
+		["Increased Intellect 01"] = {
 			["spells"] = {
-				[17464] = 132264,
+				[7468] = 136235,
 			},
 		},
 		["Generic"] = {
@@ -48758,10 +48858,9 @@ WeakAurasOptionsSaved = {
 				[37851] = 135737,
 			},
 		},
-		["Enchant Weapon - Mighty Spirit"] = {
+		["Increase Frost Dam 21"] = {
 			["spells"] = {
-				[23803] = 135913,
-				[359642] = 135913,
+				[9308] = 136235,
 			},
 		},
 		["Gossip NPC Appearance - Dwarf Female, Christmas"] = {
@@ -48780,9 +48879,9 @@ WeakAurasOptionsSaved = {
 				[43640] = 135849,
 			},
 		},
-		["Attack Power Ranged 70"] = {
+		["Spirit Shade Visual"] = {
 			["spells"] = {
-				[21453] = 136235,
+				[24809] = 136123,
 			},
 		},
 		["Fling torch"] = {
@@ -48836,9 +48935,9 @@ WeakAurasOptionsSaved = {
 				[44973] = 136235,
 			},
 		},
-		["Swift Flight Bracers"] = {
+		["Create Banner of Provocation"] = {
 			["spells"] = {
-				[22923] = 136235,
+				[27755] = 136235,
 			},
 		},
 		["Gnome Female Illusion TEST"] = {
@@ -48929,9 +49028,9 @@ WeakAurasOptionsSaved = {
 				[34141] = 133717,
 			},
 		},
-		["Artisan Leatherworking"] = {
+		["Fel Suppression"] = {
 			["spells"] = {
-				[10663] = 133611,
+				[10270] = 135965,
 			},
 		},
 		["Xi'ri's Restoration"] = {
@@ -48939,9 +49038,9 @@ WeakAurasOptionsSaved = {
 				[41402] = 136235,
 			},
 		},
-		["Chimeric Vest"] = {
+		["Improved Smite and Holy Fire"] = {
 			["spells"] = {
-				[19081] = 136235,
+				[24482] = 136235,
 			},
 		},
 		["Death and Decay"] = {
@@ -49108,9 +49207,9 @@ WeakAurasOptionsSaved = {
 				[31588] = 135740,
 			},
 		},
-		["Increase Healing 29"] = {
+		["Dense Grinding Stone"] = {
 			["spells"] = {
-				[9316] = 136235,
+				[16639] = 136192,
 			},
 		},
 		["Teron Gorefiend"] = {
@@ -49174,14 +49273,14 @@ WeakAurasOptionsSaved = {
 				[27862] = 132111,
 			},
 		},
-		["Punctured Voodoo Doll DRU DND"] = {
+		["Wicked Mithril Blade"] = {
 			["spells"] = {
-				[24279] = 136235,
+				[9997] = 136192,
 			},
 		},
-		["Egg Explosion"] = {
+		["Demoralize"] = {
 			["spells"] = {
-				[19593] = 136144,
+				[23262] = 132366,
 			},
 		},
 		["Instant Toxin"] = {
@@ -49357,9 +49456,17 @@ WeakAurasOptionsSaved = {
 				[22439] = 135826,
 			},
 		},
-		["Cauterizing Flames"] = {
+		["Shred"] = {
 			["spells"] = {
-				[19366] = 135830,
+				[5221] = 136231,
+				[27555] = 132122,
+				[9829] = 136231,
+				[6800] = 136231,
+				[27001] = 136231,
+				[3252] = 132152,
+				[27002] = 136231,
+				[9830] = 136231,
+				[8992] = 136231,
 			},
 		},
 		["Glowy (Red)"] = {
@@ -49428,9 +49535,9 @@ WeakAurasOptionsSaved = {
 				[28182] = 136235,
 			},
 		},
-		["Uber Stealth"] = {
+		["Ahn'Qiraj Reward Buff (Melee - 40)"] = {
 			["spells"] = {
-				[10032] = 132320,
+				[25795] = 134969,
 			},
 		},
 		["Earthpeace Breastplate"] = {
@@ -49450,9 +49557,10 @@ WeakAurasOptionsSaved = {
 				[352574] = 136052,
 			},
 		},
-		["Fun Bomb"] = {
+		["Spiritual Domination"] = {
 			["spells"] = {
-				[20547] = 132863,
+				[10691] = 135818,
+				[10693] = 135818,
 			},
 		},
 		["Increased Hunter Pet Damage"] = {
@@ -49460,9 +49568,9 @@ WeakAurasOptionsSaved = {
 				[22854] = 132091,
 			},
 		},
-		["Shadoweave Pants"] = {
+		["[PH] Teleport to Felwood"] = {
 			["spells"] = {
-				[12052] = 132149,
+				[6483] = 136235,
 			},
 		},
 		["Might of the Timbermaw"] = {
@@ -49475,9 +49583,9 @@ WeakAurasOptionsSaved = {
 				[37651] = 136172,
 			},
 		},
-		["Arcane Missiles +1"] = {
+		["Revall"] = {
 			["spells"] = {
-				[21228] = 136235,
+				[26687] = 135955,
 			},
 		},
 		["Overpower"] = {
@@ -49523,10 +49631,9 @@ WeakAurasOptionsSaved = {
 				[45015] = 135789,
 			},
 		},
-		["Eye of Immol'thar"] = {
+		["Long bow shot (TEST)"] = {
 			["spells"] = {
-				[22899] = 136152,
-				[22909] = 136120,
+				[60] = 136235,
 			},
 		},
 		["Ignite Power"] = {
@@ -49559,9 +49666,9 @@ WeakAurasOptionsSaved = {
 				[12158] = 135805,
 			},
 		},
-		["Lesser Astral Essence"] = {
+		["Turtle Scale Breastplate"] = {
 			["spells"] = {
-				[13498] = 136192,
+				[10511] = 136247,
 			},
 		},
 		["Knothide Leather"] = {
@@ -49641,9 +49748,20 @@ WeakAurasOptionsSaved = {
 				[37611] = 136235,
 			},
 		},
-		["Increased Frost Resist 11"] = {
+		["Disarm"] = {
 			["spells"] = {
-				[14551] = 136235,
+				[22691] = 132343,
+				[15752] = 132343,
+				[13534] = 132343,
+				[676] = 132343,
+				[31955] = 132343,
+				[11879] = 132343,
+				[30013] = 132343,
+				[36139] = 132343,
+				[8379] = 132343,
+				[41062] = 132343,
+				[27581] = 132343,
+				[6713] = 132343,
 			},
 		},
 		["Hit Rating"] = {
@@ -49673,9 +49791,11 @@ WeakAurasOptionsSaved = {
 				[37602] = 136235,
 			},
 		},
-		["Growl of Fortitude"] = {
+		["Improved Sunder Armor"] = {
 			["spells"] = {
-				[4148] = 132091,
+				[12810] = 132363,
+				[12308] = 132363,
+				[12811] = 132363,
 			},
 		},
 		["Offensive Discount"] = {
@@ -49815,9 +49935,9 @@ WeakAurasOptionsSaved = {
 				[10451] = 135826,
 			},
 		},
-		["Swift Wind"] = {
+		["Minions of Malathrom"] = {
 			["spells"] = {
-				[8385] = 136022,
+				[3537] = 136133,
 			},
 		},
 		["Adamantite Rapier"] = {
@@ -49825,12 +49945,10 @@ WeakAurasOptionsSaved = {
 				[29571] = 136192,
 			},
 		},
-		["Living Bomb"] = {
+		["Aquadynamic Fish Attractor"] = {
 			["spells"] = {
-				[44459] = 135790,
-				[20475] = 132863,
-				[44457] = 135790,
-				[44461] = 135790,
+				[8089] = 134335,
+				[9271] = 136235,
 			},
 		},
 		["Triangulation Point One"] = {
@@ -49884,20 +50002,19 @@ WeakAurasOptionsSaved = {
 				[16130] = 136097,
 			},
 		},
-		["Bloodrager's Requiem"] = {
+		["Increase Shadow Dam 72"] = {
 			["spells"] = {
-				[23964] = 135845,
+				[26737] = 136235,
 			},
 		},
-		["Increase Nature Dam 26"] = {
+		["Disarm Trap"] = {
 			["spells"] = {
-				[17989] = 136235,
+				[1842] = 136162,
 			},
 		},
-		["Increase Healing 9"] = {
+		["Charm (Possess)"] = {
 			["spells"] = {
-				[7678] = 136235,
-				[40687] = 136235,
+				[530] = 135994,
 			},
 		},
 		["Summon Felhunter"] = {
@@ -49933,10 +50050,9 @@ WeakAurasOptionsSaved = {
 				[24727] = 136235,
 			},
 		},
-		["Summon RC Blimp"] = {
+		["Beast Tracking"] = {
 			["spells"] = {
-				[25005] = 136235,
-				[25006] = 136235,
+				[10227] = 132328,
 			},
 		},
 		["Rapid Killing"] = {
@@ -49947,10 +50063,9 @@ WeakAurasOptionsSaved = {
 				[35098] = 132205,
 			},
 		},
-		["Corrupted Stamina"] = {
+		["Enchant Chest - Greater Health"] = {
 			["spells"] = {
-				[6819] = 135914,
-				[23244] = 135914,
+				[13640] = 135913,
 			},
 		},
 		["Tower Capture"] = {
@@ -49959,9 +50074,9 @@ WeakAurasOptionsSaved = {
 				[31885] = 132381,
 			},
 		},
-		["Chitinous Spikes"] = {
+		["Critical Strike"] = {
 			["spells"] = {
-				[26168] = 133571,
+				[1132] = 132109,
 			},
 		},
 		["Rickety Magic Broom"] = {
@@ -50045,11 +50160,9 @@ WeakAurasOptionsSaved = {
 				[39404] = 135913,
 			},
 		},
-		["Totemic Mastery"] = {
+		["Enchant Boots - Agility"] = {
 			["spells"] = {
-				[38437] = 136099,
-				[16189] = 136069,
-				[38443] = 136235,
+				[13935] = 135913,
 			},
 		},
 		["Petrify"] = {
@@ -50123,9 +50236,9 @@ WeakAurasOptionsSaved = {
 				[23556] = 136235,
 			},
 		},
-		["Increased Shadow Resist 28"] = {
+		["Noxious Breath"] = {
 			["spells"] = {
-				[14691] = 136235,
+				[24818] = 136169,
 			},
 		},
 		["Crimson Serpent"] = {
@@ -50201,9 +50314,9 @@ WeakAurasOptionsSaved = {
 				[37642] = 132188,
 			},
 		},
-		["Eye of Kilrogg"] = {
+		["Hyena Sample"] = {
 			["spells"] = {
-				[126] = 136155,
+				[11760] = 136235,
 			},
 		},
 		["Shared Suffering"] = {
@@ -50258,10 +50371,9 @@ WeakAurasOptionsSaved = {
 				[31732] = 132333,
 			},
 		},
-		["Replenish Mana II"] = {
+		["Attack Power Ranged 86"] = {
 			["spells"] = {
-				[5406] = 134134,
-				[9253] = 134134,
+				[21460] = 136235,
 			},
 		},
 		["Improved Arcane Blast"] = {
@@ -50279,9 +50391,11 @@ WeakAurasOptionsSaved = {
 				[27029] = 135966,
 			},
 		},
-		["Scald"] = {
+		["Transformation"] = {
 			["spells"] = {
-				[17276] = 135807,
+				[42014] = 136235,
+				[16794] = 132311,
+				[7671] = 136235,
 			},
 		},
 		["Karazhan - Chess NPC AI, Snapshot timer"] = {
@@ -50289,9 +50403,9 @@ WeakAurasOptionsSaved = {
 				[37440] = 136235,
 			},
 		},
-		["Green Channeling"] = {
+		["Summon Dalaran Serpent"] = {
 			["spells"] = {
-				[13540] = 136120,
+				[3615] = 132089,
 			},
 		},
 		["Pyroclast Barrage"] = {
@@ -50304,10 +50418,10 @@ WeakAurasOptionsSaved = {
 				[34307] = 135920,
 			},
 		},
-		["Flameshocker's Touch"] = {
+		["Slime Bolt"] = {
 			["spells"] = {
-				[28314] = 135990,
-				[28329] = 136105,
+				[28311] = 136016,
+				[32309] = 136016,
 			},
 		},
 		["Spout"] = {
@@ -50342,9 +50456,9 @@ WeakAurasOptionsSaved = {
 				[37416] = 132269,
 			},
 		},
-		["Lesser Mana Potion"] = {
+		["Increase Spell Dam 49"] = {
 			["spells"] = {
-				[3173] = 136235,
+				[28360] = 136235,
 			},
 		},
 		["Portal of Immol'thar"] = {
@@ -50414,9 +50528,9 @@ WeakAurasOptionsSaved = {
 				[37388] = 136235,
 			},
 		},
-		["Red Linen Vest"] = {
+		["Create Lunar Festival Invitation"] = {
 			["spells"] = {
-				[7629] = 132149,
+				[26375] = 136235,
 			},
 		},
 		["Boots of the Enchanter"] = {
@@ -50528,18 +50642,9 @@ WeakAurasOptionsSaved = {
 				[37364] = 136235,
 			},
 		},
-		["Stoneskin Totem"] = {
+		["Automation Mechanic Immunity"] = {
 			["spells"] = {
-				[8071] = 136098,
-				[8073] = 136098,
-				[25508] = 136098,
-				[10407] = 136098,
-				[25509] = 136098,
-				[8154] = 136098,
-				[8155] = 136098,
-				[10406] = 136098,
-				[10408] = 136098,
-				[38115] = 136098,
+				[87] = 135905,
 			},
 		},
 		["Damage Reduction: Physical"] = {
@@ -50621,9 +50726,9 @@ WeakAurasOptionsSaved = {
 				[16028] = 136235,
 			},
 		},
-		["Increased Shadow Resist 24"] = {
+		["Black Mageweave Shoulders"] = {
 			["spells"] = {
-				[14687] = 136235,
+				[12074] = 132149,
 			},
 		},
 		["Uldaman Key Staff"] = {
@@ -50680,9 +50785,9 @@ WeakAurasOptionsSaved = {
 				[818] = 135805,
 			},
 		},
-		["Moonkin Aura"] = {
+		["Agro Drones"] = {
 			["spells"] = {
-				[24907] = 136057,
+				[25152] = 136235,
 			},
 		},
 		["Power Subjugator"] = {
@@ -50696,9 +50801,9 @@ WeakAurasOptionsSaved = {
 				[31680] = 135822,
 			},
 		},
-		["Create Primal Water"] = {
+		["Proudmoore's Defense"] = {
 			["spells"] = {
-				[28103] = 136192,
+				[7120] = 135880,
 			},
 		},
 		["Starfire Bonus"] = {
@@ -50726,9 +50831,9 @@ WeakAurasOptionsSaved = {
 				[37314] = 136235,
 			},
 		},
-		["Saurfang's Rage"] = {
+		["Increased Spirit 14"] = {
 			["spells"] = {
-				[26339] = 136235,
+				[9263] = 136235,
 			},
 		},
 		["Helcular's Spawn"] = {
@@ -50736,9 +50841,10 @@ WeakAurasOptionsSaved = {
 				[3390] = 136235,
 			},
 		},
-		["Temperature Reading"] = {
+		["Corrupted Stamina Passive"] = {
 			["spells"] = {
-				[16378] = 136235,
+				[6822] = 136006,
+				[23245] = 136006,
 			},
 		},
 		["Augment Pain"] = {
@@ -50765,12 +50871,9 @@ WeakAurasOptionsSaved = {
 				[37154] = 132312,
 			},
 		},
-		["Lesser Agility"] = {
+		["The Breaking Left Blade DND"] = {
 			["spells"] = {
-				[3157] = 134873,
-				[13364] = 136235,
-				[3158] = 134873,
-				[2374] = 134873,
+				[22991] = 136164,
 			},
 		},
 		["Highlord's Justice"] = {
@@ -50833,9 +50936,9 @@ WeakAurasOptionsSaved = {
 				[37286] = 136235,
 			},
 		},
-		["Cold Blood"] = {
+		["Chicken Other"] = {
 			["spells"] = {
-				[14177] = 135988,
+				[3246] = 135996,
 			},
 		},
 		["Video AE Emote Sleep"] = {
@@ -50874,10 +50977,11 @@ WeakAurasOptionsSaved = {
 				[14709] = 136235,
 			},
 		},
-		["Improved Berserker Rage"] = {
+		["Wide Slash"] = {
 			["spells"] = {
-				[20500] = 136009,
-				[20501] = 136009,
+				[7342] = 132338,
+				[11837] = 132338,
+				[25814] = 132338,
 			},
 		},
 		["Improved Flurry"] = {
@@ -50945,15 +51049,9 @@ WeakAurasOptionsSaved = {
 				[37237] = 136235,
 			},
 		},
-		["REUSE"] = {
+		["Big Bag of Enchantment"] = {
 			["spells"] = {
-				[37477] = 136235,
-				[1206] = 136235,
-				[40515] = 136235,
-				[37338] = 136235,
-				[39531] = 133565,
-				[39528] = 132089,
-				[5735] = 136235,
+				[27660] = 132149,
 			},
 		},
 		["Stars Over Head"] = {
@@ -51034,9 +51132,9 @@ WeakAurasOptionsSaved = {
 				[12614] = 136235,
 			},
 		},
-		["Increased All Resist 11"] = {
+		["Ashenvale Outrunner Sneak"] = {
 			["spells"] = {
-				[18682] = 136235,
+				[20540] = 132320,
 			},
 		},
 		["Claw"] = {
@@ -51107,10 +51205,9 @@ WeakAurasOptionsSaved = {
 				[37292] = 136235,
 			},
 		},
-		["Bat Costume"] = {
+		["Larva Goo"] = {
 			["spells"] = {
-				[24732] = 132288,
-				[24733] = 132182,
+				[21069] = 132104,
 			},
 		},
 		["The Decapitator"] = {
@@ -51133,14 +51230,15 @@ WeakAurasOptionsSaved = {
 				[36973] = 136235,
 			},
 		},
-		["Naralex's Nightmare"] = {
+		["Warrior's Resolve"] = {
 			["spells"] = {
-				[7967] = 136090,
+				[27418] = 135953,
+				[27419] = 135953,
 			},
 		},
-		["Heavy Mithril Boots"] = {
+		["Soul Bite"] = {
 			["spells"] = {
-				[9968] = 136192,
+				[11016] = 136208,
 			},
 		},
 		["Bloodberry"] = {
@@ -51205,9 +51303,9 @@ WeakAurasOptionsSaved = {
 				[37200] = 136175,
 			},
 		},
-		["King of the Gordok"] = {
+		["Attack Power 80"] = {
 			["spells"] = {
-				[22799] = 132768,
+				[15826] = 136235,
 			},
 		},
 		["Inactive"] = {
@@ -51302,9 +51400,9 @@ WeakAurasOptionsSaved = {
 				[33824] = 135805,
 			},
 		},
-		["Summon Baby Murloc (Blue)"] = {
+		["Conjure Frostwolf Rank 4 Insignia DND"] = {
 			["spells"] = {
-				[24985] = 134300,
+				[22111] = 136235,
 			},
 		},
 		["Item +MANA/FR Leg R2"] = {
@@ -51636,9 +51734,9 @@ WeakAurasOptionsSaved = {
 				[37099] = 136235,
 			},
 		},
-		["Green Tinted Goggles"] = {
+		["Resistance (OLD)"] = {
 			["spells"] = {
-				[3956] = 136235,
+				[2381] = 136101,
 			},
 		},
 		["Crate Disguise"] = {
@@ -51661,9 +51759,11 @@ WeakAurasOptionsSaved = {
 				[28947] = 136235,
 			},
 		},
-		["Attack Power - Feral (+0574)"] = {
+		["Fire Shot"] = {
 			["spells"] = {
-				[24694] = 136235,
+				[6979] = 132312,
+				[6980] = 132312,
+				[3011] = 132312,
 			},
 		},
 		["Gift of Stone"] = {
@@ -51707,11 +51807,9 @@ WeakAurasOptionsSaved = {
 				[34128] = 136030,
 			},
 		},
-		["Onyxia Scale Cloak"] = {
+		["Bristle Whisker Catfish"] = {
 			["spells"] = {
-				[22683] = 136235,
-				[19093] = 136235,
-				[22684] = 135744,
+				[7755] = 136192,
 			},
 		},
 		["Increase Healing 105"] = {
@@ -51719,9 +51817,9 @@ WeakAurasOptionsSaved = {
 				[37083] = 136235,
 			},
 		},
-		["Azure Silk Vest"] = {
+		["Increase Nature Dam 26"] = {
 			["spells"] = {
-				[3859] = 132149,
+				[17989] = 136235,
 			},
 		},
 		["Undo Crowd Control Rogue"] = {
@@ -51746,9 +51844,13 @@ WeakAurasOptionsSaved = {
 				[6297] = 135826,
 			},
 		},
-		["Black Whelp Tunic"] = {
+		["Improved Chain Heal"] = {
 			["spells"] = {
-				[24940] = 136247,
+				[30872] = 136042,
+				[21899] = 136235,
+				[38435] = 136235,
+				[38322] = 136052,
+				[30873] = 136042,
 			},
 		},
 		["Summon Furious Mr. Pinchy"] = {
@@ -51915,9 +52017,9 @@ WeakAurasOptionsSaved = {
 				[44030] = 135039,
 			},
 		},
-		["Summon Lava Spawn"] = {
+		["Fool's Plight"] = {
 			["spells"] = {
-				[19392] = 136192,
+				[23504] = 135996,
 			},
 		},
 		["Draenei Tomb Guardian Spell"] = {
@@ -51940,11 +52042,9 @@ WeakAurasOptionsSaved = {
 				[9930] = 136025,
 			},
 		},
-		["Intimidation"] = {
+		["Coarse Grinding Stone"] = {
 			["spells"] = {
-				[19577] = 132111,
-				[24394] = 132111,
-				[7093] = 136122,
+				[3326] = 136192,
 			},
 		},
 		["Blink Visual"] = {
@@ -52069,9 +52169,9 @@ WeakAurasOptionsSaved = {
 				[25770] = 136235,
 			},
 		},
-		["Increased Block 14"] = {
+		["Iridescent Hammer"] = {
 			["spells"] = {
-				[21477] = 136235,
+				[6518] = 136192,
 			},
 		},
 		["Chain Lightning 02"] = {
@@ -52079,9 +52179,13 @@ WeakAurasOptionsSaved = {
 				[36896] = 136015,
 			},
 		},
-		["Create Cleansing Totem"] = {
+		["Windfury Totem Effect"] = {
 			["spells"] = {
-				[4983] = 136168,
+				[10607] = 136114,
+				[10611] = 136114,
+				[25580] = 136114,
+				[8514] = 136114,
+				[25579] = 136114,
 			},
 		},
 		["Linen Bag"] = {
@@ -52136,9 +52240,9 @@ WeakAurasOptionsSaved = {
 				[39169] = 136235,
 			},
 		},
-		["Increased Stamina 17"] = {
+		["Summon Cockroach"] = {
 			["spells"] = {
-				[14464] = 136235,
+				[10688] = 132311,
 			},
 		},
 		["Mental Strength"] = {
@@ -52166,9 +52270,11 @@ WeakAurasOptionsSaved = {
 				[36849] = 135735,
 			},
 		},
-		["Increased All Resist 01"] = {
+		["Enfeeble"] = {
 			["spells"] = {
-				[18672] = 136235,
+				[41624] = 136169,
+				[30843] = 136169,
+				[11963] = 136138,
 			},
 		},
 		["Mirror Image"] = {
@@ -52376,9 +52482,9 @@ WeakAurasOptionsSaved = {
 				[1769] = 132219,
 			},
 		},
-		["Runecloth Cloak"] = {
+		["Increased Arcane Resist 34"] = {
 			["spells"] = {
-				[18409] = 132149,
+				[14736] = 136235,
 			},
 		},
 		["Cannon - Floating State"] = {
@@ -52400,9 +52506,12 @@ WeakAurasOptionsSaved = {
 				[36800] = 136235,
 			},
 		},
-		["Increase Spell Dam 33"] = {
+		["Sonic Burst"] = {
 			["spells"] = {
-				[18050] = 136235,
+				[23918] = 136222,
+				[29904] = 136222,
+				[8281] = 136222,
+				[39052] = 136222,
 			},
 		},
 		["Balnazzar Transform Stun"] = {
@@ -52472,9 +52581,9 @@ WeakAurasOptionsSaved = {
 				[36782] = 136196,
 			},
 		},
-		["Spirit of Blessing"] = {
+		["Enchant Chest - Lesser Health"] = {
 			["spells"] = {
-				[21744] = 135913,
+				[7748] = 135913,
 			},
 		},
 		["Shadowy Fortitude"] = {
@@ -52571,9 +52680,9 @@ WeakAurasOptionsSaved = {
 				[23947] = 135987,
 			},
 		},
-		["Wracking Pains"] = {
+		["Greater Firepower"] = {
 			["spells"] = {
-				[13619] = 136139,
+				[26276] = 134840,
 			},
 		},
 		["Headless Horseman - Start Fire Target Test (Guard)"] = {
@@ -52680,9 +52789,9 @@ WeakAurasOptionsSaved = {
 				[33025] = 136235,
 			},
 		},
-		["Increased Block 16"] = {
+		["Health II"] = {
 			["spells"] = {
-				[21478] = 136235,
+				[16884] = 134824,
 			},
 		},
 		["Speed of Owatanka"] = {
@@ -52797,26 +52906,9 @@ WeakAurasOptionsSaved = {
 				[44132] = 136198,
 			},
 		},
-		["Banish"] = {
+		["Gift of Ragnaros"] = {
 			["spells"] = {
-				[37527] = 136135,
-				[710] = 136135,
-				[39674] = 136135,
-				[35182] = 136135,
-				[38376] = 136135,
-				[18647] = 136135,
-				[44765] = 136135,
-				[38009] = 136135,
-				[39622] = 136135,
-				[37546] = 136135,
-				[40370] = 136135,
-				[38791] = 136135,
-				[27565] = 136135,
-				[37833] = 136135,
-				[8994] = 136135,
-				[44836] = 136135,
-				[24466] = 135994,
-				[30231] = 136135,
+				[7891] = 135805,
 			},
 		},
 		["Lesser Mystic Wand"] = {
@@ -52840,9 +52932,32 @@ WeakAurasOptionsSaved = {
 				[41516] = 132250,
 			},
 		},
-		["Increased Spirit 28"] = {
+		["Mortal Strike"] = {
 			["spells"] = {
-				[14450] = 136235,
+				[39171] = 132355,
+				[31911] = 132355,
+				[15708] = 132355,
+				[29572] = 132355,
+				[25248] = 132355,
+				[32736] = 132355,
+				[9347] = 132355,
+				[17547] = 132355,
+				[44268] = 132355,
+				[40220] = 132355,
+				[43441] = 132355,
+				[43529] = 132340,
+				[37335] = 132355,
+				[35054] = 132355,
+				[12294] = 132355,
+				[16856] = 132355,
+				[24573] = 132355,
+				[21551] = 132355,
+				[19643] = 132355,
+				[21552] = 132355,
+				[13737] = 132355,
+				[21553] = 132355,
+				[30330] = 132355,
+				[27580] = 132355,
 			},
 		},
 		["Spellstrike Pants"] = {
@@ -52881,17 +52996,14 @@ WeakAurasOptionsSaved = {
 				[36613] = 132267,
 			},
 		},
-		["Throw Proximity Bomb"] = {
+		["Emberseer Transform"] = {
 			["spells"] = {
-				[3823] = 136173,
-				[30846] = 136173,
-				[32784] = 136173,
-				[34095] = 136173,
+				[16052] = 135819,
 			},
 		},
-		["Sol U"] = {
+		["Attack Power Ranged 65"] = {
 			["spells"] = {
-				[3207] = 135859,
+				[21451] = 136235,
 			},
 		},
 		["Spark"] = {
@@ -52900,9 +53012,9 @@ WeakAurasOptionsSaved = {
 				[32110] = 136048,
 			},
 		},
-		["Summon Dreadsteed Spirit (DND)"] = {
+		["Bleakwood Hew"] = {
 			["spells"] = {
-				[23159] = 136235,
+				[16965] = 136192,
 			},
 		},
 		["Increased Stun Resist 01"] = {
@@ -53039,9 +53151,23 @@ WeakAurasOptionsSaved = {
 				[33360] = 133971,
 			},
 		},
-		["Increased Shadow Resist 37"] = {
+		["Toughness"] = {
 			["spells"] = {
-				[14699] = 136235,
+				[16307] = 135892,
+				[16309] = 135892,
+				[20147] = 135892,
+				[20145] = 135892,
+				[20146] = 135892,
+				[12762] = 135892,
+				[12299] = 135892,
+				[16306] = 135892,
+				[16308] = 135892,
+				[20143] = 135892,
+				[16252] = 135892,
+				[20144] = 135892,
+				[12761] = 135892,
+				[12763] = 135892,
+				[12764] = 135892,
 			},
 		},
 		["Shoot Missile"] = {
@@ -53130,10 +53256,9 @@ WeakAurasOptionsSaved = {
 				[36548] = 136235,
 			},
 		},
-		["Spiritual Domination"] = {
+		["Enchant Shield - Lesser Block"] = {
 			["spells"] = {
-				[10691] = 135818,
-				[10693] = 135818,
+				[13689] = 135913,
 			},
 		},
 		["Increase Shadow Dam 11"] = {
@@ -53228,13 +53353,9 @@ WeakAurasOptionsSaved = {
 				[36538] = 136235,
 			},
 		},
-		["Blessing of Sanctuary"] = {
+		["Deadly Blunderbuss"] = {
 			["spells"] = {
-				[27168] = 136051,
-				[20911] = 136051,
-				[20912] = 136051,
-				[20913] = 136051,
-				[20914] = 136051,
+				[3936] = 136235,
 			},
 		},
 		["Summon Scorchling"] = {
@@ -53284,11 +53405,9 @@ WeakAurasOptionsSaved = {
 				[7452] = 136235,
 			},
 		},
-		["Wail of Souls"] = {
+		["Editor test spell 2"] = {
 			["spells"] = {
-				[28460] = 136197,
-				[17631] = 136048,
-				[28459] = 136197,
+				[448] = 136235,
 			},
 		},
 		["Toxic Burst"] = {
@@ -53296,9 +53415,12 @@ WeakAurasOptionsSaved = {
 				[36519] = 132095,
 			},
 		},
-		["Battlegear of Unyielding Strength Intercept Bonus"] = {
+		["Blood Siphon"] = {
 			["spells"] = {
-				[26111] = 136235,
+				[24323] = 136006,
+				[24324] = 136168,
+				[24322] = 136168,
+				[41068] = 136168,
 			},
 		},
 		["Mark of Light"] = {
@@ -53307,15 +53429,17 @@ WeakAurasOptionsSaved = {
 				[37557] = 135917,
 			},
 		},
-		["Increased Strength 41"] = {
+		["Disheartening Blow II"] = {
 			["spells"] = {
-				[14959] = 136235,
+				[1795] = 136235,
+				[1800] = 136235,
 			},
 		},
-		["Increase Spell Dam 24"] = {
+		["Water Bubble"] = {
 			["spells"] = {
-				[24595] = 136235,
-				[25111] = 136235,
+				[35921] = 132123,
+				[35929] = 132123,
+				[7383] = 135864,
 			},
 		},
 		["Improved Leader of the Pack"] = {
@@ -53340,13 +53464,9 @@ WeakAurasOptionsSaved = {
 				[23277] = 135894,
 			},
 		},
-		["Ancestral Knowledge"] = {
+		["Swift Wind"] = {
 			["spells"] = {
-				[17486] = 136162,
-				[17487] = 136162,
-				[17488] = 136162,
-				[17489] = 136162,
-				[17485] = 136162,
+				[8385] = 136022,
 			},
 		},
 		["Darkfury"] = {
@@ -53437,30 +53557,9 @@ WeakAurasOptionsSaved = {
 				[25610] = 136235,
 			},
 		},
-		["Natural Armor"] = {
+		["Increased Stamina 09"] = {
 			["spells"] = {
-				[24561] = 136094,
-				[24562] = 136094,
-				[24547] = 136094,
-				[24549] = 136094,
-				[24550] = 136094,
-				[24551] = 136094,
-				[24629] = 136094,
-				[24552] = 136094,
-				[24630] = 136094,
-				[24553] = 136094,
-				[24631] = 136094,
-				[24554] = 136094,
-				[24632] = 136094,
-				[24555] = 136094,
-				[24556] = 136094,
-				[27362] = 136094,
-				[24557] = 136094,
-				[24558] = 136094,
-				[24559] = 136094,
-				[24560] = 136094,
-				[24545] = 136094,
-				[27061] = 136094,
+				[9115] = 136235,
 			},
 		},
 		["crystal man visual"] = {
@@ -53478,9 +53577,9 @@ WeakAurasOptionsSaved = {
 				[43851] = 136030,
 			},
 		},
-		["Time Out"] = {
+		["Create Yellow Punch Card"] = {
 			["spells"] = {
-				[17691] = 136222,
+				[11512] = 136235,
 			},
 		},
 		["Arcane Barrier"] = {
@@ -53488,10 +53587,9 @@ WeakAurasOptionsSaved = {
 				[36481] = 135735,
 			},
 		},
-		["Improved Healthstone"] = {
+		["Swift Timber Wolf"] = {
 			["spells"] = {
-				[18692] = 135230,
-				[18693] = 135230,
+				[23251] = 132266,
 			},
 		},
 		["Summon Essence of Suffering"] = {
@@ -53504,9 +53602,9 @@ WeakAurasOptionsSaved = {
 				[36477] = 135757,
 			},
 		},
-		["Summon Harvester Swarm"] = {
+		["Lesser Resistance - Fire"] = {
 			["spells"] = {
-				[7278] = 132320,
+				[7852] = 136235,
 			},
 		},
 		["Fel Shackles"] = {
@@ -53635,9 +53733,9 @@ WeakAurasOptionsSaved = {
 				[36446] = 136235,
 			},
 		},
-		["Turtle Scale Breastplate"] = {
+		["Enslave"] = {
 			["spells"] = {
-				[10511] = 136247,
+				[3442] = 136129,
 			},
 		},
 		["Awaken Vault Warder"] = {
@@ -53645,9 +53743,10 @@ WeakAurasOptionsSaved = {
 				[10258] = 136025,
 			},
 		},
-		["Axe Specialization"] = {
+		["Big Iron Bomb"] = {
 			["spells"] = {
-				[20574] = 132393,
+				[3967] = 136235,
+				[4069] = 135826,
 			},
 		},
 		["Drunk Invisibility (Pink)"] = {
@@ -53731,9 +53830,9 @@ WeakAurasOptionsSaved = {
 				[10872] = 136066,
 			},
 		},
-		["Increased Armor 120"] = {
+		["Increased Arcane Resist 32"] = {
 			["spells"] = {
-				[15508] = 136235,
+				[14734] = 136235,
 			},
 		},
 		["Arcane Glare"] = {
@@ -53793,11 +53892,23 @@ WeakAurasOptionsSaved = {
 				[2584] = 135955,
 			},
 		},
-		["Elemental Weapons"] = {
+		["Maul"] = {
 			["spells"] = {
-				[16266] = 135814,
-				[29079] = 135814,
-				[29080] = 135814,
+				[17156] = 132136,
+				[8972] = 132136,
+				[34298] = 132136,
+				[9880] = 132136,
+				[9745] = 132136,
+				[26996] = 132136,
+				[9881] = 132136,
+				[27553] = 132136,
+				[12161] = 132136,
+				[20751] = 132136,
+				[6807] = 132136,
+				[6808] = 132136,
+				[6809] = 132136,
+				[15793] = 132136,
+				[7092] = 132136,
 			},
 		},
 		["Stolen Ravenous Ravager Egg"] = {
@@ -53831,18 +53942,14 @@ WeakAurasOptionsSaved = {
 				[42002] = 136211,
 			},
 		},
-		["Increased Arcane Resist 23"] = {
+		["Silithid Pox"] = {
 			["spells"] = {
-				[14725] = 136235,
+				[8137] = 136066,
 			},
 		},
-		["Dagger Specialization"] = {
+		["Lesser Astral Essence"] = {
 			["spells"] = {
-				[13806] = 135641,
-				[13807] = 135641,
-				[13804] = 135641,
-				[13805] = 135641,
-				[13706] = 135641,
+				[13498] = 136192,
 			},
 		},
 		["Net"] = {
@@ -53912,13 +54019,9 @@ WeakAurasOptionsSaved = {
 				[36357] = 136247,
 			},
 		},
-		["Dropped Weapon"] = {
+		["Mortar Disturb"] = {
 			["spells"] = {
-				[25655] = 132343,
-				[25057] = 132343,
-				[33126] = 132343,
-				[23365] = 132343,
-				[6608] = 132343,
+				[17671] = 136235,
 			},
 		},
 		["Transmute: Elemental Fire"] = {
@@ -53936,9 +54039,9 @@ WeakAurasOptionsSaved = {
 				[27819] = 136116,
 			},
 		},
-		["Lavender Mageweave Shirt"] = {
+		["Wisp Detonate"] = {
 			["spells"] = {
-				[12075] = 132149,
+				[6237] = 136116,
 			},
 		},
 		["Aura Overlap TEST 1"] = {
@@ -53951,9 +54054,10 @@ WeakAurasOptionsSaved = {
 				[18437] = 132149,
 			},
 		},
-		["Summon Baby Shark"] = {
+		["Cadaver Worms"] = {
 			["spells"] = {
-				[25849] = 132311,
+				[16142] = 136188,
+				[16143] = 136134,
 			},
 		},
 		["Teleport: The Arcatraz"] = {
@@ -54042,9 +54146,9 @@ WeakAurasOptionsSaved = {
 				[36628] = 135808,
 			},
 		},
-		["Flow of the Northspring"] = {
+		["Receive Reward AND Quest Object, Darnassus Guard"] = {
 			["spells"] = {
-				[11014] = 135953,
+				[27245] = 136235,
 			},
 		},
 		["Spirit Heal Channel"] = {
@@ -54077,12 +54181,9 @@ WeakAurasOptionsSaved = {
 				[34184] = 135731,
 			},
 		},
-		["Cannon Fire"] = {
+		["Spiced Wolf Meat"] = {
 			["spells"] = {
-				[17501] = 135810,
-				[50558] = 136235,
-				[17278] = 135805,
-				[40787] = 135797,
+				[2539] = 136192,
 			},
 		},
 		["Cyrukh Fire Kit"] = {
@@ -54252,9 +54353,9 @@ WeakAurasOptionsSaved = {
 				[6460] = 136058,
 			},
 		},
-		["Black Mageweave Headband"] = {
+		["Summon Explosive Sheep"] = {
 			["spells"] = {
-				[12072] = 132149,
+				[4052] = 132281,
 			},
 		},
 		["Jade Owl"] = {
@@ -54309,14 +54410,48 @@ WeakAurasOptionsSaved = {
 				[10370] = 132155,
 			},
 		},
-		["Increased Stamina 31"] = {
+		["Earth Shield"] = {
 			["spells"] = {
-				[14478] = 136235,
+				[38590] = 136089,
+				[32593] = 136089,
+				[32594] = 136089,
+				[379] = 136089,
+				[32734] = 136089,
+				[974] = 136089,
 			},
 		},
-		["Enhanced Sunder Armor"] = {
+		["Increase Spell Dam 23"] = {
 			["spells"] = {
-				[23561] = 136235,
+				[41805] = 136235,
+				[32451] = 136235,
+				[41807] = 136235,
+				[41715] = 136235,
+				[41654] = 136235,
+				[41687] = 136235,
+				[41905] = 136235,
+				[41902] = 136235,
+				[41753] = 136235,
+				[41900] = 136235,
+				[41884] = 136235,
+				[41811] = 136235,
+				[41828] = 136235,
+				[41789] = 136235,
+				[41697] = 136235,
+				[41729] = 136235,
+				[41815] = 136235,
+				[41762] = 136235,
+				[41825] = 136235,
+				[41795] = 136235,
+				[41703] = 136235,
+				[41766] = 136235,
+				[41860] = 136235,
+				[41799] = 136235,
+				[32449] = 136235,
+				[41709] = 136235,
+				[14047] = 136235,
+				[41760] = 136235,
+				[32450] = 136235,
+				[39543] = 136235,
 			},
 		},
 		["QAEnchant Ring +12 Spell Damage"] = {
@@ -54360,14 +54495,9 @@ WeakAurasOptionsSaved = {
 				[21230] = 136235,
 			},
 		},
-		["Spirit Tap"] = {
+		["Increased Intellect 27"] = {
 			["spells"] = {
-				[15336] = 136188,
-				[15270] = 136188,
-				[15337] = 136188,
-				[15271] = 136188,
-				[15338] = 136188,
-				[15335] = 136188,
+				[14417] = 136235,
 			},
 		},
 		["Fire Vulnerability"] = {
@@ -54397,9 +54527,9 @@ WeakAurasOptionsSaved = {
 				[36261] = 136241,
 			},
 		},
-		["Demonic Transformation"] = {
+		["Nature Aligned"] = {
 			["spells"] = {
-				[24992] = 136218,
+				[23734] = 136094,
 			},
 		},
 		["Fumping"] = {
@@ -54533,9 +54663,9 @@ WeakAurasOptionsSaved = {
 				[17194] = 136224,
 			},
 		},
-		["Green Holiday Shirt"] = {
+		["Battle Roar"] = {
 			["spells"] = {
-				[21945] = 132149,
+				[6507] = 132277,
 			},
 		},
 		["Summon Jubling"] = {
@@ -54579,14 +54709,19 @@ WeakAurasOptionsSaved = {
 				[33173] = 136071,
 			},
 		},
-		["Copper Dagger"] = {
+		["Increased Agility 09"] = {
 			["spells"] = {
-				[8880] = 136192,
+				[9099] = 136235,
 			},
 		},
-		["Increased Block 4"] = {
+		["Ice Armor"] = {
 			["spells"] = {
-				[21466] = 136235,
+				[10219] = 135843,
+				[7302] = 135843,
+				[36881] = 135843,
+				[7320] = 135843,
+				[27124] = 135843,
+				[10220] = 135843,
 			},
 		},
 		["Summon Murloc A6"] = {
@@ -54666,9 +54801,10 @@ WeakAurasOptionsSaved = {
 				[16172] = 132325,
 			},
 		},
-		["Barbaric Leggings"] = {
+		["Physical Protection"] = {
 			["spells"] = {
-				[7149] = 136247,
+				[21956] = 135893,
+				[34206] = 132270,
 			},
 		},
 		["Capture Faerie Dragon"] = {
@@ -54682,9 +54818,9 @@ WeakAurasOptionsSaved = {
 				[39009] = 136121,
 			},
 		},
-		["Stone Dwarf Awaken Visual"] = {
+		["Attack Power %"] = {
 			["spells"] = {
-				[10254] = 136025,
+				[9199] = 133951,
 			},
 		},
 		["Trigger 000 (If Summoned Only)"] = {
@@ -54719,16 +54855,14 @@ WeakAurasOptionsSaved = {
 				[36138] = 133038,
 			},
 		},
-		["Defensive Stance"] = {
+		["Improved Block Value"] = {
 			["spells"] = {
-				[71] = 132341,
-				[7164] = 132341,
-				[41101] = 132341,
+				[21540] = 136235,
 			},
 		},
-		["Black Rot"] = {
+		["Summon Mechanical Yeti"] = {
 			["spells"] = {
-				[16448] = 135935,
+				[19363] = 132189,
 			},
 		},
 		["Lavaforged Warhammer"] = {
@@ -54805,9 +54939,9 @@ WeakAurasOptionsSaved = {
 				[38074] = 136235,
 			},
 		},
-		["Getting Tide Pool Sample #4"] = {
+		["Longshot II"] = {
 			["spells"] = {
-				[12808] = 136235,
+				[1536] = 132222,
 			},
 		},
 		["Test Spiral"] = {
@@ -54827,9 +54961,9 @@ WeakAurasOptionsSaved = {
 				[36122] = 136192,
 			},
 		},
-		["Increase Holy Dam 39"] = {
+		["Pacify"] = {
 			["spells"] = {
-				[21525] = 136235,
+				[10730] = 132311,
 			},
 		},
 		["Summon Firefly"] = {
@@ -54990,9 +55124,9 @@ WeakAurasOptionsSaved = {
 				[36107] = 136232,
 			},
 		},
-		["Heavy Kodo Stew"] = {
+		["Minor Mount Speed"] = {
 			["spells"] = {
-				[15910] = 136192,
+				[13927] = 136235,
 			},
 		},
 		["Smithery Check"] = {
@@ -55028,9 +55162,9 @@ WeakAurasOptionsSaved = {
 				[36669] = 132149,
 			},
 		},
-		["Communique, Proxy-to-Relay"] = {
+		["Communique, Relay-to-Proxy"] = {
 			["spells"] = {
-				[28366] = 136235,
+				[28365] = 136235,
 			},
 		},
 		["Girded Gut"] = {
@@ -55059,9 +55193,10 @@ WeakAurasOptionsSaved = {
 				[36077] = 136247,
 			},
 		},
-		["Mental Domination"] = {
+		["Mending"] = {
 			["spells"] = {
-				[25772] = 136172,
+				[2147] = 136085,
+				[36968] = 135928,
 			},
 		},
 		["Increase Healing 21"] = {
@@ -55074,9 +55209,9 @@ WeakAurasOptionsSaved = {
 				[36076] = 136247,
 			},
 		},
-		["Enchant Weapon - Fiery Weapon"] = {
+		["Minor Agility"] = {
 			["spells"] = {
-				[13898] = 135913,
+				[7778] = 136235,
 			},
 		},
 		["Wildfeather Leggings"] = {
@@ -55089,9 +55224,9 @@ WeakAurasOptionsSaved = {
 				[33033] = 136235,
 			},
 		},
-		["Increased Spirit 43"] = {
+		["Bloodsoul Shoulders"] = {
 			["spells"] = {
-				[14949] = 136235,
+				[24137] = 136192,
 			},
 		},
 		["Attack Power 112"] = {
@@ -55148,9 +55283,9 @@ WeakAurasOptionsSaved = {
 				[6705] = 136247,
 			},
 		},
-		["Detect Magic"] = {
+		["QAEnchant Gloves +5 Skinning"] = {
 			["spells"] = {
-				[2855] = 135899,
+				[27114] = 135913,
 			},
 		},
 		["BOTM - Bubble Brew - Trigger Missile"] = {
@@ -55244,9 +55379,9 @@ WeakAurasOptionsSaved = {
 				[36030] = 136065,
 			},
 		},
-		["Aspect of Neptulon"] = {
+		["Enchant Chest - Superior Health"] = {
 			["spells"] = {
-				[21332] = 134856,
+				[13858] = 135913,
 			},
 		},
 		["Prismatic Form: Thunder"] = {
@@ -55259,9 +55394,10 @@ WeakAurasOptionsSaved = {
 				[36028] = 132311,
 			},
 		},
-		["Blazing Citrine Ring"] = {
+		["Herbalism"] = {
 			["spells"] = {
-				[25617] = 136235,
+				[9134] = 136246,
+				[13614] = 136235,
 			},
 		},
 		["Deadly Acid"] = {
@@ -55356,9 +55492,9 @@ WeakAurasOptionsSaved = {
 				[37417] = 135736,
 			},
 		},
-		["Port to Mazthoril"] = {
+		["Solid Iron Maul"] = {
 			["spells"] = {
-				[17160] = 136235,
+				[3494] = 136192,
 			},
 		},
 		["Balanced Shadow Draenite"] = {
@@ -55384,15 +55520,23 @@ WeakAurasOptionsSaved = {
 				[17150] = 135933,
 			},
 		},
-		["Restorative Potion"] = {
+		["Improved Concussive Shot"] = {
 			["spells"] = {
-				[11452] = 136235,
-				[11522] = 136021,
+				[19410] = 135860,
+				[19414] = 135860,
+				[19407] = 135860,
+				[19415] = 135860,
+				[19412] = 135860,
+				[22915] = 135860,
+				[19413] = 135860,
+				[28445] = 135860,
+				[24465] = 136235,
 			},
 		},
-		["Capture Felhound Spirit"] = {
+		["Distract Move"] = {
 			["spells"] = {
-				[16627] = 136163,
+				[15051] = 136235,
+				[15056] = 136235,
 			},
 		},
 		["Blade's Edge Multi Gold Beam (03)"] = {
@@ -55400,9 +55544,9 @@ WeakAurasOptionsSaved = {
 				[35962] = 136208,
 			},
 		},
-		["Frost Leather Cloak"] = {
+		["Summon Xorothian Dreadsteed"] = {
 			["spells"] = {
-				[9198] = 136247,
+				[23152] = 136235,
 			},
 		},
 		["Focused Mind"] = {
@@ -55440,9 +55584,9 @@ WeakAurasOptionsSaved = {
 				[9077] = 132724,
 			},
 		},
-		["Ozzie Explodes"] = {
+		["Fill Deino's Flask"] = {
 			["spells"] = {
-				[16379] = 136235,
+				[9052] = 136235,
 			},
 		},
 		["Break Water Prison"] = {
@@ -55461,9 +55605,9 @@ WeakAurasOptionsSaved = {
 				[35081] = 132347,
 			},
 		},
-		["Earthen Guards Destroyed"] = {
+		["Moonglow Vest"] = {
 			["spells"] = {
-				[10666] = 136025,
+				[8322] = 136247,
 			},
 		},
 		["Water Bubble Head"] = {
@@ -55558,9 +55702,9 @@ WeakAurasOptionsSaved = {
 				[35914] = 136006,
 			},
 		},
-		["Perm. Illusion Dreaming Whelp"] = {
+		["Stromgarde Militia Call"] = {
 			["spells"] = {
-				[8360] = 132311,
+				[5250] = 136235,
 			},
 		},
 		["Summon Yellow Moth"] = {
@@ -55656,10 +55800,9 @@ WeakAurasOptionsSaved = {
 				[44870] = 135744,
 			},
 		},
-		["Aura of the Blue Dragon"] = {
+		["Increase Fire Dam 16"] = {
 			["spells"] = {
-				[23684] = 134155,
-				[23688] = 136208,
+				[9294] = 136235,
 			},
 		},
 		["Increase Spell Dam 611"] = {
@@ -55682,14 +55825,15 @@ WeakAurasOptionsSaved = {
 				[44355] = 135794,
 			},
 		},
-		["Silithid Pox"] = {
+		["Aspect of Thekal"] = {
 			["spells"] = {
-				[8137] = 136066,
+				[24689] = 132117,
 			},
 		},
-		["Undying Soul"] = {
+		["Summon Fire Elemental"] = {
 			["spells"] = {
-				[20939] = 136235,
+				[8985] = 135819,
+				[40133] = 135817,
 			},
 		},
 		["Increased Spell Damage"] = {
@@ -55708,9 +55852,9 @@ WeakAurasOptionsSaved = {
 				[35157] = 132311,
 			},
 		},
-		["Dismounting Blast"] = {
+		["Increased Shadow Resist 42"] = {
 			["spells"] = {
-				[18396] = 136222,
+				[14991] = 136235,
 			},
 		},
 		["Grace of Air"] = {
@@ -55729,9 +55873,9 @@ WeakAurasOptionsSaved = {
 				[22896] = 132091,
 			},
 		},
-		["Soul Bite"] = {
+		["[PH] Teleport to Ratchet"] = {
 			["spells"] = {
-				[11016] = 136208,
+				[4999] = 136235,
 			},
 		},
 		["Blue Linen Robe"] = {
@@ -55785,9 +55929,9 @@ WeakAurasOptionsSaved = {
 				[41568] = 135743,
 			},
 		},
-		["Summon Templar Fire, Trigger"] = {
+		["Poison Stinger"] = {
 			["spells"] = {
-				[24747] = 136235,
+				[25748] = 134324,
 			},
 		},
 		["Test Sunder Armor"] = {
@@ -55846,9 +55990,9 @@ WeakAurasOptionsSaved = {
 				[35837] = 136235,
 			},
 		},
-		["Increase Spell Dam 22"] = {
+		["Increased Nature Resist 05"] = {
 			["spells"] = {
-				[15714] = 136235,
+				[14626] = 136235,
 			},
 		},
 		["Improved Drain Soul"] = {
@@ -55878,14 +56022,15 @@ WeakAurasOptionsSaved = {
 				[29519] = 135867,
 			},
 		},
-		["Resistance - Greater Fire Resistance"] = {
+		["Mistletoe"] = {
 			["spells"] = {
-				[25068] = 136235,
+				[26004] = 136041,
+				[26218] = 133749,
 			},
 		},
-		["Spawn - Red Lightning"] = {
+		["Self Resurrection"] = {
 			["spells"] = {
-				[24240] = 136115,
+				[18976] = 136235,
 			},
 		},
 		["Curse of Thule"] = {
@@ -55933,25 +56078,14 @@ WeakAurasOptionsSaved = {
 				[43915] = 132792,
 			},
 		},
-		["Attack"] = {
+		["Expose Armor"] = {
 			["spells"] = {
-				[6350] = 135825,
-				[38584] = 135825,
-				[7389] = 132150,
-				[6351] = 135825,
-				[6603] = 132116,
-				[31992] = 135825,
-				[3606] = 135825,
-				[25530] = 135825,
-				[6352] = 135825,
-				[39592] = 135825,
-				[15037] = 135825,
-				[38296] = 135825,
-				[10435] = 135825,
-				[22048] = 135825,
-				[39593] = 135825,
-				[10436] = 135825,
-				[32969] = 135825,
+				[8647] = 132354,
+				[26866] = 132354,
+				[11197] = 132354,
+				[11198] = 132354,
+				[8650] = 132354,
+				[8649] = 132354,
 			},
 		},
 		["QAEnchant Gloves +35 Healing"] = {
@@ -56003,15 +56137,9 @@ WeakAurasOptionsSaved = {
 				[40313] = 136235,
 			},
 		},
-		["Shadow Portal"] = {
+		["Azure Silk Hood"] = {
 			["spells"] = {
-				[17948] = 136192,
-				[17943] = 136192,
-				[17944] = 136192,
-				[17950] = 136192,
-				[17939] = 136192,
-				[17863] = 136192,
-				[17946] = 136192,
+				[8760] = 132149,
 			},
 		},
 		["Ring Bessy's Bell"] = {
@@ -56069,23 +56197,9 @@ WeakAurasOptionsSaved = {
 				[41680] = 136235,
 			},
 		},
-		["Eviscerate"] = {
+		["Break Big Stuff"] = {
 			["spells"] = {
-				[27611] = 132292,
-				[15692] = 132292,
-				[11299] = 132292,
-				[46189] = 132292,
-				[31016] = 132292,
-				[41177] = 132292,
-				[8624] = 132292,
-				[15691] = 132292,
-				[6760] = 132292,
-				[11300] = 132292,
-				[6762] = 132292,
-				[26865] = 132292,
-				[2098] = 132292,
-				[8623] = 132292,
-				[6761] = 132292,
+				[7962] = 136137,
 			},
 		},
 		["Hardened Adamantite Tube"] = {
@@ -56182,9 +56296,9 @@ WeakAurasOptionsSaved = {
 				[35902] = 136235,
 			},
 		},
-		["Antu'sul's Salvation"] = {
+		["Fearless"] = {
 			["spells"] = {
-				[11890] = 136235,
+				[12733] = 132333,
 			},
 		},
 		["Lightwell Renew"] = {
@@ -56218,9 +56332,9 @@ WeakAurasOptionsSaved = {
 				[14585] = 136235,
 			},
 		},
-		["Dreamweave Gloves"] = {
+		["Jeff Dummy 2"] = {
 			["spells"] = {
-				[12067] = 132149,
+				[4505] = 135926,
 			},
 		},
 		["Shaman Lightning Shield Bonus"] = {
@@ -56248,24 +56362,27 @@ WeakAurasOptionsSaved = {
 				[31412] = 135270,
 			},
 		},
-		["Scorch"] = {
+		["Holy Shock"] = {
 			["spells"] = {
-				[8445] = 135827,
-				[35377] = 135827,
-				[38636] = 135827,
-				[10206] = 135827,
-				[38391] = 135827,
-				[36807] = 135827,
-				[17195] = 135827,
-				[8444] = 135827,
-				[8446] = 135827,
-				[13878] = 135827,
-				[10205] = 135827,
-				[10207] = 135827,
-				[27074] = 135827,
-				[27073] = 135827,
-				[2948] = 135827,
-				[15241] = 135827,
+				[25911] = 135972,
+				[25912] = 135972,
+				[25913] = 135972,
+				[20473] = 135972,
+				[33072] = 135972,
+				[33073] = 135972,
+				[33074] = 135972,
+				[25902] = 135972,
+				[25903] = 135972,
+				[27175] = 135972,
+				[20929] = 135972,
+				[27176] = 135972,
+				[20930] = 135972,
+				[25914] = 135972,
+				[36340] = 135972,
+				[35160] = 136235,
+				[27174] = 135972,
+				[38921] = 135972,
+				[32771] = 135972,
 			},
 		},
 		["Alarm-o-bot"] = {
@@ -56506,9 +56623,9 @@ WeakAurasOptionsSaved = {
 				[12800] = 132353,
 			},
 		},
-		["Increase Nature Dam 21"] = {
+		["Increased All Resist 11"] = {
 			["spells"] = {
-				[9361] = 136235,
+				[18682] = 136235,
 			},
 		},
 		["Red Portal State"] = {
@@ -56577,7 +56694,7 @@ WeakAurasOptionsSaved = {
 		},
 		["Whip Terrorfiend"] = {
 			["spells"] = {
-				[35673] = 132116,
+				[35673] = 133478,
 			},
 		},
 		["Paranoia"] = {
@@ -56588,16 +56705,13 @@ WeakAurasOptionsSaved = {
 				[20435] = 136122,
 			},
 		},
-		["Fishing"] = {
+		["Piercing Howl"] = {
 			["spells"] = {
-				[33095] = 136245,
-				[7620] = 136245,
-				[24303] = 136235,
-				[13615] = 136235,
-				[7731] = 136245,
-				[45698] = 136235,
-				[18248] = 136245,
-				[7732] = 136245,
+				[38256] = 136147,
+				[12323] = 136147,
+				[23600] = 136147,
+				[43530] = 136147,
+				[10576] = 132117,
 			},
 		},
 		["Fel Reaver Controller"] = {
@@ -56658,10 +56772,10 @@ WeakAurasOptionsSaved = {
 				[39251] = 132185,
 			},
 		},
-		["Increased Spell Hit Chance 8"] = {
+		["Improved Life Tap"] = {
 			["spells"] = {
-				[23727] = 136235,
-				[39702] = 136235,
+				[18182] = 136126,
+				[18183] = 136126,
 			},
 		},
 		["Inferno Gloves"] = {
@@ -56669,9 +56783,12 @@ WeakAurasOptionsSaved = {
 				[22868] = 132149,
 			},
 		},
-		["Increase Arcane Dam 3"] = {
+		["Paralyze"] = {
 			["spells"] = {
-				[13591] = 136235,
+				[23414] = 136129,
+				[25725] = 132107,
+				[41083] = 136214,
+				[38132] = 136030,
 			},
 		},
 		["Teleport Warboss"] = {
@@ -56721,9 +56838,9 @@ WeakAurasOptionsSaved = {
 				[12902] = 136235,
 			},
 		},
-		["Ornate Mithril Gloves"] = {
+		["Demon Slaying 33"] = {
 			["spells"] = {
-				[9950] = 136192,
+				[18079] = 136172,
 			},
 		},
 		["Overspark"] = {
@@ -56933,18 +57050,14 @@ WeakAurasOptionsSaved = {
 				[28542] = 136169,
 			},
 		},
-		["Worg Sentry"] = {
+		["Red Mageweave Gloves"] = {
 			["spells"] = {
-				[16527] = 136129,
+				[12066] = 132149,
 			},
 		},
-		["Ice Block"] = {
+		["Enchant Gloves - Minor Haste"] = {
 			["spells"] = {
-				[45438] = 135841,
-				[41590] = 135841,
-				[46604] = 135841,
-				[27619] = 135841,
-				[36911] = 135841,
+				[13948] = 135913,
 			},
 		},
 		["Emberseer Object Visual"] = {
@@ -57044,14 +57157,25 @@ WeakAurasOptionsSaved = {
 				[35508] = 135734,
 			},
 		},
-		["Increase Nature Dam 33"] = {
+		["Improved Ghost Wolf"] = {
 			["spells"] = {
-				[17993] = 136235,
+				[16262] = 136095,
+				[16287] = 136095,
 			},
 		},
-		["Teleport to Darnassus - Event"] = {
+		["Magnetic Pull"] = {
 			["spells"] = {
-				[9268] = 136235,
+				[33689] = 136039,
+				[28339] = 136039,
+				[31703] = 136235,
+				[41959] = 133870,
+				[28337] = 136039,
+				[29661] = 136039,
+				[30010] = 136039,
+				[32039] = 135990,
+				[28338] = 136039,
+				[40581] = 136235,
+				[31705] = 133870,
 			},
 		},
 		["Legion Portal"] = {
@@ -57105,10 +57229,9 @@ WeakAurasOptionsSaved = {
 				[35403] = 136235,
 			},
 		},
-		["Tranquil Mechanical Yeti"] = {
+		["Full Grown"] = {
 			["spells"] = {
-				[26011] = 136235,
-				[26012] = 136235,
+				[24088] = 136101,
 			},
 		},
 		["Drums of War Trigger"] = {
@@ -57190,35 +57313,24 @@ WeakAurasOptionsSaved = {
 				[8772] = 132149,
 			},
 		},
-		["Meditation"] = {
+		["Runecloth Tunic"] = {
 			["spells"] = {
-				[14776] = 136090,
-				[14521] = 136090,
-				[14777] = 136090,
-				[38346] = 136090,
-				[21894] = 136090,
+				[18407] = 132149,
 			},
 		},
-		["Haunted"] = {
+		["Roast Raptor"] = {
 			["spells"] = {
-				[18347] = 136122,
+				[15855] = 136192,
 			},
 		},
-		["Blessing of Wisdom"] = {
+		["Increased Agility 41"] = {
 			["spells"] = {
-				[19852] = 135970,
-				[19853] = 135970,
-				[19742] = 135970,
-				[27142] = 135970,
-				[19850] = 135970,
-				[25290] = 135970,
-				[19854] = 135970,
+				[14935] = 136235,
 			},
 		},
-		["Gnomish Rocket Boots"] = {
+		["Force Target - Kick"] = {
 			["spells"] = {
-				[12905] = 136235,
-				[13141] = 135805,
+				[17744] = 136168,
 			},
 		},
 		["Improved Mortal Strike"] = {
@@ -57347,10 +57459,9 @@ WeakAurasOptionsSaved = {
 				[38988] = 136050,
 			},
 		},
-		["Vodouisant's Vigilant Embrace"] = {
+		["Minor Spirit"] = {
 			["spells"] = {
-				[24155] = 136235,
-				[24163] = 136235,
+				[7456] = 136235,
 			},
 		},
 		["Inscription of the Oracle"] = {
@@ -57414,9 +57525,9 @@ WeakAurasOptionsSaved = {
 				[6752] = 136188,
 			},
 		},
-		["Nature Aligned"] = {
+		["Increased Fire Resist 01"] = {
 			["spells"] = {
-				[23734] = 136094,
+				[14540] = 136235,
 			},
 		},
 		["Phase Slip Vulnerability"] = {
@@ -57502,9 +57613,9 @@ WeakAurasOptionsSaved = {
 				[35405] = 136235,
 			},
 		},
-		["Advanced Target Dummy - Event 003"] = {
+		["Cannon Ball"] = {
 			["spells"] = {
-				[19723] = 136172,
+				[4170] = 132384,
 			},
 		},
 		["Increase Spell Dam 51"] = {
@@ -57641,35 +57752,14 @@ WeakAurasOptionsSaved = {
 				[37850] = 136148,
 			},
 		},
-		["Bruise"] = {
+		["Immolate Visual Passive"] = {
 			["spells"] = {
-				[4139] = 136222,
-				[4134] = 136222,
-				[4136] = 136235,
-				[4138] = 136235,
-				[4133] = 132096,
-				[4135] = 136222,
-				[4137] = 136222,
-				[4140] = 136235,
+				[16003] = 135817,
 			},
 		},
-		["Sinister Strike"] = {
+		["Shard of Afrasa"] = {
 			["spells"] = {
-				[1752] = 136189,
-				[1760] = 136189,
-				[46558] = 136189,
-				[14873] = 136189,
-				[1757] = 136189,
-				[26862] = 136189,
-				[11294] = 136189,
-				[26861] = 136189,
-				[1758] = 136189,
-				[19472] = 136189,
-				[15667] = 136189,
-				[15581] = 136189,
-				[8621] = 136189,
-				[11293] = 136189,
-				[1759] = 136189,
+				[12732] = 136077,
 			},
 		},
 		["Nether Leech"] = {
@@ -57688,9 +57778,9 @@ WeakAurasOptionsSaved = {
 				[9100] = 136235,
 			},
 		},
-		["Increased Shadow Resist 23"] = {
+		["Attack Power Ranged 74"] = {
 			["spells"] = {
-				[14686] = 136235,
+				[21455] = 136235,
 			},
 		},
 		["Black Blood"] = {
@@ -57698,9 +57788,9 @@ WeakAurasOptionsSaved = {
 				[35331] = 136204,
 			},
 		},
-		["Transmute: Air to Fire"] = {
+		["Scald"] = {
 			["spells"] = {
-				[17559] = 134459,
+				[17276] = 135807,
 			},
 		},
 		["Increase Spell Dam 7"] = {
@@ -57730,15 +57820,14 @@ WeakAurasOptionsSaved = {
 				[35321] = 132155,
 			},
 		},
-		["Summon Mechanical Yeti"] = {
+		["Disturb Minion Trap, Buttress"] = {
 			["spells"] = {
-				[19363] = 132189,
+				[27886] = 136235,
 			},
 		},
-		["Left for Dead"] = {
+		["Copper Battle Axe"] = {
 			["spells"] = {
-				[8359] = 136187,
-				[8555] = 136187,
+				[3293] = 136192,
 			},
 		},
 		["Shadow Burst"] = {
@@ -57748,9 +57837,13 @@ WeakAurasOptionsSaved = {
 				[34436] = 136121,
 			},
 		},
-		["QAEnchant Chest +100 Mana"] = {
+		["Water Breathing"] = {
 			["spells"] = {
-				[22090] = 135913,
+				[131] = 136148,
+				[7178] = 135859,
+				[11789] = 136148,
+				[40621] = 135859,
+				[16881] = 136148,
 			},
 		},
 		["Chilled Blood"] = {
@@ -57768,11 +57861,10 @@ WeakAurasOptionsSaved = {
 				[20746] = 136235,
 			},
 		},
-		["Snowman"] = {
+		["Smokey"] = {
 			["spells"] = {
-				[21848] = 132387,
-				[21847] = 132387,
-				[21980] = 132387,
+				[16714] = 136160,
+				[16715] = 136160,
 			},
 		},
 		["Increased Holy Light Healing"] = {
@@ -57820,9 +57912,9 @@ WeakAurasOptionsSaved = {
 				[35261] = 135738,
 			},
 		},
-		["Increased Block 13"] = {
+		["Force Create Elemental Totem"] = {
 			["spells"] = {
-				[21476] = 136235,
+				[13910] = 135225,
 			},
 		},
 		["Rocket Bot Attack"] = {
@@ -57889,10 +57981,9 @@ WeakAurasOptionsSaved = {
 				[25159] = 136235,
 			},
 		},
-		["Withering Poison"] = {
+		["Increased Hit Rating 50"] = {
 			["spells"] = {
-				[13884] = 136016,
-				[38864] = 134717,
+				[15468] = 136235,
 			},
 		},
 		["Frostwolf Reputation +1"] = {
@@ -57932,9 +58023,9 @@ WeakAurasOptionsSaved = {
 				[35230] = 136079,
 			},
 		},
-		["Increased Shadow Resist 40"] = {
+		["Cleanse Winterhoof Well"] = {
 			["spells"] = {
-				[14702] = 136235,
+				[4975] = 136235,
 			},
 		},
 		["Blue Glittering Axe"] = {
@@ -57970,10 +58061,9 @@ WeakAurasOptionsSaved = {
 				[8857] = 136006,
 			},
 		},
-		["Create Relic Bundle"] = {
+		["Strider Stew"] = {
 			["spells"] = {
-				[18987] = 136235,
-				[18988] = 136235,
+				[6416] = 136192,
 			},
 		},
 		["Regeneration"] = {
@@ -58144,9 +58234,9 @@ WeakAurasOptionsSaved = {
 				[15787] = 135824,
 			},
 		},
-		["Conjure Stormpike Rank 3 Insignia DND"] = {
+		["QAEnchant Weapon Crusader"] = {
 			["spells"] = {
-				[22116] = 136235,
+				[23141] = 135913,
 			},
 		},
 		["Pearl-clasped Cloak"] = {
@@ -58165,10 +58255,14 @@ WeakAurasOptionsSaved = {
 				[47355] = 136235,
 			},
 		},
-		["Chill Nova"] = {
+		["Lesser Invisibility"] = {
 			["spells"] = {
-				[18099] = 135848,
-				[36148] = 135848,
+				[7870] = 135994,
+				[515] = 136235,
+				[20408] = 136175,
+				[7880] = 135994,
+				[12845] = 135994,
+				[3680] = 134798,
 			},
 		},
 		["Increase Nature Dam 37"] = {
@@ -58181,9 +58275,9 @@ WeakAurasOptionsSaved = {
 				[37236] = 136140,
 			},
 		},
-		["Alarm-O-Bot"] = {
+		["Increased Frost Resist 30"] = {
 			["spells"] = {
-				[23096] = 136235,
+				[14569] = 136235,
 			},
 		},
 		["Bloodmaul Brutebane Stout"] = {
@@ -58216,9 +58310,9 @@ WeakAurasOptionsSaved = {
 				[14717] = 136235,
 			},
 		},
-		["Video Camera 4"] = {
+		["Dismounting Blast"] = {
 			["spells"] = {
-				[25762] = 132347,
+				[18396] = 136222,
 			},
 		},
 		["Reanimate Critter"] = {
@@ -58252,9 +58346,9 @@ WeakAurasOptionsSaved = {
 				[35117] = 136235,
 			},
 		},
-		["Windsor's Frenzy"] = {
+		["Wagon Explode"] = {
 			["spells"] = {
-				[15167] = 132277,
+				[6636] = 135826,
 			},
 		},
 		["Melodious Rapture"] = {
@@ -58273,14 +58367,15 @@ WeakAurasOptionsSaved = {
 				[17333] = 134321,
 			},
 		},
-		["Evil God Counterspell"] = {
+		["Create Scepter of Beckoning: Water"] = {
 			["spells"] = {
-				[12458] = 136235,
+				[24898] = 136235,
 			},
 		},
-		["Forge Verigan's Fist"] = {
+		["Curse of Stalvan"] = {
 			["spells"] = {
-				[8912] = 135959,
+				[3105] = 136203,
+				[13524] = 136203,
 			},
 		},
 		["dmg4"] = {
@@ -58288,9 +58383,9 @@ WeakAurasOptionsSaved = {
 				[11821] = 136115,
 			},
 		},
-		["Runic Leather Bracers"] = {
+		["Increase Arcane Dam 7"] = {
 			["spells"] = {
-				[19065] = 136235,
+				[13594] = 136235,
 			},
 		},
 		["Grishna Kaliri"] = {
@@ -58309,9 +58404,9 @@ WeakAurasOptionsSaved = {
 				[37856] = 136096,
 			},
 		},
-		["Summon Aqua Guardian"] = {
+		["Improved Fortitude"] = {
 			["spells"] = {
-				[8372] = 135864,
+				[21093] = 135753,
 			},
 		},
 		["Improved Barrage"] = {
@@ -58321,10 +58416,11 @@ WeakAurasOptionsSaved = {
 				[35104] = 132330,
 			},
 		},
-		["Dig Trap"] = {
+		["Wail of Souls"] = {
 			["spells"] = {
-				[6538] = 136025,
-				[6539] = 136025,
+				[28460] = 136197,
+				[17631] = 136048,
+				[28459] = 136197,
 			},
 		},
 		["Summon Mighty Mr. Pinchy"] = {
@@ -58339,14 +58435,9 @@ WeakAurasOptionsSaved = {
 				[23470] = 135230,
 			},
 		},
-		["Skinning"] = {
+		["Gathering Speed"] = {
 			["spells"] = {
-				[10768] = 134366,
-				[8613] = 134366,
-				[8617] = 134366,
-				[8618] = 134366,
-				[13697] = 136235,
-				[32678] = 134366,
+				[1834] = 132347,
 			},
 		},
 		["VENDOR TEST"] = {
@@ -58418,9 +58509,10 @@ WeakAurasOptionsSaved = {
 				[17169] = 136128,
 			},
 		},
-		["Increased Arcane Resist 27"] = {
+		["Superior Healing Ward"] = {
 			["spells"] = {
-				[14729] = 136235,
+				[15869] = 135928,
+				[32194] = 135928,
 			},
 		},
 		["Crushing Pincer"] = {
@@ -58558,12 +58650,10 @@ WeakAurasOptionsSaved = {
 				[35053] = 136218,
 			},
 		},
-		["Virulent Poison Proc"] = {
+		["Improved Healthstone"] = {
 			["spells"] = {
-				[22413] = 136188,
-				[16428] = 136188,
-				[21645] = 136188,
-				[12254] = 136188,
+				[18692] = 135230,
+				[18693] = 135230,
 			},
 		},
 		["Drill Armor"] = {
@@ -58621,9 +58711,9 @@ WeakAurasOptionsSaved = {
 				[45953] = 136235,
 			},
 		},
-		["Merithra's Wake"] = {
+		["Free Master"] = {
 			["spells"] = {
-				[25145] = 136235,
+				[1528] = 136064,
 			},
 		},
 		["Increase Shadow Dam 17"] = {
@@ -58777,10 +58867,9 @@ WeakAurasOptionsSaved = {
 				[16209] = 136080,
 			},
 		},
-		["Corrupted Healing Stream Totem"] = {
+		["Visions of the Past"] = {
 			["spells"] = {
-				[23422] = 135127,
-				[32135] = 135127,
+				[17623] = 135974,
 			},
 		},
 		["QAEnchant Boots +8% Speed"] = {
@@ -58936,9 +59025,9 @@ WeakAurasOptionsSaved = {
 				[34937] = 132996,
 			},
 		},
-		["Activate Bomb 03B"] = {
+		["Pearl-handled Dagger"] = {
 			["spells"] = {
-				[11798] = 136235,
+				[6517] = 136192,
 			},
 		},
 		["Bloodmaul Buzz"] = {
@@ -58946,9 +59035,9 @@ WeakAurasOptionsSaved = {
 				[34932] = 136224,
 			},
 		},
-		["Figurine - Golden Hare"] = {
+		["Increased Stamina 33"] = {
 			["spells"] = {
-				[26873] = 136235,
+				[14480] = 136235,
 			},
 		},
 		["Vampiric Touch"] = {
@@ -58995,9 +59084,10 @@ WeakAurasOptionsSaved = {
 				[37407] = 135768,
 			},
 		},
-		["Recite Words of Celebras"] = {
+		["Replenish Mana II"] = {
 			["spells"] = {
-				[21950] = 136235,
+				[5406] = 134134,
+				[9253] = 134134,
 			},
 		},
 		["Cobalt War Talbuk"] = {
@@ -59066,9 +59156,10 @@ WeakAurasOptionsSaved = {
 				[5220] = 136129,
 			},
 		},
-		["Brightcloth Cloak"] = {
+		["Polar Gloves"] = {
 			["spells"] = {
-				[18420] = 132149,
+				[28220] = 136235,
+				[28255] = 136021,
 			},
 		},
 		["Armageddon"] = {
@@ -59084,9 +59175,9 @@ WeakAurasOptionsSaved = {
 				[20479] = 135826,
 			},
 		},
-		["Beast Slaying 72"] = {
+		["Kodo Bones Trap"] = {
 			["spells"] = {
-				[18076] = 136235,
+				[17960] = 136235,
 			},
 		},
 		["Umbrafen Buff"] = {
@@ -59387,9 +59478,9 @@ WeakAurasOptionsSaved = {
 				[39120] = 136014,
 			},
 		},
-		["Soul Freed"] = {
+		["Increased Block 16"] = {
 			["spells"] = {
-				[17370] = 136235,
+				[21478] = 136235,
 			},
 		},
 		["Ethereal Ring, Signal Flare Burst"] = {
@@ -59454,9 +59545,9 @@ WeakAurasOptionsSaved = {
 				[34787] = 135833,
 			},
 		},
-		["Block Value"] = {
+		["Major Firestone Attack"] = {
 			["spells"] = {
-				[27941] = 136235,
+				[17935] = 132386,
 			},
 		},
 		["Steady Shot"] = {
@@ -59484,9 +59575,9 @@ WeakAurasOptionsSaved = {
 				[2634] = 132223,
 			},
 		},
-		["Gizelton Caravan"] = {
+		["Summon Treasure Hunting Pirate"] = {
 			["spells"] = {
-				[19770] = 135996,
+				[11463] = 136235,
 			},
 		},
 		["Plant White Seedling"] = {
@@ -59522,9 +59613,9 @@ WeakAurasOptionsSaved = {
 				[34750] = 135741,
 			},
 		},
-		["Increased Shadow Resist 35"] = {
+		["Ouro Submerge Visual"] = {
 			["spells"] = {
-				[14697] = 136235,
+				[26063] = 135830,
 			},
 		},
 		["Increase Fire Dam 63"] = {
@@ -59590,9 +59681,9 @@ WeakAurasOptionsSaved = {
 				[34746] = 135848,
 			},
 		},
-		["Increased Nature Resist 36"] = {
+		["Increase Shadow Dam 43"] = {
 			["spells"] = {
-				[14658] = 136235,
+				[18020] = 136235,
 			},
 		},
 		["Summon Chilled Earth"] = {
@@ -59678,14 +59769,14 @@ WeakAurasOptionsSaved = {
 				[40905] = 136235,
 			},
 		},
-		["Receive Reward AND Quest Object, Undercity Guard"] = {
+		["Detect Magic"] = {
 			["spells"] = {
-				[27246] = 136235,
+				[2855] = 135899,
 			},
 		},
-		["Increased Fire Resist 12"] = {
+		["Create Thunder Bluff Satchel of Cards"] = {
 			["spells"] = {
-				[14592] = 136235,
+				[27715] = 136235,
 			},
 		},
 		["Bear Command"] = {
@@ -59775,9 +59866,9 @@ WeakAurasOptionsSaved = {
 				[34607] = 136192,
 			},
 		},
-		["Increase Spell Dam 1"] = {
+		["Dagger Strike III (Disabled)"] = {
 			["spells"] = {
-				[9392] = 136235,
+				[2629] = 132223,
 			},
 		},
 		["Sporeling Snack"] = {
@@ -59870,17 +59961,9 @@ WeakAurasOptionsSaved = {
 				[34588] = 136187,
 			},
 		},
-		["Mend Pet"] = {
+		["Summon Island Frog"] = {
 			["spells"] = {
-				[3661] = 132179,
-				[3662] = 132179,
-				[33976] = 132179,
-				[27046] = 132179,
-				[13542] = 132179,
-				[13544] = 132179,
-				[3111] = 132179,
-				[136] = 132179,
-				[13543] = 132179,
+				[10702] = 132311,
 			},
 		},
 		["Aerial Assault Auto-load"] = {
@@ -59942,23 +60025,29 @@ WeakAurasOptionsSaved = {
 				[15658] = 136235,
 			},
 		},
-		["Blue Beam"] = {
+		["Scorch"] = {
 			["spells"] = {
-				[30945] = 136131,
-				[34209] = 136208,
-				[40225] = 136208,
-				[34211] = 136208,
-				[31806] = 136208,
-				[34212] = 136208,
-				[38015] = 136208,
-				[22203] = 136208,
-				[38034] = 136208,
-				[32930] = 136208,
+				[8445] = 135827,
+				[35377] = 135827,
+				[38636] = 135827,
+				[10206] = 135827,
+				[38391] = 135827,
+				[36807] = 135827,
+				[17195] = 135827,
+				[8444] = 135827,
+				[8446] = 135827,
+				[13878] = 135827,
+				[10205] = 135827,
+				[10207] = 135827,
+				[27074] = 135827,
+				[27073] = 135827,
+				[2948] = 135827,
+				[15241] = 135827,
 			},
 		},
-		["Rocket, BLUE"] = {
+		["Black Whelp Tunic"] = {
 			["spells"] = {
-				[26344] = 136235,
+				[24940] = 136247,
 			},
 		},
 		["Lung Burst"] = {
@@ -59985,9 +60074,9 @@ WeakAurasOptionsSaved = {
 				[34545] = 136241,
 			},
 		},
-		["Gong"] = {
+		["Conjure Frostwolf Rank 2 Insignia DND"] = {
 			["spells"] = {
-				[24967] = 136235,
+				[22109] = 136235,
 			},
 		},
 		["Pound"] = {
@@ -60138,9 +60227,9 @@ WeakAurasOptionsSaved = {
 				[34506] = 132178,
 			},
 		},
-		["Large Red Firework Cluster"] = {
+		["Runed Truesilver Rod"] = {
 			["spells"] = {
-				[26517] = 136235,
+				[13702] = 135148,
 			},
 		},
 		["Suspension"] = {
@@ -60200,9 +60289,29 @@ WeakAurasOptionsSaved = {
 				[23133] = 135996,
 			},
 		},
-		["Razorhide"] = {
+		["Vengeance"] = {
 			["spells"] = {
-				[16610] = 136104,
+				[20052] = 132275,
+				[20053] = 132275,
+				[26331] = 136224,
+				[20054] = 132275,
+				[20055] = 132275,
+				[8602] = 136224,
+				[20056] = 132275,
+				[16910] = 136075,
+				[20057] = 132275,
+				[16911] = 136075,
+				[20058] = 132275,
+				[16912] = 136075,
+				[20059] = 132275,
+				[16913] = 136075,
+				[25790] = 136224,
+				[27650] = 136224,
+				[39445] = 132177,
+				[20049] = 132275,
+				[25164] = 136224,
+				[20050] = 132275,
+				[16909] = 136075,
 			},
 		},
 		["Displacement"] = {
@@ -60229,9 +60338,9 @@ WeakAurasOptionsSaved = {
 				[34476] = 132168,
 			},
 		},
-		["Tough Scorpid Shoulders"] = {
+		["Chromatic Protection: Fire"] = {
 			["spells"] = {
-				[10564] = 136247,
+				[16373] = 134563,
 			},
 		},
 		["Serpent's Swiftness"] = {
@@ -60258,9 +60367,11 @@ WeakAurasOptionsSaved = {
 				[1650] = 132223,
 			},
 		},
-		["Raze Attack"] = {
+		["Hawk Eye"] = {
 			["spells"] = {
-				[12347] = 136235,
+				[19499] = 132327,
+				[19500] = 132327,
+				[19498] = 132327,
 			},
 		},
 		["Thick Skin"] = {
@@ -60276,9 +60387,9 @@ WeakAurasOptionsSaved = {
 				[5370] = 136235,
 			},
 		},
-		["Cooked Crab Claw"] = {
+		["Sniper Scope"] = {
 			["spells"] = {
-				[2545] = 136192,
+				[12620] = 136235,
 			},
 		},
 		["Yellow Rose Firework"] = {
@@ -60331,9 +60442,10 @@ WeakAurasOptionsSaved = {
 				[39316] = 134060,
 			},
 		},
-		["Increase Nature Dam 6"] = {
+		["Minor Absorption"] = {
 			["spells"] = {
-				[7693] = 136235,
+				[7423] = 136235,
+				[7445] = 136235,
 			},
 		},
 		["Shadowfiend"] = {
@@ -60417,10 +60529,9 @@ WeakAurasOptionsSaved = {
 				[26618] = 136235,
 			},
 		},
-		["Tame Nightsaber Stalker"] = {
+		["Increase Fire Dam 19"] = {
 			["spells"] = {
-				[19685] = 132164,
-				[19699] = 132164,
+				[9296] = 136235,
 			},
 		},
 		["Hellscream's Warsong"] = {
@@ -60459,9 +60570,9 @@ WeakAurasOptionsSaved = {
 				[47041] = 135869,
 			},
 		},
-		["Proc Self Heal 22"] = {
+		["Underwater Breathing"] = {
 			["spells"] = {
-				[9778] = 136235,
+				[5227] = 136148,
 			},
 		},
 		["Summon Dart Frog"] = {
@@ -60572,9 +60683,15 @@ WeakAurasOptionsSaved = {
 				[31725] = 136103,
 			},
 		},
-		["Create Stormwind Bundle of Cards"] = {
+		["Seal of the Crusader"] = {
 			["spells"] = {
-				[27701] = 136235,
+				[20307] = 135924,
+				[20308] = 135924,
+				[20162] = 135924,
+				[27158] = 135924,
+				[20305] = 135924,
+				[20306] = 135924,
+				[21082] = 135924,
 			},
 		},
 		["Speak with Archmage Vargoth"] = {
@@ -60834,9 +60951,9 @@ WeakAurasOptionsSaved = {
 				[22786] = 136006,
 			},
 		},
-		["Increased Stamina 11"] = {
+		["Enchant Weapon - Striking"] = {
 			["spells"] = {
-				[9118] = 136235,
+				[13693] = 135913,
 			},
 		},
 		["Judgement of the Crusader"] = {
@@ -60910,14 +61027,14 @@ WeakAurasOptionsSaved = {
 				[39816] = 135819,
 			},
 		},
-		["Hillman's Leather Gloves"] = {
+		["Rockscale Cod"] = {
 			["spells"] = {
-				[3764] = 136247,
+				[7828] = 136192,
 			},
 		},
-		["Oozeling's Disgusting Aura"] = {
+		["Tears of the Wind Seeker"] = {
 			["spells"] = {
-				[25163] = 132107,
+				[23011] = 135990,
 			},
 		},
 		["Improved Consecration"] = {
@@ -60926,9 +61043,9 @@ WeakAurasOptionsSaved = {
 				[38422] = 136235,
 			},
 		},
-		["Knockback 35"] = {
+		["Expert Skinning"] = {
 			["spells"] = {
-				[24199] = 136235,
+				[8620] = 134366,
 			},
 		},
 		["Enchant Bracer - Lesser Spirit"] = {
@@ -60936,9 +61053,9 @@ WeakAurasOptionsSaved = {
 				[7859] = 135913,
 			},
 		},
-		["Frightening Shriek"] = {
+		["Portals Deck"] = {
 			["spells"] = {
-				[25815] = 136184,
+				[23680] = 136235,
 			},
 		},
 		["Increased Lifebloom Periodic"] = {
@@ -61026,9 +61143,9 @@ WeakAurasOptionsSaved = {
 				[31329] = 136235,
 			},
 		},
-		["Incite Hostility"] = {
+		["Ritual of Summoning Effect"] = {
 			["spells"] = {
-				[8354] = 132270,
+				[7720] = 136235,
 			},
 		},
 		["Recharging Battery"] = {
@@ -61071,9 +61188,13 @@ WeakAurasOptionsSaved = {
 				[36917] = 136160,
 			},
 		},
-		["Increase Arcane Dam 31"] = {
+		["Improved Inner Rage"] = {
 			["spells"] = {
-				[17827] = 136235,
+				[12865] = 132347,
+				[12866] = 132347,
+				[12863] = 132347,
+				[12325] = 132347,
+				[12864] = 132347,
 			},
 		},
 		["Legion Ring - Eye Stalk Transform"] = {
@@ -61096,14 +61217,14 @@ WeakAurasOptionsSaved = {
 				[42384] = 132373,
 			},
 		},
-		["Immolate Visual Passive"] = {
+		["Imperial Plate Leggings"] = {
 			["spells"] = {
-				[16003] = 135817,
+				[16730] = 136192,
 			},
 		},
-		["Torch Combine"] = {
+		["Swift Flight Bracers"] = {
 			["spells"] = {
-				[12511] = 136235,
+				[22923] = 136235,
 			},
 		},
 		["Blade Dance Targeting"] = {
@@ -61152,9 +61273,9 @@ WeakAurasOptionsSaved = {
 				[24441] = 135806,
 			},
 		},
-		["Core Armor Kit"] = {
+		["Biletoad Infection"] = {
 			["spells"] = {
-				[22727] = 136235,
+				[10251] = 135914,
 			},
 		},
 		["Arcane Orb"] = {
@@ -61228,10 +61349,9 @@ WeakAurasOptionsSaved = {
 				[34140] = 133717,
 			},
 		},
-		["Dream Fog"] = {
+		["Attack Power Ranged 26"] = {
 			["spells"] = {
-				[24777] = 136044,
-				[24780] = 136006,
+				[21436] = 136235,
 			},
 		},
 		["Totem of the Third Wind"] = {
@@ -61285,9 +61405,9 @@ WeakAurasOptionsSaved = {
 				[8191] = 135926,
 			},
 		},
-		["Find Relic Fragment"] = {
+		["Thick War Axe"] = {
 			["spells"] = {
-				[17474] = 136235,
+				[3294] = 136192,
 			},
 		},
 		["Judgement of Darkness"] = {
@@ -61347,9 +61467,9 @@ WeakAurasOptionsSaved = {
 				[34105] = 136080,
 			},
 		},
-		["Summon Senegal"] = {
+		["Black Diamond Crab"] = {
 			["spells"] = {
-				[10684] = 132311,
+				[26609] = 132186,
 			},
 		},
 		["Kill Shot"] = {
@@ -61635,14 +61755,28 @@ WeakAurasOptionsSaved = {
 				[9148] = 136247,
 			},
 		},
-		["Holy Resistance"] = {
+		["Eviscerate"] = {
 			["spells"] = {
-				[27536] = 135880,
+				[27611] = 132292,
+				[15692] = 132292,
+				[11299] = 132292,
+				[46189] = 132292,
+				[31016] = 132292,
+				[41177] = 132292,
+				[8624] = 132292,
+				[15691] = 132292,
+				[6760] = 132292,
+				[11300] = 132292,
+				[6762] = 132292,
+				[26865] = 132292,
+				[2098] = 132292,
+				[8623] = 132292,
+				[6761] = 132292,
 			},
 		},
-		["Mind Probe"] = {
+		["Quickdraw Quiver"] = {
 			["spells"] = {
-				[16037] = 135736,
+				[14930] = 136247,
 			},
 		},
 		["Summon Bleeding Hollow Skeleton"] = {
@@ -61695,9 +61829,9 @@ WeakAurasOptionsSaved = {
 				[3552] = 134105,
 			},
 		},
-		["Self Resurrection"] = {
+		["Coarse Blasting Powder"] = {
 			["spells"] = {
-				[18976] = 136235,
+				[3929] = 136235,
 			},
 		},
 		["Increase Spell Dam 31"] = {
@@ -61716,9 +61850,9 @@ WeakAurasOptionsSaved = {
 				[28754] = 136129,
 			},
 		},
-		["Increased Fire Resist 38"] = {
+		["Increased Frost Resist 14"] = {
 			["spells"] = {
-				[14618] = 136235,
+				[14553] = 136235,
 			},
 		},
 		["Temptation"] = {
@@ -61763,9 +61897,11 @@ WeakAurasOptionsSaved = {
 				[38182] = 135990,
 			},
 		},
-		["Nether Gem"] = {
+		["Control of Nature"] = {
 			["spells"] = {
-				[7673] = 134076,
+				[16919] = 136100,
+				[16920] = 136100,
+				[16918] = 136100,
 			},
 		},
 		["Increase Healing 8"] = {
@@ -61773,9 +61909,10 @@ WeakAurasOptionsSaved = {
 				[33024] = 136235,
 			},
 		},
-		["Monty Bashes Rats (DND)"] = {
+		["Nature Channeling"] = {
 			["spells"] = {
-				[21052] = 136235,
+				[13236] = 136041,
+				[28892] = 136085,
 			},
 		},
 		["Enchant Gloves - Major Strength"] = {
@@ -61881,9 +62018,11 @@ WeakAurasOptionsSaved = {
 				[8198] = 136105,
 			},
 		},
-		["Aspect of Thekal"] = {
+		["Defensive Stance"] = {
 			["spells"] = {
-				[24689] = 132117,
+				[71] = 132341,
+				[7164] = 132341,
+				[41101] = 132341,
 			},
 		},
 		["Summon Syth Shadow Elemental"] = {
@@ -61965,21 +62104,11 @@ WeakAurasOptionsSaved = {
 				[28557] = 136235,
 			},
 		},
-		["Feedback"] = {
+		["Deadly Poison VI"] = {
 			["spells"] = {
-				[19271] = 136189,
-				[6347] = 136189,
-				[13896] = 136189,
-				[25441] = 136189,
-				[32897] = 136170,
-				[19269] = 136189,
-				[19273] = 136189,
-				[25440] = 136189,
-				[19270] = 136189,
-				[19274] = 136189,
-				[19275] = 136189,
-				[19267] = 136189,
-				[19268] = 136189,
+				[26969] = 132290,
+				[26967] = 132290,
+				[26968] = 132290,
 			},
 		},
 		["Summon Lots of Wood Mights"] = {
@@ -61995,9 +62124,9 @@ WeakAurasOptionsSaved = {
 				[33145] = 135878,
 			},
 		},
-		["Burrow"] = {
+		["Spirit Disruption"] = {
 			["spells"] = {
-				[26381] = 132331,
+				[25002] = 135824,
 			},
 		},
 		["Absorb Vitality"] = {
@@ -62012,9 +62141,10 @@ WeakAurasOptionsSaved = {
 				[33898] = 136224,
 			},
 		},
-		["Increased Arcane Resist 44"] = {
+		["Attack Power 30"] = {
 			["spells"] = {
-				[14968] = 136235,
+				[9336] = 136235,
+				[41823] = 136235,
 			},
 		},
 		["Summon Murloc B10"] = {
@@ -62047,9 +62177,9 @@ WeakAurasOptionsSaved = {
 				[33894] = 135966,
 			},
 		},
-		["Conjure Stormpike Rank 2 Insignia DND"] = {
+		["Conjure Stormpike Rank 1 Insignia DND"] = {
 			["spells"] = {
-				[22115] = 136235,
+				[22114] = 136235,
 			},
 		},
 		["Decrepit Fever"] = {
@@ -62073,10 +62203,9 @@ WeakAurasOptionsSaved = {
 				[26733] = 136235,
 			},
 		},
-		["Gas Bomb"] = {
+		["Sol H"] = {
 			["spells"] = {
-				[8901] = 133581,
-				[8902] = 133581,
+				[3206] = 135859,
 			},
 		},
 		["Ethereal Ring, Signal Flare"] = {
@@ -62084,14 +62213,14 @@ WeakAurasOptionsSaved = {
 				[41289] = 136235,
 			},
 		},
-		["Call Slavering Worg"] = {
+		["Undying Soul"] = {
 			["spells"] = {
-				[7488] = 136130,
+				[20939] = 136235,
 			},
 		},
-		["Test Stab R50"] = {
+		["Increase Arcane Dam 37"] = {
 			["spells"] = {
-				[23959] = 132090,
+				[17832] = 136235,
 			},
 		},
 		["Cobra Reflexes"] = {
@@ -62133,14 +62262,15 @@ WeakAurasOptionsSaved = {
 				[33848] = 136235,
 			},
 		},
-		["Quest - Kodo Fade Out (DND)"] = {
+		["Mana Regeneration"] = {
 			["spells"] = {
-				[22969] = 136235,
+				[18194] = 136053,
+				[24363] = 134825,
 			},
 		},
-		["Rend Blackhand Mounts"] = {
+		["Holiday - Lunar Teleport: Orgrimmar"] = {
 			["spells"] = {
-				[16167] = 135990,
+				[26453] = 135758,
 			},
 		},
 		["Magic Disruption Aura"] = {
@@ -62173,9 +62303,9 @@ WeakAurasOptionsSaved = {
 				[33819] = 136235,
 			},
 		},
-		["Buru Egg Trigger Effect"] = {
+		["Greater Blessing of Kings"] = {
 			["spells"] = {
-				[26646] = 136235,
+				[25898] = 135993,
 			},
 		},
 		["Hurtful Strike"] = {
@@ -62240,9 +62370,9 @@ WeakAurasOptionsSaved = {
 				[33774] = 132794,
 			},
 		},
-		["Heal Ragnaros"] = {
+		["Stormshroud Gloves"] = {
 			["spells"] = {
-				[19952] = 135827,
+				[26279] = 136235,
 			},
 		},
 		["Essence Infused Mushroom"] = {
@@ -62285,9 +62415,14 @@ WeakAurasOptionsSaved = {
 				[35718] = 135743,
 			},
 		},
-		["Summon Bronze Whelpling"] = {
+		["Skinning"] = {
 			["spells"] = {
-				[10699] = 132311,
+				[10768] = 134366,
+				[8613] = 134366,
+				[8617] = 134366,
+				[8618] = 134366,
+				[13697] = 136235,
+				[32678] = 134366,
 			},
 		},
 		["Join Map Fragments"] = {
@@ -62295,15 +62430,15 @@ WeakAurasOptionsSaved = {
 				[11438] = 136235,
 			},
 		},
-		["Increased Stamina 33"] = {
+		["QAEnchant Gloves +2% Threat"] = {
 			["spells"] = {
-				[14480] = 136235,
+				[27113] = 135913,
 			},
 		},
-		["Small Blue Rocket"] = {
+		["Musty Tome Trap"] = {
 			["spells"] = {
-				[26291] = 136235,
-				[26416] = 136235,
+				[17134] = 136129,
+				[19150] = 136129,
 			},
 		},
 		["Goblin Racer Cheer"] = {
@@ -62327,11 +62462,9 @@ WeakAurasOptionsSaved = {
 				[41301] = 136121,
 			},
 		},
-		["Improved Blizzard"] = {
+		["Explosive Arrow"] = {
 			["spells"] = {
-				[12488] = 135857,
-				[12487] = 135857,
-				[11185] = 135857,
+				[12719] = 136235,
 			},
 		},
 		["Onslaught Elixir"] = {
@@ -62350,10 +62483,16 @@ WeakAurasOptionsSaved = {
 				[27448] = 132294,
 			},
 		},
-		["Scorching Totem"] = {
+		["Bear Form"] = {
 			["spells"] = {
-				[15038] = 135825,
-				[32968] = 135825,
+				[7090] = 132276,
+				[31792] = 132276,
+				[5487] = 132276,
+				[32357] = 132276,
+				[19030] = 132276,
+				[27543] = 132276,
+				[19179] = 132276,
+				[18309] = 132276,
 			},
 		},
 		["Bael'Gar's Fiery Essence"] = {
@@ -62361,14 +62500,14 @@ WeakAurasOptionsSaved = {
 				[13982] = 136235,
 			},
 		},
-		["Aegis of Preservation"] = {
+		["Summon Senegal"] = {
 			["spells"] = {
-				[23780] = 135880,
+				[10684] = 132311,
 			},
 		},
-		["Increased Arcane Resist 42"] = {
+		["Activate Bomb B"] = {
 			["spells"] = {
-				[14966] = 136235,
+				[11795] = 135990,
 			},
 		},
 		["Ignite Horde Siege Engine"] = {
@@ -62463,9 +62602,9 @@ WeakAurasOptionsSaved = {
 				[16756] = 132222,
 			},
 		},
-		["Helcular's Puppets Passive"] = {
+		["Jade Owl Summoned"] = {
 			["spells"] = {
-				[4951] = 136163,
+				[26563] = 136235,
 			},
 		},
 		["2H Sword Specialization"] = {
@@ -62533,9 +62672,9 @@ WeakAurasOptionsSaved = {
 				[18308] = 136221,
 			},
 		},
-		["Summon Treasure Hunting Pirate"] = {
+		["Dazzling Mithril Rapier"] = {
 			["spells"] = {
-				[11463] = 136235,
+				[10005] = 136192,
 			},
 		},
 		["Rigid Golden Draenite"] = {
@@ -62595,9 +62734,9 @@ WeakAurasOptionsSaved = {
 				[33571] = 136014,
 			},
 		},
-		["Aquadynamic Fish Lens"] = {
+		["Light Obsidian Belt"] = {
 			["spells"] = {
-				[8532] = 134440,
+				[27588] = 136192,
 			},
 		},
 		["Void Portal Visual"] = {
@@ -62628,9 +62767,9 @@ WeakAurasOptionsSaved = {
 				[38891] = 136235,
 			},
 		},
-		["Absorb Blow"] = {
+		["Practice Lock"] = {
 			["spells"] = {
-				[5102] = 136225,
+				[8334] = 136235,
 			},
 		},
 		["Planting Bundle of Bloodthistle"] = {
@@ -62673,9 +62812,9 @@ WeakAurasOptionsSaved = {
 				[7394] = 132338,
 			},
 		},
-		["Warsong Flag"] = {
+		["Increased Stamina 07"] = {
 			["spells"] = {
-				[23333] = 132485,
+				[7505] = 136235,
 			},
 		},
 		["Infernaling Spawn-in"] = {
@@ -62693,10 +62832,9 @@ WeakAurasOptionsSaved = {
 				[33953] = 135990,
 			},
 		},
-		["Increase Spell Dam 71"] = {
+		["Elegant Silver Ring"] = {
 			["spells"] = {
-				[23929] = 136235,
-				[41648] = 136235,
+				[25280] = 136235,
 			},
 		},
 		["Apprentice Riding"] = {
@@ -62792,9 +62930,9 @@ WeakAurasOptionsSaved = {
 				[33507] = 136075,
 			},
 		},
-		["Tag: Clear"] = {
+		["Initialize Image"] = {
 			["spells"] = {
-				[20410] = 132156,
+				[3730] = 136235,
 			},
 		},
 		["Mark of Malice"] = {
@@ -62854,9 +62992,9 @@ WeakAurasOptionsSaved = {
 				[33475] = 135849,
 			},
 		},
-		["Increase Fire Dam 11"] = {
+		["Catseye Ultra Goggles"] = {
 			["spells"] = {
-				[9399] = 136235,
+				[12607] = 136235,
 			},
 		},
 		["Gossip NPC Appearance - Undead Female"] = {
@@ -62864,9 +63002,9 @@ WeakAurasOptionsSaved = {
 				[33473] = 135849,
 			},
 		},
-		["Increased Block 12"] = {
+		["Doomcaller Reduced Shadow Bolt Cost"] = {
 			["spells"] = {
-				[21475] = 136235,
+				[26117] = 136235,
 			},
 		},
 		["Wizardweave Robe"] = {
@@ -62899,14 +63037,16 @@ WeakAurasOptionsSaved = {
 				[29603] = 136192,
 			},
 		},
-		["Teleport Barracks"] = {
+		["Earth Elemental Totem"] = {
 			["spells"] = {
-				[443] = 136235,
+				[2062] = 136024,
+				[33663] = 136024,
+				[44130] = 135824,
 			},
 		},
-		["Increased Arcane Resist 41"] = {
+		["Flight of the Peregrine"] = {
 			["spells"] = {
-				[14965] = 136235,
+				[4104] = 136107,
 			},
 		},
 		["Gossip NPC Appearance - Gnome Male, Lunar Festival"] = {
@@ -62934,9 +63074,9 @@ WeakAurasOptionsSaved = {
 				[31972] = 132937,
 			},
 		},
-		["Mortar Animate"] = {
+		["Increase Spell Dam 4"] = {
 			["spells"] = {
-				[18655] = 136235,
+				[9394] = 136235,
 			},
 		},
 		["Gossip NPC Appearance - Gnome Male"] = {
@@ -62949,14 +63089,14 @@ WeakAurasOptionsSaved = {
 				[38012] = 136235,
 			},
 		},
-		["Gehennas' Curse"] = {
+		["Reinforced Linen Cape"] = {
 			["spells"] = {
-				[19716] = 136160,
+				[2397] = 132149,
 			},
 		},
-		["Unstoppable Force"] = {
+		["Mooncloth Robe"] = {
 			["spells"] = {
-				[23699] = 136235,
+				[22902] = 132149,
 			},
 		},
 		["Savage Assault IV"] = {
@@ -62995,9 +63135,9 @@ WeakAurasOptionsSaved = {
 				[33442] = 135849,
 			},
 		},
-		["Pearl-handled Dagger"] = {
+		["Summon Farm Chicken"] = {
 			["spells"] = {
-				[6517] = 136192,
+				[13548] = 132311,
 			},
 		},
 		["Gossip NPC Appearance - Night Elf Male"] = {
@@ -63030,9 +63170,9 @@ WeakAurasOptionsSaved = {
 				[33437] = 135849,
 			},
 		},
-		["Summon Razzashi Skitterer"] = {
+		["Ragnaros Emerge"] = {
 			["spells"] = {
-				[24598] = 132099,
+				[20568] = 135819,
 			},
 		},
 		["Anti-Zerg Cantrip"] = {
@@ -63086,14 +63226,11 @@ WeakAurasOptionsSaved = {
 				[2850] = 136235,
 			},
 		},
-		["Veil of Shadow"] = {
+		["Detect Invisibility"] = {
 			["spells"] = {
-				[22687] = 136160,
-				[28440] = 136160,
-				[23224] = 136160,
-				[7068] = 136160,
-				[24674] = 136160,
-				[17820] = 136160,
+				[132] = 136153,
+				[2972] = 136152,
+				[11649] = 136152,
 			},
 		},
 		["Teleport Dawnstar - Down"] = {
@@ -63213,21 +63350,9 @@ WeakAurasOptionsSaved = {
 				[31040] = 132202,
 			},
 		},
-		["Strength"] = {
+		["Two-Handed Swords"] = {
 			["spells"] = {
-				[33082] = 136101,
-				[8118] = 136101,
-				[8119] = 136101,
-				[8120] = 136101,
-				[12179] = 136101,
-				[27898] = 136235,
-				[3163] = 134838,
-				[31817] = 136101,
-				[3164] = 134838,
-				[27973] = 136235,
-				[23793] = 136235,
-				[13372] = 136235,
-				[11331] = 134838,
+				[202] = 132223,
 			},
 		},
 		["Mutated Spores"] = {
@@ -63256,15 +63381,9 @@ WeakAurasOptionsSaved = {
 				[33383] = 136235,
 			},
 		},
-		["Possess"] = {
+		["Barrier of Light"] = {
 			["spells"] = {
-				[19832] = 136222,
-				[17250] = 136235,
-				[17244] = 136129,
-				[32830] = 136129,
-				[23014] = 136222,
-				[33401] = 136160,
-				[32832] = 136235,
+				[16051] = 136235,
 			},
 		},
 		["Random Periodic"] = {
@@ -63313,35 +63432,9 @@ WeakAurasOptionsSaved = {
 				[44970] = 136247,
 			},
 		},
-		["Power Word: Shield"] = {
+		["Summon Postmaster Malown"] = {
 			["spells"] = {
-				[41373] = 135940,
-				[17139] = 135940,
-				[17] = 135940,
-				[11647] = 135940,
-				[3747] = 135940,
-				[25217] = 135940,
-				[44291] = 135940,
-				[25218] = 135940,
-				[11974] = 135940,
-				[592] = 135940,
-				[11835] = 135940,
-				[6065] = 135940,
-				[46193] = 135940,
-				[10898] = 135940,
-				[44175] = 135940,
-				[36052] = 135940,
-				[22187] = 135940,
-				[10899] = 135940,
-				[32595] = 135940,
-				[6066] = 135940,
-				[29408] = 135940,
-				[10900] = 135940,
-				[27607] = 135940,
-				[20697] = 135940,
-				[35944] = 135940,
-				[10901] = 135940,
-				[600] = 135940,
+				[24627] = 136121,
 			},
 		},
 		["Electro-Shock"] = {
@@ -63425,9 +63518,9 @@ WeakAurasOptionsSaved = {
 				[33324] = 135915,
 			},
 		},
-		["Activate Bomb A"] = {
+		["Increased Critical 56"] = {
 			["spells"] = {
-				[11511] = 135990,
+				[7600] = 136235,
 			},
 		},
 		["Force of Neltharaku"] = {
@@ -63461,9 +63554,34 @@ WeakAurasOptionsSaved = {
 				[33290] = 136192,
 			},
 		},
-		["Fizzule's Folly"] = {
+		["Rejuvenation"] = {
 			["spells"] = {
-				[10137] = 136235,
+				[2090] = 136081,
+				[9840] = 136081,
+				[26981] = 136081,
+				[774] = 136081,
+				[3627] = 136081,
+				[38657] = 136081,
+				[32131] = 136081,
+				[1058] = 136081,
+				[15981] = 136081,
+				[9841] = 136081,
+				[28723] = 133439,
+				[2091] = 136081,
+				[20664] = 136081,
+				[25299] = 136081,
+				[28724] = 133439,
+				[27532] = 136081,
+				[28722] = 133439,
+				[28716] = 136235,
+				[26982] = 136081,
+				[8910] = 136081,
+				[1430] = 136081,
+				[31782] = 136081,
+				[12160] = 136081,
+				[8070] = 136081,
+				[20701] = 136081,
+				[9839] = 136081,
 			},
 		},
 		["Bloodmyst Dark Channeling"] = {
@@ -63640,9 +63758,30 @@ WeakAurasOptionsSaved = {
 				[33208] = 136235,
 			},
 		},
-		["Fire Shield III"] = {
+		["Arcane Blast"] = {
 			["spells"] = {
-				[2601] = 135817,
+				[30451] = 135735,
+				[37126] = 136146,
+				[24857] = 136146,
+				[22920] = 136146,
+				[10833] = 136146,
+				[38342] = 136146,
+				[38344] = 136146,
+				[22893] = 136146,
+				[22940] = 136146,
+				[16067] = 135807,
+				[18091] = 135807,
+				[35314] = 136146,
+				[38881] = 135735,
+				[20883] = 135807,
+				[36032] = 135735,
+				[34793] = 136146,
+				[40881] = 136146,
+				[32935] = 136146,
+				[31457] = 136146,
+				[40837] = 136146,
+				[38538] = 136146,
+				[35927] = 135735,
 			},
 		},
 		["Increase Spell Dam 88"] = {
@@ -63685,9 +63824,10 @@ WeakAurasOptionsSaved = {
 				[33188] = 136235,
 			},
 		},
-		["Teleport: Ironforge"] = {
+		["Arctic Reach"] = {
 			["spells"] = {
-				[3562] = 135757,
+				[16757] = 136141,
+				[16758] = 136141,
 			},
 		},
 		["Feign Death"] = {
@@ -63768,102 +63908,9 @@ WeakAurasOptionsSaved = {
 				[21153] = 136139,
 			},
 		},
-		["Breath"] = {
+		["Screams of the Past"] = {
 			["spells"] = {
-				[18564] = 135805,
-				[18566] = 135805,
-				[18568] = 135805,
-				[18570] = 135805,
-				[18572] = 135805,
-				[18574] = 135805,
-				[18576] = 135805,
-				[18578] = 135805,
-				[18580] = 135805,
-				[18582] = 135805,
-				[18584] = 135805,
-				[18586] = 135805,
-				[18588] = 135805,
-				[18590] = 135805,
-				[18592] = 135805,
-				[18594] = 135805,
-				[18596] = 135805,
-				[18598] = 135805,
-				[18600] = 135805,
-				[18602] = 135805,
-				[18604] = 135805,
-				[18606] = 135805,
-				[18354] = 135805,
-				[17086] = 135805,
-				[18358] = 135805,
-				[18360] = 135805,
-				[17092] = 135805,
-				[17094] = 135805,
-				[18620] = 135805,
-				[18622] = 135805,
-				[18624] = 135805,
-				[18626] = 135805,
-				[18628] = 135805,
-				[22268] = 135805,
-				[22267] = 135805,
-				[21139] = 135805,
-				[21138] = 135805,
-				[21137] = 135805,
-				[21136] = 135805,
-				[21135] = 135805,
-				[21133] = 135805,
-				[21132] = 135805,
-				[21131] = 135805,
-				[18612] = 135805,
-				[18613] = 135805,
-				[18614] = 135805,
-				[18621] = 135805,
-				[18619] = 135805,
-				[18618] = 135805,
-				[18617] = 135805,
-				[18616] = 135805,
-				[18565] = 135805,
-				[18567] = 135805,
-				[18569] = 135805,
-				[18571] = 135805,
-				[18573] = 135805,
-				[18575] = 135805,
-				[18615] = 135805,
-				[18579] = 135805,
-				[18581] = 135805,
-				[18583] = 135805,
-				[18585] = 135805,
-				[18587] = 135805,
-				[18589] = 135805,
-				[18591] = 135805,
-				[18593] = 135805,
-				[18595] = 135805,
-				[18597] = 135805,
-				[18599] = 135805,
-				[18601] = 135805,
-				[18603] = 135805,
-				[18605] = 135805,
-				[18353] = 135805,
-				[18355] = 135805,
-				[18357] = 135805,
-				[18359] = 135805,
-				[17091] = 135805,
-				[17093] = 135805,
-				[17095] = 135805,
-				[17097] = 135805,
-				[18623] = 135805,
-				[18625] = 135805,
-				[18627] = 135805,
-				[18611] = 135805,
-				[18609] = 135805,
-				[18607] = 135805,
-				[17087] = 135805,
-				[17088] = 135805,
-				[17089] = 135805,
-				[17090] = 135805,
-				[18351] = 135805,
-				[18352] = 135805,
-				[18356] = 135805,
-				[18361] = 135805,
+				[7074] = 136164,
 			},
 		},
 		["Shield Generator"] = {
@@ -63891,9 +63938,9 @@ WeakAurasOptionsSaved = {
 				[24185] = 136012,
 			},
 		},
-		["Enchant Weapon - Healing Power"] = {
+		["Razorhide"] = {
 			["spells"] = {
-				[22750] = 135913,
+				[16610] = 136104,
 			},
 		},
 		["Increased Agility 25"] = {
@@ -63957,9 +64004,9 @@ WeakAurasOptionsSaved = {
 				[33207] = 136235,
 			},
 		},
-		["Ahn'Qiraj Reward Buff (Trigger - 60)"] = {
+		["Perm. Illusion Dreaming Whelp"] = {
 			["spells"] = {
-				[25803] = 134969,
+				[8360] = 132311,
 			},
 		},
 		["Summon Wild Felhunter"] = {
@@ -64000,9 +64047,9 @@ WeakAurasOptionsSaved = {
 				[33123] = 136235,
 			},
 		},
-		["Mithril Scale Gloves"] = {
+		["Flameshocker - Immolate Visual"] = {
 			["spells"] = {
-				[9942] = 136192,
+				[28330] = 135817,
 			},
 		},
 		["Banish Dragon Helper"] = {
@@ -64060,18 +64107,9 @@ WeakAurasOptionsSaved = {
 				[33171] = 135868,
 			},
 		},
-		["Lightning Reflexes"] = {
+		["Choking Spores"] = {
 			["spells"] = {
-				[19181] = 136047,
-				[13712] = 136047,
-				[13789] = 136047,
-				[13791] = 136047,
-				[24297] = 136047,
-				[19168] = 136047,
-				[13788] = 136047,
-				[13790] = 136047,
-				[19180] = 136047,
-				[24296] = 136047,
+				[22802] = 136006,
 			},
 		},
 		["Increase Spell Dam 954"] = {
@@ -64091,9 +64129,13 @@ WeakAurasOptionsSaved = {
 				[33798] = 136235,
 			},
 		},
-		["Blazing Rapier"] = {
+		["Thrash"] = {
 			["spells"] = {
-				[16978] = 136192,
+				[21919] = 132350,
+				[8876] = 132152,
+				[3391] = 132152,
+				[12787] = 132152,
+				[3417] = 132152,
 			},
 		},
 		["BVid - Ally of Darkness (Forever)"] = {
@@ -64170,9 +64212,9 @@ WeakAurasOptionsSaved = {
 				[14412] = 136235,
 			},
 		},
-		["Increase Spell Dam 41"] = {
+		["Stoneshield"] = {
 			["spells"] = {
-				[18057] = 136235,
+				[4941] = 134847,
 			},
 		},
 		["Enchanted Resonite Crystal"] = {
@@ -64190,9 +64232,9 @@ WeakAurasOptionsSaved = {
 				[33063] = 136183,
 			},
 		},
-		["Smelt Copper"] = {
+		["Apprentice Fishing"] = {
 			["spells"] = {
-				[2657] = 136235,
+				[7733] = 136245,
 			},
 		},
 		["Create Item Visual (DND)"] = {
@@ -64200,9 +64242,10 @@ WeakAurasOptionsSaved = {
 				[16633] = 136210,
 			},
 		},
-		["Increased Fire Resist 24"] = {
+		["Infected Spine"] = {
 			["spells"] = {
-				[14604] = 136235,
+				[12245] = 136127,
+				[12246] = 136127,
 			},
 		},
 		["Tiny Magical Crawdad"] = {
@@ -64230,9 +64273,9 @@ WeakAurasOptionsSaved = {
 				[33039] = 136235,
 			},
 		},
-		["Create Whipper Root Tubers"] = {
+		["Melt Ore"] = {
 			["spells"] = {
-				[15343] = 136235,
+				[5159] = 135826,
 			},
 		},
 		["Increase Spell Dam 959"] = {
@@ -64294,9 +64337,9 @@ WeakAurasOptionsSaved = {
 				[33535] = 136131,
 			},
 		},
-		["Seal of the Crusader Judgement Increase"] = {
+		["Rough Blasting Powder"] = {
 			["spells"] = {
-				[23300] = 135924,
+				[3918] = 136235,
 			},
 		},
 		["Mark of Zeliek"] = {
@@ -64340,9 +64383,9 @@ WeakAurasOptionsSaved = {
 				[33022] = 136235,
 			},
 		},
-		["Prismatic Form: Water"] = {
+		["Self Stun - 15 seconds"] = {
 			["spells"] = {
-				[4935] = 136160,
+				[14821] = 136168,
 			},
 		},
 		["Howl"] = {
@@ -64401,9 +64444,9 @@ WeakAurasOptionsSaved = {
 				[38708] = 136129,
 			},
 		},
-		["Summon Angry Programmer"] = {
+		["Poisonous Spit"] = {
 			["spells"] = {
-				[897] = 136235,
+				[4286] = 136016,
 			},
 		},
 		["Elemental Armor"] = {
@@ -64522,9 +64565,9 @@ WeakAurasOptionsSaved = {
 				[43927] = 132265,
 			},
 		},
-		["Goblin Mining Helmet"] = {
+		["Rough Grinding Stone"] = {
 			["spells"] = {
-				[12717] = 136235,
+				[3320] = 136192,
 			},
 		},
 		["Disheartening Blow V"] = {
@@ -64557,9 +64600,9 @@ WeakAurasOptionsSaved = {
 				[43629] = 135849,
 			},
 		},
-		["Skullsplitter Pet"] = {
+		["Increased Intellect 24"] = {
 			["spells"] = {
-				[3621] = 136095,
+				[14414] = 136235,
 			},
 		},
 		["Create Eggscilliscope"] = {
@@ -64597,9 +64640,14 @@ WeakAurasOptionsSaved = {
 				[32913] = 136060,
 			},
 		},
-		["Dark Iron Taskmaster Death"] = {
+		["Healing Stream"] = {
 			["spells"] = {
-				[12613] = 136122,
+				[5672] = 135127,
+				[10461] = 135127,
+				[6371] = 135127,
+				[25566] = 135127,
+				[10460] = 135127,
+				[6372] = 135127,
 			},
 		},
 		["Windfury"] = {
@@ -64696,9 +64744,15 @@ WeakAurasOptionsSaved = {
 				[17177] = 135964,
 			},
 		},
-		["Increased Spirit 18"] = {
+		["Devouring Plague"] = {
 			["spells"] = {
-				[14437] = 136235,
+				[19278] = 136123,
+				[19279] = 136123,
+				[19280] = 136123,
+				[25467] = 136123,
+				[19276] = 136123,
+				[19277] = 136123,
+				[2944] = 136123,
 			},
 		},
 		["Feedback Proc"] = {
@@ -64730,28 +64784,14 @@ WeakAurasOptionsSaved = {
 				[32895] = 135724,
 			},
 		},
-		["Practice Lock"] = {
+		["Bloodsoul Gauntlets"] = {
 			["spells"] = {
-				[8334] = 136235,
+				[24138] = 136192,
 			},
 		},
-		["Tranquility"] = {
+		["Attack Power Ranged 38"] = {
 			["spells"] = {
-				[21791] = 136107,
-				[44205] = 136018,
-				[367070] = 136107,
-				[8918] = 136107,
-				[44208] = 136018,
-				[740] = 136107,
-				[44207] = 136018,
-				[26983] = 136107,
-				[25817] = 136107,
-				[38659] = 136107,
-				[9862] = 136107,
-				[34550] = 136107,
-				[44203] = 136018,
-				[44206] = 136018,
-				[9863] = 136107,
+				[21441] = 136235,
 			},
 		},
 		["Heavy Clefthoof Leggings"] = {
@@ -64848,9 +64888,12 @@ WeakAurasOptionsSaved = {
 				[31042] = 132363,
 			},
 		},
-		["Attack Power %"] = {
+		["Mithril Mechanical Dragonling"] = {
 			["spells"] = {
-				[9199] = 133951,
+				[12624] = 134153,
+				[12749] = 134153,
+				[23050] = 134156,
+				[23075] = 134153,
 			},
 		},
 		["Attack Power 24"] = {
@@ -64901,9 +64944,12 @@ WeakAurasOptionsSaved = {
 				[32840] = 136235,
 			},
 		},
-		["Gammerita Turtle Camera"] = {
+		["Mana Drain"] = {
 			["spells"] = {
-				[11610] = 136235,
+				[14] = 136235,
+				[15695] = 132155,
+				[27526] = 136208,
+				[29471] = 136208,
 			},
 		},
 		["Headless Horseman - Burning (Cosmetic), Base"] = {
@@ -64931,14 +64977,14 @@ WeakAurasOptionsSaved = {
 				[19629] = 135826,
 			},
 		},
-		["EZ-Thro Dynamite II"] = {
+		["Increased Nature Resist 01"] = {
 			["spells"] = {
-				[23069] = 136235,
+				[14622] = 136235,
 			},
 		},
-		["Destroy Ghost Magnet"] = {
+		["Evolving Ectoplasm (Red)"] = {
 			["spells"] = {
-				[19571] = 136235,
+				[7943] = 135824,
 			},
 		},
 		["Threatening Gaze"] = {
@@ -64951,9 +64997,9 @@ WeakAurasOptionsSaved = {
 				[10697] = 132311,
 			},
 		},
-		["Increased Nature Resist 09"] = {
+		["Force Target - Kick with impact"] = {
 			["spells"] = {
-				[14629] = 136235,
+				[18145] = 136168,
 			},
 		},
 		["Nether Charge Pulse"] = {
@@ -64961,9 +65007,9 @@ WeakAurasOptionsSaved = {
 				[35151] = 135864,
 			},
 		},
-		["Immune Fear/Polymorph/Snare"] = {
+		["Advanced Target Dummy Passive"] = {
 			["spells"] = {
-				[23274] = 135894,
+				[4048] = 136232,
 			},
 		},
 		["Giraffe Form"] = {
@@ -64977,9 +65023,15 @@ WeakAurasOptionsSaved = {
 				[32810] = 136235,
 			},
 		},
-		["Frost Reflector"] = {
+		["Ritual of Summoning"] = {
 			["spells"] = {
-				[23131] = 135850,
+				[32899] = 136223,
+				[32929] = 136223,
+				[46546] = 136223,
+				[32928] = 136223,
+				[40335] = 135270,
+				[32948] = 136223,
+				[698] = 136223,
 			},
 		},
 		["Champion of the Dawn"] = {
@@ -65032,10 +65084,9 @@ WeakAurasOptionsSaved = {
 				[20876] = 136192,
 			},
 		},
-		["Stun Forever"] = {
+		["Enchant Cloak - Defense"] = {
 			["spells"] = {
-				[23775] = 132310,
-				[36877] = 135963,
+				[13635] = 135913,
 			},
 		},
 		["Summon Weapon A"] = {
@@ -65053,9 +65104,9 @@ WeakAurasOptionsSaved = {
 				[32747] = 135430,
 			},
 		},
-		["Small Seaforium Backfire"] = {
+		["Dreadful Fright"] = {
 			["spells"] = {
-				[8511] = 135805,
+				[23275] = 136122,
 			},
 		},
 		["Access Control Console"] = {
@@ -65074,20 +65125,20 @@ WeakAurasOptionsSaved = {
 				[48983] = 132172,
 			},
 		},
-		["Toxic Spit"] = {
+		["Argent Shoulders"] = {
 			["spells"] = {
-				[7951] = 136016,
-				[19452] = 136016,
+				[23665] = 132149,
 			},
 		},
-		["Death Bed"] = {
+		["Netherweave Robe"] = {
 			["spells"] = {
-				[6894] = 136223,
+				[26773] = 132149,
 			},
 		},
-		["Curse of the Shadowhorn"] = {
+		["Knockback 500 Triggers"] = {
 			["spells"] = {
-				[6922] = 136020,
+				[13541] = 136235,
+				[13566] = 136235,
 			},
 		},
 		["Bore"] = {
@@ -65180,10 +65231,52 @@ WeakAurasOptionsSaved = {
 				[37655] = 136235,
 			},
 		},
-		["Vicious Bite"] = {
+		["Fire Shield"] = {
 			["spells"] = {
-				[19319] = 132278,
-				[34351] = 132278,
+				[37318] = 135817,
+				[11350] = 135817,
+				[27486] = 135806,
+				[38901] = 135817,
+				[27489] = 135806,
+				[30514] = 135817,
+				[35265] = 135817,
+				[37283] = 135817,
+				[36907] = 135806,
+				[19627] = 135817,
+				[38933] = 135817,
+				[20322] = 135806,
+				[20323] = 135806,
+				[20324] = 135806,
+				[11771] = 135806,
+				[20326] = 135806,
+				[11772] = 135806,
+				[11773] = 135806,
+				[134] = 135817,
+				[32749] = 135817,
+				[27269] = 135806,
+				[32751] = 135817,
+				[11968] = 135817,
+				[38732] = 135817,
+				[38902] = 135817,
+				[8316] = 135806,
+				[35266] = 135817,
+				[8317] = 135806,
+				[38893] = 135817,
+				[8318] = 135806,
+				[38855] = 135817,
+				[8319] = 135806,
+				[38733] = 135817,
+				[38934] = 135817,
+				[18968] = 135817,
+				[11770] = 135806,
+				[37282] = 135817,
+				[30513] = 135817,
+				[11351] = 135817,
+				[37434] = 135806,
+				[13376] = 135817,
+				[2947] = 135806,
+				[2949] = 135806,
+				[20327] = 135806,
 			},
 		},
 		["Increase Frost Dam"] = {
@@ -65206,14 +65299,15 @@ WeakAurasOptionsSaved = {
 				[32693] = 135743,
 			},
 		},
-		["Improved Mana/Health Totems"] = {
+		["BM Only ON"] = {
 			["spells"] = {
-				[24436] = 136235,
+				[20115] = 135993,
 			},
 		},
-		["Increase Spell Dam 43"] = {
+		["Enhancing Totems"] = {
 			["spells"] = {
-				[17280] = 136235,
+				[16259] = 136023,
+				[16295] = 136023,
 			},
 		},
 		["Poison State"] = {
@@ -65229,14 +65323,14 @@ WeakAurasOptionsSaved = {
 				[38147] = 136163,
 			},
 		},
-		["Increased All Resist 13"] = {
+		["Summon Frail Skeleton"] = {
 			["spells"] = {
-				[18684] = 136235,
+				[16531] = 136187,
 			},
 		},
-		["Summon Wrath Phantom"] = {
+		["Fizzule's Folly"] = {
 			["spells"] = {
-				[16335] = 136122,
+				[10137] = 136235,
 			},
 		},
 		["Quest Suicide"] = {
@@ -65304,14 +65398,14 @@ WeakAurasOptionsSaved = {
 				[32668] = 135826,
 			},
 		},
-		["Increased Nature Resist 11"] = {
+		["Increased Frost Resist 05"] = {
 			["spells"] = {
-				[14632] = 136235,
+				[14546] = 136235,
 			},
 		},
-		["Bombard Slime"] = {
+		["Lightning Hide"] = {
 			["spells"] = {
-				[28280] = 136016,
+				[7273] = 136051,
 			},
 		},
 		["Envenom"] = {
@@ -65345,9 +65439,9 @@ WeakAurasOptionsSaved = {
 				[39364] = 136221,
 			},
 		},
-		["Lunar Fortune"] = {
+		["Cowardly Flight Potion"] = {
 			["spells"] = {
-				[26522] = 134280,
+				[6619] = 136235,
 			},
 		},
 		["Purify Altar"] = {
@@ -65393,14 +65487,17 @@ WeakAurasOptionsSaved = {
 				[14183] = 136183,
 			},
 		},
-		["Nefarian's Barrier"] = {
+		["Noggenfogger Elixir"] = {
 			["spells"] = {
-				[22663] = 136120,
+				[16589] = 136235,
+				[16593] = 135992,
+				[16591] = 136187,
+				[16595] = 136162,
 			},
 		},
-		["Evil Intellect"] = {
+		["Roasted Kodo Meat"] = {
 			["spells"] = {
-				[6558] = 135740,
+				[6414] = 136192,
 			},
 		},
 		["Form of Rokkaram"] = {
@@ -65556,12 +65653,37 @@ WeakAurasOptionsSaved = {
 				[32504] = 135940,
 			},
 		},
-		["Arcanite Dragonling"] = {
+		["Well Fed"] = {
 			["spells"] = {
-				[23074] = 134153,
-				[19830] = 136235,
-				[19804] = 134153,
-				[23052] = 134478,
+				[25941] = 136000,
+				[25694] = 136000,
+				[33254] = 136000,
+				[40323] = 136000,
+				[33256] = 136000,
+				[33257] = 136000,
+				[46899] = 136000,
+				[33259] = 136000,
+				[24799] = 136000,
+				[33261] = 136000,
+				[43771] = 136000,
+				[33263] = 136000,
+				[46687] = 133943,
+				[33265] = 136000,
+				[46682] = 134024,
+				[45619] = 136000,
+				[33268] = 136000,
+				[45245] = 132810,
+				[43764] = 136000,
+				[19705] = 136000,
+				[33272] = 136000,
+				[19706] = 136000,
+				[42293] = 136000,
+				[35272] = 136000,
+				[19710] = 136000,
+				[19708] = 136000,
+				[24870] = 136000,
+				[19709] = 136000,
+				[19711] = 136000,
 			},
 		},
 		["Wizardweave Leggings"] = {
@@ -65579,9 +65701,14 @@ WeakAurasOptionsSaved = {
 				[3954] = 136235,
 			},
 		},
-		["Diving Sweep"] = {
+		["Void Bolt"] = {
 			["spells"] = {
-				[7145] = 132338,
+				[22709] = 136197,
+				[39252] = 136197,
+				[21066] = 136163,
+				[33047] = 136163,
+				[7588] = 136197,
+				[39329] = 136197,
 			},
 		},
 		["Heavy Clefthoof Vest"] = {
@@ -65683,9 +65810,9 @@ WeakAurasOptionsSaved = {
 				[32478] = 136247,
 			},
 		},
-		["Conqueror Shout Bonus"] = {
+		["Punctured Voodoo Doll WAR DND"] = {
 			["spells"] = {
-				[26109] = 136235,
+				[24289] = 136235,
 			},
 		},
 		["Shadow Rain"] = {
@@ -65707,10 +65834,12 @@ WeakAurasOptionsSaved = {
 				[32729] = 136023,
 			},
 		},
-		["Elusiveness"] = {
+		["Virulent Poison"] = {
 			["spells"] = {
-				[13981] = 135994,
-				[14066] = 135994,
+				[16427] = 136016,
+				[12251] = 136016,
+				[39029] = 136016,
+				[22412] = 136016,
 			},
 		},
 		["Thick Draenic Boots"] = {
@@ -65769,9 +65898,16 @@ WeakAurasOptionsSaved = {
 				[32439] = 136235,
 			},
 		},
-		["Enervate"] = {
+		["Summon Voidwalker"] = {
 			["spells"] = {
-				[22661] = 132105,
+				[9221] = 136221,
+				[12746] = 136221,
+				[9222] = 136221,
+				[697] = 136221,
+				[43896] = 136221,
+				[30208] = 136221,
+				[7728] = 136221,
+				[25112] = 136221,
 			},
 		},
 		["Lesser Eternal Essence"] = {
@@ -65883,9 +66019,9 @@ WeakAurasOptionsSaved = {
 				[30868] = 136059,
 			},
 		},
-		["QAEnchant Gloves +20 Frost Damage"] = {
+		["Soulcloth Gloves"] = {
 			["spells"] = {
-				[27108] = 135913,
+				[26779] = 132149,
 			},
 		},
 		["Goblin Land Mine"] = {
@@ -65903,9 +66039,9 @@ WeakAurasOptionsSaved = {
 				[32383] = 136118,
 			},
 		},
-		["Increased Stamina 07"] = {
+		["Mithril Coif"] = {
 			["spells"] = {
-				[7505] = 136235,
+				[9961] = 136192,
 			},
 		},
 		["Black Mageweave Leggings"] = {
@@ -65951,9 +66087,9 @@ WeakAurasOptionsSaved = {
 				[37596] = 134022,
 			},
 		},
-		["Portal: Karazhan"] = {
+		["Increase Healing 280"] = {
 			["spells"] = {
-				[28148] = 135751,
+				[28151] = 136235,
 			},
 		},
 		["Simon Game pre-game Begin, yellow Large"] = {
@@ -65982,9 +66118,9 @@ WeakAurasOptionsSaved = {
 				[14130] = 135914,
 			},
 		},
-		["Ryson's All Seeing Eye"] = {
+		["Azure Silk Vest"] = {
 			["spells"] = {
-				[21546] = 136152,
+				[3859] = 132149,
 			},
 		},
 		["Spike Volley"] = {
@@ -66002,9 +66138,9 @@ WeakAurasOptionsSaved = {
 				[15628] = 136235,
 			},
 		},
-		["Stormpike Reputation +5"] = {
+		["Stasis Effect"] = {
 			["spells"] = {
-				[21187] = 136077,
+				[2140] = 136069,
 			},
 		},
 		["Slush"] = {
@@ -66120,9 +66256,9 @@ WeakAurasOptionsSaved = {
 				[26530] = 132311,
 			},
 		},
-		["Summon Burning Felhound"] = {
+		["Frost Hold"] = {
 			["spells"] = {
-				[16002] = 135805,
+				[10017] = 135848,
 			},
 		},
 		["Mana Spring Totem"] = {
@@ -66197,9 +66333,9 @@ WeakAurasOptionsSaved = {
 				[32298] = 132311,
 			},
 		},
-		["Increased Frost Resist 39"] = {
+		["Apprentice Leatherworking"] = {
 			["spells"] = {
-				[14578] = 136235,
+				[2155] = 133611,
 			},
 		},
 		["Swift Purple Windrider"] = {
@@ -66346,9 +66482,13 @@ WeakAurasOptionsSaved = {
 				[45100] = 136247,
 			},
 		},
-		["Stinging Trauma"] = {
+		["Arcane Concentration"] = {
 			["spells"] = {
-				[23299] = 136067,
+				[12574] = 136170,
+				[11213] = 136170,
+				[12575] = 136170,
+				[12576] = 136170,
+				[12577] = 136170,
 			},
 		},
 		["Portal Effect: Exodar"] = {
@@ -66396,9 +66536,9 @@ WeakAurasOptionsSaved = {
 				[2169] = 136247,
 			},
 		},
-		["Attack Power Ranged 38"] = {
+		["Runecloth Headband"] = {
 			["spells"] = {
-				[21441] = 136235,
+				[18444] = 132149,
 			},
 		},
 		["Lesser Deflection"] = {
@@ -66413,9 +66553,9 @@ WeakAurasOptionsSaved = {
 				[26555] = 136197,
 			},
 		},
-		["Muculent Fever Proc"] = {
+		["Increase Nature Dam 10"] = {
 			["spells"] = {
-				[14133] = 136188,
+				[7696] = 136235,
 			},
 		},
 		["Destroy Totems (PT)"] = {
@@ -66450,9 +66590,10 @@ WeakAurasOptionsSaved = {
 				[25864] = 136235,
 			},
 		},
-		["Earthen Sigil"] = {
+		["Increase Spell Dam 5"] = {
 			["spells"] = {
-				[24884] = 136057,
+				[9395] = 136235,
+				[40689] = 136235,
 			},
 		},
 		["Ebon Gryphon Mount"] = {
@@ -66475,9 +66616,9 @@ WeakAurasOptionsSaved = {
 				[29699] = 136192,
 			},
 		},
-		["Glowy (Yellow)"] = {
+		["Baked Salmon"] = {
 			["spells"] = {
-				[22580] = 135741,
+				[18247] = 136192,
 			},
 		},
 		["Disgruntled"] = {
@@ -66572,9 +66713,10 @@ WeakAurasOptionsSaved = {
 				[38174] = 134952,
 			},
 		},
-		["Digging for Cobalt"] = {
+		["Summon Poison Cloud"] = {
 			["spells"] = {
-				[11757] = 136235,
+				[24319] = 136006,
+				[26590] = 132099,
 			},
 		},
 		["Resist Snare/Root"] = {
@@ -66784,9 +66926,9 @@ WeakAurasOptionsSaved = {
 				[5244] = 136247,
 			},
 		},
-		["Heavy Quiver"] = {
+		["Fishing Skill +50"] = {
 			["spells"] = {
-				[9193] = 136247,
+				[8083] = 136245,
 			},
 		},
 		["Russell's Test Hellfire Effect!!"] = {
@@ -66804,16 +66946,14 @@ WeakAurasOptionsSaved = {
 				[4977] = 136235,
 			},
 		},
-		["Head Butt"] = {
+		["Echoes of Lordaeron UNUSED"] = {
 			["spells"] = {
-				[6730] = 132939,
-				[25788] = 132938,
-				[11650] = 132939,
+				[8878] = 132486,
 			},
 		},
-		["Bone Shards"] = {
+		["Summon Scarlet Snake"] = {
 			["spells"] = {
-				[17014] = 136191,
+				[10720] = 132311,
 			},
 		},
 		["Choose Target (10 yd)"] = {
@@ -66919,9 +67059,9 @@ WeakAurasOptionsSaved = {
 				[32134] = 136018,
 			},
 		},
-		["Item +HP/FR Leg R2"] = {
+		["Satchel of Cenarius"] = {
 			["spells"] = {
-				[15428] = 136235,
+				[27725] = 132149,
 			},
 		},
 		["Block Value 33"] = {
@@ -67013,9 +67153,9 @@ WeakAurasOptionsSaved = {
 				[29086] = 132215,
 			},
 		},
-		["Dispel Poison"] = {
+		["Perceptive"] = {
 			["spells"] = {
-				[21954] = 135949,
+				[7212] = 136087,
 			},
 		},
 		["Simon Game pre-game Begin, yellow aura"] = {
@@ -67087,9 +67227,9 @@ WeakAurasOptionsSaved = {
 				[22865] = 136218,
 			},
 		},
-		["MHTest02 Effect"] = {
+		["Dense Sharpening Stone"] = {
 			["spells"] = {
-				[19109] = 132350,
+				[16641] = 136192,
 			},
 		},
 		["Drill"] = {
@@ -67099,10 +67239,11 @@ WeakAurasOptionsSaved = {
 				[40840] = 132283,
 			},
 		},
-		["Nauseous"] = {
+		["Crush Armor"] = {
 			["spells"] = {
-				[24919] = 136006,
-				[49869] = 132108,
+				[33661] = 132363,
+				[22426] = 132340,
+				[21055] = 132340,
 			},
 		},
 		["Throw Gordawg's Boulder"] = {
@@ -67149,9 +67290,18 @@ WeakAurasOptionsSaved = {
 				[39369] = 136157,
 			},
 		},
-		["Increased All Resist 14"] = {
+		["Arcane Intellect"] = {
 			["spells"] = {
-				[18685] = 136235,
+				[10157] = 135932,
+				[1460] = 135932,
+				[13326] = 135932,
+				[16876] = 135932,
+				[1461] = 135932,
+				[36880] = 135932,
+				[10156] = 135932,
+				[27126] = 135932,
+				[1459] = 135932,
+				[39235] = 135932,
 			},
 		},
 		["Wound Poison II"] = {
@@ -67169,9 +67319,15 @@ WeakAurasOptionsSaved = {
 				[32900] = 136052,
 			},
 		},
-		["Increased Block 7"] = {
+		["Expose Weakness"] = {
 			["spells"] = {
-				[21471] = 136235,
+				[34502] = 132295,
+				[23577] = 132212,
+				[23578] = 132212,
+				[34501] = 132295,
+				[34503] = 132295,
+				[7140] = 132109,
+				[34500] = 132295,
 			},
 		},
 		["Air Bubbles"] = {
@@ -67258,10 +67414,9 @@ WeakAurasOptionsSaved = {
 				[37120] = 133710,
 			},
 		},
-		["Insight"] = {
+		["Increased Critical 100"] = {
 			["spells"] = {
-				[18820] = 135932,
-				[37620] = 135736,
+				[17713] = 136235,
 			},
 		},
 		["\"Plucky\" Resumes Human Form"] = {
@@ -67341,9 +67496,9 @@ WeakAurasOptionsSaved = {
 				[31926] = 136235,
 			},
 		},
-		["Standard Scope"] = {
+		["Nimble Leather Gloves"] = {
 			["spells"] = {
-				[3978] = 136235,
+				[9074] = 136247,
 			},
 		},
 		["Golden Sabercat"] = {
@@ -67427,9 +67582,9 @@ WeakAurasOptionsSaved = {
 				[10840] = 136192,
 			},
 		},
-		["Agro Drones"] = {
+		["Increase Arcane Dam 3"] = {
 			["spells"] = {
-				[25152] = 136235,
+				[13591] = 136235,
 			},
 		},
 		["Create Night Dragon's Breath"] = {
@@ -67437,9 +67592,9 @@ WeakAurasOptionsSaved = {
 				[15344] = 136235,
 			},
 		},
-		["Increased Agility 09"] = {
+		["Runed Copper Belt"] = {
 			["spells"] = {
-				[9099] = 136235,
+				[2666] = 136192,
 			},
 		},
 		["Improved Crusader Strike"] = {
@@ -67455,9 +67610,11 @@ WeakAurasOptionsSaved = {
 				[31930] = 135960,
 			},
 		},
-		["Nimble Leather Gloves"] = {
+		["Greater Blessing of Wisdom"] = {
 			["spells"] = {
-				[9074] = 136247,
+				[27143] = 135912,
+				[25918] = 135912,
+				[25894] = 135912,
 			},
 		},
 		["Heaven's Blessing"] = {
@@ -67471,9 +67628,9 @@ WeakAurasOptionsSaved = {
 				[36179] = 132776,
 			},
 		},
-		["Journeyman Cook"] = {
+		["Buru Egg Trigger Effect"] = {
 			["spells"] = {
-				[3412] = 133971,
+				[26646] = 136235,
 			},
 		},
 		["Hunter Tier 6 Trinket"] = {
@@ -67649,9 +67806,9 @@ WeakAurasOptionsSaved = {
 				[34767] = 132226,
 			},
 		},
-		["Readiness"] = {
+		["Limited Invulnerability Potion"] = {
 			["spells"] = {
-				[23989] = 132206,
+				[3175] = 136235,
 			},
 		},
 		["Increase Shadow Dam 56"] = {
@@ -67763,9 +67920,9 @@ WeakAurasOptionsSaved = {
 				[20359] = 135917,
 			},
 		},
-		["Language Demon Tongue"] = {
+		["Jungle Stew"] = {
 			["spells"] = {
-				[815] = 136235,
+				[15861] = 136192,
 			},
 		},
 		["Druid Forms Trinket"] = {
@@ -67813,9 +67970,9 @@ WeakAurasOptionsSaved = {
 				[27721] = 135458,
 			},
 		},
-		["Frostsaber Gloves"] = {
+		["Increased Shadow Resist 34"] = {
 			["spells"] = {
-				[19087] = 136235,
+				[14703] = 136235,
 			},
 		},
 		["Amnesia"] = {
@@ -67837,9 +67994,9 @@ WeakAurasOptionsSaved = {
 				[23725] = 134124,
 			},
 		},
-		["Increased Nature Resist 27"] = {
+		["Flames of Shahram"] = {
 			["spells"] = {
-				[14649] = 136235,
+				[16596] = 135826,
 			},
 		},
 		["Expert Blacksmith"] = {
@@ -67874,9 +68031,9 @@ WeakAurasOptionsSaved = {
 				[28420] = 136087,
 			},
 		},
-		["Increase Holy Dam 46"] = {
+		["Nether Gem"] = {
 			["spells"] = {
-				[21530] = 136235,
+				[7673] = 134076,
 			},
 		},
 		["Sironas Channeling"] = {
@@ -67884,9 +68041,9 @@ WeakAurasOptionsSaved = {
 				[31612] = 136235,
 			},
 		},
-		["Sandstalker Bracers"] = {
+		["Exceptional Mana"] = {
 			["spells"] = {
-				[24849] = 136235,
+				[27956] = 136235,
 			},
 		},
 		["Cursed Blood"] = {
@@ -67982,10 +68139,9 @@ WeakAurasOptionsSaved = {
 				[22103] = 135913,
 			},
 		},
-		["Healing Prayers"] = {
+		["Deadly Toxin IV"] = {
 			["spells"] = {
-				[14911] = 135943,
-				[15018] = 135943,
+				[11469] = 132290,
 			},
 		},
 		["Increased Fire Resist 34"] = {
@@ -68051,9 +68207,11 @@ WeakAurasOptionsSaved = {
 				[47376] = 132790,
 			},
 		},
-		["Firecrackers"] = {
+		["Curse of Doom"] = {
 			["spells"] = {
-				[25822] = 135805,
+				[43439] = 136122,
+				[30910] = 136122,
+				[603] = 136122,
 			},
 		},
 		["Battlecast Hood"] = {
@@ -68119,10 +68277,9 @@ WeakAurasOptionsSaved = {
 				[39861] = 135849,
 			},
 		},
-		["Knockback 500 Triggers"] = {
+		["Cowardly Flight"] = {
 			["spells"] = {
-				[13541] = 136235,
-				[13566] = 136235,
+				[6614] = 136129,
 			},
 		},
 		["Enchanting"] = {
@@ -68197,9 +68354,9 @@ WeakAurasOptionsSaved = {
 				[31414] = 135270,
 			},
 		},
-		["Transmute: Arcanite"] = {
+		["Beast Slaying"] = {
 			["spells"] = {
-				[17187] = 134459,
+				[20557] = 134357,
 			},
 		},
 		["Jang'thraze"] = {
@@ -68222,9 +68379,9 @@ WeakAurasOptionsSaved = {
 				[34424] = 136123,
 			},
 		},
-		["Uber Heal Over Time"] = {
+		["Summon Gnashjaw"] = {
 			["spells"] = {
-				[1908] = 135923,
+				[19561] = 132328,
 			},
 		},
 		["Ghostly Touch"] = {
@@ -68253,10 +68410,9 @@ WeakAurasOptionsSaved = {
 				[28503] = 134771,
 			},
 		},
-		["Green Mechanostrider"] = {
+		["Bloodscalp Pet"] = {
 			["spells"] = {
-				[15780] = 132247,
-				[17453] = 132247,
+				[3612] = 136095,
 			},
 		},
 		["Mutated Blood"] = {
@@ -68295,9 +68451,21 @@ WeakAurasOptionsSaved = {
 				[28666] = 136235,
 			},
 		},
-		["Increased Agility 33"] = {
+		["Impale"] = {
 			["spells"] = {
-				[14397] = 136235,
+				[26025] = 132155,
+				[24049] = 132324,
+				[16493] = 132312,
+				[39061] = 132324,
+				[32716] = 132324,
+				[16494] = 132312,
+				[26548] = 132324,
+				[34451] = 132324,
+				[15860] = 132324,
+				[34580] = 132155,
+				[16001] = 132324,
+				[29583] = 132324,
+				[28783] = 132090,
 			},
 		},
 		["Summon Lesser Doomguard"] = {
@@ -68457,9 +68625,9 @@ WeakAurasOptionsSaved = {
 				[15296] = 136192,
 			},
 		},
-		["Thorium Boots"] = {
+		["Nefarius Attack 000"] = {
 			["spells"] = {
-				[16652] = 136192,
+				[16070] = 136096,
 			},
 		},
 		["Healing Grace"] = {
@@ -68480,9 +68648,11 @@ WeakAurasOptionsSaved = {
 				[31310] = 136172,
 			},
 		},
-		["Cologne"] = {
+		["Summon Snowman"] = {
 			["spells"] = {
-				[26681] = 135446,
+				[26468] = 132311,
+				[26469] = 132311,
+				[26045] = 132311,
 			},
 		},
 		["Scream"] = {
@@ -68602,10 +68772,9 @@ WeakAurasOptionsSaved = {
 				[7520] = 136235,
 			},
 		},
-		["Improved Bloodrage"] = {
+		["Fill Amethyst Phial"] = {
 			["spells"] = {
-				[12301] = 132277,
-				[12818] = 132277,
+				[22562] = 136235,
 			},
 		},
 		["Journeyman Fishing"] = {
@@ -68628,9 +68797,9 @@ WeakAurasOptionsSaved = {
 				[8170] = 136019,
 			},
 		},
-		["Language Darnassian"] = {
+		["Throw Rock II"] = {
 			["spells"] = {
-				[671] = 136235,
+				[4165] = 132153,
 			},
 		},
 		["Teleport: Darnassus"] = {
@@ -68685,40 +68854,13 @@ WeakAurasOptionsSaved = {
 				[40334] = 136189,
 			},
 		},
-		["Fear"] = {
+		["Meditation"] = {
 			["spells"] = {
-				[31970] = 136147,
-				[30002] = 136183,
-				[38154] = 136183,
-				[29321] = 136183,
-				[12542] = 136183,
-				[12096] = 136183,
-				[39176] = 136183,
-				[27990] = 136183,
-				[26580] = 136183,
-				[39210] = 136183,
-				[6215] = 136183,
-				[26070] = 136183,
-				[39119] = 136183,
-				[46561] = 136183,
-				[38595] = 136183,
-				[26661] = 136183,
-				[22678] = 136183,
-				[38660] = 136183,
-				[30584] = 136183,
-				[33547] = 136183,
-				[34259] = 136183,
-				[31358] = 136183,
-				[6213] = 136183,
-				[32241] = 136183,
-				[33924] = 136183,
-				[30615] = 136183,
-				[27641] = 136183,
-				[41150] = 136183,
-				[39415] = 136183,
-				[29168] = 136183,
-				[5782] = 136183,
-				[30530] = 136183,
+				[14776] = 136090,
+				[14521] = 136090,
+				[14777] = 136090,
+				[38346] = 136090,
+				[21894] = 136090,
 			},
 		},
 		["QAEnchant Bracer +9 Stamina"] = {
@@ -68738,11 +68880,9 @@ WeakAurasOptionsSaved = {
 				[34860] = 135905,
 			},
 		},
-		["Ghost Costume"] = {
+		["Planting Guse's Beacon"] = {
 			["spells"] = {
-				[24737] = 136131,
-				[24735] = 136163,
-				[24736] = 136163,
+				[21355] = 136235,
 			},
 		},
 		["Play Dead"] = {
@@ -68785,9 +68925,9 @@ WeakAurasOptionsSaved = {
 				[31112] = 136235,
 			},
 		},
-		["Aegis of Ragnaros"] = {
+		["Gemmed Copper Gauntlets"] = {
 			["spells"] = {
-				[20620] = 136121,
+				[3325] = 136192,
 			},
 		},
 		["Golden Dragon Ring"] = {
@@ -68852,9 +68992,9 @@ WeakAurasOptionsSaved = {
 				[29484] = 136113,
 			},
 		},
-		["Stormcloth Headband"] = {
+		["Aegis of Preservation"] = {
 			["spells"] = {
-				[12083] = 132149,
+				[23780] = 135880,
 			},
 		},
 		["Attack Power - Feral (+0525)"] = {
@@ -68907,9 +69047,9 @@ WeakAurasOptionsSaved = {
 				[11389] = 134833,
 			},
 		},
-		["Initialize Image"] = {
+		["GM Only OFF"] = {
 			["spells"] = {
-				[3730] = 136235,
+				[1509] = 132349,
 			},
 		},
 		["Increased Shadow Resist 25"] = {
@@ -68994,9 +69134,9 @@ WeakAurasOptionsSaved = {
 				[26791] = 136249,
 			},
 		},
-		["Obsidian Mail Tunic"] = {
+		["Receive Quest Object, Common, Stormwind"] = {
 			["spells"] = {
-				[27590] = 136192,
+				[27525] = 136235,
 			},
 		},
 		["Hellfire Channeling"] = {
@@ -69156,9 +69296,9 @@ WeakAurasOptionsSaved = {
 				[26916] = 136235,
 			},
 		},
-		["Gizlock's Dummy Effect"] = {
+		["Increased Arcane Resist 35"] = {
 			["spells"] = {
-				[21837] = 136235,
+				[14737] = 136235,
 			},
 		},
 		["Big Voodoo Mask"] = {
@@ -69308,11 +69448,9 @@ WeakAurasOptionsSaved = {
 				[30888] = 136131,
 			},
 		},
-		["Slowing Poison"] = {
+		["Formal White Shirt"] = {
 			["spells"] = {
-				[8601] = 136093,
-				[14897] = 136093,
-				[7992] = 136093,
+				[3871] = 132149,
 			},
 		},
 		["Holy Specialization"] = {
@@ -69324,9 +69462,9 @@ WeakAurasOptionsSaved = {
 				[14889] = 135967,
 			},
 		},
-		["Pattern: Onyxia Scale Cloak"] = {
+		["Summon White Plymouth Rock"] = {
 			["spells"] = {
-				[19213] = 136235,
+				[10687] = 132311,
 			},
 		},
 		["Spellsteal"] = {
@@ -69391,9 +69529,14 @@ WeakAurasOptionsSaved = {
 				[27120] = 135913,
 			},
 		},
-		["Attack Power Ranged 86"] = {
+		["Curse of the Elements"] = {
 			["spells"] = {
-				[21460] = 136235,
+				[44332] = 136130,
+				[11721] = 136130,
+				[1490] = 136130,
+				[11722] = 136130,
+				[27228] = 136130,
+				[36831] = 136130,
 			},
 		},
 		["Arcane Buffet"] = {
@@ -69414,9 +69557,9 @@ WeakAurasOptionsSaved = {
 				[17252] = 134153,
 			},
 		},
-		["Increased Strength 31"] = {
+		["Summon Aquementas"] = {
 			["spells"] = {
-				[14503] = 136235,
+				[13978] = 136235,
 			},
 		},
 		["Poisoned Thrust"] = {
@@ -69446,9 +69589,9 @@ WeakAurasOptionsSaved = {
 				[41879] = 136235,
 			},
 		},
-		["Enchanted Thorium"] = {
+		["Cthun Vulnerable"] = {
 			["spells"] = {
-				[17180] = 133229,
+				[26235] = 136235,
 			},
 		},
 		["Increased Pet Armor +10%"] = {
@@ -69489,9 +69632,9 @@ WeakAurasOptionsSaved = {
 				[45697] = 136235,
 			},
 		},
-		["Damage 100 (TEST)"] = {
+		["Poof"] = {
 			["spells"] = {
-				[2653] = 136235,
+				[12244] = 136235,
 			},
 		},
 		["Red Riding Hood"] = {
@@ -69524,15 +69667,21 @@ WeakAurasOptionsSaved = {
 				[14782] = 132156,
 			},
 		},
-		["Summon Explosive Sheep"] = {
+		["Bruise"] = {
 			["spells"] = {
-				[4052] = 132281,
+				[4139] = 136222,
+				[4134] = 136222,
+				[4136] = 136235,
+				[4138] = 136235,
+				[4133] = 132096,
+				[4135] = 136222,
+				[4137] = 136222,
+				[4140] = 136235,
 			},
 		},
-		["Magic Attunement"] = {
+		["Debuff Fire Resist (TEST)"] = {
 			["spells"] = {
-				[11247] = 136006,
-				[12606] = 136006,
+				[739] = 136235,
 			},
 		},
 		["Summon Poley"] = {
@@ -69591,14 +69740,16 @@ WeakAurasOptionsSaved = {
 				[26521] = 136235,
 			},
 		},
-		["Punctured Voodoo Doll PAL DND"] = {
+		["Cauterizing Flames"] = {
 			["spells"] = {
-				[24285] = 136235,
+				[19366] = 135830,
 			},
 		},
-		["Increased Arcane Resist 37"] = {
+		["Nature's Guidance"] = {
 			["spells"] = {
-				[14739] = 136235,
+				[16196] = 135860,
+				[16180] = 135860,
+				[16198] = 135860,
 			},
 		},
 		["Bleed Spice, Create cluster N (DND)"] = {
@@ -69611,9 +69762,9 @@ WeakAurasOptionsSaved = {
 				[30676] = 136235,
 			},
 		},
-		["Emberseer Despawn"] = {
+		["Increased Block 30"] = {
 			["spells"] = {
-				[16078] = 136235,
+				[21490] = 136235,
 			},
 		},
 		["Super Snowball"] = {
@@ -69687,16 +69838,12 @@ WeakAurasOptionsSaved = {
 				[30638] = 136202,
 			},
 		},
-		["Slam"] = {
+		["Crypt Scarabs"] = {
 			["spells"] = {
-				[1464] = 132340,
-				[11430] = 132357,
-				[34620] = 132154,
-				[8820] = 132340,
-				[25242] = 132340,
-				[25241] = 132340,
-				[11604] = 132340,
-				[11605] = 132340,
+				[16418] = 136128,
+				[31591] = 136128,
+				[16594] = 136128,
+				[16795] = 136128,
 			},
 		},
 		["Debris"] = {
@@ -69755,9 +69902,9 @@ WeakAurasOptionsSaved = {
 				[30610] = 132868,
 			},
 		},
-		["Conjure Frostwolf Rank 3 Insignia DND"] = {
+		["Shield of Reflection"] = {
 			["spells"] = {
-				[22110] = 136235,
+				[3651] = 136222,
 			},
 		},
 		["Burning Maul"] = {
@@ -69780,9 +69927,9 @@ WeakAurasOptionsSaved = {
 				[26023] = 135937,
 			},
 		},
-		["Increase Nature Dam 51"] = {
+		["Increase Shadow Dam 29"] = {
 			["spells"] = {
-				[18005] = 136235,
+				[18010] = 136235,
 			},
 		},
 		["Embrace of the Serpent"] = {
@@ -69850,9 +69997,9 @@ WeakAurasOptionsSaved = {
 				[39637] = 136240,
 			},
 		},
-		["Large White Firework Cluster"] = {
+		["Place Loot"] = {
 			["spells"] = {
-				[26518] = 136235,
+				[25720] = 136235,
 			},
 		},
 		["Flame Turret"] = {
@@ -69897,9 +70044,9 @@ WeakAurasOptionsSaved = {
 				[30520] = 136235,
 			},
 		},
-		["Larva Goo"] = {
+		["Smolderweb Protection"] = {
 			["spells"] = {
-				[21069] = 132104,
+				[16530] = 136068,
 			},
 		},
 		["Burning Abyssal"] = {
@@ -69943,11 +70090,9 @@ WeakAurasOptionsSaved = {
 				[1446] = 132112,
 			},
 		},
-		["Increased Fire Resist 10"] = {
+		["Increased Agility 06"] = {
 			["spells"] = {
-				[41669] = 136235,
-				[14590] = 136235,
-				[41871] = 136235,
+				[7492] = 136235,
 			},
 		},
 		["Detect Greater Invisibility"] = {
@@ -69960,9 +70105,9 @@ WeakAurasOptionsSaved = {
 				[36259] = 136241,
 			},
 		},
-		["Increased Fire Resist 17"] = {
+		["Argent Boots"] = {
 			["spells"] = {
-				[14597] = 136235,
+				[23664] = 132149,
 			},
 		},
 		["Medium Armor Kit"] = {
@@ -70043,13 +70188,9 @@ WeakAurasOptionsSaved = {
 				[46337] = 132186,
 			},
 		},
-		["Slice and Dice"] = {
+		["Chromatic Cloak"] = {
 			["spells"] = {
-				[6434] = 132306,
-				[43547] = 132306,
-				[5171] = 132306,
-				[30470] = 132306,
-				[6774] = 132306,
+				[22926] = 136235,
 			},
 		},
 		["Mana Shield"] = {
@@ -70112,9 +70253,9 @@ WeakAurasOptionsSaved = {
 				[552] = 136066,
 			},
 		},
-		["Self Stun - (Visual only)"] = {
+		["Copper Dagger"] = {
 			["spells"] = {
-				[18970] = 136168,
+				[8880] = 136192,
 			},
 		},
 		["Pathfinding"] = {
@@ -70143,9 +70284,9 @@ WeakAurasOptionsSaved = {
 				[13817] = 135913,
 			},
 		},
-		["Axe Toss"] = {
+		["Spawn Bile Sludge"] = {
 			["spells"] = {
-				[6466] = 132395,
+				[27889] = 136118,
 			},
 		},
 		["Create Witherbark Totem Bundle"] = {
@@ -70241,10 +70382,9 @@ WeakAurasOptionsSaved = {
 				[30343] = 136235,
 			},
 		},
-		["Curse of Stalvan"] = {
+		["Eye of Divinity"] = {
 			["spells"] = {
-				[3105] = 136203,
-				[13524] = 136203,
+				[23101] = 135933,
 			},
 		},
 		["Power Amplification Goggles"] = {
@@ -70274,9 +70414,9 @@ WeakAurasOptionsSaved = {
 				[30314] = 136235,
 			},
 		},
-		["Intimidating Roar"] = {
+		["Increased Frost Resist 10"] = {
 			["spells"] = {
-				[16508] = 132154,
+				[14550] = 136235,
 			},
 		},
 		["Stormshroud Pants"] = {
@@ -70326,35 +70466,24 @@ WeakAurasOptionsSaved = {
 				[30303] = 136235,
 			},
 		},
-		["Cower"] = {
+		["Voodoo"] = {
 			["spells"] = {
-				[31709] = 132118,
-				[8998] = 132118,
-				[27048] = 132118,
-				[1742] = 132118,
-				[27346] = 132118,
-				[9000] = 132118,
-				[27004] = 132118,
-				[1747] = 132118,
-				[1748] = 132118,
-				[16698] = 132118,
-				[1750] = 132118,
-				[1751] = 132118,
-				[1749] = 132118,
-				[1753] = 132118,
-				[1754] = 132118,
-				[1755] = 132118,
-				[1756] = 132118,
-				[9892] = 132118,
-				[16697] = 132118,
+				[17009] = 136121,
 			},
 		},
-		["Blood Siphon"] = {
+		["Furious Howl"] = {
 			["spells"] = {
-				[24323] = 136006,
-				[24324] = 136168,
-				[24322] = 136168,
-				[41068] = 136168,
+				[24604] = 132203,
+				[24608] = 132203,
+				[24597] = 132203,
+				[24605] = 132203,
+				[24609] = 132203,
+				[30636] = 132203,
+				[3149] = 136101,
+				[24599] = 132203,
+				[24603] = 132203,
+				[24607] = 132203,
+				[35942] = 132203,
 			},
 		},
 		["Shadow and Flame"] = {
@@ -70381,9 +70510,15 @@ WeakAurasOptionsSaved = {
 				[30284] = 135994,
 			},
 		},
-		["Dungeon Set 2.0 Ghosts"] = {
+		["REUSE"] = {
 			["spells"] = {
-				[27614] = 135994,
+				[37477] = 136235,
+				[1206] = 136235,
+				[40515] = 136235,
+				[37338] = 136235,
+				[39531] = 133565,
+				[39528] = 132089,
+				[5735] = 136235,
 			},
 		},
 		["Execute Prisoner"] = {
@@ -70492,9 +70627,9 @@ WeakAurasOptionsSaved = {
 				[39715] = 134071,
 			},
 		},
-		["Colossal Smash"] = {
+		["Summon Royal Air, Trigger"] = {
 			["spells"] = {
-				[26167] = 136105,
+				[24791] = 136235,
 			},
 		},
 		["Conflagrate"] = {
@@ -70605,17 +70740,9 @@ WeakAurasOptionsSaved = {
 				[5761] = 136066,
 			},
 		},
-		["Mind Control"] = {
+		["Summon Tamed Crab"] = {
 			["spells"] = {
-				[15690] = 136175,
-				[45112] = 136175,
-				[10911] = 136206,
-				[605] = 136206,
-				[11446] = 136206,
-				[10912] = 136206,
-				[43550] = 136206,
-				[36798] = 136129,
-				[36797] = 136129,
+				[7907] = 133708,
 			},
 		},
 		["Smoldering Breath"] = {
@@ -70665,9 +70792,10 @@ WeakAurasOptionsSaved = {
 				[32457] = 136247,
 			},
 		},
-		["Fire Nova Visual"] = {
+		["Magic Attunement"] = {
 			["spells"] = {
-				[19823] = 135824,
+				[11247] = 136006,
+				[12606] = 136006,
 			},
 		},
 		["Yenniku's Release"] = {
@@ -70888,9 +71016,9 @@ WeakAurasOptionsSaved = {
 				[12130] = 136021,
 			},
 		},
-		["Megavolt"] = {
+		["Arathi Basin Field Ration"] = {
 			["spells"] = {
-				[11082] = 136015,
+				[24409] = 134062,
 			},
 		},
 		["Healing Aura (TEST)"] = {
@@ -71050,10 +71178,9 @@ WeakAurasOptionsSaved = {
 				[2153] = 136247,
 			},
 		},
-		["Disease Burst"] = {
+		["Increase Nature Dam 11"] = {
 			["spells"] = {
-				[17689] = 136006,
-				[17690] = 136006,
+				[9409] = 136235,
 			},
 		},
 		["Dispel Blizzard"] = {
@@ -71165,10 +71292,9 @@ WeakAurasOptionsSaved = {
 				[14964] = 136235,
 			},
 		},
-		["Shadow Resilience"] = {
+		["Tune Up"] = {
 			["spells"] = {
-				[14910] = 136162,
-				[33371] = 136162,
+				[10348] = 132996,
 			},
 		},
 		["Word of Mass Recall (OLD)"] = {
@@ -71197,9 +71323,9 @@ WeakAurasOptionsSaved = {
 				[38539] = 136015,
 			},
 		},
-		["Throw Dark Iron Ale"] = {
+		["Summon Tamed Boar"] = {
 			["spells"] = {
-				[14814] = 132791,
+				[7905] = 135997,
 			},
 		},
 		["[PH] Teleport to Grom'Gol"] = {
@@ -71235,9 +71361,9 @@ WeakAurasOptionsSaved = {
 				[29820] = 135871,
 			},
 		},
-		["Increased Spirit 21"] = {
+		["Create Bone Dust"] = {
 			["spells"] = {
-				[14440] = 136235,
+				[17270] = 136235,
 			},
 		},
 		["Summon Oozeling"] = {
@@ -71364,13 +71490,9 @@ WeakAurasOptionsSaved = {
 				[29700] = 136192,
 			},
 		},
-		["Iron Will"] = {
+		["Skullsplitter Pet"] = {
 			["spells"] = {
-				[12959] = 135995,
-				[12960] = 135995,
-				[12961] = 135995,
-				[12300] = 135995,
-				[12962] = 135995,
+				[3621] = 136095,
 			},
 		},
 		["Regal Nightseye"] = {
@@ -71393,9 +71515,9 @@ WeakAurasOptionsSaved = {
 				[7082] = 135826,
 			},
 		},
-		["Buttermilk Delight"] = {
+		["Create Ectoplasmic Distiller"] = {
 			["spells"] = {
-				[27720] = 135457,
+				[27752] = 136235,
 			},
 		},
 		["Hellfire - The Exorcism, Jules goes prone"] = {
@@ -71464,11 +71586,9 @@ WeakAurasOptionsSaved = {
 				[4199] = 136112,
 			},
 		},
-		["Improved Searing Pain"] = {
+		["Increased Shadow Resist 43"] = {
 			["spells"] = {
-				[17927] = 135827,
-				[17929] = 135827,
-				[17930] = 135827,
+				[14992] = 136235,
 			},
 		},
 		["Infernal Invasion - Defender Hero Speech Director"] = {
@@ -71476,21 +71596,23 @@ WeakAurasOptionsSaved = {
 				[33809] = 136235,
 			},
 		},
-		["Increased Frost Resist 14"] = {
+		["Summon Royal"] = {
 			["spells"] = {
-				[14553] = 136235,
+				[24788] = 136235,
+				[24786] = 136235,
+				[24790] = 136235,
+				[24789] = 136235,
 			},
 		},
-		["Hawk Eye"] = {
+		["Rising Spirit"] = {
 			["spells"] = {
-				[19499] = 132327,
-				[19500] = 132327,
-				[19498] = 132327,
+				[10767] = 136053,
 			},
 		},
-		["Rough Bronze Leggings"] = {
+		["Stun Forever"] = {
 			["spells"] = {
-				[2668] = 136192,
+				[23775] = 132310,
+				[36877] = 135963,
 			},
 		},
 		["Beast Slaying 27"] = {
@@ -71498,14 +71620,14 @@ WeakAurasOptionsSaved = {
 				[14198] = 136235,
 			},
 		},
-		["Summon Rocky Base"] = {
+		["Sandstalker Bracers"] = {
 			["spells"] = {
-				[26287] = 136235,
+				[24849] = 136235,
 			},
 		},
-		["Uther's Night Elf Tribute"] = {
+		["Increased Intellect 03"] = {
 			["spells"] = {
-				[24108] = 136235,
+				[7470] = 136235,
 			},
 		},
 		["Flaming Shell"] = {
@@ -71649,9 +71771,9 @@ WeakAurasOptionsSaved = {
 				[21900] = 136235,
 			},
 		},
-		["Increase Healing 51"] = {
+		["Thick Armor Kit"] = {
 			["spells"] = {
-				[18035] = 136235,
+				[10487] = 136247,
 			},
 		},
 		["Adamantite Maul"] = {
@@ -71678,9 +71800,9 @@ WeakAurasOptionsSaved = {
 				[10800] = 132253,
 			},
 		},
-		["Red Firework Cluster"] = {
+		["Create Signet of Beckoning: Water"] = {
 			["spells"] = {
-				[26327] = 136235,
+				[24892] = 136235,
 			},
 		},
 		["Turtle Scale Leggings"] = {
@@ -71713,9 +71835,9 @@ WeakAurasOptionsSaved = {
 				[39926] = 136030,
 			},
 		},
-		["Washte Pawne's Resolve"] = {
+		["Six Demon Bag"] = {
 			["spells"] = {
-				[5324] = 136075,
+				[14537] = 136129,
 			},
 		},
 		["Fel Iron Plate Belt"] = {
@@ -71723,9 +71845,10 @@ WeakAurasOptionsSaved = {
 				[29547] = 136192,
 			},
 		},
-		["Call Bleak Worg"] = {
+		["Leech Pulse"] = {
 			["spells"] = {
-				[7487] = 136130,
+				[8433] = 135966,
+				[8434] = 135966,
 			},
 		},
 		["Fel Iron Plate Gloves"] = {
@@ -71743,11 +71866,9 @@ WeakAurasOptionsSaved = {
 				[15824] = 136235,
 			},
 		},
-		["Improved Cone of Cold"] = {
+		["Transform C'Thun -> Phase 2"] = {
 			["spells"] = {
-				[12489] = 135852,
-				[12490] = 135852,
-				[11190] = 135852,
+				[26232] = 136235,
 			},
 		},
 		["Primal Instinct"] = {
@@ -71987,14 +72108,18 @@ WeakAurasOptionsSaved = {
 				[29435] = 136235,
 			},
 		},
-		["Rat Nova"] = {
+		["Increase Shadow Dam 24"] = {
 			["spells"] = {
-				[10018] = 133946,
+				[14794] = 136235,
 			},
 		},
-		["Flarecore Gloves"] = {
+		["Pet Hardiness"] = {
 			["spells"] = {
-				[20849] = 132149,
+				[6281] = 132091,
+				[6283] = 132091,
+				[6280] = 132091,
+				[6282] = 132091,
+				[6286] = 132091,
 			},
 		},
 		["Kel'Thuzad Channel Effect"] = {
@@ -72027,14 +72152,26 @@ WeakAurasOptionsSaved = {
 				[29384] = 135432,
 			},
 		},
-		["Despawn Spectral Combatants"] = {
+		["Strength"] = {
 			["spells"] = {
-				[17678] = 136235,
+				[33082] = 136101,
+				[8118] = 136101,
+				[8119] = 136101,
+				[8120] = 136101,
+				[12179] = 136101,
+				[27898] = 136235,
+				[3163] = 134838,
+				[31817] = 136101,
+				[3164] = 134838,
+				[27973] = 136235,
+				[23793] = 136235,
+				[13372] = 136235,
+				[11331] = 134838,
 			},
 		},
-		["Gemmed Copper Gauntlets"] = {
+		["Awaken Earthen Dwarf"] = {
 			["spells"] = {
-				[3325] = 136192,
+				[10259] = 136025,
 			},
 		},
 		["Smelt Felsteel"] = {
@@ -72057,9 +72194,9 @@ WeakAurasOptionsSaved = {
 				[41625] = 135952,
 			},
 		},
-		["Increased Arcane Resist 40"] = {
+		["Releasing Corrupt Ooze"] = {
 			["spells"] = {
-				[14742] = 136235,
+				[16031] = 134799,
 			},
 		},
 		["Enchant Weapon - Major Intellect"] = {
@@ -72068,22 +72205,15 @@ WeakAurasOptionsSaved = {
 				[46532] = 135913,
 			},
 		},
-		["Improved Concussive Shot"] = {
+		["Test Strike W50"] = {
 			["spells"] = {
-				[19410] = 135860,
-				[19414] = 135860,
-				[19407] = 135860,
-				[19415] = 135860,
-				[19412] = 135860,
-				[22915] = 135860,
-				[19413] = 135860,
-				[28445] = 135860,
-				[24465] = 136235,
+				[23848] = 132355,
 			},
 		},
-		["Robe of the Void"] = {
+		["Sense Undead"] = {
 			["spells"] = {
-				[18458] = 132149,
+				[5502] = 135974,
+				[5503] = 135974,
 			},
 		},
 		["Rough Bronze Boots"] = {
@@ -72159,9 +72289,9 @@ WeakAurasOptionsSaved = {
 				[17610] = 135765,
 			},
 		},
-		["Master Enchanting"] = {
+		["Deviate Scale Cloak"] = {
 			["spells"] = {
-				[28030] = 136244,
+				[7953] = 136247,
 			},
 		},
 		["Dark Shriek"] = {
@@ -72218,10 +72348,9 @@ WeakAurasOptionsSaved = {
 				[14586] = 136235,
 			},
 		},
-		["Increased Armor 20"] = {
+		["Increase Holy Dam 19"] = {
 			["spells"] = {
-				[9761] = 136235,
-				[41863] = 136235,
+				[21511] = 136235,
 			},
 		},
 		["Lava"] = {
@@ -72229,9 +72358,9 @@ WeakAurasOptionsSaved = {
 				[16455] = 135805,
 			},
 		},
-		["Releasing Corrupt Ooze"] = {
+		["Imperial Plate Belt"] = {
 			["spells"] = {
-				[16031] = 134799,
+				[16647] = 136192,
 			},
 		},
 		["Crystalized Mana Residue"] = {
@@ -72260,11 +72389,9 @@ WeakAurasOptionsSaved = {
 				[29233] = 132133,
 			},
 		},
-		["Summon Snowman"] = {
+		["Green Holiday Shirt"] = {
 			["spells"] = {
-				[26468] = 132311,
-				[26469] = 132311,
-				[26045] = 132311,
+				[21945] = 132149,
 			},
 		},
 		["Unlearn Shadoweave Tailoring"] = {
@@ -72363,10 +72490,10 @@ WeakAurasOptionsSaved = {
 				[38240] = 135842,
 			},
 		},
-		["Summon Theradrim Shardling"] = {
+		["Restorative Potion"] = {
 			["spells"] = {
-				[21057] = 135849,
-				[21809] = 135849,
+				[11452] = 136235,
+				[11522] = 136021,
 			},
 		},
 		["Increased Critical 28 Spells"] = {
@@ -72374,9 +72501,9 @@ WeakAurasOptionsSaved = {
 				[29159] = 136235,
 			},
 		},
-		["Dummy Trigger"] = {
+		["Increased Agility 24"] = {
 			["spells"] = {
-				[13567] = 136235,
+				[14388] = 136235,
 			},
 		},
 		["Misdirection"] = {
@@ -72402,11 +72529,9 @@ WeakAurasOptionsSaved = {
 				[7695] = 136235,
 			},
 		},
-		["Increased Armor 10"] = {
+		["Increased Block 5"] = {
 			["spells"] = {
-				[41686] = 136235,
-				[9760] = 136235,
-				[41731] = 136235,
+				[13674] = 136235,
 			},
 		},
 		["Bestial Discipline"] = {
@@ -72441,9 +72566,9 @@ WeakAurasOptionsSaved = {
 				[9111] = 136235,
 			},
 		},
-		["QAEnchant Gloves +2% Threat"] = {
+		["Detect Amore"] = {
 			["spells"] = {
-				[27113] = 135913,
+				[26802] = 133884,
 			},
 		},
 		["Midsummer Bonfire Bunnies 2"] = {
@@ -72472,9 +72597,9 @@ WeakAurasOptionsSaved = {
 				[29102] = 136235,
 			},
 		},
-		["Summon Deviate Shambler"] = {
+		["Tough Scorpid Shoulders"] = {
 			["spells"] = {
-				[7970] = 136121,
+				[10564] = 136247,
 			},
 		},
 		["Create Flame of Stormwind"] = {
@@ -72487,9 +72612,9 @@ WeakAurasOptionsSaved = {
 				[22594] = 135849,
 			},
 		},
-		["Runed Copper Belt"] = {
+		["Activate Bomb 03B"] = {
 			["spells"] = {
-				[2666] = 136192,
+				[11798] = 136235,
 			},
 		},
 		["Lotwil's Summon Complete"] = {
@@ -72497,16 +72622,12 @@ WeakAurasOptionsSaved = {
 				[5002] = 135824,
 			},
 		},
-		["Intercept Stun"] = {
+		["Rushing Charge"] = {
 			["spells"] = {
-				[20615] = 135860,
-				[30197] = 135860,
-				[20253] = 135860,
-				[25273] = 135860,
-				[25274] = 135860,
-				[30195] = 135860,
-				[20614] = 135860,
-				[30153] = 135860,
+				[6268] = 132368,
+				[35382] = 132337,
+				[8260] = 132368,
+				[32021] = 132337,
 			},
 		},
 		["Heal Visual (DND)"] = {
@@ -72642,9 +72763,9 @@ WeakAurasOptionsSaved = {
 				[15710] = 136192,
 			},
 		},
-		["Cure Ailments"] = {
+		["QAE 285 to spell damage"] = {
 			["spells"] = {
-				[3592] = 136235,
+				[22093] = 135913,
 			},
 		},
 		["Summon Snowy Owl"] = {
@@ -72672,9 +72793,9 @@ WeakAurasOptionsSaved = {
 				[14971] = 136235,
 			},
 		},
-		["Increased Parry 40"] = {
+		["Increase Nature Dam 6"] = {
 			["spells"] = {
-				[13667] = 136235,
+				[7693] = 136235,
 			},
 		},
 		["Blowing Up Legion Antenna"] = {
@@ -72688,9 +72809,9 @@ WeakAurasOptionsSaved = {
 				[23025] = 135736,
 			},
 		},
-		["Stormcaller Spelldamage Bonus"] = {
+		["Arathi Basin Enriched Ration"] = {
 			["spells"] = {
-				[26119] = 136235,
+				[24411] = 134062,
 			},
 		},
 		["Summon Spirit of Blaumeux"] = {
@@ -72698,13 +72819,9 @@ WeakAurasOptionsSaved = {
 				[28931] = 136235,
 			},
 		},
-		["Tidal Focus"] = {
+		["Felstriker"] = {
 			["spells"] = {
-				[16214] = 135859,
-				[16215] = 135859,
-				[16216] = 135859,
-				[16217] = 135859,
-				[16179] = 135859,
+				[16551] = 132090,
 			},
 		},
 		["Stormcaller Chain Heal Bonus"] = {
@@ -72717,9 +72834,9 @@ WeakAurasOptionsSaved = {
 				[17907] = 136235,
 			},
 		},
-		["Shredder Armor Melt"] = {
+		["Arcanite Sword Pendant"] = {
 			["spells"] = {
-				[21559] = 135818,
+				[26918] = 136235,
 			},
 		},
 		["Royal Shadow Draenite"] = {
@@ -72737,22 +72854,15 @@ WeakAurasOptionsSaved = {
 				[35799] = 135913,
 			},
 		},
-		["Frostbrand Weapon"] = {
+		["Corrupted Stamina"] = {
 			["spells"] = {
-				[8038] = 135847,
-				[8033] = 135847,
-				[16355] = 135847,
-				[16356] = 135847,
-				[10456] = 135847,
-				[25500] = 135847,
+				[6819] = 135914,
+				[23244] = 135914,
 			},
 		},
-		["Geyser"] = {
+		["Fengus' Ferocity"] = {
 			["spells"] = {
-				[37427] = 135861,
-				[40089] = 135861,
-				[10987] = 135836,
-				[37478] = 135844,
+				[22817] = 136109,
 			},
 		},
 		["Maximize Pet's Loyalty and Happiness"] = {
@@ -72776,9 +72886,9 @@ WeakAurasOptionsSaved = {
 				[31453] = 132149,
 			},
 		},
-		["Perm. Illusion Succubus"] = {
+		["Enigma Blizzard Bonus"] = {
 			["spells"] = {
-				[8315] = 132311,
+				[26127] = 136235,
 			},
 		},
 		["L70ETC Earthquake"] = {
@@ -72829,9 +72939,9 @@ WeakAurasOptionsSaved = {
 				[17566] = 134459,
 			},
 		},
-		["Arcanum of Focus"] = {
+		["Summon Deviate Shambler"] = {
 			["spells"] = {
-				[22844] = 136235,
+				[7970] = 136121,
 			},
 		},
 		["Nether Drake"] = {
@@ -73060,9 +73170,9 @@ WeakAurasOptionsSaved = {
 				[14625] = 136235,
 			},
 		},
-		["Bleakwood Hew"] = {
+		["Summon Crawler"] = {
 			["spells"] = {
-				[16965] = 136192,
+				[8656] = 133708,
 			},
 		},
 		["Noxious Poison"] = {
@@ -73080,9 +73190,9 @@ WeakAurasOptionsSaved = {
 				[23965] = 135917,
 			},
 		},
-		["Summon Worg Pup"] = {
+		["Steel Breastplate"] = {
 			["spells"] = {
-				[15999] = 132311,
+				[9916] = 136192,
 			},
 		},
 		["Truefaith Vestments"] = {
@@ -73176,9 +73286,9 @@ WeakAurasOptionsSaved = {
 				[21078] = 136235,
 			},
 		},
-		["Rotate 360"] = {
+		["Black Rot"] = {
 			["spells"] = {
-				[26009] = 136235,
+				[16448] = 135935,
 			},
 		},
 		["Enchant Cloak - Greater Arcane Resistance"] = {
@@ -73310,9 +73420,12 @@ WeakAurasOptionsSaved = {
 				[46284] = 136202,
 			},
 		},
-		["Increased Strength 04"] = {
+		["Call Pet"] = {
 			["spells"] = {
-				[7506] = 136235,
+				[23498] = 132161,
+				[883] = 132161,
+				[45322] = 132161,
+				[27639] = 136235,
 			},
 		},
 		["Dragonmaw Flight Instructor"] = {
@@ -73430,9 +73543,9 @@ WeakAurasOptionsSaved = {
 				[28579] = 136235,
 			},
 		},
-		["Combo PROC Test"] = {
+		["Increased Spirit 28"] = {
 			["spells"] = {
-				[26376] = 132278,
+				[14450] = 136235,
 			},
 		},
 		["Encage Emberseer"] = {
@@ -73577,9 +73690,9 @@ WeakAurasOptionsSaved = {
 				[12618] = 136235,
 			},
 		},
-		["Left Piece of Lord Valthalak's Amulet"] = {
+		["Ruby Pendant of Fire"] = {
 			["spells"] = {
-				[27146] = 136235,
+				[26883] = 136235,
 			},
 		},
 		["QA Damage Coefficient 1"] = {
@@ -73765,9 +73878,9 @@ WeakAurasOptionsSaved = {
 				[28442] = 135331,
 			},
 		},
-		["Spiral Wave of Death"] = {
+		["Increase Holy Dam 49"] = {
 			["spells"] = {
-				[19501] = 136235,
+				[21532] = 136235,
 			},
 		},
 		["Throw Syndicate Bomb"] = {
@@ -73917,9 +74030,10 @@ WeakAurasOptionsSaved = {
 				[9078] = 132662,
 			},
 		},
-		["Holy Sunder"] = {
+		["Gas"] = {
 			["spells"] = {
-				[9176] = 136139,
+				[28369] = 136006,
+				[30075] = 136006,
 			},
 		},
 		["Aerial Assault Flight (Heavy Bomb)"] = {
@@ -73932,13 +74046,9 @@ WeakAurasOptionsSaved = {
 				[45207] = 136235,
 			},
 		},
-		["Starlight Wrath"] = {
+		["Communique, Proxy-to-Relay"] = {
 			["spells"] = {
-				[16814] = 136006,
-				[16815] = 136006,
-				[16816] = 136006,
-				[16817] = 136006,
-				[16818] = 136006,
+				[28366] = 136235,
 			},
 		},
 		["Energizing Spores"] = {
@@ -73970,9 +74080,9 @@ WeakAurasOptionsSaved = {
 				[23662] = 132149,
 			},
 		},
-		["Shard of Afrasa"] = {
+		["Lesser Mana Potion"] = {
 			["spells"] = {
-				[12732] = 136077,
+				[3173] = 136235,
 			},
 		},
 		["Weapon Chain"] = {
@@ -73993,9 +74103,9 @@ WeakAurasOptionsSaved = {
 				[26785] = 136093,
 			},
 		},
-		["Communique, Relay-to-Proxy"] = {
+		["Summon Burning Imp"] = {
 			["spells"] = {
-				[28365] = 136235,
+				[15126] = 135805,
 			},
 		},
 		["Vicious Strike"] = {
@@ -74018,14 +74128,14 @@ WeakAurasOptionsSaved = {
 				[40287] = 136235,
 			},
 		},
-		["Increase Spell Dam 49"] = {
+		["Exorcise Atiesh"] = {
 			["spells"] = {
-				[28360] = 136235,
+				[28354] = 136235,
 			},
 		},
-		["Reaper of Souls DND"] = {
+		["Feed Pet Effect"] = {
 			["spells"] = {
-				[28355] = 136235,
+				[1539] = 132165,
 			},
 		},
 		["Thorn Volley"] = {
@@ -74059,9 +74169,9 @@ WeakAurasOptionsSaved = {
 				[1329] = 132304,
 			},
 		},
-		["Feed Pet Effect"] = {
+		["Increased Block 12"] = {
 			["spells"] = {
-				[1539] = 132165,
+				[21475] = 136235,
 			},
 		},
 		["Create Orgrimmar Package of Cards"] = {
@@ -74069,15 +74179,9 @@ WeakAurasOptionsSaved = {
 				[27711] = 136235,
 			},
 		},
-		["Teleport to Razelikh"] = {
+		["Snake Burst Firework"] = {
 			["spells"] = {
-				[12885] = 136235,
-				[13142] = 136235,
-			},
-		},
-		["Swift Stormsaber"] = {
-			["spells"] = {
-				[23338] = 132225,
+				[23507] = 136235,
 			},
 		},
 		["Blow Zul'Farrak Door"] = {
@@ -74089,6 +74193,11 @@ WeakAurasOptionsSaved = {
 			["spells"] = {
 				[28342] = 136172,
 				[28352] = 136172,
+			},
+		},
+		["Teleport to Darnassus - Event"] = {
+			["spells"] = {
+				[9268] = 136235,
 			},
 		},
 		["Destroy Rocket Boots"] = {
@@ -74127,32 +74236,20 @@ WeakAurasOptionsSaved = {
 				[35506] = 136235,
 			},
 		},
-		["Magnetic Pull"] = {
+		["Improved Frost Nova"] = {
 			["spells"] = {
-				[33689] = 136039,
-				[28339] = 136039,
-				[31703] = 136235,
-				[41959] = 133870,
-				[28337] = 136039,
-				[29661] = 136039,
-				[30010] = 136039,
-				[32039] = 135990,
-				[28338] = 136039,
-				[40581] = 136235,
-				[31705] = 133870,
+				[11165] = 135840,
+				[12475] = 135840,
 			},
 		},
-		["Spore Burst"] = {
+		["Summon Worg Pup"] = {
 			["spells"] = {
-				[38471] = 136006,
-				[38924] = 136006,
-				[5100] = 136142,
-				[38472] = 136006,
+				[15999] = 132311,
 			},
 		},
-		["Fix Ritual Node"] = {
+		["Mithril Scale Gloves"] = {
 			["spells"] = {
-				[23061] = 136235,
+				[9942] = 136192,
 			},
 		},
 		["Increase Healing 172"] = {
@@ -74186,9 +74283,10 @@ WeakAurasOptionsSaved = {
 				[3934] = 136235,
 			},
 		},
-		["Flameshocker - Immolate Visual"] = {
+		["Steam Tonk Controller"] = {
 			["spells"] = {
-				[28330] = 135817,
+				[28327] = 136235,
+				[45440] = 133015,
 			},
 		},
 		["Shoot"] = {
@@ -74257,20 +74355,19 @@ WeakAurasOptionsSaved = {
 				[20463] = 132222,
 			},
 		},
-		["Steam Tonk Controller"] = {
-			["spells"] = {
-				[28327] = 136235,
-				[45440] = 133015,
-			},
-		},
 		["Fury of the Frostwolf"] = {
 			["spells"] = {
 				[22751] = 136087,
 			},
 		},
-		["Summon Xorothian Dreadsteed"] = {
+		["Forcefield Collapse"] = {
 			["spells"] = {
-				[23152] = 136235,
+				[13235] = 136135,
+			},
+		},
+		["Increase Holy Dam 39"] = {
+			["spells"] = {
+				[21525] = 136235,
 			},
 		},
 		["Grab Weapon"] = {
@@ -74302,87 +74399,9 @@ WeakAurasOptionsSaved = {
 				[38373] = 132166,
 			},
 		},
-		["Potent Alcohol"] = {
+		["Increase Frost Dam 27"] = {
 			["spells"] = {
-				[11629] = 132796,
-			},
-		},
-		["Increased Mana Regen"] = {
-			["spells"] = {
-				[36411] = 136235,
-				[33780] = 136235,
-				[20959] = 136235,
-				[35828] = 136235,
-				[35836] = 136235,
-				[21360] = 136235,
-				[21362] = 136235,
-				[21618] = 136235,
-				[21620] = 136235,
-				[21622] = 136235,
-				[21624] = 136235,
-				[21626] = 136235,
-				[21628] = 136235,
-				[21630] = 136235,
-				[21632] = 136235,
-				[21634] = 136235,
-				[23795] = 136235,
-				[21638] = 136235,
-				[21640] = 136235,
-				[21642] = 136235,
-				[21644] = 136235,
-				[41770] = 136235,
-				[32705] = 136235,
-				[35829] = 136235,
-				[41675] = 136235,
-				[42060] = 136235,
-				[18378] = 136235,
-				[25115] = 136235,
-				[23212] = 136235,
-				[26647] = 136235,
-				[40231] = 136235,
-				[41775] = 136235,
-				[39882] = 136235,
-				[21359] = 136235,
-				[21361] = 136235,
-				[21363] = 136235,
-				[21619] = 136235,
-				[21621] = 136235,
-				[21623] = 136235,
-				[21625] = 136235,
-				[21627] = 136235,
-				[21629] = 136235,
-				[21631] = 136235,
-				[40343] = 136235,
-				[21635] = 136235,
-				[21637] = 136235,
-				[21639] = 136235,
-				[21641] = 136235,
-				[21643] = 136235,
-				[41776] = 136235,
-				[39879] = 136235,
-				[45216] = 136235,
-				[42115] = 136235,
-				[42100] = 136235,
-				[41659] = 136235,
-				[41562] = 136235,
-				[21633] = 136235,
-				[21636] = 136235,
-				[42082] = 136235,
-				[39546] = 136235,
-				[18379] = 136235,
-				[28014] = 136235,
-				[25114] = 136235,
-				[41591] = 136235,
-				[27912] = 136235,
-				[39547] = 136235,
-				[21364] = 136235,
-				[21365] = 136235,
-				[21366] = 136235,
-			},
-		},
-		["Boomerang"] = {
-			["spells"] = {
-				[15713] = 135646,
+				[17892] = 136235,
 			},
 		},
 		["Create Mark of the Dawn"] = {
@@ -74390,15 +74409,25 @@ WeakAurasOptionsSaved = {
 				[28320] = 134500,
 			},
 		},
+		["Boomerang"] = {
+			["spells"] = {
+				[15713] = 135646,
+			},
+		},
+		["Flameshocker's Touch"] = {
+			["spells"] = {
+				[28314] = 135990,
+				[28329] = 136105,
+			},
+		},
 		["Pushback Resistance"] = {
 			["spells"] = {
 				[37438] = 136235,
 			},
 		},
-		["Slime Bolt"] = {
+		["Forsaken Skill: 2H Axes"] = {
 			["spells"] = {
-				[28311] = 136016,
-				[32309] = 136016,
+				[7045] = 132408,
 			},
 		},
 		["Enchantment of Spell Haste"] = {
@@ -74438,14 +74467,14 @@ WeakAurasOptionsSaved = {
 				[17456] = 132247,
 			},
 		},
-		["Increased Frost Resist 46"] = {
+		["Torch Combine"] = {
 			["spells"] = {
-				[14982] = 136235,
+				[12511] = 136235,
 			},
 		},
-		["Ball Lightning"] = {
+		["Omarion's Secrets"] = {
 			["spells"] = {
-				[28299] = 135990,
+				[28288] = 136235,
 			},
 		},
 		["Golden Mantle of the Dawn"] = {
@@ -74465,14 +74494,15 @@ WeakAurasOptionsSaved = {
 				[46020] = 136129,
 			},
 		},
-		["Inlaid Malachite Ring"] = {
+		["Deep Wound"] = {
 			["spells"] = {
-				[25283] = 136235,
+				[12721] = 132090,
+				[43104] = 132090,
 			},
 		},
-		["Polymorph: Pig"] = {
+		["Beast Slaying 42"] = {
 			["spells"] = {
-				[28285] = 135997,
+				[15688] = 136235,
 			},
 		},
 		["Find Opening Impact Visual"] = {
@@ -74480,14 +74510,14 @@ WeakAurasOptionsSaved = {
 				[46309] = 136235,
 			},
 		},
-		["Ashbringer"] = {
-			["spells"] = {
-				[28282] = 135331,
-			},
-		},
 		["Communique, Camp-to-Relay"] = {
 			["spells"] = {
 				[28281] = 136235,
+			},
+		},
+		["Bombard Slime"] = {
+			["spells"] = {
+				[28280] = 136016,
 			},
 		},
 		["Increased Nature Resist 19"] = {
@@ -74505,11 +74535,6 @@ WeakAurasOptionsSaved = {
 				[24197] = 136235,
 			},
 		},
-		["Lightning Hide"] = {
-			["spells"] = {
-				[7273] = 136051,
-			},
-		},
 		["Open Circle"] = {
 			["spells"] = {
 				[28278] = 136235,
@@ -74521,29 +74546,24 @@ WeakAurasOptionsSaved = {
 				[23067] = 136235,
 			},
 		},
-		["Create Stormwind Sack of Homemade Bread"] = {
-			["spells"] = {
-				[27700] = 136235,
-			},
-		},
-		["Attack Power Ranged 72"] = {
-			["spells"] = {
-				[21454] = 136235,
-			},
-		},
 		["Bloodthistle"] = {
 			["spells"] = {
 				[28273] = 134191,
 			},
 		},
-		["Create Signet of Beckoning: Air"] = {
+		["Create Stormwind Sack of Homemade Bread"] = {
 			["spells"] = {
-				[24890] = 136235,
+				[27700] = 136235,
 			},
 		},
-		["Increase Spell Dam 292"] = {
+		["Stormpike Reputation +5"] = {
 			["spells"] = {
-				[44974] = 136235,
+				[21187] = 136077,
+			},
+		},
+		["Crunchy Spider Surprise"] = {
+			["spells"] = {
+				[28267] = 136192,
 			},
 		},
 		["Jin'Zil's Curse"] = {
@@ -74551,9 +74571,23 @@ WeakAurasOptionsSaved = {
 				[6584] = 136066,
 			},
 		},
-		["Pick Lock"] = {
+		["Increase Spell Dam 292"] = {
 			["spells"] = {
-				[1804] = 136058,
+				[44974] = 136235,
+			},
+		},
+		["Robe of Winter Night"] = {
+			["spells"] = {
+				[18436] = 132149,
+			},
+		},
+		["Lightning Strike"] = {
+			["spells"] = {
+				[37841] = 136048,
+				[16614] = 135990,
+				[27983] = 136235,
+				[23686] = 135934,
+				[23687] = 135990,
 			},
 		},
 		["Handstitched Leather Bracers"] = {
@@ -74566,9 +74600,9 @@ WeakAurasOptionsSaved = {
 				[44810] = 135869,
 			},
 		},
-		["Deadly Toxin"] = {
+		["Armor Shatter"] = {
 			["spells"] = {
-				[11539] = 132290,
+				[16928] = 132403,
 			},
 		},
 		["Curse of the Doomsayer"] = {
@@ -74619,11 +74653,10 @@ WeakAurasOptionsSaved = {
 				[5424] = 133708,
 			},
 		},
-		["Greater Arcane Elixir"] = {
+		["Icy Scale Breastplate"] = {
 			["spells"] = {
-				[16889] = 134827,
-				[17539] = 134805,
-				[17573] = 136235,
+				[28222] = 136235,
+				[28257] = 136021,
 			},
 		},
 		["Nature Resist"] = {
@@ -74642,20 +74675,18 @@ WeakAurasOptionsSaved = {
 				[22833] = 132792,
 			},
 		},
+		["Greater Arcane Elixir"] = {
+			["spells"] = {
+				[16889] = 134827,
+				[17539] = 134805,
+				[17573] = 136235,
+			},
+		},
 		["Improved Eviscerate"] = {
 			["spells"] = {
 				[14163] = 132292,
 				[14162] = 132292,
 				[14164] = 132292,
-			},
-		},
-		["Resistance"] = {
-			["spells"] = {
-				[11363] = 134719,
-				[13796] = 136235,
-				[11364] = 134719,
-				[27963] = 136235,
-				[2380] = 134719,
 			},
 		},
 		["Summon Silver Tabby"] = {
@@ -74695,11 +74726,9 @@ WeakAurasOptionsSaved = {
 				[34873] = 135737,
 			},
 		},
-		["Improved Fire Blast"] = {
+		["Small Seaforium Backfire"] = {
 			["spells"] = {
-				[12342] = 135807,
-				[11078] = 135807,
-				[11080] = 135807,
+				[8511] = 135805,
 			},
 		},
 		["Increased Frost Resist 21"] = {
@@ -74712,9 +74741,11 @@ WeakAurasOptionsSaved = {
 				[21342] = 136235,
 			},
 		},
-		["Create Knucklebone Pouch"] = {
+		["Improved Fire Blast"] = {
 			["spells"] = {
-				[16195] = 136235,
+				[12342] = 135807,
+				[11078] = 135807,
+				[11080] = 135807,
 			},
 		},
 		["Picnic Umbrella"] = {
@@ -74728,15 +74759,17 @@ WeakAurasOptionsSaved = {
 				[27499] = 136039,
 			},
 		},
-		["Glacial Gloves"] = {
+		["Glacial Cloak"] = {
 			["spells"] = {
-				[28205] = 132149,
-				[28261] = 136021,
+				[28208] = 132149,
+				[28263] = 136021,
 			},
 		},
-		["Ritual of Summoning Effect"] = {
+		["Instant Poison IV"] = {
 			["spells"] = {
-				[7720] = 136235,
+				[11341] = 132273,
+				[11338] = 132273,
+				[11335] = 132273,
 			},
 		},
 		["Greater Agility"] = {
@@ -74746,9 +74779,10 @@ WeakAurasOptionsSaved = {
 				[13823] = 136235,
 			},
 		},
-		["Red Linen Shirt"] = {
+		["Glacial Gloves"] = {
 			["spells"] = {
-				[2392] = 132149,
+				[28205] = 132149,
+				[28261] = 136021,
 			},
 		},
 		["Alterac Ram Aura Dummy Dispel DND"] = {
@@ -74771,15 +74805,9 @@ WeakAurasOptionsSaved = {
 				[34223] = 135813,
 			},
 		},
-		["Judgement"] = {
+		["Heart of the Wild Cat Effect"] = {
 			["spells"] = {
-				[23590] = 135972,
-				[23591] = 135972,
-				[10321] = 135959,
-				[43838] = 135960,
-				[35170] = 136235,
-				[20271] = 135959,
-				[41467] = 135959,
+				[24900] = 135879,
 			},
 		},
 		["Dark Iron Light Aura, Blue"] = {
@@ -74798,25 +74826,24 @@ WeakAurasOptionsSaved = {
 				[39043] = 132219,
 			},
 		},
-		["Increased Fire Resist 21"] = {
+		["Camp Type: Ghost/Skeleton"] = {
 			["spells"] = {
-				[14601] = 136235,
+				[28197] = 136235,
 			},
 		},
-		["Deep Wound"] = {
+		["Onyxia"] = {
 			["spells"] = {
-				[12721] = 132090,
-				[43104] = 132090,
+				[18387] = 136235,
 			},
 		},
-		["Taelan's Suffering"] = {
+		["Gizlock's Dummy Effect"] = {
 			["spells"] = {
-				[18810] = 136235,
+				[21837] = 136235,
 			},
 		},
-		["[PH] Summon Minion (trap: ghoul/skeleton))"] = {
+		["Create Minion Trap: Ghost/Ghoul"] = {
 			["spells"] = {
-				[28187] = 136235,
+				[28195] = 136235,
 			},
 		},
 		["Panic"] = {
@@ -74836,18 +74863,14 @@ WeakAurasOptionsSaved = {
 				[10887] = 132938,
 			},
 		},
-		["Flametongue Totem Effect"] = {
+		["Swift Yellow Mechanostrider"] = {
 			["spells"] = {
-				[10521] = 136040,
-				[8250] = 136040,
-				[25554] = 136040,
-				[8230] = 136040,
-				[15036] = 136040,
+				[23222] = 132247,
 			},
 		},
-		["Lovingly Crafted Boomstick"] = {
+		["Increased Fire Resist 21"] = {
 			["spells"] = {
-				[3939] = 136235,
+				[14601] = 136235,
 			},
 		},
 		["Free Action Potion"] = {
@@ -74855,9 +74878,9 @@ WeakAurasOptionsSaved = {
 				[6624] = 136235,
 			},
 		},
-		["Quiet Suicide (Frost)"] = {
+		["Atal'ai Skeleton Totem"] = {
 			["spells"] = {
-				[13520] = 136168,
+				[12506] = 136187,
 			},
 		},
 		["Increased Stamina 26"] = {
@@ -74865,9 +74888,9 @@ WeakAurasOptionsSaved = {
 				[14473] = 136235,
 			},
 		},
-		["Eye of Sulfuras"] = {
+		["Taelan's Suffering"] = {
 			["spells"] = {
-				[21160] = 136192,
+				[18810] = 136235,
 			},
 		},
 		["Ornate Tigerseye Necklace"] = {
@@ -74893,9 +74916,9 @@ WeakAurasOptionsSaved = {
 				[2376] = 134721,
 			},
 		},
-		["[PH] Summon Minion parent (ghoul/skeleton)"] = {
+		["[PH] Summon Minion (trap: ghoul/skeleton))"] = {
 			["spells"] = {
-				[28185] = 136235,
+				[28187] = 136235,
 			},
 		},
 		["Ironforge Breastplate"] = {
@@ -74916,10 +74939,9 @@ WeakAurasOptionsSaved = {
 				[16870] = 136170,
 			},
 		},
-		["Lesser Mana Oil"] = {
+		["Quiet Suicide (Frost)"] = {
 			["spells"] = {
-				[25120] = 134879,
-				[25127] = 134879,
+				[13520] = 136168,
 			},
 		},
 		["Racer Slam Hit Destination"] = {
@@ -74940,12 +74962,9 @@ WeakAurasOptionsSaved = {
 				[35301] = 136168,
 			},
 		},
-		["Fel Armor"] = {
+		["[PH] Summon Minion parent (ghost/skeleton)"] = {
 			["spells"] = {
-				[44977] = 136156,
-				[28176] = 136156,
-				[28189] = 136156,
-				[44520] = 136156,
+				[28184] = 136235,
 			},
 		},
 		["Summon Shadowcaster"] = {
@@ -75004,18 +75023,17 @@ WeakAurasOptionsSaved = {
 				[3146] = 132278,
 			},
 		},
-		["Improved Immolate"] = {
+		["Fel Armor"] = {
 			["spells"] = {
-				[17815] = 135817,
-				[17833] = 135817,
-				[17834] = 135817,
-				[17835] = 135817,
-				[17836] = 135817,
+				[44977] = 136156,
+				[28176] = 136156,
+				[28189] = 136156,
+				[44520] = 136156,
 			},
 		},
-		["Bloodscalp Pet"] = {
+		["Moonkin Aura"] = {
 			["spells"] = {
-				[3612] = 136095,
+				[24907] = 136057,
 			},
 		},
 		["Deadly Aim"] = {
@@ -75023,14 +75041,14 @@ WeakAurasOptionsSaved = {
 				[40487] = 132177,
 			},
 		},
-		["Enigma's Solitude"] = {
+		["Sword Mastery"] = {
 			["spells"] = {
-				[26132] = 135845,
+				[601] = 132223,
 			},
 		},
-		["Increase Healing 280"] = {
+		["Attack Power - Feral (+0420)"] = {
 			["spells"] = {
-				[28151] = 136235,
+				[28154] = 136235,
 			},
 		},
 		["Poison Spray"] = {
@@ -75044,9 +75062,9 @@ WeakAurasOptionsSaved = {
 				[31009] = 136235,
 			},
 		},
-		["Summon RaidMageArcaneFR"] = {
+		["Summon Rusty Chest"] = {
 			["spells"] = {
-				[22459] = 132317,
+				[6464] = 132281,
 			},
 		},
 		["Increase Spell Dam ONLY TEST 606"] = {
@@ -75059,17 +75077,17 @@ WeakAurasOptionsSaved = {
 				[11403] = 135994,
 			},
 		},
+		["Mage Portal State"] = {
+			["spells"] = {
+				[28146] = 135751,
+			},
+		},
 		["Power of the Guardian"] = {
 			["spells"] = {
 				[28142] = 136057,
 				[28143] = 136057,
 				[28144] = 136057,
 				[28145] = 136057,
-			},
-		},
-		["Increase Healing 18"] = {
-			["spells"] = {
-				[9406] = 136235,
 			},
 		},
 		["Consuming Rage"] = {
@@ -75083,14 +75101,14 @@ WeakAurasOptionsSaved = {
 				[25800] = 134969,
 			},
 		},
-		["Elixir of Giant Growth"] = {
+		["Smashing Blow V"] = {
 			["spells"] = {
-				[8240] = 136235,
+				[2446] = 132326,
 			},
 		},
-		["Slime Stream"] = {
+		["Increase Healing 18"] = {
 			["spells"] = {
-				[28137] = 136144,
+				[9406] = 136235,
 			},
 		},
 		["Guardian Gloves"] = {
@@ -75098,9 +75116,9 @@ WeakAurasOptionsSaved = {
 				[7156] = 136247,
 			},
 		},
-		["Jumping Lightning"] = {
+		["Elixir of Giant Growth"] = {
 			["spells"] = {
-				[9654] = 136048,
+				[8240] = 136235,
 			},
 		},
 		["Simon Game pre-game Begin, blue"] = {
@@ -75115,14 +75133,14 @@ WeakAurasOptionsSaved = {
 				[8686] = 132273,
 			},
 		},
-		["Reload Explode"] = {
+		["Jumping Lightning"] = {
 			["spells"] = {
-				[13239] = 135805,
+				[9654] = 136048,
 			},
 		},
-		["Bloodsoul Shoulders"] = {
+		["Eye of Sulfuras"] = {
 			["spells"] = {
-				[24137] = 136192,
+				[21160] = 136192,
 			},
 		},
 		["Graveyard Teleport Test"] = {
@@ -75130,9 +75148,23 @@ WeakAurasOptionsSaved = {
 				[24253] = 136235,
 			},
 		},
-		["Create Summoner Shield"] = {
+		["Sword Specialization"] = {
 			["spells"] = {
-				[28132] = 136235,
+				[4352] = 132223,
+				[12814] = 135328,
+				[4354] = 132223,
+				[20597] = 132223,
+				[13960] = 135328,
+				[13962] = 135328,
+				[13964] = 135328,
+				[16459] = 135328,
+				[12813] = 135328,
+				[12815] = 135328,
+				[4362] = 132223,
+				[13961] = 135328,
+				[12281] = 135328,
+				[13963] = 135328,
+				[12812] = 135328,
 			},
 		},
 		["Big Voodoo Pants"] = {
@@ -75161,14 +75193,14 @@ WeakAurasOptionsSaved = {
 				[27179] = 135880,
 			},
 		},
-		["Enchant Weapon - Strength"] = {
+		["Increased Spirit 43"] = {
 			["spells"] = {
-				[23799] = 135913,
+				[14949] = 136235,
 			},
 		},
-		["Improved Rain of Fire/Hellfire"] = {
+		["Dark Silk Shirt"] = {
 			["spells"] = {
-				[24430] = 136235,
+				[3870] = 132149,
 			},
 		},
 		["Strafe"] = {
@@ -75194,15 +75226,14 @@ WeakAurasOptionsSaved = {
 				[31206] = 136235,
 			},
 		},
+		["Summon Aku'mai"] = {
+			["spells"] = {
+				[24625] = 136121,
+			},
+		},
 		["Feugen Chain"] = {
 			["spells"] = {
 				[28111] = 136235,
-			},
-		},
-		["Zap Crystal Corpse"] = {
-			["spells"] = {
-				[28056] = 136235,
-				[348571] = 136235,
 			},
 		},
 		["Brewfest - Create Complimentary Brewfest Sampler"] = {
@@ -75220,10 +75251,9 @@ WeakAurasOptionsSaved = {
 				[40368] = 136198,
 			},
 		},
-		["Improved Mana Burn"] = {
+		["Create Sapta"] = {
 			["spells"] = {
-				[14750] = 136170,
-				[14772] = 136170,
+				[9200] = 133951,
 			},
 		},
 		["Blade's Edge Purple Beam (02)"] = {
@@ -75250,9 +75280,34 @@ WeakAurasOptionsSaved = {
 				[12243] = 132311,
 			},
 		},
-		["Proudmoore's Defense"] = {
+		["Lash of Pain"] = {
 			["spells"] = {
-				[7120] = 135880,
+				[27274] = 136136,
+				[7815] = 136136,
+				[27493] = 136136,
+				[11779] = 136136,
+				[7816] = 136136,
+				[41353] = 136136,
+				[7878] = 136136,
+				[20398] = 136136,
+				[44640] = 136136,
+				[20399] = 136136,
+				[11781] = 136136,
+				[20400] = 136136,
+				[36864] = 136136,
+				[20401] = 136136,
+				[11782] = 136136,
+				[20402] = 136136,
+				[11778] = 136136,
+				[38852] = 136136,
+				[15968] = 136136,
+				[7876] = 136136,
+				[7877] = 136136,
+				[7814] = 136136,
+				[11783] = 136136,
+				[21987] = 136136,
+				[32202] = 136136,
+				[11780] = 136136,
 			},
 		},
 		["Increased Shred and Lacerate"] = {
@@ -75266,10 +75321,9 @@ WeakAurasOptionsSaved = {
 				[21566] = 133001,
 			},
 		},
-		["Brood Affliction: Blue"] = {
+		["Create Primal Water"] = {
 			["spells"] = {
-				[23153] = 134155,
-				[23393] = 134155,
+				[28103] = 136192,
 			},
 		},
 		["Increase Shadow Dam 31"] = {
@@ -75282,9 +75336,10 @@ WeakAurasOptionsSaved = {
 				[3826] = 136157,
 			},
 		},
-		["Lesser Resistance - Fire"] = {
+		["Brood Affliction: Blue"] = {
 			["spells"] = {
-				[7852] = 136235,
+				[23153] = 134155,
+				[23393] = 134155,
 			},
 		},
 		["Summon Thelrin DND"] = {
@@ -75298,14 +75353,14 @@ WeakAurasOptionsSaved = {
 				[37487] = 135876,
 			},
 		},
+		["Summon Harvester Swarm"] = {
+			["spells"] = {
+				[7278] = 132320,
+			},
+		},
 		["Create Primal Earth"] = {
 			["spells"] = {
 				[28101] = 136192,
-			},
-		},
-		["Apprentice Fishing"] = {
-			["spells"] = {
-				[7733] = 136245,
 			},
 		},
 		["Increase Spell Dam 44"] = {
@@ -75350,24 +75405,24 @@ WeakAurasOptionsSaved = {
 				[39195] = 132325,
 			},
 		},
+		["Evolving Ectoplasm (Blue)"] = {
+			["spells"] = {
+				[7944] = 135835,
+			},
+		},
+		["Attack Power 78"] = {
+			["spells"] = {
+				[15825] = 136235,
+			},
+		},
 		["Bonescythe Chest"] = {
 			["spells"] = {
 				[28081] = 136189,
 			},
 		},
-		["Create Pamela's Doll"] = {
-			["spells"] = {
-				[17133] = 136235,
-			},
-		},
 		["Buttress Trap"] = {
 			["spells"] = {
 				[28054] = 136235,
-			},
-		},
-		["Damage Crystal"] = {
-			["spells"] = {
-				[28041] = 136235,
 			},
 		},
 		["Fel Breath"] = {
@@ -75377,9 +75432,9 @@ WeakAurasOptionsSaved = {
 				[44865] = 135270,
 			},
 		},
-		["Deviate Scale Cloak"] = {
+		["Zap Crystal"] = {
 			["spells"] = {
-				[7953] = 136247,
+				[28032] = 136235,
 			},
 		},
 		["Wing Beat"] = {
@@ -75387,9 +75442,9 @@ WeakAurasOptionsSaved = {
 				[29303] = 136022,
 			},
 		},
-		["Increased Nature Resist 24"] = {
+		["Master Enchanting"] = {
 			["spells"] = {
-				[14646] = 136235,
+				[28030] = 136244,
 			},
 		},
 		["Summon the Black Brewmaiden"] = {
@@ -75397,9 +75452,9 @@ WeakAurasOptionsSaved = {
 				[48042] = 136235,
 			},
 		},
-		["Netherweave Bag"] = {
+		["Increased Nature Resist 24"] = {
 			["spells"] = {
-				[26746] = 132149,
+				[14646] = 136235,
 			},
 		},
 		["Spirit Steal"] = {
@@ -75412,36 +75467,24 @@ WeakAurasOptionsSaved = {
 				[48148] = 136235,
 			},
 		},
+		["Increased Spirit 13"] = {
+			["spells"] = {
+				[9262] = 136235,
+			},
+		},
+		["Netherweave Bracers"] = {
+			["spells"] = {
+				[26764] = 132149,
+			},
+		},
 		["Teleport Left"] = {
 			["spells"] = {
 				[28025] = 136235,
 			},
 		},
-		["Increased Agility 18"] = {
+		["Enchant Bracer - Superior Stamina"] = {
 			["spells"] = {
-				[14371] = 136235,
-			},
-		},
-		["Dual Wield Specialization"] = {
-			["spells"] = {
-				[23584] = 132147,
-				[13851] = 132147,
-				[30818] = 132148,
-				[23585] = 132147,
-				[30819] = 132148,
-				[30816] = 132148,
-				[13848] = 132147,
-				[23586] = 132147,
-				[13852] = 132147,
-				[23588] = 132147,
-				[13715] = 132147,
-				[23587] = 132147,
-				[13849] = 132147,
-			},
-		},
-		["Capture Hippogryph"] = {
-			["spells"] = {
-				[11887] = 136235,
+				[20011] = 135913,
 			},
 		},
 		["Superior Wizard Oil"] = {
@@ -75450,14 +75493,14 @@ WeakAurasOptionsSaved = {
 				[28019] = 134767,
 			},
 		},
-		["Create Crest of Beckoning: Water"] = {
-			["spells"] = {
-				[24888] = 136235,
-			},
-		},
 		["Arcane Cloaking"] = {
 			["spells"] = {
 				[28006] = 136235,
+			},
+		},
+		["Feeblemind"] = {
+			["spells"] = {
+				[457] = 136175,
 			},
 		},
 		["Summon Lava Burst I"] = {
@@ -75476,15 +75519,15 @@ WeakAurasOptionsSaved = {
 				[23676] = 134538,
 			},
 		},
-		["Nightfin Soup"] = {
-			["spells"] = {
-				[18243] = 136192,
-			},
-		},
 		["Enchant Weapon - Spellsurge"] = {
 			["spells"] = {
 				[28003] = 135913,
 				[46539] = 135913,
+			},
+		},
+		["Spellsurge Trigger"] = {
+			["spells"] = {
+				[27997] = 136235,
 			},
 		},
 		["Apprentice Tailor"] = {
@@ -75492,9 +75535,9 @@ WeakAurasOptionsSaved = {
 				[3911] = 136249,
 			},
 		},
-		["Spellsurge Trigger"] = {
+		["Clenched Pinchers"] = {
 			["spells"] = {
-				[27997] = 136235,
+				[4246] = 132109,
 			},
 		},
 		["Ahn'Qiraj Reward Buff (Trigger - 40)"] = {
@@ -75507,31 +75550,14 @@ WeakAurasOptionsSaved = {
 				[21107] = 135830,
 			},
 		},
-		["Strike"] = {
+		["Baby Murloc"] = {
 			["spells"] = {
-				[31754] = 132282,
-				[12057] = 132282,
-				[13584] = 132282,
-				[19730] = 132282,
-				[13446] = 132282,
-				[14516] = 132282,
-				[18368] = 132282,
-				[11998] = 132282,
-				[38598] = 132282,
-				[11976] = 132282,
-				[15580] = 132282,
-				[19644] = 132282,
-				[43298] = 132282,
-				[22591] = 132282,
-				[34920] = 132282,
-				[31907] = 132282,
-				[33626] = 132282,
-				[26181] = 136235,
+				[24984] = 134301,
 			},
 		},
-		["Bolt Charge Bramble"] = {
+		["Increased Intellect 39"] = {
 			["spells"] = {
-				[9056] = 135990,
+				[14429] = 136235,
 			},
 		},
 		["Pacified"] = {
@@ -75545,9 +75571,9 @@ WeakAurasOptionsSaved = {
 				[18040] = 136235,
 			},
 		},
-		["Increased Intellect 39"] = {
+		["Floating"] = {
 			["spells"] = {
-				[14429] = 136235,
+				[27985] = 135928,
 			},
 		},
 		["Elixir of Minor Fortitude"] = {
@@ -75577,9 +75603,10 @@ WeakAurasOptionsSaved = {
 				[14872] = 136224,
 			},
 		},
-		["Floating"] = {
+		["Dream Fog"] = {
 			["spells"] = {
-				[27985] = 135928,
+				[24777] = 136044,
+				[24780] = 136006,
 			},
 		},
 		["Ghost Wolf"] = {
@@ -75610,15 +75637,14 @@ WeakAurasOptionsSaved = {
 				[25085] = 135805,
 			},
 		},
-		["Dazed"] = {
+		["Thick Hide"] = {
 			["spells"] = {
-				[1604] = 135860,
-				[15571] = 135860,
-				[13496] = 135860,
-				[35955] = 135860,
-				[5101] = 136175,
-				[31125] = 135860,
-				[29703] = 135860,
+				[19609] = 134355,
+				[16929] = 134355,
+				[16930] = 134355,
+				[16931] = 134355,
+				[19612] = 134355,
+				[19610] = 134355,
 			},
 		},
 		["Crafted Solid Shot"] = {
@@ -75631,10 +75657,9 @@ WeakAurasOptionsSaved = {
 				[243806] = 878213,
 			},
 		},
-		["Enchant Weapon - Soulfrost"] = {
+		["Increase Shadow Dam 1"] = {
 			["spells"] = {
-				[27982] = 135913,
-				[46538] = 135913,
+				[7704] = 136235,
 			},
 		},
 		["Summon Axes"] = {
@@ -75642,10 +75667,9 @@ WeakAurasOptionsSaved = {
 				[30891] = 136235,
 			},
 		},
-		["Enchant Weapon - Sunfire"] = {
+		["Increase Shadow/Frost Dam 54"] = {
 			["spells"] = {
-				[27981] = 135913,
-				[46540] = 135913,
+				[27980] = 136235,
 			},
 		},
 		["Rocket Bot"] = {
@@ -75653,10 +75677,9 @@ WeakAurasOptionsSaved = {
 				[45266] = 135808,
 			},
 		},
-		["Enchant 2H Weapon - Major Agility"] = {
+		["Agility +35"] = {
 			["spells"] = {
-				[27977] = 135913,
-				[46461] = 135913,
+				[27976] = 136235,
 			},
 		},
 		["Enchant Gloves - Skinning"] = {
@@ -75669,15 +75692,16 @@ WeakAurasOptionsSaved = {
 				[21501] = 136235,
 			},
 		},
-		["Agility +35"] = {
-			["spells"] = {
-				[27976] = 136235,
-			},
-		},
 		["Enchant Weapon - Major Spellpower"] = {
 			["spells"] = {
 				[27975] = 135913,
 				[46533] = 135913,
+			},
+		},
+		["Enchant 2H Weapon - Savagery"] = {
+			["spells"] = {
+				[27971] = 135913,
+				[46462] = 135913,
 			},
 		},
 		["Planting Vipore's Beacon"] = {
@@ -75691,22 +75715,23 @@ WeakAurasOptionsSaved = {
 				[41055] = 132343,
 			},
 		},
-		["Smitten"] = {
-			["spells"] = {
-				[27572] = 132382,
-			},
-		},
 		["Enchant Weapon - Major Striking"] = {
 			["spells"] = {
 				[27967] = 135913,
 				[46535] = 135913,
 			},
 		},
-		["Increase Healing 55"] = {
+		["Spore Burst"] = {
 			["spells"] = {
-				[22748] = 136235,
-				[18036] = 136235,
-				[41783] = 136235,
+				[38471] = 136006,
+				[38924] = 136006,
+				[5100] = 136142,
+				[38472] = 136006,
+			},
+		},
+		["Stormpike Reputation +2"] = {
+			["spells"] = {
+				[21829] = 136235,
 			},
 		},
 		["Test Grow"] = {
@@ -75724,10 +75749,9 @@ WeakAurasOptionsSaved = {
 				[13739] = 136192,
 			},
 		},
-		["Furious Anger"] = {
+		["Block Value 19"] = {
 			["spells"] = {
-				[16791] = 136224,
-				[16792] = 136224,
+				[23731] = 136235,
 			},
 		},
 		["Elixir of Waterwalking"] = {
@@ -75740,16 +75764,15 @@ WeakAurasOptionsSaved = {
 				[11478] = 136235,
 			},
 		},
+		["Potent Alcohol"] = {
+			["spells"] = {
+				[11629] = 132796,
+			},
+		},
 		["Enchant Cloak - Major Resistance"] = {
 			["spells"] = {
 				[27962] = 135913,
 				[46508] = 135913,
-			},
-		},
-		["Spirit of Boar"] = {
-			["spells"] = {
-				[10668] = 136075,
-				[10671] = 136075,
 			},
 		},
 		["Exceptional Stats"] = {
@@ -75767,15 +75790,14 @@ WeakAurasOptionsSaved = {
 				[11434] = 136235,
 			},
 		},
-		["Defensive Stance Passive"] = {
+		["Armor +24"] = {
 			["spells"] = {
-				[7376] = 132341,
+				[2833] = 133610,
 			},
 		},
-		["Find Herbs"] = {
+		["Summon Moonstalker Runt"] = {
 			["spells"] = {
-				[2383] = 133939,
-				[8387] = 134183,
+				[8594] = 132142,
 			},
 		},
 		["Torch - Create Torch"] = {
@@ -75803,25 +75825,15 @@ WeakAurasOptionsSaved = {
 				[10552] = 136247,
 			},
 		},
+		["Increase Holy Dam 51"] = {
+			["spells"] = {
+				[21534] = 136235,
+			},
+		},
 		["Enchant Boots - Surefooted"] = {
 			["spells"] = {
 				[27954] = 135913,
 				[46491] = 135913,
-			},
-		},
-		["Healing Potion"] = {
-			["spells"] = {
-				[440] = 136235,
-				[441] = 136235,
-				[41619] = 136235,
-				[3447] = 136235,
-				[2024] = 136235,
-				[41620] = 136235,
-				[28495] = 136235,
-				[4042] = 136235,
-				[40535] = 135915,
-				[439] = 136235,
-				[17534] = 136235,
 			},
 		},
 		["Awaken Kerlonian"] = {
@@ -75834,15 +75846,10 @@ WeakAurasOptionsSaved = {
 				[41546] = 136235,
 			},
 		},
-		["Replenish Mana"] = {
+		["Greater Beast Slayer 25"] = {
 			["spells"] = {
-				[10058] = 134134,
-				[33394] = 134134,
-				[5405] = 134134,
-				[27103] = 134134,
-				[18385] = 134134,
-				[10057] = 134134,
-				[10052] = 134134,
+				[20891] = 134310,
+				[20893] = 134310,
 			},
 		},
 		["Frostbrand Attack"] = {
@@ -75888,42 +75895,9 @@ WeakAurasOptionsSaved = {
 				[3124] = 132269,
 			},
 		},
-		["Rend"] = {
+		["Summon Lava Burst F"] = {
 			["spells"] = {
-				[17153] = 132155,
-				[43246] = 132155,
-				[11572] = 132155,
-				[11573] = 132155,
-				[11574] = 132155,
-				[21949] = 132155,
-				[16406] = 132155,
-				[29574] = 132155,
-				[6546] = 132155,
-				[6547] = 132155,
-				[12054] = 132155,
-				[6548] = 132155,
-				[13443] = 132155,
-				[13318] = 132155,
-				[13445] = 132155,
-				[772] = 132155,
-				[17504] = 132155,
-				[18200] = 132155,
-				[18075] = 132155,
-				[18202] = 132155,
-				[36965] = 132155,
-				[18078] = 132155,
-				[37662] = 132155,
-				[16509] = 132155,
-				[13738] = 132155,
-				[36991] = 132155,
-				[16403] = 132155,
-				[14118] = 132155,
-				[14087] = 132155,
-				[11977] = 132155,
-				[29578] = 132155,
-				[25208] = 132155,
-				[16393] = 132155,
-				[18106] = 132155,
+				[21904] = 136235,
 			},
 		},
 		["Shifting Cloak"] = {
@@ -75959,9 +75933,9 @@ WeakAurasOptionsSaved = {
 				[34773] = 136235,
 			},
 		},
-		["Fast Acting Poison"] = {
+		["Runed Silver Rod"] = {
 			["spells"] = {
-				[6647] = 132273,
+				[7795] = 135138,
 			},
 		},
 		["Fel Stamina"] = {
@@ -75983,9 +75957,9 @@ WeakAurasOptionsSaved = {
 				[15123] = 135806,
 			},
 		},
-		["Call Reavers"] = {
+		["Intimidating Roar"] = {
 			["spells"] = {
-				[22860] = 132091,
+				[16508] = 132154,
 			},
 		},
 		["QAEnchant Gloves +15 Strength"] = {
@@ -75998,9 +75972,25 @@ WeakAurasOptionsSaved = {
 				[7491] = 136235,
 			},
 		},
-		["Mortar Disturb"] = {
+		["Attack"] = {
 			["spells"] = {
-				[17671] = 136235,
+				[6350] = 135825,
+				[38584] = 135825,
+				[7389] = 132150,
+				[6351] = 135825,
+				[6603] = 133478,
+				[31992] = 135825,
+				[3606] = 135825,
+				[25530] = 135825,
+				[6352] = 135825,
+				[39592] = 135825,
+				[15037] = 135825,
+				[38296] = 135825,
+				[10435] = 135825,
+				[22048] = 135825,
+				[39593] = 135825,
+				[10436] = 135825,
+				[32969] = 135825,
 			},
 		},
 		["Tiger Riding"] = {
@@ -76009,12 +75999,9 @@ WeakAurasOptionsSaved = {
 				[6745] = 136103,
 			},
 		},
-		["Improved Moonfire"] = {
+		["Gorishi Egg"] = {
 			["spells"] = {
-				[352504] = 136052,
-				[16821] = 136096,
-				[16822] = 136096,
-				[28854] = 136096,
+				[14205] = 136006,
 			},
 		},
 		["Flask of Petrification"] = {
@@ -76037,15 +76024,26 @@ WeakAurasOptionsSaved = {
 				[44305] = 136235,
 			},
 		},
+		["Summon Royal Random"] = {
+			["spells"] = {
+				[24784] = 136235,
+			},
+		},
+		["Blade's Edge Terrace Demon Boss Summon 1"] = {
+			["spells"] = {
+				[40957] = 136235,
+			},
+		},
 		["Enchant Bracer - Fortitude"] = {
 			["spells"] = {
 				[27914] = 135913,
 				[46494] = 135913,
 			},
 		},
-		["Blade's Edge Terrace Demon Boss Summon 1"] = {
+		["Enchant Bracer - Restore Mana Prime"] = {
 			["spells"] = {
-				[40957] = 136235,
+				[27913] = 135913,
+				[46497] = 135913,
 			},
 		},
 		["Enchant Bracer - Superior Healing"] = {
@@ -76054,19 +76052,9 @@ WeakAurasOptionsSaved = {
 				[46500] = 135913,
 			},
 		},
-		["Light Leather Bracers"] = {
+		["Mithril Scale Shoulders"] = {
 			["spells"] = {
-				[9065] = 136247,
-			},
-		},
-		["The Breaking Left Blade DND"] = {
-			["spells"] = {
-				[22991] = 136164,
-			},
-		},
-		["Uther's Human Tribute"] = {
-			["spells"] = {
-				[24105] = 136235,
+				[9966] = 136192,
 			},
 		},
 		["Drink Fel Infusion"] = {
@@ -76089,9 +76077,10 @@ WeakAurasOptionsSaved = {
 				[27006] = 132142,
 			},
 		},
-		["Elixir of Firepower"] = {
+		["Left for Dead"] = {
 			["spells"] = {
-				[7845] = 136235,
+				[8359] = 136187,
+				[8555] = 136187,
 			},
 		},
 		["Swift Magic Broom"] = {
@@ -76105,12 +76094,9 @@ WeakAurasOptionsSaved = {
 				[15827] = 136235,
 			},
 		},
-		["Improved Power Word: Shield"] = {
+		["Eyes of the Beast"] = {
 			["spells"] = {
-				[14748] = 135940,
-				[14768] = 135940,
-				[24191] = 136235,
-				[14769] = 135940,
+				[1002] = 132150,
 			},
 		},
 		["Improved Blessings"] = {
@@ -76138,9 +76124,9 @@ WeakAurasOptionsSaved = {
 				[14180] = 132343,
 			},
 		},
-		["Kill Summoner, who will Summon Boss"] = {
+		["Mass Healing"] = {
 			["spells"] = {
-				[27894] = 136235,
+				[25839] = 135913,
 			},
 		},
 		["Everlook Transporter"] = {
@@ -76155,11 +76141,15 @@ WeakAurasOptionsSaved = {
 				[24691] = 132330,
 			},
 		},
-		["To Anchor 1"] = {
+		["Spell Warding"] = {
 			["spells"] = {
-				[27935] = 136235,
-				[27928] = 136235,
-				[27892] = 136235,
+				[27902] = 135976,
+				[27903] = 135976,
+				[27904] = 135976,
+				[31846] = 135925,
+				[31847] = 135925,
+				[27900] = 135976,
+				[27901] = 135976,
 			},
 		},
 		["Reduced Cleave Cost"] = {
@@ -76172,9 +76162,9 @@ WeakAurasOptionsSaved = {
 				[39228] = 135893,
 			},
 		},
-		["Disturb Minion Trap, small"] = {
+		["Kill Summoner, who will Summon Boss"] = {
 			["spells"] = {
-				[27885] = 136235,
+				[27894] = 136235,
 			},
 		},
 		["Shield"] = {
@@ -76187,13 +76177,11 @@ WeakAurasOptionsSaved = {
 				[24172] = 136235,
 			},
 		},
-		["Arcane Mastery"] = {
+		["To Anchor 1"] = {
 			["spells"] = {
-				[16737] = 136183,
-				[16738] = 136183,
-				[16734] = 136183,
-				[16735] = 136183,
-				[16736] = 136183,
+				[27935] = 136235,
+				[27928] = 136235,
+				[27892] = 136235,
 			},
 		},
 		["Savage Assault"] = {
@@ -76213,15 +76201,14 @@ WeakAurasOptionsSaved = {
 				[35320] = 136048,
 			},
 		},
-		["Infinite Wisdom Shadow Word: Pain Bonus"] = {
+		["Disturb Minion Trap, small"] = {
 			["spells"] = {
-				[26172] = 136081,
+				[27885] = 136235,
 			},
 		},
-		["Poison Cleansing Totem"] = {
+		["Axe Toss"] = {
 			["spells"] = {
-				[8166] = 136070,
-				[38306] = 136070,
+				[6466] = 132395,
 			},
 		},
 		["TWEEP"] = {
@@ -76229,9 +76216,30 @@ WeakAurasOptionsSaved = {
 				[11481] = 135826,
 			},
 		},
-		["Enchant Chest - Greater Health"] = {
+		["Natural Armor"] = {
 			["spells"] = {
-				[13640] = 135913,
+				[24561] = 136094,
+				[24562] = 136094,
+				[24547] = 136094,
+				[24549] = 136094,
+				[24550] = 136094,
+				[24551] = 136094,
+				[24629] = 136094,
+				[24552] = 136094,
+				[24630] = 136094,
+				[24553] = 136094,
+				[24631] = 136094,
+				[24554] = 136094,
+				[24632] = 136094,
+				[24555] = 136094,
+				[24556] = 136094,
+				[27362] = 136094,
+				[24557] = 136094,
+				[24558] = 136094,
+				[24559] = 136094,
+				[24560] = 136094,
+				[24545] = 136094,
+				[27061] = 136094,
 			},
 		},
 		["Restoration"] = {
@@ -76248,14 +76256,15 @@ WeakAurasOptionsSaved = {
 				[7106] = 132179,
 			},
 		},
-		["QAEnchant Gloves +5 Skinning"] = {
+		["Poison Cleansing Totem"] = {
 			["spells"] = {
-				[27114] = 135913,
+				[8166] = 136070,
+				[38306] = 136070,
 			},
 		},
-		["Enchant Gloves - Strength"] = {
+		["Increased Fire Resist 22"] = {
 			["spells"] = {
-				[13887] = 135913,
+				[14602] = 136235,
 			},
 		},
 		["Efficiency"] = {
@@ -76278,11 +76287,9 @@ WeakAurasOptionsSaved = {
 				[19078] = 136235,
 			},
 		},
-		["Curse of Doom"] = {
+		["Stun 1% for 1 sec"] = {
 			["spells"] = {
-				[43439] = 136122,
-				[30910] = 136122,
-				[603] = 136122,
+				[20884] = 133477,
 			},
 		},
 		["Windsor Death DND"] = {
@@ -76310,15 +76317,15 @@ WeakAurasOptionsSaved = {
 				[19060] = 136235,
 			},
 		},
+		["Firecrackers"] = {
+			["spells"] = {
+				[25822] = 135805,
+			},
+		},
 		["Increased Shock Damage"] = {
 			["spells"] = {
 				[27859] = 136052,
 				[33556] = 136052,
-			},
-		},
-		["Dissolve Armor"] = {
-			["spells"] = {
-				[13013] = 136007,
 			},
 		},
 		["Conjure Torch of Retribution"] = {
@@ -76335,10 +76342,9 @@ WeakAurasOptionsSaved = {
 				[18173] = 132937,
 			},
 		},
-		["Increased Rejuvenation Healing"] = {
+		["Surge 2"] = {
 			["spells"] = {
-				[27853] = 136052,
-				[32402] = 136052,
+				[19223] = 132337,
 			},
 		},
 		["Tainted Blood"] = {
@@ -76369,9 +76375,10 @@ WeakAurasOptionsSaved = {
 				[14430] = 136235,
 			},
 		},
-		["Ruul Snowhoof Shapechange (DND)"] = {
+		["Increased Rejuvenation Healing"] = {
 			["spells"] = {
-				[20514] = 136235,
+				[27853] = 136052,
+				[32402] = 136052,
 			},
 		},
 		["Acid of Hakkar"] = {
@@ -76393,9 +76400,11 @@ WeakAurasOptionsSaved = {
 				[11442] = 136134,
 			},
 		},
-		["[PH] Cystal Bazooka"] = {
+		["Amplify Damage"] = {
 			["spells"] = {
-				[27849] = 136235,
+				[12738] = 136006,
+				[12248] = 136006,
+				[39095] = 136201,
 			},
 		},
 		["Improved Holy Light"] = {
@@ -76403,10 +76412,10 @@ WeakAurasOptionsSaved = {
 				[24457] = 136235,
 			},
 		},
-		["Unyielding Faith"] = {
+		["Devotion Armor Increased"] = {
 			["spells"] = {
-				[9453] = 135984,
-				[25836] = 135984,
+				[27850] = 136052,
+				[352513] = 136052,
 			},
 		},
 		["Lakota'mani's Thunder"] = {
@@ -76465,10 +76474,10 @@ WeakAurasOptionsSaved = {
 				[40342] = 136235,
 			},
 		},
-		["Seal Cost Reduced"] = {
+		["Unyielding Faith"] = {
 			["spells"] = {
-				[27848] = 136052,
-				[352580] = 136052,
+				[9453] = 135984,
+				[25836] = 135984,
 			},
 		},
 		["Increase Arcane Dam 53"] = {
@@ -76481,6 +76490,22 @@ WeakAurasOptionsSaved = {
 				[30548] = 136235,
 			},
 		},
+		["Seal Cost Reduced"] = {
+			["spells"] = {
+				[27848] = 136052,
+				[352580] = 136052,
+			},
+		},
+		["Summon Bomb"] = {
+			["spells"] = {
+				[15048] = 132311,
+			},
+		},
+		["Increased Strength 04"] = {
+			["spells"] = {
+				[7506] = 136235,
+			},
+		},
 		["Concussion"] = {
 			["spells"] = {
 				[16106] = 135807,
@@ -76490,29 +76515,15 @@ WeakAurasOptionsSaved = {
 				[16035] = 135807,
 			},
 		},
-		["Summon Bomb"] = {
+		["Silverwing Flag"] = {
 			["spells"] = {
-				[15048] = 132311,
+				[23335] = 132486,
 			},
 		},
-		["Bly's Band's Escape"] = {
+		["Greater Blessing of Light"] = {
 			["spells"] = {
-				[11365] = 134414,
-			},
-		},
-		["Summon Royal Air, Trigger"] = {
-			["spells"] = {
-				[24791] = 136235,
-			},
-		},
-		["Mana Detonation"] = {
-			["spells"] = {
-				[27820] = 136116,
-			},
-		},
-		["Handstitched Leather Boots"] = {
-			["spells"] = {
-				[2149] = 136247,
+				[25890] = 135909,
+				[27145] = 135909,
 			},
 		},
 		["Salt Flats Racer Slow"] = {
@@ -76541,11 +76552,9 @@ WeakAurasOptionsSaved = {
 				[14984] = 136235,
 			},
 		},
-		["Healthstone"] = {
+		["Transmute: Water to Undeath"] = {
 			["spells"] = {
-				[23472] = 135230,
-				[23473] = 135230,
-				[5720] = 135230,
+				[17564] = 134459,
 			},
 		},
 		["Dowse Eternal Flame"] = {
@@ -76553,19 +76562,19 @@ WeakAurasOptionsSaved = {
 				[12253] = 136235,
 			},
 		},
-		["Increase Fire Dam 9"] = {
+		["Mana Detonation"] = {
 			["spells"] = {
-				[7688] = 136235,
+				[27820] = 136116,
 			},
 		},
-		["Magic Resistance Potion"] = {
+		["Enchant Bracer - Minor Spirit"] = {
 			["spells"] = {
-				[11453] = 136235,
+				[7766] = 135913,
 			},
 		},
-		["Lightning Wave"] = {
+		["Improved Mana/Health Totems"] = {
 			["spells"] = {
-				[24819] = 136015,
+				[24436] = 136235,
 			},
 		},
 		["Primal Batskin Jerkin"] = {
@@ -76578,10 +76587,9 @@ WeakAurasOptionsSaved = {
 				[24628] = 136121,
 			},
 		},
-		["Hi-Explosive Bomb"] = {
+		["Increased Spirit 24"] = {
 			["spells"] = {
-				[12543] = 135826,
-				[12619] = 136235,
+				[14444] = 136235,
 			},
 		},
 		["Ornate Thorium Handaxe"] = {
@@ -76601,9 +76609,9 @@ WeakAurasOptionsSaved = {
 				[40761] = 136235,
 			},
 		},
-		["Basilisk Skin"] = {
+		["Magic Resistance Potion"] = {
 			["spells"] = {
-				[10351] = 134314,
+				[11453] = 136235,
 			},
 		},
 		["Small Leather Ammo Pouch"] = {
@@ -76611,9 +76619,9 @@ WeakAurasOptionsSaved = {
 				[9062] = 136247,
 			},
 		},
-		["Dense Grinding Stone"] = {
+		["The Human Spirit"] = {
 			["spells"] = {
-				[16639] = 136192,
+				[20598] = 132874,
 			},
 		},
 		["QA Expert Cook"] = {
@@ -76626,15 +76634,14 @@ WeakAurasOptionsSaved = {
 				[24217] = 136235,
 			},
 		},
-		["Summon Burning Felguard"] = {
+		["Lesser Blocking"] = {
 			["spells"] = {
-				[16004] = 135805,
+				[13690] = 136235,
 			},
 		},
-		["Holy Reach"] = {
+		["Shadow Fissure"] = {
 			["spells"] = {
-				[27789] = 135949,
-				[27790] = 135949,
+				[27810] = 136134,
 			},
 		},
 		["Fire Ward"] = {
@@ -76659,10 +76666,9 @@ WeakAurasOptionsSaved = {
 				[14293] = 135139,
 			},
 		},
-		["Rogue Armor Energize"] = {
+		["Holiday - Teleport: Moonglade"] = {
 			["spells"] = {
-				[27787] = 136235,
-				[27788] = 136039,
+				[26448] = 135758,
 			},
 		},
 		["Watery Grave Explosion"] = {
@@ -76684,15 +76690,15 @@ WeakAurasOptionsSaved = {
 				[46527] = 135913,
 			},
 		},
-		["Greater Firepower"] = {
+		["Nullify Disease"] = {
 			["spells"] = {
-				[26276] = 134840,
+				[2871] = 136083,
 			},
 		},
-		["The Furious Storm"] = {
+		["Holy Reach"] = {
 			["spells"] = {
-				[27774] = 136235,
-				[27775] = 136014,
+				[27789] = 135949,
+				[27790] = 135949,
 			},
 		},
 		["Summon Karrog"] = {
@@ -76700,12 +76706,10 @@ WeakAurasOptionsSaved = {
 				[40640] = 136235,
 			},
 		},
-		["Summon Incubus"] = {
+		["Hunter Armor Energize"] = {
 			["spells"] = {
-				[713] = 4352492,
-				[366881] = 4352492,
-				[366894] = 136220,
-				[366902] = 136220,
+				[27785] = 136235,
+				[27786] = 136039,
 			},
 		},
 		["Blazerunner Dispel"] = {
@@ -76735,9 +76739,10 @@ WeakAurasOptionsSaved = {
 				[49844] = 134248,
 			},
 		},
-		["Create Incomplete Banner of Provocation"] = {
+		["The Furious Storm"] = {
 			["spells"] = {
-				[27756] = 136235,
+				[27774] = 136235,
+				[27775] = 136014,
 			},
 		},
 		["Taxi - Skettis to Skyguard Outpost"] = {
@@ -76820,9 +76825,12 @@ WeakAurasOptionsSaved = {
 				[32469] = 136247,
 			},
 		},
-		["Create Ectoplasmic Distiller"] = {
+		["Improved Renew"] = {
 			["spells"] = {
-				[27752] = 136235,
+				[37593] = 136235,
+				[15020] = 135953,
+				[14908] = 135953,
+				[17191] = 135953,
 			},
 		},
 		["Shade Visual"] = {
@@ -76835,14 +76843,14 @@ WeakAurasOptionsSaved = {
 				[18239] = 136192,
 			},
 		},
-		["Increased Arcane Resist 22"] = {
+		["Increased Frost Resist 04"] = {
 			["spells"] = {
-				[14724] = 136235,
+				[14545] = 136235,
 			},
 		},
-		["Demon Slaying 117"] = {
+		["Create Incomplete Banner of Provocation"] = {
 			["spells"] = {
-				[14098] = 136172,
+				[27756] = 136235,
 			},
 		},
 		["Attack Power Ranged 46"] = {
@@ -76850,9 +76858,9 @@ WeakAurasOptionsSaved = {
 				[21444] = 136235,
 			},
 		},
-		["Nitrous Boost"] = {
+		["Prophecy Flash Heal Bonus"] = {
 			["spells"] = {
-				[27746] = 134797,
+				[21973] = 136235,
 			},
 		},
 		["Tauren Male Illusion TEST"] = {
@@ -76860,9 +76868,9 @@ WeakAurasOptionsSaved = {
 				[37810] = 134174,
 			},
 		},
-		["Right Piece of Lord Valthalak's Amulet"] = {
+		["Stinging Trauma"] = {
 			["spells"] = {
-				[27738] = 136235,
+				[23299] = 136067,
 			},
 		},
 		["Southsea Cannon Fire"] = {
@@ -76870,9 +76878,10 @@ WeakAurasOptionsSaved = {
 				[6252] = 135810,
 			},
 		},
-		["Increase Arcane Dam 37"] = {
+		["Mark of Flames"] = {
 			["spells"] = {
-				[17832] = 136235,
+				[15128] = 135807,
+				[25050] = 135807,
 			},
 		},
 		["Test Strike R50"] = {
@@ -76885,19 +76894,21 @@ WeakAurasOptionsSaved = {
 				[29690] = 132797,
 			},
 		},
-		["Create Thunder Bluff Satchel of Cards"] = {
+		["Twilight Cultist Disguise"] = {
 			["spells"] = {
-				[27715] = 136235,
+				[24746] = 136235,
+				[24748] = 136235,
+				[24782] = 136235,
 			},
 		},
-		["Increase Holy Dam 49"] = {
+		["Demon Slaying 117"] = {
 			["spells"] = {
-				[21532] = 136235,
+				[14098] = 136172,
 			},
 		},
-		["Shadow Barrier"] = {
+		["Nitrous Boost"] = {
 			["spells"] = {
-				[17151] = 136121,
+				[27746] = 134797,
 			},
 		},
 		["Heal Pet"] = {
@@ -76905,9 +76916,9 @@ WeakAurasOptionsSaved = {
 				[18386] = 135915,
 			},
 		},
-		["Summon Tamed Raptor"] = {
+		["Right Piece of Lord Valthalak's Amulet"] = {
 			["spells"] = {
-				[7910] = 133723,
+				[27738] = 136235,
 			},
 		},
 		["Increased Agility 43"] = {
@@ -76930,9 +76941,9 @@ WeakAurasOptionsSaved = {
 				[8140] = 136175,
 			},
 		},
-		["Fire Storm"] = {
+		["Buttermilk Delight"] = {
 			["spells"] = {
-				[13899] = 135826,
+				[27720] = 135457,
 			},
 		},
 		["Administer Antidote"] = {
@@ -76951,9 +76962,9 @@ WeakAurasOptionsSaved = {
 				[28439] = 136235,
 			},
 		},
-		["Disarm Trap"] = {
+		["Increased Spirit 32"] = {
 			["spells"] = {
-				[1842] = 136162,
+				[14454] = 136235,
 			},
 		},
 		["Arena Ends"] = {
@@ -76966,47 +76977,19 @@ WeakAurasOptionsSaved = {
 				[16643] = 136192,
 			},
 		},
-		["Increase Frost Dam 13"] = {
+		["Item +HP/FR Leg R2"] = {
 			["spells"] = {
-				[9403] = 136235,
+				[15428] = 136235,
 			},
 		},
-		["Holy Fire"] = {
+		["Increased Fire Resist 12"] = {
 			["spells"] = {
-				[29522] = 135972,
-				[25384] = 135972,
-				[38585] = 135972,
-				[15266] = 135972,
-				[17140] = 135972,
-				[17141] = 135972,
-				[15267] = 135972,
-				[17142] = 135972,
-				[18167] = 135972,
-				[15261] = 135972,
-				[15262] = 135972,
-				[29563] = 135972,
-				[23860] = 135972,
-				[15263] = 135972,
-				[39323] = 136235,
-				[36947] = 135972,
-				[18165] = 135972,
-				[15264] = 135972,
-				[14914] = 135972,
-				[15265] = 135972,
+				[14592] = 136235,
 			},
 		},
-		["Dive"] = {
+		["Absorb Blow"] = {
 			["spells"] = {
-				[23145] = 136126,
-				[23149] = 136126,
-				[29903] = 132182,
-				[37156] = 132182,
-				[23146] = 136126,
-				[23150] = 136126,
-				[23147] = 136126,
-				[40279] = 132182,
-				[23148] = 136126,
-				[37588] = 132307,
+				[5102] = 136225,
 			},
 		},
 		["Burning Light"] = {
@@ -77014,14 +76997,14 @@ WeakAurasOptionsSaved = {
 				[37552] = 132355,
 			},
 		},
-		["Minor Movement Speed"] = {
+		["Greater Holy Protection Potion"] = {
 			["spells"] = {
-				[24090] = 136235,
+				[17579] = 136235,
 			},
 		},
-		["Create Ironforge Case of Homebrew"] = {
+		["Increase Frost Dam 13"] = {
 			["spells"] = {
-				[27706] = 136235,
+				[9403] = 136235,
 			},
 		},
 		["Swift Spectral Tiger"] = {
@@ -77034,20 +77017,19 @@ WeakAurasOptionsSaved = {
 				[37210] = 136235,
 			},
 		},
-		["Rebuild"] = {
+		["Fix Ritual Node"] = {
 			["spells"] = {
-				[10345] = 136168,
-				[13951] = 136168,
+				[23061] = 136235,
 			},
 		},
-		["Create Ironforge Parcel of Cards"] = {
+		["Increased Hit Rating 100"] = {
 			["spells"] = {
-				[27703] = 136235,
+				[18066] = 136235,
 			},
 		},
-		["Journeyman Herbalist"] = {
+		["Create Ironforge Case of Homebrew"] = {
 			["spells"] = {
-				[2373] = 136246,
+				[27706] = 136235,
 			},
 		},
 		["Recall"] = {
@@ -77082,10 +77064,9 @@ WeakAurasOptionsSaved = {
 				[28676] = 134918,
 			},
 		},
-		["Feral Swiftness"] = {
+		["Journeyman Herbalist"] = {
 			["spells"] = {
-				[17002] = 136095,
-				[24866] = 136095,
+				[2373] = 136246,
 			},
 		},
 		["Dark Whispers"] = {
@@ -77093,9 +77074,9 @@ WeakAurasOptionsSaved = {
 				[16587] = 136163,
 			},
 		},
-		["Enchant Boots - Minor Agility"] = {
+		["Fine Leather Tunic"] = {
 			["spells"] = {
-				[7867] = 135913,
+				[3761] = 136247,
 			},
 		},
 		["Sunwell Portal Quests Flag"] = {
@@ -77157,15 +77138,14 @@ WeakAurasOptionsSaved = {
 				[37890] = 135913,
 			},
 		},
-		["Exploding Heart"] = {
+		["Fire Shield Effect III"] = {
 			["spells"] = {
-				[27676] = 135830,
+				[3054] = 135817,
 			},
 		},
-		["Alterac Spring Water"] = {
+		["Increase Spell Dam 29"] = {
 			["spells"] = {
-				[23697] = 135928,
-				[23698] = 132794,
+				[13881] = 136235,
 			},
 		},
 		["Bloodtooth's Totum"] = {
@@ -77173,24 +77153,27 @@ WeakAurasOptionsSaved = {
 				[6239] = 132277,
 			},
 		},
-		["Chromatic Infusion"] = {
+		["Mightfish Steak"] = {
 			["spells"] = {
-				[27675] = 135934,
+				[18246] = 136192,
 			},
 		},
-		["Hyena Sample"] = {
+		["Teleport to Razelikh (GROUP)"] = {
 			["spells"] = {
-				[11760] = 136235,
+				[27686] = 136235,
 			},
 		},
-		["Create Horde Gift Collection"] = {
+		["Prayer of Shadow Protection"] = {
 			["spells"] = {
-				[27668] = 136235,
+				[39236] = 135945,
+				[39374] = 135945,
+				[27683] = 135945,
 			},
 		},
-		["Darnassus Gift of Friendship"] = {
+		["Prayer of Spirit"] = {
 			["spells"] = {
-				[27666] = 133203,
+				[27681] = 135946,
+				[32999] = 135946,
 			},
 		},
 		["Carrot on a Stick"] = {
@@ -77200,19 +77183,15 @@ WeakAurasOptionsSaved = {
 				[48534] = 134010,
 			},
 		},
-		["Nature's Ally"] = {
+		["Exploding Heart"] = {
 			["spells"] = {
-				[21938] = 136095,
-				[21925] = 136095,
-				[20988] = 136095,
-				[21927] = 136095,
-				[21928] = 136095,
-				[21926] = 136095,
+				[27676] = 135830,
 			},
 		},
-		["Block Value 15"] = {
+		["Alterac Spring Water"] = {
 			["spells"] = {
-				[23203] = 136235,
+				[23697] = 135928,
+				[23698] = 132794,
 			},
 		},
 		["Tame Snow Leopard"] = {
@@ -77227,9 +77206,9 @@ WeakAurasOptionsSaved = {
 				[9463] = 136100,
 			},
 		},
-		["Love Fool"] = {
+		["Chromatic Infusion"] = {
 			["spells"] = {
-				[27661] = 136172,
+				[27675] = 135934,
 			},
 		},
 		["Legion Teleporter"] = {
@@ -77237,9 +77216,9 @@ WeakAurasOptionsSaved = {
 				[45038] = 136235,
 			},
 		},
-		["Big Bag of Enchantment"] = {
+		["Dragonstalker B"] = {
 			["spells"] = {
-				[27660] = 132149,
+				[21966] = 136095,
 			},
 		},
 		["Super Food (TEST)"] = {
@@ -77252,10 +77231,9 @@ WeakAurasOptionsSaved = {
 				[14398] = 136235,
 			},
 		},
-		["Musty Tome Trap"] = {
+		["Create Horde Gift Collection"] = {
 			["spells"] = {
-				[17134] = 136129,
-				[19150] = 136129,
+				[27668] = 136235,
 			},
 		},
 		["Improved Healing"] = {
@@ -77265,14 +77243,14 @@ WeakAurasOptionsSaved = {
 				[15014] = 135916,
 			},
 		},
-		["Dirk's Rememberin' Poison"] = {
+		["Darnassus Gift of Friendship"] = {
 			["spells"] = {
-				[27582] = 136116,
+				[27666] = 133203,
 			},
 		},
-		["Increase Shadow Dam 43"] = {
+		["Ironforge Gift of Friendship"] = {
 			["spells"] = {
-				[18020] = 136235,
+				[27665] = 134140,
 			},
 		},
 		["Chakra Drain"] = {
@@ -77297,9 +77275,9 @@ WeakAurasOptionsSaved = {
 				[25716] = 136168,
 			},
 		},
-		["Journeyman Blacksmith"] = {
+		["Love Fool"] = {
 			["spells"] = {
-				[2021] = 136241,
+				[27661] = 136172,
 			},
 		},
 		["QAEnchant 2H Weapon +70 Attack Power"] = {
@@ -77312,9 +77290,9 @@ WeakAurasOptionsSaved = {
 				[35150] = 135864,
 			},
 		},
-		["Baron Rivendare's Soul Drain"] = {
+		["Rapid Gallop"] = {
 			["spells"] = {
-				[27640] = 136208,
+				[4105] = 132319,
 			},
 		},
 		["Enchant Cloak - Greater Resistance"] = {
@@ -77342,22 +77320,9 @@ WeakAurasOptionsSaved = {
 				[30413] = 136201,
 			},
 		},
-		["Gouge"] = {
+		["Baron Rivendare's Soul Drain"] = {
 			["spells"] = {
-				[12540] = 132155,
-				[36862] = 132155,
-				[13579] = 132155,
-				[24698] = 132155,
-				[28456] = 132155,
-				[1776] = 132155,
-				[11286] = 132155,
-				[38764] = 132155,
-				[11285] = 132155,
-				[29425] = 132155,
-				[34940] = 132155,
-				[38863] = 132155,
-				[1777] = 132155,
-				[8629] = 132155,
+				[27640] = 136208,
 			},
 		},
 		["Verdant Flame"] = {
@@ -77406,9 +77371,22 @@ WeakAurasOptionsSaved = {
 				[43446] = 135826,
 			},
 		},
-		["Black Grasp of the Destroyer"] = {
+		["Gouge"] = {
 			["spells"] = {
-				[27589] = 136192,
+				[12540] = 132155,
+				[36862] = 132155,
+				[13579] = 132155,
+				[24698] = 132155,
+				[28456] = 132155,
+				[1776] = 132155,
+				[11286] = 132155,
+				[38764] = 132155,
+				[11285] = 132155,
+				[29425] = 132155,
+				[34940] = 132155,
+				[38863] = 132155,
+				[1777] = 132155,
+				[8629] = 132155,
 			},
 		},
 		["Lean Wolf Steak"] = {
@@ -77416,9 +77394,9 @@ WeakAurasOptionsSaved = {
 				[15853] = 136192,
 			},
 		},
-		["Test Strike W50"] = {
+		["Shadows Consumed"] = {
 			["spells"] = {
-				[23848] = 132355,
+				[27599] = 136121,
 			},
 		},
 		["Turtle Scale Bracers"] = {
@@ -77436,14 +77414,14 @@ WeakAurasOptionsSaved = {
 				[16796] = 136235,
 			},
 		},
-		["Immune Root/Snare/Stun"] = {
+		["Obsidian Mail Tunic"] = {
 			["spells"] = {
-				[5579] = 135894,
+				[27590] = 136192,
 			},
 		},
-		["Light Obsidian Belt"] = {
+		["Gizlock's Dummy Charm Effect"] = {
 			["spells"] = {
-				[27588] = 136192,
+				[21835] = 136235,
 			},
 		},
 		["Shadow Blast"] = {
@@ -77458,14 +77436,14 @@ WeakAurasOptionsSaved = {
 				[29355] = 136248,
 			},
 		},
+		["Immune Root/Snare/Stun"] = {
+			["spells"] = {
+				[5579] = 135894,
+			},
+		},
 		["Dirk's Rememberin' Poison Effect DND"] = {
 			["spells"] = {
 				[27583] = 136116,
-			},
-		},
-		["Picnic Feast"] = {
-			["spells"] = {
-				[27573] = 136235,
 			},
 		},
 		["Attack Power"] = {
@@ -77481,9 +77459,9 @@ WeakAurasOptionsSaved = {
 				[19937] = 135942,
 			},
 		},
-		["Cascade of Roses"] = {
+		["Picnic Feast"] = {
 			["spells"] = {
-				[27571] = 133851,
+				[27573] = 136235,
 			},
 		},
 		["Nether Infusion"] = {
@@ -77493,9 +77471,9 @@ WeakAurasOptionsSaved = {
 				[38853] = 136150,
 			},
 		},
-		["Increased Intellect 03"] = {
+		["Spirit of Kirith"] = {
 			["spells"] = {
-				[7470] = 136235,
+				[10853] = 135864,
 			},
 		},
 		["Electromagnetic Gigaflux Reactivator"] = {
@@ -77513,9 +77491,9 @@ WeakAurasOptionsSaved = {
 				[28527] = 134206,
 			},
 		},
-		["Conjure Frostwolf Rank 2 Insignia DND"] = {
+		["Summon Peddlefeet"] = {
 			["spells"] = {
-				[22109] = 136235,
+				[27570] = 132311,
 			},
 		},
 		["Increased Nature Resist 42"] = {
@@ -77533,13 +77511,9 @@ WeakAurasOptionsSaved = {
 				[27541] = 133749,
 			},
 		},
-		["Trueshot Aura"] = {
+		["Obsidian Armor"] = {
 			["spells"] = {
-				[20905] = 132329,
-				[27066] = 132329,
-				[31519] = 132329,
-				[20906] = 132329,
-				[19506] = 132329,
+				[27539] = 136235,
 			},
 		},
 		["Piercing Screech"] = {
@@ -77547,9 +77521,9 @@ WeakAurasOptionsSaved = {
 				[16576] = 136230,
 			},
 		},
-		["Obsidian Armor"] = {
+		["Holy Resistance"] = {
 			["spells"] = {
-				[27539] = 136235,
+				[27536] = 135880,
 			},
 		},
 		["Mind Soothe"] = {
@@ -77565,24 +77539,28 @@ WeakAurasOptionsSaved = {
 				[27529] = 136235,
 			},
 		},
-		["Receive Quest Object, Common, Stormwind"] = {
+		["Increase Spell Dam 14"] = {
 			["spells"] = {
-				[27525] = 136235,
+				[356299] = 136235,
+				[40705] = 136235,
+				[9343] = 136235,
 			},
 		},
-		["Expert Enchanting"] = {
+		["Defibrillated!"] = {
 			["spells"] = {
-				[7416] = 136244,
+				[23055] = 136075,
+				[8338] = 136075,
+				[34330] = 136075,
 			},
 		},
-		["Increased Shadow Resist 42"] = {
+		["Chestnut Mare"] = {
 			["spells"] = {
-				[14991] = 136235,
+				[6648] = 132261,
 			},
 		},
-		["Summon Illusionary Phantasm"] = {
+		["Summon Karang's Banner"] = {
 			["spells"] = {
-				[8986] = 135824,
+				[20737] = 136235,
 			},
 		},
 		["Demonic Vapor Beam Visual"] = {
@@ -77590,14 +77568,14 @@ WeakAurasOptionsSaved = {
 				[45389] = 136235,
 			},
 		},
-		["Receive Quest Object, Common, Ironforge"] = {
+		["Spell Damage Reduction"] = {
 			["spells"] = {
-				[27520] = 136235,
+				[27518] = 136235,
 			},
 		},
-		["Black Mageweave Shoulders"] = {
+		["Receive Reward AND Quest Object, Common, Thunder Bluff"] = {
 			["spells"] = {
-				[12074] = 132149,
+				[27511] = 136235,
 			},
 		},
 		["Golden Skeleton Key"] = {
@@ -77611,9 +77589,9 @@ WeakAurasOptionsSaved = {
 				[3866] = 132149,
 			},
 		},
-		["Spell Damage Reduction"] = {
+		["Receive Quest Object, Ironforge Guard"] = {
 			["spells"] = {
-				[27518] = 136235,
+				[27506] = 136235,
 			},
 		},
 		["Increase Holy Dam 34"] = {
@@ -77645,19 +77623,19 @@ WeakAurasOptionsSaved = {
 				[24905] = 136036,
 			},
 		},
-		["Aura Leech (PT)"] = {
+		["Receive Quest Object, Darnassus Guard"] = {
 			["spells"] = {
-				[2969] = 136235,
+				[27504] = 136235,
 			},
 		},
-		["Receive Reward AND Quest Object, Common, Thunder Bluff"] = {
+		["Red Swashbuckler's Shirt"] = {
 			["spells"] = {
-				[27511] = 136235,
+				[8489] = 132149,
 			},
 		},
-		["Obsidian Insight"] = {
+		["Increase Holy Dam 33"] = {
 			["spells"] = {
-				[26166] = 133573,
+				[21521] = 136235,
 			},
 		},
 		["Increase Healing 77"] = {
@@ -77699,14 +77677,15 @@ WeakAurasOptionsSaved = {
 				[25262] = 136016,
 			},
 		},
-		["Receive Quest Object, Ironforge Guard"] = {
+		["Shadow Staff"] = {
 			["spells"] = {
-				[27506] = 136235,
+				[27338] = 136137,
 			},
 		},
-		["Receive Reward AND Quest Object, Common, Orgrimmar"] = {
+		["Shadow Wrath"] = {
 			["spells"] = {
-				[27505] = 136235,
+				[27286] = 136208,
+				[37372] = 136208,
 			},
 		},
 		["Sarilus's Elementals Passive"] = {
@@ -77720,9 +77699,9 @@ WeakAurasOptionsSaved = {
 				[16560] = 135826,
 			},
 		},
-		["Idom Rool Camera Shake"] = {
+		["dmg11"] = {
 			["spells"] = {
-				[12816] = 136235,
+				[27261] = 136115,
 			},
 		},
 		["Increased Dodge 12"] = {
@@ -77741,12 +77720,9 @@ WeakAurasOptionsSaved = {
 				[37652] = 136172,
 			},
 		},
-		["Improved Mend Pet"] = {
+		["Uber Stealth"] = {
 			["spells"] = {
-				[24406] = 132179,
-				[19572] = 132179,
-				[19573] = 132179,
-				[23560] = 136235,
+				[10032] = 132320,
 			},
 		},
 		["Will of Shahram"] = {
@@ -77759,23 +77735,19 @@ WeakAurasOptionsSaved = {
 				[39341] = 136235,
 			},
 		},
-		["Stormbolt"] = {
+		["dmg10"] = {
 			["spells"] = {
-				[19136] = 132325,
-				[38032] = 135846,
-				[38400] = 135990,
+				[27258] = 136115,
 			},
 		},
-		["Ectoplasmic Distiller"] = {
+		["Receive Reward AND Quest Object, Thunder Bluff Guard"] = {
 			["spells"] = {
-				[27420] = 135990,
-				[27433] = 136074,
+				[27248] = 136235,
 			},
 		},
-		["Warrior's Resolve"] = {
+		["Receive Reward AND Quest Object, Orgrimmar Guard"] = {
 			["spells"] = {
-				[27418] = 135953,
-				[27419] = 135953,
+				[27247] = 136235,
 			},
 		},
 		["Scarshield Portal"] = {
@@ -77814,9 +77786,9 @@ WeakAurasOptionsSaved = {
 				[40571] = 132870,
 			},
 		},
-		["Spellstone"] = {
+		["Nether Cloak"] = {
 			["spells"] = {
-				[128] = 134131,
+				[27181] = 136177,
 			},
 		},
 		["Wild Regeneration"] = {
@@ -77833,9 +77805,9 @@ WeakAurasOptionsSaved = {
 				[44482] = 135986,
 			},
 		},
-		["dmg11"] = {
+		["Summon Tamed Turtle"] = {
 			["spells"] = {
-				[27261] = 136115,
+				[7915] = 134061,
 			},
 		},
 		["Increase Arcane Dam 24"] = {
@@ -77843,9 +77815,10 @@ WeakAurasOptionsSaved = {
 				[17822] = 136235,
 			},
 		},
-		["dmg10"] = {
+		["Improved Arcane Intellect"] = {
 			["spells"] = {
-				[27258] = 136115,
+				[21088] = 135753,
+				[24489] = 136235,
 			},
 		},
 		["Increase Reputation"] = {
@@ -77879,9 +77852,9 @@ WeakAurasOptionsSaved = {
 				[16846] = 136087,
 			},
 		},
-		["Increased Intellect 01"] = {
+		["QAEnchant Cloak -2% Threat"] = {
 			["spells"] = {
-				[7468] = 136235,
+				[27121] = 135913,
 			},
 		},
 		["Blow up Felcannons Quest"] = {
@@ -77909,9 +77882,9 @@ WeakAurasOptionsSaved = {
 				[19697] = 132164,
 			},
 		},
-		["Receive Reward AND Quest Object, Thunder Bluff Guard"] = {
+		["QAEnchant Gloves +30 Healing"] = {
 			["spells"] = {
-				[27248] = 136235,
+				[27111] = 135913,
 			},
 		},
 		["Red, White and Blue Firework"] = {
@@ -77919,9 +77892,9 @@ WeakAurasOptionsSaved = {
 				[11543] = 136235,
 			},
 		},
-		["Receive Reward AND Quest Object, Orgrimmar Guard"] = {
+		["Brown Skeletal Horse"] = {
 			["spells"] = {
-				[27247] = 136235,
+				[17464] = 132264,
 			},
 		},
 		["Venom Spit"] = {
@@ -77955,14 +77928,14 @@ WeakAurasOptionsSaved = {
 				[14634] = 136235,
 			},
 		},
-		["Receive Reward AND Quest Object, Darnassus Guard"] = {
+		["QAEnchant Gloves +20 Frost Damage"] = {
 			["spells"] = {
-				[27245] = 136235,
+				[27108] = 135913,
 			},
 		},
-		["Receive Reward AND Quest Object, Ironforge Guard"] = {
+		["Test Black Diamond"] = {
 			["spells"] = {
-				[27244] = 136235,
+				[27057] = 136192,
 			},
 		},
 		["Summon Mor Grayhoof DND"] = {
@@ -77975,14 +77948,15 @@ WeakAurasOptionsSaved = {
 				[581] = 132266,
 			},
 		},
-		["BM ON"] = {
+		["Increased Pet Crit +2%"] = {
 			["spells"] = {
-				[24676] = 132096,
+				[27042] = 136095,
+				[27043] = 136095,
 			},
 		},
-		["Calm Hostility"] = {
+		["Stealth +8"] = {
 			["spells"] = {
-				[8353] = 132270,
+				[27037] = 132320,
 			},
 		},
 		["Enchanted Thorium Breastplate"] = {
@@ -77990,9 +77964,9 @@ WeakAurasOptionsSaved = {
 				[16745] = 136192,
 			},
 		},
-		["Increase Frost Dam 21"] = {
+		["Woven Copper Ring"] = {
 			["spells"] = {
-				[9308] = 136235,
+				[26925] = 136235,
 			},
 		},
 		["Summon Spirit of Mograine"] = {
@@ -78011,9 +77985,9 @@ WeakAurasOptionsSaved = {
 				[7960] = 134335,
 			},
 		},
-		["Freeze Anim"] = {
+		["Figurine - Emerald Owl"] = {
 			["spells"] = {
-				[16245] = 136235,
+				[26909] = 136235,
 			},
 		},
 		["Attack Power Ranged 79"] = {
@@ -78036,9 +78010,9 @@ WeakAurasOptionsSaved = {
 				[12843] = 136121,
 			},
 		},
-		["Rough Boomstick"] = {
+		["Calm Hostility"] = {
 			["spells"] = {
-				[3925] = 136235,
+				[8353] = 132270,
 			},
 		},
 		["Stasis Field"] = {
@@ -78059,18 +78033,15 @@ WeakAurasOptionsSaved = {
 				[68] = 136235,
 			},
 		},
-		["Foul Chill"] = {
+		["Enchant Weapon - Mighty Spirit"] = {
 			["spells"] = {
-				[6873] = 135864,
+				[23803] = 135913,
+				[359642] = 135913,
 			},
 		},
-		["Endurance Training"] = {
+		["Attack Power Ranged 70"] = {
 			["spells"] = {
-				[19586] = 136080,
-				[19587] = 136080,
-				[19583] = 136080,
-				[19584] = 136080,
-				[19585] = 136080,
+				[21453] = 136235,
 			},
 		},
 		["Arclight Spanner"] = {
@@ -78083,26 +78054,26 @@ WeakAurasOptionsSaved = {
 				[43483] = 136235,
 			},
 		},
-		["Deadly Poison VII"] = {
+		["Instant Poison VII"] = {
 			["spells"] = {
-				[27186] = 132290,
-				[27187] = 132290,
-				[27282] = 132290,
+				[26891] = 132273,
+				[26892] = 132273,
+				[26890] = 132273,
 			},
 		},
-		["Greater Heal Renew"] = {
+		["Rough Boomstick"] = {
 			["spells"] = {
-				[22010] = 136235,
+				[3925] = 136235,
 			},
 		},
-		["Rocket, WHITE BIG"] = {
+		["Truesilver Healing Ring"] = {
 			["spells"] = {
-				[26355] = 136235,
+				[26885] = 136235,
 			},
 		},
-		["Nether Cloak"] = {
+		["Foul Chill"] = {
 			["spells"] = {
-				[27181] = 136177,
+				[6873] = 135864,
 			},
 		},
 		["Sleeping Sleep"] = {
@@ -78119,9 +78090,9 @@ WeakAurasOptionsSaved = {
 				[28521] = 134739,
 			},
 		},
-		["QAEnchant Cloak +1% Dodge"] = {
+		["Artisan Leatherworking"] = {
 			["spells"] = {
-				[27122] = 135913,
+				[10663] = 133611,
 			},
 		},
 		["Simon Game - Good Press"] = {
@@ -78129,38 +78100,14 @@ WeakAurasOptionsSaved = {
 				[40063] = 136235,
 			},
 		},
-		["Sacrifice"] = {
+		["Arathi Basin Mark of Honor (Loser)"] = {
 			["spells"] = {
-				[19446] = 136190,
-				[19447] = 136190,
-				[27492] = 136190,
-				[1050] = 135896,
-				[7885] = 136190,
-				[20381] = 136190,
-				[7812] = 136190,
-				[20382] = 136190,
-				[20383] = 136190,
-				[19438] = 136190,
-				[20384] = 136190,
-				[19439] = 136190,
-				[20385] = 136190,
-				[19440] = 136190,
-				[20386] = 136190,
-				[19441] = 136190,
-				[19442] = 136190,
-				[22651] = 136120,
-				[19443] = 136190,
-				[34661] = 136120,
-				[19444] = 136190,
-				[33587] = 136221,
-				[19445] = 136190,
-				[27273] = 136190,
-				[30115] = 136120,
+				[24952] = 136235,
 			},
 		},
-		["Create Frostwolf Assault Order (DND)"] = {
+		["Greater Heal Renew"] = {
 			["spells"] = {
-				[21654] = 136235,
+				[22010] = 136235,
 			},
 		},
 		["Item +INT/FR Leg R2"] = {
@@ -78187,9 +78134,9 @@ WeakAurasOptionsSaved = {
 				[36486] = 136016,
 			},
 		},
-		["Duskwither's Fireball"] = {
+		["Figurine - Golden Hare"] = {
 			["spells"] = {
-				[26660] = 135808,
+				[26873] = 136235,
 			},
 		},
 		["Summon Conquered Soul"] = {
@@ -78197,9 +78144,43 @@ WeakAurasOptionsSaved = {
 				[19096] = 136235,
 			},
 		},
-		["Wicked Mithril Blade"] = {
+		["Poison"] = {
 			["spells"] = {
-				[9997] = 136192,
+				[28241] = 136133,
+				[11918] = 136016,
+				[16400] = 136016,
+				[16401] = 136016,
+				[26610] = 136016,
+				[26612] = 132104,
+				[25605] = 136016,
+				[21952] = 136016,
+				[17292] = 136016,
+				[24097] = 136016,
+				[38616] = 132273,
+				[744] = 136016,
+				[19448] = 136016,
+				[30915] = 136133,
+				[17183] = 136016,
+				[348005] = 136016,
+				[38463] = 136133,
+				[8313] = 136016,
+				[31747] = 136006,
+				[18203] = 136016,
+				[28158] = 136064,
+				[18208] = 136016,
+				[38615] = 132273,
+				[44144] = 136006,
+				[25645] = 136016,
+				[13518] = 136016,
+				[13298] = 136016,
+				[37840] = 136006,
+				[17511] = 136016,
+				[38462] = 136064,
+				[18197] = 136016,
+				[34969] = 136016,
+				[17330] = 136016,
+				[18077] = 136016,
+				[30914] = 136064,
 			},
 		},
 		["Feather Burst"] = {
@@ -78215,9 +78196,9 @@ WeakAurasOptionsSaved = {
 				[19596] = 132120,
 			},
 		},
-		["QAEnchant Gloves +15 Agility"] = {
+		["QAEnchant Weapon +15 Agility"] = {
 			["spells"] = {
-				[27112] = 135913,
+				[26792] = 135913,
 			},
 		},
 		["Inject Poison"] = {
@@ -78226,9 +78207,9 @@ WeakAurasOptionsSaved = {
 				[46046] = 136016,
 			},
 		},
-		["Bind Chapter 2"] = {
+		["Soulcloth Shoulders"] = {
 			["spells"] = {
-				[20530] = 136235,
+				[26780] = 132149,
 			},
 		},
 		["Shadow Embrace"] = {
@@ -78281,18 +78262,14 @@ WeakAurasOptionsSaved = {
 				[17629] = 134828,
 			},
 		},
-		["Unholy Power"] = {
+		["Ebon Shadowbag"] = {
 			["spells"] = {
-				[18769] = 136206,
-				[18770] = 136206,
-				[18771] = 136206,
-				[18772] = 136206,
-				[18773] = 136206,
+				[26759] = 132149,
 			},
 		},
-		["Shadow Protection Potion"] = {
+		["Punctured Voodoo Doll DRU DND"] = {
 			["spells"] = {
-				[7256] = 136235,
+				[24279] = 136235,
 			},
 		},
 		["Increase Nature Dam 27"] = {
@@ -78329,9 +78306,9 @@ WeakAurasOptionsSaved = {
 				[10650] = 136247,
 			},
 		},
-		["Enchant Shield - Lesser Block"] = {
+		["Bolt of Soulcloth"] = {
 			["spells"] = {
-				[13689] = 135913,
+				[26750] = 132149,
 			},
 		},
 		["Increased Strength 11"] = {
@@ -78349,9 +78326,9 @@ WeakAurasOptionsSaved = {
 				[12684] = 132484,
 			},
 		},
-		["Relentless Strikes"] = {
+		["Netherweave Bag"] = {
 			["spells"] = {
-				[14179] = 132340,
+				[26746] = 132149,
 			},
 		},
 		["Savage Assault V"] = {
@@ -78359,9 +78336,9 @@ WeakAurasOptionsSaved = {
 				[1665] = 132316,
 			},
 		},
-		["Test Black Diamond Debug"] = {
+		["Bolt of Netherweave"] = {
 			["spells"] = {
-				[27059] = 136192,
+				[26745] = 132149,
 			},
 		},
 		["Power Siphon"] = {
@@ -78385,20 +78362,24 @@ WeakAurasOptionsSaved = {
 				[16634] = 136235,
 			},
 		},
-		["Increased Pet Crit +2%"] = {
+		["Increase Frost Dam 67"] = {
 			["spells"] = {
-				[27042] = 136095,
-				[27043] = 136095,
+				[26724] = 136235,
 			},
 		},
-		["Stealth +8"] = {
+		["Shadow Protection Potion"] = {
 			["spells"] = {
-				[27037] = 132320,
+				[7256] = 136235,
 			},
 		},
-		["Red Mageweave Headband"] = {
+		["Meteor"] = {
 			["spells"] = {
-				[12084] = 132149,
+				[26558] = 135808,
+				[24340] = 135808,
+				[36837] = 135808,
+				[41276] = 135808,
+				[38903] = 135808,
+				[28884] = 135808,
 			},
 		},
 		["Aspect of the Beast"] = {
@@ -78411,9 +78392,9 @@ WeakAurasOptionsSaved = {
 				[36546] = 136235,
 			},
 		},
-		["[PH] Teleport to Felwood"] = {
+		["Relentless Strikes"] = {
 			["spells"] = {
-				[6483] = 136235,
+				[14179] = 132340,
 			},
 		},
 		["Emote State Ready"] = {
@@ -78427,19 +78408,19 @@ WeakAurasOptionsSaved = {
 				[39098] = 136241,
 			},
 		},
-		["Increased Arcane Resist 36"] = {
+		["Increase Frost Dam 59"] = {
 			["spells"] = {
-				[14738] = 136235,
+				[26718] = 136235,
 			},
 		},
-		["Increase Arcane Dam 19"] = {
+		["Increase Arcane Dam 57"] = {
 			["spells"] = {
-				[13603] = 136235,
+				[26705] = 136235,
 			},
 		},
-		["Summon Panda Cub"] = {
+		["Red Mageweave Headband"] = {
 			["spells"] = {
-				[26972] = 132311,
+				[12084] = 132149,
 			},
 		},
 		["Grovel"] = {
@@ -78452,14 +78433,14 @@ WeakAurasOptionsSaved = {
 				[49965] = 136235,
 			},
 		},
-		["Gray Ram"] = {
+		["Shadoweave Pants"] = {
 			["spells"] = {
-				[6777] = 132248,
+				[12052] = 132149,
 			},
 		},
-		["Gloves of Spell Mastery"] = {
+		["Increase Fire Dam 69"] = {
 			["spells"] = {
-				[18454] = 132149,
+				[26701] = 136235,
 			},
 		},
 		["Increased Fire Resist 32"] = {
@@ -78472,30 +78453,19 @@ WeakAurasOptionsSaved = {
 				[13637] = 135913,
 			},
 		},
-		["Woven Copper Ring"] = {
+		["Increase Fire Dam 64"] = {
 			["spells"] = {
-				[26925] = 136235,
+				[26698] = 136235,
 			},
 		},
-		["Disarm"] = {
+		["Increase Fire Dam 59"] = {
 			["spells"] = {
-				[22691] = 132343,
-				[15752] = 132343,
-				[13534] = 132343,
-				[676] = 132343,
-				[31955] = 132343,
-				[11879] = 132343,
-				[30013] = 132343,
-				[36139] = 132343,
-				[8379] = 132343,
-				[41062] = 132343,
-				[27581] = 132343,
-				[6713] = 132343,
+				[26694] = 136235,
 			},
 		},
-		["Arcanite Sword Pendant"] = {
+		["Increase Healing 110"] = {
 			["spells"] = {
-				[26918] = 136235,
+				[26690] = 136235,
 			},
 		},
 		["Ensnaring Moss"] = {
@@ -78513,17 +78483,14 @@ WeakAurasOptionsSaved = {
 				[17459] = 132247,
 			},
 		},
-		["Cone of Fire"] = {
+		["Cologne"] = {
 			["spells"] = {
-				[30926] = 135831,
-				[36921] = 135831,
-				[19630] = 135831,
-				[36876] = 135831,
+				[26681] = 135446,
 			},
 		},
-		["Armor Shatter"] = {
+		["Tailoring Pattern - Mooncloth Boots"] = {
 			["spells"] = {
-				[16928] = 132403,
+				[21207] = 132539,
 			},
 		},
 		["Submerge Visual"] = {
@@ -78532,9 +78499,9 @@ WeakAurasOptionsSaved = {
 				[28819] = 135830,
 			},
 		},
-		["Rancid Ooze"] = {
+		["Receive Object of Affection"] = {
 			["spells"] = {
-				[3338] = 136133,
+				[26665] = 136235,
 			},
 		},
 		["Lay Wreath"] = {
@@ -78560,20 +78527,19 @@ WeakAurasOptionsSaved = {
 				[28252] = 136235,
 			},
 		},
-		["Split"] = {
+		["Unbalancing Strike"] = {
 			["spells"] = {
-				[19569] = 136192,
-				[19570] = 136192,
+				[26613] = 132340,
 			},
 		},
-		["Minions of Malathrom"] = {
+		["Rancid Ooze"] = {
 			["spells"] = {
-				[3537] = 136133,
+				[3338] = 136133,
 			},
 		},
-		["Dawnbringer Shoulders"] = {
+		["Opening Scarab Coffer"] = {
 			["spells"] = {
-				[16660] = 136192,
+				[26587] = 136235,
 			},
 		},
 		["Razormane Wolf"] = {
@@ -78586,20 +78552,19 @@ WeakAurasOptionsSaved = {
 				[1462] = 132270,
 			},
 		},
-		["Aquadynamic Fish Attractor"] = {
+		["Truesilver Crab"] = {
 			["spells"] = {
-				[8089] = 134335,
-				[9271] = 136235,
+				[26581] = 132186,
 			},
 		},
-		["Sapphire Signet"] = {
+		["Nullify"] = {
 			["spells"] = {
-				[26903] = 136235,
+				[26552] = 136039,
 			},
 		},
-		["Lesser Invisibility Potion"] = {
+		["Lunar Fortune"] = {
 			["spells"] = {
-				[3448] = 136235,
+				[26522] = 134280,
 			},
 		},
 		["Soul Blast"] = {
@@ -78607,9 +78572,9 @@ WeakAurasOptionsSaved = {
 				[41245] = 136131,
 			},
 		},
-		["Scraping"] = {
+		["Large Yellow Firework Cluster"] = {
 			["spells"] = {
-				[13630] = 136235,
+				[26519] = 136235,
 			},
 		},
 		["Energy"] = {
@@ -78617,19 +78582,22 @@ WeakAurasOptionsSaved = {
 				[36514] = 136235,
 			},
 		},
-		["Grilled Squid"] = {
+		["Large White Firework Cluster"] = {
 			["spells"] = {
-				[18240] = 136192,
+				[26518] = 136235,
 			},
 		},
-		["Beast Tracking"] = {
+		["Living Bomb"] = {
 			["spells"] = {
-				[10227] = 132328,
+				[44459] = 135790,
+				[20475] = 132863,
+				[44457] = 135790,
+				[44461] = 135790,
 			},
 		},
-		["Critical Strike"] = {
+		["Large Red Firework Cluster"] = {
 			["spells"] = {
-				[1132] = 132109,
+				[26517] = 136235,
 			},
 		},
 		["Cure Disease"] = {
@@ -78654,21 +78622,19 @@ WeakAurasOptionsSaved = {
 				[9552] = 135817,
 			},
 		},
-		["Opal Necklace of Impact"] = {
+		["Lesser Invisibility Potion"] = {
 			["spells"] = {
-				[26897] = 136235,
+				[3448] = 136235,
 			},
 		},
-		["Gem Studded Band"] = {
+		["Emberseer Despawn"] = {
 			["spells"] = {
-				[26896] = 136235,
+				[16078] = 136235,
 			},
 		},
-		["Instant Poison VII"] = {
+		["Large Green Firework Cluster"] = {
 			["spells"] = {
-				[26891] = 132273,
-				[26892] = 132273,
-				[26890] = 132273,
+				[26490] = 136235,
 			},
 		},
 		["Increased Strength 35"] = {
@@ -78676,9 +78642,9 @@ WeakAurasOptionsSaved = {
 				[14507] = 136235,
 			},
 		},
-		["Truesilver Healing Ring"] = {
+		["Grilled Squid"] = {
 			["spells"] = {
-				[26885] = 136235,
+				[18240] = 136192,
 			},
 		},
 		["Magma Shackles"] = {
@@ -78711,9 +78677,9 @@ WeakAurasOptionsSaved = {
 				[10388] = 136022,
 			},
 		},
-		["Enchant Boots - Agility"] = {
+		["Chitinous Spikes"] = {
 			["spells"] = {
-				[13935] = 135913,
+				[26168] = 133571,
 			},
 		},
 		["Truefaith Gloves"] = {
@@ -78721,10 +78687,9 @@ WeakAurasOptionsSaved = {
 				[8782] = 132149,
 			},
 		},
-		["Fell Curse Effect"] = {
+		["Entering Battleground"] = {
 			["spells"] = {
-				[12942] = 135899,
-				[12943] = 135899,
+				[26489] = 132091,
 			},
 		},
 		["Sear Nova"] = {
@@ -78737,16 +78702,14 @@ WeakAurasOptionsSaved = {
 				[14566] = 136235,
 			},
 		},
-		["Ruby Crown of Restoration"] = {
+		["Increase Healing 143"] = {
 			["spells"] = {
-				[26878] = 136235,
+				[26461] = 136235,
 			},
 		},
-		["Puncturing Wounds"] = {
+		["Increase Spell Dam 80"] = {
 			["spells"] = {
-				[13866] = 132090,
-				[13865] = 132090,
-				[13733] = 132090,
+				[26459] = 136235,
 			},
 		},
 		["Minor Healing Potion"] = {
@@ -78774,14 +78737,17 @@ WeakAurasOptionsSaved = {
 				[556] = 136010,
 			},
 		},
-		["Amorous"] = {
+		["Shock Blast"] = {
 			["spells"] = {
-				[26869] = 135453,
+				[26458] = 136039,
+				[38509] = 136115,
 			},
 		},
-		["Striped Frostsaber"] = {
+		["Totemic Mastery"] = {
 			["spells"] = {
-				[8394] = 132267,
+				[38437] = 136099,
+				[16189] = 136069,
+				[38443] = 136235,
 			},
 		},
 		["Soulgrinder Ritual Visual (bunny)"] = {
@@ -78825,19 +78791,19 @@ WeakAurasOptionsSaved = {
 				[44232] = 136235,
 			},
 		},
-		["Force Target - Kick with impact"] = {
+		["Large Red Rocket Cluster"] = {
 			["spells"] = {
-				[18145] = 136168,
+				[26428] = 136235,
 			},
 		},
-		["Create Lunar Festival Invitation"] = {
+		["Large Blue Rocket Cluster"] = {
 			["spells"] = {
-				[26375] = 136235,
+				[26426] = 136235,
 			},
 		},
-		["Summon Gunther's Visage"] = {
+		["Blue Rocket Cluster"] = {
 			["spells"] = {
-				[7762] = 136235,
+				[26423] = 136235,
 			},
 		},
 		["Old Mount Spell"] = {
@@ -78871,9 +78837,9 @@ WeakAurasOptionsSaved = {
 				[13503] = 135913,
 			},
 		},
-		["Summon Dagun"] = {
+		["Burrow"] = {
 			["spells"] = {
-				[4945] = 136235,
+				[26381] = 132331,
 			},
 		},
 		["Dummy Nuke"] = {
@@ -78886,11 +78852,9 @@ WeakAurasOptionsSaved = {
 				[37385] = 136235,
 			},
 		},
-		["Transformation"] = {
+		["Eye of Kilrogg"] = {
 			["spells"] = {
-				[42014] = 136235,
-				[16794] = 132311,
-				[7671] = 136235,
+				[126] = 136155,
 			},
 		},
 		["Imbued Netherweave Boots"] = {
@@ -78908,9 +78872,9 @@ WeakAurasOptionsSaved = {
 				[9175] = 132307,
 			},
 		},
-		["Arcanoweave Robe"] = {
+		["Lunar Invitation"] = {
 			["spells"] = {
-				[26784] = 132149,
+				[26373] = 135758,
 			},
 		},
 		["Increase Fire Dam 6"] = {
@@ -78928,9 +78892,9 @@ WeakAurasOptionsSaved = {
 				[3507] = 136192,
 			},
 		},
-		["Summon Dalaran Serpent"] = {
+		["ClearAllo"] = {
 			["spells"] = {
-				[3615] = 132089,
+				[26368] = 136235,
 			},
 		},
 		["Ethereal Ring, Cannon Visual"] = {
@@ -78949,29 +78913,29 @@ WeakAurasOptionsSaved = {
 				[4147] = 136101,
 			},
 		},
-		["Arcanoweave Bracers"] = {
+		["Rocket, RED BIG"] = {
 			["spells"] = {
-				[26782] = 132149,
+				[26354] = 136235,
 			},
 		},
-		["Soulcloth Vest"] = {
+		["Rocket, GREEN BIG"] = {
 			["spells"] = {
-				[26781] = 132149,
+				[26352] = 136235,
 			},
 		},
-		["Increased Agility 24"] = {
+		["Summon Dagun"] = {
 			["spells"] = {
-				[14388] = 136235,
+				[4945] = 136235,
 			},
 		},
-		["Soulcloth Shoulders"] = {
+		["Rocket, YELLOW"] = {
 			["spells"] = {
-				[26780] = 132149,
+				[26349] = 136235,
 			},
 		},
-		["Soulcloth Gloves"] = {
+		["Red Linen Vest"] = {
 			["spells"] = {
-				[26779] = 132149,
+				[7629] = 132149,
 			},
 		},
 		["Polarity Shift"] = {
@@ -78985,14 +78949,14 @@ WeakAurasOptionsSaved = {
 				[46713] = 133217,
 			},
 		},
-		["Netherweave Boots"] = {
+		["Green Channeling"] = {
 			["spells"] = {
-				[26772] = 132149,
+				[13540] = 136120,
 			},
 		},
-		["Increased Spirit 38"] = {
+		["Rocket, RED"] = {
 			["spells"] = {
-				[14459] = 136235,
+				[26347] = 136235,
 			},
 		},
 		["Cleanse"] = {
@@ -79015,10 +78979,9 @@ WeakAurasOptionsSaved = {
 				[29157] = 136235,
 			},
 		},
-		["Shadow Oil"] = {
+		["Large Yellow Rocket"] = {
 			["spells"] = {
-				[3449] = 136235,
-				[3594] = 134828,
+				[26338] = 136235,
 			},
 		},
 		["Black Mageweave Robe"] = {
@@ -79031,9 +78994,9 @@ WeakAurasOptionsSaved = {
 				[5003] = 136235,
 			},
 		},
-		["Huge Thorium Battleaxe"] = {
+		["Improved Volley and Multishot"] = {
 			["spells"] = {
-				[16971] = 136192,
+				[23566] = 136235,
 			},
 		},
 		["Increased Strength 06"] = {
@@ -79041,14 +79004,15 @@ WeakAurasOptionsSaved = {
 				[7508] = 136235,
 			},
 		},
-		["Automation Mechanic Immunity"] = {
+		["Large Blue Rocket"] = {
 			["spells"] = {
-				[87] = 135905,
+				[26333] = 136235,
+				[26420] = 136235,
 			},
 		},
-		["Elixir of Greater Water Breathing"] = {
+		["Red Firework Cluster"] = {
 			["spells"] = {
-				[22808] = 136235,
+				[26327] = 136235,
 			},
 		},
 		["Runic Hammer"] = {
@@ -79075,9 +79039,10 @@ WeakAurasOptionsSaved = {
 				[17499] = 136101,
 			},
 		},
-		["Stratholme Holy Water"] = {
+		["Small Blue Rocket"] = {
 			["spells"] = {
-				[17291] = 136235,
+				[26291] = 136235,
+				[26416] = 136235,
 			},
 		},
 		["Everlasting Underspore Fronds"] = {
@@ -79158,9 +79123,9 @@ WeakAurasOptionsSaved = {
 				[8553] = 132792,
 			},
 		},
-		["Teleport: Stormwind"] = {
+		["Dummy Trigger"] = {
 			["spells"] = {
-				[3561] = 135763,
+				[13567] = 136235,
 			},
 		},
 		["Increase Spell Dam 23 - Dreadmist"] = {
@@ -79169,9 +79134,18 @@ WeakAurasOptionsSaved = {
 				[41736] = 136235,
 			},
 		},
-		["Increased Hit Rating 100"] = {
+		["Stoneskin Totem"] = {
 			["spells"] = {
-				[18066] = 136235,
+				[8071] = 136098,
+				[8073] = 136098,
+				[25508] = 136098,
+				[10407] = 136098,
+				[25509] = 136098,
+				[8154] = 136098,
+				[8155] = 136098,
+				[10406] = 136098,
+				[10408] = 136098,
+				[38115] = 136098,
 			},
 		},
 		["Aegis Heal"] = {
@@ -79213,25 +79187,25 @@ WeakAurasOptionsSaved = {
 				[24766] = 136235,
 			},
 		},
-		["Primal Mooncloth"] = {
+		["Increase Spell Dam 68"] = {
 			["spells"] = {
-				[26751] = 132149,
+				[26227] = 136235,
+				[42108] = 136235,
 			},
 		},
-		["Increased Spirit 14"] = {
+		["Craftsman's Monocle"] = {
 			["spells"] = {
-				[9263] = 136235,
+				[3966] = 136235,
 			},
 		},
-		["Corrupted Stamina Passive"] = {
+		["Far Sight"] = {
 			["spells"] = {
-				[6822] = 136006,
-				[23245] = 136006,
+				[6196] = 136034,
 			},
 		},
-		["Bolt of Soulcloth"] = {
+		["Create Fresh Holly"] = {
 			["spells"] = {
-				[26750] = 132149,
+				[26207] = 136235,
 			},
 		},
 		["Increased Spirit 17"] = {
@@ -79264,9 +79238,13 @@ WeakAurasOptionsSaved = {
 				[37483] = 136235,
 			},
 		},
-		["Increase Frost Dam 9"] = {
+		["Whisperings of C'Thun"] = {
 			["spells"] = {
-				[7702] = 136235,
+				[26258] = 136206,
+				[26259] = 136206,
+				[26197] = 136206,
+				[26198] = 136206,
+				[26195] = 136206,
 			},
 		},
 		["Blood Leech"] = {
@@ -79290,10 +79268,11 @@ WeakAurasOptionsSaved = {
 				[11451] = 136235,
 			},
 		},
-		["Drink Potion"] = {
+		["Improved Cone of Cold"] = {
 			["spells"] = {
-				[3359] = 135915,
-				[9956] = 135915,
+				[12489] = 135852,
+				[12490] = 135852,
+				[11190] = 135852,
 			},
 		},
 		["Beast Training"] = {
@@ -79302,9 +79281,10 @@ WeakAurasOptionsSaved = {
 				[5300] = 132162,
 			},
 		},
-		["Improved Block Value"] = {
+		["Increased Spell Penetration 38"] = {
 			["spells"] = {
-				[21540] = 136235,
+				[26175] = 136235,
+				[41656] = 136235,
 			},
 		},
 		["Ritual of Doom"] = {
@@ -79318,16 +79298,14 @@ WeakAurasOptionsSaved = {
 				[39937] = 134414,
 			},
 		},
-		["Enveloping Webs"] = {
+		["Temperature Reading"] = {
 			["spells"] = {
-				[24110] = 136022,
+				[16378] = 136235,
 			},
 		},
-		["Wide Slash"] = {
+		["Increased Renew Duration"] = {
 			["spells"] = {
-				[7342] = 132338,
-				[11837] = 132338,
-				[25814] = 132338,
+				[26171] = 136081,
 			},
 		},
 		["Camouflage"] = {
@@ -79351,14 +79329,17 @@ WeakAurasOptionsSaved = {
 				[7509] = 136235,
 			},
 		},
-		["Red Mageweave Gloves"] = {
+		["Colossal Smash"] = {
 			["spells"] = {
-				[12066] = 132149,
+				[26167] = 136105,
 			},
 		},
-		["Emblems of Veiled Shadows Slice and Dice Bonus"] = {
+		["Lesser Agility"] = {
 			["spells"] = {
-				[26114] = 136235,
+				[3157] = 134873,
+				[13364] = 136235,
+				[3158] = 134873,
+				[2374] = 134873,
 			},
 		},
 		["Create Magic Sucker Device (tm)"] = {
@@ -79366,9 +79347,12 @@ WeakAurasOptionsSaved = {
 				[38673] = 136235,
 			},
 		},
-		["Increased Dodge 24"] = {
+		["PX-238 Winter Wondervolt"] = {
 			["spells"] = {
-				[13670] = 136235,
+				[26273] = 135849,
+				[26157] = 135849,
+				[26272] = 135849,
+				[26274] = 135849,
 			},
 		},
 		["Summon Duke,Trigger"] = {
@@ -79376,45 +79360,35 @@ WeakAurasOptionsSaved = {
 				[24762] = 136235,
 			},
 		},
-		["Lend Pet (NYI)"] = {
+		["Increase Healing 90"] = {
 			["spells"] = {
-				[1825] = 132164,
+				[26154] = 136235,
 			},
 		},
-		["Slime"] = {
+		["Frailty"] = {
 			["spells"] = {
-				[16456] = 136006,
-				[28801] = 132108,
+				[12530] = 136119,
 			},
 		},
-		["Increase Frost Dam 69"] = {
+		["Harvest Swarm"] = {
 			["spells"] = {
-				[26725] = 136235,
+				[7277] = 135899,
 			},
 		},
-		["Increase Frost Dam 67"] = {
+		["Cold Blood"] = {
 			["spells"] = {
-				[26724] = 136235,
+				[14177] = 135988,
 			},
 		},
-		["Magma Totem"] = {
+		["Enigma's Solitude"] = {
 			["spells"] = {
-				[10579] = 135826,
-				[10581] = 135826,
-				[10585] = 135826,
-				[10587] = 135826,
-				[10580] = 135826,
-				[8187] = 135826,
-				[25552] = 135826,
-				[10586] = 135826,
-				[8190] = 135826,
-				[25550] = 135826,
+				[26132] = 135845,
 			},
 		},
-		["Leech Pulse"] = {
+		["Improved Berserker Rage"] = {
 			["spells"] = {
-				[8433] = 135966,
-				[8434] = 135966,
+				[20500] = 136009,
+				[20501] = 136009,
 			},
 		},
 		["Enchanted Clefthoof Gloves"] = {
@@ -79437,9 +79411,9 @@ WeakAurasOptionsSaved = {
 				[5208] = 132273,
 			},
 		},
-		["QAEnchant Cloak +10 Shadow Resistance"] = {
+		["Trappings of Vaulted Secrets Mana Shield Bonus"] = {
 			["spells"] = {
-				[6476] = 136235,
+				[26131] = 136011,
 			},
 		},
 		["Ribbon of Souls"] = {
@@ -79452,15 +79426,14 @@ WeakAurasOptionsSaved = {
 				[34432] = 136235,
 			},
 		},
-		["Arcane Bomb"] = {
+		["Increased Dodge 24"] = {
 			["spells"] = {
-				[19821] = 135975,
-				[19831] = 136235,
+				[13670] = 136235,
 			},
 		},
-		["Alliance Reputation"] = {
+		["Lend Pet (NYI)"] = {
 			["spells"] = {
-				[26126] = 132486,
+				[1825] = 132164,
 			},
 		},
 		["Emberseer Growing"] = {
@@ -79499,9 +79472,9 @@ WeakAurasOptionsSaved = {
 				[12722] = 136235,
 			},
 		},
-		["Increase Frost Dam 59"] = {
+		["Alliance Reputation"] = {
 			["spells"] = {
-				[26718] = 136235,
+				[26126] = 132486,
 			},
 		},
 		["Detect Elven Gems"] = {
@@ -79509,9 +79482,9 @@ WeakAurasOptionsSaved = {
 				[4152] = 136057,
 			},
 		},
-		["Riptide"] = {
+		["Stormcaller Spelldamage Bonus"] = {
 			["spells"] = {
-				[22419] = 132343,
+				[26119] = 136235,
 			},
 		},
 		["Crusader Aura"] = {
@@ -79529,9 +79502,9 @@ WeakAurasOptionsSaved = {
 				[40814] = 136235,
 			},
 		},
-		["Summon Rusty Chest"] = {
+		["Implements of Unspoken Names Pet Bonus"] = {
 			["spells"] = {
-				[6464] = 132281,
+				[26118] = 136235,
 			},
 		},
 		["Lay on Hands"] = {
@@ -79556,9 +79529,9 @@ WeakAurasOptionsSaved = {
 				[38604] = 136220,
 			},
 		},
-		["Increase Arcane Dam 57"] = {
+		["Naralex's Nightmare"] = {
 			["spells"] = {
-				[26705] = 136235,
+				[7967] = 136090,
 			},
 		},
 		["Phase Slip"] = {
@@ -79566,14 +79539,14 @@ WeakAurasOptionsSaved = {
 				[36574] = 135736,
 			},
 		},
-		["Increase Shadow Dam 23"] = {
+		["Bruiser Sleeping"] = {
 			["spells"] = {
-				[14793] = 136235,
+				[26115] = 136090,
 			},
 		},
-		["Summon Scarlet Snake"] = {
+		["Perm. Illusion Succubus"] = {
 			["spells"] = {
-				[10720] = 132311,
+				[8315] = 132311,
 			},
 		},
 		["Summon Tamed Crocilisk"] = {
@@ -79591,9 +79564,9 @@ WeakAurasOptionsSaved = {
 				[3971] = 136235,
 			},
 		},
-		["Increase Fire Dam 64"] = {
+		["Emblems of Veiled Shadows Slice and Dice Bonus"] = {
 			["spells"] = {
-				[26698] = 136235,
+				[26114] = 136235,
 			},
 		},
 		["Enchant Azure Agate"] = {
@@ -79601,9 +79574,9 @@ WeakAurasOptionsSaved = {
 				[4319] = 136235,
 			},
 		},
-		["Increase Fire Dam 61"] = {
+		["Deathdealer Eviscerate Bonus"] = {
 			["spells"] = {
-				[26696] = 136235,
+				[26113] = 136235,
 			},
 		},
 		["Healing Draught"] = {
@@ -79612,31 +79585,30 @@ WeakAurasOptionsSaved = {
 				[21394] = 136235,
 			},
 		},
-		["Opening Booty Chest"] = {
+		["Battlegear of Unyielding Strength Intercept Bonus"] = {
 			["spells"] = {
-				[5107] = 136235,
+				[26111] = 136235,
 			},
 		},
-		["Instant Poison IV"] = {
+		["Increase Nature Dam 21"] = {
 			["spells"] = {
-				[11341] = 132273,
-				[11338] = 132273,
-				[11335] = 132273,
+				[9361] = 136235,
 			},
 		},
-		["Rift Spawn Manifestation"] = {
+		["Conqueror Shout Bonus"] = {
 			["spells"] = {
-				[9096] = 135994,
+				[26109] = 136235,
 			},
 		},
-		["Increase Fire Dam 59"] = {
+		["Felcloth Bag"] = {
 			["spells"] = {
-				[26694] = 136235,
+				[26086] = 132149,
+				[26095] = 136021,
 			},
 		},
-		["QAEnchant Gloves +1% Haste"] = {
+		["Vekniss Catalyst"] = {
 			["spells"] = {
-				[22106] = 135913,
+				[26078] = 132104,
 			},
 		},
 		["Frostbite Rotate"] = {
@@ -79644,14 +79616,15 @@ WeakAurasOptionsSaved = {
 				[34748] = 136001,
 			},
 		},
-		["Summon Burning Exile"] = {
+		["Summon Ouro"] = {
 			["spells"] = {
-				[4929] = 136192,
+				[26061] = 136235,
+				[26642] = 136235,
 			},
 		},
-		["Increase Healing 110"] = {
+		["Summon Ouro Mounds"] = {
 			["spells"] = {
-				[26690] = 136235,
+				[26058] = 136235,
 			},
 		},
 		["Soul Charge"] = {
@@ -79677,11 +79650,9 @@ WeakAurasOptionsSaved = {
 				[8088] = 136245,
 			},
 		},
-		["Aggression"] = {
+		["Summon Red Qiraji Battle Tank"] = {
 			["spells"] = {
-				[18428] = 132275,
-				[18429] = 132275,
-				[18427] = 132275,
+				[26054] = 134396,
 			},
 		},
 		["Unpainted Mechanostrider"] = {
@@ -79710,9 +79681,9 @@ WeakAurasOptionsSaved = {
 				[35684] = 136235,
 			},
 		},
-		["Resistance (OLD)"] = {
+		["Windblossom Berries"] = {
 			["spells"] = {
-				[2381] = 136101,
+				[26030] = 134062,
 			},
 		},
 		["Summon Netherstorm Flag"] = {
@@ -79720,21 +79691,20 @@ WeakAurasOptionsSaved = {
 				[34991] = 132486,
 			},
 		},
-		["Create Heart Candy"] = {
+		["Rotate 360"] = {
 			["spells"] = {
-				[26678] = 136235,
+				[26009] = 136235,
 			},
 		},
-		["Fire Shot"] = {
+		["Rift Spawn Manifestation"] = {
 			["spells"] = {
-				[6979] = 132312,
-				[6980] = 132312,
-				[3011] = 132312,
+				[9096] = 135994,
 			},
 		},
-		["Cured Rugged Hide"] = {
+		["Toxin"] = {
 			["spells"] = {
-				[19047] = 136235,
+				[25989] = 136006,
+				[26575] = 136006,
 			},
 		},
 		["Bear Down"] = {
@@ -79742,19 +79712,23 @@ WeakAurasOptionsSaved = {
 				[46239] = 132337,
 			},
 		},
-		["The Power of Friendship"] = {
+		["Increased Shadow Resist 35"] = {
 			["spells"] = {
-				[26664] = 133345,
+				[14697] = 136235,
 			},
 		},
-		["Bristle Whisker Catfish"] = {
+		["Starlight Wrath"] = {
 			["spells"] = {
-				[7755] = 136192,
+				[16814] = 136006,
+				[16815] = 136006,
+				[16816] = 136006,
+				[16817] = 136006,
+				[16818] = 136006,
 			},
 		},
-		["Firework Launcher"] = {
+		["Dreamless Sleep Potion"] = {
 			["spells"] = {
-				[26442] = 136235,
+				[15833] = 136235,
 			},
 		},
 		["Demon Armor"] = {
@@ -79775,9 +79749,11 @@ WeakAurasOptionsSaved = {
 				[33817] = 136235,
 			},
 		},
-		["Chromatic Protection: Fire"] = {
+		["Aggression"] = {
 			["spells"] = {
-				[16373] = 134563,
+				[18428] = 132275,
+				[18429] = 132275,
+				[18427] = 132275,
 			},
 		},
 		["Cosmetic - Legion Ring Green Lightning (Thick)"] = {
@@ -79807,9 +79783,9 @@ WeakAurasOptionsSaved = {
 				[3287] = 136224,
 			},
 		},
-		["Cowardly Flight Potion"] = {
+		["Summon Baby Shark"] = {
 			["spells"] = {
-				[6619] = 136235,
+				[25849] = 132311,
 			},
 		},
 		["Heart of the Wild"] = {
@@ -79821,9 +79797,9 @@ WeakAurasOptionsSaved = {
 				[24894] = 135879,
 			},
 		},
-		["Linen Belt"] = {
+		["Attack Power - Feral (+0574)"] = {
 			["spells"] = {
-				[8776] = 132149,
+				[24694] = 136235,
 			},
 		},
 		["Summon Infernal Servant"] = {
@@ -79831,24 +79807,35 @@ WeakAurasOptionsSaved = {
 				[12740] = 136219,
 			},
 		},
-		["Opening Scarab Coffer"] = {
+		["Minor Intellect"] = {
 			["spells"] = {
-				[26587] = 136235,
+				[7792] = 136235,
 			},
 		},
-		["Truesilver Crab"] = {
+		["Spotlight"] = {
 			["spells"] = {
-				[26581] = 132186,
+				[351655] = 135926,
+				[41347] = 135926,
+				[25823] = 135926,
+				[34126] = 135926,
+				[35259] = 135926,
+				[25824] = 135926,
+				[29683] = 135926,
+				[46975] = 135926,
+				[32214] = 135926,
+				[35498] = 135926,
 			},
 		},
-		["Clenched Pinchers"] = {
+		["Onyxia Scale Cloak"] = {
 			["spells"] = {
-				[4246] = 132109,
+				[22683] = 136235,
+				[19093] = 136235,
+				[22684] = 135744,
 			},
 		},
-		["Increase Fire Dam 29"] = {
+		["Frightening Shriek"] = {
 			["spells"] = {
-				[13830] = 136235,
+				[25815] = 136184,
 			},
 		},
 		["Damage Reduction: Fire"] = {
@@ -79861,24 +79848,28 @@ WeakAurasOptionsSaved = {
 				[17446] = 136143,
 			},
 		},
-		["Archaedas Awaken Visual (DND)"] = {
+		["Ahn'Qiraj Reward Buff (Trigger - 60)"] = {
 			["spells"] = {
-				[10347] = 136025,
+				[25803] = 134969,
 			},
 		},
-		["Coarse Grinding Stone"] = {
+		["Ahn'Qiraj Reward Buff (Melee - 60)"] = {
 			["spells"] = {
-				[3326] = 136192,
+				[25796] = 134969,
 			},
 		},
-		["Jade Owl Summoned"] = {
+		["Place Arcanite Buoy"] = {
 			["spells"] = {
-				[26563] = 136235,
+				[25783] = 136235,
 			},
 		},
-		["Increased All Resist 19"] = {
+		["Greater Blessing of Might"] = {
 			["spells"] = {
-				[18690] = 136235,
+				[33564] = 135906,
+				[25782] = 135908,
+				[27141] = 135908,
+				[25916] = 135908,
+				[29381] = 135906,
 			},
 		},
 		["Area Death"] = {
@@ -79886,11 +79877,9 @@ WeakAurasOptionsSaved = {
 				[265] = 136195,
 			},
 		},
-		["Ancestral Fortitude"] = {
+		["Mental Domination"] = {
 			["spells"] = {
-				[16236] = 136109,
-				[16177] = 136109,
-				[16237] = 136109,
+				[25772] = 136172,
 			},
 		},
 		["Overrun"] = {
@@ -79924,13 +79913,9 @@ WeakAurasOptionsSaved = {
 				[30529] = 136129,
 			},
 		},
-		["Piercing Howl"] = {
+		["Large Blue Firework Cluster"] = {
 			["spells"] = {
-				[38256] = 136147,
-				[12323] = 136147,
-				[23600] = 136147,
-				[43530] = 136147,
-				[10576] = 132117,
+				[26488] = 136235,
 			},
 		},
 		["Expert Alchemist"] = {
@@ -79946,14 +79931,14 @@ WeakAurasOptionsSaved = {
 				[34720] = 132216,
 			},
 		},
-		["Increased Critical 56"] = {
+		["Siren's Song"] = {
 			["spells"] = {
-				[7600] = 136235,
+				[25678] = 132322,
 			},
 		},
-		["Rapid Gallop"] = {
+		["Robes of Arcana"] = {
 			["spells"] = {
-				[4105] = 132319,
+				[6692] = 132149,
 			},
 		},
 		["Increased Frost Resist 13"] = {
@@ -79971,9 +79956,11 @@ WeakAurasOptionsSaved = {
 				[4504] = 135926,
 			},
 		},
-		["Entering Battleground"] = {
+		["Intimidation"] = {
 			["spells"] = {
-				[26489] = 132091,
+				[19577] = 132111,
+				[24394] = 132111,
+				[7093] = 136122,
 			},
 		},
 		["Call of Thunder"] = {
@@ -79985,9 +79972,9 @@ WeakAurasOptionsSaved = {
 				[16041] = 136014,
 			},
 		},
-		["Beast Slaying 45"] = {
+		["Dirge's Kickin' Chimaerok Chops"] = {
 			["spells"] = {
-				[18067] = 136235,
+				[25659] = 136192,
 			},
 		},
 		["Quest - Sunwell Daily - Dead Scar Bombing Run"] = {
@@ -79995,9 +79982,9 @@ WeakAurasOptionsSaved = {
 				[45071] = 136235,
 			},
 		},
-		["Increase Holy Dam 17"] = {
+		["Summon Shadowstrike"] = {
 			["spells"] = {
-				[21510] = 136235,
+				[21181] = 136235,
 			},
 		},
 		["Summon Brown Snake"] = {
@@ -80005,9 +79992,9 @@ WeakAurasOptionsSaved = {
 				[10716] = 132311,
 			},
 		},
-		["Summon Cockroach"] = {
+		["Blazing Citrine Ring"] = {
 			["spells"] = {
-				[10688] = 132311,
+				[25617] = 136235,
 			},
 		},
 		["Fatal Bite"] = {
@@ -80027,9 +80014,10 @@ WeakAurasOptionsSaved = {
 				[21979] = 136235,
 			},
 		},
-		["Summon Eliza's Guard"] = {
+		["ClearAll"] = {
 			["spells"] = {
-				[3107] = 136142,
+				[25565] = 136235,
+				[28471] = 135753,
 			},
 		},
 		["Trigger Kill Proc"] = {
@@ -80042,16 +80030,14 @@ WeakAurasOptionsSaved = {
 				[2399] = 136249,
 			},
 		},
-		["Enfeeble"] = {
+		["Solid Bronze Ring"] = {
 			["spells"] = {
-				[41624] = 136169,
-				[30843] = 136169,
-				[11963] = 136138,
+				[25490] = 136235,
 			},
 		},
-		["Essence of the Red"] = {
+		["Ring of Twilight Shadows"] = {
 			["spells"] = {
-				[23513] = 135819,
+				[25318] = 136235,
 			},
 		},
 		["Create Infernaling Summoner"] = {
@@ -80064,15 +80050,14 @@ WeakAurasOptionsSaved = {
 				[14732] = 136235,
 			},
 		},
-		["Poof"] = {
+		["Beast Slaying 45"] = {
 			["spells"] = {
-				[12244] = 136235,
+				[18067] = 136235,
 			},
 		},
-		["Persistent Shield"] = {
+		["Lesser Stoneshield Potion"] = {
 			["spells"] = {
-				[26467] = 133575,
-				[26470] = 136094,
+				[4942] = 136235,
 			},
 		},
 		["Greater Drums of Panic"] = {
@@ -80081,9 +80066,9 @@ WeakAurasOptionsSaved = {
 				[351770] = 136247,
 			},
 		},
-		["Increase Healing 143"] = {
+		["Increased Stamina 17"] = {
 			["spells"] = {
-				[26461] = 136235,
+				[14464] = 136235,
 			},
 		},
 		["Summon Frenzied Bloodseeker Bats"] = {
@@ -80096,9 +80081,9 @@ WeakAurasOptionsSaved = {
 				[43260] = 136235,
 			},
 		},
-		["Sprint (TEST)"] = {
+		["Increased All Resist 01"] = {
 			["spells"] = {
-				[47] = 136235,
+				[18672] = 136235,
 			},
 		},
 		["Block Value 02"] = {
@@ -80106,25 +80091,29 @@ WeakAurasOptionsSaved = {
 				[21539] = 136235,
 			},
 		},
-		["Increase Spell Dam 80"] = {
+		["Jewelcrafting"] = {
 			["spells"] = {
-				[26459] = 136235,
+				[25229] = 134071,
+				[25230] = 134072,
+				[28894] = 134072,
+				[28895] = 134072,
+				[28897] = 134072,
 			},
 		},
-		["Shock Blast"] = {
+		["Arcane Weakness"] = {
 			["spells"] = {
-				[26458] = 136039,
-				[38509] = 136115,
+				[25181] = 134395,
+				[31604] = 136213,
 			},
 		},
-		["Emberseer Transform"] = {
+		["Sprint (TEST)"] = {
 			["spells"] = {
-				[16052] = 135819,
+				[47] = 136235,
 			},
 		},
-		["Increased Arcane Resist 34"] = {
+		["Fire Weakness"] = {
 			["spells"] = {
-				[14736] = 136235,
+				[25177] = 134396,
 			},
 		},
 		["Summon Earth Elemental"] = {
@@ -80134,9 +80123,9 @@ WeakAurasOptionsSaved = {
 				[19704] = 136025,
 			},
 		},
-		["Elegant Silver Ring"] = {
+		["Time Stop Visual DND"] = {
 			["spells"] = {
-				[25280] = 136235,
+				[25171] = 136235,
 			},
 		},
 		["Fake Shot"] = {
@@ -80171,12 +80160,9 @@ WeakAurasOptionsSaved = {
 				[4285] = 132109,
 			},
 		},
-		["Sonic Burst"] = {
+		["Increase Spell Dam 33"] = {
 			["spells"] = {
-				[23918] = 136222,
-				[29904] = 136222,
-				[8281] = 136222,
-				[39052] = 136222,
+				[18050] = 136235,
 			},
 		},
 		["Living Action Potion"] = {
@@ -80184,9 +80170,9 @@ WeakAurasOptionsSaved = {
 				[24367] = 136235,
 			},
 		},
-		["Holiday - Lunar Teleport: Darnassus"] = {
+		["Oozeling's Disgusting Aura"] = {
 			["spells"] = {
-				[26450] = 135758,
+				[25163] = 132107,
 			},
 		},
 		["Figurine - Truesilver Crab"] = {
@@ -80199,23 +80185,10 @@ WeakAurasOptionsSaved = {
 				[203] = 132154,
 			},
 		},
-		["Devour Magic"] = {
+		["Image Projection"] = {
 			["spells"] = {
-				[19736] = 136075,
-				[27495] = 136075,
-				[20427] = 136075,
-				[19737] = 136075,
-				[27496] = 136075,
-				[19505] = 136075,
-				[19734] = 136075,
-				[19738] = 136075,
-				[17012] = 136075,
-				[19731] = 136075,
-				[27276] = 136075,
-				[19739] = 136075,
-				[20428] = 136075,
-				[27277] = 136075,
-				[20426] = 136075,
+				[17651] = 136164,
+				[17652] = 136164,
 			},
 		},
 		["Veiled Noble Topaz"] = {
@@ -80223,19 +80196,19 @@ WeakAurasOptionsSaved = {
 				[39470] = 136235,
 			},
 		},
-		["Large Red Rocket Cluster"] = {
+		["Wracking Pains"] = {
 			["spells"] = {
-				[26428] = 136235,
+				[13619] = 136139,
 			},
 		},
-		["Large Blue Rocket Cluster"] = {
+		["Freeze Rookery Egg"] = {
 			["spells"] = {
-				[26426] = 136235,
+				[15748] = 136235,
 			},
 		},
-		["Health II"] = {
+		["Enchant Cloak - Dodge"] = {
 			["spells"] = {
-				[16884] = 134824,
+				[25086] = 135913,
 			},
 		},
 		["[PH] Summon Minion (trap: ghost/ghoul))"] = {
@@ -80243,9 +80216,10 @@ WeakAurasOptionsSaved = {
 				[27883] = 136235,
 			},
 		},
-		["Blue Rocket Cluster"] = {
+		["Enchant Cloak - Stealth"] = {
 			["spells"] = {
-				[26423] = 136235,
+				[25083] = 135913,
+				[359640] = 135913,
 			},
 		},
 		["Summon Atal'ai Skeleton"] = {
@@ -80270,19 +80244,19 @@ WeakAurasOptionsSaved = {
 				[34795] = 132227,
 			},
 		},
-		["Teleport Altar of the Tides"] = {
+		["Enchant Gloves - Frost Power"] = {
 			["spells"] = {
-				[3721] = 136235,
+				[25074] = 135913,
 			},
 		},
-		["Anger Management"] = {
+		["Resistance - Greater Fire Resistance"] = {
 			["spells"] = {
-				[12296] = 135881,
+				[25068] = 136235,
 			},
 		},
-		["Festive Red Pant Suit"] = {
+		["Megavolt"] = {
 			["spells"] = {
-				[26407] = 132149,
+				[11082] = 136015,
 			},
 		},
 		["Will of Hakkar"] = {
@@ -80322,42 +80296,22 @@ WeakAurasOptionsSaved = {
 				[16103] = 135849,
 			},
 		},
-		["Increased Block 5"] = {
+		["Anger Management"] = {
 			["spells"] = {
-				[13674] = 136235,
+				[12296] = 135881,
 			},
 		},
-		["Mortal Strike"] = {
+		["Rumsey Rum Light"] = {
 			["spells"] = {
-				[39171] = 132355,
-				[31911] = 132355,
-				[15708] = 132355,
-				[29572] = 132355,
-				[25248] = 132355,
-				[32736] = 132355,
-				[9347] = 132355,
-				[17547] = 132355,
-				[44268] = 132355,
-				[40220] = 132355,
-				[43441] = 132355,
-				[43529] = 132340,
-				[37335] = 132355,
-				[35054] = 132355,
-				[12294] = 132355,
-				[16856] = 132355,
-				[24573] = 132355,
-				[21551] = 132355,
-				[19643] = 132355,
-				[21552] = 132355,
-				[13737] = 132355,
-				[21553] = 132355,
-				[30330] = 132355,
-				[27580] = 132355,
+				[25037] = 132795,
 			},
 		},
-		["Transform Viewing Room Students"] = {
+		["Flamethrower"] = {
 			["spells"] = {
-				[18110] = 136235,
+				[39686] = 135818,
+				[25029] = 135818,
+				[25027] = 134535,
+				[39693] = 134535,
 			},
 		},
 		["Summon Midsummer Bonfire Bunnies"] = {
@@ -80365,13 +80319,10 @@ WeakAurasOptionsSaved = {
 				[28784] = 136235,
 			},
 		},
-		["Flametongue Totem Passive"] = {
+		["Activate MG Turret"] = {
 			["spells"] = {
-				[16388] = 136040,
-				[10524] = 136040,
-				[8229] = 136040,
-				[8251] = 136040,
-				[25556] = 136040,
+				[25026] = 135619,
+				[39694] = 135619,
 			},
 		},
 		["Divine Intellect"] = {
@@ -80393,19 +80344,25 @@ WeakAurasOptionsSaved = {
 				[28578] = 136235,
 			},
 		},
-		["Lunar Invitation"] = {
+		["Hibernate"] = {
 			["spells"] = {
-				[26373] = 135758,
+				[18657] = 136090,
+				[18658] = 136090,
+				[2637] = 136090,
 			},
 		},
-		["ClearAllo"] = {
+		["Spirit Totem"] = {
 			["spells"] = {
-				[26368] = 136235,
+				[25000] = 136102,
+				[25001] = 136061,
 			},
 		},
-		["Rocket, RED BIG"] = {
+		["Throw Proximity Bomb"] = {
 			["spells"] = {
-				[26354] = 136235,
+				[3823] = 136173,
+				[30846] = 136173,
+				[32784] = 136173,
+				[34095] = 136173,
 			},
 		},
 		["Darkmoon Faire Fortune"] = {
@@ -80418,23 +80375,9 @@ WeakAurasOptionsSaved = {
 				[21357] = 136235,
 			},
 		},
-		["Toughness"] = {
+		["Summon Dreadsteed Spirit (DND)"] = {
 			["spells"] = {
-				[16307] = 135892,
-				[16309] = 135892,
-				[20147] = 135892,
-				[20145] = 135892,
-				[20146] = 135892,
-				[12762] = 135892,
-				[12299] = 135892,
-				[16306] = 135892,
-				[16308] = 135892,
-				[20143] = 135892,
-				[16252] = 135892,
-				[20144] = 135892,
-				[12761] = 135892,
-				[12763] = 135892,
-				[12764] = 135892,
+				[23159] = 136235,
 			},
 		},
 		["Trap Mastery"] = {
@@ -80443,14 +80386,14 @@ WeakAurasOptionsSaved = {
 				[19377] = 132149,
 			},
 		},
-		["Rocket, GREEN BIG"] = {
+		["Greater Dispel"] = {
 			["spells"] = {
-				[26352] = 136235,
+				[24997] = 135753,
 			},
 		},
-		["Attack Power 80"] = {
+		["Summon Baby Murloc (Blue)"] = {
 			["spells"] = {
-				[15826] = 136235,
+				[24985] = 134300,
 			},
 		},
 		["Open Wound"] = {
@@ -80465,9 +80408,9 @@ WeakAurasOptionsSaved = {
 				[18401] = 132149,
 			},
 		},
-		["Rocket, WHITE"] = {
+		["Clean Up Stink Bomb"] = {
 			["spells"] = {
-				[26348] = 136235,
+				[24973] = 136235,
 			},
 		},
 		["Improved Enrage"] = {
@@ -80490,16 +80433,14 @@ WeakAurasOptionsSaved = {
 				[20342] = 135917,
 			},
 		},
-		["Increase Holy Dam 21"] = {
+		["Honor Points +138"] = {
 			["spells"] = {
-				[21513] = 136235,
+				[24962] = 136235,
 			},
 		},
-		["Celestial Focus"] = {
+		["Alterac Valley Mark of Honor (Loser)"] = {
 			["spells"] = {
-				[16850] = 135753,
-				[16923] = 135753,
-				[16924] = 135753,
+				[24954] = 136235,
 			},
 		},
 		["Grasping Vines"] = {
@@ -80513,20 +80454,20 @@ WeakAurasOptionsSaved = {
 				[34547] = 136241,
 			},
 		},
-		["Large Yellow Rocket"] = {
+		["Nauseous"] = {
 			["spells"] = {
-				[26338] = 136235,
+				[24919] = 136006,
+				[49869] = 132108,
 			},
 		},
-		["Fake Death"] = {
+		["Runed Stygian Boots"] = {
 			["spells"] = {
-				[8226] = 136187,
+				[24903] = 132149,
 			},
 		},
-		["Large Red Rocket"] = {
+		["Increased Shadow Resist 37"] = {
 			["spells"] = {
-				[26336] = 136235,
-				[26422] = 136235,
+				[14699] = 136235,
 			},
 		},
 		["Add Fire Dam - Weap 14"] = {
@@ -80539,10 +80480,9 @@ WeakAurasOptionsSaved = {
 				[35115] = 136235,
 			},
 		},
-		["Large Blue Rocket"] = {
+		["Create Scepter of Beckoning: Earth"] = {
 			["spells"] = {
-				[26333] = 136235,
-				[26420] = 136235,
+				[24897] = 136235,
 			},
 		},
 		["Dertrok Mind Control"] = {
@@ -80550,9 +80490,9 @@ WeakAurasOptionsSaved = {
 				[37199] = 136208,
 			},
 		},
-		["Editor test spell 2"] = {
+		["Create Scepter of Beckoning: Air"] = {
 			["spells"] = {
-				[448] = 136235,
+				[24896] = 136235,
 			},
 		},
 		["Fel Iron Hammer"] = {
@@ -80560,9 +80500,9 @@ WeakAurasOptionsSaved = {
 				[29558] = 136192,
 			},
 		},
-		["Purple Firework Cluster"] = {
+		["Thorium Greatsword"] = {
 			["spells"] = {
-				[26326] = 136235,
+				[16960] = 136192,
 			},
 		},
 		["Create Thorium Brotherhood Contract DND"] = {
@@ -80575,10 +80515,11 @@ WeakAurasOptionsSaved = {
 				[17161] = 136235,
 			},
 		},
-		["Disheartening Blow II"] = {
+		["Celestial Focus"] = {
 			["spells"] = {
-				[1795] = 136235,
-				[1800] = 136235,
+				[16850] = 135753,
+				[16923] = 135753,
+				[16924] = 135753,
 			},
 		},
 		["Feral Move Speed Increase"] = {
@@ -80596,11 +80537,11 @@ WeakAurasOptionsSaved = {
 				[9202] = 136247,
 			},
 		},
-		["Water Bubble"] = {
+		["Humanoid Slaying"] = {
 			["spells"] = {
-				[35921] = 132123,
-				[35929] = 132123,
-				[7383] = 135864,
+				[19151] = 135942,
+				[19152] = 135942,
+				[19153] = 135942,
 			},
 		},
 		["Journeyman Skinning"] = {
@@ -80614,9 +80555,9 @@ WeakAurasOptionsSaved = {
 				[30558] = 136235,
 			},
 		},
-		["Create Firework Rocket Launcher"] = {
+		["Create Crest of Beckoning: Water"] = {
 			["spells"] = {
-				[26298] = 134538,
+				[24888] = 136235,
 			},
 		},
 		["Owl Companion"] = {
@@ -80624,19 +80565,19 @@ WeakAurasOptionsSaved = {
 				[8217] = 132150,
 			},
 		},
-		["Small Yellow Rocket"] = {
+		["Smoking Heart of the Mountain"] = {
 			["spells"] = {
-				[26295] = 136235,
+				[15596] = 134084,
 			},
 		},
-		["Summon Farm Chicken"] = {
+		["Create Crest of Beckoning: Earth"] = {
 			["spells"] = {
-				[13548] = 132311,
+				[24887] = 136235,
 			},
 		},
-		["Summon Baby Murloc (Pink)"] = {
+		["Sanctified Orb"] = {
 			["spells"] = {
-				[24989] = 134300,
+				[24865] = 134123,
 			},
 		},
 		["Shoot Honor Hold Scout Archery Target (Miss)"] = {
@@ -80649,9 +80590,9 @@ WeakAurasOptionsSaved = {
 				[15815] = 136235,
 			},
 		},
-		["Create Yellow Punch Card"] = {
+		["Sandstalker Breastplate"] = {
 			["spells"] = {
-				[11512] = 136235,
+				[24851] = 136235,
 			},
 		},
 		["Increased Nature Resist 21"] = {
@@ -80680,19 +80621,20 @@ WeakAurasOptionsSaved = {
 				[29670] = 135852,
 			},
 		},
-		["Summon Ouro Trigger"] = {
+		["Infernal Fire"] = {
 			["spells"] = {
-				[26284] = 136235,
+				[24826] = 135818,
 			},
 		},
-		["Ghostweave Gloves"] = {
+		["Increased Strength 41"] = {
 			["spells"] = {
-				[18413] = 132149,
+				[14959] = 136235,
 			},
 		},
-		["Fine Leather Boots"] = {
+		["Increase Spell Dam 24"] = {
 			["spells"] = {
-				[2158] = 136247,
+				[24595] = 136235,
+				[25111] = 136235,
 			},
 		},
 		["Summon Helper"] = {
@@ -80710,14 +80652,26 @@ WeakAurasOptionsSaved = {
 				[22921] = 136235,
 			},
 		},
-		["Stormshroud Gloves"] = {
+		["Shadow Bolt Whirl"] = {
 			["spells"] = {
-				[26279] = 136235,
+				[24821] = 136197,
+				[39630] = 136197,
+				[24837] = 136197,
+				[39632] = 136197,
+				[24834] = 136197,
+				[24823] = 136197,
+				[39631] = 136197,
+				[39634] = 136197,
+				[24820] = 136197,
+				[24838] = 136197,
+				[24822] = 136197,
+				[24836] = 136197,
+				[24835] = 136197,
 			},
 		},
-		["The Breaking"] = {
+		["Lightning Wave"] = {
 			["spells"] = {
-				[22989] = 136164,
+				[24819] = 136015,
 			},
 		},
 		["Fel Sharpening Stone"] = {
@@ -80741,14 +80695,15 @@ WeakAurasOptionsSaved = {
 				[16771] = 136235,
 			},
 		},
-		["Increased Strength 17"] = {
+		["Dig Trap"] = {
 			["spells"] = {
-				[14489] = 136235,
+				[6538] = 136025,
+				[6539] = 136025,
 			},
 		},
-		["Cthun Vulnerable"] = {
+		["Summon Duke Random"] = {
 			["spells"] = {
-				[26235] = 136235,
+				[24763] = 136235,
 			},
 		},
 		["Immunity: Shadow"] = {
@@ -80756,9 +80711,9 @@ WeakAurasOptionsSaved = {
 				[7743] = 136121,
 			},
 		},
-		["Enslave"] = {
+		["Time Out"] = {
 			["spells"] = {
-				[3442] = 136129,
+				[17691] = 136222,
 			},
 		},
 		["Increased Frost Resist 28"] = {
@@ -80766,10 +80721,9 @@ WeakAurasOptionsSaved = {
 				[14567] = 136235,
 			},
 		},
-		["Big Iron Bomb"] = {
+		["Create House (TEST)"] = {
 			["spells"] = {
-				[3967] = 136235,
-				[4069] = 135826,
+				[6757] = 132281,
 			},
 		},
 		["Consecration"] = {
@@ -80804,20 +80758,22 @@ WeakAurasOptionsSaved = {
 				[7621] = 136160,
 			},
 		},
-		["Increase Spell Dam 68"] = {
+		["Ghost Costume"] = {
 			["spells"] = {
-				[26227] = 136235,
-				[42108] = 136235,
+				[24737] = 136131,
+				[24735] = 136163,
+				[24736] = 136163,
 			},
 		},
-		["Create Fresh Holly"] = {
+		["Fine Leather Boots"] = {
 			["spells"] = {
-				[26207] = 136235,
+				[2158] = 136247,
 			},
 		},
-		["Increased Arcane Resist 32"] = {
+		["Bat Costume"] = {
 			["spells"] = {
-				[14734] = 136235,
+				[24732] = 132288,
+				[24733] = 132182,
 			},
 		},
 		["Increase Shadow Dam 30"] = {
@@ -80825,13 +80781,11 @@ WeakAurasOptionsSaved = {
 				[18011] = 136235,
 			},
 		},
-		["Whisperings of C'Thun"] = {
+		["Trick"] = {
 			["spells"] = {
-				[26258] = 136206,
-				[26259] = 136206,
-				[26197] = 136206,
-				[26198] = 136206,
-				[26195] = 136206,
+				[24750] = 136235,
+				[24753] = 132118,
+				[24714] = 136235,
 			},
 		},
 		["Increase Healing 15"] = {
@@ -80862,9 +80816,9 @@ WeakAurasOptionsSaved = {
 				[15065] = 136235,
 			},
 		},
-		["Parachute Cloak"] = {
+		["Invocation of the Wickerman"] = {
 			["spells"] = {
-				[12616] = 136235,
+				[24705] = 135462,
 			},
 		},
 		["Bronze Warhammer"] = {
@@ -80882,29 +80836,14 @@ WeakAurasOptionsSaved = {
 				[23633] = 136192,
 			},
 		},
-		["Maul"] = {
+		["Dreamless Sleep"] = {
 			["spells"] = {
-				[17156] = 132136,
-				[8972] = 132136,
-				[34298] = 132136,
-				[9880] = 132136,
-				[9745] = 132136,
-				[26996] = 132136,
-				[9881] = 132136,
-				[27553] = 132136,
-				[12161] = 132136,
-				[20751] = 132136,
-				[6807] = 132136,
-				[6808] = 132136,
-				[6809] = 132136,
-				[15793] = 132136,
-				[7092] = 132136,
+				[15822] = 136090,
 			},
 		},
-		["Increased Spell Penetration 38"] = {
+		["Dreamscale Breastplate"] = {
 			["spells"] = {
-				[26175] = 136235,
-				[41656] = 136235,
+				[24703] = 136235,
 			},
 		},
 		["Raise Dead Template"] = {
@@ -80932,9 +80871,15 @@ WeakAurasOptionsSaved = {
 				[9515] = 132266,
 			},
 		},
-		["Striker's Arcane Shot Bonus"] = {
+		["Ice Barrier"] = {
 			["spells"] = {
-				[26173] = 136235,
+				[11426] = 135988,
+				[13033] = 135988,
+				[27134] = 135988,
+				[13031] = 135988,
+				[33245] = 135988,
+				[13032] = 135988,
+				[33405] = 135988,
 			},
 		},
 		["Arantir's Anger Effect"] = {
@@ -80942,9 +80887,9 @@ WeakAurasOptionsSaved = {
 				[9737] = 132369,
 			},
 		},
-		["Increased Renew Duration"] = {
+		["BM ON"] = {
 			["spells"] = {
-				[26171] = 136081,
+				[24676] = 132096,
 			},
 		},
 		["Summon Ribbon Pole Critter"] = {
@@ -80962,19 +80907,21 @@ WeakAurasOptionsSaved = {
 				[47690] = 136235,
 			},
 		},
-		["Rift Spawn Invisibility"] = {
+		["Summon Razzashi Skitterer"] = {
 			["spells"] = {
-				[9093] = 135994,
+				[24598] = 132099,
 			},
 		},
-		["Perm. Illusion Slime"] = {
+		["Intoxicating Venom"] = {
 			["spells"] = {
-				[8299] = 132311,
+				[24596] = 132103,
 			},
 		},
-		["Wisp Detonate"] = {
+		["Elemental Weapons"] = {
 			["spells"] = {
-				[6237] = 136116,
+				[16266] = 135814,
+				[29079] = 135814,
+				[29080] = 135814,
 			},
 		},
 		["Stormstrike"] = {
@@ -81007,12 +80954,9 @@ WeakAurasOptionsSaved = {
 				[39889] = 136235,
 			},
 		},
-		["PX-238 Winter Wondervolt"] = {
+		["Massive Destruction"] = {
 			["spells"] = {
-				[26273] = 135849,
-				[26157] = 135849,
-				[26272] = 135849,
-				[26274] = 135849,
+				[24543] = 135831,
 			},
 		},
 		["Aura of Command"] = {
@@ -81020,13 +80964,35 @@ WeakAurasOptionsSaved = {
 				[25516] = 132484,
 			},
 		},
-		["Increased Agility 20"] = {
+		["Power Word: Shield"] = {
 			["spells"] = {
-				[41698] = 136235,
-				[14384] = 136235,
-				[41758] = 136235,
-				[41897] = 136235,
-				[41800] = 136235,
+				[41373] = 135940,
+				[17139] = 135940,
+				[17] = 135940,
+				[11647] = 135940,
+				[3747] = 135940,
+				[25217] = 135940,
+				[44291] = 135940,
+				[25218] = 135940,
+				[11974] = 135940,
+				[592] = 135940,
+				[11835] = 135940,
+				[6065] = 135940,
+				[46193] = 135940,
+				[10898] = 135940,
+				[44175] = 135940,
+				[36052] = 135940,
+				[22187] = 135940,
+				[10899] = 135940,
+				[32595] = 135940,
+				[6066] = 135940,
+				[29408] = 135940,
+				[10900] = 135940,
+				[27607] = 135940,
+				[20697] = 135940,
+				[35944] = 135940,
+				[10901] = 135940,
+				[600] = 135940,
 			},
 		},
 		["Magenta Cap Sickness"] = {
@@ -81039,19 +81005,21 @@ WeakAurasOptionsSaved = {
 				[264] = 135493,
 			},
 		},
-		["Growl of Fortitude Proc"] = {
+		["Aspect of the Pack"] = {
 			["spells"] = {
-				[6923] = 132091,
+				[13159] = 132267,
 			},
 		},
-		["Increase Shadow Dam 53"] = {
+		["Head Butt"] = {
 			["spells"] = {
-				[18027] = 136235,
+				[6730] = 132939,
+				[25788] = 132938,
+				[11650] = 132939,
 			},
 		},
-		["Increase Healing 90"] = {
+		["Meeting Stone Summon"] = {
 			["spells"] = {
-				[26154] = 136235,
+				[23598] = 136223,
 			},
 		},
 		["Brewmaiden Despawn Control Aura"] = {
@@ -81079,9 +81047,9 @@ WeakAurasOptionsSaved = {
 				[34020] = 135987,
 			},
 		},
-		["Spiced Wolf Meat"] = {
+		["Refocus"] = {
 			["spells"] = {
-				[2539] = 136192,
+				[24531] = 132212,
 			},
 		},
 		["Plant Thornling"] = {
@@ -81094,9 +81062,9 @@ WeakAurasOptionsSaved = {
 				[9177] = 133987,
 			},
 		},
-		["Trappings of Vaulted Secrets Mana Shield Bonus"] = {
+		["Lavender Mageweave Shirt"] = {
 			["spells"] = {
-				[26131] = 136011,
+				[12075] = 132149,
 			},
 		},
 		["Cyclone Totem"] = {
@@ -81120,24 +81088,28 @@ WeakAurasOptionsSaved = {
 				[14544] = 136235,
 			},
 		},
-		["Enigma Blizzard Bonus"] = {
+		["Improved Rain of Fire/Hellfire"] = {
 			["spells"] = {
-				[26127] = 136235,
+				[24430] = 136235,
 			},
 		},
-		["Horde Reputation"] = {
+		["Increased Agility 20"] = {
 			["spells"] = {
-				[26125] = 132485,
+				[41698] = 136235,
+				[14384] = 136235,
+				[41758] = 136235,
+				[41897] = 136235,
+				[41800] = 136235,
 			},
 		},
-		["Bronze Tube"] = {
+		["Savior's Sacrifice"] = {
 			["spells"] = {
-				[3938] = 136235,
+				[18826] = 135893,
 			},
 		},
-		["Increased Fire Resist 35"] = {
+		["Heavy Crocolisk Stew"] = {
 			["spells"] = {
-				[14615] = 136235,
+				[24418] = 136192,
 			},
 		},
 		["Sovereign Shadow Draenite"] = {
@@ -81155,29 +81127,32 @@ WeakAurasOptionsSaved = {
 				[16056] = 132267,
 			},
 		},
-		["Implements of Unspoken Names Pet Bonus"] = {
+		["Summon Duke Water, Trigger"] = {
 			["spells"] = {
-				[26118] = 136235,
+				[24773] = 136235,
 			},
 		},
-		["Doomcaller Reduced Shadow Bolt Cost"] = {
+		["Increase Arcane Dam 9"] = {
 			["spells"] = {
-				[26117] = 136235,
+				[13595] = 136235,
 			},
 		},
-		["Whipper Root Tuber"] = {
+		["Remove Amorous"] = {
 			["spells"] = {
-				[15700] = 136235,
+				[26879] = 136235,
 			},
 		},
-		["Doomcaller Immolate Bonus"] = {
+		["Mind Probe"] = {
 			["spells"] = {
-				[26116] = 136235,
+				[16037] = 135736,
 			},
 		},
-		["Bruiser Sleeping"] = {
+		["Cannon Fire"] = {
 			["spells"] = {
-				[26115] = 136090,
+				[17501] = 135810,
+				[50558] = 136235,
+				[17278] = 135805,
+				[40787] = 135797,
 			},
 		},
 		["Shadow Sear"] = {
@@ -81185,9 +81160,9 @@ WeakAurasOptionsSaved = {
 				[30735] = 136131,
 			},
 		},
-		["Deathdealer Eviscerate Bonus"] = {
+		["Deafened"] = {
 			["spells"] = {
-				[26113] = 136235,
+				[24402] = 132182,
 			},
 		},
 		["Alchemy"] = {
@@ -81218,38 +81193,9 @@ WeakAurasOptionsSaved = {
 				[34660] = 135818,
 			},
 		},
-		["Increase Spell Dam 23"] = {
+		["Mojo"] = {
 			["spells"] = {
-				[41805] = 136235,
-				[32451] = 136235,
-				[41807] = 136235,
-				[41715] = 136235,
-				[41654] = 136235,
-				[41687] = 136235,
-				[41905] = 136235,
-				[41902] = 136235,
-				[41753] = 136235,
-				[41900] = 136235,
-				[41884] = 136235,
-				[41811] = 136235,
-				[41828] = 136235,
-				[41789] = 136235,
-				[41697] = 136235,
-				[41729] = 136235,
-				[41815] = 136235,
-				[41762] = 136235,
-				[41825] = 136235,
-				[41795] = 136235,
-				[41703] = 136235,
-				[41766] = 136235,
-				[41860] = 136235,
-				[41799] = 136235,
-				[32449] = 136235,
-				[41709] = 136235,
-				[14047] = 136235,
-				[41760] = 136235,
-				[32450] = 136235,
-				[39543] = 136235,
+				[24346] = 136235,
 			},
 		},
 		["Shadowsurge"] = {
@@ -81258,9 +81204,9 @@ WeakAurasOptionsSaved = {
 				[36518] = 136204,
 			},
 		},
-		["Six Demon Bag"] = {
+		["Silithid Swarm Passive"] = {
 			["spells"] = {
-				[14537] = 136129,
+				[6590] = 132111,
 			},
 		},
 		["Increased Shadow Resist 08"] = {
@@ -81283,9 +81229,9 @@ WeakAurasOptionsSaved = {
 				[32196] = 135977,
 			},
 		},
-		["Increased Intellect 27"] = {
+		["Fishing Skill +35"] = {
 			["spells"] = {
-				[14417] = 136235,
+				[24301] = 136245,
 			},
 		},
 		["Evocation Visual (DND)"] = {
@@ -81293,9 +81239,9 @@ WeakAurasOptionsSaved = {
 				[32476] = 136235,
 			},
 		},
-		["Soul Breaker"] = {
+		["QADebug Instant Cast"] = {
 			["spells"] = {
-				[17506] = 136163,
+				[27204] = 132369,
 			},
 		},
 		["Bladespire Clan Banner"] = {
@@ -81308,10 +81254,9 @@ WeakAurasOptionsSaved = {
 				[43244] = 136235,
 			},
 		},
-		["Sweep"] = {
+		["Enhanced Sunder Armor"] = {
 			["spells"] = {
-				[26103] = 136104,
-				[37474] = 132325,
+				[23561] = 136235,
 			},
 		},
 		["Summon Bash'ir Boss South"] = {
@@ -81324,15 +81269,15 @@ WeakAurasOptionsSaved = {
 				[14735] = 136235,
 			},
 		},
-		["Solid Sharpening Stone"] = {
+		["Gurubashi Mojo Madness"] = {
 			["spells"] = {
-				[9918] = 136192,
+				[24266] = 136235,
+				[24267] = 136021,
 			},
 		},
-		["Felcloth Bag"] = {
+		["Digging for Cobalt"] = {
 			["spells"] = {
-				[26086] = 132149,
-				[26095] = 136021,
+				[11757] = 136235,
 			},
 		},
 		["Portal: Stormwind"] = {
@@ -81340,9 +81285,14 @@ WeakAurasOptionsSaved = {
 				[10059] = 135748,
 			},
 		},
-		["Fishing Skill +35"] = {
+		["Spirit Tap"] = {
 			["spells"] = {
-				[24301] = 136245,
+				[15336] = 136188,
+				[15270] = 136188,
+				[15337] = 136188,
+				[15271] = 136188,
+				[15338] = 136188,
+				[15335] = 136188,
 			},
 		},
 		["Fury of Ragnaros"] = {
@@ -81365,16 +81315,14 @@ WeakAurasOptionsSaved = {
 				[49444] = 133035,
 			},
 		},
-		["Battle Roar"] = {
+		["Spawn - Red Lightning"] = {
 			["spells"] = {
-				[6507] = 132277,
+				[24240] = 136115,
 			},
 		},
-		["Breath of Fire"] = {
+		["Mark of Arlokk"] = {
 			["spells"] = {
-				[12278] = 135818,
-				[29388] = 135818,
-				[12257] = 135818,
+				[24210] = 132212,
 			},
 		},
 		["Enchant Gloves - Riding Skill"] = {
@@ -81392,25 +81340,20 @@ WeakAurasOptionsSaved = {
 				[17672] = 136235,
 			},
 		},
-		["Ouro Submerge Visual"] = {
+		["Pet Upgrade"] = {
 			["spells"] = {
-				[26063] = 135830,
+				[1588] = 136235,
 			},
 		},
-		["Ice Armor"] = {
+		["Increase Spell Dam 47"] = {
 			["spells"] = {
-				[10219] = 135843,
-				[7302] = 135843,
-				[36881] = 135843,
-				[7320] = 135843,
-				[27124] = 135843,
-				[10220] = 135843,
+				[24196] = 136235,
+				[41782] = 136235,
 			},
 		},
-		["Summon Ouro"] = {
+		["Increased Strength 14"] = {
 			["spells"] = {
-				[26061] = 136235,
-				[26642] = 136235,
+				[9267] = 136235,
 			},
 		},
 		["Cured Light Hide"] = {
@@ -81418,19 +81361,21 @@ WeakAurasOptionsSaved = {
 				[3816] = 136247,
 			},
 		},
-		["Summon Ouro Mounds"] = {
+		["Thekal Transform"] = {
 			["spells"] = {
-				[26058] = 136235,
+				[24169] = 132288,
 			},
 		},
-		["Summon Green Qiraji Battle Tank"] = {
+		["Vodouisant's Vigilant Embrace"] = {
 			["spells"] = {
-				[26056] = 134397,
+				[24155] = 136235,
+				[24163] = 136235,
 			},
 		},
-		["Dark Iron Destroyer"] = {
+		["Syncretist's Sigil"] = {
 			["spells"] = {
-				[20897] = 136192,
+				[24151] = 136235,
+				[24160] = 136235,
 			},
 		},
 		["Forsaken Skill: Daggers"] = {
@@ -81438,9 +81383,9 @@ WeakAurasOptionsSaved = {
 				[7040] = 135429,
 			},
 		},
-		["Summon Red Qiraji Battle Tank"] = {
+		["Darksoul Leggings"] = {
 			["spells"] = {
-				[26054] = 134396,
+				[24140] = 136192,
 			},
 		},
 		["Teleport Return"] = {
@@ -81453,24 +81398,24 @@ WeakAurasOptionsSaved = {
 				[32889] = 136130,
 			},
 		},
-		["Windblossom Berries"] = {
+		["Primal Batskin Bracers"] = {
 			["spells"] = {
-				[26030] = 134062,
+				[24123] = 136235,
 			},
 		},
-		["Longshot II"] = {
+		["Enveloping Webs"] = {
 			["spells"] = {
-				[1536] = 132222,
+				[24110] = 136022,
 			},
 		},
-		["Summon Cresting Exile"] = {
+		["Increased Block 4"] = {
 			["spells"] = {
-				[4928] = 136192,
+				[21466] = 136235,
 			},
 		},
-		["Teleport: Thunder Bluff"] = {
+		["Uther's Night Elf Tribute"] = {
 			["spells"] = {
-				[3566] = 135765,
+				[24108] = 136235,
 			},
 		},
 		["Ashcrombe's Unlock"] = {
@@ -81478,9 +81423,9 @@ WeakAurasOptionsSaved = {
 				[6421] = 136058,
 			},
 		},
-		["Heavy Blasting Powder"] = {
+		["Grom's Tauren Tribute"] = {
 			["spells"] = {
-				[3945] = 136235,
+				[24102] = 136235,
 			},
 		},
 		["Summon Ishamuhale"] = {
@@ -81488,14 +81433,14 @@ WeakAurasOptionsSaved = {
 				[12199] = 136168,
 			},
 		},
-		["Sandstalker Breastplate"] = {
+		["Bloodvine Boots"] = {
 			["spells"] = {
-				[24851] = 136235,
+				[24093] = 132149,
 			},
 		},
-		["Minor Mount Speed"] = {
+		["Minor Movement Speed"] = {
 			["spells"] = {
-				[13927] = 136235,
+				[24090] = 136235,
 			},
 		},
 		["Drums of Restoration"] = {
@@ -81504,9 +81449,9 @@ WeakAurasOptionsSaved = {
 				[35539] = 136247,
 			},
 		},
-		["Summon Tranquil Mechanical Yeti"] = {
+		["Transform Visual"] = {
 			["spells"] = {
-				[26010] = 132311,
+				[24085] = 136235,
 			},
 		},
 		["Lightning Breath"] = {
@@ -81544,19 +81489,9 @@ WeakAurasOptionsSaved = {
 				[7669] = 135899,
 			},
 		},
-		["Filling"] = {
+		["Complete Arathi Basin quest, 5 bases"] = {
 			["spells"] = {
-				[16073] = 136235,
-				[16077] = 136235,
-				[6803] = 136235,
-				[6609] = 136235,
-				[6610] = 136235,
-				[6611] = 136235,
-				[25855] = 136235,
-				[41920] = 132623,
-				[9582] = 136235,
-				[18397] = 136235,
-				[4976] = 136235,
+				[24064] = 136235,
 			},
 		},
 		["Stalker's Ally"] = {
@@ -81576,9 +81511,10 @@ WeakAurasOptionsSaved = {
 				[7707] = 136235,
 			},
 		},
-		["Tune Up"] = {
+		["Wolfshead Helm Energy"] = {
 			["spells"] = {
-				[10348] = 132996,
+				[17770] = 135998,
+				[29940] = 135998,
 			},
 		},
 		["Essence Mango"] = {
@@ -81614,9 +81550,9 @@ WeakAurasOptionsSaved = {
 				[16556] = 136235,
 			},
 		},
-		["Opening Secret Safe"] = {
+		["Summon Cresting Exile"] = {
 			["spells"] = {
-				[14125] = 136235,
+				[4928] = 136192,
 			},
 		},
 		["Barbaric Iron Gloves"] = {
@@ -81629,19 +81565,19 @@ WeakAurasOptionsSaved = {
 				[14711] = 136235,
 			},
 		},
-		["Smite Demon"] = {
+		["Teleport: Thunder Bluff"] = {
 			["spells"] = {
-				[13907] = 135920,
+				[3566] = 135765,
 			},
 		},
-		["Volcanic Breastplate"] = {
+		["Heavy Blasting Powder"] = {
 			["spells"] = {
-				[19076] = 136235,
+				[3945] = 136235,
 			},
 		},
-		["Enchant Chest - Minor Health"] = {
+		["Demonic Doom"] = {
 			["spells"] = {
-				[7420] = 135913,
+				[23298] = 136221,
 			},
 		},
 		["Increased Fire Resist 20"] = {
@@ -81649,21 +81585,21 @@ WeakAurasOptionsSaved = {
 				[14600] = 136235,
 			},
 		},
-		["Herbalism"] = {
+		["Heavy Kodo Stew"] = {
 			["spells"] = {
-				[9134] = 136246,
-				[13614] = 136235,
+				[15910] = 136192,
 			},
 		},
-		["Toxin"] = {
+		["Tranquilizing Poison"] = {
 			["spells"] = {
-				[25989] = 136006,
-				[26575] = 136006,
+				[24002] = 132105,
+				[24003] = 132105,
+				[43364] = 132105,
 			},
 		},
-		["Summon Nightmare Ectoplasm"] = {
+		["Scraping"] = {
 			["spells"] = {
-				[7969] = 136121,
+				[13630] = 136235,
 			},
 		},
 		["Hot Lion Chops"] = {
@@ -81676,19 +81612,21 @@ WeakAurasOptionsSaved = {
 				[14619] = 136235,
 			},
 		},
-		["Runecloth Headband"] = {
+		["Readiness"] = {
 			["spells"] = {
-				[18444] = 132149,
+				[23989] = 132206,
 			},
 		},
-		["Sagefish Delight"] = {
+		["Increase Spell Dam 71"] = {
 			["spells"] = {
-				[25954] = 136192,
+				[23929] = 136235,
+				[41648] = 136235,
 			},
 		},
-		["Enchant Chest - Superior Health"] = {
+		["Jubling Cooldown"] = {
 			["spells"] = {
-				[13858] = 135913,
+				[23852] = 136235,
+				[23853] = 136235,
 			},
 		},
 		["Holy Protection"] = {
@@ -81728,9 +81666,9 @@ WeakAurasOptionsSaved = {
 				[29918] = 136235,
 			},
 		},
-		["One-Handed Axes"] = {
+		["Enchant Weapon - Fiery Weapon"] = {
 			["spells"] = {
-				[196] = 132392,
+				[13898] = 135913,
 			},
 		},
 		["QAEnchant Shield +7 Stamina"] = {
@@ -81743,9 +81681,9 @@ WeakAurasOptionsSaved = {
 				[29648] = 136192,
 			},
 		},
-		["Solid Iron Maul"] = {
+		["Sayge's Dark Fortune of Strength"] = {
 			["spells"] = {
-				[3494] = 136192,
+				[23735] = 134334,
 			},
 		},
 		["Evil Twin"] = {
@@ -81758,25 +81696,26 @@ WeakAurasOptionsSaved = {
 				[17901] = 136235,
 			},
 		},
-		["Living Flame Passive"] = {
+		["Soul Breaker"] = {
 			["spells"] = {
-				[5111] = 135805,
+				[17506] = 136163,
 			},
 		},
-		["Greater Blessing of Kings"] = {
+		["Aspect of Neptulon"] = {
 			["spells"] = {
-				[25898] = 135993,
+				[21332] = 134856,
 			},
 		},
-		["Paralyzing Poison"] = {
+		["Blinding Light"] = {
 			["spells"] = {
-				[3609] = 132274,
+				[36950] = 136184,
+				[23733] = 135972,
+				[33009] = 136096,
 			},
 		},
-		["Distract Move"] = {
+		["Increase Spell Dam 56"] = {
 			["spells"] = {
-				[15051] = 136235,
-				[15056] = 136235,
+				[23732] = 136235,
 			},
 		},
 		["Deadly Poison V"] = {
@@ -81807,16 +81746,15 @@ WeakAurasOptionsSaved = {
 				[25531] = 136202,
 			},
 		},
-		["Greater Blessing of Salvation"] = {
+		["Increased Spell Hit Chance 8"] = {
 			["spells"] = {
-				[25895] = 135910,
+				[23727] = 136235,
+				[39702] = 136235,
 			},
 		},
-		["Greater Blessing of Wisdom"] = {
+		["One-Handed Axes"] = {
 			["spells"] = {
-				[27143] = 135912,
-				[25918] = 135912,
-				[25894] = 135912,
+				[196] = 132392,
 			},
 		},
 		["Sanctuary"] = {
@@ -81834,9 +81772,9 @@ WeakAurasOptionsSaved = {
 				[40249] = 136235,
 			},
 		},
-		["Increase Holy Dam 16"] = {
+		["Lava Belt"] = {
 			["spells"] = {
-				[21509] = 136235,
+				[23707] = 136235,
 			},
 		},
 		["Anchor to Skulls"] = {
@@ -81846,9 +81784,9 @@ WeakAurasOptionsSaved = {
 				[27937] = 136235,
 			},
 		},
-		["Moonglow Vest"] = {
+		["Rough Bronze Leggings"] = {
 			["spells"] = {
-				[8322] = 136247,
+				[2668] = 136192,
 			},
 		},
 		["The Brewmaiden's Blessing"] = {
@@ -81856,10 +81794,9 @@ WeakAurasOptionsSaved = {
 				[51847] = 135127,
 			},
 		},
-		["Increased Stamina 18"] = {
+		["Timbermaw Brawlers"] = {
 			["spells"] = {
-				[14465] = 136235,
-				[41778] = 136235,
+				[23704] = 136235,
 			},
 		},
 		["Justin Coyote Spirit Despawn Test"] = {
@@ -81872,9 +81809,9 @@ WeakAurasOptionsSaved = {
 				[3416] = 136224,
 			},
 		},
-		["CHECKMEOUT"] = {
+		["Unstoppable Force"] = {
 			["spells"] = {
-				[22147] = 136235,
+				[23699] = 136235,
 			},
 		},
 		["Stygian Grasp"] = {
@@ -81889,25 +81826,24 @@ WeakAurasOptionsSaved = {
 				[46464] = 135805,
 			},
 		},
-		["Summon Gnashjaw"] = {
+		["Stormpike's Salvation"] = {
 			["spells"] = {
-				[19561] = 132328,
+				[23693] = 136087,
 			},
 		},
-		["Stromgarde Militia Call"] = {
+		["Sam's Test Spell"] = {
 			["spells"] = {
-				[5250] = 136235,
+				[23685] = 136235,
 			},
 		},
-		["Lost Control"] = {
+		["Ozzie Explodes"] = {
 			["spells"] = {
-				[7184] = 132281,
+				[16379] = 136235,
 			},
 		},
-		["White Wedding Dress"] = {
+		["Increase Holy Dam 16"] = {
 			["spells"] = {
-				[12091] = 132149,
-				[12131] = 136021,
+				[21509] = 136235,
 			},
 		},
 		["Hamstring Rage Reduction"] = {
@@ -81915,18 +81851,9 @@ WeakAurasOptionsSaved = {
 				[22778] = 132316,
 			},
 		},
-		["Spotlight"] = {
+		["Earthen Guards Destroyed"] = {
 			["spells"] = {
-				[351655] = 135926,
-				[41347] = 135926,
-				[25823] = 135926,
-				[34126] = 135926,
-				[35259] = 135926,
-				[25824] = 135926,
-				[29683] = 135926,
-				[46975] = 135926,
-				[32214] = 135926,
-				[35498] = 135926,
+				[10666] = 136025,
 			},
 		},
 		["Summon Lasher Beast"] = {
@@ -81935,9 +81862,9 @@ WeakAurasOptionsSaved = {
 				[35428] = 136052,
 			},
 		},
-		["Dispel"] = {
+		["Beasts Deck"] = {
 			["spells"] = {
-				[25808] = 135894,
+				[23677] = 136235,
 			},
 		},
 		["Nether Beam"] = {
@@ -81947,9 +81874,9 @@ WeakAurasOptionsSaved = {
 				[30469] = 135731,
 			},
 		},
-		["Increase Fire Dam 16"] = {
+		["Heavy Timbermaw Belt"] = {
 			["spells"] = {
-				[9294] = 136235,
+				[23628] = 136192,
 			},
 		},
 		["Headless Horseman Laugh"] = {
@@ -81957,9 +81884,9 @@ WeakAurasOptionsSaved = {
 				[43873] = 136235,
 			},
 		},
-		["Soul Corruption"] = {
+		["GGOODMANTEST2"] = {
 			["spells"] = {
-				[25805] = 136159,
+				[23618] = 135805,
 			},
 		},
 		["Radiant Breastplate"] = {
@@ -81974,9 +81901,9 @@ WeakAurasOptionsSaved = {
 				[33136] = 136235,
 			},
 		},
-		["Diseased Shot"] = {
+		["Increase Shadow Dam 64"] = {
 			["spells"] = {
-				[11397] = 136127,
+				[23594] = 136235,
 			},
 		},
 		["Elixir of Healing Power"] = {
@@ -81984,14 +81911,14 @@ WeakAurasOptionsSaved = {
 				[28545] = 136235,
 			},
 		},
-		["Frenzy Aura"] = {
+		["Improved Drain Life"] = {
 			["spells"] = {
-				[25801] = 135906,
+				[23554] = 136235,
 			},
 		},
-		["Stormshroud Armor"] = {
+		["Summon Tiny Red Dragon"] = {
 			["spells"] = {
-				[19079] = 136235,
+				[23530] = 132311,
 			},
 		},
 		["Ethereal Pet Aura OnKill"] = {
@@ -82025,9 +81952,9 @@ WeakAurasOptionsSaved = {
 				[23930] = 133440,
 			},
 		},
-		["Ahn'Qiraj Reward Buff (Caster - 40)"] = {
+		["Dimension Ripper - Everlook"] = {
 			["spells"] = {
-				[25798] = 134969,
+				[23490] = 136235,
 			},
 		},
 		["Attack Power - Feral (+1059)"] = {
@@ -82035,9 +81962,10 @@ WeakAurasOptionsSaved = {
 				[44916] = 136235,
 			},
 		},
-		["Ahn'Qiraj Reward Buff (Melee - 60)"] = {
+		["Aura of the Blue Dragon"] = {
 			["spells"] = {
-				[25796] = 134969,
+				[23684] = 134155,
+				[23688] = 136208,
 			},
 		},
 		["TEST Arcane Concentration"] = {
@@ -82050,41 +81978,34 @@ WeakAurasOptionsSaved = {
 				[7079] = 135994,
 			},
 		},
-		["Increased Nature Resist 05"] = {
+		["Increase Arcane Dam 51"] = {
 			["spells"] = {
-				[14626] = 136235,
+				[17847] = 136235,
 			},
 		},
-		["Virulent Poison"] = {
+		["Krazek's Drug"] = {
 			["spells"] = {
-				[16427] = 136016,
-				[12251] = 136016,
-				[39029] = 136016,
-				[22412] = 136016,
+				[6903] = 134374,
 			},
 		},
-		["Beast Slaying 60"] = {
+		["Ultrasafe Transporter - Gadgetzan"] = {
 			["spells"] = {
-				[18207] = 136235,
+				[23489] = 136235,
 			},
 		},
-		["Place Arcanite Buoy"] = {
+		["Gnomish Transporter"] = {
 			["spells"] = {
-				[25783] = 136235,
+				[23453] = 135728,
 			},
 		},
-		["Greater Blessing of Might"] = {
+		["Gadgetzan Transporter"] = {
 			["spells"] = {
-				[33564] = 135906,
-				[25782] = 135908,
-				[27141] = 135908,
-				[25916] = 135908,
-				[29381] = 135906,
+				[23441] = 132862,
 			},
 		},
-		["Atal'ai Skeleton Totem"] = {
+		["Left Piece of Lord Valthalak's Amulet"] = {
 			["spells"] = {
-				[12506] = 136187,
+				[27146] = 136235,
 			},
 		},
 		["Smoke Cloud"] = {
@@ -82119,9 +82040,9 @@ WeakAurasOptionsSaved = {
 				[30647] = 132164,
 			},
 		},
-		["Azure Silk Hood"] = {
+		["Summon Hawksbill Snapjaw"] = {
 			["spells"] = {
-				[8760] = 132149,
+				[23432] = 132311,
 			},
 		},
 		["Periodic Player Check (Rizzle)"] = {
@@ -82129,9 +82050,9 @@ WeakAurasOptionsSaved = {
 				[39888] = 136235,
 			},
 		},
-		["Bind Sight (PT)"] = {
+		["Eject Sneed"] = {
 			["spells"] = {
-				[6277] = 136235,
+				[5141] = 135805,
 			},
 		},
 		["Tammra Sapling"] = {
@@ -82139,9 +82060,14 @@ WeakAurasOptionsSaved = {
 				[20041] = 136235,
 			},
 		},
-		["Place Loot"] = {
+		["Improved Mind Blast"] = {
 			["spells"] = {
-				[25720] = 136235,
+				[15273] = 136224,
+				[15312] = 136224,
+				[15316] = 136224,
+				[15313] = 136224,
+				[15314] = 136224,
+				[38412] = 136235,
 			},
 		},
 		["BOTM - Vendor - Transform -  Horde"] = {
@@ -82149,9 +82075,9 @@ WeakAurasOptionsSaved = {
 				[49673] = 132792,
 			},
 		},
-		["Increase Shadow Dam 54"] = {
+		["Summon Lava Spawn"] = {
 			["spells"] = {
-				[18028] = 136235,
+				[19392] = 136192,
 			},
 		},
 		["Ancient Spark"] = {
@@ -82159,14 +82085,14 @@ WeakAurasOptionsSaved = {
 				[39349] = 136048,
 			},
 		},
-		["Old Enriched Manna Biscuit"] = {
+		["Smother"] = {
 			["spells"] = {
-				[25697] = 134062,
+				[23417] = 134343,
 			},
 		},
-		["Fearless"] = {
+		["Increase Spell Dam 22"] = {
 			["spells"] = {
-				[12733] = 132333,
+				[15714] = 136235,
 			},
 		},
 		["Goblin Rocket Fuel Recipe"] = {
@@ -82179,28 +82105,28 @@ WeakAurasOptionsSaved = {
 				[8210] = 132140,
 			},
 		},
-		["Lightning Strike"] = {
+		["Mor'rogal Enchant"] = {
 			["spells"] = {
-				[37841] = 136048,
-				[16614] = 135990,
-				[27983] = 136235,
-				[23686] = 135934,
-				[23687] = 135990,
+				[20528] = 136235,
 			},
 		},
-		["Siren's Song"] = {
+		["Swift Stormsaber"] = {
 			["spells"] = {
-				[25678] = 132322,
+				[23338] = 132225,
 			},
 		},
-		["Frostweave Gloves"] = {
+		["Warsong Flag"] = {
 			["spells"] = {
-				[18411] = 132149,
+				[23333] = 132485,
 			},
 		},
-		["Mebok Smart Drink"] = {
+		["Lethal Shots"] = {
 			["spells"] = {
-				[7920] = 136235,
+				[19426] = 132312,
+				[19427] = 132312,
+				[19429] = 132312,
+				[19430] = 132312,
+				[19431] = 132312,
 			},
 		},
 		["Item +SPI/FR Leg R2"] = {
@@ -82208,19 +82134,27 @@ WeakAurasOptionsSaved = {
 				[15456] = 136235,
 			},
 		},
-		["Dirge's Kickin' Chimaerok Chops"] = {
+		["Heavy Mithril Boots"] = {
 			["spells"] = {
-				[25659] = 136192,
+				[9968] = 136192,
 			},
 		},
-		["Supercharge"] = {
+		["Shadow Portal"] = {
 			["spells"] = {
-				[10732] = 135990,
+				[17948] = 136192,
+				[17943] = 136192,
+				[17944] = 136192,
+				[17950] = 136192,
+				[17939] = 136192,
+				[17863] = 136192,
+				[17946] = 136192,
 			},
 		},
-		["Citrine Ring of Rapid Healing"] = {
+		["Time Lapse"] = {
 			["spells"] = {
-				[25621] = 136235,
+				[23312] = 135744,
+				[23310] = 135744,
+				[31467] = 136091,
 			},
 		},
 		["Deathblow"] = {
@@ -82239,14 +82173,14 @@ WeakAurasOptionsSaved = {
 				[20589] = 132309,
 			},
 		},
-		["Crocolisk Gumbo"] = {
+		["Immune Fear/Polymorph/Stun"] = {
 			["spells"] = {
-				[3373] = 136192,
+				[23276] = 135894,
 			},
 		},
-		["Journeyman Tailor"] = {
+		["Attack Power 16"] = {
 			["spells"] = {
-				[3912] = 136249,
+				[9329] = 136235,
 			},
 		},
 		["Hydrojet"] = {
@@ -82286,9 +82220,9 @@ WeakAurasOptionsSaved = {
 				[36480] = 135733,
 			},
 		},
-		["Summon Hyacinth Macaw"] = {
+		["Antu'sul's Salvation"] = {
 			["spells"] = {
-				[10682] = 132311,
+				[11890] = 136235,
 			},
 		},
 		["Immunity: Fire"] = {
@@ -82296,9 +82230,9 @@ WeakAurasOptionsSaved = {
 				[7942] = 135824,
 			},
 		},
-		["Braided Copper Ring"] = {
+		["Swift White Ram"] = {
 			["spells"] = {
-				[25493] = 136235,
+				[23240] = 132248,
 			},
 		},
 		["Mount Speed"] = {
@@ -82311,9 +82245,9 @@ WeakAurasOptionsSaved = {
 				[48776] = 133803,
 			},
 		},
-		["Solid Bronze Ring"] = {
+		["Swift Gray Ram"] = {
 			["spells"] = {
-				[25490] = 136235,
+				[23239] = 132248,
 			},
 		},
 		["Spicy Hot Talbuk"] = {
@@ -82321,21 +82255,19 @@ WeakAurasOptionsSaved = {
 				[43765] = 136192,
 			},
 		},
-		["Draw of Thistlenettle"] = {
+		["Swift Mistsaber"] = {
 			["spells"] = {
-				[5219] = 136163,
+				[23219] = 132225,
 			},
 		},
-		["Lightning"] = {
+		["Block Value 15"] = {
 			["spells"] = {
-				[18980] = 135990,
-				[18979] = 135934,
-				[43301] = 136048,
+				[23203] = 136235,
 			},
 		},
-		["Juggler Vein Rupture"] = {
+		["Aura of Frost"] = {
 			["spells"] = {
-				[10265] = 136168,
+				[23186] = 135835,
 			},
 		},
 		["Lunar Festival Rocket Credit Marker"] = {
@@ -82343,18 +82275,9 @@ WeakAurasOptionsSaved = {
 				[44430] = 136235,
 			},
 		},
-		["Rupture"] = {
+		["Arcane Shot Mana Reduction"] = {
 			["spells"] = {
-				[8640] = 132302,
-				[14903] = 132302,
-				[11275] = 132302,
-				[8639] = 132302,
-				[26867] = 132302,
-				[15583] = 132302,
-				[11274] = 132302,
-				[14874] = 132302,
-				[1943] = 132302,
-				[11273] = 132302,
+				[23157] = 132218,
 			},
 		},
 		["Blade's Edge Multi Gold Beam (02)"] = {
@@ -82387,9 +82310,10 @@ WeakAurasOptionsSaved = {
 				[44058] = 136235,
 			},
 		},
-		["Discombobulate"] = {
+		["World Enlarger"] = {
 			["spells"] = {
-				[4060] = 136203,
+				[23126] = 136121,
+				[23129] = 136235,
 			},
 		},
 		["Gouge Cooldown Reduction"] = {
@@ -82397,24 +82321,23 @@ WeakAurasOptionsSaved = {
 				[23048] = 132155,
 			},
 		},
-		["Increased Hit Rating 40"] = {
+		["Fire Reflector"] = {
 			["spells"] = {
-				[15467] = 136235,
+				[23097] = 135824,
 			},
 		},
-		["Jewelcrafting"] = {
+		["Alarm-O-Bot"] = {
 			["spells"] = {
-				[25229] = 134071,
-				[25230] = 134072,
-				[28894] = 134072,
-				[28895] = 134072,
-				[28897] = 134072,
+				[23096] = 136235,
 			},
 		},
-		["Heavy Golden Necklace of Battle"] = {
+		["Instant Poison"] = {
 			["spells"] = {
-				[25211] = 133295,
-				[25320] = 136235,
+				[28428] = 136016,
+				[8680] = 132273,
+				[8681] = 132273,
+				[41189] = 136016,
+				[8679] = 132273,
 			},
 		},
 		["Increase Spell Dam 75"] = {
@@ -82422,10 +82345,9 @@ WeakAurasOptionsSaved = {
 				[44979] = 136235,
 			},
 		},
-		["Arcane Weakness"] = {
+		["EZ-Thro Dynamite II"] = {
 			["spells"] = {
-				[25181] = 134395,
-				[31604] = 136213,
+				[23069] = 136235,
 			},
 		},
 		["Lionheart Champion"] = {
@@ -82433,10 +82355,9 @@ WeakAurasOptionsSaved = {
 				[34540] = 136241,
 			},
 		},
-		["Improved Ghost Wolf"] = {
+		["Fear Cast Time Reduction"] = {
 			["spells"] = {
-				[16262] = 136095,
-				[16287] = 136095,
+				[23047] = 135817,
 			},
 		},
 		["Summon Hai'Shulud"] = {
@@ -82444,19 +82365,12 @@ WeakAurasOptionsSaved = {
 				[39248] = 136235,
 			},
 		},
-		["Raptor Strike"] = {
+		["Crystal Prison"] = {
 			["spells"] = {
-				[14265] = 132223,
-				[2973] = 132223,
-				[14260] = 132223,
-				[14262] = 132223,
-				[14264] = 132223,
-				[14266] = 132223,
-				[31566] = 135275,
-				[27014] = 132223,
-				[14261] = 132223,
-				[14263] = 132223,
-				[32915] = 135275,
+				[23015] = 134075,
+				[32361] = 135988,
+				[40906] = 136235,
+				[40846] = 135988,
 			},
 		},
 		["Bloodsoul Breastplate"] = {
@@ -82464,9 +82378,9 @@ WeakAurasOptionsSaved = {
 				[24136] = 136192,
 			},
 		},
-		["Time Stop Visual DND"] = {
+		["Draw of Thistlenettle"] = {
 			["spells"] = {
-				[25171] = 136235,
+				[5219] = 136163,
 			},
 		},
 		["FRS Quest Credit"] = {
@@ -82485,18 +82399,20 @@ WeakAurasOptionsSaved = {
 				[32126] = 136235,
 			},
 		},
-		["Flare"] = {
+		["Invisibility"] = {
 			["spells"] = {
-				[28822] = 135815,
-				[1543] = 135815,
-				[41095] = 135839,
-				[41094] = 135839,
-				[10113] = 136235,
+				[66] = 132220,
+				[11392] = 134798,
+				[886] = 136235,
+				[32754] = 135994,
+				[28500] = 135724,
+				[32612] = 132220,
+				[23452] = 132866,
 			},
 		},
-		["Roast Raptor"] = {
+		["Summon Alarm-o-Bot"] = {
 			["spells"] = {
-				[15855] = 136192,
+				[23004] = 133002,
 			},
 		},
 		["Increase Arcane Dam 49"] = {
@@ -82504,9 +82420,22 @@ WeakAurasOptionsSaved = {
 				[17845] = 136235,
 			},
 		},
-		["Increased Agility 41"] = {
+		["Battle Standard"] = {
 			["spells"] = {
-				[14935] = 136235,
+				[23036] = 132484,
+				[32430] = 132486,
+				[23539] = 132483,
+				[23033] = 132483,
+				[22996] = 132483,
+				[23034] = 132483,
+				[32431] = 132485,
+				[23576] = 132484,
+				[23574] = 132483,
+				[23035] = 132484,
+				[23538] = 132484,
+				[22998] = 132483,
+				[23005] = 132484,
+				[23006] = 132484,
 			},
 		},
 		["Goblin Construction Helmet"] = {
@@ -82521,10 +82450,9 @@ WeakAurasOptionsSaved = {
 				[35781] = 135732,
 			},
 		},
-		["Brilliant Mana Oil"] = {
+		["Illidan's Fury"] = {
 			["spells"] = {
-				[25123] = 134722,
-				[25130] = 134722,
+				[22988] = 136164,
 			},
 		},
 		["Spore Quake Effect"] = {
@@ -82532,9 +82460,9 @@ WeakAurasOptionsSaved = {
 				[38977] = 135801,
 			},
 		},
-		["Pamela's Doll Trap"] = {
+		["Summon Mana Bursts"] = {
 			["spells"] = {
-				[17132] = 136235,
+				[22939] = 135741,
 			},
 		},
 		["Stillpine Ancestor Despawn DND"] = {
@@ -82542,9 +82470,10 @@ WeakAurasOptionsSaved = {
 				[30428] = 136235,
 			},
 		},
-		["Increased Fire Resist 01"] = {
+		["Body Switch"] = {
 			["spells"] = {
-				[14540] = 136235,
+				[22900] = 136192,
+				[22901] = 136192,
 			},
 		},
 		["Healing Ward Passive"] = {
@@ -82554,9 +82483,10 @@ WeakAurasOptionsSaved = {
 				[42375] = 136222,
 			},
 		},
-		["Green Dragon Transform DND"] = {
+		["Eye of Immol'thar"] = {
 			["spells"] = {
-				[25105] = 136235,
+				[22899] = 136152,
+				[22909] = 136120,
 			},
 		},
 		["Netherweave Pants"] = {
@@ -82564,14 +82494,14 @@ WeakAurasOptionsSaved = {
 				[26771] = 132149,
 			},
 		},
-		["TEST Heal Self"] = {
+		["Call Reavers"] = {
 			["spells"] = {
-				[15068] = 135913,
+				[22860] = 132091,
 			},
 		},
-		["Mooncloth Robe"] = {
+		["Arcanum of Focus"] = {
 			["spells"] = {
-				[22902] = 132149,
+				[22844] = 136235,
 			},
 		},
 		["Increased Strength 16"] = {
@@ -82579,9 +82509,9 @@ WeakAurasOptionsSaved = {
 				[14488] = 136235,
 			},
 		},
-		["Enchant Cloak - Dodge"] = {
+		["Attack Power 48"] = {
 			["spells"] = {
-				[25086] = 135913,
+				[9333] = 136235,
 			},
 		},
 		["Increase Healing 17"] = {
@@ -82589,9 +82519,9 @@ WeakAurasOptionsSaved = {
 				[33101] = 136235,
 			},
 		},
-		["Minor Blocking"] = {
+		["Arcane Missiles +1"] = {
 			["spells"] = {
-				[13462] = 136235,
+				[21228] = 136235,
 			},
 		},
 		["Summon Deviate Dreadfang"] = {
@@ -82604,10 +82534,9 @@ WeakAurasOptionsSaved = {
 				[11440] = 136235,
 			},
 		},
-		["Enchant Cloak - Stealth"] = {
+		["King of the Gordok"] = {
 			["spells"] = {
-				[25083] = 135913,
-				[359640] = 135913,
+				[22799] = 132768,
 			},
 		},
 		["Silvered Bronze Shoulders"] = {
@@ -82615,9 +82544,9 @@ WeakAurasOptionsSaved = {
 				[3330] = 136192,
 			},
 		},
-		["Cannon Ball"] = {
+		["Enchant Weapon - Healing Power"] = {
 			["spells"] = {
-				[4170] = 132384,
+				[22750] = 135913,
 			},
 		},
 		["Flame Mantle of the Dawn"] = {
@@ -82625,9 +82554,9 @@ WeakAurasOptionsSaved = {
 				[22593] = 135813,
 			},
 		},
-		["Enchant Gloves - Frost Power"] = {
+		["Core Armor Kit"] = {
 			["spells"] = {
-				[25074] = 135913,
+				[22727] = 136235,
 			},
 		},
 		["Corrosive Ooze"] = {
@@ -82636,15 +82565,14 @@ WeakAurasOptionsSaved = {
 				[9460] = 136064,
 			},
 		},
-		["Enchant Gloves - Threat"] = {
+		["Black War Wolf"] = {
 			["spells"] = {
-				[25072] = 135913,
-				[359858] = 135913,
+				[22724] = 132224,
 			},
 		},
-		["Arantir's Anger"] = {
+		["Soul Corruption"] = {
 			["spells"] = {
-				[9733] = 132369,
+				[25805] = 136159,
 			},
 		},
 		["Summon Mana Fiend"] = {
@@ -82659,25 +82587,27 @@ WeakAurasOptionsSaved = {
 				[35830] = 136235,
 			},
 		},
-		["Philosopher's Stone"] = {
+		["Increased Armor 20"] = {
 			["spells"] = {
-				[11459] = 136235,
+				[9761] = 136235,
+				[41863] = 136235,
 			},
 		},
-		["Elune's Grace"] = {
+		["Recklessness"] = {
 			["spells"] = {
-				[2651] = 135900,
+				[1719] = 132109,
+				[13847] = 132109,
 			},
 		},
-		["Searing Golden Blade"] = {
+		["Silver Skeleton Key"] = {
 			["spells"] = {
-				[15973] = 136192,
+				[19646] = 136235,
+				[19666] = 136192,
 			},
 		},
-		["Increase Healing 30"] = {
+		["Red Skeletal Warhorse"] = {
 			["spells"] = {
-				[25067] = 136235,
-				[33027] = 136235,
+				[22722] = 132264,
 			},
 		},
 		["Player, Draenei/Tauren"] = {
@@ -82685,30 +82615,25 @@ WeakAurasOptionsSaved = {
 				[44171] = 136235,
 			},
 		},
-		["Increase Threat"] = {
+		["Tree Form"] = {
 			["spells"] = {
-				[25063] = 136235,
+				[22688] = 136095,
+				[34551] = 132129,
 			},
 		},
-		["Create Healthstone"] = {
+		["Increase Nature Dam 33"] = {
 			["spells"] = {
-				[27230] = 135230,
-				[6201] = 135230,
-				[5699] = 135230,
-				[11729] = 135230,
-				[28023] = 135230,
-				[6202] = 135230,
-				[11730] = 135230,
+				[17993] = 136235,
 			},
 		},
-		["Rich Purple Silk Shirt"] = {
+		["Eskhandar's Rage"] = {
 			["spells"] = {
-				[3872] = 132149,
+				[22640] = 134296,
 			},
 		},
-		["Summon Tamed Crab"] = {
+		["Arcane Mantle of the Dawn"] = {
 			["spells"] = {
-				[7907] = 133708,
+				[22598] = 135987,
 			},
 		},
 		["Magma Spit"] = {
@@ -82722,30 +82647,40 @@ WeakAurasOptionsSaved = {
 				[41550] = 135799,
 			},
 		},
-		["Water Breathing"] = {
+		["Glowy (Green)"] = {
 			["spells"] = {
-				[131] = 136148,
-				[7178] = 135859,
-				[11789] = 136148,
-				[40621] = 135859,
-				[16881] = 136148,
+				[22577] = 135741,
 			},
 		},
-		["Crush Armor"] = {
+		["Fixate"] = {
 			["spells"] = {
-				[33661] = 132363,
-				[22426] = 132340,
-				[21055] = 132340,
+				[41294] = 136215,
+				[41295] = 136235,
+				[12021] = 136129,
+				[34719] = 136129,
+				[40607] = 136129,
+				[42123] = 136235,
+				[41614] = 136129,
+				[40414] = 136129,
+				[41976] = 136129,
+				[40892] = 136129,
 			},
 		},
-		["Rumsey Rum Light"] = {
+		["Drain Soul"] = {
 			["spells"] = {
-				[25037] = 132795,
+				[35839] = 136163,
+				[11675] = 136163,
+				[18371] = 136163,
+				[8288] = 136163,
+				[27217] = 136163,
+				[1120] = 136163,
+				[32862] = 136163,
+				[8289] = 136163,
 			},
 		},
-		["Debuff Fire Resist (TEST)"] = {
+		["Maim"] = {
 			["spells"] = {
-				[739] = 136235,
+				[22570] = 132134,
 			},
 		},
 		["Find Weakness"] = {
@@ -82773,17 +82708,14 @@ WeakAurasOptionsSaved = {
 				[4270] = 136101,
 			},
 		},
-		["Flamethrower"] = {
+		["Summon RaidMageArcaneFR"] = {
 			["spells"] = {
-				[39686] = 135818,
-				[25029] = 135818,
-				[25027] = 134535,
-				[39693] = 134535,
+				[22459] = 132317,
 			},
 		},
-		["Force Create Elemental Totem"] = {
+		["Purple Hands"] = {
 			["spells"] = {
-				[13910] = 135225,
+				[22313] = 136208,
 			},
 		},
 		["Periodic Death Lightning"] = {
@@ -82796,16 +82728,14 @@ WeakAurasOptionsSaved = {
 				[3275] = 136192,
 			},
 		},
-		["Tame Adult Plainstrider"] = {
+		["CHECKMEOUT"] = {
 			["spells"] = {
-				[19678] = 132164,
-				[19688] = 132164,
+				[22147] = 136235,
 			},
 		},
-		["Hallow's End Fright"] = {
+		["Conjure Stormpike Rank 6 Insignia DND"] = {
 			["spells"] = {
-				[25022] = 135842,
-				[25023] = 135842,
+				[22119] = 136235,
 			},
 		},
 		["Capturing"] = {
@@ -82813,9 +82743,9 @@ WeakAurasOptionsSaved = {
 				[349794] = 132487,
 			},
 		},
-		["Throw Nightmare Object"] = {
+		["Haunted"] = {
 			["spells"] = {
-				[25004] = 135826,
+				[18347] = 136122,
 			},
 		},
 		["Piccolo of the Flaming Fire"] = {
@@ -82829,19 +82759,19 @@ WeakAurasOptionsSaved = {
 				[32162] = 134499,
 			},
 		},
-		["Enchant Weapon - Striking"] = {
+		["Conjure Stormpike Rank 4 Insignia DND"] = {
 			["spells"] = {
-				[13693] = 135913,
+				[22117] = 136235,
 			},
 		},
-		["Spirit Disruption"] = {
+		["Conjure Stormpike Rank 3 Insignia DND"] = {
 			["spells"] = {
-				[25002] = 135824,
+				[22116] = 136235,
 			},
 		},
-		["Flames of Shahram"] = {
+		["Elixir of Greater Water Breathing"] = {
 			["spells"] = {
-				[16596] = 135826,
+				[22808] = 136235,
 			},
 		},
 		["Aspect of the Ice"] = {
@@ -82849,19 +82779,20 @@ WeakAurasOptionsSaved = {
 				[41594] = 135865,
 			},
 		},
-		["Greater Dispel"] = {
+		["Conjure Frostwolf Rank 6 Insignia DND"] = {
 			["spells"] = {
-				[24997] = 135753,
+				[22113] = 136235,
 			},
 		},
-		["Fine Leather Tunic"] = {
+		["Mortar Shot"] = {
 			["spells"] = {
-				[3761] = 136247,
+				[16786] = 132222,
+				[40649] = 136235,
 			},
 		},
-		["Cleanse Winterhoof Well"] = {
+		["Conjure Frostwolf Rank 5 Insignia DND"] = {
 			["spells"] = {
-				[4975] = 136235,
+				[22112] = 136235,
 			},
 		},
 		["Attack Power 54"] = {
@@ -82869,9 +82800,13 @@ WeakAurasOptionsSaved = {
 				[15813] = 136235,
 			},
 		},
-		["Strider Stew"] = {
+		["Slice and Dice"] = {
 			["spells"] = {
-				[6416] = 136192,
+				[6434] = 132306,
+				[43547] = 132306,
+				[5171] = 132306,
+				[30470] = 132306,
+				[6774] = 132306,
 			},
 		},
 		["Armor Buff"] = {
@@ -82900,35 +82835,14 @@ WeakAurasOptionsSaved = {
 				[37190] = 136235,
 			},
 		},
-		["Clean Up Stink Bomb"] = {
+		["Conjure Frostwolf Rank 3 Insignia DND"] = {
 			["spells"] = {
-				[24973] = 136235,
+				[22110] = 136235,
 			},
 		},
-		["Arcane Blast"] = {
+		["TEST Heal Self"] = {
 			["spells"] = {
-				[30451] = 135735,
-				[37126] = 136146,
-				[24857] = 136146,
-				[22920] = 136146,
-				[10833] = 136146,
-				[38342] = 136146,
-				[38344] = 136146,
-				[22893] = 136146,
-				[22940] = 136146,
-				[16067] = 135807,
-				[18091] = 135807,
-				[35314] = 136146,
-				[38881] = 135735,
-				[20883] = 135807,
-				[36032] = 135735,
-				[34793] = 136146,
-				[40881] = 136146,
-				[32935] = 136146,
-				[31457] = 136146,
-				[40837] = 136146,
-				[38538] = 136146,
-				[35927] = 135735,
+				[15068] = 135913,
 			},
 		},
 		["Mooncleaver"] = {
@@ -82936,14 +82850,23 @@ WeakAurasOptionsSaved = {
 				[34544] = 136241,
 			},
 		},
-		["Honor Points +138"] = {
+		["Lightning Reflexes"] = {
 			["spells"] = {
-				[24962] = 136235,
+				[19181] = 136047,
+				[13712] = 136047,
+				[13789] = 136047,
+				[13791] = 136047,
+				[24297] = 136047,
+				[19168] = 136047,
+				[13788] = 136047,
+				[13790] = 136047,
+				[19180] = 136047,
+				[24296] = 136047,
 			},
 		},
-		["Shellfish Trap"] = {
+		["Conjure Frostwolf Rank 1 Insignia DND"] = {
 			["spells"] = {
-				[17679] = 136235,
+				[22108] = 136235,
 			},
 		},
 		["Fear Ward"] = {
@@ -82956,29 +82879,25 @@ WeakAurasOptionsSaved = {
 				[17136] = 136235,
 			},
 		},
-		["Lesser Invisibility"] = {
+		["QAEnchant Boots +5 Spirit"] = {
 			["spells"] = {
-				[7870] = 135994,
-				[515] = 136235,
-				[20408] = 136175,
-				[7880] = 135994,
-				[12845] = 135994,
-				[3680] = 134798,
+				[22102] = 135913,
 			},
 		},
-		["Alterac Valley Mark of Honor (Loser)"] = {
+		["Netherwind Focus"] = {
 			["spells"] = {
-				[24954] = 136235,
+				[22007] = 136235,
+				[22008] = 136222,
 			},
 		},
-		["Red Skeletal Warhorse"] = {
+		["Advanced Target Dummy - Event 003"] = {
 			["spells"] = {
-				[22722] = 132264,
+				[19723] = 136172,
 			},
 		},
-		["Crippling Poison II"] = {
+		["Recite Words of Celebras"] = {
 			["spells"] = {
-				[3421] = 132274,
+				[21950] = 136235,
 			},
 		},
 		["Merciless Libram of Vengeance"] = {
@@ -82991,19 +82910,26 @@ WeakAurasOptionsSaved = {
 				[37073] = 132940,
 			},
 		},
-		["Wagon Explode"] = {
+		["Create Healthstone"] = {
 			["spells"] = {
-				[6636] = 135826,
+				[27230] = 135230,
+				[6201] = 135230,
+				[5699] = 135230,
+				[11729] = 135230,
+				[28023] = 135230,
+				[6202] = 135230,
+				[11730] = 135230,
 			},
 		},
-		["Increase Arcane Dam 7"] = {
+		["Collect Orange Crystal Liquid"] = {
 			["spells"] = {
-				[13594] = 136235,
+				[21884] = 136235,
 			},
 		},
-		["Eye of Yesmur (PT)"] = {
+		["Judgement Smite"] = {
 			["spells"] = {
-				[6272] = 136235,
+				[21882] = 135880,
+				[21889] = 136235,
 			},
 		},
 		["Increased Stamina 05"] = {
@@ -83024,9 +82950,9 @@ WeakAurasOptionsSaved = {
 				[41848] = 136235,
 			},
 		},
-		["Increase Nature Dam 4"] = {
+		["QAEnchant Chest +100 Mana"] = {
 			["spells"] = {
-				[7692] = 136235,
+				[22090] = 135913,
 			},
 		},
 		["Teleport to Azshara Tower"] = {
@@ -83046,12 +82972,9 @@ WeakAurasOptionsSaved = {
 				[32002] = 133074,
 			},
 		},
-		["Boar Charge"] = {
+		["Electrostatic Charge"] = {
 			["spells"] = {
-				[3385] = 136231,
-				[40772] = 136231,
-				[25999] = 132184,
-				[40259] = 136231,
+				[13959] = 136235,
 			},
 		},
 		["Drain M'uru's Power"] = {
@@ -83059,9 +82982,9 @@ WeakAurasOptionsSaved = {
 				[352055] = 136131,
 			},
 		},
-		["Fire Shield II"] = {
+		["Increased Rejuvenation Duration"] = {
 			["spells"] = {
-				[184] = 135817,
+				[21871] = 136081,
 			},
 		},
 		["Dark Iron Drunk Mug"] = {
@@ -83069,9 +82992,9 @@ WeakAurasOptionsSaved = {
 				[14813] = 136235,
 			},
 		},
-		["Runed Stygian Boots"] = {
+		["Increased Block 13"] = {
 			["spells"] = {
-				[24903] = 132149,
+				[21476] = 136235,
 			},
 		},
 		["Ironforge Chain"] = {
@@ -83092,24 +83015,27 @@ WeakAurasOptionsSaved = {
 				[23257] = 136172,
 			},
 		},
-		["Lava Trap 1"] = {
+		["Lava Shield"] = {
 			["spells"] = {
-				[17675] = 136235,
+				[21857] = 135817,
+				[21858] = 135817,
 			},
 		},
-		["Create Scepter of Beckoning: Water"] = {
+		["Snowman"] = {
 			["spells"] = {
-				[24898] = 136235,
+				[21848] = 132387,
+				[21847] = 132387,
+				[21980] = 132387,
 			},
 		},
-		["Create Scepter of Beckoning: Air"] = {
+		["Twisted Tranquility"] = {
 			["spells"] = {
-				[24896] = 136235,
+				[21793] = 136107,
 			},
 		},
-		["Create Signet of Beckoning: Water"] = {
+		["Spirit of Blessing"] = {
 			["spells"] = {
-				[24892] = 136235,
+				[21744] = 135913,
 			},
 		},
 		["Headless Horseman Climax - OnKill Proc"] = {
@@ -83137,15 +83063,14 @@ WeakAurasOptionsSaved = {
 				[26576] = 132225,
 			},
 		},
-		["Hillman's Leather Vest"] = {
+		["Create Frostwolf Assault Order (DND)"] = {
 			["spells"] = {
-				[3762] = 136247,
+				[21654] = 136235,
 			},
 		},
-		["Engulfing Shadows"] = {
+		["Increased Shadow Resist 40"] = {
 			["spells"] = {
-				[21978] = 136169,
-				[27860] = 136169,
+				[14702] = 136235,
 			},
 		},
 		["Increase Spell Dam 662"] = {
@@ -83153,21 +83078,9 @@ WeakAurasOptionsSaved = {
 				[35900] = 136235,
 			},
 		},
-		["Shadow Resistance"] = {
+		["Shredder Armor Melt"] = {
 			["spells"] = {
-				[24506] = 136121,
-				[24514] = 136121,
-				[24488] = 136121,
-				[24507] = 136121,
-				[24515] = 136121,
-				[28769] = 136121,
-				[27535] = 136185,
-				[24516] = 136121,
-				[24505] = 136121,
-				[20579] = 136152,
-				[27353] = 136121,
-				[27056] = 136121,
-				[24490] = 136121,
+				[21559] = 135818,
 			},
 		},
 		["Gargoyle Strike"] = {
@@ -83188,9 +83101,10 @@ WeakAurasOptionsSaved = {
 				[36137] = 136192,
 			},
 		},
-		["Visions of the Past"] = {
+		["Planting Ryson's Beacon"] = {
 			["spells"] = {
-				[17623] = 135974,
+				[21537] = 136235,
+				[21538] = 136235,
 			},
 		},
 		["Exceptional Health"] = {
@@ -83198,9 +83112,9 @@ WeakAurasOptionsSaved = {
 				[27955] = 136235,
 			},
 		},
-		["Increased Fire Resist 02"] = {
+		["Combo PROC Test"] = {
 			["spells"] = {
-				[14582] = 136235,
+				[26376] = 132278,
 			},
 		},
 		["Figurine - Black Pearl Panther"] = {
@@ -83208,9 +83122,9 @@ WeakAurasOptionsSaved = {
 				[26875] = 136235,
 			},
 		},
-		["Rainbow Fin Albacore"] = {
+		["Increase Holy Dam 46"] = {
 			["spells"] = {
-				[7827] = 136192,
+				[21530] = 136235,
 			},
 		},
 		["Large Prismatic Shard"] = {
@@ -83218,12 +83132,9 @@ WeakAurasOptionsSaved = {
 				[28022] = 132881,
 			},
 		},
-		["Flametongue Attack"] = {
+		["Core Marksman Rifle"] = {
 			["spells"] = {
-				[16368] = 136040,
-				[29469] = 135814,
-				[10444] = 135814,
-				[29470] = 135814,
+				[22795] = 136235,
 			},
 		},
 		["Greater Inscription of the Blade"] = {
@@ -83231,9 +83142,9 @@ WeakAurasOptionsSaved = {
 				[35439] = 136235,
 			},
 		},
-		["Stoned - Channel Cast Visual"] = {
+		["Increase Holy Dam 40"] = {
 			["spells"] = {
-				[15533] = 136018,
+				[21526] = 136235,
 			},
 		},
 		["Attack Power Ranged 48"] = {
@@ -83248,11 +83159,9 @@ WeakAurasOptionsSaved = {
 				[25003] = 134538,
 			},
 		},
-		["Blinding Light"] = {
+		["Increase Holy Dam 21"] = {
 			["spells"] = {
-				[36950] = 136184,
-				[23733] = 135972,
-				[33009] = 136096,
+				[21513] = 136235,
 			},
 		},
 		["Opening Secure Safe"] = {
@@ -83260,9 +83169,9 @@ WeakAurasOptionsSaved = {
 				[13565] = 136235,
 			},
 		},
-		["Infernal Fire"] = {
+		["Drawing Kit"] = {
 			["spells"] = {
-				[24826] = 135818,
+				[12304] = 136235,
 			},
 		},
 		["Sharpen Blade"] = {
@@ -83282,26 +83191,14 @@ WeakAurasOptionsSaved = {
 				[30666] = 136111,
 			},
 		},
-		["Reduced to Rubble"] = {
+		["Crippling Poison II"] = {
 			["spells"] = {
-				[3673] = 136025,
+				[3421] = 132274,
 			},
 		},
-		["Shadow Bolt Whirl"] = {
+		["Windsor's Frenzy"] = {
 			["spells"] = {
-				[24821] = 136197,
-				[39630] = 136197,
-				[24837] = 136197,
-				[39632] = 136197,
-				[24834] = 136197,
-				[24823] = 136197,
-				[39631] = 136197,
-				[39634] = 136197,
-				[24820] = 136197,
-				[24838] = 136197,
-				[24822] = 136197,
-				[24836] = 136197,
-				[24835] = 136197,
+				[15167] = 132277,
 			},
 		},
 		["[ph] exploding barrel trigger"] = {
@@ -83361,9 +83258,9 @@ WeakAurasOptionsSaved = {
 				[29045] = 136047,
 			},
 		},
-		["Abyssal Punishment"] = {
+		["Eye of Yesmur (PT)"] = {
 			["spells"] = {
-				[24803] = 136235,
+				[6272] = 136235,
 			},
 		},
 		["Summon Viper"] = {
@@ -83407,12 +83304,9 @@ WeakAurasOptionsSaved = {
 				[31435] = 132149,
 			},
 		},
-		["Summon Royal"] = {
+		["Attack Power Ranged 29"] = {
 			["spells"] = {
-				[24788] = 136235,
-				[24786] = 136235,
-				[24790] = 136235,
-				[24789] = 136235,
+				[21437] = 136235,
 			},
 		},
 		["Increased Arcane Resist 14"] = {
@@ -83442,24 +83336,24 @@ WeakAurasOptionsSaved = {
 				[6898] = 132248,
 			},
 		},
-		["Summon Duke Earth, Trigger"] = {
+		["Increased Stamina 31"] = {
 			["spells"] = {
-				[24771] = 136235,
+				[14478] = 136235,
 			},
 		},
-		["Handstitched Leather Belt"] = {
+		["Increased All Resist 09"] = {
 			["spells"] = {
-				[3753] = 136247,
+				[18680] = 136235,
 			},
 		},
-		["Increased Stamina 09"] = {
+		["Fire Shield II"] = {
 			["spells"] = {
-				[9115] = 136235,
+				[184] = 135817,
 			},
 		},
-		["Enchant Chest - Lesser Stats"] = {
+		["Attack Power Ranged 17"] = {
 			["spells"] = {
-				[13700] = 135913,
+				[21432] = 136235,
 			},
 		},
 		["Head Smash"] = {
@@ -83468,19 +83362,20 @@ WeakAurasOptionsSaved = {
 				[15652] = 132111,
 			},
 		},
-		["Pure Water"] = {
+		["Syndicate Tracker (MURP) DND"] = {
 			["spells"] = {
-				[8384] = 135864,
+				[21391] = 136235,
+				[21397] = 135736,
 			},
 		},
-		["Increase Shadow Dam 24"] = {
+		["Conjure Mulverick's Beacon DND"] = {
 			["spells"] = {
-				[14794] = 136235,
+				[21372] = 136235,
 			},
 		},
-		["Summon Duke Random"] = {
+		["Increased Arcane Resist 27"] = {
 			["spells"] = {
-				[24763] = 136235,
+				[14729] = 136235,
 			},
 		},
 		["Chain Fireball"] = {
@@ -83493,14 +83388,15 @@ WeakAurasOptionsSaved = {
 				[31120] = 136235,
 			},
 		},
-		["Corrupt Redpath"] = {
+		["Reactive Mana"] = {
 			["spells"] = {
-				[18666] = 136235,
+				[21334] = 136235,
+				[21959] = 135932,
 			},
 		},
-		["Increase Frost Dam 6"] = {
+		["Gryphon Wing Flap"] = {
 			["spells"] = {
-				[7700] = 136235,
+				[21189] = 136022,
 			},
 		},
 		["Sharpened Claws"] = {
@@ -83521,17 +83417,18 @@ WeakAurasOptionsSaved = {
 				[42369] = 134916,
 			},
 		},
-		["Plague Effect"] = {
+		["Giantstalker A"] = {
 			["spells"] = {
-				[19594] = 136140,
-				[26557] = 136140,
+				[20987] = 136095,
 			},
 		},
-		["Trick"] = {
+		["Blessing of Sanctuary"] = {
 			["spells"] = {
-				[24750] = 136235,
-				[24753] = 132118,
-				[24714] = 136235,
+				[27168] = 136051,
+				[20911] = 136051,
+				[20912] = 136051,
+				[20913] = 136051,
+				[20914] = 136051,
 			},
 		},
 		["Thorium Setting"] = {
@@ -83544,9 +83441,9 @@ WeakAurasOptionsSaved = {
 				[14510] = 136235,
 			},
 		},
-		["Steel Breastplate"] = {
+		["Thorns Dmg +2"] = {
 			["spells"] = {
-				[9916] = 136192,
+				[20887] = 136051,
 			},
 		},
 		["Create Crystal Corpse"] = {
@@ -83587,13 +83484,9 @@ WeakAurasOptionsSaved = {
 				[47109] = 135734,
 			},
 		},
-		["Improved Inner Rage"] = {
+		["Huge Thorium Battleaxe"] = {
 			["spells"] = {
-				[12865] = 132347,
-				[12866] = 132347,
-				[12863] = 132347,
-				[12325] = 132347,
-				[12864] = 132347,
+				[16971] = 136192,
 			},
 		},
 		["Armor Penetration 300"] = {
@@ -83606,9 +83499,10 @@ WeakAurasOptionsSaved = {
 				[24348] = 132185,
 			},
 		},
-		["Battle Command"] = {
+		["Enchant Gloves - Threat"] = {
 			["spells"] = {
-				[5115] = 132277,
+				[25072] = 135913,
+				[359858] = 135913,
 			},
 		},
 		["Portal: Thunder Bluff"] = {
@@ -83616,14 +83510,15 @@ WeakAurasOptionsSaved = {
 				[11420] = 135750,
 			},
 		},
-		["Summon Postmaster Malown"] = {
+		["Warlock Channeling"] = {
 			["spells"] = {
-				[24627] = 136121,
+				[8675] = 136121,
+				[29322] = 136121,
 			},
 		},
-		["Summon Mutanus the Devourer"] = {
+		["Stoned - Channel Cast Visual"] = {
 			["spells"] = {
-				[24624] = 136121,
+				[15533] = 136018,
 			},
 		},
 		["rfo"] = {
@@ -83631,13 +83526,10 @@ WeakAurasOptionsSaved = {
 				[22068] = 136147,
 			},
 		},
-		["Corrosive Poison"] = {
+		["Greater Dragon Slayer 25"] = {
 			["spells"] = {
-				[13526] = 136016,
-				[3396] = 136016,
-				[36694] = 136016,
-				[46293] = 136016,
-				[24111] = 136016,
+				[20725] = 134310,
+				[20726] = 134310,
 			},
 		},
 		["Trigger Silithid"] = {
@@ -83660,19 +83552,25 @@ WeakAurasOptionsSaved = {
 				[11048] = 132288,
 			},
 		},
-		["Collecting Fallout"] = {
+		["Sand Breath"] = {
 			["spells"] = {
-				[12709] = 136235,
+				[31473] = 135831,
+				[39049] = 135831,
+				[20716] = 135831,
+				[20717] = 135831,
+				[35351] = 135831,
+				[31478] = 135831,
+				[31914] = 135831,
 			},
 		},
-		["Portal of Madness"] = {
+		["Inner Courage 20"] = {
 			["spells"] = {
-				[24621] = 135759,
+				[20710] = 136121,
 			},
 		},
-		["Dagger Strike III (Disabled)"] = {
+		["Power Shield 500"] = {
 			["spells"] = {
-				[2629] = 132223,
+				[20705] = 135940,
 			},
 		},
 		["Pet Biscuit"] = {
@@ -83680,9 +83578,9 @@ WeakAurasOptionsSaved = {
 				[46168] = 134372,
 			},
 		},
-		["Web Spin"] = {
+		["Axe Specialization"] = {
 			["spells"] = {
-				[24600] = 136022,
+				[20574] = 132393,
 			},
 		},
 		["Mageblood Potion"] = {
@@ -83700,35 +83598,43 @@ WeakAurasOptionsSaved = {
 				[31411] = 135270,
 			},
 		},
-		["Aspect of the Monkey"] = {
+		["Berserking"] = {
 			["spells"] = {
-				[13163] = 132159,
+				[26635] = 135727,
+				[20554] = 135727,
+				[24378] = 136012,
+				[26297] = 135727,
+				[23505] = 136012,
+				[26296] = 135727,
 			},
 		},
-		["Furious Howl"] = {
+		["Sol U"] = {
 			["spells"] = {
-				[24604] = 132203,
-				[24608] = 132203,
-				[24597] = 132203,
-				[24605] = 132203,
-				[24609] = 132203,
-				[30636] = 132203,
-				[3149] = 136101,
-				[24599] = 132203,
-				[24603] = 132203,
-				[24607] = 132203,
-				[35942] = 132203,
+				[3207] = 135859,
 			},
 		},
-		["Minor Absorption"] = {
+		["Tranquility"] = {
 			["spells"] = {
-				[7423] = 136235,
-				[7445] = 136235,
+				[21791] = 136107,
+				[44205] = 136018,
+				[367070] = 136107,
+				[8918] = 136107,
+				[44208] = 136018,
+				[740] = 136107,
+				[44207] = 136018,
+				[26983] = 136107,
+				[25817] = 136107,
+				[38659] = 136107,
+				[9862] = 136107,
+				[34550] = 136107,
+				[44203] = 136018,
+				[44206] = 136018,
+				[9863] = 136107,
 			},
 		},
-		["Intoxicating Venom"] = {
+		["Ruul Snowhoof Shapechange (DND)"] = {
 			["spells"] = {
-				[24596] = 132103,
+				[20514] = 136235,
 			},
 		},
 		["Bloodmaul Intoxication Visual"] = {
@@ -83736,9 +83642,9 @@ WeakAurasOptionsSaved = {
 				[35777] = 132792,
 			},
 		},
-		["Test Strike"] = {
+		["Tag: Arrow"] = {
 			["spells"] = {
-				[24393] = 132355,
+				[20374] = 132212,
 			},
 		},
 		["Energy Charge"] = {
@@ -83746,19 +83652,19 @@ WeakAurasOptionsSaved = {
 				[36506] = 136075,
 			},
 		},
-		["Massive Destruction"] = {
+		["Tag: Hearts"] = {
 			["spells"] = {
-				[24543] = 135831,
+				[20372] = 136209,
 			},
 		},
-		["Attack Power Ranged 26"] = {
+		["Pure Water"] = {
 			["spells"] = {
-				[21436] = 136235,
+				[8384] = 135864,
 			},
 		},
-		["Flee"] = {
+		["Tag: Green Glow"] = {
 			["spells"] = {
-				[5024] = 135996,
+				[20371] = 136006,
 			},
 		},
 		["Summon Enraged Felguard"] = {
@@ -83798,19 +83704,28 @@ WeakAurasOptionsSaved = {
 				[40310] = 133594,
 			},
 		},
-		["Increased Frost Resist 10"] = {
+		["Spiral Wave of Death"] = {
 			["spells"] = {
-				[14550] = 136235,
+				[19501] = 136235,
 			},
 		},
-		["Improved Smite and Holy Fire"] = {
+		["Improved Concentration Aura"] = {
 			["spells"] = {
-				[24482] = 136235,
+				[20255] = 135933,
+				[20256] = 135933,
+				[20254] = 135933,
 			},
 		},
-		["Chromatic Protection"] = {
+		["Intercept Stun"] = {
 			["spells"] = {
-				[16372] = 134563,
+				[20615] = 135860,
+				[30197] = 135860,
+				[20253] = 135860,
+				[25273] = 135860,
+				[25274] = 135860,
+				[30195] = 135860,
+				[20614] = 135860,
+				[30153] = 135860,
 			},
 		},
 		["Divine Wrath"] = {
@@ -83834,9 +83749,17 @@ WeakAurasOptionsSaved = {
 				[14939] = 136235,
 			},
 		},
-		["Opening Relic Coffer"] = {
+		["Judgement of Righteousness"] = {
 			["spells"] = {
-				[13478] = 136235,
+				[20280] = 132325,
+				[20284] = 132325,
+				[20187] = 132325,
+				[20281] = 132325,
+				[20285] = 132325,
+				[20282] = 132325,
+				[20286] = 132325,
+				[20283] = 132325,
+				[27157] = 132325,
 			},
 		},
 		["OCW Silvermoon Whisper to Controller 03"] = {
@@ -83844,9 +83767,9 @@ WeakAurasOptionsSaved = {
 				[40208] = 136235,
 			},
 		},
-		["Trip"] = {
+		["Create Heart Candy"] = {
 			["spells"] = {
-				[101] = 132309,
+				[26678] = 136235,
 			},
 		},
 		["Increase Shadow Dam 3"] = {
@@ -83891,14 +83814,14 @@ WeakAurasOptionsSaved = {
 				[31477] = 136135,
 			},
 		},
-		["Improved Wrath/Starfire"] = {
+		["Enchant Weapon - Unholy Weapon"] = {
 			["spells"] = {
-				[24433] = 136235,
+				[20033] = 135913,
 			},
 		},
-		["Tidal Charm"] = {
+		["Enchant Chest - Major Health"] = {
 			["spells"] = {
-				[835] = 135861,
+				[20026] = 135913,
 			},
 		},
 		["Blinkstrike"] = {
@@ -83943,19 +83866,14 @@ WeakAurasOptionsSaved = {
 				[27652] = 134801,
 			},
 		},
-		["Moonfury"] = {
+		["Intellect 15"] = {
 			["spells"] = {
-				[16899] = 136057,
-				[16900] = 136057,
-				[16901] = 136057,
-				[16896] = 136057,
-				[16897] = 136057,
+				[20002] = 136235,
 			},
 		},
-		["Spider Poison"] = {
+		["Increased Parry 40"] = {
 			["spells"] = {
-				[4144] = 136077,
-				[4940] = 136016,
+				[13667] = 136235,
 			},
 		},
 		["Release Toads"] = {
@@ -83988,29 +83906,34 @@ WeakAurasOptionsSaved = {
 				[15759] = 136235,
 			},
 		},
-		["Increase Fire Dam 19"] = {
+		["Major Health"] = {
 			["spells"] = {
-				[9296] = 136235,
+				[19990] = 136235,
 			},
 		},
-		["Thorium Bracers"] = {
+		["Spiritual Focus"] = {
 			["spells"] = {
-				[16644] = 136192,
+				[20209] = 135736,
+				[20205] = 135736,
+				[20206] = 135736,
+				[20207] = 135736,
+				[20208] = 135736,
 			},
 		},
-		["Heavy Crocolisk Stew"] = {
+		["Obsidian Raptor"] = {
 			["spells"] = {
-				[24418] = 136192,
+				[10798] = 132253,
 			},
 		},
-		["QAE 285 to spell damage"] = {
+		["Greater Stats"] = {
 			["spells"] = {
-				[22093] = 135913,
+				[19988] = 136235,
+				[357403] = 136235,
 			},
 		},
-		["Arathi Basin Enriched Ration"] = {
+		["Superior Stamina"] = {
 			["spells"] = {
-				[24411] = 134062,
+				[19985] = 136235,
 			},
 		},
 		["Spellpower Goggles Xtreme Plus"] = {
@@ -84018,14 +83941,14 @@ WeakAurasOptionsSaved = {
 				[19794] = 136235,
 			},
 		},
-		["Arathi Basin Iron Ration"] = {
+		["Increased Nature Resist 36"] = {
 			["spells"] = {
-				[24410] = 134062,
+				[14658] = 136235,
 			},
 		},
-		["Arathi Basin Field Ration"] = {
+		["Superior Strength"] = {
 			["spells"] = {
-				[24409] = 134062,
+				[19984] = 136235,
 			},
 		},
 		["Defensive State 2 (DND)"] = {
@@ -84033,9 +83956,9 @@ WeakAurasOptionsSaved = {
 				[24949] = 132110,
 			},
 		},
-		["Underwater Breathing"] = {
+		["Track Hidden"] = {
 			["spells"] = {
-				[5227] = 136148,
+				[19885] = 132320,
 			},
 		},
 		["Armorsmith"] = {
@@ -84044,50 +83967,70 @@ WeakAurasOptionsSaved = {
 				[9790] = 136241,
 			},
 		},
-		["Icy Energy"] = {
+		["Track Elementals"] = {
 			["spells"] = {
-				[24405] = 135845,
+				[19880] = 135861,
 			},
 		},
-		["Deafened"] = {
+		["Shadow Resistance Aura"] = {
 			["spells"] = {
-				[24402] = 132182,
+				[19895] = 136192,
+				[19896] = 136192,
+				[19876] = 136192,
+				[27151] = 136192,
 			},
 		},
-		["Wail of Nightlash"] = {
+		["Scorpid Poison"] = {
 			["spells"] = {
-				[3485] = 136183,
+				[24641] = 132274,
+				[27060] = 132274,
+				[24589] = 132274,
+				[24586] = 132274,
+				[24583] = 132274,
+				[24587] = 132274,
+				[24640] = 132274,
+				[24584] = 132274,
+				[24588] = 132274,
+				[27361] = 132274,
+				[6411] = 136016,
 			},
 		},
-		["Destroy Spear"] = {
+		["Fire Nova Visual"] = {
 			["spells"] = {
-				[16557] = 136130,
-				[16558] = 136130,
+				[19823] = 135824,
 			},
 		},
-		["Turquoise Raptor"] = {
+		["Arcanite Dragonling"] = {
 			["spells"] = {
-				[10796] = 132253,
+				[23074] = 134153,
+				[19830] = 136235,
+				[19804] = 134153,
+				[23052] = 134478,
 			},
 		},
-		["Major Troll's Blood Potion"] = {
+		["Thorium Tube"] = {
 			["spells"] = {
-				[24368] = 136235,
+				[19795] = 136235,
 			},
 		},
-		["Sniper Scope"] = {
+		["Create Weegli's Barrel"] = {
 			["spells"] = {
-				[12620] = 136235,
+				[10770] = 133748,
+				[10772] = 133748,
 			},
 		},
-		["Rockscale Cod"] = {
+		["Gizelton Caravan"] = {
 			["spells"] = {
-				[7828] = 136192,
+				[19770] = 135996,
 			},
 		},
-		["Tears of the Wind Seeker"] = {
+		["Corrosive Poison"] = {
 			["spells"] = {
-				[23011] = 135990,
+				[13526] = 136016,
+				[3396] = 136016,
+				[36694] = 136016,
+				[46293] = 136016,
+				[24111] = 136016,
 			},
 		},
 		["Increased Fire Resist 44"] = {
@@ -84095,22 +84038,19 @@ WeakAurasOptionsSaved = {
 				[14974] = 136235,
 			},
 		},
-		["Spell Focus"] = {
+		["Concentration Aura"] = {
 			["spells"] = {
-				[12854] = 136121,
+				[19746] = 135933,
 			},
 		},
-		["Call Pet"] = {
+		["Beast Slaying 18"] = {
 			["spells"] = {
-				[23498] = 132161,
-				[883] = 132161,
-				[45322] = 132161,
-				[27639] = 136235,
+				[19691] = 136235,
 			},
 		},
-		["Mojo"] = {
+		["Increase Spell Dam 1"] = {
 			["spells"] = {
-				[24346] = 136235,
+				[9392] = 136235,
 			},
 		},
 		["Time Rift Channel Trigger"] = {
@@ -84118,9 +84058,9 @@ WeakAurasOptionsSaved = {
 				[31388] = 136235,
 			},
 		},
-		["Explosive Arrow"] = {
+		["Increased Arcane Resist 37"] = {
 			["spells"] = {
-				[12719] = 136235,
+				[14739] = 136235,
 			},
 		},
 		["Heightened Senses"] = {
@@ -84140,9 +84080,16 @@ WeakAurasOptionsSaved = {
 				[8348] = 135953,
 			},
 		},
-		["Crystal Ward"] = {
+		["Shadow Power"] = {
 			["spells"] = {
-				[15233] = 134129,
+				[33221] = 136204,
+				[33223] = 136204,
+				[33225] = 136204,
+				[39193] = 136172,
+				[33222] = 136204,
+				[11474] = 134826,
+				[35322] = 136172,
+				[33224] = 136204,
 			},
 		},
 		["Catlike Reflexes"] = {
@@ -84157,10 +84104,9 @@ WeakAurasOptionsSaved = {
 				[18797] = 132350,
 			},
 		},
-		["Summon Poison Cloud"] = {
+		["Naga Statue Spell"] = {
 			["spells"] = {
-				[24319] = 136006,
-				[26590] = 132099,
+				[19473] = 136235,
 			},
 		},
 		["Discovered"] = {
@@ -84179,19 +84125,24 @@ WeakAurasOptionsSaved = {
 				[36562] = 136235,
 			},
 		},
-		["Expert Skinning"] = {
+		["Mighty Rage Potion"] = {
 			["spells"] = {
-				[8620] = 134366,
+				[17527] = 136235,
+				[17552] = 136235,
 			},
 		},
-		["Punctured Voodoo Doll WAR DND"] = {
+		["Rabies"] = {
 			["spells"] = {
-				[24289] = 136235,
+				[3150] = 135914,
 			},
 		},
-		["Teleport Moonbrook"] = {
+		["Melee Specialization"] = {
 			["spells"] = {
-				[428] = 136235,
+				[19383] = 132393,
+				[19384] = 132393,
+				[19385] = 132393,
+				[19381] = 132393,
+				[19382] = 132393,
 			},
 		},
 		["Vazruden's Mark"] = {
@@ -84227,9 +84178,11 @@ WeakAurasOptionsSaved = {
 				[38420] = 136235,
 			},
 		},
-		["Jeff Dummy 2"] = {
+		["Endurance"] = {
 			["spells"] = {
-				[4505] = 135926,
+				[13872] = 136205,
+				[13742] = 136205,
+				[20550] = 136112,
 			},
 		},
 		["Remove Lesser Curse"] = {
@@ -84242,19 +84195,15 @@ WeakAurasOptionsSaved = {
 				[18033] = 136235,
 			},
 		},
-		["Purge"] = {
+		["Volcanic Shoulders"] = {
 			["spells"] = {
-				[8012] = 136075,
-				[25756] = 136039,
-				[27626] = 136075,
-				[33625] = 136075,
-				[370] = 136075,
+				[19101] = 136235,
 			},
 		},
-		["Gurubashi Mojo Madness"] = {
+		["Tame Swoop"] = {
 			["spells"] = {
-				[24266] = 136235,
-				[24267] = 136021,
+				[19680] = 132164,
+				[19692] = 132164,
 			},
 		},
 		["Marking Ecliptic"] = {
@@ -84262,20 +84211,19 @@ WeakAurasOptionsSaved = {
 				[31118] = 136235,
 			},
 		},
-		["Feeblemind"] = {
+		["Stormshroud Armor"] = {
 			["spells"] = {
-				[457] = 136175,
+				[19079] = 136235,
 			},
 		},
-		["Limited Invulnerability Potion"] = {
+		["Bijou Vanish"] = {
 			["spells"] = {
-				[3175] = 136235,
+				[15993] = 136235,
 			},
 		},
-		["Increase Spell Dam 840"] = {
+		["Volcanic Breastplate"] = {
 			["spells"] = {
-				[24243] = 136235,
-				[35889] = 136235,
+				[19076] = 136235,
 			},
 		},
 		["Summon Liquid Fire"] = {
@@ -84290,9 +84238,11 @@ WeakAurasOptionsSaved = {
 				[6122] = 136235,
 			},
 		},
-		["Thick War Axe"] = {
+		["Lightning"] = {
 			["spells"] = {
-				[3294] = 136192,
+				[18980] = 135990,
+				[18979] = 135934,
+				[43301] = 136048,
 			},
 		},
 		["Block Value 18"] = {
@@ -84310,9 +84260,9 @@ WeakAurasOptionsSaved = {
 				[35825] = 135913,
 			},
 		},
-		["Enchant Cloak - Defense"] = {
+		["Self Stun - (Visual only)"] = {
 			["spells"] = {
-				[13635] = 135913,
+				[18970] = 136168,
 			},
 		},
 		["Conjure Slidore's Beacon DND"] = {
@@ -84320,9 +84270,9 @@ WeakAurasOptionsSaved = {
 				[21732] = 136235,
 			},
 		},
-		["Black Whelp Cloak"] = {
+		["Tidal Charm"] = {
 			["spells"] = {
-				[9070] = 136247,
+				[835] = 135861,
 			},
 		},
 		["Glacial Vest"] = {
@@ -84331,12 +84281,9 @@ WeakAurasOptionsSaved = {
 				[28260] = 136021,
 			},
 		},
-		["Improved Renew"] = {
+		["Opening Termite Barrel"] = {
 			["spells"] = {
-				[37593] = 136235,
-				[15020] = 135953,
-				[14908] = 135953,
-				[17191] = 135953,
+				[18952] = 136235,
 			},
 		},
 		["Persuader"] = {
@@ -84344,19 +84291,19 @@ WeakAurasOptionsSaved = {
 				[27830] = 136192,
 			},
 		},
-		["Mark of Arlokk"] = {
+		["Spirit Particles (green)"] = {
 			["spells"] = {
-				[24210] = 132212,
+				[18951] = 135864,
 			},
 		},
-		["Enchant Gloves - Greater Strength"] = {
+		["Atal'ai Poison"] = {
 			["spells"] = {
-				[20013] = 135913,
+				[18949] = 136067,
 			},
 		},
-		["Cloaking"] = {
+		["Quest - Polymorph Impact"] = {
 			["spells"] = {
-				[4079] = 136047,
+				[24180] = 136235,
 			},
 		},
 		["TAR Pedestal - General Goods"] = {
@@ -84364,10 +84311,10 @@ WeakAurasOptionsSaved = {
 				[47350] = 136235,
 			},
 		},
-		["Increase Spell Dam 47"] = {
+		["Tame Nightsaber Stalker"] = {
 			["spells"] = {
-				[24196] = 136235,
-				[41782] = 136235,
+				[19685] = 132164,
+				[19699] = 132164,
 			},
 		},
 		["Create Overseer Disguise"] = {
@@ -84380,10 +84327,12 @@ WeakAurasOptionsSaved = {
 				[26271] = 136235,
 			},
 		},
-		["Warchief's Blessing"] = {
+		["Curse of Thorns"] = {
 			["spells"] = {
-				[16609] = 135759,
-				[355366] = 135759,
+				[6910] = 136063,
+				[16247] = 136121,
+				[6909] = 136121,
+				[16248] = 136063,
 			},
 		},
 		["Summon Sporebat"] = {
@@ -84391,15 +84340,18 @@ WeakAurasOptionsSaved = {
 				[32060] = 133708,
 			},
 		},
-		["Nature Channeling"] = {
+		["Unholy Power"] = {
 			["spells"] = {
-				[13236] = 136041,
-				[28892] = 136085,
+				[18769] = 136206,
+				[18770] = 136206,
+				[18771] = 136206,
+				[18772] = 136206,
+				[18773] = 136206,
 			},
 		},
-		["Imperial Plate Chest"] = {
+		["Increased All Resist 19"] = {
 			["spells"] = {
-				[16663] = 136192,
+				[18690] = 136235,
 			},
 		},
 		["Naralex's Awakening"] = {
@@ -84413,9 +84365,9 @@ WeakAurasOptionsSaved = {
 				[7946] = 136121,
 			},
 		},
-		["Thekal Transform"] = {
+		["Corrupt Redpath"] = {
 			["spells"] = {
-				[24169] = 132288,
+				[18666] = 136235,
 			},
 		},
 		["Increased Strength 33"] = {
@@ -84423,10 +84375,9 @@ WeakAurasOptionsSaved = {
 				[14505] = 136235,
 			},
 		},
-		["Syndicate Tracker (MURP) DND"] = {
+		["Restore Energy"] = {
 			["spells"] = {
-				[21391] = 136235,
-				[21397] = 135736,
+				[9512] = 136235,
 			},
 		},
 		["Supreme Power"] = {
@@ -84434,9 +84385,9 @@ WeakAurasOptionsSaved = {
 				[17628] = 134821,
 			},
 		},
-		["Eskhandar's Rage"] = {
+		["Mortar Animate"] = {
 			["spells"] = {
-				[22640] = 134296,
+				[18655] = 136235,
 			},
 		},
 		["Drinking"] = {
@@ -84449,10 +84400,9 @@ WeakAurasOptionsSaved = {
 				[39872] = 136017,
 			},
 		},
-		["Syncretist's Sigil"] = {
+		["Bottomless Bag"] = {
 			["spells"] = {
-				[24151] = 136235,
-				[24160] = 136235,
+				[18455] = 132149,
 			},
 		},
 		["Regrowth"] = {
@@ -84488,9 +84438,9 @@ WeakAurasOptionsSaved = {
 				[45023] = 135804,
 			},
 		},
-		["Volcanic Shoulders"] = {
+		["Ghostweave Pants"] = {
 			["spells"] = {
-				[19101] = 136235,
+				[18441] = 132149,
 			},
 		},
 		["Tranquil Spirit"] = {
@@ -84502,14 +84452,14 @@ WeakAurasOptionsSaved = {
 				[24968] = 135900,
 			},
 		},
-		["Darksoul Leggings"] = {
+		["Brightcloth Cloak"] = {
 			["spells"] = {
-				[24140] = 136192,
+				[18420] = 132149,
 			},
 		},
-		["Bloodsoul Gauntlets"] = {
+		["Frostweave Gloves"] = {
 			["spells"] = {
-				[24138] = 136192,
+				[18411] = 132149,
 			},
 		},
 		["Gust of Wind"] = {
@@ -84528,20 +84478,22 @@ WeakAurasOptionsSaved = {
 				[9741] = 132336,
 			},
 		},
-		["Blood Tiger Breastplate"] = {
+		["Improved Moonfire"] = {
 			["spells"] = {
-				[24124] = 136235,
+				[352504] = 136052,
+				[16821] = 136096,
+				[16822] = 136096,
+				[28854] = 136096,
 			},
 		},
-		["Primal Batskin Bracers"] = {
+		["Spawn Bronze Drakonid"] = {
 			["spells"] = {
-				[24123] = 136235,
+				[22657] = 134395,
 			},
 		},
-		["Attack Power 30"] = {
+		["Uther's Light Effect"] = {
 			["spells"] = {
-				[9336] = 136235,
-				[41823] = 136235,
+				[10368] = 135940,
 			},
 		},
 		["Siphon Health"] = {
@@ -84551,9 +84503,13 @@ WeakAurasOptionsSaved = {
 				[18652] = 136082,
 			},
 		},
-		["Kirtonos Gargoyle Passive"] = {
+		["Kodo Kombobulator"] = {
 			["spells"] = {
-				[18116] = 134950,
+				[18172] = 132488,
+				[18362] = 136235,
+				[18153] = 136245,
+				[18269] = 136235,
+				[18377] = 136245,
 			},
 		},
 		["Proc Self Invulnerability"] = {
@@ -84566,9 +84522,9 @@ WeakAurasOptionsSaved = {
 				[32820] = 132311,
 			},
 		},
-		["Conjure Stormpike Rank 1 Insignia DND"] = {
+		["Crystal Ward"] = {
 			["spells"] = {
-				[22114] = 136235,
+				[15233] = 134129,
 			},
 		},
 		["Iron Strut"] = {
@@ -84582,9 +84538,9 @@ WeakAurasOptionsSaved = {
 				[29655] = 135990,
 			},
 		},
-		["Uther's Dwarf Tribute"] = {
+		["Raze Attack"] = {
 			["spells"] = {
-				[24107] = 136235,
+				[12347] = 136235,
 			},
 		},
 		["Frost Channeling"] = {
@@ -84604,9 +84560,9 @@ WeakAurasOptionsSaved = {
 				[21808] = 136025,
 			},
 		},
-		["Focusing"] = {
+		["Kirtonos Gargoyle Passive"] = {
 			["spells"] = {
-				[3678] = 136235,
+				[18116] = 134950,
 			},
 		},
 		["Barbaric Iron Collar"] = {
@@ -84619,11 +84575,9 @@ WeakAurasOptionsSaved = {
 				[23730] = 136235,
 			},
 		},
-		["Sand Storm"] = {
+		["Transform Viewing Room Students"] = {
 			["spells"] = {
-				[10134] = 136022,
-				[25160] = 136022,
-				[10092] = 136022,
+				[18110] = 136235,
 			},
 		},
 		["Summon Cyclonian"] = {
@@ -84636,9 +84590,9 @@ WeakAurasOptionsSaved = {
 				[42122] = 136235,
 			},
 		},
-		["Longshot III"] = {
+		["Beast Slaying 72"] = {
 			["spells"] = {
-				[3007] = 132222,
+				[18076] = 136235,
 			},
 		},
 		["South Seas Pirate Disguise"] = {
@@ -84646,9 +84600,9 @@ WeakAurasOptionsSaved = {
 				[5264] = 132288,
 			},
 		},
-		["Bloodvine Boots"] = {
+		["Increased Stamina 11"] = {
 			["spells"] = {
-				[24093] = 132149,
+				[9118] = 136235,
 			},
 		},
 		["Create Darnassus Box of Woodcrafts"] = {
@@ -84661,19 +84615,9 @@ WeakAurasOptionsSaved = {
 				[352965] = 135745,
 			},
 		},
-		["Prowl"] = {
+		["Knockback 35"] = {
 			["spells"] = {
-				[24450] = 132142,
-				[6783] = 132089,
-				[24451] = 132142,
-				[8152] = 132320,
-				[5215] = 132089,
-				[42932] = 132320,
-				[24455] = 132142,
-				[24454] = 132142,
-				[24453] = 132142,
-				[9913] = 132089,
-				[24452] = 132142,
+				[24199] = 136235,
 			},
 		},
 		["Legion Lightning"] = {
@@ -84693,19 +84637,19 @@ WeakAurasOptionsSaved = {
 				[28324] = 136235,
 			},
 		},
-		["Complete Arathi Basin quest, 5 bases"] = {
+		["Teleport Moonbrook"] = {
 			["spells"] = {
-				[24064] = 136235,
+				[428] = 136235,
 			},
 		},
-		["Demonfork"] = {
+		["Increase Healing 40"] = {
 			["spells"] = {
-				[16603] = 136169,
+				[18031] = 136235,
 			},
 		},
-		["Putrid Stench"] = {
+		["Increase Shadow Dam 53"] = {
 			["spells"] = {
-				[12946] = 136127,
+				[18027] = 136235,
 			},
 		},
 		["Nether Refiner"] = {
@@ -84718,14 +84662,9 @@ WeakAurasOptionsSaved = {
 				[18449] = 132149,
 			},
 		},
-		["Thick Hide"] = {
+		["Uther's Gnome Tribute"] = {
 			["spells"] = {
-				[19609] = 134355,
-				[16929] = 134355,
-				[16930] = 134355,
-				[16931] = 134355,
-				[19612] = 134355,
-				[19610] = 134355,
+				[24106] = 136235,
 			},
 		},
 		["Intimidating Growl"] = {
@@ -84733,11 +84672,17 @@ WeakAurasOptionsSaved = {
 				[6576] = 132278,
 			},
 		},
-		["Axe Flurry"] = {
+		["Surge"] = {
 			["spells"] = {
-				[24020] = 132397,
-				[24018] = 132397,
-				[24071] = 132397,
+				[19196] = 132337,
+				[44019] = 132212,
+				[34645] = 132337,
+				[25787] = 132337,
+				[38044] = 135850,
+				[42402] = 132337,
+				[44960] = 132212,
+				[33970] = 132337,
+				[32012] = 132337,
 			},
 		},
 		["Attack Power - Feral (+0731)"] = {
@@ -84745,16 +84690,14 @@ WeakAurasOptionsSaved = {
 				[42085] = 136235,
 			},
 		},
-		["Tranquilizing Poison"] = {
+		["Increase Nature Dam 51"] = {
 			["spells"] = {
-				[24002] = 132105,
-				[24003] = 132105,
-				[43364] = 132105,
+				[18005] = 136235,
 			},
 		},
-		["Activate Bomb B"] = {
+		["Increase Frost Dam 64"] = {
 			["spells"] = {
-				[11795] = 135990,
+				[26722] = 136235,
 			},
 		},
 		["Salvation"] = {
@@ -84764,14 +84707,17 @@ WeakAurasOptionsSaved = {
 				[35360] = 135967,
 			},
 		},
-		["Summon Nether Drake"] = {
+		["Complete Warsong Gulch Quest"] = {
 			["spells"] = {
-				[3363] = 132250,
+				[23659] = 136235,
+				[23660] = 136235,
 			},
 		},
-		["Create Mallet of Zul'Farrak"] = {
+		["Improved Searing Pain"] = {
 			["spells"] = {
-				[11435] = 136235,
+				[17927] = 135827,
+				[17929] = 135827,
+				[17930] = 135827,
 			},
 		},
 		["Fevered Fatigue"] = {
@@ -84790,24 +84736,24 @@ WeakAurasOptionsSaved = {
 				[1485] = 135242,
 			},
 		},
-		["Increase Shadow Dam 64"] = {
+		["Increase Frost Dam 26"] = {
 			["spells"] = {
-				[23594] = 136235,
+				[17891] = 136235,
 			},
 		},
-		["Dazzling Mithril Rapier"] = {
+		["Find Relic Fragment"] = {
 			["spells"] = {
-				[10005] = 136192,
+				[17474] = 136235,
 			},
 		},
-		["Lesser Health"] = {
+		["Sapphire Signet"] = {
 			["spells"] = {
-				[7747] = 136235,
+				[26903] = 136235,
 			},
 		},
-		["Language Old Tongue (NYI)"] = {
+		["Increase Fire Dam 26"] = {
 			["spells"] = {
-				[817] = 136235,
+				[17867] = 136235,
 			},
 		},
 		["Survival of the Fittest"] = {
@@ -84828,15 +84774,15 @@ WeakAurasOptionsSaved = {
 				[12696] = 132337,
 			},
 		},
-		["Woolen Boots"] = {
+		["Sharp Dresser"] = {
 			["spells"] = {
-				[2401] = 136249,
+				[17816] = 136235,
 			},
 		},
-		["Powerful Anti-Venom"] = {
+		["Disease Burst"] = {
 			["spells"] = {
-				[23786] = 136068,
-				[23787] = 136192,
+				[17689] = 136006,
+				[17690] = 136006,
 			},
 		},
 		["Increased All Resist 12"] = {
@@ -84854,9 +84800,9 @@ WeakAurasOptionsSaved = {
 				[32766] = 134094,
 			},
 		},
-		["Suffering of Sanity"] = {
+		["Shellfish Trap"] = {
 			["spells"] = {
-				[23773] = 136133,
+				[17679] = 136235,
 			},
 		},
 		["Summon Embers"] = {
@@ -84870,9 +84816,9 @@ WeakAurasOptionsSaved = {
 				[356300] = 136235,
 			},
 		},
-		["Call of Vaelastrasz"] = {
+		["Despawn Spectral Combatants"] = {
 			["spells"] = {
-				[16349] = 136235,
+				[17678] = 136235,
 			},
 		},
 		["Lunar Grace"] = {
@@ -84881,9 +84827,9 @@ WeakAurasOptionsSaved = {
 				[43740] = 135734,
 			},
 		},
-		["Flight of the Peregrine"] = {
+		["Summon Spectral Projections"] = {
 			["spells"] = {
-				[4104] = 136107,
+				[17653] = 136222,
 			},
 		},
 		["Eye of the Night"] = {
@@ -84907,14 +84853,14 @@ WeakAurasOptionsSaved = {
 				[40403] = 136235,
 			},
 		},
-		["Sayge's Dark Fortune of Strength"] = {
+		["Undead Slayer 108"] = {
 			["spells"] = {
-				[23735] = 134334,
+				[17508] = 135923,
 			},
 		},
-		["Reinforced Linen Cape"] = {
+		["Increased Fire Resist 38"] = {
 			["spells"] = {
-				[2397] = 132149,
+				[14618] = 136235,
 			},
 		},
 		["Immunity: Nature"] = {
@@ -84945,9 +84891,10 @@ WeakAurasOptionsSaved = {
 				[17430] = 136235,
 			},
 		},
-		["Increased Spirit 32"] = {
+		["Frost Burn"] = {
 			["spells"] = {
-				[14454] = 136235,
+				[23187] = 135836,
+				[23189] = 135836,
 			},
 		},
 		["Smokey's Explosion"] = {
@@ -84955,15 +84902,14 @@ WeakAurasOptionsSaved = {
 				[19237] = 136235,
 			},
 		},
-		["Increased Nature Resist 18"] = {
+		["Lava Trap 1"] = {
 			["spells"] = {
-				[14639] = 136235,
+				[17675] = 136235,
 			},
 		},
-		["Thaumaturgy Channel"] = {
+		["Balnazzar Transform"] = {
 			["spells"] = {
-				[9712] = 136163,
-				[21029] = 136163,
+				[17288] = 136129,
 			},
 		},
 		["Honorless Target"] = {
@@ -84972,27 +84918,31 @@ WeakAurasOptionsSaved = {
 				[46705] = 135994,
 			},
 		},
-		["Increase Spell Dam 56"] = {
+		["Increase Spell Dam 43"] = {
 			["spells"] = {
-				[23732] = 136235,
+				[17280] = 136235,
 			},
 		},
-		["Wildvine Potion"] = {
+		["Possessed"] = {
 			["spells"] = {
-				[11387] = 136235,
-				[11458] = 136235,
+				[17246] = 136122,
+				[32831] = 136129,
 			},
 		},
-		["Enchant Weapon - Minor Beastslayer"] = {
+		["Monty Bashes Rats (DND)"] = {
 			["spells"] = {
-				[7786] = 135913,
+				[21052] = 136235,
 			},
 		},
-		["Detect Invisibility"] = {
+		["Upgrade Zigguraut"] = {
 			["spells"] = {
-				[132] = 136153,
-				[2972] = 136152,
-				[11649] = 136152,
+				[17241] = 136235,
+				[17242] = 136235,
+				[17236] = 136235,
+				[17237] = 136235,
+				[17224] = 136235,
+				[17239] = 136235,
+				[17240] = 136235,
 			},
 		},
 		["Party Time!"] = {
@@ -85000,41 +84950,38 @@ WeakAurasOptionsSaved = {
 				[8067] = 136142,
 			},
 		},
-		["Increased Bow"] = {
+		["Create Pamela's Doll"] = {
 			["spells"] = {
-				[37559] = 136235,
-				[15947] = 136235,
-				[7535] = 136235,
-				[7568] = 136235,
-				[7569] = 136235,
-				[7570] = 136235,
-				[7571] = 136235,
-				[7572] = 136235,
-				[17369] = 136235,
-				[17818] = 136235,
+				[17133] = 136235,
 			},
 		},
-		["Arcane Detonation"] = {
+		["Pamela's Doll Trap"] = {
 			["spells"] = {
-				[23722] = 135753,
+				[17132] = 136235,
 			},
 		},
-		["Corrosive Acid Breath"] = {
+		["Major Troll's Blood Potion"] = {
 			["spells"] = {
-				[16359] = 136007,
-				[20667] = 136007,
+				[24368] = 136235,
 			},
 		},
-		["Increased Agility 06"] = {
+		["Mass Dispel"] = {
 			["spells"] = {
-				[7492] = 136235,
+				[32592] = 135739,
+				[4526] = 136222,
+				[353184] = 135739,
+				[38082] = 135739,
+				[39897] = 135739,
+				[32375] = 135739,
 			},
 		},
-		["Frost Shot"] = {
+		["Gift of Nature"] = {
 			["spells"] = {
-				[12551] = 135989,
-				[6984] = 135989,
-				[18802] = 135989,
+				[24943] = 136074,
+				[17104] = 136074,
+				[24945] = 136074,
+				[24946] = 136074,
+				[24944] = 136074,
 			},
 		},
 		["Internal Combustion"] = {
@@ -85047,23 +84994,31 @@ WeakAurasOptionsSaved = {
 				[16988] = 136192,
 			},
 		},
-		["Lava Belt"] = {
+		["Increased Arcane Resist 28"] = {
 			["spells"] = {
-				[23707] = 136235,
+				[14730] = 136235,
 			},
 		},
-		["Timbermaw Brawlers"] = {
+		["Feedback"] = {
 			["spells"] = {
-				[23704] = 136235,
+				[19271] = 136189,
+				[6347] = 136189,
+				[13896] = 136189,
+				[25441] = 136189,
+				[32897] = 136170,
+				[19269] = 136189,
+				[19273] = 136189,
+				[25440] = 136189,
+				[19270] = 136189,
+				[19274] = 136189,
+				[19275] = 136189,
+				[19267] = 136189,
+				[19268] = 136189,
 			},
 		},
-		["Flametongue Totem Proc"] = {
+		["Ward of Myzrael"] = {
 			["spells"] = {
-				[8248] = 136040,
-				[16389] = 136040,
-				[8253] = 136040,
-				[25555] = 136040,
-				[10523] = 136040,
+				[4932] = 136222,
 			},
 		},
 		["Summon Sloth"] = {
@@ -85071,14 +85026,14 @@ WeakAurasOptionsSaved = {
 				[3499] = 136133,
 			},
 		},
-		["Create Warsong Mark of Honor"] = {
+		["Fade Out"] = {
 			["spells"] = {
-				[23702] = 136235,
+				[5543] = 136047,
 			},
 		},
-		["Stormpike's Salvation"] = {
+		["Serpentine Cleansing"] = {
 			["spells"] = {
-				[23693] = 136087,
+				[6270] = 136168,
 			},
 		},
 		["Increase Arcane Dam 43"] = {
@@ -85091,14 +85046,14 @@ WeakAurasOptionsSaved = {
 				[13897] = 136235,
 			},
 		},
-		["Shadowskin Gloves"] = {
+		["Increased Arcane Resist 44"] = {
 			["spells"] = {
-				[22711] = 136247,
+				[14968] = 136235,
 			},
 		},
-		["Sam's Test Spell"] = {
+		["Increased Intellect 08"] = {
 			["spells"] = {
-				[23685] = 136235,
+				[9104] = 136235,
 			},
 		},
 		["Infallible Mind"] = {
@@ -85114,10 +85069,9 @@ WeakAurasOptionsSaved = {
 				[16429] = 136130,
 			},
 		},
-		["Ivory Raptor"] = {
+		["Gizlock's Dummy Taunt Effect"] = {
 			["spells"] = {
-				[10795] = 132253,
-				[17450] = 132253,
+				[21860] = 132333,
 			},
 		},
 		["Tribal Leatherworking"] = {
@@ -85126,49 +85080,19 @@ WeakAurasOptionsSaved = {
 				[10661] = 136247,
 			},
 		},
-		["Earth Shield"] = {
+		["Increased Nature Resist 09"] = {
 			["spells"] = {
-				[38590] = 136089,
-				[32593] = 136089,
-				[32594] = 136089,
-				[379] = 136089,
-				[32734] = 136089,
-				[974] = 136089,
+				[14629] = 136235,
 			},
 		},
-		["Attack Power 18"] = {
+		["Create Tuber"] = {
 			["spells"] = {
-				[9330] = 136235,
+				[6900] = 133748,
 			},
 		},
-		["Rejuvenation"] = {
+		["Toxic Saliva"] = {
 			["spells"] = {
-				[2090] = 136081,
-				[9840] = 136081,
-				[26981] = 136081,
-				[774] = 136081,
-				[3627] = 136081,
-				[38657] = 136081,
-				[32131] = 136081,
-				[1058] = 136081,
-				[15981] = 136081,
-				[9841] = 136081,
-				[28723] = 133439,
-				[2091] = 136081,
-				[20664] = 136081,
-				[25299] = 136081,
-				[28724] = 133439,
-				[27532] = 136081,
-				[28722] = 133439,
-				[28716] = 136235,
-				[26982] = 136081,
-				[8910] = 136081,
-				[1430] = 136081,
-				[31782] = 136081,
-				[12160] = 136081,
-				[8070] = 136081,
-				[20701] = 136081,
-				[9839] = 136081,
+				[7125] = 136016,
 			},
 		},
 		["Elixir of Minor Agility"] = {
@@ -85181,14 +85105,20 @@ WeakAurasOptionsSaved = {
 				[19032] = 136235,
 			},
 		},
-		["Beasts Deck"] = {
+		["Call Slavering Worg"] = {
 			["spells"] = {
-				[23677] = 136235,
+				[7488] = 136130,
 			},
 		},
-		["Lily Root"] = {
+		["Flameblade"] = {
 			["spells"] = {
-				[18832] = 136235,
+				[7807] = 135811,
+				[7874] = 135811,
+				[7806] = 135811,
+				[7829] = 135811,
+				[38793] = 135811,
+				[7875] = 135811,
+				[7808] = 135811,
 			},
 		},
 		["Bull Rush"] = {
@@ -85205,9 +85135,77 @@ WeakAurasOptionsSaved = {
 				[41875] = 136235,
 			},
 		},
-		["Earthbind"] = {
+		["Increased Mana Regen"] = {
 			["spells"] = {
-				[3600] = 136102,
+				[36411] = 136235,
+				[33780] = 136235,
+				[20959] = 136235,
+				[35828] = 136235,
+				[35836] = 136235,
+				[21360] = 136235,
+				[21362] = 136235,
+				[21618] = 136235,
+				[21620] = 136235,
+				[21622] = 136235,
+				[21624] = 136235,
+				[21626] = 136235,
+				[21628] = 136235,
+				[21630] = 136235,
+				[21632] = 136235,
+				[21634] = 136235,
+				[23795] = 136235,
+				[21638] = 136235,
+				[21640] = 136235,
+				[21642] = 136235,
+				[21644] = 136235,
+				[41770] = 136235,
+				[32705] = 136235,
+				[35829] = 136235,
+				[41675] = 136235,
+				[42060] = 136235,
+				[18378] = 136235,
+				[25115] = 136235,
+				[23212] = 136235,
+				[26647] = 136235,
+				[40231] = 136235,
+				[41775] = 136235,
+				[39882] = 136235,
+				[21359] = 136235,
+				[21361] = 136235,
+				[21363] = 136235,
+				[21619] = 136235,
+				[21621] = 136235,
+				[21623] = 136235,
+				[21625] = 136235,
+				[21627] = 136235,
+				[21629] = 136235,
+				[21631] = 136235,
+				[40343] = 136235,
+				[21635] = 136235,
+				[21637] = 136235,
+				[21639] = 136235,
+				[21641] = 136235,
+				[21643] = 136235,
+				[41776] = 136235,
+				[39879] = 136235,
+				[45216] = 136235,
+				[42115] = 136235,
+				[42100] = 136235,
+				[41659] = 136235,
+				[41562] = 136235,
+				[21633] = 136235,
+				[21636] = 136235,
+				[42082] = 136235,
+				[39546] = 136235,
+				[18379] = 136235,
+				[28014] = 136235,
+				[25114] = 136235,
+				[41591] = 136235,
+				[27912] = 136235,
+				[39547] = 136235,
+				[21364] = 136235,
+				[21365] = 136235,
+				[21366] = 136235,
 			},
 		},
 		["Simon Game START timer, (DND)"] = {
@@ -85220,20 +85218,19 @@ WeakAurasOptionsSaved = {
 				[37601] = 135921,
 			},
 		},
-		["Complete Warsong Gulch Quest"] = {
+		["Add Fire Dam - Weap 10"] = {
 			["spells"] = {
-				[23659] = 136235,
-				[23660] = 136235,
+				[7724] = 136235,
 			},
 		},
-		["Swift Gray Ram"] = {
+		["QA Expert Fishing"] = {
 			["spells"] = {
-				[23239] = 132248,
+				[7736] = 136245,
 			},
 		},
-		["GGOODMANTEST2"] = {
+		["Strength of the Ages"] = {
 			["spells"] = {
-				[23618] = 135805,
+				[4539] = 136188,
 			},
 		},
 		["Rune of Opening"] = {
@@ -85262,9 +85259,19 @@ WeakAurasOptionsSaved = {
 				[34292] = 136096,
 			},
 		},
-		["Banish Burning Exile"] = {
+		["Prowl"] = {
 			["spells"] = {
-				[4130] = 136168,
+				[24450] = 132142,
+				[6783] = 132089,
+				[24451] = 132142,
+				[8152] = 132320,
+				[5215] = 132089,
+				[42932] = 132320,
+				[24455] = 132142,
+				[24454] = 132142,
+				[24453] = 132142,
+				[9913] = 132089,
+				[24452] = 132142,
 			},
 		},
 		["Summon Toxic Helboar Meat"] = {
@@ -85272,9 +85279,9 @@ WeakAurasOptionsSaved = {
 				[29278] = 136235,
 			},
 		},
-		["Screams of the Past"] = {
+		["Summon Wind Howler"] = {
 			["spells"] = {
-				[7074] = 136164,
+				[8271] = 136018,
 			},
 		},
 		["Emerald Owl"] = {
@@ -85282,14 +85289,14 @@ WeakAurasOptionsSaved = {
 				[26600] = 132192,
 			},
 		},
-		["Mind Tremor"] = {
+		["Uther's Dwarf Tribute"] = {
 			["spells"] = {
-				[8272] = 136025,
+				[24107] = 136235,
 			},
 		},
-		["Enchant Chest - Minor Mana"] = {
+		["Increase Nature Dam 30"] = {
 			["spells"] = {
-				[7443] = 135913,
+				[17991] = 136235,
 			},
 		},
 		["Gyrofreeze Ice Reflector"] = {
@@ -85326,15 +85333,14 @@ WeakAurasOptionsSaved = {
 				[9765] = 136235,
 			},
 		},
-		["Bloodfang"] = {
+		["Demonfork"] = {
 			["spells"] = {
-				[23580] = 136168,
-				[23581] = 136168,
+				[16603] = 136169,
 			},
 		},
-		["Track Hidden"] = {
+		["Putrid Stench"] = {
 			["spells"] = {
-				[19885] = 132320,
+				[12946] = 136127,
 			},
 		},
 		["Apexis Vibrations"] = {
@@ -85342,9 +85348,9 @@ WeakAurasOptionsSaved = {
 				[40623] = 132536,
 			},
 		},
-		["Improved Judgement of Light"] = {
+		["Summon Bronze Whelpling"] = {
 			["spells"] = {
-				[23564] = 136235,
+				[10699] = 132311,
 			},
 		},
 		["Mooncloth Boots"] = {
@@ -85358,9 +85364,11 @@ WeakAurasOptionsSaved = {
 				[37425] = 136235,
 			},
 		},
-		["Improved Drain Life"] = {
+		["Improved Blizzard"] = {
 			["spells"] = {
-				[23554] = 136235,
+				[12488] = 135857,
+				[12487] = 135857,
+				[11185] = 135857,
 			},
 		},
 		["Small Seaforium Charge"] = {
@@ -85369,15 +85377,15 @@ WeakAurasOptionsSaved = {
 				[4056] = 136235,
 			},
 		},
-		["Panther Cage Key"] = {
+		["Scorching Totem"] = {
 			["spells"] = {
-				[17176] = 136235,
+				[15038] = 135825,
+				[32968] = 135825,
 			},
 		},
-		["Abolish Poison"] = {
+		["Increased Spirit 21"] = {
 			["spells"] = {
-				[2893] = 136068,
-				[14253] = 136068,
+				[14440] = 136235,
 			},
 		},
 		["Bash'ir Landing Boss: Force Cast - North"] = {
@@ -85385,18 +85393,14 @@ WeakAurasOptionsSaved = {
 				[41226] = 136235,
 			},
 		},
-		["Thrash"] = {
+		["Striped Frostsaber"] = {
 			["spells"] = {
-				[21919] = 132350,
-				[8876] = 132152,
-				[3391] = 132152,
-				[12787] = 132152,
-				[3417] = 132152,
+				[8394] = 132267,
 			},
 		},
-		["Summon Tiny Red Dragon"] = {
+		["Hands of Darkness"] = {
 			["spells"] = {
-				[23530] = 132311,
+				[8780] = 132149,
 			},
 		},
 		["Decreased Destruction Threat"] = {
@@ -85404,9 +85408,9 @@ WeakAurasOptionsSaved = {
 				[23555] = 136235,
 			},
 		},
-		["Snake Burst Firework"] = {
+		["Mark of Shame"] = {
 			["spells"] = {
-				[23507] = 136235,
+				[6767] = 136122,
 			},
 		},
 		["Dusky Belt"] = {
@@ -85414,25 +85418,36 @@ WeakAurasOptionsSaved = {
 				[9206] = 136247,
 			},
 		},
-		["Fool's Plight"] = {
+		["Crimson Silk Gloves"] = {
 			["spells"] = {
-				[23504] = 135996,
+				[8804] = 132149,
 			},
 		},
-		["Dimension Ripper - Everlook"] = {
+		["Ravage"] = {
 			["spells"] = {
-				[23490] = 136235,
+				[29906] = 132152,
+				[3242] = 132152,
+				[8391] = 132152,
+				[6785] = 132141,
+				[3446] = 132152,
+				[9867] = 132141,
+				[33781] = 132152,
+				[27005] = 132141,
+				[24333] = 132152,
+				[24213] = 132152,
+				[6787] = 132141,
+				[9866] = 132141,
 			},
 		},
-		["Infected Spine"] = {
+		["Weapon Counterweight"] = {
 			["spells"] = {
-				[12245] = 136127,
-				[12246] = 136127,
+				[7217] = 136235,
+				[7218] = 136235,
 			},
 		},
-		["Ultrasafe Transporter - Gadgetzan"] = {
+		["Panther Cage Key"] = {
 			["spells"] = {
-				[23489] = 136235,
+				[17176] = 136235,
 			},
 		},
 		["Sneezing Fit"] = {
@@ -85450,9 +85465,9 @@ WeakAurasOptionsSaved = {
 				[34761] = 136025,
 			},
 		},
-		["Melt Ore"] = {
+		["Remove Unholy Shield"] = {
 			["spells"] = {
-				[5159] = 135826,
+				[8916] = 136235,
 			},
 		},
 		["Dark Iron Boots"] = {
@@ -85470,9 +85485,9 @@ WeakAurasOptionsSaved = {
 				[26130] = 136011,
 			},
 		},
-		["Increased Stamina 10"] = {
+		["Create Firework Rocket Launcher"] = {
 			["spells"] = {
-				[9117] = 136235,
+				[26298] = 134538,
 			},
 		},
 		["Reth'hedron Knockdown: The Aggro Check"] = {
@@ -85485,20 +85500,17 @@ WeakAurasOptionsSaved = {
 				[16728] = 136192,
 			},
 		},
-		["Seal of the Crusader"] = {
+		["Throw Axe"] = {
 			["spells"] = {
-				[20307] = 135924,
-				[20308] = 135924,
-				[20162] = 135924,
-				[27158] = 135924,
-				[20305] = 135924,
-				[20306] = 135924,
-				[21082] = 135924,
+				[42332] = 135573,
+				[40564] = 134520,
+				[40563] = 135681,
+				[16075] = 132399,
 			},
 		},
-		["Rough Blasting Powder"] = {
+		["Aquadynamic Fish Lens"] = {
 			["spells"] = {
-				[3918] = 136235,
+				[8532] = 134440,
 			},
 		},
 		["Improved Hammer of Justice"] = {
@@ -85524,19 +85536,19 @@ WeakAurasOptionsSaved = {
 				[11992] = 136010,
 			},
 		},
-		["Gadgetzan Transporter"] = {
+		["Cantation of Manifestation"] = {
 			["spells"] = {
-				[23441] = 132862,
+				[9095] = 135994,
 			},
 		},
-		["Summon Hawksbill Snapjaw"] = {
+		["Increased Stamina 13"] = {
 			["spells"] = {
-				[23432] = 132311,
+				[9264] = 136235,
 			},
 		},
-		["Corrupted Totems"] = {
+		["Magic Potion"] = {
 			["spells"] = {
-				[23425] = 136129,
+				[9587] = 136047,
 			},
 		},
 		["Admiral's Hat"] = {
@@ -85550,45 +85562,46 @@ WeakAurasOptionsSaved = {
 				[14655] = 136235,
 			},
 		},
-		["Iridescent Hammer"] = {
+		["Woolen Boots"] = {
 			["spells"] = {
-				[6518] = 136192,
+				[2401] = 136249,
 			},
 		},
-		["Smother"] = {
+		["Mithril Scale Bracers"] = {
 			["spells"] = {
-				[23417] = 134343,
+				[9937] = 136192,
 			},
 		},
-		["Paralyze"] = {
+		["Fishing Skill +5"] = {
 			["spells"] = {
-				[23414] = 136129,
-				[25725] = 132107,
-				[41083] = 136214,
-				[38132] = 136030,
+				[7823] = 136245,
 			},
 		},
-		["Corrupted Healing"] = {
+		["Birth"] = {
 			["spells"] = {
-				[23401] = 136129,
-				[23402] = 136152,
+				[26047] = 136235,
+				[37745] = 136235,
+				[7398] = 136235,
+				[41600] = 136235,
+				[26586] = 136235,
+				[26262] = 136235,
+				[34115] = 136235,
+				[20480] = 136235,
 			},
 		},
-		["Summon Deepmoss Matriarch"] = {
+		["Tony's God Mode"] = {
 			["spells"] = {
-				[6536] = 136074,
+				[1234] = 135724,
 			},
 		},
-		["Lesser Nether Essence"] = {
+		["Increased Aura Radii"] = {
 			["spells"] = {
-				[13740] = 136192,
+				[23565] = 136235,
 			},
 		},
-		["Cause Insanity"] = {
+		["Test Black Diamond Debug"] = {
 			["spells"] = {
-				[12888] = 136206,
-				[24327] = 136206,
-				[26079] = 136206,
+				[27059] = 136192,
 			},
 		},
 		["Battle Chicken"] = {
@@ -85596,29 +85609,29 @@ WeakAurasOptionsSaved = {
 				[13166] = 136172,
 			},
 		},
-		["Basilisk Sample"] = {
+		["Quake"] = {
 			["spells"] = {
-				[11759] = 136235,
+				[30576] = 136025,
+				[30571] = 136235,
+				[30572] = 136235,
+				[26093] = 136025,
+				[30658] = 136235,
+				[30657] = 136235,
 			},
 		},
-		["Healing Stream"] = {
+		["Undead Tracking"] = {
 			["spells"] = {
-				[5672] = 135127,
-				[10461] = 135127,
-				[6371] = 135127,
-				[25566] = 135127,
-				[10460] = 135127,
-				[6372] = 135127,
+				[10246] = 134179,
 			},
 		},
-		["Revive Dig Rat"] = {
+		["Arugal spawn-in spell"] = {
 			["spells"] = {
-				[5161] = 135955,
+				[10418] = 136235,
 			},
 		},
-		["Increased Armor 130"] = {
+		["Nightscape Tunic"] = {
 			["spells"] = {
-				[15367] = 136235,
+				[10499] = 136247,
 			},
 		},
 		["Wicked Leather Belt"] = {
@@ -85631,9 +85644,9 @@ WeakAurasOptionsSaved = {
 				[38416] = 136235,
 			},
 		},
-		["Shadow Trance"] = {
+		["Soul Explosion"] = {
 			["spells"] = {
-				[17941] = 136223,
+				[10828] = 136168,
 			},
 		},
 		["Felcloth Pants"] = {
@@ -85646,9 +85659,9 @@ WeakAurasOptionsSaved = {
 				[26034] = 136006,
 			},
 		},
-		["Silverwing Flag"] = {
+		["Increased Arcane Resist 41"] = {
 			["spells"] = {
-				[23335] = 132486,
+				[14965] = 136235,
 			},
 		},
 		["Brown Linen Pants"] = {
@@ -85666,11 +85679,12 @@ WeakAurasOptionsSaved = {
 				[26337] = 136235,
 			},
 		},
-		["Time Lapse"] = {
+		["Frostbite"] = {
 			["spells"] = {
-				[23312] = 135744,
-				[23310] = 135744,
-				[31467] = 136091,
+				[12497] = 135842,
+				[12494] = 135842,
+				[11071] = 135842,
+				[12496] = 135842,
 			},
 		},
 		["Portal Effect: Silvermoon"] = {
@@ -85678,22 +85692,41 @@ WeakAurasOptionsSaved = {
 				[32270] = 135744,
 			},
 		},
-		["Increased Frost Resist 26"] = {
+		["Gehennas' Curse"] = {
 			["spells"] = {
-				[14564] = 136235,
+				[19716] = 136160,
 			},
 		},
-		["Swift Yellow Mechanostrider"] = {
+		["Pyroblast"] = {
 			["spells"] = {
-				[23222] = 132247,
+				[24995] = 135817,
+				[12522] = 135808,
+				[36819] = 135812,
+				[33938] = 135808,
+				[12523] = 135808,
+				[12524] = 135808,
+				[33975] = 135808,
+				[20228] = 135808,
+				[29978] = 135812,
+				[12525] = 135808,
+				[12526] = 135808,
+				[36277] = 135808,
+				[41578] = 135808,
+				[38535] = 135808,
+				[31263] = 135808,
+				[17273] = 135808,
+				[27132] = 135808,
+				[17274] = 135808,
+				[18809] = 135808,
+				[12505] = 135808,
+				[11366] = 135808,
+				[29459] = 135808,
 			},
 		},
-		["Mana Drain"] = {
+		["Thaumaturgy Channel"] = {
 			["spells"] = {
-				[14] = 136235,
-				[15695] = 132155,
-				[27526] = 136208,
-				[29471] = 136208,
+				[9712] = 136163,
+				[21029] = 136163,
 			},
 		},
 		["Backlash"] = {
@@ -85705,19 +85738,21 @@ WeakAurasOptionsSaved = {
 				[34939] = 135823,
 			},
 		},
-		["Immune Fear/Polymorph/Stun"] = {
+		["Tame Adult Plainstrider"] = {
 			["spells"] = {
-				[23276] = 135894,
+				[19678] = 132164,
+				[19688] = 132164,
 			},
 		},
-		["Dreadful Fright"] = {
+		["Elixir of Agility"] = {
 			["spells"] = {
-				[23275] = 136122,
+				[11449] = 136235,
 			},
 		},
-		["Advanced Target Dummy Passive"] = {
+		["Wildvine Potion"] = {
 			["spells"] = {
-				[4048] = 136232,
+				[11387] = 136235,
+				[11458] = 136235,
 			},
 		},
 		["Cosmetic Purple Beam"] = {
@@ -85736,19 +85771,33 @@ WeakAurasOptionsSaved = {
 				[21388] = 135821,
 			},
 		},
-		["Increase Shadow Dam 69"] = {
+		["Veil of Shadow"] = {
 			["spells"] = {
-				[23265] = 136235,
+				[22687] = 136160,
+				[28440] = 136160,
+				[23224] = 136160,
+				[7068] = 136160,
+				[24674] = 136160,
+				[17820] = 136160,
 			},
 		},
-		["Evolving Ectoplasm (Green)"] = {
+		["Increased Spirit 41"] = {
 			["spells"] = {
-				[7945] = 136094,
+				[14947] = 136235,
 			},
 		},
-		["Demoralize"] = {
+		["Increased Bow"] = {
 			["spells"] = {
-				[23262] = 132366,
+				[37559] = 136235,
+				[15947] = 136235,
+				[7535] = 136235,
+				[7568] = 136235,
+				[7569] = 136235,
+				[7570] = 136235,
+				[7571] = 136235,
+				[7572] = 136235,
+				[17369] = 136235,
+				[17818] = 136235,
 			},
 		},
 		["Spitfire Breastplate"] = {
@@ -85766,52 +85815,9 @@ WeakAurasOptionsSaved = {
 				[18546] = 133002,
 			},
 		},
-		["Fire Shield"] = {
+		["Death Bed"] = {
 			["spells"] = {
-				[37318] = 135817,
-				[11350] = 135817,
-				[27486] = 135806,
-				[38901] = 135817,
-				[27489] = 135806,
-				[30514] = 135817,
-				[35265] = 135817,
-				[37283] = 135817,
-				[36907] = 135806,
-				[19627] = 135817,
-				[38933] = 135817,
-				[20322] = 135806,
-				[20323] = 135806,
-				[20324] = 135806,
-				[11771] = 135806,
-				[20326] = 135806,
-				[11772] = 135806,
-				[11773] = 135806,
-				[134] = 135817,
-				[32749] = 135817,
-				[27269] = 135806,
-				[32751] = 135817,
-				[11968] = 135817,
-				[38732] = 135817,
-				[38902] = 135817,
-				[8316] = 135806,
-				[35266] = 135817,
-				[8317] = 135806,
-				[38893] = 135817,
-				[8318] = 135806,
-				[38855] = 135817,
-				[8319] = 135806,
-				[38733] = 135817,
-				[38934] = 135817,
-				[18968] = 135817,
-				[11770] = 135806,
-				[37282] = 135817,
-				[30513] = 135817,
-				[11351] = 135817,
-				[37434] = 135806,
-				[13376] = 135817,
-				[2947] = 135806,
-				[2949] = 135806,
-				[20327] = 135806,
+				[6894] = 136223,
 			},
 		},
 		["Attack Power - Feral (+0197)"] = {
@@ -85819,9 +85825,9 @@ WeakAurasOptionsSaved = {
 				[44895] = 136235,
 			},
 		},
-		["Swift White Ram"] = {
+		["Ornate Mithril Helm"] = {
 			["spells"] = {
-				[23240] = 132248,
+				[9980] = 136192,
 			},
 		},
 		["Scorchling"] = {
@@ -85834,9 +85840,11 @@ WeakAurasOptionsSaved = {
 				[9261] = 136235,
 			},
 		},
-		["Summon Frail Skeleton"] = {
+		["Ghoul Rot"] = {
 			["spells"] = {
-				[16531] = 136187,
+				[12539] = 136134,
+				[12541] = 136134,
+				[16800] = 136134,
 			},
 		},
 		["Encapsulate Voidwalker"] = {
@@ -85849,9 +85857,9 @@ WeakAurasOptionsSaved = {
 				[7701] = 136235,
 			},
 		},
-		["Throw Rock II"] = {
+		["Increased Spirit 18"] = {
 			["spells"] = {
-				[4165] = 132153,
+				[14437] = 136235,
 			},
 		},
 		["Summon Enraged Earth Shard"] = {
@@ -85864,9 +85872,9 @@ WeakAurasOptionsSaved = {
 				[14482] = 136235,
 			},
 		},
-		["Strong Cleave"] = {
+		["Summon Tranquil Mechanical Yeti"] = {
 			["spells"] = {
-				[8255] = 132338,
+				[26010] = 132311,
 			},
 		},
 		["Summon Drakefire Amulet DND"] = {
@@ -85879,9 +85887,9 @@ WeakAurasOptionsSaved = {
 				[39803] = 132191,
 			},
 		},
-		["Swift White Steed"] = {
+		["Drink Disease Bottle"] = {
 			["spells"] = {
-				[23228] = 132261,
+				[6355] = 134799,
 			},
 		},
 		["Kaldorei Spider Kabob"] = {
@@ -85889,28 +85897,24 @@ WeakAurasOptionsSaved = {
 				[6412] = 136192,
 			},
 		},
-		["Touch of Weakness"] = {
+		["Activate Bomb A"] = {
 			["spells"] = {
-				[28598] = 136143,
-				[19249] = 136143,
-				[19253] = 136143,
-				[2943] = 136143,
-				[19261] = 136143,
-				[19265] = 136143,
-				[19254] = 136143,
-				[25461] = 136143,
-				[19262] = 136143,
-				[19251] = 136143,
-				[25460] = 136143,
-				[19266] = 136143,
-				[19264] = 136143,
-				[19252] = 136143,
-				[2652] = 136143,
+				[11511] = 135990,
 			},
 		},
-		["Swift Mistsaber"] = {
+		["Increased Parry 20"] = {
 			["spells"] = {
-				[23219] = 132225,
+				[13665] = 136235,
+				[41723] = 136235,
+				[41701] = 136235,
+				[41769] = 136235,
+				[41717] = 136235,
+				[41793] = 136235,
+				[41674] = 136235,
+				[41742] = 136235,
+				[41690] = 136235,
+				[41803] = 136235,
+				[41817] = 136235,
 			},
 		},
 		["Summon Frost Spectres"] = {
@@ -85925,36 +85929,38 @@ WeakAurasOptionsSaved = {
 				[32667] = 134923,
 			},
 		},
-		["BM Only ON"] = {
+		["Increased Block 10"] = {
 			["spells"] = {
-				[20115] = 135993,
+				[13675] = 136235,
+				[41885] = 136235,
 			},
 		},
-		["Roasted Kodo Meat"] = {
+		["Whipper Root Tuber"] = {
 			["spells"] = {
-				[6414] = 136192,
+				[15700] = 136235,
 			},
 		},
-		["Aura of Frost"] = {
+		["Dark Pact"] = {
 			["spells"] = {
-				[23186] = 135835,
+				[18938] = 136141,
+				[27265] = 136141,
+				[18937] = 136141,
+				[18220] = 136141,
 			},
 		},
-		["Super Shrink Ray"] = {
+		["Smite Slam"] = {
 			["spells"] = {
-				[22742] = 135989,
-				[31485] = 135989,
-				[36341] = 135989,
+				[6435] = 132939,
 			},
 		},
-		["Chromatic Mutation"] = {
+		["Bind Sight (PT)"] = {
 			["spells"] = {
-				[23174] = 136172,
+				[6277] = 136235,
 			},
 		},
-		["Toxic Contagion"] = {
+		["Earthbind"] = {
 			["spells"] = {
-				[6672] = 136235,
+				[3600] = 136102,
 			},
 		},
 		["Runed Golden Rod"] = {
@@ -85962,13 +85968,9 @@ WeakAurasOptionsSaved = {
 				[13628] = 135147,
 			},
 		},
-		["Shadow Focus"] = {
+		["Beast Slaying 60"] = {
 			["spells"] = {
-				[15329] = 136126,
-				[15260] = 136126,
-				[15327] = 136126,
-				[15328] = 136126,
-				[15330] = 136126,
+				[18207] = 136235,
 			},
 		},
 		["Silithid Creeper Egg"] = {
@@ -85989,42 +85991,20 @@ WeakAurasOptionsSaved = {
 				[26377] = 136235,
 			},
 		},
-		["Well Fed"] = {
+		["Wavering Will"] = {
 			["spells"] = {
-				[25941] = 136000,
-				[25694] = 136000,
-				[33254] = 136000,
-				[40323] = 136000,
-				[33256] = 136000,
-				[33257] = 136000,
-				[46899] = 136000,
-				[33259] = 136000,
-				[24799] = 136000,
-				[33261] = 136000,
-				[43771] = 136000,
-				[33263] = 136000,
-				[46687] = 133943,
-				[33265] = 136000,
-				[46682] = 134024,
-				[45619] = 136000,
-				[33268] = 136000,
-				[45245] = 132810,
-				[43764] = 136000,
-				[19705] = 136000,
-				[33272] = 136000,
-				[19706] = 136000,
-				[42293] = 136000,
-				[35272] = 136000,
-				[19710] = 136000,
-				[19708] = 136000,
-				[24870] = 136000,
-				[19709] = 136000,
-				[19711] = 136000,
+				[7127] = 136119,
+				[36699] = 136119,
+				[46299] = 136119,
 			},
 		},
-		["Arcane Shot Mana Reduction"] = {
+		["Plague Cloud"] = {
 			["spells"] = {
-				[23157] = 132218,
+				[15728] = 136127,
+				[12001] = 136127,
+				[3256] = 136127,
+				[29350] = 132099,
+				[30122] = 132099,
 			},
 		},
 		["Increased Stamina"] = {
@@ -86070,26 +86050,25 @@ WeakAurasOptionsSaved = {
 				[27710] = 136235,
 			},
 		},
-		["Increased Shadow Resist 17"] = {
+		["Fire Shield III"] = {
 			["spells"] = {
-				[14680] = 136235,
+				[2601] = 135817,
 			},
 		},
-		["QAEnchant Weapon Crusader"] = {
+		["Increased Spirit 26"] = {
 			["spells"] = {
-				[23141] = 135913,
+				[14448] = 136235,
 			},
 		},
-		["Weak Poison"] = {
+		["Portal Effect: Darnassus"] = {
 			["spells"] = {
-				[6751] = 136016,
+				[17608] = 135741,
 			},
 		},
-		["Mithril Spurs"] = {
+		["Poisoned Shot"] = {
 			["spells"] = {
-				[9783] = 132307,
-				[7215] = 136235,
-				[9964] = 136192,
+				[8275] = 132273,
+				[8806] = 132273,
 			},
 		},
 		["Heavy Stone Statue"] = {
@@ -86098,16 +86077,9 @@ WeakAurasOptionsSaved = {
 				[32807] = 136235,
 			},
 		},
-		["Summon Voidwalker"] = {
+		["Magic Stone Helmet"] = {
 			["spells"] = {
-				[9221] = 136221,
-				[12746] = 136221,
-				[9222] = 136221,
-				[697] = 136221,
-				[43896] = 136221,
-				[30208] = 136221,
-				[7728] = 136221,
-				[25112] = 136221,
+				[9084] = 136245,
 			},
 		},
 		["Simon Game END, red"] = {
@@ -86115,21 +86087,23 @@ WeakAurasOptionsSaved = {
 				[40285] = 136235,
 			},
 		},
-		["Increase Holy Dam 54"] = {
+		["Increased Strength 24"] = {
 			["spells"] = {
-				[21536] = 136235,
+				[14496] = 136235,
 			},
 		},
-		["World Enlarger"] = {
+		["Banish Burning Exile"] = {
 			["spells"] = {
-				[23126] = 136121,
-				[23129] = 136235,
+				[4130] = 136168,
 			},
 		},
-		["Iron Grenade"] = {
+		["Moonfury"] = {
 			["spells"] = {
-				[3962] = 136235,
-				[4068] = 135826,
+				[16899] = 136057,
+				[16900] = 136057,
+				[16901] = 136057,
+				[16896] = 136057,
+				[16897] = 136057,
 			},
 		},
 		["Terror (TEST)"] = {
@@ -86137,9 +86111,9 @@ WeakAurasOptionsSaved = {
 				[692] = 136122,
 			},
 		},
-		["Orcish Orphan Whistle"] = {
+		["Creeper Venom"] = {
 			["spells"] = {
-				[23125] = 136235,
+				[14532] = 136067,
 			},
 		},
 		["Brewfest Setup Crew - Dwarf"] = {
@@ -86152,14 +86126,14 @@ WeakAurasOptionsSaved = {
 				[35147] = 132363,
 			},
 		},
-		["Ultra-Flash Shadow Reflector"] = {
+		["Increased Agility 23"] = {
 			["spells"] = {
-				[23082] = 136235,
+				[14387] = 136235,
 			},
 		},
-		["Rugged Leather Pants"] = {
+		["Violet Raptor"] = {
 			["spells"] = {
-				[9064] = 136247,
+				[10799] = 132253,
 			},
 		},
 		["Damage Amplification: All"] = {
@@ -86201,9 +86175,9 @@ WeakAurasOptionsSaved = {
 				[32834] = 136235,
 			},
 		},
-		["Frost Hold"] = {
+		["Increased Nature Resist 22"] = {
 			["spells"] = {
-				[10017] = 135848,
+				[14644] = 136235,
 			},
 		},
 		["Deadly Poison"] = {
@@ -86231,14 +86205,14 @@ WeakAurasOptionsSaved = {
 				[32971] = 136067,
 			},
 		},
-		["Fear Cast Time Reduction"] = {
+		["Walk of Fire Trigger (DNC)"] = {
 			["spells"] = {
-				[23047] = 135817,
+				[269] = 136235,
 			},
 		},
-		["Apprentice Leatherworking"] = {
+		["Blazing Rapier"] = {
 			["spells"] = {
-				[2155] = 133611,
+				[16978] = 136192,
 			},
 		},
 		["Echoes of Lordaeron"] = {
@@ -86287,14 +86261,14 @@ WeakAurasOptionsSaved = {
 				[38054] = 136159,
 			},
 		},
-		["Smashing Blow"] = {
+		["Increased Arcane Resist 11"] = {
 			["spells"] = {
-				[2442] = 132326,
+				[14713] = 136235,
 			},
 		},
-		["Increase Holy Dam 29"] = {
+		["Inner Focus"] = {
 			["spells"] = {
-				[21518] = 136235,
+				[14751] = 135863,
 			},
 		},
 		["Mana Regen 5%"] = {
@@ -86302,17 +86276,16 @@ WeakAurasOptionsSaved = {
 				[32102] = 135728,
 			},
 		},
-		["Crystal Prison"] = {
+		["Cleave Armor"] = {
 			["spells"] = {
-				[23015] = 134075,
-				[32361] = 135988,
-				[40906] = 136235,
-				[40846] = 135988,
+				[5480] = 132109,
+				[5508] = 132109,
+				[15280] = 132355,
 			},
 		},
-		["Summon Alarm-o-Bot"] = {
+		["Smelt Copper"] = {
 			["spells"] = {
-				[23004] = 133002,
+				[2657] = 136235,
 			},
 		},
 		["Evade (DND)"] = {
@@ -86320,9 +86293,9 @@ WeakAurasOptionsSaved = {
 				[108] = 136235,
 			},
 		},
-		["Intellect IX"] = {
+		["Increased Block 14"] = {
 			["spells"] = {
-				[16888] = 134721,
+				[21477] = 136235,
 			},
 		},
 		["Increased Intellect 28"] = {
@@ -86330,22 +86303,9 @@ WeakAurasOptionsSaved = {
 				[14418] = 136235,
 			},
 		},
-		["Battle Standard"] = {
+		["Increased Fire Resist 24"] = {
 			["spells"] = {
-				[23036] = 132484,
-				[32430] = 132486,
-				[23539] = 132483,
-				[23033] = 132483,
-				[22996] = 132483,
-				[23034] = 132483,
-				[32431] = 132485,
-				[23576] = 132484,
-				[23574] = 132483,
-				[23035] = 132484,
-				[23538] = 132484,
-				[22998] = 132483,
-				[23005] = 132484,
-				[23006] = 132484,
+				[14604] = 136235,
 			},
 		},
 		["Eye Peck"] = {
@@ -86354,15 +86314,14 @@ WeakAurasOptionsSaved = {
 				[4317] = 132156,
 			},
 		},
-		["Bottle of Poison"] = {
+		["Create Whipper Root Tubers"] = {
 			["spells"] = {
-				[7365] = 136016,
-				[22335] = 136016,
+				[15343] = 136235,
 			},
 		},
-		["Illidan's Fury"] = {
+		["Enchant Bracer - Minor Health"] = {
 			["spells"] = {
-				[22988] = 136164,
+				[7418] = 135913,
 			},
 		},
 		["Ivus Teleport Visual DND"] = {
@@ -86377,9 +86336,9 @@ WeakAurasOptionsSaved = {
 				[37188] = 136235,
 			},
 		},
-		["Form of the Moonstalker (no invis)"] = {
+		["Heal Ragnaros"] = {
 			["spells"] = {
-				[10849] = 132156,
+				[19952] = 135827,
 			},
 		},
 		["Summon Duke Air, Trigger"] = {
@@ -86395,9 +86354,10 @@ WeakAurasOptionsSaved = {
 				[34682] = 136052,
 			},
 		},
-		["Guardian Armor"] = {
+		["Legendary Arcane Amalgamation"] = {
 			["spells"] = {
-				[3773] = 136247,
+				[15463] = 136235,
+				[15490] = 136235,
 			},
 		},
 		["Bloodmaul Intoxication"] = {
@@ -86410,24 +86370,24 @@ WeakAurasOptionsSaved = {
 				[7911] = 132274,
 			},
 		},
-		["Baked Salmon"] = {
+		["Seal of the Crusader Judgement Increase"] = {
 			["spells"] = {
-				[18247] = 136192,
+				[23300] = 135924,
 			},
 		},
-		["Chromatic Cloak"] = {
+		["Linken's Boomerang"] = {
 			["spells"] = {
-				[22926] = 136235,
+				[15712] = 135646,
 			},
 		},
-		["Rough Copper Vest"] = {
+		["Increased Shadow Resist 28"] = {
 			["spells"] = {
-				[12260] = 136192,
+				[14691] = 136235,
 			},
 		},
-		["Mongoose Boots"] = {
+		["Flamecrack"] = {
 			["spells"] = {
-				[22922] = 136235,
+				[15743] = 135805,
 			},
 		},
 		["Arcane Absorption"] = {
@@ -86441,9 +86401,10 @@ WeakAurasOptionsSaved = {
 				[46896] = 136235,
 			},
 		},
-		["Summon Tamed Bird"] = {
+		["Goblin Sapper Charge"] = {
 			["spells"] = {
-				[7904] = 132150,
+				[12760] = 136235,
+				[13241] = 135826,
 			},
 		},
 		["Improved Sayaad"] = {
@@ -86469,9 +86430,9 @@ WeakAurasOptionsSaved = {
 				[41563] = 136240,
 			},
 		},
-		["Attunement to the Core"] = {
+		["Attack Power 90"] = {
 			["spells"] = {
-				[22877] = 136235,
+				[15831] = 136235,
 			},
 		},
 		["Fiery Chain Shoulders"] = {
@@ -86479,9 +86440,9 @@ WeakAurasOptionsSaved = {
 				[20873] = 136192,
 			},
 		},
-		["Resist Poison"] = {
+		["Hearthstone"] = {
 			["spells"] = {
-				[6513] = 136067,
+				[8690] = 134414,
 			},
 		},
 		["Soul Split: Good"] = {
@@ -86519,9 +86480,12 @@ WeakAurasOptionsSaved = {
 				[14273] = 132294,
 			},
 		},
-		["Portal: Darnassus"] = {
+		["Cone of Fire"] = {
 			["spells"] = {
-				[11419] = 135741,
+				[30926] = 135831,
+				[36921] = 135831,
+				[19630] = 135831,
+				[36876] = 135831,
 			},
 		},
 		["Gift of the Naaru"] = {
@@ -86545,9 +86509,10 @@ WeakAurasOptionsSaved = {
 				[44279] = 135805,
 			},
 		},
-		["Choking Spores"] = {
+		["Big Bronze Bomb"] = {
 			["spells"] = {
-				[22802] = 136006,
+				[3950] = 136235,
+				[4067] = 135826,
 			},
 		},
 		["Enduring Judgement"] = {
@@ -86555,9 +86520,10 @@ WeakAurasOptionsSaved = {
 				[40472] = 135959,
 			},
 		},
-		["Web II"] = {
+		["Bottle of Poison"] = {
 			["spells"] = {
-				[4168] = 132149,
+				[7365] = 136016,
+				[22335] = 136016,
 			},
 		},
 		["Summon Shadow Demons"] = {
@@ -86565,9 +86531,9 @@ WeakAurasOptionsSaved = {
 				[41117] = 136214,
 			},
 		},
-		["Perceptive"] = {
+		["KJORDAN (TEST)"] = {
 			["spells"] = {
-				[7212] = 136087,
+				[2766] = 136235,
 			},
 		},
 		["Burst of Energy"] = {
@@ -86575,10 +86541,9 @@ WeakAurasOptionsSaved = {
 				[24532] = 135871,
 			},
 		},
-		["Savage Fury"] = {
+		["Cure Ailments"] = {
 			["spells"] = {
-				[16998] = 132141,
-				[16999] = 132141,
+				[3592] = 136235,
 			},
 		},
 		["Using Jump-a-tron 4000"] = {
@@ -86596,9 +86561,11 @@ WeakAurasOptionsSaved = {
 				[36779] = 136235,
 			},
 		},
-		["Dense Sharpening Stone"] = {
+		["Improved Lightning Shield"] = {
 			["spells"] = {
-				[16641] = 136192,
+				[16290] = 136051,
+				[16261] = 136051,
+				[16291] = 136051,
 			},
 		},
 		["QAEnchant Weapon Spell Power"] = {
@@ -86606,9 +86573,9 @@ WeakAurasOptionsSaved = {
 				[23143] = 135913,
 			},
 		},
-		["Jungle Stew"] = {
+		["Juju Guile"] = {
 			["spells"] = {
-				[15861] = 136192,
+				[16327] = 134315,
 			},
 		},
 		["Cobrahn Serpent Form"] = {
@@ -86616,18 +86583,9 @@ WeakAurasOptionsSaved = {
 				[7965] = 136040,
 			},
 		},
-		["Arcane Intellect"] = {
+		["Summon Rockwing Gargoyles"] = {
 			["spells"] = {
-				[10157] = 135932,
-				[1460] = 135932,
-				[13326] = 135932,
-				[16876] = 135932,
-				[1461] = 135932,
-				[36880] = 135932,
-				[10156] = 135932,
-				[27126] = 135932,
-				[1459] = 135932,
-				[39235] = 135932,
+				[16381] = 136230,
 			},
 		},
 		["Head Shot"] = {
@@ -86635,12 +86593,9 @@ WeakAurasOptionsSaved = {
 				[2000] = 132153,
 			},
 		},
-		["Mage Armor"] = {
+		["Dark Iron Destroyer"] = {
 			["spells"] = {
-				[27125] = 135991,
-				[22782] = 135991,
-				[6117] = 135991,
-				[22783] = 135991,
+				[20897] = 136192,
 			},
 		},
 		["Storms Deck"] = {
@@ -86653,9 +86608,9 @@ WeakAurasOptionsSaved = {
 				[5] = 136133,
 			},
 		},
-		["Black War Wolf"] = {
+		["Increased Frost Resist 26"] = {
 			["spells"] = {
-				[22724] = 132224,
+				[14564] = 136235,
 			},
 		},
 		["Summon Golden Pig"] = {
@@ -86673,9 +86628,9 @@ WeakAurasOptionsSaved = {
 				[29099] = 136235,
 			},
 		},
-		["Summon Cornish Rex"] = {
+		["Immune Fear/Polymorph/Snare"] = {
 			["spells"] = {
-				[10674] = 132311,
+				[23274] = 135894,
 			},
 		},
 		["Improved Arcane Shot"] = {
@@ -86692,25 +86647,25 @@ WeakAurasOptionsSaved = {
 				[32601] = 132308,
 			},
 		},
-		["Call of Eskhandar"] = {
+		["Pip is Quickwit"] = {
 			["spells"] = {
-				[22648] = 134176,
+				[16710] = 136235,
 			},
 		},
-		["Arcane Mantle of the Dawn"] = {
+		["Perm. Illusion Shade"] = {
 			["spells"] = {
-				[22598] = 135987,
+				[8357] = 132311,
 			},
 		},
-		["Glowy (Green)"] = {
+		["Toxic Spit"] = {
 			["spells"] = {
-				[22577] = 135741,
+				[7951] = 136016,
+				[19452] = 136016,
 			},
 		},
-		["Sense Undead"] = {
+		["Summon Ouro Trigger"] = {
 			["spells"] = {
-				[5502] = 135974,
-				[5503] = 135974,
+				[26284] = 136235,
 			},
 		},
 		["Ghost Walk"] = {
@@ -86718,14 +86673,18 @@ WeakAurasOptionsSaved = {
 				[30424] = 135898,
 			},
 		},
-		["Maim"] = {
+		["Freezing Trap Effect"] = {
 			["spells"] = {
-				[22570] = 132134,
+				[3355] = 135834,
+				[14309] = 135834,
+				[14308] = 135834,
+				[31932] = 135834,
 			},
 		},
-		["Long Silken Cloak"] = {
+		["Vicious Bite"] = {
 			["spells"] = {
-				[3861] = 132149,
+				[19319] = 132278,
+				[34351] = 132278,
 			},
 		},
 		["Arlokk Transform"] = {
@@ -86733,9 +86692,20 @@ WeakAurasOptionsSaved = {
 				[24190] = 136172,
 			},
 		},
-		["Increased Shadow Resist 34"] = {
+		["Lesser Healing Wave"] = {
 			["spells"] = {
-				[14703] = 136235,
+				[28849] = 136052,
+				[44256] = 136043,
+				[10467] = 136043,
+				[27624] = 136043,
+				[8004] = 136043,
+				[46181] = 136043,
+				[28850] = 133439,
+				[25420] = 136043,
+				[8008] = 136043,
+				[10466] = 136043,
+				[10468] = 136043,
+				[8010] = 136043,
 			},
 		},
 		["Plunging Blade into Onyxia"] = {
@@ -86767,24 +86737,25 @@ WeakAurasOptionsSaved = {
 				[3172] = 136235,
 			},
 		},
-		["Deadly Toxin IV"] = {
+		["Creeping Mold"] = {
 			["spells"] = {
-				[11469] = 132290,
+				[6278] = 136134,
+				[18289] = 135914,
 			},
 		},
-		["Purple Hands"] = {
+		["Forsaken Skill: Shadow"] = {
 			["spells"] = {
-				[22313] = 136208,
+				[7053] = 136123,
 			},
 		},
-		["Orcish War Leggings"] = {
+		["Evil Intellect"] = {
 			["spells"] = {
-				[9957] = 136192,
+				[6558] = 135740,
 			},
 		},
-		["Minor Health"] = {
+		["Beastslayer"] = {
 			["spells"] = {
-				[7419] = 136235,
+				[7784] = 136235,
 			},
 		},
 		["Altered Cauldron Toxin"] = {
@@ -86792,9 +86763,12 @@ WeakAurasOptionsSaved = {
 				[17650] = 135903,
 			},
 		},
-		["Cowardly Flight"] = {
+		["Reflection"] = {
 			["spells"] = {
-				[6614] = 136129,
+				[22067] = 136222,
+				[27564] = 136222,
+				[30969] = 136222,
+				[9906] = 136222,
 			},
 		},
 		["Dimensional Ripper - Everlook"] = {
@@ -86802,9 +86776,9 @@ WeakAurasOptionsSaved = {
 				[23486] = 136235,
 			},
 		},
-		["Charge Stave of Equinex"] = {
+		["Inlaid Malachite Ring"] = {
 			["spells"] = {
-				[11537] = 136235,
+				[25283] = 136235,
 			},
 		},
 		["Capture Spirit"] = {
@@ -86817,14 +86791,16 @@ WeakAurasOptionsSaved = {
 				[34181] = 136181,
 			},
 		},
-		["Conjure Stormpike Rank 6 Insignia DND"] = {
+		["Brood Power: Blue"] = {
 			["spells"] = {
-				[22119] = 136235,
+				[22559] = 136010,
+				[22290] = 136010,
+				[39037] = 136010,
 			},
 		},
-		["Conjure Stormpike Rank 5 Insignia DND"] = {
+		["Skeletal Horse"] = {
 			["spells"] = {
-				[22118] = 136235,
+				[8980] = 132264,
 			},
 		},
 		["Shadow Rush"] = {
@@ -86842,9 +86818,51 @@ WeakAurasOptionsSaved = {
 				[21427] = 136235,
 			},
 		},
-		["Conjure Frostwolf Rank 6 Insignia DND"] = {
+		["Drain Life"] = {
 			["spells"] = {
-				[22113] = 136235,
+				[24585] = 136169,
+				[20743] = 136169,
+				[11699] = 136169,
+				[27994] = 136169,
+				[11700] = 136169,
+				[34696] = 136169,
+				[36655] = 136169,
+				[358742] = 136169,
+				[16414] = 136169,
+				[18557] = 136169,
+				[17173] = 136169,
+				[44294] = 136169,
+				[16608] = 136169,
+				[38817] = 136169,
+				[7651] = 136169,
+				[18817] = 136169,
+				[26693] = 136169,
+				[24300] = 136169,
+				[699] = 136169,
+				[24618] = 136169,
+				[16375] = 136169,
+				[709] = 136169,
+				[36825] = 136169,
+				[46466] = 136169,
+				[24435] = 136169,
+				[46155] = 136169,
+				[12693] = 136169,
+				[39676] = 136169,
+				[46291] = 136169,
+				[37992] = 136169,
+				[21170] = 136169,
+				[27219] = 136169,
+				[27220] = 136169,
+				[36224] = 136169,
+				[18084] = 136169,
+				[17620] = 136169,
+				[34107] = 136169,
+				[18815] = 136235,
+				[30412] = 136169,
+				[29155] = 136169,
+				[17238] = 136169,
+				[35748] = 136169,
+				[689] = 136169,
 			},
 		},
 		["Cosmetic - Legion Ring - Shivan Stasis"] = {
@@ -86881,9 +86899,9 @@ WeakAurasOptionsSaved = {
 				[19813] = 132219,
 			},
 		},
-		["Conjure Frostwolf Rank 4 Insignia DND"] = {
+		["Potion of Curing"] = {
 			["spells"] = {
-				[22111] = 136235,
+				[3174] = 136240,
 			},
 		},
 		["Blast of Aman'Thul"] = {
@@ -86891,11 +86909,10 @@ WeakAurasOptionsSaved = {
 				[30605] = 135753,
 			},
 		},
-		["Earth Elemental Totem"] = {
+		["Sweep"] = {
 			["spells"] = {
-				[2062] = 136024,
-				[33663] = 136024,
-				[44130] = 135824,
+				[26103] = 136104,
+				[37474] = 132325,
 			},
 		},
 		["Atiesh Priest Damage/Healing"] = {
@@ -86903,20 +86920,65 @@ WeakAurasOptionsSaved = {
 				[28155] = 136235,
 			},
 		},
-		["Armor"] = {
+		["Firebolt"] = {
 			["spells"] = {
-				[8094] = 132341,
-				[8091] = 132341,
-				[11349] = 134866,
-				[8095] = 132341,
-				[12175] = 132341,
-				[33079] = 132341,
-				[3220] = 134866,
+				[7802] = 135809,
+				[27484] = 135809,
+				[7834] = 135809,
+				[27487] = 135809,
+				[23267] = 135807,
+				[7835] = 135809,
+				[44577] = 135809,
+				[11763] = 135809,
+				[11764] = 135809,
+				[20312] = 135809,
+				[11765] = 135809,
+				[20314] = 135809,
+				[9057] = 135807,
+				[20316] = 135809,
+				[18112] = 135810,
+				[7886] = 135809,
+				[13441] = 135807,
+				[14103] = 135810,
+				[13442] = 135810,
+				[18187] = 135807,
+				[3110] = 135809,
+				[701] = 135810,
+				[39022] = 135809,
+				[46044] = 135809,
+				[44164] = 135809,
+				[27267] = 135809,
+				[43584] = 135809,
+				[39023] = 135809,
+				[38239] = 135809,
+				[20801] = 135809,
+				[36905] = 135809,
+				[36227] = 135797,
+				[15592] = 135810,
+				[18833] = 135807,
+				[30180] = 135809,
+				[36906] = 135809,
+				[30050] = 135809,
+				[20315] = 135809,
+				[7799] = 135809,
+				[18083] = 135807,
+				[9233] = 135934,
+				[11762] = 135809,
+				[18086] = 135810,
+				[20313] = 135809,
+				[15598] = 135807,
+				[15599] = 135934,
+				[7832] = 135809,
+				[7800] = 135809,
+				[7801] = 135809,
+				[20270] = 135809,
+				[7833] = 135809,
+				[18186] = 135934,
 			},
 		},
-		["Conjure Frostwolf Rank 1 Insignia DND"] = {
+		["Enchant Shield - Greater Spirit"] = {
 			["spells"] = {
-				[22108] = 136235,
+				[13905] = 135913,
 			},
 		},
 		["Chilled"] = {
@@ -86944,15 +87006,19 @@ WeakAurasOptionsSaved = {
 				[8172] = 136019,
 			},
 		},
-		["Improved Power Word: Fortitude"] = {
+		["Improved Seal of Righteousness"] = {
 			["spells"] = {
-				[14749] = 135987,
-				[14767] = 135987,
+				[20224] = 132325,
+				[20330] = 132325,
+				[20331] = 132325,
+				[20332] = 132325,
+				[43743] = 136030,
+				[20225] = 132325,
 			},
 		},
-		["QAEnchant Boots +5 Spirit"] = {
+		["Enervate"] = {
 			["spells"] = {
-				[22102] = 135913,
+				[22661] = 132105,
 			},
 		},
 		["Romulo's Poison"] = {
@@ -86961,9 +87027,9 @@ WeakAurasOptionsSaved = {
 				[34587] = 135990,
 			},
 		},
-		["Nefarius Attack 000"] = {
+		["Increased Agility 35"] = {
 			["spells"] = {
-				[16070] = 136096,
+				[14399] = 136235,
 			},
 		},
 		["Redeemed Soul Wristguards"] = {
@@ -86991,10 +87057,9 @@ WeakAurasOptionsSaved = {
 				[31475] = 134310,
 			},
 		},
-		["Netherwind Focus"] = {
+		["Fire Oil"] = {
 			["spells"] = {
-				[22007] = 136235,
-				[22008] = 136222,
+				[7837] = 136235,
 			},
 		},
 		["Increased All Resist 10"] = {
@@ -87003,14 +87068,35 @@ WeakAurasOptionsSaved = {
 				[41838] = 136235,
 			},
 		},
-		["Corrupt Forces of Nature"] = {
+		["Battle Shout"] = {
 			["spells"] = {
-				[21968] = 136036,
+				[24438] = 132333,
+				[5242] = 132333,
+				[9128] = 132333,
+				[26099] = 132333,
+				[42247] = 132333,
+				[6192] = 132333,
+				[2048] = 132333,
+				[6673] = 132333,
+				[11549] = 132333,
+				[26043] = 132333,
+				[27578] = 132333,
+				[30833] = 132333,
+				[11550] = 132333,
+				[38232] = 132333,
+				[32064] = 132333,
+				[31403] = 132333,
+				[25101] = 132333,
+				[30635] = 132333,
+				[30931] = 132333,
+				[46763] = 132333,
+				[25289] = 132333,
+				[11551] = 132333,
 			},
 		},
-		["Dragonstalker B"] = {
+		["Teleport Barracks"] = {
 			["spells"] = {
-				[21966] = 136095,
+				[443] = 136235,
 			},
 		},
 		["Lathoric the Black"] = {
@@ -87042,10 +87128,9 @@ WeakAurasOptionsSaved = {
 				[8117] = 135879,
 			},
 		},
-		["Physical Protection"] = {
+		["Dodge Mastery"] = {
 			["spells"] = {
-				[21956] = 135893,
-				[34206] = 132270,
+				[2118] = 136047,
 			},
 		},
 		["Elekk Dispersion Ray"] = {
@@ -87063,24 +87148,34 @@ WeakAurasOptionsSaved = {
 				[29361] = 136235,
 			},
 		},
-		["Create Scepter of Celebras"] = {
+		["Summon Burning Felhound"] = {
 			["spells"] = {
-				[21939] = 136235,
+				[16002] = 135805,
 			},
 		},
-		["Lava Spout Totem Passive"] = {
+		["Freezing Trap"] = {
 			["spells"] = {
-				[8266] = 135826,
+				[14310] = 135834,
+				[43447] = 135834,
+				[32419] = 135834,
+				[43448] = 135834,
+				[31933] = 135834,
+				[14311] = 135834,
+				[1499] = 135834,
+				[41085] = 135834,
+				[27753] = 135834,
+				[44136] = 135834,
+				[37368] = 135834,
 			},
 		},
-		["Frost Power"] = {
+		["Projection"] = {
 			["spells"] = {
-				[21920] = 134714,
+				[7765] = 136235,
 			},
 		},
-		["Attack Power 36"] = {
+		["Increased Frost Resist 39"] = {
 			["spells"] = {
-				[14089] = 136235,
+				[14578] = 136235,
 			},
 		},
 		["Increased Area"] = {
@@ -87093,14 +87188,14 @@ WeakAurasOptionsSaved = {
 				[17824] = 136235,
 			},
 		},
-		["GM Only OFF"] = {
+		["Dismember"] = {
 			["spells"] = {
-				[1509] = 132349,
+				[96] = 132090,
 			},
 		},
-		["Create Nimboya's Laden Pike"] = {
+		["Summon Images"] = {
 			["spells"] = {
-				[18887] = 135128,
+				[747] = 136235,
 			},
 		},
 		["Wound Poison III"] = {
@@ -87113,19 +87208,20 @@ WeakAurasOptionsSaved = {
 				[25614] = 136235,
 			},
 		},
-		["Summon Lava Burst F"] = {
+		["Increase Healing 20"] = {
 			["spells"] = {
-				[21904] = 136235,
+				[9407] = 136235,
+				[27925] = 136235,
 			},
 		},
-		["Open Wound Effect"] = {
+		["Increase Healing 2"] = {
 			["spells"] = {
-				[4244] = 136168,
+				[7675] = 136235,
 			},
 		},
-		["Increase Fire Dam 40"] = {
+		["Bind Draconic For Dummies"] = {
 			["spells"] = {
-				[17875] = 136235,
+				[25719] = 136235,
 			},
 		},
 		["Rift Beacon"] = {
@@ -87133,13 +87229,9 @@ WeakAurasOptionsSaved = {
 				[9614] = 136006,
 			},
 		},
-		["Improved Chain Heal"] = {
+		["Goblin Mining Helmet"] = {
 			["spells"] = {
-				[30872] = 136042,
-				[21899] = 136235,
-				[38435] = 136235,
-				[38322] = 136052,
-				[30873] = 136042,
+				[12717] = 136235,
 			},
 		},
 		["QAEnchant Ring +4 Stats"] = {
@@ -87147,25 +87239,25 @@ WeakAurasOptionsSaved = {
 				[36284] = 135913,
 			},
 		},
-		["Collect Orange Crystal Liquid"] = {
+		["Increased Shadow Resist 18"] = {
 			["spells"] = {
-				[21884] = 136235,
+				[14681] = 136235,
 			},
 		},
-		["Judgement Smite"] = {
+		["Mechanical Squirrel"] = {
 			["spells"] = {
-				[21882] = 135880,
-				[21889] = 136235,
+				[3928] = 136235,
+				[4055] = 136172,
 			},
 		},
-		["Evasion TEST"] = {
+		["Opening Dark Coffer"] = {
 			["spells"] = {
-				[21878] = 136205,
+				[13564] = 136235,
 			},
 		},
-		["Increased Rejuvenation Duration"] = {
+		["Enchant Weapon - Greater Striking"] = {
 			["spells"] = {
-				[21871] = 136081,
+				[13943] = 135913,
 			},
 		},
 		["Super Invis"] = {
@@ -87173,46 +87265,20 @@ WeakAurasOptionsSaved = {
 				[8149] = 135994,
 			},
 		},
-		["Light of Elune"] = {
+		["Barbaric Leggings"] = {
 			["spells"] = {
-				[6724] = 135954,
+				[7149] = 136247,
 			},
 		},
-		["Dust Field"] = {
+		["Withering Poison"] = {
 			["spells"] = {
-				[41981] = 136018,
-				[21909] = 136018,
-				[21868] = 136018,
-				[41982] = 136018,
+				[13884] = 136016,
+				[38864] = 134717,
 			},
 		},
-		["Haste"] = {
+		["Opal Necklace of Impact"] = {
 			["spells"] = {
-				[33807] = 132369,
-				[29413] = 132208,
-				[28701] = 136075,
-				[14824] = 132208,
-				[29416] = 132208,
-				[37163] = 136075,
-				[14825] = 132208,
-				[37165] = 136235,
-				[29418] = 132208,
-				[14826] = 132208,
-				[37728] = 136047,
-				[35776] = 136011,
-				[13494] = 136047,
-				[28507] = 134730,
-				[14828] = 132208,
-				[65] = 136047,
-				[43242] = 135788,
-				[34775] = 132294,
-				[14829] = 132208,
-				[29417] = 132208,
-				[29415] = 132208,
-				[21165] = 136047,
-				[29414] = 132208,
-				[13533] = 136047,
-				[14827] = 132208,
+				[26897] = 136235,
 			},
 		},
 		["Huge Snowball"] = {
@@ -87225,10 +87291,9 @@ WeakAurasOptionsSaved = {
 				[19771] = 132155,
 			},
 		},
-		["Lava Shield"] = {
+		["Radiation Poisoning"] = {
 			["spells"] = {
-				[21857] = 135817,
-				[21858] = 135817,
+				[11638] = 136133,
 			},
 		},
 		["Notify Medivh of Arcanagos' Flee"] = {
@@ -87236,9 +87301,9 @@ WeakAurasOptionsSaved = {
 				[30985] = 136235,
 			},
 		},
-		["Bark of Doom"] = {
+		["Increase Fire Dam 11"] = {
 			["spells"] = {
-				[2816] = 136235,
+				[9399] = 136235,
 			},
 		},
 		["Land Mine Arming"] = {
@@ -87257,9 +87322,9 @@ WeakAurasOptionsSaved = {
 				[43885] = 136235,
 			},
 		},
-		["Skin of Rock"] = {
+		["Test Strike"] = {
 			["spells"] = {
-				[3574] = 132154,
+				[24393] = 132355,
 			},
 		},
 		["Aspect of the Wild"] = {
@@ -87269,37 +87334,32 @@ WeakAurasOptionsSaved = {
 				[20043] = 136074,
 			},
 		},
-		["Twisted Tranquility"] = {
+		["Increase Holy Dam 37"] = {
 			["spells"] = {
-				[21793] = 136107,
+				[21524] = 136235,
 			},
 		},
-		["Surge"] = {
+		["Attach Shaft to Medallion"] = {
 			["spells"] = {
-				[19196] = 132337,
-				[44019] = 132212,
-				[34645] = 132337,
-				[25787] = 132337,
-				[38044] = 135850,
-				[42402] = 132337,
-				[44960] = 132212,
-				[33970] = 132337,
-				[32012] = 132337,
+				[9595] = 135138,
 			},
 		},
-		["Summon White Plymouth Rock"] = {
+		["Forsaken Skill: 2H Maces"] = {
 			["spells"] = {
-				[10687] = 132311,
+				[7046] = 133040,
 			},
 		},
-		["Conjure Ichman's Beacon DND"] = {
+		["Rend Flesh"] = {
 			["spells"] = {
-				[21731] = 136235,
+				[3147] = 132152,
+				[42397] = 132141,
 			},
 		},
-		["Add Fire Dam - Weap 08"] = {
+		["Summon Voidwalkers"] = {
 			["spells"] = {
-				[7723] = 136235,
+				[15093] = 136221,
+				[15092] = 136221,
+				[15094] = 136221,
 			},
 		},
 		["LeCraft Test Spell"] = {
@@ -87308,9 +87368,10 @@ WeakAurasOptionsSaved = {
 				[33153] = 136194,
 			},
 		},
-		["Increased Shadow Resist 31"] = {
+		["Simple Teleport Group"] = {
 			["spells"] = {
-				[14694] = 136235,
+				[7078] = 135994,
+				[7143] = 135994,
 			},
 		},
 		["Shadow Bolt"] = {
@@ -87417,15 +87478,15 @@ WeakAurasOptionsSaved = {
 				[17324] = 136235,
 			},
 		},
-		["Planting Ryson's Beacon"] = {
+		["Increased Intellect 06"] = {
 			["spells"] = {
-				[21537] = 136235,
-				[21538] = 136235,
+				[7496] = 136235,
+				[41636] = 136235,
 			},
 		},
-		["Increase Holy Dam 51"] = {
+		["MACESTAFFSPECIAL (DND)"] = {
 			["spells"] = {
-				[21534] = 136235,
+				[3440] = 132325,
 			},
 		},
 		["Force of Will"] = {
@@ -87439,14 +87500,14 @@ WeakAurasOptionsSaved = {
 				[15595] = 133276,
 			},
 		},
-		["Increase Holy Dam 43"] = {
+		["Leper Cure!"] = {
 			["spells"] = {
-				[21528] = 136235,
+				[11534] = 135907,
 			},
 		},
-		["Increase Holy Dam 40"] = {
+		["Stilled"] = {
 			["spells"] = {
-				[21526] = 136235,
+				[14775] = 136018,
 			},
 		},
 		["Path of the Berserker"] = {
@@ -87460,43 +87521,87 @@ WeakAurasOptionsSaved = {
 				[38815] = 136120,
 			},
 		},
-		["Kodo Bones Trap"] = {
+		["Dispel Poison"] = {
 			["spells"] = {
-				[17960] = 136235,
+				[21954] = 135949,
 			},
 		},
-		["Goblin Rocket Helmet"] = {
+		["Crimson Silk Vest"] = {
 			["spells"] = {
-				[12758] = 136235,
-				[13821] = 135805,
+				[8791] = 132149,
 			},
 		},
-		["Shred"] = {
+		["MHTest02 Effect"] = {
 			["spells"] = {
-				[5221] = 136231,
-				[27555] = 132122,
-				[9829] = 136231,
-				[6800] = 136231,
-				[27001] = 136231,
-				[3252] = 132152,
-				[27002] = 136231,
-				[9830] = 136231,
-				[8992] = 136231,
+				[19109] = 132350,
 			},
 		},
-		["Increase Holy Dam 19"] = {
+		["Hide"] = {
 			["spells"] = {
-				[21511] = 136235,
+				[6920] = 132320,
 			},
 		},
-		["Felcloth Robe"] = {
+		["Rapid Fire"] = {
 			["spells"] = {
-				[18451] = 132149,
+				[28755] = 136235,
+				[36828] = 132208,
+				[3045] = 132208,
 			},
 		},
-		["Increased Block 30"] = {
+		["Increased Defense"] = {
 			["spells"] = {
-				[21490] = 136235,
+				[41726] = 136235,
+				[24774] = 136235,
+				[24775] = 136235,
+				[14249] = 136235,
+				[41864] = 136235,
+				[41681] = 136235,
+				[352511] = 136235,
+				[352336] = 136235,
+				[21417] = 136235,
+				[41642] = 136235,
+				[18369] = 136235,
+				[41671] = 136235,
+				[41774] = 136235,
+				[41641] = 136235,
+				[13385] = 136235,
+				[18185] = 136235,
+				[7513] = 136235,
+				[41847] = 136235,
+				[13390] = 136235,
+				[21421] = 136235,
+				[21415] = 136235,
+				[21419] = 136235,
+				[7511] = 136235,
+				[13389] = 136235,
+				[21407] = 136235,
+				[21408] = 136235,
+				[18196] = 136235,
+				[21410] = 136235,
+				[21411] = 136235,
+				[21412] = 136235,
+				[21413] = 136235,
+				[21414] = 136235,
+				[13387] = 136235,
+				[21416] = 136235,
+				[13388] = 136235,
+				[21418] = 136235,
+				[17513] = 136235,
+				[21420] = 136235,
+				[7515] = 136235,
+				[21422] = 136235,
+				[21423] = 136235,
+				[21424] = 136235,
+				[7516] = 136235,
+				[13383] = 136235,
+				[15804] = 136235,
+				[13384] = 136235,
+				[7517] = 136235,
+				[7514] = 136235,
+				[30503] = 136235,
+				[21409] = 136235,
+				[7518] = 136235,
+				[13386] = 136235,
 			},
 		},
 		["Ancient Hysteria"] = {
@@ -87516,9 +87621,9 @@ WeakAurasOptionsSaved = {
 				[22371] = 136020,
 			},
 		},
-		["Whirring Bronze Gizmo"] = {
+		["Increased All Resist 14"] = {
 			["spells"] = {
-				[3942] = 136235,
+				[18685] = 136235,
 			},
 		},
 		["Force Reactive Disk Visual"] = {
@@ -87531,14 +87636,15 @@ WeakAurasOptionsSaved = {
 				[23719] = 136012,
 			},
 		},
-		["Increased Nature Resist 16"] = {
+		["Weak Poison"] = {
 			["spells"] = {
-				[14637] = 136235,
+				[6751] = 136016,
 			},
 		},
-		["Increased Block 8"] = {
+		["Remote Detonate"] = {
 			["spells"] = {
-				[21472] = 136235,
+				[6627] = 134458,
+				[6656] = 134458,
 			},
 		},
 		["Control Robot"] = {
@@ -87546,9 +87652,19 @@ WeakAurasOptionsSaved = {
 				[29989] = 133001,
 			},
 		},
-		["Increased Block 1"] = {
+		["Healing Potion"] = {
 			["spells"] = {
-				[21469] = 136235,
+				[440] = 136235,
+				[441] = 136235,
+				[41619] = 136235,
+				[3447] = 136235,
+				[2024] = 136235,
+				[41620] = 136235,
+				[28495] = 136235,
+				[4042] = 136235,
+				[40535] = 135915,
+				[439] = 136235,
+				[17534] = 136235,
 			},
 		},
 		["QA DoT Debug 500"] = {
@@ -87606,14 +87722,15 @@ WeakAurasOptionsSaved = {
 				[47361] = 136235,
 			},
 		},
-		["Attack Power Ranged 74"] = {
+		["Self Destruct"] = {
 			["spells"] = {
-				[21455] = 136235,
+				[9874] = 135826,
+				[9879] = 135826,
 			},
 		},
-		["Emberseer Full Strength"] = {
+		["Chimeric Vest"] = {
 			["spells"] = {
-				[16047] = 135805,
+				[19081] = 136235,
 			},
 		},
 		["Nature Protection Potion"] = {
@@ -87621,9 +87738,9 @@ WeakAurasOptionsSaved = {
 				[7259] = 136235,
 			},
 		},
-		["Attack Power Ranged 65"] = {
+		["Gray Woolen Shirt"] = {
 			["spells"] = {
-				[21451] = 136235,
+				[2406] = 132149,
 			},
 		},
 		["Disable Square, Self (DND)"] = {
@@ -87654,9 +87771,10 @@ WeakAurasOptionsSaved = {
 				[16844] = 135818,
 			},
 		},
-		["Attack Power Ranged 43"] = {
+		["Improved Shield Wall"] = {
 			["spells"] = {
-				[21443] = 136235,
+				[12312] = 132362,
+				[12803] = 132362,
 			},
 		},
 		["Torch Toss (land)"] = {
@@ -87670,9 +87788,9 @@ WeakAurasOptionsSaved = {
 				[26123] = 136235,
 			},
 		},
-		["Attack Power Ranged 29"] = {
+		["Pink Mageweave Shirt"] = {
 			["spells"] = {
-				[21437] = 136235,
+				[12080] = 132149,
 			},
 		},
 		["Gem of the Serpent"] = {
@@ -87680,14 +87798,14 @@ WeakAurasOptionsSaved = {
 				[19470] = 136235,
 			},
 		},
-		["Thorium Tube"] = {
+		["Argus Shadow Mage Transform"] = {
 			["spells"] = {
-				[19795] = 136235,
+				[4063] = 136230,
 			},
 		},
-		["Attack Power Ranged 17"] = {
+		["Tasty Lion Steak"] = {
 			["spells"] = {
-				[21432] = 136235,
+				[3399] = 136192,
 			},
 		},
 		["Force Wisp Flight Missile"] = {
@@ -87695,9 +87813,9 @@ WeakAurasOptionsSaved = {
 				[46603] = 136235,
 			},
 		},
-		["Attack Power Ranged 12"] = {
+		["Goblin \"Boom\" Box"] = {
 			["spells"] = {
-				[21430] = 136235,
+				[12720] = 136235,
 			},
 		},
 		["Flask of Distilled Wisdom"] = {
@@ -87705,14 +87823,14 @@ WeakAurasOptionsSaved = {
 				[17636] = 136235,
 			},
 		},
-		["Attack Power Ranged 2"] = {
+		["Increased Agility 16"] = {
 			["spells"] = {
-				[21426] = 136235,
+				[14330] = 136235,
 			},
 		},
-		["Conjure Mulverick's Beacon DND"] = {
+		["Language Demon Tongue"] = {
 			["spells"] = {
-				[21372] = 136235,
+				[815] = 136235,
 			},
 		},
 		["Suffering"] = {
@@ -87740,10 +87858,9 @@ WeakAurasOptionsSaved = {
 				[18389] = 136115,
 			},
 		},
-		["Improved Prayer of Healing"] = {
+		["Azrethoc's Stomp"] = {
 			["spells"] = {
-				[21339] = 136235,
-				[37564] = 136235,
+				[7961] = 132368,
 			},
 		},
 		["Netherstrike Breastplate"] = {
@@ -87756,10 +87873,9 @@ WeakAurasOptionsSaved = {
 				[16890] = 134859,
 			},
 		},
-		["Reactive Mana"] = {
+		["Frostsaber Gloves"] = {
 			["spells"] = {
-				[21334] = 136235,
-				[21959] = 135932,
+				[19087] = 136235,
 			},
 		},
 		["Myzrael Earthquake"] = {
@@ -87767,47 +87883,52 @@ WeakAurasOptionsSaved = {
 				[4938] = 136025,
 			},
 		},
-		["Increased Stamina 14"] = {
+		["Increased Fire Resist 28"] = {
 			["spells"] = {
-				[9265] = 136235,
+				[14608] = 136235,
 			},
 		},
-		["Evolving Ectoplasm (Red)"] = {
+		["Dragonscale Gauntlets"] = {
 			["spells"] = {
-				[7943] = 135824,
+				[10619] = 136247,
 			},
 		},
-		["Gryphon Wing Flap"] = {
+		["Earthen Sigil"] = {
 			["spells"] = {
-				[21189] = 136022,
+				[24884] = 136057,
 			},
 		},
-		["Atal'ai Altar Light Visual (DND)"] = {
+		["Weakened Soul"] = {
 			["spells"] = {
-				[12348] = 136235,
+				[6788] = 135871,
 			},
 		},
-		["Debuff Holy Resist (TEST)"] = {
+		["Scorpid Sample"] = {
 			["spells"] = {
-				[3719] = 136235,
+				[11761] = 136235,
 			},
 		},
-		["Silvered Bronze Breastplate"] = {
+		["Corrupt Forces of Nature"] = {
 			["spells"] = {
-				[2673] = 136192,
+				[21968] = 136036,
 			},
 		},
-		["Flame Burst"] = {
+		["Rampage"] = {
 			["spells"] = {
-				[41126] = 135787,
-				[6305] = 135826,
-				[41131] = 135787,
+				[30030] = 132352,
+				[30031] = 132352,
+				[29801] = 132352,
+				[30033] = 132352,
+				[8285] = 136063,
+				[25744] = 132337,
+				[30029] = 132352,
+				[30032] = 132352,
 			},
 		},
-		["Ram Riding"] = {
+		["Healing Prayers"] = {
 			["spells"] = {
-				[826] = 136103,
-				[6744] = 136103,
+				[14911] = 135943,
+				[15018] = 135943,
 			},
 		},
 		["Attack Power - Feral (+0712)"] = {
@@ -87836,9 +87957,9 @@ WeakAurasOptionsSaved = {
 				[14552] = 136235,
 			},
 		},
-		["Attack Power 02"] = {
+		["Portal: Orgrimmar"] = {
 			["spells"] = {
-				[9136] = 136235,
+				[11417] = 135744,
 			},
 		},
 		["Enchant Shield - Greater Stamina"] = {
@@ -87846,18 +87967,20 @@ WeakAurasOptionsSaved = {
 				[20017] = 135913,
 			},
 		},
-		["Portal: Orgrimmar"] = {
+		["Speed"] = {
 			["spells"] = {
-				[11417] = 135744,
+				[22863] = 132307,
+				[23978] = 132870,
+				[23451] = 132870,
+				[17498] = 132307,
+				[14530] = 132307,
+				[2379] = 132219,
 			},
 		},
-		["Infected Wound"] = {
+		["Hallow's End Fright"] = {
 			["spells"] = {
-				[17230] = 136066,
-				[29306] = 136066,
-				[29307] = 136066,
-				[3427] = 136066,
-				[31282] = 136066,
+				[25022] = 135842,
+				[25023] = 135842,
 			},
 		},
 		["Akama Teleport"] = {
@@ -87865,9 +87988,9 @@ WeakAurasOptionsSaved = {
 				[41077] = 136235,
 			},
 		},
-		["Manastorm"] = {
+		["Hold Rifle"] = {
 			["spells"] = {
-				[21097] = 135857,
+				[16723] = 132222,
 			},
 		},
 		["Burning Ravaged Cadaver"] = {
@@ -87875,9 +87998,9 @@ WeakAurasOptionsSaved = {
 				[16146] = 135817,
 			},
 		},
-		["Improved Fortitude"] = {
+		["Robe of Power"] = {
 			["spells"] = {
-				[21093] = 135753,
+				[8770] = 132149,
 			},
 		},
 		["Venomous Bite"] = {
@@ -87885,10 +88008,9 @@ WeakAurasOptionsSaved = {
 				[32739] = 136016,
 			},
 		},
-		["Improved Arcane Intellect"] = {
+		["Small Silk Pack"] = {
 			["spells"] = {
-				[21088] = 135753,
-				[24489] = 136235,
+				[3813] = 136249,
 			},
 		},
 		["Increase Frost Dam 53"] = {
@@ -87913,9 +88035,9 @@ WeakAurasOptionsSaved = {
 				[4524] = 135826,
 			},
 		},
-		["Increased Offhand Damage 10"] = {
+		["Nightscape Boots"] = {
 			["spells"] = {
-				[21012] = 136235,
+				[10558] = 136247,
 			},
 		},
 		["Receive Quest Object, Undercity Guard"] = {
@@ -87923,9 +88045,9 @@ WeakAurasOptionsSaved = {
 				[27515] = 136235,
 			},
 		},
-		["Giantstalker A"] = {
+		["Summon Angry Programmer"] = {
 			["spells"] = {
-				[20987] = 136095,
+				[897] = 136235,
 			},
 		},
 		["Master Buff (Melee)"] = {
@@ -87953,9 +88075,9 @@ WeakAurasOptionsSaved = {
 				[32918] = 132203,
 			},
 		},
-		["Ward of Laze"] = {
+		["Great Rage Potion"] = {
 			["spells"] = {
-				[3827] = 136232,
+				[6618] = 136235,
 			},
 		},
 		["Meat Slap"] = {
@@ -87963,9 +88085,10 @@ WeakAurasOptionsSaved = {
 				[37597] = 133970,
 			},
 		},
-		["Thorns Dmg +2"] = {
+		["Green Mechanostrider"] = {
 			["spells"] = {
-				[20887] = 136051,
+				[15780] = 132247,
+				[17453] = 132247,
 			},
 		},
 		["Scaled Draenic Pants"] = {
@@ -87978,9 +88101,15 @@ WeakAurasOptionsSaved = {
 				[23801] = 135913,
 			},
 		},
-		["Fiery Chain Girdle"] = {
+		["Fire Strike"] = {
 			["spells"] = {
-				[20872] = 136192,
+				[7716] = 136197,
+				[7718] = 136197,
+				[7715] = 136197,
+				[7717] = 136197,
+				[7712] = 136197,
+				[7714] = 136197,
+				[7719] = 136197,
 			},
 		},
 		["Increase Fire Dam 44"] = {
@@ -87998,9 +88127,10 @@ WeakAurasOptionsSaved = {
 				[9798] = 136133,
 			},
 		},
-		["Demon Slaying 30"] = {
+		["Thorium Grenade"] = {
 			["spells"] = {
-				[20858] = 136172,
+				[19769] = 135826,
+				[19790] = 136235,
 			},
 		},
 		["Ghost"] = {
@@ -88015,12 +88145,9 @@ WeakAurasOptionsSaved = {
 				[16460] = 136067,
 			},
 		},
-		["Ruthlessness"] = {
+		["Receive Quest Object, Common, Ironforge"] = {
 			["spells"] = {
-				[14157] = 136235,
-				[14156] = 132122,
-				[14161] = 132122,
-				[14160] = 132122,
+				[27520] = 136235,
 			},
 		},
 		["Lightning Speed"] = {
@@ -88028,24 +88155,32 @@ WeakAurasOptionsSaved = {
 				[28093] = 136111,
 			},
 		},
-		["Vampiric Aura"] = {
+		["Quickness"] = {
 			["spells"] = {
-				[34929] = 136231,
-				[31285] = 136231,
-				[38196] = 136231,
-				[38061] = 136231,
-				[31317] = 136231,
-				[20810] = 136231,
+				[4281] = 136057,
+				[20582] = 132279,
 			},
 		},
-		["Green Silk Pack"] = {
+		["Arcane Mastery"] = {
 			["spells"] = {
-				[6693] = 136249,
+				[16737] = 136183,
+				[16738] = 136183,
+				[16734] = 136183,
+				[16735] = 136183,
+				[16736] = 136183,
 			},
 		},
-		["Increased Frost Resist 24"] = {
+		["Mend Pet"] = {
 			["spells"] = {
-				[14581] = 136235,
+				[3661] = 132179,
+				[3662] = 132179,
+				[33976] = 132179,
+				[27046] = 132179,
+				[13542] = 132179,
+				[13544] = 132179,
+				[3111] = 132179,
+				[136] = 132179,
+				[13543] = 132179,
 			},
 		},
 		["Summon Crimson Snake"] = {
@@ -88053,9 +88188,9 @@ WeakAurasOptionsSaved = {
 				[10717] = 132311,
 			},
 		},
-		["Summon Karang's Banner"] = {
+		["Thorium Boots"] = {
 			["spells"] = {
-				[20737] = 136235,
+				[16652] = 136192,
 			},
 		},
 		["Slave Drain"] = {
@@ -88064,10 +88199,9 @@ WeakAurasOptionsSaved = {
 				[29067] = 136130,
 			},
 		},
-		["Greater Dragon Slayer 25"] = {
+		["Ward of the Eye"] = {
 			["spells"] = {
-				[20725] = 134310,
-				[20726] = 134310,
+				[3389] = 136232,
 			},
 		},
 		["Headless Horseman Shade Visual"] = {
@@ -88080,9 +88214,9 @@ WeakAurasOptionsSaved = {
 				[41052] = 136235,
 			},
 		},
-		["Inner Courage 20"] = {
+		["Merithra's Wake"] = {
 			["spells"] = {
-				[20710] = 136121,
+				[25145] = 136235,
 			},
 		},
 		["Forgiveness"] = {
@@ -88095,15 +88229,9 @@ WeakAurasOptionsSaved = {
 				[2329] = 136235,
 			},
 		},
-		["Summon Water Elementals"] = {
+		["Corrupted Intellect Passive"] = {
 			["spells"] = {
-				[37052] = 136192,
-				[31264] = 136192,
-				[20681] = 136192,
-				[31476] = 136192,
-				[37053] = 136192,
-				[37051] = 136192,
-				[29962] = 136192,
+				[6823] = 136006,
 			},
 		},
 		["Curse of the Deadwood"] = {
@@ -88163,10 +88291,10 @@ WeakAurasOptionsSaved = {
 				[8419] = 136096,
 			},
 		},
-		["Earthgrab"] = {
+		["Heavy Golden Necklace of Battle"] = {
 			["spells"] = {
-				[8377] = 136064,
-				[31983] = 136064,
+				[25211] = 133295,
+				[25320] = 136235,
 			},
 		},
 		["Avenge"] = {
@@ -88179,24 +88307,9 @@ WeakAurasOptionsSaved = {
 				[40551] = 136235,
 			},
 		},
-		["Death Coil"] = {
+		["Create Soul Gem"] = {
 			["spells"] = {
-				[35954] = 136145,
-				[17925] = 136145,
-				[41070] = 136145,
-				[46283] = 136145,
-				[39661] = 136145,
-				[17926] = 136145,
-				[30500] = 136145,
-				[32709] = 136145,
-				[6789] = 136145,
-				[28412] = 136145,
-				[30741] = 136145,
-				[34437] = 136145,
-				[44142] = 136145,
-				[38065] = 136145,
-				[33130] = 136145,
-				[27223] = 136145,
+				[3660] = 136168,
 			},
 		},
 		["Force Target - Bow"] = {
@@ -88209,49 +88322,75 @@ WeakAurasOptionsSaved = {
 				[6600] = 134063,
 			},
 		},
-		["Staves"] = {
+		["Increased Nature Resist 11"] = {
 			["spells"] = {
-				[227] = 135145,
+				[14632] = 136235,
 			},
 		},
-		["The Human Spirit"] = {
+		["Language Darnassian"] = {
 			["spells"] = {
-				[20598] = 132874,
+				[671] = 136235,
 			},
 		},
-		["Increased Fire Resist 30"] = {
+		["Increased Frost Resist 44"] = {
 			["spells"] = {
-				[14610] = 136235,
+				[14980] = 136235,
 			},
 		},
-		["Polished Steel Boots"] = {
+		["Summon Screecher Spirit"] = {
 			["spells"] = {
-				[3513] = 136192,
+				[12699] = 136235,
 			},
 		},
-		["Hardiness"] = {
+		["Attack Power 44"] = {
 			["spells"] = {
-				[20573] = 133125,
+				[15810] = 136235,
 			},
 		},
-		["Healing Wave of Antu'sul"] = {
+		["Fear"] = {
 			["spells"] = {
-				[11895] = 135916,
+				[31970] = 136147,
+				[30002] = 136183,
+				[38154] = 136183,
+				[29321] = 136183,
+				[12542] = 136183,
+				[12096] = 136183,
+				[39176] = 136183,
+				[27990] = 136183,
+				[26580] = 136183,
+				[39210] = 136183,
+				[6215] = 136183,
+				[26070] = 136183,
+				[39119] = 136183,
+				[46561] = 136183,
+				[38595] = 136183,
+				[26661] = 136183,
+				[22678] = 136183,
+				[38660] = 136183,
+				[30584] = 136183,
+				[33547] = 136183,
+				[34259] = 136183,
+				[31358] = 136183,
+				[6213] = 136183,
+				[32241] = 136183,
+				[33924] = 136183,
+				[30615] = 136183,
+				[27641] = 136183,
+				[41150] = 136183,
+				[39415] = 136183,
+				[29168] = 136183,
+				[5782] = 136183,
+				[30530] = 136183,
 			},
 		},
-		["Ragnaros Emerge"] = {
+		["Get Gosssip, Test"] = {
 			["spells"] = {
-				[20568] = 135819,
+				[26683] = 136235,
 			},
 		},
-		["Berserking"] = {
+		["Glinting Steel Dagger"] = {
 			["spells"] = {
-				[26635] = 135727,
-				[20554] = 135727,
-				[24378] = 136012,
-				[26297] = 135727,
-				[23505] = 136012,
-				[26296] = 135727,
+				[15972] = 136192,
 			},
 		},
 		["Jom Gabbar"] = {
@@ -88299,117 +88438,16 @@ WeakAurasOptionsSaved = {
 				[40258] = 135869,
 			},
 		},
-		["Greater Mana"] = {
+		["Brilliant Mana Oil"] = {
 			["spells"] = {
-				[13664] = 136235,
+				[25123] = 134722,
+				[25130] = 134722,
 			},
 		},
 		["Shape of the Beast"] = {
 			["spells"] = {
 				[33499] = 136172,
 				[33949] = 136172,
-			},
-		},
-		["Tag: Hearts"] = {
-			["spells"] = {
-				[20372] = 136209,
-			},
-		},
-		["Tag: Green Glow"] = {
-			["spells"] = {
-				[20371] = 136006,
-			},
-		},
-		["Guard Call"] = {
-			["spells"] = {
-				[7356] = 136235,
-			},
-		},
-		["Enchanted Gaea Seed"] = {
-			["spells"] = {
-				[20269] = 136235,
-			},
-		},
-		["Use Broom"] = {
-			["spells"] = {
-				[47977] = 135145,
-			},
-		},
-		["Sludge Toxin"] = {
-			["spells"] = {
-				[6814] = 136077,
-			},
-		},
-		["Increased Armor 200 Wildheart"] = {
-			["spells"] = {
-				[29097] = 136235,
-			},
-		},
-		["Improved Lay on Hands"] = {
-			["spells"] = {
-				[20234] = 135928,
-				[20235] = 135928,
-			},
-		},
-		["Goblin Engineer"] = {
-			["spells"] = {
-				[20222] = 135826,
-			},
-		},
-		["Powerful Smelling Salts"] = {
-			["spells"] = {
-				[10844] = 136192,
-				[10850] = 133587,
-			},
-		},
-		["Judgement of Righteousness"] = {
-			["spells"] = {
-				[20280] = 132325,
-				[20284] = 132325,
-				[20187] = 132325,
-				[20281] = 132325,
-				[20285] = 132325,
-				[20282] = 132325,
-				[20286] = 132325,
-				[20283] = 132325,
-				[27157] = 132325,
-			},
-		},
-		["Seal of Light"] = {
-			["spells"] = {
-				[27161] = 135917,
-				[20340] = 135917,
-				[20333] = 135917,
-				[20165] = 135917,
-				[20334] = 135917,
-				[27160] = 135917,
-				[20167] = 135917,
-				[20349] = 135917,
-				[20347] = 135917,
-				[20348] = 135917,
-			},
-		},
-		["Rushing Charge"] = {
-			["spells"] = {
-				[6268] = 132368,
-				[35382] = 132337,
-				[8260] = 132368,
-				[32021] = 132337,
-			},
-		},
-		["Starshards"] = {
-			["spells"] = {
-				[19305] = 135753,
-				[22823] = 135753,
-				[19302] = 135753,
-				[10797] = 135753,
-				[19299] = 135753,
-				[19303] = 135753,
-				[19296] = 135753,
-				[19304] = 135753,
-				[27636] = 135753,
-				[22822] = 135753,
-				[25446] = 135753,
 			},
 		},
 		["Ambush"] = {
@@ -88427,6 +88465,92 @@ WeakAurasOptionsSaved = {
 				[39668] = 135743,
 			},
 		},
+		["Gloves of the Greatfather"] = {
+			["spells"] = {
+				[21943] = 136247,
+			},
+		},
+		["Guard Call"] = {
+			["spells"] = {
+				[7356] = 136235,
+			},
+		},
+		["Starshards"] = {
+			["spells"] = {
+				[19305] = 135753,
+				[22823] = 135753,
+				[19302] = 135753,
+				[10797] = 135753,
+				[19299] = 135753,
+				[19303] = 135753,
+				[19296] = 135753,
+				[19304] = 135753,
+				[27636] = 135753,
+				[22822] = 135753,
+				[25446] = 135753,
+			},
+		},
+		["Use Broom"] = {
+			["spells"] = {
+				[47977] = 135145,
+			},
+		},
+		["Bloodfang"] = {
+			["spells"] = {
+				[23580] = 136168,
+				[23581] = 136168,
+			},
+		},
+		["Increased Armor 200 Wildheart"] = {
+			["spells"] = {
+				[29097] = 136235,
+			},
+		},
+		["Powerful Smelling Salts"] = {
+			["spells"] = {
+				[10844] = 136192,
+				[10850] = 133587,
+			},
+		},
+		["Sludge Toxin"] = {
+			["spells"] = {
+				[6814] = 136077,
+			},
+		},
+		["Opening Secret Safe"] = {
+			["spells"] = {
+				[14125] = 136235,
+			},
+		},
+		["Greater Mana"] = {
+			["spells"] = {
+				[13664] = 136235,
+			},
+		},
+		["Polished Steel Boots"] = {
+			["spells"] = {
+				[3513] = 136192,
+			},
+		},
+		["Increased Fire Resist 30"] = {
+			["spells"] = {
+				[14610] = 136235,
+			},
+		},
+		["Staves"] = {
+			["spells"] = {
+				[227] = 135145,
+			},
+		},
+		["Flametongue Totem Effect"] = {
+			["spells"] = {
+				[10521] = 136040,
+				[8250] = 136040,
+				[25554] = 136040,
+				[8230] = 136040,
+				[15036] = 136040,
+			},
+		},
 		["Gnomish Universal Remote"] = {
 			["spells"] = {
 				[9269] = 136235,
@@ -88442,9 +88566,10 @@ WeakAurasOptionsSaved = {
 				[24793] = 136235,
 			},
 		},
-		["Enchant Weapon - Unholy Weapon"] = {
+		["Earthgrab"] = {
 			["spells"] = {
-				[20033] = 135913,
+				[8377] = 136064,
+				[31983] = 136064,
 			},
 		},
 		["Increase Spell Dam 18"] = {
@@ -88454,9 +88579,9 @@ WeakAurasOptionsSaved = {
 				[41834] = 136235,
 			},
 		},
-		["Enchant Chest - Major Mana"] = {
+		["Mass Teleport"] = {
 			["spells"] = {
-				[20028] = 135913,
+				[16807] = 135994,
 			},
 		},
 		["Murloc Fin Soup"] = {
@@ -88464,19 +88589,22 @@ WeakAurasOptionsSaved = {
 				[3372] = 136192,
 			},
 		},
-		["Enchant Chest - Major Health"] = {
+		["Pattern: Onyxia Scale Cloak"] = {
 			["spells"] = {
-				[20026] = 135913,
+				[19213] = 136235,
 			},
 		},
-		["Nightscape Headband"] = {
+		["Geyser"] = {
 			["spells"] = {
-				[10507] = 136247,
+				[37427] = 135861,
+				[40089] = 135861,
+				[10987] = 135836,
+				[37478] = 135844,
 			},
 		},
-		["Xiggs Signal Flare"] = {
+		["Manastorm"] = {
 			["spells"] = {
-				[12283] = 136235,
+				[21097] = 135857,
 			},
 		},
 		["Honor of the Stormpike"] = {
@@ -88485,40 +88613,45 @@ WeakAurasOptionsSaved = {
 				[46391] = 133074,
 			},
 		},
-		["Intellect 15"] = {
+		["Kick Peon Prologue"] = {
 			["spells"] = {
-				[20002] = 136235,
+				[17749] = 136235,
 			},
 		},
-		["Major Health"] = {
+		["Fire Power"] = {
 			["spells"] = {
-				[19990] = 136235,
+				[12378] = 135817,
+				[7844] = 134813,
+				[12400] = 135817,
+				[12398] = 135817,
+				[12399] = 135817,
+				[11124] = 135817,
 			},
 		},
-		["Splintered Obsidian"] = {
+		["Rallying Cry of the Dragonslayer"] = {
 			["spells"] = {
-				[10072] = 136126,
+				[22888] = 134153,
+				[355363] = 134153,
 			},
 		},
-		["Greater Stats"] = {
+		["Increased Frost Resist 24"] = {
 			["spells"] = {
-				[19988] = 136235,
-				[357403] = 136235,
+				[14581] = 136235,
 			},
 		},
-		["Pink Mageweave Shirt"] = {
+		["Increase Holy Dam 30"] = {
 			["spells"] = {
-				[12080] = 132149,
+				[21519] = 136235,
 			},
 		},
-		["Superior Stamina"] = {
+		["Green Silk Pack"] = {
 			["spells"] = {
-				[19985] = 136235,
+				[6693] = 136249,
 			},
 		},
-		["Superior Strength"] = {
+		["Increased Arcane Resist 12"] = {
 			["spells"] = {
-				[19984] = 136235,
+				[14714] = 136235,
 			},
 		},
 		["Heroism"] = {
@@ -88537,9 +88670,9 @@ WeakAurasOptionsSaved = {
 				[7722] = 136235,
 			},
 		},
-		["Glinting Steel Dagger"] = {
+		["Increased Agility 18"] = {
 			["spells"] = {
-				[15972] = 136192,
+				[14371] = 136235,
 			},
 		},
 		["100% Block"] = {
@@ -88547,14 +88680,14 @@ WeakAurasOptionsSaved = {
 				[10021] = 132110,
 			},
 		},
-		["Attack Power 44"] = {
+		["Damage 100 (TEST)"] = {
 			["spells"] = {
-				[15810] = 136235,
+				[2653] = 136235,
 			},
 		},
-		["Calm Dragonkin"] = {
+		["Embossed Leather Boots"] = {
 			["spells"] = {
-				[19872] = 136046,
+				[2161] = 136247,
 			},
 		},
 		["Demonic Aegis"] = {
@@ -88564,9 +88697,9 @@ WeakAurasOptionsSaved = {
 				[30145] = 136185,
 			},
 		},
-		["Beast Slaying 18"] = {
+		["Ward of Laze"] = {
 			["spells"] = {
-				[19691] = 136235,
+				[3827] = 136232,
 			},
 		},
 		["Girdle of Ruination"] = {
@@ -88574,9 +88707,9 @@ WeakAurasOptionsSaved = {
 				[31443] = 132149,
 			},
 		},
-		["Summon Screecher Spirit"] = {
+		["Create Scepter of Celebras"] = {
 			["spells"] = {
-				[12699] = 136235,
+				[21939] = 136235,
 			},
 		},
 		["Noxious Fumes"] = {
@@ -88591,15 +88724,15 @@ WeakAurasOptionsSaved = {
 				[23476] = 135230,
 			},
 		},
-		["Create Soul Gem"] = {
+		["Greater Magic Wand"] = {
 			["spells"] = {
-				[3660] = 136168,
+				[14807] = 135144,
 			},
 		},
-		["Increase Fire Dam 21"] = {
+		["Petrification"] = {
 			["spells"] = {
-				[9298] = 136235,
-				[23483] = 136235,
+				[17624] = 134806,
+				[39933] = 134806,
 			},
 		},
 		["Wisp Summon"] = {
@@ -88617,41 +88750,39 @@ WeakAurasOptionsSaved = {
 				[7782] = 135913,
 			},
 		},
-		["Increased Spirit 46"] = {
+		["Attack Power 02"] = {
 			["spells"] = {
-				[14952] = 136235,
+				[9136] = 136235,
 			},
 		},
-		["Concentration Aura"] = {
+		["Ram Riding"] = {
 			["spells"] = {
-				[19746] = 135933,
+				[826] = 136103,
+				[6744] = 136103,
 			},
 		},
-		["Mana Rejuvenation"] = {
+		["Flame Burst"] = {
 			["spells"] = {
-				[19634] = 136077,
+				[41126] = 135787,
+				[6305] = 135826,
+				[41131] = 135787,
 			},
 		},
-		["Increased Hit Rating 20"] = {
+		["Silvered Bronze Breastplate"] = {
 			["spells"] = {
-				[15465] = 136235,
-				[39516] = 136235,
-				[39982] = 136235,
-				[41678] = 136235,
-				[39482] = 136235,
-				[41749] = 136235,
-				[41679] = 136235,
+				[2673] = 136192,
 			},
 		},
-		["Silver Skeleton Key"] = {
+		["Increased Fire Resist 10"] = {
 			["spells"] = {
-				[19646] = 136235,
-				[19666] = 136192,
+				[41669] = 136235,
+				[14590] = 136235,
+				[41871] = 136235,
 			},
 		},
-		["Enchanter's Cowl"] = {
+		["Debuff Holy Resist (TEST)"] = {
 			["spells"] = {
-				[3857] = 132149,
+				[3719] = 136235,
 			},
 		},
 		["Nether Protection"] = {
@@ -88664,15 +88795,14 @@ WeakAurasOptionsSaved = {
 				[37539] = 136121,
 			},
 		},
-		["Ward of the Eye"] = {
+		["Atal'ai Altar Light Visual (DND)"] = {
 			["spells"] = {
-				[3389] = 136232,
+				[12348] = 136235,
 			},
 		},
-		["Quickness"] = {
+		["Sagefish Delight"] = {
 			["spells"] = {
-				[4281] = 136057,
-				[20582] = 132279,
+				[25954] = 136192,
 			},
 		},
 		["Spirit Vengeance"] = {
@@ -88701,40 +88831,35 @@ WeakAurasOptionsSaved = {
 				[21531] = 136235,
 			},
 		},
-		["Fire Strike"] = {
+		["Increased Stamina 10"] = {
 			["spells"] = {
-				[7716] = 136197,
-				[7718] = 136197,
-				[7715] = 136197,
-				[7717] = 136197,
-				[7712] = 136197,
-				[7714] = 136197,
-				[7719] = 136197,
+				[9117] = 136235,
 			},
 		},
-		["Sloth Effect"] = {
+		["Gnomish Rocket Boots"] = {
 			["spells"] = {
-				[3510] = 136188,
+				[12905] = 136235,
+				[13141] = 135805,
 			},
 		},
-		["Increase Nature Dam 29"] = {
+		["Shadow Barrier"] = {
 			["spells"] = {
-				[17819] = 136235,
+				[17151] = 136121,
 			},
 		},
-		["Naga Statue Spell"] = {
+		["Emberseer Full Strength"] = {
 			["spells"] = {
-				[19473] = 136235,
+				[16047] = 135805,
 			},
 		},
-		["Great Rage Potion"] = {
+		["Hatch Rookery Egg"] = {
 			["spells"] = {
-				[6618] = 136235,
+				[15746] = 132834,
 			},
 		},
-		["Increased Intellect 24"] = {
+		["Soul Shatter"] = {
 			["spells"] = {
-				[14414] = 136235,
+				[10771] = 135805,
 			},
 		},
 		["Picnic Blanket Effect"] = {
@@ -88742,10 +88867,9 @@ WeakAurasOptionsSaved = {
 				[27568] = 135926,
 			},
 		},
-		["Summon Fire Elemental"] = {
+		["Localized Toxin"] = {
 			["spells"] = {
-				[8985] = 135819,
-				[40133] = 135817,
+				[7947] = 136016,
 			},
 		},
 		["Triangulation Point Two"] = {
@@ -88753,22 +88877,10 @@ WeakAurasOptionsSaved = {
 				[34857] = 135164,
 			},
 		},
-		["Wyvern Sting"] = {
+		["Heal on Kill"] = {
 			["spells"] = {
-				[24131] = 135125,
-				[24135] = 135125,
-				[27068] = 135125,
-				[24132] = 135125,
-				[24335] = 135125,
-				[27069] = 135125,
-				[24133] = 135125,
-				[41186] = 135125,
-				[19386] = 135125,
-				[26233] = 135125,
-				[24134] = 135125,
-				[26748] = 135125,
-				[26180] = 135125,
-				[24336] = 135125,
+				[18983] = 135934,
+				[18984] = 135920,
 			},
 		},
 		["Holy Strike"] = {
@@ -88783,9 +88895,9 @@ WeakAurasOptionsSaved = {
 				[24654] = 136235,
 			},
 		},
-		["Smolderweb Protection"] = {
+		["Summon Deviate Viper"] = {
 			["spells"] = {
-				[16530] = 136068,
+				[7973] = 136121,
 			},
 		},
 		["Inspiration"] = {
@@ -88803,28 +88915,32 @@ WeakAurasOptionsSaved = {
 				[37695] = 132104,
 			},
 		},
-		["Surefooted"] = {
+		["Mind Control"] = {
 			["spells"] = {
-				[27953] = 132219,
-				[19290] = 132219,
-				[19294] = 132219,
-				[24283] = 132219,
+				[15690] = 136175,
+				[45112] = 136175,
+				[10911] = 136206,
+				[605] = 136206,
+				[11446] = 136206,
+				[10912] = 136206,
+				[43550] = 136206,
+				[36798] = 136129,
+				[36797] = 136129,
 			},
 		},
-		["Robe of Power"] = {
+		["Ornate Mithril Gloves"] = {
 			["spells"] = {
-				[8770] = 132149,
+				[9950] = 136192,
 			},
 		},
-		["Deterrence"] = {
+		["Smite Demon"] = {
 			["spells"] = {
-				[19263] = 132369,
-				[31567] = 132369,
+				[13907] = 135920,
 			},
 		},
-		["Placing Smokey's Explosives"] = {
+		["Summon Party Bot"] = {
 			["spells"] = {
-				[19250] = 136235,
+				[7975] = 136074,
 			},
 		},
 		["Flames"] = {
@@ -88850,24 +88966,14 @@ WeakAurasOptionsSaved = {
 				[33230] = 132939,
 			},
 		},
-		["Improved Wing Clip"] = {
+		["Bark of Doom"] = {
 			["spells"] = {
-				[19229] = 132309,
-				[19232] = 132309,
-				[19233] = 132309,
-				[47168] = 132309,
-				[19228] = 132309,
-				[35963] = 132309,
+				[2816] = 136235,
 			},
 		},
-		["Speed"] = {
+		["Summon Echeyakee"] = {
 			["spells"] = {
-				[22863] = 132307,
-				[23978] = 132870,
-				[23451] = 132870,
-				[17498] = 132307,
-				[14530] = 132307,
-				[2379] = 132219,
+				[12189] = 136168,
 			},
 		},
 		["Increased Shadow Resist 41"] = {
@@ -88890,16 +88996,9 @@ WeakAurasOptionsSaved = {
 				[9979] = 136192,
 			},
 		},
-		["Rampage"] = {
+		["Light of Elune"] = {
 			["spells"] = {
-				[30030] = 132352,
-				[30031] = 132352,
-				[29801] = 132352,
-				[30033] = 132352,
-				[8285] = 136063,
-				[25744] = 132337,
-				[30029] = 132352,
-				[30032] = 132352,
+				[6724] = 135954,
 			},
 		},
 		["Golden Scale Cuirass"] = {
@@ -88912,14 +89011,14 @@ WeakAurasOptionsSaved = {
 				[14539] = 136066,
 			},
 		},
-		["Scorpid Sample"] = {
+		["Summon Wrath Phantom"] = {
 			["spells"] = {
-				[11761] = 136235,
+				[16335] = 136122,
 			},
 		},
-		["Weakened Soul"] = {
+		["Curse of the Shadowhorn"] = {
 			["spells"] = {
-				[6788] = 135871,
+				[6922] = 136020,
 			},
 		},
 		["Enchant Bracer - Lesser Stamina"] = {
@@ -88927,70 +89026,19 @@ WeakAurasOptionsSaved = {
 				[13501] = 135913,
 			},
 		},
-		["Blue Dragonscale Shoulders"] = {
+		["Dawnbringer Shoulders"] = {
 			["spells"] = {
-				[19089] = 136235,
+				[16660] = 136192,
 			},
 		},
-		["Dragonscale Gauntlets"] = {
+		["Gong"] = {
 			["spells"] = {
-				[10619] = 136247,
+				[24967] = 136235,
 			},
 		},
-		["Increased Defense"] = {
+		["Increased Shadow Resist 24"] = {
 			["spells"] = {
-				[41726] = 136235,
-				[24774] = 136235,
-				[24775] = 136235,
-				[14249] = 136235,
-				[41864] = 136235,
-				[41681] = 136235,
-				[352511] = 136235,
-				[352336] = 136235,
-				[21417] = 136235,
-				[41642] = 136235,
-				[18369] = 136235,
-				[41671] = 136235,
-				[41774] = 136235,
-				[41641] = 136235,
-				[13385] = 136235,
-				[18185] = 136235,
-				[7513] = 136235,
-				[41847] = 136235,
-				[13390] = 136235,
-				[21421] = 136235,
-				[21415] = 136235,
-				[21419] = 136235,
-				[7511] = 136235,
-				[13389] = 136235,
-				[21407] = 136235,
-				[21408] = 136235,
-				[18196] = 136235,
-				[21410] = 136235,
-				[21411] = 136235,
-				[21412] = 136235,
-				[21413] = 136235,
-				[21414] = 136235,
-				[13387] = 136235,
-				[21416] = 136235,
-				[13388] = 136235,
-				[21418] = 136235,
-				[17513] = 136235,
-				[21420] = 136235,
-				[7515] = 136235,
-				[21422] = 136235,
-				[21423] = 136235,
-				[21424] = 136235,
-				[7516] = 136235,
-				[13383] = 136235,
-				[15804] = 136235,
-				[13384] = 136235,
-				[7517] = 136235,
-				[7514] = 136235,
-				[30503] = 136235,
-				[21409] = 136235,
-				[7518] = 136235,
-				[13386] = 136235,
+				[14687] = 136235,
 			},
 		},
 		["Teron Freed"] = {
@@ -89003,25 +89051,28 @@ WeakAurasOptionsSaved = {
 				[20509] = 135923,
 			},
 		},
-		["Azrethoc's Stomp"] = {
+		["Attack Power 36"] = {
 			["spells"] = {
-				[7961] = 132368,
+				[14089] = 136235,
 			},
 		},
-		["Increased Intellect 05"] = {
+		["Fill the Egg of Hakkar"] = {
 			["spells"] = {
-				[7495] = 136235,
-				[41827] = 136235,
+				[12735] = 136235,
 			},
 		},
-		["Increased Agility 16"] = {
+		["Ranged Weapon Specialization"] = {
 			["spells"] = {
-				[14330] = 136235,
+				[19509] = 135615,
+				[19510] = 135615,
+				[19511] = 135615,
+				[19507] = 135615,
+				[19508] = 135615,
 			},
 		},
-		["Runic Leather Gauntlets"] = {
+		["Teleport: Stormwind"] = {
 			["spells"] = {
-				[19055] = 136235,
+				[3561] = 135763,
 			},
 		},
 		["Brewfest Pony Keg"] = {
@@ -89039,14 +89090,14 @@ WeakAurasOptionsSaved = {
 				[39981] = 135869,
 			},
 		},
-		["Opening Termite Barrel"] = {
+		["Spell Focus"] = {
 			["spells"] = {
-				[18952] = 136235,
+				[12854] = 136121,
 			},
 		},
-		["Atal'ai Poison"] = {
+		["Increased Shadow Resist 45"] = {
 			["spells"] = {
-				[18949] = 136067,
+				[14994] = 136235,
 			},
 		},
 		["Enraged Felguard Spawn"] = {
@@ -89054,9 +89105,9 @@ WeakAurasOptionsSaved = {
 				[22393] = 135805,
 			},
 		},
-		["Goblin \"Boom\" Box"] = {
+		["Tough Scorpid Breastplate"] = {
 			["spells"] = {
-				[12720] = 136235,
+				[10525] = 136247,
 			},
 		},
 		["Succulent Pork Ribs"] = {
@@ -89069,14 +89120,14 @@ WeakAurasOptionsSaved = {
 				[32179] = 136235,
 			},
 		},
-		["Tasty Lion Steak"] = {
+		["J'eevee summons object"] = {
 			["spells"] = {
-				[3399] = 136192,
+				[23140] = 136235,
 			},
 		},
-		["Argus Shadow Mage Transform"] = {
+		["Increase Fire Dam 61"] = {
 			["spells"] = {
-				[4063] = 136230,
+				[26696] = 136235,
 			},
 		},
 		["Primalstrike Belt"] = {
@@ -89089,22 +89140,20 @@ WeakAurasOptionsSaved = {
 				[44087] = 132482,
 			},
 		},
-		["Increased Arcane Resist 03"] = {
+		["Powerful Anti-Venom"] = {
 			["spells"] = {
-				[14705] = 136235,
+				[23786] = 136068,
+				[23787] = 136192,
 			},
 		},
-		["Gnomish Mind Control Cap"] = {
+		["Shadow Trance"] = {
 			["spells"] = {
-				[26740] = 135995,
-				[13181] = 135995,
-				[13180] = 135995,
-				[12907] = 136235,
+				[17941] = 136223,
 			},
 		},
-		["Increased All Resist 09"] = {
+		["Increase Arcane Dam 6"] = {
 			["spells"] = {
-				[18680] = 136235,
+				[13593] = 136235,
 			},
 		},
 		["Onslaught Ring"] = {
@@ -89149,10 +89198,9 @@ WeakAurasOptionsSaved = {
 				[12626] = 136133,
 			},
 		},
-		["Improved Shield Wall"] = {
+		["Touch of Vaelastrasz"] = {
 			["spells"] = {
-				[12312] = 132362,
-				[12803] = 132362,
+				[16319] = 136235,
 			},
 		},
 		["Brewfest Force Dark Iron Give up"] = {
@@ -89170,9 +89218,9 @@ WeakAurasOptionsSaved = {
 				[43729] = 136092,
 			},
 		},
-		["Opening Benedict's Chest"] = {
+		["Thorns Dmg +4"] = {
 			["spells"] = {
-				[6529] = 136235,
+				[20889] = 136051,
 			},
 		},
 		["Summon Risen Lackey"] = {
@@ -89185,24 +89233,28 @@ WeakAurasOptionsSaved = {
 				[29334] = 135267,
 			},
 		},
-		["Increase Nature Dam 10"] = {
+		["Summon Cornish Rex"] = {
 			["spells"] = {
-				[7696] = 136235,
+				[10674] = 132311,
 			},
 		},
-		["Bottomless Bag"] = {
+		["Spirit of Old"] = {
 			["spells"] = {
-				[18455] = 132149,
+				[3653] = 136222,
 			},
 		},
-		["Gray Woolen Shirt"] = {
+		["Mage Armor"] = {
 			["spells"] = {
-				[2406] = 132149,
+				[27125] = 135991,
+				[22782] = 135991,
+				[6117] = 135991,
+				[22783] = 135991,
 			},
 		},
-		["Ghostweave Pants"] = {
+		["Savage Fury"] = {
 			["spells"] = {
-				[18441] = 132149,
+				[16998] = 132141,
+				[16999] = 132141,
 			},
 		},
 		["Summon Chuck"] = {
@@ -89210,22 +89262,21 @@ WeakAurasOptionsSaved = {
 				[46426] = 132311,
 			},
 		},
-		["Self Destruct"] = {
+		["Increased Armor 10"] = {
 			["spells"] = {
-				[9874] = 135826,
-				[9879] = 135826,
+				[41686] = 136235,
+				[9760] = 136235,
+				[41731] = 136235,
 			},
 		},
-		["Cloak of Fire"] = {
+		["Web II"] = {
 			["spells"] = {
-				[18374] = 136235,
-				[18364] = 135806,
-				[18422] = 132149,
+				[4168] = 132149,
 			},
 		},
-		["Freeze Solid"] = {
+		["Portal: Darnassus"] = {
 			["spells"] = {
-				[11836] = 135852,
+				[11419] = 135741,
 			},
 		},
 		["Karazhan - Chess - Kill Chest Bunny"] = {
@@ -89233,14 +89284,12 @@ WeakAurasOptionsSaved = {
 				[45259] = 136235,
 			},
 		},
-		["Curse of the Elements"] = {
+		["Flametongue Attack"] = {
 			["spells"] = {
-				[44332] = 136130,
-				[11721] = 136130,
-				[1490] = 136130,
-				[11722] = 136130,
-				[27228] = 136130,
-				[36831] = 136130,
+				[16368] = 136040,
+				[29469] = 135814,
+				[10444] = 135814,
+				[29470] = 135814,
 			},
 		},
 		["Major Frost Resistance Potion"] = {
@@ -89248,22 +89297,20 @@ WeakAurasOptionsSaved = {
 				[41490] = 136240,
 			},
 		},
-		["Gift of Nature"] = {
+		["Amorous"] = {
 			["spells"] = {
-				[24943] = 136074,
-				[17104] = 136074,
-				[24945] = 136074,
-				[24946] = 136074,
-				[24944] = 136074,
+				[26869] = 135453,
 			},
 		},
-		["Kodo Kombobulator"] = {
+		["Possess"] = {
 			["spells"] = {
-				[18172] = 132488,
-				[18362] = 136235,
-				[18153] = 136245,
-				[18269] = 136235,
-				[18377] = 136245,
+				[19832] = 136222,
+				[17250] = 136235,
+				[17244] = 136129,
+				[32830] = 136129,
+				[23014] = 136222,
+				[33401] = 136160,
+				[32832] = 136235,
 			},
 		},
 		["Enchant Boots - Fortitude"] = {
@@ -89277,14 +89324,9 @@ WeakAurasOptionsSaved = {
 				[23650] = 136192,
 			},
 		},
-		["Draining Touch"] = {
+		["Form of the Moonstalker (no invis)"] = {
 			["spells"] = {
-				[18152] = 136130,
-				[32429] = 132278,
-				[29362] = 136130,
-				[29363] = 136130,
-				[32428] = 136130,
-				[29299] = 136130,
+				[10849] = 132156,
 			},
 		},
 		["Self Visual - Sleep 90s (DND)"] = {
@@ -89297,9 +89339,9 @@ WeakAurasOptionsSaved = {
 				[24122] = 136235,
 			},
 		},
-		["Evil Eye"] = {
+		["Enchanting Lullaby"] = {
 			["spells"] = {
-				[3233] = 136129,
+				[16798] = 136209,
 			},
 		},
 		["Feathery Cyclone Burst"] = {
@@ -89324,17 +89366,9 @@ WeakAurasOptionsSaved = {
 				[24202] = 136235,
 			},
 		},
-		["Rip"] = {
+		["Green Silk Armor"] = {
 			["spells"] = {
-				[9752] = 132152,
-				[27008] = 132152,
-				[9492] = 132152,
-				[1079] = 132152,
-				[33912] = 132152,
-				[9894] = 132152,
-				[9896] = 132152,
-				[9493] = 132152,
-				[36590] = 132152,
+				[8784] = 132149,
 			},
 		},
 		["Mage Fire Blast Range Bonus"] = {
@@ -89349,10 +89383,9 @@ WeakAurasOptionsSaved = {
 				[13238] = 135826,
 			},
 		},
-		["Remote Detonate"] = {
+		["Transmute: Air to Fire"] = {
 			["spells"] = {
-				[6627] = 134458,
-				[6656] = 134458,
+				[17559] = 134459,
 			},
 		},
 		["Create Red Punch Card"] = {
@@ -89367,9 +89400,33 @@ WeakAurasOptionsSaved = {
 				[28817] = 135930,
 			},
 		},
-		["Increased Strength 01"] = {
+		["Sacrifice"] = {
 			["spells"] = {
-				[7464] = 136235,
+				[19446] = 136190,
+				[19447] = 136190,
+				[27492] = 136190,
+				[1050] = 135896,
+				[7885] = 136190,
+				[20381] = 136190,
+				[7812] = 136190,
+				[20382] = 136190,
+				[20383] = 136190,
+				[19438] = 136190,
+				[20384] = 136190,
+				[19439] = 136190,
+				[20385] = 136190,
+				[19440] = 136190,
+				[20386] = 136190,
+				[19441] = 136190,
+				[19442] = 136190,
+				[22651] = 136120,
+				[19443] = 136190,
+				[34661] = 136120,
+				[19444] = 136190,
+				[33587] = 136221,
+				[19445] = 136190,
+				[27273] = 136190,
+				[30115] = 136120,
 			},
 		},
 		["Summon Lunaclaw"] = {
@@ -89378,11 +89435,9 @@ WeakAurasOptionsSaved = {
 				[19138] = 136235,
 			},
 		},
-		["Rapid Fire"] = {
+		["Stunning Strike"] = {
 			["spells"] = {
-				[28755] = 136235,
-				[36828] = 132208,
-				[3045] = 132208,
+				[5703] = 132326,
 			},
 		},
 		["Sinister Periodic"] = {
@@ -89390,9 +89445,15 @@ WeakAurasOptionsSaved = {
 				[40863] = 136226,
 			},
 		},
-		["Hide"] = {
+		["Furor"] = {
 			["spells"] = {
-				[6920] = 132320,
+				[17059] = 135881,
+				[17060] = 135881,
+				[17061] = 135881,
+				[17056] = 135881,
+				[17057] = 135881,
+				[17058] = 135881,
+				[17099] = 136152,
 			},
 		},
 		["Increase Nature Dam 23"] = {
@@ -89400,14 +89461,14 @@ WeakAurasOptionsSaved = {
 				[17987] = 136235,
 			},
 		},
-		["Crimson Silk Vest"] = {
+		["Toxic Contagion"] = {
 			["spells"] = {
-				[8791] = 132149,
+				[6672] = 136235,
 			},
 		},
-		["Increase Healing 40"] = {
+		["Blessing of Salvation"] = {
 			["spells"] = {
-				[18031] = 136235,
+				[1038] = 135967,
 			},
 		},
 		["Increase Shadow Dam 34"] = {
@@ -89415,24 +89476,38 @@ WeakAurasOptionsSaved = {
 				[18014] = 136235,
 			},
 		},
-		["Increase Shadow Dam 33"] = {
+		["Bloodrager's Requiem"] = {
 			["spells"] = {
-				[18013] = 136235,
+				[23964] = 135845,
 			},
 		},
-		["Gift of Ragnaros"] = {
+		["Touch of Weakness"] = {
 			["spells"] = {
-				[7891] = 135805,
+				[28598] = 136143,
+				[19249] = 136143,
+				[19253] = 136143,
+				[2943] = 136143,
+				[19261] = 136143,
+				[19265] = 136143,
+				[19254] = 136143,
+				[25461] = 136143,
+				[19262] = 136143,
+				[19251] = 136143,
+				[25460] = 136143,
+				[19266] = 136143,
+				[19264] = 136143,
+				[19252] = 136143,
+				[2652] = 136143,
 			},
 		},
-		["Stilled"] = {
+		["Frostwolf Muzzle DND"] = {
 			["spells"] = {
-				[14775] = 136018,
+				[21794] = 136235,
 			},
 		},
-		["Leper Cure!"] = {
+		["Arcanoweave Bracers"] = {
 			["spells"] = {
-				[11534] = 135907,
+				[26782] = 132149,
 			},
 		},
 		["Levitation Pulse"] = {
@@ -89441,9 +89516,9 @@ WeakAurasOptionsSaved = {
 				[31721] = 135894,
 			},
 		},
-		["MACESTAFFSPECIAL (DND)"] = {
+		["Arathi Basin Iron Ration"] = {
 			["spells"] = {
-				[3440] = 132325,
+				[24410] = 134062,
 			},
 		},
 		["Summon Unliving Sorcerer"] = {
@@ -89469,10 +89544,9 @@ WeakAurasOptionsSaved = {
 				[31089] = 136235,
 			},
 		},
-		["Increased Intellect 06"] = {
+		["Evolving Ectoplasm (Green)"] = {
 			["spells"] = {
-				[7496] = 136235,
-				[41636] = 136235,
+				[7945] = 136094,
 			},
 		},
 		["Unleashed Fury"] = {
@@ -89484,14 +89558,14 @@ WeakAurasOptionsSaved = {
 				[19620] = 132091,
 			},
 		},
-		["Increase Nature Dam 36"] = {
+		["Increased Armor 130"] = {
 			["spells"] = {
-				[17994] = 136235,
+				[15367] = 136235,
 			},
 		},
-		["Fang of the Crystal Spider"] = {
+		["Basilisk Sample"] = {
 			["spells"] = {
-				[17331] = 136113,
+				[11759] = 136235,
 			},
 		},
 		["Test Pet Passive"] = {
@@ -89499,9 +89573,9 @@ WeakAurasOptionsSaved = {
 				[24401] = 136235,
 			},
 		},
-		["Increase Nature Dam 30"] = {
+		["Arcane Bubble"] = {
 			["spells"] = {
-				[17991] = 136235,
+				[9438] = 135896,
 			},
 		},
 		["Far Sight (PT)"] = {
@@ -89514,17 +89588,34 @@ WeakAurasOptionsSaved = {
 				[851] = 136071,
 			},
 		},
-		["Simple Teleport Group"] = {
+		["Cause Insanity"] = {
 			["spells"] = {
-				[7078] = 135994,
-				[7143] = 135994,
+				[12888] = 136206,
+				[24327] = 136206,
+				[26079] = 136206,
 			},
 		},
-		["Summon Voidwalkers"] = {
+		["Cower"] = {
 			["spells"] = {
-				[15093] = 136221,
-				[15092] = 136221,
-				[15094] = 136221,
+				[31709] = 132118,
+				[8998] = 132118,
+				[27048] = 132118,
+				[1742] = 132118,
+				[27346] = 132118,
+				[9000] = 132118,
+				[27004] = 132118,
+				[1747] = 132118,
+				[1748] = 132118,
+				[16698] = 132118,
+				[1750] = 132118,
+				[1751] = 132118,
+				[1749] = 132118,
+				[1753] = 132118,
+				[1754] = 132118,
+				[1755] = 132118,
+				[1756] = 132118,
+				[9892] = 132118,
+				[16697] = 132118,
 			},
 		},
 		["Rejoin Viscidus"] = {
@@ -89532,15 +89623,14 @@ WeakAurasOptionsSaved = {
 				[25896] = 136235,
 			},
 		},
-		["Rend Flesh"] = {
+		["Increase Shadow Dam 54"] = {
 			["spells"] = {
-				[3147] = 132152,
-				[42397] = 132141,
+				[18028] = 136235,
 			},
 		},
-		["Major Firestone Attack"] = {
+		["Lesser Nether Essence"] = {
 			["spells"] = {
-				[17935] = 132386,
+				[13740] = 136192,
 			},
 		},
 		["Burning Soul"] = {
@@ -89560,10 +89650,18 @@ WeakAurasOptionsSaved = {
 				[359895] = 135913,
 			},
 		},
-		["Destructive Reach"] = {
+		["Explode"] = {
 			["spells"] = {
-				[17917] = 136133,
-				[17918] = 136133,
+				[36719] = 135735,
+				[26059] = 135826,
+				[28433] = 135826,
+				[7670] = 135805,
+				[36722] = 135735,
+				[38830] = 135735,
+				[38831] = 135735,
+				[25698] = 135826,
+				[30687] = 135826,
+				[25699] = 135826,
 			},
 		},
 		["Demon Slaying 45"] = {
@@ -89571,15 +89669,15 @@ WeakAurasOptionsSaved = {
 				[14097] = 136172,
 			},
 		},
-		["Attach Shaft to Medallion"] = {
+		["Abolish Poison"] = {
 			["spells"] = {
-				[9595] = 135138,
+				[2893] = 136068,
+				[14253] = 136068,
 			},
 		},
-		["Healing Ward V Passive"] = {
+		["Increase Ice Dam 20"] = {
 			["spells"] = {
-				[4972] = 136222,
-				[11901] = 136222,
+				[25066] = 136235,
 			},
 		},
 		["Spikes"] = {
@@ -89593,13 +89691,9 @@ WeakAurasOptionsSaved = {
 				[46176] = 136235,
 			},
 		},
-		["Pet Hardiness"] = {
+		["Suffering of Sanity"] = {
 			["spells"] = {
-				[6281] = 132091,
-				[6283] = 132091,
-				[6280] = 132091,
-				[6282] = 132091,
-				[6286] = 132091,
+				[23773] = 136133,
 			},
 		},
 		["Rebirth"] = {
@@ -89622,14 +89716,45 @@ WeakAurasOptionsSaved = {
 				[42054] = 136235,
 			},
 		},
-		["Stonesplinter Trogg Disguise"] = {
+		["Renew"] = {
 			["spells"] = {
-				[5265] = 132288,
+				[36969] = 135953,
+				[23895] = 135953,
+				[25058] = 135953,
+				[6075] = 135953,
+				[47079] = 135953,
+				[36679] = 135953,
+				[37260] = 135953,
+				[25315] = 135953,
+				[38210] = 135953,
+				[27606] = 135953,
+				[10927] = 135953,
+				[8362] = 135953,
+				[31325] = 135953,
+				[44174] = 135953,
+				[10928] = 135953,
+				[46563] = 135953,
+				[46192] = 135953,
+				[37978] = 135953,
+				[10929] = 135953,
+				[22168] = 135953,
+				[25222] = 135953,
+				[34423] = 135953,
+				[139] = 135953,
+				[41456] = 135953,
+				[45859] = 135953,
+				[6076] = 135953,
+				[6074] = 135953,
+				[6078] = 135953,
+				[6077] = 135953,
+				[28807] = 136235,
+				[11640] = 135953,
+				[25221] = 135953,
 			},
 		},
-		["Increase Frost Dam 26"] = {
+		["Enchant Chest - Minor Mana"] = {
 			["spells"] = {
-				[17891] = 136235,
+				[7443] = 135913,
 			},
 		},
 		["Summon Templar Random"] = {
@@ -89653,9 +89778,9 @@ WeakAurasOptionsSaved = {
 				[5105] = 136016,
 			},
 		},
-		["Opening Dark Coffer"] = {
+		["Mind Tremor"] = {
 			["spells"] = {
-				[13564] = 136235,
+				[8272] = 136025,
 			},
 		},
 		["Summon Ghosts of Naxxramas"] = {
@@ -89663,19 +89788,19 @@ WeakAurasOptionsSaved = {
 				[28389] = 136121,
 			},
 		},
-		["Mithril Scale Shoulders"] = {
+		["Kreeg's Stout Beatdown"] = {
 			["spells"] = {
-				[9966] = 136192,
+				[22790] = 132792,
 			},
 		},
-		["Increased Shadow Resist 18"] = {
+		["Imperial Plate Chest"] = {
 			["spells"] = {
-				[14681] = 136235,
+				[16663] = 136192,
 			},
 		},
-		["Increase Fire Dam 26"] = {
+		["Artisan Enchanting"] = {
 			["spells"] = {
-				[17867] = 136235,
+				[13921] = 136244,
 			},
 		},
 		["Sayge's Dark Fortune of Agility"] = {
@@ -89719,34 +89844,32 @@ WeakAurasOptionsSaved = {
 				[42346] = 136235,
 			},
 		},
-		["Increase Healing 2"] = {
+		["Ivory Raptor"] = {
 			["spells"] = {
-				[7675] = 136235,
+				[10795] = 132253,
+				[17450] = 132253,
 			},
 		},
-		["Dismember"] = {
+		["Call of Flame"] = {
 			["spells"] = {
-				[96] = 132090,
+				[16162] = 135817,
+				[16163] = 135817,
+				[16160] = 135817,
+				[16038] = 135817,
+				[16161] = 135817,
 			},
 		},
-		["Projection"] = {
+		["Mercurial Shield"] = {
 			["spells"] = {
-				[7765] = 136235,
+				[26465] = 136162,
+				[26463] = 136235,
+				[26464] = 136162,
 			},
 		},
-		["Freezing Trap"] = {
+		["Corrosive Acid Breath"] = {
 			["spells"] = {
-				[14310] = 135834,
-				[43447] = 135834,
-				[32419] = 135834,
-				[43448] = 135834,
-				[31933] = 135834,
-				[14311] = 135834,
-				[1499] = 135834,
-				[41085] = 135834,
-				[27753] = 135834,
-				[44136] = 135834,
-				[37368] = 135834,
+				[16359] = 136007,
+				[20667] = 136007,
 			},
 		},
 		["Demon Slaying 36"] = {
@@ -89754,9 +89877,9 @@ WeakAurasOptionsSaved = {
 				[12823] = 136172,
 			},
 		},
-		["Awaken Earthen Dwarf"] = {
+		["Smelt Iron"] = {
 			["spells"] = {
-				[10259] = 136025,
+				[3307] = 136235,
 			},
 		},
 		["Sacrifice Spinneret"] = {
@@ -89820,9 +89943,9 @@ WeakAurasOptionsSaved = {
 				[21425] = 132172,
 			},
 		},
-		["Shade Form Visual"] = {
+		["Summon Panda Cub"] = {
 			["spells"] = {
-				[17673] = 136121,
+				[26972] = 132311,
 			},
 		},
 		["Redridge Goulash"] = {
@@ -89835,10 +89958,9 @@ WeakAurasOptionsSaved = {
 				[9513] = 136192,
 			},
 		},
-		["Ramstein's Lightning Bolts"] = {
+		["Enchant Chest - Major Mana"] = {
 			["spells"] = {
-				[17668] = 135990,
-				[17669] = 135990,
+				[20028] = 135913,
 			},
 		},
 		["Simon Game - Visual - Level Start Offset"] = {
@@ -89846,30 +89968,12 @@ WeakAurasOptionsSaved = {
 				[41235] = 136235,
 			},
 		},
-		["Battle Shout"] = {
+		["Ruthlessness"] = {
 			["spells"] = {
-				[24438] = 132333,
-				[5242] = 132333,
-				[9128] = 132333,
-				[26099] = 132333,
-				[42247] = 132333,
-				[6192] = 132333,
-				[2048] = 132333,
-				[6673] = 132333,
-				[11549] = 132333,
-				[26043] = 132333,
-				[27578] = 132333,
-				[30833] = 132333,
-				[11550] = 132333,
-				[38232] = 132333,
-				[32064] = 132333,
-				[31403] = 132333,
-				[25101] = 132333,
-				[30635] = 132333,
-				[30931] = 132333,
-				[46763] = 132333,
-				[25289] = 132333,
-				[11551] = 132333,
+				[14157] = 136235,
+				[14156] = 132122,
+				[14161] = 132122,
+				[14160] = 132122,
 			},
 		},
 		["Simon Game END timer (DND)"] = {
@@ -89877,26 +89981,35 @@ WeakAurasOptionsSaved = {
 				[40359] = 136235,
 			},
 		},
-		["Fire Oil"] = {
+		["Draining Touch"] = {
 			["spells"] = {
-				[7837] = 136235,
+				[18152] = 136130,
+				[32429] = 132278,
+				[29362] = 136130,
+				[29363] = 136130,
+				[32428] = 136130,
+				[29299] = 136130,
 			},
 		},
-		["Closing"] = {
+		["Test Stab R50"] = {
 			["spells"] = {
-				[6233] = 136235,
-				[6246] = 136235,
-				[21652] = 136235,
+				[23959] = 132090,
 			},
 		},
-		["Portal Effect: Darnassus"] = {
+		["Language Old Tongue (NYI)"] = {
 			["spells"] = {
-				[17608] = 135741,
+				[817] = 136235,
 			},
 		},
-		["Increased Agility 35"] = {
+		["Dazed"] = {
 			["spells"] = {
-				[14399] = 136235,
+				[1604] = 135860,
+				[15571] = 135860,
+				[13496] = 135860,
+				[35955] = 135860,
+				[5101] = 136175,
+				[31125] = 135860,
+				[29703] = 135860,
 			},
 		},
 		["Chain Burn"] = {
@@ -89915,9 +90028,9 @@ WeakAurasOptionsSaved = {
 				[33187] = 136235,
 			},
 		},
-		["Major Healing Potion"] = {
+		["Create Mallet of Zul'Farrak"] = {
 			["spells"] = {
-				[17556] = 136235,
+				[11435] = 136235,
 			},
 		},
 		["Aura of Battle"] = {
@@ -89935,80 +90048,34 @@ WeakAurasOptionsSaved = {
 				[34874] = 135998,
 			},
 		},
-		["Deathcharger"] = {
+		["Ancestral Fortitude"] = {
 			["spells"] = {
-				[17481] = 132264,
+				[16236] = 136109,
+				[16177] = 136109,
+				[16237] = 136109,
 			},
 		},
-		["Enchant Shield - Greater Spirit"] = {
+		["Soul Fire"] = {
 			["spells"] = {
-				[13905] = 135913,
+				[17924] = 135808,
+				[6353] = 135808,
+				[27211] = 135808,
+				[30545] = 135808,
 			},
 		},
-		["Firebolt"] = {
+		["Longshot III"] = {
 			["spells"] = {
-				[7802] = 135809,
-				[27484] = 135809,
-				[7834] = 135809,
-				[27487] = 135809,
-				[23267] = 135807,
-				[7835] = 135809,
-				[44577] = 135809,
-				[11763] = 135809,
-				[11764] = 135809,
-				[20312] = 135809,
-				[11765] = 135809,
-				[20314] = 135809,
-				[9057] = 135807,
-				[20316] = 135809,
-				[18112] = 135810,
-				[7886] = 135809,
-				[13441] = 135807,
-				[14103] = 135810,
-				[13442] = 135810,
-				[18187] = 135807,
-				[3110] = 135809,
-				[701] = 135810,
-				[39022] = 135809,
-				[46044] = 135809,
-				[44164] = 135809,
-				[27267] = 135809,
-				[43584] = 135809,
-				[39023] = 135809,
-				[38239] = 135809,
-				[20801] = 135809,
-				[36905] = 135809,
-				[36227] = 135797,
-				[15592] = 135810,
-				[18833] = 135807,
-				[30180] = 135809,
-				[36906] = 135809,
-				[30050] = 135809,
-				[20315] = 135809,
-				[7799] = 135809,
-				[18083] = 135807,
-				[9233] = 135934,
-				[11762] = 135809,
-				[18086] = 135810,
-				[20313] = 135809,
-				[15598] = 135807,
-				[15599] = 135934,
-				[7832] = 135809,
-				[7800] = 135809,
-				[7801] = 135809,
-				[20270] = 135809,
-				[7833] = 135809,
-				[18186] = 135934,
+				[3007] = 132222,
 			},
 		},
-		["Sword Mastery"] = {
+		["Focusing"] = {
 			["spells"] = {
-				[601] = 132223,
+				[3678] = 136235,
 			},
 		},
-		["Shield of Reflection"] = {
+		["Blacksmithing Skill +10"] = {
 			["spells"] = {
-				[3651] = 136222,
+				[7824] = 136241,
 			},
 		},
 		["Increase Nature Dam 40"] = {
@@ -90021,66 +90088,60 @@ WeakAurasOptionsSaved = {
 				[26721] = 136235,
 			},
 		},
-		["Aquatic Form (Passive)"] = {
+		["Greater Intellect"] = {
 			["spells"] = {
-				[5421] = 132112,
+				[11394] = 134721,
+				[11396] = 134721,
+				[11395] = 134721,
+				[13825] = 136235,
 			},
 		},
-		["Drain Life"] = {
+		["Immolation"] = {
 			["spells"] = {
-				[24585] = 136169,
-				[20743] = 136169,
-				[11699] = 136169,
-				[27994] = 136169,
-				[11700] = 136169,
-				[34696] = 136169,
-				[36655] = 136169,
-				[358742] = 136169,
-				[16414] = 136169,
-				[18557] = 136169,
-				[17173] = 136169,
-				[44294] = 136169,
-				[16608] = 136169,
-				[38817] = 136169,
-				[7651] = 136169,
-				[18817] = 136169,
-				[26693] = 136169,
-				[24300] = 136169,
-				[699] = 136169,
-				[24618] = 136169,
-				[16375] = 136169,
-				[709] = 136169,
-				[36825] = 136169,
-				[46466] = 136169,
-				[24435] = 136169,
-				[46155] = 136169,
-				[12693] = 136169,
-				[39676] = 136169,
-				[46291] = 136169,
-				[37992] = 136169,
-				[21170] = 136169,
-				[27219] = 136169,
-				[27220] = 136169,
-				[36224] = 136169,
-				[18084] = 136169,
-				[17620] = 136169,
-				[34107] = 136169,
-				[18815] = 136235,
-				[30412] = 136169,
-				[29155] = 136169,
-				[17238] = 136169,
-				[35748] = 136169,
-				[689] = 136169,
+				[31722] = 136219,
+				[31304] = 136219,
+				[31723] = 136219,
+				[4436] = 135817,
+				[47080] = 135817,
+				[34528] = 135817,
+				[47075] = 135817,
+				[39809] = 135817,
+				[19483] = 136219,
+				[21142] = 135817,
+				[40148] = 135818,
+				[38999] = 135817,
+				[40953] = 135815,
+				[29948] = 135817,
+				[35995] = 135818,
+				[20153] = 136219,
+				[35935] = 135815,
+				[39808] = 135817,
+				[38944] = 135815,
+				[39007] = 136219,
+				[12744] = 135817,
+				[39138] = 135817,
+				[37155] = 135815,
+				[37060] = 136219,
+				[37059] = 135817,
+				[33650] = 136219,
+				[31303] = 136219,
+				[33651] = 136219,
 			},
 		},
-		["Poisonous Spit"] = {
+		["Increased Stamina 30"] = {
 			["spells"] = {
-				[4286] = 136016,
+				[14477] = 136235,
 			},
 		},
-		["Skeletal Horse"] = {
+		["Summon Water Elementals"] = {
 			["spells"] = {
-				[8980] = 132264,
+				[37052] = 136192,
+				[31264] = 136192,
+				[20681] = 136192,
+				[31476] = 136192,
+				[37053] = 136192,
+				[37051] = 136192,
+				[29962] = 136192,
 			},
 		},
 		["Holiday - Lunar Teleport Cap: Stormwind"] = {
@@ -90088,10 +90149,9 @@ WeakAurasOptionsSaved = {
 				[26406] = 135758,
 			},
 		},
-		["Possessed"] = {
+		["Increased Shadow Resist 23"] = {
 			["spells"] = {
-				[17246] = 136122,
-				[32831] = 136129,
+				[14686] = 136235,
 			},
 		},
 		["Slow Poison"] = {
@@ -90105,9 +90165,9 @@ WeakAurasOptionsSaved = {
 				[351769] = 136247,
 			},
 		},
-		["Imperial Plate Leggings"] = {
+		["Summon Effect"] = {
 			["spells"] = {
-				[16730] = 136192,
+				[8677] = 136119,
 			},
 		},
 		["Hillman's Belt"] = {
@@ -90115,17 +90175,18 @@ WeakAurasOptionsSaved = {
 				[3767] = 136247,
 			},
 		},
-		["Reflection"] = {
+		["Purge"] = {
 			["spells"] = {
-				[22067] = 136222,
-				[27564] = 136222,
-				[30969] = 136222,
-				[9906] = 136222,
+				[8012] = 136075,
+				[25756] = 136039,
+				[27626] = 136075,
+				[33625] = 136075,
+				[370] = 136075,
 			},
 		},
-		["Beastslayer"] = {
+		["Muculent Fever Proc"] = {
 			["spells"] = {
-				[7784] = 136235,
+				[14133] = 136188,
 			},
 		},
 		["Shadow Cost Reduction"] = {
@@ -90153,10 +90214,9 @@ WeakAurasOptionsSaved = {
 				[28679] = 136137,
 			},
 		},
-		["Freezing Claw"] = {
+		["Presence of Death"] = {
 			["spells"] = {
-				[17010] = 135836,
-				[17011] = 135853,
+				[3109] = 136195,
 			},
 		},
 		["Masterwork Target Dummy Passive"] = {
@@ -90197,9 +90257,11 @@ WeakAurasOptionsSaved = {
 				[35569] = 136025,
 			},
 		},
-		["Forsaken Skill: Shadow"] = {
+		["Stormbolt"] = {
 			["spells"] = {
-				[7053] = 136123,
+				[19136] = 132325,
+				[38032] = 135846,
+				[38400] = 135990,
 			},
 		},
 		["Spirit Shield"] = {
@@ -90207,10 +90269,10 @@ WeakAurasOptionsSaved = {
 				[40322] = 132315,
 			},
 		},
-		["Creeping Mold"] = {
+		["Fumble"] = {
 			["spells"] = {
-				[6278] = 136134,
-				[18289] = 135914,
+				[5917] = 136159,
+				[44040] = 136235,
 			},
 		},
 		["Nullify Mana"] = {
@@ -90224,27 +90286,15 @@ WeakAurasOptionsSaved = {
 				[4143] = 132278,
 			},
 		},
-		["Control of Nature"] = {
+		["Thorium Bracers"] = {
 			["spells"] = {
-				[16919] = 136100,
-				[16920] = 136100,
-				[16918] = 136100,
+				[16644] = 136192,
 			},
 		},
-		["Lesser Healing Wave"] = {
+		["Spider Poison"] = {
 			["spells"] = {
-				[28849] = 136052,
-				[44256] = 136043,
-				[10467] = 136043,
-				[27624] = 136043,
-				[8004] = 136043,
-				[46181] = 136043,
-				[28850] = 133439,
-				[25420] = 136043,
-				[8008] = 136043,
-				[10466] = 136043,
-				[10468] = 136043,
-				[8010] = 136043,
+				[4144] = 136077,
+				[4940] = 136016,
 			},
 		},
 		["QA Debug Nature Spell - 1000 Damage"] = {
@@ -90257,12 +90307,9 @@ WeakAurasOptionsSaved = {
 				[39294] = 136129,
 			},
 		},
-		["Freezing Trap Effect"] = {
+		["Summon Lupine Delusions"] = {
 			["spells"] = {
-				[3355] = 135834,
-				[14309] = 135834,
-				[14308] = 135834,
-				[31932] = 135834,
+				[7132] = 136222,
 			},
 		},
 		["Capture Treant"] = {
@@ -90276,10 +90323,9 @@ WeakAurasOptionsSaved = {
 				[36171] = 136235,
 			},
 		},
-		["Smokey"] = {
+		["Fire's Glow"] = {
 			["spells"] = {
-				[16714] = 136160,
-				[16715] = 136160,
+				[7363] = 135805,
 			},
 		},
 		["Increased Armor 100"] = {
@@ -90288,9 +90334,9 @@ WeakAurasOptionsSaved = {
 				[41779] = 136235,
 			},
 		},
-		["Pip is Quickwit"] = {
+		["Opening Relic Coffer"] = {
 			["spells"] = {
-				[16710] = 136235,
+				[13478] = 136235,
 			},
 		},
 		["Fishing Skill +100"] = {
@@ -90324,12 +90370,9 @@ WeakAurasOptionsSaved = {
 				[24183] = 132185,
 			},
 		},
-		["Noggenfogger Elixir"] = {
+		["Stormcloth Headband"] = {
 			["spells"] = {
-				[16589] = 136235,
-				[16593] = 135992,
-				[16591] = 136187,
-				[16595] = 136162,
+				[12083] = 132149,
 			},
 		},
 		["Adamantite Rifle"] = {
@@ -90337,9 +90380,9 @@ WeakAurasOptionsSaved = {
 				[30313] = 136235,
 			},
 		},
-		["Wicked Milking"] = {
+		["Rend Blackhand Mounts"] = {
 			["spells"] = {
-				[16472] = 136067,
+				[16167] = 135990,
 			},
 		},
 		["Divining Scroll Spell"] = {
@@ -90347,9 +90390,9 @@ WeakAurasOptionsSaved = {
 				[6310] = 134938,
 			},
 		},
-		["Shadow Bolt Vortex"] = {
+		["Throw Nightmare Object"] = {
 			["spells"] = {
-				[6963] = 136197,
+				[25004] = 135826,
 			},
 		},
 		["Increase Frost Dam 70"] = {
@@ -90362,9 +90405,9 @@ WeakAurasOptionsSaved = {
 				[40327] = 132102,
 			},
 		},
-		["Summon Rockwing Gargoyles"] = {
+		["Script Test"] = {
 			["spells"] = {
-				[16381] = 136230,
+				[5581] = 136006,
 			},
 		},
 		["Transform Victim"] = {
@@ -90377,9 +90420,9 @@ WeakAurasOptionsSaved = {
 				[34442] = 136235,
 			},
 		},
-		["Juju Guile"] = {
+		["Aspect of the Monkey"] = {
 			["spells"] = {
-				[16327] = 134315,
+				[13163] = 132159,
 			},
 		},
 		["Lord General's Sword"] = {
@@ -90392,11 +90435,13 @@ WeakAurasOptionsSaved = {
 				[22270] = 136106,
 			},
 		},
-		["Improved Lightning Shield"] = {
+		["Improved Demoralizing Shout"] = {
 			["spells"] = {
-				[16290] = 136051,
-				[16261] = 136051,
-				[16291] = 136051,
+				[12879] = 132366,
+				[12876] = 132366,
+				[12324] = 132366,
+				[12878] = 132366,
+				[12877] = 132366,
 			},
 		},
 		["Heavy Bronze Mace"] = {
@@ -90404,16 +90449,14 @@ WeakAurasOptionsSaved = {
 				[3296] = 136192,
 			},
 		},
-		["Nature's Guidance"] = {
+		["Collecting Fallout"] = {
 			["spells"] = {
-				[16196] = 135860,
-				[16180] = 135860,
-				[16198] = 135860,
+				[12709] = 136235,
 			},
 		},
-		["Barrier of Light"] = {
+		["Battle Command"] = {
 			["spells"] = {
-				[16051] = 136235,
+				[5115] = 132277,
 			},
 		},
 		["Item - Purify"] = {
@@ -90432,9 +90475,9 @@ WeakAurasOptionsSaved = {
 				[9058] = 136247,
 			},
 		},
-		["KJORDAN (TEST)"] = {
+		["Arcanoweave Boots"] = {
 			["spells"] = {
-				[2766] = 136235,
+				[26783] = 132149,
 			},
 		},
 		["Tactical Mastery"] = {
@@ -90454,10 +90497,9 @@ WeakAurasOptionsSaved = {
 				[28780] = 135439,
 			},
 		},
-		["Big Bronze Bomb"] = {
+		["Light On Fire"] = {
 			["spells"] = {
-				[3950] = 136235,
-				[4067] = 135826,
+				[17667] = 136235,
 			},
 		},
 		["Orbital Strike"] = {
@@ -90479,35 +90521,36 @@ WeakAurasOptionsSaved = {
 				[11919] = 136188,
 			},
 		},
-		["Hearthstone"] = {
+		["Gas Bomb"] = {
 			["spells"] = {
-				[8690] = 134414,
+				[8901] = 133581,
+				[8902] = 133581,
 			},
 		},
-		["Attack Power 90"] = {
+		["Summon Mutanus the Devourer"] = {
 			["spells"] = {
-				[15831] = 136235,
+				[24624] = 136121,
 			},
 		},
-		["Attack Power 38"] = {
+		["Freeze III PROC"] = {
 			["spells"] = {
-				[15808] = 136235,
+				[2647] = 135860,
 			},
 		},
-		["Long bow shot (TEST)"] = {
+		["Mongoose Boots"] = {
 			["spells"] = {
-				[60] = 136235,
+				[22922] = 136235,
 			},
 		},
-		["Attack Power 34"] = {
+		["Handstitched Leather Belt"] = {
 			["spells"] = {
-				[15806] = 136235,
+				[3753] = 136247,
 			},
 		},
-		["Goblin Sapper Charge"] = {
+		["Frost Specialization"] = {
 			["spells"] = {
-				[12760] = 136235,
-				[13241] = 135826,
+				[4870] = 135848,
+				[4877] = 135858,
 			},
 		},
 		["Armor Penetration 105"] = {
@@ -90515,9 +90558,9 @@ WeakAurasOptionsSaved = {
 				[39925] = 135869,
 			},
 		},
-		["Summon Rookery Whelp"] = {
+		["Reduced to Rubble"] = {
 			["spells"] = {
-				[15745] = 136235,
+				[3673] = 136025,
 			},
 		},
 		["Cleave"] = {
@@ -90573,44 +90616,44 @@ WeakAurasOptionsSaved = {
 				[75] = 132369,
 			},
 		},
-		["Flamecrack"] = {
+		["Rainbow Fin Albacore"] = {
 			["spells"] = {
-				[15743] = 135805,
+				[7827] = 136192,
 			},
 		},
-		["Linken's Boomerang"] = {
+		["Increased Fire Resist 02"] = {
 			["spells"] = {
-				[15712] = 135646,
+				[14582] = 136235,
 			},
 		},
-		["Increased Hit Rating 50"] = {
+		["Large Red Rocket"] = {
 			["spells"] = {
-				[15468] = 136235,
+				[26336] = 136235,
+				[26422] = 136235,
 			},
 		},
-		["Legendary Arcane Amalgamation"] = {
+		["Swift White Steed"] = {
 			["spells"] = {
-				[15463] = 136235,
-				[15490] = 136235,
+				[23228] = 132261,
 			},
 		},
-		["Gnomish Death Ray"] = {
+		["Hillman's Leather Vest"] = {
 			["spells"] = {
-				[13278] = 136197,
-				[13279] = 136197,
-				[13493] = 136197,
-				[13280] = 136197,
-				[12759] = 136235,
+				[3762] = 136247,
 			},
 		},
-		["Enchant Bracer - Minor Health"] = {
+		["Boar Charge"] = {
 			["spells"] = {
-				[7418] = 135913,
+				[3385] = 136231,
+				[40772] = 136231,
+				[25999] = 132184,
+				[40259] = 136231,
 			},
 		},
-		["Encaged Emberseer"] = {
+		["Heavy Runecloth Bandage"] = {
 			["spells"] = {
-				[15282] = 136121,
+				[18630] = 136192,
+				[18632] = 133682,
 			},
 		},
 		["Bracers of Shackled Souls"] = {
@@ -90633,9 +90676,15 @@ WeakAurasOptionsSaved = {
 				[17563] = 134459,
 			},
 		},
-		["Rough Grinding Stone"] = {
+		["Create Soulstone"] = {
 			["spells"] = {
-				[3320] = 136192,
+				[20755] = 136210,
+				[693] = 136210,
+				[20022] = 136210,
+				[20752] = 136210,
+				[27238] = 136210,
+				[20757] = 136210,
+				[20756] = 136210,
 			},
 		},
 		["Siphon Life"] = {
@@ -90656,9 +90705,9 @@ WeakAurasOptionsSaved = {
 				[32604] = 135441,
 			},
 		},
-		["Inner Focus"] = {
+		["Increase Nature Dam 36"] = {
 			["spells"] = {
-				[14751] = 135863,
+				[17994] = 136235,
 			},
 		},
 		["Headless Horseman - Just Looted Water Barrel"] = {
@@ -90666,19 +90715,19 @@ WeakAurasOptionsSaved = {
 				[44410] = 136235,
 			},
 		},
-		["Increased Arcane Resist 11"] = {
+		["Teleport: Ironforge"] = {
 			["spells"] = {
-				[14713] = 136235,
+				[3562] = 135757,
 			},
 		},
-		["Increased Shadow Resist 36"] = {
+		["Increased Stamina 42"] = {
 			["spells"] = {
-				[14698] = 136235,
+				[14954] = 136235,
 			},
 		},
-		["Walk of Fire Trigger (DNC)"] = {
+		["Lily Root"] = {
 			["spells"] = {
-				[269] = 136235,
+				[18832] = 136235,
 			},
 		},
 		["Shadow Spiral"] = {
@@ -90697,14 +90746,14 @@ WeakAurasOptionsSaved = {
 				[44071] = 136235,
 			},
 		},
-		["Increased Nature Resist 22"] = {
+		["Increased Block 7"] = {
 			["spells"] = {
-				[14644] = 136235,
+				[21471] = 136235,
 			},
 		},
-		["Increased Nature Resist 01"] = {
+		["Frenzy Aura"] = {
 			["spells"] = {
-				[14622] = 136235,
+				[25801] = 135906,
 			},
 		},
 		["\"Plucky\" Resumes Chicken Form"] = {
@@ -90764,24 +90813,24 @@ WeakAurasOptionsSaved = {
 				[15087] = 136205,
 			},
 		},
-		["Increased Frost Resist 30"] = {
+		["Searing Golden Blade"] = {
 			["spells"] = {
-				[14569] = 136235,
+				[15973] = 136192,
 			},
 		},
-		["Increased Frost Resist 04"] = {
+		["Elune's Grace"] = {
 			["spells"] = {
-				[14545] = 136235,
+				[2651] = 135900,
 			},
 		},
-		["Creeper Venom"] = {
+		["Philosopher's Stone"] = {
 			["spells"] = {
-				[14532] = 136067,
+				[11459] = 136235,
 			},
 		},
-		["Increased Strength 24"] = {
+		["Arantir's Anger"] = {
 			["spells"] = {
-				[14496] = 136235,
+				[9733] = 132369,
 			},
 		},
 		["Sweeping Slam"] = {
@@ -90790,31 +90839,34 @@ WeakAurasOptionsSaved = {
 				[25322] = 132111,
 			},
 		},
-		["Increased Spirit 34"] = {
+		["Minor Blocking"] = {
 			["spells"] = {
-				[14456] = 136235,
+				[13462] = 136235,
 			},
 		},
-		["Ritual of Summoning"] = {
+		["Juju Ember"] = {
 			["spells"] = {
-				[32899] = 136223,
-				[32929] = 136223,
-				[46546] = 136223,
-				[32928] = 136223,
-				[40335] = 135270,
-				[32948] = 136223,
-				[698] = 136223,
+				[16326] = 134317,
 			},
 		},
-		["Poisoned Shot"] = {
+		["Fishing Skill +75"] = {
 			["spells"] = {
-				[8275] = 132273,
-				[8806] = 132273,
+				[8084] = 136245,
 			},
 		},
-		["Increased Spirit 26"] = {
+		["Raptor Strike"] = {
 			["spells"] = {
-				[14448] = 136235,
+				[14265] = 132223,
+				[2973] = 132223,
+				[14260] = 132223,
+				[14262] = 132223,
+				[14264] = 132223,
+				[14266] = 132223,
+				[31566] = 135275,
+				[27014] = 132223,
+				[14261] = 132223,
+				[14263] = 132223,
+				[32915] = 135275,
 			},
 		},
 		["Call of the Forest"] = {
@@ -90868,18 +90920,14 @@ WeakAurasOptionsSaved = {
 				[43910] = 132792,
 			},
 		},
-		["Plague Cloud"] = {
+		["Curiously Tasty Omelet"] = {
 			["spells"] = {
-				[15728] = 136127,
-				[12001] = 136127,
-				[3256] = 136127,
-				[29350] = 132099,
-				[30122] = 132099,
+				[3376] = 136192,
 			},
 		},
-		["Gorishi Egg"] = {
+		["Supercharge"] = {
 			["spells"] = {
-				[14205] = 136006,
+				[10732] = 135990,
 			},
 		},
 		["Strength of Ossirian"] = {
@@ -90898,9 +90946,9 @@ WeakAurasOptionsSaved = {
 				[10252] = 136025,
 			},
 		},
-		["Smite Slam"] = {
+		["Touch of Death"] = {
 			["spells"] = {
-				[6435] = 132939,
+				[3108] = 136230,
 			},
 		},
 		["Lift Seal"] = {
@@ -90918,10 +90966,9 @@ WeakAurasOptionsSaved = {
 				[39793] = 136235,
 			},
 		},
-		["Increased Block 10"] = {
+		["Increased Fire Resist 18"] = {
 			["spells"] = {
-				[13675] = 136235,
-				[41885] = 136235,
+				[14598] = 136235,
 			},
 		},
 		["Large Copper Bomb"] = {
@@ -90935,19 +90982,9 @@ WeakAurasOptionsSaved = {
 				[28950] = 136235,
 			},
 		},
-		["Increased Parry 20"] = {
+		["Diseased Shot"] = {
 			["spells"] = {
-				[13665] = 136235,
-				[41723] = 136235,
-				[41701] = 136235,
-				[41769] = 136235,
-				[41717] = 136235,
-				[41793] = 136235,
-				[41674] = 136235,
-				[41742] = 136235,
-				[41690] = 136235,
-				[41803] = 136235,
-				[41817] = 136235,
+				[11397] = 136127,
 			},
 		},
 		["Wild Polymorph"] = {
@@ -90970,9 +91007,9 @@ WeakAurasOptionsSaved = {
 				[24974] = 136045,
 			},
 		},
-		["Malfunction"] = {
+		["Destroy Ghost Magnet"] = {
 			["spells"] = {
-				[13319] = 135805,
+				[19571] = 136235,
 			},
 		},
 		["Throw Short Pass"] = {
@@ -90995,24 +91032,9 @@ WeakAurasOptionsSaved = {
 				[18412] = 132149,
 			},
 		},
-		["Inferno"] = {
+		["Icy Energy"] = {
 			["spells"] = {
-				[1122] = 136219,
-				[19695] = 135818,
-				[22699] = 135860,
-				[358663] = 136219,
-				[39346] = 135818,
-				[39941] = 136219,
-				[38939] = 136219,
-				[31299] = 136219,
-				[35268] = 135818,
-				[1413] = 136219,
-				[33679] = 136219,
-				[24670] = 136219,
-				[37625] = 136219,
-				[19698] = 135818,
-				[35283] = 135818,
-				[34249] = 136219,
+				[24405] = 135845,
 			},
 		},
 		["Cold Snap"] = {
@@ -91020,9 +91042,10 @@ WeakAurasOptionsSaved = {
 				[11958] = 135865,
 			},
 		},
-		["Deepdive Helmet"] = {
+		["Spawn Smoke"] = {
 			["spells"] = {
-				[12617] = 136235,
+				[10389] = 136235,
+				[29802] = 136235,
 			},
 		},
 		["Increase Holy Dam 3"] = {
@@ -91035,16 +91058,14 @@ WeakAurasOptionsSaved = {
 				[29686] = 136235,
 			},
 		},
-		["Ghoul Rot"] = {
+		["Paralyzing Poison"] = {
 			["spells"] = {
-				[12539] = 136134,
-				[12541] = 136134,
-				[16800] = 136134,
+				[3609] = 132274,
 			},
 		},
-		["Simple Kilt"] = {
+		["Living Flame Passive"] = {
 			["spells"] = {
-				[12046] = 132149,
+				[5111] = 135805,
 			},
 		},
 		["Fury of the Bogling"] = {
@@ -91052,14 +91073,18 @@ WeakAurasOptionsSaved = {
 				[5665] = 136101,
 			},
 		},
-		["Ornate Mithril Helm"] = {
+		["Hardiness"] = {
 			["spells"] = {
-				[9980] = 136192,
+				[20573] = 133125,
 			},
 		},
-		["Call of Sul'thraze"] = {
+		["Iron Will"] = {
 			["spells"] = {
-				[11654] = 136235,
+				[12959] = 135995,
+				[12960] = 135995,
+				[12961] = 135995,
+				[12300] = 135995,
+				[12962] = 135995,
 			},
 		},
 		["Crispy Bat Wing"] = {
@@ -91067,14 +91092,30 @@ WeakAurasOptionsSaved = {
 				[15935] = 136192,
 			},
 		},
-		["Empty Phial"] = {
+		["Frost Breath"] = {
 			["spells"] = {
-				[11513] = 136235,
+				[30101] = 136235,
+				[3129] = 135848,
+				[16099] = 135848,
+				[29318] = 135833,
+				[45200] = 135846,
+				[3131] = 135848,
+				[45199] = 135846,
+				[21099] = 135848,
+				[30930] = 135848,
+				[44799] = 135844,
+				[16340] = 135848,
+				[31688] = 135846,
+				[45065] = 135844,
+				[22479] = 135848,
+				[16094] = 135848,
+				[28524] = 135833,
 			},
 		},
-		["Elixir of Agility"] = {
+		["Compact Harvest Reaper"] = {
 			["spells"] = {
-				[11449] = 136235,
+				[4078] = 136172,
+				[7979] = 136172,
 			},
 		},
 		["Ultra-Spectropic Detection Goggles"] = {
@@ -91082,62 +91123,41 @@ WeakAurasOptionsSaved = {
 				[30318] = 136235,
 			},
 		},
-		["Pyroblast"] = {
+		["Uber Heal Over Time"] = {
 			["spells"] = {
-				[24995] = 135817,
-				[12522] = 135808,
-				[36819] = 135812,
-				[33938] = 135808,
-				[12523] = 135808,
-				[12524] = 135808,
-				[33975] = 135808,
-				[20228] = 135808,
-				[29978] = 135812,
-				[12525] = 135808,
-				[12526] = 135808,
-				[36277] = 135808,
-				[41578] = 135808,
-				[38535] = 135808,
-				[31263] = 135808,
-				[17273] = 135808,
-				[27132] = 135808,
-				[17274] = 135808,
-				[18809] = 135808,
-				[12505] = 135808,
-				[11366] = 135808,
-				[29459] = 135808,
+				[1908] = 135923,
 			},
 		},
-		["Arcane Concentration"] = {
+		["Summon Nightmare Ectoplasm"] = {
 			["spells"] = {
-				[12574] = 136170,
-				[11213] = 136170,
-				[12575] = 136170,
-				[12576] = 136170,
-				[12577] = 136170,
+				[7969] = 136121,
 			},
 		},
-		["Frostbite"] = {
+		["Fishing"] = {
 			["spells"] = {
-				[12497] = 135842,
-				[12494] = 135842,
-				[11071] = 135842,
-				[12496] = 135842,
+				[33095] = 136245,
+				[7620] = 136245,
+				[24303] = 136235,
+				[13615] = 136235,
+				[7731] = 136245,
+				[45698] = 136235,
+				[18248] = 136245,
+				[7732] = 136245,
 			},
 		},
-		["Soul Explosion"] = {
+		["Enchant Chest - Minor Health"] = {
 			["spells"] = {
-				[10828] = 136168,
+				[7420] = 135913,
 			},
 		},
-		["Summon Purple Tallstrider"] = {
+		["Summon Rocky Base"] = {
 			["spells"] = {
-				[10803] = 132253,
+				[26287] = 136235,
 			},
 		},
-		["Nightscape Tunic"] = {
+		["Summon Cadaverous Worm"] = {
 			["spells"] = {
-				[10499] = 136247,
+				[22825] = 136168,
 			},
 		},
 		["Mongoose Bite"] = {
@@ -91160,24 +91180,25 @@ WeakAurasOptionsSaved = {
 				[6409] = 132092,
 			},
 		},
-		["Arugal spawn-in spell"] = {
+		["Magic Missile (TEST)"] = {
 			["spells"] = {
-				[10418] = 136235,
+				[58] = 136235,
 			},
 		},
-		["Undead Tracking"] = {
+		["Solid Sharpening Stone"] = {
 			["spells"] = {
-				[10246] = 134179,
+				[9918] = 136192,
 			},
 		},
-		["Tony's God Mode"] = {
+		["Increased Fire Resist 35"] = {
 			["spells"] = {
-				[1234] = 135724,
+				[14615] = 136235,
 			},
 		},
-		["Fishing Skill +5"] = {
+		["Deterrence"] = {
 			["spells"] = {
-				[7823] = 136245,
+				[19263] = 132369,
+				[31567] = 132369,
 			},
 		},
 		["Hot Apple Cider"] = {
@@ -91185,24 +91206,24 @@ WeakAurasOptionsSaved = {
 				[45022] = 136192,
 			},
 		},
-		["Increased Frost Resist 16"] = {
+		["Heavy Scorpid Gauntlets"] = {
 			["spells"] = {
-				[14556] = 136235,
+				[19064] = 136235,
 			},
 		},
-		["Mithril Scale Bracers"] = {
+		["Growl of Fortitude Proc"] = {
 			["spells"] = {
-				[9937] = 136192,
+				[6923] = 132091,
 			},
 		},
-		["Block"] = {
+		["Greater Water Breathing"] = {
 			["spells"] = {
-				[107] = 132110,
+				[22807] = 135859,
 			},
 		},
-		["Magic Potion"] = {
+		["Increased Spirit 11"] = {
 			["spells"] = {
-				[9587] = 136047,
+				[9112] = 136235,
 			},
 		},
 		["Increased Spirit 45"] = {
@@ -91215,9 +91236,13 @@ WeakAurasOptionsSaved = {
 				[33474] = 135849,
 			},
 		},
-		["Increased Stamina 13"] = {
+		["Flametongue Totem Passive"] = {
 			["spells"] = {
-				[9264] = 136235,
+				[16388] = 136040,
+				[10524] = 136040,
+				[8229] = 136040,
+				[8251] = 136040,
+				[25556] = 136040,
 			},
 		},
 		["Denouement Wisp"] = {
@@ -91230,9 +91255,9 @@ WeakAurasOptionsSaved = {
 				[18016] = 136235,
 			},
 		},
-		["Cantation of Manifestation"] = {
+		["Increase Shadow Dam 21"] = {
 			["spells"] = {
-				[9095] = 135994,
+				[9328] = 136235,
 			},
 		},
 		["Target Dummy Passive"] = {
@@ -91240,36 +91265,26 @@ WeakAurasOptionsSaved = {
 				[4044] = 136232,
 			},
 		},
-		["Throw Axe"] = {
+		["Eye Beam"] = {
 			["spells"] = {
-				[42332] = 135573,
-				[40564] = 134520,
-				[40563] = 135681,
-				[16075] = 132399,
+				[341722] = 136014,
+				[32950] = 136014,
+				[26134] = 136014,
 			},
 		},
-		["Berserk"] = {
+		["Dimensional Portal"] = {
 			["spells"] = {
-				[41924] = 136224,
-				[35595] = 136224,
-				[26615] = 132117,
-				[23397] = 136129,
-				[46587] = 136224,
-				[43] = 132277,
-				[31974] = 132117,
-				[28498] = 136224,
-				[45078] = 136206,
-				[32965] = 136146,
-				[21340] = 136146,
-				[26068] = 132117,
-				[47008] = 136224,
-				[26662] = 136224,
-				[27680] = 136224,
+				[6700] = 136235,
 			},
 		},
-		["Remove Unholy Shield"] = {
+		["Rage"] = {
 			["spells"] = {
-				[8916] = 136235,
+				[38380] = 136116,
+				[6612] = 132366,
+				[16789] = 136224,
+				[9174] = 132277,
+				[32888] = 136116,
+				[40417] = 136224,
 			},
 		},
 		["Touch of the Black Claw"] = {
@@ -91294,19 +91309,20 @@ WeakAurasOptionsSaved = {
 				[33876] = 132135,
 			},
 		},
-		["Crimson Silk Gloves"] = {
+		["Drink Potion"] = {
 			["spells"] = {
-				[8804] = 132149,
+				[3359] = 135915,
+				[9956] = 135915,
 			},
 		},
-		["Mark of Shame"] = {
+		["Summon Blue Qiraji Battle Tank"] = {
 			["spells"] = {
-				[6767] = 136122,
+				[25953] = 134398,
 			},
 		},
-		["Hands of Darkness"] = {
+		["Quick Shots"] = {
 			["spells"] = {
-				[8780] = 132149,
+				[6150] = 132347,
 			},
 		},
 		["dmg8"] = {
@@ -91334,14 +91350,16 @@ WeakAurasOptionsSaved = {
 				[18115] = 136235,
 			},
 		},
-		["Shadow Fissure"] = {
+		["Infinite Wisdom Shadow Word: Pain Bonus"] = {
 			["spells"] = {
-				[27810] = 136134,
+				[26172] = 136081,
 			},
 		},
-		["Send Fray Combatant"] = {
+		["Puncturing Wounds"] = {
 			["spells"] = {
-				[8645] = 136235,
+				[13866] = 132090,
+				[13865] = 132090,
+				[13733] = 132090,
 			},
 		},
 		["Coarse Sharpening Stone"] = {
@@ -91354,29 +91372,10 @@ WeakAurasOptionsSaved = {
 				[14487] = 136235,
 			},
 		},
-		["Vengeance"] = {
+		["Fell Curse Effect"] = {
 			["spells"] = {
-				[20052] = 132275,
-				[20053] = 132275,
-				[26331] = 136224,
-				[20054] = 132275,
-				[20055] = 132275,
-				[8602] = 136224,
-				[20056] = 132275,
-				[16910] = 136075,
-				[20057] = 132275,
-				[16911] = 136075,
-				[20058] = 132275,
-				[16912] = 136075,
-				[20059] = 132275,
-				[16913] = 136075,
-				[25790] = 136224,
-				[27650] = 136224,
-				[39445] = 132177,
-				[20049] = 132275,
-				[25164] = 136224,
-				[20050] = 132275,
-				[16909] = 136075,
+				[12942] = 135899,
+				[12943] = 135899,
 			},
 		},
 		["Picnic Blanket"] = {
@@ -91389,9 +91388,9 @@ WeakAurasOptionsSaved = {
 				[35105] = 132325,
 			},
 		},
-		["Summon Wind Howler"] = {
+		["Demonic Transformation"] = {
 			["spells"] = {
-				[8271] = 136018,
+				[24992] = 136218,
 			},
 		},
 		["Berserker Charge"] = {
@@ -91414,19 +91413,20 @@ WeakAurasOptionsSaved = {
 				[39629] = 136235,
 			},
 		},
-		["Enchant Chest - Lesser Health"] = {
+		["Stealth 1"] = {
 			["spells"] = {
-				[7748] = 135913,
+				[9590] = 132320,
 			},
 		},
-		["QA Expert Fishing"] = {
+		["Increase Healing 9"] = {
 			["spells"] = {
-				[7736] = 136245,
+				[7678] = 136235,
+				[40687] = 136235,
 			},
 		},
-		["Add Fire Dam - Weap 10"] = {
+		["Resistance - Fire"] = {
 			["spells"] = {
-				[7724] = 136235,
+				[13652] = 136235,
 			},
 		},
 		["Plant Magic Beans"] = {
@@ -91434,9 +91434,9 @@ WeakAurasOptionsSaved = {
 				[19069] = 134059,
 			},
 		},
-		["Blue Linen Vest"] = {
+		["Summon Baby Murloc (Pink)"] = {
 			["spells"] = {
-				[7630] = 132149,
+				[24989] = 134300,
 			},
 		},
 		["Battlegear of Might"] = {
@@ -91452,9 +91452,9 @@ WeakAurasOptionsSaved = {
 				[14723] = 136235,
 			},
 		},
-		["Gyrochronatom"] = {
+		["Punctured Voodoo Doll PAL DND"] = {
 			["spells"] = {
-				[3961] = 136235,
+				[24285] = 136235,
 			},
 		},
 		["The Forming"] = {
@@ -91462,34 +91462,37 @@ WeakAurasOptionsSaved = {
 				[22990] = 136164,
 			},
 		},
-		["Toxic Saliva"] = {
+		["Orcish Orphan Whistle"] = {
 			["spells"] = {
-				[7125] = 136016,
+				[23125] = 136235,
 			},
 		},
-		["Create Tuber"] = {
+		["Spirit of Zandalar"] = {
 			["spells"] = {
-				[6900] = 133748,
+				[24425] = 132107,
+				[355365] = 132107,
 			},
 		},
-		["Increased Intellect 08"] = {
+		["Deathcharger"] = {
 			["spells"] = {
-				[9104] = 136235,
+				[17481] = 132264,
 			},
 		},
-		["Serpentine Cleansing"] = {
+		["Helboar"] = {
 			["spells"] = {
-				[6270] = 136168,
+				[12896] = 135817,
 			},
 		},
-		["Fade Out"] = {
+		["Feral Instinct"] = {
 			["spells"] = {
-				[5543] = 136047,
+				[16949] = 132089,
+				[16947] = 132089,
+				[16948] = 132089,
 			},
 		},
-		["Ward of Myzrael"] = {
+		["Soulcloth Vest"] = {
 			["spells"] = {
-				[4932] = 136222,
+				[26781] = 132149,
 			},
 		},
 		["Summon Ice Spear Object"] = {
@@ -91497,9 +91500,9 @@ WeakAurasOptionsSaved = {
 				[46369] = 136235,
 			},
 		},
-		["Increased Arcane Resist 28"] = {
+		["Treat"] = {
 			["spells"] = {
-				[14730] = 136235,
+				[24715] = 136235,
 			},
 		},
 		["Opportunity"] = {
@@ -91521,9 +91524,9 @@ WeakAurasOptionsSaved = {
 				[18109] = 136235,
 			},
 		},
-		["Embossed Leather Gloves"] = {
+		["Forge Verigan's Fist"] = {
 			["spells"] = {
-				[3756] = 136247,
+				[8912] = 135959,
 			},
 		},
 		["Increase Spell Dam 194"] = {
@@ -91537,9 +91540,6 @@ WeakAurasOptionsSaved = {
 				[18822] = 136154,
 			},
 		},
-	},
-	["spellCacheAchivements"] = true,
-	["savedSnippets"] = {
 	},
 	["build"] = "43861",
 }
