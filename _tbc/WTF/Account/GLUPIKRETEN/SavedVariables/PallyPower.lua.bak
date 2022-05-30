@@ -38,8 +38,22 @@ PallyPowerDB = {
 	},
 }
 PallyPower_Assignments = {
+	["Axxos"] = {
+		4, -- [1]
+		4, -- [2]
+		4, -- [3]
+		4, -- [4]
+		6, -- [5]
+		4, -- [6]
+		4, -- [7]
+		4, -- [8]
+		1, -- [9]
+		0, -- [10]
+	},
 }
 PallyPower_NormalAssignments = {
+	["Axxos"] = {
+	},
 }
 PallyPower_AuraAssignments = {
 	["Carroll"] = 0,
@@ -56,6 +70,7 @@ PallyPower_AuraAssignments = {
 	["Tathame"] = 0,
 	["Eshquîa"] = 3,
 	["Darcassan"] = 0,
+	["Axxos"] = 7,
 	["Kadiy"] = 1,
 	["Dixuck"] = 3,
 	["Yamadin"] = 2,

@@ -56,6 +56,7 @@ PallyPower_AuraAssignments = {
 	["Tathame"] = 0,
 	["Eshquîa"] = 3,
 	["Darcassan"] = 0,
+	["Axxos"] = 7,
 	["Kadiy"] = 1,
 	["Dixuck"] = 3,
 	["Yamadin"] = 2,
