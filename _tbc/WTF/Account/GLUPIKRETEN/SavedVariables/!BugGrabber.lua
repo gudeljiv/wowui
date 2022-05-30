@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 5286,
 	["lastSanitation"] = 3,
+	["session"] = 5289,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -678,8 +678,8 @@ BugGrabberDB = {
 		}, -- [85]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/03/09 13:39:43",
 			["session"] = 4904,
+			["time"] = "2022/03/09 13:39:43",
 			["counter"] = 6,
 		}, -- [86]
 		{
@@ -724,14 +724,14 @@ BugGrabberDB = {
 		}, -- [91]
 		{
 			["message"] = "  (null)",
-			["time"] = "2022/04/13 16:37:53",
 			["session"] = 4914,
+			["time"] = "2022/04/13 16:37:53",
 			["counter"] = 3,
 		}, -- [92]
 		{
 			["message"] = " (null)",
-			["time"] = "2022/04/11 11:49:12",
 			["session"] = 4914,
+			["time"] = "2022/04/11 11:49:12",
 			["counter"] = 13,
 		}, -- [93]
 		{
@@ -1405,8 +1405,8 @@ BugGrabberDB = {
 			["time"] = "2022/02/15 18:27:27",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 5282,
-			["counter"] = 96,
+			["session"] = 5289,
+			["counter"] = 97,
 		}, -- [178]
 	},
 }

@@ -1,3 +1,10 @@
+VER 3 0000000000000013 " " "132130"
+/click RotBotF3
+END
+VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence Find Herbs,Find Minerals
+END
 VER 3 0000000000000012 " " "132143"
 #showtooltip
 /startattack
@@ -11,22 +18,15 @@ VER 3 000000000000000E " " "136106"
 /run InspectUnit("target")
 /run SortBags()
 END
-VER 3 0000000000000013 " " "132130"
-/click RotBotF3
-END
-VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/castsequence Find Herbs,Find Minerals
-END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:1708
-/castsequence [combat] reset=combat item:3385
+/castsequence [combat] reset=combat item:3827,item:3385
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:1707
-/castsequence [combat] reset=combat item:929
+/castsequence [combat] reset=combat item:1710,item:929
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
