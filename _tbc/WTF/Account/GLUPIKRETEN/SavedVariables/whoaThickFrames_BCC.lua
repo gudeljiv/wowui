@@ -7,7 +7,7 @@ cfg = {
 	["bigAuras"] = true,
 	["selectedTexture"] = 5,
 	["playerFrameIndex"] = 1,
-	["SBTextureName"] = "whoa",
+	["SBTextureName"] = "smooth",
 	["frameMode"] = "dark",
 	["blizzColors"] = false,
 	["showPartyPets"] = false,
@@ -22,6 +22,6 @@ cfg = {
 	["usePartyFrames"] = true,
 	["darkFrames"] = true,
 	["minimapZoom"] = true,
-	["whoaTextureIndex"] = 1,
+	["whoaTextureIndex"] = 15,
 	["playerNameHide"] = true,
 }

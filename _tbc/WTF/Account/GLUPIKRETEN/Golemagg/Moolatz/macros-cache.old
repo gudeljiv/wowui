@@ -5,7 +5,8 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover,exists,nodead][help][] Regrowth
+/cast [stealth] Ravage
+/cast [nostealth][@mouseover,exists,nodead][help][] Regrowth
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -47,6 +48,12 @@ VER 3 000000000100000D " " "INV_MISC_QUESTIONMARK"
 /cancelform [noform:3] 
 /cast [noform:3] Cat Form 
 /cast Dash 
+END
+VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
+#showtooltip Prowl
+/cancelform [noform:3] 
+/cast [noform:3] Cat Form 
+/cast Prowl
 END
 VER 3 0000000001000007 "VuhDoDCShieldData" "Ability_Repair"
 P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1DM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]

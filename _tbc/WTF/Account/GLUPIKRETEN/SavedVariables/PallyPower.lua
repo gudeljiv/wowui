@@ -58,7 +58,9 @@ PallyPower_AuraAssignments = {
 	["Darcassan"] = 0,
 	["Axxos"] = 7,
 	["Kadiy"] = 1,
+	["Auckes-Gehennas"] = 1,
 	["Dixuck"] = 3,
+	["Paintjenll-Gehennas"] = 0,
 	["Yamadin"] = 2,
 	["Canestengyno"] = 1,
 }

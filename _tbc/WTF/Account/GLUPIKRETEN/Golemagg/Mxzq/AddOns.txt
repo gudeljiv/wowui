@@ -137,8 +137,8 @@ Masque: disabled
 Masque_Entropy: disabled
 Masque_Cainyx: disabled
 Masque_Gm_Sr: disabled
-VuhDo: enabled
+VuhDo: disabled
 AdiBags-ItemRackSets: enabled
-VuhDoOptions: enabled
+VuhDoOptions: disabled
 ErrorFilter: enabled
 ErrorMonster: disabled

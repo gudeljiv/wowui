@@ -282,6 +282,9 @@ f:SetScript(
 			UIWidgetTopCenterContainerFrame.SetPoint = function()
 			end
 		end
+
+		EnableAddOn('Blizzard_CompactRaidFrames')
+		EnableAddOn('Blizzard_CUFProfiles')
 	end
 )
 

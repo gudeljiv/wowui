@@ -120,8 +120,8 @@ TidyPlates_ThreatPlates: disabled
 BuyEmAllClassic: enabled
 PitBull4: disabled
 PitBull4_DogTagTexts: disabled
-VuhDo: enabled
+VuhDo: disabled
 AdiBags-ItemRackSets: enabled
-VuhDoOptions: enabled
+VuhDoOptions: disabled
 ErrorFilter: enabled
 ErrorMonster: disabled
