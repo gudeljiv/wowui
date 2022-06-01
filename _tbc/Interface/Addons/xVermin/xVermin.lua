@@ -285,6 +285,15 @@ f:SetScript(
 
 		EnableAddOn('Blizzard_CompactRaidFrames')
 		EnableAddOn('Blizzard_CUFProfiles')
+
+		-- for i = 1, 40 do
+		-- 	for j = 1, 20 do
+		-- 		if _G['CompactPartyFrameMember' .. i .. 'Buff' .. j] then
+		-- 			_G['CompactPartyFrameMember' .. i .. 'Buff' .. j]:CreateBeautyBorder(4)
+		-- 		end
+		-- 		-- CompactPartyFrameMember1Buff1
+		-- 	end
+		-- end
 	end
 )
 

@@ -26,8 +26,8 @@ AtlasLootClassicDB = {
 		["Moolatz - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Dmitar - Golemagg"] = "Default",
@@ -297,7 +297,7 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Battlearm - Hydraxian Waterlords"] = {
+		["Testxv - Golemagg"] = {
 		},
 		["Battlearm - Golemagg"] = {
 		},
@@ -331,8 +331,8 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"TheBloodFurnace", -- [2]
-					3, -- [3]
+					"SethekkHalls", -- [2]
+					2, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},
@@ -356,9 +356,22 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+			["GUI"] = {
+				["selectedGameVersion"] = 1,
+				["selected"] = {
+					nil, -- [1]
+					"ScarletMonasteryLibrary", -- [2]
+					2, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+				["point"] = {
+					"LEFT", -- [1]
+					nil, -- [2]
+					"LEFT", -- [3]
+					296.0728454589844, -- [4]
+					161.2300415039063, -- [5]
+				},
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -371,22 +384,9 @@ AtlasLootClassicDB = {
 					},
 				},
 			},
-			["GUI"] = {
-				["point"] = {
-					"LEFT", -- [1]
-					nil, -- [2]
-					"LEFT", -- [3]
-					296.0728454589844, -- [4]
-					161.2300415039063, -- [5]
-				},
-				["selectedGameVersion"] = 1,
-				["selected"] = {
-					nil, -- [1]
-					"RazorfenDowns", -- [2]
-					4, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Judawise - Golemagg"] = {
@@ -395,7 +395,7 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Testxv - Golemagg"] = {
+		["Battlearm - Hydraxian Waterlords"] = {
 		},
 		["Kosturko - Golemagg"] = {
 			["minimap"] = {

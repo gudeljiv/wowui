@@ -1,0 +1,16 @@
+package-as: EnhancedRaidFrames
+
+enable-nolib-creation: no
+enable-toc-creation: yes
+
+embedded-libraries:
+  - Ace3
+  - LibSharedMedia-3-0
+  - Ace-GUI-3-0-Shared-Media-Widgets
+  - LibDualSpec-1-0
+  - librangecheck-2-0
+  - LibClassicDurations
+  - LibDeflate
+
+ignore:
+  - README.md
