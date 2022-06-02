@@ -1,8 +1,10 @@
 
 AccountWideRaidProfilesDB = {
 	["profileKeys"] = {
-		["Moolatz - Golemagg"] = "10",
 		["Vermin - Golemagg"] = "2-5",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Moolatz - Golemagg"] = "10",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
 		["Vermin - Golemagg"] = {
@@ -19,19 +21,19 @@ AccountWideRaidProfilesDB = {
 					["keepGroupsTogether"] = true,
 					["displayBorder"] = false,
 					["frameHeight"] = 36,
-					["displayPets"] = true,
-					["frameWidth"] = 72,
+					["autoActivatePvP"] = false,
+					["displayMainTankAndAssist"] = true,
 					["displayPowerBar"] = false,
 					["displayOnlyDispellableDebuffs"] = true,
-					["sortBy"] = "group",
-					["useClassColors"] = true,
-					["autoActivate5Players"] = false,
-					["autoActivate40Players"] = false,
-					["autoActivate20Players"] = false,
-					["autoActivate15Players"] = false,
 					["autoActivate10Players"] = false,
-					["displayMainTankAndAssist"] = true,
-					["autoActivatePvP"] = false,
+					["autoActivate15Players"] = false,
+					["autoActivate5Players"] = false,
+					["autoActivate20Players"] = false,
+					["autoActivate40Players"] = false,
+					["useClassColors"] = true,
+					["sortBy"] = "group",
+					["frameWidth"] = 72,
+					["displayPets"] = true,
 				}, -- [1]
 				{
 					["autoActivate2Players"] = false,
@@ -45,19 +47,19 @@ AccountWideRaidProfilesDB = {
 					["keepGroupsTogether"] = true,
 					["displayBorder"] = false,
 					["frameHeight"] = 48,
-					["displayPets"] = true,
-					["frameWidth"] = 75,
+					["autoActivatePvP"] = false,
+					["displayMainTankAndAssist"] = false,
 					["displayPowerBar"] = true,
 					["displayOnlyDispellableDebuffs"] = true,
-					["sortBy"] = "group",
-					["useClassColors"] = true,
-					["autoActivate5Players"] = false,
-					["autoActivate40Players"] = true,
-					["autoActivate20Players"] = true,
-					["autoActivate15Players"] = false,
 					["autoActivate10Players"] = false,
-					["displayMainTankAndAssist"] = false,
-					["autoActivatePvP"] = false,
+					["autoActivate15Players"] = false,
+					["autoActivate5Players"] = false,
+					["autoActivate20Players"] = true,
+					["autoActivate40Players"] = true,
+					["useClassColors"] = true,
+					["sortBy"] = "group",
+					["frameWidth"] = 75,
+					["displayPets"] = true,
 				}, -- [2]
 				{
 					["autoActivate2Players"] = false,
@@ -71,19 +73,19 @@ AccountWideRaidProfilesDB = {
 					["keepGroupsTogether"] = true,
 					["displayBorder"] = false,
 					["frameHeight"] = 51,
-					["displayPets"] = true,
-					["frameWidth"] = 121,
+					["autoActivatePvP"] = false,
+					["displayMainTankAndAssist"] = false,
 					["displayPowerBar"] = true,
 					["displayOnlyDispellableDebuffs"] = true,
-					["sortBy"] = "group",
-					["useClassColors"] = true,
-					["autoActivate5Players"] = false,
-					["autoActivate40Players"] = false,
-					["autoActivate20Players"] = false,
-					["autoActivate15Players"] = true,
 					["autoActivate10Players"] = true,
-					["displayMainTankAndAssist"] = false,
-					["autoActivatePvP"] = false,
+					["autoActivate15Players"] = true,
+					["autoActivate5Players"] = false,
+					["autoActivate20Players"] = false,
+					["autoActivate40Players"] = false,
+					["useClassColors"] = true,
+					["sortBy"] = "group",
+					["frameWidth"] = 121,
+					["displayPets"] = true,
 				}, -- [3]
 				{
 					["autoActivate2Players"] = true,
@@ -97,19 +99,19 @@ AccountWideRaidProfilesDB = {
 					["keepGroupsTogether"] = true,
 					["displayBorder"] = false,
 					["frameHeight"] = 51,
-					["displayPets"] = true,
-					["frameWidth"] = 121,
+					["autoActivatePvP"] = false,
+					["displayMainTankAndAssist"] = false,
 					["displayPowerBar"] = true,
 					["displayOnlyDispellableDebuffs"] = true,
-					["sortBy"] = "group",
-					["useClassColors"] = true,
-					["autoActivate5Players"] = true,
-					["autoActivate40Players"] = false,
-					["autoActivate20Players"] = false,
-					["autoActivate15Players"] = false,
 					["autoActivate10Players"] = false,
-					["displayMainTankAndAssist"] = false,
-					["autoActivatePvP"] = false,
+					["autoActivate15Players"] = false,
+					["autoActivate5Players"] = true,
+					["autoActivate20Players"] = false,
+					["autoActivate40Players"] = false,
+					["useClassColors"] = true,
+					["sortBy"] = "group",
+					["frameWidth"] = 121,
+					["displayPets"] = true,
 				}, -- [4]
 			},
 			["frameStyle"] = "1",
@@ -159,6 +161,62 @@ AccountWideRaidProfilesDB = {
 				"2-5", -- [4]
 			},
 		},
+		["Mxyz - Golemagg"] = {
+			["options"] = {
+				{
+					["autoActivate2Players"] = false,
+					["horizontalGroups"] = false,
+					["shown"] = true,
+					["healthText"] = "perc",
+					["displayNonBossDebuffs"] = true,
+					["autoActivatePvE"] = false,
+					["autoActivate3Players"] = false,
+					["locked"] = true,
+					["keepGroupsTogether"] = false,
+					["displayBorder"] = false,
+					["frameHeight"] = 30,
+					["autoActivatePvP"] = false,
+					["displayMainTankAndAssist"] = true,
+					["displayPowerBar"] = false,
+					["displayOnlyDispellableDebuffs"] = false,
+					["autoActivate10Players"] = false,
+					["autoActivate15Players"] = false,
+					["autoActivate5Players"] = false,
+					["autoActivate20Players"] = false,
+					["autoActivate40Players"] = false,
+					["useClassColors"] = true,
+					["sortBy"] = "role",
+					["frameWidth"] = 182,
+					["displayPets"] = false,
+				}, -- [1]
+			},
+			["frameStyle"] = "1",
+			["lastProfile"] = "Primary",
+			["positions"] = {
+				{
+					true, -- [1]
+					"TOP", -- [2]
+					0, -- [3]
+					"TOP", -- [4]
+					0, -- [5]
+					"ATTACHED", -- [6]
+					0, -- [7]
+				}, -- [1]
+			},
+			["profiles"] = {
+				"Primary", -- [1]
+			},
+		},
+		["Mxzq - Golemagg"] = {
+			["frameStyle"] = "1",
+			["positions"] = {
+			},
+			["options"] = {
+			},
+			["profiles"] = {
+				"Primary", -- [1]
+			},
+		},
 		["20-40"] = {
 			["options"] = {
 				{
@@ -173,19 +231,19 @@ AccountWideRaidProfilesDB = {
 					["keepGroupsTogether"] = false,
 					["displayBorder"] = true,
 					["frameHeight"] = 36,
-					["frameWidth"] = 72,
-					["displayPets"] = false,
+					["autoActivatePvP"] = false,
+					["displayMainTankAndAssist"] = true,
 					["displayPowerBar"] = false,
 					["displayOnlyDispellableDebuffs"] = false,
-					["sortBy"] = "role",
-					["useClassColors"] = false,
-					["autoActivate5Players"] = true,
-					["autoActivate40Players"] = false,
-					["autoActivate20Players"] = false,
-					["autoActivate15Players"] = false,
 					["autoActivate10Players"] = false,
-					["displayMainTankAndAssist"] = true,
-					["autoActivatePvP"] = false,
+					["autoActivate15Players"] = false,
+					["autoActivate5Players"] = true,
+					["autoActivate20Players"] = false,
+					["autoActivate40Players"] = false,
+					["useClassColors"] = false,
+					["sortBy"] = "role",
+					["displayPets"] = false,
+					["frameWidth"] = 72,
 				}, -- [1]
 				{
 					["autoActivate2Players"] = true,
@@ -199,19 +257,19 @@ AccountWideRaidProfilesDB = {
 					["keepGroupsTogether"] = true,
 					["displayBorder"] = false,
 					["frameHeight"] = 65,
-					["frameWidth"] = 140,
-					["displayPets"] = false,
+					["autoActivatePvP"] = false,
+					["displayMainTankAndAssist"] = false,
 					["displayPowerBar"] = true,
 					["displayOnlyDispellableDebuffs"] = true,
-					["sortBy"] = "group",
-					["useClassColors"] = true,
-					["autoActivate5Players"] = true,
-					["autoActivate40Players"] = false,
-					["autoActivate20Players"] = false,
-					["autoActivate15Players"] = false,
 					["autoActivate10Players"] = false,
-					["displayMainTankAndAssist"] = false,
-					["autoActivatePvP"] = false,
+					["autoActivate15Players"] = false,
+					["autoActivate5Players"] = true,
+					["autoActivate20Players"] = false,
+					["autoActivate40Players"] = false,
+					["useClassColors"] = true,
+					["sortBy"] = "group",
+					["displayPets"] = false,
+					["frameWidth"] = 140,
 				}, -- [2]
 				{
 					["autoActivate2Players"] = false,
@@ -225,19 +283,19 @@ AccountWideRaidProfilesDB = {
 					["keepGroupsTogether"] = true,
 					["displayBorder"] = false,
 					["frameHeight"] = 65,
-					["frameWidth"] = 140,
-					["displayPets"] = false,
+					["autoActivatePvP"] = false,
+					["displayMainTankAndAssist"] = false,
 					["displayPowerBar"] = true,
 					["displayOnlyDispellableDebuffs"] = true,
-					["sortBy"] = "group",
-					["useClassColors"] = true,
-					["autoActivate5Players"] = false,
-					["autoActivate40Players"] = false,
-					["autoActivate20Players"] = false,
-					["autoActivate15Players"] = false,
 					["autoActivate10Players"] = true,
-					["displayMainTankAndAssist"] = false,
-					["autoActivatePvP"] = false,
+					["autoActivate15Players"] = false,
+					["autoActivate5Players"] = false,
+					["autoActivate20Players"] = false,
+					["autoActivate40Players"] = false,
+					["useClassColors"] = true,
+					["sortBy"] = "group",
+					["displayPets"] = false,
+					["frameWidth"] = 140,
 				}, -- [3]
 				{
 					["autoActivate2Players"] = false,
@@ -251,19 +309,19 @@ AccountWideRaidProfilesDB = {
 					["keepGroupsTogether"] = true,
 					["displayBorder"] = false,
 					["frameHeight"] = 65,
-					["frameWidth"] = 140,
-					["displayPets"] = false,
+					["autoActivatePvP"] = false,
+					["displayMainTankAndAssist"] = false,
 					["displayPowerBar"] = true,
 					["displayOnlyDispellableDebuffs"] = true,
-					["sortBy"] = "group",
-					["useClassColors"] = true,
-					["autoActivate5Players"] = false,
-					["autoActivate40Players"] = false,
-					["autoActivate20Players"] = false,
-					["autoActivate15Players"] = true,
 					["autoActivate10Players"] = false,
-					["displayMainTankAndAssist"] = false,
-					["autoActivatePvP"] = false,
+					["autoActivate15Players"] = true,
+					["autoActivate5Players"] = false,
+					["autoActivate20Players"] = false,
+					["autoActivate40Players"] = false,
+					["useClassColors"] = true,
+					["sortBy"] = "group",
+					["displayPets"] = false,
+					["frameWidth"] = 140,
 				}, -- [4]
 				{
 					["autoActivate2Players"] = false,
@@ -277,19 +335,19 @@ AccountWideRaidProfilesDB = {
 					["keepGroupsTogether"] = true,
 					["displayBorder"] = false,
 					["frameHeight"] = 55,
-					["frameWidth"] = 75,
-					["displayPets"] = false,
+					["autoActivatePvP"] = false,
+					["displayMainTankAndAssist"] = false,
 					["displayPowerBar"] = true,
 					["displayOnlyDispellableDebuffs"] = true,
-					["sortBy"] = "group",
-					["useClassColors"] = true,
-					["autoActivate5Players"] = false,
-					["autoActivate40Players"] = true,
-					["autoActivate20Players"] = true,
-					["autoActivate15Players"] = true,
 					["autoActivate10Players"] = false,
-					["displayMainTankAndAssist"] = false,
-					["autoActivatePvP"] = false,
+					["autoActivate15Players"] = true,
+					["autoActivate5Players"] = false,
+					["autoActivate20Players"] = true,
+					["autoActivate40Players"] = true,
+					["useClassColors"] = true,
+					["sortBy"] = "group",
+					["displayPets"] = false,
+					["frameWidth"] = 75,
 				}, -- [5]
 			},
 			["frameStyle"] = "1",
@@ -349,160 +407,6 @@ AccountWideRaidProfilesDB = {
 				"20-40", -- [5]
 			},
 		},
-		["2-5"] = {
-			["options"] = {
-				{
-					["autoActivate2Players"] = true,
-					["horizontalGroups"] = false,
-					["shown"] = true,
-					["healthText"] = "none",
-					["displayNonBossDebuffs"] = true,
-					["autoActivatePvE"] = false,
-					["autoActivate3Players"] = true,
-					["locked"] = true,
-					["keepGroupsTogether"] = false,
-					["displayBorder"] = true,
-					["frameHeight"] = 36,
-					["autoActivatePvP"] = false,
-					["autoActivate40Players"] = false,
-					["displayPowerBar"] = false,
-					["displayOnlyDispellableDebuffs"] = false,
-					["autoActivate20Players"] = false,
-					["autoActivate15Players"] = false,
-					["autoActivate5Players"] = true,
-					["autoActivate10Players"] = false,
-					["displayMainTankAndAssist"] = true,
-					["useClassColors"] = false,
-					["sortBy"] = "role",
-					["displayPets"] = false,
-					["frameWidth"] = 72,
-				}, -- [1]
-				{
-					["autoActivate2Players"] = false,
-					["horizontalGroups"] = false,
-					["shown"] = true,
-					["healthText"] = "perc",
-					["displayNonBossDebuffs"] = true,
-					["autoActivatePvE"] = true,
-					["autoActivate3Players"] = false,
-					["locked"] = true,
-					["keepGroupsTogether"] = true,
-					["displayBorder"] = false,
-					["frameHeight"] = 65,
-					["autoActivatePvP"] = false,
-					["autoActivate40Players"] = false,
-					["displayPowerBar"] = true,
-					["displayOnlyDispellableDebuffs"] = true,
-					["autoActivate20Players"] = false,
-					["autoActivate15Players"] = false,
-					["autoActivate5Players"] = false,
-					["autoActivate10Players"] = true,
-					["displayMainTankAndAssist"] = false,
-					["useClassColors"] = true,
-					["sortBy"] = "group",
-					["displayPets"] = false,
-					["frameWidth"] = 140,
-				}, -- [2]
-				{
-					["autoActivate2Players"] = false,
-					["horizontalGroups"] = false,
-					["shown"] = true,
-					["healthText"] = "perc",
-					["displayNonBossDebuffs"] = true,
-					["autoActivatePvE"] = true,
-					["autoActivate3Players"] = false,
-					["locked"] = true,
-					["keepGroupsTogether"] = true,
-					["displayBorder"] = false,
-					["frameHeight"] = 65,
-					["autoActivatePvP"] = false,
-					["autoActivate40Players"] = false,
-					["displayPowerBar"] = true,
-					["displayOnlyDispellableDebuffs"] = true,
-					["autoActivate20Players"] = false,
-					["autoActivate15Players"] = false,
-					["autoActivate5Players"] = false,
-					["autoActivate10Players"] = true,
-					["displayMainTankAndAssist"] = false,
-					["useClassColors"] = true,
-					["sortBy"] = "group",
-					["displayPets"] = false,
-					["frameWidth"] = 140,
-				}, -- [3]
-				{
-					["autoActivate2Players"] = false,
-					["horizontalGroups"] = false,
-					["shown"] = true,
-					["healthText"] = "perc",
-					["displayNonBossDebuffs"] = true,
-					["autoActivatePvE"] = true,
-					["autoActivate3Players"] = false,
-					["locked"] = true,
-					["keepGroupsTogether"] = true,
-					["displayBorder"] = false,
-					["frameHeight"] = 65,
-					["autoActivatePvP"] = false,
-					["autoActivate40Players"] = true,
-					["displayPowerBar"] = true,
-					["displayOnlyDispellableDebuffs"] = true,
-					["autoActivate20Players"] = true,
-					["autoActivate15Players"] = false,
-					["autoActivate5Players"] = false,
-					["autoActivate10Players"] = false,
-					["displayMainTankAndAssist"] = false,
-					["useClassColors"] = true,
-					["sortBy"] = "group",
-					["displayPets"] = false,
-					["frameWidth"] = 140,
-				}, -- [4]
-			},
-			["frameStyle"] = "1",
-			["lastProfile"] = "2-5",
-			["positions"] = {
-				{
-					true, -- [1]
-					"TOP", -- [2]
-					0, -- [3]
-					"TOP", -- [4]
-					0, -- [5]
-					"ATTACHED", -- [6]
-					0, -- [7]
-				}, -- [1]
-				{
-					false, -- [1]
-					"TOP", -- [2]
-					374, -- [3]
-					"BOTTOM", -- [4]
-					644, -- [5]
-					"LEFT", -- [6]
-					650, -- [7]
-				}, -- [2]
-				{
-					false, -- [1]
-					"TOP", -- [2]
-					374, -- [3]
-					"BOTTOM", -- [4]
-					450, -- [5]
-					"LEFT", -- [6]
-					650, -- [7]
-				}, -- [3]
-				{
-					false, -- [1]
-					"TOP", -- [2]
-					374, -- [3]
-					"BOTTOM", -- [4]
-					450, -- [5]
-					"LEFT", -- [6]
-					650, -- [7]
-				}, -- [4]
-			},
-			["profiles"] = {
-				"Primary", -- [1]
-				"2-5", -- [2]
-				"10", -- [3]
-				"20-40", -- [4]
-			},
-		},
 		["10"] = {
 			["options"] = {
 				{
@@ -517,19 +421,19 @@ AccountWideRaidProfilesDB = {
 					["keepGroupsTogether"] = false,
 					["displayBorder"] = true,
 					["frameHeight"] = 36,
-					["autoActivatePvP"] = false,
-					["displayMainTankAndAssist"] = true,
-					["displayPowerBar"] = false,
-					["displayOnlyDispellableDebuffs"] = false,
-					["autoActivate10Players"] = false,
-					["autoActivate15Players"] = false,
-					["autoActivate5Players"] = true,
-					["autoActivate20Players"] = false,
-					["autoActivate40Players"] = false,
-					["useClassColors"] = false,
-					["sortBy"] = "role",
 					["frameWidth"] = 72,
 					["displayPets"] = false,
+					["displayPowerBar"] = false,
+					["displayOnlyDispellableDebuffs"] = false,
+					["sortBy"] = "role",
+					["useClassColors"] = false,
+					["autoActivate5Players"] = true,
+					["autoActivate40Players"] = false,
+					["autoActivate20Players"] = false,
+					["autoActivate15Players"] = false,
+					["autoActivate10Players"] = false,
+					["displayMainTankAndAssist"] = true,
+					["autoActivatePvP"] = false,
 				}, -- [1]
 				{
 					["autoActivate2Players"] = false,
@@ -543,19 +447,19 @@ AccountWideRaidProfilesDB = {
 					["keepGroupsTogether"] = true,
 					["displayBorder"] = false,
 					["frameHeight"] = 65,
-					["autoActivatePvP"] = false,
-					["displayMainTankAndAssist"] = false,
-					["displayPowerBar"] = true,
-					["displayOnlyDispellableDebuffs"] = true,
-					["autoActivate10Players"] = true,
-					["autoActivate15Players"] = false,
-					["autoActivate5Players"] = false,
-					["autoActivate20Players"] = false,
-					["autoActivate40Players"] = false,
-					["useClassColors"] = true,
-					["sortBy"] = "group",
 					["frameWidth"] = 140,
 					["displayPets"] = false,
+					["displayPowerBar"] = true,
+					["displayOnlyDispellableDebuffs"] = true,
+					["sortBy"] = "group",
+					["useClassColors"] = true,
+					["autoActivate5Players"] = false,
+					["autoActivate40Players"] = false,
+					["autoActivate20Players"] = false,
+					["autoActivate15Players"] = false,
+					["autoActivate10Players"] = true,
+					["displayMainTankAndAssist"] = false,
+					["autoActivatePvP"] = false,
 				}, -- [2]
 				{
 					["autoActivate2Players"] = false,
@@ -569,19 +473,19 @@ AccountWideRaidProfilesDB = {
 					["keepGroupsTogether"] = true,
 					["displayBorder"] = false,
 					["frameHeight"] = 65,
-					["autoActivatePvP"] = false,
-					["displayMainTankAndAssist"] = false,
-					["displayPowerBar"] = true,
-					["displayOnlyDispellableDebuffs"] = true,
-					["autoActivate10Players"] = true,
-					["autoActivate15Players"] = false,
-					["autoActivate5Players"] = false,
-					["autoActivate20Players"] = false,
-					["autoActivate40Players"] = false,
-					["useClassColors"] = true,
-					["sortBy"] = "group",
 					["frameWidth"] = 140,
 					["displayPets"] = false,
+					["displayPowerBar"] = true,
+					["displayOnlyDispellableDebuffs"] = true,
+					["sortBy"] = "group",
+					["useClassColors"] = true,
+					["autoActivate5Players"] = false,
+					["autoActivate40Players"] = false,
+					["autoActivate20Players"] = false,
+					["autoActivate15Players"] = false,
+					["autoActivate10Players"] = true,
+					["displayMainTankAndAssist"] = false,
+					["autoActivatePvP"] = false,
 				}, -- [3]
 				{
 					["autoActivate2Players"] = false,
@@ -595,19 +499,19 @@ AccountWideRaidProfilesDB = {
 					["keepGroupsTogether"] = true,
 					["displayBorder"] = false,
 					["frameHeight"] = 65,
-					["autoActivatePvP"] = false,
-					["displayMainTankAndAssist"] = false,
-					["displayPowerBar"] = true,
-					["displayOnlyDispellableDebuffs"] = true,
-					["autoActivate10Players"] = false,
-					["autoActivate15Players"] = true,
-					["autoActivate5Players"] = false,
-					["autoActivate20Players"] = false,
-					["autoActivate40Players"] = false,
-					["useClassColors"] = true,
-					["sortBy"] = "group",
 					["frameWidth"] = 140,
 					["displayPets"] = false,
+					["displayPowerBar"] = true,
+					["displayOnlyDispellableDebuffs"] = true,
+					["sortBy"] = "group",
+					["useClassColors"] = true,
+					["autoActivate5Players"] = false,
+					["autoActivate40Players"] = false,
+					["autoActivate20Players"] = false,
+					["autoActivate15Players"] = true,
+					["autoActivate10Players"] = false,
+					["displayMainTankAndAssist"] = false,
+					["autoActivatePvP"] = false,
 				}, -- [4]
 				{
 					["autoActivate2Players"] = false,
@@ -621,19 +525,19 @@ AccountWideRaidProfilesDB = {
 					["keepGroupsTogether"] = true,
 					["displayBorder"] = false,
 					["frameHeight"] = 59,
-					["autoActivatePvP"] = false,
-					["displayMainTankAndAssist"] = false,
-					["displayPowerBar"] = true,
-					["displayOnlyDispellableDebuffs"] = true,
-					["autoActivate10Players"] = false,
-					["autoActivate15Players"] = false,
-					["autoActivate5Players"] = false,
-					["autoActivate20Players"] = true,
-					["autoActivate40Players"] = true,
-					["useClassColors"] = true,
-					["sortBy"] = "group",
 					["frameWidth"] = 91,
 					["displayPets"] = false,
+					["displayPowerBar"] = true,
+					["displayOnlyDispellableDebuffs"] = true,
+					["sortBy"] = "group",
+					["useClassColors"] = true,
+					["autoActivate5Players"] = false,
+					["autoActivate40Players"] = true,
+					["autoActivate20Players"] = true,
+					["autoActivate15Players"] = false,
+					["autoActivate10Players"] = false,
+					["displayMainTankAndAssist"] = false,
+					["autoActivatePvP"] = false,
 				}, -- [5]
 			},
 			["frameStyle"] = "1",
@@ -691,6 +595,160 @@ AccountWideRaidProfilesDB = {
 				"10", -- [3]
 				"15", -- [4]
 				"20-40", -- [5]
+			},
+		},
+		["2-5"] = {
+			["options"] = {
+				{
+					["autoActivate2Players"] = true,
+					["horizontalGroups"] = false,
+					["shown"] = true,
+					["healthText"] = "none",
+					["displayNonBossDebuffs"] = true,
+					["autoActivatePvE"] = false,
+					["autoActivate3Players"] = true,
+					["locked"] = true,
+					["keepGroupsTogether"] = false,
+					["displayBorder"] = true,
+					["frameHeight"] = 36,
+					["displayPets"] = false,
+					["frameWidth"] = 72,
+					["displayPowerBar"] = false,
+					["displayOnlyDispellableDebuffs"] = false,
+					["sortBy"] = "role",
+					["useClassColors"] = false,
+					["autoActivate5Players"] = true,
+					["autoActivate40Players"] = false,
+					["autoActivate20Players"] = false,
+					["autoActivate15Players"] = false,
+					["autoActivate10Players"] = false,
+					["displayMainTankAndAssist"] = true,
+					["autoActivatePvP"] = false,
+				}, -- [1]
+				{
+					["autoActivate2Players"] = false,
+					["horizontalGroups"] = false,
+					["shown"] = true,
+					["healthText"] = "perc",
+					["displayNonBossDebuffs"] = true,
+					["autoActivatePvE"] = true,
+					["autoActivate3Players"] = false,
+					["locked"] = true,
+					["keepGroupsTogether"] = true,
+					["displayBorder"] = false,
+					["frameHeight"] = 65,
+					["displayPets"] = false,
+					["frameWidth"] = 140,
+					["displayPowerBar"] = true,
+					["displayOnlyDispellableDebuffs"] = true,
+					["sortBy"] = "group",
+					["useClassColors"] = true,
+					["autoActivate5Players"] = false,
+					["autoActivate40Players"] = false,
+					["autoActivate20Players"] = false,
+					["autoActivate15Players"] = false,
+					["autoActivate10Players"] = true,
+					["displayMainTankAndAssist"] = false,
+					["autoActivatePvP"] = false,
+				}, -- [2]
+				{
+					["autoActivate2Players"] = false,
+					["horizontalGroups"] = false,
+					["shown"] = true,
+					["healthText"] = "perc",
+					["displayNonBossDebuffs"] = true,
+					["autoActivatePvE"] = true,
+					["autoActivate3Players"] = false,
+					["locked"] = true,
+					["keepGroupsTogether"] = true,
+					["displayBorder"] = false,
+					["frameHeight"] = 65,
+					["displayPets"] = false,
+					["frameWidth"] = 140,
+					["displayPowerBar"] = true,
+					["displayOnlyDispellableDebuffs"] = true,
+					["sortBy"] = "group",
+					["useClassColors"] = true,
+					["autoActivate5Players"] = false,
+					["autoActivate40Players"] = false,
+					["autoActivate20Players"] = false,
+					["autoActivate15Players"] = false,
+					["autoActivate10Players"] = true,
+					["displayMainTankAndAssist"] = false,
+					["autoActivatePvP"] = false,
+				}, -- [3]
+				{
+					["autoActivate2Players"] = false,
+					["horizontalGroups"] = false,
+					["shown"] = true,
+					["healthText"] = "perc",
+					["displayNonBossDebuffs"] = true,
+					["autoActivatePvE"] = true,
+					["autoActivate3Players"] = false,
+					["locked"] = true,
+					["keepGroupsTogether"] = true,
+					["displayBorder"] = false,
+					["frameHeight"] = 65,
+					["displayPets"] = false,
+					["frameWidth"] = 140,
+					["displayPowerBar"] = true,
+					["displayOnlyDispellableDebuffs"] = true,
+					["sortBy"] = "group",
+					["useClassColors"] = true,
+					["autoActivate5Players"] = false,
+					["autoActivate40Players"] = true,
+					["autoActivate20Players"] = true,
+					["autoActivate15Players"] = false,
+					["autoActivate10Players"] = false,
+					["displayMainTankAndAssist"] = false,
+					["autoActivatePvP"] = false,
+				}, -- [4]
+			},
+			["frameStyle"] = "1",
+			["lastProfile"] = "2-5",
+			["positions"] = {
+				{
+					true, -- [1]
+					"TOP", -- [2]
+					0, -- [3]
+					"TOP", -- [4]
+					0, -- [5]
+					"ATTACHED", -- [6]
+					0, -- [7]
+				}, -- [1]
+				{
+					false, -- [1]
+					"TOP", -- [2]
+					374, -- [3]
+					"BOTTOM", -- [4]
+					644, -- [5]
+					"LEFT", -- [6]
+					650, -- [7]
+				}, -- [2]
+				{
+					false, -- [1]
+					"TOP", -- [2]
+					374, -- [3]
+					"BOTTOM", -- [4]
+					450, -- [5]
+					"LEFT", -- [6]
+					650, -- [7]
+				}, -- [3]
+				{
+					false, -- [1]
+					"TOP", -- [2]
+					374, -- [3]
+					"BOTTOM", -- [4]
+					450, -- [5]
+					"LEFT", -- [6]
+					650, -- [7]
+				}, -- [4]
+			},
+			["profiles"] = {
+				"Primary", -- [1]
+				"2-5", -- [2]
+				"10", -- [3]
+				"20-40", -- [4]
 			},
 		},
 	},

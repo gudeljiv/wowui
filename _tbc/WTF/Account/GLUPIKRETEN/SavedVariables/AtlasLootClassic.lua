@@ -356,22 +356,9 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
-			["GUI"] = {
-				["selectedGameVersion"] = 1,
-				["selected"] = {
-					nil, -- [1]
-					"ScarletMonasteryLibrary", -- [2]
-					2, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-				["point"] = {
-					"LEFT", -- [1]
-					nil, -- [2]
-					"LEFT", -- [3]
-					296.0728454589844, -- [4]
-					161.2300415039063, -- [5]
-				},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -384,9 +371,21 @@ AtlasLootClassicDB = {
 					},
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+			["GUI"] = {
+				["point"] = {
+					"LEFT", -- [1]
+					nil, -- [2]
+					"LEFT", -- [3]
+					140.9042205810547, -- [4]
+					178.77783203125, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"ShadowLabyrinth", -- [2]
+					3, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
 			},
 		},
 		["Judawise - Golemagg"] = {

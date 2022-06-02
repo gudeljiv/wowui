@@ -1,7 +1,6 @@
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Rejuvenation
-/itemrack equip dps
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

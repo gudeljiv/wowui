@@ -52,6 +52,7 @@ PallyPower_AuraAssignments = {
 	["Meeyak"] = 0,
 	["Vermina"] = 1,
 	["Bellicosa"] = 7,
+	["Thyger"] = 2,
 	["Konvice"] = 3,
 	["Hemabussen"] = 0,
 	["Tathame"] = 0,
