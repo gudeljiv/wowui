@@ -15,36 +15,38 @@ EnhancedRaidFramesDB = {
 			{
 				["indicatorSize"] = 22,
 				["showTooltip"] = false,
-				["colorTextByDebuff"] = true,
 				["textSize"] = 12,
+				["colorTextByDebuff"] = true,
 				["mineOnly"] = true,
 			}, -- [1]
 			nil, -- [2]
 			{
 				["indicatorSize"] = 22,
-				["colorTextByDebuff"] = true,
-				["textSize"] = 12,
 				["showTooltip"] = false,
+				["textSize"] = 12,
+				["colorTextByDebuff"] = true,
 			}, -- [3]
 			{
 				["indicatorSize"] = 22,
-				["showText"] = "countdown",
 				["textSize"] = 12,
+				["showText"] = "countdown",
 				["colorTextByDebuff"] = true,
 			}, -- [4]
 			[7] = {
 				["indicatorSize"] = 22,
 				["showTooltip"] = false,
-				["colorTextByDebuff"] = true,
 				["textSize"] = 12,
+				["colorTextByDebuff"] = true,
 				["mineOnly"] = true,
 			},
-			["backgroundAlpha"] = 0.7000000000000001,
+			["rangeAlpha"] = 0.1,
 			["showDebuffs"] = false,
 			["showBuffs"] = false,
-			["showRaidIcons"] = false,
 			["showDispellableDebuffs"] = false,
-			["rangeAlpha"] = 0.1,
+			["backgroundAlpha"] = 0.7000000000000001,
+			["showRaidIcons"] = false,
+		},
+		["Mxyz - Golemagg"] = {
 		},
 		["Moolatz - Golemagg"] = {
 			{
@@ -77,14 +79,17 @@ EnhancedRaidFramesDB = {
 				["textSize"] = 12,
 				["mineOnly"] = true,
 			},
-			["showRaidIcons"] = false,
 			["backgroundAlpha"] = 0.7000000000000001,
-			["showBuffs"] = false,
 			["showDebuffs"] = false,
+			["showRaidIcons"] = false,
+			["showBuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["rangeAlpha"] = 0.5,
 		},
-		["Mxyz - Golemagg"] = {
+		["Mxzq - Golemagg"] = {
+			["showBuffs"] = false,
+			["showDispellableDebuffs"] = false,
+			["showDebuffs"] = false,
 		},
 	},
 }
