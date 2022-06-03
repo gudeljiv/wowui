@@ -69,6 +69,7 @@ AdiBagsDB = {
 						[3369] = "Trade Goods#Herbs",
 						[783] = "Trade Goods#Leather",
 						[22445] = "Trade Goods#Enchanting",
+						[22449] = "Trade Goods#Enchanting",
 						[8836] = "Trade Goods#Herbs",
 						[8838] = "Trade Goods#Herbs",
 						[11135] = "Trade Goods#Enchanting",

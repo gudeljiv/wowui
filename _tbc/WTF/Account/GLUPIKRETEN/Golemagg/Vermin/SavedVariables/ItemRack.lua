@@ -55,7 +55,6 @@ ItemRackUser = {
 	["EnableEvents"] = "ON",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
-		["28041"] = 30,
 	},
 	["Events"] = {
 		["Enabled"] = {

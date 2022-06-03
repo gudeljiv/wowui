@@ -134,3 +134,4 @@ VuhDoOptions: disabled
 AdiBags-ItemRackSets: enabled
 ErrorFilter: enabled
 ErrorMonster: disabled
+AccountWideRaidProfiles: disabled

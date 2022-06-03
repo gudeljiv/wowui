@@ -126,3 +126,5 @@ AdiBags-ItemRackSets: enabled
 VuhDoOptions: disabled
 ErrorFilter: enabled
 ErrorMonster: disabled
+Blizzard_CompactRaidFrames: enabled
+Blizzard_CUFProfiles: enabled

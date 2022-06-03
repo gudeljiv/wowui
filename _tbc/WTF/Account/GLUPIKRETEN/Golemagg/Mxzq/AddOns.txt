@@ -106,8 +106,8 @@ FarmHud: enabled
 FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: disabled
-Blizzard_CompactRaidFrames: disabled
-Blizzard_CUFProfiles: disabled
+Blizzard_CompactRaidFrames: enabled
+Blizzard_CUFProfiles: enabled
 AuctionFaster: disabled
 aux-addon: disabled
 D4KiR Missing Power: disabled
@@ -142,3 +142,4 @@ AdiBags-ItemRackSets: enabled
 VuhDoOptions: disabled
 ErrorFilter: enabled
 ErrorMonster: disabled
+AccountWideRaidProfiles: disabled

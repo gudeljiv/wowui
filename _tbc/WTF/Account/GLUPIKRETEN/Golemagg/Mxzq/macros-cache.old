@@ -54,6 +54,7 @@ VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 /petattack
 /startattack
 /cast Arcane Shot
+/cast Kill Command
 END
 VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

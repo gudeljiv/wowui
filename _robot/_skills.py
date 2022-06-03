@@ -31,9 +31,9 @@ skills["hunter"] = [
     {"name": "serpent sting", "key": "9", "modifier": "alt"},
     {"name": "arcane shot", "key": "f11"},
     {"name": "multi-shot", "key": "0", "modifier": "alt"},
-    {"name": "steady shot", "key": "f10"},
+    {"name": "steady shot", "key": "4"},
     {"name": "mend pet", "key": "v"},
-    {"name": "kill command", "key": "4"},
+    {"name": "kill command", "key": "f10"},
 ]
 
 skills["druid"] = [

@@ -317,10 +317,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["point"] = {
 					"TOP", -- [1]
@@ -331,11 +327,15 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"TheBloodFurnace", -- [2]
-					3, -- [3]
+					"SethekkHalls", -- [2]
+					2, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Jaroslav - Golemagg"] = {
@@ -376,14 +376,13 @@ AtlasLootClassicDB = {
 					"LEFT", -- [1]
 					nil, -- [2]
 					"LEFT", -- [3]
-					296.0728454589844, -- [4]
-					161.2300415039063, -- [5]
+					140.9042205810547, -- [4]
+					178.77783203125, -- [5]
 				},
-				["selectedGameVersion"] = 1,
 				["selected"] = {
 					nil, -- [1]
-					"RazorfenDowns", -- [2]
-					4, -- [3]
+					"OldHillsbradFoothills", -- [2]
+					3, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},

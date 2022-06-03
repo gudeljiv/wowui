@@ -43,9 +43,9 @@ W: 384
 H: 512
 Frame: LootFrame
 FrameLevel: 10
-Anchor: CENTER
+Anchor: TOP
 X: 480
-Y: 207
+Y: -264
 W: 170
 H: 240
 Frame: ItemRefTooltip
