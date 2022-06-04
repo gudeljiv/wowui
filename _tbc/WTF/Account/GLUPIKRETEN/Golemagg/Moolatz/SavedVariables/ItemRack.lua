@@ -53,7 +53,6 @@ ItemRackUser = {
 			},
 		},
 		["heal"] = {
-			["key"] = "SHIFT-2",
 			["equip"] = {
 				0, -- [1]
 				0, -- [2]
@@ -77,6 +76,7 @@ ItemRackUser = {
 				[0] = 0,
 			},
 			["icon"] = 136184,
+			["key"] = "SHIFT-2",
 			["old"] = {
 			},
 		},
@@ -87,7 +87,7 @@ ItemRackUser = {
 	},
 	["Hidden"] = {
 	},
-	["CurrentSet"] = "dps",
+	["EnableEvents"] = "ON",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
 	},
@@ -97,10 +97,10 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
+	["Alpha"] = 1,
+	["EnableQueues"] = "ON",
 	["Queues"] = {
 	},
-	["EnableQueues"] = "ON",
-	["Alpha"] = 1,
 	["MenuScale"] = 1.2,
-	["EnableEvents"] = "ON",
+	["CurrentSet"] = "dps",
 }

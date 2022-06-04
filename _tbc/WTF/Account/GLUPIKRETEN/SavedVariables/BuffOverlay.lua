@@ -2,9 +2,9 @@
 BuffOverlayDB = {
 	["profileKeys"] = {
 		["Vermin - Golemagg"] = "Default",
-		["Mxzq - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

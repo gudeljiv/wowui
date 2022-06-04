@@ -14,27 +14,27 @@ skills["warrior"] = [
     {"name": "revenge", "key": "1"},
     {"name": "execute", "key": "f"},
     {"name": "whirlwind", "key": "6"},
-    {"name": "rampage", "key": "home"},
+    # {"name": "rampage", "key": "home"},
     {"name": "sweeping strikes", "key": "r", "modifier": "alt"},
     {"name": "victory rush", "key": "e", "modifier": "shift"},
     {"name": "thunder clap", "key": "e"}
 ]
 
 skills["warlock"] = [
-    {"name": "immolate", "key": "h"},
-    {"name": "corruption", "key": "v"},
-    {"name": "curse of agony", "key": "g"},
-    {"name": "shadow bolt", "key": "f11"},
 ]
+# {"name": "immolate", "key": "h"},
+# {"name": "corruption", "key": "v"},
+# {"name": "curse of agony", "key": "g"},
+# {"name": "shadow bolt", "key": "f11"},
 
 skills["hunter"] = [
-    {"name": "serpent sting", "key": "9", "modifier": "alt"},
-    {"name": "arcane shot", "key": "f11"},
     {"name": "multi-shot", "key": "0", "modifier": "alt"},
     {"name": "steady shot", "key": "4"},
     {"name": "mend pet", "key": "v"},
-    {"name": "kill command", "key": "f10"},
+    {"name": "kill command", "key": "f10"}
 ]
+# {"name": "serpent sting", "key": "9", "modifier": "alt"},
+# {"name": "arcane shot", "key": "f11"},
 
 skills["druid"] = [
     {"name": "maul", "key": "1"},
@@ -45,10 +45,20 @@ skills["druid"] = [
     {"name": "rip", "key": "5"},
     {"name": "rake", "key": "3"},
     {"name": "faerie fire", "key": "e"},
-    # {"name": "cower", "key": "6"},
-    {"name": "ferocious bite", "key": "4"},
-    {"name": "ravage", "key": "6"},
+    {"name": "ferocious bite", "key": "4"}
 ]
 
+# {"name": "cower", "key": "6"},
+# {"name": "ravage", "key": "6"},
+
 skills["priest"] = [
+]
+
+skills["paladin"] = [
+]
+
+skills["shaman"] = [
+]
+
+skills["rogue"] = [
 ]

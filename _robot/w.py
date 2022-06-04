@@ -37,8 +37,8 @@ if screen_width == 2560:
 x = 10
 y = 10
 if monitor == "2k":
-    x = 7
-    y = 7
+    x = 6
+    y = 6
 
 file_path = os.path.abspath(__file__)
 dir_path = os.path.dirname(os.path.realpath(__file__))
@@ -144,7 +144,11 @@ with keyboard.Listener(on_press=on_press) as listener:
                 wow_class = "warrior"
 
             # print(clss, '#%02x%02x%02x' % clss, wow_class)
-            # print(active_window, combat, interrupt, wow_class)
+            # print(hex, combat, interrupt, wow_class)
+            # for skill in skills[wow_class]:
+            #     print(skill)
+            # time.sleep(1)
+            # continue
 
             if not debug and not pause:
 
@@ -172,17 +176,18 @@ with keyboard.Listener(on_press=on_press) as listener:
                 for skill in skills[wow_class]:
                     start_skills_time = time.time()
                     for ability in abilities:
-                        # mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
-                        (score, diff) = structural_similarity(abilities[ability], grabbed, full=True)
-                        # print(score*100, ability, skill["name"], f"Finish in: {round(1000 * (time.time() - start_time))} ms ", f"Finish in: {round(1000 * (time.time() - start_skills_time))} ms ")
-                        if(score*100 > 90 and ability == skill["name"]):
-                            if dprint:
-                                print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+                        if ability == skill["name"]:
+                            # mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
+                            (score, diff) = structural_similarity(abilities[ability], grabbed, full=True)
+                            # print(score*100, ability, skill["name"], f"Finish in: {round(1000 * (time.time() - start_time))} ms ", f"Finish in: {round(1000 * (time.time() - start_skills_time))} ms ")
+                            if score*100 > 90:
+                                if dprint:
+                                    print(ability, skill["name"], skill["key"], score*100, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
 
-                            if "modifier" in skill.keys():
-                                pyautogui.hotkey(skill["modifier"],  skill["key"])
-                            else:
-                                pyautogui.hotkey(skill["key"])
+                                if "modifier" in skill.keys():
+                                    pyautogui.hotkey(skill["modifier"],  skill["key"])
+                                else:
+                                    pyautogui.hotkey(skill["key"])
 
             if debug:
                 time.sleep(0.5)
