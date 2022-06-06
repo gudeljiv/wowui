@@ -39,21 +39,19 @@ EnhancedRaidFramesDB = {
 				["textSize"] = 12,
 				["mineOnly"] = true,
 			},
-			["showRaidIcons"] = false,
 			["backgroundAlpha"] = 0.7000000000000001,
+			["showRaidIcons"] = false,
 			["showBuffs"] = false,
 			["showDebuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["rangeAlpha"] = 0.1,
 		},
 		["Mxzq - Golemagg"] = {
-			["backgroundAlpha"] = 0.6000000000000001,
 			["showDebuffs"] = false,
 			["showBuffs"] = false,
 			["showDispellableDebuffs"] = false,
+			["backgroundAlpha"] = 0.6000000000000001,
 			["rangeAlpha"] = 0.2,
-		},
-		["Mxyz - Golemagg"] = {
 		},
 		["Moolatz - Golemagg"] = {
 			{
@@ -74,8 +72,8 @@ EnhancedRaidFramesDB = {
 			}, -- [3]
 			{
 				["indicatorSize"] = 22,
-				["textSize"] = 12,
 				["showText"] = "countdown",
+				["textSize"] = 12,
 				["colorTextByDebuff"] = true,
 			}, -- [4]
 			[7] = {
@@ -86,12 +84,14 @@ EnhancedRaidFramesDB = {
 				["textSize"] = 12,
 				["auras"] = "Regrowth",
 			},
-			["rangeAlpha"] = 0.5,
 			["showRaidIcons"] = false,
+			["rangeAlpha"] = 0.5,
 			["showBuffs"] = false,
 			["showDebuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["backgroundAlpha"] = 0.7000000000000001,
+		},
+		["Mxyz - Golemagg"] = {
 		},
 	},
 }
