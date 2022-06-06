@@ -20,13 +20,13 @@ VER 3 0000000000000013 " " "132130"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:27860
-/castsequence [combat] reset=combat item:22832
+/use [nocombat]item:1645
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:29451
-/castsequence [combat] reset=combat item:22829
+/use [nocombat]item:4599
+/castsequence [combat] reset=combat item:1710
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
@@ -39,6 +39,5 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /use item:29451
 END
 VER 3 0000000000000010 "TEST" "3940790"
-/run EnableAddOn("Blizzard_CompactRaidFrames")
-/run EnableAddOn("Blizzard_CUFProfiles")
+/target Theramore
 END

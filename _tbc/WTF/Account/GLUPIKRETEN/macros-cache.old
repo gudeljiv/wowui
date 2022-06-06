@@ -21,7 +21,7 @@ END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:1645
-/castsequence [combat] reset=combat item:3827
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
@@ -39,6 +39,5 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /use item:29451
 END
 VER 3 0000000000000010 "TEST" "3940790"
-/run EnableAddOn("Blizzard_CompactRaidFrames")
-/run EnableAddOn("Blizzard_CUFProfiles")
+/target Theramore
 END
