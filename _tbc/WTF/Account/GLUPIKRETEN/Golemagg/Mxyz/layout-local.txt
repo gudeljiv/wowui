@@ -90,13 +90,6 @@ X: 252
 Y: -260
 W: 365
 H: 200
-Frame: nTooltip_Anchor
-FrameLevel: 1
-Anchor: TOP
-X: 243
-Y: -107
-W: 50
-H: 50
 Frame: GroupBulletinBoardFrame
 FrameLevel: 1
 Anchor: RIGHT
@@ -104,6 +97,13 @@ X: -239
 Y: 8
 W: 901
 H: 813
+Frame: nTooltip_Anchor
+FrameLevel: 1
+Anchor: TOP
+X: 243
+Y: -107
+W: 50
+H: 50
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER
