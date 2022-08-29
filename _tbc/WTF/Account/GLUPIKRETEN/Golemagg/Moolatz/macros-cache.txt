@@ -26,17 +26,6 @@ VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 /cast [form:1] Enrage
 /cast [form:3] Claw 
 END
-VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Moonfire
-END
-VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Swipe
-/cast Enrage
-END
 VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists,nodead][help][] Abolish Poison
@@ -56,6 +45,14 @@ VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 /cancelform [noform:3] 
 /cast [noform:3] Cat Form 
 /cast Prowl
+END
+VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [stealth] Ravage
+/cast [form:0][form:4] Moonfire
+/cast [form:1] Swipe
+/cast [form:1] Enrage
+/cast [form:3] Shred
 END
 VER 3 0000000001000007 "VuhDoDCShieldData" "Ability_Repair"
 P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1DM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]

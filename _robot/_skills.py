@@ -45,7 +45,8 @@ skills["druid"] = [
     {"name": "rip", "key": "5"},
     {"name": "rake", "key": "3"},
     {"name": "faerie fire", "key": "e"},
-    {"name": "ferocious bite", "key": "4"}
+    {"name": "ferocious bite", "key": "4"},
+    # {"name": "pounce", "key": "1"}
 ]
 
 # {"name": "cower", "key": "6"},
