@@ -112,7 +112,8 @@ with keyboard.Listener(on_press=on_press) as listener:
 
             main_image = sct.grab(p_main)
             main = main_image.pixel(int(x/2), int(y/2))
-            # mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
+            if debug:
+                mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
 
             combat_image = sct.grab(p_combat)
             combat = combat_image.pixel(5, 5)

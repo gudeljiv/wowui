@@ -1,0 +1,21 @@
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/assist Vermin
+/stopfollowing
+/cast Lightning Bolt
+END
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/assist Vermin
+/cast Earth Shock
+END
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/follow Vermin
+/castsequence reset=10 Strength of Earth Totem, Searing Totem
+END
+VER 3 0000000001000002 "HVer" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/target Vermin
+/cast Lesser Healing Wave
+END

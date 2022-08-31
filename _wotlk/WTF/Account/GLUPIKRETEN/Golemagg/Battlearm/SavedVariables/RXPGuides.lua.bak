@@ -1,0 +1,294 @@
+
+RXPCData = {
+	["completedWaypoints"] = {
+		[98] = {
+		},
+	},
+	["currentStep"] = 98,
+	["SoM"] = 1,
+	["currentGuideGroup"] = "Death Knight Start",
+	["flightPaths"] = {
+	},
+	["xprate"] = 1.5,
+	["JoyousJourneys"] = true,
+	["disableItemWindow"] = true,
+	["phase"] = 6,
+	["currentGuideName"] = "55-58 The Scarlet Enclave",
+	["stepSkip"] = {
+		[15] = true,
+		[30] = true,
+		[60] = true,
+		[63] = true,
+		[33] = true,
+		[66] = true,
+		[49] = true,
+		[37] = true,
+		[76] = true,
+		[11] = true,
+		[43] = true,
+		[73] = true,
+		[88] = true,
+		[93] = true,
+		[47] = true,
+		[53] = true,
+		[65] = true,
+		[26] = true,
+		[71] = true,
+		[27] = true,
+		[22] = true,
+		[20] = true,
+		[17] = true,
+		[57] = true,
+		[34] = true,
+	},
+	["hardcore"] = false,
+	["frameHeight"] = 125.0000076293945,
+}
+RXPCTrackingData = {
+	["profileKeys"] = {
+		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
+	},
+	["profiles"] = {
+		["Battlearm - Golemagg"] = {
+			["levels"] = {
+				[57] = {
+					["groupExperience"] = 0,
+					["deaths"] = 1,
+					["mobs"] = {
+						["Plaguelands: The Scarlet Enclave"] = {
+							["xp"] = 153027,
+							["count"] = 32,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 31,
+							["day"] = 0,
+							["month"] = 8,
+							["weekday"] = 4,
+							["year"] = 2022,
+							["hour"] = 19,
+							["minute"] = 22,
+						},
+						["finished"] = 9017,
+						["dateFinished"] = {
+							["monthDay"] = 31,
+							["day"] = 0,
+							["month"] = 8,
+							["minute"] = 4,
+							["year"] = 2022,
+							["hour"] = 20,
+							["weekday"] = 4,
+						},
+						["started"] = 6512,
+					},
+					["quests"] = {
+						["Plaguelands: The Scarlet Enclave"] = {
+							[12720] = 18375,
+							[12722] = 18375,
+							[12715] = 1237,
+							[12717] = 18375,
+							[12719] = 18375,
+							[12706] = 24525,
+							[12723] = 1237,
+							[12725] = 18375,
+							[12727] = 24525,
+							[12714] = 1237,
+							[12716] = 18375,
+						},
+					},
+				},
+				[58] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Plaguelands: The Scarlet Enclave"] = {
+							["xp"] = 163202,
+							["count"] = 12,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 31,
+							["day"] = 0,
+							["month"] = 8,
+							["minute"] = 4,
+							["year"] = 2022,
+							["hour"] = 20,
+							["weekday"] = 4,
+						},
+						["finished"] = 10487,
+						["dateFinished"] = {
+							["monthDay"] = 31,
+							["day"] = 0,
+							["month"] = 8,
+							["minute"] = 28,
+							["year"] = 2022,
+							["hour"] = 20,
+							["weekday"] = 4,
+						},
+						["started"] = 9018,
+					},
+					["quests"] = {
+						["Plaguelands: The Scarlet Enclave"] = {
+							[12724] = 18375,
+							[12756] = 18375,
+							[12751] = 18375,
+							[12738] = 1237,
+							[12755] = 18375,
+							[12757] = 24525,
+							[12754] = 18375,
+							[12778] = 1237,
+							[12748] = 18375,
+						},
+					},
+				},
+				[59] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Plaguelands: The Scarlet Enclave"] = {
+							["xp"] = 1237,
+							["count"] = 1,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 31,
+							["day"] = 0,
+							["month"] = 8,
+							["minute"] = 28,
+							["year"] = 2022,
+							["hour"] = 20,
+							["weekday"] = 4,
+						},
+						["started"] = 10488,
+					},
+					["quests"] = {
+						["Plaguelands: The Scarlet Enclave"] = {
+							[12779] = 24525,
+							[12800] = 1237,
+						},
+					},
+				},
+				[55] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Plaguelands: The Scarlet Enclave"] = {
+							["xp"] = 142860,
+							["count"] = 15,
+						},
+					},
+					["timestamp"] = {
+						["dateFinished"] = {
+							["monthDay"] = 31,
+							["day"] = 0,
+							["month"] = 8,
+							["minute"] = 23,
+							["year"] = 2022,
+							["hour"] = 17,
+							["weekday"] = 4,
+						},
+						["finished"] = 1819,
+						["dateStarted"] = {
+							["monthDay"] = 31,
+							["day"] = 0,
+							["month"] = 8,
+							["weekday"] = 4,
+							["year"] = 2022,
+							["hour"] = 16,
+							["minute"] = 53,
+						},
+					},
+					["quests"] = {
+						["Plaguelands: The Scarlet Enclave"] = {
+							[12842] = 18375,
+							[12619] = 24525,
+							[12636] = 1237,
+							[12593] = 1237,
+							[12850] = 1237,
+							[12657] = 18375,
+							[12680] = 18375,
+							[12849] = 18375,
+							[12641] = 18375,
+							[12670] = 1237,
+							[12848] = 18375,
+						},
+					},
+				},
+				[56] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Plaguelands: The Scarlet Enclave"] = {
+							["xp"] = 163216,
+							["count"] = 28,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 31,
+							["day"] = 0,
+							["month"] = 8,
+							["minute"] = 23,
+							["year"] = 2022,
+							["hour"] = 17,
+							["weekday"] = 4,
+						},
+						["finished"] = 6511,
+						["dateFinished"] = {
+							["monthDay"] = 31,
+							["day"] = 0,
+							["month"] = 8,
+							["weekday"] = 4,
+							["year"] = 2022,
+							["hour"] = 19,
+							["minute"] = 22,
+						},
+						["started"] = 1820,
+					},
+					["quests"] = {
+						["Plaguelands: The Scarlet Enclave"] = {
+							[12679] = 18375,
+							[12711] = 1237,
+							[12698] = 18375,
+							[12700] = 1237,
+							[12687] = 24525,
+							[12678] = 18375,
+							[12697] = 1237,
+							[12701] = 24525,
+							[12733] = 18375,
+						},
+					},
+				},
+			},
+		},
+	},
+}
+RXPCComms = {
+	["profileKeys"] = {
+		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
+	},
+	["profiles"] = {
+		["Battlearm - Golemagg"] = {
+			["announcements"] = {
+				["55-58 The Scarlet Enclave"] = {
+					["collect"] = {
+					},
+					["complete"] = {
+					},
+				},
+			},
+		},
+	},
+}
+RXPCSettings = {
+	["profileKeys"] = {
+		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
+	},
+	["profiles"] = {
+		["Battlearm - Golemagg"] = {
+		},
+	},
+}

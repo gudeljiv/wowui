@@ -1,0 +1,35 @@
+
+RXPData = {
+	["addonVersion"] = 40000,
+	["hideCompletedSteps"] = true,
+	["arrowSize"] = 1.100000023841858,
+	["trainGenericSpells"] = true,
+	["distanceBetweenPins"] = 1,
+	["lockFrames"] = true,
+	["arrowText"] = 12,
+	["gameVersion"] = 30400,
+	["windowSize"] = 1.200000047683716,
+	["phase"] = 1,
+	["hideUnusedGuides"] = false,
+	["hideMiniMapPins"] = true,
+	["numMapPins"] = 7,
+	["batchSize"] = 5,
+	["worldMapPinScale"] = 1,
+	["anchorOrientation"] = 1,
+	["worldMapPinBackgroundOpacity"] = 0.3499999940395355,
+	["skipMissingPreReqs"] = false,
+	["autoLoadGuides"] = false,
+	["disableFPAutomation"] = true,
+	["disableTrainerAutomation"] = true,
+}
+RXPDB = {
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "global",
+		["Battlearm - Golemagg"] = "global",
+		["Moolatz - Golemagg"] = "global",
+	},
+	["profiles"] = {
+		["global"] = {
+		},
+	},
+}

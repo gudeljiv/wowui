@@ -49,6 +49,16 @@ skills["druid"] = [
     # {"name": "pounce", "key": "1"}
 ]
 
+skills["death knight"] = [
+    {"name": "plague strike", "key": "1"},
+    {"name": "icy touch", "key": "2"},
+    {"name": "death strike", "key": "f11"},
+    {"name": "heart strike", "key": "3"},
+    {"name": "death coil", "key": "5"},
+    {"name": "blood boil", "key": "e"},
+    {"name": "rune tap", "key": "9", "modifier": "alt"},
+]
+
 # {"name": "cower", "key": "6"},
 # {"name": "ravage", "key": "6"},
 
