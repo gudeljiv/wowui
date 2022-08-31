@@ -18,7 +18,7 @@ Bagnon_Config: disabled
 Bagnon_GuildBank: disabled
 Bagnon_VoidStorage: disabled
 BagBrother: disabled
-RXPGuides: disabled
+RXPGuides: enabled
 CharacterStatsClassic: disabled
 RangeDisplay: enabled
 RangeDisplay_Options: enabled

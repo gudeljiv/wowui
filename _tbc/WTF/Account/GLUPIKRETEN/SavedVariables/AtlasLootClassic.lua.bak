@@ -30,7 +30,7 @@ AtlasLootClassicDB = {
 		["Vermins - Stonespine"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Battlearm - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
@@ -39,7 +39,7 @@ AtlasLootClassicDB = {
 		["Dmitar - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 		["Moolatz - Golemagg"] = "Default",
 	},
@@ -291,9 +291,9 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Testxv - Golemagg"] = {
-		},
 		["Battlearm - Hydraxian Waterlords"] = {
+		},
+		["Testxv - Golemagg"] = {
 		},
 		["Battlearm - Golemagg"] = {
 		},

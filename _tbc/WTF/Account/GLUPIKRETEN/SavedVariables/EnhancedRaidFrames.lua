@@ -48,10 +48,12 @@ EnhancedRaidFramesDB = {
 		},
 		["Mxzq - Golemagg"] = {
 			["backgroundAlpha"] = 0.6000000000000001,
-			["showBuffs"] = false,
 			["showDebuffs"] = false,
+			["showBuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["rangeAlpha"] = 0.2,
+		},
+		["Mxyz - Golemagg"] = {
 		},
 		["Moolatz - Golemagg"] = {
 			{
@@ -90,8 +92,6 @@ EnhancedRaidFramesDB = {
 			["showDispellableDebuffs"] = false,
 			["rangeAlpha"] = 0.5,
 			["showBuffs"] = false,
-		},
-		["Mxyz - Golemagg"] = {
 		},
 	},
 }
