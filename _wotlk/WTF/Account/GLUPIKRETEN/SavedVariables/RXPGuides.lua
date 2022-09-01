@@ -8,7 +8,7 @@ RXPData = {
 	["lockFrames"] = true,
 	["arrowText"] = 12,
 	["gameVersion"] = 30400,
-	["windowSize"] = 1.200000047683716,
+	["windowSize"] = 1,
 	["phase"] = 1,
 	["hideUnusedGuides"] = false,
 	["disableFPAutomation"] = true,
@@ -24,10 +24,11 @@ RXPData = {
 }
 RXPDB = {
 	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "global",
+		["Vermin - Golemagg"] = "global",
+		["Mxyz - Golemagg"] = "global",
 		["Battlearm - Golemagg"] = "global",
 		["Moolatz - Golemagg"] = "global",
-		["Vermin - Golemagg"] = "global",
+		["Mxzq - Golemagg"] = "global",
 	},
 	["profiles"] = {
 		["global"] = {

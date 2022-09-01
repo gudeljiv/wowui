@@ -57,6 +57,7 @@ skills["death knight"] = [
     {"name": "death coil", "key": "5"},
     {"name": "blood boil", "key": "e"},
     {"name": "rune tap", "key": "9", "modifier": "alt"},
+    {"name": "pestilence", "key": "4"}
 ]
 
 # {"name": "cower", "key": "6"},

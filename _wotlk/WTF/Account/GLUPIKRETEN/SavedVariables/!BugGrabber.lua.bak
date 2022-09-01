@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 5391,
+	["session"] = 5405,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -1729,12 +1729,28 @@ BugGrabberDB = {
 			["counter"] = 32,
 		}, -- [219]
 		{
+			["message"] = "Interface\\AddOns\\Plater\\libs\\DF\\dropdown.lua:421: Details! Framework: dropdown DetailsOptionsWindowTab2Widget9 error: Interface\\AddOns\\Details\\classes\\class_damage.lua:2636: attempt to index local 'bars_show_data' (a nil value)",
+			["time"] = "2022/09/01 17:55:51",
+			["locals"] = "(*temporary) = \"Details! Framework: dropdown DetailsOptionsWindowTab2Widget9 error: Interface\\AddOns\\Details\\classes\\class_damage.lua:2636: attempt to index local 'bars_show_data' (a nil value)\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"@Interface\\AddOns\\Plater\\libs\\DF\\dropdown.lua\"]:421: in function <Interface\\AddOns\\Plater\\libs\\DF\\dropdown.lua:415>\n[string \"@Interface\\AddOns\\Plater\\libs\\DF\\dropdown.lua\"]:603: in function <Interface\\AddOns\\Plater\\libs\\DF\\dropdown.lua:595>",
+			["session"] = 5393,
+			["counter"] = 1,
+		}, -- [220]
+		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
 			["time"] = "2022/02/16 20:30:17",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
-			["session"] = 5387,
-			["counter"] = 5,
-		}, -- [220]
+			["session"] = 5400,
+			["counter"] = 6,
+		}, -- [221]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Addons/RXPGuide.lua:28: unexpected symbol near '/'",
+			["time"] = "2022/09/01 20:58:54",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 5405,
+			["counter"] = 4,
+		}, -- [222]
 	},
 }

@@ -332,7 +332,7 @@ TargetFrame:HookScript(
 	'OnUpdate',
 	function(self)
 		name, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible, spellId = UnitCastingInfo('target')
-		if name and not notInterruptible then
+		if name ~= nil and not notInterruptible then
 			-- print(name, name and not notInterruptible)
 			-- WARRIOR INTERRUPT
 			if (select(2, UnitClass('player')) == 'WARRIOR') then
@@ -372,6 +372,8 @@ TargetFrame:HookScript(
 					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
 				end
 			end
+		else
+			RotationFrame2:SetBackdropColor(1, 1, 1, 1)
 		end
 	end
 )

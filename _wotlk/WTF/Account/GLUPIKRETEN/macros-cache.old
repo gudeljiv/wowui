@@ -1,8 +1,3 @@
-VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/use Coarse Sharpening Stone
-/use [button:1] 16; [button:2] 17
-END
 VER 3 000000000000000E " " "136106"
 /run InspectUnit("target")
 /run SortBags()
@@ -18,15 +13,20 @@ VER 3 0000000000000012 " " "132143"
 #showtooltip
 /startattack
 END
+VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Coarse Sharpening Stone
+/use [button:1] 16; [button:2] 17
+END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:27860
-/castsequence [combat] reset=combat item:22832
+/use [nocombat]item:0
+/castsequence [combat] reset=combat item:13443
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:29451
-/castsequence [combat] reset=combat item:22829
+/use [nocombat]item:27854
+/castsequence [combat] reset=combat 
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
@@ -39,5 +39,6 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /use item:29451
 END
 VER 3 0000000000000010 "TEST" "3940790"
-/run print(IsSpellInRange('Mind Freeze', 'target'))
+/run RXPFrame:ClearAllPoints()
+/run RXPFrame:SetPoint('BOTTOMRIGHT', 'ChatFrame3', 'BOTTOMLEFT', 0, -10)
 END

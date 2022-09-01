@@ -12,7 +12,7 @@ C_Timer.NewTicker(
 					end
 
 					self:ClearAllPoints()
-					self:SetPoint('BOTTOMLEFT', 'ChatFrame4', 'TOPLEFT', 0, 30)
+					self:SetPoint('BOTTOMRIGHT', 'ChatFrame3', 'BOTTOMLEFT', 0, -10)
 					self.ClearAllPoints = function()
 					end
 					self.SetPoint = function()
