@@ -8,12 +8,12 @@ RXPCData = {
 	["flightPaths"] = {
 	},
 	["xprate"] = 1,
-	["frameHeight"] = 125.0000076293945,
+	["phase"] = 6,
 	["currentGuideName"] = "",
 	["stepSkip"] = {
 	},
 	["hardcore"] = false,
-	["phase"] = 6,
+	["frameHeight"] = 125.0000152587891,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {

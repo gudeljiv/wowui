@@ -10,26 +10,26 @@ local dragFrameList = ns.dragFrameList
 
 -- REMOVING UGLY PARTS OF UI
 
-local event_frame = CreateFrame("Frame")
+local event_frame = CreateFrame('Frame')
 local errormessage_blocks = {
-	"Способность пока недоступна",
-	"Выполняется другое действие",
-	"Невозможно делать это на ходу",
-	"Предмет пока недоступен",
-	"Недостаточно",
-	"Некого атаковать",
-	"Заклинание пока недоступно",
-	"У вас нет цели",
-	"Вы пока не можете этого сделать",
-	"Ability is not ready yet",
-	"Another action is in progress",
+	'Способность пока недоступна',
+	'Выполняется другое действие',
+	'Невозможно делать это на ходу',
+	'Предмет пока недоступен',
+	'Недостаточно',
+	'Некого атаковать',
+	'Заклинание пока недоступно',
+	'У вас нет цели',
+	'Вы пока не можете этого сделать',
+	'Ability is not ready yet',
+	'Another action is in progress',
 	"Can't attack while mounted",
 	"Can't do that while moving",
-	"Item is not ready yet",
-	"Not enough",
-	"Nothing to attack",
-	"Spell is not ready yet",
-	"You have no target",
+	'Item is not ready yet',
+	'Not enough',
+	'Nothing to attack',
+	'Spell is not ready yet',
+	'You have no target',
 	"You can't do that yet"
 }
 local enable
@@ -51,24 +51,24 @@ function uierrorsframe_addmessage(frame, text, red, green, blue, id)
 end
 
 function onevent(frame, event, ...)
-	if event == "PLAYER_LOGIN" then
+	if event == 'PLAYER_LOGIN' then
 		enable()
 	end
 end
-event_frame:SetScript("OnEvent", onevent)
-event_frame:RegisterEvent("PLAYER_LOGIN")
+event_frame:SetScript('OnEvent', onevent)
+event_frame:RegisterEvent('PLAYER_LOGIN')
 
 -- COLORING FRAMES
-local CF = CreateFrame("Frame")
-CF:RegisterEvent("PLAYER_ENTERING_WORLD")
-CF:RegisterEvent("GROUP_ROSTER_UPDATE")
+local CF = CreateFrame('Frame')
+CF:RegisterEvent('PLAYER_ENTERING_WORLD')
+CF:RegisterEvent('GROUP_ROSTER_UPDATE')
 
 hooksecurefunc(
-	"TargetFrame_CheckClassification",
+	'TargetFrame_CheckClassification',
 	function(self, forceNormalTexture)
 		local classification = UnitClassification(self.unit)
-		if (classification == "minus") then
-			self.borderTexture:SetTexture("Interface\\TargetingFrame\\UI-TargetingFrame-Minus")
+		if (classification == 'minus') then
+			self.borderTexture:SetTexture('Interface\\TargetingFrame\\UI-TargetingFrame-Minus')
 			self.borderTexture:SetVertexColor(.05, .05, .05)
 			self.nameBackground:Hide()
 			self.manabar.pauseUpdates = true
@@ -77,17 +77,17 @@ hooksecurefunc(
 			self.manabar.LeftText:Hide()
 			self.manabar.RightText:Hide()
 			forceNormalTexture = true
-		elseif (classification == "worldboss" or classification == "elite") then
-			self.borderTexture:SetTexture("Interface\\AddOns\\Lorti UI Classic\\textures\\target\\elite")
+		elseif (classification == 'worldboss' or classification == 'elite') then
+			self.borderTexture:SetTexture('Interface\\AddOns\\Lorti UI Classic\\textures\\target\\elite')
 			self.borderTexture:SetVertexColor(1, 1, 1)
-		elseif (classification == "rareelite") then
-			self.borderTexture:SetTexture("Interface\\AddOns\\Lorti UI Classic\\textures\\target\\rare-elite")
+		elseif (classification == 'rareelite') then
+			self.borderTexture:SetTexture('Interface\\AddOns\\Lorti UI Classic\\textures\\target\\rare-elite')
 			self.borderTexture:SetVertexColor(1, 1, 1)
-		elseif (classification == "rare") then
-			self.borderTexture:SetTexture("Interface\\AddOns\\Lorti UI Classic\\textures\\target\\rare")
+		elseif (classification == 'rare') then
+			self.borderTexture:SetTexture('Interface\\AddOns\\Lorti UI Classic\\textures\\target\\rare')
 			self.borderTexture:SetVertexColor(1, 1, 1)
 		else
-			self.borderTexture:SetTexture("Interface\\TargetingFrame\\UI-TargetingFrame")
+			self.borderTexture:SetTexture('Interface\\TargetingFrame\\UI-TargetingFrame')
 			self.borderTexture:SetVertexColor(.05, .05, .05)
 		end
 	end
@@ -95,29 +95,29 @@ hooksecurefunc(
 
 function ColorRaid()
 	for g = 1, NUM_RAID_GROUPS do
-		local group = _G["CompactRaidGroup" .. g .. "BorderFrame"]
+		local group = _G['CompactRaidGroup' .. g .. 'BorderFrame']
 		if group then
 			for _, region in pairs({group:GetRegions()}) do
-				if region:IsObjectType("Texture") then
+				if region:IsObjectType('Texture') then
 					region:SetVertexColor(.05, .05, .05)
 				end
 			end
 		end
 		for m = 1, 5 do
-			local frame = _G["CompactRaidGroup" .. g .. "Member" .. m]
+			local frame = _G['CompactRaidGroup' .. g .. 'Member' .. m]
 			if frame then
 				groupcolored = true
 				for _, region in pairs({frame:GetRegions()}) do
-					if region:GetName():find("Border") then
+					if region:GetName():find('Border') then
 						region:SetVertexColor(.05, .05, .05)
 					end
 				end
 			end
-			local frame = _G["CompactRaidFrame" .. m]
+			local frame = _G['CompactRaidFrame' .. m]
 			if frame then
 				singlecolored = true
 				for _, region in pairs({frame:GetRegions()}) do
-					if region:GetName():find("Border") then
+					if region and region:GetName() and region:GetName():find('Border') then
 						region:SetVertexColor(.05, .05, .05)
 					end
 				end
@@ -126,7 +126,7 @@ function ColorRaid()
 	end
 	if CompactRaidFrameContainerBorderFrame then
 		for _, region in pairs({CompactRaidFrameContainerBorderFrame:GetRegions()}) do
-			if region:IsObjectType("Texture") then
+			if region:IsObjectType('Texture') then
 				region:SetVertexColor(.05, .05, .05)
 			end
 		end
@@ -134,11 +134,11 @@ function ColorRaid()
 end
 
 CF:SetScript(
-	"OnEvent",
+	'OnEvent',
 	function(self, event)
 		ColorRaid()
 		CF:SetScript(
-			"OnUpdate",
+			'OnUpdate',
 			function()
 				if CompactRaidGroup1 and not groupcolored == true then
 					ColorRaid()
@@ -148,10 +148,10 @@ CF:SetScript(
 				end
 			end
 		)
-		if event == "GROUP_ROSTER_UPDATE" then
+		if event == 'GROUP_ROSTER_UPDATE' then
 			return
 		end
-		if not (IsAddOnLoaded("Shadowed Unit Frames") or IsAddOnLoaded("PitBull Unit Frames 4.0") or IsAddOnLoaded("X-Perl UnitFrames")) then
+		if not (IsAddOnLoaded('Shadowed Unit Frames') or IsAddOnLoaded('PitBull Unit Frames 4.0') or IsAddOnLoaded('X-Perl UnitFrames')) then
 			-- PlayerHitIndicator:SetText(nil)
 			-- PlayerHitIndicator.SetText = function() end
 			-- PetHitIndicator:SetText(nil)
@@ -186,20 +186,20 @@ CF:SetScript(
 
 			if CompactRaidFrameManager then
 				for _, region in pairs({CompactRaidFrameManager:GetRegions()}) do
-					if region:IsObjectType("Texture") then
+					if region:IsObjectType('Texture') then
 						region:SetVertexColor(.05, .05, .05)
 					end
 				end
 				for _, region in pairs({CompactRaidFrameManagerContainerResizeFrame:GetRegions()}) do
-					if region:GetName():find("Border") then
+					if region:GetName():find('Border') then
 						region:SetVertexColor(.05, .05, .05)
 					end
 				end
-				CompactRaidFrameManagerToggleButton:SetNormalTexture("Interface\\AddOns\\Lorti UI Classic\\textures\\raid\\RaidPanel-Toggle")
+				CompactRaidFrameManagerToggleButton:SetNormalTexture('Interface\\AddOns\\Lorti UI Classic\\textures\\raid\\RaidPanel-Toggle')
 			end
 
 			hooksecurefunc(
-				"GameTooltip_ShowCompareItem",
+				'GameTooltip_ShowCompareItem',
 				function(self, anchorFrame)
 					if self then
 						local shoppingTooltip1, shoppingTooltip2 = unpack(self.shoppingTooltips)
@@ -222,9 +222,9 @@ CF:SetScript(
 				v:SetAlpha(0)
 			end
 			for i = 1, 4 do
-				_G["PartyMemberFrame" .. i .. "PVPIcon"]:SetAlpha(0)
-				_G["PartyMemberFrame" .. i .. "NotPresentIcon"]:Hide()
-				_G["PartyMemberFrame" .. i .. "NotPresentIcon"].Show = function()
+				_G['PartyMemberFrame' .. i .. 'PVPIcon']:SetAlpha(0)
+				_G['PartyMemberFrame' .. i .. 'NotPresentIcon']:Hide()
+				_G['PartyMemberFrame' .. i .. 'NotPresentIcon'].Show = function()
 				end
 			end
 			PlayerFrameGroupIndicator:SetAlpha(0)

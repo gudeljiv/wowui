@@ -55,6 +55,13 @@ X: -176
 Y: -161
 W: 76
 H: 40
+Frame: TellMeWhen_ConfigWarning
+FrameLevel: 1
+Anchor: TOP
+X: -6
+Y: -141
+W: 330
+H: 114
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
