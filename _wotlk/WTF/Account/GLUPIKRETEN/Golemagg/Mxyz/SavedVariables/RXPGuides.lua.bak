@@ -8,7 +8,7 @@ RXPCData = {
 	["flightPaths"] = {
 	},
 	["xprate"] = 1,
-	["frameHeight"] = 125.0000076293945,
+	["frameHeight"] = 125.0000152587891,
 	["currentGuideName"] = "",
 	["stepSkip"] = {
 	},
