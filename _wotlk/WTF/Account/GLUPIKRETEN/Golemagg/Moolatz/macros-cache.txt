@@ -5,9 +5,10 @@ END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [stealth] Ravage
-/cast [form:3] Claw
 /cast [form:1] Maul
-/cast [nostealth][form:0][@mouseover,exists,nodead][help][] Regrowth
+/cast [form:3] Claw
+/cast [noform][@mouseover,exists,nodead] Regrowth
+/cast [noform] Regrowth
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

@@ -7,7 +7,7 @@ VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 /cast [stealth] Ravage
 /cast [form:3] Claw
 /cast [form:1] Maul
-/cast [@mouseover,exists,nodead][help][] Regrowth
+/cast [nostealth][form:0][@mouseover,exists,nodead][help][] Regrowth
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

@@ -1,44 +1,37 @@
 
 RXPCData = {
 	["hideWindow"] = false,
+	["GA"] = false,
 	["completedWaypoints"] = {
-		[27] = {
-			[1569351334] = true,
-		},
 	},
-	["currentStep"] = 27,
+	["currentStep"] = 1,
 	["SoM"] = true,
-	["currentGuideGroup"] = "Horde 45-60",
+	["currentGuideGroup"] = "",
 	["flightPaths"] = {
 		[25] = "Crossroads, The Barrens",
-		[30] = "Freewind Post, Thousand Needles",
+		[77] = "Camp Taurajo, The Barrens",
 		[29] = "Sun Rock Retreat, Stonetalon Mountains",
 		[58] = "Zoram'gar Outpost, Ashenvale",
 		[179] = "Mudsprocket, Dustwallow Marsh",
-		[55] = "Brackenwall Village, Dustwallow Marsh",
-		[18] = "Booty Bay, Stranglethorn",
-		[80] = "Ratchet, The Barrens",
-		[20] = "Grom'gol, Stranglethorn",
 		[40] = "Gadgetzan, Tanaris",
+		[18] = "Booty Bay, Stranglethorn",
 		[22] = "Thunder Bluff, Mulgore",
+		[20] = "Grom'gol, Stranglethorn",
+		[55] = "Brackenwall Village, Dustwallow Marsh",
+		[80] = "Ratchet, The Barrens",
 		[23] = "Orgrimmar, Durotar",
-		[77] = "Camp Taurajo, The Barrens",
+		[30] = "Freewind Post, Thousand Needles",
 	},
-	["hardcore"] = false,
+	["disableItemWindow"] = true,
 	["xprate"] = 1.5,
 	["JoyousJourneys"] = true,
-	["phase"] = 6,
-	["frameHeight"] = 125,
-	["currentGuideName"] = "45-49 Tanaris / Feralas",
-	["stepSkip"] = {
-		[6] = true,
-		[15] = true,
-		[25] = true,
-		[26] = true,
-		[5] = true,
-	},
 	["disableArrow"] = false,
-	["disableItemWindow"] = true,
+	["frameHeight"] = 125.0000076293945,
+	["currentGuideName"] = "",
+	["stepSkip"] = {
+	},
+	["phase"] = 6,
+	["hardcore"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -47,148 +40,82 @@ RXPCTrackingData = {
 	["profiles"] = {
 		["Moolatz - Golemagg"] = {
 			["levels"] = {
-				[43] = {
-					["groupExperience"] = 17100,
-					["deaths"] = 1,
+				[46] = {
+					["groupExperience"] = 36717,
+					["deaths"] = 0,
 					["mobs"] = {
-						["Stranglethorn Vale"] = {
-							["xp"] = 80137,
-							["count"] = 135,
+						["Tanaris"] = {
+							["xp"] = 41477,
+							["count"] = 13,
+						},
+						["Zul'Farrak"] = {
+							["xp"] = 36531,
+							["count"] = 147,
+						},
+						["Orgrimmar"] = {
+							["xp"] = 12712,
+							["count"] = 2,
 						},
 					},
 					["timestamp"] = {
 						["dateStarted"] = {
-							["monthDay"] = 30,
+							["monthDay"] = 3,
 							["day"] = 0,
-							["month"] = 8,
-							["weekday"] = 3,
+							["month"] = 9,
+							["minute"] = 33,
 							["year"] = 2022,
 							["hour"] = 20,
-							["minute"] = 56,
+							["weekday"] = 7,
 						},
-						["finished"] = 233164,
+						["finished"] = 249975,
 						["dateFinished"] = {
 							["monthDay"] = 3,
 							["day"] = 0,
 							["month"] = 9,
-							["minute"] = 32,
+							["minute"] = 51,
 							["year"] = 2022,
-							["hour"] = 15,
+							["hour"] = 21,
 							["weekday"] = 7,
 						},
-						["started"] = 222382,
+						["started"] = 245258,
 					},
 					["quests"] = {
-						["Stranglethorn Vale"] = {
-							[595] = 5100,
-							[348] = 12450,
-							[606] = 1725,
-							[599] = 1725,
-							[597] = 5100,
+						["Orgrimmar"] = {
+							[32] = 11775,
+							[649] = 937,
+						},
+						["Tanaris"] = {
+							[113] = 937,
+							[5863] = 9825,
+							[82] = 6750,
+							[2605] = 9825,
+							[2606] = 975,
+							[110] = 937,
+							[10] = 9450,
+							[3362] = 10200,
 						},
 					},
 				},
-				[44] = {
-					["groupExperience"] = 4326,
-					["deaths"] = 0,
-					["mobs"] = {
-						["Stranglethorn Vale"] = {
-							["xp"] = 31853,
-							["count"] = 20,
-						},
-						["Tanaris"] = {
-							["xp"] = 55646,
-							["count"] = 69,
-						},
-					},
-					["timestamp"] = {
-						["dateStarted"] = {
-							["monthDay"] = 3,
-							["day"] = 0,
-							["month"] = 9,
-							["minute"] = 32,
-							["year"] = 2022,
-							["hour"] = 15,
-							["weekday"] = 7,
-						},
-						["finished"] = 238287,
-						["dateFinished"] = {
-							["monthDay"] = 3,
-							["day"] = 0,
-							["month"] = 9,
-							["minute"] = 57,
-							["year"] = 2022,
-							["hour"] = 16,
-							["weekday"] = 7,
-						},
-						["started"] = 233165,
-					},
-					["quests"] = {
-						["Stranglethorn Vale"] = {
-							[587] = 3375,
-							[604] = 7200,
-							[621] = 7950,
-							[8551] = 7200,
-						},
-						["Tanaris"] = {
-							[2875] = 8325,
-							[1707] = 5925,
-							[1690] = 7575,
-							[992] = 6450,
-							[2781] = 10800,
-						},
-					},
-				},
-				[45] = {
-					["groupExperience"] = 2630,
-					["deaths"] = 0,
-					["mobs"] = {
-						["Tanaris"] = {
-							["xp"] = 10274,
-							["count"] = 40,
-						},
-					},
-					["timestamp"] = {
-						["dateStarted"] = {
-							["monthDay"] = 3,
-							["day"] = 0,
-							["month"] = 9,
-							["minute"] = 57,
-							["year"] = 2022,
-							["hour"] = 16,
-							["weekday"] = 7,
-						},
-						["started"] = 238288,
-					},
-					["quests"] = {
-					},
-				},
-				[40] = {
+				[48] = {
 					["groupExperience"] = 0,
 					["deaths"] = 0,
 					["mobs"] = {
-						["Dustwallow Marsh"] = {
-							["xp"] = 43996,
-							["count"] = 40,
-						},
 					},
 					["timestamp"] = {
-						["dateFinished"] = {
-							["monthDay"] = 30,
+						["dateStarted"] = {
+							["monthDay"] = 3,
 							["day"] = 0,
-							["month"] = 8,
-							["minute"] = 0,
+							["month"] = 9,
+							["minute"] = 48,
 							["year"] = 2022,
-							["hour"] = 16,
-							["weekday"] = 3,
+							["hour"] = 22,
+							["weekday"] = 7,
 						},
-						["finished"] = 210615,
+						["started"] = 253398,
 					},
 					["quests"] = {
 						["Dustwallow Marsh"] = {
-							[11160] = 6225,
-							[11159] = 6900,
-							[11161] = 6225,
+							[2846] = 12975,
 						},
 					},
 				},
@@ -214,20 +141,20 @@ RXPCTrackingData = {
 							["monthDay"] = 30,
 							["day"] = 0,
 							["month"] = 8,
-							["minute"] = 0,
+							["weekday"] = 3,
 							["year"] = 2022,
 							["hour"] = 16,
-							["weekday"] = 3,
+							["minute"] = 0,
 						},
 						["finished"] = 216667,
 						["dateFinished"] = {
 							["monthDay"] = 30,
 							["day"] = 0,
 							["month"] = 8,
-							["weekday"] = 3,
+							["minute"] = 21,
 							["year"] = 2022,
 							["hour"] = 19,
-							["minute"] = 21,
+							["weekday"] = 3,
 						},
 						["started"] = 210616,
 					},
@@ -248,6 +175,170 @@ RXPCTrackingData = {
 						},
 					},
 				},
+				[43] = {
+					["groupExperience"] = 17100,
+					["deaths"] = 1,
+					["mobs"] = {
+						["Stranglethorn Vale"] = {
+							["xp"] = 80137,
+							["count"] = 135,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 30,
+							["day"] = 0,
+							["month"] = 8,
+							["minute"] = 56,
+							["year"] = 2022,
+							["hour"] = 20,
+							["weekday"] = 3,
+						},
+						["finished"] = 233164,
+						["dateFinished"] = {
+							["monthDay"] = 3,
+							["day"] = 0,
+							["month"] = 9,
+							["weekday"] = 7,
+							["year"] = 2022,
+							["hour"] = 15,
+							["minute"] = 32,
+						},
+						["started"] = 222382,
+					},
+					["quests"] = {
+						["Stranglethorn Vale"] = {
+							[595] = 5100,
+							[348] = 12450,
+							[606] = 1725,
+							[597] = 5100,
+							[599] = 1725,
+						},
+					},
+				},
+				[45] = {
+					["groupExperience"] = 3787,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Tanaris"] = {
+							["xp"] = 101078,
+							["count"] = 183,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 3,
+							["day"] = 0,
+							["month"] = 9,
+							["weekday"] = 7,
+							["year"] = 2022,
+							["hour"] = 16,
+							["minute"] = 57,
+						},
+						["finished"] = 245257,
+						["dateFinished"] = {
+							["monthDay"] = 3,
+							["day"] = 0,
+							["month"] = 9,
+							["minute"] = 33,
+							["year"] = 2022,
+							["hour"] = 20,
+							["weekday"] = 7,
+						},
+						["started"] = 238288,
+					},
+					["quests"] = {
+						["Tanaris"] = {
+							[8365] = 8325,
+							[8366] = 8325,
+							[1691] = 7950,
+							[2873] = 8325,
+						},
+					},
+				},
+				[47] = {
+					["groupExperience"] = 41694,
+					["deaths"] = 1,
+					["mobs"] = {
+						["Thousand Needles"] = {
+							["xp"] = 15300,
+							["count"] = 1,
+						},
+						["Tanaris"] = {
+							["xp"] = 38475,
+							["count"] = 3,
+						},
+						["Zul'Farrak"] = {
+							["xp"] = 43626,
+							["count"] = 206,
+						},
+						["Dustwallow Marsh"] = {
+							["xp"] = 12975,
+							["count"] = 1,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 3,
+							["day"] = 0,
+							["month"] = 9,
+							["minute"] = 51,
+							["year"] = 2022,
+							["hour"] = 21,
+							["weekday"] = 7,
+						},
+						["finished"] = 253397,
+						["dateFinished"] = {
+							["monthDay"] = 3,
+							["day"] = 0,
+							["month"] = 9,
+							["minute"] = 48,
+							["year"] = 2022,
+							["hour"] = 22,
+							["weekday"] = 7,
+						},
+						["started"] = 249976,
+					},
+					["quests"] = {
+						["Thousand Needles"] = {
+							[2770] = 15300,
+						},
+						["Tanaris"] = {
+							[3042] = 12450,
+							[2768] = 13575,
+							[2865] = 12450,
+						},
+					},
+				},
+				[40] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Dustwallow Marsh"] = {
+							["xp"] = 43996,
+							["count"] = 40,
+						},
+					},
+					["timestamp"] = {
+						["dateFinished"] = {
+							["monthDay"] = 30,
+							["day"] = 0,
+							["month"] = 8,
+							["weekday"] = 3,
+							["year"] = 2022,
+							["hour"] = 16,
+							["minute"] = 0,
+						},
+						["finished"] = 210615,
+					},
+					["quests"] = {
+						["Dustwallow Marsh"] = {
+							[11160] = 6225,
+							[11159] = 6900,
+							[11161] = 6225,
+						},
+					},
+				},
 				[42] = {
 					["groupExperience"] = 0,
 					["deaths"] = 0,
@@ -262,33 +353,84 @@ RXPCTrackingData = {
 							["monthDay"] = 30,
 							["day"] = 0,
 							["month"] = 8,
-							["weekday"] = 3,
+							["minute"] = 21,
 							["year"] = 2022,
 							["hour"] = 19,
-							["minute"] = 21,
+							["weekday"] = 3,
 						},
 						["finished"] = 222381,
 						["dateFinished"] = {
 							["monthDay"] = 30,
 							["day"] = 0,
 							["month"] = 8,
-							["weekday"] = 3,
+							["minute"] = 56,
 							["year"] = 2022,
 							["hour"] = 20,
-							["minute"] = 56,
+							["weekday"] = 3,
 						},
 						["started"] = 216668,
 					},
 					["quests"] = {
 						["Stranglethorn Vale"] = {
 							[189] = 2175,
-							[572] = 5100,
-							[605] = 3000,
-							[596] = 4125,
-							[629] = 5550,
-							[209] = 7200,
-							[598] = 7200,
 							[600] = 6900,
+							[598] = 7200,
+							[209] = 7200,
+							[629] = 5550,
+							[596] = 4125,
+							[605] = 3000,
+							[572] = 5100,
+						},
+					},
+				},
+				[44] = {
+					["groupExperience"] = 4326,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Stranglethorn Vale"] = {
+							["xp"] = 31853,
+							["count"] = 20,
+						},
+						["Tanaris"] = {
+							["xp"] = 55646,
+							["count"] = 69,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 3,
+							["day"] = 0,
+							["month"] = 9,
+							["weekday"] = 7,
+							["year"] = 2022,
+							["hour"] = 15,
+							["minute"] = 32,
+						},
+						["finished"] = 238287,
+						["dateFinished"] = {
+							["monthDay"] = 3,
+							["day"] = 0,
+							["month"] = 9,
+							["weekday"] = 7,
+							["year"] = 2022,
+							["hour"] = 16,
+							["minute"] = 57,
+						},
+						["started"] = 233165,
+					},
+					["quests"] = {
+						["Stranglethorn Vale"] = {
+							[587] = 3375,
+							[604] = 7200,
+							[621] = 7950,
+							[8551] = 7200,
+						},
+						["Tanaris"] = {
+							[2875] = 8325,
+							[1707] = 5925,
+							[1690] = 7575,
+							[2781] = 10800,
+							[992] = 6450,
 						},
 					},
 				},
@@ -309,13 +451,13 @@ RXPCComms = {
 					["complete"] = {
 					},
 				},
-				["43-45 Lower Stranglethorn Vale"] = {
+				["45-49 Tanaris / Feralas"] = {
 					["collect"] = {
 					},
 					["complete"] = {
 					},
 				},
-				["45-49 Tanaris / Feralas"] = {
+				["43-45 Lower Stranglethorn Vale"] = {
 					["collect"] = {
 					},
 					["complete"] = {
@@ -323,6 +465,54 @@ RXPCComms = {
 				},
 			},
 			["players"] = {
+				["Biskivit"] = {
+					["timePlayed"] = -3002.618000000017,
+					["class"] = "PALADIN",
+				},
+				["Sorrymasen"] = {
+					["timePlayed"] = -58.80099999997765,
+					["class"] = "WARRIOR",
+				},
+				["Ninexrep"] = {
+					["timePlayed"] = -42.08599999989383,
+					["class"] = "HUNTER",
+				},
+				["Complaining"] = {
+					["isRxp"] = true,
+					["lastSeen"] = 2019328.136,
+					["xpPercentage"] = 0,
+					["level"] = 70,
+					["timePlayed"] = -198.5099999997765,
+					["class"] = "WARLOCK",
+				},
+				["Shadowstórm"] = {
+					["timePlayed"] = -18.05199999999968,
+					["class"] = "MAGE",
+				},
+				["Tennø"] = {
+					["timePlayed"] = -58.80099999997765,
+					["class"] = "SHAMAN",
+				},
+				["Bajesklant"] = {
+					["timePlayed"] = 0,
+					["class"] = "HUNTER",
+				},
+				["Judgewink"] = {
+					["level"] = 44,
+					["lastSeen"] = 26651.365,
+					["xpPercentage"] = 56,
+					["class"] = "PALADIN",
+					["timePlayed"] = -849.293999999998,
+					["isRxp"] = true,
+				},
+				["Kerrorr"] = {
+					["timePlayed"] = -408.0610000000015,
+					["class"] = "PALADIN",
+				},
+				["Devereaux"] = {
+					["timePlayed"] = -3002.618000000017,
+					["class"] = "WARLOCK",
+				},
 				["Kherox"] = {
 					["timePlayed"] = -994.6610000000001,
 					["class"] = "WARRIOR",
@@ -331,25 +521,25 @@ RXPCComms = {
 					["timePlayed"] = -848.128999999999,
 					["class"] = "PALADIN",
 				},
-				["Judgewink"] = {
-					["class"] = "PALADIN",
-					["lastSeen"] = 26651.365,
-					["xpPercentage"] = 56,
-					["isRxp"] = true,
-					["timePlayed"] = -849.293999999998,
-					["level"] = 44,
+				["Healboyy"] = {
+					["timePlayed"] = -3002.618000000017,
+					["class"] = "DRUID",
 				},
-				["Shadowstórm"] = {
-					["timePlayed"] = -18.05199999999968,
-					["class"] = "MAGE",
-				},
-				["Bajesklant"] = {
-					["timePlayed"] = 0,
+				["Narich"] = {
+					["timePlayed"] = -66.15499999979511,
 					["class"] = "HUNTER",
 				},
-				["Kerrorr"] = {
-					["timePlayed"] = -408.0610000000015,
-					["class"] = "PALADIN",
+				["Irontøs"] = {
+					["timePlayed"] = -185.2780000001658,
+					["class"] = "WARRIOR",
+				},
+				["Ebisx"] = {
+					["timePlayed"] = -58.80099999997765,
+					["class"] = "ROGUE",
+				},
+				["Deadcheen"] = {
+					["timePlayed"] = -3002.618000000017,
+					["class"] = "WARLOCK",
 				},
 			},
 		},
