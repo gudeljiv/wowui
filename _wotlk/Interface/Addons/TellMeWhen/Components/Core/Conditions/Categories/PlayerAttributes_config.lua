@@ -10,8 +10,9 @@
 -- Cybeloras of Aerie Peak
 -- --------------------
 
-
-if not TMW then return end
+if not TMW then
+	return
+end
 
 local TMW = TMW
 local L = TMW.L
@@ -20,45 +21,44 @@ local print = TMW.print
 local SUG = TMW.SUG
 local strlowerCache = TMW.strlowerCache
 
-local _, pclass = UnitClass("Player")
+local _, pclass = UnitClass('Player')
 
-
-
-local Module = SUG:NewModule("stances", SUG:GetModule("spell"))
+local Module = SUG:NewModule('stances', SUG:GetModule('spell'))
 Module.noMin = true
 Module.showColorHelp = false
-Module.helpText = L["SUG_TOOLTIPTITLE_GENERIC"]
+Module.helpText = L['SUG_TOOLTIPTITLE_GENERIC']
 
 Module.stances = {
 	WARRIOR = {
-		[2457] = 	GetSpellInfo(2457), 	-- Battle Stance
-		[71] = 		GetSpellInfo(71),		-- Defensive Stance
-		[2458] = 	GetSpellInfo(2458), 	-- Berserker Stance
+		[2457] = GetSpellInfo(2457), -- Battle Stance
+		[71] = GetSpellInfo(71), -- Defensive Stance
+		[2458] = GetSpellInfo(2458) -- Berserker Stance
 	},
 	DRUID = {
-		[5487] = 	GetSpellInfo(5487), 	-- Bear Form
-		[768] = 	GetSpellInfo(768),		-- Cat Form
-		[783] = 	GetSpellInfo(783),		-- Travel Form
-		[24858] = 	GetSpellInfo(24858), 	-- Moonkin Form
-		[33891] = 	GetSpellInfo(33891), 	-- Tree of Life
-		[33943] = 	GetSpellInfo(33943), 	-- Flight Form
-		[40120] = 	GetSpellInfo(40120), 	-- Swift Flight Form	
+		[9634] = GetSpellInfo(9634), -- Dire Bear Form
+		[5487] = GetSpellInfo(5487), -- Bear Form
+		[768] = GetSpellInfo(768), -- Cat Form
+		[783] = GetSpellInfo(783), -- Travel Form
+		[24858] = GetSpellInfo(24858), -- Moonkin Form
+		[33891] = GetSpellInfo(33891), -- Tree of Life
+		[33943] = GetSpellInfo(33943), -- Flight Form
+		[40120] = GetSpellInfo(40120) -- Swift Flight Form
 	},
 	PRIEST = {
-		[15473] = 	GetSpellInfo(15473), 	-- Shadowform	
+		[15473] = GetSpellInfo(15473) -- Shadowform
 	},
 	ROGUE = {
-		[1784] = 	GetSpellInfo(1784), 	-- Stealth	
+		[1784] = GetSpellInfo(1784) -- Stealth
 	},
 	PALADIN = {
-		[19746] = 	GetSpellInfo(19746), 	-- Concentration Aura
-		[32223] = 	GetSpellInfo(32223), 	-- Crusader Aura
-		[465] = 	GetSpellInfo(465),		-- Devotion Aura
-		[19900] = 	GetSpellInfo(19891), 	-- Fire Resistance Aura
-		[19898] = 	GetSpellInfo(19891), 	-- Frost Resistance Aura
-		[19896] = 	GetSpellInfo(19891), 	-- Shadow Resistance Aura
-		[7294] = 	GetSpellInfo(7294),		-- Retribution Aura	
-	},
+		[19746] = GetSpellInfo(19746), -- Concentration Aura
+		[32223] = GetSpellInfo(32223), -- Crusader Aura
+		[465] = GetSpellInfo(465), -- Devotion Aura
+		[19900] = GetSpellInfo(19891), -- Fire Resistance Aura
+		[19898] = GetSpellInfo(19891), -- Frost Resistance Aura
+		[19896] = GetSpellInfo(19891), -- Shadow Resistance Aura
+		[7294] = GetSpellInfo(7294) -- Retribution Aura
+	}
 }
 function Module:Table_Get()
 	return self.stances[pclass]
@@ -71,13 +71,13 @@ function Module:Entry_AddToList_1(f, spellID)
 
 		f.insert = NONE
 
-		f.Icon:SetTexture("Interface\\Icons\\INV_Misc_QuestionMark")
+		f.Icon:SetTexture('Interface\\Icons\\INV_Misc_QuestionMark')
 	else
 		local name, _, tex = GetSpellInfo(spellID)
 
 		f.Name:SetText(name)
 
-		f.tooltipmethod = "TMW_SetSpellByIDWithClassIcon"
+		f.tooltipmethod = 'TMW_SetSpellByIDWithClassIcon'
 		f.tooltiparg = spellID
 
 		f.insert = name
@@ -102,15 +102,13 @@ function Module:Table_GetSpecialSuggestions_1(suggestions)
 	end
 end
 
-
-
-local Module = SUG:NewModule("tracking", SUG:GetModule("default"))
+local Module = SUG:NewModule('tracking', SUG:GetModule('default'))
 Module.noMin = true
 Module.showColorHelp = false
-Module.helpText = L["SUG_TOOLTIPTITLE_GENERIC"]
+Module.helpText = L['SUG_TOOLTIPTITLE_GENERIC']
 
 local TrackingCache = {}
-for _, id in pairs{
+for _, id in pairs {
 	2580, -- Find Minerals
 	2383, -- Find Herbs
 	2481, -- Find Treasure
@@ -122,7 +120,7 @@ for _, id in pairs{
 	19885, -- Track Hidden
 	5225, -- Track Humanoids (druid)
 	19883, -- Track Humanoids
-	19884, -- Track Undead
+	19884 -- Track Undead
 } do
 	local name = GetSpellInfo(id)
 	TrackingCache[id] = strlower(name)
@@ -141,18 +139,16 @@ function Module:Entry_AddToList_1(f, id)
 	f.ID:SetText(nil)
 
 	f.tooltiptitle = name
-	
+
 	f.insert = name
 
 	f.Icon:SetTexture(texture)
 end
 
-
-
-local Module = SUG:NewModule("blizzequipset", SUG:GetModule("default"))
+local Module = SUG:NewModule('blizzequipset', SUG:GetModule('default'))
 Module.noMin = true
 Module.showColorHelp = false
-Module.helpText = L["SUG_TOOLTIPTITLE_GENERIC"]
+Module.helpText = L['SUG_TOOLTIPTITLE_GENERIC']
 
 local EquipSetCache = {}
 function Module:Table_Get()
@@ -161,7 +157,7 @@ function Module:Table_Get()
 
 		EquipSetCache[id] = strlower(name)
 	end
-	
+
 	return EquipSetCache
 end
 function Module:Table_GetSorter()
@@ -173,13 +169,10 @@ function Module:Entry_AddToList_1(f, id)
 	f.Name:SetText(name)
 	f.ID:SetText(nil)
 
-	f.tooltipmethod = "SetEquipmentSet"
+	f.tooltipmethod = 'SetEquipmentSet'
 	f.tooltiparg = name
 
 	f.insert = name
 
 	f.Icon:SetTexture(icon)
 end
-
-
-

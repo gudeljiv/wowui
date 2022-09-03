@@ -378,6 +378,30 @@ TargetFrame:HookScript(
 	end
 )
 
+-- PlayerFrame:HookScript(
+-- 	'OnUpdate',
+-- 	function(self)
+-- 		local inRange = 0
+-- 		local out = ''
+-- 		for i = 1, 40 do
+-- 			if UnitExists('nameplate' .. i) and IsSpellInRange('Maul', 'nameplate' .. i) == 1 and CheckInteractDistance('nameplate' .. i, 3) then
+-- 				-- 1 = Inspect, 28 yards
+-- 				-- 2 = Trade, 11.11 yards
+-- 				-- 3 = Duel, 9.9 yards
+-- 				-- 4 = Follow, 28 yards
+-- 				print('nameplate' .. i, UnitExists('nameplate' .. i), CheckInteractDistance('nameplate' .. i, 3))
+-- 				inRange = inRange + 1
+-- 			end
+-- 		end
+-- 		if inRange > 1 then
+-- 			out = 'aoe'
+-- 		else
+-- 			out = 'single'
+-- 		end
+-- 		print(inRange, out)
+-- 	end
+-- )
+
 -- local function TargetFrameTextAdjustment()
 -- 	TargetFrameHealthBarText:ClearAllPoints()
 -- 	TargetFrameHealthBarText:SetPoint("CENTER", TargetFrame, "CENTER", -50, 7)

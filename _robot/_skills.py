@@ -14,27 +14,28 @@ skills["warrior"] = [
     {"name": "revenge", "key": "1"},
     {"name": "execute", "key": "f"},
     {"name": "whirlwind", "key": "6"},
-    # {"name": "rampage", "key": "home"},
     {"name": "sweeping strikes", "key": "r", "modifier": "alt"},
     {"name": "victory rush", "key": "e", "modifier": "shift"},
-    {"name": "thunder clap", "key": "e"}
+    {"name": "thunder clap", "key": "e"},
+    {"name": "rampage", "key": "home"}
 ]
 
 skills["warlock"] = [
+    {"name": "immolate", "key": "h"},
+    {"name": "corruption", "key": "v"},
+    {"name": "curse of agony", "key": "g"},
+    {"name": "shadow bolt", "key": "f11"}
 ]
-# {"name": "immolate", "key": "h"},
-# {"name": "corruption", "key": "v"},
-# {"name": "curse of agony", "key": "g"},
-# {"name": "shadow bolt", "key": "f11"},
+
 
 skills["hunter"] = [
     {"name": "multi-shot", "key": "0", "modifier": "alt"},
     {"name": "steady shot", "key": "4"},
     {"name": "mend pet", "key": "v"},
-    {"name": "kill command", "key": "f10"}
+    {"name": "kill command", "key": "f10"},
+    {"name": "serpent sting", "key": "9", "modifier": "alt"},
+    {"name": "arcane shot", "key": "f11"}
 ]
-# {"name": "serpent sting", "key": "9", "modifier": "alt"},
-# {"name": "arcane shot", "key": "f11"},
 
 skills["druid"] = [
     {"name": "maul", "key": "1"},
@@ -46,7 +47,9 @@ skills["druid"] = [
     {"name": "rake", "key": "3"},
     {"name": "faerie fire", "key": "e"},
     {"name": "ferocious bite", "key": "4"},
-    # {"name": "pounce", "key": "1"}
+    {"name": "pounce", "key": "1"},
+    {"name": "tigers fury", "key": "6"},
+    {"name": "barkskin", "key": "g"},
 ]
 
 skills["death knight"] = [
@@ -57,11 +60,9 @@ skills["death knight"] = [
     {"name": "death coil", "key": "5"},
     {"name": "blood boil", "key": "e"},
     {"name": "rune tap", "key": "9", "modifier": "alt"},
-    {"name": "pestilence", "key": "4"}
+    {"name": "pestilence", "key": "4"},
+    {"name": "blood tap", "key": "0", "modifier": "alt"}
 ]
-
-# {"name": "cower", "key": "6"},
-# {"name": "ravage", "key": "6"},
 
 skills["priest"] = [
 ]

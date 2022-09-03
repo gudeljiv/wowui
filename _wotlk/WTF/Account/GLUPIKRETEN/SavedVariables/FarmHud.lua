@@ -51,9 +51,9 @@ FarmHudDB = {
 		0, -- [3]
 		0.7, -- [4]
 	},
-	["tracking^132275"] = "client",
-	["tracking^136455"] = "client",
+	["buttons_show"] = false,
 	["coords_show"] = false,
+	["tracking^136455"] = "client",
 	["tracking^135861"] = "client",
 	["showDummy"] = true,
 	["tracking^136464"] = "client",
@@ -92,7 +92,7 @@ FarmHudDB = {
 	["healcircle_show"] = false,
 	["time_radius"] = 0.48,
 	["SuperTrackedQuest"] = true,
-	["buttons_show"] = false,
+	["tracking^132275"] = "client",
 	["holdKeyForMouseOn"] = "_NONE",
 	["time_local"] = true,
 	["tracking^136452"] = "client",

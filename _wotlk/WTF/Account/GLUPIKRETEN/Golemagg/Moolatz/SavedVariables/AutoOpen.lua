@@ -2,4 +2,4 @@
 AutoOpenBlackList = {
 }
 AO_loginMessage = false
-AutoOpenQuestItems = false
+AutoOpenQuestItems = true

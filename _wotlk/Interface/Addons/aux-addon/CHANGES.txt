@@ -1,0 +1,10 @@
+lightweight tag c794add89ad4f11de50d2a812fca7c8c5a743cd9 v3.0.0
+Author:	Simon Hirsig <simon.hirsig@gmail.com>
+Date:	Sat Sep 3 12:45:25 2022 +0200
+
+commit c794add89ad4f11de50d2a812fca7c8c5a743cd9
+Author: Simon Hirsig <simon.hirsig@gmail.com>
+Date:   Sat Sep 3 12:45:25 2022 +0200
+
+    wotlk update
+

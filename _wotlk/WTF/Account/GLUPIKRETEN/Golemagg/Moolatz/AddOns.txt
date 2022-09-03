@@ -62,7 +62,7 @@ TellMeWhen_Options: enabled
 !Beautycase: enabled
 Align: enabled
 Auctionator: disabled
-BlizzMove: enabled
+BlizzMove: disabled
 ChocolateBar: enabled
 ClassicAuraDurations: enabled
 ClassicAutoDismount: enabled
@@ -119,11 +119,11 @@ nMainbar: enabled
 nMinimap: enabled
 xVermin: enabled
 Leatrix_Plus: enabled
-aux-addon: disabled
+aux-addon: enabled
 RXPGuides: enabled
 whoaThickFrames_BCC: enabled
 AutoOpen: enabled
-BlizzMove_Debug: enabled
+BlizzMove_Debug: disabled
 ExtendedCharacterStats: enabled
 ImprovedMacroFrame: disabled
 LFGBulletinBoard: enabled
@@ -144,7 +144,7 @@ Kui_Nameplates_Core_Config: disabled
 Kui_Nameplates_Core: disabled
 Plater: enabled
 NovaInstanceTracker: enabled
-PallyPower: enabled
+PallyPower: disabled
 TidyPlates_ThreatPlates: disabled
 BuyEmAllClassic: enabled
 PitBull4: enabled
@@ -154,3 +154,4 @@ AdiBags-ItemRackSets: enabled
 VuhDoOptions: disabled
 ErrorFilter: enabled
 ErrorMonster: disabled
+Attack bar: disabled

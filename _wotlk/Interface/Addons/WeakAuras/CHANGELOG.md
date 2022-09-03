@@ -1,18 +1,20 @@
-# [3.7.6](https://github.com/WeakAuras/WeakAuras2/tree/3.7.6) (2022-01-17)
+# [4.1.2](https://github.com/WeakAuras/WeakAuras2/tree/4.1.2) (2022-08-29)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/3.7.5...3.7.6)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/4.1.1...4.1.2)
 
 ## Highlights
 
- Bug fixes 
+ - More Wrath fixes 
 
 ## Commits
 
 asakawa (1):
 
-- remove the retail check on all incoming heal settings
+- Add the LoC type NONE
 
-mrbuds (1):
+mrbuds (3):
 
-- sanitize foreground/background subregions (#3427)
+- Fix error in talent lazy migration, when use_talent is true but talent.single is nil
+- Talent load condition skip testing talents not existing for player class
+- Aura trigger: fix options not available for current version of the game handled as if they were
 

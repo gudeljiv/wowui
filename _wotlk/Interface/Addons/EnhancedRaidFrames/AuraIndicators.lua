@@ -69,7 +69,6 @@ function EnhancedRaidFrames:CreateIndicators(frame)
 
 		--disable the mouse click on our frames to allow those clicks to get passed straight through to the raid frame behind (switch target, right click, etc)
 		indicatorFrame:SetMouseClickEnabled(false) --this MUST come after the SetScript lines for OnEnter and OnLeave. SetScript will re-enable mouse clicks when called.
-
 		indicatorFrame:CreateBeautyBorder(6)
 	end
 
@@ -438,7 +437,7 @@ function EnhancedRaidFrames:UpdateUnitAuras(unit)
 	while (true) do
 		local auraName, icon, count, duration, expirationTime, castBy, spellID
 
-		if not self.isWoWClassic then
+		if not self.isWoWClassicEra then
 			auraName, icon, count, _, duration, expirationTime, castBy, _, _, spellID = UnitAura(unit, i, 'HELPFUL')
 		else
 			auraName, icon, count, _, duration, expirationTime, castBy, _, _, spellID = self.UnitAuraWrapper(unit, i, 'HELPFUL') --for wow classic. This is the LibClassicDurations wrapper
@@ -471,7 +470,7 @@ function EnhancedRaidFrames:UpdateUnitAuras(unit)
 	while (true) do
 		local auraName, icon, count, duration, expirationTime, castBy, spellID, debuffType
 
-		if not self.isWoWClassic then
+		if not self.isWoWClassicEra then
 			auraName, icon, count, debuffType, duration, expirationTime, castBy, _, _, spellID = UnitAura(unit, i, 'HARMFUL')
 		else
 			auraName, icon, count, debuffType, duration, expirationTime, castBy, _, _, spellID = self.UnitAuraWrapper(unit, i, 'HARMFUL') --for wow classic. This is the LibClassicDurations wrapper

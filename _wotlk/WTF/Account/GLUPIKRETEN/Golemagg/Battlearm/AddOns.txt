@@ -30,8 +30,8 @@ AtlasLootClassic: enabled
 AtlasLootClassic_Data: enabled
 Auctionator: disabled
 AutoOpen: enabled
-BlizzMove: enabled
-BlizzMove_Debug: enabled
+BlizzMove: disabled
+BlizzMove_Debug: disabled
 !BugGrabber: enabled
 BugSack: enabled
 ChocolateBar: enabled
@@ -113,7 +113,7 @@ Kui_Nameplates_Core_Config: disabled
 Kui_Nameplates_Core: disabled
 Plater: enabled
 NovaInstanceTracker: enabled
-PallyPower: enabled
+PallyPower: disabled
 TidyPlates_ThreatPlates: disabled
 BuyEmAllClassic: enabled
 PitBull4: enabled
@@ -125,3 +125,5 @@ ErrorFilter: enabled
 ErrorMonster: disabled
 Blizzard_CompactRaidFrames: enabled
 Blizzard_CUFProfiles: enabled
+EnhancedRaidFrames: disabled
+Attack bar: disabled

@@ -1,8 +1,8 @@
-## Interface: 90205
+## Interface: 90207
 ## Title: Enhanced Raid Frames
 ## Notes: Enhances the Blizzard raid frames with configurable Buff/Debuff indicators
 ## Author: Britt W. Yazel
-## Version: 3.4.9
+## Version: 3.4.13
 ## DefaultState: enabled
 ## SavedVariables: EnhancedRaidFramesDB
 ## X-Credits-Maintainer: Britt W. Yazel

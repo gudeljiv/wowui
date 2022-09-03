@@ -6,7 +6,8 @@ VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [stealth] Ravage
 /cast [form:3] Claw
-/cast [@mouseover,exists,nodead][help][] Regrowth
+/cast [form:1] Maul
+/cast [nostealth][form:0][@mouseover,exists,nodead][help][] Regrowth
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -49,7 +50,7 @@ VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [stealth] Ravage
 /cast [form:0][form:4] Moonfire
-/cast [form:1] Swipe
+/cast [form:1] Swipe (Bear)
 /cast [form:1] Enrage
 /cast [form:3] Shred
 END
