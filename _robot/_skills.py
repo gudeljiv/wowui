@@ -5,19 +5,24 @@ skills = dict()
 skills["warrior"] = [
     {"name": "battle shout", "key": "f4"},
     {"name": "demoralizing shout", "key": "f5"},
-    {"name": "sunder armor", "key": "g"},
+    {"name": "sunder armor", "key": "k"},
     {"name": "bloodthirst", "key": "f11"},
     {"name": "rend", "key": "5"},
     {"name": "overpower", "key": "4"},
     {"name": "heroic strike", "key": "2"},
     {"name": "cleave", "key": "3"},
-    {"name": "revenge", "key": "1"},
+    {"name": "revenge", "key": "9", "modifier": "alt"},
     {"name": "execute", "key": "f"},
     {"name": "whirlwind", "key": "6"},
     {"name": "sweeping strikes", "key": "r", "modifier": "alt"},
     {"name": "victory rush", "key": "e", "modifier": "shift"},
     {"name": "thunder clap", "key": "e"},
-    {"name": "rampage", "key": "home"}
+    {"name": "rampage", "key": "home"},
+    {"name": "shield slam", "key": "4"},
+    {"name": "shield block", "key": "0", "modifier": "alt"},
+    {"name": "devastate", "key": "f11"},
+    {"name": "vigilance", "key": "d", "modifier": "shift"},
+    {"name": "last stand", "key": "t", "modifier": "shift"},
 ]
 
 skills["warlock"] = [

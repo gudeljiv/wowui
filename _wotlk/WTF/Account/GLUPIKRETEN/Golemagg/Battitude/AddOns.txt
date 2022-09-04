@@ -61,7 +61,7 @@ TellMeWhen_Options: enabled
 !Colorz: enabled
 !Beautycase: enabled
 Align: enabled
-Auctionator: disabled
+Auctionator: enabled
 BlizzMove: disabled
 ChocolateBar: enabled
 ClassicAuraDurations: enabled
@@ -166,3 +166,4 @@ AdiBags-ItemRackSets: enabled
 VuhDoOptions: disabled
 ErrorFilter: enabled
 ErrorMonster: disabled
+EnhancedRaidFrames: enabled

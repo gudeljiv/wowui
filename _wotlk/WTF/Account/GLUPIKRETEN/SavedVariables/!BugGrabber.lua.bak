@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 5446,
 	["lastSanitation"] = 3,
+	["session"] = 5457,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -1429,20 +1429,20 @@ BugGrabberDB = {
 		}, -- [180]
 		{
 			["message"] = " (null)",
-			["time"] = "2022/04/11 11:49:12",
 			["session"] = 5326,
+			["time"] = "2022/04/11 11:49:12",
 			["counter"] = 15,
 		}, -- [181]
 		{
 			["message"] = "  (null)",
-			["time"] = "2022/04/13 16:37:53",
 			["session"] = 5326,
+			["time"] = "2022/04/13 16:37:53",
 			["counter"] = 4,
 		}, -- [182]
 		{
 			["message"] = "   (null)",
-			["time"] = "2022/06/02 15:20:51",
 			["session"] = 5326,
+			["time"] = "2022/06/02 15:20:51",
 			["counter"] = 1,
 		}, -- [183]
 		{
@@ -1876,62 +1876,62 @@ BugGrabberDB = {
 		}, -- [237]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-enUS.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [238]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-deDE.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [239]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esES.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [240]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esMX.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [241]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-frFR.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [242]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-itIT.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [243]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-koKR.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [244]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ptBR.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [245]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ruRU.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [246]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-zhCN.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [247]
 		{
@@ -1943,40 +1943,34 @@ BugGrabberDB = {
 			["counter"] = 2,
 		}, -- [248]
 		{
-			["message"] = "(null)",
-			["time"] = "2022/03/09 13:39:43",
-			["session"] = 5424,
-			["counter"] = 17,
-		}, -- [249]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function '<unnamed>:ClearAllPoints()'.",
 			["time"] = "2022/09/02 19:04:10",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\ActiveQuestsHeader.lua\"]:40: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:928: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua\"]:356: in function `val'\n[string \"@Interface\\AddOns\\Questie\\Modules\\TaskQueue.lua\"]:8: in function <Interface\\AddOns\\Questie\\Modules\\TaskQueue.lua:6>",
 			["session"] = 5426,
 			["counter"] = 2,
-		}, -- [250]
+		}, -- [249]
 		{
 			["message"] = "Lua error in aura 'Swing Timer [OH]': init\nWeakAuras Version: 4.1.2\nAura Version: 1.0.0\n[string \"return function() aura_env.speed = UnitRang...\"]:2: attempt to perform arithmetic on field 'lastRangedSwing' (a nil value)",
 			["time"] = "2022/09/03 10:40:03",
 			["stack"] = "[string \"return function() aura_env.speed = UnitRangedDamage(\"player\") or 0\naura_env.expirationTime = aura_env.lastRangedSwing + aura_env.speed\naura_env.swingStop = nil\n\n end\"]:2: in function <[string \"return function() aura_env.speed = UnitRang...\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\AuraEnvironment.lua\"]:297: in function `ActivateAuraEnvironment'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:803: in function `CreateFakeStates'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:3947: in function `UpdateFakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:3923: in function `FakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:2878: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:2752>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:2900: in function `Add'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1863: in function `ImportPhase1'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1873: in function `ImportPhase1'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1501: in function `ImportImpl'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1470: in function <...ace\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update.lua:1469>",
 			["session"] = 5426,
 			["counter"] = 9,
-		}, -- [251]
+		}, -- [250]
 		{
 			["message"] = "Lua error in aura 'Swing Timer [MH]': init\nWeakAuras Version: 4.1.2\nAura Version: 1.0.0\n[string \"return function() aura_env.speed = UnitRang...\"]:2: attempt to perform arithmetic on field 'lastRangedSwing' (a nil value)",
 			["time"] = "2022/09/03 10:40:03",
 			["stack"] = "[string \"return function() aura_env.speed = UnitRangedDamage(\"player\") or 0\naura_env.expirationTime = aura_env.lastRangedSwing + aura_env.speed\naura_env.swingStop = nil\n end\"]:2: in function <[string \"return function() aura_env.speed = UnitRang...\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\AuraEnvironment.lua\"]:297: in function `ActivateAuraEnvironment'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:803: in function `CreateFakeStates'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:3947: in function `UpdateFakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:3923: in function `FakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:2878: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:2752>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:2900: in function `Add'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1863: in function `ImportPhase1'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1873: in function `ImportPhase1'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1501: in function `ImportImpl'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1470: in function <...ace\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update.lua:1469>",
 			["session"] = 5426,
 			["counter"] = 9,
-		}, -- [252]
+		}, -- [251]
 		{
 			["message"] = "Lua error in aura 'Swing Timer [OH] (Old)': init\nWeakAuras Version: 4.1.2\nAura Version: 1.0.0\n[string \"return function() aura_env.speed = UnitRang...\"]:2: attempt to perform arithmetic on field 'lastRangedSwing' (a nil value)",
 			["time"] = "2022/09/03 10:40:03",
 			["stack"] = "[string \"return function() aura_env.speed = UnitRangedDamage(\"player\") or 0\naura_env.expirationTime = aura_env.lastRangedSwing + aura_env.speed\naura_env.swingStop = nil\n\n end\"]:2: in function <[string \"return function() aura_env.speed = UnitRang...\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\AuraEnvironment.lua\"]:297: in function `ActivateAuraEnvironment'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:803: in function `CreateFakeStates'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:3947: in function `UpdateFakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:3923: in function `FakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:2878: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:2752>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:2900: in function `Add'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1863: in function `ImportPhase1'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1873: in function `ImportPhase1'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1501: in function `ImportImpl'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1470: in function <...ace\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update.lua:1469>",
 			["session"] = 5426,
 			["counter"] = 9,
-		}, -- [253]
+		}, -- [252]
 		{
 			["message"] = "Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua:1002: bad argument #1 to 'pairs' (table expected, got nil)",
 			["time"] = "2022/09/03 12:54:56",
@@ -1984,7 +1978,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `pairs'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1002: in function `BuildMenu'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1751: in function `DockMenuToCharacterSheet'\n[string \"@Interface\\AddOns\\ItemRack\\ItemRack-3.69.nil.lua\"]:1730: in function `PaperDollItemSlotButton_OnEnter'\n[string \"*:OnEnter\"]:1: in function <[string \"*:OnEnter\"]:1>",
 			["session"] = 5428,
 			["counter"] = 7,
-		}, -- [254]
+		}, -- [253]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
 			["time"] = "2022/02/16 20:30:17",
@@ -1992,7 +1986,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
 			["session"] = 5428,
 			["counter"] = 8,
-		}, -- [255]
+		}, -- [254]
 		{
 			["message"] = "[string \"abar_core:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
 			["time"] = "2022/09/03 12:33:57",
@@ -2000,21 +1994,21 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 5429,
 			["counter"] = 2,
-		}, -- [256]
+		}, -- [255]
 		{
 			["message"] = "...ace\\AddOns\\EnhancedRaidFrames\\EnhancedRaidFrames-3.4.9.lua:105: Cannot find a library instance of \"LibDualSpec-1.0\".",
 			["time"] = "2022/09/03 10:10:27",
 			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\LibStub\\LibStub.lua\"]:23: in function `LibStub'\n[string \"@Interface\\AddOns\\EnhancedRaidFrames\\EnhancedRaidFrames-3.4.9.lua\"]:105: in function `Setup'\n[string \"@Interface\\AddOns\\EnhancedRaidFrames\\EnhancedRaidFrames-3.4.9.lua\"]:44: in function <...ace\\AddOns\\EnhancedRaidFrames\\EnhancedRaidFrames.lua:42>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:70: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:498: in function `InitializeAddon'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:623: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:615>",
 			["session"] = 5429,
 			["counter"] = 2,
-		}, -- [257]
+		}, -- [256]
 		{
 			["message"] = "Interface\\AddOns\\PallyPower\\PallyPower-v1.4.3-classic.lua:165: attempt to index upvalue 'LCD' (a nil value)",
 			["time"] = "2022/09/03 10:10:28",
 			["stack"] = "[string \"@Interface\\AddOns\\PallyPower\\PallyPower-v1.4.3-classic.lua\"]:165: in function <Interface\\AddOns\\PallyPower\\PallyPower.lua:82>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:70: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:498: in function `InitializeAddon'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-13.lua\"]:623: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:615>",
 			["session"] = 5429,
 			["counter"] = 2,
-		}, -- [258]
+		}, -- [257]
 		{
 			["message"] = "[string \"print(\"769\", \"IsSpellInRange(769, \"spell\", \"nameplate1\"))\"]:1: ')' expected near 'spell'",
 			["time"] = "2022/09/03 15:30:48",
@@ -2022,7 +2016,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2977: in function <Interface\\FrameXML\\ChatFrame.lua:2970>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 5434,
 			["counter"] = 1,
-		}, -- [259]
+		}, -- [258]
 		{
 			["message"] = "[string \"print(\"769: \", \"IsSpellInRange(769, \"spell\", \"nameplate1\"))\"]:1: ')' expected near 'spell'",
 			["time"] = "2022/09/03 15:33:40",
@@ -2030,14 +2024,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2977: in function <Interface\\FrameXML\\ChatFrame.lua:2970>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 5434,
 			["counter"] = 1,
-		}, -- [260]
+		}, -- [259]
 		{
 			["message"] = "Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua:813: attempt to concatenate local 'v' (a table value)",
 			["time"] = "2022/09/03 10:38:33",
 			["stack"] = "[string \"@Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua\"]:813: in function `member'\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:221: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:169>\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1239: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:1121>\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1652: in function `FeedGroup'\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1932: in function `Open'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua\"]:1031: in function `FillOptions'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua\"]:1028: in function <...dOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua:1026>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:72: in function <...ce\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:70>\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:306: in function `Fire'\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIContainer-TabGroup.lua\"]:156: in function `SelectTab'\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIContainer-TabGroup.lua\"]:67: in function <...Libs\\AceGUI-3.0\\widgets\\AceGUIContainer-TabGroup.lua:64>",
 			["session"] = 5439,
 			["counter"] = 10,
-		}, -- [261]
+		}, -- [260]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'whoaThickFrames_BCC' tried to call the protected function 'CompactPartyFrame:unusedFunc()'.",
 			["time"] = "2022/05/31 17:40:22",
@@ -2045,15 +2039,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `unusedFunc'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:160: in function `CompactRaidFrameContainer_LayoutFrames'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:130: in function `CompactRaidFrameContainer_TryUpdate'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 5442,
 			["counter"] = 5,
-		}, -- [262]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
-			["time"] = "2022/02/15 18:27:27",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 5445,
-			["counter"] = 134,
-		}, -- [263]
+		}, -- [261]
 		{
 			["message"] = "Interface\\AddOns\\RXPGuides\\functions.lua:926: attempt to concatenate field 'tag' (a nil value)",
 			["time"] = "2022/09/03 20:32:18",
@@ -2061,14 +2047,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\RXPGuides\\functions.lua\"]:926: in function `func'\n[string \"@Interface\\AddOns\\RXPGuides\\RXPGuides-v4.2.8.lua\"]:703: in function <Interface\\AddOns\\RXPGuides\\RXPGuides.lua:690>",
 			["session"] = 5445,
 			["counter"] = 229,
-		}, -- [264]
+		}, -- [262]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'RXPGuides' tried to call the protected function 'Search()'.",
 			["time"] = "2022/09/03 21:28:03",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Search'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:225: in function `LFGBrowse_DoSearch'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGBrowse.lua\"]:178: in function `SearchActiveEntry'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGParentFrame.lua\"]:92: in function `LFGParentFrame_SearchActiveEntry'\n[string \"@Interface\\AddOns\\Blizzard_LookingForGroupUI\\Blizzard_LFGListing.lua\"]:69: in function <...s\\Blizzard_LookingForGroupUI\\Blizzard_LFGListing.lua:49>",
 			["session"] = 5445,
 			["counter"] = 1,
-		}, -- [265]
+		}, -- [263]
 		{
 			["message"] = "[string \"GameTooltip:OnEnter\"]:3: Usage: GameTooltip:SetText(\"text\" [, color, wrap])",
 			["time"] = "2022/09/03 21:28:33",
@@ -2076,7 +2062,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `SetText'\n[string \"*:OnEnter\"]:3: in function <[string \"*:OnEnter\"]:1>",
 			["session"] = 5445,
 			["counter"] = 1,
-		}, -- [266]
+		}, -- [264]
 		{
 			["message"] = "...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:1793: attempt to compare number with nil",
 			["time"] = "2022/09/03 21:28:33",
@@ -2084,6 +2070,116 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:1793: in function <...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:1792>\n[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:1842: in function <...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:1836>",
 			["session"] = 5445,
 			["counter"] = 5,
+		}, -- [265]
+		{
+			["message"] = "...ce\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox-4.lua:358: attempt to call method 'SetBackdrop' (a nil value)",
+			["time"] = "2022/09/04 11:12:11",
+			["locals"] = "LIBRARY_VERSION_MAJOR = \"SelectBox\"\nLIBRARY_VERSION_MINOR = 4\nlib = <table> {\n DoHide = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:292\n MouseIn = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:301\n Create = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:216\n DoShow = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:287\n MouseOut = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:311\n menu = SelectBoxMenu {\n }\n OnClick = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:334\n DoUpdate = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:236\n OnUpdate = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:315\n DoFade = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:295\n}\nNUM_MENU_ITEMS = 15\nkit = <table> {\n SetText = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:180\n GetItems = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:97\n GetHeight = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:170\n SetInputHidden = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:152\n OnClose = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:190\n SetWidth = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:134\n UpdateValue = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:185\n GetWidth = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:175\n UpdateInset = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:143\n}\nbuttonKit = <table> {\n Open = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox.lua:197\n}\nkeys = <table> {\n}\nvalues = <table> {\n}\nscrollTime = 0.200000\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n bgFile = \"Interface/Tooltips/UI-Tooltip-Background\"\n tileSize = 32\n edgeFile = \"Interface/Tooltips/UI-Tooltip-Border\"\n tile = true\n edgeSize = 16\n insets = <table> {\n }\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\SelectBox-4.lua\"]:358: in main chunk",
+			["session"] = 5452,
+			["counter"] = 1,
+		}, -- [266]
+		{
+			["message"] = "...e\\AddOns\\Auc-Advanced\\Libs\\Configator\\Configator-25.lua:364: attempt to call method 'SetBackdrop' (a nil value)",
+			["time"] = "2022/09/04 11:12:12",
+			["locals"] = "LIBRARY_VERSION_MAJOR = \"Configator\"\nLIBRARY_VERSION_MINOR = 25\nlib = <table> {\n CreateAnonName = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\Configator.lua:150\n tooltip = ConfigatorTipTooltip {\n }\n TabLink = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\Configator.lua:169\n SetTip = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\Configator.lua:316\n Create = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\Configator.lua:199\n SetLinkTip = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\Configator.lua:297\n frames = <table> {\n }\n tmpId = 0\n}\nkit = <table> {\n}\nreplicate = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\Configator.lua:123\nempty = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\Configator.lua:138\nfill = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\Configator.lua:142\nsetFocus = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\Configator.lua:155\nproxyHide = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\Configator.lua:190\nproxyIsShown = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\Configator.lua:194\nhide_tip = <function> defined @Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\Configator.lua:312\n(*temporary) = nil\n(*temporary) = ConfigatorTipTooltip {\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\SharedTooltipTemplates.lua:203\n NineSlice = <unnamed> {\n }\n fadeInfo = <table> {\n }\n updateTooltip = 0.200000\n TooltipBackdropOnLoad = <function> defined @Interface\\SharedXML\\SharedTooltipTemplates.lua:172\n 0 = <userdata>\n TopOverlay = <unnamed> {\n }\n GetBackdropColor = <function> defined @Interface\\SharedXML\\SharedTooltipTemplates.lua:191\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\SharedTooltipTemplates.lua:199\n needsReset = true\n BottomOverlay = <unnamed> {\n }\n SetBackdropColor = <function> defined @Interface\\SharedXML\\SharedTooltipTemplates.lua:187\n layoutType = \"TooltipDefaultLayout\"\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\SharedTooltipTemplates.lua:195\n}\n(*temporary) = <table> {\n bgFile = \"Interface/Tooltips/ChatBubble-Background\"\n tileSize = 32\n edgeFile = \"Interface/Tooltips/ChatBubble-BackDrop\"\n tile = true\n edgeSize = 32\n insets = <table> {\n }\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\Auc-Advanced\\Libs\\Configator\\Configator-25.lua\"]:364: in main chunk",
+			["session"] = 5452,
+			["counter"] = 1,
 		}, -- [267]
+		{
+			["message"] = "Interface\\AddOns\\Auc-Advanced\\CoreConst.lua:124: attempt to call global 'GetAuctionItemClasses' (a nil value)",
+			["time"] = "2022/09/04 11:12:12",
+			["locals"] = "(*temporary) = <table> {\n NewModule = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:466\n Scrub = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:426\n DecodeLink = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:235\n selectorPriceModels = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:206\n BreakHyperlink = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:238\n RelVersion = \"4723\"\n getFrameNames = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:82\n GetDistributionList = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreManifest.lua:120\n moduledetail = <table> {\n }\n RegisterRevision = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreManifest.lua:93\n revisions = <table> {\n }\n Modules = <table> {\n }\n Coins = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:684\n CreateMoney = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:689\n CoreModuleOnLoad = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:614\n SendProcessorMessage = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:667\n GetAllModules = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:544\n Empty = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:426\n GetModule = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:492\n GetFactionGroup = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:280\n GetModuleLocals = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:506\n Replicate = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:411\n Clone = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:411\n changeLocale = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:186\n selectorAuctionLength = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:228\n Print = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:151\n Recycle = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:439\n GetFactor = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:233\n AddTab = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:314\n localizations = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:68\n breakHyperlink = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:238\n RemoveTab = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:364\n ShowItemLink = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:237\n setFrame = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:133\n Fill = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:430\n GetCurrentRevision = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreManifest.lua:103\n GetFaction = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:262\n Debug = <table> {\n }\n SplitServerKey = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:248\n configFramesList = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:105\n GetTooltip = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:679\n distribution = <table> {\n }\n getFrameIndex = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:116\n ValidateInstall = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreManifest.lua:124\n MajorVersion = \"5\"\n Version = \"5.8.4723\"\n MinorVersion = \"8\"\n SanitizeLink = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:234\n Acquire = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:440\n GetLinkQuality = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:236\n GetRevisionList = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreManifest.lua:116\n}\n(*temporary) = <table> {\n ENCHANT = 26\n LASTENTRY = 27\n IEQUIP = 5\n AMHIGH = 19\n FACTOR = 25\n TEXTURE = 10\n FLAG_UNSEEN = 2\n AucMinTimes = <table> {\n }\n FLAG = 21\n FLAG_DIRTY = 1\n EquipEncode = <table> {\n }\n CURBID = 18\n PRICE = 6\n ISUB = 4\n ULEVEL = 14\n EquipCodeToInvIndex = <table> {\n }\n ITYPE = 3\n AucTimes = <table> {\n }\n ID = 22\n COUNT = 11\n SELLER = 20\n NAM",
+			["stack"] = "[string \"@Interface\\AddOns\\Auc-Advanced\\CoreConst.lua\"]:124: in main chunk",
+			["session"] = 5452,
+			["counter"] = 1,
+		}, -- [268]
+		{
+			["message"] = "Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:540: attempt to call method 'SetBackdrop' (a nil value)",
+			["time"] = "2022/09/04 11:12:12",
+			["locals"] = "lib = <table> {\n Processor = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:507\n ScanPage = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:297\n FinishedSearch = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:230\n GetQueueStatus = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:90\n Private = <table> {\n }\n QueueBuy = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:134\n CanBuy = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:190\n CancelBuyQueue = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:106\n}\nprivate = <table> {\n PromptPurchase = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:260\n PendingBids = <table> {\n }\n QueueReport = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:58\n FinishedSearch = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:231\n HidePrompt = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:288\n lastPrompt = false\n lastQueue = 0\n Prompt = AucAdvancedBuyPrompt {\n }\n updateFrame = <unnamed> {\n }\n BuyRequests = <table> {\n }\n Searching = false\n QueueRemove = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:75\n CancelPurchase = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:353\n ActivateEvents = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:450\n PerformPurchase = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:362\n removePendingBid = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:419\n onBidAccepted = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:431\n QueueInsert = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:67\n onBidFailed = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:443\n PushSearch = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:209\n DeactivateEvents = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:459\n}\naucPrint = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:151\ndecode = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:235\n_ = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:439\n_ = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:440\nreplicate = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:411\n_ = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:426\nget = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreSettings.lua:350\nset = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreSettings.lua:307\ndefault = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreSettings.lua:152\ndebugPrint = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreMain.lua:332\nfill = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:430\nConst = nil\nhighlight = \"|cffff7f3f\"\nQueueBuyErrorHelper = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:130\nOnUpdate = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:469\nOnEvent = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua:479\nlevel = 1\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n bgFile = \"Interface/Tooltips/UI-Tooltip-Background\"\n tileSize = 32\n edgeFile = \"Interface/Tooltips/UI-Tooltip-Border\"\n tile = true\n edgeSize = 32\n insets = <table> {\n }\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\Auc-Advanced\\CoreBuy.lua\"]:540: in main chunk",
+			["session"] = 5452,
+			["counter"] = 1,
+		}, -- [269]
+		{
+			["message"] = "Interface\\AddOns\\Auc-Advanced\\CoreScan.lua:54: attempt to index field 'Const' (a nil value)",
+			["time"] = "2022/09/04 11:12:12",
+			["locals"] = "SCANDATA_VERSION = \"A\"\nlib = <table> {\n Private = <table> {\n }\n}\nprivate = <table> {\n Print = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:151\n}\nConst = nil\n_print = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:151\ndecode = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:235\n_ = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:439\n_ = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:440\nreplicate = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:411\nempty = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:426\nget = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreSettings.lua:350\nset = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreSettings.lua:307\ndefault = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreSettings.lua:152\ndebugPrint = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreMain.lua:332\nfill = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:430\nGetFaction = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:262\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'Const' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\Auc-Advanced\\CoreScan.lua\"]:54: in main chunk",
+			["session"] = 5452,
+			["counter"] = 1,
+		}, -- [270]
+		{
+			["message"] = "...Auc-Advanced\\Modules\\Auc-Match-Undercut\\Undercut.lua:47: attempt to index field 'Const' (a nil value)",
+			["time"] = "2022/09/04 11:12:12",
+			["locals"] = "libType = \"Match\"\nlibName = \"Undercut\"\nlib = <table> {\n Private = <table> {\n }\n GetName = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:475\n libName = \"Undercut\"\n libType = \"Match\"\n}\nparent = <table> {\n NewModule = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:466\n Scrub = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:426\n DecodeLink = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:235\n selectorPriceModels = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:206\n Settings = <table> {\n }\n BreakHyperlink = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:238\n RelVersion = \"4723\"\n getFrameNames = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:82\n EmbeddedModules = <table> {\n }\n Post = <table> {\n }\n GetDistributionList = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreManifest.lua:120\n Coins = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:684\n moduledetail = <table> {\n }\n RegisterRevision = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreManifest.lua:93\n GetModule = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:492\n API = <table> {\n }\n revisions = <table> {\n }\n Scan = <table> {\n }\n Modules = <table> {\n }\n Config = <table> {\n }\n CreateMoney = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:689\n CoreModuleOnLoad = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:614\n SendProcessorMessage = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:667\n GetAllModules = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:544\n Empty = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:426\n Buy = <table> {\n }\n GetFactionGroup = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:280\n GetModuleLocals = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:506\n Replicate = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:411\n Clone = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:411\n changeLocale = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:186\n selectorAuctionLength = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:228\n Print = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:151\n Recycle = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:439\n GetFactor = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:233\n AddTab = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:314\n localizations = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:68\n breakHyperlink = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:238\n RemoveTab = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:364\n ShowItemLink = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:237\n setFrame = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:133\n Fill = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:430\n GetCurrentRevision = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreManifest.lua:103\n GetFaction = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:262\n Debug = <table> {\n }\n SplitServerKey = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:248\n configFramesList = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:105\n GetTooltip = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:679\n distribution = <table> {\n }\n getFrameIndex = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:116\n ValidateInstall = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreManifest.lua:124\n MajorVersion = \"5\"\n Version = \"5.8.4723\"\n MinorVersion = \"8\"\n SanitizeLink = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:234\n Acquire = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:440\n GetLinkQuality = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:236\n GetRevisionList = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreManifest.lua:116\n}\nprivate ",
+			["stack"] = "[string \"@Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Match-Undercut\\Undercut.lua\"]:47: in main chunk",
+			["session"] = 5452,
+			["counter"] = 1,
+		}, -- [271]
+		{
+			["message"] = "...uc-Util-AskPrice\\ChatThrottleLib\\ChatThrottleLib-20.nil.lua:200: hooksecurefunc(): SendAddonMessage is not a function",
+			["time"] = "2022/09/04 11:12:12",
+			["locals"] = "",
+			["stack"] = "[string \"=[C]\"]: in function `hooksecurefunc'\n[string \"@Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AskPrice\\ChatThrottleLib\\ChatThrottleLib-20.nil.lua\"]:200: in function `Init'\n[string \"@Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AskPrice\\ChatThrottleLib\\ChatThrottleLib-20.nil.lua\"]:442: in main chunk",
+			["session"] = 5452,
+			["counter"] = 1,
+		}, -- [272]
+		{
+			["message"] = "...ed\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:522: attempt to call method 'SetBackdrop' (a nil value)",
+			["time"] = "2022/09/04 11:12:12",
+			["locals"] = "(*temporary) = nil\n(*temporary) = autosellframe {\n 0 = <userdata>\n ClearIcon = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:378\n removeitemfromlist = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:356\n additemtolist = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:367\n IconClicked = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:384\n}\n(*temporary) = <table> {\n bgFile = \"Interface/Tooltips/ChatBubble-Background\"\n tileSize = 32\n edgeFile = \"Interface/Tooltips/ChatBubble-BackDrop\"\n tile = true\n edgeSize = 32\n insets = <table> {\n }\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\nautosellframe = autosellframe {\n 0 = <userdata>\n ClearIcon = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:378\n removeitemfromlist = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:356\n additemtolist = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:367\n IconClicked = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:384\n}\nlib = <table> {\n Processor = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:50\n mailShow = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:253\n autoSellList = <table> {\n }\n buttonTooltips = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:221\n autoSellGUI = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:271\n mailClosed = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:259\n populateDataSheet = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:409\n Private = <table> {\n }\n autoSellIconDrag = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:389\n setWorkingItem = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:343\n merchantShow = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:228\n merchantClosed = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:248\n libType = \"Util\"\n OnLoad = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:83\n makeautosellgui = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:520\n ClickLinkHook = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:398\n GetName = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:41\n slidebar = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:297\n libName = \"AutoMagic\"\n SetupConfigGui = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:144\n mailGUI = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:266\n closeAutoSellGUI = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:277\n autosellslidebar = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:282\n CustomSort = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:124\n onEventDo = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:114\n ProcessTooltip = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:63\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua\"]:522: in function `makeautosellgui'\n[string \"@Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua\"]:668: in main chunk",
+			["session"] = 5452,
+			["counter"] = 1,
+		}, -- [273]
+		{
+			["message"] = "...dvanced\\Modules\\Auc-Util-AutoMagic\\ConfirmSellUI.lua:190: attempt to call method 'SetBackdrop' (a nil value)",
+			["time"] = "2022/09/04 11:12:12",
+			["locals"] = "(*temporary) = nil\n(*temporary) = confirmsellui {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n bgFile = \"Interface/Tooltips/UI-Tooltip-Background\"\n tileSize = 32\n edgeFile = \"Interface/Tooltips/UI-Tooltip-Border\"\n tile = true\n edgeSize = 32\n insets = <table> {\n }\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\nlib = <table> {\n Processor = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:50\n mailShow = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:253\n autoSellList = <table> {\n }\n buttonTooltips = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:221\n slidebar = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:297\n herbAction = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Core.lua:475\n populateDataSheet = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:409\n Private = <table> {\n }\n setWorkingItem = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:343\n mailGUI = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:266\n merchantClosed = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:248\n libType = \"Util\"\n GetName = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:41\n closeAutoSellGUI = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:277\n autosellslidebar = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:282\n ASCRefreshSheet = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\ConfirmSellUI.lua:111\n makeautosellgui = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:520\n makeconfirmsellui = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\ConfirmSellUI.lua:184\n ASCIgnoreItem = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\ConfirmSellUI.lua:88\n ASCOnClick = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\ConfirmSellUI.lua:152\n SetupConfigGui = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:144\n ammailgui = <unnamed> {\n }\n vendorlist = <table> {\n }\n confirmsellui = confirmsellui {\n }\n ASCSelect = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\ConfirmSellUI.lua:156\n ASCOnEnter = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\ConfirmSellUI.lua:139\n ASCPrompt = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\ConfirmSellUI.lua:41\n ASCUnIgnoreItem = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\ConfirmSellUI.lua:97\n ASCRemoveItem = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\ConfirmSellUI.lua:76\n autoSellIconDrag = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:389\n ASCConfirmContinue = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\ConfirmSellUI.lua:52\n merchantShow = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:228\n makeMailGUI = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Mail-GUI.lua:41\n getReason = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Core.lua:499\n pigmentAction = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Core.lua:453\n OnLoad = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\Auc-Util-AutoMagic.lua:83\n disenchantAction = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-Aut",
+			["stack"] = "[string \"@Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\ConfirmSellUI.lua\"]:190: in function `makeconfirmsellui'\n[string \"@Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-AutoMagic\\ConfirmSellUI.lua\"]:297: in main chunk",
+			["session"] = 5452,
+			["counter"] = 1,
+		}, -- [274]
+		{
+			["message"] = "...uc-Advanced\\Modules\\Auc-Util-CompactUI\\CompactUI.lua:793: attempt to call method 'SetBackdrop' (a nil value)",
+			["time"] = "2022/09/04 11:12:12",
+			["locals"] = "libType = \"Util\"\nlibName = \"CompactUI\"\nlib = <table> {\n Processor = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-CompactUI\\CompactUI.lua:45\n libType = \"Util\"\n OnLoad = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-CompactUI\\CompactUI.lua:61\n Private = <table> {\n }\n GetContents = <function> defined @Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-CompactUI\\CompactUI.lua:600\n libName = \"CompactUI\"\n GetName = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:475\n}\nparent = <table> {\n NewModule = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:466\n Scrub = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:426\n DecodeLink = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:235\n selectorPriceModels = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:206\n Settings = <table> {\n }\n BreakHyperlink = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:238\n RelVersion = \"4723\"\n getFrameNames = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:82\n EmbeddedModules = <table> {\n }\n Post = <table> {\n }\n GetDistributionList = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreManifest.lua:120\n Coins = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:684\n moduledetail = <table> {\n }\n RegisterRevision = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreManifest.lua:93\n GetModule = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:492\n API = <table> {\n }\n revisions = <table> {\n }\n Scan = <table> {\n }\n Modules = <table> {\n }\n Config = <table> {\n }\n CreateMoney = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:689\n CoreModuleOnLoad = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:614\n SendProcessorMessage = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:667\n GetAllModules = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:544\n Empty = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:426\n Buy = <table> {\n }\n GetFactionGroup = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:280\n GetModuleLocals = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:506\n Replicate = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:411\n Clone = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:411\n changeLocale = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:186\n selectorAuctionLength = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:228\n Print = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:151\n Recycle = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:439\n GetFactor = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:233\n AddTab = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:314\n localizations = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:68\n breakHyperlink = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:238\n RemoveTab = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:364\n ShowItemLink = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:237\n setFrame = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:133\n Fill = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:430\n GetCurrentRevision = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreManifest.lua:103\n GetFaction = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:262\n Debug = <table> {\n }\n SplitServerKey = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:248\n configFramesList = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:105\n GetTooltip = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:679\n distribution = <table> {\n }\n getFrameIndex = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreUtil.lua:116\n ValidateInstall = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreManifest.lua:124\n MajorVersion = \"5\"\n Version = \"5.8.4723\"\n MinorVersion = \"8\"\n SanitizeLink = <function",
+			["stack"] = "[string \"@Interface\\AddOns\\Auc-Advanced\\Modules\\Auc-Util-CompactUI\\CompactUI.lua\"]:793: in main chunk",
+			["session"] = 5452,
+			["counter"] = 1,
+		}, -- [275]
+		{
+			["message"] = "(null)",
+			["session"] = 5452,
+			["time"] = "2022/03/09 13:39:43",
+			["counter"] = 27,
+		}, -- [276]
+		{
+			["message"] = "Interface\\AddOns\\Auc-Advanced\\CoreMain.lua:268: attempt to call field 'Logout' (a nil value)",
+			["time"] = "2022/09/04 11:13:34",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"PLAYER_LOGOUT\"\narg1 = nil\narg2 = nil\n(*temporary) = nil\n(*temporary) = \"attempt to call field 'Logout' (a nil value)\"\nprivate = <table> {\n Schedule = <table> {\n }\n OnLoad = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreMain.lua:199\n OnUnload = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreMain.lua:244\n ClickLinkHook = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreMain.lua:172\n HookAH = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreMain.lua:188\n OnEvent = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreMain.lua:252\n OnTooltip = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreMain.lua:60\n HookTT = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreMain.lua:193\n Frame = <unnamed> {\n }\n OnUpdate = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreMain.lua:280\n ClickBagHook = <function> defined @Interface\\AddOns\\Auc-Advanced\\CoreMain.lua:145\n}\nflagBlockTooltip = nil\n",
+			["stack"] = "[string \"@Interface\\AddOns\\Auc-Advanced\\CoreMain.lua\"]:268: in function <Interface\\AddOns\\Auc-Advanced\\CoreMain.lua:252>",
+			["session"] = 5452,
+			["counter"] = 1,
+		}, -- [277]
+		{
+			["message"] = "Interface\\AddOns\\Auctioneer\\Internal.lua:363: Usage: hooksecurefunc([table,] \"function\", hookfunc)",
+			["time"] = "2022/09/04 11:14:17",
+			["locals"] = "(*temporary) = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MultiCastActionButton6Cooldown = MultiCastActionButton6Cooldown {\n }\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 788\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 406\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n GuildScrollFrameEntry660 = GuildScrollFrameEntry660 {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n MultiCastActionButton2Cooldown = MultiCastActionButton2Cooldown {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n GuildScrollFrameEntry20 = GuildScrollFrameEntry20 {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem1AltCurrencyFrameItem1Text = MerchantItem1AltCurrencyFrameItem1Text {\n }\n DetailsWindowOptionsBarTextEditorEntryNumberLines = DetailsWindowOptionsBarTextEditorEntryNumberLines {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n EncounterDetails_SpellAurasScrollScrollChildFrame = EncounterDetails_SpellAurasScrollScrollChildFrame {\n }\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:603\n MANA = \"Mana\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n Questie_ItemButton18Shine14 = Questie_ItemButton18Shine14 {\n }\n CONSOLIDATED_BUFFS_PER_ROW = 4\n BOOST2_WARRIOR_COLOSSUSSMASH = \"Use |cFFFFFFFFColossus Smash|r.\n\n|cFFFFFFFFColossus Smash|r increases your damage.\"\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n AutoCompleteEditBox_OnKeyDown = <function> defined @Interface\\FrameXML\\AutoComplete.lua:368\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n SLASH_LibQTip1 = \"/qtip\"\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n OverrideActionBarButton6Shine11 = OverrideActionBarButton6Shine11 {\n }\n ROGUE_COMBAT_CORE_ABILITY_4 = \"Melee ability with an increased range that consumes Combo Points.\"\n JoinSkirmish = <function> defined =[C]:-1\n Advanced_GraphicsAPIDropDownButtonHighlightTexture = Advanced_GraphicsAPIDropDownButtonHighlightTexture {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n DMG_LCD = \"DMG\"\n RaidGraphics_EnvironmentalDetailSlider = RaidGraphics_EnvironmentalDetailSlider {\n }\n PetPaperDollFrameTab3Right = PetPaperDollFrameTab3Right {\n }\n BattlefieldMapFrameLeft = BattlefieldMapFrameLeft {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1128\n SLASH_STOPATTACK1 = \"/stopattack\"\n MultiCastActionButton4HotKey = Mul",
+			["stack"] = "[string \"=[C]\"]: in function `hooksecurefunc'\n[string \"@Interface\\AddOns\\Auctioneer\\Internal.lua\"]:363: in function `HookDisplayMode'\n[string \"@Interface\\AddOns\\Auctioneer\\Internal.lua\"]:113: in function `AuctionHouseLoaded'\n[string \"@Interface\\AddOns\\Auctioneer\\Internal.lua\"]:127: in function `AuctionHouseOpened'\n[string \"@Interface\\AddOns\\Auctioneer\\Handlers.lua\"]:19: in function `handler'\n[string \"@Interface\\AddOns\\Auctioneer\\Internal.lua\"]:161: in function <Interface\\AddOns\\Auctioneer\\Internal.lua:154>",
+			["session"] = 5453,
+			["counter"] = 1,
+		}, -- [278]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
+			["time"] = "2022/02/15 18:27:27",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetShown'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:52: in function `MultiActionBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:138: in function `ValidateActionBarTransition'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:106: in function `ActionBarController_UpdateAll'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:45: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
+			["session"] = 5456,
+			["counter"] = 136,
+		}, -- [279]
 	},
 }

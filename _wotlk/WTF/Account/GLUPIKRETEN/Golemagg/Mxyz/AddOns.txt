@@ -35,7 +35,7 @@ AtlasLootClassic_Factions: enabled
 AtlasLootClassic_PvP: enabled
 AtlasLootClassic: enabled
 AtlasLootClassic_Data: enabled
-Auctionator: disabled
+Auctionator: enabled
 AutoOpen: enabled
 BlizzMove: disabled
 BlizzMove_Debug: disabled
@@ -128,3 +128,4 @@ ErrorFilter: enabled
 ErrorMonster: disabled
 Blizzard_CompactRaidFrames: enabled
 Blizzard_CUFProfiles: enabled
+EnhancedRaidFrames: enabled

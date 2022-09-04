@@ -339,8 +339,18 @@ TargetFrame:HookScript(
 				local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
 				local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
 				local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
-				if not battle then
-					if IsSpellInRange('Pummel', 'target') == 1 then
+				if defensive then
+					if IsSpellInRange('Shield Bash', 'target') == 1 and GetSpellCooldown('Shield Bash') == 0 then
+						RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+					end
+				end
+				if berserker then
+					if IsSpellInRange('Pummel', 'target') == 1 and GetSpellCooldown('Pummel') == 0 then
+						RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+					end
+				end
+				if battle and IsEquippedItemType('Shields') then
+					if IsSpellInRange('Shield Bash', 'target') == 1 and GetSpellCooldown('Shield Bash') == 0 then
 						RotationFrame2:SetBackdropColor(0, 1, 0, 1)
 					end
 				end

@@ -1,8 +1,5 @@
 
 EnhancedRaidFramesDB = {
-	["global"] = {
-		["DB_VERSION"] = 2,
-	},
 	["profileKeys"] = {
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
@@ -11,13 +8,16 @@ EnhancedRaidFramesDB = {
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 	},
+	["global"] = {
+		["DB_VERSION"] = 2,
+	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
 			["backgroundAlpha"] = 0.6000000000000001,
-			["rangeAlpha"] = 0.2,
 			["showBuffs"] = false,
-			["showDispellableDebuffs"] = false,
 			["showDebuffs"] = false,
+			["showDispellableDebuffs"] = false,
+			["rangeAlpha"] = 0.2,
 		},
 		["Mxyz - Golemagg"] = {
 		},
@@ -56,10 +56,10 @@ EnhancedRaidFramesDB = {
 			},
 			["backgroundAlpha"] = 0.7000000000000001,
 			["showBuffs"] = false,
-			["showDebuffs"] = false,
+			["showRaidIcons"] = false,
 			["showDispellableDebuffs"] = false,
 			["rangeAlpha"] = 0.5,
-			["showRaidIcons"] = false,
+			["showDebuffs"] = false,
 		},
 		["Vermin - Golemagg"] = {
 			{
@@ -72,14 +72,14 @@ EnhancedRaidFramesDB = {
 			nil, -- [2]
 			{
 				["indicatorSize"] = 22,
-				["showTooltip"] = false,
-				["textSize"] = 12,
 				["colorTextByDebuff"] = true,
+				["textSize"] = 12,
+				["showTooltip"] = false,
 			}, -- [3]
 			{
 				["indicatorSize"] = 22,
-				["textSize"] = 12,
 				["showText"] = "countdown",
+				["textSize"] = 12,
 				["colorTextByDebuff"] = true,
 			}, -- [4]
 			[7] = {
@@ -89,12 +89,12 @@ EnhancedRaidFramesDB = {
 				["textSize"] = 12,
 				["mineOnly"] = true,
 			},
-			["backgroundAlpha"] = 0.7000000000000001,
+			["rangeAlpha"] = 0.1,
 			["showDebuffs"] = false,
 			["showRaidIcons"] = false,
 			["showBuffs"] = false,
 			["showDispellableDebuffs"] = false,
-			["rangeAlpha"] = 0.1,
+			["backgroundAlpha"] = 0.7000000000000001,
 		},
 	},
 }

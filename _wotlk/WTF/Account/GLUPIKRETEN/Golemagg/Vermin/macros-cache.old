@@ -77,7 +77,8 @@ END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast Bloodthirst
+/cast [stance:1/3] Bloodthirst
+/cast [stance:2] Devastate
 /use 13
 /use 14
 END
@@ -90,10 +91,4 @@ END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [stance:2] Disarm; Defensive Stance
-END
-VER 3 0000000001000014 "VuhDoDCShieldData" "Ability_Repair"
-P1IH1MR1LR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1WM[x][x]0__[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
-END
-VER 3 0000000001000015 "VuhDoDCShieldNames" "Ability_Repair"
-NDemMørSax[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Ver[x][x]Haa[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
 END

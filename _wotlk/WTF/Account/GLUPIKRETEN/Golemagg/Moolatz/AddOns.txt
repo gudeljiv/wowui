@@ -61,7 +61,7 @@ TellMeWhen_Options: enabled
 !Colorz: enabled
 !Beautycase: enabled
 Align: enabled
-Auctionator: disabled
+Auctionator: enabled
 BlizzMove: disabled
 ChocolateBar: enabled
 ClassicAuraDurations: enabled
@@ -119,7 +119,7 @@ nMainbar: enabled
 nMinimap: enabled
 xVermin: enabled
 Leatrix_Plus: enabled
-aux-addon: enabled
+aux-addon: disabled
 RXPGuides: enabled
 whoaThickFrames_BCC: enabled
 AutoOpen: enabled
@@ -155,3 +155,4 @@ VuhDoOptions: disabled
 ErrorFilter: enabled
 ErrorMonster: disabled
 Attack bar: disabled
+EnhancedRaidFrames: enabled

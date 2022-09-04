@@ -29,7 +29,7 @@ AtlasLootClassic_Factions: enabled
 AtlasLootClassic_PvP: enabled
 AtlasLootClassic: enabled
 AtlasLootClassic_Data: enabled
-Auctionator: disabled
+Auctionator: enabled
 AutoOpen: enabled
 BlizzMove: disabled
 BlizzMove_Debug: disabled
@@ -124,3 +124,4 @@ AdiBags-ItemRackSets: enabled
 VuhDoOptions: disabled
 ErrorFilter: enabled
 ErrorMonster: disabled
+EnhancedRaidFrames: enabled

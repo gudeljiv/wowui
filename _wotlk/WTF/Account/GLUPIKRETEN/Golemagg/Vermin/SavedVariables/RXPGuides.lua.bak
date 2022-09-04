@@ -1,8 +1,56 @@
 
 RXPCData = {
+	["completedWaypoints"] = {
+	},
+	["currentStep"] = 1,
+	["phase"] = 6,
+	["currentGuideGroup"] = "",
+	["flightPaths"] = {
+	},
+	["xprate"] = 1,
 	["hardcore"] = false,
+	["currentGuideName"] = "",
 	["stepSkip"] = {
 	},
-	["flightPaths"] = {
+	["SoM"] = 1,
+	["frameHeight"] = 125.0000152587891,
+}
+RXPCTrackingData = {
+	["profileKeys"] = {
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+	},
+	["profiles"] = {
+		["Vermin - Golemagg"] = {
+			["levels"] = {
+				[66] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+					},
+					["timestamp"] = {
+					},
+					["quests"] = {
+					},
+				},
+			},
+		},
+	},
+}
+RXPCComms = {
+	["profileKeys"] = {
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+	},
+	["profiles"] = {
+		["Vermin - Golemagg"] = {
+		},
+	},
+}
+RXPCSettings = {
+	["profileKeys"] = {
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+	},
+	["profiles"] = {
+		["Vermin - Golemagg"] = {
+		},
 	},
 }
