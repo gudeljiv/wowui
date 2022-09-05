@@ -14,8 +14,8 @@ EnhancedRaidFramesDB = {
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
 			["backgroundAlpha"] = 0.6000000000000001,
-			["showBuffs"] = false,
 			["showDebuffs"] = false,
+			["showBuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["rangeAlpha"] = 0.2,
 		},
@@ -26,19 +26,19 @@ EnhancedRaidFramesDB = {
 		["Moolatz - Golemagg"] = {
 			{
 				["indicatorSize"] = 22,
-				["auras"] = "Rejuvenation",
 				["showTooltip"] = false,
-				["textSize"] = 12,
+				["auras"] = "Rejuvenation",
 				["colorTextByDebuff"] = true,
+				["textSize"] = 12,
 				["mineOnly"] = true,
 			}, -- [1]
 			nil, -- [2]
 			{
 				["indicatorSize"] = 22,
-				["auras"] = "Curse\nPoison",
 				["showTooltip"] = false,
-				["textSize"] = 12,
 				["colorTextByDebuff"] = true,
+				["textSize"] = 12,
+				["auras"] = "Curse\nPoison",
 			}, -- [3]
 			{
 				["indicatorSize"] = 22,
@@ -48,18 +48,18 @@ EnhancedRaidFramesDB = {
 			}, -- [4]
 			[7] = {
 				["indicatorSize"] = 22,
-				["auras"] = "Regrowth",
 				["showTooltip"] = false,
-				["textSize"] = 12,
+				["auras"] = "Regrowth",
 				["colorTextByDebuff"] = true,
+				["textSize"] = 12,
 				["mineOnly"] = true,
 			},
 			["backgroundAlpha"] = 0.7000000000000001,
-			["showBuffs"] = false,
 			["showRaidIcons"] = false,
+			["showBuffs"] = false,
+			["showDebuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["rangeAlpha"] = 0.5,
-			["showDebuffs"] = false,
 		},
 		["Vermin - Golemagg"] = {
 			{
@@ -72,14 +72,14 @@ EnhancedRaidFramesDB = {
 			nil, -- [2]
 			{
 				["indicatorSize"] = 22,
-				["colorTextByDebuff"] = true,
-				["textSize"] = 12,
 				["showTooltip"] = false,
+				["textSize"] = 12,
+				["colorTextByDebuff"] = true,
 			}, -- [3]
 			{
 				["indicatorSize"] = 22,
-				["showText"] = "countdown",
 				["textSize"] = 12,
+				["showText"] = "countdown",
 				["colorTextByDebuff"] = true,
 			}, -- [4]
 			[7] = {
@@ -90,9 +90,9 @@ EnhancedRaidFramesDB = {
 				["mineOnly"] = true,
 			},
 			["rangeAlpha"] = 0.1,
-			["showDebuffs"] = false,
 			["showRaidIcons"] = false,
 			["showBuffs"] = false,
+			["showDebuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["backgroundAlpha"] = 0.7000000000000001,
 		},

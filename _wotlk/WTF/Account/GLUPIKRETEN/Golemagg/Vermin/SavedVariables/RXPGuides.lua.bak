@@ -6,8 +6,16 @@ RXPCData = {
 	["phase"] = 6,
 	["currentGuideGroup"] = "",
 	["flightPaths"] = {
+		[99] = "Thrallmar, Hellfire Peninsula",
+		[151] = "Swamprat Post, Zangarmarsh",
+		[141] = "Spinebreaker Ridge, Hellfire Peninsula",
+		[128] = "Shattrath, Terokkar Forest",
+		[102] = "Falcon Watch, Hellfire Peninsula",
+		[118] = "Zabra'jin, Zangarmarsh",
+		[120] = "Garadar, Nagrand",
 	},
-	["xprate"] = 1,
+	["xprate"] = 1.5,
+	["JoyousJourneys"] = true,
 	["hardcore"] = false,
 	["currentGuideName"] = "",
 	["stepSkip"] = {
@@ -26,6 +34,14 @@ RXPCTrackingData = {
 					["groupExperience"] = 0,
 					["deaths"] = 0,
 					["mobs"] = {
+						["Hellfire Peninsula"] = {
+							["xp"] = 2622,
+							["count"] = 4,
+						},
+						["Zangarmarsh"] = {
+							["xp"] = 41294,
+							["count"] = 32,
+						},
 					},
 					["timestamp"] = {
 					},

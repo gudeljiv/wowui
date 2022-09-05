@@ -14,7 +14,7 @@ RangeDisplayDB3 = {
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Testxv - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
+		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
@@ -22,7 +22,7 @@ RangeDisplayDB3 = {
 		["Jaroslav - Golemagg"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
-		["Grgur - Golemagg"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
 	},
 	["profiles"] = {

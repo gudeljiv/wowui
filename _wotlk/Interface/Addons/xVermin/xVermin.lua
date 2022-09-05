@@ -331,8 +331,9 @@ f:SetScript(
 TargetFrame:HookScript(
 	'OnUpdate',
 	function(self)
-		name, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible, spellId = UnitCastingInfo('target')
-		if name ~= nil and not notInterruptible then
+		name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = UnitCastingInfo('target')
+		name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = UnitChannelInfo('target')
+		if (name_casting ~= nil and not notInterruptible_casting) or (name_channeling ~= nil and not notInterruptible_chanelling) then
 			-- print(name, name and not notInterruptible)
 			-- WARRIOR INTERRUPT
 			if (select(2, UnitClass('player')) == 'WARRIOR') then
@@ -393,22 +394,37 @@ TargetFrame:HookScript(
 -- 	function(self)
 -- 		local inRange = 0
 -- 		local out = ''
+-- 		local ff = 0
+-- 		local bp = 0
 -- 		for i = 1, 40 do
--- 			if UnitExists('nameplate' .. i) and IsSpellInRange('Maul', 'nameplate' .. i) == 1 and CheckInteractDistance('nameplate' .. i, 3) then
+-- 			local unit = 'nameplate' .. i
+-- 			if UnitExists(unit) and CheckInteractDistance(unit, 3) then
 -- 				-- 1 = Inspect, 28 yards
 -- 				-- 2 = Trade, 11.11 yards
 -- 				-- 3 = Duel, 9.9 yards
 -- 				-- 4 = Follow, 28 yards
--- 				print('nameplate' .. i, UnitExists('nameplate' .. i), CheckInteractDistance('nameplate' .. i, 3))
+
+-- 				for i = 2, 40 do
+-- 					local debuff = UnitDebuff(unit, i)
+-- 					if debuff and debuff == 'Frost Fever' then
+-- 						ff = ff + 1
+-- 					end
+-- 					if debuff and debuff == 'Blood Plague' then
+-- 						bp = bp + 1
+-- 					end
+-- 				end
+
 -- 				inRange = inRange + 1
 -- 			end
 -- 		end
+
 -- 		if inRange > 1 then
--- 			out = 'aoe'
--- 		else
--- 			out = 'single'
+-- 			if ff == bp and inRange == ff and inRange == bp then
+-- 				print(ff, bp, inRange, 'dont cast')
+-- 			else
+-- 				print(ff, bp, inRange, 'cast')
+-- 			end
 -- 		end
--- 		print(inRange, out)
 -- 	end
 -- )
 

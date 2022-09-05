@@ -61,12 +61,14 @@ skills["death knight"] = [
     {"name": "plague strike", "key": "1"},
     {"name": "icy touch", "key": "2"},
     {"name": "death strike", "key": "f11"},
-    {"name": "heart strike", "key": "3"},
-    {"name": "death coil", "key": "5"},
+    {"name": "heart strike", "key": "f10"},
+    {"name": "death coil", "key": "4"},
     {"name": "blood boil", "key": "e"},
-    {"name": "rune tap", "key": "9", "modifier": "alt"},
-    {"name": "pestilence", "key": "4"},
-    {"name": "blood tap", "key": "0", "modifier": "alt"}
+    {"name": "rune tap", "key": "h"},
+    {"name": "pestilence", "key": "3"},
+    {"name": "blood tap", "key": "0", "modifier": "alt"},
+    {"name": "icebound fortitude", "key": "t"},
+    {"name": "horn of winter", "key": "f4"},
 ]
 
 skills["priest"] = [

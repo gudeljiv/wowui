@@ -34,6 +34,10 @@ RXPCTrackingData = {
 					["groupExperience"] = 0,
 					["deaths"] = 0,
 					["mobs"] = {
+						["Zangarmarsh"] = {
+							["xp"] = 41294,
+							["count"] = 32,
+						},
 						["Hellfire Peninsula"] = {
 							["xp"] = 2622,
 							["count"] = 4,
