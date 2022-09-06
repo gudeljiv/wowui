@@ -1,10 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[120] = {
+		[4] = {
 		},
 	},
-	["currentStep"] = 120,
+	["currentStep"] = 4,
 	["SoM"] = 1,
 	["currentGuideGroup"] = "Horde 60-70",
 	["flightPaths"] = {
@@ -54,54 +54,10 @@ RXPCData = {
 	["JoyousJourneys"] = true,
 	["frameHeight"] = 125.0000076293945,
 	["hardcore"] = false,
-	["currentGuideName"] = "61-63 Zangarmarsh",
+	["currentGuideName"] = "65-65 Shattrath",
 	["stepSkip"] = {
 		true, -- [1]
-		true, -- [2]
-		[75] = true,
-		[46] = true,
-		[107] = true,
-		[5] = true,
-		[92] = true,
-		[108] = true,
-		[39] = true,
-		[14] = true,
-		[16] = true,
-		[78] = true,
-		[79] = true,
-		[80] = true,
-		[112] = true,
-		[41] = true,
-		[49] = true,
-		[57] = true,
-		[21] = true,
-		[98] = true,
-		[29] = true,
-		[34] = true,
-		[83] = true,
-		[50] = true,
-		[84] = true,
-		[100] = true,
-		[116] = true,
-		[9] = true,
-		[11] = true,
-		[101] = true,
-		[30] = true,
-		[42] = true,
-		[51] = true,
-		[52] = true,
-		[113] = true,
-		[109] = true,
-		[35] = true,
-		[104] = true,
-		[97] = true,
-		[103] = true,
-		[89] = true,
-		[38] = true,
-		[61] = true,
-		[74] = true,
-		[90] = true,
-		[10] = true,
+		[3] = true,
 	},
 	["phase"] = 6,
 	["disableItemWindow"] = true,
@@ -205,9 +161,9 @@ RXPCTrackingData = {
 							[10159] = 15600,
 							[10369] = 18900,
 							[9370] = 15075,
-							[9387] = 15600,
-							[9410] = 15075,
 							[10255] = 15600,
+							[9410] = 15075,
+							[9387] = 15600,
 							[10294] = 14700,
 							[9372] = 15600,
 							[10403] = 3825,
@@ -224,12 +180,24 @@ RXPCTrackingData = {
 					},
 				},
 				[66] = {
-					["groupExperience"] = 2080,
+					["groupExperience"] = 64107,
 					["deaths"] = 0,
 					["mobs"] = {
+						["Hellfire Ramparts"] = {
+							["xp"] = 37035,
+							["count"] = 56,
+						},
 						["Zangarmarsh"] = {
-							["xp"] = 57510,
-							["count"] = 95,
+							["xp"] = 459497,
+							["count"] = 192,
+						},
+						["Hellfire Peninsula"] = {
+							["xp"] = 6276,
+							["count"] = 7,
+						},
+						["Shattrath City"] = {
+							["xp"] = 18150,
+							["count"] = 3,
 						},
 					},
 					["timestamp"] = {
@@ -242,9 +210,46 @@ RXPCTrackingData = {
 							["hour"] = 18,
 							["weekday"] = 2,
 						},
+						["finished"] = 63394,
+						["dateFinished"] = {
+							["monthDay"] = 6,
+							["day"] = 0,
+							["month"] = 9,
+							["minute"] = 58,
+							["year"] = 2022,
+							["hour"] = 17,
+							["weekday"] = 3,
+						},
 						["started"] = 54288,
 					},
 					["quests"] = {
+						["Shattrath City"] = {
+							[10211] = 8250,
+							[10210] = 8250,
+							[10553] = 1650,
+						},
+						["Zangarmarsh"] = {
+							[9708] = 15600,
+							[9709] = 20025,
+							[9841] = 16125,
+							[9919] = 16125,
+							[9904] = 16125,
+							[9820] = 20025,
+							[9898] = 15075,
+							[9816] = 16125,
+							[9903] = 16125,
+							[9806] = 16125,
+							[9845] = 16125,
+							[9822] = 16125,
+							[10118] = 16125,
+							[10117] = 16125,
+							[9846] = 15075,
+							[9823] = 20025,
+							[9842] = 16125,
+							[9808] = 16125,
+							[9847] = 16125,
+							[9814] = 16125,
+						},
 					},
 				},
 				[56] = {
@@ -331,8 +336,8 @@ RXPCTrackingData = {
 							[12738] = 1237,
 							[12755] = 18375,
 							[12757] = 24525,
-							[12748] = 18375,
 							[12778] = 1237,
+							[12748] = 18375,
 							[12754] = 18375,
 						},
 					},
@@ -437,9 +442,9 @@ RXPCTrackingData = {
 							[9401] = 15075,
 							[10875] = 3600,
 							[10286] = 11400,
-							[10287] = 7500,
-							[9405] = 7500,
 							[10442] = 1462,
+							[9405] = 7500,
+							[10287] = 7500,
 							[9396] = 15075,
 							[9366] = 15075,
 							[10838] = 18300,
@@ -507,6 +512,42 @@ RXPCTrackingData = {
 							[9716] = 15600,
 							[9718] = 11700,
 							[9747] = 15075,
+						},
+					},
+				},
+				[67] = {
+					["groupExperience"] = 239275,
+					["deaths"] = 0,
+					["mobs"] = {
+						["The Blood Furnace"] = {
+							["xp"] = 88570,
+							["count"] = 112,
+						},
+						["Hellfire Ramparts"] = {
+							["xp"] = 30105,
+							["count"] = 46,
+						},
+						["Hellfire Peninsula"] = {
+							["xp"] = 60300,
+							["count"] = 2,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 6,
+							["day"] = 0,
+							["month"] = 9,
+							["minute"] = 58,
+							["year"] = 2022,
+							["hour"] = 17,
+							["weekday"] = 3,
+						},
+						["started"] = 63395,
+					},
+					["quests"] = {
+						["Hellfire Peninsula"] = {
+							[9588] = 30150,
+							[9572] = 30150,
 						},
 					},
 				},
@@ -749,6 +790,12 @@ RXPCComms = {
 	["profiles"] = {
 		["Battlearm - Golemagg"] = {
 			["announcements"] = {
+				["65-65 Shattrath"] = {
+					["collect"] = {
+					},
+					["complete"] = {
+					},
+				},
 				["55-58 The Scarlet Enclave"] = {
 					["collect"] = {
 					},
@@ -769,75 +816,119 @@ RXPCComms = {
 				},
 			},
 			["players"] = {
-				["Dadjaqq"] = {
-					["timePlayed"] = -447.9589999999998,
-					["class"] = "DEATHKNIGHT",
-				},
-				["Sikusko"] = {
-					["timePlayed"] = -27.24699999997392,
-					["class"] = "DEATHKNIGHT",
-				},
-				["Ledrok"] = {
-					["timePlayed"] = -49.03700000001118,
-					["class"] = "WARLOCK",
+				["Varangen"] = {
+					["timePlayed"] = -124.2160000000149,
+					["class"] = "WARRIOR",
 				},
 				["Drippyorc"] = {
 					["timePlayed"] = -45.96900000004098,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Dyasoak"] = {
-					["level"] = 63,
-					["lastSeen"] = 4512.213,
-					["xpPercentage"] = 15,
-					["class"] = "DEATHKNIGHT",
-					["timePlayed"] = -17.9380000000001,
-					["isRxp"] = true,
-				},
-				["Varangen"] = {
-					["timePlayed"] = -124.2160000000149,
-					["class"] = "WARRIOR",
-				},
 				["Reggino"] = {
 					["timePlayed"] = -6.122000000001208,
 					["class"] = "DRUID",
-				},
-				["Focusgaren"] = {
-					["timePlayed"] = -49.03700000001118,
-					["class"] = "MAGE",
 				},
 				["Clarbytwo"] = {
 					["timePlayed"] = -71.02099999994971,
 					["class"] = "SHAMAN",
 				},
-				["Dellaight"] = {
-					["timePlayed"] = -47.07300000000032,
-					["class"] = "DEATHKNIGHT",
-				},
-				["Pidepizza"] = {
-					["timePlayed"] = 0,
-					["class"] = "DEATHKNIGHT",
-				},
-				["Poogersdied"] = {
-					["timePlayed"] = -115.9580000001006,
-					["class"] = "DEATHKNIGHT",
-				},
 				["Azarg"] = {
 					["timePlayed"] = -6.122000000001208,
-					["class"] = "DEATHKNIGHT",
-				},
-				["Blodfar"] = {
-					["timePlayed"] = -45.96900000004098,
 					["class"] = "DEATHKNIGHT",
 				},
 				["Bliser"] = {
 					["timePlayed"] = -71.02099999994971,
 					["class"] = "DEATHKNIGHT",
 				},
+				["Nomaden"] = {
+					["timePlayed"] = 0,
+					["class"] = "DEATHKNIGHT",
+				},
+				["Pazton"] = {
+					["timePlayed"] = 0,
+					["class"] = "PALADIN",
+				},
+				["Tragesh"] = {
+					["timePlayed"] = -124.2160000000149,
+					["class"] = "PALADIN",
+				},
+				["Thiralass"] = {
+					["timePlayed"] = 0,
+					["class"] = "DEATHKNIGHT",
+				},
 				["Deadlywrath"] = {
 					["timePlayed"] = 0,
 					["class"] = "PALADIN",
 				},
-				["Nomaden"] = {
+				["Abadk"] = {
+					["timePlayed"] = -69.13500000024214,
+					["class"] = "DEATHKNIGHT",
+				},
+				["Blodfar"] = {
+					["timePlayed"] = -45.96900000004098,
+					["class"] = "DEATHKNIGHT",
+				},
+				["Menzick"] = {
+					["timePlayed"] = -2007.155999999959,
+					["class"] = "MAGE",
+				},
+				["Focusgaren"] = {
+					["timePlayed"] = -49.03700000001118,
+					["class"] = "MAGE",
+				},
+				["Covidstrike"] = {
+					["timePlayed"] = 0,
+					["class"] = "DEATHKNIGHT",
+				},
+				["Dadjaqq"] = {
+					["timePlayed"] = -447.9589999999998,
+					["class"] = "DEATHKNIGHT",
+				},
+				["Dyasoak"] = {
+					["class"] = "DEATHKNIGHT",
+					["lastSeen"] = 4512.213,
+					["xpPercentage"] = 15,
+					["isRxp"] = true,
+					["timePlayed"] = -17.9380000000001,
+					["level"] = 63,
+				},
+				["Bigballboy"] = {
+					["timePlayed"] = -35.62599999969825,
+					["class"] = "DEATHKNIGHT",
+				},
+				["Bindis"] = {
+					["timePlayed"] = -2007.155999999959,
+					["class"] = "MAGE",
+				},
+				["Bilmo"] = {
+					["timePlayed"] = -2007.155999999959,
+					["class"] = "DRUID",
+				},
+				["Unholygrip"] = {
+					["timePlayed"] = -2007.155999999959,
+					["class"] = "DEATHKNIGHT",
+				},
+				["Poogersdied"] = {
+					["timePlayed"] = -115.9580000001006,
+					["class"] = "DEATHKNIGHT",
+				},
+				["Pidepizza"] = {
+					["timePlayed"] = 0,
+					["class"] = "DEATHKNIGHT",
+				},
+				["Nephien"] = {
+					["timePlayed"] = -232.0819999999367,
+					["class"] = "PRIEST",
+				},
+				["Deafnight"] = {
+					["timePlayed"] = -7.532999999821186,
+					["class"] = "DEATHKNIGHT",
+				},
+				["Lamarina"] = {
+					["timePlayed"] = -90.33799999998882,
+					["class"] = "DEATHKNIGHT",
+				},
+				["Aphelia"] = {
 					["timePlayed"] = 0,
 					["class"] = "DEATHKNIGHT",
 				},
@@ -849,44 +940,44 @@ RXPCComms = {
 					["timePlayed"] = -4.43100000009872,
 					["class"] = "PALADIN",
 				},
-				["Tragesh"] = {
-					["timePlayed"] = -124.2160000000149,
-					["class"] = "PALADIN",
+				["Dellaight"] = {
+					["timePlayed"] = -47.07300000000032,
+					["class"] = "DEATHKNIGHT",
 				},
 				["Frankwood"] = {
 					["timePlayed"] = -212.2609999999995,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Thiralass"] = {
-					["timePlayed"] = 0,
+				["Sikusko"] = {
+					["timePlayed"] = -27.24699999997392,
 					["class"] = "DEATHKNIGHT",
 				},
 				["Vadren"] = {
 					["timePlayed"] = 0,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Abadk"] = {
-					["timePlayed"] = -69.13500000024214,
-					["class"] = "DEATHKNIGHT",
+				["Ukrayn"] = {
+					["level"] = 68,
+					["lastSeen"] = 2192898.234,
+					["xpPercentage"] = 0,
+					["class"] = "HUNTER",
+					["timePlayed"] = -259.660000000149,
+					["isRxp"] = true,
 				},
 				["Bloodpox"] = {
 					["timePlayed"] = -67.6559999999995,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Hindka"] = {
-					["timePlayed"] = -46.6909999999998,
-					["class"] = "HUNTER",
+				["Vargrim"] = {
+					["timePlayed"] = -296.9969999999739,
+					["class"] = "DEATHKNIGHT",
 				},
 				["Deklus"] = {
 					["timePlayed"] = -2.728000000119209,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Ukrayn"] = {
-					["isRxp"] = true,
-					["lastSeen"] = 2192898.234,
-					["xpPercentage"] = 0,
-					["level"] = 68,
-					["timePlayed"] = -259.660000000149,
+				["Hindka"] = {
+					["timePlayed"] = -46.6909999999998,
 					["class"] = "HUNTER",
 				},
 				["Spudgun"] = {
@@ -897,9 +988,9 @@ RXPCComms = {
 					["timePlayed"] = -306.4470000001602,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Covidstrike"] = {
-					["timePlayed"] = 0,
-					["class"] = "DEATHKNIGHT",
+				["Ledrok"] = {
+					["timePlayed"] = -49.03700000001118,
+					["class"] = "WARLOCK",
 				},
 			},
 		},
@@ -911,6 +1002,11 @@ RXPCSettings = {
 	},
 	["profiles"] = {
 		["Battlearm - Golemagg"] = {
+			["enableFlyStepAnnouncements"] = false,
+			["enableLevelUpAnnounceGroup"] = false,
+			["enableLevelUpAnnounceSolo"] = false,
+			["checkVersions"] = false,
+			["alwaysSendBranded"] = false,
 		},
 	},
 }

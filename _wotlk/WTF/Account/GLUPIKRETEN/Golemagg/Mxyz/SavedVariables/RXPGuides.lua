@@ -9,12 +9,12 @@ RXPCData = {
 	},
 	["xprate"] = 1.5,
 	["JoyousJourneys"] = true,
-	["frameHeight"] = 125.0000152587891,
+	["phase"] = 6,
 	["currentGuideName"] = "",
 	["stepSkip"] = {
 	},
 	["hardcore"] = false,
-	["phase"] = 6,
+	["frameHeight"] = 125.0000152587891,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {

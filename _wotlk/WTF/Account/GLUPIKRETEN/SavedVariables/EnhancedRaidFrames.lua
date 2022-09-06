@@ -26,19 +26,19 @@ EnhancedRaidFramesDB = {
 		["Moolatz - Golemagg"] = {
 			{
 				["indicatorSize"] = 22,
-				["showTooltip"] = false,
-				["auras"] = "Rejuvenation",
-				["colorTextByDebuff"] = true,
-				["textSize"] = 12,
 				["mineOnly"] = true,
+				["showTooltip"] = false,
+				["textSize"] = 12,
+				["colorTextByDebuff"] = true,
+				["auras"] = "Rejuvenation",
 			}, -- [1]
 			nil, -- [2]
 			{
 				["indicatorSize"] = 22,
-				["showTooltip"] = false,
-				["colorTextByDebuff"] = true,
-				["textSize"] = 12,
 				["auras"] = "Curse\nPoison",
+				["showTooltip"] = false,
+				["textSize"] = 12,
+				["colorTextByDebuff"] = true,
 			}, -- [3]
 			{
 				["indicatorSize"] = 22,
@@ -48,18 +48,18 @@ EnhancedRaidFramesDB = {
 			}, -- [4]
 			[7] = {
 				["indicatorSize"] = 22,
-				["showTooltip"] = false,
-				["auras"] = "Regrowth",
-				["colorTextByDebuff"] = true,
-				["textSize"] = 12,
 				["mineOnly"] = true,
+				["showTooltip"] = false,
+				["textSize"] = 12,
+				["colorTextByDebuff"] = true,
+				["auras"] = "Regrowth",
 			},
-			["backgroundAlpha"] = 0.7000000000000001,
-			["showRaidIcons"] = false,
-			["showBuffs"] = false,
-			["showDebuffs"] = false,
-			["showDispellableDebuffs"] = false,
 			["rangeAlpha"] = 0.5,
+			["showDebuffs"] = false,
+			["showRaidIcons"] = false,
+			["showDispellableDebuffs"] = false,
+			["backgroundAlpha"] = 0.7000000000000001,
+			["showBuffs"] = false,
 		},
 		["Vermin - Golemagg"] = {
 			{
@@ -90,9 +90,9 @@ EnhancedRaidFramesDB = {
 				["mineOnly"] = true,
 			},
 			["rangeAlpha"] = 0.1,
+			["showDebuffs"] = false,
 			["showRaidIcons"] = false,
 			["showBuffs"] = false,
-			["showDebuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["backgroundAlpha"] = 0.7000000000000001,
 		},

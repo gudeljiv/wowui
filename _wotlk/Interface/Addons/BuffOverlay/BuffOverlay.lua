@@ -383,7 +383,7 @@ function BuffOverlay:ApplyOverlay(frame)
 			overlay:SetAlpha(self.db.profile.iconAlpha)
 			overlay:EnableMouse(false)
 			overlay:RegisterForClicks()
-			overlay:CreateBeautyBorder(4)
+			overlay:CreateBeautyBorder(6)
 			self.overlays[bFrame .. i] = overlay
 		end
 		overlay:Hide()

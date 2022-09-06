@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 5483,
+	["session"] = 5491,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -2212,29 +2212,13 @@ BugGrabberDB = {
 			["counter"] = 91,
 		}, -- [283]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'whoaThickFrames_BCC' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
-			["time"] = "2022/02/12 11:49:08",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\FrameXML\\FlowContainer.lua\"]:157: in function `FlowContainer_DoLayout'\n[string \"@Interface\\FrameXML\\FlowContainer.lua\"]:17: in function `FlowContainer_ResumeUpdates'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:185: in function `CompactRaidFrameContainer_LayoutFrames'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:130: in function `CompactRaidFrameContainer_TryUpdate'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
-			["session"] = 5465,
-			["counter"] = 5,
-		}, -- [284]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
-			["time"] = "2022/02/16 20:30:17",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
-			["session"] = 5465,
-			["counter"] = 9,
-		}, -- [285]
-		{
 			["message"] = "Interface\\FrameXML\\UIDropDownMenu.lua:1328: attempt to index local 'button' (a nil value)",
 			["time"] = "2022/09/05 19:14:05",
 			["locals"] = "button = nil\nenabled = true\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'button' (a nil value)\"\n",
 			["stack"] = "[string \"@Interface\\FrameXML\\UIDropDownMenu.lua\"]:1328: in function `UIDropDownMenu_SetDropdownButtonEnabled'\n[string \"@Interface\\FrameXML\\UnitPopupShared.lua\"]:249: in function `OnUpdate'\n[string \"@Interface\\FrameXML\\UnitPopupShared.lua\"]:272: in function `UnitPopup_OnUpdate'\n[string \"*:OnUpdate\"]:3: in function <[string \"*:OnUpdate\"]:1>",
 			["session"] = 5465,
 			["counter"] = 13,
-		}, -- [286]
+		}, -- [284]
 		{
 			["message"] = "[string \"print(UnitClass(player))\"]:1: Usage: local className, classFilename, classID = UnitClass(unit)",
 			["time"] = "2022/09/05 19:22:23",
@@ -2242,7 +2226,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `UnitClass'\n[string \"print(UnitClass(player))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 5466,
 			["counter"] = 1,
-		}, -- [287]
+		}, -- [285]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\BuffSource.lua:9: attempt to index field '?' (a nil value)",
 			["time"] = "2022/09/05 19:24:26",
@@ -2250,6 +2234,22 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\BuffSource.lua\"]:9: in function <Interface\\AddOns\\xVermin\\BuffSource.lua:3>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetUnitAura'\n[string \"*:OnEnter\"]:3: in function <[string \"*:OnEnter\"]:1>",
 			["session"] = 5469,
 			["counter"] = 3,
+		}, -- [286]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'whoaThickFrames_BCC' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
+			["time"] = "2022/02/12 11:49:08",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\FrameXML\\FlowContainer.lua\"]:157: in function `FlowContainer_DoLayout'\n[string \"@Interface\\FrameXML\\FlowContainer.lua\"]:17: in function `FlowContainer_ResumeUpdates'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:185: in function `CompactRaidFrameContainer_LayoutFrames'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:130: in function `CompactRaidFrameContainer_TryUpdate'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 5486,
+			["counter"] = 6,
+		}, -- [287]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
+			["time"] = "2022/02/16 20:30:17",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
+			["session"] = 5486,
+			["counter"] = 10,
 		}, -- [288]
 	},
 }
