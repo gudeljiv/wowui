@@ -67,10 +67,19 @@ C_Timer.NewTicker(
 			self:Cancel()
 		end
 		if MultiBarRight then
-			MultiBarRight:SetScale(0.8)
-			MultiBarRight.SetScale = function()
-			end
-			-- MultiBarRightButton1:HookScript("OnUpdate", function(self)
+			MultiBarRightButton1:SetScale(0.8)
+			MultiBarRightButton2:SetScale(0.8)
+			MultiBarRightButton3:SetScale(0.8)
+			MultiBarRightButton4:SetScale(0.8)
+			MultiBarRightButton5:SetScale(0.8)
+			MultiBarRightButton6:SetScale(0.8)
+			MultiBarRightButton7:SetScale(0.8)
+			MultiBarRightButton8:SetScale(0.8)
+			MultiBarRightButton9:SetScale(0.8)
+			MultiBarRightButton10:SetScale(0.8)
+			MultiBarRightButton11:SetScale(0.8)
+			MultiBarRightButton12:SetScale(0.8)
+
 			MultiBarRightButton1:ClearAllPoints()
 			MultiBarRightButton1:SetPoint('TOPRIGHT', UIParent, 'TOPRIGHT', -9, -25)
 			MultiBarRightButton1.ClearAllPoints = function()
@@ -91,10 +100,19 @@ C_Timer.NewTicker(
 			self:Cancel()
 		end
 		if MultiBarLeft then
-			MultiBarLeft:SetScale(0.8)
-			MultiBarLeft.SetScale = function()
-			end
-			-- MultiBarLeftButton1:HookScript("OnUpdate", function(self)
+			MultiBarLeftButton1:SetScale(0.8)
+			MultiBarLeftButton2:SetScale(0.8)
+			MultiBarLeftButton3:SetScale(0.8)
+			MultiBarLeftButton4:SetScale(0.8)
+			MultiBarLeftButton5:SetScale(0.8)
+			MultiBarLeftButton6:SetScale(0.8)
+			MultiBarLeftButton7:SetScale(0.8)
+			MultiBarLeftButton8:SetScale(0.8)
+			MultiBarLeftButton9:SetScale(0.8)
+			MultiBarLeftButton10:SetScale(0.8)
+			MultiBarLeftButton11:SetScale(0.8)
+			MultiBarLeftButton12:SetScale(0.8)
+
 			MultiBarLeftButton1:ClearAllPoints()
 			MultiBarLeftButton1:SetPoint('TOP', MultiBarRightButton12, 'BOTTOM', 0, -20)
 			MultiBarLeftButton1.ClearAllPoints = function()

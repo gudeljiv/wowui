@@ -1,6 +1,6 @@
 VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/use Coarse Sharpening Stone
+/use Dense Sharpening Stone
 /use [button:1] 16; [button:2] 17
 END
 VER 3 000000000000000E " " "136106"
@@ -20,13 +20,13 @@ VER 3 0000000000000012 " " "132143"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1645
-/castsequence [combat] reset=combat item:6149,item:3827
+/use [nocombat]item:0
+/castsequence [combat] reset=combat item:13444,item:6149
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4602
-/castsequence [combat] reset=combat item:3928,item:1710
+/use [nocombat]item:27854
+/castsequence [combat] reset=combat item:22829,item:13446
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
@@ -39,10 +39,8 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /use item:29451
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/run print("---")
-/run print(GetSpellInfo(GetSpellInfo(12294)))
-/run print(GetSpellInfo(GetSpellInfo(23881)))
-/run print(GetSpellInfo(GetSpellInfo(20243)))
-/run print(GetSpellInfo(GetSpellInfo(18499)))
+/run print(VerticalMultiBarsContainer:GetScale())
+/run print(MultiBarRight:GetScale())
+/run print(MultiBarLeft:GetScale())
+/run print(MultiBarLeftButton1:SetScale(0.8))
 END

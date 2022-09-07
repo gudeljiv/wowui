@@ -1,20 +1,20 @@
 
 RXPCData = {
 	["hideWindow"] = false,
-	["SoM"] = true,
+	["GA"] = false,
 	["completedWaypoints"] = {
 		[9] = {
 			[2455021225] = true,
 		},
 	},
 	["currentStep"] = 9,
-	["hardcore"] = false,
+	["SoM"] = true,
 	["currentGuideGroup"] = "Horde 45-60",
 	["flightPaths"] = {
 		[25] = "Crossroads, The Barrens",
-		[30] = "Freewind Post, Thousand Needles",
-		[29] = "Sun Rock Retreat, Stonetalon Mountains",
 		[58] = "Zoram'gar Outpost, Ashenvale",
+		[29] = "Sun Rock Retreat, Stonetalon Mountains",
+		[30] = "Freewind Post, Thousand Needles",
 		[179] = "Mudsprocket, Dustwallow Marsh",
 		[55] = "Brackenwall Village, Dustwallow Marsh",
 		[18] = "Booty Bay, Stranglethorn",
@@ -34,7 +34,7 @@ RXPCData = {
 	["stepSkip"] = {
 	},
 	["disableItemWindow"] = true,
-	["GA"] = false,
+	["hardcore"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -104,8 +104,8 @@ RXPCTrackingData = {
 					["deaths"] = 0,
 					["mobs"] = {
 						["Un'Goro Crater"] = {
-							["xp"] = 15926,
-							["count"] = 6,
+							["xp"] = 21956,
+							["count"] = 12,
 						},
 					},
 					["timestamp"] = {
@@ -259,10 +259,10 @@ RXPCTrackingData = {
 					},
 					["quests"] = {
 						["Tanaris"] = {
-							[1691] = 7950,
-							[8366] = 8325,
-							[2873] = 8325,
 							[8365] = 8325,
+							[8366] = 8325,
+							[1691] = 7950,
+							[2873] = 8325,
 						},
 					},
 				},
@@ -488,12 +488,12 @@ RXPCComms = {
 					["class"] = "HUNTER",
 				},
 				["Complaining"] = {
-					["level"] = 70,
+					["isRxp"] = true,
 					["lastSeen"] = 2019328.136,
 					["xpPercentage"] = 0,
-					["class"] = "WARLOCK",
+					["level"] = 70,
 					["timePlayed"] = -198.5099999997765,
-					["isRxp"] = true,
+					["class"] = "WARLOCK",
 				},
 				["Shadowstórm"] = {
 					["timePlayed"] = -18.05199999999968,
@@ -508,12 +508,12 @@ RXPCComms = {
 					["class"] = "HUNTER",
 				},
 				["Judgewink"] = {
-					["class"] = "PALADIN",
+					["level"] = 44,
 					["lastSeen"] = 26651.365,
 					["xpPercentage"] = 56,
-					["isRxp"] = true,
+					["class"] = "PALADIN",
 					["timePlayed"] = -849.293999999998,
-					["level"] = 44,
+					["isRxp"] = true,
 				},
 				["Kerrorr"] = {
 					["timePlayed"] = -408.0610000000015,

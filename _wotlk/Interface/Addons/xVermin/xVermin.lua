@@ -6,13 +6,13 @@ f:SetScript(
 	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
 		if isInitialLogin or isReloadingUi then
-			SHOW_MULTI_ACTIONBAR_1 = 1
-			SHOW_MULTI_ACTIONBAR_2 = 1
-			SHOW_MULTI_ACTIONBAR_3 = 1
-			SHOW_MULTI_ACTIONBAR_4 = 1
-			ALWAYS_SHOW_MULTIBARS = 1
-			LOCK_ACTIONBAR = 1
-			InterfaceOptions_UpdateMultiActionBars()
+			-- SHOW_MULTI_ACTIONBAR_1 = 1
+			-- SHOW_MULTI_ACTIONBAR_2 = 1
+			-- SHOW_MULTI_ACTIONBAR_3 = 1
+			-- SHOW_MULTI_ACTIONBAR_4 = 1
+			-- ALWAYS_SHOW_MULTIBARS = 1
+			-- LOCK_ACTIONBAR = 1
+			-- InterfaceOptions_UpdateMultiActionBars()
 
 			-------------------------------------------
 			-- Position of choco bars
@@ -331,8 +331,8 @@ f:SetScript(
 TargetFrame:HookScript(
 	'OnUpdate',
 	function(self)
-		name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = UnitCastingInfo('target')
-		name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = UnitChannelInfo('target')
+		local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = UnitCastingInfo('target')
+		local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = UnitChannelInfo('target')
 		if (name_casting ~= nil and not notInterruptible_casting) or (name_channeling ~= nil and not notInterruptible_chanelling) then
 			-- print(name, name and not notInterruptible)
 			-- WARRIOR INTERRUPT

@@ -817,11 +817,6 @@ SLASH_optionUI1 = '/optionUI'
 SLASH_optionUI1 = '/wtf'
 SLASH_optionUI1 = '/whoaf'
 
-SlashCmdList['RELOAD'] = function()
-	ReloadUI()
-end
-SLASH_RELOAD1 = '/rl'
-
 local whoaInit = CreateFrame('Frame', 'whoaInit')
 whoaInit:RegisterEvent('PLAYER_LOGIN')
 whoaInit:RegisterEvent('ADDON_LOADED')

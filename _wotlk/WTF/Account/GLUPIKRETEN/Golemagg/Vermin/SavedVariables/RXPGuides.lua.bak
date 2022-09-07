@@ -34,16 +34,54 @@ RXPCTrackingData = {
 					["groupExperience"] = 0,
 					["deaths"] = 0,
 					["mobs"] = {
-						["Hellfire Peninsula"] = {
-							["xp"] = 2622,
-							["count"] = 4,
-						},
 						["Zangarmarsh"] = {
 							["xp"] = 41294,
 							["count"] = 32,
 						},
+						["Terokkar Forest"] = {
+							["xp"] = 43378,
+							["count"] = 29,
+						},
+						["Hellfire Peninsula"] = {
+							["xp"] = 2622,
+							["count"] = 4,
+						},
 					},
 					["timestamp"] = {
+						["dateFinished"] = {
+							["monthDay"] = 7,
+							["day"] = 0,
+							["month"] = 9,
+							["minute"] = 52,
+							["year"] = 2022,
+							["hour"] = 12,
+							["weekday"] = 4,
+						},
+						["finished"] = 692162,
+					},
+					["quests"] = {
+					},
+				},
+				[67] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Terokkar Forest"] = {
+							["xp"] = 30968,
+							["count"] = 22,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 7,
+							["day"] = 0,
+							["month"] = 9,
+							["minute"] = 52,
+							["year"] = 2022,
+							["hour"] = 12,
+							["weekday"] = 4,
+						},
+						["started"] = 692163,
 					},
 					["quests"] = {
 					},

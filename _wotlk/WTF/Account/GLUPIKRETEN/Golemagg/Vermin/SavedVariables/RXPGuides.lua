@@ -42,8 +42,46 @@ RXPCTrackingData = {
 							["xp"] = 2622,
 							["count"] = 4,
 						},
+						["Terokkar Forest"] = {
+							["xp"] = 43378,
+							["count"] = 29,
+						},
 					},
 					["timestamp"] = {
+						["dateFinished"] = {
+							["monthDay"] = 7,
+							["day"] = 0,
+							["month"] = 9,
+							["weekday"] = 4,
+							["year"] = 2022,
+							["hour"] = 12,
+							["minute"] = 52,
+						},
+						["finished"] = 692162,
+					},
+					["quests"] = {
+					},
+				},
+				[67] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Terokkar Forest"] = {
+							["xp"] = 35126,
+							["count"] = 25,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 7,
+							["day"] = 0,
+							["month"] = 9,
+							["weekday"] = 4,
+							["year"] = 2022,
+							["hour"] = 12,
+							["minute"] = 52,
+						},
+						["started"] = 692163,
 					},
 					["quests"] = {
 					},

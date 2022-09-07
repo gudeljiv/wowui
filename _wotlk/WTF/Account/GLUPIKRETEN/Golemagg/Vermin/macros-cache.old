@@ -1,8 +1,6 @@
-VER 3 0000000001000013 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast [stance:1/3] Victory Rush
-/cast [stance:2] Disarm
+VER 3 0000000001000014 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Vigilance
+/cast [@focus,exists] Vigilance
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -81,6 +79,7 @@ VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 /cast [stance:2] Devastate
 /use 13
 /use 14
+/cast Bloodrage
 END
 VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -91,4 +90,10 @@ END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [stance:2] Disarm; Defensive Stance
+END
+VER 3 0000000001000013 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast [stance:1/3] Victory Rush
+/cast [stance:2] Disarm
 END

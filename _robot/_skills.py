@@ -23,6 +23,7 @@ skills["warrior"] = [
     {"name": "devastate", "key": "f11"},
     {"name": "vigilance", "key": "d", "modifier": "shift"},
     {"name": "last stand", "key": "t", "modifier": "shift"},
+    {"name": "concussion blow", "key": "g"},
 ]
 
 skills["warlock"] = [
@@ -69,6 +70,7 @@ skills["death knight"] = [
     {"name": "blood tap", "key": "0", "modifier": "alt"},
     {"name": "icebound fortitude", "key": "t"},
     {"name": "horn of winter", "key": "f4"},
+    {"name": "rune strike", "key": "9", "modifier": "alt"},
 ]
 
 skills["priest"] = [

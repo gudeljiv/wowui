@@ -1,20 +1,20 @@
 
 RXPCData = {
 	["hideWindow"] = false,
-	["GA"] = false,
+	["hardcore"] = false,
 	["completedWaypoints"] = {
 		[9] = {
 			[2455021225] = true,
 		},
 	},
 	["currentStep"] = 9,
-	["SoM"] = true,
+	["GA"] = false,
 	["currentGuideGroup"] = "Horde 45-60",
 	["flightPaths"] = {
 		[25] = "Crossroads, The Barrens",
 		[77] = "Camp Taurajo, The Barrens",
 		[29] = "Sun Rock Retreat, Stonetalon Mountains",
-		[30] = "Freewind Post, Thousand Needles",
+		[58] = "Zoram'gar Outpost, Ashenvale",
 		[179] = "Mudsprocket, Dustwallow Marsh",
 		[40] = "Gadgetzan, Tanaris",
 		[18] = "Booty Bay, Stranglethorn",
@@ -23,7 +23,7 @@ RXPCData = {
 		[55] = "Brackenwall Village, Dustwallow Marsh",
 		[80] = "Ratchet, The Barrens",
 		[23] = "Orgrimmar, Durotar",
-		[58] = "Zoram'gar Outpost, Ashenvale",
+		[30] = "Freewind Post, Thousand Needles",
 	},
 	["disableItemWindow"] = true,
 	["xprate"] = 1.5,
@@ -34,7 +34,7 @@ RXPCData = {
 	["stepSkip"] = {
 	},
 	["phase"] = 6,
-	["hardcore"] = false,
+	["SoM"] = true,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -104,8 +104,8 @@ RXPCTrackingData = {
 					["deaths"] = 0,
 					["mobs"] = {
 						["Un'Goro Crater"] = {
-							["xp"] = 15926,
-							["count"] = 6,
+							["xp"] = 21956,
+							["count"] = 12,
 						},
 					},
 					["timestamp"] = {
@@ -259,10 +259,10 @@ RXPCTrackingData = {
 					},
 					["quests"] = {
 						["Tanaris"] = {
-							[8365] = 8325,
-							[8366] = 8325,
-							[1691] = 7950,
 							[2873] = 8325,
+							[8366] = 8325,
+							[8365] = 8325,
+							[1691] = 7950,
 						},
 					},
 				},
@@ -488,12 +488,12 @@ RXPCComms = {
 					["class"] = "HUNTER",
 				},
 				["Complaining"] = {
-					["isRxp"] = true,
+					["class"] = "WARLOCK",
 					["lastSeen"] = 2019328.136,
 					["xpPercentage"] = 0,
-					["level"] = 70,
+					["isRxp"] = true,
 					["timePlayed"] = -198.5099999997765,
-					["class"] = "WARLOCK",
+					["level"] = 70,
 				},
 				["Shadowstórm"] = {
 					["timePlayed"] = -18.05199999999968,
@@ -508,12 +508,12 @@ RXPCComms = {
 					["class"] = "HUNTER",
 				},
 				["Judgewink"] = {
-					["level"] = 44,
+					["isRxp"] = true,
 					["lastSeen"] = 26651.365,
 					["xpPercentage"] = 56,
-					["class"] = "PALADIN",
+					["level"] = 44,
 					["timePlayed"] = -849.293999999998,
-					["isRxp"] = true,
+					["class"] = "PALADIN",
 				},
 				["Kerrorr"] = {
 					["timePlayed"] = -408.0610000000015,
