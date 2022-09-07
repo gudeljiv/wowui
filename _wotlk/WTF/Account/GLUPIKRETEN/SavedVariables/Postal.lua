@@ -49,7 +49,7 @@ Postal3ClassicDB = {
 				"Koloman|Golemagg|Horde|1|MAGE", -- [11]
 				"Konac|Dreadnaught|Horde|23|PRIEST", -- [12]
 				"Moolatz|Dreadnaught|Horde|15|DRUID", -- [13]
-				"Moolatz|Golemagg|Horde|48|DRUID", -- [14]
+				"Moolatz|Golemagg|Horde|49|DRUID", -- [14]
 				"Mxyzptlk|Golemagg|Horde|14|WARLOCK", -- [15]
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [16]
 				"Mxzq|Golemagg|Horde|69|HUNTER", -- [17]

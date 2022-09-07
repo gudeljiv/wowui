@@ -24,7 +24,7 @@ C_Timer.NewTicker(
 					end
 
 					if first_time == 1 then
-						self:ClearAllPoints()
+						-- self:ClearAllPoints()
 						self:CreateBeautyBorder(8)
 						self:SetBackdrop(
 							{
@@ -36,11 +36,27 @@ C_Timer.NewTicker(
 								insets = {left = 0, right = 0, top = 0, bottom = 0}
 							}
 						)
-						self:SetBackdropColor(0, 0, 0, 0.4)
+						self:SetBackdropColor(0, 0, 0, 0.6)
 					end
+					self:ClearAllPoints()
 					self:SetPoint('TOPRIGHT', 'CustomContainer_2', 'BOTTOMRIGHT', 0, -10)
-					-- self.ClearAllPoints = function() end
-					-- self.SetPoint = function() end
+					self.ClearAllPoints = function()
+					end
+					self.SetPoint = function()
+					end
+
+					-- hooksecurefunc(
+					-- 	self,
+					-- 	'SetPoint',
+					-- 	function(self)
+					-- 		self:ClearAllPoints()
+					-- 		self:SetPoint('TOPRIGHT', 'CustomContainer_2', 'BOTTOMRIGHT', 0, -10)
+					-- 		self.ClearAllPoints = function()
+					-- 		end
+					-- 		self.SetPoint = function()
+					-- 		end
+					-- 	end
+					-- )
 
 					TomTomCrazyArrow:SetPoint('TOPRIGHT', self, 'TOPLEFT', -20, -10)
 

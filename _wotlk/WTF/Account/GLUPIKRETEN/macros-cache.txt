@@ -1,11 +1,3 @@
-VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/castsequence Find Herbs,Find Minerals
-END
-VER 3 0000000000000012 " " "132143"
-#showtooltip
-/startattack
-END
 VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use Dense Sharpening Stone
@@ -17,6 +9,14 @@ VER 3 000000000000000E " " "136106"
 END
 VER 3 0000000000000013 " " "132130"
 /click RotBotF3
+END
+VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence Find Herbs,Find Minerals
+END
+VER 3 0000000000000012 " " "132143"
+#showtooltip
+/startattack
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
@@ -39,8 +39,5 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /use item:29451
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run print(VerticalMultiBarsContainer:GetScale())
-/run print(MultiBarRight:GetScale())
-/run print(MultiBarLeft:GetScale())
-/run print(MultiBarLeftButton1:SetScale(0.8))
+/run local count = GetNumTrackingTypes();for i=1,count do  local name, texture, active, category = GetTrackingInfo(i);DEFAULT_CHAT_FRAME:AddMessage(name.." ("..texture..")");end
 END

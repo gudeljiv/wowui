@@ -34,6 +34,7 @@ local function TrackingIcon()
 	end
 
 	if (texture) then
+		trackingID = texture
 		-- Minerals
 		if (texture == 136025) then
 			titm.text:SetText('MINERALS')
@@ -48,18 +49,11 @@ local function TrackingIcon()
 			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\inv_misc_flower_02')
 		end
 
-		-- Humanoids
+		-- Humanoids HUNTER
 		if (texture == 135942) then
 			titm.text:SetText('HUMANOIDS')
 			TrackingIconFrame:Show()
 			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\spell_holy_prayerofhealing')
-		end
-
-		--Undead
-		if (texture == 136142) then
-			titm.text:SetText('UNDEAD')
-			TrackingIconFrame:Show()
-			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\spell_shadow_darksummoning')
 		end
 
 		-- Beasts
@@ -67,6 +61,20 @@ local function TrackingIcon()
 			titm.text:SetText('BEASTS')
 			TrackingIconFrame:Show()
 			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\ability_tracking')
+		end
+
+		-- Humanoids DRUID
+		if (texture == 132328 and xVermin.Class == 'DRUID') then
+			titm.text:SetText('HUMANOIDS')
+			TrackingIconFrame:Show()
+			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\ability_tracking')
+		end
+
+		--Undead
+		if (texture == 136142) then
+			titm.text:SetText('UNDEAD')
+			TrackingIconFrame:Show()
+			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\spell_shadow_darksummoning')
 		end
 
 		-- Hidden
@@ -124,12 +132,7 @@ local function InitializeTracking()
 			end
 		end
 
-		if
-			(spellName == 'Find Minerals' or spellName == 'Find Herbs' or spellName == 'Track Beasts' or spellName == 'Track Humanoids' or spellName == 'Track Undead' or spellName == 'Track Hidden' or spellName == 'Track Demons' or
-				spellName == 'Track Elementals' or
-				spellName == 'Track Dragonkin' or
-				spellName == 'Track Giants')
-		 then
+		if (spellName == 'Find Minerals' or spellName == 'Find Herbs' or spellName == 'Track Beasts' or spellName == 'Track Humanoids' or spellName == 'Track Undead' or spellName == 'Track Hidden' or spellName == 'Track Demons' or spellName == 'Track Elementals' or spellName == 'Track Dragonkin' or spellName == 'Track Giants') then
 			TrackingIconFrame:RegisterUnitEvent('UNIT_AURA', 'player')
 			TrackingIconFrame:SetScript('OnEvent', TrackingIcon)
 			TrackingIcon()
@@ -142,6 +145,7 @@ end
 local f = CreateFrame('Frame')
 f:RegisterEvent('PLAYER_ENTERING_WORLD')
 f:RegisterEvent('CHAT_MSG_SKILL')
+-- f:RegisterEvent('MINIMAP_UPDATE_TRACKING')
 f:SetScript(
 	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)

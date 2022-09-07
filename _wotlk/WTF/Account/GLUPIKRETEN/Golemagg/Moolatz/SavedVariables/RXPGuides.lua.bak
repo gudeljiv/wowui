@@ -1,13 +1,13 @@
 
 RXPCData = {
 	["hideWindow"] = false,
-	["SoM"] = true,
+	["GA"] = false,
 	["completedWaypoints"] = {
 		[17] = {
 		},
 	},
 	["currentStep"] = 17,
-	["hardcore"] = false,
+	["SoM"] = true,
 	["currentGuideGroup"] = "Horde 45-60",
 	["flightPaths"] = {
 		[25] = "Crossroads, The Barrens",
@@ -32,12 +32,12 @@ RXPCData = {
 	["frameHeight"] = 125.0000152587891,
 	["currentGuideName"] = "52-54 Un'goro",
 	["stepSkip"] = {
-		[3] = true,
-		[2] = true,
 		[8] = true,
+		[2] = true,
+		[3] = true,
 	},
 	["disableItemWindow"] = true,
-	["GA"] = false,
+	["hardcore"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -103,16 +103,20 @@ RXPCTrackingData = {
 					},
 				},
 				[48] = {
-					["groupExperience"] = 0,
+					["groupExperience"] = 9548,
 					["deaths"] = 0,
 					["mobs"] = {
+						["Thunder Bluff"] = {
+							["xp"] = 10200,
+							["count"] = 1,
+						},
 						["Un'Goro Crater"] = {
 							["xp"] = 85104,
 							["count"] = 37,
 						},
-						["Thunder Bluff"] = {
-							["xp"] = 10200,
-							["count"] = 1,
+						["Zul'Farrak"] = {
+							["xp"] = 9548,
+							["count"] = 18,
 						},
 					},
 					["timestamp"] = {
@@ -124,6 +128,16 @@ RXPCTrackingData = {
 							["year"] = 2022,
 							["hour"] = 22,
 							["minute"] = 48,
+						},
+						["finished"] = 262274,
+						["dateFinished"] = {
+							["monthDay"] = 7,
+							["day"] = 0,
+							["month"] = 9,
+							["minute"] = 38,
+							["year"] = 2022,
+							["hour"] = 18,
+							["weekday"] = 4,
 						},
 						["started"] = 253398,
 					},
@@ -274,10 +288,10 @@ RXPCTrackingData = {
 					},
 					["quests"] = {
 						["Tanaris"] = {
-							[1691] = 7950,
-							[8366] = 8325,
-							[2873] = 8325,
 							[8365] = 8325,
+							[8366] = 8325,
+							[1691] = 7950,
+							[2873] = 8325,
 						},
 					},
 				},
@@ -333,6 +347,34 @@ RXPCTrackingData = {
 							[2768] = 13575,
 							[2865] = 12450,
 						},
+					},
+				},
+				[49] = {
+					["groupExperience"] = 65356,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Zul'Farrak"] = {
+							["xp"] = 65356,
+							["count"] = 325,
+						},
+						["Tanaris"] = {
+							["xp"] = 1748,
+							["count"] = 7,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 7,
+							["day"] = 0,
+							["month"] = 9,
+							["minute"] = 38,
+							["year"] = 2022,
+							["hour"] = 18,
+							["weekday"] = 4,
+						},
+						["started"] = 262275,
+					},
+					["quests"] = {
 					},
 				},
 				[40] = {
@@ -494,6 +536,10 @@ RXPCComms = {
 					["timePlayed"] = -3002.618000000017,
 					["class"] = "PALADIN",
 				},
+				["Carenka"] = {
+					["timePlayed"] = -2405.13199999975,
+					["class"] = "PRIEST",
+				},
 				["Sorrymasen"] = {
 					["timePlayed"] = -58.80099999997765,
 					["class"] = "WARRIOR",
@@ -503,12 +549,12 @@ RXPCComms = {
 					["class"] = "HUNTER",
 				},
 				["Complaining"] = {
-					["level"] = 70,
+					["isRxp"] = true,
 					["lastSeen"] = 2019328.136,
 					["xpPercentage"] = 0,
-					["class"] = "WARLOCK",
+					["level"] = 70,
 					["timePlayed"] = -198.5099999997765,
-					["isRxp"] = true,
+					["class"] = "WARLOCK",
 				},
 				["Shadowstórm"] = {
 					["timePlayed"] = -18.05199999999968,
@@ -522,13 +568,25 @@ RXPCComms = {
 					["timePlayed"] = 0,
 					["class"] = "HUNTER",
 				},
+				["Miio"] = {
+					["timePlayed"] = -2405.13199999975,
+					["class"] = "WARRIOR",
+				},
 				["Judgewink"] = {
-					["class"] = "PALADIN",
+					["level"] = 44,
 					["lastSeen"] = 26651.365,
 					["xpPercentage"] = 56,
-					["isRxp"] = true,
+					["class"] = "PALADIN",
 					["timePlayed"] = -849.293999999998,
-					["level"] = 44,
+					["isRxp"] = true,
+				},
+				["Frenzybubble"] = {
+					["timePlayed"] = -2405.13199999975,
+					["class"] = "PALADIN",
+				},
+				["Zupidu"] = {
+					["timePlayed"] = -2405.13199999975,
+					["class"] = "HUNTER",
 				},
 				["Kerrorr"] = {
 					["timePlayed"] = -408.0610000000015,
@@ -538,9 +596,9 @@ RXPCComms = {
 					["timePlayed"] = -3002.618000000017,
 					["class"] = "WARLOCK",
 				},
-				["Kherox"] = {
-					["timePlayed"] = -994.6610000000001,
-					["class"] = "WARRIOR",
+				["Healboyy"] = {
+					["timePlayed"] = -3002.618000000017,
+					["class"] = "DRUID",
 				},
 				["Drewblood"] = {
 					["timePlayed"] = -848.128999999999,
@@ -554,9 +612,9 @@ RXPCComms = {
 					["timePlayed"] = -66.15499999979511,
 					["class"] = "HUNTER",
 				},
-				["Healboyy"] = {
-					["timePlayed"] = -3002.618000000017,
-					["class"] = "DRUID",
+				["Kherox"] = {
+					["timePlayed"] = -994.6610000000001,
+					["class"] = "WARRIOR",
 				},
 				["Ebisx"] = {
 					["timePlayed"] = -58.80099999997765,

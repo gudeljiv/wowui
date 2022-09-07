@@ -31,42 +31,43 @@ FarmHudDB = {
 	["QuestArrowInfoMsg"] = false,
 	["tracking^136463"] = "client",
 	["tracking^134153"] = "client",
+	["buttons_radius"] = 0.56,
 	["gathercircle_color"] = {
 		0, -- [1]
 		1, -- [2]
 		0, -- [3]
 		0.5, -- [4]
 	},
-	["buttons_radius"] = 0.56,
-	["rotation"] = true,
 	["buttons_alpha"] = 0.6,
-	["tracking^136025"] = "client",
+	["rotation"] = true,
 	["player_dot"] = "blizz",
+	["tracking^136025"] = "client",
 	["holdKeyForMouseOn"] = "_NONE",
+	["SuperTrackedQuest"] = true,
 	["hud_size"] = 1,
-	["tracking^132275"] = "client",
+	["buttons_show"] = false,
 	["mouseoverinfo_color"] = {
 		1, -- [1]
 		0.82, -- [2]
 		0, -- [3]
 		0.7, -- [4]
 	},
-	["buttons_show"] = false,
-	["SuperTrackedQuest"] = true,
+	["tracking^132275"] = "client",
+	["tracking^136455"] = "client",
 	["coords_show"] = false,
 	["showDummy"] = true,
 	["tracking^135861"] = "client",
-	["tracking^136464"] = "client",
-	["gathercircle_show"] = false,
 	["tracking^136454"] = "client",
+	["tracking^136466"] = "client",
+	["gathercircle_show"] = false,
 	["tracking^136453"] = "client",
-	["coords_bottom"] = false,
 	["time_color"] = {
 		1, -- [1]
 		0.82, -- [2]
 		0, -- [3]
 		0.7, -- [4]
 	},
+	["coords_bottom"] = false,
 	["cardinalpoints_radius"] = 0.475,
 	["tracking^132320"] = "client",
 	["tracking^136451"] = "client",
@@ -91,7 +92,7 @@ FarmHudDB = {
 	["tracking^136217"] = "client",
 	["healcircle_show"] = false,
 	["time_radius"] = 0.48,
-	["tracking^136455"] = "client",
+	["tracking^136464"] = "client",
 	["cardinalpoints_show"] = false,
 	["tracking^135942"] = "client",
 	["time_local"] = true,

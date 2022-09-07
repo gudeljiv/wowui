@@ -13,11 +13,11 @@ EnhancedRaidFramesDB = {
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
-			["backgroundAlpha"] = 0.6000000000000001,
 			["rangeAlpha"] = 0.2,
 			["showDebuffs"] = false,
-			["showDispellableDebuffs"] = false,
 			["showBuffs"] = false,
+			["showDispellableDebuffs"] = false,
+			["backgroundAlpha"] = 0.6000000000000001,
 		},
 		["Mxyz - Golemagg"] = {
 		},
@@ -55,11 +55,11 @@ EnhancedRaidFramesDB = {
 				["mineOnly"] = true,
 			},
 			["backgroundAlpha"] = 0.7000000000000001,
-			["showBuffs"] = false,
 			["showDebuffs"] = false,
+			["showRaidIcons"] = false,
 			["showDispellableDebuffs"] = false,
 			["rangeAlpha"] = 0.5,
-			["showRaidIcons"] = false,
+			["showBuffs"] = false,
 		},
 		["Vermin - Golemagg"] = {
 			{
