@@ -16,12 +16,12 @@ RXPCData = {
 	},
 	["xprate"] = 1.5,
 	["JoyousJourneys"] = true,
-	["frameHeight"] = 125.0000152587891,
+	["hardcore"] = false,
 	["currentGuideName"] = "",
 	["stepSkip"] = {
 	},
 	["SoM"] = 1,
-	["hardcore"] = false,
+	["frameHeight"] = 125.0000152587891,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -38,13 +38,13 @@ RXPCTrackingData = {
 							["xp"] = 41294,
 							["count"] = 32,
 						},
-						["Hellfire Peninsula"] = {
-							["xp"] = 2622,
-							["count"] = 4,
-						},
 						["Terokkar Forest"] = {
 							["xp"] = 43378,
 							["count"] = 29,
+						},
+						["Hellfire Peninsula"] = {
+							["xp"] = 2622,
+							["count"] = 4,
 						},
 					},
 					["timestamp"] = {
@@ -52,10 +52,10 @@ RXPCTrackingData = {
 							["monthDay"] = 7,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 4,
+							["minute"] = 52,
 							["year"] = 2022,
 							["hour"] = 12,
-							["minute"] = 52,
+							["weekday"] = 4,
 						},
 						["finished"] = 692162,
 					},
@@ -64,15 +64,19 @@ RXPCTrackingData = {
 				},
 				[67] = {
 					["groupExperience"] = 0,
-					["deaths"] = 0,
+					["deaths"] = 1,
 					["mobs"] = {
+						["Zangarmarsh"] = {
+							["xp"] = 15600,
+							["count"] = 1,
+						},
 						["Terokkar Forest"] = {
 							["xp"] = 64879,
 							["count"] = 38,
 						},
-						["Zangarmarsh"] = {
-							["xp"] = 15600,
-							["count"] = 1,
+						["Nagrand"] = {
+							["xp"] = 20724,
+							["count"] = 13,
 						},
 					},
 					["timestamp"] = {
@@ -80,21 +84,21 @@ RXPCTrackingData = {
 							["monthDay"] = 7,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 4,
+							["minute"] = 52,
 							["year"] = 2022,
 							["hour"] = 12,
-							["minute"] = 52,
+							["weekday"] = 4,
 						},
 						["started"] = 692163,
 					},
 					["quests"] = {
+						["Zangarmarsh"] = {
+							[9731] = 15600,
+						},
 						["Terokkar Forest"] = {
 							[9957] = 3900,
 							[10880] = 8100,
 							[9796] = 3825,
-						},
-						["Zangarmarsh"] = {
-							[9731] = 15600,
 						},
 					},
 				},

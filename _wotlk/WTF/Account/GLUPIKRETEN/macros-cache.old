@@ -1,3 +1,7 @@
+VER 3 0000000000000012 " " "132143"
+#showtooltip
+/startattack
+END
 VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use Dense Sharpening Stone
@@ -13,10 +17,6 @@ END
 VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /castsequence Find Herbs,Find Minerals
-END
-VER 3 0000000000000012 " " "132143"
-#showtooltip
-/startattack
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
@@ -39,5 +39,6 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /use item:29451
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/target shadowy laborer
+/run PlayerFrameHealthBarText:SetScale(0.8)
+/run PlayerFrameHealthBarText:SetPoint("CENTER", PlayerFrameHealthBar, 0, -1)
 END

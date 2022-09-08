@@ -1,0 +1,30 @@
+## Interface: 20504
+## Version: 1.0.1
+## Title: DUnitFrames |T134167/:16:16:0:0|t by |cFFAAAAFFD4KiR |T132115/:16:16:0:0|t 
+## Notes: Unit Frames
+## Author: D4KiR
+## DefaultState: enabled
+## SavedVariables: DUFTAB
+## SavedVariablesPerCharacter: DUFTABPC
+## X-Curse-Project-ID: 409653
+## X-Wago-ID: kRNLAb6o
+
+# External Libs
+libs\LibStub\LibStub.lua
+libs\LibUIDropDownMenu\LibUIDropDownMenu.xml
+
+locale/enUS.lua
+locale/deDE.lua
+locale/ruRU.lua
+locale/zhTW.lua
+libs/LIB_lang.lua
+libs/LIB_math.lua
+libs/LIB_extendedvariables.lua
+
+settings.lua
+
+unitframe/playerframe.lua
+unitframe/targetframe.lua
+unitframe/focusframe.lua
+unitframe/partyframes.lua
+core.lua

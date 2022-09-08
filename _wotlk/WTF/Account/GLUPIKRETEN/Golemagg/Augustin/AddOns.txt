@@ -20,7 +20,7 @@ RXPGuides: enabled
 Leatrix_Plus: enabled
 TradeSkillMaster: enabled
 NeatPlates: disabled
-whoaThickFrames_BCC: enabled
+whoaThickFrames_BCC: disabled
 whoaThickFrames_Classic: disabled
 RangeDisplay: enabled
 RangeDisplay_Options: enabled
@@ -126,3 +126,5 @@ VuhDoOptions: disabled
 ErrorFilter: enabled
 ErrorMonster: disabled
 EnhancedRaidFrames: enabled
+WeaponSwingTimer: disabled
+EasyFrames: disabled

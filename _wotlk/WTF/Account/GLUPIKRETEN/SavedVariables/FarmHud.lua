@@ -30,7 +30,7 @@ FarmHudDB = {
 	["tracking^136457"] = "client",
 	["QuestArrowInfoMsg"] = false,
 	["tracking^136463"] = "client",
-	["tracking^134153"] = "client",
+	["tracking^136142"] = "client",
 	["buttons_radius"] = 0.56,
 	["gathercircle_color"] = {
 		0, -- [1]
@@ -38,38 +38,38 @@ FarmHudDB = {
 		0, -- [3]
 		0.5, -- [4]
 	},
-	["buttons_alpha"] = 0.6,
-	["rotation"] = true,
 	["player_dot"] = "blizz",
+	["rotation"] = true,
+	["buttons_alpha"] = 0.6,
 	["tracking^136025"] = "client",
-	["holdKeyForMouseOn"] = "_NONE",
-	["SuperTrackedQuest"] = true,
+	["tracking^135942"] = "client",
+	["cardinalpoints_show"] = false,
 	["hud_size"] = 1,
-	["buttons_show"] = false,
+	["tracking^136464"] = "client",
 	["mouseoverinfo_color"] = {
 		1, -- [1]
 		0.82, -- [2]
 		0, -- [3]
 		0.7, -- [4]
 	},
-	["tracking^132275"] = "client",
-	["tracking^136455"] = "client",
+	["buttons_show"] = false,
 	["coords_show"] = false,
-	["showDummy"] = true,
+	["tracking^136455"] = "client",
 	["tracking^135861"] = "client",
-	["tracking^136454"] = "client",
+	["showDummy"] = true,
+	["tracking^136217"] = "client",
 	["tracking^136466"] = "client",
-	["gathercircle_show"] = false,
-	["tracking^136453"] = "client",
-	["time_color"] = {
-		1, -- [1]
-		0.82, -- [2]
-		0, -- [3]
-		0.7, -- [4]
+	["healcircle_color"] = {
+		0, -- [1]
+		0.7, -- [2]
+		1, -- [3]
+		0.5, -- [4]
 	},
+	["tracking^136453"] = "client",
+	["tracking^133939"] = "client",
 	["coords_bottom"] = false,
 	["cardinalpoints_radius"] = 0.475,
-	["tracking^132320"] = "client",
+	["showDummyBg"] = true,
 	["tracking^136451"] = "client",
 	["buttons_buttom"] = false,
 	["time_bottom"] = false,
@@ -80,22 +80,22 @@ FarmHudDB = {
 		["hide"] = true,
 	},
 	["text_scale"] = 1.5,
-	["showDummyBg"] = true,
+	["tracking^132320"] = "client",
 	["time_show"] = false,
-	["tracking^133939"] = "client",
-	["healcircle_color"] = {
-		0, -- [1]
-		0.7, -- [2]
-		1, -- [3]
-		0.5, -- [4]
+	["time_color"] = {
+		1, -- [1]
+		0.82, -- [2]
+		0, -- [3]
+		0.7, -- [4]
 	},
-	["tracking^136217"] = "client",
+	["gathercircle_show"] = false,
+	["tracking^136454"] = "client",
 	["healcircle_show"] = false,
 	["time_radius"] = 0.48,
-	["tracking^136464"] = "client",
-	["cardinalpoints_show"] = false,
-	["tracking^135942"] = "client",
+	["tracking^132275"] = "client",
+	["SuperTrackedQuest"] = true,
+	["holdKeyForMouseOn"] = "_NONE",
 	["time_local"] = true,
 	["tracking^136452"] = "client",
-	["tracking^136142"] = "client",
+	["tracking^134153"] = "client",
 }

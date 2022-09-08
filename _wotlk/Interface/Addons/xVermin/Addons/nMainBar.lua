@@ -86,7 +86,7 @@ C_Timer.NewTicker(
 			end
 			MultiBarRightButton1.SetPoint = function()
 			end
-			-- end)
+
 			self:Cancel()
 		end
 	end
@@ -119,7 +119,7 @@ C_Timer.NewTicker(
 			end
 			MultiBarLeftButton1.SetPoint = function()
 			end
-			-- end)
+
 			self:Cancel()
 		end
 	end

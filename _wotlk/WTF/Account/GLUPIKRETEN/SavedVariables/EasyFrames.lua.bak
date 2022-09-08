@@ -1,0 +1,32 @@
+
+EasyFramesDB = {
+	["profileKeys"] = {
+		["Vermin - Golemagg"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["player"] = {
+				["scaleFrame"] = 1,
+				["showName"] = false,
+			},
+			["general"] = {
+				["barTexture"] = "Clean",
+				["brightFrameBorder"] = 0,
+			},
+			["focus"] = {
+				["scaleFrame"] = 1,
+			},
+			["target"] = {
+				["scaleFrame"] = 1,
+				["showAttackBackground"] = false,
+				["showTargetCastbar"] = true,
+			},
+			["party"] = {
+				["scaleFrame"] = 1,
+			},
+			["boss"] = {
+				["scaleFrame"] = 0.8,
+			},
+		},
+	},
+}

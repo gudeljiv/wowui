@@ -11,7 +11,7 @@ nPower: disabled
 Leatrix_Plus: disabled
 TradeSkillMaster: enabled
 NeatPlates: disabled
-whoaThickFrames_BCC: enabled
+whoaThickFrames_BCC: disabled
 whoaThickFrames_Classic: disabled
 RangeDisplay: enabled
 RangeDisplay_Options: enabled
@@ -127,3 +127,5 @@ Blizzard_CompactRaidFrames: enabled
 Blizzard_CUFProfiles: enabled
 EnhancedRaidFrames: enabled
 Attack bar: disabled
+WeaponSwingTimer: disabled
+EasyFrames: disabled
