@@ -136,3 +136,4 @@ ErrorFilter: enabled
 ErrorMonster: disabled
 AccountWideRaidProfiles: disabled
 EnhancedRaidFrames: enabled
+WeaponSwingTimer: disabled

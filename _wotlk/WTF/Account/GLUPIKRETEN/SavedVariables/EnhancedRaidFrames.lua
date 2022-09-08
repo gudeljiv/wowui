@@ -13,11 +13,11 @@ EnhancedRaidFramesDB = {
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
-			["rangeAlpha"] = 0.2,
+			["backgroundAlpha"] = 0.6000000000000001,
 			["showDebuffs"] = false,
 			["showBuffs"] = false,
 			["showDispellableDebuffs"] = false,
-			["backgroundAlpha"] = 0.6000000000000001,
+			["rangeAlpha"] = 0.2,
 		},
 		["Mxyz - Golemagg"] = {
 		},
@@ -26,47 +26,47 @@ EnhancedRaidFramesDB = {
 		["Moolatz - Golemagg"] = {
 			{
 				["indicatorSize"] = 22,
-				["auras"] = "Rejuvenation",
 				["showTooltip"] = false,
-				["textSize"] = 12,
-				["colorTextByDebuff"] = true,
 				["mineOnly"] = true,
+				["colorTextByDebuff"] = true,
+				["textSize"] = 12,
+				["auras"] = "Rejuvenation",
 			}, -- [1]
 			nil, -- [2]
 			{
 				["indicatorSize"] = 22,
-				["auras"] = "Curse\nPoison",
 				["showTooltip"] = false,
-				["textSize"] = 12,
 				["colorTextByDebuff"] = true,
+				["textSize"] = 12,
+				["auras"] = "Curse\nPoison",
 			}, -- [3]
 			{
 				["indicatorSize"] = 22,
-				["textSize"] = 12,
 				["showText"] = "countdown",
+				["textSize"] = 12,
 				["colorTextByDebuff"] = true,
 			}, -- [4]
 			[7] = {
 				["indicatorSize"] = 22,
-				["auras"] = "Regrowth",
 				["showTooltip"] = false,
-				["textSize"] = 12,
-				["colorTextByDebuff"] = true,
 				["mineOnly"] = true,
+				["colorTextByDebuff"] = true,
+				["textSize"] = 12,
+				["auras"] = "Regrowth",
 			},
-			["backgroundAlpha"] = 0.7000000000000001,
-			["showDebuffs"] = false,
-			["showRaidIcons"] = false,
-			["showDispellableDebuffs"] = false,
 			["rangeAlpha"] = 0.5,
+			["showRaidIcons"] = false,
 			["showBuffs"] = false,
+			["showDebuffs"] = false,
+			["showDispellableDebuffs"] = false,
+			["backgroundAlpha"] = 0.7000000000000001,
 		},
 		["Vermin - Golemagg"] = {
 			{
 				["indicatorSize"] = 22,
 				["showTooltip"] = false,
-				["colorTextByDebuff"] = true,
 				["textSize"] = 12,
+				["colorTextByDebuff"] = true,
 				["mineOnly"] = true,
 			}, -- [1]
 			nil, -- [2]
@@ -85,16 +85,16 @@ EnhancedRaidFramesDB = {
 			[7] = {
 				["indicatorSize"] = 22,
 				["showTooltip"] = false,
-				["colorTextByDebuff"] = true,
 				["textSize"] = 12,
+				["colorTextByDebuff"] = true,
 				["mineOnly"] = true,
 			},
 			["backgroundAlpha"] = 0.7000000000000001,
-			["showDebuffs"] = false,
 			["showRaidIcons"] = false,
-			["showBuffs"] = false,
+			["showDebuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["rangeAlpha"] = 0.1,
+			["showBuffs"] = false,
 		},
 	},
 }

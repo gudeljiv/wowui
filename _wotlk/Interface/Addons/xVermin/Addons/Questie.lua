@@ -8,7 +8,7 @@ C_Timer.NewTicker(
 			if not Questie_BaseFrame.SetBackdrop then
 				Mixin(Questie_BaseFrame, BackdropTemplateMixin)
 			end
-			local first_time = 1
+
 			Questie_BaseFrame:HookScript(
 				'OnUpdate',
 				function(self)
@@ -23,21 +23,18 @@ C_Timer.NewTicker(
 						end
 					end
 
-					if first_time == 1 then
-						-- self:ClearAllPoints()
-						self:CreateBeautyBorder(8)
-						self:SetBackdrop(
-							{
-								bgFile = 'Interface\\Buttons\\WHITE8x8',
-								edgeFile = '',
-								tile = false,
-								tileSize = 0,
-								edgeSize = 0,
-								insets = {left = 0, right = 0, top = 0, bottom = 0}
-							}
-						)
-						self:SetBackdropColor(0, 0, 0, 0.6)
-					end
+					self:CreateBeautyBorder(8)
+					self:SetBackdrop(
+						{
+							bgFile = 'Interface\\Buttons\\WHITE8x8',
+							edgeFile = '',
+							tile = false,
+							tileSize = 0,
+							edgeSize = 0,
+							insets = {left = 0, right = 0, top = 0, bottom = 0}
+						}
+					)
+					self:SetBackdropColor(0, 0, 0, 0.6)
 					self:ClearAllPoints()
 					self:SetPoint('TOPRIGHT', 'CustomContainer_2', 'BOTTOMRIGHT', 0, -10)
 					self.ClearAllPoints = function()
@@ -65,10 +62,6 @@ C_Timer.NewTicker(
 						if ib then
 							ib:CreateBeautyBorder(6)
 						end
-					end
-
-					if not self:IsVisible() then
-						first_time = 0
 					end
 				end
 			)

@@ -57,7 +57,7 @@ ChocolateBarDB = {
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["forceColor"] = false,
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -78,10 +78,7 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -395,13 +392,11 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 				},
 				["LFGBulletinBoard"] = {
-					["enabled"] = false,
-					["index"] = 3,
-					["align"] = "right",
+					["index"] = 2,
 					["isNew"] = false,
 					["showLabel"] = true,
 					["showText"] = false,
-					["barName"] = "ChocolateBar1",
+					["barName"] = "ChocolateBar2",
 					["showIcon"] = false,
 					["customLabel"] = "LFG",
 				},
@@ -518,13 +513,16 @@ ChocolateBarDB = {
 				},
 			},
 			["gap"] = 0,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["fixedStrata"] = true,
-			["desaturated"] = false,
-			["moveFrames"] = false,
 			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["forceColor"] = false,
+			["desaturated"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {

@@ -67,8 +67,12 @@ RXPCTrackingData = {
 					["deaths"] = 0,
 					["mobs"] = {
 						["Terokkar Forest"] = {
-							["xp"] = 35126,
-							["count"] = 25,
+							["xp"] = 64879,
+							["count"] = 38,
+						},
+						["Zangarmarsh"] = {
+							["xp"] = 15600,
+							["count"] = 1,
 						},
 					},
 					["timestamp"] = {
@@ -84,6 +88,14 @@ RXPCTrackingData = {
 						["started"] = 692163,
 					},
 					["quests"] = {
+						["Terokkar Forest"] = {
+							[9957] = 3900,
+							[10880] = 8100,
+							[9796] = 3825,
+						},
+						["Zangarmarsh"] = {
+							[9731] = 15600,
+						},
 					},
 				},
 			},
