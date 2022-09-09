@@ -25,6 +25,7 @@ RXPData = {
 RXPDB = {
 	["profileKeys"] = {
 		["Vermin - Golemagg"] = "global",
+		["Vermina - Golemagg"] = "global",
 		["Mxyz - Golemagg"] = "global",
 		["Battlearm - Golemagg"] = "global",
 		["Moolatz - Golemagg"] = "global",

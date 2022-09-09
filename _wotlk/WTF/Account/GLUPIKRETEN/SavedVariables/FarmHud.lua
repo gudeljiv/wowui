@@ -17,6 +17,7 @@ FarmHudDB = {
 	["tracking^136456"] = "client",
 	["time_server"] = true,
 	["tracking^136465"] = "client",
+	["tracking^135974"] = "client",
 	["tracking^132328"] = "client",
 	["coords_radius"] = 0.51,
 	["cardinalpoints_color1"] = {
@@ -45,14 +46,14 @@ FarmHudDB = {
 	["holdKeyForMouseOn"] = "_NONE",
 	["SuperTrackedQuest"] = true,
 	["hud_size"] = 1,
-	["buttons_show"] = false,
+	["tracking^132275"] = "client",
 	["mouseoverinfo_color"] = {
 		1, -- [1]
 		0.82, -- [2]
 		0, -- [3]
 		0.7, -- [4]
 	},
-	["tracking^132275"] = "client",
+	["buttons_show"] = false,
 	["tracking^136455"] = "client",
 	["coords_show"] = false,
 	["showDummy"] = true,

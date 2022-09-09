@@ -1,8 +1,137 @@
 
 RXPCData = {
-	["hardcore"] = false,
-	["stepSkip"] = {
+	["completedWaypoints"] = {
+		[45] = {
+		},
 	},
+	["currentStep"] = 45,
+	["phase"] = 6,
+	["currentGuideGroup"] = "Horde 1-30",
 	["flightPaths"] = {
+		[80] = "Ratchet, The Barrens",
+		[77] = "Camp Taurajo, The Barrens",
+		[25] = "Crossroads, The Barrens",
+		[61] = "Splintertree Post, Ashenvale",
+		[22] = "Thunder Bluff, Mulgore",
+		[23] = "Orgrimmar, Durotar",
+		[58] = "Zoram'gar Outpost, Ashenvale",
+	},
+	["xprate"] = 1.5,
+	["JoyousJourneys"] = true,
+	["hardcore"] = false,
+	["currentGuideName"] = "27-30 Lower Barrens / Thousand Needles",
+	["stepSkip"] = {
+		[44] = true,
+		[26] = true,
+		[37] = true,
+		[40] = true,
+		[29] = true,
+		[8] = true,
+		[16] = true,
+		[9] = true,
+		[18] = true,
+		[36] = true,
+		[30] = true,
+		[11] = true,
+		[22] = true,
+		[12] = true,
+		[5] = true,
+	},
+	["SoM"] = 1,
+	["frameHeight"] = 125.0000152587891,
+}
+RXPCTrackingData = {
+	["profileKeys"] = {
+		["Vermina - Golemagg"] = "Vermina - Golemagg",
+	},
+	["profiles"] = {
+		["Vermina - Golemagg"] = {
+			["levels"] = {
+				[27] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+						["The Barrens"] = {
+							["xp"] = 738,
+							["count"] = 3,
+						},
+						["Thousand Needles"] = {
+							["xp"] = 4670,
+							["count"] = 10,
+						},
+					},
+					["timestamp"] = {
+						["dateFinished"] = {
+							["monthDay"] = 9,
+							["day"] = 0,
+							["month"] = 9,
+							["minute"] = 53,
+							["year"] = 2022,
+							["hour"] = 20,
+							["weekday"] = 6,
+						},
+						["finished"] = 123081,
+					},
+					["quests"] = {
+						["Thousand Needles"] = {
+							[4542] = 750,
+						},
+					},
+				},
+				[28] = {
+					["groupExperience"] = 0,
+					["deaths"] = 1,
+					["mobs"] = {
+						["Thousand Needles"] = {
+							["xp"] = 30131,
+							["count"] = 68,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 9,
+							["day"] = 0,
+							["month"] = 9,
+							["minute"] = 53,
+							["year"] = 2022,
+							["hour"] = 20,
+							["weekday"] = 6,
+						},
+						["started"] = 123082,
+					},
+					["quests"] = {
+						["Thousand Needles"] = {
+							[1149] = 1575,
+						},
+					},
+				},
+			},
+		},
+	},
+}
+RXPCComms = {
+	["profileKeys"] = {
+		["Vermina - Golemagg"] = "Vermina - Golemagg",
+	},
+	["profiles"] = {
+		["Vermina - Golemagg"] = {
+			["announcements"] = {
+				["27-30 Lower Barrens / Thousand Needles"] = {
+					["collect"] = {
+					},
+					["complete"] = {
+					},
+				},
+			},
+		},
+	},
+}
+RXPCSettings = {
+	["profileKeys"] = {
+		["Vermina - Golemagg"] = "Vermina - Golemagg",
+	},
+	["profiles"] = {
+		["Vermina - Golemagg"] = {
+		},
 	},
 }

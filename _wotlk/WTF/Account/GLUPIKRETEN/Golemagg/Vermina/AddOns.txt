@@ -11,8 +11,8 @@ Grid2Options: disabled
 Grid2RaidDebuffs: disabled
 Grid2RaidDebuffsOptions: disabled
 Grid2LDB: disabled
-Blizzard_CompactRaidFrames: disabled
-Blizzard_CUFProfiles: disabled
+Blizzard_CompactRaidFrames: enabled
+Blizzard_CUFProfiles: enabled
 Bagnon: disabled
 Bagnon_Config: disabled
 Bagnon_GuildBank: disabled

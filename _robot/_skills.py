@@ -79,6 +79,18 @@ skills["priest"] = [
 ]
 
 skills["paladin"] = [
+    {"name": "blessing of might", "key": "f1"},
+    {"name": "exorcism", "key": "f10"},
+    {"name": "judgement of light", "key": "f11"},
+    {"name": "judgement of wisdom", "key": "9", "modifier": "alt"},
+    {"name": "lay on hands", "key": "k"},
+    {"name": "purify", "key": "t"},
+    {"name": "divine protection", "key": "r", "modifier": "alt"},
+    {"name": "divine storm", "key": "4"},
+    {"name": "crusader strike", "key": "5"},
+    {"name": "consecration", "key": "3"},
+    {"name": "seal of command", "key": "d", "modifier": "alt"},
+    {"name": "seal of vengeance", "key": "f", "modifier": "alt"},
 ]
 
 skills["shaman"] = [

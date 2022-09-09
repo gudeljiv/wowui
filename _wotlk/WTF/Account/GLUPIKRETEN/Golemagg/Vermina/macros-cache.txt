@@ -2,17 +2,6 @@ VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][] Purify
 END
-VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover, harm, nodead][] Mana Tap
-END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/startattack
-/cast Judgement
-/cast Seal of Command
-/cast Seal of Righteousness
-END
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][] Holy Light
@@ -20,8 +9,7 @@ END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /startattack
-/cast Seal of the Crusader
-/cast Seal of Justice
+/cast Judgement of Wisdom
 END
 VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -37,15 +25,23 @@ VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@mouseover, help, nodead][] Blessing of Protection
+/cast [@mouseover, help, nodead][] Hand of Protection
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, harm, nodead][] Hammer of Justice
 END
-VER 3 000000000100000B "VuhDoDCShieldData" "Ability_Repair"
-P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1PM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/startattack
+/cast Hand of Reckoning
 END
-VER 3 000000000100000C "VuhDoDCShieldNames" "Ability_Repair"
-N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Ver[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][] Hand of Salvation
+END
+VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/startattack
+/cast Judgement of Light
 END

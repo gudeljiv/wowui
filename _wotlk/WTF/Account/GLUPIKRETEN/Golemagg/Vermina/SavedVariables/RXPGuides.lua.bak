@@ -1,0 +1,87 @@
+
+RXPCData = {
+	["completedWaypoints"] = {
+		[28] = {
+		},
+	},
+	["currentStep"] = 28,
+	["phase"] = 6,
+	["currentGuideGroup"] = "Horde 1-30",
+	["flightPaths"] = {
+		[80] = "Ratchet, The Barrens",
+		[58] = "Zoram'gar Outpost, Ashenvale",
+		[25] = "Crossroads, The Barrens",
+		[61] = "Splintertree Post, Ashenvale",
+		[22] = "Thunder Bluff, Mulgore",
+		[23] = "Orgrimmar, Durotar",
+		[77] = "Camp Taurajo, The Barrens",
+	},
+	["xprate"] = 1.5,
+	["JoyousJourneys"] = true,
+	["frameHeight"] = 125.0000152587891,
+	["currentGuideName"] = "27-30 Lower Barrens / Thousand Needles",
+	["stepSkip"] = {
+		[26] = true,
+		[8] = true,
+		[16] = true,
+		[9] = true,
+		[5] = true,
+		[11] = true,
+		[22] = true,
+		[12] = true,
+		[18] = true,
+	},
+	["SoM"] = 1,
+	["hardcore"] = false,
+}
+RXPCTrackingData = {
+	["profileKeys"] = {
+		["Vermina - Golemagg"] = "Vermina - Golemagg",
+	},
+	["profiles"] = {
+		["Vermina - Golemagg"] = {
+			["levels"] = {
+				[27] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+						["The Barrens"] = {
+							["xp"] = 738,
+							["count"] = 3,
+						},
+					},
+					["timestamp"] = {
+					},
+					["quests"] = {
+					},
+				},
+			},
+		},
+	},
+}
+RXPCComms = {
+	["profileKeys"] = {
+		["Vermina - Golemagg"] = "Vermina - Golemagg",
+	},
+	["profiles"] = {
+		["Vermina - Golemagg"] = {
+			["announcements"] = {
+				["27-30 Lower Barrens / Thousand Needles"] = {
+					["collect"] = {
+					},
+					["complete"] = {
+					},
+				},
+			},
+		},
+	},
+}
+RXPCSettings = {
+	["profileKeys"] = {
+		["Vermina - Golemagg"] = "Vermina - Golemagg",
+	},
+	["profiles"] = {
+		["Vermina - Golemagg"] = {
+		},
+	},
+}

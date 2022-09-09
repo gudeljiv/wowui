@@ -28,7 +28,7 @@ local function TrackingIcon()
 
 	for i = 1, GetNumTrackingTypes() do
 		local n, t, a = GetTrackingInfo(i)
-		if a and (t == 136025 or t == 133939 or t == 135942 or t == 136142 or t == 132328 or t == 132320 or t == 136217 or t == 135861 or t == 134153 or t == 132275) then
+		if a and (t == 136025 or t == 133939 or t == 135942 or t == 136142 or t == 132328 or t == 132320 or t == 136217 or t == 135861 or t == 134153 or t == 132275 or t == 135974) then
 			texture = t
 		end
 	end
@@ -75,6 +75,13 @@ local function TrackingIcon()
 			titm.text:SetText('UNDEAD')
 			TrackingIconFrame:Show()
 			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\spell_shadow_darksummoning')
+		end
+
+		--Sense Undead
+		if (texture == 135974) then
+			titm.text:SetText('SENSE UNDEAD')
+			TrackingIconFrame:Show()
+			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\spell_holy_senseundead')
 		end
 
 		-- Hidden
@@ -132,7 +139,9 @@ local function InitializeTracking()
 			end
 		end
 
-		if (spellName == 'Find Minerals' or spellName == 'Find Herbs' or spellName == 'Track Beasts' or spellName == 'Track Humanoids' or spellName == 'Track Undead' or spellName == 'Track Hidden' or spellName == 'Track Demons' or spellName == 'Track Elementals' or spellName == 'Track Dragonkin' or spellName == 'Track Giants') then
+		if
+			(spellName == 'Find Minerals' or spellName == 'Find Herbs' or spellName == 'Track Beasts' or spellName == 'Track Humanoids' or spellName == 'Track Undead' or spellName == 'Track Hidden' or spellName == 'Track Demons' or spellName == 'Track Elementals' or spellName == 'Track Dragonkin' or spellName == 'Track Giants' or spellName == 'Sense Undead')
+		 then
 			TrackingIconFrame:RegisterUnitEvent('UNIT_AURA', 'player')
 			TrackingIconFrame:SetScript('OnEvent', TrackingIcon)
 			TrackingIcon()
