@@ -57,6 +57,7 @@ skills["druid"] = [
     {"name": "tigers fury", "key": "6"},
     {"name": "barkskin", "key": "g"},
     {"name": "mangle", "key": "9", "modifier": "alt"},
+    {"name": "survival instincts", "key": "d", "modifier": "alt"},
 ]
 
 skills["death knight"] = [

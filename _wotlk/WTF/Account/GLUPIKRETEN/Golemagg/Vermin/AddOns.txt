@@ -140,3 +140,11 @@ WeaponSwingTimer: disabled
 EasyFrames: disabled
 DUnitFrames: disabled
 LunaUnitFrames: disabled
+BuffOverlay: enabled
+ClassicAggroHighlight: enabled
+Details_EncounterDetails: enabled
+Details_RaidCheck: enabled
+Details_DataStorage: enabled
+Details_Streamer: enabled
+Details_Vanguard: enabled
+HealBarsClassic: enabled

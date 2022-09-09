@@ -108,6 +108,9 @@ f:SetScript(
 						-- Minimap.SetPoint = function() end
 						MiniMapWorldMapButton:Hide()
 
+						MiniMapLFGFrame:ClearAllPoints()
+						MiniMapLFGFrame:SetPoint('BOTTOMRIGHT', Minimap, 'BOTTOMRIGHT', 0, 0)
+
 						self:Cancel()
 					end
 				end

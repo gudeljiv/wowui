@@ -25,7 +25,7 @@ RXPCTrackingData = {
 			["levels"] = {
 				[5] = {
 					["groupExperience"] = 0,
-					["deaths"] = 0,
+					["deaths"] = 1,
 					["mobs"] = {
 					},
 					["timestamp"] = {

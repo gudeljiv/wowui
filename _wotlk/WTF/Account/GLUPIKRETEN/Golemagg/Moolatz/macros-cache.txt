@@ -4,6 +4,7 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
+/startattack
 /cast [stealth] Ravage
 /cast [form:1] Maul
 /cast [form:3] Claw
@@ -53,6 +54,12 @@ VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 /cast [form:1] Swipe (Bear)
 /cast [form:1] Enrage
 /cast [form:3] Shred
+END
+VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [form:1] Mangle (Bear)
+/cast [form:3] Mangle (Cat)
+/cast Innervate
 END
 VER 3 0000000001000007 "VuhDoDCShieldData" "Ability_Repair"
 P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1DM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]

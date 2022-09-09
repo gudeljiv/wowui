@@ -20,7 +20,7 @@ RXPGuides: enabled
 Leatrix_Plus: enabled
 TradeSkillMaster: enabled
 NeatPlates: disabled
-whoaThickFrames_BCC: disabled
+whoaThickFrames_BCC: enabled
 whoaThickFrames_Classic: disabled
 RangeDisplay: enabled
 RangeDisplay_Options: enabled

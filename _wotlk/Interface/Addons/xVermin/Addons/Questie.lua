@@ -1,9 +1,14 @@
 local _, xVermin = ...
 local ib, numQuests
 
+local count = 0
+local width = 235
 C_Timer.NewTicker(
 	1,
 	function(self)
+		if (count > 10) then
+			self:Cancel()
+		end
 		if Questie_BaseFrame then
 			if not Questie_BaseFrame.SetBackdrop then
 				Mixin(Questie_BaseFrame, BackdropTemplateMixin)
@@ -12,6 +17,10 @@ C_Timer.NewTicker(
 			Questie_BaseFrame:HookScript(
 				'OnUpdate',
 				function(self)
+					if InCombatLockdown() then
+						return
+					end
+
 					_, numQuests = GetNumQuestLogEntries()
 					if numQuests > 0 then
 						if not self:IsVisible() then
@@ -42,18 +51,9 @@ C_Timer.NewTicker(
 					self.SetPoint = function()
 					end
 
-					-- hooksecurefunc(
-					-- 	self,
-					-- 	'SetPoint',
-					-- 	function(self)
-					-- 		self:ClearAllPoints()
-					-- 		self:SetPoint('TOPRIGHT', 'CustomContainer_2', 'BOTTOMRIGHT', 0, -10)
-					-- 		self.ClearAllPoints = function()
-					-- 		end
-					-- 		self.SetPoint = function()
-					-- 		end
-					-- 	end
-					-- )
+					if (self:GetWidth() < width) then
+						self:SetWidth(width)
+					end
 
 					TomTomCrazyArrow:SetPoint('TOPRIGHT', self, 'TOPLEFT', -20, -10)
 

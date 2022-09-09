@@ -15,6 +15,7 @@ local function FixBindings()
 	SetBinding('SHIFT-F', 'FOCUSTARGET', 1)
 
 	SetBinding('CTRL-R', 'TOGGLEGROUPFINDER', 1)
+	SetBinding('CTRL-R', 'TOGGLELFGPARENT', 1)
 	SetBinding('CTRL-Y', 'TOGGLEACHIEVEMENT', 1)
 	SetBinding('CTRL-SHIFT-M', 'TOGGLEMOUNTJOURNAL', 1)
 	SetBinding('CTRL-SHIFT-C', 'TOGGLECOMPANIONJOURNAL', 1)

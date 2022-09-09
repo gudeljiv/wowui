@@ -29,7 +29,7 @@ whoaThickFrames_Classic: disabled
 TradeSkillMaster: enabled
 NeatPlates: disabled
 Plater: enabled
-whoaThickFrames_BCC: disabled
+whoaThickFrames_BCC: enabled
 !Colorz: enabled
 !Beautycase: enabled
 Align: enabled
