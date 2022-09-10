@@ -4,9 +4,9 @@
 ## Version: 54000
 ## SavedVariablesPerCharacter: xKillCount
 
-Config.lua
-Core.lua
-Debug.lua
+_Config.lua
+_Core.lua
+_Debug.lua
 
 Frames/CharacterFrame.lua
 Frames/CustomContainers.lua
@@ -21,10 +21,12 @@ Frames/KillCount.lua
 Frames/LootFrame.lua
 Frames/MailBoxFrame.lua
 Frames/MailBoxFrame.lua
+Frames/MerchantFrame.lua
+Frames/PlayerPetTargetHealthPercentage.lua
 Frames/RaidFrameReSizer.lua
 Frames/SpellBookFrame.lua
 Frames/TalentFrame.lua
-Frames/MerchantFrame.lua
+Frames/Unit.lua
 
 Experience/Player.lua
 Experience/Pet.lua
@@ -48,30 +50,8 @@ Addons/RXPGuide.lua
 Addons/TinyThreat.lua
 Addons/TrinketMenu.lua
 
-AutoCarrot.lua
-AutoBuyAmmo.lua
-AutoDismount.lua
-AutoRepair.lua
-AutoRollGreed.lua
-BetterLootMessage.lua
-BestFood.lua
-BuffSource.lua
-Bindings.lua
-Chat.lua
-DamageFont.lua
-ErrorsFilter.lua
-FastLoot.lua
+
 GarbageCollector.lua
-ItemID.lua
-LootHelper.lua
-PlayerPetTargetHealthPercentage.lua
-PlayerTargetSetMark.lua
-SkinBuffs.lua
-SortBags.lua
-TooltipSpellID.lua
-TrackingIcon.lua
-UIScale.lua
-Unit.lua
 RotBot.lua
 
 Rotation/_Core.lua
@@ -79,5 +59,28 @@ Rotation/IsAOE.lua
 Rotation/Warrior.lua
 
 SpellCount/SpellCount.lua
+
+Helpers/AutoCarrot.lua
+Helpers/AutoBuyAmmo.lua
+Helpers/AutoDismount.lua
+Helpers/AutoRepair.lua
+Helpers/AutoRollGreed.lua
+Helpers/BestFood.lua
+Helpers/BetterLootMessage.lua
+Helpers/Bindings.lua
+Helpers/BuffSource.lua
+Helpers/Chat.lua
+Helpers/DamageFont.lua
+Helpers/ErrorsFilter.lua
+Helpers/FastLoot.lua
+Helpers/Interrupt.lua
+Helpers/ItemID.lua
+Helpers/Loot.lua
+Helpers/PlayerTargetSetMark.lua
+Helpers/SkinBuffs.lua
+Helpers/TooltipSpellID.lua
+Helpers/TrackingIcon.lua
+Helpers/UIScale.lua
+Helpers/SortBags.lua
 
 xVermin.lua

@@ -63,16 +63,20 @@ RXPCTrackingData = {
 					},
 				},
 				[67] = {
-					["groupExperience"] = 0,
+					["groupExperience"] = 281044,
 					["deaths"] = 2,
 					["mobs"] = {
+						["Mana-Tombs"] = {
+							["xp"] = 213244,
+							["count"] = 129,
+						},
 						["Zangarmarsh"] = {
 							["xp"] = 15600,
 							["count"] = 1,
 						},
 						["Terokkar Forest"] = {
-							["xp"] = 64879,
-							["count"] = 38,
+							["xp"] = 98779,
+							["count"] = 39,
 						},
 						["Nagrand"] = {
 							["xp"] = 25348,
@@ -99,6 +103,7 @@ RXPCTrackingData = {
 							[9957] = 3900,
 							[10880] = 8100,
 							[9796] = 3825,
+							[10165] = 33900,
 						},
 					},
 				},
@@ -112,6 +117,52 @@ RXPCComms = {
 	},
 	["profiles"] = {
 		["Vermin - Golemagg"] = {
+			["players"] = {
+				["Madresoltera"] = {
+					["timePlayed"] = -1311.626000000048,
+					["class"] = "ROGUE",
+				},
+				["Wolfgarr"] = {
+					["isRxp"] = true,
+					["lastSeen"] = 590277.214,
+					["xpPercentage"] = 0,
+					["level"] = 66,
+					["timePlayed"] = 0,
+					["class"] = "WARRIOR",
+				},
+				["Danayka"] = {
+					["timePlayed"] = 0,
+					["class"] = "PRIEST",
+				},
+				["Zharl"] = {
+					["timePlayed"] = -1311.626000000048,
+					["class"] = "SHAMAN",
+				},
+				["Berinas"] = {
+					["timePlayed"] = -1311.626000000048,
+					["class"] = "PALADIN",
+				},
+				["Bolgodeath"] = {
+					["timePlayed"] = -1311.626000000048,
+					["class"] = "DEATHKNIGHT",
+				},
+				["Nechmewarri"] = {
+					["timePlayed"] = 0,
+					["class"] = "WARRIOR",
+				},
+				["Madkiller"] = {
+					["isRxp"] = true,
+					["lastSeen"] = 592861.337,
+					["xpPercentage"] = 84,
+					["level"] = 66,
+					["timePlayed"] = 0,
+					["class"] = "ROGUE",
+				},
+				["Jamesyaku"] = {
+					["timePlayed"] = 0,
+					["class"] = "MAGE",
+				},
+			},
 		},
 	},
 }
