@@ -12,21 +12,26 @@ RXPCData = {
 		[166] = "Emerald Sanctuary, Felwood",
 		[61] = "Splintertree Post, Ashenvale",
 		[18] = "Booty Bay, Stranglethorn",
+		[10] = "The Sepulcher, Silverpine Forest",
 		[20] = "Grom'gol, Stranglethorn",
 		[40] = "Gadgetzan, Tanaris",
 		[80] = "Ratchet, The Barrens",
+		[11] = "Undercity, Tirisfal",
 		[22] = "Thunder Bluff, Mulgore",
 		[23] = "Orgrimmar, Durotar",
+		[30] = "Freewind Post, Thousand Needles",
+		[383] = "Thondoril River, Western Plaguelands",
 		[48] = "Bloodvenom Post, Felwood",
 		[25] = "Crossroads, The Barrens",
 		[69] = "Moonglade",
-		[30] = "Freewind Post, Thousand Needles",
-		[53] = "Everlook, Winterspring",
+		[384] = "The Bulwark, Tirisfal",
 		[179] = "Mudsprocket, Dustwallow Marsh",
+		[53] = "Everlook, Winterspring",
 		[77] = "Camp Taurajo, The Barrens",
+		[55] = "Brackenwall Village, Dustwallow Marsh",
 		[79] = "Marshal's Refuge, Un'Goro Crater",
 		[29] = "Sun Rock Retreat, Stonetalon Mountains",
-		[55] = "Brackenwall Village, Dustwallow Marsh",
+		[68] = "Light's Hope Chapel, Eastern Plaguelands",
 	},
 	["phase"] = 6,
 	["xprate"] = 1.5,
@@ -37,7 +42,7 @@ RXPCData = {
 	["stepSkip"] = {
 	},
 	["disableItemWindow"] = true,
-	["GA"] = false,
+	["GA"] = true,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -552,11 +557,11 @@ RXPCTrackingData = {
 					},
 					["quests"] = {
 						["Un'Goro Crater"] = {
-							[9052] = 11025,
-							[4301] = 12225,
 							[4289] = 12225,
-							[9063] = 1087,
 							[13850] = 11400,
+							[9052] = 11025,
+							[9063] = 1087,
+							[4301] = 12225,
 						},
 						["Thunder Bluff"] = {
 							[3782] = 1012,
@@ -626,17 +631,17 @@ RXPCTrackingData = {
 							["xp"] = 10200,
 							["count"] = 1,
 						},
-						["Blackrock Depths"] = {
-							["xp"] = 4424,
-							["count"] = 11,
+						["Tanaris"] = {
+							["xp"] = 11850,
+							["count"] = 1,
 						},
 						["Blackrock Mountain"] = {
 							["xp"] = 2128,
 							["count"] = 6,
 						},
-						["Tanaris"] = {
-							["xp"] = 11850,
-							["count"] = 1,
+						["Blackrock Depths"] = {
+							["xp"] = 4424,
+							["count"] = 11,
 						},
 					},
 					["timestamp"] = {
@@ -807,8 +812,8 @@ RXPCTrackingData = {
 							[5083] = 6300,
 							[977] = 10125,
 							[3783] = 9450,
-							[5054] = 12675,
 							[969] = 14325,
+							[5054] = 12675,
 						},
 						["Felwood"] = {
 							[8461] = 12225,
@@ -816,8 +821,8 @@ RXPCTrackingData = {
 					},
 				},
 				[56] = {
-					["groupExperience"] = 0,
-					["deaths"] = 0,
+					["groupExperience"] = 35067,
+					["deaths"] = 5,
 					["mobs"] = {
 						["Felwood"] = {
 							["xp"] = 84470,
@@ -826,6 +831,14 @@ RXPCTrackingData = {
 						["Winterspring"] = {
 							["xp"] = 13500,
 							["count"] = 1,
+						},
+						["Alterac Valley"] = {
+							["xp"] = 35067,
+							["count"] = 31,
+						},
+						["Alterac Mountains"] = {
+							["xp"] = 25350,
+							["count"] = 2,
 						},
 					},
 					["timestamp"] = {
@@ -837,6 +850,16 @@ RXPCTrackingData = {
 							["year"] = 2022,
 							["hour"] = 15,
 							["weekday"] = 7,
+						},
+						["finished"] = 319804,
+						["dateFinished"] = {
+							["monthDay"] = 11,
+							["day"] = 0,
+							["month"] = 9,
+							["weekday"] = 1,
+							["year"] = 2022,
+							["hour"] = 19,
+							["minute"] = 52,
 						},
 						["started"] = 315061,
 					},
@@ -853,6 +876,42 @@ RXPCTrackingData = {
 						["Winterspring"] = {
 							[5082] = 12675,
 							[8464] = 13500,
+						},
+						["Alterac Mountains"] = {
+							[7101] = 12675,
+						},
+					},
+				},
+				[57] = {
+					["groupExperience"] = 31439,
+					["deaths"] = 4,
+					["mobs"] = {
+						["Alterac Valley"] = {
+							["xp"] = 31439,
+							["count"] = 32,
+						},
+						["Alterac Mountains"] = {
+							["xp"] = 20887,
+							["count"] = 2,
+						},
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 11,
+							["day"] = 0,
+							["month"] = 9,
+							["weekday"] = 1,
+							["year"] = 2022,
+							["hour"] = 19,
+							["minute"] = 52,
+						},
+						["started"] = 319805,
+					},
+					["quests"] = {
+						["Alterac Mountains"] = {
+							[7142] = 19575,
+							[8272] = 1312,
+							[7124] = 12675,
 						},
 					},
 				},
@@ -907,6 +966,10 @@ RXPCComms = {
 					["timePlayed"] = -1823.430000000168,
 					["class"] = "PALADIN",
 				},
+				["Henryy"] = {
+					["timePlayed"] = -984.2099999999627,
+					["class"] = "WARRIOR",
+				},
 				["Complaining"] = {
 					["level"] = 70,
 					["lastSeen"] = 2019328.136,
@@ -931,6 +994,18 @@ RXPCComms = {
 					["timePlayed"] = -1823.430000000168,
 					["class"] = "WARLOCK",
 				},
+				["Hoegii"] = {
+					["timePlayed"] = -680.601000000257,
+					["class"] = "SHAMAN",
+				},
+				["Momugnunk"] = {
+					["timePlayed"] = -680.601000000257,
+					["class"] = "DEATHKNIGHT",
+				},
+				["Vocki"] = {
+					["timePlayed"] = -984.2099999999627,
+					["class"] = "HUNTER",
+				},
 				["Judgewink"] = {
 					["class"] = "PALADIN",
 					["lastSeen"] = 26651.365,
@@ -943,9 +1018,17 @@ RXPCComms = {
 					["timePlayed"] = -2405.13199999975,
 					["class"] = "PALADIN",
 				},
+				["Sidebob"] = {
+					["timePlayed"] = -984.2099999999627,
+					["class"] = "WARLOCK",
+				},
 				["Healboyy"] = {
 					["timePlayed"] = -3002.618000000017,
 					["class"] = "DRUID",
+				},
+				["Sentsui"] = {
+					["timePlayed"] = -984.2099999999627,
+					["class"] = "DEATHKNIGHT",
 				},
 				["Ranna"] = {
 					["timePlayed"] = -1823.430000000168,
@@ -981,6 +1064,14 @@ RXPCComms = {
 				},
 				["Prezakias"] = {
 					["timePlayed"] = -526.5100000000093,
+					["class"] = "PRIEST",
+				},
+				["Ruurikh"] = {
+					["timePlayed"] = -680.601000000257,
+					["class"] = "WARLOCK",
+				},
+				["Firstäid"] = {
+					["timePlayed"] = -680.601000000257,
 					["class"] = "PRIEST",
 				},
 				["Artemiszia"] = {

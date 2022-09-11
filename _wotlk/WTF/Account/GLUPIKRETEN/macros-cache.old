@@ -20,13 +20,17 @@ VER 3 0000000000000013 " " "132130"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:8766
+/castsequence [combat] reset=combat item:13444
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:29449
+/use [nocombat]item:8932
 /castsequence [combat] reset=combat item:13446
+END
+VER 3 0000000000000015 "HealthPotion" "Inv_misc_questionmark"
+#showtooltip
+/use item:13446
 END
 VER 3 0000000000000014 "Healthstone" "Inv_misc_questionmark"
 #showtooltip
@@ -43,5 +47,8 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /use item:29451
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run PVPParentFrame:SetScale(1.2)
+/run print("+++++++++++")
+/run print(C_CurrencyInfo.GetCurrencyInfo(392))
+/run print("---------")
+/run print(GetCurrencyInfo(1901))
 END

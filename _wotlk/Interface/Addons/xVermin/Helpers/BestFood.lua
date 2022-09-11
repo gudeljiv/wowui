@@ -19,6 +19,10 @@ local defaultHealthstoneMacro = [[#showtooltip
 /use <healthstone>
 ]]
 
+local defaultHealthPotionMacro = [[#showtooltip
+/use <hPotion>
+]]
+
 local function CreateOrUpdateMacro(macroName, text)
 	local macroID = GetMacroIndexByName(macroName)
 	if macroID == 0 then
@@ -142,10 +146,18 @@ function NeedsFoodBadly:UpdateMacros()
 			['<healthstone>'] = 'item:' .. tostring(best.healthstone[1] and best.healthstone[1].id or 0)
 		}
 	)
+	local healthPotionMacro =
+		defaultHealthPotionMacro:gsub(
+		'<%a+>',
+		{
+			['<hPotion>'] = 'item:' .. tostring(best.hPotion[1] and best.hPotion[1].id or 0)
+		}
+	)
 
 	CreateOrUpdateMacro('Food', foodMacro)
 	CreateOrUpdateMacro('Drink', drinkMacro)
 	CreateOrUpdateMacro('Healthstone', healthstoneMacro)
+	CreateOrUpdateMacro('HealthPotion', healthPotionMacro)
 
 	if (UnitExists('pet') and xVermin.Class == 'HUNTER') then
 		-- local petType = UnitCreatureFamily("pet")
