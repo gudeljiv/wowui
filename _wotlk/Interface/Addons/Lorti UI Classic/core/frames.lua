@@ -108,7 +108,7 @@ function ColorRaid()
 			if frame then
 				groupcolored = true
 				for _, region in pairs({frame:GetRegions()}) do
-					if region:GetName():find('Border') then
+					if region and region:GetName() and region:GetName():find('Border') then
 						region:SetVertexColor(.05, .05, .05)
 					end
 				end

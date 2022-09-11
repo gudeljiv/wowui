@@ -64,14 +64,11 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["moveFrames"] = false,
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -505,14 +502,17 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
-			["fixedStrata"] = true,
 			["gap"] = 0,
-			["moveFrames"] = false,
+			["fontName"] = "Friz Quadrata TT",
+			["forceColor"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
 			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["forceColor"] = false,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",

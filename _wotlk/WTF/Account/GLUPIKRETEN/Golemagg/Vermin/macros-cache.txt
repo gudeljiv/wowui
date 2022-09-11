@@ -75,8 +75,7 @@ END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast [stance:1/3] Bloodthirst
-/cast [stance:2] Devastate
+/cast Mortal Strike
 /use 13
 /use 14
 /cast Bloodrage
@@ -100,8 +99,7 @@ END
 VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast [stance:1/3] Bloodthirst
-/cast [stance:2] Revenge
+/cast Revenge
 /use 13
 /use 14
 /cast Bloodrage

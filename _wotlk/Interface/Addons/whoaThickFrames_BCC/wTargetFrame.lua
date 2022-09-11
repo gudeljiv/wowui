@@ -195,8 +195,8 @@ function whoaPartyFrames()
 		end
 	end
 end
-hooksecurefunc('UnitFrame_Update', whoaPartyFrames)
-hooksecurefunc('PartyMemberFrame_ToPlayerArt', whoaPartyFrames)
+-- hooksecurefunc('UnitFrame_Update', whoaPartyFrames)
+-- hooksecurefunc('PartyMemberFrame_ToPlayerArt', whoaPartyFrames)
 
 -- function whoaPartyText()
 -- if (cfg.usePartyFrames) then

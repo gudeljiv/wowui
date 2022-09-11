@@ -96,26 +96,52 @@ f:SetScript(
 				1,
 				function(self)
 					if Minimap then
-						if not Minimap.SetBackdrop then
-							Mixin(Minimap, BackdropTemplateMixin)
-						end
+						Minimap:HookScript(
+							'OnUpdate',
+							function(self)
+								if not Minimap.SetBackdrop then
+									Mixin(Minimap, BackdropTemplateMixin)
+								end
+								if not GameTimeFrame.SetBackdrop then
+									Mixin(GameTimeFrame, BackdropTemplateMixin)
+								end
 
-						-------------------------------------------
-						-- minimap
-						-------------------------------------------
-						Minimap:ClearAllPoints()
-						Minimap:SetPoint('TOPRIGHT', UIParent, 'TOPRIGHT', -40, -40)
-						-- Minimap.SetPoint = function() end
-						MiniMapWorldMapButton:Hide()
+								-------------------------------------------
+								-- minimap
+								-------------------------------------------
+								Minimap:ClearAllPoints()
+								Minimap:SetPoint('TOPRIGHT', UIParent, 'TOPRIGHT', -40, -40)
+								-- Minimap.SetPoint = function() end
+								MiniMapWorldMapButton:Hide()
 
-						MiniMapLFGFrame:ClearAllPoints()
-						MiniMapLFGFrame:SetPoint('BOTTOMRIGHT', Minimap, 'BOTTOMRIGHT', 0, 0)
+								MiniMapLFGFrame:ClearAllPoints()
+								MiniMapLFGFrame:SetPoint('BOTTOMRIGHT', Minimap, 'BOTTOMRIGHT', 0, 0)
+								MiniMapBattlefieldFrame:ClearAllPoints()
+								MiniMapBattlefieldFrame:SetPoint('BOTTOMRIGHT', Minimap, 'BOTTOMRIGHT', 0, 0)
+
+								GameTimeFrame:CreateBeautyBorder(8)
+								-- GameTimeFrame:SetBeautyBorderColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+								GameTimeFrame:SetBackdrop(
+									{
+										bgFile = 'Interface\\Buttons\\WHITE8x8',
+										edgeFile = '',
+										tile = false,
+										tileSize = 0,
+										edgeSize = 0,
+										insets = {left = 0, right = 0, top = 0, bottom = 0}
+									}
+								)
+								GameTimeFrame:SetBackdropColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 0.2)
+								GameTimeFrame:ClearAllPoints()
+								GameTimeFrame:SetPoint('TOPLEFT', Minimap, 'TOPLEFT', 5, -5)
+								GameTimeFrame:SetSize(20, 20)
+							end
+						)
 
 						self:Cancel()
 					end
 				end
 			)
-			-- Minimap.SetPoint = function() end
 
 			-------------------------------------------
 			--- pet, player and target frame positioning
@@ -294,8 +320,6 @@ f:SetScript(
 			FocusFrameTextureFrame.ManaBarText:SetScale(0.8)
 		end
 
-		MiniMapWorldMapButton:Hide()
-
 		UIWidgetBelowMinimapContainerFrame:ClearAllPoints()
 		UIWidgetBelowMinimapContainerFrame:SetPoint('TOPRIGHT', 'UIParent', 'TOPRIGHT', -35, 4)
 		UIWidgetBelowMinimapContainerFrame.ClearAllPoints = function()
@@ -312,138 +336,23 @@ f:SetScript(
 			end
 		end
 
-		-- CompactPartyFrameMember1Buff1:CreateBeautyBorder(6)
-
 		EnableAddOn('Blizzard_CompactRaidFrames')
 		EnableAddOn('Blizzard_CUFProfiles')
 
+		-- skin raid buffs
 		for i = 1, 40 do
 			for j = 1, 20 do
 				if _G['CompactPartyFrameMember' .. i .. 'Buff' .. j] then
 					_G['CompactPartyFrameMember' .. i .. 'Buff' .. j]:CreateBeautyBorder(6)
 				end
-				-- CompactPartyFrameMember1Buff1
+			end
+		end
+		for i = 1, 40 do
+			for j = 1, 20 do
+				if _G['CompactPartyFrameMember' .. i .. 'Debuff' .. j] then
+					_G['CompactPartyFrameMember' .. i .. 'Debuff' .. j]:CreateBeautyBorder(6)
+				end
 			end
 		end
 	end
 )
-
--- PlayerFrame:HookScript(
--- 	'OnUpdate',
--- 	function(self)
--- 		local inRange = 0
--- 		local out = ''
--- 		local ff = 0
--- 		local bp = 0
--- 		for i = 1, 40 do
--- 			local unit = 'nameplate' .. i
--- 			if UnitExists(unit) and CheckInteractDistance(unit, 3) then
--- 				-- 1 = Inspect, 28 yards
--- 				-- 2 = Trade, 11.11 yards
--- 				-- 3 = Duel, 9.9 yards
--- 				-- 4 = Follow, 28 yards
-
--- 				for i = 2, 40 do
--- 					local debuff = UnitDebuff(unit, i)
--- 					if debuff and debuff == 'Frost Fever' then
--- 						ff = ff + 1
--- 					end
--- 					if debuff and debuff == 'Blood Plague' then
--- 						bp = bp + 1
--- 					end
--- 				end
-
--- 				inRange = inRange + 1
--- 			end
--- 		end
-
--- 		if inRange > 1 then
--- 			if ff == bp and inRange == ff and inRange == bp then
--- 				print(ff, bp, inRange, 'dont cast')
--- 			else
--- 				print(ff, bp, inRange, 'cast')
--- 			end
--- 		end
--- 	end
--- )
-
--- local function TargetFrameTextAdjustment()
--- 	TargetFrameHealthBarText:ClearAllPoints()
--- 	TargetFrameHealthBarText:SetPoint("CENTER", TargetFrame, "CENTER", -50, 7)
--- 	TargetFrameManaBarText:SetScale(0.8)
--- end
--- hooksecurefunc("TargetFrame_CheckClassification", TargetFrameTextAdjustment)
-
---------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------
-
--- local function ListBuffs()
--- 	for i=1,40 do
--- 		local name, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellId=UnitBuff("target",i)
--- 		if name then
--- 			print(i.."="..name..", "..icon..", "..format("%.2f",-1*(GetTime()-expirationTime)/60).." minutes left.")
--- 		end
--- 	end
--- end
-
--- local tf = CreateFrame("Frame")
--- tf:RegisterEvent("PLAYER_TARGET_CHANGED")
--- tf:SetScript("OnEvent", ListBuffs)
--- TargetFrame:HookScript("OnUpdate", ListBuffs)
--- hooksecurefunc("TargetFrame_UpdateAuras", ListBuffs)
-
--- local function ListBuffs()
--- 	for i=1,40 do
--- 		local name, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellId = UnitAura("target", i)
--- 		if name then
--- 			print(i, "name:", name, "icon:", icon, "count:", count, "duration:", duration, "exp:", expirationTime)
--- 		end
--- 	end
--- end
-
--- local tf = CreateFrame("Frame")
--- tf:RegisterEvent("PLAYER_TARGET_CHANGED")
--- tf:SetScript("OnEvent", ListBuffs)
--- TargetFrame:HookScript("OnUpdate", ListBuffs)
--- hooksecurefunc("TargetFrame_UpdateAuras", ListBuffs)
-
--- CheckInteractDistance
--- 1 = Inspect, 28 yards
--- 2 = Trade, 11.11 yards
--- 3 = Duel, 9.9 yards
--- 4 = Follow, 28 yards
-
--- -- WARRIOR INTERRUPT
--- if (select(2, UnitClass('player')) == 'WARRIOR') then
--- 	local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance
--- 	local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
--- 	local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
--- 	if not battle then
--- 		if IsSpellInRange('Pummel', 'target') == 1 then
--- 			RotationFrame2:SetBackdropColor(0, 1, 0, 1)
--- 		end
--- 	end
--- end
-
--- -- PALADIN INTERRUPT
--- if (select(2, UnitClass('player')) == 'PALADIN') then
--- 	if GetSpellCooldown('Arcane Torrent') == 0 and CheckInteractDistance('target', 3) then
--- 		RotationFrame2:SetBackdropColor(0, 1, 0, 1)
--- 	end
--- end
-
--- -- DRUID INTERRUPT
--- if (select(2, UnitClass('player')) == 'DRUID') then
--- 	local _, bear = GetShapeshiftFormInfo(1) -- ako je bear form
--- 	local _, aquatic = GetShapeshiftFormInfo(2) -- ako je aquatic form
--- 	local _, cat = GetShapeshiftFormInfo(3) -- ako je cat form
--- 	local _, travel = GetShapeshiftFormInfo(4) -- ako je travel form
--- 	local _, moonkin = GetShapeshiftFormInfo(5) -- ako je moonkin form
--- 	local _, tree = GetShapeshiftFormInfo(6) -- ako je tree form
--- 	if bear and GetSpellCooldown('Bash') == 0 and CheckInteractDistance('target', 3) then
--- 		RotationFrame2:SetBackdropColor(0, 1, 0, 1)
--- 	end
--- end

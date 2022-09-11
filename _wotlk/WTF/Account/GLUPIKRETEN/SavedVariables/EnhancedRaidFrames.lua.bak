@@ -60,9 +60,9 @@ EnhancedRaidFramesDB = {
 				["auras"] = "Regrowth",
 			},
 			["rangeAlpha"] = 0.5,
+			["showDebuffs"] = false,
 			["showRaidIcons"] = false,
 			["showBuffs"] = false,
-			["showDebuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["backgroundAlpha"] = 0.7000000000000001,
 		},
@@ -70,8 +70,8 @@ EnhancedRaidFramesDB = {
 			{
 				["indicatorSize"] = 22,
 				["showTooltip"] = false,
-				["textSize"] = 12,
 				["colorTextByDebuff"] = true,
+				["textSize"] = 12,
 				["mineOnly"] = true,
 			}, -- [1]
 			nil, -- [2]
@@ -90,16 +90,16 @@ EnhancedRaidFramesDB = {
 			[7] = {
 				["indicatorSize"] = 22,
 				["showTooltip"] = false,
-				["textSize"] = 12,
 				["colorTextByDebuff"] = true,
+				["textSize"] = 12,
 				["mineOnly"] = true,
 			},
 			["rangeAlpha"] = 0.6000000000000001,
-			["showBuffs"] = false,
 			["showDebuffs"] = false,
+			["showBuffs"] = false,
+			["showRaidIcons"] = false,
 			["showDispellableDebuffs"] = false,
 			["backgroundAlpha"] = 0.7000000000000001,
-			["showRaidIcons"] = false,
 		},
 	},
 }

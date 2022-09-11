@@ -4,9 +4,12 @@ skills = dict()
 
 skills["warrior"] = [
     {"name": "battle shout", "key": "f4"},
+    {"name": "commanding shout", "key": "f6"},
     {"name": "demoralizing shout", "key": "f5"},
     {"name": "sunder armor", "key": "k"},
     {"name": "bloodthirst", "key": "f11"},
+    {"name": "mortal strike", "key": "f11"},
+    {"name": "berserker rage", "key": "f10"},
     {"name": "rend", "key": "5"},
     {"name": "overpower", "key": "4"},
     {"name": "heroic strike", "key": "2"},
@@ -24,6 +27,9 @@ skills["warrior"] = [
     {"name": "vigilance", "key": "d", "modifier": "shift"},
     {"name": "last stand", "key": "t", "modifier": "shift"},
     {"name": "concussion blow", "key": "g"},
+    {"name": "shield wall", "key": "t"},
+    {"name": "healthstone", "key": "x"},
+    {"name": "hamstring", "key": "1"},
 ]
 
 skills["warlock"] = [
