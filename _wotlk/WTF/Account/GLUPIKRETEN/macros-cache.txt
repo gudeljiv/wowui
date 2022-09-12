@@ -1,6 +1,3 @@
-VER 3 0000000000000013 " " "132130"
-/click RotBotF3
-END
 VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /castsequence Find Herbs,Find Minerals
@@ -18,19 +15,22 @@ VER 3 000000000000000E " " "136106"
 /run InspectUnit("target")
 /run SortBags()
 END
+VER 3 0000000000000013 " " "132130"
+/click RotBotF3
+END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:8766
+/castsequence [combat] reset=combat item:13444
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:8932
+/castsequence [combat] reset=combat item:13446
 END
 VER 3 0000000000000015 "HealthPotion" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:13446
 END
 VER 3 0000000000000014 "Healthstone" "Inv_misc_questionmark"
 #showtooltip
