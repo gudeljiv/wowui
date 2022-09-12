@@ -90,7 +90,7 @@ f:SetScript(
 			CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)
 
 			-------------------------------------------
-			-- minimap
+			-- Minimap
 			-------------------------------------------
 			C_Timer.NewTicker(
 				1,
@@ -106,12 +106,9 @@ f:SetScript(
 									Mixin(GameTimeFrame, BackdropTemplateMixin)
 								end
 
-								-------------------------------------------
-								-- minimap
-								-------------------------------------------
 								Minimap:ClearAllPoints()
 								Minimap:SetPoint('TOPRIGHT', UIParent, 'TOPRIGHT', -40, -40)
-								-- Minimap.SetPoint = function() end
+
 								MiniMapWorldMapButton:Hide()
 
 								MiniMapLFGFrame:ClearAllPoints()
@@ -120,7 +117,6 @@ f:SetScript(
 								MiniMapBattlefieldFrame:SetPoint('BOTTOMRIGHT', Minimap, 'BOTTOMRIGHT', 0, 0)
 
 								GameTimeFrame:CreateBeautyBorder(8)
-								-- GameTimeFrame:SetBeautyBorderColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 								GameTimeFrame:SetBackdrop(
 									{
 										bgFile = 'Interface\\Buttons\\WHITE8x8',
@@ -339,7 +335,9 @@ f:SetScript(
 		EnableAddOn('Blizzard_CompactRaidFrames')
 		EnableAddOn('Blizzard_CUFProfiles')
 
-		-- skin raid buffs
+		-------------------------------------------
+		-- Add Beauty Border to raid buffs icons
+		-------------------------------------------
 		for i = 1, 40 do
 			for j = 1, 20 do
 				if _G['CompactPartyFrameMember' .. i .. 'Buff' .. j] then
