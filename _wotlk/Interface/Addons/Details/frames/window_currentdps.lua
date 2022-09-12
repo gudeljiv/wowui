@@ -20,8 +20,12 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 		f:SetPoint ("center", UIParent, "center")
 		f:SetScript ("OnMouseDown", nil)
 		f:SetScript ("OnMouseUp", nil)
+
+		--scale bar
+		local scaleBar = DF:CreateScaleBar(f, _detalhes.realtime_dps_meter.options_frame)
+
 		local LibWindow = LibStub ("LibWindow-1.1")
-		LibWindow.RegisterConfig (f, _detalhes.current_dps_meter.options_frame)
+		LibWindow.RegisterConfig (f, _detalhes.realtime_dps_meter.options_frame)
 		LibWindow.MakeDraggable (f)
 		LibWindow.RestorePosition (f)
 		
@@ -31,11 +35,25 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 		local options_slider_template = DF:GetTemplate ("slider", "OPTIONS_SLIDER_TEMPLATE")
 		local options_button_template = DF:GetTemplate ("button", "OPTIONS_BUTTON_TEMPLATE")
 		
+		--status bar
+		local statusBar = DF:CreateStatusBar(f)
+		statusBar.text = statusBar:CreateFontString(nil, "overlay", "GameFontNormal")
+		statusBar.text:SetPoint("left", statusBar, "left", 5, 0)
+		statusBar.text:SetText("By Terciob | Part of Details! Damage Meter | Built with Details! Framework")
+		DF:SetFontSize(statusBar.text, 11)
+		DF:SetFontColor(statusBar.text, "gray")
+
+		--add an extra background
+		local backgroundTexture = f:CreateTexture("$parentBackgroundTexture", "background")
+		backgroundTexture:SetColorTexture(.2, .2, .2, .2)
+		backgroundTexture:SetAllPoints()
+
+
 		local testUsing = "arena" --mythicdungeon
 		
 		--> frame strata options
 			local set_frame_strata = function (_, _, strata)
-				Details.current_dps_meter.frame.strata = strata
+				Details.realtime_dps_meter.frame_settings.strata = strata
 				Details:UpdateTheRealCurrentDPSFrame(testUsing)
 			end
 			local strataTable = {}
@@ -47,7 +65,7 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 			
 		--> font options
 			local set_font_shadow= function (_, _, shadow)
-				Details.current_dps_meter.font_shadow = shadow
+				Details.realtime_dps_meter.font_shadow = shadow
 				Details:UpdateTheRealCurrentDPSFrame(testUsing)
 			end
 			local fontShadowTable = {}
@@ -56,13 +74,13 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 			fontShadowTable [3] = {value = "THICKOUTLINE", label = "Thick Outline", onclick = set_font_shadow}
 			
 			local on_select_text_font = function (self, fixed_value, value)
-				Details.current_dps_meter.font_face = value
+				Details.realtime_dps_meter.font_face = value
 				Details:UpdateTheRealCurrentDPSFrame(testUsing)
 			end
 		
 		local lockCallback = function()
 			local f = _G.DetailsCurrentDpsMeter
-			if (Details.current_dps_meter.frame.locked) then
+			if (Details.realtime_dps_meter.frame_settings.locked) then
 				f.movemeLabel:Hide()
 				f.lockButton:Hide()
 				f:SetBackdropColor(.2, .2, .2, 0)
@@ -80,9 +98,9 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 			--enabled
 			{
 				type = "toggle",
-				get = function() return Details.current_dps_meter.enabled end,
+				get = function() return Details.realtime_dps_meter.enabled end,
 				set = function (self, fixedparam, value)
-					Details.current_dps_meter.enabled = not Details.current_dps_meter.enabled
+					Details.realtime_dps_meter.enabled = not Details.realtime_dps_meter.enabled
 					Details:LoadFramesForBroadcastTools()
 				end,
 				desc = "Enabled",
@@ -92,9 +110,9 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 			--locked
 			{
 				type = "toggle",
-				get = function() return Details.current_dps_meter.frame.locked end,
+				get = function() return Details.realtime_dps_meter.frame_settings.locked end,
 				set = function (self, fixedparam, value) 
-					Details.current_dps_meter.frame.locked = not Details.current_dps_meter.frame.locked
+					Details.realtime_dps_meter.frame_settings.locked = not Details.realtime_dps_meter.frame_settings.locked
 					Details:UpdateTheRealCurrentDPSFrame(testUsing)
 					lockCallback()
 				end,
@@ -105,9 +123,9 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 			--showtitle
 			{
 				type = "toggle",
-				get = function() return Details.current_dps_meter.frame.show_title end,
+				get = function() return Details.realtime_dps_meter.frame_settings.show_title end,
 				set = function (self, fixedparam, value) 
-					Details.current_dps_meter.frame.show_title = not Details.current_dps_meter.frame.show_title
+					Details.realtime_dps_meter.frame_settings.show_title = not Details.realtime_dps_meter.frame_settings.show_title
 					Details:UpdateTheRealCurrentDPSFrame(testUsing)
 				end,
 				desc = "Show Title",
@@ -118,10 +136,10 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 			{
 				type = "color",
 				get = function() 
-					return {Details.current_dps_meter.frame.backdrop_color[1], Details.current_dps_meter.frame.backdrop_color[2], Details.current_dps_meter.frame.backdrop_color[3], Details.current_dps_meter.frame.backdrop_color[4]} 
+					return {Details.realtime_dps_meter.frame_settings.backdrop_color[1], Details.realtime_dps_meter.frame_settings.backdrop_color[2], Details.realtime_dps_meter.frame_settings.backdrop_color[3], Details.realtime_dps_meter.frame_settings.backdrop_color[4]} 
 				end,
 				set = function (self, r, g, b, a) 
-					local color = Details.current_dps_meter.frame.backdrop_color
+					local color = Details.realtime_dps_meter.frame_settings.backdrop_color
 					color[1], color[2], color[3], color[4] = r, g, b, a
 					Details:UpdateTheRealCurrentDPSFrame(testUsing)
 				end,
@@ -132,16 +150,16 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 			--statra
 			{
 				type = "select",
-				get = function() return Details.current_dps_meter.frame.strata end,
+				get = function() return Details.realtime_dps_meter.frame_settings.strata end,
 				values = function() return strataTable end,
 				name = "Frame Strata"
 			},
 			--speed
 			{
 				type = "range",
-				get = function() return Details.current_dps_meter.sample_size end,
+				get = function() return Details.realtime_dps_meter.sample_size end,
 				set = function (self, fixedparam, value)
-					Details.current_dps_meter.sample_size = value
+					Details.realtime_dps_meter.sample_size = value
 					Details:UpdateTheRealCurrentDPSFrame(testUsing)
 				end,
 				min = 1,
@@ -154,9 +172,9 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 			--width
 			{
 				type = "range",
-				get = function() return Details.current_dps_meter.frame.width end,
+				get = function() return Details.realtime_dps_meter.frame_settings.width end,
 				set = function (self, fixedparam, value) 
-					Details.current_dps_meter.frame.width = value
+					Details.realtime_dps_meter.frame_settings.width = value
 					Details:UpdateTheRealCurrentDPSFrame(testUsing)
 				end,
 				min = 1,
@@ -168,9 +186,9 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 			--height
 			{
 				type = "range",
-				get = function() return Details.current_dps_meter.frame.height end,
+				get = function() return Details.realtime_dps_meter.frame_settings.height end,
 				set = function (self, fixedparam, value) 
-					Details.current_dps_meter.frame.height = value
+					Details.realtime_dps_meter.frame_settings.height = value
 					Details:UpdateTheRealCurrentDPSFrame(testUsing)
 				end,
 				min = 1,
@@ -186,9 +204,9 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 			--arenas
 			{
 				type = "toggle",
-				get = function() return Details.current_dps_meter.arena_enabled end,
+				get = function() return Details.realtime_dps_meter.arena_enabled end,
 				set = function (self, fixedparam, value)
-					Details.current_dps_meter.arena_enabled = not Details.current_dps_meter.arena_enabled
+					Details.realtime_dps_meter.arena_enabled = not Details.realtime_dps_meter.arena_enabled
 					Details:LoadFramesForBroadcastTools()
 				end,
 				name = "Arena Matches",
@@ -197,9 +215,9 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 			--mythic dungeon
 			{
 				type = "toggle",
-				get = function() return Details.current_dps_meter.mythic_dungeon_enabled end,
+				get = function() return Details.realtime_dps_meter.mythic_dungeon_enabled end,
 				set = function (self, fixedparam, value)
-					Details.current_dps_meter.mythic_dungeon_enabled = not Details.current_dps_meter.mythic_dungeon_enabled
+					Details.realtime_dps_meter.mythic_dungeon_enabled = not Details.realtime_dps_meter.mythic_dungeon_enabled
 					Details:LoadFramesForBroadcastTools()
 				end,
 				name = "Mythic Dungeons",
@@ -212,9 +230,9 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 			--font size
 			{
 				type = "range",
-				get = function() return Details.current_dps_meter.font_size end,
+				get = function() return Details.realtime_dps_meter.font_size end,
 				set = function (self, fixedparam, value) 
-					Details.current_dps_meter.font_size = value
+					Details.realtime_dps_meter.font_size = value
 					Details:UpdateTheRealCurrentDPSFrame(testUsing)
 				end,
 				min = 4,
@@ -227,10 +245,10 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 			{
 				type = "color",
 				get = function() 
-					return {Details.current_dps_meter.font_color[1], Details.current_dps_meter.font_color[2], Details.current_dps_meter.font_color[3], Details.current_dps_meter.font_color[4]} 
+					return {Details.realtime_dps_meter.font_color[1], Details.realtime_dps_meter.font_color[2], Details.realtime_dps_meter.font_color[3], Details.realtime_dps_meter.font_color[4]} 
 				end,
 				set = function (self, r, g, b, a) 
-					local color = Details.current_dps_meter.font_color
+					local color = Details.realtime_dps_meter.font_color
 					color[1], color[2], color[3], color[4] = r, g, b, a
 					Details:UpdateTheRealCurrentDPSFrame(testUsing)
 				end,
@@ -241,14 +259,14 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 			--font shadow
 			{
 				type = "select",
-				get = function() return Details.current_dps_meter.font_shadow end,
+				get = function() return Details.realtime_dps_meter.font_shadow end,
 				values = function() return fontShadowTable end,
 				name = "Font Shadow"
 			},
 			--font face
 			{
 				type = "select",
-				get = function() return Details.current_dps_meter.font_face end,
+				get = function() return Details.realtime_dps_meter.font_face end,
 				values = function() return DF:BuildDropDownFontList (on_select_text_font) end,
 				name = "Font Face",
 				text_template = options_text_template,
@@ -256,9 +274,9 @@ function Details:OpenCurrentRealDPSOptions(from_options_panel)
 
 			{
 				type = "range",
-				get = function() return _detalhes.current_dps_meter.text_offset end,
+				get = function() return _detalhes.realtime_dps_meter.text_offset end,
 				set = function (self, fixedparam, value) 
-					_detalhes.current_dps_meter.text_offset = value
+					_detalhes.realtime_dps_meter.text_offset = value
 					Details:UpdateTheRealCurrentDPSFrame(testUsing)
 				end,
 				min = 0,
@@ -320,12 +338,12 @@ function Details:CreateCurrentDpsFrame(parent, name)
 		local spacing_vertical = -6 --vertical space between the group anchor and the group dps
 
 	--> main farame
-		local f = CreateFrame ("frame", name, parent or UIParent,"BackdropTemplate")
+		local f = CreateFrame ("frame", name, parent or UIParent, "BackdropTemplate")
 		f:SetPoint ("top", UIParent, "top", 0, -110)
-		f:SetSize (_detalhes.current_dps_meter.frame.width, _detalhes.current_dps_meter.frame.height)
+		f:SetSize (_detalhes.realtime_dps_meter.frame_settings.width, _detalhes.realtime_dps_meter.frame_settings.height)
 
 		f:SetBackdrop ({bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tile = true, tileSize = 16, insets = {left = 0, right = 0, top = 0, bottom = 0}})
-		f:SetBackdropColor (unpack (_detalhes.current_dps_meter.frame.backdrop_color))
+		f:SetBackdropColor (unpack (_detalhes.realtime_dps_meter.frame_settings.backdrop_color))
 		f:EnableMouse (true)
 		f:SetMovable (true)
 		f:SetClampedToScreen (true)
@@ -334,7 +352,7 @@ function Details:CreateCurrentDpsFrame(parent, name)
 		f.movemeLabel:SetText("Move-Me")
 
 		f.lockButton = DetailsFramework:CreateButton(f, function()
-			Details.current_dps_meter.frame.locked = not Details.current_dps_meter.frame.locked
+			Details.realtime_dps_meter.frame_settings.locked = not Details.realtime_dps_meter.frame_settings.locked
 			Details:UpdateTheRealCurrentDPSFrame()
 			f.movemeLabel:Hide()
 			f.lockButton:Hide()
@@ -342,7 +360,7 @@ function Details:CreateCurrentDpsFrame(parent, name)
 		f.lockButton:SetPoint("center", f, "center", 0, -20)
 		f.lockButton.text = "Lock"
 
-		if (Details.current_dps_meter.frame.locked) then
+		if (Details.realtime_dps_meter.frame_settings.locked) then
 			f.movemeLabel:Hide()
 			f.lockButton:Hide()
 		end
@@ -350,13 +368,13 @@ function Details:CreateCurrentDpsFrame(parent, name)
 		f.PlayerTeam = 0
 
 		local LibWindow = LibStub ("LibWindow-1.1")
-		LibWindow.RegisterConfig (f, _detalhes.current_dps_meter.frame)
+		LibWindow.RegisterConfig (f, _detalhes.realtime_dps_meter.frame_settings)
 		LibWindow.MakeDraggable (f)
 		LibWindow.RestorePosition (f)
 
 		local lockCallback = function()
 			local f = _G.DetailsCurrentDpsMeter
-			if (Details.current_dps_meter.frame.locked) then
+			if (Details.realtime_dps_meter.frame_settings.locked) then
 				f.movemeLabel:Hide()
 				f.lockButton:Hide()
 				f:SetBackdropColor(.2, .2, .2, 0)
@@ -370,6 +388,20 @@ function Details:CreateCurrentDpsFrame(parent, name)
 		C_Timer.After(10, function()
 			--f:SetPoint("top", UIParent, "top", 0, -110)
 			--LibWindow.SavePosition(f)
+		end)
+
+		GhostFrame:HookScript("OnShow", function(ghostFrame)
+			if (f:IsShown()) then
+				local p1, p2, p3, p4, p5 = ghostFrame:GetPoint(1)
+				f.GhostFrameY = f.GhostFrameY or 0
+				if (DF:IsNearlyEqual(p5, f.GhostFrameY, 0.1)) then
+					return
+				end
+
+				local newY = p5-45
+				ghostFrame:SetPoint(p1, p2, p3, p4, newY)
+				f.GhostFrameY = newY
+			end
 		end)
 
 	--> arena dps bars
@@ -483,7 +515,7 @@ function Details:CreateCurrentDpsFrame(parent, name)
 		--> update
 		local time_fraction = 100/1000 --one tick per 100ms
 		f.NextUpdate =  time_fraction --when the next tick occur
-		f.NextScreenUpdate = _detalhes.current_dps_meter.update_interval --when the labels on the frame receive update
+		f.NextScreenUpdate = _detalhes.realtime_dps_meter.update_interval --when the labels on the frame receive update
 		
 		--> arena
 		f.PlayerTeamBuffer = {}
@@ -499,7 +531,7 @@ function Details:CreateCurrentDpsFrame(parent, name)
 		f.LastTickGroupDamage = 0
 
 		--> general
-		f.SampleSize = _detalhes.current_dps_meter.sample_size
+		f.SampleSize = _detalhes.realtime_dps_meter.sample_size
 		f.MaxBufferIndex = 1
 		f.ShowingArena = false
 
@@ -509,36 +541,36 @@ function Details:CreateCurrentDpsFrame(parent, name)
 				return
 			end
 
-			if (not _detalhes.current_dps_meter.enabled) then
+			if (not _detalhes.realtime_dps_meter.enabled) then
 				f:Hide()
-				print("D! debug currentdps.lua > !current_dps_meter.enabled")
+				print("D! debug currentdps.lua > !realtime_dps_meter.enabled")
 				return
 			end
 
-			if (not _detalhes.current_dps_meter.arena_enabled and not _detalhes.current_dps_meter.mythic_dungeon_enabled) then
+			if (not _detalhes.realtime_dps_meter.arena_enabled and not _detalhes.realtime_dps_meter.mythic_dungeon_enabled) then
 				f:Hide()
-				print("D! debug currentdps.lua > not _detalhes.current_dps_meter.arena_enabled and not _detalhes.current_dps_meter.mythic_dungeon_enabled")
+				print("D! debug currentdps.lua > not _detalhes.realtime_dps_meter.arena_enabled and not _detalhes.realtime_dps_meter.mythic_dungeon_enabled")
 				return
 			end
 
 			--> where the player are
 			if (scenario == "arena") then
 
-				f.SampleSize = _detalhes.current_dps_meter.sample_size
+				f.SampleSize = _detalhes.realtime_dps_meter.sample_size
 
 				labelPlayerTeam_DPS:Show()
 				labelYellowTeam_DPS:Show()
 
 				--> update arena labels
-				DF:SetFontColor (labelPlayerTeam_DPS, _detalhes.current_dps_meter.font_color)
-				DF:SetFontFace (labelPlayerTeam_DPS, _detalhes.current_dps_meter.font_face)
-				DF:SetFontSize (labelPlayerTeam_DPS, _detalhes.current_dps_meter.font_size)
-				DF:SetFontOutline (labelPlayerTeam_DPS, _detalhes.current_dps_meter.font_shadow)
+				DF:SetFontColor (labelPlayerTeam_DPS, _detalhes.realtime_dps_meter.font_color)
+				DF:SetFontFace (labelPlayerTeam_DPS, _detalhes.realtime_dps_meter.font_face)
+				DF:SetFontSize (labelPlayerTeam_DPS, _detalhes.realtime_dps_meter.font_size)
+				DF:SetFontOutline (labelPlayerTeam_DPS, _detalhes.realtime_dps_meter.font_shadow)
 
-				DF:SetFontColor (labelYellowTeam_DPS, _detalhes.current_dps_meter.font_color)
-				DF:SetFontFace (labelYellowTeam_DPS, _detalhes.current_dps_meter.font_face)
-				DF:SetFontSize (labelYellowTeam_DPS, _detalhes.current_dps_meter.font_size)
-				DF:SetFontOutline (labelYellowTeam_DPS, _detalhes.current_dps_meter.font_shadow)
+				DF:SetFontColor (labelYellowTeam_DPS, _detalhes.realtime_dps_meter.font_color)
+				DF:SetFontFace (labelYellowTeam_DPS, _detalhes.realtime_dps_meter.font_face)
+				DF:SetFontSize (labelYellowTeam_DPS, _detalhes.realtime_dps_meter.font_size)
+				DF:SetFontOutline (labelYellowTeam_DPS, _detalhes.realtime_dps_meter.font_shadow)
 
 				--> wipe current data for arena
 				wipe (f.PlayerTeamBuffer)
@@ -557,7 +589,7 @@ function Details:CreateCurrentDpsFrame(parent, name)
 				DetailsArenaDpsBars.splitBar:Show()
 				barFrame.splitBar:EnableAnimations()
 
-				DetailsArenaDpsBars.splitBar:SetSize(Details.current_dps_meter.frame.width, Details.current_dps_meter.frame.height)
+				DetailsArenaDpsBars.splitBar:SetSize(Details.realtime_dps_meter.frame_settings.width, Details.realtime_dps_meter.frame_settings.height)
 				DetailsArenaDpsBars:EnableMouse(false)
 				DetailsArenaDpsBars.splitBar:EnableMouse(false)
 
@@ -574,10 +606,10 @@ function Details:CreateCurrentDpsFrame(parent, name)
 				labelGroupDamage:Show()
 				labelGroupDamage_DPS:Show()
 
-				DF:SetFontColor (labelGroupDamage_DPS, _detalhes.current_dps_meter.font_color)
-				DF:SetFontFace (labelGroupDamage_DPS, _detalhes.current_dps_meter.font_face)
-				DF:SetFontSize (labelGroupDamage_DPS, _detalhes.current_dps_meter.font_size)
-				DF:SetFontOutline (labelGroupDamage_DPS, _detalhes.current_dps_meter.font_shadow)
+				DF:SetFontColor (labelGroupDamage_DPS, _detalhes.realtime_dps_meter.font_color)
+				DF:SetFontFace (labelGroupDamage_DPS, _detalhes.realtime_dps_meter.font_face)
+				DF:SetFontSize (labelGroupDamage_DPS, _detalhes.realtime_dps_meter.font_size)
+				DF:SetFontOutline (labelGroupDamage_DPS, _detalhes.realtime_dps_meter.font_shadow)
 
 				--> wipe current data for mythic dungeon
 				f.GroupBuffer = {}
@@ -599,25 +631,25 @@ function Details:CreateCurrentDpsFrame(parent, name)
 			end
 			
 			--> frame position
-			f:SetSize (_detalhes.current_dps_meter.frame.width, _detalhes.current_dps_meter.frame.height)
-			LibWindow.RegisterConfig (f, _detalhes.current_dps_meter.frame)
+			f:SetSize (_detalhes.realtime_dps_meter.frame_settings.width, _detalhes.realtime_dps_meter.frame_settings.height)
+			LibWindow.RegisterConfig (f, _detalhes.realtime_dps_meter.frame_settings)
 			LibWindow.RestorePosition (f)
 
 			--> backdrop color
-			f:SetBackdropColor (unpack (_detalhes.current_dps_meter.frame.backdrop_color))
+			f:SetBackdropColor (unpack (_detalhes.realtime_dps_meter.frame_settings.backdrop_color))
 			
 			--> set frame size
-			f:SetSize (_detalhes.current_dps_meter.frame.width, _detalhes.current_dps_meter.frame.height)
+			f:SetSize (_detalhes.realtime_dps_meter.frame_settings.width, _detalhes.realtime_dps_meter.frame_settings.height)
 			
 			--> frame is locked
-			if (_detalhes.current_dps_meter.frame.locked) then
+			if (_detalhes.realtime_dps_meter.frame_settings.locked) then
 				f:EnableMouse (false)
 			else
 				f:EnableMouse (true)
 			end
 			
 			--> frame can show title
-			if (_detalhes.current_dps_meter.frame.show_title) then
+			if (_detalhes.realtime_dps_meter.frame_settings.show_title) then
 				TitleString:Show()
 				TitleBackground:Show()
 			else
@@ -626,17 +658,17 @@ function Details:CreateCurrentDpsFrame(parent, name)
 			end
 			
 			--> frame strata
-			f:SetFrameStrata (_detalhes.current_dps_meter.frame.strata)
+			f:SetFrameStrata (_detalhes.realtime_dps_meter.frame_settings.strata)
 
 			--> calcule buffer size
 			f.MaxBufferIndex = f.SampleSize * time_fraction * 100 --sample size in seconds * fraction * tick milliseconds
 
 			--> interval to update the frame
-			f.NextScreenUpdate = _detalhes.current_dps_meter.update_interval
+			f.NextScreenUpdate = _detalhes.realtime_dps_meter.update_interval
 
 
-			labelPlayerTeam_DPS:SetPoint("left", barFrame.splitBar.widget, "left", 4 + _detalhes.current_dps_meter.text_offset, 0)
-			labelYellowTeam_DPS:SetPoint("right", barFrame.splitBar.widget, "right", -4 - _detalhes.current_dps_meter.text_offset, 0)
+			labelPlayerTeam_DPS:SetPoint("left", barFrame.splitBar.widget, "left", 4 + _detalhes.realtime_dps_meter.text_offset, 0)
+			labelYellowTeam_DPS:SetPoint("right", barFrame.splitBar.widget, "right", -4 - _detalhes.realtime_dps_meter.text_offset, 0)
 		end
 	
 		_detalhes:UpdateTheRealCurrentDPSFrame()
@@ -744,7 +776,7 @@ function Details:CreateCurrentDpsFrame(parent, name)
 							dpsBarFrame:SetRightColor(unpack (green_team_color))
 						end
 
-						if (Details.current_dps_meter.frame.locked) then
+						if (Details.realtime_dps_meter.frame_settings.locked) then
 							f.movemeLabel:Hide()
 							f.lockButton:Hide()
 							f:SetBackdropColor(.2, .2, .2, 0)
@@ -758,7 +790,7 @@ function Details:CreateCurrentDpsFrame(parent, name)
 							labelPlayerTeam_DPS:SetText (_detalhes:ToK2 (self.YellowDamage / self.SampleSize))
 							labelYellowTeam_DPS:SetText (_detalhes:ToK2 (self.PlayerTeamDamage / self.SampleSize))
 						end
-						f.NextScreenUpdate = _detalhes.current_dps_meter.update_interval
+						f.NextScreenUpdate = _detalhes.realtime_dps_meter.update_interval
 					end
 					
 				elseif (self.ShowingMythicDungeon) then
@@ -799,7 +831,7 @@ function Details:CreateCurrentDpsFrame(parent, name)
 					self.NextScreenUpdate = self.NextScreenUpdate - time_fraction
 					if (self.NextScreenUpdate <= 0) then
 						labelGroupDamage_DPS:SetText (_detalhes:ToK2 (f.GroupTotalDamage / self.SampleSize))
-						f.NextScreenUpdate = _detalhes.current_dps_meter.update_interval
+						f.NextScreenUpdate = _detalhes.realtime_dps_meter.update_interval
 					end
 					
 				end
@@ -835,14 +867,14 @@ function Details:CreateCurrentDpsFrame(parent, name)
 		local eventListener = _detalhes:CreateEventListener()
 
 		function eventListener:ArenaStarted()
-			if (_detalhes.current_dps_meter.arena_enabled) then
+			if (_detalhes.realtime_dps_meter.arena_enabled) then
 				--it is working here, f:StartForArenaMatch() is called but the frame is still now shown.
 				f:StartForArenaMatch()
 			end
 		end
 		
 		function eventListener:MythicDungeonStarted()
-			if (_detalhes.current_dps_meter.mythic_dungeon_enabled) then
+			if (_detalhes.realtime_dps_meter.mythic_dungeon_enabled) then
 				f:StartForMythicDungeon()
 			end
 		end

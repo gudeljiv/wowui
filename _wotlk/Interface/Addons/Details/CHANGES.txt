@@ -1,10 +1,22 @@
-lightweight tag 899ac439a17c19a799d30a6a2a0e2faf5cc215e1 DetailsRetail.8.3.0.7348.141
+tag 4da0b460463e4b40fa12a222ffe4df409d61dc41 DetailsRetail.v9.2.7.10018.146
 Author:	Tercio Jose <terciob19@hotmail.com>
-Date:	Mon Jul 6 11:27:35 2020 -0300
+Date:	Wed Aug 31 19:15:29 2022 -0300
 
-commit 899ac439a17c19a799d30a6a2a0e2faf5cc215e1
+commit 27ca0d6df73caa348f61ca1e3b95c7e33a050e31
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Mon Jul 6 11:27:35 2020 -0300
+Date:   Wed Aug 31 19:15:06 2022 -0300
 
-    Fixed an issue affecting the Auto Hide for some users
+    Version Bump
+
+commit 57bc1895a68c20dec674bee86c0f882eb4d50076
+Author: Colton Schlosser <1498529+cltnschlosser@users.noreply.github.com>
+Date:   Wed Aug 31 17:10:58 2022 -0500
+
+    Fix IsWotLKWow typo
+
+commit 57bc1895a68c20dec674bee86c0f882eb4d50076
+Author: Colton Schlosser <1498529+cltnschlosser@users.noreply.github.com>
+Date:   Wed Aug 31 17:10:58 2022 -0500
+
+    Fix IsWotLKWow typo
 

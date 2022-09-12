@@ -562,7 +562,7 @@ function DropDownMetaFunctions:Selected(thisOption)
 			self.icon:SetVertexColor(1, 1, 1, 1)
 		end
 
-		self.icon:SetSize(self:GetHeight()-2, self:GetHeight()-2)
+		self.icon:SetSize(self:GetHeight()-4, self:GetHeight()-4)
 	else
 		self.label:SetPoint("left", self.label:GetParent(), "left", 4, 0)
 	end
@@ -741,7 +741,7 @@ function DetailsFrameworkDropDownOnMouseDown(button, buttontype)
 					if (thisOption.iconsize) then
 						thisOptionFrame.icon:SetSize(thisOption.iconsize[1], thisOption.iconsize[2])
 					else
-						thisOptionFrame.icon:SetSize(20, 20)
+						thisOptionFrame.icon:SetSize(thisOptionFrame:GetHeight()-6, thisOptionFrame:GetHeight()-6)
 					end
 
 					if (thisOption.font) then
@@ -1271,7 +1271,7 @@ function DF:CreateNewDropdownFrame(parent, name)
 
 	scroll:SetScrollChild(child)
 	tinsert(UISpecialFrames, f.dropdownborder:GetName())
-	tinsert(UISpecialFrames, f.dropdownframe:GetName())
+	--tinsert(UISpecialFrames, f.dropdownframe:GetName()) --not adding this solves an issue with ConsolePort addon and stackoverflows on Hide...
 
 	return f
 end

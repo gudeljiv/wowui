@@ -248,6 +248,18 @@ do
                 end,
                 name = Loc ["STRING_OPTIONS_LOCKSEGMENTS"],
                 desc = Loc ["STRING_OPTIONS_LOCKSEGMENTS_DESC"],
+                boxfirst = true,
+            },
+            {--animate bars
+                type = "toggle",
+                get = function() return _detalhes.use_row_animations end,
+                set = function (self, fixedparam, value)
+                    _detalhes:SetUseAnimations(value)
+                    afterUpdate()
+                end,
+                name = Loc ["STRING_OPTIONS_ANIMATEBARS"],
+                desc = Loc ["STRING_OPTIONS_ANIMATEBARS_DESC"],
+                boxfirst = true,
             },
             {--scroll speed
                 type = "range",
@@ -290,16 +302,6 @@ do
                 end,
                 name = Loc ["STRING_NUMERALSYSTEM"],
                 desc = Loc ["STRING_NUMERALSYSTEM_DESC"],
-            },
-            {--animate bars
-                type = "toggle",
-                get = function() return _detalhes.use_row_animations end,
-                set = function (self, fixedparam, value)
-                    _detalhes:SetUseAnimations(value)
-                    afterUpdate()
-                end,
-                name = Loc ["STRING_OPTIONS_ANIMATEBARS"],
-                desc = Loc ["STRING_OPTIONS_ANIMATEBARS_DESC"],
             },
             {--update speed
                 type = "range",
@@ -346,6 +348,7 @@ do
                 end,
                 name = Loc ["STRING_OPTIONS_CLEANUP"],
                 desc = Loc ["STRING_OPTIONS_CLEANUP_DESC"],
+                boxfirst = true,
             },
             {--auto erase world segments
                 type = "toggle",
@@ -356,6 +359,7 @@ do
                 end,
                 name = Loc ["STRING_OPTIONS_PERFORMANCE_ERASEWORLD"],
                 desc = Loc ["STRING_OPTIONS_PERFORMANCE_ERASEWORLD_DESC"],
+                boxfirst = true,
             },
             {--erase chart data
                 type = "toggle",
@@ -366,6 +370,28 @@ do
                 end,
                 name = Loc ["STRING_OPTIONS_ERASECHARTDATA"],
                 desc = Loc ["STRING_OPTIONS_ERASECHARTDATA_DESC"],
+                boxfirst = true,
+            },
+
+            {--battleground remote parser
+                type = "toggle",
+                get = function() return _detalhes.use_battleground_server_parser end,
+                set = function (self, fixedparam, value)
+                    _detalhes.use_battleground_server_parser = value
+                 end,
+                name = Loc ["STRING_OPTIONS_BG_UNIQUE_SEGMENT"],
+                desc = Loc ["STRING_OPTIONS_BG_UNIQUE_SEGMENT_DESC"],
+                boxfirst = true,
+            },
+            {--battleground show enemies
+                type = "toggle",
+                get = function() return _detalhes.pvp_as_group end,
+                set = function (self, fixedparam, value)
+                    _detalhes.pvp_as_group = value
+                 end,
+                name = Loc ["STRING_OPTIONS_BG_ALL_ALLY"],
+                desc = Loc ["STRING_OPTIONS_BG_ALL_ALLY_DESC"],
+                boxfirst = true,
             },
 
             {--max segments
@@ -396,25 +422,6 @@ do
                 desc = Loc ["STRING_OPTIONS_SEGMENTSSAVE_DESC"],
             },
 
-            {--battleground remote parser
-                type = "toggle",
-                get = function() return _detalhes.use_battleground_server_parser end,
-                set = function (self, fixedparam, value)
-                    _detalhes.use_battleground_server_parser = value
-                 end,
-                name = Loc ["STRING_OPTIONS_BG_UNIQUE_SEGMENT"],
-                desc = Loc ["STRING_OPTIONS_BG_UNIQUE_SEGMENT_DESC"],
-            },
-            {--battleground show enemies
-                type = "toggle",
-                get = function() return _detalhes.pvp_as_group end,
-                set = function (self, fixedparam, value)
-                    _detalhes.pvp_as_group = value
-                 end,
-                name = Loc ["STRING_OPTIONS_BG_ALL_ALLY"],
-                desc = Loc ["STRING_OPTIONS_BG_ALL_ALLY_DESC"],
-            },
-
             {type = "blank"},
 
             {--pvp frags
@@ -426,6 +433,19 @@ do
                 end,
                 name = Loc ["STRING_OPTIONS_PVPFRAGS"],
                 desc = Loc ["STRING_OPTIONS_PVPFRAGS_DESC"],
+                boxfirst = true,
+            },
+
+            {--damage taken everything
+                type = "toggle",
+                get = function() return _detalhes.damage_taken_everything end,
+                set = function (self, fixedparam, value)
+                    _detalhes.damage_taken_everything = value
+                    afterUpdate()
+                end,
+                name = Loc ["STRING_OPTIONS_DTAKEN_EVERYTHING"],
+                desc = Loc ["STRING_OPTIONS_DTAKEN_EVERYTHING_DESC"],
+                boxfirst = true,
             },
 
             {--death log size
@@ -451,17 +471,6 @@ do
                 desc = Loc ["STRING_OPTIONS_DEATHLOG_MINHEALING_DESC"],
             },
 
-            {--pvp frags
-                type = "toggle",
-                get = function() return _detalhes.damage_taken_everything end,
-                set = function (self, fixedparam, value)
-                    _detalhes.damage_taken_everything = value
-                    afterUpdate()
-                end,
-                name = Loc ["STRING_OPTIONS_DTAKEN_EVERYTHING"],
-                desc = Loc ["STRING_OPTIONS_DTAKEN_EVERYTHING_DESC"],
-            },
-
             {type = "breakline"},
             {type = "label", get = function() return Loc ["STRING_OPTIONS_OVERALL_ANCHOR"] end, text_template = subSectionTitleTextTemplate},
 
@@ -474,6 +483,7 @@ do
                 end,
                 name = Loc ["STRING_OPTIONS_OVERALL_NEWBOSS"],
                 desc = Loc ["STRING_OPTIONS_OVERALL_NEWBOSS_DESC"],
+                boxfirst = true,
             },
             {--erase overall data on mythic plus
                 type = "toggle",
@@ -484,6 +494,18 @@ do
                 end,
                 name = Loc ["STRING_OPTIONS_OVERALL_MYTHICPLUS"],
                 desc = Loc ["STRING_OPTIONS_OVERALL_MYTHICPLUS_DESC"],
+                boxfirst = true,
+            },
+            {--erase overall data on logout
+                type = "toggle",
+                get = function() return _detalhes.overall_clear_pvp end,
+                set = function (self, fixedparam, value)
+                    _detalhes:SetOverallResetOptions(nil, nil, nil, value)
+                    afterUpdate()
+                end,
+                name = "Clear On Start PVP", --localize-me
+                desc = "When enabled, overall data is automatically wiped when a new arena or battleground starts.", --localize-me
+                boxfirst = true,
             },
             {--erase overall data on logout
                 type = "toggle",
@@ -494,6 +516,7 @@ do
                 end,
                 name = Loc ["STRING_OPTIONS_OVERALL_LOGOFF"],
                 desc = Loc ["STRING_OPTIONS_OVERALL_LOGOFF_DESC"],
+                boxfirst = true,
             },
 
             {type = "blank"},
@@ -572,6 +595,7 @@ do
                 end,
                 name = "Click Through",
                 desc = "Click Through",
+                boxfirst = true,
             },
             {--click only in combat
                 type = "toggle",
@@ -582,6 +606,7 @@ do
                 end,
                 name = "Click Through Only in Combat",
                 desc = "Click Through Only in Combat",
+                boxfirst = true,
             },
 
             {type = "blank"},
@@ -596,6 +621,7 @@ do
                 end,
                 name = "Show pets when solo", --localize-me
                 desc = "Show pets when solo",
+                boxfirst = true,
             },
 
             {--always show players even on stardard mode
@@ -607,6 +633,7 @@ do
                 end,
                 name = Loc ["STRING_OPTIONS_ALWAYSSHOWPLAYERS"],
                 desc = Loc ["STRING_OPTIONS_ALWAYSSHOWPLAYERS_DESC"],
+                boxfirst = true,
             },
 
 
@@ -646,6 +673,7 @@ do
                 end,
                 name = Loc ["STRING_OPTIONS_IGNORENICKNAME"],
                 desc = Loc ["STRING_OPTIONS_IGNORENICKNAME_DESC"],
+                boxfirst = true,
             },
 
             {--remove realm name
@@ -657,6 +685,7 @@ do
                 end,
                 name = Loc ["STRING_OPTIONS_REALMNAME"],
                 desc = Loc ["STRING_OPTIONS_REALMNAME_DESC"],
+                boxfirst = true,
             },
 
             {type = "blank"},
@@ -671,6 +700,7 @@ do
                 end,
                 name = "Use Different Color for You",
                 desc = "Use a different color on your own bar",
+                boxfirst = true,
             },
 
 			{--player bar color
@@ -687,12 +717,13 @@ do
 				end,
 				name = "Your Bar Color",
 				desc = "Your Bar Color",
+                boxfirst = true,
             },
 
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize+20, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize+20, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection) --optionsSection is declared on boot.lua
@@ -1046,7 +1077,7 @@ do
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection)
@@ -1760,7 +1791,7 @@ do
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize+20, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize+20, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection)
@@ -2110,7 +2141,7 @@ do
                         editInstanceSetting(currentInstance, "SetBarTextSettings", nil, nil, nil, nil, nil, nil, nil, nil, text)
                         afterUpdate()
                     end
-                    _G.DetailsWindowOptionsBarTextEditor:Open (currentInstance.row_info.textL_custom_text, callback, _G.DetailsOptionsWindow, _detalhes.instance_defaults.row_info.textL_custom_text)
+                    _G.DetailsWindowOptionsBarTextEditor:Open (currentInstance.row_info.textR_custom_text, callback, _G.DetailsOptionsWindow, _detalhes.instance_defaults.row_info.textL_custom_text)
                 end,
                 icontexture = [[Interface\GLUES\LOGIN\Glues-CheckBox-Check]],
                 --icontexcoords = {160/512, 179/512, 142/512, 162/512},
@@ -2120,7 +2151,7 @@ do
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
 
         local separatorOption = sectionFrame.widget_list[23]
         local bracketOption = sectionFrame.widget_list[24]
@@ -2672,7 +2703,7 @@ do
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection)
@@ -3055,7 +3086,7 @@ do
             
         }
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection)
@@ -3169,7 +3200,7 @@ do
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
 
         do --> micro displays
             
@@ -3802,7 +3833,7 @@ do
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection)
@@ -4042,7 +4073,7 @@ do
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection)
@@ -4418,7 +4449,7 @@ do
         }
         
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
         refreshToggleAnchor()
     end
 
@@ -4566,7 +4597,7 @@ do
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection)
@@ -4985,7 +5016,7 @@ do
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
 
         sectionFrame:SetScript("OnShow", function()
             sectionFrame:UpdateWallpaperInfo()
@@ -5316,7 +5347,7 @@ do
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(autoSwitchFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(autoSwitchFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
 
 
 	--> combat alpha modifier
@@ -5898,7 +5929,7 @@ do --raid tools
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection)
@@ -5935,10 +5966,10 @@ do
                         StreamerPlugin.__enabled = tPluginSettings.enabled
 
                         if (not tPluginSettings.enabled) then
-                            sectionFrame.enableButtton:SetText("Enable")
+                            sectionFrame.enableActionTrackerButtton:SetText("Enable")
                             Details:SendEvent("PLUGIN_DISABLED", StreamerPlugin)
                         else
-                            sectionFrame.enableButtton:SetText("Disable")
+                            sectionFrame.enableActionTrackerButtton:SetText("Disable") --enableButton is nil value
 							Details:SendEvent("PLUGIN_ENABLED", StreamerPlugin)
                         end
                     end
@@ -5994,7 +6025,7 @@ do
                     sectionFrame.enableEventTrackerButtton:SetText("Enable")
                 end
 
-                if (Details.current_dps_meter.enabled) then
+                if (Details.realtime_dps_meter.enabled) then
                     sectionFrame.enableArenaDPSTrackerButtton:SetText("Disable")
                 else
                     sectionFrame.enableArenaDPSTrackerButtton:SetText("Enable")
@@ -6057,11 +6088,11 @@ do
 			currentDPSTitleImage:SetPoint ("topleft", sectionFrame.currentDPSAnchor, "bottomleft", 0, -40)
 			
             local enableArenaDPS = function()
-                Details.current_dps_meter.enabled = not Details.current_dps_meter.enabled
+                Details.realtime_dps_meter.enabled = not Details.realtime_dps_meter.enabled
                 Details:LoadFramesForBroadcastTools()
                 afterUpdate()
 
-                if (Details.current_dps_meter.enabled) then
+                if (Details.realtime_dps_meter.enabled) then
                     sectionFrame.enableArenaDPSTrackerButtton:SetText("Disable")
                 else
                     sectionFrame.enableArenaDPSTrackerButtton:SetText("Enable")
@@ -6177,7 +6208,7 @@ do
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX + 350, startY - 20, heightSize + 300, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX + 350, startY - 20, heightSize + 300, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection)
@@ -6338,7 +6369,7 @@ do
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection)
@@ -6758,7 +6789,7 @@ do
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection)
@@ -6844,7 +6875,7 @@ do
         }
 
         sectionFrame.sectionOptions = sectionOptions
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection)
@@ -6858,7 +6889,7 @@ do
 
         }
 
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection)
@@ -6873,7 +6904,7 @@ do
 
         }
 
-        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, true, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+        DF:BuildMenu(sectionFrame, sectionOptions, startX, startY-20, heightSize, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
     end
 
     tinsert(Details.optionsSection, buildSection)
