@@ -52,8 +52,8 @@ ItemRackUser = {
 				"10765::::::::57:::::::::", -- [10]
 				"5313::::::::57:::::::::", -- [11]
 				"33262::::::::57:::::::::", -- [12]
-				[15] = "11623::::::::57:::::::::",
 				[16] = "6505::::::::57:::::::::",
+				[15] = "11623::::::::57:::::::::",
 				[17] = 0,
 			},
 		},
@@ -106,7 +106,7 @@ ItemRackUser = {
 	},
 	["Hidden"] = {
 	},
-	["EnableEvents"] = "ON",
+	["CurrentSet"] = "dps",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
 	},
@@ -116,10 +116,10 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
-	["Alpha"] = 1,
-	["EnableQueues"] = "ON",
 	["Queues"] = {
 	},
+	["EnableQueues"] = "ON",
+	["Alpha"] = 1,
 	["MenuScale"] = 1.2,
-	["CurrentSet"] = "dps",
+	["EnableEvents"] = "ON",
 }

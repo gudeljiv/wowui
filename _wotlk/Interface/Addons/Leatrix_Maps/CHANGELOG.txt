@@ -1,3 +1,27 @@
+3.0.06 - 7th September 2022
+- Updated icon for Dire Maul East (side entrance).
+
+3.0.05 - 1st September 2022
+- Added points of interest.
+
+3.0.04 - 31st August 2022
+- File layout fix and Eastern Plaguelands fix #2.
+
+3.0.02 - 31st August 2022
+- Fixed an issue with Eastern Plaguelands explored map showing unexplored areas.
+
+3.0.01 - 31st August 2022
+- Added some points of interest icons.
+- Fixed an issue which caused a texture to be shown behind the map if the map border was enabled and map opacity was not 100%.
+
+3.0.00 - 29th August 2022
+- Welcome to Wrath of the Lich King!
+- Removed BCC transitional code.
+- Added Utgarde Keep icon.
+
+2.5.120 - 24th August 2022
+- Wrath: For 'Show dungeons and raids', the Northrend dungeon icons now show level information (recommended dungeon level, minimum level required to enter and meeting stone level, where known).
+
 2.5.119 - 17th August 2022
 - Wrath: Added new flight points in Tirisfal Glades and Western Plaguelands.
 - Wrath: The 'Show spirit healers' setting is disabled.

@@ -42,18 +42,18 @@ Details_StreamerDB = {
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["scale"] = 1,
+			["point"] = "RIGHT",
 			["arrow_anchor_x"] = 0,
 			["row_height"] = 18,
 			["row_texture"] = "Glamour2",
-			["point"] = "RIGHT",
+			["scale"] = 1,
+			["use_square_mode"] = false,
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
 				1, -- [3]
 				0.480826139450073, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
@@ -83,9 +83,9 @@ Details_StreamerDB = {
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
 			["font_size"] = 10,
-			["arrow_anchor_y"] = 0,
+			["main_frame_strata"] = "LOW",
 			["main_frame_locked"] = true,
-			["use_square_mode"] = false,
+			["arrow_anchor_y"] = 0,
 		},
 	},
 }
