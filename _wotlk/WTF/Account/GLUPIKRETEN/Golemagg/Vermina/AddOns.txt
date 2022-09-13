@@ -43,8 +43,8 @@ AtlasLootClassic: enabled
 AtlasLootClassic_Data: enabled
 Auctionator: enabled
 AutoOpen: enabled
-BlizzMove: disabled
-BlizzMove_Debug: disabled
+BlizzMove: enabled
+BlizzMove_Debug: enabled
 !BugGrabber: enabled
 BugSack: enabled
 ChocolateBar: enabled
@@ -135,4 +135,3 @@ ErrorFilter: enabled
 ErrorMonster: disabled
 EnhancedRaidFrames: enabled
 WeaponSwingTimer: disabled
-EasyFrames: disabled

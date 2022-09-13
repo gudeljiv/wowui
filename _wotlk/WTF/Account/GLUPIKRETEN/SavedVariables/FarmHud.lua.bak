@@ -28,7 +28,7 @@ FarmHudDB = {
 	},
 	["tracking^136458"] = "client",
 	["hud_scale"] = 1.5,
-	["tracking^134153"] = "client",
+	["tracking^136142"] = "client",
 	["tracking^136457"] = "client",
 	["QuestArrowInfoMsg"] = false,
 	["tracking^136463"] = "client",
@@ -40,64 +40,64 @@ FarmHudDB = {
 		0, -- [3]
 		0.5, -- [4]
 	},
-	["holdKeyForMouseOn"] = "_NONE",
+	["buttons_alpha"] = 0.6,
 	["rotation"] = true,
 	["player_dot"] = "blizz",
 	["tracking^136025"] = "client",
-	["SuperTrackedQuest"] = true,
-	["buttons_show"] = false,
+	["cardinalpoints_show"] = false,
+	["tracking^136464"] = "client",
 	["hud_size"] = 1,
-	["tracking^136455"] = "client",
+	["coords_show"] = false,
 	["mouseoverinfo_color"] = {
 		1, -- [1]
 		0.82, -- [2]
 		0, -- [3]
 		0.7, -- [4]
 	},
-	["tracking^132275"] = "client",
-	["showDummy"] = true,
-	["coords_show"] = false,
-	["tracking^136454"] = "client",
+	["buttons_show"] = false,
 	["tracking^135861"] = "client",
-	["gathercircle_show"] = false,
-	["tracking^136466"] = "client",
-	["time_color"] = {
-		1, -- [1]
-		0.82, -- [2]
-		0, -- [3]
-		0.7, -- [4]
-	},
-	["tracking^136453"] = "client",
-	["coords_bottom"] = false,
-	["tracking^132320"] = "client",
-	["cardinalpoints_radius"] = 0.475,
-	["MinimapIcon"] = {
-		["minimapPos"] = 220,
-		["radius"] = 80,
-		["hide"] = true,
-	},
-	["tracking^136451"] = "client",
-	["buttons_buttom"] = false,
-	["time_bottom"] = false,
-	["tracking^237607"] = "client",
-	["tracking^136462"] = "client",
-	["text_scale"] = 1.5,
-	["showDummyBg"] = true,
-	["time_show"] = false,
-	["tracking^133939"] = "client",
+	["tracking^136455"] = "client",
+	["tracking^136217"] = "client",
+	["showDummy"] = true,
 	["healcircle_color"] = {
 		0, -- [1]
 		0.7, -- [2]
 		1, -- [3]
 		0.5, -- [4]
 	},
-	["tracking^136217"] = "client",
+	["gathercircle_show"] = false,
+	["tracking^133939"] = "client",
+	["tracking^136453"] = "client",
+	["coords_bottom"] = false,
+	["showDummyBg"] = true,
+	["tracking^132320"] = "client",
+	["text_scale"] = 1.5,
+	["tracking^136451"] = "client",
+	["buttons_buttom"] = false,
+	["time_bottom"] = false,
+	["tracking^237607"] = "client",
+	["MinimapIcon"] = {
+		["minimapPos"] = 220,
+		["radius"] = 80,
+		["hide"] = true,
+	},
+	["tracking^136462"] = "client",
+	["cardinalpoints_radius"] = 0.475,
+	["time_show"] = false,
+	["time_color"] = {
+		1, -- [1]
+		0.82, -- [2]
+		0, -- [3]
+		0.7, -- [4]
+	},
+	["tracking^136466"] = "client",
+	["tracking^136454"] = "client",
 	["healcircle_show"] = false,
 	["time_radius"] = 0.48,
-	["tracking^136464"] = "client",
-	["cardinalpoints_show"] = false,
-	["buttons_alpha"] = 0.6,
+	["tracking^132275"] = "client",
+	["SuperTrackedQuest"] = true,
+	["holdKeyForMouseOn"] = "_NONE",
 	["time_local"] = true,
 	["tracking^136452"] = "client",
-	["tracking^136142"] = "client",
+	["tracking^134153"] = "client",
 }

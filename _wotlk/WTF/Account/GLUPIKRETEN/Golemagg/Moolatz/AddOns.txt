@@ -162,4 +162,3 @@ Details_EncounterDetails: enabled
 Details_RaidCheck: enabled
 Details_Vanguard: enabled
 HealBarsClassic: enabled
-EasyFrames: disabled
