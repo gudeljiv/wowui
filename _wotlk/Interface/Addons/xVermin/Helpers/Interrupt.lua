@@ -65,3 +65,26 @@ TargetFrame:HookScript(
 		end
 	end
 )
+
+PlayerFrame:HookScript(
+	'OnUpdate',
+	function(self)
+		if ArenaEnemyFrame1 then
+			ArenaEnemyFrame1:HookScript(
+				'OnUpdate',
+				function(self)
+					self:Hide()
+				end
+			)
+		end
+
+		if ArenaEnemyFrame2 then
+			ArenaEnemyFrame2:HookScript(
+				'OnUpdate',
+				function(self)
+					self:Hide()
+				end
+			)
+		end
+	end
+)

@@ -118,6 +118,7 @@ end
 
 local f = CreateFrame('frame')
 f:RegisterEvent('CHAT_MSG_COMBAT_HONOR_GAIN')
+f:RegisterEvent('CURRENCY_DISPLAY_UPDATE')
 f:RegisterEvent('PLAYER_ENTERING_WORLD')
 f:SetScript(
 	'OnEvent',

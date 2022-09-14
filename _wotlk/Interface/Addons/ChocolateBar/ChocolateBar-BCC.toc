@@ -1,8 +1,8 @@
-## Interface: 20502
+## Interface: 20504
 ## Title: ChocolateBar
 ## Notes: A display for LibDataBroker-1.1
 ## Author: Kiatra - github.com/Kiatra/ChocolateBar/
-## Version: v3.7.7
+## Version: v3.8.5
 ## OptionalDeps: Ace3, LibSharedMedia-3.0, LibQTip-1.0
 ## X-WoWI-ID: 12326
 ## X-Curse-Project-ID: 17424
@@ -35,6 +35,6 @@ modules\MoreChocolate.lua
 Options.lua
 
 
-# modules\CB_PlayedTime_Loc.lua
-# modules\CB_PlayedTime.lua
-# modules\CB_PlayedTime_Options.lua
+modules\CB_PlayedTime_Loc.lua
+modules\CB_PlayedTime.lua
+modules\CB_PlayedTime_Options.lua

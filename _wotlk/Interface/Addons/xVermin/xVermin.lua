@@ -17,12 +17,16 @@ f:SetScript(
 			-------------------------------------------
 			-- Position of choco bars
 			-------------------------------------------
-			ChocolateBar1:ClearAllPoints()
-			ChocolateBar1:SetPoint('LEFT', CustomContainer_1, 'LEFT', 5, 0)
-			ChocolateBar1:SetWidth(145)
-			ChocolateBar2:ClearAllPoints()
-			ChocolateBar2:SetPoint('LEFT', CustomContainer_2, 'LEFT', 5, 0)
-			ChocolateBar2:SetWidth(145)
+			if (ChocolateBar1) then
+				ChocolateBar1:ClearAllPoints()
+				ChocolateBar1:SetPoint('LEFT', CustomContainer_1, 'LEFT', 5, 0)
+				ChocolateBar1:SetWidth(145)
+			end
+			if (ChocolateBar2) then
+				ChocolateBar2:ClearAllPoints()
+				ChocolateBar2:SetPoint('LEFT', CustomContainer_2, 'LEFT', 5, 0)
+				ChocolateBar2:SetWidth(145)
+			end
 
 			-------------------------------------------
 			-- Reposition toast frame.
@@ -96,6 +100,9 @@ f:SetScript(
 				1,
 				function(self)
 					if Minimap then
+						Minimap:ClearAllPoints()
+						Minimap:SetPoint('TOPRIGHT', UIParent, 'TOPRIGHT', -40, -40)
+
 						Minimap:HookScript(
 							'OnUpdate',
 							function(self)
@@ -105,9 +112,6 @@ f:SetScript(
 								if not GameTimeFrame.SetBackdrop then
 									Mixin(GameTimeFrame, BackdropTemplateMixin)
 								end
-
-								Minimap:ClearAllPoints()
-								Minimap:SetPoint('TOPRIGHT', UIParent, 'TOPRIGHT', -40, -40)
 
 								MiniMapWorldMapButton:Hide()
 
@@ -159,24 +163,6 @@ f:SetScript(
 					PetName:Hide()
 				end
 			)
-
-			if ArenaEnemyFrame1 then
-				ArenaEnemyFrame1:HookScript(
-					'OnUpdate',
-					function(self)
-						self:Hide()
-					end
-				)
-			end
-
-			if ArenaEnemyFrame2 then
-				ArenaEnemyFrame2:HookScript(
-					'OnUpdate',
-					function(self)
-						self:Hide()
-					end
-				)
-			end
 
 			-- PlayerFrame:HookScript(
 			-- 	"OnUpdate",

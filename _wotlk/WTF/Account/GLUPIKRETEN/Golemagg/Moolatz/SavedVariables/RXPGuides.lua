@@ -1,20 +1,20 @@
 
 RXPCData = {
 	["hideWindow"] = false,
-	["hardcore"] = false,
+	["SoM"] = true,
 	["completedWaypoints"] = {
 		[11] = {
 		},
 	},
 	["currentStep"] = 11,
-	["GA"] = false,
+	["hardcore"] = false,
 	["currentGuideGroup"] = "Horde 60-70",
 	["flightPaths"] = {
 		[58] = "Zoram'gar Outpost, Ashenvale",
 		[166] = "Emerald Sanctuary, Felwood",
 		[61] = "Splintertree Post, Ashenvale",
+		[18] = "Booty Bay, Stranglethorn",
 		[99] = "Thrallmar, Hellfire Peninsula",
-		[68] = "Light's Hope Chapel, Eastern Plaguelands",
 		[30] = "Freewind Post, Thousand Needles",
 		[79] = "Marshal's Refuge, Un'Goro Crater",
 		[10] = "The Sepulcher, Silverpine Forest",
@@ -25,19 +25,19 @@ RXPCData = {
 		[22] = "Thunder Bluff, Mulgore",
 		[77] = "Camp Taurajo, The Barrens",
 		[23] = "Orgrimmar, Durotar",
-		[384] = "The Bulwark, Tirisfal",
+		[69] = "Moonglade",
 		[383] = "Thondoril River, Western Plaguelands",
 		[48] = "Bloodvenom Post, Felwood",
 		[25] = "Crossroads, The Barrens",
 		[130] = "Hellfire Peninsula, The Dark Portal, Horde",
-		[69] = "Moonglade",
+		[384] = "The Bulwark, Tirisfal",
 		[13] = "Tarren Mill, Hillsbrad",
 		[53] = "Everlook, Winterspring",
 		[179] = "Mudsprocket, Dustwallow Marsh",
 		[55] = "Brackenwall Village, Dustwallow Marsh",
 		[56] = "Stonard, Swamp of Sorrows",
 		[29] = "Sun Rock Retreat, Stonetalon Mountains",
-		[18] = "Booty Bay, Stranglethorn",
+		[68] = "Light's Hope Chapel, Eastern Plaguelands",
 	},
 	["phase"] = 6,
 	["xprate"] = 1.5,
@@ -51,7 +51,7 @@ RXPCData = {
 		[7] = true,
 	},
 	["disableItemWindow"] = true,
-	["SoM"] = true,
+	["GA"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -356,10 +356,10 @@ RXPCTrackingData = {
 					},
 					["quests"] = {
 						["Tanaris"] = {
-							[2873] = 8325,
-							[8366] = 8325,
-							[8365] = 8325,
 							[1691] = 7950,
+							[8366] = 8325,
+							[2873] = 8325,
+							[8365] = 8325,
 						},
 					},
 				},
@@ -608,11 +608,11 @@ RXPCTrackingData = {
 					},
 					["quests"] = {
 						["Un'Goro Crater"] = {
-							[4289] = 12225,
-							[13850] = 11400,
 							[9052] = 11025,
-							[9063] = 1087,
 							[4301] = 12225,
+							[4289] = 12225,
+							[9063] = 1087,
+							[13850] = 11400,
 						},
 						["Thunder Bluff"] = {
 							[3782] = 1012,
@@ -682,17 +682,17 @@ RXPCTrackingData = {
 							["xp"] = 10200,
 							["count"] = 1,
 						},
-						["Tanaris"] = {
-							["xp"] = 11850,
-							["count"] = 1,
+						["Blackrock Depths"] = {
+							["xp"] = 4424,
+							["count"] = 11,
 						},
 						["Blackrock Mountain"] = {
 							["xp"] = 2128,
 							["count"] = 6,
 						},
-						["Blackrock Depths"] = {
-							["xp"] = 4424,
-							["count"] = 11,
+						["Tanaris"] = {
+							["xp"] = 11850,
+							["count"] = 1,
 						},
 					},
 					["timestamp"] = {
@@ -863,8 +863,8 @@ RXPCTrackingData = {
 							[5083] = 6300,
 							[977] = 10125,
 							[3783] = 9450,
-							[969] = 14325,
 							[5054] = 12675,
+							[969] = 14325,
 						},
 						["Felwood"] = {
 							[8461] = 12225,
@@ -973,8 +973,8 @@ RXPCTrackingData = {
 							[7142] = 19575,
 							[7163] = 13125,
 							[7124] = 12675,
-							[7161] = 13125,
 							[8272] = 1312,
+							[7161] = 13125,
 						},
 					},
 				},
@@ -1038,24 +1038,24 @@ RXPCComms = {
 					["class"] = "WARRIOR",
 				},
 				["Complaining"] = {
-					["class"] = "WARLOCK",
+					["level"] = 70,
 					["lastSeen"] = 2019328.136,
 					["xpPercentage"] = 0,
-					["isRxp"] = true,
+					["class"] = "WARLOCK",
 					["timePlayed"] = -198.5099999997765,
-					["level"] = 70,
+					["isRxp"] = true,
 				},
 				["Irontøs"] = {
 					["timePlayed"] = -185.2780000001658,
 					["class"] = "WARRIOR",
 				},
 				["Uqr"] = {
-					["isRxp"] = true,
+					["class"] = "MAGE",
 					["lastSeen"] = 2528151.484,
 					["xpPercentage"] = 0,
-					["level"] = 46,
+					["isRxp"] = true,
 					["timePlayed"] = 0,
-					["class"] = "MAGE",
+					["level"] = 46,
 				},
 				["Chuum"] = {
 					["timePlayed"] = -1823.430000000168,
@@ -1074,12 +1074,12 @@ RXPCComms = {
 					["class"] = "HUNTER",
 				},
 				["Judgewink"] = {
-					["isRxp"] = true,
+					["class"] = "PALADIN",
 					["lastSeen"] = 26651.365,
 					["xpPercentage"] = 56,
-					["level"] = 44,
+					["isRxp"] = true,
 					["timePlayed"] = -849.293999999998,
-					["class"] = "PALADIN",
+					["level"] = 44,
 				},
 				["Frenzybubble"] = {
 					["timePlayed"] = -2405.13199999975,

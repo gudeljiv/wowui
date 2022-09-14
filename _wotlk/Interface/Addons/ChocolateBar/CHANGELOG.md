@@ -1,7 +1,7 @@
 # ChocolateBar
 
-## [v3.7.7](https://github.com/Kiatra/ChocolateBar/tree/v3.7.7) (2021-10-01)
-[Full Changelog](https://github.com/Kiatra/ChocolateBar/commits/v3.7.7) [Previous Releases](https://github.com/Kiatra/ChocolateBar/releases)
+## [v3.8.5](https://github.com/Kiatra/ChocolateBar/tree/v3.8.5) (2022-08-31)
+[Full Changelog](https://github.com/Kiatra/ChocolateBar/commits/v3.8.5) [Previous Releases](https://github.com/Kiatra/ChocolateBar/releases)
 
-- add CF id  
-    add default toc version  
+- Merge pull request #11 from mrbuds/master  
+    Fixes for CB\_GameMusic & CB\_Laucher  

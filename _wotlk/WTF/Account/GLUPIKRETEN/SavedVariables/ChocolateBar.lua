@@ -50,7 +50,7 @@ ChocolateBarDB = {
 		["Konac - Dreadnaught"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 	},
-	["addonVersion"] = "v3.7.7",
+	["addonVersion"] = "v3.8.5",
 	["profiles"] = {
 		["Default"] = {
 			["barSettings"] = {
@@ -76,7 +76,6 @@ ChocolateBarDB = {
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["forceColor"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -87,7 +86,7 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["moveFrames"] = false,
+			["forceColor"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -521,17 +520,17 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 				},
 			},
-			["desaturated"] = false,
+			["gap"] = 0,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["fixedStrata"] = true,
-			["gap"] = 0,
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontName"] = "Friz Quadrata TT",
+			["desaturated"] = false,
 			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
@@ -550,7 +549,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 1451,
+		["total"] = 329627,
+		["timeStamp"] = 2968040.349,
+		["timeAtThisLevel"] = 5171,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -670,7 +671,9 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 474766,
+		["total"] = 749103,
+		["timeAtThisLevel"] = 14988,
+		["timeStamp"] = 2976318.271,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,
