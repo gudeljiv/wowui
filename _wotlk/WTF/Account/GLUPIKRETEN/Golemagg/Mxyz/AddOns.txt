@@ -130,3 +130,4 @@ Blizzard_CompactRaidFrames: enabled
 Blizzard_CUFProfiles: enabled
 EnhancedRaidFrames: enabled
 WeaponSwingTimer: disabled
+EasyFrames: enabled

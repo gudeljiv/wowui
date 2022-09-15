@@ -167,3 +167,4 @@ VuhDoOptions: disabled
 ErrorFilter: enabled
 ErrorMonster: disabled
 EnhancedRaidFrames: enabled
+EasyFrames: enabled

@@ -1,0 +1,30 @@
+commit 1fdb8e681f4acbddd9bc7de33ae3f6ddfc6ca717
+Author: Johan Bäckman <johan.c.backman@gmail.com>
+Date:   Tue Aug 28 20:45:47 2018 +0200
+
+    update readme
+
+commit 842420eae5f42003e180f2bbaf6f4aeab9297be8
+Author: Johan Bäckman <johan.c.backman@gmail.com>
+Date:   Tue Aug 28 20:38:40 2018 +0200
+
+    Just var name changes
+
+commit 3ae142734682454b663b609a86646cc8520216d6
+Author: Johan Bäckman <johan.c.backman@gmail.com>
+Date:   Wed Jul 18 21:34:27 2018 +0200
+
+    Update for 8.0
+
+commit 3b140b08c0761a07928ade0e25eea90690cf8c4d
+Author: Johan Bäckman <johan.c.backman@gmail.com>
+Date:   Tue Jul 10 18:54:06 2018 +0200
+
+    Add readme
+
+commit c81ef2c9a5d1d629b3d0fbcd97faaad12e1ee030
+Author: Johan Bäckman <johan.c.backman@gmail.com>
+Date:   Tue Jul 10 18:33:00 2018 +0200
+
+    Initial commit
+

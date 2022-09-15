@@ -128,3 +128,4 @@ Blizzard_CUFProfiles: enabled
 EnhancedRaidFrames: enabled
 Attack bar: disabled
 WeaponSwingTimer: disabled
+EasyFrames: enabled

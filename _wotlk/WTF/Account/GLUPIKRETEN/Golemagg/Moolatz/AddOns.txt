@@ -163,3 +163,4 @@ Details_RaidCheck: enabled
 Details_Vanguard: enabled
 HealBarsClassic: enabled
 FarmHud_TrailPath: enabled
+EasyFrames: enabled

@@ -145,3 +145,4 @@ ErrorMonster: disabled
 AccountWideRaidProfiles: disabled
 EnhancedRaidFrames: enabled
 WeaponSwingTimer: disabled
+EasyFrames: enabled

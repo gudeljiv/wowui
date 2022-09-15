@@ -127,3 +127,4 @@ ErrorFilter: enabled
 ErrorMonster: disabled
 EnhancedRaidFrames: enabled
 WeaponSwingTimer: disabled
+EasyFrames: enabled

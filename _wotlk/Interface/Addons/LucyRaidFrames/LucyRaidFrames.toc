@@ -1,0 +1,12 @@
+## Interface: 80000
+## Title: LucyRaidFrames
+## Notes: Adjusts Blizzards CompactRaidFrames to my own preferences
+## Version: 0.0.1
+## Author: LucyON
+## SavedVariables: globalSettings
+## SavedVariablesPerCharacter: characterSettings
+
+## X-License: MIT
+## X-Category: Unit Frames
+
+LucyRaidFrames.lua
