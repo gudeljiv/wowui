@@ -322,19 +322,28 @@ f:SetScript(
 		EnableAddOn('Blizzard_CUFProfiles')
 
 		-------------------------------------------
-		-- Add Beauty Border to raid buffs icons
+		-- Add Beauty Border to party and raid buffs icons
 		-------------------------------------------
-		for i = 1, 40 do
-			for j = 1, 20 do
-				if _G['CompactPartyFrameMember' .. i .. 'Buff' .. j] then
-					_G['CompactPartyFrameMember' .. i .. 'Buff' .. j]:CreateBeautyBorder(6)
+		for member = 1, 5, 1 do
+			for buff = 1, 5, 1 do
+				if _G['CompactPartyFrameMember' .. member .. 'Buff' .. buff] then
+					_G['CompactPartyFrameMember' .. member .. 'Buff' .. buff]:CreateBeautyBorder(6)
+				end
+				if _G['CompactPartyFrameMember' .. member .. 'Debuff' .. buff] then
+					_G['CompactPartyFrameMember' .. member .. 'Debuff' .. buff]:CreateBeautyBorder(6)
 				end
 			end
 		end
-		for i = 1, 40 do
-			for j = 1, 20 do
-				if _G['CompactPartyFrameMember' .. i .. 'Debuff' .. j] then
-					_G['CompactPartyFrameMember' .. i .. 'Debuff' .. j]:CreateBeautyBorder(6)
+
+		for group = 1, 8, 1 do
+			for member = 1, 5, 1 do
+				for buff = 1, 5, 1 do
+					if _G['CompactRaidGroup' .. group .. 'Member' .. member .. 'Buff' .. buff] then
+						_G['CompactRaidGroup' .. group .. 'Member' .. member .. 'Buff' .. buff]:CreateBeautyBorder(6)
+					end
+					if _G['CompactRaidGroup' .. group .. 'Member' .. member .. 'Debuff' .. buff] then
+						_G['CompactRaidGroup' .. group .. 'Member' .. member .. 'Debuff' .. buff]:CreateBeautyBorder(6)
+					end
 				end
 			end
 		end
