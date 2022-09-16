@@ -19,6 +19,7 @@ skills["warrior"] = [
     {"name": "whirlwind", "key": "6"},
     {"name": "sweeping strikes", "key": "r", "modifier": "alt"},
     {"name": "victory rush", "key": "e", "modifier": "shift"},
+    {"name": "disarm", "key": "e", "modifier": "shift"},
     {"name": "thunder clap", "key": "e"},
     {"name": "rampage", "key": "home"},
     {"name": "shield slam", "key": "4"},
