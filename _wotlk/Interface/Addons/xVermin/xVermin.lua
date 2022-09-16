@@ -320,7 +320,15 @@ f:SetScript(
 
 		EnableAddOn('Blizzard_CompactRaidFrames')
 		EnableAddOn('Blizzard_CUFProfiles')
+	end
+)
 
+local f = CreateFrame('frame')
+f:RegisterEvent('PLAYER_ENTERING_WORLD')
+f:RegisterEvent('RAID_ROSTER_UPDATE')
+f:SetScript(
+	'OnEvent',
+	function(self, event, isInitialLogin, isReloadingUi)
 		-------------------------------------------
 		-- Add Beauty Border to party and raid buffs icons
 		-------------------------------------------
@@ -349,3 +357,26 @@ f:SetScript(
 		end
 	end
 )
+
+-- PlayerFrame:HookScript(
+-- 	'OnUpdate',
+-- 	function(self)
+-- 		if ArenaEnemyFrame1 then
+-- 			ArenaEnemyFrame1:HookScript(
+-- 				'OnUpdate',
+-- 				function(self)
+-- 					self:Hide()
+-- 				end
+-- 			)
+-- 		end
+
+-- 		if ArenaEnemyFrame2 then
+-- 			ArenaEnemyFrame2:HookScript(
+-- 				'OnUpdate',
+-- 				function(self)
+-- 					self:Hide()
+-- 				end
+-- 			)
+-- 		end
+-- 	end
+-- )

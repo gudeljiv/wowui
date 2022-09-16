@@ -23,7 +23,7 @@ Frames/MailBoxFrame.lua
 Frames/MailBoxFrame.lua
 Frames/MerchantFrame.lua
 Frames/PlayerPetTargetHealthPercentage.lua
-Frames/RaidFrameReSizer.lua
+Frames/RaidFrames.lua
 Frames/SpellBookFrame.lua
 Frames/TalentFrame.lua
 Frames/Unit.lua

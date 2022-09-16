@@ -15,7 +15,6 @@ for i, v in pairs(
 		PetStableFrame,
 		GossipFrame,
 		MerchantFrame,
-		BattlefieldFrame,
 		PVPParentFrame
 	}
 ) do
