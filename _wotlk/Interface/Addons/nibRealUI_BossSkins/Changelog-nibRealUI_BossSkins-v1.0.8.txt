@@ -1,0 +1,11 @@
+tag v1.0.8
+034b7bfec97e9d61d2cb7ae97890a535daaabde9
+Gethe <gethe88@gmail.com>
+2015-03-11 21:19:59 -0500
+
+
+
+--------------------
+
+Gethe:
+	- dont wrap text
