@@ -1,10 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[37] = {
+		[56] = {
 		},
 	},
-	["currentStep"] = 37,
+	["currentStep"] = 56,
 	["phase"] = 6,
 	["currentGuideGroup"] = "Horde 60-70",
 	["flightPaths"] = {
@@ -12,14 +12,15 @@ RXPCData = {
 		[122] = "Area 52, Netherstorm",
 		[126] = "Thunderlord Stronghold, Blade's Edge Mountains",
 		[123] = "Shadowmoon Village, Shadowmoon Valley",
+		[99] = "Thrallmar, Hellfire Peninsula",
 		[163] = "Mok'Nathal Village, Blade's Edge Mountains",
 		[127] = "Stonebreaker Hold, Terokkar Forest",
-		[99] = "Thrallmar, Hellfire Peninsula",
+		[151] = "Swamprat Post, Zangarmarsh",
 		[120] = "Garadar, Nagrand",
 		[150] = "Cosmowrench, Netherstorm",
 		[128] = "Shattrath, Terokkar Forest",
 		[102] = "Falcon Watch, Hellfire Peninsula",
-		[151] = "Swamprat Post, Zangarmarsh",
+		[159] = "Sanctum of the Stars, Shadowmoon Valley",
 		[141] = "Spinebreaker Ridge, Hellfire Peninsula",
 		[160] = "Evergrove, Blade's Edge Mountains",
 		[139] = "The Stormspire, Netherstorm",
@@ -30,8 +31,10 @@ RXPCData = {
 	["currentGuideName"] = "69-70 Shadowmoon Valley (Scryer)",
 	["stepSkip"] = {
 		true, -- [1]
-		[21] = true,
+		[50] = true,
 		[31] = true,
+		[21] = true,
+		[46] = true,
 	},
 	["SoM"] = 1,
 	["frameHeight"] = 125.0000152587891,
@@ -126,7 +129,7 @@ RXPCTrackingData = {
 				},
 				[70] = {
 					["groupExperience"] = 0,
-					["deaths"] = 126,
+					["deaths"] = 227,
 					["mobs"] = {
 					},
 					["timestamp"] = {
@@ -139,7 +142,7 @@ RXPCTrackingData = {
 							["hour"] = 18,
 							["minute"] = 19,
 						},
-						["started"] = 1663350634,
+						["started"] = 1663421772,
 					},
 					["quests"] = {
 					},
@@ -377,12 +380,12 @@ RXPCComms = {
 					["class"] = "DRUID",
 				},
 				["Madkiller"] = {
-					["isRxp"] = true,
+					["level"] = 66,
 					["lastSeen"] = 592977.4400000001,
 					["xpPercentage"] = 84,
-					["level"] = 66,
-					["timePlayed"] = -1470.20299999998,
 					["class"] = "ROGUE",
+					["timePlayed"] = -1470.20299999998,
+					["isRxp"] = true,
 				},
 				["Ama"] = {
 					["timePlayed"] = -528.4710000003688,
@@ -425,12 +428,12 @@ RXPCComms = {
 					["class"] = "HUNTER",
 				},
 				["Wolfgarr"] = {
-					["isRxp"] = true,
+					["level"] = 66,
 					["lastSeen"] = 590277.214,
 					["xpPercentage"] = 0,
-					["level"] = 66,
-					["timePlayed"] = 0,
 					["class"] = "WARRIOR",
+					["timePlayed"] = 0,
+					["isRxp"] = true,
 				},
 				["Ctp"] = {
 					["timePlayed"] = -306.3059999998659,

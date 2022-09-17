@@ -156,8 +156,8 @@ function NeedsFoodBadly:UpdateMacros()
 
 	CreateOrUpdateMacro('Food', foodMacro)
 	CreateOrUpdateMacro('Drink', drinkMacro)
-	CreateOrUpdateMacro('Healthstone', healthstoneMacro)
-	CreateOrUpdateMacro('HealthPotion', healthPotionMacro)
+	CreateOrUpdateMacro('Stone', healthstoneMacro)
+	CreateOrUpdateMacro('Potion', healthPotionMacro)
 
 	if (UnitExists('pet') and xVermin.Class == 'HUNTER') then
 		-- local petType = UnitCreatureFamily("pet")

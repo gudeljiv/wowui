@@ -17,9 +17,9 @@ EnhancedRaidFramesDB = {
 		["Mxzq - Golemagg"] = {
 			["backgroundAlpha"] = 0.6000000000000001,
 			["rangeAlpha"] = 0.2,
-			["showDebuffs"] = false,
-			["showDispellableDebuffs"] = false,
 			["showBuffs"] = false,
+			["showDispellableDebuffs"] = false,
+			["showDebuffs"] = false,
 		},
 		["Vermina - Golemagg"] = {
 		},
@@ -58,9 +58,9 @@ EnhancedRaidFramesDB = {
 				["mineOnly"] = true,
 			},
 			["backgroundAlpha"] = 0.7000000000000001,
-			["showBuffs"] = false,
 			["showRaidIcons"] = false,
 			["showDebuffs"] = false,
+			["showBuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["rangeAlpha"] = 0.6000000000000001,
 		},
@@ -70,10 +70,10 @@ EnhancedRaidFramesDB = {
 			{
 				["indicatorSize"] = 22,
 				["showTooltip"] = false,
-				["mineOnly"] = true,
+				["auras"] = "Rejuvenation",
 				["colorTextByDebuff"] = true,
 				["textSize"] = 12,
-				["auras"] = "Rejuvenation",
+				["mineOnly"] = true,
 			}, -- [1]
 			nil, -- [2]
 			{
@@ -92,17 +92,17 @@ EnhancedRaidFramesDB = {
 			[7] = {
 				["indicatorSize"] = 22,
 				["showTooltip"] = false,
-				["mineOnly"] = true,
+				["auras"] = "Regrowth",
 				["colorTextByDebuff"] = true,
 				["textSize"] = 12,
-				["auras"] = "Regrowth",
+				["mineOnly"] = true,
 			},
-			["rangeAlpha"] = 0.5,
-			["showBuffs"] = false,
-			["showRaidIcons"] = false,
-			["showDebuffs"] = false,
-			["showDispellableDebuffs"] = false,
 			["backgroundAlpha"] = 0.7000000000000001,
+			["showDebuffs"] = false,
+			["showRaidIcons"] = false,
+			["showBuffs"] = false,
+			["showDispellableDebuffs"] = false,
+			["rangeAlpha"] = 0.5,
 		},
 		["Battitude - Golemagg"] = {
 		},

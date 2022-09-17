@@ -88,7 +88,8 @@ VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [stance:2] Disarm; Defensive Stance
+/startattack
+/cast Taunt
 END
 VER 3 0000000001000013 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

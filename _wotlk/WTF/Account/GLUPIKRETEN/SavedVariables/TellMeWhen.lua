@@ -23,7 +23,7 @@ TellMeWhenDB = {
 		["Mxys - Golemagg"] = "Priest",
 		["Vermins - Stonespine"] = "Warrior",
 		["Moolatz - Golemagg"] = "Druid",
-		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Dotwise - Golemagg"] = "Warrior",
 		["Battlearm - Golemagg"] = "Deathknight",
 		["Greenwise - Golemagg"] = "Warrior",
@@ -34,7 +34,7 @@ TellMeWhenDB = {
 		["Pitchwise - Dreadnaught"] = "Warrior",
 		["Konac - Dreadnaught"] = "Priest",
 		["Mxyzptlk - Golemagg"] = "Warlock",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 	},
 	["global"] = {
 		["BackdropColor"] = "00ffffff",
@@ -212,6 +212,7 @@ TellMeWhenDB = {
 			},
 		},
 		["Main profile"] = {
+			["NumGroups"] = 7,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TQuFk14Ix42",
@@ -257,6 +258,7 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
+							["DurationMinEnabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -266,7 +268,6 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["DurationMin"] = 15,
-							["DurationMinEnabled"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -300,14 +301,10 @@ TellMeWhenDB = {
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TQvxnAfbGyU",
-					["Locked"] = true,
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
-					["Alpha"] = 0,
 					["Scale"] = 1,
+					["Name"] = "Warrior Spells",
+					["Alpha"] = 0,
+					["Locked"] = true,
 					["Columns"] = 20,
 					["Icons"] = {
 						{
@@ -449,7 +446,11 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1TWYMfcUzmi6",
 						},
 					},
-					["Name"] = "Warrior Spells",
+					["Point"] = {
+						["y"] = -5,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
 				}, -- [2]
 				{
 					["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -510,14 +511,10 @@ TellMeWhenDB = {
 				}, -- [4]
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
-					["Locked"] = true,
-					["Point"] = {
-						["y"] = -75,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
-					["Alpha"] = 0,
 					["Scale"] = 1,
+					["Name"] = "Hunter Spells",
+					["Alpha"] = 0,
+					["Locked"] = true,
 					["Columns"] = 20,
 					["Icons"] = {
 						{
@@ -540,7 +537,11 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 						}, -- [2]
 					},
-					["Name"] = "Hunter Spells",
+					["Point"] = {
+						["y"] = -75,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
 				}, -- [5]
 				{
 					["GUID"] = "TMW:group:1TeVDtajUwqa",
@@ -579,7 +580,6 @@ TellMeWhenDB = {
 				}, -- [7]
 			},
 			["Version"] = 91200,
-			["NumGroups"] = 7,
 		},
 		["Arms"] = {
 			["Version"] = 91200,
@@ -697,10 +697,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [5]
 								{
-									["Name"] = "22391",
-									["Level"] = 1,
 									["PrtsAfter"] = 1,
 									["Type"] = "TALENTLEARNED",
+									["Name"] = "22391",
+									["Level"] = 1,
 								}, -- [6]
 								{
 									["Type"] = "SPELLCD",
@@ -740,10 +740,10 @@ TellMeWhenDB = {
 									["Operator"] = "~=",
 								}, -- [12]
 								{
-									["Name"] = "22391",
-									["Level"] = 1,
 									["PrtsAfter"] = 2,
 									["Type"] = "TALENTLEARNED",
+									["Name"] = "22391",
+									["Level"] = 1,
 								}, -- [13]
 								{
 									["PrtsBefore"] = 1,
@@ -752,10 +752,10 @@ TellMeWhenDB = {
 									["Level"] = 1,
 								}, -- [14]
 								{
-									["Name"] = "167105",
-									["Level"] = 1,
 									["PrtsAfter"] = 1,
 									["Type"] = "LASTCAST",
+									["Name"] = "167105",
+									["Level"] = 1,
 								}, -- [15]
 								{
 									["Type"] = "BUFFDUR",
@@ -864,7 +864,14 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										"", -- [1]
+										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+									},
+								},
+							},
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -930,14 +937,7 @@ TellMeWhenDB = {
 								}, -- [9]
 								["n"] = 9,
 							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										"", -- [1]
-										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["States"] = {
 								nil, -- [1]
 								{
@@ -952,7 +952,14 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										"", -- [1]
+										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+									},
+								},
+							},
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -989,14 +996,7 @@ TellMeWhenDB = {
 								}, -- [5]
 								["n"] = 5,
 							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										"", -- [1]
-										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["States"] = {
 								nil, -- [1]
 								{
@@ -1036,14 +1036,20 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
+									},
+								},
+							},
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
-									["Name"] = "7384",
-									["Level"] = 2,
 									["Checked"] = true,
 									["Type"] = "BUFFSTACKS",
+									["Name"] = "7384",
+									["Level"] = 2,
 								}, -- [1]
 								{
 									["Name"] = "12294",
@@ -1075,13 +1081,7 @@ TellMeWhenDB = {
 								}, -- [6]
 								["n"] = 6,
 							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["States"] = {
 								nil, -- [1]
 								{
@@ -1122,10 +1122,10 @@ TellMeWhenDB = {
 									["Operator"] = "<",
 								}, -- [4]
 								{
-									["Name"] = "execute",
-									["Level"] = 1,
 									["PrtsAfter"] = 2,
 									["Type"] = "COUNTER",
+									["Name"] = "execute",
+									["Level"] = 1,
 								}, -- [5]
 								{
 									["Name"] = "cooldown_toggle",
@@ -1393,10 +1393,10 @@ TellMeWhenDB = {
 									["Operator"] = ">",
 								}, -- [5]
 								{
-									["Name"] = "testofmight",
-									["Level"] = 1,
 									["PrtsAfter"] = 1,
 									["Type"] = "COUNTER",
+									["Name"] = "testofmight",
+									["Level"] = 1,
 								}, -- [6]
 								{
 									["PrtsBefore"] = 2,
@@ -1412,10 +1412,10 @@ TellMeWhenDB = {
 									["Operator"] = ">",
 								}, -- [8]
 								{
-									["Name"] = "22391",
-									["Level"] = 1,
 									["PrtsAfter"] = 1,
 									["Type"] = "TALENTLEARNED",
+									["Name"] = "22391",
+									["Level"] = 1,
 								}, -- [9]
 								{
 									["Type"] = "SPELLCD",
@@ -1492,10 +1492,10 @@ TellMeWhenDB = {
 									["Operator"] = ">",
 								}, -- [5]
 								{
-									["Name"] = "testofmight",
-									["Level"] = 1,
 									["PrtsAfter"] = 1,
 									["Type"] = "COUNTER",
+									["Name"] = "testofmight",
+									["Level"] = 1,
 								}, -- [6]
 								{
 									["PrtsBefore"] = 1,
@@ -1511,10 +1511,10 @@ TellMeWhenDB = {
 									["Operator"] = ">",
 								}, -- [8]
 								{
-									["Name"] = "22391",
-									["Level"] = 1,
 									["PrtsAfter"] = 1,
 									["Type"] = "TALENTLEARNED",
+									["Name"] = "22391",
+									["Level"] = 1,
 								}, -- [9]
 								{
 									["Type"] = "SPELLCD",
@@ -1741,7 +1741,14 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										"", -- [1]
+										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+									},
+								},
+							},
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -1807,14 +1814,7 @@ TellMeWhenDB = {
 								}, -- [9]
 								["n"] = 9,
 							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										"", -- [1]
-										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["States"] = {
 								nil, -- [1]
 								{
@@ -1829,7 +1829,14 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										"", -- [1]
+										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+									},
+								},
+							},
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -1862,14 +1869,7 @@ TellMeWhenDB = {
 								}, -- [4]
 								["n"] = 4,
 							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										"", -- [1]
-										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["States"] = {
 								nil, -- [1]
 								{
@@ -1905,14 +1905,20 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
+									},
+								},
+							},
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
-									["Name"] = "7384",
-									["Level"] = 2,
 									["Checked"] = true,
 									["Type"] = "BUFFSTACKS",
+									["Name"] = "7384",
+									["Level"] = 2,
 								}, -- [1]
 								{
 									["Name"] = "12294",
@@ -1940,13 +1946,7 @@ TellMeWhenDB = {
 								}, -- [5]
 								["n"] = 5,
 							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["States"] = {
 								nil, -- [1]
 								{
@@ -2319,7 +2319,14 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										"", -- [1]
+										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+									},
+								},
+							},
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -2378,14 +2385,7 @@ TellMeWhenDB = {
 								}, -- [9]
 								["n"] = 9,
 							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										"", -- [1]
-										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["States"] = {
 								nil, -- [1]
 								{
@@ -2400,7 +2400,14 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										"", -- [1]
+										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
+									},
+								},
+							},
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -2451,14 +2458,7 @@ TellMeWhenDB = {
 								}, -- [7]
 								["n"] = 7,
 							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										"", -- [1]
-										"[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]", -- [2]
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["States"] = {
 								nil, -- [1]
 								{
@@ -2507,7 +2507,13 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "12294",
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
+									},
+								},
+							},
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -2564,13 +2570,7 @@ TellMeWhenDB = {
 								}, -- [8]
 								["n"] = 8,
 							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										[2] = "[Stacks(icon=\"TMW:icon:1RGeD0uM4U3o\"):Hide(0):Percent]",
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["States"] = {
 								nil, -- [1]
 								{
@@ -2586,7 +2586,13 @@ TellMeWhenDB = {
 							["FakeHidden"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "7384",
-							["DurationMax"] = 2,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										[2] = "[Stacks:Hide(0, 1)]",
+									},
+								},
+							},
 							["Enabled"] = true,
 							["Conditions"] = {
 								{
@@ -2636,13 +2642,7 @@ TellMeWhenDB = {
 								}, -- [8]
 								["n"] = 8,
 							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										[2] = "[Stacks:Hide(0, 1)]",
-									},
-								},
-							},
+							["DurationMax"] = 2,
 							["States"] = {
 								nil, -- [1]
 								{
@@ -2887,10 +2887,10 @@ TellMeWhenDB = {
 									["Operator"] = ">",
 								}, -- [8]
 								{
-									["Name"] = "22391",
-									["Level"] = 1,
 									["PrtsAfter"] = 1,
 									["Type"] = "TALENTLEARNED",
+									["Name"] = "22391",
+									["Level"] = 1,
 								}, -- [9]
 								{
 									["Type"] = "SPELLCD",
@@ -2982,10 +2982,10 @@ TellMeWhenDB = {
 									["Operator"] = ">",
 								}, -- [8]
 								{
-									["Name"] = "22391",
-									["Level"] = 1,
 									["PrtsAfter"] = 1,
 									["Type"] = "TALENTLEARNED",
+									["Name"] = "22391",
+									["Level"] = 1,
 								}, -- [9]
 								{
 									["Type"] = "SPELLCD",
@@ -3503,61 +3503,57 @@ TellMeWhenDB = {
 							["CustomTex"] = "5308",
 							["GUID"] = "TMW:icon:1RTC8jAyqkvm",
 						},
-						[133] = {
+						[84] = {
 							["Enabled"] = true,
 							["Type"] = "conditionicon",
-							["ClockGCD"] = true,
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Period"] = 0.8,
-									["Animation"] = "ICONALPHAFLASH",
-									["Infinite"] = true,
-									["OnConditionConditions"] = {
-										{
-											["Icon"] = "TMW:icon:1QpP_HqMELD0",
-											["Type"] = "ICON",
-										}, -- [1]
-										["n"] = 1,
-									},
-									["Event"] = "WCSP",
-									["AnimColor"] = "ff000000",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["Name"] = "403",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
-										"", -- [1]
-										"", -- [2]
+										[2] = "3",
 									},
 								},
 							},
 							["FakeHidden"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "COUNTER",
-									["Name"] = "target_toggle",
+									["Type"] = "ICON",
+									["Icon"] = "TMW:icon:1RGdpp24C0VS",
 									["Level"] = 1,
 								}, -- [1]
 								{
-									["PrtsBefore"] = 1,
-									["Type"] = "EXISTS",
+									["Type"] = "ICON",
+									["Icon"] = "TMW:icon:1RZ8uyGIHkyU",
 									["Level"] = 1,
-									["Unit"] = "target",
 								}, -- [2]
 								{
-									["Type"] = "REACT",
-									["AndOr"] = "OR",
-									["Level"] = 2,
-									["PrtsAfter"] = 1,
-									["Unit"] = "target",
+									["Type"] = "ICON",
+									["Icon"] = "TMW:icon:1Rg1PA0lcPyA",
+									["Level"] = 1,
 								}, -- [3]
-								["n"] = 3,
+								{
+									["Type"] = "ICON",
+									["Icon"] = "TMW:icon:1RGdpp2C6tbD",
+									["Level"] = 1,
+								}, -- [4]
+								{
+									["Type"] = "ICON",
+									["Icon"] = "TMW:icon:1RTBzFiJhwQj",
+									["Level"] = 1,
+								}, -- [5]
+								{
+									["Type"] = "ICON",
+									["Icon"] = "TMW:icon:1RGdpp2Rvc8H",
+									["Level"] = 1,
+								}, -- [6]
+								{
+									["Type"] = "ICON",
+									["Icon"] = "TMW:icon:1RGe00HwCayk",
+									["Level"] = 1,
+								}, -- [7]
+								["n"] = 7,
 							},
-							["CustomTex"] = "163446",
-							["GUID"] = "TMW:icon:1QpP_HqMELD0",
+							["CustomTex"] = "12294",
+							["GUID"] = "TMW:icon:1RTC8jAvrtK1",
 						},
 						[122] = {
 							["GUID"] = "TMW:icon:1T3cIasRc1aj",
@@ -3711,36 +3707,16 @@ TellMeWhenDB = {
 							["CustomTex"] = "NONE",
 							["FakeHidden"] = true,
 						},
-						[101] = {
+						[136] = {
 							["Enabled"] = true,
-							["Type"] = "conditionicon",
-							["Events"] = {
-								{
-									["Type"] = "Counter",
-									["CounterAmt"] = 0,
-									["CounterOperation"] = "=",
-									["OnConditionConditions"] = {
-										{
-											["Icon"] = "TMW:icon:1RYjPWe1zjh4",
-											["Type"] = "ICON",
-										}, -- [1]
-										["n"] = 1,
-									},
-									["Event"] = "WCSP",
-									["Counter"] = "arms_bs",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										[2] = "On",
-									},
-								},
-							},
+							["ShowTimer"] = true,
 							["FakeHidden"] = true,
-							["CustomTex"] = "46924",
-							["GUID"] = "TMW:icon:1RYjPWe1zjh4",
+							["OnlyMine"] = true,
+							["Name"] = "46924; 227847",
+							["Type"] = "buff",
+							["DurationMin"] = 1,
+							["DurationMinEnabled"] = true,
+							["GUID"] = "TMW:icon:1RL=eAD8Kmw0",
 						},
 						[103] = {
 							["Enabled"] = true,
@@ -3910,57 +3886,61 @@ TellMeWhenDB = {
 							["CustomTex"] = "12294",
 							["GUID"] = "TMW:icon:1RTD2m1wLgWu",
 						},
-						[84] = {
+						[133] = {
 							["Enabled"] = true,
 							["Type"] = "conditionicon",
+							["ClockGCD"] = true,
+							["Name"] = "403",
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Period"] = 0.8,
+									["Animation"] = "ICONALPHAFLASH",
+									["Infinite"] = true,
+									["AnimColor"] = "ff000000",
+									["Event"] = "WCSP",
+									["OnConditionConditions"] = {
+										{
+											["Icon"] = "TMW:icon:1QpP_HqMELD0",
+											["Type"] = "ICON",
+										}, -- [1]
+										["n"] = 1,
+									},
+								}, -- [1]
+								["n"] = 1,
+							},
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
-										[2] = "3",
+										"", -- [1]
+										"", -- [2]
 									},
 								},
 							},
 							["FakeHidden"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "ICON",
-									["Icon"] = "TMW:icon:1RGdpp24C0VS",
+									["Type"] = "COUNTER",
+									["Name"] = "target_toggle",
 									["Level"] = 1,
 								}, -- [1]
 								{
-									["Type"] = "ICON",
-									["Icon"] = "TMW:icon:1RZ8uyGIHkyU",
+									["PrtsBefore"] = 1,
+									["Type"] = "EXISTS",
 									["Level"] = 1,
+									["Unit"] = "target",
 								}, -- [2]
 								{
-									["Type"] = "ICON",
-									["Icon"] = "TMW:icon:1Rg1PA0lcPyA",
-									["Level"] = 1,
+									["Type"] = "REACT",
+									["AndOr"] = "OR",
+									["Level"] = 2,
+									["PrtsAfter"] = 1,
+									["Unit"] = "target",
 								}, -- [3]
-								{
-									["Type"] = "ICON",
-									["Icon"] = "TMW:icon:1RGdpp2C6tbD",
-									["Level"] = 1,
-								}, -- [4]
-								{
-									["Type"] = "ICON",
-									["Icon"] = "TMW:icon:1RTBzFiJhwQj",
-									["Level"] = 1,
-								}, -- [5]
-								{
-									["Type"] = "ICON",
-									["Icon"] = "TMW:icon:1RGdpp2Rvc8H",
-									["Level"] = 1,
-								}, -- [6]
-								{
-									["Type"] = "ICON",
-									["Icon"] = "TMW:icon:1RGe00HwCayk",
-									["Level"] = 1,
-								}, -- [7]
-								["n"] = 7,
+								["n"] = 3,
 							},
-							["CustomTex"] = "12294",
-							["GUID"] = "TMW:icon:1RTC8jAvrtK1",
+							["CustomTex"] = "163446",
+							["GUID"] = "TMW:icon:1QpP_HqMELD0",
 						},
 						[86] = {
 							["Enabled"] = true,
@@ -4428,16 +4408,36 @@ TellMeWhenDB = {
 							["CustomTex"] = "12294",
 							["GUID"] = "TMW:icon:1RTD2ohayX3V",
 						},
-						[136] = {
+						[101] = {
 							["Enabled"] = true,
-							["ShowTimer"] = true,
+							["Type"] = "conditionicon",
+							["Events"] = {
+								{
+									["Type"] = "Counter",
+									["CounterAmt"] = 0,
+									["CounterOperation"] = "=",
+									["OnConditionConditions"] = {
+										{
+											["Icon"] = "TMW:icon:1RYjPWe1zjh4",
+											["Type"] = "ICON",
+										}, -- [1]
+										["n"] = 1,
+									},
+									["Event"] = "WCSP",
+									["Counter"] = "arms_bs",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										[2] = "On",
+									},
+								},
+							},
 							["FakeHidden"] = true,
-							["OnlyMine"] = true,
-							["Name"] = "46924; 227847",
-							["Type"] = "buff",
-							["DurationMin"] = 1,
-							["DurationMinEnabled"] = true,
-							["GUID"] = "TMW:icon:1RL=eAD8Kmw0",
+							["CustomTex"] = "46924",
+							["GUID"] = "TMW:icon:1RYjPWe1zjh4",
 						},
 					},
 					["Name"] = "Arms Profile",
@@ -4521,7 +4521,6 @@ TellMeWhenDB = {
 				}, -- [2]
 				{
 					["BackdropColor"] = "ff000000",
-					["Columns"] = 1,
 					["Point"] = {
 						["y"] = -57.32825844569,
 						["relativeTo"] = "TMW:group:1Ov1GPZDfFXX",
@@ -4529,6 +4528,7 @@ TellMeWhenDB = {
 						["relativePoint"] = "TOP",
 						["x"] = 0.00032635226234065,
 					},
+					["Columns"] = 1,
 					["View"] = "bar",
 					["Scale"] = 0.954276204109192,
 					["Rows"] = 4,
@@ -4709,8 +4709,8 @@ TellMeWhenDB = {
 							},
 							["BackdropColor"] = "ffff6500",
 							["BackdropColor_Enable"] = true,
-							["TimerBar_CompleteColor"] = "0000ff00",
 							["TimerBar_EnableColors"] = true,
+							["TimerBar_CompleteColor"] = "0000ff00",
 						}, -- [4]
 						{
 							["BackdropColor"] = "ff402200",
@@ -4852,14 +4852,8 @@ TellMeWhenDB = {
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1Ov1GPZDfFXX",
+					["Name"] = "Main Rotation (Meta)",
 					["Columns"] = 1,
-					["Point"] = {
-						["y"] = -53.132709187559,
-						["relativeTo"] = "TMW:group:1Qogrdv2HV3Z",
-						["point"] = "BOTTOM",
-						["relativePoint"] = "TOP",
-						["x"] = 0.0370833462401805,
-					},
 					["Icons"] = {
 						{
 							["Enabled"] = true,
@@ -4974,7 +4968,13 @@ TellMeWhenDB = {
 						[72] = false,
 						[73] = false,
 					},
-					["Name"] = "Main Rotation (Meta)",
+					["Point"] = {
+						["y"] = -53.132709187559,
+						["relativeTo"] = "TMW:group:1Qogrdv2HV3Z",
+						["point"] = "BOTTOM",
+						["relativePoint"] = "TOP",
+						["x"] = 0.0370833462401805,
+					},
 				}, -- [4]
 				{
 					["GUID"] = "TMW:group:1QvCPR5qcfPC",
@@ -5020,8 +5020,8 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1QvCRK1mfvhk",
 							["ShowTimer"] = true,
 							["Enabled"] = true,
-							["ShowTimerText"] = true,
 							["Name"] = "6552",
+							["ShowTimerText"] = true,
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
@@ -5270,7 +5270,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "conditionicon",
 							["BarDisplay_Reverse"] = true,
-							["TimerBar_EnableColors"] = true,
+							["BarDisplay_Invert"] = true,
 							["ConditionDur"] = 5,
 							["SettingsPerView"] = {
 								["bar"] = {
@@ -5281,7 +5281,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["BarDisplay_Invert"] = true,
+							["TimerBar_EnableColors"] = true,
 							["Conditions"] = {
 								{
 									["Icon"] = "TMW:icon:1T1lwuRfZ3C7",
@@ -5344,17 +5344,17 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "Animations",
-									["Animation"] = "ICONFLASH",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+									["Animation"] = "ICONFLASH",
 									["OnlyShown"] = true,
+									["AnimColor"] = "ff00fff1",
+									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Event"] = "WCSP",
-									["AnimColor"] = "ff00fff1",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -5395,17 +5395,17 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "Animations",
-									["Animation"] = "ICONFLASH",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+									["Animation"] = "ICONFLASH",
 									["OnlyShown"] = true,
+									["AnimColor"] = "ff00fff1",
+									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Event"] = "WCSP",
-									["AnimColor"] = "ff00fff1",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -5446,17 +5446,17 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "Animations",
-									["Animation"] = "ICONFLASH",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+									["Animation"] = "ICONFLASH",
 									["OnlyShown"] = true,
+									["AnimColor"] = "ff00fff1",
+									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Event"] = "WCSP",
-									["AnimColor"] = "ff00fff1",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -5506,7 +5506,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["BarDisplay_Invert"] = true,
+							["CustomTex"] = "12294",
 							["Conditions"] = {
 								{
 									["Type"] = "UNITSPEC",
@@ -5516,8 +5516,8 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
+							["BarDisplay_Invert"] = true,
 							["BarDisplay_Reverse"] = true,
-							["CustomTex"] = "12294",
 						}, -- [7]
 						{
 							["Enabled"] = true,
@@ -5548,14 +5548,14 @@ TellMeWhenDB = {
 									["Type"] = "Animations",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 									["Animation"] = "ICONFLASH",
+									["AnimColor"] = "ff00fff1",
+									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Event"] = "WCSP",
-									["AnimColor"] = "ff00fff1",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -5612,14 +5612,14 @@ TellMeWhenDB = {
 									["Type"] = "Animations",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 									["Animation"] = "ICONFLASH",
+									["AnimColor"] = "ff00fff1",
+									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Event"] = "WCSP",
-									["AnimColor"] = "ff00fff1",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -5675,14 +5675,14 @@ TellMeWhenDB = {
 									["Type"] = "Animations",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 									["Animation"] = "ICONFLASH",
+									["AnimColor"] = "ff00fff1",
+									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Event"] = "WCSP",
-									["AnimColor"] = "ff00fff1",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -5734,14 +5734,14 @@ TellMeWhenDB = {
 									["Type"] = "Animations",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
 									["Animation"] = "ICONFLASH",
+									["AnimColor"] = "ff00fff1",
+									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Event"] = "WCSP",
-									["AnimColor"] = "ff00fff1",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -5967,11 +5967,11 @@ TellMeWhenDB = {
 						{
 							["GUID"] = "TMW:icon:1T1lwuRfZ3C7",
 							["Type"] = "conditionicon",
-							["ConditionDur"] = 5,
+							["ShowTimerText"] = true,
 							["CustomTex"] = "Attack",
 							["FakeHidden"] = true,
 							["OnlyIfCounting"] = true,
-							["ShowTimerText"] = true,
+							["ConditionDur"] = 5,
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "bar1",
@@ -6016,10 +6016,10 @@ TellMeWhenDB = {
 							},
 							["Conditions"] = {
 								{
-									["Type"] = "COUNTER",
-									["AndOr"] = "OR",
-									["Name"] = "menu_open_c",
 									["Level"] = 1,
+									["Type"] = "COUNTER",
+									["Name"] = "menu_open_c",
+									["AndOr"] = "OR",
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -6508,12 +6508,12 @@ TellMeWhenDB = {
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TQvxnAfbGyU",
+					["Name"] = "Spells",
 					["Point"] = {
 						["y"] = -5,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
-					["Name"] = "Spells",
 					["Icons"] = {
 						{
 							["GUID"] = "TMW:icon:1TQv_LtTwAae",
@@ -6617,10 +6617,10 @@ TellMeWhenDB = {
 							["GUID"] = "TMW:icon:1TWYMfcUzmi6",
 						},
 					},
-					["Scale"] = 1,
+					["Locked"] = true,
 					["Columns"] = 20,
 					["Alpha"] = 0,
-					["Locked"] = true,
+					["Scale"] = 1,
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TWYSTcQ410f",
@@ -6745,6 +6745,7 @@ TellMeWhenDB = {
 		},
 		["Warlock"] = {
 			["Locked"] = true,
+			["NumGroups"] = 5,
 			["Version"] = 91200,
 			["Groups"] = {
 				{
@@ -6846,8 +6847,12 @@ TellMeWhenDB = {
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1V6ky7Uf4nZ5",
-					["Scale"] = 1,
-					["Name"] = "Warlock Spells",
+					["Locked"] = true,
+					["Point"] = {
+						["y"] = -5,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
 					["Icons"] = {
 						{
 							["Enabled"] = true,
@@ -6964,14 +6969,10 @@ TellMeWhenDB = {
 							["Name"] = "healh",
 						},
 					},
-					["Locked"] = true,
+					["Scale"] = 1,
 					["Columns"] = 20,
 					["Alpha"] = 0,
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
+					["Name"] = "Warlock Spells",
 				}, -- [4]
 				{
 					["GUID"] = "TMW:group:1YWt9BdVNgGm",
@@ -7013,7 +7014,6 @@ TellMeWhenDB = {
 					["OnlyInCombat"] = true,
 				}, -- [5]
 			},
-			["NumGroups"] = 5,
 		},
 		["Antun - Golemagg"] = {
 			["Locked"] = true,
@@ -7066,12 +7066,18 @@ TellMeWhenDB = {
 			},
 		},
 		["TEST HUNTER"] = {
+			["NumGroups"] = 19,
 			["Version"] = 87101,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TRVv5Bhqdi2",
+					["Point"] = {
+						["y"] = -7.30746799045408,
+						["x"] = 4.18984222412109,
+						["point"] = "TOPLEFT",
+						["relativePoint"] = "TOPLEFT",
+					},
 					["Columns"] = 15,
-					["Name"] = "Hunter Profile",
 					["Icons"] = {
 						nil, -- [1]
 						{
@@ -7083,7 +7089,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["ClockGCD"] = true,
 							["GUID"] = "TMW:icon:1TVSlzDpfz8W",
-							["Name"] = "1130; 14323; 14324; 14325",
+							["ShowTimerText"] = true,
 							["DurationMax"] = 3,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -7097,7 +7103,7 @@ TellMeWhenDB = {
 								}, -- [2]
 								["n"] = 2,
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "1130; 14323; 14324; 14325",
 							["States"] = {
 								nil, -- [1]
 								{
@@ -7422,7 +7428,9 @@ TellMeWhenDB = {
 							["Type"] = "cooldown",
 							["FakeHidden"] = true,
 							["ClockGCD"] = true,
+							["ShowTimerText"] = true,
 							["BarDisplay_BarGCD"] = true,
+							["Name"] = 75,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -7452,8 +7460,6 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["Name"] = 75,
-							["ShowTimerText"] = true,
 							["Conditions"] = {
 								{
 									["Name"] = "melee_range",
@@ -7500,11 +7506,11 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["FakeHidden"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "1978; 13549; 13550; 13551; 13552; 13553; 13554; 13555; 25295",
+							["ShowTimerText"] = true,
 							["DurationMax"] = 4.5,
 							["DurationMinEnabled"] = true,
 							["DurationMin"] = 3,
-							["ShowTimerText"] = true,
+							["Name"] = "1978; 13549; 13550; 13551; 13552; 13553; 13554; 13555; 25295",
 							["States"] = {
 								nil, -- [1]
 								{
@@ -7636,7 +7642,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["Name"] = "3044",
+							["ShowTimerText"] = true,
 							["DurationMax"] = 1.5,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -7660,7 +7666,7 @@ TellMeWhenDB = {
 								}, -- [4]
 								["n"] = 4,
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "3044",
 							["States"] = {
 								nil, -- [1]
 								{
@@ -7766,7 +7772,7 @@ TellMeWhenDB = {
 							["DurationMaxEnabled"] = true,
 							["DurationMinEnabled"] = true,
 							["Unit"] = "target",
-							["ClockGCD"] = true,
+							["FakeHidden"] = true,
 							["Conditions"] = {
 								{
 									["Name"] = "spell = IsSpellKnown(1130)\n\nreturn spell",
@@ -7783,11 +7789,11 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["Name"] = "1130; 14323; 14324; 14325",
-							["DurationMax"] = 4.5,
 							["ShowTimerText"] = true,
+							["DurationMax"] = 4.5,
+							["Name"] = "1130; 14323; 14324; 14325",
 							["DurationMin"] = 3,
-							["FakeHidden"] = true,
+							["ClockGCD"] = true,
 							["States"] = {
 								nil, -- [1]
 								{
@@ -7935,7 +7941,7 @@ TellMeWhenDB = {
 							["Unit"] = "target",
 							["ClockGCD"] = true,
 							["OnlyMine"] = true,
-							["Name"] = "5116",
+							["ShowTimerText"] = true,
 							["DurationMax"] = 1.5,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -7967,7 +7973,7 @@ TellMeWhenDB = {
 								}, -- [6]
 								["n"] = 6,
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "5116",
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -8386,7 +8392,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["Name"] = "19434",
+							["ShowTimerText"] = true,
 							["DurationMax"] = 1.5,
 							["FakeHidden"] = true,
 							["Conditions"] = {
@@ -8406,7 +8412,7 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "19434",
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -8507,10 +8513,10 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "ICON",
-									["PrtsAfter"] = 1,
-									["Level"] = 1,
 									["Icon"] = "TMW:icon:1TVSIOWJ1T0I",
 									["AndOr"] = "OR",
+									["PrtsAfter"] = 1,
+									["Level"] = 1,
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -8603,17 +8609,18 @@ TellMeWhenDB = {
 					["Scale"] = 0.600000023841858,
 					["Rows"] = 7,
 					["Alpha"] = 0,
-					["Point"] = {
-						["y"] = -7.30746799045408,
-						["x"] = 4.18984222412109,
-						["point"] = "TOPLEFT",
-						["relativePoint"] = "TOPLEFT",
-					},
+					["Name"] = "Hunter Profile",
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TRk_aZypIqd",
+					["Point"] = {
+						["y"] = -2.45231879086471e-05,
+						["relativeTo"] = "TMW:group:1TRW5crzGrfW",
+						["point"] = "BOTTOM",
+						["relativePoint"] = "BOTTOM",
+						["x"] = 1.56344934325808e-05,
+					},
 					["Columns"] = 2,
-					["Name"] = "Top Bar",
 					["SettingsPerView"] = {
 						["icon"] = {
 							["SpacingX"] = 65,
@@ -8729,13 +8736,7 @@ TellMeWhenDB = {
 							},
 						}, -- [2]
 					},
-					["Point"] = {
-						["y"] = -2.45231879086471e-05,
-						["relativeTo"] = "TMW:group:1TRW5crzGrfW",
-						["point"] = "BOTTOM",
-						["relativePoint"] = "BOTTOM",
-						["x"] = 1.56344934325808e-05,
-					},
+					["Name"] = "Top Bar",
 				}, -- [2]
 				{
 					["GUID"] = "TMW:group:1TRW5crzGrfW",
@@ -8992,7 +8993,7 @@ TellMeWhenDB = {
 								["n"] = 2,
 							},
 							["TimerBar_StartColor"] = "ffb00000",
-							["TimerBar_EnableColors"] = true,
+							["CustomTex"] = "NONE",
 							["Conditions"] = {
 								{
 									["Unit"] = "pet",
@@ -9004,7 +9005,7 @@ TellMeWhenDB = {
 								}, -- [2]
 								["n"] = 2,
 							},
-							["CustomTex"] = "NONE",
+							["TimerBar_EnableColors"] = true,
 							["SettingsPerView"] = {
 								["bar"] = {
 									["Texts"] = {
@@ -9025,9 +9026,6 @@ TellMeWhenDB = {
 								{
 									["Thickness"] = 3,
 									["Type"] = "Animations",
-									["AnimColor"] = "ffffff00",
-									["Animation"] = "ICONBORDER",
-									["OnlyShown"] = true,
 									["OnConditionConditions"] = {
 										{
 											["Level"] = 1,
@@ -9043,13 +9041,16 @@ TellMeWhenDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
-									["Event"] = "WCSP",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+									["OnlyShown"] = true,
+									["AnimColor"] = "ffffff00",
+									["Event"] = "WCSP",
+									["Animation"] = "ICONBORDER",
 								}, -- [1]
 								["n"] = 1,
 							},
 							["TimerBar_StartColor"] = "ffb00000",
-							["TimerBar_EnableColors"] = true,
+							["CustomTex"] = "883",
 							["Conditions"] = {
 								{
 									["PrtsBefore"] = 1,
@@ -9070,7 +9071,7 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["CustomTex"] = "883",
+							["TimerBar_EnableColors"] = true,
 							["SettingsPerView"] = {
 								["bar"] = {
 									["TextLayout"] = "bar1",
@@ -9538,7 +9539,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["Type"] = "conditionicon",
 							["TimerBar_CompleteColor"] = "ff886332",
-							["CustomTex"] = "NONE",
+							["BarDisplay_Invert"] = true,
 							["ConditionDur"] = 5,
 							["SettingsPerView"] = {
 								["bar"] = {
@@ -9549,7 +9550,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["BarDisplay_Invert"] = true,
+							["CustomTex"] = "NONE",
 							["Conditions"] = {
 								{
 									["Icon"] = "TMW:icon:1T1lwuRfZ3C7",
@@ -9612,17 +9613,17 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "Animations",
-									["AnimColor"] = "ff00fff1",
-									["Animation"] = "ICONFLASH",
-									["OnlyShown"] = true,
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Event"] = "WCSP",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+									["OnlyShown"] = true,
+									["AnimColor"] = "ff00fff1",
+									["Event"] = "WCSP",
+									["Animation"] = "ICONFLASH",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -9663,17 +9664,17 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "Animations",
-									["AnimColor"] = "ff00fff1",
-									["Animation"] = "ICONFLASH",
-									["OnlyShown"] = true,
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Event"] = "WCSP",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+									["OnlyShown"] = true,
+									["AnimColor"] = "ff00fff1",
+									["Event"] = "WCSP",
+									["Animation"] = "ICONFLASH",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -9714,17 +9715,17 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "Animations",
-									["AnimColor"] = "ff00fff1",
-									["Animation"] = "ICONFLASH",
-									["OnlyShown"] = true,
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Event"] = "WCSP",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
+									["OnlyShown"] = true,
+									["AnimColor"] = "ff00fff1",
+									["Event"] = "WCSP",
+									["Animation"] = "ICONFLASH",
 								}, -- [3]
 								["n"] = 3,
 							},
@@ -9805,13 +9806,13 @@ TellMeWhenDB = {
 								{
 									["Type"] = "Animations",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-									["AnimColor"] = "af00c0ff",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "MOUSEOVER",
 										}, -- [1]
 										["n"] = 1,
 									},
+									["AnimColor"] = "af00c0ff",
 									["Event"] = "WCSP",
 									["Animation"] = "ICONFLASH",
 								}, -- [3]
@@ -9825,10 +9826,10 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["CustomTex"] = "NONE",
 							["BarDisplay_Invert"] = true,
-							["TimerBar_CompleteColor"] = "005dff55",
+							["CustomTex"] = "NONE",
 							["TimerBar_EnableColors"] = true,
+							["TimerBar_CompleteColor"] = "005dff55",
 						}, -- [8]
 						{
 							["Type"] = "conditionicon",
@@ -9853,7 +9854,6 @@ TellMeWhenDB = {
 								{
 									["Type"] = "Animations",
 									["AnchorTo"] = "IconModule_TimerBar_BarDisplayTimerBar",
-									["AnimColor"] = "9400d4ff",
 									["OnConditionConditions"] = {
 										{
 											["Name"] = "heal/dps_toggle",
@@ -9864,6 +9864,7 @@ TellMeWhenDB = {
 										}, -- [2]
 										["n"] = 2,
 									},
+									["AnimColor"] = "9400d4ff",
 									["Event"] = "WCSP",
 									["Animation"] = "ICONFLASH",
 								}, -- [2]
@@ -9914,10 +9915,10 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["CustomTex"] = "NONE",
 							["BarDisplay_Invert"] = true,
-							["TimerBar_CompleteColor"] = "005dff55",
+							["CustomTex"] = "NONE",
 							["TimerBar_EnableColors"] = true,
+							["TimerBar_CompleteColor"] = "005dff55",
 						}, -- [9]
 					},
 					["SortPriorities"] = {
@@ -10044,10 +10045,31 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["Type"] = "conditionicon",
-							["ShowTimerText"] = true,
+							["ConditionDur"] = 5,
 							["ConditionDurEnabled"] = true,
 							["FakeHidden"] = true,
 							["OnlyIfCounting"] = true,
+							["ShowTimerText"] = true,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "bar1",
+									["Texts"] = {
+										"", -- [1]
+										"", -- [2]
+									},
+								},
+							},
+							["GUID"] = "TMW:icon:1T1lwuRfZ3C7",
+							["Conditions"] = {
+								{
+									["Level"] = 1,
+									["Type"] = "COUNTER",
+									["Name"] = "menu_open_c",
+									["AndOr"] = "OR",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["CustomTex"] = "Attack",
 							["Events"] = {
 								{
 									["Type"] = "Counter",
@@ -10081,27 +10103,6 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "bar1",
-									["Texts"] = {
-										"", -- [1]
-										"", -- [2]
-									},
-								},
-							},
-							["GUID"] = "TMW:icon:1T1lwuRfZ3C7",
-							["Conditions"] = {
-								{
-									["Type"] = "COUNTER",
-									["AndOr"] = "OR",
-									["Name"] = "menu_open_c",
-									["Level"] = 1,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["CustomTex"] = "Attack",
-							["ConditionDur"] = 5,
 						}, -- [2]
 					},
 					["LayoutDirection"] = 4,
@@ -10326,7 +10327,7 @@ TellMeWhenDB = {
 								{
 									["Type"] = "Animations",
 									["Animation"] = "ICONBORDER",
-									["Alpha"] = 1,
+									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["Type"] = "BUFFDUR",
@@ -10338,7 +10339,7 @@ TellMeWhenDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Event"] = "WCSP",
+									["Alpha"] = 1,
 									["Image"] = "13159",
 								}, -- [8]
 								["n"] = 8,
@@ -10366,6 +10367,8 @@ TellMeWhenDB = {
 								},
 							},
 							["TimerBar_EnableColors"] = true,
+							["BackdropColor_Enable"] = true,
+							["TimerBar_CompleteColor"] = "0000ff00",
 							["Conditions"] = {
 								{
 									["Type"] = "COUNTER",
@@ -10374,8 +10377,6 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["TimerBar_CompleteColor"] = "0000ff00",
-							["BackdropColor_Enable"] = true,
 						}, -- [1]
 					},
 					["Name"] = "Version",
@@ -11664,7 +11665,7 @@ TellMeWhenDB = {
 						["point"] = "LEFT",
 						["relativePoint"] = "LEFT",
 					},
-					["Locked"] = true,
+					["Scale"] = 0.59,
 					["Conditions"] = {
 						{
 							["PrtsBefore"] = 3,
@@ -11769,7 +11770,7 @@ TellMeWhenDB = {
 								{
 									["Type"] = "Animations",
 									["Animation"] = "ICONBORDER",
-									["Alpha"] = 1,
+									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["BitFlags"] = 1,
@@ -11777,7 +11778,7 @@ TellMeWhenDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Event"] = "WCSP",
+									["Alpha"] = 1,
 									["Image"] = "28084",
 								}, -- [4]
 								{
@@ -11812,7 +11813,7 @@ TellMeWhenDB = {
 							["CustomTex"] = "NONE",
 						}, -- [1]
 					},
-					["Scale"] = 0.59,
+					["Locked"] = true,
 				}, -- [15]
 				{
 					["View"] = "bar",
@@ -11841,14 +11842,7 @@ TellMeWhenDB = {
 							["ConditionDurEnabled"] = true,
 							["TimerBar_StartColor"] = "00ff0000",
 							["OnlyIfCounting"] = true,
-							["Events"] = {
-								{
-									["Type"] = "Animations",
-									["Event"] = "OnHide",
-									["Animation"] = "ICONFADE",
-								}, -- [1]
-								["n"] = 1,
-							},
+							["ConditionDur"] = 5,
 							["SettingsPerView"] = {
 								["bar"] = {
 									["TextLayout"] = "icon2",
@@ -11867,7 +11861,14 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["TimerBar_EnableColors"] = true,
-							["ConditionDur"] = 5,
+							["Events"] = {
+								{
+									["Type"] = "Animations",
+									["Event"] = "OnHide",
+									["Animation"] = "ICONFADE",
+								}, -- [1]
+								["n"] = 1,
+							},
 						}, -- [1]
 						{
 							["Enabled"] = true,
@@ -11881,19 +11882,19 @@ TellMeWhenDB = {
 				}, -- [16]
 				{
 					["View"] = "bar",
-					["Columns"] = 1,
 					["Point"] = {
 						["y"] = -165,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
+					["Columns"] = 1,
 					["SettingsPerView"] = {
 						["bar"] = {
 							["SizeX"] = 292.663726806641,
 							["Icon"] = false,
 						},
 					},
-					["Locked"] = true,
+					["Scale"] = 1.25617873668671,
 					["GUID"] = "TMW:group:1ToXu0LcLIOZ",
 					["Icons"] = {
 						{
@@ -11906,7 +11907,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 						}, -- [1]
 					},
-					["Scale"] = 1.25617873668671,
+					["Locked"] = true,
 				}, -- [17]
 				{
 					["GUID"] = "TMW:group:1ToaOwcAiwGJ",
@@ -11971,7 +11972,7 @@ TellMeWhenDB = {
 								{
 									["Type"] = "Animations",
 									["Animation"] = "ICONBORDER",
-									["Alpha"] = 1,
+									["Event"] = "WCSP",
 									["OnConditionConditions"] = {
 										{
 											["BitFlags"] = 1,
@@ -11979,7 +11980,7 @@ TellMeWhenDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
-									["Event"] = "WCSP",
+									["Alpha"] = 1,
 									["Image"] = "28084",
 								}, -- [4]
 								{
@@ -12068,7 +12069,6 @@ TellMeWhenDB = {
 					["Locked"] = true,
 				}, -- [19]
 			},
-			["NumGroups"] = 19,
 		},
 		["Hunter"] = {
 			["Groups"] = {
@@ -12468,6 +12468,7 @@ TellMeWhenDB = {
 		["Warrior"] = {
 			["Groups"] = {
 				{
+					["GUID"] = "TMW:group:1TQvxnAfbGyU",
 					["Point"] = {
 						["y"] = -5,
 						["point"] = "TOP",
@@ -12475,34 +12476,37 @@ TellMeWhenDB = {
 					},
 					["Scale"] = 1,
 					["Rows"] = 2,
-					["Locked"] = true,
-					["GUID"] = "TMW:group:1TQvxnAfbGyU",
-					["Columns"] = 20,
 					["Alpha"] = 0,
 					["Name"] = "SPELLS",
+					["Locked"] = true,
 					["Icons"] = {
 						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["OnlyMine"] = true,
-							["Type"] = "cooldown",
 							["Name"] = "Rend",
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1TQv_LtTwAae",
+							["RangeCheck"] = true,
+							["ManaCheck"] = true,
 							["Conditions"] = {
 								{
+									["Name"] = "Rend",
 									["Type"] = "DEBUFFDUR",
 									["Checked"] = true,
 									["Unit"] = "target",
-									["Name"] = "Rend",
 								}, -- [1]
 								{
-									["Type"] = "LUA",
 									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and IsSpellInRange(\"Cleave\", \"nameplate\" .. i) == 1 and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 1 then\n    return false\nelse\n    return true\nend",
+									["Type"] = "LUA",
 								}, -- [2]
-								["n"] = 2,
+								{
+									["Name"] = "Defensive Stance; Battle Stance",
+									["Type"] = "STANCE",
+								}, -- [3]
+								["n"] = 3,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1TQv_LtTwAae",
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -12513,15 +12517,22 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
 						}, -- [1]
 						{
+							["Enabled"] = true,
 							["Type"] = "cooldown",
+							["Name"] = "Battle Shout",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "icon1",
+								},
+							},
+							["ManaCheck"] = true,
 							["Conditions"] = {
 								{
+									["PrtsBefore"] = 1,
 									["Type"] = "BUFFDUR",
 									["Name"] = "Battle Shout",
-									["PrtsBefore"] = 1,
 								}, -- [1]
 								{
 									["Type"] = "BUFFDUR",
@@ -12529,8 +12540,8 @@ TellMeWhenDB = {
 									["Name"] = "Commanding Shout",
 								}, -- [2]
 								{
-									["Type"] = "BUFFDUR",
 									["Name"] = "Greater Blessing of Might",
+									["Type"] = "BUFFDUR",
 								}, -- [3]
 								{
 									["Type"] = "BUFFDUR",
@@ -12539,15 +12550,7 @@ TellMeWhenDB = {
 								}, -- [4]
 								["n"] = 4,
 							},
-							["Name"] = "Battle Shout",
-							["Enabled"] = true,
-							["ManaCheck"] = true,
 							["GUID"] = "TMW:icon:1TQv_Ltf40Wl",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "icon1",
-								},
-							},
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -12559,26 +12562,28 @@ TellMeWhenDB = {
 							},
 						}, -- [2]
 						{
+							["ManaCheck"] = true,
 							["Type"] = "reactive",
 							["Name"] = "Heroic Strike",
-							["ManaCheck"] = true,
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "HEALTH",
-									["Unit"] = "target",
-									["Operator"] = ">=",
 									["PrtsBefore"] = 1,
 									["Level"] = 20,
+									["Unit"] = "target",
+									["Operator"] = ">=",
 								}, -- [1]
 								{
+									["AndOr"] = "OR",
 									["Type"] = "STANCE",
 									["PrtsAfter"] = 1,
 									["Name"] = "Defensive Stance",
-									["AndOr"] = "OR",
 								}, -- [2]
 								{
-									["Type"] = "LUA",
 									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and IsSpellInRange(\"Cleave\", \"nameplate\" .. i) == 1 and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 1 then\n    return false\nelse\n    return true\nend",
+									["Type"] = "LUA",
 								}, -- [3]
 								{
 									["Type"] = "CURRENTSPELL",
@@ -12587,8 +12592,8 @@ TellMeWhenDB = {
 								}, -- [4]
 								{
 									["Type"] = "RAGE_ABS",
-									["Operator"] = ">=",
 									["Level"] = 40,
+									["Operator"] = ">=",
 								}, -- [5]
 								["n"] = 5,
 							},
@@ -12603,13 +12608,25 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [3]
 						{
+							["Enabled"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Overpower",
-							["Enabled"] = true,
+							["ShowTimerText"] = true,
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "REACTIVE",
+									["Checked"] = true,
+									["Name"] = "Overpower",
+								}, -- [1]
+								{
+									["Name"] = "Battle Stance",
+									["Type"] = "STANCE",
+								}, -- [2]
+								["n"] = 2,
+							},
 							["GUID"] = "TMW:icon:1TU=hLnlwyeY",
 							["States"] = {
 								nil, -- [1]
@@ -12621,63 +12638,51 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["ShowTimerText"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "REACTIVE",
-									["Checked"] = true,
-									["Name"] = "Overpower",
-								}, -- [1]
-								{
-									["Type"] = "STANCE",
-									["Name"] = "Battle Stance",
-								}, -- [2]
-								["n"] = 2,
-							},
 						}, -- [4]
 						{
+							["ManaCheck"] = true,
+							["Type"] = "cooldown",
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
-							["Type"] = "cooldown",
 							["Name"] = "Demoralizing Shout",
-							["ManaCheck"] = true,
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "EXISTS",
 									["Unit"] = "target",
+									["Type"] = "EXISTS",
 								}, -- [1]
 								{
-									["Type"] = "ALIVE",
 									["Unit"] = "target",
+									["Type"] = "ALIVE",
 								}, -- [2]
 								{
 									["Type"] = "REACT",
-									["Unit"] = "target",
 									["Level"] = 1,
+									["Unit"] = "target",
 								}, -- [3]
 								{
-									["Type"] = "STANCE",
 									["Name"] = "Defensive Stance",
+									["Type"] = "STANCE",
 								}, -- [4]
 								{
-									["Type"] = "DEBUFFDUR",
-									["Unit"] = "target",
-									["Name"] = "Demoralizing Shout",
 									["PrtsBefore"] = 1,
+									["Type"] = "DEBUFFDUR",
+									["Name"] = "Demoralizing Shout",
+									["Unit"] = "target",
 								}, -- [5]
 								{
 									["Type"] = "DEBUFFDUR",
-									["PrtsAfter"] = 1,
-									["Operator"] = "<=",
-									["Unit"] = "target",
-									["AndOr"] = "OR",
 									["Name"] = "Demoralizing Shout",
+									["AndOr"] = "OR",
+									["Operator"] = "<=",
 									["Level"] = 5,
+									["PrtsAfter"] = 1,
+									["Unit"] = "target",
 								}, -- [6]
 								{
-									["Type"] = "LUA",
 									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\"..i, 3) and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 0 then\n    return true\nelse\n    return false\nend",
+									["Type"] = "LUA",
 								}, -- [7]
 								["n"] = 7,
 							},
@@ -12692,77 +12697,15 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [5]
 						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
-							["Type"] = "cooldown",
-							["Conditions"] = {
-								{
-									["Type"] = "DEBUFFSTACKS",
-									["Unit"] = "target",
-									["Operator"] = "<",
-									["Name"] = "Sunder Armor",
-									["PrtsBefore"] = 2,
-									["Level"] = 3,
-								}, -- [1]
-								{
-									["Type"] = "DEBUFFDUR",
-									["PrtsAfter"] = 1,
-									["Unit"] = "target",
-									["Operator"] = "<=",
-									["Level"] = 6,
-									["Name"] = "Sunder Armor",
-									["AndOr"] = "OR",
-								}, -- [2]
-								{
-									["Type"] = "HEALTH",
-									["Operator"] = ">=",
-									["Unit"] = "target",
-									["Level"] = 20,
-								}, -- [3]
-								{
-									["Type"] = "LUA",
-									["PrtsAfter"] = 1,
-									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and IsSpellInRange(\"Cleave\", \"nameplate\" .. i) == 1 and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 1 then\n    return false\nelse\n    return true\nend",
-								}, -- [4]
-								{
-									["Type"] = "STANCE",
-									["Name"] = "Defensive Stance",
-									["PrtsBefore"] = 1,
-									["AndOr"] = "OR",
-								}, -- [5]
-								{
-									["Type"] = "DEBUFFSTACKS",
-									["PrtsAfter"] = 1,
-									["Unit"] = "target",
-									["Operator"] = "<",
-									["Level"] = 3,
-									["Name"] = "Sunder Armor",
-									["AndOr"] = "OR",
-								}, -- [6]
-								{
-									["Type"] = "DEBUFFDUR",
-									["Unit"] = "target",
-									["Operator"] = "<=",
-									["Name"] = "Sunder Armor",
-									["PrtsBefore"] = 1,
-									["Level"] = 6,
-								}, -- [7]
-								{
-									["Type"] = "LUA",
-									["PrtsAfter"] = 1,
-									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and IsSpellInRange(\"Cleave\", \"nameplate\" .. i) == 1 and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 1 then\n    return false\nelse\n    return true\nend",
-								}, -- [8]
-								["n"] = 8,
-							},
-							["Name"] = "Sunder Armor",
-							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["ManaCheck"] = true,
-							["HideIfNoUnits"] = true,
-							["GUID"] = "TMW:icon:1TYYu4EDbfSz",
+							["Name"] = "Sunder Armor",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
@@ -12770,6 +12713,67 @@ TellMeWhenDB = {
 										"[Stacks:Hide(0)]", -- [2]
 									},
 								},
+							},
+							["GUID"] = "TMW:icon:1TYYu4EDbfSz",
+							["HideIfNoUnits"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "DEBUFFSTACKS",
+									["Name"] = "Sunder Armor",
+									["PrtsBefore"] = 2,
+									["Level"] = 3,
+									["Unit"] = "target",
+									["Operator"] = "<",
+								}, -- [1]
+								{
+									["Type"] = "DEBUFFDUR",
+									["Name"] = "Sunder Armor",
+									["Level"] = 6,
+									["Unit"] = "target",
+									["AndOr"] = "OR",
+									["PrtsAfter"] = 1,
+									["Operator"] = "<=",
+								}, -- [2]
+								{
+									["Level"] = 20,
+									["Type"] = "HEALTH",
+									["Operator"] = ">=",
+									["Unit"] = "target",
+								}, -- [3]
+								{
+									["Type"] = "LUA",
+									["PrtsAfter"] = 1,
+									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and IsSpellInRange(\"Cleave\", \"nameplate\" .. i) == 1 and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 1 then\n    return false\nelse\n    return true\nend",
+								}, -- [4]
+								{
+									["PrtsBefore"] = 1,
+									["Type"] = "STANCE",
+									["Name"] = "Defensive Stance",
+									["AndOr"] = "OR",
+								}, -- [5]
+								{
+									["Type"] = "DEBUFFSTACKS",
+									["Name"] = "Sunder Armor",
+									["Level"] = 3,
+									["Unit"] = "target",
+									["AndOr"] = "OR",
+									["PrtsAfter"] = 1,
+									["Operator"] = "<",
+								}, -- [6]
+								{
+									["Type"] = "DEBUFFDUR",
+									["Name"] = "Sunder Armor",
+									["PrtsBefore"] = 1,
+									["Level"] = 6,
+									["Unit"] = "target",
+									["Operator"] = "<=",
+								}, -- [7]
+								{
+									["Type"] = "LUA",
+									["PrtsAfter"] = 1,
+									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and IsSpellInRange(\"Cleave\", \"nameplate\" .. i) == 1 and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 1 then\n    return false\nelse\n    return true\nend",
+								}, -- [8]
+								["n"] = 8,
 							},
 							["States"] = {
 								nil, -- [1]
@@ -12781,12 +12785,13 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
 						}, -- [6]
 						{
+							["ManaCheck"] = true,
 							["Type"] = "reactive",
 							["Name"] = "Execute",
-							["ManaCheck"] = true,
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "STANCE",
@@ -12806,13 +12811,13 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [7]
 						{
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Revenge",
-							["ManaCheck"] = true,
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "REACTIVE",
@@ -12820,8 +12825,8 @@ TellMeWhenDB = {
 									["Name"] = "Revenge",
 								}, -- [1]
 								{
-									["Type"] = "STANCE",
 									["Name"] = "Defensive Stance",
+									["Type"] = "STANCE",
 								}, -- [2]
 								["n"] = 2,
 							},
@@ -12836,30 +12841,30 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [8]
 						{
+							["ManaCheck"] = true,
 							["Type"] = "reactive",
 							["Name"] = "Cleave",
-							["ManaCheck"] = true,
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "HEALTH",
-									["Unit"] = "target",
-									["Operator"] = ">=",
 									["PrtsBefore"] = 1,
 									["Level"] = 20,
+									["Unit"] = "target",
+									["Operator"] = ">=",
 								}, -- [1]
 								{
+									["AndOr"] = "OR",
 									["Type"] = "STANCE",
 									["PrtsAfter"] = 1,
 									["Name"] = "Defensive Stance",
-									["AndOr"] = "OR",
 								}, -- [2]
 								{
-									["Type"] = "LUA",
 									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and IsSpellInRange(\"Cleave\", \"nameplate\" .. i) == 1 and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 1 then\n    return true\nelse\n    return false\nend",
+									["Type"] = "LUA",
 								}, -- [3]
 								{
 									["Type"] = "CURRENTSPELL",
@@ -12868,8 +12873,8 @@ TellMeWhenDB = {
 								}, -- [4]
 								{
 									["Type"] = "RAGE_ABS",
-									["Operator"] = ">=",
 									["Level"] = 40,
+									["Operator"] = ">=",
 								}, -- [5]
 								["n"] = 5,
 							},
@@ -12884,49 +12889,49 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [9]
 						{
+							["GUID"] = "TMW:icon:1Xwc=6KNp27d",
 							["Type"] = "cooldown",
+							["Name"] = "Whirlwind",
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "STANCE",
 									["Name"] = "Berserker Stance",
+									["Type"] = "STANCE",
 								}, -- [1]
 								{
+									["Level"] = 20,
 									["Type"] = "HEALTH",
 									["Operator"] = ">",
 									["Unit"] = "target",
-									["Level"] = 20,
 								}, -- [2]
 								{
-									["Type"] = "EXISTS",
 									["Unit"] = "target",
+									["Type"] = "EXISTS",
 								}, -- [3]
 								{
+									["PrtsBefore"] = 1,
 									["Type"] = "LUA",
 									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and IsSpellInRange(\"Cleave\", \"nameplate\" .. i) == 1 and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 1 then\n    return true\nelse\n    return false\nend",
-									["PrtsBefore"] = 1,
 								}, -- [4]
 								{
 									["Type"] = "SPELLCD",
-									["Operator"] = "~=",
 									["Name"] = "Mortal Strike",
 									["PrtsBefore"] = 1,
 									["AndOr"] = "OR",
+									["Operator"] = "~=",
 								}, -- [5]
 								{
 									["Type"] = "SPELLCD",
-									["PrtsAfter"] = 2,
-									["Operator"] = "~=",
 									["Name"] = "Bloodthirst",
 									["AndOr"] = "OR",
+									["PrtsAfter"] = 2,
+									["Operator"] = "~=",
 								}, -- [6]
 								["n"] = 6,
 							},
-							["Name"] = "Whirlwind",
-							["GUID"] = "TMW:icon:1Xwc=6KNp27d",
 							["ManaCheck"] = true,
 							["States"] = {
 								nil, -- [1]
@@ -12938,13 +12943,13 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [10]
 						{
+							["ManaCheck"] = true,
 							["Type"] = "reactive",
 							["Name"] = "Victory Rush",
-							["ManaCheck"] = true,
+							["RangeCheck"] = true,
+							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1YP2Xjgjriiu",
 							["States"] = {
 								nil, -- [1]
@@ -12956,19 +12961,19 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [11]
 						{
+							["ManaCheck"] = true,
 							["Type"] = "reactive",
 							["Name"] = "Heroic Strike",
-							["ManaCheck"] = true,
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "SPELLCD",
-									["Operator"] = "~=",
-									["Name"] = "Whirlwind",
 									["PrtsBefore"] = 2,
+									["Type"] = "SPELLCD",
+									["Name"] = "Whirlwind",
+									["Operator"] = "~=",
 								}, -- [1]
 								{
 									["Type"] = "STANCE",
@@ -12977,27 +12982,27 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "STANCE",
-									["PrtsAfter"] = 1,
-									["Level"] = 1,
 									["Name"] = "Berserker Stance; Battle Stance",
+									["Level"] = 1,
+									["PrtsAfter"] = 1,
 									["AndOr"] = "OR",
 								}, -- [3]
 								{
-									["Type"] = "SPELLCD",
-									["Operator"] = "~=",
-									["Name"] = "Mortal Strike",
 									["PrtsBefore"] = 1,
+									["Type"] = "SPELLCD",
+									["Name"] = "Mortal Strike",
+									["Operator"] = "~=",
 								}, -- [4]
 								{
 									["Type"] = "SPELLCD",
-									["PrtsAfter"] = 1,
-									["Operator"] = "~=",
 									["Name"] = "Bloodthirst",
 									["AndOr"] = "OR",
+									["PrtsAfter"] = 1,
+									["Operator"] = "~=",
 								}, -- [5]
 								{
-									["Type"] = "LUA",
 									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and IsSpellInRange(\"Cleave\", \"nameplate\" .. i) == 1 and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 1 then\n    return false\nelse\n    return true\nend",
+									["Type"] = "LUA",
 								}, -- [6]
 								{
 									["Type"] = "CURRENTSPELL",
@@ -13017,19 +13022,19 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [12]
 						{
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Mortal Strike",
-							["ManaCheck"] = true,
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
+									["Level"] = 20,
 									["Type"] = "HEALTH",
 									["Unit"] = "target",
 									["Operator"] = ">",
-									["Level"] = 20,
 								}, -- [1]
 								{
 									["Type"] = "STANCE",
@@ -13049,30 +13054,39 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [13]
 						{
+							["Enabled"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Pummel",
-							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "STANCE",
 									["Name"] = "Berserker Stance",
+									["Type"] = "STANCE",
 								}, -- [1]
 								["n"] = 1,
 							},
-							["RangeCheck"] = true,
 						}, -- [14]
 						{
+							["GUID"] = "TMW:icon:1Y2=7t6wEuO2",
 							["Type"] = "reactive",
+							["RangeCheck"] = true,
+							["Name"] = "Cleave",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["Texts"] = {
+										"", -- [1]
+									},
+								},
+							},
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "SPELLCD",
-									["Operator"] = "~=",
-									["Name"] = "Whirlwind",
 									["PrtsBefore"] = 2,
+									["Type"] = "SPELLCD",
+									["Name"] = "Whirlwind",
+									["Operator"] = "~=",
 								}, -- [1]
 								{
 									["Type"] = "STANCE",
@@ -13081,14 +13095,14 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "STANCE",
-									["PrtsAfter"] = 1,
-									["AndOr"] = "OR",
 									["Name"] = "Berserker Stance",
+									["AndOr"] = "OR",
+									["PrtsAfter"] = 1,
 									["Level"] = 1,
 								}, -- [3]
 								{
-									["Type"] = "LUA",
 									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and IsSpellInRange(\"Cleave\", \"nameplate\" .. i) == 1 and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 1 then\n    return true\nelse\n    return false\nend",
+									["Type"] = "LUA",
 								}, -- [4]
 								{
 									["Type"] = "CURRENTSPELL",
@@ -13097,17 +13111,7 @@ TellMeWhenDB = {
 								}, -- [5]
 								["n"] = 5,
 							},
-							["Name"] = "Cleave",
-							["Enabled"] = true,
 							["ManaCheck"] = true,
-							["GUID"] = "TMW:icon:1Y2=7t6wEuO2",
-							["SettingsPerView"] = {
-								["icon"] = {
-									["Texts"] = {
-										"", -- [1]
-									},
-								},
-							},
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -13118,13 +13122,27 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
 						}, -- [15]
 						{
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Bloodthirst",
 							["Enabled"] = true,
-							["ManaCheck"] = true,
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Level"] = 20,
+									["Type"] = "HEALTH",
+									["Operator"] = ">",
+									["Unit"] = "target",
+								}, -- [1]
+								{
+									["Type"] = "STANCE",
+									["Name"] = "Defensive Stance",
+									["AndOr"] = "OR",
+								}, -- [2]
+								["n"] = 2,
+							},
 							["GUID"] = "TMW:icon:1YEqZQbYmmFD",
 							["States"] = {
 								nil, -- [1]
@@ -13136,36 +13154,22 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "HEALTH",
-									["Operator"] = ">",
-									["Unit"] = "target",
-									["Level"] = 20,
-								}, -- [1]
-								{
-									["Type"] = "STANCE",
-									["Name"] = "Defensive Stance",
-									["AndOr"] = "OR",
-								}, -- [2]
-								["n"] = 2,
-							},
 						}, -- [16]
 						{
+							["GUID"] = "TMW:icon:1YO4Qlh73rOw",
 							["Type"] = "reactive",
 							["Name"] = "Rampage",
-							["GUID"] = "TMW:icon:1YO4Qlh73rOw",
 							["Conditions"] = {
 								{
 									["Type"] = "BUFFDUR",
 									["Checked"] = true,
-									["Operator"] = "<=",
-									["Name"] = "Rampage",
 									["Level"] = 10,
+									["Name"] = "Rampage",
+									["Operator"] = "<=",
 								}, -- [1]
 								["n"] = 1,
 							},
+							["Enabled"] = true,
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -13174,23 +13178,23 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["Enabled"] = true,
 						}, -- [17]
 						{
+							["GUID"] = "TMW:icon:1YO55KEUKaW4",
 							["Type"] = "cooldown",
 							["Name"] = "Sweeping Strikes",
-							["GUID"] = "TMW:icon:1YO55KEUKaW4",
 							["Conditions"] = {
 								{
-									["Type"] = "STANCE",
 									["Name"] = "Battle Stance; Berserker Stance",
+									["Type"] = "STANCE",
 								}, -- [1]
 								{
-									["Type"] = "LUA",
 									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and IsSpellInRange(\"Cleave\", \"nameplate\" .. i) == 1 and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 1 then\n    return true\nelse\n    return false\nend",
+									["Type"] = "LUA",
 								}, -- [2]
 								["n"] = 2,
 							},
+							["Enabled"] = true,
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -13199,56 +13203,57 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["Enabled"] = true,
 						}, -- [18]
 						{
+							["ManaCheck"] = true,
+							["Type"] = "cooldown",
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
-							["Type"] = "cooldown",
 							["Name"] = "Thunder Clap",
-							["ManaCheck"] = true,
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "STANCE",
 									["Name"] = "Defensive Stance",
+									["Type"] = "STANCE",
 								}, -- [1]
 								{
-									["Type"] = "DEBUFFDUR",
-									["Unit"] = "target",
-									["Name"] = "Thunder Clap",
 									["PrtsBefore"] = 1,
+									["Type"] = "DEBUFFDUR",
+									["Name"] = "Thunder Clap",
+									["Unit"] = "target",
 								}, -- [2]
 								{
 									["Type"] = "DEBUFFDUR",
-									["Unit"] = "target",
-									["Operator"] = "<=",
-									["AndOr"] = "OR",
 									["Name"] = "Thunder Clap",
 									["Level"] = 5,
+									["AndOr"] = "OR",
+									["Unit"] = "target",
+									["Operator"] = "<=",
 								}, -- [3]
 								{
+									["AndOr"] = "OR",
 									["Type"] = "LUA",
 									["PrtsAfter"] = 1,
 									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\"..i, 3) and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 1 then\n    return true\nelse\n    return false\nend",
-									["AndOr"] = "OR",
 								}, -- [4]
 								{
-									["Type"] = "EXISTS",
 									["Unit"] = "target",
+									["Type"] = "EXISTS",
 								}, -- [5]
 								{
-									["Type"] = "ALIVE",
 									["Unit"] = "target",
+									["Type"] = "ALIVE",
 								}, -- [6]
 								{
+									["Level"] = 1,
 									["Type"] = "REACT",
 									["Operator"] = "<=",
 									["Unit"] = "target",
-									["Level"] = 1,
 								}, -- [7]
 								{
-									["Type"] = "LUA",
 									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\"..i, 3) and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 0 then\n    return true\nelse\n    return false\nend",
+									["Type"] = "LUA",
 								}, -- [8]
 								["n"] = 8,
 							},
@@ -13263,32 +13268,32 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [19]
 						{
-							["BuffOrDebuff"] = "HARMFUL",
-							["Type"] = "cooldown",
-							["Name"] = "Hamstring",
 							["ManaCheck"] = true,
+							["Type"] = "cooldown",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Name"] = "Hamstring",
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "ISPLAYER",
 									["Unit"] = "target",
+									["Type"] = "ISPLAYER",
 								}, -- [1]
 								{
 									["Type"] = "DEBUFFDUR",
-									["Unit"] = "target",
 									["Name"] = "Hamstring",
+									["Unit"] = "target",
 								}, -- [2]
 								{
-									["Type"] = "STANCE",
 									["Name"] = "Battle Stance; Berserker Stance",
+									["Type"] = "STANCE",
 								}, -- [3]
 								{
 									["Type"] = "BUFFDUR",
-									["Unit"] = "target",
 									["Name"] = "Hand of Freedom",
+									["Unit"] = "target",
 								}, -- [4]
 								["n"] = 4,
 							},
@@ -13303,20 +13308,20 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [20]
 						{
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
+							["Name"] = "Devastate",
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "STANCE",
 									["Name"] = "Defensive Stance",
+									["Type"] = "STANCE",
 								}, -- [1]
 								["n"] = 1,
 							},
-							["Name"] = "Devastate",
-							["ManaCheck"] = true,
 							["GUID"] = "TMW:icon:1Z55tRw3mJGc",
 							["States"] = {
 								nil, -- [1]
@@ -13328,18 +13333,17 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [21]
 						{
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Last Stand",
-							["ManaCheck"] = true,
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "HEALTH",
-									["Operator"] = "<=",
 									["Level"] = 50,
+									["Operator"] = "<=",
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -13352,16 +13356,16 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["Enabled"] = true,
 						}, -- [22]
 						{
+							["GUID"] = "TMW:icon:1Z55tRw8OaCM",
 							["Type"] = "cooldown",
 							["Name"] = "Shield Block",
-							["GUID"] = "TMW:icon:1Z55tRw8OaCM",
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "STANCE",
 									["Name"] = "Defensive Stance",
+									["Type"] = "STANCE",
 								}, -- [1]
 								["n"] = 1,
 							},
@@ -13374,12 +13378,13 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["Enabled"] = true,
 						}, -- [23]
 						{
+							["GUID"] = "TMW:icon:1Z55tRwA_pKn",
 							["Type"] = "cooldown",
 							["Name"] = "Shield Slam",
-							["GUID"] = "TMW:icon:1Z55tRwA_pKn",
+							["RangeCheck"] = true,
+							["Enabled"] = true,
 							["ManaCheck"] = true,
 							["States"] = {
 								nil, -- [1]
@@ -13391,29 +13396,29 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [24]
 						{
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
+							["Name"] = "Vigilance",
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "EXISTS",
 									["Unit"] = "focus",
+									["Type"] = "EXISTS",
 								}, -- [1]
 								{
-									["Type"] = "ALIVE",
 									["Unit"] = "focus",
+									["Type"] = "ALIVE",
 								}, -- [2]
 								{
 									["Type"] = "REACT",
-									["Unit"] = "focus",
 									["Level"] = 2,
+									["Unit"] = "focus",
 								}, -- [3]
 								["n"] = 3,
 							},
-							["Name"] = "Vigilance",
-							["ManaCheck"] = true,
 							["GUID"] = "TMW:icon:1Z7AzkxDmWSh",
 							["States"] = {
 								nil, -- [1]
@@ -13425,17 +13430,19 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [25]
 						{
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
+							["Name"] = "Concussion Blow",
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "SPELLCD",
-									["Operator"] = "~=",
-									["Name"] = "Shield Bash",
 									["PrtsBefore"] = 2,
+									["Type"] = "SPELLCD",
+									["Name"] = "Shield Bash",
+									["Operator"] = "~=",
 								}, -- [1]
 								{
 									["Type"] = "STANCE",
@@ -13443,25 +13450,23 @@ TellMeWhenDB = {
 									["Name"] = "Defensive Stance",
 								}, -- [2]
 								{
+									["PrtsBefore"] = 1,
 									["Type"] = "STANCE",
 									["Name"] = "Berserker Stance",
-									["PrtsBefore"] = 1,
 									["AndOr"] = "OR",
 								}, -- [3]
 								{
+									["Name"] = "Pummel",
 									["Type"] = "SPELLCD",
 									["PrtsAfter"] = 2,
 									["Operator"] = "~=",
-									["Name"] = "Pummel",
 								}, -- [4]
 								{
-									["Type"] = "LUA",
 									["Name"] = "local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = UnitCastingInfo('target')\nlocal name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = UnitChannelInfo('target')\nif (name_casting ~= nil and not notInterruptible_casting) or (name_channeling ~= nil and not notInterruptible_chanelling) then\n    return true\nelse\n    return false\nend",
+									["Type"] = "LUA",
 								}, -- [5]
 								["n"] = 5,
 							},
-							["Name"] = "Concussion Blow",
-							["ManaCheck"] = true,
 							["GUID"] = "TMW:icon:1Z679nrqAgG4",
 							["States"] = {
 								nil, -- [1]
@@ -13473,14 +13478,24 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [26]
 						{
+							["Enabled"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Shield Wall",
-							["Enabled"] = true,
 							["ManaCheck"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "HEALTH",
+									["Level"] = 40,
+									["Operator"] = "<=",
+								}, -- [1]
+								{
+									["Name"] = "Defensive Stance",
+									["Type"] = "STANCE",
+								}, -- [2]
+								["n"] = 2,
+							},
 							["GUID"] = "TMW:icon:1Z7PEaKwPKnX",
 							["States"] = {
 								nil, -- [1]
@@ -13490,24 +13505,24 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
+						}, -- [27]
+						{
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Commanding Shout",
+							["ManaCheck"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "HEALTH",
-									["Operator"] = "<=",
-									["Level"] = 40,
+									["Type"] = "BUFFDUR",
+									["Checked"] = true,
+									["Name"] = "Battle Shout",
 								}, -- [1]
 								{
-									["Type"] = "STANCE",
-									["Name"] = "Defensive Stance",
+									["Name"] = "Commanding Shout",
+									["Type"] = "BUFFDUR",
 								}, -- [2]
 								["n"] = 2,
 							},
-						}, -- [27]
-						{
-							["Type"] = "cooldown",
-							["Name"] = "Commanding Shout",
-							["Enabled"] = true,
-							["ManaCheck"] = true,
 							["GUID"] = "TMW:icon:1Z7PEaK_TNq3",
 							["States"] = {
 								nil, -- [1]
@@ -13517,32 +13532,21 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["Conditions"] = {
-								{
-									["Type"] = "BUFFDUR",
-									["Checked"] = true,
-									["Name"] = "Battle Shout",
-								}, -- [1]
-								{
-									["Type"] = "BUFFDUR",
-									["Name"] = "Commanding Shout",
-								}, -- [2]
-								["n"] = 2,
-							},
 						}, -- [28]
 						{
-							["BuffOrDebuff"] = "EITHER",
+							["GUID"] = "TMW:icon:1Z7R_6NwuWuK",
 							["Type"] = "buff",
+							["BuffOrDebuff"] = "EITHER",
+							["Name"] = "Feared",
+							["Enabled"] = true,
+							["ManaCheck"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "SPELLCD",
 									["Name"] = "Berserker Rage",
+									["Type"] = "SPELLCD",
 								}, -- [1]
 								["n"] = 1,
 							},
-							["Name"] = "Feared",
-							["GUID"] = "TMW:icon:1Z7R_6NwuWuK",
-							["ManaCheck"] = true,
 							["CustomTex"] = "18499",
 							["States"] = {
 								nil, -- [1]
@@ -13552,15 +13556,18 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["Enabled"] = true,
 						}, -- [29]
 						{
+							["ManaCheck"] = true,
 							["Type"] = "reactive",
+							["Name"] = "Heroic Strike",
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "BUFFDUR",
-									["Operator"] = "~=",
 									["Name"] = "Glyph of Revenge",
+									["Operator"] = "~=",
 								}, -- [1]
 								{
 									["Type"] = "CURRENTSPELL",
@@ -13573,13 +13580,11 @@ TellMeWhenDB = {
 									["Level"] = 1,
 								}, -- [3]
 								{
-									["Type"] = "LUA",
 									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and IsSpellInRange(\"Cleave\", \"nameplate\" .. i) == 1 and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 1 then\n    return false\nelse\n    return true\nend",
+									["Type"] = "LUA",
 								}, -- [4]
 								["n"] = 4,
 							},
-							["Name"] = "Heroic Strike",
-							["ManaCheck"] = true,
 							["GUID"] = "TMW:icon:1Z8WLq4YSMiX",
 							["States"] = {
 								nil, -- [1]
@@ -13591,46 +13596,46 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["Enabled"] = true,
 						}, -- [30]
 						{
+							["GUID"] = "TMW:icon:1Z9CIRRFbqSA",
 							["Type"] = "cooldown",
 							["Name"] = "Disarm",
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Type"] = "EXISTS",
 									["Unit"] = "target",
+									["Type"] = "EXISTS",
 								}, -- [1]
 								{
-									["Type"] = "ALIVE",
 									["Unit"] = "target",
+									["Type"] = "ALIVE",
 								}, -- [2]
 								{
-									["Type"] = "ISPLAYER",
 									["Unit"] = "target",
+									["Type"] = "ISPLAYER",
 								}, -- [3]
 								{
 									["Type"] = "REACT",
-									["Unit"] = "target",
 									["Level"] = 1,
+									["Unit"] = "target",
 								}, -- [4]
 								{
 									["Type"] = "PVPFLAG",
 								}, -- [5]
 								{
 									["Type"] = "CLASS2",
-									["Unit"] = "target",
 									["BitFlags"] = 43,
+									["Unit"] = "target",
 								}, -- [6]
 								{
-									["Type"] = "STANCE",
 									["Name"] = "Defensive Stance",
+									["Type"] = "STANCE",
 								}, -- [7]
 								["n"] = 7,
 							},
-							["GUID"] = "TMW:icon:1Z9CIRRFbqSA",
-							["Enabled"] = true,
+							["ManaCheck"] = true,
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -13641,62 +13646,58 @@ TellMeWhenDB = {
 									["Alpha"] = 0,
 								}, -- [4]
 							},
-							["RangeCheck"] = true,
-							["ManaCheck"] = true,
 						}, -- [31]
 					},
+					["Columns"] = 20,
 				}, -- [1]
 				{
+					["GUID"] = "TMW:group:1TWYSTcQ410f",
 					["Point"] = {
 						["y"] = -65,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
 					["Scale"] = 1,
-					["TextureName"] = "Details Flat",
-					["Locked"] = true,
-					["GUID"] = "TMW:group:1TWYSTcQ410f",
-					["Columns"] = 20,
 					["Icons"] = {
 						{
-							["BuffOrDebuff"] = "HARMFUL",
+							["GUID"] = "TMW:icon:1TWYSTcSCl0z",
 							["Type"] = "buff",
 							["ShowTimerText"] = true,
-							["Name"] = "Blood Fury",
-							["GUID"] = "TMW:icon:1TWYSTcSCl0z",
+							["BuffOrDebuff"] = "HARMFUL",
 							["Enabled"] = true,
+							["Name"] = "Blood Fury",
 						}, -- [1]
 						{
+							["Enabled"] = true,
 							["Type"] = "buff",
 							["ShowTimerText"] = true,
-							["Enabled"] = true,
-							["Name"] = "Enrage",
-							["GUID"] = "TMW:icon:1TZvNvgAkfmq",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
 								},
 							},
+							["GUID"] = "TMW:icon:1TZvNvgAkfmq",
+							["Name"] = "Enrage",
 						}, -- [2]
 						{
-							["BuffOrDebuff"] = "HARMFUL",
+							["GUID"] = "TMW:icon:1Xx3hMFQR0cV",
 							["Type"] = "buff",
 							["ShowTimerText"] = true,
-							["Name"] = "Recently Bandaged",
-							["GUID"] = "TMW:icon:1Xx3hMFQR0cV",
+							["BuffOrDebuff"] = "HARMFUL",
 							["Enabled"] = true,
+							["Name"] = "Recently Bandaged",
 						}, -- [3]
 						{
+							["Enabled"] = true,
 							["Type"] = "buff",
 							["Name"] = "Sweeping Strikes",
-							["Enabled"] = true,
-							["ShowTimerText"] = true,
-							["GUID"] = "TMW:icon:1YXBo4F3g7mS",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
 								},
 							},
+							["GUID"] = "TMW:icon:1YXBo4F3g7mS",
+							["ShowTimerText"] = true,
 						}, -- [4]
 						nil, -- [5]
 						nil, -- [6]
@@ -13710,57 +13711,56 @@ TellMeWhenDB = {
 						nil, -- [14]
 						nil, -- [15]
 						{
+							["Enabled"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Heroic Strike",
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1Z8mFMG3Bv8u",
 							["Conditions"] = {
 								{
-									["Type"] = "CURRENTSPELL",
 									["Name"] = "Heroic Strike",
+									["Type"] = "CURRENTSPELL",
 								}, -- [1]
 								["n"] = 1,
 							},
+							["GUID"] = "TMW:icon:1Z8mFMG3Bv8u",
 						}, -- [16]
 						{
+							["Enabled"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Cleave",
-							["Enabled"] = true,
-							["GUID"] = "TMW:icon:1Z8mFMG5TSmy",
 							["Conditions"] = {
 								{
-									["Type"] = "CURRENTSPELL",
 									["Name"] = "Cleave",
+									["Type"] = "CURRENTSPELL",
 								}, -- [1]
 								["n"] = 1,
 							},
+							["GUID"] = "TMW:icon:1Z8mFMG5TSmy",
 						}, -- [17]
 						{
+							["Enabled"] = true,
 							["Type"] = "item",
 							["Name"] = "22105; 22103; 22104; 36892; 5509; 5512; 36894; 19013; 36893; 36891; 36890; 19009; 19004; 19012; 5510; 19007; 19005; 19006; 19010; 36889; 5511; 19008; 9421; 19011",
-							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1X=ERE5iZ8VU",
 							["Conditions"] = {
 								{
 									["Type"] = "HEALTH",
-									["Operator"] = "<=",
 									["Level"] = 60,
+									["Operator"] = "<=",
 								}, -- [1]
 								["n"] = 1,
 							},
-							["GUID"] = "TMW:icon:1X=ERE5iZ8VU",
 							["CustomTex"] = "5720",
 							["OnlyInBags"] = true,
 						}, -- [18]
 						{
-							["Type"] = "item",
-							["OnlyInBags"] = true,
-							["Name"] = "Major Healing Potion",
 							["GUID"] = "TMW:icon:1X=ERE5kaXRD",
+							["Type"] = "item",
+							["Name"] = "Major Healing Potion",
 							["Conditions"] = {
 								{
 									["Type"] = "HEALTH",
-									["Operator"] = "<",
 									["Level"] = 15,
+									["Operator"] = "<",
 								}, -- [1]
 								{
 									["Type"] = "ALIVE",
@@ -13768,19 +13768,23 @@ TellMeWhenDB = {
 								["n"] = 2,
 							},
 							["Enabled"] = true,
+							["OnlyInBags"] = true,
 						}, -- [19]
 						{
+							["GUID"] = "TMW:icon:1VagxKm_xQWz",
 							["Type"] = "buff",
 							["CBarOffs"] = 2,
-							["Name"] = "Renew",
-							["ShowTimerText"] = true,
-							["GUID"] = "TMW:icon:1VagxKm_xQWz",
-							["ShowCBar"] = true,
 							["Enabled"] = true,
+							["Name"] = "Renew",
+							["ShowCBar"] = true,
+							["ShowTimerText"] = true,
 						}, -- [20]
 					},
+					["TextureName"] = "Details Flat",
 					["Name"] = "GENERAL",
+					["Locked"] = true,
 					["Alpha"] = 0,
+					["Columns"] = 20,
 				}, -- [2]
 				{
 					["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -13788,11 +13792,12 @@ TellMeWhenDB = {
 						["y"] = -24.39078281325337,
 						["x"] = -225.6130916101359,
 					},
+					["Name"] = "OTHER PORTRAIT",
 					["Scale"] = 1.5,
-					["TextureName"] = "Details Flat",
 					["Columns"] = 1,
 					["Icons"] = {
 						{
+							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1Z7R_6NwuWuK", -- [1]
@@ -13804,77 +13809,37 @@ TellMeWhenDB = {
 								"TMW:icon:1Z8mFMG3Bv8u", -- [7]
 								"TMW:icon:1Z8mFMG5TSmy", -- [8]
 							},
-							["Enabled"] = true,
 						}, -- [1]
 						{
+							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1TWYSTcSCl0z", -- [1]
 							},
-							["Enabled"] = true,
 						}, -- [2]
 					},
-					["Name"] = "OTHER PORTRAIT",
+					["TextureName"] = "Details Flat",
 				}, -- [3]
 				{
+					["GUID"] = "TMW:group:1TQuFk14Ix42",
 					["Point"] = {
 						["y"] = -88,
 						["x"] = -5.450076092640056e-05,
 					},
 					["Scale"] = 1.5,
-					["TextureName"] = "Details Flat",
-					["Locked"] = true,
-					["OnlyInCombat"] = true,
-					["Columns"] = 1,
 					["Icons"] = {
 						{
-							["BuffOrDebuff"] = "HARMFUL",
-							["Unit"] = "target",
-							["OnlyMine"] = true,
+							["Enabled"] = true,
 							["Type"] = "meta",
-							["Conditions"] = {
-								{
-									["Type"] = "MOUNTED",
-									["Level"] = 1,
-								}, -- [1]
-								{
-									["Type"] = "EXISTS",
-									["Unit"] = "target",
-								}, -- [2]
-								{
-									["Type"] = "ALIVE",
-									["Unit"] = "target",
-								}, -- [3]
-								{
-									["Type"] = "REACT",
-									["Unit"] = "target",
-									["Level"] = 1,
-								}, -- [4]
-								{
-									["Type"] = "BUFFDUR",
-									["Unit"] = "target",
-									["Name"] = "Divine Shield",
-								}, -- [5]
-								{
-									["Type"] = "BUFFDUR",
-									["Unit"] = "target",
-									["Name"] = "Arcane Bubble",
-								}, -- [6]
-								{
-									["Type"] = "BUFFDUR",
-									["Unit"] = "target",
-									["Name"] = "Ice Block",
-								}, -- [7]
-								["n"] = 7,
-							},
+							["BuffOrDebuff"] = "HARMFUL",
 							["Icons"] = {
-								"TMW:icon:1X=ERE5iZ8VU", -- [1]
-								"TMW:icon:1Z7R_6NwuWuK", -- [2]
-								"TMW:icon:1Z55tRw68qC=", -- [3]
-								"TMW:icon:1Z7PEaKwPKnX", -- [4]
-								"TMW:icon:1TWYMfcUzmi6", -- [5]
-								"TMW:icon:1Z9CIRRFbqSA", -- [6]
-								"TMW:icon:1Z55tRw8OaCM", -- [7]
+								"TMW:icon:1TZvNvflXM0_", -- [1]
+								"TMW:icon:1X=ERE5iZ8VU", -- [2]
+								"TMW:icon:1Z7R_6NwuWuK", -- [3]
+								"TMW:icon:1Z55tRw68qC=", -- [4]
+								"TMW:icon:1Z7PEaKwPKnX", -- [5]
+								"TMW:icon:1TWYMfcUzmi6", -- [6]
+								"TMW:icon:1Z9CIRRFbqSA", -- [7]
 								"TMW:icon:1YP2Xjgjriiu", -- [8]
 								"TMW:icon:1YO55KEUKaW4", -- [9]
 								"TMW:icon:1Z8WLq4YSMiX", -- [10]
@@ -13889,22 +13854,57 @@ TellMeWhenDB = {
 								"TMW:icon:1TYYu4EDbfSz", -- [19]
 								"TMW:icon:1TU=hLnlwyeY", -- [20]
 								"TMW:icon:1TQv_LtTwAae", -- [21]
-								"TMW:icon:1TZvNvflXM0_", -- [22]
-								"TMW:icon:1YEqZQbYmmFD", -- [23]
-								"TMW:icon:1XzwOSGxkHLD", -- [24]
-								"TMW:icon:1Xwc=6KNp27d", -- [25]
-								"TMW:icon:1XwhZnw4w0Sf", -- [26]
-								"TMW:icon:1Y2=7t6wEuO2", -- [27]
-								"TMW:icon:1Z55tRw3mJGc", -- [28]
+								"TMW:icon:1YEqZQbYmmFD", -- [22]
+								"TMW:icon:1XzwOSGxkHLD", -- [23]
+								"TMW:icon:1Xwc=6KNp27d", -- [24]
+								"TMW:icon:1XwhZnw4w0Sf", -- [25]
+								"TMW:icon:1Y2=7t6wEuO2", -- [26]
+								"TMW:icon:1Z55tRw3mJGc", -- [27]
 							},
+							["Unit"] = "target",
+							["OnlyMine"] = true,
 							["Name"] = "Rend",
-							["Enabled"] = true,
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
 										[2] = "[Stacks:Hide(0)]",
 									},
 								},
+							},
+							["Conditions"] = {
+								{
+									["Level"] = 1,
+									["Type"] = "MOUNTED",
+								}, -- [1]
+								{
+									["Unit"] = "target",
+									["Type"] = "EXISTS",
+								}, -- [2]
+								{
+									["Unit"] = "target",
+									["Type"] = "ALIVE",
+								}, -- [3]
+								{
+									["Type"] = "REACT",
+									["Level"] = 1,
+									["Unit"] = "target",
+								}, -- [4]
+								{
+									["Type"] = "BUFFDUR",
+									["Name"] = "Divine Shield",
+									["Unit"] = "target",
+								}, -- [5]
+								{
+									["Type"] = "BUFFDUR",
+									["Name"] = "Arcane Bubble",
+									["Unit"] = "target",
+								}, -- [6]
+								{
+									["Type"] = "BUFFDUR",
+									["Name"] = "Ice Block",
+									["Unit"] = "target",
+								}, -- [7]
+								["n"] = 7,
 							},
 							["States"] = {
 								{
@@ -13916,20 +13916,20 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 						{
-							["Sort"] = -1,
-							["Type"] = "buff",
-							["Name"] = "Battle Shout",
 							["Enabled"] = true,
+							["Type"] = "buff",
+							["Sort"] = -1,
+							["Name"] = "Battle Shout",
+							["DurationMin"] = 15,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
-									["Operator"] = ">=",
 									["Level"] = 10,
+									["Operator"] = ">=",
 								}, -- [1]
 								["n"] = 1,
 							},
 							["DurationMinEnabled"] = true,
-							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -13943,88 +13943,52 @@ TellMeWhenDB = {
 							},
 						}, -- [2]
 					},
+					["TextureName"] = "Details Flat",
+					["LayoutDirection"] = 2,
 					["SortPriorities"] = {
 						{
 							["Order"] = -1,
 						}, -- [1]
 					},
-					["LayoutDirection"] = 2,
 					["Name"] = "ROTATION CENTER",
 					["SettingsPerView"] = {
 						["icon"] = {
-							["BorderInset"] = false,
 							["BorderColor"] = "00000000",
+							["BorderInset"] = false,
 						},
 					},
+					["Locked"] = true,
 					["Conditions"] = {
 						{
-							["Type"] = "MOUNTED",
 							["Level"] = 1,
+							["Type"] = "MOUNTED",
 						}, -- [1]
 						["n"] = 1,
 					},
-					["GUID"] = "TMW:group:1TQuFk14Ix42",
+					["Columns"] = 1,
+					["OnlyInCombat"] = true,
 				}, -- [4]
 				{
+					["GUID"] = "TMW:group:1YWsxTHpfSuR",
 					["Point"] = {
 						["y"] = -0.00042724609375,
 						["point"] = "TOPLEFT",
 						["relativePoint"] = "TOPLEFT",
 					},
 					["Scale"] = 0.4,
-					["TextureName"] = "Details Flat",
-					["Locked"] = true,
-					["OnlyInCombat"] = true,
-					["Columns"] = 1,
 					["Icons"] = {
 						{
-							["BuffOrDebuff"] = "HARMFUL",
-							["Unit"] = "target",
-							["OnlyMine"] = true,
+							["Enabled"] = true,
 							["Type"] = "meta",
-							["Conditions"] = {
-								{
-									["Type"] = "MOUNTED",
-									["Level"] = 1,
-								}, -- [1]
-								{
-									["Type"] = "EXISTS",
-									["Unit"] = "target",
-								}, -- [2]
-								{
-									["Type"] = "ALIVE",
-									["Unit"] = "target",
-								}, -- [3]
-								{
-									["Type"] = "REACT",
-									["Unit"] = "target",
-									["Level"] = 1,
-								}, -- [4]
-								{
-									["Type"] = "BUFFDUR",
-									["Unit"] = "target",
-									["Name"] = "Divine Shield",
-								}, -- [5]
-								{
-									["Type"] = "BUFFDUR",
-									["Unit"] = "target",
-									["Name"] = "Arcane Bubble",
-								}, -- [6]
-								{
-									["Type"] = "BUFFDUR",
-									["Unit"] = "target",
-									["Name"] = "Ice Block",
-								}, -- [7]
-								["n"] = 7,
-							},
+							["BuffOrDebuff"] = "HARMFUL",
 							["Icons"] = {
-								"TMW:icon:1X=ERE5iZ8VU", -- [1]
-								"TMW:icon:1Z7R_6NwuWuK", -- [2]
-								"TMW:icon:1Z55tRw68qC=", -- [3]
-								"TMW:icon:1Z7PEaKwPKnX", -- [4]
-								"TMW:icon:1TWYMfcUzmi6", -- [5]
-								"TMW:icon:1Z9CIRRFbqSA", -- [6]
-								"TMW:icon:1Z55tRw8OaCM", -- [7]
+								"TMW:icon:1TZvNvflXM0_", -- [1]
+								"TMW:icon:1X=ERE5iZ8VU", -- [2]
+								"TMW:icon:1Z7R_6NwuWuK", -- [3]
+								"TMW:icon:1Z55tRw68qC=", -- [4]
+								"TMW:icon:1Z7PEaKwPKnX", -- [5]
+								"TMW:icon:1TWYMfcUzmi6", -- [6]
+								"TMW:icon:1Z9CIRRFbqSA", -- [7]
 								"TMW:icon:1YP2Xjgjriiu", -- [8]
 								"TMW:icon:1YO55KEUKaW4", -- [9]
 								"TMW:icon:1Z8WLq4YSMiX", -- [10]
@@ -14039,22 +14003,57 @@ TellMeWhenDB = {
 								"TMW:icon:1TYYu4EDbfSz", -- [19]
 								"TMW:icon:1TU=hLnlwyeY", -- [20]
 								"TMW:icon:1TQv_LtTwAae", -- [21]
-								"TMW:icon:1TZvNvflXM0_", -- [22]
-								"TMW:icon:1YEqZQbYmmFD", -- [23]
-								"TMW:icon:1XzwOSGxkHLD", -- [24]
-								"TMW:icon:1Xwc=6KNp27d", -- [25]
-								"TMW:icon:1XwhZnw4w0Sf", -- [26]
-								"TMW:icon:1Y2=7t6wEuO2", -- [27]
-								"TMW:icon:1Z55tRw3mJGc", -- [28]
+								"TMW:icon:1YEqZQbYmmFD", -- [22]
+								"TMW:icon:1XzwOSGxkHLD", -- [23]
+								"TMW:icon:1Xwc=6KNp27d", -- [24]
+								"TMW:icon:1XwhZnw4w0Sf", -- [25]
+								"TMW:icon:1Y2=7t6wEuO2", -- [26]
+								"TMW:icon:1Z55tRw3mJGc", -- [27]
 							},
+							["Unit"] = "target",
+							["OnlyMine"] = true,
 							["Name"] = "Rend",
-							["Enabled"] = true,
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
 										[2] = "[Stacks:Hide(0)]",
 									},
 								},
+							},
+							["Conditions"] = {
+								{
+									["Level"] = 1,
+									["Type"] = "MOUNTED",
+								}, -- [1]
+								{
+									["Unit"] = "target",
+									["Type"] = "EXISTS",
+								}, -- [2]
+								{
+									["Unit"] = "target",
+									["Type"] = "ALIVE",
+								}, -- [3]
+								{
+									["Type"] = "REACT",
+									["Level"] = 1,
+									["Unit"] = "target",
+								}, -- [4]
+								{
+									["Type"] = "BUFFDUR",
+									["Name"] = "Divine Shield",
+									["Unit"] = "target",
+								}, -- [5]
+								{
+									["Type"] = "BUFFDUR",
+									["Name"] = "Arcane Bubble",
+									["Unit"] = "target",
+								}, -- [6]
+								{
+									["Type"] = "BUFFDUR",
+									["Name"] = "Ice Block",
+									["Unit"] = "target",
+								}, -- [7]
+								["n"] = 7,
 							},
 							["States"] = {
 								{
@@ -14066,20 +14065,20 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 						{
-							["Sort"] = -1,
-							["Type"] = "buff",
-							["Name"] = "Battle Shout",
 							["Enabled"] = true,
+							["Type"] = "buff",
+							["Sort"] = -1,
+							["Name"] = "Battle Shout",
+							["DurationMin"] = 15,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
-									["Operator"] = ">=",
 									["Level"] = 10,
+									["Operator"] = ">=",
 								}, -- [1]
 								["n"] = 1,
 							},
 							["DurationMinEnabled"] = true,
-							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -14093,36 +14092,40 @@ TellMeWhenDB = {
 							},
 						}, -- [2]
 					},
+					["TextureName"] = "Details Flat",
+					["LayoutDirection"] = 2,
 					["SortPriorities"] = {
 						{
 							["Order"] = -1,
 						}, -- [1]
 					},
-					["LayoutDirection"] = 2,
 					["Name"] = "ROTATION TOPLEFT",
 					["SettingsPerView"] = {
 						["icon"] = {
-							["BorderInset"] = false,
 							["BorderColor"] = "00000000",
+							["BorderInset"] = false,
 						},
 					},
+					["Locked"] = true,
 					["Conditions"] = {
 						{
-							["Type"] = "MOUNTED",
 							["Level"] = 1,
+							["Type"] = "MOUNTED",
 						}, -- [1]
 						["n"] = 1,
 					},
-					["GUID"] = "TMW:group:1YWsxTHpfSuR",
+					["Columns"] = 1,
+					["OnlyInCombat"] = true,
 				}, -- [5]
 			},
+			["Locked"] = true,
+			["Version"] = 92500,
 			["NumGroups"] = 5,
 			["TextureName"] = "Glamour2",
-			["Version"] = 92500,
-			["Locked"] = true,
 		},
 		["Paladin"] = {
 			["Locked"] = true,
+			["Version"] = 92500,
 			["NumGroups"] = 4,
 			["Groups"] = {
 				{
@@ -14465,6 +14468,79 @@ TellMeWhenDB = {
 								}, -- [4]
 							},
 						}, -- [7]
+						[41] = {
+							["Enabled"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Blessing of Might",
+							["ManaCheck"] = true,
+							["Conditions"] = {
+								{
+									["Type"] = "BUFFDUR",
+									["Name"] = "Blessing of Might",
+									["AndOr"] = "OR",
+									["Level"] = 10,
+									["Operator"] = "<=",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["GUID"] = "TMW:icon:1YXd9eWHzTSH",
+							["States"] = {
+								nil, -- [1]
+								nil, -- [2]
+								nil, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						},
+						[26] = {
+							["GUID"] = "TMW:icon:1YbFYj2F1X0v",
+							["Type"] = "cooldown",
+							["Name"] = "Ferocious Bite",
+							["RangeCheck"] = true,
+							["Conditions"] = {
+								{
+									["Name"] = "Cat Form",
+									["Type"] = "STANCE",
+								}, -- [1]
+								{
+									["Operator"] = "<=",
+									["Level"] = 3000,
+									["Type"] = "HEALTH_ABS",
+									["Unit"] = "target",
+								}, -- [2]
+								{
+									["Type"] = "EXISTS",
+									["Unit"] = "target",
+								}, -- [3]
+								{
+									["Type"] = "ALIVE",
+									["Unit"] = "target",
+								}, -- [4]
+								{
+									["Type"] = "REACT",
+									["Level"] = 1,
+									["Unit"] = "target",
+								}, -- [5]
+								{
+									["Type"] = "COMBO",
+									["Level"] = 4,
+									["Operator"] = ">=",
+								}, -- [6]
+								["n"] = 6,
+							},
+							["ManaCheck"] = true,
+							["States"] = {
+								nil, -- [1]
+								nil, -- [2]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [4]
+							},
+						},
 						[21] = {
 							["GUID"] = "TMW:icon:1YYs1I2bCNGy",
 							["Type"] = "cooldown",
@@ -14519,79 +14595,6 @@ TellMeWhenDB = {
 								}, -- [3]
 								{
 									["Color"] = "ffffffff",
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						},
-						[26] = {
-							["GUID"] = "TMW:icon:1YbFYj2F1X0v",
-							["Type"] = "cooldown",
-							["Name"] = "Ferocious Bite",
-							["RangeCheck"] = true,
-							["Conditions"] = {
-								{
-									["Name"] = "Cat Form",
-									["Type"] = "STANCE",
-								}, -- [1]
-								{
-									["Operator"] = "<=",
-									["Level"] = 3000,
-									["Type"] = "HEALTH_ABS",
-									["Unit"] = "target",
-								}, -- [2]
-								{
-									["Type"] = "EXISTS",
-									["Unit"] = "target",
-								}, -- [3]
-								{
-									["Type"] = "ALIVE",
-									["Unit"] = "target",
-								}, -- [4]
-								{
-									["Type"] = "REACT",
-									["Level"] = 1,
-									["Unit"] = "target",
-								}, -- [5]
-								{
-									["Type"] = "COMBO",
-									["Level"] = 4,
-									["Operator"] = ">=",
-								}, -- [6]
-								["n"] = 6,
-							},
-							["ManaCheck"] = true,
-							["States"] = {
-								nil, -- [1]
-								nil, -- [2]
-								{
-									["Alpha"] = 0,
-								}, -- [3]
-								{
-									["Alpha"] = 0,
-								}, -- [4]
-							},
-						},
-						[41] = {
-							["Enabled"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Blessing of Might",
-							["ManaCheck"] = true,
-							["Conditions"] = {
-								{
-									["Type"] = "BUFFDUR",
-									["Name"] = "Blessing of Might",
-									["AndOr"] = "OR",
-									["Level"] = 10,
-									["Operator"] = "<=",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["GUID"] = "TMW:icon:1YXd9eWHzTSH",
-							["States"] = {
-								nil, -- [1]
-								nil, -- [2]
-								nil, -- [3]
-								{
 									["Alpha"] = 0,
 								}, -- [4]
 							},
@@ -14875,51 +14878,23 @@ TellMeWhenDB = {
 								}, -- [4]
 							},
 						},
-						[25] = {
-							["GUID"] = "TMW:icon:1YaXVCdLMBa8",
+						[49] = {
+							["Enabled"] = true,
 							["Type"] = "cooldown",
-							["Name"] = "Rip",
-							["RangeCheck"] = true,
+							["Name"] = "Consecration",
+							["ManaCheck"] = true,
 							["Conditions"] = {
 								{
-									["Name"] = "Cat Form",
-									["Type"] = "STANCE",
+									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 2 then\n    return true\nelse\n    return false\nend",
+									["Type"] = "LUA",
 								}, -- [1]
-								{
-									["Type"] = "COMBO",
-									["Level"] = 4,
-									["Operator"] = ">=",
-								}, -- [2]
-								{
-									["Operator"] = ">",
-									["Level"] = 3000,
-									["Type"] = "HEALTH_ABS",
-									["Unit"] = "target",
-								}, -- [3]
-								{
-									["Type"] = "DEBUFFDUR",
-									["Name"] = "Mangle (Cat)",
-									["PrtsBefore"] = 1,
-									["Operator"] = "~=",
-									["Unit"] = "target",
-								}, -- [4]
-								{
-									["Type"] = "DEBUFFDUR",
-									["Name"] = "Mangle (Bear)",
-									["Operator"] = "~=",
-									["AndOr"] = "OR",
-									["PrtsAfter"] = 1,
-									["Unit"] = "target",
-								}, -- [5]
-								["n"] = 5,
+								["n"] = 1,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1Z6tL7hfkyqu",
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
-								{
-									["Alpha"] = 0,
-								}, -- [3]
+								nil, -- [3]
 								{
 									["Alpha"] = 0,
 								}, -- [4]
@@ -15149,23 +15124,51 @@ TellMeWhenDB = {
 								}, -- [4]
 							},
 						},
-						[49] = {
-							["Enabled"] = true,
+						[25] = {
+							["GUID"] = "TMW:icon:1YaXVCdLMBa8",
 							["Type"] = "cooldown",
-							["Name"] = "Consecration",
-							["ManaCheck"] = true,
+							["Name"] = "Rip",
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Name"] = "local inRange = 0\nfor i = 1, 40 do\n    if UnitExists(\"nameplate\" .. i) and CheckInteractDistance(\"nameplate\"..i, 3) then\n        -- 1 = Inspect, 28 yards\n        -- 2 = Trade, 11.11 yards\n        -- 3 = Duel, 9.9 yards\n        -- 4 = Follow, 28 yards\n        -- print(\"nameplate\"..i,CheckInteractDistance(\"nameplate\"..i, 3))\n        inRange = inRange + 1\n    end\nend\nif inRange > 2 then\n    return true\nelse\n    return false\nend",
-									["Type"] = "LUA",
+									["Name"] = "Cat Form",
+									["Type"] = "STANCE",
 								}, -- [1]
-								["n"] = 1,
+								{
+									["Type"] = "COMBO",
+									["Level"] = 4,
+									["Operator"] = ">=",
+								}, -- [2]
+								{
+									["Operator"] = ">",
+									["Level"] = 3000,
+									["Type"] = "HEALTH_ABS",
+									["Unit"] = "target",
+								}, -- [3]
+								{
+									["Type"] = "DEBUFFDUR",
+									["Name"] = "Mangle (Cat)",
+									["PrtsBefore"] = 1,
+									["Operator"] = "~=",
+									["Unit"] = "target",
+								}, -- [4]
+								{
+									["Type"] = "DEBUFFDUR",
+									["Name"] = "Mangle (Bear)",
+									["Operator"] = "~=",
+									["AndOr"] = "OR",
+									["PrtsAfter"] = 1,
+									["Unit"] = "target",
+								}, -- [5]
+								["n"] = 5,
 							},
-							["GUID"] = "TMW:icon:1Z6tL7hfkyqu",
+							["ManaCheck"] = true,
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
-								nil, -- [3]
+								{
+									["Alpha"] = 0,
+								}, -- [3]
 								{
 									["Alpha"] = 0,
 								}, -- [4]
@@ -15313,7 +15316,6 @@ TellMeWhenDB = {
 					["OnlyInCombat"] = true,
 				}, -- [4]
 			},
-			["Version"] = 92500,
 		},
 		["Battlearm - Hydraxian Waterlords"] = {
 			["Locked"] = true,
@@ -15340,23 +15342,42 @@ TellMeWhenDB = {
 				}, -- [1]
 			},
 		},
+		["Klhjakhsgdjh - Golemagg"] = {
+			["Locked"] = true,
+			["Version"] = 86907,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1V9nWrIIEiys",
+				}, -- [1]
+			},
+		},
+		["Jaroslav - Golemagg"] = {
+			["Version"] = 86907,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1VAdQEMGnK_K",
+				}, -- [1]
+			},
+		},
 		["Druid"] = {
 			["Locked"] = true,
-			["NumGroups"] = 4,
-			["Version"] = 92500,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
+					["Columns"] = 20,
+					["Scale"] = 1,
+					["Rows"] = 3,
+					["Alpha"] = 0,
+					["Name"] = "Druid Spells",
+					["Locked"] = true,
 					["Point"] = {
 						["y"] = -5,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
-					["Scale"] = 1,
-					["Rows"] = 3,
 					["Icons"] = {
 						{
-							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Maul",
 							["Enabled"] = true,
@@ -15387,13 +15408,13 @@ TellMeWhenDB = {
 								}, -- [5]
 								{
 									["Type"] = "RAGE_ABS",
-									["Level"] = 30,
 									["AndOr"] = "OR",
+									["Level"] = 30,
 									["Operator"] = ">=",
 								}, -- [6]
 								["n"] = 6,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -15411,7 +15432,7 @@ TellMeWhenDB = {
 							["RangeCheck"] = true,
 							["OnlyMine"] = true,
 							["Name"] = "Demoralizing Roar",
-							["GUID"] = "TMW:icon:1TeVAjjavXC6",
+							["ManaCheck"] = true,
 							["Conditions"] = {
 								{
 									["Name"] = "Bear Form; Dire Bear Form",
@@ -15437,7 +15458,7 @@ TellMeWhenDB = {
 								}, -- [5]
 								["n"] = 5,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1TeVAjjavXC6",
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -15450,7 +15471,7 @@ TellMeWhenDB = {
 							},
 						}, -- [2]
 						{
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1V6lsULwY3_Y",
 							["Type"] = "cooldown",
 							["Name"] = "Swipe (Bear)",
 							["Enabled"] = true,
@@ -15468,8 +15489,8 @@ TellMeWhenDB = {
 								}, -- [2]
 								{
 									["Type"] = "ALIVE",
-									["Unit"] = "target",
 									["Operator"] = ">=",
+									["Unit"] = "target",
 								}, -- [3]
 								{
 									["Type"] = "REACT",
@@ -15495,7 +15516,7 @@ TellMeWhenDB = {
 								}, -- [7]
 								["n"] = 7,
 							},
-							["GUID"] = "TMW:icon:1V6lsULwY3_Y",
+							["ManaCheck"] = true,
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -15510,7 +15531,7 @@ TellMeWhenDB = {
 							},
 						}, -- [3]
 						{
-							["GUID"] = "TMW:icon:1V6noP8ARoel",
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
@@ -15532,7 +15553,7 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1V6noP8ARoel",
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -15545,7 +15566,7 @@ TellMeWhenDB = {
 							},
 						}, -- [4]
 						{
-							["GUID"] = "TMW:icon:1Z69muUIlNiY",
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Mangle (Cat)",
 							["Enabled"] = true,
@@ -15564,11 +15585,11 @@ TellMeWhenDB = {
 								{
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "Mangle (Cat)",
-									["Operator"] = "<=",
+									["Unit"] = "target",
 									["Level"] = 10,
 									["AndOr"] = "OR",
 									["PrtsAfter"] = 1,
-									["Unit"] = "target",
+									["Operator"] = "<=",
 								}, -- [3]
 								{
 									["PrtsBefore"] = 1,
@@ -15579,15 +15600,15 @@ TellMeWhenDB = {
 								{
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "Mangle (Bear)",
-									["Unit"] = "target",
+									["Operator"] = "<=",
 									["Level"] = 10,
 									["AndOr"] = "OR",
 									["PrtsAfter"] = 1,
-									["Operator"] = "<=",
+									["Unit"] = "target",
 								}, -- [5]
 								["n"] = 5,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1Z69muUIlNiY",
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -15600,10 +15621,10 @@ TellMeWhenDB = {
 							},
 						}, -- [5]
 						{
-							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1Z69muUKqqKC",
 							["Type"] = "cooldown",
 							["Name"] = "Survival Instincts",
-							["GUID"] = "TMW:icon:1Z69muUKqqKC",
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "HEALTH",
@@ -15634,7 +15655,7 @@ TellMeWhenDB = {
 							},
 						}, -- [6]
 						{
-							["GUID"] = "TMW:icon:1Z6o5cxM6Qma",
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Mangle (Bear)",
 							["Enabled"] = true,
@@ -15653,11 +15674,11 @@ TellMeWhenDB = {
 								{
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "Mangle (Bear)",
-									["Unit"] = "target",
+									["Operator"] = "<=",
 									["Level"] = 10,
 									["AndOr"] = "OR",
 									["PrtsAfter"] = 1,
-									["Operator"] = "<=",
+									["Unit"] = "target",
 								}, -- [3]
 								{
 									["PrtsBefore"] = 1,
@@ -15668,15 +15689,15 @@ TellMeWhenDB = {
 								{
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "Mangle (Cat)",
-									["Unit"] = "target",
+									["Operator"] = "<=",
 									["Level"] = 10,
 									["AndOr"] = "OR",
 									["PrtsAfter"] = 1,
-									["Operator"] = "<=",
+									["Unit"] = "target",
 								}, -- [5]
 								["n"] = 5,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1Z6o5cxM6Qma",
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -15689,7 +15710,7 @@ TellMeWhenDB = {
 							},
 						}, -- [7]
 						[24] = {
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1YZamy7DqjiW",
 							["Type"] = "cooldown",
 							["Name"] = "Rake",
 							["Enabled"] = true,
@@ -15722,26 +15743,26 @@ TellMeWhenDB = {
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "Mangle (Cat)",
 									["PrtsBefore"] = 1,
-									["Unit"] = "target",
 									["Operator"] = "~=",
+									["Unit"] = "target",
 								}, -- [6]
 								{
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "Mangle (Bear)",
-									["Unit"] = "target",
+									["Operator"] = "~=",
 									["AndOr"] = "OR",
 									["PrtsAfter"] = 1,
-									["Operator"] = "~=",
+									["Unit"] = "target",
 								}, -- [7]
 								{
-									["Unit"] = "target",
+									["Operator"] = ">=",
 									["Level"] = 1000,
 									["Type"] = "HEALTH_ABS",
-									["Operator"] = ">=",
+									["Unit"] = "target",
 								}, -- [8]
 								["n"] = 8,
 							},
-							["GUID"] = "TMW:icon:1YZamy7DqjiW",
+							["ManaCheck"] = true,
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -15754,7 +15775,7 @@ TellMeWhenDB = {
 							},
 						},
 						[25] = {
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1YaXVCdLMBa8",
 							["Type"] = "cooldown",
 							["Name"] = "Rip",
 							["Enabled"] = true,
@@ -15770,29 +15791,29 @@ TellMeWhenDB = {
 									["Operator"] = ">=",
 								}, -- [2]
 								{
-									["Unit"] = "target",
+									["Operator"] = ">",
 									["Level"] = 3000,
 									["Type"] = "HEALTH_ABS",
-									["Operator"] = ">",
+									["Unit"] = "target",
 								}, -- [3]
 								{
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "Mangle (Cat)",
 									["PrtsBefore"] = 1,
-									["Unit"] = "target",
 									["Operator"] = "~=",
+									["Unit"] = "target",
 								}, -- [4]
 								{
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "Mangle (Bear)",
-									["Unit"] = "target",
+									["Operator"] = "~=",
 									["AndOr"] = "OR",
 									["PrtsAfter"] = 1,
-									["Operator"] = "~=",
+									["Unit"] = "target",
 								}, -- [5]
 								["n"] = 5,
 							},
-							["GUID"] = "TMW:icon:1YaXVCdLMBa8",
+							["ManaCheck"] = true,
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -15805,7 +15826,7 @@ TellMeWhenDB = {
 							},
 						},
 						[26] = {
-							["GUID"] = "TMW:icon:1YbFYj2F1X0v",
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Ferocious Bite",
 							["Enabled"] = true,
@@ -15816,10 +15837,10 @@ TellMeWhenDB = {
 									["Type"] = "STANCE",
 								}, -- [1]
 								{
-									["Unit"] = "target",
+									["Operator"] = "<=",
 									["Level"] = 3000,
 									["Type"] = "HEALTH_ABS",
-									["Operator"] = "<=",
+									["Unit"] = "target",
 								}, -- [2]
 								{
 									["Type"] = "EXISTS",
@@ -15841,7 +15862,7 @@ TellMeWhenDB = {
 								}, -- [6]
 								["n"] = 6,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1YbFYj2F1X0v",
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -15890,7 +15911,7 @@ TellMeWhenDB = {
 							},
 						},
 						[28] = {
-							["GUID"] = "TMW:icon:1Z3Dak8Afvm1",
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Pounce",
 							["Enabled"] = true,
@@ -15915,7 +15936,7 @@ TellMeWhenDB = {
 								}, -- [4]
 								["n"] = 4,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1Z3Dak8Afvm1",
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -15928,7 +15949,7 @@ TellMeWhenDB = {
 							},
 						},
 						[29] = {
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1Z4qW_DgW_ek",
 							["Type"] = "cooldown",
 							["Name"] = "Tiger's Fury",
 							["Enabled"] = true,
@@ -15941,9 +15962,9 @@ TellMeWhenDB = {
 								{
 									["Type"] = "DEBUFFDUR",
 									["Checked"] = true,
-									["Operator"] = "~=",
-									["Name"] = "Rake",
 									["Unit"] = "target",
+									["Name"] = "Rake",
+									["Operator"] = "~=",
 								}, -- [2]
 								{
 									["Type"] = "ENERGY_ABS",
@@ -15952,7 +15973,7 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["GUID"] = "TMW:icon:1Z4qW_DgW_ek",
+							["ManaCheck"] = true,
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -15965,7 +15986,7 @@ TellMeWhenDB = {
 							},
 						},
 						[43] = {
-							["GUID"] = "TMW:icon:1YatF3BT0RKW",
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Faerie Fire (Feral)",
 							["Enabled"] = true,
@@ -15999,7 +16020,7 @@ TellMeWhenDB = {
 								}, -- [6]
 								["n"] = 6,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1YatF3BT0RKW",
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -16033,7 +16054,7 @@ TellMeWhenDB = {
 							},
 						},
 						[23] = {
-							["GUID"] = "TMW:icon:1YYv3MYeNeSM",
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Shred",
 							["Enabled"] = true,
@@ -16059,20 +16080,20 @@ TellMeWhenDB = {
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "Mangle (Cat)",
 									["PrtsBefore"] = 1,
-									["Unit"] = "target",
 									["Operator"] = "~=",
+									["Unit"] = "target",
 								}, -- [5]
 								{
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "Mangle (Bear)",
-									["Unit"] = "target",
+									["Operator"] = "~=",
 									["AndOr"] = "OR",
 									["PrtsAfter"] = 1,
-									["Operator"] = "~=",
+									["Unit"] = "target",
 								}, -- [6]
 								["n"] = 6,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1YYv3MYeNeSM",
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -16085,7 +16106,7 @@ TellMeWhenDB = {
 							},
 						},
 						[21] = {
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1YYs1I2bCNGy",
 							["Type"] = "cooldown",
 							["Name"] = "Claw",
 							["Enabled"] = true,
@@ -16116,20 +16137,20 @@ TellMeWhenDB = {
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "Mangle (Cat)",
 									["PrtsBefore"] = 1,
-									["Unit"] = "target",
 									["Operator"] = "~=",
+									["Unit"] = "target",
 								}, -- [6]
 								{
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "Mangle (Bear)",
-									["Unit"] = "target",
+									["Operator"] = "~=",
 									["AndOr"] = "OR",
 									["PrtsAfter"] = 1,
-									["Operator"] = "~=",
+									["Unit"] = "target",
 								}, -- [7]
 								["n"] = 7,
 							},
-							["GUID"] = "TMW:icon:1YYs1I2bCNGy",
+							["ManaCheck"] = true,
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -16169,7 +16190,7 @@ TellMeWhenDB = {
 							},
 						},
 						[44] = {
-							["GUID"] = "TMW:icon:1YawP4LcafCX",
+							["ManaCheck"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Cower",
 							["Enabled"] = true,
@@ -16180,10 +16201,10 @@ TellMeWhenDB = {
 									["Type"] = "STANCE",
 								}, -- [1]
 								{
-									["Unit"] = "target",
+									["Operator"] = ">=",
 									["Level"] = 85,
 									["Type"] = "THREATSCALED",
-									["Operator"] = ">=",
+									["Unit"] = "target",
 								}, -- [2]
 								{
 									["Type"] = "GROUP2",
@@ -16192,7 +16213,7 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1YawP4LcafCX",
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -16205,7 +16226,7 @@ TellMeWhenDB = {
 							},
 						},
 						[22] = {
-							["ManaCheck"] = true,
+							["GUID"] = "TMW:icon:1YYs1I2c_Meo",
 							["Type"] = "cooldown",
 							["Name"] = "Claw",
 							["RangeCheck"] = true,
@@ -16233,21 +16254,21 @@ TellMeWhenDB = {
 									["Type"] = "DEBUFFDUR",
 									["Checked"] = true,
 									["PrtsBefore"] = 1,
-									["Unit"] = "target",
-									["Name"] = "Mangle (Cat)",
 									["Operator"] = "~=",
+									["Name"] = "Mangle (Cat)",
+									["Unit"] = "target",
 								}, -- [6]
 								{
 									["Type"] = "DEBUFFDUR",
 									["Name"] = "Mangle (Bear)",
-									["Unit"] = "target",
+									["Operator"] = "~=",
 									["AndOr"] = "OR",
 									["PrtsAfter"] = 1,
-									["Operator"] = "~=",
+									["Unit"] = "target",
 								}, -- [7]
 								["n"] = 7,
 							},
-							["GUID"] = "TMW:icon:1YYs1I2c_Meo",
+							["ManaCheck"] = true,
 							["States"] = {
 								nil, -- [1]
 								nil, -- [2]
@@ -16260,10 +16281,6 @@ TellMeWhenDB = {
 							},
 						},
 					},
-					["Name"] = "Druid Spells",
-					["Locked"] = true,
-					["Columns"] = 20,
-					["Alpha"] = 0,
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -16416,23 +16433,8 @@ TellMeWhenDB = {
 					["OnlyInCombat"] = true,
 				}, -- [4]
 			},
-		},
-		["Jaroslav - Golemagg"] = {
-			["Version"] = 86907,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1VAdQEMGnK_K",
-				}, -- [1]
-			},
-		},
-		["Klhjakhsgdjh - Golemagg"] = {
-			["Locked"] = true,
-			["Version"] = 86907,
-			["Groups"] = {
-				{
-					["GUID"] = "TMW:group:1V9nWrIIEiys",
-				}, -- [1]
-			},
+			["NumGroups"] = 4,
+			["Version"] = 92500,
 		},
 		["Moolatz - Golemagg"] = {
 			["Version"] = 91200,
@@ -16451,64 +16453,62 @@ TellMeWhenDB = {
 			},
 		},
 		["Priest"] = {
-			["Locked"] = true,
-			["NumGroups"] = 3,
-			["Version"] = 92500,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TWYPj24VzCn",
-					["Columns"] = 1,
-					["Point"] = {
-						["y"] = -20,
-						["x"] = -230,
-					},
 					["Scale"] = 1.5,
-					["Name"] = "Other",
+					["TextureName"] = "Details Flat",
+					["Columns"] = 1,
 					["Icons"] = {
 						{
-							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1VjwkIsn7fZp", -- [1]
 							},
+							["Enabled"] = true,
 						}, -- [1]
 					},
-					["TextureName"] = "Details Flat",
+					["Name"] = "Other",
+					["Point"] = {
+						["y"] = -20,
+						["x"] = -230,
+					},
 				}, -- [1]
 				{
-					["GUID"] = "TMW:group:1TeVAjjUoOOh",
 					["Point"] = {
 						["y"] = -5,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
-					["Name"] = "Hunter Spells",
-					["Alpha"] = 0,
 					["Scale"] = 1,
+					["Locked"] = true,
+					["GUID"] = "TMW:group:1TeVAjjUoOOh",
 					["Columns"] = 20,
+					["Alpha"] = 0,
+					["Name"] = "Hunter Spells",
 					["Icons"] = {
 						{
-							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
-							["Type"] = "buff",
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["OnlyMine"] = true,
+							["Type"] = "buff",
 							["Name"] = "Serpent Sting",
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "MANA_ABS",
-									["Level"] = 100,
 									["Operator"] = ">",
+									["Level"] = 100,
 								}, -- [1]
 								{
-									["Operator"] = "<=",
-									["Level"] = 35,
 									["Type"] = "LIBRANGECHECK",
 									["Unit"] = "target",
+									["Operator"] = "<=",
+									["Level"] = 35,
 								}, -- [2]
 								["n"] = 2,
 							},
-							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -16519,9 +16519,12 @@ TellMeWhenDB = {
 							},
 						}, -- [1]
 						{
-							["GUID"] = "TMW:icon:1TeVAjjavXC6",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
 							["Type"] = "buff",
 							["ShowTimerText"] = true,
+							["Name"] = "Hunter's Mark",
+							["GUID"] = "TMW:icon:1TeVAjjavXC6",
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -16530,31 +16533,27 @@ TellMeWhenDB = {
 									["Alpha"] = 0.15,
 								}, -- [2]
 							},
-							["BuffOrDebuff"] = "HARMFUL",
 							["Enabled"] = true,
-							["Name"] = "Hunter's Mark",
-							["Unit"] = "target",
 						}, -- [2]
 						{
-							["Enabled"] = true,
 							["Type"] = "cooldown",
 							["Name"] = "Arcane Shot",
+							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1V6lsULwY3_Y",
 							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "MANA_ABS",
-									["Level"] = 100,
 									["Operator"] = ">",
+									["Level"] = 100,
 								}, -- [1]
 								["n"] = 1,
 							},
-							["GUID"] = "TMW:icon:1V6lsULwY3_Y",
 						}, -- [3]
 						{
-							["GUID"] = "TMW:icon:1V6noP8ARoel",
 							["Type"] = "buff",
 							["Name"] = "Aspect of the Hawk",
-							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1V6noP8ARoel",
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -16563,54 +16562,57 @@ TellMeWhenDB = {
 									["Alpha"] = 1,
 								}, -- [2]
 							},
+							["Enabled"] = true,
 						}, -- [4]
 						[19] = {
-							["GUID"] = "TMW:icon:1VjwkIslWpyf",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "pet",
 							["Type"] = "buff",
 							["ShowTimerText"] = true,
-							["BuffOrDebuff"] = "HARMFUL",
-							["Enabled"] = true,
 							["Name"] = "Crystal Gaze",
-							["Unit"] = "pet",
+							["GUID"] = "TMW:icon:1VjwkIslWpyf",
+							["Enabled"] = true,
 						},
 						[20] = {
-							["GUID"] = "TMW:icon:1VjwkIsn7fZp",
+							["BuffOrDebuff"] = "HARMFUL",
 							["Type"] = "buff",
 							["ShowTimerText"] = true,
-							["BuffOrDebuff"] = "HARMFUL",
-							["Enabled"] = true,
 							["Name"] = "Weakened Soul",
+							["GUID"] = "TMW:icon:1VjwkIsn7fZp",
+							["Enabled"] = true,
 						},
 					},
-					["Locked"] = true,
 				}, -- [2]
 				{
-					["GUID"] = "TMW:group:1TeVDtajUwqa",
-					["Name"] = "Hunter Rotation",
 					["Point"] = {
 						["y"] = -88,
 						["x"] = 4.06901041666667e-05,
 					},
-					["Locked"] = true,
 					["Scale"] = 1.5,
+					["Locked"] = true,
+					["OnlyInCombat"] = true,
 					["Columns"] = 3,
 					["Icons"] = {
 						{
+							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1V6noP8ARoel", -- [1]
 							},
-							["Type"] = "meta",
 						}, -- [1]
 						{
+							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1V6lsULwY3_Y", -- [1]
 							},
-							["Type"] = "meta",
 						}, -- [2]
 					},
-					["OnlyInCombat"] = true,
+					["Name"] = "Hunter Rotation",
+					["GUID"] = "TMW:group:1TeVDtajUwqa",
 				}, -- [3]
 			},
+			["NumGroups"] = 3,
+			["Version"] = 92500,
+			["Locked"] = true,
 		},
 		["Pitchwise - Dreadnaught"] = {
 			["Version"] = 91200,
@@ -16631,8 +16633,6 @@ TellMeWhenDB = {
 		},
 		["Deathknight"] = {
 			["Locked"] = true,
-			["Version"] = 92500,
-			["NumGroups"] = 4,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -17122,44 +17122,29 @@ TellMeWhenDB = {
 								}, -- [4]
 							},
 						},
-						[22] = {
-							["ManaCheck"] = true,
-							["Type"] = "cooldown",
-							["Name"] = "Icy Touch",
-							["Enabled"] = true,
-							["RangeCheck"] = true,
+						[42] = {
+							["GUID"] = "TMW:icon:1YXd9eWMwI0j",
+							["Type"] = "buff",
+							["Name"] = "Thorns",
 							["Conditions"] = {
 								{
-									["Type"] = "EXISTS",
-									["Unit"] = "target",
+									["Name"] = "None",
+									["Type"] = "STANCE",
 								}, -- [1]
 								{
-									["Type"] = "ALIVE",
-									["Unit"] = "target",
+									["Type"] = "GROUP2",
+									["BitFlags"] = 1,
 								}, -- [2]
-								{
-									["Type"] = "REACT",
-									["Level"] = 1,
-									["Unit"] = "target",
-								}, -- [3]
-								{
-									["Checked"] = true,
-									["Type"] = "DEBUFFDUR",
-									["Name"] = "Frost Fever",
-									["Unit"] = "target",
-								}, -- [4]
-								["n"] = 4,
+								["n"] = 2,
 							},
-							["GUID"] = "TMW:icon:1YYs1I2c_Meo",
+							["Enabled"] = true,
 							["States"] = {
-								nil, -- [1]
-								nil, -- [2]
 								{
 									["Alpha"] = 0,
-								}, -- [3]
+								}, -- [1]
 								{
-									["Alpha"] = 0,
-								}, -- [4]
+									["Alpha"] = 1,
+								}, -- [2]
 							},
 						},
 						[44] = {
@@ -17198,29 +17183,44 @@ TellMeWhenDB = {
 								}, -- [4]
 							},
 						},
-						[42] = {
-							["GUID"] = "TMW:icon:1YXd9eWMwI0j",
-							["Type"] = "buff",
-							["Name"] = "Thorns",
+						[22] = {
+							["ManaCheck"] = true,
+							["Type"] = "cooldown",
+							["Name"] = "Icy Touch",
+							["Enabled"] = true,
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
-									["Name"] = "None",
-									["Type"] = "STANCE",
+									["Type"] = "EXISTS",
+									["Unit"] = "target",
 								}, -- [1]
 								{
-									["Type"] = "GROUP2",
-									["BitFlags"] = 1,
+									["Type"] = "ALIVE",
+									["Unit"] = "target",
 								}, -- [2]
-								["n"] = 2,
+								{
+									["Type"] = "REACT",
+									["Level"] = 1,
+									["Unit"] = "target",
+								}, -- [3]
+								{
+									["Checked"] = true,
+									["Type"] = "DEBUFFDUR",
+									["Name"] = "Frost Fever",
+									["Unit"] = "target",
+								}, -- [4]
+								["n"] = 4,
 							},
-							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1YYs1I2c_Meo",
 							["States"] = {
+								nil, -- [1]
+								nil, -- [2]
 								{
 									["Alpha"] = 0,
-								}, -- [1]
+								}, -- [3]
 								{
-									["Alpha"] = 1,
-								}, -- [2]
+									["Alpha"] = 0,
+								}, -- [4]
 							},
 						},
 					},
@@ -17387,6 +17387,8 @@ TellMeWhenDB = {
 					["OnlyInCombat"] = true,
 				}, -- [4]
 			},
+			["Version"] = 92500,
+			["NumGroups"] = 4,
 		},
 	},
 }
