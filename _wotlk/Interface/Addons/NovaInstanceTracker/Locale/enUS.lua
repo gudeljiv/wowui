@@ -80,9 +80,18 @@ L["openInstanceLogFrameTitle"] = "Open Instance Log";
 L["logSizeTitle"] = "How many instances shown in log";
 L["logSizeDesc"] = "How many instance do you want to be shown in the log? Max of 300 are stored, 100 is default shown (you can open log with /NIT).";
 
-L["enteredMsgTitle"] = "Instance Entered Msg";
-L["enteredMsgDesc"] = "This will print a msg to your main chat window when you enter an instance with an X icon to delete the new instance from database if you want.";
+L["enteredMsgTitle"] = "Dungeon Entered Msg";
+L["enteredMsgDesc"] = "This will print a msg to your main chat window when you enter a 5 man dungeon with an X icon to delete the new instance from database if you want.";
 
+L["raidEnteredMsgTitle"] = "Raid Entered Msg";
+L["raidEnteredMsgDesc"] = "This will print a msg to your main chat window when you enter a raid with an X icon to delete the new instance from database if you want.";
+
+L["pvpEnteredMsgTitle"] = "PvP Entered Msg";
+L["pvpEnteredMsgDesc"] = "This will print a msg to your main chat window when you enter a pvp instance with an X icon to delete the new instance from database if you want.";
+
+L["noRaidInstanceMergeMsgTitle"] = "Hide Raid Merged";
+L["noRaidInstanceMergeMsgDesc"] = "Hide the instance merged msg when you enter a raid and detect the same ID.";
+			
 L["instanceResetMsgTitle"] = "Group Instance Reset";
 L["instanceResetMsgDesc"] = "This will show a msg to your party or raid which instances were successfully reset if you are the group leader. Example: \"Wailing Caverns was reset.\"";
 
@@ -351,6 +360,14 @@ L["honorGains"] = "Honor Gains";
 L["Honor"] = "Honor";
 L["Won"] = "Won";
 L["Lost"] = "Lost";
+L["Arena"] = "Arena";
+L["Arena Points"] = "Arena Points";
 
 L["stillInArena"] = "Still inside";
 L["stillInBattleground"] = "Still inside";
+
+L["resetAllInstancesConfirm"] = "Are you sure you want to delete all instance data from the log?";
+L["All Instance log data has been deleted."] = "All Instance log data has been deleted.";
+
+L["resetAllInstancesTitle"] = "Reset Instance Data";
+L["resetAllInstancesDesc"] = "This will reset all instance data and remove everything from the log. This does not reset trades.";

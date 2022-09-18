@@ -29,8 +29,9 @@ skills["warrior"] = [
     {"name": "last stand", "key": "t", "modifier": "shift"},
     {"name": "concussion blow", "key": "g"},
     {"name": "shield wall", "key": "t"},
-    {"name": "healthstone", "key": "x"},
     {"name": "hamstring", "key": "1"},
+    {"name": "healthstone", "key": "x"},
+    {"name": "healing potion", "key": "y"},
 ]
 
 skills["warlock"] = [

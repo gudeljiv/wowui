@@ -631,9 +631,9 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 188400,
-		["timeAtThisLevel"] = 182654,
-		["timeStamp"] = 3031547.802,
+		["total"] = 189022,
+		["timeAtThisLevel"] = 183276,
+		["timeStamp"] = 3284626.491,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,
@@ -678,9 +678,9 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 811125,
-		["timeAtThisLevel"] = 77010,
-		["timeStamp"] = 194309.034,
+		["total"] = 812216,
+		["timeAtThisLevel"] = 78101,
+		["timeStamp"] = 3285628.721,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,

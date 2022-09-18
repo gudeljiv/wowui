@@ -4,12 +4,25 @@
 --https://www.curseforge.com/members/venomisto/projects
 
 NIT = LibStub("AceAddon-3.0"):NewAddon("NovaInstanceTracker", "AceComm-3.0");
+local _, _, _, tocVersion = GetBuildInfo();
+NIT.expansionNum = 1;
 if (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC) then
 	NIT.isClassic = true;
+elseif (tocVersion > 30000 and tocVersion < 40000) then
+	NIT.isWrath = true;
+	NIT.expansionNum = 3;
+	if (GetRealmName() ~= "Classic Beta PvE" and GetServerTime() < 1664200800) then --Mon Sep 26 2022 14:00:00 GMT+0000;
+		NIT.isPrepatch = true;
+	end
 elseif (WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC) then
 	NIT.isTBC = true;
+	NIT.expansionNum = 2;
+--elseif (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC) then
+--	NIT.isWrath = true;
+--	NIT.expansionNum = 3;
 elseif (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
 	NIT.isRetail = true;
+	NIT.expansionNum = 10;
 end
 NIT.LSM = LibStub("LibSharedMedia-3.0");
 NIT.DDM = LibStub("LibUIDropDownMenu-4.0");
@@ -27,23 +40,29 @@ NIT.LDBIcon = LibStub("LibDBIcon-1.0");
 local version = GetAddOnMetadata("NovaInstanceTracker", "Version") or 9999;
 NIT.classic = true;
 NIT.latestRemoteVersion = version;
---local tbcRelease = 1622570400;
-local utcTime = time(date("!*t", GetServerTime()));
-if (NIT.isTBC) then
+if (NIT.isWrath) then
 	NIT.hourlyLimit = 5;
-	NIT.dailyLimit = 200;  --No limit in prepatch, but maybe limit after portal opens?
-	--if (utcTime > tbcRelease) then
+	NIT.dailyLimit = 999;  --No limit in prepatch, but maybe a limit later?
+	if (NIT.isPrepatch) then
 		NIT.maxLevel = 70;
-	--else
-	--	NIT.maxLevel = 60;
-	--end
+	else
+		NIT.maxLevel = 80;
+	end
+elseif (NIT.isTBC) then
+	NIT.hourlyLimit = 5;
+	NIT.dailyLimit = 999;
+	NIT.maxLevel = 70;
+elseif (NIT.isRetail) then
+	NIT.hourlyLimit = 10;
+	NIT.dailyLimit = 999;
+	NIT.maxLevel = 60;
 else
 	NIT.hourlyLimit = 5;
 	NIT.dailyLimit = 30;
 	NIT.maxLevel = 60;
 end
 NIT.prefixColor = "|cFFFF6900";
-NIT.perCharOnly = false; --Per char is gone in TBC, not sure how I didn't notice this earlier tbc, blizz never announced it.
+NIT.perCharOnly = false; --Per char is gone in TBC, not sure how I didn't notice this earlier tbh, blizz never announced it.
 NIT.loadTime = GetServerTime();
 
 function NIT:OnInitialize()
@@ -769,122 +788,135 @@ function NIT:createBroker()
 				NIT:openAltsFrame();
 			end
 		end,
-		OnLeave = function(self, button)
-			doUpdateMinimapButton = nil;
-		end,
-		OnTooltipShow = function(tooltip)
-			doUpdateMinimapButton = true;
-			NIT:updateMinimapButton(tooltip);
-		end,
 		OnEnter = function(self, button)
 			GameTooltip:SetOwner(self, "ANCHOR_NONE")
 			GameTooltip:SetPoint("TOPLEFT", self, "BOTTOMLEFT")
 			doUpdateMinimapButton = true;
-			NIT:updateMinimapButton(GameTooltip, true);
+			NIT:updateMinimapButton(GameTooltip, self);
 			GameTooltip:Show()
+		end,
+		OnLeave = function(self, button)
+			GameTooltip:Hide()
+			if (GameTooltip.NITSeparator) then
+				GameTooltip.NITSeparator:Hide();
+			end
+			if (GameTooltip.NITSeparator2) then
+				GameTooltip.NITSeparator2:Hide();
+			end
 		end,
 	};
 	NITLDB = LDB:NewDataObject("NIT", data);
 	NIT.LDBIcon:Register("NovaInstanceTracker", NITLDB, NIT.db.global.minimapIcon);
+	--Raise the frame level so users can see if it clashes with an existing icon and they can drag it.
+	local frame = NIT.LDBIcon:GetMinimapButton("NovaInstanceTracker");
+	if (frame) then
+		frame:SetFrameLevel(9);
+	end
 end
 
-function NIT:updateMinimapButton(tooltip, usingPanel)
-	local _, relativeTo = tooltip:GetPoint();
-	if (doUpdateMinimapButton and (usingPanel or relativeTo and relativeTo:GetName() == "LibDBIcon10_NovaInstanceTracker")) then
-		tooltip:ClearLines()
-		tooltip:AddLine("NovaInstanceTracker");
-		if (NIT.inInstance) then
-			if (not tooltip.NITSeparator) then
-			    tooltip.NITSeparator = tooltip:CreateTexture(nil, "BORDER");
-			    tooltip.NITSeparator:SetColorTexture(0.6, 0.6, 0.6, 0.85);
-			    tooltip.NITSeparator:SetHeight(0.9);
-			    tooltip.NITSeparator:SetPoint("LEFT", 10, 0);
-			    tooltip.NITSeparator:SetPoint("RIGHT", -10, 0);
-			    tooltip.NITSeparator2 = tooltip:CreateTexture(nil, "BORDER");
-			    tooltip.NITSeparator2:SetColorTexture(0.6, 0.6, 0.6, 0.85);
-			    tooltip.NITSeparator2:SetHeight(0.9);
-			    tooltip.NITSeparator2:SetPoint("LEFT", 10, 0);
-			    tooltip.NITSeparator2:SetPoint("RIGHT", -10, 0);
+function NIT:updateMinimapButton(tooltip, frame)
+	tooltip = tooltip or GameTooltip;
+	if (not tooltip:IsOwned(frame)) then
+		if (tooltip.NITSeparator) then
+			tooltip.NITSeparator:Hide();
+		end
+		if (tooltip.NITSeparator2) then
+			tooltip.NITSeparator2:Hide();
+		end
+		return;
+	end
+	tooltip:ClearLines()
+	tooltip:AddLine("NovaInstanceTracker");
+	if (NIT.inInstance) then
+		if (not tooltip.NITSeparator) then
+		    tooltip.NITSeparator = tooltip:CreateTexture(nil, "BORDER");
+		    tooltip.NITSeparator:SetColorTexture(0.6, 0.6, 0.6, 0.85);
+		    tooltip.NITSeparator:SetHeight(1);
+		    tooltip.NITSeparator:SetPoint("LEFT", 10, 0);
+		    tooltip.NITSeparator:SetPoint("RIGHT", -10, 0);
+		    tooltip.NITSeparator2 = tooltip:CreateTexture(nil, "BORDER");
+		    tooltip.NITSeparator2:SetColorTexture(0.6, 0.6, 0.6, 0.85);
+		    tooltip.NITSeparator2:SetHeight(1);
+		    tooltip.NITSeparator2:SetPoint("LEFT", 10, 0);
+		    tooltip.NITSeparator2:SetPoint("RIGHT", -10, 0);
+		end
+		tooltip:AddLine(" ");
+		tooltip.NITSeparator:SetPoint("TOP", _G[tooltip:GetName() .. "TextLeft" .. tooltip:NumLines()], "CENTER");
+		tooltip.NITSeparator:Show();
+		local data = NIT.data.instances[1];
+		if (data) then
+			--tooltip:AddLine("|cFF9CD6DECurrently Inside:");
+			local timeInside = NIT:getTimeString(GetServerTime() - data.enteredTime, true);
+			if (data.isPvp) then
+				tooltip:AddLine("|cFFFFA500" .. data.instanceName);
+			else
+				tooltip:AddLine("|cFF00C800" .. data.instanceName);
 			end
-			tooltip:AddLine(" ");
-			tooltip.NITSeparator:SetPoint("TOP", _G[tooltip:GetName() .. "TextLeft" .. tooltip:NumLines()], "CENTER");
-			tooltip.NITSeparator:Show();
-			local data = NIT.data.instances[1];
-			if (data) then
-				--tooltip:AddLine("|cFF9CD6DECurrently Inside:");
-				local timeInside = NIT:getTimeString(GetServerTime() - data.enteredTime, true);
-				if (data.isPvp) then
-					tooltip:AddLine("|cFFFFA500" .. data.instanceName);
+			tooltip:AddLine("|cFF9CD6DE" .. timeInside);		
+			if (not data.isPvp) then
+				local mobCount = 0;
+				if (data.mobCount and data.mobCount > 0) then
+					mobCount = data.mobCount;
+				elseif (data.mobCountFromKill and data.mobCountFromKill > 0) then
+					mobCount = data.mobCountFromKill;
+				end
+				tooltip:AddLine("|cFF9CD6DE" .. L["mobCount"] .. ":|r |cFFFFFFFF" .. (mobCount or "Unknown"));
+			end
+			if (data.honor) then
+				tooltip:AddLine("|cFF9CD6DE" .. L["Honor"] .. ":|r |cFFFFFFFF" .. data.honor);
+			end
+			if (not NIT.isClassic and not NIT.isTBC and UnitLevel("player") ~= NIT.maxLevel and data.type ~= "arena") then
+				tooltip:AddLine("|cFF9CD6DE" .. L["experience"] .. ":|r |cFFFFFFFF" .. (NIT:commaValue(data.xpFromChat) or "Unknown"));
+			end
+			if (not data.isPvp) then
+				if (data.rawMoneyCount and data.rawMoneyCount > 0) then
+					tooltip:AddLine("|cFF9CD6DE" .. L["rawGoldMobs"] .. ":|r |cFFFFFFFF" .. GetCoinTextureString(data.rawMoneyCount));
+				elseif (data.enteredMoney and data.leftMoney and data.enteredMoney > 0 and data.leftMoney > 0
+						and data.leftMoney > data.enteredMoney) then
+					--Backup for people with addons installed using an altered money string.
+					local moneyCount = data.leftMoney - data.enteredMoney;
+					tooltip:AddLine("\n|cFF9CD6DE" .. L["rawGoldMobs"] .. ":|r |cFFFFFFFF" .. GetCoinTextureString(moneyCount));
 				else
-					tooltip:AddLine("|cFF00C800" .. data.instanceName);
+					tooltip:AddLine("|cFF9CD6DE" .. L["rawGoldMobs"] .. ":|r |cFFFFFFFF" .. GetCoinTextureString(0));
 				end
-				tooltip:AddLine("|cFF9CD6DE" .. timeInside);		
-				if (not data.isPvp) then
-					local mobCount = 0;
-					if (data.mobCount and data.mobCount > 0) then
-						mobCount = data.mobCount;
-					elseif (data.mobCountFromKill and data.mobCountFromKill > 0) then
-						mobCount = data.mobCountFromKill;
-					end
-					tooltip:AddLine("|cFF9CD6DE" .. L["mobCount"] .. ":|r |cFFFFFFFF" .. (mobCount or "Unknown"));
-					tooltip:AddLine("|cFF9CD6DE" .. L["experience"] .. ":|r |cFFFFFFFF" .. (NIT:commaValue(data.xpFromChat) or "Unknown"));
-					if (data.rawMoneyCount and data.rawMoneyCount > 0) then
-						tooltip:AddLine("|cFF9CD6DE" .. L["rawGoldMobs"] .. ":|r |cFFFFFFFF" .. GetCoinTextureString(data.rawMoneyCount));
-					elseif (data.enteredMoney and data.leftMoney and data.enteredMoney > 0 and data.leftMoney > 0
-							and data.leftMoney > data.enteredMoney) then
-						--Backup for people with addons installed using an altered money string.
-						local moneyCount = data.leftMoney - data.enteredMoney;
-						tooltip:AddLine("\n|cFF9CD6DE" .. L["rawGoldMobs"] .. ":|r |cFFFFFFFF" .. GetCoinTextureString(moneyCount));
-					else
-						tooltip:AddLine("|cFF9CD6DE" .. L["rawGoldMobs"] .. ":|r |cFFFFFFFF" .. GetCoinTextureString(0));
-					end
-					if (data.groupAverage and data.groupAverage > 0) then
-						tooltip:AddLine("|cFF9CD6DE" .. L["averageGroupLevel"] .. ":|r |cFFFFFFFF" .. (NIT:round(data.groupAverage, 2) or "Unknown"));
-					end
-				end
-				if (data.honor) then
-					tooltip:AddLine("|cFF9CD6DE" .. L["Honor"] .. ":|r |cFFFFFFFF" .. data.honor);
-				end
-				if (data.rep and next(data.rep)) then
-					tooltip:AddLine("|cFFFFFF00" .. L["repGains"] .. ":|r");
-					for k, v in NIT:pairsByKeys(data.rep) do
-						if (v > 0) then
-							v = "+" .. NIT:commaValue(v);
-						end
-						tooltip:AddLine(" |cFF9CD6DE" .. k .. "|r |cFFFFFFFF" .. v);
-					end
+				if (data.groupAverage and data.groupAverage > 0) then
+					tooltip:AddLine("|cFF9CD6DE" .. L["averageGroupLevel"] .. ":|r |cFFFFFFFF" .. (NIT:round(data.groupAverage, 2) or "Unknown"));
 				end
 			end
-			tooltip:AddLine(" ");
-			tooltip.NITSeparator2:SetPoint("TOP", _G[tooltip:GetName() .. "TextLeft" .. tooltip:NumLines()], "CENTER");
-			tooltip.NITSeparator2:Show();
-		else
-			if (tooltip.NITSeparator) then
-				tooltip.NITSeparator:Hide();
-				tooltip.NITSeparator2:Hide();
+			if (data.rep and next(data.rep)) then
+				tooltip:AddLine("|cFFFFFF00" .. L["repGains"] .. ":|r");
+				for k, v in NIT:pairsByKeys(data.rep) do
+					if (v > 0) then
+						v = "+" .. NIT:commaValue(v);
+					end
+					tooltip:AddLine(" |cFF9CD6DE" .. k .. "|r |cFFFFFFFF" .. v);
+				end
 			end
 		end
-		if (NIT.perCharOnly) then
-			tooltip:AddLine("|cFF9CD6DE(" .. L["thisChar"] .. ")|r");
-		end
-		tooltip:AddLine(NIT:getMinimapButtonLockoutString() .. "\n");
-		local expires = NIT:getMinimapButtonNextExpires();
-		if (expires) then
-			tooltip:AddLine(expires .. "\n");
-		end
-		tooltip:AddLine("|cFF9CD6DELeft-Click|r " .. L["openInstanceFrame"]);
-		tooltip:AddLine("|cFF9CD6DERight-Click|r " .. L["openYourChars"]);
-		tooltip:AddLine("|cFF9CD6DEShift Left-Click|r " .. L["openTradeLog"]);
-		tooltip:AddLine("|cFF9CD6DEShift Right-Click|r " .. L["config"]);
-		C_Timer.After(0.1, function()
-			NIT:updateMinimapButton(tooltip, usingPanel);
-		end)
+		tooltip:AddLine(" ");
+		tooltip.NITSeparator2:SetPoint("TOP", _G[tooltip:GetName() .. "TextLeft" .. tooltip:NumLines()], "CENTER");
+		tooltip.NITSeparator2:Show();
 	else
 		if (tooltip.NITSeparator) then
 			tooltip.NITSeparator:Hide();
 			tooltip.NITSeparator2:Hide();
 		end
 	end
+	if (NIT.perCharOnly) then
+		tooltip:AddLine("|cFF9CD6DE(" .. L["thisChar"] .. ")|r");
+	end
+	tooltip:AddLine(NIT:getMinimapButtonLockoutString() .. "\n");
+	local expires = NIT:getMinimapButtonNextExpires();
+	if (expires) then
+		tooltip:AddLine(expires .. "\n");
+	end
+	tooltip:AddLine("|cFF9CD6DELeft-Click|r " .. L["openInstanceFrame"]);
+	tooltip:AddLine("|cFF9CD6DERight-Click|r " .. L["openYourChars"]);
+	tooltip:AddLine("|cFF9CD6DEShift Left-Click|r " .. L["openTradeLog"]);
+	tooltip:AddLine("|cFF9CD6DEShift Right-Click|r " .. L["config"]);
+	C_Timer.After(0.1, function()
+		NIT:updateMinimapButton(tooltip, frame);
+	end)
 end
 
 function NIT:getMinimapButtonLockoutString()
@@ -915,7 +947,11 @@ function NIT:getMinimapButtonNextExpires(char)
 	local count = 0;
 	local found;
 	for k, v in ipairs(self.data.instances) do
-		if (not v.isPvp and (not NIT.perCharOnly or char == v.playerName)) then
+		local noLockout;
+		if (v.instanceID and NIT.zones[v.instanceID] and NIT.zones[v.instanceID].noLockout) then
+			noLockout = true;
+		end
+		if (not v.isPvp and not noLockout and (not NIT.perCharOnly or char == v.playerName)) then
 			if (v.leftTime and v.leftTime > (GetServerTime() - 3600)) then
 				local time = 3600 - (GetServerTime() - v.leftTime);
 				--msg = msg .. "\n|cFF9CD6DE" .. v.instanceName .. " expires in " .. NIT:getTimeString(time, true);
@@ -1780,9 +1816,9 @@ function NIT:recalcInstanceLineFramesTooltip(obj)
 		if (not data.isPvp) then
 			text = text .. "\n|cFF9CD6DE" .. L["mobCount"] .. ":|r " .. (mobCount or "Unknown");
 		end
-		if (not data.isPvp) then
+		if (not data.isPvp or (data.xpFromChat and data.xpFromChat > 0)) then
 			text = text .. "\n|cFF9CD6DE" .. L["experience"] .. ":|r " .. (NIT:commaValue(data.xpFromChat) or "Unknown");
-			if (timeSpentRaw and timeSpentRaw > 0 and tonumber(data.xpFromChat) and data.xpFromChat > 0 and not data.isPvp) then
+			if (timeSpentRaw and timeSpentRaw > 0 and tonumber(data.xpFromChat) and data.xpFromChat > 0) then
 				local xpPerHour = NIT:commaValue(NIT:round((tonumber(data.xpFromChat) / timeSpentRaw) * 3600));
 				text = text .. "\n|cFF9CD6DE" .. L["experiencePerHour"] .. ":|r " .. xpPerHour;
 			end
@@ -2353,7 +2389,7 @@ function NIT:recalcTradeLogFrame()
 	local found;
 	for k, v in ipairs(NIT.data.trades) do
 		count = count + 1;
-		if (count > 100) then
+		if (count > 200) then
 			break;
 		end
 		local msg = "";
@@ -3557,6 +3593,42 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 			if (foundCooldowns) then
 				text = text .. cooldownText;
 			end
+			local pvpString = "";
+			if (data.honor and data.honor > 0) then
+				local texture;
+				if (NIT.faction == "Horde") then
+					texture = "|TInterface\\TargetingFrame\\UI-PVP-Horde:12:12:-1:0:64:64:7:36:1:36|t"
+				else
+					texture = "|TInterface\\TargetingFrame\\UI-PVP-Alliance:12:12:0:0:64:64:7:36:1:36|t";
+				end
+				pvpString = pvpString .. "\n  " .. texture .. " " .. color1 .. L["Honor"] .. ":|r " .. color2 .. NIT:commaValue(data.honor) .. "|r";
+			end
+			if (data.arenaPoints and data.arenaPoints > 0) then
+				local texture = "|T4006481:12:12|t";
+				pvpString = pvpString .. "\n  " .. texture .. " " .. color1 .. L["Arena Points"] .. ":|r " .. color2 .. NIT:commaValue(data.arenaPoints) .. "|r";
+			end
+			if (data.marks and next(data.marks)) then
+				for k, v in NIT:pairsByKeys(data.marks) do
+					if (v > 0) then
+						local texture = NIT.bgMarks[k].icon;
+						if (texture) then
+							texture = "|T" .. texture .. ":12:12:0:0|t";
+						end
+						--Try and get localization for the item name.
+						local itemName = GetItemInfo(k);
+						if (not itemName) then
+							itemName = NIT.bgMarks[k].name;
+						end
+						itemName = string.gsub(itemName, " of Honor", "");
+						pvpString = pvpString .. "\n  " .. texture .. " " .. color1 .. itemName .. ":|r "
+								.. color2 .. v .. "|r";
+					end
+				end
+			end
+			if (pvpString ~= "") then
+				text = text .. "\n\n|cFFFFFF00" .. L["PvP"] .. "|r";
+				text = text .. pvpString;
+			end
 			if (not NIT.isTBC) then
 				local pvpRank = "\n\n|cFFFFFF00" .. L["pvp"] .. " " .. L["rank"] .. "|r";
 				if (data.pvpRankName and data.pvpRankNumber and data.pvpRankPercent) then
@@ -3869,3 +3941,8 @@ end
 		NIT:syncBuffsWithCurrentDuration();
 	end)
 end]]
+
+function NIT:resetAllInstances()
+	NIT.data.instances = {};
+	NIT:print(L["All Instance log data has been deleted."]);
+end

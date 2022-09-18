@@ -37,7 +37,7 @@ L["Reset Data"] = "重置資料"; --A button to Reset buffs window data.
 
 L["Error"] = "錯誤";
 L["delete"] = "刪除";
-L["confirmInstanceDeletion"] = "確認刪除事件";
+L["confirmInstanceDeletion"] = "確認刪除紀錄";
 L["confirmCharacterDeletion"] = "確認刪除角色";
 
 -------------
@@ -81,10 +81,10 @@ L["notesDesc"] = "此插件盡最大的努力去計算你的暴本時間，但�
 
 L["logHeaderDesc"] = "紀錄視窗";
 
-L["openInstanceLogFrameTitle"] = "開啟事件紀錄";
+L["openInstanceLogFrameTitle"] = "開啟副本紀錄";
 
-L["logSizeTitle"] = "紀錄中顯示多少事件";
-L["logSizeDesc"] = "你想要在紀錄中顯示多少事件? 最多300條，預設為100條 (你可以輸入 /NIT 顯示紀錄).";
+L["logSizeTitle"] = "紀錄中顯示多少副本";
+L["logSizeDesc"] = "你想要在紀錄中顯示多少紀錄? 最多300條，預設為100條 (你可以輸入 /NIT 顯示紀錄).";
 
 L["enteredMsgTitle"] = "副本進入紀錄";
 L["enteredMsgDesc"] = "這將會在你進入副本時在聊天室窗出現一個X，讓你如果想刪除此副本追蹤紀錄時使用";
@@ -124,7 +124,7 @@ L["instanceStatsOutputAverageGroupLevelDesc"] = "顯示平均等級";
 L["instanceStatsOutputAverageGroupLevelTitle"] = "在地城中顯示平均等級?";
 
 L["showAltsLogTitle"] = "顯示分身";
-L["showAltsLogDesc"] = "在事件紀錄顯示分身?";
+L["showAltsLogDesc"] = "在副本紀錄顯示分身?";
 
 L["timeStringTypeTitle"] = "時間格式";
 L["timeStringTypeDesc"] = "What time string format to use in the instance log?\n|cFFFFFF00Long:|r 1 minute 30 seconds\n|cFFFFFF00Medium|r: 1 min 30 secs\n|cFFFFFF00Short|r 1m30s";
@@ -150,7 +150,7 @@ L["statsOnlyWhenActivityTitle"] = "實際行動";
 L["statsOnlyWhenActivityDesc"] = "只有在你實際得到經驗值或是金錢或是擊殺怪物才啟動。, got xp, looted some gold etc. This will make it not show empty stats.";
 
 L["show24HourOnlyTitle"] = "只顯示最後24小時";
-L["show24HourOnlyDesc"] = "只顯示最後24小時的事件紀錄?";
+L["show24HourOnlyDesc"] = "只顯示最後24小時的副本紀錄?";
 
 L["trimDataHeaderDesc"] = "清除資料";
 
@@ -180,14 +180,14 @@ L["trimDataMsg9"] = "從資料庫移除 %s 。";
 
 L["instanceFrameSelectAltMsg"] = "如果\“顯示所有分身\”未勾選，則選擇要顯示的分身。或如果\“顯示所有分身\”被勾選，則選擇哪個分身 要著色。";
 
-L["enteredDungeon"] = "新的事件 %s %s, 點擊";
-L["enteredDungeon2"] = "如果這是一個新的副本紀錄。";
-L["enteredRaid"] = "New instance %s, this raid doesn't count towards lockout.";
-L["loggedInDungeon"] = "You have logged in inside %s %s, if this is not a new instance click";
-L["loggedInDungeon2"] = "to delete this instance from the database.";
-L["reloadDungeon"] = "UI Reload detected %s, loading last instance data instead of creating new.";
+L["enteredDungeon"] = "新的追蹤 %s %s， 點擊";
+L["enteredDungeon2"] = "如果這不是一個新的副本紀錄。";
+L["enteredRaid"] = "新的追蹤 %s，這個團本沒有進本次數鎖定。";
+L["loggedInDungeon"] = "你已登入 %s %s，如果這不是一個新的紀錄，點擊";
+L["loggedInDungeon2"] = "從資料庫刪除此紀錄。";
+L["reloadDungeon"] = "插件重載檢測到 %s，讀取最後副本資料非新建。";
 L["thisHour"] = "這個小時";
-L["statsError"] = "Error finding stats for instance id %s.";
+L["statsError"] = "副本ID %s 搜尋錯誤。";
 L["statsMobs"] = "怪物:";
 L["statsXP"] = "經驗值:";
 L["statsAverageXP"] = "平均經驗值/怪物:";
@@ -196,15 +196,15 @@ L["statsRunsNextLevel"] = "到下一級的次數:";
 L["statsTime"] = "時間:";
 L["statsAverageGroupLevel"] = "團隊平均等級:";
 L["statsGold"] = "金錢";
-L["sameInstance"] = "Same instance ID as last detected %s, merging database entries.";
-L["deleteInstance"] = "Deleted instance [%s] %s (%s ago) from the database.";
-L["deleteInstanceError"] = "Error deleting %s.";
-L["countString"] = "You have entered %s instances in the past hour and %s in the past 24h";
-L["countStringColorized"] = "You have entered %s %s %s instances in the past hour and %s %s %s in the past 24h";
+L["sameInstance"] = "發現到與上次同樣的副本ID %s， 正在合併紀錄。";
+L["deleteInstance"] = "從資料庫刪除進本紀錄 [%s] %s (%s 之前) 。";
+L["deleteInstanceError"] = "刪除出錯 %s。";
+L["countString"] = "你在這小時已進入 %s 次副本，及在這24小時 %s 次。";
+L["countStringColorized"] = "在過去一小時你已經進入 %s %s %s 次副本，%s %s %s 在過去24小時";
 L["now"] = "現在";
 L["in"] = "在";
 L["active24"] = "24h lockout active";
-L["nextInstanceAvailable"] = "下一個事件已可用";
+L["nextInstanceAvailable"] = "可進入下個副本";
 L["gave"] = "支出";
 L["received"] = "收到";
 L["to"] = "給";
@@ -223,26 +223,26 @@ L["openTradeLog"] = "打開交易紀錄";
 L["config"] = "設定";
 L["thisChar"] = "這隻角色";
 L["yourChars"] = "你的角色";
-L["instancesPastHour"] = "在過去這個小時的事件";
-L["instancesPastHour24"] = "在過去24小時的事件";
-L["leftOnLockout"] = "解除CD";
+L["instancesPastHour"] = "在過去這個小時的紀錄";
+L["instancesPastHour24"] = "在過去24小時的紀錄";
+L["leftOnLockout"] = "解除爆本";
 L["tradeLog"] = "交易紀錄";
 L["pastHour"] = "過去1小時";
 L["pastHour24"] = "過去24小時";
 L["older"] = "古老紀錄";
 L["raid"] = "團本";
 L["alts"] = "分身";
-L["deleteEntry"] = "刪除進本";
-L["lastHour"] = "最後1小時";
-L["lastHour24"] = "最後24小時";
+L["deleteEntry"] = "刪除進本紀錄";
+L["lastHour"] = "最近1小時";
+L["lastHour24"] = "最近24小時";
 L["entered"] = "進入於";
 L["ago"] = "之前";
 L["stillInDungeon"] = "目前正在副本中";
 L["leftOnLockout"] = "後解除每小時進本鎖定";
 L["leftOnDailyLockout"] = "後解除每日進本鎖定";
-L["noLockout"] = "這個團本未鎖定";
+L["noLockout"] = "團本無爆本限制";
 L["unknown"] = "未知";
-L["instance"] = "事件";
+L["instance"] = "副本";
 L["timeEntered"] = "進入時間";
 L["timeLeft"] = "離開時間";
 L["timeInside"] = "在副本的時間";
@@ -253,14 +253,14 @@ L["rawGoldMobs"] = "從怪物獲得金幣";
 L["enteredLevel"] = "進入等級";
 L["leftLevel"] = "離開等級";
 L["averageGroupLevel"] = "團隊平均等級";
-L["currentLockouts"] = "current lockouts";
+L["currentLockouts"] = "現有紀錄";
 L["repGains"] = "聲望提升";
 L["groupMembers"] = "團隊成員";
 L["tradesWhileInside"] = "副本內交易";
-L["noDataInstance"] = "這個副本進度沒有紀錄。";
+L["noDataInstance"] = "這個副本沒有紀錄。";
 L["restedOnlyText"] = "只有休息角色";
 L["restedOnlyTextTooltip"] = "只有顯示有休息經驗的角色? 取消勾選以顯示所有角色，例如滿等角色或是其他分身。";
-L["deleteEntry"] = "刪除副本紀錄"; --Example: "Delete entry 5";
+L["deleteEntry"] = "刪除進本紀錄"; --Example: "Delete entry 5";
 L["online"] = "在線";
 L["maximum"] = "最高";
 L["level"] = "等級";
@@ -284,12 +284,12 @@ L["happiness"] = "快樂的";
 L["loyaltyRate"] = "忠誠度";
 L["petExperience"] = "寵物經驗";
 L["unspentTrainingPoints"] = "未使用的訓練點數";
-L["professions"] = "職業";
+L["professions"] = "專業技能";
 L["lastSeenPetDetails"] = "觀看寵物詳情";
 L["currentPet"] = "目前寵物";
 L["noPetSummoned"] = "未招喚寵物";
 L["lastSeenPetDetails"] = "最後看到的寵物詳情";
-L["noProfessions"] = "沒有找到職業。";
+L["noProfessions"] = "沒有找到專業技能。";
 L["cooldowns"] = "冷卻";
 L["left"] = "剩餘"; -- This is left as in "time left";
 L["ready"] = "準備好。";
@@ -354,4 +354,12 @@ L["autoBlackMorassDesc"] = "在進入黑色沼澤時自動跟NPC對話拿燈 (�
 L["autoSfkDoorTitle"] = "自動影牙開門";
 L["autoSfkDoorDesc"] = "自動跟NPC對話開啟影牙城堡的門?";
 
+L["honorGains"] = "獲得榮譽";
+L["Honor"] = "榮譽";
+L["Won"] = "贏";
+L["Lost"] = "輸";
+L["Arena"] = "競技場";
+L["Arena Points"] = "競技場點數";
 
+L["stillInArena"] = "正在競技場中";
+L["stillInBattleground"] = "正在戰場中";

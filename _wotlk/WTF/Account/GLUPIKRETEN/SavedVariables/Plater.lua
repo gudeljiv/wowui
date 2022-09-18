@@ -1,230 +1,44 @@
 
 PlaterDB = {
 	["captured_spells"] = {
-		[23829] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 416,
-		},
-		[28681] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Damaged Necrotic Shard",
-			["npcID"] = 16172,
-		},
-		[75447] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 19349,
-		},
-		[4511] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 416,
-		},
-		[22888] = {
-			["type"] = "BUFF",
-			["source"] = "Overlord Runthak",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 173758,
-		},
-		[24529] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 19349,
-		},
-		[35696] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["npcID"] = 17252,
-		},
-		[8267] = {
-			["type"] = "DEBUFF",
-			["source"] = "Rotting Agam'ar",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 4512,
-		},
-		[57565] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 417,
-		},
-		[25228] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["npcID"] = 17252,
-		},
-		[31403] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Grom'tor, Son of Oronok",
-			["npcID"] = 21687,
-		},
-		[16145] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "DEBUFF",
-			["source"] = "Grom'tor, Son of Oronok",
-			["npcID"] = 21687,
-		},
-		[39429] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "DEBUFF",
-			["source"] = "Cyrukh the Firelord",
-			["npcID"] = 21181,
-		},
-		[1460] = {
-			["type"] = "BUFF",
-			["source"] = "Dalar Dawnweaver",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 1938,
-		},
-		[7870] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 185317,
-		},
-		[38498] = {
+		[37939] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Enraged Earth Spirit",
-			["npcID"] = 21050,
-		},
-		[16609] = {
-			["type"] = "BUFF",
-			["source"] = "Thrall",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 4949,
-		},
-		[30470] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Borak, Son of Oronok",
-			["npcID"] = 21686,
-		},
-		[57475] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 19349,
-		},
-		[48090] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 17252,
-		},
-		[19579] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 3825,
+			["source"] = "Uvuros",
+			["npcID"] = 21102,
 		},
 		[47468] = {
 			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Unknown",
+			["source"] = "Blightgrinder",
 			["npcID"] = 26125,
 		},
-		[27268] = {
+		[35923] = {
 			["type"] = "BUFF",
-			["source"] = "Unknown",
+			["source"] = "Enraged Watery Soul",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 416,
+			["npcID"] = 21109,
 		},
-		[53148] = {
+		[38467] = {
 			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Mature Netherwing Drake",
+			["npcID"] = 21648,
+		},
+		[14921] = {
+			["source"] = "Ferda",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 16932,
+		},
+		[24259] = {
+			["source"] = "Rhuughon",
 			["type"] = "DEBUFF",
-			["source"] = "Wolf",
-			["npcID"] = 178449,
-		},
-		[7804] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 416,
-		},
-		[16458] = {
-			["type"] = "DEBUFF",
-			["source"] = "Plague Ghoul",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 10405,
-		},
-		[23844] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 1860,
-		},
-		[57566] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Flaaphom",
 			["npcID"] = 417,
 		},
-		[8316] = {
+		[75446] = {
 			["type"] = "BUFF",
 			["source"] = "Unknown",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 416,
-		},
-		[58511] = {
-			["type"] = "DEBUFF",
-			["source"] = "Orgrimmar Grunt",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 3296,
-		},
-		[11436] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Scryer Guardian",
-			["npcID"] = 19504,
-		},
-		[58519] = {
-			["type"] = "DEBUFF",
-			["source"] = "Grunt Komak",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 5597,
-		},
-		[23511] = {
-			["type"] = "DEBUFF",
-			["source"] = "Dun Baldar South Marshal",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 14763,
-		},
-		[36006] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
-			["source"] = "Enraged Earth Spirit",
-			["npcID"] = 21050,
-		},
-		[58514] = {
-			["type"] = "DEBUFF",
-			["source"] = "Orgrimmar Grunt",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 3296,
-		},
-		[5232] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 3678,
-		},
-		[57458] = {
-			["type"] = "BUFF",
-			["source"] = "Unknown",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 19349,
-		},
-		[23947] = {
-			["type"] = "BUFF",
-			["source"] = "Shadow Priestess Vandis",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 11055,
+			["npcID"] = 17447,
 		},
 		[1604] = {
 			["event"] = "SPELL_AURA_APPLIED",
@@ -232,45 +46,597 @@ PlaterDB = {
 			["source"] = "Shadowmoon Scout",
 			["npcID"] = 21749,
 		},
-		[35706] = {
-			["event"] = "SPELL_AURA_APPLIED",
-			["type"] = "BUFF",
+		[4511] = {
 			["source"] = "Unknown",
-			["npcID"] = 17252,
-		},
-		[15228] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "Scryer Guardian",
-			["npcID"] = 19504,
-		},
-		[27050] = {
-			["event"] = "SPELL_CAST_SUCCESS",
-			["source"] = "PetitLoup",
-			["npcID"] = 21956,
-		},
-		[38502] = {
-			["source"] = "Mature Netherwing Drake",
-			["type"] = "DEBUFF",
+			["type"] = "BUFF",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 21648,
+			["npcID"] = 416,
+		},
+		[38753] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Deathforge Tinkerer",
+			["npcID"] = 19754,
+		},
+		[36225] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Deathforge Smith",
+			["npcID"] = 19756,
+		},
+		[57565] = {
+			["source"] = "Unknown",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 417,
+		},
+		[41440] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Dragonmaw Skybreaker",
+			["npcID"] = 23440,
+		},
+		[22120] = {
+			["source"] = "Domesticated Felboar",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 21195,
+		},
+		[32939] = {
+			["source"] = "Warp Hunter",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 18465,
+		},
+		[32943] = {
+			["source"] = "Warp Hunter",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 18465,
+		},
+		[57458] = {
+			["source"] = "Unknown",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 16932,
 		},
 		[57724] = {
+			["source"] = "Rhuughon",
 			["type"] = "DEBUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 417,
+		},
+		[75447] = {
+			["source"] = "Unknown",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 17447,
+		},
+		[40714] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Disobedient Dragonmaw Peon",
+			["npcID"] = 23311,
+		},
+		[35570] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Felboar",
+			["npcID"] = 21878,
+		},
+		[24529] = {
+			["type"] = "BUFF",
 			["source"] = "Unknown",
 			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 26125,
+			["npcID"] = 17447,
 		},
-		[33912] = {
-			["source"] = "Rocknail Ripper",
-			["type"] = "DEBUFF",
-			["event"] = "SPELL_AURA_APPLIED",
-			["npcID"] = 21478,
+		[9613] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Deathforge Summoner",
+			["npcID"] = 20872,
 		},
-		[12169] = {
+		[36462] = {
+			["source"] = "Domesticated Felboar",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 21195,
+		},
+		[8599] = {
 			["event"] = "SPELL_AURA_APPLIED",
 			["type"] = "BUFF",
-			["source"] = "Grom'tor, Son of Oronok",
-			["npcID"] = 21687,
+			["source"] = "Enraged Fire Spirit",
+			["npcID"] = 21061,
+		},
+		[63619] = {
+			["type"] = "BUFF",
+			["source"] = "Shadowfiend",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 19668,
+		},
+		[37067] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Ashtongue Shaman",
+			["npcID"] = 21453,
+		},
+		[15786] = {
+			["source"] = "Earthmender Wilda",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 21027,
+		},
+		[37202] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Corrupt Air Totem",
+			["npcID"] = 21705,
+		},
+		[16006] = {
+			["source"] = "Earthmender Wilda",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 21027,
+		},
+		[38861] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Dragonmaw Skybreaker",
+			["npcID"] = 23440,
+		},
+		[40770] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Nethermine Flayer",
+			["npcID"] = 23169,
+		},
+		[12544] = {
+			["source"] = "Asara Dawnblaze",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 35002,
+		},
+		[38365] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Enraged Earth Spirit",
+			["npcID"] = 21050,
+		},
+		[35194] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Corrupted Air Elemental",
+			["npcID"] = 21707,
+		},
+		[35706] = {
+			["source"] = "Unknown",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 17252,
+		},
+		[12548] = {
+			["source"] = "Earthmender Wilda",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 21027,
+		},
+		[38254] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Skethyl Owl",
+			["npcID"] = 21450,
+		},
+		[12550] = {
+			["source"] = "Empoor",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 18482,
+		},
+		[25228] = {
+			["source"] = "Unknown",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 17252,
+		},
+		[31707] = {
+			["source"] = "Water Elemental",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 510,
+		},
+		[3600] = {
+			["type"] = "DEBUFF",
+			["source"] = "Earthbind Totem",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 2630,
+		},
+		[13443] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Nethermine Ravager",
+			["npcID"] = 23326,
+		},
+		[27268] = {
+			["source"] = "Unknown",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 416,
+		},
+		[38108] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Deathforge Mine",
+			["npcID"] = 22315,
+		},
+		[38032] = {
+			["source"] = "Enraged Water Spirit",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 21059,
+		},
+		[58610] = {
+			["type"] = "DEBUFF",
+			["source"] = "Drumbatron",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 17447,
+		},
+		[5232] = {
+			["source"] = "Disciple of Naralex",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 3678,
+		},
+		[57475] = {
+			["source"] = "Unknown",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 16932,
+		},
+		[15063] = {
+			["source"] = "Corrupt Water Totem",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 21420,
+		},
+		[36826] = {
+			["source"] = "Corrupt Water Totem",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 21420,
+		},
+		[28681] = {
+			["source"] = "Damaged Necrotic Shard",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 16172,
+		},
+		[37933] = {
+			["type"] = "DEBUFF",
+			["source"] = "Ravenous Flayer",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 21196,
+		},
+		[37728] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Ancient Shadowmoon Spirit",
+			["npcID"] = 21797,
+		},
+		[40735] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Disobedient Dragonmaw Peon",
+			["npcID"] = 23311,
+		},
+		[37945] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Greater Felfire Diemetradon",
+			["npcID"] = 21462,
+		},
+		[40743] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Crazed Murkblood Miner",
+			["npcID"] = 23324,
+		},
+		[57566] = {
+			["source"] = "Rhuughon",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 417,
+		},
+		[47482] = {
+			["source"] = "Batmuncher",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 26125,
+		},
+		[37580] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Deathforge Smith",
+			["npcID"] = 19756,
+		},
+		[37203] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Corrupt Earth Totem",
+			["npcID"] = 21704,
+		},
+		[27050] = {
+			["source"] = "Ferda",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 16932,
+		},
+		[38067] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Air Force Alarm Bot (Alliance)",
+			["npcID"] = 2614,
+		},
+		[25530] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Searing Totem VII",
+			["npcID"] = 15480,
+		},
+		[37727] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Teron Gorefiend",
+			["npcID"] = 21797,
+		},
+		[32011] = {
+			["source"] = "Lakaan",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 21416,
+		},
+		[75593] = {
+			["source"] = "Unknown",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 16932,
+		},
+		[32903] = {
+			["source"] = "Trachela",
+			["type"] = "DEBUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 21515,
+		},
+		[35076] = {
+			["source"] = "A'dal",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 18481,
+		},
+		[33810] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Nethermine Ravager",
+			["npcID"] = 23326,
+		},
+		[36227] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Deathforge Imp",
+			["npcID"] = 20887,
+		},
+		[8646] = {
+			["source"] = "Bonechewer Devastator",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 16772,
+		},
+		[19579] = {
+			["source"] = "Unknown",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 17447,
+		},
+		[27277] = {
+			["source"] = "Rhuughon",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 417,
+		},
+		[38021] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Skethyl Owl",
+			["npcID"] = 21450,
+		},
+		[36247] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Enraged Fire Spirit",
+			["npcID"] = 21061,
+		},
+		[36006] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Enraged Earth Spirit",
+			["npcID"] = 21050,
+		},
+		[7279] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Black Blood of Draenor",
+			["npcID"] = 23286,
+		},
+		[36513] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Mature Netherwing Drake",
+			["npcID"] = 21648,
+		},
+		[38858] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Dragonmaw Skybreaker",
+			["npcID"] = 22274,
+		},
+		[38370] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Commander Hobb",
+			["npcID"] = 23434,
+		},
+		[9672] = {
+			["source"] = "Corrupted Water Elemental",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 21428,
+		},
+		[19647] = {
+			["source"] = "Rhuughon",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 417,
+		},
+		[32717] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Enraged Air Spirit",
+			["npcID"] = 21060,
+		},
+		[41448] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Dragonmaw Skybreaker",
+			["npcID"] = 23440,
+		},
+		[40732] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Disobedient Dragonmaw Peon",
+			["npcID"] = 23311,
+		},
+		[36732] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "DEBUFF",
+			["source"] = "Dragonmaw Skybreaker",
+			["npcID"] = 23440,
+		},
+		[37729] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Teron Gorefiend",
+			["npcID"] = 21797,
+		},
+		[33811] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Nethermine Ravager",
+			["npcID"] = 23326,
+		},
+		[38401] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Summoner Skartax",
+			["npcID"] = 21207,
+		},
+		[19615] = {
+			["source"] = "Ferda",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 16932,
+		},
+		[37628] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Deathforge Summoner",
+			["npcID"] = 20872,
+		},
+		[11969] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Corrupt Fire Totem",
+			["npcID"] = 21703,
+		},
+		[38859] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Dragonmaw Skybreaker",
+			["npcID"] = 22274,
+		},
+		[37789] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Karsius the Ancient Watcher",
+			["npcID"] = 21877,
+		},
+		[11972] = {
+			["source"] = "Deathforge Guardian",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 20878,
+		},
+		[35696] = {
+			["source"] = "Unknown",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 17252,
+		},
+		[9053] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Corrupted Fire Elemental",
+			["npcID"] = 21706,
+		},
+		[38498] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Enraged Earth Spirit",
+			["npcID"] = 21050,
+		},
+		[32714] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Nethermine Burster",
+			["npcID"] = 23285,
+		},
+		[37998] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Deathforge Guardian",
+			["npcID"] = 20878,
+		},
+		[23828] = {
+			["source"] = "Unknown",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 416,
+		},
+		[9532] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Haalum",
+			["npcID"] = 21711,
+		},
+		[37941] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Greater Felfire Diemetradon",
+			["npcID"] = 21462,
+		},
+		[13281] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Eykenen",
+			["npcID"] = 21709,
+		},
+		[37201] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Corrupt Fire Totem",
+			["npcID"] = 21703,
+		},
+		[32942] = {
+			["source"] = "Warp Hunter",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 18465,
+		},
+		[27269] = {
+			["source"] = "Unknown",
+			["type"] = "BUFF",
+			["event"] = "SPELL_AURA_APPLIED",
+			["npcID"] = 416,
+		},
+		[12058] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Enraged Air Spirit",
+			["npcID"] = 21060,
+		},
+		[32734] = {
+			["event"] = "SPELL_AURA_APPLIED",
+			["type"] = "BUFF",
+			["source"] = "Eykenen",
+			["npcID"] = 21709,
+		},
+		[37784] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Chain of Shadows",
+			["npcID"] = 21876,
+		},
+		[37788] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Teron Gorefiend",
+			["npcID"] = 21797,
+		},
+		[38107] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Deathforge Tinkerer",
+			["npcID"] = 19754,
+		},
+		[54052] = {
+			["source"] = "Rhuughon",
+			["event"] = "SPELL_CAST_SUCCESS",
+			["npcID"] = 417,
+		},
+		[15039] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Uylaru",
+			["npcID"] = 21710,
+		},
+		[47481] = {
+			["event"] = "SPELL_CAST_SUCCESS",
+			["source"] = "Dirtravager",
+			["npcID"] = 26125,
 		},
 	},
 	["profiles"] = {
@@ -965,15 +1331,15 @@ PlaterDB = {
 						}, -- [8]
 					},
 					["Author"] = "Tercioo-Sylvanas",
+					["version"] = -1,
+					["OnShowCode"] = "function (self, unitId, unitFrame, envTable, scriptTable)\n    if (scriptTable.config.glowEnabled) then\n        envTable.buffIconGlow:Show()\n    end\n    \n    if (scriptTable.config.dotsEnabled) then\n        envTable.dotAnimation = Plater.PlayDotAnimation(self, 6, scriptTable.config.dotsColor, 6, 3) \n    end\nend\n\n\n",
 					["SpellIds"] = {
 						337220, -- [1]
 						337253, -- [2]
 						337251, -- [3]
 					},
-					["OnShowCode"] = "function (self, unitId, unitFrame, envTable, scriptTable)\n    if (scriptTable.config.glowEnabled) then\n        envTable.buffIconGlow:Show()\n    end\n    \n    if (scriptTable.config.dotsEnabled) then\n        envTable.dotAnimation = Plater.PlayDotAnimation(self, 6, scriptTable.config.dotsColor, 6, 3) \n    end\nend\n\n\n",
-					["Name"] = "Aura - Debuff Alert [Plater]",
 					["Prio"] = 99,
-					["version"] = -1,
+					["Name"] = "Aura - Debuff Alert [Plater]",
 					["PlaterCore"] = 1,
 					["Temp_UpdateCode"] = "function (self, unitId, unitFrame, envTable)\n    \nend\n\n\n",
 					["Desc"] = "Add the debuff name in the trigger box.",
@@ -4070,7 +4436,7 @@ PlaterDB = {
 			["saved_cvars_last_change"] = {
 				["nameplateMinAlpha"] = "Interface\\AddOns\\Plater\\Plater.lua:4358",
 				["nameplateMinAlphaDistance"] = "Interface\\AddOns\\Plater\\Plater.lua:4359",
-				["nameplateMotion"] = "Interface\\AddOns\\Plater\\Plater.lua:8207",
+				["nameplateMotion"] = "Interface\\AddOns\\Plater\\Plater.lua:8209",
 				["nameplateShowEnemyMinus"] = "Interface\\AddOns\\xVermin\\Frames/CustomContainers.lua:50",
 				["nameplateRemovalAnimation"] = "Interface\\AddOns\\Plater\\Plater.lua:4362",
 				["nameplateNotSelectedAlpha"] = "Interface\\AddOns\\Plater\\Plater.lua:4361",
@@ -5779,13 +6145,13 @@ PlaterDB = {
 					"Dope'rel", -- [1]
 					"Blackrock Depths", -- [2]
 				},
+				[8933] = {
+					"Cave Creeper", -- [1]
+					"Blackrock Depths", -- [2]
+				},
 				[9956] = {
 					"Shadowforge Flame Keeper", -- [1]
 					"Blackrock Depths", -- [2]
-				},
-				[134232] = {
-					"Hired Assassin", -- [1]
-					"The MOTHERLODE!!", -- [2]
 				},
 				[16699] = {
 					"Shattered Hand Reaver", -- [1]
@@ -5819,9 +6185,9 @@ PlaterDB = {
 					"Aku'mai Servant", -- [1]
 					"Blackfathom Deeps", -- [2]
 				},
-				[8933] = {
-					"Cave Creeper", -- [1]
-					"Blackrock Depths", -- [2]
+				[134232] = {
+					"Hired Assassin", -- [1]
+					"The MOTHERLODE!!", -- [2]
 				},
 				[4525] = {
 					"Razorfen Earthbreaker", -- [1]
@@ -6035,9 +6401,9 @@ PlaterDB = {
 					"Shattered Hand Legionnaire", -- [1]
 					"Hellfire Citadel: The Shattered Halls", -- [2]
 				},
-				[17819] = {
-					"Durnholde Sentry", -- [1]
-					"The Escape From Durnholde", -- [2]
+				[3640] = {
+					"Evolving Ectoplasm", -- [1]
+					"Wailing Caverns", -- [2]
 				},
 				[9502] = {
 					"Phalanx", -- [1]
@@ -6051,9 +6417,9 @@ PlaterDB = {
 					"Deviate Ravager", -- [1]
 					"Wailing Caverns", -- [2]
 				},
-				[135007] = {
-					"Orb Guardian", -- [1]
-					"Temple of Sethraliss", -- [2]
+				[17819] = {
+					"Durnholde Sentry", -- [1]
+					"The Escape From Durnholde", -- [2]
 				},
 				[18794] = {
 					"Cabal Ritualist", -- [1]
@@ -6067,9 +6433,9 @@ PlaterDB = {
 					"Theka the Martyr", -- [1]
 					"Zul'Farrak", -- [2]
 				},
-				[3640] = {
-					"Evolving Ectoplasm", -- [1]
-					"Wailing Caverns", -- [2]
+				[135007] = {
+					"Orb Guardian", -- [1]
+					"Temple of Sethraliss", -- [2]
 				},
 				[17835] = {
 					"Infinite Assassin", -- [1]
@@ -6099,9 +6465,9 @@ PlaterDB = {
 					"Mutanus the Devourer", -- [1]
 					"Wailing Caverns", -- [2]
 				},
-				[7344] = {
-					"Splinterbone Warrior", -- [1]
-					"Razorfen Downs", -- [2]
+				[3674] = {
+					"Skum", -- [1]
+					"Wailing Caverns", -- [2]
 				},
 				[17963] = {
 					"Wastewalker Slave", -- [1]
@@ -6135,9 +6501,9 @@ PlaterDB = {
 					"Skeletal Shadowcaster", -- [1]
 					"Razorfen Downs", -- [2]
 				},
-				[4275] = {
-					"Archmage Arugal", -- [1]
-					"Shadowfang Keep", -- [2]
+				[7344] = {
+					"Splinterbone Warrior", -- [1]
+					"Razorfen Downs", -- [2]
 				},
 				[4279] = {
 					"Odo the Blindwatcher", -- [1]
@@ -6595,9 +6961,9 @@ PlaterDB = {
 					"Thorn Eater Ghoul", -- [1]
 					"Razorfen Downs", -- [2]
 				},
-				[3674] = {
-					"Skum", -- [1]
-					"Wailing Caverns", -- [2]
+				[4275] = {
+					"Archmage Arugal", -- [1]
+					"Shadowfang Keep", -- [2]
 				},
 				[5762] = {
 					"Deviate Moccasin", -- [1]
@@ -6940,7 +7306,7 @@ PlaterDB = {
 			["minor_height_scale"] = 0.9999999403953552,
 			["aura_padding"] = 2,
 			["last_news_time"] = 1551553489,
-			["cast_statusbar_fadeout_time"] = 0.4999999701976776,
+			["aura_width2"] = 16,
 			["aura_stack_size"] = 13,
 			["aura_height2"] = 14,
 			["health_cutoff"] = false,
@@ -6961,6 +7327,7 @@ PlaterDB = {
 				["world"] = false,
 			},
 			["aura_cooldown_edge_texture"] = "Interface\\GLUES\\loadingOld",
+			["extra_icon_height"] = 26,
 			["transparency_behavior"] = 2,
 			["aura_consolidate"] = true,
 			["extra_icon_width"] = 26,
@@ -7028,12 +7395,12 @@ PlaterDB = {
 				["nameplateSelectedScale"] = "1.15",
 				["nameplatePersonalShowAlways"] = "1",
 				["nameplateShowFriends"] = "0",
-				["NamePlateHorizontalScale"] = "1",
-				["nameplateMinAlphaDistance"] = "-158489.31924611",
-				["nameplateMotion"] = "0",
-				["nameplateSelfAlpha"] = "1",
-				["nameplateMinScale"] = "1",
 				["nameplateShowEnemyGuardians"] = "0",
+				["nameplateMinAlphaDistance"] = "-158489.31924611",
+				["nameplateMotion"] = "1",
+				["NamePlateHorizontalScale"] = "1",
+				["nameplateMinScale"] = "1",
+				["nameplateSelfAlpha"] = "1",
 				["nameplateOtherTopInset"] = "0.085",
 				["nameplateRemovalAnimation"] = "0",
 				["nameplateSelfBottomInset"] = "0.32596862792969",
@@ -7045,7 +7412,7 @@ PlaterDB = {
 				["nameplateTargetRadialPosition"] = "1",
 				["nameplateShowDebuffsOnFriendly"] = "0",
 			},
-			["login_counter"] = 1343,
+			["login_counter"] = 1349,
 			["extra_icon_caster_name"] = false,
 			["aura_cooldown_show_swipe"] = false,
 			["show_aggro_flash"] = true,
@@ -7154,22 +7521,22 @@ PlaterDB = {
 					},
 					["power_percent_text_font"] = "Accidental Presidency",
 					["big_actorname_text_size"] = 10,
+					["quest_enabled"] = true,
 					["actorname_text_anchor"] = {
 						["y"] = -3,
 						["x"] = -1,
 						["side"] = 1,
 					},
-					["percent_show_health"] = true,
-					["spellpercent_text_enabled"] = true,
+					["percent_text_size"] = 8,
 					["big_actortitle_text_size"] = 10,
 					["percent_text_font"] = "Accidental Presidency",
 					["buff_frame_y_offset"] = 0,
-					["quest_enabled"] = true,
+					["percent_text_outline"] = "NONE",
 					["spellname_text_color"] = {
 						0.95294117647059, -- [1]
 						[3] = 0.9921568627451,
 					},
-					["percent_text_outline"] = "NONE",
+					["spellpercent_text_enabled"] = true,
 					["health_incombat"] = {
 						120, -- [1]
 						14, -- [2]
@@ -7181,7 +7548,7 @@ PlaterDB = {
 					["big_actorname_text_font"] = "Accidental Presidency",
 					["percent_text_enabled"] = true,
 					["actorname_text_size"] = 12,
-					["percent_text_size"] = 8,
+					["percent_show_health"] = true,
 					["level_text_enabled"] = true,
 				},
 				["friendlynpc"] = {
@@ -7989,20 +8356,20 @@ PlaterDB = {
 					false, -- [2]
 					"plum", -- [3]
 				},
-				[133835] = {
+				[134600] = {
 					true, -- [1]
 					false, -- [2]
-					"goldenrod", -- [3]
+					"peru", -- [3]
 				},
 				[136353] = {
 					true, -- [1]
 					false, -- [2]
 					"royalblue", -- [3]
 				},
-				[135365] = {
+				[133835] = {
 					true, -- [1]
 					false, -- [2]
-					"plum", -- [3]
+					"goldenrod", -- [3]
 				},
 				[136470] = {
 					true, -- [1]
@@ -8014,10 +8381,10 @@ PlaterDB = {
 					false, -- [2]
 					"honeydew", -- [3]
 				},
-				[134600] = {
+				[135365] = {
 					true, -- [1]
 					false, -- [2]
-					"peru", -- [3]
+					"plum", -- [3]
 				},
 				[126918] = {
 					true, -- [1]
@@ -8774,11 +9141,11 @@ PlaterDB = {
 						["spec"] = {
 						},
 					},
-					["PlaterCore"] = 1,
-					["Name"] = "M+ Bwonsamdi Reaping",
-					["Icon"] = 2446016,
 					["HooksTemp"] = {
 					},
+					["Name"] = "M+ Bwonsamdi Reaping",
+					["Icon"] = 2446016,
+					["PlaterCore"] = 1,
 				}, -- [15]
 				{
 					["Enabled"] = true,
@@ -9800,11 +10167,21 @@ PlaterDB = {
 				}, -- [35]
 			},
 			["aura_width"] = 16,
-			["health_statusbar_bgcolor"] = {
-				0.0431372, -- [1]
-				0.0431372, -- [2]
-				0.0431372, -- [3]
-				1, -- [4]
+			["ghost_auras"] = {
+				["auras"] = {
+					["PRIEST"] = {
+						[3] = {
+							[589] = true,
+							[34914] = true,
+						},
+					},
+					["WARLOCK"] = {
+						{
+							[172] = true,
+							[980] = true,
+						}, -- [1]
+					},
+				},
 			},
 			["pet_width_scale"] = 0.9999999403953552,
 			["quick_hide"] = true,
@@ -9893,7 +10270,7 @@ PlaterDB = {
 			["update_throttle"] = 0.09999999403953552,
 			["hover_highlight_alpha"] = 0.09999999403953552,
 			["castbar_icon_show"] = false,
-			["extra_icon_height"] = 26,
+			["indicator_rare"] = false,
 			["not_affecting_combat_alpha"] = 1,
 			["use_health_animation"] = true,
 			["target_highlight_alpha"] = 1,
@@ -9903,22 +10280,7 @@ PlaterDB = {
 				},
 			},
 			["auto_toggle_stacking_enabled"] = true,
-			["ghost_auras"] = {
-				["auras"] = {
-					["PRIEST"] = {
-						[3] = {
-							[589] = true,
-							[34914] = true,
-						},
-					},
-					["WARLOCK"] = {
-						{
-							[172] = true,
-							[980] = true,
-						}, -- [1]
-					},
-				},
-			},
+			["health_selection_overlay_alpha"] = 0,
 			["target_shady_alpha"] = 0.597934901714325,
 			["target_highlight_height"] = 20.53548812866211,
 			["indicator_raidmark_scale"] = 0.699999988079071,
@@ -9956,8 +10318,13 @@ PlaterDB = {
 			["health_animation_time_dilatation"] = 2.869999885559082,
 			["number_region_first_run"] = true,
 			["aura_grow_direction"] = 3,
-			["health_selection_overlay_alpha"] = 0,
-			["aura_width2"] = 16,
+			["cast_statusbar_fadeout_time"] = 0.4999999701976776,
+			["health_statusbar_bgcolor"] = {
+				0.0431372, -- [1]
+				0.0431372, -- [2]
+				0.0431372, -- [3]
+				1, -- [4]
+			},
 			["castbar_target_anchor"] = {
 				["side"] = 11,
 			},
@@ -9972,15 +10339,15 @@ PlaterDB = {
 				["Cast - Glowing [P]"] = 1,
 				["Aura - Debuff Alert"] = 11,
 				["Aura is Shield [P]"] = 1,
-				["Auto Set Skull"] = 11,
+				["Color Change"] = 1,
 				["Cast - Castbar is Timer [P]"] = 2,
 				["Blink by Time Left"] = 1,
 				["Cast - Big Alert"] = 12,
-				["Color Change"] = 1,
+				["Spiteful Affix"] = 3,
 				["Cast - Small Alert"] = 11,
 				["Fixate by Unit Buff [P]"] = 1,
 				["Aura - Invalidate Unit"] = 1,
-				["Spiteful Affix"] = 3,
+				["Auto Set Skull"] = 11,
 				["Unit Power"] = 1,
 				["Unit - Main Target"] = 11,
 				["Aura - Blink Time Left"] = 13,
@@ -10026,7 +10393,6 @@ PlaterDB = {
 				["arena"] = false,
 			},
 			["cast_statusbar_spark_width"] = 25,
-			["indicator_rare"] = false,
 		},
 	},
 	["profileKeys"] = {
@@ -10041,881 +10407,527 @@ PlaterDB = {
 		["Battlearm - Golemagg"] = "Default",
 	},
 	["captured_casts"] = {
-		[44519] = {
-			["npcID"] = 24686,
+		[7121] = {
+			["npcID"] = 3853,
 		},
-		[8994] = {
-			["npcID"] = 9499,
+		[7125] = {
+			["npcID"] = 4274,
 		},
-		[34842] = {
-			["npcID"] = 16975,
+		[36476] = {
+			["npcID"] = 22016,
 		},
-		[33325] = {
-			["npcID"] = 18702,
+		[9143] = {
+			["npcID"] = 8897,
 		},
-		[7068] = {
-			["npcID"] = 3887,
+		[38618] = {
+			["npcID"] = 21852,
 		},
-		[1516] = {
-			["npcID"] = 2951,
+		[15305] = {
+			["npcID"] = 8983,
 		},
-		[48208] = {
-			["npcID"] = 27169,
-		},
-		[33916] = {
-			["npcID"] = 16975,
-		},
-		[12096] = {
-			["npcID"] = 5271,
-		},
-		[34347] = {
-			["npcID"] = 19527,
-		},
-		[44503] = {
-			["npcID"] = 24690,
-		},
-		[6064] = {
-			["npcID"] = 4303,
-		},
-		[31865] = {
-			["npcID"] = 17399,
-		},
-		[30851] = {
-			["npcID"] = 17395,
-		},
-		[27641] = {
-			["npcID"] = 18325,
-		},
-		[9573] = {
-			["npcID"] = 9537,
-		},
-		[33501] = {
-			["npcID"] = 18848,
-		},
-		[7098] = {
-			["npcID"] = 3276,
-		},
-		[32424] = {
-			["encounterName"] = "Exarch Maladaar",
-			["npcID"] = 18373,
-			["encounterID"] = 1889,
-		},
-		[12551] = {
-			["npcID"] = 8920,
-		},
-		[7054] = {
-			["npcID"] = 3873,
-		},
-		[7106] = {
-			["npcID"] = 3854,
-		},
-		[36247] = {
-			["npcID"] = 22323,
-		},
-		[44504] = {
-			["npcID"] = 24690,
-		},
-		[12675] = {
-			["npcID"] = 9041,
-		},
-		[15234] = {
-			["npcID"] = 17961,
-		},
-		[6605] = {
-			["npcID"] = 9166,
-		},
-		[15242] = {
-			["npcID"] = 17477,
-		},
-		[8142] = {
-			["npcID"] = 5775,
-		},
-		[53765] = {
-			["npcID"] = 28471,
-		},
-		[7124] = {
-			["npcID"] = 2529,
-		},
-		[32735] = {
-			["npcID"] = 16946,
-		},
-		[5605] = {
-			["npcID"] = 10759,
-		},
-		[20791] = {
-			["npcID"] = 11324,
-		},
-		[35913] = {
-			["npcID"] = 24999,
-		},
-		[15785] = {
-			["npcID"] = 19306,
-		},
-		[13745] = {
-			["npcID"] = 8913,
-		},
-		[20823] = {
-			["npcID"] = 20159,
-		},
-		[15797] = {
-			["npcID"] = 7448,
-		},
-		[15801] = {
-			["npcID"] = 11600,
-		},
-		[12739] = {
-			["npcID"] = 17371,
-		},
-		[16100] = {
-			["npcID"] = 17820,
-		},
-		[12747] = {
-			["npcID"] = 3261,
-		},
-		[33502] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["npcID"] = 18639,
-		},
-		[7162] = {
-			["npcID"] = 5661,
-		},
-		[14292] = {
-			["npcID"] = 9524,
-		},
-		[16340] = {
-			["npcID"] = 10661,
-		},
-		[15254] = {
-			["encounterName"] = "Nexus-Prince Shaffar",
-			["encounterID"] = 1899,
-			["npcID"] = 18431,
-		},
-		[12248] = {
-			["npcID"] = 17771,
+		[1026] = {
+			["npcID"] = 4278,
 		},
 		[2052] = {
 			["npcID"] = 2990,
 		},
-		[52521] = {
-			["npcID"] = 28658,
+		[37851] = {
+			["npcID"] = 21909,
 		},
-		[22907] = {
-			["encounterName"] = "Swamplord Musel'ek",
-			["encounterID"] = 1947,
-			["npcID"] = 17826,
+		[13323] = {
+			["npcID"] = 18315,
 		},
-		[2055] = {
-			["npcID"] = 4809,
-		},
-		[35195] = {
-			["npcID"] = 18121,
-		},
-		[12471] = {
-			["npcID"] = 17478,
-		},
-		[3606] = {
-			["npcID"] = 2523,
-		},
-		[15869] = {
-			["npcID"] = 18080,
-		},
-		[31554] = {
-			["npcID"] = 17958,
-		},
-		[13322] = {
-			["npcID"] = 2964,
-		},
-		[8363] = {
-			["npcID"] = 4803,
-		},
-		[113] = {
-			["npcID"] = 4516,
-		},
-		[8399] = {
-			["npcID"] = 4832,
-		},
-		[6254] = {
-			["npcID"] = 3674,
-		},
-		[56147] = {
-			["npcID"] = 16298,
-		},
-		[15498] = {
-			["npcID"] = 28594,
-		},
-		[15537] = {
-			["npcID"] = 7275,
-		},
-		[6685] = {
-			["npcID"] = 7155,
-		},
-		[7761] = {
-			["npcID"] = 1866,
-		},
-		[35946] = {
-			["npcID"] = 24696,
-		},
-		[16033] = {
-			["npcID"] = 18069,
-		},
-		[32329] = {
-			["npcID"] = 17871,
-		},
-		[8376] = {
-			["npcID"] = 4440,
-		},
-		[11433] = {
-			["npcID"] = 7872,
-		},
-		[8272] = {
-			["npcID"] = 4525,
-		},
-		[33487] = {
-			["npcID"] = 18794,
-		},
-		[32369] = {
-			["encounterName"] = "Nexus-Prince Shaffar",
-			["encounterID"] = 1899,
-			["npcID"] = 18430,
-		},
-		[27267] = {
-			["npcID"] = 416,
-		},
-		[23337] = {
-			["npcID"] = 4624,
-		},
-		[33551] = {
-			["encounterName"] = "Ambassador Hellmaw",
-			["encounterID"] = 1908,
-			["npcID"] = 18731,
-		},
-		[51963] = {
-			["npcID"] = 27829,
-		},
-		[45336] = {
-			["npcID"] = 24972,
-		},
-		[14532] = {
-			["npcID"] = 8933,
-		},
-		[31914] = {
-			["encounterName"] = "Epoch Hunter",
-			["encounterID"] = 1906,
-			["npcID"] = 18096,
-		},
-		[11981] = {
-			["npcID"] = 16950,
-		},
-		[5188] = {
-			["npcID"] = 3669,
-		},
-		[3110] = {
-			["npcID"] = 416,
-		},
-		[6725] = {
-			["npcID"] = 7335,
-		},
-		[2601] = {
-			["npcID"] = 4300,
-		},
-		[33711] = {
-			["encounterName"] = "Murmur",
-			["encounterID"] = 1910,
-			["npcID"] = 18708,
-		},
-		[44518] = {
-			["npcID"] = 24686,
-		},
-		[8858] = {
-			["npcID"] = 7607,
-		},
-		[11921] = {
-			["npcID"] = 19016,
-		},
-		[41440] = {
-			["npcID"] = 23441,
-		},
-		[34302] = {
-			["npcID"] = 16975,
-		},
-		[44538] = {
-			["npcID"] = 24698,
-		},
-		[10915] = {
-			["npcID"] = 8127,
-		},
-		[6984] = {
-			["npcID"] = 4531,
-		},
-		[20792] = {
-			["npcID"] = 3717,
-		},
-		[20800] = {
-			["npcID"] = 11518,
-		},
-		[15530] = {
-			["npcID"] = 19258,
-		},
-		[36279] = {
-			["npcID"] = 21148,
+		[37979] = {
+			["npcID"] = 29177,
 		},
 		[33919] = {
 			["encounterName"] = "Tavarok",
 			["encounterID"] = 1901,
 			["npcID"] = 18343,
 		},
-		[43133] = {
-			["npcID"] = 4378,
+		[34974] = {
+			["encounterName"] = "Swamplord Musel'ek",
+			["encounterID"] = 1947,
+			["npcID"] = 17826,
 		},
-		[11969] = {
-			["npcID"] = 4331,
+		[38107] = {
+			["npcID"] = 19754,
 		},
-		[6278] = {
-			["npcID"] = 3267,
+		[8272] = {
+			["npcID"] = 4525,
 		},
-		[15043] = {
-			["npcID"] = 12876,
+		[38171] = {
+			["npcID"] = 22017,
 		},
-		[3131] = {
-			["npcID"] = 10197,
+		[35198] = {
+			["npcID"] = 20455,
+		},
+		[5187] = {
+			["npcID"] = 3671,
 		},
 		[11397] = {
 			["npcID"] = 7332,
 		},
-		[14033] = {
-			["npcID"] = 9018,
+		[15497] = {
+			["npcID"] = 17963,
 		},
-		[8004] = {
-			["npcID"] = 3434,
+		[15537] = {
+			["npcID"] = 7275,
 		},
-		[31747] = {
-			["npcID"] = 16844,
+		[51918] = {
+			["npcID"] = 28534,
 		},
-		[52566] = {
-			["npcID"] = 28834,
+		[37628] = {
+			["npcID"] = 20872,
 		},
-		[7799] = {
-			["npcID"] = 416,
+		[22938] = {
+			["npcID"] = 19671,
 		},
-		[15586] = {
-			["npcID"] = 17833,
+		[3131] = {
+			["npcID"] = 10197,
+		},
+		[15585] = {
+			["npcID"] = 17730,
+		},
+		[7289] = {
+			["npcID"] = 20115,
 		},
 		[6270] = {
 			["npcID"] = 3678,
 		},
-		[12528] = {
-			["npcID"] = 7352,
-		},
 		[6274] = {
 			["npcID"] = 3458,
 		},
-		[7487] = {
-			["npcID"] = 3927,
+		[6278] = {
+			["npcID"] = 3267,
 		},
-		[15095] = {
-			["npcID"] = 9024,
+		[21068] = {
+			["npcID"] = 18094,
 		},
-		[14443] = {
-			["npcID"] = 8920,
+		[32369] = {
+			["encounterName"] = "Nexus-Prince Shaffar",
+			["encounterID"] = 1899,
+			["npcID"] = 18430,
 		},
-		[31707] = {
-			["npcID"] = 510,
+		[9591] = {
+			["npcID"] = 5280,
 		},
-		[5262] = {
-			["npcID"] = 3197,
+		[39419] = {
+			["npcID"] = 18213,
 		},
-		[44475] = {
-			["npcID"] = 24683,
+		[8600] = {
+			["npcID"] = 7272,
 		},
-		[46024] = {
-			["encounterName"] = "Priestess Delrissa",
-			["encounterID"] = 1895,
-			["npcID"] = 24556,
+		[6358] = {
+			["npcID"] = 1863,
 		},
-		[43996] = {
-			["npcID"] = 24529,
+		[31554] = {
+			["npcID"] = 17958,
 		},
-		[5781] = {
-			["npcID"] = 2958,
+		[15801] = {
+			["npcID"] = 11600,
+		},
+		[30643] = {
+			["encounterName"] = "Watchkeeper Gargolmar",
+			["encounterID"] = 1893,
+			["npcID"] = 17309,
+		},
+		[18399] = {
+			["npcID"] = 17395,
 		},
 		[30691] = {
 			["encounterName"] = "Vazruden the Herald",
 			["encounterID"] = 1892,
 			["npcID"] = 17307,
 		},
-		[30741] = {
-			["npcID"] = 16807,
-		},
-		[7992] = {
-			["npcID"] = 3277,
-		},
-		[9613] = {
-			["npcID"] = 19411,
-		},
-		[332] = {
-			["npcID"] = 2965,
-		},
-		[21668] = {
-			["npcID"] = 13443,
-		},
-		[7645] = {
-			["npcID"] = 4813,
-		},
-		[1026] = {
-			["npcID"] = 4278,
-		},
-		[32330] = {
-			["npcID"] = 17732,
-		},
-		[34974] = {
-			["encounterName"] = "Swamplord Musel'ek",
-			["encounterID"] = 1947,
-			["npcID"] = 17826,
-		},
-		[11131] = {
-			["npcID"] = 7273,
-		},
-		[40062] = {
-			["npcID"] = 17414,
-		},
-		[8275] = {
-			["npcID"] = 4532,
-		},
-		[32370] = {
-			["encounterName"] = "Nexus-Prince Shaffar",
-			["encounterID"] = 1899,
-			["npcID"] = 18430,
-		},
-		[35198] = {
-			["npcID"] = 20455,
-		},
-		[30853] = {
-			["npcID"] = 17395,
-		},
-		[6352] = {
-			["npcID"] = 3904,
-		},
-		[16561] = {
-			["npcID"] = 20270,
-		},
-		[32690] = {
-			["npcID"] = 18328,
-		},
-		[11836] = {
-			["npcID"] = 7273,
-		},
-		[14030] = {
-			["npcID"] = 14375,
-		},
-		[21807] = {
-			["npcID"] = 29181,
-		},
-		[20298] = {
-			["npcID"] = 31096,
-		},
-		[11642] = {
-			["npcID"] = 4285,
-		},
-		[36476] = {
-			["npcID"] = 22016,
-		},
-		[46983] = {
-			["npcID"] = 25040,
-		},
-		[33969] = {
-			["npcID"] = 18981,
-		},
-		[547] = {
-			["npcID"] = 3271,
-		},
-		[6350] = {
-			["npcID"] = 3902,
-		},
-		[8600] = {
-			["npcID"] = 7272,
-		},
-		[32682] = {
-			["npcID"] = 18320,
-		},
-		[33793] = {
-			["encounterName"] = "Vazruden the Herald",
-			["encounterID"] = 1892,
-			["npcID"] = 17307,
-		},
-		[6358] = {
-			["npcID"] = 1863,
-		},
-		[38245] = {
-			["encounterName"] = "Talon King Ikiss",
-			["encounterID"] = 1902,
-			["npcID"] = 18473,
-		},
-		[31516] = {
-			["npcID"] = 21285,
-		},
-		[37945] = {
-			["npcID"] = 21462,
-		},
-		[20801] = {
-			["npcID"] = 18641,
-		},
-		[9143] = {
-			["npcID"] = 8897,
-		},
-		[9734] = {
-			["npcID"] = 3386,
-		},
-		[20825] = {
-			["npcID"] = 1564,
-		},
-		[43135] = {
-			["npcID"] = 4394,
-		},
-		[11962] = {
-			["npcID"] = 19411,
-		},
-		[44189] = {
-			["encounterName"] = "Kael'thas Sunstrider",
-			["npcID"] = 24664,
-			["encounterID"] = 1894,
-		},
-		[11970] = {
-			["npcID"] = 11520,
-		},
-		[34249] = {
-			["npcID"] = 19191,
-		},
-		[33506] = {
-			["encounterName"] = "Grandmaster Vorpil",
-			["npcID"] = 18634,
-		},
-		[51918] = {
-			["npcID"] = 28534,
-		},
-		[1090] = {
-			["npcID"] = 3678,
-		},
-		[34233] = {
-			["npcID"] = 17014,
-		},
-		[52926] = {
-			["npcID"] = 29001,
-		},
-		[3264] = {
-			["npcID"] = 3452,
-		},
-		[32674] = {
-			["npcID"] = 18321,
-		},
-		[6909] = {
-			["npcID"] = 5475,
-		},
-		[33634] = {
-			["npcID"] = 19258,
-		},
-		[38171] = {
-			["npcID"] = 22017,
-		},
-		[1094] = {
-			["npcID"] = 4036,
-		},
-		[6917] = {
-			["npcID"] = 19350,
-		},
-		[32722] = {
-			["npcID"] = 16901,
-		},
-		[30686] = {
+		[30707] = {
 			["encounterName"] = "Omor the Unscarred",
 			["encounterID"] = 1891,
 			["npcID"] = 17308,
 		},
-		[939] = {
-			["npcID"] = 4096,
+		[547] = {
+			["npcID"] = 3271,
 		},
-		[13323] = {
-			["npcID"] = 18315,
+		[1094] = {
+			["npcID"] = 4036,
 		},
-		[38361] = {
-			["npcID"] = 21102,
+		[5403] = {
+			["npcID"] = 2624,
 		},
-		[7951] = {
-			["npcID"] = 5756,
-		},
-		[36238] = {
-			["npcID"] = 22461,
-		},
-		[16006] = {
-			["npcID"] = 13236,
-		},
-		[10277] = {
-			["npcID"] = 18452,
-		},
-		[11922] = {
-			["npcID"] = 5481,
-		},
-		[38858] = {
-			["npcID"] = 24938,
-		},
-		[20299] = {
-			["npcID"] = 24696,
-		},
-		[39000] = {
-			["npcID"] = 22095,
-		},
-		[7967] = {
-			["npcID"] = 3654,
-		},
-		[14900] = {
-			["npcID"] = 4424,
-		},
-		[37979] = {
-			["npcID"] = 29177,
-		},
-		[16498] = {
-			["npcID"] = 7442,
-		},
-		[22127] = {
-			["npcID"] = 13442,
+		[39068] = {
+			["npcID"] = 22375,
 		},
 		[35008] = {
 			["encounterName"] = "Rokmar the Crackler",
 			["encounterID"] = 1941,
 			["npcID"] = 17991,
 		},
-		[32363] = {
-			["encounterName"] = "Nexus-Prince Shaffar",
-			["encounterID"] = 1899,
-			["npcID"] = 18344,
+		[13899] = {
+			["npcID"] = 9017,
+		},
+		[8800] = {
+			["npcID"] = 674,
+		},
+		[7481] = {
+			["npcID"] = 4279,
+		},
+		[7489] = {
+			["npcID"] = 3927,
+		},
+		[44503] = {
+			["npcID"] = 24690,
+		},
+		[35328] = {
+			["npcID"] = 20197,
+		},
+		[44599] = {
+			["npcID"] = 24687,
+		},
+		[16033] = {
+			["npcID"] = 18069,
+		},
+		[20813] = {
+			["npcID"] = 10760,
+		},
+		[20829] = {
+			["npcID"] = 8551,
+		},
+		[33506] = {
+			["encounterName"] = "Grandmaster Vorpil",
+			["npcID"] = 18634,
+		},
+		[11981] = {
+			["npcID"] = 16950,
+		},
+		[33634] = {
+			["npcID"] = 19258,
+		},
+		[6530] = {
+			["npcID"] = 3461,
+		},
+		[54318] = {
+			["npcID"] = 29337,
+		},
+		[34945] = {
+			["npcID"] = 18317,
+		},
+		[40124] = {
+			["npcID"] = 23090,
+		},
+		[57547] = {
+			["npcID"] = 31095,
+		},
+		[38238] = {
+			["npcID"] = 19428,
+		},
+		[15234] = {
+			["npcID"] = 17961,
+		},
+		[35329] = {
+			["npcID"] = 18133,
+		},
+		[7645] = {
+			["npcID"] = 4813,
 		},
 		[33507] = {
 			["encounterName"] = "Grandmaster Vorpil",
 			["npcID"] = 18634,
 		},
-		[34945] = {
-			["npcID"] = 18317,
+		[32674] = {
+			["npcID"] = 18321,
 		},
-		[8800] = {
-			["npcID"] = 674,
+		[32690] = {
+			["npcID"] = 18328,
 		},
-		[38154] = {
-			["npcID"] = 19826,
+		[32722] = {
+			["npcID"] = 16901,
 		},
-		[6063] = {
-			["npcID"] = 4820,
+		[17393] = {
+			["npcID"] = 29109,
 		},
-		[12058] = {
-			["npcID"] = 18080,
-		},
-		[38618] = {
-			["npcID"] = 21852,
-		},
-		[31405] = {
-			["npcID"] = 17771,
-		},
-		[34083] = {
-			["npcID"] = 16937,
-		},
-		[15982] = {
-			["npcID"] = 18069,
-		},
-		[6979] = {
-			["npcID"] = 4281,
-		},
-		[31948] = {
-			["encounterName"] = "Rokmar the Crackler",
-			["encounterID"] = 1941,
-			["npcID"] = 17991,
-		},
-		[8005] = {
-			["npcID"] = 4404,
-		},
-		[34163] = {
-			["npcID"] = 17871,
-		},
-		[9672] = {
-			["npcID"] = 18087,
-		},
-		[15495] = {
-			["npcID"] = 8899,
-		},
-		[37851] = {
-			["npcID"] = 21909,
-		},
-		[32707] = {
-			["npcID"] = 21902,
-		},
-		[35328] = {
-			["npcID"] = 20197,
-		},
-		[172] = {
-			["npcID"] = 3204,
-		},
-		[15611] = {
-			["npcID"] = 8928,
-		},
-		[11431] = {
-			["npcID"] = 7874,
-		},
-		[20794] = {
-			["npcID"] = 3263,
-		},
-		[44606] = {
-			["npcID"] = 24685,
-		},
-		[11443] = {
-			["npcID"] = 7337,
-		},
-		[44644] = {
-			["npcID"] = 24685,
+		[31747] = {
+			["npcID"] = 16844,
 		},
 		[33923] = {
 			["encounterName"] = "Murmur",
 			["encounterID"] = 1910,
 			["npcID"] = 18708,
 		},
+		[35010] = {
+			["encounterName"] = "Mennu the Betrayer",
+			["encounterID"] = 1939,
+			["npcID"] = 17941,
+		},
+		[34019] = {
+			["npcID"] = 19422,
+		},
+		[34083] = {
+			["npcID"] = 16937,
+		},
+		[14443] = {
+			["npcID"] = 8920,
+		},
+		[35234] = {
+			["npcID"] = 18137,
+		},
+		[15498] = {
+			["npcID"] = 28594,
+		},
+		[35394] = {
+			["npcID"] = 18129,
+		},
+		[72898] = {
+			["npcID"] = 37994,
+		},
+		[14515] = {
+			["npcID"] = 4428,
+		},
+		[15586] = {
+			["npcID"] = 17833,
+		},
+		[7801] = {
+			["npcID"] = 416,
+		},
+		[34787] = {
+			["npcID"] = 18088,
+		},
+		[33796] = {
+			["npcID"] = 16896,
+		},
+		[33860] = {
+			["npcID"] = 18429,
+		},
+		[33924] = {
+			["npcID"] = 19424,
+		},
+		[13692] = {
+			["npcID"] = 9163,
+		},
+		[38400] = {
+			["npcID"] = 22122,
+		},
+		[13748] = {
+			["npcID"] = 8913,
+		},
+		[9672] = {
+			["npcID"] = 18087,
+		},
+		[25530] = {
+			["npcID"] = 15480,
+		},
+		[32707] = {
+			["npcID"] = 21902,
+		},
+		[30741] = {
+			["npcID"] = 16807,
+		},
+		[6950] = {
+			["npcID"] = 3268,
+		},
+		[13900] = {
+			["npcID"] = 9017,
+		},
+		[36227] = {
+			["npcID"] = 20887,
+		},
+		[35236] = {
+			["npcID"] = 20324,
+		},
+		[44475] = {
+			["npcID"] = 24683,
+		},
+		[8005] = {
+			["npcID"] = 4404,
+		},
+		[38401] = {
+			["npcID"] = 21207,
+		},
+		[15043] = {
+			["npcID"] = 12876,
+		},
+		[38753] = {
+			["npcID"] = 19754,
+		},
+		[43996] = {
+			["npcID"] = 24529,
+		},
+		[7054] = {
+			["npcID"] = 3873,
+		},
+		[32903] = {
+			["npcID"] = 21515,
+		},
+		[6063] = {
+			["npcID"] = 4820,
+		},
+		[7098] = {
+			["npcID"] = 3276,
+		},
+		[8129] = {
+			["npcID"] = 4799,
+		},
+		[38370] = {
+			["npcID"] = 23434,
+		},
+		[8137] = {
+			["npcID"] = 6553,
+		},
+		[38498] = {
+			["npcID"] = 21050,
+		},
+		[14292] = {
+			["npcID"] = 9524,
+		},
+		[7162] = {
+			["npcID"] = 5661,
+		},
 		[31717] = {
 			["encounterName"] = "The Black Stalker",
 			["encounterID"] = 1948,
 			["npcID"] = 17882,
 		},
-		[3256] = {
-			["npcID"] = 21306,
+		[27641] = {
+			["npcID"] = 18325,
 		},
-		[15124] = {
-			["npcID"] = 17892,
+		[44189] = {
+			["encounterName"] = "Kael'thas Sunstrider",
+			["npcID"] = 24664,
+			["encounterID"] = 1894,
 		},
-		[23381] = {
-			["npcID"] = 18118,
+		[8282] = {
+			["npcID"] = 12865,
 		},
-		[37580] = {
-			["npcID"] = 19755,
+		[34119] = {
+			["npcID"] = 19502,
 		},
-		[34019] = {
-			["npcID"] = 19422,
+		[5188] = {
+			["npcID"] = 3669,
 		},
-		[14034] = {
-			["npcID"] = 17771,
+		[41440] = {
+			["npcID"] = 23441,
 		},
-		[37628] = {
-			["npcID"] = 20872,
+		[21807] = {
+			["npcID"] = 29181,
 		},
-		[15575] = {
-			["npcID"] = 8907,
+		[8362] = {
+			["encounterName"] = "Watchkeeper Gargolmar",
+			["encounterID"] = 1893,
+			["npcID"] = 17309,
 		},
-		[30615] = {
-			["npcID"] = 17478,
+		[12470] = {
+			["npcID"] = 15438,
 		},
-		[34871] = {
-			["npcID"] = 20115,
+		[3635] = {
+			["npcID"] = 4150,
+		},
+		[14532] = {
+			["npcID"] = 8933,
+		},
+		[36645] = {
+			["npcID"] = 19779,
+		},
+		[17843] = {
+			["npcID"] = 23179,
 		},
 		[15587] = {
 			["npcID"] = 4832,
 		},
-		[16102] = {
-			["npcID"] = 19797,
+		[32197] = {
+			["npcID"] = 17371,
 		},
-		[46608] = {
-			["npcID"] = 11949,
+		[12542] = {
+			["npcID"] = 21104,
 		},
-		[6530] = {
-			["npcID"] = 3461,
+		[32905] = {
+			["npcID"] = 18648,
 		},
-		[18399] = {
-			["npcID"] = 17395,
+		[22127] = {
+			["npcID"] = 13442,
 		},
-		[32364] = {
-			["encounterName"] = "Nexus-Prince Shaffar",
-			["encounterID"] = 1899,
-			["npcID"] = 18344,
+		[332] = {
+			["npcID"] = 2965,
 		},
-		[17393] = {
-			["npcID"] = 29109,
+		[52566] = {
+			["npcID"] = 28834,
 		},
-		[11016] = {
-			["npcID"] = 7247,
+		[31478] = {
+			["npcID"] = 17918,
+		},
+		[6351] = {
+			["npcID"] = 3903,
+		},
+		[44606] = {
+			["npcID"] = 24685,
+		},
+		[36486] = {
+			["npcID"] = 20798,
+		},
+		[12742] = {
+			["npcID"] = 8910,
+		},
+		[30615] = {
+			["npcID"] = 17478,
+		},
+		[33641] = {
+			["npcID"] = 18966,
 		},
 		[30695] = {
 			["encounterName"] = "Omor the Unscarred",
 			["encounterID"] = 1891,
 			["npcID"] = 17308,
 		},
-		[44479] = {
-			["npcID"] = 24684,
+		[34984] = {
+			["npcID"] = 21128,
 		},
-		[13583] = {
-			["npcID"] = 7158,
+		[13901] = {
+			["npcID"] = 19671,
 		},
-		[7057] = {
-			["npcID"] = 3875,
-		},
-		[33796] = {
-			["npcID"] = 16896,
-		},
-		[53278] = {
-			["npcID"] = 29136,
-		},
-		[14146] = {
-			["npcID"] = 6557,
-		},
-		[33844] = {
-			["npcID"] = 19294,
-		},
-		[33860] = {
-			["npcID"] = 18429,
-		},
-		[13748] = {
-			["npcID"] = 8913,
-		},
-		[15659] = {
-			["encounterName"] = "Darkweaver Syth",
-			["encounterID"] = 1903,
-			["npcID"] = 18472,
-		},
-		[44639] = {
-			["npcID"] = 24696,
-		},
-		[33924] = {
-			["npcID"] = 19424,
-		},
-		[7588] = {
-			["npcID"] = 4275,
-		},
-		[12098] = {
-			["npcID"] = 5280,
-		},
-		[39082] = {
-			["npcID"] = 22076,
-		},
-		[35010] = {
-			["encounterName"] = "Mennu the Betrayer",
-			["encounterID"] = 1939,
-			["npcID"] = 17941,
-		},
-		[33493] = {
-			["npcID"] = 18848,
-		},
-		[31472] = {
-			["encounterName"] = "Chrono Lord Deja",
-			["encounterID"] = 1920,
-			["npcID"] = 17879,
-		},
-		[9616] = {
-			["npcID"] = 18136,
-		},
-		[7489] = {
-			["npcID"] = 3927,
-		},
-		[38197] = {
+		[38245] = {
 			["encounterName"] = "Talon King Ikiss",
 			["encounterID"] = 1902,
 			["npcID"] = 18473,
 		},
-		[35234] = {
-			["npcID"] = 18137,
+		[31942] = {
+			["npcID"] = 17820,
 		},
-		[34787] = {
-			["npcID"] = 18088,
+		[34249] = {
+			["npcID"] = 19191,
+		},
+		[8858] = {
+			["npcID"] = 7607,
+		},
+		[44639] = {
+			["npcID"] = 24696,
+		},
+		[172] = {
+			["npcID"] = 3204,
+		},
+		[33642] = {
+			["npcID"] = 18969,
+		},
+		[12039] = {
+			["encounterName"] = "Watchkeeper Gargolmar",
+			["encounterID"] = 1893,
+			["npcID"] = 17309,
+		},
+		[15124] = {
+			["npcID"] = 17892,
+		},
+		[8994] = {
+			["npcID"] = 9499,
+		},
+		[31287] = {
+			["npcID"] = 18079,
+		},
+		[32358] = {
+			["encounterName"] = "Pandemonius",
+			["encounterID"] = 1900,
+			["npcID"] = 18341,
+		},
+		[32422] = {
+			["encounterName"] = "Exarch Maladaar",
+			["npcID"] = 18373,
+			["encounterID"] = 1889,
 		},
 		[15228] = {
 			["npcID"] = 11604,
@@ -10923,129 +10935,351 @@ PlaterDB = {
 		[3815] = {
 			["npcID"] = 4829,
 		},
-		[9591] = {
-			["npcID"] = 5280,
+		[700] = {
+			["npcID"] = 3671,
 		},
-		[19725] = {
-			["npcID"] = 28939,
+		[31623] = {
+			["encounterName"] = "Swamplord Musel'ek",
+			["encounterID"] = 1947,
+			["npcID"] = 17826,
 		},
-		[8129] = {
-			["npcID"] = 4799,
+		[33643] = {
+			["npcID"] = 18969,
 		},
-		[8131] = {
-			["npcID"] = 4291,
+		[707] = {
+			["npcID"] = 12319,
 		},
-		[46987] = {
-			["npcID"] = 11949,
+		[35913] = {
+			["npcID"] = 24999,
 		},
-		[15232] = {
-			["npcID"] = 18094,
+		[8259] = {
+			["npcID"] = 4438,
 		},
-		[8137] = {
-			["npcID"] = 6553,
+		[8275] = {
+			["npcID"] = 4532,
 		},
-		[13901] = {
-			["npcID"] = 19671,
+		[31975] = {
+			["npcID"] = 18113,
 		},
-		[31478] = {
-			["npcID"] = 17918,
+		[34347] = {
+			["npcID"] = 19527,
 		},
-		[7121] = {
-			["npcID"] = 3853,
+		[8363] = {
+			["npcID"] = 4803,
 		},
-		[39945] = {
-			["npcID"] = 22377,
+		[12471] = {
+			["npcID"] = 17478,
 		},
-		[17194] = {
-			["npcID"] = 22074,
+		[8435] = {
+			["npcID"] = 4831,
 		},
-		[15241] = {
-			["npcID"] = 17269,
+		[12551] = {
+			["npcID"] = 8920,
 		},
-		[20827] = {
-			["npcID"] = 1653,
-		},
-		[35394] = {
-			["npcID"] = 18129,
-		},
-		[7801] = {
-			["npcID"] = 416,
-		},
-		[20811] = {
-			["npcID"] = 10760,
-		},
-		[34931] = {
-			["npcID"] = 18331,
-		},
-		[32903] = {
-			["npcID"] = 21515,
-		},
-		[9053] = {
-			["npcID"] = 4038,
-		},
-		[38045] = {
-			["npcID"] = 21802,
-		},
-		[32197] = {
-			["npcID"] = 17371,
-		},
-		[32173] = {
-			["npcID"] = 17961,
-		},
-		[32358] = {
-			["encounterName"] = "Pandemonius",
-			["encounterID"] = 1900,
-			["npcID"] = 18341,
-		},
-		[6660] = {
-			["npcID"] = 3265,
-		},
-		[33526] = {
-			["encounterName"] = "Darkweaver Syth",
-			["encounterID"] = 1903,
-			["npcID"] = 19203,
-		},
-		[32938] = {
-			["npcID"] = 18460,
-		},
-		[35331] = {
-			["npcID"] = 18283,
-		},
-		[12258] = {
-			["npcID"] = 7342,
+		[35946] = {
+			["npcID"] = 24696,
 		},
 		[15668] = {
 			["npcID"] = 9938,
 		},
-		[34934] = {
-			["npcID"] = 18394,
+		[17174] = {
+			["npcID"] = 23177,
 		},
-		[33111] = {
-			["npcID"] = 17371,
+		[33325] = {
+			["npcID"] = 18702,
 		},
-		[11763] = {
-			["npcID"] = 416,
+		[184] = {
+			["npcID"] = 4037,
 		},
-		[56138] = {
-			["npcID"] = 16299,
+		[30633] = {
+			["encounterName"] = "Warbringer O'mrogg",
+			["encounterID"] = 1937,
+			["npcID"] = 16809,
 		},
-		[36225] = {
-			["npcID"] = 19756,
+		[53210] = {
+			["npcID"] = 29183,
 		},
-		[22121] = {
-			["npcID"] = 13359,
+		[13878] = {
+			["npcID"] = 17088,
 		},
-		[46988] = {
-			["npcID"] = 11949,
+		[7978] = {
+			["npcID"] = 19295,
+		},
+		[30937] = {
+			["npcID"] = 17653,
+		},
+		[6979] = {
+			["npcID"] = 4281,
+		},
+		[44547] = {
+			["npcID"] = 24697,
+		},
+		[15037] = {
+			["npcID"] = 9637,
+		},
+		[14030] = {
+			["npcID"] = 14375,
+		},
+		[16100] = {
+			["npcID"] = 17820,
+		},
+		[32248] = {
+			["npcID"] = 18396,
+		},
+		[44196] = {
+			["encounterName"] = "Kael'thas Sunstrider",
+			["npcID"] = 24674,
+			["encounterID"] = 1894,
+		},
+		[12096] = {
+			["npcID"] = 5271,
+		},
+		[1516] = {
+			["npcID"] = 2951,
+		},
+		[38154] = {
+			["npcID"] = 19826,
+		},
+		[6064] = {
+			["npcID"] = 4303,
+		},
+		[32424] = {
+			["encounterName"] = "Exarch Maladaar",
+			["npcID"] = 18373,
+			["encounterID"] = 1889,
+		},
+		[15245] = {
+			["npcID"] = 19354,
+		},
+		[8142] = {
+			["npcID"] = 5775,
+		},
+		[44644] = {
+			["npcID"] = 24685,
+		},
+		[33487] = {
+			["npcID"] = 18794,
+		},
+		[33551] = {
+			["encounterName"] = "Ambassador Hellmaw",
+			["encounterID"] = 1908,
+			["npcID"] = 18731,
+		},
+		[12248] = {
+			["npcID"] = 17771,
+		},
+		[31705] = {
+			["npcID"] = 18584,
+		},
+		[38858] = {
+			["npcID"] = 24938,
+		},
+		[2055] = {
+			["npcID"] = 4809,
+		},
+		[39945] = {
+			["npcID"] = 22377,
+		},
+		[5137] = {
+			["npcID"] = 21911,
+		},
+		[50335] = {
+			["npcID"] = 29115,
+		},
+		[31865] = {
+			["npcID"] = 17399,
+		},
+		[16552] = {
+			["npcID"] = 7447,
+		},
+		[8292] = {
+			["npcID"] = 4421,
+		},
+		[15493] = {
+			["npcID"] = 9056,
+		},
+		[11433] = {
+			["npcID"] = 7872,
+		},
+		[37580] = {
+			["npcID"] = 19755,
+		},
+		[7279] = {
+			["npcID"] = 3295,
+		},
+		[12528] = {
+			["npcID"] = 7352,
+		},
+		[7295] = {
+			["npcID"] = 3914,
+		},
+		[38859] = {
+			["npcID"] = 22274,
+		},
+		[13583] = {
+			["npcID"] = 7158,
+		},
+		[32329] = {
+			["npcID"] = 17871,
+		},
+		[36238] = {
+			["npcID"] = 22461,
+		},
+		[44518] = {
+			["npcID"] = 24686,
+		},
+		[6352] = {
+			["npcID"] = 3904,
+		},
+		[15797] = {
+			["npcID"] = 7448,
+		},
+		[52926] = {
+			["npcID"] = 29001,
+		},
+		[15869] = {
+			["npcID"] = 18080,
 		},
 		[9739] = {
 			["npcID"] = 18079,
 		},
-		[54318] = {
-			["npcID"] = 29337,
+		[53278] = {
+			["npcID"] = 29136,
 		},
-		[5137] = {
-			["npcID"] = 21911,
+		[5401] = {
+			["npcID"] = 3131,
+		},
+		[32914] = {
+			["npcID"] = 18437,
+		},
+		[33969] = {
+			["npcID"] = 18981,
+		},
+		[13895] = {
+			["npcID"] = 9016,
+		},
+		[21668] = {
+			["npcID"] = 13443,
+		},
+		[31914] = {
+			["encounterName"] = "Epoch Hunter",
+			["encounterID"] = 1906,
+			["npcID"] = 18096,
+		},
+		[7483] = {
+			["npcID"] = 4279,
+		},
+		[7487] = {
+			["npcID"] = 3927,
+		},
+		[44519] = {
+			["npcID"] = 24686,
+		},
+		[11921] = {
+			["npcID"] = 19016,
+		},
+		[20821] = {
+			["npcID"] = 740,
+		},
+		[11969] = {
+			["npcID"] = 4331,
+		},
+		[3256] = {
+			["npcID"] = 21306,
+		},
+		[3264] = {
+			["npcID"] = 3452,
+		},
+		[38861] = {
+			["npcID"] = 23440,
+		},
+		[32330] = {
+			["npcID"] = 17732,
+		},
+		[38094] = {
+			["npcID"] = 21979,
+		},
+		[15254] = {
+			["encounterName"] = "Nexus-Prince Shaffar",
+			["encounterID"] = 1899,
+			["npcID"] = 18431,
+		},
+		[5605] = {
+			["npcID"] = 10759,
+		},
+		[32682] = {
+			["npcID"] = 18320,
+		},
+		[31707] = {
+			["npcID"] = 510,
+		},
+		[6660] = {
+			["npcID"] = 3265,
+		},
+		[34163] = {
+			["npcID"] = 17871,
+		},
+		[421] = {
+			["npcID"] = 1062,
+		},
+		[34259] = {
+			["npcID"] = 17014,
+		},
+		[6728] = {
+			["npcID"] = 3280,
+		},
+		[32011] = {
+			["npcID"] = 20089,
+		},
+		[37488] = {
+			["npcID"] = 16951,
+		},
+		[10435] = {
+			["npcID"] = 7400,
+		},
+		[7799] = {
+			["npcID"] = 416,
+		},
+		[46983] = {
+			["npcID"] = 25040,
+		},
+		[37840] = {
+			["npcID"] = 22038,
+		},
+		[33844] = {
+			["npcID"] = 19294,
+		},
+		[48198] = {
+			["npcID"] = 31282,
+		},
+		[13608] = {
+			["npcID"] = 24819,
+		},
+		[38032] = {
+			["npcID"] = 21059,
+		},
+		[9532] = {
+			["npcID"] = 18118,
+		},
+		[32363] = {
+			["encounterName"] = "Nexus-Prince Shaffar",
+			["encounterID"] = 1899,
+			["npcID"] = 18344,
+		},
+		[11642] = {
+			["npcID"] = 4285,
+		},
+		[37361] = {
+			["npcID"] = 11838,
+		},
+		[17194] = {
+			["npcID"] = 22074,
+		},
+		[33493] = {
+			["npcID"] = 18848,
+		},
+		[11762] = {
+			["npcID"] = 416,
 		},
 		[25602] = {
 			["npcID"] = 19306,
@@ -11053,463 +11287,227 @@ PlaterDB = {
 		[17434] = {
 			["npcID"] = 29109,
 		},
-		[39419] = {
-			["npcID"] = 18213,
+		[7951] = {
+			["npcID"] = 5756,
 		},
-		[32888] = {
-			["npcID"] = 18506,
+		[38033] = {
+			["npcID"] = 25073,
 		},
-		[39068] = {
-			["npcID"] = 22375,
+		[7967] = {
+			["npcID"] = 3654,
+		},
+		[47496] = {
+			["npcID"] = 26125,
+		},
+		[36275] = {
+			["npcID"] = 21104,
+		},
+		[13952] = {
+			["npcID"] = 4280,
+		},
+		[16006] = {
+			["npcID"] = 13236,
+		},
+		[11922] = {
+			["npcID"] = 5481,
+		},
+		[10915] = {
+			["npcID"] = 8127,
+		},
+		[20823] = {
+			["npcID"] = 20159,
+		},
+		[11962] = {
+			["npcID"] = 19411,
+		},
+		[11970] = {
+			["npcID"] = 11520,
+		},
+		[33526] = {
+			["encounterName"] = "Darkweaver Syth",
+			["encounterID"] = 1903,
+			["npcID"] = 19203,
+		},
+		[11986] = {
+			["npcID"] = 18077,
+		},
+		[16102] = {
+			["npcID"] = 19797,
+		},
+		[15095] = {
+			["npcID"] = 9024,
+		},
+		[26098] = {
+			["npcID"] = 18450,
+		},
+		[12058] = {
+			["npcID"] = 18080,
+		},
+		[33910] = {
+			["npcID"] = 16906,
+		},
+		[52356] = {
+			["npcID"] = 28768,
+		},
+		[33974] = {
+			["npcID"] = 18827,
+		},
+		[12098] = {
+			["npcID"] = 5280,
+		},
+		[9053] = {
+			["npcID"] = 4038,
+		},
+		[33111] = {
+			["npcID"] = 17371,
+		},
+		[11131] = {
+			["npcID"] = 7273,
+		},
+		[8131] = {
+			["npcID"] = 4291,
 		},
 		[33335] = {
 			["encounterName"] = "Grandmaster Vorpil",
 			["encounterID"] = 1911,
 			["npcID"] = 18634,
 		},
-		[421] = {
-			["npcID"] = 1062,
+		[7124] = {
+			["npcID"] = 2529,
 		},
-		[8246] = {
-			["npcID"] = 4119,
-		},
-		[31287] = {
-			["npcID"] = 18079,
-		},
-		[33910] = {
-			["npcID"] = 16906,
-		},
-		[32325] = {
-			["encounterName"] = "Pandemonius",
-			["encounterID"] = 1900,
-			["npcID"] = 18341,
-		},
-		[16429] = {
-			["npcID"] = 18401,
-		},
-		[72898] = {
-			["npcID"] = 37994,
-		},
-		[33974] = {
-			["npcID"] = 18827,
-		},
-		[13895] = {
-			["npcID"] = 9016,
-		},
-		[13899] = {
-			["npcID"] = 9017,
-		},
-		[38110] = {
-			["npcID"] = 19428,
-		},
-		[8286] = {
-			["npcID"] = 4424,
-		},
-		[26098] = {
-			["npcID"] = 18450,
-		},
-		[17435] = {
-			["npcID"] = 29109,
-		},
-		[5187] = {
-			["npcID"] = 3671,
-		},
-		[11899] = {
-			["npcID"] = 5650,
-		},
-		[15620] = {
-			["npcID"] = 17815,
-		},
-		[16588] = {
-			["npcID"] = 17084,
-		},
-		[38238] = {
-			["npcID"] = 19428,
-		},
-		[59716] = {
-			["npcID"] = 4949,
-		},
-		[35204] = {
-			["npcID"] = 18116,
-		},
-		[12039] = {
-			["encounterName"] = "Watchkeeper Gargolmar",
-			["encounterID"] = 1893,
-			["npcID"] = 17309,
-		},
-		[6728] = {
-			["npcID"] = 3280,
-		},
-		[29427] = {
-			["npcID"] = 17730,
-		},
-		[31942] = {
-			["npcID"] = 17820,
-		},
-		[38861] = {
-			["npcID"] = 23440,
-		},
-		[35316] = {
-			["npcID"] = 18286,
-		},
-		[41448] = {
-			["npcID"] = 23441,
-		},
-		[12470] = {
-			["npcID"] = 15438,
-		},
-		[3396] = {
-			["npcID"] = 2350,
-		},
-		[8362] = {
-			["encounterName"] = "Watchkeeper Gargolmar",
-			["encounterID"] = 1893,
-			["npcID"] = 17309,
-		},
-		[32905] = {
-			["npcID"] = 18648,
-		},
-		[34119] = {
-			["npcID"] = 19502,
-		},
-		[7289] = {
-			["npcID"] = 20115,
-		},
-		[12466] = {
-			["npcID"] = 18934,
-		},
-		[37488] = {
-			["npcID"] = 16951,
-		},
-		[53345] = {
-			["npcID"] = 29102,
+		[23381] = {
+			["npcID"] = 18118,
 		},
 		[33527] = {
 			["encounterName"] = "Darkweaver Syth",
 			["encounterID"] = 1903,
 			["npcID"] = 19205,
 		},
-		[15037] = {
-			["npcID"] = 9637,
+		[12258] = {
+			["npcID"] = 7342,
+		},
+		[30686] = {
+			["encounterName"] = "Omor the Unscarred",
+			["encounterID"] = 1891,
+			["npcID"] = 17308,
+		},
+		[13321] = {
+			["npcID"] = 17401,
+		},
+		[17435] = {
+			["npcID"] = 29109,
+		},
+		[37939] = {
+			["npcID"] = 21102,
+		},
+		[53348] = {
+			["npcID"] = 29102,
+		},
+		[8246] = {
+			["npcID"] = 4119,
 		},
 		[33975] = {
 			["npcID"] = 19191,
 		},
-		[6778] = {
-			["npcID"] = 3673,
+		[3606] = {
+			["npcID"] = 2523,
 		},
-		[7279] = {
-			["npcID"] = 3295,
+		[8286] = {
+			["npcID"] = 4424,
 		},
-		[6257] = {
-			["npcID"] = 3375,
+		[16588] = {
+			["npcID"] = 17084,
+		},
+		[36277] = {
+			["npcID"] = 21148,
+		},
+		[15495] = {
+			["npcID"] = 8899,
+		},
+		[2601] = {
+			["npcID"] = 4300,
+		},
+		[20792] = {
+			["npcID"] = 3717,
+		},
+		[12466] = {
+			["npcID"] = 18934,
+		},
+		[10436] = {
+			["npcID"] = 7402,
 		},
 		[33528] = {
 			["encounterName"] = "Darkweaver Syth",
 			["encounterID"] = 1903,
 			["npcID"] = 19204,
 		},
-		[31623] = {
-			["encounterName"] = "Swamplord Musel'ek",
-			["encounterID"] = 1947,
-			["npcID"] = 17826,
-		},
-		[8422] = {
-			["npcID"] = 4289,
-		},
-		[8398] = {
-			["npcID"] = 4978,
-		},
-		[7800] = {
-			["npcID"] = 416,
-		},
-		[30633] = {
-			["encounterName"] = "Warbringer O'mrogg",
-			["encounterID"] = 1937,
-			["npcID"] = 16809,
+		[6257] = {
+			["npcID"] = 3375,
 		},
 		[33624] = {
 			["npcID"] = 18949,
 		},
-		[7295] = {
-			["npcID"] = 3914,
+		[17883] = {
+			["npcID"] = 18312,
 		},
-		[31407] = {
-			["npcID"] = 17729,
+		[5262] = {
+			["npcID"] = 3197,
 		},
-		[36227] = {
-			["npcID"] = 20887,
+		[34871] = {
+			["npcID"] = 20115,
 		},
-		[12542] = {
-			["npcID"] = 21104,
+		[9573] = {
+			["npcID"] = 9537,
 		},
-		[35236] = {
-			["npcID"] = 20324,
+		[9613] = {
+			["npcID"] = 19411,
 		},
-		[36275] = {
-			["npcID"] = 21104,
+		[53765] = {
+			["npcID"] = 28471,
 		},
-		[11021] = {
-			["npcID"] = 4324,
+		[13745] = {
+			["npcID"] = 8913,
 		},
-		[37840] = {
-			["npcID"] = 22038,
-		},
-		[44577] = {
-			["npcID"] = 24815,
-		},
-		[37361] = {
-			["npcID"] = 11838,
-		},
-		[8282] = {
-			["npcID"] = 12865,
-		},
-		[44547] = {
-			["npcID"] = 24697,
-		},
-		[38094] = {
-			["npcID"] = 21979,
-		},
-		[35892] = {
-			["npcID"] = 24972,
-		},
-		[13608] = {
-			["npcID"] = 24819,
-		},
-		[32858] = {
-			["npcID"] = 18493,
-		},
-		[21068] = {
-			["npcID"] = 18094,
-		},
-		[9532] = {
-			["npcID"] = 18118,
-		},
-		[33417] = {
-			["npcID"] = 18949,
-		},
-		[38032] = {
-			["npcID"] = 21059,
-		},
-		[52356] = {
-			["npcID"] = 28768,
-		},
-		[44196] = {
-			["encounterName"] = "Kael'thas Sunstrider",
-			["npcID"] = 24674,
-			["encounterID"] = 1894,
-		},
-		[40124] = {
-			["npcID"] = 23090,
-		},
-		[707] = {
-			["npcID"] = 12319,
-		},
-		[25530] = {
-			["npcID"] = 15480,
+		[35511] = {
+			["npcID"] = 23177,
 		},
 		[33529] = {
 			["encounterName"] = "Darkweaver Syth",
 			["encounterID"] = 1903,
 			["npcID"] = 19206,
 		},
-		[44276] = {
-			["encounterName"] = "Priestess Delrissa",
-			["encounterID"] = 1895,
-			["npcID"] = 24556,
+		[18395] = {
+			["npcID"] = 7246,
 		},
-		[22887] = {
-			["npcID"] = 17729,
+		[38030] = {
+			["npcID"] = 19784,
 		},
-		[959] = {
-			["npcID"] = 4427,
+		[8399] = {
+			["npcID"] = 4832,
 		},
-		[7125] = {
-			["npcID"] = 4274,
+		[16429] = {
+			["npcID"] = 18401,
 		},
-		[32422] = {
-			["encounterName"] = "Exarch Maladaar",
-			["npcID"] = 18373,
-			["encounterID"] = 1889,
-		},
-		[35329] = {
-			["npcID"] = 18133,
-		},
-		[33641] = {
-			["npcID"] = 18966,
-		},
-		[700] = {
-			["npcID"] = 3671,
-		},
-		[32063] = {
-			["npcID"] = 18716,
-		},
-		[13692] = {
-			["npcID"] = 9163,
-		},
-		[30937] = {
-			["npcID"] = 17653,
-		},
-		[35325] = {
-			["npcID"] = 20198,
-		},
-		[31975] = {
-			["npcID"] = 18113,
-		},
-		[6351] = {
-			["npcID"] = 3903,
-		},
-		[15245] = {
-			["npcID"] = 19354,
-		},
-		[44224] = {
-			["encounterName"] = "Kael'thas Sunstrider",
-			["npcID"] = 24664,
-			["encounterID"] = 1894,
-		},
-		[38400] = {
-			["npcID"] = 22122,
-		},
-		[184] = {
-			["npcID"] = 4037,
-		},
-		[34344] = {
-			["npcID"] = 19527,
-		},
-		[7896] = {
-			["npcID"] = 4288,
-		},
-		[4979] = {
-			["npcID"] = 3263,
-		},
-		[34259] = {
-			["npcID"] = 17014,
-		},
-		[20813] = {
-			["npcID"] = 10760,
-		},
-		[20821] = {
-			["npcID"] = 740,
-		},
-		[20829] = {
-			["npcID"] = 8551,
-		},
-		[38033] = {
-			["npcID"] = 25073,
-		},
-		[33961] = {
-			["npcID"] = 18318,
-		},
-		[12742] = {
-			["npcID"] = 8910,
-		},
-		[9435] = {
-			["npcID"] = 6487,
-		},
-		[15305] = {
-			["npcID"] = 8983,
-		},
-		[13878] = {
-			["npcID"] = 17088,
-		},
-		[57547] = {
-			["npcID"] = 31095,
-		},
-		[4971] = {
-			["npcID"] = 4440,
-		},
-		[20826] = {
-			["npcID"] = 5617,
-		},
-		[17843] = {
-			["npcID"] = 23179,
-		},
-		[45101] = {
-			["npcID"] = 24979,
-		},
-		[8365] = {
-			["npcID"] = 4812,
-		},
-		[47496] = {
-			["npcID"] = 26125,
-		},
-		[33642] = {
-			["npcID"] = 18969,
-		},
-		[17883] = {
-			["npcID"] = 18312,
-		},
-		[7484] = {
-			["npcID"] = 4279,
-		},
-		[38107] = {
-			["npcID"] = 19754,
-		},
-		[15547] = {
-			["npcID"] = 18501,
-		},
-		[36277] = {
-			["npcID"] = 21148,
-		},
-		[13321] = {
-			["npcID"] = 17401,
-		},
-		[7948] = {
-			["npcID"] = 5761,
-		},
-		[48198] = {
-			["npcID"] = 31282,
-		},
-		[7952] = {
-			["npcID"] = 3638,
-		},
-		[11762] = {
-			["npcID"] = 416,
-		},
-		[5401] = {
-			["npcID"] = 3131,
-		},
-		[5403] = {
-			["npcID"] = 2624,
-		},
-		[11986] = {
-			["npcID"] = 18077,
-		},
-		[8259] = {
-			["npcID"] = 4438,
-		},
-		[32860] = {
+		[32858] = {
 			["npcID"] = 18493,
 		},
-		[20793] = {
-			["npcID"] = 3269,
+		[15241] = {
+			["npcID"] = 17269,
 		},
-		[32011] = {
-			["npcID"] = 20089,
+		[7068] = {
+			["npcID"] = 3887,
 		},
-		[53348] = {
-			["npcID"] = 29102,
+		[34233] = {
+			["npcID"] = 17014,
 		},
-		[6950] = {
-			["npcID"] = 3268,
+		[9616] = {
+			["npcID"] = 18136,
 		},
-		[34984] = {
-			["npcID"] = 21128,
+		[6254] = {
+			["npcID"] = 3674,
 		},
-		[35511] = {
-			["npcID"] = 23177,
-		},
-		[7978] = {
-			["npcID"] = 19295,
-		},
-		[13900] = {
-			["npcID"] = 9017,
-		},
-		[9574] = {
-			["npcID"] = 18794,
-		},
-		[32914] = {
-			["npcID"] = 18437,
+		[32938] = {
+			["npcID"] = 18460,
 		},
 		[12890] = {
 			["npcID"] = 5709,
@@ -11517,147 +11515,530 @@ PlaterDB = {
 		[8806] = {
 			["npcID"] = 3258,
 		},
-		[36645] = {
-			["npcID"] = 19779,
+		[34934] = {
+			["npcID"] = 18394,
 		},
-		[7481] = {
-			["npcID"] = 4279,
+		[36247] = {
+			["npcID"] = 22323,
 		},
-		[7483] = {
-			["npcID"] = 4279,
+		[36279] = {
+			["npcID"] = 21148,
 		},
-		[16590] = {
-			["npcID"] = 8551,
+		[35892] = {
+			["npcID"] = 24972,
 		},
-		[38753] = {
-			["npcID"] = 19754,
+		[7106] = {
+			["npcID"] = 3854,
 		},
-		[8000] = {
-			["npcID"] = 4038,
-		},
-		[53210] = {
-			["npcID"] = 29183,
-		},
-		[6982] = {
-			["npcID"] = 2963,
-		},
-		[13952] = {
-			["npcID"] = 4280,
-		},
-		[33643] = {
-			["npcID"] = 18969,
-		},
-		[15493] = {
-			["npcID"] = 9056,
-		},
-		[15497] = {
-			["npcID"] = 17963,
-		},
-		[38370] = {
-			["npcID"] = 23434,
-		},
-		[33787] = {
-			["npcID"] = 17962,
-		},
-		[12492] = {
-			["npcID"] = 5710,
-		},
-		[50335] = {
-			["npcID"] = 29115,
-		},
-		[33324] = {
-			["npcID"] = 18500,
-		},
-		[37939] = {
-			["npcID"] = 21102,
-		},
-		[10436] = {
-			["npcID"] = 7402,
-		},
-		[3635] = {
-			["npcID"] = 4150,
-		},
-		[38498] = {
-			["npcID"] = 21050,
-		},
-		[14515] = {
-			["npcID"] = 4428,
-		},
-		[36486] = {
-			["npcID"] = 20798,
-		},
-		[10435] = {
-			["npcID"] = 7400,
-		},
-		[8292] = {
-			["npcID"] = 4421,
-		},
-		[8040] = {
-			["npcID"] = 3840,
-		},
-		[12491] = {
-			["npcID"] = 7795,
-		},
-		[32829] = {
-			["npcID"] = 18501,
-		},
-		[11829] = {
-			["npcID"] = 16905,
-		},
-		[37847] = {
-			["npcID"] = 24979,
-		},
-		[22938] = {
-			["npcID"] = 19671,
-		},
-		[16552] = {
-			["npcID"] = 7447,
-		},
-		[32129] = {
-			["npcID"] = 18328,
-		},
-		[15585] = {
-			["npcID"] = 17730,
-		},
-		[8435] = {
-			["npcID"] = 4831,
-		},
-		[30643] = {
-			["encounterName"] = "Watchkeeper Gargolmar",
-			["encounterID"] = 1893,
-			["npcID"] = 17309,
-		},
-		[7132] = {
-			["npcID"] = 3863,
-		},
-		[18395] = {
-			["npcID"] = 7246,
-		},
-		[17174] = {
-			["npcID"] = 23177,
+		[939] = {
+			["npcID"] = 4096,
 		},
 		[6535] = {
 			["npcID"] = 3273,
 		},
-		[31705] = {
-			["npcID"] = 18584,
+		[20793] = {
+			["npcID"] = 3269,
+		},
+		[15620] = {
+			["npcID"] = 17815,
+		},
+		[20825] = {
+			["npcID"] = 1564,
+		},
+		[22887] = {
+			["npcID"] = 17729,
+		},
+		[3396] = {
+			["npcID"] = 2350,
+		},
+		[8422] = {
+			["npcID"] = 4289,
+		},
+		[14033] = {
+			["npcID"] = 9018,
+		},
+		[20791] = {
+			["npcID"] = 11324,
+		},
+		[7132] = {
+			["npcID"] = 3863,
+		},
+		[53345] = {
+			["npcID"] = 29102,
+		},
+		[15575] = {
+			["npcID"] = 8907,
+		},
+		[41448] = {
+			["npcID"] = 23441,
+		},
+		[33324] = {
+			["npcID"] = 18500,
+		},
+		[11899] = {
+			["npcID"] = 5650,
+		},
+		[35316] = {
+			["npcID"] = 18286,
+		},
+		[35204] = {
+			["npcID"] = 18116,
+		},
+		[31405] = {
+			["npcID"] = 17771,
+		},
+		[113] = {
+			["npcID"] = 4516,
+		},
+		[4971] = {
+			["npcID"] = 4440,
+		},
+		[3110] = {
+			["npcID"] = 416,
+		},
+		[7588] = {
+			["npcID"] = 4275,
+		},
+		[27267] = {
+			["npcID"] = 416,
+		},
+		[35331] = {
+			["npcID"] = 18283,
+		},
+		[6982] = {
+			["npcID"] = 2963,
+		},
+		[31407] = {
+			["npcID"] = 17729,
+		},
+		[37788] = {
+			["npcID"] = 21797,
+		},
+		[11763] = {
+			["npcID"] = 416,
+		},
+		[33417] = {
+			["npcID"] = 18949,
+		},
+		[15232] = {
+			["npcID"] = 18094,
+		},
+		[36225] = {
+			["npcID"] = 19756,
+		},
+		[6605] = {
+			["npcID"] = 9166,
+		},
+		[32173] = {
+			["npcID"] = 17961,
+		},
+		[8004] = {
+			["npcID"] = 3434,
+		},
+		[20298] = {
+			["npcID"] = 31096,
+		},
+		[38197] = {
+			["encounterName"] = "Talon King Ikiss",
+			["encounterID"] = 1902,
+			["npcID"] = 18473,
+		},
+		[56138] = {
+			["npcID"] = 16299,
+		},
+		[20800] = {
+			["npcID"] = 11518,
+		},
+		[7761] = {
+			["npcID"] = 1866,
+		},
+		[959] = {
+			["npcID"] = 4427,
+		},
+		[46988] = {
+			["npcID"] = 11949,
+		},
+		[34931] = {
+			["npcID"] = 18331,
+		},
+		[19725] = {
+			["npcID"] = 28939,
+		},
+		[46987] = {
+			["npcID"] = 11949,
+		},
+		[43133] = {
+			["npcID"] = 4378,
+		},
+		[37847] = {
+			["npcID"] = 24979,
+		},
+		[13322] = {
+			["npcID"] = 2964,
+		},
+		[34842] = {
+			["npcID"] = 16975,
+		},
+		[35325] = {
+			["npcID"] = 20198,
+		},
+		[10277] = {
+			["npcID"] = 18452,
+		},
+		[44224] = {
+			["encounterName"] = "Kael'thas Sunstrider",
+			["npcID"] = 24664,
+			["encounterID"] = 1894,
+		},
+		[6685] = {
+			["npcID"] = 7155,
+		},
+		[46024] = {
+			["encounterName"] = "Priestess Delrissa",
+			["encounterID"] = 1895,
+			["npcID"] = 24556,
+		},
+		[7952] = {
+			["npcID"] = 3638,
+		},
+		[32370] = {
+			["encounterName"] = "Nexus-Prince Shaffar",
+			["encounterID"] = 1899,
+			["npcID"] = 18430,
+		},
+		[15659] = {
+			["encounterName"] = "Darkweaver Syth",
+			["encounterID"] = 1903,
+			["npcID"] = 18472,
+		},
+		[52521] = {
+			["npcID"] = 28658,
+		},
+		[6917] = {
+			["npcID"] = 19350,
+		},
+		[16590] = {
+			["npcID"] = 8551,
+		},
+		[6350] = {
+			["npcID"] = 3902,
+		},
+		[8398] = {
+			["npcID"] = 4978,
+		},
+		[6725] = {
+			["npcID"] = 7335,
+		},
+		[44479] = {
+			["npcID"] = 24684,
+		},
+		[11016] = {
+			["npcID"] = 7247,
+		},
+		[15611] = {
+			["npcID"] = 8928,
+		},
+		[20794] = {
+			["npcID"] = 3263,
+		},
+		[32063] = {
+			["npcID"] = 18716,
+		},
+		[20826] = {
+			["npcID"] = 5617,
+		},
+		[34344] = {
+			["npcID"] = 19527,
+		},
+		[44577] = {
+			["npcID"] = 24815,
+		},
+		[12491] = {
+			["npcID"] = 7795,
+		},
+		[33501] = {
+			["npcID"] = 18848,
+		},
+		[9435] = {
+			["npcID"] = 6487,
+		},
+		[32325] = {
+			["encounterName"] = "Pandemonius",
+			["encounterID"] = 1900,
+			["npcID"] = 18341,
+		},
+		[7800] = {
+			["npcID"] = 416,
+		},
+		[7896] = {
+			["npcID"] = 4288,
+		},
+		[11443] = {
+			["npcID"] = 7337,
+		},
+		[8365] = {
+			["npcID"] = 4812,
+		},
+		[15982] = {
+			["npcID"] = 18069,
+		},
+		[33961] = {
+			["npcID"] = 18318,
+		},
+		[32829] = {
+			["npcID"] = 18501,
+		},
+		[31472] = {
+			["encounterName"] = "Chrono Lord Deja",
+			["encounterID"] = 1920,
+			["npcID"] = 17879,
+		},
+		[33916] = {
+			["npcID"] = 16975,
+		},
+		[31948] = {
+			["encounterName"] = "Rokmar the Crackler",
+			["encounterID"] = 1941,
+			["npcID"] = 17991,
+		},
+		[22121] = {
+			["npcID"] = 13359,
+		},
+		[38110] = {
+			["npcID"] = 19428,
+		},
+		[32364] = {
+			["encounterName"] = "Nexus-Prince Shaffar",
+			["encounterID"] = 1899,
+			["npcID"] = 18344,
+		},
+		[16498] = {
+			["npcID"] = 7442,
+		},
+		[15547] = {
+			["npcID"] = 18501,
+		},
+		[9574] = {
+			["npcID"] = 18794,
+		},
+		[35195] = {
+			["npcID"] = 18121,
+		},
+		[14900] = {
+			["npcID"] = 4424,
+		},
+		[39082] = {
+			["npcID"] = 22076,
+		},
+		[12675] = {
+			["npcID"] = 9041,
+		},
+		[11431] = {
+			["npcID"] = 7874,
+		},
+		[46608] = {
+			["npcID"] = 11949,
+		},
+		[56147] = {
+			["npcID"] = 16298,
+		},
+		[7484] = {
+			["npcID"] = 4279,
+		},
+		[20299] = {
+			["npcID"] = 24696,
+		},
+		[1090] = {
+			["npcID"] = 3678,
+		},
+		[43135] = {
+			["npcID"] = 4394,
+		},
+		[12739] = {
+			["npcID"] = 17371,
+		},
+		[12747] = {
+			["npcID"] = 3261,
+		},
+		[20801] = {
+			["npcID"] = 18641,
+		},
+		[5781] = {
+			["npcID"] = 2958,
+		},
+		[31516] = {
+			["npcID"] = 21285,
+		},
+		[33793] = {
+			["encounterName"] = "Vazruden the Herald",
+			["encounterID"] = 1892,
+			["npcID"] = 17307,
+		},
+		[6909] = {
+			["npcID"] = 5475,
+		},
+		[32735] = {
+			["npcID"] = 16946,
+		},
+		[9734] = {
+			["npcID"] = 3386,
+		},
+		[40062] = {
+			["npcID"] = 17414,
+		},
+		[7948] = {
+			["npcID"] = 5761,
+		},
+		[37945] = {
+			["npcID"] = 21462,
+		},
+		[39000] = {
+			["npcID"] = 22095,
+		},
+		[30853] = {
+			["npcID"] = 17395,
+		},
+		[38045] = {
+			["npcID"] = 21802,
+		},
+		[11836] = {
+			["npcID"] = 7273,
+		},
+		[32860] = {
+			["npcID"] = 18493,
+		},
+		[6984] = {
+			["npcID"] = 4531,
+		},
+		[33787] = {
+			["npcID"] = 17962,
+		},
+		[44538] = {
+			["npcID"] = 24698,
+		},
+		[59716] = {
+			["npcID"] = 4949,
+		},
+		[7992] = {
+			["npcID"] = 3277,
+		},
+		[33711] = {
+			["encounterName"] = "Murmur",
+			["encounterID"] = 1910,
+			["npcID"] = 18708,
+		},
+		[8000] = {
+			["npcID"] = 4038,
+		},
+		[38361] = {
+			["npcID"] = 21102,
+		},
+		[45336] = {
+			["npcID"] = 24972,
+		},
+		[51963] = {
+			["npcID"] = 27829,
+		},
+		[23337] = {
+			["npcID"] = 4624,
+		},
+		[8376] = {
+			["npcID"] = 4440,
+		},
+		[20811] = {
+			["npcID"] = 10760,
+		},
+		[20827] = {
+			["npcID"] = 1653,
+		},
+		[12492] = {
+			["npcID"] = 5710,
+		},
+		[33502] = {
+			["encounterName"] = "Grandmaster Vorpil",
+			["npcID"] = 18639,
+		},
+		[8040] = {
+			["npcID"] = 3840,
+		},
+		[14034] = {
+			["npcID"] = 17771,
+		},
+		[4979] = {
+			["npcID"] = 3263,
+		},
+		[16561] = {
+			["npcID"] = 20270,
+		},
+		[22907] = {
+			["encounterName"] = "Swamplord Musel'ek",
+			["encounterID"] = 1947,
+			["npcID"] = 17826,
+		},
+		[32129] = {
+			["npcID"] = 18328,
+		},
+		[16340] = {
+			["npcID"] = 10661,
+		},
+		[32888] = {
+			["npcID"] = 18506,
+		},
+		[11021] = {
+			["npcID"] = 4324,
+		},
+		[15785] = {
+			["npcID"] = 19306,
+		},
+		[7057] = {
+			["npcID"] = 3875,
+		},
+		[48208] = {
+			["npcID"] = 27169,
+		},
+		[15242] = {
+			["npcID"] = 17477,
+		},
+		[11829] = {
+			["npcID"] = 16905,
+		},
+		[44504] = {
+			["npcID"] = 24690,
+		},
+		[14146] = {
+			["npcID"] = 6557,
+		},
+		[44276] = {
+			["encounterName"] = "Priestess Delrissa",
+			["encounterID"] = 1895,
+			["npcID"] = 24556,
 		},
 		[31713] = {
 			["npcID"] = 4292,
 		},
-		[44599] = {
-			["npcID"] = 24687,
-		},
-		[30707] = {
-			["encounterName"] = "Omor the Unscarred",
-			["encounterID"] = 1891,
-			["npcID"] = 17308,
-		},
-		[32248] = {
-			["npcID"] = 18396,
+		[30851] = {
+			["npcID"] = 17395,
 		},
 		[45046] = {
 			["npcID"] = 25033,
+		},
+		[38467] = {
+			["npcID"] = 21648,
+		},
+		[45101] = {
+			["npcID"] = 24979,
+		},
+		[6778] = {
+			["npcID"] = 3673,
+		},
+		[29427] = {
+			["npcID"] = 17730,
+		},
+		[34302] = {
+			["npcID"] = 16975,
+		},
+		[15530] = {
+			["npcID"] = 19258,
 		},
 	},
 }

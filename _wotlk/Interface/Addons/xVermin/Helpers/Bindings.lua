@@ -57,7 +57,7 @@ local function FixBindings()
 		SetBinding('F9', 'NONE', 2)
 	else
 		SetBinding('SHIFT-MOUSEWHEELUP', 'ACTIONBUTTON9', 1)
-		SetBinding('F9', 'ACTIONBUTTON8', 2)
+		SetBinding('F9', 'ACTIONBUTTON9', 2)
 	end
 
 	SetBinding('TAB', 'ACTIONBUTTON10', 1)

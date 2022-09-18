@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 5806,
+	["session"] = 5810,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -2833,21 +2833,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [363]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'ArenaEnemyFrames:ClearAllPoints()'.",
-			["time"] = "2022/04/11 12:01:06",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:2525: in function `UIParentManageFramePositions'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:1831: in function <Interface_TBC\\FrameXML\\UIParent.lua:1818>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:2550: in function <Interface_TBC\\FrameXML\\UIParent.lua:2548>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\StanceBar.lua\"]:43: in function `StanceBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:56: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
-			["session"] = 5801,
-			["counter"] = 19,
-		}, -- [364]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'whoaThickFrames_BCC' tried to call the protected function 'CompactPartyFrameMember2:Show()'.",
 			["time"] = "2022/06/02 20:31:55",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\FrameXML\\CompactUnitFrame.lua\"]:359: in function `CompactUnitFrame_UpdateVisible'\n[string \"@Interface\\FrameXML\\CompactUnitFrame.lua\"]:292: in function <Interface\\FrameXML\\CompactUnitFrame.lua:290>\n[string \"=[C]\"]: in function `CompactUnitFrame_UpdateAll'\n[string \"@Interface\\FrameXML\\CompactUnitFrame.lua\"]:125: in function <Interface\\FrameXML\\CompactUnitFrame.lua:53>\n[string \"=[C]\"]: ?",
 			["session"] = 5801,
 			["counter"] = 3,
-		}, -- [365]
+		}, -- [364]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'nBuff' tried to call the protected function 'ArenaEnemyFrames:ClearAllPoints()'.",
 			["time"] = "2022/09/11 15:14:51",
@@ -2855,7 +2847,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface_Wrath\\FrameXML\\UIParent.lua\"]:2637: in function `UIParentManageFramePositions'\n[string \"@Interface_Wrath\\FrameXML\\UIParent.lua\"]:1937: in function <Interface_Wrath\\FrameXML\\UIParent.lua:1924>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface_Wrath\\FrameXML\\UIParent.lua\"]:2673: in function <Interface_Wrath\\FrameXML\\UIParent.lua:2671>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UIParent_ManageFramePositions'\n[string \"@Interface\\AddOns\\Blizzard_UIWidgets\\Blizzard_UIWidgetBelowMinimapFrame.lua\"]:25: in function `layoutFunc'\n[string \"@Interface\\AddOns\\Blizzard_UIWidgets\\Blizzard_UIWidgetManager.lua\"]:225: in function `UpdateWidgetSetContainerLayout'\n[string \"@Interface\\AddOns\\Blizzard_UIWidgets\\Blizzard_UIWidgetManager.lua\"]:318: in function `ProcessWidgetSet'\n[string \"@Interface\\AddOns\\Blizzard_UIWidgets\\Blizzard_UIWidgetManager.lua\"]:340: in function `UpdateAllWidgets'\n[string \"@Interface\\AddOns\\Blizzard_UIWidgets\\Blizzard_UIWidgetManager.lua\"]:33: in function <...dOns\\Blizzard_UIWidgets\\Blizzard_UIWidgetManager.lua:31>",
 			["session"] = 5801,
 			["counter"] = 3,
-		}, -- [366]
+		}, -- [365]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:29: CreateMacro() failed, no name specified",
 			["time"] = "2022/09/17 18:07:46",
@@ -2863,7 +2855,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `CreateMacro'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/BestFood.lua\"]:29: in function <Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:26>\n[string \"@Interface\\AddOns\\xVermin\\Helpers/BestFood.lua\"]:159: in function `UpdateMacros'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/BestFood.lua\"]:52: in function <Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:47>",
 			["session"] = 5803,
 			["counter"] = 2,
-		}, -- [367]
+		}, -- [366]
 		{
 			["message"] = "[string \"CastingBarFrameBorder:SetWidth(400)\"]:1: attempt to index global 'CastingBarFrameBorder' (a nil value)",
 			["time"] = "2022/09/17 18:14:30",
@@ -2871,6 +2863,29 @@ BugGrabberDB = {
 			["stack"] = "[string \"CastingBarFrameBorder:SetWidth(400)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 5805,
 			["counter"] = 1,
+		}, -- [367]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'ArenaEnemyFrames:ClearAllPoints()'.",
+			["time"] = "2022/04/11 12:01:06",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:2525: in function `UIParentManageFramePositions'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:1831: in function <Interface_TBC\\FrameXML\\UIParent.lua:1818>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface_TBC\\FrameXML\\UIParent.lua\"]:2550: in function <Interface_TBC\\FrameXML\\UIParent.lua:2548>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\StanceBar.lua\"]:43: in function `StanceBar_Update'\n[string \"@Interface\\FrameXML\\ActionBarController.lua\"]:56: in function <Interface\\FrameXML\\ActionBarController.lua:34>",
+			["session"] = 5808,
+			["counter"] = 20,
 		}, -- [368]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'whoaThickFrames_BCC' tried to call the protected function 'CompactRaidGroup1Member2:Show()'.",
+			["time"] = "2022/09/18 10:37:23",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_Wrath\\FrameXML\\CompactUnitFrame.lua\"]:358: in function `CompactUnitFrame_UpdateVisible'\n[string \"@Interface_Wrath\\FrameXML\\CompactUnitFrame.lua\"]:291: in function <Interface_Wrath\\FrameXML\\CompactUnitFrame.lua:289>\n[string \"=[C]\"]: in function `CompactUnitFrame_UpdateAll'\n[string \"@Interface_Wrath\\FrameXML\\CompactUnitFrame.lua\"]:124: in function <Interface_Wrath\\FrameXML\\CompactUnitFrame.lua:53>\n[string \"=[C]\"]: ?",
+			["session"] = 5808,
+			["counter"] = 1,
+		}, -- [369]
+		{
+			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'Questie' tried to call the protected function 'UNKNOWN()'.",
+			["time"] = "2022/09/18 11:48:46",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseItemByName'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:1150: in function `SecureCmdUseItem'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:412: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function <Interface\\FrameXML\\SecureTemplates.lua:569>",
+			["session"] = 5810,
+			["counter"] = 1,
+		}, -- [370]
 	},
 }
