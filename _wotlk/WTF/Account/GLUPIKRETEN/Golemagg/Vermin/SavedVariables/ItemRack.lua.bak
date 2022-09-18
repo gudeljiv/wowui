@@ -11,7 +11,6 @@ ItemRackUser = {
 	["Sets"] = {
 		["~CombatQueue"] = {
 			["equip"] = {
-				"30721::::::::70:::::::::", -- [1]
 			},
 		},
 		["dps"] = {
@@ -52,7 +51,6 @@ ItemRackUser = {
 	["CurrentSet"] = "dps",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
-		["28041"] = 5,
 	},
 	["Events"] = {
 		["Enabled"] = {
