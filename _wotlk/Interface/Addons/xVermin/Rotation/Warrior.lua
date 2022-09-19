@@ -83,12 +83,13 @@ local _, xVermin = ...
 -- 	end
 -- end)
 
--- local RotationTextureFrame = CreateFrame('RotationTextureFrame')
--- RotationTextureFrame:SetSize(60, 60)
--- RotationTextureFrame:SetPoint('CENTER')
+-- local RotationTextureFrame = CreateFrame('Frame', 'RotationTextureFrame', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
+-- RotationTextureFrame:SetSize(30, 30)
+-- RotationTextureFrame:SetPoint('CENTER', 200, 50)
+-- RotationTextureFrame:CreateBeautyBorder(8)
 -- RotationTextureFrame.texture = RotationTextureFrame:CreateTexture(nil, 'BACKGROUND')
 -- RotationTextureFrame.texture:SetPoint('CENTER')
--- RotationTextureFrame.texture:SetTexture(GetSpellTexture('Heroic Strike'))
+-- RotationTextureFrame.texture:SetTexture(GetSpellTexture(78))
 
 -- PlayerFrame:HookScript(
 -- 	'OnUpdate',

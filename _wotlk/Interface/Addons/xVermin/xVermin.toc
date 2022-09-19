@@ -54,10 +54,6 @@ Addons/TrinketMenu.lua
 GarbageCollector.lua
 RotBot.lua
 
-Rotation/_Core.lua
-Rotation/IsAOE.lua
-Rotation/Warrior.lua
-
 SpellCount/SpellCount.lua
 
 Helpers/AutoCarrot.lua
@@ -84,3 +80,8 @@ Helpers/UIScale.lua
 Helpers/SortBags.lua
 
 xVermin.lua
+
+
+Rotation/_Core.lua
+Rotation/IsAOE.lua
+Rotation/Warrior.lua

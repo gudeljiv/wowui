@@ -58,9 +58,9 @@ EnhancedRaidFramesDB = {
 				["mineOnly"] = true,
 			},
 			["backgroundAlpha"] = 0.7000000000000001,
+			["showDebuffs"] = false,
 			["showBuffs"] = false,
 			["showRaidIcons"] = false,
-			["showDebuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["rangeAlpha"] = 0.6000000000000001,
 		},
@@ -69,19 +69,19 @@ EnhancedRaidFramesDB = {
 		["Moolatz - Golemagg"] = {
 			{
 				["indicatorSize"] = 22,
-				["mineOnly"] = true,
 				["showTooltip"] = false,
-				["textSize"] = 12,
+				["mineOnly"] = true,
 				["colorTextByDebuff"] = true,
+				["textSize"] = 12,
 				["auras"] = "Rejuvenation",
 			}, -- [1]
 			nil, -- [2]
 			{
 				["indicatorSize"] = 22,
-				["auras"] = "Curse\nPoison",
 				["showTooltip"] = false,
-				["textSize"] = 12,
 				["colorTextByDebuff"] = true,
+				["textSize"] = 12,
+				["auras"] = "Curse\nPoison",
 			}, -- [3]
 			{
 				["indicatorSize"] = 22,
@@ -91,18 +91,18 @@ EnhancedRaidFramesDB = {
 			}, -- [4]
 			[7] = {
 				["indicatorSize"] = 22,
-				["mineOnly"] = true,
 				["showTooltip"] = false,
-				["textSize"] = 12,
+				["mineOnly"] = true,
 				["colorTextByDebuff"] = true,
+				["textSize"] = 12,
 				["auras"] = "Regrowth",
 			},
 			["rangeAlpha"] = 0.5,
-			["showDebuffs"] = false,
 			["showRaidIcons"] = false,
+			["showDebuffs"] = false,
+			["showBuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["backgroundAlpha"] = 0.7000000000000001,
-			["showBuffs"] = false,
 		},
 		["Battitude - Golemagg"] = {
 		},

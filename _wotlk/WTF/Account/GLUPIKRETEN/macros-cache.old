@@ -1,8 +1,3 @@
-VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/use Dense Sharpening Stone
-/use [button:1] 16; [button:2] 17
-END
 VER 3 000000000000000E " " "136106"
 /run InspectUnit("target")
 /run SortBags()
@@ -17,6 +12,11 @@ END
 VER 3 0000000000000012 " " "132143"
 #showtooltip
 /startattack
+END
+VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Dense Sharpening Stone
+/use [button:1] 16; [button:2] 17
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip

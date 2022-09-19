@@ -37,8 +37,8 @@ AtlasLootClassic: enabled
 AtlasLootClassic_Data: enabled
 Auctionator: enabled
 AutoOpen: enabled
-BlizzMove: enabled
-BlizzMove_Debug: enabled
+BlizzMove: disabled
+BlizzMove_Debug: disabled
 !BugGrabber: enabled
 BugSack: enabled
 ChocolateBar: enabled
@@ -163,3 +163,12 @@ DBM-Naxx: enabled
 DBM-Onyxia: enabled
 DBM-MC: enabled
 DBM-ZG: enabled
+SafeQueue: disabled
+BuffOverlay: enabled
+ClassicAggroHighlight: enabled
+Details_EncounterDetails: enabled
+Details_RaidCheck: enabled
+Details_DataStorage: enabled
+Details_Streamer: enabled
+Details_Vanguard: enabled
+FarmHud_TrailPath: enabled

@@ -1,5 +1,7 @@
 local _, xVermin = ...
 
+DEFAULT_CHATFRAME_ALPHA = 0.6
+
 _G.CHAT_FLAG_AFK = '[AFK] '
 _G.CHAT_FLAG_DND = '[DND] '
 _G.CHAT_FLAG_GM = '[GM] '
@@ -172,7 +174,6 @@ local function SetChat()
 	ChatFrame7:ClearAllPoints()
 	ChatFrame7:SetClampedToScreen()
 	ChatFrame7:SetClampRectInsets(0, -1, 0, 0)
-	-- ChatFrame7:SetPoint("RIGHT", ChatFrame3, -((chatWidth / 2) + 4), 260)
 	ChatFrame7:SetPoint('TOPLEFT', UIParent, 'TOPLEFT', 3, -225)
 	ChatFrame7:SetHeight(250)
 	ChatFrame7:Show()
@@ -228,10 +229,10 @@ local function SetChat()
 		if (v:GetName() == 'ChatFrame7' or v:GetName() == 'ChatFrame8') then
 			v:SetWidth((chatWidth / 1.3) - 4)
 		else
-			v:SetWidth(chatWidth)
 			background:SetAlpha(0.6)
 			background.SetAlpha = function()
 			end
+			v:SetWidth(chatWidth)
 		end
 
 		local BottomButton = _G[v:GetName() .. 'ButtonFrameBottomButton']
@@ -262,6 +263,22 @@ local function SetChat()
 		end
 
 		v:EnableMouse(false)
+		-- v:SetScript(
+		-- 	'OnEnter',
+		-- 	function()
+		-- 		print('enter', v:GetName(), v:GetAlpha())
+		-- 		background:SetAlpha(0.6)
+		-- 		return
+		-- 	end
+		-- )
+		-- v:SetScript(
+		-- 	'OnLeave',
+		-- 	function()
+		-- 		print('leave', v:GetName(), v:GetAlpha())
+		-- 		background:SetAlpha(0.6)
+		-- 		return
+		-- 	end
+		-- )
 	end
 
 	ChatFrameChannelButton:Hide()
