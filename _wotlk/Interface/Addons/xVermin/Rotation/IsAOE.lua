@@ -26,7 +26,7 @@ function AOE(type)
 	end
 end
 
-local f = CreateFrame('Frame', 'RotationFrame', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
+local f = CreateFrame('Frame', 'RotationFrame1', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
 f:SetWidth(7)
 f:SetHeight(7)
 f:ClearAllPoints()

@@ -2584,7 +2584,7 @@ step << Warrior
 .fly Orgrimmar >> Fly to Orgrimmar
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 30-45
@@ -2601,33 +2601,33 @@ step
 .goto Stranglethorn Vale,32.5,29.3
 .fp Grom'gol >> Get the Grom'gol Base Camp flight path
 step << !Shaman
-#level 35
+xp <35,1
 .goto Tirisfal Glades,61.9,59.1
 .zone Stranglethorn Vale >> Board the Zeppelin to Orgrimmar
 step
-.maxlevel 33 << !Shaman
+.xp <32,1 << !Shaman
 .zone Tirisfal Glades >>Take the Zeppelin to Undercity.
 step
-.maxlevel 33
+.xp <32,1
 .goto Undercity,63.7,48.9
 .accept 1164 >> Accept To Steal From Thieves
 step << Hunter
-.maxlevel 33
+.xp <32,1
 .goto Undercity,58.6,32.7
 .vendor >> Go and buy Heavy Quiver & Bullova
 .collect 7371,1
 .collect 2523,1
 step << Rogue
-.maxlevel 33
+.xp <32,1
 .goto Undercity,58.6,32.7
 .vendor >> Go and buy Broadsword
 .collect 2520,1
 step << !Undead !Rogue
-.maxlevel 33
+.xp <32,1
 .goto Undercity,63.3,48.4
 .fp Undercity >> Get the Undercity flight path
 step << !Shaman
-.maxlevel 33
+.xp <32,1
 #completewith next
 .goto Undercity,63.2,48.3
 .fly Tarren Mill >> Fly to Tarren Mill
@@ -2659,7 +2659,7 @@ step << Shaman
 .goto Silverpine Forest,45.6,42.6
 .fly Tarren Mill >>Fly to Tarren Mill
 step << Shaman
-#level 35
+.xp <35,1
 .goto Tirisfal Glades,61.9,59.1
 .zone Stranglethorn Vale >> Board the Zeppelin to Orgrimmar
 step
@@ -2881,12 +2881,13 @@ step
 .complete 547,1 
 step
 .isOnQuest 541
->>Kill Dun Garok mobs. Kill Captain Ironhill upstairs on the second floor
+>>Kill Dun Garok mobs. Kill Captain Ironhill upstairs on the second floor. Note: He can rarely spawn in the basement as well
 .goto Hillsbrad Foothills,71.1,80.3
 .complete 541,4 
 .complete 541,3 
 .complete 541,2 
 .complete 541,1 
+.unitscan Captain Ironhill
 step
 .isOnQuest 547
 >>Keep killing and looting Dun Garok mobs until Humbert's Sword drops
@@ -2957,6 +2958,10 @@ step
 .goto Arathi Highlands,74.7,36.3
 .turnin 655 >> Turn in Hammerfall
 .accept 671 >> Accept Foul Magics
+step
+#xprate <1.5
+.isQuestTurnedIn 533
+.goto Arathi Highlands,74.7,36.3
 .accept 672 >> Accept Raising Spirits
 step
 #completewith next
@@ -3052,20 +3057,16 @@ step
 .goto Hillsbrad Foothills,61.5,19.2
 .turnin 509 >> Turn in Elixir of Agony
 .accept 513 >> Accept Elixir of Agony
-step << Warrior << tbc
+step << Warrior tbc
 >> Ride up to Alterac Mountains
 .goto Alterac Mountains,80.5,66.9
 .turnin 1791 >>Turn in The Windwatcher
 .accept 1712 >>Accept Cyclonian
-step << !Warrior tbc
+step
 #completewith next
 .goto Hillsbrad Foothills,60.1,18.7
 .fly Undercity >> Fly to Undercity
 .zoneskip Hillsbrad Foothills,1
-step << Warrior tbc
-#completewith next
-.goto Hillsbrad Foothills,60.1,18.7
-.fly Undercity >> Fly to Undercity
 step
 .isOnQuest 1164
 .goto Undercity,64.0,49.6
@@ -3116,15 +3117,19 @@ step << Druid
 .goto Moonglade,52.5,40.5
 .trainer >> Go and train your class spells
 step << !Shaman
-.maxlevel 35
+.isOnQuest 1146
 #completewith next
 .goto Thousand Needles,67.6,64.0
-.hs >> Hearth to Freewind Post
+.hs >> Hearth
 step << Shaman
 .isOnQuest 1531
 #completewith next
 .goto Thousand Needles,54.7,44.4
-.hs >> Hearth to Freewind Post
+.hs >> Hearth
+step
+.goto Orgrimmar,45.1,63.9
+.fly Freewind Post >> Fly to Freewind Post
+.zoneskip Orgrimmar,1
 step << Shaman
 #sticky
 #completewith next
@@ -3154,6 +3159,7 @@ step
 .accept 1110 >> Accept Rocket Car Parts
 step
 .isQuestAvailable 1114
+.zoneskip Thousand Needles,1
 .goto Thousand Needles,77.8,77.2
 .accept 1114 >> Accept Delivery to the Gnomes
 .turnin 1114 >> Turn in Delivery to the Gnomes
@@ -3162,6 +3168,7 @@ step
 .accept 1105 >> Accept Hardened Shells
 .goto Thousand Needles,78.1,77.1
 step
+.zoneskip Thousand Needles,1
 .isQuestAvailable 1115
 .goto Thousand Needles,77.9,77.2
 .accept 1115 >> Accept The Rumormonger
@@ -4294,7 +4301,7 @@ step
 .fly Sun Rock >> Fly to Stonetalon Mountains
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 30-45
@@ -4302,91 +4309,110 @@ RXPGuides.RegisterGuide([[
 #name 34-38 Stranglethorn Vale / Dustwallow
 #next 38-40 Hillsbrad / Alterac / Arathi Part 2
 step
+.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto The Barrens,51.5,30.4
 .fly Orgrimmar >>Fly to Orgrimmar
 .zoneskip The Barrens,1
 step
+.zoneskip Stranglethorn Vale,1
 .zone Orgrimmar >> Arrive in Orgrimmar
 step << Paladin
+.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,32.4,35.8
 .trainer >> Go and train your class spells
 .zoneskip Orgrimmar,1
 step << Shaman
+.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,38.6,36.0
 .trainer >> Go and train your class spells
 .zoneskip Orgrimmar,1
 step << Hunter
+.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,66.1,18.5
 .trainer >> Go and train your class spells
 .zoneskip Orgrimmar,1
 step << Hunter
+.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,66.3,14.8
 .trainer >> Go and train your pet spells
 .zoneskip Orgrimmar,1
 step << Warrior
+.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,79.7,31.4
 .trainer >> Go and train your class spells
 .zoneskip Orgrimmar,1
 step << Rogue
+.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,44.0,54.6
 .trainer >> Go and train your class spells
 .zoneskip Orgrimmar,1
 step << Warlock
+.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,48.0,46.0
 .trainer >> Go and train your class spells
 .zoneskip Orgrimmar,1
 step << Mage
+.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,38.8,85.6
 .trainer >> Go and train your class spells
 .zoneskip Orgrimmar,1
 step << Priest
+.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,35.6,87.8
 .trainer >> Go and train your class spells
 .zoneskip Orgrimmar,1
 step
+.zoneskip Stranglethorn Vale,1
 .goto Orgrimmar,75.0,34.2
 .turnin 1184 >>Turn in Parts of the Swarm
 .zoneskip Orgrimmar,1
 step << Warrior
+.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,81.5,19.6
 .train 2567 >> Train Thrown from Hanashi
 .zoneskip Orgrimmar,1
 step
+.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,54.1,68.4
 .home >>Set your Hearthstone to Valley of Strength
 .zoneskip Orgrimmar,1
 step << Shaman
+.zoneskip Stranglethorn Vale,1
 #completewith next
 .goto Orgrimmar,45.2,63.9
 .fly Ratchet >>Fly to Ratchet
 step
+.zoneskip Stranglethorn Vale,1
 .maxlevel 36
 #completewith next
 .goto Orgrimmar,45.2,63.9,-1
 .goto Tanaris,51.6,25.5,-1
 .fly Ratchet >>Fly to Ratchet
 step << Shaman
+.zoneskip Stranglethorn Vale,1
 .isOnQuest 96
 .goto The Barrens,65.8,43.8
 .turnin 96 >>Turn in Call of Water
 step << Shaman
+.zoneskip Stranglethorn Vale,1
 .isOnQuest 1178
 .goto The Barrens,62.7,36.3
 .turnin 1178 >> Turn in Goblin Sponsorship
 .accept 1180 >> Accept Goblin Sponsorship
 step << !Shaman
+.zoneskip Stranglethorn Vale,1
 .maxlevel 36
 .isOnQuest 1178
 .goto The Barrens,62.7,36.3
@@ -4401,14 +4427,14 @@ step
 step
 .maxlevel 36
 .zone Stranglethorn Vale >>Arrive in Stranglethorn Vale
-step << Warrior/Shaman
+step << Shaman
 .maxlevel 36
 #label Protection
 #completewith BigStick
 .goto Stranglethorn Vale,28.3,75.5
 .vendor >> Go to the vendor and buy Staff of Protection or Big Stick if it's in the shop.
 .collect 12252,1
-step <<Warrior/Shaman
+step <<Shaman
 .maxlevel 36
 #label BigStick
 #completewith Protection
@@ -4431,6 +4457,7 @@ step
 .accept 605 >> Accept Singing Blue Shards
 step
 .isQuestTurnedIn 1180
+.isOnQuest 1115
 >> These quests are on the top floors of the inn
 .goto Stranglethorn Vale,27.0,77.2
 .turnin 1115 >> Turn in The Rumormonger
@@ -4557,6 +4584,18 @@ step
 .accept 191 >> Accept Panther Mastery
 step
 .isQuestTurnedIn 1180
+.goto Stranglethorn Vale,43.4,14.4,50,0
+.goto Stranglethorn Vale,45.4,14.4,50,0
+.goto Stranglethorn Vale,47.0,18.2,50,0
+.goto Stranglethorn Vale,47.6,11.4
+>>Kill Tigers in the area
+.complete 186,1 
+step
+.isQuestTurnedIn 1180
+.turnin 186 >> Turn in Tiger Mastery
+.accept 187 >> Accept Tiger Mastery
+step
+.isQuestTurnedIn 1180
 .goto Stranglethorn Vale,31.0,11.2,50,0
 .goto Stranglethorn Vale,29.7,8.9,50,0
 .goto Stranglethorn Vale,28.4,12.3,50,0
@@ -4565,9 +4604,8 @@ step
 .goto Stranglethorn Vale,30.0,14.8,50,0
 .goto Stranglethorn Vale,30.6,13.9,50,0
 .goto Stranglethorn Vale,31.0,11.2
->>Kill Panthers and Tigers in the area
+>>Kill Panthers in the area
 .complete 191,1 
-.complete 186,1 
 step
 .isQuestTurnedIn 1180
 .goto Stranglethorn Vale,27.7,14.7,50,0
@@ -4578,19 +4616,30 @@ step
 .complete 194,1 
 step
 .isQuestTurnedIn 1180
+.goto Stranglethorn Vale,32.1,15.8,50,0
+.goto Stranglethorn Vale,31.4,18.4,50,0
+.goto Stranglethorn Vale,31.8,20.0,50,0
+.goto Stranglethorn Vale,34.2,17.6,50,0
+.goto Stranglethorn Vale,32.1,15.8
+>>Finish killing Stranglethorn Tigers
+.complete 187,1 
+step
+.isQuestTurnedIn 1180
 .goto Stranglethorn Vale,35.6,10.5
 .turnin 191 >> Turn in Panther Mastery
 .accept 192 >> Accept Panther Mastery
-.turnin 186 >> Turn in Tiger Mastery
-.accept 187 >> Accept Tiger Mastery
 .turnin 194 >> Turn in Raptor Mastery
 .accept 195 >> Accept Raptor Mastery
+.turnin 187 >> Turn in Tiger Mastery
+.accept 188 >> Accept Tiger Mastery
 step
-.isQuestTurnedIn 1180
 #sticky
-#completewith BloodscalpTr
->>Kill Stranglethorn Tigers en route to other objectives
-.complete 187,1 
+#label sindall
+.isQuestTurnedIn 1180
+>>Kill Sin'Dall on top of the plataeu (or patrolling around it in circles). Loot him for his paw
+.goto Stranglethorn Vale,32.2,17.4
+.complete 188,1 
+.unitscan Sin'Dall
 step
 .isQuestTurnedIn 1180
 #sticky
@@ -4615,16 +4664,7 @@ step
 >> Kill Bloodscalp Trolls. Loot them for their tusks
 .complete 581,1 
 step
-.isQuestTurnedIn 1180
-#requires TrollTotem
-.goto Stranglethorn Vale,32.1,15.8,50,0
-.goto Stranglethorn Vale,31.4,18.4,50,0
-.goto Stranglethorn Vale,31.8,20.0,50,0
-.goto Stranglethorn Vale,34.2,17.6,50,0
-.goto Stranglethorn Vale,32.1,15.8
->>Finish killing Stranglethorn Tigers
-.complete 187,1 
-step
+#requires sindall
 .isQuestTurnedIn 1180
 .goto Stranglethorn Vale,31.9,20.9,50,0
 .goto Stranglethorn Vale,30.4,24.7,50,0
@@ -4725,10 +4765,17 @@ step
 .goto Stranglethorn Vale,32.0,28.7
 .turnin 9457 >> Turn in An Unusual Patron
 step
+#sticky
+.isQuestTurnedIn 568
+>> Focus on killing the Mosh'Ogg Ogers. While you wait for the respawn go across the river and kill the Tigers and the stealthed Panthers.
+.complete 570,1 
+.complete 192,1 
+.complete 570,2 
+.unitscan Shadowmaw Panther
+step
 .isOnQuest 569
-#completewith CozzleKey
-.goto Stranglethorn Vale,37.3,30.9,100,0
->>There aren't enough of each to complete this quest now. Clear the camp then go to the next step
+.goto Stranglethorn Vale,37.3,30.9
+>>There aren't enough of each to complete this quest now. Clear the camp then go over and farm
 .complete 569,1 
 .complete 569,2 
 step
@@ -4737,7 +4784,7 @@ step
 >>Kill Geologists. Loot them for Tumbled Crystals en route to other objectives
 .complete 213,1 
 step
-.isOnQuest 5851
+.isOnQuest 1182
 #label CozzleKey
 .goto Stranglethorn Vale,42.6,18.6
 >>Run up the watchtower and kill Foreman Cozzle for his key.
@@ -4748,12 +4795,6 @@ step
 .goto Stranglethorn Vale,43.3,20.3
 >>Open Cozzle's Footlocker in his house
 .complete 1182,1 
-step
-.isQuestTurnedIn 568
-.goto Stranglethorn Vale,37.3,30.9
->>Go back to Mizjah Ruins to finish killing the Mosh'Ogg ogres while waiting for respawns if needed
-.complete 569,1 
-.complete 569,2 
 step
 .isQuestTurnedIn 568
 .goto Stranglethorn Vale,43.8,17.3,50,0
@@ -4785,6 +4826,7 @@ step
 >>Kill the stealthed Shadowmaw Panthers. Loot them for Shadowmaw Claws. Look in spots where other mobs aren't near - specifically around trees
 .complete 570,1 
 .complete 192,1 
+.unitscan Shadowmaw Panther
 step
 #label Tigress
 .isQuestTurnedIn 568
@@ -4812,19 +4854,8 @@ step
 .goto Stranglethorn Vale,35.6,10.8
 .turnin 195 >> Turn in Raptor Mastery
 .accept 196 >> Accept Raptor Mastery
-.turnin 187 >> Turn in Tiger Mastery
-.accept 188 >> Accept Tiger Mastery
 .turnin 192 >> Turn in Panther Mastery
 .accept 193 >> Accept Panther Mastery
-step
-.isQuestTurnedIn 192
->>Kill Sin'Dall on top of the plataeu (or patrolling around it in circles). Loot him for his paw
-.goto Stranglethorn Vale,32.2,17.4
-.complete 188,1 
-.unitscan Sin'Dall
-step
-.isQuestTurnedIn 192
-.goto Stranglethorn Vale,35.6,10.7
 .turnin 188 >> Turn in Tiger Mastery
 step
 .isQuestTurnedIn 568
@@ -4900,7 +4931,7 @@ step << Warrior
 step << Warrior
 .isQuestTurnedIn 192
 .goto Orgrimmar,81.2,19.0
-.collect 29010,1 >> Purchase a Wicked Throwing Dagger from Zendo'jian
+.collect 25876,1 >> Purchase a Gleaming Throwing Axe from Zendo'jian
 step << Rogue
 .isQuestTurnedIn 192
 #completewith next
@@ -4911,7 +4942,7 @@ step << Warlock
 #completewith next
 .goto Orgrimmar,48.0,46.0
 .trainer >> Go and train your class spells
-step << Warlock
+step << Warlock tbc
 .isQuestTurnedIn 192
 #completewith next
 .goto Orgrimmar,47.5,46.7
@@ -4999,6 +5030,7 @@ step
 .goto Dustwallow Marsh,49.6,26.0
 .complete 1270,1 
 step
+#xprate <1.3
 >>Click the dirt
 .goto Dustwallow Marsh,55.4,26.0
 .accept 1238 >> Accept The Lost Report
@@ -5063,7 +5095,7 @@ step
 .accept 11183 >> Accept Cleansing Witch Hill
 step
 >>Walk to the end of the dock and use the Witchbane Torch to spawn Zelfrax. Kill him.
-.goto Dustwallow Marsh,55.3,26.0
+.goto Dustwallow Marsh,55.2,26.7
 .complete 11183,1 
 step
 .goto Dustwallow Marsh,55.6,26.2
@@ -5112,8 +5144,12 @@ step
 step
 .goto Dustwallow Marsh,35.2,30.7
 .turnin 1201 >> Turn in Theramore Spies
+step
+#xprate <1.3
+.goto Dustwallow Marsh,35.2,30.7
 .turnin 1238 >> Turn in The Lost Report
 step
+#xprate <1.3
 .goto Dustwallow Marsh,55.4,25.9
 .accept 1239 >> Accept The Severed Head
 step
@@ -5124,6 +5160,7 @@ step
 .goto Dustwallow Marsh,57.8,19.7
 >>Kill Razorspine. Loot him for his Sword
 .complete 1203,1 
+.unitscan Razorspine
 step
 .goto Dustwallow Marsh,58.1,15.8,50,0
 .goto Dustwallow Marsh,55.2,16.6,50,0
@@ -5142,6 +5179,10 @@ step
 .goto Dustwallow Marsh,35.2,30.6
 .turnin 1239 >> Turn in The Severed Head
 .accept 1240 >> Accept The Troll Witchdoctor
+step
+#xprate >1.499
+.goto Dustwallow Marsh,35.2,38.4
+.turnin 1177 >> Turn in Hungry!
 
 ]])
 RXPGuides.RegisterGuide([[
@@ -7421,7 +7462,7 @@ step << Mage
 .collect 17031,3 
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 30-45
@@ -7437,6 +7478,17 @@ step
 .isOnQuest 1107
 .goto Thousand Needles,78.1,77.1
 .turnin 1107 >> Turn in Encrusted Tail Fins
+step
+.isOnQuest 1112
+.goto Thousand Needles,77.8,77.2
+>> Head to the raceway. There will be a short roleplay after turning in the quest.
+.turnin 1112 >> Turn in Parts for Kravel
+step
+.isQuestAvailable 1114
+.zoneskip Thousand Needles,1
+.goto Thousand Needles,77.8,77.2
+.accept 1114 >> Accept Delivery to the Gnomes
+.turnin 1114 >> Turn in Delivery to the Gnomes
 step
 .isQuestTurnedIn 1182
 .goto Thousand Needles,80.2,75.8
@@ -7501,9 +7553,14 @@ step
 .goto Durotar,50.6,12.6
 .zone Stranglethorn Vale >> Go up the Zeppelin tower & take the zeppelin to Stranglethorn Vale
 step
+#xprate <1.5
 .goto Stranglethorn Vale,32.2,27.7
 .turnin 1240 >> Turn in The Troll Witchdoctor
 .accept 1261 >> Accept Marg Speaks
+step
+#xprate >1.499
+.goto Stranglethorn Vale,32.2,27.7
+.turnin 1240 >> Turn in The Troll Witchdoctor
 step
 #completewith next
 .goto Stranglethorn Vale,31.6,29.1
@@ -7534,11 +7591,10 @@ step << Rogue
 .vendor >> Go buy a Rondel and a Falchion
 .collect 2534,1
 .collect 2528,1
-step << Warrior
+step << Warrior tbc
 #completewith next
 .goto Undercity,77.48,49.60
-.vendor 4592 >> Go to Nathaniel & buy 2 stacks of level 35 thrown from him. Equip them for later << tbc
-.vendor 4592 >> Go to Nathaniel & buy level 35 thrown from him. Equip them for later << wotlk
+.vendor 4592 >> Go to Nathaniel & buy 2 stacks of level 35 thrown from him. Equip them for later
 step << Warrior tbc
 #completewith next
 >> Go to the Auction house and buy the following items
@@ -7726,6 +7782,12 @@ step
 .complete 566,1 
 .unitscan Baron Vardus
 step
+#xprate <1.5
+
+.goto Hillsbrad Foothills,61.6,20.8
+.turnin -545 >> Turn in Dalaran Patrols
+.turnin -557 >> Turn in Bracers of Binding
+step
 .goto Hillsbrad Foothills,62.3,20.4
 .turnin 566 >> Turn in WANTED: Baron Vardus
 step
@@ -7736,10 +7798,9 @@ step
 .goto Hillsbrad Foothills,63.2,20.7
 .turnin 508 >> Turn in Taretha's Gift
 step
-.isOnQuest 557
 .goto Hillsbrad Foothills,61.6,20.8
-.turnin 545 >> Turn in Dalaran Patrols
-.turnin 557 >> Turn in Bracers of Binding
+.turnin -545 >> Turn in Dalaran Patrols
+.turnin -557 >> Turn in Bracers of Binding
 step
 #xprate <1.5
 .goto Alterac Mountains,37.9,52.2
@@ -7755,7 +7816,6 @@ step
 .turnin 520 >> Turn in The Crown of Will
 .accept 521 >> Accept The Crown of Will
 step
-.isQuestTurnedIn 545
 #completewith next
 .goto Hillsbrad Foothills,60.2,18.6
 .fly Hammerfall >> Fly to Hammerfall
@@ -7947,18 +8007,18 @@ step
 .accept 847 >> Accept Guile of the Raptor
 step
 .goto Arathi Highlands,73.9,33.9
-.turnin 639 >> Turn in Sigil of Strom
+.turnin 639 >> Turn in Sigil of Storm
 step
 .isQuestTurnedIn 701
 .goto Arathi Highlands,73.9,33.9
 .accept 640 >> Accept The Broken Sigil
 step
-.isQuestTurnedIn 701
+.isOnQuest 678
 .goto Arathi Highlands,74.3,33.9
 .turnin 678 >> Turn in Call to Arms
 .accept 679 >> Accept Call to Arms
 step
-.isQuestTurnedIn 701
+.isOnQuest 847
 .goto Arathi Highlands,74.7,36.3
 .turnin 847 >> Turn in Guile of the Raptor
 step
@@ -8012,6 +8072,7 @@ step
 .goto Arathi Highlands,24.4,65.2,10 >> Run jump from the metal wall past the brick wall onto the end of the metal wall
 .goto Arathi Highlands,21.2,70.2,20 >> Keep running along the metal walls until you get to the hole in the wall
 step
+#completewith next
 .goto Arathi Highlands,21.6,75.6,20,0
 .goto Arathi Highlands,22.1,79.9,20 >> Run through the cave to Faldir's Cove
 step
@@ -8726,7 +8787,7 @@ step
 >> Buy food/water if needed
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 30-45
@@ -8788,15 +8849,6 @@ step
 .turnin 710 >> Turn in Study of the Elements: Rock
 .accept 711 >> Accept Study of the Elements: Rock
 step
-.goto Badlands,42.9,29.9,30 >> Go inside Angor Fortress
-step
-.goto Badlands,41.7,26.9
->>The Rapier is on a weapon rack.
-.complete 9439,2 
-.goto Badlands,41.0,29.3
->>The Advisor's Pack is located inside a barrel.
-.complete 9439,1 
-step
 #sticky
 #label signofearthBL
 >>Find & kill Boss Tho'grun. He's an ogre who patrols around the zone with a pack of guards. Kite him away from his guards. Loot him for the Sign of the Earth
@@ -8835,9 +8887,6 @@ step
 .goto Badlands,50.1,67.2
 .complete 1108,1 
 step
-.goto Badlands,6.1,48.2
-.turnin 9439 >> Turn in Unclaimed Baggage
-step
 .goto Badlands,6.4,47.3
 .turnin 1419 >> Turn in Coyote Thieves
 step
@@ -8856,10 +8905,30 @@ step
 .turnin 703 >> Turn in Barbecued Buzzard Wing
 .turnin 1108 >> Turn in Indurium
 step
->>Run toward Uldaman. Kill the mobs heading inside, then loot the Tablet from the big gray chest in the center of the first room. Also make sure to kill the Dwarves until Shattered Necklace drops (You turn it in Orgrimmar later. It can't be started from the item)
-.complete 709,1 
+#completewith next
+.goto Badlands,42.9,29.9,30 >> Go inside Angor Fortress
+step
+.goto Badlands,41.0,29.3
+>>The Advisor's Pack is located inside a barrel.
+.complete 9439,1 
+step
+.goto Badlands,41.7,26.9
+>>The Rapier is on a weapon rack.
+.complete 9439,2 
+step
+#completewith Tablet
+.goto Badlands,41.86,26.51
+.goto Badlands,51.86,63.51,40 >>Logout on top of the staircase when it looks like you're floating, then log back in
+step
+#completewith garett
+>> Loot the dwarves for a chance of getting the necklace, it can be delivered in Orgrimmar for XP (U can't start the quest)
 .collect 7666,1 
 step
+#label Tablet
+.goto Badlands,39.1,18.5
+.complete 709,1 
+step
+#label garrett
 >>Go into the South Common Hall. Loot the small chest on the ground
 .goto Eastern Kingdoms,51.8,64.0
 .complete 2342,1 
@@ -8872,6 +8941,9 @@ step
 step
 .goto Badlands,51.2,77.1
 .accept 728 >> Accept To the Undercity for Yagyin's Digest
+step
+.goto Badlands,6.1,48.2
+.turnin 9439 >> Turn in Unclaimed Baggage
 step
 .isQuestTurnedIn 701
 #completewith next
@@ -9022,6 +9094,7 @@ step
 .turnin 11201 >> Turn in The Grimtotem Plot
 .accept 11203 >> Accept Seek Out Tabetha
 step
+#xprate <1.5
 .goto Dustwallow Marsh,35.2,38.4
 .turnin 1177 >> Turn in Hungry!
 step
@@ -9116,7 +9189,57 @@ step
 .goto Dustwallow Marsh,46.0,57.1
 .turnin 11205 >> Turn in Raze Direhorn Post!
 .accept 11206 >> Accept Justice Dispensed
-Step
+step
+#completewith CrocoTotem
+>>Kill Shredders and Creepers in the area. Loot them for Marsh Venom
+.complete 11173,1 
+step
+#completewith next
+.use 33101 >>Use the Captured Totem from your inventory. Kill the Crocolisks next to it. Note that killing blows by pets do NOT count toward the quest credit.
+.complete 11169,1 
+step
+.goto Dustwallow Marsh,50.5,53.1,90,0
+.goto Dustwallow Marsh,50.1,56.1,90,0
+.goto Dustwallow Marsh,49.3,57.4,90,0
+.goto Dustwallow Marsh,47.9,55.5,90,0
+.goto Dustwallow Marsh,45.8,61.6,90,0
+.goto Dustwallow Marsh,44.1,62.2,90,0
+.goto Dustwallow Marsh,46.4,60.3,90,0
+.goto Dustwallow Marsh,47.8,55.5,90,0
+.goto Dustwallow Marsh,46.2,54.1,90,0
+.goto Dustwallow Marsh,44.2,50.0,90,0
+.goto Dustwallow Marsh,50.5,53.1
+>>Find & kill Deadmire. He's a White Crocolisk who patrols in the water mires around the area. Loot him for his tooth
+.complete 1205,1 
+.unitscan Deadmire
+step
+#label CrocoTotem
+.goto Dustwallow Marsh,50.5,53.1,50,0
+.goto Dustwallow Marsh,50.1,56.1,50,0
+.goto Dustwallow Marsh,49.3,57.4,50,0
+.goto Dustwallow Marsh,47.9,55.5,50,0
+.goto Dustwallow Marsh,45.8,61.6,50,0
+.goto Dustwallow Marsh,44.1,62.2,50,0
+.goto Dustwallow Marsh,46.4,60.3,50,0
+.goto Dustwallow Marsh,47.8,55.5,50,0
+.goto Dustwallow Marsh,46.2,54.1,50,0
+.goto Dustwallow Marsh,44.2,50.0,50,0
+.goto Dustwallow Marsh,50.5,53.1
+.use 33101 >>Use the Captured Totem from your inventory. Kill the Crocolisks next to it. Note that killing blows by pets do NOT count toward the quest credit.
+.complete 11169,1 
+step
+>>Finish killing Shredders and Creepers in the area while looting them for Marsh Venom
+.goto Dustwallow Marsh,48.3,62.3,40,0
+.goto Dustwallow Marsh,49.5,61.7,40,0
+.goto Dustwallow Marsh,48.0,57.0,40,0
+.goto Dustwallow Marsh,40.8,51.7,40,0
+.goto Dustwallow Marsh,39.6,58.1
+.complete 11173,1 
+step
+.goto Dustwallow Marsh,46.0,57.2
+.turnin 11169 >> Turn in The Grimtotem Weapon
+.turnin 11173 >> Turn in The Reagent Thief
+step
 .goto Dustwallow Marsh,42.8,72.4
 .fp >> Get the Mudsprocket flight path
 step
@@ -9157,7 +9280,8 @@ step
 .goto Dustwallow Marsh,41.8,73.9
 .accept 11161 >> Accept The Essence of Enmity
 step
-#completewith MudsprocketTurnins2
+#sticky
+#label firebanes
 >>Kill some of the other Firemanes in the area en route to other objectives
 .complete 1168,2 
 .complete 1168,1 
@@ -9166,6 +9290,9 @@ step
 #label DragonEssence
 >>When you kill a Firemane, use Brogg's Totem in your inventory on a corpse to harvest its Essence
 .complete 11161,1 
+step
+.goto Dustwallow Marsh,44.6,66.0
+.complete 1166,1 
 step
 >>Loot the Grog outside of the cave
 .goto Dustwallow Marsh,38.7,65.6
@@ -9185,6 +9312,10 @@ step
 >>Finish killing the Firemane Scalebanes in the cave
 .complete 1168,3 
 step
+#completewith next
+.goto Dustwallow Marsh,36.79,68.93
+.goto Dustwallow Marsh,41.04,74.27,30 >>Logout on top of the banner, then log back in
+step
 #requires DragonEssence
 #label MudsprocketTurnins2
 .goto Dustwallow Marsh,41.9,73.9
@@ -9193,20 +9324,21 @@ step
 .accept 11159 >> Accept Spirits of Stonemaul Hold
 step
 #sticky
-#label Snuff
-.goto Dustwallow Marsh,44.6,66.0
-.complete 1166,1 
-step
->>Click on the Ogre Remains on the ground to summon the Stonemaul Spirits. Kill them
-.complete 11159,1 
-step
+#completewith snuffreq1
+#label firemans1
 >>Kill the Firemanes in the area
-.goto Dustwallow Marsh,44.8,66.2,0
-.goto Dustwallow Marsh,39.2,65.2
+.goto Dustwallow Marsh,44.8,66.2,0,0
 .complete 1168,2 
 .complete 1168,1 
 step
+.goto Dustwallow Marsh,44.6,66.0
+>>Click on the Ogre Remains on the ground to summon the Stonemaul Spirits. Kill them
+.complete 11159,1 
+step
+#requires firemans1
+step
 #requires Snuff
+#label snuffreq1
 .goto Dustwallow Marsh,41.8,74.0
 .turnin 11159 >> Turn in Spirits of Stonemaul Hold
 .accept 11162 >> Accept Challenge to the Black Flight
@@ -9225,6 +9357,7 @@ step
 .complete 1169,1 
 .complete 1169,2 
 step
+#requires firebanes
 .goto Dustwallow Marsh,42.0,76.6,40,0
 .goto Dustwallow Marsh,42.2,81.0,40,0
 .goto Dustwallow Marsh,46.6,84.4,40,0
@@ -9277,56 +9410,6 @@ step
 .goto Dustwallow Marsh,41.6,73.0
 .turnin 11217 >> Turn in Catch a Dragon by the Tail
 step
-#completewith CrocoTotem
->>Kill Shredders and Creepers in the area. Loot them for Marsh Venom
-.complete 11173,1 
-step
-#completewith next
-.use 33101 >>Use the Captured Totem from your inventory. Kill the Crocolisks next to it. Note that killing blows by pets do NOT count toward the quest credit.
-.complete 11169,1 
-step
-.goto Dustwallow Marsh,50.5,53.1,90,0
-.goto Dustwallow Marsh,50.1,56.1,90,0
-.goto Dustwallow Marsh,49.3,57.4,90,0
-.goto Dustwallow Marsh,47.9,55.5,90,0
-.goto Dustwallow Marsh,45.8,61.6,90,0
-.goto Dustwallow Marsh,44.1,62.2,90,0
-.goto Dustwallow Marsh,46.4,60.3,90,0
-.goto Dustwallow Marsh,47.8,55.5,90,0
-.goto Dustwallow Marsh,46.2,54.1,90,0
-.goto Dustwallow Marsh,44.2,50.0,90,0
-.goto Dustwallow Marsh,50.5,53.1
->>Find & kill Deadmire. He's a White Crocolisk who patrols in the water mires around the area. Loot him for his tooth
-.complete 1205,1 
-.unitscan Deadmire
-step
-#label CrocoTotem
-.goto Dustwallow Marsh,50.5,53.1,50,0
-.goto Dustwallow Marsh,50.1,56.1,50,0
-.goto Dustwallow Marsh,49.3,57.4,50,0
-.goto Dustwallow Marsh,47.9,55.5,50,0
-.goto Dustwallow Marsh,45.8,61.6,50,0
-.goto Dustwallow Marsh,44.1,62.2,50,0
-.goto Dustwallow Marsh,46.4,60.3,50,0
-.goto Dustwallow Marsh,47.8,55.5,50,0
-.goto Dustwallow Marsh,46.2,54.1,50,0
-.goto Dustwallow Marsh,44.2,50.0,50,0
-.goto Dustwallow Marsh,50.5,53.1
-.use 33101 >>Use the Captured Totem from your inventory. Kill the Crocolisks next to it. Note that killing blows by pets do NOT count toward the quest credit.
-.complete 11169,1 
-step
->>Finish killing Shredders and Creepers in the area while looting them for Marsh Venom
-.goto Dustwallow Marsh,48.3,62.3,40,0
-.goto Dustwallow Marsh,49.5,61.7,40,0
-.goto Dustwallow Marsh,48.0,57.0,40,0
-.goto Dustwallow Marsh,40.8,51.7,40,0
-.goto Dustwallow Marsh,39.6,58.1
-.complete 11173,1 
-step
-.goto Dustwallow Marsh,46.0,57.2
-.turnin 11169 >> Turn in The Grimtotem Weapon
-.turnin 11173 >> Turn in The Reagent Thief
-step
 .goto Dustwallow Marsh,48.5,73.6,15,0
 .goto Dustwallow Marsh,48.4,76.0,15,0
 .goto Dustwallow Marsh,52.3,83.9,15,0
@@ -9337,6 +9420,8 @@ step
 >>Click the Eggs in the stumps to destroy them
 .complete 1172,1 
 step
+#xprate <1.5
+.isOnQuest 1261
 >>Go to the coast. Start killing Muckshells. Loot them for the Jeweled Pendant
 .goto Dustwallow Marsh,56.2,64.7,40,0
 .goto Dustwallow Marsh,53.6,64.0,40,0
@@ -9349,6 +9434,7 @@ step
 .goto Dustwallow Marsh,42.8,72.4
 .fly Brackenwall >> Fly to Brackenwall Village
 step
+#xprate <1.3
 .goto Dustwallow Marsh,35.3,30.7
 .turnin 1261 >> Turn in Marg Speaks
 .accept 1262 >> Accept Report to Zor
@@ -10192,7 +10278,7 @@ step
 .fly Feralas >> Fly to Feralas
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 30-45
@@ -10528,7 +10614,6 @@ step
 .accept 208 >> Accept Big Game Hunter
 step
 .isQuestTurnedIn 570
-#completewith next
 .isOnQuest 597
 .goto Stranglethorn Vale,32.5,29.3
 .fly Booty Bay >> Fly to Booty Bay
@@ -10704,7 +10789,7 @@ step
 .complete 573,2 
 step
 .isQuestTurnedIn 570
-.isOnQuest 617
+.isOnQuest 673
 .goto Stranglethorn Vale,24.3,64.0,40,0
 .goto Stranglethorn Vale,25.5,59.6,40,0
 .goto Stranglethorn Vale,25.8,63.3,40,0
@@ -11512,7 +11597,7 @@ step
 .fly Stonard>> Fly to Stonard
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 45-60
@@ -11522,74 +11607,81 @@ RXPGuides.RegisterGuide([[
 step << Mage
 .cast 3567
 .zone Orgrimmar >> Teleport to Orgrimmar
+.zoneskip Dustwallow Marsh
 step << !Mage
 .goto Stranglethorn Vale,31.4,30.1
 .zone Durotar >>Take the Zeppelin to Orgrimmar
+.zoneskip Dustwallow Marsh
 step << Paladin
-#completewith next
 .goto Orgrimmar,32.4,35.8
 .trainer >> Go and train your class spells
+.zoneskip Dustwallow Marsh
 step << Shaman
-#completewith next
 .goto Orgrimmar,38.6,36.0
 .trainer >> Go and train your class spells
+.zoneskip Dustwallow Marsh
 step << Hunter
-#completewith next
 .goto Orgrimmar,66.1,18.5
 .trainer >> Go and train your class spells
-step << Hunter
-#completewith next
+.zoneskip Dustwallow Marsh
+step << Hunter tbc
 .goto Orgrimmar,66.3,14.8
 .trainer >> Go and train your pet spells
+.zoneskip Dustwallow Marsh
 step << Warrior
-#completewith next
 .goto Orgrimmar,79.7,31.4
 .trainer >> Go and train your class spells
+.zoneskip Dustwallow Marsh
 step << Rogue
-#completewith next
 .goto Orgrimmar,44.0,54.6
 .trainer >> Go and train your class spells
+.zoneskip Dustwallow Marsh
 step << Warlock
-#completewith next
 .goto Orgrimmar,48.0,46.0
 .trainer >> Go and train your class spells
-step << Warlock
-#completewith next
+.zoneskip Dustwallow Marsh
+step << Warlock tbc
 .goto Orgrimmar,47.5,46.7
 .vendor >> Grimoire of Lash of Pain (Rank 4)
 .collect 16372,1
+.zoneskip Dustwallow Marsh
 step << Mage
-#completewith next
 .goto Orgrimmar,38.8,85.6
 .trainer >> Go and train your class spells
+.zoneskip Dustwallow Marsh
 step << Priest
-#completewith next
 .goto Orgrimmar,35.6,87.8
 .trainer >> Go and train your class spells
+.zoneskip Dustwallow Marsh
 step << Warrior/Rogue
-#completewith next
 .trainer >>Talk to Hanashi in Orgrimmar to train Bows. If you have already done this earlier you can skip this step
 .goto Orgrimmar,81.52,19.60
+.zoneskip Dustwallow Marsh
 step
 .isOnQuest 1262
 .goto Orgrimmar,38.7,38.6
 .turnin 1262 >> Turn in Report to Zor
+.zoneskip Dustwallow Marsh
 step
 .isOnQuest 7541
 .goto Orgrimmar,39.0,38.3
 .turnin 7541 >> Turn in Service to the Horde
+.zoneskip Dustwallow Marsh
 step << wotlk
 #xprate <1.5
 .maxlevel 47
 .goto Orgrimmar,75.1,34.0
 .accept 2981 >> Accept A Threat in Feralas
+.zoneskip Dustwallow Marsh
 step << Druid
 .use 18960 >> Use the spell Teleport to Moonglade
 .goto Moonglade,52.5,40.5
 .trainer >> Go and train your class spells
+.zoneskip Dustwallow Marsh
 step
 #completewith next
 .hs >> Hearth to Brackenwall Village
+.zoneskip Dustwallow Marsh
 step
 #completewith next
 .goto Dustwallow Marsh,35.6,31.9
@@ -11639,12 +11731,6 @@ step
 .complete 1690,2 
 .complete 1690,1 
 .collect 8483,10
-step
-.goto Tanaris,62.22,37.75
->>Look for Caliph Scorpidsting in the area. Kill and loot him for his head
->>Be careful as he has two stealthed adds right next to him
-.complete 2781,1 
-.unitscan Caliph Scorpidsting
 step << wotlk
 .goto Tanaris,67.1,23.9
 .accept 8366 >> Accept Southsea Shakedown
@@ -11664,17 +11750,33 @@ step
 .turnin 992 >> Turn in Gadgetzan Water Survey
 .accept 82 >> Accept Noxious Lair Investigation
 step
+.isQuestComplete 2781
 .goto Tanaris,52.4,28.5
 .turnin 2781 >> Turn in WANTED: Caliph Scorpidsting
+step
+.goto Tanaris,52.4,28.5
 .turnin 1690 >> Turn in Wastewander Justice
 .accept 1691 >> Accept More Wastewander Justice
 .turnin 1707 >> Turn in Water Pouch Bounty
 .turnin 379 >> Turn in Slake That Thirst
 step
+#completewith next
+.goto Tanaris,62.22,37.75,0
+>>Look for Caliph Scorpidsting in the area. Kill and loot him for his head
+>>Be careful as he has two stealthed adds right next to him
+.complete 2781,1 
+.unitscan Caliph Scorpidsting
+step
 .goto Tanaris,59.1,38.6
 .complete 1691,1 
 .complete 1691,2 
 .complete 1691,3 
+step
+.goto Tanaris,62.22,37.75,0
+>>Look for Caliph Scorpidsting in the area. Kill and loot him for his head
+>>Be careful as he has two stealthed adds right next to him
+.complete 2781,1 
+.unitscan Caliph Scorpidsting
 step
 #completewith Southseas
 .use 9250 >>Loot the Ship Schedule from the footlockers that drop from pirates in the area. Don't worry if you dont get this drop
@@ -11747,7 +11849,9 @@ step
 #completewith next
 .hs >> Hearth to Gadgetzan
 .cooldown item,6948,>0
-
+step
+.goto Tanaris,52.4,28.5
+.turnin 2781 >> Turn in WANTED: Caliph Scorpidsting
 step
 .goto Tanaris,52.4,28.5
 .turnin 1691 >> Turn in More Wastewander Justice
@@ -12095,6 +12199,7 @@ step
 >>If the OOX has dropped by now, accept it. If not, grind until it drops.
 .goto Tanaris,51.5,29.0
 .collect 8623,1,351
+.use 8623
 .accept 351 >> Accept Find OOX-17/TN!
 step
 #xprate <1.5
@@ -13253,7 +13358,7 @@ step
 .collect 8529,60
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 45-60
@@ -13264,10 +13369,13 @@ step
 #completewith next
 .goto Orgrimmar,54.2,68.4
 .home >> Set your Hearthstone to Orgrimmar
-step
-#completewith next
+.zoneskip Undercity
+step << !Mage
 .goto Durotar,50.9,13.8
 .zone Tirisfal Glades >>Take the Zeppelin to Undercity
+.zoneskip Undercity
+step << Mage
+.zone Undercity >> Teleport to the Undercity
 step
 .isOnQuest 2342
 .goto Undercity,62.4,48.6
@@ -13284,7 +13392,7 @@ step
 .turnin 521 >> Turn in The Crown of Will
 step
 #completewith next
-.goto Undercity,63.2,48.3,0
+.goto Undercity,63.2,48.3
 .fly Tarren Mill >> Fly to Tarren Mill
 step
 #completewith next
@@ -13303,7 +13411,6 @@ step
 .goto The Hinterlands,39.4,60.2
 .complete 2641,1 
 step
-
 >> Run down to the beach to the horde city and start accepting quests
 .accept 7839 >> Accept Vilebranch Hooligans
 .goto The Hinterlands,77.5,80.2
@@ -13312,8 +13419,11 @@ step
 .accept 7862 >> Accept Job Opening: Guard Captain of Revantusk Village
 .goto The Hinterlands,79.1,79.0
 .accept 7861 >> Accept Wanted: Vile Priestess Hexx and Her Minions
-.accept 7841 >> Accept Message to the Wildhammer
+step
+#xprate <1.5
 .goto The Hinterlands,79.3,79.1
+.accept 7841 >> Accept Message to the Wildhammer
+
 step
 .accept 7829 >> Accept Hunt the Savages
 .accept 7830 >> Accept Avenging the Fallen
@@ -13510,6 +13620,13 @@ step
 .goto The Hinterlands,34.4,55.1
 .complete 2742,1 
 step
+#sticky
+#completewith HinterlandsOOX
+#label owlbeastsucks
+.goto The Hinterlands,52.6,57.4
+.complete 7829,1 
+step
+.isOnQuest 8741
 #requires Highvale1
 .goto The Hinterlands,28.6,46.1,40,0
 .goto The Hinterlands,30.3,43.2,40,0
@@ -13530,29 +13647,37 @@ step
 .complete 7841,3 
 .complete 7841,4 
 step
+#xprate >1.499
+.isQuestComplete 77
+.goto The Hinterlands,26.8,48.7
+.turnin 77 >> Turn in A Sticky Situation
+step
+#xprate >1.499
+.isQuestAvailable 81
+.goto The Hinterlands,26.8,48.7
+.accept 81 >> Accept Ripple Delivery
+step
 .goto The Hinterlands,45.5,63.2
 .complete 7844,1 
 .complete 7844,2 
 step
-#sticky
-#label smaneHL
 .isOnQuest 7828
 .goto The Hinterlands,45.8,54.6,0,0
 .complete 7828,2 
+step
+.goto The Hinterlands,52.6,56.8,40,0
+.goto The Hinterlands,57.6,54.2,40,0
+.goto The Hinterlands,55,8,53.4,40,0
+.goto The Hinterlands,62.8,45.4,40,0
+.goto The Hinterlands,62.6,41.0,40,0
+.goto The Hinterlands,60.6,54.4,40,0
+.goto The Hinterlands,63.8,54.6
 .complete 7828,1 
-step
-#xprate >1.499
-.goto The Hinterlands,52.6,57.4
 .complete 7829,1 
-step
-#xprate <1.5
-.isOnQuest 3128
-.goto The Hinterlands,52.6,57.4
-.complete 7829,1 
-.complete 3128,3 
 step
 #xprate <1.5
 #sticky
+#requires owlbeastsucks
 #label HinterlandsOOX
 >>If you haven't found the Beacon by now, either continue farming until you get one or skip this step.
 .collect 8704,1,485
@@ -13600,6 +13725,7 @@ step
 .goto The Hinterlands,79.3,79.1
 .turnin 7841 >> Turn in Message to the Wildhammer
 step
+#xprate <1.5
 .isQuestTurnedIn 7841
 .goto The Hinterlands,79.3,79.1
 .accept 7842 >> Accept Another Message to the Wildhammer
@@ -13618,47 +13744,58 @@ step
 .turnin 7847 >> Turn in Return to Primal Torntusk
 .turnin 7850 >> Turn in Dark Vessels
 step
-#completewith next
 .goto The Hinterlands,81.7,81.9
 .fp Raventusk Village >> Get the Raventusk Village flight path
 step
-#completewith next
-.goto The Hinterlands,81.7,81.8,0
+.goto The Hinterlands,81.7,81.8
 .fly Tarren Mill >> Fly to Tarren Mill
 step
+#xprate >1.499
+.goto Hillsbrad Foothills,61.5,19.1
+.turnin 2933 >> Turn in Venom Bottles
+step
+#xprate <1.5
 .goto Hillsbrad Foothills,61.5,19.1
 .turnin 2933 >> Turn in Venom Bottles
 .accept 2934 >> Accept Undamaged Venom Sac
 step
+#xprate <1.5
 .isOnQuest 7843
 >> Be careful of guards. They patrol nearby. This quest will also flag you for PVP
 .use 7843 >> Use your Final Message to the Wildhammer
 .goto The Hinterlands,14.3,48.1
 .complete 7843,1 
 step
+#xprate <1.5
 .isQuestComplete 77
 .goto The Hinterlands,26.8,48.7
 .turnin 77 >> Turn in A Sticky Situation
 step
+#xprate <1.5
 .isQuestAvailable 81
 .goto The Hinterlands,26.8,48.7
 .accept 81 >> Accept Ripple Delivery
 step
+#xprate <1.5
 .goto The Hinterlands,30.7,69.9
 >>Kill spiders until you get the Undamaged Venom Sac
 .complete 2934,1 
 step << Mage
+#xprate <1.5
 #completewith next
 .hs >> Hearth to Raventusk Village
 step
+#xprate <1.5
 .isQuestComplete 7843
 .goto The Hinterlands,79.4,79.1
 .turnin 7843 >> Turn in The Final Message to the Wildhammer
 step
+#xprate <1.5
 #completewith next
-.goto The Hinterlands,81.7,81.8,0
+.goto The Hinterlands,81.7,81.8
 .fly Tarren Mill >> Fly to Tarren Mill
 step
+#xprate <1.5
 .goto Hillsbrad Foothills,61.5,19.2
 .turnin 2934 >> Turn in Undamaged Venom Sac
 step << Mage
@@ -13686,15 +13823,25 @@ step
 .turnin 2782 >> Turn in Rin'ji's Secret
 .turnin 8273 >> Turn in Oran's Gratitude
 step
+#xprate <1.5
 .goto Undercity,48.9,71.5
 .accept 3568 >> Accept Seeping Corruption
 step << !Mage
+#xprate <1.5
 #completewith next
 .zone Silvermoon City >> Go to Silvermoon City
 step << Mage
 #completewith next
-.zone Silvermoon City >> Teleport to Silvermoon City
-step
+.zone Silvermoon City >> Teleport to Silvermoon City. Skip these steps if you don't have the cloth
+step << Mage
+>>If you can't get the cloth, skip these steps.
+.goto Silvermoon City,56.5,52.5
+.turnin 10359 >> Turn in A Donation of Wool
+.turnin 10360 >> Turn in A Donation of Silk
+.turnin 10361 >> Turn in A Donation of Mageweave
+.turnin 10362 >> Turn in A Donation of Runecloth
+step << !Mage
+#xprate <1.5
 >>If you can't get the cloth, skip these steps.
 .goto Silvermoon City,56.5,52.5
 .turnin 10359 >> Turn in A Donation of Wool
@@ -13801,7 +13948,7 @@ step
 >>Take the boat to Booty Bay
 .goto Stranglethorn Vale,28.3,76.3
 step
-.isQuestAvailable 3721
+.isQuestTurnedIn 2767
 .goto Stranglethorn Vale,28.3,76.3
 .turnin 3721 >> Turn in An OOX of Your Own
 step
@@ -14256,7 +14403,7 @@ step
 .turnin 2603 >> Turn in Vulture's Vigor
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 45-60
@@ -14301,7 +14448,6 @@ step
 >> Kill all Dark Iron Geologists you see. You may not be able to get them all at the digsite. If not, go to the camp and kill the Geologists there, then go back to the digsite
 .complete 4449,1
 step
-4449
 .goto Searing Gorge,39.10,39.00
 .accept 3441 >> Accept Divine Retribution
 >> Talk to Kalaran Windblade Go through his whole dialogue
@@ -14334,7 +14480,7 @@ step
 step << wotlk
 .isQuestTurnedIn 3441
 .goto Searing Gorge,38.36,27.74
-.accept 7702 >> Accept Kill 'Em With Sleep Deprivation quest
+.accept 7702 >> Accept Kill 'Em With Sleep Deprivation
 step
 .isQuestTurnedIn 3441
 .goto Searing Gorge,38.58,27.80
@@ -14447,12 +14593,11 @@ step
 step
 .zoneskip Searing Gorge,1
 .goto Searing Gorge,43.72,29.81
->> Keep grinding dwarves until you get the Grimesilt Outhouse Key. Accept the quest from it
+.use 11818 >> Keep grinding dwarves until you get the Grimesilt Outhouse Key. Accept the quest from it
 .collect 11818,1,4451
 .accept 4451 >> Accept The Key to Freedom
 step
 .isOnQuest 7729
-#completewith next
 +Logout skip out of the cave. There are MANY different spots you can use
 step
 .isOnQuest 3443
@@ -14466,7 +14611,7 @@ step
 .complete 3452,1
 step
 #requires smithing
-.isQuestComplete 3542
+.isQuestComplete 3452
 .goto Searing Gorge,39.05,38.98
 .turnin 3452 >> Turn in The Flame's Casing
 step
@@ -14603,6 +14748,7 @@ step
 .goto Searing Gorge,38.80,28.50
 .turnin 7722 >> Turn in What the Flux?
 step
+.maxlevel 53
 .isQuestTurnedIn 7729
 #completewith next
 .goto 1415,47.29,68.46,50,0
@@ -14611,10 +14757,12 @@ step
 .goto Burning Steppes,32.09,50.34,50,0
 .zone Burning Steppes >> Travel to the Burning Steppes through Blackrock Mountain
 step
+.maxlevel 53
 .isQuestTurnedIn 7729
 .goto Burning Steppes,65.70,24.20
 .fp Flame Crest >> Get the Burning Steppes Flight Path
 step
+.maxlevel 53
 .isQuestTurnedIn 7729
 .goto Burning Steppes,65.30,23.80
 .accept 4726 >> Accept Broodling Essence
@@ -14652,8 +14800,11 @@ step
 >>Travel back to Flame Crest
 .goto Burning Steppes,65.30,23.80
 .turnin 4726 >> Turn in Broodling Essence
-.accept 4808 >> Accept Felnok Steelspring
 .turnin 4296 >> Turn in Tablet of the Seven
+step
+#xprate <1.5
+.goto Burning Steppes,65.30,23.80
+.accept 4808 >> Accept Felnok Steelspring
 step
 .goto Burning Steppes,77.68,38.23
 .xp 52 >> Grind mobs in the area to level 52
@@ -15094,7 +15245,7 @@ step << Mage
 .zone Orgrimmar >> Teleport to Orgrimmar
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 45-60
@@ -15189,6 +15340,9 @@ step
 step
 .goto Un'Goro Crater,44.7,8.2
 .turnin 3845 >> Turn in It's a Secret to Everybody
+step
+#xprate <1.5
+.goto Un'Goro Crater,44.7,8.2
 .accept 3908 >> Accept It's a Secret to Everybody
 step
 .goto Un'Goro Crater,43.6,8.4
@@ -15216,7 +15370,7 @@ step
 step
 .goto Un'Goro Crater,45.2,5.9
 .fp Un'Goro >> Get the Marshal's Refuge flight path
-step
+step << tbc
 #completewith next
 >> Kill the 3-4 Pterrordax in the area before clicking the pylon. Loot them for Scales
 .goto Un'Goro Crater,56.6,12.6
@@ -15243,9 +15397,16 @@ step
 .skipgossip
 .complete 4287,1 
 step
+.use 11568 >>Open Torwa's Pouch for the two items you need to summon Lar'korwi.
+.use 11569 >> Use the bait in your bag to spawn Lar'korwi.
+.use 11570 >>Lastly, use the Pheromone Mixture to summon him.
+.goto Un'Goro Crater,79.0,49.9
+.complete 4292,1 
+step
 .goto Un'Goro Crater,71.6,75.9
 .turnin 4289 >> Turn in The Apes of Un'Goro
 .accept 4301 >> Accept The Mighty U'cha
+.turnin 4292 >> Turn in The Bait for Lar'korwi
 step
 #xprate <1.5
 #completewith next
@@ -15264,7 +15425,7 @@ step
 #completewith next
 >> Loot the Pterrordax for their scales. This will be completed later if you don't do it now
 .complete 4503,2 
-step
+step << tbc
 >> Kill the Pterrordax found within the mountains.
 .goto Un'Goro Crater,57.6,90.4,40,0
 .goto Un'Goro Crater,50.6,89.8,40,0
@@ -15290,12 +15451,19 @@ step
 .goto Un'Goro Crater,23.87,59.21
 .skipgossip
 .complete 4288,1 
-step
+step << tbc
 #completewith Springs
 .goto Un'Goro Crater,20.95,59.45,80,0
 .goto Un'Goro Crater,36.76,35.47,0
 >>Kill Frenzied Pterrordax. Loot them for their scales
 .complete 4501,2 
+.complete 4503,2 
+step << wotlk
+#completewith Springs
+.goto Un'Goro Crater,20.95,59.45,80,0
+.goto Un'Goro Crater,36.76,35.47,0
+>>Kill Frenzied Pterrordax. Loot them for their scales
+.complete 4501,1 
 .complete 4503,2 
 step
 .goto Un'Goro Crater,30.9,50.2
@@ -15321,6 +15489,9 @@ step
 >>Travel back to Krackle
 .goto Un'Goro Crater,30.9,50.5
 .turnin 974 >> Turn in Finding the Source
+step
+#xprate <1.5
+.goto Un'Goro Crater,30.9,50.5
 .accept 980 >> Accept The New Springs
 step
 #completewith PterrordaxAndys
@@ -15328,22 +15499,35 @@ step
 >>Kill Diemetradons that you see. Loot them for Bones and Scales
 .complete 3882,1 
 .complete 4503,1 
-step
+step << tbc
 #completewith next
 .goto Un'Goro Crater,20.95,59.45,80,0
 .goto Un'Goro Crater,36.76,35.47,0
 >>Kill Frenzied Pterrordax. Loot them for their scales
 .complete 4501,2 
 .complete 4503,2 
+step << wotlk
+#completewith next
+.goto Un'Goro Crater,20.95,59.45,80,0
+.goto Un'Goro Crater,36.76,35.47,0
+>>Kill Frenzied Pterrordax. Loot them for their scales
+.complete 4501,1 
+.complete 4503,2 
 step
 .goto Un'Goro Crater,35.49,43.91
 >>Kill Bloodpetal Trappers that you see
 .complete 4145,2 
-step
+step << tbc
 #label PterrordaxAndys
 .goto Un'Goro Crater,28.23,30.76
 >>Kill Frenzied Pterrordax. Loot them for their scales
 .complete 4501,2 
+.complete 4503,2 
+step << wotlk
+#label PterrordaxAndys
+.goto Un'Goro Crater,28.23,30.76
+>>Kill Frenzied Pterrordax. Loot them for their scales
+.complete 4501,1 
 .complete 4503,2 
 step
 .goto Un'Goro Crater,40.94,41.57
@@ -15418,16 +15602,9 @@ step
 .goto Un'Goro Crater,46.37,13.43
 .turnin 4245 >>Turn in Chasing A-Me 01
 step
-.use 11568 >>Open Torwa's Pouch for the two items you need to summon Lar'korwi.
-.use 11569 >> Use the bait in your bag to spawn Lar'korwi.
-.use 11570 >>Lastly, use the Pheromone Mixture to summon him.
-.goto Un'Goro Crater,79.0,49.9
-.complete 4292,1 
-step
 #label UchaTurnin
 .goto Un'Goro Crater,71.6,76.0
 .turnin 4301 >> Turn in The Mighty U'cha
-.turnin 4292 >> Turn in The Bait for Lar'korwi
 step
 #xprate <1.5
 .goto Un'Goro Crater,67.09,72.94
@@ -16377,13 +16554,15 @@ step
 .fly Ratchet>> Fly to Ratchet
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 45-60
 << Horde
 #name 54-56 Azshara / Felwood / Winterspring
 #next 56-60 Western / Eastern Plaguelands
+#xprate <1.5
+
 step
 #xprate <1.5
 .maxlevel 54
@@ -16999,72 +17178,90 @@ step
 .goto Felwood,46.8,83.0
 .turnin 4108 >>Turn in Salve via Hunting
 step << !Mage
+#xprate <1.5
 #completewith next
 .goto Felwood,51.5,82.2,-1
 .goto The Barrens,63.1,37.2,-1
 .fly Orgrimmar >>Fly to Orgrimmar
 step << Mage
+#xprate <1.5
 #completewith next
 .goto Orgrimmar,38.8,85.6
 .zone Orgrimmar >> Teleport to Orgrimmar
 step << Paladin
+#xprate <1.5
 #completewith next
 .goto Orgrimmar,32.4,35.8
 .trainer >> Go and train your class spells
 step << Shaman
+#xprate <1.5
 #completewith next
 .goto Orgrimmar,38.6,36.0
 .trainer >> Go and train your class spells
 step << Hunter
+#xprate <1.5
 #completewith next
 .goto Orgrimmar,66.1,18.5
 .trainer >> Go and train your class spells
 step << Hunter
+#xprate <1.5
 #completewith next
 .goto Orgrimmar,66.3,14.8
 .trainer >> Go and train your pet spells
 step << Warrior
+#xprate <1.5
 #completewith next
 .goto Orgrimmar,79.7,31.4
 .trainer >> Go and train your class spells
 step << Rogue
+#xprate <1.5
 #completewith next
 .goto Orgrimmar,44.0,54.6
 .trainer >> Go and train your class spells
 step << Warlock
+#xprate <1.5
 #completewith next
 .goto Orgrimmar,48.0,46.0
 .trainer >> Go and train your class spells
-step << Warlock
+step << Warlock tbc
+#xprate <1.5
 #completewith next
 .goto Orgrimmar,47.5,46.7
 .vendor >> Buy the Grimoire of Lash of Pain (Rank 5)
 .collect 16373,1
 step << Mage
+#xprate <1.5
 #completewith next
 .goto Orgrimmar,38.8,85.6
 .trainer >> Go and train your class spells
 step << Priest
+#xprate <1.5
 #completewith next
 .goto Orgrimmar,35.6,87.8
 .trainer >> Go and train your class spells
 step
+#xprate <1.5
 >>Look for Warcaller Gorlach. He walks all around Orgrimmar. If you can't find him, skip it.
 .goto Orgrimmar,36.9,77.7
 .accept 5093 >>Accept A Call to Arms: The Plaguelands!
 .unitscan Warcaller Gorlach
 step
+#xprate <1.5
 .isOnQuest 4300
 .goto Orgrimmar,55.5,34.1
 .turnin 4300 >>Turn in Bone-Bladed Weapons
 step
+#xprate <1.5
 #completewith next
 .abandon 4300 >> Abandon Bone-Bladed Weapons
 step
+#xprate <1.5
 .isOnQuest 3541
 .goto Orgrimmar,55.5,34.1
 .turnin 3541 >>Turn in Delivery to Jes'rimon
 step
+#xprate <1.5
+#completewith next
 .isQuestTurnedIn 3541
 .goto Orgrimmar,55.5,34.1
 .accept 3563 >>Accept Jes'rimon's Payment to Jediga
@@ -17589,7 +17786,7 @@ step << Mage
 .zone Undercity >> Teleport to Undercity
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 45-60
@@ -17597,11 +17794,56 @@ RXPGuides.RegisterGuide([[
 #name 56-60 Western / Eastern Plaguelands
 #next RestedXP Horde 60-70\59-61 Hellfire Peninsula
 step << !Mage
+#completewith next
+.goto Felwood,51.5,82.2,-1
+.goto The Barrens,63.1,37.2,-1
+.fly Orgrimmar >>Fly to Orgrimmar
+step << Paladin
+#completewith next
+.goto Orgrimmar,32.4,35.8
+.trainer >> Go and train your class spells
+step << Shaman
+#completewith next
+.goto Orgrimmar,38.6,36.0
+.trainer >> Go and train your class spells
+step << Hunter
+#completewith next
+.goto Orgrimmar,66.1,18.5
+.trainer >> Go and train your class spells
+step << Hunter
+#completewith next
+.goto Orgrimmar,66.3,14.8
+.trainer >> Go and train your pet spells
+step << Warrior
+#completewith next
+.goto Orgrimmar,79.7,31.4
+.trainer >> Go and train your class spells
+step << Rogue
+#completewith next
+.goto Orgrimmar,44.0,54.6
+.trainer >> Go and train your class spells
+step << Warlock
+#completewith next
+.goto Orgrimmar,48.0,46.0
+.trainer >> Go and train your class spells
+step << Warlock tbc
+#completewith next
+.goto Orgrimmar,47.5,46.7
+.vendor >> Buy the Grimoire of Lash of Pain (Rank 5)
+.collect 16373,1
+step << Priest
+#completewith next
+.goto Orgrimmar,35.6,87.8
+.trainer >> Go and train your class spells
+step << !Mage
 .goto Durotar,50.8,13.8
 .zone Tirisfal Glades >> Take the Zeppelin to Tirisfal Glades
 step << Mage
 .goto Undercity,82.36,15.31
 .zone Undercity >> Teleport to Undercity
+step << Mage
+#completewith next
+.trainer >> Train your class spells
 step << Mage
 #completewith next
 .goto Undercity,82.36,15.31
@@ -17621,6 +17863,10 @@ step
 .goto Tirisfal Glades,83.2,68.6
 .turnin -6029 >>Turn in The Everlook Report
 .turnin -5405 >>Turn in Argent Dawn Commission
+step << wotlk
+#completewith next
+.goto Tirisfal Glades,83.57,69.95
+.fp The Bulwark >> Get The Bulwark flight path
 step
 .goto Tirisfal Glades,83.2,71.4
 .accept 9443 >>Accept The So-Called Mark of the Lightbringer
@@ -17691,6 +17937,13 @@ step
 .goto Western Plaguelands,39.4,66.9
 .accept 4971 >>Accept A Matter of Time
 step
+#sticky
+#completewith towerfour
+.goto Western Plaguelands,45.8,63.3,0
+.goto Western Plaguelands,49.21,69.07,0
+.use 12627 >>Use the Temporal Displacer near the silos of Andorhal to spawn the parasites.
+.complete 4971,1 
+step
 .use 12815 >>Use the Beacon Torch in your bags on the side of the doorway
 .goto Western Plaguelands,40.2,71.5
 .complete 5098,1 
@@ -17703,11 +17956,12 @@ step
 .goto Western Plaguelands,44.2,63.0
 .complete 5098,3 
 step
+#label towerfour
 .use 12815 >>Use the Beacon Torch in your bags on the side of the doorway
 .goto Western Plaguelands,46.7,71.1
 .complete 5098,4 
 step
-.goto Western Plaguelands,45.8,63.3
+.goto Western Plaguelands,49.21,69.07
 .use 12627 >>Use the Temporal Displacer near the silos of Andorhal to spawn the parasites.
 .complete 4971,1 
 step
@@ -17840,134 +18094,135 @@ step
 .unitscan Diseased Grizzly
 step
 >>Travel to Tirion Fordring
-.goto Eastern Plaguelands,7.5,43.6
+.goto EPLClassic,7.5,43.6
 .accept 5542 >>Accept Demon Dogs
 .accept 5543 >>Accept Blood Tinged Skies
 .accept 5544 >>Accept Carrion Grubbage
 step
 #completewith WormMeat
-.goto Eastern Plaguelands,16.80,64.61,0
-.goto Eastern Plaguelands,25.28,70.11,0
-.goto Eastern Plaguelands,30.37,69.59,0
-.goto Eastern Plaguelands,42.26,69.09,0
-.goto Eastern Plaguelands,44.43,82.82,0
-.goto Eastern Plaguelands,57.29,79.85,0
+.goto EPLClassic,16.80,64.61,0
+.goto EPLClassic,25.28,70.11,0
+.goto EPLClassic,30.37,69.59,0
+.goto EPLClassic,42.26,69.09,0
+.goto EPLClassic,44.43,82.82,0
+.goto EPLClassic,57.29,79.85,0
 >>Kill Carrion Worms. Loot them for their Meat
 .complete 5544,1 
 step
 #completewith Pamela
-.goto Eastern Plaguelands,16.80,64.61,0
-.goto Eastern Plaguelands,25.28,70.11,0
-.goto Eastern Plaguelands,30.37,69.59,0
-.goto Eastern Plaguelands,42.26,69.09,0
-.goto Eastern Plaguelands,44.43,82.82,0
-.goto Eastern Plaguelands,57.29,79.85,0
+.goto EPLClassic,16.80,64.61,0
+.goto EPLClassic,25.28,70.11,0
+.goto EPLClassic,30.37,69.59,0
+.goto EPLClassic,42.26,69.09,0
+.goto EPLClassic,44.43,82.82,0
+.goto EPLClassic,57.29,79.85,0
 >>Kill Plaguebats and Plaguehounds in the area
 .complete 5543,1 
 .complete 5542,1 
 step
 .maxlevel 57
-.goto Eastern Plaguelands,26.6,74.8
+.goto EPLClassic,26.6,74.8
 .accept 6022 >>Accept To Kill With Purpose
 .accept 6042 >>Accept Un-Life's Little Annoyances
 .accept 6133 >>Accept The Ranger Lord's Behest
 step
 .maxlevel 57
-.goto Eastern Plaguelands,36.4,90.8
+.goto EPLClassic,36.4,90.8
 .turnin -5601 >>Turn in Sister Pamela
 .accept 5149 >>Accept Pamela's Doll
 step
 .maxlevel 57
 #completewith next
-.goto Eastern Plaguelands,38.25,92.23,20,0
-.goto Eastern Plaguelands,39.58,92.60,20,0
-.goto Eastern Plaguelands,39.63,90.12
+.goto EPLClassic,38.25,92.23,20,0
+.goto EPLClassic,39.58,92.60,20,0
+.goto EPLClassic,39.63,90.12
 >>Find the 3 doll parts scattered around the town on the floor. Kill the mobs guarding them then put the Doll pieces back together.
 .collect 12886,1
 .collect 12887,1
 .collect 12888,1
 step
 .maxlevel 57
-.goto Eastern Plaguelands,36.4,90.8
+.goto EPLClassic,36.4,90.8
 .use 12886 >>Click one of the 3 pieces and combine them together.
 .complete 5149,1 
 step
 .maxlevel 57
 #label Pamela
-.goto Eastern Plaguelands,36.4,90.8
+.goto EPLClassic,36.4,90.8
 .turnin -5149 >>Turn in Pamela's Doll
 .accept 5152 >>Accept Auntie Marlene
 .accept 5241 >>Accept Uncle Carlin
 step
 .maxlevel 57
-.goto Eastern Plaguelands,16.80,64.61,80,0
-.goto Eastern Plaguelands,25.28,70.11,80,0
-.goto Eastern Plaguelands,30.37,69.59,80,0
-.goto Eastern Plaguelands,42.26,69.09,80,0
-.goto Eastern Plaguelands,44.43,82.82,80,0
-.goto Eastern Plaguelands,57.29,79.85,80,0
-.goto Eastern Plaguelands,16.80,64.61
+.goto EPLClassic,16.80,64.61,80,0
+.goto EPLClassic,25.28,70.11,80,0
+.goto EPLClassic,30.37,69.59,80,0
+.goto EPLClassic,42.26,69.09,80,0
+.goto EPLClassic,44.43,82.82,80,0
+.goto EPLClassic,57.29,79.85,80,0
+.goto EPLClassic,16.80,64.61
 >>Kill Plaguebats and Plaguehounds in the area
 .complete 5543,1 
 .complete 5542,1 
 step
 .maxlevel 57
-.goto Eastern Plaguelands,51.67,60.09,90,0
-.goto Eastern Plaguelands,72.94,54.96
+.goto EPLClassic,51.67,60.09,90,0
+.goto EPLClassic,72.94,54.96
 >>Kill Plaguehounds and Noxious Plaguebats in the area
 .complete 5542,2 
 .complete 6042,1 
 step
 .maxlevel 57
 #completewith next
+.goto EPLClassic,62.5,66.5
 >> Get 7 Living Rot from the undead mobs in town and turn it into a Coagulated Rot before they expire
 .collect 15447,7 
 step
 .maxlevel 57
 .use 15454 >> Use the Mortar and Pestle to combine the Living Rot into Coagulated Rot
-.goto Eastern Plaguelands,62.5,66.5
+.goto EPLClassic,62.5,66.5
 .complete 6022,1 
 step
 .maxlevel 57
-.goto Eastern Plaguelands,79.6,63.9
+.goto EPLClassic,79.6,63.9
 .accept 6021 >>Accept Zaeldarr the Outcast
 .accept 5281 >>Accept The Restless Souls
 step
 .maxlevel 57
-.goto Eastern Plaguelands,81.4,59.9
+.goto EPLClassic,81.4,59.9
 .turnin -6030 >>Turn in Duke Nicholas Zverenhoff
 .turnin -5241 >>Turn in Uncle Carlin
 .accept 5211 >>Accept Defenders of Darrowshire
 step
 .maxlevel 57
-.goto Eastern Plaguelands,80.2,57.0
+.goto EPLClassic,80.2,57.0
 .fp Light's Hope Chapel >> Get the Light's Hope Chapel flight path
 step
 .maxlevel 57
 #completewith Memories
 >>These can be hard to find. Kill Ghouls and the Darrowshire Spirits will emerge from the corpses. Talk to them to free their spirit.
-.goto Eastern Plaguelands,77.11,48.00,90,0
-.goto Eastern Plaguelands,67.85,41.13,90,0
-.goto Eastern Plaguelands,63.70,38.55,90,0
-.goto Eastern Plaguelands,77.11,48.00,0
-.goto Eastern Plaguelands,67.85,41.13,0
-.goto Eastern Plaguelands,63.70,38.55,0
-.goto Eastern Plaguelands,61.04,66.91,0
-.goto Eastern Plaguelands,39.02,52.71,0
+.goto EPLClassic,77.11,48.00,110,0
+.goto EPLClassic,67.85,41.13,110,0
+.goto EPLClassic,63.70,38.55,110,0
+.goto EPLClassic,77.11,48.00,0
+.goto EPLClassic,67.85,41.13,0
+.goto EPLClassic,63.70,38.55,0
+.goto EPLClassic,61.04,66.91,0
+.goto EPLClassic,39.02,52.71,0
 .complete 5211,1 
-.unitscan Diseased Flayer,Gibbering Ghoul
+.unitscan Diseased Flayer,Gibbering Ghoul,Diseased Flayer
 step
 .maxlevel 57
 #label WormMeat
-.goto Eastern Plaguelands,46.5,38.7
+.goto EPLClassic,46.5,38.7
 >>Kill Monstrous Plaguebats and Frenzied Plaguehounds
 >>Be careful as Plaguebats can silence for 10 seconds in melee range << !Rogue !Warrior
 .complete 6042,2 
 .complete 5542,3 
 step
 .maxlevel 57
-.goto Eastern Plaguelands,53.81,37.82,90,0
-.goto Eastern Plaguelands,48.90,27.18
+.goto EPLClassic,53.81,37.82,90,0
+.goto EPLClassic,48.90,27.18
 >>Kill Carrion Worms. Loot them for their Meat
 .complete 5544,1 
 .unitscan Carrion Devourer
@@ -17975,11 +18230,11 @@ step
 .maxlevel 57
 #completewith next
 >>Go upstairs in the building and loot the book thats found on the bench
-.goto Eastern Plaguelands,52.1,18.4
+.goto EPLClassic,52.1,18.4
 .complete 6133,4 
 step
 .maxlevel 57
-.goto Eastern Plaguelands,53.1,18.6
+.goto EPLClassic,53.1,18.6
 >>Kill the High Elven mobs in the area. You'll likely have to do 2-3 sweeps and the mobs are difficult. The followups to this quest are VERY efficient though, so persist
 .complete 6133,2 
 .complete 6133,3 
@@ -17987,61 +18242,63 @@ step
 step
 .maxlevel 57
 >>Go upstairs in the building and loot the book thats found on the bench
-.goto Eastern Plaguelands,52.1,18.4
+.goto EPLClassic,52.1,18.4
 .complete 6133,4 
 step
 .maxlevel 57
 >>Loot the Termite Mounds found around Plaguewood. They look like half-cut tree logs
-.goto Eastern Plaguelands,25.68,32.38
+.goto EPLClassic,25.68,32.38
 .complete 5901,1 
 step
 .isQuestComplete 5281
 >>Inside the house
-.goto Eastern Plaguelands,14.5,33.7
+.goto EPLClassic,14.5,33.7
 .turnin 5281 >>Turn in The Restless Souls
 .accept 6164 >>Accept Augustus' Receipt Book
 step
+.isQuestComplete 5281
 >>Second floor of the Inn on the floor
-.goto Eastern Plaguelands,17.5,31.2
+.goto EPLClassic,17.5,31.2
 .complete 6164,1 
 step
+.isQuestComplete 5281
 >> After delivering the quest, you can talk to the guy to vendor and buy a random green item from him in the A Crazy Grab Bag.
-.goto Eastern Plaguelands,14.5,33.6
+.goto EPLClassic,14.5,33.6
 .turnin 6164 >>Turn in Augustus' Receipt Book
 step
-.isQuestTurnedIn 6164
+.isQuestTurnedIn 5281
 #completewith next
-.goto Eastern Plaguelands,27.59,43.33,40,0
-.goto Eastern Plaguelands,24.43,41.00,40,0
-.goto Eastern Plaguelands,23.33,42.30,40,0
-.goto Eastern Plaguelands,21.80,40.36,40,0
-.goto Eastern Plaguelands,19.58,42.98,40,0
-.goto Eastern Plaguelands,18.71,40.81,40,0
-.goto Eastern Plaguelands,16.37,42.00,40,0
-.goto Eastern Plaguelands,10.99,47.75,40,0
+.goto EPLClassic,27.59,43.33,40,0
+.goto EPLClassic,24.43,41.00,40,0
+.goto EPLClassic,23.33,42.30,40,0
+.goto EPLClassic,21.80,40.36,40,0
+.goto EPLClassic,19.58,42.98,40,0
+.goto EPLClassic,18.71,40.81,40,0
+.goto EPLClassic,16.37,42.00,40,0
+.goto EPLClassic,10.99,47.75,40,0
 +Cut through the mountain to save travel time by performing the Eastern PL mountain skip
 .use 8529 >>You MUST have Noggenfogger Elixirs in your bag for this
 step
 .isQuestComplete 5543
-.goto Eastern Plaguelands,7.6,43.7
+.goto EPLClassic,7.6,43.7
 .turnin 5542 >>Turn in Demon Dogs
 .turnin 5543 >>Turn in Blood Tinged Skies
 .turnin 5544 >>Turn in Carrion Grubbage
 .accept 5742 >>Accept Redemption
 step
 .maxlevel 57
-.goto Eastern Plaguelands,7.6,43.7
+.goto EPLClassic,7.6,43.7
 .emote SIT,1855 >>Type /sit when listening to Tirion's Tale.
 .complete 5742,1 
 .skipgossip
 step
 .maxlevel 57
-.goto Eastern Plaguelands,7.6,43.7
+.goto EPLClassic,7.6,43.7
 .turnin 5742 >>Turn in Redemption
 .accept 5781 >>Accept Of Forgotten Memories
 step
 .isQuestComplete 6042
-.goto Eastern Plaguelands,26.6,74.8
+.goto EPLClassic,26.6,74.8
 .turnin 6022 >>Turn in To Kill With Purpose
 .turnin 6042 >>Turn in Un-Life's Little Annoyances
 .turnin 6133 >>Turn in The Ranger Lord's Behest
@@ -18050,8 +18307,8 @@ step
 step
 .maxlevel 57
 >> Duskwing patrolls nearby, walk around looking for him. Kill and loot him for his fur
-.goto Eastern Plaguelands,46.2,64.0,40,0
-.goto Eastern Plaguelands,27.2,73.6
+.goto EPLClassic,46.2,64.0,40,0
+.goto EPLClassic,27.2,73.6
 .complete 6135,1 
 .unitscan Duskwing
 step
@@ -18064,19 +18321,19 @@ step
 >> Split pull the pack that spawns with Volley. Kite Mercutio away until the other mobs break leash << Hunter
 >> Stealth into the middle of the pack that spawns, then de-stealth, immediately aggroing all mobs at once. Keep refreshing leash on Mercutio whilst sprinting away from the other mobs << Rogue
 >> Stealth into the middle of the pack that spawns, then de-stealth, immediately aggroing all mobs at once. Keep refreshing leash on Mercutio whilst dashing away from the other mobs << Druid
-.goto Eastern Plaguelands,28.4,85.3
+.goto EPLClassic,28.30,86.89
 .complete 5781,1 
 step
 .maxlevel 57
 #sticky
 #label HameyaP
-.goto Eastern Plaguelands,27.3,85.4
+.goto EPLClassic,27.3,85.4
 >>Loot the scroll on the ground inside of the crypt
 .accept 6024 >>Accept Hameya's Plea
 step
 .maxlevel 57
 >>Go into the crypt. Kill Zaeldarr
-.goto Eastern Plaguelands,27.4,85.1
+.goto EPLClassic,27.4,85.1
 .complete 6021,1 
 .unitscan Zaeldarr the Outcast
 step
@@ -18084,35 +18341,35 @@ step
 #requires HameyaP
 #label Memories
 .isQuestComplete 5781
-.goto Eastern Plaguelands,7.4,43.7
+.goto EPLClassic,7.4,43.7
 .turnin 5781 >>Turn in Of Forgotten Memories
 .accept 5845 >>Accept Of Lost Honor
 step
 .maxlevel 57
 #completewith next
 >>These can be hard to find. Kill Ghouls and the Darrowshire Spirits will emerge from the corpses. Talk to them to free their spirit.
-.goto Eastern Plaguelands,61.04,66.91,90,0
-.goto Eastern Plaguelands,39.02,52.71,150,0
-.goto Eastern Plaguelands,77.11,48.00,0
-.goto Eastern Plaguelands,67.85,41.13,0
-.goto Eastern Plaguelands,63.70,38.55,0
-.goto Eastern Plaguelands,77.11,48.00,0
-.goto Eastern Plaguelands,67.85,41.13,0
-.goto Eastern Plaguelands,63.70,38.55,0
+.goto EPLClassic,61.04,66.91,90,0
+.goto EPLClassic,39.02,52.71,150,0
+.goto EPLClassic,77.11,48.00,0
+.goto EPLClassic,67.85,41.13,0
+.goto EPLClassic,63.70,38.55,0
+.goto EPLClassic,77.11,48.00,0
+.goto EPLClassic,67.85,41.13,0
+.goto EPLClassic,63.70,38.55,0
 .complete 5211,1 
-.unitscan Diseased Flayer,Gibbering Ghoul
+.unitscan Diseased Flayer,Gibbering Ghoul,Diseased Flayer
 step
 .maxlevel 57
-.goto Eastern Plaguelands,56.3,31.0
+.goto EPLClassic,56.3,31.0
 >>He patrols around this area. Find him & kill him.
 .complete 6136,1 
 .unitscan Borelgore
 step
 .maxlevel 57
-.goto Eastern Plaguelands,65.28,24.77,90,0
-.goto Eastern Plaguelands,64.58,21.56,90,0
-.goto Eastern Plaguelands,69.19,22.04,40,0
-.goto Eastern Plaguelands,69.7,18.6
+.goto EPLClassic,65.28,24.77,90,0
+.goto EPLClassic,64.58,21.56,90,0
+.goto EPLClassic,69.19,22.04,40,0
+.goto EPLClassic,69.7,18.6
 >>You should be able to avoid all the mobs en route up the mountain. Run past them all then run up the mountains to the east
 >>Kill Infiltrator Hameya. Loot him for his key
 .complete 6024,1 
@@ -18121,19 +18378,19 @@ step
 .maxlevel 57
 .isQuestTurnedIn 5781
 >>Loot the banner underwater
-.goto Eastern Plaguelands,71.3,33.9
+.goto EPLClassic,71.3,33.9
 .complete 5845,1 
 step
 .isQuestComplete 6021
-.goto Eastern Plaguelands,79.6,63.9
+.goto EPLClassic,79.6,63.9
 .turnin 6021 >>Turn in Zaeldarr the Outcast
 step
 .isQuestComplete 5211
-.goto Eastern Plaguelands,81.5,59.9
+.goto EPLClassic,81.5,59.9
 .turnin 5211 >>Turn in Defenders of Darrowshire
 step << !Mage
 #completewith next
-.goto Eastern Plaguelands,80.2,57.1
+.goto EPLClassic,80.2,57.1
 .fly Undercity >>Fly to Undercity
 step << Mage
 #completewith next
@@ -18196,9 +18453,17 @@ step
 .goto Undercity,57.3,91.3
 >> Head to the Undercity
 .accept 5961 >>Accept The Champion of the Banshee Queen
-step
+step << tbc
 .isQuestComplete 964
 >>Travel back to The Bulwark
+.goto Tirisfal Glades,83.3,69.2
+.turnin 964 >>Turn in Skeletal Fragments
+step << wotlk
+#completewith next
+.goto Undercity,63.2,48.3
+.fly The Bulwark >> Fly to The Bulwark
+step << wotlk
+.isQuestComplete 964
 .goto Tirisfal Glades,83.3,69.2
 .turnin 964 >>Turn in Skeletal Fragments
 step
@@ -18206,7 +18471,7 @@ step
 .goto Tirisfal Glades,83.2,71.4
 .turnin 9443 >>Turn in The So-Called Mark of the Lightbringer
 step
-.isQuestComplete 9443
+.isQuestTurnedIn 9443
 .goto Tirisfal Glades,83.2,71.4
 .accept 9444 >>Accept Defiling Uther's Tomb
 step
@@ -18240,7 +18505,7 @@ step
 .goto Western Plaguelands,49.6,76.8
 .complete 5153,1 
 step
-.isQuestComplete 9443
+.isOnQuest 9444
 .goto Western Plaguelands,52.1,83.3
 .use 23691 >>Use the Corrupted Mark of the Lightbringer.
 .complete 9444,1 
@@ -18303,7 +18568,7 @@ step
 .goto Western Plaguelands,51.9,28.1
 .turnin 6025 >>Turn in Unfinished Business
 step
-.isQuestComplete 9443
+.isQuestComplete 9444
 .goto Tirisfal Glades,83.2,71.4
 >>Speak to Kirsta Deepshadow
 .turnin 9444 >>Turn in Defiling Uther's Tomb
@@ -18323,11 +18588,11 @@ step
 .turnin 5408 >>Turn in Minion's Scourgestones
 step
 .isOnQuest 5845
-.goto Eastern Plaguelands,7.5,43.6
+.goto EPLClassic,7.5,43.6
 .turnin 5845 >>Turn in Of Lost Honor
 step
 .maxlevel 57
-.goto Eastern Plaguelands,7.5,44.0
+.goto EPLClassic,7.5,44.0
 .accept 5846 >>Accept Of Love and Family
 step
 .maxlevel 57
@@ -18336,28 +18601,28 @@ step
 .accept 5848 >>Accept Of Love and Family
 step
 .isQuestComplete 6135
-.goto Eastern Plaguelands,26.6,74.7
+.goto EPLClassic,26.6,74.7
 .turnin 5961 >>Turn in The Champion of the Banshee Queen
 .turnin 6135 >>Turn in Duskwing, Oh How I Hate Thee...
 .turnin 6136 >>Turn in The Corpulent One
 step
 .isQuestComplete 6024
-.goto Eastern Plaguelands,28.1,86.1
+.goto EPLClassic,28.1,86.1
 .turnin 6024 >>Turn in Hameya's Plea
 step
 .maxlevel 57
-.goto Eastern Plaguelands,81.0,57.6
+.goto EPLClassic,81.0,57.6
 .accept 9141 >>Accept They Call Me "The Rooster"
 .turnin 9141 >>Turn in They Call Me "The Rooster"
 step
 .isQuestComplete 9126
 >>If you didn't get 30 Bone Fragments earlier, skip this step
-.goto Eastern Plaguelands,81.4,58.4
+.goto EPLClassic,81.4,58.4
 .accept 9126 >>Accept Bonescythe Digs
 .turnin 9126 >>Turn in Bonescythe Digs
 step
 .isOnQuest 5210
-.goto Eastern Plaguelands,81.5,59.7
+.goto EPLClassic,81.5,59.7
 .turnin 5210 >>Turn in Brother Carlin
 step
 #completewith next
@@ -18446,7 +18711,7 @@ step << Warlock
 #completewith next
 .goto Orgrimmar,48.0,46.0
 .trainer >> Go and train your class spells
-step << Warlock
+step << Warlock tbc
 #completewith next
 .goto Orgrimmar,47.5,46.7
 .vendor >> Buy a Grimoire of Lash of Pain (Rank 6)
@@ -18461,6 +18726,7 @@ step << Priest
 .trainer >> Go and train your class spells
 step << wotlk
 #completewith next
+.goto Orgrimmar,38.1,85.8
 .zone Blasted Lands >> Take the portal to Blasted Lands
 step << !wotlk
 #completewith next
@@ -19228,7 +19494,7 @@ step
 .hs >> Hearth to Everlook
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 60-70
@@ -19568,6 +19834,7 @@ step
 .turnin 10813 >> Turn in The Eyes of Grillok
 .accept 10834 >> Accept Grillok "Darkeye"
 step
+.isQuestComplete 9345
 #completewith end
 #label Salve1
 >>Talk to Grelag
@@ -19891,6 +20158,7 @@ step
 .accept 10864 >> Accept A Burden of Souls
 .goto Hellfire Peninsula,52.28,36.46
 step
+.skill riding,<225,1
 #completewith next
 .goto Hellfire Peninsula,55.10,33.81,30,0
 .goto Hellfire Peninsula,55.87,33.16,20 >> Walk up the path here
@@ -19930,22 +20198,6 @@ step
 .goto Hellfire Peninsula,47.28,42.34
 >>Loot the wooden boxes on the ground in the area
 .complete 10236,1 
-step
-.goto Hellfire Peninsula,49.02,37.63,50,0
-.goto Hellfire Peninsula,47.98,37.39,50,0
-.goto Hellfire Peninsula,48.41,40.86,50,0
-.goto Hellfire Peninsula,47.28,42.34,50,0
-.goto Hellfire Peninsula,48.85,35.37,50,0
-.goto Hellfire Peninsula,49.02,37.63,50,0
-.goto Hellfire Peninsula,47.98,37.39,50,0
-.goto Hellfire Peninsula,48.41,40.86,50,0
-.goto Hellfire Peninsula,47.28,42.34,50,0
-.goto Hellfire Peninsula,48.85,35.37,50,0
-.goto Hellfire Peninsula,49.02,37.63,50,0
-.goto Hellfire Peninsula,47.98,37.39
-.use 23338 >>Kill Marauding Curst Bursters by running over the moving rocks in the area. Loot them for an Eroded Leather Case. Click it in your bags
-.collect 23338,1,9373,1 
-.accept 9373 >> Accept Missing Missive
 step
 .goto Hellfire Peninsula,51.37,30.52
 >>Talk to Razelcraz
@@ -20019,6 +20271,22 @@ step
 .goto Hellfire Peninsula,51.37,30.52
 >>Talk to Razelcraz
 .turnin 10630 >> Turn in Beneath Thrallmar
+step
+.goto Hellfire Peninsula,49.02,37.63,50,0
+.goto Hellfire Peninsula,47.98,37.39,50,0
+.goto Hellfire Peninsula,48.41,40.86,50,0
+.goto Hellfire Peninsula,47.28,42.34,50,0
+.goto Hellfire Peninsula,48.85,35.37,50,0
+.goto Hellfire Peninsula,49.02,37.63,50,0
+.goto Hellfire Peninsula,47.98,37.39,50,0
+.goto Hellfire Peninsula,48.41,40.86,50,0
+.goto Hellfire Peninsula,47.28,42.34,50,0
+.goto Hellfire Peninsula,48.85,35.37,50,0
+.goto Hellfire Peninsula,49.02,37.63,50,0
+.goto Hellfire Peninsula,47.98,37.39
+.use 23338 >>Kill Marauding Curst Bursters by running over the moving rocks in the area. Loot them for an Eroded Leather Case. Click it in your bags
+.collect 23338,1,9373,1 
+.accept 9373 >> Accept Missing Missive
 step
 #completewith next
 .goto Hellfire Peninsula,45.35,46.03
@@ -20097,6 +20365,7 @@ step
 .goto Hellfire Peninsula,55.01,35.96
 .isQuestComplete 10136
 step
+#xprate <1.5
 #label Thrallmar3
 >>Return to Thrallmar. Talk to Antonivich, Bloodhawk, Nazgrel, and then Regulkut
 .turnin 10838 >> Turn in The Demoniac Scryer
@@ -20111,6 +20380,22 @@ step
 .goto Hellfire Peninsula,55.01,35.96
 .turnin 9405 >> Turn in The Warchief's Mandate
 .accept 9410 >> Accept A Spirit Guide
+.goto Hellfire Peninsula,54.23,37.90
+step
+#xprate >1.499
+#label Thrallmar3
+>>Return to Thrallmar. Talk to Antonivich, Bloodhawk, Nazgrel, and then Regulkut
+.turnin 10838 >> Turn in The Demoniac Scryer
+.accept 10875 >> Accept Report to Nazgrel
+.goto Hellfire Peninsula,52.28,36.46
+.turnin 10389 >> Turn in The Agony and the Darkness
+.goto Hellfire Peninsula,55.14,37.28,20,0
+.goto Hellfire Peninsula,55.13,36.03
+.turnin 10875 >> Turn in Report to Nazgrel
+.turnin 9401 >> Turn in A Strange Weapon
+.accept 9405 >> Accept The Warchief's Mandate
+.goto Hellfire Peninsula,55.01,35.96
+.turnin 9405 >> Turn in The Warchief's Mandate
 .goto Hellfire Peninsula,54.23,37.90
 step << skip
 >>Return to Thrallmar. Talk to Antonivich, Bloodhawk, Nazgrel, and then Regulkut
@@ -20210,6 +20495,10 @@ step
 >>Talk to Taleris
 .turnin 9375 >> Turn in The Road to Falcon Watch
 .accept 9376 >> Accept A Pilgrim's Plight
+step << DK/Druid
+#xprate >1.499
+.goto Hellfire Peninsula,26.9,59.6
+.home >> Set your Hearthstone to Falcon Watch
 step
 #completewith next
 >>Talk to Magister Aledis on the road if you see him. Kill him
@@ -20318,6 +20607,7 @@ step
 .timer 240,A Spirit Guide RP
 .use 23669
 step
+#xprate <1.5
 .goto Hellfire Peninsula,33.62,43.53,0
 .goto Hellfire Peninsula,32.00,27.80
 >>Escort the wolf and make sure you stay next to him.
@@ -20361,8 +20651,13 @@ step << DK
 >>Go through the Death Gate
 .trainer >> Train your class spells from Amal'Thazad in Acherus
 step
+#xprate <1.5
 #completewith next
 .hs >> Hearth to Thrallmar
+step << DK/Druid
+#xprate >1.499
+#completewith next
+.hs >> Hearth to Falcon Watch
 step << skip
 .goto Hellfire Peninsula,55.14,37.28,20,0
 .goto Hellfire Peninsula,55.01,35.96
@@ -20371,12 +20666,14 @@ step << skip
 .turnin 10876 >> Turn in The Foot of the Citadel
 .accept 9438 >>Accept Messenger to Thrall
 step
+#xprate <1.5
 .goto Hellfire Peninsula,55.14,37.28,20,0
 .goto Hellfire Peninsula,55.01,35.96
 >>Return to Thrallmar. Talk to Nazgrel
 .turnin 9406 >>Turn in The Mag'har
 .accept 9438 >>Accept Messenger to Thrall
 step
+#xprate <1.5
 #completewith next
 .goto Hellfire Peninsula,56.29,36.24
 .fly Falcon Watch >> Fly to Falcon Watch
@@ -20767,7 +21064,6 @@ step
 *At the last wave, you can ignore the 2 adds, kill the queen and loot the quest item
 >>Be careful, as this quest is VERY Hard if you haven't done it before
 .complete 4507,1
-
 step
 #completewith next
 .goto Silithus,88.09,23.43,70,0
@@ -21182,13 +21478,1272 @@ step
 .turnin 4511 >> Turn in Calm Before the Storm
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#tbc
+#wotlk
+#version 7
+#group TBC Dungeon Cleave
+#version 7
+<< Horde
+#name 60-70 Horde Dungeon Cleave
+step
+#sticky
+#completewith next
++Welcome to the RXP 60-70 Dungeon Cleave Leveling Guide. All Quests included in this route are group friendly. If an area is too crowded, feel free to skip any quests and make up for the xp in the next Dungeon - have fun!
+step
+.goto Blasted Lands,58.1,56.0
+.accept 9407 >>Accept Through the Dark Portal
+step
+.goto Blasted Lands,58.7,60.0
+.zone Hellfire Peninsula >>Walk through The Dark Portal
+step
+.goto Hellfire Peninsula,87.4,49.8
+.turnin 9407 >>Turn in Through the Dark Portal
+.accept 10120 >>Accept Arrival in Outland
+step
+.goto Hellfire Peninsula,87.3,48.1
+.fp Dark Portal >> Get the The Stair of Destiny flight path
+step
+.goto Hellfire Peninsula,87.3,48.1
+.turnin 10120 >>Turn in Arrival in Outland
+.accept 10289 >>Accept Journey to Thrallmar
+step
+.goto Hellfire Peninsula,87.3,48.1
+.fly Thrallmar >>Fly to Thrallmar
+step
+.goto Hellfire Peninsula,55.9,36.9
+.turnin 10289 >>Turn in Journey to Thrallmar
+.accept 10291 >>Accept Report to Nazgrel
+step
+.goto Hellfire Peninsula,56.7,37.5
+.home >>Set your Hearthstone to Thrallmar
+step
+.goto Hellfire Peninsula,56.8,37.8
+.vendor >>Go to the Gem Vendor Reagan Mancuso and purchase starter gems relevant to your class for future use. Also, if you are maxed in your professions Thrallmar has all the Master trainers.
+step
+.goto Hellfire Peninsula,55.0,36.0
+.turnin 10291 >>Turn in Report to Nazgrel
+.accept 10121 >>Accept Eradicate the Burning Legion
+step
+.goto Hellfire Peninsula,58.1,41.3
+.turnin 10121 >>Turn in Eradicate the Burning Legion
+.accept 10123 >>Accept Felspark Ravine
+step
+.goto Hellfire Peninsula,62.4,37.3
+>>Go to Felspark Ravine and do this quest with your Dungeon Group.
+.complete 10123,1 
+.complete 10123,2 
+.complete 10123,3 
+step
+.goto Hellfire Peninsula,58.1,41.3
+.turnin 10123 >>Turn in Felspark Ravine
+.accept 10124 >>Accept Forward Base: Reaver's Fall
+step << !BloodElf
+.goto Hellfire Peninsula,65.9,43.6
+.turnin 10124 >>Turn in Forward Base: Reaver's Fall
+.accept 9498 >>Accept Falcon Watch
+step << BloodElf
+.goto Hellfire Peninsula,65.9,43.6
+.turnin 10124 >>Turn in Forward Base: Reaver's Fall
+>>Blood Elves are unable to pick up the Falcon Watch Quest.
+step
+.goto Hellfire Peninsula,55.2,36.0
+>>Go back to Thrallmar
+.accept 9572 >>Accept Weaken the Ramparts
+step
+.goto Hellfire Peninsula,47.6,53.6
+.xp 60 >>Clear Hellfire Ramparts.
+>>The last boss "Vazruden the Herald" will drop an item called "Ominous Letter". Accept the quest from it.
+.collect 23890,1,9588
+.accept 9588 >>Accept Dark Tidings
+step
+.goto Hellfire Peninsula,87.3,48.1
+.hs >>Hearth to Thrallmar
+step
+.goto Hellfire Peninsula,55.2,36.0
+.turnin 9572 >>Turn in Weaken the Ramparts
+.turnin 9588 >>Turn in Dark Tidings
+step
+.goto Hellfire Peninsula,54.9,36.0
+.accept 9590 >>Accept The Blood is Life
+.accept 9608 >>Accept Heart of Rage
+step
+.goto Hellfire Peninsula,46.0,58.7,20,0
+.goto Hellfire Peninsula,46.1,51.7,20 >> Travel to Blood Furnace. At the waypoint look for wooden stairs that lead up to the wall. Riding along this wall will take you to the instance.
+step
+#sticky
+>>Loot Fel Orc Blood Vials from the orcs
+.complete 9590,1
+step
+#sticky
+>>Reach the last boss of The Blood Furnace
+.complete 9608,1
+step
+.xp 62 >> Grind Blood Furnace to Level 62.
+step << Druid
+>> Use the spell Teleport to Moonglade
+.goto Moonglade,52.5,40.5
+.trainer >> Go and train your class spells
+step
+.goto Hellfire Peninsula,87.3,48.1
+.hs >>Hearth to Thrallmar
+step
+.goto Hellfire Peninsula,54.9,36.0
+.turnin 9590 >>Turn in The Blood is Life
+.turnin 9608 >>Turn in Heart of Rage
+step << !BloodElf
+.goto Hellfire Peninsula,28.5,60.2
+.turnin 9498 >>Turn in Falcon Watch.
+.accept 10103 >>Accept Report to Zurai
+>>Ranger Captain Venn'ren is at the top of the Tower. Click the Orb at the Base of the Tower to be teleported to the top.
+step << BloodElf
+.goto Hellfire Peninsula,28.5,60.2
+.accept 10103 >>Accept Report to Zurai
+>>Ranger Captain Venn'ren is at the top of the Tower. Click the Orb at the Base of the Tower to be teleported to the top.
+step
+.goto Hellfire Peninsula,27.8,60.0
+.fp Falcon Watch >> Get the Falcon Watch flight path
+step
+.goto Hellfire Peninsula,27.7,60.3
+.accept 10442 >>Accept Helping the Cenarion Post
+step
+.goto Hellfire Peninsula,16.0,52.2
+.accept 9912 >>Accept The Cenarion Expedition
+step
+.goto Hellfire Peninsula,15.7,52.1
+.turnin 10442 >>Turn in Helping the Cenarion Post
+.accept 10132 >>Accept Colossal Menace
+step
+.goto Hellfire Peninsula,15.6,47.0
+.complete 10132,1 
+>>These Colossi will drop an item called "Crimson Crystal Shard". Accept the quest from this item.
+.collect 29476,1,10134
+.accept 10134 >>Accept Crimson Crystal Clue
+step
+.goto Hellfire Peninsula,15.6,52.1
+.turnin 10132 >>Turn in Colossal Menace
+.turnin 10134 >>Turn in Crimson Crystal Clue
+.accept 10349 >>Accept The Earthbinder
+step
+.goto Hellfire Peninsula,16.0,51.6
+.turnin 10349 >>Turn in The Earthbinder
+.accept 10351 >>Accept Natural Remedies
+step
+>>Defeat Goliathon (63 Elite Elemental)
+.goto Hellfire Peninsula,13.4,38.2
+.complete 10351,1 
+step
+.goto Hellfire Peninsula,16.0,51.6
+.turnin 10351 >>Turn in Natural Remedies
+step
+>>Travel west into Zangarmarsh.
+.goto Zangarmarsh,78.5,63.0
+.home >>Set your Hearthstone to Cenarion Refuge.
+step
+.goto Zangarmarsh,78.4,62.1
+.turnin 9912 >>Turn in The Cenarion Expedition
+.accept 9716 >>Accept Disturbance at Umbrafen Lake
+.accept 9778 >>Accept Warden Hamoot
+step
+.goto Zangarmarsh,78.6,63.2
+.accept 9957 >>Accept What's Wrong at Cenarion Thicket?
+step
+.goto Zangarmarsh,79.1,64.9
+.accept 9730 >>Accept Leader of the Darkcrest
+.accept 9817 >>Accept Leader of the Bloodscale
+step
+>>Ride north around the small lake to reach the Darkcrest Enclave.
+.goto Zangarmarsh,65.1,68.7
+.complete 9730,1
+step
+.goto Zangarmarsh,69.8,78.5
+.complete 9716,1 
+step
+#sticky
+#completewith next
+.goto Terokkar Forest,33.1,6.1,100,0
+.zone Terokkar Forest >> Follow the road southeast until you reach Terokkar Forest.
+step
+>>Follow the road until you reach the bridge leading into Shattrath City. Look for a "Haggard War Veteran" walking around who has a Quest.
+.goto Shattrath City,60.7,14.9
+.accept 10210 >>Accept A'dal
+step
+.goto Shattrath City,63.9,40.9
+.fp Shattrath >> Get the Shattrath City flight path
+step
+.goto Shattrath City,54.1,44.5
+>>Speak to A'dal
+.turnin 10210 >>Turn in A'dal
+.accept 10211 >>Accept City of Light
+step
+.goto Shattrath City,50.8,42.2
+.complete 10211,1 
+step
+.goto Shattrath City,54.9,44.3
+.turnin 10211 >>Turn in City of Light
+>>Choose your allegiance: "Aldor" or "Scryer" then pickup follow up Quest.
+step << Druid
+>> Use the spell Teleport to Moonglade
+.goto Moonglade,52.5,40.5
+.trainer >> Go and train your class spells
+step << !Druid
+#sticky
+#completewith next
++Take the Portal to Orgrimmar
+.goto Shattrath City,52.2,52.8
+step << !Druid
+.zone Orgrimmar >> Go to Orgrimmar
+step << Paladin
+.goto Orgrimmar,32.4,35.8
+.trainer >> Go and train your class spells
+step << Shaman
+.goto Orgrimmar,38.6,36.0
+.trainer >> Go and train your class spells
+step << Hunter
+.goto Orgrimmar,66.1,18.5
+.trainer >> Go and train your class spells
+step << Warrior
+.goto Orgrimmar,79.7,31.4
+.trainer >> Go and train your class spells
+step << Rogue
+.goto Orgrimmar,44.0,54.6
+.trainer >> Go and train your class spells
+step << Warlock
+.goto Orgrimmar,48.0,46.0
+.trainer >> Go and train your class spells
+step << Mage
+.goto Orgrimmar,38.8,85.6
+.trainer >> Go and train your class spells
+step << Priest
+.goto Orgrimmar,35.6,87.8
+.trainer >> Go and train your class spells
+step << !Druid
+#sticky
+#completewith next
+.goto Orgrimmar,52.7,49.1
++Ghetto Hearth using Ragefire Chasm. Zone into Ragefire Chasm then drop group. Reform Party once everyone is ported back to Cenarion Refuge.
+step << Druid
+#sticky
+#completewith next
+.hs >> Hearth to Cenarion Refuge
+step
+.zone Zangarmarsh >> Go to Zangarmarsh
+step
+.goto Zangarmarsh,78.4,62.1
+.turnin 9716 >>Turn in Disturbance at Umbrafen Lake
+.accept 9718 >>Accept As the Crow Flies
+step
+.goto Zangarmarsh,77.1,44.2
+.complete 9718,1 
+step
+.goto Zangarmarsh,78.4,62.1
+.turnin 9718 >>Turn in As the Crow Flies
+step
+.goto Zangarmarsh,79.3,63.7
+.vendor >>You are about to run Slave Pens for a while. Make sure everyone is repaired and restocked on consumables.
+step
+.goto Zangarmarsh,65.2,40.9
+.complete 9817,1 
+>>Make sure to move outside of the Ring of Frost ability she puts on the ground as it does apx. 4,000 damage.
+step
+#sticky
+#completewith next
+.goto Zangarmarsh,50.4,40.8,15,0
+.goto Zangarmarsh,51.9,37.8,20 >>Swim to the center of Coilfang Reservoir until you are over the open drain pipe below. Dive and swim through it until you find the underwater cavern.
+step
+.goto Zangarmarsh,52.3,36.0
+.accept 9738 >>Accept Lost in Action
+step
+.goto Zangarmarsh,48.9,35.7,20 >> Enter The Slave Pens
+step
+#sticky
+#label SPDruids
+>> Naturalist Bite is just before Quagmirran (Last boss), left of his pool in the cage
+>> Weeder Greenthumb is in between Mennu and Rokmar (1st and 2nd bosses), up the ramp after jumping from the bridge
+.complete 9738,2
+.complete 9738,3
+step
+.xp 64 >>Run Slave Pens to Level 64.
+step
+#requires SPDruids
+.goto Zangarmarsh,48.9,35.7,20 >>Run out of Slave Pens
+step
+.goto Zangarmarsh,54.3,34.4,20 >> Enter The Underbog
+step
+>>Run The Underbog once
+>>Earthbinder Rayge is stealthed on the left side of the fork in the road after Ghaz'an (2nd boss), and just before it goes down to the Fen rays
+>>Windcaller Claw is the pet of Swamplord Musel'ek (3rd boss). Kill Claw to free him, then talk to him to get credit
+.complete 9738,1
+.complete 9738,4
+step
+>>Kill the Black Stalker after Musel'ek, then exit The Underbog
+.goto Zangarmarsh,54.3,34.4,20
+step
+.goto Zangarmarsh,52.3,36.0
+.turnin 9738 >>Turn in Lost in Action
+step
+#completewith next
+.hs >>Hearth to Cenarion Refuge
+step
+.goto Zangarmarsh,80.4,64.7
+.accept 9785 >>Accept Blessings of the Ancients
+>>These Ancients have very small Patrols throughout the town. Note: This quest was not acceptable until Friendly with Cenarion.
+step
+.goto Zangarmarsh,81.1,64.0
+.complete 9785,1 
+step
+.goto Zangarmarsh,79.2,64.1
+.complete 9785,2 
+step
+.goto Zangarmarsh,80.4,64.7
+.turnin 9785 >>Turn in Blessings of the Ancients
+step
+>>Speak to Warden Hamoot.
+.goto Zangarmarsh,79.1,65.3
+.turnin 9817 >>Turn in Leader of the Bloodscale
+.turnin 9730 >>Turn in Leader of the Darkcrest
+step
+.goto Zangarmarsh,84.7,55.1
+.fp Swamprat >> Get the Swamprat Post flight path.
+.fly Shattrath City >>Fly to Shattrath City
+step
+#scryer
+.goto Shattrath City,41.7,38.6,20,0
+.goto Shattrath City,56.3,81.5
+.home >>Set Your Hearthstone to Shattrath City
+step
+#aldor
+.goto Shattrath City,50.0,62.8,20,0
+.goto Shattrath City,28.3,49.4
+.home >>Set Your Hearthstone to Shattrath City
+step
+#sticky
+#completewith next
++Take the Portal to Orgrimmar
+.goto Shattrath City,52.2,52.8
+step
+.zone Orgrimmar >> Go to Orgrimmar
+step << Paladin
+.goto Orgrimmar,32.4,35.8
+.trainer >> Go and train your class spells
+step << Shaman
+.goto Orgrimmar,38.6,36.0
+.trainer >> Go and train your class spells
+step << Hunter
+.goto Orgrimmar,66.1,18.5
+.trainer >> Go and train your class spells
+step << Warrior
+.goto Orgrimmar,79.7,31.4
+.trainer >> Go and train your class spells
+step << Rogue
+.goto Orgrimmar,44.0,54.6
+.trainer >> Go and train your class spells
+step << Warlock
+.goto Orgrimmar,48.0,46.0
+.trainer >> Go and train your class spells
+step << Mage
+.goto Orgrimmar,38.8,85.6
+.trainer >> Go and train your class spells
+step << Priest
+.goto Orgrimmar,35.6,87.8
+.trainer >> Go and train your class spells
+step
+#sticky
+#completewith next
+.goto Orgrimmar,52.7,49.1
++Ghetto Hearth using Ragefire Chasm. Zone into Ragefire Chasm then drop group. Reform Party once everyone is ported back to Shattrath City.
+step
+.zone Shattrath City >> Go to Shattrath City
+step
+.goto Shattrath City,67.8,51.5,40 >>Exit Shattrath City through the Southeast Bridge.
+step
+>>Follow the road until you reach Earthbinder Tavgren.
+.goto Terokkar Forest,44.3,26.3
+.turnin 9957 >>Turn in What's Wrong at Cenarion Thicket?
+.accept 9971 >>Accept Clues in the Thicket
+step
+.goto Terokkar Forest,45.1,21.8
+.complete 9971,1 
+step
+>>Look for a Night Elf Druid named Warden Treelos. He can spawn in 3 locations in this small town. If he dies he has a small 3 minute respawn timer.
+.goto Terokkar Forest,43.5,22.0,20,0
+.goto Terokkar Forest,44.2,23.4,20,0
+.goto Terokkar Forest,45.2,21.9,20,0
+.goto Terokkar Forest,43.5,22.0,20,0
+.goto Terokkar Forest,44.2,23.4,20,0
+.goto Terokkar Forest,45.2,21.9,20,0
+.accept 9951 >>Accept It's Watching You!
+step
+>>Top of the tower
+.goto Terokkar Forest,43.5,22.1
+.complete 9951,1 
+step
+>>Turn in at Warden Treelos
+.goto Terokkar Forest,43.5,22.0,20,0
+.goto Terokkar Forest,44.2,23.4,20,0
+.goto Terokkar Forest,45.2,21.9,20,0
+.goto Terokkar Forest,43.5,22.0,20,0
+.goto Terokkar Forest,44.2,23.4,20,0
+.goto Terokkar Forest,45.2,21.9,20,0
+.turnin 9951 >>Turn in It's Watching You!
+step
+.goto Terokkar Forest,44.3,26.3
+.turnin 9971 >>Turn in Clues in the Thicket
+step
+.goto Terokkar Forest,49.2,43.5
+.fp Stonebreaker Hold >> Get the Stonebreaker Hold flight path
+>>Getting here is a bit tricky, run east out of the city and wrap around the Mountain Range clockwise.
+step
+.goto Terokkar Forest,49.0,44.6
+.accept 10862 >>Accept Surrender to the Horde
+step
+.goto Terokkar Forest,49.0,44.6
+.accept 10039 >>Accept Speak with Scout Neftis
+step
+.goto Terokkar Forest,39.0,43.7
+.turnin 10039 >>Turn in Speak with Scout Neftis
+.accept 10041 >>Accept Who Are They?
+>>If the quest mobs are dead in Grangol'var Village, you can skip.
+step
+.goto Terokkar Forest,40.3,39.0
+.complete 10041,3 
+step
+.goto Terokkar Forest,39.1,39.7
+.complete 10041,1 
+step
+.goto Terokkar Forest,38.1,41.1
+.complete 10041,2 
+step
+.goto Terokkar Forest,39.0,43.8
+.turnin 10041 >>Turn in Who Are They?
+step
+>>Run to the entrance of Mana Tombs in Auchindoun.
+.goto Terokkar Forest,39.4,58.6,20
+.accept 10216 >>Accept Safety Is Job One
+.accept 10165 >>Undercutting the Competition
+step
+.xp 66 >>Run Mana Tombs till Level 66.
+.goto Terokkar Forest,39.6,57.7,10
+.accept 10218 >>Complete Escort Quest Starting at Cryo-Engineer Sha'heen
+.complete 10218,1
+step
+>>Exit Mana Tombs.
+.goto Terokkar Forest,39.4,58.6
+.turnin 10216 >>Turn In Safety Is Job One
+.turnin 10165 >>Turn In Undercutting the Competition
+step << Druid
+>> Use the spell Teleport to Moonglade
+.goto Moonglade,52.5,40.5
+.trainer >> Go and train your class spells
+step
+.hs >>Hearth to Shattrath City.
+step
+.goto Shattrath City,52.5,21.1
+.turnin 10862 >>Turn in Surrender to the Horde
+step
+#sticky
+#completewith next
++Take the Portal to Orgrimmar
+.goto Shattrath City,52.2,52.8
+step
+.zone Orgrimmar >> Go to Orgrimmar
+step << Paladin
+.goto Orgrimmar,32.4,35.8
+.trainer >> Go and train your class spells
+step << Shaman
+.goto Orgrimmar,38.6,36.0
+.trainer >> Go and train your class spells
+step << Hunter
+.goto Orgrimmar,66.1,18.5
+.trainer >> Go and train your class spells
+step << Warrior
+.goto Orgrimmar,79.7,31.4
+.trainer >> Go and train your class spells
+step << Rogue
+.goto Orgrimmar,44.0,54.6
+.trainer >> Go and train your class spells
+step << Warlock
+.goto Orgrimmar,48.0,46.0
+.trainer >> Go and train your class spells
+step << Mage
+.goto Orgrimmar,38.8,85.6
+.trainer >> Go and train your class spells
+step << Priest
+.goto Orgrimmar,35.6,87.8
+.trainer >> Go and train your class spells
+step
+.goto Orgrimmar,45.3,63.9
+.fly Gadgetzan >>Fly to Gadgetzan
+step
+>>Travel to the Caverns of Time
+.goto Tanaris,66.1,49.7
+.accept 10279 >>Accept To The Master's Lair
+.accept 10277 >>Accept The Caverns of Time
+step
+.goto Tanaris,59.0,54.2
+.complete 10277,1 
+>>Don't AFK at the Quest Giver, you have to follow the Custodian around to get credit.
+step
+.goto Tanaris,58.4,54.3
+.turnin 10277 >>Turn in The Caverns of Time
+.accept 10282 >>Accept Old Hillsbrad
+step
+.goto Tanaris,55.6,53.6,20 >>Enter Old Hillsbrad Foothills Dungeon.
+step
+.turnin 10282 >>Turn in Old Hillsbrad
+.accept 10283 >>Accept Taretha's Diversion
+step
+>>Clear up to Thrall who is located in the basement prison of Durnholde Keep.
+.turnin 10283 >>Turn in Taretha's Diversion
+.accept 10284 >>Accept Escape from Durnholde
+step
+>>Clear the rest of the dungeon killing the Epoch Hunter in Tarren Mill then speak to Erozion.
+.turnin 10284 >>Turn in Escape from Durnholde
+.accept 10285 >>Accept Return to Andormu
+step
+>>Exit Old Hillsbrad Foothills Dungeon.
+.goto Tanaris,55.6,53.6
+.turnin 10285 >>Turn in Return to Andormu
+.accept 10296 >>Accept The Black Morass
+step
+.hs >> Hearth to Shattrath City.
+step
+>>Head to The Ring of Blood. Take the elevator to Aldor Rise and travel through the tunnel to Nagrand.
+.goto Shattrath City,22.2,50.1,20
+step
+.goto Nagrand,57.2,35.3
+.fp Garadar >> Get the Garadar flight path.
+step
+.goto Nagrand,42.8,20.7,100 >>Travel to the Ring of Blood
+step
+#sticky
++Accepting each quest will start an event. Make sure each member of the group has turned in prior to starting the next quest
+step
+.accept 9962,0 >>Accept The Ring of Blood: Brokentoe
+.turnin 9962 >>Turn In The Ring of Blood: Brokentoe
+step
+.accept 9967,0 >>Accept The Ring of Blood: The Blue Brothers
+.turnin 9967 >>Turn In The Ring of Blood: The Blue Brothers
+step
+.accept 9970,0 >>Accept The Ring of Blood: Rokdar the Sundered Lord
+.turnin 9970 >>Turn In The Ring of Blood: Rokdar the Sundered Lord
+step
+.accept 9972,0 >>Accept The Ring of Blood: Skra'gath
+.turnin 9972 >>Turn In The Ring of Blood: Skra'gath
+step
+.accept 9973,0 >>Accept The Warmaul Champion
+.turnin 9973 >>Turn In The Warmaul Champion
+step
+.accept 9977,0 >>Accept The Final Challenge
+.turnin 9977 >>Turn In The Final Challenge
+>>You Have Defeated The Ring of Blood - Congratulations!
+step
+#sticky
+#completewith ShattCity
++If you have a mage in your group, portal to Shattrath. Otherwise, skip this step
+step
+.goto Nagrand,57.2,35.3
+>>Ride back to Garadar
+.fly Shattrath >>Fly to Shattrath
+step
+>>Travel to the Sethekk Area of Lower City
+.goto Shattrath City, 58.0,15.5
+.accept 10180 >> Accept Can't Stay Away
+step
+.goto Shattrath City,64.0,41.0
+.fly Stonebreaker Hold >>Fly to Stonebreaker Hold
+step
+.goto Terokkar Forest,43.1,65.6,20 >>Run to the entrance of Sethekk Halls in Auchindoun.
+step
+.goto Terokkar Forest,44.1,65.0
+.turnin 10180 >>Turn In Can't Stay Away
+.accept 10097 >>Accept Brother Against Brother
+.accept 10098 >>Accept Terokk's Legacy
+step
+#sticky
+>>Make sure you loot the Key to Shadow Labyrinth at the end of the dungeon in the chest behind the boss.
+.complete 10097,1 
+.complete 10098,1 
+.collect 27991,1 
+step
+.xp 68 >>Run Sethekk Halls to Level 68.
+step
+>>Speak to Isfar
+.goto Terokkar Forest,44.1,65.0
+.turnin 10097 >>Turn In Brother Against Brother
+.turnin 10098 >>Turn In Terokk's Legacy
+step << Druid
+>> Use the spell Teleport to Moonglade
+.goto Moonglade,52.5,40.5
+.trainer >> Go and train your class spells
+step
+.hs >> Hearth to Shattrath City.
+step
+#sticky
+#completewith next
++Take the Portal to Orgrimmar
+.goto Shattrath City,52.2,52.8
+step
+.zone Orgrimmar >> Go to Orgrimmar
+step << Paladin
+.goto Orgrimmar,32.4,35.8
+.trainer >> Go and train your class spells
+step << Shaman
+.goto Orgrimmar,38.6,36.0
+.trainer >> Go and train your class spells
+step << Hunter
+.goto Orgrimmar,66.1,18.5
+.trainer >> Go and train your class spells
+step << Warrior
+.goto Orgrimmar,79.7,31.4
+.trainer >> Go and train your class spells
+step << Rogue
+.goto Orgrimmar,44.0,54.6
+.trainer >> Go and train your class spells
+step << Warlock
+.goto Orgrimmar,48.0,46.0
+.trainer >> Go and train your class spells
+step << Mage
+.goto Orgrimmar,38.8,85.6
+.trainer >> Go and train your class spells
+step << Priest
+.goto Orgrimmar,35.6,87.8
+.trainer >> Go and train your class spells
+step
+.goto Durotar,50.6,12.6,20
+>>Take the Zeppelin to Grom'Gol Base Camp in Stranglethorn Vale.
+step
+.goto Stranglethorn Vale,32.5,29.3
+.fly Stonard >>Fly to Stonard
+step
+.goto Deadwind Pass,47.0,75.7,20
+>>Travel to Karazhan then talk to Archmage Alturus who will start the attunement chain.
+.accept 9824 >>Accept Arcane Disturbances
+.accept 9825 >>Accept Restless Activity
+step
+.goto Deadwind Pass,48.7,78.9,20,0
+.goto Deadwind Pass,51.7,79.3,30 >> Go down the entrance of the cellar
+step
+#sticky
+#completewith PondR
+>>Kill Ghosts. Loot them for Ghostly Essences
+.complete 9825,1 
+step
+>>Use the Violet Scrying Crystal in your inventory at the Well
+.goto Deadwind Pass,53.3,90.2
+.complete 9824,1 
+step
+.goto Deadwind Pass,48.7,78.9,20,0
+.goto Deadwind Pass,45.9,78.1,15 >>Go down the entrance of the other cellar
+step
+#label PondR
+>>Use the Violet Scrying Crystal in your inventory in the water
+.goto Deadwind Pass,42.8,78.1
+.complete 9824,2 
+step
+.goto Deadwind Pass,43.4,71.2,20,0
+.goto Deadwind Pass,45.6,71.6,40,0
+.goto Deadwind Pass,41.3,70.0,40,0
+.goto Deadwind Pass,41.5,63.0,40,0
+.goto Deadwind Pass,41.7,76.8,40,0
+.goto Deadwind Pass,46.8,75.1,40,0
+.goto Deadwind Pass,43.4,71.2,20,0
+.goto Deadwind Pass,45.6,71.6,40,0
+.goto Deadwind Pass,41.3,70.0,40,0
+.goto Deadwind Pass,41.5,63.0,40,0
+.goto Deadwind Pass,41.7,76.8,40,0
+.goto Deadwind Pass,46.8,75.1,40,0
+.goto Deadwind Pass,43.4,71.2,20,0
+.goto Deadwind Pass,45.6,71.6,40,0
+.goto Deadwind Pass,41.3,70.0,40,0
+.goto Deadwind Pass,41.5,63.0,40,0
+.goto Deadwind Pass,41.7,76.8,40,0
+.goto Deadwind Pass,46.8,75.1,40,0
+>>Finish looting Ghosts for the essences. Split your group up to go back to the other cellar for more spawns if you wish
+.complete 9825,1 
+step
+.goto Deadwind Pass,47.0,75.6
+.turnin 9825 >>Turn in Restless Activity
+.turnin 9824 >>Turn in Arcane Disturbances
+.accept 9826 >>Accept Contact from Dalaran
+step
+>> Ride back to Stonard.
+.goto Swamp of Sorrows,46.0,54.7
+.fly Tarren Mill >>Fly to Tarren Mill
+step
+>>Ride to the Outskirts of Dalaran and speak to Archmage Cedric.
+.goto Alterac Mountains,15.6,54.6
+.turnin 9826 >>Turn in Contact from Dalaran
+.accept 9829 >>Accept Khadgar
+step
+#sticky
+#completewith ShattAlterac
+>>Hearth or Mage portal to Shattrath City
+step
+#sticky
+#completewith next
++If your Hearthstone is on cooldown, ghetto hearth using Shadowfang Keep. Zone into Shadowfang Keep then drop group. Reform Party once everyone is ported back to Cenarion Refuge.
+.goto Silverpine Forest,45.5,68.8
+step
+#label ShattAlterac
+.zone Shattrath City >> Go to Shattrath City
+step
+.goto Shattrath City,54.7,44.4
+>> Ride to the Center of the City.
+.turnin 9829 >>Turn in Khadgar
+.accept 9831 >>Accept Entry Into Karazhan
+step
+.goto Shattrath City,64.0,41.1
+.fly Stonebreaker Hold >>Fly to Stonebreaker Hold
+step
+#sticky
+#completewith next
+>>Restock from the vendors outside if you're running low on food/drink/ammo/poisons etc
+.goto Terokkar Forest,39.7,70.1
+step
+.goto Terokkar Forest,39.7,71.0,30 >> Use the key from Sethekk Halls to open the Shadow Labyrinth Door.
+step
+#sticky
+.complete 9831,1 
+>>Obtain the "First Key Fragment" at the end of the Dungeon after defeating Murmur.
+step
+.xp 69 >>Run Shadow Labs to Level 69.
+>> You can opt to clear only the first two bosses of the dungeon for improved efficiency.
+step
+#sticky
+#completewith next
+.hs >> Hearth to Shattrath City
+step
+.zone Shattrath City >> Arrive in Shattrath City
+step
+.goto Shattrath City,54.7,44.4
+.turnin 9831 >>Turn In Entry Into Karazhan
+.accept 9832 >>Accept The Second and Third Fragments
+step
+.goto Shattrath City,64.0,41.1
+.fly Swamprat Post >>Fly to Swamprat Post
+step
+#sticky
+#completewith next
+.goto Zangarmarsh,50.4,40.8,15,0
+.goto Zangarmarsh,51.9,37.8,20 >>Swim to the center of Coilfang Reservoir until you are over the open drain pipe below. Dive and swim through it until you find the underwater cavern.
+step
+.goto Zangarmarsh,52.3,36.0
+.accept 9763 >>Accept The Warlord's Hideout
+step
+.goto Zangarmarsh,50.4,33.3,20 >> Enter The Steamvaults
+step
+#sticky
+>>Obtain the "Second Key Fragment" under the water near the first boss (northern part of the water).
+.complete 9832,1 
+step
+#sticky
+.complete 9763,1
+step
+.xp 69+271650 >> Run Steamvaults to 271650+/779700xp
+step
+>>Run out of The Steamvault
+.goto Zangarmarsh,52.3,36.0
+.turnin 9763 >>Turn In The Warlord's Hideout
+step
+.goto Blade's Edge Mountains,53.0,96.2
+>>Swim out of Coilfang Reservoir and ride to the Cave leading to Blade's Edge Mountains.
+.accept 10928 >>Accept Killing the Crawlers
+step
+>>Kill Crawlers as you go through the cave (You can mount)
+.goto Blade's Edge Mountains,36.5,84.1
+.complete 10927,1 
+step
+.goto Blade's Edge Mountains,37.0,81.8,25 >>Exit the Cave.
+step
+>>Ride into Thunderhold Stronghold.
+.goto Blade's Edge Mountains,51.9,58.5
+.turnin 10928 >>Turn in Killing the Crawlers
+step
+.goto Blade's Edge Mountains,52.0,54.1
+.fp Thunderlord Stronghold >> Get the Thunderlord Stronghold flight path.
+step
+.goto Blade's Edge Mountains,52.0,54.4
+>>Speak to Tor'chunk Twoclaws
+.accept 11047 >>Accept The Apprentice's Request
+.accept 11036 >>Accept Out of This World Produce!
+step
+.goto Blade's Edge Mountains,58.1,46.3,30 >>Look for a subtle pathway on your left. This will guide you up towards Netherstorm.
+step
+.goto Blade's Edge Mountains,61.7,39.6
+.fp Evergrove >> Get the Evergrove flight path.
+step
+#sticky
+#completewith next
+.goto Netherstorm,21.3,55.9,20 >>Go to Netherstorm via the Bridge.
+step
+.goto Netherstorm,32.7,64.9
+>>Ride to Area 52.
+.turnin 11036 >>Turn in Out of This World Produce!
+step
+.goto Netherstorm,33.7,64.0
+.fp Area 52 >> Get the Area 52 flight path.
+step
+.goto Netherstorm,32.0,64.4
+.home >>Set your Hearthstone to Area 52
+step
+.goto Netherstorm,32.4,64.2
+>>Begin Arcatraz Key Attunement Quest Chain:
+.accept 10265 >>Accept Consortium Crystal Collection
+step
+.goto Netherstorm,32.1,64.7
+.accept 10261 >>Accept Wanted: Annihilator Servo!
+.accept 10701 >>Accept Breaking Down Netherock
+step
+.goto Netherstorm,31.4,66.1
+.accept 10173 >>Accept The Archmage's Staff
+step
+>>Walk to the center of the ruins and use "Conjuring Powder" to summon and kill the demon.
+.goto Netherstorm,41.1,72.5
+.complete 10173,1 
+step
+>>Kill Pentatharon (The Dreadlord). Loot him for the Artifact
+.goto Netherstorm,42.7,72.2
+.complete 10265,1 
+step
+.goto Netherstorm,31.4,66.2
+.turnin 10173 >>Turn in The Archmage's Staff
+.accept 10300 >>Accept Rebuilding the Staff
+step
+.goto Netherstorm,32.5,64.3
+.turnin 10265 >>Turn in Consortium Crystal Collection
+.accept 10262 >>Accept A Heap of Ethereals
+step
+.goto Netherstorm,32.6,53.4
+.complete 10300,1 
+step
+.goto Netherstorm,31.4,66.1
+.turnin 10300 >>Turn in Rebuilding the Staff
+.accept 10174 >>Accept Curse of the Violet Tower
+step
+>>Use the item in your bag "Archmage Vargoth's Staff" to summon an NPC.
+.goto Netherstorm,31.4,66.1
+.turnin 10174 >>Turn in Curse of the Violet Tower
+.accept 10188 >>Accept The Sigil of Krasus
+step
+>>Note: This quest isn't group friendly but it is essential to do for the Arcatraz Attunement which is needed for Karazhan Attunement.
+.goto Netherstorm,31.2,74.7
+.complete 10262,1 
+step
+.goto Netherstorm,32.5,64.3
+.turnin 10262 >>Turn in A Heap of Ethereals
+.accept 10205 >>Accept Warp-Raider Nesaad
+step
+.goto Netherstorm,28.0,79.2
+.complete 10205,1 
+step
+.goto Netherstorm,26.9,77.0
+.accept 10309 >>Accept It's a Fel Reaver, But with Heart
+step
+.goto Netherstorm,26.7,78.5
+.complete 10309,1 
+step
+.goto Netherstorm,26.8,77.0
+.turnin 10309 >>Turn in It's a Fel Reaver, But with Heart
+step
+.goto Netherstorm,19.3,73.9,40,0
+.goto Netherstorm,20.6,78.4,40,0
+.goto Netherstorm,26.8,81.2,40,0
+.goto Netherstorm,41.7,77.0,40,0
+.goto Netherstorm,19.3,73.9,40,0
+.goto Netherstorm,20.6,78.4,40,0
+.goto Netherstorm,26.8,81.2,40,0
+.goto Netherstorm,41.7,77.0,40,0
+.goto Netherstorm,19.3,73.9,40,0
+.goto Netherstorm,20.6,78.4,40,0
+.goto Netherstorm,26.8,81.2,40,0
+.goto Netherstorm,41.7,77.0,40,0
+.goto Netherstorm,19.3,73.9,40,0
+.goto Netherstorm,20.6,78.4,40,0
+.goto Netherstorm,26.8,81.2,40,0
+.goto Netherstorm,41.7,77.0,40,0
+.goto Netherstorm,19.3,73.9,40,0
+.goto Netherstorm,20.6,78.4,40,0
+.goto Netherstorm,26.8,81.2,40,0
+.goto Netherstorm,41.7,77.0,40,0
+.goto Netherstorm,19.3,73.9,40,0
+.goto Netherstorm,20.6,78.4,40,0
+.goto Netherstorm,26.8,81.2,40,0
+.goto Netherstorm,41.7,77.0,40,0
+>>Split up and look for Netherock. He patrols along the entirety of the bottom coast up to the bridge that leads to Manaforge Coruu.
+.complete 10701,1
+step
+>>Walk inside Manaforge Coruu and /target Arcane Annihilator
+.goto Netherstorm,48.7,82.6
+.complete 10261,1 
+step
+.goto Netherstorm,52.0,82.6
+.complete 10188,1 
+step
+>>Turn in the Quest using "Archmage Vargoth's Staff" in your inventory.
+.goto Netherstorm,52.0,82.6
+.turnin 10188 >>Turn in The Sigil of Krasus
+.accept 10192 >>Accept Krasus's Compendium
+step
+.goto Netherstorm,57.7,85.0
+.accept 10334 >> Accept Needs More Cowbell
+.accept 10331 >> Accept Indispensable Tools
+step
+.goto Netherstorm,57.5,86.3
+.accept 10343 >> Accept The Unending Invasion
+.accept 10184 >> Accept Malevolent Remnants
+.accept 10185 >> Accept A Fate Worse Than Death
+.accept 10222 >> Accept The Sunfury Garrison
+step
+.goto Netherstorm,55.7,87.2
+.complete 10343,1 
+step
+>>Look for a Female Human Mage patrolling named Abjurist Belmara.
+.goto Netherstorm,58.7,88.4
+.accept 10305 >> Accept Abjurist Belmara
+step
+.goto Netherstorm,57.5,89.5
+.complete 10192,2 
+step
+.goto Netherstorm,58.6,89.2
+.complete 10192,1 
+step
+.goto Netherstorm,58.9,87.9
+.complete 10192,3 
+step
+>>Use Archmage Vargoth's Staff
+.turnin 10192 >> Turn in Krasus's Compendium
+.accept 10301 >> Accept Unlocking the Compendium
+step
+>>Look for a Male Gnome Mage patrolling named Cohlien Frostweaver.
+.goto Netherstorm,59.5,86.4
+.accept 10307 >> Accept Cohlien Frostweaver
+step
+>>Look for a Male Blood Elf Mage patrolling named Conjurer Luminrath.
+.goto Netherstorm,60.2,84.9
+.accept 10306 >> Accept Conjurer Luminrath
+step
+.goto Netherstorm,61.3,85.1
+>>Kill mobs around the blacksmith
+>>Leave Rhonsus alive because he is the objective of the follow up quest.
+.complete 10331,1 
+step
+.goto Netherstorm,58.8,88.5
+.complete 10184,1 
+step
+.goto Netherstorm,57.7,85.2
+.turnin 10331 >> Turn in Indispensable Tools
+.accept 10332 >> Accept Master Smith Rhonsus
+step
+.goto Netherstorm,57.5,86.2
+.turnin 10184 >> Turn in Malevolent Remnants
+.turnin 10343 >> Turn in The Unending Invasion
+.accept 10312 >> Accept The Annals of Kirin'Var
+.accept 10233 >> Accept Torching Sunfury Hold
+step
+.goto Netherstorm,61.1,85.3
+.complete 10332,1 
+step
+.goto Netherstorm,60.5,87.9
+.complete 10312,1 
+.accept 10182 >> Accept Battle-Mage Dathric
+step
+.goto Netherstorm,57.7,85.1
+.turnin 10332 >> Turn in Master Smith Rhonsus
+step
+.goto Netherstorm,57.5,86.2
+.turnin 10312 >> Turn in The Annals of Kirin'Var
+.accept 10316 >> Accept Searching for Evidence
+step
+.goto Netherstorm,56.9,86.8
+.complete 10182,1 
+step
+.goto Netherstorm,56.4,87.8
+.complete 10306,1 
+step
+.goto Netherstorm,55.5,86.5
+.complete 10305,1 
+step
+.goto Netherstorm,55.1,87.6
+.complete 10307,1 
+step
+.goto Netherstorm,56.2,88.5
+.complete 10185,1 
+.complete 10185,2 
+step
+.goto Netherstorm,57.5,86.3
+.turnin 10182 >> Turn in Battle-Mage Dathric
+.turnin 10185 >> Turn in A Fate Worse Than Death
+.turnin 10305 >> Turn in Abjurist Belmara
+.turnin 10306 >> Turn in Conjurer Luminrath
+.turnin 10307 >> Turn in Cohlien Frostweaver
+step
+.goto Netherstorm,60.4,78.0
+.turnin 10316 >> Turn in Searching for Evidence
+step
+.goto Netherstorm,59.2,78.8
+.turnin 10334 >> Turn in Needs More Cowbell
+.accept 10337 >> Accept When the Cows Come Home
+step
+.complete 10337,1 
+step
+.goto Netherstorm,57.7,85.0
+.turnin 10337 >> Turn in When the Cows Come Home
+step
+#sticky
+>>Kill Spellreaver Marathelle
+.complete 10301,1 
+step
+.goto Netherstorm,55.8,77.9
+.complete 10222,1 
+>>Kill Sunfury Flamekeepers around the main building to loot a torch
+.complete 10233,1 
+.complete 10233,2 
+step
+>>Click on the Archmage's Staff
+.turnin 10301 >> Turn in Unlocking the Compendium
+.accept 10209 >> Accept Summoner Kanthin's Prize
+step
+.goto Netherstorm,57.5,86.3
+.turnin 10222 >> Turn in The Sunfury Garrison
+.accept 10223 >> Accept Down With Daellis
+.turnin 10233 >> Turn in Torching Sunfury Hold
+step
+.hs >> Hearth to Area 52
+step
+.goto Netherstorm,32.5,64.3
+.turnin 10205 >>Turn in Warp-Raider Nesaad
+.accept 10266 >>Accept Request for Assistance
+step
+.goto Netherstorm,33.0,64.6
+.turnin 10261 >>Turn in Wanted: Annihilator Servo!
+step
+.goto Netherstorm,32.7,65.0
+.turnin 10701 >>Turn in Breaking Down Netherock
+step
+.goto Netherstorm,46.7,57.0
+.turnin 10266 >>Turn in Request for Assistance
+.accept 10267 >>Accept Rightful Repossession
+step
+>>Note: This quest isn't group friendly but it is essential to do for the Arcatraz Attunement which is needed for Karazhan Attunement.
+.goto Netherstorm,57.5,66.8
+.complete 10267,1 
+step
+>>Look for Summoner Kanthin. He is a Blood Elf Mage with a Water Elemental. He patrols between the three camps with red crystals.
+.goto Netherstorm,57.1,67.1
+.complete 10209,1 
+step
+>>Use "Archmage Vargoth's Staff" to turn in.
+.turnin 10209 >>Turn in Summoner Kanthin's Prize
+.accept 10176 >>Accept Ar'kelos the Guardian
+step
+.goto Netherstorm,56.4,66.8
+.complete 10223,1 
+step
+>>Ride back To the Violet Tower.
+.goto Netherstorm,57.5,86.3
+.turnin 10223 >>Turn in Down With Daellis
+step
+.goto Netherstorm,58.2,86.5
+.complete 10176,1 
+step
+.goto Netherstorm,58.3,86.4
+.turnin 10176 >>Turn in Ar'kelos the Guardian
+step
+.goto Netherstorm,46.7,57.0
+.turnin 10267 >>Turn in Rightful Repossession
+.accept 10268 >>Accept An Audience with the Prince
+step
+.goto Netherstorm,45.3,34.9
+.fp Stormspire >> Get The Stormspire flight path
+step
+.goto Netherstorm,45.8,36.0
+.turnin 10268 >>Turn in An Audience with the Prince
+.accept 10269 >>Accept Triangulation Point One
+step
+>>Use the Triangulation device, then just run forward
+.goto Netherstorm,66.7,33.6
+.complete 10269,1 
+step
+.goto Netherstorm,58.4,31.3
+.turnin 10269 >>Turn in Triangulation Point One
+.accept 10275 >>Accept Triangulation Point Two
+step
+.goto Netherstorm,29.0,41.2
+.complete 10275,1 
+step
+.goto Netherstorm,34.6,37.9
+.turnin 10275 >>Turn in Triangulation Point Two
+.accept 10276 >>Accept Full Triangle
+step
+>>Slay Culuthas (Level 70 Elite Demon)
+.goto Netherstorm,53.5,21.5
+.complete 10276,1 
+step
+.goto Netherstorm,45.9,36.0
+.turnin 10276 >>Turn in Full Triangle
+.accept 10280 >>Accept Special Delivery to Shattrath City
+step
+.xp 69+760700 >>Ensure you are at least 760700/779700xp into 69
+step
+#sticky
+#completewith next
++Take the Portal to the left of the Nexus Prince as it will port you to Shattrath.
+step
+.zone Shattrath City >>Go to Shattrath City
+step
+.goto Shattrath City,54.1,44.5
+.turnin 10280 >>Turn in Special Delivery to Shattrath City
+.accept 10704 >>Accept How to Break Into the Arcatraz
+>>Ding Level 70 - Congratulations!
+step << Druid
+>> Use the spell Teleport to Moonglade
+.goto Moonglade,52.5,40.5
+.trainer >> Go and train your class spells
+step << !Druid
+#sticky
+#completewith next
++Take the Portal to Orgrimmar
+.goto Shattrath City,52.2,52.8
+step << !Druid
+.zone Orgrimmar >> Go to Orgrimmar
+step << Paladin
+.goto Orgrimmar,32.4,35.8
+.trainer >> Go and train your class spells
+step << Shaman
+.goto Orgrimmar,38.6,36.0
+.trainer >> Go and train your class spells
+step << Hunter
+.goto Orgrimmar,66.1,18.5
+.trainer >> Go and train your class spells
+step << Warrior
+.goto Orgrimmar,79.7,31.4
+.trainer >> Go and train your class spells
+step << Rogue
+.goto Orgrimmar,44.0,54.6
+.trainer >> Go and train your class spells
+step << Warlock
+.goto Orgrimmar,48.0,46.0
+.trainer >> Go and train your class spells
+step << Mage
+.goto Orgrimmar,38.8,85.6
+.trainer >> Go and train your class spells
+step << Priest
+.goto Orgrimmar,35.6,87.8
+.trainer >> Go and train your class spells
+step << !Druid
+.goto Orgrimmar,52.7,49.1,20
+>>Ghetto Hearth using Ragefire Chasm. Zone into RFC then drop group. Reform Party once everyone is ported back to Shattrath City.
+step << !Druid
+.goto Shattrath City,63.9,41.2
+.fly Stonebreaker Hold >>Fly to Stonebreaker Hold.
+step << !Druid
+>>Travel to Shadowmoon Village in Shadowmoon Valley. Buy 60% 225 Flying Skill and Mount.
+.goto Shadowmoon Valley,29.3,29.3,30
+step
+#sticky
+#completewith next
+.hs >>Hearth to Shattrath City
+step
+.zone Shattrath City >> Go to Shattrath City
+step
+.goto Shattrath City,63.9,41.2
+.fly The Stormspire >>Fly to The Stormspire.
+step
+#sticky
+#completewith next
+.goto Netherstorm,66.0,67.3
+.vendor >> Vendor and repair here if needed
+step
+.goto Netherstorm,65.2,66.8
+.fp Cosmowrench >> Get the Cosmowrench flight path
+step
+.goto Netherstorm,71.7,55.1,20 >> Fly to The Botancia, then go inside
+step
+>>Kill Warpsplinter at the end of The Botanica. Loot it to obtain the "Top Shard of the Arcatraz Key".
+.complete 10704,1
+step
+#sticky
+#completewith next
++Exit the dungeon and prepare to run Mechanar. Go back to Cosmowrench if you need to vendor/repair
+step
+.goto Netherstorm,70.6,69.8,20 >> Fly to The Mechanar, then go inside
+step
+>>Kill Pathaleon to obtain the "Bottom Shard of the Arcatraz Key".
+.complete 10704,2
+step
+.hs >> Hearth to Shattrath City
+step
+.goto Shattrath City,54.0,44.9
+.turnin 10704 >>Turn in How to Break Into the Arcatraz
+step
+.goto Shattrath City,63.9,41.2
+.fly The Stormspire >>Fly to The Stormspire
+step
+.goto Netherstorm,74.4,57.7,20 >> Fly to The Arcatraz, unlock the door, then go inside
+step
+>>The "Third Key Fragment" is tucked in the corner of the blue room after the first boss.
+.complete 9832,2 
+step
+#sticky
+#completewith next
++Ghetto Hearth using Arcatraz back to Shattrath. Reform once everyone is ported back to Shattrath City.
+step
+.zone Shattrath City >>Go to Shattrath City
+step
+.goto Shattrath City,54.0,44.9
+.turnin 9832 >>Turn in The Second and Third Fragments
+.accept 9836 >>Accept the Master's Touch
+step
+#sticky
+#completewith next
++Take the Portal to Thunder Bluff
+.goto Shattrath City,52.2,52.8
+step
+.zone Thunder Bluff >> Go to Thunder Bluff
+step
+.goto Thunder Bluff,46.8,49.9
+.fly Gadgetzan >>Fly to Gadgetzan
+step
+#sticky
+#completewith next
+.goto Tanaris,62.0,50.4,100 >>Travel to the Caverns of Time
+step
+#sticky
+#completewith next
++Talk to the Steward Of Time. Accept the ride down to the Master's Lair
+step
+.goto Tanaris,57.4,62.8,20 >> Enter The Black Morass
+step
+>>Talk to Sa'at. Make sure each member of your Dungeon Group picks up a Chrono-Beacon from him.
+.turnin 10296 >>Turn in The Black Morass
+.accept 10297 >>Accept The Opening of the Dark Portal
+step
+>>Defend Medivh. After defeating Aeonus:
+.turnin 9836 >>Turn In the Master's Touch
+.accept 9837 >>Return to Khadgar
+step
+.turnin 10297 >>Turn in The Opening of the Dark Portal
+.accept 10298 >>Accept Hero of the Brood
+step
+.goto Tanaris,57.3,62.8,20 >>Leave The Black Morass.
+step
+.goto Tanaris,58.4,54.3
+.turnin 10298 >>Turn in Hero of the Brood
+step
+.hs >> Hearth to Shattrath City.
+step
+.goto Shattrath City,54.7,44.4
+.turnin 9837 >>Return to Khadgar
+>>You are now attuned to Karazhan - Congratulations!
+]])
+RXPGuides.RegisterGuide([[
+#version 7
 #wotlk
 #tbc
 #group Horde 60-70
 << Horde
 #name 61-63 Zangarmarsh
-#next 65-65 Shattrath; 63-64 Terokkar
+#next 65-67 Blade's Edge; 63-64 Terokkar Forest
 step
 #completewith TribeX
 >>Below is a list of items that drop in Zangarmarsh that are required for quests. Make a mental note of these items. Save them as they drop. You need a total of:
@@ -21240,6 +22795,66 @@ step
 .accept 9769 >> Accept There's No Explanation for Fashion
 .accept 9773 >> Accept No More Mushrooms!
 .goto Zangarmarsh,84.36,54.34
+step << !DK !Druid
+#completewith next
+.goto Shattrath City,52.19,52.90 << !Mage
+.zone Orgrimmar >> Take the portal to Orgrimmar << !Mage
+.zone Orgrimmar >> Teleport to Orgrimmar << Mage
+step << Mage
+.goto Orgrimmar,38.36,85.56
+.trainer >> Train your class spells
+step << Priest
+.goto Orgrimmar,35.59,87.85
+.trainer >> Train your class spells
+step << Shaman/Paladin
+#completewith next
+.goto Orgrimmar,40.5,36.9,25 >>Enter Grommash Hold
+step << Shaman
+.goto Orgrimmar,37.82,36.45
+.trainer >> Train your class spells
+step << Paladin
+.goto Orgrimmar,32.26,35.71
+.trainer >> Train your class spells
+step
+.goto Orgrimmar,39.59,37.04,30,0 << !Paladin !Shaman
+.goto Orgrimmar,31.60,37.82
+>>Talk to Thrall in Grommash Hold
+.turnin 9438 >>Turn in Messenger to Thrall
+step << Hunter/Warrior
+#completewith next
+.goto Orgrimmar,63.6,38.2,30 >> Enter the Valley of Honor
+step << Hunter tbc
+#sticky
+#label HunterTrain
+.goto Orgrimmar,66.31,14.80,0,0
+.trainer >> Train your pet spells
+
+step << Hunter
+.goto Orgrimmar,66.03,18.52
+.trainer >> Train your class spells
+step << Warrior
+.goto Orgrimmar,79.93,31.30
+.trainer >> Train your class spells
+step << Rogue/Warlock
+#completewith next
+.goto Orgrimmar,40.77,55.23,30 >> Enter the Cleft of Shadow
+step << Rogue
+.goto Orgrimmar,43.90,54.65
+.trainer >> Train your class spells
+step << Warlock tbc
+#sticky
+#label WarlockTrain
+.goto Orgrimmar,47.52,46.71
+.vendor >> Talk to Kurgul. Buy pet grimoires if needed
+
+step << Warlock
+.goto Orgrimmar,47.98,45.92
+.trainer >> Train your class spells
+step << !DK !Druid
+#requires HunterTrain << Hunter tbc
+#requires WarlockTrain << Warlock tbc
+#completewith next
+.hs >> Hearth to Cenarion Refuge
 step
 #completewith Scales
 >>Kill Umbraglow Stingers. Loot them for their Wings
@@ -21494,7 +23109,6 @@ step
 >>Kill Fen Striders. Loot them for their Spores
 .collect 24449,6,9806,1 
 step
-#completewith next
 .goto Zangarmarsh,69.64,82.91,60,0
 .goto Zangarmarsh,71.47,85.88,60,0
 .goto Zangarmarsh,77.47,84.23,60,0
@@ -21529,25 +23143,9 @@ step
 >>Kill the Lurkers and Dredgers inside the cave
 .complete 10096,2 
 .complete 10096,1 
-step
-.goto Zangarmarsh,72.03,96.23,30,0
-.goto Zangarmarsh,71.81,94.41,30,0
-.goto Zangarmarsh,73.24,93.55,30,0
-.goto Zangarmarsh,74.24,94.06
->>Kill mobs inside the cave. Loot them for their Plant Parts
-.collect 24401,10,9802,1 
-step
-#completewith CenarionRefuge3
->>Kill Fen Striders. Loot them for their Spores
-.collect 24449,6,9806,1 
-step
-.goto Zangarmarsh,77.47,84.23,60,0
-.goto Zangarmarsh,79.56,78.67,60,0
-.goto Zangarmarsh,78.54,67.88,60,0
-.goto Zangarmarsh,77.47,84.23,60,0
-.goto Zangarmarsh,78.54,67.88
->>Kill Umbraglow Stingers. Loot them for their Wings
-.complete 9769,1 
+step << DK/Druid
+#completewith next
+.hs >> Hearth to Cenarion Refuge
 step
 >>Return to Cenarion Refuge. Talk to Ikeyen, Lauranna, and Blackhoof
 .turnin 10096 >> Turn in Saving the Sporeloks
@@ -22008,7 +23606,7 @@ step
 .goto Zangarmarsh,78.49,62.95
 >>Talk to Coryth (the Innkeeper). Buy a Cenarion Spirits from him
 .collect 29112,1 
-.isOnQuest 9483
+.isOnQuest 10287
 
 step
 .goto Zangarmarsh,78.40,62.02
@@ -22114,6 +23712,7 @@ step
 .complete 9823,3 
 .complete 9709,1 
 step
+#xprate <1.5
 #completewith next
 .deathskip >> Die and respawn at the Spirit Healer
 step
@@ -22126,6 +23725,7 @@ step
 .turnin 9823 >> Turn in Us or Them
 .turnin 10118 >> Turn in Message to the Daggerfen
 .turnin 10117 >> Turn in WANTED: Chieftain Mummaki
+.accept 9795 >>Accept The Ogre Threat
 .goto Zangarmarsh,30.74,50.89
 .turnin 9903 >> Turn in The Biggest of Them All
 .goto Zangarmarsh,32.25,49.61
@@ -22150,13 +23750,14 @@ step
 .turnin 9728 >> Turn in A Warm Welcome
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 60-70
 << Horde
-#name 63-64 Terokkar
+#name 63-64 Terokkar Forest
 #next 64-65 Nagrand
+#xprate <1.499
 step
 #completewith next
 .goto Terokkar Forest,34.44,9.21
@@ -23616,7 +25217,7 @@ step
 .zone Shattrath City >> Travel to Shattrath
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 60-70
@@ -24978,256 +26579,11 @@ step
 .isQuestComplete 9852
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 60-70
 << Horde
-#name 65-65 Shattrath
-#next 65-67 Blade's Edge
-#xprate >1.499
-step
-#completewith next
-.goto Terokkar Forest,34.44,9.21
-.zone Terokkar Forest >> Travel to Terokkar Forest
-.skill riding,225,1
-step
->>Travel to Shattrath. Talk to the Haggard War Veteran, A'dal, and Khadgar
-.accept 10210 >> Accept A'dal
-.goto Shattrath City,59.66,41.45
-.turnin 10210 >> Turn in A'dal
-.goto Shattrath City,54.01,44.78
-.accept 10211 >> Accept City of Light
-.goto Shattrath City,54.74,44.32
-.timer 473,City of Light RP
-step
-#label cityoflight
-#sticky
-.goto Shattrath City,50.36,42.87
->> Go outside and quest. It's important that you are back inside Shat at the arrow before the timer is 0!
->>If the quest fails, pick it up from Khadgar again and just wait here
-.complete 10211,1 
-step
-.goto Terokkar Forest,44.33,26.31
->>Travel to the Cenarion Thicket. Talk to Tavgren
-.turnin 9957 >> Turn in What's Wrong at Cenarion Thicket?
-.accept 9971 >> Accept Clues in the Thicket
-.accept 9968 >> Accept Strange Energy
-step
-#label vicoustero
-#sticky
->>Kill Vicious Teremorths. Loot them for their Samples
-.complete 9968,2 
-step
-.goto Terokkar Forest,45.12,21.78,0
->>Loot the Strange Object on the ground
-.complete 9971,1 
-step
-.line Terokkar Forest,44.47,25.69,44.42,24.76,44.31,23.50,44.40,22.97,44.21,22.01,44.53,21.81,45.17,21.89,45.01,22.80,45.43,21.58,45.17,20.81,44.87,21.14,44.36,21.82,43.69,23.11,43.28,23.03,43.44,22.36
-.goto Terokkar Forest,44.47,25.69,30,0
-.goto Terokkar Forest,44.42,24.76,30,0
-.goto Terokkar Forest,44.31,23.50,30,0
-.goto Terokkar Forest,44.40,22.97,30,0
-.goto Terokkar Forest,44.21,22.01,30,0
-.goto Terokkar Forest,44.53,21.81,30,0
-.goto Terokkar Forest,45.17,21.89,30,0
-.goto Terokkar Forest,45.01,22.80,30,0
-.goto Terokkar Forest,45.43,21.58,30,0
-.goto Terokkar Forest,45.17,20.81,30,0
-.goto Terokkar Forest,44.87,21.14,30,0
-.goto Terokkar Forest,44.36,21.82,30,0
-.goto Terokkar Forest,43.69,23.11,30,0
-.goto Terokkar Forest,43.28,23.03,30,0
-.goto Terokkar Forest,43.44,22.36
->>Talk to Warden Treelos. He patrols the Cenarion Thicket
-.accept 9951 >> Accept It's Watching You!
-.unitscan Warden Treelos
-step
-.groundgoto Terokkar Forest,43.46,22.31,20,0
-.goto Terokkar Forest,43.40,22.10
->>Kill Naphthal'ar atop the tower
-.complete 9951,1 
-step
-#requires vicoustero
-.line Terokkar Forest,44.47,25.69,44.42,24.76,44.31,23.50,44.40,22.97,44.21,22.01,44.53,21.81,45.17,21.89,45.01,22.80,45.43,21.58,45.17,20.81,44.87,21.14,44.36,21.82,43.69,23.11,43.28,23.03,43.44,22.36
-.goto Terokkar Forest,44.47,25.69,30,0
-.goto Terokkar Forest,44.42,24.76,30,0
-.goto Terokkar Forest,44.31,23.50,30,0
-.goto Terokkar Forest,44.40,22.97,30,0
-.goto Terokkar Forest,44.21,22.01,30,0
-.goto Terokkar Forest,44.53,21.81,30,0
-.goto Terokkar Forest,45.17,21.89,30,0
-.goto Terokkar Forest,45.01,22.80,30,0
-.goto Terokkar Forest,45.43,21.58,30,0
-.goto Terokkar Forest,45.17,20.81,30,0
-.goto Terokkar Forest,44.87,21.14,30,0
-.goto Terokkar Forest,44.36,21.82,30,0
-.goto Terokkar Forest,43.69,23.11,30,0
-.goto Terokkar Forest,43.28,23.03,30,0
-.goto Terokkar Forest,43.44,22.36
->>Talk to Warden Treelos. He patrols the Cenarion Thicket
-.turnin 9951 >> Turn in It's Watching You!
-.unitscan Warden Treelos
-step
-.goto Terokkar Forest,41.85,28.77,50,0
-.goto Terokkar Forest,43.77,30.34,50,0
-.goto Terokkar Forest,44.07,27.41,50,0
-.goto Terokkar Forest,47.16,28.09,50,0
-.goto Terokkar Forest,45.81,31.81
->>Kill Normal Teromoths. Loot them for their Samples
-.complete 9968,1 
-step
-.goto Terokkar Forest,44.33,26.31
->>Talk to Tavgren
-.turnin 9971 >> Turn in Clues in the Thicket
-.turnin 9968 >> Turn in Strange Energy
-.accept 9978 >> Accept By Any Means Necessary
-step
-.loop 50,Terokkar Forest,37.58,25.83,38.33,26.72,39.17,26.57,40.53,25.45,39.96,24.43,39.11,24.04,39.96,24.43,40.53,25.45,41.44,25.95,42.30,26.62,43.07,26.59,43.92,26.05,45.40,26.56,46.39,26.22,47.18,27.10,48.20,27.25,48.98,27.96,49.66,28.21,50.48,29.26,51.14,29.30
->>Follow the road between Shattrath and Tuurem until you find Empoor. Talk to him and then defeat him. Talk to him again
-.turnin 9978 >> Turn in By Any Means Necessary
-.accept 9979 >> Accept Wind Trader Lathrai
-.unitscan Empoor
-.skipgossip
-step
-#requires cityoflight
-.goto Shattrath City,54.74,44.32
->>Talk to Khadgar
-.turnin 10211 >> Turn in City of Light
-step
-#label choice
-#completewith aldorOrScryer
-.goto Shattrath City,54.74,44.32
-+Talk to Khadgar. Pledge your Allegiance to either the Aldor or Scryers
-*If you do not see Aldor or Scryer specific quest steps after this, type "/reload" into your ingame chat box
-step
-#scryer
-#label aldorOrScryer
-.turnin 10552 >> Turn in Allegiance to the Scryer
-step
-#aldor
-#label aldorOrScryer
-.turnin 10551 >> Turn in Allegiance to the Aldor
-step
-#scryer
-#requires choice
->>Talk to Khadgar
-.goto Shattrath City,54.74,44.32
-.accept 10553 >>Accept Voren'thal the Seer
-step
-#aldor
-#requires choice
->>Talk to Khadgar
-.goto Shattrath City,54.74,44.32
-.accept 10554 >> Accept Ishanah
-step
-#aldor
-#completewith next
-.groundgoto Shattrath City,41.73,38.60,30 >> Take the Elevator up to Aldor Rise
-step
-#aldor
-#label ShattrathHS
-.goto Shattrath City,28.29,49.38
-.home >> Set your Hearthstone to Shattrath City
-step
-#scryer
-#completewith next
-.goto Shattrath City,49.97,62.81,30 >> Take the Elevator up to the Scryer's Tier
-.skill riding,225,1
-step
-#scryer
-.goto Shattrath City,42.79,91.70
->>Talk to Voren'thal on the second floor of the Library
-.turnin 10553 >>Turn in Voren'thal the Seer
-step
-#scryer
-.goto Shattrath City,56.31,81.55
-.home >>Set your Hearthstone to Shattrath City
-step
-#requires choice
-step
-#completewith next
-.goto Shattrath City,52.19,52.90 << !Mage
-.zone Orgrimmar >> Take the portal to Orgrimmar << !Mage
-.zone Orgrimmar >> Teleport to Orgrimmar << Mage
-step << Mage
-.goto Orgrimmar,38.36,85.56
-.trainer >> Train your class spells
-step << Priest
-.goto Orgrimmar,35.59,87.85
-.trainer >> Train your class spells
-step << Shaman/Paladin
-#completewith next
-.goto Orgrimmar,40.5,36.9,25 >>Enter Grommash Hold
-step << Shaman
-.goto Orgrimmar,37.82,36.45
-.trainer >> Train your class spells
-step << Paladin
-.goto Orgrimmar,32.26,35.71
-.trainer >> Train your class spells
-step
-.goto Orgrimmar,39.59,37.04,30,0 << !Paladin !Shaman
-.goto Orgrimmar,31.60,37.82
->>Talk to Thrall in Grommash Hold
-.turnin 9438 >>Turn in Messenger to Thrall
-step << Hunter/Warrior
-#completewith next
-.goto Orgrimmar,63.6,38.2,30 >> Enter the Valley of Honor
-step << Hunter tbc
-#sticky
-#label HunterTrain
-.goto Orgrimmar,66.31,14.80,0,0
-.trainer >> Train your pet spells
-
-step << Hunter
-.goto Orgrimmar,66.03,18.52
-.trainer >> Train your class spells
-step << Warrior
-.goto Orgrimmar,79.93,31.30
-.trainer >> Train your class spells
-step << Rogue/Warlock
-#completewith next
-.goto Orgrimmar,40.77,55.23,30 >> Enter the Cleft of Shadow
-step << Rogue
-.goto Orgrimmar,43.90,54.65
-.trainer >> Train your class spells
-step << Warlock tbc
-#sticky
-#label WarlockTrain
-.goto Orgrimmar,47.52,46.71
-.vendor >> Talk to Kurgul. Buy pet grimoires if needed
-
-step << Warlock
-.goto Orgrimmar,47.98,45.92
-.trainer >> Train your class spells
-step << Druid
-#completewith next
-.cast 18960 >> Cast Teleport: Moonglade
-.zoneskip Moonglade
-step << Druid
-.goto Moonglade,52.4,40.6
->>Go to Moonglade
-.trainer >> Train your class spells
-step << DK
-#completewith next
-.cast 50977 >> Cast Death Gate
-.zoneskip Eastern Plaguelands
-step << DK
-.goto Eastern Plaguelands,80.3,48.0
->>Go through the Death Gate
-.trainer >> Train your class spells from Amal'Thazad in Acherus
-step
-#requires HunterTrain << Hunter tbc
-#requires WarlockTrain << Warlock tbc
-#completewith next
-.hs >> Hearth to Shattrath
-]])
-RXPGuides.RegisterGuide([[
-#version 6
-#wotlk
-#tbc
-#group Horde 60-70
-<<Horde
 #name 65-67 Blade's Edge
 #next 67-67 Blade's Edge Turnins
 step << !Mage
@@ -25360,7 +26716,7 @@ step
 #label Thunderlord
 >>Loot the Thunderlord Clan Arrow on top of the stone structure, Drum inside the building, and Tablet inside the building
 .complete 10524,1 
-.groundgoto Blade's Edge Mountains,41.11,51.99,30,0
+.groundgoto Blade's Edge Mountains,41.5,51.7,30,0
 .goto Blade's Edge Mountains,41.54,52.67,-1
 .complete 10524,2 
 .goto Blade's Edge Mountains,40.18,58.34,-1
@@ -26694,2626 +28050,7 @@ step
 
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
-#wotlk
-#tbc
-#group Horde 60-70
-<< Horde
-#name 67-69 Netherstorm
-#next 69-70 Shadowmoon Valley (Aldor) << TBC
-#next 68-71 Howling Fjord << WOTLK
-step
-#completewith A529
-+Abandon any leftover quests you have from Blade's Edge Mountains
-step
-.goto Blade's Edge Mountains,74.89,24.48,100,0
-.goto Blade's Edge Mountains,77.36,24.53,100,0
-.goto Netherstorm,21.81,55.56,40 >> Travel to Netherstorm
-.skill riding,225,1
-step
-.goto Netherstorm,20.15,55.84,30,0
-.goto Netherstorm,21.81,55.52
->>Talk to the Netherologist on the bridge
-.accept 10183 >> Accept Off To Area 52
-step
-#label A529
->>Travel to Area 52. Talk to Boots, Khay'ji, Fuselage, and the Wanted Poster
-.accept 10342 >> Accept Securing the Shaleskin Shale
-.goto Netherstorm,32.27,63.92
-.accept 10265 >> Accept Consortium Crystal Collection
-.goto Netherstorm,32.44,64.20
-.turnin 10183 >> Turn in Off To Area 52
-.accept 10186 >> Accept You're Hired!
-.goto Netherstorm,32.68,64.41,30,0
-.goto Netherstorm,32.73,64.96
-.accept 10261 >> Accept Wanted: Annihilator Servo!
-.accept 10701 >> Accept Breaking Down Netherock
-.goto Netherstorm,32.09,64.64
-step
-#completewith Maxx
-.goto Netherstorm,31.96,64.42
-.home >> Set your Hearthstone to Area 52
-step
-#aldor
-.goto Netherstorm,32.07,64.18
->>Talk to Orelis in the Inn
-
-.accept 10241 >> Accept Distraction at Manaforge B'naar
-step
-#scryer
-.goto Netherstorm,32.00,64.08
->>Talk to Talodien in the Inn
-.accept 10189 >> Accept Manaforge B'naar
-
-step
->>Talk to Ravandwyr
-.accept 10173 >> Accept The Archmage's Staff
-.goto Netherstorm,31.36,66.15
-step
-#completewith Maxx
-.goto Netherstorm,30.19,63.01,60,0
->>Kill Shaleskin Flayers. Loot them for their Shale
-.complete 10342,1 
-step
->>Travel to the Ruins of Enkaat. Talk to Alley, then Maxx to start his escort
-.accept 10190 >> Accept Recharging the Batteries
-.goto Netherstorm,31.52,56.60
-.accept 10191 >> Accept Mark V is Alive!
-.goto Netherstorm,31.59,56.64
-step
-#completewith next
->>Loot the Red Crystals on the ground as you escort Maxx
-.complete 10186,1 
-step
-.goto Netherstorm,32.90,53.43,60,0
-.goto Netherstorm,33.74,52.73,60,0
-.goto Netherstorm,34.23,51.28,60,0
-.goto Netherstorm,33.23,53.56,60,0
-.goto Netherstorm,31.59,56.64
->>Escort Maxx through the ruins
-.complete 10191,1 
-step
-.goto Netherstorm,32.29,55.19,40,0
-.goto Netherstorm,31.62,54.77,40,0
-.goto Netherstorm,32.70,53.94,40,0
-.goto Netherstorm,34.16,53.48,40,0
-.goto Netherstorm,34.22,52.91,40,0
-.goto Netherstorm,34.06,52.03,40,0
-.goto Netherstorm,34.31,51.25
->>Loot the Red Crystals on the ground
-.complete 10186,1 
-step
-#label Maxx
-.goto Netherstorm,31.52,56.60
->>Talk to Alley
-.turnin 10191 >> Turn in Mark V is Alive!
-step
-#completewith next
-.goto Netherstorm,20.9,64.4,0
-.goto Netherstorm,29.7,51.6,0
-.goto Netherstorm,45.2,72.2,0
-.use 28369 >>Attack Phase Hunters down to 20% or less health, then use the Battery Recharging Blaster in your bags on them. Kill them
-.complete 10190,1 
-step
-.goto Netherstorm,25.68,56.67,60,0
-.goto Netherstorm,25.94,58.48,60,0
-.goto Netherstorm,27.40,56.23,60,0
-.goto Netherstorm,28.50,58.80,60,0
-.goto Netherstorm,26.44,60.56,60,0
-.goto Netherstorm,27.89,63.26,60,0
-.goto Netherstorm,30.20,62.87,60,0
-.goto Netherstorm,30.20,61.22
->>Kill Shaleskin Flayers. Loot them for their Shale
-.complete 10342,1 
-step
->>Return to Area 52. Talk to Boots, Fuselage, and Trep
-.turnin 10342 >> Turn in Securing the Shaleskin Shale
-.accept 10199 >> Accept That Little Extra Kick
-.goto Netherstorm,32.27,63.92
-.turnin 10186 >> Turn in You're Hired!
-.accept 10203 >> Accept Invaluable Asset Zapping
-.accept 10225 >> Accept Report to Engineering
-.goto Netherstorm,32.68,64.41,30,0
-.goto Netherstorm,32.73,64.96
-.turnin 10225 >> Turn in Report to Engineering
-.accept 10224 >> Accept Essence for the Engines
-.goto Netherstorm,32.43,66.78
-step
-#completewith next
-.use 28369 >>Attack Phase Hunters down to 20% or less health, then use the Battery Recharging Blaster in your bags on them. Kill them
-.complete 10190,1 
-step
-#completewith Dredging
->>Kill Nether Rays. Loot them for their Stingers
-.complete 10199,1 
-step
-.loop 55,Netherstorm,29.46,59.25,31.77,59.41,33.40,58.59,34.51,58.39,35.83,59.32,35.63,60.99,36.81,62.08,38.19,60.18,37.62,58.17,36.96,57.62,35.24,57.51,33.22,57.34,32.31,57.97,30.91,57.45,29.46,59.25
->>Kill Mana Wraiths. Loot them for their Essence
-.complete 10224,1 
-step << Shaman
-#completewith next
-.hs >> Hearth to Area 52
-.cooldown item,6948,>0
-step
-.goto Netherstorm,32.43,66.78
->>Return to Area 52. Talk to Trep
-.turnin 10224 >> Turn in Essence for the Engines
-.accept 10226 >> Accept Elemental Power Extraction
-step
-#aldor
->>Kill Sunfury Magisters and Bloodwarders
-.complete 10241,1 
-.goto Netherstorm,25.64,68.35,50,0
-.goto Netherstorm,26.58,68.65,50,0
-.goto Netherstorm,25.18,68.81
-.complete 10241,2 
-.goto Netherstorm,28.09,64.84,50,0
-.goto Netherstorm,27.43,65.29,50,0
-.goto Netherstorm,25.91,66.72,50,0
-.goto Netherstorm,25.16,67.41
-step
-#scryer
-.goto Netherstorm,27.58,65.19,30,0
-.goto Netherstorm,27.00,65.67
->>Kill Captain Arathyn. Loot him for his Roster
-.complete 10189,1 
-.unitscan Captain Arathyn
-step
-#completewith next
-.line Netherstorm,18.91,73.08,19.25,74.14,19.67,75.12,20.21,75.45,19.67,75.12,20.16,76.58,20.92,77.73,19.69,78.06,20.92,77.73,21.36,77.60,22.25,78.09,23.03,78.71,22.46,78.73,23.53,79.44,24.23,80.11,25.19,80.83,26.08,81.40,26.78,81.58,27.82,81.09,28.52,80.81,29.70,80.84,30.32,80.66,30.84,80.31,31.32,79.53,31.94,79.56,32.66,79.50,33.55,78.92,34.27,78.64,33.56,79.24,34.27,78.64,35.55,78.65,36.47,79.01,37.83,78.78,38.54,78.67,39.37,78.14,40.02,77.86,41.03,77.33
-.goto Netherstorm,18.91,73.08,60,0
-.goto Netherstorm,20.21,75.45,60,0
-.goto Netherstorm,20.92,77.73,60,0
-.goto Netherstorm,21.36,77.60,60,0
-.goto Netherstorm,23.03,78.71,60,0
-.goto Netherstorm,23.53,79.44,60,0
-.goto Netherstorm,25.19,80.83,60,0
-.goto Netherstorm,26.78,81.58,60,0
-.goto Netherstorm,28.52,80.81,60,0
-.goto Netherstorm,30.32,80.66,60,0
-.goto Netherstorm,31.32,79.53,60,0
-.goto Netherstorm,32.66,79.50,60,0
-.goto Netherstorm,34.27,78.64,60,0
-.goto Netherstorm,34.27,78.64,60,0
-.goto Netherstorm,36.47,79.01,60,0
-.goto Netherstorm,38.54,78.67,60,0
-.goto Netherstorm,41.03,77.33
->>Kill Netherock. He patrols around. This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
-.complete 10701,1 
-.unitscan Netherock
-step
-.goto Netherstorm,32.29,79.10,60,0
-.goto Netherstorm,34.21,79.09,60,0
-.goto Netherstorm,35.65,76.94,60,0
-.goto Netherstorm,38.16,80.11,60,0
-.goto Netherstorm,39.72,77.25
-.use 28547 >>Use the Elemental Power Extractor in your bags on a Warp Aberration or Sundered Rumbler, then kill them. Loot the small purple crystal that spawns above their corpse for the Power
-.complete 10226,1 
-step
-#aldor
-#completewith Penta
->>Kill Demons. Loot them for their Marks of Sargeras
-.collect 30809,10,10653,1 
-step
-#sticky
-#label Analyzer
->>Retrieve the Terrain Analyzer and Dig-a-Matic
-.complete 10203,3 
-.goto Netherstorm,40.23,72.90
-.complete 10203,1 
-.goto Netherstorm,41.09,73.73
-step
-#sticky
-#label TheClaw
-#requires Analyzer
->>Retrieve the Wagon
-.complete 10203,4 
-.goto Netherstorm,42.50,72.17,0,0
-step
-#label Penta
-.goto Netherstorm,42.46,72.76
->>Kill Pentatharon. Loot him for his Artifact
-.complete 10265,1 
-step
-#requires TheClaw
-#completewith next
-.use 28369 >>Attack Phase Hunters down to 20% or less health, then use the Battery Recharging Blaster in your bags on them. Kill them
-.complete 10190,1 
-step
-#requires TheClaw
-.loop 55,Netherstorm,43.98,74.78,44.74,73.12,45.43,73.76,47.55,71.44,44.47,70.12,43.10,67.80,42.50,68.79,43.98,74.78
->>Kill Nether Rays. Loot them for their Stingers
-.complete 10199,1,3 
-step
-#aldor
-#completewith CPowder
->>Kill Demons. Loot them for their Marks of Sargeras
-.collect 30809,10,10653,1 
-step
-#label Dredging
->>Finish killing the Nether Rays and Phase Hunters if you see any, then retrieve the Dredging Claw
-.complete 10203,2 
-.goto Netherstorm,41.49,71.78,0,0
-step
-#requires TheClaw
-#label CPowder
-.goto Netherstorm,40.87,72.53
-.use 29207 >>Use the Conjuring Powder in your bags to summon Ekkorash. Kill him. Loot him for Vargoth's Staff
-.complete 10173,1 
-step << Shaman
-#completewith X
-.hs >> Hearth to Area 52
-.cooldown item,6948,>0
-step
-#sticky
-#label NetherRay1
-.goto Netherstorm,32.27,63.92,0,0
->>Talk to Boots
-.turnin 10199 >> Turn in That Little Extra Kick
-.isQuestComplete 10199
-step
-#aldor
->>Return to Area 52. Talk to Blastfizzle, Trep, Ravandwyr, Orelis, Karja, Khay'ji, Fuselage, and Papa
-.turnin 10203 >> Turn in Invaluable Asset Zapping
-.accept 10221 >> Accept Dr. Boom!
-.goto Netherstorm,34.19,68.15
-.turnin 10226 >> Turn in Elemental Power Extraction
-.goto Netherstorm,32.43,66.78
-.turnin 10173 >> Turn in The Archmage's Staff
-.accept 10300 >> Accept Rebuilding the Staff
-.goto Netherstorm,31.36,66.15
-.turnin 10241 >> Turn in Distraction at Manaforge B'naar
-.accept 10313 >> Accept Measuring Warp Energies
-.goto Netherstorm,32.07,64.18
-.accept 10243 >> Accept Naaru Technology
-.goto Netherstorm,32.04,64.18
-.turnin 10265 >> Turn in Consortium Crystal Collection
-.accept 10262 >> Accept A Heap of Ethereals
-.goto Netherstorm,32.44,64.20
-.turnin 10701 >> Turn in Breaking Down Netherock
-.goto Netherstorm,32.68,64.41,30,0
-.goto Netherstorm,32.73,64.96
-.accept 10206 >> Accept Pick Your Part
-.goto Netherstorm,32.99,64.66
-.isQuestComplete 10701
-step
-#aldor
->>Return to Area 52. Talk to Blastfizzle, Trep, Ravandwyr, Orelis, Karja, Khay'ji, and Papa
-.turnin 10203 >> Turn in Invaluable Asset Zapping
-.accept 10221 >> Accept Dr. Boom!
-.goto Netherstorm,34.19,68.15
-.turnin 10226 >> Turn in Elemental Power Extraction
-.goto Netherstorm,32.43,66.78
-.turnin 10173 >> Turn in The Archmage's Staff
-.accept 10300 >> Accept Rebuilding the Staff
-.goto Netherstorm,31.36,66.15
-.turnin 10241 >> Turn in Distraction at Manaforge B'naar
-.accept 10313 >> Accept Measuring Warp Energies
-.goto Netherstorm,32.07,64.18
-.accept 10243 >> Accept Naaru Technology
-.goto Netherstorm,32.04,64.18
-.turnin 10265 >> Turn in Consortium Crystal Collection
-.accept 10262 >> Accept A Heap of Ethereals
-.goto Netherstorm,32.44,64.20
-.accept 10206 >> Accept Pick Your Part
-.goto Netherstorm,32.99,64.66
-step
-#scryer
->>Return to Area 52. Talk to Blastfizzle, Trep, Ravandwyr, Thalodien, Larynna, Khay'ji, Fuselage, and Papa
-.turnin 10203 >> Turn in Invaluable Asset Zapping
-.accept 10221 >> Accept Dr. Boom!
-.goto Netherstorm,34.19,68.15
-.turnin 10226 >> Turn in Elemental Power Extraction
-.goto Netherstorm,32.43,66.78
-.turnin 10173 >> Turn in The Archmage's Staff
-.accept 10300 >> Accept Rebuilding the Staff
-.goto Netherstorm,31.36,66.15
-.turnin 10189 >> Turn in Manaforge B'naar
-.accept 10193 >> Accept High Value Targets
-.goto Netherstorm,32.00,64.08
-.accept 10204 >> Accept Bloodgem Crystals
-.goto Netherstorm,32.05,63.99
-.turnin 10265 >> Turn in Consortium Crystal Collection
-.accept 10262 >> Accept A Heap of Ethereals
-.goto Netherstorm,32.44,64.20
-.turnin 10701 >> Turn in Breaking Down Netherock
-.goto Netherstorm,32.68,64.41,30,0
-.goto Netherstorm,32.73,64.96
-.accept 10206 >> Accept Pick Your Part
-.goto Netherstorm,32.99,64.66
-.isQuestComplete 10701
-step
-#scryer
->>Return to Area 52. Talk to Blastfizzle, Trep, Ravandwyr, Thalodien, Larynna, Khay'ji, and Papa
-.turnin 10203 >> Turn in Invaluable Asset Zapping
-.accept 10221 >> Accept Dr. Boom!
-.goto Netherstorm,34.19,68.15
-.turnin 10226 >> Turn in Elemental Power Extraction
-.goto Netherstorm,32.43,66.78
-.turnin 10173 >> Turn in The Archmage's Staff
-.accept 10300 >> Accept Rebuilding the Staff
-.goto Netherstorm,31.36,66.15
-.turnin 10189 >> Turn in Manaforge B'naar
-.accept 10193 >> Accept High Value Targets
-.goto Netherstorm,32.00,64.08
-.accept 10204 >> Accept Bloodgem Crystals
-.goto Netherstorm,32.05,63.99
-.turnin 10265 >> Turn in Consortium Crystal Collection
-.accept 10262 >> Accept A Heap of Ethereals
-.goto Netherstorm,32.44,64.20
-.accept 10206 >> Accept Pick Your Part
-.goto Netherstorm,32.99,64.66
-step
-#scryer
-#completewith Phase
-#requires NetherRay1
->>Kill an Arcane Annihilator. Loot it for it's Servo. It patrols around. This quest is difficult. Find a group for it if needed. Skip this step if you're unable to find a group or solo it.
-.complete 10261,1 
-.unitscan Arcane Annihilator
-step
-#scryer
-#requires NetherRay1
-#completewith Geologists
-#label Bloodgem
->>Kill Sunfury Magisters. Loot them for their Bloodgem Shard
-.collect 28452,1,10204 
-step
-#scryer
-#requires NetherRay1
-#completewith next
-#label BloodgemC
-#requires Bloodgem
-.use 28452 >>Use the Bloodgem Shard in your bags on one of the floating bloodgem crystals
-.complete 10204,1 
-step
-#scryer
-#requires NetherRay1
-#label Geologists
-.goto Netherstorm,25.61,69.54,60,0
-.goto Netherstorm,26.47,70.86,60,0
-.goto Netherstorm,26.47,70.86
->>Kill Sunfury Geologists
-.complete 10193,3 
-step
-#scryer
-.loop 45,Netherstorm,26.44,68.93,25.64,68.86,25.59,68.10,24.90,66.46,24.93,65.53,25.47,65.14,26.44,68.93
->>Kill Sunfury Magisters. Loot them for their Bloodgem Shard
-.collect 28452,1,10204 
-.isOnQuest 10204
-step
-#scryer
-.goto Netherstorm,26.07,68.37,-1
-.goto Netherstorm,26.18,68.89,-1
-.goto Netherstorm,26.43,68.38,-1
-.goto Netherstorm,26.25,68.54,-1
-.goto Netherstorm,25.16,66.11,-1
-.goto Netherstorm,25.30,65.52,-1
-.goto Netherstorm,25.51,65.90,-1
-.goto Netherstorm,25.30,65.85,-1
-.use 28452 >>Use the Bloodgem Shard in your bags on one of the floating bloodgem crystals
-.complete 10204,1 
-.isOnQuest 10204
-step
-#scryer
-.goto Netherstorm,24.84,67.71,30,0
-.loop 30,Netherstorm,23.95,68.26,23.53,67.69,23.03,67.66,22.69,68.29,22.64,69.07,23.11,69.67,23.59,69.64,23.96,69.01,23.95,68.26
->>Go inside Manaforge B'naar. Kill Warp-Masters and Warp-Engineers
-.complete 10193,1 
-.complete 10193,2 
-step
-#scryer
-#completewith next
->>Kill Nether Rays. Loot them for their Stingers
-.complete 10199,1 
-step
-#aldor
-#requires NetherRay1
-#completewith WPipe
->>Kill Nether Rays. Loot them for their Stingers
-.complete 10199,1 
-step
-#aldor
-#requires NetherRay1
-#completewith next
-.use 28369 >>Attack Phase Hunters down to 20% or less health, then use the Battery Recharging Blaster in your bags on them. Kill them
-.complete 10190,1 
-step
-#aldor
-#requires NetherRay1
-.goto Netherstorm,25.79,60.21
-.use 29324 >>Use the Warp-Attuned Orb in your bags next to the Pipeline
-.complete 10313,1 
-step
-#aldor
-#completewith EPipe
->>Kill an Arcane Annihilator. Loot it for it's Servo. It patrols around. This quest is difficult. Find a group for it if needed. Skip this step if you're unable to find a group or solo it.
-.complete 10261,1 
-.unitscan Arcane Annihilator
-step
-#label Phase
-.loop 60,Netherstorm,25.13,57.59,25.81,59.53,25.42,61.50,24.60,63.36,23.37,65.29,22.26,63.91,20.46,64.37,18.99,67.23,18.54,68.72
-.use 28369 >>Attack Phase Hunters down to 20% or less health, then use the Battery Recharging Blaster in your bags on them. Kill them
-.complete 10190,1 
-step
-#aldor
-#label WPipe
-.goto Netherstorm,20.88,67.20
-.use 29324 >>Use the Warp-Attuned Orb in your bags next to the Pipeline
-.complete 10313,4 
-step
-#aldor
-.goto Netherstorm,20.50,70.95
-.use 29324 >>Use the Warp-Attuned Orb in your bags next to the Pipeline
-.complete 10313,3 
-step
-#aldor
-.goto Netherstorm,23.08,67.33
->>Go inside Manaforge B'naar. Talk to the Control Console
-.turnin 10243 >> Turn in Naaru Technology
-.accept 10245 >> Accept B'naar Console Transcription
-step
-#aldor
-#label EPipe
-.goto Netherstorm,28.91,72.29
-.use 29324 >>Use the Warp-Attuned Orb in your bags next to the Pipeline
-.complete 10313,2 
-step << WOTLK
-.goto Netherstorm,26.81,76.98
->>Talk to Meancamp
-.accept 10309 >> Accept It's a Fel Reaver, But with Heart
-step << WOTLK
-#completewith next
-.goto Netherstorm,26.52,78.73
-.cast 35282 >> Use the Fel Zapper in your bags on the Scrapped Fel Reaver to start the event
-.use 29447
-.isOnQuest 10309
-step << WOTLK
-.goto Netherstorm,26.52,78.73
-.use 29447 >>Kill the Scrapped Fel Reaver whilst defending yourself from the Zaxxis. Loot it for it's Heart. This quest is difficult. Find a group for it if needed. Skip this step if you're unable to find a group or solo it
-.complete 10309,1 
-.isOnQuest 10309
-step << WOTLK
-.goto Netherstorm,26.81,76.98
->>Talk to Meancamp
-.turnin 10309 >> Turn in It's a Fel Reaver, But with Heart
-.isOnQuest 10309
-step << WOTLK
-.abandon 10309 >> Abandon It's a Fel Reaver, But with Heart
-step
-#scryer
-.line Netherstorm,18.91,73.08,19.25,74.14,19.67,75.12,20.21,75.45,19.67,75.12,20.16,76.58,20.92,77.73,19.69,78.06,20.92,77.73,21.36,77.60,22.25,78.09,23.03,78.71,22.46,78.73,23.53,79.44,24.23,80.11,25.19,80.83,26.08,81.40,26.78,81.58,27.82,81.09,28.52,80.81,29.70,80.84,30.32,80.66,30.84,80.31,31.32,79.53,31.94,79.56,32.66,79.50,33.55,78.92,34.27,78.64,33.56,79.24,34.27,78.64,35.55,78.65,36.47,79.01,37.83,78.78,38.54,78.67,39.37,78.14,40.02,77.86,41.03,77.33
-.goto Netherstorm,18.91,73.08,60,0
-.goto Netherstorm,20.21,75.45,60,0
-.goto Netherstorm,20.92,77.73,60,0
-.goto Netherstorm,21.36,77.60,60,0
-.goto Netherstorm,23.03,78.71,60,0
-.goto Netherstorm,23.53,79.44,60,0
-.goto Netherstorm,25.19,80.83,60,0
-.goto Netherstorm,26.78,81.58,60,0
-.goto Netherstorm,28.52,80.81,60,0
-.goto Netherstorm,30.32,80.66,60,0
-.goto Netherstorm,31.32,79.53,60,0
-.goto Netherstorm,32.66,79.50,60,0
-.goto Netherstorm,34.27,78.64,60,0
-.goto Netherstorm,34.27,78.64,60,0
-.goto Netherstorm,36.47,79.01,60,0
-.goto Netherstorm,38.54,78.67,60,0
-.goto Netherstorm,41.03,77.33
->>Kill Netherock. He patrols around. This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
-.complete 10701,1 
-.unitscan Netherock
-step
-#aldor
-#completewith next
->>Kill Netherock. He patrols around. This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
-.complete 10701,1 
-.unitscan Netherock
-step
-.loop 55,Netherstorm,28.16,76.82,28.59,77.91,28.17,79.67,29.23,80.03,29.26,78.72,30.50,79.13,30.62,75.59,31.47,76.40,31.81,75.01,30.92,73.97,30.03,74.68,29.19,75.33,28.16,76.82
->>Loot the small transparent boxes on the ground
->>Kill Zaxxis. Loot them for their Insignias
-.complete 10206,1 
-.complete 10262,1 
-step
-#aldor
-.line Netherstorm,18.91,73.08,19.25,74.14,19.67,75.12,20.21,75.45,19.67,75.12,20.16,76.58,20.92,77.73,19.69,78.06,20.92,77.73,21.36,77.60,22.25,78.09,23.03,78.71,22.46,78.73,23.53,79.44,24.23,80.11,25.19,80.83,26.08,81.40,26.78,81.58,27.82,81.09,28.52,80.81,29.70,80.84,30.32,80.66,30.84,80.31,31.32,79.53,31.94,79.56,32.66,79.50,33.55,78.92,34.27,78.64,33.56,79.24,34.27,78.64,35.55,78.65,36.47,79.01,37.83,78.78,38.54,78.67,39.37,78.14,40.02,77.86,41.03,77.33
-.goto Netherstorm,18.91,73.08,60,0
-.goto Netherstorm,20.21,75.45,60,0
-.goto Netherstorm,20.92,77.73,60,0
-.goto Netherstorm,21.36,77.60,60,0
-.goto Netherstorm,23.03,78.71,60,0
-.goto Netherstorm,23.53,79.44,60,0
-.goto Netherstorm,25.19,80.83,60,0
-.goto Netherstorm,26.78,81.58,60,0
-.goto Netherstorm,28.52,80.81,60,0
-.goto Netherstorm,30.32,80.66,60,0
-.goto Netherstorm,31.32,79.53,60,0
-.goto Netherstorm,32.66,79.50,60,0
-.goto Netherstorm,34.27,78.64,60,0
-.goto Netherstorm,34.27,78.64,60,0
-.goto Netherstorm,36.47,79.01,60,0
-.goto Netherstorm,38.54,78.67,60,0
-.goto Netherstorm,41.03,77.33
->>Kill Netherock. He patrols around. This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
-.complete 10701,1 
-.unitscan Netherock
-step
-#completewith A52
-.hs >> Hearth to Area 52
-.cooldown item,6948,>0
-step
-#sticky
-#label NetherRay2
-.goto Netherstorm,32.27,63.92,0,0
->>Talk to Boots
-.turnin 10199 >> Turn in That Little Extra Kick
-.isQuestComplete 10199
-step
-#aldor
->>Return to Area 52. Talk to Karja, Orelis, Khay'ji, Fuselage, and Papa
-.turnin 10245 >> Turn in B'naar Console Transcription
-.accept 10299 >> Accept Shutting Down Manaforge B'naar
-.goto Netherstorm,32.04,64.18
-.turnin 10313 >> Turn in Measuring Warp Energies
-.goto Netherstorm,32.07,64.18
-.turnin 10262 >> Turn in A Heap of Ethereals
-.accept 10205 >> Accept Warp-Raider Nesaad
-.goto Netherstorm,32.44,64.20
-.turnin 10701 >> Turn in Breaking Down Netherock
-.goto Netherstorm,32.68,64.41,30,0
-.goto Netherstorm,32.73,64.96
-.turnin 10206 >> Turn in Pick Your Part
-.turnin 10261 >> Turn in Wanted: Annihilator Servo!
-.accept 10232 >> Accept In A Scrap With The Legion
-.accept 10333 >> Accept Help Mama Wheeler
-.goto Netherstorm,32.99,64.66
-.isQuestComplete 10701
-.isQuestComplete 10261
-step
-#aldor
->>Return to Area 52. Talk to Karja, Orelis, Khay'ji, Fuselage, and Papa
-.turnin 10245 >> Turn in B'naar Console Transcription
-.accept 10299 >> Accept Shutting Down Manaforge B'naar
-.goto Netherstorm,32.04,64.18
-.turnin 10313 >> Turn in Measuring Warp Energies
-.goto Netherstorm,32.07,64.18
-.turnin 10262 >> Turn in A Heap of Ethereals
-.accept 10205 >> Accept Warp-Raider Nesaad
-.goto Netherstorm,32.44,64.20
-.turnin 10701 >> Turn in Breaking Down Netherock
-.goto Netherstorm,32.68,64.41,30,0
-.goto Netherstorm,32.73,64.96
-.turnin 10206 >> Turn in Pick Your Part
-.accept 10232 >> Accept In A Scrap With The Legion
-.accept 10333 >> Accept Help Mama Wheeler
-.goto Netherstorm,32.99,64.66
-.isQuestComplete 10701
-step
-#aldor
->>Return to Area 52. Talk to Karja, Orelis, Khay'ji, and Papa
-.turnin 10245 >> Turn in B'naar Console Transcription
-.accept 10299 >> Accept Shutting Down Manaforge B'naar
-.goto Netherstorm,32.04,64.18
-.turnin 10313 >> Turn in Measuring Warp Energies
-.goto Netherstorm,32.07,64.18
-.turnin 10262 >> Turn in A Heap of Ethereals
-.accept 10205 >> Accept Warp-Raider Nesaad
-.goto Netherstorm,32.44,64.20
-.turnin 10206 >> Turn in Pick Your Part
-.turnin 10261 >> Turn in Wanted: Annihilator Servo!
-.accept 10232 >> Accept In A Scrap With The Legion
-.accept 10333 >> Accept Help Mama Wheeler
-.goto Netherstorm,32.99,64.66
-.isQuestComplete 10261
-step
-#aldor
-#label A52
->>Return to Area 52. Talk to Karja, Orelis, Khay'ji, and Papa
-.turnin 10245 >> Turn in B'naar Console Transcription
-.accept 10299 >> Accept Shutting Down Manaforge B'naar
-.goto Netherstorm,32.04,64.18
-.turnin 10313 >> Turn in Measuring Warp Energies
-.goto Netherstorm,32.07,64.18
-.turnin 10262 >> Turn in A Heap of Ethereals
-.accept 10205 >> Accept Warp-Raider Nesaad
-.goto Netherstorm,32.44,64.20
-.turnin 10206 >> Turn in Pick Your Part
-.accept 10232 >> Accept In A Scrap With The Legion
-.accept 10333 >> Accept Help Mama Wheeler
-.goto Netherstorm,32.99,64.66
-step
-#scryer
->>Return to Area 52. Talk to Thalodien, Larynna, Khay'ji, Fuselage, and Papa
-.turnin 10193 >> Turn in High Value Targets
-.accept 10329 >> Accept Shutting Down Manaforge B'naar
-.goto Netherstorm,32.00,64.08
-.turnin 10204 >> Turn in Bloodgem Crystals
-.goto Netherstorm,32.05,63.99
-.turnin 10262 >> Turn in A Heap of Ethereals
-.accept 10205 >> Accept Warp-Raider Nesaad
-.goto Netherstorm,32.44,64.20
-.turnin 10701 >> Turn in Breaking Down Netherock
-.goto Netherstorm,32.68,64.41,30,0
-.goto Netherstorm,32.73,64.96
-.turnin 10206 >> Turn in Pick Your Part
-.turnin 10261 >> Turn in Wanted: Annihilator Servo!
-.accept 10232 >> Accept In A Scrap With The Legion
-.accept 10333 >> Accept Help Mama Wheeler
-.goto Netherstorm,32.99,64.66
-.isQuestComplete 10701
-.isQuestComplete 10261
-step
-#scryer
->>Return to Area 52. Talk to Thalodien, Larynna, Khay'ji, Fuselage, and Papa
-.turnin 10193 >> Turn in High Value Targets
-.accept 10329 >> Accept Shutting Down Manaforge B'naar
-.goto Netherstorm,32.00,64.08
-.turnin 10204 >> Turn in Bloodgem Crystals
-.goto Netherstorm,32.05,63.99
-.turnin 10262 >> Turn in A Heap of Ethereals
-.accept 10205 >> Accept Warp-Raider Nesaad
-.goto Netherstorm,32.44,64.20
-.turnin 10701 >> Turn in Breaking Down Netherock
-.goto Netherstorm,32.68,64.41,30,0
-.goto Netherstorm,32.73,64.96
-.turnin 10206 >> Turn in Pick Your Part
-.accept 10232 >> Accept In A Scrap With The Legion
-.accept 10333 >> Accept Help Mama Wheeler
-.goto Netherstorm,32.99,64.66
-.isQuestComplete 10701
-step
-#scryer
->>Return to Area 52. Talk to Thalodien, Larynna, Khay'ji, and Papa
-.turnin 10193 >> Turn in High Value Targets
-.accept 10329 >> Accept Shutting Down Manaforge B'naar
-.goto Netherstorm,32.00,64.08
-.turnin 10204 >> Turn in Bloodgem Crystals
-.goto Netherstorm,32.05,63.99
-.turnin 10262 >> Turn in A Heap of Ethereals
-.accept 10205 >> Accept Warp-Raider Nesaad
-.goto Netherstorm,32.44,64.20
-.turnin 10206 >> Turn in Pick Your Part
-.turnin 10261 >> Turn in Wanted: Annihilator Servo!
-.accept 10232 >> Accept In A Scrap With The Legion
-.accept 10333 >> Accept Help Mama Wheeler
-.goto Netherstorm,32.99,64.66
-.isQuestComplete 10261
-step
-#scryer
-#label A52
->>Return to Area 52. Talk to Thalodien, Larynna, Khay'ji, and Papa
-.turnin 10193 >> Turn in High Value Targets
-.accept 10329 >> Accept Shutting Down Manaforge B'naar
-.goto Netherstorm,32.00,64.08
-.turnin 10204 >> Turn in Bloodgem Crystals
-.goto Netherstorm,32.05,63.99
-.turnin 10262 >> Turn in A Heap of Ethereals
-.accept 10205 >> Accept Warp-Raider Nesaad
-.goto Netherstorm,32.44,64.20
-.turnin 10206 >> Turn in Pick Your Part
-.accept 10232 >> Accept In A Scrap With The Legion
-.accept 10333 >> Accept Help Mama Wheeler
-.goto Netherstorm,32.99,64.66
-step
-#requires NetherRay2
-#completewith next
->>Kill an Arcane Annihilator. Loot it for it's Servo. It patrols around. This quest is difficult. Find a group for it if needed. Skip this step if you're unable to find a group or solo it.
-.complete 10261,1 
-.unitscan Arcane Annihilator
-step
-#aldor
-#requires NetherRay2
-.goto Netherstorm,24.20,68.10,40,0
-.goto Netherstorm,23.68,70.02,40,0
-.goto Netherstorm,23.85,70.77
->>Kill Overseer Theredis inside Manaforge B'naar. Loot him for his Crystal
-.complete 10299,2 
-step
-#aldor
-.goto Netherstorm,23.08,67.33
->>Talk to the Control Console to start the event. Kill the Sunfury that try to stop the shutdown. Wait out the timer
-.complete 10299,1 
-.skipgossip
-.timer 122,Console Shutdown
-step
-#scryer
-#requires NetherRay2
-.goto Netherstorm,24.20,68.10,40,0
-.goto Netherstorm,23.68,70.02,40,0
-.goto Netherstorm,23.85,70.77
->>Kill Overseer Theredis inside Manaforge B'naar. Loot him for his Crystal
-.complete 10329,2 
-step
-#scryer
-.goto Netherstorm,23.08,67.33
->>Talk to the Control Console to start the event. Kill the Sunfury that try to stop the shutdown. Wait out the timer
-.complete 10329,1 
-.skipgossip
-.timer 122,Console Shutdown
-step
-.loop 55,Netherstorm,20.62,68.87,20.05,69.08,20.08,69.34,21.48,69.36,21.53,69.53,21.49,69.93,21.18,70.60,21.11,71.33,20.42,72.15,20.33,72.48,20.42,72.15,20.11,71.87,21.11,71.33,21.23,71.72,21.39,73.29,21.77,73.83,21.98,74.62,22.12,75.08,22.82,75.71,23.16,75.92,23.36,75.37
->>Kill an Arcane Annihilator. Loot it for it's Servo. It patrols around. This quest is difficult. Find a group for it if needed. Skip this step if you're unable to find a group or solo it.
-.complete 10261,1 
-.unitscan Arcane Annihilator
-step
-.goto Netherstorm,28.27,79.61
->>Kill Warp-Raider Nesaad
-.complete 10205,1 
-step << Shaman
-#completewith X
-.hs >> Hearth to Area 52
-.cooldown item,6948,>0
-step
-#sticky
-#label NetherRay3
-.goto Netherstorm,32.27,63.92,0,0
->>Talk to Boots
-.turnin 10199 >> Turn in That Little Extra Kick
-.isQuestComplete 10199
-step
-#aldor
->>Return to Area 52. Talk to Karja, Orelis, Khay'ji, and Papa
-.turnin 10299 >> Turn in Shutting Down Manaforge B'naar
-.accept 10321 >> Accept Shutting Down Manaforge Coruu
-.goto Netherstorm,32.04,64.18
-.accept 10246 >> Accept Attack on Manaforge Coruu
-.goto Netherstorm,32.07,64.18
-.turnin 10205 >> Turn in Warp-Raider Nesaad
-.accept 10266 >> Accept Request for Assistance
-.goto Netherstorm,32.44,64.20
-.turnin 10261 >> Turn in Wanted: Annihilator Servo!
-.goto Netherstorm,32.99,64.66
-.isQuestComplete 10261
-step
-#aldor
->>Return to Area 52. Talk to Karja, Orelis, and Khay'ji
-.turnin 10299 >> Turn in Shutting Down Manaforge B'naar
-.accept 10321 >> Accept Shutting Down Manaforge Coruu
-.goto Netherstorm,32.04,64.18
-.accept 10246 >> Accept Attack on Manaforge Coruu
-.goto Netherstorm,32.07,64.18
-.turnin 10205 >> Turn in Warp-Raider Nesaad
-.accept 10266 >> Accept Request for Assistance
-.goto Netherstorm,32.44,64.20
-step
-#scryer
->>Return to Area 52. Talk to Thalodien, Khay'ji, and Papa
-.turnin 10329 >> Turn in Shutting Down Manaforge B'naar
-.accept 10194 >> Accept Stealth Flight
-.goto Netherstorm,32.00,64.08
-.turnin 10205 >> Turn in Warp-Raider Nesaad
-.accept 10266 >> Accept Request for Assistance
-.goto Netherstorm,32.44,64.20
-.turnin 10261 >> Turn in Wanted: Annihilator Servo!
-.goto Netherstorm,32.99,64.66
-.isQuestComplete 10261
-step
-#scryer
->>Return to Area 52. Talk to Thalodien and Khay'ji
-.turnin 10329 >> Turn in Shutting Down Manaforge B'naar
-.accept 10194 >> Accept Stealth Flight
-.goto Netherstorm,32.00,64.08
-.turnin 10205 >> Turn in Warp-Raider Nesaad
-.accept 10266 >> Accept Request for Assistance
-.goto Netherstorm,32.44,64.20
-step
-#requires NetherRay3
-.abandon 10261 >> Abandon Wanted: Annihilator Servo!
-step
-#requires NetherRay3
-.goto Netherstorm,31.52,56.60
->>Talk to Alley
-.turnin 10190 >> Turn in Recharging the Batteries
-.isQuestComplete 10190
-step
-#requires NetherRay3
-.loop 55,Netherstorm,32.31,56.81,32.97,56.75,33.79,54.62,32.48,54.86,32.78,53.44,34.20,52.78,35.14,51.33,33.86,50.28,32.67,50.47,30.71,54.55,32.31,56.81
->>Kill the Disembodied Protectors and Vindicators. Loot them for their Shards
-.complete 10300,1 
-step
-#completewith next
->>Kill Nether Rays. Loot them for their Stingers
-.complete 10199,1 
-step
-.loop 60,Netherstorm,35.14,48.69,33.34,49.47,30.94,51.00,27.98,51.46,27.04,50.50
-.use 28369 >>Attack Phase Hunters down to 20% or less health, then use the Battery Recharging Blaster in your bags on them. Kill them
-.complete 10190,1 
-step
-#scryer
-.goto Netherstorm,31.61,51.06,60,0
-.goto Netherstorm,28.96,52.10,60,0
-.goto Netherstorm,24.79,56.98,60,0
-.goto Netherstorm,26.74,57.56,60,0
-.goto Netherstorm,25.35,60.11,60,0
-.goto Netherstorm,26.50,62.16,60,0
-.goto Netherstorm,30.15,61.70,60,0
-.goto Netherstorm,34.22,61.85,60,0
-.goto Netherstorm,31.61,51.06,60,0
-.goto Netherstorm,28.96,52.10,60,0
-.goto Netherstorm,24.79,56.98,60,0
-.goto Netherstorm,26.74,57.56,60,0
-.goto Netherstorm,25.35,60.11,60,0
-.goto Netherstorm,26.50,62.16,60,0
-.goto Netherstorm,30.15,61.70,60,0
-.goto Netherstorm,34.22,61.85
->>Kill Nether Rays. Loot them for their Stingers
-.complete 10199,1 
-.unitscan Nether Ray
-step
-.goto Netherstorm,31.52,56.60
->>Talk to Alley
-.turnin 10190 >> Turn in Recharging the Batteries
-step
-.goto Netherstorm,34.71,59.53,10,0
-.goto Netherstorm,35.01,59.57
-.use 29429 >>Use Boom's Doom in your bags on Dr. Boom whilst on top of the barrel on his left to kill him
-.complete 10221,1 
-step
-#scryer
-.turnin 10199 >> Turn in That Little Extra Kick
-.goto Netherstorm,32.27,63.92
-step
-#aldor
-.goto Netherstorm,33.74,63.99
->>Return to Area 52
-.fp Area 52 >> Get the Area 52 flight path
-step
-#aldor
->>Talk to Boots and Ravandwyr
-.turnin 10199 >> Turn in That Little Extra Kick
-.goto Netherstorm,32.27,63.92
-.turnin 10300 >> Turn in Rebuilding the Staff
-.accept 10174 >> Accept Curse of the Violet Tower
-.goto Netherstorm,31.36,66.15
-.isQuestComplete 10199
-step
-#aldor
->>Talk to Ravandwyr
-.turnin 10300 >> Turn in Rebuilding the Staff
-.accept 10174 >> Accept Curse of the Violet Tower
-.goto Netherstorm,31.36,66.15
-step
-#scryer
->>Return to Area 52. Talk to Boots and Ravandwyr
-.turnin 10199 >> Turn in That Little Extra Kick
-.goto Netherstorm,32.27,63.92
-.turnin 10300 >> Turn in Rebuilding the Staff
-.accept 10174 >> Accept Curse of the Violet Tower
-.goto Netherstorm,31.36,66.15
-.isOnQuest 10199
-step
-#scryer
->>Return to Area 52. Talk to Ravandwyr
-.turnin 10300 >> Turn in Rebuilding the Staff
-.accept 10174 >> Accept Curse of the Violet Tower
-.goto Netherstorm,31.36,66.15
-step
-#completewith next
-.cast 34372 >> Use Archmage Vargoth's Staff in your bags
-.use 28455
-step
->>Talk to the Image of Archmage Vargoth
-.turnin 10174 >> Turn in Curse of the Violet Tower
-.accept 10188 >> Accept The Sigil of Krasus
-.use 28455
-step
->>Talk to Blastfizzle
-.goto Netherstorm,34.19,68.15
-.turnin 10221 >> Turn in Dr. Boom!
-step
-#scryer
-.goto Netherstorm,33.74,63.99
->>Do NOT turn in the quest next to the flight path yet
-.fp Area 52 >> Get the Area 52 flight path
-step
-#scryer
-.goto Netherstorm,33.81,64.23
-.fly >>Talk to Veronia to fly to Manaforge Coruu
-.turnin 10194 >> Turn in Stealth Flight
-.accept 10652 >> Accept Behind Enemy Lines
-.skipgossip
-.timer 42,Behind Enemy Lines flight
-step
-#scryer
-.goto Netherstorm,48.24,86.60
->>Talk to Caledis when you land
-.turnin 10652 >> Turn in Behind Enemy Lines
-.accept 10197 >> Accept A Convincing Disguise
-step
-#aldor
-.loop 55,Netherstorm,43.98,74.78,44.74,73.12,45.43,73.76,47.55,71.44,44.47,70.12,43.10,67.80,42.50,68.79,43.98,74.78
->>Kill Nether Rays. Loot them for their Stingers
-.complete 10199,1 
-step
-#aldor
-.goto Netherstorm,44.07,76.56,40,0
-.goto Netherstorm,45.55,78.99,40 >> Cross the Bridge to Manaforge Coruu
-.skill riding,225,1
-step
-#scryer
-.loop 50,Netherstorm,51.71,87.21,52.28,88.31,53.23,87.59,53.15,86.04,51.71,87.21
->>Kill Sunfury Researchers. Loot them for their Gloves
-.complete 10197,1 
-step
->>Travel to Kirin'Var. Talk to Thadell, Andrethan, Morran, and Dieworth
-.accept 10334 >> Accept Needs More Cowbell
-.goto Netherstorm,57.73,84.94
-.accept 10331 >> Accept Indispensable Tools
-.goto Netherstorm,57.71,85.19
-.accept 10343 >> Accept The Unending Invasion
-.goto Netherstorm,57.58,86.30
-.accept 10184 >> Accept Malevolent Remnants
-.accept 10185 >> Accept A Fate Worse Than Death
-.goto Netherstorm,57.50,86.34
-step
-.goto Netherstorm,55.68,87.17
->>Click on the Mana Bomb Fragment on the ground
-.complete 10343,1 
-step
-.goto Netherstorm,57.58,86.30
->>Talk to Morran
-.turnin 10343 >> Turn in The Unending Invasion
-.accept 10239 >> Accept Potential Energy Source
-step
-#completewith Arcanists
->>Loot the small transparent boxes on the ground outside
-.complete 10239,1 
-step
-#aldor
-#completewith next
->>Kill Sunfury Arcanists
-.complete 10246,2 
-step
-#scryer
-#completewith next
->>Kill Sunfury Guardsmen. Loot them for their Medallion
->>Kill Sunfury Arcanists. Loot them for their Robes
-.complete 10197,2 
-.complete 10197,3 
-step
-.goto Netherstorm,52.33,82.48,50,0
-.goto Netherstorm,52.34,82.72,50,0
-.goto Netherstorm,51.91,82.68,50,0
-.goto Netherstorm,51.65,82.12,50,0
-.goto Netherstorm,51.38,82.12,50,0
-.goto Netherstorm,51.32,81.99,50,0
-.goto Netherstorm,51.13,82.47,50,0
-.goto Netherstorm,50.68,82.30,50,0
-.goto Netherstorm,50.91,81.69,50,0
-.goto Netherstorm,51.13,81.29,50,0
-.goto Netherstorm,51.29,81.20,50,0
-.goto Netherstorm,51.75,81.23,50,0
-.goto Netherstorm,51.94,81.43
-.line Netherstorm,52.33,82.48,52.34,82.72,51.91,82.68,51.65,82.12,51.38,82.12,51.32,81.99,51.13,82.47,50.68,82.30,50.91,81.69,51.13,81.29,51.29,81.20,51.75,81.23,51.94,81.43,52.33,82.48
->>Kill Spellbinder Maryana. Loot her for her Sigil
-.complete 10188,1 
-.unitscan Spellbinder Maryana
-step
-#aldor
-#label Arcanists
-.loop 50,Netherstorm,52.33,82.48,52.34,82.72,51.91,82.68,51.65,82.12,51.38,82.12,51.32,81.99,51.13,82.47,50.68,82.30,50.91,81.69,51.13,81.29,51.29,81.20,51.75,81.23,52.33,82.48
->>Kill Sunfury Arcanists
-.complete 10246,2 
-step
-#aldor
-#completewith Coruu
->>Kill Sunfury Researchers, and loot the small transparent boxes inside Manaforge Coruu
-.complete 10246,1 
-.complete 10239,1 
-step
-#aldor
-#completewith next
-.goto Netherstorm,49.02,81.52
->>Kill Overseer Seylanna inside Manaforge Coruu. Loot her for her Crystal
-.complete 10321,2 
-step
-#aldor
-#label Coruu
-.goto Netherstorm,48.92,81.62
->>Talk to the Control Console to start the event. Kill the Sunfury that try to stop the shutdown. Wait out the timer
-.complete 10321,1 
-.skipgossip
-.timer 123,Console Shutdown
-step
-#aldor
-.loop 40,Netherstorm,49.46,82.42,49.08,83.00,48.16,82.40,48.14,81.55,48.55,81.01,49.14,80.95,49.45,81.61,49.46,82.42
->>Kill Sunfury Researchers, and loot the small transparent boxes inside Manaforge Coruu. Avoid the Arcane Annihilator
-.complete 10246,1 
-.complete 10239,1 
-step
-#scryer
-#label Arcanists
-.loop 55,Netherstorm,51.82,81.16,52.34,82.73,51.04,82.80,50.19,84.42,50.67,82.16,51.53,81.80,51.36,81.00,51.82,81.16
->>Kill Sunfury Guardsmen. Loot them for their Medallion
->>Kill Sunfury Arcanists. Loot them for their Robes
-.complete 10197,2 
-.complete 10197,3 
-step
-#scryer
-.goto Netherstorm,48.24,86.60
->>Talk to Caledis
-.turnin 10197 >> Turn in A Convincing Disguise
-.accept 10198 >> Accept Information Gathering
-step
-#scryer
-#completewith next
-.cast 34603 >> Use the Sunfury Disguise in your bags just before you enter Manaforge Coruu
-.use 28607
-step
-#scryer
-.goto Netherstorm,48.25,83.86,20,0
-.timer 121,Information Gathering RP
-.goto Netherstorm,48.15,84.18
->>While disguised, enter Manaforge Coruu. Go into the southern room. Wait out the RP between Dawnforge, Ardonis, and Pathaleon
-.complete 10198,1 
-.use 28607
-step
-#scryer
-.goto Netherstorm,48.24,86.60
->>Talk to Calenis
-.turnin 10198 >> Turn in Information Gathering
-.accept 10330 >> Accept Shutting Down Manaforge Coruu
-step
-#scryer
-#completewith Coruu
->>Loot the small transparent boxes inside Manaforge Coruu
-.complete 10239,1 
-step
-#scryer
-#completewith next
-.goto Netherstorm,49.02,81.52
->>Kill Overseer Seylanna inside Manaforge Coruu. Loot her for her Crystal
-.complete 10330,2 
-step
-#scryer
-#label Coruu
-.goto Netherstorm,48.92,81.62
->>Talk to the Control Console to start the event. Kill the Sunfury that try to stop the shutdown. Wait out the timer
-.complete 10330,1 
-.skipgossip
-.timer 123,Console Shutdown
-step
-#scryer
-.loop 40,Netherstorm,49.46,82.42,49.08,83.00,48.16,82.40,48.14,81.55,48.55,81.01,49.14,80.95,49.45,81.61,49.46,82.42
->>Loot the small transparent boxes inside Manaforge Coruu. Avoid the Arcane Annihilator
-.complete 10239,1 
-step
-#scryer
-.goto Netherstorm,48.24,86.60
->>Talk to Calenis
-.turnin 10330 >> Turn in Shutting Down Manaforge Coruu
-.accept 10200 >> Accept Return to Thalodien
-step
-#completewith next
-.cast 34372 >> Use Archmage Vargoth's Staff in your bags
-.use 28455
-step
->>Talk to the Image of Archmage Vargoth
-.turnin 10188 >> Turn in The Sigil of Krasus
-.accept 10192 >> Accept Krasus's Compendium
-step
->>Return to Kirin'Var. Talk to Morran and Dieworth
-.turnin 10239 >> Turn in Potential Energy Source
-.accept 10240 >> Accept Building a Perimeter
-.goto Netherstorm,57.58,86.30
-.accept 10222 >> Accept The Sunfury Garrison
-.goto Netherstorm,57.50,86.34
-step
-#completewith Kirin2
->>Kill the Severed Spirits and Defenders
-.complete 10184,1 
-step
-#completewith next
-.line Netherstorm,57.78,88.17,58.10,88.69,58.45,88.33,58.92,88.38,59.03,88.24
-.use 29234 >>Kill Abjurist Belmara. Loot her for her Tome. Click it in your bags
-.collect 29234,1,10305 
-.accept 10305 >> Accept Abjurist Belmara
-.unitscan Abjurist Belmara
-step
->>Go inside the houses. Loot the Compendium chapters inside of them
-.complete 10192,2 
-.goto Netherstorm,57.55,89.58
-.complete 10192,1 
-.goto Netherstorm,58.60,89.21
-.complete 10192,3 
-.goto Netherstorm,58.82,87.95
-step
-.line Netherstorm,57.78,88.17,58.10,88.69,58.45,88.33,58.92,88.38,59.03,88.24
-.goto Netherstorm,57.78,88.17,50,0
-.goto Netherstorm,58.10,88.69,50,0
-.goto Netherstorm,58.45,88.33,50,0
-.goto Netherstorm,58.92,88.38,50,0
-.goto Netherstorm,59.03,88.24
-.use 29234 >>Kill Abjurist Belmara. Loot her for her Tome. Click it in your bags
-.collect 29234,1,10305 
-.accept 10305 >> Accept Abjurist Belmara
-.unitscan Abjurist Belmara
-step
-#completewith next
-.cast 34372 >> Use Archmage Vargoth's Staff in your bags
-.use 28455
-step
->>Talk to the Image of Archmage Vargoth
-.turnin 10192 >> Turn in Krasus's Compendium
-.accept 10301 >> Accept Unlocking the Compendium
-step
-#sticky
-#label ERune
-.goto Netherstorm,59.23,85.36,0,0
-.use 28725 >>Use the Rune Activation Device in your bags on the Kirin'Var Rune
-.complete 10240,1 
-step
-.line Netherstorm,58.98,85.69,59.41,86.20.59.85,86.86,59.70,87.12,59.86,87.42,59.62,87.75,59.52,87.52
-.goto Netherstorm,59.52,87.52,50,0
-.goto Netherstorm,59.62,87.75,50,0
-.goto Netherstorm,59.86,87.42,50,0
-.goto Netherstorm,59.70,87.12,50,0
-.goto Netherstorm,59.85,86.86,50,0
-.goto Netherstorm,59.41,86.20,50,0
-.goto Netherstorm,58.98,85.69
-.use 29236 >>Kill Cohlien Frostweaver. Loot him for his Cap. Click it in your bags
-.collect 29236,1,10307 
-.accept 10307 >> Accept Cohlien Frostweaver
-.unitscan Cohlien Frostweaver
-step
-.use 29235 >>Kill Conjurer Luminrath. Loot him for his Mantle. Click it in your bags
->>Kill Conjurer Luminrath and click on Luminrath's Mantle
-.goto Netherstorm,59.49,86.12,50,0
-.goto Netherstorm,60.28,84.90,50,0
-.goto Netherstorm,59.91,84.30,50,0
-.goto Netherstorm,59.72,84.79
-.line Netherstorm,59.72,84.79,59.91,84.30,60.28,84.90,59.49,86.12
-.collect 29235,1,10306 
-.accept 10306 >> Accept Conjurer Luminrath
-.unitscan Conjurer Luminrath
-step
-.loop 45,Netherstorm,61.00,83.65,61.49,84.25,61.44,85.11,61.17,85.48,61.03,84.67,61.00,83.65
->>Kill Kirin'Var Apprentices. Loot them for a Smithing Hammer
-.complete 10331,1 
-step
->>Return to Kirin'Var. Talk to Andrethan, Morran, and Dieworth
-.turnin 10331 >> Turn in Indispensable Tools
-.accept 10332 >> Accept Master Smith Rhonsus
-.goto Netherstorm,57.71,85.19
-.accept 10233 >> Accept Torching Sunfury Hold
-.goto Netherstorm,57.58,86.30
-.turnin 10184 >> Turn in Malevolent Remnants
-.accept 10312 >> Accept The Annals of Kirin'Var
-.goto Netherstorm,57.50,86.34
-.isQuestComplete 10184
-step
-#label Kirin2
-#requires ERune
->>Return to Kirin'Var. Talk to Andrethan and Morran
-.turnin 10331 >> Turn in Indispensable Tools
-.accept 10332 >> Accept Master Smith Rhonsus
-.goto Netherstorm,57.71,85.19
-.accept 10233 >> Accept Torching Sunfury Hold
-.goto Netherstorm,57.58,86.30
-step
-.goto Netherstorm,57.35,82.90
-.use 28725 >>Use the Rune Activation Device in your bags on the Kirin'Var Rune
-.complete 10240,2 
-step
-#completewith Oculus
->>Kill Sunfury Archers
-.complete 10222,1 
-step
-#completewith next
->>Kill Spellreaver Marathelle. Loot her for her Oculus
-.complete 10301,1 
-.unitscan Spellreaver Marathelle
-step
-.loop 35,Netherstorm,55.93,80.13,56.52,79.24,57.08,78.44,56.73,77.43,55.88,76.58,55.18,77.40,55.93,80.13
->>Kill Sunfury Flamekeepers in Sunfury Hold. Loot them for a Torch
-.use 28550 >>Quickly use the Torch next to Ballistas and Tents. Loot another Torch if your torch expires (5 minute duration)
-.collect 28550,1,10233,0x1
-.complete 10233,1 
-.complete 10233,2 
-step
-#label Oculus
->>Kill Spellreaver Marathelle. Loot her for her Oculus
-.goto Netherstorm,55.94,78.19,40,0
-.goto Netherstorm,55.76,78.78,40,0
-.goto Netherstorm,55.46,78.95,40,0
-.goto Netherstorm,55.76,78.78,40,0
-.goto Netherstorm,56.20,78.77,40,0
-.goto Netherstorm,56.40,78.58,40,0
-.goto Netherstorm,56.54,77.79,40,0
-.goto Netherstorm,56.07,77.25,40,0
-.goto Netherstorm,55.52,77.48,40,0
-.goto Netherstorm,55.89,76.87,40,0
-.goto Netherstorm,56.61,77.47,40,0
-.goto Netherstorm,56.89,78.25
-.line Netherstorm,55.94,78.19,55.76,78.78,55.46,78.95,55.76,78.78,56.20,78.77,56.40,78.58,56.54,77.79,56.07,77.25,55.52,77.48,55.89,76.87,56.61,77.47,56.89,78.25,56.64,78.97
-.complete 10301,1 
-.unitscan Spellreaver Marathelle
-step
-.loop 35,Netherstorm,55.93,80.13,56.52,79.24,57.08,78.44,56.73,77.43,55.88,76.58,55.18,77.40,55.93,80.13
->>Kill Sunfury Archers
-.complete 10222,1 
-step
-#completewith next
-.cast 34372 >> Use Archmage Vargoth's Staff in your bags
-.use 28455
-step
->>Talk to the Image of Archmage Vargoth
-.turnin 10301 >> Turn in Unlocking the Compendium
-.accept 10209 >> Accept Summoner Kanthin's Prize
-step
-.goto Netherstorm,54.30,86.07
-.use 28725 >>Use the Rune Activation Device in your bags on the Kirin'Var Rune
-.complete 10240,3 
-step
->>Return to Kirin'Var. Talk to Dieworth and Morran
-.turnin 10222 >> Turn in The Sunfury Garrison
-.accept 10223 >> Accept Down With Daellis
-.goto Netherstorm,57.50,86.34
-.turnin 10233 >> Turn in Torching Sunfury Hold
-.turnin 10240 >> Turn in Building a Perimeter
-.goto Netherstorm,57.58,86.30
-step
-#completewith next
-.hs >> Hearth to Area 52
-step
-#aldor
->>Return to Area 52. Talk to Karja, Orelis, and Boots outside
-.turnin 10321 >> Turn in Shutting Down Manaforge Coruu
-.accept 10322 >> Accept Shutting Down Manaforge Duro
-.goto Netherstorm,32.04,64.18
-.turnin 10246 >> Turn in Attack on Manaforge Coruu
-.accept 10328 >> Accept Sunfury Briefings
-.goto Netherstorm,32.07,64.18
-.turnin 10199 >> Turn in That Little Extra Kick
-.goto Netherstorm,32.27,63.92
-.isOnQuest 10199
-step
-#aldor
->>Return to Area 52. Talk to Karja and Orelis
-.turnin 10321 >> Turn in Shutting Down Manaforge Coruu
-.accept 10322 >> Accept Shutting Down Manaforge Duro
-.goto Netherstorm,32.04,64.18
-.turnin 10246 >> Turn in Attack on Manaforge Coruu
-.accept 10328 >> Accept Sunfury Briefings
-.goto Netherstorm,32.07,64.18
-step
-#scryer
->>Return to Area 52. Talk to Thalodien and Larynna
-.turnin 10200 >> Turn in Return to Thalodien
-.accept 10338 >> Accept Shutting Down Manaforge Duro
-.goto Netherstorm,32.00,64.08
-.accept 10341 >> Accept Kick Them While They're Down
-.goto Netherstorm,32.05,63.99
-step
-#completewith Midrealm
-.goto Netherstorm,41.05,63.20,50,0
-.goto Netherstorm,42.31,60.49,50 >> Cross the bridge to Midrealm Post
-.skill riding,225,1
-step
-#level 68
->>Travel to Midrealm Post. Talk to Gahruj, Mama, Mehrdad, and Pore
-.turnin 10266 >> Turn in Request for Assistance
-.accept 10267 >> Accept Rightful Repossession
-.accept 10311 >> Accept Drijya Needs Your Help
-.goto Netherstorm,46.66,56.94
-.turnin 10333 >> Turn in Help Mama Wheeler
-.accept 10234 >> Accept One Demon's Trash...
-.goto Netherstorm,46.63,56.53
-.accept 10348 >> Accept New Opportunities
-.accept 10417 >> Accept Run a Diagnostic!
-.goto Netherstorm,46.45,56.41
-.accept 10433 >> Accept Keeping Up Appearances
-.goto Netherstorm,46.48,56.04
-step
-#label Midrealm
->>Travel to Midrealm Post. Talk to Gahruj, Mama, Mehrdad, and Pore
-.turnin 10266 >> Turn in Request for Assistance
-.accept 10267 >> Accept Rightful Repossession
-.accept 10311 >> Accept Drijya Needs Your Help
-.goto Netherstorm,46.66,56.94
-.turnin 10333 >> Turn in Help Mama Wheeler
-.accept 10234 >> Accept One Demon's Trash...
-.goto Netherstorm,46.63,56.53
-.accept 10348 >> Accept New Opportunities
-.accept 10417 >> Accept Run a Diagnostic!
-.goto Netherstorm,46.45,56.41
-.accept 10433 >> Accept Keeping Up Appearances
-.goto Netherstorm,46.48,56.04
-step
-.goto Netherstorm,48.23,55.00
->>Loot the Diagnostic on the ground
-.complete 10417,1 
-step
-.goto Netherstorm,46.45,56.41
->>Talk to Mehrdad
-.turnin 10417 >> Turn in Run a Diagnostic!
-.accept 10418 >> Accept Deal With the Saboteurs
-step
-#completewith RipfangL
->>Loot the white and purple flowers in the Eco-Dome
-.complete 10348,1 
-step
-#completewith next
->>Kill Ripfang Lynxes. Loot them for their Pelts
-.complete 10433,1 
-step
-.loop 50,Netherstorm,46.94,54.53,47.57,53.95,47.62,52.83,47.02,52.66,46.75,51.68,46.05,50.41,45.29,51.93,45.91,53.50,46.94,54.53
->>Kill Barbscale Crocolisks
-.complete 10418,1 
-step
-#label RipfangL
-.loop 50,Netherstorm,46.50,49.46,45.71,48.52,44.49,48.48,44.44,49.73,42.99,50.75,42.60,53.37,43.30,54.76,43.19,55.94,44.24,57.16,44.67,54.74,46.50,49.46
->>Kill Ripfang Lynxes. Loot them for their Pelts
-.complete 10433,1 
-step
-.loop 50,Netherstorm,46.50,49.46,45.71,48.52,44.49,48.48,44.44,49.73,42.99,50.75,42.60,53.37,43.30,54.76,43.19,55.94,44.24,57.16,44.67,54.74,45.91,57.22,46.50,49.46
->>Loot the white and purple flowers in the Eco-Dome
-.complete 10348,1 
-step
->>Talk to Pore and Mehrdad
-.turnin 10433 >> Turn in Keeping Up Appearances
-.accept 10434 >> Accept The Dynamic Duo
-.goto Netherstorm,46.48,56.04
-.turnin 10348 >> Turn in New Opportunities
-.turnin 10418 >> Turn in Deal With the Saboteurs
-.accept 10423 >> Accept To the Stormspire
-.goto Netherstorm,46.45,56.41
-step
-#aldor
-#completewith next
->>Kill Demons. Loot them for their Marks of Sargeras
-.collect 30809,10,10653,1 
-step
-.loop 55,Netherstorm,48.42,59.17,49.32,60.51,50.81,59.12,49.42,58.72,50.16,56.87,50.59,56.20,50.37,53.72,49.78,54.90,49.37,55.22,49.42,58.72,48.42,59.17
->>Kill Mo'arg Doomsmiths and Gan'arg Engineers
->>Loot the Fel Reaver Parts on the ground
-.complete 10232,1 
-.complete 10232,2 
-.complete 10234,1 
-step
-.goto Netherstorm,46.63,56.53
->>Talk to Mama
-.turnin 10234 >> Turn in One Demon's Trash...
-.accept 10235 >> Accept Declawing Doomclaw
-step
-#aldor
-#completewith next
->>Kill Demons. Loot them for their Marks of Sargeras
-.collect 30809,10,10653,1 
-step
-.goto Netherstorm,50.69,57.18
->>Kill Doomclaw. Loot him for his Hand
-.complete 10235,1 
-step
-.goto Netherstorm,46.63,56.53
->>Talk to Mama
-.turnin 10235 >> Turn in Declawing Doomclaw
-.accept 10237 >> Accept Warn Area 52!
-step
-.goto Netherstorm,48.11,63.50
->>Talk to Drijya. If he's not there, skip this step
-.turnin 10311 >> Turn in Drijya Needs Your Help
-
-.isOnQuest 10311
-step
-.abandon 10311 >> Abandon Drijya Needs Your Help
-step << tbc
-#xprate <1.5
-.goto Netherstorm,65.20,66.81
-.fp Cosmowrench >> Get the Cosmowrench flight path
-step << tbc
-#xprate <1.5
-.goto Netherstorm,66.39,67.30
->>Talk to Sab'aoth
-.accept 10924 >> Accept Bloody Imp-ossible!
-
-step << tbc
-#xprate <1.5
-#completewith next
-.cast 39242 >> Use Zeppit's Crystal in your bags to summon Zeppit
-.use 31815
-step << tbc
-#xprate <1.5
-.loop 55,Netherstorm,64.66,64.22,63.23,65.15,63.26,60.63,59.18,59.43,59.71,58.21,62.15,58.72,66.59,58.65,67.18,63.83,64.66,64.22
-.use 31815 >>While Zeppit is summoned, kill Warp Chasers in close range of Zeppit. He'll loot them for you for their Blood (make sure you stay in close range of Zeppit to receive it in your bags). Warp Chasers are invisible out of combat about 75% of the time
-.complete 10924,1 
-step << tbc
-#xprate <1.5
-.goto Netherstorm,66.39,67.30
->>Talk to Sab'aoth
-.turnin 10924 >> Turn in Bloody Imp-ossible!
-step
-#scryer
-#completewith Daellis
-.goto Netherstorm,57.7,67.6,0
->>Kill Sunfury Conjurers, Bowmans, and Centurions. Loot them for their Signets and a Tome
-.complete 10341,1 
-.complete 10341,2 
-.complete 10341,3 
-.complete 10656,1 
-.complete 10416,1 
-step
-#aldor
-#completewith Daellis
->>Kill Sunfury Centurions or Bowmen. Loot them for the Military Briefing
->>Kill Sunfury Conjurers. Loot them for the Arcane Briefing
-.complete 10328,1 
-.complete 10328,2 
-step
-#completewith KanthinP
->>Loot the small silver boxes on the ground
-.complete 10267,1 
-step
-#aldor
-.goto Netherstorm,59.99,68.52
->>Kill Overseer Athanel inside Manaforge Duro. Loot him for his Crystal
-.complete 10322,2 
-step
-#aldor
-.goto Netherstorm,59.19,66.72
->>Talk to the Control Console to start the event. Kill the Sunfury that try to stop the shutdown. Wait out the timer
-.complete 10322,1 
-.skipgossip
-.timer 122,Console Shutdown
-step
-#scryer
-.goto Netherstorm,59.99,68.52
->>Kill Overseer Athanel inside Manaforge Duro. Loot him for his Crystal
-.complete 10338,2 
-step
-#scryer
-.goto Netherstorm,59.19,66.72
->>Talk to the Control Console to start the event. Kill the Sunfury that try to stop the shutdown. Wait out the timer
-.complete 10338,1 
-.skipgossip
-.timer 122,Console Shutdown
-step
-.line Netherstorm,58.84,62.54,58.31,62.97,58.10,62.71,57.76,63.29,57.21,63.42,56.82,63.89,57.34,64.44,57.39,65.29,57.22,65.92,56.95,66.52,57.34,67.19,57.38,66.58,57.22,65.92,57.39,65.29,57.34,64.44,57.91,64.06,57.76,63.29,58.10,62.71,58.31,62.97,58.84,62.54,59.10,63.14,59.45,63.04,59.20,62.36,58.84,62.54
-.goto Netherstorm,58.84,62.54,50,0
-.goto Netherstorm,58.31,62.97,50,0
-.goto Netherstorm,58.10,62.71,50,0
-.goto Netherstorm,57.76,63.29,50,0
-.goto Netherstorm,57.21,63.42,50,0
-.goto Netherstorm,56.82,63.89,50,0
-.goto Netherstorm,57.34,64.44,50,0
-.goto Netherstorm,57.39,65.29,50,0
-.goto Netherstorm,57.22,65.92,50,0
-.goto Netherstorm,56.95,66.52,50,0
-.goto Netherstorm,57.34,67.19,50,0
-.goto Netherstorm,57.38,66.58,50,0
-.goto Netherstorm,57.22,65.92,50,0
-.goto Netherstorm,57.39,65.29,50,0
-.goto Netherstorm,57.34,64.44,50,0
-.goto Netherstorm,57.91,64.06,50,0
-.goto Netherstorm,57.76,63.29,50,0
-.goto Netherstorm,58.10,62.71,50,0
-.goto Netherstorm,58.31,62.97,50,0
-.goto Netherstorm,58.84,62.54,50,0
-.goto Netherstorm,59.10,63.14,50,0
-.goto Netherstorm,59.10,63.14,50,0
-.goto Netherstorm,59.45,63.04,50,0
-.goto Netherstorm,59.20,62.36
->>Kill Summoner Kanthin. Loot him for his Stone. He patrols around
-.complete 10209,1 
-.unitscan Summoner Kanthin
-step
-#label Daellis
-.goto Netherstorm,56.82,65.70,50,0
-.goto Netherstorm,56.54,66.24,50,0
-.goto Netherstorm,56.15,66.24,50,0
-.goto Netherstorm,55.87,66.75,50,0
-.goto Netherstorm,55.50,66.83,50,0
-.goto Netherstorm,55.18,66.99
-.line Netherstorm,56.82,65.70,56.54,66.24,56.15,66.24,55.87,66.75,55.50,66.83,55.18,66.99
->>Kill Master Daellis Dawnstrike. He patrols slightly
-.complete 10223,1 
-.unitscan Master Daellis Dawnstrike
-step
-#completewith next
-.cast 34372 >> Use Archmage Vargoth's Staff in your bags
-.use 28455
-step
-#label Daellis
->>Talk to the Image of Archmage Vargoth
-.turnin 10209 >> Turn in Summoner Kanthin's Prize
-.accept 10176 >> Accept Ar'kelos the Guardian
-step
-#scryer
-#label KanthinP
-.loop 50,Netherstorm,58.84,62.54,58.31,62.97,58.10,62.71,57.76,63.29,57.21,63.42,56.82,63.89,57.34,64.44,57.39,65.29,57.22,65.92,56.95,66.52,57.34,67.19,57.38,66.58,57.22,65.92,57.39,65.29,57.34,64.44,57.91,64.06,57.76,63.29,58.10,62.71,58.31,62.97,58.84,62.54,59.10,63.14,59.45,63.04,59.20,62.36,58.84,62.54
->>Kill Sunfury Conjurers, Bowmans, and Centurions. Loot them for their Signets and a Tome
-.complete 10341,1 
-.complete 10341,2 
-.complete 10341,3 
-.collect 30810,10,10656,1 
-.collect 29739,1,10416,1 
-step
-#aldor
-#label KanthinP
-.loop 50,Netherstorm,58.84,62.54,58.31,62.97,58.10,62.71,57.76,63.29,57.21,63.42,56.82,63.89,57.34,64.44,57.39,65.29,57.22,65.92,56.95,66.52,57.34,67.19,57.38,66.58,57.22,65.92,57.39,65.29,57.34,64.44,57.91,64.06,57.76,63.29,58.10,62.71,58.31,62.97,58.84,62.54,59.10,63.14,59.45,63.04,59.20,62.36,58.84,62.54
->>Kill Sunfury Centurions or Bowmen. Loot them for the Military Briefing
->>Kill Sunfury Conjurers. Loot them for the Arcane Briefing
-.complete 10328,1 
-.complete 10328,2 
-step
-.loop 50,Netherstorm,58.84,62.54,58.31,62.97,58.10,62.71,57.76,63.29,57.21,63.42,56.82,63.89,57.34,64.44,57.39,65.29,57.22,65.92,56.95,66.52,57.34,67.19,57.38,66.58,57.22,65.92,57.39,65.29,57.34,64.44,57.91,64.06,57.76,63.29,58.10,62.71,58.31,62.97,58.84,62.54,59.10,63.14,59.45,63.04,59.20,62.36,58.84,62.54
->>Loot the small silver boxes on the ground
-.complete 10267,1 
-step
-#completewith next
-.goto Netherstorm,51.30,71.16,50,0
-.goto Netherstorm,51.57,74.34,50 >> Cross the bridge back toward Kirin'Var
-.skill riding,225,1
-step
-.goto Netherstorm,57.50,86.34
->>Return to Kirin'Var. Talk to Dieworth
-.turnin 10223 >> Turn in Down With Daellis
-step
-.goto Netherstorm,58.06,86.40,15,0
-.goto Netherstorm,58.22,86.58
->>Go inside the tower. Kill Ar'kelos
-.complete 10176,1 
-step
-.goto Netherstorm,58.34,86.40
->>Climb to the top of the tower. Talk to Vargoth
-.turnin 10176 >> Turn in Ar'kelos the Guardian
-step
-#completewith next
->>Kill Severed Spirits and Defenders
-.complete 10184,1 
-step
-.goto Netherstorm,60.57,85.13,40,0
-.goto Netherstorm,60.98,85.46,40,0
-.goto Netherstorm,61.60,85.30,40,0
-.goto Netherstorm,60.94,84.72
-.line Netherstorm,60.57,85.13,60.98,85.46,61.60,85.30,60.94,84.72,60.57,85.13
->>Kill Rhonsus at the Kirin'Var blacksmith
-.complete 10332,1 
-.unitscan Rhonsus
-step
-.loop 55,Netherstorm,60.59,84.56,60.88,83.55,59.06,84.13,58.74,85.57,59.43,87.41,57.49,88.58,57.44,89.51,58.32,89.64,58.73,90.24,59.78,89.32,60.59,84.56
->>Kill Severed Spirits and Defenders
-.complete 10184,1 
-step
-#completewith next
-.goto Netherstorm,57.71,85.19
->>Talk to Andrethan
-.turnin 10332 >> Turn in Master Smith Rhonsus
-step
-.goto Netherstorm,57.50,86.34
->>Talk to Dieworth
-.turnin 10184 >> Turn in Malevolent Remnants
-.accept 10312 >> Accept The Annals of Kirin'Var
-step
-.goto Netherstorm,60.19,87.32,30,0
-.goto Netherstorm,60.40,88.01
-.use 29233 >>Enter the Town Hall. Kill Dathric. Loot him for his Annals and Blade. Click the Blade in your bags
-.complete 10312,1 
-.collect 29233,1,10182,1 
-.accept 10182 >> Accept Battle-Mage Dathric
-step
->>Talk to Andrethan and Dieworth
-.turnin 10332 >> Turn in Master Smith Rhonsus
-.goto Netherstorm,57.71,85.19
-.turnin 10312 >> Turn in The Annals of Kirin'Var
-.accept 10316 >> Accept Searching for Evidence
-.goto Netherstorm,57.50,86.34
-.isOnQuest 10332
-step
->>Talk to Dieworth
-.turnin 10312 >> Turn in The Annals of Kirin'Var
-.accept 10316 >> Accept Searching for Evidence
-.goto Netherstorm,57.50,86.34
-step
-#completewith CohlienSp
->>Kill Mana Seekers and Mageslayers
-.complete 10185,1 
-.complete 10185,2 
-step
-.goto Netherstorm,56.90,86.87
-.use 28351 >>Go inside the house. Use Dathric's Blade in your bags next to the Weapon Rack
-.complete 10182,1 
-step
-.goto Netherstorm,56.43,87.83
-.use 28352 >>Use Luminrath's Mantle in your bags next to the Dresser
-.complete 10306,1 
-step
-.goto Netherstorm,55.49,86.55
-.use 28336 >>Use Belmara's Tome in your bags next to the Bookshelf
-.complete 10305,1 
-step
-#label CohlienSp
-.goto Netherstorm,55.09,87.55
-.use 28353 >>Use Cohlien's Cap in your bags next to the Footlocker
-.complete 10307,1 
-step
-.loop 55,Netherstorm,54.77,87.45,54.77,88.52,54.31,89.25,55.60,89.01,55.89,90.71,57.19,86.64,56.42,85.72,55.72,86.97,55.00,86.95,54.77,87.45
->>Kill Mana Seekers and Mageslayers
-.complete 10185,1 
-.complete 10185,2 
-step
-.goto Netherstorm,57.50,86.34
->>Talk to Dieworth
-.turnin 10182 >> Turn in Battle-Mage Dathric
-.turnin 10185 >> Turn in A Fate Worse Than Death
-.turnin 10305 >> Turn in Abjurist Belmara
-.turnin 10306 >> Turn in Conjurer Luminrath
-.turnin 10307 >> Turn in Cohlien Frostweaver
-step
-.goto Netherstorm,60.32,78.37,15,0
-.goto Netherstorm,60.30,77.97
->>Enter the Barn. Talk to the Focus
-.turnin 10316 >> Turn in Searching for Evidence
-.accept 10314 >> Accept A Lingering Suspicion
-step
-.loop 45,Netherstorm,60.90,78.59,61.92,79.96,60.81,81.13,59.75,82.42,58.99,80.72,60.90,78.59
->>Kill Tormented Citizens and Souls. They turn into Kirin'Var Ghosts. Loot them for their Remnants
-.complete 10314,1,9 
-step
-.goto Netherstorm,59.15,78.78
->>Talk to Bessy. This starts an escort
-.turnin 10334 >> Turn in Needs More Cowbell
-.accept 10337 >> Accept When the Cows Come Home
-step
-#completewith next
->>Kill Tormented Citizens and Souls. They turn into Kirin'Var Ghosts. Loot them for their Remnants
-.complete 10314,1 
-step
-.goto Netherstorm,57.75,84.98
->>Escort Bessy back to the tower
-.complete 10337,1 
-step
-.loop 45,Netherstorm,60.90,78.59,61.92,79.96,60.81,81.13,59.75,82.42,58.99,80.72,60.90,78.59
->>Kill Tormented Citizens and Souls. They turn into Kirin'Var Ghosts. Loot them for their Remnants
-.complete 10314,1 
-step
->>Talk to Thadell and Dieworth
-.turnin 10337 >> Turn in When the Cows Come Home
-.goto Netherstorm,57.73,84.94
-.turnin 10314 >> Turn in A Lingering Suspicion
-.accept 10319 >> Accept Capturing the Phylactery
-.goto Netherstorm,57.50,86.34
-step
-.goto Netherstorm,59.86,80.39
->>Loot the outhouse behind the Inn
-.complete 10319,1 
-step
->>Talk to Dieworth
-.goto Netherstorm,57.50,86.34
-.turnin 10319 >> Turn in Capturing the Phylactery
-.accept 10320 >> Accept Destroy Naberius!
-step
-.goto Netherstorm,62.68,78.85
->>Kill the mobs outside the chapel, then kill Naberius. Move from his red circles the places under you, LoS his frostbolts by kiting him around corners, be aware he has a passive 30 yard call for help, and be careful of his knockback. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
-.complete 10320,1 
-step
-.goto Netherstorm,57.50,86.34
->>Talk to Dieworth
-.turnin 10320 >> Turn in Destroy Naberius!
-.isQuestComplete 10320
-step
-.abandon 10320 >> Abandon Destroy Naberius!
-step
-#completewith next
-.hs >> Hearth to Area 52
-step
-#aldor
->>Return to Area 52. Talk to Karja, Orelis, Fuselage, and Papa
-.turnin 10322 >> Turn in Shutting Down Manaforge Duro
-
-.goto Netherstorm,32.04,64.18
-.turnin 10328 >> Turn in Sunfury Briefings
-.accept 10431 >> Accept Outside Assistance
-.goto Netherstorm,32.07,64.18
-.turnin 10237 >> Turn in Warn Area 52!
-.accept 10247 >> Accept Doctor Vomisa, Ph.T.
-.goto Netherstorm,32.68,64.41,30,0
-.goto Netherstorm,32.73,64.96
-.turnin 10232 >> Turn in In A Scrap With The Legion
-.goto Netherstorm,32.99,64.66
-step
-#scryer
->>Return to Area 52. Talk to Thalodien, Larynna, Fuselage, and Papa
-.turnin 10338 >> Turn in Shutting Down Manaforge Duro
-
-.goto Netherstorm,32.00,64.08
-.turnin 10341 >> Turn in Kick Them While They're Down
-.accept 10202 >> Accept A Defector
-.goto Netherstorm,32.05,63.99
-.turnin 10237 >> Turn in Warn Area 52!
-.accept 10247 >> Accept Doctor Vomisa, Ph.T.
-.goto Netherstorm,32.68,64.41,30,0
-.goto Netherstorm,32.73,64.96
-.turnin 10232 >> Turn in In A Scrap With The Legion
-.goto Netherstorm,32.99,64.66
-step
-.goto Netherstorm,37.32,63.74,15,0
-.goto Netherstorm,37.29,63.62
->>Talk to Vomisa. Skip the followup
-.turnin 10247 >> Turn in Doctor Vomisa, Ph.T.
-
-step << skip
-.goto Netherstorm,37.7,63.7
->>Use the Scrap Reaver controller
-.complete 10248,1 
-step << skip
-.goto Netherstorm,37.3,63.6
-.turnin 10248 >> Turn in You, Robot
-.accept 10249 >> Accept Back to the Chief!
-step
-#completewith next
-.goto Netherstorm,41.05,63.20,50,0
-.goto Netherstorm,42.31,60.49,50 >> Cross the bridge to Midrealm Post
-.skill riding,225,1
-step
-.goto Netherstorm,46.66,56.94
->>Return to Midrealm Post. Talk to Gahruj
-.turnin 10267 >> Turn in Rightful Repossession
-.accept 10268 >> Accept An Audience with the Prince
-step
-#completewith next
-.goto Netherstorm,43.56,47.25,50,0
-.goto Netherstorm,42.45,41.33,50 >> Cross the bridge to The Stormspire
-.skill riding,225,1
-step
-.goto Netherstorm,42.32,32.57
->>Talk to Aurine
-.accept 10426 >> Accept Flora of the Eco-Domes
-step
-#completewith next
-.goto Netherstorm,42.54,33.55,14 >> Take the elevator up to The Stormspire
-.skill riding,225,1
-step
-#completewith Markaru
-.goto Netherstorm,43.36,36.14
-.home >> Set your Hearthstone to The Stormspire
-step
->>Talk to Ghabar, Elgenubi, Nauthis, Zephyrion, Audi, and Haramad
-.turnin 10423 >> Turn in To the Stormspire
-.accept 10424 >> Accept Diagnosis: Critical
-.goto Netherstorm,43.54,35.15
-.accept 10290 >> Accept In Search of Farahlite
-.goto Netherstorm,44.08,36.05
-.accept 10336 >> Accept The Minions of Culuthas
-.accept 10855 >> Accept Fel Reavers, No Thanks!
-.goto Netherstorm,44.71,34.94
-.accept 10335 >> Accept Surveying the Ruins
-.goto Netherstorm,44.73,34.87
-.turnin 10434 >> Turn in The Dynamic Duo
-.accept 10435 >> Accept Retrieving the Goods
-.goto Netherstorm,44.74,36.75
-.turnin 10268 >> Turn in An Audience with the Prince
-.accept 10269 >> Accept Triangulation Point One
-.goto Netherstorm,45.87,35.97
-step
-.goto Netherstorm,45.31,34.87
-.fp Stormspire >> Get The Stormspire flight path
-step
-.loop 50,Netherstorm,41.13,35.29,41.49,37.21,41.82,40.03,40.60,40.29,39.03,40.99,38.31,39.57,37.69,38.19,38.28,35.00,41.13,35.29
-.use 29818 >>Use the Energy Field Modulator in your bags on Farahlon Lashers, then kill them
-.complete 10426,1 
-step
-.goto Netherstorm,42.32,32.57
->>Talk to Aurine
-.turnin 10426 >> Turn in Flora of the Eco-Domes
-.accept 10427 >> Accept Creatures of the Eco-Domes
-step
-#completewith next
-.use 29817 >>Attack Talbuks down to 20% or less health, then use the Talbuk Tagger in your bags
-.complete 10427,1 
-step
-.goto Netherstorm,47.64,26.77
-.use 29803 >>Use the Diagnostic Device in your bags at the purple pillar
-.complete 10424,1 
-step
-.goto Netherstorm,46.21,28.57,60,0
-.goto Netherstorm,46.57,29.17,60,0
-.goto Netherstorm,44.15,30.67,60,0
-.goto Netherstorm,40.13,35.73
-.use 29817 >>Attack Talbuks down to 20% or less health, then use the Talbuk Tagger in your bags
-.complete 10427,1 
-step
-.goto Netherstorm,42.32,32.57
->>Talk to Aurine
-.turnin 10427 >> Turn in Creatures of the Eco-Domes
-.accept 10429 >> Accept When Nature Goes Too Far
-step
-#label Markaru
-.goto Netherstorm,44.59,28.31
->>Kill Markaru. Loot him for his Heart
-.complete 10429,1 
-step
-.goto Netherstorm,42.32,32.57
->>Talk to Aurine
-.turnin 10429 >> Turn in When Nature Goes Too Far
-step
-.loop 50,Netherstorm,39.11,28.77,38.01,30.41,36.22,30.11,35.54,28.97,35.83,28.22,37.14,27.86,36.23,26.00,36.73,24.74,38.68,25.07,38.12,27.81,39.57,27.48,39.11,28.77
->>Kill Gan'arg Mekgineers. Loot them for their Gas
-.collect 31653,5,10855,1 
-step
-.goto Netherstorm,35.86,28.84,-1
-.goto Netherstorm,36.73,25.15,-1
-.goto Netherstorm,37.95,25.69,-1
->>Talk to an Inactive Fel Reaver
-.turnin 10850 >> Turn in Nether Gas In a Fel Fire Engine
-
-
-.isOnQuest 10855
-step
-#completewith next
-.goto Netherstorm,55.50,26.98,50,0
-.goto Netherstorm,57.10,30.95,50 >> Cross the bridge to the Protectorate Watch Post
-.skill riding,225,1
-step
->>Travel to the Protectorate Watch Post. Talk to Marid, Navuud, Viridius who patrols around slightly, and Dabiri
-.accept 10270 >> Accept A Not-So-Modest Proposal
-.goto Netherstorm,58.32,31.66
-.accept 10411 >> Accept Electro-Shock Goodness!
-.goto Netherstorm,59.25,32.58
-.accept 10422 >> Accept Captain Tyralius
-.goto Netherstorm,58.60,31.77,40,0
-.goto Netherstorm,58.91,32.02,40,0
-.goto Netherstorm,59.14,32.12,40,0
-.goto Netherstorm,59.47,31.88,40,0
-.goto Netherstorm,59.86,31.91,40,0
-.goto Netherstorm,60.07,32.52
-.line Netherstorm,58.60,31.77,58.91,32.02,59.14,32.12,59.47,31.88,59.86,31.91,60.07,32.52
-.accept 10437 >> Accept Recipe for Destruction
-.goto Netherstorm,60.11,31.72
-step << skip
-#level 70
-.goto Netherstorm,59.5,32.4
-.accept 10339 >> Accept The Ethereum
-step
-#completewith Seeping
-.goto Netherstorm,62.74,34.75,50 >> Travel up the mountain
-.skill riding,225,1
-step
-#completewith next
-.cast 35685 >> Use Navuud's Concoction in your bags
-.use 29737
-step
-#label Seeping
-.goto Netherstorm,64.26,35.80,50,0
-.goto Netherstorm,65.80,39.03,50,0
-.goto Netherstorm,66.04,41.34,50,0
-.goto Netherstorm,63.72,42.87,50,0
-.goto Netherstorm,62.89,44.65,50,0
-.goto Netherstorm,61.15,43.65,50,0
-.goto Netherstorm,59.42,41.53,50,0
-.goto Netherstorm,59.74,39.06
->>Kill Voidshriekers and Unstable Voidwraiths. Loot them for their Fragments. Be careful as Voidshriekers take reduced damage from the first spell school cast on them << !Warrior !Rogue
->>Kill Voidshriekers and Unstable Voidwraiths. Loot them for their Fragments << Warrior/Rogue
-.use 29737 >>While buffed with Navuud's Concoction, attack Seeping Sludges. Kill the Globules that spawn
-.complete 10437,1 
-.complete 10411,1 
-step
-.goto Netherstorm,59.42,45.03
->>Talk to Araxes
-.accept 10345 >> Accept The Flesh Lies...
-step
-#completewith next
-.goto Netherstorm,61.07,45.39,30 >> Enter the mine
-step
-#completewith Arconus
-.use 29473 >>Use the Protectorate Igniter in your bags to burn Withered Corpses in the mine
-.complete 10345,1 
-step
-.goto Netherstorm,61.02,44.52,15,0
-.goto Netherstorm,60.52,43.54,15,0
-.goto Netherstorm,60.02,43.35,15,0
-.goto Netherstorm,59.71,42.63,15,0
->>Hug the left wall of the cave. Talk to Agent Ya-Six, then loot the Power Pack next to him
-.accept 10353 >> Accept Arconus the Insatiable
-.goto Netherstorm,60.92,41.53
-.complete 10270,1 
-.goto Netherstorm,60.98,41.52
-step
-#label Arconus
-.goto Netherstorm,59.71,42.63,15,0
-.goto Netherstorm,60.11,43.50,15,0
-.goto Netherstorm,60.48,42.90,15,0
-.goto Netherstorm,60.74,41.36,15,0
-.goto Netherstorm,60.03,40.56,15,0
-.goto Netherstorm,60.20,39.91
->>Go back up the mine. Kill Arconus at the end
-.complete 10353,1 
-step
-.goto Netherstorm,60.03,40.56,15,0
-.goto Netherstorm,60.74,41.36,15,0
-.goto Netherstorm,61.77,41.96,15,0
-.goto Netherstorm,61.75,43.39,15,0
-.goto Netherstorm,61.12,44.45,15,0
-.goto Netherstorm,61.03,46.23
-.use 29473 >>Use the Protectorate Igniter in your bags to burn Withered Corpses in the mine
-.complete 10345,1 
-step
-#completewith next
-.goto Netherstorm,61.03,46.23,50 >> Exit the mine
-step
-.goto Netherstorm,59.42,45.03
->>Talk to Araxes
-.turnin 10345 >> Turn in The Flesh Lies...
-step << skip
-#level 70
-.goto Netherstorm,57.0,36.9
-.complete 10339,4 
-.complete 10339,1 
-.complete 10339,2 
-.complete 10339,3 
-step << skip
-#level 70
-.goto Netherstorm,56.8,38.5
-.turnin 10339 >> Turn in The Ethereum
-.accept 10384 >> Accept Ethereum Data
-step << skip
-#level 70
-.goto Netherstorm,55.8,40.0
-.complete 10384,1 
-step << skip
-#level 70
-.goto Netherstorm,56.8,38.7
-.turnin 10384 >> Turn in Ethereum Data
-.accept 10385 >> Accept Potential for Brain Damage = High
-step
-#completewith next
-.cast 35685 >> Use Navuud's Concoction in your bags
-.use 29737
-step
-#completewith Tyralius
-.use 29737 >>While buffed with Navuud's Concoction, attack Void Waste. Kill the Globules that spawn
-.complete 10411,2 
-step
-.goto Netherstorm,54.36,41.23
->>Kill Warden Icoshock. Loot him for his Key
-.collect 29742,1,10422,1 
-step
-#label Tyralius
-.goto Netherstorm,53.30,41.43
->>Click on the Prison to free Tyralius
-.complete 10422,1 
-step
-.line Netherstorm,55.61,45.18,54.87,43.96,55.24,42.73,54.70,41.97,54.91,41.19
-.goto Netherstorm,55.61,45.18,50,0
-.goto Netherstorm,54.87,43.96,50,0
-.goto Netherstorm,55.24,42.73,50,0
-.goto Netherstorm,54.70,41.97,50,0
-.goto Netherstorm,54.91,41.19
-.use 29737 >>While buffed with Navuud's Concoction, attack Void Waste. Kill the Globules that spawn
-.complete 10411,2 
-step << skip
-#level 70
-.goto Netherstorm,55.3,42.1
->>Kill Ethereum mobs and use Ethereum Essences to kill the mana wyrms along the pools of water
-.complete 10385,1 
-step << skip
-#level 70
-.goto Netherstorm,56.8,38.8
-.turnin 10385 >> Turn in Potential for Brain Damage = High
-.accept 10405 >> Accept S-A-B-O-T-A-G-E
-step << skip
-#level 70
-.goto Netherstorm,55.7,41.8
->>Kill Archons or Overlords
-.complete 10405,1 
-step << skip
-#level 70
-.goto Netherstorm,56.8,38.8
-.turnin 10405 >> Turn in S-A-B-O-T-A-G-E
-.accept 10406 >> Accept Delivering the Message
-step << skip
-#level 70
-.complete 10406,1 
-step << skip
-#level 70
-.goto Netherstorm,56.8,38.7
-.turnin 10406 >> Turn in Delivering the Message
-.accept 10408 >> Accept Nexus-King Salhadaar
-step
->>Return to the Protectorate Watch Post. Talk to Viridius, Navuud, Ameer, and Dabiri
-.turnin 10422 >> Turn in Captain Tyralius
-.goto Netherstorm,58.60,31.77,40,0
-.goto Netherstorm,58.91,32.02,40,0
-.goto Netherstorm,59.14,32.12,40,0
-.goto Netherstorm,59.47,31.88,40,0
-.goto Netherstorm,59.86,31.91,40,0
-.goto Netherstorm,60.07,32.52
-.line Netherstorm,58.60,31.77,58.91,32.02,59.14,32.12,59.47,31.88,59.86,31.91,60.07,32.52
-.turnin 10411 >> Turn in Electro-Shock Goodness!
-.goto Netherstorm,59.25,32.58
-.turnin 10353 >> Turn in Arconus the Insatiable
-.goto Netherstorm,59.51,32.39
-.turnin 10437 >> Turn in Recipe for Destruction
-.accept 10438 >> Accept On Nethery Wings
-.goto Netherstorm,60.11,31.72
-step
-#completewith next
-.goto Netherstorm,60.21,31.76
-.fly >> Talk to the Nether Drake to ride it
-.skipgossip
-step
-.goto Netherstorm,62.42,40.88
-.use 29778 >>When you get to the top of the Manaforge, spam use the Phase Disruptor in your bags to destroy it
-.complete 10438,1 
-step
-.goto Netherstorm,60.11,31.72
->>Talk to Dabiri
-.turnin 10438 >> Turn in On Nethery Wings
-
-
-step
-.goto Netherstorm,66.73,33.89
-.use 28962 >> Use the triangulation device in your bags. Stand here after using it
-.complete 10269,1 
-step
-#completewith next
-.goto Netherstorm,69.34,34.45,50,0
-.goto Netherstorm,70.06,37.52,50 >> Travel down the Celestial Ridge
-.skill riding,225,1
-step
-.goto Netherstorm,71.14,38.99
->>Talk to the Teleport Pad, then talk to Marid
-.turnin 10270 >> Turn in A Not-So-Modest Proposal
-.accept 10271 >> Accept Getting Down to Business
-.skipgossip
-step
-.loop 50,Netherstorm,71.51,39.64,73.80,40.55,74.83,38.30,74.34,36.25,73.18,36.63,73.47,34.96,71.73,34.10,71.51,39.64
->>Kill Nether Drakes and Dragons. Loot them for their Essence
-.complete 10271,1 
-step
-.goto Netherstorm,70.93,38.81
->>Talk to the Shrouded Figure
-.turnin 10271 >> Turn in Getting Down to Business
-.accept 10281 >> Accept Formal Introductions
-step
-.goto Netherstorm,71.22,35.12
->>Talk to Tyri
-.turnin 10281 >> Turn in Formal Introductions
-.accept 10272 >> Accept A Promising Start
-step
-.loop 50,Netherstorm,71.51,39.64,73.80,40.55,74.83,38.30,74.34,36.25,73.18,36.63,73.47,34.96,71.73,34.10,71.51,39.64
->>Loot the Nether Dragonkin Eggs on the ground
-.complete 10272,1 
-step
-.goto Netherstorm,71.22,35.12
->>Talk to Tyri
-.turnin 10272 >> Turn in A Promising Start
-.accept 10273 >> Accept Troublesome Distractions
-step
-#completewith next
-.goto Netherstorm,71.09,39.80,50,0
-.goto Netherstorm,70.35,41.70,50,0
-.goto Netherstorm,69.81,35.10,50,0
-.goto Netherstorm,69.25,34.21,50 >> Travel back up to the Protectorate Watch Post
-.skill riding,225,1
-step
-.goto Netherstorm,58.35,31.26
->>Return to the Protectorate Watch Post. Talk to Hazzin
-.turnin 10269 >> Turn in Triangulation Point One
-.accept 10275 >> Accept Triangulation Point Two
-step
-.goto Netherstorm,58.31,31.66,-1
-.goto Netherstorm,59.95,30.96,-1
->>Talk to Wind Trader Marid, then follow him. Wait out his RP, then kill him he becomes hostile
-.complete 10273,1 
-.skipgossip
-.timer 28,Marid RP
-step
-.goto Netherstorm,71.22,35.12
->>Return to the Celestial Ridge. Talk to Tyri
-.turnin 10273 >> Turn in Troublesome Distractions
-.accept 10274 >> Accept Securing the Celestial Ridge
-step
-#completewith next
-.goto Netherstorm,72.18,43.38
-.cast 34895 >>Use the Challenge of the Blue Flight in your bags to summon Veraku
-.use 29101
-step
-.goto Netherstorm,72.29,44.82
->>Kill Veraku. This quest is difficult. Find a group for it if needed. Skip this step if you're unable to find a group or solo it.
-.complete 10274,1 
-.use 29101
-step
-.goto Netherstorm,71.22,35.12
->>Return to the Celestial Ridge. Talk to Tyri
-.turnin 10274 >> Turn in Securing the Celestial Ridge
-.isQuestComplete 10274
-step
-.abandon 10274 >> Abandon Securing the Celestial Ridge
-step
-#completewith next
-.hs >> Hearth to The Stormspire
-step
->>Return to The Stormspire. Talk to Nauthis and Ghabar
-.turnin 10855 >> Turn in Fel Reavers, No Thanks!
-.accept 10856 >> Accept The Best Defense
-.goto Netherstorm,44.71,34.94
-.turnin 10424 >> Turn in Diagnosis: Critical
-.accept 10430 >> Accept Testing the Prototype
-.goto Netherstorm,43.54,35.15
-step
-#aldor
->>Travel to Tuluman's Landing. Talk to Kaylaan, Tuluman, and Oazul
-.turnin 10431 >> Turn in Outside Assistance
-.accept 10380 >> Accept A Dark Pact
-.goto Netherstorm,34.80,38.30
-.accept 10317 >> Accept Dealing with the Foreman
-.goto Netherstorm,34.62,37.95
-.accept 10315 >> Accept Neutralizing the Nethermancers
-.goto Netherstorm,34.50,37.80
-step
-#scryer
->>Travel to Tuluman's Landing. Talk to Tuluman and Oazul
-.accept 10317 >> Accept Dealing with the Foreman
-.goto Netherstorm,34.62,37.95
-.accept 10315 >> Accept Neutralizing the Nethermancers
-.goto Netherstorm,34.50,37.80
-step
-#completewith next
-.goto Netherstorm,33.59,37.77,50,0
-.goto Netherstorm,31.51,41.63,50 >> Cross the bridge to Manaforge Ara
-.skill riding,225,1
-step
-#scryer
-#completewith next
-.goto Netherstorm,29.56,41.80,50,0
-.goto Netherstorm,29.42,39.76,50 >> Travel up the mountain to Manaforge Ara
-.skill riding,225,1
-step
-#scryer
-.goto Netherstorm,26.19,41.57
->>Talk to Theledorn
-.turnin 10202 >> Turn in A Defector
-.accept 10432 >> Accept Damning Evidence
-step
-#completewith next
-.goto Netherstorm,26.37,43.91,50 >> Enter the mine
-step
-.goto Netherstorm,26.37,42.27
->>Talk to Sundown inside the mine
-.turnin 10317 >> Turn in Dealing with the Foreman
-.accept 10318 >> Accept Dealing with the Overmaster
-step
-#completewith WarpTinker
->>Kill Sunfury Nethermancers inside the mine
-.complete 10315,1 
-step
-#aldor
-#completewith next
->>Kill Warp-Tinkers and Warp-Masters inside the mine
-.complete 10380,1 
-.complete 10380,3 
-step
-#scryer
-#completewith next
->>Kill Warp-Tinkers and Warp-Masters inside the mine. Loot them for their Orders
-.complete 10432,1 
-step
-.goto Netherstorm,26.82,35.84
->>Kill Grindgarr at the end of the mine
-.complete 10318,1 
-step
-#scryer
-#label WarpTinker
-.goto Netherstorm,26.95,38.34,30,0
-.goto Netherstorm,25.59,41.65,30,0
-.goto Netherstorm,26.43,42.61,30,0
-.goto Netherstorm,26.95,38.34,30,0
-.goto Netherstorm,25.59,41.65,30,0
-.goto Netherstorm,26.43,42.61
->>Kill Warp-Tinkers and Warp-Masters inside the mine. Loot them for their Orders
-.complete 10432,1,6 
-step
-#aldor
-#label WarpTinker
-.goto Netherstorm,26.95,38.34,30,0
-.goto Netherstorm,25.59,41.65,30,0
-.goto Netherstorm,26.43,42.61,30,0
-.goto Netherstorm,26.95,38.34,30,0
-.goto Netherstorm,25.59,41.65,30,0
-.goto Netherstorm,26.43,42.61
->>Kill Warp-Tinkers and Warp-Masters inside the mine
-.complete 10380,1 
-.complete 10380,3 
-step
-#aldor
-#completewith Point2
->>Kill Sunfury Nethermancers and Daughters of Destiny at Manaforge Ara
-.complete 10315,1 
-.complete 10380,2 
-step
-#scryer
-#completewith Point2
->>Kill Sunfury Nethermancers and Demons at Manaforge Ara. Loot the Demons for their Orders
-.complete 10315,1 
-.complete 10432,1 
-step
-#completewith next
-.goto Netherstorm,29.56,41.80,50,0
-.goto Netherstorm,29.42,39.76,50 >> Travel up the mountain to Manaforge Ara
-.skill riding,225,1
-step
-#label Point2
-.goto Netherstorm,28.74,41.29
-.use 29018 >>Use the triangulation device in your bags. Stand here after using it
-.complete 10275,1 
-step
-#aldor
-.loop 45,Netherstorm,28.43,41.71,28.33,40.23,28.57,37.74,30.85,39.73,29.61,44.04,28.43,41.71
->>Kill Sunfury Nethermancers and Daughters of Destiny at Manaforge Ara
-.complete 10315,1 
-.complete 10380,2 
-.skill riding,<225,1
-step
-#aldor
-.loop 45,Netherstorm,28.43,41.71,28.33,40.23,30.85,39.73,29.61,44.04,28.43,41.71
->>Kill Sunfury Nethermancers and Daughters of Destiny at Manaforge Ara
-.complete 10315,1 
-.complete 10380,2 
-.skill riding,225,1
-step
-#scryer
-.loop 45,Netherstorm,28.43,41.71,28.33,40.23,28.57,37.74,30.85,39.73,29.61,44.04,28.43,41.71
->>Kill Sunfury Nethermancers and Demons at Manaforge Ara. Loot the Demons for their Orders
-.complete 10315,1 
-.complete 10432,1 
-.skill riding,<225,1
-step
-#scryer
-.loop 45,Netherstorm,28.43,41.71,28.33,40.23,30.85,39.73,29.61,44.04,28.43,41.71
->>Kill Sunfury Nethermancers and Demons at Manaforge Ara. Loot the Demons for their Orders
-.complete 10315,1 
-.complete 10432,1 
-.skill riding,225,1
-step << skip
-#aldor
-.goto Netherstorm,26.0,38.7
-.complete 10323,2 
-.complete 10323,1 
-step << skip
-#scryer
-.goto Netherstorm,25.9,38.8
-.complete 10365,2 
-.complete 10365,1 
-step
-#aldor
->>Return to Tuluman's Landing. Talk to Oazul, Tuluman, and Kaylaan
-.turnin 10315 >> Turn in Neutralizing the Nethermancers
-.goto Netherstorm,34.50,37.80
-.turnin 10275 >> Turn in Triangulation Point Two
-.accept 10276 >> Accept Full Triangle
-.turnin 10318 >> Turn in Dealing with the Overmaster
-.goto Netherstorm,34.62,37.95
-.turnin 10380 >> Turn in A Dark Pact
-.accept 10381 >> Accept Aldor No More
-.goto Netherstorm,34.80,38.30
-step
-#scryer
->>Return to Tuluman's Landing. Talk to Oazul and Tuluman
-.turnin 10315 >> Turn in Neutralizing the Nethermancers
-.goto Netherstorm,34.50,37.80
-.turnin 10275 >> Turn in Triangulation Point Two
-.accept 10276 >> Accept Full Triangle
-.turnin 10318 >> Turn in Dealing with the Overmaster
-.goto Netherstorm,34.62,37.95
-step
-#aldor
-#completewith FelArm
->>Kill Demons. Loot them for their Marks of Sargeras
-.collect 30809,10,10653,1 
-step
-#aldor
-#completewith next
->>Kill Demons. Loot them for a Fel Armament
-.collect 29740,1,10420,1 
-step
-.loop 50,Netherstorm,39.72,25.01,38.33,20.39,37.91,18.04,39.17,18.25,39.86,17.13,41.32,17.73,42.35,18.87,40.86,21.45,42.71,20.12,43.35,21.69,42.30,23.87,40.86,23.90,39.72,25.01
->>Kill Wrathbringers
-.complete 10856,1 
-step
-#aldor
-#label FemArm
-.loop 50,Netherstorm,39.72,25.01,38.33,20.39,37.91,18.04,39.17,18.25,39.86,17.13,41.32,17.73,42.35,18.87,40.86,21.45,42.71,20.12,43.35,21.69,42.30,23.87,40.86,23.90,39.72,25.01
->>Kill Demons. Loot them for a Fel Armament
-.collect 29740,1,10420,1 
-step
-#aldor
-.loop 50,Netherstorm,39.72,25.01,38.33,20.39,37.91,18.04,39.17,18.25,39.86,17.13,41.32,17.73,42.35,18.87,40.86,21.45,42.71,20.12,43.35,21.69,42.30,23.87,40.86,23.90,39.72,25.01
->>Kill Demons. Loot them for their Marks of Sargeras
-.collect 30809,10,10653,1 
-step
-.goto Netherstorm,44.69,14.58
->>Travel to the Eco-Dome Farfield. Talk to Tashar
-.turnin 10430 >> Turn in Testing the Prototype
-.accept 10436 >> Accept All Clear!
-step
-.loop 50,Netherstorm,43.16,13.33,43.68,11.53,44.90,10.74,45.01,8.01,46.51,7.78,47.05,10.12,46.35,12.99,45.28,12.71
->>Kill Scythetooth Raptors
->>Loot the small Generator Segments on the ground
-.complete 10436,1 
-.complete 10435,1 
-step
-.goto Netherstorm,44.69,14.58
->>Talk to Tashar. Wait for his RP
-.turnin 10436 >> Turn in All Clear!
-.accept 10440 >> Accept Success!
-step
-.loop 50,Netherstorm,47.57,20.27,44.88,18.75,45.10,16.70,50.08,17.24,47.57,20.27
->>Kill Farahlon Breakers. Loot them for their Farahlite. This quest is difficult. Find a group for them if needed. Skip this step if you're unable to find a group or solo them.
-.complete 10290,1 
-step
-.goto Netherstorm,48.76,22.64,50,0
-.goto Netherstorm,49.98,22.60,50 >> Travel up the mountain to the Ruins of Farahlon
-.skill riding,225,1
-step
-#completewith Surveying
-.goto Netherstorm,54.5,22.0,0
->>Kill the Hounds and Eyes of Culuthas
-.complete 10336,1 
-.complete 10336,2 
-step
-.goto Netherstorm,51.65,20.49
-.use 29445 >>Use the surveying marker in your bags next to the banner
-.complete 10335,1 
-step
-.goto Netherstorm,53.50,21.53
->>Kill Culuthas. Loot him for his Crystal. This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
-.complete 10276,1 
-step
-#label Surveying
-.use 29445 >>Use the surveying marker in your bags next to the banners
-.complete 10335,2 
-.goto Netherstorm,54.54,22.82
-.complete 10335,3 
-.goto Netherstorm,55.82,19.92
-step
-.loop 50,Netherstorm,,56.15,19.69,55.29,21.86,54.32,22.98,54.95,24.74,52.68,23.78,51.27,21.26,52.13,20.00,53.54,19.55,54.18,19.34,56.15,19.69
->>Kill the Hounds and Eyes of Culuthas
-.complete 10336,1 
-.complete 10336,2 
-step
-#completewith Stormspire5
-.goto Netherstorm,42.54,33.55,14 >> Take the elevator up to The Stormspire
-.cooldown item,6948,<0
-.skill riding,225,1
-step
-#completewith next
-.hs >> Hearth to the Stormspire
-.cooldown item,6948,>0
-step
->>Return to The Stormspire. Talk to Ghabar, Elgenubi, Nauthis, Zephyrion, and Audi
-.turnin 10440 >> Turn in Success!
-.goto Netherstorm,43.54,35.15
-.turnin 10290 >> Turn in In Search of Farahlite
-.accept 10293 >> Accept Hitting the Motherlode
-.goto Netherstorm,44.08,36.05
-.turnin 10336 >> Turn in The Minions of Culuthas
-.turnin 10856 >> Turn in The Best Defense
-.accept 10857 >> Accept Teleport This!
-.goto Netherstorm,44.71,34.94
-.turnin 10335 >> Turn in Surveying the Ruins
-.goto Netherstorm,44.73,34.87
-.turnin 10435 >> Turn in Retrieving the Goods
-.goto Netherstorm,44.74,36.75
-.isQuestComplete 10290
-step
->>Return to The Stormspire. Talk to Ghabar, Nauthis, Zephyrion, and Audi
-.turnin 10440 >> Turn in Success!
-.goto Netherstorm,43.54,35.15
-.turnin 10336 >> Turn in The Minions of Culuthas
-.turnin 10856 >> Turn in The Best Defense
-.accept 10857 >> Accept Teleport This!
-.goto Netherstorm,44.71,34.94
-.turnin 10335 >> Turn in Surveying the Ruins
-.goto Netherstorm,44.73,34.87
-.turnin 10435 >> Turn in Retrieving the Goods
-.goto Netherstorm,44.74,36.75
-step
-#completewith next
-.goto Netherstorm,45.31,34.87
-.fly Area 52>> Fly to Area 52
-step << skip
-.goto Netherstorm,32.8,64.9
-.turnin 10249 >> Turn in Back to the Chief!
-step
-#aldor
->>Return to Area 52. Talk to Orelis and Karja
-.turnin 10381 >> Turn in Aldor No More
-.goto Netherstorm,32.07,64.18
-.accept 10407 >> Accept Socrethar's Shadow
-.goto Netherstorm,32.04,64.18
-
-step
-#scryer
->>Return to Area 52. Talk to Thalodien
-.turnin 10432 >> Turn in Damning Evidence
-.accept 10508 >> Accept A Gift for Voren'thal
-.goto Netherstorm,32.00,64.08
-
-step << skip
-.home >> Set your Hearthstone to Area 52
-step
-#completewith next
-.hs >> Hearth to the Stormspire
-.cooldown item,6948,>0
-step
-#completewith next
-.goto Netherstorm,33.74,63.99
-.fly The Stormspire>> Fly to The Stormspire
-.cooldown item,6948,<0
-step
-#aldor
-.goto Netherstorm,36.85,27.82
->>Kill Morug. Loot him for his Stone. This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
-.complete 10407,1 
-step
-#scryer
-.goto Netherstorm,36.85,27.82
->>Kill Morug. Loot him for his Stone. This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
-.complete 10508,1 
-step
-#completewith next
-.goto Netherstorm,39.36,20.83
-.cast 38915 >> Use the Mental Interference Rod in your bags on a Cyber-Rage Forgelord
-.use 31678
-step
-.goto Netherstorm,39.19,20.43
->>With a Forgelord mind controlled, use "Detonate Teleporter" (3) to destroy the teleporter
-.complete 10857,1 
-.use 31678
-step
-#aldor
-.goto Netherstorm,40.87,19.54
->>Kill Silroth. Loot him for his Stone. This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
-.complete 10407,2 
-step
-#scryer
-.goto Netherstorm,40.87,19.54
->>Kill Silroth. Loot him for his Stone. This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
-.complete 10508,2 
-step
-#completewith next
-.goto Netherstorm,40.93,18.71
-.cast 38915 >> Use the Mental Interference Rod in your bags on a Cyber-Rage Forgelord
-.use 31678
-step
-.goto Netherstorm,41.08,19.42
->>With a Forgelord mind controlled, use "Detonate Teleporter" (3) to destroy the teleporter
-.complete 10857,2 
-step
-#completewith next
-.goto Netherstorm,41.82,21.10
-.cast 38915 >> Use the Mental Interference Rod in your bags on a Cyber-Rage Forgelord
-.use 31678
-step
-.goto Netherstorm,42.28,21.07
->>With a Forgelord mind controlled, use "Detonate Teleporter" (3) to destroy the teleporter
-.complete 10857,3 
-step
-.goto Netherstorm,47.54,21.09,60,0
-.goto Netherstorm,47.59,20.49,60,0
-.goto Netherstorm,47.82,19.69,60,0
-.goto Netherstorm,48.66,19.33,60,0
-.goto Netherstorm,48.98,18.74,60,0
-.goto Netherstorm,49.46,18.15,60,0
-.goto Netherstorm,49.82,17.23
-.line Netherstorm,47.54,21.09,47.59,20.49,47.82,19.69,48.66,19.33,48.98,18.74,49.46,18.15,49.82,17.23
->>Kill Cragskaar. Loot him for his Core. This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
-.complete 10293,1 
-.isOnQuest 10293
-.unitscan Cragskaar
-step
-#completewith next
-.hs >> Hearth to the Stormspire
-.cooldown item,6948,>0
-step
->>Return to The Stormspire. Talk to Elgenubi and Nauthis
-.turnin 10293 >> Turn in Hitting the Motherlode
-.goto Netherstorm,44.08,36.05
-.turnin 10857 >> Turn in Teleport This!
-.goto Netherstorm,44.71,34.94
-.isQuestComplete 10293
-.isQuestComplete 10857
-step
->>Return to The Stormspire. Talk to Elgenubi
-.turnin 10293 >> Turn in Hitting the Motherlode
-.goto Netherstorm,44.08,36.05
-.isQuestComplete 10293
-step
->>Return to The Stormspire. Talk to Nauthis
-.turnin 10857 >> Turn in Teleport This!
-.goto Netherstorm,44.71,34.94
-.isQuestComplete 10857
-step
-#completewith next
-.goto Netherstorm,45.31,34.87
-.fly Area 52>> Fly to Area 52
-step
-#aldor
-.goto Netherstorm,32.04,64.18
->>Return to Area 52. Talk to Karja
-.turnin 10407 >> Turn in Socrethar's Shadow
-.accept 10410 >> Accept Ishanah's Help
-step
-#scryer
-.goto Netherstorm,32.00,64.08
->>Return to Area 52. Talk to Thalodien
-.turnin 10508 >> Turn in A Gift for Voren'thal
-.accept 10509 >> Accept Bound for Glory
-step
-#completewith next
-.hs >> Hearth to the Stormspire
-.cooldown item,6948,>0
-step
-#completewith next
-.goto Netherstorm,33.74,63.99
-.fly The Stormspire>> Fly to The Stormspire
-.cooldown item,6948,<0
-step
->>Talk to Haramad inside
-.turnin 10276 >> Turn in Full Triangle
-.accept 10280 >> Accept Special Delivery to Shattrath City
-.goto Netherstorm,45.87,35.97
-.isQuestComplete 10276
-step
->>Talk to Haramad inside. Wait for his RP
-.accept 10280 >> Accept Special Delivery to Shattrath City
-.goto Netherstorm,45.87,35.97
-.isQuestTurnedIn 10276
-step
-#completewith next
-.goto Netherstorm,45.80,35.64
-.zone Shattrath City >> Use Haramad's Teleporter next to Haramad to teleport to Shattrath City
-step
-.goto Shattrath City,53.98,44.73
->>Talk to A'dal
-.turnin 10280 >> Turn in Special Delivery to Shattrath City
-.isQuestTurnedIn 10276
-step
-.zone Shattrath City >> Travel to Shattrath City
-step
-#aldor
->>Talk to Adyen and Ishanah
-.accept 10653 >> Accept Marks of Sargeras
-.turnin 10653 >> Turn in Marks of Sargeras
-.goto Shattrath City,30.72,34.63
-.accept 10421 >> Accept Fel Armaments
-.turnin 10421 >> Turn in Fel Armaments
-.turnin 10410 >> Turn in Ishanah's Help
-.goto Shattrath City,23.98,29.74
-.isOnQuest 10410
-step
-#aldor
->>Talk to Adyen and Ishanah
-.accept 10653 >> Accept Marks of Sargeras
-.turnin 10653 >> Turn in Marks of Sargeras
-.goto Shattrath City,30.72,34.63
-.accept 10421 >> Accept Fel Armaments
-.turnin 10421 >> Turn in Fel Armaments
-.goto Shattrath City,23.98,29.74
-step
-#scryer
->>Talk to Fyalenn and Voren'thal
-.accept 10656 >> Accept Sunfury Signets
-.turnin 10656 >> Turn in Sunfury Signets
-.goto Shattrath City,45.17,81.46
-.accept 10416 >> Accept Synthesis of Power
-.turnin 10416 >> Turn in Synthesis of Power
-.turnin 10509 >> Turn in Bound for Glory
-.goto Shattrath City,42.79,91.70
-.isOnQuest 10509
-step
-#scryer
->>Talk to Fyalenn and Voren'thal
-.accept 10656 >> Accept Sunfury Signets
-.turnin 10656 >> Turn in Sunfury Signets
-.goto Shattrath City,45.17,81.46
-.accept 10416 >> Accept Synthesis of Power
-.turnin 10416 >> Turn in Synthesis of Power
-.goto Shattrath City,42.79,91.70
-]])
-RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 60-70
@@ -29655,7 +28392,7 @@ step
 .isOnQuest 10820
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 60-70
@@ -30005,6 +28742,21 @@ step
 .accept 10206 >> Accept Pick Your Part
 .goto Netherstorm,32.99,64.66
 step
+>>Return to Area 52. Talk to Blastfizzle, Trep, Ravandwyr, Khay'ji, and Papa
+.turnin 10203 >> Turn in Invaluable Asset Zapping
+.accept 10221 >> Accept Dr. Boom!
+.goto Netherstorm,34.19,68.15
+.turnin 10226 >> Turn in Elemental Power Extraction
+.goto Netherstorm,32.43,66.78
+.turnin 10173 >> Turn in The Archmage's Staff
+.accept 10300 >> Accept Rebuilding the Staff
+.goto Netherstorm,31.36,66.15
+.turnin 10265 >> Turn in Consortium Crystal Collection
+.accept 10262 >> Accept A Heap of Ethereals
+.goto Netherstorm,32.44,64.20
+.accept 10206 >> Accept Pick Your Part
+.goto Netherstorm,32.99,64.66
+step
 #scryer
 #completewith Phase
 #requires NetherRay1
@@ -30176,7 +28928,6 @@ step
 .complete 10206,1 
 .complete 10262,1 
 step
-#aldor
 .line Netherstorm,18.91,73.08,19.25,74.14,19.67,75.12,20.21,75.45,19.67,75.12,20.16,76.58,20.92,77.73,19.69,78.06,20.92,77.73,21.36,77.60,22.25,78.09,23.03,78.71,22.46,78.73,23.53,79.44,24.23,80.11,25.19,80.83,26.08,81.40,26.78,81.58,27.82,81.09,28.52,80.81,29.70,80.84,30.32,80.66,30.84,80.31,31.32,79.53,31.94,79.56,32.66,79.50,33.55,78.92,34.27,78.64,33.56,79.24,34.27,78.64,35.55,78.65,36.47,79.01,37.83,78.78,38.54,78.67,39.37,78.14,40.02,77.86,41.03,77.33
 .goto Netherstorm,18.91,73.08,60,0
 .goto Netherstorm,20.21,75.45,60,0
@@ -30356,6 +29107,54 @@ step
 .accept 10333 >> Accept Help Mama Wheeler
 .goto Netherstorm,32.99,64.66
 step
+>>Return to Area 52. Talk to Khay'ji, Fuselage, and Papa
+.turnin 10262 >> Turn in A Heap of Ethereals
+.accept 10205 >> Accept Warp-Raider Nesaad
+.goto Netherstorm,32.44,64.20
+.turnin 10701 >> Turn in Breaking Down Netherock
+.goto Netherstorm,32.68,64.41,30,0
+.goto Netherstorm,32.73,64.96
+.turnin 10206 >> Turn in Pick Your Part
+.turnin 10261 >> Turn in Wanted: Annihilator Servo!
+.accept 10232 >> Accept In A Scrap With The Legion
+.accept 10333 >> Accept Help Mama Wheeler
+.goto Netherstorm,32.99,64.66
+.isQuestComplete 10701
+.isQuestComplete 10261
+step
+>>Return to Area 52. Talk to Khay'ji, Fuselage, and Papa
+.turnin 10262 >> Turn in A Heap of Ethereals
+.accept 10205 >> Accept Warp-Raider Nesaad
+.goto Netherstorm,32.44,64.20
+.turnin 10701 >> Turn in Breaking Down Netherock
+.goto Netherstorm,32.68,64.41,30,0
+.goto Netherstorm,32.73,64.96
+.turnin 10206 >> Turn in Pick Your Part
+.accept 10232 >> Accept In A Scrap With The Legion
+.accept 10333 >> Accept Help Mama Wheeler
+.goto Netherstorm,32.99,64.66
+.isQuestComplete 10701
+step
+>>Return to Area 52. Talk to Khay'ji and Papa
+.turnin 10262 >> Turn in A Heap of Ethereals
+.accept 10205 >> Accept Warp-Raider Nesaad
+.goto Netherstorm,32.44,64.20
+.turnin 10206 >> Turn in Pick Your Part
+.turnin 10261 >> Turn in Wanted: Annihilator Servo!
+.accept 10232 >> Accept In A Scrap With The Legion
+.accept 10333 >> Accept Help Mama Wheeler
+.goto Netherstorm,32.99,64.66
+.isQuestComplete 10261
+step
+>>Return to Area 52. Talk to Khay'ji and Papa
+.turnin 10262 >> Turn in A Heap of Ethereals
+.accept 10205 >> Accept Warp-Raider Nesaad
+.goto Netherstorm,32.44,64.20
+.turnin 10206 >> Turn in Pick Your Part
+.accept 10232 >> Accept In A Scrap With The Legion
+.accept 10333 >> Accept Help Mama Wheeler
+.goto Netherstorm,32.99,64.66
+step
 #requires NetherRay2
 #completewith next
 >>Kill an Arcane Annihilator. Loot it for it's Servo. It patrols around. This quest is difficult. Find a group for it if needed. Skip this step if you're unable to find a group or solo it.
@@ -30458,6 +29257,11 @@ step
 .accept 10266 >> Accept Request for Assistance
 .goto Netherstorm,32.44,64.20
 step
+>>Return to Area 52. Talk to Khay'ji
+.turnin 10205 >> Turn in Warp-Raider Nesaad
+.accept 10266 >> Accept Request for Assistance
+.goto Netherstorm,32.44,64.20
+step
 #requires NetherRay3
 .abandon 10261 >> Abandon Wanted: Annihilator Servo!
 step
@@ -30543,7 +29347,6 @@ step
 .goto Netherstorm,31.36,66.15
 .isOnQuest 10199
 step
-#scryer
 >>Return to Area 52. Talk to Ravandwyr
 .turnin 10300 >> Turn in Rebuilding the Staff
 .accept 10174 >> Accept Curse of the Violet Tower
@@ -30562,7 +29365,6 @@ step
 .goto Netherstorm,34.19,68.15
 .turnin 10221 >> Turn in Dr. Boom!
 step
-#scryer
 .goto Netherstorm,33.74,63.99
 >>Do NOT turn in the quest next to the flight path yet
 .fp Area 52 >> Get the Area 52 flight path
@@ -30581,12 +29383,12 @@ step
 .turnin 10652 >> Turn in Behind Enemy Lines
 .accept 10197 >> Accept A Convincing Disguise
 step
-#aldor
 .loop 55,Netherstorm,43.98,74.78,44.74,73.12,45.43,73.76,47.55,71.44,44.47,70.12,43.10,67.80,42.50,68.79,43.98,74.78
 >>Kill Nether Rays. Loot them for their Stingers
 .complete 10199,1 
 step
 #aldor
+#completewith next
 .goto Netherstorm,44.07,76.56,40,0
 .goto Netherstorm,45.55,78.99,40 >> Cross the Bridge to Manaforge Coruu
 .skill riding,225,1
@@ -30914,22 +29716,51 @@ step
 .turnin 10240 >> Turn in Building a Perimeter
 .goto Netherstorm,57.58,86.30
 step << Druid
+#scryer
 #completewith next
 .cast 18960 >> Cast Teleport: Moonglade
 .zoneskip Moonglade
 step << Druid
+#scryer
 .goto Moonglade,52.4,40.6
 >>Go to Moonglade
 .trainer >> Train your class spells
 step << DK
+#scryer
 #completewith next
 .cast 50977 >> Cast Death Gate
 .zoneskip Eastern Plaguelands
 step << DK
+#scryer
+.goto Eastern Plaguelands,80.3,48.0
+>>Go through the Death Gate
+.trainer >> Train your class spells from Amal'Thazad in Acherus
+step << Druid
+#aldor
+#completewith next
+.cast 18960 >> Cast Teleport: Moonglade
+.zoneskip Moonglade
+step << Druid
+#aldor
+.goto Moonglade,52.4,40.6
+>>Go to Moonglade
+.trainer >> Train your class spells
+step << DK
+#aldor
+#completewith next
+.cast 50977 >> Cast Death Gate
+.zoneskip Eastern Plaguelands
+step << DK
+#aldor
 .goto Eastern Plaguelands,80.3,48.0
 >>Go through the Death Gate
 .trainer >> Train your class spells from Amal'Thazad in Acherus
 step
+#aldor
+#completewith next
+.hs >> Hearth to Area 52
+step
+#scryer
 #completewith next
 .hs >> Hearth to Area 52
 step
@@ -30962,6 +29793,13 @@ step
 .accept 10341 >> Accept Kick Them While They're Down
 .goto Netherstorm,32.05,63.99
 step
+#aldor
+#completewith Midrealm
+.goto Netherstorm,41.05,63.20,50,0
+.goto Netherstorm,42.31,60.49,50 >> Cross the bridge to Midrealm Post
+.skill riding,225,1
+step
+#scryer
 #completewith Midrealm
 .goto Netherstorm,41.05,63.20,50,0
 .goto Netherstorm,42.31,60.49,50 >> Cross the bridge to Midrealm Post
@@ -31117,7 +29955,7 @@ step
 .complete 10328,1 
 .complete 10328,2 
 step
-#completewith KanthinP
+#completewith Daellis
 >>Loot the small silver boxes on the ground
 .complete 10267,1 
 step
@@ -31174,7 +30012,6 @@ step
 .complete 10209,1 
 .unitscan Summoner Kanthin
 step
-#label Daellis
 .goto Netherstorm,56.82,65.70,50,0
 .goto Netherstorm,56.54,66.24,50,0
 .goto Netherstorm,56.15,66.24,50,0
@@ -31194,6 +30031,16 @@ step
 >>Talk to the Image of Archmage Vargoth
 .turnin 10209 >> Turn in Summoner Kanthin's Prize
 .accept 10176 >> Accept Ar'kelos the Guardian
+step
+#scryer
+#completewith next
+>>Loot the small silver boxes on the ground
+.complete 10267,1 
+step
+#aldor
+#completewith next
+>>Loot the small silver boxes on the ground
+.complete 10267,1 
 step
 #scryer
 #label KanthinP
@@ -31404,6 +30251,16 @@ step
 .turnin 10232 >> Turn in In A Scrap With The Legion
 .goto Netherstorm,32.99,64.66
 step
+>>Return to Area 52. Talk to Boots, Fuselage, and Papa
+.turnin 10199 >> Turn in That Little Extra Kick
+.goto Netherstorm,32.27,63.92
+.turnin 10237 >> Turn in Warn Area 52!
+.accept 10247 >> Accept Doctor Vomisa, Ph.T.
+.goto Netherstorm,32.68,64.41,30,0
+.goto Netherstorm,32.73,64.96
+.turnin 10232 >> Turn in In A Scrap With The Legion
+.goto Netherstorm,32.99,64.66
+step
 .goto Netherstorm,37.32,63.74,15,0
 .goto Netherstorm,37.29,63.62
 >>Talk to Vomisa. Skip the followup
@@ -31433,6 +30290,7 @@ step
 .goto Netherstorm,42.45,41.33,50 >> Cross the bridge to The Stormspire
 .skill riding,225,1
 step
+.skill riding,225,1
 .goto Netherstorm,42.32,32.57
 >>Talk to Aurine
 .accept 10426 >> Accept Flora of the Eco-Domes
@@ -31445,6 +30303,7 @@ step
 .goto Netherstorm,43.36,36.14
 .home >> Set your Hearthstone to The Stormspire
 step
+#xprate <1.5
 >>Talk to Ghabar, Elgenubi, Nauthis, Zephyrion, Audi, and Haramad
 .turnin 10423 >> Turn in To the Stormspire
 .accept 10424 >> Accept Diagnosis: Critical
@@ -31463,8 +30322,30 @@ step
 .accept 10269 >> Accept Triangulation Point One
 .goto Netherstorm,45.87,35.97
 step
+#xprate >1.499
+>>Talk to Ghabar, Elgenubi, Nauthis, Zephyrion, Audi, and Haramad
+.turnin 10423 >> Turn in To the Stormspire
+.accept 10424 >> Accept Diagnosis: Critical
+.goto Netherstorm,43.54,35.15
+.accept 10336 >> Accept The Minions of Culuthas
+.accept 10855 >> Accept Fel Reavers, No Thanks!
+.goto Netherstorm,44.71,34.94
+.accept 10335 >> Accept Surveying the Ruins
+.goto Netherstorm,44.73,34.87
+.turnin 10434 >> Turn in The Dynamic Duo
+.accept 10435 >> Accept Retrieving the Goods
+.goto Netherstorm,44.74,36.75
+.turnin 10268 >> Turn in An Audience with the Prince
+.accept 10269 >> Accept Triangulation Point One
+.goto Netherstorm,45.87,35.97
+step
 .goto Netherstorm,45.31,34.87
 .fp Stormspire >> Get The Stormspire flight path
+step
+.skill riding,300,1
+.goto Netherstorm,42.32,32.57
+>>Talk to Aurine
+.accept 10426 >> Accept Flora of the Eco-Domes
 step
 .loop 50,Netherstorm,41.13,35.29,41.49,37.21,41.82,40.03,40.60,40.29,39.03,40.99,38.31,39.57,37.69,38.19,38.28,35.00,41.13,35.29
 .use 29818 >>Use the Energy Field Modulator in your bags on Farahlon Lashers, then kill them
@@ -31522,6 +30403,7 @@ step
 .goto Netherstorm,57.10,30.95,50 >> Cross the bridge to the Protectorate Watch Post
 .skill riding,225,1
 step
+#xprate <1.5
 >>Travel to the Protectorate Watch Post. Talk to Marid, Navuud, Viridius who patrols around slightly, and Dabiri
 .accept 10270 >> Accept A Not-So-Modest Proposal
 .goto Netherstorm,58.32,31.66
@@ -31537,6 +30419,21 @@ step
 .line Netherstorm,58.60,31.77,58.91,32.02,59.14,32.12,59.47,31.88,59.86,31.91,60.07,32.52
 .accept 10437 >> Accept Recipe for Destruction
 .goto Netherstorm,60.11,31.72
+step
+#xprate >1.499
+>>Travel to the Protectorate Watch Post. Talk to Marid, Navuud, Viridius who patrols around slightly, and Dabiri
+.accept 10270 >> Accept A Not-So-Modest Proposal
+.goto Netherstorm,58.32,31.66
+.accept 10411 >> Accept Electro-Shock Goodness!
+.goto Netherstorm,59.25,32.58
+.accept 10422 >> Accept Captain Tyralius
+.goto Netherstorm,58.60,31.77,40,0
+.goto Netherstorm,58.91,32.02,40,0
+.goto Netherstorm,59.14,32.12,40,0
+.goto Netherstorm,59.47,31.88,40,0
+.goto Netherstorm,59.86,31.91,40,0
+.goto Netherstorm,60.07,32.52
+.line Netherstorm,58.60,31.77,58.91,32.02,59.14,32.12,59.47,31.88,59.86,31.91,60.07,32.52
 step << skip
 #level 70
 .goto Netherstorm,59.5,32.4
@@ -31550,6 +30447,7 @@ step
 .cast 35685 >> Use Navuud's Concoction in your bags
 .use 29737
 step
+#xprate <1.5
 #label Seeping
 .goto Netherstorm,64.26,35.80,50,0
 .goto Netherstorm,65.80,39.03,50,0
@@ -31563,6 +30461,12 @@ step
 >>Kill Voidshriekers and Unstable Voidwraiths. Loot them for their Fragments << Warrior/Rogue
 .use 29737 >>While buffed with Navuud's Concoction, attack Seeping Sludges. Kill the Globules that spawn
 .complete 10437,1 
+.complete 10411,1 
+step
+#xprate >1.499
+#label Seeping
+.goto Netherstorm,64.2,35.80
+.use 29737 >>While buffed with Navuud's Concoction, attack Seeping Sludges. Kill the Globules that spawn
 .complete 10411,1 
 step
 .goto Netherstorm,59.42,45.03
@@ -31687,6 +30591,7 @@ step << skip
 .turnin 10406 >> Turn in Delivering the Message
 .accept 10408 >> Accept Nexus-King Salhadaar
 step
+#xprate <1.5
 >>Return to the Protectorate Watch Post. Talk to Viridius, Navuud, Ameer, and Dabiri
 .turnin 10422 >> Turn in Captain Tyralius
 .goto Netherstorm,58.60,31.77,40,0
@@ -31704,15 +30609,36 @@ step
 .accept 10438 >> Accept On Nethery Wings
 .goto Netherstorm,60.11,31.72
 step
+#xprate >1.499
+>>Return to the Protectorate Watch Post. Talk to Viridius, Navuud, Ameer, and Dabiri
+.turnin 10422 >> Turn in Captain Tyralius
+.goto Netherstorm,58.60,31.77,40,0
+.goto Netherstorm,58.91,32.02,40,0
+.goto Netherstorm,59.14,32.12,40,0
+.goto Netherstorm,59.47,31.88,40,0
+.goto Netherstorm,59.86,31.91,40,0
+.goto Netherstorm,60.07,32.52
+.line Netherstorm,58.60,31.77,58.91,32.02,59.14,32.12,59.47,31.88,59.86,31.91,60.07,32.52
+.turnin 10411 >> Turn in Electro-Shock Goodness!
+.goto Netherstorm,59.25,32.58
+.turnin 10353 >> Turn in Arconus the Insatiable
+.goto Netherstorm,59.51,32.39
+.turnin 10437 >> Turn in Recipe for Destruction
+.accept 10438 >> Accept On Nethery Wings
+.goto Netherstorm,60.11,31.72
+step
+.isQuestTurnedIn 10437
 #completewith next
 .goto Netherstorm,60.21,31.76
 .fly >> Talk to the Nether Drake to ride it
 .skipgossip
 step
+.isQuestTurnedIn 10437
 .goto Netherstorm,62.42,40.88
 .use 29778 >>When you get to the top of the Manaforge, spam use the Phase Disruptor in your bags to destroy it
 .complete 10438,1 
 step
+.isQuestTurnedIn 10437
 .goto Netherstorm,60.11,31.72
 >>Talk to Dabiri
 .turnin 10438 >> Turn in On Nethery Wings
@@ -31819,7 +30745,6 @@ step
 .accept 10315 >> Accept Neutralizing the Nethermancers
 .goto Netherstorm,34.50,37.80
 step
-#scryer
 >>Travel to Tuluman's Landing. Talk to Tuluman and Oazul
 .accept 10317 >> Accept Dealing with the Foreman
 .goto Netherstorm,34.62,37.95
@@ -31953,7 +30878,6 @@ step << skip
 .complete 10365,2 
 .complete 10365,1 
 step
-#aldor
 >>Return to Tuluman's Landing. Talk to Oazul, Tuluman, and Kaylaan
 .turnin 10315 >> Turn in Neutralizing the Nethermancers
 .goto Netherstorm,34.50,37.80
@@ -31961,18 +30885,11 @@ step
 .accept 10276 >> Accept Full Triangle
 .turnin 10318 >> Turn in Dealing with the Overmaster
 .goto Netherstorm,34.62,37.95
+step
+#aldor
 .turnin 10380 >> Turn in A Dark Pact
 .accept 10381 >> Accept Aldor No More
 .goto Netherstorm,34.80,38.30
-step
-#scryer
->>Return to Tuluman's Landing. Talk to Oazul and Tuluman
-.turnin 10315 >> Turn in Neutralizing the Nethermancers
-.goto Netherstorm,34.50,37.80
-.turnin 10275 >> Turn in Triangulation Point Two
-.accept 10276 >> Accept Full Triangle
-.turnin 10318 >> Turn in Dealing with the Overmaster
-.goto Netherstorm,34.62,37.95
 step
 #aldor
 #completewith FelArm
@@ -32015,6 +30932,7 @@ step
 .turnin 10436 >> Turn in All Clear!
 .accept 10440 >> Accept Success!
 step
+#xprate <1.5
 .loop 50,Netherstorm,47.57,20.27,44.88,18.75,45.10,16.70,50.08,17.24,47.57,20.27
 >>Kill Farahlon Breakers. Loot them for their Farahlite. This quest is difficult. Find a group for them if needed. Skip this step if you're unable to find a group or solo them.
 .complete 10290,1 
@@ -32086,6 +31004,12 @@ step
 .turnin 10435 >> Turn in Retrieving the Goods
 .goto Netherstorm,44.74,36.75
 step
+#aldor
+#completewith next
+.goto Netherstorm,45.31,34.87
+.fly Area 52>> Fly to Area 52
+step
+#scryer
 #completewith next
 .goto Netherstorm,45.31,34.87
 .fly Area 52>> Fly to Area 52
@@ -32110,10 +31034,23 @@ step
 step << skip
 .home >> Set your Hearthstone to Area 52
 step
+#aldor
 #completewith next
 .hs >> Hearth to the Stormspire
 .cooldown item,6948,>0
 step
+#scryer
+#completewith next
+.hs >> Hearth to the Stormspire
+.cooldown item,6948,>0
+step
+#aldor
+#completewith next
+.goto Netherstorm,33.74,63.99
+.fly The Stormspire>> Fly to The Stormspire
+.cooldown item,6948,<0
+step
+#scryer
 #completewith next
 .goto Netherstorm,33.74,63.99
 .fly The Stormspire>> Fly to The Stormspire
@@ -32129,11 +31066,13 @@ step
 >>Kill Morug. Loot him for his Stone. This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
 .complete 10508,1 
 step
+#xprate <1.5
 #completewith next
 .goto Netherstorm,39.36,20.83
 .cast 38915 >> Use the Mental Interference Rod in your bags on a Cyber-Rage Forgelord
 .use 31678
 step
+#xprate <1.5
 .goto Netherstorm,39.19,20.43
 >>With a Forgelord mind controlled, use "Detonate Teleporter" (3) to destroy the teleporter
 .complete 10857,1 
@@ -32149,24 +31088,29 @@ step
 >>Kill Silroth. Loot him for his Stone. This quest is difficult. Find a group for him if needed. Skip this step if you're unable to find a group or solo him.
 .complete 10508,2 
 step
+#xprate <1.5
 #completewith next
 .goto Netherstorm,40.93,18.71
 .cast 38915 >> Use the Mental Interference Rod in your bags on a Cyber-Rage Forgelord
 .use 31678
 step
+#xprate <1.5
 .goto Netherstorm,41.08,19.42
 >>With a Forgelord mind controlled, use "Detonate Teleporter" (3) to destroy the teleporter
 .complete 10857,2 
 step
+#xprate <1.5
 #completewith next
 .goto Netherstorm,41.82,21.10
 .cast 38915 >> Use the Mental Interference Rod in your bags on a Cyber-Rage Forgelord
 .use 31678
 step
+#xprate <1.5
 .goto Netherstorm,42.28,21.07
 >>With a Forgelord mind controlled, use "Detonate Teleporter" (3) to destroy the teleporter
 .complete 10857,3 
 step
+#xprate <1.5
 .goto Netherstorm,47.54,21.09,60,0
 .goto Netherstorm,47.59,20.49,60,0
 .goto Netherstorm,47.82,19.69,60,0
@@ -32180,10 +31124,12 @@ step
 .isOnQuest 10293
 .unitscan Cragskaar
 step
+#xprate <1.5
 #completewith next
 .hs >> Hearth to the Stormspire
 .cooldown item,6948,>0
 step
+#xprate <1.5
 >>Return to The Stormspire. Talk to Elgenubi and Nauthis
 .turnin 10293 >> Turn in Hitting the Motherlode
 .goto Netherstorm,44.08,36.05
@@ -32192,16 +31138,24 @@ step
 .isQuestComplete 10293
 .isQuestComplete 10857
 step
+#xprate <1.5
 >>Return to The Stormspire. Talk to Elgenubi
 .turnin 10293 >> Turn in Hitting the Motherlode
 .goto Netherstorm,44.08,36.05
 .isQuestComplete 10293
 step
+#xprate <1.5
 >>Return to The Stormspire. Talk to Nauthis
 .turnin 10857 >> Turn in Teleport This!
 .goto Netherstorm,44.71,34.94
 .isQuestComplete 10857
 step
+#aldor
+#completewith next
+.goto Netherstorm,45.31,34.87
+.fly Area 52>> Fly to Area 52
+step
+#scryer
 #completewith next
 .goto Netherstorm,45.31,34.87
 .fly Area 52>> Fly to Area 52
@@ -32218,13 +31172,26 @@ step
 .turnin 10508 >> Turn in A Gift for Voren'thal
 .accept 10509 >> Accept Bound for Glory
 step
+#aldor
 #completewith next
 .hs >> Hearth to the Stormspire
 .cooldown item,6948,>0
 step
+#scryer
+#completewith next
+.hs >> Hearth to the Stormspire
+.cooldown item,6948,>0
+step
+#aldor
 #completewith next
 .goto Netherstorm,33.74,63.99
-.fly The Stormspire>> Fly to The Stormspire
+.fly The Stormspire >> Fly to The Stormspire
+.cooldown item,6948,<0
+step
+#scryer
+#completewith next
+.goto Netherstorm,33.74,63.99
+.fly The Stormspire >> Fly to The Stormspire
 .cooldown item,6948,<0
 step
 >>Talk to Haramad inside
@@ -32290,7 +31257,7 @@ step
 .goto Shattrath City,42.79,91.70
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 5
 #wotlk
 #group Horde 70-80
 #name 68-71 Howling Fjord
@@ -34037,7 +33004,7 @@ step << Warrior
 .xp <70,1
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 60-70
@@ -34464,7 +33431,7 @@ step
 .turnin 10547 >>Turn in Of Thistleheads and Eggs...
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 7
 #wotlk
 #tbc
 #group Horde 60-70
@@ -34889,7 +33856,7 @@ step
 .turnin 10547 >>Turn in Of Thistleheads and Eggs...
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 5
 #wotlk
 #group Horde 70-80
 << Horde
@@ -34926,7 +33893,7 @@ step
 .goto BoreanTundra,42.71,55.81,20,0
 .goto BoreanTundra,43.19,54.98
 step
->>Talk to Holgoth and then Mortuus outside
+>>Talk to Holgoth, and then Mortuus outside
 .accept 11606 >>Accept Patience is a Virtue that We Don't Need
 .goto BoreanTundra,43.33,55.36
 .accept 11611 >>Accept Taken by the Scourge
@@ -34959,8 +33926,7 @@ step
 .goto BoreanTundra,43.20,55.06
 step
 #completewith next
->> Go back inside the bottom floor of the Hold
-.goto BoreanTundra,42.44,55.34,20
+.goto BoreanTundra,42.44,55.34,20 >> Go back inside the bottom floor of the Hold
 step
 >> Go to the lower level of Warsong Hold. Talk to Endorah, Talonga, and Orn
 .accept 11574 >>Accept Too Close For Comfort
@@ -34984,7 +33950,7 @@ step
 .accept 12486 >>Accept To Bor'gorok Outpost, Quickly!
 step
 #completewith next
-.goto BoreanTundra,42.44,55.34,20 >> Go back outside the Hold
+.goto BoreanTundra,42.71,55.81,25 >> Go back outside the Hold
 step
 #completewith SouthHole
 >>Destroy the Egg Sacs on the ramps of the quarry
@@ -35006,7 +33972,7 @@ step
 #sticky
 #label Luther
 .goto BoreanTundra,40.07,52.06,-1
->>Talk to Shadowstalker Luther
+>>Talk to the undead corpse
 .turnin 11614 >>Turn in Untold Truths
 .accept 11615 >>Accept Nerub'ar Secrets
 step
@@ -35028,6 +33994,7 @@ step
 >>Talk to Holgoth outside. Then head to the hut to talk to Barthus & Razgor
 .turnin 11608 >>Turn in Bury Those Cockroaches!
 .goto BoreanTundra,43.33,55.36
+.turnin 11611 >>Turn in Taken by the Scourge
 .turnin 11615 >>Turn in Nerub'ar Secrets
 .accept 11616 >>Accept Message to Hellscream
 .goto BoreanTundra,43.20,55.06
@@ -35045,7 +34012,7 @@ step
 step
 .goto BoreanTundra,40.72,52.54,20,0
 .goto BoreanTundra,40.36,51.39
->> Run up the stairs then take the elevator to the top of Warsong Hold
+>> Run up the stairs then take the elevator to the top of the building
 .fp Warsong Hold >> Get the Warsong Hold flight path
 step
 .goto BoreanTundra,42.02,54.49,30,0
@@ -35056,9 +34023,18 @@ step
 step
 #completewith next
 .goto BoreanTundra,42.28,55.68
-.vehicle >>Talk to Yanni at Warsong Hold and take the Magic Carpet ride to Garrosh's Landing.
+.vehicle >>Talk to Yanni at Warsong Hold and take the Magic Carpet ride to Garrosh's Landing. This ride takes just under a minute.
 .timer 57,Yanni Magic Carpet flight
 .skipgossip
+step
+#questguide
+>>Talk to Waltor and then Grek'lor
+.accept 11655 >>Accept Into the Mist
+.accept 11660 >>Accept Horn of the Ancient Mariner
+.goto BoreanTundra,32.34,54.27
+.turnin 11636 >>Turn in Magic Carpet Ride
+.accept 11642 >>Accept Tank Ain't Gonna Fix Itself
+.goto BoreanTundra,32.25,54.07
 step
 >>Talk to Waltor and then Grek'lor
 .accept 11655 >>Accept Into the Mist
@@ -35074,10 +34050,19 @@ step
 .accept 11644 >>Accept Super Strong Metal Plates!
 .goto BoreanTundra,32.07,54.27
 step
+#questguide
+#completewith Mootoo
+.goto BoreanTundra,29.6,50.1,0
+>> Kill the Kvaldirs. Loot them for their Relics. Loot the Horn from the Mistweavers.
+.complete 11655,1 
+.complete 11660,1 
+step
+#sticky
 #completewith hornbt
 .goto BoreanTundra,32.4,47.9,0,0
 >>Kill the Mistweavers around the area for the Horn. Focus on other quests while doing this.
 .complete 11660,1 
+
 step
 #completewith Mootoo
 .goto BoreanTundra,29.6,50.1,0
@@ -35092,12 +34077,12 @@ step
 step
 #label Pneumatic
 .goto BoreanTundra,32.39,49.18
->>Click on the Pneumatic Tank Transjigamarig inside the hut.
+>>Click on the Pneumatic Tank Transjigamarig inside the hut
 .complete 11643,1 
 step
 .goto BoreanTundra,31.9,52.7,15,0
 .goto BoreanTundra,31.88,52.32
->>Run up to the top floor of the building. Talk to Mootoo. Skip this step if she isn't up.
+>>Run up to the top floor of the building. Talk to Mootoo. Skip this if she isn't up.
 .accept 11664 >>Accept Escaping the Mist
 step
 #label Mootoo
@@ -35106,20 +34091,31 @@ step
 .complete 11664,1 
 .isOnQuest 11664
 step
+#questguide
+.goto BoreanTundra,32.8,46.5,60,0
+.goto BoreanTundra,29.5,51.1,60,0
+.goto BoreanTundra,30.5,54.9,60,0
+.goto BoreanTundra,31.9,52.4
+>> Kill the Kvaldirs. Loot them for their Relics. Loot the Horn from the Mistweavers.
+.complete 11655,1 
+.complete 11660,1 
+step
 .goto BoreanTundra,32.8,46.5,60,0
 .goto BoreanTundra,29.5,51.1,60,0
 .goto BoreanTundra,30.5,54.9,60,0
 .goto BoreanTundra,31.9,52.4
 >> Kill the Kvaldirs. Loot them for their Relics.
 .complete 11655,1 
+
 step
+.isQuestComplete 11664
 >>Talk to Elder Mootoo
 .turnin 11664 >>Turn in Escaping the Mist
 .goto BoreanTundra,31.68,54.37
-.isQuestComplete 11664
 step
-.abandon 11664 >> Abandon Escaping the Mist
 .isOnQuest 11664
+>>Abandon the escort quest if you were unable to complete it.
+.abandon 11664
 step
 >>Talk to Mobu
 #requires metalplate
@@ -35127,6 +34123,17 @@ step
 .turnin 11644 >>Turn in Super Strong Metal Plates!
 .accept 11651 >>Accept Tanks a lot...
 .goto BoreanTundra,32.07,54.27
+step
+#questguide
+>>Talk to Grek'lor and Waltor
+.turnin 11651 >>Turn in Tanks a lot...
+.accept 11652 >>Accept The Plains of Nasam
+.goto BoreanTundra,32.25,54.07
+.turnin 11655 >>Turn in Into the Mist
+.accept 11656 >>Accept Burn in Effigy
+.turnin 11660 >>Turn in Horn of the Ancient Mariner
+.accept 11661 >>Accept Orabus the Helmsman
+.goto BoreanTundra,32.34,54.27
 step
 >>Talk to Grek'lor and Waltor
 .turnin 11651 >>Turn in Tanks a lot...
@@ -35136,34 +34143,45 @@ step
 .accept 11656 >>Accept Burn in Effigy
 .goto BoreanTundra,32.33,54.26
 step
+.isQuestComplete 11660
 .turnin 11660 >>Turn in Horn of the Ancient Mariner
 .accept 11661 >>Accept Orabus the Helmsman
 .goto BoreanTundra,32.34,54.27
-.isQuestComplete 11660
 step
-.use 34830 >>Use the Tuskarr Torch in your bags next to the boats in the area.
+.use 34830 >>Use the Tuskarr Torch in your bags next to the boats in the area
 .complete 11656,1 
 .goto BoreanTundra,31.58,48.13
 .complete 11656,2 
 .goto BoreanTundra,30.93,48.70
 .complete 11656,3 
 .goto BoreanTundra,29.61,52.79
+
 step
+#questguide
 #completewith next
 .goto BoreanTundra,26.91,54.75
-.cast 45703 >> Use the Horn of the Ancient Mariner in your bags at the end of Warsong Jetty.
+.cast 45703 >> Use the Horn of the Ancient Mariner in your bags at the end of Warsong Jetty
 .use 34844
-.isOnQuest 11661
-.timer 22,Orabus RP
 step
+#questguide
 .goto BoreanTundra,26.68,54.64
-.use 34844 >> Kill the Crewmen and then Orabus when he arrives.
+.use 34844 >> Kill the Crewmen & Orabus when he arrives
 .complete 11661,1 
+step
 .isOnQuest 11661
+#completewith next
+.goto BoreanTundra,26.91,54.75
+.cast 45703 >> Use the Horn of the Ancient Mariner in your bags at the end of Warsong Jetty
+.use 34844
+step
+.isOnQuest 11661
+.goto BoreanTundra,26.68,54.64
+.use 34844 >> Kill the Crewmen & Orabus when he arrives
+.complete 11661,1 
 step
 #label hornbt
 .goto BoreanTundra,29.88,61.81
-.use 34830 >>Use the Tuskarr Torch in your bags next to the boat.
+.use 34830 >>Use the Tuskarr Torch in your bags next to the boat
 .complete 11656,4 
 step
 #questguide
@@ -35173,50 +34191,44 @@ step
 .turnin 11661 >>Turn in Orabus the Helmsman
 .accept 11662 >>Accept Seek Out Karuk!
 step
+.isQuestComplete 11660
 .turnin 11660 >>Turn in Horn of the Ancient Mariner
 .accept 11661 >>Accept Orabus the Helmsman
 .goto BoreanTundra,32.34,54.27
-.isQuestComplete 11660
 step
-.abandon 11660 >> Abandon Horn of the Ancient Mariner
 .isOnQuest 11660
+>>If you haven't gotten the Horn drop by now, abandon the quest.
+.abandon 11660
+
 step
+.isOnQuest 11661
 #completewith next
 .goto BoreanTundra,26.91,54.75
-.cast 45703 >> Use the Horn of the Ancient Mariner in your bags at the end of Warsong Jetty.
+.cast 45703 >> Use the Horn of the Ancient Mariner in your bags at the end of Warsong Jetty
 .use 34844
-.isOnQuest 11661
-.timer 22,Orabus RP
 step
+.isOnQuest 11661
 .goto BoreanTundra,26.68,54.64
-.use 34844 >> Kill the Crewmen & Orabus when he arrives.
+.use 34844 >> Kill the Crewmen & Orabus when he arrives
 .complete 11661,1 
-.isOnQuest 11661
 step
 >>Talk to Waltor
-.turnin 11661 >>Turn in Orabus the Helmsman
-.turnin 11656 >>Turn in Burn in Effigy
-.goto BoreanTundra,32.34,54.27
 .isQuestComplete 11661
-.isQuestComplete 11656
-step
->>Talk to Waltor
-.turnin 11656 >>Turn in Burn in Effigy
-.goto BoreanTundra,32.34,54.27
-.isQuestComplete 11656
-step
->>Talk to Waltor
+.turnin 11661 >>Turn in Orabus the Helmsman
 .accept 11662 >>Accept Seek Out Karuk!
 .goto BoreanTundra,32.34,54.27
-.isQuestTurnedIn 11656
-.isQuestTurnedIn 11661
+step
+.goto BoreanTundra,32.34,54.27
+>>Talk to Waltor
+.turnin 11656 >>Turn in Burn in Effigy
+
 step
 #completewith next
 .goto BoreanTundra,31.91,54.40
 .vehicle >> Get into a Siege Tank
 step
->>Use your 1-4 abilities to kill Scourge. Use your 5th ability on the Injured Warsong soldiers. Rescue Engineers to move a LOT faster
->>If you run out of mana, drive over an oil barrel
+>>Use your 1-4 abilities to kill 100 Scourge around the area. Target and use your 5th ability on the Injured Warsong soldiers. Rescue Engineers to move a LOT faster
+>>If you run out of mana, drive over an oil barrel. Do this quest slowly or you may have to get another Siege Tank
 .complete 11652,1 
 .complete 11652,2 
 .goto BoreanTundra,36.6,62.2
@@ -35239,15 +34251,15 @@ step
 .turnin 12471 >>Turn in Cruelty of the Kvaldir
 .isOnQuest 12471
 step
-#label Karuk1
-.goto BoreanTundra,47.13,75.49
->>Talk to Karuk
-.accept 11613 >>Accept Karuk's Oath
-step
 .goto BoreanTundra,47.13,75.49
 >>Talk to Karuk
 .turnin 11662 >>Turn in Seek Out Karuk!
 .isOnQuest 11662
+step
+#label Karuk1
+.goto BoreanTundra,47.13,75.49
+>>Talk to Karuk
+.accept 11613 >>Accept Karuk's Oath
 step
 #requires Cruelty1
 >>Kill the Skadir Longboatsmen and Raiders in the area
@@ -35417,7 +34429,6 @@ step << Mage
 step
 #completewith Nasam
 .hs >>Hearth to Warsong Hold
-.cooldown item,6948,>0
 step
 >>Talk to Orn Tenderhoof
 .turnin 13090 >>Turn in Northern Cooking
@@ -35434,7 +34445,6 @@ step
 .goto BoreanTundra,38.95,55.43,20,0
 .goto BoreanTundra,39.18,55.38,15,0
 .goto BoreanTundra,38.93,54.08,15 >> Exit the Hold then the Quarry
-.skill riding,225,1
 step
 >>Talk to Ickoris, Canarius, and Torp
 .turnin 11618 >>Turn in Reinforcements Incoming...
@@ -35482,6 +34492,7 @@ step
 #requires Swines
 >>Talk to Torp, Canarius, and Ickoris
 .turnin 11688 >>Turn in Damned Filthy Swine
+.accept 11690 >>Accept Bring 'Em Back Alive
 .goto BoreanTundra,37.90,52.33
 .turnin 11676 >>Turn in Merciful Freedom
 .goto BoreanTundra,37.91,52.58
@@ -35489,53 +34500,42 @@ step
 .accept 11703 >>Accept Get to Getry
 .goto BoreanTundra,38.08,52.48
 step
-#questguide
-.accept 11690 >>Accept Bring 'Em Back Alive
-.goto BoreanTundra,37.90,52.33
-step
-#questguide
-.use 34954 >> Use Torp's Kodo Snaffle in your bags on the Kodos. Use "Stampede" (1) on each new kodo to move faster. Run back to Torp and rescue the kodo using (2).
+.use 34954 >> Use the Torp's Kodo Snaffle in your bags on the Kodos. Use "Stampede" (1) on each new kodo to move faster. Run back to Torp and rescue the kodo using (2).
 .waypoint Borean Tundra,36.52,47.84,0,vehicle,VEHICLE_PASSENGERS_CHANGED,VEHICLE_UPDATE,UNIT_EXITING_VEHICLE
 .goto BoreanTundra,37.9,52.6
 .complete 11690,1 
 step
-#questguide
 .goto BoreanTundra,37.90,52.33
 >>Talk to Torp
 .turnin 11690 >>Turn in Bring 'Em Back Alive
 step
 .goto BoreanTundra,34.59,46.43
->>Talk to Getry stealthed atop the tower
+>>Talk to Getry, stealthed atop the tower
 .turnin 11703 >>Turn in Get to Getry
 .accept 11705 >>Accept Foolish Endeavors
 .timer 140,Foolish Endeavors RP
-.isOnQuest 11703
 step
-.isOnQuest 11705
->>Jump off the tower and wait for the RP to finish. Kill Varidus
+>>Jump off the tower, then wait for the RP. Kill Varidus
 >>Note that this quest can be buggy and may take multiple quest accepts to start the event
 .goto BoreanTundra,35.2,46.1
 .complete 11705,1 
+step << Shaman
+.hs >>Hearth back to Warsong Hold
 step
-#completewith next
-.hs >>Hearth to Warsong Hold
-.cooldown item,6948,>0
-step
-.isQuestComplete 11705
+.goto BoreanTundra,38.95,55.43,20,0 << !Shaman
 .goto BoreanTundra,41.35,53.60
->>Return to Warsong Hold. Talk to Garrosh
+>>Return to Warsong Hold << !Shaman
+>>Talk to Garrosh
 .turnin 11705 >>Turn in Foolish Endeavors
 .accept 11709 >>Accept Nork Bloodfrenzy's Charge
 step
 #completewith next
 .goto BoreanTundra,42.71,55.81,25 >> Go back outside the Hold
-.isOnQuest 11709
 step
 .goto BoreanTundra,43.71,54.43
 >>Talk to Nork
 .turnin 11709 >>Turn in Nork Bloodfrenzy's Charge
 .accept 11711 >>Accept Coward Delivery... Under 30 Minutes or it's Free
-.isOnQuest 11709
 step
 .goto BoreanTundra,52.07,52.50
 >>Travel out of the quarry to Bloodspore Plains. Talk to Laurith
@@ -35543,10 +34543,9 @@ step
 step
 #completewith next
 .goto BoreanTundra,55.30,50.76
-.cast 45958 >> Use the Warsong Flare Gun next to the signpost
+.cast 45958 >> Use the Warsong Flare Gun next to the signpost. The objective will automatically complete after 30 seconds
 .timer 30,Coward Delivery RP
 .use 34971
-.isOnQuest 11711
 step
 >>Wait for the quest to complete, then talk to Tungok
 .goto BoreanTundra,53.30,51.67,50,0
@@ -35556,7 +34555,6 @@ step
 .turnin 11711 >>Turn in Coward Delivery... Under 30 Minutes or it's Free
 .accept 11714 >>Accept Vermin Extermination
 .unitscan Scout Tungok
-.isOnQuest 11711
 step
 #completewith Pollen
 .goto BoreanTundra,51.5,63.5,0
@@ -35567,7 +34565,6 @@ step
 .complete 11714,1 
 .complete 11714,2 
 .complete 11714,3 
-.isOnQuest 11711
 step
 .goto BoreanTundra,50.7,49.4,50,0
 .goto BoreanTundra,53.9,49.6,50,0
@@ -35606,7 +34603,6 @@ step
 .complete 11714,1 
 .complete 11714,2 
 .complete 11714,3 
-.isOnQuest 11714
 step
 #completewith end
 #label Tungok2
@@ -35628,6 +34624,7 @@ step
 .cast 45995 >> Use the Polinated Bloodspore Flower in your bags
 .timer 10,Bloodspore Flower RP
 .use 34978
+
 step
 .goto BoreanTundra,52.07,52.50
 >>Wait 10 seconds for the debuff to expire
@@ -35641,29 +34638,21 @@ step
 .accept 11721 >>Accept Gammothra the Tormentor
 .goto BoreanTundra,52.18,52.82
 step
-#requires Tungok2
 #completewith next
 .goto BoreanTundra,49.11,58.43,30 >> Enter the cave inside the mountain
 step
 .goto BoreanTundra,45.81,60.70,30,0
 .goto BoreanTundra,45.8,61.6
->>Jump down when you're close to the water to go to the bottom floor of the cave. Go down the south-west side of the cave to Gammothra
+>>Jump down when you're close to the water to go to the bottom floor. Go down the south-west side of the cave to Gammothra
 .use 34979 >> Channel the Pouch of Crushed Bloodspore in your bags to weaken Gammothra. Kill and loot him for his Head
 .complete 11721,1 
-.unitscan Gammothra the Tormentor
 step
-#completewith Omeletskip
+#completewith Omelet
 +Jump into the middle of the two rocks in Gammothra's room and jump as high as you can.
 +Once as high as possible, logout and log back in. If you can't get the logout skip to work, skip this step and exit the cave normally.
 .goto BoreanTundra,46.7,62.2
 .link https://gyazo.com/1a30637d12dd12fd15ace7731236ea21 >>Click here for a picture reference of where to logout.
 
-.isOnQuest 11721
-step
-#label Omeletskip
-#completewith next
-.goto BoreanTundra,45.12,53.51,25
-.isQuestComplete 11721
 step
 #label Omelet
 .goto BoreanTundra,48.55,59.02
@@ -35718,20 +34707,12 @@ step << Mage
 step
 #completewith next
 .hs >>Hearth to Warsong Hold
-.cooldown item,6948,>0
 step
-.isQuestComplete 11722
 .goto BoreanTundra,41.35,53.60
 >>Talk to Garrosh on the bottom floor of the Hold
 .turnin 11722 >>Turn in Trophies of Gammoth
-step
-.isQuestTurnedIn 11722
-.isQuestTurnedIn 11705
-.isQuestTurnedIn 11652
-.goto BoreanTundra,41.35,53.60
 .accept 11916 >>Accept Hellscream's Champion
 step
-.isOnQuest 11916
 #completewith next
 .goto BoreanTundra,40.42,54.83,30,0
 .goto BoreanTundra,40.16,55.17
@@ -35739,14 +34720,8 @@ step
 .skipgossip
 .timer 115,Ride to Taunka'le
 step
-.isOnQuest 11916
-#sticky
-#completewith next
 .goto BoreanTundra,77.76,37.77
-+Wait out the journey on the wolf, then talk to the Flight Master
-step
-#completewith next
-.goto BoreanTundra,77.76,37.77
+>>Wait out the journey on the wolf, then talk to the Flight Master
 .fp Taunka'le Village >> Get the Taunka'le Village flight path
 step
 >>Talk to the Sage and Mahan
@@ -35756,20 +34731,19 @@ step
 .accept 11684 >>Accept Scouting the Sinkholes
 .goto BoreanTundra,77.07,37.82
 step
+#completewith CPlane
+.goto BoreanTundra,76.25,37.18
+.home >> Set your Hearth to Taunka'le Village
+step
+.goto BoreanTundra,75.89,37.24
+>>Talk to Wintergale
+.turnin 11916 >>Turn in Hellscream's Champion
+step
 >>Talk to Fezzix then talk to Taiga inside the tent
 .accept 11881 >>Accept Load'er Up!
 .goto BoreanTundra,77.48,36.95
 .accept 11674 >>Accept Sage Highmesa is Missing
 .goto BoreanTundra,77.30,36.87
-step
-#completewith CPlane
-.goto BoreanTundra,76.25,37.18
-.home >> Set your Hearth to Taunka'le Village
-step
-.isOnQuest 11916
-.goto BoreanTundra,75.89,37.24
->>Talk to Wintergale
-.turnin 11916 >>Turn in Hellscream's Champion
 step
 .use 34920 >>Use the Map of the Geyser Fields in your bags on the edge of the sinkholes.
 .complete 11684,1 
@@ -35784,7 +34758,7 @@ step
 .complete 11890,1 
 step
 .goto BoreanTundra,64.02,35.77
->>Talk to the dead Crashed Recon Pilot
+>>Talk to the gnome corpse
 .accept 11887 >>Accept Emergency Supplies
 step
 .goto BoreanTundra,64.0,37.2,70,0
@@ -35805,7 +34779,7 @@ step
 .complete 11881,1 
 step
 #requires CPlane
->>Talk to Fezzix then Dorain
+>>Talk to Fezzix, then talk to Dorain
 .turnin 11881 >>Turn in Load'er Up!
 .turnin 11887 >>Turn in Emergency Supplies
 .goto BoreanTundra,77.48,36.95
@@ -35839,12 +34813,12 @@ step
 .goto BoreanTundra,72.5,37.1,60,0
 .goto BoreanTundra,73.5,39.9,60,0
 .goto BoreanTundra,74.6,33.9
-.use 35281 >> Place down your Windsoul Totem and kill Steam Ragers when they have the debuff from your totem (about a 30 yard range) to collect their energy
+.use 35281 >> Use the Windsoul Totem. Kill Steam Ragers when they have the debuff from your totem (about a 30 yard range) to collect their energy
 .complete 11893,1 
 step
 #completewith next
 .goto BoreanTundra,66.5,22.2,0
-.use 35352 >>Use your Sage's Lightning Rod on Mechanical (but not mechagnome) mobs in the area and kill them. Focus on this quest as the rod has a long cooldown
+.use 35352 >>Use your Sage's Lightning Rod on Mechanical (but not mechagnome) mobs in the area. Kill them. Focus on this quest as the rod has a long cooldown
 .complete 11896,1 
 step
 .use 35401 >> Kill Mechagnomes. Use The Greatmother's Soulcatcher in your bags their corpses.
@@ -35975,13 +34949,10 @@ step
 >>Talk to Wintergale
 .accept 11628 >>Accept Shrouds of the Scourge
 step
-#completewith next
-.destroy 34960
-step
 .cast 45942 >>Use The Horn of Elemental Fury near the sinkhole to summon Lord Kryxix. Kill him after the short RP.
-.timer 22,Lord Kryxix RP
 .goto BoreanTundra,70.83,36.72
 .complete 11706,2 
+.timer 22,Lord Kryxix RP
 .complete 11706,1 
 .goto BoreanTundra,70.13,35.96
 .use 34968
@@ -36395,15 +35366,15 @@ step
 .goto BoreanTundra,57.17,43.59,20,0
 .goto BoreanTundra,57.33,44.08,15,0
 .goto BoreanTundra,57.05,44.32,15,0
-.goto BoreanTundra,57.03,44.11
+.goto BoreanTundra,57.79,44.04
 .accept 11865 >>Accept Unfit for Death
-.goto BoreanTundra,56.81,44.04
+.goto BoreanTundra,57.79,44.04
 .accept 11869 >>Accept Happy as a Clam
 .goto BoreanTundra,57.33,44.08
 step
 #completewith next
 .goto BoreanTundra,55.9,47.4,0,0
->>Kill the Loot Crazed Poachers in the area. They can be stealthed. Loot them for their Ears.
+>>Kill the Loot Crazed in the area. They can be stealthed. Loot them for their Ears.
 >>This part does not need to be finished here.
 .complete 11866,1 
 step
@@ -36458,13 +35429,14 @@ step
 .use 35228 >> Use the Trap Smasher in your bags to free the Trapped Mammoth Calves
 .complete 11876,1 
 step
+.goto BoreanTundra,56.8,44.0
 >>If you have the debuff that turns you red, wait for it to expire before going into the camp.
 >>Talk to Killinger, Cenius, Lathorius, and Zaza in the camp
 .turnin 11884 >>Turn in Ned, Lord of Rhinos...
 .goto BoreanTundra,57.17,43.59,20,0
 .goto BoreanTundra,57.33,44.08,15,0
 .goto BoreanTundra,57.05,44.32,15,0
-.goto BoreanTundra,57.03,44.11
+.goto BoreanTundra,57.79,44.04
 .turnin 11869 >>Turn in Happy as a Clam
 .accept 11870 >>Accept The Abandoned Reach
 .goto BoreanTundra,57.33,44.08
@@ -36474,7 +35446,7 @@ step
 .goto BoreanTundra,57.05,44.32
 .turnin 11865 >>Turn in Unfit for Death
 .accept 11868 >>Accept The Culler Cometh
-.goto BoreanTundra,56.81,44.04
+.goto BoreanTundra,57.79,44.04
 step
 .goto BoreanTundra,57.0,44.3,0
 .goto BoreanTundra,59.25,30.83
@@ -36500,11 +35472,11 @@ step
 .goto BoreanTundra,57.05,44.32
 >>Return to the D.E.T.H.A. Camp. Talk to Lathorious
 .turnin 11879 >>Turn in Kaw the Mammoth Destroyer
+.accept 11892 >>Accept The Assassination of Harold Lane
 step
 .goto BoreanTundra,57.2,56.5
 >>Kill Karen ontop of the ledge
 .complete 11868,1 
-.isOnQuest 11868
 step
 .goto BoreanTundra,57.80,55.11
 >>Talk to Liandra
@@ -36534,20 +35506,16 @@ step
 >>Return back to the D.E.H.T.A. Camp. Talk to Cenius, Zaza, and Lathorius
 .turnin 11872 >>Turn in The Nefarious Clam Master...
 .goto BoreanTundra,57.33,44.08
-step
-.isQuestComplete 11868
 .turnin 11868 >>Turn in The Culler Cometh
-.goto BoreanTundra,56.81,44.04
-step
-.isQuestTurnedIn 11868
+.goto BoreanTundra,57.79,44.04
 .accept 11892 >>Accept The Assassination of Harold Lane
 .goto BoreanTundra,57.05,44.32
+
 step
 .goto BoreanTundra,49.90,41.50
 .use 35293 >>Kill Harold Lane. This quest can be hard so be sure to use all your cooldowns to kill him as well as the Cenarion Horn. Move away from his traps. Skip this if you can't do it
 .complete 11892,1 
 .unitscan Harold Lane
-.isOnQuest 11892
 step
 .goto BoreanTundra,57.05,44.32
 >>Return to Lathorius
@@ -36574,7 +35542,7 @@ step
 .complete 11612,1 
 step
 #requires AbandonAss
->>Click the small statues on the ground
+>>Click the small altars on the ground in the area
 .complete 11605,2 
 .goto BoreanTundra,52.81,34.02
 .complete 11605,1 
@@ -36709,9 +35677,9 @@ step
 .complete 11576,1 
 step
 #completewith next
-.groundgoto BoreanTundra,40.17,42.08,50 >> Travel back to the land here
+.goto BoreanTundra,40.17,42.08,50 >> Travel back to the land here
 step
->>Return to Amber Ledge. Talk to Garren and Donathan
+>>Return to the Amber Ledge. Talk to Garren and Donathan
 .turnin 11576 >>Turn in Monitoring the Rift: Cleftcliff Anomaly
 .accept 11582 >>Accept Monitoring the Rift: Sundered Chasm
 .goto BoreanTundra,44.98,33.38
@@ -36724,7 +35692,7 @@ step
 .complete 11582,1 
 step
 #completewith next
-.groundgoto BoreanTundra,43.5,33.2,20 >> Travel back to the mainland here
+.goto BoreanTundra,43.5,33.2,20 >> Travel back to the mainland here
 step
 .goto BoreanTundra,43.2,36.6,60,0
 .goto BoreanTundra,41.6,37.4
@@ -36814,7 +35782,7 @@ step
 .complete 11912,1 
 step
 .goto BoreanTundra,32.6,27.8
-.use 35648 >>Kill Coldarra Spellbinders in the area. Loot them for the Scintillating Fragment. Click it in your bags
+>>Kill Coldarra Spellbinders in the area. Loot them for the Scintillating Fragment. Click it in your bags
 .collect 35648,1,11941 
 .accept 11941 >>Accept Puzzling...
 step
@@ -36828,7 +35796,7 @@ step
 .complete 11910,1 
 .complete 11910,2 
 step
-.goto BoreanTundra,28.77,34.88
+.goto BoreanTundra,28.25,35.04
 >>Click the small blue orb inside the building (NOT the floating one)
 .complete 11900,2 
 step
@@ -36836,7 +35804,7 @@ step
 >>Kill Warbringer Goredrak. Loot him for his Energy Core
 .complete 11943,1 
 step
-.goto BoreanTundra,22.37,24.18
+.goto BoreanTundra,22.62,23.42
 >>Click the small blue orb inside the building (NOT the floating one)
 .complete 11900,4 
 step
@@ -36845,7 +35813,7 @@ step
 .complete 11943,2 
 step
 #label Weaver1
-.goto BoreanTundra,31.26,20.20
+.goto BoreanTundra,31.72,20.57
 >>Click the small blue orb inside the building (NOT the floating one)
 .complete 11900,3 
 step
@@ -36893,7 +35861,7 @@ step
 .goto BoreanTundra,24.9,31.2,70,0
 .goto BoreanTundra,25.2,24.2
 >>Go around the upper edges/cliffs of The Nexus. Kill Coldarra Wyrmkins. Loot them for their Axes
-.collect 35586,5,11936,1,-1 
+.collect 35586,5,11936,1 
 step
 .goto BoreanTundra,24.9,31.2,50,0
 .goto BoreanTundra,25.2,24.2
@@ -36933,7 +35901,6 @@ step
 #completewith next
 .cast 46793 >> Speak to Keristrasza again and she will teleport you to Saragosa's Landing. Once you arrive, go to the center of the platform and use the Arcane Power Focus in your bags to summon Saragosa.
 .goto BoreanTundra,21.57,22.55
-.skipgossip 26206,1
 step
 >>Kill Saragosa. Loot her for her corpse
 .complete 11957,1 
@@ -36953,7 +35920,6 @@ step
 .turnin 11914 >>Turn in Keep the Secret Safe
 .goto BoreanTundra,33.49,34.38
 .turnin 11967 >>Turn in Mustering the Reds
-.goto BoreanTundra,33.32,34.49
 .turnin 11936 >>Turn in Hatching a Plan
 .accept 11969 >>Accept Springing the Trap
 .accept 11919 >>Accept Drake Hunt
@@ -36969,7 +35935,6 @@ step
 .turnin 11914 >>Turn in Keep the Secret Safe
 .goto BoreanTundra,33.49,34.38
 .turnin 11967 >>Turn in Mustering the Reds
-.goto BoreanTundra,33.32,34.49
 .turnin 11936 >>Turn in Hatching a Plan
 .goto BoreanTundra,33.32,34.54
 .turnin 11900 >>Turn in Reading the Meters
@@ -37253,7 +36218,6 @@ step
 >>Escort Lurgglbr. Try to kill mobs that he'd otherwise run into so that he doesn't waste time by stopping and attacking
 .complete 11570,1 
 
-.isOnQuest 11570
 step
 .goto BoreanTundra,41.0,15.6,70,0
 .goto BoreanTundra,41.3,19.0,70,0
@@ -37266,7 +36230,6 @@ step
 >>Talk to Brglmurgl
 .turnin 11561 >>Turn in Them!
 step
-#completewith next
 .isQuestTurnedIn 11559
 .goto BoreanTundra,43.04,13.79
 .vendor >>Purchase more Murliver Oils from Ahlurglgr.
@@ -37275,7 +36238,6 @@ step
 .goto BoreanTundra,43.50,13.97
 >>Talk to King Mrgl-Mrgl
 .turnin 11566 >>Turn in Surrender... Not!
-.isQuestComplete 11566
 step
 .isQuestComplete 11570
 .goto BoreanTundra,43.50,13.97
@@ -37574,7 +36536,1852 @@ step
 .accept 12182 >>Accept To Venomspite!
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 5
+#wotlk
+#group Dungeon Cleave 70-80
+<< Horde
+#name 70-80 Horde Dungeon Cleave
+step << !Mage
+#completewith next
+.zone Orgrimmar >> Travel or get Mage teleported to Orgrimmar
+.zoneskip Durotar
+step << !Mage !DK !Druid
+#completewith ALFP
+.goto Orgrimmar,54.10,68.37
+.home >> Set your Hearthstone to Orgrimmar
+step << Mage
+#completewith next
+.zone Undercity >> Teleport to Undercity
+.xp <71,1
+step << Mage
+.goto Undercity,85.1,10.0
+>>If you pre-quested to 71, get your training
+>>Make sure your party can summon you via summoning stone or Warlock summon
+.train 43023 >> Train your class spells
+.xp <71,1
+step << Shaman
+.goto Orgrimmar,38.6,36.0
+>>If you pre-quested to 71, get your training
+>>Make sure your party can summon you via summoning stone or Warlock summon
+.train 58699 >> Train your class spells
+.xp <71,1
+step << Paladin
+.goto Orgrimmar,32.3,35.7
+>>If you pre-quested to 71, get your training
+>>Make sure your party can summon you via summoning stone or Warlock summon
+.train 54428 >> Train your class spells
+.xp <71,1
+step << Warlock
+.goto Orgrimmar,48.0,46.0
+>>If you pre-quested to 71, get your training
+>>Make sure your party can summon you via summoning stone or Warlock summon
+.train 47812 >> Train your class spells
+.xp <71,1
+step << Hunter
+.goto Orgrimmar,66.1,18.5
+>>If you pre-quested to 71, get your training
+>>Make sure your party can summon you via summoning stone or Warlock summon
+.train 49051 >> Train your class spells
+.xp <71,1
+step << Mage
+#completewith next
+.zone Orgrimmar >> Teleport to Orgrimmar
+.zoneskip BoreanTundra
+.zoneskip Durotar
+step
+#completewith Zeppelin
++Welcome to the RXPGuides 70-80 Dungeon Cleave Guide!
+step << Shaman/Priest/Druid/Mage/Paladin
+.goto Orgrimmar,45.43,56.54
+>>Purchase Reagents from Horthus inside the building
+.collect 17030,20 << Shaman 
+.collect 17029,40 << Priest 
+.collect 22148,40 << Druid 
+.collect 22147,40 << Druid 
+.collect 17032,40 << Mage 
+.collect 17020,40 << Mage 
+.collect 21177,100 << Paladin 
+.xp >72,1
+step << Druid
+#completewith next
+.cast 18960 >> Cast Teleport: Moonglade
+.zoneskip Moonglade
+.xp <71,1
+step << Druid
+.goto Moonglade,52.4,40.6
+>>If you pre-quested to 71, get your training
+>>Go to Moonglade. Make sure your party can summon you via summoning stone to The Nexus/Ragefire Chasm or Warlock summon
+.train 48442 >> Train your class spells
+.xp <71,1
+step << Druid/Shaman/Paladin/Hunter/Warlock
+#completewith next
+.hs >> Hearth to Orgrimmar, or get teleported/summoned to Borean Tundra/The Nexus/the Zeppelin to Borean Tundra
+.zoneskip Durotar
+.zoneskip BoreanTundra
+.xp <71,1
+step
+#label Zeppelin
+.goto Durotar,41.6,18.2,30,0
+.goto Durotar,41.26,17.45
+.zone BoreanTundra >>Take the Zeppelin from Durotar to Borean Tundra
+.zoneskip Dragonblight
+.zoneskip ZulDrak
+.zoneskip The Storm Peaks
+.zoneskip Dalaran
+.zoneskip 129 
+.zoneskip 159 
+.zoneskip 157 
+.zoneskip 132 
+.zoneskip 154 
+.zoneskip 138 
+step
+.goto BoreanTundra,41.62,53.98
+>>Talk to the Warsong Recruitment Officer next to the zeppelin
+.accept 11585 >>Accept Hellscream's Vigil
+.xp >72,1
+step
+>> Go to the bottom floor of Warsong Hold. Talk to Garrosh and then Saurfang
+.turnin 11585 >>Turn in Hellscream's Vigil
+.goto BoreanTundra,41.35,53.60
+.accept 11596 >>Accept The Defense of Warsong Hold
+.goto BoreanTundra,41.43,53.67
+.xp >72,1
+step
+.goto BoreanTundra,41.92,54.49
+>>Talk to Williamson
+.vendor 25278 >> Buy a LOT of the new food. You'll be doing dungeons for the next 3 levels until your next break << Warrior/Rogue/DK
+.vendor 25278 >> Buy a LOT of the new food/water. You'll be doing dungeons for 3 levels until your next break << !Warrior !Rogue !DK
+.isOnQuest 11596
+step
+.groundgoto BoreanTundra,40.72,52.54,20,0
+.goto BoreanTundra,40.36,51.39
+>>Take the ramp up, and then the elevator to the top of the building
+.fp Warsong Hold >>Get the Warsong Hold Flight Path
+step << Mage/Priest
+>>Jump down outside, then use Slow Fall before reaching the bottom. You can also use Slow Fall on your party. Talk to Razgor inside the hut << Mage
+>>Jump down outside, then use Levitate before reaching the bottom. You can also use Levitate on your party. Talk to Razgor inside the hut << Priest
+.turnin 11596 >>Turn in The Defense of Warsong Hold
+
+.goto BoreanTundra,43.19,54.98
+.itemcount 17056,1
+step
+>>Take the elevator back down, then head outside. Talk to Razgor inside the hut << !Paladin
+>>Jump down outside, then use Divine Shield to avoid taking fall damage << Paladin
+.turnin 11596 >>Turn in The Defense of Warsong Hold
+
+.goto BoreanTundra,43.19,54.98
+.xp >72,1
+step
+#completewith next
+#label ALFP
+.goto BoreanTundra,45.33,34.62
+>>Travel to Amber Ledge
+.fp Amber Ledge >>Get the Amber Ledge Flight Path
+step
+#completewith next
+.goto BoreanTundra,45.33,34.62
+.fly Coldarra >> Fly to Coldarra
+.zoneskip Dragonblight
+.zoneskip ZulDrak
+.zoneskip The Storm Peaks
+.zoneskip Dalaran
+.zoneskip 129 
+.zoneskip 159 
+.zoneskip 157 
+.zoneskip 132 
+.zoneskip 154 
+.zoneskip 138 
+step
+>>Talk to Berinand inside, then talk to Raelorasz and Serrah outside
+
+.accept 11900 >>Accept Reading the Meters
+.accept 11910 >>Accept Secrets of the Ancients
+.goto BoreanTundra,32.94,34.40
+.accept 11918 >>Accept Basic Training
+.goto BoreanTundra,33.32,34.54
+.accept 13095 >>Accept Have They No Shame?
+.accept 11912 >>Accept Nuts for Berries
+.goto BoreanTundra,33.49,34.38
+.xp >74,1
+step
+.goto BoreanTundra,28.31,28.46
+>>Click on the small orb next to The Nexus meeting stone
+.complete 11900,1 
+.isOnQuest 11900
+step
+#completewith next
+.goto Borean Tundra,27.63,25.50
+.zone 129 >> Enter The Nexus
+step << Druid/Mage/Shaman/Paladin/Warlock/Hunter
+#completewith Nexus
+.goto 129,19.23,52.43
+>>Loot the book on the ground in the Hall of Stasis surrounded by the Frozen Alliance
+.complete 13095,1 
+step << Druid/Mage/Shaman/Paladin/Warlock/Hunter
+#completewith Nexus
+.goto 129,65.19,21.67
+>>Use the Interdimensional Refabricator on the platform behind Anomalus
+.complete 11905,1 
+.isOnQuest 11905
+.use 35479
+step << Druid/Mage/Shaman/Paladin/Warlock/Hunter
+#completewith Nexus
+.goto 129,54.43,55.35,0
+.goto 129,58.06,54.54,0
+.goto 129,64.85,51.62,0
+.goto 129,62.90,64.02,0
+.goto 129,49.80,67.54,0
+>>Kill Crystalline Protectors. Loot them for their Splinters
+.complete 11911,1 
+.isOnQuest 11911
+step << Druid/Mage/Shaman/Paladin/Warlock/Hunter
+#label Nexus
+.xp 71 >> Grind The Nexus to level 71
+>>If you reach your hourly lockout, switch to the Nexus Lockout guide
+
+step << Druid
+#completewith next
+.cast 18960 >> Cast Teleport: Moonglade
+.zoneskip Moonglade
+.xp <71,1
+step << Druid
+.goto Moonglade,52.4,40.6
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 48442 >> Train your class spells
+.xp <71,1
+step << Mage
+#completewith next
+.zone Undercity >> Teleport to Undercity
+.xp <71,1
+step << Mage
+.goto Undercity,85.1,10.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 43023 >> Train your class spells
+.xp <71,1
+step << Shaman/Paladin/Warlock/Hunter
+#completewith next
+.hs >> Hearth to Orgrimmar
+step << Shaman
+.goto Orgrimmar,38.6,36.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 58699 >> Train your class spells
+.xp <71,1
+step << Paladin
+.goto Orgrimmar,32.3,35.7
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 54428 >> Train your class spells
+.xp <71,1
+step << Warlock
+.goto Orgrimmar,48.0,46.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 47812 >> Train your class spells
+.xp <71,1
+step << Hunter
+.goto Orgrimmar,66.1,18.5
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 49051 >> Train your class spells
+.xp <71,1
+step << DK/Mage
+#completewith Nexus2
+.goto 129,19.23,52.43
+>>Loot the book on the ground in the Hall of Stasis surrounded by the Frozen Alliance
+.complete 13095,1 
+step << DK/Mage
+#completewith Nexus2
+.goto 129,65.19,21.67
+>>Use the Interdimensional Refabricator on the platform behind Anomalus
+.complete 11905,1 
+.isOnQuest 11905
+.use 35479
+step << DK/Mage
+#completewith Nexus2
+.goto 129,54.43,55.35,0
+.goto 129,58.06,54.54,0
+.goto 129,64.85,51.62,0
+.goto 129,62.90,64.02,0
+.goto 129,49.80,67.54,0
+>>Kill Crystalline Protectors. Loot them for their Splinters
+.complete 11911,1 
+.isOnQuest 11911
+step << DK/Mage
+#label Nexus2
+.groundgoto Borean Tundra,27.75,28.43,40,0
+.goto Borean Tundra,27.63,25.09
+.xp 72 >> Grind The Nexus to level 72
+>>If you reach your hourly lockout, switch to the Nexus Lockout guide
+
+step << DK
+#completewith next
+.cast 50977 >> Cast Death Gate
+.zoneskip Eastern Plaguelands
+step << DK
+.goto Eastern Plaguelands,80.3,48.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 49940 >> Train your class spells from Amal'Thazad in Acherus
+.xp <72,1
+.xp >78,1
+step << Mage
+#completewith next
+.zone Undercity >> Teleport to Undercity
+.xp <72,1
+step << Mage
+.goto Undercity,85.1,10.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 42930 >> Train your class spells
+.xp <72,1
+step
+#completewith Nexus3
+.goto 129,19.23,52.43
+>>Loot the book on the ground in the Hall of Stasis surrounded by the Frozen Alliance
+.complete 13095,1 
+step
+#completewith Nexus3
+.goto 129,65.19,21.67
+>>Use the Interdimensional Refabricator on the platform behind Anomalus
+.complete 11905,1 
+.isOnQuest 11905
+.use 35479
+step
+#completewith Nexus3
+.goto 129,54.43,55.35,0
+.goto 129,58.06,54.54,0
+.goto 129,64.85,51.62,0
+.goto 129,62.90,64.02,0
+.goto 129,49.80,67.54,0
+>>Kill Crystalline Protectors. Loot them for their Splinters
+.complete 11911,1 
+.isOnQuest 11911
+step
+#label Nexus3
+.groundgoto Borean Tundra,27.75,28.43,40,0
+.goto Borean Tundra,27.63,25.09
+.xp 73 >> Grind The Nexus to level 73
+>>If you reach your hourly lockout, switch to the Nexus Lockout guide
+step << Rogue/Hunter/Warrior/Shaman/Paladin
+#completewith next
+.hs >> Hearth to Orgrimmar
+step << Mage
+#completewith next
+.zone Undercity >> Teleport to Undercity
+.xp <72,1
+step << Mage
+.goto Undercity,85.1,10.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 43019 >> Train your class spells
+.xp <73,1
+step << Rogue
+.goto Orgrimmar,44.0,54.6
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 48667 >> Train your class spells
+.xp <73,1
+step << Hunter/Warrior
+#completewith next
+.goto Orgrimmar,63.6,38.2,30 >> Enter the Valley of Honor
+.xp <73,1
+step << Hunter
+.goto Orgrimmar,66.1,18.5
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 49044 >> Train your class spells
+.xp <73,1
+step << Warrior
+#label HuWaTraining
+.goto Orgrimmar,76.9,32.6,30,0
+.goto Orgrimmar,79.8,31.4
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 47470 >> Train your class spells
+.xp <73,1
+step << Shaman
+.goto Orgrimmar,38.6,36.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 49237 >> Train your class spells
+.xp <73,1
+step << Paladin
+.goto Orgrimmar,32.3,35.7
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 48931 >> Train your class spells
+.xp <73,1
+step
+#completewith Berinand
+.goto BoreanTundra,33.49,34.38,-1
+>>Talk to Serrah
+.turnin 13095 >>Turnin Have They No Shame?
+.isQuestComplete 13095
+step
+#completewith AmberL
+.goto BoreanTundra,32.94,34.40,-1
+>>Talk to Berinand
+.vendor 25314 >> Vendor and Repair
+step
+.goto BoreanTundra,32.94,34.40,-1
+>>Talk to Berinand
+.turnin 11911 >>Turnin Quickening
+.turnin 11905 >>Turnin Postponing the Inevitable
+.isQuestComplete 11911
+.isQuestComplete 11905
+step
+.goto BoreanTundra,32.94,34.40,-1
+>>Talk to Berinand
+.turnin 11911 >>Turnin Quickening
+.isQuestComplete 11911
+step
+#label Berinand
+.goto BoreanTundra,32.94,34.40,-1
+>>Talk to Berinand
+.turnin 11905 >>Turnin Postponing the Inevitable
+.isQuestComplete 11905
+step
+.goto BoreanTundra,33.49,34.38
+>>Talk to Serrah
+.turnin 13095 >>Turnin Have They No Shame?
+.isQuestComplete 13095
+step
+#label AmberL
+#completewith next
+.goto BoreanTundra,33.13,34.45
+.fly Amber Ledge >>Fly to Amber Ledge
+.zoneskip Dragonblight
+.zoneskip ZulDrak
+.zoneskip The Storm Peaks
+.zoneskip Dalaran
+.zoneskip 159 
+.zoneskip 157 
+.zoneskip 132 
+.zoneskip 154 
+.zoneskip 138 
+step
+#completewith next
+.goto BoreanTundra,46.62,32.75
+>>Talk to Fraser inside the tower
+.vendor 27137 >> Buy a LOT of the food. You'll be doing dungeons for the next 2 levels << Warrior/Rogue/DK
+.vendor 27137 >> Buy a LOT of the food/water. You'll be doing dungeons for the next 2 levels << !Warrior !Rogue !DK
+.xp >74,1
+step
+#completewith next
+.goto Dragonblight,12.27,55.25
+.zone Dragonblight >> Travel to Dragonblight
+step
+#completewith next
+.goto Dragonblight,26.15,49.48,20 >> Jump down into The Pit of Narjun
+step
+.goto Dragonblight,26.18,50.79
+>>Talk to Kilix inside the Pit of Narjun
+.accept 13187 >>Accept The Faceless Ones
+.accept 13167 >>Accept Death to the Traitor King
+.accept 13182 >>Accept Don't Forget the Eggs
+.accept 12040 >>Accept An Enemy in Arthas
+.xp >76,1
+step
+#completewith next
+.goto Dragonblight,25.61,51.30
+.zone 159 >>Enter Azjol'Nerub
+step
+>>Clear Azjol'nerub once. Destroy the eggs throughout Azjol'Nerub
+.complete 13182,1 
+step
+.goto 157,62.27,48.55
+>>Clear Azjol'nerub once. Kill Anub'arak. Loot him for his Husk
+.complete 13167,1 
+step
+#completewith KilixT
+.goto 157,89.25,77.99
+.zone Dragonblight >> Exit Azjol'nerub through the back entrance
+step
+.goto Dragonblight,25.68,48.35,30,0
+.goto Dragonblight,26.23,49.33,30,0
+.goto Dragonblight,28.58,49.89,30,0
+.goto Dragonblight,28.58,47.39,30,0
+.goto Dragonblight,25.68,48.35,30,0
+.goto Dragonblight,26.23,49.33,30,0
+.goto Dragonblight,28.58,49.89,30,0
+.goto Dragonblight,28.58,47.39
+>>Kill Anub'ar Underlords inside the Pit of Narjun
+.complete 12040,1 
+step
+#label KilixT
+.goto Dragonblight,26.18,50.79
+>>Talk to Kilix inside the Pit of Narjun
+.turnin 13167 >>Turn in Death to the Traitor King
+.turnin 13182 >>Turn in Don't Forget the Eggs
+.turnin 12040 >>Turn in An Enemy in Arthas
+.accept 12041 >>Accept The Lost Empire
+.xp >76,1
+step
+#completewith next
+.goto Dragonblight,28.61,51.79
+.zone 132 >>Enter Ahn'kahet: The Old Kingdom
+step
+#completewith AhnKahet1
+.goto 132,33.38,49.79,40,0
+.goto 132,27.61,50.24
+>>Kill the Faceless Ones just before Herald Volazj
+.complete 13187,1 
+step
+#completewith AhnKahet1
+.goto 132,23.00,50.81
+>>Kill Herald Volazj
+.complete 13187,2 
+step
+#label AhnKahet1
+.xp 74 >> Grind Ahn'Kahet: The Old Kingdom to level 74
+step << Druid
+#completewith next
+.cast 18960 >> Cast Teleport: Moonglade
+.zoneskip Moonglade
+.xp <73,1
+step << Druid
+.goto Moonglade,52.4,40.6
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 53307 >> Train your class spells
+.xp <74,1
+step << DK
+#completewith next
+.cast 50977 >> Cast Death Gate
+.zoneskip Eastern Plaguelands
+.xp <74,1
+step << DK
+.goto Eastern Plaguelands,80.3,48.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 49929 >> Train your class spells from Amal'Thazad in Acherus
+.xp <74,1
+.xp >80,1
+step << Mage
+#completewith next
+.zone Undercity >> Teleport to Undercity
+.xp <74,1
+step << Mage
+.goto Undercity,85.1,10.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 42939 >>Train your class spells
+.xp <74,1
+step << Shaman/Paladin/Priest/Warlock/Hunter
+#completewith next
+.hs >> Hearth to Orgrimmar << !Priest
+.hs >> Hearth to Orgrimmar. Skip this step if you're Holy or Discipline specced << Priest
+step << Shaman
+.goto Orgrimmar,38.6,36.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 49270 >> Train your class spells
+.xp <74,1
+step << Paladin
+.goto Orgrimmar,32.3,35.7
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 48805 >> Train your class spells
+.xp <74,1
+step << Priest
+.goto Orgrimmar,35.6,87.8
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 48126 >> Train your class spells. Skip this step if you're Holy or Discipline specced
+.xp <74,1
+
+step << Warlock
+.goto Orgrimmar,48.0,46.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 47892 >> Train your class spells
+.xp <74,1
+step << Hunter
+.goto Orgrimmar,66.1,18.5
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 61846 >> Train your class spells
+.xp <74,1
+step
+.goto Dragonblight,26.18,50.79
+>>Talk to Kilix inside the Pit of Narjun
+.turnin 13187 >>Turn in The Faceless Ones
+.isQuestComplete 13187
+
+step
+#completewith AhnKahet2
+.goto 132,33.38,49.79,40,0
+.goto 132,27.61,50.24
+>>Kill the Faceless Ones just before Herald Volazj
+.complete 13187,1 
+step
+#completewith AhnKahet2
+.goto 132,23.00,50.81
+>>Kill Herald Volazj
+.complete 13187,2 
+step
+#label AhnKahet2
+.xp 75 >>Grind Ahn'Kahet: The Old Kingdom to level 75
+step << Druid
+#completewith next
+.cast 18960 >> Cast Teleport: Moonglade
+.zoneskip Moonglade
+.xp <75,1
+step << Druid
+.goto Moonglade,52.4,40.6
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 48440 >> Train your class spells
+.xp <75,1
+step << DK
+#completewith next
+.cast 50977 >> Cast Death Gate
+.zoneskip Eastern Plaguelands
+.xp <75,1
+step << DK
+.goto Eastern Plaguelands,80.3,48.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 49923 >> Train your class spells from Amal'Thazad in Acherus
+.xp <75,1
+.xp >80,1
+step << Mage
+#completewith next
+.zone Undercity >> Teleport to Undercity
+.xp <75,1
+step << Mage
+.goto Undercity,85.1,10.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 42955 >> Train your class spells
+.xp <75,1
+step << Shaman/Paladin/Priest/Hunter/Warrior
+#completewith next
+.hs >> Hearth to Orgrimmar
+step << Shaman
+.goto Orgrimmar,38.6,36.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 49280 >> Train your class spells
+.xp <75,1
+step << Paladin
+.goto Orgrimmar,32.3,35.7
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 48818 >> Train your class spells
+.xp <75,1
+step << Priest
+.goto Orgrimmar,35.6,87.8
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 48124 >> Train your class spells
+.xp <75,1
+step << Hunter
+.goto Orgrimmar,66.1,18.5
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 61005 >> Train your class spells
+.xp <75,1
+step << Warrior
+.goto Orgrimmar,76.9,32.6,30,0
+.goto Orgrimmar,79.8,31.4
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 55694 >> Train your class spells
+.xp <75,1
+step
+.goto Dragonblight,26.18,50.79
+>>Talk to Kilix inside the Pit of Narjun
+.turnin 13187 >>Turn in The Faceless Ones
+.isQuestComplete 13187
+step << skip
+>>Talk the Wanted Poster, then talk to Agmar
+.accept 12091 >>Accept Wanted: Dreadtalon
+.goto Dragonblight,37.67,46.55
+.turnin 12041 >>Turn in The Lost Empire
+.goto Dragonblight,38.16,46.33
+step
+>>Talk to Agmar
+.turnin 12041 >>Turn in The Lost Empire
+.goto Dragonblight,38.16,46.33
+step
+#completewith end
+#label AgmarFP
+.goto Dragonblight,37.51,45.77
+.fp Agmar's Hammer >> Get the Agmar's Hammer flight path
+step << skip
+.goto Dragonblight,45.84,44.52
+>>Kill Dreadtalon atop the mountain
+.complete 12091,1 
+step << skip
+>>Go inside and talk to Gort
+.turnin 12091 >>Turn in Wanted: Dreadtalon
+.goto Dragonblight,35.81,48.39
+.isQuestComplete 12091
+step
+#completewith next
+.goto Zul'Drak,18.29,84.66
+.zone Zul'Drak >> Travel to Zul'Drak
+step
+>>Travel to Light's Breach. Talk to Moky, Lantinga, Rageclaw, and the Wanted Poster. Skip these quests if you wish, but it's recommended you complete them
+.accept 12859 >>Accept This Just In: Fire Still Hot!
+.goto ZulDrak,32.02,75.60
+.accept 12902 >>Accept In Search Of Answers
+.goto ZulDrak,32.15,75.74
+.accept 12861 >>Accept Trolls Is Gone Crazy!
+.goto ZulDrak,32.17,75.64
+.accept 12857 >>Accept Wanted: Ragemane's Flipper
+.goto ZulDrak,32.26,75.68
+.xp >76,1
+step
+#completewith Ragemane
+.goto ZulDrak,34.8,85.1,0
+.goto ZulDrak,34.7,80.6,0
+.use 41131 >>Spam use the Rageclaw Fire Extinguisher in your bags when next to huts that are on fire.
+.complete 12859,1 
+.isOnQuest 12859
+step
+#completewith Fires
+.goto ZulDrak,34.8,85.1,0
+.goto ZulDrak,34.7,80.6,0
+>>Kill Undead Trolls in the area. Loot them for their Lock Openers
+.use 41161 >>Use them on Captured Rageclaws to free them
+.collect 41161,8,12861,1,-1
+.complete 12861,1 
+.isOnQuest 12861
+step
+.goto ZulDrak,34.94,83.90
+>>Click the floating scroll
+.turnin 12902 >>Turn in In Search Of Answers
+.accept 12883 >>Accept Orders From Drakuru
+.isOnQuest 12902
+step
+.goto ZulDrak,34.94,83.90
+>>Click the floating scroll
+.accept 12883 >>Accept Orders From Drakuru
+.isQuestTurnedIn 12902
+step
+#label Ragemane
+.goto ZulDrak,38.29,84.93
+>>Go out into the water. Kill Ragemane. Loot him for his Flipper
+.complete 12857,1 
+.isOnQuest 12857
+step
+#label Fires
+.goto ZulDrak,34.8,85.1,80,0
+.goto ZulDrak,34.7,80.6
+.use 41131 >>Use the Rageclaw Fire Extinguisher when next to a hut that's on fire
+.complete 12859,1 
+.isOnQuest 12859
+step
+.goto ZulDrak,34.8,85.1,80,0
+.goto ZulDrak,34.7,80.6
+>>Kill Undead Trolls in the area. Loot them for their Lock Openers (that go into your bag)
+.use 41161 >>Use them on Captured Rageclaws to free them
+.collect 41161,8,12861,1,-1
+.complete 12861,1 
+.isOnQuest 12861
+step
+#completewith end
+#label Langtina1
+>>Talk to Lantinga
+.turnin 12883 >>Turn in Orders From Drakuru
+.accept 12884 >>Accept The Ebon Watch
+.accept 12894 >>Accept Crusader Forward Camp
+.goto ZulDrak,32.15,75.74
+.isQuestComplete 12883
+
+step
+#completewith end
+#requires Langtina1
+#label Langtina2
+>>Talk to Lantinga
+.accept 12884 >>Accept The Ebon Watch
+.accept 12894 >>Accept Crusader Forward Camp
+.goto ZulDrak,32.15,75.74
+.isQuestTurnedIn 12883
+step
+#completewith end
+#label Rageclaw1
+>>Talk to Rageclaw
+.turnin 12857 >>Turn in Wanted: Ragemane's Flipper
+.turnin 12861 >>Turn in Trolls Is Gone Crazy!
+.goto ZulDrak,32.2,75.7
+.isQuestComplete 12857
+.isQuestComplete 12861
+step
+#completewith end
+#requires Rageclaw1
+#label Rageclaw2
+>>Talk to Rageclaw
+.turnin 12857 >>Turn in Wanted: Ragemane's Flipper
+.goto ZulDrak,32.17,75.64
+.isQuestComplete 12857
+step
+#completewith end
+#requires Rageclaw2
+#label Rageclaw3
+>>Talk to Rageclaw
+.turnin 12861 >>Turn in Trolls Is Gone Crazy!
+.goto ZulDrak,32.17,75.64
+.isQuestComplete 12861
+step
+#completewith end
+#label Moky
+>>Talk to Moky
+.turnin 12859 >>Turn in This Just In: Fire Still Hot!
+.goto ZulDrak,32.02,75.60
+.isQuestComplete 12859
+step
+#requires Langtina2
+step
+#requires Rageclaw3
+step
+#requires Moky
+.goto ZulDrak,32.18,74.39
+>>Talk to Danica
+.fp Light's Breach >>Get the Light's Breach Flight Path
+step
+>>Ride to the Crusader Forward Camp. Talk to Mackeller
+.turnin 12894 >>Turn in Crusader Forward Camp
+.accept 12903 >>Accept That's What Friends Are For...
+.goto ZulDrak,25.28,63.96
+
+
+.isQuestTurnedIn 12883
+step
+.goto ZulDrak,25.05,51.61
+>>Travel close to Crusader Dargath until the objective completes
+.complete 12903,1 
+.isOnQuest 12903
+step
+.goto ZulDrak,19.78,56.35
+>>Talk to Gymer in the giant cage. Try to avoid killing the Vargul in the area
+.accept 12912 >>Accept A Great Storm Approaches
+.isOnQuest 12903
+step
+.goto ZulDrak,17.64,57.55
+>>Talk to Gerk in the plague tank. Try to avoid killing the Vargul in the area
+.complete 12903,2 
+.accept 12904 >>Accept Light Won't Grant Me Vengeance
+.isOnQuest 12903
+step
+#completewith next
+.goto ZulDrak,19.8,56.9,0
+.goto ZulDrak,23.2,54.7,0
+.goto ZulDrak,21.4,51.3,0
+.goto ZulDrak,15.0,61.3,0
+>>Kill any Vargul humanoid in the area
+.complete 12904,1 
+.isOnQuest 12904
+step << skip
+#completewith next
+.goto ZulDrak,19.5,58.9,0
+.goto ZulDrak,15.3,62.2,0
+.goto ZulDrak,13.3,59.9,0
+.goto ZulDrak,18.7,54.5,0
+>>Collect pieces of Scrap Metal scattered throughout the area
+.complete 12901,1 
+step
+.goto ZulDrak,15.67,59.41
+>>Travel close to Burr until the objective completes
+.complete 12903,3 
+.isOnQuest 12903
+step << skip
+#label Metal
+.goto ZulDrak,19.1,61.8,70,0
+.goto ZulDrak,15.3,62.2,70,0
+.goto ZulDrak,13.3,59.9,70,0
+.goto ZulDrak,18.7,54.5
+>>Collect pieces of Scrap Metal scattered throughout the area
+.complete 12901,1 
+step
+.goto ZulDrak,19.8,56.9,70,0
+.goto ZulDrak,23.2,54.7,70,0
+.goto ZulDrak,21.4,51.3,70,0
+.goto ZulDrak,15.0,61.3
+>>Kill any Vargul humanoid in the area
+.complete 12904,1 
+.isOnQuest 12904
+step
+.goto ZulDrak,17.64,57.55
+>>Talk to Gerk
+.turnin 12904 >>Turn in Light Won't Grant Me Vengeance
+.isQuestComplete 12904
+step
+>>Return to the Crusader Forward Camp. Talk to Reed and MacKellar
+.turnin 12912 >>Turn in A Great Storm Approaches
+
+
+
+.turnin 12903 >>Turn in That's What Friends Are For...
+.goto ZulDrak,25.28,63.96
+.isQuestComplete 12903
+.isOnQuest 12912
+step
+>>Return to the Crusader Forward Camp. Talk to MacKellar
+
+
+
+.turnin 12903 >>Turn in That's What Friends Are For...
+.goto ZulDrak,25.28,63.96
+.isQuestComplete 12903
+step
+>>Return to the Crusader Forward Camp. Talk to Reed
+.turnin 12912 >>Turn in A Great Storm Approaches
+.goto ZulDrak,25.22,63.88
+
+
+.isOnQuest 12912
+step
+.goto ZulDrak,39.43,66.96
+>>Travel to The Argent Stand. Talk to Falstaav
+
+.accept 12503 >>Accept Defend the Stand
+
+.xp >78,1
+step
+.goto ZulDrak,40.53,65.61
+>>If you think you'll have at least 10 Drakkari Offerings amongst yourselves, trade them all to someone and then accept this quest for one person so they can turn it in. This gives them 1 hour of Blessing of Might (Attack Power)
+>>Talk to Ubungo
+.accept 12565 >>Accept The Blessing of Zim'Abwa
+.xp >78,1
+step << skip
+#completewith next
+.goto ZulDrak,36.6,67.7,0
+.use 39615 >>Use the Crusader Parachute in your bags on an Argent Crusader or Shieldman
+.complete 12740,1 
+step
+.goto ZulDrak,35.8,66.6
+>>Kill undead mobs in the area
+.complete 12503,1 
+.isOnQuest 12503
+step << skip
+.goto ZulDrak,36.6,67.7
+.use 39615 >>Use the Crusader Parachute in your bags on an Argent Crusader or Shieldman
+.complete 12740,1 
+step << skip
+.goto ZulDrak,35.8,66.6
+>>Kill undead mobs in the area. Loot them for Drakkari Offerings
+.collect 38551,10 
+step
+.goto ZulDrak,36.70,72.72
+>>Click the statue
+.turnin 12565 >>Turn in The Blessing of Zim'Abwa
+.isQuestComplete 12565
+step
+.goto ZulDrak,39.43,66.96
+>>Talk to Falstaav
+
+.turnin 12503 >>Turn in Defend the Stand
+
+.isQuestComplete 12503
+step
+#completewith next
+.goto ZulDrak,40.83,66.25
+>>Talk to Marissa
+.vendor 28791 >>Buy a LOT of the new food. You'll be doing dungeons for the next 2 levels until your next break << Warrior/Rogue/DK
+.vendor 28791 >>Buy a LOT of the new food/water. You'll be doing dungeons for the next 2 levels until your next break << !Warrior !Rogue !DK
+.xp >78,1
+step
+#completewith next
+.goto ZulDrak,41.09,65.15
+>>Talk to Aidan
+.vendor 28800 >>Vendor and Repair
+.xp >78,1
+step
+.goto ZulDrak,41.55,64.43
+.fp The Argent Stand >>Get the The Argent Stand Flight Path
+step
+>>Complete the Amphitheater of Anguish Questline. There are 6 elite quests that give a LOT of fast xp and a weapon that'll last you to 80. Only accept this when your party is ready and on the same quest progression as you. (Auto-accept is disabled for this questline)
+.goto ZulDrak,46.3,57.9,50,0
+.goto ZulDrak,48.43,56.36
+.accept 12932,0 >>Accept The Amphitheater of Anguish: Yggdras!
+.xp >78,1
+step
+.goto ZulDrak,47.83,56.83
+>>Kill Yggdras in the Amphitheater of Anguish
+.complete 12932,1 
+.isOnQuest 12932
+step
+.goto ZulDrak,48.47,56.41
+>>Talk to Wodin
+.turnin 12932 >>Turn in The Amphitheater of Anguish: Yggdras!
+.isQuestComplete 12932
+step
+.goto ZulDrak,48.43,56.36
+>>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
+.accept 12933,0 >>Accept The Amphitheater of Anguish: Magnataur!
+.isQuestTurnedIn 12932
+step
+.goto ZulDrak,47.83,56.83
+>>Kill Stinkbeard in the Amphitheater of Anguish
+.complete 12933,1 
+.isQuestTurnedIn 12932
+step
+.goto ZulDrak,48.47,56.41
+>>Talk to Wodin
+.turnin 12933 >>Turn in The Amphitheater of Anguish: Magnataur!
+.isQuestTurnedIn 12932
+step
+.goto ZulDrak,48.43,56.36
+>>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
+.accept 12934,0 >>Accept The Amphitheater of Anguish: From Beyond!
+.isQuestTurnedIn 12932
+step
+.goto ZulDrak,47.83,56.83
+>>Kill the Elemental Lord in the Amphitheater of Anguish
+.complete 12934,1 
+.isQuestTurnedIn 12932
+step
+.goto ZulDrak,48.47,56.41
+>>Talk to Wodin
+.turnin 12934 >>Turn in The Amphitheater of Anguish: From Beyond!
+.isQuestTurnedIn 12932
+step
+.goto ZulDrak,48.43,56.36
+>>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
+.accept 12935,0 >>Accept The Amphitheater of Anguish: Tuskarrmageddon!
+.isQuestTurnedIn 12932
+step
+.goto ZulDrak,47.83,56.83
+>>Kill Orinoko in the Amphitheater of Anguish
+.complete 12935,1 
+.isQuestTurnedIn 12932
+step
+.goto ZulDrak,48.47,56.41
+>>Talk to Wodin
+.turnin 12935 >>Turn in The Amphitheater of Anguish: Tuskarrmageddon!
+.isQuestTurnedIn 12932
+step
+.goto ZulDrak,48.43,56.36
+>>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
+.accept 12936,0 >>Accept The Amphitheater of Anguish: Korrak the Bloodrager!
+.isQuestTurnedIn 12932
+step
+.goto ZulDrak,47.83,56.83
+>>Kill Korrak in the Amphitheater of Anguish
+.complete 12936,1 
+.isQuestTurnedIn 12932
+step
+.goto ZulDrak,48.47,56.41
+>>Talk to Wodin
+.turnin 12936 >>Turn in The Amphitheater of Anguish: Korrak the Bloodrager!
+.isQuestTurnedIn 12932
+step
+.goto ZulDrak,48.43,56.36
+>>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
+.accept 12948,0 >>Accept The Champion of Anguish
+.isQuestTurnedIn 12932
+step
+.goto ZulDrak,47.83,56.83
+>>Kill Vladof in the Amphitheater of Anguish
+.complete 12948,1 
+.isQuestTurnedIn 12932
+step
+.goto ZulDrak,48.47,56.41
+>>Talk to Wodin
+.turnin 12948 >>Turn in The Champion of Anguish
+.isQuestTurnedIn 12932
+step
+.groundgoto ZulDrak,51.20,54.32,60,0
+>>Take the stairs behind you up toward Zim'Torga. Talk to To'kini
+.accept 13099 >>Accept Just Checkin'
+.goto ZulDrak,59.98,57.93
+.xp >78,1
+step
+.groundgoto ZulDrak,65.47,44.23,60,0
+.goto Zul'Drak,70.06,20.92
+>>Talk to Bah'kini
+.turnin 13099 >> Turn in Just Checkin'
+.accept 13098 >> Accept For Posterity
+.accept 13111 >> Accept One of a Kind
+.xp >78,1
+step
+#completewith next
+.goto Zul'Drak,76.02,20.79
+.zone 154 >> Enter Gundrak
+step
+#completewith Gundrak1
+.goto 154,56.80,41.61
+.goto 154,52.28,68.79
+.goto 154,48.64,78.52
+.goto 154,49.42,81.91
+.goto 154,48.27,71.79
+.goto 154,44.95,67.51
+.goto 154,47.97,63.31
+.goto 154,46.23,52.77
+.goto 154,41.46,72.29
+.goto 154,30.61,76.64
+.goto 154,31.80,69.53
+.goto 154,32.28,65.89
+.goto 154,33.63,58.70
+.goto 154,36.22,58.40
+.goto 154,36.24,56.40
+.goto 154,32.53,56.32
+.goto 154,31.81,49.55
+.goto 154,31.77,45.85
+.goto 154,40.21,51.56
+.goto 154,39.94,47.99
+.goto 154,38.92,47.34
+.goto 154,43.93,31.06
+.goto 154,41.51,25.48
+.goto 154,39.40,21.64
+.goto 154,40.03,16.82
+.goto 154,46.31,22.51
+.goto 154,49.21,30.61
+.goto 154,49.74,27.77
+.goto 154,53.08,17.08
+>>Loot the Drakkari History Tablets found throughout Gundrak
+.complete 13098,1 
+step
+#completewith Gundrak1
+.goto 154,46.60,65.71
+>>Kill the Drakkari Colossus. Loot it for its Fragment
+.complete 13111,1 
+step << DK/Mage/Shaman/Hunter/Rogue
+#label Gundrak1
+.xp 76 >>Grind Gundrak to level 76
+>>If you reach your hourly lockout, switch to the Gundrak Lockout guide
+
+step << DK
+#completewith next
+.cast 50977 >> Cast Death Gate
+.zoneskip Eastern Plaguelands
+.xp <76,1
+step << DK
+.goto Eastern Plaguelands,80.3,48.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 49894 >> Train your class spells from Amal'Thazad in Acherus
+.xp <76,1
+.xp >80,1
+step << Mage
+#completewith next
+.zone Undercity >> Teleport to Undercity
+.xp <76,1
+step << Mage
+.goto Undercity,85.1,10.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 42920 >> Train your class spells
+.xp <76,1
+step << Shaman/Hunter/Rogue
+#completewith next
+.hs >> Hearth to Orgrimmar
+step << Shaman
+.goto Orgrimmar,40.5,36.9,25,0
+.goto Orgrimmar,38.6,36.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 58803 >> Train your class spells
+.xp <76,1
+step << Hunter
+.goto Orgrimmar,63.6,38.2,30,0
+.goto Orgrimmar,66.1,18.5
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 53338 >> Train your class spells
+.xp <76,1
+step << Rogue
+.goto Orgrimmar,40.4,54.5,30,0
+.goto Orgrimmar,44.0,54.6
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 48637 >> Train your class spells
+.xp <76,1
+step
+#completewith Gundrak2
+.goto 154,56.80,41.61
+.goto 154,52.28,68.79
+.goto 154,48.64,78.52
+.goto 154,49.42,81.91
+.goto 154,48.27,71.79
+.goto 154,44.95,67.51
+.goto 154,47.97,63.31
+.goto 154,46.23,52.77
+.goto 154,41.46,72.29
+.goto 154,30.61,76.64
+.goto 154,31.80,69.53
+.goto 154,32.28,65.89
+.goto 154,33.63,58.70
+.goto 154,36.22,58.40
+.goto 154,36.24,56.40
+.goto 154,32.53,56.32
+.goto 154,31.81,49.55
+.goto 154,31.77,45.85
+.goto 154,40.21,51.56
+.goto 154,39.94,47.99
+.goto 154,38.92,47.34
+.goto 154,43.93,31.06
+.goto 154,41.51,25.48
+.goto 154,39.40,21.64
+.goto 154,40.03,16.82
+.goto 154,46.31,22.51
+.goto 154,49.21,30.61
+.goto 154,49.74,27.77
+.goto 154,53.08,17.08
+>>Loot the Drakkari History Tablets found throughout Gundrak
+.complete 13098,1 
+step
+#completewith Gundrak2
+.goto 154,46.60,65.71
+>>Kill the Drakkari Colossus. Loot it for its Fragment
+.complete 13111,1 
+step
+#label Gundrak2
+.xp 77 >>Grind Gundrak to level 77
+>>If you reach your hourly lockout, switch to the Gundrak Lockout guide
+step << Warlock
+#completewith next
+.hs >> Hearth to Orgrimmar
+step << Warlock
+.goto Orgrimmar,40.4,54.5,30,0
+.goto Orgrimmar,48.0,46.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 47813 >> Train your class spells
+.xp <77,1
+step
+.goto Zul'Drak,70.06,20.92
+>>Exit Gundrak. Talk to Bah'kini
+.turnin 13098 >> Turn in For Posterity
+.turnin 13111 >> Turn in One of a Kind
+.isQuestComplete 13098
+.isQuestComplete 13111
+step
+.goto Zul'Drak,70.06,20.92
+>>Exit Gundrak. Talk to Bah'kini
+.turnin 13098 >> Turn in For Posterity
+.isQuestComplete 13098
+step
+.goto Zul'Drak,70.06,20.92
+>>Exit Gundrak. Talk to Bah'kini
+.turnin 13098 >> Turn in For Posterity
+.isQuestComplete 13098
+step
+#completewith next
+.goto ZulDrak,70.47,23.30
+.fp Dubra'Jin >> Get the Dubra'Jin flight path
+step
+#completewith next
+.goto ZulDrak,70.47,23.30
+.fly The Argent Stand >> Fly to The Argent Stand
+step
+.goto ZulDrak,40.83,66.25
+>>Talk to Marissa
+.vendor 25245 >>Buy a LOT of the food. You'll be doing dungeons for the last 3 levels << Warrior/Rogue/DK
+.vendor 28791 >>Buy a LOT of the food/water. You'll be doing dungeons for the last 3 levels << !Warrior !Rogue !DK
+.xp >78,1
+step
+.goto ZulDrak,41.09,65.15
+>>Talk to Aidan
+.vendor 28800 >>Vendor and Repair
+.xp >78,1
+step
+#completewith next
+.goto ZulDrak,40.63,66.90
+>>Talk to Teronus
+.accept 12796 >>Accept The Magical Kingdom of Dalaran
+.zoneskip Orgrimmar
+.zoneskip Dalaran
+.xp >78,1
+step
+.goto ZulDrak,40.63,66.90
+.zone Dalaran >>Ask Teronus to be teleported to Dalaran
+.skipgossip
+.xp >78,1
+step
+.abandon 12796 >> Abandon The Magical Kingdom of Dalaran. DO NOT TURN THIS IN
+step << Mage
+.goto Dalaran,56.3,46.7
+.trainer >>Go inside the building. Train your Dalaran Portals
+step << Mage
+.goto Dalaran,55.0,46.2
+.train 42985 >> Train your class spells
+.xp <77,1
+step
+.goto Dalaran,69.81,45.45
+.train 54197 >> Train Cold Weather Flying from Hira Snowdawn
+step << skip
+.goto The Storm Peaks,65.3,60.2
+.accept 13109 >>Accept Diametrically Opposed
+.accept 13108 >>Accept Whatever it Takes
+step
+#completewith next
+.goto The Storm Peaks,45.56,21.10
+.zone 138 >>Enter the Halls of Lightning
+step << Warrior/Druid/DK/Mage
+.xp 78 >>Grind the Halls of Lightning to level 78
+step << Druid
+#completewith next
+.cast 18960 >> Cast Teleport: Moonglade
+.zoneskip Moonglade
+.xp <78,1
+step << Druid
+.goto Moonglade,52.4,40.6
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 48465 >> Train your class spells
+.xp <78,1
+step << DK
+#completewith next
+.cast 50977 >> Cast Death Gate
+.zoneskip Eastern Plaguelands
+.xp <78,1
+step << DK
+.goto Eastern Plaguelands,80.3,48.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 49941 >> Train your class spells from Amal'Thazad in Acherus. Runeforge your weapon downstairs if needed
+.xp <78,1
+step << Mage
+#completewith next
+.zone Dalaran >> Teleport to Dalaran
+.xp <78,1
+step << Mage
+.goto Dalaran,55.0,46.2
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 42914 >> Train your class spells
+.xp <78,1
+step << Warrior
+#completewith next
+.hs >> Hearth to Orgrimmar
+step << Warrior
+.goto Orgrimmar,63.6,38.2,30,0
+.goto Orgrimmar,76.9,32.6,20,0
+.goto Orgrimmar,79.8,31.4
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 47436 >> Train your class spells
+.xp <78,1
+step << Mage/Druid/DK
+.xp 79 >>Grind the Halls of Lightning to level 79
+step << Mage
+#completewith next
+.zone Dalaran >> Teleport to Dalaran
+.xp <79,1
+step << Mage
+.goto Dalaran,55.0,46.2
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 43046 >> Train your class spells
+.xp <79,1
+step << Druid
+#completewith next
+.cast 18960 >> Cast Teleport: Moonglade
+.zoneskip Moonglade
+.xp <79,1
+step << Druid
+.goto Moonglade,52.4,40.6
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 48378 >> Train your class spells
+.xp <79,1
+step << DK
+#completewith next
+.cast 50977 >> Cast Death Gate
+.zoneskip Eastern Plaguelands
+.xp <79,1
+step << DK
+#label DKTrain1
+.goto Eastern Plaguelands,80.3,48.0
+>>Make sure your party can summon you back via the summoning stone or Warlock summon
+.train 55271 >> Train your class spells from Amal'Thazad in Acherus
+.xp <79,1
+step
+.xp 80 >>Grind the Halls of Lightning to level 80
+step << skip
+.goto The Storm Peaks,65.3,60.2
+.turnin 13109 >>Turn in Diametrically Opposed
+.turnin 13108 >>Turn in Whatever it Takes
+>>Ding Level 80 - Congratulations!
+step
++Congratulations on finishing the RestedXP 70-80 Dungeon Cleave guide! Thank you for using RestedXP.
+]])
+RXPGuides.RegisterGuide([[
+#version 5
+#wotlk
+#group Dungeon Cleave 70-80
+<< Horde
+#name 70-73 Nexus Lockout - Coldarra
+#next 70-80 Horde Dungeon Cleave
+step
+#completewith end
++Whenever your lockouts expire while using this guide, switch back to the main Dungeon Cleave guide
+step
+#completewith Weaver1
+>>As you quest through Coldarra:
+>>-Kill all the Coldarra Spellweavers that you see
+>>-Look for Frostberry Bushes on the ground. Skip the Bushes if you wish
+.complete 11918,1 
+.complete 11912,1 
+step
+.goto BoreanTundra,32.6,27.8
+>>Kill Coldarra Spellbinders in the area. Loot them for the Scintillating Fragment. Click it in your bags
+.collect 35648,1,11941 
+.accept 11941 >>Accept Puzzling...
+step
+>>Talk to Serrah, Raelorasz, and Berinand
+.turnin 13095 >>Turnin Have They No Shame?
+.goto BoreanTundra,33.49,34.38,-1
+.turnin 11941 >>Turn in Puzzling...
+.accept 11943 >>Accept The Cell
+.goto BoreanTundra,33.32,34.54,-1
+.turnin 11905 >>Turnin Postponing the Inevitable
+.goto BoreanTundra,32.94,34.40,-1
+.isQuestComplete 13095
+.isQuestComplete 11905
+step
+>>Talk to Serrah and Raelorasz
+.turnin 13095 >>Turnin Have They No Shame?
+.goto BoreanTundra,33.49,34.38,-1
+.turnin 11941 >>Turn in Puzzling...
+.accept 11943 >>Accept The Cell
+.goto BoreanTundra,33.32,34.54,-1
+.isQuestComplete 13095
+step
+>>Talk to Raelorasz and Berinand
+.turnin 11941 >>Turn in Puzzling...
+.accept 11943 >>Accept The Cell
+.goto BoreanTundra,33.32,34.54,-1
+.turnin 11905 >>Turnin Postponing the Inevitable
+.goto BoreanTundra,32.94,34.40,-1
+.isQuestComplete 11905
+step << skip
+.goto BoreanTundra,32.94,34.40,-1
+>>Talk to Berinand
+.turnin 11905 >>Turnin Postponing the Inevitable
+.turnin 11911 >>Turnin Quickening
+.isQuestComplete 11905
+.isQuestComplete 11911
+step
+>>Talk to Raelorasz
+.turnin 11941 >>Turn in Puzzling...
+.accept 11943 >>Accept The Cell
+.goto BoreanTundra,33.32,34.54
+.isQuestComplete 11941
+step
+#label Puzzle
+>>Talk to Raelorasz
+.accept 11943 >>Accept The Cell
+.goto BoreanTundra,33.32,34.54
+.isQuestTurnedIn 11941
+step
+#completewith end1
+#level 73
++Finish up quests you've nearly completed/think you can complete, then abandon every Coldarra/Nexus related quest that is NOT complete
+step
+#completewith splinters
+>>Look for Glacial Ancients and Magic-Bound Ancients all around Coldarra. Loot them for their Splinters
+.complete 11910,1 
+.complete 11910,2 
+.isOnQuest 11910
+step
+.goto BoreanTundra,28.31,28.46
+>>Click on the small orb next to The Nexus meeting stone
+.complete 11900,1 
+.isOnQuest 11900
+step
+.goto BoreanTundra,28.25,35.04
+>>Click the small blue orb inside the building (NOT the floating one)
+.complete 11900,2 
+.isOnQuest 11900
+step
+.goto BoreanTundra,24.14,29.60
+>>Kill Warbringer Goredrak. Loot him for his Energy Core
+.complete 11943,1 
+.isOnQuest 11943
+.unitscan Warbringer Goredrak
+step
+.goto BoreanTundra,22.62,23.42
+>>Click the small blue orb inside the building (NOT the floating one)
+.complete 11900,4 
+.isOnQuest 11900
+step
+.goto BoreanTundra,27.32,20.41
+>>Kill General Cerulean. Loot him for his Prison Casing
+.complete 11943,2 
+.isOnQuest 11943
+.unitscan General Cerulean
+step
+#label Weaver1
+.goto BoreanTundra,31.72,20.57
+>>Click the small blue orb inside the building (NOT the floating one)
+.complete 11900,3 
+.isOnQuest 11900
+step
+#sticky
+#label berries2
+.goto BoreanTundra,25.5,35.6,70,0
+.goto BoreanTundra,25.0,30.6,70,0
+.goto BoreanTundra,28.0,33.5,70,0
+.goto BoreanTundra,32.6,28.2,70,0
+.goto BoreanTundra,30.1,23.4
+>>Kill all the Coldarra Spellweavers that you see
+.complete 11918,1 
+.isOnQuest 11918
+step
+.goto BoreanTundra,21.5,26.9,70,0
+.goto BoreanTundra,24.4,35.2,70,0
+.goto BoreanTundra,34.3,31.2,70,0
+.goto BoreanTundra,33.7,23.1
+>>Loot the Frostberry Bushes throughout Coldarra. Skip this if you wish
+.complete 11912,1 
+.isOnQuest 11912
+step
+#requires berries2
+step
+#completewith end
+#label Serrah1
+>>Talk to Serrah
+.turnin 11912 >>Turn in Nuts for Berries
+.turnin 13095 >>Turnin Have They No Shame?
+.accept 11914 >>Accept Keep the Secret Safe
+.goto BoreanTundra,33.49,34.38,-1
+.isQuestComplete 11912
+.isQuestComplete 13095
+step
+#completewith end
+#requires Serrah1
+#label Serrah2
+>>Talk to Serrah
+.turnin 11912 >>Turn in Nuts for Berries
+.accept 11914 >>Accept Keep the Secret Safe
+.goto BoreanTundra,33.49,34.38,-1
+.isQuestComplete 11912
+step
+#completewith end
+#requires Serrah2
+#label Serrah3
+>>Talk to Serrah
+.accept 11914 >>Accept Keep the Secret Safe
+.goto BoreanTundra,33.49,34.38,-1
+.isQuestTurnedIn 11912
+step
+#completewith end
+#requires Serrah3
+#label Serrah4
+>>Talk to Serrah
+.turnin 13095 >>Turnin Have They No Shame?
+.goto BoreanTundra,33.49,34.38,-1
+.isQuestComplete 13095
+step
+#completewith end
+#label Raelorasz1
+>>Talk to Raelorasz
+.turnin 11918 >>Turn in Basic Training
+.accept 11936 >>Accept Hatching a Plan
+.turnin 11943 >>Turn in The Cell
+.goto BoreanTundra,33.32,34.54,-1
+.isQuestComplete 11918
+.isQuestComplete 11943
+step
+#completewith end
+#requires Raelorasz1
+#label Raelorasz2
+>>Talk to Raelorasz
+.turnin 11918 >>Turn in Basic Training
+.accept 11936 >>Accept Hatching a Plan
+.goto BoreanTundra,33.32,34.54,-1
+.isQuestComplete 11918
+step
+#completewith end
+#requires Raelorasz2
+#label Raelorasz3
+>>Talk to Raelorasz
+.accept 11936 >>Accept Hatching a Plan
+.goto BoreanTundra,33.32,34.54,-1
+.isQuestTurnedIn 11918
+step
+#completewith end
+#requires Raelorasz3
+#label Raelorasz4
+>>Talk to Raelorasz
+.turnin 11943 >>Turn in The Cell
+.goto BoreanTundra,33.32,34.54,-1
+.isQuestComplete 11943
+step
+>>Talk to Berinand
+.turnin 11910 >>Turn in Secrets of the Ancients
+.turnin 11900 >>Turnin Reading the Meters
+.accept 11905 >>Accept Postponing the Inevitable
+.accept 11911 >>Accept Quickening
+.goto BoreanTundra,32.94,34.40,-1
+.isQuestComplete 11910
+step
+>>Talk to Berinand
+.turnin 11910 >>Turn in Secrets of the Ancients
+.turnin 11905 >>Turnin Postponing the Inevitable
+.accept 11911 >>Accept Quickening
+.goto BoreanTundra,32.94,34.40,-1
+.isQuestComplete 11910
+.isQuestComplete 11905
+step
+>>Talk to Berinand
+.turnin 11905 >>Turnin Postponing the Inevitable
+.goto BoreanTundra,32.94,34.40,-1
+.isQuestComplete 11905
+step
+>>Talk to Berinand
+.turnin 11910 >>Turn in Secrets of the Ancients
+.accept 11911 >>Accept Quickening
+.goto BoreanTundra,32.94,34.40,-1
+.isQuestComplete 11910
+step
+>>Talk to Berinand
+.accept 11911 >>Accept Quickening
+.goto BoreanTundra,32.94,34.40,-1
+.isQuestTurnedIn 11911
+step
+>>Talk to Berinand
+.turnin 11900 >>Turnin Reading the Meters
+.accept 11905 >>Accept Postponing the Inevitable
+.goto BoreanTundra,32.94,34.40,-1
+.isQuestComplete 11900
+step
+>>Talk to Berinand
+.accept 11905 >>Accept Postponing the Inevitable
+.goto BoreanTundra,32.94,34.40,-1
+.isQuestTurnedIn 11900
+step
+#requires Raelorasz4
+.use 35671 >> Click on the Augmented Arcane Prison in your bags to summon Keristrasza
+.accept 11946 >>Accept Keristrasza
+.turnin 11946 >>Turn in Keristrasza
+.accept 11951 >>Accept Bait and Switch
+.isQuestTurnedIn 11943
+step
+#requires Serrah4
+#completewith next
+.goto BoreanTundra,24.9,31.2,0
+.goto BoreanTundra,25.2,24.2,0
+>>Go around the upper edges/cliffs of The Nexus. Loot the small purple crystals on the ground
+.complete 11951,1 
+.isOnQuest 11951
+step
+#requires Serrah4
+.goto BoreanTundra,29.5,30.81,90,0
+.goto BoreanTundra,28.7,33.6,70,0
+.goto BoreanTundra,27.5,31.3,70,0
+.goto BoreanTundra,24.9,31.2,70,0
+.goto BoreanTundra,25.2,24.2
+>>Go around the upper edges/cliffs of The Nexus. Kill Coldarra Wyrmkins. Loot them for their Axes
+.collect 35586,5,11936,1 
+.isOnQuest 11936
+step
+.goto BoreanTundra,24.9,31.2,50,0
+.goto BoreanTundra,25.2,24.2
+>>Go around the upper edges/cliffs of The Nexus. Loot the small purple crystals on the ground
+.complete 11951,1 
+.isOnQuest 11951
+step
+.goto BoreanTundra,29.3,27.4,50,0
+.goto BoreanTundra,28.2,24.4,50,0
+.goto BoreanTundra,26.2,25.4
+>>Go around the lower area of The Nexus. Kill Arcane Serpents and loot them for their Essences.
+>>Use the Axes you just collected to break the Dragon Eggs around the lower area
+.collect 35586,5,11936,1,-1 
+.complete 11936,1 
+.complete 11914,1 
+.isOnQuest 11936
+.isOnQuest 11914
+step
+.goto BoreanTundra,29.3,27.4,50,0
+.goto BoreanTundra,28.2,24.4,50,0
+.goto BoreanTundra,26.2,25.4
+>>Go around the lower area of The Nexus. Kill Arcane Serpents and loot them for their Essences.
+.complete 11914,1 
+.isOnQuest 11914
+step
+#label splinters
+.goto BoreanTundra,29.3,27.4,50,0
+.goto BoreanTundra,28.2,24.4,50,0
+.goto BoreanTundra,26.2,25.4
+>>Use the Axes you just collected to break the Dragon Eggs around the lower area
+.collect 35586,5,11936,1,-1 
+.complete 11936,1 
+.isOnQuest 11936
+step
+.goto BoreanTundra,30.1,23.4,70,0
+.goto BoreanTundra,32.6,28.2,70,0
+.goto BoreanTundra,28.0,33.5,70,0
+.goto BoreanTundra,25.0,30.6,70,0
+.goto BoreanTundra,25.5,35.6
+>>Kill Glacial Ancients and Magic-Bound Ancients. Loot them for their Splinters
+.complete 11910,1 
+.complete 11910,2 
+.isOnQuest 11910
+step
+.use 35671 >> Click on the Augmented Arcane Prison in your bags to summon Keristrasza. If you lost it, talk to Raelorasz to ask for a new one. MAKE SURE at least one party member doesn't use it
+.turnin 11951 >>Turn in Bait and Switch
+.accept 11957 >>Accept Saragosa's End
+.isQuestComplete 11951
+step
+.use 35671 >> Click on the Augmented Arcane Prison in your bags to summon Keristrasza. If you lost it, talk to Raelorasz to ask for a new one. MAKE SURE at least one party member doesn't use it
+.accept 11957 >>Accept Saragosa's End
+.isQuestTurnedIn 11951
+step
+#completewith next
+.cast 46793 >> Speak to Keristrasza again and she will teleport you to Saragosa's Landing. Once you arrive, go to the center of the platform and use the Arcane Power Focus in your bags to summon Saragosa.
+.goto BoreanTundra,21.57,22.55
+.use 35690 
+.isOnQuest 11957
+step
+>>Kill Saragosa. Loot her for her corpse
+.complete 11957,1 
+.goto BoreanTundra,22.07,22.65
+.use 35690 
+.skipgossip
+.isOnQuest 11957
+step
+.use 35671 >> Click on the Augmented Arcane Prison in your bags to summon Keristrasza
+.turnin 11957 >>Turn in Saragosa's End
+.accept 11967 >>Accept Mustering the Reds
+.goto BoreanTundra,21.57,22.55
+.isQuestComplete 11957
+step
+.use 35671 >> Click on the Augmented Arcane Prison in your bags to summon Keristrasza
+.accept 11967 >>Accept Mustering the Reds
+.goto BoreanTundra,21.57,22.55
+.isQuestTurnedIn 11957
+step
+.goto BoreanTundra,22.07,22.65
+.goto BoreanTundra,33.21,34.31,50 >>DO NOT Ride back to Transitus. Speak to Keristrasza again to teleport back to Coldarra
+.isOnQuest 11967
+step
+#completewith end
+#label Serrah5
+>>Talk to Serrah
+.turnin 11914 >>Turn in Keep the Secret Safe
+.turnin 13095 >>Turnin Have They No Shame?
+.goto BoreanTundra,33.49,34.38,-1
+.isQuestComplete 11914
+.isQuestComplete 13095
+step
+#completewith end
+#requires Serrah5
+#label Serrah6
+>>Talk to Serrah
+.turnin 13095 >>Turnin Have They No Shame?
+.goto BoreanTundra,33.49,34.38,-1
+.isQuestComplete 13095
+step
+#completewith end
+#requires Serrah6
+#label Serrah7
+>>Talk to Serrah
+.turnin 11914 >>Turn in Keep the Secret Safe
+.goto BoreanTundra,33.49,34.38,-1
+.isQuestComplete 11914
+step
+#completewith end
+#label Raelorasz5
+>>Talk to Raelorasz
+.turnin 11967 >>Turn in Mustering the Reds
+.turnin 11936 >>Turn in Hatching a Plan
+.goto BoreanTundra,33.32,34.54,-1
+.isQuestComplete 11967
+.isQuestComplete 11936
+step
+#completewith end
+#requires Raelorasz5
+#label Raelorasz6
+>>Talk to Raelorasz
+.turnin 11967 >>Turn in Mustering the Reds
+.goto BoreanTundra,33.32,34.54,-1
+.isQuestComplete 11967
+step
+#completewith end
+#requires Raelorasz6
+#label Raelorasz7
+>>Talk to Raelorasz
+.turnin 11936 >>Turn in Hatching a Plan
+.goto BoreanTundra,33.32,34.54,-1
+.isQuestComplete 11936
+step
+#completewith end
+.goto BoreanTundra,32.94,34.40,-1
+>>Talk to Berinand
+.vendor 25314 >> Vendor and Repair
+step
+>>Talk to Berinand
+.turnin 11900 >>Turn in Reading the Meters
+.turnin 11905 >>Turnin Postponing the Inevitable
+.turnin 11910 >>Turn in Secrets of the Ancients
+.goto BoreanTundra,32.94,34.40
+.isQuestComplete 11900
+.isQuestComplete 11905
+.isQuestComplete 11910
+step
+>>Talk to Berinand
+.turnin 11900 >>Turn in Reading the Meters
+.turnin 11905 >>Turnin Postponing the Inevitable
+.turnin 11911 >>Turn in Quickening
+.goto BoreanTundra,32.94,34.40
+.isQuestComplete 11900
+.isQuestComplete 11905
+.isQuestComplete 11911
+step
+>>Talk to Berinand
+.turnin 11900 >>Turn in Reading the Meters
+.turnin 11911 >>Turn in Quickening
+.goto BoreanTundra,32.94,34.40
+.isQuestComplete 11900
+.isQuestComplete 11911
+step
+>>Talk to Berinand
+.turnin 11905 >>Turnin Postponing the Inevitable
+.turnin 11911 >>Turn in Quickening
+.goto BoreanTundra,32.94,34.40
+.isQuestComplete 11905
+.isQuestComplete 11911
+step
+>>Talk to Berinand
+.turnin 11905 >>Turnin Postponing the Inevitable
+.turnin 11910 >>Turn in Secrets of the Ancients
+.goto BoreanTundra,32.94,34.40
+.isQuestComplete 11905
+.isQuestComplete 11910
+step
+>>Talk to Berinand
+.turnin 11900 >>Turn in Reading the Meters
+.turnin 11910 >>Turn in Secrets of the Ancients
+.goto BoreanTundra,32.94,34.40
+.isQuestComplete 11900
+.isQuestComplete 11910
+step
+>>Talk to Berinand
+.turnin 11900 >>Turn in Reading the Meters
+.turnin 11905 >>Turnin Postponing the Inevitable
+.goto BoreanTundra,32.94,34.40
+.isQuestComplete 11900
+.isQuestComplete 11905
+step
+>>Talk to Berinand
+.turnin 11900 >>Turn in Reading the Meters
+.goto BoreanTundra,32.94,34.40
+.isQuestComplete 11900
+step
+>>Talk to Berinand
+.turnin 11905 >>Turnin Postponing the Inevitable
+.goto BoreanTundra,32.94,34.40
+.isQuestComplete 11905
+step
+>>Talk to Berinand
+.turnin 11910 >>Turn in Secrets of the Ancients
+.goto BoreanTundra,32.94,34.40
+.isQuestComplete 11910
+step
+>>Talk to Berinand
+.turnin 11911 >>Turn in Quickening
+.goto BoreanTundra,32.94,34.40
+.isQuestComplete 11911
+step
+#requires Serrah7
+step
+#requires Raelorasz7
+#completewith Dragonblight
+#level 73
+#label L73one
+>>Abandon all Coldarra/Nexus related quests you have
+.abandon 11900 >> Abandon Reading the Meters
+.abandon 11905 >> Abandon Postponing the Inevitable
+.abandon 11910 >> Abandon Secrets of the Ancients
+.abandon 11918 >> Abandon Basic Training
+.abandon 13095 >> Abandon Have They No Shame?
+.abandon 11912 >> Abandon Nuts for Berries
+.abandon 11943 >> Abandon The Cell
+step
+#completewith Dragonblight
+#requires L73one
+#level 73
+>>Abandon all Coldarra/Nexus related quests you have
+.abandon 11911 >>Abandon Quickening
+.abandon 11936 >>Abandon Hatching a Plan
+.abandon 11967 >>Abandon Mustering the Reds
+.abandon 11914 >>Abandon Keep the Secret Safe
+.abandon 13095 >>Abandon Have They No Shame?
+.abandon 11951 >>Abandon Bait and Switch
+step
+#label end
+.goto BoreanTundra,33.13,34.45
+.fly Amber Ledge >>Fly to Amber Ledge
+.zoneskip Dragonblight
+.zoneskip ZulDrak
+.zoneskip The Storm Peaks
+.zoneskip Dalaran
+.zoneskip 159 
+.zoneskip 157 
+.zoneskip 132 
+.zoneskip 154 
+.zoneskip 138 
+.xp <73,1
+]])
+RXPGuides.RegisterGuide([[
+#version 5
 #wotlk
 #group Horde 70-80
 << Horde
@@ -39991,7 +40798,7 @@ step
 .zone Grizzly Hills >> Travel to Grizzly Hills
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 5
 #wotlk
 #group Horde 70-80
 << Horde
@@ -41940,3676 +42747,20 @@ step
 .skipgossip 26853,2
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
+#version 5
 #wotlk
-#group Horde 70-80 << Horde
-#group Alliance 70-80 << Alliance
-#name 75-77 Zul'Drak
-#next 77-78 Sholazar Basin
-step << Horde
-#sticky
-#label Priorities
-.goto ZulDrak,32.03,74.42,0,0
->>Talk to Riannah
-.turnin 12763 >> Turn in Shifting Priorities
-.isOnQuest 12763
-step << Alliance
-#sticky
-#label Priorities
-.goto ZulDrak,32.03,74.42,0,0
->>Talk to Riannah
-.turnin 12770 >> Turn in Reallocating Resources
-.isOnQuest 12770
-step
-.goto ZulDrak,32.18,74.39
-.fp Light's Breach >>Get the Light's Breach Flight Path
-step
-#requires Priorities
-#completewith next
-+Make sure to save all of the "Drakkari Offerings" you get in the zone for later quests
-step
-#requires Priorities
->>Travel to Light's Breach. Talk to Moky, Lantinga, Rageclaw, and the Wanted Poster
-.accept 12859 >>Accept This Just In: Fire Still Hot!
-.goto ZulDrak,32.02,75.60
-.accept 12902 >>Accept In Search Of Answers
-.goto ZulDrak,32.15,75.74
-.accept 12861 >>Accept Trolls Is Gone Crazy!
-.goto ZulDrak,32.17,75.64
-.accept 12857 >>Accept Wanted: Ragemane's Flipper
-.goto ZulDrak,32.26,75.68
-step
-#completewith Ragemane
-.goto ZulDrak,34.8,85.1,0
-.goto ZulDrak,34.7,80.6,0
-.use 41131 >>Spam use the Rageclaw Fire Extinguisher in your bags when next to huts that are on fire.
-.complete 12859,1 
-step
-#completewith Fires
-.goto ZulDrak,34.8,85.1,0
-.goto ZulDrak,34.7,80.6,0
->>Kill Undead Trolls in the area. Loot them for their Lock Openers
-.use 41161 >>Use them on Captured Rageclaws to free them
-.collect 41161,8,12861,1,-1
-.complete 12861,1 
-step
-.goto ZulDrak,34.94,83.90
->>Click the floating scroll
-.turnin 12902 >>Turn in In Search Of Answers
-.accept 12883 >>Accept Orders From Drakuru
-step
-#label Ragemane
-.goto ZulDrak,38.29,84.93
->>Go out into the water. Kill Ragemane. Loot him for his Flipper. Find a group for this
->>Try to do this quest as the weapon rewards are VERY good and last you until 80 << !Warlock !Mage !Priest
-.complete 12857,1 
-step
-#label Fires
-.goto ZulDrak,34.8,85.1,80,0
-.goto ZulDrak,34.7,80.6
-.use 41131 >>Use the Rageclaw Fire Extinguisher when next to a hut that's on fire
-.complete 12859,1 
-step
-.goto ZulDrak,34.8,85.1,80,0
-.goto ZulDrak,34.7,80.6
->>Kill Undead Trolls in the area. Loot them for their Lock Openers (that go into your bag)
-.use 41161 >>Use them on Captured Rageclaws to free them
-.collect 41161,8,12861,1,-1
-.complete 12861,1 
-step
->>Return to Light's Breach. Talk to Lantinga, Rageclaw, and Moky
-.turnin 12883 >>Turn in Orders From Drakuru
-.accept 12884 >>Accept The Ebon Watch
-.accept 12894 >>Accept Crusader Forward Camp
-.goto ZulDrak,32.15,75.74
-.turnin 12857 >>Turn in Wanted: Ragemane's Flipper
-.turnin 12861 >>Turn in Trolls Is Gone Crazy!
-.goto ZulDrak,32.17,75.64
-.turnin 12859 >>Turn in This Just In: Fire Still Hot!
-.goto ZulDrak,32.02,75.60
-step
->>Ride to the Crusader Forward Camp. Talk to Mackeller and Reed
-.turnin 12894 >>Turn in Crusader Forward Camp
-.accept 12903 >>Accept That's What Friends Are For...
-.goto ZulDrak,25.28,63.96
-.accept 12901 >>Accept Making Something Out Of Nothing
-.goto ZulDrak,25.22,63.88
-step
-.goto ZulDrak,25.05,51.61
->>Travel close to Crusader Dargath until the objective completes
-.complete 12903,1 
-step
-.goto ZulDrak,19.78,56.35
->>Talk to Gymer in the giant cage. Try to avoid killing the Vargul in the area
-.accept 12912 >>Accept A Great Storm Approaches
-step
-.goto ZulDrak,17.64,57.55
->>Talk to Gerk in the plague tank. Try to avoid killing the Vargul in the area
-.complete 12903,2 
-.accept 12904 >>Accept Light Won't Grant Me Vengeance
-step
-#completewith Metal
-.goto ZulDrak,19.8,56.9,0
-.goto ZulDrak,23.2,54.7,0
-.goto ZulDrak,21.4,51.3,0
-.goto ZulDrak,15.0,61.3,0
->>Kill any Vargul humanoid in the area
-.complete 12904,1 
-step
-#completewith next
-.goto ZulDrak,19.5,58.9,0
-.goto ZulDrak,15.3,62.2,0
-.goto ZulDrak,13.3,59.9,0
-.goto ZulDrak,18.7,54.5,0
->>Collect pieces of Scrap Metal scattered throughout the area
-.complete 12901,1 
-step
-.goto ZulDrak,15.67,59.41
->>Travel close to Burr until the objective completes
-.complete 12903,3 
-step
-#label Metal
-.goto ZulDrak,19.1,61.8,70,0
-.goto ZulDrak,15.3,62.2,70,0
-.goto ZulDrak,13.3,59.9,70,0
-.goto ZulDrak,18.7,54.5
->>Collect pieces of Scrap Metal scattered throughout the area
-.complete 12901,1 
-step
-.goto ZulDrak,19.8,56.9,70,0
-.goto ZulDrak,23.2,54.7,70,0
-.goto ZulDrak,21.4,51.3,70,0
-.goto ZulDrak,15.0,61.3
->>Kill any Vargul humanoid in the area
-.complete 12904,1 
-step
-.goto ZulDrak,17.64,57.55
->>Talk to Gerk
-.turnin 12904 >>Turn in Light Won't Grant Me Vengeance
-step
->>Return to the Crusader Forward Camp. Talk to Reed and MacKellar
-.turnin 12912 >>Turn in A Great Storm Approaches
-.accept 12914 >>Accept Gymer's Salvation
-.turnin 12901 >>Turn in Making Something Out Of Nothing
-.goto ZulDrak,25.22,63.88
-.turnin 12903 >>Turn in That's What Friends Are For...
-.goto ZulDrak,25.28,63.96
-step
-#completewith ewfp
-.goto ZulDrak,23.4,54.6,70,0
-.goto ZulDrak,28.3,63.1,70,0
-.goto ZulDrak,24.9,58.2,70,0
-.goto ZulDrak,22.5,62.8,70,0
->>Kill Banshees in the area. Loot them for their Essence
-.complete 12914,1 
-step
-#completewith next
-.goto ZulDrak,16.3,73.8,0
-.goto ZulDrak,12.1,76.1,0
-.goto ZulDrak,12.9,69.6,0
->>Kill Icetouched Earthragers in the area. Loot them for their Earth
-.complete 12914,2 
-step
-#sticky
-#label ewfp
-.goto ZulDrak,14.00,73.58,-1
-.fp Ebon Watch >>Get the Ebon Watch Flight Path
-step
-.goto ZulDrak,14.06,73.79,-1
->>Ride to The Ebon Watch. Talk to Stefan
-.turnin 12884 >>Turn in The Ebon Watch
-.accept 12630 >>Accept Kickin' Nass and Takin' Manes
-step
-#requires ewfp
-#completewith HairS
-.goto ZulDrak,16.57,72.46,60,0
-.goto ZulDrak,16.82,75.62,60,0
-.goto ZulDrak,11.38,76.96,60,0
-.goto ZulDrak,12.62,70.90,60,0
-.goto ZulDrak,16.57,72.46,60,0
-.goto ZulDrak,16.82,75.62,60,0
-.goto ZulDrak,11.38,76.96,60,0
-.goto ZulDrak,12.62,70.90
->>Kill Icetouched Earthragers in the area. Loot them for their Earth
-.complete 12914,2 
-step
-#sticky
-#label UnlivC
-.goto ZulDrak,18.8,68.9,0,0
-.use 38660 >>Kill Withered Trolls in the area. Loot them for the Unliving Choker then start the quest from it
-.collect 38660,1,12631 
-.accept 12631 >>Accept An Invitation, of Sorts...
-step
-#label HairS
-.goto ZulDrak,12.94,68.88,60,0
-.goto ZulDrak,19.39,69.55,60,0
-.goto ZulDrak,18.49,73.92
-.use 38659 >>Kill a Withered Troll then use Stefan's Steel Toed Boot in your bags to collect a Hair Sample.
->>If you lose Nass, return to Stefan Vadu and have him appear again.
-.complete 12630,1 
-step
-.goto ZulDrak,16.3,73.8,70,0
-.goto ZulDrak,11.4,76.7,70,0
-.goto ZulDrak,12.9,69.6,50,0
-.goto ZulDrak,16.2,72.1
->>Kill Icetouched Earthragers in the area. Loot them for their Earth
-.complete 12914,2 
-step
-#requires UnlivC
->>Return to Ebon Watch. Talk to Stefan
-.turnin 12630 >>Turn in Kickin' Nass and Takin' Manes
-.turnin 12631 >>Turn in An Invitation, of Sorts...
-.accept 12637 >>Accept Near Miss
-.goto ZulDrak,14.06,73.79
-step
->>Talk to Datura, then talk to Stefan
-.accept 12795 >>Accept Taking a Stand
-.complete 12637,1 
-.goto ZulDrak,14.28,74.04
-.turnin 12637 >>Turn in Near Miss
-.accept 12629 >>Accept You Can Run, But You Can't Hide
-.goto ZulDrak,14.06,73.79
-.skipgossip
-step
-#sticky
-#label Drool
-.goto ZulDrak,21.1,78.3,0,0
->>Circle around the Reliquary of Agony. Loot 5 Gooey Ghoul Drool (Slimes) on the ground
-.complete 12629,2 
-step
-.goto ZulDrak,19.0,77.6,70,0
-.goto ZulDrak,18.1,81.2,70,0
-.goto ZulDrak,24.2,76.7
->>Kill Putrid Abominations around the area. Loot them for their Guts
-.complete 12629,1 
-step
-#questguide
-#requires OEnemy
-.goto Dragonblight,84.02,26.14
->>Travel to Light's Trust
-.accept 12545 >>Accept The Cleansing Of Jintha'kalar
-step
-#questguide
-#completewith next
-.goto Dragonblight,88.16,19.81,0
->>Kill scourge mobs around the area
-.complete 12545,1 
-step
-#questguide
-.goto Dragonblight,89.50,19.12
->>Use the Seeds of Nature's Warth in your bags to weaken Overseer Deathgaze. Kill him
-.complete 12459,3 
-.use 37887
-.isOnQuest 12459
-step
-#questguide
-.goto Dragonblight,88.4,21.7,70,0
-.goto Dragonblight,87.3,18.6,70,0
-.goto Dragonblight,89.0,19.1
->>Kill the Scourge around the area
-.complete 12545,1 
-step
-#questguide
-.goto Dragonblight,83.99,26.07
->>Return to Light's Trust
-.turnin 12545 >>Turn in The Cleansing Of Jintha'kalar
-.accept 12789 >>Accept Into the Breach!
-step
-#questguide
-#completewith next
-.goto ZulDrak,18.25,84.82,60,0
-.zone ZulDrak >> Travel to Zul'Drak
-step
-#requires Drool
-.goto ZulDrak,14.06,73.79
->>Return to Ebon Watch. Talk to Stefan
-.turnin 12629 >>Turn in You Can Run, But You Can't Hide
-.accept 12648 >>Accept Dressing Down
-step
-#completewith Gristlegut
-+Reapply the Disguise with the Ensorcelled Choker in your bags if it falls off
-.use 38699
-step
-.goto ZulDrak,19.86,75.43
->>Use the Enscorcelled Choker in your bags just before reaching the undead area
->>Talk to Gristlegut at the Reliquary. Buy some Bitter Plasma from him for Dressing Down as well as other foods/drink if needed
-.accept 12652 >>Accept Feedin' Da Goolz
-.complete 12648,1 
-step
-.goto ZulDrak,21.6,72.7,70,0
-.goto ZulDrak,23.3,76.4,70,0
-.goto ZulDrak,20.6,79.7,70,0
-.goto ZulDrak,19.3,77.8
-.use 38701 >>Use the Bowls and Brains Bowl in your bags near Ghouls at the Reliquary to feed them. Avoid Blightguards as they can see through your disguise
->>NOTE: you do NOT need to be disguised for this quest if you want to move faster, but if you aggro the ghoul you cannot feed them
-.complete 12652,1 
-step
-#label Gristlegut
-.goto ZulDrak,19.86,75.43
->>Talk to Gristlegut while disguised
-.turnin 12652 >>Turn in Feedin' Da Goolz
-step
-#questguide
-.goto ZulDrak,14.1,73.8
->>Return to Ebon Watch. Talk to Stefan
-.turnin 12648 >>Turn in Dressing Down
-.accept 12661 >>Accept Infiltrating Voltarus
-step
-.goto ZulDrak,14.1,73.8
->>Return to Ebon Watch. Talk to Stefan
-.turnin 12648 >>Turn in Dressing Down
-step
-.goto ZulDrak,23.4,54.6,60,0
-.goto ZulDrak,28.3,63.1,60,0
-.goto ZulDrak,27.14,64.35,60,0
-.goto ZulDrak,24.9,58.2,60,0
-.goto ZulDrak,22.5,62.8,60,0
-.goto ZulDrak,23.4,54.6
->>Kill Banshee Soulclaimers. Loot them for their Essence
-.complete 12914,1 
-step
-.goto ZulDrak,25.22,63.88
->>Return to the Crusader Forward Camp. Talk to Reed
-.turnin 12914 >>Turn in Gymer's Salvation
-.accept 12916 >>Accept Our Only Hope
-step
-.goto ZulDrak,19.78,56.35
->>Right click Gymer's cage, then talk to him
-.complete 12916,1 
-.turnin 12916 >>Turn in Our Only Hope
-.accept 12919 >>Accept The Storm King's Vengeance
-step
-#completewith next
-.goto ZulDrak,19.78,56.35
-.vehicle >> Talk to Gymer to ride him
-.skipgossip 3
-step
-#completewith Thrym
-.goto ZulDrak,28.6,61.1,0
-.goto ZulDrak,23.5,57.7,0
-.goto ZulDrak,23.9,63.1,0
->>Kill Scourge when mounted on Gymer in the area. Use Gymer's Grab (3) to grab a nearby Vargul, then use Gymer's Throw (4) to deal AoE damage in a large range to kill many at once
-.complete 12919,1 
-step
-.loop 45,ZulDrak,29.59,47.23,30.29,45.17,29.39,42.97,27.65,42.46,26.75,44.53,27.33,46.94,29.59,47.23
->>Travel North-East to Algar (he patrols the Reliquary anti-clockwise). Use Gymer's Smash (1) to deal damage. Use Gymer's Grab (3) to grab Storm Clouds, as these will give you instant energy regen and a heal. Use Gymer's Throw (4) if you accidentally pick up an undead.
-.complete 12919,2 
-step
-.goto ZulDrak,32.60,63.84
->>Travel South-east to Prince Navarius. Use Gymer's Smash (1) to deal damage. Use Gymer's Grab (3) to grab Storm Clouds, as these will give you instant energy regen and a heal. Use Gymer's Throw (4) if you accidentally pick up an undead.
-.complete 12919,4 
-step
-#label Thrym
-.goto ZulDrak,32.60,63.84
->>After killing Navarius, Thrym will spawn on top of you. Use Gymer's Grab (3) to grab Storm Clouds, as these will give you instant energy regen and a heal. Use Gymer's Throw (4) if you accidentally pick up an undead.
-.complete 12919,3 
-step
-.goto ZulDrak,26.8,60.2,70,0
-.goto ZulDrak,23.5,57.7,70,0
-.goto ZulDrak,23.9,63.1
->>Kill Scourge when mounted on Gymer in the area. Use Gymer's Grab to grab a nearby Vargul, then use Gymer's Throw to deal AoE damage in a large range to kill many at once
-.complete 12919,1 
-step
-.goto ZulDrak,25.28,63.96
->>Return to the Crusader Forward Camp. Unmount Gymer then talk to MacKeller
-.turnin 12919 >>Turn in The Storm King's Vengeance
-step
-#questguide
-#completewith Betrayal
-+Reapply the Disguise with the Ensorcelled Choker in your bags if it falls off
-.use 38699
-step
-#questguide
-.goto ZulDrak,28.4,44.9,20,0
-.goto ZulDrak,27.1,46.1
->>Use the teleporter (green circle) in the middle of the Reliquary of Pain. Teleport up to Voltarus then talk to Drakuru (The teleporter doesn't work if you're not disguised)
-.accept 12664 >>Accept Dark Horizon
-step
-#questguide
-.goto ZulDrak,29.9,48.1
-.goto ZulDrak,30.8,49.9,30 >>Talk to Gorebag at the south-east side of Voltarus. Ask him to send you on a tour of Zul'Drak
-.timer 210,Tour of Zul'Drak
-.complete 12664,1 
-.skipgossip
-step
-#questguide
-.goto ZulDrak,27.1,46.1
->>Return to Drakuru
-.turnin 12664 >>Turn in Dark Horizon
-.complete 12661,1 
-step
-#questguide
-#completewith next
-.goto ZulDrak,28.4,44.9,12 >>Take the teleporter (green circle) in the middle of Voltarus to teleport down to the Reliquary of Pain
-step
-#questguide
-.goto ZulDrak,28.4,44.9,20,0
-.goto ZulDrak,28.1,44.8
-.use 41390 >>Use Stefan's Horn in your bags to summon Stefan. Talk to him when he lands
-.turnin 12661 >>Turn in Infiltrating Voltarus
-.accept 12669 >>Accept So Far, So Bad
-step
-#questguide
-.goto ZulDrak,28.4,44.9,20,0
-.goto ZulDrak,27.1,46.1
->>Return to Drakuru in Voltarus
-.accept 12673 >>Accept It Rolls Downhill
-step
-#questguide
-#completewith next
-.goto ZulDrak,28.4,44.9,12 >> Teleport down to the Reliquary of Pain
-step
-#questguide
-#completewith next
-.goto ZulDrak,28.4,44.9,20,0
-.goto ZulDrak,26.9,47.1,10,0
-.goto ZulDrak,29.6,47.4,10,0
-.goto ZulDrak,30.9,45.2,10,0
-.goto ZulDrak,31.0,43.3,0
-.use 39154 >>Use the Diluting Additive in your bags on the cauldrons in the area to dilute them. Run away from the area after to avoid the Blightguards that spawn
-.complete 12669,2 
-step
-#questguide
-.goto ZulDrak,27.3,46.2
-.use 39157 >>Use the Scepter of Suggestion in your bags on a Blight Geist in the area, then use its "Harvest Blight Crystal" ability at one of the nearby crystals. Wait for it to run to the Voltarus teleporter before taming another to complete the objective
-.complete 12673,1 
-step
-#questguide
-.goto ZulDrak,26.9,47.1,20,0
-.goto ZulDrak,29.6,47.4,20,0
-.goto ZulDrak,30.9,45.2,20,0
-.goto ZulDrak,31.0,43.3
-.use 39154 >>Use the Diluting Additive in your bags on the cauldrons in the area to dilute them
-.complete 12669,2 
-step
-#questguide
-#completewith next
-.goto ZulDrak,28.4,44.9,12 >> Teleport up to Voltarus through the portal
-step
-#questguide
-.goto ZulDrak,27.1,46.2
->>Return to Drakuru
-.turnin 12673 >>Turn in It Rolls Downhill
-.complete 12669,1 
-step
-#questguide
-#completewith next
-.goto ZulDrak,28.4,44.9,12 >> Teleport down to the Reliquary of Pain
-step
-#questguide
-.goto ZulDrak,28.1,44.8
->>Take the teleporter (green circle) in the middle of Voltarus to teleport down
-.use 41390 >>Use Stefan's Horn in your bags to summon Stefan. Talk to him when he lands
-.turnin 12669 >>Turn in So Far, So Bad
-.accept 12677 >>Accept Hazardous Materials
-step
-#questguide
-#completewith next
-.goto ZulDrak,28.4,44.9,12 >> Teleport up to Voltarus through the portal
-step
-#questguide
-.goto ZulDrak,27.1,46.1
->>Return to Drakuru
-.accept 12686 >>Accept Zero Tolerance
-step
-#questguide
-#completewith next
-.goto ZulDrak,28.4,44.9,12 >> Teleport down to the Reliquary of Pain (green portal)
-step
-#questguide
-.goto ZulDrak,31.0,51.1
-.use 39206 >>Use the Scepter of Empowerment in your bags on a Servant of Drakuru en route to Darmuk
->>Send in the servant and use the Ferocious Enrage ability. Then, use Gut Rip and Stunning Force on cooldown. Try to use Stunning Force when Darmuk buffs himself with Darmuk's Vigilance.
-.complete 12686,1 
-step
-#questguide
-#completewith next
-.goto ZulDrak,28.4,44.9,12 >> Teleport up to Voltarus
-step
-#questguide
-.goto ZulDrak,27.1,46.1
->>Return to Drakuru
-.turnin 12686 >>Turn in Zero Tolerance
-.complete 12677,1 
-step
-#questguide
-.goto ZulDrak,27.3,45.9,30,0
-.goto ZulDrak,28.8,46.7,30,0
-.goto ZulDrak,29.7,45.3,30,0
-.goto ZulDrak,29.4,43.6,30,0
-.goto ZulDrak,27.6,43.1
->>Circle Voltarus. Collect the normal wooden crates of the Harvested Blight Crystal scattered around the outer perimeter
->>Note you may only loot the crates whilst disguised
-.complete 12677,2 
-step
-#questguide
-#completewith next
-.goto ZulDrak,28.4,44.9,12 >> Teleport down to the Reliquary of Pain
-step
-#questguide
-.goto ZulDrak,28.2,44.9
-.use 41390 >>Use Stefan's Horn in your bags to summon Stefan. Talk to him when he lands
-.turnin 12677 >>Turn in Hazardous Materials
-.accept 12676 >>Accept Sabotage
-step
-#questguide
-#completewith next
-.goto ZulDrak,28.4,44.9,12 >> Teleport up to Voltarus
-step
-#questguide
-.goto ZulDrak,27.1,46.1
->>Return to Drakuru
-.accept 12690 >>Accept Fuel for the Fire
-step
-#questguide
-#completewith next
-.goto ZulDrak,28.4,44.9,12 >> Teleport down to the Reliquary of Pain
-step
-#questguide
-.goto ZulDrak,28.7,48.8,12,0
-.goto ZulDrak,29.8,47.8,12,0
-.goto ZulDrak,29.6,45.4,12,0
-.goto ZulDrak,29.7,42.4,12,0
-.goto ZulDrak,31.6,44.2
-.use 39165 >>Use the Explosive Charges in your bag on the Scourgewagons around the Reliquary to destroy them
-.complete 12676,1 
-step
-#questguide
-.goto ZulDrak,32.5,40.4,60,0
-.goto ZulDrak,33.8,37.0
-.use 39238 >>Use the Scepter of Command in your bags on Bloated Abominations whilst disguised. Pull as many mobs as possible with your abomination by using Flatulate on cooldown. Use Burst at the Seams to kill the Trolls when the abomination's health is low. You can also bodypull mobs for the Abomination while Disguised as long as you don't attack or cast spells. Chieftains will automatically get lured as you kill the trolls
-.complete 12690,1 
-.complete 12690,2 
-step
-#questguide
-#completewith next
-.goto ZulDrak,28.4,44.9,12 >> Teleport up to Voltarus
-step
-#questguide
-.goto ZulDrak,27.1,46.1
->>Return to Drakuru
-.turnin 12690 >>Turn in Fuel for the Fire
-.accept 12710 >>Accept Disclosure
-.complete 12676,2 
-step
-#questguide
-#completewith next
-.goto ZulDrak,28.4,44.9,12 >>Take the BLUE teleporter above the green one of Voltarus to the upper chambers of Voltarus
-step
-#questguide
-.goto ZulDrak,27.2,42.3,10,0
-.goto ZulDrak,28.6,45.0
->>Talk to the Musty Coffin in front of you after teleporting to summon Malmortis. Follow him around. DO NOT do anything to drop your disguise, or you'll have to reapply it and talk to the coffin again
-.complete 12710,1 
+#group Dungeon Cleave 70-80
+<< Horde
+#name 75-77 Gundrak Lockout
+#next 70-80 Horde Dungeon Cleave
 
-step
-#questguide
-#completewith next
-.goto ZulDrak,28.4,44.8,12 >>Take the green teleporter that Malmortis was standing on to teleport back down to Drakuru
-step
-#questguide
-.goto ZulDrak,27.1,46.1
->>Return to Drakuru
-.turnin 12710 >>Turn in Disclosure
-.complete 12676,3 
-step
-#questguide
-#completewith next
-.goto ZulDrak,28.4,44.9,12 >> Teleport down to the Reliquary of Pain
-step
-#questguide
-.goto ZulDrak,28.2,44.9
-.use 41390 >>Use Stefan's Horn in your bags to summon Stefan. Talk to him when he lands
-.turnin 12676 >>Turn in Sabotage
-.accept 12713 >>Accept Betrayal
-step
-#questguide
-#label Betrayal
-#completewith next
-.goto ZulDrak,28.4,44.9,12 >> Teleport up to Voltarus
-step
-#questguide
-.goto ZulDrak,27.1,46.1,10,0
-.goto ZulDrak,28.7,44.7
-.use 38699
-.use 39664 >>Go to Drakuru and ask to accompany him. Use the Scepter of Domination in your bags on Blightblood Trolls when your disguise falls.
->>Attack Drakuru with both your pet and character. Use the Blightblood Troll's Concussion Blow and Powerful Strike on cooldown. Use Brightblood Infusion if your health gets low.
->>If your Blightblood Troll dies, use the Scepter of Domination on another one and repeat the process
->>When he dies, loot the Skull that drops on the ground. Talk to the floating crystal to teleport back down
-.complete 12713,1 
-.skipgossip
-step
-#questguide
-.goto ZulDrak,27.6,53.4
-.use 41390 >>Use Stefan's Horn in your bags to summon Stefan. Talk to him when he lands
-.turnin 12713 >>Turn in Betrayal
-step
-.goto ZulDrak,39.43,66.96
->>Travel to The Argent Stand. Talk to Falstaav
-.turnin 12795 >>Turn in Taking a Stand
-.accept 12503 >>Accept Defend the Stand
-.accept 12740 >>Accept Parachutes for the Argent Crusade
-step
-#questguide
-.abandon 12789 >>Abandon Into the Breach!
-.isOnQuest 12789
-step
-#questguide
-.goto ZulDrak,40.3,66.6
->>Talk to Kunz
-.accept 12792 >> Accept First Things First
-step
-#completewith Jonathan
-.goto ZulDrak,40.83,66.26
-.home >> Set your Hearthstone to The Argent Stand
->>Buy food/water if needed
-step
-.goto ZulDrak,40.53,65.61
->>Talk to Ubungo
-.accept 12565 >>Accept The Blessing of Zim'Abwa
-step
-#questguide
-.goto ZulDrak,41.55,64.43
-.fp The Argent Stand >>Get the The Argent Stand Flight Path
-step
-#completewith next
->>Buy back your Drakkari Offerings if you accidentally sold them, otherwise be prepared for an extra grind
-.collect 38551,1 
-step
-.loop 50,ZulDrak,38.34,65.11,35.25,64.91,35.27,68.55,38.67,68.47,38.34,65.11
-.use 39615 >>Kill the Scourge in the area
->>Use the Crusader Parachute in your bags on an Argent Crusader or Shieldman
-.complete 12503,1 
-.complete 12740,1 
-step
-.loop 50,ZulDrak,38.34,65.11,35.25,64.91,35.27,68.55,38.67,68.47,38.34,65.11
->>Kill undead mobs in the area. Loot them for Drakkari Offerings
-.collect 38551,10 
-step
-.goto ZulDrak,36.70,72.72
->>Talk to the statue
-.turnin 12565 >>Turn in The Blessing of Zim'Abwa
-step
-#questguide
->>Travel to Light's Breach. Talk to Riannah
-.goto ZulDrak,32.0,74.4
-.turnin 12792 >>Turn in First Things First
-step
-#questguide
-#completewith next
-.goto ZulDrak,32.2,74.4
-.fly The Argent Stand >> Fly to The Argent Stand
-step
->>Talk to Falstaav, Ubungo, and Kunz
-.turnin 12503 >>Turn in Defend the Stand
-.turnin 12740 >>Turn in Parachutes for the Argent Crusade
-.goto ZulDrak,39.43,66.96
-.accept 12506 >>Accept Trouble at the Altar of Sseratus
-.goto ZulDrak,40.52,65.61
-.accept 12505 >>Accept New Orders for Sergeant Stackhammer
-.accept 12596 >>Accept Pa'Troll
-.goto ZulDrak,40.27,66.62
-step
-.goto ZulDrak,48.77,78.87
->>Talk to Captain Brandon
-.accept 12597 >>Accept Something for the Pain
-step
->>Talk to Captain Rupert and Dr. Rogers in the ruined house
-.accept 12598 >>Accept Throwing Down
-.goto ZulDrak,58.07,72.43
-.accept 12512 >>Accept Leave No One Behind
-.goto ZulDrak,58.68,72.49
-step
-#completewith next
-.goto ZulDrak,49.45,74.71
-.cast 50662 >>Use the Crusader's Bandage in your bags on Crusader Josephine inside the building
-step
-.goto ZulDrak,58.68,72.49
-.use 38330 >>Escort Josephine back to Dr. Rogers
->>Be careful as all crusaders die in 3 minutes after being bandaged
-.complete 12512,3 
-step
-#completewith next
-.goto ZulDrak,53.58,75.00
-.cast 50662 >>Use the Crusader's Bandage in your bags on Crusader Lamoof inside the building
-.use 38574
-
-step
-.goto ZulDrak,58.68,72.49
-.use 38330 >>Escort Lamoof back to Dr. Rogers
->>Be careful as all crusaders die in 3 minutes after being bandaged
-.complete 12512,2 
-step
-.goto ZulDrak,54.9,70.4,40,0
-.goto ZulDrak,55.7,68.6,30,0
-.goto ZulDrak,52.7,67.2
-.use 38574 >>Use the High Impact Grenade in your bags on the Nerubian Tunnels (the holes in the ground). They can also be found inside
-.complete 12598,1 
-step
-#completewith next
-.goto ZulDrak,50.67,69.86
-.cast 50662 >>Use the Crusader's Bandage in your bags on Crusader Jonathan inside the building
-step
-#sticky
-#label Jonathan
-.goto ZulDrak,58.68,72.49,0,0
-.use 38330 >>Escort Jonathan back to Dr. Rogers
->>Be careful as all crusaders die in 3 minutes after being bandaged
-.complete 12512,1 
-step
-#completewith Jonathan
-.goto ZulDrak,58.07,72.43
->>Talk to Captain Rupert whilst Jonathan is following you as you're waiting for him to get saved
-.turnin 12598 >>Turn in Throwing Down
-.complete 12596,2 
-.accept 12606 >>Accept Cocooned!
-step
-#requires Jonathan
->>Talk to Dr. Rogers, Captain Rupert, Cogwheel and Moonshard
-.turnin 12512 >>Turn in Leave No One Behind
-.goto ZulDrak,58.68,72.49
-.turnin 12598 >>Turn in Throwing Down
-.complete 12596,2 
-.accept 12606 >>Accept Cocooned!
-.goto ZulDrak,58.07,72.43
-.accept 12553 >>Accept Skimmer Spinnerets
-.goto ZulDrak,58.25,72.05
-.accept 12552 >>Accept Death to the Necromagi
-.goto ZulDrak,58.07,72.04
-step
-.goto ZulDrak,56.70,69.82,40,0
-.goto ZulDrak,55.73,70.57,40,0
-.goto ZulDrak,54.69,67.06,40,0
-.goto ZulDrak,53.38,65.56,40,0
-.goto ZulDrak,52.25,66.58,40,0
-.goto ZulDrak,53.12,70.02,40,0
-.goto ZulDrak,54.89,72.54,40,0
-.goto ZulDrak,55.53,68.87
->>Kill the Nerubian Cocoons to free the Footmen
-.complete 12606,1 
-step
-#completewith next
-.goto ZulDrak,61.4,78.5,0
->>Kill Hath'ar Necromaguses in the area
-.complete 12552,1 
-step
-.goto ZulDrak,59.12,75.27,60,0
-.goto ZulDrak,52.97,82.95,60,0
-.goto ZulDrak,57.17,85.31,60,0
-.goto ZulDrak,58.29,82.89,60,0
-.goto ZulDrak,56.63,82.26,60,0
-.goto ZulDrak,59.12,75.27,60,0
-.goto ZulDrak,52.97,82.95,60,0
-.goto ZulDrak,57.17,85.31,60,0
-.goto ZulDrak,58.29,82.89,60,0
-.goto ZulDrak,56.63,82.26
->>Kill Hath'ar Skimmers in the area. Loot them for their Spinnerets
-.complete 12553,1 
-step
-.goto ZulDrak,61.4,78.5
->>Kill Hath'ar Necromaguses. Go upstairs in Kolramas to find more if needed
-.complete 12552,1 
-step
->>Return to Captain Rupert's camp. Talk to Cogwheel, Moonshard and Rupert
-.turnin 12553 >>Turn in Skimmer Spinnerets
-.accept 12583 >>Accept Crashed Sprayer
-.goto ZulDrak,58.25,72.05
-.turnin 12552 >>Turn in Death to the Necromagi
-.accept 12554 >>Accept Malas the Corrupter
-.goto ZulDrak,58.07,72.04
-.turnin 12606 >>Turn in Cocooned!
-.accept 12584 >>Accept Pure Evil
-.goto ZulDrak,58.07,72.43
-step
-.goto ZulDrak,48.79,75.54
->>Loot the Plague Sprayer on the ground
-.complete 12583,1 
-step
-.goto ZulDrak,58.25,72.05
->>Talk to Cogwheel
-.turnin 12583 >>Turn in Crashed Sprayer
-.accept 12555 >>Accept A Tangled Skein
-step
-.goto ZulDrak,58.1,75.9,70,0
-.goto ZulDrak,55.8,83.1
-.use 38515 >>Use the Tangled Skein Thrower in your bags to destroy the Plague Sprayers in the air
-.complete 12555,1 
-step
-.goto ZulDrak,60.2,77.8,25,0
-.goto ZulDrak,62.2,77.9,25,0
-.goto ZulDrak,61.6,79.8
->>Loot the small blue rocks on the bottom floor of Kolramas
-.complete 12584,1,7 
-step
-#sticky
-#label CSaronite
-.goto ZulDrak,61.3,78.5,0,0
->>Loot the rest of the small blue rocks in Kolramas as you ascend up to Malas the Corrupter
-.complete 12584,1 
-step
-.groundgoto ZulDrak,60.7,80.7,14,0
-.goto ZulDrak,61.02,77.99
->>Head to the top of Kolramas. Kill Malas the Corrupter at the top. Loot him for his Head. Look for a group for him if needed. If you can't kill him, skip this quest
-.complete 12554,1 
-step
-#requires CSaronite
->>Return to Captain Rupert's Camp. Talk to Cogwheel and Moonshard
-.turnin 12555 >>Turn in A Tangled Skein
-.goto ZulDrak,58.25,72.05
-.turnin 12554 >>Turn in Malas the Corrupter
-.goto ZulDrak,58.07,72.04
-.isQuestComplete 12554
-step
-#requires CSaronite
->>Return to Captain Rupert's Camp. Talk to Cogwheel
-.turnin 12555 >>Turn in A Tangled Skein
-.goto ZulDrak,58.25,72.05
-step
-.goto ZulDrak,48.15,63.89
->>Talk to Captain Grondel (inside the building)
-.accept 12599 >>Accept Creature Comforts
-step
->>Look for a group for The Amphitheater of Anguish questline. There are 6 elite quests that give a LOT of fast xp and a weapon that'll last you to 80. Only accept this when your party is ready and on the same quest progression as you. (Auto-accept is disabled for this questline). Skip this step if you can't find a group for it
-.goto ZulDrak,46.3,57.9,50,0
-.goto ZulDrak,48.43,56.36
-.accept 12932,0 >>Accept The Amphitheater of Anguish: Yggdras!
-.xp <75,1
-step
-.goto ZulDrak,47.83,56.83
->>Kill Yggdras in the Amphitheater of Anguish
-.complete 12932,1 
-.isOnQuest 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12932 >>Turn in The Amphitheater of Anguish: Yggdras!
-.isQuestComplete 12932
-step
-.goto ZulDrak,48.43,56.36
->>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
-.accept 12933,0 >>Accept The Amphitheater of Anguish: Magnataur!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,47.83,56.83
->>Kill Stinkbeard in the Amphitheater of Anguish
-.complete 12933,1 
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12933 >>Turn in The Amphitheater of Anguish: Magnataur!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.43,56.36
->>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
-.accept 12934,0 >>Accept The Amphitheater of Anguish: From Beyond!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,47.83,56.83
->>Kill the Elemental Lord in the Amphitheater of Anguish
-.complete 12934,1 
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12934 >>Turn in The Amphitheater of Anguish: From Beyond!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.43,56.36
->>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
-.accept 12935,0 >>Accept The Amphitheater of Anguish: Tuskarrmageddon!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,47.83,56.83
->>Kill Orinoko in the Amphitheater of Anguish
-.complete 12935,1 
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12935 >>Turn in The Amphitheater of Anguish: Tuskarrmageddon!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.43,56.36
->>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
-.accept 12936,0 >>Accept The Amphitheater of Anguish: Korrak the Bloodrager!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,47.83,56.83
->>Kill Korrak in the Amphitheater of Anguish
-.complete 12936,1 
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12936 >>Turn in The Amphitheater of Anguish: Korrak the Bloodrager!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.43,56.36
->>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
-.accept 12948,0 >>Accept The Champion of Anguish
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,47.83,56.83
->>Kill Vladof in the Amphitheater of Anguish
-.complete 12948,1 
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12948 >>Turn in The Champion of Anguish
-.isQuestTurnedIn 12932
-step
->>Travel to Captain Arnath's Camp. Talk to Arnath and Finklestein
-.accept 12799 >>Accept Siphoning the Spirits
-.goto ZulDrak,35.61,52.23
-.accept 12557 >>Accept Lab Work
-.goto ZulDrak,35.02,52.11
-step
->>Loot the following items from the first bookcase on the left in the right room:
->>Amberseed on the bottom and second to bottom shelves
->>Withered Batwing on the bottom shelf
->>Muddy Mire Maggots in the bag next to the bookcase
-.complete 12557,3 
-.goto ZulDrak,34.83,51.57
-.complete 12557,2 
-.goto ZulDrak,34.96,51.60
-.complete 12557,1 
-.goto ZulDrak,34.96,51.60
-step
->>Loot the following items from the first bookcase on the left in the other room:
->>The green bottle on the second to bottom shelf
-.complete 12557,4 
-.goto ZulDrak,35.11,53.42
-step
-.goto ZulDrak,35.02,52.11
->>Talk to Finklestein
-.turnin 12557 >>Turn in Lab Work
-.complete 12596,4 
-step
-.goto ZulDrak,34.68,60.09,60,0
-.goto ZulDrak,36.68,60.60,60,0
-.goto ZulDrak,39.24,62.03,60,0
-.goto ZulDrak,39.16,59.82,60,0
-.goto ZulDrak,34.68,60.09,60,0
-.goto ZulDrak,36.68,60.60,60,0
-.goto ZulDrak,39.24,62.03,60,0
-.goto ZulDrak,39.16,59.82
->>Kill the Lost Drakkari Spirits (neutral ghosts). Loot them for their Ectoplasm
-.complete 12799,1 
-step
-.goto ZulDrak,35.61,52.23
->>Talk to Captain Arnath
-.turnin 12799 >>Turn in Siphoning the Spirits
-.accept 12609 >>Accept Stocking the Shelves
-.accept 12610 >>Accept Clipping Their Wings
-step
-.loop 55,ZulDrak,37.05,54.64,34.94,57.63,37.61,55.99,39.24,57.75,38.32,50.91,35.91,47.31,34.54,48.38,37.69,53.07,37.05,54.64
->>Kill Spiders and Bats in the area. Loot them for their Ichor and Wings. The spiders also burrow underground, so you may have to run over the moving rocks to spawn them in
-.complete 12609,1 
-.complete 12610,1 
-step
-.goto ZulDrak,35.61,52.23
->>Talk to Captain Arnath
-.turnin 12609 >>Turn in Stocking the Shelves
-.turnin 12610 >>Turn in Clipping Their Wings
-.xp >77,1
-
-step
->>Talk to Stackhammer and Maga
-.turnin 12505 >>Turn in New Orders for Sergeant Stackhammer
-.accept 12504 >>Accept Argent Crusade, We Are Leaving!
-.goto ZulDrak,40.40,48.20
-.accept 12508 >>Accept Mopping Up
-.goto ZulDrak,40.36,48.21
-step
-#completewith next
-.use 38321 >>Kill Followers of Sseratus. Loot them for their Strange Mojo. Click it in your bags
-.collect 38321,1,12507 
-.accept 12507 >>Accept Strange Mojo
-step
-.goto ZulDrak,42.5,45.8,60,0
-.goto ZulDrak,42.3,42.3,60,0
-.goto ZulDrak,38.4,47.5,60,0
-.goto ZulDrak,40.37,45.49
->>Talk to the Argent Soldiers you see (not the ones around Stackhammer). Tell them to report back to Stackhammer
->>Kill Sseratus Trolls in the area
-.complete 12504,1 
-.complete 12508,1 
-.skipgossip
-step
-.goto ZulDrak,40.37,45.49
-.use 38321 >>Kill Followers of Sseratus. Loot them for their Strange Mojo. Click it in your bags
-.collect 38321,1,12507 
-.accept 12507 >>Accept Strange Mojo
-step
-.goto ZulDrak,40.28,38.78
->>Go slightly inside the building of the Altar of Sseratus
-.complete 12506,1 
-step
->>Return to Stackhammer and Maga
-.turnin 12504 >>Turn in Argent Crusade, We Are Leaving!
-.goto ZulDrak,40.40,48.20
-.turnin 12508 >>Turn in Mopping Up
-.goto ZulDrak,40.36,48.21
-
-step
-#completewith next
-.goto ZulDrak,40.63,66.90
->>Talk to Teronus
-.accept 12796 >>Accept The Magical Kingdom of Dalaran
-.zoneskip Dalaran
-.skill coldweatherflying,1,1
-.xp <77,1
-.cooldown item,6948,>0
-step
-.goto ZulDrak,40.63,66.90
-.zone Dalaran >>Ask Teronus to be teleported to Dalaran
-.skipgossip
-.skill coldweatherflying,1,1
-.xp <77,1
-.cooldown item,6948,>0
-step
-.abandon 12796 >> Abandon The Magical Kingdom of Dalaran. DO NOT TURN THIS IN
-step << Mage
-.goto Dalaran,56.3,46.7
-.train 53140 >>Go inside the building. Train your Dalaran Portals
-.skill coldweatherflying,1,1
-.cooldown item,6948,>0
-step
-.goto Dalaran,69.81,45.45
-.train 54197 >> Train Cold Weather Flying from Hira Snowdawn
-.xp <77,1
-.cooldown item,6948,>0
-step
-#completewith next
-.hs >> Hearth to the Argent Stand
-.cooldown item,6948,>0
-step
->>Return to The Argent Stand. Talk to Ubungo, Eitrigg and Jax
-.turnin 12506 >>Turn in Trouble at the Altar of Sseratus
-.turnin 12507 >>Turn in Strange Mojo
-.accept 12510 >>Accept Precious Elemental Fluids
-.goto ZulDrak,40.52,65.61
-.turnin 12584 >>Turn in Pure Evil
-.goto ZulDrak,40.83,66.64
-.accept 12562 >>Accept The Drakkari Do Not Need Water Elementals!
-.goto ZulDrak,40.18,68.94
-step
-#sticky
-#completewith elefl
->>Kill the Drakkari Water Binders next to the water in the area
-.complete 12562,1 
-step
-#sticky
-#completewith elefl
->>Loot the flowers found within the pools of the area
-.complete 12597,1 
-step
-#label elefl
-.loop 50,ZulDrak,41.34,71.92,42.81,76.28,45.88,79.42,43.77,80.28,43.18,83.16,41.53,78.86,38.65,75.65,40.83,74.73,41.34,71.92
->>Kill the Crazed Water Spirits in the area. Loot them for their Links
-.use 38323 >>When you have 3 Water Elemental Links, turn them into a Tether to the Plane of Water. You must do this to be able to loot Links again
-.collect 38323,3,12510,1,1 
-.collect 38324,1,12510,0x1,1 
-.use 38324 >>Use the Tether to the Plane of Water in your bags to summon a Watery Lord. Kill and loot it for a Precious Elemental Fluid. You must do this to be able to loot Links again
-.complete 12510,1 
-step
-#completewith next
->>Loot the flowers found within the pools of the area
-.complete 12597,1 
-step
-.loop 50,ZulDrak,41.34,71.92,42.81,76.28,45.88,79.42,43.77,80.28,43.18,83.16,41.53,78.86,38.65,75.65,40.83,74.73,41.34,71.92
->>Kill the Drakkari Water Binders next to the water in the area
-.complete 12562,1 
-step
-.loop 50,ZulDrak,41.34,71.92,42.81,76.28,45.88,79.42,43.77,80.28,43.18,83.16,41.53,78.86,38.65,75.65,40.83,74.73,41.34,71.92
->>Loot the flowers found within the pools of the area
-.complete 12597,1 
-step
-.goto ZulDrak,48.77,78.87
->>Talk to Captain Brandon
-.turnin 12597 >>Turn in Something for the Pain
-.complete 12596,1 
-step
-#completewith next
-.goto ZulDrak,40.63,66.90
->>Talk to Teronus
-.accept 12796 >>Accept The Magical Kingdom of Dalaran
-.zoneskip Dalaran
-.skill coldweatherflying,1,1
-.xp <77,1
-.cooldown item,6948,>0
-step
-.goto ZulDrak,40.63,66.90
-.zone Dalaran >>Ask Teronus to be teleported to Dalaran
-.skipgossip
-.skill coldweatherflying,1,1
-.xp <77,1
-.cooldown item,6948,>0
-step
-.abandon 12796 >> Abandon The Magical Kingdom of Dalaran. DO NOT TURN THIS IN
-step << Mage
-.goto Dalaran,56.3,46.7
-.train 53140 >>Go inside the building. Train your Dalaran Portals
-.skill coldweatherflying,1,1
-.cooldown item,6948,>0
-step
-.goto Dalaran,69.81,45.45
-.train 54197 >> Train Cold Weather Flying from Hira Snowdawn
-.xp <77,1
-.cooldown item,6948,>0
-step
-#completewith next
-.hs >> Hearth to the Argent Stand
-.zoneskip ZulDrak
-.cooldown item,6948,>0
-step << Shaman
-#completewith next
-.hs >> Hearth to The Argent Stand
-.cooldown item,6948,>0
-.zoneskip Dalaran
-step
->>Return to The Argent Stand. Talk to Jax, Ubungo, and Pestlepot
-.turnin 12562 >>Turn in The Drakkari Do Not Need Water Elementals!
-.goto ZulDrak,40.18,68.94,-1
-.turnin 12510 >>Turn in Precious Elemental Fluids
-.accept 12514 >>Accept Mushroom Mixer
-.goto ZulDrak,40.52,65.61,-1
-.accept 12527 >>Accept Gluttonous Lurkers
-.goto ZulDrak,41.33,65.13
-step
-.goto ZulDrak,41.55,64.43
-.fp The Argent Stand >>Get the The Argent Stand Flight Path
-step
-#completewith next
-.goto ZulDrak,44.0,61.7,70,0
-.goto ZulDrak,42.2,56.5,70,0
-.goto ZulDrak,43.9,58.0,70,0
-.goto ZulDrak,47.5,62.7
->>Loot the glowing mushrooms and glowing sticks sticking out of the ground in the area
-.complete 12514,1 
-.complete 12599,1 
-step
-.goto ZulDrak,44.0,61.7,60,0
-.goto ZulDrak,42.2,56.5,60,0
-.goto ZulDrak,43.9,58.0,60,0
-.goto ZulDrak,47.5,62.7
-.collect 38380,25,12527,1,-5 
-.use 38380 >>Loot Zul'Drak Rats in the area. Use 5 of them on a basilisk to make them sleep. Loot their crystal
->>Make sure to enable "Critters and Companions" names under Interface -> Names to see the Rats easier.
-.complete 12527,1 
-step
-.goto ZulDrak,44.0,61.7,60,0
-.goto ZulDrak,42.2,56.5,60,0
-.goto ZulDrak,43.9,58.0,60,0
-.goto ZulDrak,47.5,62.7
->>Loot the glowing mushrooms and glowing sticks sticking out of the ground in the area
-.complete 12514,1 
-.complete 12599,1 
-step
->>Look for a group for The Amphitheater of Anguish questline. There are 6 elite quests that give a LOT of fast xp and a weapon that'll last you to 80. Only accept this when your party is ready and on the same quest progression as you. (Auto-accept is disabled for this questline). Skip this step if you can't find a group for it
-.groundgoto ZulDrak,46.3,57.9,50,0
-.goto ZulDrak,48.43,56.36
-.accept 12932,0 >>Accept The Amphitheater of Anguish: Yggdras!
-.xp <75,1
-step
-.goto ZulDrak,47.83,56.83
->>Kill Yggdras in the Amphitheater of Anguish
-.complete 12932,1 
-.isOnQuest 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12932 >>Turn in The Amphitheater of Anguish: Yggdras!
-.isQuestComplete 12932
-step
-.goto ZulDrak,48.43,56.36
->>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
-.accept 12933,0 >>Accept The Amphitheater of Anguish: Magnataur!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,47.83,56.83
->>Kill Stinkbeard in the Amphitheater of Anguish
-.complete 12933,1 
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12933 >>Turn in The Amphitheater of Anguish: Magnataur!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.43,56.36
->>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
-.accept 12934,0 >>Accept The Amphitheater of Anguish: From Beyond!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,47.83,56.83
->>Kill the Elemental Lord in the Amphitheater of Anguish
-.complete 12934,1 
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12934 >>Turn in The Amphitheater of Anguish: From Beyond!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.43,56.36
->>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
-.accept 12935,0 >>Accept The Amphitheater of Anguish: Tuskarrmageddon!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,47.83,56.83
->>Kill Orinoko in the Amphitheater of Anguish
-.complete 12935,1 
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12935 >>Turn in The Amphitheater of Anguish: Tuskarrmageddon!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.43,56.36
->>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
-.accept 12936,0 >>Accept The Amphitheater of Anguish: Korrak the Bloodrager!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,47.83,56.83
->>Kill Korrak in the Amphitheater of Anguish
-.complete 12936,1 
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12936 >>Turn in The Amphitheater of Anguish: Korrak the Bloodrager!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.43,56.36
->>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
-.accept 12948,0 >>Accept The Champion of Anguish
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,47.83,56.83
->>Kill Vladof in the Amphitheater of Anguish
-.complete 12948,1 
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12948 >>Turn in The Champion of Anguish
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.15,63.89
->>Talk to Captain Grondel
-.turnin 12599 >>Turn in Creature Comforts
-.complete 12596,3 
-step
-#completewith next
-.goto ZulDrak,40.63,66.90
->>Talk to Teronus
-.accept 12796 >>Accept The Magical Kingdom of Dalaran
-.zoneskip Stormwind City << Alliance !DK !Mage !Druid !Paladin !Priest
-.zoneskip Orgrimmar << Horde !DK !Mage !Druid !Paladin !Priest
-.zoneskip Dalaran
-.skill coldweatherflying,1,1
-.xp <77,1 << DK/Mage/Druid/Paladin/Priest
-.cooldown item,6948,>0
-step
-.goto ZulDrak,40.63,66.90
-.zone Dalaran >>Ask Teronus to be teleported to Dalaran
-.zoneskip Stormwind City << Alliance
-.zoneskip Orgrimmar << Horde
-.skipgossip
-.skill coldweatherflying,1,1
-.xp <77,1 << DK/Mage/Druid/Paladin/Priest
-.cooldown item,6948,>0
-step
-.abandon 12796 >> Abandon The Magical Kingdom of Dalaran. DO NOT TURN THIS IN
-step << Mage
-.goto Dalaran,56.3,46.7
-.train 53140 >>Go inside the building. Train your Dalaran Portals
-.cooldown item,6948,>0
-step
-.goto Dalaran,69.81,45.45
-.train 54197 >> Train Cold Weather Flying from Hira Snowdawn
-.xp <77,1
-.cooldown item,6948,>0
-step
-#completewith next
-.hs >> Hearth to the Argent Stand
-.zoneskip ZulDrak
-.cooldown item,6948,>0
-step
->>Return to The Argent Stand. Talk to Kunz and Ubungo
-.turnin 12596 >>Turn in Pa'Troll
-
-.goto ZulDrak,40.27,66.62,-1
-.turnin 12514 >>Turn in Mushroom Mixer
-.accept 12516 >>Accept Too Much of a Good Thing
-.goto ZulDrak,40.52,65.61,-1
-step
->>Talk to Captain Arnath and Finklestein
-.turnin 12609 >>Turn in Stocking the Shelves
-.turnin 12610 >>Turn in Clipping Their Wings
-.goto ZulDrak,35.61,52.23
-.turnin 12527 >>Turn in Gluttonous Lurkers
-.goto ZulDrak,35.02,52.11
-.isOnQuest 12609
-.isOnQuest 12610
-.xp <77,1
-step
->>Talk to Captain Arnath and Finklestein
-.turnin 12610 >>Turn in Clipping Their Wings
-.goto ZulDrak,35.61,52.23
-.turnin 12527 >>Turn in Gluttonous Lurkers
-.goto ZulDrak,35.02,52.11
-.isOnQuest 12610
-.xp <77,1
-step
->>Talk to Captain Arnath and Finklestein
-.turnin 12609 >>Turn in Stocking the Shelves
-.goto ZulDrak,35.61,52.23
-.turnin 12527 >>Turn in Gluttonous Lurkers
-.goto ZulDrak,35.02,52.11
-.isOnQuest 12609
-.xp <77,1
-step
-.goto ZulDrak,35.02,52.11
->>Talk to Alchemist Finklestein
-.turnin 12527 >>Turn in Gluttonous Lurkers
-step
-.goto ZulDrak,40.3,42.6
-.abandon 12792 >>Abandon First Things First
-.abandon 12541 >>Abandon Troll Patrol: The Alchemist's Apprentice
-.abandon 12587 >>Abandon Troll Patrol
-step
-.goto ZulDrak,40.46,42.52
-.use 38332 >>Use the Modified Mojo in your bags on the Prophet of Sseratus. Kill it
-.complete 12516,1 
-step << Druid
-#completewith DruidTrain1
-.cast 18960 >> Cast Teleport: Moonglade
-.zoneskip Moonglade
-.xp <75,1
-step << Druid
-.goto Moonglade,52.4,40.6
->>Go to Moonglade
-.train 48440 >> Train your class spells
-.xp <75,1
-.xp >77,1
-step << Druid
-#label DruidTrain1
-.goto Moonglade,52.4,40.6
->>Go to Moonglade
-.train 48465 >> Train your class spells
-.xp <78,1
-.skill coldweatherflying,<1,1
-step << DK
-#completewith DKTrain1
-.cast 50977 >> Cast Death Gate
-.zoneskip Eastern Plaguelands
-.xp <75,1
-step << DK
-.goto Eastern Plaguelands,80.3,48.0
->>Go through the Death Gate
-.train 49923 >> Train your class spells from Amal'Thazad in Acherus
-.xp <75,1
-step << DK
-.goto Eastern Plaguelands,80.3,48.0
->>Go through the Death Gate
-.train 49894 >> Train your class spells from Amal'Thazad in Acherus
-.xp <76,1
-step << DK
-#label DKTrain1
-.goto Eastern Plaguelands,80.3,48.0
->>Go through the Death Gate
-.train 49941 >> Train your class spells from Amal'Thazad in Acherus
-.xp <78,1
-.skill coldweatherflying,<1,1
-step << Mage
-#completewith MageTrain1
-.zone Stormwind City >> Teleport to Stormwind << Alliance
-.zone Undercity >> Teleport to Undercity << Horde
-.xp <76,1
-step << Mage
-.goto Stormwind City,49.2,87.7 << Alliance
-.goto Undercity,85.1,10.0 << Horde
-.train 42920 >> Train your class spells
-.xp <76,1
-step << Mage
-.goto Stormwind City,49.2,87.7 << Alliance
-.goto Undercity,85.1,10.0 << Horde
-.train 42985 >> Train your class spells
-.xp <77,1
-.skill coldweatherflying,<1,1
-step << Mage
-#label MageTrain1
-.goto Stormwind City,49.2,87.7 << Alliance
-.goto Undercity,85.1,10.0 << Horde
-.train 42914 >> Train your class spells
-.xp <78,1
-.skill coldweatherflying,<1,1
-step
-#completewith next
-.hs >> Hearth to The Argent Stand
-.xp <77,1 << DK/Mage/Druid/Paladin/Priest
-.skill coldweatherflying,<1,1
-.cooldown item,6948,>0
-step
->>Return to The Argent Stand. Talk to Ubungo
-.turnin 12516 >>Turn in Too Much of a Good Thing
-.accept 12623 >>Accept To the Witch Doctor
-.goto ZulDrak,40.52,65.61
-step
-#completewith next
-.goto ZulDrak,40.63,66.90
->>Talk to Teronus
-.accept 12796 >>Accept The Magical Kingdom of Dalaran
-.zoneskip Stormwind City << Alliance !DK !Mage !Druid !Paladin !Priest
-.zoneskip Orgrimmar << Horde !DK !Mage !Druid !Paladin !Priest
-.zoneskip Dalaran
-.skill coldweatherflying,1,1 << !DK !Mage !Druid !Paladin !Priest
-.xp <77,1 << DK/Mage/Druid/Paladin/Priest
-step
-.goto ZulDrak,40.63,66.90
-.zone Dalaran >>Ask Teronus to be teleported to Dalaran
-.zoneskip Stormwind City << Alliance
-.zoneskip Orgrimmar << Horde
-.skipgossip
-.skill coldweatherflying,1,1 << !DK !Mage !Druid !Paladin !Priest
-.xp <77,1 << DK/Mage/Druid/Paladin/Priest
-step
-.abandon 12796 >> Abandon The Magical Kingdom of Dalaran. DO NOT TURN THIS IN
-step << Mage
-.goto Dalaran,56.3,46.7
-.train 53140 >>Go inside the building. Train your Dalaran Portals
-.skill coldweatherflying,1,1
-step
-.goto Dalaran,69.81,45.45
-.train 54197 >> Train Cold Weather Flying from Hira Snowdawn
-.xp <77,1
-step << DK
-#completewith next
-.cast 50977 >> Cast Death Gate
-.zoneskip Eastern Plaguelands
-.xp <78,1
-step << DK
-.goto Eastern Plaguelands,80.3,48.0
->>Go through the Death Gate
-.train 49941 >> Train your class spells from Amal'Thazad in Acherus
-.xp <78,1
-step << DK/Mage/Druid/Paladin/Priest
-#completewith next
-.hs >> Hearth to The Argent Stand
-.zoneskip ZulDrak
-step << Alliance !DK !Druid !Mage !Paladin !Priest
-.goto Dalaran,40.2,56.3,20,0
-.goto Dalaran,40.1,62.8
-.zone Stormwind City >>Go into The Silver Enclave. Take the portal to Stormwind
-step << Alliance Shaman
-.goto Stormwind City,61.9,84.0
-.train 58803 >> Train your class spells
-.xp <76,1
-step << Alliance Warlock
-.goto Stormwind City,29.2,74.0,20,0
-.goto Stormwind City,27.2,78.1,15 >> Go into The Slaughtered Lamb and go downstairs
-.goto Stormwind City,25.3,78.7
-.train 47813 >> Train your class spells
-.xp <77,1
-step << Alliance Hunter
-.goto Stormwind City,67.3,37.1,15,0
-.goto Stormwind City,67.3,36.2
-.train 53338 >> Train your class spells
-.xp <76,1
-step << Alliance Rogue
-.goto Stormwind City,74.6,52.8
-.train 48637 >> Train your class spells
-.xp <76,1
-step << Alliance Warrior
-.goto Stormwind City,77.7,64.3,15,0
-.goto Stormwind City,80.1,61.5,15,0
-.goto Stormwind City,81.4,59.5,15,0
-.goto Stormwind City,78.6,45.8
-.train 55694 >> Train your class spells
-.xp <75,1
-step << Alliance Warrior
-.goto Stormwind City,77.7,64.3,15,0
-.goto Stormwind City,80.1,61.5,15,0
-.goto Stormwind City,81.4,59.5,15,0
-.goto Stormwind City,78.6,45.8
-.train 47436 >> Train your class spells
-.xp <78,1
-step << Alliance !DK !Druid !Mage !Paladin !Priest
-.goto Stormwind City,50.1,65.8
-.zone ZulDrak >> Ghetto Hearth to The Argent Stand. To do this, enter The Stockades, then copy paste the link below into chat. Wait out the 1 minute warning
-.link /run InviteUnit("a");C_Timer.After(1,function() LeaveParty() end) >> CLICK HERE
-step << Horde !DK !Druid !Mage !Paladin !Priest
-.goto Dalaran,55.5,37.1,20,0
-.goto Dalaran,55.3,25.4
-.zone Orgrimmar >>Go into Sunreaver's Sanctuary. Take the portal to Orgrimmar
-step << Horde Shaman
-.goto Orgrimmar,40.5,36.9,25,0
-.goto Orgrimmar,38.6,36.0
-.train 58803 >> Train your class spells
-.xp <76,1
-step << Horde Warlock
-.goto Orgrimmar,40.4,54.5,30,0
-.goto Orgrimmar,48.0,46.0
-.train 47813 >> Train your class spells
-.xp <77,1
-step << Horde Hunter
-.goto Orgrimmar,63.6,38.2,30,0
-.goto Orgrimmar,66.1,18.5
-.train 53338 >> Train your class spells
-.xp <76,1
-step << Horde Rogue
-.goto Orgrimmar,40.4,54.5,30,0
-.goto Orgrimmar,44.0,54.6
-.train 48637 >> Train your class spells
-.xp <76,1
-step << Horde Warrior
-.goto Orgrimmar,63.6,38.2,30,0
-.goto Orgrimmar,76.9,32.6,20,0
-.goto Orgrimmar,79.8,31.4
-.train 55694 >> Train your class spells
-.xp <75,1
-step << Horde Warrior
-.goto Orgrimmar,63.6,38.2,30,0
-.goto Orgrimmar,76.9,32.6,20,0
-.goto Orgrimmar,79.8,31.4
-.train 47436 >> Train your class spells
-.xp <78,1
-step << Horde !DK !Druid !Mage !Paladin !Priest
-.goto Orgrimmar,53.8,48.0
-.zone ZulDrak >> Ghetto Hearth to The Argent Stand. To do this, enter Ragefire Chasm, then copy paste the link below into chat. Wait out the 1 minute warning
-.link /run InviteUnit("a");C_Timer.After(1,function() LeaveParty() end) >> CLICK HERE
-step << !Mage !Priest !Warlock
-#completewith next
-.goto ZulDrak,36.70,72.72
->>Turn in 10 more Drakkari Offerings for the Blessing of Zim'Abwa to gain a 1h-long attack power buff
->>Skip this step if you are Balance << Druid
->>Skip this step if you are Elemental << Shaman
-.turnin 12567 >> Turn in Blessing of Zim'Abwa
-.itemcount 38551,20 
-step
->>Travel to Zim'Torga. Talk to Khufu
-.turnin 12623 >>Turn in To the Witch Doctor
-.accept 12627 >>Accept Breaking Through Jin'Alai
-.accept 12615 >>Accept The Blessing of Zim'Torga
-.goto ZulDrak,59.50,58.05
-
-step
-.goto ZulDrak,60.04,56.71
-.fp Zim'Torga >>Get the Zim'Torga Flight Path
-step
-.goto ZulDrak,59.15,56.21
->>Talk to Ahunae
-.accept 12622 >>Accept The Leaders at Jin'Alai
-step
-#sticky
-#label BZim
-.goto ZulDrak,59.52,57.20,0,0
->>Turn in at the statue in the center at Zim'Torga. Make sure you have 10 Drakkari Offerings
-.turnin 12615 >>Turn in The Blessing of Zim'Torga
-step
-#completewith Beargod
-.goto ZulDrak,59.33,57.30
-.home >> Set your Hearthstone to Zim'Torga
-step
-#requires BZim
-#completewith next
->>Kill Trolls in the area to make Gawanil, Kutube'sa, and Chulo the Mad spawn. Kill them, then loot the chest object drops on the ground.
-.complete 12622,2 
-.goto ZulDrak,58.10,62.10,0
-.complete 12622,1 
-.goto ZulDrak,57.34,63.51,0
-.complete 12622,3 
-.goto ZulDrak,56.44,64.90,0
-.unitscan Gawanil
-.unitscan Kutube'sa
-.unitscan Chulo the Mad
-step
-#requires BZim
->>Click on the Cauldrons in each corner of Jin'Alai
-.complete 12627,3 
-.goto ZulDrak,57.62,61.73,-1
-.complete 12627,4 
-.goto ZulDrak,58.78,62.70,-1
-.complete 12627,2 
-.goto ZulDrak,55.68,64.32,-1
-.complete 12627,1 
-.goto ZulDrak,57.21,65.35,-1
-step
->>Kill Trolls in the area to make Gawanil, Kutube'sa, and Chulo the Mad spawn. Kill them, then loot the chest object drops on the ground.
-.complete 12622,2 
-.goto ZulDrak,58.10,62.10,-1
-.complete 12622,1 
-.goto ZulDrak,57.34,63.51,-1
-.complete 12622,3 
-.goto ZulDrak,56.44,64.90,-1
-.unitscan Gawanil
-.unitscan Kutube'sa
-.unitscan Chulo the Mad
-step
-#questguide
->>Ride back to Zim'Torga. Talk to Khufu, To'kini, Ahunae, and Dagoda
-.turnin 12627 >>Turn in Breaking Through Jin'Alai
-.accept 12628 >>Accept To Speak With Har'koa
-.goto ZulDrak,59.50,58.05
-.accept 12635 >>Accept Relics of the Snow Leopard Goddess
-.accept 13099 >>Accept Just Checkin'
-.goto ZulDrak,59.98,57.93
-.turnin 12622 >>Turn in The Leaders at Jin'Alai
-.accept 12640 >>Accept Sealing the Rifts
-.goto ZulDrak,59.15,56.21
-.accept 12639 >>Accept The Frozen Earth
-.goto ZulDrak,59.40,56.41
-step
->>Ride back to Zim'Torga. Talk to Khufu, To'kini, Ahunae, and Dagoda
-.turnin 12627 >>Turn in Breaking Through Jin'Alai
-.accept 12628 >>Accept To Speak With Har'koa
-.goto ZulDrak,59.50,58.05
-.accept 12635 >>Accept Relics of the Snow Leopard Goddess
-.goto ZulDrak,59.98,57.93
-.turnin 12622 >>Turn in The Leaders at Jin'Alai
-.accept 12640 >>Accept Sealing the Rifts
-.goto ZulDrak,59.15,56.21
-.accept 12639 >>Accept The Frozen Earth
-.goto ZulDrak,59.40,56.41
-step
-#completewith next
->>Loot the tablets on the ground or against walls in the area
-.complete 12635,1 
-step
-.goto ZulDrak,63.71,70.42
->>Travel to the Altar of Har'Koa. Talk to Har'koa
-.turnin 12628 >>Turn in To Speak With Har'koa
-.accept 12632 >>Accept But First My Offspring
-step
-#completewith next
-.goto ZulDrak,63.0,70.7,0
->>Loot the tablets on the ground or against walls in the area
-.complete 12635,1 
-step
-.goto ZulDrak,65.4,67.9,60,0
-.goto ZulDrak,62.8,64.7,60,0
-.goto ZulDrak,60.4,69.1,60,0
-.goto ZulDrak,61.7,72.7,60,0
-.goto ZulDrak,65.4,67.9,60,0
-.goto ZulDrak,62.8,64.7,60,0
-.goto ZulDrak,60.4,69.1,60,0
-.goto ZulDrak,61.7,72.7
-.use 38676 >>Kill Cursed Offsprings of Har'Koa in the area. Use the Whisker of Har'koa in your bags on their corpses
-.complete 12632,1 
-step
-.loop 50,ZulDrak,65.10,70.24,62.58,66.02,62.10,67.85,60.82,68.58,63.60,72.48,63.71,70.42,65.10,70.24
->>Loot the tablets on the ground or against walls
-.complete 12635,1 
-step
-.goto ZulDrak,63.71,70.42
->>Talk to Har'koa
-.turnin 12632 >>Turn in But First My Offspring
-.accept 12642 >>Accept Spirit of Rhunok
-step << Shaman
-#completewith next
-.hs >> Hearth to Zim'Torga
-.cooldown item,6948,>0
-step
->>Return to Zim'Torga. Talk to To'kini and Khufu
-.turnin 12635 >>Turn in Relics of the Snow Leopard Goddess
-.accept 12650 >>Accept Plundering Their Own
-.accept 13549 >>Accept Tails Up
-.goto ZulDrak,59.98,57.93
-.accept 12655 >>Accept The Blessing of Zim'Rhuk
-.goto ZulDrak,59.50,58.05
-step
-#completewith Beargod
-.goto ZulDrak,56.9,50.4,0
-.goto ZulDrak,57.6,48.4,0
-.goto ZulDrak,55.4,43.0,0
-.goto ZulDrak,51.8,44.1,0
->>Kill Elemental Rifts and Frozen Earths in the area. Loot the Earths for their Essence
-.complete 12640,1 
-.complete 12639,1 
-step
-.goto ZulDrak,59.22,44.64
->>Turn in at the statue. Avoid the elites in the area
-.turnin 12655 >>Turn in The Blessing of Zim'Rhuk
-step
-.goto ZulDrak,53.39,39.01
->>Travel to the Altar of Rhunok. Talk to Rhunok
-.turnin 12642 >>Turn in Spirit of Rhunok
-.accept 12646 >>Accept My Prophet, My Enemy
-step
-#completewith Rhunok
-.goto ZulDrak,55.8,38.1,0
-.goto ZulDrak,57.3,34.1,0
-.goto ZulDrak,51.7,36.6,0
-.goto ZulDrak,54.0,46.6,0
->>Kill Trolls in the area. Loot them for their Artifacts
-.complete 12650,1 
-step
-#label Beargod
-.goto ZulDrak,54.07,47.54
->>Kill the Prophet of Rhunok underwater in the middle of the lake. Loot him for his Mojo
-.complete 12646,1 
-.unitscan Prophet of Rhunok
-step
-.loop 50,ZulDrak,57.99,49.44,56.85,45.45,55.77,44.11,55.01,42.07,53.16,44.23,51.51,42.53,50.93,44.85,50.70,47.34,52.07,51.99,53.72,52.50,56.30,52.80,57.99,49.44
->>Kill Elemental Rifts and Frozen Earths. Loot the Earths for their Essence
->>Be careful as the Frozen Earths are immune to nature damage << Shaman/Druid
-.complete 12640,1 
-.complete 12639,1 
-step
-.goto ZulDrak,53.39,39.01
->>Talk to Rhunok
-.turnin 12646 >>Turn in My Prophet, My Enemy
-.accept 12647 >>Accept An End to the Suffering
-step
-#completewith next
-.goto ZulDrak,53.38,35.79
->>Kill Rhunok's Tormenter. Loot him for the Tormentor's Incense
-.collect 38696,1,12647,1 
-step
-.goto ZulDrak,53.50,34.45
-.use 38696 >>Use the Tormentor's Incense in your bags on Rhunok (the sleeping bear)
-.cast 51964
-.timer 8,Rhunok RP
-.complete 12647,1 
-step
-#label Rhunok
-.goto ZulDrak,53.39,39.01
->>Talk to Rhunok
-.turnin 12647 >>Turn in An End to the Suffering
-.accept 12653 >>Accept Back to Har'koa
-step
-.loop 50,ZulDrak,58.78,37.52,55.65,33.17,55.53,37.11,51.52,36.94,51.43,32.85,48.90,35.09,50.52,40.58,56.22,40.44,58.78,37.52
->>Kill Trolls. Loot them for their Artifacts
-.complete 12650,1 
-step
-#completewith ZimTorga1
-.hs >> Hearth back to Zim'Torga
-step
-#completewith ZimTorga1
-.goto ZulDrak,59.4,57.2,0
->>Turn in 10 Drakkari Offerings to the statue in Zim'Torga for the 10% stat buff if you have enough offerings and the buff has expired
-.turnin 12618 >> Turn in Blessing of Zim'Torga
-step
->>Return to Zim'Torga. Talk to To'kini, Ahunae, and then Dagoda
-.turnin 12650 >>Turn in Plundering Their Own
-.goto ZulDrak,59.98,57.93
-.turnin 12640 >>Turn in Sealing the Rifts
-.accept 12659 >>Accept Scalps!
-.goto ZulDrak,59.15,56.21
-.turnin 12639 >>Turn in The Frozen Earth
-.accept 12662 >>Accept Bringing Down Heb'Jin
-.goto ZulDrak,59.40,56.41
-step
-#label ZimTorga1
-.goto ZulDrak,63.71,70.42
->>Return to the Altar of Har'Koa. Talk to Har'koa
-.turnin 12653 >>Turn in Back to Har'koa
-.accept 12665 >>Accept I Sense a Disturbance
-step
-#completewith next
-.goto ZulDrak,63.71,70.42
-.vehicle >> Talk to Har'koa. Ask her for one of her kittens to ride you to the Altar of Quetz'lun
-.skipgossip 28401,1
-.timer 131,I Sense a Disturbance RP
-step
-.goto ZulDrak,63.71,70.42,0
-.goto ZulDrak,75.79,58.45
->>Travel to the Altar of Quetz'lun on Har'koa's Kitten
-.complete 12665,1 
-step
-.goto ZulDrak,63.71,70.42
->>Ride back on Har'koa's Kitten to Har'Koa. Talk to her
-.turnin 12665 >>Turn in I Sense a Disturbance
-.accept 12666 >>Accept Preparations for the Underworld
-.skill coldweatherflying,<1,1
-step
-.goto ZulDrak,63.71,70.42
->>Exit the Vehicle (the Kitten). Return to Har'koa's Altar. Talk to Har'koa
-.turnin 12665 >>Turn in I Sense a Disturbance
-.accept 12666 >>Accept Preparations for the Underworld
-.skill coldweatherflying,1,1
-step
-.loop 50,ZulDrak,65.10,70.24,62.58,66.02,62.10,67.85,60.82,68.58,63.60,72.48,63.71,70.42,65.10,70.24
->>Kill Trolls in the area. Loot them for their Adornments
-.complete 12666,1 
-step
-.goto ZulDrak,63.71,70.42
->>Talk to Har'koa
-.turnin 12666 >>Turn in Preparations for the Underworld
-.accept 12667 >>Accept Seek the Wind Serpent Goddess
-step
-.loop 50,ZulDrak,71.37,72.97,73.93,70.86,75.16,73.54,77.88,70.87,76.02,64.30,74.12,68.22,72.78,64.52,71.07,68.02,71.37,72.97
-.use 44890 >>Use To'kini's Blowgun on Frost Leopards and Icepaw Bears
->>Talk to them while they are asleep to check if they're a male (they'll attack you) or female (objective will complete)
-.complete 13549,1 
-.complete 13549,2 
-.skipgossip
-step
-.goto ZulDrak,75.38,58.62
->>Travel to the Altar of Quetz'lun. Talk to Quetz'lun's Spirit
-.turnin 12667 >>Turn in Seek the Wind Serpent Goddess
-.accept 12672 >>Accept Setting the Stage
-step
-.loop 50,ZulDrak,74.59,58.38,72.81,58.07,72.07,56.63,70.21,57.07,69.32,58.89,71.18,62.22,72.08,60.57,72.78,59.18,73.85,59.26,74.59,58.38
-.link /console ffxDeath 0 >>Loot the floating crystals in the area. If you can't see because of the ghost effect, copy paste this command (Click here), then type /reload
-.complete 12672,1 
-step
-.goto ZulDrak,75.38,58.62
->>Talk to Quetz'lun's Spirit
-.turnin 12672 >>Turn in Setting the Stage
-.accept 12668 >>Accept Foundation for Revenge
-step
-.loop 40,ZulDrak,74.05,55.35,72.30,55.52,71.06,57.05,69.78,57.07,69.80,60.21,71.04,60.23,72.64,58.64,74.05,55.35
->>Kill Quetz'lun Worshippers or Berserkers on the Soul Fonts. Make sure they get the debuff for it
->>Make sure you DO NOT kill any named mobs, as you'll need them after
-.complete 12668,1 
-step
-.goto ZulDrak,75.38,58.62
->>Talk to Quetz'lun's Spirit
-.turnin 12668 >>Turn in Foundation for Revenge
-.accept 12674 >>Accept Hell Hath a Fury
-step
-#completewith next
-.goto ZulDrak,73.55,60.79
-.cast 52251 >>Use the Quetz'lun's Hexxing Stick in your bags on Tua'ua to debuff her
-.use 39158
-step
-.goto ZulDrak,73.55,60.79
-.use 39158 >> Kill Tua'ua after debuffing her with the Hexxing Stick
-.complete 12674,2 
-step
-#completewith next
-.goto ZulDrak,74.53,57.39
-.cast 52251 >>Use the Quetz'lun's Hexxing Stick in your bags on Mu'funu to debuff him
-.use 39158
-step
-.goto ZulDrak,74.53,57.39
-.use 39158 >> Kill Mu'funu after debuffing him with the Hexxing Stick
-.complete 12674,1 
-step
-#completewith next
-.cast 52251 >>Use the Quetz'lun's Hexxing Stick in your bags on Hawinni to debuff him
-.use 39158
-step
-.goto ZulDrak,75.51,54.87,40,0
-.goto ZulDrak,77.65,54.90
-.use 39158 >> Kill Hawinni after debuffing him with the Hexxing Stick
-.complete 12674,3 
-.unitscan High Priest Hawinni
-step
-.goto ZulDrak,75.38,58.62
->>Talk to Quetz'lun's Spirit
-.turnin 12674 >>Turn in Hell Hath a Fury
-.accept 12675 >>Accept One Last Thing
-step
-.goto ZulDrak,63.71,70.42
->>Return to the Altar of Har'Koa. Talk to Har'koa
-.turnin 12675 >>Turn in One Last Thing
-.accept 12684 >>Accept Blood of a Dead God
-step
-#completewith Hebjin
-.goto ZulDrak,62.4,51.0,0
-.goto ZulDrak,65.5,55.1,0
-.use 38731 >>Kill Heb'Drakker trolls. Use Ahunae's Knife in your bags to scalp them
-.complete 12659,1 
-step
-#completewith next
-.goto ZulDrak,64.23,52.52
-.cast 6247 >> Use the Drum in Heb'Drakkar to summon Heb'Jin
-step
-#label Hebjin
-.goto ZulDrak,64.50,52.04
-.use 39041 >>Use the Bat Net in your bags on Heb'Jin's Bat. Kill Heb'Jin
-.complete 12662,1 
-.unitscan Heb'Jin's Bat
-step
-.goto ZulDrak,63.12,50.40,60,0
-.goto ZulDrak,61.29,52.41,60,0
-.goto ZulDrak,64.97,56.50,60,0
-.goto ZulDrak,67.25,52.97
-.use 38731 >>Kill Heb'Drakker trolls. Use Ahunae's Knife in your bags to scalp them
-.complete 12659,1 
-step
-.loop 50,ZulDrak,69.72,50.45,70.45,47.95,72.21,47.95,73.04,46.00,,74.24,49.01,77.70,47.75,75.47,50.86,72.64,51.87,69.72,50.45
->>Kill Bloods of Mam'toth. Loot them for their Bloods
-.complete 12684,1 
-step
-.goto ZulDrak,63.71,70.42
->>Return to the Altar of Har'Koa. Talk to Har'koa
-.turnin 12684 >>Turn in Blood of a Dead God
-.accept 12685 >>Accept You Reap What You Sow
-step
-#completewith next
-.cast 52366 >>Travel to the Altar of Quetz'lun. Use the Quetz'lun's Ritual in your bags on Quetz'lun's corpse
-.timer 38,You Reap What You Sow RP
-.use 39187
-step
-.goto ZulDrak,76.01,58.62
->>NOTE: The mobs at the Altar are now neutral to you
->>Wait out the RP event. Kill the Drained Prophet of Quetz'lun
-.complete 12685,1 
-.use 39187
-step << Shaman
-#completewith Medallion
-.hs >> Hearth back to Zim'Torga
-.cooldown item,6948,>0
-step
-#completewith next
-.goto ZulDrak,59.52,57.20,0,0
->>Turn in 10 Drakkari Offerings to the statue in Zim'Torga for the 10% stat buff if you have enough offerings and the buff has expired
-.turnin 12618 >> Turn in Blessing of Zim'Torga
-.itemcount 38551,10 
-step
->>Return to Zim'Torga. Talk to Khufu, To'kini, Har'koa, Dagoda, and Ahunae
-.turnin 12685 >>Turn in You Reap What You Sow
-.goto ZulDrak,59.50,58.05
-.turnin 13549 >>Turn in Tails Up
-.accept 12709 >>Accept Hexed Caches
-.goto ZulDrak,59.98,57.93
-.accept 12712 >>Accept The Key of Warlord Zol'Maz
-.goto ZulDrak,60.28,57.76
-.turnin 12662 >>Turn in Bringing Down Heb'Jin
-.accept 12708 >>Accept Enchanted Tiki Warriors
-.goto ZulDrak,59.40,56.41
-.turnin 12659 >>Turn in Scalps!
-.accept 12707 >>Accept Wooly Justice
-.goto ZulDrak,59.15,56.21
-step
-#label Medallion
-#completewith next
-.goto ZulDrak,69.37,44.17
-.vehicle >>Use the Medallion of Mam'toth in your bags on an Enraged Mammoth. Ride it
-.use 39268
-step
-.goto ZulDrak,70.76,43.13,60,0
-.goto ZulDrak,74.86,42.98,60,0
-.goto ZulDrak,72.52,39.35,60,0
-.goto ZulDrak,70.76,43.13,60,0
-.goto ZulDrak,74.86,42.98,60,0
-.goto ZulDrak,72.52,39.35
-.use 39268 >>Use the Medallion on another Mammoth if needed
->>Use Rushing Charge (1) to charge to a Mam'toth Disciple when you're out of combat. Spam Trample (2) to kill the Disciples. You may need to get on another Mammoth later if yours dies
-.complete 12707,1 
-step
-#completewith Caches
-.goto ZulDrak,66.0,36.1,0
-.goto ZulDrak,69.0,35.9,0
->>Kill Tiki Warriors
-.complete 12708,1 
-step
-#completewith ZolMaz
-.goto ZulDrak,66.0,36.1,0
-.goto ZulDrak,69.0,35.9,0
->>Loot the small bamboo chests on the ground
-.complete 12709,1 
-step
->>Kill Tiri, Drek'Maz, and Yara. Loot them for their Incantation, Tiki, and Sword
-.collect 39316,1,12712,1 
-.goto ZulDrak,63.81,37.09
-.collect 39315,1,12712,1 
-.goto ZulDrak,68.20,35.36
-.collect 39313,1,12712,1 
-.goto ZulDrak,67.94,32.71
-step
-.goto ZulDrak,66.16,33.44
-.use 39316 >>Click the Incantation, Tiki, or Sword in your bags to combine them into the Tiki Dervish Ceremony
-.collect 39314,1,12712,1 
-step
-#completewith next
-.goto ZulDrak,66.16,33.44
-.cast 52669 >>Use the Tiki Dervish Ceremony outside of Zol'Maz's gate
-.use 39314
-step
-#label ZolMaz
-.goto ZulDrak,66.17,32.80
-.use 39314 >>Kill Warlord Zol'Maz
->>Be careful as Zol'Maz is somewhat difficult, and you will have to re-make the Dervish Ceremony if you fail (by killing his family again). Group up for this if needed
-.complete 12712,1 
-step
-#label Caches
-.loop 50,ZulDrak,68.00,33.67,63.78,33.81,63.72,38.24,67.38,38.75,69.52,35.43,68.00,33.67
->>Loot the small bamboo chests in the area
-.complete 12709,1 
 step
 .loop 50,ZulDrak,68.00,33.67,63.78,33.81,63.72,38.24,67.38,38.75,69.52,35.43,68.00,33.67
->>Kill Tiki Warriors in the area
-.complete 12708,1 
-step << Druid
-#completewith next
-.cast 18960 >> Cast Teleport: Moonglade
-.zoneskip Moonglade
-.xp <78,1
-step << Druid
-.goto Moonglade,52.4,40.6
->>Go to Moonglade
-.train 48465 >> Train your class spells
-.xp <78,1
-step << DK
-#completewith DKTrain2
-.cast 50977 >> Cast Death Gate
-.zoneskip Eastern Plaguelands
-.xp <76,1
-step << DK
-.goto Eastern Plaguelands,80.3,48.0
->>Go through the Death Gate
-.train 49894 >> Train your class spells from Amal'Thazad in Acherus
-.xp <76,1
-step << DK
-#label DKTrain2
-.goto Eastern Plaguelands,80.3,48.0
->>Go through the Death Gate
-.train 49941 >> Train your class spells from Amal'Thazad in Acherus
-.xp <78,1
-step << Mage
-#completewith MageTrain2
-.zone Stormwind City >> Teleport to Stormwind << Alliance
-.zone Undercity >> Teleport to Undercity << Horde
-.xp <76,1
-step << Mage
-.goto Stormwind City,49.2,87.7 << Alliance
-.goto Undercity,85.1,10.0 << Horde
-.train 42920 >> Train your class spells
-.xp <76,1
-step << Mage
-.goto Stormwind City,49.2,87.7 << Alliance
-.goto Undercity,85.1,10.0 << Horde
-.train 42985 >> Train your class spells
-.xp <77,1
-step << Mage
-#label MageTrain2
-.goto Stormwind City,49.2,87.7 << Alliance
-.goto Undercity,85.1,10.0 << Horde
-.train 42914 >> Train your class spells
-.xp <78,1
-step
-#completewith ZimTorga5
-.hs >> Hearth to Zim'Torga
-step
-#completewith ZimTorga5
-.goto ZulDrak,59.52,57.20,0,0
->>Turn in 10 Drakkari Offerings to the statue in Zim'Torga for the 10% stat buff if you have enough offerings and the buff has expired
-.turnin 12618 >> Turn in Blessing of Zim'Torga
-.itemcount 38551,10 
-step
-#questguide
->>Return to Zim'Torga. Talk to To'kini, Har'koa, Dagoda, and Ahunae
-.turnin 12709 >>Turn in Hexed Caches
-.goto ZulDrak,59.98,57.93
-.turnin 12712 >>Turn in The Key of Warlord Zol'Maz
-.accept 12721 >>Accept Rampage
-.goto ZulDrak,60.28,57.76
-.turnin 12708 >>Turn in Enchanted Tiki Warriors
-.goto ZulDrak,59.40,56.41
-.turnin 12707 >>Turn in Wooly Justice
-.goto ZulDrak,59.15,56.21
-step
-#label ZimTorga5
->>Return to Zim'Torga. Talk to To'kini, Har'koa, Dagoda, and Ahunae
-.turnin 12709 >>Turn in Hexed Caches
-.goto ZulDrak,59.98,57.93
-.turnin 12712 >>Turn in The Key of Warlord Zol'Maz
-.goto ZulDrak,60.28,57.76
-.turnin 12708 >>Turn in Enchanted Tiki Warriors
-.goto ZulDrak,59.40,56.41
-.turnin 12707 >>Turn in Wooly Justice
-.goto ZulDrak,59.15,56.21
-step
-#label ZimTorga3
-#questguide
-.goto ZulDrak,78.3,25.6
->>Ride North-East to Akali
->>Unlock the 4 anchors surrounding him to free him
-.complete 12721,1 
-step << Hunter
-#questguide
-#completewith Dubra
-.goto ZulDrak,70.2,23.3
-.vendor >> Buy Ammo if needed
-step << Shaman
-#questguide
-.goto ZulDrak,70.4,23.3
-.fp Dubra'Jin >> Get the Dubra'Jin flight path
-step
-#questguide
-#label Dubra
-.goto ZulDrak,70.0,21.0
->>Travel to Dubra'Jin
-.turnin 13099 >>Turn in Just Checkin'
-
-
-.accept 13556 >>Accept Eggs for Dubra'Jin
-
-step
-#questguide
-.goto ZulDrak,77.0,16.7,70,0
-.goto ZulDrak,72.1,20.1,70,0
-.goto ZulDrak,71.9,31.2
->>Loot the small raptor eggs found next to the trees. Also kill Gundrak Raptors, loot them for their eggs
-.complete 13556,1 
-step
-#questguide
-.goto ZulDrak,70.0,21.0
->>Return to Ha'wana
-.turnin 13556 >>Turn in Eggs for Dubra'Jin
-step << Shaman
-#questguide
-#completewith next
-.hs >> Hearth to Zim'Torga
-step << !Shaman
-#questguide
-#completewith next
-.goto ZulDrak,70.4,23.3
-.fp Dubra'Jin >> Get the Dubra'Jin flight path
-.fly Zim'Torga >> Fly to Zim'Torga
-step
-#questguide
-.goto ZulDrak,59.5,58.0
->>Return to Zim'Torga. Talk to Khufu
-.turnin 12721 >>Turn in Rampage
-.accept 12729 >>Accept The Gods Have Spoken
-step << !Warrior !Rogue !DK
-#questguide
-#completewith next
->>If you have 10+ Drakkari Offerings, turn in at the statue of Zim'Rhuk to get the buff
-.turnin 12656 >> Turn in Blessing of Zim'Rhuk
-.itemcount 38551,10 
-step
-#questguide
-.goto ZulDrak,58.8,45.4
->>Kill Guardians of Zim'Rhuk in the area. Loot them for the Unblemished Heart
-.complete 12729,1 
-step
-#questguide
-.goto ZulDrak,71.3,55.2
->>Kill Altar Wardens in the area. Loot them for their Gusty Essence
-.complete 12729,2 
-step
-#questguide
-.goto ZulDrak,60.3,57.7
->>Return to Zim'torga. Talk to Har'koa
-.turnin 12729 >>Turn in The Gods Have Spoken
-.accept 12730 >>Accept Convocation at Zol'Heb
-step
-#questguide
-.goto ZulDrak,77.5,36.6
-.use 39566 >>Use the Prophet of Akali Convocation in your bags at the green circle atop Zol'Heb. Kill the Prophet of Akail that appears. This quest is VERY hard, so group up for it if needed.
-.complete 12730,1 
-step
-#questguide
-#completewith next
-.hs >> Hearth to Zim'Torga
-step
-#questguide
-.goto ZulDrak,60.2,57.8
->>Return to Zim'Torga. Talk to Har'koa
-.turnin 12730 >>Turn in Convocation at Zol'Heb
-.accept 13097 >>Accept Unfinished Business
-step
-#questguide
-#completewith next
-.goto ZulDrak,60.0,56.7
-.fly Gundrak >> Fly to Gundrak
-step
-#questguide
-.goto ZulDrak,70.0,22.9
-.turnin 13097 >>Turn in Unfinished Business
-
-
-step
-#completewith DalaranTP2
-.goto ZulDrak,60.04,56.71
-.fly The Argent Stand >> Fly to The Argent Stand
-.istrained 53140 << Mage
-step << !Mage !Priest !Warlock
-#completewith next
-.goto ZulDrak,36.7,72.7
->>Turn in 10 Drakkari Offerings for the Blessing of Zim'Abwa to gain a 1h-long attack power buff
->>Skip this step if you are Balance << Druid
->>Skip this step if you are Elemental << Shaman
-.turnin 12567 >> Turn in Blessing of Zim'Abwa
-.itemcount 38551,10 
-step
->>Look for a group for The Amphitheater of Anguish questline. There are 6 elite quests that give a LOT of fast xp and a weapon that'll last you to 80. Only accept this when your party is ready and on the same quest progression as you. (Auto-accept is disabled for this questline). Skip this step if you can't find a group for it
-.groundgoto ZulDrak,46.3,57.9,50,0
-.goto ZulDrak,48.43,56.36
-.accept 12932,0 >>Accept The Amphitheater of Anguish: Yggdras!
-.xp <75,1
-step
-.goto ZulDrak,47.83,56.83
->>Kill Yggdras in the Amphitheater of Anguish
-.complete 12932,1 
-.isOnQuest 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12932 >>Turn in The Amphitheater of Anguish: Yggdras!
-.isQuestComplete 12932
-step
-.goto ZulDrak,48.43,56.36
->>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
-.accept 12933,0 >>Accept The Amphitheater of Anguish: Magnataur!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,47.83,56.83
->>Kill Stinkbeard in the Amphitheater of Anguish
-.complete 12933,1 
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12933 >>Turn in The Amphitheater of Anguish: Magnataur!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.43,56.36
->>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
-.accept 12934,0 >>Accept The Amphitheater of Anguish: From Beyond!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,47.83,56.83
->>Kill the Elemental Lord in the Amphitheater of Anguish
-.complete 12934,1 
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12934 >>Turn in The Amphitheater of Anguish: From Beyond!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.43,56.36
->>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
-.accept 12935,0 >>Accept The Amphitheater of Anguish: Tuskarrmageddon!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,47.83,56.83
->>Kill Orinoko in the Amphitheater of Anguish
-.complete 12935,1 
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12935 >>Turn in The Amphitheater of Anguish: Tuskarrmageddon!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.43,56.36
->>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
-.accept 12936,0 >>Accept The Amphitheater of Anguish: Korrak the Bloodrager!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,47.83,56.83
->>Kill Korrak in the Amphitheater of Anguish
-.complete 12936,1 
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12936 >>Turn in The Amphitheater of Anguish: Korrak the Bloodrager!
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.43,56.36
->>Talk to Gurgthock. Only accept this when your party is ready and on the same quest progression as you.
-.accept 12948,0 >>Accept The Champion of Anguish
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,47.83,56.83
->>Kill Vladof in the Amphitheater of Anguish
-.complete 12948,1 
-.isQuestTurnedIn 12932
-step
-.goto ZulDrak,48.47,56.41
->>Talk to Wodin
-.turnin 12948 >>Turn in The Champion of Anguish
-.isQuestTurnedIn 12932
-step << !Druid !DK !Mage
-.goto ZulDrak,40.8,66.3
->>Return to The Argent Stand
-.home >> Set your Hearthstone to The Argent Stand
->>Buy Food/water if needed
-step << !DK !Mage !Druid !Paladin !Priest
-#completewith next
-.goto ZulDrak,40.63,66.90
->>Talk to Teronus
-.accept 12796 >>Accept The Magical Kingdom of Dalaran
-.zoneskip Stormwind City << Alliance
-.zoneskip Orgrimmar << Horde
-.zoneskip Dalaran
-step << !DK !Mage !Druid !Paladin !Priest
-.goto ZulDrak,40.63,66.90
-.zone Dalaran >>Ask Teronus to be teleported to Dalaran
-.zoneskip Stormwind City << Alliance
-.zoneskip Orgrimmar << Horde
-.skipgossip
-step << !DK !Druid !Mage !Paladin !Priest
-.abandon 12796 >> Abandon The Magical Kingdom of Dalaran. DO NOT TURN THIS IN
-step << Alliance !DK !Druid !Mage !Paladin !Priest
-.goto Dalaran,40.2,56.3,20,0
-.goto Dalaran,40.1,62.8
-.zone Stormwind City >>Go into The Silver Enclave. Take the portal to Stormwind
-step << Alliance Shaman
-.goto Stormwind City,61.9,84.0
-.train 58803 >> Train your class spells
-.xp <76,1
-step << Alliance Warlock
-.goto Stormwind City,29.2,74.0,20,0
-.goto Stormwind City,27.2,78.1,15 >> Go into The Slaughtered Lamb and go downstairs
-.goto Stormwind City,25.3,78.7
-.train 47813 >> Train your class spells
-.xp <77,1
-step << Alliance Hunter
-.goto Stormwind City,67.3,37.1,15,0
-.goto Stormwind City,67.3,36.2
-.train 53338 >> Train your class spells
-.xp <76,1
-step << Alliance Rogue
-.goto Stormwind City,74.6,52.8
-.train 48637 >> Train your class spells
-.xp <76,1
-step << Alliance Warrior
-.goto Stormwind City,77.7,64.3,15,0
-.goto Stormwind City,80.1,61.5,15,0
-.goto Stormwind City,81.4,59.5,15,0
-.goto Stormwind City,78.6,45.8
-.train 47436 >> Train your class spells
-.xp <78,1
-step << Alliance !DK !Druid !Mage !Paladin !Priest
-.goto Stormwind City,50.1,65.8
-.zone ZulDrak >> Ghetto Hearth to The Argent Stand. To do this, enter The Stockades, then copy paste the link below into chat. Wait out the 1 minute warning
-.link /run InviteUnit("a");C_Timer.After(1,function() LeaveParty() end) >> CLICK HERE
-step << Horde !DK !Druid !Mage !Paladin !Priest
-.goto Dalaran,55.5,37.1,20,0
-.goto Dalaran,55.3,25.4
-.zone Orgrimmar >>Go into Sunreaver's Sanctuary. Take the portal to Orgrimmar
-step << Horde Shaman
-.goto Orgrimmar,40.5,36.9,25,0
-.goto Orgrimmar,38.6,36.0
-.train 58803 >> Train your class spells
-.xp <76,1
-step << Horde Warlock
-.goto Orgrimmar,40.4,54.5,30,0
-.goto Orgrimmar,48.0,46.0
-.train 47813 >> Train your class spells
-.xp <77,1
-step << Horde Hunter
-.goto Orgrimmar,63.6,38.2,30,0
-.goto Orgrimmar,66.1,18.5
-.train 53338 >> Train your class spells
-.xp <76,1
-step << Horde Rogue
-.goto Orgrimmar,40.4,54.5,30,0
-.goto Orgrimmar,44.0,54.6
-.train 48637 >> Train your class spells
-.xp <76,1
-step << Horde Warrior
-.goto Orgrimmar,63.6,38.2,30,0
-.goto Orgrimmar,76.9,32.6,20,0
-.goto Orgrimmar,79.8,31.4
-.train 47436 >> Train your class spells
-.xp <78,1
-step << Horde !DK !Druid !Mage !Paladin !Priest
-.goto Orgrimmar,53.8,48.0
-.zone ZulDrak >> Ghetto Hearth to The Argent Stand. To do this, enter Ragefire Chasm, then copy paste the link below into chat. Wait out the 1 minute warning
-.link /run InviteUnit("a");C_Timer.After(1,function() LeaveParty() end) >> CLICK HERE
-step
-#label DalaranTP2
-#completewith next
-.goto ZulDrak,40.63,66.90
->>Talk to Teronus
-.accept 12796 >>Accept The Magical Kingdom of Dalaran
-.zoneskip Dalaran
-step
-.goto ZulDrak,40.63,66.90
-.zone Dalaran >>Ask Teronus to be teleported to Dalaran
-.skipgossip
-step
-.abandon 12796 >> Abandon The Magical Kingdom of Dalaran. DO NOT TURN THIS IN
-step << Alliance !Mage
-.goto Dalaran,45.1,60.5,15,0
-.goto Dalaran,44.66,63.36
-.home >>Set your Hearthstone to Dalaran
-step << Horde !Mage
-.goto Dalaran,57.5,33.5,30,0
-.goto Dalaran,63.8,32.8,20,0
-.goto Dalaran,65.6,32.2
-.home >>Set your Hearthstone to Dalaran
-step << Mage
-.goto Dalaran,56.3,46.7
-.train 53140 >>Go inside the building. Train your Dalaran Portals
-step
-.goto Dalaran,72.18,45.77
-.fp Dalaran >> Get the Dalaran flight path
-step
-.xp <77,1
-.goto Dalaran,69.81,45.45
-.train 54197 >> Train Cold Weather Flying from Hira Snowdawn
+>>Whenever your lockouts expire while using this guide, switch back to the main Dungeon Cleave guide
+.xp 77 >> Grind the mobs in Zol'Maz until your lockouts expire. Try to take one corner of the subzone each to force dynamic respawns
 ]])
 RXPGuides.RegisterGuide([[
-#version 6
-#wotlk
-#group Horde 70-80 << Horde
-#group Alliance 70-80 << Alliance
-#name 77-78 Sholazar Basin
-#next 78-79 The Storm Peaks
-step
-#completewith next
-.goto Dalaran,68.54,42.07
->>Go to Krasus's Landing. Talk to Pentarus
-.accept 12521 >>Accept Where in the World is Hemet Nesingwary?
-step
-.goto Dalaran,68.54,42.07
-.zone SholazarBasin >>Ask Pentarus to take you to Sholazar Basin
-.skipgossip
-.timer 47,Pentarus Flight RP
-step
-.goto SholazarBasin,39.70,58.65
->>Talk to Monte hanging from the tree
-.turnin 12521 >>Turn in Where in the World is Hemet Nesingwary?
-.accept 12489 >>Accept Welcome to Sholazar Basin
-step << Mage
-#completewith Helice
-.goto SholazarBasin,26.8,59.3
-.home >> Set your Hearthstone to Nesingwary Base Camp
->>Buy food if needed
-step
->>Travel to Nesingwary Base Camp. Talk to Hemet, Debaar, and Chad
-.turnin 12489 >>Turn in Welcome to Sholazar Basin
-.goto SholazarBasin,27.09,58.64
-.accept 12524 >>Accept Venture Co. Misadventure
-.goto SholazarBasin,27.25,59.90
-.accept 12624 >>Accept It Could Be Anywhere!
-.goto SholazarBasin,26.86,58.94
-step
-.goto SholazarBasin,25.35,58.48
->>Talk to Weslex
-.accept 12522 >>Accept Need an Engine, Take an Engine
-step
-#completewith RingX
->>Kill any mob in Sholazar for the Golden Engagement Ring. Don't focus on this quest at all
-.complete 12624,1 
-step
-.goto SholazarBasin,38.69,56.72
->>Loot the "engine" outside of the water next to the flying machine
-.complete 12522,1 
-step
-#completewith Helice
-.goto SholazarBasin,36.8,47.3,0
->>Kill the Venture Co. in Swindlegrin's Dig
-.complete 12524,1 
-step
-.goto SholazarBasin,35.55,47.42
->>Talk to Engineer Helice to start her escort
-.accept 12688 >>Accept Engineering a Disaster
-step
-#label Helice
-.goto SholazarBasin,37.27,50.59
->>Escort Helice
-.complete 12688,1 
-step
-.goto SholazarBasin,37.35,45.78,50,0
-.goto SholazarBasin,33.31,45.31,50,0
-.goto SholazarBasin,33.13,47.90
->>Kill the Venture Co. in Swindlegrin's Dig
-.complete 12524,1 
-step
->>Return to Nesingwary's Base Camp. Talk to Hemet and Debaar
-.turnin 12688 >>Turn in Engineering a Disaster
-.goto SholazarBasin,27.09,58.64
-.turnin 12524 >>Turn in Venture Co. Misadventure
-.accept 12525 >>Accept Wipe That Grin Off His Face
-.goto SholazarBasin,27.25,59.90
-.isQuestComplete 12688
-step
-.goto SholazarBasin,27.25,59.90
->>Talk to Debaar
-.turnin 12524 >>Turn in Venture Co. Misadventure
-.accept 12525 >>Accept Wipe That Grin Off His Face
-step
-.goto SholazarBasin,26.86,58.94
->>Talk to Chad
-.turnin 12624 >>Turn in It Could Be Anywhere!
-.isQuestComplete 12624
-step
-.goto SholazarBasin,25.35,58.48
->>Talk to Weslex
-.turnin 12522 >>Turn in Need an Engine, Take an Engine
-.accept 12523 >>Accept Have a Part, Give a Part
-step
-#completewith next
-.goto SholazarBasin,33.2,45.7,0
->>Loot the various spare parts found around Swindlegrin's Dig
-.complete 12523,1 
-step
-.goto SholazarBasin,35.49,50.00
->>Kill Foreman Swindlegrin and Meatpie on the wooden platform
-.complete 12525,1 
-.complete 12525,2 
-step
-.goto SholazarBasin,33.2,45.7,50,0
-.goto SholazarBasin,37.03,46.72
->>Loot the various spare parts found around Swindlegrin's Dig
-.complete 12523,1 
-step
-.goto SholazarBasin,25.35,58.48
->>Talk to Weslex, then talk to the Flying Machine and Calvert
-.turnin 12523 >>Turn in Have a Part, Give a Part
-.fp Nesingwary Base Camp >> Get the Nesingwary Base Camp flight path
-.goto SholazarBasin,25.27,58.45
-.accept 12696 >>Accept Aerial Surveillance
-.goto SholazarBasin,25.41,58.47
-
-step
->>Talk to Debaar, then Drostan
-.turnin 12525 >>Turn in Wipe That Grin Off His Face
-.goto SholazarBasin,27.25,59.90
-.accept 12589 >>Accept Kick, What Kick?
-.goto SholazarBasin,27.08,59.91
-step
-.goto SholazarBasin,27.08,59.91
-.use 38573 >> Equip the RJR Rifle in your bags, then use it to shoot Lucky Wilhelm. Do it until the objective completes
-.complete 12589,1 
-.turnin 12589 >>Turn in Kick, What Kick?
-.accept 12592 >>Accept The Great Hunter's Challenge
-step
-#completewith end
-#label CBAnywhere
-.goto SholazarBasin,26.86,58.94
->>Talk to Chad
-.turnin 12624 >>Turn in It Could Be Anywhere!
-.isQuestComplete 12624
-step
->>Re-Equip your ranged weapon << Hunter/Rogue/Warrior
->>Re-Equip your Relic << Shaman
->>Re-Equip your Libram << Paladin
->>Re-Equip your Idol << Druid
->>Re-Equip your Wand << Priest/Warlock/Mage
->>Talk to Hemet and Buck
-.accept 12520 >>Accept Rhino Mastery: The Test
-.goto SholazarBasin,27.09,58.64
-.accept 12549 >>Accept Dreadsaber Mastery: Becoming a Predator
-.goto SholazarBasin,26.67,59.03
-step
-#requires CBAnywhere
-#completewith next
->>Kill Beasts all over Sholazar. You don't need to focus on this quest at all
-.complete 12592,1 
-step
-#requires CBAnywhere
-.goto SholazarBasin,31.8,44.7,70,0
-.goto SholazarBasin,29.2,41.5,70,0
-.goto SholazarBasin,22.1,58.4,70,0
-.goto SholazarBasin,31.8,44.7,70,0
-.goto SholazarBasin,29.2,41.5,70,0
-.goto SholazarBasin,22.1,58.4
->>Kill Rhinos and Dreadsabers located north-west of the Nesingwary camp
-.complete 12520,1 
-.complete 12549,1 
-step
-#completewith end
-#label CBAnywhere2
-.goto SholazarBasin,26.86,58.94
->>Talk to Chad
-.turnin 12624 >>Turn in It Could Be Anywhere!
-.isQuestComplete 12624
-step
->>Return to Nesingwary's Base Camp. Talk to Hemet and Buck
-.turnin 12520 >>Turn in Rhino Mastery: The Test
-.accept 12526 >>Accept Rhino Mastery: The Chase
-.goto SholazarBasin,27.09,58.64
-.turnin 12549 >>Turn in Dreadsaber Mastery: Becoming a Predator
-.accept 12550 >>Accept Dreadsaber Mastery: Stalking the Prey
-.goto SholazarBasin,26.67,59.03
-step
->>Talk to Korg, Grimbooze, and Debaar
-.accept 12804 >>Accept A Steak Fit for a Hunter
-.goto SholazarBasin,26.69,59.56
-.accept 12634 >>Accept Some Make Lemonade, Some Make Liquor
-.goto SholazarBasin,26.77,60.08
-.accept 12551 >>Accept Crocolisk Mastery: The Trial
-.goto SholazarBasin,27.25,59.90
-step
-#completewith Grazers
->>Kill Beasts all over Sholazar. You don't need to focus on this quest at all
-.complete 12592,1 
-step
-.goto SholazarBasin,25.59,66.54
->>Talk to Soo'rahm
-.turnin 12526 >>Turn in Rhino Mastery: The Chase
-.accept 12543 >>Accept An Offering for Soo-rahm
-step
-#label Grazers
-.goto SholazarBasin,21.5,62.5,60,0
-.goto SholazarBasin,22.7,71.4,60,0
-.goto SholazarBasin,25.4,72.5,60,0
-.goto SholazarBasin,25.8,68.2,60,0
-.goto SholazarBasin,31.1,67.7
->>Kill Longneck Grazers in the area. Loot them for their Steaks
-.complete 12804,1 
-step
-#completewith Cobra
-.goto SholazarBasin,42.7,74.2,70,0
-.goto SholazarBasin,43.1,52.6,70,0
-.goto SholazarBasin,42.7,74.2,70,0
-.goto SholazarBasin,43.1,52.6,70,0
-.goto SholazarBasin,42.7,74.2,70,0
-.goto SholazarBasin,43.1,52.6,70,0
-.goto SholazarBasin,42.7,74.2,70,0
-.goto SholazarBasin,43.1,52.6
->>Pull on the Sturdy Vines found hanging from the trees in the area. Loot the fruit that falls from them. If a Dwarf falls, talk to them for a fruit of your choice
-.complete 12634,1 
-.complete 12634,2 
-.complete 12634,3 
-step
-#completewith next
-.goto SholazarBasin,43.2,52.8,70,0
-.goto SholazarBasin,55.7,51.9,70,0
-.goto SholazarBasin,43.3,72.5,70,0
-.goto SholazarBasin,43.2,52.8,70,0
-.goto SholazarBasin,55.7,51.9
->>Kill the Emperor Cobras all over the area. Loot them for their Fangs
-.complete 12543,1 
-step
-#label Crocolisk
-.goto SholazarBasin,41.7,61.4,70,0
-.goto SholazarBasin,44.0,61.4,70,0
-.goto SholazarBasin,44.8,55.1,70,0
-.goto SholazarBasin,39.8,52.6,70,0
-.goto SholazarBasin,41.7,61.4,70,0
-.goto SholazarBasin,44.0,61.4,70,0
-.goto SholazarBasin,44.8,55.1,70,0
-.goto SholazarBasin,39.8,52.6
->>Kill Mangal Crocolisks all over the area
-.complete 12551,1 
-step
-#label Cobra
-.goto SholazarBasin,43.3,72.5,70,0
-.goto SholazarBasin,43.2,52.8,70,0
-.goto SholazarBasin,55.7,51.9,70,0
-.goto SholazarBasin,43.3,72.5,70,0
-.goto SholazarBasin,43.2,52.8,70,0
-.goto SholazarBasin,55.7,51.9
->>Kill the Emperor Cobras all over the area. Loot them for their Fangs
-.complete 12543,1 
-step
-.goto SholazarBasin,42.7,74.2,70,0
-.goto SholazarBasin,43.1,52.6,70,0
-.goto SholazarBasin,42.7,74.2,70,0
-.goto SholazarBasin,43.1,52.6,70,0
-.goto SholazarBasin,42.7,74.2,70,0
-.goto SholazarBasin,43.1,52.6
->>Pull on the Sturdy Vines found hanging from the trees in the area. Loot the fruit that falls from them
-.complete 12634,3 
-.complete 12634,1 
-.complete 12634,2 
-step
-#label RingX
-.goto SholazarBasin,40.2,44.5,50,0
-.goto SholazarBasin,36.5,42.3,50,0
-.goto SholazarBasin,33.1,42.0,50,0
-.goto SholazarBasin,32.1,37.6
->>Click the muddy Dreadsaber Tracks on the ground that you see
-.complete 12550,1 
-step
-.goto SholazarBasin,43.1,52.6
->>Kill Beasts all over Sholazar
-.complete 12592,1 
-step
-.goto SholazarBasin,43.1,52.6
->>Kill any mob in Sholazar for the Golden Engagement Ring
-.complete 12624,1 
-step
-#completewith next
->>You can turn in Nesingwary quests as you run past
-.turnin 12634 >>Turn in Some Make Lemonade, Some Make Liquor
-.turnin 12804 >>Turn in A Steak Fit for a Hunter
-.turnin 12592 >>Turn in The Great Hunter's Challenge
-.turnin 12550 >>Turn in Dreadsaber Mastery: Stalking the Prey
-.accept 12558 >>Accept Dreadsaber Mastery: Ready to Pounce
-step
-#label Soorahm
-.goto SholazarBasin,25.59,66.54
->>Talk to Soo-rahm
-.turnin 12543 >>Turn in An Offering for Soo-rahm
-.accept 12544 >>Accept The Bones of Nozronn
-step
-.goto SholazarBasin,26.13,71.54
-.cast 51210 >> Use Soo'Rahms incense at the skull of the Bones of Nozronn. DO NOT wait for the RP (it takes 32 seconds)
-.timer 32,Incense Skip RP (CONTINUE QUESTING)
-.use 38519
-step
-.goto SholazarBasin,26.77,60.08
->>Talk to Grimbooze
-.turnin 12634 >>Turn in Some Make Lemonade, Some Make Liquor
-.accept 12644 >>Accept Still At It
-step
-#completewith next
->>You can turn in other quests in during the distillation process
-.turnin 12804 >>Turn in A Steak Fit for a Hunter
-.turnin 12550 >>Turn in Dreadsaber Mastery: Stalking the Prey
-.turnin 12592 >>Turn in The Great Hunter's Challenge
-.accept 12558 >>Accept Dreadsaber Mastery: Ready to Pounce
-.turnin 12551 >>Turn in Crocolisk Mastery: The Trial
-.accept 12560 >>Accept Crocolisk Mastery: The Plan
-step
-.goto SholazarBasin,26.66,59.99
->>Talk to Tipsy McManus to start the distillation. Follow his instructions to make the Punch. Click the corresponding barrels of fruit & the brazier/valve when asked.
->>Click the Jungle Punch when complete.
-.complete 12644,1 
-.skipgossip
-step
-.goto SholazarBasin,26.77,60.08
->>Talk to Grimbooze
-.turnin 12644 >>Turn in Still At It
-.accept 12645 >>Accept The Taste Test
-step
-.goto SholazarBasin,27.25,59.90
->>Talk to Debaar
-.turnin 12592 >>Turn in The Great Hunter's Challenge
-.turnin 12551 >>Turn in Crocolisk Mastery: The Trial
-.accept 12560 >>Accept Crocolisk Mastery: The Plan
-step
-.goto SholazarBasin,21.5,60.9,70,0
-.goto SholazarBasin,29.5,62.7,70,0
-.goto SholazarBasin,41.4,60.9,70,0
-.goto SholazarBasin,48.9,68.6,70,0
-.goto SholazarBasin,47.9,73.2,70,0
-.goto SholazarBasin,44.3,78.5
->>Loot the plants on the side of the shallow river in the area
-.complete 12560,1 
-step
-.goto SholazarBasin,27.36,59.40
-.cast 51962 >> Use the Jungle Punch Sample in your bags on Hadrius
-.use 38697
-step
->>Talk to Debaar, Korg, and Buck
-.turnin 12560 >>Turn in Crocolisk Mastery: The Plan
-.accept 12569 >>Accept Crocolisk Mastery: The Ambush
-.goto SholazarBasin,27.25,59.90
-.turnin 12804 >>Turn in A Steak Fit for a Hunter
-.goto SholazarBasin,26.69,59.56
-.turnin 12550 >>Turn in Dreadsaber Mastery: Stalking the Prey
-.accept 12558 >>Accept Dreadsaber Mastery: Ready to Pounce
-.goto SholazarBasin,26.67,59.03
-step
-#completewith end
-#label CBAnywhere5
-.goto SholazarBasin,26.86,58.94
->>Talk to Chad
-.turnin 12624 >>Turn in It Could Be Anywhere!
-step << skip
-.goto SholazarBasin,26.13,71.54
-.use 38519 >> Use Soo'Rahms incense at the skull of the Bones of Nozronn. Wait for the RP (it takes 32 seconds)
-.complete 12544,1 
-step
->>Talk to Hemet
-.turnin 12544 >>Turn in The Bones of Nozronn
-.accept 12556 >>Accept Rhino Mastery: The Kill
-.accept 12651 >>Accept Lakeside Landing
-.goto SholazarBasin,27.09,58.64
-.cast 51962 >> Use the Jungle Punch Sample in your bags on Hemet
-.use 38697
-step
-#requires CBAnywhere5
-.goto SholazarBasin,31.7,38.2,70,0
-.goto SholazarBasin,33.57,34.78,50,0
-.goto SholazarBasin,34.00,31.91
->>Ride all the way up north. Kill Shango. Loot him for his Pelt
-.complete 12558,1 
-.unitscan Shango
-step
-.goto SholazarBasin,46.33,42.28,60,0
-.goto SholazarBasin,48.36,44.81
->>Ride east along the coast. Kill Farunn. Loot him for his Horn
-.complete 12556,1 
-.unitscan Farunn
-step
-.goto SholazarBasin,49.95,61.52
->>Travel to Lakeside Landing. Talk to Vic
-.turnin 12696 >>Turn in Aerial Surveillance
-.accept 12699 >>Accept An Embarassing Incident
-.accept 12803 >>Accept Force of Nature
-.train 54197 >> Train Cold Weather Flying
-step
-.goto SholazarBasin,50.48,62.13
->>Talk to Tamara
-.turnin 12651 >>Turn in Lakeside Landing
-.accept 12654 >>Accept The Part-time Hunter
-.cast 51962 >> Use the Jungle Punch Sample in your bags on Tamara
-
-.use 38697
-step
-.goto SholazarBasin,48.3,63.5
-.use 40390 >> Use Vic's Emergency Air Tank in your bags for Water Breathing << !Warlock
->>Dive into the River's Heart. Search the patches of Raised Mud in the water until you find Vic's Keys
-.complete 12699,1 
-step
-.goto SholazarBasin,46.67,63.47
-.use 38564 >> Use the Sandfern Disguise ontop of the log. Kill Bushwhacker when he appears. Loot him for his Jaw
-.complete 12569,1 
-step
->>Kill Pitch. Loot him for his remains. Talk to Gekgek after killing Pitch
-.complete 12654,1 
-.goto SholazarBasin,50.52,77.23
-.accept 12528 >>Accept Playing Along
-.goto SholazarBasin,50.54,76.57
-step
-.goto SholazarBasin,50.48,62.13
->>Talk to Tamara
-.turnin 12654 >>Turn in The Part-time Hunter
-step
-.goto SholazarBasin,49.95,61.52
->>Talk to Vic
-.turnin 12699 >>Turn in An Embarassing Incident
-.accept 12671 >>Accept Reconnaissance Flight
-.timer 77,Reconnaissance Flight RP
-step
-#completewith next
-.goto SholazarBasin,70.67,36.68,30 >> As you're flying, shoot at the Screechers attacking you
-step
-.goto SholazarBasin,49.95,61.52
->>Fly back to Lakeside Landing when the engines blow. Use "Land Flying Machine" (2) to land it.
-.complete 12671,1 
-step
-.goto SholazarBasin,49.95,61.52
->>Talk to Vic
-.turnin 12671 >>Turn in Reconnaissance Flight
-step
-#completewith next
-.goto SholazarBasin,50.14,61.35
-.fp River's Heart >> Get the River's Heart Flight Path
-.fly Nesingwary Base Camp >> Fly to Nesingwary's Base Camp << !Mage
-step << Mage
-#completewith MageTrain1
-.zone Stormwind City >> Teleport to Stormwind << Alliance
-.zone Undercity >> Teleport to Undercity << Horde
-.xp <77,1
-step << Mage
-.goto Stormwind City,49.2,87.7 << Alliance
-.goto Undercity,85.1,10.0 << Horde
-.train 42985 >> Train your class spells
-.xp <77,1
-step << Mage
-.goto Stormwind City,49.2,87.7 << Alliance
-.goto Undercity,85.1,10.0 << Horde
-.train 42914 >> Train your class spells
-.xp <78,1
-step << Mage
-#label MageTrain1
-.goto Stormwind City,49.2,87.7 << Alliance
-.goto Undercity,85.1,10.0 << Horde
-.train 43046 >> Train your class spells
-.xp <79,1
-step << Mage
-#completewith next
-.hs >> Hearth to the Nesingwary Base Camp
-step
->>Return to the Nesingwary Base Camp. Talk to Buck, Grimbooze, Debaar, and Hemet
-.turnin 12558 >>Turn in Dreadsaber Mastery: Ready to Pounce
-.goto SholazarBasin,26.67,59.03
-.turnin 12645 >>Turn in The Taste Test
-.goto SholazarBasin,26.77,60.08
-.turnin 12569 >>Turn in Crocolisk Mastery: The Ambush
-.goto SholazarBasin,27.25,59.90
-.turnin 12556 >>Turn in Rhino Mastery: The Kill
-.accept 12595 >>Accept In Search of Bigger Game
-.goto SholazarBasin,27.09,58.64
-step
->>Travel to Dorian's Outpost. Talk to Dorian and Colvin
-.turnin 12595 >>Turn in In Search of Bigger Game
-.accept 12603 >>Accept Sharpening Your Talons
-.accept 12605 >>Accept Securing the Bait
-.goto SholazarBasin,42.34,28.70
-.accept 12683 >>Accept Burning to Help
-.goto SholazarBasin,42.07,28.66
-step
-.goto SholazarBasin,39.2,39.6,70,0
-.goto SholazarBasin,45.7,44.9
-.use 39164 >> Don't kill the Bittertide Hydras until they use their poison on you (once per Hydra), then use the Sample Container in your bags. Kill the Bittertide Hydra after
-.complete 12683,2 
-.complete 12683,1 
-step
-.goto SholazarBasin,47.1,28.4,70,0
-.goto SholazarBasin,47.6,22.8
->>Kill Primordial Drakes in the area
->>Loot the Primordial Hatchlings in the area. You can also break the Drake Eggs to spawn more Hatchlings to loot
-.complete 12603,1 
-.complete 12605,1 
-step
->>Travel to Dorian's Outpost. Talk to Dorian, Colvin, and Zootfizzle
-.turnin 12603 >>Turn in Sharpening Your Talons
-.turnin 12605 >>Turn in Securing the Bait
-.goto SholazarBasin,42.34,28.70
-.turnin 12683 >>Turn in Burning to Help
-.accept 12681 >>Accept Reagent Agent
-.goto SholazarBasin,42.07,28.66
-.accept 12607 >>Accept A Mammoth Undertaking
-.accept 12658 >>Accept My Pet Roc
-.goto SholazarBasin,42.11,28.89
-step
-.goto SholazarBasin,40.16,31.27,20,0
-.goto SholazarBasin,39.46,26.98
-.vehicle >> Find a Shattertusk Mammoth. Use the Mammoth Harness in your bags on it
-.use 38627
-step
-.goto SholazarBasin,40.4,31.1,20,0
-.goto SholazarBasin,42.1,28.9
-.use 38627 >>Ride the Mammoth back to Dorian's Outpost. Use Hand Over Mammoth (1) when you get back to Zootfizzle
-.complete 12607,1 
-step
->>Talk to Zootfizzle and Dorian
-.turnin 12607 >>Turn in A Mammoth Undertaking
-.goto SholazarBasin,42.11,28.89
-.accept 12614 >>Accept Post-partum Aggression
-.goto SholazarBasin,42.34,28.70
-step
-.goto SholazarBasin,47.10,21.10
->>Ride to Broodmother Slivina. Use Signal Hemet to Attack (1) to have Hemet drop traps every so often. Spam Gore (3), and Stampy's Stompy-Stomp (4) to kill her.
->>Kite her over the immolation traps that spawn for more damage.
-.complete 12614,1 
-step
-.goto SholazarBasin,54.1,25.0,70,0
-.goto SholazarBasin,60.74,30.39
->>Dismount Stampy
->>Kill Goretalon Rocs in the area. Loot them for their Talons
->>Loot the Roc Eggs in the nests in the area
-.complete 12681,1 
-.complete 12658,1 
-step
->>Return to Dorian's Outpost. Talk to Dorian, Colvin, and Zootfizzle
-.turnin 12614 >>Turn in Post-partum Aggression
-.goto SholazarBasin,42.34,28.70
-.turnin 12681 >>Turn in Reagent Agent
-.goto SholazarBasin,42.07,28.66
-.turnin 12658 >>Turn in My Pet Roc
-.goto SholazarBasin,42.11,28.89
-step
-.goto SholazarBasin,64.57,48.60
->>Talk to Freya
-.turnin 12803 >>Turn in Force of Nature
-.accept 12561 >>Accept An Issue of Trust
-step
-.goto SholazarBasin,73.7,51.0
->>Kill Bonescythe Ravagers and Blighted Corpses in the area
-.complete 12561,2 
-.complete 12561,1 
-step
-.goto SholazarBasin,64.57,48.60
->>Talk to Freya
-.turnin 12561 >>Turn in An Issue of Trust
-.accept 12611 >>Accept Returned Sevenfold
-step
-.goto SholazarBasin,66.70,44.13
-.use 38657 >>Kill Thalgran Blightbringer. Use the Freya's Ward in your bags when he starts to cast Deathbolt to reflect it to him
-.complete 12611,1 
-step
-.goto SholazarBasin,64.57,48.60
->>Talk to Freya
-.turnin 12611 >>Turn in Returned Sevenfold
-.accept 12612 >>Accept The Fallen Pillar
-.accept 12805 >>Accept Salvaging Life's Strength
-step
-.goto SholazarBasin,65.08,60.31
->>Talk to the Cultist Corpse atop The Lifeblood Pillar
-.turnin 12612 >>Turn in The Fallen Pillar
-.accept 12608 >>Accept Cultist Incursion
-step
-.goto SholazarBasin,74.8,55.9
-.use 40397 >>Kill Lifeblood Elementals in the area. Channel the Lifeblood Gem in your bags on their corpses.
->>You can target one corpse, channel it, then click another corpse to get credit for both in one channel
-.complete 12805,1 
-step
-.goto SholazarBasin,64.57,48.60
->>Talk to Freya
-.turnin 12805 >>Turn in Salvaging Life's Strength
-.turnin 12608 >>Turn in Cultist Incursion
-.accept 12617 >>Accept Exterminate the Intruders
-.accept 12660 >>Accept Weapons of Destruction
-step
-.goto SholazarBasin,56.1,44.0,70,0
-.goto SholazarBasin,55.3,40.9
->>Kill Cultists & destroy the Unstable Explosives in the area
-.complete 12617,1 
-.complete 12660,1 
-step
-.goto SholazarBasin,64.57,48.60
->>Talk to Freya
-.turnin 12617 >>Turn in Exterminate the Intruders
-.accept 12620 >>Accept The Lifewarden's Wrath
-.turnin 12660 >>Turn in Weapons of Destruction
-step
-.goto SholazarBasin,49.70,37.42
-.use 38684 >>Fly to the top of The Glimmering Pillar. Use Freya's Horn atop The Glimmering Pillar by the crystals
-.complete 12620,1 
-step
-.goto SholazarBasin,64.57,48.60
->>Talk to Freya
-.turnin 12620 >>Turn in The Lifewarden's Wrath
-.accept 12621 >>Accept Freya's Pact
-.complete 12621,1 
-.skipgossip 27801,1
-
-.turnin 12621 >>Turn in Freya's Pact
-.accept 12559 >>Accept Powering the Waygate - The Maker's Perch
-step
-.goto SholazarBasin,28.4,39.0,40,0
-.goto SholazarBasin,26.23,35.49
->>Fly to The Maker's Perch and enter the building. Click the activation switch inside
-.complete 12559,1 
-step
-.goto SholazarBasin,64.57,48.60
->>Talk to Freya
-.turnin 12559 >>Turn in Powering the Waygate - The Maker's Perch
-.accept 12613 >>Accept Powering the Waygate - The Maker's Overlook
-step
-.goto SholazarBasin,80.43,55.81
->>Fly up to the Makers' Overlook. Click the Coffer
-.accept 12691 >>Accept A Timeworn Coffer
-step
-#completewith next
->>Kill the Sholazar Guardians inside. Loot them for the Key. Be careful of the Overlook Sentry
-.complete 12691,1 
-step
-.goto SholazarBasin,80.6,54.4,40,0
-.goto SholazarBasin,89.11,52.90
->>Enter the building. Click the activation switch inside (you don't need the key for this)
-.complete 12613,1 
-step
-.goto SholazarBasin,80.9,54.4,60,0
-.goto SholazarBasin,88.8,52.9,60,0
-.goto SholazarBasin,80.9,54.4
->>Kill the Sholazar Guardians inside. Loot them for the Key. Be careful of the Overlook Sentry
-.complete 12691,1 
-step
-.goto SholazarBasin,80.43,55.81
->>Go back outside of the Makers' Overlook. Click the Coffer
-.turnin 12691 >>Turn in A Timeworn Coffer
-step
-.goto SholazarBasin,64.57,48.60
->>Talk to Freya
-.turnin 12613 >>Turn in Powering the Waygate - The Maker's Overlook
-.accept 12548 >>Accept The Etymidian
-step
-.goto SholazarBasin,40.34,83.05,-1
-.goto Un'Goro Crater,47.38,9.22,-1
->>Walk into the Waygate in southern Sholazar. Talk to The Etymidian in Un'Goro once you've teleported.
-.turnin 12548 >>Turn in The Etymidian
-.accept 12547 >>Accept The Activation Rune
-step
-.goto Un'Goro Crater,48.2,5.5,40,0
-.goto Un'Goro Crater,48.17,2.49
->>Kill High Cultist Herenn. Loot him for the Omega Rune
-.complete 12547,1 
-step
-.goto Un'Goro Crater,47.38,9.22
->>Talk to The Etymidian
-.turnin 12547 >>Turn in The Activation Rune
-.accept 12797 >>Accept Back Through the Waygate
-step
-#completewith next
-.goto Un'Goro Crater,50.51,7.76
-.zone SholazarBasin >>Walk back through the Waygate to Sholazar
-step
-.goto SholazarBasin,54.99,69.11
->>Travel to Frenzyheart Hill. Talk to Rakjak, then Goregek when he spawns after talking to Rakjak
-.turnin 12528 >>Turn in Playing Along
-.accept 12529 >>Accept The Ape Hunter's Slave
-.accept 12530 >>Accept Tormenting the Softknuckles
-step
-#completewith HKN
-.use 38619 >> You can use Goregek's Shackles to summon him again if you ever lose him
-step
-#completewith Chargers
-.goto SholazarBasin,67.6,74.3,0
->>Kill Hardknuckle Chargers
-.complete 12529,2 
-step
-.goto SholazarBasin,60.97,70.42,50,0
-.goto SholazarBasin,56.0,77.2
->>Kill Hardknuckle Foragers in the area
-.complete 12529,1 
-step
-#label Chargers
-.goto SholazarBasin,67.6,74.3
-.use 38467 >> Use the Softknuckle Poker on Softknuckles until the Hardknuckle Matriarch gets summoned. Kill it
-.complete 12530,1 
-.unitscan Hardknuckle Matriarch
-step
-#label HKN
-.goto SholazarBasin,66.8,72.8
->>Kill Hardknuckle Chargers
-.complete 12529,2 
-step
->>Return to Frenzyheart Hill. Talk to Rakjak and Harkek
-.turnin 12529 >>Turn in The Ape Hunter's Slave
-.turnin 12530 >>Turn in Tormenting the Softknuckles
-.accept 12533 >>Accept The Wasp Hunter's Apprentice
-.goto SholazarBasin,54.99,69.11
-.accept 12534 >>Accept The Sapphire Queen
-.goto SholazarBasin,55.51,69.69
-step
-#completewith next
-.goto SholazarBasin,61.8,78.2,0
->>Kill the Sapphire Hive Drones and Wasps in the area
-.complete 12533,2 
-.complete 12533,1 
-step
-.goto SholazarBasin,59.43,79.13,30,0
-.goto SholazarBasin,57.15,79.17
->>Enter the underground tree trunk. Kill the Sapphire Hive Queen at the end. Loot her for her Stinger
-.complete 12534,1 
-step
-.goto SholazarBasin,61.8,78.2
->>Kill the Sapphire Hive Drones and Wasps in the area
-.complete 12533,2 
-.complete 12533,1 
-step
->>Return to Frenzyheart Hill. Talk to Rakjak and Harkek
-.turnin 12533 >>Turn in The Wasp Hunter's Apprentice
-.turnin 12534 >>Turn in The Sapphire Queen
-.goto SholazarBasin,54.99,69.11
-.accept 12532 >>Accept Flown the Coop!
-.goto SholazarBasin,55.51,69.69
-step
-.goto SholazarBasin,53.1,71.8,60,0
-.goto SholazarBasin,56.2,72.4,60,0
-.goto SholazarBasin,57.6,69.9,60,0
-.goto SholazarBasin,55.3,69.0,60,0
-.goto SholazarBasin,53.1,71.8
-.use 38689 >> Use the Chicken Net in your bags on the chickens in Frenzyheart Hill. Loot them (you can also loot them without them being trapped)
-.complete 12532,1 
-step
->>Talk to Harkek and Rakjak
-.turnin 12532 >>Turn in Flown the Coop!
-.accept 12531 >>Accept The Underground Menace
-.goto SholazarBasin,55.51,69.69
-.accept 12535 >>Accept Mischief in the Making
-.goto SholazarBasin,54.99,69.11
-step
-#completewith next
-.goto SholazarBasin,57.0,86.2,0
-.goto SholazarBasin,53.7,83.6,0
->>Loot the small white crystals in the area
-.complete 12535,1 
-step
-.goto SholazarBasin,58.9,86.4,40,0
-.goto SholazarBasin,49.6,86.7,40,0
-.goto SholazarBasin,49.7,84.1
->>Walk over Serfex's moving rock mound to summon him. Kill him, then loot him for his Claw
-.complete 12531,1 
-.unitscan Serfex
-step
-.goto SholazarBasin,57.0,86.2,70,0
-.goto SholazarBasin,53.7,83.6,70,0
-.goto SholazarBasin,57.0,86.2,70,0
-.goto SholazarBasin,53.7,83.6
->>Loot the small white crystals in the area
-.complete 12535,1 
-step
-.goto SholazarBasin,54.99,69.11
->>Return to Frenzyheart Hill. Talk to Rakjak
-.turnin 12531 >>Turn in The Underground Menace
-.turnin 12535 >>Turn in Mischief in the Making
-.accept 12536 >>Accept A Rough Ride
-step
-#completewith end
-#label Nepeta
-.goto SholazarBasin,55.13,69.02
->>Buy a Nepeta Leaf from Tanak
-.collect 44064,1 
-step
-#requires Nepeta
-#completewith next
-.goto SholazarBasin,57.30,68.38
-.cast 59755 >> Use the Nepeta Leaf in your bags
-step
-#completewith next
-#requires Nepeta
-.goto SholazarBasin,57.30,68.38
-+Talk to the Captive Crocolisk by the tree
-step
-#requires Nepeta
-.goto SholazarBasin,46.25,39.47
-.vehicle >>Ride the Crocolisk to Mistwhisper Refuge
-.timer 110,A Rough Ride RP
-.complete 12536,1 
-.skipgossip
-step
-#completewith Gorloc
-.use 38512 >> Use Zepik's Hunting Horn to summon him
-step
-.goto SholazarBasin,46.3,39.5
-.turnin 12536 >>Turn in A Rough Ride
-.accept 12537 >>Accept Lightning Definitely Strikes Twice
-.accept 12538 >>Accept The Mist Isn't Listening
-step
-#completewith Sabotage
-.goto SholazarBasin,45.2,36.9,0
->>Kill Gorlocs in the area
-.complete 12538,1 
-step
-#completewith next
-.goto SholazarBasin,45.38,37.18
-.cast 51151 >> Use the Skyreach Crystal Clusters in your bags at the shrine.
-step
-#label Sabotage
-.goto SholazarBasin,45.41,36.26
-.use 38510 >> Click the crystals you placed to explode them
-.complete 12537,1 
-step
-#label Gorloc
-.goto SholazarBasin,45.20,36.90,50,0
-.goto SholazarBasin,42.70,35.77
->>Kill Gorlocs in the area
-.complete 12538,1 
-step
-#completewith next
-.goto SholazarBasin,55.5,69.6
->>If you lost Zepik's Hunting Horn and he isn't next to you, fly back to Elder Harkek at Frenzyheart Hill and ask for a new one
-.collect 38512,1 
-step
-.goto SholazarBasin,45.2,36.9
-.goto SholazarBasin,55.5,69.6,0
-.use 38512 >> Use Zepik's Hunting Horn to summon him. Talk to him
-.turnin 12538 >>Turn in The Mist Isn't Listening
-.turnin 12537 >>Turn in Lightning Definitely Strikes Twice
-.accept 12539 >>Accept Hoofing It
-step
-.goto SholazarBasin,54.99,69.11
->>Return to Frenzyheart Hill. Talk to Rakjak
-.turnin 12539 >>Turn in Hoofing It
-.accept 12540 >>Accept Just Following Orders
-step
-.goto SholazarBasin,54.05,64.52
->>Talk to an Injured Rainspeaker Oracle. Kill the Crocodile that spawns, then talk to the Oracle again
-.complete 12540,1 
-.skipgossip
-.turnin 12540 >>Turn in Just Following Orders
-.accept 12570 >>Accept Fortunate Misunderstandings
-step
-.goto SholazarBasin,53.60,56.72
->>Follow the oracle closely to the Rainspeaker Canopy
-.complete 12570,1 
-step
-.goto SholazarBasin,54.59,56.35
->>Talk to Soo-Say. Lafoo will spawn after talking to Soo-Say, talk to him
-.turnin 12570 >>Turn in Fortunate Misunderstandings
-.accept 12571 >>Accept Make the Bad Snake Go Away
-.skipgossip
-.accept 12572 >>Accept Gods like Shiny Things
-
-step
-#completewith end
-#label Secretso
-.goto SholazarBasin,54.59,56.18
->>Buy 2 Oracle Secret Solutions from Geen
-.collect 44065,2 
-step
-#requires Secretso
-#label Secretso2
-.goto SholazarBasin,57.4,52.6
-.cast 59776 >>Use the Oracle's Secret Solution in your bag
-.use 59776
-step
-#requires Secretso2
-#completewith Cobras
-.goto SholazarBasin,56.4,52.0,0
-.goto SholazarBasin,52.4,49.1,0
-.goto SholazarBasin,51.8,54.2,0
->>Use Lafoo's Bug Bag to summon him if he isn't already with you. Talk to Soo-Say if you lose it
->>Use Lafoo to search for Shiny Treasures. Search for "shines" in the ground nearby. Run Lafoo near to them and let him dig them up. Loot the treasure
-.complete 12572,1 
-.use 38622
-step
-#requires Secretso2
-#completewith next
-.goto SholazarBasin,53.1,48.9,0
-.goto SholazarBasin,51.2,57.0,0
->>Kill Empereror Cobras in the area
-.complete 12571,1 
-step
-#requires Secretso2
-.goto SholazarBasin,58.4,53.6,30,0
-.goto SholazarBasin,57.4,52.6
->>Kill Venomtip. He hangs around either side of the river
-.complete 12571,2 
-.unitscan Venomtip
-step
-#label Cobras
-.goto SholazarBasin,53.1,48.9,70,0
-.goto SholazarBasin,51.2,57.0
->>Kill Empereror Cobras in the area
-.complete 12571,1 
-step
-.goto SholazarBasin,56.4,52.0,70,0
-.goto SholazarBasin,52.4,49.1,70,0
-.goto SholazarBasin,51.8,54.2
->>Use Lafoo to search for Shiny Treasures. Search for "shines" in the ground nearby. Run Lafoo near to them and let him dig them up. Loot the treasure
-.complete 12572,1 
-step
-.goto SholazarBasin,53.1,48.9,70,0
-.goto SholazarBasin,51.2,57.0
-.complete 12571,1 
-step
-.goto SholazarBasin,54.59,56.35
->>Return to Rainspeaker Canopy. Talk to Soo-say
-.turnin 12571 >>Turn in Make the Bad Snake Go Away
-.turnin 12572 >>Turn in Gods like Shiny Things
-.accept 12573 >>Accept Making Peace
-step
-#label Peace
-.goto SholazarBasin,51.36,64.69
->>Talk to Shaman Vekjik on the cliffs overlooking the River's Heart. Be careful as he pushes you off the cliff. Be on your flying mount
-.complete 12573,1 
-.skipgossip
-step
-.goto SholazarBasin,54.59,56.35
->>Return to Rainspeaker Canopy. Talk to Soo-say
-.turnin 12573 >>Turn in Making Peace
-.accept 12574 >>Accept Back So Soon?
-step
-#completewith next
-.goto SholazarBasin,54.59,56.35
->>Talk to Soo-say for Jaloot's Favourite Crystal
-.skipgossip
-.collect 38623,1 
-step
-.goto SholazarBasin,42.15,38.65
->>Travel to Mistwhisper Refuge. Talk to Soo-gan
-.turnin 12574 >>Turn in Back So Soon?
-.accept 12575 >>Accept The Lost Mistwhisper Treasure
-.accept 12576 >>Accept Forced Hand
-step
-#completewith next
-.goto SholazarBasin,41.5,22.6,0
->>Kill Frenzyheart Scavengers and Spearbearers in the area
-.complete 12576,2 
-.complete 12576,1 
-step
->>Use Jaloot's Favorite Crystal to summon him. Talk to Soo-Say if you lose it
->>Go to Spearborn Encampment. Loot the Mistwhisper Treasure then kill Warlord Tartek
-.complete 12575,2 
-.goto SholazarBasin,41.70,19.49
-.complete 12575,1 
-.goto SholazarBasin,41.28,19.96
-.use 38623
-step
-#sticky
-#label Spearbearer
-.goto SholazarBasin,42.6,22.8
->>Kill Frenzyheart Spearbearers. They are typically found within the Encampment
-.complete 12576,1 
-step
-.goto SholazarBasin,39.3,25.8,70,0
-.goto SholazarBasin,43.0,25.1,70,0
-.goto SholazarBasin,43.5,22.0
->>Use Jaloot's Favorite Crystal to summon him. Talk to Soo-Say if you lose it
->>Kill Frenzyheart Scavengers. They are typically found on the outer walls of the area
-.complete 12576,2 
-.use 38623
-step
-#requires Spearbearer
-.goto SholazarBasin,42.15,38.65
->>Return to Mistwhisper Refuge. Talk to Soo-gan
-.turnin 12575 >>Turn in The Lost Mistwhisper Treasure
-.turnin 12576 >>Turn in Forced Hand
-.accept 12577 >>Accept Home Time!
-step
-.goto SholazarBasin,54.59,56.35
->>Return to Rainspeaker Canopy. Talk to Soo-say
-.turnin 12577 >>Turn in Home Time!
-.accept 12578 >>Accept The Angry Gorloc
-step
-#completewith next
-.goto SholazarBasin,54.59,56.35
->>Talk to Soo-say for Moodle's Stress Ball
-.skipgossip
-.collect 38624,1 
-step
-#questguide
-.goto SholazarBasin,64.57,48.60
->>Talk to Freya
-.turnin 12797 >>Turn in Back Through the Waygate
-.accept 12546 >>Accept Reclamation
-step
-.goto SholazarBasin,64.57,48.60
->>Talk to Freya
-.turnin 12797 >>Turn in Back Through the Waygate
-step
-.goto SholazarBasin,75.2,51.1
->>Travel to Mosswalker Village. Resummon Moodle if he disappears
-.complete 12578,1 
-step
-.goto SholazarBasin,54.59,56.35,0
-.goto SholazarBasin,75.2,51.1
->>Use Moodle's Stress Ball to summon him. Talk to Soo-Say if you lose it
->>Talk to Moodle
-.turnin 12578 >>Turn in The Angry Gorloc
-.accept 12579 >>Accept Lifeblood of the Mosswalker Shrine
-.accept 12580 >>Accept The Mosswalker Savior
-.use 38624
-step
-.goto SholazarBasin,74.78,48.92,50,0
-.goto SholazarBasin,76.8,48.7,50,0
-.goto SholazarBasin,76.9,52.6
->>Talk to all the Mosswalker Victims on your flying mount. Avoid killing the mobs
-.complete 12580,1 
-.skipgossip
-step
-.goto SholazarBasin,74.8,58.5,50,0
-.goto SholazarBasin,70.4,58.4,50,0
-.goto SholazarBasin,70.31,52.74
->>Loot the small red shards on the ground
-.complete 12579,1 
-step
->>Use Moodle's Stress Ball to summon him. Talk to Soo-Say at Rainwater Canopy if you lose it
->>Talk to Moodle
-.turnin 12579 >>Turn in Lifeblood of the Mosswalker Shrine
-.turnin 12580 >>Turn in The Mosswalker Savior
-.accept 12581 >>Accept A Hero's Burden
-.use 38624
-step
-#questguide
-.goto SholazarBasin,70.78,41.67
-.cast 52066 >> Use the Omega Rune to summon The Etymidian at The Avalanche. MAKE SURE you're in the subzone when you summon him
-.use 38709
-step
-#questguide
-#completewith Hailscorn
->>You'll be using all 5 abilities: Spam Colossal Strike (1), use Catacylsm (2) to deal a lot of AoE damage, Reconstruction (3) which heals you to full, Titanic Surge (4), which recharges your mana and can be used while moving, and Marker's Sanctuary (5) which takes you out of combat and gives you immunity (used for running)
->>Kill the lesser Scourge Minions at The Avalanche
-.complete 12546,1 
-.use 38709
-step
-#questguide
-.goto SholazarBasin,74.12,41.07,50,0
-.goto SholazarBasin,69.79,38.07
->>Kill Bythius
-.complete 12546,2 
-.unitscan Bythius the Flesh-Shaper
-.use 38709
-step
-#questguide
-.goto SholazarBasin,70.13,37.12
->>Kill Urgeth. Move 20 yards away from him when he emotes "Urgeth begins to emante a powerful dark energy". You can heal/evocate whilst waiting for him to finish casting
-.complete 12546,3 
-.use 38709
-step
-#questguide
-#label Hailscorn
-.goto SholazarBasin,70.00,34.00
->>Kill Hailscorn. Have your back facing the mountain so you don't get knocked off.
-.complete 12546,4 
-.use 38709
-step
-#questguide
-.goto SholazarBasin,75.87,44.09,70,0
-.goto SholazarBasin,70.88,40.09,70,0
-.goto SholazarBasin,70.55,36.71
->>Finish killing the scourge minions in the area
-.complete 12546,1 
-.use 38709
-step
-#questguide
-.goto SholazarBasin,64.57,48.60
->>Unmount The Etmyidian. Talk to Freya
-.turnin 12546 >>Turn in Reclamation
-step
-#completewith next
-.goto SholazarBasin,70.9,58.6,30
->>Fly over to The Sundered Shard cave and head inside.
-step
-.goto SholazarBasin,74.0,58.7,30,0
-.goto SholazarBasin,72.10,57.63
->>Kill Artruis. About halfway through the fight, you'll have to kill either Zepik or Jaloot. Kill Jaloot if you want more xp
->>If you can't do this quest, skip it
-.complete 12581,1 
-step
-#label end
-.goto SholazarBasin,72.00,57.58
->>Click the Phylactery
-.turnin 12581 >>Turn in A Hero's Burden
-.isQuestComplete 12581
-step
-#completewith Frenzyheart
-#label Oracles
-.goto SholazarBasin,72.46,57.53,-1
->>Talk to Jaloot if you saved him
-.accept 12689 >>Accept Hand of the Oracles
-.turnin 12689 >>Turn in Hand of the Oracles
-.accept 12695 >>Accept Return of the Friendly Dryskin
-.isQuestTurnedIn 12581
-step
-#completewith Oracles
-#label Frenzyheart
-.goto SholazarBasin,72.0,57.0,-1
->>Talk to Zepik if you saved him
-.accept 12582 >>Accept Frenzyheart Champion
-.turnin 12582 >>Turn in Frenzyheart Champion
-.accept 12692 >>Accept Return of the Lich Hunter
-.isQuestTurnedIn 12581
-step
-#requires Frenzyheart
-step
-#requires Oracles
-step
-.goto SholazarBasin,54.59,56.35
->>Return to Rainspeaker Canopy. Talk to Soo-say
-.turnin 12695 >>Turn in Return of the Friendly Dryskin
-.isOnQuest 12695
-step
-.goto SholazarBasin,55.51,69.69
->>Return to Frenzyheart Hill. Talk to Harkek
-.turnin 12692 >>Turn in Return of the Lich Hunter
-.isOnQuest 12692
-step
-.goto SholazarBasin,55.51,69.69
->>Talk to Harkek again
-.accept 12702 >>Accept Chicken Party!
-.isQuestTurnedIn 12692
-step << skip
-.goto SholazarBasin,55.7,69.5
-.accept 12732 >> Accept The Heartblood's Strength
-.isQuestTurnedIn 12692
-step << skip
-.goto SholazarBasin,55.5,68.7
-.accept 12760 >> Accept Secret Strength of the Frenzyheart
-.isQuestTurnedIn 12692
-step
-.goto SholazarBasin,53.1,71.8,60,0
-.goto SholazarBasin,56.2,72.4,60,0
-.goto SholazarBasin,57.6,69.9,60,0
-.goto SholazarBasin,55.3,69.0,60,0
-.goto SholazarBasin,53.1,71.8
-.use 38689 >> Use the Chicken Net in your bags on the chickens in Frenzyheart Hill. Loot them (you can also loot them without them being trapped)
-.complete 12702,1 
-.isQuestTurnedIn 12692
-step
-.goto SholazarBasin,55.51,69.69
->>Talk to Harkek
-.turnin 12702 >>Turn in Chicken Party!
-.isQuestTurnedIn 12692
-step << skip
-#questguide
-.goto SholazarBasin,33.0,71.4,50,0
-.goto SholazarBasin,30.9,71.5,50,0
-.goto SholazarBasin,30.3,75.6,50,0
-.goto SholazarBasin,33.2,75.2
-.use 39737 >> Use the Secret Strength of the Frenzyheart and get drunk, then kill 30 Gorlocs in the area
-.complete 12760,1 
-step << skip
-#questguide
-.goto SholazarBasin,33.5,52.6
-.use 39574 >> Fly to the top of the Suntouched Pillar. Use Rejek's Vial
-.isQuestTurnedIn 12692
-step << skip
-#questguide
-.goto SholazarBasin,59.7,23.9
->>Kill a Goretalon Matriarch. Loot it for it's Blood
-.collect 39573,1 
-.unitscan Goretalon Matriarch
-.isQuestTurnedIn 12692
-step << skip
-#questguide
-.goto SholazarBasin,59.7,23.9
-.use 39576 >> Use the Suntouched Water in your bags to combine it with the Heartblood
-.complete 12732,1 
-step << skip
-#questguide
-.goto SholazarBasin,55.5,68.7
->>Fly back to Frenzyheart Hill
-.turnin 12760 >> Turn in Secret Strength of the Frenzyheart
-.isQuestTurnedIn 12692
-step << skip
-#questguide
-.goto SholazarBasin,55.7,69.5
-.turnin 12732 >> Turn in The Heartblood's Strength
-.isQuestTurnedIn 12692
-step << Mage
-#completewith MageTrain2
-.zone Dalaran >> Teleport to Dalaran
-step << Mage
-.goto Dalaran,55.0,46.2
-.train 42985 >> Train your class spells
-.xp <77,1
-step << Mage
-.goto Dalaran,55.0,46.2
-.train 42914 >> Train your class spells
-.xp <78,1
-step << Mage
-#label MageTrain2
-.goto Dalaran,55.0,46.2
-.train 43046 >> Train your class spells
-.xp <79,1
-step << Druid
-#completewith next
-.cast 18960 >> Cast Teleport: Moonglade
-.zoneskip Moonglade
-.xp <78,1
-step << Druid
-.goto Moonglade,52.4,40.6
->>Go to Moonglade
-.train 48465 >> Train your class spells
-.xp <78,1
-step << DK
-#completewith next
-.cast 50977 >> Cast Death Gate
-.zoneskip Eastern Plaguelands
-.xp <78,1
-step << DK
-.goto Eastern Plaguelands,80.3,48.0
->>Go through the Death Gate
-.train 49941 >> Train your class spells from Amal'Thazad in Acherus. Runeforge your weapon downstairs if needed
-.xp <78,1
-step << !Mage
-.hs >> Hearth to Dalaran
-.zoneskip Dalaran
-step << Alliance Warrior/Warlock
-#completewith next
-.goto Dalaran,40.2,56.3,20,0
-.goto Dalaran,40.1,62.8
-.zone Stormwind City >>Go into The Silver Enclave. Take the portal to Stormwind
-step << Alliance Warlock
-.goto Stormwind City,29.2,74.0,20,0
-.goto Stormwind City,27.2,78.1,15 >> Go into The Slaughtered Lamb and go downstairs
-.goto Stormwind City,25.3,78.7
-.train 47813 >> Train your class spells
-.xp <77,1
-step << Alliance Warrior
-.goto Stormwind City,77.7,64.3,15,0
-.goto Stormwind City,80.1,61.5,15,0
-.goto Stormwind City,81.4,59.5,15,0
-.goto Stormwind City,78.6,45.8
-.train 47436 >> Train your class spells
-.xp <78,1
-step << Alliance Warrior/Warlock
-.goto Stormwind City,50.1,65.8
-.zone Dalaran >> Ghetto Hearth to Dalaran. To do this, enter The Stockades, then copy paste the link below into chat. Wait out the 1 minute warning
-.link /run InviteUnit("a");C_Timer.After(1,function() LeaveParty() end) >> CLICK HERE
-step << Horde Warrior/Warlock
-#completewith next
-.goto Dalaran,55.5,37.1,20,0
-.goto Dalaran,55.3,25.4
-.zone Orgrimmar >>Go into Sunreaver's Sanctuary. Take the portal to Orgrimmar
-step << Horde Warlock
-.goto Orgrimmar,40.4,54.5,30,0
-.goto Orgrimmar,48.0,46.0
-.train 47813 >> Train your class spells
-.xp <77,1
-step << Horde Warrior
-.goto Orgrimmar,63.6,38.2,30,0
-.goto Orgrimmar,76.9,32.6,20,0
-.goto Orgrimmar,79.8,31.4
-.train 47436 >> Train your class spells
-.xp <78,1
-step << Horde Warrior/Warlock
-.goto Orgrimmar,53.8,48.0
-.zone Dalaran >> Ghetto Hearth to Dalaran. To do this, enter Ragefire Chasm, then copy paste the link below into chat. Wait out the 1 minute warning
-.link /run InviteUnit("a");C_Timer.After(1,function() LeaveParty() end) >> CLICK HERE
-]])
-RXPGuides.RegisterGuide([[
-#version 6
+#version 5
 #wotlk
 #group Horde 70-80
 << Horde
@@ -46205,7 +43356,7 @@ step
 .turnin 12906 >>Turn in Discipline
 .accept 12907 >>Accept Examples to be Made
 step
-.goto TheStormPeaks,45.41,69.10
+.goto TheStormPeaks,45.42,69.06
 >>Kill Garhal just east of Mildred in the cave
 .complete 12907,1 
 .unitscan Garhal
@@ -46255,7 +43406,7 @@ step
 .goto TheStormPeaks,53.14,65.72
 >>Talk to Brijana
 .turnin 12972 >>Turn in You'll Need a Bear
-.accept 12851 >>Accept Bearly Hanging On
+.accept 12851 >>Accept Going Bearback
 step
 #completewith next
 .goto The Storm Peaks,53.12,65.61
@@ -46269,7 +43420,7 @@ step
 step
 .goto TheStormPeaks,53.14,65.72
 >>Use "Burst of Speed" (2) to get back to Brijana faster. Talk to her
-.turnin 12851 >>Turn in Bearly Hanging On
+.turnin 12851 >>Turn in Going Bearback
 .accept 12856 >>Accept Cold Hearted
 step
 #completewith next
@@ -46612,7 +43763,7 @@ step
 step
 .goto TheStormPeaks,28.6,35.6,70,0
 .goto TheStormPeaks,26.9,41.5
-.use 41988 >>Use the Telluric Poultice in your bags on the Fallen Earthen Defenders. After casting it, you can cancel the channel and run off as it will still complete
+.use 41988 >> Use the Telluric Poultice in your bags on the Fallen Earthen Defenders
 .complete 12937,1 
 step
 .goto TheStormPeaks,26.9,41.5
@@ -46991,7 +44142,7 @@ step
 .accept 13009 >>Accept A New Beginning
 .goto TheStormPeaks,63.20,63.27
 .daily 12981 >>Accept Hot and Cold
-.goto TheStormPeaks,63.16,62.93
+.goto TheStormPeaks,63.13,63.02
 step
 .goto TheStormPeaks,65.45,60.16
 >>Talk to King Jokkum
@@ -47113,7 +44264,7 @@ step
 .accept 12976 >>Accept A Monument to the Fallen
 .goto TheStormPeaks,65.45,60.16
 .turnin 12981 >>Turn in Hot and Cold
-.goto TheStormPeaks,63.16,62.93
+.goto TheStormPeaks,63.14,63.02
 .turnin 12976 >>Turn in A Monument to the Fallen
 .accept 12985 >>Accept Forging a Head
 .goto TheStormPeaks,63.20,63.27
@@ -47156,8 +44307,9 @@ step
 step
 .goto TheStormPeaks,55.8,63.9,30,0
 .goto TheStormPeaks,54.7,60.6
-.use 42732 >>Use the Everfrost Razor on a Dead Icemaw Bear in the cave until you get a Flank
+.use 42732 >>Use the Everfrost Razor on a Dead Icemaw Bear in the cave until you get a Flank.
 .collect 42733,1,13011,1 
+
 step
 #completewith next
 .goto TheStormPeaks,54.73,60.79
@@ -47341,2912 +44493,4 @@ step << !Mage
 step
 .goto IcecrownGlacier,87.8,78.1
 .zone Icecrown >>Fly to Icecrown
-]])
-RXPGuides.RegisterGuide([[
-#version 6
-#wotlk
-#group Horde 70-80 << Horde
-#group Alliance 70-80 << Alliance
-#name 79-80 Icecrown
-step
-.goto IcecrownGlacier,87.8,78.1
-.fp The Argent Vanguard >> Get the The Argent Vanguard flight path
-step
-.goto IcecrownGlacier,87.5,75.8
->>Fly to The Argent Vanguard. Talk to Tirion
-.accept 13036 >>Accept Honor Above All Else
-step
-.goto IcecrownGlacier,87.1,75.8
->>Talk to Entari below you
-.turnin 13036 >>Turn in Honor Above All Else
-.accept 13008 >>Accept Scourge Tactics
-step
-.goto IcecrownGlacier,86.8,76.6
->>Talk to Gustav
-.accept 13040 >>Accept Curing The Incurable
-step
-.goto IcecrownGlacier,86.1,75.8
->>Talk to Dalfors
-.accept 13039 >>Accept Defending The Vanguard
-step
-#sticky
-#label webbedfreed
-.goto IcecrownGlacier,83.5,75.1,0,0
->>Kill the Webbed Crusader Cocoons in the area to free them. They'll also buff and heal you << !Paladin
->>Kill the Webbed Crusader Cocoons in the area to free them. Make sure you buff yourself something other than Kings as the npcs will buff you with it (and heal you) << Paladin
-.complete 13008,1 
-step
-.goto IcecrownGlacier,84.7,78.8,80,0
-.goto IcecrownGlacier,83.5,75.1,80,0
-.goto IcecrownGlacier,83.1,72.6,80,0
-.goto IcecrownGlacier,84.8,73.0,80,0
-.goto IcecrownGlacier,83.5,75.1
->>Kill the Nerubians and Spiders in the area. Loot them for their Venom Sacs
-.complete 13039,1 
-.complete 13040,1 
-step
-#requires webbedfreed
-.goto IcecrownGlacier,86.1,75.8
->>Return to Dalfors
-.turnin 13039 >>Turn in Defending The Vanguard
-step
-.goto IcecrownGlacier,86.8,76.6
->>Return to Gustav
-.turnin 13040 >>Turn in Curing The Incurable
-step
-.goto IcecrownGlacier,87.1,75.8
->>Return to Entari
-.turnin 13008 >>Turn in Scourge Tactics
-.accept 13044 >>Accept If There Are Survivors...
-step
-.goto IcecrownGlacier,87.0,79.0
->>Talk to Penumbrius
-.turnin 13044 >>Turn in If There Are Survivors...
-.accept 13045 >>Accept Into The Wild Green Yonder
-step
-#completewith next
-.goto IcecrownGlacier,87.1,79.2
-.vehicle 30228 >> Right click an Argent Skytalon to mount it
-step
->>Fly over to Scourgeholme. Use "Grab Captured Crusader" (1) to rescue the Crusaders (you can only grab one at a time), then fly back to Gustav at The Argent Vanguard and use "Drop Off Captured Crusader" (2) to drop them off. Use "Soar" (3) on cooldown to go faster.
-.pin Icecrown,78.7,67.0
-.waypoint IcecrownGlacier,78.7,67.0,0,rescue,VEHICLE_PASSENGERS_CHANGED,VEHICLE_UPDATE
-.goto Icecrown,86.68,76.83
-.complete 13045,1 
-step
-.goto IcecrownGlacier,87.5,75.8
->>Fly back to Tirion
-.turnin 13045 >>Turn in Into The Wild Green Yonder
-.accept 13070 >>Accept A Cold Front Approaches
-step
-.goto IcecrownGlacier,85.6,76.0
->>Talk to Fezzik inside the small house
-.turnin 13070 >>Turn in A Cold Front Approaches
-.accept 13086 >>Accept The Last Line Of Defense
-step
-#completewith next
-.goto IcecrownGlacier,85.3,75.8
-.vehicle >>Fly to and get inside one of the Turrets located on top of the walls
-step
-.goto IcecrownGlacier,84.8,75.8
-
->>Spam use "Argent Cannon" (1) to kill mobs in a small AoE and generate mana. Use "Reckoning Bomb" (2) to kill mobs in a large AoE at the cost of mana.
-.complete 13086,1 
-.complete 13086,2 
-step
-.goto IcecrownGlacier,85.6,76.0
->>Exit the cannon. Return to Fezzik
-.turnin 13086 >>Turn in The Last Line Of Defense
-step
-.goto IcecrownGlacier,86.0,75.8
->>Talk to Tirion behind you
-.accept 13104 >>Accept Once More Unto The Breach, Hero
-step
->>Travel north-west. Talk to The Ebon Watcher, Silas, Spitzpatrick, and then Gustav inside the house
-.turnin 13104 >>Turn in Once More Unto The Breach, Hero
-.accept 13118 >>Accept The Purging Of Scourgeholme
-.accept 13122 >>Accept The Scourgestone
-.goto IcecrownGlacier,83.0,73.0
-.accept 13130 >>Accept The Stone That Started A Revolution
-.accept 13135 >>Accept It Could Kill Us All
-.goto IcecrownGlacier,83.0,73.1
-.accept 13110 >>Accept The Restless Dead
-.goto IcecrownGlacier,82.9,72.8
-step
-#completewith Crusaders
->>Kill the Scourge in Scourgeholme. Loot them for their Scourgestones
-.complete 13122,1 
-step
-#completewith Kings
-.use 43153 >> Kill the Reanimated Crusaders in Scourgeholme. Use the Holy Water in your bags on their corpses to free their souls
-.goto IcecrownGlacier,78.6,69.7,0
-.goto IcecrownGlacier,77.9,66.2,0
-.goto IcecrownGlacier,78.5,64.6,0
-.goto IcecrownGlacier,80.2,65.7,0
-.complete 13110,1 
-.complete 13118,3 
-step
-#completewith next
-.goto IcecrownGlacier,79.5,68.6,0
-.goto IcecrownGlacier,80.8,64.5,0
-.goto IcecrownGlacier,77.7,63.2,0
-.goto IcecrownGlacier,78.4,65.7,0
->>Kill the Forgotten Underkings in Scourgeholme
-.complete 13118,2 
-step
-.goto IcecrownGlacier,79.2,64.0,20,0
-.goto IcecrownGlacier,79.6,64.1,15,0
-.goto IcecrownGlacier,77.8,65.1,50,0
-.goto IcecrownGlacier,77.3,68.2,20,0
-.goto IcecrownGlacier,77.6,68.7,15,0
-.goto IcecrownGlacier,79.2,64.0,20,0
-.goto IcecrownGlacier,79.6,64.1,15,0
-.goto IcecrownGlacier,77.8,65.1,50,0
-.goto IcecrownGlacier,77.3,68.2,20,0
-.goto IcecrownGlacier,77.6,68.7
->>Kill the Forgotten High Priests mainly located inside the Ziggurats of the area
-.complete 13118,1 
-step
-#label Kings
-.goto IcecrownGlacier,79.5,68.6,80,0
-.goto IcecrownGlacier,80.8,64.5,80,0
-.goto IcecrownGlacier,77.7,63.2,80,0
-.goto IcecrownGlacier,78.4,65.7
->>Kill the Forgotten Underkings in the area
-.complete 13118,2 
-step
-#label Crusaders
-.goto IcecrownGlacier,78.6,69.7,80,0
-.goto IcecrownGlacier,77.9,66.2,80,0
-.goto IcecrownGlacier,78.5,64.6,80,0
-.goto IcecrownGlacier,80.2,65.7,80,0
-.goto IcecrownGlacier,78.6,69.7,80,0
-.goto IcecrownGlacier,77.9,66.2,80,0
-.goto IcecrownGlacier,78.5,64.6,80,0
-.goto IcecrownGlacier,80.2,65.7
-.use 43153 >> Kill the Reanimated Crusaders in Scourgeholme. Use the Holy Water in your bags on their corpses to free their souls
-.complete 13110,1 
-.complete 13118,3 
-step
-.goto IcecrownGlacier,78.6,69.7,80,0
-.goto IcecrownGlacier,77.9,66.2,80,0
-.goto IcecrownGlacier,78.5,64.6,80,0
-.goto IcecrownGlacier,80.2,65.7,80,0
-.goto IcecrownGlacier,78.6,69.7,80,0
-.goto IcecrownGlacier,77.9,66.2,80,0
-.goto IcecrownGlacier,78.5,64.6,80,0
-.goto IcecrownGlacier,80.2,65.7
->>Kill the Scourge in Scourgeholme. Loot them for their Scourgestones
-.complete 13122,1 
-step
-#completewith next
-.goto CrystalsongForest,61.1,52.4,0
-.goto CrystalsongForest,58.9,62.8,0
-.goto CrystalsongForest,81.1,72.4,0
-.goto CrystalsongForest,89.2,55.7,0
-.goto CrystalsongForest,61.1,52.4,0
->>Kill the Humanoid/Undead/Elemental mobs in the area. Loot them for their Energy
-.complete 13135,1 
-step
->>Loot the purple tree stumps on the ground in the area
-.complete 13130,1 
-.goto CrystalsongForest,65.0,53.5,80,0
-.goto CrystalsongForest,70.6,56.1,80,0
-.goto CrystalsongForest,71.4,67.6,80,0
-.goto CrystalsongForest,63.9,69.0,80,0
-.goto CrystalsongForest,65.0,53.5,80,0
-.goto CrystalsongForest,70.6,56.1,80,0
-.goto CrystalsongForest,71.4,67.6,80,0
-.goto CrystalsongForest,63.9,69.0
-.complete 13130,2 
-.goto CrystalsongForest,73.7,65.4,80,0
-.goto CrystalsongForest,82.6,64.5,80,0
-.goto CrystalsongForest,86.5,59.1,80,0
-.goto CrystalsongForest,73.4,56.9,80,0
-.goto CrystalsongForest,73.7,65.4,80,0
-.goto CrystalsongForest,82.6,64.5,80,0
-.goto CrystalsongForest,86.5,59.1,80,0
-.goto CrystalsongForest,73.4,56.9
->>Loot small blue pieces of marble around the destroyed elven buildings
-step
-.goto CrystalsongForest,61.1,52.4,80,0
-.goto CrystalsongForest,58.9,62.8,80,0
-.goto CrystalsongForest,81.1,72.4,80,0
-.goto CrystalsongForest,89.2,55.7,80,0
-.goto CrystalsongForest,61.1,52.4
->>Kill the Humanoid/Undead/Elemental mobs in the area. Loot them for their Energy
-.complete 13135,1 
-step << Druid
-#completewith next
-.cast 18960 >> Cast Teleport: Moonglade
-.zoneskip Moonglade
-.zoneskip Icecrown
-.xp <79,1
-step << Druid
-#label DruidTrain1
-.goto Moonglade,52.4,40.6
->>Go to Moonglade
-.train 48378 >> Train your class spells
-.zoneskip Icecrown
-.xp <79,1
-step << DK
-#completewith next
-.cast 50977 >> Cast Death Gate
-.zoneskip Eastern Plaguelands
-.zoneskip Icecrown
-.xp <79,1
-step << DK
-#label DKTrain1
-.goto Eastern Plaguelands,80.3,48.0
->>Go through the Death Gate
-.train 55271 >> Train your class spells from Amal'Thazad in Acherus
-.zoneskip Icecrown
-.xp <79,1
-step
-#completewith next
-.hs >> Hearth to Dalaran << Horde !Mage
-.hs >> Hearth to Frosthold << Alliance
-.zoneskip Icecrown
-step << Horde Mage
-#completewith next
-.zone Dalaran >> Teleport to Dalaran
-.zoneskip Icecrown
-step << Horde Mage
-#label MageTrain1
-.goto Dalaran,55.0,46.2
-.train 43046 >> Train your class spells
-.zoneskip Icecrown
-.xp <79,1
-step
->>Return to The Ebon Watcher
-.turnin 13130 >>Turn in The Stone That Started A Revolution
-.turnin 13135 >>Turn in It Could Kill Us All
-.goto IcecrownGlacier,83.0,73.1
-.turnin 13118 >>Turn in The Purging Of Scourgeholme
-.turnin 13122 >>Turn in The Scourgestone
-.accept 13125 >>Accept The Air Stands Still
-.goto IcecrownGlacier,83.1,73.0
-step
-.goto IcecrownGlacier,82.9,72.8
->>Go inside the hut
-.turnin 13110 >>Turn in The Restless Dead
-step
-.goto IcecrownGlacier,77.3,61.9
-.use 43206 >>Go inside the building. Use the War Horn of Acherus to summon an NPC to assist you in killing Salranax
-.complete 13125,1 
-step
-.goto IcecrownGlacier,80.1,61.2
-.use 43206 >>Go inside the building. Use the War Horn of Acherus to summon an NPC to assist you in killing Yath'amon
-.complete 13125,3 
-step
-.goto IcecrownGlacier,76.5,53.2
-.use 43206 >>Use the War Horn of Acherus to summon an NPC to assist you in killing Talonox
-.complete 13125,2 
-step
-.goto IcecrownGlacier,83.0,72.9
->>Return to The Ebon Watcher
-.turnin 13125 >>Turn in The Air Stands Still
-step
-.goto IcecrownGlacier,82.9,72.8
->>Go inside the hut
-.accept 13139 >>Accept Into The Frozen Heart Of Northrend
-step
-.goto IcecrownGlacier,86.0,75.8
->>Return to Tirion
-.turnin 13139 >>Turn in Into The Frozen Heart Of Northrend
-.accept 13141 >>Accept The Battle For Crusaders' Pinnacle
-step
-.goto IcecrownGlacier,80.04,71.94
-.use 43243 >>Use the Blessed Banner of the Crusade in your bags at the pile of skulls and defend it against the incoming waves. Focus kill Halof the Deathbringer when he spawns
-.complete 13141,1 
-step
-.goto IcecrownGlacier,82.9,72.8
->>Go inside the hut
-.turnin 13141 >>Turn in The Battle For Crusaders' Pinnacle
-.accept 13157 >>Accept The Crusaders' Pinnacle
-step
-.goto IcecrownGlacier,79.8,71.8
->>Go back up to where you defended the Banner. Talk to Tirion
-.turnin 13157 >>Turn in The Crusaders' Pinnacle
-.accept 13068 >>Accept A Tale of Valor
-step
-.goto IcecrownGlacier,79.4,72.3
-.fp Crusaders' Pinnacle >> Get the Crusaders' Pinnacle flight path
-step << Horde
-.goto IcecrownGlacier,79.5,72.7
-.accept 13224 >>Accept Orgrim's Hammer
-step << Alliance
-.goto Icecrown,79.44,72.84
->>Bottom floor of the tower on the bed
-.accept 13225 >>Accept The Skybreaker
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Go into the big room Maraad is facing in the back and talk to Justin
-.turnin 13418 >>Turn in Preparations for War
-.turnin 13225 >>Turn in The Skybreaker
-.accept 13231 >>Accept The Broken Front
-
-step << Alliance
-#label slaves1
-#sticky
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
->>Find Absalan the Pious. He walks around the back of the ship, up and down the stairs to the left and the right
-.accept 13300 >>Accept Slaves to Saronite
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
->>Speak to Thassarian at the back left corner of the ship
-.accept 12887 >>Accept It's All Fun and Games
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
->>Go up the stairs at the back of the ship and speak to Knight-Captain Drosche
-.accept 13336 >>Accept Blood of the Chosen
-.accept 13341 >>Accept Joining the Assault
-step << Alliance
-#requires slaves1
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
->>Take the stairs at the middle of the ship (behind Maraad), then the stairs either side of the first staircase to go down into the engine room. Speak to Chief Engineer Boltwrench
-.accept 13296 >>Accept Get to Ymirheim!
-step << Horde
-.goto Icecrown,62.58,45.04
->> Fly to the horde ship that's going around high up in the air. Go into the big room in the front.
-.turnin 13419 >>Turn in Preperations for War
-.turnin 13224 >>Turn in Orgrim's Hammer
-.accept 13228 >>Accept The Broken Front
-step << Horde
->> Accept the quest from Koltira Deathweaver in the front room.
-.accept 12892 >>Accept It's All Fun and Games
-step << Horde
->> Accept the quests from Warbringer Davos Rioht & Brother Keltan. They walk around near the stairs and the lower deck.
-.accept 13302 >>Accept Slaves to Saronite
-.accept 13330 >>Accept Blood of the Chosen
-.accept 13340 >>Accept Joining the Assault
-step << Horde
->> Go to the lower deck of the ship and accept the quest from Cheif Engineer Copperclaw
-.accept 13293 >>Accept Get to Ymirheim!
-step
-.goto IcecrownGlacier,79.9,30.8
->>Talk to Crusader Bridenbrad lying next to the campfire
-.turnin 13068 >>Turn in A Tale of Valor
-.accept 13072 >>Accept A Hero Remains
-step << Alliance
-#completewith Freemind
-.goto IcecrownGlacier,76.0,19.9,20,0
-.goto IcecrownGlacier,76.2,19.7
-.home >>Set your Hearthstone to Silver Covenant Pavilion
-step << Horde
-#completewith Freemind
-.goto IcecrownGlacier,76.1,24.0
-.home >> Set hearth in Sunreaver Pavillion
-step
-.goto IcecrownGlacier,44.5,21.6
-.use 41265 >> Fly to the top of the tower. Use the Eyesore Blaster in your bags on the Ocular until it dies
-.complete 12887,1 << Alliance 
-.complete 12892,1 << Horde 
-step
-.goto IcecrownGlacier,44.1,24.7
->>Fly all the way down to Baron Silver on the ground. Talk to him
-.turnin 12887 >>Turn in It's All Fun and Games << Alliance
-.turnin 12892 >>Turn in It's All Fun and Games << Horde
-.accept 12891 >>Accept I Have an Idea, But First...
-step
->>Kill Geists and loot them for their Rope, kill Abominations and loot them for their Hook, kill Cultists and loot them for their Rod, and kill Undead mobs and loot them for their Essence
-.complete 12891,1 
-.goto IcecrownGlacier,43.8,24.2,40,0
-.goto IcecrownGlacier,43.6,25.1,40,0
-.goto IcecrownGlacier,43.7,25.4,40,0
-.goto IcecrownGlacier,42.5,25.1,40,0
-.goto IcecrownGlacier,42.3,26.1
-.complete 12891,3 
-.goto IcecrownGlacier,43.4,25.6,40,0
-.goto IcecrownGlacier,43.3,26.6,40,0
-.goto IcecrownGlacier,42.5,26.4,40,0
-.goto IcecrownGlacier,42.9,24.5
-.complete 12891,2 
-.goto IcecrownGlacier,43.3,24.1,40,0
-.goto IcecrownGlacier,43.5,26.2,40,0
-.goto IcecrownGlacier,42.5,28.1,40,0
-.goto IcecrownGlacier,42.7,25.7
-.complete 12891,4 
-.goto IcecrownGlacier,43.6,24.1,40,0
-.goto IcecrownGlacier,42.6,27.2,40,0
-.goto IcecrownGlacier,42.3,26.1
-step
-.goto IcecrownGlacier,44.2,24.6
->>Return to Silver
-.turnin 12891 >>Turn in I Have an Idea, But First...
-.accept 12893 >>Accept Free Your Mind
-step
-.goto IcecrownGlacier,44.4,27.0
-.use 41366 >> Kill Vile. Use the Sovereign Rod on his corpse
-.complete 12893,1 
-step
-.goto IcecrownGlacier,41.8,24.5
-.use 41366 >> Kill Lady Nightswood. Use the Sovereign Rod on her corpse
-.complete 12893,2 
-step
-.goto IcecrownGlacier,43.0,23.5,70,0
-.goto IcecrownGlacier,44.8,24.3,70,0
-.goto IcecrownGlacier,46.2,21.9,70,0
-.goto IcecrownGlacier,45.7,19.7,70,0
-.goto IcecrownGlacier,43.7,19.0,70,0
-.goto IcecrownGlacier,42.6,21.1
-.use 41366 >> Kill The Leaper. Use the Sovereign Rod on his corpse. He walks around OUTSIDE the main building on the upper floor.
-.complete 12893,3 
-.unitscan The Leaper
-step
-#label Freemind
-.goto IcecrownGlacier,44.2,24.7
->>Return to Silver
-.turnin 12893 >>Turn in Free Your Mind
-.accept 12896 >>Accept If He Cannot Be Turned << Alliance
-.accept 12897 >>Accept If He Cannot Be Turned << Horde
-step
-.goto IcecrownGlacier,44.7,19.8
->> Go into the building and click the General's Weapon Rack. Be careful as this spawns an elite. Kill General Lightsbane
-.complete 12896,1 << Alliance 
-.complete 12897,1 << Horde 
-step << Alliance
-.goto IcecrownGlacier,62.6,51.3
->>Exit the building, then fly over and talk to Ground Commander Koup (on the ground)
-.turnin 13341 >>Turn in Joining the Assault
-.accept 13309 >>Accept Assault by Air
-step << Alliance
-#completewith next
-.goto Icecrown,62.55,50.67
-.vehicle 32227 >> Right click the turret on top of the Flying Machine to start the quest
-.isOnQuest 13309
-step << Alliance
-
->>Shoot at all the Spear Guns on the buildings as you fly around
-.goto Icecrown,52.65,56.93
-.complete 13309,1 
-.isOnQuest 13309
-step << Alliance
-.goto Icecrown,62.55,51.29
->>Return to Koup
-.turnin 13309 >>Turn in Assault by Air
-.isOnQuest 13309
-step << Alliance
-.goto IcecrownGlacier,62.5,51.1,15,0
-.goto IcecrownGlacier,62.8,51.6
->>Talk to the Squad Leader. He may not be here if someone else started the quest and has a roughly 6 minute respawn time, and respawns about 10 yards to the right of Koup
-.accept 13284 >>Accept Assault by Ground
-step << Alliance
-.goto IcecrownGlacier,58.2,55.9,0
-.goto IcecrownGlacier,59.6,59.3,0
-.goto IcecrownGlacier,57.8,62.6,0
-#completewith Mineslave
->>Kill the Vrykul throughout Ymirheim
-.complete 13336,1 
-step << Alliance
-.goto Icecrown,59.89,53.50
->> Escort the troops. Let some of the troops tank the mobs if needed
-.complete 13284,1 
-step << Alliance
-#completewith Rkhem
-.goto IcecrownGlacier,56.7,57.4,0
-.goto IcecrownGlacier,55.7,57.3,0
-.goto IcecrownGlacier,56.2,58.9,0
-.goto IcecrownGlacier,55.6,59.7,0
-.goto IcecrownGlacier,54.5,60.0,0
-.goto IcecrownGlacier,55.7,57.3,0
->>Go into the Saronite Mine. Talk to the slaves to rescue them (sometimes they may attack you).
-.complete 13300,1 
-.skipgossip
-step << Alliance
-.goto IcecrownGlacier,56.7,57.4,60,0
-.goto IcecrownGlacier,54.5,59.3
->>Speak to Darkspeaker R'khem chained up inside the mine
-.accept 13308 >>Accept Mind Tricks
-step << Alliance
-.goto IcecrownGlacier,55.1,59.4
->>Kill Foreman Thaldrin behind you. Loot him for his key. Use all your cooldowns. If you can't kill him, skip this quest
-.complete 13308,1 
-step << Alliance
-#label Rkhem
-.goto IcecrownGlacier,54.5,59.3
->>Return to Darkspeaker R'khem
-.turnin 13308 >>Turn in Mind Tricks
-.isQuestComplete 13308
-step << Alliance
-#label Mineslave
-.goto IcecrownGlacier,55.7,57.3,40,0
-.goto IcecrownGlacier,56.2,58.9,40,0
-.goto IcecrownGlacier,55.6,59.7,40,0
-.goto IcecrownGlacier,54.5,60.0,40,0
-.goto IcecrownGlacier,55.7,57.3
->>Go into the Saronite Mine. Talk to the slaves to rescue them (sometimes they may attack you).
-.complete 13300,1 
-.skipgossip
-step << Alliance
-.goto IcecrownGlacier,58.2,55.9,70,0
-.goto IcecrownGlacier,59.6,59.3,70,0
-.goto IcecrownGlacier,57.8,62.6
->>Kill the Vrykul throughout Ymirheim
-.complete 13336,1 
-step << Alliance
-.abandon 13308 >> Abandon Mind Tricks if you were unable to do it
-step << Alliance
-#completewith next
-.goto Icecrown,57.01,62.53
->>Fly to Frazzle on the ground
-.turnin 13296 >>Turn in Get to Ymirheim!
-step << Alliance
-.goto Icecrown,57.01,62.53
->>NOTE: This quest (and keeping it in your questlog) flags you for PVP. It is VERY easy however. Skip it if you wish
-.accept 13280 >>Accept King of the Mountain
-
-step << Alliance
-#completewith next
-.goto Icecrown,56.99,62.60
-.vehicle 31784 >>Right Click on the gnome looking robot
-.isOnQuest 13280
-step << Alliance
-.goto Icecrown,54.89,60.12
->>Spam use "Jump Jets" (3) to quickly scale the cliff (it has no cooldown). Once you get to the top of the mountain, use "Plant Alliance Battle Standard" (1) to plant the banner. Then, leave the vehicle
-.complete 13280,1 
-.isOnQuest 13280
-step << Alliance
-.goto Icecrown,56.97,62.55
-.turnin 13280 >>Turn in King of the Mountain
-.isQuestComplete 13280
-step << Horde
-.goto IcecrownGlacier,58.3,46.0
-.turnin 13340 >>Turn in Joining the Assault
-step << Horde
-.goto IcecrownGlacier,58.3,46.0
-.accept 13310 >>Accept Assault by Air
-step << Horde
->> Go into the ship nearby. Shoot at all the towers you see while flying around.
-.goto IcecrownGlacier,56.8,64.3
-.complete 13310,1 
-step << Horde
-.goto IcecrownGlacier,58.3,46.0
-.turnin 13310 >>Turn in Assault by Air
-step << Horde
-.goto IcecrownGlacier,58.3,46.2
-.accept 13301 >>Accept Assault by Ground
-step << Horde
-.goto IcecrownGlacier,54.9,52.8,0,0
-#sticky
-#label ymirheimslain
-.complete 13330,1
-step << Horde
->> Escort the troops.
-.goto IcecrownGlacier,59.4,52.8
-.complete 13301,1 
-step << Horde
-.goto IcecrownGlacier,55.9,59.0
-.complete 13302,1 
-.skipgossip
-step << Horde
-#requires ymirheimslain
-.goto IcecrownGlacier,51.9,57.6
-.turnin 13293 >>Turn in Get to Ymirheim!
-.accept 13283 >>Accept King of the Mountain
-step << Horde
->>Use the robot's 3rd ability to jump up the cliff, once you get to the top of the mountain, plant the banner and leave the vehicle
-.goto IcecrownGlacier,54.8,60.1
-.complete 13283,1 
-step << Horde
-.goto IcecrownGlacier,51.9,57.5
-.turnin 13283 >>Turn in King of the Mountain
-
-step << Alliance
-.goto IcecrownGlacier,66.4,66.5
->>Find and speak to a dying soldier around the broken front
-.complete 13231,1 
-.accept 13232 >>Accept Finish Me!
-.skipgossip
-step << Alliance
-.goto IcecrownGlacier,69.1,62.1
->>Find more Dying Soldiers around the area and finish them off
-.complete 13232,1
-.skipgossip
-step << Horde
-.goto IcecrownGlacier,67.7,68.4
->>Find and speak to a dying berserker around the broken front
-.complete 13228,1 
-.accept 13230 >>Accept Avenge Me!
-step << Horde
-.goto IcecrownGlacier,68.7,64.2
-.complete 13230,1
-step
-.goto IcecrownGlacier,79.8,71.7
->>Return to Tirion at Crusader's Pinnacle
-.turnin 13072 >>Turn in A Hero Remains
-.accept 13073 >>Accept The Keeper's Favor
-step
-#completewith next
-.goto IcecrownGlacier,87.0,77.0
-.zone Moonglade>> Speak to Arch Druid Lilliandra and take the portal she creates to moonglade
-.skipgossip
-step
-.goto Moonglade,36.2,41.8
->>Talk to Remulos
-.turnin 13073 >>Turn in The Keeper's Favor
-.accept 13074 >>Accept Hope Within the Emerald Nightmare
-step
-.goto Moonglade,34.9,43.4,20,0
-.goto Moonglade,34.6,41.6,20,0
-.goto Moonglade,32.1,40.1,20,0
-.goto Moonglade,35.4,38.4,20,0
-.goto Moonglade,37.3,43.3,20,0
-.goto Moonglade,34.9,43.4,20,0
-.goto Moonglade,34.6,41.6,20,0
-.goto Moonglade,32.1,40.1,20,0
-.goto Moonglade,35.4,38.4,20,0
-.goto Moonglade,37.3,43.3
->>Loot small brown acorns around the trees near the quest giver
-.complete 13074,1 
-step
-.goto Moonglade,36.2,41.8
->>Right click the Fitful Dream buff to remove it, and then deliver the quest.
-.turnin 13074 >>Turn in Hope Within the Emerald Nightmare
-.accept 13075 >>Accept The Boon of Remulos
-step
-#completewith next
-.goto IcecrownGlacier,76.1,24.0
-.hs >> Hearth to Argent Tournament Grounds
-step
-.goto IcecrownGlacier,79.9,30.8
->>Return to Bridenbrad
-.turnin 13075 >>Turn in The Boon of Remulos
-.accept 13076 >>Accept Time Yet Remains
-
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Go into the big room Maraad is facing in the back and talk to Justin
-.turnin 13231 >>Turn in The Broken Front
-.turnin 13232 >>Turn in Finish Me!
-.accept 13286 >>Accept ...All the Help We Can Get.
-.accept 13290 >>Accept Your Attention, Please
-step << skip 
-.goto Icecrown,61.05,46.39
-.accept 13233 >>Accept No Mercy!
-step << Alliance
-#label slaves2
-#sticky
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
->>Find Absalan the Pious. he walks around the back of the ship, up and down the stairs to the left and the right
-.turnin 13300 >>Turn in Slaves to Saronite
-.isOnQuest 13300
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
->>Go up the stairs at the back of the ship and speak to Knight-Captain Drosche
-.turnin 13336 >>Turn in Blood of the Chosen
-.isOnQuest 13336
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
->>Speak to Thassarian at the back left corner of the ship
-.turnin 12896 >>Turn in If He Cannot Be Turned
-.accept 12898 >>Accept The Shadow Vault
-.turnin 13286 >>Turn in ...All the Help We Can Get.
-.accept 13287 >>Accept Poke and Prod
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
->>Take the stairs at the middle of the ship (behind Maraad), then the stairs either side of the first staircase to go down into the engine room. Speak to Chief Engineer Boltwrench
-.turnin 13290 >>Turn in Your Attention, Please
-.accept 13291 >>Accept Borrowed Technology
-step << Horde
->> Fly back to the horde ship and go into the main room.
-.turnin 12897 >>Turn in If He Cannot Be Turned
-.accept 12899 >>Accept The Shadow Vault
-step << Horde
-.turnin 13228 >>Turn in The Broken Front
-.turnin 13230 >>Turn in Avenge Me!
-.accept 13238 >>Accept Good For Something?
-.accept 13260 >>Accept Takes One to Know One
-step << Horde
->> Deliver the quest next to you.
-.turnin 13260 >>Turn in Takes One to Know One
-.accept 13237 >>Accept Poke and Prod
-step << Horde
->> Find the two people walking around near the stairs.
-.turnin 13302 >>Turn in Slaves to Saronite
-.turnin 13330 >>Turn in Blood of the Chosen
-step << Horde
->> Go to the goblin below.
-.turnin 13238 >>Turn in Good For Something?
-.accept 13239 >>Accept Volatility
-step << Alliance
->>Return to Ground Commander Koup
-.goto Icecrown,62.60,51.35
-.turnin 13284 >>Turn in Assault by Ground
-step << Horde
-.goto IcecrownGlacier,58.3,46.2
-.turnin 13301 >>Turn in Assault by Ground
-step
-.goto IcecrownGlacier,42.8,24.9
->>Return to Baron Silver
-.turnin 12898 >>Turn in The Shadow Vault << Alliance
-.turnin 12899 >>Turn in The Shadow Vault << Horde
-.accept 13106 >>Accept Blackwatch
-.accept 12938 >>Accept The Duke
-step
-.goto IcecrownGlacier,43.7,24.4
-.fp The Shadow Vault >> Get the The Shadow Vault flight path
-step
-.goto IcecrownGlacier,44.7,20.3
->>Go inside the building. Talk to Lankral
-.turnin 12938 >>Turn in The Duke
-.accept 12939 >>Accept Honor Challenge
-step
-.goto Icecrown,43.60,25.13
->>Speak with The Leaper, he walks around the tent
-.accept 12955 >>Accept Eliminate the Competition
-step
-.goto IcecrownGlacier,37.5,24.7,0,0
-#sticky
-#label mjordincombat
-.use 41372 >> Use the Challenge Flag on the Mjordin Combatant from far away. You can challenge multiple Combatants at once as long as you stay out of combat (but only 1 mob per duo of 2)
-.complete 12939,1 
-step
->>Fly to the Savage Ledge
->>Talk to Tinky, Sigrid, Onu'zun and Efrem at the Savage Ledge. Defeat them
-.complete 12955,4 
-.goto IcecrownGlacier,36.1,23.6
-.complete 12955,1 
-.goto IcecrownGlacier,37.1,22.4
-.complete 12955,3 
-.goto IcecrownGlacier,37.9,22.9
-.complete 12955,2 
-.goto IcecrownGlacier,37.9,25.1
-.skipgossip
-step
-.goto IcecrownGlacier,43.5,25.0
->>Return to The Leaper
-.turnin 12955 >>Turn in Eliminate the Competition
-.accept 12999 >>Accept The Bone Witch
-step
-.goto IcecrownGlacier,44.7,20.3
->>Go inside the building. Return to Lankral
-.turnin 12939 >>Turn in Honor Challenge
-.accept 12943 >>Accept Shadow Vault Decree
-step
-#completewith next
-.goto IcecrownGlacier,39.01,23.99,25 >> The Path to Ufrang's Hall start here
-step
-.goto IcecrownGlacier,41.0,23.9
->> Go back to the Savage Ledge and then go inside Ufrang's Hall. Talk to Vaelen who is chained up inside
-.accept 12949 >>Accept Get the Key
-step
-.goto IcecrownGlacier,40.3,23.9
-.use 41776 >> Use the Shadow Vault Decree in your bags in front of Thane. Kill him.
-.complete 12943,1 
-step
-.goto IcecrownGlacier,37.7,23.9,70,0
-.goto IcecrownGlacier,36.7,23.7
->>Go back outside to the Savage Ledge. Kill Instructor Hroegar who is patrolling around. Loot him for his key
-.complete 12949,1 
-.unitscan Instructor Hroegar
-step
-.goto IcecrownGlacier,41.0,23.9
->>Go back inside Ufrang's hall. Return to Vaelen
-.turnin 12949 >>Turn in Get the Key
-.accept 12951 >>Accept Let the Baron Know
-step
-.goto IcecrownGlacier,39.01,23.99,25,0
-.goto IcecrownGlacier,42.9,24.9
->>Exit the Hall. Return to Baron Silver
-.turnin 12951 >>Turn in Let the Baron Know
-.accept 12995 >>Accept Leave Our Mark
-.accept 13085 >>Accept Vaelen Has Returned
-step
-.goto IcecrownGlacier,43.6,24.1,60,0
-.goto IcecrownGlacier,42.7,26.8
->>Talk to Vile patrolling along the main road
-.accept 12992 >>Accept Crush Dem Vrykuls!
-step
-.goto IcecrownGlacier,43.8,23.3,30,0
-.goto IcecrownGlacier,43.1,21.1
->> Go inside the building. Talk to Vaelen inside on the left
-.turnin 13085 >>Turn in Vaelen Has Returned
-.accept 12982 >>Accept Ebon Blade Prisoners
-step
-.goto IcecrownGlacier,44.7,20.4
->>Talk to Lankral
-.turnin 12943 >>Turn in Shadow Vault Decreestep
-.accept 13084 >>Accept Vandalizing Jotunheim
-step
-#sticky
-#label VryBones1
-.goto IcecrownGlacier,34.1,28.7,0,0
->>Kill Vrykul in the area. Loot them for their Bones
-.collect 43089,15,13092,1 
-step
-#sticky
-#label BoneWitch
-#requires VryBones1
-.goto IcecrownGlacier,32.5,43.0
->>Talk to The Bone Witch inside the cave. Pick the movement speed rune reward and use it. You can use more than 1 rune at a time, so if you have more than 15 bones, get the damage rune
-.turnin 12999 >>Turn in The Bone Witch
-.accept 13042 >>Accept Deep in the Bowels of The Underhalls
-.accept 13092 >>Accept Reading the Bones
-.turnin 13092 >>Turn in Reading the Bones
-step
-#sticky
-#requires BoneWitch
-#completewith next
-.goto IcecrownGlacier,32.5,43.0
->>If you still have more than 15 Vrykul Bones, get another rune from The Bone Witch
-.turnin 13093 >>Turn in Reading the Bones
-.itemcount 43089,15 
-step
-.goto IcecrownGlacier,29.5,43.4,50,0
-.goto IcecrownGlacier,29.6,45.7,50,0
-.goto IcecrownGlacier,27.9,45.8,50,0
-.goto IcecrownGlacier,27.8,40.2,50,0
-.goto IcecrownGlacier,28.3,38.0,50,0
-.goto IcecrownGlacier,29.0,35.1,50,0
-.goto IcecrownGlacier,34.1,28.7,50,0
-.goto IcecrownGlacier,29.5,43.4
-.use 42480 >>Kill Vrykul in the area and loot them for their cage keys. Use the Ebon Blade Banner in your bags on their corpses (BE SURE TO DO THIS). Click any Keys looted on the cages found throughout Jotenheim
->>Burn the Banners found throughout Jotenheim
->>You don't need all of the banners planted/Vrykul killed just yet, but it's fine if you get all 15
-.collect 42422,8,12982,1,-1 
-.complete 12982,1 
-.complete 12995,1,8 
-.complete 12992,1,8 
-.complete 13084,1 
-step
-#sticky
-#label DaKeys
-.destroy 42422 >>Destroy any leftover Jotunheim Cage Keys you have
-step
-#requires VryBones1
-#completewith Revenge
-.goto IcecrownGlacier,32.7,32.3,25 >> The path to the Underhalls start here
-step
-#requires VryBones1
-#completewith Revenge2
-.use 42480 >>Kill Vrykul within the Underhalls. Use the Ebon Blade Banner in your bags on their corpses (BE SURE TO DO THIS).
-.complete 12995,1 
-.complete 12992,1 
-step
-#requires VryBones1
-#label Revenge
->>Go inside the Underhalls located at the underground building in the center of Jothunheim. Go in the North-East room on the top floor and talk to Feigr
-.goto IcecrownGlacier,35.1,34.6,25,0
-.goto IcecrownGlacier,36.1,33.1
-.accept 13059 >>Accept Revenge for the Vargul
-step
-#requires DaKeys
-.goto IcecrownGlacier,33.1,37.7
-.use 42928 >>Go down the stairs once. Use Bethod's Sword near Thane Illskar. Kill Volgur and Brita, then finally Illskar
-.complete 13059,1 
-.complete 13059,2 
-step
-.goto IcecrownGlacier,34.0,36.4,20,0
-.goto IcecrownGlacier,34.2,36.6
->>Go downstairs to the bottom level. Beat Apprentice Osterkilgr to around 30% health to extract the information out of him (DON'T use high damage spells at about <40%), then kill him. Loot him for Dr. Terrible's book, then click it in your bags
-.complete 13042,1 
-.complete 13042,2 
-.collect 42772,1,13043 
-.accept 13043 >>Accept The Sum is Greater than the Parts
-step
-#completewith next
-.goto Icecrown,33.38,33.20
-.vehicle 30403 >> On the bottom floor, go into the small room at the northwest side. Right click on Nergeld
-step
-.goto IcecrownGlacier,33.5,33.4
->>Defeat the incoming waves of enemies until Dr. Terrible shows up. Use "Stomp" (3) and "Punch" (1) on cooldown to attack mobs in melee range. Use "Roar" (2) to damage mobs at range
-.complete 13043,1 
-step
-#label Revenge2
-.goto IcecrownGlacier,36.2,33.0
->>Go back upstairs to the top floor. Return to Feigr
-.turnin 13059 >>Turn in Revenge for the Vargul
-step
-.goto IcecrownGlacier,34.8,35.2,30,0
-.goto IcecrownGlacier,34.0,36.3
-.use 42480 >>Kill Vrykul within the Underhalls. Use the Ebon Blade Banner in your bags on their corpses (BE SURE TO DO THIS).
-.complete 12995,1 
-.complete 12992,1 
-step
-#completewith next
-.goto IcecrownGlacier,32.7,32.3,25 >> Exit the Underhalls
-step
-#completewith Terror
-.goto IcecrownGlacier,32.5,43.0
->>Talk to The Bone Witch to exchange your Bones for another Rune. Use it
-.turnin 13093 >>Turn in Reading the Bones
-.itemcount 43089,15 
-step
-.goto IcecrownGlacier,32.5,43.0
->>Return to The Bone Witch inside the cave
-.turnin 13042 >>Turn in Deep in the Bowels of The Underhalls
-.turnin 13043 >>Turn in The Sum is Greater than the Parts
-.accept 13091 >>Accept The Art of Being a Water Terror
-step
-#label Terror
-#completewith next
-.goto Icecrown,31.35,41.13
-.vehicle 30645 >> Right click the wooden gate to take control of a Water Terror
-step
-.goto IcecrownGlacier,28.6,40.2
->> While controlling a Water Terror, use "Frostbolt" (1) to gather mobs, then use "Crashing Wave" (2) to kill all the mobs you've gathered in front of you in a cone. Use "Frost Nova" (4) to freeze enemies in place and deal moderate AoE damage until (2) comes back off cooldown.
-.complete 13091,1 
-step
-.goto IcecrownGlacier,32.5,43.0
->>Exit the Water Terror. Return to The Bone Witch
-.turnin 13091 >>Turn in The Art of Being a Water Terror
-.accept 13121 >>Accept Through the Eye
-step
-.goto IcecrownGlacier,42.7,26.8,60,0
-.goto IcecrownGlacier,43.6,24.1
->>Return to The Shadow Vault. Talk to Vile patrolling along the main road
-.turnin 12992 >>Turn in Crush Dem Vrykuls!
-.accept 13071 >>Accept Vile Like Fire!
-step
-.goto IcecrownGlacier,43.8,23.3,30,0
-.goto IcecrownGlacier,43.1,21.1
->> Go inside the building. Talk to Vaelen inside on the left
-.turnin 12982 >>Turn in Ebon Blade Prisoners
-step
-.goto IcecrownGlacier,44.7,20.4
->>Talk to Lankral
-.turnin 13084 >>Turn in Vandalizing Jotunheim
-step
-.goto IcecrownGlacier,42.9,24.9
->>Return to Silver
-.turnin 12995 >>Turn in Leave Our Mark
-.accept 12806 >>Accept To the Rise with all Due Haste!
-step
-.goto IcecrownGlacier,43.5,25.0
->>Speak with The Leaper, he walks around the tent
-.accept 13069 >>Accept Shoot'Em Up
-step
-#completewith next
-.goto IcecrownGlacier,27.9,33.2
-.vehicle >> Get inside one of the centrally-located Jotunheim Rapid-Fire Harpoons.
-
-step
-.goto IcecrownGlacier,27.9,33.2
->> Whilst inside the Harpoon, spam use "Rapid-Fire Harpoon" (2) to shoot down the Dragons
-.complete 13069,1 
-step
-#completewith next
-.goto IcecrownGlacier,28.0,37.7
-.vehicle 30564 >> Right click a Njorndar Proto-Drake to mount it
-step
-.goto IcecrownGlacier,27.7,41.1,70,0
-.goto IcecrownGlacier,29.2,41.0,70,0
-.goto IcecrownGlacier,29.6,39.7,70,0
-.goto IcecrownGlacier,31.5,36.9,70,0
-.goto IcecrownGlacier,32.0,39.1,70,0
-.goto IcecrownGlacier,30.8,40.2,70,0
-.goto IcecrownGlacier,32.4,40.7,70,0
-.goto IcecrownGlacier,31.5,43.9,70,0
-.goto IcecrownGlacier,30.1,43.1,70,0
-.goto IcecrownGlacier,27.7,41.1
->>Use "Burst of Speed" (2) on cooldown to move faster. Use "Strafe Jotunheim Building" (1) to set the buildings ablaze
-.complete 13071,1 
-step
-.goto IcecrownGlacier,19.5,48.1
->>Dismount the drake, then head to Death's Rise. It's a small platform located halfway between the sea level and the top of the mountain. Talk to Arete
-.turnin 12806 >>Turn in To the Rise with all Due Haste!
-.accept 12807 >>Accept The Story Thus Far...
-step
-#sticky
-#label DeathRise
-.goto IcecrownGlacier,19.3,47.8
-.fp Death's Rise >> Get the Death's Rise flight path
-step
-.goto IcecrownGlacier,19.5,48.1
->>Speak to Lord-Commander Arete again
-.complete 12807,1 
-.turnin 12807 >>Turn in The Story Thus Far...
-.accept 12810 >>Accept Blood in the Water
-.skipgossip
-step
-.accept 12813 >>Accept From Their Corpses, Rise!
->>Speak to Setaal
-.goto IcecrownGlacier,19.7,48.4
->>Speak to Aurochs. He patrols around the middle fire
-.accept 12838 >>Accept Intelligence Gathering
-.goto IcecrownGlacier,20.1,47.5,20,0
-.goto IcecrownGlacier,20.4,47.9,20,0
-.goto IcecrownGlacier,20.1,48.4,20,0
-.goto IcecrownGlacier,19.7,47.9
-step
-#requires DeathRise
-#sticky
-#label transformedcorpse
-.goto IcecrownGlacier,9.5,44.8,50,0
-.goto IcecrownGlacier,9.5,44.8,0,0
-.use 40587 >> Kill the Onslaught mobs in the area. Use Darkmender's Tincture in your bags on their corpses
-.complete 12813,1 
-step
-#requires DeathRise
->>Kill Onslaught mobs, then loot them for their keys. Use them to open chests all around the Onslaught Harbor for the Documents and The Grand Admiral's Plan. Right click the plan in your bags to start the quest
->>The chests do not have a 100% droprate for the documents or plan
-.goto IcecrownGlacier,10.7,45.6,40,0
-.goto IcecrownGlacier,10.3,46.4,40,0
-.goto IcecrownGlacier,8.8,46.7,40,0
-.goto IcecrownGlacier,8.8,42.2,40,0
-.goto IcecrownGlacier,10.6,42.9,40,0
-.goto IcecrownGlacier,9.6,40.6,40,0
-.goto IcecrownGlacier,9.3,37.5,40,0
-.goto IcecrownGlacier,10.1,36.2,40,0
-.goto IcecrownGlacier,9.1,36.3,40,0
-.goto IcecrownGlacier,8.5,36.4,40,0
-.goto IcecrownGlacier,10.7,45.6,40,0
-.goto IcecrownGlacier,10.3,46.4,40,0
-.goto IcecrownGlacier,8.8,46.7,40,0
-.goto IcecrownGlacier,8.8,42.2,40,0
-.goto IcecrownGlacier,10.6,42.9,40,0
-.goto IcecrownGlacier,9.6,40.6,40,0
-.goto IcecrownGlacier,9.3,37.5,40,0
-.goto IcecrownGlacier,10.1,36.2,40,0
-.goto IcecrownGlacier,9.1,36.3,40,0
-.goto IcecrownGlacier,8.5,36.4
-.collect 40652,6,12838,-1
-.complete 12838,1 
-.collect 40666,1,12839 
-.accept 12839 >>Accept The Grand (Admiral's) Plan
-step
-#requires transformedcorpse
-.use 40551 >> Go out in the sea about 30-90 yards from the shore, and kill Ravenous Jaws. Use the Gore Bladder in your bags on top of their corpses
-.goto IcecrownGlacier,4.8,41.5,90,0
-.goto IcecrownGlacier,4.3,35.9,90,0
-.goto IcecrownGlacier,11.7,35.6,90,0
-.goto IcecrownGlacier,13.7,42.0,90,0
-.goto IcecrownGlacier,10.3,41.5,90,0
-.goto IcecrownGlacier,4.8,41.5,90,0
-.goto IcecrownGlacier,4.3,35.9,90,0
-.goto IcecrownGlacier,11.7,35.6,90,0
-.goto IcecrownGlacier,13.7,42.0,90,0
-.goto IcecrownGlacier,10.3,41.5
-.complete 12810,1 
-step
->>Return to Aurochs at Death's Rise. He patrols around the middle fire
-.turnin 12838 >>Turn in Intelligence Gathering
-.goto IcecrownGlacier,20.1,47.5,20,0
-.goto IcecrownGlacier,20.4,47.9,20,0
-.goto IcecrownGlacier,20.1,48.4,20,0
-.goto IcecrownGlacier,19.7,47.9
->>Talk to Arete
-.turnin 12810 >>Turn in Blood in the Water
-.accept 12814 >>Accept You'll Need a Gryphon
-.turnin 12839 >>Turn in The Grand (Admiral's) Plan
-.accept 12840 >>Accept In Strict Confidence
-.goto IcecrownGlacier,19.6,48.1
->>Talk to Setaal
-.turnin 12813 >>Turn in From Their Corpses, Rise!
-.goto IcecrownGlacier,19.7,48.4
-step
->>Kill Captain Welsington and Hartford standing next to their ships' wheels
-.complete 12840,1 
-.goto Icecrown,5.68,41.95
-.complete 12840,2 
-.goto Icecrown,6.99,41.87
-step
-.goto IcecrownGlacier,10.4,44.1
->> Kill Onslaught Gryphon Riders in the area. Loot them for their Onslaught Gryphon Reins
-.collect 40970,1,12814,1 
-step
-.goto IcecrownGlacier,19.6,47.8
->> Return to Death's Rise on your normal mount. When you get to the quest giver, use the Gryphon Reins and use "Deliver Gryphon" (1) to deliver it.
-.complete 12814,1 
-.use 40970
-step
-#questguide
-.goto IcecrownGlacier,19.6,47.8
->>Talk to Uzo Deathcaller
-.turnin 12814 >>Turn in You'll Need a Gryphon
-.accept 12815 >>Accept No Fly Zone
-.goto IcecrownGlacier,19.6,47.8
->>Talk to Arete
-.turnin 12840 >>Turn in In Strict Confidence
-.accept 12847 >>Accept Second Chances
-.goto IcecrownGlacier,19.6,48.1
-step
-.goto IcecrownGlacier,19.6,47.8
->>Talk to Uzo Deathcaller
-.turnin 12814 >>Turn in You'll Need a Gryphon
-.accept 12815 >>Accept No Fly Zone
-.goto IcecrownGlacier,19.6,47.8
->>Talk to Arete
-.turnin 12840 >>Turn in In Strict Confidence
-.goto IcecrownGlacier,19.6,48.1
-step
-#questguide
-.goto IcecrownGlacier,9.5,47.3
-.use 40730 >>Kill Archbishop Landgren. This quest is VERY hard, group up for it if needed. Once you kill him, use Arete's Gate in your bags on his corpse.
-.complete 12847,1 
-.complete 12847,2 
-.timer 77,Second Chances RP event
-step
-#questguide
-.goto IcecrownGlacier,9.5,47.3
->>Wait out the RP event, then talk to Arete on Landgren's corpse
-.turnin 12847 >> Turn in Second Chances
-.accept 12852 >> Accept The Admiral Revealed
-step
-#questguide
-#completewith next
-.goto IcecrownGlacier,9.3,49.0,30 >> Enter the cave here
-step
-#questguide
-.goto IcecrownGlacier,9.1,46.8,20,0
-.goto IcecrownGlacier,9.1,46.2
->>Go deep into the cave. Kill Grand Admiral Westwind. When he casts his Protection Sphere, use the Lord-Commander's Nullifier in your bags to remove it
-.complete 12852,1 
-step
-#questguide
-#completewith next
-.goto IcecrownGlacier,9.3,49.0,30 >> Exit the cave
-step
-.goto IcecrownGlacier,10.5,44.1,70,0
-.goto IcecrownGlacier,5.0,43.4,70,0
-.goto IcecrownGlacier,10.5,39.0,70,0
-.goto IcecrownGlacier,12.7,41.2,70,0
-.goto IcecrownGlacier,10.5,44.1
->> Kill the Gryphon Riders in the area. Shoot them down with ranged abilities or group multiple ones of them up in the air and then fly down and kill them. If you group up many, don't let them hit you in the back or you will be dismounted.
-.complete 12815,1 
-step
-#questguide
->>Return to Death's Rise. Talk to Uzo and Arete
-.turnin 12815 >>Turn in No Fly Zone
-.goto IcecrownGlacier,19.7,47.8
-.turnin 12852 >>Turn in The Admiral Revealed
-.goto IcecrownGlacier,19.6,48.1
-step
->>Return to Death's Rise. Talk to Uzo
-.turnin 12815 >>Turn in No Fly Zone
-.goto IcecrownGlacier,19.7,47.8
-step
-#completewith next
-.goto IcecrownGlacier,25.1,61.3,29 >>The path to Kul'galar Keep starts here
-step
-.goto IcecrownGlacier,26.2,62.3
->>Enter the keep inside the mountain. Talk to the Eye of the Lich King on top of the center platform. This takes 1m 5s
->>After talking to the eye, you can edge your way slightly outside until you're able to get onto your flying mount. Wait for the objective to complete then you can fly off
-.complete 13121,1 
-.skipgossip
-step
-.goto IcecrownGlacier,35.4,66.3
->>Fly to the top of the mountain. Talk to Arly
-.turnin 13106 >>Turn in Blackwatch
-.accept 13117 >>Accept Where Are They Coming From?
-step
-.goto IcecrownGlacier,37.8,70.8
->>Right click the summoning altar
-.complete 13117,1 
-step
-.goto IcecrownGlacier,35.4,66.3
->>Return to Arly
-.turnin 13117 >>Turn in Where Are They Coming From?
-.accept 13119 >>Accept Destroying the Altars
-.accept 13120 >>Accept Death's Gaze
-step
-.goto IcecrownGlacier,37.8,70.7,50,0
-.goto IcecrownGlacier,37.3,71.5,50,0
-.goto IcecrownGlacier,36.6,71.5,50,0
-.goto IcecrownGlacier,36.8,70.8,50,0
-.goto IcecrownGlacier,37.8,70.7
->> Kill Master Summoner Zarod. Loot him for his staff
-.collect 43159,1,13119,1 
-.unitscan Master Summoner Zarod
-step
-.use 43159 >> Use the Master Summoner's Staff on the four altars. This item is usable on your flying mount
-.complete 13119,3 
-.goto IcecrownGlacier,37.8,70.7
-.complete 13119,4 
-.goto IcecrownGlacier,37.4,71.5
-.complete 13119,2 
-.goto IcecrownGlacier,36.6,71.6
-.complete 13119,1 
-.goto IcecrownGlacier,36.8,70.7
-step
->>Fly to then right click the orb stands on the ground in the area
-.complete 13120,2 
-.goto IcecrownGlacier,34.6,69.6
-.complete 13120,1 
-.goto IcecrownGlacier,32.6,70.6
-.complete 13120,3 
-.goto IcecrownGlacier,30.5,65.1
-step
-.goto IcecrownGlacier,35.4,66.3
->>Return to Arly
-.turnin 13119 >>Turn in Destroying the Altars
-.turnin 13120 >>Turn in Death's Gaze
-.accept 13134 >>Accept Spill Their Blood
-step
-#completewith Kamaros
-.goto IcecrownGlacier,33.3,65.8,40,0
-.goto IcecrownGlacier,33.7,68.4,0,0
->>Right click the green containers and red orbs next to the balconies
-.complete 13134,1 
-.complete 13134,2 
-step
-#sticky
-#label shards1
->>Kill the Spiked Ghouls in the area. Loot them for the Jagged Shard. Click it in your bags
-.goto IcecrownGlacier,33.9,69.2,0,0
-.collect 43242,1,13136
-.accept 13136 >>Accept Jagged Shards
-step
-#completewith OrbsVats
-#requires shards1
-#label shards2
->> Kill Ghouls around The Fleshwerks. Loot them for their Shards
-.goto IcecrownGlacier,33.9,69.2,0,0
-.complete 13136,1 
-step
-.goto IcecrownGlacier,31.8,64.8
-.accept 13221 >>Accept I'm Not Dead Yet! << Alliance
-.accept 13229 >>Accept I'm Not Dead Yet! << Horde
-step
-#label Kamaros
-.goto IcecrownGlacier,31.9,57.1
->>Escort Father Kamaros
-.complete 13221,1 << Alliance 
-.complete 13229,1 << Horde 
-step
-#label OrbsVats
-.goto IcecrownGlacier,30.1,65.6,70,0
-.goto IcecrownGlacier,32.0,64.7,70,0
-.goto IcecrownGlacier,32.1,70.8
->>Right click the green containers and red orbs next to the balconies
-.complete 13134,1 
-.complete 13134,2 
-step
-.goto IcecrownGlacier,35.3,71.3,70,0
-.goto IcecrownGlacier,34.0,68.8,70,0
-.goto IcecrownGlacier,33.3,65.8,70,0
-.goto IcecrownGlacier,31.9,64.8,70,0
-.goto IcecrownGlacier,31.9,69.7
->> Kill Ghouls around The Fleshwerks. Loot them for their Shards
-.complete 13136,1 
-step
->>Return to Arly
-.turnin 13134 >>Turn in Spill Their Blood
-.goto IcecrownGlacier,35.4,66.3
->>Talk to Olakin
-.turnin 13136 >>Turn in Jagged Shards
-.accept 13138 >>Accept I'm Smelting... Smelting!
-.accept 13140 >>Accept The Runesmiths of Malykriss
-.goto IcecrownGlacier,35.5,66.4
-step
-#sticky
-#label furnace
->>Stand next to the big furnace. Use the Bag of Jagged Shards in your bags
-.goto IcecrownGlacier,57.9,74.4
-.complete 13138,1 
-.use 43289
-step
-.goto IcecrownGlacier,59.1,73.8
->> Kill the Skeletal Runesmiths in the area. Loot them for their Plates
-.complete 13140,1 
-step
-#sticky
-#label FieldTest
-#requires furnace
-.goto IcecrownGlacier,67.2,68.3,70,0
-.goto IcecrownGlacier,68.0,70.9,70,0
-.goto IcecrownGlacier,71.6,61.3,70,0
-.goto IcecrownGlacier,67.2,68.3
-.use 44048 >>Loot the pieces of abandoned equipment scattered on the ground around The Broken Front. Use the Smuggled Solution in your bags when you have one of each piece of equipment (you don't need to wait for the RP)
-.collect 43609,3,13291,1,-1 
-.collect 43610,3,13291,1,-1 
-.collect 43616,3,13291,1,-1 
-.complete 13291,1 
-step << Alliance
-#requires furnace
-.goto IcecrownGlacier,67.0,63.3,70,0
-.goto IcecrownGlacier,67.4,70.2,70,0
-.goto IcecrownGlacier,71.6,61.3
->>Kill the Abominations, Adepts and Necromancers in the area
-.complete 13287,1 
-.complete 13287,3 
-.complete 13287,2 
-step << Horde
-#requires furnace
-.goto IcecrownGlacier,68.7,66.4
-.complete 13237,1 
-.complete 13237,3 
-.complete 13237,2 
-step << Horde
-#label fieldtest
->> Use the Copperclaw's Volatile Oil
-.goto IcecrownGlacier,67.9,69.5
-.complete 13239,1 
-.use 43608
-step
-.goto IcecrownGlacier,79.8,71.7
->>Return to Tirion at Crusaders' Pinnacle
-.turnin 13076 >>Turn in Time Yet Remains
-.accept 13077 >>Accept The Touch of an Aspect
-step
-#completewith next
-.goto IcecrownGlacier,79.4,72.4
-.fly Wyrmrest >> Fly to Wyrmrest Temple
-step
-#questguide
->>Fly to the top of Wymrest Temple. Speak with Alextrasza
-.turnin 13077 >>Turn in The Touch of an Aspect
-.accept 13078 >>Accept Dahlia's Tears
-.goto Dragonblight,59.9,54.7
-.turnin 12459 >>Turn in That Which Creates Can Also Destroy
-.goto Dragonblight,59.58,54.45
-.isQuestComplete 12459
-
-step
->>Fly to the top of Wymrest Temple. Speak with Alextrasza
-.turnin 13077 >>Turn in The Touch of an Aspect
-.accept 13078 >>Accept Dahlia's Tears
-.goto Dragonblight,59.9,54.7
-step
-.goto Dragonblight,52.3,47.1,30,0
-.goto Dragonblight,52.1,46.5
->>Loot one of the small yellow flowers
-.complete 13078,1 
-step
-.goto Dragonblight,59.8,54.7
->>Return to Alexstrasza atop the temple
-.turnin 13078 >>Turn in Dahlia's Tears
-.accept 13079 >>Accept The Boon of Alexstrasza
-step
-#completewith next
-.hs >> Hearth to Argent Tournament Grounds
-step
-.goto IcecrownGlacier,79.9,30.9
->>Return to Bridenbrad
-.turnin 13079 >>Turn in The Boon of Alexstrasza
-.accept 13080 >>Accept Hope Yet Remains
-step << Alliance
-#sticky
-#label notdead
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Find Absalan the Pious, he walks up and down the stairs around the back of the ship
-.turnin 13221 >>Turn in I'm Not Dead Yet!
-step << Alliance
-#questguide
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Speak to Thassarian at the back left corner of the ship
-.turnin 13287 >>Turn in Poke and Prod
-.accept 13288 >>Accept That's Abominable!
-.accept 13294 >>Accept Against the Giants
-.accept 13386 >>Accept Exploiting an Opening
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Speak to Thassarian at the back left corner of the ship
-.turnin 13287 >>Turn in Poke and Prod
-.accept 13288 >>Accept That's Abominable!
-.accept 13386 >>Accept Exploiting an Opening
-step << Alliance
-#requires notdead
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Take the stairs at the middle of the ship (behind Maraad), then the stairs either side of the first staircase to go down into the engine room. Speak to Chief Engineer Boltwrench
-.turnin 13291 >>Turn in Borrowed Technology
-.accept 13292 >>Accept The Solution Solution
-step << Horde
->> Fly to the Horde zeppelin and go to the room in the front.
-.turnin 13237 >>Turn in Poke and Prod
-.accept 13264 >>Accept That's Abominable!
-.accept 13258 >>Accept Opportunity
-step << Horde
->> Find the Blood Elf on the stairs.
-.turnin 13229 >>Turn in I'm Not Dead Yet!
-step << Horde
->> Go to the Goblin on the lower deck.
-.turnin 13239 >>Turn in Volatility
-.accept 13261 >>Accept Volatility
-step
-#sticky
-#label AbandonedArmor
-.goto IcecrownGlacier,67.2,68.3,70,0
-.goto IcecrownGlacier,68.0,70.9,70,0
-.goto IcecrownGlacier,71.6,61.3,70,0
-.goto IcecrownGlacier,67.2,68.3
-.use 44048 >>Loot the pieces of abandoned equipment scattered on the ground around The Broken Front. Use the Smuggled Solution in your bags when you have one of each piece of equipment (you don't need to wait for the RP)
-.collect 43609,3,13292,1,-1 
-.collect 43610,3,13292,1,-1 
-.collect 43616,3,13292,1,-1 
-.complete 13292,1 
-step << Alliance
-.goto IcecrownGlacier,66.4,65.0,90,0
-.goto IcecrownGlacier,71.5,61.8,90,0
->>Kill the Hulking Abominations in the area and loot them for Chilled Abomination Guts
-.collect 43966,3 
-step << Alliance
-#requires AbandonedArmor
-.goto IcecrownGlacier,68.3,61.5
-.use 43968 >> Use Abominations Reanimation Kit with some Guts in your bag to summon an Abomination you can control. Gather as many mobs as possible by making the Abomination attack them and get aggro, then use "Burst at the Seams" to kill all the mobs near your Abomination (the mobs have to be in combat to get their credit)
->>If you run out of Guts, go and kill more Hulking Abominations for their Guts
-.complete 13288,1 
-.complete 13288,2 
-.complete 13288,3 
-step << Horde
-.goto IcecrownGlacier,67.8,60.0
->> Kill Abominations around the Broken front and loot their guts. Then use the Abominations Reanimation Kit to control an abomination and explode as many as you can with it.
-.complete 13264,1 
-.complete 13264,2 
-.complete 13264,3 
-.use 43968
-step << Horde
-#label fieldtest1
->> Use the Copperclaw's Volatile Oil
-.goto IcecrownGlacier,67.9,69.5
-.complete 13261,1 
-.use 43608
-step << Alliance
-.goto Icecrown,51.77,86.70
->>Go inside the opening just below Icecrown Citadel (on the ground/bottom floor). Speak to Captain Kendall.
-.turnin 13386 >>Turn in Exploiting an Opening
-.accept 13387 >>Accept Securing the Perimeter
-step << Alliance
-.goto IcecrownGlacier,53.4,90.4,70,0
-.goto IcecrownGlacier,55.7,89.2,70,0
-.goto IcecrownGlacier,55.0,85.2,70,0
-.goto IcecrownGlacier,52.6,86.1
->>Kill the Hulking Horrors in the area
-.complete 13387,1 
-step << Alliance
-.goto Icecrown,51.78,86.74
->>Return to Kendall
-.turnin 13387 >>Turn in Securing the Perimeter
-.accept 13388 >>Accept Set it Off!
-step << Alliance
-.goto Icecrown,54.34,86.25
->>Talk to the Saronite Bomb Stack (still underground)
-.turnin 13388 >>Turn in Set it Off!
-.accept 13389 >>Accept A Short Fuse
-step << Alliance
-.goto Icecrown,53.97,87.28
->>Don't move. Click on the small crystal underwater
-.turnin 13389 >>Turn in A Short Fuse
-.accept 13390 >>Accept A Voice in the Dark
-step << Alliance
-.goto Icecrown,53.81,86.93
->>Speak with Matthias next to the water. DO NOT click the portal
-.turnin 13390 >>Turn in A Voice in the Dark
-.accept 13391 >>Accept Time to Hide
-step << Alliance
-.goto IcecrownGlacier,56.7,85.6,70,0
-.goto IcecrownGlacier,54.4,89.8
->>Kill the Faceless Lurkers in the area. Loot them for their Blood
-.complete 13391,1 
-step << Alliance
-.goto Icecrown,53.85,86.94
->>Return to Matthias. DO NOT click the portal
-.turnin 13391 >>Turn in Time to Hide
-.accept 13392 >>Accept Return to the Surface
-step << Horde
-.goto IcecrownGlacier,54.9,84.1
-.turnin 13258 >>Turn in Opportunity
-.accept 13259 >>Accept Establishing Superiority
-step << Horde
-.goto IcecrownGlacier,54.1,90.3
-.complete 13259,1 
-step << Horde
-.goto IcecrownGlacier,55.0,84.2
-.turnin 13259 >>Turn in Establishing Superiority
-.accept 13262 >>Accept Blow it Up!
-step << Horde
-.goto IcecrownGlacier,54.4,86.4
-.turnin 13262 >>Turn in Blow it Up!
-.accept 13263 >>Accept A Short Fuse
-step << Horde
-.goto Icecrown,53.97,87.28
->>Click on the small crystal underwater
-.turnin 13263 >>Turn in A Short Fuse
-.accept 13271 >>Accept A Voice in the Dark
-step << Horde
-.goto Icecrown,53.81,86.93
->>Speak with the ghost right outside the water
-.turnin 13271 >>Turn in A Voice in the Dark
-.accept 13275 >>Accept Time to Hide
-step << Horde
-.goto IcecrownGlacier,55.7,87.1
->>Kill Faceless Lurkers
-.complete 13275,1 
-step << Horde
-.goto IcecrownGlacier,53.8,86.9
-.turnin 13275 >>Turn in Time to Hide
-.accept 13282 >>Accept Return to the Surface
-step
-#completewith next
-.goto IcecrownGlacier,53.8,86.8,-1
-.goto IcecrownGlacier,49.1,71.6,100 >> Take the portal behind Matthias to the surface
-step
-.goto IcecrownGlacier,79.8,71.7
->>Return to Tirion at Crusaders' Pinnacle
-.turnin 13080 >>Turn in Hope Yet Remains
-.accept 13081 >>Accept The Will of the Naaru
-step
-.goto IcecrownGlacier,79.7,71.8
-.turnin 13080 >>Turn in Hope Yet Remains
-.accept 13081 >>Accept The Will of the Naaru
-step
-#completewith next
-.goto IcecrownGlacier,79.9,71.8
-.zone Shattrath City >> Wait by Tirion Fordring until Rhydian comes forward and puts down a portal to Shattrath (this takes about 10 seconds)
-step
-.goto Shattrath City,54.2,44.4
->>Talk to A'dal
-.turnin 13081 >>Turn in The Will of the Naaru
-.accept 13082 >>Accept The Boon of A'dal
-step
-#completewith next
-.hs >> Hearth to Argent Tournament Grounds
-step
->>Return to Bridenbrad
-.turnin 13082 >>Turn in The Boon of A'dal
-.goto IcecrownGlacier,79.9,30.8
->>Click on his small chest on the other side of the campfire
-.accept 13083 >>Accept Light Within the Darkness
-.goto IcecrownGlacier,79.8,30.8
-step << Horde
->> Go to the frontroom on the ship.
-.turnin 13264 >>Turn in That's Abominable!
-.accept 13276 >>Accept That's Abominable!
-.accept 13351 >>Accept Sneak Preview
-.turnin 13282 >>Turn in Return to the Surface
-.accept 13304 >>Accept Field Repairs
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Speak to Thassarian at the back left corner of the ship
-.turnin 13288 >>Turn in That's Abominable!
-.accept 13315 >>Accept Sneak Preview
-.turnin 13392 >>Turn in Return to the Surface
-.accept 13393 >>Accept Field Repairs
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Take the stairs at the middle of the ship (behind Maraad), then the stairs either side of the first staircase to go down into the engine room. Speak to Chief Engineer Boltwrench
-.turnin 13292 >>Turn in The Solution Solution
-step << Alliance
->>Fly above the waypoints on the platform above the big wall
-.complete 13315,1 
-.goto Icecrown,55.64,46.73
-.complete 13315,2 
-.goto Icecrown,54.10,43.43
-.complete 13315,3 
-.goto Icecrown,54.09,35.33
-.complete 13315,4 
-.goto Icecrown,52.06,34.21
-step << Horde
->>Fly to the platform above the big wall
-.complete 13351,1 
-.goto IcecrownGlacier,55.3,43.9
-.complete 13351,2 
-.goto IcecrownGlacier,55.1,41.6
-.complete 13351,3 
-.goto IcecrownGlacier,53.7,35.5
-.complete 13351,4 
-.goto IcecrownGlacier,51.9,34.8
-step
-#sticky
-#label Leaper2
-.goto IcecrownGlacier,43.5,25.0
->>Speak with The Leaper, he walks around the tent
-.turnin 13069 >>Turn in Shoot'Em Up
-step
-.goto IcecrownGlacier,43.6,24.1,60,0
-.goto IcecrownGlacier,42.7,26.8
->>Talk to Vile, he is an abomination that patrols the path between the entrance and the main building
-.turnin 13071 >>Turn in Vile Like Fire!
-step
-#requires Leaper2
-.goto IcecrownGlacier,44.1,24.5
->>Talk to Keritose
-.accept 13168 >>Accept Parting Gifts
-step
-.goto IcecrownGlacier,44.1,24.7
->>Click on one of the Red Orbs in front of the Eidolon Watchers
-.complete 13168,1 
-.skipgossip
-step
-.goto IcecrownGlacier,44.1,24.5
->>Immediately exit the Eidolon Watcher. Talk to Keritose
-.turnin 13168 >>Turn in Parting Gifts
-.accept 13169 >>Accept An Undead's Best Friend
-.accept 13170 >>Accept Honor is for the Weak
-.accept 13171 >>Accept From Whence They Came
-step
-#completewith next
-.goto IcecrownGlacier,44.1,24.7
-.vehicle >>Click on one of the Red Orbs in front of the Eidolon Watchers
-.skipgossip
-step
-.goto IcecrownGlacier,42.1,34.6,50,0
-.goto IcecrownGlacier,41.6,35.6,30,0
-.goto IcecrownGlacier,40.1,35.4,30,0
-.goto IcecrownGlacier,39.5,35.9,30,0
-.goto IcecrownGlacier,40.1,38.1,30,0
-.goto IcecrownGlacier,40.7,38.0,30,0
-.goto IcecrownGlacier,41.5,36.4,30,0
-.goto IcecrownGlacier,41.6,35.6,30,0
-.goto IcecrownGlacier,40.1,35.4,30,0
-.goto IcecrownGlacier,39.5,35.9,30,0
-.goto IcecrownGlacier,40.1,38.1,30,0
-.goto IcecrownGlacier,40.7,38.0,30,0
-.goto IcecrownGlacier,41.5,36.4,30,0
-.goto IcecrownGlacier,41.6,35.6,30,0
-.goto IcecrownGlacier,40.1,35.4,30,0
-.goto IcecrownGlacier,39.5,35.9,30,0
-.goto IcecrownGlacier,40.1,38.1,30,0
-.goto IcecrownGlacier,40.7,38.0,30,0
-.goto IcecrownGlacier,41.5,36.4
->> Use "Feed Hungering Plagehound" (4) on the wolves. This also makes them not attack you. Use "Assassinate Restless Lookout" (5) on the Restless Lookouts.
->> Destroy the Crystals with "Banish Scourge Crystal" (6) whenever you are near one.
->> Follow the route created by the waypoints carefully. Use "Phase Jump" (1) and "Dephase" (3) to move faster and escape combat. Use "Blood Siphon" (2) on a nearby mob if you wish to regenerate health.
-.complete 13170,1 
-.complete 13169,1 
-.complete 13171,1 
-step
-.goto IcecrownGlacier,44.1,24.5
->>Exit the Eidolon Watcher. Talk to Keritose
-.turnin 13169 >>Turn in An Undead's Best Friend
-.turnin 13170 >>Turn in Honor is for the Weak
-.turnin 13171 >>Turn in From Whence They Came
-.accept 13172 >>Accept Seeds of Chaos
-.accept 13174 >>Accept Amidst the Confusion
-step
-#completewith next
-.goto Icecrown,44.01,24.56
-.vehicle >> Speak to Keritose again to mount a Skeletal Gryphon
-.skipgossip
-step
-.goto IcecrownGlacier,40.8,35.4,150,0
-.goto IcecrownGlacier,36.9,42.5
->> Spam use "Firebomb" (1) to kill the Undead at the Weeping Quarry
-.complete 13172,1 
-step
->> Jump out of the Gryphon. Collect all of the documents in the area
-.complete 13174,4 
-.goto IcecrownGlacier,37.2,41.6,-1
-.complete 13174,3 
-.goto IcecrownGlacier,38.7,39.4,-1
-.complete 13174,2 
-.goto IcecrownGlacier,39.2,36.7,-1
-.complete 13174,1 
-.goto IcecrownGlacier,39.1,33.7,-1
-step
-.goto IcecrownGlacier,44.1,24.5
->>Return to Keritose
-.turnin 13172 >>Turn in Seeds of Chaos
-.turnin 13174 >>Turn in Amidst the Confusion
-.accept 13155 >>Accept Vereth the Cunning
-step
-#completewith Halls
-.goto IcecrownGlacier,32.5,43.0
->>Talk to The Bone Witch to exchange your Bones for another Rune. Use it
-.turnin 13093 >>Turn in Reading the Bones
-.itemcount 43089,15 
-step
-.goto IcecrownGlacier,32.5,43.0
->>Return to The Bone Witch
-.turnin 13121 >>Turn in Through the Eye
-.accept 13133 >>Accept Find the Ancient Hero
-step
-#label Halls
-#completewith next
-.goto IcecrownGlacier,27.7,47.5,25 >> The path to the Halls of the Ancestors start here
-step
-.use 43166 >>Talk to the Slumbering Mjordins to wake them. Keep doing that until you find Iskalder. Once he appears, use The Bone Witch's Amulet in your bags
-.cast 3921 >> Use the Bone Witch's Amulet to Subjugate Skalder
-.goto IcecrownGlacier,27.2,48.0,30,0
-.goto IcecrownGlacier,26.7,49.3,30,0
-.goto IcecrownGlacier,26.0,49.4,30,0
-.goto IcecrownGlacier,25.2,50.5,30,0
-.goto IcecrownGlacier,26.3,51.8,30,0
-.goto IcecrownGlacier,26.7,49.3,30,0
-.goto IcecrownGlacier,26.0,49.4,30,0
-.goto IcecrownGlacier,25.2,50.5,30,0
-.goto IcecrownGlacier,26.3,51.8
->>Once you manage to subjugate Iskalder, return him to The Bone Witch
-.complete 13133,1 
-.goto IcecrownGlacier,32.5,43.0
-.skipgossip
-step
-#completewith Halls
-.goto IcecrownGlacier,32.5,43.0
->>Talk to The Bone Witch to exchange your Bones for another Rune. Use it
-.turnin 13093 >>Turn in Reading the Bones
-.itemcount 43089,15 
-step
-#questguide
-.goto IcecrownGlacier,32.5,43.0
->>Talk to The Bone Witch
-.turnin 13133 >>Turn in Find the Ancient Hero
-.accept 13137 >>Accept Not-So-Honorable Combat
-step
-.goto IcecrownGlacier,32.5,43.0
->>Talk to The Bone Witch
-.turnin 13133 >>Turn in Find the Ancient Hero
-step
-#questguide
-.goto IcecrownGlacier,28.7,51.9
->>Travel to Battlescar Spire, then right click the Signal Fire to summon Iskalder. Kill him. This quest is VERY hard, group up for it if needed
-.complete 13137,1 
-step
-#questguide
-.goto IcecrownGlacier,32.5,43.0
->>Return to The Bone Witch
-.turnin 13137 >>Turn in Not-So-Honorable Combat
-.accept 13142 >>Accept Banshee's Revenge
-step
-#questguide
-.goto IcecrownGlacier,18.2,56.4
->>Blow the War Horn of Jotunheim atop Balagarde Fortress. Wait out the RP (45 seconds), then damage Balargarde down to 25%. Wait out the next RP event (30 seconds), then kill Balargarde. This quest is VERY hard, group up for it if needed
-.complete 13142,1 
-step
-#questguide
-.goto IcecrownGlacier,32.5,43.0
->>Return to The Bone Witch
-.turnin 13142 >>Turn in Banshee's Revenge
-.accept 13213 >>Accept Battle at Valhalas
-step
-#questguide
->>Talk to Geirrvif inside Valhalas.
-.goto IcecrownGlacier,30.7,28.9
-.turnin 13213 >>Turn in Battle at Valhalas
->>This quest is VERY hard, group up for it if needed. Only accept this when your party is ready and on the same quest progression as you. (Auto-accept is disabled for this questline)
-.accept 13214,0 >>Accept Battle at Valhalas: Fallen Heroes
-step
-#questguide
-.goto IcecrownGlacier,30.7,28.9
->>Defeat the 6 Skeletal elites that spawn. This quest is VERY hard, group up for it if needed
-.complete 13214,1 
-step
-#questguide
-.goto IcecrownGlacier,31.6,31.0
->>Talk to Gjonner the Merciless to the south-east, above you
-.turnin 13214 >>Turn in Battle at Valhalas: Fallen Heroes
-step
-#questguide
-.goto IcecrownGlacier,30.7,28.9
->>Return to Geirrvif. This quest is VERY hard, group up for it if needed. Only accept this when your party is ready and on the same quest progression as you
-.accept 13215,0 >>Accept Battle at Valhalas: Khit'rix the Dark Master
-step
-#questguide
-.goto IcecrownGlacier,30.7,28.9
-.complete 13215,1 
-step
-#questguide
-.goto IcecrownGlacier,31.6,31.0
->>Talk to Gjonner the Merciless to the south-east, above you
-.turnin 13215 >>Turn in Battle at Valhalas: Khit'rix the Dark
-step
-#questguide
-.goto IcecrownGlacier,30.7,28.9
->>Return to Geirrvif. This quest is VERY hard, group up for it if needed. Only accept this when your party is ready and on the same quest progression as you
-.accept 13216,0 >>Accept Battle at Valhalas: The Return of Sigrid Iceborn
-step
-#questguide
-.goto IcecrownGlacier,30.7,28.9
-.complete 13216,1 
-step
-#questguide
-.goto IcecrownGlacier,31.6,31.0
->>Talk to Gjonner the Merciless to the south-east, above you
-.turnin 13216 >>Turn in Battle at Valhalas: The Return of Sigrid Iceborn
-step
-#questguide
-.goto IcecrownGlacier,30.7,28.9
->>Return to Geirrvif. This quest is VERY hard, group up for it if needed. Only accept this when your party is ready and on the same quest progression as you
-.accept 13217,0 >>Accept Battle at Valhalas: Carnage!
-step
-#questguide
-.goto IcecrownGlacier,30.7,28.9
-.complete 13217,1 
-step
-#questguide
-.goto IcecrownGlacier,31.6,31.0
->>Talk to Gjonner the Merciless to the south-east, above you
-.turnin 13217 >>Turn in Battle at Valhalas: Carnage!
-step
-#questguide
-.goto IcecrownGlacier,30.7,28.9
->>Return to Geirrvif. This quest is VERY hard, group up for it if needed. Only accept this when your party is ready and on the same quest progression as you
-.accept 13218,0 >>Accept Battle at Valhalas: Thane Deathblow
-step
-#questguide
-.goto IcecrownGlacier,30.7,28.9
-.complete 13218,1 
-step
-#questguide
-.goto IcecrownGlacier,31.6,31.0
->>Talk to Gjonner the Merciless to the south-east, above you
-.turnin 13218 >>Turn in Battle at Valhalas: Thane Deathblow
-step
-#questguide
-.goto IcecrownGlacier,30.7,28.9
->>Return to Geirrvif. This quest is VERY hard, group up for it if needed. Only accept this when your party is ready and on the same quest progression as you
-.accept 13219,0 >>Accept Battle at Valhalas: Final Challenge
-step
-#questguide
-.goto IcecrownGlacier,30.7,28.9
-.complete 13219,1 
-step
-#questguide
-.goto IcecrownGlacier,31.6,31.0
-.turnin 13219 >>Turn in Battle at Valhalas: Final Challenge
-
-step
->>Return to Olakin and Arly at Blackwatch
-.turnin 13138 >>Turn in I'm Smelting... Smelting!
-.turnin 13140 >>Turn in The Runesmiths of Malykriss
-.accept 13211 >>Accept By Fire Be Purged
-.goto IcecrownGlacier,35.5,66.5
-.accept 13152 >>Accept A Visit to the Doctor
-.goto IcecrownGlacier,35.4,66.3
-step
-#completewith next
-.goto IcecrownGlacier,34.5,68.3,15 >> Enter the Sanctum of Reanimation
-step
-#sticky
-#label BurnCorpse
->>Use Olakin's Torch in your bags to burn the Festering Corpses found throughout the cave
-.goto IcecrownGlacier,36.7,67.8,0,0
-.complete 13211,1 
-.use 43524
-step
->>Go into the cave, jump down to the right then click on the metal stake to free Patches. Wait about a minute for Patches to kill Doctor Sabnok alone. MAKE SURE YOU STAND ON TOP OF THEM FOR CREDIT. If you don't get credit, free Patches again
-.complete 13152,1 
-.goto IcecrownGlacier,35.8,67.0
-.complete 13152,2 
-.goto IcecrownGlacier,35.8,67.2
-step
-#requires BurnCorpse
-#completewith next
-+Take the shortcut by wall jumping on the side of the cave. This is highly optional but will save you about 20s
-step
-#requires BurnCorpse
-#completewith next
-.goto IcecrownGlacier,34.5,68.3,15 >> Exit the Sanctum of Reanimation
-step
-#requires BurnCorpse
->>Return to Olakin and Arly at Blackwatch
-.turnin 13211 >>Turn in By Fire Be Purged
-.goto IcecrownGlacier,35.5,66.5
-.turnin 13152 >>Turn in A Visit to the Doctor
-.accept 13144 >>Accept Killing Two Scourge With One Skeleton
-.goto IcecrownGlacier,35.4,66.3
-step
-.goto IcecrownGlacier,32.3,69.6,10,0
-.goto IcecrownGlacier,32.5,69.2,10,0
-.goto IcecrownGlacier,34.0,70.9,10,0
-.goto IcecrownGlacier,34.8,71.2,10,0
-.goto IcecrownGlacier,35.3,70.3,10,0
-.goto IcecrownGlacier,32.3,69.6,10,0
-.goto IcecrownGlacier,32.5,69.2,10,0
-.goto IcecrownGlacier,34.0,70.9,10,0
-.goto IcecrownGlacier,34.8,71.2,10,0
-.goto IcecrownGlacier,35.3,70.3
-.goto IcecrownGlacier,31.5,70.8,0
->>Pick up Grasping Arm objects typically found on the floor next to bone piles to summon a Flaming Skeleton. (You may only summon ONE at a time or it dies) and then run on top of a Chained Abomination at the edge of the platform to burn them. Do NOT attack them.
-.complete 13144,1 
-step
-.goto IcecrownGlacier,35.4,66.3
->>Return to Arly at Blackwatch
-.turnin 13144 >>Turn in Killing Two Scourge With One Skeleton
-.accept 13212 >>Accept He's Gone to Pieces
-step
-.goto IcecrownGlacier,36.4,71.1,70,0
-.goto IcecrownGlacier,37.8,70.6
->>Kill the Corpulent Horrors in the area. Loot them for Olakin's Left and Right Arms, Torso, and Legs
-.complete 13212,3 
-.complete 13212,4 
-.complete 13212,1 
-.complete 13212,2 
-step
-.goto IcecrownGlacier,35.4,66.3
->>Return to Arly at Blackwatch
-.turnin 13212 >>Turn in He's Gone to Pieces
-.accept 13220 >>Accept Putting Olakin Back Together Again
-step
-#completewith next
-.goto IcecrownGlacier,34.5,68.3,15 >> Enter the Sanctum of Reanimation
-step
-.goto IcecrownGlacier,34.7,66.0
->>Go into the small room to the left. Loot the small Spool of Thread on the table inside
-.collect 43567,1,13220,1 
-step
-.goto IcecrownGlacier,36.6,67.6
->>Jump down then run up the ramp. Loot the Cleaver on top of the operating table
-.collect 43568,1,13220,1 
-step
-#completewith next
-+Take the shortcut by wall jumping on the side of the cave. This is highly optional but will save you about 20s
-step
-.goto IcecrownGlacier,35.6,66.7
-.use 43564 >> Go back to the upper floor and stand on top of the skull tiled slab. Click on the Crusader Olakin's Remains in your bags.
->>After clicking the remains, you can edge your way slightly outside the cave until you're able to get onto your flying mount. Wait for the objective to complete then you can fly off
-.complete 13220,1 
-step
-.goto IcecrownGlacier,35.4,66.3
->>Return to Arly at Blackwatch
-.turnin 13220 >>Turn in Putting Olakin Back Together Again
-.accept 13235 >>Accept The Flesh Giant Champion
-step
-.goto IcecrownGlacier,29.8,61.3
->>Fly up to the higher platform of The Fleshwerks. Talk to Margrave Dhakar to start the RP, then the fight. Kill Morbidus with their assistance
-.complete 13235,1 
-.skipgossip
-.timer 33,The Flesh Giant Champion RP
-step
-.goto IcecrownGlacier,35.4,66.3
->>Return to Arly at Blackwatch
-.turnin 13235 >>Turn in The Flesh Giant Champion
-step
-.goto IcecrownGlacier,54.1,71.2
->>Talk to Vereth halfway up the cliffside
-.turnin 13155 >>Turn in Vereth the Cunning
-.accept 13143 >>Accept New Recruit
-step
-#completewith next
-.goto Icecrown,55.66,72.99
-.use 43315 >>Fly up to the platform above the wall, find a Lithe Stalker and get him to around 20% hp
-.cast 58151 >> Use Sigil of the Ebon Blade to subdue a Lithe Stalker
-step
-.goto IcecrownGlacier,55.1,70.7
->>Bring the Lithe Stalker back to the edge of the cliff overseeing the quest giver at the Rise of Suffering
-.complete 13143,1 
-step
-.goto IcecrownGlacier,54.1,71.2
->>Return to Vereth
-.turnin 13143 >>Turn in New Recruit
-.accept 13145 >>Accept The Vile Hold
-step
-.goto IcecrownGlacier,58.0,70.9
->>Fly to the flaming furnace on top of the platform
-.complete 13145,2 
-step
-.goto IcecrownGlacier,60.5,68.8
->>Fly to the platform above the wall
-.complete 13145,3 
-step
-.goto IcecrownGlacier,59.0,74.2
->>Fly to the area full of anvils
-.complete 13145,4 
-step
-.goto IcecrownGlacier,56.2,79.4
->>Fly to the circular platform above the wall
-.complete 13145,1 
-step
-.goto IcecrownGlacier,54.1,71.1
->>Return to Vereth
-.turnin 13145 >>Turn in The Vile Hold
-.accept 13146 >>Accept Generosity Abounds
-.accept 13147 >>Accept Matchmaker
-.accept 13160 >>Accept Stunning View
-step
-#completewith next
-.goto Icecrown,54.24,70.61
-.vehicle 30895 >> Click the Red Orb to take control over a Lithe Stalker.
-.skipgossip
-step
-.waypoint Icecrown,57.96,73.76,0,ironchain,UNIT_AURA
-.goto Icecrown,58.53,72.15
-.goto Icecrown,58.85,75.07
->> Use "Leap" (1) on cooldown to move faster. Use "Iron Chain" (2) at max range to pick up a Scourge Bomb and then deliver them to the Lumbering Atrocity near the forges.
-.complete 13146,1 
-step
-.goto Icecrown,59.01,73.68
->> Use "Leap" (1) on cooldown to move faster. Look for Umbral Brutes around the Runeforge. Use "Throw Rock" (4) on them once each and wait a little until a fight breaks out
-.complete 13147,1 
-step
-.goto IcecrownGlacier,60.9,73.1,50,0
-.goto IcecrownGlacier,60.6,77.4,50,0
-.goto IcecrownGlacier,58.2,77.0,50,0
-.goto IcecrownGlacier,60.9,73.1,50,0
-.goto IcecrownGlacier,58.2,77.0
->> Use "Leap" (1) on cooldown to move faster. Use "Heave" (3) to kill gargoyles perching over the quarry walls.
-.complete 13160,1 
-step
-#questguide
-.goto IcecrownGlacier,54.1,71.2
->>Exit the Vehicle. Return to Vereth
-.turnin 13146 >>Turn in Generosity Abounds
-.turnin 13147 >>Turn in Matchmaker
-.turnin 13160 >>Turn in Stunning View
-.accept 13161 >>Accept The Rider of the Unholy
-.accept 13162 >>Accept The Rider of Frost
-.accept 13163 >>Accept The Rider of Blood
-step
-.goto IcecrownGlacier,54.1,71.2
->>Exit the Vehicle. Return to Vereth
-.turnin 13146 >>Turn in Generosity Abounds
-.turnin 13147 >>Turn in Matchmaker
-.turnin 13160 >>Turn in Stunning View
-step
-#questguide
-.goto IcecrownGlacier,61.9,68.6
->>Kill Sapph on the balcony of Malykriss overlooking The Broken Front. This quest is VERY hard, group up for it if needed.
-.complete 13162,1 
-step
-#questguide
-.goto IcecrownGlacier,59.2,72.1,50,0
-.goto IcecrownGlacier,59.1,71.5
->>Kill Baelok patrolling around the forge. This quest is VERY hard, group up for it if needed.
-.complete 13163,1 
-step
-#questguide
-.goto IcecrownGlacier,56.3,80.0
->>Kill Rokir patrolling around the circular platform. This quest is VERY hard, group up for it if needed.
-.complete 13161,1 
-step
-#questguide
-.goto IcecrownGlacier,54.1,71.2
->>Return to Vereth
-.turnin 13161 >>Turn in The Rider of the Unholy
-.turnin 13163 >>Turn in The Rider of Blood
-.turnin 13162 >>Turn in The Rider of Frost
-.accept 13164 >>Accept The Fate of Bloodbane
-step
-#questguide
-.goto IcecrownGlacier,55.0,83.5,70,0
-.goto IcecrownGlacier,54.4,86.1
->>Fly under Icecrown Citadel (where the Saronite Bomb Stack was at). Kill Orbaz patrolling around the circular platform. This quest is VERY hard, group up for it if needed.
-.complete 13164,1 
-step
-#questguide
-.goto IcecrownGlacier,54.1,71.2
->>Return to Vereth
-.turnin 13164 >>Turn in The Fate of Bloodbane
-step << Horde
-.goto IcecrownGlacier,67.8,60.0
->> Kill the Hulking Abominations get the Chilled Ambominations. Then use Abominations Reanimation Kit and explode as many as u can with it.
-.complete 13276,3 
-.complete 13276,1 
-.complete 13276,2 
-step << Alliance
-#questguide
-.goto IcecrownGlacier,65.7,63.0,70,0
-.goto IcecrownGlacier,63.4,56.7,70,0
-.goto IcecrownGlacier,66.8,58.4,70,0
-.goto IcecrownGlacier,69.5,57.3,70,0
-.goto IcecrownGlacier,72.5,59.0,70,0
-.goto IcecrownGlacier,70.1,57.2,70,0
-.goto IcecrownGlacier,65.7,63.0,70,0
-.goto IcecrownGlacier,63.4,56.7
->>Kill the Pustulent Horrors in the area. Loot them for their Spines. This quest is VERY hard, group up for it if needed.
-.complete 13294,1 
-
-step << Alliance
-.goto IcecrownGlacier,63.8,49.9,70,0
-.goto IcecrownGlacier,64.8,54.8,70,0
-.goto IcecrownGlacier,67.7,51.5
->>Kill Scavenging Geists in the area. Loot them for their Parts
-.complete 13393,1 
-step << Alliance
->>Talk to the Wrecked Demolisher
-.turnin 13393 >>Turn in Field Repairs
-.goto IcecrownGlacier,68.0,51.8
->>Talk to Matthias
-.accept 13394 >>Accept Do Your Worst
-.goto Icecrown,68.01,51.58
-step << Horde
-.goto Icecrown,64.10,52.45
-.goto IcecrownGlacier,64.3,54.2
->> Kill Scavenging Geists for Demolisher Parts.
-.complete 13304,1
-step << Horde
-.turnin 13304 >>Turn in Field Repairs
-.goto IcecrownGlacier,68.0,51.8
-.accept 13305 >>Accept Do Your Worst
-.goto Icecrown,68.01,51.58
-step
-#completewith next
-.goto IcecrownGlacier,68.0,51.8
-.vehicle 31830 >> Jump into the Refurbished Demolisher.
-step << Alliance
-.goto IcecrownGlacier,65.4,45.8
->>Use "Hurl Boulder" (1) to deal damage at range. Use "Ram" (2) to deal damage in melee. Use "Double Speed" (3) on cooldown to move faster.
-.complete 13394,3 
-.complete 13394,2 
-.complete 13394,1 
-step << Alliance
-.goto IcecrownGlacier,64.5,44.0
->>Exit the Demolisher when you have no aggro. Talk to Matthias next to the tents
-.turnin 13394 >>Turn in Do Your Worst
-.accept 13395 >>Accept Army of the Damned
-step << Alliance
-.goto IcecrownGlacier,65.1,43.9
->>Kill the Lordaeron Soldiers in the area. Use "Deathstorm" (1) to kill many enemies at once. Use "Soul Cleave" (2) to kill enemies in melee range. Use "Gift of the Lich King" (3) to Raise Ghouls for the objective. Use "Consume Minions" (4) to restore your health and mana to use (1) and (3).
-.complete 13395,1 
-step << Alliance
-.goto IcecrownGlacier,64.5,44.0
->>Exit Arthas. Return to Matthias
-.turnin 13395 >>Turn in Army of the Damned
-.accept 13396 >>Accept Futility
-step << Horde
->> Use the demolisher to kill scourge mobs, focus on killing the Mages first.
-.goto IcecrownGlacier,65.4,45.8
-.complete 13305,3 
-.complete 13305,2 
-.complete 13305,1 
-step << Horde
-.goto IcecrownGlacier,64.5,44.0
-.turnin 13305 >>Turn in Do Your Worst
-.accept 13236 >>Accept Army of the Damned
-step << Horde
-.goto IcecrownGlacier,65.1,43.9
->>Kill Lordaeron soldiers and use your 3rd ability to raise skeletons from their corpses
-.complete 13236,1 
-step << Horde
->> Leave Arthas and deliver the quest.
-.goto IcecrownGlacier,64.5,44.0
-.turnin 13236 >>Turn in Army of the Damned
-.accept 13348 >>Accept Futility
-step << Horde
->> Go to the front room on the ship.
-.turnin 13348 >>Turn in Futility
-.turnin 13351 >>Turn in Sneak Preview
-.accept 13349 >>Accept Cradle of the Frostbrood
-.accept 13355 >>Accept Cannot Reproduce
-.accept 13354 >>Accept Chain of Command
-.accept 13352 >>Accept Drag and Drop
-step << Alliance
-#questguide
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Speak to Thassarian at the back left corner of the ship
-.turnin 13396 >>Turn in Futility
-.accept 13397 >>Accept Sindragosa's Fall
-.turnin 13315 >>Turn in Sneak Preview
-.turnin 13294 >>Turn in Against the Giants
-.accept 13318 >>Accept Drag and Drop
-.accept 13319 >>Accept Chain of Command
-.accept 13320 >>Accept Cannot Reproduce
-.accept 13295 >>Accept Basic Chemistry
-.accept 13298 >>Accept Coprous the Defiled
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Speak to Thassarian at the back left corner of the ship
-.turnin 13396 >>Turn in Futility
-.accept 13397 >>Accept Sindragosa's Fall
-.turnin 13315 >>Turn in Sneak Preview
-.accept 13318 >>Accept Drag and Drop
-.accept 13319 >>Accept Chain of Command
-.accept 13320 >>Accept Cannot Reproduce
-step << Horde
->> Go down to the lower deck.
-.turnin 13261 >>Turn in Volatility
-.accept 13379 >>Accept Green Technology
-step << Alliance
-#questguide
-#completewith next
-.goto IcecrownGlacier,63.3,62.1,25 >> Enter the gate to the inside of Mord'rethar. It's on the second level guarded by the Plagued Fiends
-step << Alliance
-#questguide
-.goto IcecrownGlacier,62.3,63.4
-.use 44010 >> Use the Pustulant Spinal Fluid in your bags on the bubbling green cauldrons. Kill the mobs that spawn, and use the Spinal Fluid again when prompted to "Add fluid soon". This quest is VERY hard, group up for it if needed.
-.complete 13295,1 
-step << Alliance
-#questguide
-.goto IcecrownGlacier,60.8,62.2
->>Kill Coprous the Defiler inside of Mord'rethar. This quest is VERY hard, so group up for it if needed.
-.complete 13298,1 
-step
-#sticky
-#label darksub
->>Head to the platform above the wall and kill Bitter Initiates in the area. Loot them for their Orbs of Illusion
-.use 44246 >>Use the Orb of Illusion on Dark Subjugators in the area when you are out of combat.
-.collect 44246,3,13352,-1 
-.goto IcecrownGlacier,53.7,46.1
-.complete 13352,1 << Horde 
-.complete 13318,1 << Alliance 
-.goto IcecrownGlacier,54.7,45.9,60,0
-.goto IcecrownGlacier,54.0,46.3,60,0
-.goto IcecrownGlacier,52.2,45.7,60,0
-.goto IcecrownGlacier,54.0,46.3
-
-
-step
-.goto IcecrownGlacier,53.9,46.1
->>Kill Overseer Faedris in the big tent
-.complete 13354,1 << Horde 
-.complete 13319,1 << Alliance
-step
-#requires darksub
-.use 44251 >> Use the Partitioned Flask on the cauldrons outside at Aldur'thar. Using the Flask dismounts you
-.complete 13355,3 << Horde 
-.complete 13320,3 << Alliance 
-.goto IcecrownGlacier,49.7,34.4
-.complete 13355,2 << Horde 
-.complete 13320,2 << Alliance 
-.goto IcecrownGlacier,49.1,34.2
-.complete 13355,1 << Horde 
-.complete 13320,1 << Alliance 
-.goto IcecrownGlacier,48.9,33.2
-step
->>Kill Overseer Savryn and Jhaeqon under the big tents. Then fly up a level to Veraj (under the big tent) and kill him
-.complete 13354,4 << Horde 
-.complete 13319,4 << Alliance 
-.goto IcecrownGlacier,49.4,31.2
-.complete 13354,2 << Horde 
-.complete 13319,2 << Alliance 
-.goto IcecrownGlacier,54.7,32.6
-.complete 13354,3 << Horde 
-.complete 13319,3 << Alliance 
-.goto IcecrownGlacier,53.7,29.2
-step << Alliance
-#questguide
->>Fly to the small platform in the air. Talk to Killohertz
-.goto IcecrownGlacier,53.96,42.93
-.turnin 13383 >>Turn in Killohertz
-.accept 13380 >>Accept Leading the Charge
-step << Alliance
-#questguide
-.goto IcecrownGlacier,53.96,43.11
->>Talk to Karen to get on a bomber. Use Charge Shield (1) to gain 100 shields then switch to Bomber Bay (5) and begin bombing scourge below until all Infantry and Captains are slain. Switch to Anti-Air Turret (4) and begin using Anti-Air Rockets (1) to shoot Gargoyles in the air. Once completing press the Leave Vehicle button and you will be returned to the platform
-.complete 13380,1 
-.complete 13380,2 
-.complete 13380,3 
-.skipgossip
-step << Alliance
-#questguide
->>Talk to Killohertz
-.goto IcecrownGlacier,53.96,42.93
-.turnin 13380 >>Turn in Leading the Charge
-step << Horde
-#questguide
->>Fly to the small platform in the air. Talk to Tezzla
-.goto IcecrownGlacier,53.99,36.87
-.turnin 13379 >>Turn in Green Technology
-.accept 13373 >>Accept Fringe Science Benefits
-step << Horde
-#questguide
-.goto IcecrownGlacier,53.96,43.11
->>Talk to Rizzy to get on a bomber. Use Charge Shield (1) to gain 100 shields then switch to Bomber Bay (5) and begin bombing scourge below until all Infantry and Captains are slain. Switch to Anti-Air Turret (4) and begin using Anti-Air Rockets (1) to shoot Gargoyles in the air. Once completing press the Leave Vehicle button and you will be returned to the platform
-.complete 13373,1 
-.complete 13373,2 
-.complete 13373,3 
-.skipgossip
-step << Horde
-#questguide
->>Talk to Tezzla
-.goto IcecrownGlacier,54.00,36.94
-.turnin 13373 >>Turn in Fringe Science Benefits
-step << Alliance
-#questguide
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Speak to Thassarian at the back left corner of the ship
-.turnin 13318 >>Turn in Drag and Drop
-.turnin 13319 >>Turn in Chain of Command
-.accept 13342 >>Accept Not a Bug
-.accept 13345 >>Accept Need More Info
-.accept 13323 >>Accept Drag and Drop
-.turnin 13295 >>Turn in Basic Chemistry
-.turnin 13298 >>Turn in Coprous the Defiled
-
-
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Speak to Thassarian at the back left corner of the ship
-.turnin 13318 >>Turn in Drag and Drop
-.turnin 13319 >>Turn in Chain of Command
-.accept 13342 >>Accept Not a Bug
-.accept 13345 >>Accept Need More Info
-.accept 13323 >>Accept Drag and Drop
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Take the stairs at the middle of the ship (behind Maraad), then the stairs either side of the first staircase to go down into the engine room. Speak to Chief Engineer Boltwrench
-.turnin 13320 >>Turn in Cannot Reproduce
-.accept 13321 >>Accept Retest Now
-step << Horde
->> Go to the front room of the ship.
-.turnin 13354 >>Turn in Chain of Command
-.turnin 13352 >>Turn in Drag and Drop
-.accept 13353 >>Accept Drag and Drop
-.accept 13358 >>Accept Not a Bug
-step << Horde
->> Go to the lower deck of the ship.
-.turnin 13355 >>Turn in Cannot Reproduce
-.accept 13356 >>Accept Retest Now
-step
->>Head back to the platform above the wall and kill Bitter Initiates in the area (again). Loot them for their Orbs of Illusion
-.use 44246 >>Use the Orb of Illusion on Dark Subjugators in the area when you are out of combat.
-.collect 44246,3,13352,-1 
-.goto IcecrownGlacier,53.7,46.1
-.complete 13353,1 << Horde 
-.complete 13323,1 << Alliance 
-.goto IcecrownGlacier,54.7,45.9,60,0
-.goto IcecrownGlacier,54.0,46.3,60,0
-.goto IcecrownGlacier,52.2,45.7,60,0
-.goto IcecrownGlacier,54.0,46.3
-step
-#label taintedessence
-#sticky
-.goto IcecrownGlacier,49.7,34.4,0,0
-.use 44307 >>Use the Diluted Cult Tonic in your bags to gain the "Dark Discernment" Buff. This allows you to loot the Tainted Essences from all the humanoids you kill in the area
-.collect 44301,10,13356,1 << Horde
-.collect 44301,10,13321,1 << Alliance
-step
-.goto IcecrownGlacier,54.1,31.4,70,0
-.goto IcecrownGlacier,54.7,28.0,70,0
-.goto IcecrownGlacier,57.0,28.8,70,0
-.goto IcecrownGlacier,54.1,31.4
-.use 44433 >> Kill 5 Enslaved Minions (Voidwalkers). Use the Rod of Siphoning on their corpses for their Dark Matter
-.collect 44434,5,13342,1 << Alliance 
-.collect 44434,5,13358,1 << Horde 
-step
-.goto IcecrownGlacier,53.8,33.6
->>Click on the Summoning Stone
-.complete 13342,1 << Alliance 
-.complete 13358,1 << Horde 
-step
-#completewith next
-.goto IcecrownGlacier,51.9,32.5,30 >> Enter the inside of Aldur'thar
-step
-.goto IcecrownGlacier,53.1,31.1,60,0
-.goto IcecrownGlacier,53.1,29.2,60,0
-.goto IcecrownGlacier,50.9,29.0,60,0
-.goto IcecrownGlacier,50.9,30.4,60,0
-.goto IcecrownGlacier,53.1,31.1
->>Kill the Cultist Researchers in the area. Loot them for their Research Pages
-.collect 44459,1 
-.collect 44460,1 
-.collect 44461,1 
-step
-#sticky
-#label Thesis
-.goto IcecrownGlacier,49.7,34.4
-.use 44459 >> Click one of the research pages in your bags to combine them into the Thesis
-.complete 13345,1 
-step
-#requires taintedessence
-.goto IcecrownGlacier,49.7,34.4
-.use 44301
-.use 44304 >> Right click the Tainted Essences in your bags to turn them into a Writhing Mass. Throw it into a cauldron
-.complete 13356,1 << Horde
-.complete 13321,1 << Alliance
-step
-#requires Thesis
-#completewith next
-.hs >> Hearth to Argent Tournament Grounds
-step
-#requires Thesis
-.goto Icecrown,71.56,37.62
->>Talk to Matthias at Sindragosa's Fall
-.accept 13398 >>Accept Where Dragons Fell << Alliance
-.accept 13359 >>Accept Where Dragons Fell << Horde
-step << Horde
->>Kill the Wyrm Reanimators just north-east of you, then kill the other mobs in the area
->>Kill Frostblood Whelps. Loot them for their Bone Dust
-.complete 13349,1 
-.goto IcecrownGlacier,72.3,36.7
-.complete 13349,2 
-.complete 13349,3 
-.complete 13359,1 
-.goto IcecrownGlacier,71.2,36.1,70,0
-.goto IcecrownGlacier,67.9,36.2,70,0
-.goto IcecrownGlacier,67.9,41.1,70,0
-.goto IcecrownGlacier,72.4,40.3,70,0
-.goto IcecrownGlacier,71.2,36.1,70,0
-.goto IcecrownGlacier,67.9,36.2,70,0
-.goto IcecrownGlacier,67.9,41.1,70,0
-.goto IcecrownGlacier,72.4,40.3
-step << Alliance
->>Kill the Wyrm Reanimators just north-east of you, then kill the other mobs in the area
->>Kill Frostblood Whelps. Loot them for their Bone Dust
-.complete 13397,1 
-.goto IcecrownGlacier,72.3,36.7
-.complete 13397,2 
-.complete 13397,3 
-.complete 13398,1 
-.goto IcecrownGlacier,71.2,36.1,70,0
-.goto IcecrownGlacier,67.9,36.2,70,0
-.goto IcecrownGlacier,67.9,41.1,70,0
-.goto IcecrownGlacier,72.4,40.3,70,0
-.goto IcecrownGlacier,71.2,36.1,70,0
-.goto IcecrownGlacier,67.9,36.2,70,0
-.goto IcecrownGlacier,67.9,41.1,70,0
-.goto IcecrownGlacier,72.4,40.3
-step << Horde
-.goto IcecrownGlacier,71.6,37.6
-.turnin 13359 >>Turn in Where Dragons Fell
-.accept 13360 >>Accept Time for Answers
-step << Alliance
-.goto IcecrownGlacier,71.6,37.6
-.turnin 13398 >>Turn in Where Dragons Fell
-.accept 13399 >>Accept Time for Answers
-step << Horde
->> Go to the front of the ship.
-.turnin 13358 >>Turn in Not a Bug
-.turnin 13353 >>Turn in Drag and Drop
-.turnin 13349 >>Turn in Cradle of the Frostbrood
-.accept 13365 >>Accept Not a Bug
-step << Horde
-.turnin 13356 >>Turn in Retest Now
-.accept 13357 >>Accept Retest Now
-step << Alliance
-#questguide
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Speak to Thassarian at the back left corner of the ship
-.turnin 13342 >>Turn in Not a Bug
-.turnin 13323 >>Turn in Drag and Drop
-.turnin 13397 >>Turn in Sindragosa's Fall
-.turnin 13345 >>Turn in Need More Info
-.accept 13346 >>Accept No Rest For The Wicked
-.accept 13344 >>Accept Not a Bug
-.accept 13332 >>Accept Raise the Barricades
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Speak to Thassarian at the back left corner of the ship
-.turnin 13342 >>Turn in Not a Bug
-.turnin 13323 >>Turn in Drag and Drop
-.turnin 13397 >>Turn in Sindragosa's Fall
-.turnin 13345 >>Turn in Need More Info
-.accept 13344 >>Accept Not a Bug
-.accept 13332 >>Accept Raise the Barricades
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Take the stairs at the middle of the ship (behind Maraad), then the stairs either side of the first staircase to go down into the engine room. Speak to Chief Engineer Boltwrench
-.turnin 13321 >>Turn in Retest Now
-.accept 13322 >>Accept Retest Now
-step
-.goto IcecrownGlacier,52.5,42.0,70,0
-.goto IcecrownGlacier,51.3,37.1,70,0
-.goto IcecrownGlacier,47.1,37.4,70,0
-.goto IcecrownGlacier,50.0,44.9,70,0
-.goto IcecrownGlacier,52.5,42.0
-.use 44127 >>Use the Barricade Construction Kit in your bags at The Valley of Fallen Heroes on the purple glows that appear
-.complete 13332,1 
-step
-#label taintedessence2
-#sticky
-.goto IcecrownGlacier,49.7,34.4,0,0
-.use 44307 >>Use the Diluted Cult Tonic in your bags to gain the "Dark Discernment" Buff. This allows you to loot the Tainted Essences from all the humanoids you kill in the area
-.collect 44301,10,13357,1 << Horde
-.collect 44301,10,13322,1 << Alliance
-step
-.goto IcecrownGlacier,54.1,31.4,70,0
-.goto IcecrownGlacier,54.7,28.0,70,0
-.goto IcecrownGlacier,57.0,28.8,70,0
-.goto IcecrownGlacier,54.1,31.4
-.use 44433 >> Kill 5 Enslaved Minions (Voidwalkers). Use the Rod of Siphoning on their corpses for their Dark Matter
-.collect 44434,5,13344,1 << Alliance 
-.collect 44434,5,13365,1 << Horde 
-step
-.goto IcecrownGlacier,53.8,33.6
->>Click on the Summoning Stone
-.complete 13344,1 << Alliance 
-.complete 13365,1 << Horde 
-step
-#questguide
-#completewith next
-.goto IcecrownGlacier,51.9,32.5,30 >> Go back inside of Aldur'thar
-step
-#questguide
->>This quest is VERY hard, group up for it if needed
->>Open the chests inside Aldur'thar and loot Alumeth's Skull, Heart, Scepter and Robes
-.collect 44476,1 
-.goto IcecrownGlacier,50.5,30.0
-.collect 44477,1 
-.goto IcecrownGlacier,52.8,30.7
-.collect 44478,1 
-.goto IcecrownGlacier,52.8,29.8
-.collect 44479,1 
-.goto IcecrownGlacier,53.0,29.0
-step
-#questguide
-.goto IcecrownGlacier,51.9,29.0
->>This quest is VERY hard, group up for it if needed
-.use 44476 >> Click any of the items in your bags to combine them into Alumeth's Remains
-.collect 44480,1 
-step
-#questguide
-.goto IcecrownGlacier,51.9,29.0
->>This quest is VERY hard, group up for it if needed
-.use 44480 >> Use Alumeth's Remains in front of the glowing crystal to summon him. Kill him
-.complete 13346,1 
-step
-#requires taintedessence2
-.goto IcecrownGlacier,49.7,34.4
-.use 44301
-.use 44304 >> Right click the Tainted Essences in your bags to turn them into a Writhing Mass. Throw it into a cauldron
-.complete 13357,1 << Horde
-.complete 13322,1 << Alliance
-step << Horde
-.goto IcecrownGlacier,49.1,73.1
-.turnin 13360 >>Turn in Time for Answers
-.accept 13361 >>Accept The Hunter and the Prince
-step << Alliance
-.goto IcecrownGlacier,49.2,73.1
->>Talk to Matthias in The Court of Bones
-.turnin 13399 >>Turn in Time for Answers
-.accept 13400 >>Accept The Hunter and the Prince
-step
-#completewith next
-.goto IcecrownGlacier,49.2,73.9,-1
-.goto IcecrownGlacier,49.7,73.4,-1
-.vehicle >> Right click a Bloodstained Stone to take control of Arthas
-step
-.goto IcecrownGlacier,47.7,73.3
->>Defeat Illidan. Spam (1) and (2). When you have 30 Energy, Use (3) and then (4) immediately after to deal a LOT of damage.
-.complete 13361,1 << Horde 
-.complete 13400,1 << Alliance
-step << Alliance
-.goto IcecrownGlacier,49.2,73.1
->>Return to Matthias
-.turnin 13400 >>Turn in The Hunter and the Prince
-.accept 13401 >>Accept Knowledge is a Terrible Burden
-step << Horde
-.goto IcecrownGlacier,49.1,73.1
-.turnin 13361 >>Turn in The Hunter and the Prince
-.accept 13362 >>Accept Knowledge is a Terrible Burden
-step << Alliance
-#questguide
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Speak to Thassarian at the back left corner of the ship
-.turnin 13344 >>Turn in Not a Bug
-.turnin 13401 >>Turn in Knowledge is a Terrible Burden
-.turnin 13346 >>Turn in No Rest For The Wicked
-.turnin 13332 >>Turn in Raise the Barricades
-.accept 13337 >>Accept The Ironwall Rampart
-.accept 13334 >>Accept Bloodspattered Banners
-
-.accept 13402 >>Accept Tirion's Help
-
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Speak to Thassarian at the back left corner of the ship
-.turnin 13344 >>Turn in Not a Bug
-.turnin 13401 >>Turn in Knowledge is a Terrible Burden
-.turnin 13332 >>Turn in Raise the Barricades
-
-.accept 13402 >>Accept Tirion's Help
-step << Alliance
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Take the stairs at the middle of the ship (behind Maraad), then the stairs either side of the first staircase to go down into the engine room. Speak to Chief Engineer Boltwrench
-.turnin 13322 >>Turn in Retest Now
-step << Horde
->> Go to the front room of the ship.
-.turnin 13362 >>Turn in Knowledge is a Terrible Burden
-.turnin 13365 >>Turn in Not a Bug
-.accept 13363 >>Accept Argent Aid
-step << Horde
->> Go to the lower deck
-.turnin 13357 >>Turn in Retest Now
-step << Horde
-.goto IcecrownGlacier,79.8,71.8
-.turnin 13083 >>Turn in Light Within the Darkness
-.turnin 13363 >>Turn in Argent Aid
-.accept 13364 >>Accept Tirion's Gambit
-step << Alliance
-#questguide
-.goto IcecrownGlacier,51.3,40.3,70,0
-.goto IcecrownGlacier,49.1,43.8
->>Kill the Scourge Converters in the area
-.complete 13334,3 
-step << Alliance
-#questguide
-.goto IcecrownGlacier,45.5,46.5
->>This quest is VERY hard, group up for it if needed
-.use 44186 >> Fly up to the balcony, then use the Rune of Distortion in your bags at Grimkor's Orb. Kill Grimkor the Wicked
-.complete 13337,1 
-step << Alliance
-#questguide
-.goto IcecrownGlacier,47.1,48.5,70,0
-.goto IcecrownGlacier,41.9,48.4,70,0
-.goto IcecrownGlacier,41.9,54.3,70,0
-.goto IcecrownGlacier,46.1,53.1
->>Kill the Scourge Banner-Bearer and Converted Heroes in the area
-.complete 13334,1 
-.complete 13334,2 
-step << Alliance
-#questguide
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Speak to Thassarian at the back left corner of the ship
-.turnin 13334 >>Turn in Bloodspattered Banners
-.turnin 13337 >>Turn in The Ironwall Rampart
-.accept 13335 >>Accept Before the Gate of Horror
-step << Alliance
-#questguide
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Go into the big room Maraad is facing on The Skybreaker and talk to Justin
-.accept 13314 >>Accept Get The Message
-step << Alliance
-#questguide
-#sticky
-#label HammerD
-.goto IcecrownGlacier,46.2,52.1,70,0
-.goto IcecrownGlacier,42.4,59.4,0,0
-.use 44222 >>Use the Dart Gun in your bags on the Orgrim's Hammer Scouts (you can use it while on your flying mount). Loot their corpses for the Dispatches
-.complete 13314,1 
-step << Alliance
-#questguide
-.goto IcecrownGlacier,47.5,61.8
->>This quest is VERY hard, group up for it if needed
-.use 44653 >>Kill the Skeletal Reavers in the area. Use the Volatile Acid in your bags on their corpses
-.complete 13335,1 
-step << Alliance
-#questguide
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Speak to Thassarian at the back left corner of the ship
-.turnin 13335 >>Turn in Before the Gate of Horror
-.accept 13338 >>Accept The Guardians of Corp'rethar
-.accept 13339 >>Accept Shatter the Shards
-step << Alliance
-#questguide
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Go into the big room Maraad is facing on The Skybreaker and talk to Justin
-.turnin 13314 >>Turn in Get The Message
-
-step << Alliance
-#questguide
-#completewith SHorror
-.goto IcecrownGlacier,51.3,63.0,70,0
-.goto IcecrownGlacier,50.0,66.6,70,0
-.goto IcecrownGlacier,53.9,67.1,70,0
-.goto IcecrownGlacier,52.3,65.1,70,0
->>This quest is VERY hard, group up for it if needed
->>Kill the Harbingers and Guardians on the 1st and 2nd floors of Corp'rethar
-.complete 13338,1 
-.complete 13338,2 
-step << Alliance
-#questguide
-.goto IcecrownGlacier,49.8,66.7
->>This quest is VERY hard, group up for it if needed
->>Attack the Shard of Despair on the 1st floor of Corp'rethar. Loot it
-.complete 13339,2 
-step << Alliance
-#questguide
-.goto IcecrownGlacier,45.8,69.5
->>This quest is VERY hard, group up for it if needed
->>Fly up then attack the Shard of Suffering on the 1st floor of Corp'rethar. Loot it
-.complete 13339,3 
-step << Alliance
-#label SHorror
-#questguide
-.goto IcecrownGlacier,47.8,68.1
->>This quest is VERY hard, group up for it if needed
->>Fly up then attack the Shard of Horror on the 2nd floor of Corp'rethar. Loot it
-.complete 13339,1 
-step << Alliance
-#questguide
-.goto IcecrownGlacier,43.1,71.4,70,0
-.goto IcecrownGlacier,44.2,73.2,70,0
-.goto IcecrownGlacier,45.7,69.8,70,0
-.goto IcecrownGlacier,41.5,69.2,70,0
-.goto IcecrownGlacier,51.3,63.0,70,0
-.goto IcecrownGlacier,50.0,66.6,70,0
-.goto IcecrownGlacier,53.9,67.1,70,0
-.goto IcecrownGlacier,52.3,65.1
->>This quest is VERY hard, group up for it if needed
->>Kill the Harbingers and Guardians on the 1st and 2nd floors of Corp'rethar
-.complete 13338,1 
-.complete 13338,2 
-step << Alliance
-#questguide
-#requires Guardians
-.goto IcecrownGlacier,65.1,57.2,0
-.goto IcecrownGlacier,64.7,52.4,0
-.goto IcecrownGlacier,62.1,45.9,0
-.goto IcecrownGlacier,57.5,39.1,0
-.goto IcecrownGlacier,54.7,35.3,0
-.goto IcecrownGlacier,54.7,35.3,200,0
-.goto IcecrownGlacier,65.1,57.2,200,0
-.goto IcecrownGlacier,54.7,35.3
->>Fly to The Skybreaker, the big Alliance ship that's flying around high up in the air (you can see it on your map). Speak to Thassarian at the back left corner of the ship
-.turnin 13338 >>Turn in The Guardians of Corp'rethar
-.turnin 13339 >>Turn in Shatter the Shards
-step << Alliance
-.goto Icecrown,79.75,71.74
->>Return to Tirion at Crusaders' Pinnacle
-.turnin 13083 >>Turn in Light Within the Darkness
-.turnin 13402 >>Turn in Tirion's Help
-.accept 13403 >>Accept Tirion's Gambit
-step
-.goto Icecrown,45.29,78.74
->> Kill the Cultist Acolytes outside the Cathedral of Darkness. Loot them for their Hood
-.collect 44784,1,13364,1 << Horde 
-.collect 44784,1,13403,1 << Alliance 
-step
-.goto IcecrownGlacier,44.4,76.2,10,0
-.goto IcecrownGlacier,42.8,78.8
-.use 44784 >> Use the Cultist Acolyte Hood, speak to Highlord Tirion Fodring right outside the Cathedral, once you speak with him, head inside and wait for the in-game cinematic to end
-.complete 13364,1 << Horde
-.complete 13403,1 << Alliance
-.skipgossip
-.timer 320,Tirion's Gambit RP
-step
-#completewith next
-.goto IcecrownGlacier,42.8,78.8,-1
-.goto IcecrownGlacier,80.2,70.5,100 >> Take the portal Darion makes at the end of the RP back to Crusaders' Pinnacle
-step
-.goto IcecrownGlacier,79.8,71.8
->>Return to Tirion
-.turnin 13364 >>Turn in Tirion's Gambit << Horde
-.turnin 13403 >>Turn in Tirion's Gambit << Alliance
-step
-+Congratulations on finishing the RestedXP 70-80 leveling guide! Thank you for using RestedXP.
 ]])

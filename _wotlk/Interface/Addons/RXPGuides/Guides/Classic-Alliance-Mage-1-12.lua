@@ -1480,6 +1480,7 @@ step << Human
 step << Human
     #completewith next
     +Go toward the staircase behind the paladin trainers at the back of the room. Go about halfway up, then move yourself to the edge of the stairs until it looks like you're floating. Logout, then back in
+    .link https://www.youtube.com/watch?v=E8b90bzJMSI >> CLICK HERE for reference
     >>Logout skip to the front of Ironforge
 step << Human
     .goto Ironforge,12.24,89.17,120 >> Exit Ironforge
@@ -1539,6 +1540,7 @@ step
     >>Open this link and follow it on another screen.
     >>Do the Deathless Dun Morogh -> Wetlands skip
     >>Avoid the Crocodiles when crossing the sea
+    .link https://www.youtube.com/watch?v=9afQTimaiZQ >> CLICK HERE for reference
     .goto Wetlands,12.1,60.3,80 >> Travel to Menethil Harbor
 step
     #softcore

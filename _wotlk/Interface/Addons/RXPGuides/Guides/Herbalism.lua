@@ -1,4 +1,6 @@
 RXPGuides.RegisterGuide([[
+#tbc
+#wotlk
 #group +Profession leveling
 #subgroup Herbalism
 << Horde
@@ -27,6 +29,7 @@ step
     .goto Undercity,53.8,54.5,-1
     .goto Undercity,67.8,14.4,-1
     .goto Undercity,67.8,14.4,70 >>Jump onto the light near the stairs and then log out, and back in. This will save you a LOT of time
+    .link https://www.youtube.com/watch?v=ES8vZZ0XH2k >> CLICK HERE for a guide
     >>If you can't do this, just run out of Undercity normally
     .skill herbalism,70,1
     .zoneskip Tirisfal Glades
@@ -267,6 +270,8 @@ step
 ]])
 
 RXPGuides.RegisterGuide([[
+#tbc
+#wotlk
 #group +Profession leveling
 #subgroup Herbalism
 << Alliance

@@ -51,6 +51,7 @@ step << Warlock
     #completewith next
     .goto Dun Morogh,26.8,79.8,40,0
     .goto Dun Morogh,30.1,82.4,30 >> Kill some Wolves en route, then watch this
+    .link https://www.youtube.com/watch?v=iUvGsRbIVp8 >> CLICK HERE
 step << Warlock
     >>Kill Frostmane Novices inside the cave. Loot them for Feather Charms
     .goto Dun Morogh,29.0,82.6,50,0
@@ -787,6 +788,7 @@ step
 step << !Mage !Warlock
     .goto Dun Morogh,38.5,54.0
     >>Wait until Old Icebeard leaves the cave so you can sneak in and loot the chest, or do this
+        .link https://www.youtube.com/watch?v=o55Y3LjgKoE >>Click here for video reference
     .complete 312,1 --MacGrann's Dried Meats (1)
 step << Mage/Warlock
     >> Polymorph Old Icebeard, then loot the meats << Mage
@@ -900,6 +902,7 @@ step
     >>Be careful as this quest is HARD
     .goto Dun Morogh,62.6,46.1
     .complete 314,1 --Collect Fang of Vagash (1)
+    .link https://www.youtube.com/watch?v=ZJX6sCkm5JY >> CLICK HERE for a guide on how to solo Vagash
 step
     .goto Dun Morogh,63.1,49.8
     .turnin 314 >> Turn in Protecting the Herd
@@ -1038,6 +1041,7 @@ step
 step
     #completewith next
     +Perform a Logout skip by jumping on top of one of the Gryphon's heads, and logging out, then back in
+    .link https://www.youtube.com/watch?v=PWMJhodh6Bw >> CLICK HERE
 step
     .goto Ironforge,74.40,51.10,30,0
     .goto Ironforge,74.40,51.10,0
@@ -1757,9 +1761,11 @@ step << Rogue
     #requires Salvation
     #completewith next
     +Perform a Logout skip by jumping on top of one of the Gryphon's heads, and logging out, then back in
+    .link https://www.youtube.com/watch?v=PWMJhodh6Bw >> CLICK HERE
 step << !Paladin !Rogue
     #completewith next
     +Perform a Logout skip by jumping on top of one of the Gryphon's heads, and logging out, then back in
+    .link https://www.youtube.com/watch?v=PWMJhodh6Bw >> CLICK HERE
 step << Rogue
     #requires Salvation
     .goto Ironforge,76.54,51.15,60,0
@@ -2027,6 +2033,7 @@ step
 step << !Mage
     .goto Dun Morogh,38.5,54.0
     >>Wait until Old Icebeard leaves the cave so you can sneak in and loot the chest, or do this
+        .link https://www.youtube.com/watch?v=o55Y3LjgKoE >>CLICK HERE
     .complete 312,1 --MacGrann's Dried Meats (1)
 step
     .goto Dun Morogh,34.6,51.6
@@ -2113,6 +2120,7 @@ step
     .goto Dun Morogh,62.6,46.1
     >>Kill Vagash. Loot him for his Fang, this quest is HARD, try to kite him to the guard parked at the intersection
     .complete 314,1 --Collect Fang of Vagash (x)
+    .link https://www.youtube.com/watch?v=ZJX6sCkm5JY >> CLICK HERE for a guide on how to solo Vagash
 step
     .goto Dun Morogh,63.1,49.8
     .turnin 314 >> Turn in Protecting the Herd
@@ -2509,6 +2517,7 @@ step
     .goto Dun Morogh,61.1,13.6,0
     .goto Dun Morogh,60.7,9.8,0
     .goto Wetlands,18.9,71.8,0
+    .link https://www.twitch.tv/videos/729674651 >> This skip is hard, click here for video reference
 step
     #hardcore
     #label skip2
@@ -2523,6 +2532,7 @@ step
     .goto Wetlands,16.0,67.2,0
     .goto Wetlands,17.0,64.1,0
     .goto Wetlands,14.9,63.7,0
+    .link https://www.twitch.tv/videos/729674651 >> This skip is hard, click here for video reference
 step
     #hardcore
     #label fp
@@ -2588,6 +2598,7 @@ step << Warlock
     #completewith next
     .goto Dun Morogh,26.8,79.8,40,0
     .goto Dun Morogh,30.1,82.4,30 >> Kill some Wolves en route, then watch this
+    .link https://www.youtube.com/watch?v=iUvGsRbIVp8 >> CLICK HERE
 step << Warlock
     >>Kill Frostmane Novices inside the cave. Loot them for Feather Charms
     .goto Dun Morogh,29.0,82.6,50,0
@@ -3266,6 +3277,7 @@ step
 step << !Mage !Warlock
     .goto Dun Morogh,38.5,54.0
     >>Wait until Old Icebeard leaves the cave so you can sneak in and loot the chest, or do this
+        .link https://www.youtube.com/watch?v=o55Y3LjgKoE >>Click here for video reference
     .complete 312,1 --MacGrann's Dried Meats (1)
 step << Mage/Warlock
     >> Polymorph Old Icebeard, then loot the meats << Mage
@@ -3398,6 +3410,7 @@ step
     >>Be careful as this quest is HARD
     .goto Dun Morogh,62.6,46.1
     .complete 314,1 --Collect Fang of Vagash (1)
+    .link https://www.youtube.com/watch?v=ZJX6sCkm5JY >> CLICK HERE for a guide on how to solo Vagash
 step
     .goto Dun Morogh,63.1,49.8
     .turnin 314 >> Turn in Protecting the Herd
@@ -3537,6 +3550,7 @@ step
 step
     #completewith next
     +Perform a Logout skip by jumping on top of one of the Gryphon's heads, and logging out, then back in
+    .link https://www.youtube.com/watch?v=PWMJhodh6Bw >> CLICK HERE
 step
     .goto Ironforge,74.40,51.10,30,0
     .goto Ironforge,74.40,51.10,0
@@ -4025,6 +4039,7 @@ step << Dwarf Paladin
     .goto Dun Morogh,70.66,56.70,40,0
     .goto Dun Morogh,70.60,54.87
     >>Perform a logout skip in the trogg cave to teleport back to Ironforge
+    .link https://www.youtube.com/watch?v=kbUSo62CfAM >> CLICK HERE for reference
 step << Mage
     .hs >> Hearth to Thelsamar
 step << !Dwarf/!Paladin
@@ -4103,6 +4118,7 @@ step << !Druid !Warlock
 step << !Warlock
     #completewith next
     +Perform a Logout skip by jumping on top of one of the Gryphon's heads, and logging out, then back in
+    .link https://www.youtube.com/watch?v=PWMJhodh6Bw >> CLICK HERE
 step << !Warlock
     .goto Ironforge,74.40,51.10,30,0
     .goto Ironforge,74.40,51.10,0
@@ -4214,6 +4230,7 @@ step
     .goto Wetlands,12.1,60.3,40,0
     +Open this link and follow it on another screen.
     >>Do the Deathless Dun Morogh -> Wetlands skip
+    .link https://www.youtube.com/watch?v=9afQTimaiZQ >> CLICK HERE for reference
     .goto Wetlands,9.5,59.7,80 >> Travel to Menethil Harbor
 step
     #hardcore
@@ -4474,6 +4491,7 @@ step
 step << !Mage
     .goto Dun Morogh,38.5,54.0
     >>Wait until Old Icebeard leaves the cave so you can sneak in and loot the chest, or do this
+        .link https://www.youtube.com/watch?v=o55Y3LjgKoE >>CLICK HERE
     .complete 312,1 --MacGrann's Dried Meats (1)
 step
     .goto Dun Morogh,34.6,51.6
@@ -4674,6 +4692,7 @@ step
     .goto Dun Morogh,62.6,46.1
     >>Kill Vagash. Loot him for his Fang, this quest is HARD, try to kite him to the guard parked at the intersection
     .complete 314,1 --Collect Fang of Vagash (x)
+    .link https://www.youtube.com/watch?v=6PfhYU-9hoA >> Click here for video reference
 step
     .goto Dun Morogh,63.1,49.8
     .turnin 314 >> Turn in Protecting the Herd
@@ -4860,6 +4879,7 @@ step
     #label skip1
     #completewith fp
 	+Do the Loch Modan - Wetlands run, you can save a lot of time by doing a series of mountain jumps, see the video below
+    .link https://www.youtube.com/watch?v=q-yHviS7baQ >> This skip is hard, click here for video reference
 step
     #hardcore
     #label fp

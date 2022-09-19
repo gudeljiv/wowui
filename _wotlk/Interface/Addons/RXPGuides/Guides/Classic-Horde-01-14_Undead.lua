@@ -849,6 +849,7 @@ step
     #completewith next
     .goto Undercity,82.36,15.31
     +Go to the Reagent Vendor on your right and perform a Logout Skip by positioning your character on the highest part of the lowest staircase until it looks like they're floating, then logging out and back in.
+    .link https://www.youtube.com/watch?v=-Bi95bCN8dM >> CLICK HERE for an example
     >>If you can't do this, just run out of Undercity normally
 step
     .goto Tirisfal Glades,61.85,66.59,60 >> Exit Undercity
@@ -888,6 +889,7 @@ step << Warlock
     #completewith next
     .goto Undercity,85.26,19.89
     +Go above the Relic Vendor and perform a Logout Skip by positioning your character until it looks like they're floating, then logging out and back in.
+    .link https://www.youtube.com/watch?v=-Bi95bCN8dM >> CLICK HERE for an example
     >>If you can't do this, just run out of Undercity normally
 step << Warlock
     .goto Tirisfal Glades,61.85,66.59,60 >> Exit Undercity
@@ -1043,6 +1045,7 @@ step << Rogue
     .goto Tirisfal Glades,59.75,84.64
     .turnin 1978 >>Turn in The Deathstalkers
     >>Go to the edge of the main platform and perform a Logout Skip by positioning your character until it looks like they're floating, then logging out and back in.
+    .link https://www.youtube.com/watch?v=jj85AXyF1XE >> Open this tab when running to the turn in. CLICK HERE for an example
     >>If you can't do this, just run out of Undercity normally
 step << Rogue
     .isQuestTurnedIn 1886
@@ -1056,6 +1059,7 @@ step
     #completewith next
     .goto Undercity,82.36,15.31
     +Go to the Reagent Vendor on your right and perform a Logout Skip by positioning your character on the highest part of the lowest staircase until it looks like they're floating, then logging out and back in.
+    .link https://www.youtube.com/watch?v=-Bi95bCN8dM >> CLICK HERE for an example
     >>If you can't do this, just run out of Undercity normally
 step
     .goto Tirisfal Glades,61.85,66.59,60 >> Exit Undercity
@@ -1152,6 +1156,7 @@ step << Warrior
     #completewith next
     .goto Undercity,82.36,15.31
     +Perform a Logout Skip by positioning your character until it looks like they're floating on the edge of a bridge, then logging out and back in.
+    .link https://www.youtube.com/watch?v=-Bi95bCN8dM >> CLICK HERE for an example
     >>If you can't do this, just run out of Undercity normally
 step << Warrior
     .goto Tirisfal Glades,61.85,66.59,60 >> Exit Undercity
@@ -1196,6 +1201,7 @@ step << Rogue
     .goto Tirisfal Glades,59.75,84.64
     .turnin 1978 >>Turn in The Deathstalkers
     >>Go to the edge of the main platform and perform a Logout Skip by positioning your character until it looks like they're floating, then logging out and back in.
+    .link https://www.youtube.com/watch?v=jj85AXyF1XE >> Open this tab when running to the turn in. CLICK HERE for an example
     >>If you can't do this, just run out of Undercity normally
 step << Rogue
     .isQuestTurnedIn 1886
@@ -1224,6 +1230,7 @@ step << !Warrior
     #completewith next
     .goto Undercity,82.36,15.31
     +Perform a Logout Skip by positioning your character until it looks like they're floating on the edge of a bridge, then logging out and back in.
+    .link https://www.youtube.com/watch?v=-Bi95bCN8dM >> CLICK HERE for an example
     >>If you can't do this, just run out of Undercity normally
 step << !Warrior
     #som
@@ -1607,6 +1614,7 @@ step << Undead Rogue
     .goto Tirisfal Glades,59.75,84.64
     .turnin 1978 >>Turn in The Deathstalkers
     >>Go to the edge of the main platform and perform a Logout Skip by positioning your character until it looks like they're floating, then logging out and back in.
+    .link https://www.youtube.com/watch?v=jj85AXyF1XE >> Open this tab when running to the turn in. CLICK HERE for an example
     >>If you can't do this, just run out of Undercity normally
 step << Undead Rogue
     .isOnQuest 1886
@@ -1616,6 +1624,7 @@ step << Undead !Rogue
     #sticky
     #completewith next
     +Perform a Logout Skip by jumping on the Bookshelf behind you, then logging out and back in.
+    .link https://www.youtube.com/watch?v=c0DFOlRQrKs >> CLICK HERE for an example
     >>If you can't do this, just run out of Undercity normally
 step << !Undead Rogue
     .hs >> Hearth to Crossroads

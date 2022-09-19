@@ -9,6 +9,10 @@ local GetNumGroupMembers, SendChatMessage, GetTime, UnitLevel, UnitClass,
 
 local _G = _G
 
+local L = addon.locale.Get
+
+local AceGUI = LibStub("AceGUI-3.0")
+
 local playerName = _G.UnitName("player")
 
 addon.comms = addon:NewModule("Communications", "AceEvent-3.0", "AceComm-3.0",
@@ -45,16 +49,28 @@ function addon.comms:Setup()
     self:RegisterEvent("PLAYER_LEVEL_UP")
     self:RegisterEvent("GROUP_FORMED")
     self:RegisterEvent("GROUP_LEFT")
-    self:RegisterEvent("PLAYER_XP_UPDATE")
+    self:RegisterEvent("CHAT_MSG_COMBAT_XP_GAIN")
+    self:RegisterEvent("QUEST_TURNED_IN")
     self:RegisterEvent("PLAYER_ENTERING_WORLD")
 
     self:RegisterComm(self._commPrefix)
 
     -- Update Feedback Report into GuideWindow context menu, load order workaround
     for i, m in ipairs(addon.RXPFrame.bottomMenu) do
-        if m.text == "Give Feedback for step" then
+        if m.text == L("Give Feedback for step") then
             addon.RXPFrame.bottomMenu[i].func = addon.comms.OpenBugReport
             break
+        end
+    end
+
+    addon.comms:UpgradeDB()
+end
+
+function addon.comms:UpgradeDB()
+    local abs = math.abs
+    for _, data in pairs(self.players) do
+        if data.timePlayed < 0 then
+            data.timePlayed = abs(data.timePlayed)
         end
     end
 end
@@ -69,9 +85,9 @@ function addon.comms:PLAYER_LEVEL_UP(_, level)
             levelData.timestamp.finished then
             s = levelData.timestamp.finished - levelData.timestamp.started
 
-            msg = self.BuildNotification("I just leveled from %d to %d in %s",
-                                         level - 1, level,
-                                         addon.tracker:PrettyPrintTime(s))
+            msg = self.BuildNotification(
+                      L("I just leveled from %d to %d in %s"), level - 1, level,
+                      addon.tracker:PrettyPrintTime(s))
             announceLevelUp(msg)
         else
             -- Leave enough time for TIME_PLAYED to return, ish
@@ -84,9 +100,10 @@ function addon.comms:PLAYER_LEVEL_UP(_, level)
                     s = levelData.timestamp.finished -
                             levelData.timestamp.started
 
-                    msg = self.BuildNotification(
-                              "I just leveled from %d to %d in %s", level - 1,
-                              level, addon.tracker:PrettyPrintTime(s))
+                    msg = self.BuildNotification(L(
+                                                     "I just leveled from %d to %d in %s"),
+                                                 level - 1, level,
+                                                 addon.tracker:PrettyPrintTime(s))
                     announceLevelUp(msg)
                 elseif addon.release == 'Development' then
                     self.PrettyPrint("Invalid .started or .finished %d", level)
@@ -97,7 +114,7 @@ function addon.comms:PLAYER_LEVEL_UP(_, level)
         return
     end
 
-    msg = self.BuildNotification("I just leveled up to %d", level)
+    msg = self.BuildNotification(L("I just leveled up to %d"), level)
     announceLevelUp(msg)
 end
 
@@ -111,30 +128,55 @@ function addon.comms:PLAYER_ENTERING_WORLD(_, isInitialLogin, isReloadingUi)
     if isInitialLogin or isReloadingUi then self:AnnounceSelf("ANNOUNCE") end
 end
 
-function addon.comms:PLAYER_XP_UPDATE()
-    if self.state.lastXPGain then self:TallyGroup() end
+function addon.comms:CHAT_MSG_COMBAT_XP_GAIN(_, text, ...)
+    -- Exclude "You gain 360 experience" from quest turnin, doubles up on mob kill
+    -- TODO use _G.COMBATLOG_XPGAIN_FIRSTPERSON or _G.COMBATLOG_XPGAIN_FIRSTPERSON_UNNAMED
+    if 'You' == strsub(text, 0, #'You') then return end
 
-    self.state.lastXPGain = GetTime()
+    local xpGained = tonumber(smatch(text, "%d+"))
+
+    if not xpGained or xpGained == 0 then return end
+
+    self:TallyGroup(xpGained)
 end
 
-function addon.comms:TallyGroup()
+function addon.comms:QUEST_TURNED_IN(_, _, xpReward)
+    xpReward = tonumber(xpReward)
+
+    if not xpReward or xpReward <= 0 then return end
+
+    self:TallyGroup(xpReward)
+end
+
+function addon.comms:TallyGroup(xp)
     if GetNumGroupMembers() < 1 then return end
 
-    local diff = self.state.lastXPGain - GetTime()
     local name
     for i = 1, GetNumGroupMembers() - 1 do
         name = UnitName("party" .. i)
+
         if not name then break end
 
-        if self.players[name] then
-            self.players[name].timePlayed = self.players[name].timePlayed + diff
-        else
+        if not self.players[name] then
             self.players[name] = {
+                xp = xp,
                 timePlayed = 0,
                 class = UnitClassBase("party" .. i)
             }
         end
+
+        if self.state.lastXPGain then
+            local diff = GetTime() - self.state.lastXPGain
+
+            -- Only calculate < 5 minutes between XP gains
+            if diff < 300 then
+                self.players[name].timePlayed =
+                    self.players[name].timePlayed + diff
+            end
+        end
     end
+
+    self.state.lastXPGain = GetTime()
 end
 
 function addon.comms:AnnounceSelf(command)
@@ -145,7 +187,7 @@ function addon.comms:AnnounceSelf(command)
             name = playerName,
             class = select(2, UnitClass("player")),
             level = UnitLevel("player"),
-            xpPercentage = floor(UnitXP("player") / UnitXPMax("player"))
+            xpPercentage = floor(100 * UnitXP("player") / UnitXPMax("player"))
         },
         addon = {release = addon.release}
     }
@@ -183,12 +225,12 @@ function addon.comms:OnCommReceived(prefix, data, _, sender)
 
 end
 
-function addon.comms:IsNewRelease(theirRelease)
+function addon.comms:IsNewRelease(theirRelease, name)
     -- Treat Development announcements as equal to current
     if theirRelease == 'Development' then
         return false
     elseif addon.release == 'Development' then
-        self.PrettyPrint("IsNewRelease:theirRelease = %s", theirRelease)
+        self.PrettyPrint("%s:theirRelease = %s", name, theirRelease)
         return false
     end
 
@@ -229,11 +271,11 @@ function addon.comms:HandleAnnounce(data)
 
     if addon.settings.db.profile.checkVersions then
         if not self.state.updateFound.addon and
-            self:IsNewRelease(data.addon.release) then
+            self:IsNewRelease(data.addon.release, data.player.name) then
 
             self.state.updateFound.addon = true
 
-            self.PrettyPrint("There's a new addon version (%s) available",
+            self.PrettyPrint(L("There's a new addon version (%s) available"),
                              data.addon.release)
         end
 
@@ -244,7 +286,7 @@ function addon.comms:HandleAnnounce(data)
 
             self.state.updateFound.guide = true
 
-            self.PrettyPrint("There's a new version (%s) available for %s",
+            self.PrettyPrint(L("There's a new version (%s) available for %s"),
                              data.guide.version, data.guide.name)
         end
     end
@@ -289,8 +331,8 @@ function addon.comms:AnnounceStepEvent(event, data)
         -- Replay of guide, don't spam
         if guideAnnouncements.complete[data.title] then return end
 
-        local msg = self.BuildNotification("Completed step %d - %s", data.step,
-                                           data.title)
+        local msg = self.BuildNotification(L("Completed step %d - %s"),
+                                           data.step, data.title)
 
         if addon.settings.db.profile.enableCompleteStepAnnouncements and
             GetNumGroupMembers() > 0 then
@@ -310,8 +352,8 @@ function addon.comms:AnnounceStepEvent(event, data)
         -- Replay of guide, don't spam
         if guideAnnouncements.collect[data.title] then return end
 
-        local msg = self.BuildNotification("Collected step %d - %s", data.step,
-                                           data.title)
+        local msg = self.BuildNotification(L("Collected step %d - %s"),
+                                           data.step, data.title)
 
         if addon.settings.db.profile.enableCollectAnnouncements and
             GetNumGroupMembers() > 0 then
@@ -324,7 +366,7 @@ function addon.comms:AnnounceStepEvent(event, data)
 
     elseif event == '.fly' then
         -- Questie doesn't announce flight-time, so okay to send this out
-        local msg = self.BuildNotification("Flying to %s ETA %s",
+        local msg = self.BuildNotification(L("Flying to %s ETA %s"),
                                            data.destination,
                                            addon.tracker:PrettyPrintTime(
                                                data.duration))
@@ -413,11 +455,11 @@ function addon.comms.OpenBugReport(stepNumber)
         stepData = "N/A"
     end
 
-    local content = fmt([[Describe your issue:
+    local content = fmt([[%s
 
 
 
-Do not edit below this line
+%s
 ```
 Character: %s
 Zone: %s
@@ -430,17 +472,17 @@ Client Version: %s
 Current Step data
 %s
 ```
-]], character or "Error", zone or "Error", guide or "Error", addon.release,
-                        RXPCData.xprate, GetLocale(), select(1, GetBuildInfo()),
-                        stepData)
+]], L("Describe your issue:"), L("Do not edit below this line"),
+                        character or "Error", zone or "Error", guide or "Error",
+                        addon.release, RXPCData.xprate, GetLocale(),
+                        select(1, GetBuildInfo()), stepData)
 
-    local AceGUI = LibStub("AceGUI-3.0")
     local f = AceGUI:Create("Frame")
 
     f:SetLayout("Fill")
     f:EnableResize(true)
     f.statustext:GetParent():Hide()
-    f:SetTitle("RestedXP Feedback Form")
+    f:SetTitle(L("RestedXP Feedback Form"))
 
     f.scrollContainer = AceGUI:Create("ScrollFrame")
     f.scrollContainer:SetLayout("Fill")
@@ -451,8 +493,8 @@ Current Step data
     f.frame:SetBackdropColor(unpack(addon.colors.background))
 
     local editbox = AceGUI:Create("MultiLineEditBox")
-    editbox:SetLabel(
-        "Join our support discord at discord.gg/RestedXP and copy paste this form into #addon-feedback ")
+    editbox:SetLabel(L(
+                         "Join our support discord at discord.gg/RestedXP and copy paste this form into #addon-feedback"))
     editbox:SetFullWidth(true)
     editbox:SetFullHeight(true)
     editbox:SetText(content)
@@ -463,4 +505,52 @@ Current Step data
     tinsert(_G.UISpecialFrames, "RESTEDXP_BUG_REPORT_WINDOW")
 
     -- TODO save to variable to preserve open/close
+end
+
+function addon.comms.OpenBrandedExport(title, description, content, width,
+                                       height)
+
+    local f = AceGUI:Create("Frame") -- TODO use AceGUI:Create("Window")
+    f:Hide()
+
+    f:SetLayout("Fill")
+    f:EnableResize(true)
+    f.statustext:GetParent():Hide()
+    f:SetTitle("RestedXP: " .. title)
+
+    f.frame:SetBackdrop(addon.RXPFrame.backdropEdge)
+    f.frame:SetBackdropColor(unpack(addon.colors.background))
+
+    local editbox = AceGUI:Create("MultiLineEditBox")
+    editbox:SetLabel(description)
+    editbox:SetFullWidth(true)
+    editbox:SetFullHeight(true)
+    editbox:SetText(content)
+    editbox:DisableButton(true)
+    f:AddChild(editbox)
+
+    editbox:SetCallback("OnTextChanged", function() editbox:SetText(content) end)
+    editbox:SetCallback("OnEnterPressed",
+                        function() editbox.editbox:ClearFocus() end)
+    editbox.editBox:SetScript("OnMouseUp", function()
+        editbox:HighlightText()
+
+        -- Only highlight text on first enter
+        editbox.editBox:SetScript("OnMouseUp", nil)
+    end)
+
+    local frameWidth = max(width or 0, f.titletext:GetWidth() * 1.5,
+                           editbox.label:GetStringWidth() * 1.1)
+
+    f:SetWidth(frameWidth)
+    f:SetHeight(height or 100)
+    f.frame:SetMinResize(frameWidth, height or 20)
+
+    _G["RESTEDXP_BRANDED_EXPORT"] = f.frame
+    tinsert(_G.UISpecialFrames, "RESTEDXP_BRANDED_EXPORT")
+
+    f:SetCallback("OnClose", function() f:Release() end)
+
+    f:DoLayout()
+    f:Show()
 end

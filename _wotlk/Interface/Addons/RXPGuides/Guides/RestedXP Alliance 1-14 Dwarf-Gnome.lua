@@ -14,7 +14,8 @@ step << !Gnome !Dwarf
     +You have selected a guide meant for Gnomes and Dwarves. You should choose the same starter zone that you start in
 step
     >>Delete your Hearthstone
-    .goto Dun Morogh,29.9,71.2
+    .goto Dun Morogh,29.93,71.20 << tbc
+    .goto Dun Morogh,29.87,71.87 << wotlk	
     .accept 179 >> Accept Dwarven Outfitters
 step << Warrior
 #sticky
@@ -43,42 +44,50 @@ step << Paladin/Warrior
     .goto Dun Morogh,30.0,71.5
     .vendor >>vendor trash
 step << Paladin
-    .goto Dun Morogh,29.9,71.2
+    .goto Dun Morogh,29.93,71.20 << tbc
+    .goto Dun Morogh,29.87,71.87 << wotlk
     .turnin 179 >> Turn in Dwarven Outfitters
     .accept 233 >> Accept Coldridge Valley Mail Delivery
     .accept 3107 >> Accept Consecrated Rune
 step << Gnome Warrior
-    .goto Dun Morogh,29.9,71.2
+    .goto Dun Morogh,29.93,71.20 << tbc
+    .goto Dun Morogh,29.87,71.87 << wotlk
     .turnin 179 >> Turn in Dwarven Outfitters
     .accept 233 >> Accept Coldridge Valley Mail Delivery
     .accept 3112 >> Accept Simple Memorandum
 step << Dwarf Warrior
-    .goto Dun Morogh,29.9,71.2
+    .goto Dun Morogh,29.93,71.20 << tbc
+    .goto Dun Morogh,29.87,71.87 << wotlk
     .turnin 179 >> Turn in Dwarven Outfitters
     .accept 233 >> Accept Coldridge Valley Mail Delivery
     .accept 3106 >> Accept Simple Rune
 step << Mage
-    .goto Dun Morogh,29.9,71.2
+    .goto Dun Morogh,29.93,71.20 << tbc
+    .goto Dun Morogh,29.87,71.87 << wotlk
     .turnin 179 >> Turn in Dwarven Outfitters
     .accept 233 >> Accept Coldridge Valley Mail Delivery
     .accept 3114 >> Accept Glyphic Memorandum
 step << Priest
-    .goto Dun Morogh,29.9,71.2
+    .goto Dun Morogh,29.93,71.20 << tbc
+    .goto Dun Morogh,29.87,71.87 << wotlk
     .turnin 179 >> Turn in Dwarven Outfitters
     .accept 233 >> Accept Coldridge Valley Mail Delivery
     .accept 3110 >> Accept Hallowed Rune
 step << Gnome Rogue
-    .goto Dun Morogh,29.9,71.2
+    .goto Dun Morogh,29.93,71.20 << tbc
+    .goto Dun Morogh,29.87,71.87 << wotlk
     .turnin 179 >> Turn in Dwarven Outfitters
     .accept 233 >> Accept Coldridge Valley Mail Delivery
     .accept 3113 >> Accept Encrypted Memorandum
 step << Dwarf Rogue
-    .goto Dun Morogh,29.9,71.2
+    .goto Dun Morogh,29.93,71.20 << tbc
+    .goto Dun Morogh,29.87,71.87 << wotlk
     .turnin 179 >> Turn in Dwarven Outfitters
     .accept 233 >> Accept Coldridge Valley Mail Delivery
     .accept 3109 >> Accept Encrypted Rune
 step << !Dwarf !Gnome
-    .goto Dun Morogh,29.9,71.2
+    .goto Dun Morogh,29.93,71.20 << tbc
+    .goto Dun Morogh,29.87,71.87 << wotlk
     .turnin 179 >> Turn in Dwarven Outfitters
     .accept 233 >> Accept Coldridge Valley Mail Delivery
 step
@@ -445,10 +454,10 @@ step << Druid/Shaman
     .collect 2495,1 --Collect Walking Stick
 step << Warrior/Rogue
     .goto Dun Morogh,45.3,51.9
-    .train 2018 >>Train Blacksmithing. You'll get mining later which will allow you to craft Sharpening Stones (+2 weapon damage for 1 hour). You can skip Blacksmithing if you wish
+    .train 2018 >>Train Blacksmithing. You'll get mining later which will allow you to craft Sharpening Stones (+2 weapon damage for 1 hour). You should stop making these around level 20.
 step << Paladin
     .goto Dun Morogh,45.3,51.9
-    .train 2018 >>Train Blacksmithing. You'll get mining later which will allow you to craft Weightstones (+2 weapon damage for 1 hour). You can skip Blacksmithing if you wish
+    .train 2018 >>Train Blacksmithing. You'll get mining later which will allow you to craft Weightstones (+2 weapon damage for 1 hour). You should stop making these around level 20.
 step
     .goto Dun Morogh,46.0,51.7
     .accept 400 >> Accept Tools for Steelgrill
@@ -795,6 +804,7 @@ step
 step << !Mage
     .goto Dun Morogh,38.5,54.0
     >>Wait until Old Icebeard leaves the cave so you can sneak in and loot the chest, or do this
+        .link https://www.youtube.com/watch?v=o55Y3LjgKoE >>CLICK HERE
     .complete 312,1 --MacGrann's Dried Meats (1)
 step << Mage
     >> Polymorph Old Icebeard, then loot the meats
@@ -1378,8 +1388,9 @@ step << !Gnome !Dwarf
 .goto Dun Morogh,29.9,71.2
     +You have selected a guide meant for Gnomes and Dwarves. You should choose the same starter zone that you start in
 step
-    >>Delete your Hearthstone
-    .goto Dun Morogh,29.9,71.2
+    >>Delete your Hearthstone << tbc
+    .goto Dun Morogh,29.93,71.20 << tbc
+    .goto Dun Morogh,29.87,71.87 << wotlk
     .accept 179 >> Accept Dwarven Outfitters
 step << tbc
     #sticky
@@ -1406,6 +1417,7 @@ step << tbc
 #completewith next
     .goto Dun Morogh,26.8,79.8,30,0
     .goto Dun Morogh,30.1,82.4,30 >> Kill some Wolves en route, then watch this
+.link https://www.youtube.com/watch?v=iUvGsRbIVp8 >> CLICK HERE
 step << tbc
     >>Kill Frostmane Novices. Loot them for Feather Charms
 .goto Dun Morogh,29.0,82.6,20,0
@@ -1418,7 +1430,8 @@ step << tbc
     .goto Dun Morogh,28.6,66.1
     .turnin 1599 >> Turn in Beginnings
 step
-    .goto Dun Morogh,29.9,71.2
+    .goto Dun Morogh,29.93,71.20 << tbc
+    .goto Dun Morogh,29.87,71.87 << wotlk
     .turnin 179 >> Turn in Dwarven Outfitters
     .accept 233 >> Accept Coldridge Valley Mail Delivery
     .accept 3115 >> Accept Tainted Memorandum
@@ -2830,14 +2843,16 @@ step << !Gnome !Dwarf
 .goto Dun Morogh,29.9,71.2
     +You have selected a guide meant for Gnomes and Dwarves. You should choose the same starter zone that you start in
 step
-    .goto Dun Morogh,29.9,71.2
+    .goto Dun Morogh,29.93,71.20 << tbc
+    .goto Dun Morogh,29.87,71.87 << wotlk
     >>Speak to Sten Stoutarm
     .accept 179 >>Accept Dwarven Outfitters
 step
     .goto Dun Morogh,29.0,74.4
     .complete 179,1 --Tough Wolf Meat (8)
 step
-    .goto Dun Morogh,29.9,71.3
+    .goto Dun Morogh,29.93,71.20 << tbc
+    .goto Dun Morogh,29.87,71.87 << wotlk
     .turnin 179 >>Turn in Dwarven Outfitters
     .accept 233 >>Accept Coldridge Valley Mail Delivery
     .accept 3108 >>Accept Etched Rune
@@ -3105,6 +3120,7 @@ step
 step
     .goto Dun Morogh,38.5,54.0
     >>Wait until Old Icebeard leaves the cave so you can sneak in and loot the chest, or do this
+        .link https://www.youtube.com/watch?v=o55Y3LjgKoE >>CLICK HERE
     .complete 312,1 --MacGrann's Dried Meats (1)
 step
     .goto Dun Morogh,34.6,51.6

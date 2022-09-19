@@ -655,6 +655,7 @@ step
     #completewith next
     .goto Ironforge,56.23,46.83,0
     +Perform a Logout skip by jumping on top of one of the Gryphon's heads, and logging out, then back in
+    .link https://www.youtube.com/watch?v=PWMJhodh6Bw >> CLICK HERE
 step
     #hardcore
     .zone Stormwind City >> Take the tram to Stormwind City
@@ -705,6 +706,7 @@ step
     #completewith Gnolls
     +start AoEing needed quest mobs in groups of 3+ that you see.
     >>Keep this tutorial open in another tab for the Redridge AoE Section if needed:
+    .link https://youtu.be/SxMc2GoP33c?t=56 >> CLICK HERE
 step
     >>Talk to Guard Parker. He patrols around the crossroads a little
     .goto Elwynn Forest,99.05,72.15

@@ -31,6 +31,7 @@ step << Warlock
     #hardcore
     .goto Elwynn Forest,52.9,44.3,60,0
     >>Kill some Wolves en route, then watch this
+    .link https://www.youtube.com/watch?v=_-KEke9Yeik >>CLICK HERE
     >>Use your Hearthstone inside the camp when you loot it
     .goto Elwynn Forest,56.7,44.0
     .complete 1598,1 --Collect Powers of the Void (x1)
@@ -38,6 +39,7 @@ step << Warlock
     #softcore
     .goto Elwynn Forest,52.9,44.3,60,0
     >>Kill some Wolves en route, then watch this
+    .link https://www.youtube.com/watch?v=_-KEke9Yeik >>CLICK HERE
     .goto Elwynn Forest,56.7,44.0
     .complete 1598,1 --Collect Powers of the Void (x1)
 step << Warlock
@@ -702,6 +704,7 @@ step << !Rogue !Warrior
     >>Kill Princess. Use a Lesser Heal Potion from before if needed. Loot her for the Collar
     >>If you're struggling, you can use the Fence to abuse pathing and buy time
     .complete 88,1 --Collect Brass Collar (x1)
+    .link https://www.youtube.com/watch?v=GRrXOV-UvD4 >> Click here if struggling
 step
     .xp 9+3400 >> Grind to 3400+/6500xp
 step
@@ -1143,6 +1146,7 @@ step
     .goto Dun Morogh,62.6,46.1
     .goto Dun Morogh,62.78,54.60,0
     .complete 314,1 --Collect Fang of Vagash (1)
+    .link https://www.youtube.com/watch?v=ZJX6sCkm5JY >> CLICK HERE for a guide on how to solo Vagash
 step
     .goto Dun Morogh,63.1,49.8
     .turnin 314 >> Turn in Protecting the Herd
@@ -1558,6 +1562,7 @@ step << Warlock
     #hardcore
     .goto Elwynn Forest,52.9,44.3,60,0
     >>Kill some Wolves en route, then watch this
+    .link https://www.youtube.com/watch?v=_-KEke9Yeik >>CLICK HERE
     >>Use your Hearthstone inside the camp when you loot it
     .goto Elwynn Forest,56.7,44.0
     .complete 1598,1 --Collect Powers of the Void (x1)
@@ -1565,6 +1570,7 @@ step << Warlock
     #softcore
     .goto Elwynn Forest,52.9,44.3,60,0
     >>Kill some Wolves en route, then watch this
+    .link https://www.youtube.com/watch?v=_-KEke9Yeik >>CLICK HERE
     .goto Elwynn Forest,56.7,44.0
     .complete 1598,1 --Collect Powers of the Void (x1)
 step << Warlock
@@ -2198,6 +2204,7 @@ step << !Rogue !Warrior
     >>Kill Princess. Use a Lesser Heal Potion from before if needed. Loot her for the Collar
     >>If you're struggling, you can use the Fence to abuse pathing and buy time
     .complete 88,1 --Collect Brass Collar (x1)
+    .link https://www.youtube.com/watch?v=GRrXOV-UvD4 >> Click here if struggling
 step << !Warlock !Warrior
     .goto Elwynn Forest,69.4,79.2
     .xp 10+200 >> Grind until 200+/7600xp into level 10
@@ -2588,6 +2595,7 @@ step
     .goto Dun Morogh,62.6,46.1
     .goto Dun Morogh,62.78,54.60,0
     .complete 314,1 --Collect Fang of Vagash (1)
+    .link https://www.youtube.com/watch?v=ZJX6sCkm5JY >> CLICK HERE for a guide on how to solo Vagash
 step
     .goto Dun Morogh,63.1,49.8
     .turnin 314 >> Turn in Protecting the Herd
@@ -2803,6 +2811,7 @@ step
     >>Open this link and follow it on another screen.
     >>Do the Deathless Dun Morogh -> Wetlands skip
     >>Avoid the Crocodiles when crossing the sea
+    .link https://www.youtube.com/watch?v=9afQTimaiZQ >> CLICK HERE for reference
     .goto Wetlands,12.1,60.3,80 >> Travel to Menethil Harbor
 step
     #softcore

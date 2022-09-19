@@ -721,6 +721,7 @@ step << Dwarf !Paladin/Gnome
     .goto Wetlands,12.1,60.3,40,0
     +Open this link and follow it on another screen.
     >>Do the Deathless Dun Morogh -> Wetlands skip
+    .link https://www.youtube.com/watch?v=9afQTimaiZQ >> CLICK HERE for reference
     .goto Wetlands,12.1,60.3,80 >> Travel to Menethil Harbor
 step << Human/Dwarf Paladin
     #label end
@@ -779,6 +780,7 @@ step << Human/Dwarf Paladin
     >>Open this link and follow it on another screen.
     >>Do the Deathless Dun Morogh -> Wetlands skip
     >>Avoid the Crocodiles when crossing the sea
+    .link https://www.youtube.com/watch?v=9afQTimaiZQ >> CLICK HERE for reference
     .goto Wetlands,12.1,60.3,80 >> Travel to Menethil Harbor
 step << Human
     #softcore
@@ -976,17 +978,20 @@ step <<  Hunter
      >> Start the escort quest
      >>This quest is VERY hard, you can skip this step and come back later at level 19
     .accept 731 >> Accept The Absent Minded Prospector
+    .link https://www.twitch.tv/videos/1182180918 >> Click here for video reference
 step <<  Hunter
     #requires prospector
      >> Escort Prospector Remtravel
      .complete 731,1
      .isOnQuest 731
      *This quest is VERY hard, you can skip this step and come back later at level 19
+    .link https://www.twitch.tv/videos/1182180918 >> Click here for video reference
 step << Hunter
 	#era/som << Dwarf
     .goto Ashenvale,13.97,4.10
     .accept 4733 >> Accept Beached Sea Creature
     >>This quest can be a little hard, try to pull the murlocs 1 by 1, otherwise you can end up aggroing the whole camp
+    .link https://www.twitch.tv/videos/992307825?t=05h48m36s >> Click here for video reference
 step << Hunter
 	#era/som << Dwarf
     .goto Ashenvale,13.93,2.01
@@ -1157,6 +1162,7 @@ step  << !Warrior !Paladin !Rogue !Druid
     >>Escort it back to Gyromast and kill it
     >>Be careful as this quest is VERY difficult
     .complete 2078,1
+    .link https://clips.twitch.tv/VainAmorphousMacaroniPRChase-iGvhTnz0ked6LO0A >> Click here for video reference
 step  << !Warrior !Paladin !Rogue !Druid
     .goto Winterspring,6.37,16.66
     .turnin 2078 >> Turn in Gyromast's Revenge
@@ -1748,6 +1754,7 @@ step  << !Warrior !Paladin !Rogue !Druid
     >>Escort it back to Gyromast and kill it
     >>This elite quest is HARD, skip this step if you can't do it
     .complete 2078,1
+    .link https://clips.twitch.tv/VainAmorphousMacaroniPRChase-iGvhTnz0ked6LO0A >> Click here for video reference
 step  << !Warrior !Paladin !Rogue !Druid
     .goto Winterspring,6.37,16.66
     .turnin 2078 >> Turn in Gyromast's Revenge
@@ -1850,6 +1857,7 @@ step
     #completewith next
     .goto Ironforge,56.23,46.83,0
     +Perform a Logout skip by jumping on top of one of the Gryphon's heads, and logging out, then back in
+    .link https://www.youtube.com/watch?v=PWMJhodh6Bw >> CLICK HERE
 step
     #hardcore
     .goto Ironforge,77.0,51.0,60 >> Run to the Deeprun Tram
@@ -1878,10 +1886,12 @@ step <<  Hunter
      >> Start the escort quest
     >>This quest is hard, proceed with caution
     .accept 731 >> Accept The Absent Minded Prospector
+    .link https://www.twitch.tv/videos/1182180918 >> Click here for video reference
 step <<  Hunter
     #requires prospector
      >> Escort Prospector Remtravel
      .complete 731,1
+    .link https://www.twitch.tv/videos/1182180918 >> Click here for video reference
 step
     #completewith next
     .goto Ashenvale,22.36,3.98
@@ -1896,6 +1906,7 @@ step
     .goto Ashenvale,13.97,4.10
     .accept 4733 >> Accept Beached Sea Creature
     >>This quest can be a little hard, try to pull the murlocs 1 by 1, otherwise you can end up aggroing the whole camp
+    .link https://www.twitch.tv/videos/992307825?t=05h48m36s >> Click here for video reference
 step
 	#era/som
     .goto Ashenvale,13.93,2.01
@@ -2081,6 +2092,7 @@ step
     >>Kill Ilkrud Magthrull
     >>This quest is HARD, you can skip this right now and do it later at level 23
     .complete 973,1
+    .link https://www.twitch.tv/videos/1182187763 >> Click here for video reference
 	.isOnQuest 973
 step
 	#era/som
@@ -2368,6 +2380,7 @@ step << Warlock
     .goto Redridge Mountains,15.68,49.30
      >> Kill Bellygrub by kiting him towards the Lakeshire guards
     .complete 34,1
+    .link https://youtu.be/6JE967OG3CU?t=1845 >> Click here for video reference
 step << Warlock
     .goto Redridge Mountains,21.85,46.32
      >>This is a hard quest to solo at this level, if you can't solo Bellygrub, skip this step, you'll have another opportunity to finish it later
@@ -2682,6 +2695,7 @@ step << Rogue
     .goto Westfall,68.5,70.0
     >>This is a good time to do the poison quest in Westfall, this quest can be VERY HARD to do at level 20/21, this step is optional, you will have another chance to do it later at level 24
     .turnin 2360 >> Turn in Mathias and the Defias
+    .link https://www.youtube.com/watch?v=t05Ux5Qis9k >>Click here for video reference
 step << Rogue
     --#softcore
     .goto Westfall,68.5,70.0
@@ -2692,12 +2706,14 @@ step << Rogue
     .goto Westfall,70.6,72.8
     >>Pickpocket one of the Defias Drones and loot the tower key
     .complete 2359,2 --Collect Defias Tower Key (x1)
+    .link https://www.youtube.com/watch?v=t05Ux5Qis9k >>Click here for video reference
     .isOnQuest 2359
 step << Rogue
     --#softcore
     .goto Westfall,70.4,74.0
     >>Climb to the top of the tower and loot the small chest on the floor
     .complete 2359,1 --Collect Klaven Mortwake's Journal (x1)
+    .link https://www.youtube.com/watch?v=t05Ux5Qis9k >>Click here for video reference
     .isOnQuest 2359
 step << Rogue !Dwarf
     --#softcore

@@ -8,7 +8,8 @@ RXPGuides.RegisterGuide([[
 #defaultfor Draenei
 #next 11-20 Bloodmyst (Draenei)
 step
-    .goto Azuremyst Isle,82.9,44.0
+    .goto Azuremyst Isle,82.96,43.88 << tbc
+    .goto Azuremyst Isle,84.19,43.03 << wotlk    
     .accept 9279 >> Accept You Survived!
 step << Shaman
 	#completewith next
@@ -18,8 +19,8 @@ step << Shaman
     .goto Azuremyst Isle,79.3,49.1
 	.trainer >> Train Rockbiter Weapon
 step << Warrior
-    #sticky
-	    .goto Azuremyst Isle,80.0,47.1
+    #completewith next
+        .goto Azuremyst Isle,80.0,47.1
 	.vendor >> Kill 2-3 mobs for vendor trash (worth 10c+), then vendor trash inside
 step << Warrior
     .goto Azuremyst Isle,79.6,49.4
@@ -42,7 +43,7 @@ step
     .complete 9280,1 --Collect Vial of Moth Blood (x8)
 step
     .goto Azuremyst Isle,78.4,44.3
-	>>Prioritize Volatile Mutations, we're turning it in the heading to the Root Lashers. You can do Moth Blood on the way back.
+	>>Prioritize Volatile Mutations, we're turning it in then heading to the Root Lashers. You can do Moth Blood on the way back.
     .complete 10302,1 --Kill Volatile Mutation (x8)
 step
     .goto Azuremyst Isle,79.1,46.4
@@ -297,8 +298,8 @@ step
 step
     .goto Azuremyst Isle,46.4,71.2
 	.vendor >> Vendor and Repair
-    .trainer >> Train Blacksmithing and buy a Mining Pick from Calypso. This will allow you to make +2 damage sharpening stones for your weapon which are very strong. << Warrior
-    .trainer >> Train Blacksmithing and buy a Mining Pick from Calypso. This will allow you to make +2 damage weightstones for your weapon which are very strong. << Paladin
+    .trainer >> Train Blacksmithing and buy a Mining Pick from Calypso. This will allow you to make +2 damage sharpening stones for your weapon which are very strong. You should stop making these around level 20. << Warrior
+    .trainer >> Train Blacksmithing and buy a Mining Pick from Calypso. This will allow you to make +2 damage weightstones for your weapon which are very strong. You should stop making these around level 20. << Paladin
 step
     .goto Azuremyst Isle,58.5,66.3
 	>>Grind en route
@@ -634,7 +635,7 @@ step << Hunter
 	.goto The Exodar,44.6,72.0,60,0
     .goto The Exodar,44.1,86.6
     .turnin 9675 >> Turn in Beast Training
-	.trainer >> Train your pet spells
+	.trainer >> Train your pet spells << tbc
 step << Hunter
 	#completewith next
     .goto The Exodar,47.9,89.
@@ -656,6 +657,7 @@ step << Hunter
         .goto Azuremyst Isle,44.7,23.5
 	.zone Azuremyst Isle >>Jump down and head out of The Exodar
 	>> Alternatively you can do a logout skip on any brazier or by floating off of any ledge in the city
+	.link https://www.youtube.com/watch?v=WUWNGyQWJw8 >> Click here for reference
 step << Hunter wotlk
 	#sticky
 	#label pet1
@@ -1126,7 +1128,18 @@ step
     .goto Bloodmyst Isle,55.4,55.3
     .accept 9641 >> Accept Irradiated Crystal Shards
     .accept 9779 >> Accept Intercepting the Message
-	.turnin 9641 >> Turn in Irradiated Crystal Shards
+step
+	.goto Bloodmyst Isle,55.4,55.4
+	.itemcount 23984,10
+	.turnin 9641,3 >> Turn in Irradiated Crystal Shards << Warrior/Paladin/Hunter/Rogue/Shaman
+    .turnin 9641,2 >> Turn in Irradiated Crystal Shards << Mage/Priest/Warlock
+    .turnin 9641 >> Turn in Irradiated Crystal Shards << Druid
+step
+    .itemcount 23984,10
+    .goto Bloodmyst Isle,55.4,55.2
+    .turnin 9642,3 >> Turn in More Irradiated Crystal Shards << Warrior/Paladin/Hunter/Rogue/Shaman
+    .turnin 9642,2 >> Turn in More Irradiated Crystal Shards << Warlock/Priest/Mage
+    .turnin 9642 >> Turn in More Irradiated Crystal Shards << Druid
 step
     .goto Bloodmyst Isle,61.1,48.6
     .turnin 9620 >> Turn in The Missing Survey Team
@@ -1442,6 +1455,12 @@ step
     .accept 9703 >> Accept The Cryo-Core
 	.trainer >>Train class spells at Vindicator Aesom << Paladin
 step
+    .itemcount 23984,10
+    .goto Bloodmyst Isle,55.4,55.2
+    .turnin 9642,3 >> Turn in More Irradiated Crystal Shards << Warrior/Paladin/Hunter/Rogue/Shaman
+    .turnin 9642,2 >> Turn in More Irradiated Crystal Shards << Warlock/Priest/Mage
+    .turnin 9642 >> Turn in More Irradiated Crystal Shards << Druid
+step
     .goto Bloodmyst Isle,55.9,56.9
     .turnin 9643 >> Turn in Constrictor Vines
     .accept 9647 >> Accept Culling the Flutterers
@@ -1692,6 +1711,13 @@ step << Hunter/Shaman/Mage
 step << !Shaman
     #completewith next
     .deathskip >> Death skip back to Blood Watch
+step
+    .itemcount 23984,10
+    .goto Bloodmyst Isle,55.4,55.2
+    >> Turn in your remaining Irradiated Crystal Shards before leaving Bloodmyst!
+    .turnin 9642,3 >> Turn in More Irradiated Crystal Shards << Warrior/Paladin/Hunter/Rogue/Shaman
+    .turnin 9642,2 >> Turn in More Irradiated Crystal Shards << Warlock/Priest/Mage
+    .turnin 9642 >> Turn in More Irradiated Crystal Shards << Druid
 step << Paladin
 	#completewith next
 	#level20
@@ -1735,6 +1761,10 @@ step << Shaman
 step << Shaman
     .goto Bloodmyst Isle,57.7,53.9
     .fly The Exodar>> Fly to The Exodar
+step << Draenei !Paladin wotlk
+	.goto The Exodar,81.18,52.56
+    .money <5.00
+    .skill riding,75 >>Head to Exodar, buy and train your mount
 step << Hunter
 	.goto The Exodar,42.0,71.4,60,0
 	.goto The Exodar,54.5,85.6,60,0
@@ -1819,7 +1849,7 @@ step
     .maxlevel 20
 step
     .goto Darkshore,37.4,40.2
-	.turnin 9633 >> Turn in The Way to Auberdine
+	.turnin -9633 >> Turn in The Way to Auberdine
     .accept 10752 >> Accept Onward to Ashenvale
 step
 #xprate <1.5
@@ -2092,7 +2122,7 @@ step
     .goto Ashenvale,37.3,51.8
     .turnin 1020 >> Turn in Orendil's Cure
     .timer 26,Orendil's Cure RP
-step << Warrior/Paladin
+step << Warrior tbc/Paladin
 	#sticky
 	.goto Ashenvale,35.8,52.0
 	>>Buy the level 21 weapon upgrade
@@ -2176,7 +2206,12 @@ step
 	>> This fight can be hard, focus down one or two of her adds then reset if needed.
     .complete 1009,1 --Collect Ring of Zoram (x1)
 step
-    .goto Darkshore,33.6,94.4--TODO: BFD waypoint
+    .goto 1414,43.97,35.31,20,0
+    .goto 1414,43.80,35.18,20,0
+	.goto 1414,43.94,34.89,20,0
+	.goto 1414,43.91,34.58,20,0
+	.goto 1414,44.02,34.58,20,0
+	.goto 1414,44.16,34.85
     >>Enter the temple like building into the BFD caves and kill nagas/satyrs
     .complete 1275,1
 step
@@ -2230,7 +2265,7 @@ step << !Hunter
 	.goto Teldrassil,23.7,64.5
 	.turnin 741 >> Turn in The Absent Minded Prospector
 	.accept 942 >> Accept The Absent Minded Prospector
-step << Mage/Warrior
+step << Warrior tbc/Mage
 	.goto Teldrassil,29.2,56.7
     .train 227 >> Train Staves
 step << !Hunter
@@ -2269,6 +2304,7 @@ step << Draenei tbc/NightElf tbc
     .goto Wetlands,63.9,78.6
     .zone Loch Modan >> Logout on top of the mushrooms at the back of the cave. When you log back in, this will teleport you to Thelsamar.
     >>Make sure to logout as close as possible to the back of the cave. This trick won't work if you log out next to the edge of the mushroom closer to the mouth of the cave.
+    .link https://www.youtube.com/watch?v=21CuGto26Mk >> CLICK HERE for a reference
     .zoneskip Elwynn Forest
     .zoneskip Stormwind City
 step << NightElf tbc/Draenei tbc
@@ -2287,6 +2323,7 @@ step << NightElf tbc/Draenei tbc
     >>Go inside the South-eastern Trogg cave. Perform a logout skip
     .goto Dun Morogh,70.63,56.70,60,0
     .goto Dun Morogh,70.60,54.86
+    .link https://www.youtube.com/watch?v=yQBW3KyguCM >> CLICK HERE
     .zone Ironforge >> Logout Skip or travel to Ironforge
 step << NightElf tbc/Draenei tbc
 #xprate >1.499

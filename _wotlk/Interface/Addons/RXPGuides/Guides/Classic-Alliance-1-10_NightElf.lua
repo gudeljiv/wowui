@@ -164,6 +164,7 @@ step
 	#completewith next
 	+Logout skip on the ledge behind the eggs. Move your character until it looks like they're floating, then log out, and back in.
 	>>If you fall down, just run out the cave normally to the quest turn in
+	.link https://www.youtube.com/watch?v=TTZZT3jpv1s >> CLICK HERE for reference
 step
 	.goto Teldrassil,57.8,41.7
     .turnin 917 >> Turn in Webwood Egg

@@ -1,17 +1,30 @@
 local _, xVermin = ...
 
--- local function CheckDebuff(d)
--- 	for i=1,40 do
--- 		local debuff = UnitDebuff("target",i)
--- 		if debuff then
--- 			if debuff == d then
--- 				return false
--- 			else
--- 				return true
--- 			end
--- 		end
--- 	end
--- end
+local function CheckDebuff(d, unit)
+	for i = 1, 40 do
+		local debuff = UnitDebuff(unit, i)
+		if debuff then
+			if debuff == d then
+				return false
+			else
+				return true
+			end
+		end
+	end
+end
+
+local function CheckBuff(d, unit)
+	for i = 1, 40 do
+		local buff = UnitBuff(unit, i)
+		if buff then
+			if buff == d then
+				return false
+			else
+				return true
+			end
+		end
+	end
+end
 
 -- local function Show()
 -- 	if not InCombatLockdown() then return end
@@ -70,53 +83,62 @@ local _, xVermin = ...
 -- 	end
 -- end)
 
--- PlayerFrame:HookScript(
--- 	"OnUpdate",
--- 	function()
--- 		-- if Rotation.AOE() then
--- 		-- 	print("aoe")
--- 		-- else
--- 		-- 	print("single target")
--- 		-- end
+local RotationTextureFrame = CreateFrame('RotationTextureFrame')
+RotationTextureFrame:SetSize(60, 60)
+RotationTextureFrame:SetPoint('CENTER')
 
--- 		if not InCombatLockdown() then return end
+PlayerFrame:HookScript(
+	'OnUpdate',
+	function()
+		if Rotation.AOE() then
+			print('aoe')
+		else
+			print('single target')
+		end
 
--- 		local data = {
--- 			player = {
--- 				health ={
--- 					current = UnitHealth("player"),
--- 					max = UnitHealthMax("player"),
--- 					percentage = string.format("%.f", data.player.health.current / data.player.health.max * 100),
--- 				},
--- 				mana ={
--- 					current = UnitMana("player"),
--- 					max = UnitManaMax("player"),
--- 					percentage = string.format("%.f", data.player.mana.current / data.player.mana.max * 100),
--- 				},
--- 				xp ={
--- 					current = UnitXP("player"),
--- 					max = UnitXPMax("player"),
--- 					percentage = string.format("%.f", data.player.xp.current / data.player.xp.max * 100),
--- 				}
--- 			},
--- 			target = {
--- 				health ={
--- 					current = UnitHealth("target"),
--- 					max = UnitHealthMax("target"),
--- 					percentage = string.format("%.f", data.target.health.current / data.target.health.max * 100),
--- 				},
--- 				mana ={
--- 					current = UnitMana("target"),
--- 					max = UnitManaMax("target"),
--- 					percentage = string.format("%.f", data.target.mana.current / data.target.mana.max * 100),
--- 				},
--- 				xp ={
--- 					current = UnitXP("target"),
--- 					max = UnitXPMax("target"),
--- 					percentage = string.format("%.f", data.target.xp.current / data.target.xp.max * 100),
--- 				}
--- 			}
--- 		}
+		if not InCombatLockdown() then
+			return
+		end
 
--- 	end
--- )
+		local data = {
+			player = {
+				health = {
+					current = UnitHealth('player'),
+					max = UnitHealthMax('player'),
+					percentage = string.format('%.f', data.player.health.current / data.player.health.max * 100)
+				},
+				mana = {
+					current = UnitMana('player'),
+					max = UnitManaMax('player'),
+					percentage = string.format('%.f', data.player.mana.current / data.player.mana.max * 100)
+				},
+				xp = {
+					current = UnitXP('player'),
+					max = UnitXPMax('player'),
+					percentage = string.format('%.f', data.player.xp.current / data.player.xp.max * 100)
+				}
+			},
+			target = {
+				health = {
+					current = UnitHealth('target'),
+					max = UnitHealthMax('target'),
+					percentage = string.format('%.f', data.target.health.current / data.target.health.max * 100)
+				},
+				mana = {
+					current = UnitMana('target'),
+					max = UnitManaMax('target'),
+					percentage = string.format('%.f', data.target.mana.current / data.target.mana.max * 100)
+				},
+				xp = {
+					current = UnitXP('target'),
+					max = UnitXPMax('target'),
+					percentage = string.format('%.f', data.target.xp.current / data.target.xp.max * 100)
+				}
+			}
+		}
+
+		RotationTextureFrame.texture = RotationTextureFrame:CreateTexture(nil, 'BACKGROUND')
+		RotationTextureFrame.texture:SetPoint('CENTER')
+		RotationTextureFrame.texture:SetTexture(GetSpellTexture('Heroic Strike'))
+	end
+)

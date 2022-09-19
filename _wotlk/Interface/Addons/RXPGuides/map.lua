@@ -20,7 +20,7 @@ af.texture:SetTexture(addon.GetTexture("rxp_navigation_arrow-1"))
 -- af.texture:SetScale(0.5)
 af.text = af:CreateFontString(nil, "OVERLAY")
 af.text:SetTextColor(1, 1, 1, 1)
-af.text:SetFont(addon.font, 9) -- ,"OUTLINE")
+af.text:SetFont(addon.font, 9,"OUTLINE")
 af.text:SetJustifyH("CENTER")
 af.text:SetJustifyV("CENTER")
 af.text:SetPoint("TOP", af, "BOTTOM", 0, -5)
@@ -497,7 +497,6 @@ local function generatePins(steps, numPins, startingIndex, isMiniMap)
                             zone = element.zone,
                             parent = element.parent,
                             wpHash = element.wpHash,
-                            overrideCorpse = not element.textOnly,
                         })
                     end
                 end
@@ -753,8 +752,8 @@ local function updateArrow()
     if UnitIsGhost("player") and --Meet at the grave and the follow-up quest:
         not (addon.QuestAutoTurnIn(3912) or addon.QuestAutoAccept(3913)) then
         local skip
-        for i,element in ipairs(addon.activeWaypoints) do
-            skip = skip or element.overrideCorpse
+        for i,element in pairs(addon.activeWaypoints) do
+            skip = skip or (not element.textOnly and addon.currentGuide.name == "41-43 Badlands")
         end
         local zone = HBD:GetPlayerZone()
         local corpse = C_DeathInfo.GetCorpseMapPosition(zone)
@@ -839,12 +838,14 @@ function addon.UpdateGotoSteps()
     for i, element in ipairs(addon.activeWaypoints) do
         if element.step and element.step.active then
 
-            if element.tag == "groundgoto" and
+            if element.tag == "groundgoto" and not element.skip and
                                  IsFlyableArea() and addon.GetSkillLevel("riding") >= 225 and
                                  zone == element.zone and (not addon.game == "WOTLK" or
                                  instance ~= addon.mapId["Northrend"] or IsPlayerSpell(54197)) then
-                forceArrowUpdate = forceArrowUpdate or not element.skip
+                --forceArrowUpdate = forceArrowUpdate or not element.skip
                 element.skip = true
+                addon.updateMap = true
+                return
             elseif (element.radius or element.dynamic) and element.arrow and
                 not (element.parent and
                     (element.parent.completed or element.parent.skip) and

@@ -1,4 +1,6 @@
 RXPGuides.RegisterGuide([[
+#tbc
+#wotlk
 #group +Profession leveling
 #subgroup Mining
 << Horde
@@ -269,6 +271,8 @@ step
 ]])
 
 RXPGuides.RegisterGuide([[
+#tbc
+#wotlk
 #group +Profession leveling
 #subgroup Mining
 << Alliance

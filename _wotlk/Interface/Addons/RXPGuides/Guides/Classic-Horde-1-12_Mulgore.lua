@@ -1124,6 +1124,7 @@ step
     #requires Belt
 	.zone The Barrens >>Jump onto the mushroom at the end of the cave. Logout on top of it to Camp Taurajo (The Barrens)
     .goto Mulgore,63.10,83.03
+	.link https://www.youtube.com/watch?v=NfLrBPzt56s >> CLICK HERE for reference
 step
     .goto The Barrens,44.5,59.1
     .fp Camp Taurajo >> Get the Camp Taurajo flight path
