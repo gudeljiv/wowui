@@ -12,7 +12,7 @@ ExtendedCharacterStats = {
 		["addColorsToStatTexts"] = true,
 		["headerFontSize"] = 11,
 		["showQualityColors"] = false,
-		["profileVersion"] = 11,
+		["profileVersion"] = 16,
 		["statFontSize"] = 10,
 	},
 	["profile"] = {
@@ -30,6 +30,23 @@ ExtendedCharacterStats = {
 				["text"] = "Attack Speed",
 				["refName"] = "RangedAttackSpeed",
 				["textColor"] = "009688",
+			},
+			["hasteBonus"] = {
+				["text"] = "Haste Bonus",
+				["statColor"] = "ffd740",
+				["display"] = true,
+				["isTbcOnly"] = true,
+				["refName"] = "RangedHasteBonus",
+				["textColor"] = "c8a600",
+			},
+			["text"] = "Ranged",
+			["hasteRating"] = {
+				["text"] = "Haste Rating",
+				["statColor"] = "ffd740",
+				["display"] = true,
+				["isTbcOnly"] = true,
+				["refName"] = "RangedHasteRating",
+				["textColor"] = "c8a600",
 			},
 			["hit"] = {
 				["bossLevel"] = {
@@ -67,8 +84,14 @@ ExtendedCharacterStats = {
 				},
 			},
 			["display"] = true,
-			["text"] = "Ranged",
-			["refName"] = "RangedHeader",
+			["penetration"] = {
+				["text"] = "Armor Penetration",
+				["statColor"] = "00766c",
+				["display"] = true,
+				["isTbcOnly"] = true,
+				["refName"] = "RangedArmorPenetration",
+				["textColor"] = "009688",
+			},
 			["crit"] = {
 				["statColor"] = "d32f2f",
 				["display"] = true,
@@ -76,6 +99,7 @@ ExtendedCharacterStats = {
 				["refName"] = "RangedCritChance",
 				["textColor"] = "ff6659",
 			},
+			["refName"] = "RangedHeader",
 		},
 		["defense"] = {
 			["critImmunity"] = {
@@ -95,16 +119,21 @@ ExtendedCharacterStats = {
 				["refName"] = "BlockChance",
 			},
 			["text"] = "Defense",
-			["parry"] = {
-				["display"] = true,
-				["text"] = "Parry Chance",
-				["refName"] = "ParryChance",
-			},
 			["resilience"] = {
 				["display"] = true,
 				["isTbcOnly"] = true,
 				["refName"] = "ResilienceValue",
 				["text"] = "Resilience",
+			},
+			["parry"] = {
+				["display"] = true,
+				["text"] = "Parry Chance",
+				["refName"] = "ParryChance",
+			},
+			["avoidance"] = {
+				["display"] = true,
+				["text"] = "Avoidance",
+				["refName"] = "Avoidance",
 			},
 			["critReduction"] = {
 				["display"] = true,
@@ -146,11 +175,6 @@ ExtendedCharacterStats = {
 			},
 		},
 		["spell"] = {
-			["penetration"] = {
-				["display"] = true,
-				["text"] = "Penetration",
-				["refName"] = "SpellPenetration",
-			},
 			["hit"] = {
 				["bossLevel"] = {
 					["statColor"] = "558b2f",
@@ -186,15 +210,36 @@ ExtendedCharacterStats = {
 					["textColor"] = "85bb5c",
 				},
 			},
+			["refName"] = "SpellHeader",
+			["hasteRating"] = {
+				["text"] = "Haste Rating",
+				["statColor"] = "ffd740",
+				["display"] = true,
+				["isTbcOnly"] = true,
+				["refName"] = "SpellHasteRating",
+				["textColor"] = "c8a600",
+			},
+			["hasteBonus"] = {
+				["text"] = "Haste Bonus",
+				["statColor"] = "ffd740",
+				["display"] = true,
+				["isTbcOnly"] = true,
+				["refName"] = "SpellHasteBonus",
+				["textColor"] = "c8a600",
+			},
 			["display"] = true,
 			["text"] = "Spell",
-			["refName"] = "SpellHeader",
 			["crit"] = {
 				["statColor"] = "d32f2f",
 				["display"] = true,
 				["text"] = "Crit Chance",
 				["refName"] = "SpellCritChance",
 				["textColor"] = "ff6659",
+			},
+			["penetration"] = {
+				["display"] = true,
+				["text"] = "Penetration",
+				["refName"] = "SpellPenetration",
 			},
 		},
 		["spellBonus"] = {
@@ -308,6 +353,13 @@ ExtendedCharacterStats = {
 			},
 		},
 		["regen"] = {
+			["mp5NotCasting"] = {
+				["statColor"] = "0d47a1",
+				["display"] = true,
+				["text"] = "MP5 (Not casting)",
+				["refName"] = "MP5NotCasting",
+				["textColor"] = "5472d3",
+			},
 			["mp5Buffs"] = {
 				["statColor"] = "0d47a1",
 				["display"] = true,
@@ -348,12 +400,6 @@ ExtendedCharacterStats = {
 				["refName"] = "MeleeAttackPower",
 				["textColor"] = "ffd149",
 			},
-			["expertise"] = {
-				["display"] = true,
-				["isTbcOnly"] = true,
-				["refName"] = "Expertise",
-				["text"] = "Expertise",
-			},
 			["attackSpeed"] = {
 				["offHand"] = {
 					["statColor"] = "00766c",
@@ -373,6 +419,37 @@ ExtendedCharacterStats = {
 					["refName"] = "MeleeAttackSpeedMainHand",
 					["textColor"] = "009688",
 				},
+			},
+			["hasteBonus"] = {
+				["text"] = "Haste Bonus",
+				["statColor"] = "ffd740",
+				["display"] = true,
+				["isTbcOnly"] = true,
+				["refName"] = "MeleeHasteBonus",
+				["textColor"] = "c8a600",
+			},
+			["text"] = "Melee",
+			["penetration"] = {
+				["text"] = "Armor Penetration",
+				["statColor"] = "00766c",
+				["display"] = true,
+				["isTbcOnly"] = true,
+				["refName"] = "MeleeArmorPenetration",
+				["textColor"] = "009688",
+			},
+			["expertise"] = {
+				["display"] = true,
+				["isTbcOnly"] = true,
+				["refName"] = "Expertise",
+				["text"] = "Expertise",
+			},
+			["hasteRating"] = {
+				["text"] = "Haste Rating",
+				["statColor"] = "ffd740",
+				["display"] = true,
+				["isTbcOnly"] = true,
+				["refName"] = "MeleeHasteRating",
+				["textColor"] = "c8a600",
 			},
 			["hit"] = {
 				["bossLevel"] = {
@@ -410,14 +487,19 @@ ExtendedCharacterStats = {
 				},
 			},
 			["display"] = true,
-			["text"] = "Melee",
-			["refName"] = "MeleeHeader",
 			["crit"] = {
 				["statColor"] = "d32f2f",
 				["display"] = true,
 				["text"] = "Crit Chance",
 				["refName"] = "MeleeCritChance",
 				["textColor"] = "ff6659",
+			},
+			["refName"] = "MeleeHeader",
+			["expertiseRating"] = {
+				["display"] = true,
+				["isTbcOnly"] = true,
+				["refName"] = "ExpertiseRating",
+				["text"] = "Expertise Rating",
 			},
 		},
 	},

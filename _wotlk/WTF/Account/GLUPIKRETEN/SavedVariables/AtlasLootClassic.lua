@@ -30,7 +30,7 @@ AtlasLootClassicDB = {
 		["Vermins - Stonespine"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Battlearm - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
@@ -39,7 +39,7 @@ AtlasLootClassicDB = {
 		["Dmitar - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 		["Moolatz - Golemagg"] = "Default",
 	},
@@ -51,11 +51,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -64,6 +59,11 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
 			},
 		},
 		["Verminz - Golemagg"] = {
@@ -291,9 +291,9 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Testxv - Golemagg"] = {
-		},
 		["Battlearm - Hydraxian Waterlords"] = {
+		},
+		["Testxv - Golemagg"] = {
 		},
 		["Battlearm - Golemagg"] = {
 		},
@@ -323,8 +323,8 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"TheBloodFurnace", -- [2]
-					3, -- [3]
+					"MagistersTerrace", -- [2]
+					4, -- [3]
 					6, -- [4]
 					0, -- [5]
 				},
@@ -352,22 +352,9 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
-			["GUI"] = {
-				["selectedGameVersion"] = 1,
-				["selected"] = {
-					nil, -- [1]
-					"TheTempleOfAtal'Hakkar", -- [2]
-					2, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-				["point"] = {
-					"LEFT", -- [1]
-					nil, -- [2]
-					"LEFT", -- [3]
-					337.781494140625, -- [4]
-					156.011474609375, -- [5]
-				},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -380,9 +367,22 @@ AtlasLootClassicDB = {
 					},
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+			["GUI"] = {
+				["point"] = {
+					"LEFT", -- [1]
+					nil, -- [2]
+					"LEFT", -- [3]
+					337.781494140625, -- [4]
+					156.011474609375, -- [5]
+				},
+				["selectedGameVersion"] = 1,
+				["selected"] = {
+					nil, -- [1]
+					"TheTempleOfAtal'Hakkar", -- [2]
+					2, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
 			},
 		},
 		["Judawise - Golemagg"] = {

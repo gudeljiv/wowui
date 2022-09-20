@@ -43,10 +43,10 @@ skills["warlock"] = [
 
 
 skills["hunter"] = [
-    {"name": "multi-shot", "key": "0", "modifier": "alt"},
-    {"name": "steady shot", "key": "4"},
+    {"name": "multi-shot", "key": "f10"},
+    {"name": "steady shot", "key": "2"},
     {"name": "mend pet", "key": "v"},
-    {"name": "kill command", "key": "f10"},
+    {"name": "kill command", "key": "4"},
     {"name": "serpent sting", "key": "9", "modifier": "alt"},
     {"name": "arcane shot", "key": "f11"}
 ]

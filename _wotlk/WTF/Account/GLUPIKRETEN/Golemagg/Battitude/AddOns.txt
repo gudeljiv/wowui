@@ -62,7 +62,7 @@ TellMeWhen_Options: enabled
 !Beautycase: enabled
 Align: enabled
 Auctionator: enabled
-BlizzMove: enabled
+BlizzMove: disabled
 ChocolateBar: enabled
 ClassicAuraDurations: enabled
 ClassicAutoDismount: enabled
@@ -123,7 +123,7 @@ aux-addon: disabled
 RXPGuides: enabled
 whoaThickFrames_BCC: enabled
 AutoOpen: enabled
-BlizzMove_Debug: enabled
+BlizzMove_Debug: disabled
 ExtendedCharacterStats: enabled
 ImprovedMacroFrame: disabled
 LFGBulletinBoard: enabled

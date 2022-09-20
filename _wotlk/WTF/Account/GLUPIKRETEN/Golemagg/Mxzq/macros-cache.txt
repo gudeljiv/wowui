@@ -26,8 +26,6 @@ END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Serpent Sting
 /cast !Auto Shot
-/petattack
-/startattack
 /cast Serpent Sting
 END
 VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
@@ -68,9 +66,10 @@ VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 /cast Mongoose Bite
 /cast Raptor Strike
 END
-VER 3 000000000100000C "VuhDoDCShieldData" "Ability_Repair"
-P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1HR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]0__
-END
-VER 3 000000000100000D "VuhDoDCShieldNames" "Ability_Repair"
-N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Mxz[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]XZY
+VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Kill Command
+/cast Bestial Wrath
+/use 13
+/use 14
 END

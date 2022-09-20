@@ -14,10 +14,10 @@ function Data:GetSpellCrit(school)
     local itemBonus = _SpellCrit:GetItemModifierBySchool(school)
     local setBonus = _SpellCrit:GetSetBonus(school)
 
-    if ECS.IsTBC then
+    if ECS.IsWotlk then
         crit = crit + GetCombatRatingBonus(CR_CRIT_SPELL) + GetSpellCritChanceFromIntellect("player") + itemBonus + setBonus
     else
-        crit = crit + GetSpellCritChance(1) + itemBonus + setBonus
+        crit = crit + GetSpellCritChance(school) + itemBonus + setBonus
     end
 
     crit = crit + _SpellCrit:GetSpellCritFromBuffs()
@@ -73,14 +73,19 @@ function _SpellCrit:GetGeneralTalentModifier()
     local mod = 0
 
     if classId == Data.MAGE then
-        local talentSlot = ECS.IsTBC and 17 or 15;
+        local talentSlot = ECS.IsWotlk and 17 or 15;
         local _, _, _, _, points, _, _, _ = GetTalentInfo(1, talentSlot)
         mod = points * 1 -- 0-3% Arcane Instability
     end
 
+    if classId == Data.DRUID and ECS.IsWotlk then
+        local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 18)
+        mod = points * 1 -- 0-3% Natural Perfection
+    end
+
     if classId == Data.WARLOCK then
-        if ECS.IsTBC then
-            local _, _, _, _, demonicTactics, _, _, _ = GetTalentInfo(1, 21)
+        if ECS.IsWotlk then
+            local _, _, _, _, demonicTactics, _, _, _ = GetTalentInfo(2, 21)
             local _, _, _, _, backlash, _, _, _ = GetTalentInfo(3, 17)
             mod = demonicTactics * 1 -- 0-5% Demonic Tactics
             mod = mod + backlash * 1 -- 0-3% Backlash
@@ -126,12 +131,12 @@ function _SpellCrit:GetTalentModifierFireCrit()
     local mod = 0
 
     if classId == Data.MAGE then
-        local talentSlot = ECS.IsTBC and 14 or 13;
+        local talentSlot = ECS.IsWotlk and 11 or 13;
         local _, _, _, _, criticalMassPoints, _, _, _ = GetTalentInfo(2, talentSlot)
         mod = criticalMassPoints * 2 -- 0-6% Critical Mass
 
-        if ECS.IsTBC then
-            local _, _, _, _, pyromaniacPoints, _, _, _ = GetTalentInfo(2, 18)
+        if ECS.IsWotlk then
+            local _, _, _, _, pyromaniacPoints, _, _, _ = GetTalentInfo(2, 20)
             mod = mod + (pyromaniacPoints * 1) -- 0-3% Pyromaniac
         end
     end

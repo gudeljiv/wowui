@@ -26,6 +26,8 @@ end
 function DataUtils:GetMissChanceByDifference(weaponSkill, defenseValue)
     if (defenseValue - weaponSkill) <= 10 then
         return 5 + (defenseValue - weaponSkill) * 0.1
+    elseif ECS.IsWotlk then
+        return 5 + (defenseValue - weaponSkill) * 0.2
     else
         return 6 + (defenseValue - weaponSkill) * 0.2
     end
@@ -44,6 +46,18 @@ function DataUtils:GetEnchantFromItemLink(itemLink)
         if itemStringLink then
             local _, _, enchant = string.find(itemStringLink, "item:%d+:(%d*)")
             return enchant
+        end
+    end
+
+    return nil
+end
+
+function DataUtils:GetSocketedGemsFromItemLink(itemLink)
+    if itemLink then
+        local _, itemStringLink = GetItemInfo(itemLink)
+        if itemStringLink then
+            local _, _, gem1, gem2, gem3 = string.find(itemStringLink, "item:%d*:%d*:(%d*):(%d*):(%d*)")
+            return gem1, gem2, gem3
         end
     end
 

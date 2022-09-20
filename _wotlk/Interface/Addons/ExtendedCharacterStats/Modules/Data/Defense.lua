@@ -13,8 +13,6 @@ local LEVEL_70_MAX_SKILL = 350
 local CRIT_IMMUNITY_CAP = 5.6
 -- Every 25 defense reduce the chance to be critically hit by 1 %
 local DEFENSE_FOR_CRIT_REDUCTION = 25
--- Every 39.4231 resilience reduce the chance to be critically hit by 1 %
-local RESILIENCE_FOR_CRIT_REDUCTION = 39.4231
 
 
 ---@return number
@@ -26,14 +24,18 @@ end
 ---@return number
 function _Defense:GetCritReduction()
     local defSkillRank, defSkillModifier = _Defense:GetDefenseValues()
-    local resilience = Data:GetResilienceRating()
 
     local defBonus = defSkillRank + defSkillModifier
 
     local talentBonus = 0
     if classId == Data.DRUID then
-        local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 16)
-        talentBonus = points * 1 -- 0-3% from Survival of the Fittest
+        if ECS.IsWotlk then
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 18)
+            talentBonus = points * 2 -- 0-6% from Survival of the Fittest
+        else
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 16)
+            talentBonus = points * 1 -- 0-3% from Survival of the Fittest
+        end
     end
 
     -- Only the defense value above 350 counts towards crit immunity
@@ -41,7 +43,7 @@ function _Defense:GetCritReduction()
     if critReductionFromDefense < 0 then
         critReductionFromDefense = 0
     end
-    local critReducingFromResilience = resilience / RESILIENCE_FOR_CRIT_REDUCTION
+    local critReducingFromResilience = GetCombatRatingBonus(15)
 
     return critReductionFromDefense + critReducingFromResilience + talentBonus
 end
@@ -61,6 +63,15 @@ end
 ---@return string
 function Data:GetCritReduction()
     return DataUtils:Round(_Defense:GetCritReduction(), 2) .. "%"
+end
+
+---@return string
+function Data:GetAvoidance()
+    local defenseRank, defenseModifier = _Defense:GetDefenseValues()
+    local enemyAttackRating = (UnitLevel("player")) * 5
+    local enemyMissChance = 5 + (((defenseRank + defenseModifier) - enemyAttackRating) * .04)
+    local avoidance = enemyMissChance + GetDodgeChance() + GetParryChance() + GetBlockChance()
+    return DataUtils:Round(avoidance, 2) .. "%"
 end
 
 ---@return number
@@ -87,7 +98,7 @@ function _Defense:GetDefenseValues()
         end
     end
 
-    if ECS.IsTBC then
+    if ECS.IsWotlk then
         skillModifier = skillModifier + math.floor(GetCombatRatingBonus(CR_DEFENSE_SKILL))
     end
 

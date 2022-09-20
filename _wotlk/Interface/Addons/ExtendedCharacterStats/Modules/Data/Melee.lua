@@ -50,34 +50,41 @@ end
 function _Melee:GetHitTalentBonus()
     local mod = 0
 
-    if classId == Data.WARRIOR and ECS.IsTBC then
-        local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 17)
+    if classId == Data.WARRIOR and ECS.IsWotlk then
+        local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 18)
         mod = points * 1 -- 0-3% Precision
     end
 
-    if classId == Data.HUNTER then
-        local _, _, _, _, points, _, _, _ = GetTalentInfo(3, 12)
-        mod = points * 1 -- 0-3% Surefooted
+    if ECS.IsWotlk and classId == Data.HUNTER then
+        local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 27)
+        mod = points * 1 -- 0-3% Focused Aim
     end
 
     if classId == Data.SHAMAN then
-        local _, _, _, _, naturesGuidance, _, _, _ = GetTalentInfo(3, 6)
-        mod = naturesGuidance * 1 -- 0-3% Nature's Guidance
-
-        if ECS.IsTBC and Data:GetMeleeAttackSpeedOffHand() > 0 then
-            local _, _, _, _, dualWielding, _, _, _ = GetTalentInfo(2, 17)
-            mod = mod + dualWielding * 2 -- 0-6% Dual Wielding Specialization
+        if ECS.IsWotlk then
+            if Data:GetMeleeAttackSpeedOffHand() > 0 then
+                local _, _, _, _, dualWielding, _, _, _ = GetTalentInfo(2, 19)
+                mod = mod + dualWielding * 2 -- 0-6% Dual Wielding Specialization
+            end
+        else
+            local _, _, _, _, naturesGuidance, _, _, _ = GetTalentInfo(3, 6)
+            mod = naturesGuidance * 1 -- 0-3% Nature's Guidance
         end
     end
 
-    if classId == Data.PALADIN then
+    if (not ECS.IsWotlk) and classId == Data.PALADIN then
         local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 3)
         mod = points * 1 -- 0-3% Precision
     end
 
     if classId == Data.ROGUE then
-        local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 6)
-        mod = points * 1 -- 0-5% Precision
+        if ECS.IsWotlk then
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 1)
+            mod = points * 1 -- 0-5% Precision
+        else
+            local _, _, _, _, points, _, _, _ = GetTalentInfo(2, 6)
+            mod = points * 1 -- 0-5% Precision
+        end
     end
 
     return mod
@@ -114,10 +121,14 @@ function Data:MeleeHitMissChanceSameLevel()
 
     local missChance
     if DataUtils:IsShapeshifted() then
-        missChance = 6
+        missChance = 5
     else
         missChance = DataUtils:GetMissChanceByDifference(mainBase + mainMod, enemyDefenseValue)
     end
+
+    if Data:GetMeleeAttackSpeedOffHand() > 0 then
+		missChance = missChance + 19;
+	end
 
     local hitValue = _Melee:GetHitRatingBonus()
     if hitValue then -- This needs to be checked because on dungeon entering it becomes nil
@@ -146,6 +157,10 @@ function Data:MeleeHitMissChanceBossLevel()
         missChance = DataUtils:GetMissChanceByDifference(mainBase + mainMod, enemyDefenseValue)
     end
 
+	if Data:GetMeleeAttackSpeedOffHand() > 0 then
+		missChance = missChance + 19;
+	end
+
     local hitValue = _Melee:GetHitRatingBonus()
     if hitValue then -- This needs to be checked because on dungeon entering it becomes nil
         missChance = missChance - hitValue
@@ -165,3 +180,28 @@ function Data:GetExpertise()
     local expertise, _ = GetExpertise()
     return DataUtils:Round(expertise, 0)
 end
+
+---@return number
+function Data:GetExpertiseRating()
+    local expertiseRating = GetCombatRating(CR_EXPERTISE)
+    return DataUtils:Round(expertiseRating, 0)
+end
+
+---@return number
+function Data:GetArmorPenetration()
+    local armorPenetration = GetArmorPenetration()
+    return DataUtils:Round(armorPenetration, 0)
+end
+
+---@return number
+function Data:GetMeleeHasteRating()
+    local hasteRating = GetCombatRating(CR_HASTE_MELEE)
+    return DataUtils:Round(hasteRating, 0)
+end
+
+---@return string
+function Data:GetMeleeHasteBonus()
+    local hasteBonus = GetCombatRatingBonus(CR_HASTE_MELEE)
+    return DataUtils:Round(hasteBonus, 2) .. "%"
+end
+

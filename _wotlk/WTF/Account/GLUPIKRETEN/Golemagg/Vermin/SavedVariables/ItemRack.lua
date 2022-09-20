@@ -20,8 +20,8 @@ ItemRackUser = {
 				[16] = "24020:805:::::::66:::::::::",
 				[17] = "25823:805:::::::66:::::::::",
 			},
-			["icon"] = 135033,
 			["key"] = "SHIFT-1",
+			["icon"] = 135033,
 			["old"] = {
 			},
 		},
@@ -48,7 +48,7 @@ ItemRackUser = {
 	},
 	["Hidden"] = {
 	},
-	["EnableEvents"] = "ON",
+	["CurrentSet"] = "dps",
 	["SetMenuWrap"] = "OFF",
 	["ItemsUsed"] = {
 	},
@@ -58,10 +58,10 @@ ItemRackUser = {
 		["Set"] = {
 		},
 	},
-	["Alpha"] = 1,
-	["EnableQueues"] = "ON",
 	["Queues"] = {
 	},
+	["EnableQueues"] = "ON",
+	["Alpha"] = 1,
 	["MenuScale"] = 1.2026047706604,
-	["CurrentSet"] = "dps",
+	["EnableEvents"] = "ON",
 }
