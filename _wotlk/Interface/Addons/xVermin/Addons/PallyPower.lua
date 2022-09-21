@@ -1,9 +1,14 @@
 local _, xVermin = ...
 local ib, numQuests
+local count = 0
 
 C_Timer.NewTicker(
 	1,
 	function(self)
+		if (count > 10) then
+			self:Cancel()
+		end
+
 		local frame = PallyPowerBlessingsFrame
 		if frame then
 			if not frame.SetBackdrop then

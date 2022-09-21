@@ -1,8 +1,12 @@
 local _, xVermin = ...
+local count = 0
 
 C_Timer.NewTicker(
 	1,
 	function(self)
+		if (count > 10) then
+			self:Cancel()
+		end
 		if RXPFrame then
 			RXPFrame:HookScript(
 				'OnUpdate',
