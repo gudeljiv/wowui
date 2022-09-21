@@ -71,7 +71,7 @@ Helpers/ErrorsFilter.lua
 Helpers/FastLoot.lua
 Helpers/Interrupt.lua
 Helpers/ItemID.lua
-Helpers/Loot.lua
+Helpers/LootHelper.lua
 Helpers/PlayerTargetSetMark.lua
 Helpers/SkinBuffs.lua
 Helpers/TooltipSpellID.lua

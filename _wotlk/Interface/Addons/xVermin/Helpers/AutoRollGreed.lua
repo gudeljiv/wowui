@@ -12,7 +12,7 @@ fr:SetScript(
 		local _, name, _, quality, bop, _, _, canDE = GetLootRollItemInfo(id)
 		if quality == 2 then
 			ConfirmLootRoll(id, canDE and 3 or 2)
-		-- print("You rolled on the item with name: " .. name )
+			ChatFrame7:AddMessage('You rolled greed on the item with name', name)
 		end
 	end
 )
