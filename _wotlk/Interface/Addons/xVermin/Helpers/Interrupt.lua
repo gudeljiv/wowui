@@ -127,5 +127,5 @@ end
 local f = CreateFrame('Frame')
 f:RegisterEvent('UNIT_SPELLCAST_START')
 f:RegisterEvent('UNIT_SPELLCAST_CHANNEL_START')
-f:RegisterEvent('UNIT_SPELLCAST_INTERRUPTIBLE')
+-- f:RegisterEvent('UNIT_SPELLCAST_INTERRUPTIBLE')
 f:SetScript('OnEvent', Interrupt)

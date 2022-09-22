@@ -17,7 +17,6 @@ Frames/InspectFrame.lua
 Frames/KillCount.lua
 Frames/LootFrame.lua
 Frames/MailBoxFrame.lua
-Frames/MailBoxFrame.lua
 Frames/MerchantFrame.lua
 Frames/PlayerPetTargetHealthPercentage.lua
 Frames/RaidFrames.lua
@@ -34,6 +33,7 @@ Reputation/Reputation.lua
 
 Addons/ChocolateBar.lua
 Addons/LFG.lua
+Addons/Minimap.lua
 Addons/nMainBar.lua
 Addons/PallyPower.lua
 Addons/Questie.lua

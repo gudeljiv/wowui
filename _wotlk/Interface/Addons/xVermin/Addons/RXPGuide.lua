@@ -8,21 +8,16 @@ C_Timer.NewTicker(
 			self:Cancel()
 		end
 		if RXPFrame then
-			RXPFrame:HookScript(
-				'OnLoad',
-				function(self)
-					if not self.SetBackdrop then
-						Mixin(self, BackdropTemplateMixin)
-					end
+			if not RXPFrame.SetBackdrop then
+				Mixin(RXPFrame, BackdropTemplateMixin)
+			end
 
-					self:ClearAllPoints()
-					self:SetPoint('BOTTOMRIGHT', 'ChatFrame3', 'BOTTOMLEFT', 0, -10)
-					self.ClearAllPoints = function()
-					end
-					self.SetPoint = function()
-					end
-				end
-			)
+			RXPFrame:ClearAllPoints()
+			RXPFrame:SetPoint('BOTTOMRIGHT', 'ChatFrame3', 'BOTTOMLEFT', 0, -10)
+			RXPFrame.ClearAllPoints = function()
+			end
+			RXPFrame.SetPoint = function()
+			end
 
 			self:Cancel()
 		end

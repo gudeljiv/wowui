@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 5880,
 	["lastSanitation"] = 3,
-	["session"] = 5877,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -1349,20 +1349,20 @@ BugGrabberDB = {
 		}, -- [170]
 		{
 			["message"] = " (null)",
-			["session"] = 5326,
 			["time"] = "2022/04/11 11:49:12",
+			["session"] = 5326,
 			["counter"] = 15,
 		}, -- [171]
 		{
 			["message"] = "  (null)",
-			["session"] = 5326,
 			["time"] = "2022/04/13 16:37:53",
+			["session"] = 5326,
 			["counter"] = 4,
 		}, -- [172]
 		{
 			["message"] = "   (null)",
-			["session"] = 5326,
 			["time"] = "2022/06/02 15:20:51",
+			["session"] = 5326,
 			["counter"] = 1,
 		}, -- [173]
 		{
@@ -1772,62 +1772,62 @@ BugGrabberDB = {
 		}, -- [224]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-enUS.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [225]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-deDE.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [226]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esES.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [227]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esMX.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [228]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-frFR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [229]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-itIT.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [230]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-koKR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [231]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ptBR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [232]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ruRU.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [233]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-zhCN.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [234]
 		{
@@ -2111,8 +2111,8 @@ BugGrabberDB = {
 		}, -- [270]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\xVermin-54000.lua is empty.",
-			["time"] = "2022/09/07 12:54:52",
 			["session"] = 5507,
+			["time"] = "2022/09/07 12:54:52",
 			["counter"] = 3,
 		}, -- [271]
 		{
@@ -2205,8 +2205,8 @@ BugGrabberDB = {
 		}, -- [282]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Addons/nMainBar.lua is empty.",
-			["time"] = "2022/09/07 13:53:00",
 			["session"] = 5527,
+			["time"] = "2022/09/07 13:53:00",
 			["counter"] = 3,
 		}, -- [283]
 		{
@@ -2875,8 +2875,8 @@ BugGrabberDB = {
 		}, -- [368]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Helpers/Chat.lua is empty.",
-			["session"] = 5820,
 			["time"] = "2022/09/19 19:24:24",
+			["session"] = 5820,
 			["counter"] = 3,
 		}, -- [369]
 		{
@@ -2912,19 +2912,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [373]
 		{
-			["message"] = "(null)",
-			["session"] = 5854,
-			["time"] = "2022/03/09 13:39:43",
-			["counter"] = 58,
-		}, -- [374]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:181: invalid order function for sorting",
 			["time"] = "2022/09/20 16:56:04",
 			["locals"] = "(*temporary) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n}\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:255\n(*temporary) = <table> {\n conj = false\n name = \"Zangar Caps\"\n lvl = 55\n id = 27859\n hp = 4320\n}\n(*temporary) = <table> {\n conj = false\n name = \"Mag'har Grainbread\"\n lvl = 55\n id = 27855\n hp = 4320\n}\n",
 			["stack"] = "[string \"=[C]\"]: in function `sort'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/BestFood.lua\"]:181: in function `Sorted'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/BestFood.lua\"]:111: in function `UpdateMacros'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/BestFood.lua\"]:52: in function <Interface\\AddOns\\xVermin\\Helpers/BestFood.lua:47>",
 			["session"] = 5863,
 			["counter"] = 20,
-		}, -- [375]
+		}, -- [374]
 		{
 			["message"] = "Usage: local position = C_DeathInfo.GetCorpseMapPosition(uiMapID)",
 			["time"] = "2022/09/20 18:08:13",
@@ -2932,7 +2926,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `GetCorpseMapPosition'\n[string \"@Interface\\AddOns\\RXPGuides\\map.lua\"]:759: in function <Interface\\AddOns\\RXPGuides\\map.lua:730>\n[string \"@Interface\\AddOns\\RXPGuides\\map.lua\"]:980: in function `UpdateGotoSteps'\n[string \"@Interface\\AddOns\\RXPGuides\\RXPGuides-v4.2.11.lua\"]:757: in function <Interface\\AddOns\\RXPGuides\\RXPGuides.lua:681>",
 			["session"] = 5866,
 			["counter"] = 6,
-		}, -- [376]
+		}, -- [375]
 		{
 			["message"] = "Interface\\AddOns\\ExtVendor\\ExtVendor-1.8.8.lua:795: attempt to index global 'MerchantExtraCurrencyInset' (a nil value)",
 			["time"] = "2022/09/20 18:45:34",
@@ -2940,7 +2934,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\ExtVendor\\ExtVendor-1.8.8.lua\"]:795: in function `ExtVendor_RebuildMerchantFrame'\n[string \"@Interface\\AddOns\\ExtVendor\\ExtVendor-1.8.8.lua\"]:79: in function `ExtVendor_OnLoad'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 5867,
 			["counter"] = 1,
-		}, -- [377]
+		}, -- [376]
 		{
 			["message"] = "...ns\\ExtVendor\\QuickVendorConfig\\QuickVendorConfig.lua:132: attempt to index global 'ExtVendor_QVConfigFrame_ItemDropGlobalWhitelistButton' (a nil value)",
 			["time"] = "2022/09/20 18:45:34",
@@ -2948,7 +2942,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\ExtVendor\\QuickVendorConfig\\QuickVendorConfig.lua\"]:132: in function `ExtVendor_QVConfig_OnLoad'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 5867,
 			["counter"] = 1,
-		}, -- [378]
+		}, -- [377]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'whoaThickFrames_BCC' tried to call the protected function 'CompactPartyFrameMember5:Show()'.",
 			["time"] = "2022/09/20 21:14:06",
@@ -2956,7 +2950,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_Wrath\\FrameXML\\CompactUnitFrame.lua\"]:358: in function `CompactUnitFrame_UpdateVisible'\n[string \"@Interface_Wrath\\FrameXML\\CompactUnitFrame.lua\"]:291: in function <Interface_Wrath\\FrameXML\\CompactUnitFrame.lua:289>\n[string \"=[C]\"]: in function `CompactUnitFrame_UpdateAll'\n[string \"@Interface_Wrath\\FrameXML\\CompactUnitFrame.lua\"]:124: in function <Interface_Wrath\\FrameXML\\CompactUnitFrame.lua:53>\n[string \"=[C]\"]: ?",
 			["session"] = 5877,
 			["counter"] = 1,
-		}, -- [379]
+		}, -- [378]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'nBuff' tried to call the protected function 'TargetFrameToT:Show()'.",
 			["time"] = "2022/04/16 18:15:48",
@@ -2964,6 +2958,20 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
 			["session"] = 5877,
 			["counter"] = 16,
+		}, -- [379]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Helpers/Interrupt.lua:130: Attempt to register unknown event \"UNIT_SPELLCAST_INTERRUPTIBLE\"",
+			["time"] = "2022/09/22 15:15:09",
+			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"UNIT_SPELLCAST_INTERRUPTIBLE\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RegisterEvent'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/Interrupt.lua\"]:130: in main chunk",
+			["session"] = 5878,
+			["counter"] = 1,
 		}, -- [380]
+		{
+			["message"] = "(null)",
+			["time"] = "2022/03/09 13:39:43",
+			["session"] = 5878,
+			["counter"] = 61,
+		}, -- [381]
 	},
 }
