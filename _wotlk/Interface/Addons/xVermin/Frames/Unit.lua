@@ -11,14 +11,15 @@ if xVermin.Class == 'HUNTER' then
 	ac.text = ac:CreateFontString(nil, 'ARTWORK')
 	ac.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
 	ac.text:SetPoint('CENTER', CustomContainer_Combat, 'CENTER', 0, -1)
+	ac.text:SetText('')
+
+	CharacterAmmoSlotCount:Hide()
 
 	PlayerFrame:HookScript(
 		'OnUpdate',
 		function()
-			ac.text:SetText('')
 			local ammoCount = GetInventoryItemCount('player', GetInventorySlotInfo('AmmoSlot'))
 			ac.text:SetText(ammoCount)
-			CharacterAmmoSlotCount:Hide()
 		end
 	)
 end
