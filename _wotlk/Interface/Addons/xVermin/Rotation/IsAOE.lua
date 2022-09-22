@@ -43,43 +43,6 @@ f:SetBackdrop(
 	}
 )
 
-local buffs = {
-	['Feign Dead'] = true
-}
-
--- white -> skip
--- green -> single target
--- red -> aoe
-PlayerFrame:HookScript(
-	'OnUpdate',
-	function()
-		haveBuff = false
-
-		for buff in pairs(buffs) do
-			for i = 1, 40 do
-				local B = UnitBuff('player', i)
-				if B and B == buff then
-					haveBuff = true
-				end
-			end
-		end
-
-		if IsAltKeyDown() or ChatFrame1EditBox:IsVisible() or IsMounted() or haveBuff then
-			f:SetBackdropColor(1, 1, 1, 1) -- white
-		else
-			if InCombatLockdown() then
-				if AOE() then
-					f:SetBackdropColor(1, 0, 0, 1) -- red
-				else
-					f:SetBackdropColor(0, 1, 0, 1) -- green
-				end
-			else
-				f:SetBackdropColor(1, 1, 1, 1) -- white
-			end
-		end
-	end
-)
-
 local f = CreateFrame('Frame', 'RotationFrame2', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
 f:SetWidth(7)
 f:SetHeight(7)
@@ -152,3 +115,40 @@ f:SetBackdrop(
 )
 f:SetBackdropColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 -- f:SetBackdropColor(1, 1, 1, 1)
+
+local buffs = {
+	['Feign Dead'] = true
+}
+
+-- white -> skip
+-- green -> single target
+-- red -> aoe
+PlayerFrame:HookScript(
+	'OnUpdate',
+	function()
+		haveBuff = false
+
+		for buff in pairs(buffs) do
+			for i = 1, 40 do
+				local B = UnitBuff('player', i)
+				if B and B == buff then
+					haveBuff = true
+				end
+			end
+		end
+
+		if IsAltKeyDown() or ChatFrame1EditBox:IsVisible() or IsMounted() or haveBuff then
+			f:SetBackdropColor(1, 1, 1, 1) -- white
+		else
+			if InCombatLockdown() then
+				if AOE() then
+					f:SetBackdropColor(1, 0, 0, 1) -- red
+				else
+					f:SetBackdropColor(0, 1, 0, 1) -- green
+				end
+			else
+				f:SetBackdropColor(1, 1, 1, 1) -- white
+			end
+		end
+	end
+)

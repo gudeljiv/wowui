@@ -15,7 +15,7 @@ C_Timer.NewTicker(
 				Mixin(frame, BackdropTemplateMixin)
 			end
 			frame:HookScript(
-				'OnUpdate',
+				'OnLoad',
 				function(self)
 					self.TopEdge:Hide()
 					self.BottomEdge:Hide()

@@ -9,7 +9,7 @@ C_Timer.NewTicker(
 		end
 		if RXPFrame then
 			RXPFrame:HookScript(
-				'OnUpdate',
+				'OnLoad',
 				function(self)
 					if not self.SetBackdrop then
 						Mixin(self, BackdropTemplateMixin)

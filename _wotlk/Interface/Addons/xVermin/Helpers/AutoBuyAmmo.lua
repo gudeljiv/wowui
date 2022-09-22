@@ -1,7 +1,7 @@
 local _, xVermin = ...
 
 local function BuyAmmo()
-	local index, TypeOfAmmo, BowEquipped, GunEquipped
+	local index, TypeOfAmmo, BowEquipped, GunEquipped, MaxAmmoInInventory, MaxStackSize
 	local numItems = GetMerchantNumItems()
 	local playerLevel = UnitLevel('player')
 
@@ -54,30 +54,30 @@ local function BuyAmmo()
 			return
 		end
 
-		local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemIcon, itemSellPrice, itemClassID, itemSubClassID, bindType, expacID, itemSetID, isCraftingReagent =
-			GetItemInfo(GetMerchantItemLink(item))
+		local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemIcon, itemSellPrice, itemClassID, itemSubClassID, bindType, expacID, itemSetID, isCraftingReagent = GetItemInfo(GetMerchantItemLink(item))
 
 		if itemSubType == TypeOfAmmo and isUsable and itemMinLevel <= playerLevel then
 			index = item
+			MaxStackSize = itemStackCount
 		end
 	end
 
 	local buy = true
 	if index and buy then
-		local maxammo = 200
+		MaxAmmoInInventory = MaxStackSize
 		if xVermin.Class == 'HUNTER' then
-			maxammo = GetContainerNumSlots(1) * 200
+			MaxAmmoInInventory = GetContainerNumSlots(1) * MaxStackSize
 		end
 		local ammoCount = GetInventoryItemCount('player', GetInventorySlotInfo('AmmoSlot'))
-		local needtobuy = maxammo - ammoCount
+		local needtobuy = MaxAmmoInInventory - ammoCount
 		if needtobuy > 0 then
-			local remainder = needtobuy % 200
-			local buys = (needtobuy - remainder) / 200
+			local remainder = needtobuy % MaxStackSize
+			local buys = (needtobuy - remainder) / MaxStackSize
 			if remainder > 0 then
 				BuyMerchantItem(index, remainder)
 			end
 			for _ = 1, buys do
-				BuyMerchantItem(index, 200)
+				BuyMerchantItem(index, MaxStackSize)
 			end
 		end
 	end

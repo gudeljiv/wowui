@@ -278,17 +278,19 @@ end
 
 local tf = CreateFrame('Frame')
 tf:RegisterEvent('PLAYER_TARGET_CHANGED')
+tf:RegisterEvent('UNIT_AURA', 'target')
 tf:SetScript('OnEvent', SkinTarget)
-TargetFrame:HookScript('OnUpdate', SkinTarget)
-hooksecurefunc('TargetFrame_UpdateAuras', SkinTarget)
+-- TargetFrame:HookScript('OnUpdate', SkinTarget)
+-- hooksecurefunc('TargetFrame_UpdateAuras', SkinTarget)
 
 local ff = CreateFrame('Frame')
 ff:RegisterEvent('PLAYER_FOCUS_CHANGED')
+ff:RegisterEvent('UNIT_AURA', 'focus')
 ff:SetScript('OnEvent', SkinFocus)
-FocusFrame:HookScript('OnUpdate', SkinFocus)
+-- FocusFrame:HookScript('OnUpdate', SkinFocus)
 -- hooksecurefunc("FocusFrame_UpdateAuras", SkinFocus)
 
 local pf = CreateFrame('Frame')
 pf:RegisterUnitEvent('UNIT_AURA', 'pet')
 pf:SetScript('OnEvent', SkinPet)
-PetFrame:HookScript('OnUpdate', SkinPet)
+-- PetFrame:HookScript('OnUpdate', SkinPet)

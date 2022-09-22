@@ -12,9 +12,6 @@ Frames/CharacterFrame.lua
 Frames/CustomContainers.lua
 Frames/DefaultFramesCustomScale.lua
 Frames/DefaultFramesDarker.lua
-Frames/EnhancedCraftFrame.lua
-# Frames/EnhancedTrainerFrame.lua
-Frames/EnhancedProfessionsFrame.lua
 Frames/GroopLootFrame.lua
 Frames/InspectFrame.lua
 Frames/KillCount.lua
@@ -35,21 +32,14 @@ Experience/MobsToKill.lua
 
 Reputation/Reputation.lua
 
-Addons/AdiBags.lua
 Addons/ChocolateBar.lua
-Addons/Examiner.lua
 Addons/LFG.lua
-Addons/MonkeyQuest.lua
 Addons/nMainBar.lua
-Addons/Omen.lua
-Addons/Puggle.lua
-Addons/Questie.lua
 Addons/PallyPower.lua
+Addons/Questie.lua
 Addons/RangeDisplay.lua
-Addons/Recount.lua
 Addons/RXPGuide.lua
-Addons/TinyThreat.lua
-Addons/TrinketMenu.lua
+# Addons/WeakAuras.lua
 
 
 GarbageCollector.lua
@@ -57,9 +47,7 @@ RotBot.lua
 
 SpellCount/SpellCount.lua
 
-Helpers/AutoCarrot.lua
 Helpers/AutoBuyAmmo.lua
-Helpers/AutoDismount.lua
 Helpers/AutoRepair.lua
 Helpers/AutoRollGreed.lua
 Helpers/BestFood.lua
@@ -73,12 +61,13 @@ Helpers/FastLoot.lua
 Helpers/Interrupt.lua
 Helpers/ItemID.lua
 Helpers/LootHelper.lua
-Helpers/PlayerTargetSetMark.lua
+Helpers/MaxStackSize.lua
+# Helpers/PlayerTargetSetMark.lua
 Helpers/SkinBuffs.lua
 Helpers/TooltipSpellID.lua
 Helpers/TrackingIcon.lua
 Helpers/UIScale.lua
-Helpers/SortBags.lua
+# Helpers/SortBags.lua
 
 xVermin.lua
 
