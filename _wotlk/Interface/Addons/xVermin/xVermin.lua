@@ -52,47 +52,24 @@ f:SetScript(
 			CastingBarFrame.Text:ClearAllPoints()
 			CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)
 
-			PetFrame:HookScript(
-				'OnLoad',
-				function(self)
-					PetFrameHealthBarText:SetFont(xVermin.Config.font.atari, 10, 'THINOUTLINE')
-					PetFrameHealthBarText:SetPoint('TOPRIGHT', PetFrameHealthBar, 'TOPRIGHT', 0, 2)
-					PetFrameHealthBarText:SetPoint('TOPRIGHT', PetFrameHealthBar, 'TOPRIGHT', 2, -22)
-					PetFrameHealthBarText.SetPoint = function()
-					end
-					PetFrameManaBarText:SetFont(xVermin.Config.font.atari, 10, 'THINOUTLINE')
-					PetFrameManaBarText:SetPoint('TOPRIGHT', PetFrameManaBar, 'TOPRIGHT', 0, 0)
-					PetFrameManaBarText.SetPoint = function()
-					end
-					PetFrameHealthBarText:Hide()
-					PetFrameManaBarText:Hide()
-					PetName:Hide()
-				end
-			)
+			PlayerFrame:ClearAllPoints()
+			PlayerFrame:SetPoint('CENTER', UIParent, 'CENTER', -250, -96)
+			PlayerFrame.ClearAllPoints = function()
+			end
+			PlayerFrame.SetPoint = function()
+			end
 
-			PlayerFrame:HookScript(
-				'OnLoad',
-				function(self)
-					self:ClearAllPoints()
-					self:SetPoint('CENTER', UIParent, 'CENTER', -250, -96)
-					self.ClearAllPoints = function()
-					end
-					self.SetPoint = function()
-					end
+			PlayerFrameManaBarText:SetScale(0.8)
 
-					PlayerFrameAlternateManaBar:Hide()
-					PlayerFrameAlternateManaBar:HookScript(
-						'OnShow',
-						function(self)
-							self:Hide()
-						end
-					)
-					PlayerFrameManaBarText:SetScale(0.8)
+			PlayerFrameAlternateManaBar:HookScript(
+				'OnShow',
+				function(self)
+					self:Hide()
 				end
 			)
 
 			TargetFrame:HookScript(
-				'OnLoad',
+				'OnShow',
 				function(self)
 					TargetFrame:ClearAllPoints()
 					TargetFrame:SetPoint('CENTER', UIParent, 'CENTER', 250, -96)
@@ -105,7 +82,7 @@ f:SetScript(
 			)
 
 			FocusFrame:HookScript(
-				'OnLoad',
+				'OnShow',
 				function(self)
 					FocusFrame:ClearAllPoints()
 					FocusFrame:SetPoint('CENTER', TargetFrame, 'CENTER', 200, 100)
@@ -114,6 +91,24 @@ f:SetScript(
 					FocusFrame.SetPoint = function()
 					end
 					FocusFrameTextureFrame.ManaBarText:SetScale(0.8)
+				end
+			)
+
+			PetFrame:HookScript(
+				'OnShow',
+				function(self)
+					PetFrameHealthBarText:SetFont(xVermin.Config.font.atari, 10, 'THINOUTLINE')
+					PetFrameHealthBarText:SetPoint('TOPRIGHT', PetFrameHealthBar, 'TOPRIGHT', 0, 2)
+					-- PetFrameHealthBarText:SetPoint('TOPRIGHT', PetFrameHealthBar, 'TOPRIGHT', 2, -22)
+					PetFrameHealthBarText.SetPoint = function()
+					end
+					PetFrameManaBarText:SetFont(xVermin.Config.font.atari, 10, 'THINOUTLINE')
+					PetFrameManaBarText:SetPoint('TOPRIGHT', PetFrameManaBar, 'TOPRIGHT', 0, 0)
+					PetFrameManaBarText.SetPoint = function()
+					end
+					PetFrameHealthBarText:Hide()
+					PetFrameManaBarText:Hide()
+					PetName:Hide()
 				end
 			)
 		end

@@ -31,7 +31,7 @@ skills["warrior"] = [
     {"name": "shield wall", "key": "t"},
     {"name": "hamstring", "key": "1"},
     {"name": "healthstone", "key": "x"},
-    {"name": "healing potion", "key": "y"},
+    {"name": "healing potion", "key": "y"}
 ]
 
 skills["warlock"] = [
@@ -48,7 +48,12 @@ skills["hunter"] = [
     {"name": "mend pet", "key": "v"},
     {"name": "kill command", "key": "4"},
     {"name": "serpent sting", "key": "9", "modifier": "alt"},
-    {"name": "arcane shot", "key": "f11"}
+    {"name": "arcane shot", "key": "f11"},
+    {"name": "aspect of the hawk", "key": "f1"},
+    {"name": "aspect of the viper", "key": "f5"},
+    {"name": "lifeblood", "key": "z"},
+    {"name": "healthstone", "key": "x"},
+    {"name": "fel blossom", "key": "y"}
 ]
 
 skills["druid"] = [
@@ -66,6 +71,9 @@ skills["druid"] = [
     {"name": "barkskin", "key": "g"},
     {"name": "mangle", "key": "9", "modifier": "alt"},
     {"name": "survival instincts", "key": "d", "modifier": "alt"},
+    {"name": "lifeblood", "key": "z"},
+    {"name": "healthstone", "key": "x"},
+    {"name": "healing potion", "key": "y"}
 ]
 
 skills["death knight"] = [
@@ -81,6 +89,8 @@ skills["death knight"] = [
     {"name": "icebound fortitude", "key": "t"},
     {"name": "horn of winter", "key": "f4"},
     {"name": "rune strike", "key": "9", "modifier": "alt"},
+    {"name": "healthstone", "key": "x"},
+    {"name": "healing potion", "key": "y"}
 ]
 
 skills["priest"] = [

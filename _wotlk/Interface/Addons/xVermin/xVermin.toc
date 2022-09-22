@@ -67,7 +67,7 @@ Helpers/SkinBuffs.lua
 Helpers/TooltipSpellID.lua
 Helpers/TrackingIcon.lua
 Helpers/UIScale.lua
-# Helpers/SortBags.lua
+Helpers/SortBags.lua
 
 xVermin.lua
 

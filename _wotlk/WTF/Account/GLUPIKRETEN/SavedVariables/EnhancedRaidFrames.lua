@@ -15,8 +15,8 @@ EnhancedRaidFramesDB = {
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
-			["backgroundAlpha"] = 0.6000000000000001,
 			["rangeAlpha"] = 0.2,
+			["backgroundAlpha"] = 0.6000000000000001,
 			["showDebuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["showBuffs"] = false,
@@ -26,8 +26,8 @@ EnhancedRaidFramesDB = {
 		["Mxyz - Golemagg"] = {
 		},
 		["Default"] = {
-			["backgroundAlpha"] = 0.5,
 			["rangeAlpha"] = 0.2,
+			["backgroundAlpha"] = 0.5,
 		},
 		["Vermin - Golemagg"] = {
 			{
@@ -58,9 +58,9 @@ EnhancedRaidFramesDB = {
 				["mineOnly"] = true,
 			},
 			["rangeAlpha"] = 0.6000000000000001,
-			["showDebuffs"] = false,
 			["showBuffs"] = false,
 			["showRaidIcons"] = false,
+			["showDebuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["backgroundAlpha"] = 0.7000000000000001,
 		},
@@ -85,8 +85,8 @@ EnhancedRaidFramesDB = {
 			}, -- [3]
 			{
 				["indicatorSize"] = 22,
-				["showText"] = "countdown",
 				["textSize"] = 12,
+				["showText"] = "countdown",
 				["colorTextByDebuff"] = true,
 			}, -- [4]
 			[7] = {

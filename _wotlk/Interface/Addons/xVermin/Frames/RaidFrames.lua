@@ -11,15 +11,16 @@
 hooksecurefunc(
 	'CompactUnitFrame_UpdateName',
 	function(frame)
-		local name = frame.name
 		local playerName = GetUnitName(frame.unit, true)
 
-		name:ClearAllPoints()
-		name:SetPoint('TOPLEFT', 5, -5)
+		if frame.name then
+			frame.name:ClearAllPoints()
+			frame.name:SetPoint('TOPLEFT', 5, -5)
+		end
 
 		if (playerName) then
 			local nameWithoutRealm = gsub(playerName, '%-[^|]+', '')
-			name:SetText(nameWithoutRealm)
+			frame.name:SetText(nameWithoutRealm)
 		end
 	end
 )

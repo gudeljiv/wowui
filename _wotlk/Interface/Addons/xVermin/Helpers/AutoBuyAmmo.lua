@@ -70,14 +70,19 @@ local function BuyAmmo()
 		end
 		local ammoCount = GetInventoryItemCount('player', GetInventorySlotInfo('AmmoSlot'))
 		local needtobuy = MaxAmmoInInventory - ammoCount
+
 		if needtobuy > 0 then
-			local remainder = needtobuy % MaxStackSize
-			local buys = (needtobuy - remainder) / MaxStackSize
+			local remainder = needtobuy % 255
+			local buys = (needtobuy - remainder) / 255
+
 			if remainder > 0 then
 				BuyMerchantItem(index, remainder)
 			end
-			for _ = 1, buys do
-				BuyMerchantItem(index, MaxStackSize)
+
+			if buys > 0 then
+				for _ = 1, buys do
+					BuyMerchantItem(index, 255)
+				end
 			end
 		end
 	end

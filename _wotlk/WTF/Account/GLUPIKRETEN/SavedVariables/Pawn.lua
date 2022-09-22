@@ -385,6 +385,9 @@ PawnCommon = {
 		},
 		["\"Classic\":DRUID4"] = {
 			["PerCharacterOptions"] = {
+				["Moolatz-Golemagg"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ff7c0a",
 			["LocalizedName"] = "Druid: Restoration",
@@ -399,6 +402,9 @@ PawnCommon = {
 		},
 		["\"Classic\":DRUID2"] = {
 			["PerCharacterOptions"] = {
+				["Moolatz-Golemagg"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ff7c0a",
 			["LocalizedName"] = "Druid: Feral (Damage)",
@@ -413,6 +419,9 @@ PawnCommon = {
 		},
 		["\"Classic\":DRUID3"] = {
 			["PerCharacterOptions"] = {
+				["Moolatz-Golemagg"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ff7c0a",
 			["LocalizedName"] = "Druid: Feral (Tank)",
@@ -427,6 +436,9 @@ PawnCommon = {
 		},
 		["\"Classic\":DRUID1"] = {
 			["PerCharacterOptions"] = {
+				["Moolatz-Golemagg"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ff7c0a",
 			["LocalizedName"] = "Druid: Balance",
