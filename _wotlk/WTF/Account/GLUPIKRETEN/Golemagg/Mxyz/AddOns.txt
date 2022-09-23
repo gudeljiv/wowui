@@ -172,3 +172,4 @@ Details_DataStorage: enabled
 Details_Streamer: enabled
 Details_Vanguard: enabled
 FarmHud_TrailPath: enabled
+Pawn: enabled

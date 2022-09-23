@@ -15,11 +15,11 @@ EnhancedRaidFramesDB = {
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
-			["rangeAlpha"] = 0.2,
 			["backgroundAlpha"] = 0.6000000000000001,
-			["showDebuffs"] = false,
-			["showDispellableDebuffs"] = false,
+			["rangeAlpha"] = 0.2,
 			["showBuffs"] = false,
+			["showDispellableDebuffs"] = false,
+			["showDebuffs"] = false,
 		},
 		["Vermina - Golemagg"] = {
 		},
@@ -85,8 +85,8 @@ EnhancedRaidFramesDB = {
 			}, -- [3]
 			{
 				["indicatorSize"] = 22,
-				["textSize"] = 12,
 				["showText"] = "countdown",
+				["textSize"] = 12,
 				["colorTextByDebuff"] = true,
 			}, -- [4]
 			[7] = {
@@ -98,9 +98,9 @@ EnhancedRaidFramesDB = {
 				["auras"] = "Regrowth",
 			},
 			["rangeAlpha"] = 0.5,
-			["showDebuffs"] = false,
 			["showRaidIcons"] = false,
 			["showBuffs"] = false,
+			["showDebuffs"] = false,
 			["showDispellableDebuffs"] = false,
 			["backgroundAlpha"] = 0.7000000000000001,
 		},

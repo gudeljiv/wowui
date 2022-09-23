@@ -131,7 +131,7 @@ TidyPlates_Quatre: disabled
 BuyEmAllClassic: enabled
 PitBull4: enabled
 PitBull4_DogTagTexts: enabled
-Pawn: disabled
+Pawn: enabled
 Masque_Caith: disabled
 Masque: disabled
 Masque_Entropy: disabled

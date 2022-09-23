@@ -18,7 +18,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
-
 local addonName, addon = ...
 local L = addon.L
 
@@ -39,16 +38,20 @@ local ALL_FONTS = LSM:HashTable(FONT)
 -- Helpers
 --------------------------------------------------------------------------------
 
-local ALL_NAMES = setmetatable({}, {
-	__index = function(self, file)
-		for n, f in pairs(ALL_FONTS) do
-			self[f] = n
-			if f == file then
-				return n
+local ALL_NAMES =
+	setmetatable(
+	{},
+	{
+		__index = function(self, file)
+			for n, f in pairs(ALL_FONTS) do
+				self[f] = n
+				if f == file then
+					return n
+				end
 			end
 		end
-	end
-})
+	}
+)
 
 local function GetFontSettings(font)
 	local file, size = font:GetFont()
@@ -59,19 +62,19 @@ end
 -- Font prototype
 --------------------------------------------------------------------------------
 
-local proto = CreateFont(addonName.."BaseFont")
-local meta = { __index = proto }
+local proto = CreateFont(addonName .. 'BaseFont')
+local meta = {__index = proto}
 
 function proto:SetSetting(info, value, ...)
 	local name, db = info[#info], self:GetDB()
-	if name == "color" then
+	if name == 'color' then
 		local r, g, b = value, ...
 		if db.r == r or db.g == g or db.b == b then
 			return
 		end
 		db.r, db.g, db.b = r, g, b
 		self:SetTextColor(r, g, b)
-	elseif name == "name" or name == "size" then
+	elseif name == 'name' or name == 'size' then
 		if db[name] == value then
 			return
 		end
@@ -80,14 +83,14 @@ function proto:SetSetting(info, value, ...)
 	else
 		return
 	end
-	if type(self.SettingHook) == "function" then
+	if type(self.SettingHook) == 'function' then
 		self:SettingHook()
 	end
 end
 
 function proto:GetSetting(info)
 	local name, db = info[#info], self:GetDB()
-	if name == "color" then
+	if name == 'color' then
 		return db.r, db.g, db.b
 	else
 		return db[name]
@@ -104,7 +107,7 @@ function proto:ResetSettings()
 	local db = self:GetDB()
 	db.name, db.size, db.r, db.g, db.b = GetFontSettings(self.template)
 	self:ApplySettings()
-	if type(self.SettingHook) == "function" then
+	if type(self.SettingHook) == 'function' then
 		self:SettingHook()
 	end
 end
@@ -131,7 +134,7 @@ end
 
 function addon:GetFontDefaults(font)
 	local name, size, r, g, b = GetFontSettings(font)
-	return { name = name, size = size, r = r, g = g, b = b }
+	return {name = name, size = size, r = r, g = g, b = b}
 end
 
 --------------------------------------------------------------------------------
@@ -156,7 +159,7 @@ function addon:CreateFontOptions(font, title, order)
 				type = 'select',
 				order = 10,
 				dialogControl = 'LSM30_Font',
-				values = ALL_FONTS,
+				values = ALL_FONTS
 			},
 			size = {
 				name = L['Size'],
@@ -164,21 +167,21 @@ function addon:CreateFontOptions(font, title, order)
 				order = 20,
 				min = mediumSize - 8,
 				max = mediumSize + 8,
-				step = 4,
+				step = 4
 			},
 			color = {
 				name = L['Color'],
 				type = 'color',
 				order = 30,
-				hasAlpha = false,
+				hasAlpha = false
 			},
 			reset = {
 				name = L['Reset'],
 				type = 'execute',
 				order = 40,
-				disabled  = 'IsDefault',
-				func = 'ResetSettings',
-			},
-		},
+				disabled = 'IsDefault',
+				func = 'ResetSettings'
+			}
+		}
 	}
 end

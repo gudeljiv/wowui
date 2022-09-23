@@ -61,6 +61,14 @@ f:SetScript(
 
 			PlayerFrameManaBarText:SetScale(0.8)
 
+			PlayerFrameAlternateManaBar:RegisterEvent('PLAYER_ENTERING_WORLD')
+			PlayerFrameAlternateManaBar:SetScript(
+				'OnEvent',
+				function(self, event)
+					self:Hide()
+					self:UnregisterEvent('PLAYER_ENTERING_WORLD')
+				end
+			)
 			PlayerFrameAlternateManaBar:HookScript(
 				'OnShow',
 				function(self)

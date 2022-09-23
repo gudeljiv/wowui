@@ -18,7 +18,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
-
 local addonName, addon = ...
 
 --<GLOBALS
@@ -57,19 +56,19 @@ local ITEM_SIZE = addon.ITEM_SIZE
 -- Button initialization
 --------------------------------------------------------------------------------
 
-local buttonClass, buttonProto = addon:NewClass("ItemButton", "Button", "ContainerFrameItemButtonTemplate", "ABEvent-1.0")
+local buttonClass, buttonProto = addon:NewClass('ItemButton', 'Button', 'ContainerFrameItemButtonTemplate', 'ABEvent-1.0')
 
-local childrenNames = { "Cooldown", "IconTexture", "IconQuestTexture", "Count", "Stock", "NormalTexture", "NewItemTexture" }
+local childrenNames = {'Cooldown', 'IconTexture', 'IconQuestTexture', 'Count', 'Stock', 'NormalTexture', 'NewItemTexture'}
 
 function buttonProto:OnCreate()
 	local name = self:GetName()
-	for i, childName in pairs(childrenNames ) do
+	for i, childName in pairs(childrenNames) do
 		if not self[childName] then
-			self[childName] = _G[name..childName]
+			self[childName] = _G[name .. childName]
 		end
 	end
-	self:RegisterForDrag("LeftButton")
-	self:RegisterForClicks("LeftButtonUp","RightButtonUp")
+	self:RegisterForDrag('LeftButton')
+	self:RegisterForClicks('LeftButtonUp', 'RightButtonUp')
 	self:SetScript('OnShow', self.OnShow)
 	self:SetScript('OnHide', self.OnHide)
 	self:SetWidth(ITEM_SIZE)
@@ -102,7 +101,7 @@ function buttonProto:OnRelease()
 end
 
 function buttonProto:ToString()
-	return format("Button-%s-%s", tostring(self.bag), tostring(self.slot))
+	return format('Button-%s-%s', tostring(self.bag), tostring(self.slot))
 end
 
 function buttonProto:IsLocked()
@@ -117,8 +116,8 @@ end
 -- Generic bank button sub-type
 --------------------------------------------------------------------------------
 
-local bankButtonClass, bankButtonProto = addon:NewClass("BankItemButton", "ItemButton")
-bankButtonClass.frameTemplate = "BankItemButtonGenericTemplate"
+local bankButtonClass, bankButtonProto = addon:NewClass('BankItemButton', 'ItemButton')
+bankButtonClass.frameTemplate = 'BankItemButtonGenericTemplate'
 
 function bankButtonProto:OnAcquire(container, bag, slot)
 	self.GetInventorySlot = nil -- Remove the method added by the template
@@ -155,10 +154,14 @@ end
 
 -- Pre-spawn a bunch of buttons, when we are out of combat
 -- because buttons created in combat do not work well
-hooksecurefunc(addon, 'OnInitialize', function()
-	addon:Debug('Prespawning buttons')
-	containerButtonPool:PreSpawn(160)
-end)
+hooksecurefunc(
+	addon,
+	'OnInitialize',
+	function()
+		addon:Debug('Prespawning buttons')
+		containerButtonPool:PreSpawn(160)
+	end
+)
 
 --------------------------------------------------------------------------------
 -- Model data
@@ -197,7 +200,7 @@ end
 
 local BANK_BAG_IDS = addon.BAG_IDS.BANK
 function buttonProto:IsBank()
-	return not not BANK_BAG_IDS[self.bag]
+	return not (not BANK_BAG_IDS[self.bag])
 end
 
 function buttonProto:IsStack()
@@ -254,7 +257,7 @@ function buttonProto:OnHide()
 end
 
 function buttonProto:UNIT_QUEST_LOG_CHANGED(event, unit)
-	if unit == "player" then
+	if unit == 'player' then
 		self:UpdateBorder(event)
 	end
 end
@@ -274,21 +277,23 @@ function buttonProto:FullUpdate()
 	local bag, slot = self.bag, self.slot
 	self.itemId = GetContainerItemID(bag, slot)
 	self.itemLink = GetContainerItemLink(bag, slot)
-	self.hasItem = not not self.itemId
+	self.hasItem = not (not self.itemId)
 	self.texture = GetContainerItemInfo(bag, slot)
 	self.bagFamily = bag == KEYRING_CONTAINER and 256 or select(2, GetContainerNumFreeSlots(bag))
 	self:Update()
 end
 
 function buttonProto:Update()
-	if not self:CanUpdate() then return end
+	if not self:CanUpdate() then
+		return
+	end
 	local icon = self.IconTexture
 	if self.texture then
 		icon:SetTexture(self.texture)
-		icon:SetTexCoord(0,1,0,1)
+		icon:SetTexCoord(0, 1, 0, 1)
 	else
 		icon:SetTexture([[Interface\BUTTONS\UI-EmptySlot]])
-		icon:SetTexCoord(12/64, 51/64, 12/64, 51/64)
+		icon:SetTexCoord(12 / 64, 51 / 64, 12 / 64, 51 / 64)
 	end
 	local tag = (not self.itemId or addon.db.profile.showBagType) and addon:GetFamilyTag(self.bagFamily)
 	if tag then
@@ -313,6 +318,7 @@ function buttonProto:UpdateCount()
 	self.count = count
 	if count > 1 then
 		self.Count:SetText(count)
+		self.Count:SetScale(0.8)
 		self.Count:Show()
 	else
 		self.Count:Hide()
@@ -335,9 +341,9 @@ end
 function buttonProto:UpdateSearch()
 	local _, _, _, _, _, _, _, isFiltered = GetContainerItemInfo(self.bag, self.slot)
 	if isFiltered then
-		self.searchOverlay:Show();
+		self.searchOverlay:Show()
 	else
-		self.searchOverlay:Hide();
+		self.searchOverlay:Hide()
 	end
 end
 
@@ -363,11 +369,11 @@ local function GetBorder(bag, slot, itemId, settings)
 	local _, _, _, quality = GetContainerItemInfo(bag, slot)
 	if quality == ITEM_QUALITY_POOR and settings.dimJunk then
 		local v = 1 - 0.5 * settings.qualityOpacity
-		return true, v, v, v, 1, nil, nil, nil, nil, "MOD"
+		return true, v, v, v, 1, nil, nil, nil, nil, 'MOD'
 	end
 	local color = quality ~= ITEM_QUALITY_COMMON and BAG_ITEM_QUALITY_COLORS[quality]
 	if color then
-		return [[Interface\Buttons\UI-ActionButton-Border]], color.r, color.g, color.b, settings.qualityOpacity, 14/64, 49/64, 15/64, 50/64, "ADD"
+		return [[Interface\Buttons\UI-ActionButton-Border]], color.r, color.g, color.b, settings.qualityOpacity, 14 / 64, 49 / 64, 15 / 64, 50 / 64, 'ADD'
 	end
 end
 
@@ -380,20 +386,20 @@ function buttonProto:UpdateBorder(isolatedEvent)
 		texture, r, g, b, a, x1, x2, y1, y2, blendMode = GetBorder(self.bag, self.slot, self.itemLink or self.itemId, addon.db.profile)
 		itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(self.itemLink)
 
-		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureNormal")
+		self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureNormal')
 		self:SetBeautyBorderColor(1, 1, 1, 1)
 
 		if (itemRarity and itemRarity > 1) then
-			self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
+			self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
 			self:SetBeautyBorderColor(r, g, b, 1)
 		end
 
-		if (itemType and itemType == "Quest") then
-			self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
+		if (itemType and itemType == 'Quest') then
+			self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureWhite')
 			self:SetBeautyBorderColor(1, 0.964, 0, 1)
 		end
 	else
-		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureNormal")
+		self:SetBeautyBorderTexture('Interface\\AddOns\\xVermin\\Media\\textureNormal')
 		self:SetBeautyBorderColor(1, 1, 1, 1)
 	end
 
@@ -409,17 +415,17 @@ function buttonProto:UpdateBorder(isolatedEvent)
 			border:SetVertexColor(r or 1, g or 1, b or 1, a or 1)
 		end
 		border:SetTexCoord(x1 or 0, x2 or 1, y1 or 0, y2 or 1)
-		border:SetBlendMode(blendMode or "BLEND")
+		border:SetBlendMode(blendMode or 'BLEND')
 		-- border:Show()
 		border:Hide()
 	end
 
 	if self.JunkIcon then
 		local quality = self.hasItem and select(3, GetItemInfo(self.itemLink or self.itemId))
-		self.JunkIcon:SetShown(quality == LE_ITEM_QUALITY_POOR and addon:GetInteractingWindow() == "MERCHANT")
+		self.JunkIcon:SetShown(quality == LE_ITEM_QUALITY_POOR and addon:GetInteractingWindow() == 'MERCHANT')
 	end
 	if isolatedEvent then
-		addon:SendMessage("AdiBags_UpdateBorder", self)
+		addon:SendMessage('AdiBags_UpdateBorder', self)
 	end
 end
 
@@ -427,8 +433,8 @@ end
 -- Item stack button
 --------------------------------------------------------------------------------
 
-local stackClass, stackProto = addon:NewClass("StackButton", "Frame", "ABEvent-1.0")
-addon:CreatePool(stackClass, "AcquireStackButton")
+local stackClass, stackProto = addon:NewClass('StackButton', 'Frame', 'ABEvent-1.0')
+addon:CreatePool(stackClass, 'AcquireStackButton')
 
 function stackProto:OnCreate()
 	self:SetWidth(ITEM_SIZE)
@@ -546,7 +552,9 @@ function stackProto:OnHide()
 end
 
 function stackProto:SetVisibleSlot(slotId)
-	if slotId == self.slotId then return end
+	if slotId == self.slotId then
+		return
+	end
 	self.slotId = slotId
 	local button = self.button
 	local mouseover = false
@@ -575,7 +583,9 @@ function stackProto:SetVisibleSlot(slotId)
 end
 
 function stackProto:Update()
-	if not self:CanUpdate() then return end
+	if not self:CanUpdate() then
+		return
+	end
 	self:UpdateVisibleSlot()
 	self:UpdateCount()
 	if self.button then

@@ -11,20 +11,20 @@ RXPCData = {
 		[120] = "Garadar, Nagrand",
 		[128] = "Shattrath, Terokkar Forest",
 		[102] = "Falcon Watch, Hellfire Peninsula",
-		[141] = "Spinebreaker Ridge, Hellfire Peninsula",
-		[130] = "Hellfire Peninsula, The Dark Portal, Horde",
-		[99] = "Thrallmar, Hellfire Peninsula",
 		[151] = "Swamprat Post, Zangarmarsh",
+		[99] = "Thrallmar, Hellfire Peninsula",
+		[130] = "Hellfire Peninsula, The Dark Portal, Horde",
+		[141] = "Spinebreaker Ridge, Hellfire Peninsula",
 	},
 	["xprate"] = 1.5,
 	["JoyousJourneys"] = true,
-	["hardcore"] = false,
-	["SoM"] = 1,
+	["GA"] = false,
+	["frameHeight"] = 125.0000152587891,
 	["currentGuideName"] = "",
 	["stepSkip"] = {
 	},
-	["frameHeight"] = 125.0000152587891,
-	["GA"] = false,
+	["SoM"] = 1,
+	["hardcore"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -49,17 +49,17 @@ RXPCTrackingData = {
 							["xp"] = 169144,
 							["count"] = 72,
 						},
-						["Hellfire Peninsula"] = {
-							["xp"] = 5520,
-							["count"] = 6,
+						["The Slave Pens"] = {
+							["xp"] = 144060,
+							["count"] = 110,
 						},
 						["Terokkar Forest"] = {
 							["xp"] = 90129,
 							["count"] = 51,
 						},
-						["The Slave Pens"] = {
-							["xp"] = 144060,
-							["count"] = 110,
+						["Hellfire Peninsula"] = {
+							["xp"] = 5520,
+							["count"] = 6,
 						},
 					},
 					["timestamp"] = {
@@ -67,10 +67,10 @@ RXPCTrackingData = {
 							["monthDay"] = 22,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 5,
+							["minute"] = 27,
 							["year"] = 2022,
 							["hour"] = 19,
-							["minute"] = 27,
+							["weekday"] = 5,
 						},
 						["finished"] = 799807,
 					},
@@ -91,12 +91,12 @@ RXPCTrackingData = {
 							["monthDay"] = 22,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 5,
+							["minute"] = 27,
 							["year"] = 2022,
 							["hour"] = 19,
-							["minute"] = 27,
+							["weekday"] = 5,
 						},
-						["started"] = 1663868956,
+						["started"] = 1663951579,
 					},
 					["quests"] = {
 					},
@@ -162,13 +162,13 @@ RXPCComms = {
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 920,
 				},
-				["Hulari"] = {
-					["timePlayed"] = 1545.662000000011,
-					["class"] = "ROGUE",
-					["xp"] = 920,
+				["Wixë"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "WARLOCK",
+					["xp"] = 1268,
 				},
-				["Nabito"] = {
-					["timePlayed"] = 85.72200000006706,
+				["Rompido"] = {
+					["timePlayed"] = 71.13700000010431,
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 1376,
 				},
@@ -187,14 +187,19 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 1268,
 				},
-				["Ypers"] = {
-					["timePlayed"] = 1344.199000000022,
+				["Litenshaman"] = {
+					["timePlayed"] = 1389.503000000026,
 					["class"] = "SHAMAN",
-					["xp"] = 1376,
+					["xp"] = 1268,
 				},
 				["Jaffrost"] = {
 					["timePlayed"] = 1545.662000000011,
 					["class"] = "DEATHKNIGHT",
+					["xp"] = 920,
+				},
+				["Hulari"] = {
+					["timePlayed"] = 1545.662000000011,
+					["class"] = "ROGUE",
 					["xp"] = 920,
 				},
 				["Brutikus"] = {
@@ -202,20 +207,15 @@ RXPCComms = {
 					["class"] = "WARRIOR",
 					["xp"] = 1376,
 				},
-				["Litenshaman"] = {
-					["timePlayed"] = 1389.503000000026,
+				["Ypers"] = {
+					["timePlayed"] = 1344.199000000022,
 					["class"] = "SHAMAN",
-					["xp"] = 1268,
-				},
-				["Rompido"] = {
-					["timePlayed"] = 71.13700000010431,
-					["class"] = "DEATHKNIGHT",
 					["xp"] = 1376,
 				},
-				["Wixë"] = {
-					["timePlayed"] = 883.7549999998882,
-					["class"] = "WARLOCK",
-					["xp"] = 1268,
+				["Nabito"] = {
+					["timePlayed"] = 85.72200000006706,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 1376,
 				},
 			},
 		},

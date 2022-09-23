@@ -73,3 +73,7 @@ VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 /use 13
 /use 14
 END
+VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@focus,exists,noharm][@pet,exists][]Misdirection
+END

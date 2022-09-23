@@ -1,8 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0607,
-	["LastPlayerFullName"] = "Moolatz-Golemagg",
-	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 9479,
@@ -71,6 +69,8 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:19106::::::::58:::::::::|h[Ice Barbed Spear]|h|r",
 		}, -- [16]
 	},
+	["AutoSelectScales"] = false,
+	["LastPlayerFullName"] = "Moolatz-Golemagg",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {
