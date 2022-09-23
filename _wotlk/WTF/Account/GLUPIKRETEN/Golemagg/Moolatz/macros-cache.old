@@ -61,6 +61,11 @@ VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 /cast [form:3] Mangle (Cat)
 /cast Innervate
 END
+VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
+#showtoltip
+/startattack
+/cast [stealth] Ravage; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][help][] Regrowth
+END
 VER 3 0000000001000007 "VuhDoDCShieldData" "Ability_Repair"
 P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1DM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
 END
