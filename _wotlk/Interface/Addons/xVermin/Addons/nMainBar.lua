@@ -24,6 +24,8 @@ C_Timer.NewTicker(
 		if (count > 10) then
 			self:Cancel()
 		end
+		count = count + 1
+
 		if StanceButton1 then
 			-- StanceButton1:HookScript("OnUpdate", function(self)
 			StanceButton1:ClearAllPoints()
@@ -45,6 +47,8 @@ C_Timer.NewTicker(
 		if (count > 10) then
 			self:Cancel()
 		end
+		count = count + 1
+
 		if MultiBarBottomLeft then
 			-- MultiBarBottomLeftButton1:HookScript("OnUpdate", function(self)
 			MultiBarBottomLeftButton1:ClearAllPoints()
@@ -66,6 +70,8 @@ C_Timer.NewTicker(
 		if (count > 10) then
 			self:Cancel()
 		end
+		count = count + 1
+
 		if MultiBarRight then
 			MultiBarRightButton1:SetScale(0.8)
 			MultiBarRightButton2:SetScale(0.8)
@@ -99,6 +105,8 @@ C_Timer.NewTicker(
 		if (count > 10) then
 			self:Cancel()
 		end
+		count = count + 1
+
 		if MultiBarLeft then
 			MultiBarLeftButton1:SetScale(0.8)
 			MultiBarLeftButton2:SetScale(0.8)
@@ -132,6 +140,7 @@ C_Timer.NewTicker(
 		if (count > 10) then
 			self:Cancel()
 		end
+		count = count + 1
 
 		if PetActionButton1 then
 			PetActionButton1:Show()
@@ -148,31 +157,3 @@ C_Timer.NewTicker(
 		end
 	end
 )
-
--- C_Timer.NewTicker(1, function(self)
--- 	if MultiBarRight then
--- 		MultiBarRight:SetScale(0.8)
--- 		MultiBarRight.SetScale = function() end
--- 		self:Cancel()
--- 	end
--- end)
-
--- C_Timer.NewTicker(1, function(self)
--- 	if MultiBarLeft then
--- 		MultiBarLeft:SetScale(0.8)
--- 		MultiBarLeft.SetScale = function() end
--- 		self:Cancel()
--- 	end
--- end)
-
--- C_Timer.NewTicker(1, function(self)
--- 	if MainMenuBarExpText then
--- 		MainMenuBarExpText:HookScript("OnUpdate", function(self)
--- 			self:ClearAllPoints()
--- 			self:SetPoint("RIGHT", MainMenuExpBar, "RIGHT", -10, 2)
--- 			self.ClearAllPoints = function() end
--- 			self.SetPoint = function() end
--- 		end)
--- 		self:Cancel()
--- 	end
--- end)

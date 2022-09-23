@@ -7,6 +7,7 @@ C_Timer.NewTicker(
 		if (count > 10) then
 			self:Cancel()
 		end
+		count = count + 1
 
 		if (RangeDisplayMainFrame_playertarget) then
 			RangeDisplayMainFrame_playertarget:SetPoint('CENTER', UIParent, 'CENTER', 0, -20)
@@ -27,6 +28,7 @@ C_Timer.NewTicker(
 		if (count > 10) then
 			self:Cancel()
 		end
+		count = count + 1
 
 		if (RangeDisplayMainFrame_mouseover) then
 			RangeDisplayMainFrame_mouseover:SetPoint('CENTER', UIParent, 'CENTER', 0, -35)

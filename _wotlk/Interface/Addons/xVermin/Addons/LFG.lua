@@ -7,6 +7,7 @@ C_Timer.NewTicker(
 		if (count > 10) then
 			self:Cancel()
 		end
+		count = count + 1
 
 		if (GroupBulletinBoardFrame) then
 			if not GroupBulletinBoardFrame.SetBackdrop then

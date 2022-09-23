@@ -9,6 +9,8 @@ C_Timer.NewTicker(
 		if (count > 10) then
 			self:Cancel()
 		end
+		count = count + 1
+
 		if Questie_BaseFrame then
 			if not Questie_BaseFrame.SetBackdrop then
 				Mixin(Questie_BaseFrame, BackdropTemplateMixin)
@@ -23,17 +25,17 @@ C_Timer.NewTicker(
 
 					_, numQuests = GetNumQuestLogEntries()
 					if numQuests > 0 then
-						if not self:IsVisible() then
-							self:Show()
+						if not Questie_BaseFrame:IsVisible() then
+							Questie_BaseFrame:Show()
 						end
 					else
-						if self:IsVisible() then
-							self:Hide()
+						if Questie_BaseFrame:IsVisible() then
+							Questie_BaseFrame:Hide()
 						end
 					end
 
-					self:CreateBeautyBorder(8)
-					self:SetBackdrop(
+					Questie_BaseFrame:CreateBeautyBorder(8)
+					Questie_BaseFrame:SetBackdrop(
 						{
 							bgFile = 'Interface\\Buttons\\WHITE8x8',
 							edgeFile = '',
@@ -43,16 +45,16 @@ C_Timer.NewTicker(
 							insets = {left = 0, right = 0, top = 0, bottom = 0}
 						}
 					)
-					self:SetBackdropColor(0, 0, 0, 0.6)
-					self:ClearAllPoints()
-					self:SetPoint('TOPRIGHT', 'CustomContainer_2', 'BOTTOMRIGHT', 0, -10)
-					self.ClearAllPoints = function()
+					Questie_BaseFrame:SetBackdropColor(0, 0, 0, 0.6)
+					Questie_BaseFrame:ClearAllPoints()
+					Questie_BaseFrame:SetPoint('TOPRIGHT', 'CustomContainer_2', 'BOTTOMRIGHT', 0, -10)
+					Questie_BaseFrame.ClearAllPoints = function()
 					end
-					self.SetPoint = function()
+					Questie_BaseFrame.SetPoint = function()
 					end
 
-					if (self:GetWidth() < width) then
-						self:SetWidth(width)
+					if (Questie_BaseFrame:GetWidth() < width) then
+						Questie_BaseFrame:SetWidth(width)
 					end
 
 					TomTomCrazyArrow:SetPoint('TOPRIGHT', self, 'TOPLEFT', -20, -10)

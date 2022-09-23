@@ -7,6 +7,8 @@ C_Timer.NewTicker(
 		if (count > 10) then
 			self:Cancel()
 		end
+		count = count + 1
+
 		if RXPFrame then
 			if not RXPFrame.SetBackdrop then
 				Mixin(RXPFrame, BackdropTemplateMixin)

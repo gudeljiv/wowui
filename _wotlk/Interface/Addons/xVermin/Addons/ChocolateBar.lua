@@ -8,6 +8,7 @@ C_Timer.NewTicker(
 		if (count > 10) then
 			self:Cancel()
 		end
+		count = count + 1
 
 		if (ChocolateBar1 and CustomContainer_1) then
 			ChocolateBar1:ClearAllPoints()
@@ -25,6 +26,7 @@ C_Timer.NewTicker(
 		if (count > 10) then
 			self:Cancel()
 		end
+		count = count + 1
 
 		if (ChocolateBar2 and CustomContainer_1) then
 			ChocolateBar2:ClearAllPoints()

@@ -8,6 +8,7 @@ C_Timer.NewTicker(
 		if (count > 10) then
 			self:Cancel()
 		end
+		count = count + 1
 
 		local frame = PallyPowerBlessingsFrame
 		if frame then

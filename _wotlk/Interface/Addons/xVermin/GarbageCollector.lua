@@ -5,7 +5,7 @@ C_Timer.NewTicker(
 	300,
 	function()
 		if (not UnitInBattleground('player')) then
-			collectgarbage()
+			-- collectgarbage()
 			counter = counter + 1
 		end
 	end

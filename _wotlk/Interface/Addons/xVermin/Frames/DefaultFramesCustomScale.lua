@@ -1,4 +1,5 @@
 local _, xVermin = ...
+local count
 
 for i, v in pairs(
 	{
@@ -27,9 +28,15 @@ for i, v in pairs(
 	end
 end
 
+count = 0
 C_Timer.NewTicker(
 	1,
 	function(self)
+		if (count > 10) then
+			self:Cancel()
+		end
+		count = count + 1
+
 		if LFGParentFrame then
 			LFGParentFrame:SetScale(1.2)
 			self:Cancel()
@@ -37,9 +44,15 @@ C_Timer.NewTicker(
 	end
 )
 
+count = 0
 C_Timer.NewTicker(
 	1,
 	function(self)
+		if (count > 10) then
+			self:Cancel()
+		end
+		count = count + 1
+
 		if CraftFrame then
 			CraftFrame:SetScale(1.2)
 			self:Cancel()

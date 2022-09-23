@@ -4,15 +4,6 @@ local count
 Minimap:ClearAllPoints()
 Minimap:SetPoint('TOPRIGHT', UIParent, 'TOPRIGHT', -40, -40)
 
--- Minimap:HookScript(
--- 	'OnLoad',
--- 	function(self)
--- 		if not Minimap.SetBackdrop then
--- 			Mixin(Minimap, BackdropTemplateMixin)
--- 		end
--- 	end
--- )
-
 MiniMapWorldMapButton:HookScript(
 	'OnShow',
 	function(self)
