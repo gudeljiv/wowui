@@ -551,9 +551,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 347859,
-		["timeAtThisLevel"] = 192,
-		["timeStamp"] = 775814.934,
+		["total"] = 354604,
+		["timeAtThisLevel"] = 0,
+		["timeStamp"] = 176274,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -630,9 +630,9 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 846876,
-		["timeStamp"] = 785320.49,
-		["timeAtThisLevel"] = 112761,
+		["total"] = 856640,
+		["timeStamp"] = 168372.356,
+		["timeAtThisLevel"] = 122525,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,
@@ -677,9 +677,9 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 200755,
-		["timeStamp"] = 787219.014,
-		["timeAtThisLevel"] = 195009,
+		["total"] = 200808,
+		["timeStamp"] = 176526.963,
+		["timeAtThisLevel"] = 195062,
 	},
 	["Battlearm-Golemagg"] = {
 		["total"] = 87184,
