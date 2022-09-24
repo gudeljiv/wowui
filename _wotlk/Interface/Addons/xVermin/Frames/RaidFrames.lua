@@ -13,16 +13,12 @@ hooksecurefunc(
 	function(frame)
 		local playerName = GetUnitName(frame.unit, true)
 
-		if InCombatLockdown() then
-			return
-		end
-
-		if frame.name then
+		if frame.name and not InCombatLockdown() then
 			frame.name:ClearAllPoints()
 			frame.name:SetPoint('TOPLEFT', 5, -5)
 		end
 
-		if (playerName) then
+		if playerName then
 			local nameWithoutRealm = gsub(playerName, '%-[^|]+', '')
 			frame.name:SetText(nameWithoutRealm)
 		end
@@ -35,9 +31,13 @@ f:RegisterEvent('GROUP_ROSTER_UPDATE')
 f:SetScript(
 	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
-		-------------------------------------------
+		-- if InCombatLockdown() then
+		-- 	return
+		-- end
+
+		-----------------------------------------------------------------
 		-- Add Beauty Border to party and raid buffs icons
-		-------------------------------------------
+		-----------------------------------------------------------------
 		for member = 1, 5, 1 do
 			for buff = 1, 5, 1 do
 				if _G['CompactPartyFrameMember' .. member .. 'Buff' .. buff] then
