@@ -15,21 +15,22 @@ local stacks =
 
 local orig1 = GameTooltip:GetScript('OnTooltipSetItem')
 
-GameTooltip:SetScript(
-	'OnTooltipSetItem',
-	function(frame, ...)
-		assert(frame, "arg 1 is nil, someone isn't hooking correctly")
+-- GameTooltip:SetScript(
+-- 	'OnTooltipSetItem',
+-- 	function(frame, ...)
+-- 		assert(frame, "arg 1 is nil, someone isn't hooking correctly")
 
-		local _, link = frame:GetItem()
-		local stack = stacks[link]
-		local itemType, itemSubType, _, _, _, _, classID, subclassID = select(6, GetItemInfo(link))
+-- 		local _, link = frame:GetItem()
+-- 		local stack = stacks[link]
+-- 		local itemType, itemSubType, _, _, _, _, classID, subclassID = select(6, GetItemInfo(link))
+-- 		print(GetItemInfo(link))
 
-		-- if stack and stack > 0 and classID ~= 2 and classID ~= 4 and classID ~= 9 then
-		if stack and stack > 0 then
-			frame:AddLine('Max Stack Size: ' .. stack)
-		end
-		if orig1 then
-			return orig1(frame, ...)
-		end
-	end
-)
+-- 		-- if stack and stack > 0 and classID ~= 2 and classID ~= 4 and classID ~= 9 then
+-- 		if stack and stack > 1 then
+-- 			frame:AddLine('Max Stack Size: ' .. stack)
+-- 		end
+-- 		if orig1 then
+-- 			return orig1(frame, ...)
+-- 		end
+-- 	end
+-- )

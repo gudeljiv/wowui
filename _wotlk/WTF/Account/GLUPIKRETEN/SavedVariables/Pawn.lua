@@ -11,6 +11,8 @@ PawnCommon = {
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
+	["ShowSpecIcons"] = true,
+	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"Classic\":WARRIOR2"] = {
 			["PerCharacterOptions"] = {
@@ -204,22 +206,19 @@ PawnCommon = {
 			["UnenchantedColor"] = "b7698b",
 			["SpecID"] = 1,
 		},
-		["\"Classic\":PRIEST3"] = {
+		["\"Classic\":SHAMAN1"] = {
 			["PerCharacterOptions"] = {
-				["Mxyz-Golemagg"] = {
-					["Visible"] = true,
-				},
 			},
-			["Color"] = "ffffff",
-			["LocalizedName"] = "Priest: Shadow",
-			["ClassID"] = 5,
+			["Color"] = "0070dd",
+			["LocalizedName"] = "Shaman: Elemental",
+			["ClassID"] = 7,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = false,
 			["Provider"] = "Classic",
-			["UnenchantedColor"] = "bfbfbf",
-			["SpecID"] = 3,
+			["UnenchantedColor"] = "0054a5",
+			["SpecID"] = 1,
 		},
 		["\"Classic\":SHAMAN2"] = {
 			["PerCharacterOptions"] = {
@@ -466,19 +465,22 @@ PawnCommon = {
 			["UnenchantedColor"] = "b7698b",
 			["SpecID"] = 3,
 		},
-		["\"Classic\":SHAMAN1"] = {
+		["\"Classic\":PRIEST3"] = {
 			["PerCharacterOptions"] = {
+				["Mxyz-Golemagg"] = {
+					["Visible"] = true,
+				},
 			},
-			["Color"] = "0070dd",
-			["LocalizedName"] = "Shaman: Elemental",
-			["ClassID"] = 7,
+			["Color"] = "ffffff",
+			["LocalizedName"] = "Priest: Shadow",
+			["ClassID"] = 5,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = false,
 			["Provider"] = "Classic",
-			["UnenchantedColor"] = "0054a5",
-			["SpecID"] = 1,
+			["UnenchantedColor"] = "bfbfbf",
+			["SpecID"] = 3,
 		},
 		["\"Classic\":PRIEST2"] = {
 			["PerCharacterOptions"] = {
@@ -498,8 +500,6 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 	},
-	["ShowSocketingAdvisor"] = true,
-	["ShowSpecIcons"] = true,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,

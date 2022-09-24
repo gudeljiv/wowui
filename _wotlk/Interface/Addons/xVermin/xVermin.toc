@@ -31,6 +31,7 @@ Experience/MobsToKill.lua
 
 Reputation/Reputation.lua
 
+Addons/AdiBags.lua
 Addons/ChocolateBar.lua
 Addons/LFG.lua
 Addons/Minimap.lua

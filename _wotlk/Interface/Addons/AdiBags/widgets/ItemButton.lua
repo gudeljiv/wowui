@@ -318,7 +318,7 @@ function buttonProto:UpdateCount()
 	self.count = count
 	if count > 1 then
 		self.Count:SetText(count)
-		self.Count:SetScale(0.8)
+		-- self.Count:SetScale(0.8)
 		self.Count:Show()
 	else
 		self.Count:Hide()

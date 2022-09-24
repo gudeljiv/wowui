@@ -13,6 +13,10 @@ hooksecurefunc(
 	function(frame)
 		local playerName = GetUnitName(frame.unit, true)
 
+		if InCombatLockdown() then
+			return
+		end
+
 		if frame.name then
 			frame.name:ClearAllPoints()
 			frame.name:SetPoint('TOPLEFT', 5, -5)

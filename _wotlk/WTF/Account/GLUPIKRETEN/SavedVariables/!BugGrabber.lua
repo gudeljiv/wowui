@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 5970,
 	["lastSanitation"] = 3,
-	["session"] = 5945,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -1349,20 +1349,20 @@ BugGrabberDB = {
 		}, -- [170]
 		{
 			["message"] = " (null)",
-			["session"] = 5326,
 			["time"] = "2022/04/11 11:49:12",
+			["session"] = 5326,
 			["counter"] = 15,
 		}, -- [171]
 		{
 			["message"] = "  (null)",
-			["session"] = 5326,
 			["time"] = "2022/04/13 16:37:53",
+			["session"] = 5326,
 			["counter"] = 4,
 		}, -- [172]
 		{
 			["message"] = "   (null)",
-			["session"] = 5326,
 			["time"] = "2022/06/02 15:20:51",
+			["session"] = 5326,
 			["counter"] = 1,
 		}, -- [173]
 		{
@@ -1764,62 +1764,62 @@ BugGrabberDB = {
 		}, -- [223]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-enUS.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [224]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-deDE.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [225]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esES.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [226]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esMX.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [227]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-frFR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [228]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-itIT.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [229]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-koKR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [230]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ptBR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [231]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ruRU.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [232]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-zhCN.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [233]
 		{
@@ -2103,8 +2103,8 @@ BugGrabberDB = {
 		}, -- [269]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\xVermin-54000.lua is empty.",
-			["time"] = "2022/09/07 12:54:52",
 			["session"] = 5507,
+			["time"] = "2022/09/07 12:54:52",
 			["counter"] = 3,
 		}, -- [270]
 		{
@@ -2197,8 +2197,8 @@ BugGrabberDB = {
 		}, -- [281]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Addons/nMainBar.lua is empty.",
-			["time"] = "2022/09/07 13:53:00",
 			["session"] = 5527,
+			["time"] = "2022/09/07 13:53:00",
 			["counter"] = 3,
 		}, -- [282]
 		{
@@ -2859,8 +2859,8 @@ BugGrabberDB = {
 		}, -- [366]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Helpers/Chat.lua is empty.",
-			["session"] = 5820,
 			["time"] = "2022/09/19 19:24:24",
+			["session"] = 5820,
 			["counter"] = 3,
 		}, -- [367]
 		{
@@ -2984,34 +2984,58 @@ BugGrabberDB = {
 			["counter"] = 10,
 		}, -- [382]
 		{
-			["message"] = "Interface\\AddOns\\xVermin\\Frames/RaidFrames.lua:17: Attempt to access forbidden object from code tainted by an AddOn",
-			["time"] = "2022/09/22 18:29:50",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\xVermin\\Frames/RaidFrames.lua\"]:17: in function <Interface\\AddOns\\xVermin\\Frames/RaidFrames.lua:13>\n[string \"=[C]\"]: in function `CompactUnitFrame_UpdateName'\n[string \"@Interface_Wrath\\FrameXML\\CompactUnitFrame.lua\"]:299: in function <Interface_Wrath\\FrameXML\\CompactUnitFrame.lua:289>\n[string \"=[C]\"]: in function `CompactUnitFrame_UpdateAll'\n[string \"@Interface_Wrath\\FrameXML\\CompactUnitFrame.lua\"]:177: in function `CompactUnitFrame_SetUnit'\n[string \"@Interface_TBC\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua\"]:299: in function `OnAdded'\n[string \"@Interface_TBC\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua\"]:113: in function `OnNamePlateAdded'\n[string \"@Interface_TBC\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua\"]:48: in function <...C\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua:39>",
-			["session"] = 5915,
-			["counter"] = 4,
-		}, -- [383]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\Helpers/Interrupt.lua:8: Usage: TargetFrame:HookScript(\"frameScriptTypeName\", function[, bindingType])",
 			["time"] = "2022/09/22 20:42:00",
 			["locals"] = "(*temporary) = TargetFrame {\n 0 = <userdata>\n debuffs = TargetFrameDebuffs {\n }\n portrait = TargetFramePortrait {\n }\n showThreat = true\n raidTargetIcon = TargetFrameTextureFrameRaidTargetIcon {\n }\n highLevelTexture = TargetFrameTextureFrameHighLevelTexture {\n }\n petBattleIcon = TargetFrameTextureFramePetBattleIcon {\n }\n prestigePortrait = TargetFrameTextureFramePrestigePortrait {\n }\n showAuraCount = true\n showLeader = true\n healthbar = TargetFrameHealthBar {\n }\n pvpIcon = TargetFrameTextureFramePVPIcon {\n }\n questIcon = TargetFrameTextureFrameQuestIcon {\n }\n deadText = TargetFrameTextureFrameDeadText {\n }\n noTextPrefix = true\n buffs = TargetFrameBuffs {\n }\n nameBackground = TargetFrameNameBackground {\n }\n showLevel = true\n levelText = TargetFrameTextureFrameLevelText {\n }\n totFrame = TargetFrameToT {\n }\n leaderIcon = TargetFrameTextureFrameLeaderIcon {\n }\n auraRows = 0\n statusSign = -1\n unit = \"target\"\n showPVP = true\n spellbar = TargetFrameSpellBar {\n }\n name = TargetFrameTextureFrameName {\n }\n borderTexture = TargetFrameTextureFrameTexture {\n }\n showPortrait = true\n PowerBar = TargetFrameManaBar {\n }\n threatNumericIndicator = TargetFrameNumericalThreat {\n }\n statusCounter = 0\n HealthBar = TargetFrameHealthBar {\n }\n manabar = TargetFrameManaBar {\n }\n unconsciousText = TargetFrameTextureFrameUnconsciousText {\n }\n unitHPPercent = 1\n OnEvent = <function> defined @Interface_Wrath\\FrameXML\\TargetFrame.lua:150\n prestigeBadge = TargetFrameTextureFramePrestigeBadge {\n }\n threatIndicator = TargetFrameFlash {\n }\n menu = <function> defined @Interface_Wrath\\FrameXML\\TargetFrame.lua:101\n TOT_AURA_ROW_WIDTH = 101\n textureFrame = TargetFrameTextureFrame {\n }\n showClassification = true\n Background = TargetFrameBackground {\n }\n}\n(*temporary) = \"OnUpdate\"\n(*temporary) = nil\n",
 			["stack"] = "[string \"=[C]\"]: in function `HookScript'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/Interrupt.lua\"]:8: in main chunk",
 			["session"] = 5924,
 			["counter"] = 1,
-		}, -- [384]
+		}, -- [383]
 		{
 			["message"] = "(null)",
-			["session"] = 5924,
 			["time"] = "2022/03/09 13:39:43",
+			["session"] = 5924,
 			["counter"] = 64,
+		}, -- [384]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Helpers/MaxStackSize.lua:9: Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")",
+			["time"] = "2022/09/24 10:51:37",
+			["locals"] = "(*temporary) = nil\n",
+			["stack"] = "[string \"=[C]\"]: in function `GetItemInfo'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/MaxStackSize.lua\"]:9: in function <Interface\\AddOns\\xVermin\\Helpers/MaxStackSize.lua:8>\n[string \"@Interface\\AddOns\\xVermin\\Helpers/MaxStackSize.lua\"]:24: in function <Interface\\AddOns\\xVermin\\Helpers/MaxStackSize.lua:20>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetSpellByID'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Spells\\ClassSpellCache.lua\"]:193: in function `?'\n[string \"*:OnEnter\"]:10: in function <[string \"*:OnEnter\"]:1>",
+			["session"] = 5951,
+			["counter"] = 9,
 		}, -- [385]
 		{
 			["message"] = "...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:751: attempt to index local 'color' (a nil value)",
 			["time"] = "2022/02/17 22:46:39",
 			["locals"] = "numBatchAuctions = 52811\ntotalAuctions = 52811\nbutton = BrowseButton2 {\n 0 = <userdata>\n itemCount = 20\n bidAmount = 34580\n buyoutPrice = 6995960\n itemIndex = 2\n PriceTooltipFrame = <unnamed> {\n }\n}\nbuttonName = \"BrowseButton2\"\nbuttonHighlight = BrowseButton2Highlight {\n 0 = <userdata>\n}\niconTexture = BrowseButton1ItemIconTexture {\n 0 = <userdata>\n}\nitemName = BrowseButton2Name {\n 0 = <userdata>\n}\ncolor = nil\nitemCount = BrowseButton1ItemCount {\n 0 = <userdata>\n}\nmoneyFrame = BrowseButton1MoneyFrame {\n 0 = <userdata>\n vadjust = 0\n trialErrorButton = BrowseButton1MoneyFrameTrialErrorButton {\n }\n moneyType = \"AUCTION\"\n info = <table> {\n }\n small = 1\n staticMoney = 2296\n maxDisplayWidth = 146\n}\nyourBidText = BrowseButton1YourBidText {\n 0 = <userdata>\n}\nbuyoutFrame = BrowseButton1BuyoutFrame {\n 0 = <userdata>\n}\nbuyoutMoney = BrowseButton1BuyoutFrameMoney {\n 0 = <userdata>\n vadjust = 0\n trialErrorButton = BrowseButton1BuyoutFrameMoneyTrialErrorButton {\n }\n moneyType = \"AUCTION\"\n info = <table> {\n }\n small = 1\n staticMoney = 2499\n maxDisplayWidth = 146\n}\noffset = 0\nindex = 2\nisLastSlotEmpty = nil\nname = \"\"\ntexture = 134955\ncount = 1\nquality = -1\ncanUse = false\nlevel = 0\nlevelColHeader = nil\nminBid = 43995\nminIncrement = 0\nbuyoutPrice = 43995\nduration = 3\nbidAmount = 0\nhighBidder = false\nbidderFullName = nil\nowner = nil\nownerFullName = nil\nsaleStatus = 0\nitemId = 15894\nhasAllInfo = true\ndisplayedPrice = 2296\nrequiredBid = 2296\n(for index) = 2\n(for limit) = 8\n(for step) = 1\ni = 2\nshouldHide = false\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = BrowseButton2Name {\n 0 = <userdata>\n}\n(*temporary) = \"\"\n(*temporary) = <userdata>\n(*temporary) = false\n(*temporary) = 0\n(*temporary) = nil\n(*temporary) = 43995\n(*temporary) = 0\n(*temporary) = 43995\n(*temporary) = 0\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 15894\n(*temporary) = true\n(*temporary) = \"attempt to index local 'color' (a nil value)\"\n",
 			["stack"] = "[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:751: in function `AuctionFrameBrowse_Update'\n[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:277: in function <...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:275>",
-			["session"] = 5944,
-			["counter"] = 27,
+			["session"] = 5961,
+			["counter"] = 51,
 		}, -- [386]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrame:ClearAllPoints()'.",
+			["time"] = "2022/09/24 12:59:20",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:82: in function <Interface\\AddOns\\xVermin\\xVermin.lua:81>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_Wrath\\FrameXML\\TargetFrame.lua\"]:114: in function `TargetFrame_Update'\n[string \"@Interface_Wrath\\FrameXML\\TargetFrame.lua\"]:158: in function `OnEvent'\n[string \"@Interface\\FrameXML\\UnitFrame.lua\"]:742: in function <Interface\\FrameXML\\UnitFrame.lua:740>\n[string \"=[C]\"]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
+			["session"] = 5964,
+			["counter"] = 1,
+		}, -- [387]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'RXPGuides' tried to call the protected function 'CompactPartyFrame:unusedFunc()'.",
+			["time"] = "2022/09/24 13:59:15",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `unusedFunc'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:160: in function `CompactRaidFrameContainer_LayoutFrames'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:130: in function `CompactRaidFrameContainer_TryUpdate'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameContainer.lua\"]:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 5968,
+			["counter"] = 1,
+		}, -- [388]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/RaidFrames.lua:17: Attempt to access forbidden object from code tainted by an AddOn",
+			["time"] = "2022/09/22 18:29:50",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\xVermin\\Frames/RaidFrames.lua\"]:17: in function <Interface\\AddOns\\xVermin\\Frames/RaidFrames.lua:13>\n[string \"=[C]\"]: in function `CompactUnitFrame_UpdateName'\n[string \"@Interface_Wrath\\FrameXML\\CompactUnitFrame.lua\"]:299: in function <Interface_Wrath\\FrameXML\\CompactUnitFrame.lua:289>\n[string \"=[C]\"]: in function `CompactUnitFrame_UpdateAll'\n[string \"@Interface_Wrath\\FrameXML\\CompactUnitFrame.lua\"]:177: in function `CompactUnitFrame_SetUnit'\n[string \"@Interface_TBC\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua\"]:299: in function `OnAdded'\n[string \"@Interface_TBC\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua\"]:113: in function `OnNamePlateAdded'\n[string \"@Interface_TBC\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua\"]:48: in function <...C\\AddOns\\Blizzard_NamePlates\\Blizzard_NamePlates.lua:39>",
+			["session"] = 5968,
+			["counter"] = 6,
+		}, -- [389]
 	},
 }
