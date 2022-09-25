@@ -1,10 +1,5 @@
 
 Postal3DB = {
-	["profileKeys"] = {
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -13,6 +8,11 @@ Postal3DB = {
 				"Vermin|Golemagg|Horde|70|WARRIOR", -- [3]
 			},
 		},
+	},
+	["profileKeys"] = {
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
 		["Vermin - Golemagg"] = {

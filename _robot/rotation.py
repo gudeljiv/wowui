@@ -108,9 +108,9 @@ with keyboard.Listener(on_press=on_press) as listener:
             p_clss = {"top": 0, "left": monitor == "2k" and 49 or 74, "width": 7, "height": 7}
 
             grabbed_image = dir_path + "/_main.png".format(**p_main)
-
             main_image = sct.grab(p_main)
             main = main_image.pixel(int(x/2), int(y/2))
+            # mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
 
             combat_image = sct.grab(p_combat)
             combat = combat_image.pixel(5, 5)

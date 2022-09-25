@@ -151,4 +151,21 @@ f:SetBackdrop(
 	}
 )
 f:SetBackdropColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
--- f:SetBackdropColor(1, 1, 1, 1)
+
+local f = CreateFrame('Frame', 'RotationFrame6', UIParent, BackdropTemplateMixin and 'BackdropTemplate')
+f:SetWidth(7)
+f:SetHeight(7)
+f:ClearAllPoints()
+f:SetPoint('TOPLEFT', UIParent, 'TOPLEFT', 55, 0)
+f:SetFrameStrata('BACKGROUND')
+f:SetBackdrop(
+	{
+		bgFile = xVermin.Config.background.white,
+		edgeFile = '',
+		tile = false,
+		tileSize = 0,
+		edgeSize = 0,
+		insets = {left = 0, right = 0, top = 0, bottom = 0}
+	}
+)
+f:SetBackdropColor(1, 1, 1, 1)

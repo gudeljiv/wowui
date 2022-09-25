@@ -91,54 +91,60 @@ local _, xVermin = ...
 -- RotationTextureFrame.texture:SetPoint('CENTER')
 -- RotationTextureFrame.texture:SetTexture(GetSpellTexture(78))
 
--- PlayerFrame:HookScript(
--- 	'OnUpdate',
--- 	function()
--- 		if Rotation.AOE() then
--- 			print('aoe')
--- 		else
--- 			print('single target')
--- 		end
+PlayerFrame:HookScript(
+	'OnUpdate',
+	function()
+		-- if Rotation.AOE() then
+		-- 	print('aoe')
+		-- else
+		-- 	print('single target')
+		-- end
 
--- 		if not InCombatLockdown() then
--- 			return
--- 		end
+		if not InCombatLockdown() then
+			return
+		end
 
--- 		local data = {
--- 			player = {
--- 				health = {
--- 					current = UnitHealth('player'),
--- 					max = UnitHealthMax('player'),
--- 					percentage = string.format('%.f', data.player.health.current / data.player.health.max * 100)
--- 				},
--- 				mana = {
--- 					current = UnitMana('player'),
--- 					max = UnitManaMax('player'),
--- 					percentage = string.format('%.f', data.player.mana.current / data.player.mana.max * 100)
--- 				},
--- 				xp = {
--- 					current = UnitXP('player'),
--- 					max = UnitXPMax('player'),
--- 					percentage = string.format('%.f', data.player.xp.current / data.player.xp.max * 100)
--- 				}
--- 			},
--- 			target = {
--- 				health = {
--- 					current = UnitHealth('target'),
--- 					max = UnitHealthMax('target'),
--- 					percentage = string.format('%.f', data.target.health.current / data.target.health.max * 100)
--- 				},
--- 				mana = {
--- 					current = UnitMana('target'),
--- 					max = UnitManaMax('target'),
--- 					percentage = string.format('%.f', data.target.mana.current / data.target.mana.max * 100)
--- 				},
--- 				xp = {
--- 					current = UnitXP('target'),
--- 					max = UnitXPMax('target'),
--- 					percentage = string.format('%.f', data.target.xp.current / data.target.xp.max * 100)
--- 				}
--- 			}
--- 		}
--- 	end
--- )
+		-- local data = {
+		-- 	player = {
+		-- 		health = {
+		-- 			current = UnitHealth('player'),
+		-- 			max = UnitHealthMax('player'),
+		-- 			percentage = string.format('%.f', data.player.health.current / data.player.health.max * 100)
+		-- 		},
+		-- 		mana = {
+		-- 			current = UnitMana('player'),
+		-- 			max = UnitManaMax('player'),
+		-- 			percentage = string.format('%.f', data.player.mana.current / data.player.mana.max * 100)
+		-- 		},
+		-- 		xp = {
+		-- 			current = UnitXP('player'),
+		-- 			max = UnitXPMax('player'),
+		-- 			percentage = string.format('%.f', data.player.xp.current / data.player.xp.max * 100)
+		-- 		}
+		-- 	},
+		-- 	target = {
+		-- 		health = {
+		-- 			current = UnitHealth('target'),
+		-- 			max = UnitHealthMax('target'),
+		-- 			percentage = string.format('%.f', data.target.health.current / data.target.health.max * 100)
+		-- 		},
+		-- 		mana = {
+		-- 			current = UnitMana('target'),
+		-- 			max = UnitManaMax('target'),
+		-- 			percentage = string.format('%.f', data.target.mana.current / data.target.mana.max * 100)
+		-- 		},
+		-- 		xp = {
+		-- 			current = UnitXP('target'),
+		-- 			max = UnitXPMax('target'),
+		-- 			percentage = string.format('%.f', data.target.xp.current / data.target.xp.max * 100)
+		-- 		}
+		-- 	}
+		-- }
+
+		if IsSpellInRange('Revenge', 'target') == 1 and select(1, IsUsableSpell('Revenge')) then
+			RotationFrame6:SetBackdropColor(1, 1, 0.5, 1)
+		else
+			RotationFrame6:SetBackdropColor(1, 1, 1, 1)
+		end
+	end
+)
