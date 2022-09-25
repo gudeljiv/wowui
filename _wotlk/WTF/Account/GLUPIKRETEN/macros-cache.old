@@ -1,12 +1,3 @@
-VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/use Fel Sharpening Stone
-/use [button:1] 16; [button:2] 17
-END
-VER 3 000000000000000E " " "136106"
-/run InspectUnit("target")
-/run SortBags()
-END
 VER 3 0000000000000013 " " "132130"
 /click RotBotF3
 END
@@ -18,14 +9,23 @@ VER 3 0000000000000012 " " "132143"
 #showtooltip
 /startattack
 END
+VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Fel Sharpening Stone
+/use [button:1] 16; [button:2] 17
+END
+VER 3 000000000000000E " " "136106"
+/run InspectUnit("target")
+/run SortBags()
+END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:28399
-/castsequence [combat] reset=combat item:13444
+/use [nocombat]item:0
+/castsequence [combat] reset=combat item:22832
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:27854
+/use [nocombat]item:30359
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000B "lvl enchant" "132089"
@@ -47,8 +47,6 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run print("+++++++++++")
-/run print(C_CurrencyInfo.GetCurrencyInfo(392))
-/run print("---------")
-/run print(GetCurrencyInfo(1901))
+/run unitscan_button:ClearAllPoints()
+/run unitscan_button:SetPoint('TOP', UIParent, 0, -150)
 END

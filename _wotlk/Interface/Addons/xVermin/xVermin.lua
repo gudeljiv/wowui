@@ -137,7 +137,7 @@ f:SetScript(
 			end
 		end
 
-		EnableAddOn('Blizzard_CompactRaidFrames')
-		EnableAddOn('Blizzard_CUFProfiles')
+		-- EnableAddOn('Blizzard_CompactRaidFrames')
+		-- EnableAddOn('Blizzard_CUFProfiles')
 	end
 )

@@ -7,59 +7,47 @@
 -- Button:SetAttribute("type", "macro")
 -- Button:SetAttribute("macrotext", "/cast [@mouseover] Lesser Heal")
 -- SetOverrideBindingClick(Button, "F12", "AddOnName_ButtonName")
-
-hooksecurefunc(
-	'CompactUnitFrame_UpdateName',
-	function(frame)
-		local playerName = GetUnitName(frame.unit, true)
-
-		if frame.name and not InCombatLockdown() then
-			frame.name:ClearAllPoints()
-			frame.name:SetPoint('TOPLEFT', 5, -5)
-		end
-
-		if playerName then
-			local nameWithoutRealm = gsub(playerName, '%-[^|]+', '')
-			frame.name:SetText(nameWithoutRealm)
-		end
-	end
-)
-
-local f = CreateFrame('frame')
-f:RegisterEvent('PLAYER_ENTERING_WORLD')
-f:RegisterEvent('GROUP_ROSTER_UPDATE')
-f:SetScript(
-	'OnEvent',
-	function(self, event, isInitialLogin, isReloadingUi)
-		-- if InCombatLockdown() then
-		-- 	return
-		-- end
-
-		-----------------------------------------------------------------
-		-- Add Beauty Border to party and raid buffs icons
-		-----------------------------------------------------------------
-		for member = 1, 5, 1 do
-			for buff = 1, 5, 1 do
-				if _G['CompactPartyFrameMember' .. member .. 'Buff' .. buff] then
-					_G['CompactPartyFrameMember' .. member .. 'Buff' .. buff]:CreateBeautyBorder(6)
-				end
-				if _G['CompactPartyFrameMember' .. member .. 'Debuff' .. buff] then
-					_G['CompactPartyFrameMember' .. member .. 'Debuff' .. buff]:CreateBeautyBorder(6)
-				end
-			end
-		end
-
-		for group = 1, 8, 1 do
-			for member = 1, 5, 1 do
-				for buff = 1, 5, 1 do
-					if _G['CompactRaidGroup' .. group .. 'Member' .. member .. 'Buff' .. buff] then
-						_G['CompactRaidGroup' .. group .. 'Member' .. member .. 'Buff' .. buff]:CreateBeautyBorder(6)
-					end
-					if _G['CompactRaidGroup' .. group .. 'Member' .. member .. 'Debuff' .. buff] then
-						_G['CompactRaidGroup' .. group .. 'Member' .. member .. 'Debuff' .. buff]:CreateBeautyBorder(6)
-					end
-				end
-			end
-		end
-	end
-)
+-- hooksecurefunc(
+-- 	'CompactUnitFrame_UpdateName',
+-- 	function(frame)
+-- 		local playerName = GetUnitName(frame.unit, true)
+-- 		if frame.name and not InCombatLockdown() then
+-- 			frame.name:ClearAllPoints()
+-- 			frame.name:SetPoint('TOPLEFT', 5, -5)
+-- 		end
+-- 		if playerName then
+-- 			local nameWithoutRealm = gsub(playerName, '%-[^|]+', '')
+-- 			frame.name:SetText(nameWithoutRealm)
+-- 		end
+-- 	end
+-- )
+-- local f = CreateFrame('frame')
+-- f:RegisterEvent('PLAYER_ENTERING_WORLD')
+-- f:RegisterEvent('GROUP_ROSTER_UPDATE')
+-- f:SetScript(
+-- 	'OnEvent',
+-- 	function(self, event, isInitialLogin, isReloadingUi)
+-- 		for member = 1, 5, 1 do
+-- 			for buff = 1, 5, 1 do
+-- 				if _G['CompactPartyFrameMember' .. member .. 'Buff' .. buff] then
+-- 					_G['CompactPartyFrameMember' .. member .. 'Buff' .. buff]:CreateBeautyBorder(6)
+-- 				end
+-- 				if _G['CompactPartyFrameMember' .. member .. 'Debuff' .. buff] then
+-- 					_G['CompactPartyFrameMember' .. member .. 'Debuff' .. buff]:CreateBeautyBorder(6)
+-- 				end
+-- 			end
+-- 		end
+-- 		for group = 1, 8, 1 do
+-- 			for member = 1, 5, 1 do
+-- 				for buff = 1, 5, 1 do
+-- 					if _G['CompactRaidGroup' .. group .. 'Member' .. member .. 'Buff' .. buff] then
+-- 						_G['CompactRaidGroup' .. group .. 'Member' .. member .. 'Buff' .. buff]:CreateBeautyBorder(6)
+-- 					end
+-- 					if _G['CompactRaidGroup' .. group .. 'Member' .. member .. 'Debuff' .. buff] then
+-- 						_G['CompactRaidGroup' .. group .. 'Member' .. member .. 'Debuff' .. buff]:CreateBeautyBorder(6)
+-- 					end
+-- 				end
+-- 			end
+-- 		end
+-- 	end
+-- )
