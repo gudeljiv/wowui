@@ -113,68 +113,77 @@ end
 local function SkinPet()
 	if PetFrame:IsShown() then
 		for i = 1, 32 do
-			B_spellName, B_spellId, _, _, _, _, B_unitCaster = UnitBuff('pet', i)
-			D_spellName, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff('pet', i)
-
-			------------------------------------------------------------------------------------------------------------------------------------------------------
-			-- BUFFS ---------------------------------------------------------------------------------------------------------------------------------------------
-			------------------------------------------------------------------------------------------------------------------------------------------------------
-			frame = _G['PetFrameBuff' .. i]
-			frameBorder = _G['PetFrameBuff' .. i .. 'Border']
-			frameCount = _G['PetFrameBuff' .. i .. 'Count']
-			frameCooldown = _G['PetFrameBuff' .. i .. 'Cooldown']
-			if frameCooldown then
-				frameCooldown:SetSwipeTexture('', 0, 0, 0, 0)
+			if _G['PetFrameBuff' .. i] then
+				_G['PetFrameBuff' .. i]:Hide()
 			end
-
-			if frameBorder then
-				frameBorder:Hide()
-			end
-
-			if frameCount then
-				frameCount:SetFont(xVermin.Config.font.atari, xVermin.Config.petbuff.fontsize, xVermin.Config.petbuff.outline)
-				frameCount:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', 0, 2)
-			end
-
-			if frame then
-				frame:CreateBeautyBorder(xVermin.Config.petbuff.bordersize)
-				frame:SetBeautyBorderTexture(xVermin.Config.border.default)
-				frame:SetSize(21, 21)
-			end
-
-			------------------------------------------------------------------------------------------------------------------------------------------------------
-			-- DEBUFFS -------------------------------------------------------------------------------------------------------------------------------------------
-			------------------------------------------------------------------------------------------------------------------------------------------------------
-			frame = _G['PetFrameDebuff' .. i]
-			frameBorder = _G['PetFrameDebuff' .. i .. 'Border']
-			frameCount = _G['PetFrameDebuff' .. i .. 'Count']
-			frameCooldown = _G['PetFrameDebuff' .. i .. 'Cooldown']
-			if frameCooldown then
-				frameCooldown:SetSwipeTexture('', 0, 0, 0, 0)
-			end
-
-			if frameBorder then
-				frameBorder:Hide()
-			end
-
-			if frameCount then
-				frameCount:SetFont(xVermin.Config.font.atari, xVermin.Config.petdebuff.fontsize, xVermin.Config.petdebuff.outline)
-				frameCount:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', 0, 2)
-			end
-
-			if select(4, UnitDebuff('pet', i)) then
-				color = xVermin.Config.ReplacedDebuffTypeColor[select(4, UnitDebuff('target', i))]
-			else
-				color = xVermin.Config.ReplacedDebuffTypeColor['none']
-			end
-
-			if frame then
-				frame:CreateBeautyBorder(xVermin.Config.petdebuff.bordersize)
-				frame:SetBeautyBorderTexture(xVermin.Config.border.colorize)
-				frame:SetBeautyBorderColor(color.r, color.g, color.b)
-				frame:SetSize(21, 21)
+			if _G['PetFrameDebuff' .. i] then
+				_G['PetFrameDebuff' .. i]:Hide()
 			end
 		end
+
+	-- for i = 1, 32 do
+	-- 	B_spellName, B_spellId, _, _, _, _, B_unitCaster = UnitBuff('pet', i)
+	-- 	D_spellName, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff('pet', i)
+
+	-- 	------------------------------------------------------------------------------------------------------------------------------------------------------
+	-- 	-- BUFFS ---------------------------------------------------------------------------------------------------------------------------------------------
+	-- 	------------------------------------------------------------------------------------------------------------------------------------------------------
+	-- 	frame = _G['PetFrameBuff' .. i]
+	-- 	frameBorder = _G['PetFrameBuff' .. i .. 'Border']
+	-- 	frameCount = _G['PetFrameBuff' .. i .. 'Count']
+	-- 	frameCooldown = _G['PetFrameBuff' .. i .. 'Cooldown']
+	-- 	if frameCooldown then
+	-- 		frameCooldown:SetSwipeTexture('', 0, 0, 0, 0)
+	-- 	end
+
+	-- 	if frameBorder then
+	-- 		frameBorder:Hide()
+	-- 	end
+
+	-- 	if frameCount then
+	-- 		frameCount:SetFont(xVermin.Config.font.atari, xVermin.Config.petbuff.fontsize, xVermin.Config.petbuff.outline)
+	-- 		frameCount:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', 0, 2)
+	-- 	end
+
+	-- 	if frame then
+	-- 		frame:CreateBeautyBorder(xVermin.Config.petbuff.bordersize)
+	-- 		frame:SetBeautyBorderTexture(xVermin.Config.border.default)
+	-- 		frame:SetSize(21, 21)
+	-- 	end
+
+	-- 	------------------------------------------------------------------------------------------------------------------------------------------------------
+	-- 	-- DEBUFFS -------------------------------------------------------------------------------------------------------------------------------------------
+	-- 	------------------------------------------------------------------------------------------------------------------------------------------------------
+	-- 	frame = _G['PetFrameDebuff' .. i]
+	-- 	frameBorder = _G['PetFrameDebuff' .. i .. 'Border']
+	-- 	frameCount = _G['PetFrameDebuff' .. i .. 'Count']
+	-- 	frameCooldown = _G['PetFrameDebuff' .. i .. 'Cooldown']
+	-- 	if frameCooldown then
+	-- 		frameCooldown:SetSwipeTexture('', 0, 0, 0, 0)
+	-- 	end
+
+	-- 	if frameBorder then
+	-- 		frameBorder:Hide()
+	-- 	end
+
+	-- 	if frameCount then
+	-- 		frameCount:SetFont(xVermin.Config.font.atari, xVermin.Config.petdebuff.fontsize, xVermin.Config.petdebuff.outline)
+	-- 		frameCount:SetPoint('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', 0, 2)
+	-- 	end
+
+	-- 	if select(4, UnitDebuff('pet', i)) then
+	-- 		color = xVermin.Config.ReplacedDebuffTypeColor[select(4, UnitDebuff('target', i))]
+	-- 	else
+	-- 		color = xVermin.Config.ReplacedDebuffTypeColor['none']
+	-- 	end
+
+	-- 	if frame then
+	-- 		frame:CreateBeautyBorder(xVermin.Config.petdebuff.bordersize)
+	-- 		frame:SetBeautyBorderTexture(xVermin.Config.border.colorize)
+	-- 		frame:SetBeautyBorderColor(color.r, color.g, color.b)
+	-- 		frame:SetSize(21, 21)
+	-- 	end
+	-- end
 	end
 end
 
