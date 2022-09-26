@@ -116,11 +116,14 @@ function xVermin:FormatNumber(number, divider)
 end
 
 function xVermin:Round(number, decimals)
-	if not number then
-		return 0
-	end
-	local power = 10 ^ (decimals or 0)
-	return floor(number * power) / power
+	-- if not number then
+	-- 	return 0
+	-- end
+	-- local power = 10 ^ (decimals or 0)
+	-- return floor(number * power) / power
+
+	local mult = 10 ^ (decimals or 0)
+	return math.floor(number * mult + 0.5) / mult
 end
 
 function xVermin:ColorGradient(perc, ...)
@@ -152,8 +155,8 @@ end
 
 function xVermin:hex2rgb(hex)
 	hex = hex:gsub('#', '')
-	local r = Rounds(tonumber('0x' .. hex:sub(1, 2)) / 255, 2)
-	local g = Round(tonumber('0x' .. hex:sub(3, 4)) / 255, 2)
-	local b = Round(tonumber('0x' .. hex:sub(5, 6)) / 255, 2)
+	local r = tonumber('0x' .. hex:sub(1, 2)) / 255
+	local g = tonumber('0x' .. hex:sub(3, 4)) / 255
+	local b = tonumber('0x' .. hex:sub(5, 6)) / 255
 	return {r = r, g = g, b = b, a = 1}
 end

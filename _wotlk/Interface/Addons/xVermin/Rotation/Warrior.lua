@@ -94,7 +94,7 @@ end
 local data = {}
 
 local skills = {}
-skills['revenge'] = '#FCFFEE'
+skills['revenge'] = '#89CFF0'
 
 PlayerFrame:HookScript(
 	'OnUpdate',
@@ -168,7 +168,7 @@ PlayerFrame:HookScript(
 
 		-- print('target % ', data.target.xp.current)
 		RotationFrame6:SetBackdropColor(xVermin:hex2rgb(skills.revenge).r, xVermin:hex2rgb(skills.revenge).g, xVermin:hex2rgb(skills.revenge).b, xVermin:hex2rgb(skills.revenge).a)
-		print(skills.revenge, xVermin:hex2rgb(skills.revenge).r, xVermin:hex2rgb(skills.revenge).g, xVermin:hex2rgb(skills.revenge).b, xVermin:hex2rgb(skills.revenge).a)
+		-- print(skills.revenge, xVermin:hex2rgb(skills.revenge).r, xVermin:hex2rgb(skills.revenge).g, xVermin:hex2rgb(skills.revenge).b, xVermin:hex2rgb(skills.revenge).a)
 
 		-- if IsSpellInRange('Revenge', 'target') == 1 and select(1, IsUsableSpell('Revenge')) then
 		-- 	RotationFrame6:SetBackdropColor(xVermin:hex2rgb(skills.revenge))
