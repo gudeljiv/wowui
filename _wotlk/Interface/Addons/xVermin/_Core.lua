@@ -119,11 +119,7 @@ function xVermin:Round(number, decimals)
 	if not number then
 		return 0
 	end
-	if not decimals then
-		decimals = 0
-	end
-	local power = 10 ^ decimals
-
+	local power = 10 ^ (decimals or 0)
 	return floor(number * power) / power
 end
 
@@ -156,8 +152,8 @@ end
 
 function xVermin:hex2rgb(hex)
 	hex = hex:gsub('#', '')
-	local r = Round(tonumber('0x' .. hex:sub(1, 2)) / 255, 2)
+	local r = Rounds(tonumber('0x' .. hex:sub(1, 2)) / 255, 2)
 	local g = Round(tonumber('0x' .. hex:sub(3, 4)) / 255, 2)
 	local b = Round(tonumber('0x' .. hex:sub(5, 6)) / 255, 2)
-	return r .. ',' .. g .. ',' .. b .. ',1'
+	return {r = r, g = g, b = b, a = 1}
 end

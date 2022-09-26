@@ -1,11 +1,12 @@
 local _, xVermin = ...
 
-function Rotation:AOE(type)
+function AOE(type, skill)
 	local type = type or 'bool'
+	local skill = skill or 'Cleave'
 	local inRange = 0
 
 	for i = 1, 40 do
-		if UnitExists('nameplate' .. i) and IsSpellInRange('Cleave', 'nameplate' .. i) == 1 and CheckInteractDistance('nameplate' .. i, 3) then
+		if UnitExists('nameplate' .. i) and IsSpellInRange(skill, 'nameplate' .. i) == 1 and CheckInteractDistance('nameplate' .. i, 3) then
 			-- 1 = Inspect, 28 yards
 			-- 2 = Trade, 11.11 yards
 			-- 3 = Duel, 9.9 yards
@@ -68,7 +69,7 @@ PlayerFrame:HookScript(
 			f:SetBackdropColor(1, 1, 1, 1) -- white
 		else
 			if InCombatLockdown() then
-				if Rotation:AOE() then
+				if AOE() then
 					f:SetBackdropColor(1, 0, 0, 1) -- red
 				else
 					f:SetBackdropColor(0, 1, 0, 1) -- green
