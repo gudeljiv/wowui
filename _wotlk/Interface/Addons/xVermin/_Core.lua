@@ -153,3 +153,11 @@ function xVermin:TimeFormat(time)
 		return format('%02d:%02d', minutes, seconds)
 	end
 end
+
+function xVermin:hex2rgb(hex)
+	hex = hex:gsub('#', '')
+	local r = Round(tonumber('0x' .. hex:sub(1, 2)) / 255, 2)
+	local g = Round(tonumber('0x' .. hex:sub(3, 4)) / 255, 2)
+	local b = Round(tonumber('0x' .. hex:sub(5, 6)) / 255, 2)
+	return r .. ',' .. g .. ',' .. b .. ',1'
+end

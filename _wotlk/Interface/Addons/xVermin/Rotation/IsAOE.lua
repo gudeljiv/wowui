@@ -1,6 +1,6 @@
 local _, xVermin = ...
 
-function AOE(type)
+function Rotation:AOE(type)
 	local type = type or 'bool'
 	local inRange = 0
 
@@ -68,7 +68,7 @@ PlayerFrame:HookScript(
 			f:SetBackdropColor(1, 1, 1, 1) -- white
 		else
 			if InCombatLockdown() then
-				if AOE() then
+				if Rotation:AOE() then
 					f:SetBackdropColor(1, 0, 0, 1) -- red
 				else
 					f:SetBackdropColor(0, 1, 0, 1) -- green
