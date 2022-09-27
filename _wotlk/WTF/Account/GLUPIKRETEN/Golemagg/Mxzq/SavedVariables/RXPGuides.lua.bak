@@ -19,7 +19,7 @@ RXPCData = {
 	["xprate"] = 1.5,
 	["JoyousJourneys"] = true,
 	["GA"] = false,
-	["frameHeight"] = 125.000129699707,
+	["frameHeight"] = 125.000114440918,
 	["currentGuideName"] = "",
 	["stepSkip"] = {
 	},
@@ -96,7 +96,7 @@ RXPCTrackingData = {
 							["hour"] = 19,
 							["weekday"] = 5,
 						},
-						["started"] = 1664214925,
+						["started"] = 1664263631,
 					},
 					["quests"] = {
 					},

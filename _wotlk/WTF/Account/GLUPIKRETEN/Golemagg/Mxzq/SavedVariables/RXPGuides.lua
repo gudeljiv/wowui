@@ -23,7 +23,7 @@ RXPCData = {
 	["currentGuideName"] = "",
 	["stepSkip"] = {
 	},
-	["frameHeight"] = 125.000129699707,
+	["frameHeight"] = 125.000114440918,
 	["GA"] = false,
 }
 RXPCTrackingData = {
@@ -96,7 +96,7 @@ RXPCTrackingData = {
 							["hour"] = 19,
 							["minute"] = 27,
 						},
-						["started"] = 1664214925,
+						["started"] = 1664265127,
 					},
 					["quests"] = {
 					},

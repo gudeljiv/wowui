@@ -74,5 +74,6 @@ xVermin.lua
 
 
 Rotation/_Core.lua
-Rotation/IsAOE.lua
+Rotation/_Frames.lua
+Rotation/AOE.lua
 Rotation/Warrior.lua
