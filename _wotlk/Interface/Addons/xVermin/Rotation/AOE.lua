@@ -36,7 +36,8 @@ local skills = {
 	['WARRIOR'] = 'Cleave',
 	['PALADIN'] = 'Divine Storm',
 	['DEATHKNIGHT'] = 'Heart Strike',
-	['ROGUE'] = 'Sinister Strike'
+	['ROGUE'] = 'Sinister Strike',
+	['DRUID'] = 'Maul'
 }
 
 local count = 0

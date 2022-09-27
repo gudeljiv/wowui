@@ -34,32 +34,32 @@ NITdatabase = {
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 50000,
-					["tradeWho"] = "Lithilea",
 					["tradeWhoClass"] = "MAGE",
+					["tradeWho"] = "Lithilea",
 					["where"] = "Orgrimmar",
 					["time"] = 1663687924,
 				}, -- [1]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 50000,
-					["tradeWho"] = "Eugon",
 					["tradeWhoClass"] = "MAGE",
+					["tradeWho"] = "Eugon",
 					["where"] = "Thunder Bluff",
 					["time"] = 1662916003,
 				}, -- [2]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 20000,
-					["tradeWhoClass"] = "MAGE",
 					["tradeWho"] = "Bamshal",
+					["tradeWhoClass"] = "MAGE",
 					["where"] = "Undercity",
 					["time"] = 1662134406,
 				}, -- [3]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 200000,
-					["tradeWho"] = "Axxos",
 					["tradeWhoClass"] = "PALADIN",
+					["tradeWho"] = "Axxos",
 					["where"] = "Scarlet Monastery",
 					["time"] = 1653920243,
 				}, -- [4]
@@ -67,15 +67,15 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 700000,
 					["time"] = 1653914568,
-					["tradeWho"] = "Kawakii",
-					["where"] = "Scarlet Monastery",
 					["tradeWhoClass"] = "MAGE",
+					["where"] = "Scarlet Monastery",
+					["tradeWho"] = "Kawakii",
 				}, -- [5]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 650000,
-					["tradeWhoClass"] = "MAGE",
 					["tradeWho"] = "Kawakii",
+					["tradeWhoClass"] = "MAGE",
 					["where"] = "Scarlet Monastery",
 					["time"] = 1653909786,
 				}, -- [6]
@@ -83,23 +83,23 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 150000,
 					["time"] = 1653907528,
-					["tradeWhoClass"] = "PALADIN",
-					["where"] = "Scarlet Monastery",
 					["tradeWho"] = "Extod",
+					["where"] = "Scarlet Monastery",
+					["tradeWhoClass"] = "PALADIN",
 				}, -- [7]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 10000,
-					["tradeWhoClass"] = "MAGE",
 					["tradeWho"] = "Portalguy",
+					["tradeWhoClass"] = "MAGE",
 					["where"] = "Orgrimmar",
 					["time"] = 1653144185,
 				}, -- [8]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 20000,
-					["tradeWho"] = "Moggogo",
 					["tradeWhoClass"] = "MAGE",
+					["tradeWho"] = "Moggogo",
 					["where"] = "Orgrimmar",
 					["time"] = 1652953584,
 				}, -- [9]
@@ -107,31 +107,31 @@ NITdatabase = {
 					["targetMoney"] = 0,
 					["playerMoney"] = 100000,
 					["time"] = 1648463137,
-					["tradeWhoClass"] = "MAGE",
-					["where"] = "Silvermoon City",
 					["tradeWho"] = "Prtibeegee",
+					["where"] = "Silvermoon City",
+					["tradeWhoClass"] = "MAGE",
 				}, -- [10]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 850000,
 					["time"] = 1648059903,
-					["tradeWho"] = "Zazadin",
-					["where"] = "Stratholme",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "Stratholme",
+					["tradeWho"] = "Zazadin",
 				}, -- [11]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 850000,
 					["time"] = 1648055465,
-					["tradeWho"] = "Zazadin",
-					["where"] = "Stratholme",
 					["tradeWhoClass"] = "PALADIN",
+					["where"] = "Stratholme",
+					["tradeWho"] = "Zazadin",
 				}, -- [12]
 				{
 					["targetMoney"] = 0,
 					["playerMoney"] = 850000,
-					["tradeWhoClass"] = "PALADIN",
 					["tradeWho"] = "Zazadin",
+					["tradeWhoClass"] = "PALADIN",
 					["where"] = "Stratholme",
 					["time"] = 1648050788,
 				}, -- [13]
@@ -146,7 +146,7 @@ NITdatabase = {
 						[543] = 2,
 						[555] = 1,
 					},
-					["durabilityAverage"] = 85.03597122302158,
+					["durabilityAverage"] = 84.31654676258992,
 					["prof2"] = "none",
 					["savedInstances"] = {
 					},
@@ -162,7 +162,7 @@ NITdatabase = {
 					["raceEnglish"] = "Orc",
 					["profSkillMax1"] = 0,
 					["resting"] = true,
-					["time"] = 1664218491,
+					["time"] = 1664282306,
 					["gold"] = 10191711,
 					["realm"] = "Golemagg",
 					["marks"] = {
@@ -185,7 +185,7 @@ NITdatabase = {
 					["cookingSkillMax"] = 0,
 					["cooldowns"] = {
 					},
-					["currentXP"] = 496,
+					["currentXP"] = 9442,
 					["classLocalized"] = "Death Knight",
 					["profSkill2"] = 0,
 				},
@@ -215,6 +215,7 @@ NITdatabase = {
 					["honor"] = 732,
 					["maxXP"] = 1523800,
 					["gender"] = "Male",
+					["prof1"] = "Herbalism",
 					["marks"] = {
 						[20559] = 0,
 						[20560] = 0,
@@ -223,47 +224,46 @@ NITdatabase = {
 						[20558] = 0,
 						[47395] = 0,
 					},
-					["prof1"] = "Herbalism",
-					["shadowLabAttune"] = true,
 					["restedXP"] = 40766,
 					["totalBagSlots"] = 68,
 					["freeBagSlots"] = 44,
-					["level"] = 70,
+					["profSkill2"] = 374,
 					["arenaPoints"] = 0,
+					["level"] = 70,
 					["loyaltyString"] = "Cunning",
 					["firstaidSkillMax"] = 0,
 					["petHappiness"] = 3,
 					["currentXP"] = 1098,
 					["guild"] = "Ratnici podzemlja",
-					["profSkillMax1"] = 375,
 					["raceEnglish"] = "Orc",
+					["profSkillMax1"] = 375,
 					["ammo"] = 12726,
 					["petCurrentXP"] = 9610,
-					["race"] = "Orc",
-					["classEnglish"] = "HUNTER",
+					["petLevel"] = 0,
 					["resting"] = true,
 					["time"] = 1664278949,
 					["gold"] = 2193162,
+					["classEnglish"] = "HUNTER",
 					["playerName"] = "Mxzq",
 					["fishingSkillMax"] = 0,
-					["petLevel"] = 0,
 					["realm"] = "Golemagg",
-					["ammoType"] = 28056,
 					["isPetDead"] = false,
+					["ammoType"] = 28056,
 					["raceLocalized"] = "Orc",
 					["cookingSkillMax"] = 0,
 					["firstaidSkill"] = 0,
 					["petLoyaltyRate"] = 20,
 					["hellfireCitadelAttune"] = true,
+					["race"] = "Orc",
 					["guildRankName"] = "Alt",
 					["spentPetPoints"] = 0,
 					["petFamily"] = "Ravager",
 					["hasPet"] = false,
-					["profSkillMax2"] = 375,
 					["cooldowns"] = {
 					},
-					["profSkill2"] = 374,
+					["profSkillMax2"] = 375,
 					["classLocalized"] = "Hunter",
+					["shadowLabAttune"] = true,
 				},
 				["Mxyz"] = {
 					["fishingSkill"] = 0,
@@ -372,7 +372,7 @@ NITdatabase = {
 						[33] = 3,
 						[30] = 7,
 					},
-					["durabilityAverage"] = 99.14893617021276,
+					["durabilityAverage"] = 98.93617021276596,
 					["prof2"] = "Skinning",
 					[17038] = 0,
 					["savedInstances"] = {
@@ -381,15 +381,15 @@ NITdatabase = {
 					["maxXP"] = 317000,
 					["gender"] = "Male",
 					["prof1"] = "Herbalism",
-					["restedXP"] = 87488,
+					["restedXP"] = 95124,
 					["totalBagSlots"] = 84,
-					["freeBagSlots"] = 54,
+					["freeBagSlots"] = 53,
 					["arenaPoints"] = 0,
 					["guildRankName"] = "Alt",
 					["raceEnglish"] = "Tauren",
 					["profSkillMax1"] = 390,
 					["resting"] = false,
-					["time"] = 1664217588,
+					["time"] = 1664279649,
 					["gold"] = 2259692,
 					["marks"] = {
 						[20559] = 0,
@@ -401,14 +401,14 @@ NITdatabase = {
 					},
 					["realm"] = "Golemagg",
 					["level"] = 61,
-					["playerName"] = "Moolatz",
+					["firstaidSkill"] = 0,
 					["raceLocalized"] = "Tauren",
 					["fishingSkillMax"] = 0,
-					["firstaidSkill"] = 0,
+					["playerName"] = "Moolatz",
 					["classEnglish"] = "DRUID",
 					["firstaidSkillMax"] = 0,
 					["cookingSkillMax"] = 0,
-					["currentXP"] = 57380,
+					["currentXP"] = 58270,
 					["guild"] = "Ratnici podzemlja",
 					["race"] = "Tauren",
 					["fishingSkill"] = 0,
@@ -443,10 +443,10 @@ NITdatabase = {
 					["guild"] = "No guild",
 					["realm"] = "Golemagg",
 					["firstaidSkillMax"] = 300,
-					["firstaidSkill"] = 300,
-					["raceLocalized"] = "Undead",
-					["cookingSkillMax"] = 0,
 					["playerName"] = "Augustin",
+					["raceLocalized"] = "Undead",
+					["fishingSkillMax"] = 0,
+					["firstaidSkill"] = 300,
 					["classEnglish"] = "MAGE",
 					["level"] = 54,
 					["durabilityAverage"] = 88.29787234042553,
@@ -456,7 +456,7 @@ NITdatabase = {
 					[17020] = 0,
 					["cooldowns"] = {
 					},
-					["fishingSkillMax"] = 0,
+					["cookingSkillMax"] = 0,
 					["classLocalized"] = "Mage",
 					["profSkill2"] = 150,
 				},
@@ -481,10 +481,10 @@ NITdatabase = {
 					["time"] = 1662993625,
 					["gold"] = 105,
 					["realm"] = "Golemagg",
-					["firstaidSkill"] = 0,
+					["playerName"] = "Battitude",
 					["raceLocalized"] = "Undead",
 					["fishingSkillMax"] = 0,
-					["playerName"] = "Battitude",
+					["firstaidSkill"] = 0,
 					["classEnglish"] = "ROGUE",
 					["profSkill2"] = 0,
 					["firstaidSkillMax"] = 0,
@@ -546,21 +546,21 @@ NITdatabase = {
 					["cookingSkill"] = 37,
 					["profSkill1"] = 329,
 					["instances"] = {
-						[489] = 9,
+						[556] = 9,
 						[552] = 1,
 						[329] = 20,
-						[556] = 9,
+						[489] = 9,
 						[543] = 10,
 						[30] = 56,
 						[547] = 1,
 						[555] = 1,
 						[566] = 51,
 						[542] = 5,
-						[540] = 1,
+						[585] = 4,
 						[557] = 2,
 						[529] = 7,
 						[546] = 4,
-						[585] = 4,
+						[540] = 1,
 					},
 					["firstaidSkillMax"] = 375,
 					["profSkill2"] = 366,
@@ -572,28 +572,28 @@ NITdatabase = {
 					["prof1"] = "Blacksmithing",
 					["restedXP"] = 0,
 					["totalBagSlots"] = 84,
-					["freeBagSlots"] = 24,
+					["freeBagSlots"] = 21,
 					["auchindounAttune"] = true,
 					["arenaPoints"] = 0,
-					["currentXP"] = 5952,
+					["currentXP"] = 78742,
 					["raceEnglish"] = "Orc",
 					["profSkillMax1"] = 375,
 					["race"] = "Orc",
-					["time"] = 1664218933,
-					["gold"] = 18438782,
+					["time"] = 1664282989,
+					["gold"] = 18611782,
 					["shadowLabAttune"] = true,
 					["level"] = 70,
 					["realm"] = "Golemagg",
-					["cookingSkillMax"] = 75,
+					["fishingSkillMax"] = 0,
 					["firstaidSkill"] = 375,
 					["raceLocalized"] = "Orc",
-					["fishingSkillMax"] = 0,
+					["cookingSkillMax"] = 75,
 					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
 					["hellfireCitadelAttune"] = true,
 					["guild"] = "Ratnici podzemlja",
 					["guildRankName"] = "Sljaker",
-					["durabilityAverage"] = 97.61363636363637,
+					["durabilityAverage"] = 97.38636363636364,
 					["resting"] = false,
 					["prof2"] = "Enchanting",
 					["cooldowns"] = {
@@ -857,8 +857,8 @@ NITdatabase = {
 					["enteredTime"] = 1664094637,
 					["instanceID"] = 30,
 					["healing"] = 0,
-					["faction"] = 0,
 					["hk"] = 4,
+					["faction"] = 0,
 					["instanceName"] = "Alterac Valley",
 					["deaths"] = 0,
 					["kb"] = 0,
@@ -1508,7 +1508,7 @@ NITdatabase = {
 					["winningFaction"] = 0,
 					["honor"] = 908,
 					["playerName"] = "Vermin",
-					["classEnglish"] = "WARRIOR",
+					["healing"] = 17637,
 					["rep"] = {
 						["Warsong Outriders: +"] = -105,
 					},
@@ -1519,7 +1519,7 @@ NITdatabase = {
 					["hk"] = 40,
 					["instanceName"] = "Warsong Gulch",
 					["kb"] = 10,
-					["healing"] = 17637,
+					["classEnglish"] = "WARRIOR",
 					["enteredLevel"] = 70,
 				}, -- [11]
 				{
@@ -1565,17 +1565,17 @@ NITdatabase = {
 							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
 						},
-						["Adannos-Mograine"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Purgatory",
-						},
 						["Courgettev-Auberdine"] = {
 							["level"] = 70,
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "La Légion de Voljin",
+						},
+						["Adannos-Mograine"] = {
+							["level"] = 70,
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Purgatory",
 						},
 						["Skullèr-Gehennas"] = {
 							["level"] = 70,
@@ -1634,8 +1634,8 @@ NITdatabase = {
 					["enteredTime"] = 1663513722,
 					["instanceID"] = 566,
 					["deaths"] = 1,
-					["faction"] = 1,
 					["hk"] = 1,
+					["faction"] = 1,
 					["instanceName"] = "Eye of the Storm",
 					["kb"] = 0,
 					["classEnglish"] = "WARRIOR",
@@ -1719,8 +1719,8 @@ NITdatabase = {
 					["enteredTime"] = 1663511583,
 					["instanceID"] = 489,
 					["deaths"] = 7,
-					["faction"] = 0,
 					["hk"] = 20,
+					["faction"] = 0,
 					["instanceName"] = "Warsong Gulch",
 					["kb"] = 3,
 					["classEnglish"] = "WARRIOR",
@@ -1784,15 +1784,15 @@ NITdatabase = {
 							["classEnglish"] = "ROGUE",
 							["guildName"] = "Grãvïtÿ",
 						},
-						["Øned-Ashbringer"] = {
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
 						["Psydruid-Gehennas"] = {
 							["level"] = 70,
 							["classEnglish"] = "DRUID",
 							["class"] = "Druid",
+						},
+						["Øned-Ashbringer"] = {
+							["level"] = 70,
+							["classEnglish"] = "DEATHKNIGHT",
+							["class"] = "Death Knight",
 						},
 						["Vajazókés"] = {
 							["class"] = "Rogue",
@@ -2050,15 +2050,15 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Ratnici podzemlja",
 						},
-						["Yumikø-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Hunter",
-							["classEnglish"] = "HUNTER",
-						},
 						["Widuwin-Venoxis"] = {
 							["level"] = 70,
 							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
+						},
+						["Yumikø-Venoxis"] = {
+							["level"] = 70,
+							["class"] = "Hunter",
+							["classEnglish"] = "HUNTER",
 						},
 						["Bostton"] = {
 							["level"] = 70,
@@ -2070,10 +2070,11 @@ NITdatabase = {
 							["class"] = "Shaman",
 							["classEnglish"] = "SHAMAN",
 						},
-						["Lïàd-Sulfuron"] = {
+						["Groott-Thekal"] = {
 							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Faded History",
 						},
 						["Bölgur"] = {
 							["level"] = 70,
@@ -2119,11 +2120,10 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "LAZY",
 						},
-						["Groott-Thekal"] = {
+						["Lïàd-Sulfuron"] = {
 							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Faded History",
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
 						},
 						["Trolaakkeri-Mograine"] = {
 							["level"] = 70,
@@ -2147,8 +2147,8 @@ NITdatabase = {
 					["enteredTime"] = 1663424541,
 					["instanceID"] = 566,
 					["kb"] = 6,
-					["hk"] = 64,
 					["faction"] = 0,
+					["hk"] = 64,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -2262,8 +2262,8 @@ NITdatabase = {
 					["enteredTime"] = 1663423608,
 					["instanceID"] = 566,
 					["kb"] = 6,
-					["hk"] = 32,
 					["faction"] = 0,
+					["hk"] = 32,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -2380,8 +2380,8 @@ NITdatabase = {
 					["enteredTime"] = 1663422420,
 					["instanceID"] = 566,
 					["kb"] = 9,
-					["hk"] = 64,
 					["faction"] = 0,
+					["hk"] = 64,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -2489,8 +2489,8 @@ NITdatabase = {
 					["enteredTime"] = 1663421850,
 					["instanceID"] = 566,
 					["kb"] = 2,
-					["hk"] = 19,
 					["faction"] = 0,
+					["hk"] = 19,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -2563,16 +2563,16 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Nec Pluribus Impar",
 						},
-						["Andureal-Mograine"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
 						["Gulldy"] = {
 							["level"] = 70,
 							["class"] = "Warlock",
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Crimson Fury Clan",
+						},
+						["Andureal-Mograine"] = {
+							["level"] = 70,
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Freezenagini-Amnennar"] = {
 							["level"] = 70,
@@ -2828,8 +2828,8 @@ NITdatabase = {
 					["enteredTime"] = 1663417653,
 					["instanceID"] = 566,
 					["kb"] = 3,
-					["faction"] = 0,
 					["hk"] = 40,
+					["faction"] = 0,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -2941,8 +2941,8 @@ NITdatabase = {
 					["enteredTime"] = 1663416894,
 					["instanceID"] = 566,
 					["kb"] = 5,
-					["faction"] = 0,
 					["hk"] = 29,
+					["faction"] = 0,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -2970,11 +2970,11 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "SURELY",
 						},
-						["Rättipuhelin-Gehennas"] = {
+						["Soapalotx-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "fab",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "SURELY",
 						},
 						["Chouipk"] = {
 							["level"] = 70,
@@ -2982,11 +2982,11 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Resolute",
 						},
-						["Soapalotx-Gehennas"] = {
+						["Rättipuhelin-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "SURELY",
+							["class"] = "Rogue",
+							["classEnglish"] = "ROGUE",
+							["guildName"] = "fab",
 						},
 						["Daneflame"] = {
 							["level"] = 70,
@@ -3023,17 +3023,17 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "maGGots",
 						},
-						["Zawarudô-Sulfuron"] = {
-							["level"] = 70,
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "CRACKED",
-						},
 						["Kuzyz-Gehennas"] = {
 							["level"] = 70,
 							["class"] = "Priest",
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Juoda Balta",
+						},
+						["Zawarudô-Sulfuron"] = {
+							["level"] = 70,
+							["class"] = "Priest",
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "CRACKED",
 						},
 						["Vermin"] = {
 							["level"] = 70,
@@ -3057,8 +3057,8 @@ NITdatabase = {
 					["enteredTime"] = 1663416033,
 					["instanceID"] = 566,
 					["kb"] = 4,
-					["faction"] = 0,
 					["hk"] = 34,
+					["faction"] = 0,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -3121,10 +3121,11 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Videopeluri-MirageRaceway"] = {
+						["Juku-Thekal"] = {
 							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
+							["class"] = "Hunter",
+							["classEnglish"] = "HUNTER",
+							["guildName"] = "ScumBags",
 						},
 						["Zoster"] = {
 							["level"] = 70,
@@ -3132,11 +3133,10 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Vanitatum Vanitas",
 						},
-						["Juku-Thekal"] = {
+						["Videopeluri-MirageRaceway"] = {
 							["level"] = 70,
-							["class"] = "Hunter",
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "ScumBags",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
 						},
 						["Goremorda-Thekal"] = {
 							["level"] = 70,
@@ -3171,8 +3171,8 @@ NITdatabase = {
 					["enteredTime"] = 1663414823,
 					["instanceID"] = 566,
 					["kb"] = 4,
-					["faction"] = 1,
 					["hk"] = 43,
+					["faction"] = 1,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -3354,16 +3354,16 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
+						["Tutiya-Gehennas"] = {
+							["level"] = 70,
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+						},
 						["Dunev"] = {
 							["level"] = 70,
 							["class"] = "Warrior",
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Guildy McGuildFace",
-						},
-						["Tutiya-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
 						},
 						["Bitik-Gehennas"] = {
 							["level"] = 70,
@@ -3397,8 +3397,8 @@ NITdatabase = {
 					["enteredTime"] = 1663412147,
 					["instanceID"] = 566,
 					["kb"] = 3,
-					["faction"] = 0,
 					["hk"] = 23,
+					["faction"] = 0,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -3419,10 +3419,10 @@ NITdatabase = {
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
 						},
-						["Hirnblutbär-Transcendence"] = {
+						["Isiniel-Thekal"] = {
 							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
 						},
 						["Puggiwuggi-Mograine"] = {
 							["level"] = 70,
@@ -3440,10 +3440,10 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Atriya",
 						},
-						["Isiniel-Thekal"] = {
+						["Hirnblutbär-Transcendence"] = {
 							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
 						},
 						["Hassélhoof-Gehennas"] = {
 							["level"] = 70,
@@ -3451,10 +3451,10 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Plex",
 						},
-						["Kaelzarin-Gehennas"] = {
+						["Porneaux"] = {
 							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
 						},
 						["Jellyfìsh"] = {
 							["level"] = 70,
@@ -3472,10 +3472,10 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Außerhordentlich",
 						},
-						["Porneaux"] = {
+						["Kaelzarin-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
 						},
 						["Aceii-Venoxis"] = {
 							["level"] = 70,
@@ -3563,10 +3563,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "RUDE NUDE DUDE",
 						},
-						["Checkluck-Venoxis"] = {
+						["Shiriari-Everlook"] = {
 							["level"] = 70,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Six Feet",
 						},
 						["Paniclol-Venoxis"] = {
 							["level"] = 70,
@@ -3586,11 +3587,10 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Die Königsmörder",
 						},
-						["Shiriari-Everlook"] = {
+						["Checkluck-Venoxis"] = {
 							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Six Feet",
+							["class"] = "Warlock",
+							["classEnglish"] = "WARLOCK",
 						},
 						["Thaiducks-Venoxis"] = {
 							["level"] = 70,
@@ -3625,8 +3625,8 @@ NITdatabase = {
 					["enteredTime"] = 1663409610,
 					["instanceID"] = 566,
 					["kb"] = 4,
-					["faction"] = 0,
 					["hk"] = 19,
+					["faction"] = 0,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -3684,11 +3684,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Always Unlucky",
 						},
-						["Alliepallie-Gehennas"] = {
+						["Angryboy-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Surge",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "The Light of Dawn",
 						},
 						["Nink-Gehennas"] = {
 							["level"] = 70,
@@ -3712,11 +3712,11 @@ NITdatabase = {
 							["class"] = "Warrior",
 							["classEnglish"] = "WARRIOR",
 						},
-						["Angryboy-Gehennas"] = {
+						["Alliepallie-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "The Light of Dawn",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Surge",
 						},
 						["Wîckd-Venoxis"] = {
 							["level"] = 70,
@@ -3739,8 +3739,8 @@ NITdatabase = {
 					["enteredTime"] = 1663409017,
 					["instanceID"] = 566,
 					["kb"] = 2,
-					["faction"] = 0,
 					["hk"] = 23,
+					["faction"] = 0,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -3857,8 +3857,8 @@ NITdatabase = {
 					["enteredTime"] = 1663407619,
 					["instanceID"] = 566,
 					["kb"] = 4,
-					["faction"] = 1,
 					["hk"] = 89,
+					["faction"] = 1,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -3916,10 +3916,10 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Atriya",
 						},
-						["Qñ-Gehennas"] = {
+						["Kockroach-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Evolved",
 						},
 						["Pepinoqq-Earthshaker"] = {
@@ -3928,10 +3928,10 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Megasweats",
 						},
-						["Kockroach-Gehennas"] = {
+						["Qñ-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
+							["class"] = "Shaman",
+							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Evolved",
 						},
 						["Chooba-Gehennas"] = {
@@ -3963,8 +3963,8 @@ NITdatabase = {
 					["damage"] = 14072,
 					["mobCountFromKill"] = 0,
 					["type"] = "bg",
-					["honor"] = 729,
 					["kb"] = 1,
+					["honor"] = 729,
 					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
 					["rep"] = {
@@ -3973,9 +3973,9 @@ NITdatabase = {
 					["instanceID"] = 566,
 					["healing"] = 2613,
 					["deaths"] = 0,
-					["hk"] = 15,
-					["instanceName"] = "Eye of the Storm",
 					["faction"] = 0,
+					["instanceName"] = "Eye of the Storm",
+					["hk"] = 15,
 					["mobCount"] = 0,
 					["winningFaction"] = 0,
 				}, -- [33]
@@ -4212,8 +4212,8 @@ NITdatabase = {
 					["enteredTime"] = 1663404046,
 					["instanceID"] = 566,
 					["kb"] = 2,
-					["hk"] = 23,
 					["faction"] = 0,
+					["hk"] = 23,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -4246,10 +4246,10 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Innuendo",
 						},
-						["Syrans-Sulfuron"] = {
+						["Battyspanker-Mograine"] = {
 							["level"] = 70,
-							["class"] = "Hunter",
-							["classEnglish"] = "HUNTER",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
 						},
 						["Rbd-Sulfuron"] = {
 							["level"] = 70,
@@ -4273,15 +4273,15 @@ NITdatabase = {
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
 						},
-						["Heilerknecht-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-						},
-						["Battyspanker-Mograine"] = {
+						["Lighthell-Venoxis"] = {
 							["level"] = 70,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
+						},
+						["Syrans-Sulfuron"] = {
+							["level"] = 70,
+							["class"] = "Hunter",
+							["classEnglish"] = "HUNTER",
 						},
 						["Albalito-Gehennas"] = {
 							["level"] = 70,
@@ -4295,10 +4295,10 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Think Twice",
 						},
-						["Lighthell-Venoxis"] = {
+						["Heilerknecht-Venoxis"] = {
 							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
 						},
 						["Dkover"] = {
 							["level"] = 70,
@@ -4327,8 +4327,8 @@ NITdatabase = {
 					["enteredTime"] = 1663402881,
 					["instanceID"] = 566,
 					["kb"] = 0,
-					["hk"] = 25,
 					["faction"] = 1,
+					["hk"] = 25,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -4441,8 +4441,8 @@ NITdatabase = {
 					["enteredTime"] = 1663401948,
 					["instanceID"] = 566,
 					["kb"] = 3,
-					["hk"] = 21,
 					["faction"] = 0,
+					["hk"] = 21,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -4484,10 +4484,11 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Savai-Gehennas"] = {
+						["Askatasuna-Sulfuron"] = {
 							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Sorry My Bad",
 						},
 						["Destroisbis-MirageRaceway"] = {
 							["level"] = 70,
@@ -4510,11 +4511,10 @@ NITdatabase = {
 							["class"] = "Hunter",
 							["classEnglish"] = "HUNTER",
 						},
-						["Askatasuna-Sulfuron"] = {
+						["Savai-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Sorry My Bad",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
 						},
 						["Bösebritta-Venoxis"] = {
 							["level"] = 70,
@@ -4555,8 +4555,8 @@ NITdatabase = {
 					["enteredTime"] = 1663401714,
 					["instanceID"] = 566,
 					["kb"] = 0,
-					["hk"] = 0,
 					["faction"] = 1,
+					["hk"] = 0,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -4673,8 +4673,8 @@ NITdatabase = {
 					["enteredTime"] = 1663400965,
 					["instanceID"] = 566,
 					["kb"] = 0,
-					["hk"] = 0,
 					["faction"] = 1,
+					["hk"] = 0,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -4725,23 +4725,23 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Longtemps Classic",
 						},
-						["Dimqa-Gehennas"] = {
-							["class"] = "Death Knight",
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Ukrainian Raiders",
-						},
 						["Mefistø"] = {
 							["class"] = "Paladin",
 							["level"] = 70,
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "DOOM inc",
 						},
-						["Vilkazs-Thekal"] = {
-							["class"] = "Priest",
+						["Bloodou-Gehennas"] = {
+							["class"] = "Death Knight",
 							["level"] = 70,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "SQUAD",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Hatréd",
+						},
+						["Dimqa-Gehennas"] = {
+							["class"] = "Death Knight",
+							["level"] = 70,
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Ukrainian Raiders",
 						},
 						["Vermin"] = {
 							["class"] = "Warrior",
@@ -4760,11 +4760,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Cyberpunk",
 						},
-						["Bloodou-Gehennas"] = {
-							["class"] = "Death Knight",
+						["Vilkazs-Thekal"] = {
+							["class"] = "Priest",
 							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Hatréd",
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "SQUAD",
 						},
 						["Miltersen-Gehennas"] = {
 							["class"] = "Rogue",
@@ -4789,9 +4789,9 @@ NITdatabase = {
 					["instanceID"] = 566,
 					["kb"] = 6,
 					["classEnglish"] = "WARRIOR",
-					["hk"] = 43,
-					["instanceName"] = "Eye of the Storm",
 					["faction"] = 1,
+					["instanceName"] = "Eye of the Storm",
+					["hk"] = 43,
 					["mobCount"] = 0,
 					["deaths"] = 7,
 				}, -- [40]
@@ -4825,23 +4825,23 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["class"] = "Warrior",
 						},
-						["Rattletattle-Mograine"] = {
-							["class"] = "Warlock",
-							["level"] = 70,
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "Dirty Rotten Scoundrels",
-						},
-						["Noxxq-Gehennas"] = {
-							["class"] = "Death Knight",
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Nordens Ark",
-						},
 						["Mccane-Venoxis"] = {
 							["class"] = "Druid",
 							["level"] = 70,
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Progenies Infernalis",
+						},
+						["Jokins-Mograine"] = {
+							["class"] = "Death Knight",
+							["level"] = 70,
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Depletion Masters",
+						},
+						["Rattletattle-Mograine"] = {
+							["class"] = "Warlock",
+							["level"] = 70,
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Dirty Rotten Scoundrels",
 						},
 						["Eatpannkaka-Mograine"] = {
 							["class"] = "Warlock",
@@ -4860,11 +4860,11 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["class"] = "Death Knight",
 						},
-						["Jokins-Mograine"] = {
+						["Noxxq-Gehennas"] = {
 							["class"] = "Death Knight",
 							["level"] = 70,
 							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Depletion Masters",
+							["guildName"] = "Nordens Ark",
 						},
 						["Vindheft-Mograine"] = {
 							["class"] = "Shaman",
@@ -4906,9 +4906,9 @@ NITdatabase = {
 					["instanceID"] = 566,
 					["kb"] = 0,
 					["classEnglish"] = "WARRIOR",
-					["hk"] = 14,
-					["instanceName"] = "Eye of the Storm",
 					["faction"] = 1,
+					["instanceName"] = "Eye of the Storm",
+					["hk"] = 14,
 					["mobCount"] = 0,
 					["deaths"] = 4,
 				}, -- [41]
@@ -5018,9 +5018,9 @@ NITdatabase = {
 					["instanceID"] = 566,
 					["kb"] = 0,
 					["classEnglish"] = "WARRIOR",
-					["hk"] = 12,
-					["instanceName"] = "Eye of the Storm",
 					["faction"] = 0,
+					["instanceName"] = "Eye of the Storm",
+					["hk"] = 12,
 					["mobCount"] = 0,
 					["deaths"] = 3,
 				}, -- [42]
@@ -5127,7 +5127,7 @@ NITdatabase = {
 					["mobCountFromKill"] = 0,
 					["type"] = "bg",
 					["winningFaction"] = 1,
-					["kb"] = 8,
+					["honor"] = 1057,
 					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
 					["rep"] = {
@@ -5135,12 +5135,12 @@ NITdatabase = {
 					["enteredTime"] = 1663353997,
 					["instanceID"] = 566,
 					["healing"] = 7650,
-					["hk"] = 67,
 					["faction"] = 1,
+					["hk"] = 67,
 					["instanceName"] = "Eye of the Storm",
 					["deaths"] = 9,
 					["mobCount"] = 0,
-					["honor"] = 1057,
+					["kb"] = 8,
 				}, -- [43]
 				{
 					["isPvp"] = true,
@@ -5170,11 +5170,11 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "NORF",
 						},
-						["Kaamaz-Sulfuron"] = {
+						["Talodar-Transcendence"] = {
 							["level"] = 70,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["guildName"] = "Les copaéins de ta femme",
+							["guildName"] = "Celestial Fury",
 						},
 						["Moodíe-Gehennas"] = {
 							["level"] = 70,
@@ -5192,11 +5192,11 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Talodar-Transcendence"] = {
+						["Kaamaz-Sulfuron"] = {
 							["level"] = 70,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["guildName"] = "Celestial Fury",
+							["guildName"] = "Les copaéins de ta femme",
 						},
 						["Shajina-Transcendence"] = {
 							["level"] = 70,
@@ -5249,8 +5249,8 @@ NITdatabase = {
 					["enteredTime"] = 1663353440,
 					["instanceID"] = 566,
 					["kb"] = 4,
-					["faction"] = 0,
 					["hk"] = 53,
+					["faction"] = 0,
 					["instanceName"] = "Eye of the Storm",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -5362,9 +5362,9 @@ NITdatabase = {
 					["instanceID"] = 566,
 					["kb"] = 5,
 					["classEnglish"] = "WARRIOR",
-					["faction"] = 1,
-					["instanceName"] = "Eye of the Storm",
 					["hk"] = 35,
+					["instanceName"] = "Eye of the Storm",
+					["faction"] = 1,
 					["mobCount"] = 0,
 					["deaths"] = 9,
 				}, -- [45]
@@ -5461,7 +5461,7 @@ NITdatabase = {
 					["mobCountFromKill"] = 0,
 					["type"] = "bg",
 					["winningFaction"] = 0,
-					["honor"] = 931,
+					["kb"] = 5,
 					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
 					["rep"] = {
@@ -5469,12 +5469,12 @@ NITdatabase = {
 					["enteredTime"] = 1663350716,
 					["instanceID"] = 566,
 					["healing"] = 7774,
-					["faction"] = 0,
 					["hk"] = 50,
+					["faction"] = 0,
 					["instanceName"] = "Eye of the Storm",
 					["deaths"] = 13,
 					["mobCount"] = 0,
-					["kb"] = 5,
+					["honor"] = 931,
 				}, -- [46]
 				{
 					["isPvp"] = true,
@@ -5587,9 +5587,9 @@ NITdatabase = {
 					["instanceID"] = 566,
 					["classEnglish"] = "WARRIOR",
 					["kb"] = 2,
-					["faction"] = 0,
-					["instanceName"] = "Eye of the Storm",
 					["hk"] = 20,
+					["instanceName"] = "Eye of the Storm",
+					["faction"] = 0,
 					["mobCount"] = 0,
 					["winningFaction"] = 1,
 				}, -- [47]
@@ -5631,10 +5631,10 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Tritnaha",
 						},
-						["Schomarí-Venoxis"] = {
+						["Arcanegrinda-Venoxis"] = {
 							["level"] = 70,
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
+							["classEnglish"] = "MAGE",
+							["class"] = "Mage",
 						},
 						["Jusdepain-Sulfuron"] = {
 							["level"] = 70,
@@ -5671,10 +5671,10 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Figli di Thrall",
 						},
-						["Arcanegrinda-Venoxis"] = {
+						["Schomarí-Venoxis"] = {
 							["level"] = 70,
-							["classEnglish"] = "MAGE",
-							["class"] = "Mage",
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
 						},
 						["Veenox-Venoxis"] = {
 							["class"] = "Paladin",
@@ -5699,9 +5699,9 @@ NITdatabase = {
 					["instanceID"] = 566,
 					["kb"] = 3,
 					["classEnglish"] = "WARRIOR",
-					["faction"] = 0,
-					["instanceName"] = "Eye of the Storm",
 					["hk"] = 44,
+					["instanceName"] = "Eye of the Storm",
+					["faction"] = 0,
 					["mobCount"] = 0,
 					["deaths"] = 3,
 				}, -- [48]
@@ -5813,9 +5813,9 @@ NITdatabase = {
 					["instanceID"] = 566,
 					["kb"] = 2,
 					["classEnglish"] = "WARRIOR",
-					["faction"] = 1,
-					["instanceName"] = "Eye of the Storm",
 					["hk"] = 24,
+					["instanceName"] = "Eye of the Storm",
+					["faction"] = 1,
 					["mobCount"] = 0,
 					["deaths"] = 3,
 				}, -- [49]
@@ -5857,11 +5857,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Rival",
 						},
-						["Grovestrider-Gehennas"] = {
-							["class"] = "Death Knight",
+						["Mnsfourdegrz-Sulfuron"] = {
+							["class"] = "Mage",
 							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Beverlo Hills",
+							["classEnglish"] = "MAGE",
+							["guildName"] = "Blacklïst",
 						},
 						["Sevenswings-Gehennas"] = {
 							["class"] = "Rogue",
@@ -5875,28 +5875,11 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Hydra",
 						},
-						["Miaknight-Venoxis"] = {
+						["Alos-Venoxis"] = {
+							["class"] = "Druid",
 							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Backlash",
-						},
-						["Drukkhex-Gehennas"] = {
-							["class"] = "Priest",
-							["level"] = 70,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "Never Lucky",
-						},
-						["Lokhran-Sulfuron"] = {
-							["level"] = 70,
-							["classEnglish"] = "HUNTER",
-							["class"] = "Hunter",
-						},
-						["Mnsfourdegrz-Sulfuron"] = {
-							["class"] = "Mage",
-							["level"] = 70,
-							["classEnglish"] = "MAGE",
-							["guildName"] = "Blacklïst",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Casual Crusaders",
 						},
 						["Deatsreza"] = {
 							["class"] = "Death Knight",
@@ -5904,11 +5887,28 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Plague Masters",
 						},
-						["Alos-Venoxis"] = {
-							["class"] = "Druid",
+						["Lokhran-Sulfuron"] = {
 							["level"] = 70,
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Casual Crusaders",
+							["classEnglish"] = "HUNTER",
+							["class"] = "Hunter",
+						},
+						["Grovestrider-Gehennas"] = {
+							["class"] = "Death Knight",
+							["level"] = 70,
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Beverlo Hills",
+						},
+						["Drukkhex-Gehennas"] = {
+							["class"] = "Priest",
+							["level"] = 70,
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Never Lucky",
+						},
+						["Miaknight-Venoxis"] = {
+							["level"] = 70,
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Backlash",
 						},
 						["Vermin"] = {
 							["class"] = "Warrior",
@@ -5924,7 +5924,7 @@ NITdatabase = {
 					["mobCountFromKill"] = 0,
 					["type"] = "bg",
 					["winningFaction"] = 0,
-					["honor"] = 136,
+					["kb"] = 0,
 					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
 					["rep"] = {
@@ -5932,12 +5932,12 @@ NITdatabase = {
 					["enteredTime"] = 1663334516,
 					["instanceID"] = 566,
 					["healing"] = 1990,
-					["faction"] = 1,
 					["hk"] = 8,
+					["faction"] = 1,
 					["instanceName"] = "Eye of the Storm",
 					["deaths"] = 8,
 					["mobCount"] = 0,
-					["kb"] = 0,
+					["honor"] = 136,
 				}, -- [50]
 				{
 					["isPvp"] = true,
@@ -6091,11 +6091,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["class"] = "Shaman",
 						},
-						["Mukbangasmr-Gehennas"] = {
-							["class"] = "Death Knight",
+						["Elfbulance-Thekal"] = {
+							["class"] = "Paladin",
 							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Toinen Kilta",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "A FEW OLD MEN",
 						},
 						["Steelinho-Thekal"] = {
 							["class"] = "Death Knight",
@@ -6109,11 +6109,11 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Immune",
 						},
-						["Elfbulance-Thekal"] = {
-							["class"] = "Paladin",
+						["Mukbangasmr-Gehennas"] = {
+							["class"] = "Death Knight",
 							["level"] = 70,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "A FEW OLD MEN",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Toinen Kilta",
 						},
 						["Bouft-Gehennas"] = {
 							["level"] = 70,
@@ -6929,9 +6929,9 @@ NITdatabase = {
 					["instanceID"] = 30,
 					["kb"] = 0,
 					["classEnglish"] = "WARRIOR",
-					["hk"] = 0,
-					["instanceName"] = "Alterac Valley",
 					["faction"] = 0,
+					["instanceName"] = "Alterac Valley",
+					["hk"] = 0,
 					["mobCount"] = 0,
 					["deaths"] = 0,
 				}, -- [54]
@@ -7542,10 +7542,10 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "BEEF BAR",
 						},
-						["Adendu-MirageRaceway"] = {
-							["level"] = 70,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
+						["Dkphode-Sulfuron"] = {
+							["level"] = 61,
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Gozerian-Venoxis"] = {
 							["level"] = 70,
@@ -7558,10 +7558,10 @@ NITdatabase = {
 							["class"] = "Warrior",
 							["classEnglish"] = "WARRIOR",
 						},
-						["Dkphode-Sulfuron"] = {
-							["level"] = 61,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
+						["Adendu-MirageRaceway"] = {
+							["level"] = 70,
+							["class"] = "Rogue",
+							["classEnglish"] = "ROGUE",
 						},
 						["Evilnes-NethergardeKeep"] = {
 							["level"] = 70,
@@ -8193,9 +8193,9 @@ NITdatabase = {
 					["instanceID"] = 30,
 					["classEnglish"] = "WARRIOR",
 					["kb"] = 2,
-					["hk"] = 20,
-					["instanceName"] = "Alterac Valley",
 					["faction"] = 0,
+					["instanceName"] = "Alterac Valley",
+					["hk"] = 20,
 					["mobCount"] = 0,
 					["winningFaction"] = 1,
 				}, -- [63]
@@ -8297,7 +8297,7 @@ NITdatabase = {
 					["mobCountFromKill"] = 0,
 					["type"] = "bg",
 					["winningFaction"] = 1,
-					["kb"] = 1,
+					["honor"] = 537,
 					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
 					["rep"] = {
@@ -8305,12 +8305,12 @@ NITdatabase = {
 					["enteredTime"] = 1663230652,
 					["instanceID"] = 566,
 					["healing"] = 3686,
-					["hk"] = 20,
 					["faction"] = 1,
+					["hk"] = 20,
 					["instanceName"] = "Eye of the Storm",
 					["deaths"] = 2,
 					["mobCount"] = 0,
-					["honor"] = 537,
+					["kb"] = 1,
 				}, -- [64]
 				{
 					["isPvp"] = true,
@@ -8332,28 +8332,29 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Slowcoolx-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-							["guildName"] = "Just Raid",
-						},
-						["Slapa-Gehennas"] = {
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
-						["Retardalertx"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Been Here Before",
-						},
 						["Lixnix"] = {
 							["level"] = 70,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Last WIsh",
+						},
+						["Elchapô-Gehennas"] = {
+							["level"] = 70,
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "HIRVI",
+						},
+						["Bloodpunk-Transcendence"] = {
+							["level"] = 70,
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Brachland BBQ",
+						},
+						["Slowcoolx-Gehennas"] = {
+							["level"] = 70,
+							["class"] = "Mage",
+							["classEnglish"] = "MAGE",
+							["guildName"] = "Just Raid",
 						},
 						["Raivoreijo-Gehennas"] = {
 							["level"] = 70,
@@ -8372,11 +8373,11 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Insane",
 						},
-						["Bloodpunk-Transcendence"] = {
+						["Retardalertx"] = {
 							["level"] = 70,
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Brachland BBQ",
+							["guildName"] = "Been Here Before",
 						},
 						["Ferocia-Gehennas"] = {
 							["level"] = 70,
@@ -8384,22 +8385,21 @@ NITdatabase = {
 							["classEnglish"] = "ROGUE",
 							["guildName"] = "når",
 						},
-						["Sardigg-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-						},
 						["Piøu-Sulfuron"] = {
 							["level"] = 70,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "GRIM",
 						},
-						["Elchapô-Gehennas"] = {
+						["Sardigg-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "HIRVI",
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
+						},
+						["Slapa-Gehennas"] = {
+							["level"] = 70,
+							["classEnglish"] = "DEATHKNIGHT",
+							["class"] = "Death Knight",
 						},
 						["Vermin"] = {
 							["level"] = 70,
@@ -8423,8 +8423,8 @@ NITdatabase = {
 					["enteredTime"] = 1663229790,
 					["instanceID"] = 566,
 					["classEnglish"] = "WARRIOR",
-					["hk"] = 8,
 					["faction"] = 1,
+					["hk"] = 8,
 					["instanceName"] = "Eye of the Storm",
 					["kb"] = 0,
 					["mobCount"] = 0,
@@ -8541,8 +8541,8 @@ NITdatabase = {
 					["enteredTime"] = 1663225787,
 					["instanceID"] = 529,
 					["kb"] = 4,
-					["faction"] = 0,
 					["hk"] = 32,
+					["faction"] = 0,
 					["instanceName"] = "Arathi Basin",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -8716,9 +8716,9 @@ NITdatabase = {
 					["instanceID"] = 489,
 					["kb"] = 1,
 					["classEnglish"] = "WARRIOR",
-					["faction"] = 1,
-					["instanceName"] = "Warsong Gulch",
 					["hk"] = 18,
+					["instanceName"] = "Warsong Gulch",
+					["faction"] = 1,
 					["mobCount"] = 0,
 					["deaths"] = 7,
 				}, -- [68]
@@ -9015,8 +9015,8 @@ NITdatabase = {
 					["enteredTime"] = 1663171026,
 					["instanceID"] = 489,
 					["classEnglish"] = "WARRIOR",
-					["faction"] = 0,
 					["hk"] = 24,
+					["faction"] = 0,
 					["instanceName"] = "Warsong Gulch",
 					["kb"] = 2,
 					["mobCount"] = 0,
@@ -9144,10 +9144,10 @@ NITdatabase = {
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "Resist",
 						},
-						["Onesheep"] = {
+						["Ønemouse"] = {
 							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
 							["guildName"] = "N E R F",
 						},
 						["Gøth-Earthshaker"] = {
@@ -9156,26 +9156,26 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Public Investment Fund",
 						},
-						["Bansadge-Firemaw"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-						},
-						["Dirk-Thekal"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-						},
 						["Sheburst-Gehennas"] = {
 							["level"] = 70,
 							["class"] = "Shaman",
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Never Lucky",
 						},
-						["Ønemouse"] = {
+						["Dirk-Thekal"] = {
 							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
+						},
+						["Bansadge-Firemaw"] = {
+							["level"] = 70,
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+						},
+						["Onesheep"] = {
+							["level"] = 70,
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "N E R F",
 						},
 						["Makarakukara"] = {
@@ -9217,8 +9217,8 @@ NITdatabase = {
 					["enteredTime"] = 1663088887,
 					["instanceID"] = 529,
 					["kb"] = 3,
-					["hk"] = 28,
 					["faction"] = 0,
+					["hk"] = 28,
 					["instanceName"] = "Arathi Basin",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -9329,8 +9329,8 @@ NITdatabase = {
 					["enteredTime"] = 1663086903,
 					["instanceID"] = 529,
 					["kb"] = 1,
-					["hk"] = 35,
 					["faction"] = 0,
+					["hk"] = 35,
 					["instanceName"] = "Arathi Basin",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -9488,16 +9488,16 @@ NITdatabase = {
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
 						},
-						["Falcom-Sulfuron"] = {
-							["level"] = 59,
-							["class"] = "Rogue",
-							["classEnglish"] = "ROGUE",
-						},
 						["Madrunelx-Venoxis"] = {
 							["level"] = 60,
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Faíry Táíl",
+						},
+						["Falcom-Sulfuron"] = {
+							["level"] = 59,
+							["class"] = "Rogue",
+							["classEnglish"] = "ROGUE",
 						},
 						["Flump-Thekal"] = {
 							["level"] = 61,
@@ -9510,17 +9510,17 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Shadowpearl-Mograine"] = {
-							["level"] = 59,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "PwnlyFans",
-						},
 						["Griposo-Mandokir"] = {
 							["level"] = 60,
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "GUILD NOSTOCAMOS",
+						},
+						["Shadowpearl-Mograine"] = {
+							["level"] = 59,
+							["class"] = "Warlock",
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "PwnlyFans",
 						},
 						["Graverobber-Thekal"] = {
 							["level"] = 57,
@@ -9736,11 +9736,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Das schwarze Banner",
 						},
-						["Ashirá-Venoxis"] = {
-							["class"] = "Priest",
-							["level"] = 57,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "eXquisité",
+						["Undedrater-Gehennas"] = {
+							["class"] = "Death Knight",
+							["level"] = 60,
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Rename",
 						},
 						["Criticalrole-Thekal"] = {
 							["class"] = "Paladin",
@@ -9780,11 +9780,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Fun",
 						},
-						["Undedrater-Gehennas"] = {
-							["class"] = "Death Knight",
-							["level"] = 60,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Rename",
+						["Ashirá-Venoxis"] = {
+							["class"] = "Priest",
+							["level"] = 57,
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "eXquisité",
 						},
 						["Ceecee-Venoxis"] = {
 							["level"] = 60,
@@ -9837,9 +9837,9 @@ NITdatabase = {
 					["instanceID"] = 30,
 					["kb"] = 3,
 					["classEnglish"] = "DRUID",
-					["hk"] = 83,
-					["instanceName"] = "Alterac Valley",
 					["faction"] = 0,
+					["instanceName"] = "Alterac Valley",
+					["hk"] = 83,
 					["mobCount"] = 0,
 					["deaths"] = 6,
 				}, -- [77]
@@ -9951,11 +9951,11 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Stormreaver Clan",
 						},
-						["Medusalina-Everlook"] = {
-							["class"] = "Paladin",
-							["level"] = 53,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Thralls Metalheads",
+						["Ellguanche-Thekal"] = {
+							["level"] = 55,
+							["class"] = "Warlock",
+							["classEnglish"] = "WARLOCK",
+							["guildName"] = "Ascend",
 						},
 						["Ruurikh-Thekal"] = {
 							["level"] = 56,
@@ -9975,11 +9975,11 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Dream Mentors",
 						},
-						["Ellguanche-Thekal"] = {
-							["level"] = 55,
-							["class"] = "Warlock",
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "Ascend",
+						["Medusalina-Everlook"] = {
+							["class"] = "Paladin",
+							["level"] = 53,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Thralls Metalheads",
 						},
 						["Qwupth-Gehennas"] = {
 							["level"] = 60,
@@ -10772,22 +10772,22 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["class"] = "Death Knight",
 						},
-						["Apexdk-Thekal"] = {
-							["class"] = "Death Knight",
+						["Hankk-Gehennas"] = {
+							["class"] = "Shaman",
 							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Aces",
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Revived",
 						},
 						["Xoggan-Mograine"] = {
 							["level"] = 70,
 							["classEnglish"] = "SHAMAN",
 							["class"] = "Shaman",
 						},
-						["Hankk-Gehennas"] = {
-							["class"] = "Shaman",
+						["Apexdk-Thekal"] = {
+							["class"] = "Death Knight",
 							["level"] = 70,
-							["classEnglish"] = "SHAMAN",
-							["guildName"] = "Revived",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Aces",
 						},
 						["Hrappot-Mograine"] = {
 							["level"] = 70,
@@ -10799,11 +10799,11 @@ NITdatabase = {
 							["classEnglish"] = "ROGUE",
 							["class"] = "Rogue",
 						},
-						["Serkol"] = {
-							["class"] = "Paladin",
+						["Starckxx-Sulfuron"] = {
+							["class"] = "Death Knight",
 							["level"] = 70,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Los Etílicos",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "NUTZ",
 						},
 						["Psuleur-Giantstalker"] = {
 							["level"] = 67,
@@ -10826,11 +10826,11 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["class"] = "Priest",
 						},
-						["Starckxx-Sulfuron"] = {
-							["class"] = "Death Knight",
+						["Serkol"] = {
+							["class"] = "Paladin",
 							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "NUTZ",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Los Etílicos",
 						},
 						["Skylynx-Thekal"] = {
 							["class"] = "Druid",
@@ -11068,22 +11068,23 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "outlaw",
 						},
-						["Sixstep-Sulfuron"] = {
+						["Dispellplz-Sulfuron"] = {
+							["class"] = "Priest",
 							["level"] = 70,
-							["classEnglish"] = "ROGUE",
-							["class"] = "Rogue",
-						},
-						["Dkjin-Giantstalker"] = {
-							["class"] = "Death Knight",
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Big DKs",
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "CRACKED",
 						},
 						["Kohlrabiknut-Venoxis"] = {
 							["class"] = "Death Knight",
 							["level"] = 70,
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Bloodline",
+						},
+						["Dkjin-Giantstalker"] = {
+							["class"] = "Death Knight",
+							["level"] = 70,
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Big DKs",
 						},
 						["Gregregger"] = {
 							["level"] = 70,
@@ -11107,11 +11108,10 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "anoduna",
 						},
-						["Dispellplz-Sulfuron"] = {
-							["class"] = "Priest",
+						["Sixstep-Sulfuron"] = {
 							["level"] = 70,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "CRACKED",
+							["classEnglish"] = "ROGUE",
+							["class"] = "Rogue",
 						},
 						["Existhor-Venoxis"] = {
 							["class"] = "Warlock",
@@ -11399,7 +11399,7 @@ NITdatabase = {
 					["mobCountFromKill"] = 0,
 					["type"] = "bg",
 					["winningFaction"] = 1,
-					["honor"] = 525,
+					["kb"] = 0,
 					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
 					["rep"] = {
@@ -11408,12 +11408,12 @@ NITdatabase = {
 					["enteredTime"] = 1662912346,
 					["instanceID"] = 30,
 					["healing"] = 1994,
-					["faction"] = 0,
 					["hk"] = 25,
+					["faction"] = 0,
 					["instanceName"] = "Alterac Valley",
 					["deaths"] = 0,
 					["mobCount"] = 0,
-					["kb"] = 0,
+					["honor"] = 525,
 				}, -- [83]
 				{
 					["isPvp"] = true,
@@ -11668,8 +11668,8 @@ NITdatabase = {
 					["enteredTime"] = 1662911650,
 					["instanceID"] = 30,
 					["kb"] = 0,
-					["faction"] = 0,
 					["hk"] = 1,
+					["faction"] = 0,
 					["instanceName"] = "Alterac Valley",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -12435,8 +12435,8 @@ NITdatabase = {
 					["enteredTime"] = 1662904462,
 					["instanceID"] = 30,
 					["kb"] = 1,
-					["hk"] = 4,
 					["faction"] = 0,
+					["hk"] = 4,
 					["instanceName"] = "Alterac Valley",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -12690,8 +12690,8 @@ NITdatabase = {
 					["enteredTime"] = 1662903805,
 					["instanceID"] = 30,
 					["kb"] = 1,
-					["hk"] = 11,
 					["faction"] = 0,
+					["hk"] = 11,
 					["instanceName"] = "Alterac Valley",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -12849,10 +12849,11 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Eden Blast",
 						},
-						["Lavaburstlol-Venoxis"] = {
-							["level"] = 64,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
+						["Zethik-Gehennas"] = {
+							["level"] = 70,
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Proffesional Idiots",
 						},
 						["Tongtian"] = {
 							["level"] = 70,
@@ -12865,11 +12866,10 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Zethik-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Proffesional Idiots",
+						["Lavaburstlol-Venoxis"] = {
+							["level"] = 64,
+							["class"] = "Shaman",
+							["classEnglish"] = "SHAMAN",
 						},
 						["Ggodlike-Gehennas"] = {
 							["level"] = 70,
@@ -12945,8 +12945,8 @@ NITdatabase = {
 					["enteredTime"] = 1662903191,
 					["instanceID"] = 30,
 					["kb"] = 0,
-					["hk"] = 1,
 					["faction"] = 0,
+					["hk"] = 1,
 					["instanceName"] = "Alterac Valley",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -13131,11 +13131,10 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "No Name",
 						},
-						["Guzguzon"] = {
+						["Lavaburstlol-Venoxis"] = {
 							["level"] = 64,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Asylum",
+							["class"] = "Shaman",
+							["classEnglish"] = "SHAMAN",
 						},
 						["Kukukachoo-Gehennas"] = {
 							["level"] = 70,
@@ -13171,10 +13170,11 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "New Dawn",
 						},
-						["Lavaburstlol-Venoxis"] = {
+						["Guzguzon"] = {
 							["level"] = 64,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Asylum",
 						},
 						["Kraqlock"] = {
 							["level"] = 70,
@@ -13200,8 +13200,8 @@ NITdatabase = {
 					["damage"] = 19053,
 					["mobCountFromKill"] = 0,
 					["type"] = "bg",
-					["kb"] = 1,
 					["honor"] = 447,
+					["kb"] = 1,
 					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
 					["rep"] = {
@@ -13211,9 +13211,9 @@ NITdatabase = {
 					["instanceID"] = 30,
 					["healing"] = 6945,
 					["deaths"] = 1,
-					["faction"] = 0,
-					["instanceName"] = "Alterac Valley",
 					["hk"] = 1,
+					["instanceName"] = "Alterac Valley",
+					["faction"] = 0,
 					["mobCount"] = 0,
 					["winningFaction"] = 1,
 				}, -- [90]
@@ -13333,11 +13333,10 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Brudis",
 						},
-						["Guzguzon"] = {
-							["class"] = "Death Knight",
+						["Lavaburstlol-Venoxis"] = {
 							["level"] = 64,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Asylum",
+							["classEnglish"] = "SHAMAN",
+							["class"] = "Shaman",
 						},
 						["Tonyferero-Gehennas"] = {
 							["level"] = 70,
@@ -13367,10 +13366,11 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "No Name",
 						},
-						["Lavaburstlol-Venoxis"] = {
+						["Guzguzon"] = {
+							["class"] = "Death Knight",
 							["level"] = 64,
-							["classEnglish"] = "SHAMAN",
-							["class"] = "Shaman",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Asylum",
 						},
 						["Dreekia-Gehennas"] = {
 							["class"] = "Paladin",
@@ -13595,11 +13595,11 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Refreshments",
 						},
-						["Mahîkonsan-Venoxis"] = {
+						["Rekktaz-Gehennas"] = {
 							["class"] = "Death Knight",
 							["level"] = 70,
 							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Forty Imps",
+							["guildName"] = "oh no",
 						},
 						["Hakkebertl-Venoxis"] = {
 							["class"] = "Warrior",
@@ -13635,21 +13635,21 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["class"] = "Paladin",
 						},
-						["Kaltaree-Sulfuron"] = {
-							["class"] = "Death Knight",
+						["Hobbels-Venoxis"] = {
 							["level"] = 70,
 							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Unleashed",
+							["class"] = "Death Knight",
 						},
 						["Mcswayne-Gehennas"] = {
 							["level"] = 67,
 							["classEnglish"] = "PALADIN",
 							["class"] = "Paladin",
 						},
-						["Hobbels-Venoxis"] = {
+						["Kaltaree-Sulfuron"] = {
+							["class"] = "Death Knight",
 							["level"] = 70,
 							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
+							["guildName"] = "Unleashed",
 						},
 						["Soszojowy-Mograine"] = {
 							["level"] = 70,
@@ -13667,11 +13667,11 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "GAPENATION",
 						},
-						["Rekktaz-Gehennas"] = {
+						["Mahîkonsan-Venoxis"] = {
 							["class"] = "Death Knight",
 							["level"] = 70,
 							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "oh no",
+							["guildName"] = "Forty Imps",
 						},
 						["Ortheos-MirageRaceway"] = {
 							["class"] = "Death Knight",
@@ -13703,9 +13703,9 @@ NITdatabase = {
 					["instanceID"] = 30,
 					["kb"] = 0,
 					["classEnglish"] = "WARRIOR",
-					["faction"] = 0,
-					["instanceName"] = "Alterac Valley",
 					["hk"] = 6,
+					["instanceName"] = "Alterac Valley",
+					["faction"] = 0,
 					["mobCount"] = 0,
 					["deaths"] = 2,
 				}, -- [92]
@@ -14248,10 +14248,10 @@ NITdatabase = {
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
 						},
-						["Orangestar-Gehennas"] = {
+						["Muhlör-Everlook"] = {
 							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
+							["class"] = "Shaman",
+							["classEnglish"] = "SHAMAN",
 						},
 						["Pullupna-MirageRaceway"] = {
 							["level"] = 70,
@@ -14273,10 +14273,10 @@ NITdatabase = {
 							["class"] = "Warlock",
 							["classEnglish"] = "WARLOCK",
 						},
-						["Muhlör-Everlook"] = {
+						["Orangestar-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Mulz"] = {
 							["level"] = 70,
@@ -14311,8 +14311,8 @@ NITdatabase = {
 					["enteredTime"] = 1662898703,
 					["instanceID"] = 30,
 					["kb"] = 0,
-					["hk"] = 43,
 					["faction"] = 0,
+					["hk"] = 43,
 					["instanceName"] = "Alterac Valley",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -14378,10 +14378,11 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["class"] = "Priest",
 						},
-						["Frengi-Venoxis"] = {
+						["Belleni"] = {
+							["class"] = "Druid",
 							["level"] = 70,
-							["classEnglish"] = "WARLOCK",
-							["class"] = "Warlock",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Plán B",
 						},
 						["Gigachadirl-Gehennas"] = {
 							["class"] = "Paladin",
@@ -14400,10 +14401,10 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "Unnamed",
 						},
-						["Dlay-Thekal"] = {
-							["level"] = 65,
-							["classEnglish"] = "WARRIOR",
-							["class"] = "Warrior",
+						["Aviel-Gehennas"] = {
+							["level"] = 70,
+							["classEnglish"] = "DEATHKNIGHT",
+							["class"] = "Death Knight",
 						},
 						["Dunderdaniel-Mograine"] = {
 							["class"] = "Warrior",
@@ -14428,10 +14429,10 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["class"] = "Warrior",
 						},
-						["Aviel-Gehennas"] = {
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
+						["Dlay-Thekal"] = {
+							["level"] = 65,
+							["classEnglish"] = "WARRIOR",
+							["class"] = "Warrior",
 						},
 						["Rêdly-Venoxis"] = {
 							["class"] = "Rogue",
@@ -14439,21 +14440,22 @@ NITdatabase = {
 							["classEnglish"] = "ROGUE",
 							["guildName"] = "Hordnungsamt GmbH",
 						},
-						["Nattskugga-MirageRaceway"] = {
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
-						},
 						["Gnorra-MirageRaceway"] = {
 							["class"] = "Shaman",
 							["level"] = 70,
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Team Thirteen",
 						},
-						["Vermin"] = {
-							["level"] = 69,
-							["classEnglish"] = "WARRIOR",
+						["Nattskugga-MirageRaceway"] = {
+							["level"] = 70,
+							["classEnglish"] = "DEATHKNIGHT",
+							["class"] = "Death Knight",
+						},
+						["Yurioko"] = {
 							["class"] = "Warrior",
+							["level"] = 70,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Dark Alignment",
 						},
 						["Oldface-NethergardeKeep"] = {
 							["level"] = 70,
@@ -14476,11 +14478,10 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["class"] = "Shaman",
 						},
-						["Yurioko"] = {
-							["class"] = "Warrior",
-							["level"] = 70,
+						["Vermin"] = {
+							["level"] = 69,
 							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Dark Alignment",
+							["class"] = "Warrior",
 						},
 						["Brombiz"] = {
 							["class"] = "Priest",
@@ -14514,11 +14515,11 @@ NITdatabase = {
 							["classEnglish"] = "ROGUE",
 							["guildName"] = "Im Strapped",
 						},
-						["Oldchicken-Venoxis"] = {
-							["class"] = "Priest",
+						["Solbad-MirageRaceway"] = {
+							["class"] = "Warrior",
 							["level"] = 70,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "Gravitas",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Mortals",
 						},
 						["Fôrges-Auberdine"] = {
 							["level"] = 70,
@@ -14615,11 +14616,11 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "The Leveling Guild",
 						},
-						["Solbad-MirageRaceway"] = {
-							["class"] = "Warrior",
+						["Oldchicken-Venoxis"] = {
+							["class"] = "Priest",
 							["level"] = 70,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Mortals",
+							["classEnglish"] = "PRIEST",
+							["guildName"] = "Gravitas",
 						},
 						["Netzur-Gehennas"] = {
 							["level"] = 70,
@@ -14654,11 +14655,10 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "squirrel reign",
 						},
-						["Belleni"] = {
-							["class"] = "Druid",
+						["Frengi-Venoxis"] = {
 							["level"] = 70,
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Plán B",
+							["classEnglish"] = "WARLOCK",
+							["class"] = "Warlock",
 						},
 					},
 					["class"] = "Warrior",
@@ -14921,7 +14921,7 @@ NITdatabase = {
 					["mobCountFromKill"] = 0,
 					["type"] = "bg",
 					["winningFaction"] = 0,
-					["kb"] = 0,
+					["honor"] = 685,
 					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
 					["rep"] = {
@@ -14930,12 +14930,12 @@ NITdatabase = {
 					["enteredTime"] = 1662895366,
 					["instanceID"] = 30,
 					["healing"] = 0,
-					["hk"] = 0,
 					["faction"] = 0,
+					["hk"] = 0,
 					["instanceName"] = "Alterac Valley",
 					["deaths"] = 8,
 					["mobCount"] = 0,
-					["honor"] = 685,
+					["kb"] = 0,
 				}, -- [98]
 				{
 					["isPvp"] = true,
@@ -15187,9 +15187,9 @@ NITdatabase = {
 					["instanceID"] = 30,
 					["kb"] = 0,
 					["classEnglish"] = "WARRIOR",
-					["faction"] = 0,
-					["instanceName"] = "Alterac Valley",
 					["hk"] = 7,
+					["instanceName"] = "Alterac Valley",
+					["faction"] = 0,
 					["mobCount"] = 0,
 					["deaths"] = 7,
 				}, -- [99]
@@ -15319,11 +15319,11 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["class"] = "Paladin",
 						},
-						["Natediaz-Mandokir"] = {
-							["class"] = "Warrior",
+						["Retros-Thekal"] = {
+							["class"] = "Paladin",
 							["level"] = 70,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Little Liars",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "Myths of Azeroth",
 						},
 						["Gaatsu-NethergardeKeep"] = {
 							["class"] = "Death Knight",
@@ -15417,11 +15417,11 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["class"] = "Death Knight",
 						},
-						["Retros-Thekal"] = {
-							["class"] = "Paladin",
+						["Natediaz-Mandokir"] = {
+							["class"] = "Warrior",
 							["level"] = 70,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Myths of Azeroth",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Little Liars",
 						},
 					},
 					["class"] = "Warrior",
@@ -15441,9 +15441,9 @@ NITdatabase = {
 					["instanceID"] = 30,
 					["kb"] = 0,
 					["classEnglish"] = "WARRIOR",
-					["faction"] = 0,
-					["instanceName"] = "Alterac Valley",
 					["hk"] = 0,
+					["instanceName"] = "Alterac Valley",
+					["faction"] = 0,
 					["mobCount"] = 0,
 					["deaths"] = 0,
 				}, -- [100]
@@ -15689,9 +15689,9 @@ NITdatabase = {
 					["instanceID"] = 30,
 					["kb"] = 0,
 					["classEnglish"] = "WARRIOR",
-					["hk"] = 9,
-					["instanceName"] = "Alterac Valley",
 					["faction"] = 0,
+					["instanceName"] = "Alterac Valley",
+					["hk"] = 9,
 					["mobCount"] = 0,
 					["deaths"] = 3,
 				}, -- [101]
@@ -15865,16 +15865,16 @@ NITdatabase = {
 							["classEnglish"] = "HUNTER",
 							["guildName"] = "Rival",
 						},
-						["Heligafrebo-Gehennas"] = {
-							["level"] = 70,
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-						},
 						["Darkukita"] = {
 							["class"] = "Druid",
 							["level"] = 70,
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Sequence",
+						},
+						["Heligafrebo-Gehennas"] = {
+							["level"] = 70,
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
 						},
 						["Sankor-Mandokir"] = {
 							["class"] = "Paladin",
@@ -15950,9 +15950,9 @@ NITdatabase = {
 					["instanceID"] = 30,
 					["kb"] = 0,
 					["classEnglish"] = "WARRIOR",
-					["hk"] = 4,
-					["instanceName"] = "Alterac Valley",
 					["faction"] = 0,
+					["instanceName"] = "Alterac Valley",
+					["hk"] = 4,
 					["mobCount"] = 0,
 					["deaths"] = 0,
 				}, -- [102]
@@ -16200,7 +16200,7 @@ NITdatabase = {
 					["mobCountFromKill"] = 0,
 					["type"] = "bg",
 					["winningFaction"] = 0,
-					["kb"] = 0,
+					["honor"] = 849,
 					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
 					["rep"] = {
@@ -16209,12 +16209,12 @@ NITdatabase = {
 					["enteredTime"] = 1662891624,
 					["instanceID"] = 30,
 					["healing"] = 2439,
-					["hk"] = 1,
 					["faction"] = 0,
+					["hk"] = 1,
 					["instanceName"] = "Alterac Valley",
 					["deaths"] = 0,
 					["mobCount"] = 0,
-					["honor"] = 849,
+					["kb"] = 0,
 				}, -- [103]
 				{
 					["isPvp"] = true,
@@ -16466,8 +16466,8 @@ NITdatabase = {
 					["enteredTime"] = 1662890757,
 					["instanceID"] = 30,
 					["kb"] = 0,
-					["faction"] = 0,
 					["hk"] = 1,
+					["faction"] = 0,
 					["instanceName"] = "Alterac Valley",
 					["classEnglish"] = "WARRIOR",
 					["mobCount"] = 0,
@@ -16705,8 +16705,8 @@ NITdatabase = {
 					["damage"] = 17066,
 					["mobCountFromKill"] = 0,
 					["type"] = "bg",
-					["honor"] = 685,
 					["kb"] = 0,
+					["honor"] = 685,
 					["playerName"] = "Vermin",
 					["classEnglish"] = "WARRIOR",
 					["rep"] = {
@@ -16717,9 +16717,9 @@ NITdatabase = {
 					["instanceID"] = 30,
 					["healing"] = 0,
 					["deaths"] = 0,
-					["hk"] = 0,
-					["instanceName"] = "Alterac Valley",
 					["faction"] = 0,
+					["instanceName"] = "Alterac Valley",
+					["hk"] = 0,
 					["mobCount"] = 0,
 					["winningFaction"] = 0,
 				}, -- [105]
@@ -16936,17 +16936,17 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["class"] = "Warrior",
 						},
-						["Bendx"] = {
-							["class"] = "Paladin",
-							["level"] = 70,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "BRAZZERS",
-						},
 						["Dquan-Venoxis"] = {
 							["class"] = "Death Knight",
 							["level"] = 70,
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "CRUSADE",
+						},
+						["Bendx"] = {
+							["class"] = "Paladin",
+							["level"] = 70,
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "BRAZZERS",
 						},
 						["Motashon-Gehennas"] = {
 							["class"] = "Death Knight",
@@ -16961,10 +16961,10 @@ NITdatabase = {
 					["damage"] = 3516,
 					["mobCountFromKill"] = 0,
 					["type"] = "bg",
-					["healing"] = 1820,
+					["classEnglish"] = "WARRIOR",
 					["honor"] = 815,
 					["playerName"] = "Vermin",
-					["classEnglish"] = "WARRIOR",
+					["healing"] = 1820,
 					["rep"] = {
 						["Frostwolf Clan: +"] = -312,
 					},
@@ -16972,9 +16972,9 @@ NITdatabase = {
 					["instanceID"] = 30,
 					["kb"] = 0,
 					["deaths"] = 2,
-					["hk"] = 2,
-					["instanceName"] = "Alterac Valley",
 					["faction"] = 0,
+					["instanceName"] = "Alterac Valley",
+					["hk"] = 2,
 					["mobCount"] = 0,
 					["winningFaction"] = 1,
 				}, -- [106]
@@ -18745,9 +18745,9 @@ NITdatabase = {
 					["instanceID"] = 30,
 					["classEnglish"] = "WARRIOR",
 					["kb"] = 0,
-					["faction"] = 0,
-					["instanceName"] = "Alterac Valley",
 					["hk"] = 5,
+					["instanceName"] = "Alterac Valley",
+					["faction"] = 0,
 					["mobCount"] = 0,
 					["winningFaction"] = 1,
 				}, -- [135]
@@ -19084,9 +19084,9 @@ NITdatabase = {
 					["instanceID"] = 489,
 					["kb"] = 2,
 					["classEnglish"] = "WARRIOR",
-					["faction"] = 0,
-					["instanceName"] = "Warsong Gulch",
 					["hk"] = 24,
+					["instanceName"] = "Warsong Gulch",
+					["faction"] = 0,
 					["mobCount"] = 0,
 					["deaths"] = 7,
 				}, -- [140]
@@ -19265,16 +19265,16 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Enforcer",
 						},
-						["Vorten-MirageRaceway"] = {
-							["level"] = 70,
-							["classEnglish"] = "SHAMAN",
-							["class"] = "Shaman",
-						},
 						["Auckes-Gehennas"] = {
 							["class"] = "Paladin",
 							["level"] = 70,
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Mortui Vivos Docent",
+						},
+						["Vorten-MirageRaceway"] = {
+							["level"] = 70,
+							["classEnglish"] = "SHAMAN",
+							["class"] = "Shaman",
 						},
 						["Xvyzvu-Gehennas"] = {
 							["class"] = "Priest",
@@ -19282,10 +19282,11 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Artemis",
 						},
-						["Bävariä-Auberdine"] = {
+						["Qiong-Mograine"] = {
+							["class"] = "Paladin",
 							["level"] = 70,
-							["classEnglish"] = "HUNTER",
-							["class"] = "Hunter",
+							["classEnglish"] = "PALADIN",
+							["guildName"] = "CN Descendants",
 						},
 						["Frostiie-Amnennar"] = {
 							["class"] = "Mage",
@@ -19293,11 +19294,10 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Mémory",
 						},
-						["Qiong-Mograine"] = {
-							["class"] = "Paladin",
+						["Bävariä-Auberdine"] = {
 							["level"] = 70,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "CN Descendants",
+							["classEnglish"] = "HUNTER",
+							["class"] = "Hunter",
 						},
 						["Thralls-Amnennar"] = {
 							["class"] = "Shaman",
@@ -19345,19 +19345,19 @@ NITdatabase = {
 					["winningFaction"] = 0,
 					["honor"] = 385,
 					["playerName"] = "Vermin",
-					["classEnglish"] = "WARRIOR",
+					["healing"] = 100,
 					["rep"] = {
 						["Frostwolf Clan: +"] = -548,
 					},
 					["enteredTime"] = 1654007221,
 					["instanceID"] = 30,
 					["kb"] = 1,
-					["hk"] = 1,
 					["faction"] = 0,
+					["hk"] = 1,
 					["instanceName"] = "Alterac Valley",
 					["deaths"] = 0,
 					["mobCount"] = 0,
-					["healing"] = 100,
+					["classEnglish"] = "WARRIOR",
 				}, -- [141]
 				{
 					["GUID"] = "Creature-0-4446-189-25099-4286-000094D54F",
@@ -20718,19 +20718,19 @@ NITdatabase = {
 							["class"] = "Druid",
 							["level"] = 23,
 						},
-						["Ymirjotun"] = {
-							["name"] = "Ymirjotun",
-							["guildName"] = "Without a Trace",
-							["classEnglish"] = "HUNTER",
-							["class"] = "Hunter",
-							["level"] = 20,
-						},
 						["Prejixll"] = {
 							["name"] = "Prejixll",
 							["guildName"] = "Fellowship of the Horde",
 							["classEnglish"] = "PRIEST",
 							["class"] = "Priest",
 							["level"] = 21,
+						},
+						["Ymirjotun"] = {
+							["name"] = "Ymirjotun",
+							["guildName"] = "Without a Trace",
+							["classEnglish"] = "HUNTER",
+							["class"] = "Hunter",
+							["level"] = 20,
 						},
 						["Khoonda"] = {
 							["name"] = "Khoonda",
@@ -22250,12 +22250,12 @@ NITdatabase = {
 							["name"] = "Jabos-Razorfen",
 							["classEnglish"] = "SHAMAN",
 						},
-						["Knicko-Gehennas"] = {
-							["name"] = "Knicko-Gehennas",
-							["guildName"] = "Tickle My Toes",
-							["classEnglish"] = "SHAMAN",
+						["Eshquîa"] = {
+							["name"] = "Eshquîa",
+							["guildName"] = "Deal With It",
+							["classEnglish"] = "PALADIN",
 							["level"] = 70,
-							["class"] = "Shaman",
+							["class"] = "Paladin",
 						},
 						["Odyseas-Gehennas"] = {
 							["class"] = "Warlock",
@@ -22263,12 +22263,12 @@ NITdatabase = {
 							["name"] = "Odyseas-Gehennas",
 							["classEnglish"] = "WARLOCK",
 						},
-						["Eshquîa"] = {
-							["name"] = "Eshquîa",
-							["guildName"] = "Deal With It",
-							["classEnglish"] = "PALADIN",
+						["Knicko-Gehennas"] = {
+							["name"] = "Knicko-Gehennas",
+							["guildName"] = "Tickle My Toes",
+							["classEnglish"] = "SHAMAN",
 							["level"] = 70,
-							["class"] = "Paladin",
+							["class"] = "Shaman",
 						},
 						["Kaaboomm-Razorfen"] = {
 							["class"] = "Hunter",
@@ -22361,8 +22361,8 @@ NITdatabase = {
 					["enteredTime"] = 1652522846,
 					["instanceID"] = 30,
 					["classEnglish"] = "WARRIOR",
-					["faction"] = 0,
 					["hk"] = 15,
+					["faction"] = 0,
 					["instanceName"] = "Alterac Valley",
 					["kb"] = 1,
 					["mobCount"] = 0,
@@ -22863,10 +22863,10 @@ NITdatabase = {
 							["classEnglish"] = "ROGUE",
 							["guildName"] = "Nec Pluribus Impar",
 						},
-						["Pinsir-Firemaw"] = {
-							["level"] = 66,
-							["classEnglish"] = "DRUID",
-							["class"] = "Druid",
+						["Wodnig-Firemaw"] = {
+							["level"] = 69,
+							["classEnglish"] = "WARLOCK",
+							["class"] = "Warlock",
 						},
 						["Malack-Sulfuron"] = {
 							["level"] = 64,
@@ -22889,10 +22889,10 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["class"] = "Mage",
 						},
-						["Wodnig-Firemaw"] = {
-							["level"] = 69,
-							["classEnglish"] = "WARLOCK",
-							["class"] = "Warlock",
+						["Pinsir-Firemaw"] = {
+							["level"] = 66,
+							["classEnglish"] = "DRUID",
+							["class"] = "Druid",
 						},
 						["Zeixin-Mograine"] = {
 							["level"] = 60,
@@ -22945,9 +22945,9 @@ NITdatabase = {
 					["instanceID"] = 529,
 					["classEnglish"] = "WARRIOR",
 					["kb"] = 5,
-					["faction"] = 0,
-					["instanceName"] = "Arathi Basin",
 					["hk"] = 40,
+					["instanceName"] = "Arathi Basin",
+					["faction"] = 0,
 					["mobCount"] = 0,
 					["winningFaction"] = 0,
 				}, -- [195]
@@ -23738,9 +23738,9 @@ NITdatabase = {
 					["instanceID"] = 489,
 					["kb"] = 0,
 					["classEnglish"] = "WARRIOR",
-					["hk"] = 2,
-					["instanceName"] = "Warsong Gulch",
 					["faction"] = 1,
+					["instanceName"] = "Warsong Gulch",
+					["hk"] = 2,
 					["mobCount"] = 0,
 					["deaths"] = 6,
 				}, -- [210]

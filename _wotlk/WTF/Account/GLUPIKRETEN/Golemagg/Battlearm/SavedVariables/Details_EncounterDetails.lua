@@ -1,16 +1,5 @@
 
 EncounterDetailsDB = {
-	["emotes"] = {
-		{
-			["boss"] = "Keli'dan the Breaker",
-		}, -- [1]
-		{
-			["boss"] = "Broggok",
-		}, -- [2]
-		{
-			["boss"] = "The Maker",
-		}, -- [3]
-	},
 	["encounter_spells"] = {
 		[47468] = {
 			["school"] = 1,
@@ -391,28 +380,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Liixx",
 		},
-		[30913] = {
+		[30925] = {
 			["school"] = 8,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Broggok",
-		},
-		[50475] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_PERIODIC_HEAL"] = true,
-			},
-			["source"] = "Bloodhuntter",
-		},
-		[33707] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Blackheart the Inciter",
+			["source"] = "The Maker",
 		},
 		[33711] = {
 			["school"] = 8,
@@ -424,71 +398,87 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Murmur",
 		},
-		[12039] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Hellfire Watcher",
-		},
-		[50720] = {
+		[33707] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Liixx",
-		},
-		[22857] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Watchkeeper Gargolmar",
-		},
-		[33793] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Vazruden the Herald",
+			["source"] = "Blackheart the Inciter",
 		},
-		[35748] = {
-			["school"] = 32,
+		[50475] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Fiendish Hound",
-		},
-		[55095] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_PERIODIC_HEAL"] = true,
 			},
 			["source"] = "Bloodhuntter",
 		},
-		[33763] = {
-			["school"] = 8,
+		[51409] = {
+			["school"] = 16,
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Seul",
+		},
+		[53248] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_PERIODIC_HEAL"] = true,
 			},
 			["source"] = "Viona",
 		},
-		[5246] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[51418] = {
+			["school"] = 16,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Seul",
+		},
+		[13787] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Liixx",
+			["source"] = "Cabal Warlock",
+		},
+		[33335] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Cabal Spellbinder",
+		},
+		[33499] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Cabal Zealot",
+		},
+		[30914] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Broggok Poison Cloud",
+		},
+		[32691] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Cabal Spellbinder",
 		},
 		[33493] = {
 			["school"] = 32,
@@ -518,14 +508,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Malicious Instructor",
 		},
-		[30914] = {
-			["school"] = 8,
-			["type"] = "BUFF",
+		[55095] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Broggok Poison Cloud",
+			["source"] = "Bloodhuntter",
 		},
 		[30916] = {
 			["school"] = 1,
@@ -534,29 +524,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Broggok",
 		},
-		[33502] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Cabal Spellbinder",
-		},
 		[50401] = {
 			["school"] = 16,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Seul",
-		},
-		[33775] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Keli'dan the Breaker",
 		},
 		[11428] = {
 			["school"] = 1,
@@ -567,6 +540,21 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Cabal Deathsworn",
+		},
+		[33775] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Keli'dan the Breaker",
+		},
+		[33684] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Blackheart the Inciter",
 		},
 		[30926] = {
 			["school"] = 4,
@@ -583,13 +571,47 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Keli'dan the Breaker",
 		},
-		[33684] = {
-			["school"] = 1,
+		[49936] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
+			["source"] = "Bloodhuntter",
+		},
+		[30940] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Keli'dan the Breaker",
+		},
+		[30938] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Keli'dan the Breaker",
+		},
+		[33676] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
 			["source"] = "Blackheart the Inciter",
+		},
+		[51714] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Seul",
 		},
 		[30686] = {
 			["school"] = 32,
@@ -609,38 +631,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Seul",
 		},
-		[33676] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Blackheart the Inciter",
-		},
-		[49936] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Bloodhuntter",
-		},
-		[30940] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Keli'dan the Breaker",
-		},
-		[51714] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Seul",
-		},
 		[17228] = {
 			["school"] = 32,
 			["token"] = {
@@ -657,22 +647,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Liixx",
 		},
-		[32691] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Cabal Spellbinder",
-		},
-		[30938] = {
+		[33502] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Keli'dan the Breaker",
+			["source"] = "Cabal Spellbinder",
+		},
+		[33763] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_PERIODIC_HEAL"] = true,
+			},
+			["source"] = "Viona",
 		},
 		[57330] = {
 			["school"] = 1,
@@ -683,56 +673,55 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Bloodhuntter",
 		},
-		[33499] = {
+		[5246] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Liixx",
+		},
+		[35748] = {
 			["school"] = 32,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Fiendish Hound",
+		},
+		[33793] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Vazruden the Herald",
+		},
+		[22857] = {
+			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Cabal Zealot",
+			["source"] = "Watchkeeper Gargolmar",
 		},
-		[33335] = {
-			["school"] = 32,
+		[50720] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Liixx",
+		},
+		[12039] = {
+			["school"] = 2,
+			["token"] = {
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Cabal Spellbinder",
-		},
-		[13787] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Cabal Warlock",
-		},
-		[51418] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Seul",
-		},
-		[53248] = {
-			["school"] = 8,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_HEAL"] = true,
-			},
-			["source"] = "Viona",
-		},
-		[51409] = {
-			["school"] = 16,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Seul",
+			["source"] = "Hellfire Watcher",
 		},
 		[66960] = {
 			["school"] = 16,
@@ -741,13 +730,24 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Seul",
 		},
-		[30925] = {
+		[30913] = {
 			["school"] = 8,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "The Maker",
+			["source"] = "Broggok",
 		},
+	},
+	["emotes"] = {
+		{
+			["boss"] = "Keli'dan the Breaker",
+		}, -- [1]
+		{
+			["boss"] = "Broggok",
+		}, -- [2]
+		{
+			["boss"] = "The Maker",
+		}, -- [3]
 	},
 }

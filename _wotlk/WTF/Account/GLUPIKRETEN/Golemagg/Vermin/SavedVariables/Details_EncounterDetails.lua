@@ -1021,14 +1021,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Zelfan",
 		},
-		[12471] = {
-			["school"] = 32,
+		[15786] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Ellrys Duskhallow",
+			["source"] = "Apoko",
 		},
 		[44320] = {
 			["school"] = 1,
@@ -1038,19 +1036,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Fel Crystal",
 		},
-		[15786] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Apoko",
-		},
-		[36144] = {
-			["school"] = 2,
+		[12471] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Dalliah the Doomsayer",
+			["source"] = "Ellrys Duskhallow",
+		},
+		[50424] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Darkweaver Syth",
 		},
 		[30739] = {
 			["school"] = 1,
@@ -1287,12 +1287,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Unbound Void Zone",
 		},
-		[50424] = {
-			["school"] = 1,
+		[36144] = {
+			["school"] = 2,
 			["token"] = {
-				["SPELL_HEAL"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Darkweaver Syth",
+			["source"] = "Dalliah the Doomsayer",
 		},
 		[30500] = {
 			["school"] = 32,

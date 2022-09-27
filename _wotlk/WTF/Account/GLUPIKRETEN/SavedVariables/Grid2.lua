@@ -1,7 +1,7 @@
 
 Grid2DB = {
 	["namespaces"] = {
-		["LibDualSpec-1.0"] = {
+		["Grid2AoeHeals"] = {
 		},
 		["Grid2Layout"] = {
 			["global"] = {
@@ -178,7 +178,7 @@ Grid2DB = {
 						["arena"] = "By Group & Class",
 					},
 					["PosY"] = 79.999838360142,
-					["BackgroundB"] = 0.101960784313725,
+					["BackgroundR"] = 0.101960784313725,
 					["extraThemes"] = {
 						{
 							["BackgroundTexture"] = "None",
@@ -297,15 +297,13 @@ Grid2DB = {
 					["anchor"] = "CENTER",
 					["BorderG"] = 0.501960784313726,
 					["PosX"] = -253.333301786579,
-					["BackgroundR"] = 0.101960784313725,
+					["BackgroundB"] = 0.101960784313725,
 				},
 			},
 		},
-		["Grid2AoeHeals"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["Grid2Options"] = {
-		},
-		["Grid2RaidDebuffs"] = {
 		},
 		["Grid2Frame"] = {
 			["profiles"] = {
@@ -343,18 +341,18 @@ Grid2DB = {
 							},
 							["frameTexture"] = "Clean",
 							["font"] = "Arial Narrow",
+							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								60, -- [1]
 								[5] = 60,
 							},
-							["mouseoverHighlight"] = false,
-							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
 							},
+							["orientation"] = "VERTICAL",
 							["frameWidth"] = 125,
 							["mouseoverColor"] = {
 								["a"] = 1,
@@ -389,17 +387,17 @@ Grid2DB = {
 							},
 							["frameBorderTexture"] = "None",
 							["font"] = "Arial Narrow",
+							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["orientation"] = "VERTICAL",
+							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								[10] = 60,
 							},
-							["mouseoverHighlight"] = false,
 							["frameWidth"] = 125,
 							["frameBorderColor"] = {
 								["a"] = 0,
@@ -435,18 +433,18 @@ Grid2DB = {
 							},
 							["frameTexture"] = "Clean",
 							["font"] = "Arial Narrow",
+							["frameHeights"] = {
+								[25] = 60,
+								[40] = 50,
+							},
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["frameHeights"] = {
-								[25] = 60,
-								[40] = 50,
-							},
-							["orientation"] = "VERTICAL",
 							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameWidth"] = 120,
 							["mouseoverColor"] = {
 								["a"] = 1,
@@ -507,18 +505,18 @@ Grid2DB = {
 								["g"] = 1,
 								["r"] = 1,
 							},
+							["frameHeights"] = {
+								[10] = 40,
+								[5] = 50,
+							},
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["frameHeights"] = {
-								[10] = 40,
-								[5] = 50,
-							},
-							["orientation"] = "VERTICAL",
 							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameWidth"] = 125,
 							["frameBorderTexture"] = "None",
 						}, -- [1]
@@ -548,18 +546,18 @@ Grid2DB = {
 								["g"] = 0,
 								["b"] = 0,
 							},
-							["mouseoverHighlight"] = false,
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
 							},
+							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameHeights"] = {
 								[5] = 45,
 								[10] = 50,
 							},
-							["orientation"] = "VERTICAL",
 							["frameWidth"] = 125,
 							["mouseoverColor"] = {
 								["a"] = 1,
@@ -599,18 +597,18 @@ Grid2DB = {
 								["g"] = 1,
 								["b"] = 1,
 							},
-							["mouseoverHighlight"] = false,
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
 							},
-							["orientation"] = "VERTICAL",
+							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								[25] = 20,
 								[40] = 20,
 							},
+							["orientation"] = "VERTICAL",
 							["frameWidth"] = 120,
 							["frameBorderTexture"] = "None",
 						}, -- [3]
@@ -624,6 +622,8 @@ Grid2DB = {
 					["frameBorderDistance"] = -2,
 				},
 			},
+		},
+		["Grid2RaidDebuffs"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -1863,23 +1863,23 @@ Grid2DB = {
 					["fontSize"] = 10,
 				},
 				["mana"] = {
-					["orientation"] = "HORIZONTAL",
+					["height"] = 4,
 					["type"] = "bar",
-					["location"] = {
-						["y"] = 0,
-						["relPoint"] = "BOTTOM",
-						["point"] = "BOTTOM",
-						["x"] = 0,
-					},
+					["backTexture"] = "Clean",
 					["backColor"] = {
 						["a"] = 0.3061864972114563,
 						["r"] = 0,
 						["g"] = 0,
 						["b"] = 0,
 					},
-					["backTexture"] = "Clean",
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "BOTTOM",
+						["point"] = "BOTTOM",
+						["x"] = 0,
+					},
 					["level"] = 3,
-					["height"] = 4,
+					["orientation"] = "HORIZONTAL",
 					["texture"] = "Clean",
 				},
 				["border"] = {
@@ -2133,22 +2133,6 @@ Grid2DB = {
 					["mine"] = false,
 					["spellName"] = "Power Word: Fortitude",
 				},
-				["buff-Renew-mine"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["mine"] = 1,
-					["load"] = {
-						["playerClass"] = {
-							["PRIEST"] = true,
-						},
-					},
-					["spellName"] = 139,
-				},
 				["buff-MarkoftheWild"] = {
 					["type"] = "buff",
 					["color1"] = {
@@ -2165,6 +2149,22 @@ Grid2DB = {
 					},
 					["mine"] = false,
 					["spellName"] = 1126,
+				},
+				["buff-Renew-mine"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["mine"] = 1,
+					["load"] = {
+						["playerClass"] = {
+							["PRIEST"] = true,
+						},
+					},
+					["spellName"] = 139,
 				},
 			},
 			["versions"] = {
@@ -2221,10 +2221,10 @@ Grid2DB = {
 				["health"] = {
 					["health-current"] = 99,
 				},
-				["text-up"] = {
-				},
 				["corner-bottom-left"] = {
 					["threat"] = 50,
+				},
+				["text-up"] = {
 				},
 				["text-up-color"] = {
 					["charmed"] = 65,
@@ -2423,16 +2423,16 @@ Grid2DB = {
 						["b"] = 0,
 					},
 					["opacity"] = 1,
+					["height"] = 4,
+					["backTexture"] = "Clean",
+					["orientation"] = "HORIZONTAL",
+					["level"] = 3,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "BOTTOM",
 						["point"] = "BOTTOM",
 						["x"] = 0,
 					},
-					["orientation"] = "HORIZONTAL",
-					["backTexture"] = "Clean",
-					["level"] = 3,
-					["height"] = 4,
 					["texture"] = "Clean",
 				},
 				["health-color"] = {
@@ -2737,8 +2737,7 @@ Grid2DB = {
 				["icon-left"] = {
 					["raid-icon-player"] = 155,
 				},
-				["corner-bottom-left"] = {
-					["buff-Regrowth-mine"] = 50,
+				["text-up"] = {
 				},
 				["text-up-color"] = {
 					["charmed"] = 65,
@@ -2747,7 +2746,8 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
-				["text-up"] = {
+				["corner-bottom-left"] = {
+					["buff-Regrowth-mine"] = 50,
 				},
 				["corner-top-right"] = {
 					["debuff-Disease"] = 50,
@@ -3088,15 +3088,15 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
-				["text-down-color"] = {
-					["classcolor"] = 99,
-				},
 				["text-up-color"] = {
 					["charmed"] = 65,
 					["feign-death"] = 96,
 					["health-deficit"] = 50,
 					["offline"] = 93,
 					["death"] = 95,
+				},
+				["text-down-color"] = {
+					["classcolor"] = 99,
 				},
 				["icon-center"] = {
 					["ready-check"] = 150,
@@ -3643,15 +3643,15 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
+				["text-down-color"] = {
+					["classcolor"] = 99,
+				},
 				["text-up-color"] = {
 					["charmed"] = 65,
 					["feign-death"] = 96,
 					["health-deficit"] = 50,
 					["offline"] = 93,
 					["death"] = 95,
-				},
-				["text-down-color"] = {
-					["classcolor"] = 99,
 				},
 				["icon-center"] = {
 					["ready-check"] = 150,

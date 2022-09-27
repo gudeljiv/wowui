@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 6055,
+	["session"] = 6061,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -3220,19 +3220,26 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [412]
 		{
-			["message"] = "Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua:813: attempt to concatenate local 'v' (a table value)",
-			["time"] = "2022/09/03 10:38:33",
-			["stack"] = "[string \"@Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua\"]:813: in function `member'\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:221: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:169>\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1239: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:1121>\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1652: in function `FeedGroup'\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1932: in function `Open'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua\"]:1031: in function `FillOptions'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua\"]:1028: in function <...dOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua:1026>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:72: in function <...ce\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:70>\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:306: in function `Fire'\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIContainer-TabGroup.lua\"]:156: in function `SelectTab'\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIContainer-TabGroup.lua\"]:67: in function <...Libs\\AceGUI-3.0\\widgets\\AceGUIContainer-TabGroup.lua:64>",
-			["session"] = 6046,
-			["counter"] = 18,
-		}, -- [413]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
 			["time"] = "2022/02/16 20:30:17",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
 			["session"] = 6048,
 			["counter"] = 13,
+		}, -- [413]
+		{
+			["message"] = "Lua error in aura 'OH': Custom Trigger Combination\nWeakAuras Version: 4.1.2\n[string \"return function(t)...\"]:3: attempt to call local 't' (a table value)",
+			["time"] = "2022/09/27 14:29:06",
+			["stack"] = "[string \"return function(t)\n    \n    print(t(1),t(2))\n    return t[1] or t[2]\nend\"]:3: in function <[string \"return function(t)...\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:4057: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:4042>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:4162: in function `UpdatedTriggerState'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:3932: in function `FakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:3913: in function `ClearFakeStates'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua\"]:176: in function <...dOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua:173>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\WeakAurasOptions-4.1.2.lua\"]:618: in function <...terface\\AddOns\\WeakAurasOptions\\WeakAurasOptions.lua:616>",
+			["session"] = 6059,
+			["counter"] = 3,
 		}, -- [414]
+		{
+			["message"] = "Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua:813: attempt to concatenate local 'v' (a table value)",
+			["time"] = "2022/09/03 10:38:33",
+			["stack"] = "[string \"@Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua\"]:813: in function `member'\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:221: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:169>\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1239: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:1121>\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1652: in function `FeedGroup'\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1932: in function `Open'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua\"]:1031: in function `FillOptions'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua\"]:1028: in function <...dOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua:1026>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:72: in function <...ce\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:70>\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:306: in function `Fire'\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIContainer-TabGroup.lua\"]:156: in function `SelectTab'\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIContainer-TabGroup.lua\"]:67: in function <...Libs\\AceGUI-3.0\\widgets\\AceGUIContainer-TabGroup.lua:64>",
+			["session"] = 6060,
+			["counter"] = 23,
+		}, -- [415]
 	},
 }
