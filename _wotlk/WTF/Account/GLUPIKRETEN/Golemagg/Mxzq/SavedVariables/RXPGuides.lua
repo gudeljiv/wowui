@@ -96,7 +96,7 @@ RXPCTrackingData = {
 							["hour"] = 19,
 							["minute"] = 27,
 						},
-						["started"] = 1664265127,
+						["started"] = 1664278369,
 					},
 					["quests"] = {
 					},
@@ -182,35 +182,35 @@ RXPCComms = {
 					["class"] = "PALADIN",
 					["xp"] = 500,
 				},
-				["Johnylecitel"] = {
-					["timePlayed"] = 883.7549999998882,
-					["class"] = "PRIEST",
-					["xp"] = 1268,
-				},
-				["Hulari"] = {
-					["timePlayed"] = 1545.662000000011,
-					["class"] = "ROGUE",
-					["xp"] = 920,
-				},
-				["Jaffrost"] = {
-					["timePlayed"] = 1545.662000000011,
+				["Rompido"] = {
+					["timePlayed"] = 71.13700000010431,
 					["class"] = "DEATHKNIGHT",
-					["xp"] = 920,
+					["xp"] = 1376,
 				},
 				["Brutikus"] = {
 					["timePlayed"] = 85.72200000006706,
 					["class"] = "WARRIOR",
 					["xp"] = 1376,
 				},
+				["Jaffrost"] = {
+					["timePlayed"] = 1545.662000000011,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 920,
+				},
+				["Hulari"] = {
+					["timePlayed"] = 1545.662000000011,
+					["class"] = "ROGUE",
+					["xp"] = 920,
+				},
 				["Litenshaman"] = {
 					["timePlayed"] = 1389.503000000026,
 					["class"] = "SHAMAN",
 					["xp"] = 1268,
 				},
-				["Rompido"] = {
-					["timePlayed"] = 71.13700000010431,
-					["class"] = "DEATHKNIGHT",
-					["xp"] = 1376,
+				["Johnylecitel"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "PRIEST",
+					["xp"] = 1268,
 				},
 				["Wixë"] = {
 					["timePlayed"] = 883.7549999998882,
