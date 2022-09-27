@@ -1,20 +1,22 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
+		[11] = {
+		},
 	},
-	["currentStep"] = 1,
+	["currentStep"] = 11,
 	["SoM"] = 1,
-	["currentGuideGroup"] = "",
+	["currentGuideGroup"] = "Horde 1-30",
 	["flightPaths"] = {
 	},
 	["xprate"] = 1.5,
 	["JoyousJourneys"] = true,
-	["phase"] = 6,
-	["currentGuideName"] = "",
+	["frameHeight"] = 125.000114440918,
+	["currentGuideName"] = "01-06 Tirisfal Glades",
 	["stepSkip"] = {
 	},
 	["hardcore"] = false,
-	["frameHeight"] = 125.0000152587891,
+	["phase"] = 6,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -28,8 +30,8 @@ RXPCTrackingData = {
 					["deaths"] = 0,
 					["mobs"] = {
 						["Tirisfal Glades"] = {
-							["xp"] = 210,
-							["count"] = 3,
+							["xp"] = 1356,
+							["count"] = 23,
 						},
 					},
 					["timestamp"] = {
@@ -37,13 +39,16 @@ RXPCTrackingData = {
 							["monthDay"] = 12,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 2,
+							["minute"] = 37,
 							["year"] = 2022,
 							["hour"] = 16,
-							["minute"] = 37,
+							["weekday"] = 2,
 						},
 					},
 					["quests"] = {
+						["Tirisfal Glades"] = {
+							[3901] = 320,
+						},
 					},
 				},
 			},
@@ -56,6 +61,14 @@ RXPCComms = {
 	},
 	["profiles"] = {
 		["Battitude - Golemagg"] = {
+			["announcements"] = {
+				["01-06 Tirisfal Glades"] = {
+					["collect"] = {
+					},
+					["complete"] = {
+					},
+				},
+			},
 		},
 	},
 }

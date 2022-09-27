@@ -584,7 +584,9 @@ CB_PlayedTime = {
 		["total"] = 53,
 	},
 	["Battitude-Golemagg"] = {
-		["total"] = 7847,
+		["total"] = 12896,
+		["timeStamp"] = 2779.608,
+		["timeAtThisLevel"] = 1,
 	},
 	["Whatevs-"] = {
 		["total"] = 213,
@@ -681,9 +683,9 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 202406,
-		["timeStamp"] = 83594.869,
-		["timeAtThisLevel"] = 196660,
+		["total"] = 202451,
+		["timeStamp"] = 3061.832,
+		["timeAtThisLevel"] = 196705,
 	},
 	["Battlearm-Golemagg"] = {
 		["total"] = 90273,

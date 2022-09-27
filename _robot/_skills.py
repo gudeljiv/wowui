@@ -115,4 +115,6 @@ skills["shaman"] = [
 ]
 
 skills["rogue"] = [
+    {"name": "sinister strike", "key": "f11"},
+    {"name": "eviscerate", "key": "4"},
 ]

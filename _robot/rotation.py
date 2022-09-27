@@ -106,6 +106,7 @@ with keyboard.Listener(on_press=on_press) as listener:
             p_interrupt = {"top": 0, "left": monitor == "2k" and 27 or 42, "width": 7, "height": 7}
             p_behind = {"top": 0, "left": monitor == "2k" and 38 or 62, "width": 7, "height": 7}
             p_clss = {"top": 0, "left": monitor == "2k" and 49 or 74, "width": 7, "height": 7}
+            p_rotation = {"top": 0, "left": monitor == "2k" and 60 or 94, "width": 7, "height": 7}
 
             grabbed_image = dir_path + "/_main.png".format(**p_main)
             main_image = sct.grab(p_main)
@@ -172,7 +173,8 @@ with keyboard.Listener(on_press=on_press) as listener:
 
                 grabbed = cv2.cvtColor(numpy.array(main_image), cv2.COLOR_BGR2GRAY)
 
-                # print(hex, wow_class)
+                # if dprint:
+                #     print("class", hex, wow_class)
 
                 # rotation
                 for skill in skills[wow_class]:

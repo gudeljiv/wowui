@@ -32,6 +32,7 @@ function enable()
 end
 
 function uierrorsframe_addmessage(frame, text, red, green, blue, id)
+	print(text)
 	for i, v in ipairs(messages) do
 		if text and text:match(v) then
 			return
