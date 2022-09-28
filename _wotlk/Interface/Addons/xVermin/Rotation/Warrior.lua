@@ -92,88 +92,84 @@ end
 -- RotationTextureFrame.texture:SetTexture(GetSpellTexture(78))
 
 local data = {}
-
 local skills = {}
 skills['revenge'] = '#7bd079'
 
 -- PlayerFrame:HookScript(
 -- 	'OnUpdate',
 -- 	function()
--- if AOE('Heroic Strike') then
--- 	print('aoe')
--- else
--- 	print('single target')
--- end
+-- 		if AOE('Heroic Strike') then
+-- 			print('aoe')
+-- 		else
+-- 			print('single target')
+-- 		end
 
--- if not InCombatLockdown() then
--- 	return
--- end
+-- 		if not InCombatLockdown() then
+-- 			return
+-- 		end
 
--- data.player.health.current = UnitHealth('player')
--- data.player.health.max = UnitHealthMax('player')
--- data.player.health.percentage = string.format('%.f', data.player.health.current / data.player.health.max * 100)
--- data.player.mana.current = UnitMana('player')
--- data.player.mana.max = UnitManaMax('player')
--- data.player.mana.percentage = string.format('%.f', data.player.mana.current / data.player.mana.max * 100)
--- data.player.xp.current = UnitXP('player')
--- data.player.xp.max = UnitXPMax('player')
--- data.player.xp.percentage = string.format('%.f', data.player.xp.current / data.player.xp.max * 100)
-
--- data.target.health.current = UnitHealth('target')
--- data.target.health.max = UnitHealthMax('target')
--- data.target.health.percentage = string.format('%.f', data.target.health.current / data.target.health.max * 100)
--- data.target.mana.current = UnitMana('target')
--- data.target.mana.max = UnitManaMax('target')
--- data.target.mana.percentage = string.format('%.f', data.target.mana.current / data.target.mana.max * 100)
--- data.target.xp.current = UnitXP('target')
--- data.target.xp.max = UnitXPMax('target')
--- data.target.xp.percentage = string.format('%.f', data.target.xp.current / data.target.xp.max * 100)
-
--- data = {
--- 	player = {
--- 		health = {
--- 			current = UnitHealth('player'),
--- 			max = UnitHealthMax('player'),
--- 			percentage = string.format('%.f', data.player.health.current / data.player.health.max * 100)
--- 		},
--- 		mana = {
--- 			current = UnitMana('player'),
--- 			max = UnitManaMax('player'),
--- 			percentage = string.format('%.f', data.player.mana.current / data.player.mana.max * 100)
--- 		},
--- 		xp = {
--- 			current = UnitXP('player'),
--- 			max = UnitXPMax('player'),
--- 			percentage = string.format('%.f', data.player.xp.current / data.player.xp.max * 100)
+-- 		data = {
+-- 			player = {
+-- 				health = {
+-- 					current = UnitHealth('player'),
+-- 					max = UnitHealthMax('player'),
+-- 					percentage = string.format('%.f', UnitHealth('player') / UnitHealthMax('player') * 100)
+-- 				},
+-- 				mana = {
+-- 					current = UnitMana('player'),
+-- 					max = UnitManaMax('player'),
+-- 					percentage = string.format('%.f', UnitMana('player') / UnitManaMax('player') * 100)
+-- 				},
+-- 				xp = {
+-- 					current = UnitXP('player'),
+-- 					max = UnitXPMax('player'),
+-- 					percentage = string.format('%.f', UnitXP('player') / UnitXPMax('player') * 100)
+-- 				}
+-- 			},
+-- 			target = {
+-- 				health = {
+-- 					current = UnitHealth('target'),
+-- 					max = UnitHealthMax('target'),
+-- 					percentage = string.format('%.f', UnitHealth('target') / UnitHealthMax('target') * 100)
+-- 				},
+-- 				mana = {
+-- 					current = UnitMana('target'),
+-- 					max = UnitManaMax('target'),
+-- 					percentage = string.format('%.f', UnitMana('target') / UnitManaMax('target') * 100)
+-- 				},
+-- 				xp = {
+-- 					current = UnitXP('target'),
+-- 					max = UnitXPMax('target'),
+-- 					percentage = string.format('%.f', UnitXP('target') / UnitXPMax('target') * 100)
+-- 				}
+-- 			},
+-- 			pet = {
+-- 				health = {
+-- 					current = UnitHealth('pet'),
+-- 					max = UnitHealthMax('pet'),
+-- 					percentage = string.format('%.f', UnitHealth('pet') / UnitHealthMax('pet') * 100)
+-- 				},
+-- 				mana = {
+-- 					current = UnitMana('pet'),
+-- 					max = UnitManaMax('pet'),
+-- 					percentage = string.format('%.f', UnitMana('pet') / UnitManaMax('pet') * 100)
+-- 				},
+-- 				xp = {
+-- 					current = UnitXP('pet'),
+-- 					max = UnitXPMax('pet'),
+-- 					percentage = string.format('%.f', UnitXP('pet') / UnitXPMax('pet') * 100)
+-- 				}
+-- 			}
 -- 		}
--- 	},
--- 	target = {
--- 		health = {
--- 			current = UnitHealth('target'),
--- 			max = UnitHealthMax('target'),
--- 			percentage = string.format('%.f', data.target.health.current / data.target.health.max * 100)
--- 		},
--- 		mana = {
--- 			current = UnitMana('target'),
--- 			max = UnitManaMax('target'),
--- 			percentage = string.format('%.f', data.target.mana.current / data.target.mana.max * 100)
--- 		},
--- 		xp = {
--- 			current = UnitXP('target'),
--- 			max = UnitXPMax('target'),
--- 			percentage = string.format('%.f', data.target.xp.current / data.target.xp.max * 100)
--- 		}
--- 	}
--- }
 
--- print('target % ', data.target.xp.current)
--- RotationFrame6:SetBackdropColor(xVermin:hex2rgb(skills.revenge).r, xVermin:hex2rgb(skills.revenge).g, xVermin:hex2rgb(skills.revenge).b)
--- print(skills.revenge, xVermin:hex2rgbraw(skills.revenge).r, xVermin:hex2rgbraw(skills.revenge).g, xVermin:hex2rgbraw(skills.revenge).b)
+-- 		-- print('target % ', data.target.xp.current)
+-- 		-- RotationFrame6:SetBackdropColor(xVermin:hex2rgb(skills.revenge).r, xVermin:hex2rgb(skills.revenge).g, xVermin:hex2rgb(skills.revenge).b)
+-- 		-- print(skills.revenge, xVermin:hex2rgbraw(skills.revenge).r, xVermin:hex2rgbraw(skills.revenge).g, xVermin:hex2rgbraw(skills.revenge).b)
 
--- if IsSpellInRange('Revenge', 'target') == 1 and select(1, IsUsableSpell('Revenge')) then
--- 	RotationFrame6:SetBackdropColor(xVermin:hex2rgb(skills.revenge))
--- else
--- 	RotationFrame6:SetBackdropColor(1, 1, 1, 1)
--- end
+-- 		-- if IsSpellInRange('Revenge', 'target') == 1 and select(1, IsUsableSpell('Revenge')) then
+-- 		-- 	RotationFrame6:SetBackdropColor(xVermin:hex2rgb(skills.revenge))
+-- 		-- else
+-- 		-- 	RotationFrame6:SetBackdropColor(1, 1, 1, 1)
+-- 		-- end
 -- 	end
 -- )
