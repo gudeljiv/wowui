@@ -13,6 +13,7 @@ OmniCCDB = {
 		["Battitude - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
+		["Wells - Jin'do"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 	},
 	["profiles"] = {
@@ -81,6 +82,7 @@ OmniCCDB = {
 						["soon"] = {
 						},
 						["minutes"] = {
+							["scale"] = 0.8,
 						},
 						["seconds"] = {
 						},
@@ -97,6 +99,7 @@ OmniCCDB = {
 					["fontFace"] = "Fonts\\ARIALN.TTF",
 					["cooldownOpacity"] = 0,
 					["spiralOpacity"] = 1.00999997742474,
+					["fontSize"] = 16,
 				},
 				["Ignore"] = {
 					["textStyles"] = {
@@ -128,13 +131,13 @@ OmniCC4Config = {
 		["base"] = {
 			["enabled"] = true,
 			["fontSize"] = 18,
-			["yOff"] = 0,
-			["effect"] = "pulse",
 			["scaleText"] = true,
+			["effect"] = "pulse",
+			["minDuration"] = 2,
 			["minEffectDuration"] = 30,
 			["anchor"] = "CENTER",
 			["spiralOpacity"] = 1.00999997742474,
-			["minDuration"] = 2,
+			["yOff"] = 0,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
@@ -229,14 +232,14 @@ OmniCC4Config = {
 			["mmSSDuration"] = 0,
 			["minSize"] = 0.5,
 			["spiralOpacity"] = 1,
-			["yOff"] = 0,
+			["scaleText"] = true,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["anchor"] = "CENTER",
 			["minEffectDuration"] = 30,
+			["yOff"] = 0,
 			["minDuration"] = 3,
-			["scaleText"] = true,
 		},
 	},
 	["groups"] = {

@@ -5,8 +5,9 @@ ErrorFilterDB = {
 		["Vermina - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
+		["Wells - Jin'do"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 	},
 	["profiles"] = {

@@ -327,7 +327,7 @@ function unitscan.sorted_targets()
 end
 
 function unitscan.toggle_target(name)
-	local key = name
+	local key = strupper(name)
 	if unitscan_targets[key] then
 		unitscan_targets[key] = nil
 		found[key] = nil

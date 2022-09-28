@@ -29,6 +29,7 @@ ChocolateBarDB = {
 		["Battlearm - Golemagg"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
 		["Mxys - Golemagg"] = "Default",
+		["Wells - Jin'do"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Spija - Genesis"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
@@ -36,14 +37,14 @@ ChocolateBarDB = {
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Kosturko - Golemagg"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
+		["Kosturko - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
 		["Nitwit - Dreadnaught"] = "Default",
 		["Moolatz - Dreadnaught"] = "Default",
@@ -620,6 +621,11 @@ CB_PlayedTime = {
 	["Nitwit-Dreadnaught"] = {
 		["total"] = 8735,
 	},
+	["Wells-Jin'do"] = {
+		["total"] = 5709,
+		["timeAtThisLevel"] = 0,
+		["timeStamp"] = 515012.29,
+	},
 	["Mxyzptlk-Golemagg"] = {
 		["total"] = 29335,
 	},
@@ -638,9 +644,9 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 204075,
-		["timeAtThisLevel"] = 198329,
-		["timeStamp"] = 6260.87,
+		["total"] = 204110,
+		["timeAtThisLevel"] = 198364,
+		["timeStamp"] = 6296.615,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,
@@ -654,8 +660,8 @@ CB_PlayedTime = {
 	["Pitchwise-"] = {
 		["total"] = 390,
 	},
-	["Elohssa-"] = {
-		["total"] = 3552,
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 	["Dmitar-"] = {
 		["total"] = 1872,
@@ -663,8 +669,8 @@ CB_PlayedTime = {
 	["Nitwit-"] = {
 		["total"] = 680,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Elohssa-"] = {
+		["total"] = 3552,
 	},
 	["Greshnik-Dreadnaught"] = {
 		["total"] = 576,

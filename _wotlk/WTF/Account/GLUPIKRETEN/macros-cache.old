@@ -20,13 +20,13 @@ VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:159
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat 
+/use [nocombat]item:7097
+/castsequence [combat] reset=combat item:118
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
@@ -40,13 +40,13 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:118
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run unitscan_button:ClearAllPoints()
-/run unitscan_button:SetPoint('TOP', UIParent, 0, -150)
+/run AdiBagsItemButton57Cooldown:SetScale(0.8)
+/run AdiBagsItemButton57Cooldown.SetScale = function() end
 END

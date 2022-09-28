@@ -7,6 +7,7 @@ LS_TOASTS_GLOBAL_CONFIG = {
 		["Greshnik - Dreadnaught"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
+		["Wells - Jin'do"] = "Default",
 		["Poklopac - Dreadnaught"] = "Default",
 		["Mxym - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
@@ -50,8 +51,8 @@ LS_TOASTS_GLOBAL_CONFIG = {
 			["anchors"] = {
 				{
 					["point"] = {
-						["y"] = 494,
-						["x"] = 220,
+						["y"] = 408,
+						["x"] = 570,
 						["p"] = "BOTTOMLEFT",
 						["rP"] = "BOTTOMLEFT",
 					},

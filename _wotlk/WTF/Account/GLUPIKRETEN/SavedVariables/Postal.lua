@@ -9,6 +9,7 @@ Postal3DB = {
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [4]
 				"Mxzq|Golemagg|Horde|70|HUNTER", -- [5]
 				"Vermin|Golemagg|Horde|70|WARRIOR", -- [6]
+				"Wells|Jin'do|Horde|7|DRUID", -- [7]
 			},
 		},
 	},
@@ -16,8 +17,9 @@ Postal3DB = {
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
+		["Wells - Jin'do"] = "Wells - Jin'do",
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 	},
 	["profiles"] = {
@@ -27,9 +29,11 @@ Postal3DB = {
 		},
 		["Vermin - Golemagg"] = {
 		},
+		["Moolatz - Golemagg"] = {
+		},
 		["Battlearm - Golemagg"] = {
 		},
-		["Moolatz - Golemagg"] = {
+		["Wells - Jin'do"] = {
 		},
 		["Battitude - Golemagg"] = {
 		},

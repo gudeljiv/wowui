@@ -29,8 +29,9 @@ RXPDB = {
 		["Vermina - Golemagg"] = "global",
 		["Mxyz - Golemagg"] = "global",
 		["Mxzq - Golemagg"] = "global",
-		["Battlearm - Golemagg"] = "global",
 		["Moolatz - Golemagg"] = "global",
+		["Battlearm - Golemagg"] = "global",
+		["Wells - Jin'do"] = "global",
 		["Battitude - Golemagg"] = "global",
 	},
 	["profiles"] = {
