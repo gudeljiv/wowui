@@ -118,10 +118,21 @@ local blacklist = {
 	[SPELL_FAILED_MOVING] = false,
 	[SPELL_FAILED_UNIT_NOT_INFRONT] = false
 }
-function f:UI_ERROR_MESSAGE(error)
-	if not blacklist[error] then
-		UIErrorsFrame:AddMessage(error, 1, .1, .1)
+-- function mod:UI_ERROR_MESSAGE(error)
+-- 	if not blacklist[error] then
+-- 		UIErrorsFrame:AddMessage(error, 1, .1, .1)
+-- 	end
+-- end
+-- mod:RegisterEvent('UI_ERROR_MESSAGE')
+-- UIErrorsFrame:UnregisterEvent('UI_ERROR_MESSAGE')
+
+local UIErrorsFrame_OnEvent = UIErrorsFrame:GetScript('OnEvent')
+UIErrorsFrame:SetScript(
+	'OnEvent',
+	function(self, event, error, ...)
+		if event == 'UI_ERROR_MESSAGE' and blacklist[error] then
+			return
+		end
+		UIErrorsFrame_OnEvent(self, event, error, ...)
 	end
-end
-f:RegisterEvent('UI_ERROR_MESSAGE')
-UIErrorsFrame:UnregisterEvent('UI_ERROR_MESSAGE')
+)

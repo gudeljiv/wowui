@@ -638,9 +638,9 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 202406,
-		["timeAtThisLevel"] = 196660,
-		["timeStamp"] = 83594.869,
+		["total"] = 204075,
+		["timeAtThisLevel"] = 198329,
+		["timeStamp"] = 6260.87,
 	},
 	["Konac-Dreadnaught"] = {
 		["total"] = 89354,

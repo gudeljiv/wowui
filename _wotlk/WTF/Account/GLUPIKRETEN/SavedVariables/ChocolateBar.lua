@@ -683,9 +683,9 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 202451,
-		["timeStamp"] = 3061.832,
-		["timeAtThisLevel"] = 196705,
+		["total"] = 204110,
+		["timeStamp"] = 6296.615,
+		["timeAtThisLevel"] = 198364,
 	},
 	["Battlearm-Golemagg"] = {
 		["total"] = 90273,

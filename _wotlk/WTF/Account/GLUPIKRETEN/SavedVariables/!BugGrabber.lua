@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 6066,
+	["session"] = 6070,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3126,19 +3126,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [400]
 		{
-			["message"] = "(null)",
-			["time"] = "2022/03/09 13:39:43",
-			["session"] = 6015,
-			["counter"] = 73,
-		}, -- [401]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:102: attempt to index upvalue 'Rotation' (a nil value)",
 			["time"] = "2022/09/26 12:36:33",
 			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index upvalue 'Rotation' (a nil value)\"\nRotation = nil\ndata = nil\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:101\n Debug = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:14\n Color = <table> {\n }\n Class = \"PRIEST\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:83\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:41\n hex2rgb = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:157\n Round = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:118\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:145\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:130\n}\nskills = <table> {\n revenge = \"#FCFFEE\"\n}\n",
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:102: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:101>\n[string \"=[C]\"]: ?",
 			["session"] = 6016,
 			["counter"] = 1812,
-		}, -- [402]
+		}, -- [401]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:117: attempt to index upvalue 'data' (a nil value)",
 			["time"] = "2022/09/26 12:43:28",
@@ -3146,7 +3140,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:117: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:101>\n[string \"=[C]\"]: ?",
 			["session"] = 6021,
 			["counter"] = 1553,
-		}, -- [403]
+		}, -- [402]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:112: attempt to index upvalue 'data' (a nil value)",
 			["time"] = "2022/09/26 12:46:19",
@@ -3154,7 +3148,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:112: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:101>\n[string \"=[C]\"]: ?",
 			["session"] = 6022,
 			["counter"] = 197,
-		}, -- [404]
+		}, -- [403]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:112: attempt to index field 'player' (a nil value)",
 			["time"] = "2022/09/26 12:46:52",
@@ -3162,7 +3156,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:112: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:101>\n[string \"=[C]\"]: ?",
 			["session"] = 6023,
 			["counter"] = 227,
-		}, -- [405]
+		}, -- [404]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\_Core.lua:155: attempt to call global 'Rounds' (a nil value)",
 			["time"] = "2022/09/26 17:45:17",
@@ -3170,7 +3164,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\_Core.lua\"]:155: in function `hex2rgb'\n[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:170: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:101>\n[string \"=[C]\"]: ?",
 			["session"] = 6027,
 			["counter"] = 519,
-		}, -- [406]
+		}, -- [405]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\_Core.lua:158: attempt to perform arithmetic on a string value",
 			["time"] = "2022/09/26 17:49:53",
@@ -3178,7 +3172,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\_Core.lua\"]:158: in function `hex2rgb'\n[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:170: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:101>\n[string \"=[C]\"]: ?",
 			["session"] = 6033,
 			["counter"] = 396,
-		}, -- [407]
+		}, -- [406]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\_Core.lua:161: attempt to perform arithmetic on a string value",
 			["time"] = "2022/09/26 17:52:57",
@@ -3186,7 +3180,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\_Core.lua\"]:161: in function `hex2rgb'\n[string \"@Interface\\AddOns\\xVermin\\Rotation/Warrior.lua\"]:170: in function <Interface\\AddOns\\xVermin\\Rotation/Warrior.lua:101>\n[string \"=[C]\"]: ?",
 			["session"] = 6036,
 			["counter"] = 447,
-		}, -- [408]
+		}, -- [407]
 		{
 			["message"] = "[string \"print(OffhandHasWeapon())\"]:1: attempt to call global 'OffhandHasWeapon' (a nil value)",
 			["time"] = "2022/09/26 20:24:17",
@@ -3194,7 +3188,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(OffhandHasWeapon())\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 6046,
 			["counter"] = 1,
-		}, -- [409]
+		}, -- [408]
 		{
 			["message"] = "[string \"print(GetInventoryItemLink(\"player\",GetInventorySlotInfo(\"Secon...\"]:1: ')' expected near '<eof>'",
 			["time"] = "2022/09/26 20:24:46",
@@ -3202,7 +3196,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 6046,
 			["counter"] = 1,
-		}, -- [410]
+		}, -- [409]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
 			["time"] = "2022/02/16 20:30:17",
@@ -3210,21 +3204,21 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:913: in function `TargetofTarget_Update'\n[string \"@Interface_TBC\\FrameXML\\TargetFrame.lua\"]:416: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?",
 			["session"] = 6048,
 			["counter"] = 13,
-		}, -- [411]
+		}, -- [410]
 		{
 			["message"] = "Lua error in aura 'OH': Custom Trigger Combination\nWeakAuras Version: 4.1.2\n[string \"return function(t)...\"]:3: attempt to call local 't' (a table value)",
 			["time"] = "2022/09/27 14:29:06",
 			["stack"] = "[string \"return function(t)\n    \n    print(t(1),t(2))\n    return t[1] or t[2]\nend\"]:3: in function <[string \"return function(t)...\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:4057: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:4042>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:4162: in function `UpdatedTriggerState'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:3932: in function `FakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:3913: in function `ClearFakeStates'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua\"]:176: in function <...dOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua:173>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\WeakAurasOptions-4.1.2.lua\"]:618: in function <...terface\\AddOns\\WeakAurasOptions\\WeakAurasOptions.lua:616>",
 			["session"] = 6059,
 			["counter"] = 3,
-		}, -- [412]
+		}, -- [411]
 		{
 			["message"] = "Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua:813: attempt to concatenate local 'v' (a table value)",
 			["time"] = "2022/09/03 10:38:33",
 			["stack"] = "[string \"@Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua\"]:813: in function `member'\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:221: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:169>\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1239: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:1121>\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1652: in function `FeedGroup'\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1932: in function `Open'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua\"]:1031: in function `FillOptions'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua\"]:1028: in function <...dOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua:1026>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:72: in function <...ce\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:70>\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:306: in function `Fire'\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIContainer-TabGroup.lua\"]:156: in function `SelectTab'\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIContainer-TabGroup.lua\"]:67: in function <...Libs\\AceGUI-3.0\\widgets\\AceGUIContainer-TabGroup.lua:64>",
 			["session"] = 6060,
 			["counter"] = 23,
-		}, -- [413]
+		}, -- [412]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrame:ClearAllPoints()'.",
 			["time"] = "2022/09/24 12:59:20",
@@ -3232,7 +3226,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:82: in function <Interface\\AddOns\\xVermin\\xVermin.lua:81>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_Wrath\\FrameXML\\TargetFrame.lua\"]:114: in function `TargetFrame_Update'\n[string \"@Interface_Wrath\\FrameXML\\TargetFrame.lua\"]:158: in function `OnEvent'\n[string \"@Interface\\FrameXML\\UnitFrame.lua\"]:742: in function <Interface\\FrameXML\\UnitFrame.lua:740>\n[string \"=[C]\"]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
 			["session"] = 6062,
 			["counter"] = 4,
-		}, -- [414]
+		}, -- [413]
 		{
 			["message"] = "...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:751: attempt to index local 'color' (a nil value)",
 			["time"] = "2022/02/17 22:46:39",
@@ -3240,6 +3234,28 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:751: in function `AuctionFrameBrowse_Update'\n[string \"@Interface_TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua\"]:277: in function <...TBC\\AddOns\\Blizzard_AuctionUI\\Blizzard_AuctionUI.lua:275>",
 			["session"] = 6066,
 			["counter"] = 57,
+		}, -- [414]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Helpers/ErrorsFilter.lua:121: attempt to index global 'f' (a nil value)",
+			["time"] = "2022/09/28 11:26:02",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:101\n Debug = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:14\n Color = <table> {\n }\n Class = \"PRIEST\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:83\n ClassColor = <table> {\n }\n Config = <table> {\n }\n Log = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:41\n hex2rgb = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:156\n Round = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:118\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:144\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:129\n}\nblacklist = <table> {\n You are in flight = true\n Ability is not ready yet. = true\n Not enough focus = true\n Not enough endurance = true\n Can't attack while channeling. = false\n Can't attack while charmed. = false\n Target is too far away. = false\n Can't attack while dead. = false\n Not enough runes = true\n No target = true\n Target needs to be in front of you. = false\n Can't do that while moving = false\n No valid targets. = true\n You can't do that while in combat = false\n Not enough energy = true\n Another action is in progress = true\n You have no target. = true\n Invalid target = true\n You can't do that right now. = false\n You are too far away. = false\n There is nothing to attack. = true\n That ability requires combo points = true\n You can't do that yet = true\n You are not in control of your actions = true\n You can't do that while moving! = false\n Can't attack while stunned. = false\n You are mounted. = true\n Not enough runic power = true\n You can't do that while you are immune. = false\n You have insufficient Blood Charges. = true\n You aren't facing the right angle! = false\n Can't attack while pacified. = false\n Out of range. = false\n You are too far away! = true\n You need to be closer to interact with that target. = false\n You can't do that while disarmed = false\n Spell is not ready yet. = true\n Not enough holy power = true\n Can't attack while fleeing. = false\n Not enough rage = true\n You are facing the wrong way! = false\n You can't do that while mounted. = false\n You can't do that while jumping or falling = false\n Can't attack while mounted. = true\n Can't attack while confused. = false\n Item is not ready yet. = true\n You cannot attack that target. = true\n You are stunned = false\n Interrupted = false\n Not enough mana = true\n}\n(*temporary) = nil\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Helpers/ErrorsFilter.lua:121\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'f' (a nil value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Helpers/ErrorsFilter.lua\"]:121: in main chunk",
+			["session"] = 6069,
+			["counter"] = 3,
 		}, -- [415]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Helpers/ErrorsFilter.lua:121: attempt to index global 'mod' (a function value)",
+			["time"] = "2022/09/28 11:27:14",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:101\n Debug = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:14\n Color = <table> {\n }\n Class = \"PRIEST\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:83\n ClassColor = <table> {\n }\n Config = <table> {\n }\n Log = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:41\n hex2rgb = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:156\n Round = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:118\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:144\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:129\n}\nblacklist = <table> {\n You are in flight = true\n Ability is not ready yet. = true\n Not enough focus = true\n Not enough endurance = true\n Can't attack while channeling. = false\n Can't attack while charmed. = false\n Target is too far away. = false\n Can't attack while dead. = false\n Not enough runes = true\n No target = true\n Target needs to be in front of you. = false\n Can't do that while moving = false\n No valid targets. = true\n You can't do that while in combat = false\n Not enough energy = true\n Another action is in progress = true\n You have no target. = true\n Invalid target = true\n You can't do that right now. = false\n You are too far away. = false\n There is nothing to attack. = true\n That ability requires combo points = true\n You can't do that yet = true\n You are not in control of your actions = true\n You can't do that while moving! = false\n Can't attack while stunned. = false\n You are mounted. = true\n Not enough runic power = true\n You can't do that while you are immune. = false\n You have insufficient Blood Charges. = true\n You aren't facing the right angle! = false\n Can't attack while pacified. = false\n Out of range. = false\n You are too far away! = true\n You need to be closer to interact with that target. = false\n You can't do that while disarmed = false\n Spell is not ready yet. = true\n Not enough holy power = true\n Can't attack while fleeing. = false\n Not enough rage = true\n You are facing the wrong way! = false\n You can't do that while mounted. = false\n You can't do that while jumping or falling = false\n Can't attack while mounted. = true\n Can't attack while confused. = false\n Item is not ready yet. = true\n You cannot attack that target. = true\n You are stunned = false\n Interrupted = false\n Not enough mana = true\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Helpers/ErrorsFilter.lua:121\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'mod' (a function value)\"\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Helpers/ErrorsFilter.lua\"]:121: in main chunk",
+			["session"] = 6070,
+			["counter"] = 1,
+		}, -- [416]
+		{
+			["message"] = "(null)",
+			["time"] = "2022/03/09 13:39:43",
+			["session"] = 6070,
+			["counter"] = 85,
+		}, -- [417]
 	},
 }
