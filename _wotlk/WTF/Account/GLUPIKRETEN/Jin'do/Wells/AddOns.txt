@@ -62,7 +62,7 @@ TellMeWhen_Options: enabled
 !Beautycase: enabled
 Align: enabled
 Auctionator: enabled
-BlizzMove: disabled
+BlizzMove: enabled
 ChocolateBar: enabled
 ClassicAuraDurations: enabled
 ClassicAutoDismount: enabled
@@ -123,7 +123,7 @@ aux-addon: disabled
 RXPGuides: enabled
 whoaThickFrames_BCC: enabled
 AutoOpen: enabled
-BlizzMove_Debug: disabled
+BlizzMove_Debug: enabled
 ExtendedCharacterStats: enabled
 ImprovedMacroFrame: disabled
 LFGBulletinBoard: enabled
@@ -184,4 +184,3 @@ BigWigs_Core: disabled
 BigWigs_AhnQirajTemple: disabled
 BigWigs_BlackTemple: disabled
 BigWigs_BlackwingLair: disabled
-Pawn: disabled

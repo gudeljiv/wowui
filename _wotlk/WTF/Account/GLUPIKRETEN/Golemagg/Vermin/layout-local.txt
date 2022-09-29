@@ -9,7 +9,7 @@ H: 35
 Frame: RXPFrame
 FrameLevel: 1
 Anchor: BOTTOM
-X: 434
+X: 496
 Y: 0
 W: 235
 H: 125
@@ -172,7 +172,7 @@ FrameLevel: 1
 Anchor: CENTER
 X: 382
 Y: -86
-W: 78
+W: 80
 H: 40
 Frame: TargetFrame
 FrameLevel: 2
@@ -188,10 +188,3 @@ X: -232
 Y: 134
 W: 30
 H: 30
-Frame: WeakAurasOptions
-FrameLevel: 1
-Anchor: LEFT
-X: 36
-Y: 5
-W: 880
-H: 1265

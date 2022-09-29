@@ -1,16 +1,5 @@
 
 EncounterDetailsDB = {
-	["emotes"] = {
-		{
-			["boss"] = "Vazruden the Herald",
-		}, -- [1]
-		{
-			["boss"] = "Omor the Unscarred",
-		}, -- [2]
-		{
-			["boss"] = "Watchkeeper Gargolmar",
-		}, -- [3]
-	},
 	["encounter_spells"] = {
 		[30637] = {
 			["school"] = 32,
@@ -104,6 +93,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Omor the Unscarred",
 		},
+		[23972] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Liquid Fire",
+		},
 		[19130] = {
 			["school"] = 1,
 			["token"] = {
@@ -111,13 +107,6 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Vazruden",
-		},
-		[48210] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "Watchkeeper Gargolmar",
 		},
 		[30926] = {
 			["school"] = 4,
@@ -127,15 +116,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nazan",
 		},
-		[14032] = {
-			["school"] = 32,
+		[30621] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Hellfire Watcher",
+			["source"] = "Bonechewer Ravener",
 		},
 		[30927] = {
 			["school"] = 4,
@@ -203,21 +191,33 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Shattered Hand Warhound",
 		},
-		[30621] = {
-			["school"] = 1,
+		[14032] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Bonechewer Ravener",
+			["source"] = "Hellfire Watcher",
 		},
-		[23972] = {
-			["school"] = 4,
+		[48210] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Liquid Fire",
+			["source"] = "Watchkeeper Gargolmar",
 		},
+	},
+	["emotes"] = {
+		{
+			["boss"] = "Vazruden the Herald",
+		}, -- [1]
+		{
+			["boss"] = "Omor the Unscarred",
+		}, -- [2]
+		{
+			["boss"] = "Watchkeeper Gargolmar",
+		}, -- [3]
 	},
 }

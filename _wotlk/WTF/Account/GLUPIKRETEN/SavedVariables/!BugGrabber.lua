@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 6090,
 	["lastSanitation"] = 3,
+	["session"] = 6101,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -1349,20 +1349,20 @@ BugGrabberDB = {
 		}, -- [170]
 		{
 			["message"] = " (null)",
-			["time"] = "2022/04/11 11:49:12",
 			["session"] = 5326,
+			["time"] = "2022/04/11 11:49:12",
 			["counter"] = 15,
 		}, -- [171]
 		{
 			["message"] = "  (null)",
-			["time"] = "2022/04/13 16:37:53",
 			["session"] = 5326,
+			["time"] = "2022/04/13 16:37:53",
 			["counter"] = 4,
 		}, -- [172]
 		{
 			["message"] = "   (null)",
-			["time"] = "2022/06/02 15:20:51",
 			["session"] = 5326,
+			["time"] = "2022/06/02 15:20:51",
 			["counter"] = 1,
 		}, -- [173]
 		{
@@ -1764,62 +1764,62 @@ BugGrabberDB = {
 		}, -- [223]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-enUS.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [224]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-deDE.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [225]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esES.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [226]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esMX.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [227]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-frFR.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [228]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-itIT.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [229]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-koKR.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [230]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ptBR.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [231]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ruRU.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [232]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-zhCN.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [233]
 		{
@@ -2103,8 +2103,8 @@ BugGrabberDB = {
 		}, -- [269]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\xVermin-54000.lua is empty.",
-			["session"] = 5507,
 			["time"] = "2022/09/07 12:54:52",
+			["session"] = 5507,
 			["counter"] = 3,
 		}, -- [270]
 		{
@@ -2197,8 +2197,8 @@ BugGrabberDB = {
 		}, -- [281]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Addons/nMainBar.lua is empty.",
-			["session"] = 5527,
 			["time"] = "2022/09/07 13:53:00",
+			["session"] = 5527,
 			["counter"] = 3,
 		}, -- [282]
 		{
@@ -2836,8 +2836,8 @@ BugGrabberDB = {
 		}, -- [363]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Helpers/Chat.lua is empty.",
-			["time"] = "2022/09/19 19:24:24",
 			["session"] = 5820,
+			["time"] = "2022/09/19 19:24:24",
 			["counter"] = 3,
 		}, -- [364]
 		{
@@ -3239,8 +3239,8 @@ BugGrabberDB = {
 		}, -- [414]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/03/09 13:39:43",
 			["session"] = 6070,
+			["time"] = "2022/03/09 13:39:43",
 			["counter"] = 85,
 		}, -- [415]
 		{
@@ -3284,18 +3284,48 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [420]
 		{
-			["message"] = "Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua:813: attempt to concatenate local 'v' (a table value)",
-			["time"] = "2022/09/03 10:38:33",
-			["stack"] = "[string \"@Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua\"]:813: in function `member'\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:221: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:169>\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1239: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:1121>\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1652: in function `FeedGroup'\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1932: in function `Open'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua\"]:1031: in function `FillOptions'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua\"]:1028: in function <...dOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua:1026>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:72: in function <...ce\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:70>\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:306: in function `Fire'\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIContainer-TabGroup.lua\"]:156: in function `SelectTab'\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIContainer-TabGroup.lua\"]:67: in function <...Libs\\AceGUI-3.0\\widgets\\AceGUIContainer-TabGroup.lua:64>",
-			["session"] = 6089,
-			["counter"] = 29,
-		}, -- [421]
-		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'unitscan' tried to call the protected function 'UNKNOWN()'.",
 			["time"] = "2022/09/25 11:24:28",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:42: in function `target'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:273: in function `UPDATE'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:3: in function <Interface\\AddOns\\unitscan\\unitscan.lua:3>",
 			["session"] = 6090,
 			["counter"] = 4,
+		}, -- [421]
+		{
+			["message"] = "Interface\\AddOns\\BlizzMove\\BlizzMove-v3.4.7.lua:388: attempt to perform arithmetic on a nil value",
+			["time"] = "2022/09/29 10:31:11",
+			["locals"] = "frame = CharacterFrame {\n 0 = <userdata>\n numTabs = 5\n SetWidth = <function> defined =[C]:-1\n SetHeight = <function> defined =[C]:-1\n SetPoint = <function> defined =[C]:-1\n selectedTab = 1\n}\nscale = 1.200000\n(*temporary) = nil\n(*temporary) = CharacterFrame {\n 0 = <userdata>\n numTabs = 5\n SetWidth = <function> defined =[C]:-1\n SetHeight = <function> defined =[C]:-1\n SetPoint = <function> defined =[C]:-1\n selectedTab = 1\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on a nil value\"\nGetScreenWidth = <function> defined =[C]:-1\nGetScreenHeight = <function> defined =[C]:-1\nabs = <function> defined =[C]:-1\nBlizzMove = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:367\n Frames = <table> {\n }\n EnableModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:332\n modules = <table> {\n }\n baseName = \"BlizzMove\"\n IterateEmbeds = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:442\n ValidateFrame = <function> defined @Interface\\AddOns\\BlizzMove\\BlizzMove.lua:61\n SecureHookScript = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceHook-3.0\\AceHook-3.0.lua:410\n enabled = true\n RawHookScript = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceHook-3.0\\AceHook-3.0.lua:395\n RegisterFrame = <function> defined @Interface\\AddOns\\BlizzMove\\BlizzMove.lua:115\n Printf = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:69\n CopyTable = <function> defined @Interface\\AddOns\\BlizzMove\\BlizzMove.lua:325\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:409\n EnableFrame = <function> defined @Interface\\AddOns\\BlizzMove\\BlizzMove.lua:193\n defaultModuleState = true\n IsEnabled = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:451\n GetFrameFromName = <function> defined @Interface\\AddOns\\BlizzMove\\BlizzMove.lua:254\n DisableModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:350\n ResetScaleStorage = <function> defined @Interface\\AddOns\\BlizzMove\\BlizzMove.lua:270\n ADDON_LOADED = <function> defined @Interface\\AddOns\\BlizzMove\\BlizzMove.lua:1110\n RegisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n UnregisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:153\n IsHooked = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceHook-3.0\\AceHook-3.0.lua:493\n DebugPrint = <function> defined @Interface\\AddOns\\BlizzMove\\BlizzMove.lua:47\n DisableFrame = <function> defined @Interface\\AddOns\\BlizzMove\\BlizzMove.lua:185\n UnregisterFrame = <function> defined @Interface\\AddOns\\BlizzMove\\BlizzMove.lua:137\n FrameData = <table> {\n }\n SetEnabledState = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n Hook = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceHook-3.0\\AceHook-3.0.lua:274\n enabledState = true\n RegisterEvent = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n IsFrameDefaultDisabled = <function> defined @Interface\\AddOns\\BlizzMove\\BlizzMove.lua:239\n IterateModules = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:437\n RawHook = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceHook-3.0\\AceHook-3.0.lua:313\n ProcessFrames = <function> defined @Interface\\AddOns\\BlizzMove\\BlizzMove.lua:936\n OnSlashCommand = <function> defined @Interface\\AddOns\\BlizzMove\\BlizzMove.lua:1055\n Enable = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:294\n NewModule = <function> defined @Interf",
+			["stack"] = "[string \"@Interface\\AddOns\\BlizzMove\\BlizzMove-v3.4.7.lua\"]:388: in function <Interface\\AddOns\\BlizzMove\\BlizzMove.lua:383>\n[string \"@Interface\\AddOns\\BlizzMove\\BlizzMove-v3.4.7.lua\"]:623: in function <Interface\\AddOns\\BlizzMove\\BlizzMove.lua:606>\n[string \"=(tail call)\"]: ?",
+			["session"] = 6092,
+			["counter"] = 1,
 		}, -- [422]
+		{
+			["message"] = "Lua error in aura 'EnchantCheck': init\nWeakAuras Version: 4.1.2\nAura Version: 1.0.5\n[string \"return function() local LGE = LibStub(\"LibG...\"]:1: Cannot find a library instance of \"LibGetEnchant-1.0\".",
+			["time"] = "2022/09/29 10:35:04",
+			["stack"] = "[string \"=[C]\"]: in function `error'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\LibStub\\LibStub.lua\"]:23: in function `LibStub'\n[string \"return function() local LGE = LibStub(\"LibGetEnchant-1.0\")\n\nif LGE then\n    function aura_env:GetEnchant(enchantID)\n        for i, v in ipairs(LibGetEnchantDB) do\n            if LibGetEnchantDB[enchantID] then\n                return LibGetEnchantDB[enchantID]\n            end\n        end\n    end\nelse\nend\n\nfunction aura_env:ProfessionCheck()\n    local hasEnchanting = false\n    for i=1, GetNumSkillLines() do\n        local skillName, _, _, skillLevel = GetSkillLineInfo(i) do\n            if skillName == \"Enchanting\" and skillLevel == 375 then\n                hasEnchanting = true\n            end\n        end\n    end\n    return hasEnchanting\nend\n\nfunction aura_env:ShieldCheck()\n    local hasShield = false\n    \nend\n\naura_env.slots = {\n    [1]  = {slotName = \"HEADSLOT\", frameName = \"CharacterHeadSlot\", textOffset = 84, anchor = \"LEFT\", canEnchant = true},\n    [2]  = {slotName = \"NECKSLOT\", frameName = \"CharacterNeckSlot\", textOffset = 84, anchor = \"LEFT\", canEnchant = false},\n    [3]  = {slotName = \"SHOULDERSLOT\", frameName = \"CharacterShoulderSlot\", textOffset = 84, anchor = \"LEFT\", canEnchant = true},\n    [4]  = {slotName = \"CHESTSLOT\", frameName = \"CharacterChestSlot\", textOffset = 84, anchor = \"LEFT\", canEnchant = true},\n    [5]  = {slotName = \"WAISTSLOT\", frameName = \"CharacterWaistSlot\", textOffset = -84, anchor = \"RIGHT\", canEnchant = false},\n    [6]  = {slotName = \"LEGSSLOT\", frameName = \"CharacterLegsSlot\", textOffset = -84, anchor = \"RIGHT\", canEnchant = true},\n    [7]  = {slotName = \"FEETSLOT\", frameName = \"CharacterFeetSlot\", textOffset = -84, anchor = \"RIGHT\", canEnchant = true},\n    [8]  = {slotName = \"WRISTSLOT\", frameName = \"CharacterWristSlot\", textOffset = 84, anchor = \"LEFT\", canEnchant = true},\n    [9]  = {slotName = \"HANDSSLOT\", frameName = \"CharacterHandsSlot\", textOffset = -84, anchor = \"RIGHT\", canEnchant = true},\n    [10] = {slotName = \"FINGER0SLOT\", frameName = \"CharacterFinger0Slot\", textOffset = -84, anchor = \"RIGHT\", canEnchant = aura_env:ProfessionCheck()},\n    [11] = {slotName = \"FINGER1SLOT\", frameName = \"CharacterFinger1Slot\", textOffset = -84, anchor = \"RIGHT\", canEnchant = aura_env:ProfessionCheck()},\n    [12] = {slotName = \"BACKSLOT\", frameName = \"CharacterBackSlot\", textOffset = 84, anchor = \"LEFT\", canEnchant = true},\n    [13] = {slotName = \"MAINHANDSLOT\", frameName = \"CharacterMainHandSlot\", textOffset = -84, anchor = \"RIGHT\", canEnchant = true},\n    [14] = {slotName = \"SECONDARYHANDSLOT\", frameName = \"CharacterSecondaryHandSlot\", textOffset = 0, anchor = \"CENTER\", canEnchant = false},\n    [15] = {slotName = \"RANGEDSLOT\", frameName = \"CharacterRangedSlot\", textOffset = 84, anchor = \"LEFT\", canEnchant = false},\n}\n\nfunction aura_env:GetInfo(itemLink, canEnchant)\n    if itemLink ~= nil then\n        local _, _, _, _, _, _, itemSubType = GetItemInfo(itemLink)\n        local _, itemNumber, enchantNumber = strsplit(\":\", itemLink)\n        local itemID = tonumber(itemNumber)\n        if canEnchant == true or ((itemSubType == \"Shields\" or itemSubType == \"Guns\" or itemSubType == \"Bows\" or itemSubType == \"Crossbows\" or itemSubType == \"One-Handed Axes\" or itemSubType == \"One-Handed Maces\" or itemSubType == \"One-Handed Swords\" or iteemSubType == \"Fist Weapons\" or itemSubType == \"Daggers\") and canEnchant == false) then\n            local enchantID = tonumber(enchantNumber)\n            local isEnchanted = false\n            local enchantString = \"Missing Enchant\"\n            \n            if enchantID ~= nil then\n                isEnchanted = true\n                enchantString = aura_env:GetEnchant(enchantID)\n            end\n            return isEnchanted, enchantString\n        end\n    end\nend\n\naura_env.gear = {}\n end\"]:1: in function <[string \"return function() local LGE = LibStub(\"LibG...\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\AuraEnvironment.lua\"]:297: in function `ActivateAuraEnvironment'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:803: in function `CreateFakeStates'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:3947: in function `UpdateFakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:3923: in function `FakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:2878: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:2752>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:2900: in function `Add'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1863: in function `ImportPhase1'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1873: in function `ImportPhase1'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1873: in function `ImportPhase1'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1501: in function `ImportImpl'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1470: in function <...ace\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update.lua:1469>",
+			["session"] = 6093,
+			["counter"] = 2,
+		}, -- [423]
+		{
+			["message"] = "Lua error in aura 'EnchantCheck': Trigger 1\nWeakAuras Version: 4.1.2\nAura Version: 1.0.5\n[string \"return function(allstates, event, unit, ......\"]:4: bad argument #1 to 'ipairs' (table expected, got nil)",
+			["time"] = "2022/09/29 10:35:07",
+			["stack"] = "[string \"=[C]\"]: in function `ipairs'\n[string \"return function(allstates, event, unit, ...)\n    if (event == \"PLAYER_ENTERING_WORLD\") or ((event == \"UNIT_STATS\" or event == \"UNIT_INVENTORY_CHANGED\") and unit == \"player\") then\n        \n        for i, v in ipairs(aura_env.slots) do\n            local slotName = v.slotName\n            local frameName = v.frameName\n            local textOffset = v.textOffset\n            local anchor = v.anchor\n            local canEnchant = v.canEnchant\n            \n            aura_env.gear[i] = {\n                itemLink = GetInventoryItemLink(\"player\", GetInventorySlotInfo(v.slotName)),\n                frameName = v.frameName,\n                textOffset = v.textOffset,\n                anchor = v.anchor,\n                canEnchant = v.canEnchant\n            }\n        end\n        \n        for i, v in ipairs(aura_env.gear) do\n            local isEnchanted, enchantString = aura_env:GetInfo(v.itemLink, v.canEnchant)\n            \n            allstates[i] = allstates[i] or {}\n            \n            local state = allstates[i]\n            \n            state.show = true\n            state.changed = true\n            state.progressType = \"static\"\n            state.value = 0\n            state.total = 100\n            state.frameName = v.frameName\n            state.textOffset = v.textOffset\n            state.anchor = v.anchor\n            state.canEnchant = v.canEnchant\n            state.isEnchanted = isEnchanted\n            state.enchantString = enchantString\n        end\n        return true\n    end\nend\n\n\n\n\n\"]:4: in function <[string \"return function(allstates, event, unit, ......\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:548: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:537>\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:852: in function `ScanWithFakeEvent'\n[string \"@Interface\\AddOns\\WeakAuras\\GenericTrigger.lua\"]:1175: in function `LoadDisplays'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:1848: in function `LoadDisplays'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:1648: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:1501>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:1825: in function `Resume'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua\"]:191: in function <...dOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua:173>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\WeakAurasOptions-4.1.2.lua\"]:618: in function <...terface\\AddOns\\WeakAurasOptions\\WeakAurasOptions.lua:616>",
+			["session"] = 6093,
+			["counter"] = 3,
+		}, -- [424]
+		{
+			["message"] = "Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:1063: attempt to index local 'state' (a nil value)",
+			["time"] = "2022/09/29 10:44:41",
+			["locals"] = "self = <unnamed> {\n SoundRepeatStop = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:194\n iconSource = -1\n AnchorSubRegion = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:733\n subRegionEvents = <table> {\n }\n desaturateIcon = false\n Expand = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:850\n UpdateMinMax = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:1204\n anchorPoint = \"TOP\"\n SetOrientation = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:874\n icon = <unnamed> {\n }\n SetOffset = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:318\n icon_color = <table> {\n }\n GetRegionAlpha = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:387\n timer = <unnamed> {\n }\n cloneId = \"\"\n SendChat = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:266\n SetInverse = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:858\n toShow = true\n Collapse = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:831\n SetRegionHeight = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:819\n overlays = <table> {\n }\n Scale = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:1307\n bar = <unnamed> {\n }\n yOffset = 0\n UpdateIcon = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:932\n iconFrame = <unnamed> {\n }\n yOffsetAnim = 0\n SetSparkHeight = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:809\n scalex = 1\n Update = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:1249\n UpdateTimerTick = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:438\n regionType = \"aurabar\"\n smoothProgress = false\n SetIcon = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:917\n relativePoint = \"TOP\"\n SetTime = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:840\n iconVisible = false\n SoundPlay = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:248\n 0 = <userdata>\n GetMinMax = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:1245\n zoom = 0\n SetIconColor = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:795\n xOffset = 0\n color_b = 0.431373\n ClickToPick = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:757\n alpha = 1\n color_r = 0.780392\n SetXOffset = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:327\n GetColor = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:1150\n SetRegionWidth = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:815\n OptionsClosed = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:752\n RealClearAllPoints = <function> defined =[C]:-1\n Color = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:1134\n RunCode = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:273\n GetYOffset = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:339\n values = <table> {\n }\n UpdateRegionHasTimerTick = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:409\n SetOverlayColor = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:948\n scaley = 1\n SetYOffsetRelative = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:356\n effectiveOrientation = \"HORIZONTAL\"\n ReOrient = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:957\n GetInverse = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua:954\n inverseDirection = true\n GetXOffset = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:335\n SetYOffset = <function> defined @Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:331\n SetAnimAlpha = <function> defined @Interface\\AddOns\\We",
+			["stack"] = "[string \"@Interface\\AddOns\\WeakAuras\\RegionTypes\\AuraBar.lua\"]:1063: in function `TimerTick'\n[string \"@Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua\"]:430: in function <...ace\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:426>\n[string \"@Interface\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua\"]:442: in function <...ace\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:441>",
+			["session"] = 6093,
+			["counter"] = 257,
+		}, -- [425]
+		{
+			["message"] = "Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua:813: attempt to concatenate local 'v' (a table value)",
+			["time"] = "2022/09/03 10:38:33",
+			["stack"] = "[string \"@Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua\"]:813: in function `member'\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:221: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:169>\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1239: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:1121>\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1652: in function `FeedGroup'\n[string \"@Interface\\AddOns\\RXPGuides\\libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-82.lua\"]:1932: in function `Open'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua\"]:1031: in function `FillOptions'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua\"]:1028: in function <...dOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua:1026>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:72: in function <...ce\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:70>\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:306: in function `Fire'\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIContainer-TabGroup.lua\"]:156: in function `SelectTab'\n[string \"@Interface\\AddOns\\BuffOverlay\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIContainer-TabGroup.lua\"]:67: in function <...Libs\\AceGUI-3.0\\widgets\\AceGUIContainer-TabGroup.lua:64>",
+			["session"] = 6093,
+			["counter"] = 31,
+		}, -- [426]
 	},
 }

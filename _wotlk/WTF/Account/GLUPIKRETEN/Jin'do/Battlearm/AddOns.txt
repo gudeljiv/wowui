@@ -1,3 +1,4 @@
 nHealth: disabled
 nTooltip: enabled
-nPower: disabled
+BlizzMove: enabled
+BlizzMove_Debug: enabled

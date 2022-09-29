@@ -1,9 +1,5 @@
 
 OmniCCDB = {
-	["global"] = {
-		["dbVersion"] = 6,
-		["addonVersion"] = "9.1.6",
-	},
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
@@ -12,9 +8,13 @@ OmniCCDB = {
 		["Moolatz - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
-		["Wells - Jin'do"] = "Default",
 		["Vermin - Golemagg"] = "Default",
+		["Wells - Jin'do"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
+	},
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "9.1.6",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -68,9 +68,9 @@ OmniCCDB = {
 			["themes"] = {
 				["Plater Nameplates Theme"] = {
 					["textStyles"] = {
-						["soon"] = {
-						},
 						["seconds"] = {
+						},
+						["soon"] = {
 						},
 						["minutes"] = {
 						},
@@ -81,10 +81,10 @@ OmniCCDB = {
 					["textStyles"] = {
 						["soon"] = {
 						},
+						["seconds"] = {
+						},
 						["minutes"] = {
 							["scale"] = 0.8,
-						},
-						["seconds"] = {
 						},
 						["charging"] = {
 							["r"] = 1,
@@ -103,9 +103,9 @@ OmniCCDB = {
 				},
 				["Ignore"] = {
 					["textStyles"] = {
-						["seconds"] = {
-						},
 						["soon"] = {
+						},
+						["seconds"] = {
 						},
 						["minutes"] = {
 						},
@@ -126,23 +126,23 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["version"] = "8.1.1",
+	["groups"] = {
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [1]
+	},
+	["engine"] = "AniUpdater",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
 			["fontSize"] = 18,
-			["scaleText"] = true,
+			["fontFace"] = "Fonts\\ARIALN.TTF",
 			["effect"] = "pulse",
-			["minDuration"] = 2,
-			["minEffectDuration"] = 30,
-			["anchor"] = "CENTER",
-			["spiralOpacity"] = 1.00999997742474,
-			["yOff"] = 0,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["minSize"] = 0.5,
-			["mmSSDuration"] = 0,
 			["styles"] = {
 				["seconds"] = {
 					["a"] = 1,
@@ -183,7 +183,17 @@ OmniCC4Config = {
 					["scale"] = 1.20000004768372,
 				},
 			},
-			["fontFace"] = "Fonts\\ARIALN.TTF",
+			["mmSSDuration"] = 0,
+			["minSize"] = 0.5,
+			["spiralOpacity"] = 1.00999997742474,
+			["yOff"] = 0,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["anchor"] = "CENTER",
+			["minEffectDuration"] = 30,
+			["minDuration"] = 2,
+			["scaleText"] = true,
 		},
 		["Ignore"] = {
 			["enabled"] = false,
@@ -226,31 +236,21 @@ OmniCC4Config = {
 				["controlled"] = {
 				},
 			},
-			["fontSize"] = 18,
-			["effect"] = "pulse",
-			["fontFace"] = "Fonts\\FRIZQT__.TTF",
-			["mmSSDuration"] = 0,
-			["minSize"] = 0.5,
-			["spiralOpacity"] = 1,
 			["scaleText"] = true,
+			["effect"] = "pulse",
+			["minDuration"] = 3,
+			["minEffectDuration"] = 30,
+			["anchor"] = "CENTER",
+			["spiralOpacity"] = 1,
+			["yOff"] = 0,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
-			["anchor"] = "CENTER",
-			["minEffectDuration"] = 30,
-			["yOff"] = 0,
-			["minDuration"] = 3,
+			["minSize"] = 0.5,
+			["mmSSDuration"] = 0,
+			["fontFace"] = "Fonts\\FRIZQT__.TTF",
+			["fontSize"] = 18,
 		},
 	},
-	["groups"] = {
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [1]
-	},
-	["engine"] = "AniUpdater",
+	["version"] = "8.1.1",
 }

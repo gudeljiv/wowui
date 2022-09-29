@@ -36,3 +36,12 @@ VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Hand of Reckoning
 END
+VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][] Hand of Salvation
+END
+VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/startattack
+/cast Judgement of Light
+END
