@@ -1,11 +1,14 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[8] = {
-			[1900465266] = true,
+		[34] = {
+		},
+		[31] = {
+		},
+		[33] = {
 		},
 	},
-	["currentStep"] = 8,
+	["currentStep"] = 34,
 	["phase"] = 6,
 	["currentGuideGroup"] = "Horde 70-80",
 	["flightPaths"] = {
@@ -14,10 +17,10 @@ RXPCData = {
 		[118] = "Zabra'jin, Zangarmarsh",
 		[120] = "Garadar, Nagrand",
 		[151] = "Swamprat Post, Zangarmarsh",
-		[61] = "Splintertree Post, Ashenvale",
+		[30] = "Freewind Post, Thousand Needles",
 		[128] = "Shattrath, Terokkar Forest",
 		[99] = "Thrallmar, Hellfire Peninsula",
-		[141] = "Spinebreaker Ridge, Hellfire Peninsula",
+		[23] = "Orgrimmar, Durotar",
 		[72] = "Cenarion Hold, Silithus",
 		[38] = "Shadowprey Village, Desolace",
 		[179] = "Mudsprocket, Dustwallow Marsh",
@@ -26,32 +29,40 @@ RXPCData = {
 		[42] = "Camp Mojache, Feralas",
 		[22] = "Thunder Bluff, Mulgore",
 		[44] = "Valormok, Azshara",
-		[23] = "Orgrimmar, Durotar",
-		[127] = "Stonebreaker Hold, Terokkar Forest",
+		[141] = "Spinebreaker Ridge, Hellfire Peninsula",
+		[25] = "Crossroads, The Barrens",
 		[123] = "Shadowmoon Village, Shadowmoon Valley",
 		[48] = "Bloodvenom Post, Felwood",
-		[25] = "Crossroads, The Barrens",
+		[127] = "Stonebreaker Hold, Terokkar Forest",
 		[130] = "Hellfire Peninsula, The Dark Portal, Horde",
 		[69] = "Moonglade",
 		[102] = "Falcon Watch, Hellfire Peninsula",
 		[53] = "Everlook, Winterspring",
-		[55] = "Brackenwall Village, Dustwallow Marsh",
 		[77] = "Camp Taurajo, The Barrens",
+		[55] = "Brackenwall Village, Dustwallow Marsh",
 		[79] = "Marshal's Refuge, Un'Goro Crater",
 		[29] = "Sun Rock Retreat, Stonetalon Mountains",
-		[30] = "Freewind Post, Thousand Needles",
+		[61] = "Splintertree Post, Ashenvale",
 	},
 	["xprate"] = 1,
 	["JoyousJourneys"] = true,
-	["hardcore"] = false,
-	["SoM"] = 1,
+	["GA"] = false,
+	["frameHeight"] = 125.000129699707,
 	["currentGuideName"] = "70-72 Borean Tundra",
 	["stepSkip"] = {
 		true, -- [1]
+		[24] = true,
+		[28] = true,
+		[15] = true,
+		[16] = true,
+		[32] = true,
 		[5] = true,
+		[19] = true,
+		[11] = true,
+		[18] = true,
 	},
-	["frameHeight"] = 125.000129699707,
-	["GA"] = false,
+	["SoM"] = 1,
+	["hardcore"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -76,17 +87,17 @@ RXPCTrackingData = {
 							["xp"] = 169144,
 							["count"] = 72,
 						},
-						["Hellfire Peninsula"] = {
-							["xp"] = 5520,
-							["count"] = 6,
+						["The Slave Pens"] = {
+							["xp"] = 144060,
+							["count"] = 110,
 						},
 						["Terokkar Forest"] = {
 							["xp"] = 90129,
 							["count"] = 51,
 						},
-						["The Slave Pens"] = {
-							["xp"] = 144060,
-							["count"] = 110,
+						["Hellfire Peninsula"] = {
+							["xp"] = 5520,
+							["count"] = 6,
 						},
 					},
 					["timestamp"] = {
@@ -94,10 +105,10 @@ RXPCTrackingData = {
 							["monthDay"] = 22,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 5,
+							["minute"] = 27,
 							["year"] = 2022,
 							["hour"] = 19,
-							["minute"] = 27,
+							["weekday"] = 5,
 						},
 						["finished"] = 799807,
 					},
@@ -118,10 +129,10 @@ RXPCTrackingData = {
 							["monthDay"] = 22,
 							["day"] = 0,
 							["month"] = 9,
-							["weekday"] = 5,
+							["minute"] = 27,
 							["year"] = 2022,
 							["hour"] = 19,
-							["minute"] = 27,
+							["weekday"] = 5,
 						},
 						["started"] = 1664446024,
 					},
@@ -184,40 +195,40 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 1376,
 				},
-				["Favienne"] = {
-					["timePlayed"] = 173.0210000000661,
-					["class"] = "DEATHKNIGHT",
-					["xp"] = 796,
+				["Wixë"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "WARLOCK",
+					["xp"] = 1268,
 				},
 				["Nayld"] = {
 					["timePlayed"] = 173.0210000000661,
 					["class"] = "ROGUE",
 					["xp"] = 796,
 				},
-				["Nyrin"] = {
-					["timePlayed"] = 173.0210000000661,
-					["class"] = "DRUID",
-					["xp"] = 796,
+				["Litenshaman"] = {
+					["timePlayed"] = 1389.503000000026,
+					["class"] = "SHAMAN",
+					["xp"] = 1268,
 				},
 				["Sharingen"] = {
 					["timePlayed"] = 1545.662000000011,
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 920,
 				},
-				["Hulari"] = {
-					["timePlayed"] = 1545.662000000011,
-					["class"] = "ROGUE",
-					["xp"] = 920,
+				["Brutikus"] = {
+					["timePlayed"] = 85.72200000006706,
+					["class"] = "WARRIOR",
+					["xp"] = 1376,
 				},
 				["Ypers"] = {
 					["timePlayed"] = 1344.199000000022,
 					["class"] = "SHAMAN",
 					["xp"] = 1376,
 				},
-				["Johnylecitel"] = {
-					["timePlayed"] = 883.7549999998882,
-					["class"] = "PRIEST",
-					["xp"] = 1268,
+				["Nabito"] = {
+					["timePlayed"] = 85.72200000006706,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 1376,
 				},
 				["Goldenarm"] = {
 					["timePlayed"] = 883.7549999998882,
@@ -229,13 +240,13 @@ RXPCComms = {
 					["class"] = "PALADIN",
 					["xp"] = 500,
 				},
+				["Johnylecitel"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "PRIEST",
+					["xp"] = 1268,
+				},
 				["Rompido"] = {
 					["timePlayed"] = 71.13700000010431,
-					["class"] = "DEATHKNIGHT",
-					["xp"] = 1376,
-				},
-				["Nabito"] = {
-					["timePlayed"] = 85.72200000006706,
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 1376,
 				},
@@ -244,25 +255,25 @@ RXPCComms = {
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 920,
 				},
-				["Brutikus"] = {
-					["timePlayed"] = 85.72200000006706,
-					["class"] = "WARRIOR",
-					["xp"] = 1376,
+				["Hulari"] = {
+					["timePlayed"] = 1545.662000000011,
+					["class"] = "ROGUE",
+					["xp"] = 920,
 				},
-				["Litenshaman"] = {
-					["timePlayed"] = 1389.503000000026,
-					["class"] = "SHAMAN",
-					["xp"] = 1268,
+				["Nyrin"] = {
+					["timePlayed"] = 173.0210000000661,
+					["class"] = "DRUID",
+					["xp"] = 796,
 				},
 				["Ilthe"] = {
 					["timePlayed"] = 173.0210000000661,
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 796,
 				},
-				["Wixë"] = {
-					["timePlayed"] = 883.7549999998882,
-					["class"] = "WARLOCK",
-					["xp"] = 1268,
+				["Favienne"] = {
+					["timePlayed"] = 173.0210000000661,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 796,
 				},
 			},
 		},

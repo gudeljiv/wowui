@@ -43,7 +43,6 @@ skills["warlock"] = [
 
 
 skills["hunter"] = [
-    {"name": "hunters mark", "key": "h"},
     {"name": "multi-shot", "key": "f10"},
     {"name": "steady shot", "key": "2"},
     {"name": "mend pet", "key": "v"},
@@ -59,6 +58,9 @@ skills["hunter"] = [
     {"name": "chimera shot", "key": "3"},
     {"name": "aimed shot", "key": "6"},
     {"name": "deterrence", "key": "t", "modifier": "shift"},
+    {"name": "misdirection", "key": "2", "modifier": "shift"},
+    {"name": "hunters mark", "key": "3", "modifier": "shift"},
+    {"name": "concussive shot", "key": "1"},
 ]
 
 skills["druid"] = [

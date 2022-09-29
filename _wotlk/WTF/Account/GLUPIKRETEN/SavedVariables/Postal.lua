@@ -1,15 +1,5 @@
 
 Postal3DB = {
-	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Vermina - Golemagg"] = "Vermina - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Wells - Jin'do"] = "Wells - Jin'do",
-		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
-		["Battitude - Golemagg"] = "Battitude - Golemagg",
-	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -24,6 +14,16 @@ Postal3DB = {
 			},
 		},
 	},
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Vermina - Golemagg"] = "Vermina - Golemagg",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
+		["Wells - Jin'do"] = "Wells - Jin'do",
+		["Battitude - Golemagg"] = "Battitude - Golemagg",
+	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
 		},
@@ -33,11 +33,11 @@ Postal3DB = {
 		},
 		["Vermin - Golemagg"] = {
 		},
-		["Wells - Jin'do"] = {
+		["Moolatz - Golemagg"] = {
 		},
 		["Battlearm - Golemagg"] = {
 		},
-		["Moolatz - Golemagg"] = {
+		["Wells - Jin'do"] = {
 		},
 		["Battitude - Golemagg"] = {
 		},
