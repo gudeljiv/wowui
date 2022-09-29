@@ -28,13 +28,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
+						["spellIds"] = {
+						},
 						["names"] = {
 						},
 						["check"] = "event",
+						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
 						["events"] = "LOSS_OF_CONTROL_UPDATE",
-						["spellIds"] = {
-						},
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -761,7 +761,11 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 6,
-			["config"] = {
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["load"] = {
 				["use_namerealm"] = true,
@@ -774,15 +778,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_combat"] = true,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["zoneIds"] = "",
 			},
 			["sparkBlendMode"] = "ADD",
@@ -792,7 +796,8 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["uid"] = "bv7d0Eti5pa",
+			["config"] = {
+			},
 			["useAdjustededMax"] = false,
 			["width"] = 200,
 			["alpha"] = 1,
@@ -815,12 +820,7 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["uid"] = "bv7d0Eti5pa",
 			["inverse"] = true,
 			["icon"] = false,
 			["orientation"] = "HORIZONTAL",
@@ -1166,6 +1166,35 @@ WeakAurasSaved = {
 			},
 			["zoom"] = 0,
 			["uid"] = "(9qU7Rw3V8a",
+			["authorOptions"] = {
+				{
+					["subOptions"] = {
+						{
+							["type"] = "input",
+							["useDesc"] = false,
+							["width"] = 1,
+							["name"] = "Text",
+							["default"] = "",
+							["multiline"] = false,
+							["length"] = 10,
+							["key"] = "text",
+							["useLength"] = false,
+						}, -- [1]
+					},
+					["hideReorder"] = true,
+					["useDesc"] = false,
+					["nameSource"] = 0,
+					["width"] = 1,
+					["useCollapse"] = false,
+					["key"] = "macro",
+					["name"] = "Macro",
+					["collapse"] = false,
+					["limitType"] = "none",
+					["groupType"] = "simple",
+					["type"] = "group",
+					["size"] = 10,
+				}, -- [1]
+			},
 			["actions"] = {
 				["start"] = {
 				},
@@ -1178,7 +1207,6 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 				},
 			},
-			["cooldownEdge"] = false,
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -1231,197 +1259,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = false,
-			["authorOptions"] = {
-				{
-					["subOptions"] = {
-						{
-							["type"] = "input",
-							["useDesc"] = false,
-							["width"] = 1,
-							["name"] = "Text",
-							["default"] = "",
-							["multiline"] = false,
-							["length"] = 10,
-							["key"] = "text",
-							["useLength"] = false,
-						}, -- [1]
-					},
-					["hideReorder"] = true,
-					["useDesc"] = false,
-					["nameSource"] = 0,
-					["width"] = 1,
-					["useCollapse"] = false,
-					["key"] = "macro",
-					["name"] = "Macro",
-					["collapse"] = false,
-					["limitType"] = "none",
-					["groupType"] = "simple",
-					["type"] = "group",
-					["size"] = 10,
-				}, -- [1]
-			},
-		},
-		["Display Layer"] = {
-			["outline"] = "OUTLINE",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["displayText"] = "%c",
-			["customText"] = "function()\n    return aura_env.text\nend",
-			["yOffset"] = 12,
-			["anchorPoint"] = "BOTTOMLEFT",
-			["customTextUpdate"] = "update",
-			["url"] = "https://wago.io/bZy7c9fQw/4",
-			["actions"] = {
-				["start"] = {
-					["glow_frame_type"] = "FRAMESELECTOR",
-					["b"] = 0,
-					["message_type"] = "PRINT",
-					["do_message"] = false,
-					["message"] = "Click on an NPC to show your current layer number.",
-					["g"] = 0.28235294117647,
-					["do_custom"] = false,
-					["do_sound"] = false,
-					["do_glow"] = false,
-					["r"] = 1,
-					["sound"] = "Interface\\AddOns\\ElvUI\\Media\\Sounds\\Whisper.ogg",
-					["glow_action"] = "show",
-				},
-				["init"] = {
-					["custom"] = "aura_env.text = \"|cffff4800L0|r\"",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "custom",
-						["custom_type"] = "event",
-						["event"] = "Health",
-						["subeventPrefix"] = "SPELL",
-						["debuffType"] = "HELPFUL",
-						["names"] = {
-						},
-						["custom"] = "function()\n    \n    local uguid = UnitGUID(\"target\")\n    if uguid then\n        local sguid = {strsplit(\"-\",uguid)}\n        if sguid[1] == \"Creature\" then\n            local layerid = tonumber(sguid[5])\n            --- Orgrimmar ---\n            if layerid > 100 then\n                aura_env.text = \"L2\"\n            else\n                aura_env.text = \"L1\"\n            end\n        end\n    end\n    \n    return true\nend",
-						["spellIds"] = {
-						},
-						["unit"] = "player",
-						["subeventSuffix"] = "_CAST_START",
-						["events"] = "PLAYER_TARGET_CHANGED",
-						["custom_hide"] = "custom",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				{
-					["trigger"] = {
-						["type"] = "unit",
-						["use_alwaystrue"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["duration"] = "1",
-						["event"] = "Conditions",
-						["unit"] = "player",
-						["unevent"] = "auto",
-						["use_unit"] = true,
-						["subeventPrefix"] = "SPELL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [2]
-				["disjunctive"] = "any",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 53,
-			["wordWrap"] = "WordWrap",
-			["font"] = "Arial Narrow",
-			["version"] = 4,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-			},
-			["load"] = {
-				["use_namerealm"] = true,
-				["use_size"] = true,
-				["namerealm"] = "not loaded",
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["single"] = "none",
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["zoneIds"] = "",
-			},
-			["fontSize"] = 14,
-			["shadowXOffset"] = 1,
-			["fixedWidth"] = 200,
-			["anchorFrameFrame"] = "Minimap",
-			["regionType"] = "text",
-			["preferToUpdate"] = false,
-			["_table"] = "d",
-			["automaticWidth"] = "Auto",
-			["selfPoint"] = "CENTER",
-			["authorOptions"] = {
-			},
-			["xOffset"] = 16,
-			["semver"] = "1.0.3",
-			["tocversion"] = 11304,
-			["id"] = "Display Layer",
-			["config"] = {
-			},
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SELECTFRAME",
-			["shadowYOffset"] = -1,
-			["uid"] = "Sa)Gm93udM4",
-			["justify"] = "CENTER",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["shadowColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["conditions"] = {
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayText_format_c_format"] = "none",
+			["cooldownEdge"] = false,
 		},
 		["DEBUFFS - PET"] = {
 			["grow"] = "RIGHT",
@@ -1477,7 +1315,7 @@ WeakAurasSaved = {
 			["subRegions"] = {
 			},
 			["borderEdge"] = "Square Full White",
-			["selfPoint"] = "LEFT",
+			["xOffset"] = 15,
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -1497,17 +1335,6 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["gridType"] = "RD",
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["rowSpace"] = 1,
-			["animate"] = false,
-			["internalVersion"] = 53,
-			["scale"] = 0.8,
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -1528,12 +1355,23 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["fullCircle"] = true,
+			["animate"] = false,
+			["internalVersion"] = 53,
+			["scale"] = 0.8,
+			["rotation"] = 0,
 			["border"] = false,
 			["anchorFrameFrame"] = "PetFrame",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["rotation"] = 0,
+			["gridType"] = "RD",
 			["config"] = {
 			},
 			["anchorFrameParent"] = true,
@@ -1548,14 +1386,14 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SELECTFRAME",
 			["limit"] = 5,
 			["uid"] = "e(V6yQRHRNJ",
-			["fullCircle"] = true,
-			["arcLength"] = 360,
+			["selfPoint"] = "LEFT",
+			["rowSpace"] = 1,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 15,
+			["arcLength"] = 360,
 		},
 		["nanShield:Segment"] = {
 			["authorOptions"] = {
@@ -1642,12 +1480,12 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["unit"] = "player",
 						["custom_type"] = "stateupdate",
-						["spellIds"] = {
-						},
 						["events"] = "PLAYER_ENTERING_WORLD WA_NAN_SHIELD",
+						["custom"] = "function(...)\n    return aura_env:on_tsu(...)\nend",
 						["subeventPrefix"] = "SPELL",
 						["check"] = "update",
-						["custom"] = "function(...)\n    return aura_env:on_tsu(...)\nend",
+						["spellIds"] = {
+						},
 						["names"] = {
 						},
 						["debuffType"] = "HELPFUL",
@@ -1712,76 +1550,19 @@ WeakAurasSaved = {
 			["mirror"] = false,
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
-			["parent"] = "Shield",
-			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\target_indicator.tga",
 			["color"] = {
 				0.1921568627451, -- [1]
 				0.85882352941176, -- [2]
 				1, -- [3]
 				0.4200000166893, -- [4]
 			},
-			["animation"] = {
-				["start"] = {
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      return startX + (progress * (scaleX - startX)), startY + (progress * (scaleY - startY))\n    end\n  ",
-					["duration"] = "0.2",
-					["alphaType"] = "straight",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "    function(progress, start, delta)\n      return start + (progress * delta)\n    end\n  ",
-					["use_alpha"] = true,
-					["scaleType"] = "straightScale",
-					["use_scale"] = true,
-					["easeType"] = "none",
-					["duration_type"] = "seconds",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["rotate"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["type"] = "none",
-					["colorR"] = 1,
-					["preset"] = "fade",
-					["easeStrength"] = 3,
-					["scalex"] = 2,
-					["colorA"] = 1,
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["colorR"] = 1,
-					["scalex"] = 1.5,
-					["alphaType"] = "straight",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "function(progress, start, delta)\n    return start + (progress * delta)\nend\n",
-					["use_translate"] = true,
-					["use_alpha"] = true,
-					["use_scale"] = true,
-					["type"] = "custom",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n    return startX + (progress * deltaX), startY + (progress * deltaY)\nend\n",
-					["scaley"] = 1.5,
-					["alpha"] = 0,
-					["rotate"] = 0,
-					["y"] = 20,
-					["x"] = 5,
-					["translateType"] = "straightTranslate",
-					["scaleType"] = "straightScale",
-					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    return startX + (progress * (scaleX - startX)), startY + (progress * (scaleY - startY))\nend\n",
-					["easeStrength"] = 3,
-					["duration"] = "0.2",
-					["colorA"] = 1,
-				},
-			},
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\target_indicator.tga",
+			["discrete_rotation"] = 0,
+			["parent"] = "Shield",
 			["semver"] = "1.0.0",
 			["tocversion"] = 11305,
 			["id"] = "nanShield:Segment",
-			["discrete_rotation"] = 0,
+			["xOffset"] = 0,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["alpha"] = 0.48,
@@ -1985,7 +1766,64 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["animation"] = {
+				["start"] = {
+					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      return startX + (progress * (scaleX - startX)), startY + (progress * (scaleY - startY))\n    end\n  ",
+					["duration"] = "0.2",
+					["alphaType"] = "straight",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "    function(progress, start, delta)\n      return start + (progress * delta)\n    end\n  ",
+					["use_alpha"] = true,
+					["scaleType"] = "straightScale",
+					["use_scale"] = true,
+					["easeType"] = "none",
+					["duration_type"] = "seconds",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["rotate"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["type"] = "none",
+					["colorR"] = 1,
+					["preset"] = "fade",
+					["easeStrength"] = 3,
+					["scalex"] = 2,
+					["colorA"] = 1,
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["colorR"] = 1,
+					["scalex"] = 1.5,
+					["alphaType"] = "straight",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "function(progress, start, delta)\n    return start + (progress * delta)\nend\n",
+					["use_translate"] = true,
+					["use_alpha"] = true,
+					["use_scale"] = true,
+					["type"] = "custom",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n    return startX + (progress * deltaX), startY + (progress * deltaY)\nend\n",
+					["scaley"] = 1.5,
+					["alpha"] = 0,
+					["rotate"] = 0,
+					["y"] = 20,
+					["x"] = 5,
+					["translateType"] = "straightTranslate",
+					["scaleType"] = "straightScale",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    return startX + (progress * (scaleX - startX)), startY + (progress * (scaleY - startY))\nend\n",
+					["easeStrength"] = 3,
+					["duration"] = "0.2",
+					["colorA"] = 1,
+				},
+			},
 		},
 		["Warlock - Healthstone #"] = {
 			["iconSource"] = 0,
@@ -2116,8 +1954,13 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["uid"] = "aJyTspXsqB0",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["url"] = "https://wago.io/Y8douZITb/12",
-			["parent"] = "Warlock 2.0",
 			["regionType"] = "icon",
 			["cooldown"] = true,
 			["displayIcon"] = 135230,
@@ -2192,12 +2035,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "Warlock 2.0",
 		},
 		["MobHPPercentYELLOW"] = {
 			["outline"] = "THICKOUTLINE",
@@ -2446,8 +2284,8 @@ WeakAurasSaved = {
 			["regionType"] = "text",
 			["conditions"] = {
 			},
+			["preferToUpdate"] = false,
 			["xOffset"] = 0,
-			["parent"] = "Warrior 2.0",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -2492,7 +2330,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["preferToUpdate"] = false,
+			["parent"] = "Warrior 2.0",
 		},
 		["Warlock - Banish Timer"] = {
 			["iconSource"] = -1,
@@ -2524,9 +2362,9 @@ WeakAurasSaved = {
 						["unit"] = "multi",
 						["subeventPrefix"] = "SPELL",
 						["debuffType"] = "HELPFUL",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
+						["custom"] = "function(_,_,subEvent,_,sourceGUID,_,_,_,destGUID,_,_,_,_,spell)\n    local e = aura_env\n    if (subEvent == \"SPELL_AURA_APPLIED\" or subEvent == \"SPELL_AURA_REFRESH\") and spell == e.spell and sourceGUID == e.playerGUID then\n        e.target = destGUID\n        e.startTime = GetTime()\n        e.expirationTime = e.startTime + e.duration\n        e.broken = false\n        return true\n    elseif (subEvent == \"SPELL_AURA_REMOVED\" or subEvent == \"SPELL_AURA_BROKEN\") and spell == e.spell and sourceGUID == e.playerGUID then\n        e.target = e.target or \"\"\n        if destGUID == e.target then \n            e.broken = true\n        end\n    end\nend\n\n\n\n\n\n\n\n",
 						["spellName"] = "Freezing Trap",
-						["name"] = "Freezing Trap",
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["type"] = "custom",
 						["custom_type"] = "status",
 						["subeventSuffix"] = "_AURA_APPLIED",
@@ -2537,7 +2375,7 @@ WeakAurasSaved = {
 						["auraType"] = "DEBUFF",
 						["customDuration"] = "function()\n    return aura_env.duration, aura_env.expirationTime\nend\n\n\n\n\n\n\n\n",
 						["use_spellName"] = true,
-						["custom"] = "function(_,_,subEvent,_,sourceGUID,_,_,_,destGUID,_,_,_,_,spell)\n    local e = aura_env\n    if (subEvent == \"SPELL_AURA_APPLIED\" or subEvent == \"SPELL_AURA_REFRESH\") and spell == e.spell and sourceGUID == e.playerGUID then\n        e.target = destGUID\n        e.startTime = GetTime()\n        e.expirationTime = e.startTime + e.duration\n        e.broken = false\n        return true\n    elseif (subEvent == \"SPELL_AURA_REMOVED\" or subEvent == \"SPELL_AURA_BROKEN\") and spell == e.spell and sourceGUID == e.playerGUID then\n        e.target = e.target or \"\"\n        if destGUID == e.target then \n            e.broken = true\n        end\n    end\nend\n\n\n\n\n\n\n\n",
+						["name"] = "Freezing Trap",
 						["use_sourceUnit"] = true,
 						["check"] = "event",
 						["use_destUnit"] = false,
@@ -2699,8 +2537,8 @@ WeakAurasSaved = {
 			["zoom"] = 0.3,
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["parent"] = "Warlock 2.0",
-			["icon"] = true,
 			["regionType"] = "icon",
 			["cooldown"] = true,
 			["displayIcon"] = 136135,
@@ -2729,7 +2567,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["icon"] = true,
 		},
 		["Druid - CP3"] = {
 			["color"] = {
@@ -2902,15 +2740,15 @@ WeakAurasSaved = {
 			["mirror"] = false,
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
-			["xOffset"] = -1.0000610351562,
-			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["authorOptions"] = {
 			},
-			["discrete_rotation"] = 0,
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["parent"] = "DRUID / ROGUE",
+			["xOffset"] = -1.0000610351562,
 			["semver"] = "1.0.13",
 			["tocversion"] = 11302,
 			["id"] = "Druid - CP3",
-			["parent"] = "DRUID / ROGUE",
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["width"] = 67,
 			["anchorFrameType"] = "SCREEN",
@@ -2923,7 +2761,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["discrete_rotation"] = 0,
 		},
 		["Warlock  - Blood Fury"] = {
 			["iconSource"] = 0,
@@ -3076,8 +2914,13 @@ WeakAurasSaved = {
 			["zoom"] = 0.3,
 			["config"] = {
 			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["parent"] = "Warlock 2.0",
-			["icon"] = true,
 			["regionType"] = "icon",
 			["cooldown"] = true,
 			["displayIcon"] = 135726,
@@ -3114,12 +2957,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["icon"] = true,
 		},
 		["Entering Combat"] = {
 			["outline"] = "THICKOUTLINE",
@@ -3274,8 +3112,9 @@ WeakAurasSaved = {
 			["shadowXOffset"] = 1,
 			["regionType"] = "text",
 			["fixedWidth"] = 200,
+			["authorOptions"] = {
+			},
 			["automaticWidth"] = "Auto",
-			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["wordWrap"] = "WordWrap",
 			["semver"] = "1.0.0",
@@ -3306,8 +3145,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["preferToUpdate"] = false,
 		},
 		["nanShield:Text"] = {
 			["outline"] = "OUTLINE",
@@ -3849,7 +3687,8 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 6,
-			["uid"] = "(R3kCEqElPt",
+			["config"] = {
+			},
 			["load"] = {
 				["use_namerealm"] = true,
 				["size"] = {
@@ -3861,25 +3700,20 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_combat"] = true,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["zoneIds"] = "",
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["uid"] = "(R3kCEqElPt",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -3908,7 +3742,11 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["authorOptions"] = {
 			},
-			["config"] = {
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["inverse"] = true,
 			["actions"] = {
@@ -3998,12 +3836,13 @@ WeakAurasSaved = {
 			},
 			["align"] = "CENTER",
 			["rotation"] = 345,
-			["useLimit"] = false,
+			["anchorPoint"] = "CENTER",
 			["version"] = 1,
 			["subRegions"] = {
 			},
-			["borderInset"] = 1,
-			["anchorPoint"] = "CENTER",
+			["config"] = {
+			},
+			["fullCircle"] = true,
 			["load"] = {
 				["use_class"] = "true",
 				["talent"] = {
@@ -4025,27 +3864,25 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["rowSpace"] = 1,
+			["borderInset"] = 1,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["selfPoint"] = "CENTER",
+			["radius"] = 300,
 			["animate"] = false,
 			["customGrow"] = "function(newPositions, activeRegions)\n    local offset = 9/64 -- target_indicator_glow texture center offset\n    local distance = 18/64\n    local angle, x, y, h, w, s, c, sb, cb, da\n    local curveAngle, segmentCount, direction, base, direction\n\n    for i, r in ipairs(activeRegions) do\n        if r.region.GetRotation then\n            direction = r.data.config.direction\n            base = (r.data.config.rotationOffset + direction * 180)\n            angle = r.region:GetRotation() - direction * 180\n            h = r.data.height\n            w = r.data.width\n            curveAngle = r.data.config.curveAngle\n            segmentCount = r.data.config.segmentCount\n            s = sin(angle)\n            c = cos(angle)\n            sb = sin(base + (direction - 1) * 180)\n            cb = cos(base + (direction - 1) * 180)\n            da = curveAngle / (segmentCount - 1)\n            radius = 0.5 * w * distance / sin(da / 2)\n            x = c * radius + s * w * offset * (direction - 1.5) * 2 + radius * cb\n            y = s * radius * h / w - c * h * offset * (direction - 1.5) * 2 + radius * h / w * sb\n        else\n            x = 0\n            y = 0\n        end\n\n        if newPositions[i] then\n            newPositions[i][1] = x\n            newPositions[i][2] = y\n        else\n            newPositions[i] = {x, y}\n        end\n    end\nend\n",
 			["scale"] = 1,
-			["config"] = {
-			},
+			["rowSpace"] = 1,
 			["border"] = false,
 			["borderEdge"] = "1 Pixel",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["fullCircle"] = true,
-			["authorOptions"] = {
-			},
+			["stagger"] = 0,
+			["selfPoint"] = "CENTER",
 			["constantFactor"] = "RADIUS",
 			["arcLength"] = 30,
 			["borderOffset"] = 4,
@@ -4055,10 +3892,11 @@ WeakAurasSaved = {
 			["gridWidth"] = 5,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["limit"] = 5,
+			["useLimit"] = false,
 			["uid"] = "QYuwGRyspxh",
-			["stagger"] = 0,
-			["radius"] = 300,
+			["authorOptions"] = {
+			},
+			["limit"] = 5,
 			["conditions"] = {
 			},
 			["information"] = {
@@ -4808,27 +4646,13 @@ WeakAurasSaved = {
 					["text"] = "/cast Conjure Water",
 				},
 			},
-			["icon"] = true,
-			["animation"] = {
-				["start"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["easeStrength"] = 3,
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
+			["icon"] = true,
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -4877,11 +4701,25 @@ WeakAurasSaved = {
 			["parent"] = "GEMS",
 			["displayIcon"] = 132805,
 			["cooldown"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
 			},
 		},
 		["TARGET HP PERCENT"] = {
@@ -4958,7 +4796,7 @@ WeakAurasSaved = {
 			["desc"] = "Big display of target health percentage with Colors",
 			["stagger"] = 0,
 			["version"] = 2,
-			["anchorPoint"] = "CENTER",
+			["rotation"] = 0,
 			["config"] = {
 			},
 			["load"] = {
@@ -5021,25 +4859,25 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
-			["useLimit"] = true,
+			["radius"] = 200,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["fullCircle"] = true,
-			["animate"] = false,
-			["rowSpace"] = 1,
-			["scale"] = 1,
 			["grow"] = "DOWN",
+			["animate"] = false,
+			["selfPoint"] = "TOP",
+			["scale"] = 1,
+			["rowSpace"] = 1,
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
-			["limit"] = 1,
-			["groupIcon"] = 136168,
-			["radius"] = 200,
+			["sort"] = "none",
+			["useLimit"] = true,
+			["borderInset"] = 1,
 			["constantFactor"] = "RADIUS",
 			["authorOptions"] = {
 			},
@@ -5050,16 +4888,16 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["gridWidth"] = 5,
 			["anchorFrameType"] = "SCREEN",
+			["anchorPoint"] = "CENTER",
 			["uid"] = "RtwiT9kw4p3",
-			["borderInset"] = 1,
-			["selfPoint"] = "TOP",
-			["sort"] = "none",
+			["limit"] = 1,
+			["groupIcon"] = 136168,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["rotation"] = 0,
+			["fullCircle"] = true,
 		},
 		["Leaving Combat"] = {
 			["outline"] = "THICKOUTLINE",
@@ -5217,8 +5055,9 @@ WeakAurasSaved = {
 			["shadowXOffset"] = 1,
 			["regionType"] = "text",
 			["fixedWidth"] = 200,
+			["authorOptions"] = {
+			},
 			["automaticWidth"] = "Auto",
-			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["wordWrap"] = "WordWrap",
 			["semver"] = "1.0.0",
@@ -5249,8 +5088,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["preferToUpdate"] = false,
 		},
 		["MH DRUID"] = {
 			["overlays"] = {
@@ -5742,13 +5580,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(s, e, ...)\n    \n    -- Boss Death\n    if (e == \"COMBAT_LOG_EVENT_UNFILTERED\") then\n        local _, _, _, _, _, _, _, guid, bossName = select(1, ...)\n        local _, _, _, _, _, id = string.match(guid or \"\",\"(%a+)-(%d+)-(%d+)-(%d+)-(%d+)-(%d+)\")\n        \n        if aura_env.bosses[tonumber(id or 0)] == true then\n            C_ChatInfo.SendAddonMessage(\"AVT\", bossName .. \": \" .. 0, \"INSTANCE_CHAT\") \n            return true\n        end\n    end\n    \n    -- Boss HP\n    local prefix, text = select(1, ...)\n    \n    if (e == \"CHAT_MSG_ADDON\") and prefix == \"AVT\" then\n        local bossName = string.match(text or \"\", \"(.-):\")\n        local bossHP = tonumber(string.match(text, \"%d+\"))\n        \n        \n        if bossHP == 0 then\n            s[bossName] = {\n                show = false,\n                changed = true\n            }\n        else\n            s[bossName] = {\n                show = true,\n                changed = true,\n                progressType = \"static\",\n                total = 100,\n                value  = bossHP,\n                name = bossName,\n                index = -100000000000,\n                boss = true\n            }\n        end\n        \n        return true\n    end\n    \n    local msg = select(1,...)\n    \n    -- Clear timers\n    if e == \"AVT_LEAVE\" or \n    (e == \"CHAT_MSG_SYSTEM\" and string.find(msg or \"\", aura_env.L[aura_env.locale][9]) or 0 > 0) then\n        for _, state in pairs(s) do\n            state.show = false;\n            state.changed = true;\n        end\n        \n        return true\n    end\n    \n    -- BG begins timer\n    if e == \"CHAT_MSG_BG_SYSTEM_NEUTRAL\" then\n        if (string.find(msg or \"\", aura_env.L[aura_env.locale][8]) or 0 > 0) then\n            s[\"begin\"] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 62,\n                expirationTime = GetTime() + 62,\n                name = \"Begins\",\n                index = 0,\n                autoHide = true,\n                start = true\n            }\n        end\n        return true\n    end\n    \n    -- Tower/GY timers\n    if e == \"CHAT_MSG_BG_SYSTEM_ALLIANCE\" or \n    e == \"CHAT_MSG_BG_SYSTEM_HORDE\" or \n    e == \"CHAT_MSG_MONSTER_YELL\" then\n        \n        -- Re-take\n        if (string.find(msg or \"\", aura_env.L[aura_env.locale][1]) or 0 > 0) then\n            local tower = string.match(msg or \"\", aura_env.L[aura_env.locale][2])\n            \n            if s[tower] then\n                s[tower] = {\n                    show = false,\n                    changed = true,\n                }\n                return true\n            end\n        end\n        \n        -- Take\n        if (e == \"CHAT_MSG_MONSTER_YELL\" and \n            string.find(msg or \"\", aura_env.L[aura_env.locale][5]) or 0 > 0 or \n            string.find(msg or \"\", aura_env.L[aura_env.locale][3]) or 0 > 0) then\n            \n            local tower = (e == \"CHAT_MSG_MONSTER_YELL\" and \n                string.match(msg or \"\", aura_env.L[aura_env.locale][6]) or\n                string.match(msg or \"\", aura_env.L[aura_env.locale][4]))\n            \n            s[tower] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 240,\n                expirationTime = GetTime() + 240,\n                name = tower,\n                index = -(GetTime() + 240),\n                autoHide = true,\n                horde = (e == \"CHAT_MSG_MONSTER_YELL\" and \n                    (string.find(msg or \"\", aura_env.L[aura_env.locale][7]) or 0 > 0 and false or true) or\n                    (e == \"CHAT_MSG_BG_SYSTEM_ALLIANCE\" and false or true))\n            }\n            return true\n        end\n        \n        -- Lokholar the Ice Lord\n        if (e == \"CHAT_MSG_MONSTER_YELL\" and string.find(msg or \"\", aura_env.L[aura_env.locale][10])) then\n            \n            s[\"lokholar\"] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 600,\n                expirationTime = GetTime() + 600,\n                name = \"Lokholar\",\n                index = -(GetTime() + 600),\n                autoHide = true,\n                lokholar = true\n            }\n            return true\n        end\n        \n    end\n    \nend",
+						["spellIds"] = {
+						},
 						["names"] = {
 						},
 						["check"] = "event",
+						["custom"] = "function(s, e, ...)\n    \n    -- Boss Death\n    if (e == \"COMBAT_LOG_EVENT_UNFILTERED\") then\n        local _, _, _, _, _, _, _, guid, bossName = select(1, ...)\n        local _, _, _, _, _, id = string.match(guid or \"\",\"(%a+)-(%d+)-(%d+)-(%d+)-(%d+)-(%d+)\")\n        \n        if aura_env.bosses[tonumber(id or 0)] == true then\n            C_ChatInfo.SendAddonMessage(\"AVT\", bossName .. \": \" .. 0, \"INSTANCE_CHAT\") \n            return true\n        end\n    end\n    \n    -- Boss HP\n    local prefix, text = select(1, ...)\n    \n    if (e == \"CHAT_MSG_ADDON\") and prefix == \"AVT\" then\n        local bossName = string.match(text or \"\", \"(.-):\")\n        local bossHP = tonumber(string.match(text, \"%d+\"))\n        \n        \n        if bossHP == 0 then\n            s[bossName] = {\n                show = false,\n                changed = true\n            }\n        else\n            s[bossName] = {\n                show = true,\n                changed = true,\n                progressType = \"static\",\n                total = 100,\n                value  = bossHP,\n                name = bossName,\n                index = -100000000000,\n                boss = true\n            }\n        end\n        \n        return true\n    end\n    \n    local msg = select(1,...)\n    \n    -- Clear timers\n    if e == \"AVT_LEAVE\" or \n    (e == \"CHAT_MSG_SYSTEM\" and string.find(msg or \"\", aura_env.L[aura_env.locale][9]) or 0 > 0) then\n        for _, state in pairs(s) do\n            state.show = false;\n            state.changed = true;\n        end\n        \n        return true\n    end\n    \n    -- BG begins timer\n    if e == \"CHAT_MSG_BG_SYSTEM_NEUTRAL\" then\n        if (string.find(msg or \"\", aura_env.L[aura_env.locale][8]) or 0 > 0) then\n            s[\"begin\"] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 62,\n                expirationTime = GetTime() + 62,\n                name = \"Begins\",\n                index = 0,\n                autoHide = true,\n                start = true\n            }\n        end\n        return true\n    end\n    \n    -- Tower/GY timers\n    if e == \"CHAT_MSG_BG_SYSTEM_ALLIANCE\" or \n    e == \"CHAT_MSG_BG_SYSTEM_HORDE\" or \n    e == \"CHAT_MSG_MONSTER_YELL\" then\n        \n        -- Re-take\n        if (string.find(msg or \"\", aura_env.L[aura_env.locale][1]) or 0 > 0) then\n            local tower = string.match(msg or \"\", aura_env.L[aura_env.locale][2])\n            \n            if s[tower] then\n                s[tower] = {\n                    show = false,\n                    changed = true,\n                }\n                return true\n            end\n        end\n        \n        -- Take\n        if (e == \"CHAT_MSG_MONSTER_YELL\" and \n            string.find(msg or \"\", aura_env.L[aura_env.locale][5]) or 0 > 0 or \n            string.find(msg or \"\", aura_env.L[aura_env.locale][3]) or 0 > 0) then\n            \n            local tower = (e == \"CHAT_MSG_MONSTER_YELL\" and \n                string.match(msg or \"\", aura_env.L[aura_env.locale][6]) or\n                string.match(msg or \"\", aura_env.L[aura_env.locale][4]))\n            \n            s[tower] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 240,\n                expirationTime = GetTime() + 240,\n                name = tower,\n                index = -(GetTime() + 240),\n                autoHide = true,\n                horde = (e == \"CHAT_MSG_MONSTER_YELL\" and \n                    (string.find(msg or \"\", aura_env.L[aura_env.locale][7]) or 0 > 0 and false or true) or\n                    (e == \"CHAT_MSG_BG_SYSTEM_ALLIANCE\" and false or true))\n            }\n            return true\n        end\n        \n        -- Lokholar the Ice Lord\n        if (e == \"CHAT_MSG_MONSTER_YELL\" and string.find(msg or \"\", aura_env.L[aura_env.locale][10])) then\n            \n            s[\"lokholar\"] = {\n                show = true,\n                changed = true,      \n                progressType = \"timed\",\n                duration = 600,\n                expirationTime = GetTime() + 600,\n                name = \"Lokholar\",\n                index = -(GetTime() + 600),\n                autoHide = true,\n                lokholar = true\n            }\n            return true\n        end\n        \n    end\n    \nend",
 						["events"] = "AVT_LEAVE CHAT_MSG_SYSTEM CHAT_MSG_MONSTER_YELL CHAT_MSG_BG_SYSTEM_ALLIANCE CHAT_MSG_BG_SYSTEM_HORDE CHAT_MSG_BG_SYSTEM_NEUTRAL CHAT_MSG_ADDON COMBAT_LOG_EVENT_UNFILTERED:UNIT_DIED",
-						["spellIds"] = {
-						},
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -5949,10 +5787,10 @@ WeakAurasSaved = {
 			["internalVersion"] = 53,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["uid"] = "Q6V((Odtb2N",
 			["config"] = {
 			},
 			["borderInset"] = 1,
+			["uid"] = "Q6V((Odtb2N",
 			["yOffset"] = 400,
 			["conditions"] = {
 			},
@@ -6185,21 +6023,21 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["customVariables"] = "{\n    school = \"number\",\n    priority = \"number\",\n    secondary = \"bool\"\n}",
 						["type"] = "custom",
-						["subeventSuffix"] = "_CAST_START",
 						["custom_type"] = "stateupdate",
-						["names"] = {
-						},
+						["unevent"] = "timed",
+						["unit"] = "player",
 						["duration"] = "1",
 						["event"] = "Chat Message",
-						["unit"] = "player",
+						["use_unit"] = true,
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function (allstates, event, ...)\n    allstates[1] = \n    {\n        show = false,\n        changed = true,\n        priority = -1,\n        expirationTime = 0\n    }\n    \n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    local lossName = nil\n    for i=1,activeLossOfControlCount do\n        local data = C_LossOfControl.GetActiveLossOfControlData(i)\n        \n        lossName = data.displayText\n        if data.locType == \"SCHOOL_INTERRUPT\" then\n            if data.lockoutSchool and data.lockoutSchool ~= 0 then\n                lossName = string.format(\"%s Locked\", GetSchoolString(data.lockoutSchool));\n            end\n        end\n        \n        if (allstates[1].priority <= data.priority and allstates[1].expirationTime < (GetTime() + (data.timeRemaining or 0))) then\n            allstates[1] = \n            {\n                show = true,\n                changed = true,\n                index = 2,\n                duration = data.duration,\n                expirationTime = GetTime() + (data.timeRemaining or 0),\n                progressType = \"timed\",\n                autoHide = true,\n                icon = data.iconTexture,\n                name = lossName,\n                school = data.lockoutSchool,            \n                priority = data.priority,\n                secondary = false\n            }\n        end\n    end\n    if (aura_env.config.nextLOC.showNext) then\n        allstates[2] = \n        {\n            show = false,\n            changed = true,\n            priority = -1,\n            expirationTime = allstates[1].expirationTime\n        }\n        for i=1,activeLossOfControlCount do\n            local data = C_LossOfControl.GetActiveLossOfControlData(i)\n            \n            lossName = data.displayText\n            if data.locType == \"SCHOOL_INTERRUPT\" then\n                if data.lockoutSchool and data.lockoutSchool ~= 0 then\n                    lossName = string.format(\"%s Locked\", GetSchoolString(data.lockoutSchool));\n                end\n            end\n            \n            if (allstates[2].priority <= data.priority and allstates[2].expirationTime < (GetTime() + (data.timeRemaining or 0)) and data.priority < allstates[1].priority) then\n                allstates[2] = \n                {\n                    show = true,\n                    changed = true,\n                    index = 1,\n                    duration = data.duration,\n                    expirationTime = GetTime() + (data.timeRemaining or 0),\n                    progressType = \"timed\",\n                    autoHide = true,\n                    icon = data.iconTexture,\n                    name = lossName,\n                    school = data.lockoutSchool,            \n                    priority = data.priority,\n                    secondary = true\n                }         \n            end\n        end        \n    end\n    return true\nend",
 						["events"] = "LOSS_OF_CONTROL_UPDATE LOSS_OF_CONTROL_ADDED",
 						["spellIds"] = {
 						},
+						["custom"] = "function (allstates, event, ...)\n    allstates[1] = \n    {\n        show = false,\n        changed = true,\n        priority = -1,\n        expirationTime = 0\n    }\n    \n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    local lossName = nil\n    for i=1,activeLossOfControlCount do\n        local data = C_LossOfControl.GetActiveLossOfControlData(i)\n        \n        lossName = data.displayText\n        if data.locType == \"SCHOOL_INTERRUPT\" then\n            if data.lockoutSchool and data.lockoutSchool ~= 0 then\n                lossName = string.format(\"%s Locked\", GetSchoolString(data.lockoutSchool));\n            end\n        end\n        \n        if (allstates[1].priority <= data.priority and allstates[1].expirationTime < (GetTime() + (data.timeRemaining or 0))) then\n            allstates[1] = \n            {\n                show = true,\n                changed = true,\n                index = 2,\n                duration = data.duration,\n                expirationTime = GetTime() + (data.timeRemaining or 0),\n                progressType = \"timed\",\n                autoHide = true,\n                icon = data.iconTexture,\n                name = lossName,\n                school = data.lockoutSchool,            \n                priority = data.priority,\n                secondary = false\n            }\n        end\n    end\n    if (aura_env.config.nextLOC.showNext) then\n        allstates[2] = \n        {\n            show = false,\n            changed = true,\n            priority = -1,\n            expirationTime = allstates[1].expirationTime\n        }\n        for i=1,activeLossOfControlCount do\n            local data = C_LossOfControl.GetActiveLossOfControlData(i)\n            \n            lossName = data.displayText\n            if data.locType == \"SCHOOL_INTERRUPT\" then\n                if data.lockoutSchool and data.lockoutSchool ~= 0 then\n                    lossName = string.format(\"%s Locked\", GetSchoolString(data.lockoutSchool));\n                end\n            end\n            \n            if (allstates[2].priority <= data.priority and allstates[2].expirationTime < (GetTime() + (data.timeRemaining or 0)) and data.priority < allstates[1].priority) then\n                allstates[2] = \n                {\n                    show = true,\n                    changed = true,\n                    index = 1,\n                    duration = data.duration,\n                    expirationTime = GetTime() + (data.timeRemaining or 0),\n                    progressType = \"timed\",\n                    autoHide = true,\n                    icon = data.iconTexture,\n                    name = lossName,\n                    school = data.lockoutSchool,            \n                    priority = data.priority,\n                    secondary = true\n                }         \n            end\n        end        \n    end\n    return true\nend",
 						["check"] = "event",
-						["use_unit"] = true,
-						["unevent"] = "timed",
+						["names"] = {
+						},
+						["subeventSuffix"] = "_CAST_START",
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -6327,59 +6165,8 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 40,
+			["parent"] = "Loss of Control Alert (WOTLK)",
 			["url"] = "https://wago.io/JiQILDF99/1",
-			["animation"] = {
-				["start"] = {
-					["colorR"] = 1,
-					["duration_type"] = "seconds",
-					["alphaType"] = "straight",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "function(progress, start, delta)\n    return start + (progress * delta)\nend\n",
-					["use_alpha"] = false,
-					["scaleType"] = "straightScale",
-					["easeType"] = "none",
-					["colorA"] = 1,
-					["scaley"] = 2,
-					["alpha"] = 0,
-					["scalex"] = 2,
-					["y"] = 0,
-					["x"] = 0,
-					["easeStrength"] = 3,
-					["use_scale"] = true,
-					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    return startX + (progress * (scaleX - startX)), startY + (progress * (scaleY - startY))\nend\n",
-					["rotate"] = 0,
-					["type"] = "custom",
-					["duration"] = "0.2",
-				},
-				["main"] = {
-					["type"] = "preset",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["colorR"] = 1,
-					["duration"] = "0.2",
-					["alphaType"] = "straight",
-					["colorA"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "function(progress, start, delta)\n    return start + (progress * delta)\nend\n",
-					["use_alpha"] = true,
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["scalex"] = 1,
-					["preset"] = "fade",
-					["easeStrength"] = 3,
-					["rotate"] = 0,
-					["colorB"] = 1,
-					["duration_type"] = "seconds",
-				},
-			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
@@ -6479,7 +6266,58 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["parent"] = "Loss of Control Alert (WOTLK)",
+			["animation"] = {
+				["start"] = {
+					["colorR"] = 1,
+					["duration_type"] = "seconds",
+					["alphaType"] = "straight",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "function(progress, start, delta)\n    return start + (progress * delta)\nend\n",
+					["use_alpha"] = false,
+					["scaleType"] = "straightScale",
+					["easeType"] = "none",
+					["colorA"] = 1,
+					["scaley"] = 2,
+					["alpha"] = 0,
+					["scalex"] = 2,
+					["y"] = 0,
+					["x"] = 0,
+					["easeStrength"] = 3,
+					["use_scale"] = true,
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    return startX + (progress * (scaleX - startX)), startY + (progress * (scaleY - startY))\nend\n",
+					["rotate"] = 0,
+					["type"] = "custom",
+					["duration"] = "0.2",
+				},
+				["main"] = {
+					["type"] = "preset",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["colorR"] = 1,
+					["duration"] = "0.2",
+					["alphaType"] = "straight",
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "function(progress, start, delta)\n    return start + (progress * delta)\nend\n",
+					["use_alpha"] = true,
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["scalex"] = 1,
+					["preset"] = "fade",
+					["easeStrength"] = 3,
+					["rotate"] = 0,
+					["colorB"] = 1,
+					["duration_type"] = "seconds",
+				},
+			},
 		},
 		["Warlock - Will of the Forsaken"] = {
 			["iconSource"] = 0,
@@ -6613,13 +6451,13 @@ WeakAurasSaved = {
 			["zoom"] = 0.3,
 			["config"] = {
 			},
+			["xOffset"] = 106,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["parent"] = "Warlock 2.0",
 			["regionType"] = "icon",
 			["cooldown"] = true,
 			["displayIcon"] = 136187,
@@ -6675,7 +6513,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 106,
+			["parent"] = "Warlock 2.0",
 		},
 		["Display Layer New"] = {
 			["outline"] = "OUTLINE",
@@ -6764,19 +6602,19 @@ WeakAurasSaved = {
 						["type"] = "custom",
 						["custom_hide"] = "timed",
 						["subeventSuffix"] = "_CAST_START",
-						["use_unit"] = true,
-						["duration"] = ".1",
-						["event"] = "Health",
 						["names"] = {
 						},
+						["duration"] = ".1",
+						["event"] = "Health",
+						["unit"] = "target",
 						["custom_type"] = "event",
 						["unevent"] = "auto",
-						["events"] = "UNIT_TARGET",
+						["custom"] = "function()\n    if UnitExists(\"target\") then return true\n    end\nend\n\n\n",
 						["subeventPrefix"] = "SPELL",
+						["events"] = "UNIT_TARGET",
 						["spellIds"] = {
 						},
-						["custom"] = "function()\n    if UnitExists(\"target\") then return true\n    end\nend\n\n\n",
-						["unit"] = "target",
+						["use_unit"] = true,
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -6857,8 +6695,27 @@ WeakAurasSaved = {
 			["anchorFrameFrame"] = "Minimap",
 			["regionType"] = "text",
 			["fixedWidth"] = 251,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["wordWrap"] = "Elide",
-			["url"] = "https://wago.io/QrlaB3Y8C/1",
 			["preferToUpdate"] = false,
 			["displayText_format_c_format"] = "none",
 			["semver"] = "1.0.0",
@@ -6906,26 +6763,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["url"] = "https://wago.io/QrlaB3Y8C/1",
 		},
 		["Professions Skill Tracker"] = {
 			["grow"] = "UP",
@@ -6970,56 +6808,14 @@ WeakAurasSaved = {
 			["internalVersion"] = 53,
 			["selfPoint"] = "BOTTOMRIGHT",
 			["align"] = "RIGHT",
-			["anchorPerUnit"] = "NAMEPLATE",
+			["anchorFrameFrame"] = "ChatFrame3",
 			["gridWidth"] = 5,
 			["useLimit"] = false,
 			["rotation"] = 0,
-			["anchorPoint"] = "TOPRIGHT",
+			["radius"] = 200,
 			["version"] = 5,
 			["subRegions"] = {
 			},
-			["useAnchorPerUnit"] = false,
-			["radius"] = 200,
-			["load"] = {
-				["use_class"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["zoneIds"] = "",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["stagger"] = 0,
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["authorOptions"] = {
-			},
-			["animate"] = false,
-			["config"] = {
-			},
-			["scale"] = 1,
-			["customAnchor"] = "ChatFrame3",
-			["border"] = false,
-			["anchorFrameFrame"] = "ChatFrame3",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["limit"] = 5,
-			["borderEdge"] = "1 Pixel",
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -7040,30 +6836,72 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["useAnchorPerUnit"] = false,
+			["load"] = {
+				["use_class"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["zoneIds"] = "",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["anchorPoint"] = "TOPRIGHT",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["stagger"] = 0,
+			["animate"] = false,
+			["borderInset"] = 1,
+			["scale"] = 1,
+			["customAnchor"] = "ChatFrame3",
+			["border"] = false,
+			["borderEdge"] = "1 Pixel",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["limit"] = 5,
+			["config"] = {
+			},
+			["sort"] = "none",
 			["constantFactor"] = "RADIUS",
 			["arcLength"] = 360,
 			["borderOffset"] = 4,
 			["semver"] = "1.0.4",
 			["tocversion"] = 11302,
 			["id"] = "Professions Skill Tracker",
-			["uid"] = "6GCI4uu)d8g",
+			["anchorPerUnit"] = "NAMEPLATE",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SELECTFRAME",
-			["sort"] = "none",
-			["borderInset"] = 1,
 			["rowSpace"] = 1,
+			["uid"] = "6GCI4uu)d8g",
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["groupIcon"] = 132281,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["groupIcon"] = 132281,
+			["authorOptions"] = {
+			},
 		},
 		["PST bar"] = {
 			["sparkWidth"] = 10,
@@ -7189,10 +7027,10 @@ WeakAurasSaved = {
 					["colorA"] = 1,
 					["colorG"] = 0.10196078431373,
 					["type"] = "none",
-					["use_color"] = true,
-					["easeType"] = "none",
 					["preset"] = "grow",
+					["easeType"] = "none",
 					["scaley"] = 1,
+					["use_color"] = true,
 					["alpha"] = 0,
 					["easeStrength"] = 3,
 					["y"] = 0,
@@ -7287,8 +7125,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["height"] = 2,
-			["config"] = {
-			},
+			["uid"] = "dfN5x1GBI6G",
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -7310,11 +7147,7 @@ WeakAurasSaved = {
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["color"] = {
 			},
@@ -7325,9 +7158,9 @@ WeakAurasSaved = {
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["id"] = "PST bar",
-			["spark"] = true,
+			["auto"] = false,
 			["icon_side"] = "LEFT",
-			["semver"] = "1.0.4",
+			["spark"] = true,
 			["sparkHeight"] = 10,
 			["texture"] = "Clean",
 			["backgroundColor"] = {
@@ -7337,14 +7170,19 @@ WeakAurasSaved = {
 				0.3313250541687, -- [4]
 			},
 			["zoom"] = 0,
-			["auto"] = false,
+			["semver"] = "1.0.4",
 			["tocversion"] = 11302,
 			["sparkHidden"] = "NEVER",
 			["sparkOffsetY"] = 0,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["preferToUpdate"] = false,
-			["uid"] = "dfN5x1GBI6G",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["inverse"] = false,
 			["useTooltip"] = true,
 			["orientation"] = "HORIZONTAL",
@@ -7876,33 +7714,8 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["useLimit"] = false,
-			["animate"] = false,
-			["rotation"] = 0,
-			["scale"] = 1,
-			["grow"] = "RIGHT",
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["sort"] = "none",
-			["limit"] = 5,
-			["uid"] = "8aXp4Du0m4R",
-			["anchorFrameParent"] = true,
-			["constantFactor"] = "RADIUS",
-			["anchorFrameFrame"] = "nHealthStatusBar",
-			["borderOffset"] = 4,
-			["semver"] = "1.0.0",
-			["tocversion"] = 90001,
-			["id"] = "DEBUFFS - TARGET",
-			["gridWidth"] = 5,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SELECTFRAME",
-			["authorOptions"] = {
-			},
-			["config"] = {
-			},
 			["gridType"] = "RD",
+			["animate"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -7923,12 +7736,37 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["scale"] = 1,
+			["grow"] = "RIGHT",
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["sort"] = "none",
+			["limit"] = 5,
+			["uid"] = "8aXp4Du0m4R",
+			["anchorFrameParent"] = true,
+			["constantFactor"] = "RADIUS",
+			["anchorFrameFrame"] = "nHealthStatusBar",
+			["borderOffset"] = 4,
+			["semver"] = "1.0.0",
+			["tocversion"] = 90001,
+			["id"] = "DEBUFFS - TARGET",
+			["gridWidth"] = 5,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SELECTFRAME",
+			["rotation"] = 0,
+			["config"] = {
+			},
+			["internalVersion"] = 53,
+			["authorOptions"] = {
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["internalVersion"] = 53,
+			["useLimit"] = false,
 		},
 		["nanShield:Bar"] = {
 			["sparkWidth"] = 10,
@@ -7960,10 +7798,10 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["names"] = {
 						},
-						["events"] = "WA_NAN_SHIELD",
 						["spellIds"] = {
 						},
 						["custom"] = "function(...)\n  return aura_env:on_tsu(...)\nend",
+						["events"] = "WA_NAN_SHIELD",
 						["check"] = "event",
 						["custom_type"] = "stateupdate",
 						["customOverlay1"] = "",
@@ -8473,20 +8311,20 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["tocversion"] = 30400,
 			["id"] = "Loss of Control Alert (WOTLK)",
-			["selfPoint"] = "CENTER",
+			["config"] = {
+			},
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["groupIcon"] = 136071,
-			["config"] = {
+			["authorOptions"] = {
 			},
 			["uid"] = "RaWaTrdL9bd",
 			["borderInset"] = 1,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
 			["information"] = {
 			},
-			["authorOptions"] = {
-			},
+			["groupIcon"] = 136071,
 		},
 		["PALADIN"] = {
 			["iconSource"] = -1,
@@ -8645,8 +8483,27 @@ WeakAurasSaved = {
 			},
 			["alpha"] = 1,
 			["width"] = 65.000114440918,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["parent"] = "MISSING BUFFS",
-			["xOffset"] = 0,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
@@ -8674,26 +8531,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["Warlock - Nightfall Proc"] = {
 			["outline"] = "OUTLINE",
@@ -8864,13 +8702,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
+						["spellIds"] = {
+						},
 						["names"] = {
 						},
 						["check"] = "event",
+						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
 						["events"] = "LOSS_OF_CONTROL_UPDATE",
-						["spellIds"] = {
-						},
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -9099,9 +8937,9 @@ WeakAurasSaved = {
 			["id"] = "LOS",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
+			["uid"] = "TBWPr1GPJhe",
 			["config"] = {
 			},
-			["borderInset"] = 1,
 			["xOffset"] = 0,
 			["selfPoint"] = "BOTTOMLEFT",
 			["conditions"] = {
@@ -9110,7 +8948,7 @@ WeakAurasSaved = {
 				["ignoreOptionsEventErrors"] = true,
 				["groupOffset"] = true,
 			},
-			["uid"] = "TBWPr1GPJhe",
+			["borderInset"] = 1,
 		},
 		["Warrior - Battle Stance"] = {
 			["outline"] = "OUTLINE",
@@ -9210,8 +9048,8 @@ WeakAurasSaved = {
 			["shadowXOffset"] = 1,
 			["regionType"] = "text",
 			["fixedWidth"] = 200,
+			["preferToUpdate"] = false,
 			["selfPoint"] = "BOTTOM",
-			["parent"] = "Warrior 2.0",
 			["shadowYOffset"] = -1,
 			["wordWrap"] = "WordWrap",
 			["url"] = "https://wago.io/z6xqQay0S/16",
@@ -9243,7 +9081,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["preferToUpdate"] = false,
+			["parent"] = "Warrior 2.0",
 		},
 		["VictoryRush"] = {
 			["controlledChildren"] = {
@@ -9351,15 +9189,15 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
-			["config"] = {
-			},
-			["selfPoint"] = "CENTER",
 			["uid"] = "0EznwWi8AYW",
+			["selfPoint"] = "CENTER",
+			["borderInset"] = 1,
 			["conditions"] = {
 			},
 			["information"] = {
 			},
-			["borderInset"] = 1,
+			["config"] = {
+			},
 		},
 		["Warlock - Howl of Terror"] = {
 			["iconSource"] = 0,
@@ -9526,9 +9364,8 @@ WeakAurasSaved = {
 			["zoom"] = 0.3,
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["icon"] = true,
-			["authorOptions"] = {
-			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
 			["displayIcon"] = 136147,
@@ -9570,7 +9407,8 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 		},
 		["AV Timers"] = {
 			["grow"] = "DOWN",
@@ -9638,17 +9476,19 @@ WeakAurasSaved = {
 			["align"] = "CENTER",
 			["frameStrata"] = 1,
 			["stagger"] = 0,
-			["gridType"] = "RD",
-			["version"] = 14,
-			["subRegions"] = {
-			},
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["useLimit"] = false,
+			["version"] = 14,
+			["subRegions"] = {
+			},
+			["sortHybridTable"] = {
+				["Av Timers"] = false,
+			},
+			["gridType"] = "RD",
 			["load"] = {
 				["use_class"] = false,
 				["talent"] = {
@@ -9669,9 +9509,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["sortHybridTable"] = {
-				["Av Timers"] = false,
-			},
+			["selfPoint"] = "TOP",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -9710,7 +9548,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "TOP",
+			["useLimit"] = false,
 		},
 		["Off Hand"] = {
 			["sparkWidth"] = 10,
@@ -9920,7 +9758,12 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["height"] = 6,
-			["uid"] = "(1XnfyKcJl3",
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["load"] = {
 				["use_namerealm"] = true,
 				["size"] = {
@@ -9932,21 +9775,20 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
 				["class"] = {
 					["multi"] = {
 					},
 				},
 				["use_combat"] = true,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
 				["zoneIds"] = "",
 			},
 			["sparkBlendMode"] = "ADD",
 			["useAdjustededMax"] = false,
-			["config"] = {
-			},
+			["uid"] = "(1XnfyKcJl3",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -9974,11 +9816,7 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["width"] = 200,
 			["xOffset"] = 0,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["inverse"] = true,
 			["actions"] = {
@@ -10389,15 +10227,15 @@ WeakAurasSaved = {
 			["mirror"] = false,
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
-			["xOffset"] = 97.999755859375,
-			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["authorOptions"] = {
 			},
-			["discrete_rotation"] = 0,
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["parent"] = "DRUID / ROGUE",
+			["xOffset"] = 97.999755859375,
 			["semver"] = "1.0.13",
 			["tocversion"] = 11302,
 			["id"] = "Druid - CP5",
-			["parent"] = "DRUID / ROGUE",
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["width"] = 69,
 			["anchorFrameType"] = "SCREEN",
@@ -10410,7 +10248,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["discrete_rotation"] = 0,
 		},
 		["VrIcon"] = {
 			["iconSource"] = 0,
@@ -10671,6 +10509,7 @@ WeakAurasSaved = {
 			},
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
+			["selfPoint"] = "CENTER",
 			["actions"] = {
 				["start"] = {
 				},
@@ -10679,7 +10518,6 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["parent"] = "VictoryRush",
 			["cooldown"] = false,
 			["conditions"] = {
 			},
@@ -10707,7 +10545,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["parent"] = "VictoryRush",
 		},
 		["Warlock - Immolate"] = {
 			["iconSource"] = 0,
@@ -10864,8 +10702,8 @@ WeakAurasSaved = {
 			["zoom"] = 0.3,
 			["config"] = {
 			},
+			["icon"] = true,
 			["parent"] = "Warlock 2.0",
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["cooldown"] = true,
 			["displayIcon"] = 135817,
@@ -10924,7 +10762,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["selfPoint"] = "CENTER",
 		},
 		["DRUID / ROGUE"] = {
 			["controlledChildren"] = {
@@ -11040,10 +10878,10 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["uid"] = "IUvIXiYBA4q",
 			["borderInset"] = 1,
 			["config"] = {
 			},
-			["uid"] = "IUvIXiYBA4q",
 			["conditions"] = {
 			},
 			["information"] = {
@@ -11214,8 +11052,9 @@ WeakAurasSaved = {
 			["zoom"] = 0.3,
 			["config"] = {
 			},
+			["authorOptions"] = {
+			},
 			["url"] = "https://wago.io/Y8douZITb/12",
-			["parent"] = "Warlock 2.0",
 			["regionType"] = "icon",
 			["cooldown"] = true,
 			["displayIcon"] = 136139,
@@ -11269,8 +11108,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["parent"] = "Warlock 2.0",
 		},
 		["Druid - CP4"] = {
 			["color"] = {
@@ -11443,15 +11281,15 @@ WeakAurasSaved = {
 			["mirror"] = false,
 			["regionType"] = "texture",
 			["blendMode"] = "BLEND",
-			["xOffset"] = 47.999755859375,
-			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
 			["authorOptions"] = {
 			},
-			["discrete_rotation"] = 0,
+			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Square_White",
+			["parent"] = "DRUID / ROGUE",
+			["xOffset"] = 47.999755859375,
 			["semver"] = "1.0.13",
 			["tocversion"] = 11302,
 			["id"] = "Druid - CP4",
-			["parent"] = "DRUID / ROGUE",
+			["selfPoint"] = "CENTER",
 			["frameStrata"] = 2,
 			["width"] = 67,
 			["anchorFrameType"] = "SCREEN",
@@ -11464,7 +11302,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["discrete_rotation"] = 0,
 		},
 		["VrIcon 2"] = {
 			["iconSource"] = 0,
@@ -11726,8 +11564,9 @@ WeakAurasSaved = {
 			},
 			["frameStrata"] = 1,
 			["width"] = 65.000114440918,
+			["authorOptions"] = {
+			},
 			["url"] = "https://wago.io/v9qxdDgI4/2",
-			["internalVersion"] = 53,
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
@@ -11766,8 +11605,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["authorOptions"] = {
-			},
+			["internalVersion"] = 53,
 		},
 		["Warlock - Corruption"] = {
 			["iconSource"] = 0,
@@ -11924,8 +11762,8 @@ WeakAurasSaved = {
 			["zoom"] = 0.3,
 			["config"] = {
 			},
+			["icon"] = true,
 			["parent"] = "Warlock 2.0",
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["cooldown"] = true,
 			["displayIcon"] = 136118,
@@ -11984,7 +11822,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
+			["selfPoint"] = "CENTER",
 		},
 		["Herbaning Switch"] = {
 			["sparkWidth"] = 20,
@@ -12238,15 +12076,30 @@ WeakAurasSaved = {
 				0, -- [3]
 				0.5, -- [4]
 			},
+			["uid"] = "dSVImVtgjk5",
+			["smoothProgress"] = true,
+			["useAdjustededMin"] = false,
+			["regionType"] = "aurabar",
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["smoothProgress"] = true,
-			["useAdjustededMin"] = false,
-			["regionType"] = "aurabar",
+			["semver"] = "1.0.3",
+			["icon_side"] = "RIGHT",
+			["width"] = 99.999954223633,
+			["sparkHeight"] = 30,
+			["texture"] = "Clean",
+			["sparkHidden"] = "NEVER",
+			["zoom"] = 0,
+			["auto"] = true,
+			["tocversion"] = 20502,
+			["id"] = "Herbaning Switch",
+			["spark"] = false,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["config"] = {
 				["showprogress"] = true,
 				["mthrottlespeed"] = 5,
@@ -12254,21 +12107,6 @@ WeakAurasSaved = {
 				["wthrottlespeed"] = 20,
 				["verbosetext"] = false,
 			},
-			["spark"] = false,
-			["icon_side"] = "RIGHT",
-			["width"] = 99.999954223633,
-			["sparkHeight"] = 30,
-			["texture"] = "Clean",
-			["sparkHidden"] = "NEVER",
-			["zoom"] = 0,
-			["semver"] = "1.0.3",
-			["tocversion"] = 20502,
-			["id"] = "Herbaning Switch",
-			["auto"] = true,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["uid"] = "dSVImVtgjk5",
 			["inverse"] = true,
 			["version"] = 4,
 			["orientation"] = "HORIZONTAL",
@@ -12327,10 +12165,9 @@ WeakAurasSaved = {
 			["align"] = "CENTER",
 			["rotation"] = 0,
 			["version"] = 1,
-			["uid"] = "QC6zOzg1VP5",
+			["borderInset"] = 0,
 			["limit"] = 5,
-			["authorOptions"] = {
-			},
+			["anchorPoint"] = "CENTER",
 			["load"] = {
 				["use_class"] = false,
 				["talent"] = {
@@ -12350,6 +12187,13 @@ WeakAurasSaved = {
 					},
 				},
 				["zoneIds"] = "",
+			},
+			["useLimit"] = false,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
 			},
 			["animation"] = {
 				["start"] = {
@@ -12371,26 +12215,23 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["stagger"] = 0,
 			["source"] = "import",
-			["sortHybridTable"] = {
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
 			["scale"] = 1,
-			["useLimit"] = false,
+			["sortHybridTable"] = {
+			},
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["internalVersion"] = 53,
-			["config"] = {
-			},
+			["space"] = 2,
+			["uid"] = "QC6zOzg1VP5",
 			["constantFactor"] = "RADIUS",
 			["frameStrata"] = 1,
 			["borderOffset"] = 16,
@@ -12400,21 +12241,18 @@ WeakAurasSaved = {
 			["arcLength"] = 360,
 			["gridWidth"] = 5,
 			["anchorFrameType"] = "SCREEN",
-			["anchorPoint"] = "CENTER",
-			["borderInset"] = 0,
-			["animate"] = true,
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
+			["config"] = {
+			},
+			["animate"] = true,
+			["internalVersion"] = 53,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["space"] = 2,
+			["stagger"] = 0,
 		},
 		["Details! Aura Group"] = {
 			["grow"] = "RIGHT",
@@ -12494,6 +12332,24 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["rowSpace"] = 1,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["internalVersion"] = 53,
+			["animate"] = true,
+			["sort"] = "none",
+			["scale"] = 1,
+			["stagger"] = 0,
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["limit"] = 5,
+			["useLimit"] = false,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -12514,24 +12370,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["fullCircle"] = true,
-			["animate"] = true,
-			["sort"] = "none",
-			["scale"] = 1,
-			["rowSpace"] = 1,
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["limit"] = 5,
-			["internalVersion"] = 53,
-			["arcLength"] = 360,
 			["constantFactor"] = "RADIUS",
 			["borderInset"] = 0,
 			["borderOffset"] = 16,
@@ -12545,14 +12383,14 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["uid"] = "XLzBWxn1LoM",
-			["stagger"] = 0,
-			["useLimit"] = false,
+			["gridType"] = "RD",
+			["fullCircle"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["gridType"] = "RD",
+			["arcLength"] = 360,
 		},
 		["GEMS"] = {
 			["controlledChildren"] = {
@@ -12645,6 +12483,8 @@ WeakAurasSaved = {
 			["xOffset"] = 40,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SELECTFRAME",
+			["anchorFrameFrame"] = "MultiBarBottomRightButton12",
+			["borderInset"] = 1,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -12665,8 +12505,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["borderInset"] = 1,
-			["groupIcon"] = 134105,
 			["config"] = {
 			},
 			["conditions"] = {
@@ -12675,7 +12513,7 @@ WeakAurasSaved = {
 				["ignoreOptionsEventErrors"] = true,
 				["groupOffset"] = true,
 			},
-			["anchorFrameFrame"] = "MultiBarBottomRightButton12",
+			["groupIcon"] = 134105,
 		},
 		["Warlock - Shadowburn"] = {
 			["iconSource"] = 0,
@@ -12856,13 +12694,13 @@ WeakAurasSaved = {
 			["zoom"] = 0.3,
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["url"] = "https://wago.io/Y8douZITb/12",
 			["regionType"] = "icon",
 			["cooldown"] = true,
 			["displayIcon"] = 136191,
@@ -12917,111 +12755,128 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
+			["url"] = "https://wago.io/Y8douZITb/12",
 		},
-		["timer"] = {
-			["outline"] = "OUTLINE",
-			["wagoID"] = "v9qxdDgI4",
+		["Warlock - Soul Shard #"] = {
+			["iconSource"] = -1,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayText"] = "%p",
-			["yOffset"] = 30,
+			["preferToUpdate"] = false,
+			["yOffset"] = -327,
 			["anchorPoint"] = "CENTER",
-			["displayText_format_p_time_format"] = 0,
-			["customTextUpdate"] = "event",
-			["url"] = "https://wago.io/v9qxdDgI4/2",
+			["cooldownSwipe"] = true,
+			["cooldownEdge"] = false,
 			["actions"] = {
 				["start"] = {
 				},
-				["finish"] = {
-				},
 				["init"] = {
+				},
+				["finish"] = {
 				},
 			},
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["use_destFlags2"] = false,
+						["itemName"] = 6265,
+						["use_count"] = false,
+						["auranames"] = {
+							"Immolate", -- [1]
+						},
+						["duration"] = "1",
 						["names"] = {
 						},
-						["subeventSuffix"] = "",
-						["unit"] = "player",
-						["duration"] = "20",
-						["event"] = "Combat Log",
-						["use_critical"] = true,
-						["subeventPrefix"] = "PARTY_KILL",
-						["use_sourceFlags2"] = false,
+						["unitExists"] = true,
+						["debuffType"] = "HARMFUL",
+						["useName"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["use_itemName"] = true,
+						["use_unit"] = true,
+						["matchesShowOn"] = "showAlways",
 						["spellIds"] = {
 						},
-						["use_sourceUnit"] = true,
-						["type"] = "combatlog",
-						["use_destUnit"] = false,
-						["sourceUnit"] = "player",
-						["debuffType"] = "HELPFUL",
+						["subeventPrefix"] = "SPELL",
+						["unevent"] = "auto",
+						["type"] = "item",
+						["unit"] = "target",
+						["event"] = "Item Count",
 					},
 					["untrigger"] = {
 					},
 				}, -- [1]
 				{
 					["trigger"] = {
-						["use_destFlags2"] = false,
-						["spellId"] = "34428",
-						["duration"] = "0",
-						["genericShowOn"] = "showOnCooldown",
+						["type"] = "unit",
+						["use_alwaystrue"] = true,
+						["unevent"] = "auto",
+						["duration"] = "1",
+						["event"] = "Conditions",
 						["unit"] = "player",
-						["debuffType"] = "HELPFUL",
-						["spellName"] = 34428,
-						["use_track"] = true,
-						["type"] = "spell",
+						["subeventSuffix"] = "_CAST_START",
+						["use_unit"] = true,
 						["subeventPrefix"] = "SPELL",
-						["subeventSuffix"] = "_CAST_SUCCESS",
-						["use_critical"] = true,
-						["use_spellName"] = true,
-						["event"] = "Action Usable",
-						["use_sourceFlags2"] = false,
-						["realSpellName"] = "Victory Rush",
-						["use_spellId"] = false,
-						["spellIds"] = {
-						},
-						["use_sourceUnit"] = true,
-						["use_genericShowOn"] = true,
-						["use_destUnit"] = false,
-						["sourceUnit"] = "player",
-						["names"] = {
-						},
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 					},
 				}, -- [2]
-				["disjunctive"] = "all",
+				["disjunctive"] = "any",
 				["activeTriggerMode"] = -10,
 			},
-			["displayText_format_p_format"] = "timed",
 			["internalVersion"] = 53,
-			["selfPoint"] = "BOTTOM",
-			["font"] = "PT Sans Narrow",
-			["version"] = 2,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["desaturate"] = false,
+			["version"] = 12,
 			["subRegions"] = {
 				{
 					["type"] = "subbackground",
 				}, -- [1]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "%p",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["text_text_format_p_time_mod_rate"] = true,
+					["type"] = "subtext",
+					["anchorXOffset"] = 0,
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Vixar",
+					["text_text_format_p_time_format"] = 0,
+					["text_shadowYOffset"] = 0,
+					["text_text_format_p_time_legacy_floor"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "CENTER",
+					["text_text_format_p_format"] = "timed",
+					["text_fontType"] = "OUTLINE",
+					["text_fontSize"] = 25,
+					["text_text_format_p_time_dynamic_threshold"] = 0,
+					["text_text_format_p_time_precision"] = 1,
+				}, -- [2]
 			},
+			["height"] = 35,
 			["load"] = {
 				["use_class"] = true,
 				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "WARRIOR",
-					["multi"] = {
-					},
-				},
-				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -13029,62 +12884,89 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["class"] = {
+					["single"] = "WARLOCK",
+					["multi"] = {
+						["WARLOCK"] = true,
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["zoneIds"] = "",
 			},
-			["fontSize"] = 25,
-			["shadowXOffset"] = 1,
+			["config"] = {
+			},
+			["zoom"] = 0.3,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
 			["animation"] = {
 				["start"] = {
-					["easeStrength"] = 3,
 					["type"] = "none",
 					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
 					["easeType"] = "none",
 				},
 				["main"] = {
-					["easeStrength"] = 3,
 					["type"] = "none",
 					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
 					["easeType"] = "none",
 				},
 				["finish"] = {
-					["easeStrength"] = 3,
 					["type"] = "none",
 					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
 					["easeType"] = "none",
 				},
 			},
-			["parent"] = "VictoryRush",
-			["regionType"] = "text",
-			["xOffset"] = 0,
-			["conditions"] = {
-			},
-			["displayText_format_p_time_legacy_floor"] = true,
-			["displayText_format_p_time_mod_rate"] = true,
-			["displayText_format_p_time_precision"] = 1,
-			["config"] = {
-			},
-			["automaticWidth"] = "Auto",
-			["justify"] = "LEFT",
-			["semver"] = "1.0.1",
-			["tocversion"] = 20501,
-			["id"] = "timer",
-			["authorOptions"] = {
-			},
+			["cooldown"] = true,
+			["xOffset"] = -69.78,
+			["url"] = "https://wago.io/Y8douZITb/12",
 			["frameStrata"] = 1,
+			["width"] = 35,
+			["cooldownTextDisabled"] = false,
+			["auto"] = true,
+			["tocversion"] = 11302,
+			["id"] = "Warlock - Soul Shard #",
+			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["wordWrap"] = "WordWrap",
-			["uid"] = "4)0S2Za6LFo",
-			["displayText_format_p_time_dynamic_threshold"] = 60,
-			["shadowYOffset"] = -1,
-			["shadowColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
+			["semver"] = "1.0.11",
+			["uid"] = "esE633vv0KS",
+			["inverse"] = false,
+			["parent"] = "Warlock 2.0",
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "<=",
+						["value"] = "0",
+						["variable"] = "value",
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "desaturate",
+						}, -- [1]
+						{
+							["value"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
+								0.49479150772095, -- [4]
+							},
+							["property"] = "color",
+						}, -- [2]
+					},
+				}, -- [1]
 			},
-			["fixedWidth"] = 200,
 			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
 			},
-			["preferToUpdate"] = false,
+			["icon"] = true,
 		},
 		["Druid - Mana Bar Cat/Bear"] = {
 			["sparkWidth"] = 10,
@@ -13377,6 +13259,173 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 		},
+		["timer"] = {
+			["outline"] = "OUTLINE",
+			["wagoID"] = "v9qxdDgI4",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayText"] = "%p",
+			["yOffset"] = 30,
+			["anchorPoint"] = "CENTER",
+			["displayText_format_p_time_format"] = 0,
+			["customTextUpdate"] = "event",
+			["url"] = "https://wago.io/v9qxdDgI4/2",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["use_destFlags2"] = false,
+						["use_critical"] = true,
+						["subeventSuffix"] = "",
+						["names"] = {
+						},
+						["duration"] = "20",
+						["event"] = "Combat Log",
+						["unit"] = "player",
+						["subeventPrefix"] = "PARTY_KILL",
+						["use_sourceFlags2"] = false,
+						["spellIds"] = {
+						},
+						["use_sourceUnit"] = true,
+						["type"] = "combatlog",
+						["use_destUnit"] = false,
+						["sourceUnit"] = "player",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["use_destFlags2"] = false,
+						["spellId"] = "34428",
+						["duration"] = "0",
+						["genericShowOn"] = "showOnCooldown",
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
+						["spellName"] = 34428,
+						["use_track"] = true,
+						["type"] = "spell",
+						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_SUCCESS",
+						["use_critical"] = true,
+						["use_spellName"] = true,
+						["event"] = "Action Usable",
+						["use_sourceFlags2"] = false,
+						["realSpellName"] = "Victory Rush",
+						["use_spellId"] = false,
+						["spellIds"] = {
+						},
+						["use_sourceUnit"] = true,
+						["use_genericShowOn"] = true,
+						["use_destUnit"] = false,
+						["sourceUnit"] = "player",
+						["names"] = {
+						},
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+				["disjunctive"] = "all",
+				["activeTriggerMode"] = -10,
+			},
+			["displayText_format_p_format"] = "timed",
+			["internalVersion"] = 53,
+			["selfPoint"] = "BOTTOM",
+			["font"] = "PT Sans Narrow",
+			["version"] = 2,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+			},
+			["load"] = {
+				["use_class"] = true,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "WARRIOR",
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["fontSize"] = 25,
+			["shadowXOffset"] = 1,
+			["animation"] = {
+				["start"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["easeStrength"] = 3,
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["parent"] = "VictoryRush",
+			["regionType"] = "text",
+			["xOffset"] = 0,
+			["conditions"] = {
+			},
+			["displayText_format_p_time_legacy_floor"] = true,
+			["displayText_format_p_time_mod_rate"] = true,
+			["displayText_format_p_time_precision"] = 1,
+			["config"] = {
+			},
+			["automaticWidth"] = "Auto",
+			["justify"] = "LEFT",
+			["semver"] = "1.0.1",
+			["tocversion"] = 20501,
+			["id"] = "timer",
+			["authorOptions"] = {
+			},
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["wordWrap"] = "WordWrap",
+			["uid"] = "4)0S2Za6LFo",
+			["displayText_format_p_time_dynamic_threshold"] = 60,
+			["shadowYOffset"] = -1,
+			["shadowColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["fixedWidth"] = 200,
+			["information"] = {
+			},
+			["preferToUpdate"] = false,
+		},
 		["Citrine"] = {
 			["iconSource"] = -1,
 			["xOffset"] = 80,
@@ -13528,13 +13577,13 @@ WeakAurasSaved = {
 					["text"] = "/cast Conjure Mana Citrine",
 				},
 			},
+			["icon"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -13611,7 +13660,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = false,
-			["icon"] = true,
+			["selfPoint"] = "CENTER",
 		},
 		["Jade"] = {
 			["iconSource"] = -1,
@@ -13734,31 +13783,40 @@ WeakAurasSaved = {
 					["text"] = "/cast Conjure Mana Jade",
 				},
 			},
+			["authorOptions"] = {
+				{
+					["subOptions"] = {
+						{
+							["type"] = "input",
+							["useDesc"] = false,
+							["width"] = 1,
+							["name"] = "Text",
+							["default"] = "",
+							["multiline"] = false,
+							["length"] = 10,
+							["key"] = "text",
+							["useLength"] = false,
+						}, -- [1]
+					},
+					["hideReorder"] = true,
+					["useDesc"] = false,
+					["nameSource"] = 0,
+					["width"] = 1,
+					["useCollapse"] = false,
+					["collapse"] = false,
+					["name"] = "Macro",
+					["key"] = "macro",
+					["limitType"] = "none",
+					["groupType"] = "simple",
+					["type"] = "group",
+					["size"] = 10,
+				}, -- [1]
+			},
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
-			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
 			},
 			["regionType"] = "icon",
 			["information"] = {
@@ -13819,34 +13877,25 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = false,
-			["authorOptions"] = {
-				{
-					["subOptions"] = {
-						{
-							["type"] = "input",
-							["useDesc"] = false,
-							["width"] = 1,
-							["name"] = "Text",
-							["default"] = "",
-							["multiline"] = false,
-							["length"] = 10,
-							["key"] = "text",
-							["useLength"] = false,
-						}, -- [1]
-					},
-					["hideReorder"] = true,
-					["useDesc"] = false,
-					["nameSource"] = 0,
-					["width"] = 1,
-					["useCollapse"] = false,
-					["collapse"] = false,
-					["name"] = "Macro",
-					["key"] = "macro",
-					["limitType"] = "none",
-					["groupType"] = "simple",
-					["type"] = "group",
-					["size"] = 10,
-				}, -- [1]
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
 			},
 		},
 		["Fade in-out Text Combat Indicator"] = {
@@ -13956,197 +14005,15 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["authorOptions"] = {
 			},
-			["borderInset"] = 1,
 			["config"] = {
-			},
-			["selfPoint"] = "CENTER",
-			["conditions"] = {
-			},
-			["information"] = {
 			},
 			["uid"] = "BqsbsH4)Oho",
-		},
-		["MEND PET"] = {
-			["sparkWidth"] = 10,
-			["iconSource"] = -1,
-			["xOffset"] = 18,
-			["yOffset"] = 10,
-			["anchorPoint"] = "CENTER",
-			["sparkRotation"] = 0,
-			["sparkRotationMode"] = "AUTO",
-			["backgroundColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.5, -- [4]
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["useName"] = true,
-						["auranames"] = {
-							"Mend Pet", -- [1]
-						},
-						["event"] = "Health",
-						["subeventPrefix"] = "SPELL",
-						["spellIds"] = {
-						},
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "aura2",
-						["names"] = {
-						},
-						["unit"] = "pet",
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["disjunctive"] = "any",
-				["activeTriggerMode"] = -10,
-			},
-			["icon_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["internalVersion"] = 53,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["barColor"] = {
-				0.2, -- [1]
-				1, -- [2]
-				0.0862745098039216, -- [3]
-				1, -- [4]
-			},
-			["desaturate"] = false,
-			["sparkOffsetY"] = 0,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["type"] = "subforeground",
-				}, -- [2]
-				{
-					["text_shadowXOffset"] = 1,
-					["text_text"] = "Mend Pet",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["type"] = "subtext",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Friz Quadrata TT",
-					["text_shadowYOffset"] = -1,
-					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "None",
-					["text_anchorPoint"] = "INNER_BOTTOMLEFT",
-					["text_visible"] = false,
-					["text_text_format_n_format"] = "none",
-					["text_fontSize"] = 12,
-					["anchorXOffset"] = 0,
-					["text_anchorYOffset"] = 4,
-				}, -- [3]
-			},
-			["height"] = 3,
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["zoneIds"] = "",
-			},
-			["sparkBlendMode"] = "ADD",
-			["useAdjustededMax"] = false,
-			["uid"] = "FpXBk3sOate",
 			["selfPoint"] = "CENTER",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["useAdjustededMin"] = false,
-			["smoothProgress"] = true,
-			["anchorFrameFrame"] = "PetFrame",
-			["regionType"] = "aurabar",
-			["sparkOffsetX"] = 0,
-			["config"] = {
-			},
-			["icon_side"] = "RIGHT",
-			["zoom"] = 0,
-			["sparkHeight"] = 30,
-			["texture"] = "Clean",
-			["id"] = "MEND PET",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["spark"] = false,
-			["width"] = 68,
-			["sparkHidden"] = "NEVER",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SELECTFRAME",
-			["auto"] = true,
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["inverse"] = false,
-			["authorOptions"] = {
-			},
-			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
 			["information"] = {
 			},
-			["icon"] = false,
+			["borderInset"] = 1,
 		},
 		["Warlock - Mana Bar "] = {
 			["overlays"] = {
@@ -14513,13 +14380,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["subeventSuffix"] = "_CAST_START",
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
+						["spellIds"] = {
+						},
 						["names"] = {
 						},
 						["check"] = "event",
+						["custom"] = "function (allstates, event, ...)\n    local activeLossOfControlCount = C_LossOfControl.GetActiveLossOfControlDataCount()\n    if activeLossOfControlCount > 0 then return true end\n    return false\nend",
 						["events"] = "LOSS_OF_CONTROL_UPDATE",
-						["spellIds"] = {
-						},
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -14667,14 +14534,14 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["unit"] = "player",
 						["debuffType"] = "HELPFUL",
-						["spellIds"] = {
-						},
 						["events"] = "CHAT_MSG_PARTY, CHAT_MSG_RAID, CHAT_MSG_PARTY_LEADER, CHAT_MSG_RAID_LEADER",
+						["custom"] = "function(event, message, sender, ...)\n    local name = Ambiguate(sender, 'short')\n    local allowed_users = aura_env.config.allowed_users\n    if strlen(allowed_users)>0 then\n        if not tContains({strsplit(\",\", allowed_users)}, name) then\n            return\n        end\n    end\n    if message == aura_env.config.command_follow then\n        FollowUnit(name)     \n    elseif message == aura_env.config.command_stop then\n        FollowUnit(\"player\")\n    end\nend\n\n\n",
 						["custom_type"] = "event",
 						["names"] = {
 						},
 						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(event, message, sender, ...)\n    local name = Ambiguate(sender, 'short')\n    local allowed_users = aura_env.config.allowed_users\n    if strlen(allowed_users)>0 then\n        if not tContains({strsplit(\",\", allowed_users)}, name) then\n            return\n        end\n    end\n    if message == aura_env.config.command_follow then\n        FollowUnit(name)     \n    elseif message == aura_env.config.command_stop then\n        FollowUnit(\"player\")\n    end\nend\n\n\n",
+						["spellIds"] = {
+						},
 						["custom_hide"] = "timed",
 					},
 					["untrigger"] = {
@@ -14726,13 +14593,18 @@ WeakAurasSaved = {
 			["fontSize"] = 12,
 			["source"] = "import",
 			["shadowXOffset"] = 1,
-			["selfPoint"] = "BOTTOM",
+			["displayText_format_p_time_mod_rate"] = true,
 			["regionType"] = "text",
-			["displayText_format_p_time_legacy_floor"] = true,
-			["automaticWidth"] = "Auto",
+			["selfPoint"] = "BOTTOM",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["conditions"] = {
 			},
-			["displayText_format_p_time_mod_rate"] = true,
+			["displayText_format_p_time_legacy_floor"] = true,
 			["displayText_format_p_time_precision"] = 1,
 			["animation"] = {
 				["start"] = {
@@ -14806,7 +14678,7 @@ WeakAurasSaved = {
 					["useLength"] = false,
 				}, -- [3]
 			},
-			["preferToUpdate"] = false,
+			["automaticWidth"] = "Auto",
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -14817,12 +14689,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["preferToUpdate"] = false,
 		},
 		["Overpower on Nameplate"] = {
 			["iconSource"] = 0,
@@ -14845,21 +14712,21 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["debuffType"] = "HELPFUL",
 						["type"] = "custom",
-						["custom_type"] = "stateupdate",
 						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["unit"] = "player",
 						["duration"] = "1",
 						["event"] = "Chat Message",
 						["names"] = {
 						},
 						["subeventPrefix"] = "SPELL",
-						["events"] = " NAME_PLATE_UNIT_ADDED NAME_PLATE_UNIT_REMOVED COMBAT_LOG_EVENT_UNFILTERED ",
 						["spellIds"] = {
 						},
 						["custom"] = "function(allstates, event,unit, ...)    \n    if event == \"NAME_PLATE_UNIT_ADDED\" then\n        if unit then\n            local guid = UnitGUID(unit)                   \n            --print(name)\n            allstates[guid] = {\n                changed = true,\n                show = false,\n                PassUnit = unit,\n                glow = false,\n            }            \n        end\n    end\n    \n    if event == \"NAME_PLATE_UNIT_REMOVED\" then\n        if unit then\n            local guid = UnitGUID(unit)\n            if allstates[guid] then\n                allstates[guid].changed = true\n                allstates[guid].PassUnit = \"none\"\n            end\n        end\n    end\n    \n    if event == \"COMBAT_LOG_EVENT_UNFILTERED\" then\n        local subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags = ...\n        local spellID,spellName,spellSchool\n        local missType = \"\"\n        local stanceIndex = GetShapeshiftForm()\n        \n        if subEvent == \"SWING_MISSED\" and sourceName == UnitName(\"player\")  then\n            --if subEvent == \"SWING_MISSED\" and sourceName == UnitName(\"player\") and stanceIndex == 1 then\n            missType = select(11,...)\n            --print(missType .. \"SWING missed\")\n            --print(missType .. \"  SWING \")\n        elseif subEvent == \"SPELL_MISSED\" and sourceName == UnitName(\"player\") then\n            --elseif subEvent == \"SPELL_MISSED\" and sourceName == UnitName(\"player\") and stanceIndex == 1 then\n            \n            spellID,spellName,spellSchool,missType = select(11, ...)\n            --print(missType .. \"SPELL missed\")\n            --print(missType .. \"  SPELL \")            \n        end\n        \n        if missType == \"DODGE\" then\n            for i = 1,40 do\n                local u = \"nameplate\"..i                \n                if UnitExists(u) and UnitGUID(u) == destGUID then            \n                    allstates[destGUID] = {\n                        changed = true,\n                        show = true,          \n                        PassUnit = u,\n                        glow = true,\n                        autoHide = true,\n                        progressType = \"timed\",\n                        duration = aura_env.config.duration,\n                    } \n                    break\n                    \n                end\n            end\n        end\n    end\n    \n    return true\n    \nend",
+						["events"] = " NAME_PLATE_UNIT_ADDED NAME_PLATE_UNIT_REMOVED COMBAT_LOG_EVENT_UNFILTERED ",
 						["check"] = "event",
 						["genericShowOn"] = "showOnActive",
-						["unevent"] = "auto",
+						["custom_type"] = "stateupdate",
 						["custom_hide"] = "timed",
 					},
 					["untrigger"] = {
@@ -15016,6 +14883,7 @@ WeakAurasSaved = {
 			},
 			["anchorFrameType"] = "SCREEN",
 			["cooldownTextDisabled"] = false,
+			["cooldownEdge"] = false,
 			["authorOptions"] = {
 				{
 					["type"] = "number",
@@ -15050,18 +14918,6 @@ WeakAurasSaved = {
 					["name"] = "Duration",
 					["default"] = 3,
 				}, -- [3]
-			},
-			["actions"] = {
-				["start"] = {
-					["custom"] = "\n\n",
-					["do_custom"] = false,
-				},
-				["init"] = {
-					["custom"] = "if aura_env.config.duration <=  0 then\n    aura_env.config.duration = 2\nend",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-				},
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
@@ -15113,7 +14969,18 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = false,
-			["cooldownEdge"] = false,
+			["actions"] = {
+				["start"] = {
+					["custom"] = "\n\n",
+					["do_custom"] = false,
+				},
+				["init"] = {
+					["custom"] = "if aura_env.config.duration <=  0 then\n    aura_env.config.duration = 2\nend",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+				},
+			},
 		},
 		["Warlock 2.0"] = {
 			["controlledChildren"] = {
@@ -15217,9 +15084,8 @@ WeakAurasSaved = {
 			["id"] = "Warlock 2.0",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
+			["borderInset"] = 1,
 			["uid"] = "GmwdiAzp9BQ",
-			["config"] = {
-			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -15247,7 +15113,8 @@ WeakAurasSaved = {
 				["groupOffset"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["borderInset"] = 1,
+			["config"] = {
+			},
 		},
 		["Swing Timers"] = {
 			["grow"] = "DOWN",
@@ -15341,7 +15208,7 @@ WeakAurasSaved = {
 				},
 				["zoneIds"] = "",
 			},
-			["arcLength"] = 360,
+			["radius"] = 200,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -15350,7 +15217,7 @@ WeakAurasSaved = {
 			},
 			["selfPoint"] = "TOP",
 			["animate"] = true,
-			["fullCircle"] = true,
+			["useLimit"] = false,
 			["scale"] = 1.2,
 			["rowSpace"] = 1,
 			["border"] = false,
@@ -15358,8 +15225,8 @@ WeakAurasSaved = {
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["gridType"] = "RD",
-			["config"] = {
+			["fullCircle"] = true,
+			["authorOptions"] = {
 			},
 			["constantFactor"] = "RADIUS",
 			["stagger"] = 0,
@@ -15372,15 +15239,15 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["sort"] = "none",
 			["borderInset"] = 0,
-			["radius"] = 200,
-			["authorOptions"] = {
+			["config"] = {
 			},
+			["gridType"] = "RD",
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["useLimit"] = false,
+			["arcLength"] = 360,
 		},
 		["Warlock - Escape Artist"] = {
 			["iconSource"] = 0,
@@ -15532,9 +15399,8 @@ WeakAurasSaved = {
 			["zoom"] = 0.3,
 			["config"] = {
 			},
+			["selfPoint"] = "CENTER",
 			["parent"] = "Warlock 2.0",
-			["authorOptions"] = {
-			},
 			["regionType"] = "icon",
 			["cooldown"] = true,
 			["displayIcon"] = 132309,
@@ -15576,1011 +15442,8 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["selfPoint"] = "CENTER",
-		},
-		["Ruby"] = {
-			["iconSource"] = -1,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["preferToUpdate"] = false,
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["cooldownEdge"] = false,
-			["icon"] = true,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "unit",
-						["use_alwaystrue"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["duration"] = "1",
-						["event"] = "Conditions",
-						["subeventPrefix"] = "SPELL",
-						["spellIds"] = {
-						},
-						["use_unit"] = true,
-						["names"] = {
-						},
-						["unit"] = "player",
-						["unevent"] = "auto",
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				{
-					["trigger"] = {
-						["type"] = "item",
-						["use_count"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["duration"] = "1",
-						["event"] = "Item Count",
-						["subeventPrefix"] = "SPELL",
-						["use_includeBank"] = false,
-						["itemName"] = 8008,
-						["count"] = "0",
-						["use_unit"] = true,
-						["unit"] = "player",
-						["use_itemName"] = true,
-						["unevent"] = "auto",
-						["count_operator"] = "==",
-					},
-					["untrigger"] = {
-					},
-				}, -- [2]
-				["disjunctive"] = "any",
-				["customTriggerLogic"] = "",
-				["activeTriggerMode"] = 1,
-			},
-			["internalVersion"] = 53,
-			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["desaturate"] = false,
-			["version"] = 1,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["glowFrequency"] = 0.25,
-					["glow"] = true,
-					["useGlowColor"] = false,
-					["glowType"] = "buttonOverlay",
-					["glowLength"] = 10,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["type"] = "subglow",
-					["glowXOffset"] = 0,
-					["glowThickness"] = 1,
-					["glowScale"] = 1,
-					["glowLines"] = 8,
-					["glowBorder"] = false,
-				}, -- [2]
-			},
-			["height"] = 40,
-			["load"] = {
-				["use_level"] = true,
-				["talent"] = {
-					["single"] = 9,
-					["multi"] = {
-						[9] = true,
-					},
-				},
-				["level_operator"] = ">=",
-				["use_class"] = false,
-				["use_spellknown"] = false,
-				["zoneIds"] = "",
-				["class"] = {
-					["single"] = "DRUID",
-					["multi"] = {
-						["MAGE"] = true,
-					},
-				},
-				["use_never"] = false,
-				["level"] = "58",
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["authorMode"] = true,
-			["zoom"] = 0,
-			["uid"] = "UvSV5jPJMlO",
-			["xOffset"] = 120,
-			["url"] = "https://wago.io/U0WH3IJ3S/1",
-			["regionType"] = "icon",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 134128,
-			["selfPoint"] = "CENTER",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["custom"] = "local text = aura_env.config.macro.text\n\naura_env.button = CreateFrame(\"Button\", \"buffButton\", aura_env.region, \"SecureActionButtonTemplate\")\naura_env.button:SetAllPoints()\naura_env.button:SetAttribute(\"unit\", \"player\")\naura_env.button:SetAttribute(\"type\",\"macro\")\naura_env.button:SetAttribute(\"macrotext\", text)",
-					["do_custom"] = true,
-				},
-				["finish"] = {
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\CartoonWalking.ogg",
-					["do_sound"] = false,
-				},
-			},
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["cooldownTextDisabled"] = false,
-			["auto"] = true,
-			["tocversion"] = 11304,
-			["id"] = "Ruby",
-			["frameStrata"] = 1,
-			["useCooldownModRate"] = true,
-			["width"] = 40,
-			["semver"] = "1.0.0",
-			["config"] = {
-				["macro"] = {
-					["text"] = "/cast Conjure Mana Ruby",
-				},
-			},
-			["inverse"] = false,
-			["parent"] = "GEMS",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 2,
-						["variable"] = "show",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = 1,
-							["property"] = "alpha",
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["check"] = {
-						["trigger"] = 2,
-						["variable"] = "show",
-						["value"] = 0,
-					},
-					["changes"] = {
-						{
-							["property"] = "alpha",
-						}, -- [1]
-					},
-				}, -- [2]
-			},
-			["cooldown"] = false,
-			["authorOptions"] = {
-				{
-					["subOptions"] = {
-						{
-							["type"] = "input",
-							["useDesc"] = false,
-							["width"] = 1,
-							["name"] = "Text",
-							["default"] = "",
-							["multiline"] = false,
-							["length"] = 10,
-							["key"] = "text",
-							["useLength"] = false,
-						}, -- [1]
-					},
-					["hideReorder"] = true,
-					["useDesc"] = false,
-					["nameSource"] = 0,
-					["width"] = 1,
-					["useCollapse"] = false,
-					["key"] = "macro",
-					["name"] = "Macro",
-					["collapse"] = false,
-					["limitType"] = "none",
-					["groupType"] = "simple",
-					["type"] = "group",
-					["size"] = 10,
-				}, -- [1]
-			},
-		},
-		["Curses and Viper"] = {
-			["iconSource"] = -1,
-			["wagoID"] = "pw_hjyCcX",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["preferToUpdate"] = false,
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = false,
-			["cooldownEdge"] = false,
-			["icon"] = true,
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["useName"] = true,
-						["use_debuffClass"] = false,
-						["useExactSpellId"] = false,
-						["unit"] = "player",
-						["event"] = "Health",
-						["subeventPrefix"] = "SPELL",
-						["type"] = "aura2",
-						["auranames"] = {
-							"1714", -- [1]
-							"980", -- [2]
-							"702", -- [3]
-							"1490", -- [4]
-							"18223", -- [5]
-							"704", -- [6]
-							"3034", -- [7]
-							"9035", -- [8]
-						},
-						["spellIds"] = {
-						},
-						["auraspellids"] = {
-						},
-						["combineMode"] = "showHighest",
-						["subeventSuffix"] = "_CAST_START",
-						["names"] = {
-						},
-						["debuffType"] = "HARMFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 53,
-			["keepAspectRatio"] = false,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["desaturate"] = false,
-			["version"] = 17,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["type"] = "subborder",
-					["border_offset"] = 0.5,
-					["text_color"] = {
-					},
-					["border_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["border_visible"] = false,
-					["border_edge"] = "Square Full White",
-					["border_size"] = 1,
-				}, -- [2]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "%n",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["text_text_format_n_format"] = "none",
-					["type"] = "subtext",
-					["text_anchorXOffset"] = 15,
-					["text_color"] = {
-						0.8117647058823529, -- [1]
-						1, -- [2]
-						0.4352941176470588, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Arial Narrow",
-					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "OUTER_RIGHT",
-					["text_text_format_p_time_format"] = 0,
-					["text_text_format_p_format"] = "timed",
-					["text_fontSize"] = 16,
-					["anchorXOffset"] = 0,
-					["text_text_format_p_time_precision"] = 1,
-				}, -- [3]
-			},
-			["height"] = 40,
-			["load"] = {
-				["use_namerealm"] = true,
-				["ingroup"] = {
-				},
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["zoneIds"] = "",
-				["namerealm"] = "never",
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["cooldownTextDisabled"] = true,
-			["uid"] = "XYzKgm6z7d(",
-			["parent"] = "LOS",
-			["actions"] = {
-				["start"] = {
-					["message"] = "",
-					["do_message"] = false,
-					["message_type"] = "RAID_WARNING",
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["regionType"] = "icon",
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["useTooltip"] = false,
-			["url"] = "https://wago.io/pw_hjyCcX/17",
 			["authorOptions"] = {
 			},
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["zoom"] = 0.3,
-			["semver"] = "1.0.16",
-			["tocversion"] = 20503,
-			["id"] = "Curses and Viper",
-			["frameStrata"] = 1,
-			["useCooldownModRate"] = true,
-			["width"] = 40,
-			["auto"] = true,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["xOffset"] = 50,
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = "==",
-						["variable"] = "debuffClass",
-						["value"] = "curse",
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								0.6, -- [1]
-								0, -- [2]
-								1, -- [3]
-								1, -- [4]
-							},
-							["property"] = "sub.2.border_color",
-						}, -- [1]
-						{
-							["value"] = true,
-							["property"] = "sub.2.border_visible",
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = "==",
-						["variable"] = "debuffClass",
-						["value"] = "poison",
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								0, -- [1]
-								0.6, -- [2]
-								0, -- [3]
-								1, -- [4]
-							},
-							["property"] = "sub.2.border_color",
-						}, -- [1]
-						{
-							["value"] = true,
-							["property"] = "sub.2.border_visible",
-						}, -- [2]
-					},
-				}, -- [2]
-			},
-			["cooldown"] = true,
-			["selfPoint"] = "CENTER",
-		},
-		["Threat percantage"] = {
-			["outline"] = "OUTLINE",
-			["wagoID"] = "kjuDjZiDg",
-			["color"] = {
-				0.98039215686274, -- [1]
-				0.98039215686274, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["displayText_format_c2_round_type"] = "round",
-			["customText"] = "function()\n    local colorRed = \"FFFF3333\" --\"ffc41f3b\"\n    local colorYellow = \"fffff569\"\n    local colorGreen = \"FF42FF33\"\n    \n    local color\n    if aura_env.threatPercent < 70 then\n        color = colorGreen\n    elseif aura_env.threatPercent >= 70 and aura_env.threatPercent < 90 then\n        color = colorYellow\n    elseif aura_env.threatPercent >= 90 then\n        color = colorRed\n    end\n    \n    local threatPercent = aura_env.threatPercent .. \"%\"\n    if aura_env.config[\"show_position\"] then\n        threatPercent = threatPercent .. \" (#\" .. aura_env.position .. \")\"\n    end\n    return WrapTextInColorCode(FormatLargeNumber(aura_env.aggroThreat), color), WrapTextInColorCode(threatPercent, color)\nend",
-			["shadowYOffset"] = -1,
-			["anchorPoint"] = "TOPRIGHT",
-			["customTextUpdate"] = "event",
-			["automaticWidth"] = "Fixed",
-			["actions"] = {
-				["start"] = {
-					["glow_action"] = "show",
-					["message_type"] = "SAY",
-					["do_glow"] = false,
-					["do_message"] = false,
-					["do_custom"] = false,
-					["message"] = "Aggro",
-					["glow_type"] = "buttonOverlay",
-					["custom"] = "aura_env.StartTime = GetTime()",
-					["glow_frame"] = "WeakAuras:ThreatGuard v. 1.0.1",
-					["do_sound"] = false,
-					["use_glow_color"] = false,
-					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
-					["sound_channel"] = "Dialog",
-				},
-				["finish"] = {
-					["custom"] = "aura_env.StartTime = nil",
-					["do_custom"] = false,
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "aura_env.threatPercent = 0\naura_env.aggroThreat = 0\naura_env.position = 1\n-- Get highest non-tanking threat on the threat table\nlocal highestThreatPercentage = 0\nlocal highestThreatValue = 0\nlocal _UnitDetailedThreatSituation = UnitDetailedThreatSituation\n\nlocal function UpdateHighestThreat(unit, target)\n    if not UnitExists(unit) then\n        return\n    end\n    \n    local isTanking, _, threatPct, _, threatValue = _UnitDetailedThreatSituation(unit, target)\n    if threatPct == nil then\n        return\n    end\n    \n    if not isTanking and threatPct > highestThreatPercentage then\n        highestThreatPercentage = threatPct\n        highestThreatValue = threatValue\n    end\nend\naura_env.findHighestThreat = function(target)\n    highestThreatPercentage = 0\n    highestThreatValue = 0\n    local isInRaid = IsInRaid()\n    -- Find all party/raid members + pets\n    for i = 1, GetNumGroupMembers() do\n        local unit = nil\n        local petUnit = nil\n        if isInRaid then\n            unit = format(\"raid%d\", i)\n            petUnit = format(\"raidpet%d\", i)\n        else\n            unit = format(\"party%d\", i)\n            petUnit = format(\"partypet%d\", i)\n        end\n        \n        UpdateHighestThreat(unit, target)\n        UpdateHighestThreat(petUnit, target)\n    end\n    \n    -- Don't forget player pet\n    UpdateHighestThreat(\"playerpet\", target)\n    \n    return highestThreatPercentage, highestThreatValue\nend\n-- Todo clean up code a bit\naura_env.findTankThreatValue = function(target)\n    local isInRaid = IsInRaid()\n    local isTanking\n    local threatValue\n    -- Find all party/raid members + pets\n    for i = 1, GetNumGroupMembers() do\n        local unit = nil\n        local petUnit = nil\n        if isInRaid then\n            unit = format(\"raid%d\", i)\n            petUnit = format(\"raidpet%d\", i)\n        else\n            unit = format(\"party%d\", i)\n            petUnit = format(\"partypet%d\", i)\n        end\n        \n        isTanking, _, _, _, threatValue = _UnitDetailedThreatSituation(unit, target)\n        if isTanking then return threatValue or 0 end\n        \n        isTanking, _, _, _, threatValue = _UnitDetailedThreatSituation(petUnit, target)\n        if isTanking then return threatValue or 0 end\n    end\n    \n    -- Don't forget player pet\n    isTanking, _, _, _, threatValue = _UnitDetailedThreatSituation(\"playerpet\", target)\n    \n    return threatValue or 0\nend\n\n-- todo duplicated code again...\naura_env.findPlayerPosition = function(target, playerThreatPercent)\n    local isInRaid = IsInRaid()\n    local playerPosition = 1\n    local threatPercent = 0\n    -- Find all party/raid members + pets\n    for i = 1, GetNumGroupMembers() do\n        local unit = nil\n        local petUnit = nil\n        if isInRaid then\n            unit = format(\"raid%d\", i)\n            petUnit = format(\"raidpet%d\", i)\n        else\n            unit = format(\"party%d\", i)\n            petUnit = format(\"partypet%d\", i)\n        end\n        \n        _, _, threatPercent = _UnitDetailedThreatSituation(unit, target)\n        if (threatPercent or 0) > playerThreatPercent then\n            playerPosition = playerPosition + 1\n        end\n        \n        _, _, threatPercent = _UnitDetailedThreatSituation(petUnit, target)\n        if (threatPercent or 0) > playerThreatPercent then\n            playerPosition = playerPosition + 1\n        end\n    end\n    \n    -- Don't forget player pet\n    _, _, threatPercent = _UnitDetailedThreatSituation(\"playerpet\", target)\n    if (threatPercent or 0) > playerThreatPercent then\n        playerPosition = playerPosition + 1\n    end\n    \n    return playerPosition\nend",
-					["do_custom"] = true,
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["use_threatvalue"] = true,
-						["duration"] = "1.5",
-						["unit"] = "target",
-						["threatvalue_operator"] = ">",
-						["debuffType"] = "HELPFUL",
-						["subeventPrefix"] = "SPELL",
-						["type"] = "custom",
-						["subeventSuffix"] = "_CAST_START",
-						["unevent"] = "auto",
-						["names"] = {
-						},
-						["custom"] = "function()\n    ------------------------------------------------------------\n    -- The goal of this function is to compare player threat  --\n    -- to the threat of the tank and display the amount of    --\n    -- threat required to pull aggro from the tank.           --\n    -- This depends on the official threat API.               --\n    -- Heavily inspired by ClassicThreat2 by dfherr.          --\n    ------------------------------------------------------------\n    \n    -- Init/reset the threat data\n    local playerTarget = \"target\"\n    local _UnitDetailedThreatSituation = UnitDetailedThreatSituation\n    local _UnitExists = UnitExists\n    \n    -- Do not proceed unless live NPC is targeted\n    if not _UnitExists(playerTarget) or\n    UnitHealth(playerTarget) == 0 or\n    UnitIsPlayer(playerTarget) or\n    UnitIsFriend(\"player\", playerTarget)\n    then\n        aura_env.threatPercent = 0\n        aura_env.aggroThreat = 0\n        aura_env.position = 1\n        return false\n    end\n    \n    local playerIsTanking, _, playerThreatPercent, _, playerThreatValue = _UnitDetailedThreatSituation(\"player\", playerTarget)\n    if playerThreatPercent == nil then\n        return false\n    end\n    playerThreatValue = playerThreatValue or 0\n    \n    -- If player is not tanking, then it's easy to compute threat, otherwise find highest non-tanking threat\n    if not playerIsTanking then\n        -- Estimate the gap based on distance and tank threat if player has 0 threat\n        if playerThreatValue == 0 then\n            local aggroModifier = CheckInteractDistance(playerTarget, 3) and 1.1 or 1.3\n            aura_env.aggroThreat = aura_env.findTankThreatValue(playerTarget) * aggroModifier\n        else\n            aura_env.aggroThreat = playerThreatValue * 100 / playerThreatPercent - playerThreatValue\n        end\n        \n        if aura_env.config[\"show_position\"] then\n            aura_env.position = aura_env.findPlayerPosition(playerTarget, playerThreatPercent)\n        end\n    else\n        aura_env.position = 1\n        -- Hack fix\n        playerThreatPercent = 100\n        -- Get highest non-tanking threat on the threat table\n        local highestThreatPercentage, highestThreatValue = aura_env.findHighestThreat(playerTarget)\n        \n        -- If there's no other unit on the threat table we just default to the negative player threat with melee modifier\n        if highestThreatPercentage == 0 then\n            aura_env.aggroThreat = playerThreatValue > 0 and -playerThreatValue * 1.1 or 0\n        else\n            aura_env.aggroThreat = highestThreatValue - highestThreatValue * 100 / highestThreatPercentage\n        end\n    end\n    \n    aura_env.threatPercent = math.floor(playerThreatPercent)\n    -- Normalize threat such that 1 dmg = 1 threat\n    aura_env.aggroThreat = math.floor(aura_env.aggroThreat / 100)\n    return true\nend",
-						["event"] = "Threat Situation",
-						["customStacks"] = "",
-						["spellIds"] = {
-						},
-						["customName"] = "function()\n    return aura_env.aggroThreat    \nend",
-						["events"] = "UNIT_THREAT_LIST_UPDATE:target,PLAYER_TARGET_CHANGED",
-						["threatvalue"] = "0",
-						["check"] = "event",
-						["custom_type"] = "status",
-						["use_unit"] = true,
-						["custom_hide"] = "timed",
-					},
-					["untrigger"] = {
-						["custom"] = "\n\n",
-						["threatUnit"] = "target",
-					},
-				}, -- [1]
-				["disjunctive"] = "all",
-				["customTriggerLogic"] = "function(trigger)\n  return trigger[1] or trigger[2]\nend",
-				["activeTriggerMode"] = 1,
-			},
-			["internalVersion"] = 53,
-			["selfPoint"] = "BOTTOMLEFT",
-			["displayText_format_c2_format"] = "none",
-			["font"] = "Friz Quadrata TT",
-			["version"] = 7,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-			},
-			["load"] = {
-				["use_namerealm"] = false,
-				["ingroup"] = {
-					["single"] = "raid",
-					["multi"] = {
-						["group"] = true,
-						["raid"] = true,
-					},
-				},
-				["namerealm"] = "Shrewbstwo, Hæmoridder, Brintos",
-				["talent"] = {
-					["single"] = 98,
-					["multi"] = {
-						[98] = true,
-					},
-				},
-				["class"] = {
-					["single"] = "ROGUE",
-					["multi"] = {
-						["WARRIOR"] = true,
-						["ROGUE"] = true,
-						["MAGE"] = true,
-						["DRUID"] = true,
-						["PALADIN"] = true,
-						["PRIEST"] = true,
-					},
-				},
-				["use_ingroup"] = false,
-				["zoneIds"] = "",
-				["use_never"] = false,
-				["use_combat"] = true,
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["single"] = "fortyman",
-					["multi"] = {
-					},
-				},
-			},
-			["config"] = {
-				["show_position"] = true,
-			},
-			["url"] = "https://wago.io/kjuDjZiDg/7",
-			["fontSize"] = 22,
-			["source"] = "import",
-			["shadowXOffset"] = 1,
-			["yOffset"] = 0,
-			["displayText"] = "%c2",
-			["anchorFrameFrame"] = "TargetFrame",
-			["regionType"] = "text",
-			["conditions"] = {
-			},
-			["displayText_format_c1_round_type"] = "floor",
-			["displayText_format_c2_decimal_precision"] = 0,
-			["displayText_format_1.threatpct_format"] = "none",
-			["xOffset"] = -100,
-			["semver"] = "1.0.6",
-			["frameStrata"] = 1,
-			["justify"] = "LEFT",
-			["tocversion"] = 30400,
-			["id"] = "Threat percantage",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "slideleft",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["duration_type"] = "seconds",
-					["colorA"] = 1,
-					["colorG"] = 1,
-					["type"] = "none",
-					["easeType"] = "none",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["use_color"] = false,
-					["y"] = 0,
-					["x"] = 0,
-					["colorType"] = "custom",
-					["rotate"] = 0,
-					["colorFunc"] = "\n\n",
-					["easeStrength"] = 3,
-					["scalex"] = 1,
-					["colorB"] = 1,
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["preset"] = "slideright",
-				},
-			},
-			["displayText_format_c1_decimal_precision"] = 0,
-			["anchorFrameType"] = "SELECTFRAME",
-			["authorOptions"] = {
-				{
-					["type"] = "toggle",
-					["default"] = false,
-					["width"] = 2,
-					["name"] = "Show aggro position (experimental)",
-					["useDesc"] = true,
-					["key"] = "show_position",
-					["desc"] = "Toggles display of player's position on threat table",
-				}, -- [1]
-			},
-			["uid"] = "sDEPoe4WtFJ",
-			["displayText_format_c1_format"] = "none",
-			["preferToUpdate"] = false,
-			["shadowColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["fixedWidth"] = 239,
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["wordWrap"] = "WordWrap",
-		},
-		["Warlock - Perception"] = {
-			["iconSource"] = 0,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["preferToUpdate"] = false,
-			["yOffset"] = -326.63,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["url"] = "https://wago.io/Y8douZITb/12",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["auranames"] = {
-							"Rend", -- [1]
-						},
-						["matchesShowOn"] = "showAlways",
-						["genericShowOn"] = "showAlways",
-						["names"] = {
-						},
-						["unitExists"] = true,
-						["spellName"] = 20600,
-						["debuffType"] = "HARMFUL",
-						["type"] = "spell",
-						["use_unit"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["unit"] = "target",
-						["use_genericShowOn"] = true,
-						["event"] = "Cooldown Progress (Spell)",
-						["ownOnly"] = true,
-						["realSpellName"] = "Perception",
-						["use_spellName"] = true,
-						["spellIds"] = {
-						},
-						["unevent"] = "auto",
-						["useName"] = true,
-						["subeventPrefix"] = "SPELL",
-						["use_track"] = true,
-						["duration"] = "1",
-					},
-					["untrigger"] = {
-						["genericShowOn"] = "showAlways",
-					},
-				}, -- [1]
-				["disjunctive"] = "any",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 53,
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
-			["desaturate"] = false,
-			["version"] = 12,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "%p",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["text_text_format_p_time_mod_rate"] = true,
-					["type"] = "subtext",
-					["anchorXOffset"] = 0,
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Vixar",
-					["text_text_format_p_time_format"] = 0,
-					["text_shadowYOffset"] = 0,
-					["text_text_format_p_time_legacy_floor"] = true,
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "CENTER",
-					["text_text_format_p_format"] = "timed",
-					["text_fontType"] = "OUTLINE",
-					["text_fontSize"] = 16,
-					["text_text_format_p_time_dynamic_threshold"] = 0,
-					["text_text_format_p_time_precision"] = 1,
-				}, -- [2]
-			},
-			["height"] = 35,
-			["load"] = {
-				["use_race"] = true,
-				["use_never"] = false,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "WARLOCK",
-					["multi"] = {
-						["ROGUE"] = true,
-					},
-				},
-				["use_class"] = true,
-				["race"] = {
-					["single"] = "Human",
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["zoneIds"] = "",
-			},
-			["zoom"] = 0.3,
-			["config"] = {
-			},
-			["parent"] = "Warlock 2.0",
-			["authorOptions"] = {
-			},
-			["regionType"] = "icon",
-			["cooldown"] = true,
-			["displayIcon"] = 136090,
-			["xOffset"] = 106,
-			["icon"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["cooldownTextDisabled"] = true,
-			["semver"] = "1.0.11",
-			["tocversion"] = 11302,
-			["id"] = "Warlock - Perception",
-			["alpha"] = 1,
-			["useCooldownModRate"] = true,
-			["width"] = 35,
-			["auto"] = false,
-			["uid"] = "LlweJVq9JnC",
-			["inverse"] = false,
-			["cooldownEdge"] = false,
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "onCooldown",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "desaturate",
-						}, -- [1]
-					},
-				}, -- [1]
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-			},
-		},
-		["Predatory Strikes"] = {
-			["controlledChildren"] = {
-				"VrIcon 2", -- [1]
-				"timer 2", -- [2]
-			},
-			["borderBackdrop"] = "Blizzard Tooltip",
-			["wagoID"] = "v9qxdDgI4",
-			["xOffset"] = 0,
-			["preferToUpdate"] = false,
-			["yOffset"] = 530,
-			["anchorPoint"] = "CENTER",
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["url"] = "https://wago.io/v9qxdDgI4/2",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["unit"] = "player",
-						["type"] = "aura2",
-						["spellIds"] = {
-						},
-						["subeventSuffix"] = "_CAST_START",
-						["subeventPrefix"] = "SPELL",
-						["debuffType"] = "HELPFUL",
-						["event"] = "Health",
-						["names"] = {
-						},
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-			},
-			["internalVersion"] = 53,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
-			["version"] = 2,
-			["subRegions"] = {
-			},
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["scale"] = 1,
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "group",
-			["borderSize"] = 2,
-			["borderOffset"] = 4,
-			["semver"] = "1.0.1",
-			["tocversion"] = 20501,
-			["id"] = "Predatory Strikes",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "CENTER",
-			["config"] = {
-			},
-			["authorOptions"] = {
-			},
-			["borderInset"] = 1,
-			["conditions"] = {
-			},
-			["information"] = {
-			},
-			["uid"] = "5b1Ydv3(uLY",
 		},
 		["Druid - Energy Bar"] = {
 			["overlays"] = {
@@ -16907,6 +15770,1026 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 		},
+		["Curses and Viper"] = {
+			["iconSource"] = -1,
+			["wagoID"] = "pw_hjyCcX",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["preferToUpdate"] = false,
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = false,
+			["cooldownEdge"] = false,
+			["icon"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["useName"] = true,
+						["use_debuffClass"] = false,
+						["useExactSpellId"] = false,
+						["unit"] = "player",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["type"] = "aura2",
+						["auranames"] = {
+							"1714", -- [1]
+							"980", -- [2]
+							"702", -- [3]
+							"1490", -- [4]
+							"18223", -- [5]
+							"704", -- [6]
+							"3034", -- [7]
+							"9035", -- [8]
+						},
+						["spellIds"] = {
+						},
+						["auraspellids"] = {
+						},
+						["combineMode"] = "showHighest",
+						["subeventSuffix"] = "_CAST_START",
+						["names"] = {
+						},
+						["debuffType"] = "HARMFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = -10,
+			},
+			["internalVersion"] = 53,
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["desaturate"] = false,
+			["version"] = 17,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["type"] = "subborder",
+					["border_offset"] = 0.5,
+					["text_color"] = {
+					},
+					["border_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["border_visible"] = false,
+					["border_edge"] = "Square Full White",
+					["border_size"] = 1,
+				}, -- [2]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "%n",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["text_text_format_n_format"] = "none",
+					["type"] = "subtext",
+					["text_anchorXOffset"] = 15,
+					["text_color"] = {
+						0.8117647058823529, -- [1]
+						1, -- [2]
+						0.4352941176470588, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Arial Narrow",
+					["text_text_format_p_time_dynamic_threshold"] = 60,
+					["text_shadowYOffset"] = 0,
+					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "OUTER_RIGHT",
+					["text_text_format_p_time_format"] = 0,
+					["text_text_format_p_format"] = "timed",
+					["text_fontSize"] = 16,
+					["anchorXOffset"] = 0,
+					["text_text_format_p_time_precision"] = 1,
+				}, -- [3]
+			},
+			["height"] = 40,
+			["load"] = {
+				["use_namerealm"] = true,
+				["ingroup"] = {
+				},
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["zoneIds"] = "",
+				["namerealm"] = "never",
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["cooldownTextDisabled"] = true,
+			["uid"] = "XYzKgm6z7d(",
+			["parent"] = "LOS",
+			["actions"] = {
+				["start"] = {
+					["message"] = "",
+					["do_message"] = false,
+					["message_type"] = "RAID_WARNING",
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["regionType"] = "icon",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["useTooltip"] = false,
+			["url"] = "https://wago.io/pw_hjyCcX/17",
+			["authorOptions"] = {
+			},
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["zoom"] = 0.3,
+			["semver"] = "1.0.16",
+			["tocversion"] = 20503,
+			["id"] = "Curses and Viper",
+			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
+			["width"] = 40,
+			["auto"] = true,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["xOffset"] = 50,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["variable"] = "debuffClass",
+						["value"] = "curse",
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								0.6, -- [1]
+								0, -- [2]
+								1, -- [3]
+								1, -- [4]
+							},
+							["property"] = "sub.2.border_color",
+						}, -- [1]
+						{
+							["value"] = true,
+							["property"] = "sub.2.border_visible",
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["variable"] = "debuffClass",
+						["value"] = "poison",
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								0, -- [1]
+								0.6, -- [2]
+								0, -- [3]
+								1, -- [4]
+							},
+							["property"] = "sub.2.border_color",
+						}, -- [1]
+						{
+							["value"] = true,
+							["property"] = "sub.2.border_visible",
+						}, -- [2]
+					},
+				}, -- [2]
+			},
+			["cooldown"] = true,
+			["selfPoint"] = "CENTER",
+		},
+		["Threat percantage"] = {
+			["outline"] = "OUTLINE",
+			["wagoID"] = "kjuDjZiDg",
+			["color"] = {
+				0.98039215686274, -- [1]
+				0.98039215686274, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["displayText_format_c2_round_type"] = "round",
+			["customText"] = "function()\n    local colorRed = \"FFFF3333\" --\"ffc41f3b\"\n    local colorYellow = \"fffff569\"\n    local colorGreen = \"FF42FF33\"\n    \n    local color\n    if aura_env.threatPercent < 70 then\n        color = colorGreen\n    elseif aura_env.threatPercent >= 70 and aura_env.threatPercent < 90 then\n        color = colorYellow\n    elseif aura_env.threatPercent >= 90 then\n        color = colorRed\n    end\n    \n    local threatPercent = aura_env.threatPercent .. \"%\"\n    if aura_env.config[\"show_position\"] then\n        threatPercent = threatPercent .. \" (#\" .. aura_env.position .. \")\"\n    end\n    return WrapTextInColorCode(FormatLargeNumber(aura_env.aggroThreat), color), WrapTextInColorCode(threatPercent, color)\nend",
+			["shadowYOffset"] = -1,
+			["anchorPoint"] = "TOPRIGHT",
+			["customTextUpdate"] = "event",
+			["automaticWidth"] = "Fixed",
+			["actions"] = {
+				["start"] = {
+					["glow_action"] = "show",
+					["message_type"] = "SAY",
+					["do_glow"] = false,
+					["do_message"] = false,
+					["do_custom"] = false,
+					["message"] = "Aggro",
+					["glow_type"] = "buttonOverlay",
+					["custom"] = "aura_env.StartTime = GetTime()",
+					["glow_frame"] = "WeakAuras:ThreatGuard v. 1.0.1",
+					["do_sound"] = false,
+					["use_glow_color"] = false,
+					["sound"] = "Interface\\Addons\\WeakAuras\\PowerAurasMedia\\Sounds\\sonar.ogg",
+					["sound_channel"] = "Dialog",
+				},
+				["finish"] = {
+					["custom"] = "aura_env.StartTime = nil",
+					["do_custom"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "aura_env.threatPercent = 0\naura_env.aggroThreat = 0\naura_env.position = 1\n-- Get highest non-tanking threat on the threat table\nlocal highestThreatPercentage = 0\nlocal highestThreatValue = 0\nlocal _UnitDetailedThreatSituation = UnitDetailedThreatSituation\n\nlocal function UpdateHighestThreat(unit, target)\n    if not UnitExists(unit) then\n        return\n    end\n    \n    local isTanking, _, threatPct, _, threatValue = _UnitDetailedThreatSituation(unit, target)\n    if threatPct == nil then\n        return\n    end\n    \n    if not isTanking and threatPct > highestThreatPercentage then\n        highestThreatPercentage = threatPct\n        highestThreatValue = threatValue\n    end\nend\naura_env.findHighestThreat = function(target)\n    highestThreatPercentage = 0\n    highestThreatValue = 0\n    local isInRaid = IsInRaid()\n    -- Find all party/raid members + pets\n    for i = 1, GetNumGroupMembers() do\n        local unit = nil\n        local petUnit = nil\n        if isInRaid then\n            unit = format(\"raid%d\", i)\n            petUnit = format(\"raidpet%d\", i)\n        else\n            unit = format(\"party%d\", i)\n            petUnit = format(\"partypet%d\", i)\n        end\n        \n        UpdateHighestThreat(unit, target)\n        UpdateHighestThreat(petUnit, target)\n    end\n    \n    -- Don't forget player pet\n    UpdateHighestThreat(\"playerpet\", target)\n    \n    return highestThreatPercentage, highestThreatValue\nend\n-- Todo clean up code a bit\naura_env.findTankThreatValue = function(target)\n    local isInRaid = IsInRaid()\n    local isTanking\n    local threatValue\n    -- Find all party/raid members + pets\n    for i = 1, GetNumGroupMembers() do\n        local unit = nil\n        local petUnit = nil\n        if isInRaid then\n            unit = format(\"raid%d\", i)\n            petUnit = format(\"raidpet%d\", i)\n        else\n            unit = format(\"party%d\", i)\n            petUnit = format(\"partypet%d\", i)\n        end\n        \n        isTanking, _, _, _, threatValue = _UnitDetailedThreatSituation(unit, target)\n        if isTanking then return threatValue or 0 end\n        \n        isTanking, _, _, _, threatValue = _UnitDetailedThreatSituation(petUnit, target)\n        if isTanking then return threatValue or 0 end\n    end\n    \n    -- Don't forget player pet\n    isTanking, _, _, _, threatValue = _UnitDetailedThreatSituation(\"playerpet\", target)\n    \n    return threatValue or 0\nend\n\n-- todo duplicated code again...\naura_env.findPlayerPosition = function(target, playerThreatPercent)\n    local isInRaid = IsInRaid()\n    local playerPosition = 1\n    local threatPercent = 0\n    -- Find all party/raid members + pets\n    for i = 1, GetNumGroupMembers() do\n        local unit = nil\n        local petUnit = nil\n        if isInRaid then\n            unit = format(\"raid%d\", i)\n            petUnit = format(\"raidpet%d\", i)\n        else\n            unit = format(\"party%d\", i)\n            petUnit = format(\"partypet%d\", i)\n        end\n        \n        _, _, threatPercent = _UnitDetailedThreatSituation(unit, target)\n        if (threatPercent or 0) > playerThreatPercent then\n            playerPosition = playerPosition + 1\n        end\n        \n        _, _, threatPercent = _UnitDetailedThreatSituation(petUnit, target)\n        if (threatPercent or 0) > playerThreatPercent then\n            playerPosition = playerPosition + 1\n        end\n    end\n    \n    -- Don't forget player pet\n    _, _, threatPercent = _UnitDetailedThreatSituation(\"playerpet\", target)\n    if (threatPercent or 0) > playerThreatPercent then\n        playerPosition = playerPosition + 1\n    end\n    \n    return playerPosition\nend",
+					["do_custom"] = true,
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["use_threatvalue"] = true,
+						["duration"] = "1.5",
+						["unit"] = "target",
+						["threatvalue_operator"] = ">",
+						["debuffType"] = "HELPFUL",
+						["subeventPrefix"] = "SPELL",
+						["type"] = "custom",
+						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
+						["names"] = {
+						},
+						["events"] = "UNIT_THREAT_LIST_UPDATE:target,PLAYER_TARGET_CHANGED",
+						["event"] = "Threat Situation",
+						["customStacks"] = "",
+						["custom"] = "function()\n    ------------------------------------------------------------\n    -- The goal of this function is to compare player threat  --\n    -- to the threat of the tank and display the amount of    --\n    -- threat required to pull aggro from the tank.           --\n    -- This depends on the official threat API.               --\n    -- Heavily inspired by ClassicThreat2 by dfherr.          --\n    ------------------------------------------------------------\n    \n    -- Init/reset the threat data\n    local playerTarget = \"target\"\n    local _UnitDetailedThreatSituation = UnitDetailedThreatSituation\n    local _UnitExists = UnitExists\n    \n    -- Do not proceed unless live NPC is targeted\n    if not _UnitExists(playerTarget) or\n    UnitHealth(playerTarget) == 0 or\n    UnitIsPlayer(playerTarget) or\n    UnitIsFriend(\"player\", playerTarget)\n    then\n        aura_env.threatPercent = 0\n        aura_env.aggroThreat = 0\n        aura_env.position = 1\n        return false\n    end\n    \n    local playerIsTanking, _, playerThreatPercent, _, playerThreatValue = _UnitDetailedThreatSituation(\"player\", playerTarget)\n    if playerThreatPercent == nil then\n        return false\n    end\n    playerThreatValue = playerThreatValue or 0\n    \n    -- If player is not tanking, then it's easy to compute threat, otherwise find highest non-tanking threat\n    if not playerIsTanking then\n        -- Estimate the gap based on distance and tank threat if player has 0 threat\n        if playerThreatValue == 0 then\n            local aggroModifier = CheckInteractDistance(playerTarget, 3) and 1.1 or 1.3\n            aura_env.aggroThreat = aura_env.findTankThreatValue(playerTarget) * aggroModifier\n        else\n            aura_env.aggroThreat = playerThreatValue * 100 / playerThreatPercent - playerThreatValue\n        end\n        \n        if aura_env.config[\"show_position\"] then\n            aura_env.position = aura_env.findPlayerPosition(playerTarget, playerThreatPercent)\n        end\n    else\n        aura_env.position = 1\n        -- Hack fix\n        playerThreatPercent = 100\n        -- Get highest non-tanking threat on the threat table\n        local highestThreatPercentage, highestThreatValue = aura_env.findHighestThreat(playerTarget)\n        \n        -- If there's no other unit on the threat table we just default to the negative player threat with melee modifier\n        if highestThreatPercentage == 0 then\n            aura_env.aggroThreat = playerThreatValue > 0 and -playerThreatValue * 1.1 or 0\n        else\n            aura_env.aggroThreat = highestThreatValue - highestThreatValue * 100 / highestThreatPercentage\n        end\n    end\n    \n    aura_env.threatPercent = math.floor(playerThreatPercent)\n    -- Normalize threat such that 1 dmg = 1 threat\n    aura_env.aggroThreat = math.floor(aura_env.aggroThreat / 100)\n    return true\nend",
+						["customName"] = "function()\n    return aura_env.aggroThreat    \nend",
+						["spellIds"] = {
+						},
+						["threatvalue"] = "0",
+						["check"] = "event",
+						["custom_type"] = "status",
+						["use_unit"] = true,
+						["custom_hide"] = "timed",
+					},
+					["untrigger"] = {
+						["custom"] = "\n\n",
+						["threatUnit"] = "target",
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "custom",
+						["custom_type"] = "event",
+						["form"] = {
+						},
+						["event"] = "Character Stats",
+						["unit"] = "player",
+						["custom"] = "function()\n    \n    local inRaid = UnitInRaid(\"player\")\n    local inParty = UnitInParty(\"player\")\n    \n    -- print(inRaid, inParty, UnitExists(\"pet\"),inRaid or inParty or UnitExists(\"pet\"))\n    \n    return inRaid or inParty or UnitExists(\"pet\")\n    \n    \nend",
+						["events"] = "PLAYER_REGEN_DISABLED",
+						["custom_hide"] = "timed",
+						["use_unit"] = true,
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+				["disjunctive"] = "custom",
+				["customTriggerLogic"] = "function(trigger)\n  return trigger[2]\nend",
+				["activeTriggerMode"] = 1,
+			},
+			["internalVersion"] = 53,
+			["selfPoint"] = "BOTTOMLEFT",
+			["displayText_format_c2_format"] = "none",
+			["font"] = "Friz Quadrata TT",
+			["version"] = 7,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+			},
+			["load"] = {
+				["use_namerealm"] = false,
+				["ingroup"] = {
+					["single"] = "raid",
+					["multi"] = {
+						["group"] = true,
+						["raid"] = true,
+					},
+				},
+				["namerealm"] = "Shrewbstwo, Hæmoridder, Brintos",
+				["talent"] = {
+					["single"] = 98,
+					["multi"] = {
+						[98] = true,
+					},
+				},
+				["class"] = {
+					["single"] = "ROGUE",
+					["multi"] = {
+						["WARRIOR"] = true,
+						["ROGUE"] = true,
+						["MAGE"] = true,
+						["DRUID"] = true,
+						["PALADIN"] = true,
+						["PRIEST"] = true,
+					},
+				},
+				["zoneIds"] = "",
+				["use_never"] = false,
+				["use_combat"] = true,
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["single"] = "fortyman",
+					["multi"] = {
+					},
+				},
+			},
+			["config"] = {
+				["show_position"] = true,
+			},
+			["url"] = "https://wago.io/kjuDjZiDg/7",
+			["fontSize"] = 22,
+			["source"] = "import",
+			["shadowXOffset"] = 1,
+			["yOffset"] = 0,
+			["displayText"] = "%c2",
+			["anchorFrameFrame"] = "TargetFrame",
+			["regionType"] = "text",
+			["conditions"] = {
+			},
+			["displayText_format_c1_round_type"] = "floor",
+			["displayText_format_c2_decimal_precision"] = 0,
+			["displayText_format_1.threatpct_format"] = "none",
+			["xOffset"] = -100,
+			["semver"] = "1.0.6",
+			["frameStrata"] = 1,
+			["justify"] = "LEFT",
+			["tocversion"] = 30400,
+			["id"] = "Threat percantage",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "slideleft",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["duration_type"] = "seconds",
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["type"] = "none",
+					["easeType"] = "none",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["use_color"] = false,
+					["y"] = 0,
+					["x"] = 0,
+					["colorType"] = "custom",
+					["rotate"] = 0,
+					["colorFunc"] = "\n\n",
+					["easeStrength"] = 3,
+					["scalex"] = 1,
+					["colorB"] = 1,
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["preset"] = "slideright",
+				},
+			},
+			["displayText_format_c1_decimal_precision"] = 0,
+			["anchorFrameType"] = "SELECTFRAME",
+			["authorOptions"] = {
+				{
+					["type"] = "toggle",
+					["default"] = false,
+					["width"] = 2,
+					["name"] = "Show aggro position (experimental)",
+					["useDesc"] = true,
+					["key"] = "show_position",
+					["desc"] = "Toggles display of player's position on threat table",
+				}, -- [1]
+			},
+			["uid"] = "sDEPoe4WtFJ",
+			["displayText_format_c1_format"] = "none",
+			["preferToUpdate"] = false,
+			["shadowColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["fixedWidth"] = 239,
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["wordWrap"] = "WordWrap",
+		},
+		["Warlock - Perception"] = {
+			["iconSource"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["preferToUpdate"] = false,
+			["yOffset"] = -326.63,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["url"] = "https://wago.io/Y8douZITb/12",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["auranames"] = {
+							"Rend", -- [1]
+						},
+						["matchesShowOn"] = "showAlways",
+						["genericShowOn"] = "showAlways",
+						["names"] = {
+						},
+						["unitExists"] = true,
+						["spellName"] = 20600,
+						["debuffType"] = "HARMFUL",
+						["type"] = "spell",
+						["use_unit"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["unit"] = "target",
+						["use_genericShowOn"] = true,
+						["event"] = "Cooldown Progress (Spell)",
+						["ownOnly"] = true,
+						["realSpellName"] = "Perception",
+						["use_spellName"] = true,
+						["spellIds"] = {
+						},
+						["unevent"] = "auto",
+						["useName"] = true,
+						["subeventPrefix"] = "SPELL",
+						["use_track"] = true,
+						["duration"] = "1",
+					},
+					["untrigger"] = {
+						["genericShowOn"] = "showAlways",
+					},
+				}, -- [1]
+				["disjunctive"] = "any",
+				["activeTriggerMode"] = -10,
+			},
+			["internalVersion"] = 53,
+			["keepAspectRatio"] = false,
+			["selfPoint"] = "CENTER",
+			["desaturate"] = false,
+			["version"] = 12,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "%p",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["text_text_format_p_time_mod_rate"] = true,
+					["type"] = "subtext",
+					["anchorXOffset"] = 0,
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Vixar",
+					["text_text_format_p_time_format"] = 0,
+					["text_shadowYOffset"] = 0,
+					["text_text_format_p_time_legacy_floor"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "CENTER",
+					["text_text_format_p_format"] = "timed",
+					["text_fontType"] = "OUTLINE",
+					["text_fontSize"] = 16,
+					["text_text_format_p_time_dynamic_threshold"] = 0,
+					["text_text_format_p_time_precision"] = 1,
+				}, -- [2]
+			},
+			["height"] = 35,
+			["load"] = {
+				["use_race"] = true,
+				["use_never"] = false,
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["single"] = "WARLOCK",
+					["multi"] = {
+						["ROGUE"] = true,
+					},
+				},
+				["use_class"] = true,
+				["race"] = {
+					["single"] = "Human",
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["zoneIds"] = "",
+			},
+			["zoom"] = 0.3,
+			["config"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+			},
+			["parent"] = "Warlock 2.0",
+			["regionType"] = "icon",
+			["cooldown"] = true,
+			["displayIcon"] = 136090,
+			["xOffset"] = 106,
+			["icon"] = true,
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "1.0.11",
+			["tocversion"] = 11302,
+			["id"] = "Warlock - Perception",
+			["alpha"] = 1,
+			["useCooldownModRate"] = true,
+			["width"] = 35,
+			["auto"] = false,
+			["uid"] = "LlweJVq9JnC",
+			["inverse"] = false,
+			["cooldownEdge"] = false,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "onCooldown",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "desaturate",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["authorOptions"] = {
+			},
+		},
+		["Ruby"] = {
+			["iconSource"] = -1,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["preferToUpdate"] = false,
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["cooldownEdge"] = false,
+			["icon"] = true,
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "unit",
+						["use_alwaystrue"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["duration"] = "1",
+						["event"] = "Conditions",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["use_unit"] = true,
+						["names"] = {
+						},
+						["unit"] = "player",
+						["unevent"] = "auto",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["type"] = "item",
+						["use_count"] = true,
+						["subeventSuffix"] = "_CAST_START",
+						["duration"] = "1",
+						["event"] = "Item Count",
+						["subeventPrefix"] = "SPELL",
+						["use_includeBank"] = false,
+						["itemName"] = 8008,
+						["count"] = "0",
+						["use_unit"] = true,
+						["unit"] = "player",
+						["use_itemName"] = true,
+						["unevent"] = "auto",
+						["count_operator"] = "==",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+				["disjunctive"] = "any",
+				["customTriggerLogic"] = "",
+				["activeTriggerMode"] = 1,
+			},
+			["internalVersion"] = 53,
+			["keepAspectRatio"] = false,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["desaturate"] = false,
+			["version"] = 1,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["glowFrequency"] = 0.25,
+					["glow"] = true,
+					["useGlowColor"] = false,
+					["glowType"] = "buttonOverlay",
+					["glowLength"] = 10,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["type"] = "subglow",
+					["glowXOffset"] = 0,
+					["glowThickness"] = 1,
+					["glowScale"] = 1,
+					["glowLines"] = 8,
+					["glowBorder"] = false,
+				}, -- [2]
+			},
+			["height"] = 40,
+			["load"] = {
+				["use_level"] = true,
+				["talent"] = {
+					["single"] = 9,
+					["multi"] = {
+						[9] = true,
+					},
+				},
+				["level_operator"] = ">=",
+				["use_class"] = false,
+				["use_spellknown"] = false,
+				["zoneIds"] = "",
+				["class"] = {
+					["single"] = "DRUID",
+					["multi"] = {
+						["MAGE"] = true,
+					},
+				},
+				["use_never"] = false,
+				["level"] = "58",
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["authorMode"] = true,
+			["zoom"] = 0,
+			["uid"] = "UvSV5jPJMlO",
+			["authorOptions"] = {
+				{
+					["subOptions"] = {
+						{
+							["type"] = "input",
+							["useDesc"] = false,
+							["width"] = 1,
+							["name"] = "Text",
+							["default"] = "",
+							["multiline"] = false,
+							["length"] = 10,
+							["key"] = "text",
+							["useLength"] = false,
+						}, -- [1]
+					},
+					["hideReorder"] = true,
+					["useDesc"] = false,
+					["nameSource"] = 0,
+					["width"] = 1,
+					["useCollapse"] = false,
+					["key"] = "macro",
+					["name"] = "Macro",
+					["collapse"] = false,
+					["limitType"] = "none",
+					["groupType"] = "simple",
+					["type"] = "group",
+					["size"] = 10,
+				}, -- [1]
+			},
+			["xOffset"] = 120,
+			["regionType"] = "icon",
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 134128,
+			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["custom"] = "local text = aura_env.config.macro.text\n\naura_env.button = CreateFrame(\"Button\", \"buffButton\", aura_env.region, \"SecureActionButtonTemplate\")\naura_env.button:SetAllPoints()\naura_env.button:SetAttribute(\"unit\", \"player\")\naura_env.button:SetAttribute(\"type\",\"macro\")\naura_env.button:SetAttribute(\"macrotext\", text)",
+					["do_custom"] = true,
+				},
+				["finish"] = {
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\CartoonWalking.ogg",
+					["do_sound"] = false,
+				},
+			},
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["cooldownTextDisabled"] = false,
+			["auto"] = true,
+			["tocversion"] = 11304,
+			["id"] = "Ruby",
+			["frameStrata"] = 1,
+			["useCooldownModRate"] = true,
+			["width"] = 40,
+			["semver"] = "1.0.0",
+			["config"] = {
+				["macro"] = {
+					["text"] = "/cast Conjure Mana Ruby",
+				},
+			},
+			["inverse"] = false,
+			["parent"] = "GEMS",
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 2,
+						["variable"] = "show",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = 1,
+							["property"] = "alpha",
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["check"] = {
+						["trigger"] = 2,
+						["variable"] = "show",
+						["value"] = 0,
+					},
+					["changes"] = {
+						{
+							["property"] = "alpha",
+						}, -- [1]
+					},
+				}, -- [2]
+			},
+			["cooldown"] = false,
+			["url"] = "https://wago.io/U0WH3IJ3S/1",
+		},
+		["Predatory Strikes"] = {
+			["controlledChildren"] = {
+				"VrIcon 2", -- [1]
+				"timer 2", -- [2]
+			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["wagoID"] = "v9qxdDgI4",
+			["xOffset"] = 0,
+			["preferToUpdate"] = false,
+			["yOffset"] = 530,
+			["anchorPoint"] = "CENTER",
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["url"] = "https://wago.io/v9qxdDgI4/2",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["unit"] = "player",
+						["type"] = "aura2",
+						["spellIds"] = {
+						},
+						["subeventSuffix"] = "_CAST_START",
+						["subeventPrefix"] = "SPELL",
+						["debuffType"] = "HELPFUL",
+						["event"] = "Health",
+						["names"] = {
+						},
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+			},
+			["internalVersion"] = 53,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["desc"] = "Weak aura that shows if Victory Rush is usabe with a remaning duration.\n",
+			["version"] = 2,
+			["subRegions"] = {
+			},
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["scale"] = 1,
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "group",
+			["borderSize"] = 2,
+			["borderOffset"] = 4,
+			["semver"] = "1.0.1",
+			["tocversion"] = 20501,
+			["id"] = "Predatory Strikes",
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["selfPoint"] = "CENTER",
+			["borderInset"] = 1,
+			["authorOptions"] = {
+			},
+			["uid"] = "5b1Ydv3(uLY",
+			["conditions"] = {
+			},
+			["information"] = {
+			},
+			["config"] = {
+			},
+		},
 		["timer 2"] = {
 			["outline"] = "OUTLINE",
 			["wagoID"] = "v9qxdDgI4",
@@ -17137,8 +17020,8 @@ WeakAurasSaved = {
 			["regionType"] = "text",
 			["conditions"] = {
 			},
+			["preferToUpdate"] = false,
 			["parent"] = "Warrior 2.0",
-			["url"] = "https://wago.io/z6xqQay0S/16",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -17188,7 +17071,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["preferToUpdate"] = false,
+			["url"] = "https://wago.io/z6xqQay0S/16",
 		},
 		["Warlock - Soul Stone"] = {
 			["iconSource"] = 0,
@@ -17224,12 +17107,12 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["debuffType"] = "HELPFUL",
 						["spellName"] = 16893,
-						["useExactSpellId"] = true,
-						["type"] = "item",
 						["subeventSuffix"] = "_CAST_START",
+						["type"] = "item",
 						["auraspellids"] = {
 							"7744", -- [1]
 						},
+						["useExactSpellId"] = true,
 						["unevent"] = "auto",
 						["use_itemName"] = true,
 						["event"] = "Cooldown Progress (Item)",
@@ -17721,6 +17604,188 @@ WeakAurasSaved = {
 			},
 			["preferToUpdate"] = false,
 		},
+		["MEND PET"] = {
+			["sparkWidth"] = 10,
+			["iconSource"] = -1,
+			["xOffset"] = 18,
+			["yOffset"] = 10,
+			["anchorPoint"] = "CENTER",
+			["sparkRotation"] = 0,
+			["sparkRotationMode"] = "AUTO",
+			["backgroundColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.5, -- [4]
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["useName"] = true,
+						["auranames"] = {
+							"Mend Pet", -- [1]
+						},
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "aura2",
+						["names"] = {
+						},
+						["unit"] = "pet",
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["disjunctive"] = "any",
+				["activeTriggerMode"] = -10,
+			},
+			["icon_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["internalVersion"] = 53,
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
+			["barColor"] = {
+				0.2, -- [1]
+				1, -- [2]
+				0.0862745098039216, -- [3]
+				1, -- [4]
+			},
+			["desaturate"] = false,
+			["sparkOffsetY"] = 0,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["type"] = "subforeground",
+				}, -- [2]
+				{
+					["text_shadowXOffset"] = 1,
+					["text_text"] = "Mend Pet",
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["type"] = "subtext",
+					["text_color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Friz Quadrata TT",
+					["text_shadowYOffset"] = -1,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "None",
+					["text_anchorPoint"] = "INNER_BOTTOMLEFT",
+					["text_visible"] = false,
+					["text_text_format_n_format"] = "none",
+					["text_fontSize"] = 12,
+					["anchorXOffset"] = 0,
+					["text_anchorYOffset"] = 4,
+				}, -- [3]
+			},
+			["height"] = 3,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["zoneIds"] = "",
+			},
+			["sparkBlendMode"] = "ADD",
+			["useAdjustededMax"] = false,
+			["uid"] = "FpXBk3sOate",
+			["selfPoint"] = "CENTER",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["useAdjustededMin"] = false,
+			["smoothProgress"] = true,
+			["anchorFrameFrame"] = "PetFrame",
+			["regionType"] = "aurabar",
+			["sparkOffsetX"] = 0,
+			["config"] = {
+			},
+			["icon_side"] = "RIGHT",
+			["zoom"] = 0,
+			["sparkHeight"] = 30,
+			["texture"] = "Clean",
+			["id"] = "MEND PET",
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["spark"] = false,
+			["width"] = 68,
+			["sparkHidden"] = "NEVER",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SELECTFRAME",
+			["auto"] = true,
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["inverse"] = false,
+			["authorOptions"] = {
+			},
+			["orientation"] = "HORIZONTAL",
+			["conditions"] = {
+			},
+			["information"] = {
+			},
+			["icon"] = false,
+		},
 		["DRUID"] = {
 			["iconSource"] = -1,
 			["wagoID"] = "v9qxdDgI4",
@@ -17924,13 +17989,8 @@ WeakAurasSaved = {
 			},
 			["useCooldownModRate"] = true,
 			["anchorFrameType"] = "SCREEN",
+			["icon"] = true,
 			["parent"] = "MISSING BUFFS",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["cooldown"] = false,
 			["conditions"] = {
 			},
@@ -17957,218 +18017,12 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["icon"] = true,
-		},
-		["Warlock - Soul Shard #"] = {
-			["iconSource"] = -1,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["preferToUpdate"] = false,
-			["yOffset"] = -327,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["itemName"] = 6265,
-						["use_count"] = false,
-						["auranames"] = {
-							"Immolate", -- [1]
-						},
-						["duration"] = "1",
-						["names"] = {
-						},
-						["unitExists"] = true,
-						["debuffType"] = "HARMFUL",
-						["useName"] = true,
-						["subeventSuffix"] = "_CAST_START",
-						["use_itemName"] = true,
-						["use_unit"] = true,
-						["matchesShowOn"] = "showAlways",
-						["spellIds"] = {
-						},
-						["subeventPrefix"] = "SPELL",
-						["unevent"] = "auto",
-						["type"] = "item",
-						["unit"] = "target",
-						["event"] = "Item Count",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				{
-					["trigger"] = {
-						["type"] = "unit",
-						["use_alwaystrue"] = true,
-						["unevent"] = "auto",
-						["duration"] = "1",
-						["event"] = "Conditions",
-						["unit"] = "player",
-						["subeventSuffix"] = "_CAST_START",
-						["use_unit"] = true,
-						["subeventPrefix"] = "SPELL",
-						["debuffType"] = "HELPFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [2]
-				["disjunctive"] = "any",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 53,
-			["keepAspectRatio"] = false,
-			["selfPoint"] = "CENTER",
-			["desaturate"] = false,
-			["version"] = 12,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "%p",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["text_text_format_p_time_mod_rate"] = true,
-					["type"] = "subtext",
-					["anchorXOffset"] = 0,
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Vixar",
-					["text_text_format_p_time_format"] = 0,
-					["text_shadowYOffset"] = 0,
-					["text_text_format_p_time_legacy_floor"] = true,
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "CENTER",
-					["text_text_format_p_format"] = "timed",
-					["text_fontType"] = "OUTLINE",
-					["text_fontSize"] = 25,
-					["text_text_format_p_time_dynamic_threshold"] = 0,
-					["text_text_format_p_time_precision"] = 1,
-				}, -- [2]
-			},
-			["height"] = 35,
-			["load"] = {
-				["use_class"] = true,
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["single"] = "WARLOCK",
-					["multi"] = {
-						["WARLOCK"] = true,
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["zoneIds"] = "",
-			},
-			["config"] = {
-			},
-			["zoom"] = 0.3,
-			["authorOptions"] = {
-			},
-			["regionType"] = "icon",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-			},
-			["cooldown"] = true,
-			["xOffset"] = -69.78,
-			["url"] = "https://wago.io/Y8douZITb/12",
-			["frameStrata"] = 1,
-			["width"] = 35,
-			["cooldownTextDisabled"] = false,
-			["auto"] = true,
-			["tocversion"] = 11302,
-			["id"] = "Warlock - Soul Shard #",
-			["useCooldownModRate"] = true,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "1.0.11",
-			["uid"] = "esE633vv0KS",
-			["inverse"] = false,
-			["parent"] = "Warlock 2.0",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = "<=",
-						["value"] = "0",
-						["variable"] = "value",
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "desaturate",
-						}, -- [1]
-						{
-							["value"] = {
-								1, -- [1]
-								1, -- [2]
-								1, -- [3]
-								0.49479150772095, -- [4]
-							},
-							["property"] = "color",
-						}, -- [2]
-					},
-				}, -- [1]
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["icon"] = true,
 		},
 		["Warlock - Spell Lock"] = {
 			["iconSource"] = 0,
@@ -18319,8 +18173,8 @@ WeakAurasSaved = {
 			["zoom"] = 0.3,
 			["config"] = {
 			},
+			["xOffset"] = 0,
 			["parent"] = "Warlock 2.0",
-			["cooldownEdge"] = false,
 			["regionType"] = "icon",
 			["cooldown"] = true,
 			["displayIcon"] = 136174,
@@ -18381,7 +18235,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["cooldownEdge"] = false,
 		},
 		["INSTANCE LOCK"] = {
 			["sparkWidth"] = 15,
@@ -18488,14 +18342,14 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["subeventPrefix"] = "SPELL",
 						["custom_hide"] = "timed",
-						["spellIds"] = {
-						},
 						["custom"] = "function(event, ...)\n    if aura_env[event] then\n        aura_env[event](...) \n    end\nend",
+						["events"] = "CHAT_MSG_SYSTEM,INSTANCE_BOOT_START, INSTANCE_BOOT_STOP, GROUP_ROSTER_UPDATE, PLAYER_ENTERING_WORLD, ZONE_CHANGED_NEW_AREA, RAID_INSTANCE_WELCOME, PLAYER_LEAVING_WORLD, PLAYER_CAMPING, CHAT_MSG_ADDON, SEND_INSTANCE_RESET_REQUEST",
 						["unit"] = "player",
 						["names"] = {
 						},
 						["subeventSuffix"] = "_CAST_START",
-						["events"] = "CHAT_MSG_SYSTEM,INSTANCE_BOOT_START, INSTANCE_BOOT_STOP, GROUP_ROSTER_UPDATE, PLAYER_ENTERING_WORLD, ZONE_CHANGED_NEW_AREA, RAID_INSTANCE_WELCOME, PLAYER_LEAVING_WORLD, PLAYER_CAMPING, CHAT_MSG_ADDON, SEND_INSTANCE_RESET_REQUEST",
+						["spellIds"] = {
+						},
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -19285,6 +19139,7 @@ WeakAurasSaved = {
 			["zoom"] = 0.3,
 			["config"] = {
 			},
+			["xOffset"] = 50,
 			["actions"] = {
 				["start"] = {
 				},
@@ -19293,7 +19148,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["parent"] = "Warlock 2.0",
 			["regionType"] = "icon",
 			["cooldown"] = true,
 			["displayIcon"] = 136188,
@@ -19352,7 +19206,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 50,
+			["parent"] = "Warlock 2.0",
 		},
 		["Druid - Rage Bar"] = {
 			["sparkWidth"] = 10,
@@ -19761,23 +19615,13 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["internalVersion"] = 53,
+			["rowSpace"] = 1,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["fullCircle"] = true,
-			["animate"] = true,
-			["sort"] = "none",
-			["scale"] = 1,
-			["rowSpace"] = 1,
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["limit"] = 5,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -19798,7 +19642,17 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["arcLength"] = 360,
+			["animate"] = true,
+			["sort"] = "none",
+			["scale"] = 1,
+			["stagger"] = 0,
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["limit"] = 5,
+			["useLimit"] = false,
+			["internalVersion"] = 53,
 			["constantFactor"] = "RADIUS",
 			["borderInset"] = 0,
 			["borderOffset"] = 16,
@@ -19812,14 +19666,14 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["uid"] = "N5YikxjcJsU",
-			["stagger"] = 0,
-			["useLimit"] = false,
+			["gridType"] = "RD",
+			["fullCircle"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["gridType"] = "RD",
+			["arcLength"] = 360,
 		},
 		["HOT"] = {
 			["sparkWidth"] = 10,
@@ -20145,9 +19999,9 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["selfPoint"] = "BOTTOMLEFT",
-			["uid"] = "uZA7A7H08kt",
 			["config"] = {
 			},
+			["borderInset"] = 1,
 			["xOffset"] = 0.00030517578125,
 			["conditions"] = {
 			},
@@ -20155,7 +20009,7 @@ WeakAurasSaved = {
 				["groupOffset"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["borderInset"] = 1,
+			["uid"] = "uZA7A7H08kt",
 		},
 		["targetdebuffs  2"] = {
 			["iconSource"] = -1,
@@ -20408,19 +20262,14 @@ WeakAurasSaved = {
 	},
 	["instanceHistoryDb"] = {
 		["sess"] = {
-			["delayUpdate"] = 1664453136,
+			["delayUpdate"] = 1664461460,
 			["enterLoc"] = {
 				["instance"] = -1,
 			},
-			["histOldest"] = "1 |4Min:Min;",
-			["histLiveCount"] = 1,
+			["histOldest"] = "n/a",
+			["histLiveCount"] = 0,
 		},
 		["History"] = {
-			["Mxzq - Golemagg:Hellfire Citadel: Ramparts:party:1:591"] = {
-				["last"] = 1664449627,
-				["create"] = 1664448388,
-				["desc"] = "Mxzq - Golemagg: Hellfire Citadel: Ramparts - Normal",
-			},
 		},
 		["HistoryDay"] = {
 			["Mxzq - Golemagg:Hellfire Citadel: Ramparts:party:1:590"] = {
@@ -20452,16 +20301,16 @@ WeakAurasSaved = {
 	["editor_font_size"] = 12,
 	["lastArchiveClear"] = 1602609267,
 	["lastUpgrade"] = 1662193007,
-	["bgtimetotsave"] = 0,
+	["dbVersion"] = 53,
 	["login_squelch_time"] = 10,
-	["editor_bracket_matching"] = true,
 	["registered"] = {
 	},
+	["bgtimetotsave"] = 0,
 	["frame"] = {
 		["xOffset"] = -1439.750732421875,
 		["width"] = 892.7399291992188,
 		["height"] = 919.339599609375,
 		["yOffset"] = -105.1015625,
 	},
-	["dbVersion"] = 53,
+	["editor_bracket_matching"] = true,
 }

@@ -1,10 +1,12 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
+		[6] = {
+		},
 	},
-	["currentStep"] = 1,
+	["currentStep"] = 6,
 	["phase"] = 6,
-	["currentGuideGroup"] = "",
+	["currentGuideGroup"] = "Horde 70-80",
 	["flightPaths"] = {
 		[58] = "Zoram'gar Outpost, Ashenvale",
 		[166] = "Emerald Sanctuary, Felwood",
@@ -42,8 +44,10 @@ RXPCData = {
 	["JoyousJourneys"] = true,
 	["GA"] = false,
 	["frameHeight"] = 125.000129699707,
-	["currentGuideName"] = "",
+	["currentGuideName"] = "70-72 Borean Tundra",
 	["stepSkip"] = {
+		true, -- [1]
+		[5] = true,
 	},
 	["SoM"] = 1,
 	["hardcore"] = false,
