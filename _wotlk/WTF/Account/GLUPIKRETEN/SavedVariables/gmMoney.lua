@@ -6,10 +6,10 @@ GMMONEY = {
 			["CLASS"] = "HUNTER",
 		},
 	},
-	["Stonespine"] = {
-		["Vermins"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
+	["Jin'do"] = {
+		["Wells"] = {
+			["GOLD"] = 1424,
+			["CLASS"] = "DRUID",
 		},
 	},
 	["Dreadnaught"] = {
@@ -38,10 +38,10 @@ GMMONEY = {
 			["CLASS"] = "WARRIOR",
 		},
 	},
-	["Jin'do"] = {
-		["Wells"] = {
-			["GOLD"] = 1424,
-			["CLASS"] = "DRUID",
+	["Stonespine"] = {
+		["Vermins"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
 		},
 	},
 	["Golemagg"] = {
@@ -50,11 +50,11 @@ GMMONEY = {
 			["CLASS"] = "DEATHKNIGHT",
 		},
 		["Mxzq"] = {
-			["GOLD"] = 2193162,
+			["GOLD"] = 2046938,
 			["CLASS"] = "HUNTER",
 		},
 		["Mxyz"] = {
-			["GOLD"] = 3694318,
+			["GOLD"] = 4397119,
 			["CLASS"] = "PRIEST",
 		},
 		["Handrmandr"] = {
@@ -82,7 +82,7 @@ GMMONEY = {
 			["CLASS"] = "WARLOCK",
 		},
 		["Vermin"] = {
-			["GOLD"] = 18611782,
+			["GOLD"] = 18936595,
 			["CLASS"] = "WARRIOR",
 		},
 	},

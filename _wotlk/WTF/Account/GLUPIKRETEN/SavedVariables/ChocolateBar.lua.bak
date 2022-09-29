@@ -54,7 +54,26 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["width"] = 147.000030517578,
+					["autohide"] = false,
+					["barOffy"] = -207.589706420898,
+					["hideBarInCombat"] = false,
+					["barOffx"] = -31.9219512939453,
+				},
+				["ChocolateBar2"] = {
+					["barOffy"] = -256.666748046875,
+					["barPoint"] = "TOPRIGHT",
+					["barName"] = "ChocolateBar2",
+					["align"] = "custom",
+					["width"] = 147,
+					["index"] = 1,
+					["barOffx"] = -88.3325424194336,
+				},
+			},
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
@@ -68,10 +87,7 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -350,13 +366,6 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "PP",
 				},
-				["Prat"] = {
-					["enabled"] = false,
-					["index"] = 3,
-					["align"] = "right",
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
-				},
 				["AtlasLoot"] = {
 					["index"] = 1,
 					["align"] = "right",
@@ -366,6 +375,13 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 					["showIcon"] = false,
 					["customLabel"] = "AL",
+				},
+				["Prat"] = {
+					["enabled"] = false,
+					["index"] = 3,
+					["align"] = "right",
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
 				},
 				["GatherMate2"] = {
 					["enabled"] = false,
@@ -398,17 +414,6 @@ ChocolateBarDB = {
 					["index"] = 6,
 					["barName"] = "ChocolateBar1",
 				},
-				["TownsfolkTracker"] = {
-					["enabled"] = false,
-					["align"] = "right",
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
-				},
-				["MinimapIcon"] = {
-					["enabled"] = false,
-					["index"] = 1,
-					["barName"] = "ChocolateBar1",
-				},
 				["LFGBulletinBoard"] = {
 					["enabled"] = false,
 					["index"] = 2,
@@ -418,6 +423,17 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar2",
 					["showText"] = false,
 					["customLabel"] = "LFG",
+				},
+				["MinimapIcon"] = {
+					["enabled"] = false,
+					["index"] = 1,
+					["barName"] = "ChocolateBar1",
+				},
+				["TownsfolkTracker"] = {
+					["enabled"] = false,
+					["align"] = "right",
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
 				},
 				["NIT"] = {
 					["index"] = 1,
@@ -512,33 +528,17 @@ ChocolateBarDB = {
 				},
 			},
 			["fontName"] = "Friz Quadrata TT",
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["width"] = 147.000030517578,
-					["autohide"] = false,
-					["barOffy"] = -207.589706420898,
-					["hideBarInCombat"] = false,
-					["barOffx"] = -31.9219512939453,
-				},
-				["ChocolateBar2"] = {
-					["barOffy"] = -256.666748046875,
-					["barPoint"] = "TOPRIGHT",
-					["barName"] = "ChocolateBar2",
-					["align"] = "custom",
-					["width"] = 147,
-					["index"] = 1,
-					["barOffx"] = -88.3325424194336,
-				},
-			},
+			["locked"] = false,
 			["desaturated"] = false,
 			["forceColor"] = false,
 			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["fixedStrata"] = true,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -599,9 +599,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 805705,
-		["timeStamp"] = 29920.925,
-		["timeAtThisLevel"] = 5897,
+		["total"] = 810834,
+		["timeStamp"] = 577923.012,
+		["timeAtThisLevel"] = 11026,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -636,17 +636,17 @@ CB_PlayedTime = {
 		["total"] = 1,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 875336,
-		["timeStamp"] = 29711.317,
-		["timeAtThisLevel"] = 141221,
+		["total"] = 877442,
+		["timeStamp"] = 579937.259,
+		["timeAtThisLevel"] = 143327,
 	},
 	["Judawise-"] = {
 		["total"] = 437,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 204110,
-		["timeStamp"] = 6296.615,
-		["timeAtThisLevel"] = 198364,
+		["total"] = 204245,
+		["timeStamp"] = 577961.292,
+		["timeAtThisLevel"] = 198499,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
@@ -691,9 +691,9 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Battlearm-Golemagg"] = {
-		["total"] = 90344,
-		["timeAtThisLevel"] = 4106,
-		["timeStamp"] = 31704.65,
+		["total"] = 90661,
+		["timeAtThisLevel"] = 4423,
+		["timeStamp"] = 571859.014,
 	},
 	["Mxyzptlk-Golemagg"] = {
 		["total"] = 29335,

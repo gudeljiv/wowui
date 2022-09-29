@@ -11,20 +11,20 @@ __DEJUNK_SAVED_VARIABLES__ = {
 				},
 			},
 			["inclusions"] = {
-				["2996"] = true,
+				["3181"] = true,
 				["4604"] = true,
 				["4541"] = true,
 				["4879"] = true,
 				["5635"] = true,
-				["4877"] = true,
+				["2287"] = true,
 				["17056"] = true,
 				["3376"] = true,
 				["3670"] = true,
 				["5125"] = true,
-				["3181"] = true,
+				["2996"] = true,
 				["1179"] = true,
 				["6444"] = true,
-				["4880"] = true,
+				["4877"] = true,
 				["4605"] = true,
 				["4606"] = true,
 				["771"] = true,
@@ -41,8 +41,8 @@ __DEJUNK_SAVED_VARIABLES__ = {
 				["3669"] = true,
 				["5124"] = true,
 				["3401"] = true,
-				["2287"] = true,
 				["1206"] = true,
+				["4880"] = true,
 			},
 		},
 		["minimapIcon"] = {
@@ -102,19 +102,9 @@ __DEJUNK_SAVED_VARIABLES__ = {
 			},
 			["version"] = 3,
 		},
-		["Vermina-Golemagg"] = {
-			["destroy"] = {
-				["autoOpen"] = {
-					["enabled"] = true,
-					["value"] = 3,
-				},
-			},
+		["Greshnik-Dreadnaught"] = {
 			["sell"] = {
 				["auto"] = true,
-				["inclusions"] = {
-					["4239"] = true,
-					["4246"] = true,
-				},
 				["safeMode"] = false,
 			},
 			["version"] = 3,
@@ -156,10 +146,10 @@ __DEJUNK_SAVED_VARIABLES__ = {
 					["5516"] = true,
 					["5118"] = true,
 					["25431"] = true,
-					["1509"] = true,
-					["25429"] = true,
-					["5125"] = true,
 					["6300"] = true,
+					["25429"] = true,
+					["1520"] = true,
+					["1509"] = true,
 					["3670"] = true,
 					["4775"] = true,
 					["4877"] = true,
@@ -170,7 +160,7 @@ __DEJUNK_SAVED_VARIABLES__ = {
 					["5115"] = true,
 					["5268"] = true,
 					["5466"] = true,
-					["1520"] = true,
+					["5125"] = true,
 					["3402"] = true,
 					["5114"] = true,
 					["9335"] = true,
@@ -322,9 +312,19 @@ __DEJUNK_SAVED_VARIABLES__ = {
 				},
 			},
 		},
-		["Greshnik-Dreadnaught"] = {
+		["Vermina-Golemagg"] = {
+			["destroy"] = {
+				["autoOpen"] = {
+					["enabled"] = true,
+					["value"] = 3,
+				},
+			},
 			["sell"] = {
 				["auto"] = true,
+				["inclusions"] = {
+					["4239"] = true,
+					["4246"] = true,
+				},
 				["safeMode"] = false,
 			},
 			["version"] = 3,
