@@ -16,7 +16,7 @@ GMMONEY = {
 			["CLASS"] = "HUNTER",
 		},
 		["Mxyz"] = {
-			["GOLD"] = 4397119,
+			["GOLD"] = 4442825,
 			["CLASS"] = "PRIEST",
 		},
 		["Handrmandr"] = {
@@ -24,7 +24,7 @@ GMMONEY = {
 			["CLASS"] = "WARRIOR",
 		},
 		["Moolatz"] = {
-			["GOLD"] = 2259692,
+			["GOLD"] = 2260129,
 			["CLASS"] = "DRUID",
 		},
 		["Augustin"] = {
@@ -44,7 +44,7 @@ GMMONEY = {
 			["CLASS"] = "WARLOCK",
 		},
 		["Vermin"] = {
-			["GOLD"] = 18889560,
+			["GOLD"] = 18891930,
 			["CLASS"] = "WARRIOR",
 		},
 	},
@@ -74,16 +74,16 @@ GMMONEY = {
 			["CLASS"] = "WARRIOR",
 		},
 	},
-	["Jin'do"] = {
-		["Wells"] = {
-			["GOLD"] = 1424,
-			["CLASS"] = "DRUID",
-		},
-	},
 	["Stonespine"] = {
 		["Vermins"] = {
 			["GOLD"] = 0,
 			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Jin'do"] = {
+		["Wells"] = {
+			["GOLD"] = 1424,
+			["CLASS"] = "DRUID",
 		},
 	},
 }

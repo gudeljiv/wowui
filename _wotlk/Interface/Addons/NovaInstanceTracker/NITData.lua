@@ -204,6 +204,7 @@ f:RegisterEvent("TRADE_SKILL_SHOW");
 f:RegisterEvent("TRADE_SKILL_CLOSE");
 f:RegisterEvent("UPDATE_BATTLEFIELD_SCORE");
 f:RegisterEvent("ENCOUNTER_END");
+f:RegisterEvent("CURRENCY_DISPLAY_UPDATE");
 f:SetScript('OnEvent', function(self, event, ...)
 	if (event == "PLAYER_LEAVING_WORLD" ) then
 		doGUID = nil;
@@ -343,8 +344,12 @@ f:SetScript('OnEvent', function(self, event, ...)
 		end
 	elseif (event == "TRADE_SKILL_UPDATE" or event == "TRADE_SKILL_SHOW" or event == "TRADE_SKILL_CLOSE") then
 		NIT:recordCooldowns();
-	elseif ("UPDATE_BATTLEFIELD_SCORE") then
+	elseif (event == "UPDATE_BATTLEFIELD_SCORE") then
 		NIT:recordBgStats();
+	elseif (event == "CURRENCY_DISPLAY_UPDATE") then
+		C_Timer.After(1, function()
+			NIT:recordCurrency();
+		end)
 	end
 end)
 
@@ -414,15 +419,19 @@ COMBATLOG_XPLOSS_FIRSTPERSON_UNNAMED = "You lose %d experience.";]]
 function NIT:chatMsgCombatXpGain(...)
 	local text = ...;
 	local xpGained = string.match(text, "%d+");
-	if (LOCALE_koKR) then
-		xpGained = string.match(text, "(%d+)의 경험치");
-	end
-	if (NIT.inInstance and NIT.data.instances[1]) then
-		NIT.data.instances[1].xpFromChat = NIT.data.instances[1].xpFromChat + xpGained;
-		if (NIT.data.instances[1].isPvp) then
-			return;
+	if (xpGained) then
+		if (LOCALE_koKR) then
+			xpGained = string.match(text, "(%d+)의 경험치");
 		end
-		NIT.data.instances[1].mobCount = NIT.data.instances[1].mobCount + 1;
+		if (NIT.inInstance and NIT.data.instances[1]) then
+			NIT.data.instances[1].xpFromChat = NIT.data.instances[1].xpFromChat + xpGained;
+			if (NIT.data.instances[1].isPvp) then
+				return;
+			end
+			NIT.data.instances[1].mobCount = NIT.data.instances[1].mobCount + 1;
+		end
+	else
+		NIT:debug("Missing xp match:" ..  text);
 	end
 	currentXP = (UnitXP("player") or 0);
 	maxXP = (UnitXPMax("player") or 0);
@@ -811,8 +820,9 @@ function NIT:enteredInstance(isReload, isLogon, checkAgain)
 				--if (NIT.isDebug) then
 				--	t.GUIDList = {};
 				--end
+				--This should really be called noLockout instead of raid but not changing it or the local string now.
 				local raid;
-				if (instanceID and NIT.zones[instanceID] and NIT.zones[instanceID].noLockout) then
+				if (NIT.noRaidLockouts and instanceID and NIT.zones[instanceID] and NIT.zones[instanceID].noLockout) then
 					raid = true;
 				end
 				--Insert as first row, instances are stored newest first in the data table.
@@ -906,6 +916,23 @@ function NIT:leftInstance()
 	NIT.inInstance = nil;
 	NIT.lastNpcID = 999999999;
 	NIT.lastInstanceName = "(Unknown Instance)";
+	if (NITAUTORESET) then
+		if (NIT.data.instances[1] and NIT.data.instances[1].mobCount and NIT.data.instances[1].mobCount > 50) then
+			C_Timer.After(3, function()
+				if (UnitIsGroupLeader("player") and not IsInInstance() and not UnitIsGhost("player")) then
+					local msg = "Auto resetting dungeons.";
+					if (IsInRaid()) then
+				  		SendChatMessage("[NIT] " .. msg, "RAID");
+			  		elseif (IsInGroup()) then
+			  			SendChatMessage("[NIT] " .. msg, "PARTY");
+					else
+						NIT:print(NIT.prefixColor .. msg);
+					end
+					ResetInstances();
+				end
+			end)
+		end
+	end
 end
 
 function NIT:showInstanceStats(id, output, showAll)
@@ -1396,7 +1423,7 @@ function NIT:getInstanceLockoutInfo(char)
 	end
 	for k, v in ipairs(NIT.data.instances) do
 		if (not NIT.perCharOnly or target == v.playerName) then
-			if (v.isPvp or (v.instanceID and NIT.zones[v.instanceID] and NIT.zones[v.instanceID].noLockout)) then
+			if (v.isPvp or (NIT.noRaidLockouts and v.instanceID and NIT.zones[v.instanceID] and NIT.zones[v.instanceID].noLockout)) then
 				--NIT:debug("skipping raid", v.instanceID);
 			else
 				count = count + 1;
@@ -1845,21 +1872,52 @@ NIT.trackItemsMAGE = {
 	},
 };
 
-NIT.trackItemsDRUID = {
-	[1] = {
-		id = 17026,
-		name = "Wild Thornroot",
-		texture = "Interface\\Icons\\inv_misc_root_01",
-		minLvl = 60;
-	},
-	[2] = {
-		id = 17038,
-		name = "Ironwood Seed",
-		texture = "Interface\\Icons\\inv_misc_food_02",
-		minLvl = 60;
-	},
-};
-
+if (NIT.isTBC or NIT.isPrepatch) then
+	NIT.trackItemsDRUID = {
+		[1] = {
+			id = 22148,
+			name = "Wild Quillvine",
+			texture = "Interface\\Icons\\inv_misc_root_01",
+			minLvl = 70;
+		},
+		[2] = {
+			id = 22147,
+			name = "Flintweed Seed",
+			texture = "Interface\\Icons\\inv_misc_food_02",
+			minLvl = 70;
+		},
+	};
+elseif (NIT.isWrath) then
+	NIT.trackItemsDRUID = {
+		[1] = {
+			id = 44605,
+			name = "Wild Spineleaf",
+			texture = "Interface\\Icons\\inv_misc_spineleaf-_01",
+			minLvl = 80;
+		},
+		[2] = {
+			id = 44614,
+			name = "Starleaf Seed",
+			texture = "Interface\\Icons\\inv_misc_food_02",
+			minLvl = 80;
+		},
+	};
+else
+	NIT.trackItemsDRUID = {
+		[1] = {
+			id = 17026,
+			name = "Wild Thornroot",
+			texture = "Interface\\Icons\\inv_misc_root_01",
+			minLvl = 60;
+		},
+		[2] = {
+			id = 17038,
+			name = "Ironwood Seed",
+			texture = "Interface\\Icons\\inv_misc_food_02",
+			minLvl = 60;
+		},
+	};
+end
 NIT.trackItemsWARLOCK = {
 	[1] = {
 		id = 6265,
@@ -1941,6 +1999,40 @@ function NIT:recordInventoryData()
 		end
 	end
 	NIT:recordMarksData();
+	NIT:recordCurrency();
+end
+
+local currencyItems = {
+	--TBC.
+	[135884] = "Badge of Justice",
+	--Wrath
+	[237547] = "Emblem of Valor",
+	[135979] = "Emblem of Triumph",
+	[135947] = "Emblem of Heroism",
+	[135885] = "Emblem of Conquest",
+	[334365] = "Emblem of Frost",
+};
+function NIT:recordCurrency()
+	if (NIT.isClassic or NIT.isTBC) then
+		return;
+	end
+	local char = UnitName("player");
+	if (not NIT.data.myChars[char]) then
+		NIT.data.myChars[char] = {};
+	end
+	if (not NIT.data.myChars[char].currency) then
+		NIT.data.myChars[char].currency = {};
+	end
+	for i = 1, GetCurrencyListSize() do
+		local name, isHeader, _, _, _, count, icon, max = GetCurrencyListInfo(i);
+		if (icon and currencyItems[icon]) then
+			NIT.data.myChars[char].currency[icon] = {
+				name = name,
+				count = count,
+				max = max,
+			};
+		end
+	end
 end
 
 function NIT:recordPlayerLevelData()

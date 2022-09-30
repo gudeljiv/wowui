@@ -1,7 +1,6 @@
-VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
-#showtooltip [nocombat] Charge; Intercept
-/cast [nostance:1,nocombat] Battle Stance;[nostance:3,combat] Berserker Stance;
-/cast [nocombat] Charge; [combat] Intercept
+VER 3 0000000001000014 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Vigilance
+/cast [@focus,exists] Vigilance
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Charge
@@ -55,7 +54,7 @@ END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast Taunt
+/cast [@mouseover,exists][]Taunt
 END
 VER 3 0000000001000013 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -71,7 +70,8 @@ VER 3 0000000001000015 " " "INV_MISC_QUESTIONMARK"
 /use 14
 /cast Bloodrage
 END
-VER 3 0000000001000014 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Vigilance
-/cast [@focus,exists] Vigilance
+VER 3 0000000001000016 " " "INV_MISC_QUESTIONMARK"
+#showtooltip [nocombat] Charge; Intercept
+/cast [nostance:1,nocombat] Battle Stance;[nostance:3,combat] Berserker Stance;
+/cast [nocombat] Charge; [combat] Intercept
 END

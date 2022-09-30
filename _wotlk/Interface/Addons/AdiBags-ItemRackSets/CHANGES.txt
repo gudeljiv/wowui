@@ -1,10 +1,10 @@
-lightweight tag 74379e122d6ab5e0b03ae033f451edf61d0ec06c v1.7
-Author:	GitHub <noreply@github.com>
-Date:	Tue Jan 7 00:41:37 2020 -0500
+lightweight tag eb84a9cf2f8113264436e62b004dfc6803bb8051 v1.9
+Author:	Andrew Potter <apottere@gmail.com>
+Date:	Wed Aug 31 03:57:57 2022 -0400
 
-commit 74379e122d6ab5e0b03ae033f451edf61d0ec06c
+commit eb84a9cf2f8113264436e62b004dfc6803bb8051
 Author: Andrew Potter <apottere@gmail.com>
-Date:   Tue Jan 7 00:41:37 2020 -0500
+Date:   Wed Aug 31 03:57:57 2022 -0400
 
-    Update AdiBags-ItemRackSets.lua
+    Update game version
 

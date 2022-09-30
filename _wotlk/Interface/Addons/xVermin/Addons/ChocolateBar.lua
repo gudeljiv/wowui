@@ -5,7 +5,7 @@ count = 0
 C_Timer.NewTicker(
 	1,
 	function(self)
-		if (count > 10) then
+		if (count > xVermin.WaitTimeUntillAddonLoaded) then
 			self:Cancel()
 		end
 		count = count + 1
@@ -23,7 +23,7 @@ count = 0
 C_Timer.NewTicker(
 	1,
 	function(self)
-		if (count > 10) then
+		if (count > xVermin.WaitTimeUntillAddonLoaded) then
 			self:Cancel()
 		end
 		count = count + 1

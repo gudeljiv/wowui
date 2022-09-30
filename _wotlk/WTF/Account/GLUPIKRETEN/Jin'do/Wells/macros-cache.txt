@@ -1,6 +1,7 @@
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover,exists,nodead][help][] Rejuvenation
+VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
+#showtoltip
+/startattack
+/cast [stealth] Ravage; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][help][] Regrowth
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -61,8 +62,7 @@ VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 /cast [form:3] Mangle (Cat)
 /cast Innervate
 END
-VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
-#showtoltip
-/startattack
-/cast [stealth] Ravage; [form:1] Maul; [form:3] Claw; [@mouseover,help,nodead][help][] Regrowth
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists,nodead][help][] Rejuvenation
 END

@@ -57,9 +57,11 @@ elseif (NIT.isRetail) then
 	NIT.dailyLimit = 999;
 	NIT.maxLevel = 60;
 else
+	NIT.noRaidLockouts = true;
 	NIT.hourlyLimit = 5;
 	NIT.dailyLimit = 30;
 	NIT.maxLevel = 60;
+	NIT.noRaidLockout = nil;
 end
 NIT.prefixColor = "|cFFFF6900";
 NIT.perCharOnly = false; --Per char is gone in TBC, not sure how I didn't notice this earlier tbh, blizz never announced it.
@@ -948,7 +950,7 @@ function NIT:getMinimapButtonNextExpires(char)
 	local found;
 	for k, v in ipairs(self.data.instances) do
 		local noLockout;
-		if (v.instanceID and NIT.zones[v.instanceID] and NIT.zones[v.instanceID].noLockout) then
+		if (NIT.noRaidLockouts and v.instanceID and NIT.zones[v.instanceID] and NIT.zones[v.instanceID].noLockout) then
 			noLockout = true;
 		end
 		if (not v.isPvp and not noLockout and (not NIT.perCharOnly or char == v.playerName)) then
@@ -1691,7 +1693,7 @@ function NIT:buildInstanceLineFrameString(v, count)
 		elseif (v.faction and v.winningFaction) then
 			lockoutTimeString = lockoutTimeString .. " |cFFFF2222" .. L["Lost"] .. "|r";
 		end
-	elseif (v.instanceID and NIT.zones[v.instanceID] and NIT.zones[v.instanceID].noLockout) then
+	elseif (NIT.noRaidLockouts and v.instanceID and NIT.zones[v.instanceID] and NIT.zones[v.instanceID].noLockout) then
 		--timeColor = "|cFFFF7F50";
 		timeColor = "|cFFFFA500";
 		lockoutTimeString = instance .. " (" .. L["noLockout"] .. ")";
@@ -1799,7 +1801,7 @@ function NIT:recalcInstanceLineFramesTooltip(obj)
 			heroicString = " (|cFFFF2222H|r)";
 		end
 		local text = timeColor .. "Instance " .. obj.count .. " (" .. data.instanceName .. heroicString .. ")|r";
-		if (not data.isPvp and data.instanceID and (NIT.zones[data.instanceID] and NIT.zones[data.instanceID].noLockout)) then
+		if (not data.isPvp and data.instanceID and (NIT.noRaidLockouts and NIT.zones[data.instanceID] and NIT.zones[data.instanceID].noLockout)) then
 			timeColor = "|cFFFFA500";
 			text = timeColor .. "Instance " .. obj.count .. " (" .. data.instanceName .. ") (Raid with no lockout)|r";
 		end
@@ -1821,6 +1823,9 @@ function NIT:recalcInstanceLineFramesTooltip(obj)
 			if (timeSpentRaw and timeSpentRaw > 0 and tonumber(data.xpFromChat) and data.xpFromChat > 0) then
 				local xpPerHour = NIT:commaValue(NIT:round((tonumber(data.xpFromChat) / timeSpentRaw) * 3600));
 				text = text .. "\n|cFF9CD6DE" .. L["experiencePerHour"] .. ":|r " .. xpPerHour;
+				if (data.isPvp) then
+					text = text .. " |cFFA1A1A1(Excluding queue time)|r";
+				end
 			end
 			if (tonumber(data.xpFromChat) and data.xpFromChat > 0 and not data.isPvp) then
 				text = text .. "\n|cFF9CD6DE" .. L["statsAverageXP"] .. "|r " .. (NIT:round(averageXP, 2) or "0");
@@ -3427,6 +3432,21 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 			end
 			text = text .. "\n" .. color1 .. L["durability"] .. ": " .. displayDurability .. "|r";
 			
+			local currencyString = "";
+			if (data.currency and next(data.currency)) then
+				for k, v in NIT:pairsByKeys(data.currency) do
+					if (v.count and v.count > 0) then
+						local texture = "|T" .. k .. ":12:12:0:0|t";
+						currencyString = currencyString .. "\n  " .. texture .. " " .. color1 .. v.name .. ":|r "
+								.. color2 .. v.count .. "|r";
+					end
+				end
+			end
+			if (currencyString ~= "") then
+				text = text .. "\n\n|cFFFFFF00" .. CURRENCY .. "|r";
+				text = text .. currencyString;
+			end
+			
 			if (data.classEnglish == "PRIEST" or data.classEnglish == "MAGE" or data.classEnglish == "DRUID"
 					or data.classEnglish == "WARLOCK" or data.classEnglish == "SHAMAN" or data.classEnglish == "PALADIN"
 							or data.classEnglish == "HUNTER") then
@@ -3445,7 +3465,7 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 							.. ammoTypeString .. "|r";
 					foundItems = true;
 				end
-				if (_G["NIT"]["trackItems" .. data.classEnglish]) then
+				if (NIT["trackItems" .. data.classEnglish]) then
 					for k, v in ipairs(_G["NIT"]["trackItems" .. data.classEnglish]) do
 						if (not v.minLvl or v.minLvl < data.level) then
 							local texture = "";
@@ -3629,7 +3649,7 @@ function NIT:recalcAltsLineFramesTooltip(obj)
 				text = text .. "\n\n|cFFFFFF00" .. L["PvP"] .. "|r";
 				text = text .. pvpString;
 			end
-			if (not NIT.isTBC) then
+			if (NIT.isClassic) then
 				local pvpRank = "\n\n|cFFFFFF00" .. L["pvp"] .. " " .. L["rank"] .. "|r";
 				if (data.pvpRankName and data.pvpRankNumber and data.pvpRankPercent) then
 					local percent = (string.match(tostring(data.pvpRankPercent), "%.(%d+)") or 0);

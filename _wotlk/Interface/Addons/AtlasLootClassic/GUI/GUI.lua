@@ -30,7 +30,15 @@ local TT_ENTRY = "|cFFCFCFCF%s:|r %s"
 local LOADER_STRING = "GUI_LOADING"
 local TT_INFO_ENTRY = "|cFFCFCFCF%s:|r %s"
 
+local RIGHT_SELECTION_ENTRYS = {
+	DIFF_MAX = 4,
+	DIFF_MIN = 2,
+	DIFF_DEFAULT = 2,
+	BOSS_MAX = 24,
+}
+
 local db
+local LoadAtlasLootModule
 
 local function UpdateFrames(noPageUpdate, forceContentUpdate)
 	local moduleData = AtlasLoot.ItemDB:Get(db.selected[1])
@@ -208,6 +216,15 @@ function GUI.FreeFrameByType(typ, frame)
 	frameSave[typ][frame] = true
 end
 
+local BackDropFrame = {"TopLeftCorner", "TopRightCorner", "BottomLeftCorner", "BottomRightCorner", "TopEdge", "BottomEdge", "LeftEdge", "RightEdge", "Center"}
+function GUI.SetBackDropLayer(frame, newLayer, count)
+	for k, v in ipairs(BackDropFrame) do
+		if frame[v] then
+			frame.Center:SetDrawLayer(newLayer, count)
+		end
+	end
+end
+
 -- ################################
 -- GUI scripts
 -- ################################
@@ -296,7 +313,7 @@ local function AtlasMapButton_OnEnter(self, owner)
 	tooltip:Show()
 end
 
--- Class Filer
+-- Class Filter
 local function ClassFilterButton_Refresh(self)
 	-- insert class selection?
 	self.texture:SetDesaturated(not db.classFilter)
@@ -422,6 +439,116 @@ local function ClassFilterButton_OnClick(self, button)
 			end
 			self.selectionFrame:Show()
 		end
+	end
+
+end
+
+local function ContentPhaseButton_Refresh(self)
+	self = self or GUI.frame.contentFrame.contentPhaseButton
+	if AtlasLoot.db.ContentPhase.enableOnItems then
+		self:SetAlpha(1.0)
+	else
+		self:SetAlpha(0.5)
+	end
+end
+
+local function ContentPhaseButton_OnClick(self, button)
+	AtlasLoot.db.ContentPhase.enableOnItems = not AtlasLoot.db.ContentPhase.enableOnItems
+	AtlasLoot.GUI.ItemFrame:Refresh(true)
+	ContentPhaseButton_Refresh(self)
+end
+
+-- GameVersion select
+local GAME_VERSION_TEXTURES = AtlasLoot.GAME_VERSION_TEXTURES
+
+local function GameVersionSelect_UpdateVersionTexture()
+	-- check if the game version is even aviable
+	if AtlasLoot:GameVersion_LT(db.selectedGameVersion) or not GAME_VERSION_TEXTURES[db.selectedGameVersion] then
+		db.selectedGameVersion = nil
+	end
+
+	GUI.frame.gameVersionLogo:SetTexture(GAME_VERSION_TEXTURES[db.selectedGameVersion])
+
+	if GUI.frame.gameVersionButton.selectionFrame then
+		GUI.frame.gameVersionButton.selectionFrame:Hide()
+	end
+end
+
+local function GameVersionSelect_Selection_OnClick(self, mouseButton)
+	db.selectedGameVersion = self.gameVersion
+
+	GameVersionSelect_UpdateVersionTexture()
+	LoadAtlasLootModule(db.selectedGameVersion)
+end
+
+local function GameVersionSelect_OnClick(self, mouseButton)
+	if AtlasLoot:GameVersion_EQ(AtlasLoot.CLASSIC_VERSION_NUM) then return end
+	if not self.selectionFrame then
+		local frame = CreateFrame("FRAME", nil, self, _G.BackdropTemplateMixin and "BackdropTemplate" or nil)
+		frame:SetFrameStrata("TOOLTIP")
+		frame:SetFrameLevel(100)
+		frame:EnableMouse(true)
+		frame:SetBackdrop(ALPrivate.BOX_BORDER_BACKDROP)
+		frame:SetBackdropColor(0,0,0,1)
+		frame:SetPoint("TOP", self, "BOTTOM", 0, -2)
+		frame:SetSize(10,10)
+		frame.obj = self
+		frame.buttons = {}
+
+		local width, height = 74, 10
+		local buttonGap = 2
+
+		local createGVButton = function(gameVersion, textureID)
+			local button = CreateFrame("Button", nil, frame)
+			button:SetSize(64,32)
+			button:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight", "ADD")
+			button:SetScript("OnClick", GameVersionSelect_Selection_OnClick)
+
+			local texture = button:CreateTexture(nil, "ARTWORK")
+			texture:SetAllPoints(button)
+			texture:SetTexture(textureID)
+			button.texture = texture
+
+			button.gameVersion = gameVersion
+			button.textureID = textureID
+			frame.buttons[#frame.buttons+1] = button
+
+			return button
+		end
+
+		local classicButton = createGVButton(AtlasLoot.CLASSIC_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.CLASSIC_VERSION_NUM])
+		classicButton:SetPoint("TOP", frame, "TOP", 0, -5)
+
+		if AtlasLoot:GameVersion_GE(AtlasLoot.BC_VERSION_NUM) then
+			local bcButton = createGVButton(AtlasLoot.BC_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.BC_VERSION_NUM])
+			bcButton:SetPoint("TOP", frame.buttons[#frame.buttons-1], "BOTTOM", 0, -buttonGap)
+		end
+
+		if AtlasLoot:GameVersion_GE(AtlasLoot.WRATH_VERSION_NUM) then
+			local wrathButton = createGVButton(AtlasLoot.WRATH_VERSION_NUM, GAME_VERSION_TEXTURES[AtlasLoot.WRATH_VERSION_NUM])
+			wrathButton:SetPoint("TOP", frame.buttons[#frame.buttons-1], "BOTTOM", 0, -buttonGap)
+		end
+
+		frame:SetSize(width, height + (#frame.buttons * 32) + ((#frame.buttons-1) * buttonGap))
+		frame:Hide()
+
+		self.selectionFrame = frame
+	end
+
+	if self.selectionFrame:IsShown() then
+		self.selectionFrame:Hide()
+	else
+		local button
+		for i = 1, #self.selectionFrame.buttons do
+			button = self.selectionFrame.buttons[i]
+			if button.gameVersion == db.selectedGameVersion then
+				button:SetAlpha(1.0)
+			else
+				button:SetAlpha(0.5)
+			end
+		end
+		self.selectionFrame:Show()
+		self.selectionFrame:Raise()
 	end
 
 end
@@ -571,7 +698,8 @@ end
 -- DropDowns/Select
 -- ################################
 -- Called when the module is loaded
-local function loadModule(addonName)
+local linkedContentLastBoss = nil
+LoadAtlasLootModule = function(abc)
 	local moduleList = AtlasLoot.ItemDB:GetModuleList(db.selected[1])
 	local moduleData = AtlasLoot.ItemDB:Get(db.selected[1])
 	local gameVersion = moduleData:GetAviableGameVersion(db.selectedGameVersion)
@@ -582,11 +710,20 @@ local function loadModule(addonName)
 	local first
 	local foundDbValue
 	local content
+	local linkedContent = AtlasLoot.ItemDB:GetCorrespondingField(db.selected[1], db.selected[2], db.selectedGameVersion)
+	if linkedContent then
+		db.selected[2] = linkedContent
+		foundDbValue = true
+		if GUI.frame.boss then
+			linkedContentLastBoss = GUI.frame.boss:GetSelected()
+		end
+	end
 	for i = 1, #moduleList do
 		content = moduleList[i]
 		if moduleData[content].gameVersion == gameVersion or moduleData[content].gameVersion == 0 then
 			if not first then first = content end
 			if content == db.selected[2] then foundDbValue = true end
+
 			-- contentName, contentIndex, contentColor
 			_, contentIndex = moduleData[content]:GetContentType()
 			-- add cat
@@ -681,7 +818,7 @@ local function ModuleSelectFunction(self, id, arg)
 	else
 		db.selected[4] = 1
 	end
-	local combat = AtlasLoot.Loader:LoadModule(id, loadModule, LOADER_STRING)
+	local combat = AtlasLoot.Loader:LoadModule(id, LoadAtlasLootModule, LOADER_STRING)
 	if combat == "InCombat" then
 		GUI:ShowLoadingInfo(id)
 	end
@@ -692,32 +829,52 @@ local function SubCatSelectFunction(self, id, arg)
 	db.selected[2] = id
 	db.selected[3] = 0
 	local moduleData = AtlasLoot.ItemDB:Get(db.selected[1])
+	local difficultys = moduleData:GetDifficultys()
 	local data = {}
 	local dataExtra
+	local selectedBoss
 
 	local tabVal
 	for i = 1, #moduleData[id].items do
 		tabVal = moduleData[id].items[i]
-		moduleData:CheckForLink(id, i)
-		if tabVal.ExtraList then
-			if not dataExtra then dataExtra = {} end
-			dataExtra[#dataExtra+1] = {
-				id = i,
-				name = moduleData[id]:GetNameForItemTable(i),
-				coinTexture = tabVal.CoinTexture,
-				tt_title = moduleData[id]:GetNameForItemTable(i),
-				tt_text = tabVal.info-- or AtlasLoot.EncounterJournal:GetBossInfo(tabVal.EncounterJournalID)
-			}
-			if not dataExtra[#dataExtra].name then dataExtra[#dataExtra] = nil end
-		else
-			data[#data+1] = {
-				id = i,
-				name = moduleData[id]:GetNameForItemTable(i),
-				coinTexture = tabVal.CoinTexture,
-				tt_title = moduleData[id]:GetNameForItemTable(i),
-				tt_text = tabVal.info-- or AtlasLoot.EncounterJournal:GetBossInfo(tabVal.EncounterJournalID)
-			}
-			if not data[#data].name then data[#data] = nil end
+		if tabVal then
+			-- fix scaling jumps of diff list and get max number of user diffs
+			if not tabVal.__numDiffEntrys then
+				local counter = 0
+				for count = 1, #difficultys do
+					if tabVal[count] then
+						counter = counter + 1
+					end
+				end
+
+				moduleData[id].__numDiffEntrys = counter > (moduleData[id].__numDiffEntrys or 0) and counter or moduleData[id].__numDiffEntrys
+				tabVal.__numDiffEntrys = counter
+			end
+			moduleData:CheckForLink(id, i)
+			if tabVal.ExtraList then
+				if not dataExtra then dataExtra = {} end
+				dataExtra[#dataExtra+1] = {
+					id = i,
+					name = moduleData[id]:GetNameForItemTable(i),
+					coinTexture = tabVal.CoinTexture,
+					tt_title = moduleData[id]:GetNameForItemTable(i),
+					tt_text = tabVal.info-- or AtlasLoot.EncounterJournal:GetBossInfo(tabVal.EncounterJournalID)
+				}
+				if not dataExtra[#dataExtra].name then dataExtra[#dataExtra] = nil end
+			else
+				data[#data+1] = {
+					id = i,
+					name = moduleData[id]:GetNameForItemTable(i),
+					coinTexture = tabVal.CoinTexture,
+					tt_title = moduleData[id]:GetNameForItemTable(i),
+					tt_text = tabVal.info-- or AtlasLoot.EncounterJournal:GetBossInfo(tabVal.EncounterJournalID)
+				}
+				if not data[#data].name then data[#data] = nil end
+				if linkedContentLastBoss and data[#data] and data[#data].name  == linkedContentLastBoss.name then
+					selectedBoss = i
+					linkedContentLastBoss = nil
+				end
+			end
 		end
 	end
 	-- change difficulty from some instances
@@ -726,9 +883,10 @@ local function SubCatSelectFunction(self, id, arg)
 	--if dataExtra then
 		GUI.frame.extra:SetData(dataExtra)
 	--end
-	db.selected[3] = data[1] and data[1].id or 1
-	GUI.frame.boss:SetData(data, db.selected[3])
+	linkedContentLastBoss = nil
 
+	db.selected[3] = selectedBoss or (data[1] and data[1].id or 1)
+	GUI.frame.boss:SetData(data, db.selected[3])
 end
 
 local function BossSelectFunction(self, id, arg)
@@ -739,15 +897,20 @@ local function BossSelectFunction(self, id, arg)
 	moduleData:CheckForLink(db.selected[2], db.selected[3], true)
 	local difficultys = moduleData:GetDifficultys()
 	local data = {}
+	local diffCount = 0
+	local bossData = moduleData[db.selected[2]].items[id]
 	for count = 1, #difficultys do
-		if moduleData[db.selected[2]].items[id][count] then
+		if bossData[count] then
 			data[ #data+1 ] = {
 				id = count,
-				name = difficultys[count].name,
-				tt_title = difficultys[count].name
+				name = bossData[count].diffName or difficultys[count].name,
+				tt_title = bossData[count].diffName or difficultys[count].name
 			}
+			diffCount = diffCount + 1
 		end
 	end
+
+	GUI:UpdateRightSelection(moduleData[db.selected[2]].__numDiffEntrys or diffCount)
 	GUI.frame.difficulty:SetData(data, moduleData:GetDifficulty(db.selected[2], db.selected[3], db.selected[4]))
 	--UpdateFrames()
 end
@@ -760,16 +923,19 @@ local function ExtraSelectFunction(self, id, arg)
 	moduleData:CheckForLink(db.selected[2], id, true)
 	local difficultys = moduleData:GetDifficultys()
 	local data = {}
+	local diffCount = 0
 	for count = 1, #difficultys do
 		if moduleData[db.selected[2]].items[id][count] then
 			data[ #data+1 ] = {
 				id = count,
-				name = difficultys[count].name,
-				tt_title = difficultys[count].name
+				name = moduleData[db.selected[2]].items[id][count].diffName or difficultys[count].name,
+				tt_title = moduleData[db.selected[2]].items[id][count].diffName or difficultys[count].name
 			}
+			diffCount = diffCount + 1
 		end
 	end
 
+	GUI:UpdateRightSelection(diffCount)
 	GUI.frame.difficulty:SetData(data, moduleData:GetDifficulty(db.selected[2], db.selected[3], db.selected[4]))
 	--UpdateFrames()
 end
@@ -779,36 +945,6 @@ local function DifficultySelectFunction(self, id, arg, start)
 		db.selected[4] = id
 	end
 	UpdateFrames()
-end
-
-local function UpdateGameVersionTexture()
-	if AtlasLoot:GetGameVersion() < 2 then return end
-	if not GUI.frame or not GUI.frame.gameVersionLogo then return end
-	local frame = GUI.frame.gameVersionLogo
-
-	local curGameVersion = db.selectedGameVersion
-
-	if curGameVersion == 2 then
-		frame:SetTexture(131194)
-	else
-		frame:SetTexture(538639)
-	end
-end
-
-local function GameVersionSwitch_OnClick(self)
-	if AtlasLoot:GetGameVersion() < 2 then return end
-	local curGameVersion = db.selectedGameVersion
-
-	if curGameVersion == 2 then
-		db.selectedGameVersion = 1
-	else
-		db.selectedGameVersion = 2
-	end
-
-	db.selected[2] = AtlasLoot.ItemDB:GetCorrespondingField(db.selected[1], db.selected[2], db.selectedGameVersion)
-
-	UpdateGameVersionTexture()
-	loadModule()
 end
 
 -- ################################
@@ -883,7 +1019,7 @@ function GUI.Init()
 
 	-- if auto-select is enabled, pre-load all instance modules to save the first-time AL frame's loading time
 	if (AtlasLoot.db.GUI.autoselect) then
-		--AtlasLoot:PreLoadModules();
+		--AtlasLoot:PreLoadAtlasLootModules();
 	end
 end
 AtlasLoot:AddInitFunc(GUI.Init)
@@ -978,7 +1114,7 @@ function GUI:Create()
 	frame.gameVersionButton:SetWidth(64)
 	frame.gameVersionButton:SetHeight(32)
 	frame.gameVersionButton:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight", "ADD")
-	frame.gameVersionButton:SetScript("OnClick", GameVersionSwitch_OnClick)
+	frame.gameVersionButton:SetScript("OnClick", GameVersionSelect_OnClick)
 
 	frame.gameVersionButton.Box = {}
 
@@ -1007,7 +1143,7 @@ function GUI:Create()
 	l:SetStartPoint("BOTTOMLEFT",-lineGap,-lineGap)
 	l:SetEndPoint("TOPLEFT",-lineGap,lineGap)
 
-	frame.gameVersionLogo = frame:CreateTexture(frameName.."-downBG", "ARTWORK")
+	frame.gameVersionLogo = frame:CreateTexture(frameName.."-gameVersionLogo", "ARTWORK")
 	frame.gameVersionLogo:SetTexture(538639)
 	frame.gameVersionLogo:SetAllPoints(frame.gameVersionButton)
 	frame.gameVersionButton.texture = frame.gameVersionLogo
@@ -1230,9 +1366,30 @@ function GUI:Create()
 	frame.contentFrame.clasFilterButton.texture:SetAllPoints(frame.contentFrame.clasFilterButton)
 	--frame.contentFrame.clasFilterButton.texture:SetTexture(CLASS_ICON_PATH[PLAYER_CLASS_FN])
 
+	-- ContentPhase
+	frame.contentFrame.contentPhaseButton = CreateFrame("Button", frameName.."-contentPhaseButton")
+	frame.contentFrame.contentPhaseButton:SetParent(frame.contentFrame)
+	frame.contentFrame.contentPhaseButton:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+	frame.contentFrame.contentPhaseButton:SetWidth(25)
+	frame.contentFrame.contentPhaseButton:SetHeight(25)
+	frame.contentFrame.contentPhaseButton:SetPoint("LEFT", frame.contentFrame.clasFilterButton, "RIGHT", 5, 0)
+	frame.contentFrame.contentPhaseButton:SetScript("OnClick", ContentPhaseButton_OnClick)
+	--frame.contentFrame.contentPhaseButton:SetScript("OnShow", ContentPhaseButton_OnShow)
+	--frame.contentFrame.contentPhaseButton:SetScript("OnEnter", ContentPhaseButton_OnEnter)
+	--frame.contentFrame.contentPhaseButton:SetScript("OnLeave", ContentPhaseButton_OnLeave)
+	frame.contentFrame.contentPhaseButton.mainButton = true
+	--frame.contentFrame.clasFilterButton:Hide()
+
+	frame.contentFrame.contentPhaseButton.texture = frame.contentFrame.contentPhaseButton:CreateTexture(frameName.."-contentPhaseButton-texture","ARTWORK")
+	frame.contentFrame.contentPhaseButton.texture:SetAllPoints(frame.contentFrame.contentPhaseButton)
+	frame.contentFrame.contentPhaseButton.texture:SetTexture(AtlasLoot.Data.ContentPhase:GetActivePhaseTexture())
+
+	ContentPhaseButton_Refresh(frame.contentFrame.contentPhaseButton)
+
 	self.frame = frame
 
 	GUI.RefreshMainFrame()
+	GUI:UpdateRightSelection()
 
 	self.ItemFrame:Create()
 	-- Set itemframe as start frame
@@ -1240,6 +1397,26 @@ function GUI:Create()
 	--self.SoundFrame:Create()
 
 	GUI.RefreshVersionUpdate()
+end
+
+local RightSelectionLastDiffEntrys = true
+function GUI:UpdateRightSelection(diffEntrys)
+	if RightSelectionLastDiffEntrys == diffEntrys then return end
+	local frame = GUI.frame
+	if not frame then return end
+
+	diffEntrys = diffEntrys or RIGHT_SELECTION_ENTRYS.DIFF_MIN
+	if diffEntrys > RIGHT_SELECTION_ENTRYS.DIFF_MAX then
+		diffEntrys = RIGHT_SELECTION_ENTRYS.DIFF_MAX
+	elseif diffEntrys < RIGHT_SELECTION_ENTRYS.DIFF_MIN then
+		diffEntrys = RIGHT_SELECTION_ENTRYS.DIFF_MIN
+	end
+	local bossEntrys = RIGHT_SELECTION_ENTRYS.BOSS_MAX - diffEntrys
+
+	frame.boss:SetNumEntrys(bossEntrys)
+	frame.difficulty:SetNumEntrys(diffEntrys)
+
+	RightSelectionLastDiffEntrys = diffEntrys
 end
 
 function GUI:ForceUpdate()
@@ -1309,6 +1486,10 @@ function GUI.RefreshVersionUpdate()
 	end
 end
 
+function GUI.RefreshButtons()
+	ContentPhaseButton_Refresh()
+end
+
 -- ################################
 -- Option functions
 -- ################################
@@ -1353,7 +1534,7 @@ function GUI.RefreshMainFrame()
 	frame:SetBackdropColor(db.mainFrame.bgColor.r, db.mainFrame.bgColor.g, db.mainFrame.bgColor.b, db.mainFrame.bgColor.a)
 	frame.titleFrame:SetBackdropColor(db.mainFrame.title.bgColor.r, db.mainFrame.title.bgColor.g, db.mainFrame.title.bgColor.b, db.mainFrame.title.bgColor.a)
 	GUI.RefreshFonts("title")
-	UpdateGameVersionTexture()
+	GameVersionSelect_UpdateVersionTexture()
 
 	frame:SetScale(db.mainFrame.scale)
 end

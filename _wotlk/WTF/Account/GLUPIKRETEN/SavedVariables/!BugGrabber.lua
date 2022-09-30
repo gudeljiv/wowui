@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 6124,
+	["session"] = 6142,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3315,26 +3315,20 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [424]
 		{
-			["message"] = "(null)",
-			["time"] = "2022/03/09 13:39:43",
-			["session"] = 6107,
-			["counter"] = 88,
-		}, -- [425]
-		{
 			["message"] = "[string \"PosessionBar:Hide()\"]:1: attempt to index global 'PosessionBar' (a nil value)",
 			["time"] = "2022/09/29 13:55:16",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "[string \"PosessionBar:Hide()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2977: in function <Interface\\FrameXML\\ChatFrame.lua:2970>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 6112,
 			["counter"] = 1,
-		}, -- [426]
+		}, -- [425]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'unitscan' tried to call the protected function 'UNKNOWN()'.",
 			["time"] = "2022/09/25 11:24:28",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `TargetUnit'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:42: in function `target'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:273: in function `UPDATE'\n[string \"@Interface\\AddOns\\unitscan\\unitscan-v3.0.0.lua\"]:3: in function <Interface\\AddOns\\unitscan\\unitscan.lua:3>",
 			["session"] = 6116,
 			["counter"] = 5,
-		}, -- [427]
+		}, -- [426]
 		{
 			["message"] = "...\\LibClassicSwingTimerAPI\\LibClassicSwingTimerAPI-8.lua:153: attempt to index field 'mainTimer' (a nil value)",
 			["time"] = "2022/09/29 12:07:47",
@@ -3342,14 +3336,14 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\LibClassicSwingTimerAPI\\LibClassicSwingTimerAPI-8.lua\"]:153: in function `SwingEnd'\n[string \"@Interface\\AddOns\\LibClassicSwingTimerAPI\\LibClassicSwingTimerAPI-8.lua\"]:97: in function <...\\LibClassicSwingTimerAPI\\LibClassicSwingTimerAPI.lua:96>\n[string \"@Interface\\SharedXML\\C_TimerAugment.lua\"]:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
 			["session"] = 6117,
 			["counter"] = 3,
-		}, -- [428]
+		}, -- [427]
 		{
 			["message"] = "Lua error in aura 'layer': Custom Text Function\nWeakAuras Version: 4.1.2\nAura Version: 1.0.1\n[string \"return function()...\"]:4: attempt to index field 'NWB' (a nil value)",
 			["time"] = "2022/09/29 16:17:58",
 			["stack"] = "[string \"return function()\n    if not aura_env.last or aura_env.last < GetTime() - 10 then\n        aura_env.last = GetTime()\n        if aura_env.NWB.currentLayer > 0 then\n            aura_env.layer = \"Layer \" .. aura_env.NWB.currentLayer\n        else\n            aura_env.layer = \"Mouseover NPC\"\n        end\n    end\n    return aura_env.layer\nend\"]:4: in function <[string \"return function()...\"]:1>\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:4267: in function `RunCustomTextFunc'\n[string \"@Interface\\AddOns\\WeakAuras\\RegionTypes\\Text.lua\"]:198: in function `Update'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:4011: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:4010>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:4105: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:4067>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:4206: in function `UpdatedTriggerState'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:3950: in function `UpdateFakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:3923: in function `FakeStatesFor'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:2878: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:2752>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-4.1.2.lua\"]:2900: in function `Add'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1863: in function `ImportPhase1'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1501: in function `ImportImpl'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update-Update.lua\"]:1470: in function <...ace\\AddOns\\WeakAurasOptions\\OptionsFrames\\Update.lua:1469>",
 			["session"] = 6121,
 			["counter"] = 1,
-		}, -- [429]
+		}, -- [428]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Questie' tried to call the protected function 'Questie_BaseFrame:SetHeight()'.",
 			["time"] = "2022/09/09 16:54:48",
@@ -3357,7 +3351,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `SetHeight'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua\"]:1248: in function `Update'\n[string \"@Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua\"]:356: in function `val'\n[string \"@Interface\\AddOns\\Questie\\Modules\\TaskQueue.lua\"]:8: in function <Interface\\AddOns\\Questie\\Modules\\TaskQueue.lua:6>",
 			["session"] = 6124,
 			["counter"] = 2,
-		}, -- [430]
+		}, -- [429]
 		{
 			["message"] = "Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua:2500: [string \"return not IsAltKeyPressed()\"]:1: attempt to call global 'IsAltKeyPressed' (a nil value)",
 			["time"] = "2022/09/29 18:25:59",
@@ -3365,7 +3359,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2500: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2489>",
 			["session"] = 6124,
 			["counter"] = 1,
-		}, -- [431]
+		}, -- [430]
 		{
 			["message"] = "[string \"return not IsAltKeyPressed()\"]:1: attempt to call global 'IsAltKeyPressed' (a nil value)",
 			["time"] = "2022/09/29 18:25:59",
@@ -3373,6 +3367,28 @@ BugGrabberDB = {
 			["stack"] = "[string \"return not IsAltKeyPressed()\"]:1: in function `LF_000001AD02795B60'\n[string \"Condition_MOUNTED_EXISTS_ALIVE_REACT_CURRENTSPELL_BUFFDUR_LUA\"]:9: in function `CheckFunction'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:266: in function `Check'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua\"]:756: in function <Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua:727>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2455: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2415>",
 			["session"] = 6124,
 			["counter"] = 177,
+		}, -- [431]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Addons/Questie.lua:76: attempt to call method 'SetScript' (a nil value)",
+			["time"] = "2022/09/30 09:44:08",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:101\n Debug = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:14\n Color = <table> {\n }\n Class = \"WARRIOR\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:83\n ClassColor = <table> {\n }\n Config = <table> {\n }\n Log = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:41\n hex2rgb = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:156\n Round = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:118\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:144\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:129\n}\nib = nil\nnumQuests = nil\ncount = 0\nwidth = 235\n(*temporary) = nil\n(*temporary) = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:367\n _sessionWarnings = <table> {\n }\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n DEBUG_DEVELOP = \"|cff7c83ff[DEVELOP]|r\"\n UnregisterComm = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:153\n Warning = <function> defined @Interface\\AddOns\\Questie\\Questie.lua:98\n Printf = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:69\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:409\n defaultModuleState = true\n IsEnabled = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:451\n ScheduleTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:94\n DisableModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:350\n RegisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n GetArgs = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:144\n RegisterBucketEvent = <function> defined @Interface\\AddOns\\Questie\\Libs\\AceBucket-3.0\\AceBucket-3.0.lua:184\n DEBUG_CRITICAL = \"|cff00f2e6[CRITICAL]|r\"\n SendCommMessage = <function> defined @Interface\\AddOns\\BugSack\\Libs\\AceComm-3.0\\AceComm-3.0.lua:87\n db = <table> {\n }\n UnregisterAllComm = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n SetEnabledState = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n enabledState = true\n RegisterEvent = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n IterateModules = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:437\n Colorize = <function> defined @Interface\\AddOns\\Questie\\Questie.lua:38\n OnInitialize = <function> defined @Interface\\AddOns\\Questie\\Questie.lua:23\n NewModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:235\n GetClassColor = <function> defined @Interface\\AddOns\\Questie\\Questie.lua:68\n GetModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:210\n IsClassic = false\n defaultModuleLibraries = <table> {\n }\n TimeLeft = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:172\n UnregisterChatCommand = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:111\n ScheduleRepeatingTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:129\n CancelAllTimers = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:160\n GetName = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:279\n IsEra = false\n name = \"Questie\"\n RegisterBucketMessage = <function> defined @Interface\\AddOns\\Questie\\Libs\\AceBucket-3.0\\AceBucket-3.0.lua:200\n orderedModules = <table> {\n }\n Error = <function> defined @Interface\\AddOns\\Questie\\Questie.lua:",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Addons/Questie.lua\"]:76: in main chunk",
+			["session"] = 6127,
+			["counter"] = 1,
 		}, -- [432]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Addons/Questie.lua:76: attempt to call method 'HookScript' (a nil value)",
+			["time"] = "2022/09/30 09:45:16",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:101\n Debug = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:14\n Color = <table> {\n }\n Class = \"WARRIOR\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:83\n ClassColor = <table> {\n }\n Config = <table> {\n }\n Log = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:41\n hex2rgb = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:156\n Round = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:118\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:144\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:129\n}\nib = nil\nnumQuests = nil\ncount = 0\nwidth = 235\n(*temporary) = nil\n(*temporary) = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:367\n _sessionWarnings = <table> {\n }\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n DEBUG_DEVELOP = \"|cff7c83ff[DEVELOP]|r\"\n UnregisterComm = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:153\n Warning = <function> defined @Interface\\AddOns\\Questie\\Questie.lua:98\n Printf = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:69\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:409\n defaultModuleState = true\n IsEnabled = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:451\n ScheduleTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:94\n DisableModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:350\n RegisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n GetArgs = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:144\n RegisterBucketEvent = <function> defined @Interface\\AddOns\\Questie\\Libs\\AceBucket-3.0\\AceBucket-3.0.lua:184\n DEBUG_CRITICAL = \"|cff00f2e6[CRITICAL]|r\"\n SendCommMessage = <function> defined @Interface\\AddOns\\BugSack\\Libs\\AceComm-3.0\\AceComm-3.0.lua:87\n db = <table> {\n }\n UnregisterAllComm = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n SetEnabledState = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n enabledState = true\n RegisterEvent = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n IterateModules = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:437\n Colorize = <function> defined @Interface\\AddOns\\Questie\\Questie.lua:38\n OnInitialize = <function> defined @Interface\\AddOns\\Questie\\Questie.lua:23\n NewModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:235\n GetClassColor = <function> defined @Interface\\AddOns\\Questie\\Questie.lua:68\n GetModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:210\n IsClassic = false\n defaultModuleLibraries = <table> {\n }\n TimeLeft = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:172\n UnregisterChatCommand = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:111\n ScheduleRepeatingTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:129\n CancelAllTimers = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:160\n GetName = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:279\n IsEra = false\n name = \"Questie\"\n RegisterBucketMessage = <function> defined @Interface\\AddOns\\Questie\\Libs\\AceBucket-3.0\\AceBucket-3.0.lua:200\n orderedModules = <table> {\n }\n Error = <function> defined @Interface\\AddOns\\Questie\\Questie.lua:",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Addons/Questie.lua\"]:76: in main chunk",
+			["session"] = 6128,
+			["counter"] = 1,
+		}, -- [433]
+		{
+			["message"] = "(null)",
+			["time"] = "2022/03/09 13:39:43",
+			["session"] = 6128,
+			["counter"] = 94,
+		}, -- [434]
 	},
 }

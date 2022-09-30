@@ -189,6 +189,10 @@ NIT.companionCreatures = {
 	[17255] = "Hippogryph Hatchling",
 	[25109] = "Rocket Chicken",
 	[27914] = "Ethereal Soul-Trader",
+	[194870] = "Pebble",
+	[194795] = "Fishspeaker Irtusk",
+	[32641] = "Drix Blackwrench", --Tundra mount.
+	[32642] = "Mojodishu", --Tundra mount.
 }
 
 NIT.critterCreatures = {

@@ -21,6 +21,7 @@ Button.API = API
 local AL = AtlasLoot.Locales
 
 local GetAlTooltip = AtlasLoot.Tooltip.GetTooltip
+local DEFAULT_BACKGROUND_COLOR = {0.82, 0.82, 0.82, 0.4}
 
 -- lua
 local assert, type, tonumber, tostring = assert, type, tonumber, tostring
@@ -33,8 +34,11 @@ local CreateFrame = CreateFrame
 -- UnitFactionGroup("player")		"Alliance", "Horde", "Neutral" or nil.
 -- :SetAtlas()
 local WOW_HEAD_LINK, WOW_HEAD_LINK_LOC
-if AtlasLoot:GetGameVersion() == 2 then
+if AtlasLoot:GetGameVersion() == AtlasLoot.BC_VERSION_NUM then
 	WOW_HEAD_LINK, WOW_HEAD_LINK_LOC = "https://tbc.wowhead.com/%s=%d", "https://%s.tbc.wowhead.com/%s=%d"
+elseif AtlasLoot:GetGameVersion() == AtlasLoot.WRATH_VERSION_NUM then
+	--WOW_HEAD_LINK, WOW_HEAD_LINK_LOC = "https://wotlk.wowhead.com/%s=%d", "https://%s.wotlk.wowhead.com/%s=%d"
+	WOW_HEAD_LINK, WOW_HEAD_LINK_LOC = "https://www.wowhead.com/wotlk/%s=%d", "https://%s.wowhead.com/wotlk/%s=%d"
 else
 	WOW_HEAD_LINK, WOW_HEAD_LINK_LOC = "https://classic.wowhead.com/%s=%d", "https://%s.classic.wowhead.com/%s=%d"
 end
@@ -51,7 +55,7 @@ local LOOT_BORDER_BY_QUALITY_AL = {}
 local BUTTON_COUNT = 0
 local SEC_BUTTON_COUNT = 0
 local button_types, extra_button_types, button_types_index, extra_button_types_index = {}, {}, {}, {}
-local STANDART_TABLE = { "Name", "Description" }
+local STANDART_TABLE = { "Name", "Description", "Extra" }
 local STANDART_FORMAT_TABLE = { "Item", "Item" }
 for i = 1,#STANDART_TABLE do STANDART_FORMAT_TABLE[#STANDART_FORMAT_TABLE+1] = STANDART_TABLE[i] end
 
@@ -177,8 +181,35 @@ local function Button_Overlay_SetQualityBorder(self, qualityID)
 	else
 		self:SetDesaturated(false)
 	end
+	self:Show()
 end
 Button.Button_Overlay_SetQualityBorder = Button_Overlay_SetQualityBorder
+
+local function Button_Overlay_SetAchievementBorder(self, set, isGuildAc)
+	if not set then
+		self:SetTexCoord(0,1,0,1)
+		self:SetPoint("TOPLEFT", self.icon, "TOPLEFT")
+		self:SetPoint("BOTTOMRIGHT", self.icon, "BOTTOMRIGHT")
+		return
+	end
+
+	if isGuildAc then
+		self:SetTexture(452110)
+		self:SetTexCoord(0.25976563, 0.40820313, 0.50000000, 0.64453125)
+	else
+		self:SetTexture(130656)
+		self:SetTexCoord(0, 0.5625, 0, 0.5625)
+	end
+
+	local resize = ((self.icon:GetHeight() * 1.2) - self.icon:GetHeight()) / 2
+	self:SetPoint("TOPLEFT", self.icon, "TOPLEFT", -resize, resize)
+	self:SetPoint("BOTTOMRIGHT", self.icon, "BOTTOMRIGHT", resize, -resize)
+
+	self:SetSize(self.icon:GetWidth()*1.2, self.icon:GetHeight()*1.2)
+	self:Show()
+end
+Button.Button_Overlay_SetAchievementBorder = Button_Overlay_SetAchievementBorder
+
 
 --/run AtlasLoot.Button:Create():SetContentTable({ 1, 104939 })
 function Button:Create()
@@ -197,6 +228,12 @@ function Button:Create()
 	button:SetScript("OnClick", Button_OnClick)
 	button:SetScript("OnMouseWheel", Button_OnMouseWheel)
 
+	-- background
+	button.background = button:CreateTexture(buttonName.."_background", "BACKGROUND")
+	button.background:SetAllPoints(button)
+	button.background:SetColorTexture(unpack(DEFAULT_BACKGROUND_COLOR))
+	button.background:Hide()
+
 	-- highlight Background
 	button.highlightBg = button:CreateTexture(buttonName.."_highlightBg")
 	button.highlightBg:SetPoint("TOPLEFT", button, "TOPLEFT", 0, 0)
@@ -207,6 +244,7 @@ function Button:Create()
 
 	-- Icon <texture>
 	button.icon = button:CreateTexture(buttonName.."_icon")
+	button.icon:SetDrawLayer("ARTWORK", 0)
 	button.icon:SetPoint("TOPLEFT", button, "TOPLEFT", 1, -1)
 	button.icon:SetHeight(26)
 	button.icon:SetWidth(26)
@@ -230,31 +268,35 @@ function Button:Create()
 	]]--
 
 	-- secButtonTexture <texture>
-	button.overlay = button:CreateTexture(buttonName.."_overlay", "OVERLAY")
+	button.overlay = button:CreateTexture(buttonName.."_overlay")
+	button.overlay:SetDrawLayer(button.icon:GetDrawLayer(), 2)
 	button.overlay:SetPoint("TOPLEFT", button.icon, "TOPLEFT")
 	button.overlay:SetPoint("BOTTOMRIGHT", button.icon, "BOTTOMRIGHT")
 	button.overlay:Hide()
+	button.overlay.icon = button.icon
 	button.overlay.SetQualityBorder = Button_Overlay_SetQualityBorder
+	button.overlay.SetAchievementBorder = Button_Overlay_SetAchievementBorder
 
-	button.completed = button:CreateTexture(buttonName.."_completed", "OVERLAY")
+	button.completed = button:CreateTexture(buttonName.."_completed")
+	button.completed:SetDrawLayer(button.icon:GetDrawLayer(), 1)
 	button.completed:SetPoint("BOTTOMRIGHT", button.icon)
 	button.completed:SetHeight(20)
 	button.completed:SetWidth(20)
 	button.completed:SetTexture("Interface\\RaidFrame\\ReadyCheck-Ready")
 	button.completed:Hide()
 
-	button.phaseIndicator = button:CreateTexture(buttonName.."_phaseIndicator", "OVERLAY")
+	button.phaseIndicator = button:CreateTexture(buttonName.."_phaseIndicator")
+	button.phaseIndicator:SetDrawLayer(button.icon:GetDrawLayer(), 3)
 	button.phaseIndicator:SetPoint("TOPLEFT", button.icon)
 	button.phaseIndicator:SetPoint("BOTTOMRIGHT", button.icon)
-	button.phaseIndicator:SetDrawLayer(button.overlay:GetDrawLayer(), 1)
 	button.phaseIndicator:Hide()
 
-	button.favourite = button:CreateTexture(buttonName.."_favourite", "OVERLAY")
+	button.favourite = button:CreateTexture(buttonName.."_favourite")
+	button.favourite:SetDrawLayer(button.icon:GetDrawLayer(), 3)
 	button.favourite:SetPoint("TOPLEFT", button.icon, -2, 2)
 	button.favourite:SetHeight(20)
 	button.favourite:SetWidth(20)
 	button.favourite:SetAtlas("VignetteKill")
-	button.favourite:SetDrawLayer(button.overlay:GetDrawLayer(), 2)
 	button.favourite:Hide()
 
 	-- ItemName <FontString>
@@ -262,7 +304,7 @@ function Button:Create()
 	button.name:SetPoint("TOPLEFT", button.icon, "TOPRIGHT", 3, 0)
 	button.name:SetJustifyH("LEFT")
 	button.name:SetText("")
-	button.name:SetWidth(205)
+	button.name:SetWidth(230)
 	button.name:SetHeight(12)
 	button.name.Ori_SetText = button.name.SetText
 	button.name.SetText = Button_ForceSetText
@@ -272,7 +314,7 @@ function Button:Create()
 	button.extra:SetPoint("TOPLEFT", button.name, "BOTTOMLEFT", 0, -1)
 	button.extra:SetJustifyH("LEFT")
 	button.extra:SetText("")
-	button.extra:SetWidth(205)
+	button.extra:SetWidth(230)
 	button.extra:SetHeight(10)
 	button.extra:SetTextColor(1, 1, 1, 1)
 	button.extra.Ori_SetText = button.extra.SetText
@@ -280,6 +322,7 @@ function Button:Create()
 
 	-- counter
 	button.count = button:CreateFontString(buttonName.."_count", "ARTWORK", "AtlasLoot_ItemAmountFont")
+	button.count:SetDrawLayer(button.icon:GetDrawLayer(), 1)
 	button.count:SetPoint("BOTTOMRIGHT", button.icon, "BOTTOMRIGHT", -1, 1)
 	button.count:SetJustifyH("RIGHT")
 	button.count:SetHeight(15)
@@ -305,6 +348,7 @@ function Button:Create()
 
 	-- secButtonTexture <texture>
 	button.secButton.icon = button.secButton:CreateTexture(buttonName.."_secButtonIcon", button.secButton)
+	button.secButton.icon:SetDrawLayer("ARTWORK", 0)
 	button.secButton.icon:SetAllPoints(button.secButton)
 	button.secButton.icon:SetTexture("Interface\\Icons\\INV_Misc_QuestionMark")
 
@@ -317,6 +361,7 @@ function Button:Create()
 
 	-- secButtonMini <texture>
 	button.secButton.mini = button.secButton:CreateTexture(buttonName.."_secButtonMini")
+	button.secButton.mini:SetDrawLayer(button.secButton.icon:GetDrawLayer(), 1)
 	button.secButton.mini:SetPoint("TOPRIGHT", button.secButton.icon, "TOPRIGHT", 0, 0)
 	button.secButton.mini:SetHeight(13)
 	button.secButton.mini:SetWidth(13)
@@ -324,13 +369,17 @@ function Button:Create()
 	button.secButton.mini:Hide()
 
 	-- secButtonOverlay <texture>
-	button.secButton.overlay = button.secButton:CreateTexture(buttonName.."_secButtonOverlay", "OVERLAY")
+	button.secButton.overlay = button.secButton:CreateTexture(buttonName.."_secButtonOverlay")
+	button.secButton.overlay:SetDrawLayer(button.secButton.icon:GetDrawLayer(), 2)
 	button.secButton.overlay:SetPoint("TOPLEFT", button.secButton.icon, "TOPLEFT")
 	button.secButton.overlay:SetPoint("BOTTOMRIGHT", button.secButton.icon, "BOTTOMRIGHT")
 	button.secButton.overlay:Hide()
+	button.secButton.overlay.icon = button.secButton.icon
 	button.secButton.overlay.SetQualityBorder = Button_Overlay_SetQualityBorder
+	button.secButton.overlay.SetAchievementBorder = Button_Overlay_SetAchievementBorder
 
-	button.secButton.completed = button.secButton:CreateTexture(buttonName.."_secCompleted", "OVERLAY")
+	button.secButton.completed = button.secButton:CreateTexture(buttonName.."_secCompleted")
+	button.secButton.completed:SetDrawLayer(button.secButton.icon:GetDrawLayer(), 1)
 	button.secButton.completed:SetPoint("BOTTOMRIGHT", button.secButton.icon)
 	button.secButton.completed:SetHeight(20)
 	button.secButton.completed:SetWidth(20)
@@ -338,6 +387,7 @@ function Button:Create()
 	button.secButton.completed:Hide()
 
 	button.secButton.count = button.secButton:CreateFontString(buttonName.."_secCount", "ARTWORK", "AtlasLoot_ItemAmountFont")
+	button.secButton.count:SetDrawLayer(button.secButton.overlay:GetDrawLayer(), 1)
 	button.secButton.count:SetPoint("BOTTOMRIGHT", button.secButton.icon, "BOTTOMRIGHT", -1, 1)
 	button.secButton.count:SetJustifyH("RIGHT")
 	button.secButton.count:SetHeight(15)
@@ -345,24 +395,25 @@ function Button:Create()
 	button.secButton.count:Hide()
 
 	button.secButton.pvp = button.secButton:CreateTexture(buttonName.."_secButtonPvp")
+	button.secButton.pvp:SetDrawLayer(button.secButton.icon:GetDrawLayer(), 1)
 	button.secButton.pvp:SetPoint("BOTTOMRIGHT", button.secButton.icon, "BOTTOMRIGHT", -3, 3)
 	button.secButton.pvp:SetHeight(13)
 	button.secButton.pvp:SetWidth(13)
 	button.secButton.pvp:SetDrawLayer(button.secButton.icon:GetDrawLayer(), 1)
 	button.secButton.pvp:Hide()
 
-	button.secButton.phaseIndicator = button.secButton:CreateTexture(buttonName.."_phaseIndicator", "OVERLAY")
+	button.secButton.phaseIndicator = button.secButton:CreateTexture(buttonName.."_phaseIndicator")
+	button.secButton.phaseIndicator:SetDrawLayer(button.secButton.icon:GetDrawLayer(), 3)
 	button.secButton.phaseIndicator:SetPoint("TOPLEFT", button.secButton.icon)
 	button.secButton.phaseIndicator:SetPoint("BOTTOMRIGHT", button.secButton.icon)
-	button.secButton.phaseIndicator:SetDrawLayer(button.secButton.overlay:GetDrawLayer(), 1)
 	button.secButton.phaseIndicator:Hide()
 
 	button.secButton.favourite = button.secButton:CreateTexture(buttonName.."_favourite", "OVERLAY")
+	button.secButton.favourite:SetDrawLayer(button.secButton.icon:GetDrawLayer(), 3)
 	button.secButton.favourite:SetPoint("TOPLEFT", button.secButton.icon, -2, 2)
 	button.secButton.favourite:SetHeight(20)
 	button.secButton.favourite:SetWidth(20)
 	button.secButton.favourite:SetAtlas("VignetteKill")
-	button.secButton.favourite:SetDrawLayer(button.secButton.overlay:GetDrawLayer(), 2)
 	button.secButton.favourite:Hide()
 
 	-- factionIcon
@@ -381,6 +432,8 @@ function Button:Create()
 		button[k] = v
 	end
 
+	button:Clear(true)
+
 	return button
 end
 
@@ -392,7 +445,8 @@ function Button:CreateSecOnly(frame)
 	local button = frame or CreateFrame("FRAME", buttonName.."_container")
 
 	button.secButton = CreateFrame("BUTTON", buttonName, button)
-	button.secButton:SetAllPoints(button)
+	button.secButton:SetPoint("TOPLEFT", button, "TOPLEFT", 1, -1)
+	button.secButton:SetPoint("BOTTOMRIGHT", button, "BOTTOMRIGHT", -1, 1)
 	button.secButton:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD")
 	button.secButton.OriSetNormalTexture = button.secButton.SetNormalTexture
 	button.secButton.type = "secButton"	-- now we can use button functions ;)
@@ -405,6 +459,7 @@ function Button:CreateSecOnly(frame)
 
 	-- secButtonTexture <texture>
 	button.secButton.icon = button.secButton:CreateTexture(buttonName.."_secButtonIcon", button.secButton)
+	button.secButton.icon:SetDrawLayer("ARTWORK", 0)
 	button.secButton.icon:SetAllPoints(button.secButton)
 	button.secButton.icon:SetTexture("Interface\\Icons\\INV_Misc_QuestionMark")
 
@@ -417,6 +472,7 @@ function Button:CreateSecOnly(frame)
 
 	-- secButtonMini <texture>
 	button.secButton.mini = button.secButton:CreateTexture(buttonName.."_secButtonMini")
+	button.secButton.mini:SetDrawLayer(button.secButton.icon:GetDrawLayer(), 1)
 	button.secButton.mini:SetPoint("TOPRIGHT", button.secButton.icon, "TOPRIGHT", 0, 0)
 	button.secButton.mini:SetHeight(13)
 	button.secButton.mini:SetWidth(13)
@@ -424,38 +480,42 @@ function Button:CreateSecOnly(frame)
 	button.secButton.mini:Hide()
 
 	-- secButtonOverlay <texture>
-	button.secButton.overlay = button.secButton:CreateTexture(buttonName.."_secButtonOverlay", "OVERLAY")
+	button.secButton.overlay = button.secButton:CreateTexture(buttonName.."_secButtonOverlay")
+	button.secButton.overlay:SetDrawLayer(button.secButton.icon:GetDrawLayer(), 2)
 	button.secButton.overlay:SetPoint("TOPLEFT", button.secButton.icon, "TOPLEFT")
 	button.secButton.overlay:SetPoint("BOTTOMRIGHT", button.secButton.icon, "BOTTOMRIGHT")
 	button.secButton.overlay:Hide()
+	button.secButton.overlay.icon = button
 	button.secButton.overlay.SetQualityBorder = Button_Overlay_SetQualityBorder
+	button.secButton.overlay.SetAchievementBorder = Button_Overlay_SetAchievementBorder
 
 	button.secButton.count = button.secButton:CreateFontString(buttonName.."_secCount", "ARTWORK", "AtlasLoot_ItemAmountFont")
-	button.secButton.count:SetPoint("BOTTOMRIGHT", button.secButton.icon, "BOTTOMRIGHT", -1, 1)
+	button.secButton.count:SetDrawLayer(button.secButton.icon:GetDrawLayer(), 1)
+	button.secButton.count:SetPoint("BOTTOMRIGHT", button.secButton.icon, "BOTTOMRIGHT", -3, 2)
 	button.secButton.count:SetJustifyH("RIGHT")
 	button.secButton.count:SetHeight(15)
 	button.secButton.count:SetText(15)
 	button.secButton.count:Hide()
 
 	button.secButton.pvp = button.secButton:CreateTexture(buttonName.."_secButtonPvp")
+	button.secButton.pvp:SetDrawLayer(button.secButton.icon:GetDrawLayer(), 1)
 	button.secButton.pvp:SetPoint("BOTTOMRIGHT", button.secButton.icon, "BOTTOMRIGHT", -3, 3)
 	button.secButton.pvp:SetHeight(13)
 	button.secButton.pvp:SetWidth(13)
-	button.secButton.pvp:SetDrawLayer(button.secButton.icon:GetDrawLayer(), 1)
 	button.secButton.pvp:Hide()
 
-	button.secButton.phaseIndicator = button.secButton:CreateTexture(buttonName.."_phaseIndicator", "OVERLAY")
+	button.secButton.phaseIndicator = button.secButton:CreateTexture(buttonName.."_phaseIndicator")
+	button.secButton.phaseIndicator:SetDrawLayer(button.secButton.overlay:GetDrawLayer(), 3)
 	button.secButton.phaseIndicator:SetPoint("TOPLEFT", button.secButton.icon)
 	button.secButton.phaseIndicator:SetPoint("BOTTOMRIGHT", button.secButton.icon)
-	button.secButton.phaseIndicator:SetDrawLayer(button.secButton.overlay:GetDrawLayer(), 1)
 	button.secButton.phaseIndicator:Hide()
 
-	button.secButton.favourite = button.secButton:CreateTexture(buttonName.."_favourite", "OVERLAY")
+	button.secButton.favourite = button.secButton:CreateTexture(buttonName.."_favourite")
+	button.secButton.favourite:SetDrawLayer(button.secButton.overlay:GetDrawLayer(), 3)
 	button.secButton.favourite:SetPoint("TOPLEFT", button.secButton.icon, -2, 2)
 	button.secButton.favourite:SetHeight(18)
 	button.secButton.favourite:SetWidth(18)
 	button.secButton.favourite:SetAtlas("VignetteKill")
-	button.secButton.favourite:SetDrawLayer(button.secButton.overlay:GetDrawLayer(), 2)
 	button.secButton.favourite:Hide()
 
 	button.secButton.SetNormalTexture = Button_SetNormalTexture
@@ -465,6 +525,8 @@ function Button:CreateSecOnly(frame)
 	for k,v in pairs(Proto) do
 		button[k] = v
 	end
+
+	button:Clear(true)
 
 	return button
 end
@@ -476,8 +538,8 @@ API.Button_OnClick = Button_OnClick
 --################################
 -- Button Protos
 --################################
-function Proto:Clear()
-	if self.IsShown and not self:IsShown() then return end
+function Proto:Clear(force)
+	if force or (self.IsShown and not self:IsShown()) then return end
 	if self.__atlaslootinfo.type and self.__atlaslootinfo.type[1] and button_types[self.__atlaslootinfo.type[1]].OnClear then
 		button_types[self.__atlaslootinfo.type[1]].OnClear(self)
 	end
@@ -597,6 +659,20 @@ function Proto:SetContentTable(tab, formatTab, setOnlySec)
 		end
 	end
 
+	-- check if background is needed
+	if self.background and tab.setBackground then
+		if tab.setBackground == true then tab.setBackground = DEFAULT_BACKGROUND_COLOR end
+		if not tab.setBackground[4] then tab.setBackground[4] = DEFAULT_BACKGROUND_COLOR[4] end
+		if self.background.bgTable == tab.setBackground then
+			-- do nothing
+		else
+			self.background:SetColorTexture(unpack(tab.setBackground))
+		end
+		self.background:Show()
+	elseif self.background then
+		self.background:Hide()
+	end
+
 	-- amount setup
 	if tab[ATLASLOOT_IT_AMOUNT1] then
 		self.count:SetText(tab[ATLASLOOT_IT_AMOUNT1])
@@ -619,7 +695,7 @@ function Proto:SetContentTable(tab, formatTab, setOnlySec)
 
 		if formatType == "Name" and curContent then	-- force namechange
 			self.name:SetText(curContent, true)
-		elseif formatType == "Description" and curContent then -- force description change
+		elseif formatType == "Description" and curContent and (not buttonType or not buttonType.descReplaceForceDisabled) then -- force description change .descReplaceForceDisabled
 			self.extra:SetText(curContent, true)
 		elseif type(curContent) == "string" and not button_types[curContent] then
 			local found = false
@@ -950,6 +1026,11 @@ end
 function Button:FormatItemTableType(tab)
 	assert(tab and type(tab) == "table", "tab must be a table.")
 
+end
+
+function Button:DisableDescriptionReplaceForce(typ, state)
+	assert(button_types[typ], typ.." type not found")
+	button_types[typ].descReplaceForceDisabled = state
 end
 
 --################################
