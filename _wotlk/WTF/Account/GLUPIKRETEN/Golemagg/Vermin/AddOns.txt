@@ -114,7 +114,7 @@ TrackingSwitcher: enabled
 TrinketMenu: disabled
 AuctionFaster: disabled
 aux-addon: disabled
-TradeSkillMaster_AppHelper: disabled
+TradeSkillMaster_AppHelper: enabled
 D4KiR Missing Power: disabled
 TrackEverything: enabled
 Kui_Media: disabled

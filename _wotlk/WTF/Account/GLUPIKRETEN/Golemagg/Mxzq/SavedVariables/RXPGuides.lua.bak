@@ -1,11 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[8] = {
-			[1900465266] = true,
+		[34] = {
 		},
 	},
-	["currentStep"] = 8,
+	["currentStep"] = 34,
 	["phase"] = 6,
 	["currentGuideGroup"] = "Horde 70-80",
 	["flightPaths"] = {
@@ -48,7 +47,17 @@ RXPCData = {
 	["currentGuideName"] = "70-72 Borean Tundra",
 	["stepSkip"] = {
 		true, -- [1]
+		[24] = true,
+		[33] = true,
+		[28] = true,
+		[15] = true,
+		[16] = true,
+		[32] = true,
 		[5] = true,
+		[19] = true,
+		[11] = true,
+		[31] = true,
+		[18] = true,
 	},
 	["frameHeight"] = 125.000129699707,
 	["GA"] = false,
@@ -214,10 +223,10 @@ RXPCComms = {
 					["class"] = "SHAMAN",
 					["xp"] = 1376,
 				},
-				["Johnylecitel"] = {
-					["timePlayed"] = 883.7549999998882,
-					["class"] = "PRIEST",
-					["xp"] = 1268,
+				["Rompido"] = {
+					["timePlayed"] = 71.13700000010431,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 1376,
 				},
 				["Goldenarm"] = {
 					["timePlayed"] = 883.7549999998882,
@@ -229,10 +238,10 @@ RXPCComms = {
 					["class"] = "PALADIN",
 					["xp"] = 500,
 				},
-				["Rompido"] = {
-					["timePlayed"] = 71.13700000010431,
-					["class"] = "DEATHKNIGHT",
-					["xp"] = 1376,
+				["Johnylecitel"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "PRIEST",
+					["xp"] = 1268,
 				},
 				["Nabito"] = {
 					["timePlayed"] = 85.72200000006706,

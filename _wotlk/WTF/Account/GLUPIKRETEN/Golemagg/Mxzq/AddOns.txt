@@ -178,3 +178,4 @@ DBM-Naxx: enabled
 DBM-Onyxia: enabled
 DBM-MC: enabled
 DBM-ZG: enabled
+TradeSkillMaster_AppHelper: enabled

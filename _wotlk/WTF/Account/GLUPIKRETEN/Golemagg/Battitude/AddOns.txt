@@ -189,3 +189,4 @@ BigWigs_AhnQirajTemple: disabled
 BigWigs_BlackTemple: disabled
 BigWigs_BlackwingLair: disabled
 Pawn: enabled
+TradeSkillMaster_AppHelper: enabled

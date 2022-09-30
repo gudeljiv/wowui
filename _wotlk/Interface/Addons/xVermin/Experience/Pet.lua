@@ -17,13 +17,13 @@ PetXP.XPbar:SetStatusBarTexture('Interface\\AddOns\\xVermin\\Media\\statusbarTex
 PetXP.XPbar:SetAlpha(0)
 
 PetXP.XPbar.Value = PetXP.XPbar:CreateFontString(nil, 'ARTWORK')
-PetXP.XPbar.Value:SetFont('Fonts\\ARIALN.ttf', 14, 'THINOUTLINE')
+PetXP.XPbar.Value:SetFont('Fonts\\ARIALN.ttf', 12, 'THINOUTLINE')
 PetXP.XPbar.Value:SetShadowOffset(0, 0)
 PetXP.XPbar.Value:SetPoint('LEFT', PetXP.XPbar, 'LEFT', 2, 0)
 PetXP.XPbar.Value:SetVertexColor(1, 1, 1)
 
 PetXP.XPbar.UntilLevel = PetXP.XPbar:CreateFontString(nil, 'ARTWORK')
-PetXP.XPbar.UntilLevel:SetFont('Fonts\\ARIALN.ttf', 14, 'THINOUTLINE')
+PetXP.XPbar.UntilLevel:SetFont('Fonts\\ARIALN.ttf', 12, 'THINOUTLINE')
 PetXP.XPbar.UntilLevel:SetShadowOffset(0, 0)
 PetXP.XPbar.UntilLevel:SetPoint('RIGHT', PetXP.XPbar, 'RIGHT', -2, 0)
 PetXP.XPbar.UntilLevel:SetVertexColor(1, 1, 1)

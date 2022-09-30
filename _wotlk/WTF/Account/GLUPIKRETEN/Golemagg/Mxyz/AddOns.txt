@@ -173,3 +173,4 @@ Details_Streamer: enabled
 Details_Vanguard: enabled
 FarmHud_TrailPath: enabled
 Pawn: enabled
+TradeSkillMaster_AppHelper: enabled

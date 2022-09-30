@@ -1,14 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[34] = {
-		},
-		[31] = {
-		},
-		[33] = {
+		[12] = {
 		},
 	},
-	["currentStep"] = 34,
+	["currentStep"] = 12,
 	["phase"] = 6,
 	["currentGuideGroup"] = "Horde 70-80",
 	["flightPaths"] = {
@@ -48,18 +44,12 @@ RXPCData = {
 	["JoyousJourneys"] = true,
 	["GA"] = false,
 	["frameHeight"] = 125.000129699707,
-	["currentGuideName"] = "70-72 Borean Tundra",
+	["currentGuideName"] = "68-71 Howling Fjord",
 	["stepSkip"] = {
 		true, -- [1]
-		[24] = true,
-		[28] = true,
-		[15] = true,
-		[16] = true,
-		[32] = true,
-		[5] = true,
-		[19] = true,
-		[11] = true,
-		[18] = true,
+		[3] = true,
+		[10] = true,
+		[8] = true,
 	},
 	["SoM"] = 1,
 	["hardcore"] = false,
@@ -160,6 +150,11 @@ RXPCComms = {
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 1268,
 				},
+				["Grimtorque"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "WARRIOR",
+					["xp"] = 1838,
+				},
 				["Captorterror"] = {
 					["timePlayed"] = 89.08799999998882,
 					["class"] = "HUNTER",
@@ -185,10 +180,25 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 1268,
 				},
+				["Ylvin"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "MAGE",
+					["xp"] = 1838,
+				},
+				["Lecarde"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "PRIEST",
+					["xp"] = 1838,
+				},
 				["Haveto"] = {
 					["timePlayed"] = 1545.662000000011,
 					["class"] = "SHAMAN",
 					["xp"] = 920,
+				},
+				["Maxymilius"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "SHAMAN",
+					["xp"] = 1838,
 				},
 				["Talanjii"] = {
 					["timePlayed"] = 85.72200000006706,
@@ -240,15 +250,15 @@ RXPCComms = {
 					["class"] = "PALADIN",
 					["xp"] = 500,
 				},
-				["Johnylecitel"] = {
-					["timePlayed"] = 883.7549999998882,
-					["class"] = "PRIEST",
-					["xp"] = 1268,
-				},
 				["Rompido"] = {
 					["timePlayed"] = 71.13700000010431,
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 1376,
+				},
+				["Johnylecitel"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "PRIEST",
+					["xp"] = 1268,
 				},
 				["Jaffrost"] = {
 					["timePlayed"] = 1545.662000000011,

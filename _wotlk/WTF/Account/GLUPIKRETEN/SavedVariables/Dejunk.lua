@@ -10,8 +10,8 @@ __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
 	["itemTooltips"] = true,
 	["includePoorItems"] = true,
 	["chatMessages"] = true,
+	["autoSell"] = true,
 	["minimapIcon"] = {
 		["hide"] = true,
 	},
-	["autoSell"] = true,
 }

@@ -732,7 +732,8 @@ NeedsFoodBadly.Potion = {
 	[17351] = {id = 17351, name = 'Major Mana Draught', lvl = 45, low = 980, high = 1260, mp = true, bg = true},
 	[17348] = {id = 17348, name = 'Major Healing Draught', lvl = 45, low = 980, high = 1260, hp = true, bg = true},
 	[17349] = {id = 17349, name = 'Superior Healing Draught', lvl = 35, low = 560, high = 720, hp = true, bg = true},
-	[17352] = {id = 17352, name = 'Superior Mana Draught', lvl = 35, low = 560, high = 720, mp = true, bg = true}
+	[17352] = {id = 17352, name = 'Superior Mana Draught', lvl = 35, low = 560, high = 720, mp = true, bg = true},
+	[32905] = {id = 32905, name = 'Bottled Nethergon Vapor', lvl = 55, low = 1500, high = 2500, hp = true}
 }
 NeedsFoodBadly.Healthstone = {
 	[19004] = {id = 19004, name = 'Minor Healthstone', lvl = 10, hp = 110},

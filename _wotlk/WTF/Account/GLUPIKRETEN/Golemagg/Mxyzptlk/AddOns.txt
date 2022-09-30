@@ -161,3 +161,4 @@ DBM-Onyxia: enabled
 DBM-MC: enabled
 DBM-ZG: enabled
 Pawn: enabled
+TradeSkillMaster_AppHelper: enabled
