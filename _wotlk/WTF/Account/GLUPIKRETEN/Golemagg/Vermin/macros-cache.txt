@@ -54,7 +54,7 @@ END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast Taunt
+/cast [@mouseover,exists][]Taunt
 END
 VER 3 0000000001000013 " " "INV_MISC_QUESTIONMARK"
 #showtooltip

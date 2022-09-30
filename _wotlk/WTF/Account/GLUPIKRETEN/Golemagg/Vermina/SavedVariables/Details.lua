@@ -7,124 +7,66 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 562,
+					["combatId"] = 592,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003222,
+							["totalabsorbed"] = 0.003719,
 							["damage_from"] = {
-								["Galak Scout"] = true,
-								["Galak Wrangler"] = true,
+								["Crag Stalker"] = true,
 							},
 							["targets"] = {
-								["Galak Scout"] = 828,
-								["Galak Wrangler"] = 980,
+								["Crag Stalker"] = 832,
 							},
+							["aID"] = "4465-02BB4683",
 							["pets"] = {
 							},
 							["on_hold"] = false,
 							["classe"] = "PALADIN",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 1808.003222,
+							["total_without_pet"] = 832.003719,
+							["end_time"] = 1664458672,
 							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 832.003719,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1664443088,
 							["friendlyfire_total"] = 0,
-							["aID"] = "4465-02BB4683",
 							["nome"] = "Vermina",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 3,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 877,
+										["c_dmg"] = 258,
 										["g_amt"] = 0,
-										["n_max"] = 149,
+										["n_max"] = 159,
 										["targets"] = {
-											["Galak Scout"] = 437,
-											["Galak Wrangler"] = 725,
+											["Crag Stalker"] = 417,
 										},
-										["n_dmg"] = 285,
-										["n_min"] = 136,
+										["n_dmg"] = 159,
+										["n_min"] = 159,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 1162,
-										["c_max"] = 305,
+										["counter"] = 3,
+										["total"] = 417,
+										["c_max"] = 258,
 										["id"] = 1,
 										["r_dmg"] = 0,
+										["DODGE"] = 1,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 284,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[879] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 222,
-										["targets"] = {
-											["Galak Scout"] = 222,
-										},
-										["n_dmg"] = 222,
-										["n_min"] = 222,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 222,
-										["c_max"] = 0,
-										["id"] = 879,
-										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 258,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									},
-									[20271] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Galak Scout"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 20271,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["spellschool"] = 2,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
+									}, -- [1]
 									[10298] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -132,17 +74,17 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 19,
 										["targets"] = {
-											["Galak Scout"] = 38,
-											["Galak Wrangler"] = 56,
+											["Crag Stalker"] = 91,
 										},
-										["n_dmg"] = 94,
+										["n_dmg"] = 91,
 										["n_min"] = 18,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 94,
+										["counter"] = 6,
+										["total"] = 91,
 										["c_max"] = 0,
 										["id"] = 10298,
 										["r_dmg"] = 0,
+										["RESIST"] = 1,
 										["spellschool"] = 2,
 										["extra"] = {
 										},
@@ -159,16 +101,15 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 62,
+										["n_max"] = 64,
 										["targets"] = {
-											["Galak Scout"] = 61,
-											["Galak Wrangler"] = 62,
+											["Crag Stalker"] = 64,
 										},
-										["n_dmg"] = 123,
-										["n_min"] = 61,
+										["n_dmg"] = 64,
+										["n_min"] = 64,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 123,
+										["counter"] = 1,
+										["total"] = 64,
 										["c_max"] = 0,
 										["id"] = 20467,
 										["r_dmg"] = 0,
@@ -179,146 +120,74 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									[20424] = {
-										["c_amt"] = 0,
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 260,
 										["g_amt"] = 0,
-										["n_max"] = 70,
+										["n_max"] = 0,
 										["targets"] = {
-											["Galak Scout"] = 70,
-											["Galak Wrangler"] = 137,
+											["Crag Stalker"] = 260,
 										},
-										["n_dmg"] = 207,
-										["n_min"] = 67,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 207,
-										["c_max"] = 0,
+										["counter"] = 2,
+										["total"] = 260,
+										["c_max"] = 135,
 										["id"] = 20424,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
 										["spellschool"] = 2,
 										["extra"] = {
 										},
-										["PARRY"] = 1,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 125,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 							},
 							["grupo"] = true,
-							["total"] = 1808.003222,
 							["serial"] = "Player-4465-02BB4683",
-							["last_dps"] = 74.45551299263029,
+							["last_dps"] = 78.847964271988,
 							["custom"] = 0,
-							["last_event"] = 1664443087,
-							["damage_taken"] = 255.003222,
-							["start_time"] = 1664443063,
+							["last_event"] = 1664458671,
+							["damage_taken"] = 129.003719,
+							["start_time"] = 1664458661,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002525,
-							["damage_from"] = {
-								["Vermina"] = true,
-							},
-							["targets"] = {
-								["Vermina"] = 126,
-							},
-							["total"] = 126.002525,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 126.002525,
-							["fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1664443088,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Galak Wrangler",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 65,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Vermina"] = 126,
-										},
-										["n_dmg"] = 61,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 126,
-										["c_max"] = 65,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 65,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["aID"] = "4093",
-							["serial"] = "Creature-0-5563-1-1304-4093-0000350DCE",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1664443067,
-							["damage_taken"] = 980.002525,
-							["start_time"] = 1664443083,
-							["delay"] = 1664443067,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.005756,
+							["totalabsorbed"] = 0.003798,
+							["aID"] = "4126",
 							["damage_from"] = {
 								["Vermina"] = true,
 							},
 							["targets"] = {
 								["Vermina"] = 129,
 							},
-							["total"] = 129.005756,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
+							["end_time"] = 1664458672,
+							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 129.005756,
-							["fight_component"] = true,
+							["total_without_pet"] = 129.003798,
 							["monster"] = true,
 							["dps_started"] = false,
-							["end_time"] = 1664443088,
+							["total"] = 129.003798,
 							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
-							["nome"] = "Galak Scout",
+							["nome"] = "Crag Stalker",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -329,86 +198,59 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 28,
 										["targets"] = {
-											["Vermina"] = 56,
+											["Vermina"] = 129,
 										},
-										["n_dmg"] = 56,
-										["n_min"] = 28,
+										["n_dmg"] = 129,
+										["n_min"] = 24,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 56,
+										["counter"] = 6,
+										["total"] = 129,
 										["c_max"] = 0,
-										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["DODGE"] = 1,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["PARRY"] = 1,
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 5,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[6660] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Vermina"] = 73,
-										},
-										["n_dmg"] = 73,
-										["n_min"] = 36,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 73,
-										["c_max"] = 0,
-										["id"] = 6660,
-										["r_dmg"] = 0,
-										["MISS"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 3,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 								},
 							},
-							["aID"] = "4094",
-							["serial"] = "Creature-0-5563-1-1304-4094-00003510ED",
+							["friendlyfire"] = {
+							},
+							["serial"] = "Creature-0-5571-1-6623-4126-0000344E69",
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1664443085,
-							["damage_taken"] = 828.005756,
-							["start_time"] = 1664443071,
+							["last_event"] = 1664458671,
+							["damage_taken"] = 832.003798,
+							["start_time"] = 1664458663,
 							["delay"] = 0,
 							["tipo"] = 1,
-						}, -- [3]
+						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 562,
+					["combatId"] = 592,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["targets_overheal"] = {
+								["Vermina"] = 18,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
 							["classe"] = "PALADIN",
-							["totalover"] = 0.005582,
-							["total_without_pet"] = 72.005582,
-							["total"] = 72.005582,
+							["totalover"] = 18.006555,
+							["total_without_pet"] = 99.00655499999999,
+							["total"] = 99.00655499999999,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
@@ -416,15 +258,15 @@ _detalhes_database = {
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-02BB4683",
-							["totalabsorb"] = 0.005582,
-							["last_hps"] = 2.965267141621778,
+							["totalabsorb"] = 0.006555,
+							["last_hps"] = 9.38272886654322,
 							["targets"] = {
-								["Vermina"] = 72,
+								["Vermina"] = 99,
 							},
-							["totalover_without_pet"] = 0.005582,
-							["healing_taken"] = 72.005582,
+							["totalover_without_pet"] = 0.006555,
+							["healing_taken"] = 99.00655499999999,
 							["fight_component"] = true,
-							["end_time"] = 1664443088,
+							["end_time"] = 1664458672,
 							["healing_from"] = {
 								["Vermina"] = true,
 							},
@@ -436,48 +278,49 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
+											["Vermina"] = 18,
 										},
 										["n_max"] = 24,
 										["targets"] = {
-											["Vermina"] = 72,
+											["Vermina"] = 99,
 										},
-										["n_min"] = 24,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 72,
+										["n_min"] = 6,
+										["counter"] = 5,
+										["overheal"] = 18,
+										["total"] = 99,
 										["c_max"] = 0,
 										["id"] = 20267,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 72,
+										["n_curado"] = 99,
 										["totaldenied"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 5,
 										["absorbed"] = 0,
 									},
 								},
 							},
 							["grupo"] = true,
 							["heal_enemy_amt"] = 0,
-							["start_time"] = 1664443087,
+							["start_time"] = 1664458663,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["aID"] = "4465-02BB4683",
-							["totaldenied"] = 0.005582,
-							["delay"] = 1664443067,
-							["last_event"] = 1664443087,
+							["totaldenied"] = 0.006555,
+							["delay"] = 0,
+							["last_event"] = 1664458671,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 562,
+					["combatId"] = 592,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 562,
+					["combatId"] = 592,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -490,8 +333,8 @@ _detalhes_database = {
 										["id"] = 20185,
 										["targets"] = {
 										},
-										["uptime"] = 23,
-										["appliedamt"] = 2,
+										["uptime"] = 8,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -501,15 +344,15 @@ _detalhes_database = {
 										["id"] = 54499,
 										["targets"] = {
 										},
-										["uptime"] = 23,
-										["appliedamt"] = 2,
+										["uptime"] = 8,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
 							},
-							["buff_uptime"] = 75,
+							["buff_uptime"] = 35,
 							["aID"] = "4465-02BB4683",
 							["buff_uptime_spells"] = {
 								["tipo"] = 9,
@@ -519,7 +362,7 @@ _detalhes_database = {
 										["id"] = 19835,
 										["targets"] = {
 										},
-										["uptime"] = 25,
+										["uptime"] = 11,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -530,7 +373,18 @@ _detalhes_database = {
 										["id"] = 10298,
 										["targets"] = {
 										},
-										["uptime"] = 25,
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[34769] = {
+										["activedamt"] = 1,
+										["id"] = 34769,
+										["targets"] = {
+										},
+										["uptime"] = 2,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -541,7 +395,7 @@ _detalhes_database = {
 										["id"] = 20375,
 										["targets"] = {
 										},
-										["uptime"] = 25,
+										["uptime"] = 11,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
@@ -550,45 +404,28 @@ _detalhes_database = {
 								},
 							},
 							["fight_component"] = true,
-							["debuff_uptime"] = 46,
+							["debuff_uptime"] = 16,
 							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
-								[20424] = 4,
-								[879] = 1,
-								[20271] = 3,
+								[20271] = 1,
+								[20424] = 2,
 							},
 							["debuff_uptime_targets"] = {
 							},
 							["nome"] = "Vermina",
-							["last_event"] = 1664443088,
+							["last_event"] = 1664458672,
 							["pets"] = {
 							},
 							["classe"] = "PALADIN",
 							["serial"] = "Player-4465-02BB4683",
 							["tipo"] = 4,
 						}, -- [1]
-						{
-							["monster"] = true,
-							["nome"] = "Galak Scout",
-							["flag_original"] = 2632,
-							["spell_cast"] = {
-								[6660] = 3,
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["serial"] = "Creature-0-5563-1-1304-4094-00003510ED",
-							["aID"] = "4094",
-						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 562,
+					["combatId"] = 592,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -599,21 +436,17 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Vermina", -- [1]
 				},
-				["tempo_start"] = 1664443063,
+				["CombatStartedAt"] = 585632.894,
+				["tempo_start"] = 1664458661,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Galak Wrangler",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 9363,
 				["playing_solo"] = true,
 				["totals"] = {
-					2063, -- [1]
-					72, -- [2]
+					961, -- [1]
+					99, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -634,42 +467,9 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["TotalElapsedCombatTime"] = 31589.003,
-				["combat_counter"] = 9332,
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Vermina"] = 72.005582,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Vermina"] = 1808.003222,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 31589.003,
-				["player_last_events"] = {
-				},
-				["instance_type"] = "none",
-				["CombatEndedAt"] = 31589.003,
-				["data_inicio"] = "11:17:44",
 				["totals_grupo"] = {
-					1808, -- [1]
-					72, -- [2]
+					832, -- [1]
+					99, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
@@ -688,50 +488,88 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:37:52",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Crag Stalker",
+				["TotalElapsedCombatTime"] = 11.35100000002421,
+				["CombatEndedAt"] = 585644.245,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Vermina"] = 99.00655499999999,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Vermina"] = 832.003719,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 585644.245,
+				["combat_id"] = 592,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["spells_cast_timeline"] = {
 				},
-				["data_fim"] = "11:18:09",
-				["combat_id"] = 562,
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:37:41",
 				["CombatSkillCache"] = {
 				},
 				["frags"] = {
-					["Galak Scout"] = 1,
-					["Galak Wrangler"] = 1,
+					["Crag Stalker"] = 1,
 				},
-				["start_time"] = 31563.886,
+				["start_time"] = 585632.894,
 				["TimeData"] = {
 				},
-				["contra"] = "Galak Wrangler",
+				["contra"] = "Crag Stalker",
 			}, -- [1]
 			{
 				{
-					["combatId"] = 561,
+					["combatId"] = 591,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002427,
-							["aID"] = "4465-02BB4683",
+							["totalabsorbed"] = 0.003691,
 							["damage_from"] = {
 								["Galak Windchaser"] = true,
+								["Crag Stalker"] = true,
 							},
 							["targets"] = {
-								["Galak Windchaser"] = 606,
+								["Galak Windchaser"] = 724,
 							},
+							["total"] = 724.003691,
 							["pets"] = {
 							},
-							["colocacao"] = 1,
-							["end_time"] = 1664442990,
+							["on_hold"] = false,
 							["classe"] = "PALADIN",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 606.002427,
+							["total_without_pet"] = 724.003691,
+							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["total"] = 606.002427,
+							["end_time"] = 1664458649,
 							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["aID"] = "4465-02BB4683",
 							["nome"] = "Vermina",
 							["spells"] = {
 								["tipo"] = 2,
@@ -739,26 +577,25 @@ _detalhes_database = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 321,
+										["c_dmg"] = 314,
 										["g_amt"] = 0,
-										["n_max"] = 150,
+										["n_max"] = 152,
 										["targets"] = {
-											["Galak Windchaser"] = 471,
+											["Galak Windchaser"] = 466,
 										},
-										["n_dmg"] = 150,
-										["n_min"] = 150,
+										["n_dmg"] = 152,
+										["n_min"] = 152,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 471,
-										["c_max"] = 321,
+										["counter"] = 2,
+										["total"] = 466,
+										["c_max"] = 314,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["MISS"] = 1,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 321,
+										["c_min"] = 314,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
@@ -772,13 +609,13 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 19,
 										["targets"] = {
-											["Galak Windchaser"] = 74,
+											["Galak Windchaser"] = 38,
 										},
-										["n_dmg"] = 74,
-										["n_min"] = 18,
+										["n_dmg"] = 38,
+										["n_min"] = 19,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 74,
+										["counter"] = 2,
+										["total"] = 38,
 										["c_max"] = 0,
 										["id"] = 10298,
 										["r_dmg"] = 0,
@@ -789,7 +626,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -798,15 +635,15 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 61,
+										["n_max"] = 66,
 										["targets"] = {
-											["Galak Windchaser"] = 61,
+											["Galak Windchaser"] = 66,
 										},
-										["n_dmg"] = 61,
-										["n_min"] = 61,
+										["n_dmg"] = 66,
+										["n_min"] = 66,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 61,
+										["total"] = 66,
 										["c_max"] = 0,
 										["id"] = 20467,
 										["r_dmg"] = 0,
@@ -822,28 +659,28 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 									[20424] = {
-										["c_amt"] = 0,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 154,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Galak Windchaser"] = 0,
+											["Galak Windchaser"] = 154,
 										},
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
+										["counter"] = 2,
+										["total"] = 154,
+										["c_max"] = 154,
 										["id"] = 20424,
 										["r_dmg"] = 0,
-										["MISS"] = 1,
+										["a_dmg"] = 0,
 										["spellschool"] = 2,
 										["extra"] = {
 										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 154,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
@@ -854,2495 +691,41 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["serial"] = "Player-4465-02BB4683",
-							["last_dps"] = 72.10880854353121,
+							["last_dps"] = 165.1091655640735,
 							["custom"] = 0,
-							["last_event"] = 1664442989,
-							["damage_taken"] = 121.002427,
-							["start_time"] = 1664442981,
+							["last_event"] = 1664458648,
+							["damage_taken"] = 54.003691,
+							["start_time"] = 1664458644,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003945,
-							["aID"] = "4096",
+							["totalabsorbed"] = 0.00815,
+							["total"] = 29.00815,
 							["damage_from"] = {
 								["Vermina"] = true,
 							},
 							["targets"] = {
-								["Vermina"] = 121,
+								["Vermina"] = 29,
 							},
-							["end_time"] = 1664442990,
 							["pets"] = {
 							},
+							["monster"] = true,
 							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 121.003945,
-							["monster"] = true,
-							["dps_started"] = false,
-							["total"] = 121.003945,
+							["total_without_pet"] = 29.00815,
 							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458649,
 							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Galak Windchaser",
 							["spells"] = {
 								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Vermina"] = 121,
-										},
-										["n_dmg"] = 121,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 121,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["serial"] = "Creature-0-5563-1-1304-4096-0000350EF9",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1664442987,
-							["damage_taken"] = 606.0039449999999,
-							["start_time"] = 1664442981,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 561,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-								["Vermina"] = 24,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 24.008838,
-							["total_without_pet"] = 48.008838,
-							["total"] = 48.008838,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BB4683",
-							["totalabsorb"] = 0.008838,
-							["last_hps"] = 5.712617563063664,
-							["targets"] = {
-								["Vermina"] = 48,
-							},
-							["totalover_without_pet"] = 0.008838,
-							["healing_taken"] = 48.008838,
-							["fight_component"] = true,
-							["end_time"] = 1664442990,
-							["healing_from"] = {
-								["Vermina"] = true,
-							},
-							["nome"] = "Vermina",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									[20267] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Vermina"] = 24,
-										},
-										["n_max"] = 24,
-										["targets"] = {
-											["Vermina"] = 48,
-										},
-										["n_min"] = 24,
-										["counter"] = 3,
-										["overheal"] = 24,
-										["total"] = 48,
-										["c_max"] = 0,
-										["id"] = 20267,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 48,
-										["totaldenied"] = 0,
-										["n_amt"] = 3,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1664442981,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-02BB4683",
-							["totaldenied"] = 0.008838,
-							["delay"] = 0,
-							["last_event"] = 1664442989,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 561,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 561,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[54499] = {
-										["activedamt"] = 0,
-										["id"] = 54499,
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20185] = {
-										["activedamt"] = -1,
-										["id"] = 20185,
-										["targets"] = {
-										},
-										["actived_at"] = 1664442989,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 27,
-							["aID"] = "4465-02BB4683",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[19835] = {
-										["activedamt"] = 1,
-										["id"] = 19835,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[10298] = {
-										["activedamt"] = 1,
-										["id"] = 10298,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[20375] = {
-										["activedamt"] = 1,
-										["id"] = 20375,
-										["targets"] = {
-										},
-										["uptime"] = 9,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 8,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[20424] = 2,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["nome"] = "Vermina",
-							["last_event"] = 1664442990,
-							["pets"] = {
-							},
-							["classe"] = "PALADIN",
-							["serial"] = "Player-4465-02BB4683",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 561,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vermina"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Vermina", -- [1]
-				},
-				["CombatStartedAt"] = 31563.886,
-				["tempo_start"] = 1664442981,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 9331,
-				["playing_solo"] = true,
-				["totals"] = {
-					727, -- [1]
-					48, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					606, -- [1]
-					48, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["data_fim"] = "11:16:31",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Galak Windchaser",
-				["TotalElapsedCombatTime"] = 31491.087,
-				["CombatEndedAt"] = 31491.087,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Vermina"] = 48.008838,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Vermina"] = 606.002427,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 31491.087,
-				["combat_id"] = 561,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "11:16:22",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Galak Windchaser"] = 1,
-				},
-				["start_time"] = 31481.781,
-				["TimeData"] = {
-				},
-				["contra"] = "Galak Windchaser",
-			}, -- [2]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 560,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.0081,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Galak Windchaser"] = 703,
-							},
-							["pets"] = {
-							},
-							["delay"] = 1664442923,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 703.0081,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["dps_started"] = false,
-							["total"] = 703.0081,
-							["classe"] = "PALADIN",
-							["aID"] = "4465-02BB4683",
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 268,
-										["g_amt"] = 0,
-										["n_max"] = 158,
-										["targets"] = {
-											["Galak Windchaser"] = 426,
-										},
-										["n_dmg"] = 158,
-										["n_min"] = 158,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 426,
-										["c_max"] = 268,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 268,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[20467] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 126,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Galak Windchaser"] = 126,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 126,
-										["c_max"] = 126,
-										["id"] = 20467,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 126,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[20424] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 151,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Galak Windchaser"] = 151,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 151,
-										["c_max"] = 151,
-										["id"] = 20424,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 151,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1664442949,
-							["damage_taken"] = 0.0081,
-							["last_dps"] = 27.18200131461809,
-							["colocacao"] = 1,
-							["last_event"] = 1664442948,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1664442948,
-							["serial"] = "Player-4465-02BB4683",
-							["on_hold"] = false,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004604,
-							["damage_from"] = {
-								["Vermina"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["delay"] = 0,
-							["aID"] = "4096",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.004604,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["monster"] = true,
-							["total"] = 0.004604,
-							["classe"] = "UNKNOW",
-							["on_hold"] = false,
-							["nome"] = "Galak Windchaser",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["end_time"] = 1664442949,
-							["damage_taken"] = 703.004604,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1664442949,
-							["serial"] = "Creature-0-5563-1-1304-4096-0000350DBE",
-							["dps_started"] = false,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 560,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["healing_from"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 70.005165,
-							["total_without_pet"] = 0.005165,
-							["total"] = 0.005165,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BB4683",
-							["totalabsorb"] = 0.005165,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.005165,
-							["healing_taken"] = 0.005165,
-							["end_time"] = 1664442949,
-							["totaldenied"] = 0.005165,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20267] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Vermina"] = 70,
-										},
-										["n_max"] = 0,
-										["targets"] = {
-											["Vermina"] = 0,
-										},
-										["n_min"] = 0,
-										["counter"] = 3,
-										["overheal"] = 70,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 20267,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_amt"] = 3,
-										["n_curado"] = 0,
-										["totaldenied"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-								["Vermina"] = 70,
-							},
-							["last_event"] = 1664442923,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["aID"] = "4465-02BB4683",
-							["start_time"] = 1664442948,
-							["delay"] = 1664442923,
-							["classe"] = "PALADIN",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 560,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 560,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[54499] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 54499,
-										["uptime"] = 19,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20185] = {
-										["activedamt"] = -1,
-										["id"] = 20185,
-										["targets"] = {
-										},
-										["actived_at"] = 1664442942,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02BB4683",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 26,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 10298,
-										["uptime"] = 26,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 20375,
-										["uptime"] = 26,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 19,
-							["nome"] = "Vermina",
-							["grupo"] = true,
-							["spell_cast"] = {
-								[20424] = 2,
-							},
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["last_event"] = 1664442949,
-							["debuff_uptime_targets"] = {
-							},
-							["classe"] = "PALADIN",
-							["serial"] = "Player-4465-02BB4683",
-							["buff_uptime"] = 78,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 560,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vermina"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Vermina", -- [1]
-				},
-				["CombatStartedAt"] = 31481.781,
-				["tempo_start"] = 1664442923,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 9329,
-				["playing_solo"] = true,
-				["totals"] = {
-					703, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					703, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:15:49",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Galak Windchaser",
-				["TotalElapsedCombatTime"] = 31449.114,
-				["CombatEndedAt"] = 31449.114,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Vermina"] = 703.0081,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Vermina"] = 0.005165,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 31449.114,
-				["combat_id"] = 560,
-				["data_inicio"] = "11:15:23",
-				["spells_cast_timeline"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["contra"] = "Galak Windchaser",
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 31423.251,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Galak Windchaser"] = 1,
-				},
-			}, -- [3]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 559,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004731,
-							["damage_from"] = {
-								["Galak Wrangler"] = true,
-							},
-							["targets"] = {
-								["Galak Wrangler"] = 787,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4465-02BB4683",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 787.004731,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1664442758,
-							["damage_taken"] = 102.004731,
-							["on_hold"] = false,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 268,
-										["g_amt"] = 0,
-										["n_max"] = 152,
-										["targets"] = {
-											["Galak Wrangler"] = 555,
-										},
-										["n_dmg"] = 287,
-										["n_min"] = 135,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 555,
-										["c_max"] = 268,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 268,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[20424] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 71,
-										["targets"] = {
-											["Galak Wrangler"] = 134,
-										},
-										["n_dmg"] = 134,
-										["n_min"] = 63,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 134,
-										["c_max"] = 0,
-										["id"] = 20424,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[20467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 62,
-										["targets"] = {
-											["Galak Wrangler"] = 62,
-										},
-										["n_dmg"] = 62,
-										["n_min"] = 62,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 62,
-										["c_max"] = 0,
-										["id"] = 20467,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[10298] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Galak Wrangler"] = 36,
-										},
-										["n_dmg"] = 36,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 36,
-										["c_max"] = 0,
-										["id"] = 10298,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 90.29425550710974,
-							["total"] = 787.004731,
-							["colocacao"] = 1,
-							["last_event"] = 1664442757,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1664442748,
-							["serial"] = "Player-4465-02BB4683",
-							["classe"] = "PALADIN",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008688,
-							["damage_from"] = {
-								["Vermina"] = true,
-							},
-							["targets"] = {
-								["Vermina"] = 102,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["aID"] = "4093",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 102.008688,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1664442758,
-							["damage_taken"] = 787.008688,
-							["total"] = 102.008688,
-							["nome"] = "Galak Wrangler",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 35,
-										["targets"] = {
-											["Vermina"] = 62,
-										},
-										["n_dmg"] = 62,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 62,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 2,
-										["spellschool"] = 1,
-										["DODGE"] = 2,
-									}, -- [1]
-									[6660] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 40,
-										["targets"] = {
-											["Vermina"] = 40,
-										},
-										["n_dmg"] = 40,
-										["n_min"] = 40,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 40,
-										["c_max"] = 0,
-										["id"] = 6660,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1664442756,
-							["on_hold"] = false,
-							["start_time"] = 1664442750,
-							["serial"] = "Creature-0-5563-1-1304-4093-0000350D6A",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 559,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Vermina"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.006242,
-							["total_without_pet"] = 93.006242,
-							["total"] = 93.006242,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BB4683",
-							["totalabsorb"] = 0.006242,
-							["last_hps"] = 10.67074827902665,
-							["targets"] = {
-								["Vermina"] = 93,
-							},
-							["totalover_without_pet"] = 0.006242,
-							["healing_taken"] = 93.006242,
-							["fight_component"] = true,
-							["end_time"] = 1664442758,
-							["last_event"] = 1664442757,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20267] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 24,
-										["targets"] = {
-											["Vermina"] = 93,
-										},
-										["n_min"] = 23,
-										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 93,
-										["c_max"] = 0,
-										["id"] = 20267,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_amt"] = 4,
-										["n_curado"] = 93,
-										["totaldenied"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02BB4683",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.006242,
-							["start_time"] = 1664442750,
-							["delay"] = 0,
-							["classe"] = "PALADIN",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 559,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 559,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[54499] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 54499,
-										["uptime"] = 9,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20185] = {
-										["activedamt"] = -1,
-										["id"] = 20185,
-										["targets"] = {
-										},
-										["actived_at"] = 1664442757,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 30,
-							["aID"] = "4465-02BB4683",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 10298,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 20375,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 9,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[20424] = 3,
-							},
-							["tipo"] = 4,
-							["nome"] = "Vermina",
-							["last_event"] = 1664442758,
-							["classe"] = "PALADIN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-02BB4683",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-						{
-							["monster"] = true,
-							["last_event"] = 0,
-							["nome"] = "Galak Wrangler",
-							["aID"] = "4093",
-							["spell_cast"] = {
-								[6660] = 1,
-							},
-							["fight_component"] = true,
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-5563-1-1304-4093-0000350D6A",
-							["flag_original"] = 68168,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 559,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vermina"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Vermina", -- [1]
-				},
-				["CombatStartedAt"] = 31423.251,
-				["tempo_start"] = 1664442748,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					889, -- [1]
-					93, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "11:12:39",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Galak Wrangler",
-				["TotalElapsedCombatTime"] = 31258.721,
-				["CombatEndedAt"] = 31258.721,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Vermina"] = 787.004731,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Vermina"] = 93.006242,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 31258.721,
-				["combat_id"] = 559,
-				["data_inicio"] = "11:12:29",
-				["spells_cast_timeline"] = {
-				},
-				["combat_counter"] = 9328,
-				["totals_grupo"] = {
-					787, -- [1]
-					93, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Galak Wrangler",
-				["start_time"] = 31249.29,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Galak Wrangler"] = 1,
-				},
-			}, -- [4]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 558,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006659,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Cloud Serpent"] = 694,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["last_dps"] = 72.91517745204786,
-							["aID"] = "4465-02BB4683",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 694.006659,
-							["total"] = 694.006659,
-							["dps_started"] = false,
-							["end_time"] = 1662751478,
-							["damage_taken"] = 0.006659,
-							["tipo"] = 1,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 141,
-										["targets"] = {
-											["Cloud Serpent"] = 279,
-										},
-										["n_dmg"] = 279,
-										["n_min"] = 138,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 279,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 2,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									}, -- [1]
-									[67485] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 150,
-										["targets"] = {
-											["Cloud Serpent"] = 150,
-										},
-										["n_dmg"] = 150,
-										["n_min"] = 150,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 150,
-										["c_max"] = 0,
-										["id"] = 67485,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[20424] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 130,
-										["g_amt"] = 0,
-										["n_max"] = 73,
-										["targets"] = {
-											["Cloud Serpent"] = 203,
-										},
-										["n_dmg"] = 73,
-										["n_min"] = 73,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 203,
-										["c_max"] = 130,
-										["id"] = 20424,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 130,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[20467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 62,
-										["targets"] = {
-											["Cloud Serpent"] = 62,
-										},
-										["n_dmg"] = 62,
-										["n_min"] = 62,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 62,
-										["c_max"] = 0,
-										["id"] = 20467,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["colocacao"] = 1,
-							["last_event"] = 1662751477,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1662751468,
-							["serial"] = "Player-4465-02BB4683",
-							["classe"] = "PALADIN",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002754,
-							["damage_from"] = {
-								["Vermina"] = true,
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 0,
-							["aID"] = "4117",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.002754,
-							["end_time"] = 1662751478,
-							["monster"] = true,
-							["total"] = 0.002754,
-							["on_hold"] = false,
-							["tipo"] = 1,
-							["nome"] = "Cloud Serpent",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Vermina"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["DODGE"] = 1,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1662751476,
-							["damage_taken"] = 694.002754,
-							["start_time"] = 1662751478,
-							["serial"] = "Creature-0-4457-1-25451-4117-00001B902C",
-							["dps_started"] = false,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 558,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Vermina"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 0.006031,
-							["total_without_pet"] = 91.00603100000001,
-							["total"] = 91.00603100000001,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BB4683",
-							["totalabsorb"] = 0.006031,
-							["last_hps"] = 9.561465748949779,
-							["targets"] = {
-								["Vermina"] = 91,
-							},
-							["totalover_without_pet"] = 0.006031,
-							["healing_taken"] = 91.00603100000001,
-							["fight_component"] = true,
-							["end_time"] = 1662751478,
-							["tipo"] = 2,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20267] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 23,
-										["targets"] = {
-											["Vermina"] = 91,
-										},
-										["n_min"] = 22,
-										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 91,
-										["c_max"] = 0,
-										["id"] = 20267,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 91,
-										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02BB4683",
-							["custom"] = 0,
-							["last_event"] = 1662751477,
-							["totaldenied"] = 0.006031,
-							["start_time"] = 1662751469,
-							["delay"] = 0,
-							["heal_enemy_amt"] = 0,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 558,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 558,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[20185] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 20185,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[54499] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 54499,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[62124] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 62124,
-										["uptime"] = 3,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[5588] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 5588,
-										["uptime"] = 4,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 40,
-							["interrupt"] = 1.004188,
-							["cc_done_spells"] = {
-								["_ActorTable"] = {
-									[5588] = {
-										["id"] = 5588,
-										["targets"] = {
-											["Cloud Serpent"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["classe"] = "PALADIN",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[32747] = {
-										["id"] = 32747,
-										["counter"] = 1,
-										["targets"] = {
-											["Cloud Serpent"] = 1,
-										},
-										["interrompeu_oque"] = {
-											[8246] = 1,
-										},
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[377749] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 377749,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 10298,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 20375,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[8246] = 1,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 23,
-							["cc_done_targets"] = {
-								["Cloud Serpent"] = 1,
-							},
-							["cc_done"] = 1.002507,
-							["buff_uptime_targets"] = {
-							},
-							["interrupt_targets"] = {
-								["Cloud Serpent"] = 1,
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[5588] = 1,
-								[20271] = 1,
-								[20424] = 2,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1662751478,
-							["tipo"] = 4,
-							["nome"] = "Vermina",
-							["debuff_uptime_targets"] = {
-							},
-							["serial"] = "Player-4465-02BB4683",
-							["aID"] = "4465-02BB4683",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 558,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vermina"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Vermina", -- [1]
-				},
-				["CombatStartedAt"] = 31249.045,
-				["tempo_start"] = 1662751468,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					693.9961040000001, -- [1]
-					91, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:24:38",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Cloud Serpent",
-				["TotalElapsedCombatTime"] = 9.518000000156462,
-				["CombatEndedAt"] = 2546316.589,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:24:29",
-				["end_time"] = 2546316.589,
-				["combat_id"] = 558,
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Vermina"] = 694.006659,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Vermina"] = 91.00603100000001,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["frags"] = {
-					["Cloud Serpent"] = 1,
-				},
-				["combat_counter"] = 9325,
-				["totals_grupo"] = {
-					694, -- [1]
-					91, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Cloud Serpent",
-				["start_time"] = 2546307.071,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [5]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 557,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008836,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Vermina"] = 158,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 158.008836,
-							["damage_taken"] = 0.008836,
-							["dps_started"] = false,
-							["end_time"] = 1662751468,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Elder Cloud Serpent",
-							["spells"] = {
-								["_ActorTable"] = {
-									[8246] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 158,
-										["targets"] = {
-											["Vermina"] = 158,
-										},
-										["n_dmg"] = 158,
-										["n_min"] = 158,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 158,
-										["c_max"] = 0,
-										["id"] = 8246,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 158.008836,
-							["custom"] = 0,
-							["last_event"] = 1662751460,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1662751460,
-							["serial"] = "Creature-0-4457-1-25451-4119-00001B8870",
-							["aID"] = "4119",
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002654,
-							["damage_from"] = {
-								["Elder Cloud Serpent"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 0,
-							["aID"] = "4465-02BB4683",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.002654,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.002654,
-							["on_hold"] = false,
-							["damage_taken"] = 158.002654,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1662751468,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1662751468,
-							["serial"] = "Player-4465-02BB4683",
-							["classe"] = "PALADIN",
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 557,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 557,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 557,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Vermina",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02BB4683",
-							["buff_uptime"] = 40,
-							["tipo"] = 4,
-							["last_event"] = 1662751468,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 20375,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 10298,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[377749] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 377749,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[34769] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 34769,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02BB4683",
-							["classe"] = "PALADIN",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 557,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vermina"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Vermina", -- [1]
-				},
-				["tempo_start"] = 1662751460,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 9324,
-				["playing_solo"] = true,
-				["totals"] = {
-					158, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:24:28",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Elder Cloud Serpent",
-				["TotalElapsedCombatTime"] = 2546306.855,
-				["CombatEndedAt"] = 2546306.855,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:24:21",
-				["end_time"] = 2546306.855,
-				["combat_id"] = 557,
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Vermina"] = 0.002654,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Elder Cloud Serpent",
-				["start_time"] = 2546299.022,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [6]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 556,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008473,
-							["damage_from"] = {
-								["Elder Cloud Serpent"] = true,
-							},
-							["targets"] = {
-								["Elder Cloud Serpent"] = 856,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 856.008473,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 856.008473,
-							["damage_taken"] = 192.008473,
-							["tipo"] = 1,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 275,
-										["g_amt"] = 0,
-										["n_max"] = 147,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 562,
-										},
-										["n_dmg"] = 287,
-										["n_min"] = 140,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 562,
-										["c_max"] = 275,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 275,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[20424] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 149,
-										["g_amt"] = 0,
-										["n_max"] = 70,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 219,
-										},
-										["n_dmg"] = 70,
-										["n_min"] = 70,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 219,
-										["c_max"] = 149,
-										["id"] = 20424,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 149,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[20467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 57,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 57,
-										},
-										["n_dmg"] = 57,
-										["n_min"] = 57,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 57,
-										["c_max"] = 0,
-										["id"] = 20467,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[10298] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 18,
-										},
-										["n_dmg"] = 18,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 18,
-										["c_max"] = 0,
-										["id"] = 10298,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 96.35394788298763,
-							["end_time"] = 1662751444,
-							["colocacao"] = 1,
-							["last_event"] = 1662751442,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1662751434,
-							["serial"] = "Player-4465-02BB4683",
-							["aID"] = "4465-02BB4683",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003501,
-							["damage_from"] = {
-								["Vermina"] = true,
-							},
-							["targets"] = {
-								["Vermina"] = 192,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["total"] = 192.003501,
-							["aID"] = "4119",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 192.003501,
-							["monster"] = true,
-							["fight_component"] = true,
-							["end_time"] = 1662751444,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Elder Cloud Serpent",
-							["spells"] = {
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -3356,81 +739,52 @@ _detalhes_database = {
 										["n_dmg"] = 29,
 										["n_min"] = 29,
 										["g_dmg"] = 0,
-										["counter"] = 3,
+										["counter"] = 2,
 										["total"] = 29,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 1,
-										["spellschool"] = 1,
-										["DODGE"] = 2,
-									}, -- [1]
-									[8246] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 163,
-										["targets"] = {
-											["Vermina"] = 163,
-										},
-										["n_dmg"] = 163,
-										["n_min"] = 163,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 163,
-										["c_max"] = 0,
-										["id"] = 8246,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
 								},
-								["tipo"] = 2,
 							},
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
+							["aID"] = "4096",
+							["serial"] = "Creature-0-5571-1-6623-4096-0000B40526",
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1662751442,
-							["damage_taken"] = 856.003501,
-							["start_time"] = 1662751436,
-							["serial"] = "Creature-0-4457-1-25451-4119-00001B8861",
-							["classe"] = "UNKNOW",
+							["last_event"] = 1664458647,
+							["damage_taken"] = 724.00815,
+							["start_time"] = 1664458647,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 591,
 					["tipo"] = 3,
-					["combatId"] = 556,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Vermina"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
 							["classe"] = "PALADIN",
-							["totalover"] = 0.005497,
-							["total_without_pet"] = 114.005497,
-							["total"] = 114.005497,
+							["totalover"] = 0.007803,
+							["total_without_pet"] = 23.007803,
+							["total"] = 23.007803,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
@@ -3438,18 +792,21 @@ _detalhes_database = {
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-02BB4683",
-							["totalabsorb"] = 0.005497,
-							["last_hps"] = 12.36770416592758,
+							["totalabsorb"] = 0.007803,
+							["last_hps"] = 59.91615365179128,
 							["targets"] = {
-								["Vermina"] = 114,
+								["Vermina"] = 23,
 							},
-							["totalover_without_pet"] = 0.005497,
-							["healing_taken"] = 114.005497,
+							["totalover_without_pet"] = 0.007803,
+							["healing_taken"] = 23.007803,
 							["fight_component"] = true,
-							["end_time"] = 1662751444,
-							["tipo"] = 2,
+							["end_time"] = 1664458649,
+							["healing_from"] = {
+								["Vermina"] = true,
+							},
 							["nome"] = "Vermina",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[20267] = {
 										["c_amt"] = 0,
@@ -3458,129 +815,115 @@ _detalhes_database = {
 										},
 										["n_max"] = 23,
 										["targets"] = {
-											["Vermina"] = 114,
+											["Vermina"] = 23,
 										},
-										["n_min"] = 22,
-										["counter"] = 5,
+										["n_min"] = 23,
+										["counter"] = 1,
 										["overheal"] = 0,
-										["total"] = 114,
+										["total"] = 23,
 										["c_max"] = 0,
 										["id"] = 20267,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 114,
+										["n_curado"] = 23,
 										["totaldenied"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 1,
 										["absorbed"] = 0,
 									},
 								},
-								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02BB4683",
-							["custom"] = 0,
-							["last_event"] = 1662751443,
-							["totaldenied"] = 0.005497,
-							["start_time"] = 1662751434,
-							["delay"] = 0,
 							["heal_enemy_amt"] = 0,
+							["start_time"] = 1664458644,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02BB4683",
+							["totaldenied"] = 0.007803,
+							["delay"] = 0,
+							["last_event"] = 1664458644,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 591,
 					["tipo"] = 7,
-					["combatId"] = 556,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
+					["combatId"] = 591,
 					["tipo"] = 9,
-					["combatId"] = 556,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[54499] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 54499,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
 									[20185] = {
-										["activedamt"] = -1,
+										["activedamt"] = 0,
 										["id"] = 20185,
 										["targets"] = {
 										},
-										["actived_at"] = 1662751442,
-										["uptime"] = 0,
-										["counter"] = 0,
+										["uptime"] = 4,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
-										["appliedamt"] = 0,
+										["counter"] = 0,
+									},
+									[54499] = {
+										["activedamt"] = 0,
+										["id"] = 54499,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["buff_uptime"] = 40,
+							["buff_uptime"] = 15,
 							["aID"] = "4465-02BB4683",
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[377749] = {
-										["counter"] = 0,
-										["actived"] = false,
+									[19835] = {
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 377749,
-										["uptime"] = 10,
+										["id"] = 19835,
 										["targets"] = {
 										},
+										["uptime"] = 5,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
 										["id"] = 10298,
-										["uptime"] = 10,
 										["targets"] = {
 										},
+										["uptime"] = 5,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
 										["id"] = 20375,
-										["uptime"] = 10,
 										["targets"] = {
 										},
+										["uptime"] = 5,
 										["appliedamt"] = 1,
-									},
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
 										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 8,
@@ -3588,39 +931,24 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
-								[20424] = 3,
+								[20424] = 2,
+								[20271] = 1,
 							},
-							["nome"] = "Vermina",
-							["tipo"] = 4,
-							["last_event"] = 1662751444,
-							["classe"] = "PALADIN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-02BB4683",
 							["debuff_uptime_targets"] = {
 							},
-						}, -- [1]
-						{
-							["monster"] = true,
+							["nome"] = "Vermina",
+							["last_event"] = 1664458649,
 							["pets"] = {
 							},
-							["nome"] = "Elder Cloud Serpent",
-							["aID"] = "4119",
-							["spell_cast"] = {
-								[8246] = 1,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
+							["classe"] = "PALADIN",
+							["serial"] = "Player-4465-02BB4683",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4457-1-25451-4119-00001B8861",
-							["flag_original"] = 68168,
-						}, -- [2]
+						}, -- [1]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 591,
 					["tipo"] = 2,
-					["combatId"] = 556,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -3630,4235 +958,106 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Vermina", -- [1]
 				},
-				["CombatStartedAt"] = 2546293.92,
-				["tempo_start"] = 1662751434,
+				["CombatStartedAt"] = 585616.219,
+				["tempo_start"] = 1664458644,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 9362,
 				["playing_solo"] = true,
 				["totals"] = {
-					1048, -- [1]
-					114, -- [2]
+					752.991095, -- [1]
+					23, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:24:05",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Elder Cloud Serpent",
-				["TotalElapsedCombatTime"] = 2546283.004,
-				["CombatEndedAt"] = 2546283.004,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:23:54",
-				["end_time"] = 2546283.004,
-				["combat_id"] = 556,
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Vermina"] = 856.008473,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Vermina"] = 114.005497,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["frags"] = {
-					["Elder Cloud Serpent"] = 1,
-				},
-				["combat_counter"] = 9323,
 				["totals_grupo"] = {
-					856, -- [1]
-					114, -- [2]
+					724, -- [1]
+					23, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
 						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Elder Cloud Serpent",
-				["start_time"] = 2546272.469,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [7]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 555,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008049,
-							["damage_from"] = {
-								["Elder Cloud Serpent"] = true,
-							},
-							["targets"] = {
-								["Elder Cloud Serpent"] = 1578,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1578.008049,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1662751423,
-							["damage_taken"] = 351.008049,
-							["tipo"] = 1,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 526,
-										["g_amt"] = 1,
-										["n_max"] = 126,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 1019,
-										},
-										["n_dmg"] = 376,
-										["n_min"] = 125,
-										["g_dmg"] = 117,
-										["counter"] = 6,
-										["total"] = 1019,
-										["c_max"] = 286,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 240,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[67485] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 150,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 150,
-										},
-										["n_dmg"] = 150,
-										["n_min"] = 150,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 150,
-										["c_max"] = 0,
-										["id"] = 67485,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[20424] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 137,
-										["g_amt"] = 0,
-										["n_max"] = 73,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 272,
-										},
-										["n_dmg"] = 135,
-										["n_min"] = 62,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 272,
-										["c_max"] = 137,
-										["id"] = 20424,
-										["r_dmg"] = 137,
-										["r_amt"] = 1,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 137,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 2,
-										["spellschool"] = 2,
-										["MISS"] = 1,
-									},
-									[20467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 62,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 119,
-										},
-										["n_dmg"] = 119,
-										["n_min"] = 57,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 119,
-										["c_max"] = 0,
-										["id"] = 20467,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[10298] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 18,
-										},
-										["n_dmg"] = 18,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 18,
-										["c_max"] = 0,
-										["id"] = 10298,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 74.19635363094515,
-							["total"] = 1578.008049,
-							["colocacao"] = 1,
-							["last_event"] = 1662751422,
-							["on_hold"] = false,
-							["start_time"] = 1662751401,
-							["serial"] = "Player-4465-02BB4683",
-							["aID"] = "4465-02BB4683",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006474,
-							["damage_from"] = {
-								["Vermina"] = true,
-							},
-							["targets"] = {
-								["Vermina"] = 351,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 351.006474,
-							["damage_taken"] = 1578.006474,
-							["dps_started"] = false,
-							["end_time"] = 1662751423,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Elder Cloud Serpent",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 35,
-										["targets"] = {
-											["Vermina"] = 35,
-										},
-										["n_dmg"] = 35,
-										["n_min"] = 35,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 35,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[8246] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 159,
-										["targets"] = {
-											["Vermina"] = 316,
-										},
-										["n_dmg"] = 316,
-										["n_min"] = 157,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 316,
-										["c_max"] = 0,
-										["id"] = 8246,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 3,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["MISS"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 351.006474,
-							["custom"] = 0,
-							["last_event"] = 1662751422,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1662751407,
-							["serial"] = "Creature-0-4457-1-25451-4119-00001B908C",
-							["aID"] = "4119",
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 555,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Vermina"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 0.001346,
-							["total_without_pet"] = 201.001346,
-							["total"] = 201.001346,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BB4683",
-							["totalabsorb"] = 0.001346,
-							["last_hps"] = 9.45088141823031,
-							["targets"] = {
-								["Vermina"] = 201,
-							},
-							["totalover_without_pet"] = 0.001346,
-							["healing_taken"] = 201.001346,
-							["fight_component"] = true,
-							["end_time"] = 1662751423,
-							["tipo"] = 2,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20267] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 23,
-										["targets"] = {
-											["Vermina"] = 201,
-										},
-										["n_min"] = 22,
-										["counter"] = 9,
-										["overheal"] = 0,
-										["total"] = 201,
-										["c_max"] = 0,
-										["id"] = 20267,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 201,
-										["totaldenied"] = 0,
-										["n_amt"] = 9,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02BB4683",
-							["custom"] = 0,
-							["last_event"] = 1662751422,
-							["totaldenied"] = 0.001346,
-							["start_time"] = 1662751402,
-							["delay"] = 0,
-							["heal_enemy_amt"] = 0,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 555,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 555,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[20185] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 20185,
-										["uptime"] = 18,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[54499] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 54499,
-										["uptime"] = 18,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									[62124] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 62124,
-										["uptime"] = 3,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[5588] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 5588,
-										["uptime"] = 4,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 91,
-							["interrupt"] = 1.004635,
-							["cc_done_spells"] = {
-								["_ActorTable"] = {
-									[5588] = {
-										["id"] = 5588,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["classe"] = "PALADIN",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[32747] = {
-										["id"] = 32747,
-										["counter"] = 1,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 1,
-										},
-										["interrompeu_oque"] = {
-											[8246] = 1,
-										},
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[498] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 498,
-										["uptime"] = 3,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 22,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 20375,
-										["uptime"] = 22,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[377749] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 377749,
-										["uptime"] = 22,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 10298,
-										["uptime"] = 22,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[8246] = 1,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 43,
-							["cc_done_targets"] = {
-								["Elder Cloud Serpent"] = 1,
-							},
-							["cc_done"] = 1.001599,
-							["buff_uptime_targets"] = {
-							},
-							["interrupt_targets"] = {
-								["Elder Cloud Serpent"] = 1,
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[20424] = 6,
-								[20271] = 2,
-								[5588] = 1,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1662751423,
-							["tipo"] = 4,
-							["nome"] = "Vermina",
-							["debuff_uptime_targets"] = {
-							},
-							["serial"] = "Player-4465-02BB4683",
-							["aID"] = "4465-02BB4683",
-						}, -- [1]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Elder Cloud Serpent",
-							["aID"] = "4119",
-							["spell_cast"] = {
-								[8246] = 3,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4457-1-25451-4119-00001B9268",
-							["flag_original"] = 68168,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 555,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vermina"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Vermina", -- [1]
-				},
-				["CombatStartedAt"] = 2546271.653,
-				["tempo_start"] = 1662751401,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1929, -- [1]
-					201, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
 						["cc_break"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:23:44",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Elder Cloud Serpent",
-				["TotalElapsedCombatTime"] = 22.20099999988452,
-				["CombatEndedAt"] = 2546261.952,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:23:21",
-				["end_time"] = 2546261.952,
-				["combat_id"] = 555,
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Vermina"] = 1578.008049,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Vermina"] = 201.001346,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["frags"] = {
-					["Elder Cloud Serpent"] = 2,
-				},
-				["combat_counter"] = 9322,
-				["totals_grupo"] = {
-					1578, -- [1]
-					201, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Elder Cloud Serpent",
-				["start_time"] = 2546239.751,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [8]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 554,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007882,
-							["damage_from"] = {
-								["Elder Cloud Serpent"] = true,
-							},
-							["targets"] = {
-								["Elder Cloud Serpent"] = 920,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 920.007882,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 920.007882,
-							["damage_taken"] = 362.007882,
-							["tipo"] = 1,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 539,
-										["g_amt"] = 0,
-										["n_max"] = 151,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 690,
-										},
-										["n_dmg"] = 151,
-										["n_min"] = 151,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 690,
-										["c_max"] = 284,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["PARRY"] = 1,
-										["c_min"] = 255,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-									}, -- [1]
-									[20424] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 69,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 131,
-										},
-										["n_dmg"] = 131,
-										["n_min"] = 62,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 131,
-										["c_max"] = 0,
-										["id"] = 20424,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[20467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 63,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 63,
-										},
-										["n_dmg"] = 63,
-										["n_min"] = 63,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 63,
-										["c_max"] = 0,
-										["id"] = 20467,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[10298] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 36,
-										},
-										["n_dmg"] = 36,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 36,
-										["c_max"] = 0,
-										["id"] = 10298,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 72.33903774248255,
-							["end_time"] = 1662751396,
-							["colocacao"] = 1,
-							["last_event"] = 1662751396,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1662751383,
-							["serial"] = "Player-4465-02BB4683",
-							["aID"] = "4465-02BB4683",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008483,
-							["damage_from"] = {
-								["Vermina"] = true,
-							},
-							["targets"] = {
-								["Vermina"] = 362,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["total"] = 362.008483,
-							["aID"] = "4119",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 362.008483,
-							["monster"] = true,
-							["fight_component"] = true,
-							["end_time"] = 1662751396,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Elder Cloud Serpent",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Vermina"] = 34,
-										},
-										["n_dmg"] = 34,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 34,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[8246] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 168,
-										["targets"] = {
-											["Vermina"] = 328,
-										},
-										["n_dmg"] = 328,
-										["n_min"] = 160,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 328,
-										["c_max"] = 0,
-										["id"] = 8246,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1662751395,
-							["damage_taken"] = 920.0084830000001,
-							["start_time"] = 1662751387,
-							["serial"] = "Creature-0-4457-1-25451-4119-00001B91E2",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 554,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Vermina"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 0.005352,
-							["total_without_pet"] = 115.005352,
-							["total"] = 115.005352,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BB4683",
-							["totalabsorb"] = 0.005352,
-							["last_hps"] = 9.04272306975245,
-							["targets"] = {
-								["Vermina"] = 115,
-							},
-							["totalover_without_pet"] = 0.005352,
-							["healing_taken"] = 115.005352,
-							["fight_component"] = true,
-							["end_time"] = 1662751396,
-							["tipo"] = 2,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20267] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 23,
-										["targets"] = {
-											["Vermina"] = 115,
-										},
-										["n_min"] = 23,
-										["counter"] = 5,
-										["overheal"] = 0,
-										["total"] = 115,
-										["c_max"] = 0,
-										["id"] = 20267,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 115,
-										["totaldenied"] = 0,
-										["n_amt"] = 5,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02BB4683",
-							["custom"] = 0,
-							["last_event"] = 1662751396,
-							["totaldenied"] = 0.005352,
-							["start_time"] = 1662751383,
-							["delay"] = 0,
-							["heal_enemy_amt"] = 0,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 554,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 554,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[54499] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 54499,
-										["uptime"] = 13,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[25771] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 25771,
-										["uptime"] = 4,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20185] = {
-										["activedamt"] = -1,
-										["id"] = 20185,
-										["targets"] = {
-										},
-										["actived_at"] = 1662751396,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["cooldowns_defensive"] = 1.002017,
-							["buff_uptime"] = 56,
-							["last_cooldown"] = {
-								1662751392.514, -- [1]
-								498, -- [2]
-							},
-							["aID"] = "4465-02BB4683",
-							["cooldowns_defensive_targets"] = {
-								["Vermina"] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[498] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 498,
-										["uptime"] = 4,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 13,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 20375,
-										["uptime"] = 13,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[377749] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 377749,
-										["uptime"] = 13,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 10298,
-										["uptime"] = 13,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 17,
-							["classe"] = "PALADIN",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[20424] = 3,
-								[498] = 1,
-							},
-							["serial"] = "Player-4465-02BB4683",
-							["last_event"] = 1662751396,
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["nome"] = "Vermina",
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[498] = {
-										["id"] = 498,
-										["targets"] = {
-											["Vermina"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime_targets"] = {
-							},
-						}, -- [1]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Elder Cloud Serpent",
-							["aID"] = "4119",
-							["spell_cast"] = {
-								[8246] = 2,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4457-1-25451-4119-00001B91E2",
-							["flag_original"] = 68168,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 554,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vermina"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Vermina", -- [1]
-				},
-				["tempo_start"] = 1662751383,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 9321,
-				["playing_solo"] = true,
-				["totals"] = {
-					1282, -- [1]
-					114.991157, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:23:16",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Elder Cloud Serpent",
-				["TotalElapsedCombatTime"] = 2546234.75,
-				["CombatEndedAt"] = 2546234.75,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:23:04",
-				["end_time"] = 2546234.75,
-				["combat_id"] = 554,
-				["totals_grupo"] = {
-					920, -- [1]
-					115, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
-					}, -- [4]
-				},
-				["frags"] = {
-					["Elder Cloud Serpent"] = 1,
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Vermina"] = 920.007882,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Vermina"] = 115.005352,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Elder Cloud Serpent",
-				["start_time"] = 2546221.966,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [9]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 553,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003297,
-							["damage_from"] = {
-								["Elder Cloud Serpent"] = true,
-							},
-							["targets"] = {
-								["Elder Cloud Serpent"] = 937,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 937.003297,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 937.003297,
-							["damage_taken"] = 429.003297,
-							["tipo"] = 1,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 269,
-										["g_amt"] = 0,
-										["n_max"] = 150,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 693,
-										},
-										["n_dmg"] = 424,
-										["n_min"] = 132,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 693,
-										["c_max"] = 269,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 269,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 3,
-										["spellschool"] = 1,
-										["DODGE"] = 1,
-									}, -- [1]
-									[20424] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 66,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 130,
-										},
-										["n_dmg"] = 130,
-										["n_min"] = 64,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 130,
-										["c_max"] = 0,
-										["id"] = 20424,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 2,
-										["spellschool"] = 2,
-										["MISS"] = 1,
-									},
-									[20467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 60,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 60,
-										},
-										["n_dmg"] = 60,
-										["n_min"] = 60,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 60,
-										["c_max"] = 0,
-										["id"] = 20467,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[10298] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Elder Cloud Serpent"] = 54,
-										},
-										["n_dmg"] = 54,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 54,
-										["c_max"] = 0,
-										["id"] = 10298,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 56.84319928516919,
-							["end_time"] = 1662751380,
-							["colocacao"] = 1,
-							["last_event"] = 1662751379,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1662751363,
-							["serial"] = "Player-4465-02BB4683",
-							["aID"] = "4465-02BB4683",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008597,
-							["damage_from"] = {
-								["Vermina"] = true,
-							},
-							["targets"] = {
-								["Vermina"] = 429,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["total"] = 429.008597,
-							["aID"] = "4119",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 429.008597,
-							["monster"] = true,
-							["fight_component"] = true,
-							["end_time"] = 1662751380,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Elder Cloud Serpent",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Vermina"] = 103,
-										},
-										["n_dmg"] = 103,
-										["n_min"] = 32,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 103,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[8246] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 166,
-										["targets"] = {
-											["Vermina"] = 326,
-										},
-										["n_dmg"] = 326,
-										["n_min"] = 160,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 326,
-										["c_max"] = 0,
-										["id"] = 8246,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1662751377,
-							["damage_taken"] = 937.008597,
-							["start_time"] = 1662751366,
-							["serial"] = "Creature-0-4457-1-25451-4119-00001B910E",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 553,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Vermina"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 23.0018,
-							["total_without_pet"] = 69.0018,
-							["total"] = 69.0018,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BB4683",
-							["totalabsorb"] = 0.0018,
-							["last_hps"] = 4.185986411140011,
-							["targets"] = {
-								["Vermina"] = 69,
-							},
-							["totalover_without_pet"] = 0.0018,
-							["healing_taken"] = 69.0018,
-							["fight_component"] = true,
-							["end_time"] = 1662751380,
-							["tipo"] = 2,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20267] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Vermina"] = 23,
-										},
-										["n_max"] = 23,
-										["targets"] = {
-											["Vermina"] = 69,
-										},
-										["n_min"] = 23,
-										["counter"] = 4,
-										["overheal"] = 23,
-										["total"] = 69,
-										["c_max"] = 0,
-										["id"] = 20267,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 69,
-										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-								["Vermina"] = 23,
-							},
-							["aID"] = "4465-02BB4683",
-							["custom"] = 0,
-							["last_event"] = 1662751379,
-							["totaldenied"] = 0.0018,
-							["start_time"] = 1662751364,
-							["delay"] = 0,
-							["heal_enemy_amt"] = 0,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 553,
-					["_ActorTable"] = {
-						{
-							["received"] = 67.00322,
-							["resource"] = 0.00322,
-							["targets"] = {
-								["Vermina"] = 67,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "PALADIN",
-							["passiveover"] = 0.00322,
-							["fight_component"] = true,
-							["total"] = 67.00322,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									[28730] = {
-										["total"] = 67,
-										["id"] = 28730,
-										["totalover"] = 0,
-										["targets"] = {
-											["Vermina"] = 67,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 0.00322,
-							["alternatepower"] = 0.00322,
-							["last_event"] = 1662751363,
-							["tipo"] = 3,
-							["aID"] = "4465-02BB4683",
-							["serial"] = "Player-4465-02BB4683",
-							["flag_original"] = 1297,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 553,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[54499] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 54499,
-										["uptime"] = 16,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20185] = {
-										["activedamt"] = -1,
-										["id"] = 20185,
-										["targets"] = {
-										},
-										["actived_at"] = 1662751379,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 68,
-							["aID"] = "4465-02BB4683",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[377749] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 377749,
-										["uptime"] = 17,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 10298,
-										["uptime"] = 17,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 20375,
-										["uptime"] = 17,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 17,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 16,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[28730] = 1,
-								[20424] = 4,
-							},
-							["nome"] = "Vermina",
-							["tipo"] = 4,
-							["last_event"] = 1662751380,
-							["classe"] = "PALADIN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-02BB4683",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Elder Cloud Serpent",
-							["aID"] = "4119",
-							["spell_cast"] = {
-								[8246] = 2,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4457-1-25451-4119-00001B910E",
-							["flag_original"] = 68168,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 553,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vermina"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Vermina", -- [1]
-				},
-				["CombatStartedAt"] = 2546221.866,
-				["tempo_start"] = 1662751363,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1366, -- [1]
-					69, -- [2]
-					{
-						0, -- [1]
-						[0] = 67,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:23:01",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Elder Cloud Serpent",
-				["TotalElapsedCombatTime"] = 2546218.967,
-				["CombatEndedAt"] = 2546218.967,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:22:43",
-				["end_time"] = 2546218.967,
-				["combat_id"] = 553,
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Vermina"] = 937.003297,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Vermina"] = 69.0018,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["frags"] = {
-					["Elder Cloud Serpent"] = 1,
-				},
-				["combat_counter"] = 9320,
-				["totals_grupo"] = {
-					937, -- [1]
-					69, -- [2]
-					{
-						0, -- [1]
-						[0] = 67,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Elder Cloud Serpent",
-				["start_time"] = 2546201.532,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [10]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 552,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007065,
-							["damage_from"] = {
-								["Galak Windchaser"] = true,
-								["Galak Scout"] = true,
-							},
-							["targets"] = {
-								["Galak Windchaser"] = 36,
-							},
-							["delay"] = 1662751256,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 36.007065,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 36.007065,
-							["damage_taken"] = 137.007065,
-							["tipo"] = 1,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									[10298] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Galak Windchaser"] = 36,
-										},
-										["n_dmg"] = 36,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 36,
-										["c_max"] = 0,
-										["id"] = 10298,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 2.022641557165236,
-							["end_time"] = 1662751274,
-							["colocacao"] = 1,
-							["last_event"] = 1662751267,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1662751267,
-							["serial"] = "Player-4465-02BB4683",
-							["aID"] = "4465-02BB4683",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006888,
-							["damage_from"] = {
-								["Vermina"] = true,
-								["Agranok"] = true,
-							},
-							["targets"] = {
-								["Vermina"] = 60,
-								["Agranok"] = 57,
-							},
-							["delay"] = 1662751277,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["total"] = 117.006888,
-							["aID"] = "4096",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 117.006888,
-							["monster"] = true,
-							["fight_component"] = true,
-							["end_time"] = 1662751363,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Galak Windchaser",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Vermina"] = 60,
-											["Agranok"] = 57,
-										},
-										["n_dmg"] = 117,
-										["n_min"] = 27,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 117,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1662751277,
-							["damage_taken"] = 1413.006888,
-							["start_time"] = 1662751341,
-							["serial"] = "Creature-0-4457-1-25451-4096-00009B91E0",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.001844,
-							["damage_from"] = {
-								["Agranok"] = true,
-							},
-							["targets"] = {
-								["Vermina"] = 77,
-								["Agranok"] = 35,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["total"] = 112.001844,
-							["aID"] = "4094",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 112.001844,
-							["monster"] = true,
-							["fight_component"] = true,
-							["end_time"] = 1662751274,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Galak Scout",
-							["spells"] = {
-								["_ActorTable"] = {
-									[6660] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 39,
-										["targets"] = {
-											["Vermina"] = 77,
-											["Agranok"] = 35,
-										},
-										["n_dmg"] = 112,
-										["n_min"] = 35,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 112,
-										["c_max"] = 0,
-										["id"] = 6660,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 3,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["MISS"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1662751276,
-							["damage_taken"] = 236.001844,
-							["start_time"] = 1662751258,
-							["serial"] = "Creature-0-4457-1-25451-4094-00001B8CBD",
-							["classe"] = "UNKNOW",
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 552,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 552,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 552,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Vermina",
-							["grupo"] = true,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["aID"] = "4465-02BB4683",
-							["buff_uptime"] = 90,
-							["tipo"] = 4,
-							["last_event"] = 1662751274,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 20375,
-										["uptime"] = 18,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 18,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 10298,
-										["uptime"] = 18,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[377749] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 377749,
-										["uptime"] = 18,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[34769] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 34769,
-										["uptime"] = 18,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-02BB4683",
-							["classe"] = "PALADIN",
-						}, -- [1]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Galak Scout",
-							["aID"] = "4094",
-							["spell_cast"] = {
-								[6660] = 3,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4457-1-25451-4094-00001B8CBD",
-							["flag_original"] = 2632,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 552,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vermina"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Vermina", -- [1]
-				},
-				["CombatStartedAt"] = 2546201.248,
-				["tempo_start"] = 1662751256,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					264.9892049999999, -- [1]
-					-0.005707, -- [2]
-					{
-						0, -- [1]
-						[0] = -0.00591500000001588,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:21:15",
+				["data_fim"] = "15:37:29",
 				["cleu_timeline"] = {
 				},
 				["enemy"] = "Galak Windchaser",
-				["TotalElapsedCombatTime"] = 2546112.977,
-				["CombatEndedAt"] = 2546112.977,
+				["TotalElapsedCombatTime"] = 4.868000000016764,
+				["CombatEndedAt"] = 585621.087,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "21:20:57",
-				["end_time"] = 2546112.977,
-				["combat_id"] = 552,
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Vermina"] = 36.007065,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
+							["Vermina"] = 23.007803,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
-				},
-				["frags"] = {
-					["Galak Windchaser"] = 2,
-				},
-				["combat_counter"] = 9319,
-				["totals_grupo"] = {
-					36, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Galak Windchaser",
-				["start_time"] = 2546095.175,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [11]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 551,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004741,
-							["damage_from"] = {
-								["Galak Wrangler"] = true,
-							},
-							["targets"] = {
-								["Galak Wrangler"] = 806,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 806.004741,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1662751244,
-							["damage_taken"] = 62.004741,
-							["tipo"] = 1,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 312,
-										["g_amt"] = 0,
-										["n_max"] = 135,
-										["targets"] = {
-											["Galak Wrangler"] = 574,
-										},
-										["n_dmg"] = 262,
-										["n_min"] = 127,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 574,
-										["c_max"] = 312,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 312,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[20424] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 72,
-										["targets"] = {
-											["Galak Wrangler"] = 138,
-										},
-										["n_dmg"] = 138,
-										["n_min"] = 66,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 138,
-										["c_max"] = 0,
-										["id"] = 20424,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[20467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Galak Wrangler"] = 58,
-										},
-										["n_dmg"] = 58,
-										["n_min"] = 58,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 58,
-										["c_max"] = 0,
-										["id"] = 20467,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[10298] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Galak Wrangler"] = 36,
-										},
-										["n_dmg"] = 36,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 36,
-										["c_max"] = 0,
-										["id"] = 10298,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 85.73606435421036,
-							["total"] = 806.004741,
-							["colocacao"] = 1,
-							["last_event"] = 1662751242,
-							["on_hold"] = false,
-							["start_time"] = 1662751234,
-							["serial"] = "Player-4465-02BB4683",
-							["aID"] = "4465-02BB4683",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001538,
-							["damage_from"] = {
-								["Vermina"] = true,
-							},
-							["targets"] = {
-								["Vermina"] = 62,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["total"] = 62.001538,
-							["aID"] = "4093",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 62.001538,
-							["monster"] = true,
-							["fight_component"] = true,
-							["end_time"] = 1662751244,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Galak Wrangler",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Vermina"] = 62,
-										},
-										["n_dmg"] = 62,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 62,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1662751238,
-							["damage_taken"] = 806.001538,
-							["start_time"] = 1662751236,
-							["serial"] = "Creature-0-4457-1-25451-4093-00001B91EA",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 551,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Vermina"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 15.002376,
-							["total_without_pet"] = 75.002376,
-							["total"] = 75.002376,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BB4683",
-							["totalabsorb"] = 0.002376,
-							["last_hps"] = 8.964070275992823,
-							["targets"] = {
-								["Vermina"] = 75,
-							},
-							["totalover_without_pet"] = 0.002376,
-							["healing_taken"] = 75.002376,
-							["fight_component"] = true,
-							["end_time"] = 1662751244,
-							["tipo"] = 2,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20267] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Vermina"] = 15,
-										},
-										["n_max"] = 23,
-										["targets"] = {
-											["Vermina"] = 75,
-										},
-										["n_min"] = 13,
-										["counter"] = 4,
-										["overheal"] = 15,
-										["total"] = 75,
-										["c_max"] = 0,
-										["id"] = 20267,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 75,
-										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-								["Vermina"] = 15,
-							},
-							["aID"] = "4465-02BB4683",
-							["custom"] = 0,
-							["last_event"] = 1662751242,
-							["totaldenied"] = 0.002376,
-							["start_time"] = 1662751235,
-							["delay"] = 0,
-							["heal_enemy_amt"] = 0,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 551,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 551,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[54499] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 54499,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20185] = {
-										["activedamt"] = -1,
-										["id"] = 20185,
-										["targets"] = {
-										},
-										["actived_at"] = 1662751242,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 40,
-							["aID"] = "4465-02BB4683",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[377749] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 377749,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 10298,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 20375,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 8,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[20424] = 3,
-							},
-							["nome"] = "Vermina",
-							["tipo"] = 4,
-							["last_event"] = 1662751244,
-							["classe"] = "PALADIN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-02BB4683",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 551,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vermina"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Vermina", -- [1]
-				},
-				["CombatStartedAt"] = 2546093.559,
-				["tempo_start"] = 1662751234,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					867.9864289999999, -- [1]
-					75, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:20:44",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Galak Wrangler",
-				["TotalElapsedCombatTime"] = 2546082.608,
-				["CombatEndedAt"] = 2546082.608,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:20:35",
-				["end_time"] = 2546082.608,
-				["combat_id"] = 551,
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
 					["damage"] = {
 						{
-							["Vermina"] = 806.004741,
+							["Vermina"] = 724.003691,
 						}, -- [1]
 					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Vermina"] = 75.002376,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
 				},
-				["frags"] = {
-					["Galak Wrangler"] = 1,
-				},
-				["combat_counter"] = 9318,
-				["totals_grupo"] = {
-					806, -- [1]
-					75, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Galak Wrangler",
-				["start_time"] = 2546073.207,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [12]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 550,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006568,
-							["damage_from"] = {
-								["Galak Flame Guard"] = true,
-								["Galak Mauler"] = true,
-							},
-							["targets"] = {
-								["Galak Mauler"] = 932,
-								["Galak Flame Guard"] = 2125,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 3057.006568,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1662751194,
-							["damage_taken"] = 759.006568,
-							["tipo"] = 1,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 493,
-										["g_amt"] = 2,
-										["n_max"] = 152,
-										["targets"] = {
-											["Galak Mauler"] = 555,
-											["Galak Flame Guard"] = 817,
-										},
-										["n_dmg"] = 652,
-										["n_min"] = 112,
-										["g_dmg"] = 227,
-										["counter"] = 9,
-										["total"] = 1372,
-										["c_max"] = 273,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 220,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[26573] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Galak Flame Guard"] = 292,
-											["Galak Mauler"] = 81,
-										},
-										["n_dmg"] = 373,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 21,
-										["total"] = 373,
-										["c_max"] = 0,
-										["id"] = 26573,
-										["r_dmg"] = 113,
-										["r_amt"] = 7,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 20,
-										["spellschool"] = 2,
-										["MISS"] = 1,
-									},
-									[10298] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Galak Mauler"] = 36,
-											["Galak Flame Guard"] = 206,
-										},
-										["n_dmg"] = 242,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 15,
-										["total"] = 242,
-										["c_max"] = 0,
-										["id"] = 10298,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 14,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[20424] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 263,
-										["g_amt"] = 0,
-										["n_max"] = 75,
-										["targets"] = {
-											["Galak Flame Guard"] = 711,
-											["Galak Mauler"] = 197,
-										},
-										["n_dmg"] = 645,
-										["n_min"] = 53,
-										["g_dmg"] = 0,
-										["counter"] = 18,
-										["total"] = 908,
-										["c_max"] = 139,
-										["r_amt"] = 2,
-										["id"] = 20424,
-										["r_dmg"] = 112,
-										["b_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_amt"] = 0,
-										["PARRY"] = 4,
-										["c_min"] = 124,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["n_amt"] = 10,
-										["a_dmg"] = 0,
-										["MISS"] = 2,
-									},
-									[20467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 63,
-										["targets"] = {
-											["Galak Mauler"] = 63,
-											["Galak Flame Guard"] = 99,
-										},
-										["n_dmg"] = 162,
-										["n_min"] = 47,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 162,
-										["c_max"] = 0,
-										["id"] = 20467,
-										["r_dmg"] = 47,
-										["r_amt"] = 1,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[20271] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Galak Flame Guard"] = 0,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 20271,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 2,
-										["MISS"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 99.24701538815499,
-							["total"] = 3057.006568,
-							["colocacao"] = 1,
-							["last_event"] = 1662751192,
-							["on_hold"] = false,
-							["start_time"] = 1662751163,
-							["serial"] = "Player-4465-02BB4683",
-							["aID"] = "4465-02BB4683",
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.004385,
-							["damage_from"] = {
-								["Vermina"] = true,
-							},
-							["targets"] = {
-								["Vermina"] = 701,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 701.004385,
-							["damage_taken"] = 2125.004385,
-							["dps_started"] = false,
-							["end_time"] = 1662751194,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Galak Flame Guard",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 120,
-										["g_amt"] = 0,
-										["n_max"] = 74,
-										["targets"] = {
-											["Vermina"] = 701,
-										},
-										["n_dmg"] = 581,
-										["n_min"] = 30,
-										["g_dmg"] = 0,
-										["counter"] = 18,
-										["total"] = 701,
-										["r_amt"] = 0,
-										["c_max"] = 120,
-										["b_dmg"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["extra"] = {
-										},
-										["PARRY"] = 1,
-										["c_min"] = 120,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 12,
-										["MISS"] = 2,
-										["DODGE"] = 2,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 701.004385,
-							["custom"] = 0,
-							["last_event"] = 1662751187,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1662751164,
-							["serial"] = "Creature-0-4457-1-25451-7404-00001B8F95",
-							["aID"] = "7404",
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004149,
-							["damage_from"] = {
-								["Vermina"] = true,
-							},
-							["targets"] = {
-								["Vermina"] = 58,
-							},
-							["delay"] = 1662751168,
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 58.004149,
-							["damage_taken"] = 932.004149,
-							["dps_started"] = false,
-							["end_time"] = 1662751194,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Galak Mauler",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 58,
-										["targets"] = {
-											["Vermina"] = 58,
-										},
-										["n_dmg"] = 58,
-										["n_min"] = 58,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 58,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 1,
-										["spellschool"] = 1,
-										["DODGE"] = 1,
-									}, -- [1]
-									[13730] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = 13730,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["monster"] = true,
-							["total"] = 58.004149,
-							["custom"] = 0,
-							["last_event"] = 1662751168,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1662751193,
-							["serial"] = "Creature-0-4457-1-25451-4095-00001B8FD3",
-							["aID"] = "4095",
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 550,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Vermina"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 0.006577,
-							["total_without_pet"] = 273.006577,
-							["total"] = 273.006577,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BB4683",
-							["totalabsorb"] = 0.006577,
-							["last_hps"] = 9.238175994812272,
-							["targets"] = {
-								["Vermina"] = 273,
-							},
-							["totalover_without_pet"] = 0.006577,
-							["healing_taken"] = 273.006577,
-							["fight_component"] = true,
-							["end_time"] = 1662751194,
-							["tipo"] = 2,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20267] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 23,
-										["targets"] = {
-											["Vermina"] = 273,
-										},
-										["n_min"] = 22,
-										["counter"] = 12,
-										["overheal"] = 0,
-										["total"] = 273,
-										["c_max"] = 0,
-										["id"] = 20267,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 273,
-										["totaldenied"] = 0,
-										["n_amt"] = 12,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02BB4683",
-							["custom"] = 0,
-							["last_event"] = 1662751192,
-							["totaldenied"] = 0.006577,
-							["start_time"] = 1662751174,
-							["delay"] = 1662751169,
-							["heal_enemy_amt"] = 0,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 550,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 550,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[26573] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 26573,
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 3,
-									},
-									[54499] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 54499,
-										["uptime"] = 15,
-										["targets"] = {
-										},
-										["appliedamt"] = 3,
-									},
-									[20185] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 20185,
-										["uptime"] = 15,
-										["targets"] = {
-										},
-										["appliedamt"] = 3,
-									},
-									[25771] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 25771,
-										["uptime"] = 23,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["cooldowns_defensive"] = 1.004622,
-							["buff_uptime"] = 136,
-							["last_cooldown"] = {
-								1662751172.267, -- [1]
-								498, -- [2]
-							},
-							["aID"] = "4465-02BB4683",
-							["cooldowns_defensive_targets"] = {
-								["Vermina"] = 1,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[498] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 498,
-										["uptime"] = 12,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 31,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 20375,
-										["uptime"] = 31,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[377749] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 377749,
-										["uptime"] = 31,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 10298,
-										["uptime"] = 31,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 61,
-							["classe"] = "PALADIN",
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[26573] = 1,
-								[20271] = 4,
-								[20424] = 9,
-								[498] = 1,
-							},
-							["serial"] = "Player-4465-02BB4683",
-							["last_event"] = 1662751194,
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["nome"] = "Vermina",
-							["cooldowns_defensive_spells"] = {
-								["_ActorTable"] = {
-									[498] = {
-										["id"] = 498,
-										["targets"] = {
-											["Vermina"] = 1,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime_targets"] = {
-							},
-						}, -- [1]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Galak Mauler",
-							["aID"] = "4095",
-							["spell_cast"] = {
-								[13730] = 1,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4457-1-25451-4095-00001B8FD3",
-							["flag_original"] = 68168,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 550,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vermina"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Vermina", -- [1]
-				},
-				["CombatStartedAt"] = 2546072.957,
-				["tempo_start"] = 1662751163,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
+				["end_time"] = 585621.087,
+				["combat_id"] = 591,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["playing_solo"] = true,
-				["totals"] = {
-					3815.972007, -- [1]
-					273, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:19:54",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Galak Mauler",
-				["TotalElapsedCombatTime"] = 2546032.455,
-				["CombatEndedAt"] = 2546032.455,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:19:23",
-				["end_time"] = 2546032.455,
-				["combat_id"] = 550,
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Vermina"] = 3057.006568,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Vermina"] = 273.006577,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["frags"] = {
-					["Galak Mauler"] = 1,
-					["Galak Flame Guard"] = 2,
-				},
-				["combat_counter"] = 9317,
-				["totals_grupo"] = {
-					3057, -- [1]
-					273, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 1,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Galak Mauler",
-				["start_time"] = 2546001.653,
-				["TimeData"] = {
-				},
 				["spells_cast_timeline"] = {
-				},
-			}, -- [13]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 549,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006774,
-							["damage_from"] = {
-								["Galak Marauder"] = true,
-								["Galak Mauler"] = true,
-							},
-							["targets"] = {
-								["Galak Marauder"] = 1087,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
-							["classe"] = "PALADIN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1087.006774,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 1087.006774,
-							["damage_taken"] = 142.006774,
-							["tipo"] = 1,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 302,
-										["g_amt"] = 0,
-										["n_max"] = 152,
-										["targets"] = {
-											["Galak Marauder"] = 721,
-										},
-										["n_dmg"] = 419,
-										["n_min"] = 122,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 721,
-										["c_max"] = 302,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 302,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
-									}, -- [1]
-									[20424] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 133,
-										["g_amt"] = 0,
-										["n_max"] = 66,
-										["targets"] = {
-											["Galak Marauder"] = 256,
-										},
-										["n_dmg"] = 123,
-										["n_min"] = 57,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 256,
-										["c_max"] = 133,
-										["id"] = 20424,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 133,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[20467] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 56,
-										["targets"] = {
-											["Galak Marauder"] = 56,
-										},
-										["n_dmg"] = 56,
-										["n_min"] = 56,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 56,
-										["c_max"] = 0,
-										["id"] = 20467,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[10298] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 18,
-										["targets"] = {
-											["Galak Marauder"] = 54,
-										},
-										["n_dmg"] = 54,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 54,
-										["c_max"] = 0,
-										["id"] = 10298,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 85.35585190195384,
-							["end_time"] = 1662751158,
-							["colocacao"] = 1,
-							["last_event"] = 1662751157,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1662751145,
-							["serial"] = "Player-4465-02BB4683",
-							["aID"] = "4465-02BB4683",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005708,
-							["damage_from"] = {
-								["Vermina"] = true,
-							},
-							["targets"] = {
-								["Vermina"] = 91,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["total"] = 91.005708,
-							["aID"] = "4099",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 91.005708,
-							["monster"] = true,
-							["fight_component"] = true,
-							["end_time"] = 1662751158,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Galak Marauder",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 35,
-										["targets"] = {
-											["Vermina"] = 91,
-										},
-										["n_dmg"] = 91,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 91,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["n_amt"] = 3,
-										["DODGE"] = 1,
-										["MISS"] = 1,
-									}, -- [1]
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1662751153,
-							["damage_taken"] = 1087.005708,
-							["start_time"] = 1662751145,
-							["serial"] = "Creature-0-4457-1-25451-4099-00001B88FF",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 549,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Vermina"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 0.008766,
-							["total_without_pet"] = 91.00876600000001,
-							["total"] = 91.00876600000001,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BB4683",
-							["totalabsorb"] = 0.008766,
-							["last_hps"] = 7.146349901657166,
-							["targets"] = {
-								["Vermina"] = 91,
-							},
-							["totalover_without_pet"] = 0.008766,
-							["healing_taken"] = 91.00876600000001,
-							["fight_component"] = true,
-							["end_time"] = 1662751158,
-							["tipo"] = 2,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20267] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 23,
-										["targets"] = {
-											["Vermina"] = 91,
-										},
-										["n_min"] = 22,
-										["counter"] = 4,
-										["overheal"] = 0,
-										["total"] = 91,
-										["c_max"] = 0,
-										["id"] = 20267,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 91,
-										["totaldenied"] = 0,
-										["n_amt"] = 4,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02BB4683",
-							["custom"] = 0,
-							["last_event"] = 1662751157,
-							["totaldenied"] = 0.008766,
-							["start_time"] = 1662751145,
-							["delay"] = 0,
-							["heal_enemy_amt"] = 0,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 549,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 549,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[20185] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 20185,
-										["uptime"] = 12,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[54499] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 54499,
-										["uptime"] = 12,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 52,
-							["aID"] = "4465-02BB4683",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[377749] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 377749,
-										["uptime"] = 13,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 10298,
-										["uptime"] = 13,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 20375,
-										["uptime"] = 13,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 13,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 24,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								[20271] = 1,
-								[20424] = 3,
-							},
-							["nome"] = "Vermina",
-							["tipo"] = 4,
-							["last_event"] = 1662751158,
-							["classe"] = "PALADIN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-02BB4683",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 549,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vermina"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Vermina", -- [1]
-				},
-				["CombatStartedAt"] = 2546001.653,
-				["tempo_start"] = 1662751145,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1177.996458, -- [1]
-					91, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 					["Vermina"] = {
 						{
 							true, -- [1]
 							1, -- [2]
-							51, -- [3]
-							1662751163.55, -- [4]
-							954, -- [5]
-							"Galak Mauler", -- [6]
+							25, -- [3]
+							1664458660.542, -- [4]
+							1172, -- [5]
+							"Crag Stalker", -- [6]
 							nil, -- [7]
 							1, -- [8]
 							false, -- [9]
@@ -7931,163 +1130,3322 @@ _detalhes_database = {
 						["n"] = 2,
 					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:19:18",
+				["data_inicio"] = "15:37:24",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Windchaser"] = 1,
+				},
+				["start_time"] = 585616.219,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Windchaser",
+			}, -- [2]
+			{
+				{
+					["combatId"] = 590,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007616,
+							["damage_from"] = {
+								["Galak Scout"] = true,
+								["Galak Windchaser"] = true,
+							},
+							["targets"] = {
+								["Galak Scout"] = 736,
+							},
+							["total"] = 736.007616,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "PALADIN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 736.007616,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1664458624,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02BB4683",
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 147,
+										["targets"] = {
+											["Galak Scout"] = 417,
+										},
+										["n_dmg"] = 417,
+										["n_min"] = 132,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 417,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 147,
+										["r_amt"] = 0,
+									}, -- [1]
+									[20424] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 77,
+										["targets"] = {
+											["Galak Scout"] = 148,
+										},
+										["n_dmg"] = 148,
+										["n_min"] = 71,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 148,
+										["c_max"] = 0,
+										["id"] = 20424,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20467] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 117,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Galak Scout"] = 117,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 117,
+										["c_max"] = 117,
+										["id"] = 20467,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 117,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10298] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 18,
+										["targets"] = {
+											["Galak Scout"] = 54,
+										},
+										["n_dmg"] = 54,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 54,
+										["c_max"] = 0,
+										["id"] = 10298,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02BB4683",
+							["last_dps"] = 96.89410426663835,
+							["custom"] = 0,
+							["last_event"] = 1664458623,
+							["damage_taken"] = 117.007616,
+							["start_time"] = 1664458615,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007011,
+							["total"] = 91.007011,
+							["damage_from"] = {
+								["Vermina"] = true,
+							},
+							["targets"] = {
+								["Vermina"] = 91,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 91.007011,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458624,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Galak Scout",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 34,
+										["targets"] = {
+											["Vermina"] = 91,
+										},
+										["n_dmg"] = 91,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 91,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "4094",
+							["serial"] = "Creature-0-5571-1-6623-4094-0000355ED5",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458622,
+							["damage_taken"] = 736.007011,
+							["start_time"] = 1664458616,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 590,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+								["Vermina"] = 23,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PALADIN",
+							["totalover"] = 23.006444,
+							["total_without_pet"] = 24.006444,
+							["total"] = 24.006444,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02BB4683",
+							["totalabsorb"] = 0.006444,
+							["last_hps"] = 3.160406003199856,
+							["targets"] = {
+								["Vermina"] = 24,
+							},
+							["totalover_without_pet"] = 0.006444,
+							["healing_taken"] = 24.006444,
+							["fight_component"] = true,
+							["end_time"] = 1664458624,
+							["healing_from"] = {
+								["Vermina"] = true,
+							},
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[20267] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Vermina"] = 23,
+										},
+										["n_max"] = 24,
+										["targets"] = {
+											["Vermina"] = 24,
+										},
+										["n_min"] = 24,
+										["counter"] = 2,
+										["overheal"] = 23,
+										["total"] = 24,
+										["c_max"] = 0,
+										["id"] = 20267,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 24,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1664458615,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02BB4683",
+							["totaldenied"] = 0.006444,
+							["delay"] = 0,
+							["last_event"] = 1664458623,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 590,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 590,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[20185] = {
+										["activedamt"] = 0,
+										["id"] = 20185,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[54499] = {
+										["activedamt"] = 0,
+										["id"] = 54499,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 27,
+							["aID"] = "4465-02BB4683",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[19835] = {
+										["activedamt"] = 1,
+										["id"] = 19835,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[10298] = {
+										["activedamt"] = 1,
+										["id"] = 10298,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20375] = {
+										["activedamt"] = 1,
+										["id"] = 20375,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 16,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[20271] = 1,
+								[20424] = 2,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Vermina",
+							["last_event"] = 1664458624,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["serial"] = "Player-4465-02BB4683",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 590,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Vermina"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Vermina", -- [1]
+				},
+				["tempo_start"] = 1664458615,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Galak Marauder",
-				["TotalElapsedCombatTime"] = 2545996.802,
-				["CombatEndedAt"] = 2545996.802,
+				["enemy"] = "Galak Scout",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					826.991693, -- [1]
+					24, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["TotalElapsedCombatTime"] = 585595.952,
+				["combat_counter"] = 9361,
+				["frags_need_refresh"] = true,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "21:19:05",
-				["end_time"] = 2545996.802,
-				["combat_id"] = 549,
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Vermina"] = 1087.006774,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Vermina"] = 91.00876600000001,
+							["Vermina"] = 24.006444,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Vermina"] = 736.007616,
+						}, -- [1]
+					},
 				},
-				["frags"] = {
-					["Galak Marauder"] = 1,
+				["end_time"] = 585595.952,
+				["player_last_events"] = {
+					["Vermina"] = {
+						{
+							true, -- [1]
+							1, -- [2]
+							26, -- [3]
+							1664458643.867, -- [4]
+							1172, -- [5]
+							"Galak Windchaser", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+							false, -- [11]
+							false, -- [12]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
 				},
-				["combat_counter"] = 9316,
+				["instance_type"] = "none",
+				["CombatEndedAt"] = 585595.952,
+				["data_inicio"] = "15:36:55",
 				["totals_grupo"] = {
-					1087, -- [1]
-					91, -- [2]
+					736, -- [1]
+					24, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Galak Marauder",
-				["start_time"] = 2545983.468,
-				["TimeData"] = {
 				},
 				["spells_cast_timeline"] = {
 				},
-			}, -- [14]
+				["data_fim"] = "15:37:04",
+				["combat_id"] = 590,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Scout"] = 1,
+				},
+				["start_time"] = 585587.555,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Scout",
+			}, -- [3]
 			{
 				{
+					["combatId"] = 589,
 					["tipo"] = 2,
-					["combatId"] = 548,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00426,
+							["totalabsorbed"] = 0.006704,
 							["damage_from"] = {
-								["Galak Stormer"] = true,
+								["Galak Windchaser"] = true,
 							},
 							["targets"] = {
-								["Galak Stormer"] = 614,
+								["Galak Windchaser"] = 591,
 							},
-							["delay"] = 0,
+							["total"] = 591.006704,
 							["pets"] = {
 							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["classe"] = "PALADIN",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 614.0042599999999,
-							["on_hold"] = false,
+							["total_without_pet"] = 591.006704,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
-							["total"] = 614.0042599999999,
-							["damage_taken"] = 27.00426,
-							["tipo"] = 1,
+							["end_time"] = 1664458603,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02BB4683",
 							["nome"] = "Vermina",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 2,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 474,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 145,
 										["targets"] = {
-											["Galak Stormer"] = 474,
+											["Galak Windchaser"] = 277,
 										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 277,
+										["n_min"] = 132,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 474,
-										["c_max"] = 243,
+										["total"] = 277,
+										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 231,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[20424] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 151,
+										["g_amt"] = 0,
+										["n_max"] = 68,
+										["targets"] = {
+											["Galak Windchaser"] = 219,
+										},
+										["n_dmg"] = 68,
+										["n_min"] = 68,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 219,
+										["c_max"] = 151,
+										["id"] = 20424,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 151,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 59,
+										["targets"] = {
+											["Galak Windchaser"] = 59,
+										},
+										["n_dmg"] = 59,
+										["n_min"] = 59,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 59,
+										["c_max"] = 0,
+										["id"] = 20467,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10298] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 18,
+										["targets"] = {
+											["Galak Windchaser"] = 36,
+										},
+										["n_dmg"] = 36,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 36,
+										["c_max"] = 0,
+										["id"] = 10298,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02BB4683",
+							["last_dps"] = 105.4992331318665,
+							["custom"] = 0,
+							["last_event"] = 1664458602,
+							["damage_taken"] = 52.006704,
+							["start_time"] = 1664458596,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002771,
+							["total"] = 52.002771,
+							["damage_from"] = {
+								["Vermina"] = true,
+							},
+							["targets"] = {
+								["Vermina"] = 52,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 52.002771,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458603,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Galak Windchaser",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Vermina"] = 52,
+										},
+										["n_dmg"] = 52,
+										["n_min"] = 24,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 52,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
 										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "4096",
+							["serial"] = "Creature-0-5571-1-6623-4096-0000359E57",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458602,
+							["damage_taken"] = 591.0027709999999,
+							["start_time"] = 1664458598,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 589,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+								["Vermina"] = 69,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PALADIN",
+							["totalover"] = 69.00474,
+							["total_without_pet"] = 24.00474,
+							["total"] = 24.00474,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02BB4683",
+							["totalabsorb"] = 0.00474,
+							["last_hps"] = 4.880004065872591,
+							["targets"] = {
+								["Vermina"] = 24,
+							},
+							["totalover_without_pet"] = 0.00474,
+							["healing_taken"] = 24.00474,
+							["fight_component"] = true,
+							["end_time"] = 1664458603,
+							["healing_from"] = {
+								["Vermina"] = true,
+							},
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[20267] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Vermina"] = 69,
+										},
+										["n_max"] = 24,
+										["targets"] = {
+											["Vermina"] = 24,
+										},
+										["n_min"] = 24,
+										["counter"] = 4,
+										["overheal"] = 69,
+										["total"] = 24,
+										["c_max"] = 0,
+										["id"] = 20267,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 24,
+										["totaldenied"] = 0,
+										["n_amt"] = 4,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1664458596,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02BB4683",
+							["totaldenied"] = 0.00474,
+							["delay"] = 0,
+							["last_event"] = 1664458601,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 589,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 589,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[54499] = {
+										["activedamt"] = 0,
+										["id"] = 54499,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20185] = {
+										["activedamt"] = -1,
+										["id"] = 20185,
+										["targets"] = {
+										},
+										["actived_at"] = 1664458602,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 21,
+							["aID"] = "4465-02BB4683",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[19835] = {
+										["activedamt"] = 1,
+										["id"] = 19835,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[10298] = {
+										["activedamt"] = 1,
+										["id"] = 10298,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20375] = {
+										["activedamt"] = 1,
+										["id"] = 20375,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 6,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[20424] = 2,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Vermina",
+							["last_event"] = 1664458603,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["serial"] = "Player-4465-02BB4683",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 589,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Vermina"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Vermina", -- [1]
+				},
+				["CombatStartedAt"] = 585586.219,
+				["tempo_start"] = 1664458596,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9360,
+				["playing_solo"] = true,
+				["totals"] = {
+					643, -- [1]
+					24, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					591, -- [1]
+					24, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:36:43",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Galak Windchaser",
+				["TotalElapsedCombatTime"] = 585574.871,
+				["CombatEndedAt"] = 585574.871,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Vermina"] = 24.00474,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Vermina"] = 591.006704,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 585574.871,
+				["combat_id"] = 589,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:36:37",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Windchaser"] = 1,
+				},
+				["start_time"] = 585568.653,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Windchaser",
+			}, -- [4]
+			{
+				{
+					["combatId"] = 588,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007141,
+							["damage_from"] = {
+								["Galak Windchaser"] = true,
+							},
+							["targets"] = {
+								["Galak Windchaser"] = 640,
+							},
+							["total"] = 640.007141,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "PALADIN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 640.007141,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1664458587,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02BB4683",
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 274,
+										["g_amt"] = 0,
+										["n_max"] = 133,
+										["targets"] = {
+											["Galak Windchaser"] = 407,
+										},
+										["n_dmg"] = 133,
+										["n_min"] = 133,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 407,
+										["c_max"] = 274,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 274,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[20424] = {
 										["c_amt"] = 0,
 										["b_amt"] = 1,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 71,
+										["n_max"] = 75,
 										["targets"] = {
-											["Galak Stormer"] = 122,
+											["Galak Windchaser"] = 130,
 										},
-										["n_dmg"] = 122,
-										["n_min"] = 51,
+										["n_dmg"] = 130,
+										["n_min"] = 55,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 122,
+										["total"] = 130,
 										["c_max"] = 0,
 										["id"] = 20424,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 51,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
+										["b_dmg"] = 55,
+										["r_amt"] = 0,
+									},
+									[20467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 66,
+										["targets"] = {
+											["Galak Windchaser"] = 66,
+										},
+										["n_dmg"] = 66,
+										["n_min"] = 66,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 66,
+										["c_max"] = 0,
+										["id"] = 20467,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
 										["extra"] = {
 										},
-										["spellschool"] = 2,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
+									[10298] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 19,
+										["targets"] = {
+											["Galak Windchaser"] = 37,
+										},
+										["n_dmg"] = 37,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 37,
+										["c_max"] = 0,
+										["id"] = 10298,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02BB4683",
+							["last_dps"] = 160.3224301067794,
+							["custom"] = 0,
+							["last_event"] = 1664458586,
+							["damage_taken"] = 57.007141,
+							["start_time"] = 1664458582,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006275,
+							["total"] = 57.006275,
+							["damage_from"] = {
+								["Vermina"] = true,
+							},
+							["targets"] = {
+								["Vermina"] = 57,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 57.006275,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458587,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Galak Windchaser",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Vermina"] = 57,
+										},
+										["n_dmg"] = 57,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 57,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "4096",
+							["serial"] = "Creature-0-5571-1-6623-4096-0000359EBF",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458584,
+							["damage_taken"] = 640.006275,
+							["start_time"] = 1664458582,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 588,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.005416,
+							["total_without_pet"] = 94.005416,
+							["total"] = 94.005416,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02BB4683",
+							["totalabsorb"] = 0.005416,
+							["last_hps"] = 23.54845090129818,
+							["targets"] = {
+								["Vermina"] = 94,
+							},
+							["totalover_without_pet"] = 0.005416,
+							["healing_taken"] = 94.005416,
+							["fight_component"] = true,
+							["end_time"] = 1664458587,
+							["healing_from"] = {
+								["Vermina"] = true,
+							},
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[20267] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 24,
+										["targets"] = {
+											["Vermina"] = 94,
+										},
+										["n_min"] = 23,
+										["counter"] = 4,
+										["overheal"] = 0,
+										["total"] = 94,
+										["c_max"] = 0,
+										["id"] = 20267,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 94,
+										["totaldenied"] = 0,
+										["n_amt"] = 4,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1664458582,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02BB4683",
+							["totaldenied"] = 0.005416,
+							["delay"] = 0,
+							["last_event"] = 1664458586,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 588,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 588,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[20185] = {
+										["activedamt"] = 0,
+										["id"] = 20185,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[54499] = {
+										["activedamt"] = 0,
+										["id"] = 54499,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 15,
+							["aID"] = "4465-02BB4683",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[19835] = {
+										["activedamt"] = 1,
+										["id"] = 19835,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[10298] = {
+										["activedamt"] = 1,
+										["id"] = 10298,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20375] = {
+										["activedamt"] = 1,
+										["id"] = 20375,
+										["targets"] = {
+										},
+										["uptime"] = 5,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 8,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[20271] = 1,
+								[20424] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Vermina",
+							["last_event"] = 1664458587,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["serial"] = "Player-4465-02BB4683",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 588,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Vermina"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Vermina", -- [1]
+				},
+				["CombatStartedAt"] = 585568.383,
+				["tempo_start"] = 1664458582,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9359,
+				["playing_solo"] = true,
+				["totals"] = {
+					697, -- [1]
+					94, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					640, -- [1]
+					94, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:36:27",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Galak Windchaser",
+				["TotalElapsedCombatTime"] = 585559.054,
+				["CombatEndedAt"] = 585559.054,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Vermina"] = 94.005416,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Vermina"] = 640.007141,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 585559.054,
+				["combat_id"] = 588,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:36:22",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Windchaser"] = 1,
+				},
+				["start_time"] = 585554.531,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Windchaser",
+			}, -- [5]
+			{
+				{
+					["combatId"] = 587,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006592,
+							["aID"] = "4465-02BB4683",
+							["damage_from"] = {
+								["Galak Scout"] = true,
+								["Galak Mauler"] = true,
+								["Galak Stormer"] = true,
+								["Galak Wrangler"] = true,
+							},
+							["targets"] = {
+								["Galak Scout"] = 1486,
+								["Galak Mauler"] = 1727,
+								["Galak Stormer"] = 654,
+								["Galak Wrangler"] = 815,
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["end_time"] = 1664458570,
+							["classe"] = "PALADIN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 4682.006592,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 4682.006592,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 786,
+										["g_amt"] = 0,
+										["n_max"] = 147,
+										["targets"] = {
+											["Galak Scout"] = 443,
+											["Galak Mauler"] = 655,
+											["Galak Stormer"] = 292,
+											["Galak Wrangler"] = 359,
+										},
+										["n_dmg"] = 963,
+										["n_min"] = 124,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 1749,
+										["c_max"] = 309,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 3,
+										["c_min"] = 235,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[26573] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Galak Scout"] = 212,
+											["Galak Mauler"] = 326,
+											["Galak Wrangler"] = 100,
+										},
+										["n_dmg"] = 638,
+										["n_min"] = 19,
+										["g_dmg"] = 0,
+										["counter"] = 31,
+										["total"] = 638,
+										["c_max"] = 0,
+										["id"] = 26573,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 31,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[67485] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 157,
+										["targets"] = {
+											["Galak Stormer"] = 157,
+											["Galak Wrangler"] = 157,
+										},
+										["n_dmg"] = 314,
+										["n_min"] = 157,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 314,
+										["c_max"] = 0,
+										["id"] = 67485,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10298] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 19,
+										["targets"] = {
+											["Galak Scout"] = 222,
+											["Galak Mauler"] = 184,
+											["Galak Wrangler"] = 19,
+										},
+										["n_dmg"] = 425,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 23,
+										["total"] = 425,
+										["c_max"] = 0,
+										["id"] = 10298,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 23,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20467] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 131,
+										["g_amt"] = 0,
+										["n_max"] = 64,
+										["targets"] = {
+											["Galak Scout"] = 64,
+											["Galak Mauler"] = 117,
+											["Galak Stormer"] = 131,
+											["Galak Wrangler"] = 56,
+										},
+										["n_dmg"] = 237,
+										["n_min"] = 56,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 368,
+										["c_max"] = 131,
+										["id"] = 20467,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 131,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20424] = {
+										["c_amt"] = 4,
+										["b_amt"] = 1,
+										["c_dmg"] = 512,
+										["g_amt"] = 0,
+										["n_max"] = 78,
+										["targets"] = {
+											["Galak Scout"] = 545,
+											["Galak Mauler"] = 445,
+											["Galak Stormer"] = 74,
+											["Galak Wrangler"] = 124,
+										},
+										["n_dmg"] = 676,
+										["n_min"] = 47,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 1188,
+										["c_max"] = 146,
+										["id"] = 20424,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 120,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 10,
+										["b_dmg"] = 47,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02BB4683",
+							["last_dps"] = 88.36642367517423,
+							["custom"] = 0,
+							["last_event"] = 1664458569,
+							["damage_taken"] = 1335.006592,
+							["start_time"] = 1664458526,
+							["delay"] = 1664458554,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006864,
+							["aID"] = "4097",
+							["damage_from"] = {
+								["Vermina"] = true,
+							},
+							["targets"] = {
+								["Vermina"] = 95,
+							},
+							["end_time"] = 1664458570,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 95.006864,
+							["monster"] = true,
+							["dps_started"] = false,
+							["total"] = 95.006864,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Galak Stormer",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[9532] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 95,
+										["targets"] = {
+											["Vermina"] = 95,
+										},
+										["n_dmg"] = 95,
+										["n_min"] = 95,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 95,
+										["c_max"] = 0,
+										["id"] = 9532,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["serial"] = "Creature-0-5571-1-6623-4097-0000359E5C",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458519,
+							["damage_taken"] = 654.006864,
+							["start_time"] = 1664458569,
+							["delay"] = 1664458519,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.007612,
+							["total"] = 393.007612,
+							["damage_from"] = {
+								["Vermina"] = true,
+							},
+							["targets"] = {
+								["Vermina"] = 393,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 393.007612,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458570,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Galak Scout",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 36,
+										["targets"] = {
+											["Vermina"] = 321,
+										},
+										["n_dmg"] = 321,
+										["n_min"] = 13,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 321,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 3,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 12,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[6660] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Vermina"] = 72,
+										},
+										["n_dmg"] = 72,
+										["n_min"] = 35,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 72,
+										["c_max"] = 0,
+										["id"] = 6660,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["aID"] = "4094",
+							["serial"] = "Creature-0-5571-1-6623-4094-0000359ED4",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458542,
+							["damage_taken"] = 1486.007612,
+							["start_time"] = 1664458548,
+							["delay"] = 1664458542,
+							["tipo"] = 1,
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.008218,
+							["total"] = 413.008218,
+							["damage_from"] = {
+								["Vermina"] = true,
+							},
+							["targets"] = {
+								["Vermina"] = 413,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 413.008218,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458570,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Galak Wrangler",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Vermina"] = 29,
+										},
+										["n_dmg"] = 29,
+										["n_min"] = 29,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 29,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[6533] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 6533,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[6660] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 48,
+										["targets"] = {
+											["Vermina"] = 384,
+										},
+										["n_dmg"] = 384,
+										["n_min"] = 19,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 384,
+										["c_max"] = 0,
+										["id"] = 6660,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 12,
+										["a_amt"] = 0,
+										["n_amt"] = 11,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["aID"] = "4093",
+							["serial"] = "Creature-0-5571-1-6623-4093-0000359EA5",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458566,
+							["damage_taken"] = 815.0082179999999,
+							["start_time"] = 1664458526,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [4]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.007457,
+							["total"] = 434.007457,
+							["damage_from"] = {
+								["Vermina"] = true,
+							},
+							["targets"] = {
+								["Vermina"] = 434,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 434.007457,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458570,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Galak Mauler",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 59,
+										["targets"] = {
+											["Vermina"] = 434,
+										},
+										["n_dmg"] = 434,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 434,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 2,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 10,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[13730] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 13730,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["aID"] = "4095",
+							["serial"] = "Creature-0-5571-1-6623-4095-0000359E71",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458553,
+							["damage_taken"] = 1727.007457,
+							["start_time"] = 1664458548,
+							["delay"] = 1664458553,
+							["tipo"] = 1,
+						}, -- [5]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 587,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.005695,
+							["total_without_pet"] = 824.0056950000001,
+							["total"] = 824.0056950000001,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02BB4683",
+							["totalabsorb"] = 0.005695,
+							["last_hps"] = 15.55197219917251,
+							["targets"] = {
+								["Vermina"] = 824,
+							},
+							["totalover_without_pet"] = 0.005695,
+							["healing_taken"] = 824.0056950000001,
+							["fight_component"] = true,
+							["end_time"] = 1664458570,
+							["healing_from"] = {
+								["Vermina"] = true,
+							},
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[20267] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 24,
+										["targets"] = {
+											["Vermina"] = 376,
+										},
+										["n_min"] = 23,
+										["counter"] = 16,
+										["overheal"] = 0,
+										["total"] = 376,
+										["c_max"] = 0,
+										["id"] = 20267,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 376,
+										["totaldenied"] = 0,
+										["n_amt"] = 16,
+										["absorbed"] = 0,
+									},
+									[1026] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 448,
+										["targets"] = {
+											["Vermina"] = 448,
+										},
+										["n_min"] = 448,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 448,
+										["c_max"] = 0,
+										["id"] = 1026,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 448,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1664458528,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02BB4683",
+							["totaldenied"] = 0.005695,
+							["delay"] = 1664458522,
+							["last_event"] = 1664458569,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 587,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 587,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[62124] = {
+										["activedamt"] = 0,
+										["id"] = 62124,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[26573] = {
+										["activedamt"] = 0,
+										["id"] = 26573,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 8,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20185] = {
+										["activedamt"] = 0,
+										["id"] = 20185,
+										["targets"] = {
+										},
+										["uptime"] = 36,
+										["appliedamt"] = 5,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[54499] = {
+										["activedamt"] = 0,
+										["id"] = 54499,
+										["targets"] = {
+										},
+										["uptime"] = 36,
+										["appliedamt"] = 5,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[25771] = {
+										["activedamt"] = 1,
+										["id"] = 25771,
+										["targets"] = {
+										},
+										["uptime"] = 37,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["cooldowns_defensive"] = 1.003432,
+							["buff_uptime"] = 174,
+							["last_cooldown"] = {
+								1664458532.648, -- [1]
+								498, -- [2]
+							},
+							["aID"] = "4465-02BB4683",
+							["cooldowns_defensive_targets"] = {
+								["Vermina"] = 1,
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[19835] = {
+										["activedamt"] = 1,
+										["id"] = 19835,
+										["targets"] = {
+										},
+										["uptime"] = 54,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[10298] = {
+										["activedamt"] = 1,
+										["id"] = 10298,
+										["targets"] = {
+										},
+										["uptime"] = 54,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[498] = {
+										["activedamt"] = 1,
+										["id"] = 498,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20375] = {
+										["activedamt"] = 1,
+										["id"] = 20375,
+										["targets"] = {
+										},
+										["uptime"] = 54,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 131,
+							["cooldowns_defensive_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[498] = {
+										["id"] = 498,
+										["targets"] = {
+											["Vermina"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[62124] = 1,
+								[26573] = 2,
+								[1026] = 1,
+								[20424] = 10,
+								[20271] = 5,
+								[498] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Vermina",
+							["last_event"] = 1664458570,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["serial"] = "Player-4465-02BB4683",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["monster"] = true,
+							["nome"] = "Galak Stormer",
+							["flag_original"] = 68168,
+							["spell_cast"] = {
+								[9532] = 1,
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5571-1-6623-4097-0000359E5C",
+							["aID"] = "4097",
+						}, -- [2]
+						{
+							["monster"] = true,
+							["nome"] = "Galak Scout",
+							["flag_original"] = 2632,
+							["spell_cast"] = {
+								[6660] = 2,
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5571-1-6623-4094-0000359ED4",
+							["aID"] = "4094",
+						}, -- [3]
+						{
+							["monster"] = true,
+							["nome"] = "Galak Wrangler",
+							["flag_original"] = 2632,
+							["spell_cast"] = {
+								[6660] = 12,
+								[6533] = 1,
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5571-1-6623-4093-0000359EA5",
+							["aID"] = "4093",
+						}, -- [4]
+						{
+							["monster"] = true,
+							["nome"] = "Galak Mauler",
+							["flag_original"] = 68168,
+							["spell_cast"] = {
+								[13730] = 1,
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5571-1-6623-4095-0000359E71",
+							["aID"] = "4095",
+						}, -- [5]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 587,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Vermina"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Vermina", -- [1]
+				},
+				["CombatStartedAt"] = 585554.187,
+				["tempo_start"] = 1664458516,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9358,
+				["playing_solo"] = true,
+				["totals"] = {
+					6017, -- [1]
+					824, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 1,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					4682, -- [1]
+					824, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 1,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:36:10",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Galak Stormer",
+				["TotalElapsedCombatTime"] = 53.83499999996275,
+				["CombatEndedAt"] = 585542,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Vermina"] = 824.0056950000001,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Vermina"] = 4682.006592,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 585542,
+				["combat_id"] = 587,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:35:16",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Scout"] = 2,
+					["Galak Mauler"] = 2,
+					["Galak Stormer"] = 1,
+					["Galak Wrangler"] = 1,
+				},
+				["start_time"] = 585488.165,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Stormer",
+			}, -- [6]
+			{
+				{
+					["combatId"] = 586,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007938,
+							["damage_from"] = {
+								["Galak Marauder"] = true,
+							},
+							["targets"] = {
+								["Galak Marauder"] = 866,
+							},
+							["total"] = 866.007938,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "PALADIN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 866.007938,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1664458506,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02BB4683",
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 293,
+										["g_amt"] = 0,
+										["n_max"] = 137,
+										["targets"] = {
+											["Galak Marauder"] = 564,
+										},
+										["n_dmg"] = 271,
+										["n_min"] = 134,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 564,
+										["c_max"] = 293,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 293,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[20424] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 78,
+										["targets"] = {
+											["Galak Marauder"] = 146,
+										},
+										["n_dmg"] = 146,
+										["n_min"] = 68,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 146,
+										["c_max"] = 0,
+										["id"] = 20424,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 64,
+										["targets"] = {
+											["Galak Marauder"] = 64,
+										},
+										["n_dmg"] = 64,
+										["n_min"] = 64,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 64,
+										["c_max"] = 0,
+										["id"] = 20467,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10298] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 19,
+										["targets"] = {
+											["Galak Marauder"] = 92,
+										},
+										["n_dmg"] = 92,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 92,
+										["c_max"] = 0,
+										["id"] = 10298,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02BB4683",
+							["last_dps"] = 76.42145587758911,
+							["custom"] = 0,
+							["last_event"] = 1664458506,
+							["damage_taken"] = 172.007938,
+							["start_time"] = 1664458495,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002668,
+							["total"] = 172.002668,
+							["damage_from"] = {
+								["Vermina"] = true,
+							},
+							["targets"] = {
+								["Vermina"] = 172,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 172.002668,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458506,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Galak Marauder",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 38,
+										["targets"] = {
+											["Vermina"] = 172,
+										},
+										["n_dmg"] = 172,
+										["n_min"] = 29,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 172,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "4099",
+							["serial"] = "Creature-0-5571-1-6623-4099-0000359004",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458502,
+							["damage_taken"] = 866.002668,
+							["start_time"] = 1664458495,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 586,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.002078,
+							["total_without_pet"] = 46.002078,
+							["total"] = 46.002078,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02BB4683",
+							["totalabsorb"] = 0.002078,
+							["last_hps"] = 4.059484468783717,
+							["targets"] = {
+								["Vermina"] = 46,
+							},
+							["totalover_without_pet"] = 0.002078,
+							["healing_taken"] = 46.002078,
+							["fight_component"] = true,
+							["end_time"] = 1664458506,
+							["healing_from"] = {
+								["Vermina"] = true,
+							},
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[20267] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 23,
+										["targets"] = {
+											["Vermina"] = 46,
+										},
+										["n_min"] = 23,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 46,
+										["c_max"] = 0,
+										["id"] = 20267,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 46,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1664458502,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02BB4683",
+							["totaldenied"] = 0.002078,
+							["delay"] = 0,
+							["last_event"] = 1664458506,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 586,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 586,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[54499] = {
+										["activedamt"] = 0,
+										["id"] = 54499,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20185] = {
+										["activedamt"] = 0,
+										["id"] = 20185,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[62124] = {
+										["activedamt"] = -1,
+										["id"] = 62124,
+										["targets"] = {
+										},
+										["actived_at"] = 1664458497,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 33,
+							["aID"] = "4465-02BB4683",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[19835] = {
+										["activedamt"] = 1,
+										["id"] = 19835,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[10298] = {
+										["activedamt"] = 1,
+										["id"] = 10298,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20375] = {
+										["activedamt"] = 1,
+										["id"] = 20375,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 8,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[20424] = 3,
+								[20271] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Vermina",
+							["last_event"] = 1664458506,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["serial"] = "Player-4465-02BB4683",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 586,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Vermina"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Vermina", -- [1]
+				},
+				["tempo_start"] = 1664458495,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Galak Marauder",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					1038, -- [1]
+					46, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["TotalElapsedCombatTime"] = 585478.296,
+				["combat_counter"] = 9357,
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Vermina"] = 46.002078,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Vermina"] = 866.007938,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 585478.296,
+				["player_last_events"] = {
+				},
+				["instance_type"] = "none",
+				["CombatEndedAt"] = 585478.296,
+				["data_inicio"] = "15:34:55",
+				["totals_grupo"] = {
+					866, -- [1]
+					46, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "15:35:06",
+				["combat_id"] = 586,
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Marauder"] = 1,
+				},
+				["start_time"] = 585466.964,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Marauder",
+			}, -- [7]
+			{
+				{
+					["combatId"] = 585,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008165,
+							["damage_from"] = {
+								["Galak Stormer"] = true,
+							},
+							["targets"] = {
+								["Galak Stormer"] = 717,
+							},
+							["total"] = 717.008165,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "PALADIN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 717.008165,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1664458474,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02BB4683",
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 267,
+										["g_amt"] = 0,
+										["n_max"] = 157,
+										["targets"] = {
+											["Galak Stormer"] = 569,
+											["Galak Marauder"] = 0,
+										},
+										["n_dmg"] = 302,
+										["n_min"] = 145,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 569,
+										["c_max"] = 267,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 267,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
 									[20271] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -8095,7 +4453,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Galak Stormer"] = 0,
+											["Galak Marauder"] = 0,
 										},
 										["n_dmg"] = 0,
 										["n_min"] = 0,
@@ -8105,17 +4463,637 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 20271,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 2,
 										["extra"] = {
 										},
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20424] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 66,
+										["targets"] = {
+											["Galak Stormer"] = 66,
+										},
+										["n_dmg"] = 66,
+										["n_min"] = 66,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 66,
+										["c_max"] = 0,
+										["id"] = 20424,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
 										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 63,
+										["targets"] = {
+											["Galak Stormer"] = 63,
+										},
+										["n_dmg"] = 63,
+										["n_min"] = 63,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 63,
+										["c_max"] = 0,
+										["id"] = 20467,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10298] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 19,
+										["targets"] = {
+											["Galak Stormer"] = 19,
+										},
+										["n_dmg"] = 19,
+										["n_min"] = 19,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 19,
+										["c_max"] = 0,
+										["id"] = 10298,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02BB4683",
+							["last_dps"] = 92.56495804374005,
+							["custom"] = 0,
+							["last_event"] = 1664458494,
+							["damage_taken"] = 137.008165,
+							["start_time"] = 1664458466,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003074,
+							["total"] = 137.003074,
+							["damage_from"] = {
+								["Vermina"] = true,
+							},
+							["targets"] = {
+								["Vermina"] = 137,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 137.003074,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458474,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Galak Stormer",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 34,
+										["targets"] = {
+											["Vermina"] = 34,
+										},
+										["n_dmg"] = 34,
+										["n_min"] = 34,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 34,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
 										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[9532] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 103,
+										["targets"] = {
+											["Vermina"] = 103,
+										},
+										["n_dmg"] = 103,
+										["n_min"] = 103,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 103,
+										["c_max"] = 0,
+										["id"] = 9532,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["aID"] = "4097",
+							["serial"] = "Creature-0-5571-1-6623-4097-0000359062",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458472,
+							["damage_taken"] = 717.003074,
+							["start_time"] = 1664458469,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 585,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.007219,
+							["total_without_pet"] = 46.007219,
+							["total"] = 46.007219,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02BB4683",
+							["totalabsorb"] = 0.007219,
+							["last_hps"] = 5.939480893420733,
+							["targets"] = {
+								["Vermina"] = 46,
+							},
+							["totalover_without_pet"] = 0.007219,
+							["healing_taken"] = 46.007219,
+							["fight_component"] = true,
+							["end_time"] = 1664458474,
+							["healing_from"] = {
+								["Vermina"] = true,
+							},
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[20267] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 23,
+										["targets"] = {
+											["Vermina"] = 46,
+										},
+										["n_min"] = 23,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 46,
+										["c_max"] = 0,
+										["id"] = 20267,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 46,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1664458470,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02BB4683",
+							["totaldenied"] = 0.007219,
+							["delay"] = 0,
+							["last_event"] = 1664458473,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 585,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 585,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[20185] = {
+										["activedamt"] = 0,
+										["id"] = 20185,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[54499] = {
+										["activedamt"] = 0,
+										["id"] = 54499,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 24,
+							["aID"] = "4465-02BB4683",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[19835] = {
+										["activedamt"] = 1,
+										["id"] = 19835,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[10298] = {
+										["activedamt"] = 1,
+										["id"] = 10298,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20375] = {
+										["activedamt"] = 1,
+										["id"] = 20375,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 14,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[20271] = 1,
+								[20424] = 2,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Vermina",
+							["last_event"] = 1664458474,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["serial"] = "Player-4465-02BB4683",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["monster"] = true,
+							["nome"] = "Galak Stormer",
+							["flag_original"] = 68168,
+							["spell_cast"] = {
+								[9532] = 1,
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5571-1-6623-4097-0000359062",
+							["aID"] = "4097",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 585,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Vermina"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Vermina", -- [1]
+				},
+				["CombatStartedAt"] = 585465.329,
+				["tempo_start"] = 1664458466,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9356,
+				["playing_solo"] = true,
+				["totals"] = {
+					854, -- [1]
+					46, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					717, -- [1]
+					46, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:34:34",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Galak Stormer",
+				["TotalElapsedCombatTime"] = 585445.877,
+				["CombatEndedAt"] = 585445.877,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Vermina"] = 46.007219,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Vermina"] = 717.008165,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 585445.877,
+				["combat_id"] = 585,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:34:26",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Stormer"] = 1,
+				},
+				["start_time"] = 585438.131,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Stormer",
+			}, -- [8]
+			{
+				{
+					["combatId"] = 584,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005974,
+							["aID"] = "4465-02BB4683",
+							["damage_from"] = {
+								["Galak Stormer"] = true,
+							},
+							["targets"] = {
+								["Galak Stormer"] = 656,
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["end_time"] = 1664458458,
+							["classe"] = "PALADIN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 656.0059739999999,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 656.0059739999999,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 291,
+										["g_amt"] = 0,
+										["n_max"] = 139,
+										["targets"] = {
+											["Galak Stormer"] = 430,
+										},
+										["n_dmg"] = 139,
+										["n_min"] = 139,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 430,
+										["c_max"] = 291,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 291,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[20424] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 78,
+										["targets"] = {
+											["Galak Stormer"] = 143,
+										},
+										["n_dmg"] = 143,
+										["n_min"] = 65,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 143,
+										["c_max"] = 0,
+										["id"] = 20424,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 65,
+										["targets"] = {
+											["Galak Stormer"] = 65,
+										},
+										["n_dmg"] = 65,
+										["n_min"] = 65,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 65,
+										["c_max"] = 0,
+										["id"] = 20467,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[10298] = {
 										["c_amt"] = 0,
@@ -8134,190 +5112,270 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 10298,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 160.1889538373289,
-							["end_time"] = 1662751141,
-							["colocacao"] = 1,
-							["last_event"] = 1662751140,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1662751136,
 							["serial"] = "Player-4465-02BB4683",
-							["aID"] = "4465-02BB4683",
+							["last_dps"] = 169.8177514879482,
+							["custom"] = 0,
+							["last_event"] = 1664458457,
+							["damage_taken"] = 35.005974,
+							["start_time"] = 1664458454,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00847,
+							["totalabsorbed"] = 0.002036,
+							["aID"] = "4097",
 							["damage_from"] = {
 								["Vermina"] = true,
 							},
 							["targets"] = {
-								["Vermina"] = 27,
+								["Vermina"] = 35,
 							},
-							["delay"] = 0,
+							["end_time"] = 1664458458,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
-							["total"] = 27.00847,
-							["aID"] = "4097",
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 27.00847,
+							["total_without_pet"] = 35.002036,
 							["monster"] = true,
-							["fight_component"] = true,
-							["end_time"] = 1662751141,
-							["last_dps"] = 0,
-							["tipo"] = 1,
+							["dps_started"] = false,
+							["total"] = 35.002036,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
 							["nome"] = "Galak Stormer",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 27,
+										["n_max"] = 35,
 										["targets"] = {
-											["Vermina"] = 27,
+											["Vermina"] = 35,
 										},
-										["n_dmg"] = 27,
-										["n_min"] = 27,
+										["n_dmg"] = 35,
+										["n_min"] = 35,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 27,
+										["total"] = 35,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 								},
-								["tipo"] = 2,
 							},
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["serial"] = "Creature-0-5571-1-6623-4097-0000359087",
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1662751138,
-							["damage_taken"] = 614.00847,
-							["start_time"] = 1662751138,
-							["serial"] = "Creature-0-4457-1-25451-4097-00001B8980",
-							["classe"] = "UNKNOW",
+							["last_event"] = 1664458456,
+							["damage_taken"] = 656.002036,
+							["start_time"] = 1664458456,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 584,
 					["tipo"] = 3,
-					["combatId"] = 548,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.001248,
+							["total_without_pet"] = 24.001248,
+							["total"] = 24.001248,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02BB4683",
+							["totalabsorb"] = 0.001248,
+							["last_hps"] = 6.213111053565823,
+							["targets"] = {
+								["Vermina"] = 24,
+							},
+							["totalover_without_pet"] = 0.001248,
+							["healing_taken"] = 24.001248,
+							["fight_component"] = true,
+							["end_time"] = 1664458458,
+							["healing_from"] = {
+								["Vermina"] = true,
+							},
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[20267] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 24,
+										["targets"] = {
+											["Vermina"] = 24,
+										},
+										["n_min"] = 24,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 24,
+										["c_max"] = 0,
+										["id"] = 20267,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 24,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1664458457,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02BB4683",
+							["totaldenied"] = 0.001248,
+							["delay"] = 0,
+							["last_event"] = 1664458457,
+						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 584,
 					["tipo"] = 7,
-					["combatId"] = 548,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
+					["combatId"] = 584,
 					["tipo"] = 9,
-					["combatId"] = 548,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
 									[28730] = {
 										["activedamt"] = -1,
 										["id"] = 28730,
 										["targets"] = {
 										},
-										["actived_at"] = 1662751138,
+										["actived_at"] = 1664458456,
 										["uptime"] = 0,
-										["counter"] = 0,
+										["appliedamt"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
-										["appliedamt"] = 0,
+										["counter"] = 0,
+									},
+									[54499] = {
+										["activedamt"] = 0,
+										["id"] = 54499,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20185] = {
+										["activedamt"] = 0,
+										["id"] = 20185,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["pets"] = {
-							},
+							["buff_uptime"] = 12,
 							["aID"] = "4465-02BB4683",
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[377749] = {
-										["counter"] = 0,
-										["actived"] = false,
+									[19835] = {
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 377749,
-										["uptime"] = 5,
+										["id"] = 19835,
 										["targets"] = {
 										},
+										["uptime"] = 4,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
 										["id"] = 10298,
-										["uptime"] = 5,
 										["targets"] = {
 										},
+										["uptime"] = 4,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
 										["id"] = 20375,
-										["uptime"] = 5,
 										["targets"] = {
 										},
+										["uptime"] = 4,
 										["appliedamt"] = 1,
-									},
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
 										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 5,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 0,
-							["nome"] = "Vermina",
+							["fight_component"] = true,
+							["debuff_uptime"] = 6,
+							["buff_uptime_targets"] = {
+							},
 							["grupo"] = true,
 							["spell_cast"] = {
 								[20271] = 1,
@@ -8325,10 +5383,10 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
+							["nome"] = "Vermina",
+							["last_event"] = 1664458458,
+							["pets"] = {
 							},
-							["last_event"] = 1662751141,
-							["buff_uptime"] = 20,
 							["classe"] = "PALADIN",
 							["serial"] = "Player-4465-02BB4683",
 							["tipo"] = 4,
@@ -8336,8 +5394,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
+					["combatId"] = 584,
 					["tipo"] = 2,
-					["combatId"] = 548,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -8347,199 +5405,295 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Vermina", -- [1]
 				},
-				["CombatStartedAt"] = 2545982.252,
-				["tempo_start"] = 1662751136,
+				["CombatStartedAt"] = 585437.774,
+				["tempo_start"] = 1664458454,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 9355,
 				["playing_solo"] = true,
 				["totals"] = {
-					641, -- [1]
-					0, -- [2]
+					691, -- [1]
+					24, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					656, -- [1]
+					24, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:19:01",
+				["data_fim"] = "15:34:18",
 				["cleu_timeline"] = {
 				},
 				["enemy"] = "Galak Stormer",
-				["TotalElapsedCombatTime"] = 2545979.835,
-				["CombatEndedAt"] = 2545979.835,
+				["TotalElapsedCombatTime"] = 585430.476,
+				["CombatEndedAt"] = 585430.476,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "21:18:57",
-				["end_time"] = 2545979.835,
-				["combat_id"] = 548,
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Vermina"] = 614.0042599999999,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
+							["Vermina"] = 24.001248,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Vermina"] = 656.0059739999999,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 585430.476,
+				["combat_id"] = 584,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:34:14",
+				["CombatSkillCache"] = {
 				},
 				["frags"] = {
 					["Galak Stormer"] = 1,
 				},
-				["combat_counter"] = 9315,
-				["totals_grupo"] = {
-					614, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Galak Stormer",
-				["start_time"] = 2545975.368,
+				["start_time"] = 585426.01,
 				["TimeData"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [15]
+				["contra"] = "Galak Stormer",
+			}, -- [9]
 			{
 				{
+					["combatId"] = 583,
 					["tipo"] = 2,
-					["combatId"] = 547,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003326,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00606,
+							["aID"] = "4099",
 							["damage_from"] = {
-								["Galak Mauler"] = true,
+								["Vermina"] = true,
 							},
 							["targets"] = {
-								["Galak Mauler"] = 896,
+								["Vermina"] = 199,
 							},
-							["delay"] = 0,
+							["end_time"] = 1664458408,
 							["pets"] = {
 							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
-							["classe"] = "PALADIN",
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 896.003326,
-							["on_hold"] = false,
+							["total_without_pet"] = 199.00606,
+							["monster"] = true,
 							["dps_started"] = false,
-							["total"] = 896.003326,
-							["damage_taken"] = 416.003326,
-							["tipo"] = 1,
-							["nome"] = "Vermina",
+							["total"] = 199.00606,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Galak Marauder",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 285,
-										["g_amt"] = 1,
-										["n_max"] = 118,
-										["targets"] = {
-											["Galak Mauler"] = 524,
-										},
-										["n_dmg"] = 118,
-										["n_min"] = 118,
-										["g_dmg"] = 121,
-										["counter"] = 7,
-										["total"] = 524,
-										["c_max"] = 285,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 285,
-										["successful_casted"] = 0,
-										["extra"] = {
-										},
-										["n_amt"] = 1,
-										["MISS"] = 2,
-										["DODGE"] = 2,
-									}, -- [1]
-									[10298] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 18,
+										["n_max"] = 37,
 										["targets"] = {
-											["Galak Mauler"] = 90,
+											["Vermina"] = 199,
 										},
-										["n_dmg"] = 90,
-										["n_min"] = 18,
+										["n_dmg"] = 199,
+										["n_min"] = 29,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 90,
+										["counter"] = 6,
+										["total"] = 199,
 										["c_max"] = 0,
-										["id"] = 10298,
+										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 2,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["serial"] = "Creature-0-5571-1-6623-4099-00003589E9",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458404,
+							["damage_taken"] = 877.0060599999999,
+							["start_time"] = 1664458394,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003755,
+							["aID"] = "4465-02BB4683",
+							["damage_from"] = {
+								["Galak Marauder"] = true,
+							},
+							["targets"] = {
+								["Galak Marauder"] = 877,
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["end_time"] = 1664458408,
+							["classe"] = "PALADIN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 877.003755,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 877.003755,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 143,
+										["targets"] = {
+											["Galak Marauder"] = 543,
+										},
+										["n_dmg"] = 543,
+										["n_min"] = 118,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 543,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[20424] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 65,
+										["targets"] = {
+											["Galak Marauder"] = 184,
+										},
+										["n_dmg"] = 184,
+										["n_min"] = 57,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 184,
+										["c_max"] = 0,
+										["id"] = 20424,
+										["r_dmg"] = 0,
 										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20271] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Galak Marauder"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 20271,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[20467] = {
 										["c_amt"] = 0,
@@ -8548,127 +5702,650 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 58,
 										["targets"] = {
-											["Galak Mauler"] = 110,
+											["Galak Marauder"] = 58,
 										},
-										["n_dmg"] = 110,
-										["n_min"] = 52,
+										["n_dmg"] = 58,
+										["n_min"] = 58,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 110,
+										["counter"] = 1,
+										["total"] = 58,
 										["c_max"] = 0,
 										["id"] = 20467,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10298] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 19,
+										["targets"] = {
+											["Galak Marauder"] = 92,
+										},
+										["n_dmg"] = 92,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 92,
+										["c_max"] = 0,
+										["id"] = 10298,
+										["r_dmg"] = 0,
+										["RESIST"] = 1,
+										["spellschool"] = 2,
 										["extra"] = {
 										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02BB4683",
+							["last_dps"] = 70.36294568336363,
+							["custom"] = 0,
+							["last_event"] = 1664458406,
+							["damage_taken"] = 199.003755,
+							["start_time"] = 1664458394,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 583,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.002798,
+							["total_without_pet"] = 46.002798,
+							["total"] = 46.002798,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02BB4683",
+							["totalabsorb"] = 0.002798,
+							["last_hps"] = 3.690853498063699,
+							["targets"] = {
+								["Vermina"] = 46,
+							},
+							["totalover_without_pet"] = 0.002798,
+							["healing_taken"] = 46.002798,
+							["fight_component"] = true,
+							["end_time"] = 1664458408,
+							["healing_from"] = {
+								["Vermina"] = true,
+							},
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[20267] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 23,
+										["targets"] = {
+											["Vermina"] = 46,
+										},
+										["n_min"] = 23,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 46,
+										["c_max"] = 0,
+										["id"] = 20267,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 46,
+										["totaldenied"] = 0,
+										["n_amt"] = 2,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1664458403,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02BB4683",
+							["totaldenied"] = 0.002798,
+							["delay"] = 0,
+							["last_event"] = 1664458406,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 583,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 0.002642,
+							["resource"] = 0.002642,
+							["targets"] = {
+								["Vermina"] = 0,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "PALADIN",
+							["passiveover"] = 0.002642,
+							["total"] = 0.002642,
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[28730] = {
+										["total"] = 0,
+										["id"] = 28730,
+										["totalover"] = 69,
+										["targets"] = {
+											["Vermina"] = 0,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.002642,
+							["last_event"] = 1664458454,
+							["aID"] = "4465-02BB4683",
+							["tipo"] = 3,
+							["serial"] = "Player-4465-02BB4683",
+							["totalover"] = 69.002642,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 583,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[54499] = {
+										["activedamt"] = 0,
+										["id"] = 54499,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20185] = {
+										["activedamt"] = 0,
+										["id"] = 20185,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[25771] = {
+										["activedamt"] = -1,
+										["id"] = 25771,
+										["targets"] = {
+										},
+										["actived_at"] = 1664458399,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 42,
+							["aID"] = "4465-02BB4683",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[32747] = {
+										["id"] = 32747,
+										["interrompeu_oque"] = {
+											[9532] = 1,
+										},
+										["targets"] = {
+											["Galak Stormer"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[19835] = {
+										["activedamt"] = 1,
+										["id"] = 19835,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[10298] = {
+										["activedamt"] = 1,
+										["id"] = 10298,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20375] = {
+										["activedamt"] = 1,
+										["id"] = 20375,
+										["targets"] = {
+										},
+										["uptime"] = 14,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[9532] = 1,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 6,
+							["interrupt"] = 1.004408,
+							["buff_uptime_targets"] = {
+							},
+							["interrupt_targets"] = {
+								["Galak Stormer"] = 1,
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[20424] = 4,
+								[20271] = 2,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Vermina",
+							["last_event"] = 1664458454,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["serial"] = "Player-4465-02BB4683",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 583,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Vermina"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Vermina", -- [1]
+				},
+				["CombatStartedAt"] = 585425.642,
+				["tempo_start"] = 1664458394,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9354,
+				["playing_solo"] = true,
+				["totals"] = {
+					1076, -- [1]
+					46, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					877, -- [1]
+					46, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:33:28",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Galak Marauder",
+				["TotalElapsedCombatTime"] = 585380.187,
+				["CombatEndedAt"] = 585380.187,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Vermina"] = 46.002798,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Vermina"] = 877.003755,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 585380.187,
+				["combat_id"] = 583,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:33:14",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Marauder"] = 1,
+				},
+				["start_time"] = 585366.407,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Marauder",
+			}, -- [10]
+			{
+				{
+					["combatId"] = 582,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00307,
+							["damage_from"] = {
+								["Galak Mauler"] = true,
+							},
+							["targets"] = {
+								["Galak Mauler"] = 1919,
+							},
+							["total"] = 1919.00307,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "PALADIN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1919.00307,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1664458388,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02BB4683",
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 583,
+										["g_amt"] = 0,
+										["n_max"] = 138,
+										["targets"] = {
+											["Galak Mauler"] = 989,
+										},
+										["n_dmg"] = 406,
+										["n_min"] = 130,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 989,
+										["c_max"] = 316,
+										["DODGE"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 267,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[10298] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 19,
+										["targets"] = {
+											["Galak Mauler"] = 147,
+										},
+										["n_dmg"] = 147,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 147,
+										["c_max"] = 0,
+										["id"] = 10298,
+										["r_dmg"] = 0,
+										["RESIST"] = 1,
 										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 8,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20467] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 119,
+										["g_amt"] = 0,
+										["n_max"] = 66,
+										["targets"] = {
+											["Galak Mauler"] = 247,
+										},
+										["n_dmg"] = 128,
+										["n_min"] = 62,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 247,
+										["c_max"] = 119,
+										["id"] = 20467,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 119,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[20424] = {
 										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 111,
+										["b_amt"] = 1,
+										["c_dmg"] = 132,
 										["g_amt"] = 0,
-										["n_max"] = 61,
+										["n_max"] = 77,
 										["targets"] = {
-											["Galak Mauler"] = 172,
+											["Galak Mauler"] = 536,
 										},
-										["n_dmg"] = 61,
-										["n_min"] = 61,
+										["n_dmg"] = 404,
+										["n_min"] = 48,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 172,
-										["c_max"] = 111,
+										["counter"] = 7,
+										["total"] = 536,
+										["c_max"] = 132,
 										["id"] = 20424,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 2,
 										["extra"] = {
 										},
-										["a_amt"] = 0,
-										["c_min"] = 111,
-										["successful_casted"] = 0,
 										["a_dmg"] = 0,
-										["n_amt"] = 1,
-										["spellschool"] = 2,
-										["DODGE"] = 1,
+										["c_min"] = 132,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 48,
+										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 37.67252463843598,
-							["end_time"] = 1662751129,
-							["colocacao"] = 1,
-							["last_event"] = 1662751129,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1662751105,
 							["serial"] = "Player-4465-02BB4683",
-							["aID"] = "4465-02BB4683",
+							["last_dps"] = 70.23655186285505,
+							["custom"] = 0,
+							["last_event"] = 1664458387,
+							["damage_taken"] = 557.00307,
+							["start_time"] = 1664458360,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001002,
+							["totalabsorbed"] = 0.007257,
+							["total"] = 557.007257,
 							["damage_from"] = {
 								["Vermina"] = true,
 							},
 							["targets"] = {
-								["Vermina"] = 416,
+								["Vermina"] = 557,
 							},
-							["delay"] = 0,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
-							["total"] = 416.001002,
-							["aID"] = "4095",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 416.001002,
 							["monster"] = true,
 							["fight_component"] = true,
-							["end_time"] = 1662751129,
-							["last_dps"] = 0,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 557.007257,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458388,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Galak Mauler",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 67,
+										["n_max"] = 68,
 										["targets"] = {
-											["Vermina"] = 416,
+											["Vermina"] = 557,
 										},
-										["n_dmg"] = 416,
-										["n_min"] = 52,
+										["n_dmg"] = 557,
+										["n_min"] = 53,
 										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 416,
-										["r_amt"] = 0,
+										["counter"] = 12,
+										["a_dmg"] = 0,
+										["total"] = 557,
 										["c_max"] = 0,
-										["b_dmg"] = 0,
+										["DODGE"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["DODGE"] = 1,
-										["a_amt"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["PARRY"] = 1,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 7,
-										["a_dmg"] = 0,
-										["MISS"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 9,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[13730] = {
 										["c_amt"] = 0,
@@ -8686,47 +6363,45 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 13730,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
+							["aID"] = "4095",
+							["serial"] = "Creature-0-5571-1-6623-4095-00003590D5",
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1662751128,
-							["damage_taken"] = 896.001002,
-							["start_time"] = 1662751105,
-							["serial"] = "Creature-0-4457-1-25451-4095-00001B8FEE",
-							["classe"] = "UNKNOW",
+							["last_event"] = 1664458387,
+							["damage_taken"] = 1919.007257,
+							["start_time"] = 1664458361,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 582,
 					["tipo"] = 3,
-					["combatId"] = 547,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Vermina"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
 							["classe"] = "PALADIN",
-							["totalover"] = 0.00426,
-							["total_without_pet"] = 183.00426,
-							["total"] = 183.00426,
+							["totalover"] = 0.006763,
+							["total_without_pet"] = 212.006763,
+							["total"] = 212.006763,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
@@ -8734,248 +6409,179 @@ _detalhes_database = {
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-02BB4683",
-							["totalabsorb"] = 0.00426,
-							["last_hps"] = 7.694427346119856,
+							["totalabsorb"] = 0.006763,
+							["last_hps"] = 7.661971919034293,
 							["targets"] = {
-								["Vermina"] = 183,
+								["Vermina"] = 212,
 							},
-							["totalover_without_pet"] = 0.00426,
-							["healing_taken"] = 183.00426,
+							["totalover_without_pet"] = 0.006763,
+							["healing_taken"] = 212.006763,
 							["fight_component"] = true,
-							["end_time"] = 1662751129,
-							["tipo"] = 2,
+							["end_time"] = 1664458388,
+							["healing_from"] = {
+								["Vermina"] = true,
+							},
 							["nome"] = "Vermina",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[20267] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
 										},
-										["n_max"] = 23,
+										["n_max"] = 24,
 										["targets"] = {
-											["Vermina"] = 183,
+											["Vermina"] = 212,
 										},
-										["n_min"] = 22,
-										["counter"] = 8,
+										["n_min"] = 23,
+										["counter"] = 9,
 										["overheal"] = 0,
-										["total"] = 183,
+										["total"] = 212,
 										["c_max"] = 0,
 										["id"] = 20267,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 183,
+										["n_curado"] = 212,
 										["totaldenied"] = 0,
-										["n_amt"] = 8,
+										["n_amt"] = 9,
 										["absorbed"] = 0,
 									},
 								},
-								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02BB4683",
-							["custom"] = 0,
-							["last_event"] = 1662751129,
-							["totaldenied"] = 0.00426,
-							["start_time"] = 1662751108,
-							["delay"] = 0,
 							["heal_enemy_amt"] = 0,
+							["start_time"] = 1664458361,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02BB4683",
+							["totaldenied"] = 0.006763,
+							["delay"] = 0,
+							["last_event"] = 1664458387,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 582,
 					["tipo"] = 7,
-					["combatId"] = 547,
 					["_ActorTable"] = {
-						{
-							["received"] = 67.003635,
-							["resource"] = 0.003635,
-							["targets"] = {
-								["Vermina"] = 67,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "PALADIN",
-							["passiveover"] = 0.003635,
-							["total"] = 67.003635,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									[28730] = {
-										["total"] = 67,
-										["id"] = 28730,
-										["totalover"] = 0,
-										["targets"] = {
-											["Vermina"] = 67,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 0.003635,
-							["alternatepower"] = 0.003635,
-							["last_event"] = 1662751136,
-							["tipo"] = 3,
-							["aID"] = "4465-02BB4683",
-							["serial"] = "Player-4465-02BB4683",
-							["flag_original"] = 1297,
-						}, -- [1]
 					},
 				}, -- [3]
 				{
+					["combatId"] = 582,
 					["tipo"] = 9,
-					["combatId"] = 547,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[20185] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 1,
-										["id"] = 20185,
-										["uptime"] = 21,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
 									[54499] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 0,
-										["refreshamt"] = 0,
 										["id"] = 54499,
-										["uptime"] = 21,
 										["targets"] = {
 										},
-										["appliedamt"] = 2,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 95,
-							["aID"] = "4465-02BB4683",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									[32747] = {
-										["id"] = 32747,
-										["counter"] = 1,
-										["targets"] = {
-											["Galak Stormer"] = 1,
-										},
-										["interrompeu_oque"] = {
-											[9532] = 1,
-										},
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									[377749] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 377749,
 										["uptime"] = 24,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20185] = {
+										["activedamt"] = -1,
+										["id"] = 20185,
 										["targets"] = {
 										},
+										["uptime"] = 16,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 84,
+							["aID"] = "4465-02BB4683",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[19835] = {
+										["activedamt"] = 1,
+										["id"] = 19835,
+										["targets"] = {
+										},
+										["uptime"] = 28,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
 										["id"] = 10298,
-										["uptime"] = 24,
 										["targets"] = {
 										},
+										["uptime"] = 28,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
 										["id"] = 20375,
-										["uptime"] = 24,
 										["targets"] = {
 										},
+										["uptime"] = 28,
 										["appliedamt"] = 1,
-									},
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
 										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 23,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								[9532] = 1,
 							},
 							["fight_component"] = true,
-							["debuff_uptime"] = 42,
-							["debuff_uptime_targets"] = {
-							},
+							["debuff_uptime"] = 40,
 							["buff_uptime_targets"] = {
-							},
-							["interrupt_targets"] = {
-								["Galak Stormer"] = 1,
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
-								[19835] = 1,
+								[20424] = 5,
 								[20271] = 2,
-								[20424] = 3,
 							},
-							["classe"] = "PALADIN",
-							["last_event"] = 1662751136,
-							["tipo"] = 4,
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["nome"] = "Vermina",
+							["last_event"] = 1664458388,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
 							["serial"] = "Player-4465-02BB4683",
-							["interrupt"] = 1.001776,
+							["tipo"] = 4,
 						}, -- [1]
 						{
 							["monster"] = true,
-							["pets"] = {
-							},
 							["nome"] = "Galak Mauler",
-							["aID"] = "4095",
+							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[13730] = 1,
 							},
-							["fight_component"] = true,
 							["classe"] = "UNKNOW",
-							["tipo"] = 4,
+							["fight_component"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-4457-1-25451-4095-00001B8FEE",
-							["flag_original"] = 68168,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5571-1-6623-4095-000034D9AD",
+							["aID"] = "4095",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 582,
 					["tipo"] = 2,
-					["combatId"] = 547,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -8985,453 +6591,2077 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Vermina", -- [1]
 				},
-				["CombatStartedAt"] = 2545974.951,
-				["tempo_start"] = 1662751105,
+				["CombatStartedAt"] = 585363.987,
+				["tempo_start"] = 1664458360,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 9353,
 				["playing_solo"] = true,
 				["totals"] = {
-					1312, -- [1]
-					183, -- [2]
+					2475.998693, -- [1]
+					212, -- [2]
 					{
 						0, -- [1]
-						[0] = 67,
+						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 1,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1919, -- [1]
+					212, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:18:49",
+				["data_fim"] = "15:33:09",
 				["cleu_timeline"] = {
 				},
 				["enemy"] = "Galak Mauler",
-				["TotalElapsedCombatTime"] = 2545967.667,
-				["CombatEndedAt"] = 2545967.667,
+				["TotalElapsedCombatTime"] = 585360.691,
+				["CombatEndedAt"] = 585360.691,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "21:18:25",
-				["end_time"] = 2545967.667,
-				["combat_id"] = 547,
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Vermina"] = 896.003326,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Vermina"] = 183.00426,
+							["Vermina"] = 212.006763,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Vermina"] = 1919.00307,
+						}, -- [1]
+					},
 				},
-				["frags"] = {
-					["Galak Mauler"] = 1,
-				},
-				["combat_counter"] = 9314,
-				["totals_grupo"] = {
-					896, -- [1]
-					183, -- [2]
-					{
-						0, -- [1]
-						[0] = 67,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Galak Mauler",
-				["start_time"] = 2545943.883,
-				["TimeData"] = {
+				["end_time"] = 585360.691,
+				["combat_id"] = 582,
+				["cleu_events"] = {
+					["n"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
-			}, -- [16]
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:32:40",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Mauler"] = 2,
+				},
+				["start_time"] = 585331.853,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Mauler",
+			}, -- [11]
 			{
 				{
+					["combatId"] = 581,
 					["tipo"] = 2,
-					["combatId"] = 546,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007268,
+							["totalabsorbed"] = 0.004259,
 							["damage_from"] = {
-								["Galak Marauder"] = true,
 								["Galak Stormer"] = true,
 							},
 							["targets"] = {
-								["Galak Marauder"] = 1112,
-								["Galak Stormer"] = 1422,
+								["Galak Stormer"] = 1346,
 							},
-							["delay"] = 0,
+							["total"] = 1346.004259,
 							["pets"] = {
 							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["classe"] = "PALADIN",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 2534.007268,
+							["total_without_pet"] = 1346.004259,
+							["colocacao"] = 1,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["end_time"] = 1662751014,
-							["damage_taken"] = 1300.007268,
-							["tipo"] = 1,
+							["end_time"] = 1664458352,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02BB4683",
 							["nome"] = "Vermina",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 250,
-										["g_amt"] = 0,
-										["n_max"] = 155,
-										["targets"] = {
-											["Galak Marauder"] = 496,
-											["Galak Stormer"] = 590,
-										},
-										["n_dmg"] = 836,
-										["n_min"] = 114,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 1086,
-										["c_max"] = 250,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["PARRY"] = 1,
-										["c_min"] = 250,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-									}, -- [1]
-									[20424] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 404,
-										["g_amt"] = 0,
-										["n_max"] = 75,
-										["targets"] = {
-											["Galak Stormer"] = 547,
-											["Galak Marauder"] = 400,
-										},
-										["n_dmg"] = 543,
-										["n_min"] = 61,
-										["g_dmg"] = 0,
-										["counter"] = 13,
-										["total"] = 947,
-										["c_max"] = 138,
-										["id"] = 20424,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["extra"] = {
-										},
-										["PARRY"] = 2,
-										["c_min"] = 129,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 8,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
-									},
-									[20467] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 117,
-										["g_amt"] = 0,
-										["n_max"] = 60,
-										["targets"] = {
-											["Galak Marauder"] = 54,
-											["Galak Stormer"] = 177,
-										},
-										["n_dmg"] = 114,
-										["n_min"] = 54,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 231,
-										["c_max"] = 117,
-										["id"] = 20467,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 117,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
-									},
-									[10298] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 18,
+										["n_max"] = 156,
 										["targets"] = {
-											["Galak Marauder"] = 162,
-											["Galak Stormer"] = 108,
+											["Galak Stormer"] = 719,
 										},
-										["n_dmg"] = 270,
-										["n_min"] = 18,
+										["n_dmg"] = 719,
+										["n_min"] = 132,
 										["g_dmg"] = 0,
-										["counter"] = 15,
-										["total"] = 270,
+										["counter"] = 5,
+										["total"] = 719,
 										["c_max"] = 0,
-										["id"] = 10298,
+										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 15,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[20467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 65,
+										["targets"] = {
+											["Galak Stormer"] = 129,
+										},
+										["n_dmg"] = 129,
+										["n_min"] = 64,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 129,
+										["c_max"] = 0,
+										["id"] = 20467,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
 										["extra"] = {
 										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20424] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 126,
+										["g_amt"] = 0,
+										["n_max"] = 79,
+										["targets"] = {
+											["Galak Stormer"] = 498,
+										},
+										["n_dmg"] = 372,
+										["n_min"] = 69,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 498,
+										["c_max"] = 126,
+										["id"] = 20424,
+										["r_dmg"] = 0,
 										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 126,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 66.35958906448217,
-							["total"] = 2534.007268,
-							["colocacao"] = 1,
-							["last_event"] = 1662751013,
-							["on_hold"] = false,
-							["start_time"] = 1662750976,
 							["serial"] = "Player-4465-02BB4683",
-							["aID"] = "4465-02BB4683",
+							["last_dps"] = 85.91333752464669,
+							["custom"] = 0,
+							["last_event"] = 1664458352,
+							["damage_taken"] = 302.004259,
+							["start_time"] = 1664458336,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [1]
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.006869,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002206,
+							["total"] = 302.002206,
 							["damage_from"] = {
 								["Vermina"] = true,
 							},
 							["targets"] = {
-								["Vermina"] = 957,
+								["Vermina"] = 302,
 							},
-							["delay"] = 0,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
-							["total"] = 957.006869,
-							["aID"] = "4097",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 957.006869,
 							["monster"] = true,
 							["fight_component"] = true,
-							["end_time"] = 1662751014,
-							["last_dps"] = 0,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 302.002206,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458352,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Galak Stormer",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 33,
+										["n_max"] = 0,
 										["targets"] = {
-											["Vermina"] = 182,
+											["Vermina"] = 0,
 										},
-										["n_dmg"] = 182,
-										["n_min"] = 28,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 182,
+										["counter"] = 1,
+										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
 										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 6,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[9532] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 113,
+										["n_max"] = 108,
 										["targets"] = {
-											["Vermina"] = 728,
+											["Vermina"] = 302,
 										},
-										["n_dmg"] = 728,
-										["n_min"] = 96,
+										["n_dmg"] = 302,
+										["n_min"] = 86,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 728,
+										["counter"] = 4,
+										["total"] = 302,
 										["c_max"] = 0,
 										["id"] = 9532,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 7,
-										["a_amt"] = 0,
-										["n_amt"] = 7,
-										["a_dmg"] = 0,
+										["MISS"] = 1,
 										["extra"] = {
 										},
-									},
-									[6535] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 47,
-										["targets"] = {
-											["Vermina"] = 47,
-										},
-										["n_dmg"] = 47,
-										["n_min"] = 47,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 47,
-										["c_max"] = 0,
-										["id"] = 6535,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
 										["a_dmg"] = 0,
-										["extra"] = {
-										},
+										["c_min"] = 0,
+										["successful_casted"] = 4,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
+							["aID"] = "4097",
+							["serial"] = "Creature-0-5571-1-6623-4097-000034D989",
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1662751014,
-							["damage_taken"] = 1422.006869,
-							["start_time"] = 1662750980,
-							["serial"] = "Creature-0-4457-1-25451-4097-00001B898C",
-							["classe"] = "UNKNOW",
+							["last_event"] = 1664458347,
+							["damage_taken"] = 1346.002206,
+							["start_time"] = 1664458341,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 581,
+					["tipo"] = 3,
+					["_ActorTable"] = {
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001567,
-							["damage_from"] = {
-								["Vermina"] = true,
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
 							},
-							["targets"] = {
-								["Vermina"] = 343,
-							},
-							["delay"] = 1662750989,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
+							["iniciar_hps"] = false,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.004877,
+							["total_without_pet"] = 188.004877,
+							["total"] = 188.004877,
+							["targets_absorbs"] = {
 							},
-							["total"] = 343.001567,
-							["aID"] = "4099",
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02BB4683",
+							["totalabsorb"] = 0.004877,
+							["last_hps"] = 12.00005597752027,
+							["targets"] = {
+								["Vermina"] = 188,
+							},
+							["totalover_without_pet"] = 0.004877,
+							["healing_taken"] = 188.004877,
+							["fight_component"] = true,
+							["end_time"] = 1664458352,
+							["healing_from"] = {
+								["Vermina"] = true,
+							},
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[20267] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 24,
+										["targets"] = {
+											["Vermina"] = 188,
+										},
+										["n_min"] = 23,
+										["counter"] = 8,
+										["overheal"] = 0,
+										["total"] = 188,
+										["c_max"] = 0,
+										["id"] = 20267,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 188,
+										["totaldenied"] = 0,
+										["n_amt"] = 8,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1664458336,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02BB4683",
+							["totaldenied"] = 0.004877,
+							["delay"] = 0,
+							["last_event"] = 1664458352,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 581,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 581,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[5588] = {
+										["activedamt"] = 0,
+										["id"] = 5588,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20185] = {
+										["activedamt"] = -1,
+										["id"] = 20185,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[54499] = {
+										["activedamt"] = 0,
+										["id"] = 54499,
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["cc_done_targets"] = {
+								["Galak Stormer"] = 1,
+							},
+							["buff_uptime"] = 48,
+							["cc_done_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[5588] = {
+										["id"] = 5588,
+										["targets"] = {
+											["Galak Stormer"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["aID"] = "4465-02BB4683",
+							["interrupt_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[32747] = {
+										["id"] = 32747,
+										["interrompeu_oque"] = {
+											[9532] = 1,
+										},
+										["targets"] = {
+											["Galak Stormer"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[19835] = {
+										["activedamt"] = 1,
+										["id"] = 19835,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[10298] = {
+										["activedamt"] = 1,
+										["id"] = 10298,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20375] = {
+										["activedamt"] = 1,
+										["id"] = 20375,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["interrompeu_oque"] = {
+								[9532] = 1,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 24,
+							["interrupt"] = 1.001264,
+							["cc_done"] = 1.005505,
+							["buff_uptime_targets"] = {
+							},
+							["interrupt_targets"] = {
+								["Galak Stormer"] = 1,
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[5588] = 1,
+								[20271] = 1,
+								[20424] = 5,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Vermina",
+							["last_event"] = 1664458352,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["serial"] = "Player-4465-02BB4683",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["monster"] = true,
+							["nome"] = "Galak Stormer",
+							["flag_original"] = 68168,
+							["spell_cast"] = {
+								[9532] = 4,
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["last_event"] = 0,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5571-1-6623-4097-000034D989",
+							["aID"] = "4097",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 581,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Vermina"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Vermina", -- [1]
+				},
+				["CombatStartedAt"] = 585331.537,
+				["tempo_start"] = 1664458336,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9352,
+				["playing_solo"] = true,
+				["totals"] = {
+					1648, -- [1]
+					188, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1346, -- [1]
+					188, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:32:32",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Galak Stormer",
+				["TotalElapsedCombatTime"] = 585324.253,
+				["CombatEndedAt"] = 585324.253,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Vermina"] = 188.004877,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Vermina"] = 1346.004259,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 585324.253,
+				["combat_id"] = 581,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:32:16",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Stormer"] = 2,
+				},
+				["start_time"] = 585308.419,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Stormer",
+			}, -- [12]
+			{
+				{
+					["combatId"] = 580,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001015,
+							["damage_from"] = {
+								["Galak Marauder"] = true,
+							},
+							["targets"] = {
+								["Galak Marauder"] = 934,
+							},
+							["total"] = 934.001015,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "PALADIN",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 343.001567,
-							["monster"] = true,
-							["fight_component"] = true,
-							["end_time"] = 1662751014,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Galak Marauder",
+							["total_without_pet"] = 934.001015,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1664458333,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02BB4683",
+							["nome"] = "Vermina",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 72,
+										["c_dmg"] = 309,
+										["g_amt"] = 0,
+										["n_max"] = 149,
+										["targets"] = {
+											["Galak Marauder"] = 606,
+										},
+										["n_dmg"] = 297,
+										["n_min"] = 148,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 606,
+										["c_max"] = 309,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 309,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[10298] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 19,
+										["targets"] = {
+											["Galak Marauder"] = 73,
+										},
+										["n_dmg"] = 73,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 73,
+										["c_max"] = 0,
+										["id"] = 10298,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 61,
+										["targets"] = {
+											["Galak Marauder"] = 61,
+										},
+										["n_dmg"] = 61,
+										["n_min"] = 61,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 61,
+										["c_max"] = 0,
+										["id"] = 20467,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20424] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 129,
+										["g_amt"] = 0,
+										["n_max"] = 65,
+										["targets"] = {
+											["Galak Marauder"] = 194,
+										},
+										["n_dmg"] = 65,
+										["n_min"] = 65,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 194,
+										["c_max"] = 129,
+										["id"] = 20424,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 129,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02BB4683",
+							["last_dps"] = 76.96119108475506,
+							["custom"] = 0,
+							["last_event"] = 1664458332,
+							["damage_taken"] = 137.001015,
+							["start_time"] = 1664458321,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006838,
+							["total"] = 137.006838,
+							["damage_from"] = {
+								["Vermina"] = true,
+							},
+							["targets"] = {
+								["Vermina"] = 137,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 137.006838,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458333,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Galak Marauder",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 38,
+										["targets"] = {
+											["Vermina"] = 137,
+										},
+										["n_dmg"] = 137,
+										["n_min"] = 32,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 137,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "4099",
+							["serial"] = "Creature-0-5571-1-6623-4099-000034D950",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458330,
+							["damage_taken"] = 934.006838,
+							["start_time"] = 1664458322,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 580,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.008348,
+							["total_without_pet"] = 96.008348,
+							["total"] = 96.008348,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02BB4683",
+							["totalabsorb"] = 0.008348,
+							["last_hps"] = 7.911037244600489,
+							["targets"] = {
+								["Vermina"] = 96,
+							},
+							["totalover_without_pet"] = 0.008348,
+							["healing_taken"] = 96.008348,
+							["fight_component"] = true,
+							["end_time"] = 1664458333,
+							["healing_from"] = {
+								["Vermina"] = true,
+							},
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[20267] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 24,
+										["targets"] = {
+											["Vermina"] = 96,
+										},
+										["n_min"] = 24,
+										["counter"] = 4,
+										["overheal"] = 0,
+										["total"] = 96,
+										["c_max"] = 0,
+										["id"] = 20267,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 96,
+										["totaldenied"] = 0,
+										["n_amt"] = 4,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1664458322,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02BB4683",
+							["totaldenied"] = 0.008348,
+							["delay"] = 0,
+							["last_event"] = 1664458332,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 580,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 580,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[54499] = {
+										["activedamt"] = 0,
+										["id"] = 54499,
+										["targets"] = {
+										},
+										["uptime"] = 11,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20185] = {
+										["activedamt"] = -1,
+										["id"] = 20185,
+										["targets"] = {
+										},
+										["actived_at"] = 1664458332,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 36,
+							["aID"] = "4465-02BB4683",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[19835] = {
+										["activedamt"] = 1,
+										["id"] = 19835,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[10298] = {
+										["activedamt"] = 1,
+										["id"] = 10298,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20375] = {
+										["activedamt"] = 1,
+										["id"] = 20375,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 11,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[20424] = 3,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Vermina",
+							["last_event"] = 1664458333,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["serial"] = "Player-4465-02BB4683",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 580,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Vermina"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Vermina", -- [1]
+				},
+				["CombatStartedAt"] = 585308.002,
+				["tempo_start"] = 1664458321,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9351,
+				["playing_solo"] = true,
+				["totals"] = {
+					1071, -- [1]
+					96, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					934, -- [1]
+					96, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:32:13",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Galak Marauder",
+				["TotalElapsedCombatTime"] = 585305.568,
+				["CombatEndedAt"] = 585305.568,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Vermina"] = 96.008348,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Vermina"] = 934.001015,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 585305.568,
+				["combat_id"] = 580,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:32:01",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Marauder"] = 1,
+				},
+				["start_time"] = 585292.9180000001,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Marauder",
+			}, -- [13]
+			{
+				{
+					["combatId"] = 579,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00849,
+							["aID"] = "4465-02BB4683",
+							["damage_from"] = {
+								["Galak Marauder"] = true,
+							},
+							["targets"] = {
+								["Galak Marauder"] = 928,
+							},
+							["pets"] = {
+							},
+							["colocacao"] = 1,
+							["end_time"] = 1664458315,
+							["classe"] = "PALADIN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 928.0084899999999,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 928.0084899999999,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 144,
+										["targets"] = {
+											["Galak Marauder"] = 418,
+										},
+										["n_dmg"] = 418,
+										["n_min"] = 136,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 418,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[20424] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 126,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Galak Marauder"] = 275,
+										},
+										["n_dmg"] = 149,
+										["n_min"] = 74,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 275,
+										["c_max"] = 126,
+										["id"] = 20424,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 126,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 63,
+										["targets"] = {
+											["Galak Marauder"] = 124,
+										},
+										["n_dmg"] = 124,
+										["n_min"] = 61,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 124,
+										["c_max"] = 0,
+										["id"] = 20467,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10298] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 19,
+										["targets"] = {
+											["Galak Marauder"] = 111,
+										},
+										["n_dmg"] = 111,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 111,
+										["c_max"] = 0,
+										["id"] = 10298,
+										["r_dmg"] = 0,
+										["RESIST"] = 1,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02BB4683",
+							["last_dps"] = 58.85018010030433,
+							["custom"] = 0,
+							["last_event"] = 1664458314,
+							["damage_taken"] = 246.00849,
+							["start_time"] = 1664458298,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001306,
+							["total"] = 246.001306,
+							["damage_from"] = {
+								["Vermina"] = true,
+							},
+							["targets"] = {
+								["Vermina"] = 246,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 246.001306,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458315,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Galak Marauder",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 39,
+										["targets"] = {
+											["Vermina"] = 246,
+										},
+										["n_dmg"] = 246,
+										["n_min"] = 30,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 246,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "4099",
+							["serial"] = "Creature-0-5571-1-6623-4099-000034D98E",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458313,
+							["damage_taken"] = 928.001306,
+							["start_time"] = 1664458299,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 579,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.006847,
+							["total_without_pet"] = 118.006847,
+							["total"] = 118.006847,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02BB4683",
+							["totalabsorb"] = 0.006847,
+							["last_hps"] = 7.483470543485069,
+							["targets"] = {
+								["Vermina"] = 118,
+							},
+							["totalover_without_pet"] = 0.006847,
+							["healing_taken"] = 118.006847,
+							["fight_component"] = true,
+							["end_time"] = 1664458315,
+							["healing_from"] = {
+								["Vermina"] = true,
+							},
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[20267] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 24,
+										["targets"] = {
+											["Vermina"] = 118,
+										},
+										["n_min"] = 23,
+										["counter"] = 5,
+										["overheal"] = 0,
+										["total"] = 118,
+										["c_max"] = 0,
+										["id"] = 20267,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 118,
+										["totaldenied"] = 0,
+										["n_amt"] = 5,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1664458308,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02BB4683",
+							["totaldenied"] = 0.006847,
+							["delay"] = 0,
+							["last_event"] = 1664458314,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 579,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 14.004673,
+							["resource"] = 0.004673,
+							["targets"] = {
+								["Vermina"] = 14,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "PALADIN",
+							["passiveover"] = 0.004673,
+							["fight_component"] = true,
+							["total"] = 14.004673,
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[20268] = {
+										["total"] = 14,
+										["id"] = 20268,
+										["totalover"] = 0,
+										["targets"] = {
+											["Vermina"] = 14,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.004673,
+							["last_event"] = 1664458298,
+							["aID"] = "4465-02BB4683",
+							["tipo"] = 3,
+							["serial"] = "Player-4465-02BB4683",
+							["totalover"] = 0.004673,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 579,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[20186] = {
+										["activedamt"] = -1,
+										["id"] = 20186,
+										["targets"] = {
+										},
+										["actived_at"] = 1664458308,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[54499] = {
+										["activedamt"] = 0,
+										["id"] = 54499,
+										["targets"] = {
+										},
+										["uptime"] = 16,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20185] = {
+										["activedamt"] = 0,
+										["id"] = 20185,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 51,
+							["aID"] = "4465-02BB4683",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[19835] = {
+										["activedamt"] = 1,
+										["id"] = 19835,
+										["targets"] = {
+										},
+										["uptime"] = 17,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[10298] = {
+										["activedamt"] = 1,
+										["id"] = 10298,
+										["targets"] = {
+										},
+										["uptime"] = 17,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20375] = {
+										["activedamt"] = 1,
+										["id"] = 20375,
+										["targets"] = {
+										},
+										["uptime"] = 17,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 22,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[20424] = 3,
+								[20271] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Vermina",
+							["last_event"] = 1664458315,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["serial"] = "Player-4465-02BB4683",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 579,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Vermina"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Vermina", -- [1]
+				},
+				["CombatStartedAt"] = 585292.617,
+				["tempo_start"] = 1664458298,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9350,
+				["playing_solo"] = true,
+				["totals"] = {
+					1174, -- [1]
+					118, -- [2]
+					{
+						0, -- [1]
+						[0] = 14,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					928, -- [1]
+					118, -- [2]
+					{
+						0, -- [1]
+						[0] = 14,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:31:55",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Galak Marauder",
+				["TotalElapsedCombatTime"] = 585287.337,
+				["CombatEndedAt"] = 585287.337,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Vermina"] = 118.006847,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Vermina"] = 928.0084899999999,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 585287.337,
+				["combat_id"] = 579,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:31:38",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Marauder"] = 1,
+				},
+				["start_time"] = 585270.25,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Marauder",
+			}, -- [14]
+			{
+				{
+					["combatId"] = 578,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002846,
+							["damage_from"] = {
+								["Galak Stormer"] = true,
+								["Galak Marauder"] = true,
+							},
+							["targets"] = {
+								["Galak Stormer"] = 671,
+								["Galak Marauder"] = 887,
+							},
+							["total"] = 1558.002846,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "PALADIN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1558.002846,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1664458291,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02BB4683",
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 268,
+										["g_amt"] = 0,
+										["n_max"] = 156,
+										["targets"] = {
+											["Galak Stormer"] = 397,
+											["Galak Marauder"] = 293,
+										},
+										["n_dmg"] = 422,
+										["n_min"] = 129,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 690,
+										["c_max"] = 268,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 268,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[20424] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 270,
+										["g_amt"] = 0,
+										["n_max"] = 69,
+										["targets"] = {
+											["Galak Marauder"] = 344,
+											["Galak Stormer"] = 193,
+										},
+										["n_dmg"] = 267,
+										["n_min"] = 65,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 537,
+										["c_max"] = 144,
+										["id"] = 20424,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 126,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 66,
+										["targets"] = {
+											["Galak Stormer"] = 63,
+											["Galak Marauder"] = 66,
+										},
+										["n_dmg"] = 129,
+										["n_min"] = 63,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 129,
+										["c_max"] = 0,
+										["id"] = 20467,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10298] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 19,
+										["targets"] = {
+											["Galak Stormer"] = 18,
+											["Galak Marauder"] = 184,
+										},
+										["n_dmg"] = 202,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 202,
+										["c_max"] = 0,
+										["id"] = 10298,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 11,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02BB4683",
+							["last_dps"] = 58.01969411238363,
+							["custom"] = 0,
+							["last_event"] = 1664458290,
+							["damage_taken"] = 332.002846,
+							["start_time"] = 1664458263,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00825,
+							["total"] = 35.00825,
+							["damage_from"] = {
+								["Vermina"] = true,
+							},
+							["targets"] = {
+								["Vermina"] = 35,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 35.00825,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458291,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Galak Stormer",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Vermina"] = 35,
+										},
+										["n_dmg"] = 35,
+										["n_min"] = 35,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 35,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "4097",
+							["serial"] = "Creature-0-5571-1-6623-4097-000034D926",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458266,
+							["damage_taken"] = 671.00825,
+							["start_time"] = 1664458290,
+							["delay"] = 1664458266,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.006117,
+							["total"] = 297.006117,
+							["damage_from"] = {
+								["Vermina"] = true,
+							},
+							["targets"] = {
+								["Vermina"] = 297,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 297.006117,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458291,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Galak Marauder",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 58,
 										["g_amt"] = 0,
 										["n_max"] = 37,
 										["targets"] = {
-											["Vermina"] = 343,
+											["Vermina"] = 297,
 										},
-										["n_dmg"] = 271,
-										["n_min"] = 30,
+										["n_dmg"] = 239,
+										["n_min"] = 14,
 										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 343,
-										["c_max"] = 72,
+										["counter"] = 12,
+										["total"] = 297,
+										["c_max"] = 58,
+										["DODGE"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["a_amt"] = 0,
-										["c_min"] = 72,
+										["PARRY"] = 1,
+										["c_min"] = 58,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 8,
-										["spellschool"] = 1,
-										["DODGE"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 9,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[6268] = {
 										["c_amt"] = 0,
@@ -9449,279 +8679,233 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 6268,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
+							["aID"] = "4099",
+							["serial"] = "Creature-0-5571-1-6623-4099-000034D9BE",
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1662751013,
-							["damage_taken"] = 1112.001567,
-							["start_time"] = 1662750993,
-							["serial"] = "Creature-0-4457-1-25451-4099-00001B894F",
-							["classe"] = "UNKNOW",
+							["last_event"] = 1664458288,
+							["damage_taken"] = 887.006117,
+							["start_time"] = 1664458268,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 578,
 					["tipo"] = 3,
-					["combatId"] = 546,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Vermina"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "PALADIN",
-							["totalover"] = 0.006587,
-							["total_without_pet"] = 250.006587,
-							["total"] = 250.006587,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-02BB4683",
-							["totalabsorb"] = 0.006587,
-							["last_hps"] = 8.943819518558497,
-							["targets"] = {
-								["Vermina"] = 250,
-							},
-							["totalover_without_pet"] = 0.006587,
-							["healing_taken"] = 250.006587,
-							["fight_component"] = true,
-							["end_time"] = 1662751014,
-							["tipo"] = 2,
-							["nome"] = "Vermina",
-							["spells"] = {
-								["_ActorTable"] = {
-									[20267] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 23,
-										["targets"] = {
-											["Vermina"] = 250,
-										},
-										["n_min"] = 22,
-										["counter"] = 11,
-										["overheal"] = 0,
-										["total"] = 250,
-										["c_max"] = 0,
-										["id"] = 20267,
-										["targets_absorbs"] = {
-										},
-										["c_min"] = 0,
-										["c_curado"] = 0,
-										["n_curado"] = 250,
-										["totaldenied"] = 0,
-										["n_amt"] = 11,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02BB4683",
-							["custom"] = 0,
-							["last_event"] = 1662751004,
-							["totaldenied"] = 0.006587,
-							["start_time"] = 1662750995,
-							["delay"] = 1662751004,
-							["heal_enemy_amt"] = 0,
-						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 578,
 					["tipo"] = 7,
-					["combatId"] = 546,
 					["_ActorTable"] = {
 						{
-							["received"] = 67.002691,
-							["resource"] = 0.002691,
+							["received"] = 139.002444,
+							["resource"] = 0.002444,
 							["targets"] = {
-								["Vermina"] = 67,
+								["Vermina"] = 139,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 0,
 							["classe"] = "PALADIN",
-							["passiveover"] = 0.002691,
-							["fight_component"] = true,
-							["total"] = 67.002691,
+							["passiveover"] = 0.002444,
+							["total"] = 139.002444,
 							["nome"] = "Vermina",
 							["spells"] = {
+								["tipo"] = 7,
 								["_ActorTable"] = {
 									[28730] = {
-										["total"] = 67,
+										["total"] = 70,
 										["id"] = 28730,
 										["totalover"] = 0,
 										["targets"] = {
-											["Vermina"] = 67,
+											["Vermina"] = 70,
 										},
 										["counter"] = 1,
 									},
+									[20268] = {
+										["total"] = 69,
+										["id"] = 20268,
+										["totalover"] = 0,
+										["targets"] = {
+											["Vermina"] = 69,
+										},
+										["counter"] = 5,
+									},
 								},
-								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["totalover"] = 0.002691,
-							["alternatepower"] = 0.002691,
-							["last_event"] = 1662751006,
-							["tipo"] = 3,
-							["aID"] = "4465-02BB4683",
-							["serial"] = "Player-4465-02BB4683",
 							["flag_original"] = 1297,
+							["alternatepower"] = 0.002444,
+							["last_event"] = 1664458290,
+							["aID"] = "4465-02BB4683",
+							["tipo"] = 3,
+							["serial"] = "Player-4465-02BB4683",
+							["totalover"] = 0.002444,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
+					["combatId"] = 578,
 					["tipo"] = 9,
-					["combatId"] = 546,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
 									[28730] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 0,
-										["refreshamt"] = 0,
 										["id"] = 28730,
-										["uptime"] = 2,
 										["targets"] = {
 										},
-										["appliedamt"] = 2,
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[54499] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 0,
-										["refreshamt"] = 0,
 										["id"] = 54499,
-										["uptime"] = 26,
 										["targets"] = {
 										},
-										["appliedamt"] = 3,
-									},
-									[20185] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = -1,
-										["refreshamt"] = 0,
-										["id"] = 20185,
-										["uptime"] = 23,
-										["targets"] = {
-										},
+										["uptime"] = 24,
 										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[25771] = {
-										["activedamt"] = -1,
+										["activedamt"] = 1,
 										["id"] = 25771,
 										["targets"] = {
 										},
-										["actived_at"] = 1662751014,
-										["uptime"] = 0,
-										["counter"] = 0,
+										["uptime"] = 12,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
-										["appliedamt"] = 0,
+										["counter"] = 0,
+									},
+									[20186] = {
+										["activedamt"] = -1,
+										["id"] = 20186,
+										["targets"] = {
+										},
+										["uptime"] = 23,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["buff_uptime"] = 152,
+							["cooldowns_defensive"] = 1.004428,
+							["buff_uptime"] = 96,
+							["last_cooldown"] = {
+								1664458278.797, -- [1]
+								498, -- [2]
+							},
 							["aID"] = "4465-02BB4683",
 							["interrupt_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
 									[32747] = {
 										["id"] = 32747,
-										["counter"] = 1,
+										["interrompeu_oque"] = {
+											[9532] = 1,
+										},
 										["targets"] = {
 											["Galak Stormer"] = 1,
 										},
-										["interrompeu_oque"] = {
-											[6535] = 1,
-										},
+										["counter"] = 1,
 									},
 								},
-								["tipo"] = 9,
 							},
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[377749] = {
-										["counter"] = 0,
-										["actived"] = false,
+									[19835] = {
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 377749,
-										["uptime"] = 38,
+										["id"] = 19835,
 										["targets"] = {
 										},
+										["uptime"] = 28,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
 										["id"] = 10298,
-										["uptime"] = 38,
 										["targets"] = {
 										},
+										["uptime"] = 28,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[498] = {
+										["activedamt"] = 1,
+										["id"] = 498,
+										["targets"] = {
+										},
+										["uptime"] = 12,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
 										["id"] = 20375,
-										["uptime"] = 38,
 										["targets"] = {
 										},
+										["uptime"] = 28,
 										["appliedamt"] = 1,
-									},
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
 										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 38,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
 							["interrompeu_oque"] = {
-								[6535] = 1,
+								[9532] = 1,
 							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 51,
-							["debuff_uptime_targets"] = {
+							["cooldowns_defensive_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[498] = {
+										["id"] = 498,
+										["targets"] = {
+											["Vermina"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
 							},
+							["debuff_uptime"] = 61,
+							["cooldowns_defensive_targets"] = {
+								["Vermina"] = 1,
+							},
+							["interrupt"] = 1.007407,
 							["buff_uptime_targets"] = {
 							},
 							["interrupt_targets"] = {
@@ -9730,56 +8914,42 @@ _detalhes_database = {
 							["grupo"] = true,
 							["spell_cast"] = {
 								[28730] = 1,
-								[20271] = 2,
-								[20424] = 7,
+								[53408] = 1,
+								[498] = 1,
+								[20271] = 1,
+								[20424] = 4,
 							},
-							["classe"] = "PALADIN",
-							["last_event"] = 1662751014,
-							["tipo"] = 4,
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["nome"] = "Vermina",
+							["last_event"] = 1664458291,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
 							["serial"] = "Player-4465-02BB4683",
-							["interrupt"] = 1.004835,
+							["tipo"] = 4,
 						}, -- [1]
 						{
 							["monster"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Galak Stormer",
-							["aID"] = "4097",
-							["spell_cast"] = {
-								[9532] = 7,
-								[6535] = 1,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4457-1-25451-4097-00001B898C",
-							["flag_original"] = 2632,
-						}, -- [2]
-						{
-							["monster"] = true,
-							["pets"] = {
-							},
 							["nome"] = "Galak Marauder",
-							["aID"] = "4099",
+							["flag_original"] = 2632,
 							["spell_cast"] = {
 								[6268] = 1,
 							},
-							["fight_component"] = true,
 							["classe"] = "UNKNOW",
-							["tipo"] = 4,
+							["fight_component"] = true,
 							["last_event"] = 0,
-							["serial"] = "Creature-0-4457-1-25451-4099-00001B87F3",
-							["flag_original"] = 2632,
-						}, -- [3]
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Creature-0-5571-1-6623-4099-000034D9BE",
+							["aID"] = "4099",
+						}, -- [2]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 578,
 					["tipo"] = 2,
-					["combatId"] = 546,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -9789,542 +8959,227 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Vermina", -- [1]
 				},
-				["CombatStartedAt"] = 2545943.366,
-				["tempo_start"] = 1662750976,
+				["CombatStartedAt"] = 585269.533,
+				["tempo_start"] = 1664458263,
 				["last_events_tables"] = {
-					{
-						{
-							{
-								true, -- [1]
-								9532, -- [2]
-								97, -- [3]
-								1662750983.189, -- [4]
-								931, -- [5]
-								"Galak Stormer", -- [6]
-								nil, -- [7]
-								8, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [1]
-							{
-								true, -- [1]
-								1, -- [2]
-								31, -- [3]
-								1662750984.272, -- [4]
-								834, -- [5]
-								"Galak Marauder", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [2]
-							{
-								true, -- [1]
-								9532, -- [2]
-								96, -- [3]
-								1662750986.856, -- [4]
-								803, -- [5]
-								"Galak Stormer", -- [6]
-								nil, -- [7]
-								8, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [3]
-							{
-								true, -- [1]
-								1, -- [2]
-								36, -- [3]
-								1662750987.806, -- [4]
-								707, -- [5]
-								"Galak Marauder", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [4]
-							{
-								true, -- [1]
-								9532, -- [2]
-								113, -- [3]
-								1662750989.656, -- [4]
-								671, -- [5]
-								"Galak Stormer", -- [6]
-								nil, -- [7]
-								8, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [5]
-							{
-								true, -- [1]
-								1, -- [2]
-								36, -- [3]
-								1662750989.822, -- [4]
-								558, -- [5]
-								"Galak Marauder", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [6]
-							{
-								false, -- [1]
-								20267, -- [2]
-								23, -- [3]
-								1662750991.54, -- [4]
-								522, -- [5]
-								"Vermina", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [7]
-							{
-								false, -- [1]
-								20267, -- [2]
-								23, -- [3]
-								1662750996.106, -- [4]
-								545, -- [5]
-								"Vermina", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [8]
-							{
-								false, -- [1]
-								20267, -- [2]
-								22, -- [3]
-								1662750996.106, -- [4]
-								545, -- [5]
-								"Vermina", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [9]
-							{
-								true, -- [1]
-								1, -- [2]
-								29, -- [3]
-								1662750997.206, -- [4]
-								590, -- [5]
-								"Galak Stormer", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [10]
-							{
-								true, -- [1]
-								1, -- [2]
-								30, -- [3]
-								1662750997.206, -- [4]
-								590, -- [5]
-								"Galak Stormer", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [11]
-							{
-								true, -- [1]
-								1, -- [2]
-								28, -- [3]
-								1662750999.206, -- [4]
-								531, -- [5]
-								"Galak Stormer", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [12]
-							{
-								false, -- [1]
-								20267, -- [2]
-								23, -- [3]
-								1662750999.756, -- [4]
-								503, -- [5]
-								"Vermina", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [13]
-							{
-								true, -- [1]
-								1, -- [2]
-								31, -- [3]
-								1662751000.406, -- [4]
-								526, -- [5]
-								"Galak Stormer", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [14]
-							{
-								true, -- [1]
-								9532, -- [2]
-								110, -- [3]
-								1662751002.073, -- [4]
-								495, -- [5]
-								"Galak Stormer", -- [6]
-								nil, -- [7]
-								8, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [15]
-							{
-								true, -- [1]
-								9532, -- [2]
-								101, -- [3]
-								1662751002.34, -- [4]
-								385, -- [5]
-								"Galak Stormer", -- [6]
-								nil, -- [7]
-								8, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [16]
-							{
-								false, -- [1]
-								20267, -- [2]
-								22, -- [3]
-								1662751003.523, -- [4]
-								284, -- [5]
-								"Vermina", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [17]
-							{
-								false, -- [1]
-								20267, -- [2]
-								23, -- [3]
-								1662751004.49, -- [4]
-								306, -- [5]
-								"Vermina", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [18]
-							{
-								false, -- [1]
-								20267, -- [2]
-								23, -- [3]
-								1662751004.49, -- [4]
-								306, -- [5]
-								"Vermina", -- [6]
-								nil, -- [7]
-								0, -- [8]
-							}, -- [19]
-							{
-								true, -- [1]
-								1, -- [2]
-								33, -- [3]
-								1662751005.323, -- [4]
-								352, -- [5]
-								"Galak Stormer", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [20]
-							{
-								true, -- [1]
-								9532, -- [2]
-								100, -- [3]
-								1662751005.874, -- [4]
-								319, -- [5]
-								"Galak Stormer", -- [6]
-								nil, -- [7]
-								8, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [21]
-							{
-								true, -- [1]
-								1, -- [2]
-								30, -- [3]
-								1662751007.323, -- [4]
-								219, -- [5]
-								"Galak Marauder", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [22]
-							{
-								true, -- [1]
-								1, -- [2]
-								34, -- [3]
-								1662751009.324, -- [4]
-								189, -- [5]
-								"Galak Marauder", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [23]
-							{
-								true, -- [1]
-								1, -- [2]
-								37, -- [3]
-								1662751011.34, -- [4]
-								155, -- [5]
-								"Galak Marauder", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [24]
-							{
-								true, -- [1]
-								1, -- [2]
-								31, -- [3]
-								1662751011.807, -- [4]
-								118, -- [5]
-								"Galak Stormer", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [25]
-							{
-								true, -- [1]
-								1, -- [2]
-								72, -- [3]
-								1662751013.825, -- [4]
-								87, -- [5]
-								"Galak Marauder", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-								true, -- [11]
-								false, -- [12]
-							}, -- [26]
-							{
-								true, -- [1]
-								6535, -- [2]
-								47, -- [3]
-								1662751014.757, -- [4]
-								15, -- [5]
-								"Galak Stormer", -- [6]
-								nil, -- [7]
-								8, -- [8]
-								false, -- [9]
-								32, -- [10]
-								false, -- [11]
-								false, -- [12]
-							}, -- [27]
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Vermina", -- [6]
-							}, -- [28]
-						}, -- [1]
-						1662751014.757, -- [2]
-						"Vermina", -- [3]
-						"PALADIN", -- [4]
-						1139, -- [5]
-						"0m 38s", -- [6]
-						["dead"] = true,
-						["dead_at"] = 38.18599999975413,
-					}, -- [1]
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 9349,
 				["playing_solo"] = true,
 				["totals"] = {
-					3834, -- [1]
-					250, -- [2]
+					1890, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 67,
+						[0] = 139,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 1,
-						["cc_break"] = 0,
-						["interrupt"] = 1,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 1,
+						["interrupt"] = 1,
 						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					1558, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 139,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 1,
+						["interrupt"] = 1,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:16:55",
+				["data_fim"] = "15:31:31",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Galak Marauder",
-				["TotalElapsedCombatTime"] = 2545852.86,
-				["CombatEndedAt"] = 2545852.86,
+				["enemy"] = "Galak Stormer",
+				["TotalElapsedCombatTime"] = 585263.031,
+				["CombatEndedAt"] = 585263.031,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "21:16:16",
-				["end_time"] = 2545852.86,
-				["combat_id"] = 546,
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Vermina"] = 2534.007268,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Vermina"] = 250.006587,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Vermina"] = 1558.002846,
+						}, -- [1]
+					},
 				},
-				["frags"] = {
-					["Galak Marauder"] = 1,
-					["Galak Stormer"] = 2,
-				},
-				["combat_counter"] = 9313,
-				["totals_grupo"] = {
-					2534, -- [1]
-					250, -- [2]
-					{
-						0, -- [1]
-						[0] = 67,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 1,
-						["cc_break"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Galak Marauder",
-				["start_time"] = 2545814.674,
-				["TimeData"] = {
+				["end_time"] = 585263.031,
+				["combat_id"] = 578,
+				["cleu_events"] = {
+					["n"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
-			}, -- [17]
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:31:03",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Stormer"] = 1,
+					["Galak Marauder"] = 1,
+				},
+				["start_time"] = 585235.446,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Stormer",
+			}, -- [15]
 			{
 				{
+					["combatId"] = 577,
 					["tipo"] = 2,
-					["combatId"] = 545,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005579,
+							["totalabsorbed"] = 0.007759,
 							["damage_from"] = {
-								["Galak Mauler"] = true,
+								["Galak Marauder"] = true,
 							},
 							["targets"] = {
-								["Galak Mauler"] = 965,
+								["Galak Marauder"] = 836,
 							},
-							["delay"] = 0,
+							["total"] = 836.007759,
 							["pets"] = {
 							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["classe"] = "PALADIN",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 965.005579,
-							["on_hold"] = false,
+							["total_without_pet"] = 836.007759,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
-							["total"] = 965.005579,
-							["damage_taken"] = 308.005579,
-							["tipo"] = 1,
+							["end_time"] = 1664458224,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02BB4683",
 							["nome"] = "Vermina",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 230,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 137,
+										["n_max"] = 153,
 										["targets"] = {
-											["Galak Mauler"] = 598,
+											["Galak Marauder"] = 438,
 										},
-										["n_dmg"] = 368,
-										["n_min"] = 114,
+										["n_dmg"] = 438,
+										["n_min"] = 135,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 598,
-										["c_max"] = 230,
-										["r_amt"] = 0,
+										["counter"] = 3,
+										["total"] = 438,
+										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["b_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_amt"] = 0,
-										["PARRY"] = 2,
-										["c_min"] = 230,
-										["successful_casted"] = 0,
 										["extra"] = {
 										},
-										["n_amt"] = 3,
-										["DODGE"] = 1,
 										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
+									[20424] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 280,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Galak Marauder"] = 280,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 280,
+										["c_max"] = 140,
+										["id"] = 20424,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 140,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 64,
+										["targets"] = {
+											["Galak Marauder"] = 64,
+										},
+										["n_dmg"] = 64,
+										["n_min"] = 64,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 64,
+										["c_max"] = 0,
+										["id"] = 20467,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									[10298] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -10332,155 +9187,989 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 18,
 										["targets"] = {
-											["Galak Mauler"] = 72,
+											["Galak Marauder"] = 54,
 										},
-										["n_dmg"] = 72,
+										["n_dmg"] = 54,
 										["n_min"] = 18,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 72,
+										["counter"] = 3,
+										["total"] = 54,
 										["c_max"] = 0,
 										["id"] = 10298,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
 										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02BB4683",
+							["last_dps"] = 102.5524728900649,
+							["custom"] = 0,
+							["last_event"] = 1664458223,
+							["damage_taken"] = 95.007759,
+							["start_time"] = 1664458215,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001007,
+							["total"] = 95.001007,
+							["damage_from"] = {
+								["Vermina"] = true,
+							},
+							["targets"] = {
+								["Vermina"] = 95,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 95.001007,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458224,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Galak Marauder",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 33,
+										["targets"] = {
+											["Vermina"] = 95,
+										},
+										["n_dmg"] = 95,
+										["n_min"] = 29,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 95,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "4099",
+							["serial"] = "Creature-0-5571-1-6623-4099-000034D9C4",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458220,
+							["damage_taken"] = 836.0010070000001,
+							["start_time"] = 1664458216,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 577,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "PALADIN",
+							["totalover"] = 0.003845,
+							["total_without_pet"] = 69.003845,
+							["total"] = 69.003845,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-02BB4683",
+							["totalabsorb"] = 0.003845,
+							["last_hps"] = 8.464652232579027,
+							["targets"] = {
+								["Vermina"] = 69,
+							},
+							["totalover_without_pet"] = 0.003845,
+							["healing_taken"] = 69.003845,
+							["fight_component"] = true,
+							["end_time"] = 1664458224,
+							["healing_from"] = {
+								["Vermina"] = true,
+							},
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[20267] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 23,
+										["targets"] = {
+											["Vermina"] = 69,
+										},
+										["n_min"] = 23,
+										["counter"] = 3,
+										["overheal"] = 0,
+										["total"] = 69,
+										["c_max"] = 0,
+										["id"] = 20267,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 69,
+										["totaldenied"] = 0,
+										["n_amt"] = 3,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1664458215,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02BB4683",
+							["totaldenied"] = 0.003845,
+							["delay"] = 0,
+							["last_event"] = 1664458223,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 577,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 577,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[54499] = {
+										["activedamt"] = 0,
+										["id"] = 54499,
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20185] = {
+										["activedamt"] = -1,
+										["id"] = 20185,
+										["targets"] = {
+										},
+										["actived_at"] = 1664458223,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 27,
+							["aID"] = "4465-02BB4683",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[19835] = {
+										["activedamt"] = 1,
+										["id"] = 19835,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[10298] = {
+										["activedamt"] = 1,
+										["id"] = 10298,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20375] = {
+										["activedamt"] = 1,
+										["id"] = 20375,
+										["targets"] = {
+										},
+										["uptime"] = 9,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 8,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[20424] = 3,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Vermina",
+							["last_event"] = 1664458224,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["serial"] = "Player-4465-02BB4683",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 577,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Vermina"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Vermina", -- [1]
+				},
+				["CombatStartedAt"] = 585235.446,
+				["tempo_start"] = 1664458215,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9348,
+				["playing_solo"] = true,
+				["totals"] = {
+					931, -- [1]
+					69, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					836, -- [1]
+					69, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:30:24",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Galak Marauder",
+				["TotalElapsedCombatTime"] = 585196.446,
+				["CombatEndedAt"] = 585196.446,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Vermina"] = 69.003845,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Vermina"] = 836.007759,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 585196.446,
+				["combat_id"] = 577,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:30:15",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Marauder"] = 1,
+				},
+				["start_time"] = 585187.094,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Marauder",
+			}, -- [16]
+			{
+				{
+					["combatId"] = 576,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005866,
+							["damage_from"] = {
+								["Galak Marauder"] = true,
+							},
+							["targets"] = {
+								["Galak Marauder"] = 889,
+							},
+							["total"] = 889.005866,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "PALADIN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 889.005866,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1664458189,
+							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02BB4683",
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 152,
+										["targets"] = {
+											["Galak Marauder"] = 552,
+										},
+										["n_dmg"] = 552,
+										["n_min"] = 130,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 552,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[67485] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 157,
+										["targets"] = {
+											["Galak Marauder"] = 157,
+										},
+										["n_dmg"] = 157,
+										["n_min"] = 157,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 157,
+										["c_max"] = 0,
+										["id"] = 67485,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
 										["extra"] = {
 										},
-										["spellschool"] = 2,
-									},
-									[20467] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 106,
-										["g_amt"] = 0,
-										["n_max"] = 57,
-										["targets"] = {
-											["Galak Mauler"] = 163,
-										},
-										["n_dmg"] = 57,
-										["n_min"] = 57,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 163,
-										["c_max"] = 106,
-										["id"] = 20467,
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
 										["a_dmg"] = 0,
-										["c_min"] = 106,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[20424] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 77,
+										["n_max"] = 64,
 										["targets"] = {
-											["Galak Mauler"] = 132,
+											["Galak Marauder"] = 64,
 										},
-										["n_dmg"] = 132,
-										["n_min"] = 55,
+										["n_dmg"] = 64,
+										["n_min"] = 64,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 132,
+										["counter"] = 3,
+										["total"] = 64,
 										["c_max"] = 0,
 										["id"] = 20424,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["MISS"] = 2,
+										["spellschool"] = 2,
 										["extra"] = {
 										},
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20467] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 61,
+										["targets"] = {
+											["Galak Marauder"] = 61,
+										},
+										["n_dmg"] = 61,
+										["n_min"] = 61,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 61,
+										["c_max"] = 0,
+										["id"] = 20467,
+										["r_dmg"] = 0,
 										["spellschool"] = 2,
-										["DODGE"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10298] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 19,
+										["targets"] = {
+											["Galak Marauder"] = 55,
+										},
+										["n_dmg"] = 55,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 55,
+										["c_max"] = 0,
+										["id"] = 10298,
+										["r_dmg"] = 0,
+										["RESIST"] = 1,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_dps"] = 45.26504897011724,
-							["end_time"] = 1662750967,
-							["colocacao"] = 1,
-							["last_event"] = 1662750967,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1662750946,
 							["serial"] = "Player-4465-02BB4683",
-							["aID"] = "4465-02BB4683",
+							["last_dps"] = 65.92553696706867,
+							["custom"] = 0,
+							["last_event"] = 1664458187,
+							["damage_taken"] = 149.005866,
+							["start_time"] = 1664458174,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002861,
+							["totalabsorbed"] = 0.007061,
+							["total"] = 149.007061,
 							["damage_from"] = {
 								["Vermina"] = true,
 							},
 							["targets"] = {
-								["Vermina"] = 308,
+								["Vermina"] = 149,
 							},
-							["delay"] = 0,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
-							["total"] = 308.002861,
-							["aID"] = "4095",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 308.002861,
 							["monster"] = true,
 							["fight_component"] = true,
-							["end_time"] = 1662750967,
-							["last_dps"] = 0,
-							["tipo"] = 1,
-							["nome"] = "Galak Mauler",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 149.007061,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458189,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Galak Marauder",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 121,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 67,
+										["n_max"] = 39,
 										["targets"] = {
-											["Vermina"] = 308,
+											["Vermina"] = 149,
 										},
-										["n_dmg"] = 187,
-										["n_min"] = 57,
+										["n_dmg"] = 149,
+										["n_min"] = 34,
 										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 308,
-										["r_amt"] = 0,
-										["c_max"] = 121,
-										["b_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 149,
+										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["MISS"] = 3,
-										["a_amt"] = 0,
+										["DODGE"] = 1,
+										["spellschool"] = 1,
 										["extra"] = {
 										},
-										["PARRY"] = 1,
-										["c_min"] = 121,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 3,
-										["DODGE"] = 1,
 										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+							},
+							["aID"] = "4099",
+							["serial"] = "Creature-0-5571-1-6623-4099-000034D926",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458184,
+							["damage_taken"] = 889.007061,
+							["start_time"] = 1664458176,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 576,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 576,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 42.002406,
+							["resource"] = 0.002406,
+							["targets"] = {
+								["Vermina"] = 42,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "PALADIN",
+							["passiveover"] = 0.002406,
+							["total"] = 42.002406,
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									[20268] = {
+										["total"] = 42,
+										["id"] = 20268,
+										["totalover"] = 0,
+										["targets"] = {
+											["Vermina"] = 42,
+										},
+										["counter"] = 3,
+									},
+								},
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.002406,
+							["last_event"] = 1664458187,
+							["aID"] = "4465-02BB4683",
+							["tipo"] = 3,
+							["serial"] = "Player-4465-02BB4683",
+							["totalover"] = 0.002406,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 576,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[20186] = {
+										["activedamt"] = 0,
+										["id"] = 20186,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[54499] = {
+										["activedamt"] = 0,
+										["id"] = 54499,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[62124] = {
+										["activedamt"] = 0,
+										["id"] = 62124,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 45,
+							["aID"] = "4465-02BB4683",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[19835] = {
+										["activedamt"] = 1,
+										["id"] = 19835,
+										["targets"] = {
+										},
+										["uptime"] = 15,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[10298] = {
+										["activedamt"] = 1,
+										["id"] = 10298,
+										["targets"] = {
+										},
+										["uptime"] = 15,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20375] = {
+										["activedamt"] = 1,
+										["id"] = 20375,
+										["targets"] = {
+										},
+										["uptime"] = 15,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 17,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								[20424] = 4,
+								[53408] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Vermina",
+							["last_event"] = 1664458189,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["serial"] = "Player-4465-02BB4683",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 576,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Vermina"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Vermina", -- [1]
+				},
+				["CombatStartedAt"] = 585186.762,
+				["tempo_start"] = 1664458174,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 9347,
+				["playing_solo"] = true,
+				["totals"] = {
+					1038, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 42,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					889, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 42,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["data_fim"] = "15:29:49",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Galak Marauder",
+				["TotalElapsedCombatTime"] = 585160.843,
+				["CombatEndedAt"] = 585160.843,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Vermina"] = 889.005866,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 585160.843,
+				["combat_id"] = 576,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:29:34",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Marauder"] = 1,
+				},
+				["start_time"] = 585146.072,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Marauder",
+			}, -- [17]
+			{
+				{
+					["combatId"] = 575,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.008693,
+							["total"] = 789.008693,
+							["damage_from"] = {
+								["Vermina"] = true,
+							},
+							["targets"] = {
+								["Vermina"] = 789,
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 789.008693,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1664458161,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Galak Mauler",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 68,
+										["targets"] = {
+											["Vermina"] = 789,
+										},
+										["n_dmg"] = 789,
+										["n_min"] = 53,
+										["g_dmg"] = 0,
+										["counter"] = 21,
+										["MISS"] = 1,
+										["total"] = 789,
+										["c_max"] = 0,
+										["DODGE"] = 5,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 2,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 13,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[13730] = {
 										["c_amt"] = 0,
@@ -10498,47 +10187,228 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 13730,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
 										["extra"] = {
 										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
+							},
+							["aID"] = "4095",
+							["serial"] = "Creature-0-5571-1-6623-4095-000034D94A",
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1664458155,
+							["damage_taken"] = 2839.008693,
+							["start_time"] = 1664458135,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003928,
+							["damage_from"] = {
+								["Galak Mauler"] = true,
+							},
+							["targets"] = {
+								["Galak Mauler"] = 2839,
+							},
+							["total"] = 2839.003928,
+							["pets"] = {
 							},
 							["on_hold"] = false,
+							["classe"] = "PALADIN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2839.003928,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
+							["end_time"] = 1664458161,
 							["friendlyfire_total"] = 0,
+							["aID"] = "4465-02BB4683",
+							["nome"] = "Vermina",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 263,
+										["g_amt"] = 0,
+										["n_max"] = 142,
+										["targets"] = {
+											["Galak Mauler"] = 933,
+										},
+										["n_dmg"] = 670,
+										["n_min"] = 124,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 933,
+										["c_max"] = 263,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["PARRY"] = 1,
+										["c_min"] = 263,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[26573] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 20,
+										["targets"] = {
+											["Galak Mauler"] = 855,
+										},
+										["n_dmg"] = 855,
+										["n_min"] = 19,
+										["g_dmg"] = 0,
+										["counter"] = 44,
+										["total"] = 855,
+										["c_max"] = 0,
+										["id"] = 26573,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 44,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[10298] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 19,
+										["targets"] = {
+											["Galak Mauler"] = 240,
+										},
+										["n_dmg"] = 240,
+										["n_min"] = 18,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 240,
+										["c_max"] = 0,
+										["id"] = 10298,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 13,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20467] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 108,
+										["g_amt"] = 0,
+										["n_max"] = 63,
+										["targets"] = {
+											["Galak Mauler"] = 288,
+										},
+										["n_dmg"] = 180,
+										["n_min"] = 58,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 288,
+										["c_max"] = 108,
+										["id"] = 20467,
+										["r_dmg"] = 0,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 108,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[20424] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 137,
+										["g_amt"] = 0,
+										["n_max"] = 71,
+										["targets"] = {
+											["Galak Mauler"] = 523,
+										},
+										["n_dmg"] = 386,
+										["n_min"] = 58,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 523,
+										["c_max"] = 137,
+										["MISS"] = 1,
+										["id"] = 20424,
+										["r_dmg"] = 0,
+										["DODGE"] = 3,
+										["spellschool"] = 2,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 137,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-02BB4683",
+							["last_dps"] = 113.3153958649149,
 							["custom"] = 0,
-							["last_event"] = 1662750966,
-							["damage_taken"] = 965.0028609999999,
-							["start_time"] = 1662750946,
-							["serial"] = "Creature-0-4457-1-25451-4095-00001B8E9F",
-							["classe"] = "UNKNOW",
+							["last_event"] = 1664458160,
+							["damage_taken"] = 789.003928,
+							["start_time"] = 1664458135,
+							["delay"] = 0,
+							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 575,
 					["tipo"] = 3,
-					["combatId"] = 545,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Vermina"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
 							["classe"] = "PALADIN",
-							["totalover"] = 0.007743,
-							["total_without_pet"] = 112.007743,
-							["total"] = 112.007743,
+							["totalover"] = 0.007541,
+							["total_without_pet"] = 189.007541,
+							["total"] = 189.007541,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
@@ -10546,189 +10416,203 @@ _detalhes_database = {
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-02BB4683",
-							["totalabsorb"] = 0.007743,
-							["last_hps"] = 5.253892912392486,
+							["totalabsorb"] = 0.007541,
+							["last_hps"] = 7.544006585773605,
 							["targets"] = {
-								["Vermina"] = 112,
+								["Vermina"] = 189,
 							},
-							["totalover_without_pet"] = 0.007743,
-							["healing_taken"] = 112.007743,
+							["totalover_without_pet"] = 0.007541,
+							["healing_taken"] = 189.007541,
 							["fight_component"] = true,
-							["end_time"] = 1662750967,
-							["tipo"] = 2,
+							["end_time"] = 1664458161,
+							["healing_from"] = {
+								["Vermina"] = true,
+							},
 							["nome"] = "Vermina",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									[20267] = {
 										["c_amt"] = 0,
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
 										},
-										["n_max"] = 23,
+										["n_max"] = 24,
 										["targets"] = {
-											["Vermina"] = 112,
+											["Vermina"] = 189,
 										},
-										["n_min"] = 22,
-										["counter"] = 5,
+										["n_min"] = 23,
+										["counter"] = 8,
 										["overheal"] = 0,
-										["total"] = 112,
+										["total"] = 189,
 										["c_max"] = 0,
 										["id"] = 20267,
 										["targets_absorbs"] = {
 										},
 										["c_min"] = 0,
 										["c_curado"] = 0,
-										["n_curado"] = 112,
+										["n_curado"] = 189,
 										["totaldenied"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 8,
 										["absorbed"] = 0,
 									},
 								},
-								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["aID"] = "4465-02BB4683",
-							["custom"] = 0,
-							["last_event"] = 1662750967,
-							["totaldenied"] = 0.007743,
-							["start_time"] = 1662750959,
-							["delay"] = 1662750947,
 							["heal_enemy_amt"] = 0,
+							["start_time"] = 1664458137,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "4465-02BB4683",
+							["totaldenied"] = 0.007541,
+							["delay"] = 0,
+							["last_event"] = 1664458160,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 575,
 					["tipo"] = 7,
-					["combatId"] = 545,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
+					["combatId"] = 575,
 					["tipo"] = 9,
-					["combatId"] = 545,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[20185] = {
-										["counter"] = 0,
-										["actived"] = false,
+									[26573] = {
 										["activedamt"] = 0,
-										["refreshamt"] = 1,
-										["id"] = 20185,
-										["uptime"] = 20,
+										["id"] = 26573,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["uptime"] = 17,
+										["appliedamt"] = 6,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[54499] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 0,
-										["refreshamt"] = 0,
 										["id"] = 54499,
-										["uptime"] = 20,
 										["targets"] = {
 										},
-										["appliedamt"] = 2,
+										["uptime"] = 17,
+										["appliedamt"] = 4,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[20185] = {
+										["activedamt"] = 0,
+										["id"] = 20185,
+										["targets"] = {
+										},
+										["uptime"] = 17,
+										["appliedamt"] = 3,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[62124] = {
+										["activedamt"] = 0,
+										["id"] = 62124,
+										["targets"] = {
+										},
+										["uptime"] = 3,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["buff_uptime"] = 84,
+							["buff_uptime"] = 78,
 							["aID"] = "4465-02BB4683",
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									[377749] = {
-										["counter"] = 0,
-										["actived"] = false,
+									[19835] = {
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 377749,
-										["uptime"] = 21,
+										["id"] = 19835,
 										["targets"] = {
 										},
+										["uptime"] = 26,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[10298] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
 										["id"] = 10298,
-										["uptime"] = 21,
 										["targets"] = {
 										},
+										["uptime"] = 26,
 										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[20375] = {
-										["counter"] = 0,
-										["actived"] = false,
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
 										["id"] = 20375,
-										["uptime"] = 21,
 										["targets"] = {
 										},
+										["uptime"] = 26,
 										["appliedamt"] = 1,
-									},
-									[19835] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
 										["refreshamt"] = 0,
-										["id"] = 19835,
-										["uptime"] = 21,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
 							["fight_component"] = true,
-							["debuff_uptime"] = 40,
+							["debuff_uptime"] = 54,
 							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
-								[20271] = 2,
-								[20424] = 3,
+								[26573] = 2,
+								[20271] = 4,
+								[62124] = 1,
+								[20424] = 6,
 							},
-							["nome"] = "Vermina",
-							["tipo"] = 4,
-							["last_event"] = 1662750967,
-							["classe"] = "PALADIN",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-02BB4683",
 							["debuff_uptime_targets"] = {
 							},
+							["nome"] = "Vermina",
+							["last_event"] = 1664458161,
+							["pets"] = {
+							},
+							["classe"] = "PALADIN",
+							["serial"] = "Player-4465-02BB4683",
+							["tipo"] = 4,
 						}, -- [1]
 						{
 							["monster"] = true,
+							["nome"] = "Galak Mauler",
+							["flag_original"] = 68168,
+							["spell_cast"] = {
+								[13730] = 2,
+							},
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["last_event"] = 0,
 							["pets"] = {
 							},
-							["nome"] = "Galak Mauler",
-							["aID"] = "4095",
-							["spell_cast"] = {
-								[13730] = 1,
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
 							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4457-1-25451-4095-00001B8E9F",
-							["flag_original"] = 68168,
+							["serial"] = "Creature-0-5571-1-6623-4095-000034D930",
+							["aID"] = "4095",
 						}, -- [2]
 					},
 				}, -- [4]
 				{
+					["combatId"] = 575,
 					["tipo"] = 2,
-					["combatId"] = 545,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -10738,110 +10622,109 @@ _detalhes_database = {
 				["raid_roster_indexed"] = {
 					"Vermina", -- [1]
 				},
-				["CombatStartedAt"] = 2545814.275,
-				["tempo_start"] = 1662750946,
+				["CombatStartedAt"] = 585146.072,
+				["tempo_start"] = 1664458135,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 9346,
 				["playing_solo"] = true,
 				["totals"] = {
-					1273, -- [1]
-					111.995215, -- [2]
+					3628, -- [1]
+					189, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					2839, -- [1]
+					189, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:16:08",
+				["data_fim"] = "15:29:21",
 				["cleu_timeline"] = {
 				},
 				["enemy"] = "Galak Mauler",
-				["TotalElapsedCombatTime"] = 2545806.091,
-				["CombatEndedAt"] = 2545806.091,
+				["TotalElapsedCombatTime"] = 585133.258,
+				["CombatEndedAt"] = 585133.258,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "21:15:46",
-				["end_time"] = 2545806.091,
-				["combat_id"] = 545,
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Vermina"] = 965.005579,
-						}, -- [1]
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Vermina"] = 112.007743,
+							["Vermina"] = 189.007541,
 						}, -- [1]
 					},
 					["damage_section"] = {
 					},
+					["damage"] = {
+						{
+							["Vermina"] = 2839.003928,
+						}, -- [1]
+					},
 				},
-				["frags"] = {
-					["Galak Mauler"] = 1,
-				},
-				["combat_counter"] = 9312,
-				["totals_grupo"] = {
-					965, -- [1]
-					112, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Galak Mauler",
-				["start_time"] = 2545784.639,
-				["TimeData"] = {
+				["end_time"] = 585133.258,
+				["combat_id"] = 575,
+				["cleu_events"] = {
+					["n"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "15:28:56",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Galak Mauler"] = 3,
+				},
+				["start_time"] = 585107.772,
+				["TimeData"] = {
+				},
+				["contra"] = "Galak Mauler",
 			}, -- [18]
 		},
 	},
@@ -10853,9 +10736,9 @@ _detalhes_database = {
 		["show_options"] = false,
 		["pos"] = {
 		},
+		["height"] = 18,
 		["cooldowns"] = {
 		},
-		["height"] = 18,
 		["framme_locked"] = false,
 		["show_conditions"] = {
 			["only_inside_instance"] = true,
@@ -10905,7 +10788,7 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 573.7486572265625,
+					["y"] = 573.7485961914062,
 					["x"] = -1059.56290435791,
 					["w"] = 234.8973846435547,
 					["h"] = 136.6408081054688,
@@ -10939,8 +10822,8 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 573.7486572265625,
-					["x"] = -827.6271667480469,
+					["y"] = 573.7485961914062,
+					["x"] = -827.6271362304688,
 					["w"] = 228.9743957519531,
 					["h"] = 136.6408081054688,
 				},
@@ -11032,14 +10915,14 @@ _detalhes_database = {
 			["useplayercolor"] = false,
 			["playSound"] = false,
 		},
-		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
-			["enabled"] = true,
-			["author"] = "Details! Team",
-		},
 		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
 			["author"] = "Details! Team",
 			["SpellBarsShowType"] = 1,
+		},
+		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
+			["enabled"] = true,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_VANGUARD"] = {
 			["enabled"] = true,
@@ -11053,11 +10936,21 @@ _detalhes_database = {
 			["last_section_selected"] = "main",
 			["hide_on_combat"] = false,
 			["opened"] = 0,
-			["window_scale"] = 1,
+			["author"] = "Details! Team",
 			["show_icon"] = 5,
 			["encounter_timers_dbm"] = {
 			},
+			["window_scale"] = 1,
+		},
+		["DETAILS_PLUGIN_YANP"] = {
+			["enabled"] = true,
+			["rightclick_closed"] = false,
+			["auto_open"] = true,
+			["hide_on_combat"] = true,
 			["author"] = "Details! Team",
+			["deaths_table"] = {
+			},
+			["shown_time"] = 30,
 		},
 		["DETAILS_PLUGIN_TIME_ATTACK"] = {
 			["enabled"] = true,
@@ -11070,20 +10963,10 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["author"] = "Details! Team",
+			["realm_lastamt"] = 0,
 			["realm_history"] = {
 			},
-			["realm_lastamt"] = 0,
-		},
-		["DETAILS_PLUGIN_YANP"] = {
-			["enabled"] = true,
-			["rightclick_closed"] = false,
-			["auto_open"] = true,
 			["author"] = "Details! Team",
-			["hide_on_combat"] = true,
-			["deaths_table"] = {
-			},
-			["shown_time"] = 30,
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["font_color"] = {
@@ -11109,17 +10992,22 @@ _detalhes_database = {
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["use_square_mode"] = false,
+			["scale"] = 1,
 			["arrow_anchor_x"] = 0,
-			["main_frame_locked"] = true,
+			["row_height"] = 18,
 			["row_texture"] = "Glamour2",
-			["arrow_anchor_y"] = 0,
-			["y"] = -183.107162475586,
-			["main_frame_strata"] = "LOW",
+			["point"] = "RIGHT",
+			["author"] = "Details! Team",
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
+			["use_spark"] = false,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -11127,14 +11015,8 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["use_spark"] = false,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -11142,44 +11024,39 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = -6.103515625e-05,
 				["x"] = 0.00311279296875,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.05,
 				["size"] = 32,
+				["update_speed"] = 0.05,
+				["attribute_type"] = 1,
 			},
+			["y"] = -183.107162475586,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["author"] = "Details! Team",
-			["point"] = "RIGHT",
-			["row_height"] = 18,
-			["scale"] = 1,
+			["font_size"] = 10,
+			["arrow_anchor_y"] = 0,
+			["main_frame_locked"] = true,
+			["use_square_mode"] = false,
 		},
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["announce_prepots"] = {
 		["enabled"] = false,
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["combat_counter"] = 9332,
-	["cached_roles"] = {
-		["Player-4465-01487BDF"] = "DAMAGER",
-		["Player-4465-01612EE6"] = "DAMAGER",
-		["Player-4465-0272E0C9"] = "DAMAGER",
-		["Player-4465-02BB4683"] = "DAMAGER",
-		["Player-4465-02CA729A"] = "DAMAGER",
-		["Player-4465-02C980D0"] = "DAMAGER",
-		["Player-4465-00E5831F"] = "DAMAGER",
-		["Player-4465-02C34E5A"] = "DAMAGER",
-		["Player-4465-00209801"] = "DAMAGER",
-	},
-	["announce_firsthit"] = {
+	["announce_damagerecord"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["last_realversion"] = 146,
-	["cached_talents"] = {
+	["combat_counter"] = 9363,
+	["character_data"] = {
+		["logons"] = 2053,
 	},
-	["combat_id"] = 562,
+	["force_font_outline"] = "",
+	["combat_id"] = 592,
 	["savedStyles"] = {
 		{
 			["hide_in_combat_type"] = 1,
@@ -11200,7 +11077,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["skin_custom"] = "vermin",
+			["bars_sort_direction"] = 1,
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -11368,13 +11245,13 @@ _detalhes_database = {
 				},
 			},
 			["show_sidebars"] = false,
-			["version"] = 3,
+			["name"] = "vermin",
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["bg_alpha"] = 0,
+			["version"] = 3,
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -11416,7 +11293,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["bars_sort_direction"] = 1,
+			["micro_displays_locked"] = false,
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -11432,11 +11309,15 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
+			},
 			["menu_anchor_down"] = {
 				16, -- [1]
 				-3, -- [2]
 			},
-			["bars_grow_direction"] = 1,
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
@@ -11454,19 +11335,15 @@ _detalhes_database = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
-			},
+			["bars_grow_direction"] = 1,
 			["auto_current"] = true,
-			["micro_displays_locked"] = false,
+			["skin_custom"] = "vermin",
 			["switch_damager"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["name"] = "vermin",
+			["bg_alpha"] = 0,
 			["hide_in_combat"] = false,
 			["row_info"] = {
 				["textR_outline"] = false,
@@ -11615,7 +11492,7 @@ _detalhes_database = {
 			},
 		}, -- [1]
 	},
-	["ignore_nicktag"] = true,
+	["on_death_menu"] = true,
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "",
 		["started"] = false,
@@ -11649,26 +11526,25 @@ _detalhes_database = {
 						["Zhevra Courser"] = 0,
 						["Elder Cloud Serpent"] = 0,
 						["Galak Marauder"] = 0,
-						["Galak Mauler"] = 0,
+						["Thunderhead"] = 0,
 						["Cloud Serpent"] = 0,
 						["Galak Flame Guard"] = 0,
 						["Galak Stormer"] = 0,
-						["Thunderhead"] = 0,
+						["Galak Mauler"] = 0,
 					},
 					["pets"] = {
 					},
+					["last_dps"] = 0,
+					["tipo"] = 1,
 					["aID"] = "4465-02BB4683",
-					["last_event"] = 0,
-					["classe"] = "PALADIN",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003847,
-					["serial"] = "Player-4465-02BB4683",
+					["delay"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1662747817,
-					["friendlyfire"] = {
-					},
 					["on_hold"] = false,
+					["damage_taken"] = 0.003847,
 					["nome"] = "Vermina",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -11685,11 +11561,11 @@ _detalhes_database = {
 									["Zhevra Courser"] = 0,
 									["Galak Mauler"] = 0,
 									["Galak Marauder"] = 0,
-									["Galak Windchaser"] = 0,
+									["Elder Cloud Serpent"] = 0,
 									["Cloud Serpent"] = 0,
 									["Galak Flame Guard"] = 0,
 									["Galak Stormer"] = 0,
-									["Elder Cloud Serpent"] = 0,
+									["Galak Windchaser"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -11699,15 +11575,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 							[26573] = {
 								["c_amt"] = 0,
@@ -11717,9 +11593,9 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Galak Flame Guard"] = 0,
-									["Galak Marauder"] = 0,
-									["Galak Mauler"] = 0,
 									["Galak Scout"] = 0,
+									["Galak Mauler"] = 0,
+									["Galak Marauder"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -11729,34 +11605,33 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 26573,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
-							[20467] = {
+							[10298] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Thunderhead"] = 0,
+									["Galak Windchaser"] = 0,
 									["Galak Wrangler"] = 0,
 									["Galak Scout"] = 0,
 									["Zhevra Courser"] = 0,
-									["Galak Mauler"] = 0,
-									["Galak Marauder"] = 0,
-									["Galak Windchaser"] = 0,
-									["Cloud Serpent"] = 0,
-									["Galak Flame Guard"] = 0,
-									["Galak Stormer"] = 0,
 									["Elder Cloud Serpent"] = 0,
+									["Galak Marauder"] = 0,
+									["Galak Flame Guard"] = 0,
+									["Thunderhead"] = 0,
+									["Galak Stormer"] = 0,
+									["Galak Mauler"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -11764,17 +11639,17 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = 20467,
+								["id"] = 10298,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[879] = {
 								["c_amt"] = 0,
@@ -11783,6 +11658,7 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Galak Scout"] = 0,
 									["Zhevra Courser"] = 0,
 								},
 								["n_dmg"] = 0,
@@ -11793,15 +11669,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 879,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[67485] = {
 								["c_amt"] = 0,
@@ -11823,15 +11699,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 67485,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[20424] = {
 								["c_amt"] = 0,
@@ -11846,11 +11722,11 @@ _detalhes_database = {
 									["Zhevra Courser"] = 0,
 									["Elder Cloud Serpent"] = 0,
 									["Galak Marauder"] = 0,
-									["Galak Windchaser"] = 0,
+									["Cloud Serpent"] = 0,
 									["Galak Flame Guard"] = 0,
 									["Galak Mauler"] = 0,
 									["Galak Stormer"] = 0,
-									["Cloud Serpent"] = 0,
+									["Galak Windchaser"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -11860,15 +11736,52 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 20424,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[20467] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Thunderhead"] = 0,
+									["Galak Wrangler"] = 0,
+									["Galak Scout"] = 0,
+									["Zhevra Courser"] = 0,
+									["Galak Mauler"] = 0,
+									["Galak Marauder"] = 0,
+									["Elder Cloud Serpent"] = 0,
+									["Cloud Serpent"] = 0,
+									["Galak Flame Guard"] = 0,
+									["Galak Stormer"] = 0,
+									["Galak Windchaser"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 20467,
+								["r_dmg"] = 0,
 								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[20271] = {
 								["c_amt"] = 0,
@@ -11879,6 +11792,7 @@ _detalhes_database = {
 								["targets"] = {
 									["Galak Flame Guard"] = 0,
 									["Galak Stormer"] = 0,
+									["Galak Scout"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
@@ -11888,51 +11802,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 20271,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[10298] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Galak Windchaser"] = 0,
-									["Galak Wrangler"] = 0,
-									["Galak Scout"] = 0,
-									["Zhevra Courser"] = 0,
-									["Elder Cloud Serpent"] = 0,
-									["Galak Marauder"] = 0,
-									["Galak Flame Guard"] = 0,
-									["Galak Mauler"] = 0,
-									["Galak Stormer"] = 0,
-									["Thunderhead"] = 0,
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 10298,
-								["r_dmg"] = 0,
+								["a_dmg"] = 0,
 								["extra"] = {
 								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -11941,11 +11819,12 @@ _detalhes_database = {
 					["total"] = 0.003847,
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.003847,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1662747814,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Player-4465-02BB4683",
+					["classe"] = "PALADIN",
 				}, -- [1]
 				{
 					["flag_original"] = 68136,
@@ -11957,18 +11836,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
+					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["aID"] = "3466",
-					["on_hold"] = false,
-					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005434,
-					["serial"] = "Creature-0-5563-1-16630-3466-00001B83FE",
+					["delay"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1662747817,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.005434,
 					["nome"] = "Zhevra Courser",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -11989,28 +11868,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["total"] = 0.005434,
-					["dps_started"] = false,
-					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.005434,
+					["dps_started"] = false,
+					["total"] = 0.005434,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1662747814,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Creature-0-5563-1-16630-3466-00001B83FE",
+					["classe"] = "UNKNOW",
 				}, -- [2]
 				{
 					["flag_original"] = 68168,
@@ -12020,20 +11899,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Vermina"] = 0,
 					},
-					["serial"] = "Creature-0-5563-1-16630-3239-00001B59EF",
+					["delay"] = 0,
 					["pets"] = {
 					},
-					["end_time"] = 1662747817,
+					["monster"] = true,
+					["classe"] = "UNKNOW",
 					["friendlyfire_total"] = 0,
-					["aID"] = "3239",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004596,
-					["fight_component"] = true,
 					["dps_started"] = false,
-					["total"] = 0.004596,
-					["last_dps"] = 0,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1662747817,
+					["on_hold"] = false,
+					["tipo"] = 1,
 					["nome"] = "Thunderhead",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12054,15 +11933,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 							[5401] = {
 								["c_amt"] = 0,
@@ -12081,29 +11960,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 5401,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.004596,
+					["total"] = 0.004596,
 					["friendlyfire"] = {
 					},
-					["monster"] = true,
+					["damage_taken"] = 0.004596,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
+					["last_event"] = 0,
+					["last_dps"] = 0,
 					["start_time"] = 1662747814,
-					["delay"] = 0,
-					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-5563-1-16630-3239-00001B59EF",
+					["aID"] = "3239",
 				}, -- [3]
 				{
 					["flag_original"] = 68168,
@@ -12112,20 +11991,20 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["serial"] = "Creature-0-4457-1-25451-4117-00001B902C",
+					["delay"] = 0,
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["aID"] = "4117",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006794,
-					["end_time"] = 1664442314,
 					["dps_started"] = false,
-					["total"] = 0.006794,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1664442314,
+					["damage_taken"] = 0.006794,
+					["tipo"] = 1,
 					["nome"] = "Cloud Serpent",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12146,29 +12025,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["total"] = 0.006794,
 					["friendlyfire"] = {
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.006794,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1664442311,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4457-1-25451-4117-00001B902C",
+					["aID"] = "4117",
 				}, -- [4]
 				{
 					["flag_original"] = 68168,
@@ -12178,20 +12057,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Vermina"] = 0,
 					},
-					["serial"] = "Creature-0-4457-1-25451-4119-00001B8870",
+					["delay"] = 0,
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["aID"] = "4119",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005266,
-					["end_time"] = 1664442314,
 					["dps_started"] = false,
-					["total"] = 0.005266,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1664442314,
+					["damage_taken"] = 0.005266,
+					["tipo"] = 1,
 					["nome"] = "Elder Cloud Serpent",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12212,15 +12091,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 							[8246] = {
 								["c_amt"] = 0,
@@ -12239,29 +12118,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 8246,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["total"] = 0.005266,
 					["friendlyfire"] = {
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.005266,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1664442311,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4457-1-25451-4119-00001B8870",
+					["aID"] = "4119",
 				}, -- [5]
 				{
 					["flag_original"] = 68168,
@@ -12272,20 +12151,20 @@ _detalhes_database = {
 						["Vermina"] = 0,
 						["Agranok"] = 0,
 					},
-					["serial"] = "Creature-0-4457-1-25451-4096-00009B91E0",
+					["delay"] = 0,
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["aID"] = "4096",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006311,
-					["end_time"] = 1664442314,
 					["dps_started"] = false,
-					["total"] = 0.006311,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1664442314,
+					["damage_taken"] = 0.006311,
+					["tipo"] = 1,
 					["nome"] = "Galak Windchaser",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12307,29 +12186,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["total"] = 0.006311,
 					["friendlyfire"] = {
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.006311,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1664442311,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4457-1-25451-4096-00009B91E0",
+					["aID"] = "4096",
 				}, -- [6]
 				{
 					["flag_original"] = 2632,
@@ -12340,20 +12219,20 @@ _detalhes_database = {
 						["Vermina"] = 0,
 						["Agranok"] = 0,
 					},
-					["serial"] = "Creature-0-4457-1-25451-4094-00001B8CBD",
+					["delay"] = 0,
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["aID"] = "4094",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003922,
-					["end_time"] = 1664442314,
 					["dps_started"] = false,
-					["total"] = 0.003922,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1664442314,
+					["damage_taken"] = 0.003922,
+					["tipo"] = 1,
 					["nome"] = "Galak Scout",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12374,15 +12253,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 							[6660] = {
 								["c_amt"] = 0,
@@ -12402,29 +12281,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 6660,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["total"] = 0.003922,
 					["friendlyfire"] = {
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.003922,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1664442311,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4457-1-25451-4094-00001B8CBD",
+					["aID"] = "4094",
 				}, -- [7]
 				{
 					["flag_original"] = 68168,
@@ -12434,20 +12313,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Vermina"] = 0,
 					},
-					["serial"] = "Creature-0-4457-1-25451-4093-00001B91EA",
+					["delay"] = 0,
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["aID"] = "4093",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006812,
-					["end_time"] = 1664442314,
 					["dps_started"] = false,
-					["total"] = 0.006812,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1664442314,
+					["damage_taken"] = 0.006812,
+					["tipo"] = 1,
 					["nome"] = "Galak Wrangler",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12468,15 +12347,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 							[6533] = {
 								["c_amt"] = 0,
@@ -12494,15 +12373,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 6533,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[6660] = {
 								["c_amt"] = 0,
@@ -12521,29 +12400,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 6660,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["total"] = 0.006812,
 					["friendlyfire"] = {
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.006812,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1664442311,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4457-1-25451-4093-00001B91EA",
+					["aID"] = "4093",
 				}, -- [8]
 				{
 					["flag_original"] = 2632,
@@ -12553,20 +12432,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Vermina"] = 0,
 					},
-					["serial"] = "Creature-0-4457-1-25451-7404-00001B8F95",
+					["delay"] = 0,
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["aID"] = "7404",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00671,
-					["end_time"] = 1664442314,
 					["dps_started"] = false,
-					["total"] = 0.00671,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1664442314,
+					["damage_taken"] = 0.00671,
+					["tipo"] = 1,
 					["nome"] = "Galak Flame Guard",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12587,29 +12466,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["total"] = 0.00671,
 					["friendlyfire"] = {
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.00671,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1664442311,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4457-1-25451-7404-00001B8F95",
+					["aID"] = "7404",
 				}, -- [9]
 				{
 					["flag_original"] = 68168,
@@ -12619,20 +12498,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Vermina"] = 0,
 					},
-					["serial"] = "Creature-0-4457-1-25451-4095-00001B8FD3",
+					["delay"] = 0,
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["aID"] = "4095",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002794,
-					["end_time"] = 1664442314,
 					["dps_started"] = false,
-					["total"] = 0.002794,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1664442314,
+					["damage_taken"] = 0.002794,
+					["tipo"] = 1,
 					["nome"] = "Galak Mauler",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12653,15 +12532,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 							[13730] = {
 								["c_amt"] = 0,
@@ -12679,29 +12558,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 13730,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["total"] = 0.002794,
 					["friendlyfire"] = {
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.002794,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1664442311,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4457-1-25451-4095-00001B8FD3",
+					["aID"] = "4095",
 				}, -- [10]
 				{
 					["flag_original"] = 68168,
@@ -12711,20 +12590,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Vermina"] = 0,
 					},
-					["serial"] = "Creature-0-4457-1-25451-4099-00001B88FF",
+					["delay"] = 0,
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["aID"] = "4099",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007812,
-					["end_time"] = 1664442314,
 					["dps_started"] = false,
-					["total"] = 0.007812,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1664442314,
+					["damage_taken"] = 0.007812,
+					["tipo"] = 1,
 					["nome"] = "Galak Marauder",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12745,15 +12624,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 							[6268] = {
 								["c_amt"] = 0,
@@ -12771,29 +12650,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 6268,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["total"] = 0.007812,
 					["friendlyfire"] = {
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.007812,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1664442311,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4457-1-25451-4099-00001B88FF",
+					["aID"] = "4099",
 				}, -- [11]
 				{
 					["flag_original"] = 68168,
@@ -12803,20 +12682,20 @@ _detalhes_database = {
 					["targets"] = {
 						["Vermina"] = 0,
 					},
-					["serial"] = "Creature-0-4457-1-25451-4097-00001B8980",
+					["delay"] = 0,
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["aID"] = "4097",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007693,
-					["end_time"] = 1664442314,
 					["dps_started"] = false,
-					["total"] = 0.007693,
-					["on_hold"] = false,
-					["last_event"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1664442314,
+					["damage_taken"] = 0.007693,
+					["tipo"] = 1,
 					["nome"] = "Galak Stormer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12837,15 +12716,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 							[9532] = {
 								["c_amt"] = 0,
@@ -12864,15 +12743,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 9532,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 							[6535] = {
 								["c_amt"] = 0,
@@ -12891,29 +12770,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 6535,
 								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["total"] = 0.007693,
 					["friendlyfire"] = {
 					},
-					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.007693,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1664442311,
-					["delay"] = 0,
-					["monster"] = true,
+					["serial"] = "Creature-0-4457-1-25451-4097-00001B8980",
+					["aID"] = "4097",
 				}, -- [12]
 			},
 		}, -- [1]
@@ -12922,12 +12801,13 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["healing_from"] = {
+					["targets_overheal"] = {
+						["Vermina"] = 0,
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["aID"] = "4465-02BB4683",
+					["heal_enemy_amt"] = 0,
 					["totalover"] = 0.001385,
 					["total_without_pet"] = 0.001385,
 					["total"] = 0.001385,
@@ -12946,9 +12826,7 @@ _detalhes_database = {
 					["healing_taken"] = 0.001385,
 					["fight_component"] = true,
 					["end_time"] = 1664442314,
-					["targets_overheal"] = {
-						["Vermina"] = 0,
-					},
+					["classe"] = "PALADIN",
 					["nome"] = "Vermina",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12972,23 +12850,24 @@ _detalhes_database = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
+								["n_curado"] = 0,
 								["totaldenied"] = 0,
 								["n_amt"] = 0,
-								["n_curado"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["classe"] = "PALADIN",
-					["heal_enemy_amt"] = 0,
+					["healing_from"] = {
+					},
+					["tipo"] = 2,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["start_time"] = 1664442311,
 					["totaldenied"] = 0.001385,
+					["start_time"] = 1664442311,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["aID"] = "4465-02BB4683",
 				}, -- [1]
 			},
 		}, -- [2]
@@ -12997,7 +12876,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["received"] = 0.002871,
-					["resource"] = 0.156807,
+					["resource"] = 0.166353,
 					["targets"] = {
 						["Vermina"] = 0,
 					},
@@ -13032,13 +12911,13 @@ _detalhes_database = {
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["totalover"] = 0.002871,
+					["flag_original"] = 1297,
 					["aID"] = "4465-02BB4683",
 					["tipo"] = 3,
-					["alternatepower"] = 0.002871,
 					["last_event"] = 0,
+					["alternatepower"] = 0.002871,
 					["serial"] = "Player-4465-02BB4683",
-					["flag_original"] = 1297,
+					["totalover"] = 0.002871,
 				}, -- [1]
 			},
 		}, -- [3]
@@ -13067,14 +12946,14 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[20185] = {
-								["id"] = 20185,
+							[5588] = {
+								["id"] = 5588,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[25771] = {
-								["id"] = 25771,
+							[20185] = {
+								["id"] = 20185,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -13091,8 +12970,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[5588] = {
-								["id"] = 5588,
+							[25771] = {
+								["id"] = 25771,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -13100,35 +12979,10 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["interrupt_spells"] = {
-						["_ActorTable"] = {
-							[32747] = {
-								["id"] = 32747,
-								["interrompeu_oque"] = {
-								},
-								["targets"] = {
-									["Cloud Serpent"] = 0,
-									["Thunderhead"] = 0,
-									["Elder Cloud Serpent"] = 0,
-									["Galak Stormer"] = 0,
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
+					["classe"] = "PALADIN",
 					["cooldowns_defensive"] = 0,
 					["buff_uptime"] = 0,
-					["spell_cast"] = {
-						[53408] = 0,
-						[19835] = 0,
-						[20424] = 0,
-						[879] = 0,
-						[20271] = 0,
-						[26573] = 0,
-						[498] = 0,
-						[5588] = 0,
-						[28730] = 0,
+					["buff_uptime_targets"] = {
 					},
 					["cc_done_spells"] = {
 						["_ActorTable"] = {
@@ -13144,11 +12998,37 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["aID"] = "4465-02BB4683",
-					["cooldowns_defensive_targets"] = {
-						["Vermina"] = 0,
+					["interrupt_spells"] = {
+						["_ActorTable"] = {
+							[32747] = {
+								["id"] = 32747,
+								["counter"] = 0,
+								["targets"] = {
+									["Cloud Serpent"] = 0,
+									["Galak Stormer"] = 0,
+									["Thunderhead"] = 0,
+									["Elder Cloud Serpent"] = 0,
+								},
+								["interrompeu_oque"] = {
+								},
+							},
+						},
+						["tipo"] = 9,
 					},
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
+							[10298] = {
+								["id"] = 10298,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[20375] = {
+								["id"] = 20375,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
 							[19835] = {
 								["id"] = 19835,
 								["targets"] = {
@@ -13161,26 +13041,14 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							[34769] = {
-								["id"] = 34769,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[20375] = {
-								["id"] = 20375,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
 							[377749] = {
 								["id"] = 377749,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[10298] = {
-								["id"] = 10298,
+							[34769] = {
+								["id"] = 34769,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -13190,6 +13058,39 @@ _detalhes_database = {
 					},
 					["interrompeu_oque"] = {
 					},
+					["serial"] = "Player-4465-02BB4683",
+					["debuff_uptime"] = 0,
+					["pets"] = {
+					},
+					["cc_done"] = 0,
+					["interrupt"] = 0,
+					["interrupt_targets"] = {
+						["Cloud Serpent"] = 0,
+						["Galak Stormer"] = 0,
+						["Thunderhead"] = 0,
+						["Elder Cloud Serpent"] = 0,
+					},
+					["grupo"] = true,
+					["spell_cast"] = {
+						[53408] = 0,
+						[19835] = 0,
+						[20424] = 0,
+						[879] = 0,
+						[20271] = 0,
+						[28730] = 0,
+						[498] = 0,
+						[5588] = 0,
+						[26573] = 0,
+					},
+					["last_event"] = 0,
+					["debuff_uptime_targets"] = {
+					},
+					["tipo"] = 4,
+					["cc_done_targets"] = {
+						["Cloud Serpent"] = 0,
+						["Elder Cloud Serpent"] = 0,
+					},
+					["nome"] = "Vermina",
 					["cooldowns_defensive_spells"] = {
 						["_ActorTable"] = {
 							[498] = {
@@ -13202,145 +13103,123 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["debuff_uptime"] = 0,
-					["interrupt"] = 0,
-					["cc_done"] = 0,
-					["nome"] = "Vermina",
-					["interrupt_targets"] = {
-						["Cloud Serpent"] = 0,
-						["Thunderhead"] = 0,
-						["Elder Cloud Serpent"] = 0,
-						["Galak Stormer"] = 0,
+					["cooldowns_defensive_targets"] = {
+						["Vermina"] = 0,
 					},
-					["grupo"] = true,
-					["cc_done_targets"] = {
-						["Cloud Serpent"] = 0,
-						["Elder Cloud Serpent"] = 0,
-					},
-					["tipo"] = 4,
-					["debuff_uptime_targets"] = {
-					},
-					["last_event"] = 0,
-					["buff_uptime_targets"] = {
-					},
-					["pets"] = {
-					},
-					["serial"] = "Player-4465-02BB4683",
-					["classe"] = "PALADIN",
 				}, -- [1]
 				{
 					["monster"] = true,
-					["classe"] = "UNKNOW",
+					["tipo"] = 4,
 					["nome"] = "Thunderhead",
+					["flag_original"] = 68168,
 					["spell_cast"] = {
 						[5401] = 0,
 					},
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["aID"] = "3239",
+					["serial"] = "Creature-0-5563-1-16630-3239-00001B59EF",
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["tipo"] = 4,
-					["aID"] = "3239",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-5563-1-16630-3239-00001B59EF",
-					["flag_original"] = 68168,
 				}, -- [2]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["aID"] = "4119",
 					["nome"] = "Elder Cloud Serpent",
+					["flag_original"] = 68168,
 					["pets"] = {
 					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4457-1-25451-4119-00001B8861",
 					["spell_cast"] = {
 						[8246] = 0,
 					},
-					["fight_component"] = true,
-					["aID"] = "4119",
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4457-1-25451-4119-00001B8861",
-					["flag_original"] = 68168,
 				}, -- [3]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["aID"] = "4094",
 					["nome"] = "Galak Scout",
+					["flag_original"] = 2632,
 					["pets"] = {
 					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4457-1-25451-4094-00001B8CBD",
 					["spell_cast"] = {
 						[6660] = 0,
 					},
-					["fight_component"] = true,
-					["aID"] = "4094",
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4457-1-25451-4094-00001B8CBD",
-					["flag_original"] = 2632,
 				}, -- [4]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["aID"] = "4095",
 					["nome"] = "Galak Mauler",
+					["flag_original"] = 68168,
 					["pets"] = {
 					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4457-1-25451-4095-00001B8FD3",
 					["spell_cast"] = {
 						[13730] = 0,
 					},
-					["fight_component"] = true,
-					["aID"] = "4095",
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4457-1-25451-4095-00001B8FD3",
-					["flag_original"] = 68168,
 				}, -- [5]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["aID"] = "4097",
 					["nome"] = "Galak Stormer",
+					["flag_original"] = 2632,
 					["pets"] = {
 					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4457-1-25451-4097-00001B898C",
 					["spell_cast"] = {
 						[9532] = 0,
 						[6535] = 0,
 					},
-					["fight_component"] = true,
-					["aID"] = "4097",
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4457-1-25451-4097-00001B898C",
-					["flag_original"] = 2632,
 				}, -- [6]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["aID"] = "4099",
 					["nome"] = "Galak Marauder",
+					["flag_original"] = 2632,
 					["pets"] = {
 					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4457-1-25451-4099-00001B87F3",
 					["spell_cast"] = {
 						[6268] = 0,
 					},
-					["fight_component"] = true,
-					["aID"] = "4099",
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4457-1-25451-4099-00001B87F3",
-					["flag_original"] = 2632,
 				}, -- [7]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["aID"] = "4093",
 					["nome"] = "Galak Wrangler",
+					["flag_original"] = 68168,
 					["pets"] = {
 					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4457-1-25451-4093-00001B8E31",
 					["spell_cast"] = {
 						[6533] = 0,
 						[6660] = 0,
 					},
-					["fight_component"] = true,
-					["aID"] = "4093",
-					["tipo"] = 4,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4457-1-25451-4093-00001B8E31",
-					["flag_original"] = 68168,
 				}, -- [8]
 			},
 		}, -- [4]
@@ -13359,7 +13238,7 @@ _detalhes_database = {
 		["alternate_power"] = {
 		},
 		["combat_counter"] = 9249,
-		["frags"] = {
+		["spells_cast_timeline"] = {
 		},
 		["totals"] = {
 			0, -- [1]
@@ -13368,21 +13247,21 @@ _detalhes_database = {
 				0, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
-				[6] = 0,
 				[3] = 0,
+				[6] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["dead"] = 0,
-				["cc_break"] = 0,
+				["cooldowns_defensive"] = 0,
+				["dispell"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["dispell"] = 0,
-				["cooldowns_defensive"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
 			}, -- [4]
-			["voidzone_damage"] = 0,
 			["frags_total"] = 0,
+			["voidzone_damage"] = 0,
 		},
 		["player_last_events"] = {
 		},
@@ -13392,37 +13271,6 @@ _detalhes_database = {
 		["__call"] = {
 		},
 		["data_inicio"] = 0,
-		["PhaseData"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-			}, -- [1]
-			["damage"] = {
-			},
-			["heal_section"] = {
-			},
-			["heal"] = {
-			},
-			["damage_section"] = {
-			},
-		},
-		["overall_refreshed"] = true,
-		["hasSaved"] = true,
-		["spells_cast_timeline"] = {
-		},
-		["data_fim"] = 0,
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-		["CombatSkillCache"] = {
-		},
-		["cleu_timeline"] = {
-		},
-		["start_time"] = 0,
-		["TimeData"] = {
-			["Raid Damage Done"] = {
-			},
-		},
 		["totals_grupo"] = {
 			0, -- [1]
 			0, -- [2]
@@ -13430,30 +13278,60 @@ _detalhes_database = {
 				0, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
-				[6] = 0,
 				[3] = 0,
+				[6] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["dead"] = 0,
-				["cc_break"] = 0,
+				["cooldowns_defensive"] = 0,
+				["dispell"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["dispell"] = 0,
-				["cooldowns_defensive"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
 			}, -- [4]
 		},
+		["overall_refreshed"] = true,
+		["hasSaved"] = true,
+		["frags"] = {
+		},
+		["data_fim"] = 0,
+		["cleu_timeline"] = {
+		},
+		["CombatSkillCache"] = {
+		},
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+		["start_time"] = 0,
+		["TimeData"] = {
+			["Raid Damage Done"] = {
+			},
+		},
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["damage_section"] = {
+			},
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage"] = {
+			},
+		},
 	},
-	["on_death_menu"] = true,
-	["force_font_outline"] = "",
-	["character_data"] = {
-		["logons"] = 2052,
+	["ignore_nicktag"] = true,
+	["cached_talents"] = {
 	},
+	["last_realversion"] = 146,
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -13461,9 +13339,16 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["cached_roles"] = {
+		["Player-4465-01487BDF"] = "DAMAGER",
+		["Player-4465-01612EE6"] = "DAMAGER",
+		["Player-4465-0272E0C9"] = "DAMAGER",
+		["Player-4465-00E5831F"] = "DAMAGER",
+		["Player-4465-02CA729A"] = "DAMAGER",
+		["Player-4465-02C980D0"] = "DAMAGER",
+		["Player-4465-02BB4683"] = "DAMAGER",
+		["Player-4465-02C34E5A"] = "DAMAGER",
+		["Player-4465-00209801"] = "DAMAGER",
 	},
 	["cached_specs"] = {
 	},

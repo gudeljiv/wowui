@@ -61,7 +61,7 @@ TellMeWhen_Options: enabled
 !Colorz: enabled
 !Beautycase: enabled
 Align: enabled
-Auctionator: enabled
+Auctionator: disabled
 BlizzMove: enabled
 ChocolateBar: enabled
 ClassicAuraDurations: enabled

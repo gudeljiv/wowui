@@ -29,7 +29,7 @@ AtlasLootClassic_Factions: enabled
 AtlasLootClassic_PvP: enabled
 AtlasLootClassic: enabled
 AtlasLootClassic_Data: enabled
-Auctionator: enabled
+Auctionator: disabled
 AutoOpen: enabled
 BlizzMove: enabled
 BlizzMove_Debug: enabled

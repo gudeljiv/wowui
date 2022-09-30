@@ -35,7 +35,7 @@ AtlasLootClassic_Factions: enabled
 AtlasLootClassic_PvP: enabled
 AtlasLootClassic: enabled
 AtlasLootClassic_Data: enabled
-Auctionator: enabled
+Auctionator: disabled
 AutoOpen: enabled
 BlizzMove: enabled
 BlizzMove_Debug: enabled
@@ -106,8 +106,8 @@ FarmHud: enabled
 FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: disabled
-Blizzard_CompactRaidFrames: enabled
-Blizzard_CUFProfiles: enabled
+Blizzard_CompactRaidFrames: disabled
+Blizzard_CUFProfiles: disabled
 AuctionFaster: disabled
 aux-addon: disabled
 D4KiR Missing Power: disabled

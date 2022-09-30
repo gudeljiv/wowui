@@ -1,29 +1,56 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
+		[8] = {
+			[1900465266] = true,
+		},
 	},
-	["currentStep"] = 1,
+	["currentStep"] = 8,
 	["phase"] = 6,
-	["currentGuideGroup"] = "",
+	["currentGuideGroup"] = "Horde 70-80",
 	["flightPaths"] = {
+		[58] = "Zoram'gar Outpost, Ashenvale",
+		[166] = "Emerald Sanctuary, Felwood",
 		[118] = "Zabra'jin, Zangarmarsh",
-		[127] = "Stonebreaker Hold, Terokkar Forest",
 		[120] = "Garadar, Nagrand",
-		[128] = "Shattrath, Terokkar Forest",
-		[102] = "Falcon Watch, Hellfire Peninsula",
-		[141] = "Spinebreaker Ridge, Hellfire Peninsula",
-		[130] = "Hellfire Peninsula, The Dark Portal, Horde",
-		[99] = "Thrallmar, Hellfire Peninsula",
 		[151] = "Swamprat Post, Zangarmarsh",
+		[61] = "Splintertree Post, Ashenvale",
+		[128] = "Shattrath, Terokkar Forest",
+		[99] = "Thrallmar, Hellfire Peninsula",
+		[141] = "Spinebreaker Ridge, Hellfire Peninsula",
+		[72] = "Cenarion Hold, Silithus",
+		[38] = "Shadowprey Village, Desolace",
+		[179] = "Mudsprocket, Dustwallow Marsh",
+		[40] = "Gadgetzan, Tanaris",
+		[80] = "Ratchet, The Barrens",
+		[42] = "Camp Mojache, Feralas",
+		[22] = "Thunder Bluff, Mulgore",
+		[44] = "Valormok, Azshara",
+		[23] = "Orgrimmar, Durotar",
+		[127] = "Stonebreaker Hold, Terokkar Forest",
+		[123] = "Shadowmoon Village, Shadowmoon Valley",
+		[48] = "Bloodvenom Post, Felwood",
+		[25] = "Crossroads, The Barrens",
+		[130] = "Hellfire Peninsula, The Dark Portal, Horde",
+		[69] = "Moonglade",
+		[102] = "Falcon Watch, Hellfire Peninsula",
+		[53] = "Everlook, Winterspring",
+		[55] = "Brackenwall Village, Dustwallow Marsh",
+		[77] = "Camp Taurajo, The Barrens",
+		[79] = "Marshal's Refuge, Un'Goro Crater",
+		[29] = "Sun Rock Retreat, Stonetalon Mountains",
+		[30] = "Freewind Post, Thousand Needles",
 	},
-	["xprate"] = 1.5,
+	["xprate"] = 1,
 	["JoyousJourneys"] = true,
 	["hardcore"] = false,
 	["SoM"] = 1,
-	["currentGuideName"] = "",
+	["currentGuideName"] = "70-72 Borean Tundra",
 	["stepSkip"] = {
+		true, -- [1]
+		[5] = true,
 	},
-	["frameHeight"] = 125.000114440918,
+	["frameHeight"] = 125.000129699707,
 	["GA"] = false,
 }
 RXPCTrackingData = {
@@ -96,7 +123,7 @@ RXPCTrackingData = {
 							["hour"] = 19,
 							["minute"] = 27,
 						},
-						["started"] = 1664278369,
+						["started"] = 1664446024,
 					},
 					["quests"] = {
 					},
@@ -157,20 +184,40 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 1376,
 				},
+				["Favienne"] = {
+					["timePlayed"] = 173.0210000000661,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 796,
+				},
+				["Nayld"] = {
+					["timePlayed"] = 173.0210000000661,
+					["class"] = "ROGUE",
+					["xp"] = 796,
+				},
+				["Nyrin"] = {
+					["timePlayed"] = 173.0210000000661,
+					["class"] = "DRUID",
+					["xp"] = 796,
+				},
 				["Sharingen"] = {
 					["timePlayed"] = 1545.662000000011,
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 920,
 				},
-				["Nabito"] = {
-					["timePlayed"] = 85.72200000006706,
-					["class"] = "DEATHKNIGHT",
-					["xp"] = 1376,
+				["Hulari"] = {
+					["timePlayed"] = 1545.662000000011,
+					["class"] = "ROGUE",
+					["xp"] = 920,
 				},
 				["Ypers"] = {
 					["timePlayed"] = 1344.199000000022,
 					["class"] = "SHAMAN",
 					["xp"] = 1376,
+				},
+				["Johnylecitel"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "PRIEST",
+					["xp"] = 1268,
 				},
 				["Goldenarm"] = {
 					["timePlayed"] = 883.7549999998882,
@@ -187,9 +234,9 @@ RXPCComms = {
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 1376,
 				},
-				["Brutikus"] = {
+				["Nabito"] = {
 					["timePlayed"] = 85.72200000006706,
-					["class"] = "WARRIOR",
+					["class"] = "DEATHKNIGHT",
 					["xp"] = 1376,
 				},
 				["Jaffrost"] = {
@@ -197,20 +244,20 @@ RXPCComms = {
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 920,
 				},
-				["Hulari"] = {
-					["timePlayed"] = 1545.662000000011,
-					["class"] = "ROGUE",
-					["xp"] = 920,
+				["Brutikus"] = {
+					["timePlayed"] = 85.72200000006706,
+					["class"] = "WARRIOR",
+					["xp"] = 1376,
 				},
 				["Litenshaman"] = {
 					["timePlayed"] = 1389.503000000026,
 					["class"] = "SHAMAN",
 					["xp"] = 1268,
 				},
-				["Johnylecitel"] = {
-					["timePlayed"] = 883.7549999998882,
-					["class"] = "PRIEST",
-					["xp"] = 1268,
+				["Ilthe"] = {
+					["timePlayed"] = 173.0210000000661,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 796,
 				},
 				["Wixë"] = {
 					["timePlayed"] = 883.7549999998882,
@@ -227,6 +274,12 @@ RXPCSettings = {
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
+			["enableTracker"] = false,
+			["enableFlyStepAnnouncements"] = false,
+			["enableLevelUpAnnounceGroup"] = false,
+			["enableLevelUpAnnounceSolo"] = false,
+			["checkVersions"] = false,
+			["alwaysSendBranded"] = false,
 		},
 	},
 }

@@ -35,7 +35,7 @@ END
 VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /startattack
-/cast Hand of Reckoning
+/cast [@mouseover, harm, nodead][] Hand of Reckoning
 END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip

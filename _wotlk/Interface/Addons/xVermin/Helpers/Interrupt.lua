@@ -60,6 +60,13 @@ TargetFrame:HookScript(
 					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
 				end
 			end
+
+			-- HUNTER INTERRUPT
+			if (select(2, UnitClass('player')) == 'HUNTER') then
+				if GetSpellCooldown('Silencing Shot') == 0 and IsSpellInRange('Silencing Shot', 'target') then
+					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+				end
+			end
 		else
 			RotationFrame2:SetBackdropColor(1, 1, 1, 1)
 		end

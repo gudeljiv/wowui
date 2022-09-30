@@ -8,7 +8,6 @@ VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast feign death
 /stopattack
-/stopattack
 /stopcasting
 /petpassive
 END
@@ -20,7 +19,8 @@ VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/tar lymyx
+/petattack
+/startattack
 /cast Hunter's Mark
 END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
@@ -56,7 +56,7 @@ VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast Bestial Wrath
+/cast Chimera Shot
 /use 13
 /use 14
 END
@@ -74,6 +74,16 @@ VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 /use 14
 END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@pet,exists]Misdirection
+END
+VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Kill Shot
+/use 13
+/use 14
+END
+VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /cast [@focus,exists,noharm][@pet,exists][]Misdirection
 END

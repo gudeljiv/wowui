@@ -157,3 +157,28 @@ C_Timer.NewTicker(
 		end
 	end
 )
+
+count = 0
+C_Timer.NewTicker(
+	1,
+	function(self)
+		if (count > 10) then
+			self:Cancel()
+		end
+		count = count + 1
+
+		if PossessButton1 then
+			PossessButton1:Show()
+			PossessButton1:ClearAllPoints()
+			PossessButton1:SetMovable(true)
+			PossessButton1:SetUserPlaced(true)
+			PossessButton1:SetPoint('BOTTOM', UnitExists('pet') and PetActionButton1 or MultiBarBottomRightButton2, 'TOP', 20, 7)
+			PossessButton1.ClearAllPoints = function()
+			end
+			PossessButton1.SetPoint = function()
+			end
+
+			self:Cancel()
+		end
+	end
+)
