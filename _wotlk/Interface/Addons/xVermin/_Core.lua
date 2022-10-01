@@ -170,9 +170,13 @@ local function frameExists(frame)
 	end
 end
 
+local keywords = {
+	['and'] = 'and',
+	['or'] = 'or'
+}
 function xVermin:CheckIfLoadedWithTimer(condition, callback)
 	local count = 0
-	local formatted_condition = ''
+
 	C_Timer.NewTicker(
 		1,
 		function(self)
@@ -181,20 +185,42 @@ function xVermin:CheckIfLoadedWithTimer(condition, callback)
 			end
 			count = count + 1
 
-			-- for token in string.gmatch(condition, '[^%s]+') do
-			-- 	if token == 'and' or token == 'or' then
-			-- 		token = token .. ' '
-			-- 	else
-			-- 		token = _G.token .. ' '
-			-- 	end
-			-- 	ChatFrame7:AddMessage(token)
-			-- 	formatted_condition = formatted_condition .. token
-			-- end
+			local next_keyword, c
+			if (condition_table) then
+				condition_table = nil
+			end
+			local condition_table = {}
+			condition_table['and'] = {}
+			condition_table['or'] = {}
 
-			-- ChatFrame7:AddMessage(count .. ' ' .. condition .. ' ' .. _G.condition:GetName())
-			-- ChatFrame7:AddMessage(count .. ' ' .. condition .. ' ' .. (_G[condition] and _G[condition]:GetName() or 'nema'))
+			condition:gsub(
+				'[_%w]+',
+				function(word)
+					-- return keywords[word] or string.format("_G[%q]", word)
+					-- text.keywords[word] = string.format('_G[%q]', word)
+					if keywords[word] then
+						next_keyword = keywords[word]
+					else
+						if next_keyword then
+							table.insert(condition_table[next_keyword], word)
+						else
+							table.insert(condition_table, word)
+						end
+					end
+				end
+			)
 
-			if (_G[condition]) then
+			for k, v in ipairs(condition_table) do
+				c = _G[v]
+			end
+			for k, v in ipairs(condition_table['and']) do
+				c = c and _G[v]
+			end
+			for k, v in ipairs(condition_table['or']) do
+				c = c or _G[v]
+			end
+
+			if (c) then
 				callback()
 				self:Cancel()
 			end

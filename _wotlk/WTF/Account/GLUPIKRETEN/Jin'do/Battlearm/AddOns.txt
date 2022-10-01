@@ -2,3 +2,4 @@ nHealth: disabled
 nTooltip: enabled
 BlizzMove: enabled
 BlizzMove_Debug: enabled
+whoaThickFrames_BCC: disabled

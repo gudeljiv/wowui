@@ -11,8 +11,8 @@ Grid2Options: enabled
 Grid2RaidDebuffs: enabled
 Grid2RaidDebuffsOptions: enabled
 Grid2LDB: enabled
-Blizzard_CompactRaidFrames: enabled
-Blizzard_CUFProfiles: enabled
+Blizzard_CompactRaidFrames: disabled
+Blizzard_CUFProfiles: disabled
 TownsfolkTracker: disabled
 MonkeyBuddy: enabled
 MonkeyLibrary: disabled
@@ -121,7 +121,7 @@ xVermin: enabled
 Leatrix_Plus: enabled
 aux-addon: disabled
 RXPGuides: enabled
-whoaThickFrames_BCC: enabled
+whoaThickFrames_BCC: disabled
 AutoOpen: enabled
 BlizzMove_Debug: enabled
 ExtendedCharacterStats: enabled
