@@ -3,7 +3,7 @@ local _, xVermin = ...
 -- RAID_CLASS_COLORS["SHAMAN"] = {r = 0 / 255, g = 112 / 255, b = 222 / 255, colorStr = "ff0070DE"}
 xVermin.Class = select(2, UnitClass('player'))
 xVermin.ClassColor = RAID_CLASS_COLORS[xVermin.Class]
-xVermin.WaitTimeUntillAddonLoaded = 60
+xVermin.WaitTimeUntillAddonLoaded = 30
 
 xVermin.Color = {
 	white = 'FFFFFFFF',
@@ -160,4 +160,44 @@ function xVermin:hex2rgb(hex)
 	local g = tonumber('0x' .. hex:sub(3, 4)) / 255
 	local b = tonumber('0x' .. hex:sub(5, 6)) / 255
 	return {r = r, g = g, b = b, a = 1}
+end
+
+local function frameExists(frame)
+	if frame:GetName() then
+		return 'true'
+	else
+		return 'false'
+	end
+end
+
+function xVermin:CheckIfLoadedWithTimer(condition, callback)
+	local count = 0
+	local formatted_condition = ''
+	C_Timer.NewTicker(
+		1,
+		function(self)
+			if (count > xVermin.WaitTimeUntillAddonLoaded) then
+				self:Cancel()
+			end
+			count = count + 1
+
+			-- for token in string.gmatch(condition, '[^%s]+') do
+			-- 	if token == 'and' or token == 'or' then
+			-- 		token = token .. ' '
+			-- 	else
+			-- 		token = _G.token .. ' '
+			-- 	end
+			-- 	ChatFrame7:AddMessage(token)
+			-- 	formatted_condition = formatted_condition .. token
+			-- end
+
+			-- ChatFrame7:AddMessage(count .. ' ' .. condition .. ' ' .. _G.condition:GetName())
+			-- ChatFrame7:AddMessage(count .. ' ' .. condition .. ' ' .. (_G[condition] and _G[condition]:GetName() or 'nema'))
+
+			if (_G[condition]) then
+				callback()
+				self:Cancel()
+			end
+		end
+	)
 end

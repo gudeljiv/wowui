@@ -18,18 +18,9 @@ local _, xVermin = ...
 -- 	end
 -- end
 
--- local count = 0
--- C_Timer.NewTicker(
--- 	1,
--- 	function(self)
--- 		if (count > xVermin.WaitTimeUntillAddonLoaded) then
--- 			self:Cancel()
--- 		end
--- 		count = count + 1
-
--- 		if WeakAurasFrame then
--- 			print_children(WeakAurasFrame)
--- 			self:Cancel()
--- 		end
+-- xVermin:CheckIfLoadedWithTimer(
+-- 	WeakAurasFrame,
+-- 	function()
+-- 		print_children(WeakAurasFrame)
 -- 	end
 -- )

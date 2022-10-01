@@ -1,10 +1,11 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[12] = {
+		[14] = {
+			[945458293] = true,
 		},
 	},
-	["currentStep"] = 12,
+	["currentStep"] = 14,
 	["phase"] = 6,
 	["currentGuideGroup"] = "Horde 70-80",
 	["flightPaths"] = {
@@ -47,9 +48,9 @@ RXPCData = {
 	["currentGuideName"] = "68-71 Howling Fjord",
 	["stepSkip"] = {
 		true, -- [1]
-		[3] = true,
-		[10] = true,
 		[8] = true,
+		[10] = true,
+		[3] = true,
 	},
 	["SoM"] = 1,
 	["hardcore"] = false,
@@ -180,14 +181,14 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 1268,
 				},
-				["Ylvin"] = {
-					["timePlayed"] = 1404.817000000039,
-					["class"] = "MAGE",
-					["xp"] = 1838,
-				},
 				["Lecarde"] = {
 					["timePlayed"] = 1404.817000000039,
 					["class"] = "PRIEST",
+					["xp"] = 1838,
+				},
+				["Maxymilius"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "SHAMAN",
 					["xp"] = 1838,
 				},
 				["Haveto"] = {
@@ -195,20 +196,20 @@ RXPCComms = {
 					["class"] = "SHAMAN",
 					["xp"] = 920,
 				},
-				["Maxymilius"] = {
-					["timePlayed"] = 1404.817000000039,
-					["class"] = "SHAMAN",
-					["xp"] = 1838,
-				},
 				["Talanjii"] = {
 					["timePlayed"] = 85.72200000006706,
 					["class"] = "PRIEST",
 					["xp"] = 1376,
 				},
-				["Wixë"] = {
-					["timePlayed"] = 883.7549999998882,
-					["class"] = "WARLOCK",
-					["xp"] = 1268,
+				["Ylvin"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "MAGE",
+					["xp"] = 1838,
+				},
+				["Brutikus"] = {
+					["timePlayed"] = 85.72200000006706,
+					["class"] = "WARRIOR",
+					["xp"] = 1376,
 				},
 				["Nayld"] = {
 					["timePlayed"] = 173.0210000000661,
@@ -225,9 +226,9 @@ RXPCComms = {
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 920,
 				},
-				["Brutikus"] = {
-					["timePlayed"] = 85.72200000006706,
-					["class"] = "WARRIOR",
+				["Rompido"] = {
+					["timePlayed"] = 71.13700000010431,
+					["class"] = "DEATHKNIGHT",
 					["xp"] = 1376,
 				},
 				["Ypers"] = {
@@ -250,14 +251,14 @@ RXPCComms = {
 					["class"] = "PALADIN",
 					["xp"] = 500,
 				},
-				["Rompido"] = {
-					["timePlayed"] = 71.13700000010431,
-					["class"] = "DEATHKNIGHT",
-					["xp"] = 1376,
-				},
 				["Johnylecitel"] = {
 					["timePlayed"] = 883.7549999998882,
 					["class"] = "PRIEST",
+					["xp"] = 1268,
+				},
+				["Wixë"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "WARLOCK",
 					["xp"] = 1268,
 				},
 				["Jaffrost"] = {
