@@ -431,7 +431,7 @@ Blizzard_CombatLog_Filters = {
 						["UNIT_DESTROYED"] = true,
 						["RANGE_DAMAGE"] = true,
 						["ENVIRONMENTAL_DAMAGE"] = true,
-						["SPELL_HEAL"] = false,
+						["SPELL_HEAL"] = true,
 						["SPELL_PERIODIC_HEAL"] = false,
 						["UNIT_DIED"] = true,
 					},

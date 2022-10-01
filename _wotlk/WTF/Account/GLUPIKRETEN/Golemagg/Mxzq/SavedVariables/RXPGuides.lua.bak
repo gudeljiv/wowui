@@ -1,10 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[34] = {
+		[13] = {
 		},
 	},
-	["currentStep"] = 34,
+	["currentStep"] = 13,
 	["phase"] = 6,
 	["currentGuideGroup"] = "Horde 70-80",
 	["flightPaths"] = {
@@ -44,20 +44,12 @@ RXPCData = {
 	["JoyousJourneys"] = true,
 	["hardcore"] = false,
 	["SoM"] = 1,
-	["currentGuideName"] = "70-72 Borean Tundra",
+	["currentGuideName"] = "68-71 Howling Fjord",
 	["stepSkip"] = {
 		true, -- [1]
-		[24] = true,
-		[33] = true,
-		[28] = true,
-		[15] = true,
-		[16] = true,
-		[32] = true,
-		[5] = true,
-		[19] = true,
-		[11] = true,
-		[31] = true,
-		[18] = true,
+		[8] = true,
+		[10] = true,
+		[3] = true,
 	},
 	["frameHeight"] = 125.000129699707,
 	["GA"] = false,
@@ -158,6 +150,11 @@ RXPCComms = {
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 1268,
 				},
+				["Grimtorque"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "WARRIOR",
+					["xp"] = 1838,
+				},
 				["Captorterror"] = {
 					["timePlayed"] = 89.08799999998882,
 					["class"] = "HUNTER",
@@ -183,48 +180,63 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 1268,
 				},
-				["Haveto"] = {
-					["timePlayed"] = 1545.662000000011,
-					["class"] = "SHAMAN",
-					["xp"] = 920,
-				},
-				["Talanjii"] = {
-					["timePlayed"] = 85.72200000006706,
-					["class"] = "PRIEST",
-					["xp"] = 1376,
-				},
 				["Favienne"] = {
 					["timePlayed"] = 173.0210000000661,
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 796,
 				},
-				["Nayld"] = {
-					["timePlayed"] = 173.0210000000661,
-					["class"] = "ROGUE",
-					["xp"] = 796,
+				["Maxymilius"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "SHAMAN",
+					["xp"] = 1838,
+				},
+				["Haveto"] = {
+					["timePlayed"] = 1545.662000000011,
+					["class"] = "SHAMAN",
+					["xp"] = 920,
 				},
 				["Nyrin"] = {
 					["timePlayed"] = 173.0210000000661,
 					["class"] = "DRUID",
 					["xp"] = 796,
 				},
-				["Sharingen"] = {
-					["timePlayed"] = 1545.662000000011,
-					["class"] = "DEATHKNIGHT",
-					["xp"] = 920,
+				["Ylvin"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "MAGE",
+					["xp"] = 1838,
 				},
 				["Hulari"] = {
 					["timePlayed"] = 1545.662000000011,
 					["class"] = "ROGUE",
 					["xp"] = 920,
 				},
+				["Nayld"] = {
+					["timePlayed"] = 173.0210000000661,
+					["class"] = "ROGUE",
+					["xp"] = 796,
+				},
+				["Wixë"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "WARLOCK",
+					["xp"] = 1268,
+				},
+				["Sharingen"] = {
+					["timePlayed"] = 1545.662000000011,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 920,
+				},
+				["Johnylecitel"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "PRIEST",
+					["xp"] = 1268,
+				},
 				["Ypers"] = {
 					["timePlayed"] = 1344.199000000022,
 					["class"] = "SHAMAN",
 					["xp"] = 1376,
 				},
-				["Rompido"] = {
-					["timePlayed"] = 71.13700000010431,
+				["Nabito"] = {
+					["timePlayed"] = 85.72200000006706,
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 1376,
 				},
@@ -238,15 +250,15 @@ RXPCComms = {
 					["class"] = "PALADIN",
 					["xp"] = 500,
 				},
-				["Johnylecitel"] = {
-					["timePlayed"] = 883.7549999998882,
-					["class"] = "PRIEST",
-					["xp"] = 1268,
-				},
-				["Nabito"] = {
-					["timePlayed"] = 85.72200000006706,
+				["Rompido"] = {
+					["timePlayed"] = 71.13700000010431,
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 1376,
+				},
+				["Litenshaman"] = {
+					["timePlayed"] = 1389.503000000026,
+					["class"] = "SHAMAN",
+					["xp"] = 1268,
 				},
 				["Jaffrost"] = {
 					["timePlayed"] = 1545.662000000011,
@@ -258,20 +270,20 @@ RXPCComms = {
 					["class"] = "WARRIOR",
 					["xp"] = 1376,
 				},
-				["Litenshaman"] = {
-					["timePlayed"] = 1389.503000000026,
-					["class"] = "SHAMAN",
-					["xp"] = 1268,
+				["Talanjii"] = {
+					["timePlayed"] = 85.72200000006706,
+					["class"] = "PRIEST",
+					["xp"] = 1376,
 				},
 				["Ilthe"] = {
 					["timePlayed"] = 173.0210000000661,
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 796,
 				},
-				["Wixë"] = {
-					["timePlayed"] = 883.7549999998882,
-					["class"] = "WARLOCK",
-					["xp"] = 1268,
+				["Lecarde"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "PRIEST",
+					["xp"] = 1838,
 				},
 			},
 		},

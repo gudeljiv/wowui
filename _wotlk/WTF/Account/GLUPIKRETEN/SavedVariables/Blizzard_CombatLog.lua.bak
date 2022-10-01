@@ -422,7 +422,7 @@ Blizzard_CombatLog_Filters = {
 						["RANGE_DAMAGE"] = true,
 						["ENVIRONMENTAL_DAMAGE"] = true,
 						["SPELL_PERIODIC_HEAL"] = false,
-						["SPELL_HEAL"] = false,
+						["SPELL_HEAL"] = true,
 						["UNIT_DIED"] = true,
 					},
 					["sourceFlags"] = {

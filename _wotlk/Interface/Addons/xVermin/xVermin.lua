@@ -52,15 +52,18 @@ f:SetScript(
 			CastingBarFrame.Text:ClearAllPoints()
 			CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)
 
+			--------------------------------------------------------------------------------------------------------------------------
+			--------------------------------------------------------------------------------------------------------------------------
+			-- UNITFRAMES ------------------------------------------------------------------------------------------------------------
+			--------------------------------------------------------------------------------------------------------------------------
 			PlayerFrame:ClearAllPoints()
 			PlayerFrame:SetPoint('CENTER', UIParent, 'CENTER', -250, -96)
 			PlayerFrame.ClearAllPoints = function()
 			end
 			PlayerFrame.SetPoint = function()
 			end
-
-			PlayerFrameManaBarText:SetScale(0.8)
-
+			PlayerFrameManaBarText:SetPoint('CENTER', PlayerFrameManaBar, 'CENTER', 0, -1)
+			PlayerFrameManaBarText:SetScale(0.75)
 			PlayerFrameAlternateManaBar:RegisterEvent('PLAYER_ENTERING_WORLD')
 			PlayerFrameAlternateManaBar:SetScript(
 				'OnEvent',
@@ -82,7 +85,11 @@ f:SetScript(
 			end
 			TargetFrame.SetPoint = function()
 			end
-			TargetFrameTextureFrame.ManaBarText:SetScale(0.8)
+			TargetFrameTextureFrame.ManaBarText:SetPoint('CENTER', TargetFrameManaBar, 'CENTER', 0, -1)
+			TargetFrameTextureFrame.ManaBarText:SetScale(0.75)
+			TargetFrameNameBackground:SetVertexColor(0, 0, 0, 0.5)
+			TargetFrameNameBackground.SetVertexColor = function()
+			end
 
 			FocusFrame:ClearAllPoints()
 			FocusFrame:SetPoint('CENTER', TargetFrame, 'CENTER', 200, 100)
@@ -90,20 +97,46 @@ f:SetScript(
 			end
 			FocusFrame.SetPoint = function()
 			end
-			FocusFrameTextureFrame.ManaBarText:SetScale(0.8)
+			FocusFrameTextureFrame.ManaBarText:SetPoint('CENTER', FocusFrameManaBar, 'CENTER', 0, -1)
+			FocusFrameTextureFrame.ManaBarText:SetScale(0.75)
+			FocusFrameNameBackground:SetVertexColor(0, 0, 0, 0.5)
+			FocusFrameNameBackground.SetVertexColor = function()
+			end
 
-			PetFrameHealthBarText:SetFont(xVermin.Config.font.atari, 10, 'THINOUTLINE')
-			PetFrameHealthBarText:SetPoint('TOPRIGHT', PetFrameHealthBar, 'TOPRIGHT', 0, 2)
-			-- PetFrameHealthBarText:SetPoint('TOPRIGHT', PetFrameHealthBar, 'TOPRIGHT', 2, -22)
-			PetFrameHealthBarText.SetPoint = function()
-			end
-			PetFrameManaBarText:SetFont(xVermin.Config.font.atari, 10, 'THINOUTLINE')
-			PetFrameManaBarText:SetPoint('TOPRIGHT', PetFrameManaBar, 'TOPRIGHT', 0, 0)
-			PetFrameManaBarText.SetPoint = function()
-			end
-			PetFrameHealthBarText:Hide()
-			PetFrameManaBarText:Hide()
-			PetName:Hide()
+			xVermin:CheckIfLoadedWithTimer(
+				'PetFrame',
+				function()
+					PetFrameHealthBarText:Hide()
+					PetFrameHealthBarText.Show = function()
+					end
+				end
+			)
+			xVermin:CheckIfLoadedWithTimer(
+				'PetFrame',
+				function()
+					PetFrameManaBarText:Hide()
+					PetFrameManaBarText.Show = function()
+					end
+				end
+			)
+
+			-- PetName:Hide()
+			-- PetFrameHealthBarText:SetPoint('CENTER', PetFrameHealthBar, 'CENTER', 0, -1)
+			-- PetFrameHealthBarText:SetScale(0.6)
+			-- PetFrameManaBarText:SetPoint('CENTER', PetFrameManaBar, 'CENTER', 0, -1)
+			-- PetFrameManaBarText:SetScale(0.6)
+			PetFrame:HookScript(
+				'OnEnter',
+				function(self)
+					print('mouseover')
+					self.OnEnter = function()
+					end
+				end
+			)
+		--------------------------------------------------------------------------------------------------------------------------
+		--------------------------------------------------------------------------------------------------------------------------
+		--------------------------------------------------------------------------------------------------------------------------
+		--------------------------------------------------------------------------------------------------------------------------
 		end
 
 		UIWidgetBelowMinimapContainerFrame:ClearAllPoints()
@@ -126,3 +159,20 @@ f:SetScript(
 		-- EnableAddOn('Blizzard_CUFProfiles')
 	end
 )
+
+-- local sr = LibStub('SpellRange-1.0')
+-- local rc = LibStub('LibRangeCheck-2.0')
+-- PlayerFrame:HookScript(
+-- 	'OnUpdate',
+-- 	function()
+-- 		print('Pummel', sr.IsSpellInRange(25231, 'nameplate1'), IsSpellInRange("Pummel", 'nameplate1'), sr.IsSpellInRange(25231, 'target'), IsSpellInRange(25231, 'target'))
+-- 		print('Cleave', sr.IsSpellInRange('Cleave', 'nameplate1'), IsSpellInRange('Cleave', 'nameplate1'), sr.IsSpellInRange('Cleave', 'target'), IsSpellInRange('Cleave', 'target'))
+-- 		print('Heroic Strike', sr.IsSpellInRange('Heroic Strike', 'nameplate1'), IsSpellInRange('Heroic Strike', 'nameplate1'), sr.IsSpellInRange('Heroic Strike', 'target'), IsSpellInRange('Heroic Strike', 'target'))
+-- 		print('Mortal Strike', sr.IsSpellInRange('Mortal Strike', 'nameplate1'), IsSpellInRange('Mortal Strike', 'nameplate1'), sr.IsSpellInRange('Mortal Strike', 'target'), IsSpellInRange('Mortal Strike', 'target'))
+-- 		print('Bloodthirst', sr.IsSpellInRange('Bloodthirst', 'nameplate1'), IsSpellInRange('Bloodthirst', 'nameplate1'), sr.IsSpellInRange('Bloodthirst', 'target'), IsSpellInRange('Bloodthirst', 'target'))
+
+-- 		local minRange, maxRange = rc:GetRange('nameplate1')
+-- 		print(minRange, maxRange)
+
+-- 	end
+-- )

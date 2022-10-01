@@ -11,7 +11,7 @@ FrameLevel: 1
 Anchor: CENTER
 X: 382
 Y: -93
-W: 80
+W: 82
 H: 40
 Frame: PlayerFrame
 FrameLevel: 1
@@ -41,13 +41,6 @@ X: -72
 Y: -98
 W: 784
 H: 260
-Frame: TargetFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 250
-Y: -96
-W: 232
-H: 100
 Frame: QuestFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -83,6 +76,13 @@ X: -27
 Y: 27
 W: 50
 H: 50
+Frame: TargetFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 250
+Y: -96
+W: 232
+H: 100
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: BOTTOM
@@ -90,10 +90,3 @@ X: -232
 Y: 134
 W: 30
 H: 30
-Frame: WeakAurasOptions
-FrameLevel: 1
-Anchor: CENTER
-X: 266
-Y: 64
-W: 941
-H: 860

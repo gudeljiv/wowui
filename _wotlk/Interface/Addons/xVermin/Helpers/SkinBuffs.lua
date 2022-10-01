@@ -7,6 +7,7 @@ ReplacedDebuffTypeColor['Curse'] = {r = 0.60, g = 0.00, b = 1.00}
 ReplacedDebuffTypeColor['Disease'] = {r = 0.60, g = 0.40, b = 0}
 ReplacedDebuffTypeColor['Poison'] = {r = 0.00, g = 0.60, b = 0}
 ReplacedDebuffTypeColor[''] = ReplacedDebuffTypeColor['none']
+local count = 0
 
 local frame, frameBorder, frameCount, color, B_spellId, D_spellId, B_unitCaster, D_unitCaster, petName, targetName, hasPet, isHunterPet
 local frameCooldown, B_spellName, D_spellName
@@ -286,23 +287,33 @@ local function SkinFocus()
 end
 
 local tf = CreateFrame('Frame')
-tf:RegisterEvent('PLAYER_ENTERING_WORLD')
-tf:RegisterEvent('PLAYER_TARGET_CHANGED')
-tf:RegisterEvent('UNIT_AURA', 'target')
-tf:SetScript('OnEvent', SkinTarget)
+-- tf:RegisterEvent('PLAYER_ENTERING_WORLD')
+-- tf:RegisterEvent('PLAYER_TARGET_CHANGED')
+-- tf:RegisterEvent('UNIT_AURA', 'target')
+-- tf:SetScript('OnEvent', SkinTarget)
 TargetFrame:HookScript('OnUpdate', SkinTarget)
 -- hooksecurefunc('TargetFrame_UpdateAuras', SkinTarget)
 
 local ff = CreateFrame('Frame')
-ff:RegisterEvent('PLAYER_ENTERING_WORLD')
-ff:RegisterEvent('PLAYER_FOCUS_CHANGED')
-ff:RegisterEvent('UNIT_AURA', 'focus')
-ff:SetScript('OnEvent', SkinFocus)
--- FocusFrame:HookScript('OnUpdate', SkinFocus)
+-- ff:RegisterEvent('PLAYER_ENTERING_WORLD')
+-- ff:RegisterEvent('PLAYER_FOCUS_CHANGED')
+-- ff:RegisterEvent('UNIT_AURA', 'focus')
+-- ff:SetScript('OnEvent', SkinFocus)
+FocusFrame:HookScript('OnUpdate', SkinFocus)
 -- hooksecurefunc("FocusFrame_UpdateAuras", SkinFocus)
 
 local pf = CreateFrame('Frame')
-pf:RegisterUnitEvent('PLAYER_ENTERING_WORLD')
-pf:RegisterUnitEvent('UNIT_AURA', 'pet')
-pf:SetScript('OnEvent', SkinPet)
-PetFrame:HookScript('OnShow', SkinPet)
+-- pf:RegisterUnitEvent('PLAYER_ENTERING_WORLD')
+-- pf:RegisterUnitEvent('UNIT_AURA', 'pet')
+-- pf:SetScript(
+-- 	'OnEvent',
+-- 	function(self, event, ...)
+-- 		xVermin:CheckIfLoadedWithTimer(
+-- 			'PetFrame',
+-- 			function()
+-- 				SkinPet()
+-- 			end
+-- 		)
+-- 	end
+-- )
+PetFrame:HookScript('OnUpdate', SkinPet)
