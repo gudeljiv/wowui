@@ -23,9 +23,15 @@ function AOE(range)
 	for i = 1, 40 do
 		-- if UnitExists('nameplate' .. i) and IsSpellInRange(skill, 'nameplate' .. i) == 1 and CheckInteractDistance('nameplate' .. i, 3) then
 		if UnitExists('nameplate' .. i) then
-			minRange, maxRange = xGetRange('nameplate' .. i)
-			if maxRange and maxRange <= range then
-				inRange = inRange + 1
+			if xVermin.Class == 'HUNTER' and UnitExists('pet') then
+				if IsSpellInRange('Bite', 'pet', 'nameplate' .. i) == 1 then
+					inRange = inRange + 1
+				end
+			else
+				minRange, maxRange = xGetRange('nameplate' .. i)
+				if maxRange and maxRange <= range then
+					inRange = inRange + 1
+				end
 			end
 		end
 	end
@@ -37,10 +43,10 @@ local buffs = {
 }
 
 local skills_range = {
-	['HUNTER'] = 30,
-	['MAGE'] = 30,
-	['WARLOCK'] = 30,
-	['SHAMAN'] = 30,
+	['HUNTER'] = 5,
+	['MAGE'] = 5,
+	['WARLOCK'] = 5,
+	['SHAMAN'] = 5,
 	['WARRIOR'] = 5,
 	['PALADIN'] = 5,
 	['DEATHKNIGHT'] = 5,

@@ -1,3 +1,7 @@
+VER 3 0000000000000012 " " "132143"
+#showtooltip
+/startattack
+END
 VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use Fel Sharpening Stone
@@ -14,18 +18,14 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /castsequence Find Herbs,Find Minerals
 END
-VER 3 0000000000000012 " " "132143"
-#showtooltip
-/startattack
-END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:28399
+/use [nocombat]item:0
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:27854
+/use [nocombat]item:117
 /castsequence [combat] reset=combat 
 END
 VER 3 000000000000000B "lvl enchant" "132089"

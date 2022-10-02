@@ -1,14 +1,15 @@
 
 ErrorFilterDB = {
 	["profileKeys"] = {
-		["Vermin - Golemagg"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
-		["Mxzq - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
-		["Wells - Jin'do"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Provokator - Jin'do"] = "Default",
+		["Wells - Jin'do"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

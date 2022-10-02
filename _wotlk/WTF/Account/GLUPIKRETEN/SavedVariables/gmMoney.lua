@@ -74,16 +74,20 @@ GMMONEY = {
 			["CLASS"] = "WARRIOR",
 		},
 	},
+	["Stonespine"] = {
+		["Vermins"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+	},
 	["Jin'do"] = {
 		["Wells"] = {
 			["GOLD"] = 1528,
 			["CLASS"] = "DRUID",
 		},
-	},
-	["Stonespine"] = {
-		["Vermins"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
+		["Provokator"] = {
+			["GOLD"] = 86,
+			["CLASS"] = "HUNTER",
 		},
 	},
 }

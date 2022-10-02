@@ -8,9 +8,10 @@ Postal3DB = {
 				"Moolatz|Golemagg|Horde|61|DRUID", -- [3]
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [4]
 				"Mxzq|Golemagg|Horde|70|HUNTER", -- [5]
-				"Vermina|Golemagg|Horde|29|PALADIN", -- [6]
-				"Vermin|Golemagg|Horde|70|WARRIOR", -- [7]
-				"Wells|Jin'do|Horde|8|DRUID", -- [8]
+				"Provokator|Jin'do|Horde|2|HUNTER", -- [6]
+				"Vermina|Golemagg|Horde|29|PALADIN", -- [7]
+				"Vermin|Golemagg|Horde|70|WARRIOR", -- [8]
+				"Wells|Jin'do|Horde|8|DRUID", -- [9]
 			},
 		},
 	},
@@ -18,11 +19,12 @@ Postal3DB = {
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Vermina - Golemagg"] = "Vermina - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
-		["Wells - Jin'do"] = "Wells - Jin'do",
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Provokator - Jin'do"] = "Provokator - Jin'do",
+		["Wells - Jin'do"] = "Wells - Jin'do",
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -31,15 +33,17 @@ Postal3DB = {
 		},
 		["Mxyz - Golemagg"] = {
 		},
-		["Vermin - Golemagg"] = {
+		["Battlearm - Golemagg"] = {
 		},
 		["Moolatz - Golemagg"] = {
 		},
-		["Battlearm - Golemagg"] = {
+		["Battitude - Golemagg"] = {
+		},
+		["Vermin - Golemagg"] = {
+		},
+		["Provokator - Jin'do"] = {
 		},
 		["Wells - Jin'do"] = {
-		},
-		["Battitude - Golemagg"] = {
 		},
 	},
 }

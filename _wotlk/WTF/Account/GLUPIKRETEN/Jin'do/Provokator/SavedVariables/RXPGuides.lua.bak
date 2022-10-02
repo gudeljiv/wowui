@@ -1,0 +1,316 @@
+
+RXPCData = {
+	["completedWaypoints"] = {
+		[8] = {
+		},
+	},
+	["currentStep"] = 8,
+	["phase"] = 6,
+	["currentGuideGroup"] = "Horde 1-30",
+	["flightPaths"] = {
+	},
+	["xprate"] = 1,
+	["JoyousJourneys"] = true,
+	["hardcore"] = false,
+	["SoM"] = 1,
+	["currentGuideName"] = "01-10 Durotar",
+	["stepSkip"] = {
+		[5] = true,
+		[3] = true,
+	},
+	["frameHeight"] = 125.000129699707,
+	["GA"] = false,
+}
+RXPCTrackingData = {
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Provokator - Jin'do"] = "Provokator - Jin'do",
+	},
+	["profiles"] = {
+		["Mxzq - Golemagg"] = {
+			["levels"] = {
+				[69] = {
+					["groupExperience"] = 552562,
+					["deaths"] = 3,
+					["mobs"] = {
+						["Shadowmoon Valley"] = {
+							["xp"] = 52140,
+							["count"] = 35,
+						},
+						["Sethekk Halls"] = {
+							["xp"] = 211298,
+							["count"] = 125,
+						},
+						["The Mechanar"] = {
+							["xp"] = 169144,
+							["count"] = 72,
+						},
+						["Hellfire Peninsula"] = {
+							["xp"] = 5520,
+							["count"] = 6,
+						},
+						["Terokkar Forest"] = {
+							["xp"] = 90129,
+							["count"] = 51,
+						},
+						["The Slave Pens"] = {
+							["xp"] = 144060,
+							["count"] = 110,
+						},
+					},
+					["timestamp"] = {
+						["dateFinished"] = {
+							["monthDay"] = 22,
+							["day"] = 0,
+							["month"] = 9,
+							["weekday"] = 5,
+							["year"] = 2022,
+							["hour"] = 19,
+							["minute"] = 27,
+						},
+						["finished"] = 799807,
+					},
+					["quests"] = {
+						["Terokkar Forest"] = {
+							[10000] = 12450,
+							[10008] = 16125,
+						},
+					},
+				},
+				[70] = {
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 22,
+							["day"] = 0,
+							["month"] = 9,
+							["weekday"] = 5,
+							["year"] = 2022,
+							["hour"] = 19,
+							["minute"] = 27,
+						},
+						["started"] = 1664446024,
+					},
+					["quests"] = {
+					},
+				},
+			},
+		},
+		["Provokator - Jin'do"] = {
+			["levels"] = {
+				[2] = {
+					["groupExperience"] = 30,
+					["deaths"] = 0,
+					["mobs"] = {
+						["Durotar"] = {
+							["xp"] = 538,
+							["count"] = 3,
+						},
+					},
+					["timestamp"] = {
+					},
+					["quests"] = {
+						["Durotar"] = {
+							[790] = 450,
+						},
+					},
+				},
+			},
+		},
+	},
+}
+RXPCComms = {
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Provokator - Jin'do"] = "Provokator - Jin'do",
+	},
+	["profiles"] = {
+		["Mxzq - Golemagg"] = {
+			["players"] = {
+				["Dkappone"] = {
+					["timePlayed"] = 1389.503000000026,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 1268,
+				},
+				["Withindeath"] = {
+					["timePlayed"] = 1389.503000000026,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 1268,
+				},
+				["Grimtorque"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "WARRIOR",
+					["xp"] = 1838,
+				},
+				["Captorterror"] = {
+					["timePlayed"] = 89.08799999998882,
+					["class"] = "HUNTER",
+					["xp"] = 1268,
+				},
+				["Paladuur"] = {
+					["timePlayed"] = 89.08799999998882,
+					["class"] = "PALADIN",
+					["xp"] = 1268,
+				},
+				["Naylez"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "WARRIOR",
+					["xp"] = 1268,
+				},
+				["Shotek"] = {
+					["timePlayed"] = 85.72200000006706,
+					["class"] = "DRUID",
+					["xp"] = 1376,
+				},
+				["Dyelin"] = {
+					["timePlayed"] = 89.08799999998882,
+					["class"] = "PRIEST",
+					["xp"] = 1268,
+				},
+				["Favienne"] = {
+					["timePlayed"] = 173.0210000000661,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 796,
+				},
+				["Maxymilius"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "SHAMAN",
+					["xp"] = 1838,
+				},
+				["Haveto"] = {
+					["timePlayed"] = 1545.662000000011,
+					["class"] = "SHAMAN",
+					["xp"] = 920,
+				},
+				["Nyrin"] = {
+					["timePlayed"] = 173.0210000000661,
+					["class"] = "DRUID",
+					["xp"] = 796,
+				},
+				["Talanjii"] = {
+					["timePlayed"] = 85.72200000006706,
+					["class"] = "PRIEST",
+					["xp"] = 1376,
+				},
+				["Hulari"] = {
+					["timePlayed"] = 1545.662000000011,
+					["class"] = "ROGUE",
+					["xp"] = 920,
+				},
+				["Nayld"] = {
+					["timePlayed"] = 173.0210000000661,
+					["class"] = "ROGUE",
+					["xp"] = 796,
+				},
+				["Wixë"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "WARLOCK",
+					["xp"] = 1268,
+				},
+				["Sharingen"] = {
+					["timePlayed"] = 1545.662000000011,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 920,
+				},
+				["Johnylecitel"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "PRIEST",
+					["xp"] = 1268,
+				},
+				["Ypers"] = {
+					["timePlayed"] = 1344.199000000022,
+					["class"] = "SHAMAN",
+					["xp"] = 1376,
+				},
+				["Nabito"] = {
+					["timePlayed"] = 85.72200000006706,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 1376,
+				},
+				["Goldenarm"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "PALADIN",
+					["xp"] = 1268,
+				},
+				["Vinterax"] = {
+					["timePlayed"] = 30.3019999996759,
+					["class"] = "PALADIN",
+					["xp"] = 500,
+				},
+				["Rompido"] = {
+					["timePlayed"] = 71.13700000010431,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 1376,
+				},
+				["Litenshaman"] = {
+					["timePlayed"] = 1389.503000000026,
+					["class"] = "SHAMAN",
+					["xp"] = 1268,
+				},
+				["Jaffrost"] = {
+					["timePlayed"] = 1545.662000000011,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 920,
+				},
+				["Brutikus"] = {
+					["timePlayed"] = 85.72200000006706,
+					["class"] = "WARRIOR",
+					["xp"] = 1376,
+				},
+				["Ylvin"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "MAGE",
+					["xp"] = 1838,
+				},
+				["Ilthe"] = {
+					["timePlayed"] = 173.0210000000661,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 796,
+				},
+				["Lecarde"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "PRIEST",
+					["xp"] = 1838,
+				},
+			},
+		},
+		["Provokator - Jin'do"] = {
+			["announcements"] = {
+				["01-10 Durotar"] = {
+					["collect"] = {
+					},
+					["complete"] = {
+					},
+				},
+			},
+			["players"] = {
+				["Netrebnic"] = {
+					["timePlayed"] = 0,
+					["class"] = "WARRIOR",
+					["xp"] = 30,
+				},
+			},
+		},
+	},
+}
+RXPCSettings = {
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Provokator - Jin'do"] = "Provokator - Jin'do",
+	},
+	["profiles"] = {
+		["Mxzq - Golemagg"] = {
+			["enableTracker"] = false,
+			["enableFlyStepAnnouncements"] = false,
+			["alwaysSendBranded"] = false,
+			["enableLevelUpAnnounceSolo"] = false,
+			["enableLevelUpAnnounceGroup"] = false,
+			["checkVersions"] = false,
+		},
+		["Provokator - Jin'do"] = {
+		},
+	},
+}
