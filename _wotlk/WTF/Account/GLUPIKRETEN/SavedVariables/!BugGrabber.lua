@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 6270,
+	["session"] = 6282,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3640,5 +3640,102 @@ BugGrabberDB = {
 			["session"] = 6267,
 			["counter"] = 10,
 		}, -- [466]
+		{
+			["message"] = "Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua:2500: [string \"print(xVermin.AOE(5))...\"]:1: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2022/10/02 09:34:35",
+			["locals"] = "(*temporary) = false\n(*temporary) = \"[string \"print(xVermin.AOE(5))...\"]:1: attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2500: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2489>",
+			["session"] = 6273,
+			["counter"] = 1,
+		}, -- [467]
+		{
+			["message"] = "[string \"print(xVermin.AOE(5))...\"]:1: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2022/10/02 09:34:35",
+			["stack"] = "[string \"print(xVermin.AOE(5))\n-- not behind target\nlocal red, green, blue, alpha = RotationFrame4:GetBackdropColor()\n\nif ceil(red) == 1 and ceil(green) == 1 and ceil(blue) == 1 then\n    return true\nend\"]:1: in function `LF_000001E89A28E160'\n[string \"Condition_STANCE_EXISTS_ALIVE_COMBO_LUA_DEBUFFDUR_DEBUFFDUR\"]:7: in function `CheckFunction'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:266: in function `Check'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua\"]:756: in function <Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua:727>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2455: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2415>",
+			["session"] = 6273,
+			["counter"] = 308,
+		}, -- [468]
+		{
+			["message"] = "[string \"print(xVermin.AOE(5))\"]:1: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2022/10/02 09:35:50",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:118\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "[string \"print(xVermin.AOE(5))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 6273,
+			["counter"] = 1,
+		}, -- [469]
+		{
+			["message"] = "Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua:2500: [string \"local min,max=GetRange(\"target\")...\"]:1: attempt to call global 'GetRange' (a nil value)",
+			["time"] = "2022/10/02 09:42:28",
+			["locals"] = "(*temporary) = false\n(*temporary) = \"[string \"local min,max=GetRange(\"target\")...\"]:1: attempt to call global 'GetRange' (a nil value)\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2500: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2489>",
+			["session"] = 6274,
+			["counter"] = 1,
+		}, -- [470]
+		{
+			["message"] = "[string \"local min,max=GetRange(\"target\")...\"]:1: attempt to call global 'GetRange' (a nil value)",
+			["time"] = "2022/10/02 09:42:26",
+			["stack"] = "[string \"local min,max=GetRange(\"target\")\nif max > 5 then\n    return false\nelse\n    return true\nend\"]:1: in function `LF_000001E93CB70F10'\n[string \"Condition_STANCE_DEBUFFDUR_BUFFDUR_LUA\"]:6: in function `CheckFunction'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:266: in function <...eWhen\\Components\\Core\\Conditions\\ConditionObject.lua:260>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:235: in function `RegisterForUpdating'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:319: in function `DeclareExternalUpdater'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua\"]:1040: in function `Setup'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua\"]:71: in function <Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:65>\n[string \"=(tail call)\"]: ?\n...\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:980: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:968>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1040: in function `CScriptBubble'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1469: in function `OnSettingSaved'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:2057: in function `SaveSetting'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:2029: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:2026>\n[string \"=[C]\"]: in function `Hide'\n[string \"*:OnClick\"]:3: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 6274,
+			["counter"] = 33,
+		}, -- [471]
+		{
+			["message"] = "TellMeWhen: [string \"local min,max=GetRange(\"target\")...\"]:2: attempt to compare number with nil",
+			["time"] = "2022/10/02 09:42:39",
+			["stack"] = "[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2631: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2589>",
+			["session"] = 6275,
+			["counter"] = 1,
+		}, -- [472]
+		{
+			["message"] = "[string \"local min,max=GetRange(\"target\")...\"]:2: attempt to compare number with nil",
+			["time"] = "2022/10/02 09:43:05",
+			["stack"] = "[string \"local min,max=GetRange(\"target\")\nif max > 5 then\n    return false\nelse\n    return true\nend\"]:2: in function `LF_000001E9061B0D80'\n[string \"Condition_STANCE_DEBUFFDUR_BUFFDUR_LUA\"]:6: in function `CheckFunction'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:266: in function <...eWhen\\Components\\Core\\Conditions\\ConditionObject.lua:260>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:235: in function `RegisterForUpdating'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:319: in function `DeclareExternalUpdater'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua\"]:1040: in function <Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua:926>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n...\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2544: in function `UpdateNormally'\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2693: in function `Update'\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2801: in function `LockToggle'\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2917: in function `?'\n[string \"@Interface\\AddOns\\AdiBags\\libs\\AceConsole-3.0\\AceConsole-3.0-7.lua\"]:94: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 6275,
+			["counter"] = 6,
+		}, -- [473]
+		{
+			["message"] = "[string \"local min,max = xGetRange(\"target\")...\"]:1: attempt to call global 'xGetRange' (a nil value)",
+			["time"] = "2022/10/02 09:43:15",
+			["stack"] = "[string \"local min,max = xGetRange(\"target\")\nif max > 5 then\n    return false\nelse\n    return true\nend\"]:1: in function `LF_000001E90F74F248'\n[string \"Condition_STANCE_DEBUFFDUR_BUFFDUR_LUA\"]:6: in function `CheckFunction'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:266: in function <...eWhen\\Components\\Core\\Conditions\\ConditionObject.lua:260>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:235: in function `RegisterForUpdating'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:319: in function `DeclareExternalUpdater'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua\"]:1040: in function `Setup'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua\"]:71: in function <Interface\\AddOns\\TellMeWhen\\Options\\IconConfig.lua:65>\n[string \"=(tail call)\"]: ?\n...\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:980: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:968>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1040: in function `CScriptBubble'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:1469: in function `OnSettingSaved'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:2057: in function `SaveSetting'\n[string \"@Interface\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua\"]:2029: in function <...ace\\AddOns\\TellMeWhen\\Options\\TellMeWhen_Options.lua:2026>\n[string \"=[C]\"]: in function `Hide'\n[string \"*:OnClick\"]:3: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 6275,
+			["counter"] = 1,
+		}, -- [474]
+		{
+			["message"] = "TellMeWhen: [string \"local min,max = xGetRange(\"target\")...\"]:2: attempt to compare number with nil",
+			["time"] = "2022/10/02 09:43:26",
+			["stack"] = "[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2631: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2589>",
+			["session"] = 6276,
+			["counter"] = 1,
+		}, -- [475]
+		{
+			["message"] = "Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua:2500: [string \"local min,max = xGetRange(\"target\")...\"]:2: attempt to compare number with nil",
+			["time"] = "2022/10/02 09:43:31",
+			["locals"] = "(*temporary) = false\n(*temporary) = \"[string \"local min,max = xGetRange(\"target\")...\"]:2: attempt to compare number with nil\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2500: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2489>",
+			["session"] = 6276,
+			["counter"] = 1,
+		}, -- [476]
+		{
+			["message"] = "[string \"local min,max = xGetRange(\"target\")...\"]:2: attempt to compare number with nil",
+			["time"] = "2022/10/02 09:43:31",
+			["stack"] = "[string \"local min,max = xGetRange(\"target\")\nif max > 5 then\n    return false\nelse\n    return true\nend\"]:2: in function `LF_000001E916CD4160'\n[string \"Condition_STANCE_DEBUFFDUR_BUFFDUR_LUA\"]:6: in function `CheckFunction'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:266: in function <...eWhen\\Components\\Core\\Conditions\\ConditionObject.lua:260>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:235: in function `RegisterForUpdating'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Conditions\\ConditionObject.lua\"]:319: in function `DeclareExternalUpdater'\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua\"]:1040: in function <Interface\\AddOns\\TellMeWhen\\Components\\Core\\Icon.lua:926>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\Components\\Core\\Group-Group.lua\"]:497: in function <...nterface\\AddOns\\TellMeWhen\\Components\\Core\\Group.lua:425>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2544: in function `UpdateNormally'\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2693: in function `Update'\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2801: in function `LockToggle'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 6276,
+			["counter"] = 179,
+		}, -- [477]
+		{
+			["message"] = "Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua:2500: Interface\\AddOns\\xVermin\\Rotation/AOE.lua:27: attempt to compare nil with number",
+			["time"] = "2022/10/02 10:02:44",
+			["locals"] = "(*temporary) = false\n(*temporary) = \"Interface\\AddOns\\xVermin\\Rotation/AOE.lua:27: attempt to compare nil with number\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\TellMeWhen\\TellMeWhen-9.2.5.lua\"]:2500: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2489>",
+			["session"] = 6278,
+			["counter"] = 1,
+		}, -- [478]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/AOE.lua:27: attempt to compare nil with number",
+			["time"] = "2022/10/02 10:01:32",
+			["locals"] = "range = 30\ntype = <function> defined =[C]:-1\nrange = 30\ninRange = 0\n(for index) = 1\n(for limit) = 40\n(for step) = 1\ni = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 28\n(*temporary) = \"attempt to compare nil with number\"\nminRange = 28\nmaxRange = nil\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/AOE.lua\"]:27: in function `AOE'\n[string \"@Interface\\AddOns\\xVermin\\Rotation/AOE.lua\"]:90: in function <Interface\\AddOns\\xVermin\\Rotation/AOE.lua:73>\n[string \"=[C]\"]: ?",
+			["session"] = 6278,
+			["counter"] = 2,
+		}, -- [479]
 	},
 }

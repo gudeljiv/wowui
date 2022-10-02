@@ -1,46 +1,51 @@
 local _, xVermin = ...
+local RangeCheck = LibStub('LibRangeCheck-2.0')
+local minRange, maxRange
 
-function AOE(type, skill)
+function xGetRange(unit)
+	if UnitExists(unit) then
+		minRange, maxRange = RangeCheck:GetRange(unit)
+		return minRange, maxRange
+	else
+		return -1, -1
+	end
+end
+
+-- 1 = Inspect, 28 yards
+-- 2 = Trade, 11.11 yards
+-- 3 = Duel, 9.9 yards
+-- 4 = Follow, 28 yards
+function AOE(range)
 	local type = type or 'bool'
-	local skill = skill or 'Pummel'
+	local range = range or 5
 	local inRange = 0
 
 	for i = 1, 40 do
-		if UnitExists('nameplate' .. i) and IsSpellInRange(skill, 'nameplate' .. i) == 1 and CheckInteractDistance('nameplate' .. i, 3) then
-			-- 1 = Inspect, 28 yards
-			-- 2 = Trade, 11.11 yards
-			-- 3 = Duel, 9.9 yards
-			-- 4 = Follow, 28 yards
-			-- print("nameplate"..i,CheckInteractDistance("nameplate"..i, 3))
-			inRange = inRange + 1
+		-- if UnitExists('nameplate' .. i) and IsSpellInRange(skill, 'nameplate' .. i) == 1 and CheckInteractDistance('nameplate' .. i, 3) then
+		if UnitExists('nameplate' .. i) then
+			minRange, maxRange = xGetRange('nameplate' .. i)
+			if maxRange and maxRange <= range then
+				inRange = inRange + 1
+			end
 		end
 	end
-	if type == 'bool' then
-		if inRange > 1 then
-			return true
-		else
-			return false
-		end
-	end
-	if type == 'number' then
-		return inRange
-	end
+	return inRange
 end
 
 local buffs = {
 	['Feign Dead'] = true
 }
 
-local skills = {
-	['HUNTER'] = 'Multi-Shot',
-	['MAGE'] = 'Frostbolt',
-	['WARLOCK'] = 'Shadowbolt',
-	['SHAMAN'] = 'Lightning Bolt',
-	['WARRIOR'] = 'Pummel',
-	['PALADIN'] = 'Crusader Strike',
-	['DEATHKNIGHT'] = 'Heart Strike',
-	['ROGUE'] = 'Sinister Strike',
-	['DRUID'] = 'Maul'
+local skills_range = {
+	['HUNTER'] = 30,
+	['MAGE'] = 30,
+	['WARLOCK'] = 30,
+	['SHAMAN'] = 30,
+	['WARRIOR'] = 5,
+	['PALADIN'] = 5,
+	['DEATHKNIGHT'] = 5,
+	['ROGUE'] = 5,
+	['DRUID'] = 5
 }
 
 -----------------------------------------------------------------------------------------------------------------------------
@@ -57,7 +62,6 @@ aoe.text:SetPoint('CENTER', AOE_TARGETS, 'CENTER', 0, 0)
 aoe.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 local aoe_number
-
 xVermin:CheckIfLoadedWithTimer(
 	'RotationFrame1',
 	function()
@@ -83,7 +87,7 @@ xVermin:CheckIfLoadedWithTimer(
 					RotationFrame1:SetBackdropColor(1, 1, 1, 1) -- white
 				else
 					if InCombatLockdown() then
-						aoe_number = AOE('number', skills[xVermin.Class])
+						aoe_number = AOE(skills_range[xVermin.Class])
 						if aoe_number > 1 then
 							RotationFrame1:SetBackdropColor(1, 0, 0, 1) -- red --> DO AOE
 						else

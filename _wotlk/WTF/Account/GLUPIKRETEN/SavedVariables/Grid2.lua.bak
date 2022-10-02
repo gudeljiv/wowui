@@ -321,7 +321,10 @@ Grid2DB = {
 					["frameColor"] = {
 						["a"] = 0.800000011920929,
 					},
+					["frameHeight"] = 50,
+					["shadowDisabled"] = true,
 					["frameBorder"] = 1,
+					["barTexture"] = "Grid2 Flat",
 					["extraThemes"] = {
 						{
 							["frameColor"] = {
@@ -554,11 +557,6 @@ Grid2DB = {
 							["frameTexture"] = "Flat",
 						}, -- [4]
 					},
-					["fontFlags"] = "OUTLINE",
-					["frameHeight"] = 50,
-					["shadowDisabled"] = true,
-					["barTexture"] = "Grid2 Flat",
-					["frameTexture"] = "Flat",
 					["frameWidths"] = {
 						["yUI Arena"] = 100,
 						["yUI Party"] = 90,
@@ -568,6 +566,7 @@ Grid2DB = {
 						["Nise Party"] = 90,
 						["Nise Arena"] = 80,
 					},
+					["frameTexture"] = "Flat",
 					["font"] = "Accidental Presidency",
 					["menuDisabled"] = true,
 					["frameContentColor"] = {
@@ -589,8 +588,9 @@ Grid2DB = {
 						["Holy Raid25"] = 73,
 						["yUI Party"] = 58,
 					},
-					["frameWidth"] = 70,
 					["orientation"] = "HORIZONTAL",
+					["frameWidth"] = 70,
+					["fontFlags"] = "OUTLINE",
 				},
 			},
 		},
@@ -903,8 +903,8 @@ Grid2DB = {
 					["layouts"] = {
 						["raid@lfr"] = "By Group",
 						["solo"] = "None",
-						["raid@other"] = "By Group",
 						["raid@none"] = "By Group",
+						["raid@other"] = "By Group",
 						["raid@mythic"] = "By Group",
 						["raid@flex"] = "By Group",
 						["raid@pvp"] = "By Group",
@@ -1163,8 +1163,8 @@ Grid2DB = {
 		["Grid2RaidDebuffs"] = {
 			["profiles"] = {
 				["Niseko for President"] = {
-					["defaultEJ_difficulty"] = 16,
 					["lastSelectedModule"] = "Battle for Azeroth",
+					["defaultEJ_difficulty"] = 16,
 					["enabledModules"] = {
 						["Battle for Azeroth"] = true,
 					},
@@ -4582,11 +4582,11 @@ Grid2DB = {
 						["a"] = 0,
 						["r"] = 1,
 					},
+					["disableBlink"] = true,
 					["color3"] = {
 						["g"] = 0,
 						["b"] = 0,
 					},
-					["disableBlink"] = true,
 					["color1"] = {
 						["a"] = 0,
 						["b"] = 1,
@@ -4721,25 +4721,9 @@ Grid2DB = {
 					["spellName"] = "Prayer of Mending",
 				},
 				["range"] = {
-					["default"] = 0.45,
 					["elapsed"] = 0.1,
+					["default"] = 0.45,
 					["range"] = "38",
-				},
-				["buff-Lifebloom-mine"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0.71764705882353,
-						["g"] = 1,
-						["r"] = 0.447058823529412,
-					},
-					["load"] = {
-						["playerClass"] = {
-							["DRUID"] = true,
-						},
-					},
-					["mine"] = 1,
-					["spellName"] = "Lifebloom",
 				},
 				["debuff-Il'gynoth>recurringnightmare"] = {
 					["type"] = "debuff",
@@ -4768,8 +4752,17 @@ Grid2DB = {
 					["spellName"] = 155777,
 				},
 				["classcolor"] = {
-					["colorHostile"] = false,
 					["colors"] = {
+						["DEATHKNIGHT"] = {
+							["b"] = 0.2274504750967026,
+							["g"] = 0.117646798491478,
+							["r"] = 0.7686257362365723,
+						},
+						["WARRIOR"] = {
+							["b"] = 0.4313725490196079,
+							["g"] = 0.611764705882353,
+							["r"] = 0.7803921568627451,
+						},
 						["PALADIN"] = {
 							["b"] = 0.7294117647058823,
 							["g"] = 0.5490196078431373,
@@ -4779,18 +4772,6 @@ Grid2DB = {
 							["b"] = 0.9411764705882353,
 							["g"] = 0.8,
 							["r"] = 0.4117647058823529,
-						},
-						["DRUID"] = {
-							["g"] = 0.4901960784313725,
-							["b"] = 0.0392156862745098,
-						},
-						["MONK"] = {
-							["b"] = 0.5882352941176471,
-						},
-						["DEATHKNIGHT"] = {
-							["b"] = 0.2274504750967026,
-							["g"] = 0.117646798491478,
-							["r"] = 0.7686257362365723,
 						},
 						["SHAMAN"] = {
 							["g"] = 0.4392156862745098,
@@ -4811,16 +4792,19 @@ Grid2DB = {
 							["g"] = 0.8313725490196078,
 							["r"] = 0.6705882352941176,
 						},
-						["WARRIOR"] = {
-							["b"] = 0.4313725490196079,
-							["g"] = 0.611764705882353,
-							["r"] = 0.7803921568627451,
+						["DRUID"] = {
+							["g"] = 0.4901960784313725,
+							["b"] = 0.0392156862745098,
+						},
+						["MONK"] = {
+							["b"] = 0.5882352941176471,
 						},
 						["ROGUE"] = {
 							["g"] = 0.9607843137254902,
 							["b"] = 0.4117647058823529,
 						},
 					},
+					["colorHostile"] = false,
 				},
 				["health-current"] = {
 					["color2"] = {
@@ -4828,12 +4812,12 @@ Grid2DB = {
 						["g"] = 0.2196078431372549,
 						["r"] = 0.2196078431372549,
 					},
-					["color3"] = {
+					["color1"] = {
 						["b"] = 0.2196078431372549,
 						["g"] = 0.2196078431372549,
 						["r"] = 0.2196078431372549,
 					},
-					["color1"] = {
+					["color3"] = {
 						["b"] = 0.2196078431372549,
 						["g"] = 0.2196078431372549,
 						["r"] = 0.2196078431372549,
@@ -4946,6 +4930,218 @@ Grid2DB = {
 						["a"] = 1,
 						["r"] = 1,
 						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["debuff-Shadow-Touched"] = {
+					["type"] = "debuff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.788235294117647,
+						["g"] = 0.188235294117647,
+						["r"] = 0.63921568627451,
+					},
+					["spellName"] = 284556,
+				},
+				["buff-EssenceFont-mine"] = {
+					["spellName"] = "Essence Font",
+					["type"] = "buff",
+					["mine"] = 1,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 0,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["debuff-LadyAshvane>Waterlogged"] = {
+					["type"] = "debuff",
+					["spellName"] = 296693,
+					["color1"] = {
+						["a"] = 0.9000000059604645,
+						["r"] = 0,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["buff-EnvelopingMist-mine"] = {
+					["type"] = "buff",
+					["spellName"] = "Enveloping Mist",
+					["load"] = {
+						["playerClass"] = {
+							["MONK"] = true,
+						},
+					},
+					["mine"] = 1,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 0,
+					},
+				},
+				["debuff-TheQueen'sCourt>Suffering"] = {
+					["color1"] = {
+						["a"] = 0.5,
+						["b"] = 0.6901960784313725,
+						["g"] = 0.4549019607843137,
+						["r"] = 0.3686274509803922,
+					},
+					["useSpellId"] = true,
+					["type"] = "debuff",
+					["spellName"] = 297586,
+				},
+				["trail-of-light"] = {
+					["color1"] = {
+						["b"] = 0.207843137254902,
+						["g"] = 0.945098039215686,
+						["r"] = 1,
+					},
+				},
+				["aoe-Resto Shaman"] = {
+					["type"] = "aoe-heals",
+					["activeTime"] = 1,
+					["spellList"] = {
+						1064, -- [1]
+					},
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 0.886274509803922,
+						["r"] = 0.615686274509804,
+					},
+				},
+				["buff-Regrowth-mine"] = {
+					["type"] = "buff",
+					["spellName"] = "Regrowth",
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+					["mine"] = 1,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 0,
+						["g"] = 1,
+						["b"] = 0,
+					},
+				},
+				["debuffs-TankStacks"] = {
+					["type"] = "debuffs",
+					["auras"] = {
+						"Sacred Blade", -- [1]
+					},
+					["useWhiteList"] = true,
+					["debuffTypeColorize"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.874509803921569,
+						["g"] = 0.807843137254902,
+						["r"] = 0.603921568627451,
+					},
+				},
+				["buff-Renew-mine"] = {
+					["type"] = "buff",
+					["spellName"] = "Renew",
+					["load"] = {
+						["playerClass"] = {
+							["PRIEST"] = true,
+						},
+					},
+					["mine"] = 1,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 0.501960784313726,
+						["g"] = 1,
+						["b"] = 0,
+					},
+				},
+				["debuffs-Debuffs-Orange"] = {
+					["color1"] = {
+						["a"] = 0.800000011920929,
+						["r"] = 1,
+						["g"] = 0.501960784313726,
+						["b"] = 0,
+					},
+					["useWhiteList"] = true,
+					["type"] = "debuffs",
+					["auras"] = {
+						"Soul Flay", -- [1]
+						"Incineration", -- [2]
+						"Briny Bubble", -- [3]
+						"Aphotic Blast", -- [4]
+						"Enlarged Heart", -- [5]
+						"Gigavolt Charge", -- [6]
+						"Spit Gold", -- [7]
+						"Liquid Gold", -- [8]
+						"Plague Bomb", -- [9]
+						"Orb of Power", -- [10]
+						"Bestial Impact", -- [11]
+					},
+				},
+				["buff-UmbralShell"] = {
+					["spellName"] = "Umbral Shell",
+					["type"] = "buff",
+					["mine"] = false,
+					["color1"] = {
+						["a"] = 0.900000005960465,
+						["r"] = 0.501960784313726,
+						["g"] = 1,
+						["b"] = 0,
+					},
+				},
+				["buff-BeaconOfLight-mine"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["load"] = {
+						["playerClass"] = {
+							["PALADIN"] = true,
+						},
+					},
+					["mine"] = true,
+					["spellName"] = 53563,
+				},
+				["buff-Innervate"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["type"] = "buff",
+					["mine"] = false,
+					["spellName"] = 29166,
+				},
+				["buff-RenewingMist-mine"] = {
+					["type"] = "buff",
+					["spellName"] = "Renewing Mist",
+					["load"] = {
+						["playerClass"] = {
+							["MONK"] = true,
+						},
+					},
+					["mine"] = 1,
+					["color1"] = {
+						["a"] = 0.9000000059604645,
+						["r"] = 0.2274509803921569,
+						["g"] = 0.192156862745098,
+						["b"] = 0.2509803921568627,
+					},
+				},
+				["debuff-AbyssalCommanderSivara>FrostMark"] = {
+					["type"] = "debuff",
+					["spellName"] = 294711,
+					["color1"] = {
+						["a"] = 0.9000000059604645,
+						["r"] = 0,
+						["g"] = 0.5019607843137255,
 						["b"] = 1,
 					},
 				},
@@ -5149,271 +5345,6 @@ Grid2DB = {
 						"Heartbroken", -- [188]
 					},
 				},
-				["debuff-Shadow-Touched"] = {
-					["type"] = "debuff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0.788235294117647,
-						["g"] = 0.188235294117647,
-						["r"] = 0.63921568627451,
-					},
-					["spellName"] = 284556,
-				},
-				["buff-EssenceFont-mine"] = {
-					["spellName"] = "Essence Font",
-					["type"] = "buff",
-					["mine"] = 1,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 0,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
-				["debuff-LadyAshvane>Waterlogged"] = {
-					["type"] = "debuff",
-					["spellName"] = 296693,
-					["color1"] = {
-						["a"] = 0.9000000059604645,
-						["r"] = 0,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
-				["banzai"] = {
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 0,
-						["r"] = 1,
-					},
-					["type"] = "banzai",
-				},
-				["buff-EnvelopingMist-mine"] = {
-					["type"] = "buff",
-					["spellName"] = "Enveloping Mist",
-					["load"] = {
-						["playerClass"] = {
-							["MONK"] = true,
-						},
-					},
-					["mine"] = 1,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 0,
-					},
-				},
-				["debuff-TheQueen'sCourt>Suffering"] = {
-					["color1"] = {
-						["a"] = 0.5,
-						["b"] = 0.6901960784313725,
-						["g"] = 0.4549019607843137,
-						["r"] = 0.3686274509803922,
-					},
-					["useSpellId"] = true,
-					["type"] = "debuff",
-					["spellName"] = 297586,
-				},
-				["trail-of-light"] = {
-					["color1"] = {
-						["b"] = 0.207843137254902,
-						["g"] = 0.945098039215686,
-						["r"] = 1,
-					},
-				},
-				["buff-Atonement-mine"] = {
-					["type"] = "buff",
-					["blinkThreshold"] = 5,
-					["load"] = {
-						["playerClass"] = {
-							["PRIEST"] = true,
-						},
-					},
-					["spellName"] = "Atonement",
-					["mine"] = 1,
-					["color1"] = {
-						["a"] = 0.900000005960465,
-						["r"] = 0.227450980392157,
-						["g"] = 0.192156862745098,
-						["b"] = 0.250980392156863,
-					},
-				},
-				["aoe-Resto Shaman"] = {
-					["type"] = "aoe-heals",
-					["activeTime"] = 1,
-					["spellList"] = {
-						1064, -- [1]
-					},
-					["mine"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 0.886274509803922,
-						["r"] = 0.615686274509804,
-					},
-				},
-				["buff-Regrowth-mine"] = {
-					["type"] = "buff",
-					["spellName"] = "Regrowth",
-					["load"] = {
-						["playerClass"] = {
-							["DRUID"] = true,
-						},
-					},
-					["mine"] = 1,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 0,
-						["g"] = 1,
-						["b"] = 0,
-					},
-				},
-				["debuffs-TankStacks"] = {
-					["type"] = "debuffs",
-					["auras"] = {
-						"Sacred Blade", -- [1]
-					},
-					["useWhiteList"] = true,
-					["debuffTypeColorize"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0.874509803921569,
-						["g"] = 0.807843137254902,
-						["r"] = 0.603921568627451,
-					},
-				},
-				["debuff-AbyssalCommanderSivara>ToxicBrand"] = {
-					["type"] = "debuff",
-					["spellName"] = "Toxic Brand",
-					["color1"] = {
-						["a"] = 0.9000000059604645,
-						["r"] = 0,
-						["g"] = 1,
-						["b"] = 0,
-					},
-				},
-				["buff-Renew-mine"] = {
-					["type"] = "buff",
-					["spellName"] = "Renew",
-					["load"] = {
-						["playerClass"] = {
-							["PRIEST"] = true,
-						},
-					},
-					["mine"] = 1,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 0.501960784313726,
-						["g"] = 1,
-						["b"] = 0,
-					},
-				},
-				["debuffs-Debuffs-Orange"] = {
-					["color1"] = {
-						["a"] = 0.800000011920929,
-						["r"] = 1,
-						["g"] = 0.501960784313726,
-						["b"] = 0,
-					},
-					["useWhiteList"] = true,
-					["type"] = "debuffs",
-					["auras"] = {
-						"Soul Flay", -- [1]
-						"Incineration", -- [2]
-						"Briny Bubble", -- [3]
-						"Aphotic Blast", -- [4]
-						"Enlarged Heart", -- [5]
-						"Gigavolt Charge", -- [6]
-						"Spit Gold", -- [7]
-						"Liquid Gold", -- [8]
-						"Plague Bomb", -- [9]
-						"Orb of Power", -- [10]
-						"Bestial Impact", -- [11]
-					},
-				},
-				["buff-UmbralShell"] = {
-					["spellName"] = "Umbral Shell",
-					["type"] = "buff",
-					["mine"] = false,
-					["color1"] = {
-						["a"] = 0.900000005960465,
-						["r"] = 0.501960784313726,
-						["g"] = 1,
-						["b"] = 0,
-					},
-				},
-				["buff-BeaconOfLight-mine"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["load"] = {
-						["playerClass"] = {
-							["PALADIN"] = true,
-						},
-					},
-					["mine"] = true,
-					["spellName"] = 53563,
-				},
-				["buff-Innervate"] = {
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["type"] = "buff",
-					["mine"] = false,
-					["spellName"] = 29166,
-				},
-				["buff-RenewingMist-mine"] = {
-					["type"] = "buff",
-					["spellName"] = "Renewing Mist",
-					["load"] = {
-						["playerClass"] = {
-							["MONK"] = true,
-						},
-					},
-					["mine"] = 1,
-					["color1"] = {
-						["a"] = 0.9000000059604645,
-						["r"] = 0.2274509803921569,
-						["g"] = 0.192156862745098,
-						["b"] = 0.2509803921568627,
-					},
-				},
-				["debuff-AbyssalCommanderSivara>FrostMark"] = {
-					["type"] = "debuff",
-					["spellName"] = 294711,
-					["color1"] = {
-						["a"] = 0.9000000059604645,
-						["r"] = 0,
-						["g"] = 0.5019607843137255,
-						["b"] = 1,
-					},
-				},
-				["buff-GlimmerofLight-mine"] = {
-					["type"] = "buff",
-					["spellName"] = "Glimmer of Light",
-					["load"] = {
-						["playerClass"] = {
-							["PALADIN"] = true,
-						},
-					},
-					["color1"] = {
-						["a"] = 0.9000000059604645,
-						["r"] = 0.2274509803921569,
-						["g"] = 0.192156862745098,
-						["b"] = 0.2509803921568627,
-					},
-					["mine"] = 1,
-					["blinkThreshold"] = 5,
-				},
 				["debuffs-CenterDebuffs"] = {
 					["color1"] = {
 						["a"] = 1,
@@ -5493,12 +5424,65 @@ Grid2DB = {
 						"Unstable Soul", -- [67]
 					},
 				},
+				["banzai"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 0,
+						["r"] = 1,
+					},
+					["type"] = "banzai",
+				},
 				["death"] = {
 					["color1"] = {
 						["b"] = 0.2,
 						["g"] = 0.2,
 						["r"] = 0.2,
 					},
+				},
+				["buff-Atonement-mine"] = {
+					["type"] = "buff",
+					["blinkThreshold"] = 5,
+					["load"] = {
+						["playerClass"] = {
+							["PRIEST"] = true,
+						},
+					},
+					["spellName"] = "Atonement",
+					["mine"] = 1,
+					["color1"] = {
+						["a"] = 0.900000005960465,
+						["r"] = 0.227450980392157,
+						["g"] = 0.192156862745098,
+						["b"] = 0.250980392156863,
+					},
+				},
+				["debuff-AbyssalCommanderSivara>ToxicBrand"] = {
+					["type"] = "debuff",
+					["spellName"] = "Toxic Brand",
+					["color1"] = {
+						["a"] = 0.9000000059604645,
+						["r"] = 0,
+						["g"] = 1,
+						["b"] = 0,
+					},
+				},
+				["buff-GlimmerofLight-mine"] = {
+					["type"] = "buff",
+					["spellName"] = "Glimmer of Light",
+					["load"] = {
+						["playerClass"] = {
+							["PALADIN"] = true,
+						},
+					},
+					["color1"] = {
+						["a"] = 0.9000000059604645,
+						["r"] = 0.2274509803921569,
+						["g"] = 0.192156862745098,
+						["b"] = 0.2509803921568627,
+					},
+					["mine"] = 1,
+					["blinkThreshold"] = 5,
 				},
 				["buffs-Healing2-mine"] = {
 					["color1"] = {
@@ -5520,15 +5504,6 @@ Grid2DB = {
 						"Potion of Replenishment", -- [8]
 					},
 				},
-				["color-Name"] = {
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0.2,
-						["g"] = 0.2,
-						["r"] = 0.2,
-					},
-					["type"] = "color",
-				},
 				["buff-Greased"] = {
 					["type"] = "buff",
 					["spellName"] = 303924,
@@ -5540,6 +5515,15 @@ Grid2DB = {
 						["g"] = 0.8,
 						["b"] = 0.8,
 					},
+				},
+				["color-Name"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.2,
+						["g"] = 0.2,
+						["r"] = 0.2,
+					},
+					["type"] = "color",
 				},
 				["buff-RayofHope-mine"] = {
 					["color1"] = {
@@ -6040,6 +6024,22 @@ Grid2DB = {
 					},
 					["type"] = "vehicle",
 				},
+				["buff-Lifebloom-mine"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.71764705882353,
+						["g"] = 1,
+						["r"] = 0.447058823529412,
+					},
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+					["mine"] = 1,
+					["spellName"] = "Lifebloom",
+				},
 				["buff-BestowFaith-mine"] = {
 					["type"] = "buff",
 					["spellName"] = "Bestow Faith",
@@ -6056,9 +6056,6 @@ Grid2DB = {
 						["b"] = 0,
 					},
 				},
-				["heals-incoming"] = {
-					["includePlayerHeals"] = true,
-				},
 				["debuff-QueenAzshara>DrainedSoul"] = {
 					["type"] = "debuff",
 					["spellName"] = "Drained Soul",
@@ -6068,6 +6065,9 @@ Grid2DB = {
 						["g"] = 0.5019607843137255,
 						["b"] = 1,
 					},
+				},
+				["heals-incoming"] = {
+					["includePlayerHeals"] = true,
 				},
 				["shields"] = {
 					["color2"] = {
@@ -6254,8 +6254,8 @@ Grid2DB = {
 				},
 			},
 			["formatting"] = {
-				["longDurationStackFormat"] = "%.1f-%d",
 				["shortDurationStackFormat"] = "%.0f-%d",
+				["longDurationStackFormat"] = "%.1f-%d",
 			},
 			["versions"] = {
 				["Grid2"] = 9,

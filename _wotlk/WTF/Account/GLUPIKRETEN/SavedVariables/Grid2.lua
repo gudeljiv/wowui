@@ -890,8 +890,8 @@ Grid2DB = {
 						["a"] = 0.800000011920929,
 					},
 					["frameHeight"] = 50,
-					["orientation"] = "HORIZONTAL",
 					["frameBorder"] = 1,
+					["shadowDisabled"] = true,
 					["barTexture"] = "Grid2 Flat",
 					["extraThemes"] = {
 						{
@@ -1134,9 +1134,16 @@ Grid2DB = {
 						["Nise Party"] = 90,
 						["Holy Party"] = 90,
 					},
-					["shadowDisabled"] = true,
+					["frameTexture"] = "Flat",
 					["font"] = "Accidental Presidency",
 					["menuDisabled"] = true,
+					["orientation"] = "HORIZONTAL",
+					["frameContentColor"] = {
+						["a"] = 0.700000017881393,
+						["r"] = 0.141176470588235,
+						["g"] = 0.141176470588235,
+						["b"] = 0.141176470588235,
+					},
 					["frameHeights"] = {
 						["Holy Party"] = 58,
 						["Holy Raid10"] = 80,
@@ -1150,13 +1157,6 @@ Grid2DB = {
 						["yUI Raid"] = 60,
 						["yUI 25+"] = 65,
 					},
-					["frameContentColor"] = {
-						["a"] = 0.700000017881393,
-						["r"] = 0.141176470588235,
-						["g"] = 0.141176470588235,
-						["b"] = 0.141176470588235,
-					},
-					["frameTexture"] = "Flat",
 					["frameWidth"] = 70,
 					["fontFlags"] = "OUTLINE",
 				},

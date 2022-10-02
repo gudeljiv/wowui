@@ -556,9 +556,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 360910,
-		["timeAtThisLevel"] = 6306,
-		["timeStamp"] = 248895.518,
+		["total"] = 362564,
+		["timeAtThisLevel"] = 7960,
+		["timeStamp"] = 823816.687,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -599,9 +599,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 832203,
-		["timeStamp"] = 237664.262,
-		["timeAtThisLevel"] = 32395,
+		["total"] = 834945,
+		["timeStamp"] = 825328.336,
+		["timeAtThisLevel"] = 35137,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
@@ -636,9 +636,9 @@ CB_PlayedTime = {
 		["total"] = 1,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 891037,
-		["timeStamp"] = 247829.148,
-		["timeAtThisLevel"] = 156922,
+		["total"] = 891919,
+		["timeStamp"] = 825697.961,
+		["timeAtThisLevel"] = 157804,
 	},
 	["Judawise-"] = {
 		["total"] = 437,
