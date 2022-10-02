@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 6282,
+	["session"] = 6288,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3737,5 +3737,13 @@ BugGrabberDB = {
 			["session"] = 6278,
 			["counter"] = 2,
 		}, -- [479]
+		{
+			["message"] = "[string \"PlayerFrameHealthBarText:('CENTER', TargetFrameHealthBar, 'CENT...\"]:1: '<name>' expected near '('",
+			["time"] = "2022/10/02 12:12:09",
+			["locals"] = "(*temporary) = \"PlayerFrameHealthBarText:('CENTER', TargetFrameHealthBar, 'CENTER', 0, -1)\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2977: in function <Interface\\FrameXML\\ChatFrame.lua:2970>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 6285,
+			["counter"] = 1,
+		}, -- [480]
 	},
 }

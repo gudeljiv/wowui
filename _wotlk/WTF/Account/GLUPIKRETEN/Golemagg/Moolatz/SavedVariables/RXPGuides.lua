@@ -1,13 +1,11 @@
 
 RXPCData = {
 	["hideWindow"] = false,
-	["hardcore"] = false,
+	["SoM"] = true,
 	["completedWaypoints"] = {
-		[56] = {
-		},
 	},
 	["currentStep"] = 57,
-	["GA"] = false,
+	["hardcore"] = false,
 	["currentGuideGroup"] = "Horde 60-70",
 	["flightPaths"] = {
 		[58] = "Zoram'gar Outpost, Ashenvale",
@@ -55,6 +53,7 @@ RXPCData = {
 		[2] = true,
 		[41] = true,
 		[43] = true,
+		[56] = true,
 		[47] = true,
 		[49] = true,
 		[8] = true,
@@ -64,7 +63,7 @@ RXPCData = {
 		[37] = true,
 	},
 	["disableItemWindow"] = false,
-	["SoM"] = true,
+	["GA"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -197,9 +196,9 @@ RXPCTrackingData = {
 							[10250] = 14700,
 							[10792] = 14700,
 							[10809] = 14325,
+							[10213] = 3600,
 							[10258] = 14700,
 							[10813] = 7500,
-							[10213] = 3600,
 						},
 					},
 				},
@@ -491,10 +490,10 @@ RXPCTrackingData = {
 					},
 					["quests"] = {
 						["Tanaris"] = {
-							[2873] = 8325,
-							[8366] = 8325,
-							[8365] = 8325,
 							[1691] = 7950,
+							[8366] = 8325,
+							[2873] = 8325,
+							[8365] = 8325,
 						},
 					},
 				},
@@ -1178,12 +1177,12 @@ RXPCComms = {
 					["class"] = "WARRIOR",
 				},
 				["Complaining"] = {
-					["class"] = "WARLOCK",
+					["level"] = 70,
 					["lastSeen"] = 2019328.136,
 					["xpPercentage"] = 0,
-					["isRxp"] = true,
+					["class"] = "WARLOCK",
 					["timePlayed"] = 198.5099999997765,
-					["level"] = 70,
+					["isRxp"] = true,
 				},
 				["Drrøv"] = {
 					["timePlayed"] = 1053.099000000017,
@@ -1204,12 +1203,12 @@ RXPCComms = {
 					["class"] = "WARLOCK",
 				},
 				["Uqr"] = {
-					["isRxp"] = true,
+					["class"] = "MAGE",
 					["lastSeen"] = 2528151.484,
 					["xpPercentage"] = 0,
-					["level"] = 46,
+					["isRxp"] = true,
 					["timePlayed"] = 0,
-					["class"] = "MAGE",
+					["level"] = 46,
 				},
 				["Holshtein"] = {
 					["timePlayed"] = 420.0020000000004,
@@ -1229,12 +1228,12 @@ RXPCComms = {
 					["class"] = "HUNTER",
 				},
 				["Judgewink"] = {
-					["isRxp"] = true,
+					["class"] = "PALADIN",
 					["lastSeen"] = 26651.365,
 					["xpPercentage"] = 56,
-					["level"] = 44,
+					["isRxp"] = true,
 					["timePlayed"] = 849.293999999998,
-					["class"] = "PALADIN",
+					["level"] = 44,
 				},
 				["Kirahune"] = {
 					["timePlayed"] = 420.0020000000004,
@@ -1320,9 +1319,9 @@ RXPCComms = {
 					["timePlayed"] = 680.601000000257,
 					["class"] = "WARLOCK",
 				},
-				["Kerrorr"] = {
-					["timePlayed"] = 408.0610000000015,
-					["class"] = "PALADIN",
+				["Bajesklant"] = {
+					["timePlayed"] = 0,
+					["class"] = "HUNTER",
 				},
 				["Kostron"] = {
 					["timePlayed"] = 1053.099000000017,
@@ -1345,9 +1344,9 @@ RXPCComms = {
 					["timePlayed"] = 58.80099999997765,
 					["class"] = "SHAMAN",
 				},
-				["Devereaux"] = {
-					["timePlayed"] = 3002.618000000017,
-					["class"] = "WARLOCK",
+				["Kerrorr"] = {
+					["timePlayed"] = 408.0610000000015,
+					["class"] = "PALADIN",
 				},
 				["Prezakias"] = {
 					["timePlayed"] = 526.5100000000093,
@@ -1358,9 +1357,9 @@ RXPCComms = {
 					["class"] = "DRUID",
 					["xp"] = 484,
 				},
-				["Bajesklant"] = {
-					["timePlayed"] = 0,
-					["class"] = "HUNTER",
+				["Devereaux"] = {
+					["timePlayed"] = 3002.618000000017,
+					["class"] = "WARLOCK",
 				},
 				["Oakenlight"] = {
 					["timePlayed"] = 2274.736999999732,

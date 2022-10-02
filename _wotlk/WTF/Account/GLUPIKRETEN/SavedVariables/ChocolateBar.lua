@@ -54,26 +54,7 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["width"] = 147.000030517578,
-					["autohide"] = false,
-					["barOffy"] = -207.589706420898,
-					["hideBarInCombat"] = false,
-					["barOffx"] = -31.9219512939453,
-				},
-				["ChocolateBar2"] = {
-					["barOffy"] = -256.666748046875,
-					["barPoint"] = "TOPRIGHT",
-					["barName"] = "ChocolateBar2",
-					["align"] = "custom",
-					["width"] = 147,
-					["index"] = 1,
-					["barOffx"] = -88.3325424194336,
-				},
-			},
+			["locked"] = false,
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
@@ -87,7 +68,10 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -366,6 +350,13 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "PP",
 				},
+				["Prat"] = {
+					["enabled"] = false,
+					["index"] = 3,
+					["align"] = "right",
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+				},
 				["AtlasLoot"] = {
 					["index"] = 1,
 					["align"] = "right",
@@ -375,13 +366,6 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 					["showIcon"] = false,
 					["customLabel"] = "AL",
-				},
-				["Prat"] = {
-					["enabled"] = false,
-					["index"] = 3,
-					["align"] = "right",
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
 				},
 				["GatherMate2"] = {
 					["enabled"] = false,
@@ -414,6 +398,17 @@ ChocolateBarDB = {
 					["index"] = 6,
 					["barName"] = "ChocolateBar1",
 				},
+				["TownsfolkTracker"] = {
+					["enabled"] = false,
+					["align"] = "right",
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+				},
+				["MinimapIcon"] = {
+					["enabled"] = false,
+					["index"] = 1,
+					["barName"] = "ChocolateBar1",
+				},
 				["LFGBulletinBoard"] = {
 					["enabled"] = false,
 					["index"] = 2,
@@ -423,17 +418,6 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar2",
 					["showText"] = false,
 					["customLabel"] = "LFG",
-				},
-				["MinimapIcon"] = {
-					["enabled"] = false,
-					["index"] = 1,
-					["barName"] = "ChocolateBar1",
-				},
-				["TownsfolkTracker"] = {
-					["enabled"] = false,
-					["align"] = "right",
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
 				},
 				["NIT"] = {
 					["index"] = 1,
@@ -528,17 +512,33 @@ ChocolateBarDB = {
 				},
 			},
 			["fontName"] = "Friz Quadrata TT",
-			["locked"] = false,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["width"] = 147.000030517578,
+					["autohide"] = false,
+					["barOffy"] = -207.589706420898,
+					["hideBarInCombat"] = false,
+					["barOffx"] = -31.9219512939453,
+				},
+				["ChocolateBar2"] = {
+					["barOffy"] = -256.666748046875,
+					["barPoint"] = "TOPRIGHT",
+					["barName"] = "ChocolateBar2",
+					["align"] = "custom",
+					["width"] = 147,
+					["index"] = 1,
+					["barOffx"] = -88.3325424194336,
+				},
+			},
 			["desaturated"] = false,
 			["forceColor"] = false,
 			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["fixedStrata"] = true,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -556,9 +556,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 362564,
-		["timeAtThisLevel"] = 7960,
-		["timeStamp"] = 823816.687,
+		["total"] = 363470,
+		["timeAtThisLevel"] = 8866,
+		["timeStamp"] = 832907.072,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -644,9 +644,9 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 205581,
-		["timeStamp"] = 239213.766,
-		["timeAtThisLevel"] = 199835,
+		["total"] = 206339,
+		["timeStamp"] = 833732.454,
+		["timeAtThisLevel"] = 200593,
 	},
 	["Koloman-"] = {
 		["total"] = 129,

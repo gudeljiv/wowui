@@ -64,6 +64,10 @@ f:SetScript(
 			end
 			PlayerFrameManaBarText:SetPoint('CENTER', PlayerFrameManaBar, 'CENTER', 0, -1)
 			PlayerFrameManaBarText:SetScale(0.75)
+			PlayerFrameHealthBarText:ClearAllPoints()
+			PlayerFrameHealthBarText:SetPoint('CENTER', PlayerFrameHealthBar, 'CENTER', 0, 0)
+			PlayerFrameHealthBarText:SetScale(0.85)
+
 			PlayerFrameAlternateManaBar:RegisterEvent('PLAYER_ENTERING_WORLD')
 			PlayerFrameAlternateManaBar:SetScript(
 				'OnEvent',
@@ -78,6 +82,12 @@ f:SetScript(
 					self:Hide()
 				end
 			)
+			PlayerFrame:HookScript(
+				'OnUpdate',
+				function()
+					PlayerFrameHealthBarText:SetText(xVermin:FormatValue(UnitHealth('player')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('player')))
+				end
+			)
 
 			TargetFrame:ClearAllPoints()
 			TargetFrame:SetPoint('CENTER', UIParent, 'CENTER', 250, -96)
@@ -87,9 +97,18 @@ f:SetScript(
 			end
 			TargetFrameTextureFrame.ManaBarText:SetPoint('CENTER', TargetFrameManaBar, 'CENTER', 0, -1)
 			TargetFrameTextureFrame.ManaBarText:SetScale(0.75)
+			TargetFrameTextureFrame.HealthBarText:ClearAllPoints()
+			TargetFrameTextureFrame.HealthBarText:SetPoint('CENTER', TargetFrameHealthBar, 'CENTER', 0, 0)
+			TargetFrameTextureFrame.HealthBarText:SetScale(0.85)
 			TargetFrameNameBackground:SetVertexColor(0, 0, 0, 0.5)
 			TargetFrameNameBackground.SetVertexColor = function()
 			end
+			TargetFrame:HookScript(
+				'OnUpdate',
+				function()
+					TargetFrameTextureFrame.HealthBarText:SetText(xVermin:FormatValue(UnitHealth('target')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('target')))
+				end
+			)
 
 			FocusFrame:ClearAllPoints()
 			FocusFrame:SetPoint('CENTER', TargetFrame, 'CENTER', 200, 100)
@@ -99,9 +118,18 @@ f:SetScript(
 			end
 			FocusFrameTextureFrame.ManaBarText:SetPoint('CENTER', FocusFrameManaBar, 'CENTER', 0, -1)
 			FocusFrameTextureFrame.ManaBarText:SetScale(0.75)
+			FocusFrameTextureFrame.HealthBarText:ClearAllPoints()
+			FocusFrameTextureFrame.HealthBarText:SetPoint('CENTER', FocusFrameHealthBar, 'CENTER', 0, 0)
+			FocusFrameTextureFrame.HealthBarText:SetScale(0.85)
 			FocusFrameNameBackground:SetVertexColor(0, 0, 0, 0.5)
 			FocusFrameNameBackground.SetVertexColor = function()
 			end
+			FocusFrame:HookScript(
+				'OnUpdate',
+				function()
+					FocusFrameTextureFrame.HealthBarText:SetText(xVermin:FormatValue(UnitHealth('focus')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('focus')))
+				end
+			)
 
 			xVermin:CheckIfLoadedWithTimer(
 				'PetFrame',

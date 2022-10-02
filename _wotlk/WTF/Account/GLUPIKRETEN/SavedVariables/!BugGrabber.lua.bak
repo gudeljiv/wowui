@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 6281,
+	["session"] = 6287,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -3737,5 +3737,13 @@ BugGrabberDB = {
 			["session"] = 6278,
 			["counter"] = 2,
 		}, -- [479]
+		{
+			["message"] = "[string \"PlayerFrameHealthBarText:('CENTER', TargetFrameHealthBar, 'CENT...\"]:1: '<name>' expected near '('",
+			["time"] = "2022/10/02 12:12:09",
+			["locals"] = "(*temporary) = \"PlayerFrameHealthBarText:('CENTER', TargetFrameHealthBar, 'CENTER', 0, -1)\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2977: in function <Interface\\FrameXML\\ChatFrame.lua:2970>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 6285,
+			["counter"] = 1,
+		}, -- [480]
 	},
 }
