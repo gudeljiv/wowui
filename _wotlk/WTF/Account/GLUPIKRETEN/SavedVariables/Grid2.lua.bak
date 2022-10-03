@@ -1,15 +1,834 @@
 
 Grid2DB = {
 	["namespaces"] = {
-		["Grid2RaidDebuffs"] = {
+		["Grid2Frame"] = {
 			["profiles"] = {
-				["Niseko for President"] = {
-					["lastSelectedModule"] = "Battle for Azeroth",
-					["defaultEJ_difficulty"] = 16,
-					["enabledModules"] = {
-						["Battle for Azeroth"] = true,
+				["Paladin"] = {
+					["frameColor"] = {
+						["a"] = 0,
 					},
-					["lastSelectedInstance"] = 1180,
+					["fontSize"] = 12,
+					["frameHeight"] = 50,
+					["frameBorder"] = 1,
+					["barTexture"] = "Clean",
+					["extraThemes"] = {
+						{
+							["frameColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["fontSize"] = 12,
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = -1,
+							["frameHeight"] = 50,
+							["barTexture"] = "Clean",
+							["frameTexture"] = "Clean",
+							["frameWidths"] = {
+								[10] = 125,
+								[5] = 125,
+							},
+							["frameBorderTexture"] = "None",
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["r"] = 1,
+								["g"] = 1,
+								["b"] = 1,
+							},
+							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
+							["frameContentColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["frameHeights"] = {
+								[10] = 40,
+								[5] = 50,
+							},
+							["frameWidth"] = 125,
+							["frameBorderColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+						}, -- [1]
+						{
+							["frameColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["fontSize"] = 12,
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = -1,
+							["frameHeight"] = 40,
+							["barTexture"] = "Clean",
+							["frameBorderTexture"] = "None",
+							["frameWidths"] = {
+								[5] = 125,
+								[10] = 125,
+							},
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["r"] = 1,
+							},
+							["frameBorderColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["orientation"] = "VERTICAL",
+							["frameHeights"] = {
+								[5] = 45,
+								[10] = 50,
+							},
+							["mouseoverHighlight"] = false,
+							["frameContentColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["frameWidth"] = 125,
+							["frameTexture"] = "Clean",
+						}, -- [2]
+						{
+							["frameColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["fontSize"] = 12,
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = -2,
+							["frameHeight"] = 50,
+							["barTexture"] = "Clean",
+							["frameTexture"] = "Clean",
+							["frameWidths"] = {
+								[25] = 100,
+								[40] = 100,
+							},
+							["frameBorderTexture"] = "None",
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["r"] = 1,
+							},
+							["frameHeights"] = {
+								[25] = 20,
+								[40] = 20,
+							},
+							["orientation"] = "VERTICAL",
+							["mouseoverHighlight"] = false,
+							["frameContentColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["frameWidth"] = 120,
+							["frameBorderColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+						}, -- [3]
+					},
+					["frameBorderTexture"] = "None",
+					["frameContentColor"] = {
+						["a"] = 0,
+					},
+					["frameTexture"] = "Clean",
+					["frameWidth"] = 120,
+					["frameBorderDistance"] = -2,
+				},
+				["Niseko for President"] = {
+					["frameColor"] = {
+						["a"] = 0.800000011920929,
+					},
+					["frameHeight"] = 50,
+					["shadowDisabled"] = true,
+					["frameBorder"] = 1,
+					["barTexture"] = "Grid2 Flat",
+					["extraThemes"] = {
+						{
+							["frameColor"] = {
+								["a"] = 0.800000011920929,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["fontSize"] = 11,
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = 1,
+							["fontFlags"] = "OUTLINE",
+							["frameHeight"] = 70,
+							["frameBorderTexture"] = "Grid2 Flat",
+							["shadowDisabled"] = true,
+							["barTexture"] = "Grid2 Flat",
+							["frameTexture"] = "Flat",
+							["frameWidths"] = {
+								["yUI Arena"] = 100,
+								["yUI Party"] = 90,
+								["Holy Party"] = 90,
+								["yUI Raid"] = 85,
+								["yUI 25+"] = 90,
+								["Nise Party"] = 90,
+								["Nise Arena"] = 80,
+							},
+							["mouseoverHighlight"] = false,
+							["font"] = "Accidental Presidency",
+							["menuDisabled"] = true,
+							["frameHeights"] = {
+								["Holy Party"] = 58,
+								["Holy Raid10"] = 80,
+								["yUI 25+"] = 65,
+								["Holy Raid40"] = 50,
+								["yUI Arena"] = 80,
+								["Nise Arena"] = 60,
+								["Holy Raid25"] = 73,
+								["Holy Raid20"] = 75,
+								["Nise Party"] = 58,
+								["yUI Raid"] = 60,
+								["yUI Party"] = 58,
+							},
+							["orientation"] = "HORIZONTAL",
+							["frameContentColor"] = {
+								["a"] = 0.700000017881393,
+								["r"] = 0.141176470588235,
+								["g"] = 0.141176470588235,
+								["b"] = 0.141176470588235,
+							},
+							["frameWidth"] = 100,
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["r"] = 1,
+								["g"] = 1,
+								["b"] = 1,
+							},
+						}, -- [1]
+						{
+							["frameColor"] = {
+								["a"] = 0.800000011920929,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["fontSize"] = 10,
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = 1,
+							["frameHeight"] = 54,
+							["fontFlags"] = "OUTLINE",
+							["shadowDisabled"] = true,
+							["barTexture"] = "Grid2 Flat",
+							["frameBorderTexture"] = "Grid2 Flat",
+							["frameWidths"] = {
+								["yUI Arena"] = 100,
+								["yUI Party"] = 90,
+								["Nise Party"] = 90,
+								["yUI Raid"] = 85,
+								["yUI 25+"] = 90,
+								["Holy Party"] = 90,
+								["Nise Arena"] = 80,
+							},
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["r"] = 1,
+							},
+							["font"] = "Roboto-Medium",
+							["frameContentColor"] = {
+								["a"] = 0.700000017881393,
+								["b"] = 0.141176470588235,
+								["g"] = 0.141176470588235,
+								["r"] = 0.141176470588235,
+							},
+							["frameHeights"] = {
+								["Holy Party"] = 58,
+								["Holy Raid10"] = 80,
+								["yUI Party"] = 58,
+								["Holy Raid40"] = 50,
+								["yUI Arena"] = 80,
+								["Nise Arena"] = 60,
+								["yUI Raid"] = 60,
+								["Holy Raid25"] = 73,
+								["Nise Party"] = 58,
+								["Holy Raid20"] = 75,
+								["yUI 25+"] = 65,
+							},
+							["mouseoverHighlight"] = false,
+							["orientation"] = "HORIZONTAL",
+							["frameWidth"] = 120,
+							["frameTexture"] = "Flat",
+						}, -- [2]
+						{
+							["frameColor"] = {
+								["a"] = 0.800000011920929,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["fontSize"] = 11,
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = 1,
+							["frameHeight"] = 70,
+							["fontFlags"] = "OUTLINE",
+							["shadowDisabled"] = true,
+							["barTexture"] = "Grid2 Flat",
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["r"] = 1,
+								["g"] = 1,
+								["b"] = 1,
+							},
+							["frameWidths"] = {
+								["yUI Arena"] = 100,
+								["yUI Party"] = 90,
+								["Holy Party"] = 90,
+								["yUI Raid"] = 85,
+								["yUI 25+"] = 90,
+								["Nise Party"] = 90,
+								["Nise Arena"] = 80,
+							},
+							["frameTexture"] = "Flat",
+							["font"] = "Roboto-Medium",
+							["frameContentColor"] = {
+								["a"] = 0.700000017881393,
+								["r"] = 0.141176470588235,
+								["g"] = 0.141176470588235,
+								["b"] = 0.141176470588235,
+							},
+							["mouseoverHighlight"] = false,
+							["orientation"] = "HORIZONTAL",
+							["frameHeights"] = {
+								["yUI Party"] = 58,
+								["Holy Raid10"] = 80,
+								["yUI 25+"] = 65,
+								["Holy Raid40"] = 50,
+								["yUI Arena"] = 80,
+								["Nise Arena"] = 60,
+								["yUI Raid"] = 60,
+								["Holy Raid20"] = 75,
+								["Nise Party"] = 58,
+								["Holy Raid25"] = 73,
+								["Holy Party"] = 58,
+							},
+							["frameWidth"] = 200,
+							["frameBorderTexture"] = "Grid2 Flat",
+						}, -- [3]
+						{
+							["frameColor"] = {
+								["a"] = 0.800000011920929,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["fontSize"] = 11,
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = 1,
+							["fontFlags"] = "OUTLINE",
+							["frameHeight"] = 54,
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["r"] = 1,
+								["g"] = 1,
+								["b"] = 1,
+							},
+							["shadowDisabled"] = true,
+							["barTexture"] = "Grid2 Flat",
+							["frameBorderTexture"] = "Grid2 Flat",
+							["frameWidths"] = {
+								["yUI Arena"] = 100,
+								["yUI Party"] = 90,
+								["Holy Party"] = 90,
+								["yUI Raid"] = 85,
+								["yUI 25+"] = 90,
+								["Nise Party"] = 90,
+								["Nise Arena"] = 80,
+							},
+							["frameHeights"] = {
+								["yUI Party"] = 58,
+								["Holy Raid10"] = 80,
+								["yUI 25+"] = 65,
+								["Holy Raid40"] = 50,
+								["yUI Arena"] = 80,
+								["Nise Arena"] = 60,
+								["Holy Raid25"] = 73,
+								["yUI Raid"] = 60,
+								["Nise Party"] = 58,
+								["Holy Raid20"] = 75,
+								["Holy Party"] = 58,
+							},
+							["font"] = "Accidental Presidency",
+							["menuDisabled"] = true,
+							["orientation"] = "HORIZONTAL",
+							["frameContentColor"] = {
+								["a"] = 0.700000017881393,
+								["r"] = 0.141176470588235,
+								["g"] = 0.141176470588235,
+								["b"] = 0.141176470588235,
+							},
+							["mouseoverHighlight"] = false,
+							["frameWidth"] = 84,
+							["frameTexture"] = "Flat",
+						}, -- [4]
+					},
+					["frameWidths"] = {
+						["yUI Arena"] = 100,
+						["yUI Party"] = 90,
+						["Holy Party"] = 90,
+						["yUI Raid"] = 85,
+						["yUI 25+"] = 90,
+						["Nise Party"] = 90,
+						["Nise Arena"] = 80,
+					},
+					["frameTexture"] = "Flat",
+					["font"] = "Accidental Presidency",
+					["menuDisabled"] = true,
+					["frameHeights"] = {
+						["Holy Party"] = 58,
+						["Holy Raid10"] = 80,
+						["yUI 25+"] = 65,
+						["Holy Raid40"] = 50,
+						["yUI Arena"] = 80,
+						["Nise Arena"] = 60,
+						["Holy Raid25"] = 73,
+						["Holy Raid20"] = 75,
+						["Nise Party"] = 58,
+						["yUI Raid"] = 60,
+						["yUI Party"] = 58,
+					},
+					["orientation"] = "HORIZONTAL",
+					["frameContentColor"] = {
+						["a"] = 0.700000017881393,
+						["b"] = 0.141176470588235,
+						["g"] = 0.141176470588235,
+						["r"] = 0.141176470588235,
+					},
+					["frameWidth"] = 70,
+					["fontFlags"] = "OUTLINE",
+				},
+				["xVermin"] = {
+					["frameColor"] = {
+						["a"] = 0,
+					},
+					["frameBorder"] = 1,
+					["extraThemes"] = {
+						{
+							["frameColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["fontSize"] = 11,
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = -1,
+							["frameHeight"] = 30,
+							["barTexture"] = "Clean",
+							["frameBorderColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["frameWidths"] = {
+								[5] = 150,
+							},
+							["frameTexture"] = "Clean",
+							["orientation"] = "VERTICAL",
+							["mouseoverHighlight"] = false,
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["r"] = 1,
+								["g"] = 1,
+								["b"] = 1,
+							},
+							["frameContentColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["frameHeights"] = {
+								[5] = 25,
+							},
+							["frameWidth"] = 120,
+							["frameBorderTexture"] = "None",
+						}, -- [1]
+						{
+							["frameColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["fontSize"] = 11,
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = -1,
+							["frameHeight"] = 30,
+							["barTexture"] = "Clean",
+							["frameTexture"] = "Clean",
+							["frameWidths"] = {
+								[10] = 130,
+							},
+							["frameBorderTexture"] = "None",
+							["frameHeights"] = {
+								[10] = 30,
+							},
+							["orientation"] = "VERTICAL",
+							["frameBorderColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["mouseoverHighlight"] = false,
+							["frameContentColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["frameWidth"] = 120,
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["r"] = 1,
+							},
+						}, -- [2]
+					},
+					["frameBorderDistance"] = 0,
+					["frameHeight"] = 30,
+					["frameBorderTexture"] = "None",
+					["barTexture"] = "Flat",
+					["frameWidths"] = {
+						[40] = 80,
+						[25] = 110,
+						[15] = 110,
+					},
+					["frameTexture"] = "Clean",
+					["frameContentColor"] = {
+						["a"] = 0,
+					},
+					["frameHeights"] = {
+						[40] = 30,
+						[25] = 30,
+						[15] = 30,
+					},
+					["frameBorderColor"] = {
+						["r"] = 0.9607843137254902,
+						["g"] = 0.0196078431372549,
+					},
+					["frameWidth"] = 120,
+				},
+				["TEST"] = {
+					["frameColor"] = {
+						["a"] = 0,
+					},
+					["frameBorder"] = 1,
+					["extraThemes"] = {
+						{
+							["frameColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["fontSize"] = 11,
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = -1,
+							["frameHeight"] = 30,
+							["barTexture"] = "Clean",
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["r"] = 1,
+							},
+							["frameWidths"] = {
+								[5] = 150,
+							},
+							["frameBorderColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["frameBorderTexture"] = "None",
+							["frameContentColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["orientation"] = "VERTICAL",
+							["frameHeights"] = {
+								[5] = 25,
+							},
+							["mouseoverHighlight"] = false,
+							["frameWidth"] = 120,
+							["frameTexture"] = "Clean",
+						}, -- [1]
+						{
+							["frameColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["fontSize"] = 11,
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = -1,
+							["frameHeight"] = 30,
+							["barTexture"] = "Clean",
+							["frameBorderColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["frameWidths"] = {
+								[10] = 130,
+							},
+							["frameTexture"] = "Clean",
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["r"] = 1,
+								["g"] = 1,
+								["b"] = 1,
+							},
+							["mouseoverHighlight"] = false,
+							["frameHeights"] = {
+								[10] = 30,
+							},
+							["frameContentColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["orientation"] = "VERTICAL",
+							["frameWidth"] = 120,
+							["frameBorderTexture"] = "None",
+						}, -- [2]
+					},
+					["frameBorderDistance"] = 0,
+					["frameHeight"] = 30,
+					["barTexture"] = "Flat",
+					["frameTexture"] = "Clean",
+					["frameWidths"] = {
+						[40] = 80,
+						[25] = 110,
+						[15] = 110,
+					},
+					["frameBorderColor"] = {
+						["g"] = 0.0196078431372549,
+						["r"] = 0.9607843137254902,
+					},
+					["frameHeights"] = {
+						[40] = 30,
+						[25] = 30,
+						[15] = 30,
+					},
+					["frameBorderTexture"] = "None",
+					["frameWidth"] = 120,
+					["frameContentColor"] = {
+						["a"] = 0,
+					},
+				},
+				["Default"] = {
+					["frameColor"] = {
+						["a"] = 0,
+					},
+					["fontSize"] = 16,
+					["frameBorder"] = 1,
+					["extraThemes"] = {
+						{
+							["frameColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0.1294117647058823,
+								["r"] = 1,
+							},
+							["fontSize"] = 16,
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = 1,
+							["frameHeight"] = 600,
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["r"] = 1,
+							},
+							["barTexture"] = "Clean",
+							["frameBorderColor"] = {
+								["a"] = 0,
+								["b"] = 0.09019607843137255,
+								["g"] = 0,
+								["r"] = 1,
+							},
+							["frameWidths"] = {
+								125, -- [1]
+								[5] = 125,
+							},
+							["frameTexture"] = "Clean",
+							["font"] = "Arial Narrow",
+							["frameContentColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["orientation"] = "VERTICAL",
+							["frameHeights"] = {
+								60, -- [1]
+								[5] = 40,
+							},
+							["mouseoverHighlight"] = false,
+							["frameWidth"] = 125,
+							["frameBorderTexture"] = "None",
+						}, -- [1]
+						{
+							["frameColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["fontSize"] = 16,
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = -1,
+							["frameHeight"] = 40,
+							["frameBorderColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["barTexture"] = "Clean",
+							["frameTexture"] = "Clean",
+							["frameWidths"] = {
+								[10] = 110,
+							},
+							["frameBorderTexture"] = "None",
+							["font"] = "Arial Narrow",
+							["mouseoverHighlight"] = false,
+							["frameHeights"] = {
+								[10] = 60,
+							},
+							["frameContentColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["orientation"] = "VERTICAL",
+							["frameWidth"] = 125,
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["r"] = 1,
+								["g"] = 1,
+								["b"] = 1,
+							},
+						}, -- [2]
+						{
+							["frameColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["fontSize"] = 16,
+							["frameBorder"] = 1,
+							["iconSize"] = 5,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = -2,
+							["frameHeight"] = 50,
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["r"] = 1,
+								["g"] = 1,
+								["b"] = 1,
+							},
+							["barTexture"] = "Clean",
+							["frameBorderColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["frameWidths"] = {
+								[25] = 90,
+								[40] = 80,
+							},
+							["frameTexture"] = "Clean",
+							["font"] = "Arial Narrow",
+							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
+							["frameContentColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["frameHeights"] = {
+								[25] = 60,
+								[40] = 30,
+							},
+							["frameWidth"] = 120,
+							["frameBorderTexture"] = "None",
+						}, -- [3]
+					},
+					["frameBorderDistance"] = -2,
+					["frameHeight"] = 50,
+					["frameBorderTexture"] = "None",
+					["font"] = "Arial Narrow",
+					["frameContentColor"] = {
+						["a"] = 0,
+					},
+					["barTexture"] = "Clean",
+					["frameWidth"] = 120,
+					["frameTexture"] = "Clean",
 				},
 			},
 		},
@@ -20,244 +839,6 @@ Grid2DB = {
 				},
 			},
 			["profiles"] = {
-				["Niseko for President"] = {
-					["BackgroundTexture"] = "None",
-					["BorderB"] = 0.501960784313726,
-					["layoutBySize"] = {
-						[20] = "Nise Raid",
-						[25] = "Nise Flex Raid",
-						[40] = "Nise Flex Raid",
-						[30] = "Nise Flex Raid",
-						[10] = "Nise Raid",
-					},
-					["layouts"] = {
-						["raid@lfr"] = "By Group",
-						["solo"] = "None",
-						["raid@none"] = "By Group",
-						["raid@pvp"] = "By Group",
-						["raid@mythic"] = "By Group",
-						["raid@flex"] = "By Group",
-						["raid@other"] = "By Group",
-					},
-					["BackgroundR"] = 0.101960784313725,
-					["FrameLock"] = true,
-					["BorderA"] = 0,
-					["BorderR"] = 0.501960784313726,
-					["Spacing"] = 0,
-					["anchor"] = "BOTTOMLEFT",
-					["BackgroundG"] = 0.101960784313725,
-					["groupAnchor"] = "BOTTOMRIGHT",
-					["PosY"] = 237.3333945393588,
-					["FrameStrata"] = "BACKGROUND",
-					["layoutScales"] = {
-						["Nise Arena"] = 1.2,
-						["yUI Arena"] = 1.35,
-					},
-					["extraThemes"] = {
-						{
-							["BackgroundTexture"] = "None",
-							["BorderB"] = 0.501960784313726,
-							["layoutBySize"] = {
-								[20] = "Nise Raid",
-								[25] = "Nise Flex Raid",
-								[40] = "Nise Flex Raid",
-								[30] = "Nise Flex Raid",
-								[10] = "Nise Raid",
-							},
-							["layouts"] = {
-								["raid@lfr"] = "By Group",
-								["solo"] = "By Group",
-								["raid@other"] = "By Group",
-								["party"] = "By Group",
-								["raid@pvp"] = "By Group",
-								["raid@none"] = "By Group",
-								["raid@mythic"] = "By Group",
-								["raid"] = "By Group",
-								["raid@flex"] = "By Group",
-								["arena"] = "None",
-							},
-							["BackgroundR"] = 0.101960784313725,
-							["ScaleSize"] = 1.15,
-							["FrameDisplay"] = "Grouped",
-							["BorderA"] = 0,
-							["BorderR"] = 0.501960784313726,
-							["Spacing"] = 0,
-							["layoutScales"] = {
-								["Nise Arena"] = 1.2,
-								["yUI Arena"] = 1.35,
-							},
-							["Positions"] = {
-							},
-							["clamp"] = true,
-							["groupAnchor"] = "BOTTOMRIGHT",
-							["PosY"] = -118.9334046403601,
-							["FrameLock"] = true,
-							["FrameStrata"] = "BACKGROUND",
-							["BackgroundG"] = 0.101960784313725,
-							["horizontal"] = false,
-							["BackgroundA"] = 0,
-							["BorderTexture"] = "Grid2 Flat",
-							["BorderG"] = 0.501960784313726,
-							["BackgroundB"] = 0.101960784313725,
-							["Padding"] = -1,
-							["anchor"] = "TOP",
-							["PosX"] = -240.0002708991503,
-						}, -- [1]
-						{
-							["BackgroundTexture"] = "None",
-							["BorderB"] = 0.501960784313726,
-							["layoutBySize"] = {
-								[20] = "Nise Raid",
-								[25] = "Nise Flex Raid",
-								[40] = "Nise Flex Raid",
-								[30] = "Nise Flex Raid",
-								[10] = "Nise Raid",
-							},
-							["layouts"] = {
-								["raid@lfr"] = "By Group",
-								["solo"] = "None",
-								["raid@other"] = "By Group",
-								["party"] = "By Group",
-								["raid"] = "By Group",
-								["raid@none"] = "By Group",
-								["arena"] = "By Group",
-								["raid@mythic"] = "By Group",
-								["raid@flex"] = "By Group",
-								["raid@pvp"] = "By Group",
-							},
-							["BackgroundR"] = 0.101960784313725,
-							["ScaleSize"] = 1,
-							["FrameDisplay"] = "Always",
-							["BorderA"] = 0,
-							["BorderR"] = 0.501960784313726,
-							["PosX"] = 555.2000289559364,
-							["layoutScales"] = {
-								["Nise Arena"] = 1.2,
-								["yUI Arena"] = 1.35,
-							},
-							["Positions"] = {
-							},
-							["clamp"] = true,
-							["groupAnchor"] = "TOPLEFT",
-							["PosY"] = -543.4668903231723,
-							["Spacing"] = 0,
-							["anchor"] = "TOPLEFT",
-							["Padding"] = -1,
-							["BackgroundA"] = 0,
-							["BorderTexture"] = "Grid2 Flat",
-							["BorderG"] = 0.501960784313726,
-							["BackgroundB"] = 0.101960784313725,
-							["horizontal"] = false,
-							["BackgroundG"] = 0.101960784313725,
-							["FrameLock"] = false,
-						}, -- [2]
-						{
-							["BackgroundTexture"] = "None",
-							["BorderB"] = 0.501960784313726,
-							["layoutBySize"] = {
-								[20] = "Nise Raid",
-								[25] = "Nise Flex Raid",
-								[40] = "Nise Flex Raid",
-								[30] = "Nise Flex Raid",
-								[10] = "Nise Raid",
-							},
-							["layouts"] = {
-								["raid@lfr"] = "By Group",
-								["solo"] = "None",
-								["raid@other"] = "By Group",
-								["party"] = "By Group",
-								["raid@pvp"] = "By Group",
-								["raid@none"] = "By Group",
-								["raid@mythic"] = "By Group",
-								["raid"] = "By Group",
-								["raid@flex"] = "By Group",
-								["arena"] = "By Group",
-							},
-							["BackgroundR"] = 0.101960784313725,
-							["ScaleSize"] = 1,
-							["FrameLock"] = true,
-							["BorderA"] = 0,
-							["BorderR"] = 0.501960784313726,
-							["PosX"] = 579.7333635687828,
-							["layoutScales"] = {
-								["Nise Arena"] = 1.2,
-								["yUI Arena"] = 1.35,
-							},
-							["Positions"] = {
-							},
-							["clamp"] = true,
-							["groupAnchor"] = "TOPLEFT",
-							["PosY"] = -543.4674111565328,
-							["FrameDisplay"] = "Grouped",
-							["FrameStrata"] = "BACKGROUND",
-							["BackgroundG"] = 0.101960784313725,
-							["horizontal"] = false,
-							["BackgroundA"] = 0,
-							["BorderTexture"] = "Grid2 Flat",
-							["BorderG"] = 0.501960784313726,
-							["BackgroundB"] = 0.101960784313725,
-							["Padding"] = -1,
-							["anchor"] = "TOPLEFT",
-							["Spacing"] = 0,
-						}, -- [3]
-						{
-							["BackgroundTexture"] = "None",
-							["BorderB"] = 0.501960784313726,
-							["layoutBySize"] = {
-								[20] = "Nise Raid",
-								[25] = "Nise Flex Raid",
-								[40] = "Nise Flex Raid",
-								[30] = "Nise Flex Raid",
-								[10] = "Nise Raid",
-							},
-							["layouts"] = {
-								["raid@lfr"] = "By Group",
-								["solo"] = "None",
-								["raid@other"] = "By Group",
-								["party"] = "By Group",
-								["raid@pvp"] = "By Group",
-								["raid@none"] = "By Group",
-								["raid@mythic"] = "By Group",
-								["raid"] = "By Group",
-								["raid@flex"] = "By Group",
-								["arena"] = "By Group",
-							},
-							["BackgroundR"] = 0.101960784313725,
-							["ScaleSize"] = 1,
-							["FrameLock"] = true,
-							["BorderA"] = 0,
-							["BorderR"] = 0.501960784313726,
-							["PosX"] = 555.2000289559364,
-							["layoutScales"] = {
-								["Nise Arena"] = 1.2,
-								["yUI Arena"] = 1.35,
-							},
-							["clamp"] = true,
-							["groupAnchor"] = "TOPLEFT",
-							["PosY"] = -549.3333131551717,
-							["FrameDisplay"] = "Always",
-							["FrameStrata"] = "HIGH",
-							["BackgroundG"] = 0.101960784313725,
-							["horizontal"] = false,
-							["BackgroundA"] = 0,
-							["BackgroundB"] = 0.101960784313725,
-							["BorderG"] = 0.501960784313726,
-							["BorderTexture"] = "Grid2 Flat",
-							["Padding"] = -1,
-							["anchor"] = "TOPLEFT",
-							["Spacing"] = 0,
-						}, -- [4]
-					},
-					["BackgroundA"] = 0,
-					["BorderTexture"] = "Grid2 Flat",
-					["BorderG"] = 0.501960784313726,
-					["BackgroundB"] = 0.101960784313725,
-					["Padding"] = -1,
-					["PosX"] = 7.466666547457351,
-					["minimapIcon"] = {
-						["hide"] = true,
-					},
-				},
 				["Paladin"] = {
 					["BackgroundG"] = 0.101960784313725,
 					["BackgroundTexture"] = "None",
@@ -266,13 +847,13 @@ Grid2DB = {
 						["hide"] = true,
 					},
 					["layouts"] = {
-						["raid"] = "By Group & Class",
-						["party"] = "By Group & Class",
-						["solo"] = "By Group & Class",
 						["arena"] = "By Group & Class",
+						["raid"] = "By Group & Class",
+						["solo"] = "By Group & Class",
+						["party"] = "By Group & Class",
 					},
 					["PosY"] = 79.999838360142,
-					["BackgroundB"] = 0.101960784313725,
+					["BackgroundR"] = 0.101960784313725,
 					["extraThemes"] = {
 						{
 							["BackgroundTexture"] = "None",
@@ -387,30 +968,447 @@ Grid2DB = {
 					["Spacing"] = 1,
 					["BackgroundA"] = 0,
 					["BorderR"] = 0.501960784313726,
-					["BorderG"] = 0.501960784313726,
-					["anchor"] = "CENTER",
 					["BorderTexture"] = "None",
+					["anchor"] = "CENTER",
 					["PosX"] = -253.333301786579,
+					["BorderG"] = 0.501960784313726,
+					["BackgroundB"] = 0.101960784313725,
+				},
+				["Niseko for President"] = {
+					["BackgroundTexture"] = "None",
+					["BorderB"] = 0.501960784313726,
+					["layoutBySize"] = {
+						[20] = "Nise Raid",
+						[25] = "Nise Flex Raid",
+						[40] = "Nise Flex Raid",
+						[30] = "Nise Flex Raid",
+						[10] = "Nise Raid",
+					},
+					["layouts"] = {
+						["raid@lfr"] = "By Group",
+						["solo"] = "None",
+						["raid@none"] = "By Group",
+						["raid@pvp"] = "By Group",
+						["raid@mythic"] = "By Group",
+						["raid@flex"] = "By Group",
+						["raid@other"] = "By Group",
+					},
 					["BackgroundR"] = 0.101960784313725,
+					["FrameLock"] = true,
+					["BorderA"] = 0,
+					["BorderR"] = 0.501960784313726,
+					["Spacing"] = 0,
+					["anchor"] = "BOTTOMLEFT",
+					["BackgroundG"] = 0.101960784313725,
+					["groupAnchor"] = "BOTTOMRIGHT",
+					["PosY"] = 237.3333945393588,
+					["FrameStrata"] = "BACKGROUND",
+					["layoutScales"] = {
+						["Nise Arena"] = 1.2,
+						["yUI Arena"] = 1.35,
+					},
+					["extraThemes"] = {
+						{
+							["BackgroundTexture"] = "None",
+							["BorderB"] = 0.501960784313726,
+							["layoutBySize"] = {
+								[20] = "Nise Raid",
+								[25] = "Nise Flex Raid",
+								[40] = "Nise Flex Raid",
+								[30] = "Nise Flex Raid",
+								[10] = "Nise Raid",
+							},
+							["layouts"] = {
+								["raid@lfr"] = "By Group",
+								["solo"] = "By Group",
+								["raid@other"] = "By Group",
+								["party"] = "By Group",
+								["raid@pvp"] = "By Group",
+								["raid@none"] = "By Group",
+								["raid@mythic"] = "By Group",
+								["arena"] = "None",
+								["raid@flex"] = "By Group",
+								["raid"] = "By Group",
+							},
+							["BackgroundR"] = 0.101960784313725,
+							["ScaleSize"] = 1.15,
+							["FrameDisplay"] = "Grouped",
+							["BorderA"] = 0,
+							["BorderR"] = 0.501960784313726,
+							["Spacing"] = 0,
+							["layoutScales"] = {
+								["Nise Arena"] = 1.2,
+								["yUI Arena"] = 1.35,
+							},
+							["Positions"] = {
+							},
+							["clamp"] = true,
+							["groupAnchor"] = "BOTTOMRIGHT",
+							["PosY"] = -118.9334046403601,
+							["FrameLock"] = true,
+							["FrameStrata"] = "BACKGROUND",
+							["BackgroundG"] = 0.101960784313725,
+							["horizontal"] = false,
+							["BackgroundA"] = 0,
+							["BorderTexture"] = "Grid2 Flat",
+							["BorderG"] = 0.501960784313726,
+							["BackgroundB"] = 0.101960784313725,
+							["Padding"] = -1,
+							["anchor"] = "TOP",
+							["PosX"] = -240.0002708991503,
+						}, -- [1]
+						{
+							["BackgroundTexture"] = "None",
+							["BorderB"] = 0.501960784313726,
+							["layoutBySize"] = {
+								[20] = "Nise Raid",
+								[25] = "Nise Flex Raid",
+								[40] = "Nise Flex Raid",
+								[30] = "Nise Flex Raid",
+								[10] = "Nise Raid",
+							},
+							["layouts"] = {
+								["raid@lfr"] = "By Group",
+								["solo"] = "None",
+								["raid@other"] = "By Group",
+								["party"] = "By Group",
+								["arena"] = "By Group",
+								["raid@none"] = "By Group",
+								["raid"] = "By Group",
+								["raid@mythic"] = "By Group",
+								["raid@flex"] = "By Group",
+								["raid@pvp"] = "By Group",
+							},
+							["BackgroundR"] = 0.101960784313725,
+							["ScaleSize"] = 1,
+							["FrameDisplay"] = "Always",
+							["BorderA"] = 0,
+							["BorderR"] = 0.501960784313726,
+							["PosX"] = 555.2000289559364,
+							["layoutScales"] = {
+								["Nise Arena"] = 1.2,
+								["yUI Arena"] = 1.35,
+							},
+							["Positions"] = {
+							},
+							["clamp"] = true,
+							["groupAnchor"] = "TOPLEFT",
+							["PosY"] = -543.4668903231723,
+							["Spacing"] = 0,
+							["anchor"] = "TOPLEFT",
+							["Padding"] = -1,
+							["BackgroundA"] = 0,
+							["BorderTexture"] = "Grid2 Flat",
+							["BorderG"] = 0.501960784313726,
+							["BackgroundB"] = 0.101960784313725,
+							["horizontal"] = false,
+							["BackgroundG"] = 0.101960784313725,
+							["FrameLock"] = false,
+						}, -- [2]
+						{
+							["BackgroundTexture"] = "None",
+							["BorderB"] = 0.501960784313726,
+							["layoutBySize"] = {
+								[20] = "Nise Raid",
+								[25] = "Nise Flex Raid",
+								[40] = "Nise Flex Raid",
+								[30] = "Nise Flex Raid",
+								[10] = "Nise Raid",
+							},
+							["layouts"] = {
+								["raid@lfr"] = "By Group",
+								["solo"] = "None",
+								["raid@other"] = "By Group",
+								["party"] = "By Group",
+								["raid@pvp"] = "By Group",
+								["raid@none"] = "By Group",
+								["raid@mythic"] = "By Group",
+								["arena"] = "By Group",
+								["raid@flex"] = "By Group",
+								["raid"] = "By Group",
+							},
+							["BackgroundR"] = 0.101960784313725,
+							["ScaleSize"] = 1,
+							["FrameLock"] = true,
+							["BorderA"] = 0,
+							["BorderR"] = 0.501960784313726,
+							["PosX"] = 579.7333635687828,
+							["layoutScales"] = {
+								["Nise Arena"] = 1.2,
+								["yUI Arena"] = 1.35,
+							},
+							["Positions"] = {
+							},
+							["clamp"] = true,
+							["groupAnchor"] = "TOPLEFT",
+							["PosY"] = -543.4674111565328,
+							["FrameDisplay"] = "Grouped",
+							["FrameStrata"] = "BACKGROUND",
+							["BackgroundG"] = 0.101960784313725,
+							["horizontal"] = false,
+							["BackgroundA"] = 0,
+							["BorderTexture"] = "Grid2 Flat",
+							["BorderG"] = 0.501960784313726,
+							["BackgroundB"] = 0.101960784313725,
+							["Padding"] = -1,
+							["anchor"] = "TOPLEFT",
+							["Spacing"] = 0,
+						}, -- [3]
+						{
+							["BackgroundTexture"] = "None",
+							["BorderB"] = 0.501960784313726,
+							["layoutBySize"] = {
+								[20] = "Nise Raid",
+								[25] = "Nise Flex Raid",
+								[40] = "Nise Flex Raid",
+								[30] = "Nise Flex Raid",
+								[10] = "Nise Raid",
+							},
+							["layouts"] = {
+								["raid@lfr"] = "By Group",
+								["solo"] = "None",
+								["raid@other"] = "By Group",
+								["party"] = "By Group",
+								["raid@pvp"] = "By Group",
+								["raid@none"] = "By Group",
+								["raid@mythic"] = "By Group",
+								["arena"] = "By Group",
+								["raid@flex"] = "By Group",
+								["raid"] = "By Group",
+							},
+							["BackgroundR"] = 0.101960784313725,
+							["ScaleSize"] = 1,
+							["FrameLock"] = true,
+							["BorderA"] = 0,
+							["BorderR"] = 0.501960784313726,
+							["PosX"] = 555.2000289559364,
+							["layoutScales"] = {
+								["Nise Arena"] = 1.2,
+								["yUI Arena"] = 1.35,
+							},
+							["clamp"] = true,
+							["groupAnchor"] = "TOPLEFT",
+							["PosY"] = -549.3333131551717,
+							["FrameDisplay"] = "Always",
+							["FrameStrata"] = "HIGH",
+							["BackgroundG"] = 0.101960784313725,
+							["horizontal"] = false,
+							["BackgroundA"] = 0,
+							["BackgroundB"] = 0.101960784313725,
+							["BorderG"] = 0.501960784313726,
+							["BorderTexture"] = "Grid2 Flat",
+							["Padding"] = -1,
+							["anchor"] = "TOPLEFT",
+							["Spacing"] = 0,
+						}, -- [4]
+					},
+					["BackgroundA"] = 0,
+					["BorderTexture"] = "Grid2 Flat",
+					["BorderG"] = 0.501960784313726,
+					["BackgroundB"] = 0.101960784313725,
+					["Padding"] = -1,
+					["PosX"] = 7.466666547457351,
+					["minimapIcon"] = {
+						["hide"] = true,
+					},
+				},
+				["xVermin"] = {
+					["BackgroundTexture"] = "None",
+					["BorderB"] = 0,
+					["BackgroundR"] = 0.1019607843137255,
+					["FrameDisplay"] = "Raid",
+					["BorderA"] = 0,
+					["BorderR"] = 0,
+					["Spacing"] = 2,
+					["anchor"] = "LEFT",
+					["PosY"] = 1.106262175198935e-05,
+					["extraThemes"] = {
+						{
+							["BackgroundTexture"] = "None",
+							["BorderB"] = 0,
+							["layouts"] = {
+								["party"] = "By Group",
+								["solo"] = "By Group",
+								["raid"] = "By Group",
+								[5] = "By Group & Class",
+								["arena"] = "By Group",
+							},
+							["BackgroundR"] = 0.1019607843137255,
+							["ScaleSize"] = 1,
+							["FrameDisplay"] = "Grouped",
+							["BorderA"] = 0,
+							["BorderR"] = 0,
+							["Spacing"] = 0,
+							["anchor"] = "CENTER",
+							["Positions"] = {
+							},
+							["BackgroundG"] = 0.1019607843137255,
+							["groupAnchor"] = "TOPRIGHT",
+							["PosY"] = 17.77782343254103,
+							["FrameLock"] = false,
+							["BackgroundB"] = 0.1019607843137255,
+							["BackgroundA"] = 0,
+							["Padding"] = 15,
+							["BorderG"] = 0,
+							["BorderTexture"] = "None",
+							["horizontal"] = false,
+							["clamp"] = true,
+							["PosX"] = -266.6666744556642,
+						}, -- [1]
+						{
+							["BackgroundTexture"] = "None",
+							["BorderB"] = 0,
+							["layouts"] = {
+								["party"] = "By Group",
+								["solo"] = "By Group",
+								[10] = "By Group",
+								["raid"] = "By Group",
+								["arena"] = "By Group",
+							},
+							["BackgroundR"] = 0.1019607843137255,
+							["ScaleSize"] = 1,
+							["FrameDisplay"] = "Raid",
+							["BorderA"] = 0,
+							["BorderR"] = 0,
+							["Spacing"] = 0,
+							["anchor"] = "CENTER",
+							["Positions"] = {
+							},
+							["clamp"] = true,
+							["groupAnchor"] = "TOPRIGHT",
+							["PosY"] = 17.77782785758973,
+							["PosX"] = -291.5556086760171,
+							["BackgroundG"] = 0.1019607843137255,
+							["BackgroundA"] = 0,
+							["horizontal"] = false,
+							["BorderG"] = 0,
+							["BorderTexture"] = "None",
+							["Padding"] = 15,
+							["BackgroundB"] = 0.1019607843137255,
+							["FrameLock"] = false,
+						}, -- [2]
+					},
+					["Padding"] = 2,
+					["BackgroundB"] = 0.1019607843137255,
+					["BackgroundA"] = 0,
+					["BorderTexture"] = "None",
+					["BorderG"] = 0,
+					["BackgroundG"] = 0.1019607843137255,
+					["horizontal"] = false,
+					["PosX"] = 0,
+					["minimapIcon"] = {
+						["hide"] = true,
+					},
+				},
+				["TEST"] = {
+					["BackgroundTexture"] = "None",
+					["BorderB"] = 0,
+					["extraThemes"] = {
+						{
+							["BackgroundTexture"] = "None",
+							["BorderB"] = 0,
+							["layouts"] = {
+								["party"] = "By Group",
+								["solo"] = "By Group",
+								["raid"] = "By Group",
+								[5] = "By Group & Class",
+								["arena"] = "By Group",
+							},
+							["BackgroundR"] = 0.1019607843137255,
+							["ScaleSize"] = 1,
+							["FrameDisplay"] = "Grouped",
+							["BorderA"] = 0,
+							["BorderR"] = 0,
+							["Spacing"] = 0,
+							["anchor"] = "CENTER",
+							["Positions"] = {
+							},
+							["clamp"] = true,
+							["groupAnchor"] = "TOPRIGHT",
+							["PosY"] = 17.77782343254103,
+							["PosX"] = -266.6666744556642,
+							["BackgroundG"] = 0.1019607843137255,
+							["BackgroundA"] = 0,
+							["horizontal"] = false,
+							["BorderG"] = 0,
+							["BorderTexture"] = "None",
+							["Padding"] = 15,
+							["BackgroundB"] = 0.1019607843137255,
+							["FrameLock"] = false,
+						}, -- [1]
+						{
+							["BackgroundTexture"] = "None",
+							["BorderB"] = 0,
+							["layouts"] = {
+								["party"] = "By Group",
+								["solo"] = "By Group",
+								[10] = "By Group",
+								["raid"] = "By Group",
+								["arena"] = "By Group",
+							},
+							["BackgroundR"] = 0.1019607843137255,
+							["ScaleSize"] = 1,
+							["FrameDisplay"] = "Raid",
+							["BorderA"] = 0,
+							["BorderR"] = 0,
+							["Spacing"] = 0,
+							["anchor"] = "CENTER",
+							["Positions"] = {
+							},
+							["clamp"] = true,
+							["groupAnchor"] = "TOPRIGHT",
+							["PosY"] = 17.77782785758973,
+							["FrameLock"] = false,
+							["BackgroundB"] = 0.1019607843137255,
+							["BackgroundA"] = 0,
+							["Padding"] = 15,
+							["BorderG"] = 0,
+							["BorderTexture"] = "None",
+							["horizontal"] = false,
+							["BackgroundG"] = 0.1019607843137255,
+							["PosX"] = -291.5556086760171,
+						}, -- [2]
+					},
+					["FrameDisplay"] = "Raid",
+					["BorderA"] = 0,
+					["BorderR"] = 0,
+					["BorderTexture"] = "None",
+					["anchor"] = "LEFT",
+					["BackgroundG"] = 0.1019607843137255,
+					["minimapIcon"] = {
+						["hide"] = true,
+					},
+					["PosY"] = 1.106262175198935e-05,
+					["BackgroundB"] = 0.1019607843137255,
+					["BackgroundA"] = 0,
+					["PosX"] = 0,
+					["BorderG"] = 0,
+					["horizontal"] = false,
+					["Padding"] = 2,
+					["Spacing"] = 2,
+					["BackgroundR"] = 0.1019607843137255,
 				},
 				["Default"] = {
 					["BackgroundTexture"] = "None",
 					["BorderB"] = 0.501960784313726,
 					["layouts"] = {
-						["party"] = "By Group & Class",
-						["raid"] = "By Group & Class",
-						["solo"] = "By Group & Class",
 						["arena"] = "By Group & Class",
+						["party"] = "By Group & Class",
+						["solo"] = "By Group & Class",
+						["raid"] = "By Group & Class",
 					},
 					["BackgroundR"] = 0.101960784313725,
 					["BorderR"] = 0.501960784313726,
-					["Spacing"] = 1,
+					["PosX"] = 0,
 					["anchor"] = "LEFT",
 					["BackgroundG"] = 0.101960784313725,
 					["minimapIcon"] = {
 						["hide"] = true,
 					},
 					["PosY"] = -2.655029220477445e-05,
+					["BorderTexture"] = "None",
+					["BackgroundA"] = 0,
+					["BorderG"] = 0.501960784313726,
 					["extraThemes"] = {
 						{
 							["BackgroundTexture"] = "None",
@@ -541,103 +1539,12 @@ Grid2DB = {
 							["Spacing"] = 1,
 						}, -- [3]
 					},
-					["BackgroundA"] = 0,
-					["BorderG"] = 0.501960784313726,
-					["PosX"] = 0,
 					["BackgroundB"] = 0.101960784313725,
-					["BorderTexture"] = "None",
-				},
-				["TEST"] = {
-					["BackgroundTexture"] = "None",
-					["BorderB"] = 0,
-					["BackgroundR"] = 0.1019607843137255,
-					["FrameDisplay"] = "Raid",
-					["BorderA"] = 0,
-					["BorderR"] = 0,
-					["Spacing"] = 2,
-					["anchor"] = "LEFT",
-					["BackgroundG"] = 0.1019607843137255,
-					["minimapIcon"] = {
-						["hide"] = true,
-					},
-					["PosY"] = 1.106262175198935e-05,
-					["extraThemes"] = {
-						{
-							["BackgroundTexture"] = "None",
-							["BorderB"] = 0,
-							["layouts"] = {
-								["party"] = "By Group",
-								["solo"] = "By Group",
-								["raid"] = "By Group",
-								[5] = "By Group & Class",
-								["arena"] = "By Group",
-							},
-							["BackgroundR"] = 0.1019607843137255,
-							["ScaleSize"] = 1,
-							["FrameDisplay"] = "Grouped",
-							["BorderA"] = 0,
-							["BorderR"] = 0,
-							["Spacing"] = 2,
-							["anchor"] = "CENTER",
-							["Positions"] = {
-							},
-							["clamp"] = true,
-							["groupAnchor"] = "TOPRIGHT",
-							["PosY"] = 17.77782343254103,
-							["PosX"] = -266.6666744556642,
-							["BackgroundG"] = 0.1019607843137255,
-							["BackgroundA"] = 0,
-							["horizontal"] = false,
-							["BorderG"] = 0,
-							["BorderTexture"] = "None",
-							["Padding"] = 5,
-							["BackgroundB"] = 0.1019607843137255,
-							["FrameLock"] = false,
-						}, -- [1]
-						{
-							["BackgroundTexture"] = "None",
-							["BorderB"] = 0,
-							["layouts"] = {
-								["party"] = "By Group",
-								["solo"] = "By Group",
-								[10] = "By Group",
-								["raid"] = "By Group",
-								["arena"] = "By Group",
-							},
-							["BackgroundR"] = 0.1019607843137255,
-							["ScaleSize"] = 1,
-							["FrameDisplay"] = "Raid",
-							["BorderA"] = 0,
-							["BorderR"] = 0,
-							["Spacing"] = 2,
-							["anchor"] = "CENTER",
-							["Positions"] = {
-							},
-							["clamp"] = true,
-							["groupAnchor"] = "TOPRIGHT",
-							["PosY"] = 17.77785883293063,
-							["FrameLock"] = false,
-							["BackgroundB"] = 0.1019607843137255,
-							["BackgroundA"] = 0,
-							["Padding"] = 5,
-							["BorderG"] = 0,
-							["BorderTexture"] = "None",
-							["horizontal"] = false,
-							["BackgroundG"] = 0.1019607843137255,
-							["PosX"] = -284.4444669128643,
-						}, -- [2]
-					},
-					["BackgroundA"] = 0,
-					["BackgroundB"] = 0.1019607843137255,
-					["BorderG"] = 0,
-					["Padding"] = 2,
-					["horizontal"] = false,
-					["BorderTexture"] = "None",
-					["PosX"] = 0,
+					["Spacing"] = 1,
 				},
 			},
 		},
-		["Grid2AoeHeals"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["Grid2Options"] = {
 			["profiles"] = {
@@ -669,710 +1576,19 @@ Grid2DB = {
 				},
 			},
 		},
-		["Grid2Frame"] = {
+		["Grid2RaidDebuffs"] = {
 			["profiles"] = {
 				["Niseko for President"] = {
-					["frameColor"] = {
-						["a"] = 0.800000011920929,
+					["lastSelectedModule"] = "Battle for Azeroth",
+					["defaultEJ_difficulty"] = 16,
+					["enabledModules"] = {
+						["Battle for Azeroth"] = true,
 					},
-					["frameHeight"] = 50,
-					["shadowDisabled"] = true,
-					["frameBorder"] = 1,
-					["barTexture"] = "Grid2 Flat",
-					["extraThemes"] = {
-						{
-							["frameColor"] = {
-								["a"] = 0.800000011920929,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["fontSize"] = 11,
-							["frameBorder"] = 1,
-							["iconSize"] = 14,
-							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
-							["frameBorderDistance"] = 1,
-							["fontFlags"] = "OUTLINE",
-							["frameHeight"] = 70,
-							["frameBorderTexture"] = "Grid2 Flat",
-							["shadowDisabled"] = true,
-							["barTexture"] = "Grid2 Flat",
-							["mouseoverColor"] = {
-								["a"] = 1,
-								["r"] = 1,
-								["g"] = 1,
-								["b"] = 1,
-							},
-							["frameWidths"] = {
-								["yUI Arena"] = 100,
-								["yUI Party"] = 90,
-								["Holy Party"] = 90,
-								["yUI Raid"] = 85,
-								["yUI 25+"] = 90,
-								["Nise Party"] = 90,
-								["Nise Arena"] = 80,
-							},
-							["frameHeights"] = {
-								["Holy Party"] = 58,
-								["Holy Raid10"] = 80,
-								["yUI 25+"] = 65,
-								["Holy Raid40"] = 50,
-								["yUI Arena"] = 80,
-								["Nise Arena"] = 60,
-								["Holy Raid20"] = 75,
-								["yUI Raid"] = 60,
-								["Nise Party"] = 58,
-								["Holy Raid25"] = 73,
-								["yUI Party"] = 58,
-							},
-							["font"] = "Accidental Presidency",
-							["menuDisabled"] = true,
-							["mouseoverHighlight"] = false,
-							["frameContentColor"] = {
-								["a"] = 0.700000017881393,
-								["r"] = 0.141176470588235,
-								["g"] = 0.141176470588235,
-								["b"] = 0.141176470588235,
-							},
-							["orientation"] = "HORIZONTAL",
-							["frameWidth"] = 100,
-							["frameTexture"] = "Flat",
-						}, -- [1]
-						{
-							["frameColor"] = {
-								["a"] = 0.800000011920929,
-								["b"] = 0,
-								["g"] = 0,
-								["r"] = 0,
-							},
-							["fontSize"] = 10,
-							["frameBorder"] = 1,
-							["iconSize"] = 14,
-							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
-							["frameBorderDistance"] = 1,
-							["frameHeight"] = 54,
-							["fontFlags"] = "OUTLINE",
-							["shadowDisabled"] = true,
-							["barTexture"] = "Grid2 Flat",
-							["frameTexture"] = "Flat",
-							["frameWidths"] = {
-								["yUI Arena"] = 100,
-								["yUI Party"] = 90,
-								["yUI 25+"] = 90,
-								["yUI Raid"] = 85,
-								["Nise Party"] = 90,
-								["Holy Party"] = 90,
-								["Nise Arena"] = 80,
-							},
-							["mouseoverColor"] = {
-								["a"] = 1,
-								["b"] = 1,
-								["g"] = 1,
-								["r"] = 1,
-							},
-							["font"] = "Roboto-Medium",
-							["frameHeights"] = {
-								["Holy Party"] = 58,
-								["Holy Raid10"] = 80,
-								["yUI Party"] = 58,
-								["Holy Raid40"] = 50,
-								["yUI Arena"] = 80,
-								["Nise Arena"] = 60,
-								["Holy Raid25"] = 73,
-								["Holy Raid20"] = 75,
-								["Nise Party"] = 58,
-								["yUI Raid"] = 60,
-								["yUI 25+"] = 65,
-							},
-							["frameContentColor"] = {
-								["a"] = 0.700000017881393,
-								["b"] = 0.141176470588235,
-								["g"] = 0.141176470588235,
-								["r"] = 0.141176470588235,
-							},
-							["orientation"] = "HORIZONTAL",
-							["mouseoverHighlight"] = false,
-							["frameWidth"] = 120,
-							["frameBorderTexture"] = "Grid2 Flat",
-						}, -- [2]
-						{
-							["frameColor"] = {
-								["a"] = 0.800000011920929,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["fontSize"] = 11,
-							["frameBorder"] = 1,
-							["iconSize"] = 14,
-							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
-							["frameBorderDistance"] = 1,
-							["frameHeight"] = 70,
-							["fontFlags"] = "OUTLINE",
-							["shadowDisabled"] = true,
-							["barTexture"] = "Grid2 Flat",
-							["frameBorderTexture"] = "Grid2 Flat",
-							["frameWidths"] = {
-								["yUI Arena"] = 100,
-								["yUI Party"] = 90,
-								["Holy Party"] = 90,
-								["yUI Raid"] = 85,
-								["yUI 25+"] = 90,
-								["Nise Party"] = 90,
-								["Nise Arena"] = 80,
-							},
-							["frameTexture"] = "Flat",
-							["font"] = "Roboto-Medium",
-							["mouseoverHighlight"] = false,
-							["frameContentColor"] = {
-								["a"] = 0.700000017881393,
-								["r"] = 0.141176470588235,
-								["g"] = 0.141176470588235,
-								["b"] = 0.141176470588235,
-							},
-							["frameHeights"] = {
-								["yUI Party"] = 58,
-								["Holy Raid10"] = 80,
-								["yUI 25+"] = 65,
-								["Holy Raid40"] = 50,
-								["yUI Arena"] = 80,
-								["Nise Arena"] = 60,
-								["Holy Raid20"] = 75,
-								["Holy Raid25"] = 73,
-								["Nise Party"] = 58,
-								["yUI Raid"] = 60,
-								["Holy Party"] = 58,
-							},
-							["orientation"] = "HORIZONTAL",
-							["frameWidth"] = 200,
-							["mouseoverColor"] = {
-								["a"] = 1,
-								["r"] = 1,
-								["g"] = 1,
-								["b"] = 1,
-							},
-						}, -- [3]
-						{
-							["frameColor"] = {
-								["a"] = 0.800000011920929,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["fontSize"] = 11,
-							["frameBorder"] = 1,
-							["iconSize"] = 14,
-							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
-							["frameBorderDistance"] = 1,
-							["fontFlags"] = "OUTLINE",
-							["frameHeight"] = 54,
-							["mouseoverColor"] = {
-								["a"] = 1,
-								["r"] = 1,
-								["g"] = 1,
-								["b"] = 1,
-							},
-							["shadowDisabled"] = true,
-							["barTexture"] = "Grid2 Flat",
-							["frameTexture"] = "Flat",
-							["frameWidths"] = {
-								["yUI Arena"] = 100,
-								["yUI Party"] = 90,
-								["Holy Party"] = 90,
-								["yUI Raid"] = 85,
-								["yUI 25+"] = 90,
-								["Nise Party"] = 90,
-								["Nise Arena"] = 80,
-							},
-							["orientation"] = "HORIZONTAL",
-							["font"] = "Accidental Presidency",
-							["menuDisabled"] = true,
-							["frameHeights"] = {
-								["yUI Party"] = 58,
-								["Holy Raid10"] = 80,
-								["yUI 25+"] = 65,
-								["Holy Raid40"] = 50,
-								["yUI Arena"] = 80,
-								["Nise Arena"] = 60,
-								["yUI Raid"] = 60,
-								["Holy Raid20"] = 75,
-								["Nise Party"] = 58,
-								["Holy Raid25"] = 73,
-								["Holy Party"] = 58,
-							},
-							["mouseoverHighlight"] = false,
-							["frameContentColor"] = {
-								["a"] = 0.700000017881393,
-								["r"] = 0.141176470588235,
-								["g"] = 0.141176470588235,
-								["b"] = 0.141176470588235,
-							},
-							["frameWidth"] = 84,
-							["frameBorderTexture"] = "Grid2 Flat",
-						}, -- [4]
-					},
-					["frameWidths"] = {
-						["yUI Arena"] = 100,
-						["yUI Party"] = 90,
-						["Holy Party"] = 90,
-						["yUI Raid"] = 85,
-						["yUI 25+"] = 90,
-						["Nise Party"] = 90,
-						["Nise Arena"] = 80,
-					},
-					["frameTexture"] = "Flat",
-					["font"] = "Accidental Presidency",
-					["menuDisabled"] = true,
-					["orientation"] = "HORIZONTAL",
-					["frameContentColor"] = {
-						["a"] = 0.700000017881393,
-						["b"] = 0.141176470588235,
-						["g"] = 0.141176470588235,
-						["r"] = 0.141176470588235,
-					},
-					["frameHeights"] = {
-						["Holy Party"] = 58,
-						["Holy Raid10"] = 80,
-						["yUI 25+"] = 65,
-						["Holy Raid40"] = 50,
-						["yUI Arena"] = 80,
-						["Nise Arena"] = 60,
-						["Holy Raid20"] = 75,
-						["yUI Raid"] = 60,
-						["Nise Party"] = 58,
-						["Holy Raid25"] = 73,
-						["yUI Party"] = 58,
-					},
-					["frameWidth"] = 70,
-					["fontFlags"] = "OUTLINE",
-				},
-				["Paladin"] = {
-					["frameColor"] = {
-						["a"] = 0,
-					},
-					["fontSize"] = 12,
-					["frameHeight"] = 50,
-					["frameBorder"] = 1,
-					["barTexture"] = "Clean",
-					["extraThemes"] = {
-						{
-							["frameColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["fontSize"] = 12,
-							["frameBorder"] = 1,
-							["iconSize"] = 14,
-							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
-							["frameBorderDistance"] = -1,
-							["frameHeight"] = 50,
-							["barTexture"] = "Clean",
-							["frameTexture"] = "Clean",
-							["frameWidths"] = {
-								[10] = 125,
-								[5] = 125,
-							},
-							["frameBorderTexture"] = "None",
-							["mouseoverColor"] = {
-								["a"] = 1,
-								["r"] = 1,
-								["g"] = 1,
-								["b"] = 1,
-							},
-							["orientation"] = "VERTICAL",
-							["mouseoverHighlight"] = false,
-							["frameHeights"] = {
-								[10] = 40,
-								[5] = 50,
-							},
-							["frameContentColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["frameWidth"] = 125,
-							["frameBorderColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-						}, -- [1]
-						{
-							["frameColor"] = {
-								["a"] = 0,
-								["b"] = 0,
-								["g"] = 0,
-								["r"] = 0,
-							},
-							["fontSize"] = 12,
-							["frameBorder"] = 1,
-							["iconSize"] = 14,
-							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
-							["frameBorderDistance"] = -1,
-							["frameHeight"] = 40,
-							["barTexture"] = "Clean",
-							["frameBorderTexture"] = "None",
-							["frameWidths"] = {
-								[5] = 125,
-								[10] = 125,
-							},
-							["mouseoverColor"] = {
-								["a"] = 1,
-								["b"] = 1,
-								["g"] = 1,
-								["r"] = 1,
-							},
-							["frameBorderColor"] = {
-								["a"] = 0,
-								["b"] = 0,
-								["g"] = 0,
-								["r"] = 0,
-							},
-							["frameHeights"] = {
-								[5] = 45,
-								[10] = 50,
-							},
-							["orientation"] = "VERTICAL",
-							["frameContentColor"] = {
-								["a"] = 0,
-								["b"] = 0,
-								["g"] = 0,
-								["r"] = 0,
-							},
-							["mouseoverHighlight"] = false,
-							["frameWidth"] = 125,
-							["frameTexture"] = "Clean",
-						}, -- [2]
-						{
-							["frameColor"] = {
-								["a"] = 0,
-								["b"] = 0,
-								["g"] = 0,
-								["r"] = 0,
-							},
-							["fontSize"] = 12,
-							["frameBorder"] = 1,
-							["iconSize"] = 14,
-							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
-							["frameBorderDistance"] = -2,
-							["frameHeight"] = 50,
-							["barTexture"] = "Clean",
-							["frameTexture"] = "Clean",
-							["frameWidths"] = {
-								[25] = 100,
-								[40] = 100,
-							},
-							["frameBorderTexture"] = "None",
-							["mouseoverColor"] = {
-								["a"] = 1,
-								["b"] = 1,
-								["g"] = 1,
-								["r"] = 1,
-							},
-							["orientation"] = "VERTICAL",
-							["frameHeights"] = {
-								[25] = 20,
-								[40] = 20,
-							},
-							["frameContentColor"] = {
-								["a"] = 0,
-								["b"] = 0,
-								["g"] = 0,
-								["r"] = 0,
-							},
-							["mouseoverHighlight"] = false,
-							["frameWidth"] = 120,
-							["frameBorderColor"] = {
-								["a"] = 0,
-								["b"] = 0,
-								["g"] = 0,
-								["r"] = 0,
-							},
-						}, -- [3]
-					},
-					["frameBorderTexture"] = "None",
-					["frameContentColor"] = {
-						["a"] = 0,
-					},
-					["frameTexture"] = "Clean",
-					["frameWidth"] = 120,
-					["frameBorderDistance"] = -2,
-				},
-				["Default"] = {
-					["frameColor"] = {
-						["a"] = 0,
-					},
-					["fontSize"] = 16,
-					["frameBorder"] = 1,
-					["extraThemes"] = {
-						{
-							["frameColor"] = {
-								["a"] = 0,
-								["b"] = 0,
-								["g"] = 0.1294117647058823,
-								["r"] = 1,
-							},
-							["fontSize"] = 16,
-							["frameBorder"] = 1,
-							["iconSize"] = 14,
-							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
-							["frameBorderDistance"] = 1,
-							["frameHeight"] = 600,
-							["frameBorderColor"] = {
-								["a"] = 0,
-								["b"] = 0.09019607843137255,
-								["g"] = 0,
-								["r"] = 1,
-							},
-							["barTexture"] = "Clean",
-							["frameBorderTexture"] = "None",
-							["frameWidths"] = {
-								125, -- [1]
-								[5] = 125,
-							},
-							["frameTexture"] = "Clean",
-							["font"] = "Arial Narrow",
-							["orientation"] = "VERTICAL",
-							["frameContentColor"] = {
-								["a"] = 0,
-								["b"] = 0,
-								["g"] = 0,
-								["r"] = 0,
-							},
-							["mouseoverHighlight"] = false,
-							["frameHeights"] = {
-								60, -- [1]
-								[5] = 40,
-							},
-							["frameWidth"] = 125,
-							["mouseoverColor"] = {
-								["a"] = 1,
-								["b"] = 1,
-								["g"] = 1,
-								["r"] = 1,
-							},
-						}, -- [1]
-						{
-							["frameColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["fontSize"] = 16,
-							["frameBorder"] = 1,
-							["iconSize"] = 14,
-							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
-							["frameBorderDistance"] = -1,
-							["frameHeight"] = 40,
-							["frameTexture"] = "Clean",
-							["barTexture"] = "Clean",
-							["mouseoverColor"] = {
-								["a"] = 1,
-								["r"] = 1,
-								["g"] = 1,
-								["b"] = 1,
-							},
-							["frameWidths"] = {
-								[10] = 110,
-							},
-							["frameBorderTexture"] = "None",
-							["font"] = "Arial Narrow",
-							["frameHeights"] = {
-								[10] = 60,
-							},
-							["mouseoverHighlight"] = false,
-							["orientation"] = "VERTICAL",
-							["frameContentColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["frameWidth"] = 125,
-							["frameBorderColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-						}, -- [2]
-						{
-							["frameColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["fontSize"] = 16,
-							["frameBorder"] = 1,
-							["iconSize"] = 5,
-							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
-							["frameBorderDistance"] = -2,
-							["frameHeight"] = 50,
-							["frameBorderColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["barTexture"] = "Clean",
-							["frameBorderTexture"] = "None",
-							["frameWidths"] = {
-								[25] = 90,
-								[40] = 70,
-							},
-							["frameTexture"] = "Clean",
-							["font"] = "Arial Narrow",
-							["orientation"] = "VERTICAL",
-							["mouseoverHighlight"] = false,
-							["frameHeights"] = {
-								[25] = 60,
-								[40] = 50,
-							},
-							["frameContentColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["frameWidth"] = 120,
-							["mouseoverColor"] = {
-								["a"] = 1,
-								["r"] = 1,
-								["g"] = 1,
-								["b"] = 1,
-							},
-						}, -- [3]
-					},
-					["frameBorderDistance"] = -2,
-					["frameHeight"] = 50,
-					["frameTexture"] = "Clean",
-					["font"] = "Arial Narrow",
-					["frameContentColor"] = {
-						["a"] = 0,
-					},
-					["barTexture"] = "Clean",
-					["frameWidth"] = 120,
-					["frameBorderTexture"] = "None",
-				},
-				["TEST"] = {
-					["frameColor"] = {
-						["a"] = 0,
-					},
-					["frameHeight"] = 30,
-					["frameBorder"] = 1,
-					["extraThemes"] = {
-						{
-							["frameColor"] = {
-								["a"] = 0,
-								["b"] = 0,
-								["g"] = 0,
-								["r"] = 0,
-							},
-							["fontSize"] = 11,
-							["frameBorder"] = 1,
-							["iconSize"] = 14,
-							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
-							["frameBorderDistance"] = -1,
-							["frameHeight"] = 30,
-							["barTexture"] = "Gradient",
-							["mouseoverColor"] = {
-								["a"] = 1,
-								["b"] = 1,
-								["g"] = 1,
-								["r"] = 1,
-							},
-							["frameWidths"] = {
-								[5] = 150,
-							},
-							["frameBorderColor"] = {
-								["a"] = 0,
-								["b"] = 0,
-								["g"] = 0,
-								["r"] = 0,
-							},
-							["frameBorderTexture"] = "None",
-							["orientation"] = "VERTICAL",
-							["frameContentColor"] = {
-								["a"] = 0,
-								["b"] = 0,
-								["g"] = 0,
-								["r"] = 0,
-							},
-							["mouseoverHighlight"] = false,
-							["frameHeights"] = {
-								[5] = 30,
-							},
-							["frameWidth"] = 120,
-							["frameTexture"] = "Clean",
-						}, -- [1]
-						{
-							["frameColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["fontSize"] = 11,
-							["frameBorder"] = 1,
-							["iconSize"] = 14,
-							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
-							["frameBorderDistance"] = -1,
-							["frameHeight"] = 30,
-							["barTexture"] = "Gradient",
-							["frameBorderColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["frameWidths"] = {
-								[10] = 130,
-							},
-							["frameTexture"] = "Clean",
-							["mouseoverColor"] = {
-								["a"] = 1,
-								["r"] = 1,
-								["g"] = 1,
-								["b"] = 1,
-							},
-							["frameHeights"] = {
-								[10] = 30,
-							},
-							["mouseoverHighlight"] = false,
-							["orientation"] = "VERTICAL",
-							["frameContentColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["frameWidth"] = 120,
-							["frameBorderTexture"] = "None",
-						}, -- [2]
-					},
-					["frameWidths"] = {
-						[25] = 110,
-					},
-					["frameBorderTexture"] = "None",
-					["frameHeights"] = {
-						[25] = 30,
-					},
-					["frameContentColor"] = {
-						["a"] = 0,
-					},
-					["frameTexture"] = "Clean",
-					["frameWidth"] = 120,
-					["frameBorderDistance"] = -1,
+					["lastSelectedInstance"] = 1180,
 				},
 			},
 		},
-		["LibDualSpec-1.0"] = {
+		["Grid2AoeHeals"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -1388,15 +1604,15 @@ Grid2DB = {
 		["Konac - Dreadnaught"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
+		["Moolatz - Golemagg"] = "TEST",
 		["Tudum - Jin'do"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
-		["Provokator - Jin'do"] = "Default",
+		["Provokator - Jin'do"] = "xVermin",
 		["Pitchwise - Dreadnaught"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "TEST",
 		["Moolatz - Dreadnaught"] = "Default",
 	},
 	["profiles"] = {
@@ -1603,16 +1819,6 @@ Grid2DB = {
 					},
 					["spellName"] = 25771,
 				},
-				["buff-BlessingOfMight"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 0.7,
-					},
-					["spellName"] = 25291,
-				},
 				["buff-BlessingOfWisdom"] = {
 					["type"] = "buff",
 					["color1"] = {
@@ -1622,6 +1828,16 @@ Grid2DB = {
 						["r"] = 0.7,
 					},
 					["spellName"] = 25290,
+				},
+				["buff-BlessingOfWisdom(greater)"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 0.7,
+					},
+					["spellName"] = 25918,
 				},
 				["buff-BlessingOfKings"] = {
 					["type"] = "buff",
@@ -1643,7 +1859,7 @@ Grid2DB = {
 					},
 					["spellName"] = 25898,
 				},
-				["buff-BlessingOfWisdom(greater)"] = {
+				["buff-BlessingOfMight"] = {
 					["type"] = "buff",
 					["color1"] = {
 						["a"] = 1,
@@ -1651,7 +1867,7 @@ Grid2DB = {
 						["g"] = 1,
 						["r"] = 0.7,
 					},
-					["spellName"] = 25918,
+					["spellName"] = 25291,
 				},
 				["buff-BlessingOfMight(greater)"] = {
 					["type"] = "buff",
@@ -1692,8 +1908,12 @@ Grid2DB = {
 				["health"] = {
 					["health-current"] = 99,
 				},
-				["text-down-color"] = {
-					["classcolor"] = 99,
+				["text-up-color"] = {
+					["charmed"] = 65,
+					["feign-death"] = 96,
+					["health-deficit"] = 50,
+					["offline"] = 93,
+					["death"] = 95,
 				},
 				["text-up"] = {
 					["charmed"] = 65,
@@ -1702,12 +1922,8 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
-				["text-up-color"] = {
-					["charmed"] = 65,
-					["feign-death"] = 96,
-					["health-deficit"] = 50,
-					["offline"] = 93,
-					["death"] = 95,
+				["text-down-color"] = {
+					["classcolor"] = 99,
 				},
 				["border"] = {
 					["debuff-Disease"] = 90,
@@ -2007,26 +2223,26 @@ Grid2DB = {
 			["hideBlizzardRaidFrames"] = true,
 			["indicators"] = {
 				["junkyard-bots"] = {
+					["iconSize"] = 6,
+					["borderSize"] = 3,
 					["disableCooldown"] = true,
-					["type"] = "icons",
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "TOPRIGHT",
 						["point"] = "TOPRIGHT",
 						["x"] = 0,
 					},
-					["iconSize"] = 6,
-					["useStatusColor"] = true,
-					["level"] = 8,
 					["iconSpacing"] = 1,
-					["borderSize"] = 3,
+					["level"] = 8,
+					["useStatusColor"] = true,
+					["type"] = "icons",
 				},
 				["debuffs"] = {
 					["type"] = "icons",
-					["font"] = "Accidental Presidency",
+					["borderSize"] = 1,
 					["iconSpacing"] = 0,
 					["reverseCooldown"] = true,
-					["iconSize"] = 16,
+					["useStatusColor"] = true,
 					["color1"] = {
 						["a"] = 1,
 						["r"] = 0,
@@ -2034,9 +2250,9 @@ Grid2DB = {
 						["b"] = 0,
 					},
 					["maxIcons"] = 3,
-					["borderSize"] = 1,
+					["font"] = "Accidental Presidency",
 					["maxIconsPerRow"] = 3,
-					["useStatusColor"] = true,
+					["iconSize"] = 16,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "BOTTOMLEFT",
@@ -2095,9 +2311,9 @@ Grid2DB = {
 					},
 					["maxIcons"] = 3,
 					["borderSize"] = 1,
-					["maxIconsPerRow"] = 3,
-					["iconSize"] = 16,
 					["level"] = 7,
+					["iconSize"] = 16,
+					["maxIconsPerRow"] = 3,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "TOPLEFT",
@@ -2117,14 +2333,14 @@ Grid2DB = {
 					["fontSize"] = 8,
 					["borderSize"] = 4,
 					["level"] = 8,
-					["useStatusColor"] = true,
-					["reverseCooldown"] = true,
 					["location"] = {
 						["y"] = 8,
 						["relPoint"] = "BOTTOMRIGHT",
 						["point"] = "BOTTOMRIGHT",
 						["x"] = -16,
 					},
+					["reverseCooldown"] = true,
+					["useStatusColor"] = true,
 					["size"] = 8,
 				},
 				["background"] = {
@@ -2159,17 +2375,17 @@ Grid2DB = {
 				},
 				["Line-Indicator"] = {
 					["type"] = "bar",
-					["height"] = 4,
-					["reverseFill"] = true,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "BOTTOM",
 						["point"] = "BOTTOM",
 						["x"] = 0,
 					},
-					["level"] = 7,
-					["orientation"] = "HORIZONTAL",
+					["reverseFill"] = true,
+					["height"] = 4,
 					["duration"] = true,
+					["orientation"] = "HORIZONTAL",
+					["level"] = 7,
 				},
 				["Holy-Priest-color"] = {
 					["type"] = "multibar-color",
@@ -2187,14 +2403,14 @@ Grid2DB = {
 					},
 					["maxIcons"] = 6,
 					["borderSize"] = 1,
+					["iconSize"] = 10,
+					["maxIconsPerRow"] = 20,
 					["location"] = {
 						["y"] = 7,
 						["relPoint"] = "RIGHT",
 						["point"] = "RIGHT",
 						["x"] = 0,
 					},
-					["maxIconsPerRow"] = 20,
-					["iconSize"] = 10,
 					["level"] = 8,
 					["font"] = "Accidental Presidency",
 					["type"] = "icons",
@@ -2223,13 +2439,13 @@ Grid2DB = {
 					},
 					["maxIcons"] = 3,
 					["borderSize"] = 1,
-					["iconSize"] = 12,
 					["location"] = {
 						["y"] = 4,
 						["relPoint"] = "TOPRIGHT",
 						["point"] = "TOPRIGHT",
 						["x"] = 2,
 					},
+					["iconSize"] = 12,
 					["level"] = 8,
 					["font"] = "Accidental Presidency",
 					["disableOmniCC"] = true,
@@ -2253,8 +2469,8 @@ Grid2DB = {
 				["shields-color"] = {
 					["type"] = "bar-color",
 				},
-				["corner-top-centerleft-color"] = {
-					["type"] = "text-color",
+				["Line-Indicator-color"] = {
+					["type"] = "bar-color",
 				},
 				["text-up"] = {
 					["fontSize"] = 12,
@@ -2286,71 +2502,16 @@ Grid2DB = {
 					["type"] = "icon",
 					["font"] = "Accidental Presidency",
 					["disableIcon"] = true,
-					["useStatusColor"] = true,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "BOTTOMRIGHT",
 						["point"] = "BOTTOMRIGHT",
 						["x"] = 0,
 					},
+					["useStatusColor"] = true,
 					["level"] = 8,
 					["borderSize"] = 4,
 					["size"] = 8,
-				},
-				["Regrowth"] = {
-					["type"] = "icon",
-					["reverseCooldown"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0,
-						["g"] = 1,
-						["r"] = 0,
-					},
-					["font"] = "Accidental Presidency",
-					["borderSize"] = 4,
-					["useStatusColor"] = true,
-					["location"] = {
-						["y"] = 0,
-						["relPoint"] = "BOTTOMRIGHT",
-						["point"] = "BOTTOMRIGHT",
-						["x"] = -8,
-					},
-					["level"] = 8,
-					["fontSize"] = 8,
-					["size"] = 8,
-				},
-				["toptext-right-color"] = {
-					["type"] = "text-color",
-				},
-				["Hot-TopRight"] = {
-					["fontSize"] = 8,
-					["reverseCooldown"] = true,
-					["font"] = "Accidental Presidency",
-					["type"] = "icon",
-					["borderSize"] = 5,
-					["location"] = {
-						["y"] = 0,
-						["relPoint"] = "TOPRIGHT",
-						["point"] = "TOPRIGHT",
-						["x"] = 0,
-					},
-					["level"] = 8,
-					["useStatusColor"] = true,
-					["size"] = 10,
-				},
-				["name-party"] = {
-					["type"] = "text",
-					["fontSize"] = 16,
-					["location"] = {
-						["y"] = 0,
-						["relPoint"] = "TOPLEFT",
-						["point"] = "TOPLEFT",
-						["x"] = 0,
-					},
-					["shadowDisabled"] = true,
-					["level"] = 7,
-					["textlength"] = 12,
-					["fontFlags"] = "OUTLINE",
 				},
 				["Health-deficit"] = {
 					{
@@ -2396,6 +2557,61 @@ Grid2DB = {
 						["r"] = 1,
 					},
 				},
+				["toptext-right-color"] = {
+					["type"] = "text-color",
+				},
+				["Hot-TopRight"] = {
+					["fontSize"] = 8,
+					["reverseCooldown"] = true,
+					["font"] = "Accidental Presidency",
+					["type"] = "icon",
+					["borderSize"] = 5,
+					["useStatusColor"] = true,
+					["level"] = 8,
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "TOPRIGHT",
+						["point"] = "TOPRIGHT",
+						["x"] = 0,
+					},
+					["size"] = 10,
+				},
+				["name-party"] = {
+					["type"] = "text",
+					["fontSize"] = 16,
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "TOPLEFT",
+						["point"] = "TOPLEFT",
+						["x"] = 0,
+					},
+					["shadowDisabled"] = true,
+					["level"] = 7,
+					["textlength"] = 12,
+					["fontFlags"] = "OUTLINE",
+				},
+				["Regrowth"] = {
+					["type"] = "icon",
+					["reverseCooldown"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0,
+						["g"] = 1,
+						["r"] = 0,
+					},
+					["font"] = "Accidental Presidency",
+					["borderSize"] = 4,
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "BOTTOMRIGHT",
+						["point"] = "BOTTOMRIGHT",
+						["x"] = -8,
+					},
+					["useStatusColor"] = true,
+					["level"] = 8,
+					["fontSize"] = 8,
+					["size"] = 8,
+				},
 				["name-party-color"] = {
 					["type"] = "text-color",
 				},
@@ -2440,9 +2656,6 @@ Grid2DB = {
 				["Spirit-Realm-color"] = {
 					["type"] = "bar-color",
 				},
-				["manabar-color"] = {
-					["type"] = "bar-color",
-				},
 				["Rejuv2"] = {
 					["fontSize"] = 8,
 					["reverseCooldown"] = true,
@@ -2464,6 +2677,9 @@ Grid2DB = {
 					["type"] = "icon",
 					["size"] = 8,
 				},
+				["manabar-color"] = {
+					["type"] = "bar-color",
+				},
 				["text-down-color"] = {
 					["type"] = "text-color",
 				},
@@ -2477,13 +2693,13 @@ Grid2DB = {
 					},
 					["borderSize"] = 1,
 					["type"] = "square",
-					["height"] = 4,
 					["location"] = {
 						["y"] = -9,
 						["relPoint"] = "TOPLEFT",
 						["point"] = "TOPLEFT",
 						["x"] = 0,
 					},
+					["height"] = 4,
 					["level"] = 8,
 					["width"] = 20,
 					["texture"] = "Flat",
@@ -2549,16 +2765,16 @@ Grid2DB = {
 				},
 				["manabar"] = {
 					["type"] = "bar",
-					["orientation"] = "HORIZONTAL",
-					["opacity"] = 0.8,
-					["height"] = 2,
-					["level"] = 4,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "TOP",
 						["point"] = "TOP",
 						["x"] = 0,
 					},
+					["level"] = 4,
+					["height"] = 2,
+					["opacity"] = 0.8,
+					["orientation"] = "HORIZONTAL",
 					["texture"] = "Grid2 Flat",
 				},
 				["alpha"] = {
@@ -2654,8 +2870,8 @@ Grid2DB = {
 				["text-up-color"] = {
 					["type"] = "text-color",
 				},
-				["Line-Indicator-color"] = {
-					["type"] = "bar-color",
+				["corner-top-centerleft-color"] = {
+					["type"] = "text-color",
 				},
 				["Lingering-Infection-Stacks-color"] = {
 					["type"] = "text-color",
@@ -4297,31 +4513,6 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
-				["buff-Lifebloom-mine"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0.71764705882353,
-						["g"] = 1,
-						["r"] = 0.447058823529412,
-					},
-					["load"] = {
-						["playerClass"] = {
-							["DRUID"] = true,
-						},
-					},
-					["mine"] = 1,
-					["spellName"] = "Lifebloom",
-				},
-				["vehicle"] = {
-					["color1"] = {
-						["a"] = 0.800000011920929,
-						["b"] = 1,
-						["g"] = 0.501960784313726,
-						["r"] = 0,
-					},
-					["type"] = "vehicle",
-				},
 				["buff-BestowFaith-mine"] = {
 					["type"] = "buff",
 					["spellName"] = "Bestow Faith",
@@ -4336,6 +4527,31 @@ Grid2DB = {
 						["r"] = 1,
 						["g"] = 1,
 						["b"] = 0,
+					},
+				},
+				["vehicle"] = {
+					["color1"] = {
+						["a"] = 0.800000011920929,
+						["b"] = 1,
+						["g"] = 0.501960784313726,
+						["r"] = 0,
+					},
+					["type"] = "vehicle",
+				},
+				["aoe-Holy Paladin"] = {
+					["type"] = "aoe-heals",
+					["activeTime"] = 1,
+					["spellList"] = {
+						85222, -- [1]
+						114871, -- [2]
+						114158, -- [3]
+					},
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 0.886274509803922,
+						["r"] = 0.615686274509804,
 					},
 				},
 				["buffs-Healing2-mine"] = {
@@ -4408,21 +4624,21 @@ Grid2DB = {
 					["thresholdMedium"] = 0,
 					["colorCount"] = 3,
 				},
-				["aoe-Holy Paladin"] = {
-					["type"] = "aoe-heals",
-					["activeTime"] = 1,
-					["spellList"] = {
-						85222, -- [1]
-						114871, -- [2]
-						114158, -- [3]
-					},
-					["mine"] = true,
+				["buff-Lifebloom-mine"] = {
+					["type"] = "buff",
 					["color1"] = {
 						["a"] = 1,
-						["b"] = 1,
-						["g"] = 0.886274509803922,
-						["r"] = 0.615686274509804,
+						["b"] = 0.71764705882353,
+						["g"] = 1,
+						["r"] = 0.447058823529412,
 					},
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+					["mine"] = 1,
+					["spellName"] = "Lifebloom",
 				},
 				["debuffs-Debuffs-Blue"] = {
 					["color1"] = {
@@ -4677,8 +4893,8 @@ Grid2DB = {
 				["shields-color"] = {
 					["shields"] = 50,
 				},
-				["death"] = {
-					["death"] = 50,
+				["Line-Indicator-color"] = {
+					["buff-Riptide-mine"] = 50,
 				},
 				["corner-top-centerleft2-color"] = {
 				},
@@ -4692,11 +4908,10 @@ Grid2DB = {
 					["buff-Renew-mine"] = 53,
 					["buff-RenewingMist-mine"] = 51,
 				},
-				["Health-deficit"] = {
-					["shields-overflow"] = 4,
-					["heal-absorbs"] = 2,
-					["shields"] = 3,
-					["health-deficit"] = 1,
+				["Regrowth"] = {
+					["buff-EnvelopingMist-mine"] = 51,
+					["buff-PrayerofMending-mine"] = 52,
+					["buff-Rejuvenation(Germination)-mine"] = 54,
 				},
 				["toptext-right-color"] = {
 				},
@@ -4706,10 +4921,11 @@ Grid2DB = {
 				["name-party"] = {
 					["name"] = 50,
 				},
-				["Regrowth"] = {
-					["buff-EnvelopingMist-mine"] = 51,
-					["buff-PrayerofMending-mine"] = 52,
-					["buff-Rejuvenation(Germination)-mine"] = 54,
+				["Health-deficit"] = {
+					["shields-overflow"] = 4,
+					["heal-absorbs"] = 2,
+					["shields"] = 3,
+					["health-deficit"] = 1,
 				},
 				["name-party-color"] = {
 					["classcolor"] = 50,
@@ -4734,7 +4950,8 @@ Grid2DB = {
 				},
 				["corner-top-right-color"] = {
 				},
-				["Health-deficit-color"] = {
+				["manabar-color"] = {
+					["classcolor"] = 51,
 				},
 				["Spirit-Realm-color"] = {
 					["debuff-LadyJainaProudmoore>FrozenSolid"] = 56,
@@ -4743,8 +4960,7 @@ Grid2DB = {
 					["debuff-TheQueen'sCourt>Suffering"] = 55,
 					["debuff-Hivemind>Nullification"] = 58,
 				},
-				["Rejuv2"] = {
-					["buff-WildGrowth-mine"] = 51,
+				["Health-deficit-color"] = {
 				},
 				["manabar"] = {
 				},
@@ -4759,8 +4975,8 @@ Grid2DB = {
 					["debuff-TheRestlessCabal>PromisesofPower"] = 55,
 					["debuffs-PVPDebuffs"] = 54,
 				},
-				["manabar-color"] = {
-					["classcolor"] = 51,
+				["Rejuv2"] = {
+					["buff-WildGrowth-mine"] = 51,
 				},
 				["manatxt"] = {
 				},
@@ -4820,8 +5036,8 @@ Grid2DB = {
 					["resurrection"] = 96,
 					["vehicle"] = 70,
 				},
-				["Line-Indicator-color"] = {
-					["buff-Riptide-mine"] = 50,
+				["death"] = {
+					["death"] = 50,
 				},
 				["Lingering-Infection-Stacks-color"] = {
 					["debuff-LadyJainaProudmoore>ChillingTouch"] = 56,
@@ -5209,12 +5425,8 @@ Grid2DB = {
 				["health"] = {
 					["health-current"] = 99,
 				},
-				["text-up-color"] = {
-					["charmed"] = 65,
-					["feign-death"] = 96,
-					["health-deficit"] = 50,
-					["offline"] = 93,
-					["death"] = 95,
+				["text-down-color"] = {
+					["classcolor"] = 99,
 				},
 				["text-up"] = {
 					["charmed"] = 65,
@@ -5223,8 +5435,12 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
-				["text-down-color"] = {
-					["classcolor"] = 99,
+				["text-up-color"] = {
+					["charmed"] = 65,
+					["feign-death"] = 96,
+					["health-deficit"] = 50,
+					["offline"] = 93,
+					["death"] = 95,
 				},
 				["border"] = {
 					["target"] = 50,
@@ -5733,6 +5949,458 @@ Grid2DB = {
 				},
 			},
 		},
+		["xVermin"] = {
+			["indicators"] = {
+				["corner-bottom-right2"] = {
+					["location"] = {
+						["y"] = 3,
+						["relPoint"] = "BOTTOMRIGHT",
+						["point"] = "BOTTOMRIGHT",
+						["x"] = -7,
+					},
+					["type"] = "square",
+					["level"] = 6,
+					["size"] = 5,
+				},
+				["mana-color"] = {
+					["type"] = "bar-color",
+				},
+				["corner-bottom-right"] = {
+					["location"] = {
+						["y"] = 3,
+						["relPoint"] = "BOTTOMRIGHT",
+						["point"] = "BOTTOMRIGHT",
+						["x"] = -1,
+					},
+					["type"] = "square",
+					["level"] = 5,
+					["size"] = 5,
+				},
+				["text-down"] = {
+					["fontSize"] = 10,
+					["type"] = "text",
+					["location"] = {
+						["y"] = -4,
+						["relPoint"] = "TOPLEFT",
+						["point"] = "TOPLEFT",
+						["x"] = 4,
+					},
+					["level"] = 6,
+					["textlength"] = 16,
+					["fontFlags"] = "NONE",
+				},
+				["icon-left"] = {
+					["fontSize"] = 8,
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "LEFT",
+						["point"] = "LEFT",
+						["x"] = -2,
+					},
+					["level"] = 8,
+					["type"] = "icon",
+					["size"] = 12,
+				},
+				["border"] = {
+					["type"] = "border",
+					["color1"] = {
+						["a"] = 0,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+				},
+				["heals"] = {
+					["type"] = "bar",
+					["texture"] = "Gradient",
+					["anchorTo"] = "health",
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "CENTER",
+						["point"] = "CENTER",
+						["x"] = 0,
+					},
+					["level"] = 1,
+					["opacity"] = 0.25,
+					["color1"] = {
+						["a"] = 0,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+				},
+				["mana"] = {
+					["orientation"] = "HORIZONTAL",
+					["type"] = "bar",
+					["height"] = 2,
+					["backColor"] = {
+						["a"] = 0.5039972066879272,
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 0,
+					},
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "BOTTOMRIGHT",
+						["point"] = "BOTTOMRIGHT",
+						["x"] = 0,
+					},
+					["level"] = 3,
+					["backTexture"] = "Clean",
+					["texture"] = "Clean",
+				},
+				["background"] = {
+					["type"] = "background",
+				},
+				["mana-5-10-color"] = {
+					["type"] = "bar-color",
+				},
+				["icon-center"] = {
+					["fontSize"] = 8,
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "CENTER",
+						["point"] = "CENTER",
+						["x"] = 0,
+					},
+					["level"] = 8,
+					["type"] = "icon",
+					["size"] = 14,
+				},
+				["name-5-10"] = {
+					["type"] = "text",
+					["fontSize"] = 14,
+					["shadowDisabled"] = true,
+					["location"] = {
+						["y"] = 7,
+						["relPoint"] = "TOPLEFT",
+						["point"] = "TOPLEFT",
+						["x"] = 0,
+					},
+					["level"] = 7,
+					["textlength"] = 12,
+					["fontFlags"] = "OUTLINE",
+				},
+				["health-color"] = {
+					["type"] = "bar-color",
+				},
+				["corner-bottom-left"] = {
+					["type"] = "square",
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "BOTTOMLEFT",
+						["point"] = "BOTTOMLEFT",
+						["x"] = 0,
+					},
+					["level"] = 5,
+					["size"] = 5,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["corner-top-right"] = {
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "TOPRIGHT",
+						["point"] = "TOPRIGHT",
+						["x"] = 0,
+					},
+					["type"] = "square",
+					["level"] = 9,
+					["size"] = 5,
+				},
+				["heals-color"] = {
+					["type"] = "bar-color",
+				},
+				["tooltip"] = {
+					["type"] = "tooltip",
+					["showDefault"] = true,
+					["showTooltip"] = 1,
+				},
+				["alpha"] = {
+					["type"] = "alpha",
+				},
+				["icon-right"] = {
+					["fontSize"] = 8,
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "RIGHT",
+						["point"] = "RIGHT",
+						["x"] = 2,
+					},
+					["level"] = 8,
+					["type"] = "icon",
+					["size"] = 12,
+				},
+				["health"] = {
+					["texture"] = "Flat",
+					["type"] = "bar",
+					["backTexture"] = "Flat",
+					["backColor"] = {
+						["a"] = 0.2346371412277222,
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 0,
+					},
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "CENTER",
+						["point"] = "CENTER",
+						["x"] = 0,
+					},
+					["level"] = 2,
+					["orientation"] = "HORIZONTAL",
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+				},
+				["text-down-color"] = {
+					["type"] = "text-color",
+				},
+				["name-5-10-color"] = {
+					["type"] = "text-color",
+				},
+				["mana-5-10"] = {
+					["type"] = "bar",
+					["backColor"] = {
+						["a"] = 0.5039972066879272,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+					["width"] = 80,
+					["height"] = 3,
+					["backTexture"] = "Aluminium",
+					["orientation"] = "HORIZONTAL",
+					["level"] = 3,
+					["location"] = {
+						["y"] = -4,
+						["relPoint"] = "BOTTOMRIGHT",
+						["point"] = "BOTTOMRIGHT",
+						["x"] = 0,
+					},
+					["texture"] = "Aluminium",
+				},
+				["text-up"] = {
+					["type"] = "text",
+					["location"] = {
+						["y"] = -8,
+						["relPoint"] = "TOP",
+						["point"] = "TOP",
+						["x"] = 0,
+					},
+					["level"] = 7,
+					["textlength"] = 6,
+					["fontSize"] = 8,
+				},
+				["text-up-color"] = {
+					["type"] = "text-color",
+				},
+				["corner-top-left"] = {
+					["fontSize"] = 8,
+					["location"] = {
+						["y"] = -2,
+						["relPoint"] = "TOPLEFT",
+						["point"] = "TOPLEFT",
+						["x"] = 1,
+					},
+					["level"] = 9,
+					["type"] = "icon",
+					["size"] = 10,
+				},
+				["side-bottom"] = {
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "BOTTOM",
+						["point"] = "BOTTOM",
+						["x"] = 0,
+					},
+					["type"] = "square",
+					["level"] = 9,
+					["size"] = 5,
+				},
+			},
+			["statuses"] = {
+				["buff-Regrowth-mine"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.01568627450980392,
+						["g"] = 1,
+						["r"] = 0.6549019607843137,
+					},
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+					["mine"] = 1,
+					["spellName"] = 8936,
+				},
+				["threat"] = {
+					["color2"] = {
+						["r"] = 1,
+						["g"] = 0,
+						["b"] = 0.02352941176470588,
+					},
+					["color3"] = {
+						["g"] = 0,
+						["b"] = 0.0784313725490196,
+					},
+				},
+				["buff-Rejuvenation-mine"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0.1411764705882353,
+						["g"] = 1,
+						["r"] = 0,
+					},
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+					["mine"] = 1,
+					["spellName"] = 774,
+				},
+				["debuff-Poison"] = {
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+				},
+				["target"] = {
+					["color1"] = {
+						["a"] = 0,
+						["r"] = 0,
+						["b"] = 0.3137254901960784,
+					},
+				},
+				["debuff-Curse"] = {
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+				},
+			},
+			["versions"] = {
+				["Grid2"] = 9,
+				["Grid2RaidDebuffs"] = 4,
+			},
+			["statusMap"] = {
+				["name-5-10"] = {
+					["name"] = 50,
+				},
+				["mana-color"] = {
+					["power"] = 51,
+					["mana"] = 50,
+				},
+				["corner-bottom-right"] = {
+					["buff-Rejuvenation-mine"] = 50,
+				},
+				["text-down"] = {
+					["name"] = 99,
+				},
+				["icon-left"] = {
+					["raid-icon-player"] = 155,
+				},
+				["border"] = {
+					["threat"] = 50,
+				},
+				["text-down-color"] = {
+				},
+				["mana-5-10-color"] = {
+					["power"] = 50,
+				},
+				["icon-center"] = {
+					["ready-check"] = 150,
+					["raid-debuffs"] = 155,
+					["death"] = 155,
+				},
+				["heals"] = {
+					["heals-incoming"] = 99,
+				},
+				["corner-top-right"] = {
+					["debuff-Poison"] = 50,
+					["debuff-Curse"] = 51,
+				},
+				["heals-color"] = {
+					["classcolor"] = 99,
+				},
+				["alpha"] = {
+					["offline"] = 97,
+					["range"] = 99,
+					["death"] = 98,
+				},
+				["corner-bottom-right2"] = {
+					["buff-Regrowth-mine"] = 50,
+				},
+				["health-color"] = {
+					["classcolor"] = 99,
+				},
+				["health"] = {
+					["health-current"] = 99,
+				},
+				["name-5-10-color"] = {
+				},
+				["mana-5-10"] = {
+					["power"] = 50,
+				},
+				["text-up"] = {
+					["charmed"] = 65,
+					["feign-death"] = 96,
+					["health-deficit"] = 50,
+					["offline"] = 93,
+					["death"] = 95,
+				},
+				["text-up-color"] = {
+					["charmed"] = 65,
+					["feign-death"] = 96,
+					["health-deficit"] = 50,
+					["offline"] = 93,
+					["death"] = 95,
+				},
+				["corner-top-left"] = {
+				},
+				["mana"] = {
+					["power"] = 51,
+				},
+			},
+			["themes"] = {
+				["enabled"] = {
+					["party"] = 1,
+					["default"] = 1,
+					["10"] = 2,
+				},
+				["indicators"] = {
+					{
+						["text-down"] = true,
+						["mana"] = true,
+					}, -- [1]
+					{
+						["text-down"] = true,
+						["mana"] = true,
+					}, -- [2]
+					[0] = {
+						["name-5-10"] = true,
+						["mana-5-10"] = true,
+					},
+				},
+				["names"] = {
+					"5", -- [1]
+					"10", -- [2]
+				},
+			},
+		},
 		["Kaonac - Jin'do"] = {
 			["statusMap"] = {
 				["corner-top-left"] = {
@@ -6003,6 +6671,17 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
+				["buff-Renew-mine"] = {
+					["spellName"] = 25315,
+					["type"] = "buff",
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
 				["buff-PowerWordShield"] = {
 					["type"] = "buff",
 					["spellName"] = 10901,
@@ -6021,17 +6700,6 @@ Grid2DB = {
 						["r"] = 0,
 						["g"] = 0.2,
 						["b"] = 0.9,
-					},
-				},
-				["buff-Renew-mine"] = {
-					["spellName"] = 25315,
-					["type"] = "buff",
-					["mine"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
 					},
 				},
 			},
@@ -6662,23 +7330,23 @@ Grid2DB = {
 					["fontSize"] = 10,
 				},
 				["mana"] = {
-					["backTexture"] = "Clean",
-					["type"] = "bar",
-					["orientation"] = "HORIZONTAL",
-					["backColor"] = {
-						["a"] = 0.3061864972114563,
-						["b"] = 0,
-						["g"] = 0,
-						["r"] = 0,
-					},
-					["height"] = 4,
-					["level"] = 3,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "BOTTOM",
 						["point"] = "BOTTOM",
 						["x"] = 0,
 					},
+					["type"] = "bar",
+					["height"] = 4,
+					["backColor"] = {
+						["a"] = 0.3061864972114563,
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 0,
+					},
+					["orientation"] = "HORIZONTAL",
+					["level"] = 3,
+					["backTexture"] = "Clean",
 					["texture"] = "Clean",
 				},
 				["border"] = {
@@ -6799,21 +7467,21 @@ Grid2DB = {
 				["health"] = {
 					["texture"] = "Clean",
 					["type"] = "bar",
-					["location"] = {
-						["y"] = 0,
-						["relPoint"] = "CENTER",
-						["point"] = "CENTER",
-						["x"] = 0,
-					},
+					["orientation"] = "HORIZONTAL",
 					["backColor"] = {
 						["a"] = 0.389516115188599,
 						["r"] = 0,
 						["g"] = 0,
 						["b"] = 0,
 					},
-					["backTexture"] = "Clean",
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "CENTER",
+						["point"] = "CENTER",
+						["x"] = 0,
+					},
 					["level"] = 2,
-					["orientation"] = "HORIZONTAL",
+					["backTexture"] = "Clean",
 					["color1"] = {
 						["a"] = 1,
 						["b"] = 0,
@@ -6932,22 +7600,6 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
-				["buff-Renew-mine"] = {
-					["type"] = "buff",
-					["spellName"] = 139,
-					["load"] = {
-						["playerClass"] = {
-							["PRIEST"] = true,
-						},
-					},
-					["mine"] = 1,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
 				["buff-MarkoftheWild"] = {
 					["type"] = "buff",
 					["spellName"] = 1126,
@@ -6958,6 +7610,22 @@ Grid2DB = {
 							["DRUID"] = true,
 						},
 					},
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["buff-Renew-mine"] = {
+					["type"] = "buff",
+					["spellName"] = 139,
+					["load"] = {
+						["playerClass"] = {
+							["PRIEST"] = true,
+						},
+					},
+					["mine"] = 1,
 					["color1"] = {
 						["a"] = 1,
 						["r"] = 1,
@@ -7023,8 +7691,7 @@ Grid2DB = {
 					["mana"] = 50,
 					["power"] = 51,
 				},
-				["corner-bottom-left"] = {
-					["threat"] = 50,
+				["text-up"] = {
 				},
 				["text-up-color"] = {
 					["charmed"] = 65,
@@ -7033,7 +7700,8 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
-				["text-up"] = {
+				["corner-bottom-left"] = {
+					["threat"] = 50,
 				},
 				["corner-top-right"] = {
 					["debuff-Disease"] = 50,
@@ -7501,16 +8169,16 @@ Grid2DB = {
 						["r"] = 0,
 					},
 					["opacity"] = 1,
-					["backTexture"] = "Clean",
+					["orientation"] = "HORIZONTAL",
+					["height"] = 2,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "BOTTOM",
 						["point"] = "BOTTOM",
 						["x"] = 0,
 					},
-					["height"] = 4,
 					["level"] = 3,
-					["orientation"] = "HORIZONTAL",
+					["backTexture"] = "Clean",
 					["texture"] = "Clean",
 				},
 				["text-down-color"] = {
@@ -7601,80 +8269,6 @@ Grid2DB = {
 					["size"] = 5,
 				},
 			},
-			["statusMap"] = {
-				["corner-top-left"] = {
-					["buff-Renew-mine"] = 52,
-					["buff-Rejuvenation-mine"] = 51,
-				},
-				["mana-color"] = {
-					["mana"] = 50,
-					["power"] = 51,
-				},
-				["text-down"] = {
-					["name"] = 50,
-				},
-				["mana"] = {
-					["power"] = 51,
-					["mana"] = 50,
-				},
-				["border"] = {
-					["threat"] = 50,
-				},
-				["main-buff"] = {
-				},
-				["text-down-color"] = {
-				},
-				["icon-center"] = {
-					["ready-check"] = 156,
-					["raid-debuffs"] = 155,
-					["death"] = 155,
-				},
-				["heals"] = {
-					["heals-incoming"] = 99,
-				},
-				["icon-right"] = {
-					["raid-icon-target"] = 90,
-				},
-				["heals-color"] = {
-					["classcolor"] = 99,
-				},
-				["alpha"] = {
-					["offline"] = 97,
-					["range"] = 99,
-					["death"] = 98,
-				},
-				["corner-top-right"] = {
-					["debuff-Disease"] = 50,
-					["debuff-Magic"] = 51,
-					["debuff-Poison"] = 52,
-					["debuff-Curse"] = 53,
-				},
-				["health"] = {
-					["health-current"] = 99,
-				},
-				["corner-bottom-left"] = {
-					["buff-Regrowth-mine"] = 50,
-				},
-				["text-up"] = {
-				},
-				["text-up-color"] = {
-					["charmed"] = 65,
-					["feign-death"] = 96,
-					["health-deficit"] = 50,
-					["offline"] = 93,
-					["death"] = 95,
-				},
-				["icon-left"] = {
-					["raid-icon-player"] = 155,
-				},
-				["health-color"] = {
-					["classcolor"] = 99,
-				},
-			},
-			["versions"] = {
-				["Grid2"] = 9,
-				["Grid2RaidDebuffs"] = 4,
-			},
 			["statuses"] = {
 				["buff-PowerWord:Fortitude"] = {
 					["type"] = "buff",
@@ -7709,21 +8303,8 @@ Grid2DB = {
 					["mine"] = 1,
 					["spellName"] = 8936,
 				},
-				["buff-Renew-mine"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["mine"] = 1,
-					["load"] = {
-						["playerClass"] = {
-							["PRIEST"] = true,
-						},
-					},
-					["spellName"] = 139,
+				["heals-incoming"] = {
+					["includePlayerHeals"] = true,
 				},
 				["threat"] = {
 					["color2"] = {
@@ -7733,9 +8314,6 @@ Grid2DB = {
 						["r"] = 0,
 						["b"] = 0.00392156862745098,
 					},
-				},
-				["name"] = {
-					["defaultName"] = 1,
 				},
 				["buff-Rejuvenation-mine"] = {
 					["type"] = "buff",
@@ -7753,8 +8331,24 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
-				["heals-incoming"] = {
-					["includePlayerHeals"] = true,
+				["name"] = {
+					["defaultName"] = 1,
+				},
+				["buff-Renew-mine"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["mine"] = 1,
+					["load"] = {
+						["playerClass"] = {
+							["PRIEST"] = true,
+						},
+					},
+					["spellName"] = 139,
 				},
 				["debuff-Disease"] = {
 					["load"] = {
@@ -7833,6 +8427,80 @@ Grid2DB = {
 					},
 				},
 			},
+			["versions"] = {
+				["Grid2"] = 9,
+				["Grid2RaidDebuffs"] = 4,
+			},
+			["statusMap"] = {
+				["corner-top-left"] = {
+					["buff-Renew-mine"] = 52,
+					["buff-Rejuvenation-mine"] = 51,
+				},
+				["mana-color"] = {
+					["mana"] = 50,
+					["power"] = 51,
+				},
+				["text-down"] = {
+					["name"] = 50,
+				},
+				["mana"] = {
+					["power"] = 51,
+					["mana"] = 50,
+				},
+				["border"] = {
+					["threat"] = 50,
+				},
+				["main-buff"] = {
+				},
+				["text-down-color"] = {
+				},
+				["icon-center"] = {
+					["ready-check"] = 156,
+					["raid-debuffs"] = 155,
+					["death"] = 155,
+				},
+				["heals"] = {
+					["heals-incoming"] = 99,
+				},
+				["icon-right"] = {
+					["raid-icon-target"] = 90,
+				},
+				["heals-color"] = {
+					["classcolor"] = 99,
+				},
+				["alpha"] = {
+					["offline"] = 97,
+					["range"] = 99,
+					["death"] = 98,
+				},
+				["corner-top-right"] = {
+					["debuff-Disease"] = 50,
+					["debuff-Magic"] = 51,
+					["debuff-Poison"] = 52,
+					["debuff-Curse"] = 53,
+				},
+				["health"] = {
+					["health-current"] = 99,
+				},
+				["text-up"] = {
+				},
+				["corner-bottom-left"] = {
+					["buff-Regrowth-mine"] = 50,
+				},
+				["text-up-color"] = {
+					["charmed"] = 65,
+					["feign-death"] = 96,
+					["health-deficit"] = 50,
+					["offline"] = 93,
+					["death"] = 95,
+				},
+				["icon-left"] = {
+					["raid-icon-player"] = 155,
+				},
+				["health-color"] = {
+					["classcolor"] = 99,
+				},
+			},
 			["themes"] = {
 				["enabled"] = {
 					["25"] = 3,
@@ -7883,12 +8551,8 @@ Grid2DB = {
 				["health"] = {
 					["health-current"] = 99,
 				},
-				["text-up-color"] = {
-					["charmed"] = 65,
-					["feign-death"] = 96,
-					["health-deficit"] = 50,
-					["offline"] = 93,
-					["death"] = 95,
+				["text-down-color"] = {
+					["classcolor"] = 99,
 				},
 				["text-up"] = {
 					["charmed"] = 65,
@@ -7897,8 +8561,12 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
-				["text-down-color"] = {
-					["classcolor"] = 99,
+				["text-up-color"] = {
+					["charmed"] = 65,
+					["feign-death"] = 96,
+					["health-deficit"] = 50,
+					["offline"] = 93,
+					["death"] = 95,
 				},
 				["border"] = {
 					["target"] = 50,
@@ -8401,47 +9069,28 @@ Grid2DB = {
 			},
 		},
 		["TEST"] = {
-			["themes"] = {
-				["enabled"] = {
-					["party"] = 1,
-					["default"] = 1,
-					["10"] = 1,
-				},
-				["indicators"] = {
-					{
-					}, -- [1]
-					{
-					}, -- [2]
-					[0] = {
-					},
-				},
-				["names"] = {
-					"5", -- [1]
-					"10", -- [2]
-				},
-			},
-			["versions"] = {
-				["Grid2"] = 9,
-				["Grid2RaidDebuffs"] = 4,
-			},
 			["indicators"] = {
 				["corner-top-left"] = {
+					["type"] = "icon",
 					["location"] = {
-						["y"] = 0,
+						["y"] = -2,
 						["relPoint"] = "TOPLEFT",
 						["point"] = "TOPLEFT",
-						["x"] = 0,
+						["x"] = 1,
 					},
-					["type"] = "square",
 					["level"] = 9,
-					["size"] = 5,
+					["fontSize"] = 8,
+					["size"] = 10,
+				},
+				["mana-color"] = {
+					["type"] = "bar-color",
 				},
 				["corner-bottom-right"] = {
 					["location"] = {
-						["y"] = 0,
+						["y"] = 3,
 						["relPoint"] = "BOTTOMRIGHT",
 						["point"] = "BOTTOMRIGHT",
-						["x"] = 0,
+						["x"] = -1,
 					},
 					["type"] = "square",
 					["level"] = 5,
@@ -8449,6 +9098,7 @@ Grid2DB = {
 				},
 				["text-down"] = {
 					["type"] = "text",
+					["fontSize"] = 10,
 					["location"] = {
 						["y"] = -4,
 						["relPoint"] = "TOPLEFT",
@@ -8457,7 +9107,7 @@ Grid2DB = {
 					},
 					["level"] = 6,
 					["textlength"] = 16,
-					["fontSize"] = 10,
+					["fontFlags"] = "NONE",
 				},
 				["icon-left"] = {
 					["type"] = "icon",
@@ -8480,8 +9130,36 @@ Grid2DB = {
 					},
 					["type"] = "border",
 				},
+				["name-5-10"] = {
+					["fontSize"] = 14,
+					["type"] = "text",
+					["shadowDisabled"] = true,
+					["location"] = {
+						["y"] = 7,
+						["relPoint"] = "TOPLEFT",
+						["point"] = "TOPLEFT",
+						["x"] = 0,
+					},
+					["level"] = 7,
+					["textlength"] = 12,
+					["fontFlags"] = "OUTLINE",
+				},
+				["corner-bottom-right2"] = {
+					["location"] = {
+						["y"] = 3,
+						["relPoint"] = "BOTTOMRIGHT",
+						["point"] = "BOTTOMRIGHT",
+						["x"] = -7,
+					},
+					["type"] = "square",
+					["level"] = 6,
+					["size"] = 5,
+				},
 				["background"] = {
 					["type"] = "background",
+				},
+				["mana-5-10-color"] = {
+					["type"] = "bar-color",
 				},
 				["icon-center"] = {
 					["type"] = "icon",
@@ -8497,32 +9175,6 @@ Grid2DB = {
 				},
 				["health-color"] = {
 					["type"] = "bar-color",
-				},
-				["icon-right"] = {
-					["type"] = "icon",
-					["location"] = {
-						["y"] = 0,
-						["relPoint"] = "RIGHT",
-						["point"] = "RIGHT",
-						["x"] = 2,
-					},
-					["level"] = 8,
-					["fontSize"] = 8,
-					["size"] = 12,
-				},
-				["heals-color"] = {
-					["type"] = "bar-color",
-				},
-				["tooltip"] = {
-					["type"] = "tooltip",
-					["showDefault"] = true,
-					["showTooltip"] = 1,
-				},
-				["alpha"] = {
-					["type"] = "alpha",
-				},
-				["text-down-color"] = {
-					["type"] = "text-color",
 				},
 				["heals"] = {
 					["type"] = "bar",
@@ -8543,23 +9195,6 @@ Grid2DB = {
 					["opacity"] = 0.25,
 					["texture"] = "Gradient",
 				},
-				["health"] = {
-					["type"] = "bar",
-					["location"] = {
-						["y"] = 0,
-						["relPoint"] = "CENTER",
-						["point"] = "CENTER",
-						["x"] = 0,
-					},
-					["level"] = 2,
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 0,
-						["g"] = 0,
-						["r"] = 0,
-					},
-					["texture"] = "Flat",
-				},
 				["text-up"] = {
 					["type"] = "text",
 					["location"] = {
@@ -8571,6 +9206,92 @@ Grid2DB = {
 					["level"] = 7,
 					["textlength"] = 6,
 					["fontSize"] = 8,
+				},
+				["corner-top-right"] = {
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "TOPRIGHT",
+						["point"] = "TOPRIGHT",
+						["x"] = 0,
+					},
+					["type"] = "square",
+					["level"] = 9,
+					["size"] = 5,
+				},
+				["heals-color"] = {
+					["type"] = "bar-color",
+				},
+				["tooltip"] = {
+					["type"] = "tooltip",
+					["showDefault"] = true,
+					["showTooltip"] = 1,
+				},
+				["alpha"] = {
+					["type"] = "alpha",
+				},
+				["icon-right"] = {
+					["type"] = "icon",
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "RIGHT",
+						["point"] = "RIGHT",
+						["x"] = 2,
+					},
+					["level"] = 8,
+					["fontSize"] = 8,
+					["size"] = 12,
+				},
+				["name-5-10-color"] = {
+					["type"] = "text-color",
+				},
+				["text-down-color"] = {
+					["type"] = "text-color",
+				},
+				["health"] = {
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 0,
+					},
+					["type"] = "bar",
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "CENTER",
+						["point"] = "CENTER",
+						["x"] = 0,
+					},
+					["backColor"] = {
+						["a"] = 0.2346371412277222,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+					["orientation"] = "HORIZONTAL",
+					["level"] = 2,
+					["backTexture"] = "Flat",
+					["texture"] = "Flat",
+				},
+				["mana-5-10"] = {
+					["type"] = "bar",
+					["backColor"] = {
+						["a"] = 0.5039972066879272,
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 0,
+					},
+					["width"] = 80,
+					["height"] = 3,
+					["orientation"] = "HORIZONTAL",
+					["location"] = {
+						["y"] = -4,
+						["relPoint"] = "BOTTOMRIGHT",
+						["point"] = "BOTTOMRIGHT",
+						["x"] = 0,
+					},
+					["level"] = 3,
+					["backTexture"] = "Aluminium",
+					["texture"] = "Aluminium",
 				},
 				["corner-bottom-left"] = {
 					["type"] = "square",
@@ -8592,16 +9313,25 @@ Grid2DB = {
 				["text-up-color"] = {
 					["type"] = "text-color",
 				},
-				["corner-top-right"] = {
+				["mana"] = {
+					["orientation"] = "HORIZONTAL",
+					["type"] = "bar",
 					["location"] = {
 						["y"] = 0,
-						["relPoint"] = "TOPRIGHT",
-						["point"] = "TOPRIGHT",
+						["relPoint"] = "BOTTOMRIGHT",
+						["point"] = "BOTTOMRIGHT",
 						["x"] = 0,
 					},
-					["type"] = "square",
-					["level"] = 9,
-					["size"] = 5,
+					["backColor"] = {
+						["a"] = 0.5039972066879272,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+					["backTexture"] = "Clean",
+					["level"] = 3,
+					["height"] = 2,
+					["texture"] = "Clean",
 				},
 				["side-bottom"] = {
 					["location"] = {
@@ -8615,31 +9345,133 @@ Grid2DB = {
 					["size"] = 5,
 				},
 			},
+			["statuses"] = {
+				["buff-Regrowth-mine"] = {
+					["type"] = "buff",
+					["spellName"] = 8936,
+					["mine"] = 1,
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 0.6549019607843137,
+						["g"] = 1,
+						["b"] = 0.01568627450980392,
+					},
+				},
+				["target"] = {
+					["color1"] = {
+						["a"] = 0,
+						["r"] = 0,
+						["b"] = 0.3137254901960784,
+					},
+				},
+				["threat"] = {
+					["color2"] = {
+						["b"] = 0.02352941176470588,
+						["g"] = 0,
+						["r"] = 1,
+					},
+					["color3"] = {
+						["g"] = 0,
+						["b"] = 0.0784313725490196,
+					},
+				},
+				["buff-Rejuvenation-mine"] = {
+					["type"] = "buff",
+					["spellName"] = 774,
+					["mine"] = 1,
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 0,
+						["g"] = 1,
+						["b"] = 0.1411764705882353,
+					},
+				},
+				["debuff-Curse"] = {
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+				},
+				["debuff-Poison"] = {
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+				},
+			},
+			["versions"] = {
+				["Grid2"] = 9,
+				["Grid2RaidDebuffs"] = 4,
+			},
 			["statusMap"] = {
-				["health-color"] = {
-					["classcolor"] = 99,
+				["corner-top-left"] = {
+				},
+				["mana-color"] = {
+					["mana"] = 50,
+					["power"] = 51,
+				},
+				["corner-bottom-right"] = {
+					["buff-Rejuvenation-mine"] = 50,
 				},
 				["text-down"] = {
 					["name"] = 99,
 				},
+				["mana"] = {
+					["power"] = 51,
+				},
+				["border"] = {
+					["threat"] = 50,
+				},
+				["text-down-color"] = {
+				},
+				["mana-5-10-color"] = {
+					["power"] = 50,
+				},
+				["icon-center"] = {
+					["ready-check"] = 150,
+					["raid-debuffs"] = 155,
+					["death"] = 155,
+				},
+				["heals"] = {
+					["heals-incoming"] = 99,
+				},
+				["corner-top-right"] = {
+					["debuff-Poison"] = 50,
+					["debuff-Curse"] = 51,
+				},
 				["heals-color"] = {
 					["classcolor"] = 99,
-				},
-				["icon-left"] = {
-					["raid-icon-player"] = 155,
 				},
 				["alpha"] = {
 					["offline"] = 97,
 					["range"] = 99,
 					["death"] = 98,
 				},
-				["heals"] = {
-					["heals-incoming"] = 99,
+				["icon-left"] = {
+					["raid-icon-player"] = 155,
+				},
+				["name-5-10"] = {
+					["name"] = 50,
+				},
+				["name-5-10-color"] = {
 				},
 				["health"] = {
 					["health-current"] = 99,
 				},
-				["text-down-color"] = {
+				["mana-5-10"] = {
+					["power"] = 50,
 				},
 				["text-up"] = {
 					["charmed"] = 65,
@@ -8655,13 +9487,36 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
-				["border"] = {
-					["threat"] = 50,
+				["health-color"] = {
+					["classcolor"] = 99,
 				},
-				["icon-center"] = {
-					["ready-check"] = 150,
-					["raid-debuffs"] = 155,
-					["death"] = 155,
+				["corner-bottom-right2"] = {
+					["buff-Regrowth-mine"] = 50,
+				},
+			},
+			["themes"] = {
+				["enabled"] = {
+					["party"] = 1,
+					["default"] = 1,
+					["10"] = 2,
+				},
+				["indicators"] = {
+					{
+						["mana"] = true,
+						["text-down"] = true,
+					}, -- [1]
+					{
+						["mana"] = true,
+						["text-down"] = true,
+					}, -- [2]
+					[0] = {
+						["name-5-10"] = true,
+						["mana-5-10"] = true,
+					},
+				},
+				["names"] = {
+					"5", -- [1]
+					"10", -- [2]
 				},
 			},
 		},
@@ -8869,6 +9724,17 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
+				["buff-Renew-mine"] = {
+					["spellName"] = 25315,
+					["type"] = "buff",
+					["mine"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
 				["buff-PowerWordShield"] = {
 					["type"] = "buff",
 					["spellName"] = 10901,
@@ -8887,17 +9753,6 @@ Grid2DB = {
 						["r"] = 0,
 						["g"] = 0.2,
 						["b"] = 0.9,
-					},
-				},
-				["buff-Renew-mine"] = {
-					["spellName"] = 25315,
-					["type"] = "buff",
-					["mine"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
 					},
 				},
 			},

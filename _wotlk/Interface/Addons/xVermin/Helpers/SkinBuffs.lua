@@ -13,17 +13,6 @@ local frame, frameBorder, frameCount, color, B_spellId, D_spellId, B_unitCaster,
 local frameCooldown, B_spellName, D_spellName
 
 local function SkinTarget()
-	if TargetFrameToT:IsVisible() then
-		for i = 1, 32 do
-			if _G['TargetFrameToTBuff' .. i] then
-				_G['TargetFrameToTBuff' .. i]:Hide()
-			end
-			if _G['TargetFrameToTDebuff' .. i] then
-				_G['TargetFrameToTDebuff' .. i]:Hide()
-			end
-		end
-	end
-
 	if TargetFrame:IsShown() then
 		hasPet, isHunterPet = HasPetUI()
 		if hasPet then
@@ -189,17 +178,6 @@ local function SkinPet()
 end
 
 local function SkinFocus()
-	if FocusFrameToT:IsVisible() then
-		for i = 1, 32 do
-			if _G['FocusFrameToTBuff' .. i] then
-				_G['FocusFrameToTBuff' .. i]:Hide()
-			end
-			if _G['FocusFrameToTDebuff' .. i] then
-				_G['FocusFrameToTDebuff' .. i]:Hide()
-			end
-		end
-	end
-
 	if FocusFrame:IsShown() then
 		hasPet, isHunterPet = HasPetUI()
 		if hasPet then
@@ -317,3 +295,46 @@ local pf = CreateFrame('Frame')
 -- 	end
 -- )
 PetFrame:HookScript('OnUpdate', SkinPet)
+
+TargetFrameToT:HookScript(
+	'OnShow',
+	function()
+		for i = 1, 32 do
+			if _G['TargetFrameToTBuff' .. i] then
+				_G['TargetFrameToTBuff' .. i]:Hide()
+			end
+			if _G['TargetFrameToTDebuff' .. i] then
+				_G['TargetFrameToTDebuff' .. i]:Hide()
+			end
+		end
+	end
+)
+
+FocusFrameToT:HookScript(
+	'OnShow',
+	function()
+		for i = 1, 32 do
+			if _G['FocusFrameToTBuff' .. i] then
+				_G['FocusFrameToTBuff' .. i]:Hide()
+			end
+			if _G['FocusFrameToTDebuff' .. i] then
+				_G['FocusFrameToTDebuff' .. i]:Hide()
+			end
+		end
+	end
+)
+
+-- hooksecurefunc(
+-- 	TargetFrameToT,
+-- 	'Hide',
+-- 	function(self)
+-- 		self:Show()
+-- 	end
+-- )
+-- hooksecurefunc(
+-- 	FocusFrameToT,
+-- 	'Hide',
+-- 	function(self)
+-- 		self:Show()
+-- 	end
+-- )

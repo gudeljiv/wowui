@@ -1,31 +1,37 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[30] = {
+		[59] = {
 		},
 	},
-	["currentStep"] = 30,
+	["currentStep"] = 59,
 	["phase"] = 6,
 	["currentGuideGroup"] = "Horde 1-30",
 	["flightPaths"] = {
 	},
 	["xprate"] = 1,
 	["JoyousJourneys"] = true,
-	["GA"] = false,
-	["frameHeight"] = 125.000129699707,
+	["hardcore"] = false,
+	["SoM"] = 1,
 	["currentGuideName"] = "01-10 Durotar",
 	["stepSkip"] = {
+		[48] = true,
 		[14] = true,
+		[54] = true,
 		[29] = true,
+		[36] = true,
+		[45] = true,
+		[31] = true,
+		[34] = true,
+		[19] = true,
+		[15] = true,
+		[3] = true,
 		[16] = true,
 		[5] = true,
-		[19] = true,
-		[3] = true,
 		[18] = true,
-		[15] = true,
 	},
-	["SoM"] = 1,
-	["hardcore"] = false,
+	["frameHeight"] = 125.000129699707,
+	["GA"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -51,17 +57,17 @@ RXPCTrackingData = {
 							["xp"] = 169144,
 							["count"] = 72,
 						},
-						["The Slave Pens"] = {
-							["xp"] = 144060,
-							["count"] = 110,
+						["Hellfire Peninsula"] = {
+							["xp"] = 5520,
+							["count"] = 6,
 						},
 						["Terokkar Forest"] = {
 							["xp"] = 90129,
 							["count"] = 51,
 						},
-						["Hellfire Peninsula"] = {
-							["xp"] = 5520,
-							["count"] = 6,
+						["The Slave Pens"] = {
+							["xp"] = 144060,
+							["count"] = 110,
 						},
 					},
 					["timestamp"] = {
@@ -69,10 +75,10 @@ RXPCTrackingData = {
 							["monthDay"] = 22,
 							["day"] = 0,
 							["month"] = 9,
-							["minute"] = 27,
+							["weekday"] = 5,
 							["year"] = 2022,
 							["hour"] = 19,
-							["weekday"] = 5,
+							["minute"] = 27,
 						},
 						["finished"] = 799807,
 					},
@@ -93,10 +99,10 @@ RXPCTrackingData = {
 							["monthDay"] = 22,
 							["day"] = 0,
 							["month"] = 9,
-							["minute"] = 27,
+							["weekday"] = 5,
 							["year"] = 2022,
 							["hour"] = 19,
-							["weekday"] = 5,
+							["minute"] = 27,
 						},
 						["started"] = 1664446024,
 					},
@@ -122,10 +128,10 @@ RXPCTrackingData = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 10,
-							["minute"] = 24,
+							["weekday"] = 1,
 							["year"] = 2022,
 							["hour"] = 18,
-							["weekday"] = 1,
+							["minute"] = 24,
 						},
 						["finished"] = 3331,
 					},
@@ -150,20 +156,20 @@ RXPCTrackingData = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 10,
-							["minute"] = 24,
+							["weekday"] = 1,
 							["year"] = 2022,
 							["hour"] = 18,
-							["weekday"] = 1,
+							["minute"] = 24,
 						},
 						["finished"] = 4420,
 						["dateFinished"] = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 10,
-							["minute"] = 42,
+							["weekday"] = 1,
 							["year"] = 2022,
 							["hour"] = 18,
-							["weekday"] = 1,
+							["minute"] = 42,
 						},
 						["started"] = 3332,
 					},
@@ -180,8 +186,8 @@ RXPCTrackingData = {
 					["deaths"] = 0,
 					["mobs"] = {
 						["Durotar"] = {
-							["xp"] = 1909,
-							["count"] = 19,
+							["xp"] = 2016,
+							["count"] = 20,
 						},
 					},
 					["timestamp"] = {
@@ -189,10 +195,20 @@ RXPCTrackingData = {
 							["monthDay"] = 2,
 							["day"] = 0,
 							["month"] = 10,
-							["minute"] = 42,
+							["weekday"] = 1,
 							["year"] = 2022,
 							["hour"] = 18,
-							["weekday"] = 1,
+							["minute"] = 42,
+						},
+						["finished"] = 5015,
+						["dateFinished"] = {
+							["monthDay"] = 3,
+							["day"] = 0,
+							["month"] = 10,
+							["minute"] = 51,
+							["year"] = 2022,
+							["hour"] = 20,
+							["weekday"] = 2,
 						},
 						["started"] = 4421,
 					},
@@ -204,6 +220,26 @@ RXPCTrackingData = {
 						},
 					},
 				}, -- [4]
+				{
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 3,
+							["day"] = 0,
+							["month"] = 10,
+							["minute"] = 51,
+							["year"] = 2022,
+							["hour"] = 20,
+							["weekday"] = 2,
+						},
+						["started"] = 5016,
+					},
+					["quests"] = {
+					},
+				}, -- [5]
 			},
 		},
 	},
@@ -256,10 +292,10 @@ RXPCComms = {
 					["class"] = "PRIEST",
 					["xp"] = 1268,
 				},
-				["Lecarde"] = {
-					["timePlayed"] = 1404.817000000039,
-					["class"] = "PRIEST",
-					["xp"] = 1838,
+				["Favienne"] = {
+					["timePlayed"] = 173.0210000000661,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 796,
 				},
 				["Maxymilius"] = {
 					["timePlayed"] = 1404.817000000039,
@@ -271,29 +307,29 @@ RXPCComms = {
 					["class"] = "SHAMAN",
 					["xp"] = 920,
 				},
-				["Ylvin"] = {
-					["timePlayed"] = 1404.817000000039,
-					["class"] = "MAGE",
-					["xp"] = 1838,
+				["Nyrin"] = {
+					["timePlayed"] = 173.0210000000661,
+					["class"] = "DRUID",
+					["xp"] = 796,
 				},
 				["Talanjii"] = {
 					["timePlayed"] = 85.72200000006706,
 					["class"] = "PRIEST",
 					["xp"] = 1376,
 				},
-				["Brutikus"] = {
-					["timePlayed"] = 85.72200000006706,
-					["class"] = "WARRIOR",
-					["xp"] = 1376,
+				["Hulari"] = {
+					["timePlayed"] = 1545.662000000011,
+					["class"] = "ROGUE",
+					["xp"] = 920,
 				},
 				["Nayld"] = {
 					["timePlayed"] = 173.0210000000661,
 					["class"] = "ROGUE",
 					["xp"] = 796,
 				},
-				["Litenshaman"] = {
-					["timePlayed"] = 1389.503000000026,
-					["class"] = "SHAMAN",
+				["Wixë"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "WARLOCK",
 					["xp"] = 1268,
 				},
 				["Sharingen"] = {
@@ -301,10 +337,10 @@ RXPCComms = {
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 920,
 				},
-				["Rompido"] = {
-					["timePlayed"] = 71.13700000010431,
-					["class"] = "DEATHKNIGHT",
-					["xp"] = 1376,
+				["Johnylecitel"] = {
+					["timePlayed"] = 883.7549999998882,
+					["class"] = "PRIEST",
+					["xp"] = 1268,
 				},
 				["Ypers"] = {
 					["timePlayed"] = 1344.199000000022,
@@ -326,14 +362,14 @@ RXPCComms = {
 					["class"] = "PALADIN",
 					["xp"] = 500,
 				},
-				["Johnylecitel"] = {
-					["timePlayed"] = 883.7549999998882,
-					["class"] = "PRIEST",
-					["xp"] = 1268,
+				["Rompido"] = {
+					["timePlayed"] = 71.13700000010431,
+					["class"] = "DEATHKNIGHT",
+					["xp"] = 1376,
 				},
-				["Wixë"] = {
-					["timePlayed"] = 883.7549999998882,
-					["class"] = "WARLOCK",
+				["Litenshaman"] = {
+					["timePlayed"] = 1389.503000000026,
+					["class"] = "SHAMAN",
 					["xp"] = 1268,
 				},
 				["Jaffrost"] = {
@@ -341,25 +377,25 @@ RXPCComms = {
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 920,
 				},
-				["Hulari"] = {
-					["timePlayed"] = 1545.662000000011,
-					["class"] = "ROGUE",
-					["xp"] = 920,
+				["Brutikus"] = {
+					["timePlayed"] = 85.72200000006706,
+					["class"] = "WARRIOR",
+					["xp"] = 1376,
 				},
-				["Nyrin"] = {
-					["timePlayed"] = 173.0210000000661,
-					["class"] = "DRUID",
-					["xp"] = 796,
+				["Ylvin"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "MAGE",
+					["xp"] = 1838,
 				},
 				["Ilthe"] = {
 					["timePlayed"] = 173.0210000000661,
 					["class"] = "DEATHKNIGHT",
 					["xp"] = 796,
 				},
-				["Favienne"] = {
-					["timePlayed"] = 173.0210000000661,
-					["class"] = "DEATHKNIGHT",
-					["xp"] = 796,
+				["Lecarde"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "PRIEST",
+					["xp"] = 1838,
 				},
 			},
 		},
@@ -373,6 +409,16 @@ RXPCComms = {
 				},
 			},
 			["players"] = {
+				["Greyworm"] = {
+					["timePlayed"] = 285.0370000000112,
+					["class"] = "HUNTER",
+					["xp"] = 42,
+				},
+				["Gammorg"] = {
+					["timePlayed"] = 75.80500000005122,
+					["class"] = "HUNTER",
+					["xp"] = 33,
+				},
 				["Netrebnic"] = {
 					["timePlayed"] = 0,
 					["class"] = "WARRIOR",
@@ -397,11 +443,18 @@ RXPCSettings = {
 			["enableTracker"] = false,
 			["enableFlyStepAnnouncements"] = false,
 			["alwaysSendBranded"] = false,
-			["checkVersions"] = false,
-			["enableLevelUpAnnounceGroup"] = false,
 			["enableLevelUpAnnounceSolo"] = false,
+			["enableLevelUpAnnounceGroup"] = false,
+			["checkVersions"] = false,
 		},
 		["Provokator - Jin'do"] = {
+			["enableTracker"] = false,
+			["enableFlyStepAnnouncements"] = false,
+			["enableLevelUpAnnounceGroup"] = false,
+			["enableLevelUpAnnounceSolo"] = false,
+			["checkVersions"] = false,
+			["alwaysSendBranded"] = false,
+			["enableCompleteStepAnnouncements"] = false,
 		},
 	},
 }

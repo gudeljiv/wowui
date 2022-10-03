@@ -10,7 +10,7 @@ Postal3DB = {
 				"Moolatz|Golemagg|Horde|61|DRUID", -- [5]
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [6]
 				"Mxzq|Golemagg|Horde|70|HUNTER", -- [7]
-				"Provokator|Jin'do|Horde|2|HUNTER", -- [8]
+				"Provokator|Jin'do|Horde|7|HUNTER", -- [8]
 				"Tandaram|Jin'do|Horde|1|WARRIOR", -- [9]
 				"Tudum|Jin'do|Horde|1|WARRIOR", -- [10]
 				"Vermina|Golemagg|Horde|29|PALADIN", -- [11]
@@ -30,8 +30,8 @@ Postal3DB = {
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
 		["Provokator - Jin'do"] = "Provokator - Jin'do",
-		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
 		["Wells - Jin'do"] = "Wells - Jin'do",
+		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
 		["Tudum - Jin'do"] = "Tudum - Jin'do",
 	},
 	["profiles"] = {
@@ -55,9 +55,9 @@ Postal3DB = {
 		},
 		["Provokator - Jin'do"] = {
 		},
-		["Tandaram - Jin'do"] = {
-		},
 		["Wells - Jin'do"] = {
+		},
+		["Tandaram - Jin'do"] = {
 		},
 		["Tudum - Jin'do"] = {
 		},

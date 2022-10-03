@@ -19,20 +19,17 @@ local function xInstallAddon()
 	SetCVar('AutoInteract', 0)
 	SetCVar('cursorsizepreferred', 0)
 
-	SetActionBarToggles(1, 1, 1, 1, 1)
-	MultiActionBar_Update()
-
 	ShowHelm(false)
 	ShowCloak(false)
 
 	if Grid2 then
-		Grid2.db:SetProfile('Default')
+		Grid2.db:SetProfile('xVermin')
 	end
 	if Details then
-		Details:ApplyProfile('Default')
+		Details:ApplyProfile('xVermin')
 	end
 	if Plater then
-		Plater.db:SetProfile('Default')
+		Plater.db:SetProfile('xVermin')
 	end
 	if TMW then
 		TMW.db:SetProfile(xVermin.Class)
@@ -41,11 +38,12 @@ local function xInstallAddon()
 		end
 	end
 
-	local action_bars = {_G['InterfaceOptionsActionBarsPanelBottomLeft'], _G['InterfaceOptionsActionBarsPanelBottomRight'], _G['InterfaceOptionsActionBarsPanelRight'], _G['InterfaceOptionsActionBarsPanelRightTwo']}
-	for i = 1, #action_bars do
-		action_bars[i]:SetChecked(1)
-		action_bars[i]:GetScript('OnClick')(action_bars[i])
-	end
+	-- SetActionBarToggles(1, 1, 1, 1, 1)
+	-- local action_bars = {_G['InterfaceOptionsActionBarsPanelBottomLeft'], _G['InterfaceOptionsActionBarsPanelBottomRight'], _G['InterfaceOptionsActionBarsPanelRight'], _G['InterfaceOptionsActionBarsPanelRightTwo']}
+	-- for i = 1, #action_bars do
+	-- 	action_bars[i]:SetChecked(1)
+	-- 	action_bars[i]:GetScript('OnClick')(action_bars[i])
+	-- end
 end
 
 SLASH_XINSTALL1 = '/xinstall'
@@ -111,6 +109,8 @@ f:SetScript(
 			PlayerFrameHealthBarText:ClearAllPoints()
 			PlayerFrameHealthBarText:SetPoint('CENTER', PlayerFrameHealthBar, 'CENTER', 0, 0)
 			PlayerFrameHealthBarText:SetScale(0.85)
+			PlayerName:ClearAllPoints()
+			PlayerName:SetPoint('CENTER', PlayerFrameBackground, 'CENTER', 0, 10)
 
 			PlayerFrameAlternateManaBar:RegisterEvent('PLAYER_ENTERING_WORLD')
 			PlayerFrameAlternateManaBar:SetScript(
@@ -129,7 +129,12 @@ f:SetScript(
 			PlayerFrame:HookScript(
 				'OnUpdate',
 				function()
-					PlayerFrameHealthBarText:SetText(xVermin:FormatValue(UnitHealth('player')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('player')))
+					if UnitHealth('player') > 0 then
+						PlayerFrameHealthBarText:SetText(xVermin:FormatValue(UnitHealth('player')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('player')))
+					else
+						PlayerFrameHealthBarText:Hide()
+						PlayerFrameManaBarText:Hide()
+					end
 				end
 			)
 
@@ -144,13 +149,20 @@ f:SetScript(
 			TargetFrameTextureFrame.HealthBarText:ClearAllPoints()
 			TargetFrameTextureFrame.HealthBarText:SetPoint('CENTER', TargetFrameHealthBar, 'CENTER', 0, 0)
 			TargetFrameTextureFrame.HealthBarText:SetScale(0.85)
+			TargetFrameTextureFrameName:ClearAllPoints()
+			TargetFrameTextureFrameName:SetPoint('CENTER', TargetFrameNameBackground, 'CENTER', 0, -1)
 			TargetFrameNameBackground:SetVertexColor(0, 0, 0, 0.5)
 			TargetFrameNameBackground.SetVertexColor = function()
 			end
 			TargetFrame:HookScript(
 				'OnUpdate',
 				function()
-					TargetFrameTextureFrame.HealthBarText:SetText(xVermin:FormatValue(UnitHealth('target')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('target')))
+					if UnitHealth('target') > 0 then
+						TargetFrameTextureFrame.HealthBarText:SetText(xVermin:FormatValue(UnitHealth('target')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('target')))
+					else
+						TargetFrameTextureFrame.HealthBarText:Hide()
+						TargetFrameTextureFrame.ManaBarText:Hide()
+					end
 				end
 			)
 
@@ -165,13 +177,20 @@ f:SetScript(
 			FocusFrameTextureFrame.HealthBarText:ClearAllPoints()
 			FocusFrameTextureFrame.HealthBarText:SetPoint('CENTER', FocusFrameHealthBar, 'CENTER', 0, 0)
 			FocusFrameTextureFrame.HealthBarText:SetScale(0.85)
+			FocusFrameTextureFrameName:ClearAllPoints()
+			FocusFrameTextureFrameName:SetPoint('CENTER', FocusFrameNameBackground, 'CENTER', 0, -1)
 			FocusFrameNameBackground:SetVertexColor(0, 0, 0, 0.5)
 			FocusFrameNameBackground.SetVertexColor = function()
 			end
 			FocusFrame:HookScript(
 				'OnUpdate',
 				function()
-					FocusFrameTextureFrame.HealthBarText:SetText(xVermin:FormatValue(UnitHealth('focus')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('focus')))
+					if UnitHealth('focus') > 0 then
+						FocusFrameTextureFrame.HealthBarText:SetText(xVermin:FormatValue(UnitHealth('focus')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('focus')))
+					else
+						FocusFrameTextureFrame.HealthBarText:Hide()
+						FocusFrameTextureFrame.ManaBarText:Hide()
+					end
 				end
 			)
 

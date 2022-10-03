@@ -44,7 +44,7 @@ GMMONEY = {
 			["CLASS"] = "WARLOCK",
 		},
 		["Vermin"] = {
-			["GOLD"] = 20146547,
+			["GOLD"] = 20582488,
 			["CLASS"] = "WARRIOR",
 		},
 	},
@@ -74,6 +74,12 @@ GMMONEY = {
 			["CLASS"] = "WARRIOR",
 		},
 	},
+	["Stonespine"] = {
+		["Vermins"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+	},
 	["Jin'do"] = {
 		["Battlearm"] = {
 			["GOLD"] = 0,
@@ -96,14 +102,8 @@ GMMONEY = {
 			["CLASS"] = "DRUID",
 		},
 		["Provokator"] = {
-			["GOLD"] = 86,
+			["GOLD"] = 591,
 			["CLASS"] = "HUNTER",
-		},
-	},
-	["Stonespine"] = {
-		["Vermins"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
 		},
 	},
 }
