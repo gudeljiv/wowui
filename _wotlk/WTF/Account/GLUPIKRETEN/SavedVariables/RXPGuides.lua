@@ -33,9 +33,11 @@ RXPDB = {
 		["Battitude - Golemagg"] = "global",
 		["Vermin - Golemagg"] = "global",
 		["Battlearm - Jin'do"] = "global",
+		["Kaonac - Jin'do"] = "global",
 		["Provokator - Jin'do"] = "global",
 		["Wells - Jin'do"] = "global",
 		["Tandaram - Jin'do"] = "global",
+		["Tudum - Jin'do"] = "global",
 	},
 	["profiles"] = {
 		["global"] = {

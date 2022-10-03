@@ -25,19 +25,27 @@ local function xInstallAddon()
 	ShowHelm(false)
 	ShowCloak(false)
 
-	-- SHOW_MULTI_ACTIONBAR_1 = 1
-	-- SHOW_MULTI_ACTIONBAR_2 = 1
-	-- SHOW_MULTI_ACTIONBAR_3 = 1
-	-- SHOW_MULTI_ACTIONBAR_4 = 1
-	-- ALWAYS_SHOW_MULTIBARS = 1
-	-- LOCK_ACTIONBAR = 1
-	-- InterfaceOptions_UpdateMultiActionBars()
+	if Grid2 then
+		Grid2.db:SetProfile('Default')
+	end
+	if Details then
+		Details:ApplyProfile('Default')
+	end
+	if Plater then
+		Plater.db:SetProfile('Default')
+	end
+	if TMW then
+		TMW.db:SetProfile(xVermin.Class)
+		if not TMW.db.profile.Locked then
+			TMW:LockToggle()
+		end
+	end
 
-	Grid2.db:SetProfile('Default')
-	Details:ApplyProfile('Default')
-	Plater.db:SetProfile('Default')
-	TMW.db:SetProfile(xVermin.Class)
-	TMW:LockToggle()
+	local action_bars = {_G['InterfaceOptionsActionBarsPanelBottomLeft'], _G['InterfaceOptionsActionBarsPanelBottomRight'], _G['InterfaceOptionsActionBarsPanelRight'], _G['InterfaceOptionsActionBarsPanelRightTwo']}
+	for i = 1, #action_bars do
+		action_bars[i]:SetChecked(1)
+		action_bars[i]:GetScript('OnClick')(action_bars[i])
+	end
 end
 
 SLASH_XINSTALL1 = '/xinstall'

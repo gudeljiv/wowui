@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 6310,
+	["session"] = 6314,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3793,5 +3793,21 @@ BugGrabberDB = {
 			["session"] = 6306,
 			["counter"] = 122,
 		}, -- [486]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:43: attempt to get length of global 'a' (a nil value)",
+			["time"] = "2022/10/03 14:39:52",
+			["locals"] = "action_bars = <table> {\n 1 = InterfaceOptionsActionBarsPanelBottomLeft {\n }\n 2 = InterfaceOptionsActionBarsPanelBottomRight {\n }\n 3 = InterfaceOptionsActionBarsPanelRight {\n }\n 4 = InterfaceOptionsActionBarsPanelRightTwo {\n }\n}\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = InterfaceOptionsActionBarsPanelRight {\n 0 = <userdata>\n type = 1\n label = \"rightActionBar\"\n Enable = <function> defined @Interface\\FrameXML\\OptionsPanelTemplates.lua:456\n Text = InterfaceOptionsActionBarsPanelRightText {\n }\n event = \"SHOW_MULTIBAR3_TEXT\"\n uvar = \"SHOW_MULTI_ACTIONBAR_3\"\n Disable = <function> defined @Interface\\FrameXML\\OptionsPanelTemplates.lua:455\n GetValue = <function> defined *:OnLoad:5\n tooltipText = \"Toggles an optional actionbar on the right side of the screen.\"\n dependentControls = <table> {\n }\n value = \"0\"\n defaultValue = \"0\"\n setFunc = <function> defined @Interface_Wrath\\FrameXML\\InterfaceOptionsPanels.lua:1156\n SetValue = <function> defined @Interface\\FrameXML\\OptionsPanelTemplates.lua:454\n}\n(*temporary) = InterfaceOptionsActionBarsPanelRightTwo {\n 0 = <userdata>\n type = 1\n label = \"rightTwoActionBar\"\n Enable = <function> defined @Interface\\FrameXML\\OptionsPanelTemplates.lua:456\n Text = InterfaceOptionsActionBarsPanelRightTwoText {\n }\n defaultValue = \"0\"\n SetValue = <function> defined @Interface\\FrameXML\\OptionsPanelTemplates.lua:454\n uvar = \"SHOW_MULTI_ACTIONBAR_4\"\n setFunc = <function> defined @Interface_Wrath\\FrameXML\\InterfaceOptionsPanels.lua:1156\n tooltipText = \"Toggles an additional optional actionbar on the right side of the screen.\"\n value = \"0\"\n GetValue = <function> defined *:OnLoad:5\n event = \"SHOW_MULTIBAR4_TEXT\"\n Disable = <function> defined @Interface\\FrameXML\\OptionsPanelTemplates.lua:455\n}\n(*temporary) = <table> {\n cg = 6\n domain = \"profile\"\n mg = 5\n}\n(*temporary) = TellMeWhen_Group5 {\n 0 = <userdata>\n Strata = \"MEDIUM\"\n Point = <table> {\n }\n Scale = 0.400000\n Rows = 1\n TextureName = \"Details Flat\"\n resizeButton = <unnamed> {\n }\n TimerBar_EnableColors = false\n OnlyInCombat = true\n Columns = 1\n Domain = \"profile\"\n SortPriorities = <table> {\n }\n EnabledProfiles = <table> {\n }\n SettingsPerView = <table> {\n }\n viewData = <table> {\n }\n Conditions = <table> {\n }\n Components = <table> {\n }\n TimerBar_MiddleColor = \"ffffff00\"\n ComponentsLookup = <table> {\n }\n TimerBar_CompleteColor = \"ff00ff00\"\n Modules = <table> {\n }\n Role = 7\n TimerBar_StartColor = \"ffff0000\"\n ID = 5\n Level = 10\n EnabledSpecs = <table> {\n }\n Controlled = false\n Enabled = true\n Locked = true\n View = \"icon\"\n numIcons = 1\n BackdropColor_Enable = false\n Icons = <table> {\n }\n OnEvent = <function> defined @Interface\\AddOns\\TellMeWhen\\Components\\Core\\Group.lua:223\n LayoutDirection = 2\n GUID = \"TMW:group:1YWsxTHpfSuR\"\n Name = \"ROTATION TOPLEFT\"\n ShrinkGroup = false\n 1 = TellMeWhen_Group5_Icon1 {\n }\n __shown = 1\n Alpha = 1\n BackdropColor = \"7f333333\"\n}\n(*temporary) = nil\n(*temporary) = \"attempt to get length of global 'a' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:64\n CheckIfLoadedWithTimer = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:139\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Color = <table> {\n }\n Class = \"WARRIOR\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:46\n Log = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:41\n ClassColor = <table> {\n }\n Config = <table> {\n }\n Debug = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:14\n hex2rgb = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:119\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:107\n Round = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:81\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:92\n WaitTimeUntillAddonLoaded = 30\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:43: in function <Interface\\AddOns\\xVermin\\xVermin.lua:3>\n[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:60: in function <Interface\\AddOns\\xVermin\\xVermin.lua:58>",
+			["session"] = 6311,
+			["counter"] = 1,
+		}, -- [487]
+		{
+			["message"] = "[string \"print(TMW.db.profile.Locked)/rl\"]:1: unexpected symbol near '/'",
+			["time"] = "2022/10/03 14:44:50",
+			["locals"] = "(*temporary) = \"print(TMW.db.profile.Locked)/rl\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 6312,
+			["counter"] = 1,
+		}, -- [488]
 	},
 }

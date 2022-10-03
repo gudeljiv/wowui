@@ -10,8 +10,9 @@ Postal3DB = {
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Provokator - Jin'do"] = "Provokator - Jin'do",
-		["Wells - Jin'do"] = "Wells - Jin'do",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
+		["Wells - Jin'do"] = "Wells - Jin'do",
 	},
 	["global"] = {
 		["BlackBook"] = {
@@ -24,9 +25,10 @@ Postal3DB = {
 				"Mxzq|Golemagg|Horde|70|HUNTER", -- [6]
 				"Provokator|Jin'do|Horde|2|HUNTER", -- [7]
 				"Tandaram|Jin'do|Horde|1|WARRIOR", -- [8]
-				"Vermina|Golemagg|Horde|29|PALADIN", -- [9]
-				"Vermin|Golemagg|Horde|70|WARRIOR", -- [10]
-				"Wells|Jin'do|Horde|8|DRUID", -- [11]
+				"Tudum|Jin'do|Horde|1|WARRIOR", -- [9]
+				"Vermina|Golemagg|Horde|29|PALADIN", -- [10]
+				"Vermin|Golemagg|Horde|70|WARRIOR", -- [11]
+				"Wells|Jin'do|Horde|8|DRUID", -- [12]
 			},
 		},
 	},
@@ -49,9 +51,11 @@ Postal3DB = {
 		},
 		["Provokator - Jin'do"] = {
 		},
-		["Wells - Jin'do"] = {
+		["Tudum - Jin'do"] = {
 		},
 		["Tandaram - Jin'do"] = {
+		},
+		["Wells - Jin'do"] = {
 		},
 	},
 }

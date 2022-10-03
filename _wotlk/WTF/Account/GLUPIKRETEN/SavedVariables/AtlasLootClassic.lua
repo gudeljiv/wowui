@@ -25,24 +25,26 @@ AtlasLootClassicDB = {
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
 		["Mxys - Golemagg"] = "Default",
+		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
 		["Moolatz - Golemagg"] = "Default",
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Vermins - Stonespine"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Vermins - Stonespine"] = "Default",
+		["Whatevs - Stonespine"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
+		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Jaroslav - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
-		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Whatevs - Stonespine"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
 		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
 	},
 	["global"] = {
 		["__addonrevision"] = 3000003,
@@ -263,6 +265,8 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
+		["Kaonac - Jin'do"] = {
+		},
 		["Moolatz - Golemagg"] = {
 			["GUI"] = {
 				["selected"] = {
@@ -314,13 +318,24 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
+		["Kosturko - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+		},
 		["Vermins - Stonespine"] = {
 		},
 		["Battlearm - Golemagg"] = {
-		},
-		["Testxv - Golemagg"] = {
-		},
-		["Battlearm - Hydraxian Waterlords"] = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 			["minimap"] = {
@@ -337,20 +352,9 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
-		["Korupcija - Stonespine"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"Ragefire", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
+		["Battlearm - Hydraxian Waterlords"] = {
+		},
+		["Testxv - Golemagg"] = {
 		},
 		["Vermin - Golemagg"] = {
 			["minimap"] = {
@@ -370,6 +374,21 @@ AtlasLootClassicDB = {
 					"MagistersTerrace", -- [2]
 					4, -- [3]
 					6, -- [4]
+					0, -- [5]
+				},
+			},
+		},
+		["Korupcija - Stonespine"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
 					0, -- [5]
 				},
 			},
@@ -418,21 +437,6 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Kosturko - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"Ragefire", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
-		},
 		["Greenwise - Golemagg"] = {
 			["minimap"] = {
 				["shown"] = false,
@@ -464,6 +468,15 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Tandaram - Jin'do"] = {
+		},
+		["Tudum - Jin'do"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"AhnKahet", -- [2]
+					[5] = 0,
+				},
+			},
 		},
 	},
 }
