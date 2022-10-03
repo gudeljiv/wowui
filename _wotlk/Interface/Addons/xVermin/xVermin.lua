@@ -1,48 +1,83 @@
 local _, xVermin = ...
 
+local function xInstallAddon()
+	SetCVar('autoQuestWatch', 1)
+	SetCVar('autoQuestProgress', 1)
+	SetCVar('instantQuestText', 1)
+	SetCVar('nameplateMaxDistance', 80)
+	SetCVar('ffxGlow', 1)
+	SetCVar('ffxDeath', 0)
+	SetCVar('ffxNether', 0)
+	SetCVar('violenceLevel', 5)
+	SetCVar('cameraDistanceMax', 50)
+	SetCVar('cameraDistanceMaxFactor', 4.0)
+	SetCVar('cameraDistanceMaxZoomFactor', 4.0)
+	SetCVar('chatClassColorOverride', 0)
+	SetCVar('ShowClassColorInFriendlyNameplate', 1)
+	SetCVar('scriptErrors', 1)
+	SetCVar('alwaysShowActionBars', 1)
+	SetCVar('AutoInteract', 0)
+	SetCVar('cursorsizepreferred', 0)
+
+	SetActionBarToggles(1, 1, 1, 1, 1)
+	MultiActionBar_Update()
+
+	ShowHelm(false)
+	ShowCloak(false)
+
+	-- SHOW_MULTI_ACTIONBAR_1 = 1
+	-- SHOW_MULTI_ACTIONBAR_2 = 1
+	-- SHOW_MULTI_ACTIONBAR_3 = 1
+	-- SHOW_MULTI_ACTIONBAR_4 = 1
+	-- ALWAYS_SHOW_MULTIBARS = 1
+	-- LOCK_ACTIONBAR = 1
+	-- InterfaceOptions_UpdateMultiActionBars()
+
+	if not BNToastFrame.SetBackdrop then
+		Mixin(BNToastFrame, BackdropTemplateMixin)
+	end
+	BNToastFrame:ClearAllPoints()
+	BNToastFrame:SetPoint('BOTTOMLEFT', ChatFrame4, 'TOPLEFT', 0, 35)
+	BNToastFrame.CloseButton:Hide()
+	BNToastFrame:SetBackdrop(
+		{
+			bgFile = 'Interface\\Buttons\\WHITE8x8',
+			edgeFile = '',
+			tile = false,
+			tileSize = 0,
+			edgeSize = 0,
+			insets = {left = 0, right = 0, top = 0, bottom = 0}
+		}
+	)
+	BNToastFrame:SetBackdropColor(0, 0, 0, 0.75)
+	BNToastFrame:SetWidth(250)
+	BNToastFrame:CreateBeautyBorder(8)
+	BNToastFrame.ClearAllPoints = function()
+	end
+	BNToastFrame.SetPoint = function()
+	end
+
+	CastingBarFrame.Text:ClearAllPoints()
+	CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)
+
+	Grid:SetProfile('Default')
+	Details:ApplyProfile('Default')
+	Plater.db:SetProfile('Default')
+
+	ReloadUI()
+end
+
+SLASH_XINSTALL1 = '/xinstall'
+SlashCmdList['XINSTALL'] = function(msg)
+	xInstallAddon()
+end
+
 local f = CreateFrame('Frame')
 f:RegisterEvent('PLAYER_ENTERING_WORLD')
 f:SetScript(
 	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
 		if isInitialLogin or isReloadingUi then
-			-- SHOW_MULTI_ACTIONBAR_1 = 1
-			-- SHOW_MULTI_ACTIONBAR_2 = 1
-			-- SHOW_MULTI_ACTIONBAR_3 = 1
-			-- SHOW_MULTI_ACTIONBAR_4 = 1
-			-- ALWAYS_SHOW_MULTIBARS = 1
-			-- LOCK_ACTIONBAR = 1
-			-- InterfaceOptions_UpdateMultiActionBars()
-			SetActionBarToggles(1, 1, 1, 1, 1)
-			MultiActionBar_Update()
-
-			-------------------------------------------
-			-- Reposition toast frame.
-			-------------------------------------------
-			if not BNToastFrame.SetBackdrop then
-				Mixin(BNToastFrame, BackdropTemplateMixin)
-			end
-			BNToastFrame:ClearAllPoints()
-			BNToastFrame:SetPoint('BOTTOMLEFT', ChatFrame4, 'TOPLEFT', 0, 35)
-			BNToastFrame.CloseButton:Hide()
-			BNToastFrame:SetBackdrop(
-				{
-					bgFile = 'Interface\\Buttons\\WHITE8x8',
-					edgeFile = '',
-					tile = false,
-					tileSize = 0,
-					edgeSize = 0,
-					insets = {left = 0, right = 0, top = 0, bottom = 0}
-				}
-			)
-			BNToastFrame:SetBackdropColor(0, 0, 0, 0.75)
-			BNToastFrame:SetWidth(250)
-			BNToastFrame:CreateBeautyBorder(8)
-			BNToastFrame.ClearAllPoints = function()
-			end
-			BNToastFrame.SetPoint = function()
-			end
-
 			LootFrame:HookScript(
 				'OnShow',
 				function(self)
@@ -50,9 +85,6 @@ f:SetScript(
 					LootFrame:SetPoint('BOTTOMLEFT', CustomContainer_Combat, 'TOPLEFT', 450, 500)
 				end
 			)
-
-			CastingBarFrame.Text:ClearAllPoints()
-			CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)
 
 			--------------------------------------------------------------------------------------------------------------------------
 			--------------------------------------------------------------------------------------------------------------------------
@@ -170,25 +202,5 @@ f:SetScript(
 			UIWidgetTopCenterContainerFrame.SetPoint = function()
 			end
 		end
-
-		-- EnableAddOn('Blizzard_CompactRaidFrames')
-		-- EnableAddOn('Blizzard_CUFProfiles')
 	end
 )
-
--- local sr = LibStub('SpellRange-1.0')
--- local rc = LibStub('LibRangeCheck-2.0')
--- PlayerFrame:HookScript(
--- 	'OnUpdate',
--- 	function()
--- 		print('Pummel', sr.IsSpellInRange(25231, 'nameplate1'), IsSpellInRange("Pummel", 'nameplate1'), sr.IsSpellInRange(25231, 'target'), IsSpellInRange(25231, 'target'))
--- 		print('Cleave', sr.IsSpellInRange('Cleave', 'nameplate1'), IsSpellInRange('Cleave', 'nameplate1'), sr.IsSpellInRange('Cleave', 'target'), IsSpellInRange('Cleave', 'target'))
--- 		print('Heroic Strike', sr.IsSpellInRange('Heroic Strike', 'nameplate1'), IsSpellInRange('Heroic Strike', 'nameplate1'), sr.IsSpellInRange('Heroic Strike', 'target'), IsSpellInRange('Heroic Strike', 'target'))
--- 		print('Mortal Strike', sr.IsSpellInRange('Mortal Strike', 'nameplate1'), IsSpellInRange('Mortal Strike', 'nameplate1'), sr.IsSpellInRange('Mortal Strike', 'target'), IsSpellInRange('Mortal Strike', 'target'))
--- 		print('Bloodthirst', sr.IsSpellInRange('Bloodthirst', 'nameplate1'), IsSpellInRange('Bloodthirst', 'nameplate1'), sr.IsSpellInRange('Bloodthirst', 'target'), IsSpellInRange('Bloodthirst', 'target'))
-
--- 		local minRange, maxRange = rc:GetRange('nameplate1')
--- 		print(minRange, maxRange)
-
--- 	end
--- )
