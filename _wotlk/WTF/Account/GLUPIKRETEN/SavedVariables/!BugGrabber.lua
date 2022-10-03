@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 6314,
+	["session"] = 6336,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3788,19 +3788,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [485]
 		{
-			["message"] = "(null)",
-			["time"] = "2022/03/09 13:39:43",
-			["session"] = 6306,
-			["counter"] = 122,
-		}, -- [486]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:43: attempt to get length of global 'a' (a nil value)",
 			["time"] = "2022/10/03 14:39:52",
 			["locals"] = "action_bars = <table> {\n 1 = InterfaceOptionsActionBarsPanelBottomLeft {\n }\n 2 = InterfaceOptionsActionBarsPanelBottomRight {\n }\n 3 = InterfaceOptionsActionBarsPanelRight {\n }\n 4 = InterfaceOptionsActionBarsPanelRightTwo {\n }\n}\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = InterfaceOptionsActionBarsPanelRight {\n 0 = <userdata>\n type = 1\n label = \"rightActionBar\"\n Enable = <function> defined @Interface\\FrameXML\\OptionsPanelTemplates.lua:456\n Text = InterfaceOptionsActionBarsPanelRightText {\n }\n event = \"SHOW_MULTIBAR3_TEXT\"\n uvar = \"SHOW_MULTI_ACTIONBAR_3\"\n Disable = <function> defined @Interface\\FrameXML\\OptionsPanelTemplates.lua:455\n GetValue = <function> defined *:OnLoad:5\n tooltipText = \"Toggles an optional actionbar on the right side of the screen.\"\n dependentControls = <table> {\n }\n value = \"0\"\n defaultValue = \"0\"\n setFunc = <function> defined @Interface_Wrath\\FrameXML\\InterfaceOptionsPanels.lua:1156\n SetValue = <function> defined @Interface\\FrameXML\\OptionsPanelTemplates.lua:454\n}\n(*temporary) = InterfaceOptionsActionBarsPanelRightTwo {\n 0 = <userdata>\n type = 1\n label = \"rightTwoActionBar\"\n Enable = <function> defined @Interface\\FrameXML\\OptionsPanelTemplates.lua:456\n Text = InterfaceOptionsActionBarsPanelRightTwoText {\n }\n defaultValue = \"0\"\n SetValue = <function> defined @Interface\\FrameXML\\OptionsPanelTemplates.lua:454\n uvar = \"SHOW_MULTI_ACTIONBAR_4\"\n setFunc = <function> defined @Interface_Wrath\\FrameXML\\InterfaceOptionsPanels.lua:1156\n tooltipText = \"Toggles an additional optional actionbar on the right side of the screen.\"\n value = \"0\"\n GetValue = <function> defined *:OnLoad:5\n event = \"SHOW_MULTIBAR4_TEXT\"\n Disable = <function> defined @Interface\\FrameXML\\OptionsPanelTemplates.lua:455\n}\n(*temporary) = <table> {\n cg = 6\n domain = \"profile\"\n mg = 5\n}\n(*temporary) = TellMeWhen_Group5 {\n 0 = <userdata>\n Strata = \"MEDIUM\"\n Point = <table> {\n }\n Scale = 0.400000\n Rows = 1\n TextureName = \"Details Flat\"\n resizeButton = <unnamed> {\n }\n TimerBar_EnableColors = false\n OnlyInCombat = true\n Columns = 1\n Domain = \"profile\"\n SortPriorities = <table> {\n }\n EnabledProfiles = <table> {\n }\n SettingsPerView = <table> {\n }\n viewData = <table> {\n }\n Conditions = <table> {\n }\n Components = <table> {\n }\n TimerBar_MiddleColor = \"ffffff00\"\n ComponentsLookup = <table> {\n }\n TimerBar_CompleteColor = \"ff00ff00\"\n Modules = <table> {\n }\n Role = 7\n TimerBar_StartColor = \"ffff0000\"\n ID = 5\n Level = 10\n EnabledSpecs = <table> {\n }\n Controlled = false\n Enabled = true\n Locked = true\n View = \"icon\"\n numIcons = 1\n BackdropColor_Enable = false\n Icons = <table> {\n }\n OnEvent = <function> defined @Interface\\AddOns\\TellMeWhen\\Components\\Core\\Group.lua:223\n LayoutDirection = 2\n GUID = \"TMW:group:1YWsxTHpfSuR\"\n Name = \"ROTATION TOPLEFT\"\n ShrinkGroup = false\n 1 = TellMeWhen_Group5_Icon1 {\n }\n __shown = 1\n Alpha = 1\n BackdropColor = \"7f333333\"\n}\n(*temporary) = nil\n(*temporary) = \"attempt to get length of global 'a' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:64\n CheckIfLoadedWithTimer = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:139\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Color = <table> {\n }\n Class = \"WARRIOR\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:46\n Log = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:41\n ClassColor = <table> {\n }\n Config = <table> {\n }\n Debug = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:14\n hex2rgb = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:119\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:107\n Round = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:81\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:92\n WaitTimeUntillAddonLoaded = 30\n}\n",
 			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:43: in function <Interface\\AddOns\\xVermin\\xVermin.lua:3>\n[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:60: in function <Interface\\AddOns\\xVermin\\xVermin.lua:58>",
 			["session"] = 6311,
 			["counter"] = 1,
-		}, -- [487]
+		}, -- [486]
 		{
 			["message"] = "[string \"print(TMW.db.profile.Locked)/rl\"]:1: unexpected symbol near '/'",
 			["time"] = "2022/10/03 14:44:50",
@@ -3808,6 +3802,100 @@ BugGrabberDB = {
 			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 6312,
 			["counter"] = 1,
+		}, -- [487]
+		{
+			["message"] = "[string \"print(if IsSpellInRange('Bite', 'pet', 'nameplate1'))\"]:1: unexpected symbol near 'if'",
+			["time"] = "2022/10/03 16:56:13",
+			["locals"] = "(*temporary) = \"print(if IsSpellInRange('Bite', 'pet', 'nameplate1'))\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 6315,
+			["counter"] = 1,
 		}, -- [488]
+		{
+			["message"] = "[string \"for index = 1, HasPetSpells() do\"]:1: 'end' expected near '<eof>'",
+			["time"] = "2022/10/03 17:16:21",
+			["locals"] = "(*temporary) = \"for index = 1, HasPetSpells() do\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2977: in function <Interface\\FrameXML\\ChatFrame.lua:2970>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 6317,
+			["counter"] = 1,
+		}, -- [489]
+		{
+			["message"] = "[string \"print(UnitIsExists(\"target\"))\"]:1: attempt to call global 'UnitIsExists' (a nil value)",
+			["time"] = "2022/10/03 17:20:51",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:118\n(*temporary) = nil\n(*temporary) = \"target\"\n(*temporary) = \"attempt to call global 'UnitIsExists' (a nil value)\"\n",
+			["stack"] = "[string \"print(UnitIsExists(\"target\"))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 6317,
+			["counter"] = 2,
+		}, -- [490]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Rotation/AOE.lua:119: attempt to call global 'fawIsSpellInRange' (a nil value)",
+			["time"] = "2022/10/03 17:23:13",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:64\n CheckIfLoadedWithTimer = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:139\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Color = <table> {\n }\n Class = \"HUNTER\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:46\n Log = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:41\n ClassColor = <table> {\n }\n Config = <table> {\n }\n Debug = <function> defined @Interface\\AddOns\\xVermin\\_Debug.lua:14\n hex2rgb = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:119\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:107\n Round = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:81\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\_Core.lua:92\n WaitTimeUntillAddonLoaded = 30\n}\nRangeCheck = <table> {\n initialOnUpdate = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:1137\n harmNoItemsRC = <table> {\n }\n GetFriendMaxChecker = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:923\n GetSmartChecker = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:986\n getRangeAsString = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:813\n checkerCache_Spell = <table> {\n }\n findSpellIndex = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:803\n GetFriendMinChecker = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:902\n init = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:823\n GetMiscChecker = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:958\n scheduleInit = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:1159\n RegisterCallback = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n GetMiscMaxChecker = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:937\n GetHarmCheckers = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:890\n friendNoItemsRC = <table> {\n }\n MeleeRange = 2\n petRC = <table> {\n }\n GetFriendCheckers = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:885\n resRC = <table> {\n }\n UnregisterCallback = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:153\n SPELLS_CHANGED = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:1059\n GetFriendChecker = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:944\n UnregisterAllCallbacks = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n callbacks = <table> {\n }\n harmRC = <table> {\n }\n frame = <unnamed> {\n }\n GetMiscMinChecker = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:916\n activate = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:1173\n LEARNED_SPELL_IN_TAB = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:1047\n miscRC = <table> {\n }\n GetRange = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:1002\n scheduleAuraCheck = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:1165\n GetHarmChecker = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:951\n UNIT_AURA = <function> defined @Interface\\AddOns\\WeakAuras\\Libs\\LibRangeCheck-2.0\\LibRangeCheck-2.0.lua:1069\n checkerCache_Item = <table> {\n }\n GetSmartMaxChecker = <function> defined @Interface\\AddOns\\Weak",
+			["stack"] = "[string \"@Interface\\AddOns\\xVermin\\Rotation/AOE.lua\"]:119: in main chunk",
+			["session"] = 6318,
+			["counter"] = 1,
+		}, -- [491]
+		{
+			["message"] = "(null)",
+			["time"] = "2022/03/09 13:39:43",
+			["session"] = 6318,
+			["counter"] = 125,
+		}, -- [492]
+		{
+			["message"] = "[string \"PetDebuffsMover:Hide()\"]:1: attempt to index global 'PetDebuffsMover' (a nil value)",
+			["time"] = "2022/10/03 17:49:54",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'PetDebuffsMover' (a nil value)\"\n",
+			["stack"] = "[string \"PetDebuffsMover:Hide()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 6332,
+			["counter"] = 1,
+		}, -- [493]
+		{
+			["message"] = "[string \"PetDebuffs:Hide()\"]:1: attempt to index global 'PetDebuffs' (a nil value)",
+			["time"] = "2022/10/03 17:50:03",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'PetDebuffs' (a nil value)\"\n",
+			["stack"] = "[string \"PetDebuffs:Hide()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 6332,
+			["counter"] = 1,
+		}, -- [494]
+		{
+			["message"] = "[string \"PetBuffs:Hide()\"]:1: attempt to index global 'PetBuffs' (a nil value)",
+			["time"] = "2022/10/03 17:50:09",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'PetBuffs' (a nil value)\"\n",
+			["stack"] = "[string \"PetBuffs:Hide()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 6332,
+			["counter"] = 1,
+		}, -- [495]
+		{
+			["message"] = "[string \"PetBuffsMover:Hide()\"]:1: attempt to index global 'PetBuffsMover' (a nil value)",
+			["time"] = "2022/10/03 17:50:14",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'PetBuffsMover' (a nil value)\"\n",
+			["stack"] = "[string \"PetBuffsMover:Hide()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 6332,
+			["counter"] = 1,
+		}, -- [496]
+		{
+			["message"] = "[string \"PetBuffsHover:Hide()\"]:1: attempt to index global 'PetBuffsHover' (a nil value)",
+			["time"] = "2022/10/03 17:50:19",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'PetBuffsHover' (a nil value)\"\n",
+			["stack"] = "[string \"PetBuffsHover:Hide()\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 6332,
+			["counter"] = 1,
+		}, -- [497]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Helpers/Chat.lua:35: bad argument #1 to 'gsub' (string expected, got nil)",
+			["time"] = "2022/10/03 17:54:58",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"General.-\"\n(*temporary) = \"\"\n(*temporary) = \"string expected, got nil\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `gsub'\n[string \"@Interface\\AddOns\\xVermin\\Helpers/Chat.lua\"]:35: in function `AddMessage'\n[string \"function kiddos () local kiddos = { GetMouseFocus():GetChildren() }; for _, child in ipairs(kiddos) do DEFAULT_CHAT_FRAME:AddMessage(child:GetName()); end end kiddos();\"]:1: in function `kiddos'\n[string \"function kiddos () local kiddos = { GetMouseFocus():GetChildren() }; for _, child in ipairs(kiddos) do DEFAULT_CHAT_FRAME:AddMessage(child:GetName()); end end kiddos();\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2977: in function <Interface\\FrameXML\\ChatFrame.lua:2970>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:14: in function `MultiActionButtonDown'\n[string \"MULTIACTIONBAR4BUTTON5\"]:2: in function <[string \"MULTIACTIONBAR4BUTTON5\"]:1>",
+			["session"] = 6333,
+			["counter"] = 5,
+		}, -- [498]
+		{
+			["message"] = "[string \"function kiddos () local kiddos = { UIParen...\"]:1: Attempt to access forbidden object from code tainted by an AddOn",
+			["time"] = "2022/10/03 17:57:06",
+			["locals"] = "(*temporary) = WowTokenRedemptionFrame {\n 0 = <userdata>\n TitleText = WowTokenRedemptionFrameTitleText {\n }\n portrait = WowTokenRedemptionFramePortrait {\n }\n LeftBorder = WowTokenRedemptionFrameLeftBorder {\n }\n LeftDisplay = <unnamed> {\n }\n RightInset = <unnamed> {\n }\n TopRightCorner = WowTokenRedemptionFrameTopRightCorner {\n }\n TopLeftCorner = WowTokenRedemptionFrameTopLeftCorner {\n }\n Bg = WowTokenRedemptionFrameBg {\n }\n AtticText = <unnamed> {\n }\n TopBorder = WowTokenRedemptionFrameTopBorder {\n }\n TopTileStreaks = WowTokenRedemptionFrameTopTileStreaks {\n }\n TitleBg = WowTokenRedemptionFrameTitleBg {\n }\n BottomBorder = WowTokenRedemptionFrameBottomBorder {\n }\n RightDisplay = <unnamed> {\n }\n BotRightCorner = WowTokenRedemptionFrameBotRightCorner {\n }\n LeftInset = <unnamed> {\n }\n CloseButton = <unnamed> {\n }\n BotLeftCorner = WowTokenRedemptionFrameBotLeftCorner {\n }\n PortraitFrame = WowTokenRedemptionFramePortraitFrame {\n }\n OnLoad = <function> defined @Interface\\SharedXML\\SharedUIPanelTemplates.lua:857\n RightBorder = WowTokenRedemptionFrameRightBorder {\n }\n}\n",
+			["stack"] = "[string \"=[C]\"]: in function `GetName'\n[string \"function kiddos () local kiddos = { UIParent:GetChildren() }; for _, child in ipairs(kiddos) do DEFAULT_CHAT_FRAME:AddMessage(child:GetName()); end end kiddos();\"]:1: in function `kiddos'\n[string \"function kiddos () local kiddos = { UIParent:GetChildren() }; for _, child in ipairs(kiddos) do DEFAULT_CHAT_FRAME:AddMessage(child:GetName()); end end kiddos();\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2977: in function <Interface\\FrameXML\\ChatFrame.lua:2970>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:14: in function `MultiActionButtonDown'\n[string \"MULTIACTIONBAR4BUTTON5\"]:2: in function <[string \"MULTIACTIONBAR4BUTTON5\"]:1>",
+			["session"] = 6333,
+			["counter"] = 1,
+		}, -- [499]
 	},
 }

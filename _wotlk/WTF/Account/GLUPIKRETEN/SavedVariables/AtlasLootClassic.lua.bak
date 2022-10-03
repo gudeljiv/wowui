@@ -28,14 +28,15 @@ AtlasLootClassicDB = {
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
 		["Mxys - Golemagg"] = "Default",
+		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
 		["Tudum - Jin'do"] = "Tudum - Jin'do",
 		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
 		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
 		["Mxzq - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
@@ -264,6 +265,8 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
+		["Kaonac - Jin'do"] = {
+		},
 		["Tudum - Jin'do"] = {
 			["GUI"] = {
 				["selected"] = {
@@ -346,6 +349,10 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["point"] = {
 					"TOP", -- [1]
@@ -361,10 +368,6 @@ AtlasLootClassicDB = {
 					6, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Jaroslav - Golemagg"] = {

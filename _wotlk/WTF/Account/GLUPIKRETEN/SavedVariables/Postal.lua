@@ -30,8 +30,8 @@ Postal3DB = {
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
 		["Provokator - Jin'do"] = "Provokator - Jin'do",
-		["Wells - Jin'do"] = "Wells - Jin'do",
 		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
+		["Wells - Jin'do"] = "Wells - Jin'do",
 		["Tudum - Jin'do"] = "Tudum - Jin'do",
 	},
 	["profiles"] = {
@@ -55,9 +55,9 @@ Postal3DB = {
 		},
 		["Provokator - Jin'do"] = {
 		},
-		["Wells - Jin'do"] = {
-		},
 		["Tandaram - Jin'do"] = {
+		},
+		["Wells - Jin'do"] = {
 		},
 		["Tudum - Jin'do"] = {
 		},

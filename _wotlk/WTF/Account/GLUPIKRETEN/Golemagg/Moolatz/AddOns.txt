@@ -75,7 +75,7 @@ GatherMate2: enabled
 GatherMate2_Data: enabled
 gmMoney: enabled
 Leatrix_Maps: enabled
-Lorti UI Classic: enabled
+Lorti UI Classic: disabled
 ls_Toasts: enabled
 MikScrollingBattleText: enabled
 MSBTOptions: enabled
