@@ -6,14 +6,15 @@ EavesDropDB = {
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Verminz - Golemagg"] = "Verminz - Golemagg",
 		["Konza - Genesis"] = "Default",
+		["Battitude - Golemagg"] = "Default",
 		["Greenwise - Golemagg"] = "Default",
 		["Mulatz - Genesis"] = "Default",
-		["Konac - Golemagg"] = "Default",
 		["Handrmandr - Genesis"] = "Default",
 		["Mxym - Golemagg"] = "Default",
 		["Verminz - Genesis"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
+		["Koloman - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
 		["Antun - Golemagg"] = "Default",
 		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
@@ -21,25 +22,25 @@ EavesDropDB = {
 		["Tukac - Genesis"] = "Default",
 		["Pitchwise - Golemagg"] = "Default",
 		["Elohssa - Stonespine"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
 		["Mxys - Golemagg"] = "Default",
 		["Spija - Genesis"] = "Spija - Genesis",
-		["Stranac - Golemagg"] = "Stranac - Golemagg",
-		["Junac - Golemagg"] = "Default",
-		["Slanac - Golemagg"] = "Default",
+		["Vermins - Stonespine"] = "Default",
+		["Nitwit - Dreadnaught"] = "Vermin - Golemagg",
 		["Vermin - Golemagg"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
-		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
+		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Paydo - Dreadmist"] = "Default",
 		["Judawise - Golemagg"] = "Default",
+		["Korupcija - Genesis"] = "Default",
 		["Dotwise - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
-		["Mohikanac - Golemagg"] = "Default",
-		["Kamenac - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -52,11 +53,11 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["SCROLLBUTTON"] = true,
-			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["TEXTSIZE"] = 13,
+			["SCROLLBUTTON"] = true,
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
 			["NUMLINES"] = 16,
@@ -71,14 +72,14 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 16,
 			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
-			["NUMLINES"] = 16,
+			["SCROLLBUTTON"] = true,
 		},
 		["Verminz - Golemagg"] = {
 			["LINEWIDTH"] = 100,
@@ -92,13 +93,11 @@ EavesDropDB = {
 			["SCROLLBUTTON"] = true,
 			["NUMLINES"] = 14,
 		},
-		["Junac - Golemagg"] = {
+		["Battitude - Golemagg"] = {
 		},
-		["Korupcija - Stonespine"] = {
+		["Kosturko - Golemagg"] = {
 		},
-		["Konac - Golemagg"] = {
-		},
-		["Mohikanac - Golemagg"] = {
+		["DRUID"] = {
 		},
 		["Mxym - Golemagg"] = {
 		},
@@ -106,7 +105,9 @@ EavesDropDB = {
 		},
 		["Grgur - Golemagg"] = {
 		},
-		["Vermin - Golemagg"] = {
+		["Koloman - Golemagg"] = {
+		},
+		["Pitchwise - Genesis"] = {
 		},
 		["Antun - Golemagg"] = {
 		},
@@ -119,6 +120,8 @@ EavesDropDB = {
 		["Pitchwise - Golemagg"] = {
 		},
 		["Elohssa - Stonespine"] = {
+		},
+		["Battlearm - Golemagg"] = {
 		},
 		["Paydo - Dreadmist"] = {
 			["LINEWIDTH"] = 130,
@@ -143,48 +146,50 @@ EavesDropDB = {
 		},
 		["Spija - Genesis"] = {
 		},
-		["Stranac - Golemagg"] = {
+		["Vermins - Stonespine"] = {
 		},
-		["Dotwise - Golemagg"] = {
+		["Nitwit - Dreadnaught"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Battlearm - Hydraxian Waterlords"] = {
 		},
-		["Dmitar - Golemagg"] = {
+		["Mxyzptlk - Golemagg"] = {
 		},
-		["Kosturko - Golemagg"] = {
+		["Korupcija - Stonespine"] = {
+		},
+		["Vermin - Golemagg"] = {
 		},
 		["Jaroslav - Golemagg"] = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 		},
 		["Default"] = {
+			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
 				["r"] = 0.607843137254902,
 				["g"] = 0.607843137254902,
 				["b"] = 0.607843137254902,
 			},
-			["LINEWIDTH"] = 130,
+			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["TEXTSIZE"] = 13,
-			["NUMLINES"] = 16,
-			["SCROLLBUTTON"] = true,
-			["LINEHEIGHT"] = 16,
-			["HIDETAB"] = true,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["y"] = 236.195578993564,
+			["TEXTSIZE"] = 13,
+			["NUMLINES"] = 16,
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
+			["SCROLLBUTTON"] = true,
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Dmitar - Golemagg"] = {
 		},
-		["Pitchwise - Genesis"] = {
+		["Greenwise - Golemagg"] = {
 		},
-		["Slanac - Golemagg"] = {
+		["Dotwise - Golemagg"] = {
 		},
-		["Kamenac - Golemagg"] = {
+		["Testxv - Golemagg"] = {
 		},
 	},
 }

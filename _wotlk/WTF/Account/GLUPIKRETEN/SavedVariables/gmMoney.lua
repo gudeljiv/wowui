@@ -85,6 +85,14 @@ GMMONEY = {
 			["GOLD"] = 1528,
 			["CLASS"] = "DRUID",
 		},
+		["Battlearm"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "SHAMAN",
+		},
+		["Tandaram"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
 		["Provokator"] = {
 			["GOLD"] = 86,
 			["CLASS"] = "HUNTER",

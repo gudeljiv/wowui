@@ -1,0 +1,66 @@
+
+RXPCData = {
+	["completedWaypoints"] = {
+	},
+	["currentStep"] = 1,
+	["SoM"] = 1,
+	["currentGuideGroup"] = "",
+	["flightPaths"] = {
+	},
+	["xprate"] = 1,
+	["frameHeight"] = 124.9999694824219,
+	["currentGuideName"] = "",
+	["stepSkip"] = {
+	},
+	["hardcore"] = false,
+	["phase"] = 6,
+}
+RXPCTrackingData = {
+	["profileKeys"] = {
+		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
+	},
+	["profiles"] = {
+		["Tandaram - Jin'do"] = {
+			["levels"] = {
+				{
+					["groupExperience"] = 0,
+					["deaths"] = 0,
+					["mobs"] = {
+					},
+					["timestamp"] = {
+						["dateStarted"] = {
+							["monthDay"] = 3,
+							["day"] = 0,
+							["month"] = 10,
+							["minute"] = 18,
+							["year"] = 2022,
+							["hour"] = 14,
+							["weekday"] = 2,
+						},
+						["started"] = 0,
+					},
+					["quests"] = {
+					},
+				}, -- [1]
+			},
+		},
+	},
+}
+RXPCComms = {
+	["profileKeys"] = {
+		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
+	},
+	["profiles"] = {
+		["Tandaram - Jin'do"] = {
+		},
+	},
+}
+RXPCSettings = {
+	["profileKeys"] = {
+		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
+	},
+	["profiles"] = {
+		["Tandaram - Jin'do"] = {
+		},
+	},
+}

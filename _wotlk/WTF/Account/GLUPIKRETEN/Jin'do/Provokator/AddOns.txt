@@ -179,4 +179,3 @@ DBM-Onyxia: enabled
 DBM-MC: enabled
 DBM-ZG: enabled
 TradeSkillMaster_AppHelper: enabled
-Buffet: disabled

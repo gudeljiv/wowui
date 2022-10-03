@@ -33,38 +33,11 @@ local function xInstallAddon()
 	-- LOCK_ACTIONBAR = 1
 	-- InterfaceOptions_UpdateMultiActionBars()
 
-	if not BNToastFrame.SetBackdrop then
-		Mixin(BNToastFrame, BackdropTemplateMixin)
-	end
-	BNToastFrame:ClearAllPoints()
-	BNToastFrame:SetPoint('BOTTOMLEFT', ChatFrame4, 'TOPLEFT', 0, 35)
-	BNToastFrame.CloseButton:Hide()
-	BNToastFrame:SetBackdrop(
-		{
-			bgFile = 'Interface\\Buttons\\WHITE8x8',
-			edgeFile = '',
-			tile = false,
-			tileSize = 0,
-			edgeSize = 0,
-			insets = {left = 0, right = 0, top = 0, bottom = 0}
-		}
-	)
-	BNToastFrame:SetBackdropColor(0, 0, 0, 0.75)
-	BNToastFrame:SetWidth(250)
-	BNToastFrame:CreateBeautyBorder(8)
-	BNToastFrame.ClearAllPoints = function()
-	end
-	BNToastFrame.SetPoint = function()
-	end
-
-	CastingBarFrame.Text:ClearAllPoints()
-	CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)
-
-	Grid:SetProfile('Default')
+	Grid2.db:SetProfile('Default')
 	Details:ApplyProfile('Default')
 	Plater.db:SetProfile('Default')
-
-	ReloadUI()
+	TMW.db:SetProfile(xVermin.Class)
+	TMW:LockToggle()
 end
 
 SLASH_XINSTALL1 = '/xinstall'
@@ -78,6 +51,35 @@ f:SetScript(
 	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
 		if isInitialLogin or isReloadingUi then
+			xInstallAddon()
+
+			if not BNToastFrame.SetBackdrop then
+				Mixin(BNToastFrame, BackdropTemplateMixin)
+			end
+			BNToastFrame:ClearAllPoints()
+			BNToastFrame:SetPoint('BOTTOMLEFT', ChatFrame4, 'TOPLEFT', 0, 35)
+			BNToastFrame.CloseButton:Hide()
+			BNToastFrame:SetBackdrop(
+				{
+					bgFile = 'Interface\\Buttons\\WHITE8x8',
+					edgeFile = '',
+					tile = false,
+					tileSize = 0,
+					edgeSize = 0,
+					insets = {left = 0, right = 0, top = 0, bottom = 0}
+				}
+			)
+			BNToastFrame:SetBackdropColor(0, 0, 0, 0.75)
+			BNToastFrame:SetWidth(250)
+			BNToastFrame:CreateBeautyBorder(8)
+			BNToastFrame.ClearAllPoints = function()
+			end
+			BNToastFrame.SetPoint = function()
+			end
+
+			CastingBarFrame.Text:ClearAllPoints()
+			CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)
+
 			LootFrame:HookScript(
 				'OnShow',
 				function(self)

@@ -22,18 +22,20 @@ TomTomDB = {
 		["Nitwit - Dreadnaught"] = "Default",
 		["Mxys - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Testxv - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
-		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Judawise - Golemagg"] = "Default",
+		["Klhjakhsgdjh - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
+		["Battlearm - Jin'do"] = "Default",
 		["Mxym - Golemagg"] = "Default",
+		["Judawise - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Dotwise - Golemagg"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -94,18 +96,20 @@ TomTomWaypointsM = {
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Mxys - Golemagg"] = "Mxys - Golemagg",
 		["Vermins - Stonespine"] = "Vermins - Stonespine",
-		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
 		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
-		["Judawise - Golemagg"] = "Judawise - Golemagg",
+		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
+		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Judawise - Golemagg"] = "Judawise - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
+		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -150,29 +154,33 @@ TomTomWaypointsM = {
 		},
 		["Vermins - Stonespine"] = {
 		},
-		["Battlearm - Hydraxian Waterlords"] = {
-		},
 		["Grgur - Golemagg"] = {
 		},
 		["Pitchwise - Dreadnaught"] = {
 		},
+		["Battlearm - Hydraxian Waterlords"] = {
+		},
 		["Testxv - Golemagg"] = {
-		},
-		["Jaroslav - Golemagg"] = {
-		},
-		["Klhjakhsgdjh - Golemagg"] = {
 		},
 		["Mxyzptlk - Golemagg"] = {
 		},
-		["Judawise - Golemagg"] = {
+		["Klhjakhsgdjh - Golemagg"] = {
+		},
+		["Jaroslav - Golemagg"] = {
+		},
+		["Battlearm - Jin'do"] = {
 		},
 		["Mxym - Golemagg"] = {
+		},
+		["Judawise - Golemagg"] = {
 		},
 		["Dmitar - Golemagg"] = {
 		},
 		["Battlearm - Golemagg"] = {
 		},
 		["Dotwise - Golemagg"] = {
+		},
+		["Tandaram - Jin'do"] = {
 		},
 	},
 }

@@ -12,6 +12,9 @@ xVermin.Config = {
 		atari = 'Interface\\AddOns\\xVermin\\Media\\Atari.ttf',
 		damage = 'Interface\\AddOns\\xVermin\\Media\\Damage.ttf'
 	},
+	texture = {
+		coins = 'Interface\\AddOns\\xVermin\\Media\\textureNormal\\Coins'
+	},
 	background = {
 		white = 'Interface\\Buttons\\WHITE8x8'
 	},

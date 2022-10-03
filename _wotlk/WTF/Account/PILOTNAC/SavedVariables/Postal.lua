@@ -1,124 +1,57 @@
 
-Postal3ClassicDB = {
+Postal3DB = {
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
-				"Antun|Golemagg|Horde|1|SHAMAN", -- [1]
-				"Augustin|Golemagg|Horde|6|MAGE", -- [2]
-				"Dmitar|Golemagg|Horde|1|PRIEST", -- [3]
-				"Grgur|Golemagg|Horde|1|WARLOCK", -- [4]
-				"Jaroslav|Golemagg|Horde|1|DRUID", -- [5]
-				"Junac|Golemagg|Horde|4|DRUID", -- [6]
-				"Kamenac|Golemagg|Horde|60|WARRIOR", -- [7]
-				"Konac|Golemagg|Horde|60|PRIEST", -- [8]
-				"Mohikanac|Golemagg|Horde|27|HUNTER", -- [9]
-				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [10]
-				"Mxyz|Golemagg|Horde|5|PRIEST", -- [11]
-				"Mxzq|Golemagg|Horde|31|HUNTER", -- [12]
-				"Slanac|Golemagg|Horde|26|SHAMAN", -- [13]
-				"Stranac|Golemagg|Horde|1|MAGE", -- [14]
-				"Vermin|Golemagg|Horde|26|WARRIOR", -- [15]
+				"Battitude|Golemagg|Horde|5|ROGUE", -- [1]
+				"Battlearm|Golemagg|Horde|70|DEATHKNIGHT", -- [2]
+				"Battlearm|Jin'do|Horde|2|SHAMAN", -- [3]
+				"Moolatz|Golemagg|Horde|61|DRUID", -- [4]
+				"Mxyz|Golemagg|Horde|5|PRIEST", -- [5]
+				"Mxzq|Golemagg|Horde|70|HUNTER", -- [6]
+				"Provokator|Jin'do|Horde|2|HUNTER", -- [7]
+				"Tandaram|Jin'do|Horde|1|WARRIOR", -- [8]
+				"Vermina|Golemagg|Horde|29|PALADIN", -- [9]
+				"Vermin|Golemagg|Horde|70|WARRIOR", -- [10]
+				"Wells|Jin'do|Horde|8|DRUID", -- [11]
 			},
 		},
 	},
 	["profileKeys"] = {
-		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Verminz - Golemagg"] = "Verminz - Golemagg",
-		["Junac - Golemagg"] = "Junac - Golemagg",
-		["Mxys - Golemagg"] = "Mxys - Golemagg",
-		["Konac - Golemagg"] = "Konac - Golemagg",
-		["Mohikanac - Golemagg"] = "Mohikanac - Golemagg",
-		["Mxym - Golemagg"] = "Mxym - Golemagg",
-		["Stranac - Golemagg"] = "Stranac - Golemagg",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Grgur - Golemagg"] = "Grgur - Golemagg",
-		["Slanac - Golemagg"] = "Slanac - Golemagg",
+		["Vermina - Golemagg"] = "Vermina - Golemagg",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
+		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
+		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
-		["Antun - Golemagg"] = "Antun - Golemagg",
-		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
-		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
-		["Kamenac - Golemagg"] = "Kamenac - Golemagg",
+		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
+		["Provokator - Jin'do"] = "Provokator - Jin'do",
+		["Wells - Jin'do"] = "Wells - Jin'do",
+		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
 	},
 	["profiles"] = {
-		["Dotwise - Golemagg"] = {
+		["Mxzq - Golemagg"] = {
+		},
+		["Vermina - Golemagg"] = {
 		},
 		["Mxyz - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Vermin|Golemagg|Horde", -- [1]
-					"Mxzq|Golemagg|Horde", -- [2]
-				},
-			},
 		},
-		["Verminz - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Greenwise|Golemagg|Horde", -- [1]
-				},
-			},
+		["Battlearm - Golemagg"] = {
 		},
-		["Junac - Golemagg"] = {
+		["Moolatz - Golemagg"] = {
 		},
-		["Mxys - Golemagg"] = {
-		},
-		["Konac - Golemagg"] = {
-		},
-		["Mohikanac - Golemagg"] = {
-		},
-		["Mxym - Golemagg"] = {
-		},
-		["Stranac - Golemagg"] = {
-		},
-		["Mxzq - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Mxyz|Golemagg|Horde", -- [1]
-					"Byceps|Golemagg|Horde", -- [2]
-					"Vermin|Golemagg|Horde", -- [3]
-				},
-			},
-		},
-		["Jaroslav - Golemagg"] = {
-		},
-		["Augustin - Golemagg"] = {
-		},
-		["Grgur - Golemagg"] = {
-		},
-		["Slanac - Golemagg"] = {
+		["Battitude - Golemagg"] = {
 		},
 		["Vermin - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Mxyz|Golemagg|Horde", -- [1]
-					"Mxyzptlk|Golemagg|Horde", -- [2]
-					"Kamenac|Golemagg|Horde", -- [3]
-				},
-			},
 		},
-		["Klhjakhsgdjh - Golemagg"] = {
+		["Battlearm - Jin'do"] = {
 		},
-		["Antun - Golemagg"] = {
+		["Provokator - Jin'do"] = {
 		},
-		["Judawise - Golemagg"] = {
+		["Wells - Jin'do"] = {
 		},
-		["Mxyzptlk - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Mxyz|Golemagg|Horde", -- [1]
-				},
-			},
-		},
-		["Greenwise - Golemagg"] = {
-		},
-		["Dmitar - Golemagg"] = {
-		},
-		["Kamenac - Golemagg"] = {
+		["Tandaram - Jin'do"] = {
 		},
 	},
 }
