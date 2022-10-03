@@ -5,13 +5,17 @@ Postal3DB = {
 			["alts"] = {
 				"Battitude|Golemagg|Horde|5|ROGUE", -- [1]
 				"Battlearm|Golemagg|Horde|70|DEATHKNIGHT", -- [2]
-				"Moolatz|Golemagg|Horde|61|DRUID", -- [3]
-				"Mxyz|Golemagg|Horde|5|PRIEST", -- [4]
-				"Mxzq|Golemagg|Horde|70|HUNTER", -- [5]
-				"Provokator|Jin'do|Horde|2|HUNTER", -- [6]
-				"Vermina|Golemagg|Horde|29|PALADIN", -- [7]
-				"Vermin|Golemagg|Horde|70|WARRIOR", -- [8]
-				"Wells|Jin'do|Horde|8|DRUID", -- [9]
+				"Battlearm|Jin'do|Horde|2|SHAMAN", -- [3]
+				"Kaonac|Jin'do|Horde|1|PRIEST", -- [4]
+				"Moolatz|Golemagg|Horde|61|DRUID", -- [5]
+				"Mxyz|Golemagg|Horde|5|PRIEST", -- [6]
+				"Mxzq|Golemagg|Horde|70|HUNTER", -- [7]
+				"Provokator|Jin'do|Horde|2|HUNTER", -- [8]
+				"Tandaram|Jin'do|Horde|1|WARRIOR", -- [9]
+				"Tudum|Jin'do|Horde|1|WARRIOR", -- [10]
+				"Vermina|Golemagg|Horde|29|PALADIN", -- [11]
+				"Vermin|Golemagg|Horde|70|WARRIOR", -- [12]
+				"Wells|Jin'do|Horde|8|DRUID", -- [13]
 			},
 		},
 	},
@@ -23,8 +27,12 @@ Postal3DB = {
 		["Moolatz - Golemagg"] = "Moolatz - Golemagg",
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
+		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
 		["Provokator - Jin'do"] = "Provokator - Jin'do",
 		["Wells - Jin'do"] = "Wells - Jin'do",
+		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -41,9 +49,17 @@ Postal3DB = {
 		},
 		["Vermin - Golemagg"] = {
 		},
+		["Battlearm - Jin'do"] = {
+		},
+		["Kaonac - Jin'do"] = {
+		},
 		["Provokator - Jin'do"] = {
 		},
 		["Wells - Jin'do"] = {
+		},
+		["Tandaram - Jin'do"] = {
+		},
+		["Tudum - Jin'do"] = {
 		},
 	},
 }

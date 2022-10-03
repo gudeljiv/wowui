@@ -1,23 +1,154 @@
 
-OmniCC4Config = {
-	["engine"] = "AniUpdater",
-	["groups"] = {
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [1]
+OmniCCDB = {
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "9.2.1",
 	},
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Default",
+		["Vermina - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
+		["Augustin - Golemagg"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
+		["Battitude - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Battlearm - Jin'do"] = "Default",
+		["Provokator - Jin'do"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
+		["Wells - Jin'do"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["rules"] = {
+				{
+					["patterns"] = {
+						"LossOfControl", -- [1]
+						"TotemFrame", -- [2]
+					},
+					["id"] = "Ignore",
+					["priority"] = 1,
+					["theme"] = "Ignore",
+				}, -- [1]
+				{
+					["enabled"] = false,
+					["patterns"] = {
+						"Aura", -- [1]
+						"Buff", -- [2]
+						"Debuff", -- [3]
+					},
+					["name"] = "Auras",
+					["id"] = "auras",
+				}, -- [2]
+				{
+					["enabled"] = false,
+					["patterns"] = {
+						"Plate", -- [1]
+					},
+					["name"] = "Unit Nameplates",
+					["id"] = "plates",
+				}, -- [3]
+				{
+					["enabled"] = false,
+					["patterns"] = {
+						"ActionButton", -- [1]
+					},
+					["name"] = "ActionBars",
+					["id"] = "actions",
+				}, -- [4]
+				{
+					["patterns"] = {
+						"PlaterMainAuraIcon", -- [1]
+						"PlaterSecondaryAuraIcon", -- [2]
+						"ExtraIconRowIcon", -- [3]
+					},
+					["id"] = "Plater Nameplates Rule",
+					["priority"] = 5,
+					["theme"] = "Plater Nameplates Theme",
+				}, -- [5]
+			},
+			["themes"] = {
+				["Plater Nameplates Theme"] = {
+					["textStyles"] = {
+						["soon"] = {
+						},
+						["seconds"] = {
+						},
+						["minutes"] = {
+						},
+					},
+					["cooldownOpacity"] = 0,
+				},
+				["Default"] = {
+					["textStyles"] = {
+						["soon"] = {
+						},
+						["minutes"] = {
+							["scale"] = 0.9,
+						},
+						["seconds"] = {
+						},
+						["hours"] = {
+							["scale"] = 0.8,
+						},
+						["charging"] = {
+							["r"] = 1,
+							["scale"] = 0.649999976158142,
+							["g"] = 0.98,
+							["b"] = 0.4,
+						},
+						["controlled"] = {
+							["scale"] = 1.20000004768372,
+						},
+					},
+					["fontFace"] = "Fonts\\ARIALN.TTF",
+					["cooldownOpacity"] = 0,
+					["spiralOpacity"] = 1.00999997742474,
+					["fontSize"] = 16,
+				},
+				["Ignore"] = {
+					["textStyles"] = {
+						["seconds"] = {
+						},
+						["soon"] = {
+						},
+						["minutes"] = {
+						},
+						["charging"] = {
+							["r"] = 1,
+							["scale"] = 0.65,
+							["g"] = 0.98,
+							["b"] = 0.4,
+						},
+					},
+					["cooldownOpacity"] = 0,
+					["minDuration"] = 3,
+					["enableText"] = false,
+					["spiralOpacity"] = 1,
+				},
+			},
+		},
+	},
+}
+OmniCC4Config = {
 	["version"] = "8.1.1",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
 			["fontSize"] = 18,
-			["fontFace"] = "Fonts\\ARIALN.TTF",
+			["yOff"] = 0,
 			["effect"] = "pulse",
+			["scaleText"] = true,
+			["minEffectDuration"] = 30,
+			["anchor"] = "CENTER",
+			["spiralOpacity"] = 1.00999997742474,
+			["minDuration"] = 2,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["minSize"] = 0.5,
+			["mmSSDuration"] = 0,
 			["styles"] = {
 				["seconds"] = {
 					["a"] = 1,
@@ -58,17 +189,7 @@ OmniCC4Config = {
 					["scale"] = 1.20000004768372,
 				},
 			},
-			["mmSSDuration"] = 0,
-			["minSize"] = 0.5,
-			["spiralOpacity"] = 1.00999997742474,
-			["yOff"] = 0,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["anchor"] = "CENTER",
-			["minEffectDuration"] = 30,
-			["minDuration"] = 2,
-			["scaleText"] = true,
+			["fontFace"] = "Fonts\\ARIALN.TTF",
 		},
 		["Ignore"] = {
 			["enabled"] = false,
@@ -111,20 +232,31 @@ OmniCC4Config = {
 				["controlled"] = {
 				},
 			},
-			["scaleText"] = true,
+			["fontSize"] = 18,
 			["effect"] = "pulse",
-			["minDuration"] = 3,
-			["minEffectDuration"] = 30,
-			["anchor"] = "CENTER",
+			["fontFace"] = "Fonts\\FRIZQT__.TTF",
+			["mmSSDuration"] = 0,
+			["minSize"] = 0.5,
 			["spiralOpacity"] = 1,
 			["yOff"] = 0,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
-			["minSize"] = 0.5,
-			["mmSSDuration"] = 0,
-			["fontFace"] = "Fonts\\FRIZQT__.TTF",
-			["fontSize"] = 18,
+			["anchor"] = "CENTER",
+			["minEffectDuration"] = 30,
+			["minDuration"] = 3,
+			["scaleText"] = true,
 		},
 	},
+	["groups"] = {
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [1]
+	},
+	["engine"] = "AniUpdater",
 }

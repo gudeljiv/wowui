@@ -1,22 +1,66 @@
 local _, xVermin = ...
 
+local function xInstallAddon()
+	SetCVar('autoQuestWatch', 1)
+	SetCVar('autoQuestProgress', 1)
+	SetCVar('instantQuestText', 1)
+	SetCVar('nameplateMaxDistance', 80)
+	SetCVar('ffxGlow', 1)
+	SetCVar('ffxDeath', 0)
+	SetCVar('ffxNether', 0)
+	SetCVar('violenceLevel', 5)
+	SetCVar('cameraDistanceMax', 50)
+	SetCVar('cameraDistanceMaxFactor', 4.0)
+	SetCVar('cameraDistanceMaxZoomFactor', 4.0)
+	SetCVar('chatClassColorOverride', 0)
+	SetCVar('ShowClassColorInFriendlyNameplate', 1)
+	SetCVar('scriptErrors', 1)
+	SetCVar('alwaysShowActionBars', 1)
+	SetCVar('AutoInteract', 0)
+	SetCVar('cursorsizepreferred', 0)
+
+	SetActionBarToggles(1, 1, 1, 1, 1)
+	MultiActionBar_Update()
+
+	ShowHelm(false)
+	ShowCloak(false)
+
+	if Grid2 then
+		Grid2.db:SetProfile('Default')
+	end
+	if Details then
+		Details:ApplyProfile('Default')
+	end
+	if Plater then
+		Plater.db:SetProfile('Default')
+	end
+	if TMW then
+		TMW.db:SetProfile(xVermin.Class)
+		if not TMW.db.profile.Locked then
+			TMW:LockToggle()
+		end
+	end
+
+	local action_bars = {_G['InterfaceOptionsActionBarsPanelBottomLeft'], _G['InterfaceOptionsActionBarsPanelBottomRight'], _G['InterfaceOptionsActionBarsPanelRight'], _G['InterfaceOptionsActionBarsPanelRightTwo']}
+	for i = 1, #action_bars do
+		action_bars[i]:SetChecked(1)
+		action_bars[i]:GetScript('OnClick')(action_bars[i])
+	end
+end
+
+SLASH_XINSTALL1 = '/xinstall'
+SlashCmdList['XINSTALL'] = function(msg)
+	xInstallAddon()
+end
+
 local f = CreateFrame('Frame')
 f:RegisterEvent('PLAYER_ENTERING_WORLD')
 f:SetScript(
 	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
 		if isInitialLogin or isReloadingUi then
-			-- SHOW_MULTI_ACTIONBAR_1 = 1
-			-- SHOW_MULTI_ACTIONBAR_2 = 1
-			-- SHOW_MULTI_ACTIONBAR_3 = 1
-			-- SHOW_MULTI_ACTIONBAR_4 = 1
-			-- ALWAYS_SHOW_MULTIBARS = 1
-			-- LOCK_ACTIONBAR = 1
-			-- InterfaceOptions_UpdateMultiActionBars()
+			xInstallAddon()
 
-			-------------------------------------------
-			-- Reposition toast frame.
-			-------------------------------------------
 			if not BNToastFrame.SetBackdrop then
 				Mixin(BNToastFrame, BackdropTemplateMixin)
 			end
@@ -41,6 +85,9 @@ f:SetScript(
 			BNToastFrame.SetPoint = function()
 			end
 
+			CastingBarFrame.Text:ClearAllPoints()
+			CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)
+
 			LootFrame:HookScript(
 				'OnShow',
 				function(self)
@@ -48,9 +95,6 @@ f:SetScript(
 					LootFrame:SetPoint('BOTTOMLEFT', CustomContainer_Combat, 'TOPLEFT', 450, 500)
 				end
 			)
-
-			CastingBarFrame.Text:ClearAllPoints()
-			CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)
 
 			--------------------------------------------------------------------------------------------------------------------------
 			--------------------------------------------------------------------------------------------------------------------------
@@ -137,22 +181,12 @@ f:SetScript(
 					PetFrameHealthBarText:Hide()
 					PetFrameHealthBarText.Show = function()
 					end
-				end
-			)
-			xVermin:CheckIfLoadedWithTimer(
-				'PetFrame',
-				function()
 					PetFrameManaBarText:Hide()
 					PetFrameManaBarText.Show = function()
 					end
 				end
 			)
 
-			-- PetName:Hide()
-			-- PetFrameHealthBarText:SetPoint('CENTER', PetFrameHealthBar, 'CENTER', 0, -1)
-			-- PetFrameHealthBarText:SetScale(0.6)
-			-- PetFrameManaBarText:SetPoint('CENTER', PetFrameManaBar, 'CENTER', 0, -1)
-			-- PetFrameManaBarText:SetScale(0.6)
 			PetFrame:HookScript(
 				'OnEnter',
 				function(self)
@@ -161,10 +195,6 @@ f:SetScript(
 					end
 				end
 			)
-		--------------------------------------------------------------------------------------------------------------------------
-		--------------------------------------------------------------------------------------------------------------------------
-		--------------------------------------------------------------------------------------------------------------------------
-		--------------------------------------------------------------------------------------------------------------------------
 		end
 
 		UIWidgetBelowMinimapContainerFrame:ClearAllPoints()
@@ -182,25 +212,5 @@ f:SetScript(
 			UIWidgetTopCenterContainerFrame.SetPoint = function()
 			end
 		end
-
-		-- EnableAddOn('Blizzard_CompactRaidFrames')
-		-- EnableAddOn('Blizzard_CUFProfiles')
 	end
 )
-
--- local sr = LibStub('SpellRange-1.0')
--- local rc = LibStub('LibRangeCheck-2.0')
--- PlayerFrame:HookScript(
--- 	'OnUpdate',
--- 	function()
--- 		print('Pummel', sr.IsSpellInRange(25231, 'nameplate1'), IsSpellInRange("Pummel", 'nameplate1'), sr.IsSpellInRange(25231, 'target'), IsSpellInRange(25231, 'target'))
--- 		print('Cleave', sr.IsSpellInRange('Cleave', 'nameplate1'), IsSpellInRange('Cleave', 'nameplate1'), sr.IsSpellInRange('Cleave', 'target'), IsSpellInRange('Cleave', 'target'))
--- 		print('Heroic Strike', sr.IsSpellInRange('Heroic Strike', 'nameplate1'), IsSpellInRange('Heroic Strike', 'nameplate1'), sr.IsSpellInRange('Heroic Strike', 'target'), IsSpellInRange('Heroic Strike', 'target'))
--- 		print('Mortal Strike', sr.IsSpellInRange('Mortal Strike', 'nameplate1'), IsSpellInRange('Mortal Strike', 'nameplate1'), sr.IsSpellInRange('Mortal Strike', 'target'), IsSpellInRange('Mortal Strike', 'target'))
--- 		print('Bloodthirst', sr.IsSpellInRange('Bloodthirst', 'nameplate1'), IsSpellInRange('Bloodthirst', 'nameplate1'), sr.IsSpellInRange('Bloodthirst', 'target'), IsSpellInRange('Bloodthirst', 'target'))
-
--- 		local minRange, maxRange = rc:GetRange('nameplate1')
--- 		print(minRange, maxRange)
-
--- 	end
--- )

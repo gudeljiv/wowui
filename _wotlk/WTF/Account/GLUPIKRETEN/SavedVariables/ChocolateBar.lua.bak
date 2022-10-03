@@ -28,18 +28,21 @@ ChocolateBarDB = {
 		["Pitchwise - Golemagg"] = "Default",
 		["Elohssa - Stonespine"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
 		["Mxys - Golemagg"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
 		["Wells - Jin'do"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Default",
-		["Spija - Genesis"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
+		["Spija - Genesis"] = "Default",
 		["Dotwise - Golemagg"] = "Default",
+		["Battlearm - Jin'do"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Default",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
@@ -613,6 +616,11 @@ CB_PlayedTime = {
 	["Battitude-"] = {
 		["total"] = 2037,
 	},
+	["Tandaram-Jin'do"] = {
+		["total"] = 97,
+		["timeAtThisLevel"] = 97,
+		["timeStamp"] = 59401.909,
+	},
 	["Moolatz-Dreadnaught"] = {
 		["total"] = 33043,
 	},
@@ -628,10 +636,15 @@ CB_PlayedTime = {
 	["Nitwit-Dreadnaught"] = {
 		["total"] = 8735,
 	},
+	["Tudum-Jin'do"] = {
+		["total"] = 316,
+		["timeAtThisLevel"] = 316,
+		["timeStamp"] = 60887.198,
+	},
 	["Provokator-Jin'do"] = {
-		["total"] = 3101,
-		["timeAtThisLevel"] = 2473,
-		["timeStamp"] = 854707.9550000001,
+		["total"] = 4421,
+		["timeAtThisLevel"] = 0,
+		["timeStamp"] = 856027.132,
 	},
 	["Wells-Jin'do"] = {
 		["total"] = 11721,
@@ -643,6 +656,9 @@ CB_PlayedTime = {
 	},
 	["Pitchwise-Dreadnaught"] = {
 		["total"] = 140587,
+	},
+	["Konac-Dreadnaught"] = {
+		["total"] = 89354,
 	},
 	["Handrmandr-Golemagg"] = {
 		["total"] = 1,
@@ -660,17 +676,19 @@ CB_PlayedTime = {
 		["timeAtThisLevel"] = 200593,
 		["timeStamp"] = 833732.454,
 	},
-	["Konac-Dreadnaught"] = {
-		["total"] = 89354,
+	["Battlearm-Jin'do"] = {
+		["total"] = 489,
+		["timeAtThisLevel"] = 132,
+		["timeStamp"] = 59180.812,
 	},
 	["Korupcija-"] = {
 		["total"] = 21359,
 	},
-	["Kosturko-"] = {
-		["total"] = 1457,
-	},
 	["Verminz-"] = {
 		["total"] = 311368,
+	},
+	["Kosturko-"] = {
+		["total"] = 1457,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,

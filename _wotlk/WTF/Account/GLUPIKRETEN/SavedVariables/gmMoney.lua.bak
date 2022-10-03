@@ -39,12 +39,24 @@ GMMONEY = {
 		},
 	},
 	["Jin'do"] = {
+		["Battlearm"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "SHAMAN",
+		},
+		["Tandaram"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+		["Tudum"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
 		["Wells"] = {
 			["GOLD"] = 1528,
 			["CLASS"] = "DRUID",
 		},
 		["Provokator"] = {
-			["GOLD"] = 0,
+			["GOLD"] = 86,
 			["CLASS"] = "HUNTER",
 		},
 	},

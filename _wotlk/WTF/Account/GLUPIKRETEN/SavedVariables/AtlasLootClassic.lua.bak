@@ -28,20 +28,23 @@ AtlasLootClassicDB = {
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
 		["Mxys - Golemagg"] = "Default",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
+		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
 		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
-		["Vermins - Stonespine"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
+		["Vermins - Stonespine"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
-		["Battlearm - Golemagg"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Dmitar - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
+		["Battlearm - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 		["Moolatz - Golemagg"] = "Default",
 	},
@@ -261,6 +264,17 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
+		["Tudum - Jin'do"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"AhnKahet", -- [2]
+					[5] = 0,
+				},
+			},
+		},
+		["Tandaram - Jin'do"] = {
+		},
 		["Pitchwise - Dreadnaught"] = {
 			["minimap"] = {
 				["shown"] = false,
@@ -291,8 +305,6 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Vermins - Stonespine"] = {
-		},
 		["Kosturko - Golemagg"] = {
 			["GUI"] = {
 				["selected"] = {
@@ -308,11 +320,15 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
+		["Vermins - Stonespine"] = {
+		},
+		["Battlearm - Golemagg"] = {
+		},
+		["Battlearm - Jin'do"] = {
+		},
 		["Battlearm - Hydraxian Waterlords"] = {
 		},
 		["Testxv - Golemagg"] = {
-		},
-		["Battlearm - Golemagg"] = {
 		},
 		["Korupcija - Stonespine"] = {
 			["GUI"] = {

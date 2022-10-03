@@ -8,8 +8,12 @@ ErrorFilterDB = {
 		["Moolatz - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
+		["Battlearm - Jin'do"] = "Default",
+		["Kaonac - Jin'do"] = "Default",
 		["Provokator - Jin'do"] = "Default",
 		["Wells - Jin'do"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
