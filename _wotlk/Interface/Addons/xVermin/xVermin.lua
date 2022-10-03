@@ -13,6 +13,8 @@ f:SetScript(
 			-- ALWAYS_SHOW_MULTIBARS = 1
 			-- LOCK_ACTIONBAR = 1
 			-- InterfaceOptions_UpdateMultiActionBars()
+			SetActionBarToggles(1, 1, 1, 1, 1)
+			MultiActionBar_Update()
 
 			-------------------------------------------
 			-- Reposition toast frame.
@@ -137,22 +139,12 @@ f:SetScript(
 					PetFrameHealthBarText:Hide()
 					PetFrameHealthBarText.Show = function()
 					end
-				end
-			)
-			xVermin:CheckIfLoadedWithTimer(
-				'PetFrame',
-				function()
 					PetFrameManaBarText:Hide()
 					PetFrameManaBarText.Show = function()
 					end
 				end
 			)
 
-			-- PetName:Hide()
-			-- PetFrameHealthBarText:SetPoint('CENTER', PetFrameHealthBar, 'CENTER', 0, -1)
-			-- PetFrameHealthBarText:SetScale(0.6)
-			-- PetFrameManaBarText:SetPoint('CENTER', PetFrameManaBar, 'CENTER', 0, -1)
-			-- PetFrameManaBarText:SetScale(0.6)
 			PetFrame:HookScript(
 				'OnEnter',
 				function(self)
@@ -161,10 +153,6 @@ f:SetScript(
 					end
 				end
 			)
-		--------------------------------------------------------------------------------------------------------------------------
-		--------------------------------------------------------------------------------------------------------------------------
-		--------------------------------------------------------------------------------------------------------------------------
-		--------------------------------------------------------------------------------------------------------------------------
 		end
 
 		UIWidgetBelowMinimapContainerFrame:ClearAllPoints()
