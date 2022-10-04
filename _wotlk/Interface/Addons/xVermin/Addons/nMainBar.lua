@@ -19,28 +19,16 @@ ReputationWatchBar:HookScript(
 xVermin:CheckIfLoadedWithTimer(
 	'StanceButton1',
 	function()
-		-- StanceButton1:HookScript("OnUpdate", function(self)
 		StanceButton1:ClearAllPoints()
 		StanceButton1:SetPoint('BOTTOMLEFT', 'MultiBarBottomRightButton1', 'TOPLEFT', 0, 7)
-		StanceButton1.ClearAllPoints = function()
-		end
-		StanceButton1.SetPoint = function()
-		end
-		-- end)
 	end
 )
 
 xVermin:CheckIfLoadedWithTimer(
 	'MultiBarBottomLeft',
 	function()
-		-- MultiBarBottomLeftButton1:HookScript("OnUpdate", function(self)
 		MultiBarBottomLeftButton1:ClearAllPoints()
 		MultiBarBottomLeftButton1:SetPoint('BOTTOMLEFT', MainMenuBar, 'TOPLEFT', 9, -4)
-		MultiBarBottomLeftButton1.ClearAllPoints = function()
-		end
-		MultiBarBottomLeftButton1.SetPoint = function()
-		end
-		-- end)
 	end
 )
 
@@ -62,10 +50,6 @@ xVermin:CheckIfLoadedWithTimer(
 
 		MultiBarRightButton1:ClearAllPoints()
 		MultiBarRightButton1:SetPoint('TOPRIGHT', UIParent, 'TOPRIGHT', -9, -25)
-		MultiBarRightButton1.ClearAllPoints = function()
-		end
-		MultiBarRightButton1.SetPoint = function()
-		end
 	end
 )
 
@@ -87,10 +71,6 @@ xVermin:CheckIfLoadedWithTimer(
 
 		MultiBarLeftButton1:ClearAllPoints()
 		MultiBarLeftButton1:SetPoint('TOP', MultiBarRightButton12, 'BOTTOM', 0, -20)
-		MultiBarLeftButton1.ClearAllPoints = function()
-		end
-		MultiBarLeftButton1.SetPoint = function()
-		end
 	end
 )
 
@@ -102,10 +82,6 @@ xVermin:CheckIfLoadedWithTimer(
 		PetActionButton1:SetMovable(true)
 		PetActionButton1:SetUserPlaced(true)
 		PetActionButton1:SetPoint('BOTTOM', MultiBarBottomRightButton2, 'TOP', 20, 7)
-		PetActionButton1.ClearAllPoints = function()
-		end
-		PetActionButton1.SetPoint = function()
-		end
 	end
 )
 
@@ -117,9 +93,5 @@ xVermin:CheckIfLoadedWithTimer(
 		PossessButton1:SetMovable(true)
 		PossessButton1:SetUserPlaced(true)
 		PossessButton1:SetPoint('BOTTOM', UnitExists('pet') and PetActionButton1 or MultiBarBottomRightButton2, 'TOP', 20, 7)
-		PossessButton1.ClearAllPoints = function()
-		end
-		PossessButton1.SetPoint = function()
-		end
 	end
 )

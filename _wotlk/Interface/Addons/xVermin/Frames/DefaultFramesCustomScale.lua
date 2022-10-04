@@ -22,8 +22,6 @@ for i, v in pairs(
 		v:SetScale(1.2)
 	-- v:ClearAllPoints()
 	-- v:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
-	-- v.SetPoint = function()
-	-- end
 	end
 end
 

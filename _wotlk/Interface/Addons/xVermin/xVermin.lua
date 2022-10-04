@@ -78,10 +78,6 @@ f:SetScript(
 			BNToastFrame:SetBackdropColor(0, 0, 0, 0.75)
 			BNToastFrame:SetWidth(250)
 			BNToastFrame:CreateBeautyBorder(8)
-			BNToastFrame.ClearAllPoints = function()
-			end
-			BNToastFrame.SetPoint = function()
-			end
 
 			CastingBarFrame.Text:ClearAllPoints()
 			CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)
@@ -98,12 +94,12 @@ f:SetScript(
 			--------------------------------------------------------------------------------------------------------------------------
 			-- UNITFRAMES ------------------------------------------------------------------------------------------------------------
 			--------------------------------------------------------------------------------------------------------------------------
+			PlayerFrame:SetMovable(true)
 			PlayerFrame:ClearAllPoints()
 			PlayerFrame:SetPoint('CENTER', UIParent, 'CENTER', -250, -96)
-			PlayerFrame.ClearAllPoints = function()
-			end
-			PlayerFrame.SetPoint = function()
-			end
+			PlayerFrame:SetUserPlaced(true)
+			PlayerFrame:SetMovable(false)
+
 			PlayerFrameManaBarText:SetPoint('CENTER', PlayerFrameManaBar, 'CENTER', 0, -1)
 			PlayerFrameManaBarText:SetScale(0.75)
 			PlayerFrameHealthBarText:ClearAllPoints()
@@ -138,12 +134,12 @@ f:SetScript(
 				end
 			)
 
+			TargetFrame:SetMovable(true)
 			TargetFrame:ClearAllPoints()
 			TargetFrame:SetPoint('CENTER', UIParent, 'CENTER', 250, -96)
-			TargetFrame.ClearAllPoints = function()
-			end
-			TargetFrame.SetPoint = function()
-			end
+			TargetFrame:SetUserPlaced(true)
+			TargetFrame:SetMovable(false)
+
 			TargetFrameTextureFrame.ManaBarText:SetPoint('CENTER', TargetFrameManaBar, 'CENTER', 0, -1)
 			TargetFrameTextureFrame.ManaBarText:SetScale(0.75)
 			TargetFrameTextureFrame.HealthBarText:ClearAllPoints()
@@ -166,12 +162,12 @@ f:SetScript(
 				end
 			)
 
+			FocusFrame:SetMovable(true)
 			FocusFrame:ClearAllPoints()
 			FocusFrame:SetPoint('CENTER', TargetFrame, 'CENTER', 200, 100)
-			FocusFrame.ClearAllPoints = function()
-			end
-			FocusFrame.SetPoint = function()
-			end
+			FocusFrame:SetUserPlaced(true)
+			FocusFrame:SetMovable(false)
+
 			FocusFrameTextureFrame.ManaBarText:SetPoint('CENTER', FocusFrameManaBar, 'CENTER', 0, -1)
 			FocusFrameTextureFrame.ManaBarText:SetScale(0.75)
 			FocusFrameTextureFrame.HealthBarText:ClearAllPoints()
@@ -218,18 +214,14 @@ f:SetScript(
 
 		UIWidgetBelowMinimapContainerFrame:ClearAllPoints()
 		UIWidgetBelowMinimapContainerFrame:SetPoint('TOPRIGHT', 'UIParent', 'TOPRIGHT', -35, 4)
-		UIWidgetBelowMinimapContainerFrame.ClearAllPoints = function()
-		end
-		UIWidgetBelowMinimapContainerFrame.SetPoint = function()
-		end
+		UIWidgetBelowMinimapContainerFrame:SetUserPlaced(true)
+		UIWidgetBelowMinimapContainerFrame:SetMovable(false)
 
 		if (nHealthStatusBar and nHealthStatusBar:IsVisible()) then
 			UIWidgetTopCenterContainerFrame:ClearAllPoints()
 			UIWidgetTopCenterContainerFrame:SetPoint('TOP', 'UIParent', 'TOP', 0, -70)
-			UIWidgetTopCenterContainerFrame.ClearAllPoints = function()
-			end
-			UIWidgetTopCenterContainerFrame.SetPoint = function()
-			end
+			UIWidgetTopCenterContainerFrame:SetUserPlaced(true)
+			UIWidgetTopCenterContainerFrame:SetMovable(false)
 		end
 	end
 )
