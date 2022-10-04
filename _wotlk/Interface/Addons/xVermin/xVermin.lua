@@ -56,171 +56,167 @@ f:RegisterEvent('PLAYER_ENTERING_WORLD')
 f:SetScript(
 	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
-		if isInitialLogin then
-			xInstallAddon()
+		xInstallAddon()
 
-			if not BNToastFrame.SetBackdrop then
-				Mixin(BNToastFrame, BackdropTemplateMixin)
-			end
-			BNToastFrame:ClearAllPoints()
-			BNToastFrame:SetPoint('BOTTOMLEFT', ChatFrame4, 'TOPLEFT', 0, 35)
-			BNToastFrame.CloseButton:Hide()
-			BNToastFrame:SetBackdrop(
-				{
-					bgFile = 'Interface\\Buttons\\WHITE8x8',
-					edgeFile = '',
-					tile = false,
-					tileSize = 0,
-					edgeSize = 0,
-					insets = {left = 0, right = 0, top = 0, bottom = 0}
-				}
-			)
-			BNToastFrame:SetBackdropColor(0, 0, 0, 0.75)
-			BNToastFrame:SetWidth(250)
-			BNToastFrame:CreateBeautyBorder(8)
-
-			CastingBarFrame.Text:ClearAllPoints()
-			CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)
-
-			LootFrame:HookScript(
-				'OnShow',
-				function(self)
-					LootFrame:ClearAllPoints()
-					LootFrame:SetPoint('BOTTOMLEFT', CustomContainer_Combat, 'TOPLEFT', 450, 500)
-				end
-			)
-
-			--------------------------------------------------------------------------------------------------------------------------
-			--------------------------------------------------------------------------------------------------------------------------
-			-- UNITFRAMES ------------------------------------------------------------------------------------------------------------
-			--------------------------------------------------------------------------------------------------------------------------
-			PlayerFrame:SetMovable(true)
-			PlayerFrame:ClearAllPoints()
-			PlayerFrame:SetPoint('CENTER', UIParent, 'CENTER', -250, -96)
-			PlayerFrame:SetUserPlaced(true)
-			PlayerFrame:SetMovable(false)
-
-			PlayerFrameManaBarText:SetPoint('CENTER', PlayerFrameManaBar, 'CENTER', 0, -1)
-			PlayerFrameManaBarText:SetScale(0.75)
-			PlayerFrameHealthBarText:ClearAllPoints()
-			PlayerFrameHealthBarText:SetPoint('CENTER', PlayerFrameHealthBar, 'CENTER', 0, 0)
-			PlayerFrameHealthBarText:SetScale(0.85)
-			PlayerName:ClearAllPoints()
-			PlayerName:SetPoint('CENTER', PlayerFrameBackground, 'CENTER', 0, 10)
-
-			PlayerFrameAlternateManaBar:RegisterEvent('PLAYER_ENTERING_WORLD')
-			PlayerFrameAlternateManaBar:SetScript(
-				'OnEvent',
-				function(self, event)
-					self:Hide()
-					self:UnregisterEvent('PLAYER_ENTERING_WORLD')
-				end
-			)
-			PlayerFrameAlternateManaBar:HookScript(
-				'OnShow',
-				function(self)
-					self:Hide()
-				end
-			)
-			PlayerFrame:HookScript(
-				'OnUpdate',
-				function()
-					if UnitHealth('player') > 0 then
-						PlayerFrameHealthBarText:SetText(xVermin:FormatValue(UnitHealth('player')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('player')))
-					else
-						PlayerFrameHealthBarText:Hide()
-						PlayerFrameManaBarText:Hide()
-					end
-				end
-			)
-
-			TargetFrame:SetMovable(true)
-			TargetFrame:ClearAllPoints()
-			TargetFrame:SetPoint('CENTER', UIParent, 'CENTER', 250, -96)
-			TargetFrame:SetUserPlaced(true)
-			TargetFrame:SetMovable(false)
-
-			TargetFrameTextureFrame.ManaBarText:SetPoint('CENTER', TargetFrameManaBar, 'CENTER', 0, -1)
-			TargetFrameTextureFrame.ManaBarText:SetScale(0.75)
-			TargetFrameTextureFrame.HealthBarText:ClearAllPoints()
-			TargetFrameTextureFrame.HealthBarText:SetPoint('CENTER', TargetFrameHealthBar, 'CENTER', 0, 0)
-			TargetFrameTextureFrame.HealthBarText:SetScale(0.85)
-			TargetFrameTextureFrameName:ClearAllPoints()
-			TargetFrameTextureFrameName:SetPoint('CENTER', TargetFrameNameBackground, 'CENTER', 0, -1)
-			TargetFrameNameBackground:SetVertexColor(0, 0, 0, 0.5)
-			TargetFrameNameBackground.SetVertexColor = function()
-			end
-			TargetFrame:HookScript(
-				'OnUpdate',
-				function()
-					if UnitHealth('target') > 0 then
-						TargetFrameTextureFrame.HealthBarText:SetText(xVermin:FormatValue(UnitHealth('target')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('target')))
-					else
-						TargetFrameTextureFrame.HealthBarText:Hide()
-						TargetFrameTextureFrame.ManaBarText:Hide()
-					end
-				end
-			)
-
-			FocusFrame:SetMovable(true)
-			FocusFrame:ClearAllPoints()
-			FocusFrame:SetPoint('CENTER', TargetFrame, 'CENTER', 200, 100)
-			FocusFrame:SetUserPlaced(true)
-			FocusFrame:SetMovable(false)
-
-			FocusFrameTextureFrame.ManaBarText:SetPoint('CENTER', FocusFrameManaBar, 'CENTER', 0, -1)
-			FocusFrameTextureFrame.ManaBarText:SetScale(0.75)
-			FocusFrameTextureFrame.HealthBarText:ClearAllPoints()
-			FocusFrameTextureFrame.HealthBarText:SetPoint('CENTER', FocusFrameHealthBar, 'CENTER', 0, 0)
-			FocusFrameTextureFrame.HealthBarText:SetScale(0.85)
-			FocusFrameTextureFrameName:ClearAllPoints()
-			FocusFrameTextureFrameName:SetPoint('CENTER', FocusFrameNameBackground, 'CENTER', 0, -1)
-			FocusFrameNameBackground:SetVertexColor(0, 0, 0, 0.5)
-			FocusFrameNameBackground.SetVertexColor = function()
-			end
-			FocusFrame:HookScript(
-				'OnUpdate',
-				function()
-					if UnitHealth('focus') > 0 then
-						FocusFrameTextureFrame.HealthBarText:SetText(xVermin:FormatValue(UnitHealth('focus')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('focus')))
-					else
-						FocusFrameTextureFrame.HealthBarText:Hide()
-						FocusFrameTextureFrame.ManaBarText:Hide()
-					end
-				end
-			)
-
-			xVermin:CheckIfLoadedWithTimer(
-				'PetFrame',
-				function()
-					PetFrameHealthBarText:Hide()
-					PetFrameHealthBarText.Show = function()
-					end
-					PetFrameManaBarText:Hide()
-					PetFrameManaBarText.Show = function()
-					end
-				end
-			)
-
-			PetFrame:HookScript(
-				'OnEnter',
-				function(self)
-					print('mouseover')
-					self.OnEnter = function()
-					end
-				end
-			)
+		if not BNToastFrame.SetBackdrop then
+			Mixin(BNToastFrame, BackdropTemplateMixin)
 		end
+		BNToastFrame:ClearAllPoints()
+		BNToastFrame:SetPoint('BOTTOMLEFT', ChatFrame4, 'TOPLEFT', 0, 35)
+		BNToastFrame.CloseButton:Hide()
+		BNToastFrame:SetBackdrop(
+			{
+				bgFile = 'Interface\\Buttons\\WHITE8x8',
+				edgeFile = '',
+				tile = false,
+				tileSize = 0,
+				edgeSize = 0,
+				insets = {left = 0, right = 0, top = 0, bottom = 0}
+			}
+		)
+		BNToastFrame:SetBackdropColor(0, 0, 0, 0.75)
+		BNToastFrame:SetWidth(250)
+		BNToastFrame:CreateBeautyBorder(8)
+
+		CastingBarFrame.Text:ClearAllPoints()
+		CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)
+
+		LootFrame:HookScript(
+			'OnShow',
+			function(self)
+				LootFrame:ClearAllPoints()
+				LootFrame:SetPoint('BOTTOMLEFT', CustomContainer_Combat, 'TOPLEFT', 450, 500)
+			end
+		)
+
+		--------------------------------------------------------------------------------------------------------------------------
+		--------------------------------------------------------------------------------------------------------------------------
+		-- UNITFRAMES ------------------------------------------------------------------------------------------------------------
+		--------------------------------------------------------------------------------------------------------------------------
+		PlayerFrame:SetMovable(true)
+		PlayerFrame:ClearAllPoints()
+		PlayerFrame:SetPoint('CENTER', UIParent, 'CENTER', -250, -96)
+		PlayerFrame:SetUserPlaced(true)
+		PlayerFrame:SetMovable(false)
+
+		PlayerFrameManaBarText:SetPoint('CENTER', PlayerFrameManaBar, 'CENTER', 0, -1)
+		PlayerFrameManaBarText:SetScale(0.75)
+		PlayerFrameHealthBarText:ClearAllPoints()
+		PlayerFrameHealthBarText:SetPoint('CENTER', PlayerFrameHealthBar, 'CENTER', 0, 0)
+		PlayerFrameHealthBarText:SetScale(0.85)
+		PlayerName:ClearAllPoints()
+		PlayerName:SetPoint('CENTER', PlayerFrameBackground, 'CENTER', 0, 10)
+
+		PlayerFrameAlternateManaBar:RegisterEvent('PLAYER_ENTERING_WORLD')
+		PlayerFrameAlternateManaBar:SetScript(
+			'OnEvent',
+			function(self, event)
+				self:Hide()
+				self:UnregisterEvent('PLAYER_ENTERING_WORLD')
+			end
+		)
+		PlayerFrameAlternateManaBar:HookScript(
+			'OnShow',
+			function(self)
+				self:Hide()
+			end
+		)
+		PlayerFrame:HookScript(
+			'OnUpdate',
+			function()
+				if UnitHealth('player') > 0 then
+					PlayerFrameHealthBarText:SetText(xVermin:FormatValue(UnitHealth('player')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('player')))
+				else
+					PlayerFrameHealthBarText:Hide()
+					PlayerFrameManaBarText:Hide()
+				end
+			end
+		)
+
+		TargetFrame:SetMovable(true)
+		TargetFrame:ClearAllPoints()
+		TargetFrame:SetPoint('CENTER', UIParent, 'CENTER', 250, -96)
+		TargetFrame:SetUserPlaced(true)
+		TargetFrame:SetMovable(false)
+
+		TargetFrameTextureFrame.ManaBarText:SetPoint('CENTER', TargetFrameManaBar, 'CENTER', 0, -1)
+		TargetFrameTextureFrame.ManaBarText:SetScale(0.75)
+		TargetFrameTextureFrame.HealthBarText:ClearAllPoints()
+		TargetFrameTextureFrame.HealthBarText:SetPoint('CENTER', TargetFrameHealthBar, 'CENTER', 0, 0)
+		TargetFrameTextureFrame.HealthBarText:SetScale(0.85)
+		TargetFrameTextureFrameName:ClearAllPoints()
+		TargetFrameTextureFrameName:SetPoint('CENTER', TargetFrameNameBackground, 'CENTER', 0, -1)
+		TargetFrameNameBackground:SetVertexColor(0, 0, 0, 0.5)
+		TargetFrameNameBackground.SetVertexColor = function()
+		end
+		TargetFrame:HookScript(
+			'OnUpdate',
+			function()
+				if UnitHealth('target') > 0 then
+					TargetFrameTextureFrame.HealthBarText:SetText(xVermin:FormatValue(UnitHealth('target')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('target')))
+				else
+					TargetFrameTextureFrame.HealthBarText:Hide()
+					TargetFrameTextureFrame.ManaBarText:Hide()
+				end
+			end
+		)
+
+		FocusFrame:SetMovable(true)
+		FocusFrame:ClearAllPoints()
+		FocusFrame:SetPoint('CENTER', TargetFrame, 'CENTER', 200, 100)
+		FocusFrame:SetUserPlaced(true)
+		FocusFrame:SetMovable(false)
+
+		FocusFrameTextureFrame.ManaBarText:SetPoint('CENTER', FocusFrameManaBar, 'CENTER', 0, -1)
+		FocusFrameTextureFrame.ManaBarText:SetScale(0.75)
+		FocusFrameTextureFrame.HealthBarText:ClearAllPoints()
+		FocusFrameTextureFrame.HealthBarText:SetPoint('CENTER', FocusFrameHealthBar, 'CENTER', 0, 0)
+		FocusFrameTextureFrame.HealthBarText:SetScale(0.85)
+		FocusFrameTextureFrameName:ClearAllPoints()
+		FocusFrameTextureFrameName:SetPoint('CENTER', FocusFrameNameBackground, 'CENTER', 0, -1)
+		FocusFrameNameBackground:SetVertexColor(0, 0, 0, 0.5)
+		FocusFrameNameBackground.SetVertexColor = function()
+		end
+		FocusFrame:HookScript(
+			'OnUpdate',
+			function()
+				if UnitHealth('focus') > 0 then
+					FocusFrameTextureFrame.HealthBarText:SetText(xVermin:FormatValue(UnitHealth('focus')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('focus')))
+				else
+					FocusFrameTextureFrame.HealthBarText:Hide()
+					FocusFrameTextureFrame.ManaBarText:Hide()
+				end
+			end
+		)
+
+		xVermin:CheckIfLoadedWithTimer(
+			'PetFrame',
+			function()
+				PetFrameHealthBarText:Hide()
+				PetFrameHealthBarText.Show = function()
+				end
+				PetFrameManaBarText:Hide()
+				PetFrameManaBarText.Show = function()
+				end
+			end
+		)
+
+		PetFrame:HookScript(
+			'OnEnter',
+			function(self)
+				print('mouseover')
+				self.OnEnter = function()
+				end
+			end
+		)
 
 		UIWidgetBelowMinimapContainerFrame:ClearAllPoints()
 		UIWidgetBelowMinimapContainerFrame:SetPoint('TOPRIGHT', 'UIParent', 'TOPRIGHT', -35, 4)
-		UIWidgetBelowMinimapContainerFrame:SetUserPlaced(true)
 		UIWidgetBelowMinimapContainerFrame:SetMovable(false)
 
 		if (nHealthStatusBar and nHealthStatusBar:IsVisible()) then
 			UIWidgetTopCenterContainerFrame:ClearAllPoints()
 			UIWidgetTopCenterContainerFrame:SetPoint('TOP', 'UIParent', 'TOP', 0, -70)
-			UIWidgetTopCenterContainerFrame:SetUserPlaced(true)
 			UIWidgetTopCenterContainerFrame:SetMovable(false)
 		end
 	end

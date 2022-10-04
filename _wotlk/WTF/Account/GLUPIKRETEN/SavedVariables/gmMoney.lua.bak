@@ -1,9 +1,9 @@
 
 GMMONEY = {
-	["Hydraxian Waterlords"] = {
-		["Battlearm"] = {
+	["Ashbringer"] = {
+		["Pitchwise"] = {
 			["GOLD"] = 0,
-			["CLASS"] = "HUNTER",
+			["CLASS"] = "SHAMAN",
 		},
 	},
 	["Golemagg"] = {
@@ -48,6 +48,12 @@ GMMONEY = {
 			["CLASS"] = "WARRIOR",
 		},
 	},
+	["Stonespine"] = {
+		["Vermins"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+	},
 	["Dreadnaught"] = {
 		["Poklopac"] = {
 			["GOLD"] = 686231,
@@ -71,12 +77,6 @@ GMMONEY = {
 		},
 		["Pitchwise"] = {
 			["GOLD"] = 70411,
-			["CLASS"] = "WARRIOR",
-		},
-	},
-	["Stonespine"] = {
-		["Vermins"] = {
-			["GOLD"] = 0,
 			["CLASS"] = "WARRIOR",
 		},
 	},
@@ -106,8 +106,14 @@ GMMONEY = {
 			["CLASS"] = "HUNTER",
 		},
 	},
+	["Hydraxian Waterlords"] = {
+		["Battlearm"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "HUNTER",
+		},
+	},
 }
 GMMONEYSET = {
-	["TEXTMODE"] = true,
 	["FULLDISP"] = true,
+	["TEXTMODE"] = true,
 }

@@ -223,6 +223,8 @@ local function SetChat()
 		}
 	) do
 		background = _G[v:GetName() .. 'Background']
+		v.SetPoint = function()
+		end
 
 		if (v:GetName() == 'ChatFrame7' or v:GetName() == 'ChatFrame8') then
 			v:SetWidth((chatWidth / 1.3) - 4)

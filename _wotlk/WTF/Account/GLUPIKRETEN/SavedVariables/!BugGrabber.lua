@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 6384,
 	["lastSanitation"] = 3,
-	["session"] = 6367,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -1342,20 +1342,20 @@ BugGrabberDB = {
 		}, -- [169]
 		{
 			["message"] = " (null)",
-			["session"] = 5326,
 			["time"] = "2022/04/11 11:49:12",
+			["session"] = 5326,
 			["counter"] = 15,
 		}, -- [170]
 		{
 			["message"] = "  (null)",
-			["session"] = 5326,
 			["time"] = "2022/04/13 16:37:53",
+			["session"] = 5326,
 			["counter"] = 4,
 		}, -- [171]
 		{
 			["message"] = "   (null)",
-			["session"] = 5326,
 			["time"] = "2022/06/02 15:20:51",
+			["session"] = 5326,
 			["counter"] = 1,
 		}, -- [172]
 		{
@@ -1757,62 +1757,62 @@ BugGrabberDB = {
 		}, -- [222]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-enUS.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [223]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-deDE.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [224]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esES.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [225]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esMX.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [226]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-frFR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [227]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-itIT.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [228]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-koKR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [229]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ptBR.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [230]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ruRU.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [231]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-zhCN.lua",
-			["session"] = 5422,
 			["time"] = "2022/09/03 10:04:52",
+			["session"] = 5422,
 			["counter"] = 3,
 		}, -- [232]
 		{
@@ -2089,8 +2089,8 @@ BugGrabberDB = {
 		}, -- [267]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\xVermin-54000.lua is empty.",
-			["time"] = "2022/09/07 12:54:52",
 			["session"] = 5507,
+			["time"] = "2022/09/07 12:54:52",
 			["counter"] = 3,
 		}, -- [268]
 		{
@@ -2175,8 +2175,8 @@ BugGrabberDB = {
 		}, -- [278]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Addons/nMainBar.lua is empty.",
-			["time"] = "2022/09/07 13:53:00",
 			["session"] = 5527,
+			["time"] = "2022/09/07 13:53:00",
 			["counter"] = 3,
 		}, -- [279]
 		{
@@ -2798,8 +2798,8 @@ BugGrabberDB = {
 		}, -- [358]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Helpers/Chat.lua is empty.",
-			["session"] = 5820,
 			["time"] = "2022/09/19 19:24:24",
+			["session"] = 5820,
 			["counter"] = 3,
 		}, -- [359]
 		{
@@ -3918,8 +3918,8 @@ BugGrabberDB = {
 		}, -- [501]
 		{
 			["message"] = "(null)",
-			["session"] = 6353,
 			["time"] = "2022/03/09 13:39:43",
+			["session"] = 6353,
 			["counter"] = 128,
 		}, -- [502]
 		{
@@ -3979,8 +3979,8 @@ BugGrabberDB = {
 		}, -- [509]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Helpers/ActionButtons.lua",
-			["time"] = "2022/10/04 09:59:06",
 			["session"] = 6360,
+			["time"] = "2022/10/04 09:59:06",
 			["counter"] = 6,
 		}, -- [510]
 		{
@@ -3999,5 +3999,53 @@ BugGrabberDB = {
 			["session"] = 6363,
 			["counter"] = 1,
 		}, -- [512]
+		{
+			["message"] = "...erface\\AddOns\\QuickQuest\\config\\OptionsBlocklist.lua:233: attempt to index global 'QuestCache' (a nil value)",
+			["time"] = "2022/10/04 21:17:31",
+			["locals"] = "button = <unnamed> {\n 0 = <userdata>\n pool = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface\\SharedXML\\Backdrop.lua:152\n GetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:390\n SetupTextureCoordinates = <function> defined @Interface\\SharedXML\\Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface\\SharedXML\\Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface\\SharedXML\\Backdrop.lua:278\n SetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:422\n GetEdgeSize = <function> defined @Interface\\SharedXML\\Backdrop.lua:188\n frame = <unnamed> {\n }\n text = QuickQuestTitleBlocklistScrollChildText {\n }\n ApplyBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:294\n SetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:282\n OnRemove = <function> defined @Interface\\AddOns\\QuickQuest\\config\\OptionsBlocklist.lua:223\n GetBackdropBorderColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:409\n GetBackdrop = <function> defined @Interface\\SharedXML\\Backdrop.lua:347\n questID = 36056\n SetupPieceVisuals = <function> defined @Interface\\SharedXML\\Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface\\SharedXML\\Backdrop.lua:399\n remove = <unnamed> {\n }\n SetBorderBlendMode = <function> defined @Interface\\SharedXML\\Backdrop.lua:266\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 36056\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestCache' (a nil value)\"\nUpdateTitle = <function> defined @Interface\\AddOns\\QuickQuest\\config\\OptionsBlocklist.lua:231\n",
+			["stack"] = "[string \"@Interface\\AddOns\\QuickQuest\\config\\OptionsBlocklist.lua\"]:233: in function <...erface\\AddOns\\QuickQuest\\config\\OptionsBlocklist.lua:231>\n[string \"@Interface\\AddOns\\QuickQuest\\config\\OptionsBlocklist.lua\"]:285: in function `AddButton'\n[string \"@Interface\\AddOns\\QuickQuest\\config\\OptionsBlocklist.lua\"]:297: in function <...erface\\AddOns\\QuickQuest\\config\\OptionsBlocklist.lua:217>\n[string \"@Interface\\AddOns\\QuickQuest\\config\\OptionsBlocklist.lua\"]:313: in function `CreateBlocklistOptions'\n[string \"@Interface\\AddOns\\QuickQuest\\config\\Options-Options.lua\"]:85: in function <Interface\\AddOns\\QuickQuest\\config\\Options.lua:83>\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\FrameXML\\InterfaceOptionsFrame.lua\"]:419: in function `InterfaceOptionsFrame_TabOnClick'\n[string \"*:OnClick\"]:3: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 6370,
+			["counter"] = 1,
+		}, -- [513]
+		{
+			["message"] = "Interface\\AddOns\\KDO_UI\\RaidFrames.lua:146: hooksecurefunc(): CompactUnitFrame_UpdateHealPrediction is not a function",
+			["time"] = "2022/10/04 21:15:45",
+			["locals"] = "",
+			["stack"] = "[string \"=[C]\"]: in function `hooksecurefunc'\n[string \"@Interface\\AddOns\\KDO_UI\\RaidFrames.lua\"]:146: in function `RaidFrames_load'\n[string \"@Interface\\AddOns\\KDO_UI\\Main.lua\"]:25: in function <Interface\\AddOns\\KDO_UI\\Main.lua:10>",
+			["session"] = 6371,
+			["counter"] = 4,
+		}, -- [514]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:217: Frame UIWidgetBelowMinimapContainerFrame is not movable or resizable",
+			["time"] = "2022/10/04 21:15:46",
+			["locals"] = "(*temporary) = UIWidgetBelowMinimapContainerFrame {\n 0 = <userdata>\n OnLoad = <function> defined @Interface\\AddOns\\Blizzard_UIWidgets\\Blizzard_UIWidgetBelowMinimapFrame.lua:28\n}\n(*temporary) = true\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetUserPlaced'\n[string \"@Interface\\AddOns\\xVermin\\xVermin-54000.lua\"]:217: in function <Interface\\AddOns\\xVermin\\xVermin.lua:58>",
+			["session"] = 6373,
+			["counter"] = 6,
+		}, -- [515]
+		{
+			["message"] = "Interface\\AddOns\\QuickQuest\\Addon.lua:318: attempt to call global 'GetNumAutoQuestPopUps' (a nil value)",
+			["time"] = "2022/10/04 21:15:46",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"attempt to call global 'GetNumAutoQuestPopUps' (a nil value)\"\npaused = nil\nEventHandler = <unnamed> {\n 0 = <userdata>\n events = <table> {\n }\n Register = <function> defined @Interface\\AddOns\\QuickQuest\\Utils.lua:9\n Trigger = <function> defined @Interface\\AddOns\\QuickQuest\\Utils.lua:45\n Unregister = <function> defined @Interface\\AddOns\\QuickQuest\\Utils.lua:29\n}\nns = <table> {\n db = <table> {\n }\n CreateButtonPool = <function> defined @Interface\\AddOns\\QuickQuest\\config\\ButtonPoolMixin.lua:133\n CreateBlocklistOptions = <function> defined @Interface\\AddOns\\QuickQuest\\config\\OptionsBlocklist.lua:308\n L = <table> {\n }\n GetNPCID = <function> defined @Interface\\AddOns\\QuickQuest\\Utils.lua:63\n ShouldAcceptTrivialQuests = <function> defined @Interface\\AddOns\\QuickQuest\\Utils.lua:70\n EventHandler = <unnamed> {\n }\n tLength = <function> defined @Interface\\AddOns\\QuickQuest\\Utils.lua:79\n}\n",
+			["stack"] = "[string \"@Interface\\AddOns\\QuickQuest\\Addon.lua\"]:318: in function `func'\n[string \"@Interface\\AddOns\\QuickQuest\\Utils.lua\"]:52: in function `Trigger'\n[string \"@Interface\\AddOns\\QuickQuest\\Utils.lua\"]:6: in function <Interface\\AddOns\\QuickQuest\\Utils.lua:5>",
+			["session"] = 6374,
+			["counter"] = 14,
+		}, -- [516]
+		{
+			["message"] = "[string \"PlayerFrame:SetMoveable(true)\"]:1: attempt to call method 'SetMoveable' (a nil value)",
+			["time"] = "2022/10/04 21:28:31",
+			["locals"] = "(*temporary) = nil\n(*temporary) = PlayerFrame {\n feedbackFontHeight = 30\n statusCounter = 0\n portrait = PlayerPortrait {\n }\n manabar = PlayerFrameManaBar {\n }\n statusSign = -1\n unit = \"player\"\n state = \"player\"\n 0 = <userdata>\n menu = <function> defined @Interface\\FrameXML\\PlayerFrame.lua:51\n feedbackText = PlayerHitIndicator {\n }\n healthbar = PlayerFrameHealthBar {\n }\n inSequence = false\n name = PlayerName {\n }\n isAnimatedOut = false\n}\n(*temporary) = true\n(*temporary) = \"attempt to call method 'SetMoveable' (a nil value)\"\n",
+			["stack"] = "[string \"PlayerFrame:SetMoveable(true)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4632: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 6378,
+			["counter"] = 1,
+		}, -- [517]
+		{
+			["message"] = "[string \"PlayerFrame:SetAllPoints('CENTER', UIParent...\"]:1: PlayerFrame:SetAllPoints(): Couldn't find region named 'CENTER'",
+			["time"] = "2022/10/04 21:30:12",
+			["locals"] = "(*temporary) = PlayerFrame {\n feedbackFontHeight = 30\n statusCounter = 0\n portrait = PlayerPortrait {\n }\n manabar = PlayerFrameManaBar {\n }\n statusSign = -1\n unit = \"player\"\n state = \"player\"\n 0 = <userdata>\n menu = <function> defined @Interface\\FrameXML\\PlayerFrame.lua:51\n feedbackText = PlayerHitIndicator {\n }\n healthbar = PlayerFrameHealthBar {\n }\n inSequence = false\n name = PlayerName {\n }\n isAnimatedOut = false\n}\n(*temporary) = \"CENTER\"\n(*temporary) = UIParent {\n 0 = <userdata>\n firstTimeLoaded = 1\n variablesLoaded = true\n}\n(*temporary) = \"CENTER\"\n(*temporary) = -250\n(*temporary) = -96\n",
+			["stack"] = "[string \"=[C]\"]: in function `SetAllPoints'\n[string \"PlayerFrame:SetAllPoints('CENTER', UIParent, 'CENTER', -250, -96)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2977: in function <Interface\\FrameXML\\ChatFrame.lua:2970>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 6378,
+			["counter"] = 1,
+		}, -- [518]
 	},
 }
