@@ -56,7 +56,7 @@ f:RegisterEvent('PLAYER_ENTERING_WORLD')
 f:SetScript(
 	'OnEvent',
 	function(self, event, isInitialLogin, isReloadingUi)
-		if isInitialLogin or isReloadingUi then
+		if isInitialLogin then
 			xInstallAddon()
 
 			if not BNToastFrame.SetBackdrop then

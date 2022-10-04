@@ -50,8 +50,8 @@ W: 232
 H: 100
 Frame: SpellBookFrame
 FrameLevel: 1
-Anchor: TOPLEFT
-X: 383
+Anchor: TOP
+X: -308
 Y: -116
 W: 384
 H: 512
