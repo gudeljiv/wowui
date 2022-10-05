@@ -47,5 +47,6 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run print(IsSpellInRange(2,"pet","pettarget"))
+/run PlayerFrame:ClearAllPoints()
+/run PlayerFrame:SetPoint('CENTER')
 END
