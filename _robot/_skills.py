@@ -51,9 +51,6 @@ skills["hunter"] = [
     {"name": "arcane shot", "key": "f11"},
     {"name": "aspect of the hawk", "key": "f1"},
     {"name": "aspect of the viper", "key": "f5"},
-    {"name": "lifeblood", "key": "z"},
-    {"name": "healthstone", "key": "x"},
-    {"name": "fel blossom", "key": "y"},
     {"name": "trueshot aura", "key": "1", "modifier": "shift"},
     {"name": "chimera shot", "key": "3"},
     {"name": "aimed shot", "key": "6"},
@@ -61,6 +58,10 @@ skills["hunter"] = [
     {"name": "misdirection", "key": "2", "modifier": "shift"},
     {"name": "hunters mark", "key": "3", "modifier": "shift"},
     {"name": "concussive shot", "key": "1"},
+    {"name": "healthstone", "key": "4", "modifier": "shift"},
+    {"name": "healing potion", "key": "5", "modifier": "shift"},
+    {"name": "fel blossom", "key": "6", "modifier": "shift"},
+    {"name": "lifeblood", "key": "7", "modifier": "shift"},
 ]
 
 skills["druid"] = [

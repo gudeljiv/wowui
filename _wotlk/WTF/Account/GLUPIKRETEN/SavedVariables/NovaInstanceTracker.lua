@@ -4,10 +4,10 @@ NITdatabase = {
 		["Mxzq - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
-		["Tudum - Jin'do"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
 		["Wells - Jin'do"] = "Default",
 		["Augustin - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
+		["Pitchwise - Ashbringer"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
@@ -16,7 +16,7 @@ NITdatabase = {
 		["Vermin - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
-		["Pitchwise - Ashbringer"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 	},
 	["global"] = {
 		["instanceWindowWidth"] = 800,
@@ -576,7 +576,7 @@ NITdatabase = {
 					["profSkill2"] = 0,
 				},
 				["Mxzq"] = {
-					["petMaxXP"] = 35850,
+					["petMaxXP"] = 26350,
 					["fishingSkill"] = 0,
 					["cookingSkill"] = 0,
 					["profSkill1"] = 375,
@@ -594,11 +594,11 @@ NITdatabase = {
 						[546] = 2,
 						[557] = 3,
 					},
-					["durabilityAverage"] = 99.53488372093024,
+					["durabilityAverage"] = 92.4031007751938,
 					["prof2"] = "Mining",
 					["savedInstances"] = {
 					},
-					["totalPetPoints"] = 207,
+					["totalPetPoints"] = 0,
 					["marks"] = {
 						[20559] = 0,
 						[20560] = 0,
@@ -610,32 +610,32 @@ NITdatabase = {
 					["honor"] = 732,
 					["maxXP"] = 1523800,
 					["gender"] = "Male",
-					["profSkill2"] = 374,
+					["profSkill2"] = 376,
 					["prof1"] = "Herbalism",
 					["level"] = 70,
-					["restedXP"] = 739684,
+					["restedXP"] = 893194,
 					["totalBagSlots"] = 68,
 					["shadowLabAttune"] = true,
-					["loyaltyString"] = "Ferocity",
+					["loyaltyString"] = "Tenacity",
 					["arenaPoints"] = 0,
 					["firstaidSkillMax"] = 0,
 					["petHappiness"] = 3,
-					["petCurrentXP"] = 4542,
+					["petCurrentXP"] = 11586,
 					["guild"] = "Ratnici podzemlja",
-					["currentXP"] = 974402,
-					["ammo"] = 13891,
+					["currentXP"] = 1150058,
+					["ammo"] = 13015,
 					["raceEnglish"] = "Orc",
 					["profSkillMax1"] = 375,
 					["currency"] = {
 					},
 					["classEnglish"] = "HUNTER",
 					["playerName"] = "Mxzq",
-					["resting"] = true,
-					["time"] = 1664870777,
-					["gold"] = 2400351,
+					["resting"] = false,
+					["time"] = 1664986070,
+					["gold"] = 1689932,
 					["fishingSkillMax"] = 0,
 					["race"] = "Orc",
-					["petLevel"] = 69,
+					["petLevel"] = 66,
 					["realm"] = "Golemagg",
 					["ammoType"] = 28056,
 					["isPetDead"] = false,
@@ -646,14 +646,14 @@ NITdatabase = {
 					["hellfireCitadelAttune"] = true,
 					["guildRankName"] = "Alt",
 					["spentPetPoints"] = 0,
-					["petFamily"] = "Wolf",
+					["petFamily"] = "Bear",
 					["hasPet"] = true,
 					["profSkillMax2"] = 450,
 					["cooldowns"] = {
 					},
-					["freeBagSlots"] = 56,
+					["freeBagSlots"] = 37,
 					["classLocalized"] = "Hunter",
-					["petName"] = "Wolf",
+					["petName"] = "Bear",
 				},
 				["Mxyz"] = {
 					["fishingSkill"] = 0,
@@ -1549,10 +1549,10 @@ NITdatabase = {
 					["leftMoney"] = 0,
 					["group"] = {
 						["Salehsadaat-Venoxis"] = {
-							["class"] = "Paladin",
 							["level"] = 70,
-							["name"] = "Salehsadaat-Venoxis",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Salehsadaat-Venoxis",
+							["class"] = "Paladin",
 						},
 						["Sharmut"] = {
 							["name"] = "Sharmut",
@@ -1576,28 +1576,28 @@ NITdatabase = {
 							["class"] = "Rogue",
 						},
 						["Wizzgeoff-Sulfuron"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 67,
-							["name"] = "Wizzgeoff-Sulfuron",
 							["class"] = "Death Knight",
+							["name"] = "Wizzgeoff-Sulfuron",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Lemolemontea"] = {
-							["class"] = "Mage",
 							["level"] = 71,
-							["name"] = "Lemolemontea",
 							["classEnglish"] = "MAGE",
+							["name"] = "Lemolemontea",
+							["class"] = "Mage",
 						},
 						["Nbcsmanwx-Mograine"] = {
-							["class"] = "Death Knight",
 							["level"] = 62,
-							["name"] = "Nbcsmanwx-Mograine",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Nbcsmanwx-Mograine",
+							["class"] = "Death Knight",
 						},
 						["Sunshineto-Auberdine"] = {
-							["class"] = "Death Knight",
 							["level"] = 70,
-							["name"] = "Sunshineto-Auberdine",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Sunshineto-Auberdine",
+							["class"] = "Death Knight",
 						},
 						["Audyblue-Giantstalker"] = {
 							["name"] = "Audyblue-Giantstalker",
@@ -1607,16 +1607,16 @@ NITdatabase = {
 							["class"] = "Druid",
 						},
 						["Nimúe-MirageRaceway"] = {
-							["classEnglish"] = "PALADIN",
 							["level"] = 70,
-							["name"] = "Nimúe-MirageRaceway",
 							["class"] = "Paladin",
+							["name"] = "Nimúe-MirageRaceway",
+							["classEnglish"] = "PALADIN",
 						},
 						["Ciekut-Mograine"] = {
-							["class"] = "Mage",
 							["level"] = 70,
-							["name"] = "Ciekut-Mograine",
 							["classEnglish"] = "MAGE",
+							["name"] = "Ciekut-Mograine",
+							["class"] = "Mage",
 						},
 						["Gargamæl-Razorfen"] = {
 							["name"] = "Gargamæl-Razorfen",
@@ -1633,22 +1633,22 @@ NITdatabase = {
 							["class"] = "Death Knight",
 						},
 						["Gdhre-Venoxis"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 66,
-							["name"] = "Gdhre-Venoxis",
 							["class"] = "Death Knight",
+							["name"] = "Gdhre-Venoxis",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Hrreds-Venoxis"] = {
-							["class"] = "Death Knight",
 							["level"] = 64,
-							["name"] = "Hrreds-Venoxis",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Hrreds-Venoxis",
+							["class"] = "Death Knight",
 						},
 						["Olcmsaxa-Mograine"] = {
-							["class"] = "Death Knight",
 							["level"] = 62,
-							["name"] = "Olcmsaxa-Mograine",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Olcmsaxa-Mograine",
+							["class"] = "Death Knight",
 						},
 						["Wolfang-Sulfuron"] = {
 							["name"] = "Wolfang-Sulfuron",
@@ -1658,22 +1658,22 @@ NITdatabase = {
 							["level"] = 68,
 						},
 						["Negatíve"] = {
-							["classEnglish"] = "MAGE",
 							["level"] = 64,
-							["name"] = "Negatíve",
 							["class"] = "Mage",
+							["name"] = "Negatíve",
+							["classEnglish"] = "MAGE",
 						},
 						["Odmwndjax-Sulfuron"] = {
-							["class"] = "Death Knight",
 							["level"] = 64,
-							["name"] = "Odmwndjax-Sulfuron",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Odmwndjax-Sulfuron",
+							["class"] = "Death Knight",
 						},
 						["Softschlong-Ashbringer"] = {
-							["classEnglish"] = "PALADIN",
 							["level"] = 70,
-							["name"] = "Softschlong-Ashbringer",
 							["class"] = "Paladin",
+							["name"] = "Softschlong-Ashbringer",
+							["classEnglish"] = "PALADIN",
 						},
 						["Shakron-Venoxis"] = {
 							["name"] = "Shakron-Venoxis",
@@ -1690,46 +1690,46 @@ NITdatabase = {
 							["class"] = "Warrior",
 						},
 						["Hulud-Gehennas"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 70,
-							["name"] = "Hulud-Gehennas",
 							["class"] = "Death Knight",
+							["name"] = "Hulud-Gehennas",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Taktarus-Venoxis"] = {
-							["class"] = "Death Knight",
 							["level"] = 66,
-							["name"] = "Taktarus-Venoxis",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Taktarus-Venoxis",
+							["class"] = "Death Knight",
 						},
 						["Xalyava-Venoxis"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 70,
-							["name"] = "Xalyava-Venoxis",
 							["class"] = "Death Knight",
+							["name"] = "Xalyava-Venoxis",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Salorinde-Venoxis"] = {
-							["class"] = "Death Knight",
 							["level"] = 66,
-							["name"] = "Salorinde-Venoxis",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Salorinde-Venoxis",
+							["class"] = "Death Knight",
 						},
 						["Djkingkongx-Auberdine"] = {
-							["classEnglish"] = "SHAMAN",
 							["level"] = 70,
-							["name"] = "Djkingkongx-Auberdine",
 							["class"] = "Shaman",
+							["name"] = "Djkingkongx-Auberdine",
+							["classEnglish"] = "SHAMAN",
 						},
 						["Reyin-HydraxianWaterlords"] = {
-							["classEnglish"] = "MAGE",
 							["level"] = 70,
-							["name"] = "Reyin-HydraxianWaterlords",
 							["class"] = "Mage",
+							["name"] = "Reyin-HydraxianWaterlords",
+							["classEnglish"] = "MAGE",
 						},
 						["Ðionisio-Mandokir"] = {
-							["class"] = "Paladin",
 							["level"] = 67,
-							["name"] = "Ðionisio-Mandokir",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Ðionisio-Mandokir",
+							["class"] = "Paladin",
 						},
 						["Wutshappenin-Mograine"] = {
 							["name"] = "Wutshappenin-Mograine",
@@ -1739,28 +1739,28 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Denerios-Venoxis"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 68,
-							["name"] = "Denerios-Venoxis",
 							["class"] = "Death Knight",
+							["name"] = "Denerios-Venoxis",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Slindore-Venoxis"] = {
-							["class"] = "Death Knight",
 							["level"] = 66,
-							["name"] = "Slindore-Venoxis",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Slindore-Venoxis",
+							["class"] = "Death Knight",
 						},
 						["Deathmadam-MirageRaceway"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 69,
-							["name"] = "Deathmadam-MirageRaceway",
 							["class"] = "Death Knight",
+							["name"] = "Deathmadam-MirageRaceway",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Instayoink-Gehennas"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 63,
-							["name"] = "Instayoink-Gehennas",
 							["class"] = "Death Knight",
+							["name"] = "Instayoink-Gehennas",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Djbourne-Gehennas"] = {
 							["name"] = "Djbourne-Gehennas",
@@ -1770,22 +1770,22 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Lemmoyn-Ashbringer"] = {
-							["classEnglish"] = "HUNTER",
 							["level"] = 70,
-							["name"] = "Lemmoyn-Ashbringer",
 							["class"] = "Hunter",
+							["name"] = "Lemmoyn-Ashbringer",
+							["classEnglish"] = "HUNTER",
 						},
 						["Holshtein-Gehennas"] = {
-							["classEnglish"] = "WARRIOR",
 							["level"] = 70,
-							["name"] = "Holshtein-Gehennas",
 							["class"] = "Warrior",
+							["name"] = "Holshtein-Gehennas",
+							["classEnglish"] = "WARRIOR",
 						},
 						["Kuencp-Mograine"] = {
-							["class"] = "Mage",
 							["level"] = 70,
-							["name"] = "Kuencp-Mograine",
 							["classEnglish"] = "MAGE",
+							["name"] = "Kuencp-Mograine",
+							["class"] = "Mage",
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -1802,10 +1802,10 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Bewakona-Venoxis"] = {
-							["class"] = "Death Knight",
 							["level"] = 68,
-							["name"] = "Bewakona-Venoxis",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Bewakona-Venoxis",
+							["class"] = "Death Knight",
 						},
 						["Eskorbüto-Mandokir"] = {
 							["name"] = "Eskorbüto-Mandokir",
@@ -1935,10 +1935,10 @@ NITdatabase = {
 							["class"] = "Death Knight",
 						},
 						["Broster-Mograine"] = {
-							["class"] = "Paladin",
 							["level"] = 70,
-							["name"] = "Broster-Mograine",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Broster-Mograine",
+							["class"] = "Paladin",
 						},
 						["Héìnékén-Mograine"] = {
 							["name"] = "Héìnékén-Mograine",
@@ -1948,10 +1948,10 @@ NITdatabase = {
 							["class"] = "Druid",
 						},
 						["Mnabf-Sulfuron"] = {
-							["class"] = "Death Knight",
 							["level"] = 69,
-							["name"] = "Mnabf-Sulfuron",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Mnabf-Sulfuron",
+							["class"] = "Death Knight",
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -1982,10 +1982,10 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Isaana-PyrewoodVillage"] = {
-							["class"] = "Paladin",
 							["level"] = 70,
-							["name"] = "Isaana-PyrewoodVillage",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Isaana-PyrewoodVillage",
+							["class"] = "Paladin",
 						},
 						["Aradan-Gehennas"] = {
 							["name"] = "Aradan-Gehennas",
@@ -2002,10 +2002,10 @@ NITdatabase = {
 							["class"] = "Death Knight",
 						},
 						["Rorkor-Thekal"] = {
-							["class"] = "Death Knight",
 							["level"] = 68,
-							["name"] = "Rorkor-Thekal",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Rorkor-Thekal",
+							["class"] = "Death Knight",
 						},
 						["Arøc-Auberdine"] = {
 							["name"] = "Arøc-Auberdine",
@@ -2015,10 +2015,10 @@ NITdatabase = {
 							["class"] = "Death Knight",
 						},
 						["Chaingushy-Mograine"] = {
-							["classEnglish"] = "SHAMAN",
 							["level"] = 70,
-							["name"] = "Chaingushy-Mograine",
 							["class"] = "Shaman",
+							["name"] = "Chaingushy-Mograine",
+							["classEnglish"] = "SHAMAN",
 						},
 						["Pepbull-Gehennas"] = {
 							["name"] = "Pepbull-Gehennas",
@@ -2028,10 +2028,10 @@ NITdatabase = {
 							["class"] = "Death Knight",
 						},
 						["Talin-Sulfuron"] = {
-							["class"] = "Rogue",
 							["level"] = 63,
-							["name"] = "Talin-Sulfuron",
 							["classEnglish"] = "ROGUE",
+							["name"] = "Talin-Sulfuron",
+							["class"] = "Rogue",
 						},
 						["Hikaru-Giantstalker"] = {
 							["name"] = "Hikaru-Giantstalker",
@@ -2041,10 +2041,10 @@ NITdatabase = {
 							["class"] = "Druid",
 						},
 						["Oupachki-Amnennar"] = {
-							["class"] = "Death Knight",
 							["level"] = 70,
-							["name"] = "Oupachki-Amnennar",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Oupachki-Amnennar",
+							["class"] = "Death Knight",
 						},
 						["Palahuakbar-Gehennas"] = {
 							["name"] = "Palahuakbar-Gehennas",
@@ -2068,16 +2068,16 @@ NITdatabase = {
 							["class"] = "Death Knight",
 						},
 						["Tonkk-Gehennas"] = {
-							["class"] = "Warrior",
 							["level"] = 70,
-							["name"] = "Tonkk-Gehennas",
 							["classEnglish"] = "WARRIOR",
+							["name"] = "Tonkk-Gehennas",
+							["class"] = "Warrior",
 						},
 						["Kreycerr"] = {
-							["class"] = "Druid",
 							["level"] = 70,
-							["name"] = "Kreycerr",
 							["classEnglish"] = "DRUID",
+							["name"] = "Kreycerr",
+							["class"] = "Druid",
 						},
 						["Jesk-Thekal"] = {
 							["name"] = "Jesk-Thekal",
@@ -2115,16 +2115,16 @@ NITdatabase = {
 							["class"] = "Warrior",
 						},
 						["Risicow-Razorfen"] = {
-							["class"] = "Shaman",
 							["level"] = 70,
-							["name"] = "Risicow-Razorfen",
 							["classEnglish"] = "SHAMAN",
+							["name"] = "Risicow-Razorfen",
+							["class"] = "Shaman",
 						},
 						["Csipkéskati"] = {
-							["class"] = "Paladin",
 							["level"] = 70,
-							["name"] = "Csipkéskati",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Csipkéskati",
+							["class"] = "Paladin",
 						},
 						["Fantasi-Venoxis"] = {
 							["name"] = "Fantasi-Venoxis",
@@ -2134,10 +2134,10 @@ NITdatabase = {
 							["class"] = "Death Knight",
 						},
 						["Jyzelkerozen-Auberdine"] = {
-							["class"] = "Hunter",
 							["level"] = 70,
-							["name"] = "Jyzelkerozen-Auberdine",
 							["classEnglish"] = "HUNTER",
+							["name"] = "Jyzelkerozen-Auberdine",
+							["class"] = "Hunter",
 						},
 						["Inspired-Giantstalker"] = {
 							["name"] = "Inspired-Giantstalker",
@@ -2147,22 +2147,22 @@ NITdatabase = {
 							["class"] = "Warrior",
 						},
 						["Kaljasäcci-NethergardeKeep"] = {
-							["class"] = "Death Knight",
 							["level"] = 70,
-							["name"] = "Kaljasäcci-NethergardeKeep",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Kaljasäcci-NethergardeKeep",
+							["class"] = "Death Knight",
 						},
 						["Maulbourne-Gehennas"] = {
-							["class"] = "Death Knight",
 							["level"] = 67,
-							["name"] = "Maulbourne-Gehennas",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Maulbourne-Gehennas",
+							["class"] = "Death Knight",
 						},
 						["Purodin-Gehennas"] = {
-							["class"] = "Paladin",
 							["level"] = 62,
-							["name"] = "Purodin-Gehennas",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Purodin-Gehennas",
+							["class"] = "Paladin",
 						},
 						["Ellwyn-Auberdine"] = {
 							["name"] = "Ellwyn-Auberdine",
@@ -2172,16 +2172,16 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Drtpala-Venoxis"] = {
-							["class"] = "Paladin",
 							["level"] = 70,
-							["name"] = "Drtpala-Venoxis",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Drtpala-Venoxis",
+							["class"] = "Paladin",
 						},
 						["Symba-Sulfuron"] = {
-							["classEnglish"] = "DRUID",
 							["level"] = 70,
-							["name"] = "Symba-Sulfuron",
 							["class"] = "Druid",
+							["name"] = "Symba-Sulfuron",
+							["classEnglish"] = "DRUID",
 						},
 						["Canufukoff-Mograine"] = {
 							["name"] = "Canufukoff-Mograine",
@@ -2220,10 +2220,10 @@ NITdatabase = {
 					["leftMoney"] = 2040884,
 					["group"] = {
 						["Kostron"] = {
-							["class"] = "Death Knight",
 							["level"] = 63,
-							["name"] = "Kostron",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Kostron",
+							["class"] = "Death Knight",
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -2233,10 +2233,10 @@ NITdatabase = {
 							["class"] = "Druid",
 						},
 						["Filodeluz"] = {
-							["class"] = "Paladin",
 							["level"] = 61,
-							["name"] = "Filodeluz",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Filodeluz",
+							["class"] = "Paladin",
 						},
 						["Drrøv"] = {
 							["name"] = "Drrøv",
@@ -2246,10 +2246,10 @@ NITdatabase = {
 							["class"] = "Warlock",
 						},
 						["Pinokkiotjuh"] = {
-							["class"] = "Priest",
 							["level"] = 61,
-							["name"] = "Pinokkiotjuh",
 							["classEnglish"] = "PRIEST",
+							["name"] = "Pinokkiotjuh",
+							["class"] = "Priest",
 						},
 					},
 					["class"] = "Druid",
@@ -2278,10 +2278,10 @@ NITdatabase = {
 					["leftMoney"] = 2040884,
 					["group"] = {
 						["Kostron"] = {
-							["class"] = "Death Knight",
 							["level"] = 63,
-							["name"] = "Kostron",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Kostron",
+							["class"] = "Death Knight",
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -2305,10 +2305,10 @@ NITdatabase = {
 							["class"] = "Warlock",
 						},
 						["Pinokkiotjuh"] = {
-							["class"] = "Priest",
 							["level"] = 61,
-							["name"] = "Pinokkiotjuh",
 							["classEnglish"] = "PRIEST",
+							["name"] = "Pinokkiotjuh",
+							["class"] = "Priest",
 						},
 					},
 					["class"] = "Druid",
@@ -2354,10 +2354,10 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Teoat"] = {
-							["class"] = "Warlock",
 							["classEnglish"] = "WARLOCK",
-							["name"] = "Teoat",
 							["level"] = 70,
+							["name"] = "Teoat",
+							["class"] = "Warlock",
 						},
 						["Brahimdiaz"] = {
 							["name"] = "Brahimdiaz",
@@ -2595,10 +2595,10 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Civà"] = {
-							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["name"] = "Civà",
 							["level"] = 70,
+							["name"] = "Civà",
+							["class"] = "Paladin",
 						},
 						["Buryy"] = {
 							["name"] = "Buryy",
@@ -2644,22 +2644,22 @@ NITdatabase = {
 					["leftMoney"] = 15951446,
 					["group"] = {
 						["Civà"] = {
-							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["name"] = "Civà",
 							["level"] = 70,
+							["name"] = "Civà",
+							["class"] = "Paladin",
 						},
 						["Candlenight"] = {
-							["class"] = "Shaman",
 							["classEnglish"] = "SHAMAN",
-							["name"] = "Candlenight",
 							["level"] = 69,
+							["name"] = "Candlenight",
+							["class"] = "Shaman",
 						},
 						["Quitehot"] = {
-							["class"] = "Warrior",
 							["classEnglish"] = "WARRIOR",
-							["name"] = "Quitehot",
 							["level"] = 70,
+							["name"] = "Quitehot",
+							["class"] = "Warrior",
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -2815,10 +2815,10 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Décïbel-Auberdine"] = {
-							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
-							["name"] = "Décïbel-Auberdine",
 							["level"] = 70,
+							["name"] = "Décïbel-Auberdine",
+							["class"] = "Death Knight",
 						},
 						["Bowi-Mandokir"] = {
 							["name"] = "Bowi-Mandokir",
@@ -2835,10 +2835,10 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Leywina-Auberdine"] = {
-							["class"] = "Mage",
 							["classEnglish"] = "MAGE",
-							["name"] = "Leywina-Auberdine",
 							["level"] = 70,
+							["name"] = "Leywina-Auberdine",
+							["class"] = "Mage",
 						},
 						["Lââdy-Sulfuron"] = {
 							["name"] = "Lââdy-Sulfuron",
@@ -3800,16 +3800,21 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Avalon",
 						},
-						["Pxlfnatic-Venoxis"] = {
-							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-						},
 						["Ïmp-Sulfuron"] = {
 							["level"] = 70,
 							["class"] = "Warlock",
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Grey Parser",
+						},
+						["Kzuhlx-Transcendence"] = {
+							["level"] = 70,
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+						},
+						["Strekkode-Mograine"] = {
+							["level"] = 70,
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
 						},
 						["Azyzyz-Venoxis"] = {
 							["level"] = 70,
@@ -3822,11 +3827,6 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "Nemesis",
 						},
-						["Strekkode-Mograine"] = {
-							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
-						},
 						["Fabbsx-Mograine"] = {
 							["level"] = 70,
 							["class"] = "Death Knight",
@@ -3838,10 +3838,10 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "boost me",
 						},
-						["Kzuhlx-Transcendence"] = {
+						["Pxlfnatic-Venoxis"] = {
 							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
 						},
 						["Mahgar-Venoxis"] = {
 							["level"] = 70,
@@ -4599,22 +4599,22 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Genuine",
 						},
-						["Tedowar-Mograine"] = {
+						["Zneedl-Venoxis"] = {
 							["level"] = 70,
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "ITS LIT",
+							["class"] = "Shaman",
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Roots",
 						},
 						["Koroc-Venoxis"] = {
 							["level"] = 70,
 							["class"] = "Warrior",
 							["classEnglish"] = "WARRIOR",
 						},
-						["Zneedl-Venoxis"] = {
+						["Bruiserbente-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
-							["guildName"] = "Roots",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "RAM RANCH REALLY ROCKS",
 						},
 						["Sakhmadee-Gehennas"] = {
 							["level"] = 70,
@@ -4643,11 +4643,11 @@ NITdatabase = {
 							["class"] = "Warlock",
 							["classEnglish"] = "WARLOCK",
 						},
-						["Bruiserbente-Gehennas"] = {
+						["Tedowar-Mograine"] = {
 							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "RAM RANCH REALLY ROCKS",
+							["class"] = "Warrior",
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "ITS LIT",
 						},
 						["Kaputenzih"] = {
 							["level"] = 70,
@@ -4815,11 +4815,10 @@ NITdatabase = {
 							["class"] = "Rogue",
 							["classEnglish"] = "ROGUE",
 						},
-						["Hassélhoof-Gehennas"] = {
+						["Aceii-Venoxis"] = {
 							["level"] = 70,
-							["class"] = "Druid",
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Plex",
+							["class"] = "Priest",
+							["classEnglish"] = "PRIEST",
 						},
 						["Sabbath-Thekal"] = {
 							["level"] = 70,
@@ -4832,10 +4831,10 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Aceii-Venoxis"] = {
+						["Nevarisus-Mograine"] = {
 							["level"] = 70,
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
 						},
 						["Kaelzarin-Gehennas"] = {
 							["level"] = 70,
@@ -4863,10 +4862,11 @@ NITdatabase = {
 							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
 						},
-						["Nevarisus-Mograine"] = {
+						["Hassélhoof-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
+							["class"] = "Druid",
+							["classEnglish"] = "DRUID",
+							["guildName"] = "Plex",
 						},
 						["Kirava-Venoxis"] = {
 							["level"] = 70,
@@ -5981,16 +5981,17 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Friend Zone",
 						},
+						["Blacktyrael-Auberdine"] = {
+							["level"] = 70,
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "wire",
+						},
 						["Trougkahal-Thekal"] = {
 							["level"] = 70,
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Oppai Addiction",
-						},
-						["Deathatol-Mograine"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Aurax-Transcendence"] = {
 							["level"] = 70,
@@ -6003,11 +6004,10 @@ NITdatabase = {
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 						},
-						["Blacktyrael-Auberdine"] = {
+						["Deathatol-Mograine"] = {
 							["level"] = 70,
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "wire",
 						},
 						["Ølbúk-Mograine"] = {
 							["level"] = 70,
@@ -6195,11 +6195,10 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["class"] = "Death Knight",
 						},
-						["Gunerbad"] = {
-							["class"] = "Mage",
+						["Dutaky"] = {
 							["level"] = 70,
-							["classEnglish"] = "MAGE",
-							["guildName"] = "DetiLiehovove",
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
 						},
 						["Braxxo-Venoxis"] = {
 							["level"] = 70,
@@ -6258,16 +6257,17 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Nocens Locus",
 						},
+						["Gunerbad"] = {
+							["class"] = "Mage",
+							["level"] = 70,
+							["classEnglish"] = "MAGE",
+							["guildName"] = "DetiLiehovove",
+						},
 						["Frostclots-Mograine"] = {
 							["class"] = "Death Knight",
 							["level"] = 70,
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Five Beers In",
-						},
-						["Dutaky"] = {
-							["level"] = 70,
-							["classEnglish"] = "PRIEST",
-							["class"] = "Priest",
 						},
 						["Vermin"] = {
 							["class"] = "Warrior",
@@ -6685,10 +6685,11 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["class"] = "Death Knight",
 						},
-						["Fettdruid-Firemaw"] = {
+						["Evermortem-Venoxis"] = {
+							["class"] = "Death Knight",
 							["level"] = 70,
-							["classEnglish"] = "DRUID",
-							["class"] = "Druid",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Tempest",
 						},
 						["Rikaradin-Gehennas"] = {
 							["class"] = "Paladin",
@@ -6696,17 +6697,16 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Titan",
 						},
+						["Fettdruid-Firemaw"] = {
+							["level"] = 70,
+							["classEnglish"] = "DRUID",
+							["class"] = "Druid",
+						},
 						["Plepzimax-Mograine"] = {
 							["class"] = "Warlock",
 							["level"] = 70,
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Hembränt",
-						},
-						["Evermortem-Venoxis"] = {
-							["class"] = "Death Knight",
-							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Tempest",
 						},
 						["Orcmann-Transcendence"] = {
 							["level"] = 70,
@@ -9842,17 +9842,16 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Luminosity",
 						},
+						["Daggas-Venoxis"] = {
+							["level"] = 70,
+							["class"] = "Priest",
+							["classEnglish"] = "PRIEST",
+						},
 						["Morespeck-Venoxis"] = {
 							["level"] = 70,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Whack a Gnom",
-						},
-						["Vlora-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Hunter",
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "is doing a good job",
 						},
 						["Apolix-Venoxis"] = {
 							["level"] = 70,
@@ -9894,10 +9893,11 @@ NITdatabase = {
 							["class"] = "Shaman",
 							["classEnglish"] = "SHAMAN",
 						},
-						["Daggas-Venoxis"] = {
+						["Vlora-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
+							["class"] = "Hunter",
+							["classEnglish"] = "HUNTER",
+							["guildName"] = "is doing a good job",
 						},
 						["Tollwutbär-Venoxis"] = {
 							["level"] = 70,
@@ -10734,10 +10734,10 @@ NITdatabase = {
 							["class"] = "Hunter",
 						},
 						["Bibô-Ashbringer"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Bibô-Ashbringer",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Bibô-Ashbringer",
+							["class"] = "Death Knight",
 						},
 						["Oakenlight"] = {
 							["name"] = "Oakenlight",
@@ -10747,28 +10747,28 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Linkky"] = {
-							["class"] = "Paladin",
 							["level"] = 56,
-							["name"] = "Linkky",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Linkky",
+							["class"] = "Paladin",
 						},
 						["Nufelina-Mograine"] = {
-							["class"] = "Death Knight",
 							["level"] = 61,
-							["name"] = "Nufelina-Mograine",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Nufelina-Mograine",
+							["class"] = "Death Knight",
 						},
 						["Varatran-Transcendence"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Varatran-Transcendence",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Varatran-Transcendence",
+							["class"] = "Death Knight",
 						},
 						["Eiun-MirageRaceway"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Eiun-MirageRaceway",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Eiun-MirageRaceway",
+							["class"] = "Death Knight",
 						},
 						["Misic-Thekal"] = {
 							["name"] = "Misic-Thekal",
@@ -10778,22 +10778,22 @@ NITdatabase = {
 							["class"] = "Druid",
 						},
 						["Baranko-Lakeshire"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Baranko-Lakeshire",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Baranko-Lakeshire",
+							["class"] = "Death Knight",
 						},
 						["Stribberella-Transcendence"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Stribberella-Transcendence",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Stribberella-Transcendence",
+							["class"] = "Death Knight",
 						},
 						["Bärbelurban-Venoxis"] = {
-							["class"] = "Mage",
 							["level"] = 60,
-							["name"] = "Bärbelurban-Venoxis",
 							["classEnglish"] = "MAGE",
+							["name"] = "Bärbelurban-Venoxis",
+							["class"] = "Mage",
 						},
 						["Nagui-Venoxis"] = {
 							["name"] = "Nagui-Venoxis",
@@ -10803,34 +10803,34 @@ NITdatabase = {
 							["class"] = "Death Knight",
 						},
 						["Kvaratskelia-Gehennas"] = {
-							["class"] = "Death Knight",
 							["level"] = 59,
-							["name"] = "Kvaratskelia-Gehennas",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Kvaratskelia-Gehennas",
+							["class"] = "Death Knight",
 						},
 						["Poluno-Razorfen"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Poluno-Razorfen",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Poluno-Razorfen",
+							["class"] = "Death Knight",
 						},
 						["Zemlicka"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Zemlicka",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Zemlicka",
+							["class"] = "Death Knight",
 						},
 						["Smækk-Gehennas"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Smækk-Gehennas",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Smækk-Gehennas",
+							["class"] = "Death Knight",
 						},
 						["Kefkaa-Sulfuron"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Kefkaa-Sulfuron",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Kefkaa-Sulfuron",
+							["class"] = "Death Knight",
 						},
 						["Altaírs-Mograine"] = {
 							["name"] = "Altaírs-Mograine",
@@ -10847,22 +10847,22 @@ NITdatabase = {
 							["class"] = "Death Knight",
 						},
 						["Viton-Amnennar"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Viton-Amnennar",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Viton-Amnennar",
+							["class"] = "Death Knight",
 						},
 						["Ahsakura-MirageRaceway"] = {
-							["class"] = "Paladin",
 							["level"] = 55,
-							["name"] = "Ahsakura-MirageRaceway",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Ahsakura-MirageRaceway",
+							["class"] = "Paladin",
 						},
 						["Moolatz"] = {
-							["class"] = "Druid",
 							["level"] = 58,
-							["name"] = "Moolatz",
 							["classEnglish"] = "DRUID",
+							["name"] = "Moolatz",
+							["class"] = "Druid",
 						},
 						["Grosseshorn-Venoxis"] = {
 							["name"] = "Grosseshorn-Venoxis",
@@ -10872,16 +10872,16 @@ NITdatabase = {
 							["class"] = "Shaman",
 						},
 						["Jasaman-Lakeshire"] = {
-							["class"] = "Death Knight",
 							["level"] = 59,
-							["name"] = "Jasaman-Lakeshire",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Jasaman-Lakeshire",
+							["class"] = "Death Knight",
 						},
 						["Sesos"] = {
-							["class"] = "Rogue",
 							["level"] = 60,
-							["name"] = "Sesos",
 							["classEnglish"] = "ROGUE",
+							["name"] = "Sesos",
+							["class"] = "Rogue",
 						},
 						["Êxxô-Razorfen"] = {
 							["name"] = "Êxxô-Razorfen",
@@ -10891,22 +10891,22 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Hajona-Mandokir"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Hajona-Mandokir",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Hajona-Mandokir",
+							["class"] = "Death Knight",
 						},
 						["Benitr-NethergardeKeep"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Benitr-NethergardeKeep",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Benitr-NethergardeKeep",
+							["class"] = "Death Knight",
 						},
 						["Falcom-Sulfuron"] = {
-							["class"] = "Rogue",
 							["level"] = 59,
-							["name"] = "Falcom-Sulfuron",
 							["classEnglish"] = "ROGUE",
+							["name"] = "Falcom-Sulfuron",
+							["class"] = "Rogue",
 						},
 						["Madrunelx-Venoxis"] = {
 							["name"] = "Madrunelx-Venoxis",
@@ -10923,10 +10923,10 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Valár-Thekal"] = {
-							["class"] = "Paladin",
 							["level"] = 54,
-							["name"] = "Valár-Thekal",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Valár-Thekal",
+							["class"] = "Paladin",
 						},
 						["Shadowpearl-Mograine"] = {
 							["name"] = "Shadowpearl-Mograine",
@@ -10950,16 +10950,16 @@ NITdatabase = {
 							["class"] = "Rogue",
 						},
 						["Derany-Sulfuron"] = {
-							["class"] = "Death Knight",
 							["level"] = 61,
-							["name"] = "Derany-Sulfuron",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Derany-Sulfuron",
+							["class"] = "Death Knight",
 						},
 						["Kirayuku-Mandokir"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Kirayuku-Mandokir",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Kirayuku-Mandokir",
+							["class"] = "Death Knight",
 						},
 						["Geck-Mandokir"] = {
 							["name"] = "Geck-Mandokir",
@@ -10969,16 +10969,16 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Mookel-Thekal"] = {
-							["class"] = "Hunter",
 							["level"] = 54,
-							["name"] = "Mookel-Thekal",
 							["classEnglish"] = "HUNTER",
+							["name"] = "Mookel-Thekal",
+							["class"] = "Hunter",
 						},
 						["Sorgus-Gehennas"] = {
-							["class"] = "Death Knight",
 							["level"] = 59,
-							["name"] = "Sorgus-Gehennas",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Sorgus-Gehennas",
+							["class"] = "Death Knight",
 						},
 					},
 					["class"] = "Druid",
@@ -11016,16 +11016,16 @@ NITdatabase = {
 					["leftMoney"] = 0,
 					["group"] = {
 						["Xirrson-Venoxis"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 60,
-							["name"] = "Xirrson-Venoxis",
 							["class"] = "Death Knight",
+							["name"] = "Xirrson-Venoxis",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Damagedealer-Giantstalker"] = {
-							["classEnglish"] = "WARRIOR",
 							["level"] = 53,
-							["name"] = "Damagedealer-Giantstalker",
 							["class"] = "Warrior",
+							["name"] = "Damagedealer-Giantstalker",
+							["classEnglish"] = "WARRIOR",
 						},
 						["Oakenlight"] = {
 							["name"] = "Oakenlight",
@@ -11042,16 +11042,16 @@ NITdatabase = {
 							["level"] = 56,
 						},
 						["Djibouti"] = {
-							["classEnglish"] = "DRUID",
 							["level"] = 57,
-							["name"] = "Djibouti",
 							["class"] = "Druid",
+							["name"] = "Djibouti",
+							["classEnglish"] = "DRUID",
 						},
 						["Grünebrille-Venoxis"] = {
-							["classEnglish"] = "PRIEST",
 							["level"] = 55,
-							["name"] = "Grünebrille-Venoxis",
 							["class"] = "Priest",
+							["name"] = "Grünebrille-Venoxis",
+							["classEnglish"] = "PRIEST",
 						},
 						["Slava-Sulfuron"] = {
 							["name"] = "Slava-Sulfuron",
@@ -11075,52 +11075,52 @@ NITdatabase = {
 							["level"] = 52,
 						},
 						["Kunyk-Venoxis"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 60,
-							["name"] = "Kunyk-Venoxis",
 							["class"] = "Death Knight",
+							["name"] = "Kunyk-Venoxis",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Rakesdk-Venoxis"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 60,
-							["name"] = "Rakesdk-Venoxis",
 							["class"] = "Death Knight",
+							["name"] = "Rakesdk-Venoxis",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Extrapalt-Mograine"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 59,
-							["name"] = "Extrapalt-Mograine",
 							["class"] = "Death Knight",
+							["name"] = "Extrapalt-Mograine",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Spájs"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 60,
-							["name"] = "Spájs",
 							["class"] = "Death Knight",
+							["name"] = "Spájs",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Bärbelurban-Venoxis"] = {
-							["classEnglish"] = "MAGE",
 							["level"] = 55,
-							["name"] = "Bärbelurban-Venoxis",
 							["class"] = "Mage",
+							["name"] = "Bärbelurban-Venoxis",
+							["classEnglish"] = "MAGE",
 						},
 						["Kaffekrigare-Gehennas"] = {
-							["classEnglish"] = "WARRIOR",
 							["level"] = 51,
-							["name"] = "Kaffekrigare-Gehennas",
 							["class"] = "Warrior",
+							["name"] = "Kaffekrigare-Gehennas",
+							["classEnglish"] = "WARRIOR",
 						},
 						["Imthebestcya-Gehennas"] = {
-							["classEnglish"] = "WARLOCK",
 							["level"] = 60,
-							["name"] = "Imthebestcya-Gehennas",
 							["class"] = "Warlock",
+							["name"] = "Imthebestcya-Gehennas",
+							["classEnglish"] = "WARLOCK",
 						},
 						["Moolatz"] = {
-							["classEnglish"] = "DRUID",
 							["level"] = 57,
-							["name"] = "Moolatz",
 							["class"] = "Druid",
+							["name"] = "Moolatz",
+							["classEnglish"] = "DRUID",
 						},
 						["Flimflammer"] = {
 							["name"] = "Flimflammer",
@@ -11137,29 +11137,16 @@ NITdatabase = {
 							["level"] = 54,
 						},
 						["Kamuyy-Venoxis"] = {
-							["classEnglish"] = "WARRIOR",
 							["level"] = 61,
-							["name"] = "Kamuyy-Venoxis",
 							["class"] = "Warrior",
+							["name"] = "Kamuyy-Venoxis",
+							["classEnglish"] = "WARRIOR",
 						},
 						["Tokrash-Venoxis"] = {
-							["classEnglish"] = "HUNTER",
 							["level"] = 60,
-							["name"] = "Tokrash-Venoxis",
 							["class"] = "Hunter",
-						},
-						["Tcrujo-Thekal"] = {
-							["name"] = "Tcrujo-Thekal",
-							["guildName"] = "Tranquility",
-							["classEnglish"] = "WARRIOR",
-							["class"] = "Warrior",
-							["level"] = 53,
-						},
-						["Nastyjäck-Transcendence"] = {
-							["classEnglish"] = "SHAMAN",
-							["level"] = 56,
-							["name"] = "Nastyjäck-Transcendence",
-							["class"] = "Shaman",
+							["name"] = "Tokrash-Venoxis",
+							["classEnglish"] = "HUNTER",
 						},
 						["Omnie-Giantstalker"] = {
 							["name"] = "Omnie-Giantstalker",
@@ -11168,12 +11155,11 @@ NITdatabase = {
 							["class"] = "Druid",
 							["level"] = 54,
 						},
-						["Brullas-Mandokir"] = {
-							["name"] = "Brullas-Mandokir",
-							["guildName"] = "LOS MERCENARIOS",
-							["classEnglish"] = "WARRIOR",
-							["class"] = "Warrior",
-							["level"] = 60,
+						["Nastyjäck-Transcendence"] = {
+							["level"] = 56,
+							["class"] = "Shaman",
+							["name"] = "Nastyjäck-Transcendence",
+							["classEnglish"] = "SHAMAN",
 						},
 						["Nuurzuk-Thekal"] = {
 							["name"] = "Nuurzuk-Thekal",
@@ -11181,6 +11167,20 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["class"] = "Death Knight",
 							["level"] = 60,
+						},
+						["Brullas-Mandokir"] = {
+							["name"] = "Brullas-Mandokir",
+							["guildName"] = "LOS MERCENARIOS",
+							["classEnglish"] = "WARRIOR",
+							["class"] = "Warrior",
+							["level"] = 60,
+						},
+						["Tcrujo-Thekal"] = {
+							["name"] = "Tcrujo-Thekal",
+							["guildName"] = "Tranquility",
+							["classEnglish"] = "WARRIOR",
+							["class"] = "Warrior",
+							["level"] = 53,
 						},
 						["Skraan-Thekal"] = {
 							["name"] = "Skraan-Thekal",
@@ -11204,22 +11204,22 @@ NITdatabase = {
 							["level"] = 58,
 						},
 						["Sikss-MirageRaceway"] = {
-							["classEnglish"] = "DRUID",
 							["level"] = 55,
-							["name"] = "Sikss-MirageRaceway",
 							["class"] = "Druid",
+							["name"] = "Sikss-MirageRaceway",
+							["classEnglish"] = "DRUID",
 						},
 						["Schokuh-Razorfen"] = {
-							["classEnglish"] = "WARRIOR",
 							["level"] = 60,
-							["name"] = "Schokuh-Razorfen",
 							["class"] = "Warrior",
+							["name"] = "Schokuh-Razorfen",
+							["classEnglish"] = "WARRIOR",
 						},
 						["Furzrinde-Transcendence"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 60,
-							["name"] = "Furzrinde-Transcendence",
 							["class"] = "Death Knight",
+							["name"] = "Furzrinde-Transcendence",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Meno-Giantstalker"] = {
 							["name"] = "Meno-Giantstalker",
@@ -11229,10 +11229,10 @@ NITdatabase = {
 							["level"] = 59,
 						},
 						["Techcluster-Thekal"] = {
-							["classEnglish"] = "DRUID",
 							["level"] = 60,
-							["name"] = "Techcluster-Thekal",
 							["class"] = "Druid",
+							["name"] = "Techcluster-Thekal",
+							["classEnglish"] = "DRUID",
 						},
 						["Rhinocort"] = {
 							["name"] = "Rhinocort",
@@ -11249,10 +11249,10 @@ NITdatabase = {
 							["level"] = 60,
 						},
 						["Ceecee-Venoxis"] = {
-							["classEnglish"] = "MAGE",
 							["level"] = 60,
-							["name"] = "Ceecee-Venoxis",
 							["class"] = "Mage",
+							["name"] = "Ceecee-Venoxis",
+							["classEnglish"] = "MAGE",
 						},
 						["Loolp-Mograine"] = {
 							["name"] = "Loolp-Mograine",
@@ -11262,10 +11262,10 @@ NITdatabase = {
 							["level"] = 57,
 						},
 						["Kirayuku-Mandokir"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 59,
-							["name"] = "Kirayuku-Mandokir",
 							["class"] = "Death Knight",
+							["name"] = "Kirayuku-Mandokir",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Qruul-Giantstalker"] = {
 							["name"] = "Qruul-Giantstalker",
@@ -11275,10 +11275,10 @@ NITdatabase = {
 							["level"] = 54,
 						},
 						["Saykorealm-Thekal"] = {
-							["classEnglish"] = "ROGUE",
 							["level"] = 55,
-							["name"] = "Saykorealm-Thekal",
 							["class"] = "Rogue",
+							["name"] = "Saykorealm-Thekal",
+							["classEnglish"] = "ROGUE",
 						},
 						["Logray-Venoxis"] = {
 							["name"] = "Logray-Venoxis",
@@ -11316,16 +11316,16 @@ NITdatabase = {
 					["leftMoney"] = 0,
 					["group"] = {
 						["Owlyn-MirageRaceway"] = {
-							["class"] = "Rogue",
 							["level"] = 56,
-							["name"] = "Owlyn-MirageRaceway",
 							["classEnglish"] = "ROGUE",
+							["name"] = "Owlyn-MirageRaceway",
+							["class"] = "Rogue",
 						},
 						["Cringeonhit-Thekal"] = {
-							["class"] = "Rogue",
 							["level"] = 59,
-							["name"] = "Cringeonhit-Thekal",
 							["classEnglish"] = "ROGUE",
+							["name"] = "Cringeonhit-Thekal",
+							["class"] = "Rogue",
 						},
 						["Pimmas-Mograine"] = {
 							["name"] = "Pimmas-Mograine",
@@ -11342,10 +11342,10 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Hoegii-Venoxis"] = {
-							["class"] = "Shaman",
 							["level"] = 58,
-							["name"] = "Hoegii-Venoxis",
 							["classEnglish"] = "SHAMAN",
+							["name"] = "Hoegii-Venoxis",
+							["class"] = "Shaman",
 						},
 						["Rasta-Amnennar"] = {
 							["name"] = "Rasta-Amnennar",
@@ -11355,16 +11355,16 @@ NITdatabase = {
 							["class"] = "Druid",
 						},
 						["Deathnoodle-Venoxis"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Deathnoodle-Venoxis",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Deathnoodle-Venoxis",
+							["class"] = "Death Knight",
 						},
 						["Ajeep-Thekal"] = {
-							["class"] = "Mage",
 							["level"] = 53,
-							["name"] = "Ajeep-Thekal",
 							["classEnglish"] = "MAGE",
+							["name"] = "Ajeep-Thekal",
+							["class"] = "Mage",
 						},
 						["Tantetraudel-Venoxis"] = {
 							["name"] = "Tantetraudel-Venoxis",
@@ -11381,10 +11381,10 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Sidebob-Giantstalker"] = {
-							["class"] = "Warlock",
 							["level"] = 55,
-							["name"] = "Sidebob-Giantstalker",
 							["classEnglish"] = "WARLOCK",
+							["name"] = "Sidebob-Giantstalker",
+							["class"] = "Warlock",
 						},
 						["Fräsis-MirageRaceway"] = {
 							["name"] = "Fräsis-MirageRaceway",
@@ -11408,35 +11408,35 @@ NITdatabase = {
 							["class"] = "Priest",
 						},
 						["Allerberger-Earthshaker"] = {
-							["class"] = "Hunter",
 							["level"] = 60,
-							["name"] = "Allerberger-Earthshaker",
 							["classEnglish"] = "HUNTER",
+							["name"] = "Allerberger-Earthshaker",
+							["class"] = "Hunter",
 						},
 						["Lowlifeign-Gehennas"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Lowlifeign-Gehennas",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Lowlifeign-Gehennas",
+							["class"] = "Death Knight",
 						},
 						["Napøléøn-Amnennar"] = {
-							["class"] = "Druid",
 							["level"] = 58,
-							["name"] = "Napøléøn-Amnennar",
 							["classEnglish"] = "DRUID",
+							["name"] = "Napøléøn-Amnennar",
+							["class"] = "Druid",
 						},
 						["Zeama-MirageRaceway"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 59,
-							["name"] = "Zeama-MirageRaceway",
 							["class"] = "Death Knight",
+							["name"] = "Zeama-MirageRaceway",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
-						["Kitzi-Thekal"] = {
-							["name"] = "Kitzi-Thekal",
-							["guildName"] = "Dream Mentors",
-							["classEnglish"] = "PRIEST",
-							["level"] = 56,
-							["class"] = "Priest",
+						["Víewgen-Venoxis"] = {
+							["name"] = "Víewgen-Venoxis",
+							["guildName"] = "brain is pain",
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+							["level"] = 60,
 						},
 						["Medusalina-Everlook"] = {
 							["name"] = "Medusalina-Everlook",
@@ -11459,12 +11459,12 @@ NITdatabase = {
 							["level"] = 60,
 							["class"] = "Rogue",
 						},
-						["Víewgen-Venoxis"] = {
-							["name"] = "Víewgen-Venoxis",
-							["guildName"] = "brain is pain",
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-							["level"] = 60,
+						["Evzen"] = {
+							["name"] = "Evzen",
+							["guildName"] = "Stormreaver Clan",
+							["classEnglish"] = "SHAMAN",
+							["level"] = 59,
+							["class"] = "Shaman",
 						},
 						["Ellguanche-Thekal"] = {
 							["name"] = "Ellguanche-Thekal",
@@ -11480,12 +11480,12 @@ NITdatabase = {
 							["level"] = 60,
 							["class"] = "Warrior",
 						},
-						["Evzen"] = {
-							["name"] = "Evzen",
-							["guildName"] = "Stormreaver Clan",
-							["classEnglish"] = "SHAMAN",
-							["level"] = 59,
-							["class"] = "Shaman",
+						["Kitzi-Thekal"] = {
+							["name"] = "Kitzi-Thekal",
+							["guildName"] = "Dream Mentors",
+							["classEnglish"] = "PRIEST",
+							["level"] = 56,
+							["class"] = "Priest",
 						},
 						["Ashirá-Venoxis"] = {
 							["name"] = "Ashirá-Venoxis",
@@ -11502,34 +11502,34 @@ NITdatabase = {
 							["class"] = "Priest",
 						},
 						["Renmeï-Sulfuron"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Renmeï-Sulfuron",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Renmeï-Sulfuron",
+							["class"] = "Death Knight",
 						},
 						["Djiskall"] = {
-							["class"] = "Death Knight",
 							["level"] = 59,
-							["name"] = "Djiskall",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Djiskall",
+							["class"] = "Death Knight",
 						},
 						["Momugnunk-Auberdine"] = {
-							["classEnglish"] = "DEATHKNIGHT",
 							["level"] = 61,
-							["name"] = "Momugnunk-Auberdine",
 							["class"] = "Death Knight",
+							["name"] = "Momugnunk-Auberdine",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Crump-Thekal"] = {
-							["classEnglish"] = "DRUID",
 							["level"] = 53,
-							["name"] = "Crump-Thekal",
 							["class"] = "Druid",
+							["name"] = "Crump-Thekal",
+							["classEnglish"] = "DRUID",
 						},
 						["Feyblade-MirageRaceway"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Feyblade-MirageRaceway",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Feyblade-MirageRaceway",
+							["class"] = "Death Knight",
 						},
 						["Iaan-Giantstalker"] = {
 							["name"] = "Iaan-Giantstalker",
@@ -11539,10 +11539,10 @@ NITdatabase = {
 							["class"] = "Priest",
 						},
 						["Ronica-Gehennas"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Ronica-Gehennas",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Ronica-Gehennas",
+							["class"] = "Death Knight",
 						},
 						["Harambe-Thekal"] = {
 							["name"] = "Harambe-Thekal",
@@ -11552,22 +11552,22 @@ NITdatabase = {
 							["class"] = "Mage",
 						},
 						["Shaftalo-Thekal"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Shaftalo-Thekal",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Shaftalo-Thekal",
+							["class"] = "Death Knight",
 						},
 						["Aleürwal"] = {
-							["class"] = "Warrior",
 							["level"] = 60,
-							["name"] = "Aleürwal",
 							["classEnglish"] = "WARRIOR",
+							["name"] = "Aleürwal",
+							["class"] = "Warrior",
 						},
 						["Moolatz"] = {
-							["class"] = "Druid",
 							["level"] = 57,
-							["name"] = "Moolatz",
 							["classEnglish"] = "DRUID",
+							["name"] = "Moolatz",
+							["class"] = "Druid",
 						},
 						["Kruler-Mograine"] = {
 							["name"] = "Kruler-Mograine",
@@ -11577,10 +11577,10 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Margosh-Venoxis"] = {
-							["class"] = "Warrior",
 							["level"] = 56,
-							["name"] = "Margosh-Venoxis",
 							["classEnglish"] = "WARRIOR",
+							["name"] = "Margosh-Venoxis",
+							["class"] = "Warrior",
 						},
 					},
 					["class"] = "Druid",
@@ -11625,10 +11625,10 @@ NITdatabase = {
 							["class"] = "Rogue",
 						},
 						["Sentsui-Venoxis"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Sentsui-Venoxis",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Sentsui-Venoxis",
+							["class"] = "Death Knight",
 						},
 						["Buhall"] = {
 							["name"] = "Buhall",
@@ -11645,10 +11645,10 @@ NITdatabase = {
 							["class"] = "Death Knight",
 						},
 						["Starmaw-Thekal"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Starmaw-Thekal",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Starmaw-Thekal",
+							["class"] = "Death Knight",
 						},
 						["Notodden"] = {
 							["name"] = "Notodden",
@@ -11665,10 +11665,10 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Moolatz"] = {
-							["class"] = "Druid",
 							["level"] = 56,
-							["name"] = "Moolatz",
 							["classEnglish"] = "DRUID",
+							["name"] = "Moolatz",
+							["class"] = "Druid",
 						},
 						["Durance-Thekal"] = {
 							["name"] = "Durance-Thekal",
@@ -11678,10 +11678,10 @@ NITdatabase = {
 							["class"] = "Priest",
 						},
 						["Hoegii-Venoxis"] = {
-							["class"] = "Shaman",
 							["level"] = 57,
-							["name"] = "Hoegii-Venoxis",
 							["classEnglish"] = "SHAMAN",
+							["name"] = "Hoegii-Venoxis",
+							["class"] = "Shaman",
 						},
 						["Rasta-Amnennar"] = {
 							["name"] = "Rasta-Amnennar",
@@ -11691,16 +11691,16 @@ NITdatabase = {
 							["class"] = "Druid",
 						},
 						["Deathnoodle-Venoxis"] = {
-							["class"] = "Death Knight",
 							["level"] = 59,
-							["name"] = "Deathnoodle-Venoxis",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Deathnoodle-Venoxis",
+							["class"] = "Death Knight",
 						},
 						["Drahmon-HydraxianWaterlords"] = {
-							["class"] = "Shaman",
 							["level"] = 52,
-							["name"] = "Drahmon-HydraxianWaterlords",
 							["classEnglish"] = "SHAMAN",
+							["name"] = "Drahmon-HydraxianWaterlords",
+							["class"] = "Shaman",
 						},
 						["Tantetraudel-Venoxis"] = {
 							["name"] = "Tantetraudel-Venoxis",
@@ -11710,22 +11710,22 @@ NITdatabase = {
 							["class"] = "Mage",
 						},
 						["Sidebob-Giantstalker"] = {
-							["class"] = "Warlock",
 							["level"] = 54,
-							["name"] = "Sidebob-Giantstalker",
 							["classEnglish"] = "WARLOCK",
+							["name"] = "Sidebob-Giantstalker",
+							["class"] = "Warlock",
 						},
 						["Deify-Thekal"] = {
-							["class"] = "Rogue",
 							["level"] = 56,
-							["name"] = "Deify-Thekal",
 							["classEnglish"] = "ROGUE",
+							["name"] = "Deify-Thekal",
+							["class"] = "Rogue",
 						},
 						["Tanegul-HydraxianWaterlords"] = {
-							["class"] = "Warrior",
 							["level"] = 54,
-							["name"] = "Tanegul-HydraxianWaterlords",
 							["classEnglish"] = "WARRIOR",
+							["name"] = "Tanegul-HydraxianWaterlords",
+							["class"] = "Warrior",
 						},
 						["Firstäid-Giantstalker"] = {
 							["name"] = "Firstäid-Giantstalker",
@@ -11742,22 +11742,22 @@ NITdatabase = {
 							["class"] = "Death Knight",
 						},
 						["Royalquack-Gehennas"] = {
-							["class"] = "Rogue",
 							["level"] = 54,
-							["name"] = "Royalquack-Gehennas",
 							["classEnglish"] = "ROGUE",
+							["name"] = "Royalquack-Gehennas",
+							["class"] = "Rogue",
 						},
 						["Olywoods-Thekal"] = {
-							["class"] = "Paladin",
 							["level"] = 52,
-							["name"] = "Olywoods-Thekal",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Olywoods-Thekal",
+							["class"] = "Paladin",
 						},
 						["Bengtdennis"] = {
-							["class"] = "Mage",
 							["level"] = 61,
-							["name"] = "Bengtdennis",
 							["classEnglish"] = "MAGE",
+							["name"] = "Bengtdennis",
+							["class"] = "Mage",
 						},
 						["Spey"] = {
 							["name"] = "Spey",
@@ -11809,16 +11809,16 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Djack-Venoxis"] = {
-							["class"] = "Shaman",
 							["level"] = 60,
-							["name"] = "Djack-Venoxis",
 							["classEnglish"] = "SHAMAN",
+							["name"] = "Djack-Venoxis",
+							["class"] = "Shaman",
 						},
 						["Shaftalo-Thekal"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Shaftalo-Thekal",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Shaftalo-Thekal",
+							["class"] = "Death Knight",
 						},
 						["Soedek"] = {
 							["name"] = "Soedek",
@@ -11842,10 +11842,10 @@ NITdatabase = {
 							["class"] = "Rogue",
 						},
 						["Ronica-Gehennas"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Ronica-Gehennas",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Ronica-Gehennas",
+							["class"] = "Death Knight",
 						},
 						["Harambe-Thekal"] = {
 							["name"] = "Harambe-Thekal",
@@ -11855,10 +11855,10 @@ NITdatabase = {
 							["class"] = "Mage",
 						},
 						["Lowlifeign-Gehennas"] = {
-							["class"] = "Death Knight",
 							["level"] = 60,
-							["name"] = "Lowlifeign-Gehennas",
 							["classEnglish"] = "DEATHKNIGHT",
+							["name"] = "Lowlifeign-Gehennas",
+							["class"] = "Death Knight",
 						},
 						["Henryy-Amnennar"] = {
 							["name"] = "Henryy-Amnennar",
@@ -11882,10 +11882,10 @@ NITdatabase = {
 							["class"] = "Priest",
 						},
 						["Hopsheidi-Giantstalker"] = {
-							["class"] = "Paladin",
 							["level"] = 55,
-							["name"] = "Hopsheidi-Giantstalker",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Hopsheidi-Giantstalker",
+							["class"] = "Paladin",
 						},
 					},
 					["class"] = "Druid",
@@ -13080,10 +13080,11 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["guildName"] = "DHL",
 						},
-						["Zephirius-Venoxis"] = {
+						["Milar-Lakeshire"] = {
 							["level"] = 70,
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "Vanhalla",
 						},
 						["Rumpyh-Thekal"] = {
 							["level"] = 70,
@@ -13108,11 +13109,11 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Bloodlust",
 						},
-						["Milar-Lakeshire"] = {
+						["Wersagi-Gehennas"] = {
 							["level"] = 70,
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Vanhalla",
+							["guildName"] = "Step in Shadow",
 						},
 						["Îl"] = {
 							["level"] = 70,
@@ -13160,11 +13161,10 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["guildName"] = "The Last Order",
 						},
-						["Wersagi-Gehennas"] = {
+						["Zephirius-Venoxis"] = {
 							["level"] = 70,
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "Step in Shadow",
 						},
 						["Zrek-Gehennas"] = {
 							["level"] = 70,
@@ -13397,16 +13397,16 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "The Scourge",
 						},
-						["Kelthalol-Venoxis"] = {
-							["level"] = 70,
-							["classEnglish"] = "MAGE",
-							["class"] = "Mage",
-						},
 						["Zyxlan-Mograine"] = {
 							["class"] = "Shaman",
 							["level"] = 70,
 							["classEnglish"] = "SHAMAN",
 							["guildName"] = "Bean Weavers",
+						},
+						["Feay-Sulfuron"] = {
+							["level"] = 70,
+							["classEnglish"] = "DEATHKNIGHT",
+							["class"] = "Death Knight",
 						},
 						["Ripsquad-Thekal"] = {
 							["level"] = 68,
@@ -13418,10 +13418,10 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["class"] = "Death Knight",
 						},
-						["Feay-Sulfuron"] = {
+						["Kelthalol-Venoxis"] = {
 							["level"] = 70,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
+							["classEnglish"] = "MAGE",
+							["class"] = "Mage",
 						},
 						["Massivebicep"] = {
 							["level"] = 70,
@@ -14134,15 +14134,15 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "World Server Is Down",
 						},
+						["Kellokzy-Venoxis"] = {
+							["level"] = 70,
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
+						},
 						["Andrewtate-Mandokir"] = {
 							["level"] = 68,
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-						},
-						["Gudlever-Gehennas"] = {
-							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Northdk-Gehennas"] = {
 							["level"] = 70,
@@ -14195,10 +14195,10 @@ NITdatabase = {
 							["classEnglish"] = "DRUID",
 							["guildName"] = "Nemesís",
 						},
-						["Kellokzy-Venoxis"] = {
+						["Gudlever-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
 						},
 						["Moringray"] = {
 							["level"] = 70,
@@ -14410,11 +14410,11 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["guildName"] = "Seele",
 						},
-						["Hottubstream-Thekal"] = {
+						["Facedk-Gehennas"] = {
 							["level"] = 70,
-							["class"] = "Shaman",
-							["classEnglish"] = "SHAMAN",
-							["guildName"] = "Dedodated",
+							["class"] = "Death Knight",
+							["classEnglish"] = "DEATHKNIGHT",
+							["guildName"] = "MEOW",
 						},
 						["Zethik-Gehennas"] = {
 							["level"] = 70,
@@ -14428,11 +14428,10 @@ NITdatabase = {
 							["classEnglish"] = "PALADIN",
 							["guildName"] = "Awaken",
 						},
-						["Facedk-Gehennas"] = {
+						["Jounne-Thekal"] = {
 							["level"] = 70,
-							["class"] = "Death Knight",
-							["classEnglish"] = "DEATHKNIGHT",
-							["guildName"] = "MEOW",
+							["class"] = "Paladin",
+							["classEnglish"] = "PALADIN",
 						},
 						["Ejgill-MirageRaceway"] = {
 							["level"] = 70,
@@ -14445,10 +14444,11 @@ NITdatabase = {
 							["class"] = "Death Knight",
 							["classEnglish"] = "DEATHKNIGHT",
 						},
-						["Jounne-Thekal"] = {
+						["Hottubstream-Thekal"] = {
 							["level"] = 70,
-							["class"] = "Paladin",
-							["classEnglish"] = "PALADIN",
+							["class"] = "Shaman",
+							["classEnglish"] = "SHAMAN",
+							["guildName"] = "Dedodated",
 						},
 						["Skogsväsen-Mograine"] = {
 							["level"] = 70,
@@ -15163,11 +15163,10 @@ NITdatabase = {
 							["classEnglish"] = "WARLOCK",
 							["guildName"] = "Random People",
 						},
-						["Carrykuh-Venoxis"] = {
-							["class"] = "Warrior",
+						["Soszojowy-Mograine"] = {
 							["level"] = 70,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Hominii Nocturni",
+							["classEnglish"] = "SHAMAN",
+							["class"] = "Shaman",
 						},
 						["Elcamino-Gehennas"] = {
 							["class"] = "Mage",
@@ -15175,10 +15174,10 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Sweet",
 						},
-						["Soszojowy-Mograine"] = {
-							["level"] = 70,
-							["classEnglish"] = "SHAMAN",
-							["class"] = "Shaman",
+						["Zilladk-Gehennas"] = {
+							["level"] = 67,
+							["classEnglish"] = "DEATHKNIGHT",
+							["class"] = "Death Knight",
 						},
 						["Topdeckárn-Gehennas"] = {
 							["level"] = 70,
@@ -15201,10 +15200,11 @@ NITdatabase = {
 							["classEnglish"] = "DEATHKNIGHT",
 							["class"] = "Death Knight",
 						},
-						["Zilladk-Gehennas"] = {
-							["level"] = 67,
-							["classEnglish"] = "DEATHKNIGHT",
-							["class"] = "Death Knight",
+						["Carrykuh-Venoxis"] = {
+							["class"] = "Warrior",
+							["level"] = 70,
+							["classEnglish"] = "WARRIOR",
+							["guildName"] = "Hominii Nocturni",
 						},
 						["Blutgier-Venoxis"] = {
 							["level"] = 70,
@@ -18756,6 +18756,11 @@ NITdatabase = {
 							["classEnglish"] = "MAGE",
 							["guildName"] = "DetiLiehovove",
 						},
+						["Waiglpal"] = {
+							["level"] = 68,
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+						},
 						["Madkiller"] = {
 							["class"] = "Rogue",
 							["level"] = 67,
@@ -18767,11 +18772,6 @@ NITdatabase = {
 							["level"] = 68,
 							["classEnglish"] = "MAGE",
 							["guildName"] = "Razor Hill Mafia",
-						},
-						["Waiglpal"] = {
-							["level"] = 68,
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
 						},
 						["Vermin"] = {
 							["level"] = 68,
@@ -18993,10 +18993,10 @@ NITdatabase = {
 							["level"] = 51,
 						},
 						["Moolatz"] = {
-							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["name"] = "Moolatz",
 							["level"] = 54,
+							["name"] = "Moolatz",
+							["class"] = "Druid",
 						},
 						["Mezuk"] = {
 							["name"] = "Mezuk",
@@ -19013,10 +19013,10 @@ NITdatabase = {
 							["level"] = 55,
 						},
 						["Gutsyberserk"] = {
-							["class"] = "Warrior",
 							["classEnglish"] = "WARRIOR",
-							["name"] = "Gutsyberserk",
 							["level"] = 53,
+							["name"] = "Gutsyberserk",
+							["class"] = "Warrior",
 						},
 					},
 					["class"] = "Druid",
@@ -19047,16 +19047,16 @@ NITdatabase = {
 					["leftMoney"] = 2200886,
 					["group"] = {
 						["Shenata"] = {
-							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["name"] = "Shenata",
 							["level"] = 50,
+							["name"] = "Shenata",
+							["class"] = "Paladin",
 						},
 						["Moolatz"] = {
-							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["name"] = "Moolatz",
 							["level"] = 53,
+							["name"] = "Moolatz",
+							["class"] = "Druid",
 						},
 						["Mezuk"] = {
 							["name"] = "Mezuk",
@@ -19066,16 +19066,16 @@ NITdatabase = {
 							["level"] = 52,
 						},
 						["Christoffer"] = {
-							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["name"] = "Christoffer",
 							["level"] = 54,
+							["name"] = "Christoffer",
+							["class"] = "Paladin",
 						},
 						["Gutsyberserk"] = {
-							["class"] = "Warrior",
 							["classEnglish"] = "WARRIOR",
-							["name"] = "Gutsyberserk",
 							["level"] = 52,
+							["name"] = "Gutsyberserk",
+							["class"] = "Warrior",
 						},
 					},
 					["class"] = "Druid",
@@ -19111,10 +19111,10 @@ NITdatabase = {
 							["level"] = 50,
 						},
 						["Moolatz"] = {
-							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["name"] = "Moolatz",
 							["level"] = 53,
+							["name"] = "Moolatz",
+							["class"] = "Druid",
 						},
 						["Mezuk"] = {
 							["name"] = "Mezuk",
@@ -19131,10 +19131,10 @@ NITdatabase = {
 							["level"] = 54,
 						},
 						["Gutsyberserk"] = {
-							["class"] = "Warrior",
 							["classEnglish"] = "WARRIOR",
-							["name"] = "Gutsyberserk",
 							["level"] = 52,
+							["name"] = "Gutsyberserk",
+							["class"] = "Warrior",
 						},
 					},
 					["class"] = "Druid",
@@ -19172,28 +19172,28 @@ NITdatabase = {
 							["level"] = 49,
 						},
 						["Moolatz"] = {
-							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["name"] = "Moolatz",
 							["level"] = 52,
+							["name"] = "Moolatz",
+							["class"] = "Druid",
 						},
 						["Noobcomander"] = {
-							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["name"] = "Noobcomander",
 							["level"] = 52,
+							["name"] = "Noobcomander",
+							["class"] = "Paladin",
 						},
 						["Ranna"] = {
-							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["name"] = "Ranna",
 							["level"] = 51,
+							["name"] = "Ranna",
+							["class"] = "Paladin",
 						},
 						["Chuum"] = {
-							["class"] = "Warlock",
 							["classEnglish"] = "WARLOCK",
-							["name"] = "Chuum",
 							["level"] = 50,
+							["name"] = "Chuum",
+							["class"] = "Warlock",
 						},
 					},
 					["class"] = "Druid",
@@ -19296,10 +19296,10 @@ NITdatabase = {
 							["level"] = 49,
 						},
 						["Frenzybubble"] = {
-							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["name"] = "Frenzybubble",
 							["level"] = 47,
+							["name"] = "Frenzybubble",
+							["class"] = "Paladin",
 						},
 						["Zupidu"] = {
 							["name"] = "Zupidu",
@@ -19564,28 +19564,28 @@ NITdatabase = {
 					["leftMoney"] = 2686169,
 					["group"] = {
 						["Biskivit"] = {
-							["level"] = 44,
 							["classEnglish"] = "PALADIN",
-							["name"] = "Biskivit",
 							["class"] = "Paladin",
+							["name"] = "Biskivit",
+							["level"] = 44,
 						},
 						["Healboyy"] = {
-							["level"] = 44,
 							["classEnglish"] = "DRUID",
-							["name"] = "Healboyy",
 							["class"] = "Druid",
+							["name"] = "Healboyy",
+							["level"] = 44,
 						},
 						["Moolatz"] = {
-							["level"] = 47,
 							["classEnglish"] = "DRUID",
-							["name"] = "Moolatz",
 							["class"] = "Druid",
+							["name"] = "Moolatz",
+							["level"] = 47,
 						},
 						["Devereaux"] = {
-							["level"] = 43,
 							["classEnglish"] = "WARLOCK",
-							["name"] = "Devereaux",
 							["class"] = "Warlock",
+							["name"] = "Devereaux",
+							["level"] = 43,
 						},
 						["Deadcheen"] = {
 							["name"] = "Deadcheen",
@@ -19870,33 +19870,38 @@ NITdatabase = {
 					["leftMoney"] = 5934471,
 					["group"] = {
 						["Thyger"] = {
-							["level"] = 70,
 							["classEnglish"] = "PALADIN",
+							["level"] = 70,
+							["name"] = "Thyger",
 							["class"] = "Paladin",
 						},
 						["Truba"] = {
+							["name"] = "Truba",
+							["guildName"] = "SEROTONIN",
+							["classEnglish"] = "PRIEST",
 							["class"] = "Priest",
 							["level"] = 70,
-							["classEnglish"] = "PRIEST",
-							["guildName"] = "SEROTONIN",
 						},
 						["Mxzq"] = {
+							["name"] = "Mxzq",
+							["guildName"] = "It is what it is",
+							["classEnglish"] = "HUNTER",
 							["class"] = "Hunter",
 							["level"] = 68,
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "It is what it is",
 						},
 						["Roguekaster"] = {
+							["name"] = "Roguekaster",
+							["guildName"] = "Fellowship of the Horde",
+							["classEnglish"] = "ROGUE",
 							["class"] = "Rogue",
 							["level"] = 70,
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "Fellowship of the Horde",
 						},
 						["Jersey"] = {
+							["name"] = "Jersey",
+							["guildName"] = "Moist",
+							["classEnglish"] = "WARRIOR",
 							["class"] = "Warrior",
 							["level"] = 70,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "Moist",
 						},
 					},
 					["class"] = "Hunter",
@@ -19928,32 +19933,37 @@ NITdatabase = {
 					["leftMoney"] = 5819876,
 					["group"] = {
 						["Oaklynn"] = {
-							["level"] = 70,
 							["classEnglish"] = "PRIEST",
+							["level"] = 70,
+							["name"] = "Oaklynn",
 							["class"] = "Priest",
 						},
 						["Snekki"] = {
-							["level"] = 69,
 							["classEnglish"] = "ROGUE",
+							["level"] = 69,
+							["name"] = "Snekki",
 							["class"] = "Rogue",
 						},
 						["Mxzq"] = {
+							["name"] = "Mxzq",
+							["guildName"] = "It is what it is",
+							["classEnglish"] = "HUNTER",
 							["class"] = "Hunter",
 							["level"] = 68,
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "It is what it is",
 						},
 						["Mazral"] = {
+							["name"] = "Mazral",
+							["guildName"] = "VERSUS",
+							["classEnglish"] = "WARRIOR",
 							["class"] = "Warrior",
 							["level"] = 68,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "VERSUS",
 						},
 						["Ventis"] = {
+							["name"] = "Ventis",
+							["guildName"] = "Exiled",
+							["classEnglish"] = "DRUID",
 							["class"] = "Druid",
 							["level"] = 70,
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Exiled",
 						},
 					},
 					["class"] = "Hunter",
@@ -20320,16 +20330,16 @@ NITdatabase = {
 							["level"] = 39,
 						},
 						["Naturesucks"] = {
-							["class"] = "Druid",
 							["level"] = 34,
-							["name"] = "Naturesucks",
 							["classEnglish"] = "DRUID",
+							["name"] = "Naturesucks",
+							["class"] = "Druid",
 						},
 						["Wentilator"] = {
-							["class"] = "Paladin",
 							["level"] = 37,
-							["name"] = "Wentilator",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Wentilator",
+							["class"] = "Paladin",
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -20397,10 +20407,10 @@ NITdatabase = {
 							["level"] = 36,
 						},
 						["Wentilator"] = {
-							["class"] = "Paladin",
 							["level"] = 36,
-							["name"] = "Wentilator",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Wentilator",
+							["class"] = "Paladin",
 						},
 					},
 					["class"] = "Druid",
@@ -20493,10 +20503,10 @@ NITdatabase = {
 					["leftMoney"] = 2424196,
 					["group"] = {
 						["Heartfate"] = {
-							["class"] = "Priest",
 							["level"] = 36,
-							["name"] = "Heartfate",
 							["classEnglish"] = "PRIEST",
+							["name"] = "Heartfate",
+							["class"] = "Priest",
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -20513,16 +20523,16 @@ NITdatabase = {
 							["level"] = 37,
 						},
 						["Felixka"] = {
-							["class"] = "Paladin",
 							["level"] = 39,
-							["name"] = "Felixka",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Felixka",
+							["class"] = "Paladin",
 						},
 						["Kudrum"] = {
-							["class"] = "Hunter",
 							["level"] = 40,
-							["name"] = "Kudrum",
 							["classEnglish"] = "HUNTER",
+							["name"] = "Kudrum",
+							["class"] = "Hunter",
 						},
 					},
 					["class"] = "Druid",
@@ -20941,10 +20951,10 @@ NITdatabase = {
 					["leftMoney"] = 2483204,
 					["group"] = {
 						["Glurvas"] = {
-							["level"] = 41,
 							["class"] = "Hunter",
-							["name"] = "Glurvas",
 							["classEnglish"] = "HUNTER",
+							["name"] = "Glurvas",
+							["level"] = 41,
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -21019,10 +21029,10 @@ NITdatabase = {
 							["class"] = "Mage",
 						},
 						["Kaftunik"] = {
-							["level"] = 32,
 							["class"] = "Druid",
-							["name"] = "Kaftunik",
 							["classEnglish"] = "DRUID",
+							["name"] = "Kaftunik",
+							["level"] = 32,
 						},
 						["Queliarel"] = {
 							["name"] = "Queliarel",
@@ -21083,10 +21093,10 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Kaftunik"] = {
-							["level"] = 31,
 							["classEnglish"] = "DRUID",
-							["name"] = "Kaftunik",
 							["class"] = "Druid",
+							["name"] = "Kaftunik",
+							["level"] = 31,
 						},
 						["Queliarel"] = {
 							["name"] = "Queliarel",
@@ -21147,10 +21157,10 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Kaftunik"] = {
-							["level"] = 31,
 							["classEnglish"] = "DRUID",
-							["name"] = "Kaftunik",
 							["class"] = "Druid",
+							["name"] = "Kaftunik",
+							["level"] = 31,
 						},
 						["Queliarel"] = {
 							["name"] = "Queliarel",
@@ -21211,10 +21221,10 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Kaftunik"] = {
-							["level"] = 31,
 							["classEnglish"] = "DRUID",
-							["name"] = "Kaftunik",
 							["class"] = "Druid",
+							["name"] = "Kaftunik",
+							["level"] = 31,
 						},
 						["Queliarel"] = {
 							["name"] = "Queliarel",
@@ -21275,10 +21285,10 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Kaftunik"] = {
-							["classEnglish"] = "DRUID",
 							["level"] = 30,
-							["name"] = "Kaftunik",
 							["class"] = "Druid",
+							["name"] = "Kaftunik",
+							["classEnglish"] = "DRUID",
 						},
 						["Queliarel"] = {
 							["name"] = "Queliarel",
@@ -21346,10 +21356,10 @@ NITdatabase = {
 							["class"] = "Mage",
 						},
 						["Kaftunik"] = {
-							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["name"] = "Kaftunik",
 							["level"] = 30,
+							["name"] = "Kaftunik",
+							["class"] = "Druid",
 						},
 						["Queliarel"] = {
 							["name"] = "Queliarel",
@@ -21417,10 +21427,10 @@ NITdatabase = {
 							["class"] = "Mage",
 						},
 						["Kaftunik"] = {
-							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["name"] = "Kaftunik",
 							["level"] = 29,
+							["name"] = "Kaftunik",
+							["class"] = "Druid",
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -21481,10 +21491,10 @@ NITdatabase = {
 							["class"] = "Mage",
 						},
 						["Kaftunik"] = {
-							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["name"] = "Kaftunik",
 							["level"] = 29,
+							["name"] = "Kaftunik",
+							["class"] = "Druid",
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -21545,10 +21555,10 @@ NITdatabase = {
 							["class"] = "Mage",
 						},
 						["Kaftunik"] = {
-							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["name"] = "Kaftunik",
 							["level"] = 28,
+							["name"] = "Kaftunik",
+							["class"] = "Druid",
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -21609,10 +21619,10 @@ NITdatabase = {
 							["class"] = "Mage",
 						},
 						["Kaftunik"] = {
-							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["name"] = "Kaftunik",
 							["level"] = 28,
+							["name"] = "Kaftunik",
+							["class"] = "Druid",
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -21673,10 +21683,10 @@ NITdatabase = {
 							["class"] = "Mage",
 						},
 						["Kaftunik"] = {
-							["class"] = "Druid",
 							["classEnglish"] = "DRUID",
-							["name"] = "Kaftunik",
 							["level"] = 27,
+							["name"] = "Kaftunik",
+							["class"] = "Druid",
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -21728,16 +21738,16 @@ NITdatabase = {
 							["level"] = 45,
 						},
 						["Tcears"] = {
-							["level"] = 0,
 							["class"] = "Paladin",
-							["name"] = "Tcears",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Tcears",
+							["level"] = 0,
 						},
 						["Extod"] = {
-							["level"] = 70,
 							["class"] = "Paladin",
-							["name"] = "Extod",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Extod",
+							["level"] = 70,
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -21747,10 +21757,10 @@ NITdatabase = {
 							["level"] = 30,
 						},
 						["Förvaltaren"] = {
-							["level"] = 0,
 							["class"] = "Paladin",
-							["name"] = "Förvaltaren",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Förvaltaren",
+							["level"] = 0,
 						},
 						["Yezzyx"] = {
 							["name"] = "Yezzyx",
@@ -21788,10 +21798,10 @@ NITdatabase = {
 					["leftMoney"] = 583530,
 					["group"] = {
 						["Pølseman"] = {
-							["level"] = 25,
 							["classEnglish"] = "HUNTER",
-							["name"] = "Pølseman",
 							["class"] = "Hunter",
+							["name"] = "Pølseman",
+							["level"] = 25,
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -21815,10 +21825,10 @@ NITdatabase = {
 							["class"] = "Mage",
 						},
 						["Shelay"] = {
-							["level"] = 26,
 							["classEnglish"] = "HUNTER",
-							["name"] = "Shelay",
 							["class"] = "Hunter",
+							["name"] = "Shelay",
+							["level"] = 26,
 						},
 					},
 					["class"] = "Druid",
@@ -21862,13 +21872,6 @@ NITdatabase = {
 							["class"] = "Druid",
 							["level"] = 27,
 						},
-						["Hokipoki"] = {
-							["name"] = "Hokipoki",
-							["guildName"] = "Whisky Pullz",
-							["classEnglish"] = "WARLOCK",
-							["class"] = "Warlock",
-							["level"] = 29,
-						},
 						["Ymirjotun"] = {
 							["name"] = "Ymirjotun",
 							["guildName"] = "Without a Trace",
@@ -21877,10 +21880,17 @@ NITdatabase = {
 							["level"] = 29,
 						},
 						["Raxxorr"] = {
-							["level"] = 25,
 							["class"] = "Warrior",
-							["name"] = "Raxxorr",
 							["classEnglish"] = "WARRIOR",
+							["name"] = "Raxxorr",
+							["level"] = 25,
+						},
+						["Hokipoki"] = {
+							["name"] = "Hokipoki",
+							["guildName"] = "Whisky Pullz",
+							["classEnglish"] = "WARLOCK",
+							["class"] = "Warlock",
+							["level"] = 29,
 						},
 					},
 					["class"] = "Druid",
@@ -22010,16 +22020,16 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Sairys"] = {
-							["level"] = 29,
 							["classEnglish"] = "WARLOCK",
-							["name"] = "Sairys",
 							["class"] = "Warlock",
+							["name"] = "Sairys",
+							["level"] = 29,
 						},
 						["Aerog"] = {
-							["level"] = 27,
 							["classEnglish"] = "ROGUE",
-							["name"] = "Aerog",
 							["class"] = "Rogue",
+							["name"] = "Aerog",
+							["level"] = 27,
 						},
 						["Darkwixard"] = {
 							["name"] = "Darkwixard",
@@ -22143,10 +22153,10 @@ NITdatabase = {
 							["level"] = 25,
 						},
 						["Aerog"] = {
-							["level"] = 22,
 							["class"] = "Rogue",
-							["name"] = "Aerog",
 							["classEnglish"] = "ROGUE",
+							["name"] = "Aerog",
+							["level"] = 22,
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -22163,10 +22173,10 @@ NITdatabase = {
 							["level"] = 26,
 						},
 						["Celicee"] = {
-							["level"] = 22,
 							["class"] = "Paladin",
-							["name"] = "Celicee",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Celicee",
+							["level"] = 22,
 						},
 					},
 					["class"] = "Druid",
@@ -22204,28 +22214,28 @@ NITdatabase = {
 							["level"] = 24,
 						},
 						["Zafiku"] = {
-							["level"] = 19,
 							["class"] = "Shaman",
-							["name"] = "Zafiku",
 							["classEnglish"] = "SHAMAN",
+							["name"] = "Zafiku",
+							["level"] = 19,
 						},
 						["Urtaca"] = {
-							["level"] = 22,
 							["class"] = "Paladin",
-							["name"] = "Urtaca",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Urtaca",
+							["level"] = 22,
 						},
 						["Crixo"] = {
-							["level"] = 19,
 							["class"] = "Warrior",
-							["name"] = "Crixo",
 							["classEnglish"] = "WARRIOR",
+							["name"] = "Crixo",
+							["level"] = 19,
 						},
 						["Eriadne"] = {
-							["level"] = 22,
 							["class"] = "Paladin",
-							["name"] = "Eriadne",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Eriadne",
+							["level"] = 22,
 						},
 					},
 					["class"] = "Druid",
@@ -22256,10 +22266,10 @@ NITdatabase = {
 					["leftMoney"] = 516227,
 					["group"] = {
 						["Sevika"] = {
-							["level"] = 20,
 							["class"] = "Rogue",
-							["name"] = "Sevika",
 							["classEnglish"] = "ROGUE",
+							["name"] = "Sevika",
+							["level"] = 20,
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -22332,10 +22342,10 @@ NITdatabase = {
 							["class"] = "Warlock",
 						},
 						["Yourmumlol"] = {
-							["level"] = 20,
 							["classEnglish"] = "SHAMAN",
-							["name"] = "Yourmumlol",
 							["class"] = "Shaman",
+							["name"] = "Yourmumlol",
+							["level"] = 20,
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -22396,16 +22406,16 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Bryza"] = {
-							["level"] = 24,
 							["classEnglish"] = "PALADIN",
-							["name"] = "Bryza",
 							["class"] = "Paladin",
+							["name"] = "Bryza",
+							["level"] = 24,
 						},
 						["Xvr"] = {
-							["level"] = 20,
 							["classEnglish"] = "PALADIN",
-							["name"] = "Xvr",
 							["class"] = "Paladin",
+							["name"] = "Xvr",
+							["level"] = 20,
 						},
 						["Sanma"] = {
 							["name"] = "Sanma",
@@ -22457,10 +22467,10 @@ NITdatabase = {
 							["class"] = "Druid",
 						},
 						["Auberett"] = {
-							["level"] = 20,
 							["classEnglish"] = "PRIEST",
-							["name"] = "Auberett",
 							["class"] = "Priest",
+							["name"] = "Auberett",
+							["level"] = 20,
 						},
 						["Grozniq"] = {
 							["name"] = "Grozniq",
@@ -22505,10 +22515,10 @@ NITdatabase = {
 					["leftMoney"] = 504953,
 					["group"] = {
 						["Lichbich"] = {
-							["level"] = 19,
 							["class"] = "Warrior",
-							["name"] = "Lichbich",
 							["classEnglish"] = "WARRIOR",
+							["name"] = "Lichbich",
+							["level"] = 19,
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -22525,22 +22535,22 @@ NITdatabase = {
 							["level"] = 20,
 						},
 						["Wyclef"] = {
-							["level"] = 25,
 							["class"] = "Hunter",
-							["name"] = "Wyclef",
 							["classEnglish"] = "HUNTER",
+							["name"] = "Wyclef",
+							["level"] = 25,
 						},
 						["Gumba"] = {
-							["level"] = 21,
 							["class"] = "Priest",
-							["name"] = "Gumba",
 							["classEnglish"] = "PRIEST",
+							["name"] = "Gumba",
+							["level"] = 21,
 						},
 						["Xzissor"] = {
-							["level"] = 21,
 							["class"] = "Mage",
-							["name"] = "Xzissor",
 							["classEnglish"] = "MAGE",
+							["name"] = "Xzissor",
+							["level"] = 21,
 						},
 					},
 					["class"] = "Druid",
@@ -22574,10 +22584,10 @@ NITdatabase = {
 					["leftMoney"] = 8102867,
 					["group"] = {
 						["Kecskee"] = {
-							["level"] = 63,
 							["class"] = "Druid",
-							["name"] = "Kecskee",
 							["classEnglish"] = "DRUID",
+							["name"] = "Kecskee",
+							["level"] = 63,
 						},
 						["Ghitza"] = {
 							["name"] = "Ghitza",
@@ -22587,10 +22597,10 @@ NITdatabase = {
 							["level"] = 62,
 						},
 						["Mauldron"] = {
-							["level"] = 65,
 							["class"] = "Warlock",
-							["name"] = "Mauldron",
 							["classEnglish"] = "WARLOCK",
+							["name"] = "Mauldron",
+							["level"] = 65,
 						},
 						["Mxzq"] = {
 							["name"] = "Mxzq",
@@ -22600,10 +22610,10 @@ NITdatabase = {
 							["level"] = 67,
 						},
 						["Holytomato"] = {
-							["level"] = 63,
 							["class"] = "Priest",
-							["name"] = "Holytomato",
 							["classEnglish"] = "PRIEST",
+							["name"] = "Holytomato",
+							["level"] = 63,
 						},
 					},
 					["class"] = "Hunter",
@@ -22642,10 +22652,10 @@ NITdatabase = {
 							["level"] = 68,
 						},
 						["Phalanxy"] = {
-							["level"] = 70,
 							["class"] = "Paladin",
-							["name"] = "Phalanxy",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Phalanxy",
+							["level"] = 70,
 						},
 						["Mxzq"] = {
 							["name"] = "Mxzq",
@@ -22754,10 +22764,10 @@ NITdatabase = {
 					["leftMoney"] = 6465363,
 					["group"] = {
 						["Mørdredt"] = {
-							["level"] = 65,
 							["classEnglish"] = "MAGE",
-							["name"] = "Mørdredt",
 							["class"] = "Mage",
+							["name"] = "Mørdredt",
+							["level"] = 65,
 						},
 						["Saxi"] = {
 							["name"] = "Saxi",
@@ -22767,10 +22777,10 @@ NITdatabase = {
 							["class"] = "Warlock",
 						},
 						["Demedeyra"] = {
-							["level"] = 65,
 							["classEnglish"] = "PRIEST",
-							["name"] = "Demedeyra",
 							["class"] = "Priest",
+							["name"] = "Demedeyra",
+							["level"] = 65,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -22813,10 +22823,10 @@ NITdatabase = {
 							["class"] = "Warlock",
 						},
 						["Omm"] = {
-							["level"] = 9,
 							["classEnglish"] = "WARLOCK",
-							["name"] = "Omm",
 							["class"] = "Warlock",
+							["name"] = "Omm",
+							["level"] = 9,
 						},
 						["Búbo"] = {
 							["name"] = "Búbo",
@@ -22882,10 +22892,10 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Názáreti"] = {
-							["level"] = 13,
 							["classEnglish"] = "PRIEST",
-							["name"] = "Názáreti",
 							["class"] = "Priest",
+							["name"] = "Názáreti",
+							["level"] = 13,
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -23007,10 +23017,10 @@ NITdatabase = {
 							["class"] = "Shaman",
 						},
 						["Antonyo"] = {
-							["level"] = 12,
 							["classEnglish"] = "WARLOCK",
-							["name"] = "Antonyo",
 							["class"] = "Warlock",
+							["name"] = "Antonyo",
+							["level"] = 12,
 						},
 						["Búbo"] = {
 							["name"] = "Búbo",
@@ -23027,10 +23037,10 @@ NITdatabase = {
 							["class"] = "Druid",
 						},
 						["Shadowdust"] = {
-							["level"] = 0,
 							["classEnglish"] = "PRIEST",
-							["name"] = "Shadowdust",
 							["class"] = "Priest",
+							["name"] = "Shadowdust",
+							["level"] = 0,
 						},
 					},
 					["class"] = "Druid",
@@ -23061,10 +23071,10 @@ NITdatabase = {
 					["leftMoney"] = 496470,
 					["group"] = {
 						["Drasko"] = {
-							["level"] = 16,
 							["classEnglish"] = "PALADIN",
-							["name"] = "Drasko",
 							["class"] = "Paladin",
+							["name"] = "Drasko",
+							["level"] = 16,
 						},
 						["Moolatz"] = {
 							["name"] = "Moolatz",
@@ -23074,22 +23084,22 @@ NITdatabase = {
 							["class"] = "Druid",
 						},
 						["Datpyte"] = {
-							["level"] = 18,
 							["classEnglish"] = "DRUID",
-							["name"] = "Datpyte",
 							["class"] = "Druid",
+							["name"] = "Datpyte",
+							["level"] = 18,
 						},
 						["Spooktacular"] = {
-							["level"] = 17,
 							["classEnglish"] = "WARLOCK",
-							["name"] = "Spooktacular",
 							["class"] = "Warlock",
+							["name"] = "Spooktacular",
+							["level"] = 17,
 						},
 						["Progixo"] = {
-							["level"] = 16,
 							["classEnglish"] = "HUNTER",
-							["name"] = "Progixo",
 							["class"] = "Hunter",
+							["name"] = "Progixo",
+							["level"] = 16,
 						},
 					},
 					["class"] = "Druid",
@@ -23120,10 +23130,10 @@ NITdatabase = {
 					["leftMoney"] = 8091237,
 					["group"] = {
 						["Lmz"] = {
-							["level"] = 67,
 							["classEnglish"] = "SHAMAN",
-							["name"] = "Lmz",
 							["class"] = "Shaman",
+							["name"] = "Lmz",
+							["level"] = 67,
 						},
 						["Tathame"] = {
 							["name"] = "Tathame",
@@ -23140,10 +23150,10 @@ NITdatabase = {
 							["class"] = "Warlock",
 						},
 						["Echoo"] = {
-							["level"] = 64,
 							["classEnglish"] = "ROGUE",
-							["name"] = "Echoo",
 							["class"] = "Rogue",
+							["name"] = "Echoo",
+							["level"] = 64,
 						},
 						["Mxzq"] = {
 							["name"] = "Mxzq",
@@ -23247,10 +23257,10 @@ NITdatabase = {
 					["leftMoney"] = 8064291,
 					["group"] = {
 						["Zugzugpower"] = {
-							["level"] = 66,
 							["classEnglish"] = "WARRIOR",
-							["name"] = "Zugzugpower",
 							["class"] = "Warrior",
+							["name"] = "Zugzugpower",
+							["level"] = 66,
 						},
 						["Mxzq"] = {
 							["name"] = "Mxzq",
@@ -23309,10 +23319,10 @@ NITdatabase = {
 					["leftMoney"] = 7988721,
 					["group"] = {
 						["Enrish"] = {
-							["level"] = 70,
 							["class"] = "Mage",
-							["name"] = "Enrish",
 							["classEnglish"] = "MAGE",
+							["name"] = "Enrish",
+							["level"] = 70,
 						},
 						["Mxzq"] = {
 							["name"] = "Mxzq",
@@ -23329,16 +23339,16 @@ NITdatabase = {
 							["level"] = 64,
 						},
 						["Suheri"] = {
-							["level"] = 62,
 							["class"] = "Mage",
-							["name"] = "Suheri",
 							["classEnglish"] = "MAGE",
+							["name"] = "Suheri",
+							["level"] = 62,
 						},
 						["Vashter"] = {
-							["level"] = 62,
 							["class"] = "Paladin",
-							["name"] = "Vashter",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Vashter",
+							["level"] = 62,
 						},
 					},
 					["class"] = "Hunter",
@@ -23369,10 +23379,10 @@ NITdatabase = {
 					["leftMoney"] = 7955720,
 					["group"] = {
 						["Enrish"] = {
-							["level"] = 70,
 							["class"] = "Mage",
-							["name"] = "Enrish",
 							["classEnglish"] = "MAGE",
+							["name"] = "Enrish",
+							["level"] = 70,
 						},
 						["Mxzq"] = {
 							["name"] = "Mxzq",
@@ -23382,10 +23392,10 @@ NITdatabase = {
 							["level"] = 66,
 						},
 						["Suheri"] = {
-							["level"] = 61,
 							["class"] = "Mage",
-							["name"] = "Suheri",
 							["classEnglish"] = "MAGE",
+							["name"] = "Suheri",
+							["level"] = 61,
 						},
 						["Zhoubonoshka"] = {
 							["name"] = "Zhoubonoshka",
@@ -23395,10 +23405,10 @@ NITdatabase = {
 							["level"] = 64,
 						},
 						["Vashter"] = {
-							["level"] = 62,
 							["class"] = "Paladin",
-							["name"] = "Vashter",
 							["classEnglish"] = "PALADIN",
+							["name"] = "Vashter",
+							["level"] = 62,
 						},
 					},
 					["class"] = "Hunter",
@@ -23443,10 +23453,10 @@ NITdatabase = {
 							["class"] = "Warrior",
 						},
 						["Vénöreg"] = {
-							["level"] = 61,
 							["classEnglish"] = "WARLOCK",
-							["name"] = "Vénöreg",
 							["class"] = "Warlock",
+							["name"] = "Vénöreg",
+							["level"] = 61,
 						},
 						["Myrodyll"] = {
 							["name"] = "Myrodyll",
@@ -23491,10 +23501,10 @@ NITdatabase = {
 					["leftMoney"] = 2798778,
 					["group"] = {
 						["Lmz"] = {
-							["level"] = 66,
 							["classEnglish"] = "SHAMAN",
-							["name"] = "Lmz",
 							["class"] = "Shaman",
+							["name"] = "Lmz",
+							["level"] = 66,
 						},
 						["Makiroll"] = {
 							["name"] = "Makiroll",
@@ -23511,10 +23521,10 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Meningitiz"] = {
-							["level"] = 66,
 							["classEnglish"] = "ROGUE",
-							["name"] = "Meningitiz",
 							["class"] = "Rogue",
+							["name"] = "Meningitiz",
+							["level"] = 66,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -23553,10 +23563,10 @@ NITdatabase = {
 					["leftMoney"] = 2766089,
 					["group"] = {
 						["Lmz"] = {
-							["level"] = 66,
 							["classEnglish"] = "SHAMAN",
-							["name"] = "Lmz",
 							["class"] = "Shaman",
+							["name"] = "Lmz",
+							["level"] = 66,
 						},
 						["Makiroll"] = {
 							["name"] = "Makiroll",
@@ -23573,10 +23583,10 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Meningitiz"] = {
-							["level"] = 66,
 							["classEnglish"] = "ROGUE",
-							["name"] = "Meningitiz",
 							["class"] = "Rogue",
+							["name"] = "Meningitiz",
+							["level"] = 66,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -23629,10 +23639,10 @@ NITdatabase = {
 							["class"] = "Mage",
 						},
 						["Xeola-Gehennas"] = {
-							["level"] = 70,
 							["classEnglish"] = "MAGE",
-							["name"] = "Xeola-Gehennas",
 							["class"] = "Mage",
+							["name"] = "Xeola-Gehennas",
+							["level"] = 70,
 						},
 						["Lionseye-Gehennas"] = {
 							["name"] = "Lionseye-Gehennas",
@@ -23656,34 +23666,34 @@ NITdatabase = {
 							["class"] = "Warrior",
 						},
 						["Røm-Venoxis"] = {
-							["level"] = 70,
 							["classEnglish"] = "ROGUE",
-							["name"] = "Røm-Venoxis",
 							["class"] = "Rogue",
+							["name"] = "Røm-Venoxis",
+							["level"] = 70,
 						},
 						["Baboonslayer-Gehennas"] = {
-							["level"] = 70,
 							["classEnglish"] = "PRIEST",
-							["name"] = "Baboonslayer-Gehennas",
 							["class"] = "Priest",
+							["name"] = "Baboonslayer-Gehennas",
+							["level"] = 70,
 						},
 						["Targost-Firemaw"] = {
-							["level"] = 70,
 							["class"] = "Shaman",
-							["name"] = "Targost-Firemaw",
 							["classEnglish"] = "SHAMAN",
+							["name"] = "Targost-Firemaw",
+							["level"] = 70,
 						},
 						["Drhirntøt-Venoxis"] = {
-							["level"] = 70,
 							["classEnglish"] = "MAGE",
-							["name"] = "Drhirntøt-Venoxis",
 							["class"] = "Mage",
+							["name"] = "Drhirntøt-Venoxis",
+							["level"] = 70,
 						},
 						["Pwk-Gehennas"] = {
-							["level"] = 70,
 							["classEnglish"] = "PRIEST",
-							["name"] = "Pwk-Gehennas",
 							["class"] = "Priest",
+							["name"] = "Pwk-Gehennas",
+							["level"] = 70,
 						},
 						["Arktarus-Sulfuron"] = {
 							["name"] = "Arktarus-Sulfuron",
@@ -23756,10 +23766,10 @@ NITdatabase = {
 							["class"] = "Rogue",
 						},
 						["Cârter-Sulfuron"] = {
-							["level"] = 70,
 							["classEnglish"] = "WARLOCK",
-							["name"] = "Cârter-Sulfuron",
 							["class"] = "Warlock",
+							["name"] = "Cârter-Sulfuron",
+							["level"] = 70,
 						},
 						["Borbeste-Venoxis"] = {
 							["name"] = "Borbeste-Venoxis",
@@ -23769,10 +23779,10 @@ NITdatabase = {
 							["class"] = "Warrior",
 						},
 						["Bloktopia-Venoxis"] = {
-							["level"] = 70,
 							["classEnglish"] = "DRUID",
-							["name"] = "Bloktopia-Venoxis",
 							["class"] = "Druid",
+							["name"] = "Bloktopia-Venoxis",
+							["level"] = 70,
 						},
 						["Nesro-Venoxis"] = {
 							["name"] = "Nesro-Venoxis",
@@ -23782,10 +23792,10 @@ NITdatabase = {
 							["class"] = "Rogue",
 						},
 						["Hasgar-Venoxis"] = {
-							["level"] = 70,
 							["classEnglish"] = "PRIEST",
-							["name"] = "Hasgar-Venoxis",
 							["class"] = "Priest",
+							["name"] = "Hasgar-Venoxis",
+							["level"] = 70,
 						},
 						["Shanabeard-Gehennas"] = {
 							["name"] = "Shanabeard-Gehennas",
@@ -23795,10 +23805,10 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Jabos-Razorfen"] = {
-							["level"] = 70,
 							["classEnglish"] = "SHAMAN",
-							["name"] = "Jabos-Razorfen",
 							["class"] = "Shaman",
+							["name"] = "Jabos-Razorfen",
+							["level"] = 70,
 						},
 						["Knicko-Gehennas"] = {
 							["name"] = "Knicko-Gehennas",
@@ -23808,10 +23818,10 @@ NITdatabase = {
 							["class"] = "Shaman",
 						},
 						["Odyseas-Gehennas"] = {
-							["level"] = 70,
 							["classEnglish"] = "WARLOCK",
-							["name"] = "Odyseas-Gehennas",
 							["class"] = "Warlock",
+							["name"] = "Odyseas-Gehennas",
+							["level"] = 70,
 						},
 						["Eshquîa"] = {
 							["name"] = "Eshquîa",
@@ -23821,10 +23831,10 @@ NITdatabase = {
 							["class"] = "Paladin",
 						},
 						["Kaaboomm-Razorfen"] = {
-							["level"] = 61,
 							["classEnglish"] = "HUNTER",
-							["name"] = "Kaaboomm-Razorfen",
 							["class"] = "Hunter",
+							["name"] = "Kaaboomm-Razorfen",
+							["level"] = 61,
 						},
 						["Krastana-Gehennas"] = {
 							["name"] = "Krastana-Gehennas",
@@ -23848,10 +23858,10 @@ NITdatabase = {
 							["class"] = "Mage",
 						},
 						["Hokkamu-Venoxis"] = {
-							["level"] = 70,
 							["classEnglish"] = "SHAMAN",
-							["name"] = "Hokkamu-Venoxis",
 							["class"] = "Shaman",
+							["name"] = "Hokkamu-Venoxis",
+							["level"] = 70,
 						},
 						["Shamboozled-Venoxis"] = {
 							["name"] = "Shamboozled-Venoxis",
@@ -23861,10 +23871,10 @@ NITdatabase = {
 							["class"] = "Shaman",
 						},
 						["Nôname-Sulfuron"] = {
-							["level"] = 70,
 							["classEnglish"] = "ROGUE",
-							["name"] = "Nôname-Sulfuron",
 							["class"] = "Rogue",
+							["name"] = "Nôname-Sulfuron",
+							["level"] = 70,
 						},
 						["Billcosbyy-Firemaw"] = {
 							["name"] = "Billcosbyy-Firemaw",
@@ -23923,37 +23933,43 @@ NITdatabase = {
 					["leftMoney"] = 7384200,
 					["group"] = {
 						["Odvratni"] = {
+							["name"] = "Odvratni",
+							["guildName"] = "Tankless Job",
+							["classEnglish"] = "ROGUE",
 							["class"] = "Rogue",
 							["level"] = 69,
-							["classEnglish"] = "ROGUE",
-							["guildName"] = "Tankless Job",
 						},
 						["Mxzq"] = {
+							["name"] = "Mxzq",
+							["guildName"] = "It is what it is",
+							["classEnglish"] = "HUNTER",
 							["class"] = "Hunter",
 							["level"] = 66,
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "It is what it is",
 						},
 						["Meeyak"] = {
+							["name"] = "Meeyak",
+							["guildName"] = "Razor Hill Mafia",
+							["classEnglish"] = "PALADIN",
 							["class"] = "Paladin",
 							["level"] = 67,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Razor Hill Mafia",
 						},
 						["Êhlôure"] = {
+							["name"] = "Êhlôure",
+							["guildName"] = "Insomnia",
+							["classEnglish"] = "WARLOCK",
 							["class"] = "Warlock",
 							["level"] = 70,
-							["classEnglish"] = "WARLOCK",
-							["guildName"] = "Insomnia",
 						},
 						["Bellicosa"] = {
-							["level"] = 70,
 							["classEnglish"] = "PALADIN",
+							["level"] = 70,
+							["name"] = "Bellicosa",
 							["class"] = "Paladin",
 						},
 						["Sledy"] = {
-							["level"] = 67,
 							["classEnglish"] = "PRIEST",
+							["level"] = 67,
+							["name"] = "Sledy",
 							["class"] = "Priest",
 						},
 					},
@@ -23986,30 +24002,35 @@ NITdatabase = {
 					["leftMoney"] = 6861436,
 					["group"] = {
 						["Hemabussen"] = {
+							["name"] = "Hemabussen",
+							["guildName"] = "Nuladvaosam",
+							["classEnglish"] = "PALADIN",
 							["class"] = "Paladin",
 							["level"] = 66,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Nuladvaosam",
 						},
 						["Mxzq"] = {
+							["name"] = "Mxzq",
+							["guildName"] = "It is what it is",
+							["classEnglish"] = "HUNTER",
 							["class"] = "Hunter",
 							["level"] = 65,
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "It is what it is",
 						},
 						["Essfor"] = {
-							["level"] = 64,
 							["classEnglish"] = "SHAMAN",
+							["level"] = 64,
+							["name"] = "Essfor",
 							["class"] = "Shaman",
 						},
 						["Sterf"] = {
-							["level"] = 64,
 							["classEnglish"] = "SHAMAN",
+							["level"] = 64,
+							["name"] = "Sterf",
 							["class"] = "Shaman",
 						},
 						["Dimec"] = {
-							["level"] = 64,
 							["classEnglish"] = "ROGUE",
+							["level"] = 64,
+							["name"] = "Dimec",
 							["class"] = "Rogue",
 						},
 					},
@@ -24042,34 +24063,39 @@ NITdatabase = {
 					["leftMoney"] = 6626654,
 					["group"] = {
 						["Drekie"] = {
+							["name"] = "Drekie",
+							["guildName"] = "LevelUp Inc",
+							["classEnglish"] = "WARRIOR",
 							["class"] = "Warrior",
 							["level"] = 65,
-							["classEnglish"] = "WARRIOR",
-							["guildName"] = "LevelUp Inc",
 						},
 						["Mxzq"] = {
+							["name"] = "Mxzq",
+							["guildName"] = "It is what it is",
+							["classEnglish"] = "HUNTER",
 							["class"] = "Hunter",
 							["level"] = 65,
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "It is what it is",
 						},
 						["Blekhorn"] = {
+							["name"] = "Blekhorn",
+							["guildName"] = "Nuladvaosam",
+							["classEnglish"] = "DRUID",
 							["class"] = "Druid",
 							["level"] = 63,
-							["classEnglish"] = "DRUID",
-							["guildName"] = "Nuladvaosam",
 						},
 						["Justicar"] = {
+							["name"] = "Justicar",
+							["guildName"] = "Verified Amateurs",
+							["classEnglish"] = "PALADIN",
 							["class"] = "Paladin",
 							["level"] = 66,
-							["classEnglish"] = "PALADIN",
-							["guildName"] = "Verified Amateurs",
 						},
 						["Hrtpotion"] = {
+							["name"] = "Hrtpotion",
+							["guildName"] = "Guildy McGuildFace",
+							["classEnglish"] = "HUNTER",
 							["class"] = "Hunter",
 							["level"] = 65,
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "Guildy McGuildFace",
 						},
 					},
 					["class"] = "Hunter",
@@ -24161,30 +24187,35 @@ NITdatabase = {
 					["leftMoney"] = 6537559,
 					["group"] = {
 						["Iñaki"] = {
-							["level"] = 63,
 							["classEnglish"] = "HUNTER",
+							["level"] = 63,
+							["name"] = "Iñaki",
 							["class"] = "Hunter",
 						},
 						["Atropin"] = {
-							["level"] = 62,
 							["classEnglish"] = "PRIEST",
+							["level"] = 62,
+							["name"] = "Atropin",
 							["class"] = "Priest",
 						},
 						["Powerfiend"] = {
-							["level"] = 63,
 							["classEnglish"] = "MAGE",
+							["level"] = 63,
+							["name"] = "Powerfiend",
 							["class"] = "Mage",
 						},
 						["Nohugsgiven"] = {
-							["level"] = 63,
 							["classEnglish"] = "PALADIN",
+							["level"] = 63,
+							["name"] = "Nohugsgiven",
 							["class"] = "Paladin",
 						},
 						["Mxzq"] = {
+							["name"] = "Mxzq",
+							["guildName"] = "It is what it is",
+							["classEnglish"] = "HUNTER",
 							["class"] = "Hunter",
 							["level"] = 65,
-							["classEnglish"] = "HUNTER",
-							["guildName"] = "It is what it is",
 						},
 					},
 					["class"] = "Hunter",
@@ -25436,10 +25467,10 @@ NITdatabase = {
 							["class"] = "Shaman",
 						},
 						["Vermina"] = {
-							["classEnglish"] = "PALADIN",
 							["level"] = 18,
-							["name"] = "Vermina",
 							["class"] = "Paladin",
+							["name"] = "Vermina",
+							["classEnglish"] = "PALADIN",
 						},
 					},
 					["class"] = "Paladin",
@@ -25470,10 +25501,10 @@ NITdatabase = {
 					["leftMoney"] = 741619,
 					["group"] = {
 						["Deadri"] = {
-							["class"] = "Mage",
 							["classEnglish"] = "MAGE",
-							["name"] = "Deadri",
 							["level"] = 53,
+							["name"] = "Deadri",
+							["class"] = "Mage",
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -25533,10 +25564,10 @@ NITdatabase = {
 					["leftMoney"] = 696751,
 					["group"] = {
 						["Deadri"] = {
-							["class"] = "Mage",
 							["classEnglish"] = "MAGE",
-							["name"] = "Deadri",
 							["level"] = 53,
+							["name"] = "Deadri",
+							["class"] = "Mage",
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -25596,10 +25627,10 @@ NITdatabase = {
 					["leftMoney"] = 652031,
 					["group"] = {
 						["Deadri"] = {
-							["class"] = "Mage",
 							["classEnglish"] = "MAGE",
-							["name"] = "Deadri",
 							["level"] = 52,
+							["name"] = "Deadri",
+							["class"] = "Mage",
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -25659,10 +25690,10 @@ NITdatabase = {
 					["leftMoney"] = 588946,
 					["group"] = {
 						["Deadri"] = {
-							["class"] = "Mage",
 							["classEnglish"] = "MAGE",
-							["name"] = "Deadri",
 							["level"] = 52,
+							["name"] = "Deadri",
+							["class"] = "Mage",
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -25729,10 +25760,10 @@ NITdatabase = {
 							["level"] = 46,
 						},
 						["Dëltrix"] = {
-							["class"] = "Shaman",
 							["classEnglish"] = "SHAMAN",
-							["name"] = "Dëltrix",
 							["level"] = 51,
+							["name"] = "Dëltrix",
+							["class"] = "Shaman",
 						},
 						["Zazadin"] = {
 							["name"] = "Zazadin",
@@ -25742,10 +25773,10 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Deadri"] = {
-							["class"] = "Mage",
 							["classEnglish"] = "MAGE",
-							["name"] = "Deadri",
 							["level"] = 52,
+							["name"] = "Deadri",
+							["class"] = "Mage",
 						},
 						["Superuser"] = {
 							["name"] = "Superuser",
@@ -25798,10 +25829,10 @@ NITdatabase = {
 							["level"] = 51,
 						},
 						["Deadri"] = {
-							["class"] = "Mage",
 							["classEnglish"] = "MAGE",
-							["name"] = "Deadri",
 							["level"] = 52,
+							["name"] = "Deadri",
+							["class"] = "Mage",
 						},
 						["Zazadin"] = {
 							["name"] = "Zazadin",
@@ -25853,12 +25884,12 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4480-329-511-10419-0000BB5DEE",
 					["leftMoney"] = 1300336,
 					["group"] = {
-						["Zazadin"] = {
-							["name"] = "Zazadin",
-							["guildName"] = "Before Insanity",
+						["Superuser"] = {
+							["name"] = "Superuser",
+							["guildName"] = "Eduskunta",
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["level"] = 70,
+							["level"] = 53,
 						},
 						["Dëltrix"] = {
 							["name"] = "Dëltrix",
@@ -25867,24 +25898,24 @@ NITdatabase = {
 							["class"] = "Shaman",
 							["level"] = 51,
 						},
-						["Bloodravens"] = {
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
-							["name"] = "Bloodravens",
-							["level"] = 51,
-						},
-						["Deadri"] = {
-							["class"] = "Mage",
-							["classEnglish"] = "MAGE",
-							["name"] = "Deadri",
-							["level"] = 51,
-						},
-						["Superuser"] = {
-							["name"] = "Superuser",
-							["guildName"] = "Eduskunta",
+						["Zazadin"] = {
+							["name"] = "Zazadin",
+							["guildName"] = "Before Insanity",
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["level"] = 53,
+							["level"] = 70,
+						},
+						["Deadri"] = {
+							["classEnglish"] = "MAGE",
+							["level"] = 51,
+							["name"] = "Deadri",
+							["class"] = "Mage",
+						},
+						["Bloodravens"] = {
+							["classEnglish"] = "PRIEST",
+							["level"] = 51,
+							["name"] = "Bloodravens",
+							["class"] = "Priest",
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -25923,10 +25954,10 @@ NITdatabase = {
 					["leftMoney"] = 1255731,
 					["group"] = {
 						["Deadri"] = {
-							["class"] = "Mage",
 							["classEnglish"] = "MAGE",
-							["name"] = "Deadri",
 							["level"] = 51,
+							["name"] = "Deadri",
+							["class"] = "Mage",
 						},
 						["Dëltrix"] = {
 							["name"] = "Dëltrix",
@@ -25943,10 +25974,10 @@ NITdatabase = {
 							["level"] = 70,
 						},
 						["Larren"] = {
-							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
-							["name"] = "Larren",
 							["level"] = 57,
+							["name"] = "Larren",
+							["class"] = "Paladin",
 						},
 						["Bloodravens"] = {
 							["name"] = "Bloodravens",
@@ -25998,6 +26029,13 @@ NITdatabase = {
 							["class"] = "Shaman",
 							["level"] = 51,
 						},
+						["Zazadin"] = {
+							["name"] = "Zazadin",
+							["guildName"] = "Before Insanity",
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+							["level"] = 70,
+						},
 						["Larren"] = {
 							["name"] = "Larren",
 							["guildName"] = "Three Crowns",
@@ -26011,13 +26049,6 @@ NITdatabase = {
 							["classEnglish"] = "PRIEST",
 							["class"] = "Priest",
 							["level"] = 51,
-						},
-						["Zazadin"] = {
-							["name"] = "Zazadin",
-							["guildName"] = "Before Insanity",
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-							["level"] = 70,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -26055,12 +26086,12 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4446-329-4928-10419-0000BB518A",
 					["leftMoney"] = 1165066,
 					["group"] = {
-						["Larren"] = {
-							["name"] = "Larren",
-							["guildName"] = "Three Crowns",
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-							["level"] = 57,
+						["Bloodravens"] = {
+							["name"] = "Bloodravens",
+							["guildName"] = "Up For Anything",
+							["class"] = "Priest",
+							["classEnglish"] = "PRIEST",
+							["level"] = 51,
 						},
 						["Dëltrix"] = {
 							["name"] = "Dëltrix",
@@ -26069,25 +26100,25 @@ NITdatabase = {
 							["classEnglish"] = "SHAMAN",
 							["level"] = 50,
 						},
+						["Larren"] = {
+							["name"] = "Larren",
+							["guildName"] = "Three Crowns",
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+							["level"] = 57,
+						},
+						["Boxr"] = {
+							["classEnglish"] = "WARRIOR",
+							["level"] = 51,
+							["name"] = "Boxr",
+							["class"] = "Warrior",
+						},
 						["Zazadin"] = {
 							["name"] = "Zazadin",
 							["guildName"] = "Before Insanity",
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 							["level"] = 70,
-						},
-						["Boxr"] = {
-							["class"] = "Warrior",
-							["classEnglish"] = "WARRIOR",
-							["name"] = "Boxr",
-							["level"] = 51,
-						},
-						["Bloodravens"] = {
-							["name"] = "Bloodravens",
-							["guildName"] = "Up For Anything",
-							["class"] = "Priest",
-							["classEnglish"] = "PRIEST",
-							["level"] = 51,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -26125,19 +26156,19 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4459-329-23948-10418-00053B4E36",
 					["leftMoney"] = 1969118,
 					["group"] = {
+						["Bloodravens"] = {
+							["name"] = "Bloodravens",
+							["guildName"] = "Up For Anything",
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
+							["level"] = 51,
+						},
 						["Larren"] = {
 							["name"] = "Larren",
 							["guildName"] = "Three Crowns",
 							["class"] = "Paladin",
 							["classEnglish"] = "PALADIN",
 							["level"] = 57,
-						},
-						["Zazadin"] = {
-							["name"] = "Zazadin",
-							["guildName"] = "Before Insanity",
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-							["level"] = 70,
 						},
 						["Boxr"] = {
 							["name"] = "Boxr",
@@ -26146,12 +26177,12 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["level"] = 51,
 						},
-						["Bloodravens"] = {
-							["name"] = "Bloodravens",
-							["guildName"] = "Up For Anything",
-							["classEnglish"] = "PRIEST",
-							["class"] = "Priest",
-							["level"] = 51,
+						["Zazadin"] = {
+							["name"] = "Zazadin",
+							["guildName"] = "Before Insanity",
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+							["level"] = 70,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -26189,19 +26220,19 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4445-329-5700-10418-00003B4B91",
 					["leftMoney"] = 1920375,
 					["group"] = {
+						["Bloodravens"] = {
+							["name"] = "Bloodravens",
+							["guildName"] = "Up For Anything",
+							["classEnglish"] = "PRIEST",
+							["class"] = "Priest",
+							["level"] = 50,
+						},
 						["Larren"] = {
 							["name"] = "Larren",
 							["guildName"] = "Three Crowns",
 							["classEnglish"] = "PALADIN",
 							["class"] = "Paladin",
 							["level"] = 56,
-						},
-						["Zazadin"] = {
-							["name"] = "Zazadin",
-							["guildName"] = "Before Insanity",
-							["classEnglish"] = "PALADIN",
-							["class"] = "Paladin",
-							["level"] = 70,
 						},
 						["Boxr"] = {
 							["name"] = "Boxr",
@@ -26210,12 +26241,12 @@ NITdatabase = {
 							["classEnglish"] = "WARRIOR",
 							["level"] = 51,
 						},
-						["Bloodravens"] = {
-							["name"] = "Bloodravens",
-							["guildName"] = "Up For Anything",
-							["classEnglish"] = "PRIEST",
-							["class"] = "Priest",
-							["level"] = 50,
+						["Zazadin"] = {
+							["name"] = "Zazadin",
+							["guildName"] = "Before Insanity",
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+							["level"] = 70,
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -26253,19 +26284,19 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4445-329-5500-10420-0000BB4894",
 					["leftMoney"] = 1877646,
 					["group"] = {
+						["Zazadin"] = {
+							["name"] = "Zazadin",
+							["guildName"] = "Before Insanity",
+							["classEnglish"] = "PALADIN",
+							["class"] = "Paladin",
+							["level"] = 70,
+						},
 						["Bloodravens"] = {
 							["name"] = "Bloodravens",
 							["guildName"] = "Up For Anything",
 							["classEnglish"] = "PRIEST",
 							["class"] = "Priest",
 							["level"] = 50,
-						},
-						["Larren"] = {
-							["name"] = "Larren",
-							["guildName"] = "Three Crowns",
-							["class"] = "Paladin",
-							["level"] = 56,
-							["classEnglish"] = "PALADIN",
 						},
 						["Boxr"] = {
 							["name"] = "Boxr",
@@ -26274,12 +26305,12 @@ NITdatabase = {
 							["level"] = 51,
 							["classEnglish"] = "WARRIOR",
 						},
-						["Zazadin"] = {
-							["name"] = "Zazadin",
-							["guildName"] = "Before Insanity",
-							["classEnglish"] = "PALADIN",
+						["Larren"] = {
+							["name"] = "Larren",
+							["guildName"] = "Three Crowns",
 							["class"] = "Paladin",
-							["level"] = 70,
+							["level"] = 56,
+							["classEnglish"] = "PALADIN",
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -26317,18 +26348,18 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4458-329-2267-10420-0000BB4577",
 					["leftMoney"] = 1831632,
 					["group"] = {
+						["Bloodravens"] = {
+							["name"] = "Bloodravens",
+							["guildName"] = "Up For Anything",
+							["classEnglish"] = "PRIEST",
+							["level"] = 50,
+							["class"] = "Priest",
+						},
 						["Larren"] = {
 							["name"] = "Larren",
 							["guildName"] = "Three Crowns",
 							["classEnglish"] = "PALADIN",
 							["level"] = 56,
-							["class"] = "Paladin",
-						},
-						["Zazadin"] = {
-							["name"] = "Zazadin",
-							["guildName"] = "Before Insanity",
-							["classEnglish"] = "PALADIN",
-							["level"] = 70,
 							["class"] = "Paladin",
 						},
 						["Boxr"] = {
@@ -26338,12 +26369,12 @@ NITdatabase = {
 							["level"] = 50,
 							["class"] = "Warrior",
 						},
-						["Bloodravens"] = {
-							["name"] = "Bloodravens",
-							["guildName"] = "Up For Anything",
-							["classEnglish"] = "PRIEST",
-							["level"] = 50,
-							["class"] = "Priest",
+						["Zazadin"] = {
+							["name"] = "Zazadin",
+							["guildName"] = "Before Insanity",
+							["classEnglish"] = "PALADIN",
+							["level"] = 70,
+							["class"] = "Paladin",
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",
@@ -26381,19 +26412,19 @@ NITdatabase = {
 					["GUID"] = "Creature-0-4469-329-8377-10420-00013B423F",
 					["leftMoney"] = 1782837,
 					["group"] = {
+						["Zazadin"] = {
+							["name"] = "Zazadin",
+							["guildName"] = "Before Insanity",
+							["classEnglish"] = "PALADIN",
+							["level"] = 70,
+							["class"] = "Paladin",
+						},
 						["Bloodravens"] = {
 							["name"] = "Bloodravens",
 							["guildName"] = "Up For Anything",
 							["classEnglish"] = "PRIEST",
 							["level"] = 49,
 							["class"] = "Priest",
-						},
-						["Larren"] = {
-							["name"] = "Larren",
-							["guildName"] = "Three Crowns",
-							["class"] = "Paladin",
-							["level"] = 56,
-							["classEnglish"] = "PALADIN",
 						},
 						["Boxr"] = {
 							["name"] = "Boxr",
@@ -26402,12 +26433,12 @@ NITdatabase = {
 							["level"] = 50,
 							["classEnglish"] = "WARRIOR",
 						},
-						["Zazadin"] = {
-							["name"] = "Zazadin",
-							["guildName"] = "Before Insanity",
-							["classEnglish"] = "PALADIN",
-							["level"] = 70,
+						["Larren"] = {
+							["name"] = "Larren",
+							["guildName"] = "Three Crowns",
 							["class"] = "Paladin",
+							["level"] = 56,
+							["classEnglish"] = "PALADIN",
 						},
 						["Vermin"] = {
 							["name"] = "Vermin",

@@ -613,9 +613,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 839637,
-		["timeStamp"] = 65386.229,
-		["timeAtThisLevel"] = 39829,
+		["total"] = 844058,
+		["timeStamp"] = 1110895.55,
+		["timeAtThisLevel"] = 44250,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,

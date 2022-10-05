@@ -189,3 +189,4 @@ LibRangeCheck-2.0: enabled
 LibClassicSwingTimerAPI: enabled
 unitscan: enabled
 VendorBait: enabled
+NovaWorldBuffs: disabled

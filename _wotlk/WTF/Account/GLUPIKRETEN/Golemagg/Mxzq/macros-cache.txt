@@ -7,7 +7,6 @@ VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 /cast feign death
 /stopattack
 /stopcasting
-/petpassive
 END
 VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -85,4 +84,8 @@ VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
 /use 13
 /use 14
 /cast Steady Shot
+END
+VER 3 0000000001000012 " " "237402"
+#showtooltip
+/petattack [@mouseover,harm,nodead]
 END

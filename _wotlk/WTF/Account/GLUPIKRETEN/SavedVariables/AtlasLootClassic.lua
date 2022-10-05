@@ -49,6 +49,13 @@ AtlasLootClassicDB = {
 	},
 	["global"] = {
 		["__addonrevision"] = 3000003,
+		["VendorPrice"] = {
+			[29470] = "honor:16650",
+			[29472] = "honor:16650",
+			[29466] = "honor:16650",
+			[29469] = "honor:16650",
+			[34129] = "honor:16650",
+		},
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {

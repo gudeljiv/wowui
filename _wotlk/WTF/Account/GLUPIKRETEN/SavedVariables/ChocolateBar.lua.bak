@@ -570,9 +570,9 @@ CB_PlayedTime = {
 		["total"] = 79871,
 	},
 	["Moolatz-Golemagg"] = {
-		["total"] = 366048,
-		["timeStamp"] = 102418.041,
-		["timeAtThisLevel"] = 11444,
+		["total"] = 366322,
+		["timeStamp"] = 102692.478,
+		["timeAtThisLevel"] = 11718,
 	},
 	["Testxv-"] = {
 		["total"] = 530,
@@ -613,9 +613,9 @@ CB_PlayedTime = {
 		["total"] = 356150,
 	},
 	["Mxzq-Golemagg"] = {
-		["total"] = 839637,
-		["timeAtThisLevel"] = 39829,
-		["timeStamp"] = 65386.229,
+		["total"] = 844024,
+		["timeAtThisLevel"] = 44216,
+		["timeStamp"] = 1110860.92,
 	},
 	["Battitude-"] = {
 		["total"] = 2037,
