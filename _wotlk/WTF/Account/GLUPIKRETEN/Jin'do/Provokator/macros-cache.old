@@ -60,6 +60,7 @@ VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Wing Clip
+/cast Raptor Strike
 END
 VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 #showtooltip

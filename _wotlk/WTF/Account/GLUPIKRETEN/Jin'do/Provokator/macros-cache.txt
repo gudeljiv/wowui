@@ -1,8 +1,6 @@
-VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
-#showtooltip Steady Shot
-/use 13
-/use 14
-/cast Steady Shot
+VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/cast [@focus,exists,noharm][@pet,exists][]Misdirection
 END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -79,7 +77,9 @@ VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 /use 13
 /use 14
 END
-VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/cast [@focus,exists,noharm][@pet,exists][]Misdirection
+VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
+#showtooltip Steady Shot
+/use 13
+/use 14
+/cast Steady Shot
 END
