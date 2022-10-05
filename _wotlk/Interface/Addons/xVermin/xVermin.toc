@@ -48,6 +48,7 @@ RotBot.lua
 
 SpellCount/SpellCount.lua
 
+Helpers/ActionButton.lua
 Helpers/AutoBuyAmmo.lua
 Helpers/AutoRepair.lua
 Helpers/AutoRollGreed.lua

@@ -222,9 +222,9 @@ local function SetChat()
 			ChatFrame8
 		}
 	) do
+		background = _G[v:GetName() .. 'Background']
 		v.SetPoint = function()
 		end
-		background = _G[v:GetName() .. 'Background']
 
 		if (v:GetName() == 'ChatFrame7' or v:GetName() == 'ChatFrame8') then
 			v:SetWidth((chatWidth / 1.3) - 4)
@@ -255,8 +255,6 @@ local function SetChat()
 		BottomButton:ClearAllPoints()
 		BottomButton:SetPoint('BOTTOMRIGHT', v, 'BOTTOMRIGHT', 0, -5)
 		BottomButton:SetScale(0.7)
-		BottomButton.SetPoint = function()
-		end
 		BottomButton.Hide = function()
 		end
 		BottomButton.SetScale = function()

@@ -26,20 +26,21 @@ AtlasLootClassicDB = {
 		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
 		["Mxys - Golemagg"] = "Default",
 		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
+		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Moolatz - Golemagg"] = "Default",
 		["Konac - Dreadnaught"] = "Konac - Dreadnaught",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
-		["Dmitar - Golemagg"] = "Default",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
-		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Dmitar - Golemagg"] = "Default",
+		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Jaroslav - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
 		["Mxzq - Golemagg"] = "Default",
 		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
@@ -57,11 +58,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -70,6 +66,11 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
 			},
 		},
 		["Verminz - Golemagg"] = {
@@ -265,41 +266,29 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Kaonac - Jin'do"] = {
-		},
-		["xVermin"] = {
+		["Vermin - Golemagg"] = {
+			["GUI"] = {
+				["point"] = {
+					"TOP", -- [1]
+					nil, -- [2]
+					"TOP", -- [3]
+					-226.0000305175781, -- [4]
+					-158.0804138183594, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"MagistersTerrace", -- [2]
+					4, -- [3]
+					6, -- [4]
+					0, -- [5]
+				},
+			},
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
 			},
-			["Addons"] = {
-				["Favourites"] = {
-					["lists"] = {
-						["ProfileBase"] = {
-							["mainItems"] = {
-								[8] = true,
-							},
-						},
-					},
-				},
-			},
-			["GUI"] = {
-				["point"] = {
-					"LEFT", -- [1]
-					nil, -- [2]
-					"LEFT", -- [3]
-					337.781494140625, -- [4]
-					156.011474609375, -- [5]
-				},
-				["selectedGameVersion"] = 2,
-				["selected"] = {
-					nil, -- [1]
-					"HellfireRamparts", -- [2]
-					2, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
+		},
+		["Kaonac - Jin'do"] = {
 		},
 		["Moolatz - Golemagg"] = {
 			["GUI"] = {
@@ -367,10 +356,6 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
-		["Vermins - Stonespine"] = {
-		},
-		["Battlearm - Golemagg"] = {
-		},
 		["Klhjakhsgdjh - Golemagg"] = {
 			["minimap"] = {
 				["shown"] = false,
@@ -386,27 +371,49 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
+		["Vermins - Stonespine"] = {
+		},
+		["Battlearm - Golemagg"] = {
+		},
+		["xVermin"] = {
+			["GUI"] = {
+				["selectedGameVersion"] = 2,
+				["selected"] = {
+					nil, -- [1]
+					"HellfireRamparts", -- [2]
+					2, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+				["point"] = {
+					"LEFT", -- [1]
+					nil, -- [2]
+					"LEFT", -- [3]
+					337.781494140625, -- [4]
+					156.011474609375, -- [5]
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["Addons"] = {
+				["Favourites"] = {
+					["lists"] = {
+						["ProfileBase"] = {
+							["mainItems"] = {
+								[8] = true,
+							},
+						},
+					},
+				},
+			},
+		},
 		["Battlearm - Hydraxian Waterlords"] = {
 		},
 		["Testxv - Golemagg"] = {
 		},
-		["Vermin - Golemagg"] = {
-			["GUI"] = {
-				["point"] = {
-					"TOP", -- [1]
-					nil, -- [2]
-					"TOP", -- [3]
-					-226.0000305175781, -- [4]
-					-158.0804138183594, -- [5]
-				},
-				["selected"] = {
-					nil, -- [1]
-					"MagistersTerrace", -- [2]
-					4, -- [3]
-					6, -- [4]
-					0, -- [5]
-				},
-			},
+		["Pitchwise - Ashbringer"] = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,

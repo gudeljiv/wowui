@@ -9,9 +9,5 @@ xVermin:CheckIfLoadedWithTimer(
 
 		RXPFrame:ClearAllPoints()
 		RXPFrame:SetPoint('BOTTOMRIGHT', 'ChatFrame3', 'BOTTOMLEFT', 0, -10)
-		RXPFrame.ClearAllPoints = function()
-		end
-		RXPFrame.SetPoint = function()
-		end
 	end
 )

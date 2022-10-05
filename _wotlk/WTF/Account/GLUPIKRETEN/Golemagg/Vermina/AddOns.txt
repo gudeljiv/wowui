@@ -65,7 +65,7 @@ ItemRack: enabled
 ItemRackOptions: enabled
 Leatrix_Maps: enabled
 LFGBulletinBoard: enabled
-Lorti UI Classic: disabled
+Lorti UI Classic: enabled
 ls_Toasts: enabled
 MikScrollingBattleText: enabled
 MSBTOptions: enabled

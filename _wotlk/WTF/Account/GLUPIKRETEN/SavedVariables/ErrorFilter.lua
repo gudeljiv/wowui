@@ -11,8 +11,9 @@ ErrorFilterDB = {
 		["Battlearm - Jin'do"] = "Default",
 		["Kaonac - Jin'do"] = "Default",
 		["Provokator - Jin'do"] = "Default",
-		["Wells - Jin'do"] = "Default",
+		["Pitchwise - Ashbringer"] = "Default",
 		["Tandaram - Jin'do"] = "Default",
+		["Wells - Jin'do"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 	},
 	["profiles"] = {
