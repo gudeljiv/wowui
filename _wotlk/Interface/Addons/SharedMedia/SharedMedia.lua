@@ -118,3 +118,7 @@ LSM:Register(MediaType_STATUSBAR, 'Water', [[Interface\Addons\SharedMedia\status
 LSM:Register(MediaType_STATUSBAR, 'Wglass', [[Interface\Addons\SharedMedia\statusbar\Wglass]])
 LSM:Register(MediaType_STATUSBAR, 'Wisps', [[Interface\Addons\SharedMedia\statusbar\Wisps]])
 LSM:Register(MediaType_STATUSBAR, 'Xeon', [[Interface\Addons\SharedMedia\statusbar\Xeon]])
+
+LSM:Register(MediaType_STATUSBAR, 'NormTex', [[Interface\Addons\SharedMedia\statusbar\NormTex]])
+LSM:Register(MediaType_STATUSBAR, 'NormTex2', [[Interface\Addons\SharedMedia\statusbar\NormTex2]])
+LSM:Register(MediaType_STATUSBAR, 'NormTex3', [[Interface\Addons\SharedMedia\statusbar\NormTex3]])

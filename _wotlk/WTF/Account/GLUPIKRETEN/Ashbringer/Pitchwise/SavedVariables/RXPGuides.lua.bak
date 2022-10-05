@@ -8,12 +8,12 @@ RXPCData = {
 	["flightPaths"] = {
 	},
 	["xprate"] = 1,
-	["phase"] = 6,
+	["frameHeight"] = 124.9999694824219,
 	["currentGuideName"] = "",
 	["stepSkip"] = {
 	},
 	["hardcore"] = false,
-	["frameHeight"] = 124.9999694824219,
+	["phase"] = 6,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -32,10 +32,10 @@ RXPCTrackingData = {
 							["monthDay"] = 4,
 							["day"] = 0,
 							["month"] = 10,
-							["weekday"] = 3,
+							["minute"] = 14,
 							["year"] = 2022,
 							["hour"] = 21,
-							["minute"] = 14,
+							["weekday"] = 3,
 						},
 						["started"] = 0,
 					},

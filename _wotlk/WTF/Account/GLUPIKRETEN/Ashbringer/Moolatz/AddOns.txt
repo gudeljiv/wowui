@@ -1,3 +1,3 @@
 nPower: disabled
 nHealth: disabled
-Lorti UI Classic: disabled
+Lorti UI Classic: enabled
