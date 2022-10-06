@@ -106,7 +106,7 @@ FarmHud: enabled
 FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: enabled
-AuctionFaster: disabled
+AuctionFaster: enabled
 aux-addon: disabled
 TrackEverything: enabled
 Kui_Media: disabled
@@ -174,3 +174,4 @@ Details_Vanguard: enabled
 FarmHud_TrailPath: enabled
 Pawn: enabled
 TradeSkillMaster_AppHelper: enabled
+NovaWorldBuffs: disabled

@@ -108,7 +108,7 @@ TrackingSwitcher: enabled
 TrinketMenu: disabled
 Blizzard_CompactRaidFrames: disabled
 Blizzard_CUFProfiles: disabled
-AuctionFaster: disabled
+AuctionFaster: enabled
 aux-addon: disabled
 D4KiR Missing Power: disabled
 TrackEverything: disabled
@@ -190,3 +190,4 @@ LibClassicSwingTimerAPI: enabled
 unitscan: enabled
 VendorBait: enabled
 NovaWorldBuffs: disabled
+NameplateSCT: disabled

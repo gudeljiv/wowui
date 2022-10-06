@@ -112,7 +112,7 @@ FarmHud: enabled
 FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: disabled
-AuctionFaster: disabled
+AuctionFaster: enabled
 aux-addon: disabled
 TradeSkillMaster_AppHelper: enabled
 D4KiR Missing Power: disabled

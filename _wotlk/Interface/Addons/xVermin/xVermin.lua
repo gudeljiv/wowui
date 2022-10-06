@@ -63,6 +63,10 @@ f:SetScript(
 		end
 		BNToastFrame:ClearAllPoints()
 		BNToastFrame:SetPoint('BOTTOMLEFT', ChatFrame4, 'TOPLEFT', 0, 35)
+		BNToastFrame.ClearAllPoints = function()
+		end
+		BNToastFrame.SetPoint = function()
+		end
 		BNToastFrame.CloseButton:Hide()
 		BNToastFrame:SetBackdrop(
 			{

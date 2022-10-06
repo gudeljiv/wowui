@@ -124,7 +124,7 @@ bcf:SetScript(
 	function(self, event, ...)
 		if event == 'ADDON_LOADED' then
 			local ok = SetBindingClick('ALT-Q', 'MyBindingLootHelper')
-			print('MyBindingLootHelper loaded:', ok)
+		-- print('MyBindingLootHelper loaded:', ok)
 		end
 
 		-- if xVermin.Class == "MAGE" or xVermin.Class == "SHAMAN" or xVermin.Class == "PRIEST" or xVermin.Class == "HUNTER" or xVermin.Class == "PALADIN" or xVermin.Class == "WARLOCK" then
