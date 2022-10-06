@@ -11,8 +11,8 @@ __DEJUNK_ADDON_PERCHAR_SAVED_VARIABLES__ = {
 	["itemTooltips"] = true,
 	["includePoorItems"] = true,
 	["chatMessages"] = true,
+	["autoSell"] = false,
 	["minimapIcon"] = {
 		["hide"] = false,
 	},
-	["autoSell"] = false,
 }

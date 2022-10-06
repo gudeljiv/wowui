@@ -43,13 +43,31 @@ UserInterface.frame = (function()
   frame.versionText:SetText(Colors.White(Addon.VERSION))
   frame.versionText:SetAlpha(0.5)
 
+  -- Keybinds button.
+  frame.keybindsButton = Widgets:Frame({
+    name = "$parent_KeybindsButton",
+    frameType = "Button",
+    parent = frame
+  })
+  frame.keybindsButton:SetBackdropColor(0, 0, 0, 0)
+  frame.keybindsButton:SetBackdropBorderColor(0, 0, 0, 0)
+  frame.keybindsButton:SetPoint("TOPRIGHT", frame.closeButton, "TOPLEFT", 0, 0)
+  frame.keybindsButton:SetPoint("BOTTOMRIGHT", frame.closeButton, "BOTTOMLEFT", 0, 0)
+  frame.keybindsButton.text = frame.keybindsButton:CreateFontString("$parent_Text", "ARTWORK", "GameFontNormalLarge")
+  frame.keybindsButton.text:SetText(Colors.White(L.KEYBINDS))
+  frame.keybindsButton:SetFontString(frame.keybindsButton.text)
+  frame.keybindsButton:SetWidth(frame.keybindsButton.text:GetWidth() + Widgets:Padding(4))
+  frame.keybindsButton:SetScript("OnEnter", function(self) self:SetBackdropColor(Colors.Blue:GetRGBA(0.75)) end)
+  frame.keybindsButton:SetScript("OnLeave", function(self) self:SetBackdropColor(0, 0, 0, 0) end)
+  frame.keybindsButton:SetScript("OnClick", Addon.Commands.keybinds)
+
   -- Options frame.
   frame.optionsFrame = Widgets:OptionsFrame({
     name = "$parent_OptionsFrame",
     parent = frame,
     points = {
       { "TOPLEFT", frame.titleBackground, "BOTTOMLEFT", Widgets:Padding(), 0 },
-      { "BOTTOMRIGHT", frame, "RIGHT", -Widgets:Padding(), Widgets:Padding(11) }
+      { "BOTTOMRIGHT", frame, "RIGHT", -Widgets:Padding(), Widgets:Padding(10) }
     },
     titleText = L.OPTIONS_TEXT
   })
@@ -84,6 +102,12 @@ UserInterface.frame = (function()
     set = function(value) SavedVariables:Get().minimapIcon.hide = not value end
   })
   frame.optionsFrame:AddOption({
+    labelText = L.AUTO_JUNK_FRAME_TEXT,
+    tooltipText = L.AUTO_JUNK_FRAME_TOOLTIP,
+    get = function() return SavedVariables:Get().autoJunkFrame end,
+    set = function(value) SavedVariables:Get().autoJunkFrame = value end
+  })
+  frame.optionsFrame:AddOption({
     labelText = L.AUTO_REPAIR_TEXT,
     tooltipText = L.AUTO_REPAIR_TOOLTIP,
     get = function() return SavedVariables:Get().autoRepair end,
@@ -106,6 +130,18 @@ UserInterface.frame = (function()
     tooltipText = L.INCLUDE_POOR_ITEMS_TOOLTIP,
     get = function() return SavedVariables:Get().includePoorItems end,
     set = function(value) SavedVariables:Get().includePoorItems = value end
+  })
+  frame.optionsFrame:AddOption({
+    labelText = L.INCLUDE_BELOW_AVERAGE_EQUIPMENT_TEXT,
+    tooltipText = L.INCLUDE_BELOW_AVERAGE_EQUIPMENT_TOOLTIP,
+    get = function() return SavedVariables:Get().includeBelowAverageEquipment end,
+    set = function(value) SavedVariables:Get().includeBelowAverageEquipment = value end
+  })
+  frame.optionsFrame:AddOption({
+    labelText = L.INCLUDE_UNSUITABLE_EQUIPMENT_TEXT,
+    tooltipText = L.INCLUDE_UNSUITABLE_EQUIPMENT_TOOLTIP,
+    get = function() return SavedVariables:Get().includeUnsuitableEquipment end,
+    set = function(value) SavedVariables:Get().includeUnsuitableEquipment = value end
   })
 
   -- Inclusions frame.

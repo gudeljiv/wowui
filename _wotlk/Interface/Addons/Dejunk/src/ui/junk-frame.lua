@@ -1,12 +1,29 @@
 local ADDON_NAME, Addon = ...
-local Bags = Addon.Bags
 local Colors = Addon.Colors
 local Commands = Addon.Commands
+local E = Addon.Events
+local EventManager = Addon.EventManager
+local Items = Addon.Items
 local JunkFilter = Addon.JunkFilter
 local JunkFrame = Addon.UserInterface.JunkFrame
 local L = Addon.Locale
 local Lists = Addon.Lists
+local SavedVariables = Addon.SavedVariables
 local Widgets = Addon.UserInterface.Widgets
+
+-- ============================================================================
+-- Events
+-- ============================================================================
+
+do -- Auto Junk Frame.
+  EventManager:On(E.Wow.MerchantShow, function()
+    if SavedVariables:Get().autoJunkFrame then JunkFrame:Show() end
+  end)
+
+  EventManager:On(E.Wow.MerchantClosed, function()
+    if SavedVariables:Get().autoJunkFrame then JunkFrame:Hide() end
+  end)
+end
 
 -- ============================================================================
 -- JunkFrame
@@ -49,7 +66,7 @@ end
 
 local function hasSellableItems(items)
   for _, item in ipairs(items) do
-    if Bags:IsItemSellable(item) then
+    if Items:IsItemSellable(item) then
       return true
     end
   end
@@ -116,7 +133,7 @@ JunkFrame.frame = (function()
     name = "$parent_ItemsFrame",
     parent = frame,
     points = { { "TOPLEFT", frame.titleBackground, "BOTTOMLEFT", Widgets:Padding(), 0 } },
-    numButtons = 7,
+    displayPrice = true,
     titleText = Colors.White(L.JUNK_ITEMS),
     tooltipText = L.JUNK_FRAME_TOOLTIP:format(Lists.Inclusions.name, Lists.Exclusions.name, Lists.Exclusions.name),
     getItems = function() return frame.items end,

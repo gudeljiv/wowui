@@ -219,5 +219,8 @@ f:SetScript(
 			UIWidgetTopCenterContainerFrame:SetPoint('TOP', 'UIParent', 'TOP', 0, -70)
 			UIWidgetTopCenterContainerFrame:SetMovable(false)
 		end
+
+		LSToastAnchor1:ClearAllPoints()
+		LSToastAnchor1:SetPoint('TOPLEFT', TargetFrame, 'BOTTOMRIGHT', 50, 0)
 	end
 )
