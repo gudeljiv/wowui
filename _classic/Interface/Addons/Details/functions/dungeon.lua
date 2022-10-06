@@ -1,12 +1,16 @@
 
 
+--> dungeon file
+
+
+
 --local pointer to details object
 local Details = _G._detalhes
 local debugmode = false --print debug lines
 local verbosemode = false --auto open the chart panel
 local _
 
-local Loc = _G.LibStub("AceLocale-3.0"):GetLocale( "Details" )
+local Loc = LibStub ("AceLocale-3.0"):GetLocale ( "Details" )
 
 --constants
 local CONST_USE_PLAYER_EDPS = false
@@ -285,7 +289,7 @@ function mythicDungeonCharts.ShowReadyPanel()
 	
 	--create the panel
 	if (not mythicDungeonCharts.ReadyFrame) then
-		mythicDungeonCharts.ReadyFrame = CreateFrame ("frame", "DetailsMythicDungeonReadyFrame", UIParent, "BackdropTemplate")
+		mythicDungeonCharts.ReadyFrame = CreateFrame ("frame", "DetailsMythicDungeoReadyFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		local f = mythicDungeonCharts.ReadyFrame
 		
 		f:SetSize (255, 80)
@@ -297,9 +301,7 @@ function mythicDungeonCharts.ShowReadyPanel()
 		f:SetBackdropColor (0, 0, 0, 0.9)
 		f:SetBackdropBorderColor (0, 0, 0, 1)
 		DetailsFramework:ApplyStandardBackdrop (f)
-		DetailsFramework:CreateTitleBar (f, "Details! Damage Graphic for M+")
-
-		f:Hide()
+		DetailsFramework:CreateTitleBar (f, "Details! Dungeon Chart is Ready!")
 		
 		--register to libwindow
 		local LibWindow = LibStub ("LibWindow-1.1")
@@ -336,7 +338,7 @@ function mythicDungeonCharts.ShowChart()
 
 	if (not mythicDungeonCharts.Frame) then
 		
-		mythicDungeonCharts.Frame = CreateFrame ("frame", "DetailsMythicDungeonChartFrame", UIParent, "BackdropTemplate")
+		mythicDungeonCharts.Frame = CreateFrame ("frame", "DetailsMythicDungeonChartFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		local f = mythicDungeonCharts.Frame
 		
 		f:SetSize (1200, 620)
@@ -349,7 +351,7 @@ function mythicDungeonCharts.ShowChart()
 		f:SetBackdropBorderColor (0, 0, 0, 1)
 		
 		--minimized frame
-		mythicDungeonCharts.FrameMinimized = CreateFrame ("frame", "DetailsMythicDungeonChartFrameminimized", UIParent, "BackdropTemplate")
+		mythicDungeonCharts.FrameMinimized = CreateFrame ("frame", "DetailsMythicDungeonChartFrameminimized", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 		local fMinimized = mythicDungeonCharts.FrameMinimized
 		
 		fMinimized:SetSize (160, 24)
@@ -365,7 +367,7 @@ function mythicDungeonCharts.ShowChart()
 		f.IsMinimized = false
 		
 		--titlebar
-			local titlebar = CreateFrame ("frame", nil, f, "BackdropTemplate")
+			local titlebar = CreateFrame ("frame", nil, f, BackdropTemplateMixin and "BackdropTemplate")
 			titlebar:SetPoint ("topleft", f, "topleft", 2, -3)
 			titlebar:SetPoint ("topright", f, "topright", -2, -3)
 			titlebar:SetHeight (20)
@@ -380,7 +382,7 @@ function mythicDungeonCharts.ShowChart()
 			f.TitleText = titleLabel
 			
 		--titlebar when minimized
-			local titlebarMinimized = CreateFrame ("frame", nil, fMinimized, "BackdropTemplate")
+			local titlebarMinimized = CreateFrame ("frame", nil, fMinimized, BackdropTemplateMixin and "BackdropTemplate")
 			titlebarMinimized:SetPoint ("topleft", fMinimized, "topleft", 2, -3)
 			titlebarMinimized:SetPoint ("topright", fMinimized, "topright", -2, -3)
 			titlebarMinimized:SetHeight (20)
@@ -432,7 +434,7 @@ function mythicDungeonCharts.ShowChart()
 		
 		f.ChartFrame.CloseButton:Hide()
 		
-		f.BossWidgetsFrame = CreateFrame ("frame", "$parentBossFrames", f, "BackdropTemplate")
+		f.BossWidgetsFrame = CreateFrame ("frame", "$parentBossFrames", f, BackdropTemplateMixin and "BackdropTemplate")
 		f.BossWidgetsFrame:SetFrameLevel (f:GetFrameLevel()+10)
 		f.BossWidgetsFrame.Widgets = {}
 		
@@ -554,7 +556,7 @@ function mythicDungeonCharts.ShowChart()
 				
 				local bossWidget = f.BossWidgetsFrame.Widgets [i]
 				if (not bossWidget) then
-					local newBossWidget = CreateFrame ("frame", "$parentBossWidget" .. i, f.BossWidgetsFrame, "BackdropTemplate")
+					local newBossWidget = CreateFrame ("frame", "$parentBossWidget" .. i, f.BossWidgetsFrame, BackdropTemplateMixin and "BackdropTemplate")
 					newBossWidget:SetSize (64, 32)
 					newBossWidget:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true})
 					newBossWidget:SetBackdropColor (0, 0, 0, 0.1)
@@ -667,6 +669,27 @@ function mythicDungeonCharts.ShowChart()
 		
 		mythicDungeonCharts.Frame.ChartFrame:AddLine (chartData, lineColor, lineName, combatTime, texture, "SMA")
 		tinsert (mythicDungeonCharts.PlayerGraphIndex, playerName)
+		
+		--[=[
+		local smoothFactor = 0.075
+		local forecastSmoothFactor = 1 - smoothFactor
+		local lastForecast = chartData[1]
+		local chartLag = {lastForecast}
+		local maxValue = lastForecast
+		
+		for i = 2, #chartData do
+			local forecast = (chartData[i] * smoothFactor) + (lastForecast * forecastSmoothFactor)
+			tinsert (chartLag, forecast)
+			lastForecast = forecast
+			
+			if (forecast > maxValue) then
+				maxValue = forecast
+			end
+		end
+		chartLag.max_value = maxValue
+
+		mythicDungeonCharts.Frame.ChartFrame:AddLine (chartLag, lineColor, lineName, combatTime, texture, "SMA")		
+		--]=]
 	end
 	
 	mythicDungeonCharts.Frame.ChartFrame:RefreshBossTimeline (mythicDungeonCharts.ChartTable.BossDefeated, mythicDungeonCharts.ChartTable.ElapsedTime)
@@ -829,7 +852,7 @@ function mythicDungeonCharts:CustomDrawLine (C, sx, sy, ex, ey, w, color, layer,
 	
 		local pixelFrame = tremove (mythicDungeonCharts.Frame.ChartFrame.FrameFree)
 		if (not pixelFrame) then
-			local newFrame = CreateFrame ("frame", nil, mythicDungeonCharts.Frame.ChartFrame, "BackdropTemplate")
+			local newFrame = CreateFrame ("frame", nil, mythicDungeonCharts.Frame.ChartFrame, BackdropTemplateMixin and "BackdropTemplate")
 			newFrame:SetSize (1, 1)
 
 			--newFrame:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 2, tile = true})
@@ -910,3 +933,4 @@ mythicDungeonCharts.ClassColors = {
 if (debugmode) then
 	C_Timer.After (1, mythicDungeonCharts.ShowChart)
 end
+

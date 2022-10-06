@@ -1,4 +1,4 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 local AddonName, OptionsPrivate = ...
 
 -- Lua APIs
@@ -56,37 +56,25 @@ local colorScheme = {
 }
 
 local function ConstructCodeReview(frame)
-  local group = AceGUI:Create("WeakAurasInlineGroup");
+  local group = AceGUI:Create("InlineGroup");
   group.frame:SetParent(frame);
-  group.frame:SetPoint("TOPLEFT", frame, "TOPLEFT", 16, -16);
-  group.frame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -16, 46);
+  group.frame:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -17, 30);
+  group.frame:SetPoint("TOPLEFT", frame, "TOPLEFT", 17, -10);
   group.frame:Hide();
   group:SetLayout("flow");
 
-  local title = AceGUI:Create("Label")
-  title:SetFontObject(GameFontNormalHuge)
-  title:SetFullWidth(true)
-  title:SetText(L["Custom Code Viewer"])
-  group:AddChild(title)
-
   local codeTree = AceGUI:Create("TreeGroup");
-  codeTree:SetTreeWidth(300, false)
-  codeTree:SetFullWidth(true)
-  codeTree:SetFullHeight(true)
-  codeTree:SetLayout("flow")
-  codeTree.dragger:Hide()
-  codeTree.border:SetBackdrop(nil)
-  codeTree.content:SetAllPoints()
   group.codeTree = codeTree;
+  group:SetLayout("fill");
   group:AddChild(codeTree);
 
   local codebox = AceGUI:Create("MultiLineEditBox");
+  codebox.frame:SetAllPoints(codeTree.content);
+  codebox.frame:SetFrameStrata("FULLSCREEN");
   codebox:SetLabel("");
-  codebox:DisableButton(true)
-  codebox:SetFullWidth(true)
-  codebox:SetFullHeight(true)
-  codeTree:AddChild(codebox)
+  group:AddChild(codebox);
 
+  codebox.button:Hide();
   IndentationLib.enable(codebox.editBox, colorScheme, 4);
   local fontPath = SharedMedia:Fetch("font", "Fira Mono Medium");
   if(fontPath) then
@@ -104,7 +92,7 @@ local function ConstructCodeReview(frame)
 
   local cancel = CreateFrame("Button", nil, group.frame, "UIPanelButtonTemplate");
   cancel:SetScript("OnClick", function() group:Close() end);
-  cancel:SetPoint("BOTTOMRIGHT", -20, -24);
+  cancel:SetPoint("bottomright", frame, "bottomright", -27, 11);
   cancel:SetHeight(20);
   cancel:SetWidth(100);
   cancel:SetText(L["Okay"]);
@@ -119,12 +107,13 @@ local function ConstructCodeReview(frame)
     self.codeTree:SetTree(data);
     self.codeTree:SelectByValue(firstEntry.value)
 
+    WeakAuras.ShowOptions();
     frame.window = "codereview";
     frame:UpdateFrameVisible()
   end
 
   function group.Close()
-    frame.window = "update";
+    frame.window = "default";
     frame:UpdateFrameVisible()
   end
 

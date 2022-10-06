@@ -1,19 +1,53 @@
-if GetLocale() ~= "koKR" then
+if not(GetLocale() == "koKR") then
   return
 end
 
 local L = WeakAuras.L
 
 -- WeakAuras
---[[Translation missing --]]
+L["   • %d auras added"] = "• aura %d개 추가됨"
+L["   • %d auras deleted"] = "• aura %d개 삭제됨"
+L["   • %d auras modified"] = "• aura %d개 수정됨"
 L[ [=[ Filter formats: 'Name', 'Name-Realm', '-Realm'. 
 
 Supports multiple entries, separated by commas
-Can use \ to escape -.]=] ] = [=[ Filter formats: 'Name', 'Name-Realm', '-Realm'. 
-
-Supports multiple entries, separated by commas
-Can use \ to escape -.]=]
+]=] ] = "필터 형식: '이름', '이름-서버', '-서버'. 쉼표로 구분된 여러 항목 지원합니다"
+L["%s - %i. Trigger"] = "%s - %i. 활성 조건"
+L["%s - Alpha Animation"] = "%s - 투명도 애니메이션"
+L["%s - Color Animation"] = "%s - 색상 애니메이션"
+L["%s - Condition Custom Chat"] = "%s - 조건 사용자 설정 대화"
+--[[Translation missing --]]
+L["%s - Custom Anchor"] = "%s - Custom Anchor"
+--[[Translation missing --]]
+L["%s - Custom Grow"] = "%s - Custom Grow"
+--[[Translation missing --]]
+L["%s - Custom Sort"] = "%s - Custom Sort"
+L["%s - Custom Text"] = "%s - 사용자 설정 문자"
+L["%s - Finish"] = "%s - 종료"
+L["%s - Finish Action"] = "%s - 종료 동작"
+L["%s - Finish Custom Text"] = "%s - 종료 사용자 설정 문자"
+L["%s - Init Action"] = "%s - 초기 동작"
+L["%s - Main"] = "%s - 메인"
+L["%s - Rotate Animation"] = "%s - 회전 애니메이션"
+L["%s - Scale Animation"] = "%s - 크기 비율 애니메이션"
+L["%s - Start"] = "%s - 시작"
+L["%s - Start Action"] = "%s - 시작 동작"
+L["%s - Start Custom Text"] = "%s - 시작 사용자 설정 문자"
+L["%s - Translate Animation"] = "%s - 변환 애니메이션"
+L["%s - Trigger Logic"] = "%s - 활성 조건 논리"
+--[[Translation missing --]]
+L["%s Custom Variables"] = "%s Custom Variables"
+L["%s Duration Function"] = "%s 지속시간 함수"
+L["%s Icon Function"] = "%s 아이콘 함수"
+L["%s Name Function"] = "%s 이름 함수"
 L["%s Overlay Color"] = "%s 오버레이 색상"
+--[[Translation missing --]]
+L["%s Overlay Function"] = "%s Overlay Function"
+L["%s Stacks Function"] = "%s 중첩 함수"
+L["%s Texture Function"] = "%s 텍스쳐 함수"
+L["%s total auras"] = "총 %s개 효과"
+L["%s Trigger Function"] = "%s 활성 조건 함수"
+L["%s Untrigger Function"] = "%s 비활성 조건 함수"
 L["* Suffix"] = "* 접미사"
 L["/wa help - Show this message"] = "/wa help - 이 메시지 보이기"
 L["/wa minimap - Toggle the minimap icon"] = "/wa minimap - 미니맵 아이콘 토글"
@@ -29,28 +63,11 @@ L["|cFFFF0000Not|r Item Bonus Id Equipped"] = "|cFFFF0000착용하지 않은|r �
 L["|cFFFF0000Not|r Player Name/Realm"] = "플레이어 이름/서버 |cFFFF0000불일치|r"
 L["|cFFffcc00Extra Options:|r %s"] = "|cFFffcc00추가 옵션:|r %s"
 L["|cFFffcc00Extra Options:|r None"] = "|cFFffcc00추가 옵션:|r 없음"
---[[Translation missing --]]
-L[ [=[• |cff00ff00Player|r, |cff00ff00Target|r, |cff00ff00Focus|r, and |cff00ff00Pet|r correspond directly to those individual unitIDs.
-• |cff00ff00Specific Unit|r lets you provide a specific valid unitID to watch.
-|cffff0000Note|r: The game will not fire events for all valid unitIDs, making some untrackable by this trigger.
-• |cffffff00Party|r, |cffffff00Raid|r, |cffffff00Boss|r, |cffffff00Arena|r, and |cffffff00Nameplate|r can match multiple corresponding unitIDs.
-• |cffffff00Smart Group|r adjusts to your current group type, matching just the "player" when solo, "party" units (including "player") in a party or "raid" units in a raid.
-
-|cffffff00*|r Yellow Unit settings will create clones for each matching unit while this trigger is providing Dynamic Info to the Aura.]=] ] = [=[• |cff00ff00Player|r, |cff00ff00Target|r, |cff00ff00Focus|r, and |cff00ff00Pet|r correspond directly to those individual unitIDs.
-• |cff00ff00Specific Unit|r lets you provide a specific valid unitID to watch.
-|cffff0000Note|r: The game will not fire events for all valid unitIDs, making some untrackable by this trigger.
-• |cffffff00Party|r, |cffffff00Raid|r, |cffffff00Boss|r, |cffffff00Arena|r, and |cffffff00Nameplate|r can match multiple corresponding unitIDs.
-• |cffffff00Smart Group|r adjusts to your current group type, matching just the "player" when solo, "party" units (including "player") in a party or "raid" units in a raid.
-
-|cffffff00*|r Yellow Unit settings will create clones for each matching unit while this trigger is providing Dynamic Info to the Aura.]=]
 L["10 Man Raid"] = "10인 공격대"
-L["10 Player Raid"] = "10인 공격대"
 L["10 Player Raid (Heroic)"] = "10인 공격대 (영웅)"
 L["10 Player Raid (Normal)"] = "10인 공격대 (일반)"
 L["20 Man Raid"] = "20인 공격대"
-L["20 Player Raid"] = "20인 공격대"
 L["25 Man Raid"] = "25인 공격대"
-L["25 Player Raid"] = "25인 공격대"
 L["25 Player Raid (Heroic)"] = "25인 공격대 (영웅)"
 L["25 Player Raid (Normal)"] = "25인 공격대 (일반)"
 L["40 Man Raid"] = "40인 공격대"
@@ -71,23 +88,16 @@ L["Active"] = "활성화"
 L["Add"] = "추가"
 L["Add Missing Auras"] = "없어진 효과 추가"
 L["Additional Trigger Replacements"] = "추가 활성 조건 교체"
---[[Translation missing --]]
-L["Advanced Caster's Target Check"] = "Advanced Caster's Target Check"
 L["Affected"] = "영향 받음"
 L["Affected Unit Count"] = "영향 받은 유닛 수"
---[[Translation missing --]]
-L["Afk"] = "Afk"
 L["Aggro"] = "어그로"
 L["Agility"] = "민첩성"
 L["Ahn'Qiraj"] = "안퀴라즈"
 L["Akil'zon"] = "아킬존"
 L["Al'ar"] = "알라르"
 L["Alert Type"] = "경보 유형"
-L["Algalon the Observer"] = "관찰자 알갈론"
 L["Alive"] = "생존"
 L["All"] = "모두"
---[[Translation missing --]]
-L["All States table contains a non table at key: '%s'."] = "All States table contains a non table at key: '%s'."
 L["All Triggers"] = "모든 활성 조건 만족"
 L["Alliance"] = "얼라이언스"
 L["Allow partial matches"] = "부분 일치 허용"
@@ -98,35 +108,26 @@ L["Always active trigger"] = "항상 활성 조건 활성화"
 L["Always include realm"] = "항상 서버 포함"
 L["Always True"] = "항상 참"
 L["Amount"] = "수량"
---[[Translation missing --]]
-L["Anchoring"] = "Anchoring"
 L["And Talent"] = "특성과 "
-L["Anetheron"] = "아네테론"
+--[[Translation missing --]]
+L["Anetheron"] = "Anetheron"
 L["Animations"] = "애니메이션"
 L["Anticlockwise"] = "반시계 방향"
-L["Anub'arak"] = "아눕아락"
 L["Anub'Rekhan"] = "아눕레칸"
 L["Any"] = "아무거나"
 L["Any Triggers"] = "아무 활성 조건 만족"
 L["AOE"] = "광역 범위 효과"
 L["Arcane Resistance"] = "비전 저항"
-L["Archavon the Stone Watcher"] = "바위 감시자 아카본"
 L["Archimonde"] = "아키몬드"
---[[Translation missing --]]
-L[ [=[Are you sure you want to run the |cffff0000EXPERIMENTAL|r repair tool?
-This will overwrite any changes you have made since the last database upgrade.
-Last upgrade: %s]=] ] = [=[Are you sure you want to run the |cffff0000EXPERIMENTAL|r repair tool?
-This will overwrite any changes you have made since the last database upgrade.
-Last upgrade: %s]=]
 L["Arena"] = "투기장"
 L["Armor (%)"] = "방어도(%)"
 L["Armor against Target (%)"] = "대상 방어도(%)"
 L["Armor Rating"] = "방어도"
 L["Array"] = "정렬"
 L["Ascending"] = "오름차순"
-L["Assembly of Iron"] = "무쇠 평의회"
 L["Assigned Role"] = "할당된 역할"
-L["Assigned Role Icon"] = "할당된 역할 아이콘"
+--[[Translation missing --]]
+L["Assigned Role Icon"] = "Assigned Role Icon"
 L["At Least One Enemy"] = "최소 1명의 적 대상"
 --[[Translation missing --]]
 L["At missing Value"] = "At missing Value"
@@ -147,8 +148,6 @@ L["Aura Applied"] = "효과 적용"
 L["Aura Applied Dose"] = "효과 겹쳐짐"
 L["Aura Broken"] = "효과 파괴"
 L["Aura Broken Spell"] = "주문으로 효과 파괴"
---[[Translation missing --]]
-L["Aura loaded"] = "Aura loaded"
 L["Aura Name"] = "효과 이름"
 L["Aura Names"] = "효과 이름"
 L["Aura Refresh"] = "효과 지속시간 초기화"
@@ -156,30 +155,28 @@ L["Aura Removed"] = "효과 제거"
 L["Aura Removed Dose"] = "효과 중첩 감소"
 L["Aura Stack"] = "효과 중첩"
 L["Aura Type"] = "효과 유형"
---[[Translation missing --]]
-L["Aura Version: %s"] = "Aura Version: %s"
 L["Aura(s) Found"] = "효과 발견"
 L["Aura(s) Missing"] = "효과 누락"
 L["Aura:"] = "효과:"
 L["Auras:"] = "효과들:"
-L["Auriaya"] = "아우리아야"
 L["Author Options"] = "작성자 옵션"
 L["Auto"] = "자동"
 L["Autocast Shine"] = "자동시전 빛남"
 L["Automatic"] = "자동"
 L["Automatic Length"] = "자동 길이"
+--[[Translation missing --]]
+L["Automatic Repair Confirmation Dialog"] = "Automatic Repair Confirmation Dialog"
 L["Automatic Rotation"] = "자동 회전"
 L["Avoidance (%)"] = "광역회피(%)"
 L["Avoidance Rating"] = "광역회피"
 L["Ayamiss the Hunter"] = "사냥꾼 아야미스"
-L["Azgalor"] = "아즈갈로"
+--[[Translation missing --]]
+L["Azgalor"] = "Azgalor"
 L["Back and Forth"] = "왕복"
 L["Background"] = "배경"
 L["Background Color"] = "배경 색상"
-L["Baltharus the Warborn"] = "전쟁의 아들 발타루스"
 L["Bar Color"] = "바 색상"
 L["Baron Geddon"] = "남작 게돈"
-L["Battle for Azeroth"] = "격전의 아제로스"
 L["Battle.net Whisper"] = "Battle.net 귓속말"
 L["Battleground"] = "전장"
 L["Battleguard Sartura"] = "전투감시병 살투라"
@@ -193,27 +190,18 @@ L["BigWigs Message"] = "BigWigs 메시지"
 --[[Translation missing --]]
 L["BigWigs Stage"] = "BigWigs Stage"
 L["BigWigs Timer"] = "BigWigs 타이머"
-L["Black Temple"] = "검은 사원"
+--[[Translation missing --]]
+L["Black Temple"] = "Black Temple"
 L["Black Wing Lair"] = "검은날개 둥지"
 L["Blizzard (2h | 3m | 10s | 2.4)"] = "블리자드 (2시간 / 3분 / 10초 / 2.4)"
 L["Blizzard Combat Text"] = "블리자드 전투 문자"
---[[Translation missing --]]
-L["Blizzard Cooldown Reduction"] = "Blizzard Cooldown Reduction"
 L["Block"] = "방어함"
 L["Block (%)"] = "막음(%)"
 L["Block against Target (%)"] = "대상의 막음(%)"
 --[[Translation missing --]]
 L["Block Value"] = "Block Value"
 L["Blocked"] = "방패 막기"
---[[Translation missing --]]
-L["Blood"] = "Blood"
-L["Blood Prince Council"] = "피의 의회"
---[[Translation missing --]]
-L["Blood Rune #1"] = "Blood Rune #1"
---[[Translation missing --]]
-L["Blood Rune #2"] = "Blood Rune #2"
 L["Bloodlord Mandokir"] = "혈군주 만도키르"
-L["Blood-Queen Lana'thel"] = "피의 여왕 라나텔"
 L["Border"] = "테두리"
 L["Boss"] = "우두머리"
 L["Boss Emote"] = "우두머리 감정 표현"
@@ -225,18 +213,15 @@ L["Bottom to Top"] = "아래에서 위로"
 L["Bounce"] = "튕기기"
 L["Bounce with Decay"] = "튕기기 (점점 약하게)"
 L["Broodlord Lashlayer"] = "용기대장 래쉬레이어"
-L["Brutallus"] = "브루탈루스"
+--[[Translation missing --]]
+L["Brutallus"] = "Brutallus"
 L["Buff"] = "강화 효과"
-L["Buff/Debuff"] = "강화 효과/약화 효과"
+--[[Translation missing --]]
+L["Buff/Debuff"] = "Buff/Debuff"
 L["Buffed/Debuffed"] = "강화 효과/약화 효과"
-L["Burning Crusade"] = "불타는 성전"
 L["Buru the Gorger"] = "먹보 부루"
 L["Can be used for e.g. checking if \"boss1target\" is the same as \"player\"."] = "예를 들어 \"우두머리1대상\"이 \"플레이어\"와 같은지 확인하는데 사용할 수 있습니다."
 L["Cancel"] = "취소"
---[[Translation missing --]]
-L[ [=[Cannot change secure frame in combat lockdown. Find more information:
-https://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames]=] ] = [=[Cannot change secure frame in combat lockdown. Find more information:
-https://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames]=]
 --[[Translation missing --]]
 L["Can't schedule timer with %i, due to a World of Warcraft bug with high computer uptime. (Uptime: %i). Please restart your computer."] = "Can't schedule timer with %i, due to a World of Warcraft bug with high computer uptime. (Uptime: %i). Please restart your computer."
 L["Cast"] = "시전"
@@ -250,7 +235,6 @@ L["Caster Name"] = "시전자 이름"
 L["Caster Realm"] = "시전자 서버"
 L["Caster Unit"] = "시전 유닛"
 L["Caster's Target"] = "시전자의 대상"
-L["Cataclysm"] = "대격변"
 L["Ceil"] = "천장"
 L["Center"] = "중앙"
 L["Centered Horizontal"] = "수평 중앙"
@@ -283,26 +267,22 @@ L["Charges Changed Event"] = "Charges Changed Event"
 L["Chat Frame"] = "대화창"
 L["Chat Message"] = "대화 메시지"
 --[[Translation missing --]]
-L["Check nameplate's target every 0.2s"] = "Check nameplate's target every 0.2s"
-L["Chess Event"] = "체스 이벤트"
+L["Chess Event"] = "Chess Event"
+L["Children:"] = "자식:"
+L["Choose a category"] = "카테고리 선택"
 L["Chromaggus"] = "크로마구스"
 L["Circle"] = "동그라미"
 L["Clamp"] = "더미"
 L["Class"] = "직업"
 L["Class and Specialization"] = "직업 및 전문화"
---[[Translation missing --]]
-L["Classic"] = "Classic"
 L["Classification"] = "직업전문화"
 L["Clockwise"] = "시계 방향"
 L["Clone per Event"] = "이벤트별 복제"
 L["Clone per Match"] = "일치별 복제"
-L["Coilfang: Serpentshrine Cavern"] = "갈퀴송곳니: 불뱀 제단"
+--[[Translation missing --]]
+L["Coilfang: Serpentshrine Cavern"] = "Coilfang: Serpentshrine Cavern"
 L["Color"] = "색상"
---[[Translation missing --]]
-L["Color Animation"] = "Color Animation"
 L["Combat Log"] = "전투 기록"
---[[Translation missing --]]
-L["Condition Custom Text"] = "Condition Custom Text"
 L["Conditions"] = "조건"
 L["Contains"] = "포함"
 L["Continuously update Movement Speed"] = "이동 속도 계속 업데이트"
@@ -313,14 +293,11 @@ L["Cooldown Ready Event"] = "재사용 준비 이벤트"
 L["Cooldown Ready Event (Item)"] = "재사용 준비 이벤트 (아이템)"
 L["Cooldown Ready Event (Slot)"] = "재사용 준비 이벤트 (아이템 칸)"
 --[[Translation missing --]]
-L["Cooldown Reduction changes the duration of seconds instead of showing the real time seconds."] = "Cooldown Reduction changes the duration of seconds instead of showing the real time seconds."
---[[Translation missing --]]
 L["Cooldown/Charges/Count"] = "Cooldown/Charges/Count"
---[[Translation missing --]]
-L["Could not load WeakAuras Archive, the addon is %s"] = "Could not load WeakAuras Archive, the addon is %s"
 L["Count"] = "횟수"
 L["Counter Clockwise"] = "반시계 방향"
 L["Create"] = "생성"
+L["Create a Copy"] = "생성 복사"
 L["Critical"] = "치명타"
 L["Critical (%)"] = "치명타 (%)"
 L["Critical Rating"] = "치명타 및 극대화"
@@ -328,30 +305,23 @@ L["Crowd Controlled"] = "군중 제어됨"
 L["Crushing"] = "강타"
 L["C'thun"] = "쑨"
 L["Current Experience"] = "현재 경험치"
-L["Current Movement Speed (%)"] = "현재 이동 속도 (%)"
+--[[Translation missing --]]
+L["Current Movement Speed (%)"] = "Current Movement Speed (%)"
+--[[Translation missing --]]
 L[ [=[Current Zone Group
-]=] ] = "현재 지역 그룹"
+]=] ] = [=[Current Zone Group
+]=]
 L[ [=[Current Zone
 ]=] ] = "현재 지역"
 L["Curse"] = "저주"
 L["Custom"] = "사용자 설정"
 --[[Translation missing --]]
-L["Custom Action"] = "Custom Action"
---[[Translation missing --]]
-L["Custom Anchor"] = "Custom Anchor"
---[[Translation missing --]]
 L["Custom Check"] = "Custom Check"
 L["Custom Color"] = "사용자 설정 색상"
-L["Custom Condition Code"] = "사용자 정의 조건 코드"
 L["Custom Configuration"] = "사용자 설정 구성"
 L["Custom Function"] = "사용자 설정 함수"
 --[[Translation missing --]]
-L["Custom Grow"] = "Custom Grow"
-L["Custom Sort"] = "사용자 정의 정렬"
---[[Translation missing --]]
-L["Custom Text Function"] = "Custom Text Function"
-L["Custom Trigger Combination"] = "사용자 정의 활성 조건 조합"
-L["Daakara"] = "다카라"
+L["Daakara"] = "Daakara"
 L["Damage"] = "피해"
 L["Damage Shield"] = "피해 반사"
 L["Damage Shield Missed"] = "피해 보호막 적중 실패"
@@ -360,17 +330,11 @@ L["DBM Announce"] = "DBM 알림"
 --[[Translation missing --]]
 L["DBM Stage"] = "DBM Stage"
 L["DBM Timer"] = "DBM 타이머"
---[[Translation missing --]]
-L["Death"] = "Death"
 L["Death Knight Rune"] = "죽음의 기사 룬"
-L["Deathbringer Saurfang"] = "죽음의 인도자 사울팽"
 L["Debuff"] = "약화 효과"
 L["Debuff Class"] = "약화 효과 직업"
 L["Debuff Class Icon"] = "약화 효과 직업 아이콘"
 L["Debuff Type"] = "약화 효과 유형"
-L["Debug Log contains more than 1000 entries"] = "디버그 로그에 항목이 1000개 이상 있습니다."
-L["Debug Logging enabled"] = "디버그 로깅 사용함"
-L["Debug Logging enabled for '%s'"] = "'%s'에 대해 디버그 로깅 사용함"
 --[[Translation missing --]]
 L["Defense"] = "Defense"
 L["Deflect"] = "튕김"
@@ -390,10 +354,6 @@ L["Destination Object Type"] = "Destination Object Type"
 L["Destination Reaction"] = "대상 반응"
 L["Destination Unit"] = "대상 유닛"
 --[[Translation missing --]]
-L["Destination unit's raid mark index"] = "Destination unit's raid mark index"
---[[Translation missing --]]
-L["Destination unit's raid mark texture"] = "Destination unit's raid mark texture"
---[[Translation missing --]]
 L["Disable Spell Known Check"] = "Disable Spell Known Check"
 --[[Translation missing --]]
 L["Disabled Spell Known Check"] = "Disabled Spell Known Check"
@@ -402,19 +362,14 @@ L["Dispel"] = "무효화"
 L["Dispel Failed"] = "무효화 실패"
 L["Display"] = "디스플레이"
 L["Distance"] = "거리"
---[[Translation missing --]]
-L["Do Not Disturb"] = "Do Not Disturb"
 L["Dodge"] = "회피"
 L["Dodge (%)"] = "회피 (%)"
 L["Dodge Rating"] = "회피"
 L["Down"] = "아래로"
 L["Down, then Left"] = "아래로, 왼쪽으로"
 L["Down, then Right"] = "아래로, 오른쪽으로"
-L["Dragonflight"] = "용군단"
 L["Drain"] = "마력 소진"
 L["Dropdown Menu"] = "드롭다운 메뉴"
---[[Translation missing --]]
-L["Dumping table"] = "Dumping table"
 L["Dungeon (Heroic)"] = "던전 (영웅)"
 L["Dungeon (Mythic)"] = "던전 (신화)"
 L["Dungeon (Normal)"] = "던전 (일반)"
@@ -423,10 +378,7 @@ L["Dungeons"] = "던전"
 L["Durability Damage"] = "내구도 손상"
 L["Durability Damage All"] = "모든 내구도 손상"
 --[[Translation missing --]]
-L["Duration Function"] = "Duration Function"
---[[Translation missing --]]
-L["Duration Function (fallback state)"] = "Duration Function (fallback state)"
-L["Dynamic Information"] = "유동적 정보"
+L["Dynamic Information"] = "Dynamic Information"
 --[[Translation missing --]]
 L["Ease In"] = "Ease In"
 --[[Translation missing --]]
@@ -439,11 +391,8 @@ L["Edge"] = "Edge"
 L["Edge of Madness"] = "광란의 경계"
 L["Elide"] = "생략"
 L["Elite"] = "정예"
-L["Emalon the Storm Watcher"] = "폭풍 감시자 에말론"
 L["Emote"] = "감정 표현"
 L["Empty"] = "비었을 때"
---[[Translation missing --]]
-L["Enables (incorrect) round down of seconds, which was the previous default behavior."] = "Enables (incorrect) round down of seconds, which was the previous default behavior."
 L["Enchant Applied"] = "마법부여 적용"
 --[[Translation missing --]]
 L["Enchant Found"] = "Enchant Found"
@@ -467,16 +416,19 @@ L["Equipment Set"] = "장비 구성"
 L["Equipment Set Equipped"] = "장비 구성 착용"
 L["Equipment Slot"] = "장비 칸"
 L["Equipped"] = "장착함"
-L["Eredar Twins"] = "에레다르 쌍둥이 자매"
-L["Error"] = "오류"
 --[[Translation missing --]]
-L[ [=[Error '%s' created a secure clone. We advise deleting the aura. For more information:
-https://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames]=] ] = [=[Error '%s' created a secure clone. We advise deleting the aura. For more information:
-https://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames]=]
+L["Eredar Twins"] = "Eredar Twins"
+L["Error"] = "오류"
 L["Error Frame"] = "오류창"
 --[[Translation missing --]]
 L["ERROR in '%s' unknown or incompatible sub element type '%s'"] = "ERROR in '%s' unknown or incompatible sub element type '%s'"
+--[[Translation missing --]]
+L["Error in aura '%s' in %s. trigger. All States table contains a non table at key: '%s'."] = "Error in aura '%s' in %s. trigger. All States table contains a non table at key: '%s'."
 L["Error not receiving display information from %s"] = "%s 에서 표시 정보를 받지 못하는 오류"
+--[[Translation missing --]]
+L[ [=['ERROR: Anchoring %s': 
+]=] ] = [=['ERROR: Anchoring %s': 
+]=]
 L["Evade"] = "벗어남"
 L["Event"] = "이벤트"
 L["Event(s)"] = "이벤트"
@@ -488,12 +440,8 @@ L["Extra Amount"] = "추가 수치"
 L["Extra Attacks"] = "추가 공격"
 L["Extra Spell Name"] = "추가 주문 이름"
 L["Faction"] = "진영"
---[[Translation missing --]]
-L["Faction Champions"] = "Faction Champions"
 L["Faction Name"] = "진영 이름"
 L["Faction Reputation"] = "진영 평판"
---[[Translation missing --]]
-L["Fade Animation"] = "Fade Animation"
 L["Fade In"] = "서서히 나타남"
 L["Fade Out"] = "서서히 사라짐"
 L["Fail Alert"] = "실패 경보"
@@ -503,11 +451,14 @@ L["Fallback"] = "Fallback"
 L["Fallback Icon"] = "Fallback Icon"
 L["False"] = "거짓"
 L["Fankriss the Unyielding"] = "불굴의 판크리스"
-L["Fathom-Lord Karathress"] = "심연의 군주 카라드레스"
-L["Felmyst"] = "지옥안개"
-L["Festergut"] = "구린속"
-L["Fetch Legendary Power"] = "전설 능력 가져오기"
-L["Fetches the name and icon of the Legendary Power that matches this bonus id."] = "이 보너스 ID와 일치하는 전설 능력의 이름과 아이콘을 가져옵니다."
+--[[Translation missing --]]
+L["Fathom-Lord Karathress"] = "Fathom-Lord Karathress"
+--[[Translation missing --]]
+L["Felmyst"] = "Felmyst"
+--[[Translation missing --]]
+L["Fetch Legendary Power"] = "Fetch Legendary Power"
+--[[Translation missing --]]
+L["Fetches the name and icon of the Legendary Power that matches this bonus id."] = "Fetches the name and icon of the Legendary Power that matches this bonus id."
 L["Filter messages with format <message>"] = "<메시지> 형식의 메시지 필터링"
 L["Fire Resistance"] = "화염 저항"
 L["Firemaw"] = "화염아귀"
@@ -518,7 +469,6 @@ L["Fixed"] = "고정됨"
 L["Fixed Names"] = "Fixed Names"
 --[[Translation missing --]]
 L["Fixed Size"] = "Fixed Size"
-L["Flame Leviathan"] = "거대 화염전차"
 L["Flamegor"] = "플레임고르"
 L["Flash"] = "반짝임"
 L["Flex Raid"] = "탄력적 공격대"
@@ -542,20 +492,10 @@ L["Forward, Reverse Loop"] = "Forward, Reverse Loop"
 L["Frame Selector"] = "Frame Selector"
 --[[Translation missing --]]
 L["Frequency"] = "Frequency"
-L["Freya"] = "프레이야"
 L["Friendly"] = "우호적"
 L["Friendly Fire"] = "아군에게 준 피해"
---[[Translation missing --]]
-L["Friendship Max Rank"] = "Friendship Max Rank"
---[[Translation missing --]]
-L["Friendship Rank"] = "Friendship Rank"
---[[Translation missing --]]
-L["Frost"] = "Frost"
+L["From"] = "출처"
 L["Frost Resistance"] = "냉기 저항"
---[[Translation missing --]]
-L["Frost Rune #1"] = "Frost Rune #1"
---[[Translation missing --]]
-L["Frost Rune #2"] = "Frost Rune #2"
 L["Full"] = "가득 찼을 때"
 --[[Translation missing --]]
 L["Full Bar"] = "Full Bar"
@@ -565,8 +505,6 @@ L["Gained"] = "획득"
 L["Garr"] = "가르"
 L["Gehennas"] = "게헨나스"
 L["General Rajaxx"] = "장군 라작스"
-L["General Vezax"] = "장군 베작스"
-L["General Zarithrian"] = "장군 자리스리안"
 L["Glancing"] = "비껴맞음"
 L["Global Cooldown"] = "전역 재사용 대기시간"
 L["Glow"] = "반짝임"
@@ -582,21 +520,20 @@ L["Grid"] = "Grid"
 L["Grobbulus"] = "그라불루스"
 L["Group"] = "그룹"
 L["Group Arrangement"] = "그룹 편성"
-L["Group Leader"] = "그룹장"
-L["Group Type"] = "그룹 유형"
 L["Grow"] = "성장"
-L["Gruul the Dragonkiller"] = "용 학살자 그룰"
-L["Gruul's Lair"] = "그룰의 둥지"
+--[[Translation missing --]]
+L["Gruul the Dragonkiller"] = "Gruul the Dragonkiller"
+--[[Translation missing --]]
+L["Gruul's Lair"] = "Gruul's Lair"
 L["GTFO Alert"] = "GTFO 경보"
 --[[Translation missing --]]
 L["Guardian"] = "Guardian"
 L["Guild"] = "길드"
 --[[Translation missing --]]
-L["Gunship Battle"] = "Gunship Battle"
-L["Gurtogg Bloodboil"] = "구르토그 블러드보일"
+L["Gurtogg Bloodboil"] = "Gurtogg Bloodboil"
 L["Hakkar"] = "학카르"
-L["Halazzi"] = "할라지"
-L["Halion"] = "할리온"
+--[[Translation missing --]]
+L["Halazzi"] = "Halazzi"
 L["Has Target"] = "대상 있음"
 L["Has Vehicle UI"] = "차량 UI가 있을 때"
 L["HasPet"] = "소환수 있음 (생존)"
@@ -613,63 +550,63 @@ L["Health (%)"] = "생명력 (%)"
 L["Health Deficit"] = "Health Deficit"
 L["Heigan the Unclean"] = "부정의 헤이건"
 L["Height"] = "높이"
-L["Heroic Party"] = "영웅 파티"
-L["Hex Lord Malacrass"] = "사술 군주 말라크라스"
+--[[Translation missing --]]
+L["Hex Lord Malacrass"] = "Hex Lord Malacrass"
 L["Hide"] = "숨기기"
 L["Hide 0 cooldowns"] = "0 재사용 대기시간 숨기기"
 --[[Translation missing --]]
-L["Hide Timer Text"] = "Hide Timer Text"
-L["High Astromancer Solarian"] = "고위 점성술사 솔라리안"
+L["High Astromancer Solarian"] = "High Astromancer Solarian"
 L["High Damage"] = "높은 피해"
-L["High King Maulgar"] = "왕중왕 마울가르"
+--[[Translation missing --]]
+L["High King Maulgar"] = "High King Maulgar"
 L["High Priest Thekal"] = "대사제 데칼"
 L["High Priest Venoxis"] = "대사제 베녹시스"
 L["High Priestess Arlokk"] = "대여사제 알로크"
 L["High Priestess Jeklik"] = "대여사제 제클릭"
 L["High Priestess Mar'li"] = "대여사제 말리"
-L["High Warlord Naj'entus"] = "대장군 나젠투스"
+--[[Translation missing --]]
+L["High Warlord Naj'entus"] = "High Warlord Naj'entus"
 L["Higher Than Tank"] = "탱커보다 높을 때"
 --[[Translation missing --]]
 L["Hit (%)"] = "Hit (%)"
 --[[Translation missing --]]
 L["Hit Rating"] = "Hit Rating"
-L["Hodir"] = "호디르"
 L["Holy Resistance"] = "신성 저항"
 L["Horde"] = "호드"
 L["Hostile"] = "적대적"
 L["Hostility"] = "적대성"
 L["Humanoid"] = "인간형"
 L["Hybrid"] = "복합"
-L["Hydross the Unstable"] = "불안정한 히드로스"
-L["Icecrown Citadel"] = "얼음왕관 성채"
+--[[Translation missing --]]
+L["Hydross the Unstable"] = "Hydross the Unstable"
 L["Icon"] = "아이콘"
---[[Translation missing --]]
-L["Icon Function"] = "Icon Function"
---[[Translation missing --]]
-L["Icon Function (fallback state)"] = "Icon Function (fallback state)"
 L["If you require additional assistance, please open a ticket on GitHub or visit our Discord at https://discord.gg/weakauras!"] = "추가 지원이 필요한 경우, GitHub에서 티켓을 열거나 Discord( https://discord.gg/weakauras )를 방문해 주세요!"
-L["Ignis the Furnace Master"] = "용광로 군주 이그니스"
 L["Ignore Dead"] = "죽음 무시"
 L["Ignore Disconnected"] = "연결 끊김 무시"
 L["Ignore Rune CD"] = "룬 재사용 대기시간 무시"
 L["Ignore Rune CDs"] = "룬 재사용 대기시간 무시"
 L["Ignore Self"] = "본인 무시"
-L["Illidan Stormrage"] = "일리단 스톰레이지"
+--[[Translation missing --]]
+L["Illidan Stormrage"] = "Illidan Stormrage"
 L["Immune"] = "면역"
+L["Import"] = "가져오기"
+L["Import as Copy"] = "복사본 가져 오기"
+L["Import as Update"] = "업데이트 가져 오기"
+L["Import Group"] = "그룹 가져오기"
+L["Import in progress"] = "진행 중인 가져오기"
 --[[Translation missing --]]
 L["Important"] = "Important"
-L["Importing will start after combat ends."] = "전투 종료 후 가져오기가 시작됩니다."
+L["Importing is disabled while in combat"] = "가져오기는 전투 중에는 비활성화됩니다."
 L["In Combat"] = "전투 중"
 L["In Encounter"] = "교전 중"
 L["In Group"] = "파티 중"
-L["In Party"] = "파티 중"
+--[[Translation missing --]]
+L["In Party"] = "In Party"
 L["In Pet Battle"] = "애완동물 대전 중"
 L["In Raid"] = "공격대 중"
 L["In Vehicle"] = "차량 탑승 중"
 L["Include Bank"] = "은행 포함"
 L["Include Charges"] = "충전량 포함"
---[[Translation missing --]]
-L["Include Death Runes"] = "Include Death Runes"
 --[[Translation missing --]]
 L["Include Pets"] = "Include Pets"
 L["Incoming Heal"] = "받는 치유"
@@ -680,8 +617,6 @@ L["Increases by one per stage or intermission."] = "Increases by one per stage o
 L["Information"] = "정보"
 L["Inherited"] = "상속"
 L["Instakill"] = "죽임"
---[[Translation missing --]]
-L["Install the addons BugSack and BugGrabber for detailed error logs."] = "Install the addons BugSack and BugGrabber for detailed error logs."
 L["Instance"] = "인스턴스"
 L["Instance Difficulty"] = "인스턴스 난이도"
 L["Instance Size Type"] = "인스턴스 크기 유형"
@@ -697,8 +632,6 @@ L["Interruptible"] = "방해 가능"
 L["Inverse"] = "반대로"
 L["Inverse Pet Behavior"] = "역행 소환수 행동"
 L["Is Away from Keyboard"] = "자리비움"
---[[Translation missing --]]
-L["Is Death Rune"] = "Is Death Rune"
 L["Is Exactly"] = "정확할 때"
 L["Is Moving"] = "이동 중일 때"
 L["Is Off Hand"] = "보조장비일 때"
@@ -707,6 +640,11 @@ L["Island Expedition (Heroic)"] = "군도 탐험 (영웅)"
 L["Island Expedition (Mythic)"] = "군도 탐험 (신화)"
 L["Island Expedition (Normal)"] = "군도 탐험 (일반)"
 L["Island Expeditions (PvP)"] = "군도 탐험 (PvP)"
+--[[Translation missing --]]
+L["It might not work correctly on Classic!"] = "It might not work correctly on Classic!"
+--[[Translation missing --]]
+L["It might not work correctly on Retail!"] = "It might not work correctly on Retail!"
+L["It might not work correctly with your version!"] = "버전에 따라 제대로 작동하지 않을 수도 있습니다!"
 L["Item"] = "아이템"
 L["Item Bonus Id"] = "아이템 보너스 ID"
 L["Item Bonus Id Equipped"] = "착용한 아이템 보너스 ID"
@@ -721,22 +659,26 @@ L["Item Slot"] = "아이템 칸"
 L["Item Slot String"] = "아이템 칸 문자열"
 L["Item Type"] = "아이템 유형"
 L["Item Type Equipped"] = "착용한 아이템 유형"
-L["Jan'alai"] = "잔알라이"
+--[[Translation missing --]]
+L["Jan'alai"] = "Jan'alai"
 L["Jin'do the Hexxer"] = "주술사 진도"
 --[[Translation missing --]]
 L["Journal Stage"] = "Journal Stage"
-L["Kael'thas Sunstrider"] = "캘타스 선스트라이더"
-L["Kalecgos"] = "칼렉고스"
-L["Karazhan"] = "카라잔"
-L["Kaz'rogal"] = "카즈로갈"
+--[[Translation missing --]]
+L["Kael'thas Sunstrider"] = "Kael'thas Sunstrider"
+--[[Translation missing --]]
+L["Kalecgos"] = "Kalecgos"
+--[[Translation missing --]]
+L["Karazhan"] = "Karazhan"
+--[[Translation missing --]]
+L["Kaz'rogal"] = "Kaz'rogal"
 L["Keep Inside"] = "내부에 보관"
 L["Kel'Thuzad"] = "켈투자드"
-L["Kil'jaeden"] = "킬제덴"
-L["Kologarn"] = "콜로간"
-L["Koralon the Flame Watcher"] = "화염 감시자 코랄론"
+--[[Translation missing --]]
+L["Kil'jaeden"] = "Kil'jaeden"
 L["Kurinnaxx"] = "쿠린낙스"
-L["Lady Deathwhisper"] = "여교주 데스위스퍼"
-L["Lady Vashj"] = "여군주 바쉬"
+--[[Translation missing --]]
+L["Lady Vashj"] = "Lady Vashj"
 L["Large"] = "큰"
 --[[Translation missing --]]
 L["Latency"] = "Latency"
@@ -756,9 +698,9 @@ L["Legacy RGB Gradient"] = "과거의 RGB 그라디언트"
 L["Legacy RGB Gradient Pulse"] = "과거의 RGB 그라디언트 맥박"
 --[[Translation missing --]]
 L["Legacy Spellname"] = "Legacy Spellname"
-L["Legion"] = "군단"
 L["Length"] = "길이"
-L["Leotheras the Blind"] = "눈먼 레오테라스"
+--[[Translation missing --]]
+L["Leotheras the Blind"] = "Leotheras the Blind"
 L["Level"] = "레벨"
 --[[Translation missing --]]
 L["Limited"] = "Limited"
@@ -766,27 +708,28 @@ L["Limited"] = "Limited"
 L["Lines & Particles"] = "Lines & Particles"
 L["Load Conditions"] = "조건 불러오기"
 L["Loatheb"] = "로데브"
-L["Looking for Raid"] = "공격대 찾기"
+--[[Translation missing --]]
+L["Looking for Raid"] = "Looking for Raid"
 L["Loop"] = "반복"
-L["Lord Jaraxxus"] = "군주 자락서스"
-L["Lord Marrowgar"] = "군주 매로우가르"
 L["Lost"] = "손실"
 L["Low Damage"] = "낮은 피해"
 L["Lower Than Tank"] = "탱커보다 낮을 때"
-L["Lua error"] = "Lua 오류"
---[[Translation missing --]]
-L["Lua error in aura '%s': %s"] = "Lua error in aura '%s': %s"
 L["Lucifron"] = "루시프론"
 L["Maexxna"] = "맥스나"
 L["Magic"] = "마법"
 L["Magmadar"] = "마그마다르"
-L["Magtheridon"] = "마그테리돈"
-L["Magtheridon's Lair"] = "마그테리돈의 둥지"
-L["Maiden of Virtue"] = "고결의 여신"
+--[[Translation missing --]]
+L["Magtheridon"] = "Magtheridon"
+--[[Translation missing --]]
+L["Magtheridon's Lair"] = "Magtheridon's Lair"
+--[[Translation missing --]]
+L["Maiden of Virtue"] = "Maiden of Virtue"
 L["Main Stat"] = "주 능력치"
 L["Majordomo Executus"] = "청지기 이그젝큐투스"
+L["Make sure you can trust the person who sent it!"] = "보낸 사람을 믿을 수 있는지 확인하세요!"
 L["Malformed WeakAuras link"] = "조작된 WeakAuras 링크"
-L["Malygos"] = "말리고스"
+--[[Translation missing --]]
+L["Manual Repair Confirmation Dialog"] = "Manual Repair Confirmation Dialog"
 L["Manual Rotation"] = "수동 회전"
 L["Marked First"] = "첫 번째로 표시"
 L["Marked Last"] = "마지막으로 표시"
@@ -811,7 +754,6 @@ L["Message"] = "메시지"
 L["Message Type"] = "메시지 유형"
 L["Message type:"] = "메시지 유형:"
 L["Meta Data"] = "메타 데이터"
-L["Mimiron"] = "미미론"
 --[[Translation missing --]]
 L["Mine"] = "Mine"
 L["Minimum"] = "최소"
@@ -823,10 +765,10 @@ L["Miss"] = "빗나감"
 L["Miss Type"] = "적중 실패 유형"
 L["Missed"] = "적중 실패"
 L["Missing"] = "누락"
-L["Mists of Pandaria"] = "판다리아의 안개"
 L["Moam"] = "모암"
 L["Model"] = "모델"
-L["Modern Blizzard (1h 3m | 3m 7s | 10s | 2.4)"] = "현 블리자드 (1h 3m | 3m 7s | 10s | 2.4)"
+--[[Translation missing --]]
+L["Modern Blizzard (1h 3m | 3m 7s | 10s | 2.4)"] = "Modern Blizzard (1h 3m | 3m 7s | 10s | 2.4)"
 L["Molten Core"] = "화산 심장부"
 L["Monochrome"] = "모노크롬"
 L["Monochrome Outline"] = "모노크롬 외곽선"
@@ -836,23 +778,24 @@ L["Monster Party"] = "몬스터 파티"
 L["Monster Say"] = "몬스터 일반 대화"
 L["Monster Whisper"] = "몬스터 귓속말"
 L["Monster Yell"] = "몬스터 외침"
-L["Moroes"] = "모로스"
-L["Morogrim Tidewalker"] = "겅둥파도 모로그림"
+--[[Translation missing --]]
+L["Moroes"] = "Moroes"
+--[[Translation missing --]]
+L["Morogrim Tidewalker"] = "Morogrim Tidewalker"
 L["Most remaining time"] = "최대 남은 시간"
-L["Mother Shahraz"] = "대모 샤라즈"
+--[[Translation missing --]]
+L["Mother Shahraz"] = "Mother Shahraz"
 L["Mounted"] = "탈것 탑승 중"
 L["Mouse Cursor"] = "마우스 커서"
 L["Movement Speed Rating"] = "이동 속도"
 L["Multi-target"] = "다중 대상"
-L["M'uru"] = "므우루"
+--[[Translation missing --]]
+L["M'uru"] = "M'uru"
 L["Mythic Keystone"] = "신화 쐐기돌"
 L["Mythic+ Affix"] = "쐐기돌 수정치"
-L["Nalorakk"] = "날로라크"
+--[[Translation missing --]]
+L["Nalorakk"] = "Nalorakk"
 L["Name"] = "이름"
---[[Translation missing --]]
-L["Name Function"] = "Name Function"
---[[Translation missing --]]
-L["Name Function (fallback state)"] = "Name Function (fallback state)"
 L["Name of Caster's Target"] = "시전자 대상의 이름"
 L["Name/Realm of Caster's Target"] = "시전자 대상의 이름/서버"
 L["Nameplate"] = "이름표"
@@ -863,12 +806,15 @@ L["Names of unaffected Players"] = "영향 받지 않은 플레이어의 이름"
 L["Nature Resistance"] = "자연 저항"
 L["Naxxramas"] = "낙스라마스"
 L["Nefarian"] = "네파리안"
-L["Netherspite"] = "황천의 원령"
+--[[Translation missing --]]
+L["Netherspite"] = "Netherspite"
 L["Neutral"] = "중립"
-L["Never"] = "절대 안 함"
+L["Never"] = "절대 안함"
 L["Next Combat"] = "다음 전투"
 L["Next Encounter"] = "다음 교전"
-L["Nightbane"] = "파멸의 어둠"
+--[[Translation missing --]]
+L["Nightbane"] = "Nightbane"
+L["No Children"] = "자식 없음"
 --[[Translation missing --]]
 L["No Extend"] = "No Extend"
 L["No Instance"] = "인스턴스가 아닐 때"
@@ -876,16 +822,14 @@ L["No Profiling information saved."] = "저장된 프로파일링 정보가 없�
 L["None"] = "없음"
 L["Non-player Character"] = "NPC"
 L["Normal"] = "일반"
-L["Normal Party"] = "일반 파티"
+L["Not in Group"] = "파티에 속하지 않음"
 --[[Translation missing --]]
-L["Northrend Beasts"] = "Northrend Beasts"
-L["Not in Group"] = "그룹에 없음"
-L["Not in Smart Group"] = "스마트 그룹에 없음"
+L["Not in Smart Group"] = "Not in Smart Group"
 L["Not on Cooldown"] = "재사용 대기 중이 아닐 때"
 L["Not On Threat Table"] = "위협 수준 없음"
 L["Note, that cross realm transmission is possible if you are on the same group"] = "참고로, 같은 영역에 있다면 상호 영역 전송이 가능합니다."
 --[[Translation missing --]]
-L["Note: Due to how complicated the swing timer behavior is and the lack of APIs from Blizzard, results are inaccurate in edge cases."] = "Note: Due to how complicated the swing timer behavior is and the lack of APIs from Blizzard, results are inaccurate in edge cases."
+L["Note: Due to how complicated the swing timer behaviour is and the lack of APIs from Blizzard, results are inaccurate in edge cases."] = "Note: Due to how complicated the swing timer behaviour is and the lack of APIs from Blizzard, results are inaccurate in edge cases."
 L["Note: 'Hide Alone' is not available in the new aura tracking system. A load option can be used instead."] = "참고: '혼자 숨기기'는 새로운 효과 추적 시스템에서 사용할 수 없습니다. 대신 불러오기 옵션을 사용하세요."
 --[[Translation missing --]]
 L["Note: The available text replacements for multi triggers match the normal triggers now."] = "Note: The available text replacements for multi triggers match the normal triggers now."
@@ -903,7 +847,8 @@ L["Officer"] = "길드관리자"
 L["Offset from progress"] = "Offset from progress"
 --[[Translation missing --]]
 L["Offset Timer"] = "Offset Timer"
-L["Old Blizzard (2h | 3m | 10s | 2.4)"] = "옛 블리자드 (2h | 3m | 10s | 2.4)"
+--[[Translation missing --]]
+L["Old Blizzard (2h | 3m | 10s | 2.4)"] = "Old Blizzard (2h | 3m | 10s | 2.4)"
 L["On Cooldown"] = "재사용 대기 중일 때"
 --[[Translation missing --]]
 L["On Taxi"] = "On Taxi"
@@ -922,13 +867,9 @@ L["Opaque"] = "불투명"
 --[[Translation missing --]]
 L["Opera Hall"] = "Opera Hall"
 L["Option Group"] = "옵션 그룹"
---[[Translation missing --]]
-L["Options could not be loaded, the addon is %s"] = "Options could not be loaded, the addon is %s"
-L["Options will finish loading after combat ends."] = "옵션은 전투가 끝나면 불러오기가 완료됩니다."
+L["Options will finish loading after combat ends."] = "옵션은 전투가 끝난 후 로딩을 완료합니다."
 --[[Translation missing --]]
 L["Options will open after the login process has completed."] = "Options will open after the login process has completed."
---[[Translation missing --]]
-L["Or Talent"] = "Or Talent"
 L["Orbit"] = "공전"
 L["Orientation"] = "방향"
 L["Ossirian the Unscarred"] = "무적의 오시리안"
@@ -975,7 +916,7 @@ L["Player"] = "플레이어"
 L["Player Character"] = "플레이어 캐릭터"
 L["Player Class"] = "플레이어 직업"
 L["Player Covenant"] = "플레이어 성약의 단"
-L["Player Effective Level"] = "플레이어 실제 레벨"
+L["Player Effective Level"] = "플레이어 유효 레벨"
 L["Player Experience"] = "플레이어 경험치"
 L["Player Faction"] = "플레이어 진영"
 L["Player Level"] = "플레이어 레벨"
@@ -994,10 +935,10 @@ L["Power Deficit"] = "Power Deficit"
 L["Power Type"] = "자원 유형"
 L["Precision"] = "정밀도"
 L["Preset"] = "프리셋"
-L["Prince Malchezaar"] = "공작 말체자르"
+--[[Translation missing --]]
+L["Prince Malchezaar"] = "Prince Malchezaar"
 L["Princess Huhuran"] = "공주 후후란"
 L["Print Profiling Results"] = "프로파일링 결과 출력"
-L["Professor Putricide"] = "교수 퓨트리사이드"
 L["Profiling already started."] = "프로파일링이 이미 시작되었습니다."
 L["Profiling automatically started."] = "프로파일링이 자동으로 시작되었습니다."
 L["Profiling not running."] = "프로파일링 실행 중이 아닙니다."
@@ -1016,7 +957,8 @@ L["PvP Talent Selected"] = "선택된 명예 특성"
 --[[Translation missing --]]
 L["Queued Action"] = "Queued Action"
 L["Radius"] = "반경"
-L["Rage Winterchill"] = "격노한 윈터칠"
+--[[Translation missing --]]
+L["Rage Winterchill"] = "Rage Winterchill"
 L["Ragnaros"] = "라그나로스"
 L["Raid"] = "공격대"
 L["Raid (Heroic)"] = "공격대 (영웅)"
@@ -1041,8 +983,6 @@ L["Rated Battleground"] = "Rated Battleground"
 --[[Translation missing --]]
 L["Raw Threat Percent"] = "Raw Threat Percent"
 L["Razorgore the Untamed"] = "폭군 서슬송곳니"
---[[Translation missing --]]
-L["Razorscale"] = "Razorscale"
 L["Ready Check"] = "전투 준비"
 L["Realm"] = "서버"
 L["Realm Name"] = "서버명"
@@ -1066,8 +1006,6 @@ L["Requested display does not exist"] = "요청한 디스플레이가 존재하�
 L["Requested display not authorized"] = "요청한 디스플레이가 올바르지 않습니다"
 L["Requesting display information from %s ..."] = "%s의 디스플레이 정보 요청 중 ..."
 L["Require Valid Target"] = "유효 대상 필요"
---[[Translation missing --]]
-L["Requires syncing the specialization via LibSpecialization."] = "Requires syncing the specialization via LibSpecialization."
 L["Resist"] = "저항"
 L["Resisted"] = "저항함"
 --[[Translation missing --]]
@@ -1081,19 +1019,17 @@ L["Right to Left"] = "오른쪽에서 왼쪽"
 L["Right, then Down"] = "오른쪽으로, 아래로"
 L["Right, then Up"] = "오른쪽으로, 위로"
 L["Role"] = "역할"
---[[Translation missing --]]
-L["Rotate Animation"] = "Rotate Animation"
 L["Rotate Left"] = "왼쪽으로 회전"
 L["Rotate Right"] = "오른쪽으로 회전"
 L["Rotation"] = "회전"
-L["Rotface"] = "썩은얼굴"
 --[[Translation missing --]]
 L["Round"] = "Round"
 --[[Translation missing --]]
 L["Round Mode"] = "Round Mode"
 L["Ruins of Ahn'Qiraj"] = "안퀴라즈 폐허"
 L["Run Custom Code"] = "사용자 정의 코드 실행"
-L["Run Speed (%)"] = "달리기 속도 (%)"
+--[[Translation missing --]]
+L["Run Speed (%)"] = "Run Speed (%)"
 L["Rune"] = "룬"
 L["Rune #1"] = "룬 #1"
 L["Rune #2"] = "룬 #2"
@@ -1101,17 +1037,8 @@ L["Rune #3"] = "룬 #3"
 L["Rune #4"] = "룬 #4"
 L["Rune #5"] = "룬 #5"
 L["Rune #6"] = "룬 #6"
---[[Translation missing --]]
-L["Rune Count"] = "Rune Count"
---[[Translation missing --]]
-L["Rune Count - Blood"] = "Rune Count - Blood"
---[[Translation missing --]]
-L["Rune Count - Frost"] = "Rune Count - Frost"
---[[Translation missing --]]
-L["Rune Count - Unholy"] = "Rune Count - Unholy"
+L["Runes Count"] = "룬 개수"
 L["Sapphiron"] = "사피론"
-L["Sartharion"] = "살타리온"
-L["Saviana Ragefire"] = "사비아나 레이지파이어"
 L["Say"] = "일반 대화"
 L["Scale"] = "크기 비율"
 L["Scenario"] = "시나리오"
@@ -1121,10 +1048,6 @@ L["Screen/Parent Group"] = "화면/부모 그룹"
 L["Second"] = "두 번째"
 L["Second Value of Tooltip Text"] = "툴팁 문자의 두 번째 값"
 L["Seconds"] = "초"
---[[Translation missing --]]
-L[ [=[Secure frame detected. Find more information:
-https://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames]=] ] = [=[Secure frame detected. Find more information:
-https://github.com/WeakAuras/WeakAuras2/wiki/Protected-Frames]=]
 L["Select Frame"] = "프레임 선택"
 --[[Translation missing --]]
 L["Separator"] = "Separator"
@@ -1134,28 +1057,25 @@ L["Set IDs can be found on websites such as classic.wowhead.com/item-sets"] = "S
 L["Set IDs can be found on websites such as tbc.wowhead.com/item-sets"] = "Set IDs can be found on websites such as tbc.wowhead.com/item-sets"
 --[[Translation missing --]]
 L["Set IDs can be found on websites such as wowhead.com/item-sets"] = "Set IDs can be found on websites such as wowhead.com/item-sets"
---[[Translation missing --]]
-L["Set IDs can be found on websites such as wowhead.com/wotlk/item-sets"] = "Set IDs can be found on websites such as wowhead.com/wotlk/item-sets"
 L["Set Maximum Progress"] = "최대 진행 값 설정"
 L["Set Minimum Progress"] = "최소 진행 값 설정"
-L["Shade of Akama"] = "아카마의 망령"
-L["Shade of Aran"] = "아란의 망령"
+--[[Translation missing --]]
+L["Shade of Akama"] = "Shade of Akama"
+--[[Translation missing --]]
+L["Shade of Aran"] = "Shade of Aran"
 L["Shadow Resistance"] = "암흑 저항"
-L["Shadowlands"] = "어둠땅"
-L["Shadron"] = "샤드론"
 L["Shake"] = "흔들기"
 L["Shazzrah"] = "샤즈라"
 L["Shift-Click to resume addon execution."] = "쉬프트-클릭으로 애드온 실행을 다시 시작합니다."
 L["Show"] = "표시"
 L["Show Absorb"] = "흡수 표시"
 L["Show CD of Charge"] = "충전량 재사용 대기시간 표시"
+L["Show Code"] = "코드 표시"
 L["Show GCD"] = "전역 재사용 대기시간 표시"
 L["Show Global Cooldown"] = "전역 재사용 대기시간 표시"
 --[[Translation missing --]]
 L["Show Heal Absorb"] = "Show Heal Absorb"
 L["Show Incoming Heal"] = "받는 치유 표시"
---[[Translation missing --]]
-L["Show Loss of Control"] = "Show Loss of Control"
 --[[Translation missing --]]
 L["Show On"] = "Show On"
 --[[Translation missing --]]
@@ -1177,10 +1097,7 @@ L["Since Ready"] = "Since Ready"
 L["Since Stack Gain"] = "Since Stack Gain"
 --[[Translation missing --]]
 L["Since Stack Lost"] = "Since Stack Lost"
---[[Translation missing --]]
-L["Sindragosa"] = "Sindragosa"
 L["Size & Position"] = "크기 & 위치"
-L["Slide Animation"] = "슬라이드 애니메이션"
 L["Slide from Bottom"] = "아래부터 슬라이드"
 L["Slide from Left"] = "왼쪽부터 슬라이드"
 L["Slide from Right"] = "오른쪽부터 슬라이드"
@@ -1208,16 +1125,10 @@ L["Source Raid Mark"] = "행위자 공격대 징표"
 L["Source Reaction"] = "행위자 반응"
 L["Source Unit"] = "행위자 유닛"
 L["Source Unit Name/Realm"] = "행위자 유닛 이름/서버"
---[[Translation missing --]]
-L["Source unit's raid mark index"] = "Source unit's raid mark index"
---[[Translation missing --]]
-L["Source unit's raid mark texture"] = "Source unit's raid mark texture"
 L["Space"] = "공간"
 L["Spacing"] = "간격"
 L["Spark"] = "섬광"
---[[Translation missing --]]
-L["Spec Role"] = "Spec Role"
-L["Specialization"] = "전문화"
+L["Spec Role"] = "전문화 역할"
 L["Specific Type"] = "특정 유형"
 L["Specific Unit"] = "특정 유닛"
 L["Spell"] = "주문"
@@ -1234,8 +1145,6 @@ L["Spell IDs:"] = "주문 ID(s):"
 L["Spell in Range"] = "범위 내 주문"
 L["Spell Known"] = "습득한 주문"
 L["Spell Name"] = "주문 이름"
---[[Translation missing --]]
-L["Spell School"] = "Spell School"
 L["Spell Usable"] = "주문 사용 가능"
 L["Spin"] = "회전"
 L["Spiral"] = "소용돌이"
@@ -1244,10 +1153,6 @@ L["Spiral In And Out"] = "회전 소용돌이"
 L["Spirit"] = "Spirit"
 L["Stack Count"] = "중첩 횟수"
 L["Stacks"] = "중첩"
---[[Translation missing --]]
-L["Stacks Function"] = "Stacks Function"
---[[Translation missing --]]
-L["Stacks Function (fallback state)"] = "Stacks Function (fallback state)"
 --[[Translation missing --]]
 L["Stage"] = "Stage"
 --[[Translation missing --]]
@@ -1259,6 +1164,7 @@ L["Stance/Form/Aura"] = "태세/변신/효과"
 --[[Translation missing --]]
 L["Standing"] = "Standing"
 L["Star Shake"] = "별모양 흔들림"
+L["Start"] = "시작"
 L["Start Now"] = "지금 시작"
 L["Status"] = "상태"
 L["Stolen"] = "훔침"
@@ -1277,10 +1183,9 @@ L["Supports multiple entries, separated by commas"] = "쉼표로 구분된 여�
 L[ [=[Supports multiple entries, separated by commas
 ]=] ] = "쉼표로 구분된 여러 항목을 지원합니다"
 --[[Translation missing --]]
-L["Supports multiple entries, separated by commas. Escape ',' with \\"] = "Supports multiple entries, separated by commas. Escape ',' with \\"
---[[Translation missing --]]
 L["Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277."] = "Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277."
-L["Supremus"] = "궁극의 심연"
+--[[Translation missing --]]
+L["Supremus"] = "Supremus"
 L["Swing"] = "자동 공격"
 L["Swing Timer"] = "자동 공격 타이머"
 --[[Translation missing --]]
@@ -1300,46 +1205,48 @@ L["Tanking But Not Highest"] = "탱커지만 제일 높지 않을 때"
 L["Target"] = "대상"
 --[[Translation missing --]]
 L["Targeted"] = "Targeted"
-L["Tempest Keep"] = "폭풍우 요새"
-L["Tenebron"] = "테네브론"
-L["Terestian Illhoof"] = "테레스티안 일후프"
-L["Teron Gorefiend"] = "테론 고어핀드"
+--[[Translation missing --]]
+L["Tempest Keep"] = "Tempest Keep"
+--[[Translation missing --]]
+L["Terestian Illhoof"] = "Terestian Illhoof"
+--[[Translation missing --]]
+L["Teron Gorefiend"] = "Teron Gorefiend"
 L["Text"] = "문자"
 --[[Translation missing --]]
 L["Text-to-speech"] = "Text-to-speech"
---[[Translation missing --]]
-L["Texture Function"] = "Texture Function"
---[[Translation missing --]]
-L["Texture Function (fallback state)"] = "Texture Function (fallback state)"
 L["Thaddius"] = "타디우스"
 L["The aura has overwritten the global '%s', this might affect other auras."] = "aura가 전역 '%s'|1을;를; 덮어썼습니다, 다른 aura도 영향을 받습니다."
-L["The Battle for Mount Hyjal"] = "하이잘 산 전투"
-L["The Curator"] = "전시 관리인"
-L["The effective level differs from the level in e.g. Time Walking dungeons."] = "실제 레벨은 예를 들어 시간여행 던전의 레벨과는 다릅니다."
-L["The Eye of Eternity"] = "영원의 눈"
+--[[Translation missing --]]
+L["The Battle for Mount Hyjal"] = "The Battle for Mount Hyjal"
+--[[Translation missing --]]
+L["The Curator"] = "The Curator"
+--[[Translation missing --]]
+L["The effective level differs from the level in e.g. Time Walking dungeons."] = "The effective level differs from the level in e.g. Time Walking dungeons."
 L["The Four Horsemen"] = "4기사단"
-L["The Illidari Council"] = "일리다리 의회"
-L["The Lich King"] = "리치 왕"
-L["The Lurker Below"] = "심연의 잠복꾼"
-L["The Obsidian Sanctum"] = "흑요석 성소"
+--[[Translation missing --]]
+L["The Illidari Council"] = "The Illidari Council"
+--[[Translation missing --]]
+L["The Lurker Below"] = "The Lurker Below"
 L["The Prophet Skeram"] = "예언자 스케람"
-L["The Ruby Sanctum"] = "루비 성소"
-L["The Sunwell Plateau"] = "태양샘 고원"
+--[[Translation missing --]]
+L["The Sunwell Plateau"] = "The Sunwell Plateau"
 L["The trigger number is optional, and uses the trigger providing dynamic information if not specified."] = "활성 조건 번호는 선택 사항이며, 지정되지 않은 경우 유동적 정보를 제공하는 활성 조건을 사용합니다."
 L["There are %i updates to your auras ready to be installed!"] = "%i개의 업데이트를 설치할 수 있습니다!"
 L["Thick Outline"] = "굵은 외곽선"
 L["Thickness"] = "굵기"
 L["Third"] = "세 번째"
 L["Third Value of Tooltip Text"] = "툴팁 문자의 세 번째 값"
---[[Translation missing --]]
-L["This aura has caused a Lua error."] = "This aura has caused a Lua error."
+L["This aura contains custom Lua code."] = "이 aura는 사용자 정의 Lua 코드를 포함합니다."
 L["This aura has legacy aura trigger(s), which are no longer supported."] = "이 aura는 더 이상 지원되지 않는 과거의 aura 활성 조건을 포함하고 있습니다."
-L["This aura plays a sound via a condition."] = "이 효과는 조건을 통해 소리를 재생합니다."
---[[Translation missing --]]
-L["This aura plays a sound via an action."] = "This aura plays a sound via an action."
 --[[Translation missing --]]
 L["This aura tried to show a tooltip on a anchoring restricted region"] = "This aura tried to show a tooltip on a anchoring restricted region"
-L["Thorim"] = "토림"
+L["This aura was created with a newer version of WeakAuras."] = "이 효과는 WeakAuras의 새로운 버전으로 만들어졌습니다."
+L["This aura was created with the Classic version of World of Warcraft."] = "이 효과는 월드 오브 워크래프트 클래식 버전 으로 만들어졌습니다."
+L["This aura was created with the retail version of World of Warcraft."] = "이 효과는 월드 오브 워크래프트 리테일 버전 으로 만들어졌습니다."
+--[[Translation missing --]]
+L["This import requires a newer WeakAuras version."] = "This import requires a newer WeakAuras version."
+L["This is a modified version of your aura, |cff9900FF%s.|r"] = "|cff9900FF%s.|r 이것은 귀하의 효과를 수정한 것입니다."
+L["This is a modified version of your group, |cff9900FF%s.|r"] = "|cff9900FF%s.|r 이것은 귀하의 그룹을 수정한 버전입니다."
 L["Threat Percent"] = "위협 수준 백분율"
 L["Threat Situation"] = "위협 수준 상황"
 L["Threat Value"] = "위협 수준 수치"
@@ -1363,7 +1270,6 @@ L["Top"] = "위"
 L["Top Left"] = "왼쪽 위"
 L["Top Right"] = "오른쪽 위"
 L["Top to Bottom"] = "위에서 아래로"
-L["Toravon the Ice Watcher"] = "얼음 감시자 토라본"
 L["Torghast"] = "토르가스트"
 L["Total"] = "전체"
 L["Total Duration"] = "총 지속시간"
@@ -1388,11 +1294,8 @@ L["Tracking Charge CDs"] = "Tracking Charge CDs"
 --[[Translation missing --]]
 L["Tracking Only Cooldown"] = "Tracking Only Cooldown"
 L["Transmission error"] = "전송 오류"
-L["Trial of the Crusader"] = "십자군의 시험장"
 L["Trigger"] = "활성 조건"
 L["Trigger %i"] = "활성 조건 %i"
---[[Translation missing --]]
-L["Trigger %s"] = "Trigger %s"
 L["Trigger 1"] = "활성 조건 1"
 L["Trigger State Updater (Advanced)"] = "활성 조건 상태 업데이터 (고급)"
 L["Trigger Update"] = "활성 조건 업데이트"
@@ -1400,18 +1303,10 @@ L["Trigger:"] = "활성 조건:"
 --[[Translation missing --]]
 L["Trivial (Low Level)"] = "Trivial (Low Level)"
 L["True"] = "참"
---[[Translation missing --]]
-L["Trying to repair broken conditions in %s likely caused by a WeakAuras bug."] = "Trying to repair broken conditions in %s likely caused by a WeakAuras bug."
 L["Twin Emperors"] = "쌍둥이 제왕"
 L["Type"] = "유형"
-L["Ulduar"] = "울두아르"
 L["Unaffected"] = "영향 받지 않음"
 L["Undefined"] = "정의 안 됨"
-L["Unholy"] = "부정"
---[[Translation missing --]]
-L["Unholy Rune #1"] = "Unholy Rune #1"
---[[Translation missing --]]
-L["Unholy Rune #2"] = "Unholy Rune #2"
 L["Unit"] = "유닛"
 L["Unit Characteristics"] = "유닛 특성"
 L["Unit Destroyed"] = "유닛 파괴됨"
@@ -1423,75 +1318,55 @@ L["Unit is Unit"] = "유닛 = 유닛"
 L["Unit Name"] = "유닛 이름"
 L["Unit Name/Realm"] = "유닛 이름/서버"
 L["Units Affected"] = "영향 받은 유닛"
-L["unknown location"] = "알 수 없는 위치"
 L["Unlimited"] = "무제한"
---[[Translation missing --]]
-L["Untrigger %s"] = "Untrigger %s"
 L["Up"] = "위로"
 L["Up, then Left"] = "위로, 왼쪽으로"
 L["Up, then Right"] = "위로, 오른쪽으로"
---[[Translation missing --]]
-L["Update Position"] = "Update Position"
+L["Update Auras"] = "효과 갱신"
 L["Usage:"] = "사용법:"
 L["Use /wa minimap to show the minimap icon again."] = "/wa minimap 을 사용하여 미니맵 아이콘을 다시 표시합니다."
-L["Use Custom Color"] = "사용자 정의 색상 사용"
---[[Translation missing --]]
-L["Use Legacy floor rounding"] = "Use Legacy floor rounding"
+L["Use Custom Color"] = "사용자 설정 색상 사용"
 --[[Translation missing --]]
 L["Use Watched Faction"] = "Use Watched Faction"
 L["Vaelastrasz the Corrupt"] = "타락한 밸라스트라즈"
-L["Valithria Dreamwalker"] = "발리스리아 드림워커"
-L["Val'kyr Twins"] = "발키르 쌍둥이"
 L["Value"] = "값"
 L["Values/Remaining Time above this value are displayed as full progress."] = "이 값보다 큰 값/남은 시간은 전체 진행으로 표시됩니다."
 L["Values/Remaining Time below this value are displayed as no progress."] = "이 값 미만인 값/남은 시간은 진행되지 않음으로 표시됩니다."
-L["Vault of Archavon"] = "아카본 석실"
 L["Versatility (%)"] = "유연성 (%)"
 L["Versatility Rating"] = "유연성"
-L["Vesperon"] = "베스페론"
+L["Version: "] = "버전:"
 L["Viscidus"] = "비시디우스"
 L["Visibility"] = "표시"
 L["Visions of N'Zoth"] = "느조스의 환영"
-L["Void Reaver"] = "공허의 절단기"
+--[[Translation missing --]]
+L["Void Reaver"] = "Void Reaver"
 L["War Mode Active"] = "전쟁 모드 활성화"
 L["Warfront (Heroic)"] = "격전지 (영웅)"
 L["Warfront (Normal)"] = "격전지 (일반)"
-L["Warlords of Draenor"] = "드레노어의 전쟁군주"
 L["Warning"] = "경고"
 L["Warning for unknown aura:"] = "알 수 없는 효과에 대한 경고:"
 L["Warning: Full Scan auras checking for both name and spell id can't be converted."] = "경고: 이름 및 주문 ID를 모두 확인하는 완전 효과 검사는 변환할 수 없습니다."
 L["Warning: Name info is now available via %affected, %unaffected. Number of affected group members via %unitCount. Some options behave differently now. This is not automatically adjusted."] = "경고: %affected, %unaffected 를 통해 이름 정보를 사용할 수 있습니다. 영향을 받은 구성원의 수는 %unitCount 로 통합니다. 일부 옵션은 다르게 동작합니다. 이것은 자동으로 조정되지 않습니다."
 L["Warning: Tooltip values are now available via %tooltip1, %tooltip2, %tooltip3 instead of %s. This is not automatically adjusted."] = "경고: 툴팁 값은 이제 %s 대신 %tooltip1, %tooltip2, %tooltip3으로 사용할 수 있습니다. 이것은 자동으로 조정되지 않습니다."
 L["WeakAuras Built-In (63:42 | 3:07 | 10 | 2.4)"] = "WeakAuras 내장 (63:42 | 3:07 | 10 | 2.4)"
---[[Translation missing --]]
-L[ [=[WeakAuras has detected that it has been downgraded.
-Your saved auras may no longer work properly.
-Would you like to run the |cffff0000EXPERIMENTAL|r repair tool? This will overwrite any changes you have made since the last database upgrade.
-Last upgrade: %s]=] ] = [=[WeakAuras has detected that it has been downgraded.
-Your saved auras may no longer work properly.
-Would you like to run the |cffff0000EXPERIMENTAL|r repair tool? This will overwrite any changes you have made since the last database upgrade.
-Last upgrade: %s]=]
 L["WeakAuras has encountered an error during the login process. Please report this issue at https://github.com/WeakAuras/Weakauras2/issues/new."] = "로그인 과정 중 WeakAuras에 문제가 발생했습니다. 이 문제를 https://github.com/WeakAuras/Weakauras2/issues/new 에 보고해주세요."
 L["WeakAuras Profiling"] = "WeakAuras 프로파일링"
 L["WeakAuras Profiling Report"] = "WeakAuras 프로파일링 보고서"
-L["WeakAuras Version: %s"] = "WeakAuras 버전: %s"
 L["Weapon"] = "무기"
 L["Weapon Enchant"] = "무기 마법부여"
 L["Weapon Enchant / Fishing Lure"] = "무기 마법부여 / 낚시 미끼"
+L["What do you want to do?"] = "무엇을 하고 싶나요?"
 L["Whisper"] = "귓속말"
 L["Whole Area"] = "전체 영역"
 L["Width"] = "너비"
 L["Wobble"] = "흔들기"
 L["World Boss"] = "월드 보스"
 L["Wrap"] = "구속"
-L["Wrath of the Lich King"] = "리치 왕의 분노"
 L["Writing to the WeakAuras table is not allowed."] = "WeakAuras table에 작성은 허용되지 않습니다."
 L["X-Offset"] = "X-좌표"
-L["XT-002 Deconstructor"] = "XT-002 해체자"
 L["Yell"] = "외침"
 L["Y-Offset"] = "Y-좌표"
-L["Yogg-Saron"] = "요그사론"
-L["You have new auras ready to be installed!"] = "새로운 효과를 설치할 준비가 되었습니다!"
+L["You already have this group/aura. Importing will create a duplicate."] = "이미 이 그룹/효과가 있습니다. 가져오기를 수행하면 복제본이 만들어집니다."
 L["Your next encounter will automatically be profiled."] = "다음 교전은 자동으로 프로파일링됩니다."
 --[[Translation missing --]]
 L["Your next instance of combat will automatically be profiled."] = "Your next instance of combat will automatically be profiled."
@@ -1502,7 +1377,7 @@ L["Your total threat on the mob."] = "몬스터가 가진 당신의 총 위협 �
 L["Zone ID(s)"] = "지역 ID"
 L["Zone Name"] = "지역 이름"
 L["Zoom"] = "확대"
-L["Zoom Animation"] = "확대 애니메이션"
-L["Zul'Aman"] = "줄아만"
+--[[Translation missing --]]
+L["Zul'Aman"] = "Zul'Aman"
 L["Zul'Gurub"] = "줄구룹"
 

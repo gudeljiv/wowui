@@ -388,7 +388,7 @@ templates.class.PRIEST = {
         { spell = 10951, type = "ability", buff = true}, -- Inner Fire
         { spell = 14751, type = "ability", buff = true, talent = 7}, -- Inner Focus
         { spell = 14914, type = "ability", debuff = true, requireTarget = true}, -- Holy Fire
-        { spell = 15487, type = "ability", debuff = true, requireTarget = true, talent = 52}, -- Silence
+        { spell = 15487, type = "ability", debuff = true, requireTarget = true, talnet = 52}, -- Silence
 
       },
       icon = 136224
@@ -580,7 +580,6 @@ templates.class.WARLOCK = {
       title = L["Debuffs"],
       args = {
         { spell = 172, type = "debuff", unit = "target"}, -- Corruption
-        { spell = 348, type = "debuff", unit = "target"}, -- Immolate
         { spell = 603, type = "debuff", unit = "target"}, -- Curse of Doom
         { spell = 702, type = "debuff", unit = "target"}, -- Curse of Weakness
         { spell = 704, type = "debuff", unit = "target"}, -- Curse of Recklessness
@@ -992,7 +991,7 @@ local function addLoadCondition(item, loadCondition)
 end
 
 local delayedEnrichDatabase = false;
-local itemInfoReceived = CreateFrame("Frame")
+local itemInfoReceived = CreateFrame("frame")
 
 local enrichTries = 0;
 local function enrichDatabase()

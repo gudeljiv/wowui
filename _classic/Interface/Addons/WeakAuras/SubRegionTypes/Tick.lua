@@ -1,9 +1,10 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 local AddonName, Private = ...
 
+local SharedMedia = LibStub("LibSharedMedia-3.0");
 local L = WeakAuras.L;
 
-local default = function()
+local default = function(parentType)
   return {
     tick_visible = true,
     tick_color = {1, 1, 1, 1},
@@ -106,7 +107,7 @@ local auraBarAnchorInverse = {
 }
 
 local function create()
-  local subRegion = CreateFrame("Frame", nil, UIParent)
+  local subRegion = CreateFrame("FRAME", nil, UIParent)
   subRegion.texture = subRegion:CreateTexture()
   subRegion.texture:SetDrawLayer("ARTWORK", 3)
   subRegion.texture:SetAllPoints(subRegion)

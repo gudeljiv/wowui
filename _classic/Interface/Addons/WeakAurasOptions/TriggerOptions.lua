@@ -1,4 +1,4 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 local AddonName, OptionsPrivate = ...
 
 local L = WeakAuras.L
@@ -16,6 +16,8 @@ local executeAll = OptionsPrivate.commonOptions.CreateExecuteAll("trigger")
 local flattenRegionOptions = OptionsPrivate.commonOptions.flattenRegionOptions
 local fixMetaOrders = OptionsPrivate.commonOptions.fixMetaOrders
 
+local spellCache = WeakAuras.spellCache
+
 local function union(table1, table2)
   local meta = {};
   for i,v in pairs(table1) do
@@ -29,6 +31,7 @@ end
 
 local function GetGlobalOptions(data)
 
+  local triggerCount = 0
   local globalTriggerOptions = {
     __title = L["Trigger Combination"],
     __order = 1,
@@ -77,6 +80,7 @@ local function GetGlobalOptions(data)
         data.triggers.activeTriggerMode = v;
         WeakAuras.Add(data);
         WeakAuras.UpdateThumbnail(data);
+        WeakAuras.UpdateDisplayButton(data);
       end,
       hidden = function() return #data.triggers <= 1 end
     }
@@ -108,7 +112,7 @@ local function AddOptions(allOptions, data)
       -- Unknown trigger system, empty options
       local options = {};
       OptionsPrivate.commonOptions.AddCommonTriggerOptions(options, data, index)
-      OptionsPrivate.AddTriggerMetaFunctions(options, data, index)
+      OptionsPrivate.AddTriggerMetaFunctions(options, data, index, true)
       triggerOptions = union(triggerOptions, {
           ["trigger." .. index .. ".unknown"] = options
       })

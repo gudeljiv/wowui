@@ -1,6 +1,7 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 local AddonName, Private = ...
 
+local SharedMedia = LibStub("LibSharedMedia-3.0");
 local L = WeakAuras.L;
 
 Private.barmodels = {}
@@ -196,7 +197,7 @@ local funcs = {
 }
 
 local function create()
-  local subRegion = CreateFrame("Frame", nil, UIParent)
+  local subRegion = CreateFrame("FRAME", nil, UIParent)
   subRegion:SetClipsChildren(true)
 
   for k, v in pairs(funcs) do

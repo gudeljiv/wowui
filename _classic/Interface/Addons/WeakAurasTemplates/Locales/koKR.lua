@@ -1,6 +1,6 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 
-if GetLocale() ~= "koKR" then
+if not(GetLocale() == "koKR") then
   return
 end
 
@@ -112,7 +112,8 @@ local L = WeakAuras.L
 	L["Root"] = "Root"
 	L["Runes"] = "룬"
 	L["Shapeshift Form"] = "태세 변환"
-	L["Shards Of Domination"] = "지배의 조각"
+	--[[Translation missing --]]
+	L["Shards Of Domination"] = "Shards Of Domination"
 	--[[Translation missing --]]
 	L["Show Always, Glow on Missing"] = "Show Always, Glow on Missing"
 	--[[Translation missing --]]

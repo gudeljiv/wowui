@@ -1,2 +1,0 @@
-
-Details_StreamerDB = nil

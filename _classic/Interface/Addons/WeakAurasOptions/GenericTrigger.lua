@@ -1,9 +1,10 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 local AddonName, OptionsPrivate = ...
 
 local L = WeakAuras.L;
 
 local function GetCustomTriggerOptions(data, triggernum)
+  local id = data.id;
   local trigger = data.triggers[triggernum].trigger
   local function appendToTriggerPath(...)
     local ret = {...};
@@ -30,13 +31,13 @@ local function GetCustomTriggerOptions(data, triggernum)
       width = WeakAuras.doubleWidth,
       values = OptionsPrivate.Private.custom_trigger_types,
       hidden = function() return not (trigger.type == "custom") end,
-      get = function()
+      get = function(info)
         return trigger.custom_type
       end,
       set = function(info, v)
         trigger.custom_type = v;
         WeakAuras.Add(data);
-        WeakAuras.UpdateThumbnail(data);
+        WeakAuras.UpdateDisplayButton(data);
         WeakAuras.ClearAndUpdateOptions(data.id);
       end
     },
@@ -54,6 +55,7 @@ local function GetCustomTriggerOptions(data, triggernum)
       set = function(info, v)
         trigger.check = v;
         WeakAuras.Add(data);
+        WeakAuras.UpdateDisplayButton(data);
       end
     },
     check2 = {
@@ -70,6 +72,7 @@ local function GetCustomTriggerOptions(data, triggernum)
       set = function(info, v)
         trigger.check = v;
         WeakAuras.Add(data);
+        WeakAuras.UpdateDisplayButton(data);
       end
     },
     events = {
@@ -85,6 +88,7 @@ local function GetCustomTriggerOptions(data, triggernum)
       set = function(info, v)
         trigger.events = v;
         WeakAuras.Add(data);
+        WeakAuras.UpdateDisplayButton(data);
       end
     },
     events2 = {
@@ -98,13 +102,14 @@ local function GetCustomTriggerOptions(data, triggernum)
       set = function(info, v)
         trigger.events = v;
         WeakAuras.Add(data);
+        WeakAuras.UpdateDisplayButton(data);
       end
     },
     event_customError = {
       type = "description",
       name = function()
         local events = trigger.custom_type == "event" and trigger.events2 or trigger.events
-        for _, event in pairs(WeakAuras.split(events)) do
+        for index, event in pairs(WeakAuras.split(events)) do
           local trueEvent
           for i in event:gmatch("[^:]+") do
             if not trueEvent then
@@ -118,15 +123,6 @@ local function GetCustomTriggerOptions(data, triggernum)
               local unit = string.lower(i)
               if not OptionsPrivate.Private.baseUnitId[unit] and not OptionsPrivate.Private.multiUnitId[unit] then
                 return "|cFFFF0000"..L["Unit %s is not a valid unit for RegisterUnitEvent"]:format(unit)
-              end
-            elseif trueEvent == "TRIGGER" then
-              local requestedTriggernum = tonumber(i)
-              if requestedTriggernum then
-                if OptionsPrivate.Private.watched_trigger_events[data.id]
-                and OptionsPrivate.Private.watched_trigger_events[data.id][triggernum]
-                and OptionsPrivate.Private.watched_trigger_events[data.id][triggernum][requestedTriggernum] then
-                  return "|cFFFF0000"..L["Reciprocal TRIGGER:# requests will be ignored!"]
-                end
               end
             end
           end
@@ -145,7 +141,7 @@ local function GetCustomTriggerOptions(data, triggernum)
           return true
         end
         local events = trigger.custom_type == "event" and trigger.events2 or trigger.events
-        for _, event in pairs(WeakAuras.split(events)) do
+        for index, event in pairs(WeakAuras.split(events)) do
           local trueEvent
           for i in event:gmatch("[^:]+") do
             if not trueEvent then
@@ -158,15 +154,6 @@ local function GetCustomTriggerOptions(data, triggernum)
               local unit = string.lower(i)
               if not OptionsPrivate.Private.baseUnitId[unit] then
                 return false
-              end
-            elseif trueEvent == "TRIGGER" then
-              local requestedTriggernum = tonumber(i)
-              if requestedTriggernum then
-                if OptionsPrivate.Private.watched_trigger_events[data.id]
-                and OptionsPrivate.Private.watched_trigger_events[data.id][triggernum]
-                and OptionsPrivate.Private.watched_trigger_events[data.id][triggernum][requestedTriggernum] then
-                  return false
-                end
               end
             end
           end
@@ -186,6 +173,7 @@ local function GetCustomTriggerOptions(data, triggernum)
       set = function(info, v)
         trigger.custom_hide = v;
         WeakAuras.Add(data);
+        WeakAuras.UpdateDisplayButton(data);
       end
     },
     custom_hide2 = {
@@ -199,6 +187,7 @@ local function GetCustomTriggerOptions(data, triggernum)
       set = function(info, v)
         trigger.custom_hide = v;
         WeakAuras.Add(data);
+        WeakAuras.UpdateDisplayButton(data);
       end
     },
     dynamicDuration = {
@@ -213,6 +202,7 @@ local function GetCustomTriggerOptions(data, triggernum)
       set = function(info, v)
         trigger.dynamicDuration = v;
         WeakAuras.Add(data);
+        WeakAuras.UpdateDisplayButton(data);
         WeakAuras.ClearAndUpdateOptions(data.id);
       end
     },
@@ -265,7 +255,7 @@ local function GetCustomTriggerOptions(data, triggernum)
   };
 
   local function extraSetFunction()
-    WeakAuras.UpdateThumbnail(data);
+    WeakAuras.UpdateDisplayButton(data);
   end
 
   local function extraSetFunctionReload()
@@ -298,6 +288,7 @@ local function GetCustomTriggerOptions(data, triggernum)
     test = "function",
     events = "table",
     values = "table",
+    display = "string"
   }
 
   local function validateCustomVariables(variables)
@@ -472,10 +463,10 @@ local function GetGenericTriggerOptions(data, triggernum)
   }
 
   if (triggerType == "custom") then
-    Mixin(options, GetCustomTriggerOptions(data, triggernum));
+    Mixin(options, GetCustomTriggerOptions(data, triggernum, trigger));
   elseif (OptionsPrivate.Private.category_event_prototype[triggerType]) then
     local prototypeOptions;
-    local trigger = data.triggers[triggernum].trigger
+    local trigger, untrigger = data.triggers[triggernum].trigger, data.triggers[triggernum].untrigger;
     if(OptionsPrivate.Private.event_prototypes[trigger.event]) then
       prototypeOptions = OptionsPrivate.ConstructOptions(OptionsPrivate.Private.event_prototypes[trigger.event], data, 10, triggernum);
       if (trigger.event == "Combat Log") then

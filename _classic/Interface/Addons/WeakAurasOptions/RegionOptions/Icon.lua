@@ -1,4 +1,4 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 local AddonName, OptionsPrivate = ...
 
 local Masque = LibStub("Masque", true)
@@ -184,14 +184,13 @@ local function createOptions(id, data)
     cooldownHeader = {
       type = "header",
       order = 11,
-      name = L["Swipe Overlay Settings"],
+      name = L["Cooldown Settings"],
     },
     cooldown = {
       type = "toggle",
       width = WeakAuras.normalWidth,
-      name = L["Enable Swipe"],
+      name = L["Show Cooldown"],
       order = 11.1,
-      desc = L["Enable the \"Swipe\" radial overlay"],
       disabled = function() return not OptionsPrivate.Private.CanHaveDuration(data); end,
       get = function() return OptionsPrivate.Private.CanHaveDuration(data) and data.cooldown; end
     },
@@ -200,7 +199,6 @@ local function createOptions(id, data)
       width = WeakAuras.normalWidth,
       name = L["Inverse"],
       order = 11.2,
-      desc = L["Invert the direction of progress"],
       disabled = function() return not (OptionsPrivate.Private.CanHaveDuration(data) and data.cooldown); end,
       get = function() return data.inverse and OptionsPrivate.Private.CanHaveDuration(data) and data.cooldown; end,
       hidden = function() return not data.cooldown end
@@ -208,36 +206,24 @@ local function createOptions(id, data)
     cooldownSwipe = {
       type = "toggle",
       width = WeakAuras.normalWidth,
-      name = L["Show \"Swipe\""],
+      name = L["Cooldown Swipe"],
       order = 11.3,
-      desc = "|TInterface\\AddOns\\WeakAuras\\Media\\Textures\\swipe-example:30|t\n"..L["Enable \"swipe\" part of the overlay"],
       disabled = function() return not OptionsPrivate.Private.CanHaveDuration(data) end,
       hidden = function() return not data.cooldown end,
     },
     cooldownEdge = {
       type = "toggle",
       width = WeakAuras.normalWidth,
-      name = L["Show \"Edge\""],
+      name = L["Cooldown Edge"],
       order = 11.4,
-      desc = "|TInterface\\AddOns\\WeakAuras\\Media\\Textures\\edge-example:30|t\n"..L["Enable \"Edge\" part of the overlay"],
       disabled = function() return not OptionsPrivate.Private.CanHaveDuration(data) end,
       hidden = function() return not data.cooldown end,
     },
     cooldownTextDisabled = {
       type = "toggle",
       width = WeakAuras.normalWidth,
-      name = L["Hide Timer Text"],
+      name = L["Hide Cooldown Text"],
       order = 11.5,
-      desc = L["A timer will automatically be displayed according to default Interface Settings (overridden by some addons).\nEnable this setting if you want this timer to be hidden, or when using a WeakAuras text to display the timer"],
-      disabled = function() return not OptionsPrivate.Private.CanHaveDuration(data); end,
-      hidden = function() return not data.cooldown end,
-    },
-    useCooldownModRate = {
-      type = "toggle",
-      width = WeakAuras.normalWidth,
-      name = L["Blizzard Cooldown Reduction"],
-      order = 11.6,
-      desc = L["Cooldown Reduction changes the duration of seconds instead of showing the real time seconds."],
       disabled = function() return not OptionsPrivate.Private.CanHaveDuration(data); end,
       hidden = function() return not data.cooldown end,
     },
@@ -255,7 +241,7 @@ local function createOptions(id, data)
 end
 
 local function createThumbnail()
-  local frame = CreateFrame("Frame", nil, UIParent)
+  local frame = CreateFrame("FRAME", nil, UIParent)
   local icon = frame:CreateTexture();
   icon:SetTexture("Interface\\Icons\\INV_Misc_QuestionMark");
   icon:SetAllPoints(frame)

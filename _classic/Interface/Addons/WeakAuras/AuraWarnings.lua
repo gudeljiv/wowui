@@ -1,4 +1,4 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 local AddonName, Private = ...
 
 local WeakAuras = WeakAuras
@@ -10,7 +10,6 @@ local printedWarnings = {}
 
 local function OnDelete(event, uid)
   warnings[uid] = nil
-  printedWarnings[uid] = nil
 end
 
 Private.callbacks:RegisterCallback("Delete", OnDelete)
@@ -34,35 +33,27 @@ local function UpdateWarning(uid, key, severity, message, printOnConsole)
       severity = severity,
       message = message
     }
-    Private.callbacks:Fire("AuraWarningsUpdated", uid)
   else
-    if warnings[uid][key] then
-      warnings[uid][key] = nil
-      if printedWarnings[uid] then
-        printedWarnings[uid][key] = nil
-      end
-      Private.callbacks:Fire("AuraWarningsUpdated", uid)
-    end
+    warnings[uid][key] = nil
   end
+
+  Private.callbacks:Fire("AuraWarningsUpdated", uid)
 end
 
 local severityLevel = {
   info = 0,
-  sound = 1,
-  warning = 2,
-  error = 3
+  warning = 1,
+  error = 2
 }
 
 local icons = {
   info = [[Interface/friendsframe/informationicon.blp]],
-  sound = [[chatframe-button-icon-voicechat]],
   warning = [[Interface/buttons/adventureguidemicrobuttonalert.blp]],
   error =  [[Interface/DialogFrame/UI-Dialog-Icon-AlertNew]]
 }
 
 local titles = {
   info = L["Information"],
-  sound = L["Sound"],
   warning = L["Warning"],
   error = L["Error"]
 }
@@ -76,11 +67,7 @@ local function AddMessages(result, messages, icon, mixedSeverity)
       result = result .. "\n\n"
     end
     if mixedSeverity then
-      if C_Texture.GetAtlasInfo(icon) then
-        result = result .. "|A:" .. icon .. ":12:12:0:0|a"
-      else
-        result = result .. "|T" .. icon .. ":12:12:0:0:64:64:4:60:4:60|t"
-      end
+      result = result .. "|T" .. icon .. ":12:12:0:0:64:64:4:60:4:60|t"
     end
     result = result .. message
   end
@@ -116,7 +103,6 @@ local function FormatWarnings(uid)
   local result = ""
   result = AddMessages(result, messagePerSeverity["error"], icons["error"], mixedSeverity)
   result = AddMessages(result, messagePerSeverity["warning"], icons["warning"], mixedSeverity)
-  result = AddMessages(result, messagePerSeverity["sound"], icons["sound"], mixedSeverity)
   result = AddMessages(result, messagePerSeverity["info"], icons["info"], mixedSeverity)
   return icons[maxSeverity], titles[maxSeverity], result
 end

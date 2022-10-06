@@ -1,13 +1,14 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 
-if GetLocale() ~= "deDE" then
+if not(GetLocale() == "deDE") then
   return
 end
 
 local L = WeakAuras.L
 
 -- WeakAuras/Templates
-	L[" Debuff"] = "Schwächungzauber"
+	--[[Translation missing --]]
+	L[" Debuff"] = " Debuff"
 	--[[Translation missing --]]
 	L["<70% Mana"] = "<70% Mana"
 	--[[Translation missing --]]
@@ -17,8 +18,10 @@ local L = WeakAuras.L
 	L["Add Triggers"] = "Auslöser hinzufügen"
 	L["Always Active"] = "Immer aktiv"
 	L["Always Show"] = "Immer anzeigen"
-	L["Always show the aura, highlight it if debuffed."] = "Zeige immer die Aura, hebe sie hervor, wenn sie geschwächt ist."
-	L["Always show the aura, turns grey if on cooldown."] = "Aura immer anzeigen, wird Grau wenn es auf Abkühlen steht."
+	--[[Translation missing --]]
+	L["Always show the aura, highlight it if debuffed."] = "Always show the aura, highlight it if debuffed."
+	--[[Translation missing --]]
+	L["Always show the aura, turns grey if on cooldown."] = "Always show the aura, turns grey if on cooldown."
 	--[[Translation missing --]]
 	L["Always show the aura, turns grey if the debuff not active."] = "Always show the aura, turns grey if the debuff not active."
 	--[[Translation missing --]]
@@ -59,7 +62,8 @@ local L = WeakAuras.L
 	L["Bloodlust/Heroism"] = "Kampfrausch/Heldentum"
 	--[[Translation missing --]]
 	L["Bonded Buff"] = "Bonded Buff"
-	L["Buff"] = "Stärkungszauber"
+	--[[Translation missing --]]
+	L["Buff"] = "Buff"
 	L["buff"] = "buff"
 	--[[Translation missing --]]
 	L["Buff on Other"] = "Buff on Other"
@@ -86,12 +90,15 @@ local L = WeakAuras.L
 	--[[Translation missing --]]
 	L["Cooldown Tracking"] = "Cooldown Tracking"
 	L["Create Auras"] = "Auren erstellen"
-	L["Debuff"] = "Schwächungszauber"
-	L["debuff"] = "Schwächungszauber"
+	--[[Translation missing --]]
+	L["Debuff"] = "Debuff"
+	--[[Translation missing --]]
+	L["debuff"] = "debuff"
 	L["Debuffs"] = "Debuffs"
 	--[[Translation missing --]]
 	L["Empowered Buff"] = "Empowered Buff"
-	L["Fire"] = "Feuer"
+	--[[Translation missing --]]
+	L["Fire"] = "Fire"
 	--[[Translation missing --]]
 	L["Frost"] = "Frost"
 	L["General"] = "Allgemein"

@@ -1,4 +1,4 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 local AddonName, OptionsPrivate = ...
 
 -- Lua APIs
@@ -9,6 +9,7 @@ local pairs, next, type = pairs, next, type
 local CreateFrame = CreateFrame
 
 local AceGUI = LibStub("AceGUI-3.0")
+local AceConfigDialog = LibStub("AceConfigDialog-3.0")
 
 local WeakAuras = WeakAuras
 local L = WeakAuras.L
@@ -134,7 +135,6 @@ local function ConstructTexturePicker(frame)
   dropdown:SetCallback("OnGroupSelected", texturePickerGroupSelected)
 
   function group.UpdateList(self)
-    dropdown.dropdown.pullout:Close()
     wipe(dropdown.list);
     for categoryName, category in pairs(self.textures) do
       local match = false;

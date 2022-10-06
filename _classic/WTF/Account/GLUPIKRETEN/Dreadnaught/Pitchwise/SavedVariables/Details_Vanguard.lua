@@ -1,2 +1,3 @@
 
-_detalhes_databaseVanguard = nil
+_detalhes_databaseVanguard = {
+}

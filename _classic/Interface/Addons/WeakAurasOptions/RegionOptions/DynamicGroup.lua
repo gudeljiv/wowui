@@ -1,4 +1,4 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 local AddonName, OptionsPrivate = ...
 
 local L = WeakAuras.L
@@ -134,7 +134,13 @@ local function createOptions(id, data)
       order = 1.5,
       width = WeakAuras.normalWidth,
       name = L["Group by Frame"],
-      desc = L["Group and anchor each auras by frame.\n\n- Nameplates: attach to nameplates per unit.\n- Unit Frames: attach to unit frame buttons per unit.\n- Custom Frames: choose which frame each region should be anchored to."],
+      desc = L[
+[[Group and anchor each auras by frame.
+
+- Nameplates: attach to nameplates per unit.
+- Unit Frames: attach to unit frame buttons per unit.
+- Custom Frames: choose which frame each region should be anchored to.]]
+      ],
       hidden = function() return data.grow == "CUSTOM" end,
     },
     anchorPerUnit = {
@@ -448,7 +454,7 @@ end
 
 local function createThumbnail()
   -- frame
-  local thumbnail = CreateFrame("Frame", nil, UIParent);
+  local thumbnail = CreateFrame("FRAME", nil, UIParent);
   thumbnail:SetWidth(32);
   thumbnail:SetHeight(32);
 
@@ -479,7 +485,7 @@ local function defaultIconAnimation(self, elapsed)
 end
 
 local function createAnimatedDefaultIcon(parent)
-  local defaultIcon = CreateFrame("Frame", nil, parent);
+  local defaultIcon = CreateFrame("FRAME", nil, parent);
   parent.defaultIcon = defaultIcon;
 
   local t1 = defaultIcon:CreateTexture(nil, "ARTWORK");
@@ -522,7 +528,7 @@ local function modifyThumbnail(parent, frame, data)
       icon:SetAllPoints(frame)
       frame.icon = icon
     end
-    local success = WeakAuras.SetTextureOrAtlas(frame.icon, path or data.groupIcon) and (path or data.groupIcon)
+    local success = frame.icon:SetTexture(path or data.groupIcon) and (path or data.groupIcon)
     if success then
       if frame.defaultIcon then
         frame.defaultIcon:Hide()
@@ -542,7 +548,7 @@ local function modifyThumbnail(parent, frame, data)
 end
 
 local function createIcon()
-  local thumbnail = createThumbnail()
+  local thumbnail = createThumbnail(UIParent)
   thumbnail.defaultIcon = createAnimatedDefaultIcon(thumbnail)
   return thumbnail
 end

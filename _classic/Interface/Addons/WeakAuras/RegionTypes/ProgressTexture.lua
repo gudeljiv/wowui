@@ -1,7 +1,8 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 local AddonName, Private = ...
 
 local L = WeakAuras.L;
+local GetAtlasInfo = WeakAuras.IsClassic() and GetAtlasInfo or C_Texture.GetAtlasInfo
 
 local defaultFont = WeakAuras.defaultFont
 local defaultFontSize = WeakAuras.defaultFontSize
@@ -956,7 +957,7 @@ end
 local function create(parent)
   local font = "GameFontHighlight";
 
-  local region = CreateFrame("Frame", nil, parent);
+  local region = CreateFrame("FRAME", nil, parent);
   region.regionType = "progresstexture"
   region:SetMovable(true);
   region:SetResizable(true);

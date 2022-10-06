@@ -21,7 +21,7 @@ local CreateFrame, UIParent = CreateFrame, UIParent
 ]]
 do
 	local Type = "Window"
-	local Version = 8
+	local Version = 6
 
 	local function frameOnShow(this)
 		this.obj:Fire("OnShow")
@@ -186,11 +186,7 @@ do
 
 		frame:SetScript("OnShow",frameOnShow)
 		frame:SetScript("OnHide",frameOnClose)
-		if frame.SetResizeBounds then -- WoW 10.0
-			frame:SetResizeBounds(240,240)
-		else
-			frame:SetMinResize(240,240)
-		end
+		frame:SetMinResize(240,240)
 		frame:SetToplevel(true)
 
 		local titlebg = frame:CreateTexture(nil, "BACKGROUND")

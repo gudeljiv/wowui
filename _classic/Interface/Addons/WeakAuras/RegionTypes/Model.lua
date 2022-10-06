@@ -1,4 +1,4 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 local AddonName, Private = ...
 
 local SharedMedia = LibStub("LibSharedMedia-3.0");
@@ -79,14 +79,14 @@ local regionFunctions = {
 -- Called when first creating a new region/display
 local function create(parent)
   -- Main region
-  local region = CreateFrame("Frame", nil, UIParent);
+  local region = CreateFrame("FRAME", nil, UIParent);
   region.regionType = "model"
   region:SetMovable(true);
   region:SetResizable(true);
   region:SetMinResize(1, 1);
 
   -- Border region
-  local border = CreateFrame("Frame", nil, region, "BackdropTemplate");
+  local border = CreateFrame("frame", nil, region, BackdropTemplateMixin and "BackdropTemplate");
   region.border = border;
 
   WeakAuras.regionPrototype.create(region);
@@ -261,7 +261,7 @@ local function modify(parent, region, data)
     region:Scale(region.scalex, region.scaley);
   end
 
-  -- Rotate model
+  -- Roate model
   function region:Rotate(degrees)
     region.rotation = degrees;
     if region.model then

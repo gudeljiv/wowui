@@ -1,4 +1,4 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 local AddonName, Private = ...
 
 local L = WeakAuras.L
@@ -17,7 +17,7 @@ local conditionChecksTimers = {};
 conditionChecksTimers.recheckTime = {};
 conditionChecksTimers.recheckHandle = {};
 
-local function OnDelete(_, uid)
+local function OnDelete(event, uid)
   checkConditions[uid] = nil
   conditionChecksTimers.recheckTime[uid] = nil
   if (conditionChecksTimers.recheckHandle[uid]) then
@@ -27,7 +27,7 @@ local function OnDelete(_, uid)
   end
   conditionChecksTimers.recheckHandle[uid] = nil
 
-  for _, funcs in pairs(dynamicConditions) do
+  for event, funcs in pairs(dynamicConditions) do
     funcs[uid] = nil
   end
 end
@@ -63,13 +63,9 @@ local function formatValueForAssignment(vType, value, pathToCustomFunction, path
     return "{1, 1, 1, 1}";
   elseif(vType == "chat") then
     if (value and type(value) == "table") then
-      local serialized = string.format("{message_type = %s, message = %s, message_dest = %s, message_dest_isunit = %s, r = %s, g = %s, b = %s, message_custom = %s, message_formaters = %s, message_voice = %s}",
+      local serialized = string.format("{message_type = %s, message = %s, message_dest = %s, message_channel = %s, message_custom = %s, message_formaters = %s, message_voice = %s}",
         Private.QuotedString(tostring(value.message_type)), Private.QuotedString(tostring(value.message or "")),
-        Private.QuotedString(tostring(value.message_dest)),
-        tostring(value.message_dest_isunit),
-        type(value.message_color) == "table" and tostring(value.message_color[1] or "1") or "1",
-        type(value.message_color) == "table" and tostring(value.message_color[2] or "1") or "1",
-        type(value.message_color) == "table" and tostring(value.message_color[3] or "1") or "1",
+        Private.QuotedString(tostring(value.message_dest)), Private.QuotedString(tostring(value.message_channel)),
         pathToCustomFunction,
         pathToFormatters,
         tostring(value.message_voice))
@@ -150,8 +146,7 @@ function WeakAuras.scheduleConditionCheck(time, uid, cloneId)
 end
 
 function WeakAuras.CallCustomConditionTest(uid, testFunctionNumber, ...)
-  local ok, result = xpcall(WeakAuras.conditionHelpers[uid].customTestFunctions[testFunctionNumber],
-                            Private.GetErrorHandlerUid(uid, L["Condition Custom Text"]), ...)
+  local ok, result = xpcall(WeakAuras.conditionHelpers[uid].customTestFunctions[testFunctionNumber], geterrorhandler(), ...)
   if (ok) then
     return result
   end
@@ -194,7 +189,6 @@ local function CreateTestForCondition(uid, input, allConditionsTemplate, usedSta
 
     local conditionTemplate = allConditionsTemplate[trigger] and allConditionsTemplate[trigger][variable];
     local cType = conditionTemplate and conditionTemplate.type;
-    local useModRate = conditionTemplate and conditionTemplate.useModRate
     local test = conditionTemplate and conditionTemplate.test;
     local preamble = conditionTemplate and conditionTemplate.preamble;
 
@@ -224,7 +218,7 @@ local function CreateTestForCondition(uid, input, allConditionsTemplate, usedSta
       end
     elseif (cType == "customcheck") then
       if value then
-        local customCheck = WeakAuras.LoadFunction("return " .. value)
+        local customCheck = WeakAuras.LoadFunction("return " .. value, Private.UIDtoID(uid), "conditions custom check")
         if customCheck then
           WeakAuras.conditionHelpers[uid] = WeakAuras.conditionHelpers[uid] or {}
           WeakAuras.conditionHelpers[uid].customTestFunctions = WeakAuras.conditionHelpers[uid].customTestFunctions or {}
@@ -239,30 +233,14 @@ local function CreateTestForCondition(uid, input, allConditionsTemplate, usedSta
       check = "true"
     elseif (cType == "number" and value and op) then
       local v = tonumber(value)
-
       if (v) then
-        if useModRate then
-          check = stateCheck .. stateVariableCheck .. "(state[" .. trigger .. "]" .. string.format("[%q]", variable)
-                  .. "/ (state[" .. trigger .. "].modRate or 1.0))" .. op .. v;
-        else
-          check = stateCheck .. stateVariableCheck .. "state[" .. trigger .. "]" .. string.format("[%q]", variable) .. op .. v;
-        end
+        check = stateCheck .. stateVariableCheck .. "state[" .. trigger .. "]" .. string.format("[%q]", variable) .. op .. v;
       end
     elseif (cType == "timer" and value and op) then
-      if useModRate then
-        if (op == "==") then
-          check = stateCheck .. stateVariableCheck .. "abs(((state[" .. trigger .. "]" .. string.format("[%q]", variable) .. "- now) "
-                 .. "/ (state[" .. trigger .. "].modRate or 1.0))" .. " -" .. value .. ") < 0.05";
-        else
-          check = stateCheck .. stateVariableCheck .. "((state[" .. trigger .. "]" .. string.format("[%q]", variable)
-                  .. "- now) / (state[" .. trigger .. "].modRate or 1.0))" .. op .. value;
-        end
+      if (op == "==") then
+        check = stateCheck .. stateVariableCheck .. "abs(state[" .. trigger .. "]" .. string.format("[%q]", variable) .. "- now -" .. value .. ") < 0.05";
       else
-        if (op == "==") then
-          check = stateCheck .. stateVariableCheck .. "abs(state[" .. trigger .. "]" .. string.format("[%q]", variable) .. "- now -" .. value .. ") < 0.05";
-        else
-          check = stateCheck .. stateVariableCheck .. "state[" .. trigger .. "]" .. string.format("[%q]", variable) .. "- now" .. op .. value;
-        end
+        check = stateCheck .. stateVariableCheck .. "state[" .. trigger .. "]" .. string.format("[%q]", variable) .. "- now" .. op .. value;
       end
     elseif (cType == "elapsedTimer" and value and op) then
       if (op == "==") then
@@ -275,52 +253,6 @@ local function CreateTestForCondition(uid, input, allConditionsTemplate, usedSta
         check = stateCheck .. stateVariableCheck .. "state[" .. trigger .. "]" .. string.format("[%q]", variable) .. op .. tonumber(value);
       else
         check = stateCheck .. stateVariableCheck .. "state[" .. trigger .. "]".. string.format("[%q]", variable) .. op .. "'" .. value .. "'";
-      end
-    elseif (cType == "range" and value and op and input.type and input.op_range and input.range) then
-      local fn
-      if input.type == "group" then
-        fn = [[
-          return function()
-            local found = 0
-            local op = %q
-            local range = %s
-            for unit in WA_IterateGroupMembers() do
-              if not UnitIsUnit(unit, "player") and WeakAuras.CheckRange(unit, range, op) then
-                found = found + 1
-              end
-            end
-            return found %s %d
-          end
-        ]]
-        fn = fn:format(input.op_range, input.range, op, value)
-      elseif input.type == "enemies" then
-        fn = [[
-          return function()
-            local found = 0
-            local op = %q
-            local range = %s
-            for i = 1, 40 do
-              local unit = "nameplate" .. i
-              if UnitExists(unit) and UnitCanAttack("player", unit) and WeakAuras.CheckRange(unit, range, op) then
-                found = found + 1
-              end
-            end
-            return found %s %d
-          end
-        ]]
-        fn = fn:format(input.op_range, input.range, op, value)
-      end
-      if fn then
-        local customCheck = WeakAuras.LoadFunction(fn)
-        if customCheck then
-          WeakAuras.conditionHelpers[uid] = WeakAuras.conditionHelpers[uid] or {}
-          WeakAuras.conditionHelpers[uid].customTestFunctions = WeakAuras.conditionHelpers[uid].customTestFunctions or {}
-          tinsert(WeakAuras.conditionHelpers[uid].customTestFunctions, customCheck);
-          local testFunctionNumber = #(WeakAuras.conditionHelpers[uid].customTestFunctions);
-
-          check = string.format("state and WeakAuras.CallCustomConditionTest(%q, %s, state)",
-                                uid, testFunctionNumber, trigger);
-        end
       end
     elseif (cType == "bool" and value) then
       local rightSide = value == 0 and "false" or "true";
@@ -337,7 +269,7 @@ local function CreateTestForCondition(uid, input, allConditionsTemplate, usedSta
     -- If adding a new condition type, don't forget to adjust the validator in the options code
 
     if (cType == "timer" and value) then
-      recheckCode = "  nextTime = state[" .. trigger .. "] and state[" .. trigger .. "]" .. string.format("[%q]",  variable) .. " and (state[" .. trigger .. "]" .. string.format("[%q]",  variable) .. " - " .. value .. ")\n";
+      recheckCode = "  nextTime = state[" .. trigger .. "] and state[" .. trigger .. "]" .. string.format("[%q]",  variable) .. " and (state[" .. trigger .. "]" .. string.format("[%q]",  variable) .. " -" .. value .. ")\n";
       recheckCode = recheckCode .. "  if (nextTime and (not recheckTime or nextTime < recheckTime) and nextTime >= now) then\n"
       recheckCode = recheckCode .. "    recheckTime = nextTime\n";
       recheckCode = recheckCode .. "  end\n"
@@ -479,7 +411,17 @@ local function CreateActivateCondition(ret, id, condition, conditionNumber, prop
   return ret;
 end
 
-function Private.GetSubRegionProperties(data, properties)
+function Private.GetProperties(data)
+  local properties;
+  local propertiesFunction = WeakAuras.regionTypes[data.regionType] and WeakAuras.regionTypes[data.regionType].properties;
+  if (type(propertiesFunction) == "function") then
+    properties = propertiesFunction(data);
+  elseif propertiesFunction then
+    properties = CopyTable(propertiesFunction);
+  else
+    properties = {}
+  end
+
   if data.subRegions then
     local subIndex = {}
     for index, subRegion in ipairs(data.subRegions) do
@@ -501,20 +443,7 @@ function Private.GetSubRegionProperties(data, properties)
       end
     end
   end
-end
 
-function Private.GetProperties(data)
-  local properties;
-  local propertiesFunction = WeakAuras.regionTypes[data.regionType] and WeakAuras.regionTypes[data.regionType].properties;
-  if (type(propertiesFunction) == "function") then
-    properties = propertiesFunction(data);
-  elseif propertiesFunction then
-    properties = CopyTable(propertiesFunction);
-  else
-    properties = {}
-  end
-
-  Private.GetSubRegionProperties(data, properties)
   return properties;
 end
 
@@ -533,7 +462,7 @@ function Private.LoadConditionPropertyFunctions(data)
             else
               prefix, suffix = "return function()", "\nend";
             end
-            local customFunc = WeakAuras.LoadFunction(prefix .. custom .. suffix);
+            local customFunc = WeakAuras.LoadFunction(prefix .. custom .. suffix, id, "condition");
             if (customFunc) then
               WeakAuras.customConditionsFunctions[id][conditionNumber] = WeakAuras.customConditionsFunctions[id][conditionNumber] or {};
               WeakAuras.customConditionsFunctions[id][conditionNumber].changes = WeakAuras.customConditionsFunctions[id][conditionNumber].changes or {};
@@ -577,11 +506,6 @@ local globalConditions =
     globalStateUpdate = function(state)
       state.hastarget = UnitExists("target");
     end
-  },
-  ["rangecheck"] = {
-    display = WeakAuras.newFeatureString .. L["Range Check"],
-    type = "range",
-    events = {"WA_SPELL_RANGECHECK"}
   },
   ["attackabletarget"] = {
     display = L["Attackable Target"],
@@ -631,6 +555,7 @@ local function ConstructConditionFunction(data)
   ret = ret .. "  local recheckTime;\n"
   ret = ret .. "  local now = GetTime();\n"
 
+  local normalConditionCount = data.conditions and #data.conditions;
   -- First Loop gather which conditions are active
   ret = ret .. "  if (not hideRegion) then\n"
   local recheckCode = ""
@@ -712,7 +637,7 @@ function Private.LoadConditionFunction(data)
   CancelTimers(data.uid)
 
   local checkConditionsFuncStr = ConstructConditionFunction(data);
-  local checkCondtionsFunc = checkConditionsFuncStr and WeakAuras.LoadFunction(checkConditionsFuncStr);
+  local checkCondtionsFunc = checkConditionsFuncStr and WeakAuras.LoadFunction(checkConditionsFuncStr, data.id, "condition checks");
 
   checkConditions[data.uid] = checkCondtionsFunc;
 end
@@ -770,22 +695,6 @@ local function handleDynamicConditions(self, event)
   Private.StopProfileSystem("dynamic conditions")
 end
 
-local function handleDynamicConditionsPerUnit(self, event, unit)
-  Private.StartProfileSystem("dynamic conditions")
-  if unit then
-    local unitEvent = event..":"..unit
-    if globalDynamicConditionFuncs[unitEvent] then
-      for i, func in ipairs(globalDynamicConditionFuncs[unitEvent]) do
-        func(globalConditionState);
-      end
-    end
-    if (dynamicConditions[unitEvent]) then
-      runDynamicConditionFunctions(dynamicConditions[unitEvent]);
-    end
-  end
-  Private.StopProfileSystem("dynamic conditions")
-end
-
 local lastDynamicConditionsUpdateCheck;
 local function handleDynamicConditionsOnUpdate(self)
   handleDynamicConditions(self, "FRAME_UPDATE");
@@ -809,7 +718,7 @@ local function EvaluateCheckForRegisterForGlobalConditions(uid, check, allCondit
     end
   elseif trigger == -1 and variable == "customcheck" then
     if check.op then
-      for event in string.gmatch(check.op, "[%w_:]+") do
+      for event in string.gmatch(check.op, "[%w_]+") do
         if (not dynamicConditions[event]) then
           register[event] = true;
           dynamicConditions[event] = {};
@@ -857,9 +766,8 @@ function Private.RegisterForGlobalConditions(uid)
   end
 
   if (next(register) and not dynamicConditionsFrame) then
-    dynamicConditionsFrame = CreateFrame("Frame");
+    dynamicConditionsFrame = CreateFrame("FRAME");
     dynamicConditionsFrame:SetScript("OnEvent", handleDynamicConditions);
-    dynamicConditionsFrame.units = {}
     WeakAuras.frames["Rerun Conditions Frame"] = dynamicConditionsFrame
   end
 
@@ -870,17 +778,7 @@ function Private.RegisterForGlobalConditions(uid)
         dynamicConditionsFrame.onUpdate = true;
       end
     else
-      local unitEvent, unit = event:match("([^:]+):([^:]+)")
-      if unitEvent and unit then
-        unit = unit:lower()
-        if not dynamicConditionsFrame.units[unit] then
-          dynamicConditionsFrame.units[unit] = CreateFrame("Frame");
-          dynamicConditionsFrame.units[unit]:SetScript("OnEvent", handleDynamicConditionsPerUnit);
-        end
-        pcall(dynamicConditionsFrame.units[unit].RegisterUnitEvent, dynamicConditionsFrame.units[unit], unitEvent, unit);
-      else
-        pcall(dynamicConditionsFrame.RegisterEvent, dynamicConditionsFrame, event);
-      end
+      pcall(dynamicConditionsFrame.RegisterEvent, dynamicConditionsFrame, event);
     end
   end
 end
@@ -888,25 +786,9 @@ end
 function Private.UnregisterForGlobalConditions(uid)
   for event, condFuncs in pairs(dynamicConditions) do
     condFuncs[uid] = nil;
-    if next(condFuncs) == nil then
-      local unitEvent, unit = event:match("([^:]+):([^:]+)")
-      if unitEvent and unit then
-        unit = unit:lower()
-        pcall(dynamicConditionsFrame.units[unit].UnregisterEvent, dynamicConditionsFrame.units[unit], unitEvent);
-      elseif (event == "FRAME_UPDATE" or event == "WA_SPELL_RANGECHECK") then
-        if (event == "FRAME_UPDATE" and dynamicConditions["WA_SPELL_RANGECHECK"] == nil)
-        or (event == "WA_SPELL_RANGECHECK" and dynamicConditions["FRAME_UPDATE"] == nil)
-        then
-          dynamicConditionsFrame:SetScript("OnUpdate", nil)
-          dynamicConditionsFrame.onUpdate = false
-        end
-      else
-        pcall(dynamicConditionsFrame.UnregisterEvent, dynamicConditionsFrame, event);
-      end
-      dynamicConditions[event] = nil
-    end
   end
 end
+
 
 function Private.UnloadAllConditions()
   for uid in pairs(conditionChecksTimers.recheckTime) do
@@ -920,14 +802,6 @@ function Private.UnloadAllConditions()
   wipe(conditionChecksTimers.recheckHandle)
 
   dynamicConditions = {}
-  if dynamicConditionsFrame then
-    dynamicConditionsFrame:UnregisterAllEvents()
-    for _, frame in pairs(dynamicConditionsFrame.units) do
-      frame:UnregisterAllEvents()
-    end
-    dynamicConditionsFrame:SetScript("OnUpdate", nil)
-    dynamicConditionsFrame.onUpdate = false
-  end
 end
 
 function Private.UnloadConditions(uid)

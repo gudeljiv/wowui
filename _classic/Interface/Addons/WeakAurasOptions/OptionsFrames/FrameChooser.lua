@@ -1,4 +1,4 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 local AddonName, OptionsPrivate = ...
 
 -- Lua APIs
@@ -7,6 +7,8 @@ local pairs = pairs
 -- WoW APIs
 local CreateFrame, IsMouseButtonDown, SetCursor, GetMouseFocus, MouseIsOver, ResetCursor
   = CreateFrame, IsMouseButtonDown, SetCursor, GetMouseFocus, MouseIsOver, ResetCursor
+
+local AceConfigDialog = LibStub("AceConfigDialog-3.0")
 
 local WeakAuras = WeakAuras
 local L = WeakAuras.L
@@ -19,8 +21,8 @@ local oldFocusName
 function OptionsPrivate.StartFrameChooser(data, path)
   local frame = WeakAuras.OptionsFrame();
   if not(frameChooserFrame) then
-    frameChooserFrame = CreateFrame("Frame");
-    frameChooserBox = CreateFrame("Frame", nil, frameChooserFrame, "BackdropTemplate");
+    frameChooserFrame = CreateFrame("frame");
+    frameChooserBox = CreateFrame("frame", nil, frameChooserFrame, BackdropTemplateMixin and "BackdropTemplate");
     frameChooserBox:SetFrameStrata("TOOLTIP");
     frameChooserBox:SetBackdrop({
       edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",

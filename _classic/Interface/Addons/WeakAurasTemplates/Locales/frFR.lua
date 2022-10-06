@@ -1,6 +1,6 @@
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 
-if GetLocale() ~= "frFR" then
+if not(GetLocale() == "frFR") then
   return
 end
 
@@ -12,13 +12,14 @@ local L = WeakAuras.L
 	L[">70% Mana"] = ">70% Mana"
 	L["Abilities"] = "Capacités"
 	L["Ability"] = "Aptitude"
-	L["Add Triggers"] = "Ajouter des déclencheurs"
+	L["Add Triggers"] = "Ajouter Déclencheur"
 	L["Always Active"] = "Toujours actif"
 	L["Always Show"] = "Toujours afficher"
 	L["Always show the aura, highlight it if debuffed."] = "Toujours afficher l'aura, surbrillance si absente."
 	L["Always show the aura, turns grey if on cooldown."] = "Toujours afficher l'aura, devient grise si en recharge."
 	L["Always show the aura, turns grey if the debuff not active."] = "Toujours afficher l'aura, devient gris si l'affaiblissement n'est pas actif."
-	L["Always shows highlights if enchant missing."] = "Toujours afficher des reflets si l'enchantement est absent."
+	--[[Translation missing --]]
+	L["Always shows highlights if enchant missing."] = "Always shows highlights if enchant missing."
 	L["Always shows the aura, grey if buff not active."] = "Toujours afficher l'aura, devient gris si l'amélioration n'est pas active."
 	L["Always shows the aura, highlight it if buffed."] = "Toujours afficher l'aura, surbrillance si présente."
 	L["Always shows the aura, highlight when active, turns blue on insufficient resources."] = "Toujours afficher l'aura, surbrillance si active, bleue si ressources insuffisantes."
@@ -32,7 +33,8 @@ local L = WeakAuras.L
 	L["Always shows the aura, turns grey if the ability is not usable."] = "Toujours afficher l'aura, griser si la technique n'est pas utilisable."
 	L["Always shows the aura, turns red when out of range, blue on insufficient resources."] = "Toujours afficher l'aura, rouge si hors de portée, bleue si ressources insuffisantes."
 	L["Always shows the aura, turns red when out of range."] = "Toujours afficher l'aura, rouge si hors de portée."
-	L["Always shows the aura."] = "Toujours afficher l'aura."
+	--[[Translation missing --]]
+	L["Always shows the aura."] = "Always shows the aura."
 	L["Back"] = "Retour"
 	L["Basic Show On Cooldown"] = "Affichage de base en temps de recharge"
 	--[[Translation missing --]]
@@ -84,7 +86,8 @@ local L = WeakAuras.L
 	L["Keeps existing triggers intact"] = "Garder intact les déclencheurs existants"
 	--[[Translation missing --]]
 	L["Legendaries"] = "Legendaries"
-	L["Meteor Ready"] = "Prêt pour le météore"
+	--[[Translation missing --]]
+	L["Meteor Ready"] = "Meteor Ready"
 	--[[Translation missing --]]
 	L["Nature"] = "Nature"
 	L["Next"] = "Suivant"
@@ -97,7 +100,7 @@ local L = WeakAuras.L
 	L["Only shows the aura when the ability is ready to use."] = "Afficher uniquement l'aura quand la technique est prête à être utilisée."
 	L["Other cooldown"] = "Autre temps de recharge"
 	L["Pet alive"] = "Familier vivant"
-	L["Pet Behavior"] = "Comportement du familier"
+	L["Pet Behavior"] = "Comportement du Familier"
 	--[[Translation missing --]]
 	L["Preparation"] = "Preparation"
 	L["PvP Talents"] = "Talents JcJ"

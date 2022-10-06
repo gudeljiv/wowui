@@ -1,15 +1,15 @@
 --[[-----------------------------------------------------------------------------
 Button Widget for our Expand button
 -------------------------------------------------------------------------------]]
-if not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsCorrectVersion() then return end
 
-local Type, Version = "WeakAurasExpand", 4
+local Type, Version = "WeakAurasExpand", 2
 
 local AceGUI = LibStub and LibStub("AceGUI-3.0", true)
 if not AceGUI or (AceGUI:GetWidgetVersion(Type) or 0) >= Version then return end
 
 -- Lua APIs
-local select, pairs = select, pairs
+local select, pairs, print = select, pairs, print
 
 -- WoW APIs
 local CreateFrame, UIParent = CreateFrame, UIParent
@@ -92,11 +92,7 @@ local methods = {
 			self.label:SetTextColor(1, 1, 1)
 			self.image:SetVertexColor(1, 1, 1, 1)
 		end
-	end,
-
-  ["SetFontObject"] = function(self, fontObject)
-    self.label:SetFontObject(fontObject)
-  end
+	end
 }
 
 --[[-----------------------------------------------------------------------------

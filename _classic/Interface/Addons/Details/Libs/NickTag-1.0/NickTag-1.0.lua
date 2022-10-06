@@ -2,15 +2,13 @@
 
 --> Basic Functions:
 -- NickTag:SetNickname (name) -> set the player nick name, after set nicktag will broadcast the nick over addon guild channel.
---
+-- 
 
--- 14: added support for chinese and russian
-
-local major, minor = "NickTag-1.0", 15
+local major, minor = "NickTag-1.0", 11
 local NickTag, oldminor = LibStub:NewLibrary (major, minor)
 
-if (not NickTag) then
-	return
+if (not NickTag) then 
+	return 
 end
 
 --> fix for old nicktag version
@@ -44,10 +42,6 @@ end
 	_G.NickTag = NickTag --> nicktag object over global container
 
 	local pool = {default = true} --> pointer to the cache pool and the default pool if no cache
-	local siblingsPools = {} --> pools registered by other addons
-	--when this instance was the first to load
-	local isMaster = false
-
 	NickTag.debug = false
 
 	LibStub:GetLibrary ("AceComm-3.0"):Embed (NickTag)
@@ -238,65 +232,68 @@ end
 					storedPersona = NickTag:Create (source)
 				end
 				
-				storedPersona [CONST_INDEX_REVISION] = receivedPersona [CONST_INDEX_REVISION]
-				
-				--> we need to check if the received nickname fit in our rules.
-				local allowNickName = NickTag:CheckName (receivedPersona [CONST_INDEX_NICKNAME])
-				if (allowNickName) then
+				--what's the point of the revision if there's no more revision checks? -- feels deprecated
+				--will leave this as a comment for now, might remove in the future
+				--if (storedPersona [CONST_INDEX_REVISION] < receivedPersona [CONST_INDEX_REVISION]) then
+					storedPersona [CONST_INDEX_REVISION] = receivedPersona [CONST_INDEX_REVISION]
+					
+					--> we need to check if the received nickname fit in our rules.
+					local allowNickName = NickTag:CheckName (receivedPersona [CONST_INDEX_NICKNAME])
+					if (allowNickName) then
+						storedPersona [CONST_INDEX_NICKNAME] = receivedPersona [CONST_INDEX_NICKNAME]
+					else
+						storedPersona [CONST_INDEX_NICKNAME] = LibStub ("AceLocale-3.0"):GetLocale ("NickTag-1.0")["STRING_INVALID_NAME"]
+					end
+					
 					storedPersona [CONST_INDEX_NICKNAME] = receivedPersona [CONST_INDEX_NICKNAME]
-				else
-					storedPersona [CONST_INDEX_NICKNAME] = LibStub ("AceLocale-3.0"):GetLocale ("NickTag-1.0")["STRING_INVALID_NAME"]
-				end
-				
-				storedPersona [CONST_INDEX_NICKNAME] = receivedPersona [CONST_INDEX_NICKNAME]
-				
-				--> update the rest
-				--avatar path
-				storedPersona [CONST_INDEX_AVATAR_PATH] = type (receivedPersona [CONST_INDEX_AVATAR_PATH]) == "string" and receivedPersona [CONST_INDEX_AVATAR_PATH] or ""
-				
-				--avatar texcoord
-				if (type (receivedPersona [CONST_INDEX_AVATAR_TEXCOORD]) == "boolean") then
-					storedPersona [CONST_INDEX_AVATAR_TEXCOORD] = {0, 1, 0, 1}
 					
-				elseif (type (receivedPersona [CONST_INDEX_AVATAR_TEXCOORD]) == "table") then
-					storedPersona [CONST_INDEX_AVATAR_TEXCOORD] = storedPersona [CONST_INDEX_AVATAR_TEXCOORD] or {}
-					storedPersona [CONST_INDEX_AVATAR_TEXCOORD][1] = type (receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][1]) == "number" and receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][1] or 0
-					storedPersona [CONST_INDEX_AVATAR_TEXCOORD][2] = type (receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][2]) == "number" and receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][2] or 1
-					storedPersona [CONST_INDEX_AVATAR_TEXCOORD][3] = type (receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][3]) == "number" and receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][3] or 0
-					storedPersona [CONST_INDEX_AVATAR_TEXCOORD][4] = type (receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][4]) == "number" and receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][4] or 1
-				else
-					storedPersona [CONST_INDEX_AVATAR_TEXCOORD] = {0, 1, 0, 1}
-				end
-				
-				--background texcoord
-				if (type (receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD]) == "boolean") then
-					storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD] = {0, 1, 0, 1}
+					--> update the rest
+					--avatar path
+					storedPersona [CONST_INDEX_AVATAR_PATH] = type (receivedPersona [CONST_INDEX_AVATAR_PATH]) == "string" and receivedPersona [CONST_INDEX_AVATAR_PATH] or ""
 					
-				elseif (type (receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD]) == "table") then
-					storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD] = storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD] or {}
-					storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][1] = type (receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][1]) == "number" and receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][1] or 0
-					storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][2] = type (receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][2]) == "number" and receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][2] or 1
-					storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][3] = type (receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][3]) == "number" and receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][3] or 0
-					storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][4] = type (receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][4]) == "number" and receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][4] or 1
-				else
-					storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD] = {0, 1, 0, 1}
-				end						
-				
-				--background path
-				storedPersona [CONST_INDEX_BACKGROUND_PATH] = type (receivedPersona [CONST_INDEX_BACKGROUND_PATH]) == "string" and receivedPersona [CONST_INDEX_BACKGROUND_PATH] or ""
-				
-				--background color
-				if (type (receivedPersona [CONST_INDEX_BACKGROUND_COLOR]) == "table") then
-					storedPersona [CONST_INDEX_BACKGROUND_COLOR] = storedPersona [CONST_INDEX_BACKGROUND_COLOR] or {}
-					storedPersona [CONST_INDEX_BACKGROUND_COLOR][1] = type (receivedPersona [CONST_INDEX_BACKGROUND_COLOR][1]) == "number" and receivedPersona [CONST_INDEX_BACKGROUND_COLOR][1] or 1
-					storedPersona [CONST_INDEX_BACKGROUND_COLOR][2] = type (receivedPersona [CONST_INDEX_BACKGROUND_COLOR][2]) == "number" and receivedPersona [CONST_INDEX_BACKGROUND_COLOR][2] or 1
-					storedPersona [CONST_INDEX_BACKGROUND_COLOR][3] = type (receivedPersona [CONST_INDEX_BACKGROUND_COLOR][3]) == "number" and receivedPersona [CONST_INDEX_BACKGROUND_COLOR][3] or 1
-				else
-					storedPersona [CONST_INDEX_BACKGROUND_COLOR] = {1, 1, 1}
-				end
-				
-				NickTag:SyncSiblings()
-				NickTag:Msg ("FULLPERSONA received and updated for character: ", source, "new nickname: ", receivedPersona [CONST_INDEX_NICKNAME])
+					--avatar texcoord
+					if (type (receivedPersona [CONST_INDEX_AVATAR_TEXCOORD]) == "boolean") then
+						storedPersona [CONST_INDEX_AVATAR_TEXCOORD] = {0, 1, 0, 1}
+						
+					elseif (type (receivedPersona [CONST_INDEX_AVATAR_TEXCOORD]) == "table") then
+						storedPersona [CONST_INDEX_AVATAR_TEXCOORD] = storedPersona [CONST_INDEX_AVATAR_TEXCOORD] or {}
+						storedPersona [CONST_INDEX_AVATAR_TEXCOORD][1] = type (receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][1]) == "number" and receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][1] or 0
+						storedPersona [CONST_INDEX_AVATAR_TEXCOORD][2] = type (receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][2]) == "number" and receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][2] or 1
+						storedPersona [CONST_INDEX_AVATAR_TEXCOORD][3] = type (receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][3]) == "number" and receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][3] or 0
+						storedPersona [CONST_INDEX_AVATAR_TEXCOORD][4] = type (receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][4]) == "number" and receivedPersona [CONST_INDEX_AVATAR_TEXCOORD][4] or 1
+					else
+						storedPersona [CONST_INDEX_AVATAR_TEXCOORD] = {0, 1, 0, 1}
+					end
+					
+					--background texcoord
+					if (type (receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD]) == "boolean") then
+						storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD] = {0, 1, 0, 1}
+						
+					elseif (type (receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD]) == "table") then
+						storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD] = storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD] or {}
+						storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][1] = type (receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][1]) == "number" and receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][1] or 0
+						storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][2] = type (receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][2]) == "number" and receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][2] or 1
+						storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][3] = type (receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][3]) == "number" and receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][3] or 0
+						storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][4] = type (receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][4]) == "number" and receivedPersona [CONST_INDEX_BACKGROUND_TEXCOORD][4] or 1
+					else
+						storedPersona [CONST_INDEX_BACKGROUND_TEXCOORD] = {0, 1, 0, 1}
+					end						
+					
+					--background path
+					storedPersona [CONST_INDEX_BACKGROUND_PATH] = type (receivedPersona [CONST_INDEX_BACKGROUND_PATH]) == "string" and receivedPersona [CONST_INDEX_BACKGROUND_PATH] or ""
+					
+					--background color
+					if (type (receivedPersona [CONST_INDEX_BACKGROUND_COLOR]) == "table") then
+						storedPersona [CONST_INDEX_BACKGROUND_COLOR] = storedPersona [CONST_INDEX_BACKGROUND_COLOR] or {}
+						storedPersona [CONST_INDEX_BACKGROUND_COLOR][1] = type (receivedPersona [CONST_INDEX_BACKGROUND_COLOR][1]) == "number" and receivedPersona [CONST_INDEX_BACKGROUND_COLOR][1] or 1
+						storedPersona [CONST_INDEX_BACKGROUND_COLOR][2] = type (receivedPersona [CONST_INDEX_BACKGROUND_COLOR][2]) == "number" and receivedPersona [CONST_INDEX_BACKGROUND_COLOR][2] or 1
+						storedPersona [CONST_INDEX_BACKGROUND_COLOR][3] = type (receivedPersona [CONST_INDEX_BACKGROUND_COLOR][3]) == "number" and receivedPersona [CONST_INDEX_BACKGROUND_COLOR][3] or 1
+					else
+						storedPersona [CONST_INDEX_BACKGROUND_COLOR] = {1, 1, 1}
+					end
+					
+					NickTag:Msg ("FULLPERSONA received and updated for character: ", source, "new nickname: ", receivedPersona [CONST_INDEX_NICKNAME])
+				--end
 			end
 
 		end
@@ -352,9 +349,6 @@ end
 
 		--> broadcast over guild channel
 		if (IsInGuild()) then
-			if (isMaster) then
-				NickTag:SyncSiblings()
-			end
 			NickTag:SendCommMessage ("NickTag", NickTag:Serialize (CONST_COMM_FULLPERSONA, 0, NickTag:GetNicknameTable (UnitName ("player")), minor), "GUILD")
 		end
 
@@ -409,24 +403,12 @@ end
 		end
 	end
 	
-	--register a table where data can be saved
 	function NickTag:NickTagSetCache (_table)
 		if (not pool.default) then
-			--already have a place to save
-			--save the new table as sibling
-			--so all addons using nicktag can have the data synchronized
-			siblingsPools [#siblingsPools + 1] = _table
-
-			--copy all players into the sibling table
-			for key, value in pairs (pool) do
-				_table [key] = value
-			end
-
-			return 
+			return table.wipe (_table)
 		end
 		
 		pool = _table
-		isMaster = true --> this instance of nicktag will save data
 		
 		if (not pool.nextreset) then
 			pool.nextreset = time() + (60*60*24*15)
@@ -442,40 +424,11 @@ end
 		end
 	end
 
-	function NickTag:SyncSiblings()
-		--copy all data into siblings table
-		for _, syblingTable in ipairs (siblingsPools) do
-			for key, value in pairs (pool) do
-				syblingTable [key] = value
-			end
-		end
-	end
-
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 --> basic functions
 
-	local cyrillic = "АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯЁЂЃЄЅІЇЈЉЊЋЌЎЏҐабвгдежзийклмнопрстуфхцчшщъыьэюяёђѓєѕіїјљњћќўџґАаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя"
-	local latin = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	local chinese = "ｦｧｨｩｪｫｬｭｮｯｰｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝﾞﾟﾡﾢﾣﾤﾥﾦﾧﾨﾩﾪﾫﾬﾭﾮﾯﾰﾱﾲﾳﾴﾵﾶﾷﾸﾹﾺﾻﾼﾽﾾￂￃￄￅￆￇￊￋￌￍￎￏￒￓￔￕￖￗￚￛￜ"
-
-	local alphabet = {
-		["cyrillic"] = {},
-		["latin"] = {},
-		["chinese"] = {},
-	}
-
-	for letter in cyrillic:gmatch(".") do
-		alphabet["cyrillic"][letter] = true
-	end
-	for letter in latin:gmatch(".") do
-		alphabet["latin"][letter] = true
-	end
-	for letter in chinese:gmatch(".") do
-		alphabet["chinese"][letter] = true
-	end
-
 	--> trim from from http://lua-users.org/wiki/StringTrim
-	local function trim (s)
+	function trim (s)
 		local from = s:match"^%s*()"
 		return from > #s and "" or s:match(".*%S", from)
 	end
@@ -486,7 +439,7 @@ end
 	--
 	local have_repeated = false
 	local count_spaces = 0
-	local check_repeated = function (char)
+	local check_repeated = function (char) 
 		if (char == "  ") then
 			have_repeated = true
 		elseif (string.len (char) > 2) then
@@ -496,70 +449,39 @@ end
 		end
 	end
 
+	
 	--> we need to keep game smooth checking and formating nicknames.
 	--> SetNickname and names comming from other player need to be check.
 	function NickTag:CheckName (name)
+		
 		--> as nicktag only work internally in the guild, we think that is not necessary a work filter to avoid people using bad language.
-
+		
 		if (type (name) ~= "string") then
 			return false, LibStub ("AceLocale-3.0"):GetLocale ("NickTag-1.0")["STRING_ERROR_4"] --> error 4 = name isn't a valid string
 		end
-
+		
 		name = trim (name)
-
-		--which alphabet to use
-		local alphabetToUse = "latin"
-		local firstLetter = name:match("^.")
-		local maxLength = 14
-
-		if (alphabet["cyrillic"][firstLetter]) then
-			--reserve cyrillic only to clients running ruRU
-			if (GetLocale() == "ruRU") then
-				alphabetToUse = "cyrillic"
-				maxLength = 28 --cyrillic uses two bytes
-			else
-				alphabetToUse = "latin"
-			end
-
-		elseif (alphabet["chinese"][firstLetter]) then
-			if (GetLocale() == "zhCN" or GetLocale() == "zhTW") then
-				alphabetToUse = "chinese"
-				maxLength = 56 --chinese uses 4 bytes
-			else
-				alphabetToUse = "latin"
-			end
-		end
-
+		
 		--> limit nickname to 12 characters, same as wow.
-		--cyrillic seems to double the len using 2 bytes
 		local len = string.len (name)
-		if (len > maxLength) then
+		if (len > 12) then
 			return false, LibStub ("AceLocale-3.0"):GetLocale ("NickTag-1.0")["STRING_ERROR_1"] --> error 1 = nickname is too long, max of 12 characters.
 		end
-
+		
 		--> check if contain any non allowed characters, by now only accpet letters, numbers and spaces.
 		--> by default wow do not accetp spaces, but here will allow.
 		--> tested over lua 5.2 and this capture was okey with accents, not sure why inside wow this doesn't work.
-		
---		local notallow = string.find (name, "[^a-zA-Z�������%s]")
---		if (notallow) then
---			return false, LibStub ("AceLocale-3.0"):GetLocale ("NickTag-1.0")["STRING_ERROR_2"] --> error 2 = nickname only support letters, numbers and spaces.
---		end
-		
-		--[=[
-		for letter in name:gmatch(".") do
-			if (not allowedLetters[letter]) then
-				return false, LibStub ("AceLocale-3.0"):GetLocale ("NickTag-1.0")["STRING_ERROR_2"] --> error 2 = nickname only support letters, numbers and spaces.
-			end
+		local notallow = string.find (name, "[^a-zA-Z�������%s]")
+		if (notallow) then
+			return false, LibStub ("AceLocale-3.0"):GetLocale ("NickTag-1.0")["STRING_ERROR_2"] --> error 2 = nickname only support letters, numbers and spaces.
 		end
-		--]=]
 		
 		--> check if there is sequencial repeated characters, like "Jasooon" were repeats 3 times the "o" character.
 		--> got this from http://stackoverflow.com/questions/15608299/lua-pattern-matching-repeating-character
 		have_repeated = false
 		count_spaces = 0
 		string.gsub (name, '.', '\0%0%0'):gsub ('(.)%z%1','%1'):gsub ('%z.([^%z]+)', check_repeated)
-		if (count_spaces > 3) then
+		if (count_spaces > 2) then
 			have_repeated = true
 		end
 		if (have_repeated) then
@@ -828,7 +750,7 @@ end
 	
 	--> choose avatar window
 do
-	local avatar_pick_frame = CreateFrame ("frame", "AvatarPickFrame", UIParent,"BackdropTemplate")
+	local avatar_pick_frame = CreateFrame ("frame", "AvatarPickFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 	avatar_pick_frame:SetFrameStrata ("DIALOG")
 	avatar_pick_frame:SetBackdrop ({bgFile = [[Interface\FrameGeneral\UI-Background-Marble]], edgeFile = [[Interface\DialogFrame\UI-DialogBox-Border]], tile = true, tileSize = 256, edgeSize = 32,	insets = {left = 11, right = 12, top = 12, bottom = 11}})
 	avatar_pick_frame:SetBackdropColor (.3, .3, .3, .9)
@@ -880,7 +802,7 @@ do
 		avatar_pick_frame.selected_color[3] = b
 	end
 	
-	local okey = CreateFrame ("button", "AvatarPickFrameAccept", avatar_pick_frame)
+	local okey = CreateFrame ("button", "AvatarPickFrameAccept", avatar_pick_frame, "OptionsButtonTemplate")
 	okey:SetPoint ("bottomright", avatar_pick_frame, "bottomright", -37, 12)
 	okey:SetText ("Accept")
 	okey:SetFrameLevel (avatar_pick_frame:GetFrameLevel()+2)
@@ -890,7 +812,7 @@ do
 			avatar_pick_frame.callback (avatar_pick_frame.selected_avatar, {0, 1, 0, 1}, avatar_pick_frame.selected_background, avatar_pick_frame.selected_texcoord, avatar_pick_frame.selected_color)
 		end
 	end)
-	local change_color = CreateFrame ("button", "AvatarPickFrameColor", avatar_pick_frame)
+	local change_color = CreateFrame ("button", "AvatarPickFrameColor", avatar_pick_frame, "OptionsButtonTemplate")
 	change_color:SetPoint ("bottomright", avatar_pick_frame, "bottomright", -205, 12)
 	change_color:SetText ("Color")
 	change_color:SetFrameLevel (avatar_pick_frame:GetFrameLevel()+2)
@@ -907,7 +829,7 @@ do
 	
 	local buttons = {}
 	for i = 0, 2 do 
-		local newbutton = CreateFrame ("button", "AvatarPickFrameAvatarScrollButton"..i+1, avatar_pick_frame)
+		local newbutton = CreateFrame ("button", "AvatarPickFrameAvatarScrollButton"..i+1, avatar_pick_frame, BackdropTemplateMixin and "BackdropTemplate")
 		newbutton:SetScript ("OnClick", OnClickFunction)
 		newbutton:SetWidth (128)
 		newbutton:SetHeight (64)
@@ -919,7 +841,7 @@ do
 	
 	local buttonsbg = {}
 	for i = 0, 2 do 
-		local newbutton = CreateFrame ("button", "AvatarPickFrameBackgroundScrollButton"..i+1, avatar_pick_frame)
+		local newbutton = CreateFrame ("button", "AvatarPickFrameBackgroundScrollButton"..i+1, avatar_pick_frame, BackdropTemplateMixin and "BackdropTemplate")
 		newbutton:SetScript ("OnClick", OnClickFunction)
 		newbutton:SetWidth (275)
 		newbutton:SetHeight (60)
@@ -929,10 +851,9 @@ do
 		buttonsbg [#buttonsbg+1] = newbutton
 	end
 	
-	--[=[
-	local avatar_list = CreateFrame ("ScrollFrame", "AvatarPickFrameAvatarScroll", avatar_pick_frame, "ListScrollFrameTemplate")
+	local avatar_list = CreateFrame ("ScrollFrame", "AvatarPickFrameAvatarScroll", avatar_pick_frame, "ListScrollFrameTemplate, BackdropTemplate")
 	avatar_list:SetPoint ("topleft", avatar_pick_frame, "topleft", 10, -10)
-	local background_list = CreateFrame ("ScrollFrame", "AvatarPickFrameBackgroundScroll", avatar_pick_frame, "ListScrollFrameTemplate")
+	local background_list = CreateFrame ("ScrollFrame", "AvatarPickFrameBackgroundScroll", avatar_pick_frame, "ListScrollFrameTemplate, BackdropTemplate")
 	background_list:SetPoint ("topleft", avatar_pick_frame, "topleft", 147, -85)
 
 	avatar_list:SetWidth (128)
@@ -1093,7 +1014,6 @@ do
 			
 		end
 	end)
-	--]=]
 	
 	avatar_pick_frame:Hide()
 end
