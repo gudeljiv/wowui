@@ -1,0 +1,390 @@
+
+ElvDB = {
+	["profileKeys"] = {
+		["Pitchwise - Dreadnaught"] = "RedtuzkUI",
+	},
+	["gold"] = {
+		["Dreadnaught"] = {
+			["Pitchwise"] = 70411,
+		},
+	},
+	["global"] = {
+		["nameplates"] = {
+			["filters"] = {
+				["ElvUI_NonTarget"] = {
+				},
+				["ElvUI_Target"] = {
+				},
+				["ElvUI_Boss"] = {
+				},
+			},
+		},
+		["|cffeb5252Redtuzk|r|cffffffffUI|r Classic"] = {
+			["profile_name"] = "RedtuzkUI",
+		},
+	},
+	["DisabledAddOns"] = {
+	},
+	["serverID"] = {
+		[5239] = {
+			["Dreadnaught"] = true,
+		},
+	},
+	["class"] = {
+		["Dreadnaught"] = {
+			["Pitchwise"] = "WARRIOR",
+		},
+	},
+	["faction"] = {
+		["Dreadnaught"] = {
+			["Pitchwise"] = "Horde",
+		},
+	},
+	["profiles"] = {
+		["Default"] = {
+			["general"] = {
+				["bordercolor"] = {
+					["a"] = 1,
+				},
+				["minimap"] = {
+					["locationFont"] = "Arial Narrow",
+				},
+				["backdropcolor"] = {
+					["a"] = 1,
+				},
+				["font"] = "Arial Narrow",
+			},
+			["bags"] = {
+				["itemLevelFont"] = "Arial Narrow",
+				["itemLevelFontSize"] = 12,
+				["countFontSize"] = 12,
+				["countFont"] = "Arial Narrow",
+			},
+			["chat"] = {
+				["font"] = "Arial Narrow",
+				["panelSnapLeftID"] = 1,
+				["fontSize"] = 12,
+				["tabFont"] = "Arial Narrow",
+			},
+			["dbConverted"] = 12.91,
+			["convertPages"] = true,
+			["tooltip"] = {
+				["headerFontSize"] = 12,
+				["healthBar"] = {
+					["font"] = "Arial Narrow",
+				},
+				["font"] = "Arial Narrow",
+				["fontSize"] = 12,
+				["headerFont"] = "Arial Narrow",
+			},
+			["unitframe"] = {
+				["fontSize"] = 14,
+				["font"] = "Arial Narrow",
+				["units"] = {
+					["party"] = {
+						["targetsGroup"] = {
+							["disableMouseoverGlow"] = false,
+							["disableFocusGlow"] = false,
+							["disableTargetGlow"] = false,
+						},
+						["rdebuffs"] = {
+							["font"] = "Arial Narrow",
+						},
+						["petsGroup"] = {
+							["disableTargetGlow"] = false,
+							["disableMouseoverGlow"] = false,
+							["disableFocusGlow"] = false,
+						},
+					},
+					["raid2"] = {
+						["rdebuffs"] = {
+							["font"] = "Arial Narrow",
+						},
+					},
+					["raid1"] = {
+						["rdebuffs"] = {
+							["font"] = "Arial Narrow",
+						},
+					},
+					["raid3"] = {
+						["rdebuffs"] = {
+							["font"] = "Arial Narrow",
+						},
+					},
+				},
+				["statusbar"] = "Melli",
+				["colors"] = {
+					["healthclass"] = true,
+				},
+				["smoothbars"] = true,
+			},
+			["datatexts"] = {
+				["font"] = "Arial Narrow",
+			},
+			["actionbar"] = {
+				["font"] = "Arial Narrow",
+				["bar6"] = {
+					["enabled"] = true,
+					["buttons"] = 6,
+					["buttonsPerRow"] = 6,
+				},
+				["microbar"] = {
+					["buttons"] = 8,
+				},
+				["bar5"] = {
+					["enabled"] = false,
+					["buttons"] = 12,
+					["buttonsPerRow"] = 12,
+				},
+			},
+			["nameplates"] = {
+				["statusbar"] = "Melli",
+				["font"] = "Arial Narrow",
+			},
+			["auras"] = {
+				["debuffs"] = {
+					["countFontSize"] = 12,
+					["countFont"] = "Arial Narrow",
+					["timeFontSize"] = 12,
+					["timeFont"] = "Arial Narrow",
+				},
+				["countXOffset"] = -10,
+				["buffs"] = {
+					["countFontSize"] = 12,
+					["countFont"] = "Arial Narrow",
+					["timeFontSize"] = 12,
+					["timeFont"] = "Arial Narrow",
+				},
+				["countYOffset"] = 11,
+			},
+		},
+		["RedtuzkUI"] = {
+			["|cffeb5252Redtuzk|r|cffffffffUI|r Classic"] = {
+				["install_version"] = "1.3.1",
+				["TargetAuras"] = "Both",
+			},
+			["dbConverted"] = 12.91,
+			["sle"] = {
+				["raidmarkers"] = {
+				},
+				["backgrounds"] = {
+					["bg2"] = {
+					},
+					["bg1"] = {
+					},
+				},
+				["bags"] = {
+					["artifactPower"] = {
+						["fonts"] = {
+						},
+					},
+				},
+				["media"] = {
+					["fonts"] = {
+						["gossip"] = {
+						},
+						["zone"] = {
+						},
+						["subzone"] = {
+						},
+						["pvp"] = {
+						},
+						["objectiveHeader"] = {
+						},
+						["mail"] = {
+						},
+						["editbox"] = {
+						},
+						["objective"] = {
+						},
+						["questFontSuperHuge"] = {
+						},
+					},
+				},
+				["dt"] = {
+					["friends"] = {
+					},
+				},
+				["Armory"] = {
+					["Inspect"] = {
+					},
+					["Character"] = {
+						["Artifact"] = {
+						},
+						["Stats"] = {
+							["AverageColor"] = {
+							},
+							["ItemLevel"] = {
+							},
+							["List"] = {
+							},
+						},
+						["Gem"] = {
+						},
+						["Enchant"] = {
+						},
+						["Gradation"] = {
+							["Color"] = {
+							},
+						},
+						["Level"] = {
+						},
+						["Backdrop"] = {
+						},
+						["Durability"] = {
+						},
+					},
+				},
+				["unitframes"] = {
+					["unit"] = {
+					},
+				},
+				["minimap"] = {
+					["instance"] = {
+					},
+				},
+				["datatexts"] = {
+					["panel1"] = {
+					},
+					["panel2"] = {
+					},
+				},
+				["chat"] = {
+					["tab"] = {
+						["color"] = {
+						},
+					},
+				},
+				["loot"] = {
+					["looticons"] = {
+						["channels"] = {
+						},
+					},
+					["autoroll"] = {
+					},
+				},
+				["tooltip"] = {
+					["RaidProg"] = {
+						["raids"] = {
+						},
+					},
+				},
+				["skins"] = {
+					["merchant"] = {
+						["list"] = {
+						},
+					},
+					["objectiveTracker"] = {
+						["underlineColor"] = {
+						},
+						["colorHeader"] = {
+						},
+					},
+				},
+				["shadows"] = {
+				},
+				["raidmanager"] = {
+				},
+				["uibuttons"] = {
+				},
+			},
+			["unitframe"] = {
+				["units"] = {
+					["party"] = {
+						["targetsGroup"] = {
+							["disableFocusGlow"] = false,
+							["disableTargetGlow"] = false,
+							["disableMouseoverGlow"] = false,
+						},
+						["customTexts"] = {
+							["Health Text"] = {
+							},
+							["!Level"] = {
+							},
+							["!Name"] = {
+							},
+						},
+						["petsGroup"] = {
+							["disableFocusGlow"] = false,
+							["disableTargetGlow"] = false,
+							["disableMouseoverGlow"] = false,
+						},
+					},
+					["player"] = {
+						["customTexts"] = {
+							["!Power"] = {
+							},
+							["Health2"] = {
+							},
+							["!Name"] = {
+							},
+							["!Percent"] = {
+							},
+						},
+					},
+					["target"] = {
+						["debuffs"] = {
+							["sizeOverride"] = 33,
+							["yOffset"] = 13,
+							["anchorPoint"] = "TOPLEFT",
+							["sortDirection"] = "ASCENDING",
+							["fontSize"] = 16,
+							["attachTo"] = "FRAME",
+							["perrow"] = 7,
+						},
+						["buffs"] = {
+							["sizeOverride"] = 33,
+							["yOffset"] = -34,
+							["anchorPoint"] = "RIGHT",
+							["fontSize"] = 16,
+							["xOffset"] = -240,
+							["perrow"] = 7,
+						},
+					},
+				},
+			},
+			["datatexts"] = {
+				["panels"] = {
+					["SLE_DataPanel_1"] = {
+					},
+					["SLE_DataPanel_2"] = {
+					},
+				},
+			},
+			["actionbar"] = {
+				["bar6"] = {
+					["enabled"] = true,
+					["buttonsPerRow"] = 6,
+					["buttons"] = 6,
+				},
+				["microbar"] = {
+					["buttons"] = 8,
+				},
+				["bar5"] = {
+					["enabled"] = false,
+					["buttonsPerRow"] = 12,
+					["buttons"] = 12,
+				},
+			},
+			["convertPages"] = true,
+		},
+	},
+}
+ElvPrivateDB = {
+	["profileKeys"] = {
+		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+	},
+	["profiles"] = {
+		["Pitchwise - Dreadnaught"] = {
+			["general"] = {
+				["normTex"] = "Melli",
+				["dmgfont"] = "Arial Narrow",
+				["nameplateFont"] = "Arial Narrow",
+				["namefont"] = "Arial Narrow",
+				["nameplateLargeFont"] = "Arial Narrow",
+				["glossTex"] = "Melli",
+			},
+			["install_complete"] = 12.91,
+		},
+	},
+}

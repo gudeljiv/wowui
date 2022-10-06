@@ -48,12 +48,12 @@
 		button.__name = pluginname
 		
 		--> blizzard built-in animation
-		local FourCornerAnimeFrame = CreateFrame ("frame", framename.."Blink", button)
-		FourCornerAnimeFrame:SetPoint ("center", button)
-		FourCornerAnimeFrame:SetWidth (w or 14)
-		FourCornerAnimeFrame:SetHeight (w or 14)
+		--local FourCornerAnimeFrame = CreateFrame ("frame", framename.."Blink", button) --, "IconIntroAnimTemplate" --stop using 'IconIntroAnimTemplate' as older versions of the game doesn't have it
+		--FourCornerAnimeFrame:SetPoint ("center", button)
+		--FourCornerAnimeFrame:SetWidth (w or 14)
+		--FourCornerAnimeFrame:SetHeight (w or 14)
 		--FourCornerAnimeFrame.glow:SetScript ("OnFinished", nil)
-		button.blink = function()end
+		--button.blink = FourCornerAnimeFrame
 		
 		_detalhes.ToolBar.AllButtons [#_detalhes.ToolBar.AllButtons+1] = button
 		
@@ -97,12 +97,12 @@
 		if (Effect) then
 			if (type (Effect) == "string") then
 				if (Effect == "blink") then
-					Button.blink.glow:Play()
+					--Button.blink.glow:Play() --.blink and .glow doesn't exists anymore due to removal of the template 'IconIntroAnimTemplate'
 				elseif (Effect == "star") then
-					Button.StarAnim:Play()
+					--Button.StarAnim:Play()
 				end
 			elseif (Effect) then
-				Button.blink.glow:Play()
+				--Button.blink.glow:Play()
 			end
 		end
 		
@@ -132,7 +132,7 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> internal functions
 do
-	local PluginDescPanel = CreateFrame ("frame", "DetailsPluginDescPanel", UIParent, BackdropTemplateMixin and "BackdropTemplate")
+	local PluginDescPanel = CreateFrame ("frame", "DetailsPluginDescPanel", UIParent)
 	PluginDescPanel:SetFrameStrata ("tooltip")
 	PluginDescPanel:Hide()
 	PluginDescPanel:SetWidth (205)
