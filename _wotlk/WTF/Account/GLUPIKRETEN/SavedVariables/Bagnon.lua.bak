@@ -6,25 +6,26 @@ Bagnon_Sets = {
 	},
 	["fridgeColor"] = {
 	},
-	["inscribeColor"] = {
-	},
+	["displayBank"] = false,
 	["engineerColor"] = {
 	},
-	["displayCraft"] = false,
+	["glowPoor"] = false,
 	["herbColor"] = {
+	},
+	["enchantColor"] = {
+	},
+	["displayMail"] = false,
+	["inscribeColor"] = {
 	},
 	["soulColor"] = {
 	},
-	["displayMail"] = false,
-	["glowPoor"] = false,
-	["glowUnusable"] = true,
 	["closeBank"] = false,
 	["glowQuest"] = true,
-	["normalColor"] = {
-	},
+	["glowNew"] = false,
 	["quiverColor"] = {
 	},
-	["glowQuality"] = true,
+	["profiles"] = {
+	},
 	["reagentColor"] = {
 	},
 	["gemColor"] = {
@@ -67,10 +68,10 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["sort"] = true,
+			["y"] = -293.1571044921875,
 			["bagBreak"] = false,
 			["x"] = -408.98974609375,
-			["search"] = true,
+			["sort"] = true,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -80,7 +81,7 @@ Bagnon_Sets = {
 			["broker"] = false,
 			["options"] = true,
 			["bagToggle"] = true,
-			["y"] = -293.1571044921875,
+			["search"] = true,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -185,38 +186,37 @@ Bagnon_Sets = {
 			["bagToggle"] = true,
 			["columns"] = 18,
 			["alpha"] = 1,
+			["scale"] = 1,
+			["bagBreak"] = false,
+			["x"] = -751.079833984375,
+			["search"] = true,
+			["broker"] = false,
+			["itemScale"] = 1,
+			["hiddenRules"] = {
+			},
+			["y"] = -293.3055419921875,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["bagBreak"] = false,
-			["x"] = -751.079833984375,
-			["search"] = true,
-			["broker"] = false,
-			["y"] = -293.3055419921875,
-			["hiddenRules"] = {
-			},
-			["itemScale"] = 1,
-			["scale"] = 1,
 		},
 	},
 	["glowAlpha"] = 0.5,
 	["emptySlots"] = true,
 	["keyColor"] = {
 	},
-	["displayAuction"] = false,
-	["profiles"] = {
+	["normalColor"] = {
 	},
+	["glowQuality"] = true,
 	["mineColor"] = {
 	},
 	["displayTrade"] = false,
 	["version"] = "9.2.2",
-	["glowNew"] = false,
-	["enchantColor"] = {
-	},
+	["displayAuction"] = false,
+	["glowUnusable"] = true,
 	["colorSlots"] = false,
-	["displayBank"] = false,
+	["displayCraft"] = false,
 	["displayScrapping"] = false,
 }
