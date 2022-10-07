@@ -11,6 +11,16 @@ function xGetRange(unit)
 	end
 end
 
+local t = {
+	'Beast',
+	'Dragonkin',
+	'Demon',
+	'Elemental',
+	'Giant',
+	'Undead',
+	'Humanoid'
+}
+
 -- 1 = Inspect, 28 yards
 -- 2 = Trade, 11.11 yards
 -- 3 = Duel, 9.9 yards
@@ -22,7 +32,8 @@ function AOE(range)
 
 	for i = 1, 40 do
 		-- if UnitExists('nameplate' .. i) and IsSpellInRange(skill, 'nameplate' .. i) == 1 and CheckInteractDistance('nameplate' .. i, 3) then
-		if UnitExists('nameplate' .. i) then
+		-- UnitCreatureType('nameplate' .. i) != "Not Specified"
+		if UnitExists('nameplate' .. i) and xVermin:HasValue(t, UnitCreatureType('nameplate' .. i)) then
 			if xVermin.Class == 'HUNTER' and UnitExists('pet') then
 				if IsSpellInRange('Bite', 'pet', 'nameplate' .. i) == 1 then
 					inRange = inRange + 1

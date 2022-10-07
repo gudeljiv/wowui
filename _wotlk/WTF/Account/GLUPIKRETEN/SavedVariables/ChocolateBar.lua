@@ -649,17 +649,17 @@ CB_PlayedTime = {
 		["total"] = 29335,
 	},
 	["Vermina-Golemagg"] = {
-		["total"] = 125834,
-		["timeStamp"] = 584725.791,
-		["timeAtThisLevel"] = 641,
+		["total"] = 129484,
+		["timeStamp"] = 5876.150000000001,
+		["timeAtThisLevel"] = 4291,
 	},
 	["Battlearm-"] = {
 		["total"] = 1786,
 	},
 	["Vermin-Golemagg"] = {
-		["total"] = 913141,
-		["timeStamp"] = 1267188.552,
-		["timeAtThisLevel"] = 603,
+		["total"] = 913515,
+		["timeStamp"] = 1770.216,
+		["timeAtThisLevel"] = 977,
 	},
 	["Kaonac-Jin'do"] = {
 		["total"] = 1,
@@ -682,9 +682,9 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Mxyz-Golemagg"] = {
-		["total"] = 216385,
-		["timeStamp"] = 139126.987,
-		["timeAtThisLevel"] = 210639,
+		["total"] = 216648,
+		["timeStamp"] = 2844.872,
+		["timeAtThisLevel"] = 210902,
 	},
 	["Battlearm-Jin'do"] = {
 		["total"] = 489,

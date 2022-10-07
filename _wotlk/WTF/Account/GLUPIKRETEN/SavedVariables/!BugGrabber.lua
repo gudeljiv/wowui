@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 6448,
+	["session"] = 6456,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -4162,5 +4162,13 @@ BugGrabberDB = {
 			["session"] = 6447,
 			["counter"] = 153,
 		}, -- [533]
+		{
+			["message"] = "[string \"/run print(UnitClassification(\"target\"))\"]:1: unexpected symbol near '/'",
+			["time"] = "2022/10/07 18:31:06",
+			["locals"] = "(*temporary) = \"/run print(UnitClassification(\"target\"))\"\n",
+			["stack"] = "[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2196: in function `?'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4933: in function `ChatEdit_ParseText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:4596: in function `ChatEdit_SendText'\n[string \"@Interface\\FrameXML\\ChatFrame.lua\"]:2977: in function <Interface\\FrameXML\\ChatFrame.lua:2970>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `UseAction'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:343: in function `handler'\n[string \"@Interface\\FrameXML\\SecureTemplates.lua\"]:625: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 6453,
+			["counter"] = 8,
+		}, -- [534]
 	},
 }
