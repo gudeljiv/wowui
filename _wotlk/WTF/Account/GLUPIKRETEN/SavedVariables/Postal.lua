@@ -11,7 +11,7 @@ Postal3DB = {
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [6]
 				"Mxzq|Golemagg|Horde|70|HUNTER", -- [7]
 				"Pitchwise|Ashbringer|Horde|1|SHAMAN", -- [8]
-				"Provokator|Jin'do|Horde|7|HUNTER", -- [9]
+				"Provokator|Jin'do|Horde|10|HUNTER", -- [9]
 				"Tandaram|Jin'do|Horde|1|WARRIOR", -- [10]
 				"Tudum|Jin'do|Horde|1|WARRIOR", -- [11]
 				"Vermina|Golemagg|Horde|29|PALADIN", -- [12]

@@ -11,11 +11,11 @@ Grid2Options: enabled
 Grid2RaidDebuffs: enabled
 Grid2RaidDebuffsOptions: enabled
 Grid2LDB: enabled
-Bagnon: disabled
-Bagnon_Config: disabled
-Bagnon_GuildBank: disabled
-Bagnon_VoidStorage: disabled
-BagBrother: disabled
+Bagnon: enabled
+Bagnon_Config: enabled
+Bagnon_GuildBank: enabled
+Bagnon_VoidStorage: enabled
+BagBrother: enabled
 RXPGuides: enabled
 Leatrix_Plus: enabled
 TradeSkillMaster: enabled
@@ -108,7 +108,7 @@ TrackingSwitcher: enabled
 TrinketMenu: disabled
 Blizzard_CompactRaidFrames: disabled
 Blizzard_CUFProfiles: disabled
-AuctionFaster: disabled
+AuctionFaster: enabled
 aux-addon: disabled
 D4KiR Missing Power: disabled
 TrackEverything: disabled
@@ -144,7 +144,7 @@ ErrorFilter: enabled
 ErrorMonster: disabled
 AccountWideRaidProfiles: disabled
 EnhancedRaidFrames: enabled
-WeaponSwingTimer: disabled
+WeaponSwingTimer: enabled
 EasyFrames: enabled
 BigWigs: disabled
 BigWigs_Onyxia: disabled

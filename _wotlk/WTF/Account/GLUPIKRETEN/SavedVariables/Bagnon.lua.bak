@@ -6,29 +6,42 @@ Bagnon_Sets = {
 	},
 	["fridgeColor"] = {
 	},
-	["displayBank"] = false,
+	["displayCraft"] = false,
 	["engineerColor"] = {
 	},
-	["glowPoor"] = false,
-	["herbColor"] = {
-	},
-	["enchantColor"] = {
-	},
-	["displayMail"] = false,
 	["inscribeColor"] = {
 	},
+	["herbColor"] = {
+	},
+	["glowUnusable"] = true,
+	["displayMail"] = false,
+	["displayBank"] = false,
 	["soulColor"] = {
 	},
 	["closeBank"] = false,
 	["glowQuest"] = true,
-	["glowNew"] = false,
+	["displayAuction"] = false,
 	["quiverColor"] = {
 	},
-	["profiles"] = {
-	},
+	["glowQuality"] = true,
 	["reagentColor"] = {
 	},
 	["gemColor"] = {
+	},
+	["enchantColor"] = {
+	},
+	["glowAlpha"] = 0.5,
+	["emptySlots"] = true,
+	["glowNew"] = false,
+	["normalColor"] = {
+	},
+	["profiles"] = {
+	},
+	["mineColor"] = {
+	},
+	["displayTrade"] = false,
+	["version"] = "9.2.2",
+	["keyColor"] = {
 	},
 	["global"] = {
 		["inventory"] = {
@@ -68,8 +81,8 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
+			["search"] = true,
 			["y"] = -293.1571044921875,
-			["bagBreak"] = false,
 			["x"] = -408.98974609375,
 			["sort"] = true,
 			["borderColor"] = {
@@ -81,7 +94,7 @@ Bagnon_Sets = {
 			["broker"] = false,
 			["options"] = true,
 			["bagToggle"] = true,
-			["search"] = true,
+			["bagBreak"] = false,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -186,37 +199,24 @@ Bagnon_Sets = {
 			["bagToggle"] = true,
 			["columns"] = 18,
 			["alpha"] = 1,
-			["scale"] = 1,
-			["bagBreak"] = false,
-			["x"] = -751.079833984375,
-			["search"] = true,
-			["broker"] = false,
-			["itemScale"] = 1,
-			["hiddenRules"] = {
-			},
-			["y"] = -293.3055419921875,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["bagBreak"] = false,
+			["x"] = -751.079833984375,
+			["search"] = true,
+			["broker"] = false,
+			["y"] = -293.3055419921875,
+			["hiddenRules"] = {
+			},
+			["itemScale"] = 1,
+			["scale"] = 1,
 		},
 	},
-	["glowAlpha"] = 0.5,
-	["emptySlots"] = true,
-	["keyColor"] = {
-	},
-	["normalColor"] = {
-	},
-	["glowQuality"] = true,
-	["mineColor"] = {
-	},
-	["displayTrade"] = false,
-	["version"] = "9.2.2",
-	["displayAuction"] = false,
-	["glowUnusable"] = true,
 	["colorSlots"] = false,
-	["displayCraft"] = false,
+	["glowPoor"] = false,
 	["displayScrapping"] = false,
 }

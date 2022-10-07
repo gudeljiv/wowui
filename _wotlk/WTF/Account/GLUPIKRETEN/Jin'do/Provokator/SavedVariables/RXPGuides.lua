@@ -1,12 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[78] = {
-		},
-		[79] = {
+		[95] = {
 		},
 	},
-	["currentStep"] = 79,
+	["currentStep"] = 95,
 	["phase"] = 6,
 	["currentGuideGroup"] = "Horde 1-30",
 	["flightPaths"] = {
@@ -17,21 +15,27 @@ RXPCData = {
 	["frameHeight"] = 125.000129699707,
 	["currentGuideName"] = "01-10 Durotar",
 	["stepSkip"] = {
-		[36] = true,
-		[48] = true,
-		[45] = true,
-		[14] = true,
-		[54] = true,
-		[15] = true,
-		[29] = true,
-		[16] = true,
+		[83] = true,
+		[85] = true,
 		[31] = true,
+		[16] = true,
 		[64] = true,
-		[19] = true,
 		[34] = true,
-		[3] = true,
-		[5] = true,
 		[18] = true,
+		[36] = true,
+		[5] = true,
+		[78] = true,
+		[3] = true,
+		[45] = true,
+		[48] = true,
+		[15] = true,
+		[81] = true,
+		[19] = true,
+		[54] = true,
+		[77] = true,
+		[14] = true,
+		[29] = true,
+		[94] = true,
 	},
 	["SoM"] = 1,
 	["hardcore"] = false,
@@ -426,6 +430,16 @@ RXPCComms = {
 					["timePlayed"] = 285.0370000000112,
 					["class"] = "HUNTER",
 					["xp"] = 42,
+				},
+				["Yathze"] = {
+					["timePlayed"] = 499.314000000013,
+					["class"] = "WARRIOR",
+					["xp"] = 55,
+				},
+				["Shivyou"] = {
+					["timePlayed"] = 1190.289000000106,
+					["class"] = "ROGUE",
+					["xp"] = 47,
 				},
 				["Netrebnic"] = {
 					["timePlayed"] = 0,

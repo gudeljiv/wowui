@@ -83,3 +83,7 @@ VER 3 000000000100000B " " "INV_MISC_QUESTIONMARK"
 /use 14
 /cast Steady Shot
 END
+VER 3 0000000001000012 " " "132152"
+#showtooltip 
+/petattack [@mouseover,exists,harm][]
+END

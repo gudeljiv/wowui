@@ -1,0 +1,101 @@
+tag 5.1.0.12-Release
+1667ceeeab190ac0c57e4e7b4ede81fb385694f5
+tekkub :bear:  <tekkub@gmail.com>
+2012-12-24 02:03:40 -0700
+
+Weekly build
+
+
+--------------------
+
+tekkub :bear: :
+	- Weekly build 5.1.0.12-Release
+	- Update changelog for 5.1.0.12-Release
+	- Updating TOC to 50100
+	- Update changelog for 5.0.1.11-Beta
+	- Weekly build 5.0.1.11-Beta
+	- Shift-click to bypass confirmation
+	- Update changelog for 5.0.1.10-Beta
+	- Weekly build 5.0.1.10-Beta
+	- Updating TOC to 50001
+	- README update
+tekkub :bear: :
+	- Seems sometimes we get a roll event before the roll starts
+tekkub :bear: :
+	- Track the rolls so the tooltip works again
+	- Update roll numbers using the new roll ssytem
+LordJZ:
+	- Display the reason of why a roll type is disabled.
+	- Set alpha channel to buttons when disabled (tekkub/#18).
+yaroot:
+	- update zhTW locale
+狂飙:
+	- update zhCN locale
+tekkub:
+	- ruRU update
+	Closes #6
+	- koKR locale
+	- Update changelog for 3.3.0.9-Beta
+	- Weekly build 3.3.0.9-Beta
+	- Updating TOC to 30300
+	- In soviet russia addon localizes you!
+	- deDE locale update for 3.3
+	Closes #2
+	- Meh, textmate defaults to UTF8, we might as well actually use it
+	- zhTW locale update
+	Closes #3
+	- Move locale out into it's own file
+	- Remove 3.2 backcompat
+unknown:
+	- ruRU locale added
+tekkub:
+	- Weekly build 3.2.0.8-Beta
+	- Update changelog for 3.2.0.8-Beta
+	- Up, down, what do we care?
+	- And actually test shit on live
+	- Make that thing work, fucking blizzy, 0 IS NOT FALSE
+	- Add 3.3 conditional, make tooltips always work, tell player when they can't roll in tooltip
+	- Add disenchant button, canNeed/canDE logics
+	- Update changelog for 3.2.0.7-Beta
+	- Weekly build 3.2.0.7-Beta
+	- Generate roll frames on demand, stupid default frames use 4 now
+	- Weekly build 3.2.0.6-Beta
+	- Update changelog for 3.2.0.6-Beta
+	- Updating TOC to 30200
+	- Updating README
+	- Fix CursorUpdate crap
+Tekkub:
+	- Special case for auto-rolling mods
+	- zhTW locale
+	- Weekly build 3.0.2.5-Beta
+	- Update changelog for 3.0.2.5-Beta
+	- deDE locale
+	- Weekly build 3.0.1.4-Beta
+	- Update changelog for 3.0.1.4-Beta
+	- SAY IT FRENCHIE!  SAY CHOWDAH!
+	- Weekly build 3.0.1.3-Beta
+	- Update changelog for 3.0.1.3-Beta
+	- Updating TOC to 30000
+	- READMEH
+	- I'm told this fixes an OnUpdate error, but I've not been able to test it personally
+	- Useless line...
+Tekkub Stoutwrithe:
+	- Another attempt to fix auto-pass detection
+	- Attempt to fix auto-pass detection
+	- Updating TOC to 20400
+	- Add roll selection counts to roll buttons
+	- Adding missing TOC fields
+	- Revert, fuck you haste
+	git-svn-id: http://tekkub-wow.googlecode.com/svn/trunk/teksLoot@759 86fe6d9a-1522-0410-a387-bf9db416f0a0
+	- Meaningless TOC update (yes I know 20302 isn't a real TOC, but hey there were significant UI changes in that patch)
+	git-svn-id: http://tekkub-wow.googlecode.com/svn/trunk/teksLoot@757 86fe6d9a-1522-0410-a387-bf9db416f0a0
+	- TOC update
+	git-svn-id: http://tekkub-wow.googlecode.com/svn/trunk/teksLoot@703 86fe6d9a-1522-0410-a387-bf9db416f0a0
+	- TOC and embed updates across the board
+	git-svn-id: http://tekkub-wow.googlecode.com/svn/trunk/teksLoot@549 86fe6d9a-1522-0410-a387-bf9db416f0a0
+	- teksLoot - Think this bugger is working correctly now, but I want to test a tad more in groups befoer I push it out.  Fixed frames not hiding when they should.
+	git-svn-id: http://tekkub-wow.googlecode.com/svn/trunk/teksLoot@545 86fe6d9a-1522-0410-a387-bf9db416f0a0
+	- teksLoot - durr.........
+	git-svn-id: http://tekkub-wow.googlecode.com/svn/trunk/teksLoot@541 86fe6d9a-1522-0410-a387-bf9db416f0a0
+	- Ioporting teksLoot... basically just a ripoff of XLootGroup, minus all the cruft (why the hell was XLG dependant on XLoot?) ... Does not have the roll tracking in yet, and has not been tested in a real group yet, so the classic frames still pop up too.  Use /teksloot to pull up the anchor so you can move the stack.  Right click the anchor to hide it.
+	git-svn-id: http://tekkub-wow.googlecode.com/svn/trunk/teksLoot@540 86fe6d9a-1522-0410-a387-bf9db416f0a0
