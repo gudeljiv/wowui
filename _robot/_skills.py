@@ -2,6 +2,13 @@
 
 skills = dict()
 
+skills["healing"] = [
+    {"name": "healthstone", "key": "4", "modifier": "alt"},
+    {"name": "healing potion", "key": "5", "modifier": "alt"},
+    {"name": "fel blossom", "key": "6", "modifier": "alt"},
+    {"name": "lifeblood", "key": "7", "modifier": "alt"},
+]
+
 skills["warrior"] = [
     {"name": "battle shout", "key": "f4"},
     {"name": "commanding shout", "key": "f6"},
@@ -29,9 +36,7 @@ skills["warrior"] = [
     {"name": "last stand", "key": "t", "modifier": "shift"},
     {"name": "concussion blow", "key": "g"},
     {"name": "shield wall", "key": "t"},
-    {"name": "hamstring", "key": "1"},
-    {"name": "healthstone", "key": "6", "modifier": "shift"},
-    {"name": "healing potion", "key": "7", "modifier": "shift"},
+    {"name": "hamstring", "key": "1"}
 ]
 
 skills["warlock"] = [
@@ -60,12 +65,7 @@ skills["hunter"] = [
     {"name": "concussive shot", "key": "1"},
     {"name": "cower pet", "key": "4", "modifier": "alt"},
     {"name": "last stand pet", "key": "5", "modifier": "alt"},
-    {"name": "wing clip", "key": "1", "modifier": "shift"},
-
-    {"name": "healthstone", "key": "4", "modifier": "shift"},
-    {"name": "healing potion", "key": "5", "modifier": "shift"},
-    {"name": "fel blossom", "key": "6", "modifier": "shift"},
-    {"name": "lifeblood", "key": "7", "modifier": "shift"},
+    {"name": "wing clip", "key": "1", "modifier": "shift"}
 ]
 
 skills["druid"] = [
@@ -83,11 +83,6 @@ skills["druid"] = [
     {"name": "barkskin", "key": "g"},
     {"name": "mangle", "key": "9", "modifier": "alt"},
     {"name": "survival instincts", "key": "d", "modifier": "alt"},
-    {"name": "lifeblood", "key": "z"},
-    {"name": "healthstone", "key": "4", "modifier": "alt"},
-    {"name": "healing potion", "key": "5", "modifier": "alt"},
-    {"name": "fel blossom", "key": "6", "modifier": "shift"},
-    {"name": "lifeblood", "key": "7", "modifier": "shift"},
 ]
 
 skills["death knight"] = [
@@ -103,8 +98,6 @@ skills["death knight"] = [
     {"name": "icebound fortitude", "key": "t"},
     {"name": "horn of winter", "key": "f4"},
     {"name": "rune strike", "key": "9", "modifier": "alt"},
-    {"name": "healthstone", "key": "6", "modifier": "shift"},
-    {"name": "healing potion", "key": "7", "modifier": "shift"},
 ]
 
 skills["priest"] = [
@@ -123,8 +116,6 @@ skills["paladin"] = [
     {"name": "consecration", "key": "3"},
     {"name": "seal of command", "key": "d", "modifier": "alt"},
     {"name": "seal of vengeance", "key": "f", "modifier": "alt"},
-    {"name": "healthstone", "key": "6", "modifier": "shift"},
-    {"name": "healing potion", "key": "7", "modifier": "shift"},
 ]
 
 skills["shaman"] = [

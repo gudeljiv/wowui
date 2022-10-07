@@ -177,7 +177,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 #     print("class", hex, wow_class)
 
                 # rotation
-                for skill in skills[wow_class]:
+                for skill in skills[wow_class] + skills["healing"]:
                     start_skills_time = time.time()
                     for ability in abilities:
                         if ability == skill["name"]:

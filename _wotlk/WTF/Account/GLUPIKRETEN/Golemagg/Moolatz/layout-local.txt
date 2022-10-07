@@ -67,7 +67,7 @@ FrameLevel: 1
 Anchor: CENTER
 X: 382
 Y: -93
-W: 78
+W: 80
 H: 40
 Frame: StanceButton1
 FrameLevel: 3

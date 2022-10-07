@@ -5,17 +5,17 @@ AtlasLootClassicDB = {
 		["VendorPrice"] = {
 			[28909] = "arcanerune:8",
 			[29472] = "honor:16650",
-			[34129] = "honor:16650",
+			[29466] = "honor:16650",
 			[28910] = "arcanerune:8",
 			[29469] = "honor:16650",
 			[28903] = "arcanerune:2",
 			[28907] = "arcanerune:2",
-			[29466] = "honor:16650",
+			[28911] = "arcanerune:8",
 			[29470] = "honor:16650",
 			[28904] = "arcanerune:2",
 			[28908] = "arcanerune:2",
 			[28912] = "arcanerune:8",
-			[28911] = "arcanerune:8",
+			[34129] = "honor:16650",
 		},
 	},
 	["profileKeys"] = {
@@ -73,6 +73,11 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -81,11 +86,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
 			},
 		},
 		["Verminz - Golemagg"] = {

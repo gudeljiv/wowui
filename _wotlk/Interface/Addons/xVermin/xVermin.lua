@@ -44,6 +44,13 @@ local function xInstallAddon()
 	-- 	action_bars[i]:SetChecked(1)
 	-- 	action_bars[i]:GetScript('OnClick')(action_bars[i])
 	-- end
+
+	-- local s, b = 'SHOW_MULTI_ACTIONBAR_'
+	-- b = 1
+	-- for i = 1, 4 do
+	-- 	_G[s .. i] = b
+	-- end
+	-- InterfaceOptions_UpdateMultiActionBars()
 end
 
 SLASH_XINSTALL1 = '/xinstall'
