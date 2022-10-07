@@ -76,10 +76,3 @@ X: -232
 Y: 134
 W: 30
 H: 30
-Frame: PlaterOptionsPanelFrame
-FrameLevel: 1
-Anchor: LEFT
-X: 141
-Y: 151
-W: 1100
-H: 670

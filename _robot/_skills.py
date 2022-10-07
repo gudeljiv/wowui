@@ -80,8 +80,10 @@ skills["druid"] = [
     {"name": "mangle", "key": "9", "modifier": "alt"},
     {"name": "survival instincts", "key": "d", "modifier": "alt"},
     {"name": "lifeblood", "key": "z"},
-    {"name": "healthstone", "key": "x"},
-    {"name": "healing potion", "key": "y"}
+    {"name": "healthstone", "key": "4", "modifier": "alt"},
+    {"name": "healing potion", "key": "5", "modifier": "alt"},
+    {"name": "fel blossom", "key": "6", "modifier": "shift"},
+    {"name": "lifeblood", "key": "7", "modifier": "shift"},
 ]
 
 skills["death knight"] = [
@@ -97,8 +99,8 @@ skills["death knight"] = [
     {"name": "icebound fortitude", "key": "t"},
     {"name": "horn of winter", "key": "f4"},
     {"name": "rune strike", "key": "9", "modifier": "alt"},
-    {"name": "healthstone", "key": "x"},
-    {"name": "healing potion", "key": "y"}
+    {"name": "healthstone", "key": "6", "modifier": "shift"},
+    {"name": "healing potion", "key": "7", "modifier": "shift"},
 ]
 
 skills["priest"] = [
@@ -117,6 +119,8 @@ skills["paladin"] = [
     {"name": "consecration", "key": "3"},
     {"name": "seal of command", "key": "d", "modifier": "alt"},
     {"name": "seal of vengeance", "key": "f", "modifier": "alt"},
+    {"name": "healthstone", "key": "6", "modifier": "shift"},
+    {"name": "healing potion", "key": "7", "modifier": "shift"},
 ]
 
 skills["shaman"] = [
@@ -125,4 +129,6 @@ skills["shaman"] = [
 skills["rogue"] = [
     {"name": "sinister strike", "key": "f11"},
     {"name": "eviscerate", "key": "4"},
+    {"name": "healthstone", "key": "6", "modifier": "shift"},
+    {"name": "healing potion", "key": "7", "modifier": "shift"},
 ]
