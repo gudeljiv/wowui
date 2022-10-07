@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 6422,
 	["lastSanitation"] = 3,
+	["session"] = 6433,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:1770: attempt to perform arithmetic on a nil value",
@@ -1342,20 +1342,20 @@ BugGrabberDB = {
 		}, -- [169]
 		{
 			["message"] = " (null)",
-			["time"] = "2022/04/11 11:49:12",
 			["session"] = 5326,
+			["time"] = "2022/04/11 11:49:12",
 			["counter"] = 15,
 		}, -- [170]
 		{
 			["message"] = "  (null)",
-			["time"] = "2022/04/13 16:37:53",
 			["session"] = 5326,
+			["time"] = "2022/04/13 16:37:53",
 			["counter"] = 4,
 		}, -- [171]
 		{
 			["message"] = "   (null)",
-			["time"] = "2022/06/02 15:20:51",
 			["session"] = 5326,
+			["time"] = "2022/06/02 15:20:51",
 			["counter"] = 1,
 		}, -- [172]
 		{
@@ -1757,62 +1757,62 @@ BugGrabberDB = {
 		}, -- [222]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-enUS.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [223]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-deDE.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [224]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esES.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [225]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-esMX.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [226]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-frFR.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [227]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-itIT.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [228]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-koKR.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [229]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ptBR.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [230]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-ruRU.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [231]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Details\\locales\\Details-zhCN.lua",
-			["time"] = "2022/09/03 10:04:52",
 			["session"] = 5422,
+			["time"] = "2022/09/03 10:04:52",
 			["counter"] = 3,
 		}, -- [232]
 		{
@@ -2089,8 +2089,8 @@ BugGrabberDB = {
 		}, -- [267]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\xVermin-54000.lua is empty.",
-			["session"] = 5507,
 			["time"] = "2022/09/07 12:54:52",
+			["session"] = 5507,
 			["counter"] = 3,
 		}, -- [268]
 		{
@@ -2175,8 +2175,8 @@ BugGrabberDB = {
 		}, -- [278]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Addons/nMainBar.lua is empty.",
-			["session"] = 5527,
 			["time"] = "2022/09/07 13:53:00",
+			["session"] = 5527,
 			["counter"] = 3,
 		}, -- [279]
 		{
@@ -2798,8 +2798,8 @@ BugGrabberDB = {
 		}, -- [358]
 		{
 			["message"] = "File Interface\\AddOns\\xVermin\\Helpers/Chat.lua is empty.",
-			["time"] = "2022/09/19 19:24:24",
 			["session"] = 5820,
+			["time"] = "2022/09/19 19:24:24",
 			["counter"] = 3,
 		}, -- [359]
 		{
@@ -3894,8 +3894,8 @@ BugGrabberDB = {
 		}, -- [498]
 		{
 			["message"] = "(null)",
-			["time"] = "2022/03/09 13:39:43",
 			["session"] = 6353,
+			["time"] = "2022/03/09 13:39:43",
 			["counter"] = 128,
 		}, -- [499]
 		{
@@ -3947,8 +3947,8 @@ BugGrabberDB = {
 		}, -- [505]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Helpers/ActionButtons.lua",
-			["session"] = 6360,
 			["time"] = "2022/10/04 09:59:06",
+			["session"] = 6360,
 			["counter"] = 6,
 		}, -- [506]
 		{
@@ -4154,5 +4154,13 @@ BugGrabberDB = {
 			["session"] = 6422,
 			["counter"] = 1,
 		}, -- [532]
+		{
+			["message"] = "...dOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Shopping.lua:2474: assertion failed!",
+			["time"] = "2022/10/07 09:31:15",
+			["locals"] = "(*temporary) = false\n",
+			["stack"] = "[string \"=[C]\"]: in function `assert'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Shopping.lua\"]:2474: in function <...dOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Shopping.lua:2469>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua\"]:178: in function <...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:160>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua\"]:136: in function <...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:114>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Shopping.lua\"]:656: in function `_onClickHandler'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\ActionButton.lua\"]:349: in function `?'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua\"]:86: in function `ScriptHandlerCommon'\n[string \"@Interface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua\"]:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>",
+			["session"] = 6426,
+			["counter"] = 1,
+		}, -- [533]
 	},
 }

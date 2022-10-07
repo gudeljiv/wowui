@@ -82,6 +82,9 @@ f:SetScript(
 		BNToastFrame:SetWidth(250)
 		BNToastFrame:CreateBeautyBorder(8)
 
+		LSToastAnchor1:ClearAllPoints()
+		LSToastAnchor1:SetPoint('BOTTOMLEFT', ChatFrame4, 'TOPLEFT', 0, 45)
+
 		CastingBarFrame.Text:ClearAllPoints()
 		CastingBarFrame.Text:SetPoint('CENTER', CastingBarFrame, 0, 2)
 
@@ -223,8 +226,5 @@ f:SetScript(
 			UIWidgetTopCenterContainerFrame:SetPoint('TOP', 'UIParent', 'TOP', 0, -70)
 			UIWidgetTopCenterContainerFrame:SetMovable(false)
 		end
-
-		LSToastAnchor1:ClearAllPoints()
-		LSToastAnchor1:SetPoint('TOPLEFT', TargetFrame, 'BOTTOMRIGHT', 50, 0)
 	end
 )

@@ -1,8 +1,78 @@
 
 GMMONEY = {
+	["Dreadnaught"] = {
+		["Poklopac"] = {
+			["GOLD"] = 686231,
+			["CLASS"] = "HUNTER",
+		},
+		["Moolatz"] = {
+			["GOLD"] = 107693,
+			["CLASS"] = "DRUID",
+		},
+		["Greshnik"] = {
+			["GOLD"] = 70,
+			["CLASS"] = "WARLOCK",
+		},
+		["Konac"] = {
+			["GOLD"] = 706899,
+			["CLASS"] = "PRIEST",
+		},
+		["Nitwit"] = {
+			["GOLD"] = 620,
+			["CLASS"] = "ROGUE",
+		},
+		["Pitchwise"] = {
+			["GOLD"] = 70411,
+			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Hydraxian Waterlords"] = {
+		["Battlearm"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "HUNTER",
+		},
+	},
+	["Stonespine"] = {
+		["Vermins"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Ashbringer"] = {
+		["Pitchwise"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "SHAMAN",
+		},
+	},
+	["Jin'do"] = {
+		["Battlearm"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "SHAMAN",
+		},
+		["Kaonac"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "PRIEST",
+		},
+		["Tandaram"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+		["Tudum"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+		["Wells"] = {
+			["GOLD"] = 1528,
+			["CLASS"] = "DRUID",
+		},
+		["Provokator"] = {
+			["GOLD"] = 812,
+			["CLASS"] = "HUNTER",
+		},
+	},
 	["Golemagg"] = {
 		["Battlearm"] = {
-			["GOLD"] = 10191711,
+			["GOLD"] = 2087569,
 			["CLASS"] = "DEATHKNIGHT",
 		},
 		["Mxzq"] = {
@@ -10,7 +80,7 @@ GMMONEY = {
 			["CLASS"] = "HUNTER",
 		},
 		["Mxyz"] = {
-			["GOLD"] = 17470346,
+			["GOLD"] = 3916732,
 			["CLASS"] = "PRIEST",
 		},
 		["Handrmandr"] = {
@@ -42,78 +112,8 @@ GMMONEY = {
 			["CLASS"] = "WARRIOR",
 		},
 	},
-	["Hydraxian Waterlords"] = {
-		["Battlearm"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "HUNTER",
-		},
-	},
-	["Jin'do"] = {
-		["Battlearm"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "SHAMAN",
-		},
-		["Kaonac"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "PRIEST",
-		},
-		["Tandaram"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
-		},
-		["Tudum"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
-		},
-		["Wells"] = {
-			["GOLD"] = 1528,
-			["CLASS"] = "DRUID",
-		},
-		["Provokator"] = {
-			["GOLD"] = 812,
-			["CLASS"] = "HUNTER",
-		},
-	},
-	["Dreadnaught"] = {
-		["Poklopac"] = {
-			["GOLD"] = 686231,
-			["CLASS"] = "HUNTER",
-		},
-		["Moolatz"] = {
-			["GOLD"] = 107693,
-			["CLASS"] = "DRUID",
-		},
-		["Greshnik"] = {
-			["GOLD"] = 70,
-			["CLASS"] = "WARLOCK",
-		},
-		["Konac"] = {
-			["GOLD"] = 706899,
-			["CLASS"] = "PRIEST",
-		},
-		["Nitwit"] = {
-			["GOLD"] = 620,
-			["CLASS"] = "ROGUE",
-		},
-		["Pitchwise"] = {
-			["GOLD"] = 70411,
-			["CLASS"] = "WARRIOR",
-		},
-	},
-	["Stonespine"] = {
-		["Vermins"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
-		},
-	},
-	["Ashbringer"] = {
-		["Pitchwise"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "SHAMAN",
-		},
-	},
 }
 GMMONEYSET = {
-	["TEXTMODE"] = true,
 	["FULLDISP"] = true,
+	["TEXTMODE"] = true,
 }
