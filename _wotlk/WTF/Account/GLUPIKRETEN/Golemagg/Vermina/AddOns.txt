@@ -170,3 +170,7 @@ DBM-MC: enabled
 DBM-ZG: enabled
 Pawn: enabled
 TradeSkillMaster_AppHelper: enabled
+XLoot_Options: enabled
+XLoot_Monitor: disabled
+XLoot_Master: disabled
+XLoot_Frame: disabled

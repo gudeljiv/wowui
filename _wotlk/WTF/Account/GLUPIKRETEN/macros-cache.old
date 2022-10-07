@@ -20,13 +20,13 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat item:22832
+/use [nocombat]item:1708
+/castsequence [combat] reset=combat item:3385
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33452
-/castsequence [combat] reset=combat item:22829
+/use [nocombat]item:3771
+/castsequence [combat] reset=combat item:929
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
@@ -40,13 +40,12 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:22829
+/use item:929
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run LSToast1:ClearAllPoints()
-/run LSToast1:SetPoint("TOPLEFT", TargetFrame, "BOTTOMRIGHT", 50, 0)
+/run print(UnitCreatureType("target"))
 END

@@ -1,9 +1,9 @@
 
 GMMONEY = {
-	["Ashbringer"] = {
-		["Pitchwise"] = {
+	["Hydraxian Waterlords"] = {
+		["Battlearm"] = {
 			["GOLD"] = 0,
-			["CLASS"] = "SHAMAN",
+			["CLASS"] = "HUNTER",
 		},
 	},
 	["Golemagg"] = {
@@ -36,7 +36,7 @@ GMMONEY = {
 			["CLASS"] = "ROGUE",
 		},
 		["Vermina"] = {
-			["GOLD"] = 187628,
+			["GOLD"] = 191116,
 			["CLASS"] = "PALADIN",
 		},
 		["Mxyzptlk"] = {
@@ -46,6 +46,38 @@ GMMONEY = {
 		["Vermin"] = {
 			["GOLD"] = 21730649,
 			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Jin'do"] = {
+		["Battlearm"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "SHAMAN",
+		},
+		["Kaonac"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "PRIEST",
+		},
+		["Tandaram"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+		["Tudum"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+		["Wells"] = {
+			["GOLD"] = 1528,
+			["CLASS"] = "DRUID",
+		},
+		["Provokator"] = {
+			["GOLD"] = 812,
+			["CLASS"] = "HUNTER",
+		},
+	},
+	["Ashbringer"] = {
+		["Pitchwise"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "SHAMAN",
 		},
 	},
 	["Stonespine"] = {
@@ -80,40 +112,8 @@ GMMONEY = {
 			["CLASS"] = "WARRIOR",
 		},
 	},
-	["Jin'do"] = {
-		["Battlearm"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "SHAMAN",
-		},
-		["Kaonac"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "PRIEST",
-		},
-		["Tandaram"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
-		},
-		["Tudum"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
-		},
-		["Wells"] = {
-			["GOLD"] = 1528,
-			["CLASS"] = "DRUID",
-		},
-		["Provokator"] = {
-			["GOLD"] = 812,
-			["CLASS"] = "HUNTER",
-		},
-	},
-	["Hydraxian Waterlords"] = {
-		["Battlearm"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "HUNTER",
-		},
-	},
 }
 GMMONEYSET = {
-	["FULLDISP"] = true,
 	["TEXTMODE"] = true,
+	["FULLDISP"] = true,
 }
