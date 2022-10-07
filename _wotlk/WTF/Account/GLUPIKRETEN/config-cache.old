@@ -1,7 +1,6 @@
 SET deselectOnClick "1"
 SET alwaysCompareItems "1"
 SET showTargetOfTarget "1"
-SET showTargetCastbar "1"
 SET scriptErrors "1"
 SET instantQuestText "1"
 SET flaggedTutorials "v11##M##$##&##6##%##'##5##:##8##Q##(##)##*##+##,##;##-##E##4##1##7##K##J##?##@##.##<##=##9##I##F##D##O##0##G##3##P##/##A##N##>##U##H##C##B##V##S##T##L##]##^"
