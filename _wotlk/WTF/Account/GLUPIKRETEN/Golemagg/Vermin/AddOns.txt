@@ -13,11 +13,11 @@ Grid2RaidDebuffsOptions: enabled
 Grid2LDB: enabled
 Blizzard_CompactRaidFrames: disabled
 Blizzard_CUFProfiles: disabled
-Bagnon: disabled
-Bagnon_Config: disabled
-Bagnon_GuildBank: disabled
-Bagnon_VoidStorage: disabled
-BagBrother: disabled
+Bagnon: enabled
+Bagnon_Config: enabled
+Bagnon_GuildBank: enabled
+Bagnon_VoidStorage: enabled
+BagBrother: enabled
 RXPGuides: enabled
 CharacterStatsClassic: disabled
 RangeDisplay: enabled

@@ -25,6 +25,8 @@ local function FixBindings()
 	-- SetBinding("L", "MONKEYQUEST_CLOSE", 1)
 	SetBinding('L', 'TOGGLEQUESTLOG', 1)
 	SetBinding('SHIFT-K', 'BAGNON_KEYS_TOGGLE', 1)
+	SetBinding('', 'BAGNON_TOGGLE', 1)
+	SetBinding('ð', 'BAGNON_BANK_TOGGLE', 1)
 
 	if xVermin.Class == 'HUNTER' or xVermin.Class == 'WARLOCK' then
 		SetBinding('ALT-1', 'BONUSACTIONBUTTON1', 1)

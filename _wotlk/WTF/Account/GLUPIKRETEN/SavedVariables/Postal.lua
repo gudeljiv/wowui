@@ -31,7 +31,7 @@ Postal3DB = {
 				"Tandaram|Jin'do|Horde|1|WARRIOR", -- [10]
 				"Tudum|Jin'do|Horde|1|WARRIOR", -- [11]
 				"Vermina|Golemagg|Horde|29|PALADIN", -- [12]
-				"Vermin|Golemagg|Horde|71|WARRIOR", -- [13]
+				"Vermin|Golemagg|Horde|72|WARRIOR", -- [13]
 				"Wells|Jin'do|Horde|8|DRUID", -- [14]
 			},
 		},

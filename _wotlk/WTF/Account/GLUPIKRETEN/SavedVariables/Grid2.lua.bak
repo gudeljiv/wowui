@@ -1,7 +1,7 @@
 
 Grid2DB = {
 	["namespaces"] = {
-		["LibDualSpec-1.0"] = {
+		["Grid2AoeHeals"] = {
 		},
 		["Grid2Layout"] = {
 			["global"] = {
@@ -14,7 +14,7 @@ Grid2DB = {
 					["BackgroundG"] = 0.101960784313725,
 					["BackgroundTexture"] = "None",
 					["BorderB"] = 0.501960784313726,
-					["BackgroundR"] = 0.101960784313725,
+					["BackgroundB"] = 0.101960784313725,
 					["layouts"] = {
 						["arena"] = "By Group & Class",
 						["raid"] = "By Group & Class",
@@ -22,7 +22,7 @@ Grid2DB = {
 						["party"] = "By Group & Class",
 					},
 					["PosX"] = -253.333301786579,
-					["BackgroundB"] = 0.101960784313725,
+					["BackgroundR"] = 0.101960784313725,
 					["BorderTexture"] = "None",
 					["BorderG"] = 0.501960784313726,
 					["BackgroundA"] = 0,
@@ -199,9 +199,9 @@ Grid2DB = {
 								["solo"] = "By Group",
 								["raid@other"] = "By Group",
 								["party"] = "By Group",
-								["arena"] = "None",
-								["raid@none"] = "By Group",
 								["raid"] = "By Group",
+								["raid@none"] = "By Group",
+								["arena"] = "None",
 								["raid@mythic"] = "By Group",
 								["raid@flex"] = "By Group",
 								["raid@pvp"] = "By Group",
@@ -251,9 +251,9 @@ Grid2DB = {
 								["raid@pvp"] = "By Group",
 								["raid@none"] = "By Group",
 								["raid@mythic"] = "By Group",
-								["raid"] = "By Group",
-								["raid@flex"] = "By Group",
 								["arena"] = "By Group",
+								["raid@flex"] = "By Group",
+								["raid"] = "By Group",
 							},
 							["BackgroundR"] = 0.101960784313725,
 							["ScaleSize"] = 1,
@@ -296,9 +296,9 @@ Grid2DB = {
 								["solo"] = "None",
 								["raid@other"] = "By Group",
 								["party"] = "By Group",
-								["arena"] = "By Group",
-								["raid@none"] = "By Group",
 								["raid"] = "By Group",
+								["raid@none"] = "By Group",
+								["arena"] = "By Group",
 								["raid@mythic"] = "By Group",
 								["raid@flex"] = "By Group",
 								["raid@pvp"] = "By Group",
@@ -345,9 +345,9 @@ Grid2DB = {
 								["solo"] = "None",
 								["raid@other"] = "By Group",
 								["party"] = "By Group",
-								["arena"] = "By Group",
-								["raid@none"] = "By Group",
 								["raid"] = "By Group",
+								["raid@none"] = "By Group",
+								["arena"] = "By Group",
 								["raid@mythic"] = "By Group",
 								["raid@flex"] = "By Group",
 								["raid@pvp"] = "By Group",
@@ -578,14 +578,6 @@ Grid2DB = {
 						["raid"] = "By Group & Class",
 					},
 					["PosY"] = -2.655029220477445e-05,
-					["BackgroundB"] = 0.101960784313725,
-					["BackgroundR"] = 0.101960784313725,
-					["BorderTexture"] = "None",
-					["BackgroundA"] = 0,
-					["BorderR"] = 0.501960784313726,
-					["PosX"] = 0,
-					["anchor"] = "LEFT",
-					["BorderG"] = 0.501960784313726,
 					["extraThemes"] = {
 						{
 							["BackgroundTexture"] = "None",
@@ -716,11 +708,19 @@ Grid2DB = {
 							["FrameDisplay"] = "Always",
 						}, -- [3]
 					},
+					["BackgroundR"] = 0.101960784313725,
+					["BorderTexture"] = "None",
+					["BackgroundA"] = 0,
+					["BorderR"] = 0.501960784313726,
+					["PosX"] = 0,
+					["anchor"] = "LEFT",
+					["BorderG"] = 0.501960784313726,
 					["Spacing"] = 1,
+					["BackgroundB"] = 0.101960784313725,
 				},
 			},
 		},
-		["Grid2AoeHeals"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["Grid2Options"] = {
 			["profiles"] = {
@@ -749,18 +749,6 @@ Grid2DB = {
 							["Wild-Growth"] = "IconSquare-BottomRightUpLeft",
 						},
 					},
-				},
-			},
-		},
-		["Grid2RaidDebuffs"] = {
-			["profiles"] = {
-				["Niseko for President"] = {
-					["lastSelectedModule"] = "Battle for Azeroth",
-					["defaultEJ_difficulty"] = 16,
-					["enabledModules"] = {
-						["Battle for Azeroth"] = true,
-					},
-					["lastSelectedInstance"] = 1180,
 				},
 			},
 		},
@@ -806,18 +794,18 @@ Grid2DB = {
 								["g"] = 1,
 								["r"] = 1,
 							},
+							["frameHeights"] = {
+								[10] = 40,
+								[5] = 50,
+							},
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["frameHeights"] = {
-								[10] = 40,
-								[5] = 50,
-							},
-							["orientation"] = "VERTICAL",
 							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameWidth"] = 125,
 							["frameBorderTexture"] = "None",
 						}, -- [1]
@@ -847,18 +835,18 @@ Grid2DB = {
 								["g"] = 0,
 								["b"] = 0,
 							},
-							["mouseoverHighlight"] = false,
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
 							},
+							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameHeights"] = {
 								[5] = 45,
 								[10] = 50,
 							},
-							["orientation"] = "VERTICAL",
 							["frameWidth"] = 125,
 							["mouseoverColor"] = {
 								["a"] = 1,
@@ -898,18 +886,18 @@ Grid2DB = {
 								["g"] = 1,
 								["b"] = 1,
 							},
-							["mouseoverHighlight"] = false,
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
 							},
-							["orientation"] = "VERTICAL",
+							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								[25] = 20,
 								[40] = 20,
 							},
+							["orientation"] = "VERTICAL",
 							["frameWidth"] = 120,
 							["frameBorderTexture"] = "None",
 						}, -- [3]
@@ -943,14 +931,14 @@ Grid2DB = {
 							["iconSize"] = 14,
 							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
 							["frameBorderDistance"] = 1,
-							["frameTexture"] = "Flat",
-							["frameHeight"] = 70,
 							["mouseoverColor"] = {
 								["a"] = 1,
 								["b"] = 1,
 								["g"] = 1,
 								["r"] = 1,
 							},
+							["frameHeight"] = 70,
+							["frameTexture"] = "Flat",
 							["shadowDisabled"] = true,
 							["barTexture"] = "Grid2 Flat",
 							["frameBorderTexture"] = "Grid2 Flat",
@@ -963,15 +951,16 @@ Grid2DB = {
 								["Nise Party"] = 90,
 								["Holy Party"] = 90,
 							},
-							["orientation"] = "HORIZONTAL",
-							["font"] = "Accidental Presidency",
-							["menuDisabled"] = true,
 							["frameContentColor"] = {
 								["a"] = 0.700000017881393,
 								["b"] = 0.141176470588235,
 								["g"] = 0.141176470588235,
 								["r"] = 0.141176470588235,
 							},
+							["font"] = "Accidental Presidency",
+							["menuDisabled"] = true,
+							["orientation"] = "HORIZONTAL",
+							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								["Holy Party"] = 58,
 								["Holy Raid10"] = 80,
@@ -985,7 +974,6 @@ Grid2DB = {
 								["yUI Raid"] = 60,
 								["yUI 25+"] = 65,
 							},
-							["mouseoverHighlight"] = false,
 							["frameWidth"] = 100,
 							["fontFlags"] = "OUTLINE",
 						}, -- [1]
@@ -1002,18 +990,18 @@ Grid2DB = {
 							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
 							["frameBorderDistance"] = 1,
 							["frameHeight"] = 54,
-							["frameBorderTexture"] = "Grid2 Flat",
+							["frameTexture"] = "Flat",
 							["shadowDisabled"] = true,
 							["barTexture"] = "Grid2 Flat",
-							["frameTexture"] = "Flat",
+							["frameBorderTexture"] = "Grid2 Flat",
 							["frameWidths"] = {
 								["yUI Arena"] = 100,
 								["yUI Party"] = 90,
 								["Nise Arena"] = 80,
 								["yUI Raid"] = 85,
-								["yUI 25+"] = 90,
-								["Holy Party"] = 90,
 								["Nise Party"] = 90,
+								["Holy Party"] = 90,
+								["yUI 25+"] = 90,
 							},
 							["mouseoverColor"] = {
 								["a"] = 1,
@@ -1022,8 +1010,14 @@ Grid2DB = {
 								["b"] = 1,
 							},
 							["font"] = "Roboto-Medium",
-							["mouseoverHighlight"] = false,
 							["orientation"] = "HORIZONTAL",
+							["mouseoverHighlight"] = false,
+							["frameContentColor"] = {
+								["a"] = 0.700000017881393,
+								["r"] = 0.141176470588235,
+								["g"] = 0.141176470588235,
+								["b"] = 0.141176470588235,
+							},
 							["frameHeights"] = {
 								["Holy Party"] = 58,
 								["Holy Raid10"] = 80,
@@ -1036,12 +1030,6 @@ Grid2DB = {
 								["Nise Party"] = 58,
 								["Holy Raid20"] = 75,
 								["yUI Party"] = 58,
-							},
-							["frameContentColor"] = {
-								["a"] = 0.700000017881393,
-								["r"] = 0.141176470588235,
-								["g"] = 0.141176470588235,
-								["b"] = 0.141176470588235,
 							},
 							["frameWidth"] = 120,
 							["fontFlags"] = "OUTLINE",
@@ -1059,15 +1047,15 @@ Grid2DB = {
 							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
 							["frameBorderDistance"] = 1,
 							["frameHeight"] = 70,
+							["frameBorderTexture"] = "Grid2 Flat",
+							["shadowDisabled"] = true,
+							["barTexture"] = "Grid2 Flat",
 							["mouseoverColor"] = {
 								["a"] = 1,
 								["b"] = 1,
 								["g"] = 1,
 								["r"] = 1,
 							},
-							["shadowDisabled"] = true,
-							["barTexture"] = "Grid2 Flat",
-							["frameBorderTexture"] = "Grid2 Flat",
 							["frameWidths"] = {
 								["yUI Arena"] = 100,
 								["yUI Party"] = 90,
@@ -1079,7 +1067,6 @@ Grid2DB = {
 							},
 							["frameTexture"] = "Flat",
 							["font"] = "Roboto-Medium",
-							["orientation"] = "HORIZONTAL",
 							["frameHeights"] = {
 								["yUI Party"] = 58,
 								["Holy Raid10"] = 80,
@@ -1093,13 +1080,14 @@ Grid2DB = {
 								["Holy Raid25"] = 73,
 								["yUI 25+"] = 65,
 							},
-							["mouseoverHighlight"] = false,
+							["orientation"] = "HORIZONTAL",
 							["frameContentColor"] = {
 								["a"] = 0.700000017881393,
 								["b"] = 0.141176470588235,
 								["g"] = 0.141176470588235,
 								["r"] = 0.141176470588235,
 							},
+							["mouseoverHighlight"] = false,
 							["frameWidth"] = 200,
 							["fontFlags"] = "OUTLINE",
 						}, -- [3]
@@ -1115,9 +1103,9 @@ Grid2DB = {
 							["iconSize"] = 14,
 							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
 							["frameBorderDistance"] = 1,
-							["frameBorderTexture"] = "Grid2 Flat",
-							["frameHeight"] = 54,
 							["frameTexture"] = "Flat",
+							["frameHeight"] = 54,
+							["frameBorderTexture"] = "Grid2 Flat",
 							["shadowDisabled"] = true,
 							["barTexture"] = "Grid2 Flat",
 							["mouseoverColor"] = {
@@ -1135,16 +1123,15 @@ Grid2DB = {
 								["Nise Party"] = 90,
 								["Holy Party"] = 90,
 							},
+							["mouseoverHighlight"] = false,
+							["font"] = "Accidental Presidency",
+							["menuDisabled"] = true,
 							["frameContentColor"] = {
 								["a"] = 0.700000017881393,
 								["b"] = 0.141176470588235,
 								["g"] = 0.141176470588235,
 								["r"] = 0.141176470588235,
 							},
-							["font"] = "Accidental Presidency",
-							["menuDisabled"] = true,
-							["mouseoverHighlight"] = false,
-							["orientation"] = "HORIZONTAL",
 							["frameHeights"] = {
 								["yUI Party"] = 58,
 								["Holy Raid10"] = 80,
@@ -1158,6 +1145,7 @@ Grid2DB = {
 								["Holy Raid20"] = 75,
 								["yUI 25+"] = 65,
 							},
+							["orientation"] = "HORIZONTAL",
 							["frameWidth"] = 84,
 							["fontFlags"] = "OUTLINE",
 						}, -- [4]
@@ -1233,17 +1221,17 @@ Grid2DB = {
 								["g"] = 1,
 								["r"] = 1,
 							},
+							["mouseoverHighlight"] = false,
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameHeights"] = {
 								[5] = 25,
 							},
-							["orientation"] = "VERTICAL",
 							["frameWidth"] = 175,
 							["frameTexture"] = "Melli",
 						}, -- [1]
@@ -1277,16 +1265,16 @@ Grid2DB = {
 								["g"] = 0,
 								["b"] = 0,
 							},
-							["mouseoverHighlight"] = false,
 							["orientation"] = "VERTICAL",
+							["mouseoverHighlight"] = false,
+							["frameHeights"] = {
+								[10] = 25,
+							},
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
-							},
-							["frameHeights"] = {
-								[10] = 25,
 							},
 							["frameWidth"] = 120,
 							["frameBorderTexture"] = "None",
@@ -1295,7 +1283,10 @@ Grid2DB = {
 					["frameBorderDistance"] = 0,
 					["frameHeight"] = 30,
 					["barTexture"] = "Flat",
-					["frameBorderTexture"] = "None",
+					["frameBorderColor"] = {
+						["g"] = 0.0196078431372549,
+						["r"] = 0.9607843137254902,
+					},
 					["frameWidths"] = {
 						[40] = 80,
 						[25] = 110,
@@ -1305,10 +1296,7 @@ Grid2DB = {
 					["frameContentColor"] = {
 						["a"] = 0,
 					},
-					["frameBorderColor"] = {
-						["g"] = 0.0196078431372549,
-						["r"] = 0.9607843137254902,
-					},
+					["frameBorderTexture"] = "None",
 					["frameWidth"] = 120,
 					["frameHeights"] = {
 						[40] = 30,
@@ -1349,17 +1337,17 @@ Grid2DB = {
 							},
 							["frameTexture"] = "Clean",
 							["frameBorderTexture"] = "None",
+							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								[5] = 25,
 							},
-							["mouseoverHighlight"] = false,
-							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
 							},
+							["orientation"] = "VERTICAL",
 							["frameWidth"] = 120,
 							["frameBorderColor"] = {
 								["a"] = 0,
@@ -1398,17 +1386,17 @@ Grid2DB = {
 								["g"] = 1,
 								["r"] = 1,
 							},
+							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["orientation"] = "VERTICAL",
+							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								[10] = 30,
 							},
-							["mouseoverHighlight"] = false,
 							["frameWidth"] = 120,
 							["frameTexture"] = "Clean",
 						}, -- [2]
@@ -1423,13 +1411,13 @@ Grid2DB = {
 						["g"] = 0.0196078431372549,
 						["r"] = 0.9607843137254902,
 					},
+					["frameContentColor"] = {
+						["a"] = 0,
+					},
 					["frameHeights"] = {
 						[40] = 30,
 						[25] = 30,
 						[15] = 30,
-					},
-					["frameContentColor"] = {
-						["a"] = 0,
 					},
 					["frameBorderTexture"] = "None",
 					["frameWidth"] = 120,
@@ -1476,18 +1464,18 @@ Grid2DB = {
 							},
 							["frameTexture"] = "Clean",
 							["font"] = "Arial Narrow",
+							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								60, -- [1]
 								[5] = 40,
 							},
-							["mouseoverHighlight"] = false,
-							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
 							},
+							["orientation"] = "VERTICAL",
 							["frameWidth"] = 125,
 							["frameBorderTexture"] = "None",
 						}, -- [1]
@@ -1517,17 +1505,17 @@ Grid2DB = {
 							},
 							["frameBorderTexture"] = "None",
 							["font"] = "Arial Narrow",
+							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["orientation"] = "VERTICAL",
+							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								[10] = 60,
 							},
-							["mouseoverHighlight"] = false,
 							["frameWidth"] = 125,
 							["mouseoverColor"] = {
 								["a"] = 1,
@@ -1568,18 +1556,18 @@ Grid2DB = {
 							},
 							["frameTexture"] = "Clean",
 							["font"] = "Arial Narrow",
+							["frameHeights"] = {
+								[25] = 60,
+								[40] = 30,
+							},
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["frameHeights"] = {
-								[25] = 60,
-								[40] = 30,
-							},
-							["orientation"] = "VERTICAL",
 							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameWidth"] = 120,
 							["frameBorderTexture"] = "None",
 						}, -- [3]
@@ -1592,6 +1580,18 @@ Grid2DB = {
 					["frameTexture"] = "Clean",
 					["frameWidth"] = 120,
 					["frameBorderDistance"] = -2,
+				},
+			},
+		},
+		["Grid2RaidDebuffs"] = {
+			["profiles"] = {
+				["Niseko for President"] = {
+					["lastSelectedModule"] = "Battle for Azeroth",
+					["defaultEJ_difficulty"] = 16,
+					["enabledModules"] = {
+						["Battle for Azeroth"] = true,
+					},
+					["lastSelectedInstance"] = 1180,
 				},
 			},
 		},
@@ -1929,15 +1929,15 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
-				["text-down-color"] = {
-					["classcolor"] = 99,
-				},
 				["text-up-color"] = {
 					["charmed"] = 65,
 					["feign-death"] = 96,
 					["health-deficit"] = 50,
 					["offline"] = 93,
 					["death"] = 95,
+				},
+				["text-down-color"] = {
+					["classcolor"] = 99,
 				},
 				["icon-center"] = {
 					["ready-check"] = 150,
@@ -2229,10 +2229,10 @@ Grid2DB = {
 			["hideBlizzardRaidFrames"] = true,
 			["indicators"] = {
 				["junkyard-bots"] = {
-					["borderSize"] = 3,
 					["type"] = "icons",
-					["iconSpacing"] = 1,
+					["borderSize"] = 3,
 					["useStatusColor"] = true,
+					["iconSpacing"] = 1,
 					["disableCooldown"] = true,
 					["level"] = 8,
 					["iconSize"] = 6,
@@ -2256,7 +2256,7 @@ Grid2DB = {
 						["r"] = 0,
 					},
 					["maxIcons"] = 3,
-					["font"] = "Accidental Presidency",
+					["borderSize"] = 1,
 					["level"] = 8,
 					["location"] = {
 						["y"] = 0,
@@ -2264,10 +2264,10 @@ Grid2DB = {
 						["point"] = "BOTTOMLEFT",
 						["x"] = 0,
 					},
-					["iconSize"] = 16,
-					["maxIconsPerRow"] = 3,
 					["useStatusColor"] = true,
-					["borderSize"] = 1,
+					["maxIconsPerRow"] = 3,
+					["iconSize"] = 16,
+					["font"] = "Accidental Presidency",
 				},
 				["tank-stacks-color"] = {
 					["type"] = "text-color",
@@ -2319,14 +2319,14 @@ Grid2DB = {
 					["borderSize"] = 1,
 					["type"] = "icons",
 					["iconSize"] = 16,
-					["maxIconsPerRow"] = 3,
+					["level"] = 7,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "TOPLEFT",
 						["point"] = "TOPLEFT",
 						["x"] = 0,
 					},
-					["level"] = 7,
+					["maxIconsPerRow"] = 3,
 				},
 				["Rejuv2-color"] = {
 					["type"] = "text-color",
@@ -2337,14 +2337,14 @@ Grid2DB = {
 				["Hot-BottomRightUpLeftLeft"] = {
 					["fontSize"] = 8,
 					["type"] = "icon",
+					["useStatusColor"] = true,
+					["reverseCooldown"] = true,
 					["location"] = {
 						["y"] = 8,
 						["relPoint"] = "BOTTOMRIGHT",
 						["point"] = "BOTTOMRIGHT",
 						["x"] = -16,
 					},
-					["reverseCooldown"] = true,
-					["useStatusColor"] = true,
 					["level"] = 8,
 					["borderSize"] = 4,
 					["size"] = 8,
@@ -2381,17 +2381,17 @@ Grid2DB = {
 				},
 				["Line-Indicator"] = {
 					["type"] = "bar",
-					["duration"] = true,
-					["reverseFill"] = true,
-					["height"] = 4,
 					["level"] = 7,
-					["orientation"] = "HORIZONTAL",
+					["reverseFill"] = true,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "BOTTOM",
 						["point"] = "BOTTOM",
 						["x"] = 0,
 					},
+					["duration"] = true,
+					["orientation"] = "HORIZONTAL",
+					["height"] = 4,
 				},
 				["Holy-Priest-color"] = {
 					["type"] = "multibar-color",
@@ -2411,18 +2411,18 @@ Grid2DB = {
 					["borderSize"] = 1,
 					["font"] = "Accidental Presidency",
 					["level"] = 8,
+					["iconSize"] = 10,
+					["maxIconsPerRow"] = 20,
 					["location"] = {
 						["y"] = 7,
 						["relPoint"] = "RIGHT",
 						["point"] = "RIGHT",
 						["x"] = 0,
 					},
-					["maxIconsPerRow"] = 20,
-					["iconSize"] = 10,
 					["fontSize"] = 10,
 				},
-				["Line-Indicator-color"] = {
-					["type"] = "bar-color",
+				["corner-top-centerleft-color"] = {
+					["type"] = "text-color",
 				},
 				["tooltip"] = {
 					["displayUnitOOC"] = true,
@@ -2458,15 +2458,15 @@ Grid2DB = {
 					["maxIcons"] = 3,
 					["borderSize"] = 1,
 					["disableOmniCC"] = true,
-					["iconSize"] = 12,
-					["level"] = 8,
-					["font"] = "Accidental Presidency",
 					["location"] = {
 						["y"] = 4,
 						["relPoint"] = "TOPRIGHT",
 						["point"] = "TOPRIGHT",
 						["x"] = 2,
 					},
+					["level"] = 8,
+					["font"] = "Accidental Presidency",
+					["iconSize"] = 12,
 				},
 				["tank-stacks"] = {
 					["fontSize"] = 20,
@@ -2487,8 +2487,8 @@ Grid2DB = {
 				["shields-color"] = {
 					["type"] = "bar-color",
 				},
-				["corner-top-centerleft-color"] = {
-					["type"] = "text-color",
+				["Line-Indicator-color"] = {
+					["type"] = "bar-color",
 				},
 				["corner-top-centerleft2-color"] = {
 					["type"] = "text-color",
@@ -2509,14 +2509,14 @@ Grid2DB = {
 					["font"] = "Accidental Presidency",
 					["disableIcon"] = true,
 					["borderSize"] = 4,
-					["useStatusColor"] = true,
-					["level"] = 8,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "BOTTOMRIGHT",
 						["point"] = "BOTTOMRIGHT",
 						["x"] = 0,
 					},
+					["level"] = 8,
+					["useStatusColor"] = true,
 					["size"] = 8,
 				},
 				["Wild-Growth"] = {
@@ -2578,27 +2578,49 @@ Grid2DB = {
 					["textlength"] = 12,
 					["fontFlags"] = "OUTLINE",
 				},
-				["Regrowth"] = {
-					["type"] = "icon",
-					["reverseCooldown"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 0,
+				["Health-deficit"] = {
+					{
+						["color"] = {
+							["a"] = 0.600000023841858,
+							["b"] = 0.788235294117647,
+							["g"] = 0.188235294117647,
+							["r"] = 0.63921568627451,
+						},
+					}, -- [1]
+					{
+						["color"] = {
+							["a"] = 0.7000000000000001,
+							["b"] = 0.2196078431372549,
+							["g"] = 0.2196078431372549,
+							["r"] = 0.2196078431372549,
+						},
+						["reverse"] = true,
+					}, -- [2]
+					{
+						["color"] = {
+							["a"] = 0.7000000000000001,
+							["b"] = 0.2196078431372549,
+							["g"] = 0.2196078431372549,
+							["r"] = 0.2196078431372549,
+						},
+						["noOverlap"] = true,
+					}, -- [3]
+					["type"] = "multibar",
+					["reverseFill"] = true,
+					["orientation"] = "HORIZONTAL",
+					["level"] = 3,
+					["textureColor"] = {
+						["a"] = 0.8,
+						["r"] = 1,
 						["g"] = 1,
-						["b"] = 0,
+						["b"] = 1,
 					},
-					["font"] = "Accidental Presidency",
-					["borderSize"] = 4,
-					["fontSize"] = 8,
-					["useStatusColor"] = true,
-					["level"] = 8,
 					["location"] = {
 						["y"] = 0,
-						["relPoint"] = "BOTTOMRIGHT",
-						["point"] = "BOTTOMRIGHT",
-						["x"] = -8,
+						["relPoint"] = "CENTER",
+						["point"] = "CENTER",
+						["x"] = 0,
 					},
-					["size"] = 8,
 				},
 				["name-party-color"] = {
 					["type"] = "text-color",
@@ -2674,14 +2696,14 @@ Grid2DB = {
 					["borderSize"] = 1,
 					["type"] = "square",
 					["width"] = 20,
-					["height"] = 4,
-					["level"] = 8,
 					["location"] = {
 						["y"] = -9,
 						["relPoint"] = "TOPLEFT",
 						["point"] = "TOPLEFT",
 						["x"] = 0,
 					},
+					["level"] = 8,
+					["height"] = 4,
 					["texture"] = "Flat",
 				},
 				["CENTER-DEBUFF"] = {
@@ -2706,8 +2728,26 @@ Grid2DB = {
 					["type"] = "icon",
 					["size"] = 22,
 				},
-				["manabar-color"] = {
-					["type"] = "bar-color",
+				["Rejuv2"] = {
+					["fontSize"] = 8,
+					["reverseCooldown"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 0,
+						["g"] = 1,
+						["b"] = 1,
+					},
+					["borderSize"] = 4,
+					["useStatusColor"] = true,
+					["location"] = {
+						["y"] = 8,
+						["relPoint"] = "BOTTOMRIGHT",
+						["point"] = "BOTTOMRIGHT",
+						["x"] = 0,
+					},
+					["level"] = 8,
+					["type"] = "icon",
+					["size"] = 8,
 				},
 				["manatxt"] = {
 					["type"] = "text",
@@ -2746,15 +2786,15 @@ Grid2DB = {
 				["manabar"] = {
 					["type"] = "bar",
 					["height"] = 2,
+					["orientation"] = "HORIZONTAL",
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "TOP",
 						["point"] = "TOP",
 						["x"] = 0,
 					},
-					["orientation"] = "HORIZONTAL",
-					["opacity"] = 0.8,
 					["level"] = 4,
+					["opacity"] = 0.8,
 					["texture"] = "Grid2 Flat",
 				},
 				["alpha"] = {
@@ -2766,26 +2806,8 @@ Grid2DB = {
 						["b"] = 0,
 					},
 				},
-				["Rejuv2"] = {
-					["fontSize"] = 8,
-					["reverseCooldown"] = true,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 0,
-						["g"] = 1,
-						["b"] = 1,
-					},
-					["borderSize"] = 4,
-					["useStatusColor"] = true,
-					["location"] = {
-						["y"] = 8,
-						["relPoint"] = "BOTTOMRIGHT",
-						["point"] = "BOTTOMRIGHT",
-						["x"] = 0,
-					},
-					["level"] = 8,
-					["type"] = "icon",
-					["size"] = 8,
+				["manabar-color"] = {
+					["type"] = "bar-color",
 				},
 				["raid-marker"] = {
 					["fontSize"] = 8,
@@ -2815,60 +2837,38 @@ Grid2DB = {
 					["reverseCooldown"] = true,
 					["font"] = "Accidental Presidency",
 					["type"] = "icon",
-					["useStatusColor"] = true,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "TOPRIGHT",
 						["point"] = "TOPRIGHT",
 						["x"] = 0,
 					},
+					["useStatusColor"] = true,
 					["level"] = 8,
 					["borderSize"] = 5,
 					["size"] = 10,
 				},
-				["Health-deficit"] = {
-					{
-						["color"] = {
-							["a"] = 0.600000023841858,
-							["b"] = 0.788235294117647,
-							["g"] = 0.188235294117647,
-							["r"] = 0.63921568627451,
-						},
-					}, -- [1]
-					{
-						["color"] = {
-							["a"] = 0.7000000000000001,
-							["b"] = 0.2196078431372549,
-							["g"] = 0.2196078431372549,
-							["r"] = 0.2196078431372549,
-						},
-						["reverse"] = true,
-					}, -- [2]
-					{
-						["color"] = {
-							["a"] = 0.7000000000000001,
-							["b"] = 0.2196078431372549,
-							["g"] = 0.2196078431372549,
-							["r"] = 0.2196078431372549,
-						},
-						["noOverlap"] = true,
-					}, -- [3]
-					["type"] = "multibar",
-					["reverseFill"] = true,
-					["orientation"] = "HORIZONTAL",
-					["level"] = 3,
-					["textureColor"] = {
-						["a"] = 0.8,
-						["r"] = 1,
+				["Regrowth"] = {
+					["type"] = "icon",
+					["reverseCooldown"] = true,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 0,
 						["g"] = 1,
-						["b"] = 1,
+						["b"] = 0,
 					},
+					["font"] = "Accidental Presidency",
+					["borderSize"] = 4,
+					["fontSize"] = 8,
 					["location"] = {
 						["y"] = 0,
-						["relPoint"] = "CENTER",
-						["point"] = "CENTER",
-						["x"] = 0,
+						["relPoint"] = "BOTTOMRIGHT",
+						["point"] = "BOTTOMRIGHT",
+						["x"] = -8,
 					},
+					["level"] = 8,
+					["useStatusColor"] = true,
+					["size"] = 8,
 				},
 				["death-color"] = {
 					["type"] = "bar-color",
@@ -4874,13 +4874,13 @@ Grid2DB = {
 				["raid-marker"] = {
 					["raid-icon-player"] = 50,
 				},
-				["Line-Indicator-color"] = {
-					["buff-Riptide-mine"] = 50,
+				["death"] = {
+					["death"] = 50,
 				},
 				["tooltip"] = {
 				},
-				["death"] = {
-					["death"] = 50,
+				["Line-Indicator-color"] = {
+					["buff-Riptide-mine"] = 50,
 				},
 				["corner-top-centerright-color"] = {
 				},
@@ -4943,11 +4943,10 @@ Grid2DB = {
 				["name-party"] = {
 					["name"] = 50,
 				},
-				["Health-deficit"] = {
-					["heal-absorbs"] = 2,
-					["shields-overflow"] = 4,
-					["shields"] = 3,
-					["health-deficit"] = 1,
+				["Regrowth"] = {
+					["buff-EnvelopingMist-mine"] = 51,
+					["buff-PrayerofMending-mine"] = 52,
+					["buff-Rejuvenation(Germination)-mine"] = 54,
 				},
 				["name-party-color"] = {
 					["classcolor"] = 50,
@@ -5025,10 +5024,11 @@ Grid2DB = {
 				["Hot-TopRight"] = {
 					["debuff-Shadow-Touched"] = 50,
 				},
-				["Regrowth"] = {
-					["buff-EnvelopingMist-mine"] = 51,
-					["buff-PrayerofMending-mine"] = 52,
-					["buff-Rejuvenation(Germination)-mine"] = 54,
+				["Health-deficit"] = {
+					["heal-absorbs"] = 2,
+					["shields-overflow"] = 4,
+					["shields"] = 3,
+					["health-deficit"] = 1,
 				},
 				["death-color"] = {
 					["death"] = 50,
@@ -5643,15 +5643,15 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
+				["text-down-color"] = {
+					["classcolor"] = 99,
+				},
 				["text-up-color"] = {
 					["charmed"] = 65,
 					["feign-death"] = 96,
 					["health-deficit"] = 50,
 					["offline"] = 93,
 					["death"] = 95,
-				},
-				["text-down-color"] = {
-					["classcolor"] = 99,
 				},
 				["icon-center"] = {
 					["ready-check"] = 150,
@@ -6320,23 +6320,23 @@ Grid2DB = {
 					["type"] = "border",
 				},
 				["mana"] = {
-					["location"] = {
-						["y"] = 0,
-						["relPoint"] = "BOTTOMRIGHT",
-						["point"] = "BOTTOMRIGHT",
-						["x"] = 0,
-					},
+					["height"] = 2,
 					["type"] = "bar",
-					["orientation"] = "HORIZONTAL",
+					["backTexture"] = "Clean",
 					["backColor"] = {
 						["a"] = 0.5039972066879272,
 						["r"] = 0,
 						["g"] = 0,
 						["b"] = 0,
 					},
-					["backTexture"] = "Clean",
+					["orientation"] = "HORIZONTAL",
 					["level"] = 3,
-					["height"] = 2,
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "BOTTOMRIGHT",
+						["point"] = "BOTTOMRIGHT",
+						["x"] = 0,
+					},
 					["texture"] = "Melli Dark",
 				},
 				["corner-top-left"] = {
@@ -6477,16 +6477,16 @@ Grid2DB = {
 						["r"] = 0,
 					},
 					["width"] = 80,
-					["orientation"] = "HORIZONTAL",
-					["height"] = 3,
+					["backTexture"] = "Aluminium",
 					["location"] = {
 						["y"] = -4,
 						["relPoint"] = "BOTTOMRIGHT",
 						["point"] = "BOTTOMRIGHT",
 						["x"] = 0,
 					},
+					["height"] = 3,
 					["level"] = 3,
-					["backTexture"] = "Aluminium",
+					["orientation"] = "HORIZONTAL",
 					["texture"] = "Melli Dark",
 				},
 				["corner-bottom-left"] = {
@@ -7637,23 +7637,23 @@ Grid2DB = {
 					["fontSize"] = 10,
 				},
 				["mana"] = {
-					["orientation"] = "HORIZONTAL",
+					["height"] = 4,
 					["type"] = "bar",
-					["location"] = {
-						["y"] = 0,
-						["relPoint"] = "BOTTOM",
-						["point"] = "BOTTOM",
-						["x"] = 0,
-					},
+					["backTexture"] = "Clean",
 					["backColor"] = {
 						["a"] = 0.3061864972114563,
 						["r"] = 0,
 						["g"] = 0,
 						["b"] = 0,
 					},
-					["backTexture"] = "Clean",
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "BOTTOM",
+						["point"] = "BOTTOM",
+						["x"] = 0,
+					},
 					["level"] = 3,
-					["height"] = 4,
+					["orientation"] = "HORIZONTAL",
 					["texture"] = "Clean",
 				},
 				["border"] = {
@@ -7865,6 +7865,31 @@ Grid2DB = {
 				["name"] = {
 					["defaultName"] = 1,
 				},
+				["buff-Renew-mine"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["mine"] = 1,
+					["load"] = {
+						["playerClass"] = {
+							["PRIEST"] = true,
+						},
+					},
+					["spellName"] = 139,
+				},
+				["classcolor"] = {
+					["colors"] = {
+						["SHAMAN"] = {
+							["r"] = 0.0901960784313726,
+							["g"] = 0.392156862745098,
+							["b"] = 0.67843137254902,
+						},
+					},
+				},
 				["buff-MarkoftheWild"] = {
 					["type"] = "buff",
 					["color1"] = {
@@ -7881,31 +7906,6 @@ Grid2DB = {
 					},
 					["mine"] = false,
 					["spellName"] = 1126,
-				},
-				["classcolor"] = {
-					["colors"] = {
-						["SHAMAN"] = {
-							["r"] = 0.0901960784313726,
-							["g"] = 0.392156862745098,
-							["b"] = 0.67843137254902,
-						},
-					},
-				},
-				["buff-Renew-mine"] = {
-					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
-					["mine"] = 1,
-					["load"] = {
-						["playerClass"] = {
-							["PRIEST"] = true,
-						},
-					},
-					["spellName"] = 139,
 				},
 				["buff-PowerWord:Fortitude"] = {
 					["type"] = "buff",
@@ -7995,10 +7995,10 @@ Grid2DB = {
 				["health"] = {
 					["health-current"] = 99,
 				},
-				["text-up"] = {
-				},
 				["corner-bottom-left"] = {
 					["threat"] = 50,
+				},
+				["text-up"] = {
 				},
 				["text-up-color"] = {
 					["charmed"] = 65,
@@ -8476,16 +8476,16 @@ Grid2DB = {
 						["b"] = 0,
 					},
 					["opacity"] = 1,
+					["height"] = 2,
+					["backTexture"] = "Clean",
+					["orientation"] = "HORIZONTAL",
+					["level"] = 3,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "BOTTOM",
 						["point"] = "BOTTOM",
 						["x"] = 0,
 					},
-					["orientation"] = "HORIZONTAL",
-					["backTexture"] = "Clean",
-					["level"] = 3,
-					["height"] = 2,
 					["texture"] = "Clean",
 				},
 				["health-color"] = {
@@ -8586,21 +8586,21 @@ Grid2DB = {
 						["r"] = 0,
 					},
 				},
-				["buff-Rejuvenation-mine"] = {
+				["buff-Regrowth-mine"] = {
 					["type"] = "buff",
-					["color1"] = {
-						["a"] = 1,
-						["b"] = 1,
-						["g"] = 1,
-						["r"] = 1,
-					},
+					["spellName"] = 8936,
+					["mine"] = 1,
 					["load"] = {
 						["playerClass"] = {
 							["DRUID"] = true,
 						},
 					},
-					["mine"] = 1,
-					["spellName"] = 1058,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
 				},
 				["buff-Renew-mine"] = {
 					["type"] = "buff",
@@ -8626,14 +8626,14 @@ Grid2DB = {
 						},
 					},
 				},
-				["buff-PowerWord:Fortitude"] = {
+				["buff-MarkoftheWild"] = {
 					["type"] = "buff",
-					["spellName"] = "Power Word: Fortitude",
+					["spellName"] = 1126,
 					["missing"] = true,
 					["mine"] = false,
 					["load"] = {
 						["playerClass"] = {
-							["PRIEST"] = true,
+							["DRUID"] = true,
 						},
 					},
 					["color1"] = {
@@ -8643,8 +8643,21 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
-				["name"] = {
-					["defaultName"] = 1,
+				["buff-Rejuvenation-mine"] = {
+					["type"] = "buff",
+					["color1"] = {
+						["a"] = 1,
+						["b"] = 1,
+						["g"] = 1,
+						["r"] = 1,
+					},
+					["load"] = {
+						["playerClass"] = {
+							["DRUID"] = true,
+						},
+					},
+					["mine"] = 1,
+					["spellName"] = 1058,
 				},
 				["debuff-Disease"] = {
 					["load"] = {
@@ -8663,13 +8676,8 @@ Grid2DB = {
 						},
 					},
 				},
-				["debuff-Poison"] = {
-					["load"] = {
-						["playerClass"] = {
-							["DRUID"] = true,
-							["PALADIN"] = true,
-						},
-					},
+				["name"] = {
+					["defaultName"] = 1,
 				},
 				["buff-Thorns-mine"] = {
 					["type"] = "buff",
@@ -8697,33 +8705,25 @@ Grid2DB = {
 						},
 					},
 				},
-				["buff-Regrowth-mine"] = {
-					["type"] = "buff",
-					["spellName"] = 8936,
-					["mine"] = 1,
+				["debuff-Poison"] = {
 					["load"] = {
 						["playerClass"] = {
 							["DRUID"] = true,
+							["PALADIN"] = true,
 						},
-					},
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 1,
-						["g"] = 1,
-						["b"] = 1,
 					},
 				},
 				["heals-incoming"] = {
 					["includePlayerHeals"] = true,
 				},
-				["buff-MarkoftheWild"] = {
+				["buff-PowerWord:Fortitude"] = {
 					["type"] = "buff",
-					["spellName"] = 1126,
+					["spellName"] = "Power Word: Fortitude",
 					["missing"] = true,
 					["mine"] = false,
 					["load"] = {
 						["playerClass"] = {
-							["DRUID"] = true,
+							["PRIEST"] = true,
 						},
 					},
 					["color1"] = {
@@ -8789,8 +8789,7 @@ Grid2DB = {
 				["icon-left"] = {
 					["raid-icon-player"] = 155,
 				},
-				["corner-bottom-left"] = {
-					["buff-Regrowth-mine"] = 50,
+				["text-up"] = {
 				},
 				["text-up-color"] = {
 					["charmed"] = 65,
@@ -8799,7 +8798,8 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
-				["text-up"] = {
+				["corner-bottom-left"] = {
+					["buff-Regrowth-mine"] = 50,
 				},
 				["corner-top-right"] = {
 					["debuff-Disease"] = 50,
@@ -9070,15 +9070,15 @@ Grid2DB = {
 					["offline"] = 93,
 					["death"] = 95,
 				},
+				["text-down-color"] = {
+					["classcolor"] = 99,
+				},
 				["text-up-color"] = {
 					["charmed"] = 65,
 					["feign-death"] = 96,
 					["health-deficit"] = 50,
 					["offline"] = 93,
 					["death"] = 95,
-				},
-				["text-down-color"] = {
-					["classcolor"] = 99,
 				},
 				["icon-center"] = {
 					["ready-check"] = 150,
@@ -9452,23 +9452,23 @@ Grid2DB = {
 					["fontFlags"] = "OUTLINE",
 				},
 				["mana"] = {
-					["backTexture"] = "Clean",
-					["type"] = "bar",
-					["orientation"] = "HORIZONTAL",
-					["backColor"] = {
-						["a"] = 0.5039972066879272,
-						["b"] = 0,
-						["g"] = 0,
-						["r"] = 0,
-					},
-					["height"] = 2,
-					["level"] = 3,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "BOTTOMRIGHT",
 						["point"] = "BOTTOMRIGHT",
 						["x"] = 0,
 					},
+					["type"] = "bar",
+					["height"] = 2,
+					["backColor"] = {
+						["a"] = 0.5039972066879272,
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 0,
+					},
+					["orientation"] = "HORIZONTAL",
+					["level"] = 3,
+					["backTexture"] = "Clean",
 					["texture"] = "Clean",
 				},
 				["background"] = {
@@ -9602,16 +9602,16 @@ Grid2DB = {
 						["b"] = 0,
 					},
 					["width"] = 80,
+					["orientation"] = "HORIZONTAL",
+					["backTexture"] = "Aluminium",
+					["height"] = 3,
+					["level"] = 3,
 					["location"] = {
 						["y"] = -4,
 						["relPoint"] = "BOTTOMRIGHT",
 						["point"] = "BOTTOMRIGHT",
 						["x"] = 0,
 					},
-					["height"] = 3,
-					["backTexture"] = "Aluminium",
-					["level"] = 3,
-					["orientation"] = "HORIZONTAL",
 					["texture"] = "Aluminium",
 				},
 				["text-up"] = {

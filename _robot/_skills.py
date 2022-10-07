@@ -58,6 +58,10 @@ skills["hunter"] = [
     {"name": "misdirection", "key": "2", "modifier": "shift"},
     {"name": "hunters mark", "key": "3", "modifier": "shift"},
     {"name": "concussive shot", "key": "1"},
+    {"name": "cower pet", "key": "4", "modifier": "alt"},
+    {"name": "last stand pet", "key": "5", "modifier": "alt"},
+    {"name": "wing clip", "key": "1", "modifier": "shift"},
+
     {"name": "healthstone", "key": "4", "modifier": "shift"},
     {"name": "healing potion", "key": "5", "modifier": "shift"},
     {"name": "fel blossom", "key": "6", "modifier": "shift"},

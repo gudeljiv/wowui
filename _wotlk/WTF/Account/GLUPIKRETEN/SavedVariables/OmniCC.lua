@@ -4,10 +4,10 @@ OmniCCDB = {
 		["Mxzq - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
-		["Moolatz - Golemagg"] = "Default",
-		["Tandaram - Jin'do"] = "Default",
-		["Augustin - Golemagg"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
+		["Moolatz - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Battlearm - Jin'do"] = "Default",
@@ -16,7 +16,7 @@ OmniCCDB = {
 		["Vermin - Golemagg"] = "Default",
 		["Tudum - Jin'do"] = "Default",
 		["Wells - Jin'do"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
+		["Augustin - Golemagg"] = "Default",
 	},
 	["global"] = {
 		["dbVersion"] = 6,
@@ -135,6 +135,7 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
+	["engine"] = "AniUpdater",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -145,7 +146,7 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["engine"] = "AniUpdater",
+	["version"] = "8.1.1",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -261,5 +262,4 @@ OmniCC4Config = {
 			["fontSize"] = 18,
 		},
 	},
-	["version"] = "8.1.1",
 }

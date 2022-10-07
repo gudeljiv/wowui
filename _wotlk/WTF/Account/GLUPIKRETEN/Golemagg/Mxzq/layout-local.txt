@@ -48,6 +48,13 @@ X: 0
 Y: -104
 W: 384
 H: 512
+Frame: MerchantFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 16
+Y: -116
+W: 336
+H: 444
 Frame: ItemTextFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -135,8 +142,8 @@ H: 50
 Frame: TellMeWhen_ConfigWarning
 FrameLevel: 1
 Anchor: TOP
-X: -53
-Y: -197
+X: 451
+Y: -231
 W: 330
 H: 114
 Frame: LootFrame
@@ -146,10 +153,3 @@ X: 480
 Y: -264
 W: 170
 H: 240
-Frame: MerchantFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 16
-Y: -116
-W: 336
-H: 444

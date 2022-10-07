@@ -6,42 +6,29 @@ Bagnon_Sets = {
 	},
 	["fridgeColor"] = {
 	},
-	["displayCraft"] = false,
+	["displayBank"] = false,
 	["engineerColor"] = {
 	},
-	["inscribeColor"] = {
-	},
+	["glowPoor"] = false,
 	["herbColor"] = {
 	},
-	["glowUnusable"] = true,
+	["enchantColor"] = {
+	},
 	["displayMail"] = false,
-	["displayBank"] = false,
+	["inscribeColor"] = {
+	},
 	["soulColor"] = {
 	},
 	["closeBank"] = false,
 	["glowQuest"] = true,
-	["displayAuction"] = false,
-	["quiverColor"] = {
-	},
-	["glowQuality"] = true,
-	["reagentColor"] = {
-	},
-	["gemColor"] = {
-	},
-	["enchantColor"] = {
-	},
-	["glowAlpha"] = 0.5,
-	["emptySlots"] = true,
 	["glowNew"] = false,
-	["normalColor"] = {
+	["quiverColor"] = {
 	},
 	["profiles"] = {
 	},
-	["mineColor"] = {
+	["reagentColor"] = {
 	},
-	["displayTrade"] = false,
-	["version"] = "9.1.4",
-	["keyColor"] = {
+	["gemColor"] = {
 	},
 	["global"] = {
 		["inventory"] = {
@@ -71,28 +58,30 @@ Bagnon_Sets = {
 			},
 			["point"] = "TOPRIGHT",
 			["hiddenBags"] = {
+				[-2] = true,
 			},
 			["color"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
-				0.791406214237213, -- [4]
+				0.7900000065565109, -- [4]
 			},
 			["hiddenRules"] = {
 			},
-			["y"] = -485.6473388671875,
-			["x"] = -214.66064453125,
-			["search"] = false,
+			["y"] = -293.1571044921875,
+			["bagBreak"] = false,
+			["x"] = -408.98974609375,
+			["sort"] = true,
 			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
 				1, -- [4]
 			},
-			["sort"] = true,
-			["options"] = false,
-			["bagToggle"] = false,
 			["broker"] = false,
+			["options"] = true,
+			["bagToggle"] = true,
+			["search"] = true,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -190,31 +179,44 @@ Bagnon_Sets = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
-				1, -- [4]
+				0.7900000065565109, -- [4]
 			},
 			["sort"] = true,
 			["spacing"] = 2,
-			["bagToggle"] = false,
+			["bagToggle"] = true,
 			["columns"] = 18,
 			["alpha"] = 1,
+			["scale"] = 1,
+			["bagBreak"] = false,
+			["x"] = -751.079833984375,
+			["search"] = true,
+			["broker"] = false,
+			["itemScale"] = 1,
+			["hiddenRules"] = {
+			},
+			["y"] = -293.3055419921875,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["bagBreak"] = false,
-			["x"] = -665.8687744140625,
-			["search"] = false,
-			["broker"] = false,
-			["y"] = -315.9873046875,
-			["hiddenRules"] = {
-			},
-			["itemScale"] = 1,
-			["scale"] = 1,
 		},
 	},
+	["glowAlpha"] = 0.5,
+	["emptySlots"] = true,
+	["keyColor"] = {
+	},
+	["normalColor"] = {
+	},
+	["glowQuality"] = true,
+	["mineColor"] = {
+	},
+	["displayTrade"] = false,
+	["version"] = "9.2.2",
+	["displayAuction"] = false,
+	["glowUnusable"] = true,
 	["colorSlots"] = false,
-	["glowPoor"] = false,
+	["displayCraft"] = false,
 	["displayScrapping"] = false,
 }
