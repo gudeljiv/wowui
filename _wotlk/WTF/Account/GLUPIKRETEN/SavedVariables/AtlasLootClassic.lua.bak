@@ -5,17 +5,17 @@ AtlasLootClassicDB = {
 		["VendorPrice"] = {
 			[28909] = "arcanerune:8",
 			[29472] = "honor:16650",
-			[34129] = "honor:16650",
+			[28911] = "arcanerune:8",
 			[28910] = "arcanerune:8",
 			[29469] = "honor:16650",
 			[28903] = "arcanerune:2",
 			[28907] = "arcanerune:2",
-			[29466] = "honor:16650",
+			[34129] = "honor:16650",
 			[29470] = "honor:16650",
 			[28904] = "arcanerune:2",
 			[28908] = "arcanerune:2",
 			[28912] = "arcanerune:8",
-			[28911] = "arcanerune:8",
+			[29466] = "honor:16650",
 		},
 	},
 	["profileKeys"] = {
@@ -50,9 +50,9 @@ AtlasLootClassicDB = {
 		["Mxzq - Golemagg"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
-		["Testxv - Golemagg"] = "Testxv - Golemagg",
-		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Battlearm - Hydraxian Waterlords"] = "Default",
+		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Dmitar - Golemagg"] = "Default",
 		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
@@ -73,6 +73,11 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -81,11 +86,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
 			},
 		},
 		["Verminz - Golemagg"] = {
@@ -375,6 +375,16 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
+		["Battlearm - Hydraxian Waterlords"] = {
+		},
+		["Testxv - Golemagg"] = {
+		},
+		["Pitchwise - Ashbringer"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
 		["xVermin"] = {
 			["GUI"] = {
 				["selectedGameVersion"] = 2,
@@ -409,16 +419,6 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
-		["Testxv - Golemagg"] = {
-		},
-		["Pitchwise - Ashbringer"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-		},
-		["Battlearm - Hydraxian Waterlords"] = {
-		},
 		["Jaroslav - Golemagg"] = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
@@ -437,22 +437,9 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
-			["GUI"] = {
-				["selectedGameVersion"] = 2,
-				["selected"] = {
-					nil, -- [1]
-					"HellfireRamparts", -- [2]
-					2, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-				["point"] = {
-					"LEFT", -- [1]
-					nil, -- [2]
-					"LEFT", -- [3]
-					337.781494140625, -- [4]
-					156.011474609375, -- [5]
-				},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -465,9 +452,22 @@ AtlasLootClassicDB = {
 					},
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+			["GUI"] = {
+				["point"] = {
+					"LEFT", -- [1]
+					nil, -- [2]
+					"LEFT", -- [3]
+					337.781494140625, -- [4]
+					156.011474609375, -- [5]
+				},
+				["selectedGameVersion"] = 2,
+				["selected"] = {
+					nil, -- [1]
+					"HellfireRamparts", -- [2]
+					2, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
 			},
 		},
 		["Judawise - Golemagg"] = {
