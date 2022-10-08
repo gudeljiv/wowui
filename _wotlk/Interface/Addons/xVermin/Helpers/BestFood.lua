@@ -695,7 +695,8 @@ NeedsFoodBadly.Food = {
 	[29293] = {id = 29293, name = 'Bonestripper Buzzard Hotwings', lvl = 55, conj = false, hp = 2148, spi = 14, stam = 14},
 	[33452] = {id = 33452, name = 'Honey-Spiced Lichen', lvl = 65, conj = false, hp = 18480},
 	[33444] = {id = 33444, name = 'Pungent Seal Whey', lvl = 65, conj = false, mp = 12840},
-	[33449] = {id = 33449, name = 'Crusty Flatbread', lvl = 65, conj = false, hp = 18480}
+	[33443] = {id = 33443, name = 'Sour Goat Cheese', lvl = 65, conj = false, hp = 18480},
+	[33454] = {id = 33454, name = 'Salted Venison', lvl = 65, conj = false, hp = 18480}
 }
 NeedsFoodBadly.Potion = {
 	[31677] = {id = 31677, name = 'Fel Mana Potion', lvl = 60, low = 3200, high = 3200, mp = true},

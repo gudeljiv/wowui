@@ -144,7 +144,7 @@ ErrorFilter: enabled
 ErrorMonster: disabled
 AccountWideRaidProfiles: disabled
 EnhancedRaidFrames: enabled
-WeaponSwingTimer: disabled
+WeaponSwingTimer: enabled
 EasyFrames: enabled
 BigWigs: disabled
 BigWigs_Onyxia: disabled

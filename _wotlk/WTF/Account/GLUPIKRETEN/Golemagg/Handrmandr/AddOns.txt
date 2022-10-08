@@ -125,7 +125,7 @@ VuhDoOptions: disabled
 ErrorFilter: enabled
 ErrorMonster: disabled
 EnhancedRaidFrames: enabled
-WeaponSwingTimer: disabled
+WeaponSwingTimer: enabled
 EasyFrames: enabled
 BigWigs: disabled
 BigWigs_Onyxia: disabled

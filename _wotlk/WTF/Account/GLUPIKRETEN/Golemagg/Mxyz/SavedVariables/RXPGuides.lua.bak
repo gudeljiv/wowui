@@ -9,7 +9,7 @@ RXPCData = {
 	},
 	["xprate"] = 1.5,
 	["JoyousJourneys"] = true,
-	["frameHeight"] = 125.000114440918,
+	["frameHeight"] = 125.000129699707,
 	["currentGuideName"] = "",
 	["stepSkip"] = {
 	},

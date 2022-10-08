@@ -129,7 +129,7 @@ ErrorMonster: disabled
 Blizzard_CompactRaidFrames: enabled
 Blizzard_CUFProfiles: enabled
 EnhancedRaidFrames: enabled
-WeaponSwingTimer: disabled
+WeaponSwingTimer: enabled
 EasyFrames: enabled
 BigWigs: disabled
 BigWigs_Onyxia: disabled

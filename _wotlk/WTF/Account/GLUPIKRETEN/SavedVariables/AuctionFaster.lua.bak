@@ -665,8 +665,28 @@ AuctionFasterDb = {
 					["lowestBid"] = 450000,
 					["averageBid"] = 454143,
 				}, -- [2]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 31676273,
+					["totalQty"] = 63,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 63,
+					["weightedAverageBuy"] = 522778,
+					["totalBuy"] = 26136316,
+					["lowestBuy"] = 510000,
+					["totalBid"] = 25217446,
+					["weightedTotalBuy"] = 32935025,
+					["estimatedVolume"] = 922.32,
+					["highestBid"] = 522990,
+					["weightedAverageBid"] = 502797,
+					["totalItems"] = 732,
+					["scanTime"] = 1665215207,
+					["highestBuy"] = 522992,
+					["lowestBid"] = 496829,
+					["averageBid"] = 504348,
+				}, -- [3]
 			},
-			["lastScanTime"] = 1665167635,
+			["lastScanTime"] = 1665215207,
 			["settings"] = {
 				["priceModel"] = "WeightedAverage",
 				["rememberLastPrice"] = false,
@@ -801,8 +821,28 @@ AuctionFasterDb = {
 					["lowestBid"] = 13025,
 					["averageBid"] = 14674,
 				}, -- [2]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 10625673,
+					["totalQty"] = 777,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 777,
+					["weightedAverageBuy"] = 14301,
+					["totalBuy"] = 714121,
+					["lowestBuy"] = 12480,
+					["totalBid"] = 682167,
+					["weightedTotalBuy"] = 11112376,
+					["estimatedVolume"] = 8174.04,
+					["highestBid"] = 14124,
+					["weightedAverageBid"] = 13675,
+					["totalItems"] = 526,
+					["scanTime"] = 1665215212,
+					["highestBuy"] = 14459,
+					["lowestBid"] = 12460,
+					["averageBid"] = 13643,
+				}, -- [3]
 			},
-			["lastScanTime"] = 1665167637,
+			["lastScanTime"] = 1665215212,
 			["settings"] = {
 				["priceModel"] = "WeightedAverage",
 				["rememberLastPrice"] = false,
@@ -1096,6 +1136,44 @@ AuctionFasterDb = {
 			["icon"] = 132976,
 			["buy"] = 136984,
 		},
+		["21752Thorium Setting"] = {
+			["prices"] = {
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 33711,
+					["totalQty"] = 12,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 12,
+					["weightedAverageBuy"] = 2844,
+					["totalBuy"] = 28459,
+					["lowestBuy"] = 2844,
+					["totalBid"] = 28307,
+					["weightedTotalBuy"] = 34137,
+					["estimatedVolume"] = 85.67999999999999,
+					["highestBid"] = 2845,
+					["weightedAverageBid"] = 2809,
+					["scanTime"] = 1647359357,
+					["highestBuy"] = 2845,
+					["totalItems"] = 357,
+					["lowestBid"] = 2702,
+					["averageBid"] = 2830,
+				}, -- [1]
+			},
+			["itemName"] = "Thorium Setting",
+			["settings"] = {
+				["priceModel"] = "Simple",
+				["rememberLastPrice"] = false,
+				["duration"] = 3,
+				["alwaysUndercut"] = true,
+				["rememberStack"] = true,
+				["useCustomDuration"] = false,
+			},
+			["buy"] = 2844,
+			["bid"] = 2702,
+			["lastScanTime"] = 1647359357,
+			["icon"] = 133273,
+			["itemId"] = 21752,
+		},
 		["7911Truesilver Ore"] = {
 			["prices"] = {
 				{
@@ -1248,44 +1326,6 @@ AuctionFasterDb = {
 			["icon"] = 134213,
 			["buy"] = 26489,
 		},
-		["21752Thorium Setting"] = {
-			["prices"] = {
-				{
-					["averageBuy"] = 1,
-					["weightedTotalBid"] = 33711,
-					["totalQty"] = 12,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 12,
-					["weightedAverageBuy"] = 2844,
-					["totalBuy"] = 28459,
-					["lowestBuy"] = 2844,
-					["totalBid"] = 28307,
-					["weightedTotalBuy"] = 34137,
-					["estimatedVolume"] = 85.67999999999999,
-					["highestBid"] = 2845,
-					["weightedAverageBid"] = 2809,
-					["scanTime"] = 1647359357,
-					["highestBuy"] = 2845,
-					["totalItems"] = 357,
-					["lowestBid"] = 2702,
-					["averageBid"] = 2830,
-				}, -- [1]
-			},
-			["itemName"] = "Thorium Setting",
-			["settings"] = {
-				["priceModel"] = "Simple",
-				["rememberLastPrice"] = false,
-				["duration"] = 3,
-				["alwaysUndercut"] = true,
-				["rememberStack"] = true,
-				["useCustomDuration"] = false,
-			},
-			["buy"] = 2844,
-			["bid"] = 2702,
-			["lastScanTime"] = 1647359357,
-			["icon"] = 133273,
-			["itemId"] = 21752,
-		},
 		["36325Halgrind Carapace of Strength"] = {
 			["prices"] = {
 				{
@@ -1323,6 +1363,64 @@ AuctionFasterDb = {
 			["lastScanTime"] = 1665075643,
 			["icon"] = 132754,
 			["buy"] = 300000,
+		},
+		["44269Two of Nobles"] = {
+			["prices"] = {
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 183676098,
+					["totalQty"] = 8,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 8,
+					["weightedAverageBuy"] = 24009947,
+					["totalBuy"] = 192079585,
+					["lowestBuy"] = 24009940,
+					["totalBid"] = 183676098,
+					["weightedTotalBuy"] = 192079577,
+					["estimatedVolume"] = 16.96,
+					["highestBid"] = 24009941,
+					["weightedAverageBid"] = 22959512,
+					["totalItems"] = 106,
+					["scanTime"] = 1665088358,
+					["highestBuy"] = 24009954,
+					["lowestBid"] = 22809443,
+					["averageBid"] = 22959512,
+				}, -- [1]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 254699337,
+					["totalQty"] = 15,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 15,
+					["weightedAverageBuy"] = 17720848,
+					["totalBuy"] = 265812737,
+					["lowestBuy"] = 15909999,
+					["totalBid"] = 254699337,
+					["weightedTotalBuy"] = 265812722,
+					["estimatedVolume"] = 47.7,
+					["highestBid"] = 19005000,
+					["weightedAverageBid"] = 16979955,
+					["scanTime"] = 1665127330,
+					["highestBuy"] = 19503000,
+					["totalItems"] = 159,
+					["lowestBid"] = 15114500,
+					["averageBid"] = 16979955,
+				}, -- [2]
+			},
+			["itemName"] = "Two of Nobles",
+			["settings"] = {
+				["priceModel"] = "Simple",
+				["rememberLastPrice"] = false,
+				["useCustomDuration"] = false,
+				["duration"] = 3,
+				["rememberStack"] = true,
+				["alwaysUndercut"] = true,
+			},
+			["buy"] = 15909999,
+			["bid"] = 15114500,
+			["lastScanTime"] = 1665127330,
+			["icon"] = 237168,
+			["itemId"] = 44269,
 		},
 		["36325Halgrind Carapace of the Seer"] = {
 			["prices"] = {
@@ -1476,64 +1574,6 @@ AuctionFasterDb = {
 			["icon"] = 133105,
 			["buy"] = 149998,
 		},
-		["44269Two of Nobles"] = {
-			["prices"] = {
-				{
-					["averageBuy"] = 1,
-					["weightedTotalBid"] = 183676098,
-					["totalQty"] = 8,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 8,
-					["weightedAverageBuy"] = 24009947,
-					["totalBuy"] = 192079585,
-					["lowestBuy"] = 24009940,
-					["totalBid"] = 183676098,
-					["weightedTotalBuy"] = 192079577,
-					["estimatedVolume"] = 16.96,
-					["highestBid"] = 24009941,
-					["weightedAverageBid"] = 22959512,
-					["totalItems"] = 106,
-					["scanTime"] = 1665088358,
-					["highestBuy"] = 24009954,
-					["lowestBid"] = 22809443,
-					["averageBid"] = 22959512,
-				}, -- [1]
-				{
-					["averageBuy"] = 1,
-					["weightedTotalBid"] = 254699337,
-					["totalQty"] = 15,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 15,
-					["weightedAverageBuy"] = 17720848,
-					["totalBuy"] = 265812737,
-					["lowestBuy"] = 15909999,
-					["totalBid"] = 254699337,
-					["weightedTotalBuy"] = 265812722,
-					["estimatedVolume"] = 47.7,
-					["highestBid"] = 19005000,
-					["weightedAverageBid"] = 16979955,
-					["scanTime"] = 1665127330,
-					["highestBuy"] = 19503000,
-					["totalItems"] = 159,
-					["lowestBid"] = 15114500,
-					["averageBid"] = 16979955,
-				}, -- [2]
-			},
-			["itemName"] = "Two of Nobles",
-			["settings"] = {
-				["priceModel"] = "Simple",
-				["rememberLastPrice"] = false,
-				["useCustomDuration"] = false,
-				["duration"] = 3,
-				["rememberStack"] = true,
-				["alwaysUndercut"] = true,
-			},
-			["buy"] = 15909999,
-			["bid"] = 15114500,
-			["lastScanTime"] = 1665127330,
-			["icon"] = 237168,
-			["itemId"] = 44269,
-		},
 		["36913Saronite Bar"] = {
 			["prices"] = {
 				{
@@ -1668,6 +1708,44 @@ AuctionFasterDb = {
 			["icon"] = 134133,
 			["buy"] = 14000096,
 		},
+		["39690Volatile Blasting Trigger"] = {
+			["prices"] = {
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 5058040,
+					["totalQty"] = 91,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 91,
+					["weightedAverageBuy"] = 58784,
+					["totalBuy"] = 2939277,
+					["lowestBuy"] = 58783,
+					["totalBid"] = 2780337,
+					["weightedTotalBuy"] = 5349369,
+					["estimatedVolume"] = 198.38,
+					["highestBid"] = 55849,
+					["weightedAverageBid"] = 55582,
+					["totalItems"] = 109,
+					["scanTime"] = 1665087617,
+					["highestBuy"] = 58788,
+					["lowestBid"] = 55550,
+					["averageBid"] = 55606,
+				}, -- [1]
+			},
+			["itemName"] = "Volatile Blasting Trigger",
+			["settings"] = {
+				["priceModel"] = "Simple",
+				["rememberLastPrice"] = false,
+				["useCustomDuration"] = false,
+				["duration"] = 3,
+				["rememberStack"] = true,
+				["alwaysUndercut"] = true,
+			},
+			["buy"] = 58783,
+			["bid"] = 55550,
+			["lastScanTime"] = 1665087617,
+			["icon"] = 133862,
+			["itemId"] = 39690,
+		},
 		["22575Mote of Life"] = {
 			["stackSize"] = 10,
 			["itemName"] = "Mote of Life",
@@ -1707,30 +1785,30 @@ AuctionFasterDb = {
 			["icon"] = 132840,
 			["itemId"] = 22575,
 		},
-		["39690Volatile Blasting Trigger"] = {
+		["43853Titanium Skeleton Key"] = {
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 5058040,
-					["totalQty"] = 91,
+					["weightedTotalBid"] = 3536070,
+					["totalQty"] = 745,
 					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 91,
-					["weightedAverageBuy"] = 58784,
-					["totalBuy"] = 2939277,
-					["lowestBuy"] = 58783,
-					["totalBid"] = 2780337,
-					["weightedTotalBuy"] = 5349369,
-					["estimatedVolume"] = 198.38,
-					["highestBid"] = 55849,
-					["weightedAverageBid"] = 55582,
-					["totalItems"] = 109,
-					["scanTime"] = 1665087617,
-					["highestBuy"] = 58788,
-					["lowestBid"] = 55550,
-					["averageBid"] = 55606,
+					["totalQtyWithBuy"] = 745,
+					["weightedAverageBuy"] = 4944,
+					["totalBuy"] = 248834,
+					["lowestBuy"] = 4500,
+					["totalBid"] = 238182,
+					["weightedTotalBuy"] = 3683340,
+					["estimatedVolume"] = 25836.6,
+					["highestBid"] = 5000,
+					["weightedAverageBid"] = 4746,
+					["totalItems"] = 1734,
+					["scanTime"] = 1665215368,
+					["highestBuy"] = 5068,
+					["lowestBid"] = 4437,
+					["averageBid"] = 4763,
 				}, -- [1]
 			},
-			["itemName"] = "Volatile Blasting Trigger",
+			["itemName"] = "Titanium Skeleton Key",
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -1739,11 +1817,11 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
 			},
-			["buy"] = 58783,
-			["bid"] = 55550,
-			["lastScanTime"] = 1665087617,
-			["icon"] = 133862,
-			["itemId"] = 39690,
+			["buy"] = 4500,
+			["bid"] = 4437,
+			["lastScanTime"] = 1665215368,
+			["icon"] = 134245,
+			["itemId"] = 43853,
 		},
 		["44268Ace of Nobles"] = {
 			["prices"] = {
@@ -2129,6 +2207,120 @@ AuctionFasterDb = {
 			["icon"] = 134937,
 			["itemId"] = 33460,
 		},
+		["44274Seven of Nobles"] = {
+			["prices"] = {
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 329738877,
+					["totalQty"] = 17,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 17,
+					["weightedAverageBuy"] = 20398227,
+					["totalBuy"] = 261719952,
+					["lowestBuy"] = 17009986,
+					["totalBid"] = 248941447,
+					["weightedTotalBuy"] = 346769870,
+					["estimatedVolume"] = 36.04,
+					["highestBid"] = 22799992,
+					["weightedAverageBid"] = 19396404,
+					["totalItems"] = 106,
+					["scanTime"] = 1665088358,
+					["highestBuy"] = 23999991,
+					["lowestBid"] = 16159486,
+					["averageBid"] = 20745120,
+				}, -- [1]
+			},
+			["itemName"] = "Seven of Nobles",
+			["settings"] = {
+				["priceModel"] = "Simple",
+				["rememberLastPrice"] = false,
+				["useCustomDuration"] = false,
+				["duration"] = 3,
+				["rememberStack"] = true,
+				["alwaysUndercut"] = true,
+			},
+			["buy"] = 17009986,
+			["bid"] = 16159486,
+			["lastScanTime"] = 1665088358,
+			["icon"] = 237168,
+			["itemId"] = 44274,
+		},
+		["36329Halgrind Epaulets of the Soldier"] = {
+			["prices"] = {
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 639999,
+					["totalQty"] = 3,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 3,
+					["weightedAverageBuy"] = 216666,
+					["totalBuy"] = 650001,
+					["lowestBuy"] = 99999,
+					["totalBid"] = 639999,
+					["weightedTotalBuy"] = 649998,
+					["estimatedVolume"] = 6.9,
+					["averageBid"] = 213333,
+					["lowestBid"] = 95000,
+					["highestBuy"] = 449999,
+					["totalItems"] = 115,
+					["scanTime"] = 1665075643,
+					["weightedAverageBid"] = 213333,
+					["highestBid"] = 449999,
+				}, -- [1]
+			},
+			["itemName"] = "Halgrind Epaulets of the Soldier",
+			["settings"] = {
+				["priceModel"] = "Simple",
+				["rememberLastPrice"] = false,
+				["alwaysUndercut"] = true,
+				["useCustomDuration"] = false,
+				["rememberStack"] = true,
+				["duration"] = 3,
+			},
+			["itemId"] = 36329,
+			["bid"] = 95000,
+			["lastScanTime"] = 1665075643,
+			["icon"] = 237465,
+			["buy"] = 99999,
+		},
+		["12359Thorium Bar"] = {
+			["prices"] = {
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 6231090,
+					["totalQty"] = 426,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 426,
+					["weightedAverageBuy"] = 15309,
+					["totalBuy"] = 667036,
+					["lowestBuy"] = 14000,
+					["totalBid"] = 639392,
+					["weightedTotalBuy"] = 6521975,
+					["estimatedVolume"] = 1312.08,
+					["highestBid"] = 15674,
+					["weightedAverageBid"] = 14626,
+					["scanTime"] = 1647359370,
+					["highestBuy"] = 16499,
+					["totalItems"] = 154,
+					["lowestBid"] = 13500,
+					["averageBid"] = 14208,
+				}, -- [1]
+			},
+			["itemName"] = "Thorium Bar",
+			["settings"] = {
+				["priceModel"] = "Simple",
+				["rememberLastPrice"] = false,
+				["duration"] = 3,
+				["alwaysUndercut"] = true,
+				["rememberStack"] = true,
+				["useCustomDuration"] = false,
+			},
+			["buy"] = 14000,
+			["bid"] = 13500,
+			["lastScanTime"] = 1647359370,
+			["icon"] = 133221,
+			["itemId"] = 12359,
+		},
 		["34056Lesser Cosmic Essence"] = {
 			["stackSize"] = 10,
 			["itemName"] = "Lesser Cosmic Essence",
@@ -2187,120 +2379,6 @@ AuctionFasterDb = {
 			["buy"] = 47785,
 			["icon"] = 237017,
 			["itemId"] = 34056,
-		},
-		["44274Seven of Nobles"] = {
-			["prices"] = {
-				{
-					["averageBuy"] = 1,
-					["weightedTotalBid"] = 329738877,
-					["totalQty"] = 17,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 17,
-					["weightedAverageBuy"] = 20398227,
-					["totalBuy"] = 261719952,
-					["lowestBuy"] = 17009986,
-					["totalBid"] = 248941447,
-					["weightedTotalBuy"] = 346769870,
-					["estimatedVolume"] = 36.04,
-					["highestBid"] = 22799992,
-					["weightedAverageBid"] = 19396404,
-					["totalItems"] = 106,
-					["scanTime"] = 1665088358,
-					["highestBuy"] = 23999991,
-					["lowestBid"] = 16159486,
-					["averageBid"] = 20745120,
-				}, -- [1]
-			},
-			["itemName"] = "Seven of Nobles",
-			["settings"] = {
-				["priceModel"] = "Simple",
-				["rememberLastPrice"] = false,
-				["useCustomDuration"] = false,
-				["duration"] = 3,
-				["rememberStack"] = true,
-				["alwaysUndercut"] = true,
-			},
-			["buy"] = 17009986,
-			["bid"] = 16159486,
-			["lastScanTime"] = 1665088358,
-			["icon"] = 237168,
-			["itemId"] = 44274,
-		},
-		["12359Thorium Bar"] = {
-			["prices"] = {
-				{
-					["averageBuy"] = 1,
-					["weightedTotalBid"] = 6231090,
-					["totalQty"] = 426,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 426,
-					["weightedAverageBuy"] = 15309,
-					["totalBuy"] = 667036,
-					["lowestBuy"] = 14000,
-					["totalBid"] = 639392,
-					["weightedTotalBuy"] = 6521975,
-					["estimatedVolume"] = 1312.08,
-					["highestBid"] = 15674,
-					["weightedAverageBid"] = 14626,
-					["scanTime"] = 1647359370,
-					["highestBuy"] = 16499,
-					["totalItems"] = 154,
-					["lowestBid"] = 13500,
-					["averageBid"] = 14208,
-				}, -- [1]
-			},
-			["itemName"] = "Thorium Bar",
-			["settings"] = {
-				["priceModel"] = "Simple",
-				["rememberLastPrice"] = false,
-				["duration"] = 3,
-				["alwaysUndercut"] = true,
-				["rememberStack"] = true,
-				["useCustomDuration"] = false,
-			},
-			["buy"] = 14000,
-			["bid"] = 13500,
-			["lastScanTime"] = 1647359370,
-			["icon"] = 133221,
-			["itemId"] = 12359,
-		},
-		["36329Halgrind Epaulets of the Soldier"] = {
-			["prices"] = {
-				{
-					["averageBuy"] = 1,
-					["weightedTotalBid"] = 639999,
-					["totalQty"] = 3,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 3,
-					["weightedAverageBuy"] = 216666,
-					["totalBuy"] = 650001,
-					["lowestBuy"] = 99999,
-					["totalBid"] = 639999,
-					["weightedTotalBuy"] = 649998,
-					["estimatedVolume"] = 6.9,
-					["averageBid"] = 213333,
-					["lowestBid"] = 95000,
-					["highestBuy"] = 449999,
-					["totalItems"] = 115,
-					["scanTime"] = 1665075643,
-					["weightedAverageBid"] = 213333,
-					["highestBid"] = 449999,
-				}, -- [1]
-			},
-			["itemName"] = "Halgrind Epaulets of the Soldier",
-			["settings"] = {
-				["priceModel"] = "Simple",
-				["rememberLastPrice"] = false,
-				["alwaysUndercut"] = true,
-				["useCustomDuration"] = false,
-				["rememberStack"] = true,
-				["duration"] = 3,
-			},
-			["itemId"] = 36329,
-			["bid"] = 95000,
-			["lastScanTime"] = 1665075643,
-			["icon"] = 237465,
-			["buy"] = 99999,
 		},
 		["34054Infinite Dust"] = {
 			["prices"] = {
@@ -2398,43 +2476,44 @@ AuctionFasterDb = {
 			["icon"] = 237192,
 			["itemId"] = 36918,
 		},
-		["16203Greater Eternal Essence"] = {
+		["15761Pattern: Frostsaber Gloves"] = {
+			["stackSize"] = 1,
+			["itemName"] = "Pattern: Frostsaber Gloves",
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 10382850,
-					["totalQty"] = 150,
+					["weightedTotalBid"] = 115635,
+					["totalQty"] = 3,
 					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 150,
-					["weightedAverageBuy"] = 72862,
-					["totalBuy"] = 3643150,
-					["lowestBuy"] = 72862,
-					["totalBid"] = 3460950,
-					["weightedTotalBuy"] = 10929300,
-					["estimatedVolume"] = 1272,
-					["highestBid"] = 69219,
-					["weightedAverageBid"] = 69219,
-					["totalItems"] = 424,
-					["scanTime"] = 1665087130,
-					["highestBuy"] = 72862,
-					["lowestBid"] = 69219,
-					["averageBid"] = 69219,
+					["totalQtyWithBuy"] = 3,
+					["weightedAverageBuy"] = 39198,
+					["totalBuy"] = 117598,
+					["lowestBuy"] = 39196,
+					["totalBid"] = 115635,
+					["weightedTotalBuy"] = 117595,
+					["estimatedVolume"] = 3,
+					["highestBid"] = 39199,
+					["weightedAverageBid"] = 38545,
+					["highestBuy"] = 39200,
+					["totalItems"] = 3,
+					["scanTime"] = 1647270855,
+					["lowestBid"] = 37240,
+					["averageBid"] = 38545,
 				}, -- [1]
 			},
-			["itemName"] = "Greater Eternal Essence",
+			["lastScanTime"] = 1647270855,
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
-				["useCustomDuration"] = false,
-				["duration"] = 3,
-				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
+				["useCustomDuration"] = false,
+				["rememberStack"] = true,
+				["duration"] = 3,
 			},
-			["buy"] = 72862,
-			["bid"] = 69219,
-			["lastScanTime"] = 1665087130,
-			["icon"] = 132864,
-			["itemId"] = 16203,
+			["bid"] = 37240,
+			["buy"] = 39195,
+			["icon"] = 134942,
+			["itemId"] = 15761,
 		},
 		["36907Talandra's Rose"] = {
 			["prices"] = {
@@ -2474,44 +2553,43 @@ AuctionFasterDb = {
 			["icon"] = 134222,
 			["buy"] = 13589,
 		},
-		["15761Pattern: Frostsaber Gloves"] = {
-			["stackSize"] = 1,
-			["itemName"] = "Pattern: Frostsaber Gloves",
+		["16203Greater Eternal Essence"] = {
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 115635,
-					["totalQty"] = 3,
+					["weightedTotalBid"] = 10382850,
+					["totalQty"] = 150,
 					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 3,
-					["weightedAverageBuy"] = 39198,
-					["totalBuy"] = 117598,
-					["lowestBuy"] = 39196,
-					["totalBid"] = 115635,
-					["weightedTotalBuy"] = 117595,
-					["estimatedVolume"] = 3,
-					["highestBid"] = 39199,
-					["weightedAverageBid"] = 38545,
-					["highestBuy"] = 39200,
-					["totalItems"] = 3,
-					["scanTime"] = 1647270855,
-					["lowestBid"] = 37240,
-					["averageBid"] = 38545,
+					["totalQtyWithBuy"] = 150,
+					["weightedAverageBuy"] = 72862,
+					["totalBuy"] = 3643150,
+					["lowestBuy"] = 72862,
+					["totalBid"] = 3460950,
+					["weightedTotalBuy"] = 10929300,
+					["estimatedVolume"] = 1272,
+					["highestBid"] = 69219,
+					["weightedAverageBid"] = 69219,
+					["totalItems"] = 424,
+					["scanTime"] = 1665087130,
+					["highestBuy"] = 72862,
+					["lowestBid"] = 69219,
+					["averageBid"] = 69219,
 				}, -- [1]
 			},
-			["lastScanTime"] = 1647270855,
+			["itemName"] = "Greater Eternal Essence",
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
-				["alwaysUndercut"] = true,
 				["useCustomDuration"] = false,
-				["rememberStack"] = true,
 				["duration"] = 3,
+				["rememberStack"] = true,
+				["alwaysUndercut"] = true,
 			},
-			["bid"] = 37240,
-			["buy"] = 39195,
-			["icon"] = 134942,
-			["itemId"] = 15761,
+			["buy"] = 72862,
+			["bid"] = 69219,
+			["lastScanTime"] = 1665087130,
+			["icon"] = 132864,
+			["itemId"] = 16203,
 		},
 		["34055Greater Cosmic Essence"] = {
 			["prices"] = {
@@ -2723,30 +2801,30 @@ AuctionFasterDb = {
 			["icon"] = 132606,
 			["buy"] = 388188,
 		},
-		["36325Halgrind Carapace of the Bear"] = {
+		["15747Pattern: Frostsaber Leggings"] = {
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 134732,
-					["totalQty"] = 1,
+					["weightedTotalBid"] = 75997,
+					["totalQty"] = 4,
 					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 1,
-					["weightedAverageBuy"] = 140000,
-					["totalBuy"] = 140001,
-					["lowestBuy"] = 140000,
-					["totalBid"] = 134732,
-					["weightedTotalBuy"] = 140000,
-					["estimatedVolume"] = 2.3,
-					["averageBid"] = 134732,
-					["lowestBid"] = 134732,
-					["highestBuy"] = 140000,
-					["totalItems"] = 115,
-					["scanTime"] = 1665075643,
-					["weightedAverageBid"] = 134732,
-					["highestBid"] = 134732,
+					["totalQtyWithBuy"] = 4,
+					["weightedAverageBuy"] = 19998,
+					["totalBuy"] = 79997,
+					["lowestBuy"] = 19997,
+					["totalBid"] = 75997,
+					["weightedTotalBuy"] = 79993,
+					["estimatedVolume"] = 4,
+					["highestBid"] = 19000,
+					["weightedAverageBid"] = 18999,
+					["highestBuy"] = 19999,
+					["totalItems"] = 4,
+					["scanTime"] = 1647270876,
+					["lowestBid"] = 18998,
+					["averageBid"] = 18999,
 				}, -- [1]
 			},
-			["itemName"] = "Halgrind Carapace of the Bear",
+			["itemName"] = "Pattern: Frostsaber Leggings",
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -2755,11 +2833,11 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["duration"] = 3,
 			},
-			["itemId"] = 36325,
-			["bid"] = 134732,
-			["lastScanTime"] = 1665075643,
-			["icon"] = 132754,
-			["buy"] = 140000,
+			["buy"] = 19996,
+			["bid"] = 18998,
+			["lastScanTime"] = 1647270876,
+			["icon"] = 134942,
+			["itemId"] = 15747,
 		},
 		["3858Mithril Ore"] = {
 			["stackSize"] = 20,
@@ -2844,8 +2922,28 @@ AuctionFasterDb = {
 					["lowestBid"] = 900,
 					["averageBid"] = 45533,
 				}, -- [2]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 9311783,
+					["totalQty"] = 201,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 201,
+					["weightedAverageBuy"] = 49120,
+					["totalBuy"] = 2471900,
+					["lowestBuy"] = 48936,
+					["totalBid"] = 2329784,
+					["weightedTotalBuy"] = 9873124,
+					["estimatedVolume"] = 2202.96,
+					["highestBid"] = 49999,
+					["weightedAverageBid"] = 46327,
+					["totalItems"] = 548,
+					["scanTime"] = 1665215204,
+					["highestBuy"] = 50068,
+					["lowestBid"] = 29999,
+					["averageBid"] = 46595,
+				}, -- [3]
 			},
-			["lastScanTime"] = 1665167633,
+			["lastScanTime"] = 1665215204,
 			["settings"] = {
 				["priceModel"] = "WeightedAverage",
 				["rememberLastPrice"] = false,
@@ -2858,44 +2956,6 @@ AuctionFasterDb = {
 			["itemId"] = 37704,
 			["icon"] = 237004,
 			["buy"] = 42791,
-		},
-		["39999Bright Scarlet Ruby"] = {
-			["prices"] = {
-				{
-					["averageBuy"] = 1,
-					["weightedTotalBid"] = 73165016,
-					["totalQty"] = 43,
-					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 43,
-					["weightedAverageBuy"] = 1778101,
-					["totalBuy"] = 76458390,
-					["lowestBuy"] = 1697497,
-					["totalBid"] = 73165016,
-					["weightedTotalBuy"] = 76458347,
-					["estimatedVolume"] = 325.94,
-					["highestBid"] = 1800000,
-					["weightedAverageBid"] = 1701512,
-					["scanTime"] = 1665081310,
-					["highestBuy"] = 1850000,
-					["totalItems"] = 379,
-					["lowestBid"] = 1599999,
-					["averageBid"] = 1701512,
-				}, -- [1]
-			},
-			["itemName"] = "Bright Scarlet Ruby",
-			["settings"] = {
-				["priceModel"] = "Simple",
-				["rememberLastPrice"] = false,
-				["duration"] = 3,
-				["alwaysUndercut"] = true,
-				["rememberStack"] = true,
-				["useCustomDuration"] = false,
-			},
-			["buy"] = 1697497,
-			["bid"] = 1599999,
-			["lastScanTime"] = 1665081310,
-			["icon"] = 237216,
-			["itemId"] = 39999,
 		},
 		["3902Staff of Nobles"] = {
 			["prices"] = {
@@ -2934,6 +2994,44 @@ AuctionFasterDb = {
 			["lastScanTime"] = 1665127330,
 			["icon"] = 135466,
 			["itemId"] = 3902,
+		},
+		["39999Bright Scarlet Ruby"] = {
+			["prices"] = {
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 73165016,
+					["totalQty"] = 43,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 43,
+					["weightedAverageBuy"] = 1778101,
+					["totalBuy"] = 76458390,
+					["lowestBuy"] = 1697497,
+					["totalBid"] = 73165016,
+					["weightedTotalBuy"] = 76458347,
+					["estimatedVolume"] = 325.94,
+					["highestBid"] = 1800000,
+					["weightedAverageBid"] = 1701512,
+					["scanTime"] = 1665081310,
+					["highestBuy"] = 1850000,
+					["totalItems"] = 379,
+					["lowestBid"] = 1599999,
+					["averageBid"] = 1701512,
+				}, -- [1]
+			},
+			["itemName"] = "Bright Scarlet Ruby",
+			["settings"] = {
+				["priceModel"] = "Simple",
+				["rememberLastPrice"] = false,
+				["duration"] = 3,
+				["alwaysUndercut"] = true,
+				["rememberStack"] = true,
+				["useCustomDuration"] = false,
+			},
+			["buy"] = 1697497,
+			["bid"] = 1599999,
+			["lastScanTime"] = 1665081310,
+			["icon"] = 237216,
+			["itemId"] = 39999,
 		},
 		["22447Lesser Planar Essence"] = {
 			["prices"] = {
@@ -2977,6 +3075,26 @@ AuctionFasterDb = {
 					["lowestBid"] = 29640,
 					["averageBid"] = 14843962,
 				}, -- [2]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 4362614,
+					["totalQty"] = 66,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 66,
+					["weightedAverageBuy"] = 69931,
+					["totalBuy"] = 3496994,
+					["lowestBuy"] = 69892,
+					["totalBid"] = 3299999,
+					["weightedTotalBuy"] = 4615489,
+					["estimatedVolume"] = 390.72,
+					["highestBid"] = 69997,
+					["weightedAverageBid"] = 66100,
+					["totalItems"] = 296,
+					["scanTime"] = 1665215219,
+					["highestBuy"] = 69998,
+					["lowestBid"] = 50100,
+					["averageBid"] = 65999,
+				}, -- [3]
 			},
 			["itemName"] = "Lesser Planar Essence",
 			["settings"] = {
@@ -2989,7 +3107,7 @@ AuctionFasterDb = {
 			},
 			["buy"] = 47499,
 			["bid"] = 100,
-			["lastScanTime"] = 1665167647,
+			["lastScanTime"] = 1665215219,
 			["icon"] = 132861,
 			["itemId"] = 22447,
 		},
@@ -3340,6 +3458,26 @@ AuctionFasterDb = {
 					["lowestBid"] = 2849998,
 					["averageBid"] = 2940828,
 				}, -- [1]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 109577351,
+					["totalQty"] = 52,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 52,
+					["weightedAverageBuy"] = 2188943,
+					["totalBuy"] = 109452845,
+					["lowestBuy"] = 2150000,
+					["totalBid"] = 105423689,
+					["weightedTotalBuy"] = 113825071,
+					["estimatedVolume"] = 270.4,
+					["highestBid"] = 2219994,
+					["weightedAverageBid"] = 2107256,
+					["totalItems"] = 260,
+					["scanTime"] = 1665215372,
+					["highestBuy"] = 2219998,
+					["lowestBid"] = 2008750,
+					["averageBid"] = 2108473,
+				}, -- [2]
 			},
 			["itemName"] = "Titansteel Bar",
 			["settings"] = {
@@ -3350,9 +3488,9 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["alwaysUndercut"] = true,
 			},
-			["buy"] = 2999997,
-			["bid"] = 2849998,
-			["lastScanTime"] = 1665087762,
+			["buy"] = 2150000,
+			["bid"] = 2008750,
+			["lastScanTime"] = 1665215372,
 			["icon"] = 237046,
 			["itemId"] = 37663,
 		},
@@ -3642,30 +3780,30 @@ AuctionFasterDb = {
 			["icon"] = 132511,
 			["buy"] = 200000,
 		},
-		["15747Pattern: Frostsaber Leggings"] = {
+		["36325Halgrind Carapace of the Bear"] = {
 			["prices"] = {
 				{
 					["averageBuy"] = 1,
-					["weightedTotalBid"] = 75997,
-					["totalQty"] = 4,
+					["weightedTotalBid"] = 134732,
+					["totalQty"] = 1,
 					["averageQty"] = 0,
-					["totalQtyWithBuy"] = 4,
-					["weightedAverageBuy"] = 19998,
-					["totalBuy"] = 79997,
-					["lowestBuy"] = 19997,
-					["totalBid"] = 75997,
-					["weightedTotalBuy"] = 79993,
-					["estimatedVolume"] = 4,
-					["highestBid"] = 19000,
-					["weightedAverageBid"] = 18999,
-					["highestBuy"] = 19999,
-					["totalItems"] = 4,
-					["scanTime"] = 1647270876,
-					["lowestBid"] = 18998,
-					["averageBid"] = 18999,
+					["totalQtyWithBuy"] = 1,
+					["weightedAverageBuy"] = 140000,
+					["totalBuy"] = 140001,
+					["lowestBuy"] = 140000,
+					["totalBid"] = 134732,
+					["weightedTotalBuy"] = 140000,
+					["estimatedVolume"] = 2.3,
+					["averageBid"] = 134732,
+					["lowestBid"] = 134732,
+					["highestBuy"] = 140000,
+					["totalItems"] = 115,
+					["scanTime"] = 1665075643,
+					["weightedAverageBid"] = 134732,
+					["highestBid"] = 134732,
 				}, -- [1]
 			},
-			["itemName"] = "Pattern: Frostsaber Leggings",
+			["itemName"] = "Halgrind Carapace of the Bear",
 			["settings"] = {
 				["priceModel"] = "Simple",
 				["rememberLastPrice"] = false,
@@ -3674,11 +3812,11 @@ AuctionFasterDb = {
 				["rememberStack"] = true,
 				["duration"] = 3,
 			},
-			["buy"] = 19996,
-			["bid"] = 18998,
-			["lastScanTime"] = 1647270876,
-			["icon"] = 134942,
-			["itemId"] = 15747,
+			["itemId"] = 36325,
+			["bid"] = 134732,
+			["lastScanTime"] = 1665075643,
+			["icon"] = 132754,
+			["buy"] = 140000,
 		},
 		["23113Brilliant Golden Draenite"] = {
 			["prices"] = {
@@ -4083,8 +4221,28 @@ AuctionFasterDb = {
 					["lowestBid"] = 102592,
 					["averageBid"] = 372050,
 				}, -- [2]
+				{
+					["averageBuy"] = 1,
+					["weightedTotalBid"] = 11363295,
+					["totalQty"] = 52,
+					["averageQty"] = 0,
+					["totalQtyWithBuy"] = 52,
+					["weightedAverageBuy"] = 229327,
+					["totalBuy"] = 11469701,
+					["lowestBuy"] = 227684,
+					["totalBid"] = 10930693,
+					["weightedTotalBuy"] = 11925021,
+					["estimatedVolume"] = 460.72,
+					["highestBid"] = 229999,
+					["weightedAverageBid"] = 218524,
+					["totalItems"] = 443,
+					["scanTime"] = 1665215216,
+					["highestBuy"] = 229999,
+					["lowestBid"] = 216300,
+					["averageBid"] = 218613,
+				}, -- [3]
 			},
-			["lastScanTime"] = 1665167649,
+			["lastScanTime"] = 1665215216,
 			["settings"] = {
 				["priceModel"] = "WeightedAverage",
 				["rememberLastPrice"] = false,
@@ -4443,197 +4601,205 @@ AuctionFasterDb = {
 		},
 		["recentSearches"] = {
 			{
+				["value"] = "Titansteel Bar",
+				["text"] = "Titansteel Bar",
+			}, -- [1]
+			{
+				["value"] = "Titan",
+				["text"] = "Titan",
+			}, -- [2]
+			{
 				["value"] = "Arcane Dust",
 				["text"] = "Arcane Dust",
-			}, -- [1]
+			}, -- [3]
 			{
 				["value"] = "Frostweave Bag",
 				["text"] = "Frostweave Bag",
-			}, -- [2]
+			}, -- [4]
 			{
 				["value"] = "Cobalt Ore",
 				["text"] = "Cobalt Ore",
-			}, -- [3]
+			}, -- [5]
 			{
 				["value"] = "Titanium Ore",
 				["text"] = "Titanium Ore",
-			}, -- [4]
+			}, -- [6]
 			{
 				["value"] = "Titanium Bar",
 				["text"] = "Titanium Bar",
-			}, -- [5]
+			}, -- [7]
 			{
 				["value"] = "ace of nobles",
 				["text"] = "ace of nobles",
-			}, -- [6]
+			}, -- [8]
 			{
 				["value"] = "of nobles",
 				["text"] = "of nobles",
-			}, -- [7]
+			}, -- [9]
 			{
 				["value"] = "Adder's Tongue",
 				["text"] = "Adder's Tongue",
-			}, -- [8]
+			}, -- [10]
 			{
 				["value"] = "of noble",
 				["text"] = "of noble",
-			}, -- [9]
+			}, -- [11]
 			{
 				["value"] = "Talandra's Rose",
 				["text"] = "Talandra's Rose",
-			}, -- [10]
+			}, -- [12]
 			{
 				["value"] = "Titansteel",
 				["text"] = "Titansteel",
-			}, -- [11]
+			}, -- [13]
 			{
 				["value"] = "Volatile Blasting Trigger",
 				["text"] = "Volatile Blasting Trigger",
-			}, -- [12]
+			}, -- [14]
 			{
 				["value"] = "Lesser Cosmic Essence",
 				["text"] = "Lesser Cosmic Essence",
-			}, -- [13]
+			}, -- [15]
 			{
 				["value"] = "Greater Cosmic Essence",
 				["text"] = "Greater Cosmic Essence",
-			}, -- [14]
+			}, -- [16]
 			{
 				["value"] = "Lesser Planar Essence",
 				["text"] = "Lesser Planar Essence",
-			}, -- [15]
+			}, -- [17]
 			{
 				["value"] = "Greater Planar Essence",
 				["text"] = "Greater Planar Essence",
-			}, -- [16]
+			}, -- [18]
 			{
 				["value"] = "Infinite Dust",
 				["text"] = "Infinite Dust",
-			}, -- [17]
+			}, -- [19]
 			{
 				["value"] = "Greater Eternal",
 				["text"] = "Greater Eternal",
-			}, -- [18]
+			}, -- [20]
 			{
 				["value"] = "Brilliant Scarlet ",
 				["text"] = "Brilliant Scarlet ",
-			}, -- [19]
+			}, -- [21]
 			{
 				["value"] = "Brilliant ",
 				["text"] = "Brilliant ",
-			}, -- [20]
+			}, -- [22]
 			{
 				["value"] = "Brilliant Scarlet Ruby",
 				["text"] = "Brilliant Scarlet Ruby",
-			}, -- [21]
+			}, -- [23]
 			{
 				["value"] = "Bold Scarlet Ruby",
 				["text"] = "Bold Scarlet Ruby",
-			}, -- [22]
+			}, -- [24]
 			{
 				["value"] = "Delicate Scarlet Ruby",
 				["text"] = "Delicate Scarlet Ruby",
-			}, -- [23]
+			}, -- [25]
 			{
 				["value"] = "Scarlet Ruby",
 				["text"] = "Scarlet Ruby",
-			}, -- [24]
+			}, -- [26]
 			{
 				["value"] = "Lichbloom",
 				["text"] = "Lichbloom",
-			}, -- [25]
+			}, -- [27]
 			{
 				["value"] = "",
 				["text"] = "",
-			}, -- [26]
+			}, -- [28]
 			{
 				["value"] = "savagery",
 				["text"] = "savagery",
-			}, -- [27]
+			}, -- [29]
 			{
 				["value"] = "Tiger Lily",
 				["text"] = "Tiger Lily",
-			}, -- [28]
+			}, -- [30]
 			{
 				["value"] = "Savory Deviate",
 				["text"] = "Savory Deviate",
-			}, -- [29]
+			}, -- [31]
 			{
 				["value"] = "Savory Deviate Fish",
 				["text"] = "Savory Deviate Fish",
-			}, -- [30]
+			}, -- [32]
 			{
 				["value"] = "Savory Devaite Fish",
 				["text"] = "Savory Devaite Fish",
-			}, -- [31]
+			}, -- [33]
 			{
 				["value"] = "Saronite Bar",
 				["text"] = "Saronite Bar",
-			}, -- [32]
+			}, -- [34]
 			{
 				["value"] = "Saronite Ore",
 				["text"] = "Saronite Ore",
-			}, -- [33]
+			}, -- [35]
 			{
 				["value"] = "Netherweave Cloth",
 				["text"] = "Netherweave Cloth",
-			}, -- [34]
+			}, -- [36]
 			{
 				["value"] = "Goldclover",
 				["text"] = "Goldclover",
-			}, -- [35]
+			}, -- [37]
 			{
 				["value"] = "Icethorn",
 				["text"] = "Icethorn",
-			}, -- [36]
+			}, -- [38]
 			{
 				["value"] = "Eternal Life",
 				["text"] = "Eternal Life",
-			}, -- [37]
+			}, -- [39]
 			{
 				["value"] = "crystallized life",
 				["text"] = "crystallized life",
-			}, -- [38]
+			}, -- [40]
 			{
 				["value"] = "crystallized",
 				["text"] = "crystallized",
-			}, -- [39]
+			}, -- [41]
 			{
 				["value"] = "crystalized",
 				["text"] = "crystalized",
-			}, -- [40]
+			}, -- [42]
 			{
 				["value"] = "crystalized life",
 				["text"] = "crystalized life",
-			}, -- [41]
+			}, -- [43]
 			{
 				["value"] = "crystalized lige",
 				["text"] = "crystalized lige",
-			}, -- [42]
+			}, -- [44]
 			{
 				["value"] = "adamantite ore",
 				["text"] = "adamantite ore",
-			}, -- [43]
+			}, -- [45]
 			{
 				["value"] = "adamantite bar",
 				["text"] = "adamantite bar",
-			}, -- [44]
+			}, -- [46]
 			{
 				["value"] = "thorium bar",
 				["text"] = "thorium bar",
-			}, -- [45]
+			}, -- [47]
 			{
 				["value"] = "thorium ore",
 				["text"] = "thorium ore",
-			}, -- [46]
+			}, -- [48]
 			{
 				["value"] = "thorium",
 				["text"] = "thorium",
-			}, -- [47]
+			}, -- [49]
 			{
 				["value"] = "runecloth",
 				["text"] = "runecloth",
-			}, -- [48]
+			}, -- [50]
 		},
 	},
 }
