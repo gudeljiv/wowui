@@ -136,7 +136,7 @@ ErrorFilter: enabled
 ErrorMonster: disabled
 AccountWideRaidProfiles: disabled
 EnhancedRaidFrames: enabled
-WeaponSwingTimer: disabled
+WeaponSwingTimer: enabled
 EasyFrames: disabled
 DUnitFrames: disabled
 LunaUnitFrames: disabled

@@ -54,15 +54,15 @@ local buffs = {
 }
 
 local skills_range = {
-	['HUNTER'] = 5,
-	['MAGE'] = 5,
-	['WARLOCK'] = 5,
-	['SHAMAN'] = 5,
-	['WARRIOR'] = 5,
-	['PALADIN'] = 5,
-	['DEATHKNIGHT'] = 5,
-	['ROGUE'] = 5,
-	['DRUID'] = 5
+	['HUNTER'] = 10,
+	['MAGE'] = 10,
+	['WARLOCK'] = 10,
+	['SHAMAN'] = 10,
+	['WARRIOR'] = 10,
+	['PALADIN'] = 10,
+	['DEATHKNIGHT'] = 10,
+	['ROGUE'] = 10,
+	['DRUID'] = 10
 }
 
 -----------------------------------------------------------------------------------------------------------------------------

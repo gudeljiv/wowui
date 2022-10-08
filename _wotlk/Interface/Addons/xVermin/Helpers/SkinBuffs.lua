@@ -12,15 +12,15 @@ local count = 0
 local frame, frameBorder, frameCount, color, B_spellId, D_spellId, B_unitCaster, D_unitCaster, petName, targetName, hasPet, isHunterPet
 local frameCooldown, B_spellName, D_spellName
 
-local function SkinTarget()
-	if TargetFrame:IsShown() then
+local function SkinTarget(init)
+	if init or TargetFrame:IsShown() then
 		hasPet, isHunterPet = HasPetUI()
 		if hasPet then
 			petName = UnitName('pet')
 			targetName = UnitName('target')
 		end
 
-		for i = 1, 32 do
+		for i = 1, MAX_TARGET_BUFFS do
 			B_spellName, B_spellId, _, _, _, _, B_unitCaster = UnitBuff('target', i)
 			D_spellName, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff('target', i)
 
@@ -100,8 +100,8 @@ local function SkinTarget()
 	end
 end
 
-local function SkinPet()
-	if PetFrame:IsShown() then
+local function SkinPet(init)
+	if init or PetFrame:IsShown() then
 		for i = 1, 32 do
 			if _G['PetFrameBuff' .. i] then
 				_G['PetFrameBuff' .. i]:Hide()
@@ -177,8 +177,8 @@ local function SkinPet()
 	end
 end
 
-local function SkinFocus()
-	if FocusFrame:IsShown() then
+local function SkinFocus(init)
+	if init or FocusFrame:IsShown() then
 		hasPet, isHunterPet = HasPetUI()
 		if hasPet then
 			petName = UnitName('pet')
@@ -264,77 +264,13 @@ local function SkinFocus()
 	end
 end
 
-local tf = CreateFrame('Frame')
--- tf:RegisterEvent('PLAYER_ENTERING_WORLD')
--- tf:RegisterEvent('PLAYER_TARGET_CHANGED')
--- tf:RegisterEvent('UNIT_AURA', 'target')
--- tf:SetScript('OnEvent', SkinTarget)
-TargetFrame:HookScript('OnUpdate', SkinTarget)
--- hooksecurefunc('TargetFrame_UpdateAuras', SkinTarget)
+-- TargetFrame:UnregisterEvent('UNIT_AURA')
+-- FocusFrame:UnregisterEvent('UNIT_AURA')
+-- PetFrame:UnregisterEvent('UNIT_AURA')
 
-local ff = CreateFrame('Frame')
--- ff:RegisterEvent('PLAYER_ENTERING_WORLD')
--- ff:RegisterEvent('PLAYER_FOCUS_CHANGED')
--- ff:RegisterEvent('UNIT_AURA', 'focus')
--- ff:SetScript('OnEvent', SkinFocus)
-FocusFrame:HookScript('OnUpdate', SkinFocus)
--- hooksecurefunc("FocusFrame_UpdateAuras", SkinFocus)
-
-local pf = CreateFrame('Frame')
--- pf:RegisterUnitEvent('PLAYER_ENTERING_WORLD')
--- pf:RegisterUnitEvent('UNIT_AURA', 'pet')
--- pf:SetScript(
--- 	'OnEvent',
--- 	function(self, event, ...)
--- 		xVermin:CheckIfLoadedWithTimer(
--- 			'PetFrame',
--- 			function()
--- 				SkinPet()
--- 			end
--- 		)
--- 	end
--- )
-PetFrame:HookScript('OnUpdate', SkinPet)
-
-TargetFrameToT:HookScript(
-	'OnShow',
-	function()
-		for i = 1, 32 do
-			if _G['TargetFrameToTBuff' .. i] then
-				_G['TargetFrameToTBuff' .. i]:Hide()
-			end
-			if _G['TargetFrameToTDebuff' .. i] then
-				_G['TargetFrameToTDebuff' .. i]:Hide()
-			end
-		end
-	end
-)
-
-FocusFrameToT:HookScript(
-	'OnShow',
-	function()
-		for i = 1, 32 do
-			if _G['FocusFrameToTBuff' .. i] then
-				_G['FocusFrameToTBuff' .. i]:Hide()
-			end
-			if _G['FocusFrameToTDebuff' .. i] then
-				_G['FocusFrameToTDebuff' .. i]:Hide()
-			end
-		end
-	end
-)
-
--- hooksecurefunc(
--- 	TargetFrameToT,
--- 	'Hide',
--- 	function(self)
--- 		self:Show()
--- 	end
--- )
--- hooksecurefunc(
--- 	FocusFrameToT,
--- 	'Hide',
--- 	function(self)
--- 		self:Show()
--- 	end
--- )
+hooksecurefunc('TargetFrame_UpdateAuras', SkinTarget)
+hooksecurefunc('TargetFrame_UpdateAuras', SkinFocus)
+hooksecurefunc('TargetFrame_UpdateAuras', SkinPet)
+SkinTarget(true)
+SkinFocus(true)
+SkinPet(true)

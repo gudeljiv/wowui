@@ -11,7 +11,6 @@ TargetFrame:HookScript(
 		local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = UnitCastingInfo('target')
 		local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = UnitChannelInfo('target')
 		if (name_casting ~= nil and not notInterruptible_casting) or (name_channeling ~= nil and not notInterruptible_chanelling) then
-			-- print(name, name and not notInterruptible)
 			-- WARRIOR INTERRUPT
 			if (select(2, UnitClass('player')) == 'WARRIOR') then
 				local _, battle = GetShapeshiftFormInfo(1) -- ako je battle stance

@@ -1,3 +1,7 @@
+VER 3 000000000000000E " " "136106"
+/run InspectUnit("target")
+/run SortBags()
+END
 VER 3 0000000000000013 " " "132130"
 /click RotBotF3
 END
@@ -14,19 +18,15 @@ VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 /use Fel Sharpening Stone
 /use [button:1] 16; [button:2] 17
 END
-VER 3 000000000000000E " " "136106"
-/run InspectUnit("target")
-/run SortBags()
-END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:159
+/use [nocombat]item:0
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4540
-/castsequence [combat] reset=combat item:118
+/use [nocombat]item:33452
+/castsequence [combat] reset=combat item:32905,item:22829
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
@@ -34,18 +34,18 @@ VER 3 000000000000000B "lvl enchant" "132089"
 /click StaticPopup1Button1
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:4540
 /cast feed pet
-/use item:0
+/use item:4540
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:118
+/use item:32905
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run TargetFrameTextureFrame.ManaBarTextRight:SetPoint('RIGHT', TargetFrameManaBar, 'RIGHT', -7, -1)
+/run LBI()
 END

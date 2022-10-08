@@ -1,0 +1,16 @@
+## Title: |cff1784d1ElvUI|r
+## Notes: User Interface Replacement
+## Author: Elv, Simpy
+## Version: 12.91
+## SavedVariables: ElvDB, ElvPrivateDB
+## SavedVariablesPerCharacter: ElvCharacterDB
+## OptionalDeps: SharedMedia, Tukui, Masque, Blizzard_PetJournal
+## Interface: 90207
+## X-Interface: 90207
+## X-oUF: ElvUF
+
+Mainline\Libs.xml
+
+Core\Load.xml
+
+Mainline\Load.xml
