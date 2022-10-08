@@ -6,11 +6,42 @@ Bagnon_Sets = {
 	},
 	["fridgeColor"] = {
 	},
-	["glowPoor"] = false,
+	["displayCraft"] = false,
 	["engineerColor"] = {
 	},
-	["displayBank"] = false,
+	["inscribeColor"] = {
+	},
 	["herbColor"] = {
+	},
+	["glowUnusable"] = true,
+	["displayMail"] = false,
+	["displayBank"] = false,
+	["soulColor"] = {
+	},
+	["closeBank"] = false,
+	["glowQuest"] = true,
+	["displayAuction"] = false,
+	["quiverColor"] = {
+	},
+	["glowQuality"] = true,
+	["reagentColor"] = {
+	},
+	["gemColor"] = {
+	},
+	["enchantColor"] = {
+	},
+	["glowAlpha"] = 0.5,
+	["emptySlots"] = true,
+	["glowNew"] = false,
+	["normalColor"] = {
+	},
+	["profiles"] = {
+	},
+	["mineColor"] = {
+	},
+	["displayTrade"] = false,
+	["version"] = "9.2.2",
+	["keyColor"] = {
 	},
 	["global"] = {
 		["inventory"] = {
@@ -50,10 +81,10 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["bagBreak"] = false,
+			["search"] = true,
 			["y"] = -293.1571044921875,
 			["x"] = -408.98974609375,
-			["search"] = true,
+			["sort"] = true,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -63,7 +94,7 @@ Bagnon_Sets = {
 			["broker"] = false,
 			["options"] = true,
 			["bagToggle"] = true,
-			["sort"] = true,
+			["bagBreak"] = false,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -168,55 +199,24 @@ Bagnon_Sets = {
 			["bagToggle"] = true,
 			["columns"] = 18,
 			["alpha"] = 1,
-			["scale"] = 1,
-			["bagBreak"] = false,
-			["x"] = 739.8164672851562,
-			["search"] = true,
-			["broker"] = false,
-			["itemScale"] = 1,
-			["hiddenRules"] = {
-			},
-			["y"] = -308.0184936523438,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
+			["bagBreak"] = false,
+			["x"] = 739.8164672851562,
+			["search"] = true,
+			["broker"] = false,
+			["y"] = -308.0187377929688,
+			["hiddenRules"] = {
+			},
+			["itemScale"] = 1,
+			["scale"] = 1,
 		},
 	},
-	["displayMail"] = false,
-	["displayCraft"] = false,
-	["glowUnusable"] = true,
-	["closeBank"] = false,
-	["glowQuest"] = true,
-	["keyColor"] = {
-	},
-	["quiverColor"] = {
-	},
-	["profiles"] = {
-	},
-	["reagentColor"] = {
-	},
-	["gemColor"] = {
-	},
-	["enchantColor"] = {
-	},
-	["glowAlpha"] = 0.5,
-	["emptySlots"] = true,
-	["glowNew"] = false,
-	["displayAuction"] = false,
-	["glowQuality"] = true,
-	["mineColor"] = {
-	},
-	["displayTrade"] = false,
-	["version"] = "9.2.2",
-	["normalColor"] = {
-	},
-	["soulColor"] = {
-	},
 	["colorSlots"] = false,
-	["inscribeColor"] = {
-	},
+	["glowPoor"] = false,
 	["displayScrapping"] = false,
 }

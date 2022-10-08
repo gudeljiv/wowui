@@ -183,3 +183,4 @@ DBM-ZG: enabled
 nibRealUI_BossSkins: disabled
 LucyRaidFrames: disabled
 ExtVendor: disabled
+teksLoot: disabled

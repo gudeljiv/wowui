@@ -1163,13 +1163,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Garaxxas",
 		},
-		[48583] = {
-			["school"] = 1,
+		[33793] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Skarvald the Constructor",
+			["source"] = "Vazruden the Herald",
 		},
 		[44224] = {
 			["school"] = 1,
@@ -1196,14 +1196,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Sunseeker Researcher",
 		},
-		[44503] = {
-			["school"] = 4,
+		[48583] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Wretched Husk",
+			["source"] = "Skarvald the Constructor",
 		},
 		[44256] = {
 			["school"] = 8,
@@ -1238,14 +1237,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Selin Fireheart",
 		},
-		[48400] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
+		[30639] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Frost Tomb",
+			["source"] = "Shattered Hand Warhound",
 		},
 		[30695] = {
 			["school"] = 32,
@@ -1264,14 +1262,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Darkweaver Syth",
 		},
-		[30639] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Shattered Hand Warhound",
-		},
 		[44320] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -1279,6 +1269,15 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Fel Crystal",
+		},
+		[48400] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Frost Tomb",
 		},
 		[15503] = {
 			["school"] = 2,
@@ -1415,13 +1414,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Omor the Unscarred",
 		},
-		[33793] = {
+		[44503] = {
 			["school"] = 4,
 			["token"] = {
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Vazruden the Herald",
+			["source"] = "Wretched Husk",
 		},
 		[36127] = {
 			["school"] = 32,

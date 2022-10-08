@@ -82,7 +82,7 @@ FarmHudDB = {
 	["trailPathTimeout"] = 60,
 	["tracking^136451"] = "client",
 	["time_bottom"] = false,
-	["text_scale"] = 1.5,
+	["trailPathCount"] = 32,
 	["MinimapIcon"] = {
 		["minimapPos"] = 220,
 		["radius"] = 80,
@@ -95,21 +95,21 @@ FarmHudDB = {
 		0, -- [3]
 		0.7, -- [4]
 	},
-	["tracking^136217"] = "client",
+	["background_alpha"] = 0,
 	["tracking^133939"] = "true",
-	["player_dot"] = "blizz",
+	["tracking^136459"] = "client",
 	["coords_bottom"] = false,
-	["buttons_alpha"] = 0.6,
-	["tracking^136464"] = "client",
 	["cardinalpoints_color1"] = {
 		0.0196078431372549, -- [1]
 		1, -- [2]
 		0.6431372549019607, -- [3]
 		0.7000000178813934, -- [4]
 	},
-	["tracking^136459"] = "client",
-	["background_alpha"] = 0,
+	["tracking^136464"] = "client",
+	["buttons_alpha"] = 0.6,
+	["player_dot"] = "blizz",
+	["tracking^136217"] = "client",
 	["trailPathIcon"] = "arrow01",
 	["tracking^136452"] = "client",
-	["trailPathCount"] = 32,
+	["text_scale"] = 1.5,
 }

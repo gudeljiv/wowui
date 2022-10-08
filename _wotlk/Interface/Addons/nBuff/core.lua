@@ -13,29 +13,29 @@ _G.SECOND_ONELETTER_ABBR = '|cffffffff%d|r'
 -- _G.DEBUFF_MAX_DISPLAY = 32 -- show more debuffs
 -- _G.BUFF_MIN_ALPHA = 1
 --]]
-local origSecondsToTimeAbbrev = _G.SecondsToTimeAbbrev
-local function SecondsToTimeAbbrevHook(seconds)
-	origSecondsToTimeAbbrev(seconds)
+-- local origSecondsToTimeAbbrev = _G.SecondsToTimeAbbrev
+-- local function SecondsToTimeAbbrevHook(seconds)
+-- 	origSecondsToTimeAbbrev(seconds)
 
-	local tempTime
-	if (seconds >= 86400) then
-		tempTime = ceil(seconds / 86400)
-		return '|cffffffff%dd|r', tempTime
-	end
+-- 	local tempTime
+-- 	if (seconds >= 86400) then
+-- 		tempTime = ceil(seconds / 86400)
+-- 		return '|cffffffff%dd|r', tempTime
+-- 	end
 
-	if (seconds >= 3600) then
-		tempTime = ceil(seconds / 3600)
-		return '|cffffffff%dh|r', tempTime
-	end
+-- 	if (seconds >= 3600) then
+-- 		tempTime = ceil(seconds / 3600)
+-- 		return '|cffffffff%dh|r', tempTime
+-- 	end
 
-	if (seconds >= 60) then
-		tempTime = ceil(seconds / 60)
-		return '|cffffffff%dm|r', tempTime
-	end
+-- 	if (seconds >= 60) then
+-- 		tempTime = ceil(seconds / 60)
+-- 		return '|cffffffff%dm|r', tempTime
+-- 	end
 
-	return '|cffffffff%d|r', seconds
-end
-SecondsToTimeAbbrev = SecondsToTimeAbbrevHook
+-- 	return '|cffffffff%d|r', seconds
+-- end
+-- SecondsToTimeAbbrev = SecondsToTimeAbbrevHook
 
 BuffFrame:SetScript('OnUpdate', nil)
 

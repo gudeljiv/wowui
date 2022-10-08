@@ -23,6 +23,16 @@ local defaultHealthPotionMacro = [[#showtooltip
 /use <hPotion>
 ]]
 
+local defaultMillingMacro = [[#showtooltip <herb>
+/cast Milling
+/use <herb>
+]]
+
+local defaultProspectingMacro = [[#showtooltip <ore>
+/cast Prospecting
+/use <ore>
+]]
+
 local function CreateOrUpdateMacro(macroName, text)
 	local macroID = GetMacroIndexByName(macroName)
 	if macroID == 0 then
@@ -62,6 +72,8 @@ function NeedsFoodBadly:UpdateMacros()
 	local best = {
 		food = {},
 		petfood = {},
+		herb = {},
+		ore = {},
 		buffFood = {},
 		drink = {},
 		buffDrink = {},
@@ -81,6 +93,12 @@ function NeedsFoodBadly:UpdateMacros()
 			end
 			if not best.petfood[id] and self:IsUsablePetFood(self.PetFood[id]) then
 				best.petfood[id] = self.PetFood[id]
+			end
+			if not best.herb[id] and self:IsUsableHerb(self.Herb[id]) then
+				best.herb[id] = self.Herb[id]
+			end
+			if not best.ore[id] and self:IsUsableOre(self.Ore[id]) then
+				best.ore[id] = self.Ore[id]
 			end
 			if not best.buffFood[id] and self:IsUsableBuffFood(self.Food[id]) then
 				best.buffFood[id] = self.Food[id]
@@ -110,6 +128,8 @@ function NeedsFoodBadly:UpdateMacros()
 	end
 	best.food = self:Sorted(best.food, self.BetterFood)
 	best.petfood = self:Sorted(best.petfood, self.BetterPetFood)
+	best.herb = self:Sorted(best.herb, self.BetterHerb)
+	best.ore = self:Sorted(best.ore, self.BetterOre)
 	best.buffFood = self:Sorted(best.buffFood, self.BetterBuffFood)
 	best.drink = self:Sorted(best.drink, self.BetterDrink)
 	best.buffDrink = self:Sorted(best.buffDrink, self.BetterBuffDrink)
@@ -153,15 +173,29 @@ function NeedsFoodBadly:UpdateMacros()
 			['<hPotion>'] = 'item:' .. tostring(best.hPotion[1] and best.hPotion[1].id or 0)
 		}
 	)
+	local millingMacro =
+		defaultMillingMacro:gsub(
+		'<%a+>',
+		{
+			['<herb>'] = 'item:' .. tostring(best.herb[1] and best.herb[1].id or 0)
+		}
+	)
+	local prospectingMacro =
+		defaultProspectingMacro:gsub(
+		'<%a+>',
+		{
+			['<ore>'] = 'item:' .. tostring(best.ore[1] and best.ore[1].id or 0)
+		}
+	)
 
 	CreateOrUpdateMacro('Food', foodMacro)
 	CreateOrUpdateMacro('Drink', drinkMacro)
 	CreateOrUpdateMacro('Stone', healthstoneMacro)
 	CreateOrUpdateMacro('Potion', healthPotionMacro)
+	CreateOrUpdateMacro('Mill', millingMacro)
+	CreateOrUpdateMacro('Prsp', prospectingMacro)
 
 	if (UnitExists('pet') and xVermin.Class == 'HUNTER') then
-		-- local petType = UnitCreatureFamily("pet")
-
 		local petfoodMacro =
 			defaultPetFoodMacro:gsub(
 			'<%a+>',
@@ -234,6 +268,14 @@ function NeedsFoodBadly:IsUsableHealthstone(healthstone)
 	return not (not (healthstone and healthstone.lvl <= UnitLevel('player')))
 end
 
+function NeedsFoodBadly:IsUsableHerb(herb)
+	return not (not (herb and (GetItemCount(herb.id) > 5 or GetItemCount(herb.id) % 5 == 0)))
+end
+
+function NeedsFoodBadly:IsUsableOre(ore)
+	return not (not (ore and (GetItemCount(ore.id) > 5 or GetItemCount(ore.id) % 5 == 0)))
+end
+
 function NeedsFoodBadly:IsUsableManaGem(manaGem)
 	return not (not (manaGem and manaGem.lvl <= UnitLevel('player')))
 end
@@ -285,6 +327,32 @@ function NeedsFoodBadly.BetterPetFood(a, b)
 	end
 
 	return GetItemCount(a.id) <= GetItemCount(b.id)
+end
+
+function NeedsFoodBadly.BetterHerb(a, b)
+	if not a then
+		return false
+	end
+	if not b then
+		return false
+	end
+
+	local il_a = select(4, GetItemInfo(a.id))
+	local il_b = select(4, GetItemInfo(b.id))
+	return il_a <= il_b -- or GetItemCount(a.id) <= GetItemCount(b.id)
+end
+
+function NeedsFoodBadly.BetterOre(a, b)
+	if not a then
+		return false
+	end
+	if not b then
+		return false
+	end
+
+	local il_a = select(4, GetItemInfo(a.id))
+	local il_b = select(4, GetItemInfo(b.id))
+	return il_a <= il_b --or GetItemCount(a.id) <= GetItemCount(b.id)
 end
 
 function NeedsFoodBadly.BetterBuffFood(a, b)
@@ -407,6 +475,84 @@ function NeedsFoodBadly:BuildSequence(stone, potions)
 	local sequenceStr = table.concat(sequence, ',', 1, math.min(table.getn(sequence), 14))
 	return sequenceStr
 end
+
+NeedsFoodBadly.Herb = {
+	[36903] = {id = 36903},
+	[36908] = {id = 36908},
+	[36905] = {id = 36905},
+	[36907] = {id = 36907},
+	[36906] = {id = 36906},
+	[36901] = {id = 36901},
+	[37921] = {id = 37921},
+	[36904] = {id = 36904},
+	[22788] = {id = 22788},
+	[8836] = {id = 8836},
+	[2450] = {id = 2450},
+	[22792] = {id = 22792},
+	[8838] = {id = 8838},
+	[8839] = {id = 8839},
+	[3820] = {id = 3820},
+	[13464] = {id = 13464},
+	[2452] = {id = 2452},
+	[3356] = {id = 3356},
+	[22786] = {id = 22786},
+	[8831] = {id = 8831},
+	[2453] = {id = 2453},
+	[3357] = {id = 3357},
+	[13465] = {id = 13465},
+	[785] = {id = 785},
+	[13463] = {id = 13463},
+	[22791] = {id = 22791},
+	[3821] = {id = 3821},
+	[22785] = {id = 22785},
+	[3358] = {id = 3358},
+	[3355] = {id = 3355},
+	[2447] = {id = 2447},
+	[22797] = {id = 22797},
+	[22790] = {id = 22790},
+	[765] = {id = 765},
+	[3818] = {id = 3818},
+	[8153] = {id = 8153},
+	[4625] = {id = 4625},
+	[22789] = {id = 22789},
+	[8846] = {id = 8846},
+	[13468] = {id = 13468},
+	[22794] = {id = 22794},
+	[3819] = {id = 3819},
+	[2449] = {id = 2449},
+	[13466] = {id = 13466},
+	[13467] = {id = 13467},
+	[22787] = {id = 22787},
+	[3369] = {id = 3369},
+	[8845] = {id = 8845},
+	[22793] = {id = 22793},
+	[22710] = {id = 22710},
+	[19726] = {id = 19726},
+	[36902] = {id = 36902},
+	[19727] = {id = 19727}
+}
+
+NeedsFoodBadly.Ore = {
+	[36912] = {id = 36912},
+	[36910] = {id = 36910},
+	[36909] = {id = 36909},
+	[3858] = {id = 3858},
+	[23424] = {id = 23424},
+	[23425] = {id = 23425},
+	[10620] = {id = 10620},
+	[2771] = {id = 2771},
+	[2772] = {id = 2772},
+	[2775] = {id = 2775},
+	[7911] = {id = 7911},
+	[2776] = {id = 2776},
+	[2770] = {id = 2770},
+	[23426] = {id = 23426},
+	[23427] = {id = 23427},
+	[11370] = {id = 11370},
+	[18562] = {id = 18562},
+	[11099] = {id = 11099},
+	[36911] = {id = 36911}
+}
 
 NeedsFoodBadly.Food = {
 	[8932] = {id = 8932, name = 'Alterac Swiss', lvl = 45, conj = false, hp = 2148},

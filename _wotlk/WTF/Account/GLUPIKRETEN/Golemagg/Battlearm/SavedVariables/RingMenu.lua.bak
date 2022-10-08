@@ -13,7 +13,7 @@ RingMenu_ringConfig = {
 		},
 		["radius"] = 100,
 		["backdropScale"] = 1.5,
-		["closeOnClick"] = true,
+		["closeOnClick"] = false,
 		["angle"] = 0,
 		["firstSlot"] = 13,
 		["numSlots"] = 12,

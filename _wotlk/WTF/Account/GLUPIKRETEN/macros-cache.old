@@ -1,3 +1,12 @@
+VER 3 0000000000000012 " " "132143"
+#showtooltip
+/startattack
+END
+VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Fel Sharpening Stone
+/use [button:1] 16; [button:2] 17
+END
 VER 3 000000000000000E " " "136106"
 /run InspectUnit("target")
 /run SortBags()
@@ -9,15 +18,6 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /castsequence Find Herbs,Find Minerals
 END
-VER 3 0000000000000012 " " "132143"
-#showtooltip
-/startattack
-END
-VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/use Fel Sharpening Stone
-/use [button:1] 16; [button:2] 17
-END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:0
@@ -25,13 +25,18 @@ VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33452
-/castsequence [combat] reset=combat item:32905,item:22829
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
 /run GetMouseFocus():Click()
 /click StaticPopup1Button1
+END
+VER 3 0000000000000016 "Mill" "Inv_misc_questionmark"
+#showtooltip item:0
+/cast Milling
+/use item:0
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:4540
@@ -40,7 +45,12 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:32905
+/use item:0
+END
+VER 3 0000000000000017 "Prsp" "Inv_misc_questionmark"
+#showtooltip item:0
+/cast Prospecting
+/use item:0
 END
 VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 #showtooltip

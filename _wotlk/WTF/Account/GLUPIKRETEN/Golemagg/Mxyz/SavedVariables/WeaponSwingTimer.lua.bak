@@ -1,7 +1,7 @@
 
 character_core_settings = {
 	["one_frame"] = false,
-	["welcome_message"] = true,
+	["welcome_message"] = false,
 }
 character_player_settings = {
 	["off_a"] = 1,
@@ -12,7 +12,7 @@ character_player_settings = {
 	["main_text_a"] = 1,
 	["off_r"] = 0.1,
 	["in_combat_alpha"] = 1,
-	["enabled"] = true,
+	["enabled"] = false,
 	["y_offset"] = -200,
 	["x_offset"] = 0,
 	["height"] = 12,
@@ -51,7 +51,7 @@ character_target_settings = {
 	["main_text_a"] = 1,
 	["off_r"] = 0.8,
 	["in_combat_alpha"] = 1,
-	["enabled"] = true,
+	["enabled"] = false,
 	["y_offset"] = -230,
 	["x_offset"] = 0,
 	["height"] = 12,

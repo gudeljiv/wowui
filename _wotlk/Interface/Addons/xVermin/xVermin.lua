@@ -272,3 +272,12 @@ f:SetScript(
 		end
 	end
 )
+
+-- local f = Test or CreateFrame('Frame', 'Test', UIParent)
+
+-- local function TestPrint(self, key)
+-- 	ChatFrame6:AddMessage(self:GetName() .. ': ' .. key)
+-- end
+
+-- f:SetScript('OnKeyDown', TestPrint)
+-- f:SetPropagateKeyboardInput(true)
