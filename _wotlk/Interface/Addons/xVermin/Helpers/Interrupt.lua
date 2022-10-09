@@ -15,17 +15,17 @@ TargetFrame:HookScript(
 				local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
 				local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
 				if defensive then
-					if IsSpellInRange('Shield Bash', 'target') == 1 and GetSpellCooldown('Shield Bash') == 0 then
+					if IsSpellInRange('Shield Bash', 'target') and not GetSpellCooldown('Shield Bash') then
 						RotationFrame2:SetBackdropColor(0, 1, 0, 1)
 					end
 				end
 				if berserker then
-					if IsSpellInRange('Pummel', 'target') == 1 and GetSpellCooldown('Pummel') == 0 then
+					if IsSpellInRange('Pummel', 'target') and not GetSpellCooldown('Pummel') then
 						RotationFrame2:SetBackdropColor(0, 1, 0, 1)
 					end
 				end
 				if battle and IsEquippedItemType('Shields') then
-					if IsSpellInRange('Shield Bash', 'target') == 1 and GetSpellCooldown('Shield Bash') == 0 then
+					if IsSpellInRange('Shield Bash', 'target') and not GetSpellCooldown('Shield Bash') then
 						RotationFrame2:SetBackdropColor(0, 1, 0, 1)
 					end
 				end
@@ -33,7 +33,7 @@ TargetFrame:HookScript(
 
 			-- PALADIN INTERRUPT
 			if (xVermin.Class == 'PALADIN') then
-				if GetSpellCooldown('Arcane Torrent') == 0 and CheckInteractDistance('target', 3) then
+				if not GetSpellCooldown('Arcane Torrent') and CheckInteractDistance('target', 3) then
 					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
 				end
 			end
@@ -46,21 +46,21 @@ TargetFrame:HookScript(
 				local _, travel = GetShapeshiftFormInfo(4) -- ako je travel form
 				local _, moonkin = GetShapeshiftFormInfo(5) -- ako je moonkin form
 				local _, tree = GetShapeshiftFormInfo(6) -- ako je tree form
-				if bear and GetSpellCooldown('Bash') == 0 and CheckInteractDistance('target', 3) then
+				if bear and not GetSpellCooldown('Bash') and CheckInteractDistance('target', 3) then
 					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
 				end
 			end
 
 			-- DEATHKNIGHT INTERRUPT
 			if (xVermin.Class == 'DEATHKNIGHT') then
-				if GetSpellCooldown('Mind Freeze') == 0 and IsSpellInRange('Mind Freeze', 'target') then
+				if not GetSpellCooldown('Mind Freeze') and IsSpellInRange('Mind Freeze', 'target') then
 					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
 				end
 			end
 
 			-- HUNTER INTERRUPT
 			if (xVermin.Class == 'HUNTER') then
-				if GetSpellCooldown('Silencing Shot') == 0 and IsSpellInRange('Silencing Shot', 'target') then
+				if not GetSpellCooldown('Silencing Shot') and IsSpellInRange('Silencing Shot', 'target') then
 					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
 				end
 			end

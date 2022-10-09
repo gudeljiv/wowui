@@ -37,13 +37,13 @@ VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Shield Slam
 /cast Shield Block
+/use 13
+/use 14
 END
 VER 3 0000000001000011 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Mortal Strike
-/use 13
-/use 14
 /cast Bloodrage
 END
 VER 3 0000000001000012 " " "INV_MISC_QUESTIONMARK"

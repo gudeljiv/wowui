@@ -40,6 +40,11 @@ xVermin.AOE = function(range)
 							end
 						end
 					end
+					if (xVermin.Class == 'DEATHKNIGHT') then
+						if not IsSpellInRange('Mind Freeze', 'target') or GetSpellCooldown('Mind Freeze') then
+							rangecasting = rangecasting + 1
+						end
+					end
 				end
 			end
 

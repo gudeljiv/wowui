@@ -1,18 +1,18 @@
 
 __DEJUNK_ADDON_GLOBAL_SAVED_VARIABLES__ = {
-	["minimapIcon"] = {
-		["hide"] = true,
-	},
+	["autoSell"] = true,
 	["inclusions"] = {
-		["37252"] = true,
+		["32902"] = true,
 		["27854"] = true,
-		["43013"] = true,
 		["33454"] = true,
+		["37252"] = true,
 		["33444"] = true,
 		["27855"] = true,
 		["27860"] = true,
-		["32902"] = true,
+		["43013"] = true,
+	},
+	["minimapIcon"] = {
+		["hide"] = true,
 	},
 	["merchantButton"] = false,
-	["autoSell"] = true,
 }

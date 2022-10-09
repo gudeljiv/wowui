@@ -1,4 +1,4 @@
-## v4.11.55 Changes
+## v4.11.56 Changes
 
 * [Classic] Fix various issues while buying in the Browse tab of the AH
 

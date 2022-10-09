@@ -198,15 +198,15 @@ RXPCComms = {
 					["class"] = "SHAMAN",
 					["xp"] = 920,
 				},
-				["Ylvin"] = {
-					["timePlayed"] = 1404.817000000039,
-					["class"] = "MAGE",
-					["xp"] = 1838,
-				},
 				["Talanjii"] = {
 					["timePlayed"] = 85.72200000006706,
 					["class"] = "PRIEST",
 					["xp"] = 1376,
+				},
+				["Ylvin"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "MAGE",
+					["xp"] = 1838,
 				},
 				["Brutikus"] = {
 					["timePlayed"] = 85.72200000006706,

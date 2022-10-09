@@ -22,23 +22,23 @@ TomTomDB = {
 		["Nitwit - Dreadnaught"] = "Default",
 		["Mxys - Golemagg"] = "Default",
 		["Kaonac - Jin'do"] = "Default",
-		["Tudum - Jin'do"] = "Default",
-		["Tandaram - Jin'do"] = "Default",
+		["Dmitar - Golemagg"] = "Default",
+		["Grgur - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
-		["Dotwise - Golemagg"] = "Default",
-		["Battlearm - Golemagg"] = "Default",
+		["Pitchwise - Dreadnaught"] = "Default",
+		["Battlearm - Hydraxian Waterlords"] = "Default",
 		["Testxv - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Pitchwise - Ashbringer"] = "Default",
-		["Klhjakhsgdjh - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
-		["Battlearm - Jin'do"] = "Default",
 		["Mxym - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
+		["Klhjakhsgdjh - Golemagg"] = "Default",
+		["Battlearm - Jin'do"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Battlearm - Hydraxian Waterlords"] = "Default",
-		["Pitchwise - Dreadnaught"] = "Default",
-		["Grgur - Golemagg"] = "Default",
-		["Dmitar - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
+		["Dotwise - Golemagg"] = "Default",
+		["Tandaram - Jin'do"] = "Default",
+		["Tudum - Jin'do"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -99,23 +99,23 @@ TomTomWaypointsM = {
 		["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 		["Mxys - Golemagg"] = "Mxys - Golemagg",
 		["Kaonac - Jin'do"] = "Kaonac - Jin'do",
-		["Tudum - Jin'do"] = "Tudum - Jin'do",
-		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
+		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
+		["Grgur - Golemagg"] = "Grgur - Golemagg",
 		["Vermins - Stonespine"] = "Vermins - Stonespine",
-		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
-		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
+		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
+		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
 		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Pitchwise - Ashbringer"] = "Pitchwise - Ashbringer",
-		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
+		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
+		["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Battlearm - Hydraxian Waterlords"] = "Battlearm - Hydraxian Waterlords",
-		["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
-		["Grgur - Golemagg"] = "Grgur - Golemagg",
-		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
+		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
+		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
+		["Tandaram - Jin'do"] = "Tandaram - Jin'do",
+		["Tudum - Jin'do"] = "Tudum - Jin'do",
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -160,15 +160,15 @@ TomTomWaypointsM = {
 		},
 		["Kaonac - Jin'do"] = {
 		},
-		["Tudum - Jin'do"] = {
+		["Dmitar - Golemagg"] = {
 		},
-		["Tandaram - Jin'do"] = {
+		["Grgur - Golemagg"] = {
 		},
 		["Vermins - Stonespine"] = {
 		},
-		["Dotwise - Golemagg"] = {
+		["Pitchwise - Dreadnaught"] = {
 		},
-		["Battlearm - Golemagg"] = {
+		["Battlearm - Hydraxian Waterlords"] = {
 		},
 		["Testxv - Golemagg"] = {
 		},
@@ -176,23 +176,23 @@ TomTomWaypointsM = {
 		},
 		["Pitchwise - Ashbringer"] = {
 		},
-		["Klhjakhsgdjh - Golemagg"] = {
+		["Mxym - Golemagg"] = {
 		},
 		["Jaroslav - Golemagg"] = {
 		},
-		["Battlearm - Jin'do"] = {
+		["Klhjakhsgdjh - Golemagg"] = {
 		},
-		["Mxym - Golemagg"] = {
+		["Battlearm - Jin'do"] = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Battlearm - Hydraxian Waterlords"] = {
+		["Battlearm - Golemagg"] = {
 		},
-		["Pitchwise - Dreadnaught"] = {
+		["Dotwise - Golemagg"] = {
 		},
-		["Grgur - Golemagg"] = {
+		["Tandaram - Jin'do"] = {
 		},
-		["Dmitar - Golemagg"] = {
+		["Tudum - Jin'do"] = {
 		},
 	},
 }

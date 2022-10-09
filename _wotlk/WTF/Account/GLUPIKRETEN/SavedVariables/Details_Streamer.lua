@@ -17,11 +17,11 @@ Details_StreamerDB = {
 		["Pitchwise - Ashbringer"] = "Mxyz - Golemagg",
 		["Vermin - Golemagg"] = "Mxyz - Golemagg",
 		["Battlearm - Jin'do"] = "Mxyz - Golemagg",
-		["Tandaram - Jin'do"] = "Mxyz - Golemagg",
-		["Provokator - Jin'do"] = "Mxyz - Golemagg",
-		["Pitchwise - Dreadnaught"] = "Mxyz - Golemagg",
-		["Nitwit - Dreadnaught"] = "Mxyz - Golemagg",
 		["Tudum - Jin'do"] = "Mxyz - Golemagg",
+		["Provokator - Jin'do"] = "Mxyz - Golemagg",
+		["Nitwit - Dreadnaught"] = "Mxyz - Golemagg",
+		["Pitchwise - Dreadnaught"] = "Mxyz - Golemagg",
+		["Tandaram - Jin'do"] = "Mxyz - Golemagg",
 		["Moolatz - Dreadnaught"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
@@ -49,11 +49,11 @@ Details_StreamerDB = {
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["arrow_anchor_y"] = 0,
+			["use_square_mode"] = false,
 			["arrow_anchor_x"] = 0,
 			["main_frame_locked"] = true,
 			["row_texture"] = "Glamour2",
-			["author"] = "Details! Team",
+			["arrow_anchor_y"] = 0,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -65,7 +65,7 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
@@ -77,22 +77,22 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["font_size"] = 10,
 			["y"] = -183.107162475586,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["use_square_mode"] = false,
-			["scale"] = 1,
-			["row_height"] = 18,
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["point"] = "RIGHT",
+			["row_height"] = 18,
+			["scale"] = 1,
 		},
 	},
 }
