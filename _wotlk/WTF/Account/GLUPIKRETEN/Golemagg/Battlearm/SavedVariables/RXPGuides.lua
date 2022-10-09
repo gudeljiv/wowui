@@ -1125,17 +1125,17 @@ RXPCComms = {
 					["timePlayed"] = 2007.155999999959,
 					["class"] = "MAGE",
 				},
-				["Liixx"] = {
-					["timePlayed"] = 1248.310000000056,
-					["class"] = "WARRIOR",
+				["Hindka"] = {
+					["timePlayed"] = 46.6909999999998,
+					["class"] = "HUNTER",
 				},
 				["Viona"] = {
 					["timePlayed"] = 1248.310000000056,
 					["class"] = "DRUID",
 				},
-				["Hindka"] = {
-					["timePlayed"] = 46.6909999999998,
-					["class"] = "HUNTER",
+				["Armanix"] = {
+					["timePlayed"] = 928.4809999999125,
+					["class"] = "DEATHKNIGHT",
 				},
 				["Covidstrike"] = {
 					["timePlayed"] = 0,
@@ -1162,12 +1162,12 @@ RXPCComms = {
 					["class"] = "DEATHKNIGHT",
 				},
 				["Dyasoak"] = {
-					["level"] = 63,
+					["isRxp"] = true,
 					["lastSeen"] = 4512.213,
 					["xpPercentage"] = 15,
-					["class"] = "DEATHKNIGHT",
+					["level"] = 63,
 					["timePlayed"] = 17.9380000000001,
-					["isRxp"] = true,
+					["class"] = "DEATHKNIGHT",
 				},
 				["Bigballboy"] = {
 					["timePlayed"] = 35.62599999969825,
@@ -1189,21 +1189,21 @@ RXPCComms = {
 					["timePlayed"] = 214.7700000000186,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Pidepizza"] = {
-					["timePlayed"] = 0,
+				["Seul"] = {
+					["isRxp"] = true,
+					["lastSeen"] = 2446450.64,
+					["xpPercentage"] = 0,
+					["level"] = 70,
+					["timePlayed"] = 1255.760000000242,
 					["class"] = "DEATHKNIGHT",
 				},
 				["Poogersdied"] = {
 					["timePlayed"] = 115.9580000001006,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Ukrayn"] = {
-					["isRxp"] = true,
-					["lastSeen"] = 2192898.234,
-					["xpPercentage"] = 0,
-					["level"] = 68,
-					["timePlayed"] = 259.660000000149,
-					["class"] = "HUNTER",
+				["Pidepizza"] = {
+					["timePlayed"] = 0,
+					["class"] = "DEATHKNIGHT",
 				},
 				["Nephien"] = {
 					["timePlayed"] = 232.0819999999367,
@@ -1237,13 +1237,13 @@ RXPCComms = {
 					["timePlayed"] = 212.2609999999995,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Seul"] = {
-					["level"] = 70,
-					["lastSeen"] = 2446450.64,
+				["Ukrayn"] = {
+					["class"] = "HUNTER",
+					["lastSeen"] = 2192898.234,
 					["xpPercentage"] = 0,
-					["class"] = "DEATHKNIGHT",
-					["timePlayed"] = 1255.760000000242,
 					["isRxp"] = true,
+					["timePlayed"] = 259.660000000149,
+					["level"] = 68,
 				},
 				["Vadren"] = {
 					["timePlayed"] = 0,
@@ -1257,9 +1257,9 @@ RXPCComms = {
 					["timePlayed"] = 67.6559999999995,
 					["class"] = "DEATHKNIGHT",
 				},
-				["Armanix"] = {
-					["timePlayed"] = 928.4809999999125,
-					["class"] = "DEATHKNIGHT",
+				["Liixx"] = {
+					["timePlayed"] = 1248.310000000056,
+					["class"] = "WARRIOR",
 				},
 				["Deklus"] = {
 					["timePlayed"] = 2.728000000119209,

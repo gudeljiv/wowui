@@ -203,10 +203,10 @@ RXPCComms = {
 					["class"] = "DRUID",
 					["xp"] = 796,
 				},
-				["Ylvin"] = {
-					["timePlayed"] = 1404.817000000039,
-					["class"] = "MAGE",
-					["xp"] = 1838,
+				["Talanjii"] = {
+					["timePlayed"] = 85.72200000006706,
+					["class"] = "PRIEST",
+					["xp"] = 1376,
 				},
 				["Hulari"] = {
 					["timePlayed"] = 1545.662000000011,
@@ -273,10 +273,10 @@ RXPCComms = {
 					["class"] = "WARRIOR",
 					["xp"] = 1376,
 				},
-				["Talanjii"] = {
-					["timePlayed"] = 85.72200000006706,
-					["class"] = "PRIEST",
-					["xp"] = 1376,
+				["Ylvin"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "MAGE",
+					["xp"] = 1838,
 				},
 				["Ilthe"] = {
 					["timePlayed"] = 173.0210000000661,

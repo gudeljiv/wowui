@@ -1,6 +1,6 @@
 local _, xVermin = ...
 
-xVermin:CheckIfLoadedWithTimer(
+xVermin.CheckIfLoadedWithTimer(
 	'GroupBulletinBoardFrame',
 	function()
 		if not GroupBulletinBoardFrame.SetBackdrop then

@@ -149,7 +149,7 @@ f:SetScript(
 			'OnUpdate',
 			function()
 				if UnitHealth('player') > 0 then
-					PlayerFrameHealthBarText:SetText(xVermin:FormatValue(UnitHealth('player')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('player')))
+					PlayerFrameHealthBarText:SetText(xVermin.FormatValue(UnitHealth('player')) .. ' / ' .. xVermin.FormatValue(UnitHealthMax('player')))
 				else
 					PlayerFrameHealthBarText:Hide()
 					PlayerFrameManaBarText:Hide()
@@ -185,7 +185,7 @@ f:SetScript(
 			'OnUpdate',
 			function()
 				if UnitHealth('target') > 0 then
-					TargetFrameTextureFrame.HealthBarText:SetText(xVermin:FormatValue(UnitHealth('target')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('target')))
+					TargetFrameTextureFrame.HealthBarText:SetText(xVermin.FormatValue(UnitHealth('target')) .. ' / ' .. xVermin.FormatValue(UnitHealthMax('target')))
 				else
 					TargetFrameTextureFrame.HealthBarText:Hide()
 					TargetFrameTextureFrame.ManaBarText:Hide()
@@ -220,7 +220,7 @@ f:SetScript(
 			'OnUpdate',
 			function()
 				if UnitHealth('focus') > 0 then
-					FocusFrameTextureFrame.HealthBarText:SetText(xVermin:FormatValue(UnitHealth('focus')) .. ' / ' .. xVermin:FormatValue(UnitHealthMax('focus')))
+					FocusFrameTextureFrame.HealthBarText:SetText(xVermin.FormatValue(UnitHealth('focus')) .. ' / ' .. xVermin.FormatValue(UnitHealthMax('focus')))
 				else
 					FocusFrameTextureFrame.HealthBarText:Hide()
 					FocusFrameTextureFrame.ManaBarText:Hide()
@@ -228,7 +228,7 @@ f:SetScript(
 			end
 		)
 
-		xVermin:CheckIfLoadedWithTimer(
+		xVermin.CheckIfLoadedWithTimer(
 			'PetFrame',
 			function()
 				PetFrameHealthBarText:Hide()

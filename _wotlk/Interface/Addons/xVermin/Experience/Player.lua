@@ -18,7 +18,7 @@ PlayerXP.XPbar:SetStatusBarTexture('Interface\\AddOns\\xVermin\\Media\\statusbar
 PlayerXP.XPbar:SetAlpha(0)
 
 PlayerXP.XPbar.Value = PlayerXP.XPbar:CreateFontString(nil, 'ARTWORK')
-PlayerXP.XPbar.Value:SetFont('Fonts\\ARIALN.ttf', 12, 'THINOUTLINE')
+PlayerXP.XPbar.Value:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
 PlayerXP.XPbar.Value:SetShadowOffset(0, 0)
 PlayerXP.XPbar.Value:SetPoint('LEFT', PlayerXP.XPbar, 'LEFT', 2, 0)
 PlayerXP.XPbar.Value:SetVertexColor(1, 1, 1)
@@ -77,22 +77,22 @@ local function UpdateBar(event, isInitialLogin, isReloadingUi)
 	CurrentXP = UnitXP('player')
 
 	percent = floor((CurrentXP / MaxXP) * 100)
-	r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
+	r, g, b = xVermin.ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
 
 	PlayerXP.XPbar:SetMinMaxValues(0, MaxXP)
 	PlayerXP.XPbar:SetValue(CurrentXP)
-	PlayerXP.XPbar.Value:SetText(xVermin:FormatNumber(CurrentXP, ','))
-	PlayerXP.XPbar.UntilLevel:SetText(xVermin:FormatNumber(MaxXP - CurrentXP, ','))
-	PlayerXP.XPbar.Percent:SetText(xVermin:Round(percent) .. '%')
+	PlayerXP.XPbar.Value:SetText(xVermin.FormatNumber(CurrentXP, ','))
+	PlayerXP.XPbar.UntilLevel:SetText(xVermin.FormatNumber(MaxXP - CurrentXP, ','))
+	PlayerXP.XPbar.Percent:SetText(xVermin.Round(percent) .. '%')
 	PlayerXP.XPbar:SetStatusBarColor(r, g, b)
 
 	if (select(3, GetRestState()) == 2) then
-		PlayerXP.XPbar.RestedNumber:SetText('R: ' .. xVermin:FormatNumber(GetXPExhaustion(), ','))
+		PlayerXP.XPbar.RestedNumber:SetText('R: ' .. xVermin.FormatNumber(GetXPExhaustion(), ','))
 	else
 		PlayerXP.XPbar.RestedNumber:Hide()
-		PlayerXP.XPbar.UntilLevel:SetText(xVermin:FormatNumber(MaxXP - CurrentXP, ','))
+		PlayerXP.XPbar.UntilLevel:SetText(xVermin.FormatNumber(MaxXP - CurrentXP, ','))
 		PlayerXP.XPbar.UntilLevel:SetPoint('RIGHT', PlayerXP.XPbar, 'RIGHT', -2, 0)
-		PlayerXP.XPbar.UntilLevel:SetFont('Fonts\\ARIALN.ttf', 12, 'THINOUTLINE')
+		PlayerXP.XPbar.UntilLevel:SetFont('Fonts\\ARIALN.ttf', 10, 'THINOUTLINE')
 	end
 end
 

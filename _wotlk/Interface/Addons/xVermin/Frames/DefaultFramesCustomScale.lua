@@ -25,14 +25,14 @@ for i, v in pairs(
 	end
 end
 
-xVermin:CheckIfLoadedWithTimer(
+xVermin.CheckIfLoadedWithTimer(
 	'LFGParentFrame',
 	function()
 		LFGParentFrame:SetScale(1.2)
 	end
 )
 
-xVermin:CheckIfLoadedWithTimer(
+xVermin.CheckIfLoadedWithTimer(
 	'CraftFrame',
 	function()
 		CraftFrame:SetScale(1.2)

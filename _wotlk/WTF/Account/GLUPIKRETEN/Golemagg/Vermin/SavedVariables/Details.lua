@@ -164,9 +164,9 @@ _detalhes_database = {
 		["custom"] = "",
 		["next"] = "",
 	},
-	["last_instance_time"] = 1665246209,
+	["last_instance_time"] = 1665313491,
 	["active_profile"] = "xVermin",
-	["last_day"] = "08",
+	["last_day"] = "09",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -278,12 +278,22 @@ _detalhes_database = {
 			["main_frame_locked"] = true,
 			["row_texture"] = "Glamour2",
 			["author"] = "Details! Team",
-			["y"] = -183.107162475586,
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1,
+				["font_shadow"] = true,
+				["y"] = -6.103515625e-05,
+				["x"] = 0.00311279296875,
+				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
+			},
 			["main_frame_strata"] = "LOW",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
+			["use_spark"] = false,
 			["row_spacement"] = 19,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -298,18 +308,8 @@ _detalhes_database = {
 				0.480826139450073, -- [4]
 			},
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["use_spark"] = false,
-			["per_second"] = {
-				["enabled"] = false,
-				["point"] = "CENTER",
-				["scale"] = 1,
-				["font_shadow"] = true,
-				["y"] = -6.103515625e-05,
-				["x"] = 0.00311279296875,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.05,
-				["size"] = 32,
-			},
+			["font_size"] = 10,
+			["y"] = -183.107162475586,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
@@ -319,15 +319,12 @@ _detalhes_database = {
 			["point"] = "RIGHT",
 		},
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
 	["announce_prepots"] = {
 		["enabled"] = false,
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
+	["combat_counter"] = 14995,
 	["cached_roles"] = {
 		["Player-4477-03B10F27"] = "HEALER",
 		["Player-4465-02DF9EB0"] = "DAMAGER",
@@ -367,16 +364,16 @@ _detalhes_database = {
 		["Player-4465-037FF1E1"] = "DAMAGER",
 		["Player-4465-00EB95A1"] = "DAMAGER",
 		["Player-4465-02340071"] = "DAMAGER",
-		["Player-4476-03AEC6C1"] = "HEALER",
+		["Player-4465-03854460"] = "DAMAGER",
 		["Player-4465-0258447A"] = "DAMAGER",
-		["Player-4467-0277FB19"] = "DAMAGER",
+		["Player-4454-01586241"] = "DAMAGER",
 		["Player-4465-02CA95C2"] = "DAMAGER",
 		["Player-4456-03331B6D"] = "HEALER",
 		["Player-4465-0272E0C9"] = "DAMAGER",
-		["Player-4745-01E49105"] = "DAMAGER",
+		["Player-4476-03643F4F"] = "TANK",
 		["Player-4467-02A79D86"] = "DAMAGER",
 		["Player-4441-02CBFD62"] = "DAMAGER",
-		["Player-4703-01C89E0C"] = "DAMAGER",
+		["Player-4476-03DD97C9"] = "DAMAGER",
 		["Player-4464-02C3E3E1"] = "DAMAGER",
 		["Player-4476-03A3F479"] = "DAMAGER",
 		["Player-4813-034D52DF"] = "DAMAGER",
@@ -409,12 +406,12 @@ _detalhes_database = {
 		["Player-4465-01180D49"] = "DAMAGER",
 		["Player-4465-02F6616E"] = "DAMAGER",
 		["Player-4477-03B8CF8A"] = "DAMAGER",
-		["Player-4465-03854460"] = "DAMAGER",
+		["Player-4464-0113F51A"] = "DAMAGER",
 		["Player-4467-020E1FF9"] = "DAMAGER",
 		["Player-4467-02BE82EB"] = "DAMAGER",
 		["Player-4464-00027C2C"] = "DAMAGER",
 		["Player-4454-02E47315"] = "DAMAGER",
-		["Player-4476-03DD97C9"] = "DAMAGER",
+		["Player-4703-01C89E0C"] = "DAMAGER",
 		["Player-4465-00209801"] = "DAMAGER",
 		["Player-4477-03B6B094"] = "DAMAGER",
 		["Player-4477-03BBD596"] = "DAMAGER",
@@ -425,13 +422,13 @@ _detalhes_database = {
 		["Player-4465-028C11AB"] = "DAMAGER",
 		["Player-4465-02BD87CC"] = "TANK",
 		["Player-4477-03E0AD9E"] = "DAMAGER",
-		["Player-4465-030F884A"] = "DAMAGER",
+		["Player-4703-01779BC6"] = "DAMAGER",
 		["Player-4467-02B599BC"] = "DAMAGER",
 		["Player-4464-01DEE931"] = "DAMAGER",
 		["Player-4476-038D2C95"] = "HEALER",
 		["Player-4465-02DEFA43"] = "DAMAGER",
 		["Player-4467-0237FA76"] = "DAMAGER",
-		["Player-4703-01779BC6"] = "DAMAGER",
+		["Player-4465-030F884A"] = "DAMAGER",
 		["Player-4465-02FEFF6C"] = "DAMAGER",
 		["Player-4465-036CBB69"] = "DAMAGER",
 		["Player-4476-0390E4D7"] = "DAMAGER",
@@ -466,11 +463,11 @@ _detalhes_database = {
 		["Player-4465-0179282B"] = "DAMAGER",
 		["Player-4465-02E5E6CC"] = "DAMAGER",
 		["Player-4465-02C98151"] = "DAMAGER",
-		["Player-4465-0370F3EF"] = "DAMAGER",
-		["Player-4703-02E76E0D"] = "DAMAGER",
-		["Player-4467-02C9700F"] = "DAMAGER",
-		["Player-4465-02DC6C0B"] = "HEALER",
 		["Player-4465-0084DA42"] = "DAMAGER",
+		["Player-4703-02E76E0D"] = "DAMAGER",
+		["Player-4465-0370F3EF"] = "DAMAGER",
+		["Player-4465-02DC6C0B"] = "HEALER",
+		["Player-4467-02C9700F"] = "DAMAGER",
 		["Player-4465-02BF0515"] = "HEALER",
 		["Player-4464-02BF8D2E"] = "DAMAGER",
 		["Player-4465-02C2C6D1"] = "DAMAGER",
@@ -509,7 +506,7 @@ _detalhes_database = {
 		["Player-4703-02A30D7A"] = "DAMAGER",
 		["Player-4465-0255C81A"] = "DAMAGER",
 		["Player-4465-02CAFD2A"] = "HEALER",
-		["Player-4476-03643F4F"] = "TANK",
+		["Player-4745-01E49105"] = "DAMAGER",
 		["Player-4455-03AB2AD9"] = "DAMAGER",
 		["Player-4465-02DFF72B"] = "DAMAGER",
 		["Player-4477-038F64E7"] = "DAMAGER",
@@ -521,790 +518,17 @@ _detalhes_database = {
 		["Player-4465-02BBB788"] = "DAMAGER",
 		["Player-4465-00E5831F"] = "DAMAGER",
 		["Player-4465-02E4EF51"] = "DAMAGER",
-		["Player-4454-01586241"] = "DAMAGER",
+		["Player-4467-0277FB19"] = "DAMAGER",
 		["Player-4465-02DD92A1"] = "DAMAGER",
-		["Player-4464-0113F51A"] = "DAMAGER",
+		["Player-4476-03AEC6C1"] = "HEALER",
 		["Player-4476-03E08D37"] = "DAMAGER",
 	},
-	["combat_counter"] = 14842,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["last_realversion"] = 146,
 	["cached_talents"] = {
-		["Player-4465-02FEFF6C"] = {
-			{
-				135894, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [1]
-			{
-				136170, -- [1]
-				5, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				5, -- [7]
-			}, -- [2]
-			{
-				135892, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [3]
-			{
-				136129, -- [1]
-				5, -- [2]
-				5, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				5, -- [7]
-			}, -- [4]
-			{
-				136096, -- [1]
-				3, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				5, -- [7]
-			}, -- [5]
-			{
-				136116, -- [1]
-				3, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [6]
-			{
-				136006, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [7]
-			{
-				136153, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [8]
-			{
-				135733, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [9]
-			{
-				136031, -- [1]
-				1, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [10]
-			{
-				136048, -- [1]
-				1, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [11]
-			{
-				135856, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [12]
-			{
-				136222, -- [1]
-				3, -- [2]
-				6, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [13]
-			{
-				136208, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [14]
-			{
-				136011, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [15]
-			{
-				135736, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [16]
-			{
-				135732, -- [1]
-				2, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [17]
-			{
-				135752, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [18]
-			{
-				136096, -- [1]
-				3, -- [2]
-				7, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [19]
-			{
-				135740, -- [1]
-				5, -- [2]
-				8, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				5, -- [7]
-			}, -- [20]
-			{
-				136091, -- [1]
-				0, -- [2]
-				9, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [21]
-			{
-				135734, -- [1]
-				2, -- [2]
-				10, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [22]
-			{
-				236223, -- [1]
-				0, -- [2]
-				8, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [23]
-			{
-				236219, -- [1]
-				0, -- [2]
-				7, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [24]
-			{
-				236225, -- [1]
-				1, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [25]
-			{
-				236222, -- [1]
-				3, -- [2]
-				10, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [26]
-			{
-				236205, -- [1]
-				1, -- [2]
-				11, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [27]
-			{
-				236221, -- [1]
-				5, -- [2]
-				9, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				5, -- [7]
-			}, -- [28]
-			{
-				135754, -- [1]
-				1, -- [2]
-				3, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [29]
-			{
-				236226, -- [1]
-				3, -- [2]
-				4, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [30]
-			{
-				135805, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [31]
-			{
-				135806, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [32]
-			{
-				135827, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [33]
-			{
-				135812, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				5, -- [7]
-			}, -- [34]
-			{
-				135807, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [35]
-			{
-				135815, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [36]
-			{
-				135808, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [37]
-			{
-				135821, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [38]
-			{
-				236228, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [39]
-			{
-				135903, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [40]
-			{
-				136115, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [41]
-			{
-				135818, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				5, -- [7]
-			}, -- [42]
-			{
-				135817, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				5, -- [7]
-			}, -- [43]
-			{
-				135824, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [44]
-			{
-				135813, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [45]
-			{
-				135820, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [46]
-			{
-				135823, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [47]
-			{
-				135788, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [48]
-			{
-				135822, -- [1]
-				0, -- [2]
-				7, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [49]
-			{
-				135789, -- [1]
-				0, -- [2]
-				7, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [50]
-			{
-				135812, -- [1]
-				0, -- [2]
-				8, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [51]
-			{
-				134153, -- [1]
-				0, -- [2]
-				9, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [52]
-			{
-				236215, -- [1]
-				0, -- [2]
-				8, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [53]
-			{
-				236216, -- [1]
-				0, -- [2]
-				9, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [54]
-			{
-				236218, -- [1]
-				0, -- [2]
-				9, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [55]
-			{
-				236207, -- [1]
-				0, -- [2]
-				10, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				5, -- [7]
-			}, -- [56]
-			{
-				236220, -- [1]
-				0, -- [2]
-				11, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [57]
-			{
-				135829, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [58]
-			{
-				135846, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				5, -- [7]
-			}, -- [59]
-			{
-				135842, -- [1]
-				0, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [60]
-			{
-				135845, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [61]
-			{
-				135854, -- [1]
-				3, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [62]
-			{
-				135857, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [63]
-			{
-				135852, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [64]
-			{
-				135864, -- [1]
-				0, -- [2]
-				2, -- [3]
-				4, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [65]
-			{
-				135860, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [66]
-			{
-				135849, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [67]
-			{
-				135836, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [68]
-			{
-				135838, -- [1]
-				1, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [69]
-			{
-				135850, -- [1]
-				1, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [70]
-			{
-				135988, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [71]
-			{
-				135865, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [72]
-			{
-				135855, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [73]
-			{
-				136141, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [74]
-			{
-				135989, -- [1]
-				3, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [75]
-			{
-				135851, -- [1]
-				0, -- [2]
-				5, -- [3]
-				4, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [76]
-			{
-				236209, -- [1]
-				0, -- [2]
-				6, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [77]
-			{
-				135833, -- [1]
-				0, -- [2]
-				7, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				5, -- [7]
-			}, -- [78]
-			{
-				135846, -- [1]
-				0, -- [2]
-				8, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [79]
-			{
-				135862, -- [1]
-				0, -- [2]
-				9, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [80]
-			{
-				236227, -- [1]
-				0, -- [2]
-				8, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [81]
-			{
-				236206, -- [1]
-				0, -- [2]
-				9, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [82]
-			{
-				135862, -- [1]
-				0, -- [2]
-				9, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [83]
-			{
-				236208, -- [1]
-				0, -- [2]
-				10, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				5, -- [7]
-			}, -- [84]
-			{
-				236214, -- [1]
-				0, -- [2]
-				11, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [85]
-			{
-				236224, -- [1]
-				0, -- [2]
-				7, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [86]
-		},
 		["Player-4465-00E5831F"] = {
 			{
 				132090, -- [1]
@@ -1848,7 +1072,7 @@ _detalhes_database = {
 			}, -- [60]
 			{
 				132326, -- [1]
-				0, -- [2]
+				1, -- [2]
 				1, -- [3]
 				3, -- [4]
 				3, -- [5]
@@ -2072,10 +1296,10 @@ _detalhes_database = {
 				2, -- [7]
 			}, -- [85]
 		},
-		["Player-4465-0370F3EF"] = {
+		["Player-4465-02FEFF6C"] = {
 			{
 				135894, -- [1]
-				0, -- [2]
+				2, -- [2]
 				1, -- [3]
 				1, -- [4]
 				1, -- [5]
@@ -2084,7 +1308,7 @@ _detalhes_database = {
 			}, -- [1]
 			{
 				136170, -- [1]
-				0, -- [2]
+				5, -- [2]
 				2, -- [3]
 				3, -- [4]
 				1, -- [5]
@@ -2093,7 +1317,7 @@ _detalhes_database = {
 			}, -- [2]
 			{
 				135892, -- [1]
-				0, -- [2]
+				3, -- [2]
 				1, -- [3]
 				2, -- [4]
 				1, -- [5]
@@ -2102,7 +1326,7 @@ _detalhes_database = {
 			}, -- [3]
 			{
 				136129, -- [1]
-				0, -- [2]
+				5, -- [2]
 				5, -- [3]
 				4, -- [4]
 				1, -- [5]
@@ -2111,7 +1335,7 @@ _detalhes_database = {
 			}, -- [4]
 			{
 				136096, -- [1]
-				0, -- [2]
+				3, -- [2]
 				1, -- [3]
 				3, -- [4]
 				1, -- [5]
@@ -2120,7 +1344,7 @@ _detalhes_database = {
 			}, -- [5]
 			{
 				136116, -- [1]
-				0, -- [2]
+				3, -- [2]
 				3, -- [3]
 				2, -- [4]
 				1, -- [5]
@@ -2156,7 +1380,7 @@ _detalhes_database = {
 			}, -- [9]
 			{
 				136031, -- [1]
-				0, -- [2]
+				1, -- [2]
 				5, -- [3]
 				2, -- [4]
 				1, -- [5]
@@ -2165,7 +1389,7 @@ _detalhes_database = {
 			}, -- [10]
 			{
 				136048, -- [1]
-				0, -- [2]
+				1, -- [2]
 				7, -- [3]
 				2, -- [4]
 				1, -- [5]
@@ -2183,7 +1407,7 @@ _detalhes_database = {
 			}, -- [12]
 			{
 				136222, -- [1]
-				0, -- [2]
+				3, -- [2]
 				6, -- [3]
 				2, -- [4]
 				1, -- [5]
@@ -2219,7 +1443,7 @@ _detalhes_database = {
 			}, -- [16]
 			{
 				135732, -- [1]
-				0, -- [2]
+				2, -- [2]
 				6, -- [3]
 				3, -- [4]
 				1, -- [5]
@@ -2237,7 +1461,7 @@ _detalhes_database = {
 			}, -- [18]
 			{
 				136096, -- [1]
-				0, -- [2]
+				3, -- [2]
 				7, -- [3]
 				1, -- [4]
 				1, -- [5]
@@ -2246,7 +1470,7 @@ _detalhes_database = {
 			}, -- [19]
 			{
 				135740, -- [1]
-				0, -- [2]
+				5, -- [2]
 				8, -- [3]
 				3, -- [4]
 				1, -- [5]
@@ -2264,7 +1488,7 @@ _detalhes_database = {
 			}, -- [21]
 			{
 				135734, -- [1]
-				0, -- [2]
+				2, -- [2]
 				10, -- [3]
 				3, -- [4]
 				1, -- [5]
@@ -2273,7 +1497,7 @@ _detalhes_database = {
 			}, -- [22]
 			{
 				236223, -- [1]
-				0, -- [2]
+				1, -- [2]
 				8, -- [3]
 				2, -- [4]
 				1, -- [5]
@@ -2291,7 +1515,7 @@ _detalhes_database = {
 			}, -- [24]
 			{
 				236225, -- [1]
-				0, -- [2]
+				1, -- [2]
 				3, -- [3]
 				3, -- [4]
 				1, -- [5]
@@ -2300,7 +1524,7 @@ _detalhes_database = {
 			}, -- [25]
 			{
 				236222, -- [1]
-				0, -- [2]
+				3, -- [2]
 				10, -- [3]
 				2, -- [4]
 				1, -- [5]
@@ -2309,7 +1533,7 @@ _detalhes_database = {
 			}, -- [26]
 			{
 				236205, -- [1]
-				0, -- [2]
+				1, -- [2]
 				11, -- [3]
 				2, -- [4]
 				1, -- [5]
@@ -2318,7 +1542,7 @@ _detalhes_database = {
 			}, -- [27]
 			{
 				236221, -- [1]
-				0, -- [2]
+				5, -- [2]
 				9, -- [3]
 				3, -- [4]
 				1, -- [5]
@@ -2327,7 +1551,7 @@ _detalhes_database = {
 			}, -- [28]
 			{
 				135754, -- [1]
-				0, -- [2]
+				1, -- [2]
 				3, -- [3]
 				4, -- [4]
 				1, -- [5]
@@ -2336,7 +1560,7 @@ _detalhes_database = {
 			}, -- [29]
 			{
 				236226, -- [1]
-				0, -- [2]
+				3, -- [2]
 				4, -- [3]
 				4, -- [4]
 				1, -- [5]
@@ -2345,7 +1569,7 @@ _detalhes_database = {
 			}, -- [30]
 			{
 				135805, -- [1]
-				2, -- [2]
+				0, -- [2]
 				3, -- [3]
 				4, -- [4]
 				2, -- [5]
@@ -2363,7 +1587,7 @@ _detalhes_database = {
 			}, -- [32]
 			{
 				135827, -- [1]
-				3, -- [2]
+				0, -- [2]
 				4, -- [3]
 				1, -- [4]
 				2, -- [5]
@@ -2372,7 +1596,7 @@ _detalhes_database = {
 			}, -- [33]
 			{
 				135812, -- [1]
-				5, -- [2]
+				0, -- [2]
 				1, -- [3]
 				3, -- [4]
 				2, -- [5]
@@ -2399,7 +1623,7 @@ _detalhes_database = {
 			}, -- [36]
 			{
 				135808, -- [1]
-				1, -- [2]
+				0, -- [2]
 				3, -- [3]
 				3, -- [4]
 				2, -- [5]
@@ -2417,7 +1641,7 @@ _detalhes_database = {
 			}, -- [38]
 			{
 				236228, -- [1]
-				3, -- [2]
+				0, -- [2]
 				2, -- [3]
 				3, -- [4]
 				2, -- [5]
@@ -2426,7 +1650,7 @@ _detalhes_database = {
 			}, -- [39]
 			{
 				135903, -- [1]
-				1, -- [2]
+				0, -- [2]
 				5, -- [3]
 				3, -- [4]
 				2, -- [5]
@@ -2435,7 +1659,7 @@ _detalhes_database = {
 			}, -- [40]
 			{
 				136115, -- [1]
-				3, -- [2]
+				0, -- [2]
 				5, -- [3]
 				2, -- [4]
 				2, -- [5]
@@ -2444,7 +1668,7 @@ _detalhes_database = {
 			}, -- [41]
 			{
 				135818, -- [1]
-				5, -- [2]
+				0, -- [2]
 				2, -- [3]
 				1, -- [4]
 				2, -- [5]
@@ -2453,7 +1677,7 @@ _detalhes_database = {
 			}, -- [42]
 			{
 				135817, -- [1]
-				5, -- [2]
+				0, -- [2]
 				6, -- [3]
 				3, -- [4]
 				2, -- [5]
@@ -2462,7 +1686,7 @@ _detalhes_database = {
 			}, -- [43]
 			{
 				135824, -- [1]
-				1, -- [2]
+				0, -- [2]
 				7, -- [3]
 				2, -- [4]
 				2, -- [5]
@@ -2471,7 +1695,7 @@ _detalhes_database = {
 			}, -- [44]
 			{
 				135813, -- [1]
-				0, -- [2]
+				3, -- [2]
 				1, -- [3]
 				2, -- [4]
 				2, -- [5]
@@ -2480,7 +1704,7 @@ _detalhes_database = {
 			}, -- [45]
 			{
 				135820, -- [1]
-				3, -- [2]
+				0, -- [2]
 				4, -- [3]
 				4, -- [4]
 				2, -- [5]
@@ -2489,7 +1713,7 @@ _detalhes_database = {
 			}, -- [46]
 			{
 				135823, -- [1]
-				3, -- [2]
+				0, -- [2]
 				5, -- [3]
 				1, -- [4]
 				2, -- [5]
@@ -2507,7 +1731,7 @@ _detalhes_database = {
 			}, -- [48]
 			{
 				135822, -- [1]
-				2, -- [2]
+				0, -- [2]
 				7, -- [3]
 				3, -- [4]
 				2, -- [5]
@@ -2516,7 +1740,7 @@ _detalhes_database = {
 			}, -- [49]
 			{
 				135789, -- [1]
-				3, -- [2]
+				0, -- [2]
 				7, -- [3]
 				1, -- [4]
 				2, -- [5]
@@ -2525,7 +1749,7 @@ _detalhes_database = {
 			}, -- [50]
 			{
 				135812, -- [1]
-				3, -- [2]
+				0, -- [2]
 				8, -- [3]
 				3, -- [4]
 				2, -- [5]
@@ -2534,7 +1758,7 @@ _detalhes_database = {
 			}, -- [51]
 			{
 				134153, -- [1]
-				1, -- [2]
+				0, -- [2]
 				9, -- [3]
 				2, -- [4]
 				2, -- [5]
@@ -2552,7 +1776,7 @@ _detalhes_database = {
 			}, -- [53]
 			{
 				236216, -- [1]
-				1, -- [2]
+				0, -- [2]
 				9, -- [3]
 				1, -- [4]
 				2, -- [5]
@@ -2561,7 +1785,7 @@ _detalhes_database = {
 			}, -- [54]
 			{
 				236218, -- [1]
-				3, -- [2]
+				0, -- [2]
 				9, -- [3]
 				3, -- [4]
 				2, -- [5]
@@ -2570,7 +1794,7 @@ _detalhes_database = {
 			}, -- [55]
 			{
 				236207, -- [1]
-				5, -- [2]
+				0, -- [2]
 				10, -- [3]
 				2, -- [4]
 				2, -- [5]
@@ -2579,7 +1803,7 @@ _detalhes_database = {
 			}, -- [56]
 			{
 				236220, -- [1]
-				1, -- [2]
+				0, -- [2]
 				11, -- [3]
 				2, -- [4]
 				2, -- [5]
@@ -2597,7 +1821,7 @@ _detalhes_database = {
 			}, -- [58]
 			{
 				135846, -- [1]
-				2, -- [2]
+				3, -- [2]
 				1, -- [3]
 				2, -- [4]
 				3, -- [5]
@@ -2651,7 +1875,7 @@ _detalhes_database = {
 			}, -- [64]
 			{
 				135864, -- [1]
-				2, -- [2]
+				0, -- [2]
 				2, -- [3]
 				4, -- [4]
 				3, -- [5]
@@ -2687,7 +1911,7 @@ _detalhes_database = {
 			}, -- [68]
 			{
 				135838, -- [1]
-				0, -- [2]
+				1, -- [2]
 				3, -- [3]
 				2, -- [4]
 				3, -- [5]
@@ -2696,7 +1920,7 @@ _detalhes_database = {
 			}, -- [69]
 			{
 				135850, -- [1]
-				0, -- [2]
+				1, -- [2]
 				2, -- [3]
 				2, -- [4]
 				3, -- [5]
@@ -2849,10 +2073,10 @@ _detalhes_database = {
 			}, -- [86]
 		},
 	},
-	["combat_id"] = 124,
+	["combat_id"] = 60,
 	["savedStyles"] = {
 		{
-			["show_statusbar"] = false,
+			["hide_in_combat_type"] = 1,
 			["clickthrough_window"] = false,
 			["titlebar_shown"] = false,
 			["menu_anchor"] = {
@@ -2870,7 +2094,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["micro_displays_locked"] = false,
+			["skin_custom"] = "vermin",
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -2882,43 +2106,31 @@ _detalhes_database = {
 				1, -- [3]
 			},
 			["clickthrough_toolbaricons"] = false,
-			["attribute_text"] = {
-				["enabled"] = true,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["custom_text"] = "{name}",
-				["text_face"] = "Arial Narrow",
-				["anchor"] = {
-					56, -- [1]
-					3, -- [2]
-				},
-				["text_size"] = 12,
-				["enable_custom_text"] = false,
-				["show_timer"] = false,
-			},
+			["clickthrough_rows"] = false,
 			["titlebar_texture"] = "Clean",
-			["ignore_mass_showhide"] = false,
-			["fontstrings_text_limit_offset"] = -10,
+			["switch_tank"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
+			["switch_all_roles_after_wipe"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			},
 			["icon_desaturated"] = false,
 			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
+			["micro_displays_side"] = 2,
 			["window_scale"] = 1,
 			["hide_icon"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0.1333333333333333,
 			["menu_icons_alpha"] = 0.92,
 			["bg_b"] = 0.1333333333333333,
-			["rowareaborder_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
+			["switch_healer_in_combat"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
 			},
 			["color"] = {
 				0.07058823529411765, -- [1]
@@ -3005,12 +2217,12 @@ _detalhes_database = {
 			},
 			["skin"] = "Minimalistic",
 			["following"] = {
-				["enabled"] = false,
 				["bar_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 				},
+				["enabled"] = false,
 				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -3049,14 +2261,14 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["micro_displays_side"] = 2,
-			["bg_alpha"] = 0,
+			["show_sidebars"] = false,
+			["version"] = 3,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["name"] = "vermin",
+			["bg_alpha"] = 0,
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -3067,7 +2279,26 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["fullborder_shown"] = false,
-			["clickthrough_rows"] = false,
+			["attribute_text"] = {
+				["show_timer"] = false,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["custom_text"] = "{name}",
+				["text_face"] = "Arial Narrow",
+				["anchor"] = {
+					56, -- [1]
+					3, -- [2]
+				},
+				["text_size"] = 12,
+				["enable_custom_text"] = false,
+				["enabled"] = true,
+			},
 			["rowareaborder_shown"] = false,
 			["rowareaborder_size"] = 0.5,
 			["clickthrough_incombatonly"] = false,
@@ -3079,7 +2310,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["skin_custom"] = "vermin",
+			["bars_sort_direction"] = 1,
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -3095,45 +2326,49 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
-			["bars_grow_direction"] = 1,
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
 			},
+			["bars_grow_direction"] = 1,
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
 				["right"] = true,
 			},
-			["hide_in_combat_type"] = 1,
+			["show_statusbar"] = false,
 			["switch_damager_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["switch_healer_in_combat"] = {
+			["rowareaborder_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
+			},
+			["auto_current"] = true,
+			["micro_displays_locked"] = false,
+			["switch_damager"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
-			},
-			["auto_current"] = true,
-			["bars_sort_direction"] = 1,
+			["name"] = "vermin",
+			["hide_in_combat"] = false,
 			["row_info"] = {
-				["show_arena_role_icon"] = false,
+				["textR_outline"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 				["textL_outline"] = false,
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					false, -- [3]
-				},
-				["percent_type"] = 1,
+				["textR_outline_small"] = true,
+				["textL_outline_small"] = true,
+				["textL_enable_custom_text"] = false,
 				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -3145,12 +2380,7 @@ _detalhes_database = {
 					["between"] = 1,
 				},
 				["texture_background_class_color"] = false,
-				["textL_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
+				["start_after_icon"] = true,
 				["font_face_file"] = "Fonts\\ARIALN.TTF",
 				["faction_icon_size_offset"] = -10,
 				["backdrop"] = {
@@ -3164,6 +2394,8 @@ _detalhes_database = {
 					["enabled"] = false,
 					["texture"] = "ThreatPlatesBorder",
 				},
+				["font_size"] = 11,
+				["textL_custom_text"] = "{data1}. {data3}{data2}",
 				["models"] = {
 					["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
 					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
@@ -3172,13 +2404,16 @@ _detalhes_database = {
 					["lower_alpha"] = 0.1,
 					["upper_enabled"] = false,
 				},
-				["textL_custom_text"] = "{data1}. {data3}{data2}",
-				["font_size"] = 11,
 				["textL_translit_text"] = false,
-				["height"] = 19,
+				["texture_custom_file"] = "Interface\\",
 				["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
 				["icon_size_offset"] = 0,
-				["start_after_icon"] = true,
+				["textL_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
 				["show_faction_icon"] = true,
 				["overlay_color"] = {
 					0.7, -- [1]
@@ -3186,14 +2421,18 @@ _detalhes_database = {
 					0.7, -- [3]
 					0, -- [4]
 				},
-				["textL_outline_small"] = true,
-				["textR_outline_small"] = true,
-				["arena_role_icon_size_offset"] = -10,
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					false, -- [3]
+				},
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["icon_file"] = "",
 				["icon_grayscale"] = false,
-				["textR_bracket"] = "(",
 				["use_spec_icons"] = false,
+				["textR_bracket"] = "(",
 				["texture_custom"] = "",
-				["textR_outline"] = false,
+				["show_arena_role_icon"] = false,
 				["fixed_texture_color"] = {
 					0, -- [1]
 					0, -- [2]
@@ -3227,33 +2466,23 @@ _detalhes_database = {
 					0, -- [1]
 					0, -- [2]
 				},
-				["icon_file"] = "",
+				["arena_role_icon_size_offset"] = -10,
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
-				["textL_enable_custom_text"] = false,
+				["percent_type"] = 1,
 				["fast_ps_update"] = false,
 				["textR_separator"] = "NONE",
-				["texture_custom_file"] = "Interface\\",
+				["height"] = 19,
 			},
-			["version"] = 3,
-			["hide_in_combat"] = false,
-			["switch_damager"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_tank"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
-			["switch_all_roles_after_wipe"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			},
+			["ignore_mass_showhide"] = false,
+			["fontstrings_text_limit_offset"] = -10,
 			["wallpaper"] = {
-				["enabled"] = false,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
 				["alpha"] = 0.5,
 				["width"] = 283.000183105469,
 				["texcoord"] = {
@@ -3265,12 +2494,7 @@ _detalhes_database = {
 				["height"] = 114.042518615723,
 				["anchor"] = "all",
 				["level"] = 2,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
+				["enabled"] = false,
 				["texture"] = "Interface\\AddOns\\Details\\images\\background",
 			},
 			["stretch_button_side"] = 2,
@@ -3309,78 +2533,48 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["totalabsorbed"] = 0.06086899999999999,
+					["totalabsorbed"] = 0.027063,
 					["damage_from"] = {
-						["Sunseeker Chemist"] = true,
-						["Frayer"] = true,
-						["Sunseeker Channeler"] = true,
-						["Bloodwarder Steward"] = true,
-						["Sunseeker Harvester"] = true,
-						["Sunseeker Geomancer"] = true,
-						["Greater Frayer"] = true,
+						["Tempest-Forge Peacekeeper"] = true,
 						["Bloodwarder Protector"] = true,
-						["Sunseeker Herbalist"] = true,
-						["Nethervine Inciter"] = true,
-						["Sunseeker Botanist"] = true,
-						["Sunseeker Researcher"] = true,
 					},
 					["targets"] = {
-						["Sunseeker Chemist"] = 97242,
-						["Frayer"] = 53200,
-						["Sunseeker Channeler"] = 53572,
-						["Bloodwarder Steward"] = 41239,
-						["Sunseeker Harvester"] = 16207,
-						["Sunseeker Geomancer"] = 45950,
-						["Greater Frayer"] = 53731,
-						["Bloodwarder Protector"] = 63262,
-						["Sunseeker Herbalist"] = 40516,
-						["Nethervine Inciter"] = 41914,
-						["Sunseeker Botanist"] = 97242,
-						["Sunseeker Researcher"] = 134965,
+						["Tempest-Forge Peacekeeper"] = 44710,
+						["Bloodwarder Protector"] = 110223,
 					},
-					["total"] = 739040.060869,
 					["pets"] = {
 					},
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
+					["aID"] = "4465-00E5831F",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 739040.060869,
-					["aID"] = "4465-00E5831F",
-					["dps_started"] = false,
-					["end_time"] = 1665246236,
-					["classe"] = "WARRIOR",
+					["total_without_pet"] = 154933.027063,
 					["friendlyfire"] = {
 					},
+					["last_event"] = 0,
+					["dps_started"] = false,
+					["total"] = 154933.027063,
+					["classe"] = "WARRIOR",
+					["friendlyfire_total"] = 0,
 					["nome"] = "Vermin",
 					["spells"] = {
 						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
-								["c_amt"] = 15,
+								["c_amt"] = 6,
 								["b_amt"] = 0,
-								["c_dmg"] = 12987,
+								["c_dmg"] = 5873,
 								["g_amt"] = 0,
-								["n_max"] = 525,
+								["n_max"] = 559,
 								["targets"] = {
-									["Sunseeker Chemist"] = 4101,
-									["Frayer"] = 2198,
-									["Sunseeker Channeler"] = 2313,
-									["Bloodwarder Steward"] = 2365,
-									["Sunseeker Geomancer"] = 2228,
-									["Greater Frayer"] = 939,
-									["Bloodwarder Protector"] = 846,
-									["Sunseeker Herbalist"] = 2564,
-									["Nethervine Inciter"] = 1272,
-									["Sunseeker Botanist"] = 5359,
-									["Sunseeker Researcher"] = 9475,
+									["Tempest-Forge Peacekeeper"] = 3869,
+									["Bloodwarder Protector"] = 13238,
 								},
-								["n_dmg"] = 20673,
+								["n_dmg"] = 11234,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 62,
-								["total"] = 33660,
-								["c_max"] = 1057,
+								["counter"] = 32,
+								["total"] = 17107,
+								["c_max"] = 1103,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["MISS"] = 1,
@@ -3390,62 +2584,54 @@ _detalhes_database = {
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 46,
+								["n_amt"] = 25,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							}, -- [1]
 							[30356] = {
-								["c_amt"] = 7,
+								["c_amt"] = 5,
 								["b_amt"] = 0,
-								["c_dmg"] = 12759,
+								["c_dmg"] = 9381,
 								["g_amt"] = 0,
-								["n_max"] = 936,
+								["n_max"] = 967,
 								["targets"] = {
-									["Sunseeker Chemist"] = 1604,
-									["Sunseeker Researcher"] = 5163,
-									["Sunseeker Channeler"] = 1303,
-									["Bloodwarder Steward"] = 687,
-									["Sunseeker Geomancer"] = 3443,
-									["Greater Frayer"] = 2275,
-									["Bloodwarder Protector"] = 83,
-									["Sunseeker Herbalist"] = 2842,
-									["Sunseeker Botanist"] = 6083,
-									["Nethervine Inciter"] = 739,
+									["Tempest-Forge Peacekeeper"] = 3051,
+									["Bloodwarder Protector"] = 10117,
 								},
-								["n_dmg"] = 11463,
+								["n_dmg"] = 3787,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 25,
-								["total"] = 24222,
-								["c_max"] = 2171,
+								["counter"] = 12,
+								["total"] = 13168,
+								["c_max"] = 2293,
 								["id"] = 30356,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
 								["extra"] = {
 								},
-								["PARRY"] = 1,
+								["PARRY"] = 2,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 17,
+								["n_amt"] = 5,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
 							[30330] = {
-								["c_amt"] = 0,
+								["c_amt"] = 1,
 								["b_amt"] = 0,
-								["c_dmg"] = 0,
+								["c_dmg"] = 1292,
 								["g_amt"] = 0,
-								["n_max"] = 580,
+								["n_max"] = 661,
 								["targets"] = {
-									["Nethervine Inciter"] = 580,
+									["Bloodwarder Protector"] = 1953,
 								},
-								["n_dmg"] = 580,
+								["n_dmg"] = 661,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 580,
-								["c_max"] = 0,
+								["counter"] = 2,
+								["total"] = 1953,
+								["c_max"] = 1292,
 								["id"] = 30330,
 								["r_dmg"] = 0,
 								["extra"] = {
@@ -3458,143 +2644,106 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
-							[25264] = {
-								["c_amt"] = 10,
-								["b_amt"] = 4,
-								["c_dmg"] = 6142,
+							[46845] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 295,
+								["n_max"] = 263,
 								["targets"] = {
-									["Sunseeker Chemist"] = 1141,
-									["Frayer"] = 1137,
-									["Sunseeker Channeler"] = 1180,
-									["Bloodwarder Steward"] = 613,
-									["Sunseeker Harvester"] = 274,
-									["Sunseeker Geomancer"] = 270,
-									["Greater Frayer"] = 1832,
-									["Bloodwarder Protector"] = 1181,
-									["Sunseeker Herbalist"] = 548,
-									["Nethervine Inciter"] = 548,
-									["Sunseeker Botanist"] = 1754,
-									["Sunseeker Researcher"] = 2870,
+									["Bloodwarder Protector"] = 1287,
 								},
-								["n_dmg"] = 7206,
+								["n_dmg"] = 1287,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 36,
-								["total"] = 13348,
-								["c_max"] = 646,
-								["id"] = 25264,
+								["counter"] = 6,
+								["total"] = 1287,
+								["c_max"] = 0,
+								["id"] = 46845,
 								["r_dmg"] = 0,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 6,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[30357] = {
+								["c_amt"] = 4,
+								["b_amt"] = 2,
+								["c_dmg"] = 15159,
+								["g_amt"] = 0,
+								["n_max"] = 2138,
+								["targets"] = {
+									["Tempest-Forge Peacekeeper"] = 24140,
+									["Bloodwarder Protector"] = 41408,
+								},
+								["n_dmg"] = 50389,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 32,
+								["total"] = 65548,
+								["c_max"] = 4702,
+								["id"] = 30357,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+								["PARRY"] = 2,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 26,
-								["b_dmg"] = 1266,
-								["r_amt"] = 0,
-							},
-							[30357] = {
-								["c_amt"] = 53,
-								["b_amt"] = 6,
-								["c_dmg"] = 190798,
-								["g_amt"] = 0,
-								["n_max"] = 2177,
-								["targets"] = {
-									["Sunseeker Chemist"] = 54855,
-									["Frayer"] = 24699,
-									["Sunseeker Channeler"] = 36654,
-									["Bloodwarder Steward"] = 26981,
-									["Sunseeker Harvester"] = 10718,
-									["Sunseeker Geomancer"] = 26581,
-									["Greater Frayer"] = 38287,
-									["Bloodwarder Protector"] = 37997,
-									["Sunseeker Herbalist"] = 27202,
-									["Nethervine Inciter"] = 26095,
-									["Sunseeker Botanist"] = 53450,
-									["Sunseeker Researcher"] = 86134,
-								},
-								["n_dmg"] = 258855,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 201,
-								["total"] = 449653,
-								["c_max"] = 5096,
-								["id"] = 30357,
-								["r_dmg"] = 0,
-								["MISS"] = 1,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-								["PARRY"] = 3,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 144,
-								["b_dmg"] = 13608,
+								["b_dmg"] = 6678,
 								["r_amt"] = 0,
 							},
 							[25231] = {
-								["c_amt"] = 54,
-								["b_amt"] = 3,
-								["c_dmg"] = 64946,
+								["c_amt"] = 7,
+								["b_amt"] = 0,
+								["c_dmg"] = 8468,
 								["g_amt"] = 0,
-								["n_max"] = 580,
+								["n_max"] = 578,
 								["targets"] = {
-									["Sunseeker Chemist"] = 10455,
-									["Frayer"] = 14837,
-									["Sunseeker Channeler"] = 6609,
-									["Bloodwarder Steward"] = 3841,
-									["Sunseeker Harvester"] = 1422,
-									["Sunseeker Geomancer"] = 5669,
-									["Greater Frayer"] = 6466,
-									["Bloodwarder Protector"] = 6703,
-									["Sunseeker Herbalist"] = 5416,
-									["Nethervine Inciter"] = 4350,
-									["Sunseeker Botanist"] = 14389,
-									["Sunseeker Researcher"] = 16569,
+									["Tempest-Forge Peacekeeper"] = 4681,
+									["Bloodwarder Protector"] = 8191,
 								},
-								["n_dmg"] = 31780,
+								["n_dmg"] = 4404,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 122,
-								["total"] = 96726,
-								["c_max"] = 1394,
+								["counter"] = 17,
+								["total"] = 12872,
+								["c_max"] = 1305,
 								["id"] = 25231,
 								["r_dmg"] = 0,
 								["MISS"] = 1,
-								["a_dmg"] = 0,
 								["extra"] = {
 								},
-								["PARRY"] = 4,
+								["a_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 63,
-								["b_dmg"] = 1482,
+								["n_amt"] = 9,
+								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
 							[30324] = {
 								["c_amt"] = 1,
 								["b_amt"] = 0,
-								["c_dmg"] = 1373,
+								["c_dmg"] = 1502,
 								["g_amt"] = 0,
-								["n_max"] = 695,
+								["n_max"] = 769,
 								["targets"] = {
-									["Sunseeker Chemist"] = 677,
-									["Bloodwarder Protector"] = 623,
-									["Sunseeker Researcher"] = 580,
-									["Sunseeker Channeler"] = 695,
-									["Sunseeker Botanist"] = 1373,
+									["Bloodwarder Protector"] = 4275,
 								},
-								["n_dmg"] = 2575,
+								["n_dmg"] = 2773,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 5,
-								["total"] = 3948,
-								["c_max"] = 1373,
+								["total"] = 4275,
+								["c_max"] = 1502,
 								["id"] = 30324,
 								["r_dmg"] = 0,
 								["extra"] = {
@@ -3610,21 +2759,18 @@ _detalhes_database = {
 							[34428] = {
 								["c_amt"] = 1,
 								["b_amt"] = 0,
-								["c_dmg"] = 1526,
+								["c_dmg"] = 1614,
 								["g_amt"] = 0,
-								["n_max"] = 799,
+								["n_max"] = 693,
 								["targets"] = {
-									["Sunseeker Herbalist"] = 657,
-									["Sunseeker Chemist"] = 1526,
-									["Sunseeker Botanist"] = 659,
-									["Sunseeker Channeler"] = 799,
+									["Bloodwarder Protector"] = 2307,
 								},
-								["n_dmg"] = 2115,
+								["n_dmg"] = 693,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 4,
-								["total"] = 3641,
-								["c_max"] = 1526,
+								["counter"] = 2,
+								["total"] = 2307,
+								["c_max"] = 1614,
 								["id"] = 34428,
 								["r_dmg"] = 0,
 								["extra"] = {
@@ -3633,7 +2779,7 @@ _detalhes_database = {
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 3,
+								["n_amt"] = 1,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
@@ -3642,25 +2788,16 @@ _detalhes_database = {
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 4969,
+								["n_max"] = 4702,
 								["targets"] = {
-									["Sunseeker Chemist"] = 18499,
-									["Frayer"] = 8697,
-									["Sunseeker Channeler"] = 2458,
-									["Bloodwarder Steward"] = 4739,
-									["Sunseeker Geomancer"] = 7033,
-									["Greater Frayer"] = 1591,
-									["Bloodwarder Protector"] = 13345,
-									["Sunseeker Harvester"] = 3725,
-									["Nethervine Inciter"] = 7968,
-									["Sunseeker Botanist"] = 9925,
-									["Sunseeker Researcher"] = 5981,
+									["Tempest-Forge Peacekeeper"] = 6805,
+									["Bloodwarder Protector"] = 16068,
 								},
-								["n_dmg"] = 83961,
+								["n_dmg"] = 22873,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 49,
-								["total"] = 83961,
+								["counter"] = 10,
+								["total"] = 22873,
 								["c_max"] = 0,
 								["id"] = 12723,
 								["r_dmg"] = 0,
@@ -3670,54 +2807,26 @@ _detalhes_database = {
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 49,
+								["n_amt"] = 10,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
-							[23920] = {
-								["c_amt"] = 0,
+							[1680] = {
+								["c_amt"] = 1,
 								["b_amt"] = 0,
-								["c_dmg"] = 0,
+								["c_dmg"] = 974,
 								["g_amt"] = 0,
-								["n_max"] = 914,
+								["n_max"] = 0,
 								["targets"] = {
-									["Sunseeker Researcher"] = 914,
+									["Bloodwarder Protector"] = 974,
 								},
-								["n_dmg"] = 914,
+								["n_dmg"] = 0,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 1,
-								["total"] = 914,
-								["c_max"] = 0,
-								["id"] = 23920,
-								["r_dmg"] = 0,
-								["extra"] = {
-									[34352] = 914,
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 1,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[46845] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 247,
-								["targets"] = {
-									["Sunseeker Researcher"] = 247,
-								},
-								["n_dmg"] = 247,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 247,
-								["c_max"] = 0,
-								["id"] = 46845,
+								["total"] = 974,
+								["c_max"] = 974,
+								["id"] = 1680,
 								["r_dmg"] = 0,
 								["extra"] = {
 								},
@@ -3725,7 +2834,7 @@ _detalhes_database = {
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 1,
+								["n_amt"] = 0,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
@@ -3734,26 +2843,16 @@ _detalhes_database = {
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 260,
+								["n_max"] = 197,
 								["targets"] = {
-									["Sunseeker Chemist"] = 4384,
-									["Frayer"] = 1632,
-									["Sunseeker Channeler"] = 1561,
-									["Bloodwarder Steward"] = 2013,
-									["Sunseeker Harvester"] = 68,
-									["Sunseeker Geomancer"] = 726,
-									["Greater Frayer"] = 2341,
-									["Bloodwarder Protector"] = 2484,
-									["Sunseeker Herbalist"] = 1287,
-									["Nethervine Inciter"] = 362,
-									["Sunseeker Botanist"] = 4250,
-									["Sunseeker Researcher"] = 7032,
+									["Tempest-Forge Peacekeeper"] = 1543,
+									["Bloodwarder Protector"] = 5792,
 								},
-								["n_dmg"] = 28140,
+								["n_dmg"] = 7335,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 266,
-								["total"] = 28140,
+								["counter"] = 67,
+								["total"] = 7335,
 								["c_max"] = 0,
 								["id"] = 12721,
 								["r_dmg"] = 0,
@@ -3763,143 +2862,102 @@ _detalhes_database = {
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 266,
+								["n_amt"] = 67,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[20647] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 1170,
+								["targets"] = {
+									["Bloodwarder Protector"] = 2314,
+								},
+								["n_dmg"] = 2314,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 2314,
+								["c_max"] = 0,
+								["id"] = 20647,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 2,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[25264] = {
+								["c_amt"] = 1,
+								["b_amt"] = 0,
+								["c_dmg"] = 694,
+								["g_amt"] = 0,
+								["n_max"] = 332,
+								["targets"] = {
+									["Tempest-Forge Peacekeeper"] = 621,
+									["Bloodwarder Protector"] = 2299,
+								},
+								["n_dmg"] = 2226,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 8,
+								["total"] = 2920,
+								["c_max"] = 694,
+								["id"] = 25264,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 7,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
 						},
 					},
 					["grupo"] = true,
+					["end_time"] = 1665313395,
 					["on_hold"] = false,
 					["serial"] = "Player-4465-00E5831F",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 70019.060869,
-					["start_time"] = 1665245970,
-					["delay"] = 0,
 					["last_dps"] = 0,
+					["start_time"] = 1665313289,
+					["delay"] = 0,
+					["damage_taken"] = 28279.027063,
 				}, -- [1]
 				{
 					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.015429,
+					["totalabsorbed"] = 0.028428,
+					["on_hold"] = false,
 					["damage_from"] = {
 						["Vermin"] = true,
 					},
 					["targets"] = {
-						["Vermin"] = 1769,
+						["Vermin"] = 26823,
 					},
-					["on_hold"] = false,
 					["pets"] = {
 					},
-					["monster"] = true,
-					["aID"] = "18404",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 1769.015429,
+					["end_time"] = 1665313395,
 					["friendlyfire"] = {
 					},
-					["end_time"] = 1665246236,
-					["dps_started"] = false,
-					["total"] = 1769.015429,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["nome"] = "Bloodwarder Steward",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 486,
-								["targets"] = {
-									["Vermin"] = 1769,
-								},
-								["n_dmg"] = 1769,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 11,
-								["BLOCK"] = 3,
-								["total"] = 1769,
-								["c_max"] = 0,
-								["a_dmg"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["DODGE"] = 2,
-								["MISS"] = 1,
-								["extra"] = {
-								},
-								["PARRY"] = 1,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 4,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-							[34821] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 34821,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 1,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-					},
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-18404-0000C1A044",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1665246201,
-					["delay"] = 0,
-					["damage_taken"] = 41239.015429,
-				}, -- [2]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.01276,
-					["damage_from"] = {
-						["Vermin"] = true,
-					},
-					["targets"] = {
-						["Vermin"] = 10264,
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["monster"] = true,
 					["aID"] = "17993",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 10264.01276,
-					["friendlyfire"] = {
-					},
-					["end_time"] = 1665246236,
-					["dps_started"] = false,
-					["total"] = 10264.01276,
+					["total_without_pet"] = 26823.028428,
 					["fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 26823.028428,
 					["classe"] = "UNKNOW",
+					["monster"] = true,
 					["nome"] = "Bloodwarder Protector",
 					["spells"] = {
 						["tipo"] = 2,
@@ -3909,59 +2967,32 @@ _detalhes_database = {
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 534,
+								["n_max"] = 582,
 								["targets"] = {
-									["Vermin"] = 4219,
+									["Vermin"] = 9371,
 								},
-								["n_dmg"] = 4219,
+								["n_dmg"] = 9371,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 19,
-								["total"] = 4219,
+								["counter"] = 52,
+								["MISS"] = 1,
+								["total"] = 9371,
 								["c_max"] = 0,
-								["DODGE"] = 1,
+								["DODGE"] = 9,
 								["id"] = 1,
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
-								["BLOCK"] = 7,
+								["BLOCK"] = 13,
 								["extra"] = {
 								},
-								["PARRY"] = 2,
+								["PARRY"] = 6,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 9,
+								["n_amt"] = 23,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							}, -- [1]
-							[29765] = {
-								["c_amt"] = 0,
-								["b_amt"] = 2,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 2423,
-								["targets"] = {
-									["Vermin"] = 6045,
-								},
-								["n_dmg"] = 6045,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 4,
-								["total"] = 6045,
-								["c_max"] = 0,
-								["id"] = 29765,
-								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 4,
-								["a_amt"] = 0,
-								["n_amt"] = 3,
-								["b_dmg"] = 3622,
-								["r_amt"] = 0,
-							},
 							[35399] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -3982,1114 +3013,77 @@ _detalhes_database = {
 								},
 								["a_dmg"] = 0,
 								["c_min"] = 0,
-								["successful_casted"] = 3,
+								["successful_casted"] = 7,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
-						},
-					},
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-17993-0001C1A044",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1665246202,
-					["delay"] = 0,
-					["damage_taken"] = 63262.01276,
-				}, -- [3]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.027822,
-					["on_hold"] = false,
-					["damage_from"] = {
-						["Vermin"] = true,
-					},
-					["targets"] = {
-						["Vermin"] = 8480,
-					},
-					["end_time"] = 1665246320,
-					["pets"] = {
-					},
-					["friendlyfire"] = {
-					},
-					["aID"] = "19486",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 8480.027822,
-					["fight_component"] = true,
-					["dps_started"] = false,
-					["total"] = 8480.027822,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Sunseeker Chemist",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 533,
-								["targets"] = {
-									["Vermin"] = 4886,
-								},
-								["n_dmg"] = 4886,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 32,
-								["a_dmg"] = 0,
-								["total"] = 4886,
-								["c_max"] = 0,
-								["BLOCK"] = 9,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["MISS"] = 2,
-								["DODGE"] = 7,
-								["extra"] = {
-								},
-								["PARRY"] = 3,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 11,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-							[34358] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 405,
-								["targets"] = {
-									["Vermin"] = 2835,
-								},
-								["n_dmg"] = 2835,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 7,
-								["total"] = 2835,
-								["c_max"] = 0,
-								["id"] = 34358,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 2,
-								["a_amt"] = 0,
-								["n_amt"] = 7,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[34359] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 759,
-								["targets"] = {
-									["Vermin"] = 759,
-								},
-								["n_dmg"] = 759,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 759,
-								["c_max"] = 0,
-								["id"] = 34359,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 1,
-								["a_amt"] = 0,
-								["n_amt"] = 1,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-					},
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-19486-0000C1A044",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1665246274,
-					["delay"] = 0,
-					["damage_taken"] = 97242.027822,
-				}, -- [4]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.038828,
-					["on_hold"] = false,
-					["damage_from"] = {
-						["Vermin"] = true,
-					},
-					["targets"] = {
-						["Vermin"] = 17643,
-					},
-					["end_time"] = 1665246320,
-					["pets"] = {
-					},
-					["friendlyfire"] = {
-					},
-					["aID"] = "18421",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 17643.038828,
-					["fight_component"] = true,
-					["dps_started"] = false,
-					["total"] = 17643.038828,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Sunseeker Researcher",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 1,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 502,
-								["targets"] = {
-									["Vermin"] = 9819,
-								},
-								["n_dmg"] = 9819,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 54,
-								["a_dmg"] = 0,
-								["total"] = 9819,
-								["c_max"] = 0,
-								["MISS"] = 4,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["BLOCK"] = 9,
-								["DODGE"] = 10,
-								["extra"] = {
-								},
-								["PARRY"] = 7,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 24,
-								["b_dmg"] = 17,
-								["r_amt"] = 0,
-							}, -- [1]
-							[34355] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 34355,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 3,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[34352] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 837,
-								["targets"] = {
-									["Vermin"] = 837,
-								},
-								["n_dmg"] = 837,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 837,
-								["c_max"] = 0,
-								["id"] = 34352,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 2,
-								["a_amt"] = 0,
-								["n_amt"] = 1,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[34354] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 530,
-								["targets"] = {
-									["Vermin"] = 1250,
-								},
-								["n_dmg"] = 1250,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 5,
-								["total"] = 1250,
-								["c_max"] = 0,
-								["id"] = 34354,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 1,
-								["a_amt"] = 0,
-								["n_amt"] = 5,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[16427] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 598,
-								["targets"] = {
-									["Vermin"] = 2391,
-								},
-								["n_dmg"] = 2391,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 6,
-								["total"] = 2391,
-								["c_max"] = 0,
-								["id"] = 16427,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 6,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[34353] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 1139,
-								["targets"] = {
-									["Vermin"] = 3346,
-								},
-								["n_dmg"] = 3346,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 3,
-								["total"] = 3346,
-								["c_max"] = 0,
-								["id"] = 34353,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 3,
-								["a_amt"] = 0,
-								["n_amt"] = 3,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-					},
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-18421-000141A044",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1665246227,
-					["delay"] = 0,
-					["damage_taken"] = 134965.038828,
-				}, -- [5]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.029952,
-					["on_hold"] = false,
-					["damage_from"] = {
-						["Vermin"] = true,
-					},
-					["targets"] = {
-						["Vermin"] = 5532,
-					},
-					["end_time"] = 1665246320,
-					["pets"] = {
-					},
-					["friendlyfire"] = {
-					},
-					["aID"] = "18422",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 5532.029952,
-					["fight_component"] = true,
-					["dps_started"] = false,
-					["total"] = 5532.029952,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Sunseeker Botanist",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 536,
-								["targets"] = {
-									["Vermin"] = 5532,
-								},
-								["n_dmg"] = 5532,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 38,
-								["MISS"] = 2,
-								["total"] = 5532,
-								["c_max"] = 0,
-								["a_dmg"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["BLOCK"] = 10,
-								["DODGE"] = 11,
-								["extra"] = {
-								},
-								["PARRY"] = 2,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 13,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-							[34361] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 34361,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 1,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[34350] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 34350,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 3,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[34254] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 34254,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 1,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-					},
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-18422-0001C1A044",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1665246269,
-					["delay"] = 0,
-					["damage_taken"] = 97242.029952,
-				}, -- [6]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.023325,
-					["on_hold"] = false,
-					["damage_from"] = {
-						["Vermin"] = true,
-					},
-					["targets"] = {
-						["Vermin"] = 4182,
-					},
-					["end_time"] = 1665246320,
-					["pets"] = {
-					},
-					["friendlyfire"] = {
-					},
-					["aID"] = "19557",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 4182.023325,
-					["fight_component"] = true,
-					["dps_started"] = false,
-					["total"] = 4182.023325,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Greater Frayer",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 418,
-								["targets"] = {
-									["Vermin"] = 2873,
-								},
-								["n_dmg"] = 2873,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 37,
-								["BLOCK"] = 10,
-								["total"] = 2873,
-								["c_max"] = 0,
-								["DODGE"] = 5,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["MISS"] = 4,
-								["extra"] = {
-								},
-								["PARRY"] = 6,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 12,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-							[34644] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 872,
-								["targets"] = {
-									["Vermin"] = 1309,
-								},
-								["n_dmg"] = 1309,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 5,
-								["total"] = 1309,
-								["c_max"] = 0,
-								["id"] = 34644,
-								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["BLOCK"] = 2,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 5,
-								["a_amt"] = 0,
-								["n_amt"] = 2,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-					},
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-19557-0001C1A044",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1665246258,
-					["delay"] = 0,
-					["damage_taken"] = 53731.023325,
-				}, -- [7]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.033686,
-					["damage_from"] = {
-						["Vermin"] = true,
-					},
-					["targets"] = {
-						["Vermin"] = 1314,
-					},
-					["dps_started"] = false,
-					["pets"] = {
-					},
-					["end_time"] = 1665246437,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 1314.033686,
-					["on_hold"] = false,
-					["fight_component"] = true,
-					["monster"] = true,
-					["total"] = 1314.033686,
-					["friendlyfire"] = {
-					},
-					["aID"] = "18420",
-					["nome"] = "Sunseeker Geomancer",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 455,
-								["targets"] = {
-									["Vermin"] = 1314,
-								},
-								["n_dmg"] = 1314,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 10,
-								["total"] = 1314,
-								["c_max"] = 0,
-								["BLOCK"] = 1,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["DODGE"] = 2,
-								["extra"] = {
-								},
-								["PARRY"] = 4,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 3,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-							[34170] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 34170,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 11,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-					},
-					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-18420-000041A044",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 45950.033686,
-					["start_time"] = 1665246417,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [8]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.015973,
-					["on_hold"] = false,
-					["damage_from"] = {
-						["Vermin"] = true,
-					},
-					["targets"] = {
-						["Vermin"] = 2178,
-					},
-					["pets"] = {
-					},
-					["end_time"] = 1665246694,
-					["friendlyfire"] = {
-					},
-					["aID"] = "18587",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 2178.015973,
-					["fight_component"] = true,
-					["dps_started"] = false,
-					["total"] = 2178.015973,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Frayer",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 163,
-								["targets"] = {
-									["Vermin"] = 2178,
-								},
-								["n_dmg"] = 2178,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 55,
-								["a_dmg"] = 0,
-								["total"] = 2178,
-								["c_max"] = 0,
-								["DODGE"] = 15,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["BLOCK"] = 11,
-								["MISS"] = 4,
-								["extra"] = {
-								},
-								["PARRY"] = 8,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 17,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-						},
-					},
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-18587-000041A044",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1665246662,
-					["delay"] = 0,
-					["damage_taken"] = 53200.015973,
-				}, -- [9]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.01776,
-					["on_hold"] = false,
-					["damage_from"] = {
-						["Vermin"] = true,
-					},
-					["targets"] = {
-						["Vermin"] = 10670,
-					},
-					["pets"] = {
-					},
-					["end_time"] = 1665246943,
-					["friendlyfire"] = {
-					},
-					["aID"] = "19505",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 10670.01776,
-					["fight_component"] = true,
-					["dps_started"] = false,
-					["total"] = 10670.01776,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Sunseeker Channeler",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 439,
-								["targets"] = {
-									["Vermin"] = 5410,
-								},
-								["n_dmg"] = 5410,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 33,
-								["total"] = 5410,
-								["c_max"] = 0,
-								["a_dmg"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["BLOCK"] = 5,
-								["DODGE"] = 4,
-								["extra"] = {
-								},
-								["PARRY"] = 6,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 18,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-							[34635] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 1115,
-								["targets"] = {
-									["Vermin"] = 5260,
-								},
-								["n_dmg"] = 5260,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 7,
-								["total"] = 5260,
-								["c_max"] = 0,
-								["id"] = 34635,
-								["r_dmg"] = 0,
-								["MISS"] = 1,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 6,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[34222] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 34222,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 2,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-					},
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-19505-0002C1A044",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1665246896,
-					["delay"] = 0,
-					["damage_taken"] = 53572.01776,
-				}, -- [10]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.016505,
-					["on_hold"] = false,
-					["damage_from"] = {
-						["Vermin"] = true,
-					},
-					["targets"] = {
-						["Vermin"] = 3050,
-					},
-					["pets"] = {
-					},
-					["end_time"] = 1665246943,
-					["friendlyfire"] = {
-					},
-					["aID"] = "19511",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 3050.016505,
-					["fight_component"] = true,
-					["dps_started"] = false,
-					["total"] = 3050.016505,
-					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["nome"] = "Nethervine Inciter",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
+							[29765] = {
 								["c_amt"] = 0,
 								["b_amt"] = 3,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 568,
+								["n_max"] = 3268,
 								["targets"] = {
-									["Vermin"] = 3050,
+									["Vermin"] = 17452,
 								},
-								["n_dmg"] = 3050,
+								["n_dmg"] = 17452,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 24,
-								["a_dmg"] = 0,
-								["total"] = 3050,
+								["counter"] = 8,
+								["total"] = 17452,
 								["c_max"] = 0,
-								["BLOCK"] = 4,
-								["id"] = 1,
+								["id"] = 29765,
 								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["MISS"] = 7,
-								["extra"] = {
-								},
-								["PARRY"] = 4,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 8,
-								["b_dmg"] = 1201,
-								["r_amt"] = 0,
-							}, -- [1]
-							[34173] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 34173,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 3,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-					},
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-19511-000341A044",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1665246914,
-					["delay"] = 0,
-					["damage_taken"] = 41914.016505,
-				}, -- [11]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.011259,
-					["damage_from"] = {
-						["Vermin"] = true,
-					},
-					["targets"] = {
-						["Vermin"] = 4084,
-					},
-					["on_hold"] = false,
-					["pets"] = {
-					},
-					["monster"] = true,
-					["aID"] = "19508",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 4084.011259,
-					["friendlyfire"] = {
-					},
-					["end_time"] = 1665246996,
-					["dps_started"] = false,
-					["total"] = 4084.011259,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["nome"] = "Sunseeker Herbalist",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 549,
-								["targets"] = {
-									["Vermin"] = 3202,
-								},
-								["n_dmg"] = 3202,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 23,
-								["a_dmg"] = 0,
-								["total"] = 3202,
-								["c_max"] = 0,
-								["BLOCK"] = 9,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["DODGE"] = 3,
 								["MISS"] = 1,
 								["extra"] = {
 								},
-								["PARRY"] = 1,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 9,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-							[22127] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 210,
-								["targets"] = {
-									["Vermin"] = 882,
-								},
-								["n_dmg"] = 882,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 6,
-								["total"] = 882,
-								["c_max"] = 0,
-								["id"] = 22127,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
 								["a_dmg"] = 0,
 								["c_min"] = 0,
-								["successful_casted"] = 2,
+								["successful_casted"] = 8,
 								["a_amt"] = 0,
-								["n_amt"] = 6,
-								["b_dmg"] = 0,
+								["n_amt"] = 7,
+								["b_dmg"] = 5534,
 								["r_amt"] = 0,
 							},
 						},
 					},
 					["last_event"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-19508-000141A044",
+					["serial"] = "Creature-0-4479-553-16566-17993-0006C2A9B3",
 					["custom"] = 0,
 					["tipo"] = 1,
 					["last_dps"] = 0,
-					["start_time"] = 1665246955,
+					["start_time"] = 1665313298,
 					["delay"] = 0,
-					["damage_taken"] = 40516.011259,
-				}, -- [12]
+					["damage_taken"] = 110223.028428,
+				}, -- [2]
 				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.010161,
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.022953,
+					["on_hold"] = false,
 					["damage_from"] = {
 						["Vermin"] = true,
 					},
 					["targets"] = {
-						["Vermin"] = 853,
+						["Vermin"] = 1456,
 					},
-					["on_hold"] = false,
 					["pets"] = {
 					},
-					["monster"] = true,
-					["aID"] = "19509",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 853.010161,
+					["end_time"] = 1665313437,
 					["friendlyfire"] = {
 					},
-					["end_time"] = 1665246996,
-					["dps_started"] = false,
-					["total"] = 853.010161,
+					["aID"] = "18405",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 1456.022953,
 					["fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 1456.022953,
 					["classe"] = "UNKNOW",
-					["nome"] = "Sunseeker Harvester",
+					["monster"] = true,
+					["nome"] = "Tempest-Forge Peacekeeper",
 					["spells"] = {
 						["tipo"] = 2,
 						["_ActorTable"] = {
@@ -5098,21 +3092,22 @@ _detalhes_database = {
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 233,
+								["n_max"] = 389,
 								["targets"] = {
-									["Vermin"] = 853,
+									["Vermin"] = 1456,
 								},
-								["n_dmg"] = 853,
+								["n_dmg"] = 1456,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 14,
-								["total"] = 853,
+								["counter"] = 12,
+								["MISS"] = 1,
+								["total"] = 1456,
 								["c_max"] = 0,
-								["a_dmg"] = 0,
+								["DODGE"] = 1,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 4,
-								["DODGE"] = 4,
+								["a_dmg"] = 0,
+								["BLOCK"] = 4,
 								["extra"] = {
 								},
 								["PARRY"] = 2,
@@ -5123,44 +3118,18 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							}, -- [1]
-							[34640] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 34640,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 1,
-								["a_amt"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
 						},
 					},
 					["last_event"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-19509-000241A044",
+					["serial"] = "Creature-0-4479-553-16566-18405-000142A9B3",
 					["custom"] = 0,
 					["tipo"] = 1,
 					["last_dps"] = 0,
-					["start_time"] = 1665246979,
+					["start_time"] = 1665313419,
 					["delay"] = 0,
-					["damage_taken"] = 16207.010161,
-				}, -- [13]
+					["damage_taken"] = 44710.022953,
+				}, -- [3]
 			},
 		}, -- [1]
 		{
@@ -5175,98 +3144,50 @@ _detalhes_database = {
 					},
 					["iniciar_hps"] = false,
 					["heal_enemy_amt"] = 0,
-					["totalover"] = 0.023346,
-					["total_without_pet"] = 11316.023346,
-					["total"] = 11316.023346,
+					["totalover"] = 0.012654,
+					["total_without_pet"] = 1626.012654,
+					["total"] = 1626.012654,
 					["targets_absorbs"] = {
 					},
 					["heal_enemy"] = {
 					},
 					["on_hold"] = false,
 					["serial"] = "Player-4465-00E5831F",
-					["totalabsorb"] = 0.023346,
+					["totalabsorb"] = 0.012654,
 					["last_hps"] = 0,
 					["targets"] = {
-						["Vermin"] = 11316,
+						["Vermin"] = 1626,
 					},
-					["totalover_without_pet"] = 0.023346,
-					["healing_taken"] = 11316.023346,
+					["totalover_without_pet"] = 0.012654,
+					["healing_taken"] = 1626.012654,
 					["fight_component"] = true,
-					["end_time"] = 1665246320,
+					["end_time"] = 1665313437,
 					["targets_overheal"] = {
 					},
 					["nome"] = "Vermin",
 					["spells"] = {
 						["tipo"] = 3,
 						["_ActorTable"] = {
-							[41620] = {
+							[28495] = {
 								["c_amt"] = 0,
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
 								},
-								["n_max"] = 2335,
+								["n_max"] = 1626,
 								["targets"] = {
-									["Vermin"] = 7873,
-								},
-								["n_min"] = 0,
-								["counter"] = 4,
-								["overheal"] = 0,
-								["total"] = 7873,
-								["c_max"] = 0,
-								["id"] = 41620,
-								["targets_absorbs"] = {
-								},
-								["c_min"] = 0,
-								["c_curado"] = 0,
-								["n_curado"] = 7873,
-								["totaldenied"] = 0,
-								["n_amt"] = 4,
-								["absorbed"] = 0,
-							},
-							[29842] = {
-								["c_amt"] = 0,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-								},
-								["n_max"] = 342,
-								["targets"] = {
-									["Vermin"] = 3018,
-								},
-								["n_min"] = 0,
-								["counter"] = 10,
-								["overheal"] = 0,
-								["total"] = 3018,
-								["c_max"] = 0,
-								["id"] = 29842,
-								["targets_absorbs"] = {
-								},
-								["c_min"] = 0,
-								["c_curado"] = 0,
-								["n_curado"] = 3018,
-								["totaldenied"] = 0,
-								["n_amt"] = 10,
-								["absorbed"] = 0,
-							},
-							[27031] = {
-								["c_amt"] = 0,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-								},
-								["n_max"] = 425,
-								["targets"] = {
-									["Vermin"] = 425,
+									["Vermin"] = 1626,
 								},
 								["n_min"] = 0,
 								["counter"] = 1,
 								["overheal"] = 0,
-								["total"] = 425,
+								["total"] = 1626,
 								["c_max"] = 0,
-								["id"] = 27031,
+								["id"] = 28495,
 								["targets_absorbs"] = {
 								},
 								["c_min"] = 0,
 								["c_curado"] = 0,
-								["n_curado"] = 425,
+								["n_curado"] = 1626,
 								["totaldenied"] = 0,
 								["n_amt"] = 1,
 								["absorbed"] = 0,
@@ -5274,12 +3195,12 @@ _detalhes_database = {
 						},
 					},
 					["grupo"] = true,
-					["start_time"] = 1665246268,
+					["start_time"] = 1665313433,
 					["aID"] = "4465-00E5831F",
 					["custom"] = 0,
 					["last_event"] = 0,
 					["classe"] = "WARRIOR",
-					["totaldenied"] = 0.023346,
+					["totaldenied"] = 0.012654,
 					["delay"] = 0,
 					["tipo"] = 2,
 				}, -- [1]
@@ -5289,68 +3210,59 @@ _detalhes_database = {
 			["tipo"] = 7,
 			["_ActorTable"] = {
 				{
-					["flag_original"] = 1297,
-					["resource"] = 0.062404,
+					["received"] = 255.024328,
+					["resource"] = 0.024328,
 					["targets"] = {
-						["Vermin"] = 1175,
+						["Vermin"] = 255,
 					},
 					["pets"] = {
 					},
 					["powertype"] = 1,
-					["aID"] = "4465-00E5831F",
-					["totalover"] = 0.005837,
+					["classe"] = "WARRIOR",
+					["passiveover"] = 0.002259,
 					["fight_component"] = true,
-					["alternatepower"] = 0.062404,
+					["total"] = 255.024328,
+					["tipo"] = 3,
+					["totalover"] = 0.002259,
 					["nome"] = "Vermin",
 					["spells"] = {
 						["tipo"] = 7,
 						["_ActorTable"] = {
-							[29842] = {
+							[2687] = {
 								["total"] = 40,
-								["id"] = 29842,
+								["id"] = 2687,
 								["totalover"] = 0,
 								["targets"] = {
 									["Vermin"] = 40,
 								},
-								["counter"] = 10,
-							},
-							[2687] = {
-								["total"] = 60,
-								["id"] = 2687,
-								["totalover"] = 0,
-								["targets"] = {
-									["Vermin"] = 60,
-								},
-								["counter"] = 3,
-							},
-							[29131] = {
-								["total"] = 80,
-								["id"] = 29131,
-								["totalover"] = 0,
-								["targets"] = {
-									["Vermin"] = 80,
-								},
-								["counter"] = 80,
+								["counter"] = 2,
 							},
 							[23602] = {
-								["total"] = 995,
+								["total"] = 185,
 								["id"] = 23602,
 								["totalover"] = 0,
 								["targets"] = {
-									["Vermin"] = 995,
+									["Vermin"] = 185,
 								},
-								["counter"] = 199,
+								["counter"] = 37,
+							},
+							[29131] = {
+								["total"] = 30,
+								["id"] = 29131,
+								["totalover"] = 0,
+								["targets"] = {
+									["Vermin"] = 30,
+								},
+								["counter"] = 30,
 							},
 						},
 					},
 					["grupo"] = true,
-					["received"] = 1175.062404,
-					["classe"] = "WARRIOR",
+					["flag_original"] = 1297,
+					["alternatepower"] = 0.024328,
 					["last_event"] = 0,
-					["passiveover"] = 0.005837,
-					["total"] = 1175.062404,
+					["aID"] = "4465-00E5831F",
 					["serial"] = "Player-4465-00E5831F",
-					["tipo"] = 3,
 				}, -- [1]
 			},
 		}, -- [3]
@@ -5362,103 +3274,12 @@ _detalhes_database = {
 					["debuff_uptime_spells"] = {
 						["tipo"] = 9,
 						["_ActorTable"] = {
-							[58567] = {
-								["refreshamt"] = 8,
-								["activedamt"] = 1,
-								["appliedamt"] = 6,
-								["id"] = 58567,
-								["uptime"] = 25,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[46845] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 4,
-								["id"] = 46845,
-								["uptime"] = 7,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[11196] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 1,
-								["id"] = 11196,
-								["uptime"] = 19,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[355] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 1,
-								["id"] = 355,
-								["uptime"] = 3,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
 							[12721] = {
-								["refreshamt"] = 58,
+								["refreshamt"] = 12,
 								["activedamt"] = 0,
-								["appliedamt"] = 57,
+								["appliedamt"] = 14,
 								["id"] = 12721,
-								["uptime"] = 202,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[20511] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 1,
-								["id"] = 20511,
-								["uptime"] = 1,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[5246] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 1,
-								["id"] = 5246,
-								["uptime"] = 8,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[46857] = {
-								["refreshamt"] = 57,
-								["activedamt"] = 1,
-								["appliedamt"] = 48,
-								["id"] = 46857,
-								["uptime"] = 237,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[30330] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 1,
-								["id"] = 30330,
-								["uptime"] = 3,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[25203] = {
-								["actived_at"] = 1665246632,
-								["refreshamt"] = 0,
-								["activedamt"] = -1,
-								["appliedamt"] = 20,
-								["id"] = 25203,
-								["uptime"] = 97,
+								["uptime"] = 69,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -5466,9 +3287,39 @@ _detalhes_database = {
 							[25264] = {
 								["refreshamt"] = 0,
 								["activedamt"] = 0,
-								["appliedamt"] = 36,
+								["appliedamt"] = 8,
 								["id"] = 25264,
-								["uptime"] = 161,
+								["uptime"] = 52,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[46857] = {
+								["refreshamt"] = 16,
+								["activedamt"] = 1,
+								["appliedamt"] = 9,
+								["id"] = 46857,
+								["uptime"] = 83,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[25203] = {
+								["refreshamt"] = 0,
+								["activedamt"] = -1,
+								["appliedamt"] = 5,
+								["id"] = 25203,
+								["uptime"] = 73,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[58567] = {
+								["refreshamt"] = 12,
+								["activedamt"] = 1,
+								["appliedamt"] = 4,
+								["id"] = 58567,
+								["uptime"] = 46,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -5476,191 +3327,189 @@ _detalhes_database = {
 							[7922] = {
 								["refreshamt"] = 0,
 								["appliedamt"] = 0,
-								["activedamt"] = -11,
+								["activedamt"] = -4,
 								["uptime"] = 0,
 								["id"] = 7922,
-								["actived_at"] = 18317713111,
+								["actived_at"] = 6661253846,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[30330] = {
+								["refreshamt"] = 1,
+								["activedamt"] = 0,
+								["appliedamt"] = 1,
+								["id"] = 30330,
+								["uptime"] = 14,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[46845] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 4,
+								["id"] = 46845,
+								["uptime"] = 24,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
 						},
 					},
-					["dispell"] = 3.007064,
-					["cooldowns_defensive"] = 6.021065999999999,
-					["pets"] = {
-					},
-					["aID"] = "4465-00E5831F",
 					["interrupt_spells"] = {
 						["tipo"] = 9,
 						["_ActorTable"] = {
 							[72] = {
 								["id"] = 72,
 								["interrompeu_oque"] = {
-									[34361] = 1,
-									[35124] = 1,
-									[34616] = 2,
+									[34785] = 1,
 								},
 								["targets"] = {
-									["Sunseeker Geomancer"] = 1,
-									["Sunseeker Botanist"] = 1,
-									["Nethervine Inciter"] = 2,
+									["Tempest-Forge Peacekeeper"] = 1,
 								},
-								["counter"] = 4,
+								["counter"] = 1,
 							},
 						},
+					},
+					["cooldowns_defensive"] = 2.009997,
+					["buff_uptime"] = 522,
+					["classe"] = "WARRIOR",
+					["cooldowns_defensive_targets"] = {
+						["Vermin"] = 2,
 					},
 					["buff_uptime_spells"] = {
 						["tipo"] = 9,
 						["_ActorTable"] = {
 							[33667] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 6,
-								["appliedamt"] = 6,
+								["activedamt"] = 3,
+								["appliedamt"] = 3,
 								["id"] = 33667,
-								["uptime"] = 83,
+								["uptime"] = 26,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[29842] = {
+							[58448] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 2,
-								["appliedamt"] = 2,
-								["id"] = 29842,
-								["uptime"] = 20,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[27031] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 27031,
-								["uptime"] = 2,
+								["activedamt"] = 4,
+								["appliedamt"] = 4,
+								["id"] = 58448,
+								["uptime"] = 103,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
 							[871] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 2,
-								["appliedamt"] = 2,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
 								["id"] = 871,
-								["uptime"] = 19,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[43194] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 12,
-								["appliedamt"] = 12,
-								["id"] = 43194,
-								["uptime"] = 266,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[71] = {
-								["refreshamt"] = 0,
-								["appliedamt"] = 13,
-								["activedamt"] = 13,
-								["uptime"] = 41,
-								["id"] = 71,
-								["actived_at"] = 18317712379,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[2457] = {
-								["actived_at"] = 1665246995,
-								["refreshamt"] = 0,
-								["activedamt"] = 2,
-								["appliedamt"] = 2,
-								["id"] = 2457,
-								["uptime"] = 4,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[12976] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 4,
-								["appliedamt"] = 4,
-								["id"] = 12976,
-								["uptime"] = 50,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[12328] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 10,
-								["appliedamt"] = 10,
-								["id"] = 12328,
-								["uptime"] = 30,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[8221] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 12,
-								["appliedamt"] = 12,
-								["id"] = 8221,
-								["uptime"] = 266,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[23920] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 3,
-								["appliedamt"] = 3,
-								["id"] = 23920,
-								["uptime"] = 15,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[28093] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 9,
-								["appliedamt"] = 9,
-								["id"] = 28093,
-								["uptime"] = 97,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[2565] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 12,
-								["appliedamt"] = 12,
-								["id"] = 2565,
-								["uptime"] = 91,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[2048] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 13,
-								["appliedamt"] = 13,
-								["id"] = 2048,
-								["uptime"] = 266,
+								["uptime"] = 12,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
 							[29131] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 8,
-								["appliedamt"] = 8,
+								["activedamt"] = 3,
+								["appliedamt"] = 3,
 								["id"] = 29131,
-								["uptime"] = 79,
+								["uptime"] = 29,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[8219] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 4,
+								["appliedamt"] = 4,
+								["id"] = 8219,
+								["uptime"] = 103,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[12976] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 12976,
+								["uptime"] = 20,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[2458] = {
+								["refreshamt"] = 0,
+								["appliedamt"] = 2,
+								["activedamt"] = 2,
+								["uptime"] = 21,
+								["id"] = 2458,
+								["actived_at"] = 1665313435,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[28093] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 3,
+								["appliedamt"] = 3,
+								["id"] = 28093,
+								["uptime"] = 23,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[12328] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 2,
+								["appliedamt"] = 2,
+								["id"] = 12328,
+								["uptime"] = 9,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[71] = {
+								["refreshamt"] = 0,
+								["appliedamt"] = 3,
+								["activedamt"] = 3,
+								["uptime"] = 48,
+								["id"] = 71,
+								["actived_at"] = 1665313383,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[2565] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 3,
+								["appliedamt"] = 3,
+								["id"] = 2565,
+								["uptime"] = 25,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[2048] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 4,
+								["appliedamt"] = 4,
+								["id"] = 2048,
+								["uptime"] = 103,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[2457] = {
+								["actived_at"] = 3330627099,
+								["refreshamt"] = 0,
+								["activedamt"] = 2,
+								["appliedamt"] = 2,
+								["id"] = 2457,
+								["uptime"] = 0,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -5668,288 +3517,86 @@ _detalhes_database = {
 						},
 					},
 					["interrompeu_oque"] = {
-						[34361] = 1,
-						[35124] = 1,
-						[34616] = 2,
-					},
-					["debuff_uptime"] = 763,
-					["buff_uptime_targets"] = {
-					},
-					["interrupt_targets"] = {
-						["Sunseeker Geomancer"] = 1,
-						["Sunseeker Botanist"] = 1,
-						["Nethervine Inciter"] = 2,
-					},
-					["cc_done_targets"] = {
-						["Sunseeker Channeler"] = 1,
-					},
-					["serial"] = "Player-4465-00E5831F",
-					["buff_uptime"] = 1329,
-					["cc_done_spells"] = {
-						["tipo"] = 9,
-						["_ActorTable"] = {
-							[5246] = {
-								["id"] = 5246,
-								["targets"] = {
-									["Sunseeker Channeler"] = 1,
-								},
-								["counter"] = 1,
-							},
-						},
-					},
-					["cooldowns_defensive_targets"] = {
-						["Vermin"] = 6,
-					},
-					["dispell_oque"] = {
-						[34355] = 2,
-						[34254] = 1,
-					},
-					["dispell_spells"] = {
-						["tipo"] = 9,
-						["_ActorTable"] = {
-							[30356] = {
-								["dispell"] = 3,
-								["id"] = 30356,
-								["dispell_oque"] = {
-									[34355] = 2,
-									[34254] = 1,
-								},
-								["targets"] = {
-									["Sunseeker Researcher"] = 2,
-									["Greater Frayer"] = 1,
-								},
-								["counter"] = 0,
-							},
-						},
+						[34785] = 1,
 					},
 					["fight_component"] = true,
-					["cc_done"] = 1.005412,
-					["nome"] = "Vermin",
-					["grupo"] = true,
-					["spell_cast"] = {
-						[34428] = 3,
-						[12328] = 3,
-						[2687] = 3,
-						[2565] = 12,
-						[25231] = 43,
-						[72] = 4,
-						[2048] = 1,
-						[25203] = 13,
-						[871] = 2,
-						[33667] = 5,
-						[5246] = 1,
-						[12975] = 4,
-						[27031] = 1,
-						[23920] = 3,
-						[2457] = 2,
-						[30330] = 1,
-						[355] = 1,
-						[46845] = 4,
-						[71] = 13,
-						[25264] = 12,
-						[30356] = 25,
-						[41620] = 4,
-						[30357] = 109,
-						[7386] = 10,
-						[30324] = 5,
-					},
-					["classe"] = "WARRIOR",
-					["interrupt"] = 4.022208999999999,
-					["last_event"] = 0,
-					["debuff_uptime_targets"] = {
-					},
-					["dispell_targets"] = {
-						["Sunseeker Researcher"] = 2,
-						["Greater Frayer"] = 1,
-					},
-					["tipo"] = 4,
+					["debuff_uptime"] = 361,
+					["interrupt"] = 1.002056,
 					["cooldowns_defensive_spells"] = {
 						["tipo"] = 9,
 						["_ActorTable"] = {
 							[12975] = {
 								["id"] = 12975,
 								["targets"] = {
-									["Vermin"] = 4,
+									["Vermin"] = 1,
 								},
-								["counter"] = 4,
+								["counter"] = 1,
 							},
 							[871] = {
 								["id"] = 871,
 								["targets"] = {
-									["Vermin"] = 2,
+									["Vermin"] = 1,
 								},
-								["counter"] = 2,
+								["counter"] = 1,
 							},
 						},
 					},
+					["buff_uptime_targets"] = {
+					},
+					["interrupt_targets"] = {
+						["Tempest-Forge Peacekeeper"] = 1,
+					},
+					["grupo"] = true,
+					["spell_cast"] = {
+						[34428] = 2,
+						[2687] = 2,
+						[2565] = 3,
+						[25231] = 6,
+						[72] = 1,
+						[25264] = 3,
+						[25203] = 4,
+						[871] = 1,
+						[33667] = 2,
+						[12975] = 1,
+						[30330] = 2,
+						[2457] = 2,
+						[1680] = 1,
+						[30324] = 5,
+						[28495] = 1,
+						[46845] = 4,
+						[30356] = 12,
+						[7386] = 10,
+						[30357] = 18,
+						[2458] = 2,
+						[71] = 3,
+					},
+					["debuff_uptime_targets"] = {
+					},
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["nome"] = "Vermin",
+					["pets"] = {
+					},
+					["serial"] = "Player-4465-00E5831F",
+					["aID"] = "4465-00E5831F",
 				}, -- [1]
 				{
+					["flag_original"] = 68168,
 					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[29765] = 4,
-						[35399] = 3,
-					},
+					["aID"] = "17993",
 					["nome"] = "Bloodwarder Protector",
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["flag_original"] = 2632,
-					["aID"] = "17993",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-17993-0001C1A044",
+					["classe"] = "UNKNOW",
+					["spell_cast"] = {
+						[35399] = 7,
+						[29765] = 8,
+					},
 					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-4479-553-16566-17993-0006C2A9B3",
+					["last_event"] = 0,
 				}, -- [2]
-				{
-					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[34821] = 1,
-					},
-					["nome"] = "Bloodwarder Steward",
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["flag_original"] = 68168,
-					["aID"] = "18404",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-18404-000041A044",
-					["tipo"] = 4,
-				}, -- [3]
-				{
-					["flag_original"] = 2632,
-					["monster"] = true,
-					["nome"] = "Greater Frayer",
-					["last_event"] = 0,
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						[34644] = 5,
-					},
-					["fight_component"] = true,
-					["tipo"] = 4,
-					["aID"] = "19557",
-					["serial"] = "Creature-0-5563-553-31362-19557-0001C1A044",
-					["classe"] = "UNKNOW",
-				}, -- [4]
-				{
-					["flag_original"] = 68168,
-					["monster"] = true,
-					["nome"] = "Sunseeker Researcher",
-					["last_event"] = 0,
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						[34355] = 3,
-						[34354] = 1,
-						[34353] = 3,
-						[34352] = 2,
-					},
-					["fight_component"] = true,
-					["tipo"] = 4,
-					["aID"] = "18421",
-					["serial"] = "Creature-0-5563-553-31362-18421-000141A044",
-					["classe"] = "UNKNOW",
-				}, -- [5]
-				{
-					["flag_original"] = 68168,
-					["monster"] = true,
-					["aID"] = "18422",
-					["nome"] = "Sunseeker Botanist",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[34361] = 1,
-						[34350] = 3,
-						[34254] = 1,
-					},
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-5563-553-31362-18422-0000C1A044",
-					["last_event"] = 0,
-				}, -- [6]
-				{
-					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[34358] = 2,
-						[34359] = 1,
-					},
-					["nome"] = "Sunseeker Chemist",
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["flag_original"] = 2632,
-					["aID"] = "19486",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-19486-000141A044",
-					["tipo"] = 4,
-				}, -- [7]
-				{
-					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[34640] = 1,
-					},
-					["nome"] = "Sunseeker Harvester",
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["flag_original"] = 2632,
-					["aID"] = "19509",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-19509-000241A044",
-					["tipo"] = 4,
-				}, -- [8]
-				{
-					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[22127] = 2,
-					},
-					["nome"] = "Sunseeker Herbalist",
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["flag_original"] = 2632,
-					["aID"] = "19508",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-19508-0001C1A044",
-					["tipo"] = 4,
-				}, -- [9]
-				{
-					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[34222] = 2,
-					},
-					["nome"] = "Sunseeker Channeler",
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["flag_original"] = 2632,
-					["aID"] = "19505",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-19505-000041A044",
-					["tipo"] = 4,
-				}, -- [10]
-				{
-					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						[34173] = 3,
-					},
-					["nome"] = "Nethervine Inciter",
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["flag_original"] = 2632,
-					["aID"] = "19511",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-5563-553-31362-19511-000041A044",
-					["tipo"] = 4,
-				}, -- [11]
 			},
 		}, -- [4]
 		{
@@ -5961,19 +3608,19 @@ _detalhes_database = {
 		},
 		["raid_roster_indexed"] = {
 		},
-		["tempo_start"] = 1665246219,
+		["tempo_start"] = 1665313383,
 		["last_events_tables"] = {
 		},
 		["alternate_power"] = {
 		},
-		["combat_counter"] = 14829,
+		["combat_counter"] = 14991,
 		["spells_cast_timeline"] = {
 		},
 		["totals"] = {
-			809059.2462799998, -- [1]
-			11316.012356, -- [2]
+			183212.067977, -- [1]
+			1626.006446, -- [2]
 			{
-				1175.056567, -- [1]
+				255.022069, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
 				[3] = 0,
@@ -5983,9 +3630,9 @@ _detalhes_database = {
 				["buff_uptime"] = 0,
 				["ress"] = 0,
 				["debuff_uptime"] = 0,
-				["cooldowns_defensive"] = 6.014155,
-				["interrupt"] = 4.022208999999999,
-				["dispell"] = 3.007064,
+				["cooldowns_defensive"] = 2.003264,
+				["interrupt"] = 1.002056,
+				["dispell"] = 0,
 				["cc_break"] = 0,
 				["dead"] = 0,
 			}, -- [4]
@@ -5999,90 +3646,42 @@ _detalhes_database = {
 		},
 		["__call"] = {
 		},
-		["data_inicio"] = "18:23:40",
-		["end_time"] = 1373973.592,
+		["data_inicio"] = "13:03:03",
+		["end_time"] = 145240.59,
 		["cleu_events"] = {
 			["n"] = 1,
 		},
 		["segments_added"] = {
 			{
-				["elapsed"] = 47.10299999988638,
+				["elapsed"] = 26.45600000000559,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "18:35:49",
+				["clock"] = "13:05:57",
 			}, -- [1]
 			{
-				["elapsed"] = 14.8179999999702,
+				["elapsed"] = 27.73999999999069,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "18:35:29",
+				["clock"] = "13:05:08",
 			}, -- [2]
 			{
-				["elapsed"] = 13.2839999999851,
+				["elapsed"] = 38.38200000001234,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "18:34:51",
+				["clock"] = "13:03:18",
 			}, -- [3]
 			{
-				["elapsed"] = 29.91899999999441,
+				["elapsed"] = 11.82700000001933,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "18:32:25",
+				["clock"] = "13:03:03",
 			}, -- [4]
-			{
-				["elapsed"] = 17.27199999988079,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "18:32:01",
-			}, -- [5]
-			{
-				["elapsed"] = 18.30099999997765,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "18:31:16",
-			}, -- [6]
-			{
-				["elapsed"] = 26.35099999979138,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "18:30:25",
-			}, -- [7]
-			{
-				["elapsed"] = 14.98500000010245,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "18:30:04",
-			}, -- [8]
-			{
-				["elapsed"] = 28.3519999999553,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "18:26:48",
-			}, -- [9]
-			{
-				["elapsed"] = 23.15200000000186,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "18:24:56",
-			}, -- [10]
-			{
-				["elapsed"] = 15.71699999994598,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "18:24:27",
-			}, -- [11]
-			{
-				["elapsed"] = 16.70100000011735,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "18:23:40",
-			}, -- [12]
 		},
 		["totals_grupo"] = {
-			739040.0564240001, -- [1]
-			11316.016782, -- [2]
+			154933.020856, -- [1]
+			1626.006446, -- [2]
 			{
-				1175.056567, -- [1]
+				255.022069, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
 				[3] = 0,
@@ -6092,22 +3691,22 @@ _detalhes_database = {
 				["buff_uptime"] = 0,
 				["ress"] = 0,
 				["debuff_uptime"] = 0,
-				["cooldowns_defensive"] = 6.014155,
-				["interrupt"] = 4.022208999999999,
-				["dispell"] = 3.007064,
+				["cooldowns_defensive"] = 2.003264,
+				["interrupt"] = 1.002056,
+				["dispell"] = 0,
 				["cc_break"] = 0,
 				["dead"] = 0,
 			}, -- [4]
 		},
 		["frags"] = {
 		},
-		["data_fim"] = "18:36:36",
+		["data_fim"] = "13:06:24",
 		["overall_enemy_name"] = "-- x -- x --",
 		["CombatSkillCache"] = {
 		},
 		["cleu_timeline"] = {
 		},
-		["start_time"] = 1373707.637,
+		["start_time"] = 145136.185,
 		["TimeData"] = {
 		},
 		["PhaseData"] = {
@@ -6128,7 +3727,7 @@ _detalhes_database = {
 	["on_death_menu"] = false,
 	["force_font_outline"] = "",
 	["character_data"] = {
-		["logons"] = 2506,
+		["logons"] = 2550,
 	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {

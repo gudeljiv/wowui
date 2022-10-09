@@ -140,7 +140,7 @@ bcf:SetScript(
 			end
 
 			base, casting = GetManaRegen()
-			if (xVermin:Round(base, 2) or xVermin:Round(casting, 2)) > 0 then
+			if (xVermin.Round(base, 2) or xVermin.Round(casting, 2)) > 0 then
 				if lastmana then
 					if UnitPower('player') > lastmana then
 						manatick = UnitPower('player') - lastmana

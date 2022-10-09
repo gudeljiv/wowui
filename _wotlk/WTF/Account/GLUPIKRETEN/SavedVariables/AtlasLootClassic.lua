@@ -3,19 +3,21 @@ AtlasLootClassicDB = {
 	["global"] = {
 		["__addonrevision"] = 3000005,
 		["VendorPrice"] = {
+			[29466] = "honor:16650",
 			[28909] = "arcanerune:8",
+			[28912] = "arcanerune:8",
 			[29472] = "honor:16650",
-			[28911] = "arcanerune:8",
+			[28904] = "arcanerune:2",
 			[28910] = "arcanerune:8",
 			[29469] = "honor:16650",
 			[28903] = "arcanerune:2",
 			[28907] = "arcanerune:2",
-			[34129] = "honor:16650",
+			[28911] = "arcanerune:8",
 			[29470] = "honor:16650",
-			[28904] = "arcanerune:2",
+			[40700] = "EmblemOfHeroism:35",
 			[28908] = "arcanerune:2",
-			[28912] = "arcanerune:8",
-			[29466] = "honor:16650",
+			[40701] = "EmblemOfHeroism:35",
+			[34129] = "honor:16650",
 		},
 	},
 	["profileKeys"] = {
@@ -73,6 +75,11 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -81,11 +88,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
 			},
 		},
 		["Verminz - Golemagg"] = {
@@ -437,6 +439,23 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
+			["GUI"] = {
+				["selectedGameVersion"] = 2,
+				["selected"] = {
+					nil, -- [1]
+					"HellfireRamparts", -- [2]
+					2, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+				["point"] = {
+					"LEFT", -- [1]
+					nil, -- [2]
+					"LEFT", -- [3]
+					337.781494140625, -- [4]
+					156.011474609375, -- [5]
+				},
+			},
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
@@ -450,23 +469,6 @@ AtlasLootClassicDB = {
 							},
 						},
 					},
-				},
-			},
-			["GUI"] = {
-				["point"] = {
-					"LEFT", -- [1]
-					nil, -- [2]
-					"LEFT", -- [3]
-					337.781494140625, -- [4]
-					156.011474609375, -- [5]
-				},
-				["selectedGameVersion"] = 2,
-				["selected"] = {
-					nil, -- [1]
-					"HellfireRamparts", -- [2]
-					2, -- [3]
-					1, -- [4]
-					0, -- [5]
 				},
 			},
 		},
@@ -513,6 +515,10 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["point"] = {
 					"TOP", -- [1]
@@ -528,10 +534,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 	},

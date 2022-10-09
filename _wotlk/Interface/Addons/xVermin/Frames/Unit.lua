@@ -110,7 +110,7 @@ hc.text:SetPoint('BOTTOMLEFT', CustomContainer_Combat, 'TOPLEFT', 1, 3)
 local function GetHonor()
 	local name, CurrentAmount, texture, earnedThisWeek, weeklyMax, totalMax, isDiscovered = GetCurrencyInfo(1901)
 	if CurrentAmount > 0 then
-		hc.text:SetText(xVermin:FormatNumber(CurrentAmount))
+		hc.text:SetText(xVermin.FormatNumber(CurrentAmount))
 	else
 		hc.text:SetText('')
 	end

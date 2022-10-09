@@ -1,4 +1,5 @@
 local _, xVermin = ...
+local RangeCheck = LibStub('LibRangeCheck-2.0')
 
 -- RAID_CLASS_COLORS["SHAMAN"] = {r = 0 / 255, g = 112 / 255, b = 222 / 255, colorStr = "ff0070DE"}
 xVermin.Class = select(2, UnitClass('player'))
@@ -43,7 +44,7 @@ SlashCmdList['RELOAD'] = function(msg)
 	ReloadUI()
 end
 
-function xVermin:FormatValue(self)
+xVermin.FormatValue = function(self)
 	if (self >= 10000) then
 		return ('%.1fk'):format(self / 1e3)
 	else
@@ -51,17 +52,7 @@ function xVermin:FormatValue(self)
 	end
 end
 
--- function xVermin:FormatValue(value)
--- 	if value >= 1e6 then
--- 		return tonumber(format("%.1f", value/1e6)).."m"
--- 	elseif value >= 1e4 then
--- 		return tonumber(format("%.1f", value/1e3)).."k"
--- 	else
--- 		return value
--- 	end
--- end
-
-function xVermin:FormatNumber(number, divider)
+xVermin.FormatNumber = function(number, divider)
 	if not divider then
 		divider = '.'
 	end
@@ -78,18 +69,17 @@ function xVermin:FormatNumber(number, divider)
 	return ('%s%s%s%s'):format(neg, left, mid:reverse():gsub('(%d%d%d)', '%1' .. divider):reverse(), right)
 end
 
-function xVermin:Round(number, decimals)
-	-- if not number then
-	-- 	return 0
-	-- end
-	-- local power = 10 ^ (decimals or 0)
-	-- return floor(number * power) / power
+xVermin.Round = function(number, decimals)
+	if not number or tonumber(number) == nil then
+		return 0
+	end
 
 	local mult = 10 ^ (decimals or 0)
 	return math.floor(number * mult + 0.5) / mult
 end
+xRound = xVermin.Round
 
-function xVermin:ColorGradient(perc, ...)
+xVermin.ColorGradient = function(perc, ...)
 	if perc >= 1 then
 		r, g, b = select(select('#', ...) - 2, ...)
 		return r, g, b
@@ -104,7 +94,7 @@ function xVermin:ColorGradient(perc, ...)
 	return r1 + (r2 - r1) * relperc, g1 + (g2 - g1) * relperc, b1 + (b2 - b1) * relperc
 end
 
-function xVermin:TimeFormat(time)
+xVermin.TimeFormat = function(time)
 	local days = floor(time / 86400)
 	local hours = floor(mod(time, 86400) / 3600)
 	local minutes = floor(mod(time, 3600) / 60)
@@ -116,7 +106,7 @@ function xVermin:TimeFormat(time)
 	end
 end
 
-function xVermin:hex2rgb(hex)
+xVermin.HEX2RGB = function(hex)
 	hex = hex:gsub('#', '')
 	local r = tonumber('0x' .. hex:sub(1, 2)) / 255
 	local g = tonumber('0x' .. hex:sub(3, 4)) / 255
@@ -124,19 +114,11 @@ function xVermin:hex2rgb(hex)
 	return {r = r, g = g, b = b, a = 1}
 end
 
-local function frameExists(frame)
-	if frame:GetName() then
-		return 'true'
-	else
-		return 'false'
-	end
-end
-
 local keywords = {
 	['and'] = 'and',
 	['or'] = 'or'
 }
-function xVermin:CheckIfLoadedWithTimer(condition, callback)
+xVermin.CheckIfLoadedWithTimer = function(condition, callback)
 	local count = 0
 
 	C_Timer.NewTicker(
@@ -190,12 +172,29 @@ function xVermin:CheckIfLoadedWithTimer(condition, callback)
 	)
 end
 
-function xVermin:HasValue(tab, val)
+xVermin.HasValue = function(tab, val)
 	for index, value in ipairs(tab) do
 		if value == val then
 			return true
 		end
 	end
-
 	return false
+end
+
+xVermin.IfUnitIsCastingInteruptable = function(unit)
+	local name_casting, text, texture, startTimeMS, endTimeMS, isTradeSkill, castID, notInterruptible_casting, spellId = UnitCastingInfo(unit)
+	local name_channeling, text, texture, startTimeMS, endTimeMS, isTradeSkill, notInterruptible_chanelling, spellId = UnitChannelInfo(unit)
+	if (name_casting ~= nil and not notInterruptible_casting) or (name_channeling ~= nil and not notInterruptible_chanelling) then
+		return true
+	end
+	return false
+end
+
+xVermin.GetRange = function(unit)
+	if UnitExists(unit) then
+		minRange, maxRange = RangeCheck:GetRange(unit)
+		return minRange, maxRange
+	else
+		return -1, -1
+	end
 end

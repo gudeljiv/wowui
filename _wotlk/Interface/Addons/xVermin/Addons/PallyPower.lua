@@ -1,7 +1,7 @@
 local _, xVermin = ...
 local ib, numQuests
 
-xVermin:CheckIfLoadedWithTimer(
+xVermin.CheckIfLoadedWithTimer(
 	'PallyPowerBlessingsFrame',
 	function()
 		if not PallyPowerBlessingsFrame.SetBackdrop then

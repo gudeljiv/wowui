@@ -163,11 +163,11 @@ skills['revenge'] = '#7bd079'
 -- 		}
 
 -- 		-- print('target % ', data.target.xp.current)
--- 		-- RotationFrame6:SetBackdropColor(xVermin:hex2rgb(skills.revenge).r, xVermin:hex2rgb(skills.revenge).g, xVermin:hex2rgb(skills.revenge).b)
--- 		-- print(skills.revenge, xVermin:hex2rgbraw(skills.revenge).r, xVermin:hex2rgbraw(skills.revenge).g, xVermin:hex2rgbraw(skills.revenge).b)
+-- 		-- RotationFrame6:SetBackdropColor(xVermin.HEX2RGB(skills.revenge).r, xVermin.HEX2RGB(skills.revenge).g, xVermin.HEX2RGB(skills.revenge).b)
+-- 		-- print(skills.revenge, xVermin.HEX2RGBraw(skills.revenge).r, xVermin.HEX2RGBraw(skills.revenge).g, xVermin.HEX2RGBraw(skills.revenge).b)
 
 -- 		-- if IsSpellInRange('Revenge', 'target') == 1 and select(1, IsUsableSpell('Revenge')) then
--- 		-- 	RotationFrame6:SetBackdropColor(xVermin:hex2rgb(skills.revenge))
+-- 		-- 	RotationFrame6:SetBackdropColor(xVermin.HEX2RGB(skills.revenge))
 -- 		-- else
 -- 		-- 	RotationFrame6:SetBackdropColor(1, 1, 1, 1)
 -- 		-- end
