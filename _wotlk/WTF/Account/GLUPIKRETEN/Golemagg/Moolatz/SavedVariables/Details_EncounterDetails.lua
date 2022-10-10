@@ -1,5 +1,16 @@
 
 EncounterDetailsDB = {
+	["emotes"] = {
+		{
+			["boss"] = "Vazruden the Herald",
+		}, -- [1]
+		{
+			["boss"] = "Omor the Unscarred",
+		}, -- [2]
+		{
+			["boss"] = "Watchkeeper Gargolmar",
+		}, -- [3]
+	},
 	["encounter_spells"] = {
 		[30637] = {
 			["school"] = 32,
@@ -93,12 +104,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Omor the Unscarred",
 		},
-		[23972] = {
-			["school"] = 4,
+		[48210] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Liquid Fire",
+			["source"] = "Watchkeeper Gargolmar",
 		},
 		[19130] = {
 			["school"] = 1,
@@ -116,14 +127,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nazan",
 		},
-		[30621] = {
-			["school"] = 1,
+		[14032] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Bonechewer Ravener",
+			["source"] = "Hellfire Watcher",
 		},
 		[30927] = {
 			["school"] = 4,
@@ -191,33 +203,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Shattered Hand Warhound",
 		},
-		[14032] = {
-			["school"] = 32,
+		[30621] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Hellfire Watcher",
+			["source"] = "Bonechewer Ravener",
 		},
-		[48210] = {
-			["school"] = 32,
+		[23972] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_HEAL"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Watchkeeper Gargolmar",
+			["source"] = "Liquid Fire",
 		},
-	},
-	["emotes"] = {
-		{
-			["boss"] = "Vazruden the Herald",
-		}, -- [1]
-		{
-			["boss"] = "Omor the Unscarred",
-		}, -- [2]
-		{
-			["boss"] = "Watchkeeper Gargolmar",
-		}, -- [3]
 	},
 }

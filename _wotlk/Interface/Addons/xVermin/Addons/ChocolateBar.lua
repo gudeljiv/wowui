@@ -1,6 +1,6 @@
 local _, xVermin = ...
 
-xVermin:CheckIfLoadedWithTimer(
+xVermin.CheckIfLoadedWithTimer(
 	'ChocolateBar1 and CustomContainer_1',
 	function()
 		ChocolateBar1:ClearAllPoints()
@@ -9,7 +9,7 @@ xVermin:CheckIfLoadedWithTimer(
 	end
 )
 
-xVermin:CheckIfLoadedWithTimer(
+xVermin.CheckIfLoadedWithTimer(
 	'ChocolateBar2 and CustomContainer_1',
 	function()
 		ChocolateBar2:ClearAllPoints()

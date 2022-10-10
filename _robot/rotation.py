@@ -23,6 +23,7 @@ from win32api import GetSystemMetrics
 
 combat = False
 debug = False
+mill = False
 dprint = False
 pause = True
 wow_class = "warrior"
@@ -55,11 +56,14 @@ print("Script loaded and ready.", "Rotation is paused.", "Monitor:", monitor, ab
 
 
 def on_press(key):
-    global debug
-    global dprint
-    global pause
+    global debug, dprint, pause, mill
+
+    # print(key)
 
     try:
+        if key == keyboard.Key.pause:
+            mill = not mill
+
         if key == keyboard.Key.f7:
             debug = not debug
             print("debug:", debug)
@@ -201,3 +205,7 @@ with keyboard.Listener(on_press=on_press) as listener:
                 time.sleep(0.5)
                 mss.tools.to_png(main_image.rgb, main_image.size, output=grabbed_image)
                 print(grabbed_image, main, combat, interrupt, active_window, f"Finish in: {round(1000 * (time.time() - start_time))} ms ")
+
+            if mill:
+                pyautogui.hotkey("y")
+                time.sleep(0.5)

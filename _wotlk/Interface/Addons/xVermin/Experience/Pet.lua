@@ -92,13 +92,13 @@ local function UpdateBarValueAndColor(self, event)
 	if UnitExists('pet') then
 		CurrentXP, MaxXP = GetPetExperience()
 		percent = floor((CurrentXP / MaxXP) * 100)
-		r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
+		r, g, b = xVermin.ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
 		PetXP.XPbar:SetMinMaxValues(0, MaxXP)
 		PetXP.XPbar:SetValue(CurrentXP)
-		PetXP.XPbar.Value:SetText(xVermin:FormatNumber(CurrentXP, ','))
-		-- PetXP.XPbar.UntilLevel:SetText(xVermin:FormatNumber(MaxXP - CurrentXP, ",") .. " / " .. xVermin:FormatNumber(MaxXP, ","))
-		PetXP.XPbar.UntilLevel:SetText(xVermin:FormatNumber(MaxXP - CurrentXP, ','))
-		PetXP.XPbar.Percent:SetText(xVermin:Round(percent) .. '%')
+		PetXP.XPbar.Value:SetText(xVermin.FormatNumber(CurrentXP, ','))
+		-- PetXP.XPbar.UntilLevel:SetText(xVermin.FormatNumber(MaxXP - CurrentXP, ",") .. " / " .. xVermin.FormatNumber(MaxXP, ","))
+		PetXP.XPbar.UntilLevel:SetText(xVermin.FormatNumber(MaxXP - CurrentXP, ','))
+		PetXP.XPbar.Percent:SetText(xVermin.Round(percent) .. '%')
 		PetXP.XPbar:SetStatusBarColor(r, g, b)
 	end
 end

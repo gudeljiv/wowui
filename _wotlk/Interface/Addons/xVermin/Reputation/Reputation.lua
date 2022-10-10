@@ -200,7 +200,7 @@ local function UpdateBarValueAndColor()
 			_G[value.frameStatusBar]:SetStatusBarColor(color.r, color.g, color.b, 1)
 			_G[value.frameStatusBar].Value:SetText(standingValue .. '/' .. topValue)
 			_G[value.frameStatusBar].FactionName:SetText(value.FactionInfo.name)
-			_G[value.frameStatusBar].Value2:SetText(xVermin:Round(standingValue / topValue * 100) .. '%')
+			_G[value.frameStatusBar].Value2:SetText(xVermin.Round(standingValue / topValue * 100) .. '%')
 			_G[value.frameStatusBar].FactionName2:SetText(standing)
 
 			if not _G[value.frameStatusBar].Value2:IsVisible() then
@@ -247,8 +247,7 @@ local function UpdateBars(self, event)
 
 	local numFactions = GetNumFactions()
 	while factionIndex <= numFactions do
-		local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus =
-			GetFactionInfo(factionIndex)
+		local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus = GetFactionInfo(factionIndex)
 
 		if isHeader and isCollapsed then
 			ExpandFactionHeader(factionIndex)

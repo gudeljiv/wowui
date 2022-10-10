@@ -16,7 +16,7 @@ ReputationWatchBar:HookScript(
 	end
 )
 
-xVermin:CheckIfLoadedWithTimer(
+xVermin.CheckIfLoadedWithTimer(
 	'StanceButton1',
 	function()
 		StanceButton1:ClearAllPoints()
@@ -24,7 +24,7 @@ xVermin:CheckIfLoadedWithTimer(
 	end
 )
 
-xVermin:CheckIfLoadedWithTimer(
+xVermin.CheckIfLoadedWithTimer(
 	'MultiBarBottomLeft',
 	function()
 		MultiBarBottomLeftButton1:ClearAllPoints()
@@ -32,7 +32,7 @@ xVermin:CheckIfLoadedWithTimer(
 	end
 )
 
-xVermin:CheckIfLoadedWithTimer(
+xVermin.CheckIfLoadedWithTimer(
 	'MultiBarRight',
 	function()
 		MultiBarRightButton1:SetScale(0.8)
@@ -53,7 +53,7 @@ xVermin:CheckIfLoadedWithTimer(
 	end
 )
 
-xVermin:CheckIfLoadedWithTimer(
+xVermin.CheckIfLoadedWithTimer(
 	'MultiBarLeft',
 	function()
 		MultiBarLeftButton1:SetScale(0.8)
@@ -74,7 +74,7 @@ xVermin:CheckIfLoadedWithTimer(
 	end
 )
 
-xVermin:CheckIfLoadedWithTimer(
+xVermin.CheckIfLoadedWithTimer(
 	'PetActionButton1',
 	function()
 		PetActionButton1:Show()
@@ -85,7 +85,7 @@ xVermin:CheckIfLoadedWithTimer(
 	end
 )
 
-xVermin:CheckIfLoadedWithTimer(
+xVermin.CheckIfLoadedWithTimer(
 	'PossessButton1',
 	function()
 		PossessButton1:Show()

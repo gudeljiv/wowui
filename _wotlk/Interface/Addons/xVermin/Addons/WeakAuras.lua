@@ -15,7 +15,7 @@ function print_children(frame)
 	end
 end
 
--- xVermin:CheckIfLoadedWithTimer(
+-- xVermin.CheckIfLoadedWithTimer(
 -- 	WeakAurasFrame,
 -- 	function()
 -- 		print_children(WeakAurasFrame)

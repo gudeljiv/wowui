@@ -1,6 +1,6 @@
 local _, xVermin = ...
 
-xVermin:CheckIfLoadedWithTimer(
+xVermin.CheckIfLoadedWithTimer(
 	'RXPFrame',
 	function()
 		if not RXPFrame.SetBackdrop then

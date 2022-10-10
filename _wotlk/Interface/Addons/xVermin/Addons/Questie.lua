@@ -3,7 +3,7 @@ local ib, numQuests
 
 local width = 235
 
-xVermin:CheckIfLoadedWithTimer(
+xVermin.CheckIfLoadedWithTimer(
 	'Questie_BaseFrame',
 	function()
 		if not Questie_BaseFrame.SetBackdrop then
