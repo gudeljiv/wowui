@@ -4,7 +4,8 @@ local function Add_Item_Id(tooltip)
 	if (itemLink ~= nil) then
 		local itemId, _, _, _, _, _, _ = GetItemInfoInstant(itemLink)
 		if itemId then
-			tooltip:AddLine('Item ID: ' .. itemId)
+			tooltip:AddLine(' ')
+			tooltip:AddLine(_G.ORANGE_FONT_COLOR_CODE .. 'Item ID: ' .. _G.WHITE_FONT_COLOR_CODE .. itemId)
 		end
 	end
 end
