@@ -2471,7 +2471,12 @@ function private.FSMCreate()
 				assert(not TSM.IsWowClassic() or index)
 				-- buy the auction
 				local buyout = context.findAuction:GetBuyouts()
-				assert(not TSM.IsWowClassic() or buyout == select(10, GetAuctionItemInfo("list", index)))
+				if TSM.IsWowClassic() and buyout ~= select(10, GetAuctionItemInfo("list", index)) then
+					-- The list of auctions changed, so rescan
+					local _, rawLink = context.findAuction:GetLinks()
+					Log.PrintfUser(L["Failed to buy auction of %s."], rawLink)
+					return "ST_RESULTS"
+				end
 				local future = context.auctionScan:PlaceBidOrBuyout(index, buyout, context.findAuction, quantity)
 				if future then
 					future:SetScript("OnDone", private.FSMFutureOnDone)
@@ -2488,6 +2493,7 @@ function private.FSMCreate()
 				end
 			end)
 			:AddTransition("ST_BUYING")
+			:AddTransition("ST_RESULTS")
 			:AddTransition("ST_INIT")
 			:AddEvent("EV_FUTURE_DONE", function(context)
 				assert(context.pendingFuture)
