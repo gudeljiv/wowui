@@ -35,13 +35,13 @@ xVermin.AOE = function(range)
 						local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
 						local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
 						if defensive or (battle and IsEquippedItemType('Shields')) then
-							if not IsSpellInRange('Shield Bash', 'target') or GetSpellCooldown('Shield Bash') then
+							if IsSpellInRange('Shield Bash', 'target') == 0 or select(2, GetSpellCooldown('Shield Bash')) > 0 then
 								rangecasting = rangecasting + 1
 							end
 						end
 					end
 					if (xVermin.Class == 'DEATHKNIGHT') then
-						if not IsSpellInRange('Mind Freeze', 'target') or GetSpellCooldown('Mind Freeze') then
+						if IsSpellInRange('Mind Freeze', 'target') == 0 or select(2, GetSpellCooldown('Mind Freeze')) > 0 then
 							rangecasting = rangecasting + 1
 						end
 					end

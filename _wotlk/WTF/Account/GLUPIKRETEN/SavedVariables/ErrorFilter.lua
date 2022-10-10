@@ -4,6 +4,7 @@ ErrorFilterDB = {
 		["Mxzq - Golemagg"] = "Default",
 		["Vermina - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
+		["Tudum - Ashbringer"] = "Default",
 		["Battlearm - Golemagg"] = "Default",
 		["Moolatz - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",

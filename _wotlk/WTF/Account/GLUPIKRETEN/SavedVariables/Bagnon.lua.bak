@@ -6,42 +6,28 @@ Bagnon_Sets = {
 	},
 	["fridgeColor"] = {
 	},
-	["displayCraft"] = false,
-	["engineerColor"] = {
-	},
 	["inscribeColor"] = {
 	},
+	["engineerColor"] = {
+	},
+	["displayCraft"] = false,
 	["herbColor"] = {
 	},
-	["glowUnusable"] = true,
-	["displayMail"] = false,
-	["displayBank"] = false,
 	["soulColor"] = {
 	},
+	["displayMail"] = false,
+	["glowPoor"] = false,
+	["glowUnusable"] = true,
 	["closeBank"] = false,
 	["glowQuest"] = true,
-	["displayAuction"] = false,
+	["normalColor"] = {
+	},
 	["quiverColor"] = {
 	},
 	["glowQuality"] = true,
 	["reagentColor"] = {
 	},
 	["gemColor"] = {
-	},
-	["enchantColor"] = {
-	},
-	["glowAlpha"] = 0.5,
-	["emptySlots"] = true,
-	["glowNew"] = false,
-	["normalColor"] = {
-	},
-	["profiles"] = {
-	},
-	["mineColor"] = {
-	},
-	["displayTrade"] = false,
-	["version"] = "9.2.2",
-	["keyColor"] = {
 	},
 	["global"] = {
 		["inventory"] = {
@@ -81,10 +67,10 @@ Bagnon_Sets = {
 			},
 			["hiddenRules"] = {
 			},
-			["search"] = true,
-			["y"] = -293.1571044921875,
-			["x"] = -408.98974609375,
 			["sort"] = true,
+			["bagBreak"] = false,
+			["x"] = -408.98974609375,
+			["search"] = true,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -94,7 +80,7 @@ Bagnon_Sets = {
 			["broker"] = false,
 			["options"] = true,
 			["bagToggle"] = true,
-			["bagBreak"] = false,
+			["y"] = -293.1571044921875,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -190,7 +176,7 @@ Bagnon_Sets = {
 				"all/souls", -- [21]
 				"equip/ammo", -- [22]
 			},
-			["point"] = "BOTTOMLEFT",
+			["point"] = "TOPRIGHT",
 			["hiddenBags"] = {
 			},
 			["color"] = {
@@ -211,17 +197,31 @@ Bagnon_Sets = {
 				1, -- [4]
 			},
 			["bagBreak"] = false,
-			["x"] = 673.6095581054688,
+			["x"] = -761.50146484375,
 			["search"] = true,
 			["broker"] = false,
-			["y"] = 378.2110900878906,
+			["y"] = -294.532470703125,
 			["hiddenRules"] = {
 			},
 			["itemScale"] = 1,
 			["scale"] = 1,
 		},
 	},
+	["glowAlpha"] = 0.5,
+	["emptySlots"] = true,
+	["keyColor"] = {
+	},
+	["displayAuction"] = false,
+	["profiles"] = {
+	},
+	["mineColor"] = {
+	},
+	["displayTrade"] = false,
+	["version"] = "9.2.2",
+	["glowNew"] = false,
+	["enchantColor"] = {
+	},
 	["colorSlots"] = false,
-	["glowPoor"] = false,
+	["displayBank"] = false,
 	["displayScrapping"] = false,
 }

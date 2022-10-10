@@ -1,3 +1,7 @@
+VER 3 0000000000000012 " " "132143"
+#showtooltip
+/startattack
+END
 VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use Fel Sharpening Stone
@@ -14,10 +18,6 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /castsequence Find Herbs,Find Minerals
 END
-VER 3 0000000000000012 " " "132143"
-#showtooltip
-/startattack
-END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:0
@@ -25,8 +25,8 @@ VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:33454
-/castsequence [combat] reset=combat item:22829
+/use [nocombat]item:117
+/castsequence [combat] reset=combat 
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
@@ -39,13 +39,13 @@ VER 3 0000000000000016 "Mill" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:33454
+#showtooltip item:4536
 /cast feed pet
-/use item:33454
+/use item:4536
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:22829
+/use item:0
 END
 VER 3 0000000000000017 "Prsp" "Inv_misc_questionmark"
 #showtooltip item:0
@@ -57,5 +57,6 @@ VER 3 0000000000000014 "Stone" "Inv_misc_questionmark"
 /use item:0
 END
 VER 3 0000000000000010 "TEST" "INV_MISC_QUESTIONMARK"
-/run LBI()
+/run BuffButton1:Show()
+/run BuffButton1:SetText("asd")
 END

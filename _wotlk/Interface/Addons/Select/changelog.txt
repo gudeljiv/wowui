@@ -1,0 +1,307 @@
+10/04/2022 version 3.4.0
+- Update for Dragonflight client support
+- Beta/PTR users will need to load out of date addons for this to work until the Dragonflight Pre-Patch
+- Added no:<search> filter to exclude items and spells added by previous filters. eg. /select toy:Hearthstone, no:Card will remove the Autographed Hearthstone Card from the flyout
+- Select will be a bit more assertive on control of the icon for /select macros to fix issues with macro icons not updating
+- Removed broken 'Don't Override #showtooltip' option
+
+Note: On Dragonflight clients, two more characters are needed for the macro length "tax". If your /select macros already hit the 255 macro length, they may not function as expected. Shadowlands and Classic clients should not be affected.
+
+09/03/2022 version 3.3.5
+- Fix for retail vs client detection
+
+09/02/2022 version 3.3.4
+- Fix for addition of WotLK WOW_PROJECT_ID
+
+09/01/2022 version 3.3.3
+- toc update for WotLK Classic
+
+08/16/2022 version 3.3.2
+- toc update for 9.2.7 patch
+
+06/08/2022 version 3.3.1
+- Classic and BCC: Added alias 'r' for ranks. /select r:Flash Heal is now equivalent to /select ranks:Flash Heal
+
+06/05/2022 version 3.3.0
+- Reworked how toys are cached
+- Fix for select causing toy journal filters to invert after 9.2.5 patch
+- Fix for toy:favorites disappearing when filters hide favorite toys on login/reload
+- Classic and BCC: Fix for unlearned ranks of spells appearing in flyouts
+
+05/31/2022 version 3.2.3
+- toc update for 9.2.5 patch
+
+05/22/2022 version 3.2.2
+- Added wago and curse project IDs to toc
+
+05/12/2022 version 3.2.1
+- Fix to make wowup recognize the wowinterface provider. (May require a rescan of folders in wowup)
+
+04/28/2022 version 3.2.0
+- Added rows:<number> keyword to specify how many rows/columns to make the flyout. For instance '/select spell:teleport, rows:1' will make the flyout one skinny row of buttons rather than multiple rows/columns.
+- Updated interface options panel to include rows:<number> help.
+- Option 'Don't Override #showtooltip' will now prompt for a reload, since changing this option requires a reload.
+- Updated toc for Classic and BCC clients.
+
+02/22/2022 version 3.1.5
+- Update toc for 9.2 patch
+
+11/02/2021 version 3.1.4
+- Update toc for 9.1.5 patch
+
+09/02/2021 version 3.1.3
+- Potential fix for ranks filter on classic clients when a spell has no rank.
+
+08/22/2021 version 3.1.2
+- Added a search cache to improve performance when equipslot, item, spell, mount or toy search filters are used.
+- Initialization now waits for the data load pass of the cache to complete.
+- Rather than waiting until you need to use a flyout (or entering combat during which flyouts can't be changed), flyouts are now filled slowly over time upon login to cache them.
+
+06/29/2021 version 3.1.1
+- Potential fix for rank 10+ appearing before rank 9 in ranks:search flyouts on BCC/Classic clients.
+- Updated toc for 9.1.0 patch
+
+06/19/2021 version 3.1.0
+- Added ranks:search filter for Classic Era and The Burning Crusade Classic Clients (not Retail), to add all ranks of a spell to a flyout. /select ranks:Curse of Agony will add all ranks of spells containing Curse of Agony in its name to the flyout. (If you've turned off the option Show Subtext on Spell Tooltips, you may want to turn it back on if you use this filter; so ranks display in the tooltips.)
+- Updated interface options panel for the new ranks:search, made the retail-only (and new classic-only) notifications a different color to stand out, and renamed Retail to Modern clients.
+- Some global references made local
+
+05/18/2021 version 3.0.9
+- Update for The Burning Crusade Classic
+
+03/13/2021 version 3.0.8
+- Updated toc for 9.0.5 patch
+
+12/12/2020 version 3.0.7
+- Fix for ranged weapons not being offered in /select equipslot:16 on retail clients.
+
+12/07/2020 version 3.0.6
+- Fix for m:mountID filter not working.
+
+12/05/2020 version 3.0.5
+- Fix for @cursor not working with /select macros.
+
+10/24/2020 version 3.0.4
+- The toy filter now accepts itemIDs. /select toy:156833 will now select Katy's Stampwhistle if you have it.
+
+10/13/2020 version 3.0.3
+- Shadowlands pre-patch release.
+
+09/28/2020 version 3.0.2
+- A more definite fix for toys not loading when multiple addons are data caching stuff on login. Thanks Cellanoid for your help debugging this. :D
+- Fix for newly-created /select macros not saving their initial default value without something being actively selected.
+
+09/24/2020 version 3.0.1
+- Potential fix for issues caching toys on cold login and when new toys learned.
+
+09/02/2020 version 3.0.0
+Select has been completely rewritten. Changes include:
+- This version supports Retail (8.3), Shadowlands (9.0) and Classic (1.13) clients. Elements that aren't available on Classic (such as mount:search, toy:search and profession:search) will not be loaded or enabled. Note: for Shadowlands beta/ptr or Classic clients, you'll need to load out of date addons.
+- New filter equipslot:<slot> will allow you to select and equip items for the given slot. For instance: /select equipslot:13 will let you swap trinkets to the top trinket slot on a right-click of the macro, and use the top trinket on a left-click or keybind of the macro.
+- You can choose which direction a flyout opens with flyout:<direction> in the macro. For instance /select equipslot:14, flyout:left will open a flyout to the left of the button containing the macro.
+- To select items or spells with commas in their name, surround them with quotes, such as: /select Magic Rooster, "Yulei, Daughter of Jade", Core Hound.
+- Right click will select an item or spell from the flyout menu now.
+- The /select command by itself will summon the options window.
+- The options window has been updated to reflect new settings, filters and more information on usage.
+- Added new option 'Use Flat Style' to display flyouts and their buttons in a flatter style.
+- Added new option 'Show Subtext on Spell Tooltips'. When spells have a subtext such as Heal(Rank 1) or Polymorph(Turtle) it will add the subtext to tooltips. This is default enabled in Classic WoW where spell ranks play a greater role.
+- Added new option 'Select Only Soulbound Equipslots' to not include bind-on-equip gear that you loot into select flyouts.
+- Added new option 'Use Item Or Spell On Right Click' that will make right-clicks mimic the behavior of the Alt modifier, and use an item or spell as it's selected. Note: for equipslot:<slot>, selecting will always equip the item regardless of click or modifier.
+- If the option 'Use But Don't Select with Alt' is enabled, this will also apply to the Right Click if 'Use With Right Click' is enabled.
+- When units are involved in conditionals (out of range, invalid, etc), the macro should now reflect that unit during the condition (if the action button/bars supports this behavior) before the action is used.
+- Items in the flyout now have a colored border to reflect their rarity, if applicable.
+- Open flyouts can now be dismissed with the ESCape key (or whatever you've mapped to the game menu) while in combat.
+- Passive spells will no longer show in spell:search filters (but you can add them separately to a /select if you still want them).
+- When a filter:search is used, items and spells are added to the flyout in alphabetical order for that specific filter:search. For instance "/select Magic Rooster, type:Quest, spell:Portal" will add the Magic Rooster first, then all quest items sorted alphabetically, then all Portal spells sorted alphabetically last.
+- Mounts found as the result of a mount:search that are not currently summonable will now add to flyouts, such as the Darkwater Skate that only works under water.
+- Added new option 'Only Select Summonable Mounts' to remove these mounts that can't be currently summoned from mount:search flyouts.
+- Flyout button creation is deferred until needed.
+- Fix for some default flyout spells like spell:Polymorph only picking one spell.
+- Removed the need to aggressively set attributes or build flyouts.
+- Flyouts that cease to be used are no longer filled.
+
+Notes for users of Select 2.x:
+- Options like 'Use But Don't Select with Alt' will carry over from 2.x to 3.x.
+- All existing /select macros should continue to work without change.
+- After updating from 2.x to 3.x, the initial loaded selection from every flyout will reset to the first available item or spell across all characters. This one-time reset is due way selected items and spells are saved.
+- If you're updating this manually, you will need to exit the game completely before updating. There are new files that won't be recognized if added while logged into the game.
+- This version has considerably changed the files/folders in the Select addon folder. If you feel comfortable doing it, you can delete the old one before installing this. But the old files are harmless if they remain, they will not be loaded. Auto-updating clients may possibly do this for you too.
+
+02/01/2020 version 2.5.3
+- Updated toc for 8.3 patch
+
+12/24/2018 version 2.5.2
+- If "UberTooltips" cvar is disabled, then all additional tooltip info from Select is no longer added
+- Added option "Don't Add Macro To Tooltip" in interface options to not append macro tooltips with the /select command used in the macro
+- Updated toc for 8.1 patch
+
+08/26/2018 version 2.5.1
+- Added mount:aquatic (and mount:favaquatic) keywords to select aquatic mounts (water striders, seahorses, etc)
+
+07/01/2018 version 2.5.0
+- NOTE: This version is for Battle for Azeroth only
+- Updated for Battle for Azeroth
+
+02/07/2018 version 2.4.13
+- Fix for mount m:<mountID|spellID> filter
+
+02/07/2018 version 2.4.12
+- Optimized mount filters
+
+01/21/2018 version 2.4.11
+- Fix for potential mini lockup if you have many select macros and enter combat for the first time: unused flyouts are created over time after login instead of all at once as you enter combat for the first time.
+- Fix for search in the ToyBox not working while Select is enabled.
+- Fix for toys not found when newer filters (expansions, unusuable) hiding them.
+
+08/29/2017 version 2.4.10
+- toc update for 7.3 patch
+
+04/24/2017 version 2.4.9
+- A better fix for icons reverting to a red question mark.
+
+04/09/2017 version 2.4.8
+- Fix for icons reverting to a red question mark when zoning. (Let me know if any are still experiencing this; could be some timing issue involved too.)
+
+03/28/2017 version 2.4.7
+- Fix for other addons putting non-strings into UISpecialFrames. ಠ_ಠ
+- toc update for 7.2 patch
+
+10/24/2016 version 2.4.6
+- toc update for 7.1 patch
+
+6/4/2016 version 2.4.5
+- Fix for attempt to cache empty bag slots.
+- Fix for not all spell tabs checked in spell filters.
+- Fix for mount:spellID filters
+
+5/27/16 version 2.4.4
+- Fix for Cooldown_SetTimer renamed to Cooldown_Set
+
+5/17/16 version 2.4.3
+- Fix for Legion mount API changes
+
+5/14/16 version 2.4.2
+- Fix for cold login issues: toys not being cached, macro icons not initialized properly and lua error
+
+5/13/16 version 2.4.1
+- Fix for source filters getting unchecked on login and when toys change
+
+5/13/16 version 2.4.0
+- toc update for 7.0 Legion Beta
+- Fix for renamed toybox API calls
+- Fix for cooldown anchors going bonkers
+
+3/17/16 version 2.3.13
+- mount:<number> (or m:<number>) will add a mount by spellID
+- Fix for lua error when flyout is empty and action button undefined
+- Fix for lua error when flyout is a single number
+
+12/22/15 version 2.3.12
+- Fix for specific keywords not doing an exact match, causing mount:land to only list favorite land mounts (and mount:flying to list only favorite flying mounts)
+
+11/29/15 version 2.3.11
+- Fix for mount filters that don't match their spell name (ie chauffeured mekgineer's chopper vs summon chauffeur)
+
+6/22/15 version 2.3.10
+- toc update for 6.2
+
+3/30/15 version 2.3.9
+- Fix for spells with colons in their name (like Power Word: Shield, Teleport: Moonglade)
+
+2/28/15 version 2.3.8
+- Fix for toy sources being cleared on login
+
+2/24/15 version 2.3.7
+- toc update for 6.1
+
+10/31/14 version 2.3.6
+- Fix for toy searches failing after zoning (removed cache wipe)
+- Removed checks for WoD client
+
+10/14/14 version 2.3.5
+- 6.0 patch
+
+9/30/14 version 2.3.4
+- Flyouts removed from UISpecialFrames on entering combat, prohibited from joining UISpecialFrames during combat
+
+9/30/14 version 2.3.3
+- moved copying of flyout->action attributes from unsecure OnAttributeChanged to secure state driver snippet
+
+9/23/14 version 2.3.2
+- Toybox item support toy:favorite,any,partial search:keyword
+
+9/4/14 version 2.3.1,
+- Fix for lua error when attempting to show tooltip of a spell no longer known
+
+8/29/14 version 2.3.0,
+- Rewrite
+- All /selects are state-driven
+- Searches case insensitive
+- Options panel reworked
+- Full WoD mount support
+
+7/21/14 version 2.2.0,
+- Initial fixes for WoD beta
+
+unreleased version 2.1.6,
+- made index,actionType local in Select_Menu.lua SetAction hooksecurefunc
+
+2/23/14 version 2.1.5,
+- Fix for handling of invalid/missing [condition]als
+
+2/20/14 version 2.1.4,
+- Fix for hyphenated item:searches
+
+1/14/14 version 2.1.3,
+- Fix for mounts not completely loading on login
+
+12/26/13 version 2.1.2,
+- Frames join UISpecialFrames only when they're shown (out of combat)
+
+9/11/13 version 2.1.1,
+- toc update for 5.4
+
+6/22/13 version 2.1.0,
+- State driver added
+- Flyouts indexed by their list instead of their macro
+- DontSelectWithAlt option
+- Item cache added
+
+5/19/13 version 2.0.13,
+- toc update
+- summonpet works in combat
+- Menus at top of screen grow downward
+
+5/5/13 version 2.0.12,
+- Added mount:favorites filter if Select Favorite Mounts loaded
+
+4/18/13 version 2.0.11,
+- BAG_UPDATE unregistered if all menus populated
+- Added Select_PerCharacter_Settings to restore initial actions to last attributes
+- Removed profiling tools
+
+4/06/13 version 2.0.10,
+- Removed G_PetRoster
+- Added profiling tools
+
+3/28/13 version 2.0.9,
+- Removed internal pet system
+- Added G_PetRoster
+
+2/18/13 version 2.0.8,
+- Added macrotext support
+- Centralized timer system
+- Internal pet system
+
+1/26/13 version 2.0.7,
+- Added tooltips to /select macros
+
+9/23/12 version 2.0.6,
+- Added nil,1 to GetItemCount in parent:OnShow
+- Added throttled UpdateMacroIcons on BAG_UPDATE, PLAYER_EQUIPMENT_CHANGED
+
+9/21/12 version 2.0.5,
+- Rewrite release
+
+11/08/08 version 1.0.0,
+- Initial release

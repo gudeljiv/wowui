@@ -22,16 +22,16 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["custom"] = 0,
-							["classe"] = "SHAMAN",
 							["aID"] = "4742-03A2C136",
+							["classe"] = "SHAMAN",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 42.003207,
+							["damage_taken"] = 0.003207,
+							["dps_started"] = false,
+							["total"] = 42.003207,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1665142831,
-							["on_hold"] = false,
 							["tipo"] = 1,
 							["nome"] = "Pitchwise",
 							["spells"] = {
@@ -72,10 +72,10 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["colocacao"] = 1,
 							["last_event"] = 1665142830,
-							["damage_taken"] = 0.003207,
+							["on_hold"] = false,
 							["start_time"] = 1665142828,
 							["serial"] = "Player-4742-03A2C136",
-							["total"] = 42.003207,
+							["end_time"] = 1665142831,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
@@ -89,9 +89,9 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Mottled Boar",
 							["aID"] = "3098",
+							["nome"] = "Mottled Boar",
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 5.007722,
@@ -143,7 +143,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1665142857,
 							["serial"] = "Creature-0-4469-1-21560-3098-0000400DDE",
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -165,14 +165,14 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["tipo"] = 4,
+							["aID"] = "4742-03A2C136",
 							["nome"] = "Pitchwise",
 							["grupo"] = true,
 							["pets"] = {
 							},
 							["last_event"] = 0,
-							["aID"] = "4742-03A2C136",
 							["classe"] = "SHAMAN",
+							["tipo"] = 4,
 							["serial"] = "Player-4742-03A2C136",
 							["spell_cast"] = {
 								[403] = 2,
@@ -200,11 +200,11 @@ _detalhes_database = {
 				["combat_counter"] = 40,
 				["playing_solo"] = true,
 				["totals"] = {
-					46.88086900000014, -- [1]
-					-0.1134609999999015, -- [2]
+					46.85876800000019, -- [1]
+					-0.1936409999994785, -- [2]
 					{
 						0, -- [1]
-						[0] = -0.01720499999998992,
+						[0] = -0.02295599999998992,
 						["alternatepower"] = 0,
 						[6] = -0.01025800000000032,
 						[3] = -0.001927,
@@ -257,6 +257,12 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "13:40:29",
+				["end_time"] = 1269809.531,
+				["combat_id"] = 1,
+				["frags"] = {
+					["Mottled Boar"] = 2,
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -276,11 +282,6 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 1269809.531,
-				["combat_id"] = 1,
-				["spells_cast_timeline"] = {
-				},
-				["data_inicio"] = "13:40:29",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -291,8 +292,7 @@ _detalhes_database = {
 				["start_time"] = 1269806.047,
 				["TimeData"] = {
 				},
-				["frags"] = {
-					["Mottled Boar"] = 2,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [1]
 		},
@@ -414,12 +414,27 @@ _detalhes_database = {
 			["arrow_anchor_x"] = 0,
 			["main_frame_locked"] = true,
 			["row_texture"] = "Glamour2",
+			["author"] = "Details! Team",
+			["font_size"] = 10,
 			["row_color"] = {
 				0.443137254901961, -- [1]
 				0.592156862745098, -- [2]
 				1, -- [3]
 				0.480826139450073, -- [4]
 			},
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 10,
+			["use_spark"] = false,
+			["row_spacement"] = 19,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -431,22 +446,7 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["author"] = "Details! Team",
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 10,
-			["font_size"] = 10,
-			["row_spacement"] = 19,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["y"] = -183.107162475586,
-			["use_spark"] = false,
 			["x"] = -4.001220703125,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
@@ -461,7 +461,6 @@ _detalhes_database = {
 			["scale"] = 1,
 		},
 	},
-	["last_instance_time"] = 0,
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "",
 		["started"] = false,
@@ -473,11 +472,12 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 0,
 		["previous_boss_killed_at"] = 0,
 	},
+	["last_day"] = "10",
 	["announce_damagerecord"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["last_day"] = "07",
+	["last_instance_time"] = 0,
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
@@ -504,7 +504,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["bars_sort_direction"] = 1,
+			["skin_custom"] = "vermin",
 			["use_auto_align_multi_fontstrings"] = true,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -672,13 +672,13 @@ _detalhes_database = {
 				},
 			},
 			["show_sidebars"] = false,
-			["name"] = "vermin",
+			["version"] = 3,
 			["switch_tank_in_combat"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["version"] = 3,
+			["bg_alpha"] = 0,
 			["fontstrings_text4_anchor"] = 4,
 			["plugins_grow_direction"] = 1,
 			["menu_alpha"] = {
@@ -720,7 +720,7 @@ _detalhes_database = {
 			},
 			["backdrop_texture"] = "Details Ground",
 			["hide_in_combat_alpha"] = 0,
-			["micro_displays_locked"] = false,
+			["bars_sort_direction"] = 1,
 			["strata"] = "LOW",
 			["libwindow"] = {
 				["y"] = -20,
@@ -736,15 +736,11 @@ _detalhes_database = {
 					0.07058823529411765, -- [3]
 				},
 			},
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
-			},
 			["menu_anchor_down"] = {
 				16, -- [1]
 				-3, -- [2]
 			},
+			["bars_grow_direction"] = 1,
 			["grab_on_top"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
@@ -762,15 +758,19 @@ _detalhes_database = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["bars_grow_direction"] = 1,
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
+			},
 			["auto_current"] = true,
-			["skin_custom"] = "vermin",
+			["micro_displays_locked"] = false,
 			["switch_damager"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["bg_alpha"] = 0,
+			["name"] = "vermin",
 			["hide_in_combat"] = false,
 			["row_info"] = {
 				["textR_outline"] = false,
@@ -920,9 +920,9 @@ _detalhes_database = {
 		}, -- [1]
 	},
 	["character_data"] = {
-		["logons"] = 24,
+		["logons"] = 26,
 	},
-	["combat_counter"] = 45,
+	["combat_counter"] = 47,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -943,7 +943,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["end_time"] = 1665167099,
+					["total"] = 0.00894,
 					["last_event"] = 0,
 					["classe"] = "SHAMAN",
 					["raid_targets"] = {
@@ -951,9 +951,9 @@ _detalhes_database = {
 					["total_without_pet"] = 0.00894,
 					["serial"] = "Player-4742-03A2C136",
 					["dps_started"] = false,
-					["total"] = 0.00894,
+					["end_time"] = 1665167099,
+					["on_hold"] = false,
 					["last_dps"] = 0,
-					["damage_taken"] = 0.00894,
 					["nome"] = "Pitchwise",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -992,11 +992,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1665167096,
-					["delay"] = 0,
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1665167096,
+					["delay"] = 0,
+					["damage_taken"] = 0.00894,
 				}, -- [1]
 				{
 					["flag_original"] = 68136,
@@ -1008,9 +1008,10 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["aID"] = "3098",
-					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
+					["friendlyfire"] = {
+					},
+					["aID"] = "3098",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004563,
@@ -1018,7 +1019,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1665167099,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.004563,
+					["last_dps"] = 0,
 					["nome"] = "Mottled Boar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -1057,11 +1058,10 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["start_time"] = 1665167096,
 					["delay"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 0.004563,
 				}, -- [2]
 			},
 		}, -- [1]
@@ -1080,7 +1080,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["classe"] = "SHAMAN",
+					["last_event"] = 0,
 					["nome"] = "Pitchwise",
 					["grupo"] = true,
 					["pets"] = {
@@ -1088,8 +1088,8 @@ _detalhes_database = {
 					["spell_cast"] = {
 						[403] = 0,
 					},
-					["last_event"] = 0,
 					["aID"] = "4742-03A2C136",
+					["classe"] = "SHAMAN",
 					["serial"] = "Player-4742-03A2C136",
 					["tipo"] = 4,
 				}, -- [1]

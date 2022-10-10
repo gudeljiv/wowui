@@ -1,0 +1,119 @@
+
+ElvCharacterDB = {
+	["ChatHistoryLog"] = {
+		{
+			"<Guild Group> FATED HC Castle Nathria |||| M+ 10-20 intime and weekly keys!! We do specific key/armor stack!! We have discount for multi run |||| KSM Achivement |||| PVP-Torghast-Leveling |||||| GOLD ONLY!", -- [1]
+			"Sodîth-TarrenMill", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Sodîth-TarrenMill", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			2, -- [11]
+			"Player-1084-0A738F30", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00fe97Sodîth-TarrenMill|r",
+			[51] = 1665389047,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [1]
+		{
+			"WTS  Mythic - M+ ( 15- 30 ) |cffffff00|Hachievement:15690:Player-1084-0A787B59:0:0:0:0:0:0:0:0|h[Shadowlands Keystone Master: Season Four]|h|rTorghast - KSM [ 8x15 ] -  KSH [ 8x20 ]-[25-30] - Armor stack - specific key - Discount for multi runs ", -- [1]
+			"Xhiper-TarrenMill", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Xhiper-TarrenMill", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			3, -- [11]
+			"Player-1084-0A790547", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcXhiper-TarrenMill|r",
+			[51] = 1665389100,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [2]
+		{
+			"|cffffd100|HclubFinder:ClubFinder-1-204284-1084-42290851|h[Guild: Brothers in Blood]|h|r The oldest guild on Tarren Mill. Friendly, Casual and Slighty insane (in a good way). You will be Judged by your actions and attitude, not by your gear.  Join us in building a great Guild/Community we all can share and love!", -- [1]
+			"Wolfrick-TarrenMill", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Wolfrick-TarrenMill", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			6, -- [11]
+			"Player-1084-05D2509D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcWolfrick-TarrenMill|r",
+			[51] = 1665389258,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [3]
+		{
+			"WTS 10+20 in Time with group stack Armor  2400 scor (KSM) (KSH) Ready now  whisper me for more info ", -- [1]
+			"Vansan-TarrenMill", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Vansan-TarrenMill", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			7, -- [11]
+			"Player-1084-08F41309", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa22fc8Vansan-TarrenMill|r",
+			[51] = 1665389278,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [4]
+		{
+			"WTS  Mythic - M+ ( 15- 30 ) |cffffff00|Hachievement:15690:Player-1084-0A787B59:0:0:0:0:0:0:0:0|h[Shadowlands Keystone Master: Season Four]|h|rTorghast - KSM [ 8x15 ] -  KSH [ 8x20 ]-[25-30] - Armor stack - specific key - Discount for multi runs ", -- [1]
+			"Xhiper-TarrenMill", -- [2]
+			"", -- [3]
+			"5. Trade (Services) - City", -- [4]
+			"Xhiper-TarrenMill", -- [5]
+			"", -- [6]
+			42, -- [7]
+			5, -- [8]
+			"Trade (Services) - City", -- [9]
+			0, -- [10]
+			8, -- [11]
+			"Player-1084-0A790547", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff006fdcXhiper-TarrenMill|r",
+			[51] = 1665389239,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [5]
+	},
+	["ChatEditHistory"] = {
+		"/rl", -- [1]
+	},
+	["ConvertKeybindings"] = true,
+}

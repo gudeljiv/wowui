@@ -1,16 +1,16 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[38] = {
+		[58] = {
 		},
 	},
-	["currentStep"] = 38,
+	["currentStep"] = 58,
 	["phase"] = 6,
 	["currentGuideGroup"] = "Horde 1-30",
 	["flightPaths"] = {
 		[80] = "Ratchet, The Barrens",
-		[77] = "Camp Taurajo, The Barrens",
 		[25] = "Crossroads, The Barrens",
+		[77] = "Camp Taurajo, The Barrens",
 		[61] = "Splintertree Post, Ashenvale",
 		[22] = "Thunder Bluff, Mulgore",
 		[23] = "Orgrimmar, Durotar",
@@ -21,18 +21,21 @@ RXPCData = {
 	["hardcore"] = false,
 	["currentGuideName"] = "27-30 Lower Barrens / Thousand Needles",
 	["stepSkip"] = {
-		[26] = true,
-		[37] = true,
-		[29] = true,
+		[30] = true,
 		[8] = true,
 		[16] = true,
 		[9] = true,
 		[18] = true,
 		[36] = true,
-		[30] = true,
+		[37] = true,
+		[40] = true,
 		[11] = true,
 		[22] = true,
+		[44] = true,
 		[12] = true,
+		[26] = true,
+		[53] = true,
+		[29] = true,
 		[5] = true,
 	},
 	["SoM"] = 1,

@@ -1,6 +1,7 @@
-VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [@mouseover, help, nodead][] Purify
+VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/startattack
+/cast Judgement of Light
 END
 VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -34,14 +35,13 @@ END
 VER 3 000000000100000E " " "INV_MISC_QUESTIONMARK"
 #showtooltip 
 /startattack
-/cast Hand of Reckoning
+/cast [@mouseover, harm, nodead][] Hand of Reckoning
 END
 VER 3 000000000100000F " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover, help, nodead][] Hand of Salvation
 END
-VER 3 0000000001000010 " " "INV_MISC_QUESTIONMARK"
-#showtooltip 
-/startattack
-/cast Judgement of Light
+VER 3 000000000100000A " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover, help, nodead][] Purify
 END

@@ -127,11 +127,11 @@ function NeedsFoodBadly:UpdateMacros()
 		end
 	end
 	best.food = self:Sorted(best.food, self.BetterFood)
+	best.drink = self:Sorted(best.drink, self.BetterDrink)
 	best.petfood = self:Sorted(best.petfood, self.BetterPetFood)
 	best.herb = self:Sorted(best.herb, self.BetterHerb)
 	best.ore = self:Sorted(best.ore, self.BetterOre)
 	best.buffFood = self:Sorted(best.buffFood, self.BetterBuffFood)
-	best.drink = self:Sorted(best.drink, self.BetterDrink)
 	best.buffDrink = self:Sorted(best.buffDrink, self.BetterBuffDrink)
 	best.hPotion = self:Sorted(best.hPotion, self.BetterHPotion)
 	best.mPotion = self:Sorted(best.mPotion, self.BetterMPotion)
@@ -212,7 +212,9 @@ function NeedsFoodBadly:Sorted(t, f)
 	for _, v in pairs(t) do
 		table.insert(sortedTable, v)
 	end
-	table.sort(sortedTable, f)
+	if f then
+		table.sort(sortedTable, f)
+	end
 	return sortedTable
 end
 
@@ -302,12 +304,34 @@ function NeedsFoodBadly.BetterFood(a, b)
 		return false
 	end
 
+	if not a.id then
+		return false
+	end
+	if not b.id then
+		return false
+	end
+
 	if a.conj and not b.conj then
 		return true
 	elseif b.conj and not a.conj then
 		return false
 	end
-	-- Percent food is stored as a decimal number, ie "Restores 2% health" is hp=0.02
+
+	-- local il_a = select(4, GetItemInfo(a.id))
+	-- local il_b = select(4, GetItemInfo(b.id))
+	-- local ic_a = GetItemCount(a.id)
+	-- local ic_b = GetItemCount(b.id)
+
+	-- if il_a == il_b then
+	-- 	return ic_a < ic_b
+	-- else
+	-- 	return il_a > il_b
+	-- end
+
+	-- -- return GetItemCount(a.id) <= GetItemCount(b.id)
+
+	-- -- print(a.name, a.hp, b.name, b.hp, a.hp > b.hp)
+
 	a_hp, b_hp = a.hp, b.hp
 	if a_hp < 1 then
 		a_hp = UnitHealthMax('player') * a_hp
@@ -315,10 +339,10 @@ function NeedsFoodBadly.BetterFood(a, b)
 	if b_hp < 1 then
 		b_hp = UnitHealthMax('player') * b_hp
 	end
-	return (a_hp > b_hp) or (a_hp == b_hp and GetItemCount(a.id) <= GetItemCount(b.id))
+	return (a_hp > b_hp) or (a_hp == b_hp and GetItemCount(a.id) < GetItemCount(b.id))
 end
 
-function NeedsFoodBadly.BetterPetFood(a, b)
+function NeedsFoodBadly.BetterDrink(a, b)
 	if not a then
 		return false
 	end
@@ -326,7 +350,21 @@ function NeedsFoodBadly.BetterPetFood(a, b)
 		return false
 	end
 
-	return GetItemCount(a.id) <= GetItemCount(b.id)
+	if (a and a.conj) and (b and not b.conj) then
+		return true
+	elseif (b and b.conj) and (a and not a.conj) then
+		return false
+	end
+
+	a_mp, b_mp = a.mp, b.mp
+	if a_mp < 1 then
+		a_mp = UnitHealthMax('player') * a_mp
+	end
+	if b_mp < 1 then
+		b_mp = UnitHealthMax('player') * b_mp
+	end
+
+	return a_mp > b_mp or (a_mp == b_mp and GetItemCount(a.id) < GetItemCount(b.id))
 end
 
 function NeedsFoodBadly.BetterHerb(a, b)
@@ -355,6 +393,17 @@ function NeedsFoodBadly.BetterOre(a, b)
 	return il_a <= il_b --or GetItemCount(a.id) <= GetItemCount(b.id)
 end
 
+function NeedsFoodBadly.BetterPetFood(a, b)
+	if not a then
+		return false
+	end
+	if not b then
+		return false
+	end
+
+	return GetItemCount(a.id) <= GetItemCount(b.id)
+end
+
 function NeedsFoodBadly.BetterBuffFood(a, b)
 	if not a then
 		return false
@@ -364,30 +413,6 @@ function NeedsFoodBadly.BetterBuffFood(a, b)
 	end
 
 	return a.stam > b.stam or (a.stam == b.stam and GetItemCount(a.id) <= GetItemCount(b.id))
-end
-
-function NeedsFoodBadly.BetterDrink(a, b)
-	if not a then
-		return false
-	end
-	if not b then
-		return false
-	end
-
-	if (a and a.conj) and (b and not b.conj) then
-		return true
-	elseif (b and b.conj) and (a and not a.conj) then
-		return false
-	end
-	a_mp, b_mp = a.mp, b.mp
-	if a_mp < 1 then
-		a_mp = UnitHealthMax('player') * a_mp
-	end
-	if b_mp < 1 then
-		b_mp = UnitHealthMax('player') * b_mp
-	end
-
-	return a_mp > b_mp or (a_mp == b_mp and GetItemCount(a.id) <= GetItemCount(b.id))
 end
 
 function NeedsFoodBadly.BetterBuffDrink(a, b)
@@ -555,6 +580,10 @@ NeedsFoodBadly.Ore = {
 }
 
 NeedsFoodBadly.Food = {
+	[4606] = {id = 4606, name = 'Spongy Morel', lvl = 15, conj = false, hp = 552},
+	[3770] = {id = 3770, name = 'Mutton Chop', lvl = 15, conj = false, hp = 552},
+	[4542] = {id = 4542, name = 'Moist Cornbread', lvl = 15, conj = false, hp = 552},
+	[3771] = {id = 3771, name = 'Wild Hog Shank', lvl = 25, conj = false, hp = 874.8},
 	[8932] = {id = 8932, name = 'Alterac Swiss', lvl = 45, conj = false, hp = 2148},
 	[4536] = {id = 4536, name = 'Shiny Red Apple', lvl = 1, conj = false, hp = 61.2},
 	[13546] = {id = 13546, name = 'Bloodbelly Fish', lvl = 25, conj = false, hp = 1392},
@@ -583,10 +612,8 @@ NeedsFoodBadly.Food = {
 	[8766] = {id = 8766, name = 'Morning Glory Dew', lvl = 45, conj = false, mp = 2934},
 	[6887] = {id = 6887, name = 'Spotted Yellowtail', lvl = 35, conj = false, hp = 1392},
 	[8079] = {id = 8079, name = 'Conjured Crystal Water', lvl = 55, conj = true, mp = 4200},
-	[3771] = {id = 3771, name = 'Wild Hog Shank', lvl = 25, conj = false, hp = 874.8},
 	[18045] = {id = 18045, name = 'Tender Wolf Steak', lvl = 40, conj = false, hp = 1392, stam = 12, spi = 12},
 	[1645] = {id = 1645, name = 'Moonberry Juice', lvl = 35, conj = false, mp = 1992},
-	[3770] = {id = 3770, name = 'Mutton Chop', lvl = 15, conj = false, hp = 552},
 	[13851] = {id = 13851, name = 'Hot Wolf Ribs', lvl = 25, conj = false, hp = 874.8, stam = 8, spi = 8},
 	[8364] = {id = 8364, name = 'Mithril Head Trout', lvl = 25, conj = false, hp = 874.8},
 	[12216] = {id = 12216, name = 'Spiced Chili Crab', lvl = 40, conj = false, hp = 1392, stam = 12, spi = 12},
@@ -653,7 +680,6 @@ NeedsFoodBadly.Food = {
 	[2682] = {id = 2682, name = 'Cooked Crab Claw', lvl = 5, conj = false, hp = 294, mp = 294},
 	[20031] = {id = 20031, name = 'Essence Mango', lvl = 55, conj = false, hp = 4320, mp = 4410},
 	[5477] = {id = 5477, name = 'Strider Stew', lvl = 5, conj = false, hp = 243.6, stam = 4, spi = 4},
-	[4606] = {id = 4606, name = 'Spongy Morel', lvl = 15, conj = false, hp = 552},
 	[5478] = {id = 5478, name = 'Dig Rat Stew', lvl = 10, conj = false, hp = 552},
 	[12215] = {id = 12215, name = 'Heavy Kodo Stew', lvl = 35, conj = false, hp = 1392, stam = 12, spi = 12},
 	[3663] = {id = 3663, name = 'Murloc Fin Soup', lvl = 15, conj = false, hp = 552, stam = 6, spi = 6},
@@ -688,7 +714,6 @@ NeedsFoodBadly.Food = {
 	[17119] = {id = 17119, name = 'Deeprun Rat Kabob', lvl = 5, conj = false, hp = 243.6},
 	[724] = {id = 724, name = 'Goretusk Liver Pie', lvl = 5, conj = false, hp = 243.6, stam = 4, spi = 4},
 	[8075] = {id = 8075, name = 'Conjured Sourdough', lvl = 35, conj = true, hp = 1392},
-	[4542] = {id = 4542, name = 'Moist Cornbread', lvl = 15, conj = false, hp = 552},
 	[2288] = {id = 2288, name = 'Conjured Fresh Water', lvl = 5, conj = true, mp = 436.8},
 	[17198] = {id = 17198, name = 'Egg Nog', lvl = 0, conj = false, hp = 61.2, stam = 2, spi = 2},
 	[9681] = {id = 9681, name = 'Grilled King Crawler Legs', lvl = 35, conj = false, hp = 1392},

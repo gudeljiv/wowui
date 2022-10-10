@@ -1,0 +1,13 @@
+VER 3 0000000001000003 "SELF RENEW" "136032"
+/follow verminz
+/cast [@Konac] Renew
+END
+VER 3 0000000001000002 "VERMIN PAIN" "136032"
+/follow verminz
+/assist vermin
+/cast Shadow Word: Pain
+END
+VER 3 0000000001000001 "VERMIN RENEW" "136032"
+/follow verminz
+/cast [@Verminz] Renew(Rank 6)
+END

@@ -31,14 +31,14 @@ AtlasLootClassic_Factions: enabled
 AtlasLootClassic_PvP: enabled
 AtlasLootClassic: enabled
 AtlasLootClassic_Data: enabled
-BagBrother: disabled
-Bagnon: disabled
-Bagnon_Config: disabled
-Bagnon_GuildBank: disabled
-Bagnon_VoidStorage: disabled
+BagBrother: enabled
+Bagnon: enabled
+Bagnon_Config: enabled
+Bagnon_GuildBank: enabled
+Bagnon_VoidStorage: enabled
 !BugGrabber: enabled
 BugSack: enabled
-WeaponSwingTimer: disabled
+WeaponSwingTimer: enabled
 ItemRack: enabled
 ItemRackOptions: enabled
 EavesDrop: disabled
@@ -136,7 +136,7 @@ FarmHud: enabled
 FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: enabled
-AuctionFaster: disabled
+AuctionFaster: enabled
 TrackEverything: enabled
 Kui_Media: disabled
 Kui_Nameplates: disabled
@@ -184,3 +184,7 @@ BigWigs_Core: disabled
 BigWigs_AhnQirajTemple: disabled
 BigWigs_BlackTemple: disabled
 BigWigs_BlackwingLair: disabled
+LibRangeCheck-2.0: enabled
+unitscan: enabled
+VendorBait: enabled
+TradeSkillMaster_AppHelper: enabled

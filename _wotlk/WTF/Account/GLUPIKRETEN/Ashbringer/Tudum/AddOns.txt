@@ -1,3 +1,8 @@
 nPower: disabled
 nHealth: disabled
 Lorti UI Classic: enabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+Blizzard_CompactRaidFrames: disabled
+Blizzard_CUFProfiles: disabled
+WeaponSwingTimer: disabled

@@ -495,6 +495,10 @@ function nMinimap_UpdateFriendButton(entry)
 
 				levelc = GetQuestDifficultyColor(info.level)
 
+				if classc == nil then
+					classc = FRIENDS_BNET_NAME_COLOR
+				end
+
 				info.level = WrapTextInColorCode(info.level, CreateColor(levelc.r, levelc.g, levelc.b, 1):GenerateHexColor())
 				info.name = WrapTextInColorCode(info.name, classc:GenerateHexColor())
 				info.area = WrapTextInColorCode(info.area, zonec:GenerateHexColor())

@@ -179,3 +179,13 @@ DBM-Onyxia: enabled
 DBM-MC: enabled
 DBM-ZG: enabled
 TradeSkillMaster_AppHelper: enabled
+Details_EncounterDetails: enabled
+Details_RaidCheck: enabled
+Details_DataStorage: enabled
+Details_Streamer: enabled
+Details_Vanguard: enabled
+FarmHud_TrailPath: enabled
+LibRangeCheck-2.0: enabled
+Select: enabled
+unitscan: enabled
+VendorBait: enabled

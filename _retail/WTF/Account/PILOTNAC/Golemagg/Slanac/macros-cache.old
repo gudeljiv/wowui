@@ -1,0 +1,12 @@
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/assist Vermin
+/stopfollowing
+/cast Lightning Bolt
+END
+VER 3 0000000001000002 "HVer" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/target Vermin
+/follow Vermin
+/cast Lesser Healing Wave
+END

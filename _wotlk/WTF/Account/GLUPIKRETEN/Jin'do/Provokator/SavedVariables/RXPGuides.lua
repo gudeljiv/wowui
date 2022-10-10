@@ -1,10 +1,10 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[95] = {
+		[114] = {
 		},
 	},
-	["currentStep"] = 95,
+	["currentStep"] = 114,
 	["phase"] = 6,
 	["currentGuideGroup"] = "Horde 1-30",
 	["flightPaths"] = {
@@ -15,7 +15,7 @@ RXPCData = {
 	["frameHeight"] = 125.000129699707,
 	["currentGuideName"] = "01-10 Durotar",
 	["stepSkip"] = {
-		[83] = true,
+		[15] = true,
 		[85] = true,
 		[31] = true,
 		[16] = true,
@@ -28,14 +28,14 @@ RXPCData = {
 		[3] = true,
 		[45] = true,
 		[48] = true,
-		[15] = true,
-		[81] = true,
+		[94] = true,
+		[83] = true,
 		[19] = true,
+		[81] = true,
 		[54] = true,
 		[77] = true,
-		[14] = true,
 		[29] = true,
-		[94] = true,
+		[14] = true,
 	},
 	["SoM"] = 1,
 	["hardcore"] = false,
@@ -314,15 +314,15 @@ RXPCComms = {
 					["class"] = "SHAMAN",
 					["xp"] = 920,
 				},
-				["Ylvin"] = {
-					["timePlayed"] = 1404.817000000039,
-					["class"] = "MAGE",
-					["xp"] = 1838,
-				},
 				["Talanjii"] = {
 					["timePlayed"] = 85.72200000006706,
 					["class"] = "PRIEST",
 					["xp"] = 1376,
+				},
+				["Ylvin"] = {
+					["timePlayed"] = 1404.817000000039,
+					["class"] = "MAGE",
+					["xp"] = 1838,
 				},
 				["Brutikus"] = {
 					["timePlayed"] = 85.72200000006706,

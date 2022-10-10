@@ -87,3 +87,7 @@ VER 3 0000000001000012 " " "132152"
 #showtooltip 
 /petattack [@mouseover,exists,harm][]
 END
+VER 3 0000000001000013 " " "INV_MISC_QUESTIONMARK"
+#showtooltip 
+/petfollow
+END

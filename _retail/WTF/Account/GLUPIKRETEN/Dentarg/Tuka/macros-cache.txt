@@ -1,0 +1,145 @@
+VER 3 0100000000000004 " " "INV_Misc_QuestionMark"
+#showtooltip Serpent Sting
+/focus
+/cast [@focus,help][@pet,exists] Misdirection
+/startattack
+/petattack
+/cast Serpent Sting
+/use 13
+/use 14
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+END
+VER 3 010000000000000A " " "INV_Misc_QuestionMark"
+#showtooltip Kill Command
+/cast Fervor
+/cast Kill Command
+END
+VER 3 0100000000000001 " " "INV_Misc_QuestionMark"
+#showtooltip
+/startattack
+/cast Wing Clip
+/cast Raptor Strike
+/script UIErrorsFrame:Clear();
+END
+VER 3 0100000000000009 " " "INV_Misc_QuestionMark"
+#showtooltip
+/castsequence reset=10 Freezing Trap, Snake Trap, Explosive Trap
+END
+VER 3 0100000000000007 " " "INV_Misc_QuestionMark"
+#showtooltip Explosive Shot
+/startattack
+/petattack
+/use 13
+/use 14
+/use Blood Fury
+/castsequence Cobra Shot
+/cast Explosive Shot
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+END
+VER 3 010000000000000D " " "INV_Misc_QuestionMark"
+#showtooltip Misdirection
+/cast [@target,help][@focus,help][@pet,exists] Misdirection
+END
+VER 3 0100000000000013 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@player] Master's Call
+END
+VER 3 0100000000000014 " " "INV_Misc_QuestionMark"
+#showtooltip Arcane Shot
+/cast [@focus,help][@pet,exists] Misdirection
+/startattack
+/petattack
+/use 13
+/use 14
+/use Blood Fury
+/castsequence Steady Shot
+/cast Arcane Shot
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+END
+VER 3 0100000000000016 " " "INV_Misc_QuestionMark"
+#showtooltip Multi-Shot
+/cast [@focus,help][@pet,exists] Misdirection
+/startattack
+/petattack
+/use 13
+/use 14
+/use Blood Fury
+/use Bestial Wrath
+/castsequence Steady Shot
+/cast Multi-Shot
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+END
+VER 3 0100000000000017 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Multi-Shot
+/cast [@focus,help][@pet,exists] Misdirection
+/startattack
+/petattack
+/use 13
+/use 14
+/use Blood Fury
+/use Bestial Wrath
+/cast Multi-Shot
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+END
+VER 3 0100000000000018 " " "INV_Misc_QuestionMark"
+#showtooltip
+/startattack
+/petattack
+/castsequence reset=10 Blink Strike, Glaive Toss
+/cast [@focus,help][@pet,exists] Misdirection
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+END
+VER 3 0100000000000019 " " "INV_Misc_QuestionMark"
+#showtooltip Kill Command
+/cast [@focus,help][@pet,exists] Misdirection
+/startattack
+/petattack
+/use 13
+/use 14
+/use Blood Fury
+/castsequence Cobra Shot
+/cast Kill Command
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+END
+VER 3 010000000000001A " " "INV_Misc_QuestionMark"
+#showtooltip Arcane Shot
+/cast [@focus,help][@pet,exists] Misdirection
+/startattack
+/petattack
+/use 13
+/use 14
+/use Blood Fury
+/castsequence Cobra Shot
+/cast Arcane Shot
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+END
+VER 3 010000000000001D " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast Stampede
+/cast Rapid Fire
+END
+VER 3 010000000000001F " " "INV_Misc_QuestionMark"
+#showtooltip Multi-Shot
+/cast [@focus,help][@pet,exists] Misdirection
+/startattack
+/petattack
+/use 13
+/use 14
+/use Blood Fury
+/cast Multi-Shot
+/petautocastoff [group] Growl
+/petautocaston [nogroup] Growl
+END
+VER 3 010000000000001E "FOCUS" "ACHIEVEMENT_GUILDPERK_QUICK AND DEAD"
+/target pet
+/focus [@focus,exists] none;
+/targetlasttarget
+END
