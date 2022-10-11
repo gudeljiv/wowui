@@ -63,6 +63,9 @@ TargetFrame:HookScript(
 				if select(2, GetSpellCooldown('Silencing Shot')) == 0 and IsSpellInRange('Silencing Shot', 'target') == 1 then
 					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
 				end
+				if select(2, GetSpellCooldown('Intimidation')) == 0 and IsSpellInRange('Intimidation', 'target') == 1 then
+					RotationFrame2:SetBackdropColor(0, 1, 0, 1)
+				end
 			end
 		else
 			RotationFrame2:SetBackdropColor(1, 1, 1, 1)

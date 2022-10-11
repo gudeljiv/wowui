@@ -2,7 +2,9 @@ local _, xVermin = ...
 
 local size = 125
 local scale = 1.4
-local MaxXP, CurrentXP, percent, r, g, b
+local MaxXP, CurrentXP, percent, r, g, b, restedBars, c
+
+DEFAULT_CHAT_FRAME:AddMessage(t)
 
 local PlayerXP = CreateFrame('Frame', 'PlayerXPFrame', UIParent)
 PlayerXP:SetScale(scale)
@@ -86,8 +88,12 @@ local function UpdateBar(event, isInitialLogin, isReloadingUi)
 	PlayerXP.XPbar.Percent:SetText(xVermin.Round(percent) .. '%')
 	PlayerXP.XPbar:SetStatusBarColor(r, g, b)
 
+	restedBars = 0
+	c = '|cFFFFFFFF'
 	if (select(3, GetRestState()) == 2) then
-		PlayerXP.XPbar.RestedNumber:SetText('R: ' .. xVermin.FormatNumber(GetXPExhaustion(), ','))
+		restedBars = math.floor(20 * GetXPExhaustion() / MaxXP + 0.5)
+		c = '|c' .. xVermin.RGB2HEX(xVermin.ColorGradient(restedBars / 30, 1, 1, 1, 1, 1, 0, 0, 1, 0))
+		PlayerXP.XPbar.RestedNumber:SetText(c .. 'R(' .. restedBars .. '): ' .. xVermin.FormatNumber(GetXPExhaustion(), ',') .. '|r')
 	else
 		PlayerXP.XPbar.RestedNumber:Hide()
 		PlayerXP.XPbar.UntilLevel:SetText(xVermin.FormatNumber(MaxXP - CurrentXP, ','))

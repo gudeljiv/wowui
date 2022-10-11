@@ -127,7 +127,7 @@ Blizzard_CompactRaidFrames: disabled
 Blizzard_CUFProfiles: disabled
 EnhancedRaidFrames: enabled
 Attack bar: disabled
-WeaponSwingTimer: enabled
+WeaponSwingTimer: disabled
 EasyFrames: enabled
 BigWigs: disabled
 BigWigs_Onyxia: disabled

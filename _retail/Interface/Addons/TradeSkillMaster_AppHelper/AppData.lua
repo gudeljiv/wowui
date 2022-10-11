@@ -1,1 +1,1 @@
-select(2, ...).LoadData("APP_INFO","Global",[[return {version=411,lastSync=1665430663,message={id=0,msg=""},news={}}]]) --<APP_INFO,Global,1665430663>
+select(2, ...).LoadData("APP_INFO","Global",[[return {version=411,lastSync=1665502857,message={id=0,msg=""},news={}}]]) --<APP_INFO,Global,1665502857>

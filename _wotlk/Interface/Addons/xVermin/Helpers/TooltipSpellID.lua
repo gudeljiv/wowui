@@ -8,7 +8,8 @@ local function AddSpellID(self, unit, index, filter)
 		_, id = self:GetSpell()
 	end
 	if id then
-		self:AddLine('|cff789ABCSpell ID: ' .. _G.WHITE_FONT_COLOR_CODE .. id .. '|r')
+		self:AddLine(' ')
+		self:AddLine(_G.ORANGE_FONT_COLOR_CODE .. 'Spell ID: ' .. _G.NORMAL_FONT_COLOR_CODE .. id)
 	end
 	self:Show()
 end

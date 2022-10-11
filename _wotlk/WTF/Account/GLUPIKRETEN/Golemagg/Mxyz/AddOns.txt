@@ -129,7 +129,7 @@ ErrorMonster: disabled
 Blizzard_CompactRaidFrames: enabled
 Blizzard_CUFProfiles: enabled
 EnhancedRaidFrames: enabled
-WeaponSwingTimer: enabled
+WeaponSwingTimer: disabled
 EasyFrames: enabled
 BigWigs: disabled
 BigWigs_Onyxia: disabled
@@ -175,3 +175,4 @@ FarmHud_TrailPath: enabled
 Pawn: enabled
 TradeSkillMaster_AppHelper: enabled
 NovaWorldBuffs: disabled
+GearScoreLite: disabled

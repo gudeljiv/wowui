@@ -38,7 +38,7 @@ Bagnon_GuildBank: enabled
 Bagnon_VoidStorage: enabled
 !BugGrabber: enabled
 BugSack: enabled
-WeaponSwingTimer: enabled
+WeaponSwingTimer: disabled
 ItemRack: enabled
 ItemRackOptions: enabled
 EavesDrop: disabled

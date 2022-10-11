@@ -1436,7 +1436,7 @@
 
 	<Frame name="TellMeWhen_ConfigWarning" inherits="TellMeWhen_SimpleDialog" >
 		<Anchors>
-			<Anchor point="TOP" relativeTo="UIParent" y="-60"/>
+			<Anchor point="TOP" relativeTo="UIParent" y="-100"/>
 		</Anchors>
 
 		<Frames>

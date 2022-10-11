@@ -1,10 +1,10 @@
 local _, nBuff = ...
 
 nBuff.Config = {
-	buffSize = 34,
+	buffSize = 36,
 	buffScale = 1,
 	buffBorderColor = {1, 1, 1},
-	buffFontSize = 11,
+	buffFontSize = 12,
 	buffCountSize = 14,
 	borderBuff = 'Interface\\AddOns\\nBuff\\media\\textureOverlay',
 	borderDebuff = 'Interface\\AddOns\\nBuff\\media\\textureDebuff',

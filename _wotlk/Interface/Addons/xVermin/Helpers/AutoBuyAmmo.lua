@@ -66,7 +66,8 @@ local function BuyAmmo()
 	if index and buy then
 		MaxAmmoInInventory = MaxStackSize
 		if xVermin.Class == 'HUNTER' then
-			MaxAmmoInInventory = GetContainerNumSlots(1) * MaxStackSize
+			-- MaxAmmoInInventory = GetContainerNumSlots(1) * MaxStackSize
+			MaxAmmoInInventory = 8000
 		end
 		local ammoCount = GetInventoryItemCount('player', GetInventorySlotInfo('AmmoSlot'))
 		local needtobuy = MaxAmmoInInventory - ammoCount

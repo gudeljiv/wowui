@@ -50,24 +50,24 @@ skills["warlock"] = [
 
 
 skills["hunter"] = [
-    {"name": "multi-shot", "key": "f10"},
+    {"name": "concussive shot", "key": "1"},
     {"name": "steady shot", "key": "2"},
-    {"name": "mend pet", "key": "v"},
     {"name": "kill command", "key": "4"},
     {"name": "serpent sting", "key": "9", "modifier": "alt"},
+    {"name": "multi-shot", "key": "f10"},
     {"name": "arcane shot", "key": "f11"},
     {"name": "aspect of the hawk", "key": "f1"},
     {"name": "aspect of the viper", "key": "f5"},
-    {"name": "trueshot aura", "key": "1", "modifier": "shift"},
     {"name": "chimera shot", "key": "3"},
     {"name": "aimed shot", "key": "6"},
     {"name": "deterrence", "key": "t", "modifier": "shift"},
-    {"name": "misdirection", "key": "2", "modifier": "shift"},
-    {"name": "hunters mark", "key": "3", "modifier": "shift"},
-    {"name": "concussive shot", "key": "1"},
+    {"name": "trueshot aura", "key": "1", "modifier": "alt"},
+    {"name": "wing clip", "key": "1", "modifier": "alt"},
+    {"name": "misdirection", "key": "2", "modifier": "alt"},
+    {"name": "hunters mark", "key": "3", "modifier": "alt"},
+    {"name": "mend pet", "key": "v"},
     {"name": "cower pet", "key": "4", "modifier": "ctrl"},
     {"name": "last stand pet", "key": "5", "modifier": "ctrl"},
-    {"name": "wing clip", "key": "1", "modifier": "shift"}
 ]
 
 skills["druid"] = [

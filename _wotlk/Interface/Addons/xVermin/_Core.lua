@@ -114,6 +114,11 @@ xVermin.HEX2RGB = function(hex)
 	return {r = r, g = g, b = b, a = 1}
 end
 
+xVermin.RGB2HEX = function(r, g, b, a)
+	a = a or 1
+	return string.format('%02x%02x%02x%02x', math.floor(a * 255), math.floor(r * 255), math.floor(g * 255), math.floor(b * 255))
+end
+
 local keywords = {
 	['and'] = 'and',
 	['or'] = 'or'

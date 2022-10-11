@@ -1,11 +1,12 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[14] = {
-			[945458293] = true,
+		[36] = {
+		},
+		[37] = {
 		},
 	},
-	["currentStep"] = 14,
+	["currentStep"] = 37,
 	["phase"] = 6,
 	["currentGuideGroup"] = "Horde 70-80",
 	["flightPaths"] = {
@@ -50,9 +51,13 @@ RXPCData = {
 	["currentGuideName"] = "68-71 Howling Fjord",
 	["stepSkip"] = {
 		true, -- [1]
-		[8] = true,
+		[17] = true,
+		[21] = true,
 		[10] = true,
+		[29] = true,
 		[3] = true,
+		[30] = true,
+		[8] = true,
 	},
 	["frameHeight"] = 125.000129699707,
 	["GA"] = false,
