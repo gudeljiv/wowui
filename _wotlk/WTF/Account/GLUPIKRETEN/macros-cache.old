@@ -1,3 +1,8 @@
+VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Fel Sharpening Stone
+/use [button:1] 16; [button:2] 17
+END
 VER 3 000000000000000E " " "136106"
 /run InspectUnit("target")
 /run SortBags()
@@ -9,20 +14,15 @@ VER 3 0000000000000012 " " "132143"
 #showtooltip
 /startattack
 END
-VER 3 000000000000000D " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/use Fel Sharpening Stone
-/use [button:1] 16; [button:2] 17
-END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1708
-/castsequence [combat] reset=combat item:3385
+/use [nocombat]item:0
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:3771
-/castsequence [combat] reset=combat item:929
+/use [nocombat]item:33454
+/castsequence [combat] reset=combat item:22829
 END
 VER 3 000000000000000B "lvl enchant" "132089"
 /click CraftCreateButton
@@ -41,7 +41,7 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 0000000000000015 "Potion" "Inv_misc_questionmark"
 #showtooltip
-/use item:929
+/use item:22829
 END
 VER 3 0000000000000017 "Prsp" "Inv_misc_questionmark"
 #showtooltip item:0
