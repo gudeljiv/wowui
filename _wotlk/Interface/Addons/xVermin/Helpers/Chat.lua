@@ -28,6 +28,7 @@ channel = {
 	'GuildRecruitment.-'
 }
 replace = {}
+local ChatFrameCondition = ''
 
 local newAddMsg = {}
 local function AddMessage(frame, text, ...)
@@ -61,7 +62,7 @@ local function OpenChatWindow(id)
 	end
 end
 
-local function SetChatChannels()
+xVermin.SetChatChannels = function()
 	ChatFrame_RemoveChannel(ChatFrame1, 'LookingForGroup')
 	ChatFrame_RemoveChannel(ChatFrame1, 'LocalDefense')
 	ChatFrame_RemoveChannel(ChatFrame1, 'WorldDefense')
@@ -256,6 +257,7 @@ local function SetChat()
 			ChatFrame8
 		}
 	) do
+		ChatFrameCondition = ChatFrameCondition .. v:GetName() .. ','
 		background = _G[v:GetName() .. 'Background']
 		v.SetPoint = function()
 		end
@@ -317,7 +319,7 @@ local function SetChat()
 	ChatFrameMenuButton:Hide()
 	ChatFrame1Tab:Click()
 
-	SetChatChannels()
+	-- SetChatChannels()
 end
 
 local chat = CreateFrame('Frame')
@@ -325,6 +327,7 @@ chat:SetScript(
 	'OnEvent',
 	function(self, event)
 		SetChat()
+		xVermin.CheckIfLoadedWithTimer(ChatFrameCondition, xVermin.SetChatChannels)
 		-- if event == 'PLAYER_LOGIN' then
 		-- 	SetChat()
 		-- 	C_Timer.After(

@@ -1,6 +1,6 @@
 
 unitscan_targets = {
-	["CAPTURED TUSKARR PRISONER"] = true,
 	["HUMAR THE PRIDELORD"] = true,
+	["CAPTURED TUSKARR PRISONER"] = true,
 	["ETHEREUM JAILOR"] = true,
 }

@@ -23,20 +23,16 @@ GroupBulletinBoardDBChar = {
 	["FilterDungeonONY"] = true,
 	["FilterDungeonSTR"] = true,
 	["FilterDungeonBREW"] = false,
-	["FilterDungeonMC"] = true,
-	["FilterDungeonNAX"] = true,
+	["FilterDungeonRFD"] = true,
+	["FilterDungeonDME"] = true,
 	["FilterDungeonWC"] = true,
-	["FilterDungeonAQ40"] = true,
+	["FilterDungeonDMN"] = true,
 	["FilterDungeonRFC"] = true,
 	["FilterDungeonDMW"] = true,
 	["FilterDungeonUBRS"] = true,
 	["FilterDungeonSTK"] = true,
 	["FilterDungeonDM"] = true,
-	["FilterDungeonBWL"] = true,
-	["FilterDungeonZG"] = true,
-	["FilterDungeonDM2"] = true,
-	["FilterDungeonULD"] = true,
-	["FilterDungeonSM2"] = true,
+	["FilterDungeonSMC"] = true,
 	["channel"] = {
 		true, -- [1]
 		true, -- [2]
@@ -59,8 +55,12 @@ GroupBulletinBoardDBChar = {
 		true, -- [19]
 		true, -- [20]
 	},
-	["FilterDungeonSMC"] = true,
-	["FilterDungeonDMN"] = true,
-	["FilterDungeonDME"] = true,
-	["FilterDungeonRFD"] = true,
+	["FilterDungeonDM2"] = true,
+	["FilterDungeonULD"] = true,
+	["FilterDungeonSM2"] = true,
+	["FilterDungeonZG"] = true,
+	["FilterDungeonBWL"] = true,
+	["FilterDungeonAQ40"] = true,
+	["FilterDungeonNAX"] = true,
+	["FilterDungeonMC"] = true,
 }

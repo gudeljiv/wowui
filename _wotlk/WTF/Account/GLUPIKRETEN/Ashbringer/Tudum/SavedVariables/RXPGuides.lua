@@ -1,24 +1,16 @@
 
 RXPCData = {
-	["completedWaypoints"] = {
-		[11] = {
-		},
-	},
-	["currentStep"] = 11,
 	["SoM"] = 1,
-	["currentGuideGroup"] = "Horde 1-30",
+	["currentGuideGroup"] = "",
+	["completedWaypoints"] = {
+	},
+	["currentStep"] = 1,
+	["currentGuideName"] = "",
+	["stepSkip"] = {
+	},
 	["flightPaths"] = {
 	},
-	["xprate"] = 1,
 	["phase"] = 6,
-	["currentGuideName"] = "01-10 Durotar",
-	["stepSkip"] = {
-		[8] = true,
-		[6] = true,
-		[2] = true,
-	},
-	["hardcore"] = false,
-	["frameHeight"] = 125.0000152587891,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -37,10 +29,10 @@ RXPCTrackingData = {
 							["monthDay"] = 10,
 							["day"] = 0,
 							["month"] = 10,
-							["weekday"] = 2,
+							["minute"] = 52,
 							["year"] = 2022,
 							["hour"] = 19,
-							["minute"] = 52,
+							["weekday"] = 2,
 						},
 						["started"] = 0,
 					},
@@ -66,12 +58,14 @@ RXPCSettings = {
 	},
 	["profiles"] = {
 		["Tudum - Ashbringer"] = {
+			["hardcore"] = false,
+			["enableLevelUpAnnounceGroup"] = false,
+			["checkVersions"] = false,
 			["enableTracker"] = false,
 			["enableFlyStepAnnouncements"] = false,
-			["enableLevelUpAnnounceGroup"] = false,
 			["enableLevelUpAnnounceSolo"] = false,
-			["checkVersions"] = false,
 			["alwaysSendBranded"] = false,
+			["frameHeight"] = 125.0000152587891,
 		},
 	},
 }
