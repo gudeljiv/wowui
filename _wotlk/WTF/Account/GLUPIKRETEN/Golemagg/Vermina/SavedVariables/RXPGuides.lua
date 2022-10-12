@@ -1,26 +1,24 @@
 
 RXPCData = {
 	["completedWaypoints"] = {
-		[78] = {
-		},
-		[79] = {
+		[107] = {
 		},
 	},
-	["currentStep"] = 79,
+	["currentStep"] = 107,
 	["phase"] = 6,
-	["currentGuideGroup"] = "Horde 1-30",
+	["currentGuideGroup"] = "RestedXP Horde 1-30",
 	["flightPaths"] = {
-		[80] = "Ratchet, The Barrens",
-		[58] = "Zoram'gar Outpost, Ashenvale",
-		[25] = "Crossroads, The Barrens",
 		[61] = "Splintertree Post, Ashenvale",
-		[22] = "Thunder Bluff, Mulgore",
-		[23] = "Orgrimmar, Durotar",
+		[25] = "Crossroads, The Barrens",
+		[58] = "Zoram'gar Outpost, Ashenvale",
 		[77] = "Camp Taurajo, The Barrens",
+		[80] = "Ratchet, The Barrens",
+		[22] = "Thunder Bluff, Mulgore",
+		[42] = "Camp Mojache, Feralas",
+		[23] = "Orgrimmar, Durotar",
+		[30] = "Freewind Post, Thousand Needles",
 	},
-	["xprate"] = 1,
 	["JoyousJourneys"] = true,
-	["frameHeight"] = 125.0000152587891,
 	["currentGuideName"] = "27-30 Lower Barrens / Thousand Needles",
 	["stepSkip"] = {
 		[59] = true,
@@ -31,21 +29,24 @@ RXPCData = {
 		[18] = true,
 		[36] = true,
 		[5] = true,
-		[40] = true,
+		[78] = true,
+		[80] = true,
 		[11] = true,
 		[22] = true,
 		[44] = true,
 		[12] = true,
+		[72] = true,
+		[29] = true,
 		[67] = true,
 		[26] = true,
-		[53] = true,
-		[37] = true,
 		[30] = true,
-		[29] = true,
-		[72] = true,
+		[53] = true,
+		[100] = true,
+		[37] = true,
+		[81] = true,
+		[40] = true,
 	},
 	["SoM"] = 1,
-	["hardcore"] = false,
 }
 RXPCTrackingData = {
 	["profileKeys"] = {
@@ -139,12 +140,15 @@ RXPCSettings = {
 	},
 	["profiles"] = {
 		["Vermina - Golemagg"] = {
+			["hardcore"] = false,
+			["enableLevelUpAnnounceGroup"] = false,
+			["enableMinimapButton"] = false,
+			["checkVersions"] = false,
 			["enableTracker"] = false,
 			["enableFlyStepAnnouncements"] = false,
-			["enableLevelUpAnnounceGroup"] = false,
 			["enableLevelUpAnnounceSolo"] = false,
-			["checkVersions"] = false,
 			["alwaysSendBranded"] = false,
+			["frameHeight"] = 125.0000152587891,
 		},
 	},
 }

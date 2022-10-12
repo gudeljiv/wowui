@@ -58,12 +58,12 @@ AtlasLootClassicDB = {
 			[40783] = "EmblemOfValor:45",
 			[42946] = "EmblemOfHeroism:65",
 			[42950] = "EmblemOfHeroism:40",
-			[40692] = "EmblemOfHeroism:40",
+			[40819] = "EmblemOfValor:45",
 			[48677] = "EmblemOfHeroism:40",
 			[40680] = "EmblemOfHeroism:25",
 			[40684] = "EmblemOfHeroism:40",
 			[40688] = "EmblemOfHeroism:40",
-			[40819] = "EmblemOfValor:45",
+			[40692] = "EmblemOfHeroism:40",
 			[40696] = "EmblemOfHeroism:40",
 			[40700] = "EmblemOfHeroism:35",
 			[40704] = "EmblemOfHeroism:50",
@@ -163,11 +163,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -176,6 +171,11 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
 			},
 		},
 		["Verminz - Golemagg"] = {
@@ -546,23 +546,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
-			["GUI"] = {
-				["selectedGameVersion"] = 2,
-				["selected"] = {
-					nil, -- [1]
-					"HellfireRamparts", -- [2]
-					2, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-				["point"] = {
-					"LEFT", -- [1]
-					nil, -- [2]
-					"LEFT", -- [3]
-					337.781494140625, -- [4]
-					156.011474609375, -- [5]
-				},
-			},
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
@@ -576,6 +559,23 @@ AtlasLootClassicDB = {
 							},
 						},
 					},
+				},
+			},
+			["GUI"] = {
+				["point"] = {
+					"LEFT", -- [1]
+					nil, -- [2]
+					"LEFT", -- [3]
+					337.781494140625, -- [4]
+					156.011474609375, -- [5]
+				},
+				["selectedGameVersion"] = 2,
+				["selected"] = {
+					nil, -- [1]
+					"HellfireRamparts", -- [2]
+					2, -- [3]
+					1, -- [4]
+					0, -- [5]
 				},
 			},
 		},
@@ -622,10 +622,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["point"] = {
 					"TOP", -- [1]
@@ -641,6 +637,10 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 	},

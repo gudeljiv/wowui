@@ -112,7 +112,7 @@ AtlasLootClassicDB = {
 			[40680] = "EmblemOfHeroism:25",
 			[40684] = "EmblemOfHeroism:40",
 			[40688] = "EmblemOfHeroism:40",
-			[40692] = "EmblemOfHeroism:40",
+			[40819] = "EmblemOfValor:45",
 			[40696] = "EmblemOfHeroism:40",
 			[40700] = "EmblemOfHeroism:35",
 			[40704] = "EmblemOfHeroism:50",
@@ -152,7 +152,7 @@ AtlasLootClassicDB = {
 			[40840] = "EmblemOfValor:45",
 			[40717] = "EmblemOfValor:25",
 			[40721] = "EmblemOfValor:25",
-			[40819] = "EmblemOfValor:45",
+			[40692] = "EmblemOfHeroism:40",
 		},
 	},
 	["profiles"] = {
@@ -163,6 +163,11 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -171,11 +176,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
 			},
 		},
 		["Verminz - Golemagg"] = {
@@ -460,22 +460,9 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
-			["GUI"] = {
-				["selectedGameVersion"] = 2,
-				["selected"] = {
-					nil, -- [1]
-					"HellfireRamparts", -- [2]
-					2, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-				["point"] = {
-					"LEFT", -- [1]
-					nil, -- [2]
-					"LEFT", -- [3]
-					337.781494140625, -- [4]
-					156.011474609375, -- [5]
-				},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 			["Addons"] = {
 				["Favourites"] = {
@@ -488,9 +475,22 @@ AtlasLootClassicDB = {
 					},
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
+			["GUI"] = {
+				["point"] = {
+					"LEFT", -- [1]
+					nil, -- [2]
+					"LEFT", -- [3]
+					337.781494140625, -- [4]
+					156.011474609375, -- [5]
+				},
+				["selectedGameVersion"] = 2,
+				["selected"] = {
+					nil, -- [1]
+					"HellfireRamparts", -- [2]
+					2, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
 			},
 		},
 		["Klhjakhsgdjh - Golemagg"] = {

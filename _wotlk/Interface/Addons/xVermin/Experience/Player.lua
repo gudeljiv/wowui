@@ -102,6 +102,11 @@ local function UpdateBar(event, isInitialLogin, isReloadingUi)
 	end
 end
 
+-- for i = 1, 30 do
+-- 	c = '|c' .. xVermin.RGB2HEX(xVermin.ColorGradient(i / 30, 1, 1, 1, 1, 1, 0, 0, 1, 0))
+-- 	print(c .. i .. '/30|r')
+-- end
+
 PlayerXP:RegisterEvent('PLAYER_XP_UPDATE')
 PlayerXP:RegisterEvent('PLAYER_ENTERING_WORLD')
 PlayerXP:RegisterEvent('PLAYER_LEVEL_CHANGED')
